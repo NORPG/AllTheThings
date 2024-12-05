@@ -1,6 +1,6 @@
 name: Bug/Error
 description: Something broken?
-labels: ["bug"]
+labels: ["Addon Bug"]
 body:
 - type: dropdown
   id: flavour
