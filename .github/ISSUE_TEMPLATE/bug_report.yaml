@@ -24,7 +24,7 @@ body:
   attributes:
     label: What build number of WoW?
   validations:
-    required: false.
+    required: false
 - type: dropdown
   attributes:
     label: What version of ATT?
@@ -38,7 +38,7 @@ body:
   attributes:
     label: What build number of ATT.
   validations:
-    required: false.
+    required: false
 - type: textarea
   attributes:
     label: What isn't working? What was supposed to happen?
