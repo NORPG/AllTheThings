@@ -40,7 +40,7 @@ body:
     id: att_build
     attributes:
       label: "What build number of ATT?"
-      placeholder: "e.g., 12345"
+      placeholder: "e.g., 4.1.11(release)/4.1.11-34-g9b96b53(alpha)"
     validations:
       required: false
   - type: textarea
