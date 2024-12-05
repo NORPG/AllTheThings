@@ -1,4 +1,4 @@
-name: Bug/Error
+name: Bug
 description: Something broken?
 labels: ["Addon Bug"]
 body:
@@ -9,8 +9,13 @@ body:
     multiple: true
     options:
       - Retail
-      - Classic
+      - Cata Classic
+      - WotLK Classic
       - Classic Era
+      - Hardcore
+      - Season of Discovery
+      - Anniversary Realms
+      - Hardcore Anniversary Realms
   validations:
     required: true
   validations:
