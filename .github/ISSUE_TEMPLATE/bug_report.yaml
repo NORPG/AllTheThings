@@ -22,11 +22,16 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: What version of Auctionator?
+    label: What version of ATT?
     options:
       - git
-      - Latest alpha release
+      - Latest alpha
       - Latest release
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: the build number of ATT.
   validations:
     required: true
 - type: textarea
