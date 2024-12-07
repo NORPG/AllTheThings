@@ -41,7 +41,7 @@ body:
     attributes:
       label: "Which server realm are you in?"
       multiple: true
-        options:
+      options:
         - "US"
         - "EU"
         - "KR"
