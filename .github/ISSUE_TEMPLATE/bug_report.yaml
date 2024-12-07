@@ -5,7 +5,7 @@ body:
   - type: dropdown
     id: flavour
     attributes:
-      label: "What version(s) of WoW are you using?"
+      label: "What flavo(u)r(s) of WoW are you using?"
       description: "Select all applicable versions."
       multiple: true
       options:
@@ -36,6 +36,19 @@ body:
         - "Latest release"
     validations:
       required: true
+  - type: dropdown
+    id: realm
+    attributes:
+      label: "Which server realm are you in?"
+      multiple: true
+        options:
+        - "US"
+        - "EU"
+        - "KR"
+        - "TW"
+        - "CN"
+    validations:
+      required: false
   - type: input
     id: att_build
     attributes:
