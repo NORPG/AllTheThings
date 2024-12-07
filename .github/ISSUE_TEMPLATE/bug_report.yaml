@@ -1,4 +1,4 @@
-name: Bug
+name: Bug Report
 description: Something broken?
 labels: ["Addon Bug"]
 body:
@@ -44,10 +44,10 @@ body:
     validations:
       required: false
   - type: textarea
-    id: issue_description
+    id: bug_description
     attributes:
       label: "What isn't working? What was supposed to happen?"
-      description: "Provide details about the issue and the expected behavior."
+      description: "Provide details about the issue and the expected behavior. Describe the bug A clear and concise description of what the bug is."
       placeholder: "Describe the issue here..."
     validations:
       required: true
