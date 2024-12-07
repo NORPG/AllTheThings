@@ -65,9 +65,17 @@ body:
     validations:
       required: true
   - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshot"
+      description: "Provide a screenshot to see the bug."
+      placeholder: "Drop Screenshot into here."
+    validations:
+      required: false
+  - type: textarea
     id: repoduce_steps
     attributes:
-      label: "Steps to reproduce the behavior"
+      label: "Steps to reproduce the behavior."
       description: "Go to '...' \nClick on '....' \nScroll down to '....' \nSee bug(s)"
     validations:
       required: true
