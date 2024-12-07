@@ -68,7 +68,7 @@ body:
     id: repoduce_steps
     attributes:
       label: "Steps to reproduce the behavior"
-      description: "Go to '...' \n Click on '....' Scroll down to '....' See bug(s)"
+      description: "Go to '...' \nClick on '....' \nScroll down to '....' \nSee bug(s)"
   - type: textarea
     id: lua_errors
     attributes:
