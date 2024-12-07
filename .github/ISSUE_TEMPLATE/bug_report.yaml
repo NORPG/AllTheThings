@@ -31,15 +31,15 @@ body:
     attributes:
       label: "What version of ATT?"
       options:
-        - "git"
-        - "Latest alpha"
         - "Latest release"
+        - "Latest alpha"
+        - "git"
     validations:
       required: true
   - type: dropdown
     id: realm
     attributes:
-      label: "Which server realm are you in?"
+      label: "Which server realm(s) are you in?"
       multiple: true
       options:
         - "US"
@@ -64,6 +64,11 @@ body:
       placeholder: "Describe the issue here..."
     validations:
       required: true
+  - type: textarea
+    id: repoduce_steps
+    attributes:
+      label: "Steps to reproduce the behavior"
+      description: "Go to '...' \n Click on '....' Scroll down to '....' See bug(s)"
   - type: textarea
     id: lua_errors
     attributes:
