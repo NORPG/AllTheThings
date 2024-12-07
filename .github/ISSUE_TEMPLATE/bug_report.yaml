@@ -19,6 +19,19 @@ body:
         - "Hardcore Anniversary Realms"
     validations:
       required: true
+  - type: dropdown
+    id: realm
+    attributes:
+      label: "Which server realm(s) are you in?"
+      multiple: true
+      options:
+        - "US"
+        - "EU"
+        - "KR"
+        - "TW"
+        - "CN"
+    validations:
+      required: false
   - type: input
     id: wow_build
     attributes:
@@ -36,19 +49,6 @@ body:
         - "git"
     validations:
       required: true
-  - type: dropdown
-    id: realm
-    attributes:
-      label: "Which server realm(s) are you in?"
-      multiple: true
-      options:
-        - "US"
-        - "EU"
-        - "KR"
-        - "TW"
-        - "CN"
-    validations:
-      required: false
   - type: input
     id: att_build
     attributes:
