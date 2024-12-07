@@ -60,7 +60,7 @@ body:
     id: bug_description
     attributes:
       label: "What isn't working? What was supposed to happen?"
-      description: "Provide details about the issue and the expected behavior. Describe the bug A clear and concise description of what the bug is."
+      description: "Provide details about the issue and the expected behavior. \nDescribe the bug A clear and concise description of what the bug is."
       placeholder: "Describe the issue here..."
     validations:
       required: true
