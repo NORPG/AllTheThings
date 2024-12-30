@@ -313,7 +313,7 @@ ELITE_PVP_REQUIREMENT = createPhase({
 		ko = "",
 		]]--
 		cn = "除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。",
-		tw = "除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。",
+		tw = "除非您擁有所需的 PvP 頭銜、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。",
 	},
 });
 UNLEARNABLE = createPhase({

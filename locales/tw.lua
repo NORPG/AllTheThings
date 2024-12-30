@@ -69,7 +69,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.EXPANSION_DATA[11].lore = "地心之戰是第十個資料片。也是世界之魂戰記三部曲的開端。穿越前所未見的地下世界，那裡充滿了隱藏的奇觀和潛伏的危險，一直到蛛魔帝國的黑暗深處，那裡邪惡的虛空先驅正在聚集蛛魔力量，試圖讓艾澤拉斯屈服。";
 	L.EXPANSION_DATA[12].lore = "至暗之夜是第十一個資料片。也是世界之魂戰記的第二部份。";
 	L.EXPANSION_DATA[13].lore = "最後的泰坦是第十二個資料片。也是世界之魂戰記三部曲終章。";
-	L.TITLES_DESC = "稱號會在你的戰隊中被追蹤，但是，你的角色必須符合某些稱號的條件才能在該角色上使用。";
+	L.TITLES_DESC = "頭銜會在你的戰隊中被追蹤，但是，你的角色必須符合某些頭銜的條件才能在該角色上使用。";
 	L.UPON_COMPLETION = "前置條件";
 	L.UPON_COMPLETION_DESC = "以上任務需要完成後才能夠完成以下的事情。";
 	L.QUEST_CHAIN_REQ = "任務鏈要求";
@@ -423,7 +423,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.SOURCE_ID = "來源 ID";
 		L.SPECIES_ID = "品種 ID";
 		L.SPELL_ID = "法術 ID";
-		L.TITLE_ID = "稱號 ID";
+		L.TITLE_ID = "頭銜 ID";
 		L.TOY_ID = "玩具 ID";
 		L.VISUAL_ID = "外觀 ID";
 		L.ITEM_LEVEL = "物品等級";
@@ -604,8 +604,8 @@ for key,value in pairs({
 		RECIPES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤你的專業技能圖紙。\n\n注意：你必須打開專業技能列表才能快取這些。";
 		REPUTATIONS_CHECKBOX = "聲望";
 		REPUTATIONS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤聲望。\n\n一旦你達到了尊敬或最好的朋友，它將被標記為收藏。\n\n你可能需要手動刷新才能正確更新。";
-		TITLES_CHECKBOX = "稱號";
-		TITLES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤稱號。\n\n這些可以讓你的角色脫穎而出，看起來你已經玩了一段時間。通常只有新玩家沒有稱號。";
+		TITLES_CHECKBOX = "頭銜";
+		TITLES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤頭銜。\n\n這些可以讓你的角色脫穎而出，看起來你已經玩了一段時間。通常只有新玩家沒有頭銜。";
 		--TODO: TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤玩具。\n\n這些玩具中的大多數玩具都有趣。其他的，如爐石玩具，可以用來代替你的初始爐石，並可以為你節省一個背包！他們也有有趣的效果…很好！";
 
@@ -639,7 +639,7 @@ for key,value in pairs({
 		ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的資料庫中，配方通常不會被帳號通用追蹤，但我們可以這樣做。\n\n在一個角色上不可能收藏到所有的東西，所以有了這個，你就可以賦予你的小號和他們的專業以意義。";
 		ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "聲望的成就現在會在暴雪的資料庫中追蹤帳號通用，所以開啟這個功能可能是個好主意。";
 		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "啟用此功能後如果至少有一個角色學會了靈魂羈絆的導靈器，則將所有角色的靈魂羈絆的導靈器視為收藏。";
-		ACCOUNT_WIDE_TITLES_TOOLTIP = "大多數稱號都是在帳號通用內進行追蹤，但是魔獸世界中一些著名的稱號被鎖定在贏得他們的角色上。\n\n如果你不關心這個並希望看到那些標記為收藏的稱號是你的小號，請切換此選項。";
+		ACCOUNT_WIDE_TITLES_TOOLTIP = "大多數頭銜都是在帳號通用內進行追蹤，但是魔獸世界中一些著名的頭銜被鎖定在贏得他們的角色上。\n\n如果你不關心這個並希望看到那些標記為收藏的頭銜是你的小號，請切換此選項。";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFF始終顯示此內容如果位於 "..app.ccColors.Account.."帳號模式|cffFFFFFF。|r";
