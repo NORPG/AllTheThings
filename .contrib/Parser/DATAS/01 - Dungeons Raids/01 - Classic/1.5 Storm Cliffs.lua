@@ -7,6 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["zone-text-areaID"] = 15532,	-- Storm Cliffs
 		["lore"] = "The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",
 		["coord"] = { 43.5, 83.6, AZSHARA },
+		["mapID"] = 2791,
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
