@@ -7,7 +7,6 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
 			["description"] = "These were obtained by boosting a character to Level 100 for each class and specialization.",
 			["lvl"] = 100,
-			["sourceIgnored"] = true,
 			["groups"] = {
 				cl(DEATHKNIGHT, {
 					i(142023, {	-- Adventurer's Footlocker
