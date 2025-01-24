@@ -8,69 +8,71 @@ root(ROOTS.ExpansionFeatures,
 			n(-236, {	-- Alliance War Campaign
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					ach(12510, {	-- Ready for War
-						["races"] = ALLIANCE_ONLY,
-						["maps"] = { BORALUS },
-						["lvl"] = 110,
-						["g"] = {
-							crit(40201, {	-- Nazmir Foothold
-								["sourceQuests"] = { 51967 },	-- Return to Boralus (Nazmir)
-							}),
-							crit(40202, {	-- Vol'dun Foothold
-								["sourceQuests"] = { 51969 },	-- Return to Boralus (Vol'dun)
-							}),
-							crit(40203, {	-- Zuldazar Foothold
-								["sourceQuests"] = { 51968 },	-- Return to Boralus (Zuldazar)
-							}),
-							crit(40573, {	-- Blood on the Sand
-								["sourceQuests"] = { 52146 },	-- Blood on the Sand
-							}),
-							crit(40574, {	-- Chasing Darkness
-								["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
-							}),
-							crit(40583, {	-- A Golden Opportunity
-								["sourceQuests"] = { 52261 },	-- Gallywix Got Away
-							}),
-							crit(40869, {	-- Blood in the Water
-								["sourceQuests"] = { 52496 },	-- A Clean Escape
-							}),
-							crit(40870, {	-- The Strike on Zuldazar
-								["sourceQuests"] = { 52790 },	-- The Strike on Zuldazar
-							}),
-						},
+					n(ACHIEVEMENTS, {
+						ach(12510, {	-- Ready for War
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { BORALUS },
+							["lvl"] = 110,
+							["g"] = {
+								crit(40201, {	-- Nazmir Foothold
+									["sourceQuests"] = { 51967 },	-- Return to Boralus (Nazmir)
+								}),
+								crit(40202, {	-- Vol'dun Foothold
+									["sourceQuests"] = { 51969 },	-- Return to Boralus (Vol'dun)
+								}),
+								crit(40203, {	-- Zuldazar Foothold
+									["sourceQuests"] = { 51968 },	-- Return to Boralus (Zuldazar)
+								}),
+								crit(40573, {	-- Blood on the Sand
+									["sourceQuests"] = { 52146 },	-- Blood on the Sand
+								}),
+								crit(40574, {	-- Chasing Darkness
+									["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
+								}),
+								crit(40583, {	-- A Golden Opportunity
+									["sourceQuests"] = { 52261 },	-- Gallywix Got Away
+								}),
+								crit(40869, {	-- Blood in the Water
+									["sourceQuests"] = { 52496 },	-- A Clean Escape
+								}),
+								crit(40870, {	-- The Strike on Zuldazar
+									["sourceQuests"] = { 52790 },	-- The Strike on Zuldazar
+								}),
+							},
+						}),
+						ach(13384, {	-- Kul Tirans Don't Look at Explosions
+							["sourceQuests"] = { 54703 },	-- Express Delivery
+							["races"] = ALLIANCE_ONLY,
+						}),
+						ach(13467, {	-- Tides of Vengeance
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								crit(44260, {	-- War Marches On
+									["sourceQuests"] = { 53887 },	-- War Marches On
+								}),
+								crit(44261, {	-- The Sleeper Agent
+									["sourceQuests"] = { 54206 },	-- The Sleeper Agent
+								}),
+								crit(44262, {	-- Mischief Managed
+									["sourceQuests"] = { 54510 },	-- Mischief Managed
+								}),
+								crit(44263, {	-- He Who Walks in the Light
+									["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
+								}),
+							},
+						}),
+						a(ach(13925, {	-- The Fourth War
+						--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
+							["sourceQuests"] = { 57002 },	-- Old Soldier
+							["sym"] = {{"meta_achievement",
+								12510,	-- Ready for War
+								13467,	-- Tides of Vengeance
+							}},
+							["g"] = {
+								title(412),	-- Veteran of the Fourth War
+							},
+						})),
 					}),
-					ach(13384, {	-- Kul Tirans Don't Look at Explosions
-						["sourceQuests"] = { 54703 },	-- Express Delivery
-						["races"] = ALLIANCE_ONLY,
-					}),
-					ach(13467, {	-- Tides of Vengeance
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(44260, {	-- War Marches On
-								["sourceQuests"] = { 53887 },	-- War Marches On
-							}),
-							crit(44261, {	-- The Sleeper Agent
-								["sourceQuests"] = { 54206 },	-- The Sleeper Agent
-							}),
-							crit(44262, {	-- Mischief Managed
-								["sourceQuests"] = { 54510 },	-- Mischief Managed
-							}),
-							crit(44263, {	-- He Who Walks in the Light
-								["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
-							}),
-						},
-					}),
-					a(ach(13925, {	-- The Fourth War
-					--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
-						["sourceQuests"] = { 57002 },	-- Old Soldier
-						["sym"] = {{"meta_achievement",
-							12510,	-- Ready for War
-							13467,	-- Tides of Vengeance
-						}},
-						["g"] = {
-							title(412),	-- Veteran of the Fourth War
-						},
-					})),
 					n(REWARDS, {
 						["description"] = "You'll be offered these rewards at the end of your first foothold.",
 						["modID"] = 25,
