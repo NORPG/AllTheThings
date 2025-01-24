@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	n(WAR_EFFORT, {
-		n(-236, {	-- Alliance War Campaign
+		n(WAR_CAMPAIGN_ALLIANCE, {	-- Alliance War Campaign
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				n(ACHIEVEMENTS, {
