@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.BFA, {
 		n(WAR_EFFORT, {
-			n(-253, {	-- Horde War Campaign
+			n(WAR_CAMPAIGN_HORDE, {	-- Horde War Campaign
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(ACHIEVEMENTS, {
@@ -1687,7 +1687,7 @@ root(ROOTS.ExpansionFeatures,
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 	n(WAR_EFFORT, {
-		n(-253, {	-- Horde War Campaign
+		n(WAR_CAMPAIGN_HORDE, {	-- Horde War Campaign
 			q(54316),	-- 7500/12000 Honored with Honorbound. unlock for storyline quests
 			q(54319),	-- triggered when reaching Revered with Honorbound. unlock for storyline quests
 			q(55029),	-- tracking quest in Sylvanas Loyalist questline
