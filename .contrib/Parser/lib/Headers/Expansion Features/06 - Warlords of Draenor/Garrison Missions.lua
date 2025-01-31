@@ -6,3 +6,15 @@ GARRISON_MISSIONS = createHeader({
         en = [[~GARRISON_MISSIONS]],
     },
 });
+
+GARRISON_MISSION_LOOT = createHeader({
+    readable = "Garrison Mission Loot",
+    constant = "GARRISON_MISSION_LOOT",
+    icon = 1103070,
+    text = {
+        en = "Garrison Mission Loot",
+        ru = "Сломанный лут с миссий",
+        cn = "要塞任务拾取",
+        tw = "要塞任務拾取",
+    },
+});
