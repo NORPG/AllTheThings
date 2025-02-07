@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.LEGION, {
-		n(-543, {	-- Broken Isles: Legion Invasions
+		n(LEGION_INVASIONS, {	-- Broken Isles: Legion Invasions
 			["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
 			["maps"] = {
 				VALSHARAH,
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures,
 						118975,	-- Xeritas
 					},
 					["sym"] = {
-						{"select", "headerID", -543},	-- Select Legion Invasions
+						{"select", "headerID", LEGION_INVASIONS},	-- Select Legion Invasions
 						{"pop"},	-- Push all of the groups contained to the processing layer.
 						{"where", "headerID", WORLD_QUESTS },
 						{"pop"},	-- Push all of the groups contained to the processing layer.
@@ -193,7 +193,7 @@ root(ROOTS.ExpansionFeatures,
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			n(-543, {
+			n(LEGION_INVASIONS, {
 				q(46964),	-- Assault Treasure - Azsuna
 				q(46966),	-- Assault Treasure - Azsuna
 				q(46967),	-- Assault Treasure - Azsuna
@@ -210,7 +210,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			}),
 		}),
 		m(HIGHMOUNTAIN, {
-			n(-543, {
+			n(LEGION_INVASIONS, {
 				q(46985),	-- Assault Treasure - Highmountain
 				q(46986),	-- Assault Treasure - Highmountain
 				q(46987),	-- Assault Treasure - Highmountain
@@ -226,7 +226,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			}),
 		}),
 		m(STORMHEIM, {
-			n(-543, {
+			n(LEGION_INVASIONS, {
 				q(46975),	-- Assault Treasure - Stormheim
 				q(46976),	-- Assault Treasure - Stormheim
 				q(46977),	-- Assault Treasure - Stormheim
@@ -240,7 +240,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			}),
 		}),
 		m(VALSHARAH, {
-			n(-543, {
+			n(LEGION_INVASIONS, {
 				q(46954),	-- Assault Treasure - Val'sharah
 				q(46956),	-- Assault Treasure - Val'sharah
 				q(46958),	-- Assault Treasure - Val'sharah
@@ -255,7 +255,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			}),
 		}),
 	}),
-	n(-543, {
+	n(LEGION_INVASIONS, {
 		q(47185),	-- Invasion Boss Weekly Bonus
 	}),
 })));
