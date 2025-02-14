@@ -1669,12 +1669,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						-- #endif
 						q(3090, {	-- Tainted Parchment
+							["qg"] = 3143,	-- Gornek
 							["providers"] = {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9579 },	-- Tainted Parchment
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
+							-- #if AFTER CATA
+							["coord"] = { 43.2, 68.2, DUROTAR },
+							-- #else
 							["coord"] = { 42, 68.4, DUROTAR },
+							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC, TROLL },
 							["classes"] = { WARLOCK },
