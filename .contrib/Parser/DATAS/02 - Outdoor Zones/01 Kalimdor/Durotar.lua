@@ -1847,7 +1847,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.2, 68.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.2, 68.8, DUROTAR },
+								{ 43.3, 68.8, DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
