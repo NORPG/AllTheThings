@@ -1007,6 +1007,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						q(25145, {	-- Immolate
+							["qg"] = 3156,	-- Nartok <Warlock Trainer>
+							["sourceQuest"]	= 3090,	-- Tainted Parchment
+							["coords"] = {
+								-- #if AFTER MOP
+								-- TODO: Confirm the position after MoP.
+								{ 45.8, 63.5, VALLEY_OF_TRIALS },
+								-- #else
+								{ 42.4, 68.0, DUROTAR },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["lvl"]	= 3,
+							["races"] = { ORC },
+							["classes"] = { WARLOCK },
+						}),
 						q(25132, {	-- Burning Blade Medallion
 							["qg"] = 3145,	-- Zureetha Fargaze
 							["sourceQuests"] = {
