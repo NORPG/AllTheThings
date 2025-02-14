@@ -1390,6 +1390,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/7 Northwatch Scout
+									["provider"] = { "n", 39317 },	-- Northwatch Scout
+								}),
 								i(53373, {	-- Hearth Defender Bracers
 									["timeline"] = { ADDED_4_0_3 },
 								}),
