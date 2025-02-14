@@ -1432,6 +1432,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/4 Peons Awoken
+									["provider"] = { "n", 10556 }	-- Lazy Peon
+								}),
+							},
 						}),
 						q(5441, {	-- Lazy Peons
 							["qg"] = 11378,	-- Foreman Thazz'ril
