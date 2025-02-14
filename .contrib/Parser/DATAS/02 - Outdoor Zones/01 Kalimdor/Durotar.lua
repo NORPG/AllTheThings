@@ -1750,6 +1750,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/8 Vile Familiar
+									["provider"] = { "n", 3101 },	-- Vile Familiar
+								}),
 								i(53396, {	-- Vile Jersey
 									["timeline"] = { ADDED_4_0_3 },
 								}),
