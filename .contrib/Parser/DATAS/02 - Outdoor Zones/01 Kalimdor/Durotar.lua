@@ -1255,11 +1255,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 43.0, 62.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 42.8, 67.2, DUROTAR },
+								{ 42.7, 67.2, DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								objective(1, {
+									["providers"] = {
+										{ "i", 11583 },		-- Cactus Apple
+										{ "o", 171938 },	-- Cactus Apple
+									},
+								}),
+							},
 						}),
 						q(4402, {	-- Galgar's Cactus Apple Surprise
 							["qg"] = 9796,	-- Galgar
