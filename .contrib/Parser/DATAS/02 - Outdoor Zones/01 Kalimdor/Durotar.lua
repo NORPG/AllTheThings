@@ -1153,6 +1153,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/6 Mottled Boar
+									["provider"] = { "n", 3098 },	-- Mottled Boar
+									["coord"] = { 43.6, 64.8, DUROTAR },
+								}),
 								i(53378, {	-- Mottled Bracers
 									["timeline"] = { ADDED_4_0_3 },
 								}),
