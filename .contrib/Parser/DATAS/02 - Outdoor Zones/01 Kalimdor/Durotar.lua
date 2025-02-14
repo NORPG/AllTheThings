@@ -1615,6 +1615,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/8 Scorpid Worker Tail
+									["provider"] = { "i", 4862 },	-- Scorpid Worker Tail (QI!)
+									["cr"] = 3124, -- Scorpid Worker
+								}),
 								i(53394, {	-- Venom-Imbued Robes
 									["timeline"] = { ADDED_4_0_3 },
 								}),
