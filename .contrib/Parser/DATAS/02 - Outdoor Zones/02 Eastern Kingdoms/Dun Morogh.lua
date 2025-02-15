@@ -2421,7 +2421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1267,	-- Ragnar Thunderbrew
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["coord"] = { 53.9, 50.6, DUN_MOROGH },
+					["coord"] = { 53.9, 50.7, DUN_MOROGH },
 					["cost"] = { { "i", 2894, 1 } },	-- Rhapsody Malt
 					-- #else
 					["requireSkill"] = COOKING,
