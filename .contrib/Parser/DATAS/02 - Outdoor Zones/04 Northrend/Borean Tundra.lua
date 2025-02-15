@@ -1262,7 +1262,9 @@ root(ROOTS.Zones, {
 						},
 						["altQuests"] = { 11586 },	-- Hellscream's Vigil
 						["sourceQuests"] = {
+							-- #if AFTER 4.0.1
 							28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
+							-- #endif
 							10172,	-- There Is No Hope
 						},
 					}),
@@ -1276,7 +1278,9 @@ root(ROOTS.Zones, {
 						["altQuests"] = { 11585 },	-- Hellscream's Vigil
 						["lockCriteria"] = { 1, "questID", 10172 },	-- There Is No Hope
 						["description"] = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",
+						-- #if AFTER 4.0.1
 						["sourceQuest"] = 28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
+						-- #endif
 					}),
 					q(11876, {	-- Help Those That Cannot Help Themselves
 						["qg"] = 25809,	-- Archdruid Lathorius
