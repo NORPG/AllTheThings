@@ -2609,10 +2609,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/4 Tender Boar Ribs
-							["provider"] = { "i", 60496 },	-- Tender Boar Ribs
+							["provider"] = { "i", 60496 },	-- Tender Boar Ribs (QI!)
 							["cr"] = 1125,	-- Crag Boar
 						}),
+						-- #else
+						objective(1, {	-- 0/6 Crag Boar Rib
+							["provider"] = { "i", 2886 },	-- Tender Boar Ribs
+							["crs"] = {
+								1125,	-- Crag Boar
+								1126,	-- Large Crag Boar
+								1127,	-- Elder Crag Boar
+								1689,	-- Scarred Crag Boar
+								-- #if SEASON_OF_DISCOVERY
+								208638,	-- Fyodi
+								-- #endif
+							},
+						}),
 						-- #endif
+						objective(2, {	-- 0/1 Rhapsody Malt
+							["provider"] = { "i", 2894 },	-- Rhapsody Malt
+							["cr"] = 1247,	-- Crag Boar
+						}),
 						i(2888),	-- Beer Basted Boar Ribs
 						i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
 					},
