@@ -3630,7 +3630,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				q(313, {	-- The Grizzled Den / Forced to Watch from Afar [CATA+]
 					["qg"] = 1377,	-- Pilot Stonegear
-					["coord"] = { 49.6, 48.4, DUN_MOROGH },
+					["coord"] = { 49.6, 48.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
