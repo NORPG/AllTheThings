@@ -920,7 +920,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["sourceQuest"] = 1879,	-- Speak with Bink
 					["altQuests"] = { 1861 },	-- Mirror Lake
-					["coord"] = { 27, 8.2, IRONFORGE },
+					["coord"] = { 27.3, 8.3, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
 					["classes"] = { MAGE },
@@ -932,7 +932,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7226 },	-- Mage-tastic Gizmonitor
 								{ "o", 102984 },	-- Bink's Toolbox
 							},
-							["coord"] = { 27.7, 36.5, DUN_MOROGH },
+							["coord"] = { 27.7, 36.4, DUN_MOROGH },
 						}),
 						i(7507, {	-- Arcane Orb
 							["timeline"] = { REMOVED_4_0_3 },
