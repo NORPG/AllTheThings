@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures,
 						118975,	-- Xeritas
 					},
 					["sym"] = {
-						{"select", "headerID", LEGION_INVASIONS},	-- Select Legion Invasions
+						{"where", "headerID", LEGION_INVASIONS},	-- Select Legion Invasions
 						{"pop"},	-- Push all of the groups contained to the processing layer.
 						{"where", "headerID", WORLD_QUESTS },
 						{"pop"},	-- Push all of the groups contained to the processing layer.
