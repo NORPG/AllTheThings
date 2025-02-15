@@ -3468,6 +3468,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
+						objective(1, {	-- 0/4 Chunk of Boar Meat
+							["provider"] = { "i", 769 },	-- Chunk of Boar Meat
+							["crs"] = {
+								1125,	-- Crag Boar
+								1126,	-- Large Crag Boar
+								1127,	-- Elder Crag Boar
+								1689,	-- Scarred Crag Boar
+								-- #if SEASON_OF_DISCOVERY
+								208638,	-- Fyodi
+								-- #endif
+							},
+						}),
 						objective(2, {	-- 0/2 Thick Bear Fur
 							["provider"] = { "i", 6952 },	-- Thick Bear Fur
 							["crs"] = {
