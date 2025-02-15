@@ -43,7 +43,6 @@ for key, value in pairs({
 		[-653] = 838515,						-- Honor Gear Tyrannical (S13)
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
-		[-679] = 1127958,								-- Primal Gladiator: Warlords Season 1
 		[-680] = 1137556,							-- Wild Gladiator: Warlords Season 2
 		[-681] = 1137555,							-- Warmongering Gladiator: Warlords Season 3
 	-- SL Headers
@@ -108,7 +107,6 @@ for key, value in pairs({
 		[-652] = "Honor Gear Grievous Season",									-- Honor Gear Grievous (S14)
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 	-- Warlords of Dreanor PvP Seasons
-		[-679] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-680] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
 		[-681] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
 	-- Shadowlands Header
