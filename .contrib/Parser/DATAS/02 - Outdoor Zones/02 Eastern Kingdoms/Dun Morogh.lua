@@ -2582,7 +2582,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  13850 },	-- Rumbleshot's Ammo
 								{ "o", 176785 },	-- Ammo Crate
 							},
-							["coord"] = { 44.13, 56.95, DUN_MOROGH },
+							["coord"] = { 44.1, 57.0, DUN_MOROGH },
+						}),
+						objective(2, {
+							["cr"] = 1243,	-- Hegnar Rumbleshot <Gunsmith>
+							["coord"] = { 40.7, 65.1, DUN_MOROGH },
 						}),
 					},
 				}),
