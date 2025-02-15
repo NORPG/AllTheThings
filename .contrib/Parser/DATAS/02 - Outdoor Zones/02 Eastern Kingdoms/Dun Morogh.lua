@@ -2589,14 +2589,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(384, {	-- Beer Basted Boar Ribs
 					["qg"] = 1267,	-- Ragnar Thunderbrew
 					["races"] = ALLIANCE_ONLY,
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.9, 50.6, DUN_MOROGH },
-						-- #else
-						{ 46.8, 52.4, DUN_MOROGH },
-						-- #endif
-					},
-					-- #if BEFORE CATA
+					-- #if AFTER CATA
+					["coord"] = { 53.9, 50.7, DUN_MOROGH },
+					["cost"] = { { "i", 2894, 1 } },	-- Rhapsody Malt
+					-- #else
 					["requireSkill"] = COOKING,
 					-- #endif
 					["cost"] = {
