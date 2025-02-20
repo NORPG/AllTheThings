@@ -30,10 +30,6 @@ for key, value in pairs({
 		[-145] = 1042064,										-- Skyreach
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
-	-- Outposts in Draenor
-		[-390] = 901746,								-- Smuggler's Den
-		[-391] = 413582,						-- Stoktron Brewery (alliance)
-		[-392] = 413582,						-- Hearthfire Tavern (horde)
 	-- PvP Headers
 		-- [-651] = 311230,									-- Not used yet. Future PvP Icons if needed
 		-- [-652] = 311227,										-- Not used yet. Future PvP Icons if needed
@@ -94,10 +90,6 @@ for key, value in pairs({
 		[-145] = GetRealZoneText(1209),									-- Skyreach
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
-	-- Outposts in Draenor
-		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
-		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
-		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- Mists of Pandaria PvP Seasons
 		[-653] = "Honor Gear Tyrannical Season",								-- Honor Gear Tyrannical (S13)
 		[-652] = "Honor Gear Grievous Season",									-- Honor Gear Grievous (S14)
