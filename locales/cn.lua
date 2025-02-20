@@ -463,8 +463,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Outposts in Draenor
-		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
 	-- Mists of Pandaria PvP Seasons
 		[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)
 		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)

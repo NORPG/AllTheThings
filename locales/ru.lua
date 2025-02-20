@@ -442,8 +442,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Outposts in Draenor
-		[-361] = "Артиллерийная башня",								-- Artillery Tower
 	-- Mists of Pandaria PvP Seasons
 		[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season
 		[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season

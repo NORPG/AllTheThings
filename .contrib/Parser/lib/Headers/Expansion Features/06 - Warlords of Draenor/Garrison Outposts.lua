@@ -1,3 +1,14 @@
+ARTILLERY_TOWER = createHeader({
+    readable = "Artillery Tower",
+    icon = 252185,
+    text = {
+        en = WOWAPI_GetSpellName(182108) .. [[.." Tower"]],
+        ru = "Артиллерийная башня",
+        cn = WOWAPI_GetSpellName(182108) .. [[.." 塔"]],
+        tw = WOWAPI_GetSpellName(182108) .. [[.." 塔"]],
+    },
+});
+
 SPARRING_ARENA = createHeader({
     readable = "Sparring Arena",
     text = {
