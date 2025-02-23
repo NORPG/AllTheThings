@@ -468,7 +468,6 @@ for key,value in pairs({
 		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)
 		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
-		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "传送网络",											-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "忠诚",											-- Loyalty

@@ -458,7 +458,6 @@ for key,value in pairs({
 		[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
 		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Shadowlands Header
-		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Réseau de transport",								-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "Loyauté",										-- Loyalty

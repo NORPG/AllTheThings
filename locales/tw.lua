@@ -460,7 +460,6 @@ if app.IsRetail then
 		[-652] = "榮譽裝備惡孽賽季",									-- Honor Gear Grievous (S14)
 		[-651] = "榮譽裝備驕矜賽季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
-		[-979] = "掮靈威·肯 & 掮靈威·諾特",									-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "傳送網路",											-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "忠誠",											-- Loyalty

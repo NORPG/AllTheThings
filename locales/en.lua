@@ -93,7 +93,6 @@ for key, value in pairs({
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
-		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-981] = GetSpellName(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellName(321078),											-- Necrolord
