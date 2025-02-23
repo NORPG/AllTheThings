@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		[-920] = 3257749,									-- Covenant: Necrolord
 		[-923] = 3675492,							-- Abomination Factory (Necrolord)
 		-- [-924] = Uses Different Icons														-- Transport Network
 		[-929] = 3257750,										-- Covenant: Night Fae
@@ -93,7 +92,6 @@ for key, value in pairs({
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
 		-- SL Maldraxxus/Necrolord
-		[-920] = GetSpellName(321078),											-- Necrolord
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
 		[-924] = "Transport Network",											-- Transport Network
 		-- SL Ardenweald/Night Fae
