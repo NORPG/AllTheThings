@@ -60,7 +60,6 @@ for key, value in pairs({
 		[-973] = 3536186,																	-- Loyalty
 		[-974] = 3536184,																	-- Wisdom
 		[-975] = 3536187,																	-- Humility
-		[-981] = 3601566,																	-- Conduits
 		[-982] = 2178518,																	-- Skoldus Hall
 		[-983] = 1392920,																	-- Fracture Chambers
 		[-984] = 1392929,																	-- The Soulforges
@@ -93,7 +92,6 @@ for key, value in pairs({
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
-		[-981] = GetSpellName(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellName(321078),											-- Necrolord
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
