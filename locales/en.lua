@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		-- [-924] = Uses Different Icons														-- Transport Network
 		[-929] = 3257750,										-- Covenant: Night Fae
 		[-930] = 3675494,							-- Queen's Conservatory
 		[-939] = 3257748,										-- Covenant: Kyrian
@@ -90,8 +89,6 @@ for key, value in pairs({
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
-		-- SL Maldraxxus/Necrolord
-		[-924] = "Transport Network",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 		[-929] = GetSpellName(321077),											-- Night Fae
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory

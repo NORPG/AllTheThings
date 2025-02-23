@@ -447,7 +447,6 @@ for key,value in pairs({
 		[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 	-- Shadowlands Header
-		[-924] = "Транспортная Сеть",								-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility

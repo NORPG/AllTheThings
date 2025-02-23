@@ -458,7 +458,6 @@ for key,value in pairs({
 		[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
 		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Shadowlands Header
-		[-924] = "Réseau de transport",								-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "Loyauté",										-- Loyalty
 			[-975] = "Humilité",									-- Humility

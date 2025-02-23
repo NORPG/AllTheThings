@@ -460,7 +460,6 @@ if app.IsRetail then
 		[-652] = "榮譽裝備惡孽賽季",									-- Honor Gear Grievous (S14)
 		[-651] = "榮譽裝備驕矜賽季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
-		[-924] = "傳送網路",											-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "忠誠",											-- Loyalty
 			[-975] = "謙遜",											-- Humility
