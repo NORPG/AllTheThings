@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		[-905] = 3675495,							-- Command Table
 		[-920] = 3257749,									-- Covenant: Necrolord
 		[-923] = 3675492,							-- Abomination Factory (Necrolord)
 		-- [-924] = Uses Different Icons														-- Transport Network
@@ -94,7 +93,6 @@ for key, value in pairs({
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
-		[-905] = GetSpellName(280630),											-- Command Table
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-981] = GetSpellName(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
