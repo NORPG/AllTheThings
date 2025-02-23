@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		[-930] = 3675494,							-- Queen's Conservatory
 		[-939] = 3257748,										-- Covenant: Kyrian
 		[-942] = 3675496,																	-- Path of Ascension
 		[-949] = 3257751,										-- Covenant: Venthyr
@@ -89,7 +88,6 @@ for key, value in pairs({
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
 		-- SL Ardenweald/Night Fae
-		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
 		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
 		-- SL Bastion/Kyrian
 		[-939] = GetSpellName(321076),											-- Kyrian
