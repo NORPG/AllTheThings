@@ -448,7 +448,6 @@ for key,value in pairs({
 		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 	-- Dragonflight

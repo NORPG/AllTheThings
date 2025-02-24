@@ -469,7 +469,6 @@ for key,value in pairs({
 		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-969] = "组 B",											-- Set B
 			[-970] = "组 C",											-- Set C
 			[-971] = "组 D",											-- Set D
 	-- Dragonflight

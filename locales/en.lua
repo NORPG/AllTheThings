@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		[-969] = 3854020,																	-- Set B
 		[-970] = 3854020,																	-- Set C
 		[-971] = 3854020,																	-- Set D
 		[-982] = 2178518,																	-- Skoldus Hall
@@ -75,7 +74,6 @@ for key, value in pairs({
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-		[-969] = "Set B",														-- Set B
 		[-970] = "Set C",														-- Set C
 		[-971] = "Set D",														-- Set D
 		-- SL Torghast

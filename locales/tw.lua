@@ -461,7 +461,6 @@ if app.IsRetail then
 		[-651] = "榮譽裝備驕矜賽季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-969] = "組 B",											-- Set B
 			[-970] = "組 C",											-- Set C
 			[-971] = "組 D",											-- Set D
 	-- Dragonflight
