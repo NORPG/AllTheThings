@@ -23,3 +23,16 @@ HIGH_INQUISITORS = createHeader({
         tw = "高階審判官",
     },
 });
+
+GRAND_INQUISITORS = createHeader({
+    readable = "Grand Inquisitors",
+    icon = 3528307,
+    text = {
+        en = "Grand Inquisitors";
+        de = "Großinquisitor",
+        fr = "Inquisiteurs suprêmes",
+        ru = "Великие Инквизиторы",
+        cn = "大审判官",
+        tw = "大審判官",
+    },
+});

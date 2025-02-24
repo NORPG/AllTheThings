@@ -459,7 +459,6 @@ for key,value in pairs({
 		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-956] = "Inquisiteurs suprêmes",						-- Grand Inquisitors
 			[-967] = "Restauration de miroir",						-- Mirror Restoration
 			[-968] = "Tier A",										-- Set A
 			[-969] = "Tier B",										-- Set B
