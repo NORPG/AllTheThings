@@ -460,7 +460,6 @@ if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Shadowlands Header
-		[-967] = "Restauración del espejo",							-- Mirror Restoration
 	-- Dragonflight
 		[-1102] = "Wrathion y Sabellian",							-- Wrathion & Sabellian
 		[-1120] = "Centauros Maruuk",								-- Maruuk Centaur
