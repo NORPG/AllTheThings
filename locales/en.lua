@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		[-949] = 3257751,										-- Covenant: Venthyr
 		[-954] = 3528307,							-- Inquisitors
 		[-955] = 3528307,							-- High Inquisitors
 		[-956] = 3528307,							-- Grand Inquisitors
@@ -82,7 +81,6 @@ for key, value in pairs({
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-		[-949] = GetSpellName(321079),											-- Venthyr
 		[-954] = "Inquisitors",													-- Inquisitors
 		[-955] = "High Inquisitors",											-- High Inquisitors
 		[-956] = "Grand Inquisitors",											-- Grand Inquisitors
