@@ -448,7 +448,6 @@ for key,value in pairs({
 		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-955] = "Старшие Инквизиторы",							-- High Inquisitors
 			[-956] = "Великие Инквизиторы",							-- Grand Inquisitors
 			[-967] = "Восстановление зеркала",						-- Mirror Restoration
 			[-968] = "Набор A",										-- Set A
