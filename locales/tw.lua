@@ -461,7 +461,6 @@ if app.IsRetail then
 		[-651] = "榮譽裝備驕矜賽季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
 		-- SL Bastion/Kyrian
-			[-973] = "忠誠",											-- Loyalty
 			[-975] = "謙遜",											-- Humility
 		-- SL Revendreth/Venthyr
 			[-954] = "審判官",											-- Inquisitors

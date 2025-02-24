@@ -13,3 +13,16 @@ COURAGE = createHeader({
         en = [[~C_PetJournal.GetPetInfoBySpeciesID(3065)]],
     },
 });
+
+LOYALTY = createHeader({
+    readable = "Loyalty",
+    icon = 3536186,
+    text = {
+        en = "Loyalty",
+        de = "Loyalität",
+        fr = "Loyauté",
+        ru = "Верность",
+        cn = "忠诚",
+        tw = "忠誠",
+    },
+});

@@ -448,7 +448,6 @@ for key,value in pairs({
 		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 	-- Shadowlands Header
 		-- SL Bastion/Kyrian
-			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility
 		-- SL Revendreth/Venthyr
 			[-954] = "Инквизиторы",									-- Inquisitors

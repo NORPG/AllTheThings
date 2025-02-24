@@ -459,7 +459,6 @@ for key,value in pairs({
 		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Shadowlands Header
 		-- SL Bastion/Kyrian
-			[-973] = "Loyauté",										-- Loyalty
 			[-975] = "Humilité",									-- Humility
 		-- SL Revendreth/Venthyr
 			[-954] = "Inquisiteurs",								-- Inquisitors
