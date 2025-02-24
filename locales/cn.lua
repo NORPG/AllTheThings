@@ -467,9 +467,6 @@ for key,value in pairs({
 		[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)
 		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)
 		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
-	-- Shadowlands Header
-		-- SL Revendreth/Venthyr
-			[-971] = "组 D",											-- Set D
 	-- Dragonflight
 
 		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian

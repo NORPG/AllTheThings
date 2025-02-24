@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		[-971] = 3854020,																	-- Set D
 		[-982] = 2178518,																	-- Skoldus Hall
 		[-983] = 1392920,																	-- Fracture Chambers
 		[-984] = 1392929,																	-- The Soulforges
@@ -72,8 +71,6 @@ for key, value in pairs({
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
-		-- SL Revendreth/Venthyr
-		[-971] = "Set D",														-- Set D
 		-- SL Torghast
 		[-982] = select(2, GetAchievementInfo(14463)),							-- Skoldus Hall
 		[-983] = select(2, GetAchievementInfo(14473)),							-- Fracture Chambers

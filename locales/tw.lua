@@ -459,9 +459,6 @@ if app.IsRetail then
 		[-653] = "榮譽裝備暴虐賽季",									-- Honor Gear Tyrannical (S13)
 		[-652] = "榮譽裝備惡孽賽季",									-- Honor Gear Grievous (S14)
 		[-651] = "榮譽裝備驕矜賽季",									-- Honor Gear Prideful (S15)
-	-- Shadowlands Header
-		-- SL Revendreth/Venthyr
-			[-971] = "組 D",											-- Set D
 	-- Dragonflight
 
 		[-1102] = "怒西昂和賽柏利安",										-- Wrathion & Sabellian

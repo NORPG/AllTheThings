@@ -457,9 +457,6 @@ for key,value in pairs({
 		[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
 		[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
 		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
-	-- Shadowlands Header
-		-- SL Revendreth/Venthyr
-			[-971] = "Tier D",										-- Set D
 	-- Dragonflight
 
 		[-1102] = "Irion et Sabellian",								-- Wrathion & Sabellian

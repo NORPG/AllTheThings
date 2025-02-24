@@ -446,9 +446,6 @@ for key,value in pairs({
 		[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season
 		[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
-	-- Shadowlands Header
-		-- SL Revendreth/Venthyr
-			[-971] = "Набор D",										-- Set D
 	-- Dragonflight
 		[-1102] = "Гневион и Сабеллиан",							-- Wrathion & Sabellian
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
