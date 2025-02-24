@@ -469,7 +469,6 @@ for key,value in pairs({
 		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-954] = "审判官",											-- Inquisitors
 			[-955] = "高阶审判官",										-- High Inquisitors
 			[-956] = "大审判官",										-- Grand Inquisitors
 			[-967] = "破镜重圆",										-- Mirror Restoration

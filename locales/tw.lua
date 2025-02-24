@@ -461,7 +461,6 @@ if app.IsRetail then
 		[-651] = "榮譽裝備驕矜賽季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-954] = "審判官",											-- Inquisitors
 			[-955] = "高階審判官",										-- High Inquisitors
 			[-956] = "大審判官",										-- Grand Inquisitors
 			[-967] = "破镜重圆",										-- Mirror Restoration
