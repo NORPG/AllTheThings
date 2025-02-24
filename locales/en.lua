@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		[-939] = 3257748,										-- Covenant: Kyrian
 		[-942] = 3675496,																	-- Path of Ascension
 		[-949] = 3257751,										-- Covenant: Venthyr
 		[-954] = 3528307,							-- Inquisitors
@@ -88,7 +87,6 @@ for key, value in pairs({
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
 		-- SL Bastion/Kyrian
-		[-939] = GetSpellName(321076),											-- Kyrian
 		[-942] = COVENANT_SANCTUM_FEATURE_KYRIAN,								-- Path of Ascension
 		[-972] = C_PetJournal.GetPetInfoBySpeciesID(3065),						-- Courage
 		[-973] = "Loyalty",														-- Loyalty
