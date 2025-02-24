@@ -39,7 +39,6 @@ for key, value in pairs({
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
 	-- SL Headers
-		[-970] = 3854020,																	-- Set C
 		[-971] = 3854020,																	-- Set D
 		[-982] = 2178518,																	-- Skoldus Hall
 		[-983] = 1392920,																	-- Fracture Chambers
@@ -74,7 +73,6 @@ for key, value in pairs({
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-		[-970] = "Set C",														-- Set C
 		[-971] = "Set D",														-- Set D
 		-- SL Torghast
 		[-982] = select(2, GetAchievementInfo(14463)),							-- Skoldus Hall
