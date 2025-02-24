@@ -468,8 +468,6 @@ for key,value in pairs({
 		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)
 		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
-		-- SL Bastion/Kyrian
-			[-975] = "谦逊",											-- Humility
 		-- SL Revendreth/Venthyr
 			[-954] = "审判官",											-- Inquisitors
 			[-955] = "高阶审判官",										-- High Inquisitors
