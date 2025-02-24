@@ -38,8 +38,6 @@ for key, value in pairs({
 		[-653] = 838515,						-- Honor Gear Tyrannical (S13)
 	-- Mists of Pandaria PvP Seasons
 	-- Warlords of Dreanor PvP Seasons
-	-- SL Headers
-		[-987] = 2178509,																	-- The Upper Reaches
 	-- Dragonflight
 		[-1102] = 4622453,									-- Wrathion & Sabellian
 		[-1120] = 4687627,										-- Maruuk Centaur
@@ -67,7 +65,6 @@ for key, value in pairs({
 	-- Warlords of Dreanor PvP Seasons
 	-- Shadowlands Header
 		-- SL Torghast
-		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 	-- Dragonflight
 		-- Autotranslate with NPC
 		[-1102] = "Wrathion & Sabellian",											-- Wrathion & Sabellian
