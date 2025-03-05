@@ -20,7 +20,7 @@ jobs:
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser for Retail".bat
+          "Parser.exe" baseconfig=.config/retail/retail.config
         shell: cmd
 
       - name: Database Parser for Classic
