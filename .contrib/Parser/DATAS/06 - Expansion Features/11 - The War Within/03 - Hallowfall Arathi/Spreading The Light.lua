@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 local RADIANT_REMNANT = 206350;
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-	n(HALLOWFALL_ARATHI, {
+	header(HEADERS.Faction, FACTION_HALLOWFALL_ARATHI , {
 		header(HEADERS.Quest, 76586, bubbleDownSelf({ ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 3 } }, {	-- Spreading The Light
 			["icon"] = 135922,
 			["coord"] = { 65.4, 32.2, HALLOWFALL },
@@ -1167,7 +1167,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-	n(HALLOWFALL_ARATHI, {
+	header(HEADERS.Faction, FACTION_HALLOWFALL_ARATHI , {
 		header(HEADERS.Quest, 76586, {	-- Spreading The Light
 			--	Rares
 			q(84052, {	-- Weekly reputation: Crazed Cabbage Smacker
