@@ -1694,33 +1694,53 @@ end]];
 	return t;
 end
 
+---@param t table|nil
+---@return table|nil
 usONLY = function(t)	-- the object only available on US realm
 	return regionExclusive("US", t);
 end
+---@param t table|nil
+---@return table|nil
 euONLY = function(t)	-- the object only available on EU realm 
 	return regionExclusive("EU", t);
 end
+---@param t table|nil
+---@return table|nil
 krONLY = function(t)	-- the object only available on KR realm 
 	return regionExclusive("KR", t);
 end
+---@param t table|nil
+---@return table|nil
 twONLY = function(t)	-- the object only available on TW realm 
 	return regionExclusive("TW", t);
 end
+---@param t table|nil
+---@return table|nil
 cnONLY = function(t)	-- the object only available on CN realm 
 	return regionExclusive("CN", t);
 end
+---@param t table|nil
+---@return table|nil
 usUnavailable = function(t)	-- the object only unavailable on US realm
 	return regionUnavailable("US", t);
 end
+---@param t table|nil
+---@return table|nil
 euUnavailable = function(t)	-- the object only unavailable on EU realm
 	return regionUnavailable("EU", t);
 end
+---@param t table|nil
+---@return table|nil
 krUnavailable = function(t)	-- the object only unavailable on KR realm
 	return regionUnavailable("KR", t);
 end
+---@param t table|nil
+---@return table|nil
 twUnavailable = function(t)	-- the object only unavailable on TW realm
 	return regionUnavailable("TW", t);
 end
+---@param t table|nil
+---@return table|nil
 cnUnavailable = function(t)	-- the object only unavailable on CN realm
 	return regionUnavailable("CN", t);
 end
