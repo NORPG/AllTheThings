@@ -16,6 +16,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["sharedDescription"] = "[TBC]\nIf the boss loot that is not in the boss's loot table, @NORPG on Discord.",
 				["groups"] = {
 					n(COMMON_BOSS_DROPS),
+					n(241492),	-- Balnazzar(0)
+					n(243269),	-- Solistrasza(1)
+					n(242563),	-- Beatrix(2)
+					n(242641),	-- Reborn Council (3)
+					n(241518),	-- Caldoran(4)
+					n(243021),	-- Lillian Voss(5)
+					n(240794),	-- Beastmaster(6)
+					n(241021),	-- Mason(7)
 				},
 			}),
 		},
