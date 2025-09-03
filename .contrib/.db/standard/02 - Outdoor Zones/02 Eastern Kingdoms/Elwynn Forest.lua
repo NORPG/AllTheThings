@@ -113,7 +113,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 						qg = 197,	-- Marshal McBride
 						coords = {
 							-- #if AFTER MOP
-							{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+							{ 33.5, 53.1, NORTHSHIRE_VALLEY },
 							-- #else
 							{ 48.2, 42.1, ELWYNN_FOREST },
 							-- #endif
@@ -869,14 +869,14 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 						timeline = { ADDED_4_0_6 },
 						races = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 					}),
-					q(28789, {	-- Join the Battle!
+					q(28789, {	-- Join the Battle! (Warrior)
 						sourceQuest = 28774,	-- Lions for Lambs
-						qg = 197,	-- Marshal McBride
+						qg = 911,	-- Llane Beshere <Warrior Trainer>
 						coords = {
 							-- #if AFTER MOP
-							{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+							{ 40.9, 53.8, NORTHSHIRE_VALLEY },
 							-- #else
-							{ 48.0, 42.0, ELWYNN_FOREST },
+							{ 50.2, 42.3, ELWYNN_FOREST },
 							-- #endif
 						},
 						timeline = { ADDED_4_0_3 },
