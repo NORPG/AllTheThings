@@ -12,13 +12,14 @@ end
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+local IsArtifactRelicItem = app.WOWAPI.IsArtifactRelicItem;
 
 local CurrentArtifactRelicItemLevels = {}
 local pairs, select, math_floor,tinsert,tremove
 	= pairs, select, math.floor,tinsert,tremove
 local L, ColorizeRGB, contains = app.L, app.Modules.Color.ColorizeRGB, app.contains
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
-local GetDetailedItemLevelInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, IsArtifactRelicItem;
+local GetDetailedItemLevelInfo = GetDetailedItemLevelInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
 local function GetArtifactModItemID(itemID, artifactID, isOffHand)

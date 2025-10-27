@@ -90,6 +90,7 @@ AssignAPIWrapper("GetFactionReaction",
 
 -- Item APIs
 local C_Item = C_Item;
+local C_ItemSocketInfo = C_ItemSocketInfo;
 ---@diagnostic disable: deprecated
 AssignAPIWrapper("GetItemCount", C_Item and C_Item.GetItemCount, GetItemCount)
 AssignAPIWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, GetItemClassInfo)
@@ -98,6 +99,7 @@ AssignAPIWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, Get
 AssignAPIWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)
 AssignAPIWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
 AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
+AssignAPIWrapper("IsArtifactRelicItem", C_ItemSocketInfo and C_ItemSocketInfo.IsArtifactRelicItem, IsArtifactRelicItem)
 ---@diagnostic enable: deprecated
 
 -- Quest APIs
