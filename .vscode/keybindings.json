@@ -1,0 +1,7 @@
+[
+  {
+    "key": "ctrl+alt+l",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Normalize Lua Table"
+  }
+]
