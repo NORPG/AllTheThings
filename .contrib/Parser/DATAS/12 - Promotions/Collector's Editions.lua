@@ -1149,3 +1149,31 @@ root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = R
 		}),
 	})),
 })))
+
+-----------------------------------------------------
+--                T E S T I N G                    --
+-----------------------------------------------------
+-- This data file has comprehensive unit tests to validate:
+-- - Data structure integrity
+-- - Localization completeness
+-- - Icon reference validity
+-- - Field type correctness
+-- - Cross-header consistency
+--
+-- Test files location:
+--   - Collector's Editions.test.lua (test suite)
+--   - run_tests.lua (test runner)
+--   - TEST_README.md (documentation)
+--
+-- To run tests:
+--   cd ".contrib/Parser/DATAS/12 - Promotions"
+--   lua run_tests.lua
+--
+-- The test suite includes 50+ test cases covering:
+--   * All 17 collector's edition headers
+--   * Structure validation for required fields
+--   * Localization pairs (cn/tw must exist together)
+--   * Icon format validation (string assets or numeric IDs)
+--   * Description field validation
+--   * No empty string values in localizations
+--   * Consistency across all headers
