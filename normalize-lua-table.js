@@ -16,7 +16,7 @@ let content = fs.readFileSync(file, "utf8");
 
 // 抓 tableHeader、body、closingBraceLine 與 afterBrace
 const tableRegex =
-  /(^[ \t]*(text|description)\s*=\s*\{)([\s\S]*?)(^\s*\})([ \t]*[,;]?)/gm;
+  /(^[ \t]*(text|description|lore)\s*=\s*\{)([\s\S]*?)(^\s*\})([ \t]*[,;]?)/gm;
 
 content = content.replace(
   tableRegex,
