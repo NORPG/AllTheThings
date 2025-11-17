@@ -17,10 +17,16 @@ DELVES_TWW_S1 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S1",
+		-- TODO: de = "",
 		es = "Profundidades TWW T1",
 		mx = "Abismos TWW T1",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки TWW 1 сезон",
 		cn = "地心之战地下堡第1季",
+		-- TODO: tw = "",
 	},
 });
 DELVES_TWW_S2 = createHeader({
@@ -28,10 +34,16 @@ DELVES_TWW_S2 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S2",
+		-- TODO: de = "",
 		es = "Profundidades TWW T2",
 		mx = "Abismos TWW T2",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки TWW 2 сезон",
 		cn = "地心之战地下堡第2季",
+		-- TODO: tw = "",
 	},
 });
 DELVES_TWW_S3 = createHeader({
@@ -39,10 +51,16 @@ DELVES_TWW_S3 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S3",
+		-- TODO: de = "",
 		es = "Profundidades TWW T3",
 		mx = "Abismos TWW T3",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки TWW 3 сезон",
 		cn = "地心之战地下堡第3季",
+		-- TODO: tw = "",
 	},
 });
 local UNDERCOIN = 2803;

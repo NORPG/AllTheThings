@@ -6,11 +6,16 @@ CAPTAINS = createHeader({
 	icon = 236623,
 	text = {
 		en = "Captains",
+		-- TODO: de = "",
 		es = "Capitanes",
 		mx = "Capitanes",
 		fr = "Capitaines",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Капитаны",
 		cn = "船长",
+		-- TODO: tw = "",
 	},
 	lore = {
 		en = "These can be farmed infinitely by resetting the boss.",

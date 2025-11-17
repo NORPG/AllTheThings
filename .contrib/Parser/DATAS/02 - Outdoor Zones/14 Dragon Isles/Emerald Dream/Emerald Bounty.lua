@@ -7,8 +7,16 @@ EMERALD_BOUNTY = createHeader({
 	icon = 464030,
 	text = {
 		en = "Emerald Bounty",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Изумрудный дар",
 		cn = "翡翠奖赏",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {

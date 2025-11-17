@@ -15,14 +15,14 @@ PIRATES_DAY_HEADER = createHeader({
 	-- #endif
 	text = {
 		en = "Pirates' Day",
-		es = "Día de los Piratas",
 		de = "Piratentag",
+		es = "Día de los Piratas",
+		mx = "Día de los Piratas",
 		fr = "Jour des pirates",
 		it = "Giorno dei Pirati",
-		mx = "Día de los Piratas",
+		ko = "해적의 날",
 		pt = "Dia dos Piratas",
 		ru = "День пирата",
-		ko = "해적의 날",
 		cn = "海盗日",
 		tw = "海盜節",
 	},

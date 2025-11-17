@@ -6,15 +6,16 @@ BOUNTY = createHeader({
 	icon = 2125377,
 	text = {
 		en = "Bounty",
+		de = "Kopfgeld",
 		es = "Recompensa",
 		mx = "Recompensa",
-		de = "Kopfgeld",
 		fr = "Prime",
 		it = "Premio",
+		ko = "하사품",
 		pt = "Recompensa",
 		ru = "Премия",
-		ko = "하사품",
 		cn = "赏金任务",
+		-- TODO: tw = "",
 	},
 });
 SLAYERS_RISE = createHeader({
@@ -29,8 +30,16 @@ WORLD_PVP = createHeader({
 	icon = [[~_.asset("Category_Zones")]],
 	text = {
 		en = "World PvP",
-		cn = "世界PvP",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Мировое PvP",
+		cn = "世界PvP",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.PVP, pvp(n(WORLD_PVP, {

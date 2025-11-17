@@ -6,14 +6,16 @@ STORMING_THE_CITADEL = createHeader({
 	icon = 343640,
 	text = {
 		en = "Storming the Citadel",
-		es = "Asaltar la Ciudadela",
 		de = "Sturm auf die Zitadelle",
+		es = "Asaltar la Ciudadela",
+		-- TODO: mx = "",
 		fr = "La prise de la citadelle",
 		it = "Assalto alla rocca",
+		ko = "성채 몰아치기",
 		pt = "Invasão da Cidadela",
 		ru = "Штурм цитадели",
-		ko = "성채 몰아치기",
 		cn = "进攻堡垒",
+		-- TODO: tw = "",
 	},
 });
 THE_PLAGUEWORKS = createHeader({
@@ -21,14 +23,16 @@ THE_PLAGUEWORKS = createHeader({
 	icon = 342919,
 	text = {
 		en = "The Plagueworks",
-		es = "Los Talleres de la Peste",
 		de = "Die Seuchenwerke",
+		es = "Los Talleres de la Peste",
+		-- TODO: mx = "",
 		fr = "La Pesterie",
 		it = "Sale della Pestilenza",
+		ko = "역병작업장",
 		pt = "Antro da Peste",
 		ru = "Чумодельня",
-		ko = "역병작업장",
 		cn = "天灾工厂",
+		-- TODO: tw = "",
 	},
 });
 THE_CRIMSON_HALLS = createHeader({
@@ -42,19 +46,17 @@ THE_FROSTWING_HALLS = createHeader({
 	readable = "The Frostwing Halls",
 	icon = 343638,
 	text = {
-		-- #if AFTER BFA
 		en = [[~C_Map.GetAreaInfo(7932)]],
-		-- #else
-		en = "The Frostwing Halls",
-		es = "Las Cámaras de Alaescarcha",
 		de = "Die Frostschwingenhallen",
+		es = "Las Cámaras de Alaescarcha",
+		-- TODO: mx = "",
 		fr = "Les salles de l'Aile de givre",
 		it = "Sale delle Ali del Gelo",
+		ko = "서리날개 전당",
 		pt = "Salões da Asa Gélida",
 		ru = "Залы Ледокрылых",
-		ko = "서리날개 전당",
 		cn = "霜翼大厅",
-		-- #endif
+		-- TODO: tw = "",
 	},
 });
 

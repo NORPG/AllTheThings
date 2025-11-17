@@ -12,11 +12,16 @@ BURDEN_OF_ETERNITY = createHeader({
 	-- e.g. auto = i:103982
 	lore = {
 		en = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
+		-- TODO: de = "",
 		es = "Los siguientes objetos se pueden crear usando una Carga de la Eternidad en una Ficha de Armadura Atemporal para una dosis doble de RNG inútil.",
 		mx = "Los siguientes objetos se pueden crear usando una Carga de la Eternidad en una Ficha de Armadura Atemporal para una dosis doble de RNG inútil.",
 		fr = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
 		cn = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.Zones, {
@@ -1670,14 +1675,16 @@ root(ROOTS.Zones, {
 						icon = 348554,
 						text = {
 							en = "Kukuru's Cache",
-							es = "Alijo de Kukuru",
 							de = "Kukurus Schatzkammer",
+							es = "Alijo de Kukuru",
+							-- TODO: mx = "",
 							fr = "Cache de Koukourou",
 							it = "Cassa di Kukuru",
+							ko = "사부 쿠쿠루 보관함",
 							pt = "Baú de Kukuru",
 							ru = "клада Кукуру",
-							ko = "사부 쿠쿠루 보관함",
 							cn = "库库鲁的宝箱",
+							-- TODO: tw = "",
 						},
 						description = {
 							en = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",

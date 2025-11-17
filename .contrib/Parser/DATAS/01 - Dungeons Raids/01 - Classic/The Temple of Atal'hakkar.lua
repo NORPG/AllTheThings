@@ -6,9 +6,16 @@ local ATALAI_DEFENDERS = createHeader({
 	icon = 134177,
 	text = {
 		en = "Atal'ai Defenders",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Défenseurs Atal'ai",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Защитники Атал'ай",
 		cn = "阿塔莱防御者",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",

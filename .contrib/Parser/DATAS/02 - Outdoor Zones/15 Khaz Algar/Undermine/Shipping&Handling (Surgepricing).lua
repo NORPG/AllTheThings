@@ -7,7 +7,16 @@ SHIPPING_AND_HANDLING = createHeader({
 	icon = 6383558,
 	text = {
 		en = "Shipping & Handling",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "货运与接收",
+		-- TODO: tw = "",
 	},
 });
 
