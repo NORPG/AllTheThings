@@ -13,16 +13,28 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 	},
 	text = {
 		en = "WoW's Anniversary",
+		-- TODO: de = "",
 		es = "Aniversario de WoW",
 		mx = "Aniversario de WoW",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Годовщина WoW",
 		cn = "魔兽世界周年庆",
 		tw = "《魔獸世界》週年紀念",
 	},
 	description = {
 		en = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
+		-- TODO: de = "",
 		es = "Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
 		mx = "¡Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
 		tw = "這是一個每年重複的活動，發生在十一月初到年底之間。",
 	},
 });
@@ -1276,7 +1288,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171551, {	-- Legguards of the Lurking Threat
 										["races"] = ALLIANCE_ONLY,
 									}),
-									i(171607, {	--  Legplates of Redeemed Blood
+									i(171607, {	-- Legplates of Redeemed Blood
 										["races"] = HORDE_ONLY,
 									}),
 									i(171596, {	-- Legplates of the Immortal Spider
@@ -2937,7 +2949,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 			}),
 			n(VENDORS, {
-				n(223884, {	--  Bobadormu
+				n(223884, {	-- Bobadormu
 					["coord"] = { 62.7, 50.3, TANARIS },
 					["timeline"] = { ADDED_11_0_5, REMOVED_11_0_7 },
 					["groups"] = {

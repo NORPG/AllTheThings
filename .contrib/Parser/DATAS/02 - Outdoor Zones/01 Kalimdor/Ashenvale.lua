@@ -230,14 +230,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					icon = 131013,
 					text = {
 						en = "Defeat a Lieutenant",
-						es = "Derrota a un Teniente",
 						de = "Besiege einen Leutnant",
+						es = "Derrota a un Teniente",
+						-- TODO: mx = "",
 						fr = "Battre un Lieutenant",
 						it = "Sconfiggi un Tenente",
+						ko = "중위를 처치하세요",
 						pt = "Derrote um Tenente",
 						ru = "Победить лейтенанта",
-						ko = "중위를 처치하세요",
 						cn = "击败一名中尉",
+						-- TODO: tw = "",
 					},
 				}), {
 					["aqd"] = {
@@ -282,14 +284,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					icon = [[~_.asset("Category_PvP")]],
 					text = {
 						en = "Win the Battle",
-						es = "Gana la Batalla",
 						de = "Gewinne den Kampf",
+						es = "Gana la Batalla",
+						-- TODO: mx = "",
 						fr = "Gagnez la Bataille",
 						it = "Vinci la Battaglia",
+						ko = "전투에서 승리하세요",
 						pt = "Ganhe a Batalha",
 						ru = "Выиграй битву",
-						ko = "전투에서 승리하세요",
 						cn = "赢得战斗",
+						-- TODO: tw = "",
 					},
 				}), {
 					["aqd"] = {
@@ -2810,14 +2814,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					icon = 131038,
 					text = {
 						en = "Speak to the Dead",
-						es = "Hablar con los Muertos",
 						de = "Sprich mit den Toten",
+						es = "Hablar con los Muertos",
+						-- TODO: mx = "",
 						fr = "Parlez aux Morts",
 						it = "Parla con i Morti",
+						ko = "죽은 자와 대화",
 						pt = "Fale com os Mortos",
 						ru = "Поговорите с мертвыми",
-						ko = "죽은 자와 대화",
 						cn = "与死者交谈",
+						-- TODO: tw = "",
 					},
 				}), {
 					["questID"] = 78907,	-- Dead Twilight Cultist HQT

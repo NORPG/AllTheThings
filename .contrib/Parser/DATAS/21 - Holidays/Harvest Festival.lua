@@ -15,8 +15,13 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 	-- #endif
 	text = {
 		en = "Harvest Festival",
+		-- TODO: de = "",
 		es = "Festival de la cosecha",
 		mx = "Festival de la cosecha",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Неделя урожая",
 		cn = "收获节",
 		tw = "收穫節",

@@ -6,15 +6,16 @@ FYRAKK_ASSAULTS = createHeader({
 	icon = 4914672,
 	text = {
 		en = "Fyrakk Assaults",
-		es = "Asaltos de Fyrakk",
 		de = "Angriffe von Fyrakk",
+		es = "Asaltos de Fyrakk",
+		mx = "Asaltos de Fyrakk",
 		fr = "Assauts de Fyrakk",
 		it = "Assalti di Fyrakk",
-		mx = "Asaltos de Fyrakk",
+		ko = "피락의 습격",
 		pt = "Ofensivas de Fyrakk",
 		ru = "Налеты Фиракка",
-		ko = "피락의 습격",
 		cn = "菲莱克突袭",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {

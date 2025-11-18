@@ -335,7 +335,16 @@ root(ROOTS.Character, n(createHeader({
 		icon = [[~_.asset("Interface_Vendor")]],
 		text = {
 			en = [[~GUILD .. " " .. TUTORIAL_TITLE20]],
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
 			cn = [[~GUILD .. "商人"]],	-- String in GlobalStrings.lua means slightly different thing in zhCN so translating it manually
+			-- TODO: tw = "",
 		},
 	}), {
 		["allianceQuestData"] = {

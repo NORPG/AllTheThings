@@ -7,6 +7,13 @@ AWAKENING_THE_MACHINE = createHeader({
 	icon = 5768149,
 	text = {
 		en = "Awakening The Machine",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Пробуждение Машины",
 		cn = "主机觉醒",
 		tw = "甦醒機械",
@@ -17,7 +24,16 @@ SNUFFLING = createHeader({
 	icon = 648644,
 	text = {
 		en = "Snuffling",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "嗅探",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
