@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = {
 				i(170275),	-- Honorbound Warmaul
 				i(163874),	-- Honorbound Decapitator
-				--i(163871),	-- Honorbound Pigstricker
+				-- i(163871),	-- Honorbound Pigstricker
 				i(163872),	-- Honorbound War Staff
 				i(163868),	-- Honorbound Dagger
 				i(163876),	-- Honorbound Focus
@@ -1064,7 +1064,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearl x10
-				--	i(168185),	-- Osmenite Ore x11
+					-- i(168185),	-- Osmenite Ore x11
 				}),
 			},
 		}),
@@ -1102,7 +1102,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(56803, {	-- Just A Friend
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 2.",
-			--["sourceQuest"] =
+			-- ["sourceQuest"] = ,
 			["qgs"] = {
 				149906,	-- Vim Brineheart
 				151309,	-- Vim Brineheart
@@ -2276,7 +2276,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearl x10
-				--	i(168185),	-- Osmenite Ore x11
+					-- i(168185),	-- Osmenite Ore x11
 				}),
 			},
 		}),
@@ -2600,7 +2600,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168265) },	-- Lady Naz'jess' Head (QI!)
 		}),
 		q(56222, {	-- WANTED: Lady Naz'jess
-			--["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			-- ["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "o", 326142 },	-- Bounty Board
 			["coord"] = { 48.0, 61.5, NAZJATAR },
@@ -2832,22 +2832,22 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			q(56212),	-- Triggered when opening the first glimmering chest during "Scrying Stones"
 			q(56220),	-- Triggered when opening the second glimmering chest during "Scrying Stones"
 			q(56221),	-- Triggered when opening the third glimmering chest during "Scrying Stones"
-			--	RECRUITMENT QUESTS
+			-- RECRUITMENT QUESTS
 			q(57040),	-- recruiting Hunter Akana / Vim Brineheart for the day
 			q(57041),	-- recruiting Farseer Ori / Neri Sharpfin for the day
 			q(57042),	-- recruiting Bladesman Inowari / Poen Gillbrack for the day
-			--	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard, OR after 1-2 minutes of idling post-pickup)
-			--	not sure if Alliance quests are once per account (horde appear to be daily) or if they just don't have HQTs - they have instant dialogue upon quest pickup/turn-in but haven't triggered any HQTs for me at all - the first time i did them on my account would have been looooooooong ago
-			--	unknown/probable bodyguard dialogue quests
+			-- HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard, OR after 1-2 minutes of idling post-pickup)
+			-- not sure if Alliance quests are once per account (horde appear to be daily) or if they just don't have HQTs - they have instant dialogue upon quest pickup/turn-in but haven't triggered any HQTs for me at all - the first time i did them on my account would have been looooooooong ago
+			-- unknown/probable bodyguard dialogue quests
 			q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
 			q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires (haven't reproduced w/poen, so probably another horde bodyguard)
 			q(56507),	-- Triggered randomly while in nazjatar
 			q(56658),	-- Triggered randomly while in Nazjatar
 			q(56670),	-- Triggered randomly while in Nazjatar
 			q(56678),	-- Triggered when picking up Bounty Wanted:Inquisitor Ithriza (56227)
-			--	Akana
-			--	Inowari
-			--	Neri
+			-- Akana
+			-- Inowari
+			-- Neri
 			q(56521),	-- "If I'd been put on one of these work crews, I might have never broken free. The people here haven't been broken yet. There's still a chance..."
 			q(56543),	-- "Like this place?  Vim named it. He thinks you should always keep something in your pocket that the enemy won't expect."
 			q(56663),	-- "What choice would I have made... to save our people?"
@@ -2861,8 +2861,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			q(56679),	-- "One day, there will be no more shackles."
 			q(56680),	-- "It's hard to imagine what we'll do once we don't have to fight to survive. I look forward to figuring that out."
 			q(56681),	-- "The ocean provides for us. We take what we find and put it to use. Might not always be pretty, but it gets the job done."
-			--	Ori
-			--	Poen
+			-- Ori
+			-- Poen
 			q(56544),	-- "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
 			q(56671),	-- "I helped a little elf girl find her doll here, once. It made her so happy, even though there was so little of it left. I hugged Mak so hard when I got back to Newhome."
 			q(56682),	-- "I always dreamt of fighting back against the naga. Neri gave me that chance."
@@ -2882,7 +2882,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			q(56697),	-- "We have so many free people in Newhome that we need to gather more food!  This is great!"
 			q(56698),	-- "As a wee sprog. I was told that the Shirakess created our nightmares. I thought that was a myth... until I saw this place for myself."
 			q(56699),	-- (got this randomly in nazjatar)
-			--	Vim
+			-- Vim
 			q(56665),	-- "It's brave to sacrifice yourself to save others. It's craven to sacrifice others to serve yourself. And Azshara is anything but brave."
 			q(56672),	-- "One person's pride destroyed so many lives."
 			q(56700),	-- "In the deep, dark sea, no one can hear you scream. Trust me..."
