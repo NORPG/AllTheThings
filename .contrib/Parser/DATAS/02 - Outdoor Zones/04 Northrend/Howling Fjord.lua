@@ -2071,7 +2071,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11567, {	-- The Ancient Armor of the Kvaldir
-						["sourceQuest"] = 11510,	--	"Scoodles"
+						["sourceQuest"] = 11510,	-- "Scoodles"
 						["qg"] = 24539,	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.9, HOWLING_FJORD },
 						["groups"] = {
