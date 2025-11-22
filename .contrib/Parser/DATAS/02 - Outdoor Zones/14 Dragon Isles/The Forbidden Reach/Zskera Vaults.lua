@@ -541,7 +541,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								}),
 							},
 						}),
-						o(9000000, {	-- Wind Sculpted Stone	--TODO: fake ID
+						o(9000000, {	-- Wind Sculpted Stone	-- TODO: fake ID
 							["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
 							-- ["questID"] = ,
 						}),
@@ -886,8 +886,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(387500, {	-- Chilly Snowman
 							["questID"] = 74757,
 							["groups"] = {
-							--	i(17202),	-- Snowball
-							--	Removed the snowball, otherwise we get 11 layers of currency tracking
+								-- i(17202),	-- Snowball
+								-- Removed the snowball, otherwise we get 11 layers of currency tracking
 							},
 						}),
 						o(398778, {	-- Disgusting Vat

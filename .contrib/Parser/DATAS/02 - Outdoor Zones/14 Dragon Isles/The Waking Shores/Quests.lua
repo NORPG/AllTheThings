@@ -585,7 +585,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 				}),
 				q(66436, {	-- Unearthed Troublemakers
-					--["sourceQuests"] = {  },	-- Unknown
+					-- ["sourceQuests"] = {  },	-- Unknown
 					["provider"] = { "n", 188735 },	-- Elementalist Taiyang
 					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 					["groups"] = {
