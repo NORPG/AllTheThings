@@ -156,7 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = HORDE_ONLY,
 					}),
 					q(51803, {	-- The Kul Tiras Campaign
-					--	["sourceQuests"] = { 51770 },	-- Mission from the Warchief -- NOTE: this SQ is not needed as of 31.December.2019
+						-- ["sourceQuests"] = { 51770 },	-- Mission from the Warchief -- NOTE: this SQ is not needed as of 31.December.2019
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, ZULDAZAR },
 						["races"] = HORDE_ONLY,
@@ -1670,8 +1670,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						},
 						["races"] = HORDE_ONLY,
 					}),
-					--	TODO: Sylvanas Loyalist questline reported by Niixten in #errors, all needs to be completed - apparently there are various quests you can get based on choices you make along the way
-					--	all needs to be altQuested to the 'choice' quest since only one version of the campaign questline can be completed per character. not sure if 'queen's favor' is the best quest to set as altQuests or if it should be an earlier one (i haven't done the campaign in a while)
+					-- TODO: Sylvanas Loyalist questline reported by Niixten in #errors, all needs to be completed - apparently there are various quests you can get based on choices you make along the way
+					-- all needs to be altQuested to the 'choice' quest since only one version of the campaign questline can be completed per character. not sure if 'queen's favor' is the best quest to set as altQuests or if it should be an earlier one (i haven't done the campaign in a while)
 					q(56495, {	-- They Move Against Us
 						["sourceQuests"] = { 55782 },	-- Stay of Execution
 						["altQuests"] = { 54109 },	-- Queen's Favor
@@ -1755,8 +1755,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							55782,	-- Stay of Execution (Sylvanas Version)
 						},
 						["altQuests"] = { 57095 },	-- Old Soldier
-					--	["provider"] = { "n", 155789 },	-- Lor'themar Theron
-					--	["coord"] = { 34.9, 60.1, 1535 },
+						-- ["provider"] = { "n", 155789 },	-- Lor'themar Theron
+						-- ["coord"] = { 34.9, 60.1, 1535 },
 						["maps"] = {
 							1534,	-- Orgrimmar (Scenario)
 							1535,	-- Durotar (Scenario)

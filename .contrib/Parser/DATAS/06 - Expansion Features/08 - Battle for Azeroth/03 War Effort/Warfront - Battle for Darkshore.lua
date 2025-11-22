@@ -511,7 +511,7 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 39.79, 32.94, DARKSHORE },
 							["description"] = "Only shows up when Horde Controlled.",
 							["groups"] = {
-								--i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
+								-- i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
 								i(166435),	-- Kaldorei Nightsaber (MOUNT!)
 							},
 						}),
@@ -1533,7 +1533,7 @@ root(ROOTS.ExpansionFeatures,
 												i(165613),	-- Plaguebringer's Halberd
 												i(166802),	-- Plaguebringer's Spellblade
 												i(166762, {	-- Plaguebringer's Drape
-												--	["classes"] = { MAGE, PRIEST, WARLOCK },
+													-- ["classes"] = { MAGE, PRIEST, WARLOCK },
 													["description"] = "This might be only available as Cloth class.",
 												}),
 												i(166763, {	-- Deathstalker's Cloak
@@ -1614,7 +1614,7 @@ root(ROOTS.ExpansionFeatures,
 												i(165613),	-- Plaguebringer's Halberd
 												i(166802),	-- Plaguebringer's Spellblade
 												i(166762, {	-- Plaguebringer's Drape
-												--	["classes"] = { MAGE, PRIEST, WARLOCK },
+													-- ["classes"] = { MAGE, PRIEST, WARLOCK },
 													["description"] = "This might be only available as Cloth class.",
 												}),
 												i(166763, {	-- Deathstalker's Cloak

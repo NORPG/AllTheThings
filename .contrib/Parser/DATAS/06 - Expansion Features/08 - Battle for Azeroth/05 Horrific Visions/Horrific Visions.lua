@@ -380,7 +380,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			q(58890),	-- Dwarven district
 			q(58893),	-- cleared mage quarter
 			q(57282),	-- cleared mage quarter
-			--q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?(moved to metadata)
+			-- q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?(moved to metadata)
 			-- TODO:  Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
 			q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 			q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)

@@ -142,7 +142,7 @@ local COMMONLOOT = {
 		i(247038),	-- Leggings of Shackled Elements
 		i(247039),	-- Raiment of Shackled Elements
 		i(247041),	-- Pauldrons of Shackled Elements
-		--i(247036),	-- Helm of Shackled Elements [Drops in The Emerald Nightmare]
+		-- i(247036),	-- Helm of Shackled Elements [Drops in The Emerald Nightmare]
 	}),
 	filter(PLATE, {
 		-- Regular items
@@ -432,7 +432,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						i_RAID_GEAR_CONVERSION(247038),	-- Leggings of Shackled Elements
 						i_RAID_GEAR_CONVERSION(247039),	-- Raiment of Shackled Elements
 						i_RAID_GEAR_CONVERSION(247041),	-- Pauldrons of Shackled Elements
-						--i_RAID_GEAR_CONVERSION(247036),	-- Helm of Shackled Elements [Drops in The Emerald Nightmare]
+						-- i_RAID_GEAR_CONVERSION(247036),	-- Helm of Shackled Elements [Drops in The Emerald Nightmare]
 					}),
 					filter(PLATE, {
 						-- Regular items
