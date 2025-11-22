@@ -1037,7 +1037,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							["isDaily"] = true,
 						},{
 							o(437112, {	-- Clammer's Kit
-								--when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
+								-- when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
 								["coord"] = { 61.9, 6.0, HALLOWFALL },
 								["questID"] = 80687,
 								["groups"] = {

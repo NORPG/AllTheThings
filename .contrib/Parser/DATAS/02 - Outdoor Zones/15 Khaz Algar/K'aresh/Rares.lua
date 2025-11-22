@@ -137,8 +137,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(235422, {	-- Phase-Thief Tezra
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				-- ["coord"] = { x, y, KARESH },
+				-- ["questID"] = ,
 			}),
 			n(241920, {	-- Purple Peat
 				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
