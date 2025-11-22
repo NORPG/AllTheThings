@@ -697,10 +697,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(35581, {["timeline"] = {ADDED_2_4_0}}),	-- Rocket Boots Xtreme Lite
 			i(23768),	-- White Smoke Flare
 			i(23821),	-- Zapthrottle Mote Extractor
-			--	Danny Donkey:	The gas clouds are sourced in the zones they are located in, and listed as sources for their respective reagents.
-			--					This works fine in TBC where gas clouds are unique per zone (Nagrand - Windy Cloud; Zangarmarsh - Swamp Gas; Netherstorm - Arcane Vortex; Shadowmoon Valley - Felmist)
-			--					For WotLK it is more complicated where Arctic Cloud, Cinder Cloud and Steam Cloud all appears in at least two zones, some shared with other gas clouds.
-			--					It also does not helps that maps/coords/description does not appears on tooltips on creatures listed as sources in classic iterations of the game, while source path on cratures is broken in retail. it is a mess.
+			-- Danny Donkey:	The gas clouds are sourced in the zones they are located in, and listed as sources for their respective reagents.
+			-- 					This works fine in TBC where gas clouds are unique per zone (Nagrand - Windy Cloud; Zangarmarsh - Swamp Gas; Netherstorm - Arcane Vortex; Shadowmoon Valley - Felmist)
+			-- 					For WotLK it is more complicated where Arctic Cloud, Cinder Cloud and Steam Cloud all appears in at least two zones, some shared with other gas clouds.
+			-- 					It also does not helps that maps/coords/description does not appears on tooltips on creatures listed as sources in classic iterations of the game, while source path on cratures is broken in retail. it is a mess.
 		}),
 		filter(MOUNTS, {
 			i(34060, {["timeline"] = {ADDED_2_3_0}}),	-- Flying Machine (MOUNT!)
@@ -2111,7 +2111,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}
 			}),
 			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue (Quest Item for Shattrath q(11875) Gaining the Advantage)
-			--	Not Ore
+			-- Not Ore
 			--[[	No need to list Tradegoods w/ many other sources
 			i(23117),	-- Azure Moonstone
 			i(23077),	-- Blood Garnet
