@@ -244,7 +244,7 @@ root(ROOTS.Zones, {
 									["races"] = { DRAENEI, WORGEN },
 								}),
 								q(32587, {	-- Forge Ahead! (A)
-								--	possibly races other than Draenei / Worgen and classes other than Paladin and Warlock?
+								-- possibly races other than Draenei / Worgen and classes other than Paladin and Warlock?
 									["groups"] = {
 										i(93731),	-- Mogu Codex Fragment (QI!)
 									},
@@ -477,7 +477,7 @@ root(ROOTS.Zones, {
 										32209,	-- Save Our Scouts! (H)
 									},
 									["sourceQuestNumRequired"] = 1,
-								--	possibly Horde races other than Blood Elf, Orc, and Undead? Vupera
+									-- possibly Horde races other than Blood Elf, Orc, and Undead? Vupera
 									["groups"] = {
 										i(93731),	-- Mogu Codex Fragment (QI!)
 									},
@@ -873,7 +873,7 @@ root(ROOTS.Zones, {
 					}),
 					n(69347, {	-- Incomplete Drakkari Colossus
 						["coord"] = { 49.9, 20.6, ISLE_OF_THUNDER },
-						["crs"] = { 70200 },	--- Primal Ritual Stone
+						["crs"] = { 70200 },	-- Primal Ritual Stone
 						["groups"] = {
 							i(94823),	-- Drakkari Decapitator
 						},
