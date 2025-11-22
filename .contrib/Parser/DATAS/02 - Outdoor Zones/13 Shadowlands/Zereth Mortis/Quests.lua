@@ -1346,14 +1346,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			-- q(65539),	-- Zereth Mortis Flying unlock (spellID 366736)
 			q(66014),	-- Flight Path Backup / Skip Zereth Mortis Intro / Teleport (spellID 367677 & 365316 & 360195)
 
-			--q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
-			--q(65621),	-- Triggered when HS to ZM
+			-- q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
+			-- q(65621),	-- Triggered when HS to ZM
 
 			q(63850),	-- Tracking - Small Consoles
 			q(64880),	-- Unlocking Alt-Skip (spellID 359819 & 359820 & 359821 & 359823)
 			q(65679),	-- Unlocking A Portal from Oribos to ZM (spellID 365377 & 365378 & 369255 & 369256 & 369259)
 
-			--q(65144),	-- Firims Cave?
+			-- q(65144),	-- Firims Cave?
 
 			-- Gravid Repose
 			q(65376),	-- Entering Gravid Repose First Time / Teach Taxi Node - Resonant Peaks (spellID 364659)
@@ -1384,7 +1384,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			-- Treasure
 			q(65670),	-- Syntactic Vault When unlocking the box (spellID 367552)
 
-			--q(65011),	Old HQT for 187885,	Honeycombed Lattice
+			-- q(65011),	Old HQT for 187885,	Honeycombed Lattice
 			-- Jiro Buffs
 			q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
 			--[[
