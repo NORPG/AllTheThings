@@ -341,7 +341,7 @@ root(ROOTS.Zones, {
 								{ 46.8, 20.5, THE_VINDICAAR_EREDATH_UPPER },
 								{ 40.2, 21.4, THE_VINDICAAR_KROKUUN_UPPER },
 							},
-						--	might unlock differently/have different SQ(s) on main character vs alts.
+							-- might unlock differently/have different SQ(s) on main character vs alts.
 						}),
 						q(47182, {	-- Long Overdue
 							["sourceQuests"] = { 47134 },	-- Foiling the Legion's Jailbreak

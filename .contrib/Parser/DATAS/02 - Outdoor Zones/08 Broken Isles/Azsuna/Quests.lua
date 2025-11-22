@@ -606,7 +606,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37861 },	-- THe Nightborne Prince
 				["provider"] = { "n", 107995 },	-- Stellagosa
 				["coord"] = { 57.5, 13.4, AZSUNA },
-			--	may also require "You Scratch My Back..."
+				-- may also require "You Scratch My Back..."
 			}),
 			q(42371, {	-- Study Hall: Combat Research
 				["sourceQuests"] = { 42370 },	-- Wanding 101

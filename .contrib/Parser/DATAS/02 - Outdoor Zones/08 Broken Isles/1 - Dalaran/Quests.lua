@@ -1411,7 +1411,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["maps"] = { 888 },	-- Hall of Communion
 					["lvl"] = 110,
-				--	unsure if there are prerequisites for this quest.
+					-- unsure if there are prerequisites for this quest.
 				}),
 				q(46206, {	-- Whispers of a Frightened World
 					["u"] = REMOVED_FROM_GAME,	-- version that used to be automatically given?

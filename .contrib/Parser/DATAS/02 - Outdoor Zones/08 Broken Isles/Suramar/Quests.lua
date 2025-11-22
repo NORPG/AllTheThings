@@ -157,7 +157,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
 					["coord"] = { 41.5, 71.2, SURAMAR },
 					-- TODO: figure out the sourceQuest. this isn't always available
-					--["sourceQuest"] =
+					-- ["sourceQuest"] =
 					["groups"] = { i(134041) },	-- Bloodspattered Signet Ring (QI!)
 				}),
 				q(40012, {	-- An Old Ally

@@ -1271,7 +1271,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 39.6, 35.1, LEGION_DALARAN },
 					["groups"] = {
 						i(139599, {	-- Empowered Ring of the Kirin Tor
-					--		["cost"] = 2500000000,	-- 250,000g
+							-- ["cost"] = 2500000000,	-- 250,000g
 						}),
 					},
 				}),
