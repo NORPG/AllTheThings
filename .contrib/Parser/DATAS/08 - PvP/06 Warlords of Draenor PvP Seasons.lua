@@ -3,11 +3,11 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, {
-	---- This gear is listed here to reduce the bloat.
-	---- The actual sources include:
-	---- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
-	---- for a total of 22 sources or a total of around
-	---- 10000 Items.
+	-- This gear is listed here to reduce the bloat.
+	-- The actual sources include:
+	-- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
+	-- for a total of 22 sources or a total of around
+	-- 10000 Items.
 	pvp(expansion(EXPANSION.WOD, {
 		n(SEASON_PRIMAL, {
 			un(REMOVED_FROM_GAME, i(111600)),	-- Bronze Strongbox

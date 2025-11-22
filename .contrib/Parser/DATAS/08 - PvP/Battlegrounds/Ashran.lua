@@ -1420,7 +1420,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				n(82877, {	-- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
 					["races"] = HORDE_ONLY,
-					--["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
+					-- ["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["groups"] = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
