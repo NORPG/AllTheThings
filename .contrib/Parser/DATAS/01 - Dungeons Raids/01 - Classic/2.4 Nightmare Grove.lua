@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				es = "Arboleda de la Pesadilla",
 				mx = "Arboleda de las Pesadillas",
 				fr = "Bosquet du cauchemar",
-				--it = "",
+				-- it = "",
 				ko = "악몽의 숲",
 				pt = "Bosque do Pesadelo",
 				ru = "Роща Кошмаров",

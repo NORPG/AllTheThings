@@ -239,9 +239,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- Placeholder for criteria
 				})),
 				cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-				--	i(152979, {	-- Faceless Mindlasher (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
+					-- i(152979, {	-- Faceless Mindlasher (PET!)
+					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- }),
 				})),
 				cr(55689, e(317, {	-- Hagara the Stormbinder
 					-- Placeholder for criteria
@@ -253,20 +253,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- Placeholder for criteria
 				})),
 				cr(53879, e(318, {	-- Spine of Deathwing
-				--	i(152980, {	-- Corrupted Blood (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
-				--	i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
-				--		["timeline"] = { ADDED_6_1_0 },
-				--	}),
+					-- i(152980, {	-- Corrupted Blood (PET!)
+					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- }),
+					-- i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
+					-- 	["timeline"] = { ADDED_6_1_0 },
+					-- }),
 				})),
 				cr(56173, e(333, {	-- Madness of Deathwing
-				--	i(152981, {	-- Unstable Tendril (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
-				--	i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
-				--		["timeline"] = { ADDED_6_1_0 },
-				--	}),
+					-- i(152981, {	-- Unstable Tendril (PET!)
+					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- }),
+					-- i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
+					-- 	["timeline"] = { ADDED_6_1_0 },
+					-- }),
 					-- #if AFTER 9.1.5
 					currency(615, {	-- Essence of Corrupted Deathwing
 						["description"] = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
@@ -919,7 +919,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(191734),	-- Motion Sick Peon's Magical Elixir
 				})),
 			}),
-			--	Misc descriptions
+			-- Misc descriptions
 			n(53879, {	-- Spine of Deathwing
 				["sharedDescription"] = "For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in it's place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amangamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",
 				["groups"] = {

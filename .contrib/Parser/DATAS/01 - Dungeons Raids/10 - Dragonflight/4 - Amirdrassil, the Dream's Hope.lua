@@ -603,7 +603,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuests"] = { 77192 },	-- An Axe Tempered
 						["provider"] = { "n", 208421 },	-- Wrathion
 						["coord"] = { 24.6, 60.6, THE_WAKING_SHORES },
-						--["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
+						-- ["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
 						-- It seems this subzone is still in The Waking Shores (mapID 2022)
 						["groups"] = {
 							i(206448),	-- Fyr'alath the Dreamrender

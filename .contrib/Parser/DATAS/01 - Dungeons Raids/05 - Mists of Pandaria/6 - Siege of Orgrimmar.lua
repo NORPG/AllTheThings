@@ -306,7 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			n(QUESTS, {
 				q(33147, {	-- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73335 },	-- Fading Breath
-					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
+					-- ["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 				{
 					["aqd"] = q(33134, {	-- Warforged Seals (A)
@@ -327,7 +327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				q(33138, {	-- Why Do We Fight?
 					["sourceQuests"] = { 33147 },	-- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73318 },	-- Lorewalker Cho
-					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
+					-- ["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 			}),
 			n(VENDORS, {

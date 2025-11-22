@@ -706,7 +706,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				header(HEADERS.LFGDungeon, 2783, {	-- The Chrome King
 					Boss(GALLYWIX, {
 						i(228819, {	-- Excessively Bejeweled Curio
-							--["crs"] = 227003,	-- Kir'xal (Vendor)
+							-- ["crs"] = 227003,	-- Kir'xal (Vendor)
 							["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
@@ -793,7 +793,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				Boss(MUGZEE),
 				Boss(GALLYWIX, {
 					i(228819, {	-- Excessively Bejeweled Curio
-						--["crs"] = 227003,	-- Kir'xal (Vendor)
+						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
@@ -836,7 +836,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				Boss(MUGZEE),
 				Boss(GALLYWIX, {
 					i(228819, {	-- Excessively Bejeweled Curio
-						--["crs"] = 227003,	-- Kir'xal (Vendor)
+						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 					}),
@@ -888,7 +888,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					ach(41292),	-- Mythic: Chrome King Gallywix Guild Run
 					i(235626),	-- The Big G (MOUNT!)
 					i(228819, {	-- Excessively Bejeweled Curio
-						--["crs"] = 227003,	-- Kir'xal (Vendor)
+						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 					}),
@@ -896,7 +896,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			}),
 			n(VENDORS, {
 				--[[ add new vendor also to all the curios
-				--Raid vendor gear for curio
+				-- Raid vendor gear for curio
 				n(227003, {	-- Kir'xal
 					["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
 					["sym"] = {{"select","itemID",

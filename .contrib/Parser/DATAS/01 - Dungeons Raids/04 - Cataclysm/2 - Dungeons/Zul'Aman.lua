@@ -47,12 +47,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					}),
 					n(TREASURES, {
 						o(181665, {	-- Burial Chest
-							--[[["coords"] = {
-								{ 64.5 30.4, GHOSTLANDS },
-								{ 62.7, 32.5, GHOSTLANDS },
-								{ 58.8, 28.6, GHOSTLANDS },
-								{ 62.9, 28.0, GHOSTLANDS },
-							},--]]
+							-- ["coords"] = {
+							-- 	{ 64.5 30.4, GHOSTLANDS },
+							-- 	{ 62.7, 32.5, GHOSTLANDS },
+							-- 	{ 58.8, 28.6, GHOSTLANDS },
+							-- 	{ 62.9, 28.0, GHOSTLANDS },
+							-- },
 							["groups"] = {
 								i(23923),	-- Amani Sacrificial Dagger
 								i(29518),	-- Amani Scimitar

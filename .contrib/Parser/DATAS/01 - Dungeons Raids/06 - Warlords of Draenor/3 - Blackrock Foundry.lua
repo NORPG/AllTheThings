@@ -1330,6 +1330,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 -- 	inst(457, {
---		q(34405),	-- DEPRECATED - REUSE - triggers after looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
---	}),
+-- 		q(34405),	-- DEPRECATED - REUSE - triggers after looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
+-- 	}),
 -- })));

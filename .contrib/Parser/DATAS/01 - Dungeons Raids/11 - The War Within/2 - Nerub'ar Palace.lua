@@ -698,7 +698,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			n(VENDORS, {
-				--Raid vendor gear for curio
+				-- Raid vendor gear for curio
 				n(227003, {	-- Kir'xal
 					["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
 					["sym"] = {{"select","itemID",
