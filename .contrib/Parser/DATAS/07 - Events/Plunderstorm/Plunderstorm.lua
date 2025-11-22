@@ -527,19 +527,19 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(81681),	-- Did a World Quest and killed 30 creatures
 
 			-- Probably some rare elite kills (unconfirmed)
-			--q(79254),	-- Everspout
-			--q(79315),	-- Lord Harlbrand
-			--q(79316),	-- Malfunctioning Harvester
-			--q(79317),	-- Morkus Grimlock
-			--q(79318),	-- Narla Thunderhoof
-			--q(79319),	-- Frenzied Owlbeast
-			--q(79320),	-- Gorthak Grimtusk
+			-- q(79254),	-- Everspout
+			-- q(79315),	-- Lord Harlbrand
+			-- q(79316),	-- Malfunctioning Harvester
+			-- q(79317),	-- Morkus Grimlock
+			-- q(79318),	-- Narla Thunderhoof
+			-- q(79319),	-- Frenzied Owlbeast
+			-- q(79320),	-- Gorthak Grimtusk
 
 			-- Probably some renown HQTs (unconfirmed)
-			--q(79462),	-- [DNT] Renown Reward 001
-			--q(79464),	-- [DNT] Renown Reward 002
-			--q(79465),	-- [DNT] Renown Reward 003
-			--q(79466),	-- [DNT] Renown Reward 004
+			-- q(79462),	-- [DNT] Renown Reward 001
+			-- q(79464),	-- [DNT] Renown Reward 002
+			-- q(79465),	-- [DNT] Renown Reward 003
+			-- q(79466),	-- [DNT] Renown Reward 004
 		}),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_1_0 } }, {

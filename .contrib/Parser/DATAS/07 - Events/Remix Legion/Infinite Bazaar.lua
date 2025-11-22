@@ -1097,26 +1097,26 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					------ Trial of Valor: Ensambles of the Chosen Dead ------
 					filter(CLOTH, {
 						iensemble(241607, {	-- Ensemble: Regalia of the Chosen Dead
-							--["extraTransmogSetItems"] = {
-							--},
+							-- ["extraTransmogSetItems"] = {
+							-- },
 						}),
 					}),
 					filter(LEATHER, {
 						iensemble(241604, {	-- Ensemble: Garb of the Chosen Dead
-							--["extraTransmogSetItems"] = {
-							--},
+							-- ["extraTransmogSetItems"] = {
+							-- },
 						}),
 					}),
 					filter(MAIL, {
 						iensemble(241601, {	-- Ensemble: Chains of the Chosen Dead
-							--["extraTransmogSetItems"] = {
-							--},
+							-- ["extraTransmogSetItems"] = {
+							-- },
 						}),
 					}),
 					filter(PLATE, {
 						iensemble(241597, {	-- Ensemble: Funerary Plate of the Chosen Dead
-							--["extraTransmogSetItems"] = {
-							--},
+							-- ["extraTransmogSetItems"] = {
+							-- },
 						}),
 					}),
 					filter(CONSUMABLES, {
