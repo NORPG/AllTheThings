@@ -3012,7 +3012,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(424988),	-- Engrave Gloves - Shiv
 			recipe(400081),	-- Engrave Pants - Between the Eyes
 			recipe(400099),	-- Engrave Pants - Blade Dance
-			--recipe(401488),	-- Engrave Pants - Cutty's Rune [This may be NYI?]
+			-- recipe(401488),	-- Engrave Pants - Cutty's Rune [This may be NYI?]
 			recipe(400102),	-- Engrave Pants - Envenom
 
 			-- Phase 2
