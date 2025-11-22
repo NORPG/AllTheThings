@@ -1393,7 +1393,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 24.1, 41.6, UNDERCITY },
 					["cost"] = {
 						{ "i", 207974, 1 },	-- Ominous Tome

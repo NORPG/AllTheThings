@@ -1425,12 +1425,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(53372, {	-- Battle for Azeroth: Hour of Reckoning
-				--	["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
+					-- ["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					["races"] = HORDE_ONLY,
-				--	TODO: level is obviously incorrect. whether this quest is still available is disputed. potential ways to get, per wowhead comments:
+					-- TODO: level is obviously incorrect. whether this quest is still available is disputed. potential ways to get, per wowhead comments:
 					-- "If you are looking for how to get your Heart of Azeroth, post Shadowlands pre-patch (9.0) you can only get it once you have hit level 50, it will then be automatically pushed through as soon as you ding to go visit Magni in Silithus."
 					-- "This is incorrect. All you have to do is loot an Azerite item from a BfA Dungeon Level 45-49 and it starts the Quest when you Zone to Org/SW."
 					-- figure out which of these is correct (if either) and adjust description accordingly
@@ -2601,7 +2601,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 						i(1205),	-- Melon Juice
-						--i(1645),	-- Moonberry Juice
+						-- i(1645),	-- Moonberry Juice
 						i(8766),	-- Morning Glory Dew
 						i(159),		-- Refreshing Spring Water
 						i(1708),	-- Sweet Nectar

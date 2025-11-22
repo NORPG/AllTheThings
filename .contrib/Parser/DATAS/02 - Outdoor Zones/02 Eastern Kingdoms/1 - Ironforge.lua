@@ -1379,7 +1379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					-- #if BEFORE 4.0.1
 					["groups"] = {
-						--recipe(7328),	-- Redemption [Rank 1]
+						-- recipe(7328),	-- Redemption [Rank 1]
 					},
 					-- #endif
 				}),
@@ -1407,7 +1407,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER TBC
 						9582,	-- Strength of One
 						-- #endif
-						--1678,	-- Vejrek
+						-- 1678,	-- Vejrek
 						1683,	-- Vorlus Vilehoof
 					},
 					["qg"] = 6114,	-- Muren Stormpike
@@ -1425,7 +1425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if BEFORE CATA
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
 					},
@@ -1792,7 +1792,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 						i(1205),	-- Melon Juice
-						--i(1645),	-- Moonberry Juice
+						-- i(1645),	-- Moonberry Juice
 						i(8766),	-- Morning Glory Dew
 						i(159),		-- Refreshing Spring Water
 						i(1708),	-- Sweet Nectar

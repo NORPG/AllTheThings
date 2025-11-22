@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						9582,	-- Strength of One
 						-- #endif
 						1678,	-- Vejrek
-						--1683,	-- Vorlus Vilehoof
+						-- 1683,	-- Vorlus Vilehoof
 					},
 					["qg"] = 4088,	-- Elanaria
 					["coord"] = { 57.3, 34.6, DARNASSUS },
@@ -1084,7 +1084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #if BEFORE CATA
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
 					},

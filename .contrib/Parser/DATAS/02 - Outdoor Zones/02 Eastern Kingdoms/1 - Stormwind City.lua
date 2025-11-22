@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1665, {	-- Bartleby's Mug
 					["sourceQuest"] = 1640,	-- Beat Bartleby
 					["altQuests"] = {
-						--1665,	-- Bartleby's Mug
+						-- 1665,	-- Bartleby's Mug
 						-- #if AFTER TBC
 						9582,	-- Strength of One
 						-- #endif
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE CATA
 					["groups"] = {
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 					},
 					-- #endif
@@ -3307,7 +3307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(42740, {	-- The Battle for Broken Shore
 					["sourceQuest"] = 42782,	-- To Be Prepared
-				--	["altQuests"] = { 43806 },	-- Scenario Skip (A)
+					-- ["altQuests"] = { 43806 },	-- Scenario Skip (A)
 					["qg"] = 108916,	-- Knight Dameron
 					["coord"] = { 19.0, 26.1, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
@@ -4035,7 +4035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					-- #if BEFORE 4.0.1
 					["groups"] = {
-						--recipe(7328),	-- Redemption [Rank 1]
+						-- recipe(7328),	-- Redemption [Rank 1]
 					},
 					-- #endif
 				}),
@@ -4602,7 +4602,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 25.8, 76.2, STORMWIND_CITY },
 					["cost"] = {
 						{ "i", 204905, 1 },	-- Ominous Tome

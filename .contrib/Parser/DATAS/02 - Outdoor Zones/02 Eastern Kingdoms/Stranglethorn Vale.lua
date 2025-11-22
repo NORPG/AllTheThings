@@ -3302,7 +3302,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
 							["description"] = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
-							--["sourceQuest"] = ,	--
+							-- ["sourceQuest"] = ,	--
 							["cost"] = 10000,	-- 1g
 							["classes"] = { PALADIN },
 							["groups"] = {
