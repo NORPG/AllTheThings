@@ -1383,7 +1383,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 					}),
 					q(10842, {	-- Vengeful Souls
-						--["sourceQuest"] = 10852,	-- Missing Friends
+						-- ["sourceQuest"] = 10852,	-- Missing Friends
 						["qg"] = 22278,	-- High Priest Orglum
 						["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 						-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
