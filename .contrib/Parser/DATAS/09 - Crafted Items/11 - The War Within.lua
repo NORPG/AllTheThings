@@ -259,8 +259,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81130, 432962);	-- Algari Flask Cauldron
 			FirstCraft(81131, 432963);	-- Algari Potion Cauldron
 			-- Decor
-			--FirstCraft(XXXXX, 1259673, ADDED_11_2_7);	-- Boulder Springs Hot Tub
-			--FirstCraft(XXXXX, 1261878, ADDED_11_2_7);	-- Nerubian Alchemist's Retort
+			-- FirstCraft(XXXXX, 1259673, ADDED_11_2_7);	-- Boulder Springs Hot Tub
+			-- FirstCraft(XXXXX, 1261878, ADDED_11_2_7);	-- Nerubian Alchemist's Retort
 		})),
 		filter(MISC, {
 			i(212781),	-- Formulated Courage
@@ -418,8 +418,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(83398, 450291);	-- Coreforged Repair Hammer
 			FirstCraft(83399, 450292);	-- Coreforged Skeleton Key
 			-- Decor
-			--FirstCraft(XXXXX, 1259675, ADDED_11_2_7);	-- Rusting Bolted Bench
-			--FirstCraft(XXXXX, 1259681, ADDED_11_2_7);	-- Shredderwheel Storage Chest
+			-- FirstCraft(XXXXX, 1259675, ADDED_11_2_7);	-- Rusting Bolted Bench
+			-- FirstCraft(XXXXX, 1259681, ADDED_11_2_7);	-- Shredderwheel Storage Chest
 		})),
 		filter(MISC, {
 			i(222520),	-- Coreforged Repair Hammer+
@@ -840,8 +840,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80996, 445323);	-- Runed Null Stone Rod
 			FirstCraft(81028, 445355);	-- Scepter of Radiant Magics
 			-- Decor
-			--FirstCraft(XXXXX, 1259715, ADDED_11_2_7);	-- Dornogal Hanging Sconce
-			--FirstCraft(XXXXX, 1259690, ADDED_11_2_7);	-- Replica Awakening Machine Stasis Pod
+			-- FirstCraft(XXXXX, 1259715, ADDED_11_2_7);	-- Dornogal Hanging Sconce
+			-- FirstCraft(XXXXX, 1259690, ADDED_11_2_7);	-- Replica Awakening Machine Stasis Pod
 		})),
 		filter(ILLUSIONS, {
 		}),
@@ -2437,7 +2437,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = MINING,
 		},{
 			-- Aqirite
-			--FirstCraft(XXXXX, 439707);	-- Aqirite //??how do we not have this yet?
+			-- FirstCraft(XXXXX, 439707);	-- Aqirite //??how do we not have this yet?
 			FirstCraft(80357, 439713);	-- Aqirite Seam
 			FirstCraft(80369, 439725);	-- Camouflaged Aqirite
 			FirstCraft(80360, 439716);	-- Crystallized Aqirite

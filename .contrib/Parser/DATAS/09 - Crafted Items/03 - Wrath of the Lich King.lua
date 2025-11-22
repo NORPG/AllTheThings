@@ -1052,7 +1052,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
-			--	Herbs
+			-- Herbs
 			i(36903, {	-- Adder's Tongue
 				[MAPS_FIELD] = { SHOLAZAR_BASIN },
 				["provider"] = { "o", 191019 },	-- Adder's Tongue
@@ -1191,7 +1191,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					i(36904),	-- Tiger Lily
 				},
 			}),
-			--	Nodes
+			-- Nodes
 			o(191019, {	-- Adder's Tongue
 				["maps"] = { SHOLAZAR_BASIN },
 			}),
