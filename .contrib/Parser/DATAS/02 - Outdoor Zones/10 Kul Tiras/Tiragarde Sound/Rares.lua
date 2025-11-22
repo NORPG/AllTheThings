@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155422, {	-- Pirate Chief's Speargun
 						["crs"] = {
 							132104,	-- Blackpowder Smuggler
-						--	136221,	-- Strongarm Smuggler  (commented to avoid the loot showing up on unrelated mobs)
+							-- 136221,	-- Strongarm Smuggler  (commented to avoid the loot showing up on unrelated mobs)
 							132093,	-- Wavecaller Smuggler
 						},
 					}),
