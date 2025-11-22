@@ -262,7 +262,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1511, {	-- Bastion Rise, Gorgrond
-						--["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
 						["cr"] = 84507,	-- Rangari Yaval
 						["coord"] = { 46.4, 92.4, GORGROND },
 						["races"] = ALLIANCE_ONLY,
@@ -282,7 +282,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.9, 55.0, GORGROND },
 					}),
 					fp(1523, {	-- Deeproot, Gorgrond
-						--["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
 						["cr"] = 81888,	-- Rengari Nogo
 						["coord"] = { 46.4, 76.6, GORGROND },
 						["races"] = ALLIANCE_ONLY,
@@ -301,7 +301,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					fp(1519, {	-- Highpass, Gorgrond
-						--["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
 						["cr"] = 81074,	-- Rangari Rajess
 						["coord"] = { 52.8, 59.4, GORGROND },
 						["races"] = ALLIANCE_ONLY,

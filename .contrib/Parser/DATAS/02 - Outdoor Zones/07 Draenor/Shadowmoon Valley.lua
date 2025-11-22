@@ -1469,7 +1469,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(113553),	-- Windfang Sabre
 							q(35614, {	-- Artificer Romuul
-								--["description"] = "Available the day after killing |cFFFFD700Windfang Matriarch|r.",
+								-- ["description"] = "Available the day after killing |cFFFFD700Windfang Matriarch|r.",
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = { follower(179) },	-- Artificer Romuul
 							}),

@@ -227,7 +227,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.1, 38.9, TANAAN_JUNGLE },
 					}),
 					fp(1620, {	-- Lion's Watch, Tanaan Jungle
-						--["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
 						["cr"] = 90960,	-- Skyguard Thann
 						["coord"] = { 57.4, 58.8, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
@@ -255,7 +255,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.0, 70.2, TANAAN_JUNGLE },
 					}),
 					fp(1621, {	-- Vol'mar, Tanaan Jungle
-						--["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
 						["cr"] = 90550,	-- Gargash the Diver
 						["coord"] = { 60.4, 46.4, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
@@ -751,12 +751,12 @@ root(ROOTS.Zones, {
 							["isDaily"] = true,
 						}),
 						q(38866, {	-- Battle At The Iron Front (A)
-							--["sourceQuest"] = 38445,	-- The Assault Base (A)
+							-- ["sourceQuest"] = 38445,	-- The Assault Base (A)
 							["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(38865, {	-- Battle At The Iron Front (H)
-							--["sourceQuest"] = 37935,	-- The Assault Base (H)
+							-- ["sourceQuest"] = 37935,	-- The Assault Base (H)
 							["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
 							["races"] = HORDE_ONLY,
 						}),
@@ -781,13 +781,13 @@ root(ROOTS.Zones, {
 							["isDaily"] = true,
 						}),
 						q(39443, {	-- Battle At The Iron Front (A)
-							--["sourceQuest"] = 38445,	-- The Assault Base (A)
+							-- ["sourceQuest"] = 38445,	-- The Assault Base (A)
 							["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(39444, {	-- Battle At The Iron Front (H)
-							--["sourceQuest"] = 37935,	-- The Assault Base (H)
+							-- ["sourceQuest"] = 37935,	-- The Assault Base (H)
 							["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -823,13 +823,13 @@ root(ROOTS.Zones, {
 							["isDaily"] = true,
 						}),
 						q(39441, {	-- Bleeding the Bleeding Hollow (A)
-							--["sourceQuest"] = 38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+							-- ["sourceQuest"] = 38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow
 							["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(39442, {	-- Bleeding the Bleeding Hollow (H)
-							--["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+							-- ["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
 							["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,

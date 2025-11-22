@@ -106,7 +106,7 @@ root(ROOTS.Zones, {
 					ach(9072, {	-- Mantle of the Talon King
 						["sourceQuest"] = 37177,	-- Call of the Talon King
 						["groups"] = {
-							--title_gendered(278, 279),	-- Talon King / Talon Queen
+							-- title_gendered(278, 279),	-- Talon King / Talon Queen
 							title_male(278),	-- Talon King <Name>
 							title_female(279),	-- Talon Queen <Name>
 							follower(224),	-- Talon Guard Kurekk
