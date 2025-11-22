@@ -433,10 +433,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 	n(PROFESSIONS, {
 		n(PROFESSIONS, {	-- double header on purpose - Darkal
 			q(70846, {	-- Dragonscale Expedition: Help Needed!
-				--["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
-				--["coord"] = { 40.8, 48.3, VALDRAKKEN },
+				-- ["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
+				-- ["coord"] = { 40.8, 48.3, VALDRAKKEN },
 				-- existed in Beta, marked obsolete by Blizzard, pops on unlocking alt spark skip
-				--["isBreadcrumb"] = true,
+				-- ["isBreadcrumb"] = true,
 			}),
 			q(72340),	-- Triggered on unlocking alt spark skip
 			q(76124, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Deepflayer Dust' (questID 75363) (spellID 411875)

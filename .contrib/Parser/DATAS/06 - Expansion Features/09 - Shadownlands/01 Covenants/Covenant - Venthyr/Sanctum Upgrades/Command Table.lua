@@ -85,7 +85,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuests"] = { 58444 },	-- Return to Sinfall
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-								--	TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
+									-- TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
 									["groups"] = {
 										follower(1251),	-- Stonehead
 									},

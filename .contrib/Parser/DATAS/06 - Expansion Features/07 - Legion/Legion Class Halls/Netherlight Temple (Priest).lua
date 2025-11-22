@@ -310,8 +310,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 101313 },	-- Prophet Velen
 						["coord"] = { 46.6, 20.9, LEGION_DALARAN },
 					}),
-					--41015
-					--41017
+					-- 41015
+					-- 41017
 					q(44251, {	-- Power Word: Armor
 						["provider"] = { "n", 112401 },	-- Meridelle Lightspark
 						["coord"] = { 38.9, 24.4, NETHERLIGHT_TEMPLE },
@@ -775,7 +775,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(46788, {	-- Further Advancement
-						--["sourceQuests"] = { 46034, },	-- Champion: Aelthalyste
+						-- ["sourceQuests"] = { 46034, },	-- Champion: Aelthalyste
 						["provider"] = { "n", 109776 },	-- Moira Thaurissan <Queen of the Dark Iron>
 					}),
 					q(46153, {	-- Furthering Knowledge

@@ -140,8 +140,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["isBreadcrumb"] = true,
-								--	TODO: is altQuests necessary or do they complete each other?
-								--	quest is unavailable until you build your command table
+									-- TODO: is altQuests necessary or do they complete each other?
+									-- quest is unavailable until you build your command table
 								}),
 							}),
 							n(REWARDS, {

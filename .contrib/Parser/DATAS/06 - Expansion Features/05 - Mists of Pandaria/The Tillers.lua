@@ -1309,30 +1309,30 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					objective(1, {	-- Stolen weapons exploded
 						["providers"] = {
 							{ "i", 79885 },	-- Barrel of Fireworks (QI!)
-							--{ "o",  },	-- Pile of Stolen Weapons
+							-- { "o",  },	-- Pile of Stolen Weapons
 						},
-						--["coord"] = { , VALLEY_OF_THE_FOUR_WINDS },
+						-- ["coord"] = { , VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					objective(2, {	-- Stolen tools exploded
 						["providers"] = {
 							{ "i", 79885 },	-- Barrel of Fireworks (QI!)
-							--{ "o",  },	-- Pile of Stolen Tools
+							-- { "o",  },	-- Pile of Stolen Tools
 						},
-						--["coord"] = { , VALLEY_OF_THE_FOUR_WINDS },
+						-- ["coord"] = { , VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					objective(3, {	-- Stolen beer exploded
 						["providers"] = {
 							{ "i", 79885 },	-- Barrel of Fireworks (QI!)
-							--{ "o",  },	-- Pile of Stolen Beer
+							-- { "o",  },	-- Pile of Stolen Beer
 						},
-						--["coord"] = { , VALLEY_OF_THE_FOUR_WINDS },
+						-- ["coord"] = { , VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					objective(4, {	-- Stolen grain exploded
 						["providers"] = {
 							{ "i", 79885 },	-- Barrel of Fireworks (QI!)
-							--{ "o",  },	-- Pile of Stolen Grain
+							-- { "o",  },	-- Pile of Stolen Grain
 						},
-						--["coord"] = { , VALLEY_OF_THE_FOUR_WINDS },
+						-- ["coord"] = { , VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				}),
 				q(31941, {	-- Squash Those Foul Odors

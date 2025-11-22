@@ -807,8 +807,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
 					}),
 					q(44232, {	-- The Grove Provides
-					--	this is now available to level 45 characters (was previously 110). unsure if it has any specific SQs or if it's just "hey, congratulations for hitting this level!"
-					--	["sourceQuests"] = { },	--
+						-- this is now available to level 45 characters (was previously 110). unsure if it has any specific SQs or if it's just "hey, congratulations for hitting this level!"
+						-- ["sourceQuests"] = { },	--
 						["provider"] = { "n", 112323 },	-- Amurra Thistledew
 						["coords"] = {
 							{ 40.2, 18.7, THE_DREAMGROVE },
@@ -913,7 +913,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["lvl"] = 103,
 					}),
 					q(40646, {	-- Weapons of Legend
-						["sourceQuests"] = { 40644 },	--	To The Dreamgrove
+						["sourceQuests"] = { 40644 },	-- To The Dreamgrove
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.5, 51.1, THE_DREAMGROVE },
 					}),
