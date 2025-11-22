@@ -261,7 +261,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 					}),
 					q(90869, {	-- It's All in the Image
-						--["sourceQuest"] = TODO,	-- TODO
+						-- ["sourceQuest"] = TODO,	-- TODO
 						["qg"] = 34874,	-- Megs Dreadshredder
 						["coord"] = { 58.3, 76.4, KEZAN },
 						["timeline"] = { ADDED_11_2_0 },
