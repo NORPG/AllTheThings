@@ -169,7 +169,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		}),
 		n(QUESTS, {
 			q(79200, {	-- Who am I?
-				--["sourceQuests"] = { xx },	-- probably some hqt or something like from adventure mode (if they didn't change requirement?)
+				-- ["sourceQuests"] = { xx },	-- probably some hqt or something like from adventure mode (if they didn't change requirement?)
 				["provider"] = { "n", 221839 },	-- Dawn
 				["coord"] = { 89.4, 48.0, 2322 },
 				["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
@@ -234,7 +234,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					i(219420),	-- Earthen Legguards
 					i(219421),	-- Earthen Mantle
 					i(219422),	-- Earthen Girdle
-					--weapons
+					-- weapons
 					i(222998),	-- Earthen Blade
 					i(223000),	-- Earthen Blunderbuss
 					i(222995),	-- Earthen Bulwark
@@ -304,7 +304,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["coord"] = { 53.0, 15.2, STORMWIND_CITY },
 				["races"] = { EARTHEN_ALLIANCE },
 				["groups"] = {
-					--spell(452029),	-- Ensemble: Earthen Copper Regalia
+					-- spell(452029),	-- Ensemble: Earthen Copper Regalia
 					i(224195),	-- Earthen Shoulders
 					i(224196),	-- Earthen Trousers
 					i(224197),	-- Earthen Grips
