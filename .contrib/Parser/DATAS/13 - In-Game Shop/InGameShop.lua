@@ -90,7 +90,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(128424, {	-- Brightpaw (PET!)
 			["timeline"] = { ADDED_6_2_3 },
 		}),
-		--i(229366),	-- Brrrgl (PET!)	-- Under TWW Promos
+		-- i(229366),	-- Brrrgl (PET!)	-- Under TWW Promos
 		i(92707, {	-- Cinder Kitten (PET!)
 			["timeline"] = {
 				-- #if ANYCLASSIC
@@ -122,7 +122,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
-		--i(229368),	-- Gill'el (PET!)	-- Under TWW Promos
+		-- i(229368),	-- Gill'el (PET!)	-- Under TWW Promos
 		-- #if ANYCLASSIC
 		i(200060, {	-- Hoplet
 			["timeline"] = { ADDED_5_5_0 },
