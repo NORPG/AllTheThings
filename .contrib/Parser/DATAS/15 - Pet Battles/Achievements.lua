@@ -112,7 +112,7 @@ root(ROOTS.PetBattles, petbattle({
 			}},
 		}),
 		ach(8397, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
-			--title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
+			-- title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
 			title_female(240),	-- <Name> the Crazy Cat Lady
 			title_male(252),	-- <Name> the Crazy Cat Man
 			crit(23577),	-- Black Tabby Cat
