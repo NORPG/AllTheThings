@@ -352,7 +352,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["requireSkill"] = SKINNING }, {
 		n(QUESTS, sharedData({
-			--["description"] = "Requires 50 Skill.",
+			-- ["description"] = "Requires 50 Skill.",
 			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
 			["coord"] = { 54.5, 57.6, DORNOGAL },
 			["isWeekly"] = true,
@@ -490,7 +490,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		}),
 		--[[
 		n(QUESTS, sharedData({
-			--["description"] = "Requires 50 Skill.",
+			-- ["description"] = "Requires 50 Skill.",
 			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
 			["coord"] = { 54.5, 57.6, DORNOGAL },
 			["isWeekly"] = true,

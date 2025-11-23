@@ -4030,41 +4030,41 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST,
 				GLYPH_OF_CURSE_OF_EXHAUSTION,
 				GLYPH_OF_DASH,
-				--GLYPH_OF_DEATHS_EMBRACE, (Missing?) Check this one, notes say moved to Research: Midnight Ink?
+				-- GLYPH_OF_DEATHS_EMBRACE, (Missing?) Check this one, notes say moved to Research: Midnight Ink?
 				GLYPH_OF_DISTRACT,
 				GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,
-				--GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,	(Missing?) Moved to Research: Jadefire Ink?
-				--GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,	(Missing?)
-				--GLYPH_OF_FADING_AND_SHADOW_RAVENS,	(Missing?)
+				-- GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,	(Missing?) Moved to Research: Jadefire Ink?
+				-- GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,	(Missing?)
+				-- GLYPH_OF_FADING_AND_SHADOW_RAVENS,	(Missing?)
 				GLYPH_OF_FEIGN_DEATH_AND_FIREWORKS,
 				GLYPH_OF_FIRE_WARD,
-				--GLYPH_OF_FORTITUDE_AND_BORROWED_TIME,	(Missing?)
+				-- GLYPH_OF_FORTITUDE_AND_BORROWED_TIME,	(Missing?)
 				GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR,
 				GLYPH_OF_FROST_WARD_AND_THE_MONKEY,
 				GLYPH_OF_GHOST_WOLF,
-				--GLYPH_OF_HORN_OF_WINTER,	(Missing?)
+				-- GLYPH_OF_HORN_OF_WINTER,	(Missing?)
 				GLYPH_OF_KILROGG,
 				GLYPH_OF_LAY_ON_HANDS_AND_FLASH_OF_LIGHT,
-				--GLYPH_OF_LEVITATE,	(Missing?)
+				-- GLYPH_OF_LEVITATE,	(Missing?)
 				-- #if BEFORE MOP
 				GLYPH_OF_MEND_PET_AND_LESSER_PROPORTION,	-- Not sure why this is marked like this?
 				GLYPH_OF_MOCKING_BLOW_AND_DEMORALIZING_SHOUT_AND_GUSHING_WOUND,	-- Not sure why this is marked like this?
 				-- #endif
-				--GLYPH_OF_PESTILENCE_AND_RESILIENT_GRIP,	(Missing?)
+				-- GLYPH_OF_PESTILENCE_AND_RESILIENT_GRIP,	(Missing?)
 				GLYPH_OF_PICK_LOCK,
 				GLYPH_OF_PICK_POCKET,
 				GLYPH_OF_POSSESSED_STRENGTH,
-				--GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE,	(Missing?)
+				-- GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE,	(Missing?)
 				GLYPH_OF_RENEWED_LIFE_AND_FAR_SIGHT,
 				GLYPH_OF_REVIVE_PET,
 				GLYPH_OF_SAFE_FALL,
 				GLYPH_OF_SCARE_BEAST_AND_STAMPEDE,
 				GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD,
-				--GLYPH_OF_SHACKLE_UNDEAD,	(Missing?)
-				--GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD,	(Missing?)
-				--GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL,	(Missing?)
+				-- GLYPH_OF_SHACKLE_UNDEAD,	(Missing?)
+				-- GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD,	(Missing?)
+				-- GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL,	(Missing?)
 				GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE,
-				--GLYPH_OF_SOULS_AND_RITUAL_OF_SOULS_AND_SOULWELL,	(Missing?)
+				-- GLYPH_OF_SOULS_AND_RITUAL_OF_SOULS_AND_SOULWELL,	(Missing?)
 				GLYPH_OF_SUBJUGATE_DEMON_AND_ENSLAVE_DEMON,
 				GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK,
 				GLYPH_OF_THE_PENGUIN,
@@ -4074,8 +4074,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				-- #endif
 				GLYPH_OF_THORNS_AND_GRACE,
 				GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE,
-				--GLYPH_OF_THUNDERSTORM,	(Missing?)
-				--GLYPH_OF_TYPHOON_AND_STARS,	(Missing?)
+				-- GLYPH_OF_THUNDERSTORM,	(Missing?)
+				-- GLYPH_OF_TYPHOON_AND_STARS,	(Missing?)
 				GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING,
 				GLYPH_OF_UNENDING_BREATH,
 				GLYPH_OF_VANISH_AND_POISONS,
@@ -5388,7 +5388,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 					r(292322),	-- Blood Contract: Oblivion
 				},
 			})),
-			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	--Penning In Protection
+			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Penning In Protection
 				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 				["provider"] = { "o", 279646 },	-- Bloodguard Chronicles
 				["coord"] = { 27.6, 52.2, VOLDUN },
@@ -5629,7 +5629,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			o(380567, {	-- Eight of Storms
-				--Interact with objects 380555, 380561, 380562, 380563, 380564, 380564, 380566, 380567
+				-- Interact with objects 380555, 380561, 380562, 380563, 380564, 380564, 380566, 380567
 				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight) to collect the treasure.",
 				["questID"] = 70287,
 				["coord"] = { 56.1, 40.9, THALDRASZUS },

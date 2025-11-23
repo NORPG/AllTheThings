@@ -1404,7 +1404,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				currency(TWW_LEATHERWORKING_KNOWLEDGE),
 			},
 		},{
-			--i(),	-- Leatherworking Designs
+			-- i(),	-- Leatherworking Designs
 			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
 				["name"] = "TWW Weekly Leatherworking Treasure #1",
 				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace
@@ -1525,7 +1525,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				currency(TWW_LEATHERWORKING_KNOWLEDGE),
 			},
 		},{
-			--i(),	-- Leatherworking Designs
+			-- i(),	-- Leatherworking Designs
 			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
 				["name"] = "TWW Weekly Leatherworking Treasure #1",
 				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace
