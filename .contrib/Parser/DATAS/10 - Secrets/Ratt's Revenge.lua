@@ -63,7 +63,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 				{ "i", 208092 },	-- Torch of Pyrreth
 			},
 			["groups"] = {
-				--1 O'clock Basin
+				-- 1 O'clock Basin
 				hqt(84676, {	-- The Light of Their Love
 					["name"] = "Acquire The Light of Their Love buff stacked 3 times",
 					["description"] = "Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Northern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\n\nFully lights up the 1 O'clock basin.",
@@ -80,7 +80,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						175815,	-- Decimator Olgra
 					},
 				}),
-				--2 O'clock Basin
+				-- 2 O'clock Basin
 				hqt(84677, {	-- Acquire the Key of Shadows
 					["name"] = "Acquire the Key of Shadows from the Ny'Alotha Obelisk",
 					["description"] = "Requires the 1 O'clock basin to have been completed to see the obelisk personally.\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Azsuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\n\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\n\nFully lights up the 2 O'clock basin",
@@ -107,7 +107,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						}),
 					},
 				}),
-				--3 O'clock Basin
+				-- 3 O'clock Basin
 				header(HEADERS.Item, 228967, bubbleDownSelf( {["sourceQuest"] = 84677 }, {	-- Acquire the Key of Shadows
 					["description"] = "1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin, fully lighting with 9 orbs.",
 					["provider"] = { "i", 53156 },	-- Key of Shadows
@@ -192,14 +192,14 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						}),
 					},
 				})),
-				--4 O'clock Basin
+				-- 4 O'clock Basin
 				hqt(84780, {	-- Use the Scroll of Fel Binding at Uther's Tomb
 					["name"] = "Use the Scroll of Fel Binding at Uther's Tomb",
 					["description"] = "1. Use the Scroll of Fel Binding sold by Vashti the Wandering Merchant in Azsuna (Broken Isles) right outside Uther's Tomb in the Western Plaugelands.\n2. You will die, return to your corpse and fight the Doomguard while inspecting the four writings on the floor of the tomb. Anyone can summon the demon and writings will stay visible as long as it lives.\n\nFully lights up the 4 O'clock basin.",
 					["cost"] = { { "i", 228987, 1 }	},	-- Scroll of Fel Binding
 					["coord"] = { 52.1, 85.1, WESTERN_PLAGUELANDS },
 				}),
-				--5 O'clock Basin
+				-- 5 O'clock Basin
 				q(84781, {	-- Master of Secrets
 					["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Francois, Gizmo the Pure, Glimr, Hungering Claw, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Renny, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Tobias, Wicker Pup",
 					["sourceQuest"] = 84780,	-- Use the Scroll of Fel Binding at Uther's Tomb
@@ -233,7 +233,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 					["crs"] = 71876,
 					["groups"] = { i(228995) },	-- Golden Muffin
 				}),
-				--6 O'clock Basin
+				-- 6 O'clock Basin
 				hqt(84811, {	-- Acquire the Ancient Shaman Blood
 					["name"] = "Acquire the Ancient Shaman Blood",
 					["description"] = "Use your Torch of Pyrreth at various alters to summon a Spirit of Collections. Perform several actions to appease the spirits on each alter of acquisition, an action may require summoning a mount, pet, or toy associated with each spirit, emoting in some way, or changing your transmog.\n\nSomeone in your phase can appease a spirit for you if nearby, but they must fulfill each part of a spirit's appeasement themselves. If one person covers mount, and another covers pet for example, it will not work.\n\nEach appeased spirit will add an orb to the 6 O'clock basin, and looting the final chest will light it fully.",
@@ -285,7 +285,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						}),
 					},
 				}),
-				--7 O'clock Basin
+				-- 7 O'clock Basin
 				hqt(84823, {	-- Acquire the Warden's Mirror
 					["name"] = "Acquire the Warden's Mirror",
 					["description"] = "Empower your owl pet with the Owl statues in Azsuna then enter the Vault of the Wardens to find a Sentry Statue. Use it to solve a puzzle to receive the mirror.\n\nEmpowering your owl will add 4 orbs to the 7 O'clock basin, and solving the sentry puzzle will light it fully.",
@@ -352,7 +352,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						}),
 					},
 				}),
-				--8 O'clock Basin
+				-- 8 O'clock Basin
 				o(466975, {	-- Enigma Machine
 					["description"] = "On the left side of the hallway after the second stairwell.",
 					["coord"] = { 59.9, 42.6, 46 },	-- Karazhan Catacombs
@@ -406,7 +406,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						}),
 					},
 				}),
-				--9 O'clock Basin
+				-- 9 O'clock Basin
 				o(467191, {	-- Encrypted Chest
 					["description"] = "Return to Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall.\n\nUse your Starry-Eyed goggles to reveal a translucent platform, use your Relic of Crystal Connections on the humming crystal to get up to it.\n\nCode to open at the adjacent decryption console: 84847078.\n\nFully lights the 9 O'clock Basin.",
 					["sourceQuest"] = 84837,	-- Decipher the Enigma Machine
@@ -425,7 +425,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						ach(40967),		-- Ratts' Revenge
 					},
 				}),
-				--10 O'clock Basin
+				-- 10 O'clock Basin
 				n(230070, {	-- Red Button
 					["description"] = "Interacting with the button starts a 20 second timer, refreshing on clicking again. The orb to the left of the button reports how many times the button has been clicked within that window.",
 					["coord"] = { 47.4, 68.3, 46 },	-- Karazhan Catacombs
@@ -440,8 +440,8 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						}),
 					},
 				}),
-				--11 O'clock Basin
-				--12 O'clock Basin
+				-- 11 O'clock Basin
+				-- 12 O'clock Basin
 				o(475116, {	-- Ordinary Pebble
 					["description"] = "These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in the Nature statue room.",
 					["coords"] = {
