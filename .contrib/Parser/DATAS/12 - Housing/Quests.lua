@@ -81,7 +81,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 		["repeatable"] = true,
 		["groups"] = {
 			i(253316),	-- Scoped Max Falcon Stealth Dragon 90 (PQI!)
-			--currency(COMMUNITY_COUPONS),	-- 3x Coupons
+			-- currency(COMMUNITY_COUPONS),	-- 3x Coupons
 		},
 	}),
 	-- Decor Treasure Hunts
@@ -480,12 +480,12 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(93629),	-- Triggered after completing 'Time to Decorate'
 			q(94392),	-- Triggered after talking to flora decor
 			q(94701),	-- Triggered after completing 'Home at Last' (94455)
-			--q(94703),	-- Unflagged after talking to Local Decor vendor
+			-- q(94703),	-- Unflagged after talking to Local Decor vendor
 			q(94706),	-- Triggered after skipping tutorial
 			q(94707),	-- Triggered after completing 'This Old Hearth' (94379)
 			q(94709),	-- Triggered after entering house (tutorial?)
 			q(94714),	-- Triggered after completing 'Feathering the Nest' (94210)
-			--q(94750),	-- Unflagged after talking to Elven Decor vendor
+			-- q(94750),	-- Unflagged after talking to Elven Decor vendor
 		}),
 	}));
 });

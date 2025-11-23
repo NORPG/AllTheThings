@@ -153,7 +153,7 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			i(247502),	-- Elven Woodvine Trellis (DECOR!)
 			i(253495),	-- Grand Elven Bench (DECOR!)
 			i(257691),	-- Open Elegant Elven Barrel (DECOR!)
-			--i(241625),	-- Open Elven Wood Crate (DECOR!)
+			-- i(241625),	-- Open Elven Wood Crate (DECOR!)
 			i(244118),	-- Rectangular Elegant Table (DECOR!)
 			i(243088),	-- Standing Ornate Weapon Rack (DECOR!)
 		},
