@@ -1148,7 +1148,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					-- #if BEFORE 11.1.0
 					["description"] = "This is also sold at the discount vendor, no reason to buy it from the main trading post offering."
 					-- #endif
-					--["cost"] = {{"c", TRADERS_TENDER, 100}},
+					-- ["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
 				traderstender(40, i(233072)),	-- Short Crimson War Skirt
 				traderstender(50, i(233074)),	-- Short Crimson War Skirt and Leg Wraps
