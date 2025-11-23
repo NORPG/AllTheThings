@@ -4338,14 +4338,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					i(210540, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Visage of the Devouring Flame
 
 					-- These currenty don't want to take their sourceID, leaving it here uncommented
-					--i(207129, {["sourceID"] = 192432 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192433 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192434 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192435 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192436 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192437 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192438 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192439 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192432 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192433 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192434 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192435 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192436 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192437 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192438 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192439 }),	-- Robes of the Ashen Grove
 				}),
 				filter(PLATE, {
 					i(210541, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Mask of the Unbidden Grim

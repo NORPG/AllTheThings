@@ -176,14 +176,14 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		faction(1041),	-- Frenzy
 		-- 1.14.2.41959
 		faction(2505),	-- Dragonflight, Chromatic
-		--1.15.0.52124
-		--Uncomment if these ever make it into retail
-		--faction(2586),	-- Azeroth Commerce Authority
-		--faction(2587),	-- Durotar Supply and Logistics
-		--faction(2588),	-- S03 - Scarlet Crusade Disguise
+		-- 1.15.0.52124
+		-- Uncomment if these ever make it into retail
+		-- faction(2586),	-- Azeroth Commerce Authority
+		-- faction(2587),	-- Durotar Supply and Logistics
+		-- faction(2588),	-- S03 - Scarlet Crusade Disguise
 	}),
 	expansion(EXPANSION.TBC, {
-		--2.0.0.6080
+		-- 2.0.0.6080
 		faction(914),	-- PLAYER, Blood Elf
 		faction(923),	-- Farstriders
 		faction(924),	-- DEPRECATED
@@ -247,7 +247,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		faction(1003),	-- Protectorate
 		faction(1004),	-- Arcane Annihilator (DNR)
 		faction(1005),	-- Friendly, Hidden \\ REUSE
-		--2.4.3.8606
+		-- 2.4.3.8606
 		faction(1006),	-- Kirin'Var - Dathric
 		faction(1007),	-- Kirin'Var - Belmara
 		faction(1008),	-- Kirin'Var - Luminrath
