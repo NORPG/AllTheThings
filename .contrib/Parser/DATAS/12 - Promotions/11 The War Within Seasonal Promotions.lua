@@ -45,7 +45,7 @@ TREASURE_OF_AZEROTH = createHeader({
 	icon = 7259806,
 	text = {
 		en = "Treasures of Azeroth",
-	--	cn = "雷蛇",
+		-- cn = "雷蛇",
 	},
 	description = {
 		en = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",

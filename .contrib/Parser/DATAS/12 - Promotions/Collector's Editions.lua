@@ -548,8 +548,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			["groups"] = {
 				mount(473487),		-- Sha-Touched Cloud Serpent
 				mount(473478),		-- Sha-Touched Riding Tiger
-				--i(xxxxxx),	-- Joyous Pet (PET!)
-				--Ensemble: Stormstout's Sha-Touched Collection Transmog Set (Classic)
+				-- i(xxxxxx),	-- Joyous Pet (PET!)
+				-- Ensemble: Stormstout's Sha-Touched Collection Transmog Set (Classic)
 				-- Sha-Touched Tea Set Toy (Added with Mists of Pandaria)
 				i(235464, {	-- Sha-Touched Tea Set (TOY!)
 					["timeline"] = { ADDED_4_4_2, REMOVED_5_5_2 },

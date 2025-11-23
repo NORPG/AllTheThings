@@ -62,7 +62,7 @@ root(ROOTS.Promotions, {
 				},
 			}),
 			i(97213, {	-- Hood of Hungering Darkness
-				--["description"] = "Obtained through Prime Gaming from July 27th 2022 till August 23rd 2022.",
+				-- ["description"] = "Obtained through Prime Gaming from July 27th 2022 till August 23rd 2022.",
 				["timeline"] = { ADDED_9_2_5 },
 				["u"] = REMOVED_FROM_GAME,	-- Removed again on August 24th 2022
 			}),

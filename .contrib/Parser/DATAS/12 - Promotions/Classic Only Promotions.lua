@@ -356,9 +356,9 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["u"] = REAL_MONEY,
 			}, {
 				["groups"] = {
-				--	cnONLY(i(, {	-- Titan Reforged Treasure CoinTodo: Its currency to buy all the items
-				--	ToDo: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251958.jpg
-					--	cnONLY(i()),	-- Emberbringer
+					-- cnONLY(i(, {	-- Titan Reforged Treasure Coin TODO: Its currency to buy all the items
+						-- TODO: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251958.jpg
+						-- cnONLY(i()),	-- Emberbringer
 						cnONLY(i(76755)),	-- Tyrael's Charger
 						cnONLY(i(246264)),	-- Inarius' Charger 
 						cnONLY(i(76889)),	-- Spectral Gryphon 
@@ -367,10 +367,10 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 						cnONLY(i(72134)),	-- Gregarious Grell
 						cnONLY(i(72159)),	-- Magical Ogre Idol
 						cnONLY(i(79769)),	-- Demon Hunter's Aspect
-					--	cnONLY(i()),	-- A mysterious exotic item pack for Mists of Pandaria Classic
-					--	cnONLY(i()),	-- 10 Sands of Time (Different game?)
-					--	cnONLY(i()),	-- Shard of Titan Treasure Fragment	
-				--	})),
+						-- cnONLY(i()),	-- A mysterious exotic item pack for Mists of Pandaria Classic
+						-- cnONLY(i()),	-- 10 Sands of Time (Different game?)
+						-- cnONLY(i()),	-- Shard of Titan Treasure Fragment	
+					-- })),
 				},
 			}));
 		},
