@@ -47,7 +47,7 @@ GUEST_RELATIONS = createHeader({
 WOW_ANNIVERSARY_FOUR = createHeader({
 	readable = "WoW's 4th Anniversary",
 	icon = 133783,
-	--eventID = ,	--
+	-- eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(2398),
 	},
@@ -55,7 +55,7 @@ WOW_ANNIVERSARY_FOUR = createHeader({
 WOW_ANNIVERSARY_FIVE = createHeader({
 	readable = "WoW's 5th Anniversary",
 	icon = 133783,
-	--eventID = ,	--
+	-- eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(4400),
 	},
@@ -63,7 +63,7 @@ WOW_ANNIVERSARY_FIVE = createHeader({
 WOW_ANNIVERSARY_SIX = createHeader({
 	readable = "WoW's 6th Anniversary",
 	icon = 133783,
-	--eventID = ,	--
+	-- eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(5512),
 	},
@@ -71,7 +71,7 @@ WOW_ANNIVERSARY_SIX = createHeader({
 WOW_ANNIVERSARY_SEVEN = createHeader({
 	readable = "WoW's 7th Anniversary",
 	icon = 133783,
-	--eventID = ,	--
+	-- eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(5863),
 	},
@@ -79,7 +79,7 @@ WOW_ANNIVERSARY_SEVEN = createHeader({
 WOW_ANNIVERSARY_EIGHT = createHeader({
 	readable = "WoW's 8th Anniversary",
 	icon = 133783,
-	--eventID = ,	--
+	-- eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(6131),
 	},
@@ -87,7 +87,7 @@ WOW_ANNIVERSARY_EIGHT = createHeader({
 WOW_ANNIVERSARY_NINE = createHeader({
 	readable = "WoW's 9th Anniversary",
 	icon = 133783,
-	--eventID = ,	--
+	-- eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(7853),
 	},
@@ -992,18 +992,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		},{	-- One-Time Content
 			ach(13917),	-- 15th Anniversary
 			n(157113, {	-- Chromie
-				--	inst(2235, {	-- doesn't show up in-game
+				-- inst(2235, {	-- doesn't show up in-game
 				["maps"] = {
 					1553,	-- Caverns of Time (instanced)
-					--	BC
+					-- BC
 					1554,	-- Serpentshrine Cavern
 					1555,	-- Tempest Keep
 					1556,	-- Battle for Mount Hyjal
-					--	WotLK
+					-- WotLK
 					1557,	-- Naxxramas
 					1563,	-- Trial of the Crusader
 					1558,	-- Icecrown Citadel
-					--	Cata
+					-- Cata
 					1559,	-- The Bastion of Twilight
 					1556,	-- Blackwing Descent
 					1561,	-- Firelands
@@ -1093,7 +1093,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							e(1581, {	-- Archimonde
 								["creatureID"] = 17968,	-- Archimonde
 								["groups"] = {
-									--	ach(695),	-- The Battle for Mount Hyjal
+									-- ach(695),	-- The Battle for Mount Hyjal
 									-- Old Token Items
 									i(171942),	-- Cowl of Absolution
 									i(171941),	-- Cowl of the Tempest
@@ -1715,7 +1715,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(57641, {	-- Master Ryson's All Seeing Eye
 							["repeatable"] = true,	-- presumably
 							["lvl"] = 10,
-							--	unsure if this has faction requirements or anything along those lines
+							-- unsure if this has faction requirements or anything along those lines
 						}),
 						q(57306, {	-- More Armor Scraps
 							["qg"] = 13257,	-- Murgot Deepforge
@@ -1740,7 +1740,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 						q(56256, {	-- The Battle for Alterac (A)
 							["qg"] = 154478,	-- Prospector Stonehewer
-						--	["coord"] = { , ALTERAC_VALLEY },
+							-- ["coord"] = { , ALTERAC_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
 						}),

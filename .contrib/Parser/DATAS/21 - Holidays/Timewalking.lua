@@ -4549,8 +4549,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(133259),	-- Resonant Kris	-- 8.3.7, confirmed dropping here too on 18.08.2020
 					i(133278),	-- Evelyn's Belt	-- 9.1, confirmed dropping here too on 27.09.2021
 					i(133262),	-- Greaves of Wu the Younger	-- 9.1, confirmed dropping here too on 27.09.2021
-					--	i(133267),	-- Sand Dune Belt (movd to Lockmaw))
-					--	i(133266),	-- Veneficial Band (moved to Lockmaw)
+					-- i(133267),	-- Sand Dune Belt (movd to Lockmaw))
+					-- i(133266),	-- Veneficial Band (moved to Lockmaw)
 				},
 			}),
 			e(122, {	-- Siamat
@@ -7109,7 +7109,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			e(2102, {	-- Skycap'n Kragg
 				["crs"] = {
 					126832,	-- Skycap'n Kragg
-					--  Shark Bait
+					-- Shark Bait
 				},
 				["sym"] = {{"select", "modItemID",
 					modItemId(159633,1),	-- Sharkbait's Fishhook
@@ -7497,10 +7497,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 			}),
 		}),--]]
 		n(VENDORS, {
-			-- ToDO: Update NPCID/Coords
+			-- TODO: Update NPCID/Coords
 			n(239840, {	-- Collector Ta'steld <Timewalking Vendor>
 				["coords"] = {
-				--	{ , , Oribos },
+					-- { , , Oribos },
 				},
 				["groups"] = {
 					n(ARMOR, {
