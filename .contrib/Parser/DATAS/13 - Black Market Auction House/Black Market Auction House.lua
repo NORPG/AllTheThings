@@ -2,7 +2,7 @@
 --     B L A C K   M A R K E T   A U C T I O N   H O U S E       --
 -------------------------------------------------------------------
 -- Sources:
---   8.2.5: https://www.wowhead.com/news/new-black-market-auction-house-listings-in-8-2-5-revealed-tusks-of-mannoroth-295182
+-- 8.2.5: https://www.wowhead.com/news/new-black-market-auction-house-listings-in-8-2-5-revealed-tusks-of-mannoroth-295182
 BLACK_MARKET_AUCTION_HOUSE = createHeader({
 	readable = "Black Market Auction House",
 	icon = [[~_.asset("Category_Blackmarket")]],
