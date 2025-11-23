@@ -124,7 +124,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				-- Corruptions quest
 				q(90719, {	-- Borrowing Corruption
-					--["sourceQuests"] = { ??? },	-- TODO: it was just up with some of new builds
+					-- ["sourceQuests"] = { ??? },	-- TODO: it was just up with some of new builds
 					["provider"] = { "n", 238136 },	-- Augermu
 					["coord"] = { 35.2, 68.6, DORNOGAL },
 					["groups"] = {
@@ -152,34 +152,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				-- TODO: Some masks still have their old quests, and something is funky with criteria of mask of the long night, WIP on Blizzard's end maybe? v0v
 				q(86153, {	-- Faceless Mask of the Dark Imagination
-					--["sourceQuests"] = { ?? },	-- ??
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232919 },	-- Faceless Mask of the Dark Imagination (QI!/QS!)
 				}),
 				q(86801, {	-- Faceless Mask of Multitudes
 					["provider"] = { "i", 235414 },	-- Faceless Mask of Multitudes (QS!/QI!)
 				}),
 				q(86152, {	-- Faceless Mask of the Daredevil
-					--["sourceQuests"] = { 90529 },	-- hqt?
+					-- ["sourceQuests"] = { 90529 },	-- hqt?
 					["provider"] = { "i", 232918 },	-- Faceless Mask of the Daredevil (QS!/QI!)
 				}),
 				q(86151, {	-- Faceless Mask of the Burned Bridge
-					--["sourceQuests"] = { 90530 },	-- hqt?
+					-- ["sourceQuests"] = { 90530 },	-- hqt?
 					["provider"] = { "i", 232917 },	-- Faceless Mask of the Burned Bridge (QI!/QS!)
 				}),
 				q(86155, {	-- Faceless Mask of the Long Night
-					--["sourceQuests"] = { ?? },	-- ??
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232921 },	-- Faceless Mask of the Long Night (QI!/QS!)
 				}),
 				q(86154, {	-- Faceless Mask of the Pained
-					--["sourceQuests"] = { ?? },	-- ??
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232920 },	-- Faceless Mask of the Pained (QI!/QS!)
 				}),
 				q(88652, {	-- Faceless Mask of the Nemesis
-					--["sourceQuests"] = { ?? },	-- ??
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 237434 },	-- Faceless Mask of the Nemesis (QI!/QS!)
 				}),
 				q(88903, {	-- Faceless Mask of Vengeance
-					--["sourceQuests"] = { ?? },	-- ??
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 238260 },	-- Faceless Mask of Vengeance (QI!/QS!)
 				}),
 			}),
@@ -1021,10 +1021,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(90529, {name="Valley of Honor & Mask"}),	-- pop after clearing Valley of Honor with 1 mask (mask sourceQuest?)
 		q(90530, {name="Valley of Wisdom & Mask"}),	-- pop after clearing Valley of Wisdom with 1 mask (new masks sourceQuest?)
 		q(90531),	-- When looting Twisted Skull-Scypthe Handlebars
-		--^ one of it could be tribute upgrade?
+		-- ^ one of it could be tribute upgrade?
 		q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
 		q(88905),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
-		--87389 & 88905 also pop on 2nd run (without quests in stormwind)
+		-- 87389 & 88905 also pop on 2nd run (without quests in stormwind)
 		q(87381, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
 		q(88906, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
 		q(87387, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // or veteran vendor unlock? / champion piece lockout?

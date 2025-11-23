@@ -263,7 +263,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				q(29222, {	-- Spirits Are With Us (H)
 					["sourceQuest"] = 29221,	-- Serpents and Poison
 					["qg"] = 52234,	-- Bwemba
-					--["coord"] = {}	-- can be picked up anywhere on the map
+					-- ["coord"] = {}	-- can be picked up anywhere on the map
 					["races"] = HORDE_ONLY,
 				}),
 				q(29115, {	-- The Hunter's Revenge (A)

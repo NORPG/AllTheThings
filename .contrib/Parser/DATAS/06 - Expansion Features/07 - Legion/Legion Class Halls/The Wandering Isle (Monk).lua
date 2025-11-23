@@ -482,7 +482,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
 						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
-					--- Chap 3
+					-- Chap 3
 					q(41849, {	-- The Iron Fist
 						["sourceQuests"] = {
 							43062,	-- Further Training

@@ -1045,8 +1045,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 			q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
 			-- Unknown
-			--q(60773),	-- Renown 30/Channeling anima
-			--q(60873),	-- Flying around in necrolord base
+			-- q(60773),	-- Renown 30/Channeling anima
+			-- q(60873),	-- Flying around in necrolord base
 		}),
 	})),
 })));

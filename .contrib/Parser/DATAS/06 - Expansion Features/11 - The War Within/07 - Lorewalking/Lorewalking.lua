@@ -57,7 +57,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				-- Only quests that throw reports and not repeated (already sorted) quest in chain
 				header(HEADERS.Achievement, 42188, {	-- Lorewalking: Blade's Bane
 					q(84371, {	-- Lorewalking: The Blade and the High Priest
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
+						-- ["sourceQuests"] = { 90705 },	-- Lorewalking
 						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
 						["provider"] = { "n", 232441 },	-- Lorewalker Cho
 						["coords"] = {
@@ -129,7 +129,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				}),
 				header(HEADERS.Achievement, 42187, {	-- Lorewalking: Ethereal Wisdom
 					q(85027, {	-- Lorewalking: The Protectorate
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
+						-- ["sourceQuests"] = { 90705 },	-- Lorewalking
 						["provider"] = { "n", 232441 },	-- Lorewalker Cho
 						["coords"] = {
 							{ 49.5, 31.6, DORNOGAL },
@@ -172,12 +172,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 					}),
 				}),
-				--header(HEADERS.Achievement, 61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
+				-- header(HEADERS.Achievement, 61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
 					-- Not available on PTR or Beta... I guess we'll see it when 11.2.7 goes live...
-				--})),
+				-- })),
 				header(HEADERS.Achievement, 42189, {	-- Lorewalking: The Lich King
 					q(85884, {	-- Lorewalking: The Prince Who Would Be King
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
+						-- ["sourceQuests"] = { 90705 },	-- Lorewalking
 						["provider"] = { "n", 230246 },	-- Lorewalker Cho
 						["coords"] = {
 							{ 49.5, 31.6, DORNOGAL },
@@ -208,14 +208,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					}),
 					q(85875, {	-- Ascent of the Lich King
 						["sourceQuests"] = { 85885 },	-- Lorewalking: No King Rules Forever
-						--["provider"] = { "n", ?? },	-- auto accepted during 85885
+						-- ["provider"] = { "n", ?? },	-- auto accepted during 85885
 						["coord"] = { 51.4, 79.4, ICECROWN },
 						["isRepeatable"] = true,
 					}),
 					q(85878, {	-- O' Thanagor
 						["sourceQuests"] = { 85875 },	-- Ascent of the Lich King
-						--["provider"] = { "n", ?? },	-- auto accepted during 85885, but after 85875
-						--["coord"] = { X, Y, ICECROWN_CITADEL },
+						-- ["provider"] = { "n", ?? },	-- auto accepted during 85885, but after 85875
+						-- ["coord"] = { X, Y, ICECROWN_CITADEL },
 						["isRepeatable"] = true,
 					}),
 				}),

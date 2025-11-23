@@ -302,7 +302,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- 2024-05-16: This quest was no longer locked, possibly with 10.2.7
 						["lockCriteria"] = { 1, "questID", 72393 },	-- Dragon Isles Supplies [Renown 12]
 						["DisablePartySync"] = true,
-						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
+						-- ["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						-- #ENDIF
 						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack

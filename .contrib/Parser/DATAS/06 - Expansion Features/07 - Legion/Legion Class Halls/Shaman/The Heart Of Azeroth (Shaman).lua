@@ -663,7 +663,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							-- #IF AFTER 7.2.0
 							43418,	-- A Hero's Weapon
 							-- #ELSE
-							--,	-- Investigate the Broken Shore
+							-- ,	-- Investigate the Broken Shore
 							-- #ENDIF
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel

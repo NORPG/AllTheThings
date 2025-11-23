@@ -427,7 +427,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
 								["provider"] = { "i", 178554 },	-- Call Chordy
 								["crs"] = {
-									--158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
+									-- 158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
 									161270,	-- Chordy (in world)
 									167828,	-- Salvageable Items (lootable treasure in world)
 								},
@@ -874,7 +874,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								n(161270, {	-- Chordy
 									["description"] = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
 									["crs"] = {
-										--158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
+										-- 158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
 										161270,	-- Chordy (in world)
 										167828,	-- Salvageable Items (lootable treasure in world)
 									},
@@ -1667,7 +1667,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				q(63402),	-- Legs
 				q(63408),	-- Feet
 
-				--	Unity Transmog
+				-- Unity Transmog
 				q(63407),	-- Leather Chest
 				q(63403),	-- Plate Helm
 				q(63406),	-- Plate Chest

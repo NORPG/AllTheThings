@@ -215,7 +215,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Artifact
 					q(40646, {	-- Weapons of Legend
-						["sourceQuests"] = { 40644 },	--	To The Dreamgrove
+						["sourceQuests"] = { 40644 },	-- To The Dreamgrove
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.5, 51.1, THE_DREAMGROVE },
 					}),

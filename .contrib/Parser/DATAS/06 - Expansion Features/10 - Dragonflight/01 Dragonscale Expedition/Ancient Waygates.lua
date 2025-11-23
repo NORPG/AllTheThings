@@ -105,7 +105,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 70154 },	-- A Gateway to Somewhere
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 48.6, 30.3, THE_AZURE_SPAN },
-					--["timeline"] = { REMOVED_10_2_6 },	-- TODO: Is this removed?
+					-- ["timeline"] = { REMOVED_10_2_6 },	-- TODO: Is this removed?
 					["groups"] = {
 						ach(16291),	-- An Ancient Awakening
 						i(198858),	-- Energized Arcana Vessel
@@ -385,7 +385,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 		n(ANCIENT_WAYGATES, {
 			q(71183),	-- triggered together with 'Continued Waygate Exploration' (questID 70702) (spellID 390634)
 			q(71185),	-- triggered together with 'Continued Waygate Exploration' (questID 71146) (spellID 390645)
-			--q(71186),	-- triggered together with 'Continued Waygate Exploration' (questID ?) (spellID 390656)
+			-- q(71186),	-- triggered together with 'Continued Waygate Exploration' (questID ?) (spellID 390656)
 			q(71187),	-- triggered together with 'Continued Waygate Exploration' (questID 71148) (spellID 390658)
 			q(71188),	-- triggered together with 'Continued Waygate Exploration' (questID 71149) (spellID 390659)
 			q(71189),	-- triggered together with 'Continued Waygate Exploration' (questID 71150) (spellID 390665)

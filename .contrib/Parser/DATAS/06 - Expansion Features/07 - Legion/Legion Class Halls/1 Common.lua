@@ -499,7 +499,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
-									un(REMOVED_FROM_GAME, i(140415)),	--	Blaze of Glory
+									un(REMOVED_FROM_GAME, i(140415)),	-- Blaze of Glory
 									i(140423),	-- Exhaustive Research
 								})),
 							},
