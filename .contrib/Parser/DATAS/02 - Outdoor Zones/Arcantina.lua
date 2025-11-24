@@ -414,7 +414,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["icon"] = [[~_.asset("Arcantina")]],
 		["groups"] = {
 			n(QUESTS, {
-				--Probably worth to redo into hqt or under treasure, idk?
+				-- Probably worth to redo into hqt or under treasure, idk?
 				q(92378),	-- Ancient Zandalari Scroll (itemID 250875) was placed in Arcantina @ 25.8, 43.4
 				q(92385),	-- Clefthoof Hide] (itemID 250882) was placed in Arcantina @ 37.2, 53.0
 				q(92381),	-- Weathered Tome (itemID 250878) was placed in Arcantina @ 62.3, 43.3
