@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(55984, {	-- A Good Offense
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+			["sourceQuest"] = 55500,	-- Save a Friend	TODO: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153623 },	-- Korl
 			["coord"] = { 36.3, 30.1, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -1288,7 +1288,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(56035, {	-- Most Delicious Clams (H)
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+			["sourceQuest"] = 55500,	-- Save a Friend	TODO: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153900 },	-- Sardina Lauray
 			["coord"] = { 48.7, 22.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -2666,7 +2666,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(56264, {	-- We've Got Crabs! (H)
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+			["sourceQuest"] = 55500,	-- Save a Friend	TODO: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["coord"] = { 25.4, 26.3, NAZJATAR },
 			["races"] = HORDE_ONLY,
