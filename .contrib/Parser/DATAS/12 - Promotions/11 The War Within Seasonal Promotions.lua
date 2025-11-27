@@ -106,6 +106,25 @@ root(ROOTS.Promotions, {
 					["description"] = "Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",
 				}),
 			}));
+			n(TREASURE_OF_AZEROTH, sharedDataSelf({
+				["timeline"] = { "added 11.2.5.64395" },
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+				--	cnONLY(i(, {	-- Azerothian Treasure Coins TODO: Its currency to buy all the items
+				--	TODO: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251957.jpg
+						cnONLY(i(252679)),	-- Mechanical Prototype Panther MK-0
+						cnONLY(i(252681)),	-- Steel Prototype Panther MK-0
+						cnONLY(i(223471)),	-- Kaldorei War Wolf
+						cnONLY(i(223459)),	-- Blackrock Warsaber
+						cnONLY(i(71726)),	-- Murkablo
+						cnONLY(i(72134)),	-- Gregarious Grell
+					--	cnONLY(i()),	-- Sands of Time (Different game?)
+					--	cnONLY(i()),	-- Karesh expedition resupply
+					--	cnONLY(i()),	-- Shard of Azeroth Fragment
+				--	})),
+				},
+			}));
 			-- "Pre Season"
 			i(93671, {	-- Ghastly Charger's Skull (MOUNT!)
 				-- #if AFTER 11.0.2
