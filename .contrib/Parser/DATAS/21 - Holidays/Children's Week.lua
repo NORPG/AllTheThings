@@ -18,8 +18,16 @@ CHILDRENS_WEEK_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(163),
 		-- #else
 		en = "Children's Week",
+		-- TODO: de = "",
 		es = "Semana de los niños",
 		mx = "Semana de los niños",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 		-- #endif
 	},
 });

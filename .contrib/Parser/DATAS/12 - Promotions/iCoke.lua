@@ -10,6 +10,14 @@ ICOKE_PROMOTION = createHeader({
 	-- #endif
 	text = {
 		en = "iCoke",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "可口可乐活动",
 		tw = "可口可樂活動",
 	},

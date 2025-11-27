@@ -8,12 +8,14 @@ CLAN_AYLAAG = createHeader({
 		en = "Clan Aylaag",
 		de = "Klan Aylaag",
 		es = "Clan Aylaag",
+		-- TODO: mx = "",
 		fr = "Clan des Aylaags",
 		it = "Clan Aylaag",
 		ko = "아일라그 부족",
 		pt = "Clã Aylaag",
 		ru = "Клан Айлааг",
 		cn = "艾拉格氏族",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

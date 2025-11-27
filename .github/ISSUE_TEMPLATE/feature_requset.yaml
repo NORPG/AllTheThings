@@ -13,10 +13,9 @@ body:
       description: "Select all applicable versions of World of Warcraft."
       multiple: true
       options:
+        - "Midnight beta"
         - "Retail"
         - "MoP Classic"
-        - "Cata Classic"
-        - "WotLK Classic"
         - "Classic Era"
         - "Hardcore"
         - "Season of Discovery"

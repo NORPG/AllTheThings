@@ -93,9 +93,16 @@ root(ROOTS.Secrets, {
 				icon = 134507,
 				text = {
 					en = "Uuna's World Tour",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
 					fr = "Tour du monde d’Uuna",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
 					ru = "Приключения с Ууной",
 					cn = "尤娜的世界旅行",
+					-- TODO: tw = "",
 				},
 				description = {
 					en = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",

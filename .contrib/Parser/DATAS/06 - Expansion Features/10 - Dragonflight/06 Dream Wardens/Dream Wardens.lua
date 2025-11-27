@@ -7,8 +7,16 @@ DREAM_INFUSION = createHeader({
 	icon = 1394953,
 	text = {
 		en = "Dream Infusion",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Настой Сна",
 		cn = "梦境注能",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {

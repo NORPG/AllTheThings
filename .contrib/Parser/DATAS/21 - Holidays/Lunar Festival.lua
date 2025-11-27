@@ -19,8 +19,16 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(160),
 		-- #else
 		en = "Lunar Festival",
+		-- TODO: de = "",
 		es = "Festival Lunar",
 		mx = "Festival Lunar",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 		-- #endif
 	},
 });

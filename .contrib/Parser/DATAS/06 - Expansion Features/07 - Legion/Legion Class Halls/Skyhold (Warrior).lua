@@ -6,12 +6,16 @@ GREAT_ODYN_AND_THE_FIRELORD = createHeader({
 	icon = 237446,
 	text = {
 		en = "Great Odyn and the Firelord",
-		es = "El gran Odyn y el Señor del Fuego",
 		de = "Der große Odyn und der Feuerlord",
+		es = "El gran Odyn y el Señor del Fuego",
+		-- TODO: mx = "",
 		fr = "Le grand Odyn et le seigneur du feu",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "O Grande Odyn e o Senhor do Fogo",
 		ru = "Великий Один и Повелитель Огня",
 		cn = "伟大的奥丁与炎魔之王",
+		-- TODO: tw = "",
 	},
 });
 THE_WANDERER_AND_THE_SERPENT = createHeader({
@@ -19,11 +23,16 @@ THE_WANDERER_AND_THE_SERPENT = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Wanderer and the Serpent",
-		es = "El nómada y la serpiente",
 		de = "Der Wanderer und die Schlange",
+		es = "El nómada y la serpiente",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "O Andarilho e a Serpente",
 		ru = "Странник и змей",
 		cn = "流浪者与蛇",
+		-- TODO: tw = "",
 	},
 });
 HALLS_OF_GOLD_AND_GLORY = createHeader({
@@ -31,11 +40,16 @@ HALLS_OF_GOLD_AND_GLORY = createHeader({
 	icon = 237446,
 	text = {
 		en = "Halls of Gold and Glory",
-		es = "Cámaras de oro y gloria",
 		de = "Hallen des Goldes und des Ruhmes",
+		es = "Cámaras de oro y gloria",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "Os Salões de Ouro e Glória",
 		ru = "Чертоги золота и славы",
 		cn = "黄金与荣耀的殿堂",
+		-- TODO: tw = "",
 	},
 });
 THE_KEEPERS_EYE = createHeader({
@@ -43,11 +57,16 @@ THE_KEEPERS_EYE = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Keeper's Eye",
-		es = "El ojo del guardián",
 		de = "Das Auge des Hüters",
+		es = "El ojo del guardián",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "O Olho do Guardião",
 		ru = "Глаз Хранителя",
 		cn = "守护者之眼",
+		-- TODO: tw = "",
 	},
 });
 FIRST_OF_THE_VALKYR = createHeader({
@@ -55,11 +74,16 @@ FIRST_OF_THE_VALKYR = createHeader({
 	icon = 237446,
 	text = {
 		en = "First of the Val'kyr",
-		es = "La primera Val'kyr",
 		de = "Die erste der Val'kyr",
+		es = "La primera Val'kyr",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "A Primeira das Val'kyren",
 		ru = "Первая из валь'кир",
 		cn = "首位瓦格里",
+		-- TODO: tw = "",
 	},
 });
 THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
@@ -67,11 +91,16 @@ THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Sealing of the Halls of Valor",
-		es = "El sello de las Cámaras del Valor",
 		de = "Die Versiegelung der Hallen der Tapferkeit",
+		es = "El sello de las Cámaras del Valor",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "O Selamento dos Salões da Bravura",
 		ru = "Печать на Чертогах Доблести",
 		cn = "封印英灵殿",
+		-- TODO: tw = "",
 	},
 });
 HIS_NAME_IS_DRAGONBLOOD = createHeader({
@@ -79,11 +108,16 @@ HIS_NAME_IS_DRAGONBLOOD = createHeader({
 	icon = 237446,
 	text = {
 		en = "His Name Is Dragonblood",
+		-- TODO: de = "",
 		es = "Se llama Sangredragón",
+		-- TODO: mx = "",
 		fr = "Il s’appelait Sang de dragon",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "Ele se chama Sangue de Dragão",
 		ru = "Октель Драконья Кровь",
 		cn = "他名叫龙血",
+		-- TODO: tw = "",
 	},
 });
 THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
@@ -91,11 +125,16 @@ THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Last Words of Asgrim the Dreadkiller",
+		-- TODO: de = "",
 		es = "Las últimas palabras de Asgrim el Mataterrador",
+		-- TODO: mx = "",
 		fr = "Les dernières paroles d’Asgrim le Tueur de l’effroi",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "As Últimas Palavras de Asgrim, o Algoz Medonho",
 		ru = "Последние слова Азгрима Смертоубийцы",
 		cn = "亡灵杀手艾斯格里姆的遗言",
+		-- TODO: tw = "",
 	},
 });
 A_SHIELDMAIDENS_CREED = createHeader({
@@ -103,11 +142,16 @@ A_SHIELDMAIDENS_CREED = createHeader({
 	icon = 237446,
 	text = {
 		en = "A Shieldmaiden's Creed",
+		-- TODO: de = "",
 		es = "El credo de una doncella escudera",
+		-- TODO: mx = "",
 		fr = "Le credo de la vierge guerrière",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "A Crença de uma Dama Escudeira",
 		ru = "Кредо девы щита",
 		cn = "女武神的信条",
+		-- TODO: tw = "",
 	},
 });
 THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
@@ -115,11 +159,16 @@ THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Prophecy of Rythas the Oracle",
+		-- TODO: de = "",
 		es = "La profecía de Rythas el Oráculo",
+		-- TODO: mx = "",
 		fr = "La prophétie de Rythas l’Oracle",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "A Profecia de Rythas, o Oráculo",
 		ru = "Пророчество Райтаса Провидца",
 		cn = "神谕者莱萨斯的预言",
+		-- TODO: tw = "",
 	},
 });
 THE_LESSONS_OF_THE_BLACKFIST = createHeader({
@@ -127,11 +176,16 @@ THE_LESSONS_OF_THE_BLACKFIST = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Lessons of the Blackfist",
+		-- TODO: de = "",
 		es = "Las lecciones de Puño Opaco",
+		-- TODO: mx = "",
 		fr = "Les leçons du poing noir",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "As Lições do Punho Negro",
 		ru = "Уроки Черного Кулака",
 		cn = "黑拳的教诲",
+		-- TODO: tw = "",
 	},
 });
 VOLUNDS_FOLLY = createHeader({
@@ -139,11 +193,16 @@ VOLUNDS_FOLLY = createHeader({
 	icon = 237446,
 	text = {
 		en = "Volund's Folly",
+		-- TODO: de = "",
 		es = "La locura de Volund",
+		-- TODO: mx = "",
 		fr = "La folie de Volund",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "A Tolice de Volund",
 		ru = "Безрассудный Волунд",
 		cn = "沃伦德的愚行",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {

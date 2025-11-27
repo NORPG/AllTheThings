@@ -6,14 +6,16 @@ ZSKERA_VAULTS = createHeader({
 	icon = 4638590,
 	text = {
 		en = "Zskera Vaults",
-		es = "Cámaras de Zskera",
 		de = "Gewölbe von Zskera",
+		es = "Cámaras de Zskera",
+		-- TODO: mx = "",
 		fr = "Caveaux de Zskera",
 		it = "Cripte di Zskera",
+		ko = "지스케라 금고",
 		pt = "Câmaras de Zskera",
 		ru = "Зкерские хранилища",
-		ko = "지스케라 금고",
 		cn = "兹斯克拉宝库",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {

@@ -9,9 +9,9 @@ body:
       label: "Which flavo(u)r of WoW are you using?"
       description: "Select the versions of World of Warcraft."
       options:
+        - "Midnight beta"
         - "Retail"
         - "MoP Classic"
-        - "WotLK Classic"
         - "Classic Era"
         - "Hardcore"
         - "Season of Discovery"
@@ -29,8 +29,8 @@ body:
         - "US"
         - "EU"
         - "KR"
-        - "TW"
         - "CN"
+        - "TW"
     validations:
       required: true
 

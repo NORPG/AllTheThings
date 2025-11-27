@@ -9,9 +9,16 @@ DF_RARE_ROTATION = createHeader({
 	icon = 237274,
 	text = {
 		en = "DF Rare Rotation",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Rotation Rare de DF",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Редкие DF по расписанию",
 		cn = "巨龙时代稀有轮换",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

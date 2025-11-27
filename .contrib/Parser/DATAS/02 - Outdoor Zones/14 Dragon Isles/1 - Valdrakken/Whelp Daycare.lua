@@ -8,7 +8,16 @@ WHELP_DAYCARE = createHeader({
 	icon = 3846202,
 	text = {
 		en = "Little Scales Daycare",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Драконьи ясли",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

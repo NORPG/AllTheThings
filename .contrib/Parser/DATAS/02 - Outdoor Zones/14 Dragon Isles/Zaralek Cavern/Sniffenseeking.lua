@@ -6,14 +6,16 @@ SNIFFENSEEKING = createHeader({
 	icon = 648644,
 	text = {
 		en = "Sniffenseeking",
-		es = "Olfatobúsqueda",
 		de = "Schnüffelsuchen",
+		es = "Olfatobúsqueda",
+		-- TODO: mx = "",
 		fr = "Recherches olfactives",
 		it = "Il Fiutatutto",
+		ko = "냄새 추적",
 		pt = "Busca farejante",
 		ru = "Нюхорысканье",
-		ko = "냄새 추적",
 		cn = "嗅味探寻",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {

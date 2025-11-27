@@ -8,12 +8,14 @@ EON_FRINGE = createHeader({
 		en = "Eon's Fringe",
 		de = "Grenze des Äons",
 		es = "Margen del Eón",
+		-- TODO: mx = "",
         fr = "marges des Éons",
 		it = "Confine degli Eoni",
+		ko = "영겁의 끝자락",
 		pt = "Orla do Eon",
         ru = "Грань Эпохи",
-		ko = "영겁의 끝자락",
         cn = "纪元边界",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

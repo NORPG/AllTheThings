@@ -2641,14 +2641,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					icon = 131038,
 					text = {
 						en = "Speak to Grizzby",
-						es = "Habla con el Grizzby",
 						de = "Sprich mit Grizzby",
+						es = "Habla con el Grizzby",
+						-- TODO: mx = "",
 						fr = "Parlez à Grizzby",
 						it = "Parla con Grizzby",
+						ko = "그리즈비와 대화",
 						pt = "Fale com o Grizzby",
 						ru = "Поговорите с Grizzby",
-						ko = "그리즈비와 대화",
 						cn = "与灰熊交谈",
+						-- TODO: tw = "",
 					},
 				}), {
 					["questID"] = 78284,	-- Grizzby HQT
@@ -2662,14 +2664,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					icon = 131038,
 					text = {
 						en = "Speak to N'ora",
-						es = "Habla con el N'ora",
 						de = "Sprich mit N'ora",
+						es = "Habla con el N'ora",
+						-- TODO: mx = "",
 						fr = "Parlez à N'ora",
 						it = "Parla con N'ora",
+						ko = "노라와 대화",
 						pt = "Fale com o N'ora",
 						ru = "Поговорите с Н'ора",
-						ko = "노라와 대화",
 						cn = "与奈奥拉谈",
+						-- TODO: tw = "",
 					},
 				}), {
 					["providers"] = {

@@ -164,12 +164,14 @@ MECHAGON_JUNKYARD = createHeader({
 		en = "Junkyard",
 		de = "Schrottplatz",
 		es = "Desguace",
+		-- TODO: mx = "",
 		fr = "La casse",
 		it = "Discarica",
+		ko = "고철장",
 		pt = "Ferro-velho",
 		ru = "Свалка",
-		ko = "고철장",
 		cn = "垃圾场",
+		-- TODO: tw = "",
 	},
 });
 MECHAGON_WORKSHOP = createHeader({

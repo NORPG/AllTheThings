@@ -6,14 +6,16 @@ local BROKEN_MIRROR_INFO = {
 	icon = 3854020,
 	text = {
 		en = "Broken Mirror",
-		es = "Espejo roto",
 		de = "Zerbrochener Spiegel",
+		es = "Espejo roto",
+		-- TODO: mx = "",
 		fr = "Miroir brisé",
 		it = "Specchio Rotto",
+		ko = "깨진 거울",
 		pt = "Espelho Quebrado",
 		ru = "Разбитое зеркало",
-		ko = "깨진 거울",
 		cn = "残破的镜子",
+		-- TODO: tw = "",
 	},
 };
 local function breakAnotherMirror(suffix)

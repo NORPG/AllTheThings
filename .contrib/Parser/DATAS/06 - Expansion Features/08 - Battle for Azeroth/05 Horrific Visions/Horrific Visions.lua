@@ -13,9 +13,16 @@ LOST_AREA = createHeader({
 	icon = 537021,
 	text = {
 		en = "Lost Area",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Zone Perdue",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Захваченная область",
 		cn = "失落区域",
+		-- TODO: tw = "",
 	},
 });
 CORRUPTED_AREA = createHeader({
@@ -23,9 +30,16 @@ CORRUPTED_AREA = createHeader({
 	icon = 136202,
 	text = {
 		en = "Corrupted Area",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Zone Corrompue",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Заражённая область",
 		cn = "腐化区域",
+		-- TODO: tw = "",
 	},
 });
 local HORRIFIC_ORGRIMMAR = 1469;

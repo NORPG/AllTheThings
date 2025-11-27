@@ -18,13 +18,16 @@ BARTERING = createHeader({
 	icon = 413570,
 	text = {
 		en = "Bartering",
-		es = "Comercio",
 		de = "Tauschhandels",
+		es = "Comercio",
+		-- TODO: mx = "",
 		fr = "Marchandage",
 		it = "Baratto",
+		-- TODO: ko = "",
 		pt = "Pechincha",
 		ru = "Обмен",
 		cn = "以物易物",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {

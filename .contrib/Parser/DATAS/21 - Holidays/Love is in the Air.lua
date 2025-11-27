@@ -18,8 +18,16 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(187),
 		-- #else
 		en = "Love is in the Air",
+		-- TODO: de = "",
 		es = "Amor en el aire",
 		mx = "Amor en el aire",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 		-- #endif
 	},
 });
