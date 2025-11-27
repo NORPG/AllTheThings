@@ -3,10 +3,16 @@ DELVES_MID_S1 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves MID S1",
+		-- TODO: de = "",
 		es = "Profundidades MID T1",
 		mx = "Abismos MID T1",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки MID 1 сезон",
-		-- cn = "地心之战地下堡第1季",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 DELVES_MID_S2 = createHeader({
@@ -14,10 +20,16 @@ DELVES_MID_S2 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves MID S2",
+		-- TODO: de = "",
 		es = "Profundidades MID T2",
 		mx = "Abismos MID T2",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки MID 2 сезон",
-		-- cn = "地心之战地下堡第2季",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 DELVES_MID_S3 = createHeader({
@@ -25,10 +37,16 @@ DELVES_MID_S3 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves MID S3",
+		-- TODO: de = "",
 		es = "Profundidades MID T3",
 		mx = "Abismos MID T3",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки MID 3 сезон",
-		-- cn = "地心之战地下堡第3季",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 -- #if AFTER 12.0.0
