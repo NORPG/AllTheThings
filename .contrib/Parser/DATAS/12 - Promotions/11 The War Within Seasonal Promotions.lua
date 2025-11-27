@@ -112,8 +112,8 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}, {
 				["groups"] = {
-				--	cnONLY(i(, {	-- Azerothian Treasure Coins ToDo: Its currency to buy all the items
-				--	ToDo: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251957.jpg
+				--	cnONLY(i(, {	-- Azerothian Treasure Coins TODO: Its currency to buy all the items
+				--	TODO: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251957.jpg
 						cnONLY(i(252679)),	-- Mechanical Prototype Panther MK-0
 						cnONLY(i(252681)),	-- Steel Prototype Panther MK-0
 						cnONLY(i(223471)),	-- Kaldorei War Wolf
