@@ -18,8 +18,16 @@ HALLOWS_END_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(158),
 		-- #else
 		en = "Hallow's End",
+		-- TODO: de = "",
 		es = "Halloween",
 		mx = "Halloween",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 		-- #endif
 	},
 });
@@ -486,13 +494,14 @@ local CANDY_BUCKET_OBJECT_DATA = {
 	model = 200946,
 	text = {
 		en = "Candy Bucket",
-		es = "Cubo de caramelos",
 		de = "Eimer mit Süßigkeiten",
+		es = "Cubo de caramelos",
+		-- TODO: mx = "",
 		fr = "Seau de bonbons",
 		it = "Secchio delle Caramelle",
+		ko = "사탕 바구니",
 		pt = "Balde de Balas",
 		ru = "Кулек конфет",
-		ko = "사탕 바구니",
 		cn = "糖罐",
 		tw = "糖果桶",
 	},
