@@ -1986,14 +1986,16 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 	icon = 133743,
 	text = {
 		en = "Memory of Scholomance",
-		es = "Recuerdo de Scholomance",
 		de = "Erinnerung an Scholomance",
+		es = "Recuerdo de Scholomance",
+		-- TODO: mx = "",
 		fr = "Souvenir de Scholomance",
 		it = "Ricordo di Scholomance",
+		ko = "스칼로맨스의 기억",
 		pt = "Lembrança de Scolomântia",
 		ru = "Воспоминание о Некроситете",
-		ko = "스칼로맨스의 기억",
 		cn = "通灵学院的回忆",
+		-- TODO: tw = "",
 	},
 }), {
 	["mapID"] = 306,

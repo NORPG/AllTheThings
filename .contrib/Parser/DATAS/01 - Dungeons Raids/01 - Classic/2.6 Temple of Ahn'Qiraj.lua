@@ -14,8 +14,16 @@ SILITHID_ROYALTY_SHARED_DROPS = createHeader({
 	icon = 133575,
 	text = {
 		en = "Silithid Royalty",
+		-- TODO: de = "",
 		es = "Realeza Silitida",
 		mx = "Realeza Silitida",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 -- #endif

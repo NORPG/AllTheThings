@@ -21,16 +21,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			},
 			description = {
 				en = "Nightmare Grove can be found near the portals to the Emerald Dream.",
+				-- TODO: de = "",
 				es = "Arboleda de la Pesadilla se encuentra cerca de los portales al Sueño Esmeralda.",
 				mx = "Arboleda de las Pesadillas se encuentra cerca de los portales al Sueño Esmeralda.",
-				--[[
-				de = "",
-				fr = "",
-				it = "",
-				pt = "",
-				ru = "",
-				ko = "",
-				]]--
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
 				cn = "梦魇林地可在通往翡翠梦境的传送门附近找到。",
 				tw = "夢魘林地可在通往翡翠夢境的傳送門附近找到。",
 			},

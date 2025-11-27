@@ -7,6 +7,16 @@ MAIN_GATE = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Main Gate",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5916)]],	-- Stratholme - Main Gate
 		-- #endif
@@ -21,8 +31,16 @@ SERVICE_ENTRANCE = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Service Entrance",
+		-- TODO: de = "",
 		es = "Entrada de servicio",
 		mx = "Entrada de servicio",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5917)]],	-- Stratholme - Service Entrance
 		-- #endif

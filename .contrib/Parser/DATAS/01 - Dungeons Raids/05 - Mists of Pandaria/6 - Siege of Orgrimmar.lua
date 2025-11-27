@@ -120,8 +120,16 @@ FLEXIBLE_BEFORE_WOD = createHeader({
 	icon = [[~_.asset("Difficulty_Normal")]],
 	text = {
 		en = "Flexible (5.4)",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Гибкий (5.4)",
 		cn = "弹性 (5.4)",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
