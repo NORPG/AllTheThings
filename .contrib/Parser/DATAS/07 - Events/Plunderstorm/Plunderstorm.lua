@@ -17,6 +17,16 @@ PLUNDERSTORM = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Plunderstorm",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 		-- #else
 		en = [[~WOWLABS_GAMEMODE_HEADER]],
 		-- #endif
@@ -35,6 +45,14 @@ PLUNDERSTORE = createHeader({
 	-- #endif
 	text = {
 		en = "Plunderstore",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "霸业商城",
 		tw = "強襲商店",
 	},
