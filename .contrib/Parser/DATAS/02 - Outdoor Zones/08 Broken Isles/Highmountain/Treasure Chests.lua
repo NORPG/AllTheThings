@@ -14,14 +14,14 @@ root(ROOTS.Zones, {
 						{ "i", 131810, 1 },	-- Derelict Skyhorn Kite
 					},
 				}),
-				o(243798, {	-- A Steamy Jewelry Box
+				o(243798, {	-- A Steamy Jewelry Box (19)
 					["questID"] = 39531,
 					["coord"] = { 63.5, 59.3, 750 },
 					["groups"] = {
 						i(141322),	-- Shiny Silver Necklace
 					},
 				}),
-				n(95958, {	-- Floating Treasure
+				n(95958, {	-- Floating Treasure (28)
 					["description"] = "Can be found floating down the river.",
 					["questID"] = 39494,
 					["coord"] = { 39.2, 47.8, HIGHMOUNTAIN },
@@ -30,15 +30,15 @@ root(ROOTS.Zones, {
 					["questID"] = 39471,
 					["coord"] = { 51.2, 53.0, HIGHMOUNTAIN },
 				}),
-				o(245536, {	-- Glimmering Treasure Chest
+				o(245536, {	-- Glimmering Treasure Chest (37)
 					["questID"] = 40482,
 					["coord"] = { 46.7, 28.1, HIGHMOUNTAIN },
 				}),
-				o(245537, {	-- Glimmering Treasure Chest
+				o(245537, {	-- Glimmering Treasure Chest (31)
 					["questID"] = 40483,
 					["coord"] = { 54.2, 41.6, HIGHMOUNTAIN },
 				}),
-				o(245530, {	-- Glimmering Treasure Chest
+				o(245530, {	-- Glimmering Treasure Chest (14)
 					["description"] = "Inside Lifespring Cavern. Cave entrance is at |cFFFFFFFF38.3, 61.2|r.",
 					["questID"] = 40476,
 					["coord"] = { 52.9, 23.3, 655 },	-- Lifespring Lower Cavern
@@ -48,79 +48,79 @@ root(ROOTS.Zones, {
 					["questID"] = 39606,
 					["coord"] = { 59.6, 40.9, 657 },
 				}),
-				o(257290, {	-- Highmountain Clan Chest
+				o(257290, {	-- Highmountain Clan Chest (44)
 					["description"] = "These repeatable chests spawn all over the map in Highmountain."
 				}),
-				o(245525, {	-- Small Treasure Chest
+				o(245525, {	-- Small Treasure Chest (2)
 					["questID"] = 40472,
 					["coord"] = { 50.6, 75.4, 750 },
 				}),
-				o(245529, {	-- Small Treasure Chest
+				o(245529, {	-- Small Treasure Chest (13)
 					["questID"] = 40475,
 					["coord"] = { 32.3, 41.8, 750 },
 				}),
-				o(245534, {	-- Small Treasure Chest
+				o(245534, {	-- Small Treasure Chest (35)
 					["questID"] = 40480,
 					["coord"] = { 42.5, 35.0, HIGHMOUNTAIN },
 				}),
-				o(245535, {	-- Small Treasure Chest
+				o(245535, {	-- Small Treasure Chest (36)
 					["questID"] = 40481,
 					["coord"] = { 45.5, 34.6, HIGHMOUNTAIN },
 				}),
-				o(245538, {	-- Small Treasure Chest
+				o(245538, {	-- Small Treasure Chest (17)
 					["questID"] = 40484,
 					["coord"] = { 53.4, 43.5, HIGHMOUNTAIN },
 				}),
-				o(245541, {	-- Small Treasure Chest
+				o(245541, {	-- Small Treasure Chest (9)
 					["questID"] = 40487,
 					["coord"] = { 55.1, 49.7, HIGHMOUNTAIN },
 				}),
-				o(245545, {	-- Small Treasure Chest
+				o(245545, {	-- Small Treasure Chest (8)
 					["questID"] = 40491,
 					["coord"] = { 13.7, 55.3, 750 },
 				}),
-				o(245547, {	-- Small Treasure Chest
+				o(245547, {	-- Small Treasure Chest (23)
 					["questID"] = 40493,
 					["coord"] = { 53.0, 52.2, HIGHMOUNTAIN },
 				}),
-				o(245551, {	-- Small Treasure Chest
+				o(245551, {	-- Small Treasure Chest (38)
 					["questID"] = 40497,
 					["coord"] = { 50.2, 38.6, HIGHMOUNTAIN },
 				}),
-				o(245554, {	-- Small Treasure Chest
+				o(245554, {	-- Small Treasure Chest (32)
 					["questID"] = 40499,
 					["coord"] = { 53.1, 39.5, HIGHMOUNTAIN },
 				}),
-				o(245555, {	-- Small Treasure Chest
+				o(245555, {	-- Small Treasure Chest (42)
 					["questID"] = 40500,
 					["coord"] = { 53.4, 48.7, HIGHMOUNTAIN },
 				}),
-				o(245580, {	-- Small Treasure Chest
+				o(245580, {	-- Small Treasure Chest (12)
 					["questID"] = 40506,
 					["coord"] = { 50.8, 35.0, HIGHMOUNTAIN },
 				}),
-				o(245581, {	-- Small Treasure Chest
+				o(245581, {	-- Small Treasure Chest (30)
 					["questID"] = 40507,
 					["coord"] = { 46.8, 40.1, HIGHMOUNTAIN },
 				}),
-				o(245601, {	-- Small Treasure Chest
+				o(245601, {	-- Small Treasure Chest (7)
 					["questID"] = 40508,
 					["coord"] = { 60.5, 54.7, 657 },
 				}),
-				o(245603, {	-- Small Treasure Chest
+				o(245603, {	-- Small Treasure Chest (22)
 					["questID"] = 40510,
 					["coord"] = { 43.7, 72.7, HIGHMOUNTAIN },
 				}),
-				o(255828, {	-- Small Treasure Chest
+				o(255828, {	-- Small Treasure Chest (43)
 					["description"] = "In an underwater cave.",
 					["questID"] = 44279,
 					["coord"] = { 45.2, 27.4, HIGHMOUNTAIN },
 				}),
-				o(255829, {	-- Small Treasure Chest
+				o(255829, {	-- Small Treasure Chest (26)
 					["questID"] = 44280,
 					["coord"] = { 46.4, 21.6, HIGHMOUNTAIN },
 				}),
-				o(243688, {	-- Treasure Chest
+				o(243688, {	-- Treasure Chest (27)
 					["questID"] = 39466,
 					["coord"] = { 49.6, 37.7, HIGHMOUNTAIN },
 					["groups"] = {
@@ -131,84 +131,84 @@ root(ROOTS.Zones, {
 					["coord"] = { 39, 54.5, HIGHMOUNTAIN },
 					["questID"] = 44731,
 				}),
-				o(250541, {	-- Treasure Chest
+				o(250541, {	-- Treasure Chest (0)
 					["coord"] = { 52.5, 66.5, HIGHMOUNTAIN },
 					["questID"] = 42453,
 				}),
-				o(243773, {	-- Treasure Chest
+				o(243773, {	-- Treasure Chest (10)
 					["questID"] = 39503,
 					["coord"] = { 47.6, 44.0, HIGHMOUNTAIN },
 					["groups"] = {
 						i(131926),	-- Delicate Roc Feather
 					},
 				}),
-				o(245548, {	-- Treasure Chest
+				o(245548, {	-- Treasure Chest (4)
 					["description"] = "Inside Mucksnout Den. Cave entrance is at |cFFFFFFFF41.6, 46.9|r.",
 					["questID"] = 40494,
 					["coord"] = { 60.7, 25.2, 654 },	-- Mucksnout Den
 				}),
-				o(244494, {	-- Treasure Chest
+				o(244494, {	-- Treasure Chest (33)
 					["questID"] = 39812,
 					["coord"] = { 39.5, 57.4, HIGHMOUNTAIN },
 				}),
-				o(244519, {	-- Treasure Chest
+				o(244519, {	-- Treasure Chest (20)
 					["questID"] = 39824,
 					["coord"] = { 53.5, 51.0, HIGHMOUNTAIN },
 					["groups"] = {
 						i(131810),	-- Derelict Skyhorn Kite
 					},
 				}),
-				o(245524, {	-- Treasure Chest
+				o(245524, {	-- Treasure Chest (29)
 					["questID"] = 40471,
 					["coord"] = { 63.0, 67.9, 652 },
 				}),
-				o(245527, {	-- Treasure Chest
+				o(245527, {	-- Treasure Chest (11)
 					["questID"] = 40473,
 					["coord"] = { 39.3, 76.3, HIGHMOUNTAIN },
 					["description"] = "There is a phasing issue with this chest- you have to stand behind the totem on the right side of the chest and click from the rock. It's a bit tricky. If your zone is Riverbend, the chest will disappear- you want Highmountain.",
 				}),
-				o(245528, {	-- Treasure Chest
+				o(245528, {	-- Treasure Chest (6)
 					["questID"] = 40474,
 					["coord"] = { 39.4, 62.3, HIGHMOUNTAIN },
 				}),
-				o(245531, {	-- Treasure Chest
+				o(245531, {	-- Treasure Chest (3)
 					["questID"] = 40477,
 					["coord"] = { 37.3, 33.8, HIGHMOUNTAIN },
 				}),
-				o(245532, {	-- Treasure Chest
+				o(245532, {	-- Treasure Chest (15)
 					["questID"] = 40478,
 					["coord"] = { 36.1, 72.4, 659 },
 				}),
-				o(245533, {	-- Treasure Chest
+				o(245533, {	-- Treasure Chest (16)
 					["questID"] = 40479,
 					["coord"] = { 42.2, 27.3, HIGHMOUNTAIN },
 				}),
-				o(245542, {	-- Treasure Chest
+				o(245542, {	-- Treasure Chest (18)
 					["questID"] = 40488,
 					["coord"] = { 36.6, 62.1, HIGHMOUNTAIN },
 				}),
-				o(245550, {	-- Treasure Chest
+				o(245550, {	-- Treasure Chest (24)
 					["questID"] = 40496,
 					["coord"] = { 51.0, 36.5, HIGHMOUNTAIN },
 				}),
-				o(245553, {	-- Treasure Chest
+				o(245553, {	-- Treasure Chest (41)
 					["questID"] = 40498,
 					["coord"] = { 51.0, 38.8, HIGHMOUNTAIN },
 				}),
-				o(245579, {	-- Treasure Chest
+				o(245579, {	-- Treasure Chest (39)
 					["questID"] = 40505,
 					["coord"] = { 52.0, 32.4, HIGHMOUNTAIN },
 				}),
-				o(245602, {	-- Treasure Chest
+				o(245602, {	-- Treasure Chest (21)
 					["questID"] = 40509,
 					["coord"] = { 40.3, 50.0, 657 },
 				}),
-				o(245543, {	-- Treasure Chest
+				o(245543, {	-- Treasure Chest (40)
 					["description"] = "On the upper level of Bitestone Enclave, all the way at the back. Cave entrance is at |cFFFFFFFF41, 73|r.",
 					["questID"] = 40489,
 					["coord"] = { 85.2, 38.2, 651 },	-- Bitestone Enclave
 				}),
-				o(257978, {	-- Treasure Chest
+				o(257978, {	-- Treasure Chest (1)
 					["questID"] = 44352,
 					["coord"] = { 32.2, 38.4, 750 },
 					["description"] = "In an underwater cave. Entrance is below the boat with another treasure on it.",

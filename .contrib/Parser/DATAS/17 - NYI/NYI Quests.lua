@@ -2061,7 +2061,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		expansion(EXPANSION.LEGION, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			q(40103, { ["name"] = "7.0 ALPHA DK TEST QUEST", }),	-- 7.0 ALPHA DK TEST QUEST
 			q(39846, { ["name"] = "7.0 Dalaran - Treasure 001 - Burnt Cart", }),	-- 7.0 Dalaran - Treasure 001 - Burnt Cart
-			q(39507, { ["name"] = "7.0 Highmountain - Treasure 062 - Pinerock Basin", }),	-- 7.0 Highmountain - Treasure 062 - Pinerock Basin
+			q(39507, { ["name"] = "7.0 Highmountain - Treasure 062 - Pinerock Basin", }),	-- 7.0 Highmountain - Treasure 062 - Pinerock Basin (34)
 			q(38215, { ["name"] = "7.0 Stormheim - Treasure 015 - Haustvald - ZTO", }),	-- 7.0 Stormheim - Treasure 015 - Haustvald - ZTO
 			q(38494, { ["name"] = "7.0 Stormheim - Treasure 016 - Bear Cave - ZTO", }),	-- 7.0 Stormheim - Treasure 016 - Bear Cave - ZTO
 			q(38509, { ["name"] = "7.0 Stormheim - Treasure 021 - Helheim - ZTO", }),	-- 7.0 Stormheim - Treasure 021 - Helheim - ZTO
