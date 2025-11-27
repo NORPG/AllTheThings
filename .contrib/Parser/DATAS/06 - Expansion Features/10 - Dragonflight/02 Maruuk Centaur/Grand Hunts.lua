@@ -6,9 +6,16 @@ GRAND_HUNTS = createHeader({
 	icon = 4622465,
 	text = {
 		en = "Grand Hunts",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Grandes Chasses",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Великая охота",
 		cn = "洪荒狩猎",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

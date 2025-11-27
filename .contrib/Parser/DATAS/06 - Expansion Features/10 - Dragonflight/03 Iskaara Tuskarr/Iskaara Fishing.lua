@@ -6,8 +6,16 @@ ISKAARA_FISHING = createHeader({
 	icon = 1911518,
 	text = {
 		en = "Iskaara Fishing",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Искарское рыболовство",
 		cn = "伊斯卡拉渔具",
+		-- TODO: tw = "",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
