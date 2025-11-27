@@ -886,7 +886,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(35928, {	-- Meatgut Needs Bones
-						["sourceQuest"] = 34769,	-- A Choice to Make (todo: verify if needed)
+						["sourceQuest"] = 34769,	-- A Choice to Make (TODO: verify if needed)
 						["qg"] = 82727,	-- Meatgut
 						["coord"] = { 78.3, 52.5, DRAENOR_NAGRAND },
 						["repeatable"] = true,

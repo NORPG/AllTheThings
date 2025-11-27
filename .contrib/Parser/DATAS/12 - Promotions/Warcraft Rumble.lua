@@ -36,7 +36,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 	n(ACHIEVEMENTS, {
 		ach(15344, {	-- "S.A.F.E" Pilot
 			["description"] = "Play Warcraft Rumble on your phone until you defeat Hogger. Restart the App & you receive the pet.",
-			-- ToDO: Use provider?
+			-- TODO: Use provider?
 			["groups"] = {
 				-- #if AFTER 11.2.5
 				i(258481),	-- Gnomelia Gearheart (PET!)
