@@ -36,7 +36,15 @@ do
 			source = sources[1]
 			state = C_HousingCatalog_GetCatalogEntryInfoByItem(source.itemID, true)
 			-- quantity is how many owned
-			state = state and state.quantity > 0 or nil
+			-- hasPlaced is used when the item is owned, but placed in the house (or outside)
+			if state then
+				local sum = state.quantity + state.numPlaced
+				if sum > 0 and sum < 1000 then	-- Sometimes API returns 4294967295
+					-- state is valid, keep it
+				else
+					state = nil
+				end
+			end
 			if state ~= nil then
 				saved[id] = true
 			else
