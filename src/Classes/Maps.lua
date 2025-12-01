@@ -362,6 +362,30 @@ local AreaIDNameMapper = setmetatable({}, {__index = function(t,key)
 		id = id + 1
 	end
 end})
+-- Reporting (backwards ID search) - Do not remove // Darkal
+local AreaIDNameMapperBackwards = setmetatable({}, {__index = function(t,key)
+	local maxID = 25000
+	local id = maxID - 1
+	local keyid = tonumber(key)
+	local name
+	while id > 0 do            -- scan backwards
+		-- ref. https://wago.tools/db2/AreaTable
+		name = C_Map_GetAreaInfo(id)
+		if name then
+			t[name] = id
+		end
+		t[id] = name or UNKNOWN
+		if key == name then
+			-- app.PrintDebug("Found AreaID",id,"for",key)
+			return id
+		end
+		if keyid == id then
+			-- app.PrintDebug("Found Name",name,"for",id)
+			return name or UNKNOWN
+		end
+		id = id - 1
+	end
+end})
 local ReportedAreas = {};
 app.AddEventHandler("OnReportReset", function() wipe(ReportedAreas) end)
 local function PrintDiscordInformationForExploration(o, type)
@@ -401,20 +425,20 @@ local function PrintDiscordInformationForExploration(o, type)
 	local luaFormat
 
 	if type == "subzone" then
-		if inInstance then
-			luaFormat = "visit_exploration(%d),\t-- %s"
-			tinsert(info, luaFormat:format(areaID, text))
-		else
+		if position then
 			luaFormat = "visit_exploration(%d,{coord={%.1f,%.1f,%d}}),\t-- %s"
 			tinsert(info, luaFormat:format(areaID, x or 0, y or 0, mapID, text))
+		else
+			luaFormat = "visit_exploration(%d),\t-- %s"
+			tinsert(info, luaFormat:format(areaID, text))
 		end
 	elseif type == "zone" then
-		if inInstance then
-			luaFormat = "map_exploration(%d),\t-- %s"
-			tinsert(info, luaFormat:format(areaID, text))
-		else
+		if position then
 			luaFormat = "map_exploration(%d,{coord={%.1f,%.1f,%d}}),\t-- %s"
 			tinsert(info, luaFormat:format(areaID, x or 0, y or 0, mapID, text))
+		else
+			luaFormat = "map_exploration(%d),\t-- %s"
+			tinsert(info, luaFormat:format(areaID, text))
 		end
 	end
 	tinsert(info, "");
@@ -442,6 +466,10 @@ end
 -- Reporting (all areas remembered in a single report window)
 local ExplorationReportLines = {}
 local function PrintDiscordInformationForAllExplorations(o, type)
+	-- Temporarily disabled reports for users until we have most areas sorted.
+	-- We can't rely on the ID guessing based on the area name when we miss so many still.
+	if true then return end
+
 	if not app.Contributor then return end
 	if not type then return end
 	local areaID = o.explorationID
@@ -556,18 +584,18 @@ local function GetExplorationByZoneOrSubzone(mapID)
 				-- Not in ATT at all
 				if not mappedExploration then
 					foundExploration = app.CreateExploration(expectedAreaID, { mapID = mapID, name = name })
-					PrintDiscordInformationForExploration(foundExploration, type)
+					PrintDiscordInformationForAllExplorations(foundExploration, type)
 				-- In ATT as NYI or Unsorted
 				elseif mappedExploration._missing or app.GetRelativeValue(mappedExploration, "_nyi") then
 					-- Inject some data into the exploration object so we can report about it properly
 					mappedExploration.mapID = mapID
 					mappedExploration.name = name
-					PrintDiscordInformationForExploration(mappedExploration, type)
+					PrintDiscordInformationForAllExplorations(mappedExploration, type)
 					foundExploration = mappedExploration
 				else
 					-- in ATT without coords, likely means it can't be detected in API since it would be populated
 					if C_Map_GetPlayerMapPosition(mapID, "player") and not mappedExploration.coords then
-						PrintDiscordInformationForExploration(mappedExploration, type)
+						PrintDiscordInformationForAllExplorations(mappedExploration, type)
 					end
 					foundExploration = mappedExploration
 				end
@@ -626,7 +654,7 @@ local function CheckExplorationForPlayerPosition()
 		end
 		if not ReportedAreas[areaID] then
 			if #app.SearchForField("explorationID", areaID) < 1 then
-				PrintDiscordInformationForExploration(app.CreateExploration(areaID, { mapID = mapID}));
+				PrintDiscordInformationForAllExplorations(app.CreateExploration(areaID, { mapID = mapID}));
 			end
 		end
 	end
@@ -982,7 +1010,7 @@ local function HarvestExploration()
 								byExplorationID[areaID] = o;
 								local searchResults = app.SearchForField("explorationID", areaID);
 								if #searchResults < 1 or ReportedAreas[areaID] then
-									PrintDiscordInformationForExploration(o);
+									PrintDiscordInformationForAllExplorations(o);
 								end
 								tinsert(searchResults, o);
 							end

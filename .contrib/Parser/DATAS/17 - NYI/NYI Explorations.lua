@@ -24,6 +24,59 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		exploration(4690),	-- Thunder Peak
 		exploration(4644),	-- Orendil's Retreat
 	}),
+	expansion(EXPANSION.BFA, {
+		-- 8.0.1
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+			-- Zone: Tiragarde Sound
+			exploration(8846),	-- Tiragarde Redoubt
+			exploration(8917),	-- Wellington
+			exploration(9611),	-- Hook Point Market
+			exploration(9831),	-- The Siren's Daughter
+			exploration(9832),	-- The Valorous Rose
+			exploration(9996),	-- The Drunk Tank
+			exploration(10026),	-- Tiragarde Sound
+			exploration(10027),	-- The Wayward Cask
+
+			-- Zone: Drustvar
+			exploration(8847),	-- The Gravewood
+			exploration(9034),	-- Fallhaven Ranch
+			exploration(9177),	-- Rimestone's Lair
+			exploration(9491),	-- The Salty Spitoon
+			exploration(9997),	-- The Lost Scroll
+			exploration(9998),	-- The Sunken Keg
+
+			-- Zone: Stormsong Valley
+			exploration(9464),	-- Windswept Cove
+			exploration(9594),	-- The Abyssal Melody
+			exploration(9770),	-- Ai'twen's Cave
+			exploration(10005),	-- Raimond's Laboratory
+
+		})),
+
+		-- 8.1.0
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDown({ ["timeline"] = { CREATED_8_1_0 } }, {
+			-- Zone: Tiragarde Sound
+			exploration(10077),	-- Horde Airship
+			exploration(10262),	-- The Strider
+
+			-- Zone: Drustvar
+			exploration(10078),	-- Horde Airship
+			exploration(10343),	-- Iwen's Sanctum
+
+			-- Zone: Stormsong Valley
+			exploration(10079),	-- Horde Airship
+			exploration(10265),	-- Shrine of the Storm (copy)
+		})),
+
+		-- 8.1.5
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_8_1_5 } }, {
+			-- Zone: Tiragarde Sound
+			exploration(10426),	-- The Swift Vengeance
+
+			-- Zone: Stormsong Valley
+			exploration(10454),	-- Tiffin's Melody
+		})),
+	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, patch(0,1), bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
