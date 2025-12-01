@@ -396,12 +396,16 @@ root(ROOTS.Promotions, {
 			i(232303, {	-- Unbound Banner of the Algari (TOY!)(PVE)
 				["description"] = "Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",
 				["timeline"] = { ADDED_11_2_5 },
-			--	["u"] = REMOVED_FROM_GAME,	-- 27th November 2025
+				["u"] = REMOVED_FROM_GAME,	-- 27th November 2025
 			}),
 			i(257518, {	-- Lil' Ashlee (PET!)
 				["description"] = "Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",
 				["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed December 8th, 2025
 				["u"] = REAL_MONEY,
+			}),
+			i(235343, {	-- Topsy Turvy Joker's Mask
+				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { ADDED_11_2_7, "removed 11.2.7.99999" },	-- Removed December 30th, 2025
 			}),
 		--	i(500001, {	-- The PVE/PVP Banner temporary item -- TEMPLATE
 		--		["sourceID"] = 500001,

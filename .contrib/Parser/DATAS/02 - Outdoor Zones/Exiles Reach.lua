@@ -302,7 +302,14 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(174916),	-- Withering Hemlock (QI!)
+						o_repeated({	-- Withering Hemlock
+							["coord"] = { 45.1, 54.8, EXILES_REACH },
+							["groups"] = {
+								i(174916),	-- Withering Hemlock (QI!)
+								o(341951),	-- Withering Hemlock
+								o(351426),	-- Withering Hemlock
+							},
+						}),
 					},
 				}),
 				q(58933, {	-- The Deadliest of Poisons [A]
@@ -317,7 +324,14 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(174916),	-- Withering Hemlock (QI!)
+						o_repeated({	-- Withering Hemlock
+							["coord"] = { 45.1, 54.8, EXILES_REACH },
+							["groups"] = {
+								i(174916),	-- Withering Hemlock (QI!)
+								o(341951),	-- Withering Hemlock
+								o(351426),	-- Withering Hemlock
+							},
+						}),
 					},
 				}),
 				q(59968, {	-- The Deadliest of Poisons [H]

@@ -684,7 +684,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Topsy Turvy Mask Set ------
 				i(235340),	-- Topsy Turvy Fool's Mask
-				i(235343),	-- Topsy Turvy Joker's Mask
 
 				-- Old Delve Sets
 				------ Myconic Set ------
