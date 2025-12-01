@@ -2601,7 +2601,7 @@ That price is lots and lots of cheese.","|cFFFFD200Achievement: |rThe Gift of Ch
 "Many arachnids are left to fend for themselves after hatching. It's a common topic in spider therapy.","|cFFFFD200Pet Battle: |rAzj-Kahet, City of Threads, Hallowfall, Shadowvein Extraction Site, The Ringing Deeps|n",4456,222066,445486,5688871,7,26,4,6,7,0
 "Tough burrowing claws make it easy for arachnids to get around subterranean areas. But it's a boring life.","|cFFFFD200Pet Battle: |rAzj-Kahet, City of Threads, Hallowfall, Shadowvein Extraction Site, The Ringing Deeps",4457,222071,445450,5688871,7,26,4,6,7,0
 "Graduation from spiderling to fully-fledged spider monster is far off for this young arachnoid.","|cFFFFD200Drop:|r |n",4458,222069,445488,5688871,7,34,0,6,7,0
-"Finally caught a blind cave skipper. He flopped helplessly for twenty minutes and then let out a burp. Great companion he is!",,4459,222081,445493,5763493,8,2,-1,6,7,0
+"Finally caught a blind cave skipper. He flopped helplessly for twenty minutes and then let out a burp. Great companion he is!",,4459,222081,445493,5763493,8,82,-1,6,7,0
 "These silkie chickens were taken aboard airships by those departing the Arathi Empire in pursuit of their emperor's prophetic vision.","|cFFFFD200Pet Battle: |rHallowfall",4460,222195,445803,2027866,2,26,4,6,7,0
 "Free-range chickens are difficult to take care of in Hallowfall, what with all the shadow monsters and fish people.","|cFFFFD200Pet Battle: |rHallowfall",4461,222194,445815,2027866,2,26,4,6,7,0
 "Someday, his heavy footfalls and ferocious roar will match his name. Until then, Thunder remains a bolt of cuteness and loyalty.","|cFFFFD200Quest: |rTale of Tails|n|cFFFFD200Zone: |rHallowfall",4462,222203,445822,5648285,7,18,1,6,7,0
@@ -2888,7 +2888,6 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "An especially aggressive snooter. Its unpleasant disposition makes it an outcast among other snooters.","|cFFFFD200Trading Post|r",4855,246662,1241760,6993783,7,16466,11,6,7,0
 "Of all snooters, this one has the scruffiest and warmest fur. It is a very friendly snooter but use extreme caution when petting it.","|cFFFFD200Trading Post|r",4856,246663,1241763,6993782,7,16466,11,6,7,0
 "If you have milk tea, keep an eye on it. Brewthieves love to pop out of the shadows and steal tea. Even worse, once in paw they love to show off their newly acquired beverage.",|cFFFFD200Promotion|r,4858,246983,1242265,6310500,0,16466,7,6,7,0
-"Razeshi C. is known for her understanding tempermant, measured responses and a love for gossip. The C. stands for ""Class act.""",|cFFFFD200Promotion|r|n,4975,257493,1271843,5788264,0,16466,7,6,7,0
 "Zo'ya is cunning and beautiful, both highly desirable traits among purrkins. Despite being the culprit behind many mishaps, her warm glow ensures she is forgiven for any transgression.","|cFFFFD200Faction: |rManaforge Vandals|n|cFFFFD200Renown: |r8|n|cFFFFD200Location: |rShadow Point",4859,247463,1243337,3742946,7,2,1,6,7,0
 "While purrkin have a knack for getting lost, none have ever been so talented as this one. Purrfectly unbothered however, this curious creature can thrive in any situation.","|cFFFFD200Source: |r???
 |cFFFFD200Zone: |rTazavesh, the Veiled Market",4860,247465,1243343,3742947,7,2,-1,6,7,0
@@ -2899,7 +2898,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Oh snap!! Lizard!","|cFFFFD200Zone: |rZul'Aman",4878,249818,1250369,7116030,7,154,10,6,7,0
 "You'd think with all those spikes, it might pop its own pustule sac. But no! Its pustule sac is actually really sturdy! Pustule sac!","|cFFFFD200Zone: |rVoidstorm",4879,249819,1250360,7119300,7,154,10,6,7,0
 "Lurking beneath dark waters with needle sharp teeth. You can bite and drink their blood too, though. It's allowed.","|cFFFFD200Zone: |rZul'Aman",4880,249820,1250368,7119390,7,154,10,6,7,0
-Snaplizard,,4881,249821,1250367,7119302,7,186,-1,6,7,0
+"A gnashing maw of teeth and tongues. This beast bears an uncanny resemblance to Azerothian leeches.","|cFFFFD200Treasure: |rQuivering Egg|n|cFFFFD200Zone: |rVoidstorm",4881,258803,1277679,538440,7,146,0,6,7,0
 "Distinct from the sporebats that reside on Draenor and Outland. It's just a coincidence.","|cFFFFD200Zone: |rHarandar",4882,249822,1250366,132197,2,154,10,6,7,0
 "These dragonhawks developed in the wilds of Zul'aman, where their green feathers and molt help them hide from hunters and predators.","|cFFFFD200Zone: |rZul'Aman",4883,249824,1250365,6739636,2,154,10,6,7,0
 "He's scheming. Smirking. Don't trust him.","|cFFFFD200Zone: |rZul'Aman",4884,249825,1250363,4632788,7,154,10,6,7,0
@@ -2918,12 +2917,13 @@ Snaplizard,,4881,249821,1250367,7119302,7,186,-1,6,7,0
 "Winter festivities seem to follow Eve wherever she goes.","|cFFFFD200Trading Post|r",4899,251821,1254212,7277045,8,16466,11,6,7,0
 "Once native to the northern regions of the Eastern Kingdoms, this species of seal is now only common in Northrend after being hunted for food and leather during the Second War.","|cFFFFD200Trading Post|r",4900,251822,1254213,7277045,8,16466,11,6,7,0
 "This young fledgeling is ready and eager to begin training.","|cFFFFD200World Event:|r WoW Remix: Legion",4901,251889,1254381,7197225,2,16466,6,6,7,0
-"[DNT] Hungry Baby Amazard has been caught one too many times attempting to steal the catch of the day.","|cFFFFD200Vendor: |rDeepdiver Je'ju|n|cFFFFD200Zone: |rZul'Aman|n|cFFFFD200Cost: |r300|Hcurrency:3373|h|TInterface\ICONS\UI_PlunderCoins.BLP:0|t|h",4905,253355,1258786,7116032,4,146,2,6,7,0
-"[DNT] Egg treasure.",,4906,253399,1258975,7210234,4,146,-1,6,7,0
+"[DNT] Hungry Baby Amazard has been caught one too many times attempting to steal the catch of the day.","|cFFFFD200Vendor: |rDeepdiver Je'ju
+|cFFFFD200Zone: |rZul'Aman
+|cFFFFD200Cost: |r300|Hcurrency:3373|h|TInterface\ICONS\UI_PlunderCoins.BLP:0|t|h",4905,253355,1258786,7116032,4,146,2,6,7,0
+"Hatched from a long-forgotten egg, this scruffy little eagle has decided you're its new flock, whether you're ready or not.","|cFFFFD200Zone: |rZul'Aman",4906,253399,1258975,7210234,4,146,0,6,7,0
 "No one knows how Lil' Coalee got his name. Was it his black heart? Was it his love for a warm fire? Was it simply that one of his parents were Big Coalee. Asking him yields no answers, only rage.","|cFFFFD200Promotion|r ",4907,254356,1261676,4891621,5,16466,9,6,7,0
 "Lil' Ashlee quietly bides her time waiting for a power vacuum. Once in power Lil' Ashlee will bring fun, merriment and fire to all!","|cFFFFD200Promotion|r ",4908,254359,1261687,4891622,5,16466,9,6,7,0
 "Like his father, Do speaks little but is a friend to almost everyone except those who harm innocents.","|cFFFFD200Achievement: |rMidnight Safari",4910,254689,1262925,2205238,7,82,5,6,7,0
-"Sometimes when the void's call is faint, so smaller, younger voidwalkers heed its call.","PH Quest",4976,257546,1271988,6992623,6,194,1,6,7,0
 "While the markets of Tazavesh are a well-oiled machine, the P.O.S.T. service is a whirlwind of parchment, cartons, and rambunctious livestock. The use of P.O.S.T. assistants to handle dangerous material has saved a great many headaches.","|cFFFFD200Vendor: |rCollector Ta'steld|n|cFFFFD200Zone: |rOribos|n|cFFFFD200Cost: |r2200|Hcurrency:1166|h|TInterface\ICONS\PVECurrency-Justice.blp:0|t|h",4911,253374,1258852,4327618,5,82,2,6,7,0
 "Magisters love to turn on their enchanted brooms before heading off to work, only to find it stuck in a corner of their Silvermoon apartment.","|cFFFFD200Zone: |rSilvermoon City",4912,254885,1263739,7354716,5,154,10,38,7,0
 "Since Amirdrassil's emergence, many faerie dragons have taken refuge in Belameth. But many others continue to call Kalimdor home.","|cFFFFD200Achievement: |rFamily Battler of Kalimdor|n|cFFFFD200Category: |rBattle",4913,254979,1263911,5840606,1,210,5,6,7,0
@@ -2937,29 +2937,33 @@ Snaplizard,,4881,249821,1250367,7119302,7,186,-1,6,7,0
 "This potadpole is grateful for your assistance after having been exposed to the Lightboom.","|cFFFFD200Quest:|r OK Bloomer|n",4946,255921,1266590,7132152,8,210,1,6,7,0
 "Assistant Botanist Leafy is an expert at identifying edible plants... which is all of them.","|cFFFFD200Quest:|r Re-Hydra-ted|n",4947,256014,1266770,7152802,6,210,1,6,7,0
 "After being rudely stuffed into a gourd in a vain effort to treat a Lightbloom infestation, this sporebat's just grateful to be out.","|cFFFFD200Treasure: |rImpenatrably Sealed Gourd|n|cFFFFD200Zone: |rHarandar",4948,256059,1266834,7233369,2,210,0,6,7,0
-"While it didn't make a good test subject, perhaps it will make a good companion.","|cFFFFD200Vendor: |rConstruct V'anore|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r123|Hcurrency:3392|h|TInterface\ICONS\INV_10_ElementalCombinedFoozles_Blood.BLP:0|t|h",4950,256107,1267050,7126994,7,18,2,6,7,0
+"While it didn't make a good test subject, perhaps it will make a good companion.","|cFFFFD200Quest:|r [TBD]|n",4950,256107,1267050,7126994,7,18,1,6,7,0
 "What a happy snapling!","|cFFFFD200Profession:|r Fishing|n",4951,256201,1267090,7116030,7,154,3,6,7,0
 "Evolving in the Voidstorm has really made its smaller inhabitants significantly more aggressive.",[TBD],4952,256271,1268696,7119299,7,138,2,6,7,0
-"""In this house we don't lay spores in people's ears when they sleep, no matter how funny their face is when they wake up.""","PH Delves",4953,256264,1268686,7233370,2,210,0,6,7,0
-"Ziorg'pharon, Emissary of the Cosmic Unknown, Ender of All That Is, Was, and Will Ever Be, or Zigy, as his friends call him, is physically incapable of harming a fly.","PH Delves",4954,256276,1268698,6992624,6,210,0,6,7,0
-"It doesn't bite. It rips and tears.","PH Delves",4955,256272,1268693,1723704,7,210,0,6,7,0
-"Waddles around in a constant cloud of spores. Harmless? Hard to say--we're still waiting on the research team... or what's left of them.","PH Delves",4956,256237,1267219,5791588,6,210,0,6,7,0
-"Nothing is known for certain, though some believe it calls the night sky its home.","PH Delves",4957,256282,1268718,7439212,5,210,0,6,7,0
-"Truly evil, undeniably powerful... but above all, spectacularly lazy.","PH Delves",4958,256265,1268687,5041293,6,210,0,6,7,0
-"In the wrong place at the wrong time.","PH Delves",4959,256278,1268704,2399292,7,210,0,6,7,0
-"A curious species found only within treasure chests. Harmless enough, unless you happen to be wearing jewelry.","PH Delves",4960,256238,1267222,1618563,7,210,0,6,7,0
-"Very unhappy. Always goes for the jugular. Kind of cute.","PH Delves",4961,256269,1268690,7119302,7,210,0,6,7,0
+"""In this house we don't lay spores in people's ears when they sleep, no matter how funny their face is when they wake up.""","|cFFFFD200Drop:|r Delve's End of Run Rewards",4953,256264,1268686,7233370,2,210,0,6,7,0
+"Ziorg'pharon, Emissary of the Cosmic Unknown, Ender of All That Is, Was, and Will Ever Be, or Zigy, as his friends call him, is physically incapable of harming a fly.","|cFFFFD200Drop:|r Delve's End of Run Rewards",4954,256276,1268698,6992624,6,210,0,6,7,0
+"It doesn't bite. It rips and tears.","|cFFFFD200Vendor: |rNaleidea Rivergleam|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r10000|Hcurrency:2803|h|TInterface\ICONS\INV_Misc_ElvenCoins.blp:0|t|h",4955,256272,1268693,1723704,7,210,2,6,7,0
+"Waddles around in a constant cloud of spores. Harmless? Hard to say--we're still waiting on the research team... or what's left of them.","|cFFFFD200Drop:|r Delve's End of Run Rewards",4956,256237,1267219,5791588,6,210,0,6,7,0
+"Nothing is known for certain, though some believe it calls the night sky its home.","|cFFFFD200Drop:|r Delve's End of Run Rewards",4957,256282,1268718,7439212,5,210,0,6,7,0
+"Truly evil, undeniably powerful... but above all, spectacularly lazy.","|cFFFFD200Drop:|r Nullaeus",4958,256265,1268687,5041293,6,210,0,6,7,0
+"In the wrong place at the wrong time.","|cFFFFD200Drop:|r Delve's End of Run Rewards",4959,256278,1268704,2399292,7,210,0,6,7,0
+"A curious species found only within treasure chests. Harmless enough, unless you happen to be wearing jewelry.","|cFFFFD200Drop:|r Delve's End of Run Rewards",4960,256238,1267222,1618563,7,210,0,6,7,0
+"Very unhappy. Always goes for the jugular. Kind of cute.","|cFFFFD200Drop:|r Delve's End of Run Rewards|n",4961,256269,1268690,7119302,7,210,0,6,7,0
 ,"|cFFFFD200Trading Post|r",4963,256559,1269346,7467152,6,16466,11,6,7,0
 ,"|cFFFFD200Trading Post|r",4964,256560,1269350,7467153,6,16466,11,6,7,0
 ,"|cFFFFD200Trading Post|r",4965,256565,1269356,7467154,6,16466,11,6,7,0
 ,"|cFFFFD200Trading Post|r",4966,256566,1269358,7467155,6,16466,11,6,7,0
-"A living anomaly and Kasreth's most treasured experiment, this pink-furred creature scampers joyfully through conduits and pipes.","|cFFFFD200Achievement: |rYou Conduit!",4967,256567,1269361,2205238,7,82,5,6,7,0
+"A living anomaly and Kasreth's most treasured experiment, this pink-furred creature scampers joyfully through conduits and pipes.","|cFFFFD200Zone: |rNexus-Point Xenas",4967,256567,1269361,2205238,7,82,5,6,7,0
 "Luma knows all kinds of tricks such as ""sit,"" ""stay,"" and ""steal.""","|cFFFFD200Quest: |rThief at Bark
 |cFFFFD200Zone: |rEversong Woods",4971,256759,1269889,6891875,7,210,1,41,7,0
-"This bold elfhound was born to chase mana wyrms, and mana wyrm-shaped objects... Like unattended sausages.",,4972,256985,1270553,6891874,7,210,-1,41,7,0
+"This bold elfhound was born to chase mana wyrms, and mana wyrm-shaped objects... Like unattended sausages.","|cFFFFD200Treasure: |rHalf-Digested Viscera|n|cFFFFD200Zone: |rVoidstorm",4972,256985,1270553,6891874,7,210,0,41,7,0
 "Dali, bored of his days basking in the comfort of the Solaarian Sunbath, seeks a world of new inspiration. You are that inspiration, and he will bring color to your world.","|cFFFFD200Treasure: |rBurbling Paint Pot|n|cFFFFD200Zone: |rEversong Woods",4974,246696,1241794,2399292,8,210,0,42,7,0
+"Razeshi C. is known for her understanding tempermant, measured responses and a love for gossip. The C. stands for ""Class act.""",|cFFFFD200Promotion|r|n,4975,257493,1271843,5788264,0,16466,7,6,7,0
+"Sometimes the void's call is faint, so smaller, younger voidwalkers heed its call.","PH Quest",4976,257546,1271988,6992623,6,194,1,6,7,0
 "Born near the funeral pyre in Solemn Valley, this young eagle's burgundy feathers still carry the scent of smoke and ash. A quiet reminder that even in loss, something new can take wing.","|cFFFFD200Quest:|r A Quiet Farewell|n|cFFFFD200Zone: |rZul'Aman",4977,257616,1272165,7210236,2,146,1,6,7,0
-PH,,4981,257695,1272755,6703753,4,210,-1,6,7,0
-,,4982,257857,1272852,7390433,7,146,-1,6,7,0
+"He is a lover, not a battler.",,4981,257695,1272755,6703753,4,210,-1,6,7,0
+"A rare black-furred Eversong lynx kitten, its fur faintly thrumming with arcane energy, bred by Silvermoon's Magisters as both companion and conduit of magical study.","|cFFFFD200Vendor: |rApprentice Diell|n|cFFFFD200Zone: |rEversong Woods|n|cFFFFD200Cost: |r200|Hcurrency:3379|h|TInterface\ICONS\INV_Elemental_Primal_Mana.blp:0|t|h",4982,257857,1272852,7390433,7,146,2,6,7,0
 "Formed by the latent energies from the Singularity Anchor this Behemoth will be loyal till the end.",[TBD],4983,257908,1273131,7126992,7,18,0,6,7,0
-PH,,4984,257802,1272858,3007472,4,210,-1,6,7,0
+"She hates head pats, hence the spiky armor.",,4984,257802,1272858,3007472,4,210,-1,6,7,0
+"Taking after her mother, Dame Bloodshed, the Princess is armed with the sharpest of claws and the furriest of ears.","|cFFFFD200Drop: |rDame Bloodshed|n|cFFFFD200Zone: |rEversong Woods",4985,258281,1276430,7390435,7,2,0,6,7,0
+"Curious and inquisitive, this starry-eyed whelpling has big dreams and a wish to explore every world in the cosmos.","|cFFFFD200Promotion|r ",4903,252859,1257069,7317259,1,16466,7,6,7,0
