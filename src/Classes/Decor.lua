@@ -15,6 +15,11 @@ end
 local C_HousingCatalog_GetCatalogEntryInfoByItem
 	= C_HousingCatalog.GetCatalogEntryInfoByItem
 
+-- TODO: test other APIs
+-- /dump C_HousingCatalog.GetDecorMaxOwnedCount(2112) -> 0
+-- /dump C_HousingCatalog.GetDecorTotalOwnedCount(2112) -> 0,0
+-- /dump C_HousingCatalog.GetDecorTotalOwnedCount() -> 0,0
+
 local pairs
  	= pairs
 
