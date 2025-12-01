@@ -1555,14 +1555,10 @@ function app:GetDataCache()
 		end
 
 		-- World Drops
-		if app.Categories.WorldDrops then
-			tinsert(g, {
-				text = TRANSMOG_SOURCE_4,
-				icon = app.asset("Category_WorldDrops"),
-				g = app.Categories.WorldDrops,
-				isWorldDropCategory = true
-			});
-		end
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
+			g = app.Categories.WorldDrops or {},
+			isWorldDropCategory = true
+		}));
 
 		-- Crafted Items
 		if app.Categories.Craftables then
