@@ -1035,6 +1035,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 55991 },	-- An End to Beginnings [A]
 				["provider"] = { "n", 238913 },	-- Kalecgos
 				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
 				--["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1042,6 +1043,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 87547 },	-- What's Your Specialty?
 				["provider"] = { "n", 238913 },	-- Kalecgos
 				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
 				--["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1049,6 +1051,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 87555 },	-- Home Is Where the Hearth Is
 				["provider"] = { "n", 238913 },	-- Kalecgos
 				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
 				--["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1058,6 +1061,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 59985 },	-- An End to Beginnings [H]
 				["provider"] = { "n", 244496 },	-- Kalecgos
 				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
 				--["classes"] = { SHAMAN },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1065,6 +1069,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 90840 },	-- What's Your Specialty?
 				["provider"] = { "n", 244496 },	-- Kalecgos
 				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
 				--["classes"] = { SHAMAN },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1072,6 +1077,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 90842 },	-- Home Is Where the Hearth Is
 				["provider"] = { "n", 244496 },	-- Kalecgos
 				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
 				--["classes"] = { SHAMAN },
 				["races"] = HORDE_ONLY,
 			}),
