@@ -7180,7 +7180,7 @@ r(19104,{awp=100107,coords={{65.6,37.6,1452},{69.6,38.2,1452}},crs={7438},itemID
 r(18436,{b=1,crs={7437},itemID=14493,learnedAt=285,q=3,requireSkill=197,rwp=40003}),
 r(17577,{crs={7437},itemID=13497,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 r(17575,{awp=100107,coords={{61.8,68.6,1452},{64.2,69,1452}},crs={7428},itemID=13495,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
-r(19830,{crs={7437},itemID=16054,learnedAt=300,q=2,requireSkill=202,rwp=40003}),
+r(19830,{coords={{23.4,35.4,1452},{25.4,35.4,1452}},crs={7437},itemID=16054,learnedAt=300,q=2,requireSkill=202,rwp=40003}),
 i(12432,{crs={7443,7444,7445,7446},providers={{"i",12384}},q=1,rwp=40003}),
 i(18665,{c={5},crs={7461,7463},f=53,lvl=60,q=4,rwp=40003}),
 i(12433,{crs={7450,7451,7452,7453,7454},providers={{"i",12384}},q=1,rwp=40003}),
@@ -8282,7 +8282,8 @@ q(7644,{c={2},coords={{37.6,32.6,1453}},lvl=60,maps={234},providers={{"i",18792}
 q(344,{coords={{74.2,7.5,1453}},lvl=20,qgs={1440},r=2,rwp=40003,sourceQuests={343}}),
 q(395,{coords={{75.8,59.8,1453}},lvl=16,qgs={332},r=2,rwp=40003,sourceQuests={394}}),
 q(1705,{c={1},coords={{51.6,12.2,1453}},lvl=20,maps={1431},qgs={1416},r=2,rwp=40003,sourceQuests={1700},g={
-qo(1,{coords={{74.2,77.8,1431}},crs={205,206,533,898,920,6170},providers={{"i",6844},{"i",6845}},rwp=40003})}}),
+qo(1,{coords={{74.2,77.8,1431}},crs={205,206,533,898,920},providers={{"i",6844}},rwp=40003}),
+qo(2,{coords={{74.2,77.8,1431}},crs={6170},providers={{"i",6845}},rwp=40003})}}),
 q(7642,{c={2},coords={{51.6,12.2,1453}},cost={{"i",12360,6},{"i",14047,40},{"i",8836,10},{"i",13180,5},{"g",1500000}},lvl=60,maps={317},qgs={1416},r=2,rwp=40003,sourceQuests={7641}}),
 q(5634,{altQuests={5635,5636,5637,5638,5639,5640},c={5},coords={{47.2,52.2,1426},{43.4,65.6,1429},{55.6,56.8,1438},{20.8,50.2,1453},{38.8,26.6,1453},{26.4,7.6,1455},{39.6,80.8,1457}},lvl=10,qgs={376,377,1226,3600,11397,11401,11406},races={1,3},rwp=30002,g={
 r(13908,{rank=1,rwp=30002})}}),
@@ -10397,7 +10398,7 @@ s(117656,2018,{awp=100107,coords={{16.8,37.2,1431},{17.6,33.6,1431}},crs={1110},
 s(117068,880,{awp=100107,coords={{20.8,46.8,1431},{80.6,59.6,1431}},crs={202},f=28,lvl=18,q=2,rwp=40003}),
 s(118687,3360,{b=1,crs={412},f=1,lvl=25,q=1,rwp=40003}),
 s(117081,899,{awp=100107,coords={{18.8,27.8,1431},{28.8,29.6,1431}},crs={217},f=20,lvl=14,q=2,rwp=40003}),
-s(117094,920,{awp=100107,coords={{23.6,71.6,1431},{49.8,77.8,1431}},crs={215,909},f=23,lvl=20,q=2,rwp=40003})})}}),
+s(117094,920,{coords={{23.6,71.6,1431},{49.8,77.8,1431}},crs={215,909},f=23,lvl=20,q=2,rwp=40003})})}}),
 m(1423,{icon=236760,lore="Eastern Plaguelands is heavily-ravaged from the Scourge. The Argent Dawn has made some progress after The Lich King's defeat, but the zone is still full of Undead. Players explore Eastern Plaguelands primarily through escorting a Worgen merchant, Fiona, and her band of merry travelers she picks up along the way. The Plaguelands are the site for some of the most gripping storylines, including the Battle for Darrowshire and the fate of the Stratholme residents.",g={
 h(-12,{
 ach(771,{
@@ -13261,6 +13262,8 @@ n(8281,{coords={{37,54.2,1427},{49.6,49.6,1427},{51.6,46.4,1427},{54.8,45.6,1427
 n(8280,{coords={{50.6,61.4,1427},{55.6,58.8,1427},{58.4,52,1427},{63.6,51.2,1427},{66,37.4,1427},{67,39.6,1427}}}),
 n(8283,{coords={{41.6,35.6,1427},{41.6,44.8,1427},{41.8,24,1427},{45.6,38.8,1427},{46.6,25.2,1427}}}),
 n(8278,{coords={{29.2,60.8,1427},{30,50.8,1427}}})}),
+h(-58,{
+n(14624,{coords={{38.8,28.5,1427}}})}),
 h(-63,{
 i(18944,{crs={9318},q=1}),
 r(18412,{awp=80200,coords={{19.4,36.6,1427},{25.4,25.4,1427}},crs={5861},itemID=14476,learnedAt=270,q=2,requireSkill=197,rwp=40003}),
@@ -15510,7 +15513,7 @@ s(145097,35359,{awp=20001,b=1,c={11},f=5,lvl=70,minReputation={935,9000},q=3,u=1
 s(145072,35330,{awp=20001,b=1,c={9},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
 s(145087,35345,{awp=20001,b=1,c={8},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
 r(33999,{awp=20001,b=1,itemID=28273,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
-r(27926,{awp=20001,b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333,rwp=60002,u=17}),
+r(27926,{awp=20001,b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333,u=17}),
 r(34010,{awp=20001,b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},q=2,rwp=50004,u=17}),
 r(17632,{awp=20001,b=1,itemID=13517,learnedAt=300,minReputation={935,21000},q=1,requireSkill=171,u=17}),

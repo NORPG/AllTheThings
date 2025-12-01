@@ -112,8 +112,8 @@ ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}}),
 x(2,{requireSkill=185,g={
 ach(124,{awp=20001,requireSkill=185,u=17}),
-ach(1801,{awp=30002,providers={{"i",34832},{"s",45695}},requireSkill=185,u=30}),
-ach(877,{awp=30002,providers={{"i",33924},{"s",43779}},requireSkill=185,u=30}),
+ach(1801,{awp=30002,providers={{"i",34832}},requireSkill=185,u=30}),
+ach(877,{awp=30002,providers={{"i",33924}},requireSkill=185,u=30}),
 ach(1800,{awp=30002,requireSkill=185,u=30,g={
 crit(6780,{achID=1800,awp=30002,id=1,providers={{"i",31675}},u=30}),
 crit(6770,{achID=1800,awp=30002,id=1,providers={{"i",27690}},u=30}),
@@ -293,7 +293,7 @@ x(2,{requireSkill=129,rwp=80001,u=17,g={
 ach(134,{awp=20005,requireSkill=129,rwp=80001,u=17})}}),
 x(3,{requireSkill=129,rwp=80001,u=30,g={
 ach(135,{awp=30003,requireSkill=129,rwp=80001,u=30}),
-ach(137,{awp=30003,providers={{"i",34722},{"s",45546}},requireSkill=129,rwp=80001,u=30}),
+ach(137,{awp=30003,providers={{"i",34722}},requireSkill=129,rwp=80001,u=30}),
 ach(141,{awp=30003,providers={{"i",34722}},requireSkill=129,rwp=80001,u=30})}}),
 x(4,{requireSkill=129,rwp=80001}),
 x(5,{requireSkill=129,rwp=80001}),
@@ -310,7 +310,7 @@ ach(1559,{awp=30002,rank=250,requireSkill=356}),
 ach(1560,{awp=30002,rank=500,requireSkill=356}),
 ach(1561,{awp=30002,rank=1000,requireSkill=356}),
 ach(1243,{awp=30002,providers={{"s",43308}},requireSkill=356}),
-ach(878,{awp=30002,providers={{"i",6295},{"i",13913},{"i",13905},{"i",6364},{"i",13887},{"i",13880},{"i",13917},{"i",44703},{"i",19808},{"i",6360}},requireSkill=356,g={
+ach(878,{awp=30002,providers={{"i",6295},{"i",6360},{"i",6364},{"i",13880},{"i",13887},{"i",13905},{"i",13913},{"i",13917},{"i",19808},{"i",44703}},requireSkill=356,g={
 crit(1839,{achID=878,awp=30002,id=1,providers={{"i",6295}}}),
 crit(1843,{achID=878,awp=30002,id=1,providers={{"i",6364}}}),
 crit(1841,{achID=878,awp=30002,id=1,providers={{"i",13905}}}),

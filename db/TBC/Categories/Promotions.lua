@@ -37,6 +37,12 @@ q(63450,{altQuests={63448},awp=20501,coords={{28,75.8,1434}},crs={5111,6740,6741
 mnt(348459,{awp=20501,itemID=184865,lvl=30,rwp=30400,u=3}),
 toy(184871,{awp=20501,rwp=30400,u=3}),
 toy(38233,{awp=20501,b=1,q=3,rwp=30400,u=3})}})}})}}),
+h(-694,{awp=20505,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",rwp=30002,u=3,g={
+mnt(1266345,{awp=20505,itemID=260438,rwp=30002,u=3}),
+toy(260622,{awp=20505,rwp=30002,u=3}),
+toy(260221,{awp=20505,rwp=30002,u=3}),
+p(4962,{awp=20505,itemID=260433,rwp=30002,u=3}),
+mnt(1266866,{awp=20505,itemID=260759,rwp=30002,u=3})}}),
 h(-525,{awp=20504,rwp=40001,u=3,g={
 h(-522,{awp=20504,description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,rwp=40001,u=3,g={
 p(4234,{awp=20504,itemID=198665,petTypeID=9,rwp=40001,spellID=384796,u=3}),

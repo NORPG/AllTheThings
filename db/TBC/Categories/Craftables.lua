@@ -743,7 +743,7 @@ flt(23,{
 s(121170,6360,{description="Can be caught in open water in the given zones.",f=23,lvl=20,maps={1424,1437,1440},q=2})}),
 flt(52,{
 i(8350,{description="Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",f=52,lvl=10,q=2})}),
-flt(1,{collectible=false,g={
+flt(1,{
 s(121104,6292,{collectible=false,q=1}),
 s(121106,6294,{collectible=false,q=1}),
 s(121107,6295,{collectible=false,q=1}),
@@ -767,7 +767,7 @@ s(126043,13887,{collectible=false,q=1}),
 s(126070,13914,{collectible=false,q=1}),
 s(126071,13915,{collectible=false,q=1}),
 s(126072,13916,{collectible=false,q=1}),
-s(126073,13917,{collectible=false,q=1})}}),
+s(126073,13917,{collectible=false,q=1})}),
 flt(50,{
 i(13907,{q=1}),
 i(13908,{q=1}),

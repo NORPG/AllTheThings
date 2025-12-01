@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,cat,crit,flt,h,i,prof,q,qo,r,settings,sp,title,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateExpansion;
+local ach,ah,cat,crit,flt,h,i,p,prof,q,qo,r,s,settings,sp,title,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateExpansion;
 _.Categories.Professions={
 h(-12,{
 x(1,{
@@ -186,7 +186,7 @@ crit(6756,{achID=1784,awp=30002,id=1,r=1,rwp=50004,u=30})}}),
 ach(1797,{awp=30002,rank=75,requireSkill=185,u=30}),
 ach(1796,{awp=30002,rank=50,requireSkill=185,u=30}),
 ach(1795,{awp=30002,rank=25,requireSkill=185,u=30}),
-ach(1998,{awp=30002,cost={{"c",81,1},{"i",43016,1}},providers={{"i",57757},{"i",57142}},rank=1,requireSkill=185,u=30}),
+ach(1998,{awp=30002,cost={{"c",81,1},{"i",43016,1}},providers={{"i",57142},{"i",57757}},rank=1,requireSkill=185,u=30}),
 ach(1999,{awp=30002,cost={{"c",81,10},{"i",43016,10}},rank=10,requireSkill=185,u=30}),
 ach(2000,{awp=30002,cost={{"c",81,25},{"i",43016,25}},rank=25,requireSkill=185,u=30}),
 ach(2001,{awp=30002,cost={{"c",81,50},{"i",43016,50}},rank=50,requireSkill=185,u=30}),
@@ -197,10 +197,10 @@ ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}}),
 x(2,{requireSkill=185,g={
 ach(124,{awp=20001,requireSkill=185,u=17}),
-ach(1801,{awp=30002,providers={{"i",34832},{"s",45695}},requireSkill=185,u=30,g={
+ach(1801,{awp=30002,providers={{"i",34832}},requireSkill=185,u=30,g={
 crit(6762,{achID=1563,awp=30002,id=1,r=2,u=30}),
 crit(6762,{achID=1784,awp=30002,id=1,r=1,rwp=50004,u=30})}}),
-ach(877,{awp=30002,providers={{"i",33924},{"s",43779}},requireSkill=185,u=30,g={
+ach(877,{awp=30002,providers={{"i",33924}},requireSkill=185,u=30,g={
 crit(5764,{achID=1563,awp=30002,id=1,r=2,u=30}),
 crit(5764,{achID=1784,awp=30002,id=1,r=1,rwp=50004,u=30})}}),
 ach(1800,{awp=30002,requireSkill=185,u=30,g={
@@ -437,7 +437,7 @@ ach(134,{awp=20005,requireSkill=129,rwp=80001,u=17})}}),
 x(3,{requireSkill=129,rwp=80001,u=30,g={
 ach(135,{awp=30003,requireSkill=129,rwp=80001,u=30,g={
 crit(846,{achID=730,awp=30003,id=1,rwp=80001})}}),
-ach(137,{awp=30003,providers={{"i",34722},{"s",45546}},requireSkill=129,rwp=80001,u=30}),
+ach(137,{awp=30003,providers={{"i",34722}},requireSkill=129,rwp=80001,u=30}),
 ach(141,{awp=30003,providers={{"i",34722},{"i",53049},{"i",53051}},requireSkill=129,rwp=80001,u=30})}}),
 x(4,{requireSkill=129,rwp=80001,g={
 ach(4918,{awp=40003,requireSkill=129,rwp=80001,g={
@@ -459,7 +459,7 @@ ach(1561,{awp=30002,rank=1000,requireSkill=356,g={
 crit(5762,{achID=1516,awp=30003,id=1,u=30})}}),
 ach(1243,{awp=30002,providers={{"s",43308}},requireSkill=356,g={
 crit(5673,{achID=1516,awp=30003,id=1,u=30})}}),
-ach(878,{awp=30002,providers={{"i",6295},{"i",13913},{"i",13905},{"i",6364},{"i",13887},{"i",13880},{"i",13917},{"i",44703},{"i",19808},{"i",6360}},requireSkill=356,g={
+ach(878,{awp=30002,providers={{"i",6295},{"i",6360},{"i",6364},{"i",13880},{"i",13887},{"i",13905},{"i",13913},{"i",13917},{"i",19808},{"i",44703}},requireSkill=356,g={
 crit(1839,{achID=878,awp=30002,id=1,providers={{"i",6295}}}),
 crit(1843,{achID=878,awp=30002,id=1,providers={{"i",6364}}}),
 crit(1841,{achID=878,awp=30002,id=1,providers={{"i",13905}}}),
@@ -571,7 +571,14 @@ x(4,{requireSkill=356,g={
 ach(4917,{awp=40003,requireSkill=356,g={
 crit(63616,{achID=4915,awp=40003,id=1,rwp=80001})}}),
 ach(5851,{awp=40200,r=2,requireSkill=356}),
-ach(5852,{awp=40200,r=1,requireSkill=356,rwp=50004})}})}),
+ach(5852,{awp=40200,r=1,requireSkill=356,rwp=50004}),
+ah(67414,{awp=40001,description="Fishing Daily Quest Reward",providers={{"i",67414},{"i",112623}},requireSkill=356,type="i",g={
+p(211,{awp=40003,b=1,itemID=44983,npcID=33226,petTypeID=9,q=3,requireSkill=356,spellID=62561}),
+s(143883,33820,{awp=40003,b=1,f=4,q=3,requireSkill=356}),
+s(176031,45991,{awp=40003,b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
+s(176032,45992,{awp=40003,b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
+i(67410,{awp=40003,requireSkill=356}),
+i(67388,{awp=40003,f=51,requireSkill=356})}})}})}),
 prof(182,{
 h(-26,{awp=30002,requireSkill=182,rwp=60002,g={
 r(81708,{awp=40003,learnedAt=1,rank=1,requireSkill=182,rwp=60002}),

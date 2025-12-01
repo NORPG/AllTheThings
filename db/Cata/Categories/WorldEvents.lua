@@ -47,8 +47,8 @@ q(12752,{awp=30002,lvl=65,races={5},rwp=30003,u=2}),
 q(12782,{awp=30002,lvl=65,races={10},rwp=30003,u=2}),
 q(12784,{awp=30002,lvl=65,races={6},rwp=30003,u=2}),
 q(12811,{awp=30002,lvl=65,races={2},rwp=30003,u=2}),
-q(9304,{lvl=45,providers={{"i",22975},{"i",22948}},rwp=30003,u=2}),
-q(9301,{lvl=45,providers={{"i",22970},{"i",22930}},rwp=30003,u=2}),
+q(9304,{lvl=45,providers={{"i",22948},{"i",22975}},rwp=30003,u=2}),
+q(9301,{lvl=45,providers={{"i",22930},{"i",22970}},rwp=30003,u=2}),
 q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},providers={{"i",22950}},qgs={16531},r=1,rwp=30003,u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2}),
 i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
@@ -66,7 +66,7 @@ q(9264,{coords={{33.1,59.9,1456}},isYearly=1,maps={1412},qgs={16490},r=1,rwp=300
 qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},rwp=30003,u=2})}}),
 q(12771,{awp=30002,lvl=65,maps={1455},providers={{"i",39698}},qgs={29087},races={3},rwp=30003,sourceQuests={12753},u=2}),
 q(12809,{awp=30002,lvl=65,maps={1455},providers={{"i",39698}},qgs={29087},races={7},rwp=30003,sourceQuests={12808},u=2}),
-q(9295,{lvl=45,providers={{"i",22977},{"i",22932}},rwp=30003,u=2}),
+q(9295,{lvl=45,providers={{"i",22932},{"i",22977}},rwp=30003,u=2}),
 q(9154,{coords={{53.1,35,1426},{55,62,1453},{64.1,75,1453},{51.7,83.6,1454},{53.1,73.6,1454},{35.3,68.7,1455},{32.9,60.1,1456},{43.5,53.2,1456},{64.5,44.2,1457},{77.3,42.8,1457},{49.5,32.1,1458},{65.9,21.4,1458}},isYearly=1,lvl=50,providers={{"i",22595}},qgs={16241,16255},rwp=30003,u=2}),
 q(9321,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13446,{f=55,lvl=45,q=1,rwp=20001,u=2})}}),
@@ -76,11 +76,11 @@ q(9337,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}}
 i(13444,{f=55,lvl=49,q=1,rwp=20001,u=2})}}),
 q(9320,{coords={{80.8,59.6,1423},{52.5,73.7,1454},{43.7,52.6,1456},{49.9,29.4,1458}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13444,{f=55,lvl=49,q=1,rwp=20001,u=2})}}),
-q(9302,{lvl=45,providers={{"i",22973},{"i",22944}},rwp=30003,u=2}),
-q(9299,{lvl=45,providers={{"i",22972},{"i",22945}},rwp=30003,u=2}),
+q(9302,{lvl=45,providers={{"i",22944},{"i",22973}},rwp=30003,u=2}),
+q(9299,{lvl=45,providers={{"i",22945},{"i",22972}},rwp=30003,u=2}),
 q(12785,{awp=30002,lvl=65,maps={1454},providers={{"i",40482}},qgs={28318},races={8},rwp=30003,sourceQuests={12783},u=2}),
 q(12812,{awp=30002,lvl=65,maps={1454},providers={{"i",40482}},qgs={28318},races={2},rwp=30003,sourceQuests={12811},u=2}),
-q(9300,{lvl=45,providers={{"i",22974},{"i",22946}},rwp=30003,u=2}),
+q(9300,{lvl=45,providers={{"i",22946},{"i",22974}},rwp=30003,u=2}),
 q(9085,{coords={{81.1,60.6,1423}},isYearly=1,lvl=50,qgs={16361},rwp=30003,u=2,g={
 qo(1,{providers={{"n",16143}},rwp=30003,u=2}),
 i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2}),
@@ -225,15 +225,15 @@ qo(1,{awp=30300,coords={{29.3,65.7,1429}},OnUpdate=function(t)if settings:GetUno
 q(25343,{awp=30300,coords={{48.2,16.9,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={39827},r=1,rwp=40003,sourceQuests={25380},u=2,g={
 qo(1,{awp=30300,coords={{49.6,16.4,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729}},rwp=40003,u=2})}}),
 q(25414,{awp=30300,coords={{75.9,44.2,1453}},maps={1429},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={39508},r=2,rwp=40003,sourceQuests={25282},u=2,g={
-qo(1,{awp=30300,coords={{30.7,64.9,1429}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39967},{"i",52729}},rwp=40003,u=2}),
-qo(2,{awp=30300,coords={{31.1,67.5,1429}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39968},{"i",52729}},rwp=40003,u=2}),
-qo(3,{awp=30300,coords={{31.8,66.1,1429}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39969},{"i",52729}},rwp=40003,u=2}),
-qo(4,{awp=30300,coords={{30.3,64.35,1429}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39970},{"i",52729}},rwp=40003,u=2})}}),
+qo(1,{awp=30300,coords={{30.7,64.9,1429}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729},{"n",39967}},rwp=40003,u=2}),
+qo(2,{awp=30300,coords={{31.1,67.5,1429}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729},{"n",39968}},rwp=40003,u=2}),
+qo(3,{awp=30300,coords={{31.8,66.1,1429}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729},{"n",39969}},rwp=40003,u=2}),
+qo(4,{awp=30300,coords={{30.3,64.35,1429}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729},{"n",39970}},rwp=40003,u=2})}}),
 q(25293,{awp=30300,coords={{52.9,72.4,1454}},maps={1411},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={39448},r=1,rwp=40003,sourceQuests={25254},u=2,g={
-qo(1,{awp=30300,coords={{48,17,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39757},{"i",52729}},rwp=40003,u=2}),
-qo(2,{awp=30300,coords={{48,17,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39758},{"i",52729}},rwp=40003,u=2}),
-qo(3,{awp=30300,coords={{48,16,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39760},{"i",52729}},rwp=40003,u=2}),
-qo(4,{awp=30300,coords={{49,17,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39763},{"i",52729}},rwp=40003,u=2})}}),
+qo(1,{awp=30300,coords={{48,17,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729},{"n",39757}},rwp=40003,u=2}),
+qo(2,{awp=30300,coords={{48,17,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729},{"n",39758}},rwp=40003,u=2}),
+qo(3,{awp=30300,coords={{48,16,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729},{"n",39760}},rwp=40003,u=2}),
+qo(4,{awp=30300,coords={{49,17,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",52729},{"n",39763}},rwp=40003,u=2})}}),
 q(27570,{awp=30300,coords={{52.2,73.2,1454}},isBreadcrumb=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={39283},r=1,rwp=40003,sourceQuests={27308},u=2}),
 q(27540,{awp=30300,coords={{62.5,75.5,1453}},isBreadcrumb=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={45702},r=2,rwp=40003,sourceQuests={27307},u=2}),
 q(25418,{awp=30300,coords={{75.9,44.2,1453}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={39508},r=2,rwp=40003,sourceQuests={25417},u=2,g={
@@ -259,10 +259,10 @@ q(27473,{awp=30300,description="Activated with phase 2 of the Elemental Unrest."
 q(27566,{awp=30300,description="Activated with phase 3 of the Elemental Unrest.",maps={1951},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={45341},r=2,rwp=40003,u=2}),
 q(27572,{awp=30300,coords={{52.2,73.2,1454}},description="Activated with phase 3 of the Elemental Unrest.",maps={1951},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={39283},r=1,rwp=40003,u=2}),
 q(27749,{awp=30300,coords={{62.2,71.6,1453}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={12481},r=2,rwp=40003,sourceQuests={27741},u=2,g={
-qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",46584},{"i",62541}},rwp=40003,u=2}),
+qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",62541},{"n",46584}},rwp=40003,u=2}),
 qo(2,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",46670}},rwp=40003,u=2})}}),
 q(27802,{awp=30300,coords={{52.9,72.4,1454}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={39448},r=1,rwp=40003,sourceQuests={27801},u=2,g={
-qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",46816},{"i",62541}},rwp=40003,u=2}),
+qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",62541},{"n",46816}},rwp=40003,u=2}),
 qo(2,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",46827}},rwp=40003,u=2})}}),
 q(27767,{awp=30300,coords={{62.2,71.6,1453}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={12481},r=2,rwp=40003,sourceQuests={27749},u=2,g={
 qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",62379},{"n",40098}},rwp=40003,u=2})}}),
@@ -277,10 +277,10 @@ qo(1,{awp=30300,coords={{57.72,47.65,1454}},OnUpdate=function(t)if settings:GetU
 qo(2,{awp=30300,coords={{80.78,35.32,1454}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",62495}},rwp=40003,u=2}),
 qo(3,{awp=30300,coords={{27.63,54.73,1454}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",62495}},rwp=40003,u=2})}}),
 q(27741,{awp=30300,coords={{62.2,71.6,1453}},description="Activated with phase 3 of the Elemental Unrest.",OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={12481},r=2,rwp=40003,u=2,g={
-qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",46489},{"n",37787},{"n",39686},{"n",40125}},rwp=40003,u=2}),
+qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",37787},{"n",39686},{"n",40125},{"n",46489}},rwp=40003,u=2}),
 qo(2,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",62315}},rwp=40003,u=2})}}),
 q(27801,{awp=30300,coords={{52.9,72.4,1454}},description="Activated with phase 3 of the Elemental Unrest.",OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,qgs={39448},r=1,rwp=40003,u=2,g={
-qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",39632},{"n",38067},{"n",39343},{"n",46491}},rwp=40003,u=2}),
+qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"n",38067},{"n",39343},{"n",39632},{"n",46491}},rwp=40003,u=2}),
 qo(2,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,providers={{"i",62493}},rwp=40003,u=2})}})}}),
 n(44822,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,rwp=40003,u=2,g={
 s(179893,53496,{awp=30300,b=1,f=8,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,rwp=40003,u=2}),
@@ -308,7 +308,7 @@ s(179934,54592,{awp=30300,b=1,f=6,lvl=80,OnUpdate=function(t)if settings:GetUnob
 s(179900,53507,{awp=30300,b=1,f=4,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,rwp=40003,u=2})}})}}),
 h(-475,{awp=30300,maps={1426,1455},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,r=2,rwp=40003,u=2,g={
 q(25229,{awp=30300,coords={{69.2,49.2,1455}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,qgs={7937},r=2,rwp=40003,u=2,g={
-qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",39253},{"n",39623},{"i",52566}},r=2,rwp=40003,u=2}),
+qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"i",52566},{"n",39253},{"n",39623}},r=2,rwp=40003,u=2}),
 qo(2,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",39466},{"n",39624}},r=2,rwp=40003,u=2})}}),
 q(25199,{awp=30300,coords={{50.16,48.35,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,qgs={39675},r=2,rwp=40003,sourceQuests={25229},u=2,g={
 qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",39368}},r=2,rwp=40003,u=2}),
@@ -322,13 +322,13 @@ qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.
 qo(2,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",39716}},r=2,rwp=40003,u=2}),
 qo(3,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",39716}},r=2,rwp=40003,u=2})}}),
 q(25393,{awp=30300,coords={{69.2,49.2,1455}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,qgs={7937,39271},r=2,rwp=40003,sourceQuests={25287},u=2,g={
-qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",39901},{"n",39799},{"n",39837}},r=2,rwp=40003,u=2}),
+qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",39799},{"n",39837},{"n",39901}},r=2,rwp=40003,u=2}),
 ach(4786,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,r=2,rwp=40003,u=2}),
 s(179868,53097,{awp=30300,b=1,f=3,lvl=75,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,q=1,r=2,rwp=40003,u=2})}}),
 q(25283,{awp=30300,coords={{49.32,48.27,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,qgs={39678},r=2,rwp=40003,sourceQuests={25212,25295},u=2,g={
-qo(1,{awp=30300,coords={{45.89,49.38,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",1268},{"i",52709}},r=2,rwp=40003,u=2}),
-qo(2,{awp=30300,coords={{49.12,47.95,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",7955},{"i",52709}},r=2,rwp=40003,u=2}),
-qo(3,{awp=30300,coords={{47.34,53.78,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",6119},{"i",52709}},r=2,rwp=40003,u=2})}}),
+qo(1,{awp=30300,coords={{45.89,49.38,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"i",52709},{"n",1268}},r=2,rwp=40003,u=2}),
+qo(2,{awp=30300,coords={{49.12,47.95,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"i",52709},{"n",7955}},r=2,rwp=40003,u=2}),
+qo(3,{awp=30300,coords={{47.34,53.78,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"i",52709},{"n",6119}},r=2,rwp=40003,u=2})}}),
 q(25295,{awp=30300,coords={{50.16,48.35,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,qgs={39675},r=2,rwp=40003,sourceQuests={25289},u=2,g={
 qo(1,{awp=30300,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",39711},{"n",39717}},r=2,rwp=40003,u=2})}}),
 q(25212,{awp=30300,coords={{50.1,47.74,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,qgs={39386},r=2,rwp=40003,sourceQuests={25199},u=2,g={
@@ -338,7 +338,7 @@ toy(54651,{awp=30300,b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(4
 q(25287,{awp=30300,coords={{50.16,48.35,1426}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"i",52731}},qgs={39396,39675},r=2,rwp=40003,sourceQuests={25500},u=2})}}),
 h(-485,{awp=30300,maps={1411},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,r=1,rwp=40003,u=2,g={
 q(25444,{awp=30300,coords={{57.5,72.5,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,qgs={40184},r=1,rwp=40003,u=2,g={
-qo(1,{awp=30300,coords={{57.6,72.5,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",40188},{"i",53510},{"n",40176},{"n",40187}},r=1,rwp=40003,u=2})}}),
+qo(1,{awp=30300,coords={{57.6,72.5,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"i",53510},{"n",40176},{"n",40187},{"n",40188}},r=1,rwp=40003,u=2})}}),
 q(25480,{awp=30300,coords={{57.4,72.7,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,qgs={40391},r=1,rwp=40003,sourceQuests={25470},u=2,g={
 qo(1,{awp=30300,coords={{57,74.14,1411}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,providers={{"n",40352}},r=1,rwp=40003,u=2}),
 toy(54653,{awp=30300,b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3303;t.rwp=40003;end	end,q=3,r=1,rwp=40003,u=2})}}),
@@ -620,12 +620,12 @@ h(-45,{rwp=40003,u=2,g={
 q(8519,{coords={{28.7,89.1,1451}},lvl=60,minReputation={910,0},providers={{"o",180633}},rwp=40003,sourceQuests={8305},u=2}),
 q(8303,{coords={{49.5,36.4,1451}},lvl=60,minReputation={910,0},providers={{"i",20415}},qgs={15180},rwp=40003,sourceQuests={8301},u=2}),
 q(8575,{coords={{57,85.6,1447}},lvl=60,providers={{"i",20949}},qgs={15481},rwp=40003,sourceQuests={8555},u=2}),
-q(8743,{coords={{25.7,90.9,1451}},lvl=60,providers={{"o",180717},{"i",21175}},rwp=40003,sourceQuests={8742},u=2,g={
+q(8743,{coords={{25.7,90.9,1451}},lvl=60,providers={{"i",21175},{"o",180717}},rwp=40003,sourceQuests={8742},u=2,g={
 ach(416,{rwp=40003,sourceQuests={8743},u=2}),
 title(33,{awp=20003,rwp=40003,u=2}),
 mnt(26656,{b=1,itemID=21176,lvl=40,q=5,rwp=40003,u=2})}}),
 q(8606,{coords={{65.2,18.6,1446}},lvl=60,maps={1452},qgs={11811},rwp=40003,sourceQuests={8598},u=2,g={
-qo(1,{coords={{65,72,1452}},providers={{"n",15554},{"i",21041},{"i",21039},{"i",21040}},rwp=40003,u=2}),
+qo(1,{coords={{65,72,1452}},providers={{"i",21039},{"i",21040},{"i",21041},{"n",15554}},rwp=40003,u=2}),
 i(21042,{b=1,q=1,rwp=40003,u=2,g={
 i(21037,{b=1,q=1,rwp=40003,u=2}),
 i(21041,{b=1,q=1,rwp=40003,u=2}),
@@ -645,7 +645,7 @@ s(131967,21530,{b=1,f=6,lvl=60,q=4,rwp=40003,u=2})}}),
 q(8584,{coords={{65.2,18.6,1446}},lvl=60,qgs={11811},rwp=40003,sourceQuests={8576},u=2}),
 q(8288,{coords={{49.5,36.4,1451}},lvl=60,maps={287},qgs={15180},rwp=40003,sourceQuests={8286},u=2,g={
 qo(1,{crs={12017},providers={{"i",20383}},rwp=40003,u=2})}}),
-q(8598,{coords={{59.4,96,1446}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"o",180652},{"i",21029}},rwp=40003,sourceQuests={8599},u=2}),
+q(8598,{coords={{59.4,96,1446}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"i",21029},{"o",180652}},rwp=40003,sourceQuests={8599},u=2}),
 q(8587,{coords={{52.6,28.1,1446}},lvl=60,providers={{"i",21028}},qgs={8125},rwp=40003,sourceQuests={8586},u=2}),
 q(8578,{coords={{46.2,86.7,1421}},lvl=60,maps={232},minReputation={910,0},providers={{"o",180642}},rwp=40003,sourceQuests={8577},u=2,g={
 qo(1,{providers={{"i",20951}},rwp=40003,u=2})}}),

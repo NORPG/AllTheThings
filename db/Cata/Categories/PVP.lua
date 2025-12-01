@@ -65,8 +65,8 @@ ach(614,{awp=30002,pvp=1,r=2,g={
 mnt(60118,{awp=30002,b=1,itemID=44223,lvl=40,pvp=1,q=4,r=2})}}),
 ach(619,{awp=30002,pvp=1,r=1,g={
 mnt(60119,{awp=30002,b=1,itemID=44224,lvl=40,pvp=1,q=4,r=1})}}),
-ach(701,{providers={{"i",60794},{"i",60800},{"i",70603},{"i",72412},{"i",72414},{"i",70606},{"i",70390},{"i",70391},{"i",70392},{"i",70604},{"i",69861},{"i",64790},{"i",64791},{"i",64793},{"i",72411},{"i",18863},{"i",18862},{"i",18856},{"i",18858},{"i",28237},{"i",30349},{"i",30351},{"i",28235},{"i",37864},{"i",18864},{"i",29593},{"i",18859},{"i",18854},{"i",28236},{"i",28234},{"i",28238},{"i",38589},{"i",42123},{"i",40476},{"i",18857},{"i",30350},{"i",30348},{"i",51377},{"i",42124}},pvp=1,r=2,u=12}),
-ach(700,{providers={{"i",60801},{"i",60807},{"i",60806},{"i",72410},{"i",72415},{"i",70607},{"i",64789},{"i",64792},{"i",64794},{"i",70602},{"i",70605},{"i",70393},{"i",70394},{"i",70395},{"i",69862},{"i",72413},{"i",18845},{"i",29592},{"i",18852},{"i",18850},{"i",28239},{"i",38588},{"i",28240},{"i",18849},{"i",30344},{"i",37865},{"i",28242},{"i",18853},{"i",30343},{"i",18851},{"i",30345},{"i",28241},{"i",28243},{"i",30346},{"i",18834},{"i",40477},{"i",42122},{"i",18846},{"i",51378},{"i",42126}},pvp=1,r=1,u=12}),
+ach(701,{providers={{"i",18854},{"i",18856},{"i",18857},{"i",18858},{"i",18859},{"i",18862},{"i",18863},{"i",18864},{"i",28234},{"i",28235},{"i",28236},{"i",28237},{"i",28238},{"i",29593},{"i",30348},{"i",30349},{"i",30350},{"i",30351},{"i",37864},{"i",38589},{"i",40476},{"i",42123},{"i",42124},{"i",51377},{"i",60794},{"i",60800},{"i",64790},{"i",64791},{"i",64793},{"i",69861},{"i",70390},{"i",70391},{"i",70392},{"i",70603},{"i",70604},{"i",70606},{"i",72411},{"i",72412},{"i",72414}},pvp=1,r=2,u=12}),
+ach(700,{providers={{"i",18834},{"i",18845},{"i",18846},{"i",18849},{"i",18850},{"i",18851},{"i",18852},{"i",18853},{"i",28239},{"i",28240},{"i",28241},{"i",28242},{"i",28243},{"i",29592},{"i",30343},{"i",30344},{"i",30345},{"i",30346},{"i",37865},{"i",38588},{"i",40477},{"i",42122},{"i",42126},{"i",51378},{"i",60801},{"i",60806},{"i",60807},{"i",64789},{"i",64792},{"i",64794},{"i",69862},{"i",70393},{"i",70394},{"i",70395},{"i",70602},{"i",70605},{"i",70607},{"i",72410},{"i",72413},{"i",72415}},pvp=1,r=1,u=12}),
 ach(446,{awp=10400,pvp=1,r=1,rwp=20001,u=2,g={
 title(26,{awp=10400,pvp=1,r=1,rwp=20001,u=2})}}),
 ach(433,{awp=10400,pvp=1,r=2,rwp=20001,u=2,g={
@@ -262,9 +262,9 @@ crit(424,{achID=582,awp=30002,pvp=1}),
 crit(425,{achID=582,awp=30002,pvp=1}),
 crit(3400,{achID=1167,awp=30002,id=1,pvp=1}),
 crit(3400,{achID=1168,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
-ach(706,{providers={{"i",19029},{"s",23509}},pvp=1,r=1,g={
+ach(706,{providers={{"i",19029}},pvp=1,r=1,g={
 crit(3413,{achID=1168,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
-ach(707,{providers={{"i",19030},{"s",23510}},pvp=1,r=2,g={
+ach(707,{providers={{"i",19030}},pvp=1,r=2,g={
 crit(3401,{achID=1167,awp=30002,id=1,pvp=1})}}),
 ach(1166,{awp=30002,providers={{"i",18228}},pvp=1,g={
 crit(3403,{achID=1167,awp=30002,id=1,pvp=1}),
@@ -1933,7 +1933,14 @@ s(139219,28873,{awp=20001,b=1,c={11},f=5,lvl=70,pvp=1,q=3,r=1,u=17})}})}})}}),
 h(-247,{awp=20001,pvp=1,u=17,g={
 h(-12,{awp=20001,pvp=1,rwp=20102,u=2,g={
 ach(886,{awp=20001,providers={{"i",30609}},pvp=1,rwp=20102,u=2}),
-mnt(37015,{awp=20001,b=1,description="Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=30609,lvl=70,pvp=1,q=4,rwp=20102,u=2})}}),
+mnt(37015,{awp=20001,b=1,description="Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=30609,lvl=70,pvp=1,q=4,rwp=20102,u=2}),
+ach(15022,{awp=20001,pvp=1,rwp=20102,u=2}),
+ach(15020,{awp=20001,pvp=1,rwp=20102,u=2}),
+ach(15019,{awp=20001,pvp=1,rwp=20102,u=2,g={
+mnt(37015,{awp=20001,b=1,itemID=30609,lvl=70,pvp=1,q=4,rwp=20102,u=2})}}),
+ach(15018,{awp=20001,pvp=1,rwp=20102,u=2,g={
+title(41,{awp=20001,pvp=1,rwp=20102,u=2})}}),
+ach(15021,{awp=20001,pvp=1,rwp=20102,u=2})}}),
 h(-296,{awp=20001,pvp=1,u=17,g={
 h(-101,{awp=20001,pvp=1,u=17,g={
 s(138648,28302,{awp=20001,b=1,f=23,lvl=70,pvp=1,q=4,u=17}),
@@ -2196,7 +2203,12 @@ h(-12,{awp=20102,pvp=1,rwp=20300,u=2,g={
 ach(418,{awp=20102,pvp=1,rwp=20300,u=2,g={
 title(37,{awp=20102,pvp=1,rwp=20300,u=2})}}),
 ach(887,{awp=20102,providers={{"i",34092}},pvp=1,rwp=20300,u=2}),
-mnt(44744,{awp=20102,b=1,description="Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",itemID=34092,lvl=70,pvp=1,q=4,rwp=20300,u=2})}}),
+mnt(44744,{awp=20102,b=1,description="Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",itemID=34092,lvl=70,pvp=1,q=4,rwp=20300,u=2}),
+ach(15210,{awp=20102,pvp=1,rwp=20300,u=2}),
+ach(15208,{awp=20102,pvp=1,rwp=20300,u=2}),
+ach(15199,{awp=20102,pvp=1,rwp=20300,u=2,g={
+mnt(44744,{awp=20102,b=1,itemID=34092,lvl=70,pvp=1,q=4,rwp=20300,u=2})}}),
+ach(15209,{awp=20102,pvp=1,rwp=20300,u=2})}}),
 h(-296,{awp=20102,pvp=1,u=18,g={
 h(-101,{awp=20102,pvp=1,u=18,g={
 s(143602,33313,{awp=20102,b=1,f=8,lvl=70,pvp=1,q=4,u=18}),
@@ -2392,7 +2404,12 @@ h(-12,{awp=20300,pvp=1,rwp=20403,u=2,g={
 ach(419,{awp=20300,pvp=1,rwp=20403,u=2,g={
 title(40,{awp=20300,pvp=1,rwp=20403,u=2})}}),
 ach(888,{awp=20300,providers={{"i",37676}},pvp=1,rwp=20403,u=2}),
-mnt(49193,{awp=20300,b=1,description="Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",itemID=37676,lvl=70,pvp=1,q=4,rwp=20403,u=2})}}),
+mnt(49193,{awp=20300,b=1,description="Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",itemID=37676,lvl=70,pvp=1,q=4,rwp=20403,u=2}),
+ach(15207,{awp=20300,pvp=1,rwp=20403,u=2}),
+ach(15205,{awp=20300,pvp=1,rwp=20403,u=2}),
+ach(15204,{awp=20300,pvp=1,rwp=20403,u=2,g={
+mnt(49193,{awp=20300,b=1,itemID=37676,lvl=70,pvp=1,q=4,rwp=20403,u=2})}}),
+ach(15206,{awp=20300,pvp=1,rwp=20403,u=2})}}),
 h(-296,{awp=20300,pvp=1,u=19,g={
 h(-101,{awp=20300,pvp=1,u=19,g={
 s(143735,33661,{awp=20300,b=1,f=8,lvl=70,pvp=1,q=4,u=19}),
@@ -2608,7 +2625,12 @@ h(-12,{awp=20403,pvp=1,rwp=30002,u=2,g={
 ach(420,{awp=20403,pvp=1,rwp=30002,u=2,g={
 title(49,{awp=20403,pvp=1,rwp=30002,u=2})}}),
 ach(2316,{awp=20403,providers={{"i",43516}},pvp=1,rwp=30002,u=2}),
-mnt(58615,{awp=20403,b=1,description="Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",itemID=43516,lvl=70,pvp=1,q=4,rwp=30002,u=2})}}),
+mnt(58615,{awp=20403,b=1,description="Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",itemID=43516,lvl=70,pvp=1,q=4,rwp=30002,u=2}),
+ach(15203,{awp=20403,pvp=1,rwp=30002,u=2}),
+ach(15201,{awp=20403,pvp=1,rwp=30002,u=2}),
+ach(15200,{awp=20403,pvp=1,rwp=30002,u=2,g={
+mnt(58615,{awp=20403,b=1,itemID=43516,lvl=70,pvp=1,q=4,rwp=30002,u=2})}}),
+ach(15202,{awp=20403,pvp=1,rwp=30002,u=2})}}),
 h(-296,{awp=20403,pvp=1,u=21,g={
 h(-101,{awp=20403,pvp=1,u=21,g={
 s(144753,34986,{awp=20403,b=1,f=8,lvl=70,pvp=1,q=4,u=21}),
@@ -2842,7 +2864,12 @@ h(-12,{awp=30002,pvp=1,rwp=30100,u=2,g={
 ach(3336,{awp=30002,pvp=1,rwp=30100,u=2,g={
 title(56,{awp=30002,pvp=1,rwp=30100,u=2})}}),
 ach(3096,{awp=30002,providers={{"i",46708}},pvp=1,rwp=30100,u=2}),
-mnt(64927,{awp=30002,b=1,description="Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=46708,lvl=70,pvp=1,q=4,rwp=30100,u=2})}}),
+mnt(64927,{awp=30002,b=1,description="Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=46708,lvl=70,pvp=1,q=4,rwp=30100,u=2}),
+ach(16316,{awp=30002,pvp=1,rwp=30100,u=2}),
+ach(16313,{awp=30002,pvp=1,rwp=30100,u=2}),
+ach(16315,{awp=30002,pvp=1,rwp=30100,u=2}),
+ach(16314,{awp=30002,pvp=1,rwp=30100,u=2,g={
+mnt(64927,{awp=30002,b=1,itemID=46708,lvl=70,pvp=1,q=4,rwp=30100,u=2})}})}}),
 h(-299,{awp=30002,pvp=1,u=30,g={
 h(-101,{awp=30002,pvp=1,u=30,g={
 i(42444,{awp=30002,b=1,f=36,lvl=80,pvp=1,q=3,rwp=50004,u=30}),
@@ -3346,7 +3373,12 @@ h(-12,{awp=30100,pvp=1,rwp=30200,u=2,g={
 ach(3436,{awp=30100,pvp=1,rwp=30200,u=2,g={
 title(132,{awp=30100,pvp=1,rwp=30200,u=2})}}),
 ach(3756,{awp=30100,providers={{"i",46171}},pvp=1,rwp=30200,u=2}),
-mnt(65439,{awp=30100,b=1,description="Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",itemID=46171,lvl=70,pvp=1,q=4,rwp=30200,u=2})}}),
+mnt(65439,{awp=30100,b=1,description="Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",itemID=46171,lvl=70,pvp=1,q=4,rwp=30200,u=2}),
+ach(17418,{awp=30100,pvp=1,rwp=30200,u=2}),
+ach(17415,{awp=30100,pvp=1,rwp=30200,u=2}),
+ach(17417,{awp=30100,pvp=1,rwp=30200,u=2}),
+ach(17416,{awp=30100,pvp=1,rwp=30200,u=2,g={
+mnt(65439,{awp=30100,b=1,itemID=46171,lvl=70,pvp=1,q=4,rwp=30200,u=2})}})}}),
 h(-296,{awp=30100,pvp=1,u=31,g={
 h(-101,{awp=30100,pvp=1,u=31,g={
 s(174391,42565,{awp=30100,b=1,f=8,lvl=80,pvp=1,q=4,u=31}),
@@ -3578,7 +3610,12 @@ h(-12,{awp=30200,pvp=1,rwp=30302,u=2,g={
 ach(3758,{awp=30200,pvp=1,rwp=30302,u=2,g={
 title(134,{awp=30200,pvp=1,rwp=30302,u=2})}}),
 ach(3757,{awp=30200,providers={{"i",47840}},pvp=1,rwp=30302,u=2}),
-mnt(67336,{awp=30200,b=1,description="Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",itemID=47840,lvl=70,pvp=1,q=4,rwp=30302,u=2})}}),
+mnt(67336,{awp=30200,b=1,description="Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",itemID=47840,lvl=70,pvp=1,q=4,rwp=30302,u=2}),
+ach(18547,{awp=30200,pvp=1,rwp=30302,u=2}),
+ach(18544,{awp=30200,pvp=1,rwp=30302,u=2}),
+ach(18546,{awp=30200,pvp=1,rwp=30302,u=2}),
+ach(18545,{awp=30200,pvp=1,rwp=30302,u=2,g={
+mnt(67336,{awp=30200,b=1,itemID=47840,lvl=70,pvp=1,q=4,rwp=30302,u=2})}})}}),
 h(-296,{awp=30200,pvp=1,u=32,g={
 h(-101,{awp=30200,pvp=1,u=32,g={
 s(174392,42566,{awp=30200,b=1,f=8,lvl=80,pvp=1,q=4,u=32}),
@@ -3819,7 +3856,12 @@ h(-12,{awp=30302,pvp=1,rwp=40001,u=2,g={
 ach(4599,{awp=30302,pvp=1,rwp=40001,u=2,g={
 title(142,{awp=30302,pvp=1,rwp=40001,u=2})}}),
 ach(4600,{awp=30302,providers={{"i",50435}},pvp=1,rwp=40001,u=2}),
-mnt(71810,{awp=30302,b=1,description="Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",itemID=50435,lvl=70,pvp=1,q=4,rwp=40001,u=2})}}),
+mnt(71810,{awp=30302,b=1,description="Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",itemID=50435,lvl=70,pvp=1,q=4,rwp=40001,u=2}),
+ach(18548,{awp=30302,pvp=1,rwp=40001,u=2}),
+ach(18549,{awp=30302,pvp=1,rwp=40001,u=2}),
+ach(18550,{awp=30302,pvp=1,rwp=40001,u=2}),
+ach(18551,{awp=30302,pvp=1,rwp=40001,u=2,g={
+mnt(71810,{awp=30302,b=1,itemID=50435,lvl=70,pvp=1,q=4,rwp=40001,u=2})}})}}),
 h(-296,{awp=30302,pvp=1,u=33,g={
 h(-101,{awp=30302,pvp=1,u=33,g={
 s(202605,51452,{awp=30302,b=1,f=8,lvl=80,pvp=1,q=4,u=33}),
@@ -4472,6 +4514,12 @@ s(216116,77927,{b=1,c={1},f=7,lvl=60,pvp=1,q=4,r=1,u=1}),
 s(216112,77923,{b=1,c={1},f=7,lvl=60,pvp=1,q=4,r=1,u=1})}})}})}}),
 h(-256,{pvp=1,u=40,g={
 h(-12,{pvp=1,u=40,g={
+ach(40971,{awp=40003,pvp=1,rwp=40200,u=2}),
+ach(40968,{awp=40003,pvp=1,rwp=40200,u=2}),
+ach(40970,{awp=40003,pvp=1,rwp=40200,u=2}),
+ach(41336,{awp=40003,pvp=1,rwp=40200,u=2}),
+ach(40969,{awp=40003,pvp=1,rwp=40200,u=2,g={
+mnt(101282,{awp=40003,b=1,itemID=71339,lvl=70,pvp=1,q=4,rwp=40200,u=2})}}),
 ach(5344,{awp=40003,pvp=1,r=2,rwp=40200,u=2}),
 ach(5358,{awp=40003,pvp=1,r=1,rwp=40200,u=2}),
 ach(6002,{awp=40003,pvp=1,rwp=40200,u=2,g={
@@ -5037,6 +5085,11 @@ i(67467,{awp=40003,b=1,f=36,lvl=85,OnUpdate=function(t)if settings:GetUnobtainab
 i(67466,{awp=40003,b=1,f=36,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=4,rwp=40200,u=2})}})}})}}),
 h(-257,{pvp=1,u=41,g={
 h(-12,{pvp=1,u=41,g={
+ach(41334,{awp=40200,pvp=1,rwp=40300,u=2}),
+ach(41332,{awp=40200,pvp=1,rwp=40300,u=2}),
+ach(41333,{awp=40200,pvp=1,rwp=40300,u=2}),
+ach(41336,{awp=40200,pvp=1,rwp=40300,u=2,g={
+mnt(101821,{awp=40200,b=1,itemID=71954,lvl=70,pvp=1,q=4,rwp=40300,u=2})}}),
 ach(6316,{awp=40200,pvp=1,r=2,rwp=40300,u=2}),
 ach(6317,{awp=40200,pvp=1,r=1,rwp=40300,u=2}),
 ach(6124,{awp=40200,pvp=1,rwp=40300,u=2,g={

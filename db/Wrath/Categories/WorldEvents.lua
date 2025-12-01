@@ -47,8 +47,8 @@ q(12752,{awp=30002,lvl=65,races={5},rwp=30003,u=2}),
 q(12782,{awp=30002,lvl=65,races={10},rwp=30003,u=2}),
 q(12784,{awp=30002,lvl=65,races={6},rwp=30003,u=2}),
 q(12811,{awp=30002,lvl=65,races={2},rwp=30003,u=2}),
-q(9304,{lvl=45,providers={{"i",22975},{"i",22948}},rwp=30003,u=2}),
-q(9301,{lvl=45,providers={{"i",22970},{"i",22930}},rwp=30003,u=2}),
+q(9304,{lvl=45,providers={{"i",22948},{"i",22975}},rwp=30003,u=2}),
+q(9301,{lvl=45,providers={{"i",22930},{"i",22970}},rwp=30003,u=2}),
 q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},providers={{"i",22950}},qgs={16531},r=1,rwp=30003,u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2}),
 i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
@@ -66,7 +66,7 @@ q(9264,{coords={{33.1,59.9,1456}},isYearly=1,maps={1412},qgs={16490},r=1,rwp=300
 qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},rwp=30003,u=2})}}),
 q(12771,{awp=30002,lvl=65,maps={1455},providers={{"i",39698}},qgs={29087},races={3},rwp=30003,sourceQuests={12753},u=2}),
 q(12809,{awp=30002,lvl=65,maps={1455},providers={{"i",39698}},qgs={29087},races={7},rwp=30003,sourceQuests={12808},u=2}),
-q(9295,{lvl=45,providers={{"i",22977},{"i",22932}},rwp=30003,u=2}),
+q(9295,{lvl=45,providers={{"i",22932},{"i",22977}},rwp=30003,u=2}),
 q(9154,{coords={{53.1,35,1426},{55,62,1453},{64.1,75,1453},{51.7,83.6,1454},{53.1,73.6,1454},{35.3,68.7,1455},{32.9,60.1,1456},{43.5,53.2,1456},{64.5,44.2,1457},{77.3,42.8,1457},{49.5,32.1,1458},{65.9,21.4,1458}},isYearly=1,lvl=50,providers={{"i",22595}},qgs={16241,16255},rwp=30003,u=2}),
 q(9321,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13446,{f=55,lvl=45,q=1,rwp=20001,u=2})}}),
@@ -76,11 +76,11 @@ q(9337,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}}
 i(13444,{f=55,lvl=49,q=1,rwp=20001,u=2})}}),
 q(9320,{coords={{80.8,59.6,1423},{52.5,73.7,1454},{43.7,52.6,1456},{49.9,29.4,1458}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13444,{f=55,lvl=49,q=1,rwp=20001,u=2})}}),
-q(9302,{lvl=45,providers={{"i",22973},{"i",22944}},rwp=30003,u=2}),
-q(9299,{lvl=45,providers={{"i",22972},{"i",22945}},rwp=30003,u=2}),
+q(9302,{lvl=45,providers={{"i",22944},{"i",22973}},rwp=30003,u=2}),
+q(9299,{lvl=45,providers={{"i",22945},{"i",22972}},rwp=30003,u=2}),
 q(12785,{awp=30002,lvl=65,maps={1454},providers={{"i",40482}},qgs={28318},races={8},rwp=30003,sourceQuests={12783},u=2}),
 q(12812,{awp=30002,lvl=65,maps={1454},providers={{"i",40482}},qgs={28318},races={2},rwp=30003,sourceQuests={12811},u=2}),
-q(9300,{lvl=45,providers={{"i",22974},{"i",22946}},rwp=30003,u=2}),
+q(9300,{lvl=45,providers={{"i",22946},{"i",22974}},rwp=30003,u=2}),
 q(9085,{coords={{81.1,60.6,1423}},isYearly=1,lvl=50,qgs={16361},rwp=30003,u=2,g={
 qo(1,{providers={{"n",16143}},rwp=30003,u=2}),
 i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2}),
@@ -448,12 +448,12 @@ h(-45,{rwp=40003,u=15,g={
 q(8519,{coords={{28.7,89.1,1451}},lvl=60,minReputation={910,0},providers={{"o",180633}},rwp=40003,sourceQuests={8305},u=15}),
 q(8303,{coords={{49.5,36.4,1451}},lvl=60,minReputation={910,0},providers={{"i",20415}},qgs={15180},rwp=40003,sourceQuests={8301},u=15}),
 q(8575,{coords={{57,85.6,1447}},lvl=60,providers={{"i",20949}},qgs={15481},rwp=40003,sourceQuests={8555},u=15}),
-q(8743,{coords={{25.7,90.9,1451}},lvl=60,providers={{"o",180717},{"i",21175}},rwp=40003,sourceQuests={8742},u=1502,g={
+q(8743,{coords={{25.7,90.9,1451}},lvl=60,providers={{"i",21175},{"o",180717}},rwp=40003,sourceQuests={8742},u=1502,g={
 ach(416,{rwp=40003,sourceQuests={8743},u=1502}),
 title(33,{awp=20003,rwp=40003,u=1502}),
 mnt(26656,{b=1,itemID=21176,lvl=40,q=5,rwp=40003,u=1502})}}),
 q(8606,{coords={{65.2,18.6,1446}},lvl=60,maps={1452},qgs={11811},rwp=40003,sourceQuests={8598},u=15,g={
-qo(1,{coords={{65,72,1452}},providers={{"n",15554},{"i",21041},{"i",21039},{"i",21040}},rwp=40003,u=15}),
+qo(1,{coords={{65,72,1452}},providers={{"i",21039},{"i",21040},{"i",21041},{"n",15554}},rwp=40003,u=15}),
 i(21042,{b=1,q=1,rwp=40003,u=15,g={
 i(21037,{b=1,q=1,rwp=40003,u=15}),
 i(21041,{b=1,q=1,rwp=40003,u=15}),
@@ -473,7 +473,7 @@ s(131967,21530,{b=1,f=6,lvl=60,q=4,rwp=40003,u=15})}}),
 q(8584,{coords={{65.2,18.6,1446}},lvl=60,qgs={11811},rwp=40003,sourceQuests={8576},u=15}),
 q(8288,{coords={{49.5,36.4,1451}},lvl=60,maps={287},qgs={15180},rwp=40003,sourceQuests={8286},u=15,g={
 qo(1,{crs={12017},providers={{"i",20383}},rwp=40003,u=15})}}),
-q(8598,{coords={{59.4,96,1446}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"o",180652},{"i",21029}},rwp=40003,sourceQuests={8599},u=15}),
+q(8598,{coords={{59.4,96,1446}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"i",21029},{"o",180652}},rwp=40003,sourceQuests={8599},u=15}),
 q(8587,{coords={{52.6,28.1,1446}},lvl=60,providers={{"i",21028}},qgs={8125},rwp=40003,sourceQuests={8586},u=15}),
 q(8578,{coords={{46.2,86.7,1421}},lvl=60,maps={232},minReputation={910,0},providers={{"o",180642}},rwp=40003,sourceQuests={8577},u=15,g={
 qo(1,{providers={{"i",20951}},rwp=40003,u=15})}}),

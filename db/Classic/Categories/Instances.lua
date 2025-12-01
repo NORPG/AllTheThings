@@ -417,9 +417,9 @@ i(18398,{awp=10001,b=1,f=52,q=3,rwp=30008})}}),
 q(6823,{awp=10001,coords={{79.2,73.6,1447}},lvl=55,minReputation={749,9000},qgs={13278},rwp=30008,sourceQuests={6822}}),
 q(7633,{awp=10001,c={3},coords={{47,24.48,1448}},lvl=60,qgs={14524},rwp=40003,sourceQuests={7632}}),
 q(7487,{awp=10100,coords={{54.2,83.3,33}},description="Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",lvl=55,maps={242},qgs={14387},rwp=10300,u=2,g={
-qo(1,{awp=10100,providers={{"o",179553},{"i",18412}},rwp=10300,u=2})}}),
+qo(1,{awp=10100,providers={{"i",18412},{"o",179553}},rwp=10300,u=2})}}),
 q(7848,{awp=10300,coords={{54.2,83.3,35}},description="Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",lvl=55,maps={242},qgs={14387},g={
-qo(1,{awp=10300,providers={{"o",179553},{"i",18412}}})}}),
+qo(1,{awp=10300,providers={{"i",18412},{"o",179553}}})}}),
 q(6821,{awp=10001,coords={{79.2,73.6,1447}},lvl=55,maps={250,251,252,253,254,255},qgs={13278},rwp=30008,sourceQuests={6804,6805},g={
 qo(1,{awp=10001,providers={{"i",17322}},rwp=30008})}}),
 q(6824,{awp=10001,coords={{79.2,73.6,1447}},lvl=55,qgs={13278},rwp=30008,sourceQuests={6823},g={
@@ -1584,7 +1584,7 @@ s(164595,21453,{awp=10900,b=1,f=7,lvl=60,q=4,u=15})}})}}),
 inst(744,{awp=10900,coords={{46.76,7.53,327}},isRaid=1,lore="Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",lvl=50,mapID=320,maps={319,321},savedInstanceID=531,u=15,["zone-text-areaID"]=3428,g={
 h(-12,{awp=10900,u=15,g={
 ach(956,{awp=10900,maps={75,1451},minReputation={910,42000},u=15}),
-ach(424,{awp=10900,providers={{"i",21321},{"s",26054}},u=15})}}),
+ach(424,{awp=10900,providers={{"i",21321}},u=15})}}),
 h(-31,{awp=10900,u=15,g={
 faction(910,{awp=10900,icon=134156,maps={75,1451},u=15})}}),
 h(-45,{awp=10900,u=15,g={
@@ -1946,7 +1946,7 @@ i(21596,{awp=10900,b=1,f=52,lvl=60,q=4,u=15}),
 i(21579,{awp=10900,b=1,f=53,lvl=60,q=4,u=15})}})}}),
 inst(754,{awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},rwp=30002,savedInstanceID=533,sourceQuests={9121},u=16,["zone-text-areaID"]=3456,g={
 ah(22631,{awp=11100,c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},rwp=30002,type="i",u=16,g={
-ach(425,{awp=11100,c={5,8,9,11},providers={{"i",22631},{"i",22589},{"i",22630},{"i",22632}},rwp=30002,u=16}),
+ach(425,{awp=11100,c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}},rwp=30002,u=16}),
 q(9251,{awp=11100,c={5,8,9,11},lvl=60,maps={320},qgs={15192},rwp=30002,sourceQuests={9250},u=16,g={
 qo(1,{awp=11100,providers={{"i",22733}},rwp=30002,u=16}),
 qo(2,{awp=11100,providers={{"i",22734}},rwp=30002,u=16})}}),
@@ -3916,7 +3916,7 @@ s(157700,4197,{b=1,f=4,q=3,rwp=40003}),
 s(158671,6742,{b=1,f=6,filterForRWP=7,q=3,rwp=40003})}}),
 q(6522,{lvl=28,maps={1458},providers={{"i",17008}},r=1,rwp=40003}),
 q(1221,{coords={{62.4,37.6,1413}},lvl=20,qgs={3446},rwp=40003,g={
-qo(1,{crs={4781},providers={{"i",5876},{"o",20920},{"i",5880},{"i",6684}},rwp=40003}),
+qo(1,{crs={4781},providers={{"i",5876},{"i",5880},{"i",6684},{"o",20920}},rwp=40003}),
 qo(2,{coords={{62.3,37.6,1413}},providers={{"i",5880},{"o",21277}},rwp=40003}),
 qo(3,{coords={{62.3,37.6,1413}},providers={{"i",5897},{"o",21530}},rwp=40003}),
 qo(4,{coords={{62.3,37.6,1413}},providers={{"i",6684},{"o",68865}},rwp=40003}),
@@ -3924,7 +3924,7 @@ i(6755,{b=1,q=1,rwp=40003,g={
 i(6756,{b=1,f=113,q=1,rwp=40003})}})}}),
 q(1109,{coords={{49,69.8,1458}},lvl=30,qgs={2055},r=1,rwp=40003,g={
 qo(1,{providers={{"i",5801}},rwp=40003})}}),
-q(1100,{coords={{30,24,1441}},lvl=29,providers={{"i",5791},{"i",5790},{"o",19861}},r=2,rwp=40003}),
+q(1100,{coords={{30,24,1441}},lvl=29,providers={{"i",5790},{"i",5791},{"o",19861}},r=2,rwp=40003}),
 q(1142,{coords={{69.4,67.6,1457}},lvl=25,qgs={4510},r=2,rwp=40003,g={
 qo(1,{description="Drops from any creature in the Dungeon.",providers={{"i",5825}},rwp=40003}),
 s(158676,6751,{b=1,f=3,q=2,rwp=40003}),
@@ -4159,7 +4159,7 @@ crit(8906,{achID=2358,id=1,rwp=40003})}}),
 q(5522,{coords={{65.2,23.8,1428}},lvl=57,providers={{"i",13761}},qgs={10267},rwp=40003,sourceQuests={4735}}),
 q(7667,{awp=10400,c={7},coords={{39.2,48.4,1454}},cost={{"i",18335,1},{"i",12800,1}},lvl=58,qgs={13417},r=1,rwp=40003}),
 q(5463,{coords={{81.7,57.8,1423}},description="Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",lvl=57,maps={317},providers={{"i",13585}},qgs={11036},rwp=40003,sourceQuests={5462}}),
-q(5464,{lvl=57,maps={317},providers={{"o",176631},{"i",13624}},rwp=40003,sourceQuests={5463}}),
+q(5464,{lvl=57,maps={317},providers={{"i",13624},{"o",176631}},rwp=40003,sourceQuests={5463}}),
 q(5538,{coords={{42.66,83.77,1422}},cost={{"i",14628,1},{"g",150000}},lvl=55,qgs={11056},r=2,rwp=40003,sourceQuests={5537}}),
 q(5514,{coords={{83.3,69.2,1420}},cost={{"i",14628,1},{"g",150000}},lvl=55,maps={1422},qgs={11057},r=1,rwp=40003,sourceQuests={964}}),
 q(5529,{coords={{81.47,59.66,1423}},lvl=55,qgs={11035},rwp=40003,g={
@@ -4228,7 +4228,7 @@ s(163031,16716,{crs={10499,10500,11257},f=5,lvl=53,q=3,rwp=40003}),
 s(163029,16714,{crs={10495},f=5,lvl=52,q=3,rwp=40003})}}),
 n(14861,{awp=100105,rwp=50004,g={
 i(13523,{b=1,q=1,rwp=50004})}}),
-n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"o",175564},{"i",13523}},rwp=50004,g={
+n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",13523},{"o",175564}},rwp=50004,g={
 s(161211,14024,{awp=100105,b=1,f=20,lvl=56,q=3,rwp=50004}),
 s(161207,13983,{awp=100105,b=1,f=22,lvl=57,q=3,rwp=50004}),
 i(13960,{awp=100105,b=1,f=51,lvl=56,q=3,rwp=50004}),
@@ -4946,7 +4946,7 @@ i(22444,{q=1,rwp=40003}),
 s(160179,10799,{b=1,f=29,lvl=46,q=3,rwp=40003}),
 s(160180,10800,{b=1,f=5,lvl=47,q=3,rwp=40003}),
 s(160178,10798,{b=1,f=7,lvl=46,q=3,rwp=40003})}})}}),
-h(-367,{providers={{"n",5713},{"n",5715},{"n",5714},{"n",5717},{"n",5712},{"n",5716}},rwp=40003,g={
+h(-367,{providers={{"n",5712},{"n",5713},{"n",5714},{"n",5715},{"n",5716},{"n",5717}},rwp=40003,g={
 s(160170,10783,{b=1,f=5,lvl=47,q=3,rwp=40003}),
 s(160174,10787,{b=1,f=4,lvl=47,q=3,rwp=40003}),
 s(160171,10784,{b=1,f=6,lvl=47,q=3,rwp=40003}),
@@ -5065,8 +5065,8 @@ q(2204,{lvl=37,providers={{"i",7667}},r=2,rwp=40003,sourceQuests={2201},g={
 qo(1,{providers={{"i",7672}},rwp=40003})}}),
 q(2361,{coords={{36.4,3.6,1455}},lvl=37,qgs={6826},r=2,rwp=40003,sourceQuests={2204},g={
 i(7673,{b=1,f=51,q=3,rwp=40003})}}),
-q(2977,{coords={{37.7,81.5,1446}},lvl=45,maps={1455},providers={{"o",142343},{"i",6064}},r=2,rwp=40003,sourceQuests={2954}}),
-q(2967,{coords={{37.7,81.5,1446}},lvl=45,maps={1456},providers={{"o",142343},{"i",6064}},r=1,rwp=40003,sourceQuests={2954}}),
+q(2977,{coords={{37.7,81.5,1446}},lvl=45,maps={1455},providers={{"i",6064},{"o",142343}},r=2,rwp=40003,sourceQuests={2954}}),
+q(2967,{coords={{37.7,81.5,1446}},lvl=45,maps={1456},providers={{"i",6064},{"o",142343}},r=1,rwp=40003,sourceQuests={2954}}),
 q(2946,{coords={{77.2,11.8,1455}},lvl=45,providers={{"i",6064}},qgs={2916},r=2,rwp=40003,sourceQuests={2963}}),
 q(2966,{coords={{75.6,31.2,1456}},lvl=45,providers={{"i",6064}},qgs={5770},r=1,rwp=40003,sourceQuests={2965}}),
 q(2240,{lvl=35,qgs={6906},r=2,rwp=40003,sourceQuests={2398},g={

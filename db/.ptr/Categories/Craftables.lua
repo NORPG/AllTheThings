@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,cat,cq,crit,cs,flt,h,i,ill,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cat,cq,crit,cs,de,flt,h,i,ill,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDecor,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"i",10620},{"i",13463},{"i",13464},{"i",13465},{"i",13466},{"i",13467},{"i",22785},{"i",22786},{"i",22787},{"i",22789},{"i",22790},{"i",22792},{"i",22793},{"i",23424},{"i",23425},{"i",2450},{"i",2452},{"i",2453},{"i",2770},{"i",2771},{"i",2772},{"i",3355},{"i",3356},{"i",3357},{"i",3358},{"i",3369},{"i",36901},{"i",36903},{"i",36904},{"i",36905},{"i",36906},{"i",36907},{"i",36909},{"i",36910},{"i",36912},{"i",37921},{"i",3818},{"i",3819},{"i",3820},{"i",3821},{"i",3858},{"i",39970},{"i",44946},{"i",4625},{"i",67539},{"i",69823},{"i",785},{"i",8831},{"i",8836},{"i",8838},{"i",8839},{"i",8845},{"i",8846},{"n",1328},{"n",16442},{"n",48861},{"n",49519},{"n",49688},{"n",49703},{"n",50248},{"o",123309},{"o",123848},{"o",142140},{"o",142142},{"o",142143},{"o",142144},{"o",142145},{"o",1619},{"o",1620},{"o",1621},{"o",1622},{"o",1623},{"o",1624},{"o",1628},{"o",165658},{"o",1731},{"o",1732},{"o",1733},{"o",1734},{"o",1735},{"o",175404},{"o",176583},{"o",176584},{"o",176586},{"o",176587},{"o",176588},{"o",177388},{"o",180655},{"o",180658},{"o",180662},{"o",180682},{"o",180683},{"o",180685},{"o",180712},{"o",180751},{"o",180901},{"o",181068},{"o",181069},{"o",181270},{"o",181271},{"o",181275},{"o",181277},{"o",181278},{"o",181279},{"o",181280},{"o",181281},{"o",181555},{"o",181556},{"o",181557},{"o",181569},{"o",181570},{"o",182951},{"o",182952},{"o",182953},{"o",182954},{"o",182956},{"o",182957},{"o",182958},{"o",182959},{"o",189973},{"o",189978},{"o",189979},{"o",189980},{"o",189981},{"o",190169},{"o",190170},{"o",190171},{"o",190172},{"o",191019},{"o",191133},{"o",191303},{"o",192046},{"o",192048},{"o",192049},{"o",192050},{"o",192051},{"o",192052},{"o",192053},{"o",192054},{"o",192057},{"o",192059},{"o",202736},{"o",202737},{"o",202738},{"o",202739},{"o",202740},{"o",202741},{"o",202747},{"o",202748},{"o",202749},{"o",202750},{"o",202751},{"o",202752},{"o",202776},{"o",202777},{"o",202778},{"o",202779},{"o",202780},{"o",2040},{"o",2041},{"o",2042},{"o",2043},{"o",2044},{"o",2045},{"o",2046},{"o",2047},{"o",206085},{"o",208311},{"o",216761},{"o",216764},{"o",2866},{"o",324},{"o",375234},{"o",375235},{"o",375238},{"o",375239},{"o",375240},{"o",375242},{"o",375243},{"o",375244},{"o",375245},{"o",375246},{"o",381196},{"o",381197},{"o",381198},{"o",381199},{"o",381200},{"o",381201},{"o",381202},{"o",381203},{"o",381204},{"o",381205},{"o",381210},{"o",381211},{"o",381212},{"o",381213},{"o",381214},{"o",381515},{"o",381516},{"o",381517},{"o",381518},{"o",381519},{"o",390137},{"o",390138},{"o",390139},{"o",390140},{"o",390141},{"o",390142},{"o",398759},{"o",398760},{"o",398761},{"o",398762},{"o",398764},{"o",398765},{"o",398766},{"o",398767},{"o",73940},{"o",73941},{"s",13262},{"s",427174},{"s",430315},{"s",447312},{1,11},{1,2,6},{1,7,10,18,21,27,37,48,52,62,76,94,95,97,106},{1,7,10,18,21,27,37,48,52,62},{1,7,18,21,27,37,48,52,57,62},{1,7,18,21,27,37,52,57},{1,7,18,27,37,48,52,57,62},{1},{10,11},{10,14,17,21,25,26,50,51,52,56,62,63,64,66,69,70,71,76,199,210},{10,14,17,21,25,26,51,52,56,62,63,64,66,69,70,71,76,199},{10,21,25,48,52,56,57,62,76},{10,21,47,49,52,62,76},{10,21,48,52,62,76},{10,25,47,56,62,65,76},{10.77,74.71,76},{10},{100,102,104,105,107,108,109},{102,104,105,107,108,109,122},{102,107,108},{102,108},{102,262,263,265},{102},{104,105,107,108,109,122,256,258,260,262,263,265,272},{104,105,107,108,109},{104},{107},{108},{109},{11},{114,115,116,117,121},{114,115,116,117},{114,116,117,119},{114},{115,118,119,120,123},{116,117,119},{116},{117},{118,119,120,123},{118,120},{119},{12},{122},{123},{125,126},{127},{13.13,26.23,95},{14,15,22,23,25,26,47,50,56,63,65,66,69,199,210},{14,15,22,23,26,32,36,64,66,69,71,77,199,210},{14,15,22,23,26,66,69,199,210},{14,17,22,23,26,65,66,69,70,78,80},{14,22,23,26,69,70,199,210},{14,22,26,47,50,56,69,199},{14,23,26,50,56,70,199},{14,26,69,70,199,210},{14,50,56,63,65,66},{14,65},{14.9,28.9,102},{14020},{15,17,23,32,36,51,64,69,71,77,78,81,83},{15,23,32,36,64,69,71,77},{15,23,32,36,64,71,81},{15,32,36,71},{15,51,77,78,81},{15,64,77,78,83},{17,23,51,64,71},{17,36,77,81},{17,51,71},{17,51,78,81,83},{17,51},{17,78,81,83},{17,81},{17},{198,201,204,205,207},{198,201},{198,207,241,244,245,249},{2,5,7,10,11,13},{2,5,7,8,9,10,11},{2},{201,205,241,245},{2022,2023,2024,2025,2133},{2022,2023,2024,2025},{2023},{2024},{207},{21,25,26,50,51,52,56,62,63,64,70,210},{21,25,47,48,49,56,63},{2133,2151},{2133},{22,26,70,71},{22,69,210},{22.7,65.4,204},{22.9,67.2,100},{220},{2200},{232,242},{24.7,19.1,102},{241,244,245,249},{241},{245,249},{247,320},{249},{25,47,50,56,63,65},{25,47,50,63,65},{25,50,56,63,65},{25,56,63,65},{256,258,260,262,263,265,272},{27.2,34.8,207},{28.1,61.9,103},{287},{29.1,33,198},{29.2,81.3,105},{29.5,67,105},{3,4,7,10,11},{3,7,13},{3},{30,50,95},{31.1,67.6,114},{32.1,55,105},{33.2,66.7,121},{33.5,52.7,15},{33.5,66.6,114},{337},{34.7,18,102},{34.8,40.4,105},{36.5,32.5,104},{37.3,45.9,10},{38.3,64.1,205},{38.5,88.3,100},{38.6,67.5,77},{39.3,9.7,108},{39.45,45.1,77},{39.8,49.2,244},{39.9,74.9,10},{4,10,11},{4},{40.1,67.7,115},{40.2,18.4,105},{41,36.2,204},{41,79.1,241},{41.2,29.8,198},{42.2,36.1,77},{42},{43.1,80.27,89},{43.4,55.8,104},{44.6,34.3,108},{45.02,23.54,108},{46.6,40.7,108},{46.65,18.9,69},{47.4,33.73,88},{48.05,13.3,69},{48.05,18.54,89},{48.8,48.4,115},{49.06,33.58,47},{49.2,5.9,69},{49.35,23.2,69},{49.35,30.85,77},{49.7,32.2,249},{5,8,9},{5},{50,210},{50,81.2,78},{50.1,69.7,115},{50.21,38.36,249},{50.4,35.4,205},{51.6,45,114},{51.8,74.6,90},{51},{52.4,77,198},{52.6,17.3,198},{52.8,13.9,69},{53.5,7.5,69},{55.6,85.6,84},{55.8,24.5,89},{56,80.6,10},{56.2,22.6,249},{56.2,34.2,85},{56.4,60,109},{56.6,48.9,249},{56.95,85.55,77},{57.11,37.52,56},{59.6,59.85,108},{6},{60.6,71.7,81},{60.8,25.9,198},{61,11,105},{62,77.9,249},{62.4,49,108},{62.7,19.5,100},{62.9,51.5,69},{63.5,72.5,115},{63.8,64.3,125},{63.9,68.3,105},{64.5,33,105},{64.9,58.1,69},{66,78.3,108},{66.1,86.2,64},{66.3,61.8,109},{66.6,54.6,87},{67,19.2,110},{67.5,11.7,105},{68.3,69.9,207},{68.5,44.4,109},{68.7,30.5,108},{69.4,68.1,207},{69.6,68.9,198},{7},{70.6,33.7,114},{71.8,63.1,207},{71},{72.1,52.85,69},{72.4,20.2,105},{73.5,63.5,69},{75.3,46.2,69},{76.27,52.64,241},{76.6,49.4,241},{76.8,41.9,207},{76.8,61.5,69},{77},{78.1,30,102},{78.6,76.2,241},{79.37,78.53,241},{8.3,52.7,102},{8.7,50.8,100},{8},{81},{82.9,90.3,117},{83},{88.1,33.6,102},{89.9,38.5,115},{9},{91,28.6,115},{92,69,115},{92.8,58.2,115},{92.9,48.2,115},{94}};
 _.Categories.Craftables={
 x(1,{
@@ -9,6 +9,9 @@ i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
+h(-679,{awp=110207,g={
+o(575032,{
+i(245586)})}}),
 prof(171,{
 h(-22,{
 i(3371,{description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world."}),
@@ -111,8 +114,18 @@ i(6372,{f=55,lvl=5,spellID=7840}),
 i(3382,{f=55,spellID=3219}),
 i(9144,{awp=100107,f=55,lvl=15,spellID=11387})}),
 h(-679,{awp=110207,g={
-i(257100,{spellID=1261201}),
-i(257041,{spellID=1261090})}}),
+de(11438,{itemID=257100,spellID=1261201}),
+de(11376,{itemID=257041,spellID=1261090}),
+r(262639),
+r(262643),
+r(262642),
+r(262647),
+r(262656),
+r(262625),
+r(262655),
+r(262628),
+r(260947),
+r(262648)}}),
 flt(56,{
 i(12360),
 i(6370),
@@ -384,8 +397,8 @@ s(2983,7938,{f=7,lvl=17,rwp=40003,u=2}),
 s(4501,12633,{f=7,lvl=23}),
 s(4494,12624,{f=6,lvl=21})}),
 h(-679,{awp=110207,g={
-i(246111,{spellID=1240798}),
-i(246489,{spellID=1242337})}}),
+de(2001,{itemID=246111,spellID=1240798}),
+de(2332,{itemID=246489,spellID=1242337})}}),
 flt(50,{
 i(15872,{f=55,requireSkill=164,spellID=20709}),
 i(3478),
@@ -779,8 +792,8 @@ i(38886,{f=55}),
 i(38823,{f=55}),
 i(38836,{f=55})}}),
 h(-679,{awp=110207,g={
-i(263027,{spellID=1269691}),
-i(253250,{spellID=1255900})}}),
+de(14816,{itemID=263027,spellID=1269691}),
+de(9266,{itemID=253250,spellID=1255900})}}),
 flt(103,{awp=70003,g={
 i(138787,{f=55,spellID=217151,g={
 ill(803),
@@ -918,8 +931,8 @@ p(39,{itemID=4401,npcID=2671,spellID=4055}),
 p(85,{itemID=11825,npcID=9656,spellID=15048}),
 p(116,{awp=100002,itemID=21277,npcID=15699,spellID=26010})}),
 h(-679,{awp=110207,g={
-i(246410,{spellID=1242064}),
-i(246700,{spellID=1243422})}}),
+de(2227,{itemID=246410,spellID=1242064}),
+de(2465,{itemID=246700,spellID=1243422})}}),
 flt(50,{
 i(4392,{f=55,requireSkill=202,spellID=4072}),
 i(6533,{f=55,requireSkill=356,spellID=8089}),
@@ -1062,7 +1075,7 @@ flt(23,{
 s(2358,6360,{description="Can be caught in open water in the given zones.",f=23,lvl=10,maps={25,50,56,63,407}})}),
 flt(52,{
 i(8350,{description="Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",f=52,lvl=5})}),
-flt(1,{collectible=false,g={
+flt(1,{
 s(2334,6292,{collectible=false}),
 s(2335,6294,{collectible=false}),
 s(2336,6295,{collectible=false}),
@@ -1086,7 +1099,7 @@ s(5046,13887,{collectible=false}),
 s(5060,13914,{collectible=false}),
 s(5061,13915,{collectible=false}),
 s(5062,13916,{collectible=false}),
-s(5063,13917,{collectible=false})}}),
+s(5063,13917,{collectible=false})}),
 flt(50,{
 i(13907),
 i(13908),
@@ -1120,15 +1133,15 @@ i(6643),
 i(8366,{lvl=11}),
 i(6351),
 i(13874),
-i(21150,{maps={10,14,17,21,22,23,25,26,50,51,52,56,62,63,64,65,66,69,70,71,76,78,80,199,210},providers={a[96],a[92],a[91],a[93],a[169]}}),
+i(21150,{maps={10,14,17,21,22,23,25,26,50,51,52,56,62,63,64,65,66,69,70,71,76,78,80,199,210},providers={a[91],a[92],a[93],a[96],a[169]}}),
 i(6307),
-i(21228,{maps=a[288],providers={a[95],a[94]}}),
+i(21228,{maps=a[288],providers={a[94],a[95]}}),
 i(13918),
 i(6357),
 i(20708,{maps=a[235],providers={a[88],a[89]}}),
 i(6352),
-i(21113,{maps=a[328],providers={a[170],a[90]}}),
-i(21151,{f=55,providers={a[96],a[92],a[88],a[95],a[91],a[89],a[90],a[94],a[93],a[169],a[170]},spellID=25804}),
+i(21113,{maps=a[328],providers={a[90],a[170]}}),
+i(21151,{f=55,providers={a[88],a[89],a[90],a[91],a[92],a[93],a[94],a[95],a[96],a[169],a[170]},spellID=25804}),
 i(20709,{f=55,maps=a[235],providers={a[88]},spellID=25037})}),
 flt(57,{
 s(2362,6366,{collectible=false,description="Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",f=57,learnedAt=50,lvl=7,maps={14,25,49,50,56,63},requireSkill=356,spellID=124034})}),
@@ -1186,7 +1199,7 @@ i(8839,{coords={a[371],a[373],a[377],a[378],a[393],a[394],a[412],a[417],a[433],a
 i(108336,{awp=60002,providers={a[65]},spellID=153842,g={
 i(8839)}}),
 i(22710,{awp=20005,maps=a[458],providers={{"o",181166}},races=a[239],spellID=28273}),
-i(19726,{maps=a[345],providers={{"o",180168},{"o",180167},{"o",180166},{"o",180165},{"o",180164}},rwp=40003,u=2}),
+i(19726,{maps=a[345],providers={{"o",180164},{"o",180165},{"o",180166},{"o",180167},{"o",180168}},rwp=40003,u=2}),
 i(2450,{maps=a[237],providers={a[70],a[167]}}),
 i(108320,{awp=60002,providers={a[70],a[167]},spellID=153843,g={
 i(2450)}}),
@@ -1255,8 +1268,8 @@ i(3820)}}),
 i(8838,{maps=a[284],providers={a[64]}}),
 i(108335,{awp=60002,providers={a[64]},spellID=153878,g={
 i(8838)}}),
-i(2452,{maps={10,21,25,47,48,52,56,57,62,65,76},providers={a[70],a[69]}}),
-i(108321,{awp=60002,providers={a[70],a[69]},spellID=153879,g={
+i(2452,{maps={10,21,25,47,48,52,56,57,62,65,76},providers={a[69],a[70]}}),
+i(108321,{awp=60002,providers={a[69],a[70]},spellID=153879,g={
 i(2452)}}),
 i(3355,{maps=a[278],providers={a[72]}}),
 i(108323,{awp=60002,providers={a[72]},spellID=153885,g={
@@ -1321,17 +1334,17 @@ i(39489,{description="Can be bought from Inscription Suppliers, as well as some 
 i(64670,{awp=40001,description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",spellID=210212}),
 i(39505,{collectible=false,description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",f=57,requireSkill=773})}),
 ah(51005,{type="s",g={
-i(39151,{providers={{"i",2449},{"i",2447},{"i",765}}}),
-i(43104,{providers={a[26],a[23],a[24],a[22]}}),
-i(39334,{providers={a[16],a[18],a[47],a[39],a[17]}}),
-i(39339,{providers={a[38],a[37],a[40],a[25]}}),
-i(39338,{providers={a[26],a[23],a[24],a[22]}}),
-i(43105,{providers={a[38],a[37],a[40],a[25]}}),
-i(43106,{providers={a[49],a[51],a[44],a[52],a[53],a[48],a[50]}}),
-i(43107,{providers={a[2],a[3],a[6],a[4],a[5]}}),
-i(39341,{providers={a[2],a[3],a[6],a[4],a[5]}}),
-i(43103,{providers={a[16],a[18],a[47],a[39],a[17]}}),
-i(39340,{providers={a[49],a[51],a[44],a[52],a[53],a[48],a[50]}})}}),
+i(39151,{providers={{"i",765},{"i",2447},{"i",2449}}}),
+i(43104,{providers={a[22],a[23],a[24],a[26]}}),
+i(39334,{providers={a[47],a[16],a[17],a[18],a[39]}}),
+i(39339,{providers={a[25],a[37],a[38],a[40]}}),
+i(39338,{providers={a[22],a[23],a[24],a[26]}}),
+i(43105,{providers={a[25],a[37],a[38],a[40]}}),
+i(43106,{providers={a[44],a[48],a[49],a[50],a[51],a[52],a[53]}}),
+i(43107,{providers={a[2],a[3],a[4],a[5],a[6]}}),
+i(39341,{providers={a[2],a[3],a[4],a[5],a[6]}}),
+i(43103,{providers={a[47],a[16],a[17],a[18],a[39]}}),
+i(39340,{providers={a[44],a[48],a[49],a[50],a[51],a[52],a[53]}})}}),
 flt(56,{
 i(43120),
 i(43117),
@@ -1488,7 +1501,7 @@ i(3864,{providers={a[21],a[41]}}),
 i(12364,{providers={a[1]}}),
 i(1529,{providers={a[21]}}),
 i(12799,{providers={a[1]}}),
-i(1705,{providers={a[21],a[20]}}),
+i(1705,{providers={a[20],a[21]}}),
 i(774,{providers={a[19]}}),
 i(1206,{providers={a[20]}}),
 i(1210,{providers={a[20]}}),
@@ -1928,30 +1941,30 @@ i(2776)}}),
 i(2772,{maps=a[272],providers={a[80]}}),
 i(108297,{awp=60002,providers={a[80]},spellID=153814,g={
 i(2772)}}),
-i(22203,{maps=a[323],providers={a[98],a[97]}}),
+i(22203,{maps=a[323],providers={a[97],a[98]}}),
 i(3858,{maps=a[283],providers={a[159]}}),
 i(108300,{awp=60002,providers={a[159]},spellID=153817,g={
 i(3858)}}),
-i(2775,{description="Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",maps=a[270],providers={a[217],a[78]}}),
-i(108294,{awp=60002,providers={a[217],a[78]},spellID=153811,g={
+i(2775,{description="Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",maps=a[270],providers={a[78],a[217]}}),
+i(108294,{awp=60002,providers={a[78],a[217]},spellID=153811,g={
 i(2775)}}),
-i(22202,{maps=a[323],providers={a[98],a[97]}}),
-i(10620,{maps=a[291],providers={a[87],a[62],a[81],a[172]}}),
-i(108298,{awp=60002,providers={a[87],a[62],a[81],a[172]},spellID=153815,g={
+i(22202,{maps=a[323],providers={a[97],a[98]}}),
+i(10620,{maps=a[291],providers={a[172],a[62],a[81],a[87]}}),
+i(108298,{awp=60002,providers={a[172],a[62],a[81],a[87]},spellID=153815,g={
 i(10620)}}),
 i(2771,{maps=a[327],providers={a[77]}}),
 i(108295,{awp=60002,providers={a[77]},spellID=153812,g={
 i(2771)}}),
-i(7911,{description="Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",maps=a[282],providers={a[61],a[166]}}),
-i(108299,{awp=60002,providers={a[61],a[166]},spellID=153816,g={
+i(7911,{description="Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",maps=a[282],providers={a[166],a[61]}}),
+i(108299,{awp=60002,providers={a[166],a[61]},spellID=153816,g={
 i(7911)}}),
 i(2836,{maps=a[325],providers={a[77]}}),
-i(12365,{maps=a[291],providers={a[87],a[62],a[81],a[172]}}),
+i(12365,{maps=a[291],providers={a[172],a[62],a[81],a[87]}}),
 i(2838,{maps=a[272],providers={a[80]}}),
 i(2835,{maps=a[225],providers={a[76]}}),
 i(7912,{maps=a[291],providers={a[159]}}),
-i(12363,{description="Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low. |CFFFF0000You cannot get it from prospecting.|r",maps=a[291],providers={a[172],a[87],a[62],a[81]}}),
-i(9262,{description="This gem is most reliably obtained from mining veins, although the droprate is 1%.",providers={a[159],a[172]}}),
+i(12363,{description="Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low. |CFFFF0000You cannot get it from prospecting.|r",maps=a[291],providers={a[172],a[62],a[81],a[87]}}),
+i(9262,{description="This gem is most reliably obtained from mining veins, although the droprate is 1%.",providers={a[172],a[159]}}),
 i(11382,{maps=a[318],providers={a[75]}}),
 i(8150,{description="Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",maps={230,242,280}}),
 i(19774,{providers={{"o",180215}},rwp=40003,u=2}),
@@ -2337,6 +2350,9 @@ i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
+h(-679,{awp=110207,g={
+o(572995,{
+i(242691)})}}),
 prof(171,{awp=20005,g={
 h(-26,{
 r(41458,{awp=20100,learnedAt=60,requireSkill=171}),
@@ -2409,6 +2425,10 @@ i(22832,{f=55,lvl=23,spellID=28499}),
 i(22850,{f=55,lvl=10,spellID=28517}),
 i(28101,{f=55,lvl=23,spellID=17531}),
 i(28100,{f=55,lvl=23,spellID=17534})}),
+h(-679,{awp=110207,g={
+de(16082,{itemID=264705,spellID=1272499}),
+de(16083,{itemID=264706,spellID=1272500}),
+de(16086,{itemID=264709,spellID=1272504})}}),
 flt(56,{
 i(25867),
 i(22451,{cost={{"i",22572,10}}}),
@@ -2528,9 +2548,9 @@ s(13516,30076,{b=1,f=6,lvl=26,rwp=40003,u=2}),
 s(9360,23564,{b=1,f=6,lvl=27,rwp=40003,spellID=34518,u=2}),
 s(13510,30070,{b=1,f=6,lvl=20,rwp=40003,u=2})}),
 h(-679,{awp=110207,g={
-i(257035,{spellID=1261084}),
-i(257039,{spellID=1261088}),
-i(257036,{spellID=1261085})}}),
+de(11370,{itemID=257035,spellID=1261084}),
+de(11374,{itemID=257039,spellID=1261088}),
+de(11371,{itemID=257036,spellID=1261085})}}),
 flt(50,{
 i(33185,{awp=20300,f=55,lvl=21,spellID=42687}),
 i(25844,{rwp=50004,u=2}),
@@ -2665,9 +2685,9 @@ i(38932,{f=55}),
 i(38890,{f=55}),
 i(38885,{f=55})}}),
 h(-679,{awp=110207,g={
-i(257093,{spellID=1261194}),
-i(257037,{spellID=1261086}),
-i(257038,{spellID=1261087})}}),
+de(11431,{itemID=257093,spellID=1261194}),
+de(11372,{itemID=257037,spellID=1261086}),
+de(11373,{itemID=257038,spellID=1261087})}}),
 flt(103,{awp=70003,g={
 i(138789,{f=55,lvl=24,spellID=217171,g={
 ill(5390),
@@ -2752,6 +2772,10 @@ s(14986,32473,{awp=20100,f=7,learnedAt=1,lvl=25,requireSkill=202,spellID=12883})
 s(9386,23762,{f=4,learnedAt=1,lvl=24,requireSkill=202,spellID=12883}),
 s(14992,32479,{awp=20100,f=5,learnedAt=1,lvl=25,requireSkill=202,spellID=12883}),
 s(16398,35183,{awp=20400,f=5,learnedAt=1,lvl=27,requireSkill=202,spellID=12883})}),
+h(-679,{awp=110207,g={
+de(11881,{itemID=258193,spellID=1262947}),
+de(11884,{itemID=258196,spellID=1262950}),
+de(11882,{itemID=258194,spellID=1262948})}}),
 flt(50,{
 i(23737,{f=55,lvl=10,requireSkill=202,spellID=30217}),
 i(20475,{awp=20300,rwp=40001,u=2}),
@@ -2809,17 +2833,17 @@ i(34866,{awp=20005})}}),
 i(35286,{awp=20400,maps=a[265]}),
 i(33823,{awp=20300,maps=a[365]}),
 i(33824,{awp=20300,maps=a[365]}),
-i(27513,{maps=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
-i(27516,{maps=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
+i(27513,{maps=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
+i(27516,{maps=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(27435,{maps=a[249],providers={a[118]}}),
 i(27439,{coords={a[370],a[404],a[418]},providers={a[117]}}),
 i(35285,{awp=20400,lvl=27,maps=a[265],spellID=35270}),
-i(27438,{maps=a[250],providers={a[115],a[117],a[116]}}),
-i(27442,{maps=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
+i(27438,{maps=a[250],providers={a[115],a[116],a[117]}}),
+i(27442,{maps=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(27481,{providers={a[113]}}),
-i(27515,{maps=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
+i(27515,{maps=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(27437,{maps=a[249],providers={a[119]}}),
-i(27511,{maps=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
+i(27511,{maps=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(34867,{awp=20400,maps={100,104}}),
 i(27388,{b=1,coords={a[370],a[404],a[418]},description="Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",f=55,lvl=23,providers={a[117]},spellID=33060,g={
 p(132,{b=1,itemID=27445,npcID=18839,spellID=33050}),
@@ -2854,7 +2878,7 @@ i(22786,{description="Found near edges and highly uneven terrain.",maps=a[247],p
 i(108345,{awp=60002,providers={a[100]},spellID=153849,g={
 i(22786,{awp=20005})}}),
 i(22795,{f=55,lvl=10,providers={a[99]},requireSkill=182,spellID=28527}),
-i(22794,{description="Can uncommonly be looted when gathering TBC herbs.",providers={a[103],a[100],a[99],a[106],a[104],a[105],a[101],a[102]}}),
+i(22794,{description="Can uncommonly be looted when gathering TBC herbs.",providers={a[99],a[100],a[101],a[102],a[103],a[104],a[105],a[106]}}),
 i(22785,{maps={100,102,104,105,107,108},providers={a[99]}}),
 i(108344,{awp=60002,providers={a[99]},spellID=153852,g={
 i(22785,{awp=20005})}}),
@@ -2862,7 +2886,7 @@ i(22788,{lvl=23,maps=a[244],providers={{"o",181276}},spellID=28714}),
 i(22793,{maps=a[265],providers={a[106]}}),
 i(108351,{awp=60002,providers={a[106]},spellID=153869,g={
 i(22793,{awp=20005})}}),
-i(35229,{awp=20400,providers={a[103],a[100],a[99],a[106],a[104],a[105],a[101],a[102]}}),
+i(35229,{awp=20400,providers={a[99],a[100],a[101],a[102],a[103],a[104],a[105],a[106]}}),
 i(22791,{maps=a[251],providers={a[104]}}),
 i(108349,{awp=60002,providers={a[104]},spellID=153871,g={
 i(22791,{awp=20005})}}),
@@ -2889,8 +2913,8 @@ o(183385,{maps={262}}),
 o(181277,{coords={a[411],a[348],a[367],a[334]},description="Found near the base of trees.",maps=a[250]})}})}}),
 prof(773,{awp=20005,g={
 ah(51005,{type="s",g={
-i(43108,{providers={a[11],a[8],a[7],a[13],a[12],a[9],a[10]}}),
-i(39342,{providers={a[11],a[8],a[7],a[13],a[12],a[9],a[10]}})}}),
+i(43108,{providers={a[7],a[8],a[9],a[10],a[11],a[12],a[13]}}),
+i(39342,{providers={a[7],a[8],a[9],a[10],a[11],a[12],a[13]}})}}),
 flt(56,{
 i(43125),
 i(43124)}),
@@ -2946,18 +2970,18 @@ i(31896,{spellID=39481}),
 i(31893,{spellID=39481})})})}}),
 prof(755,{awp=20005,g={
 ah(31252,{type="s",g={
-i(23117,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23077,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23079,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(21929,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23112,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23107,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23440,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23436,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23441,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23439,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23438,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23437,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}})}}),
+i(23117,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23077,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23079,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(21929,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23112,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23107,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23440,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23436,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23441,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23439,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23438,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23437,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}})}}),
 h(-88,{
 s(9446,24123,{f=4,lvl=27,spellID=32980}),
 s(9445,24122,{f=4,lvl=27,spellID=32981}),
@@ -3453,6 +3477,9 @@ i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
+h(-679,{awp=110207,g={
+o(569722,{
+i(251762)})}}),
 prof(171,{awp=30003,g={
 h(-22,{
 i(40411,{awp=30002,description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2})}),
@@ -3527,8 +3554,8 @@ i(33448,{f=55,lvl=27,spellID=43186}),
 i(40070,{f=55,lvl=27,spellID=33721}),
 i(40068,{f=55,lvl=27,spellID=53746})}),
 h(-679,{awp=110207,g={
-i(258213,{spellID=1262971}),
-i(258212,{spellID=1262970})}}),
+de(11901,{itemID=258213,spellID=1262971}),
+de(11900,{itemID=258212,spellID=1262970})}}),
 flt(56,{
 i(36931,{awp=30200}),
 i(36919,{awp=30200}),
@@ -3674,7 +3701,9 @@ s(20040,41355,{f=7,lvl=29}),
 s(19920,41189,{b=1,f=7,lvl=29,rwp=40003,u=2}),
 s(19921,41190,{b=1,f=7,lvl=29,rwp=40003,u=2})}),
 h(-679,{awp=110207,g={
-i(257040,{spellID=1261089})}}),
+de(11375,{itemID=257040,spellID=1261089}),
+de(16012,{itemID=264676,spellID=1272373}),
+de(16087,{itemID=264710,spellID=1272505})}}),
 flt(50,{
 i(43854,{f=55,requireSkill=164,spellID=59404}),
 i(41611,{f=55,lvl=27,spellID=55655}),
@@ -3815,8 +3844,8 @@ i(38951,{f=55}),
 i(38967,{f=55}),
 i(38953,{f=55})}),
 h(-679,{awp=110207,g={
-i(257094,{spellID=1261195}),
-i(257101,{spellID=1261204})}}),
+de(11432,{itemID=257094,spellID=1261195}),
+de(11439,{itemID=257101,spellID=1261204})}}),
 flt(103,{awp=70003,g={
 i(138790,{f=55,lvl=27,spellID=217172,g={
 ill(5391),
@@ -3871,6 +3900,10 @@ s(20590,42551,{f=6,learnedAt=1,lvl=28,requireSkill=202,spellID=12883}),
 s(21627,44949,{awp=30008,f=7,learnedAt=1,lvl=28,requireSkill=202,spellID=12883}),
 s(20592,42553,{f=4,learnedAt=1,lvl=28,requireSkill=202,spellID=12883}),
 s(20589,42550,{f=5,learnedAt=1,lvl=28,requireSkill=202,spellID=12883})}),
+h(-679,{awp=110207,g={
+de(16088,{itemID=264711,spellID=1272506}),
+de(16084,{itemID=264707,spellID=1272501}),
+de(1793,{itemID=245602,spellID=1239339})}}),
 flt(50,{
 i(40893,{description="This item was made redundant with Dragonflight and cannot be equipped as a profession tool. Thus its gathering skill bonus is no longer recognised and have no uses but leveling up Northrend Engineering.",f=55,spellID=164722}),
 i(44951,{f=55,g={
@@ -3888,7 +3921,7 @@ i(41165,{f=37,lvl=28,rwp=40001,u=2}),
 i(40769,{f=55,requireSkill=202,spellID=54711}),
 i(23775,{awp=30008,f=113})}),
 flt(100,{
-ach(2097,{providers={{"i",44413},{"i",41508}}}),
+ach(2097,{providers={{"i",41508},{"i",44413}}}),
 mnt(55531,{itemID=41508,lvl=17,r=1}),
 mnt(60424,{itemID=44413,lvl=17,r=2})}),
 flt(56,{
@@ -3923,7 +3956,7 @@ i(41805,{description="Schools can be found on the seaside.",maps=a[256],provider
 i(41800,{coords={a[340],a[344],a[385],a[449]},description="The schools have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",providers={a[138]}}),
 i(41807,{coords={a[359],a[452],a[454],a[455],a[456],a[457]},providers={a[133]}}),
 s(21571,44703,{collectible=false,description="Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",f=20,lvl=29,maps=a[260],providers={a[134]}}),
-s(21518,44505,{description="Can be caught in schools or open water in Northrend.",f=20,lvl=29,providers={a[136],a[138],a[133],a[134],a[135],a[141],a[137],a[139],a[132],a[140]}}),
+s(21518,44505,{description="Can be caught in schools or open water in Northrend.",f=20,lvl=29,providers={a[132],a[133],a[134],a[135],a[136],a[137],a[138],a[139],a[140],a[141]}}),
 i(41810,{description="Schools can be found in inland waters.",maps=a[260],providers={a[134]}}),
 i(43646,{coords={{52.9,65.9,125}},description="Can be caught in the fountain.",lvl=27,spellID=35270}),
 i(45909,{maps=a[266],spellID=64202,g={
@@ -3938,8 +3971,8 @@ i(41801,{coords={a[340],a[344],a[385],a[449]},description="The schools have shar
 i(41806,{coords={a[388]},providers={a[132]}}),
 i(41813,{maps=a[263],providers={a[140]}}),
 i(45902,{description="Eat this before it despawns!",maps=a[263],spellID=64366}),
-i(40199,{maps={114,115,116,117,119,127},providers={a[136],a[138],a[133],a[134],a[135],a[141],a[137],a[139],a[132],a[140]}}),
-i(44475,{providers={a[136],a[138],a[133],a[134],a[135],a[141],a[137],a[139],a[132],a[140]},g={
+i(40199,{maps={114,115,116,117,119,127},providers={a[132],a[133],a[134],a[135],a[136],a[137],a[138],a[139],a[140],a[141]}}),
+i(44475,{providers={a[132],a[133],a[134],a[135],a[136],a[137],a[138],a[139],a[140],a[141]},g={
 i(33567,{requireSkill=393,spellID=59926}),
 i(36909),
 i(33470)}}),
@@ -3977,13 +4010,13 @@ sp(2366,{
 i(36903,{maps=a[263],providers={a[129]}}),
 i(108353,{awp=60002,providers={a[129]},spellID=153838,g={
 i(36903,{awp=30003})}}),
-i(37921,{description="Is obtained from gathering other herbs.",maps={114,115,116,117,119,121},providers={a[120],a[126],a[125]}}),
+i(37921,{description="Is obtained from gathering other herbs.",maps={114,115,116,117,119,121},providers={a[120],a[125],a[126]}}),
 i(108358,{awp=60002,spellID=153846,g={
 i(37921,{awp=30003})}}),
 i(39970,{coords={a[430]},providers={a[131]}}),
 i(108359,{awp=60002,providers={a[131]},spellID=153853,g={
 i(39970,{awp=30003})}}),
-i(36908,{description="Can uncommonly be looted when gathering WotLK herbs.",providers={a[129],a[131],a[120],a[128],a[127],a[126],a[125]}}),
+i(36908,{description="Can uncommonly be looted when gathering WotLK herbs.",providers={a[120],a[125],a[126],a[127],a[128],a[129],a[131]}}),
 i(36901,{coords={a[375],a[413]},description="Found on grassy terrain.",maps=a[255],providers={a[120]}}),
 i(108352,{awp=60002,providers={a[120]},spellID=153856,g={
 i(36901,{awp=30003})}}),
@@ -4008,8 +4041,8 @@ o(190170,{coords={a[342]},description="Found around the lower tiers of Zul'Drak.
 o(190169,{coords={a[388]},description="Found around inland waters and waterways.",maps=a[258]})})}}),
 prof(773,{awp=30003,g={
 ah(51005,{type="s",g={
-i(39343,{providers={a[28],a[36],a[42],a[27],a[31],a[30],a[32],a[29]}}),
-i(43109,{providers={a[28],a[36],a[42],a[27],a[31],a[30],a[32],a[29]}})}}),
+i(39343,{providers={a[27],a[28],a[29],a[30],a[31],a[32],a[36],a[42]}}),
+i(43109,{providers={a[27],a[28],a[29],a[30],a[31],a[32],a[36],a[42]}})}}),
 flt(56,{
 i(43126),
 i(43127)}),
@@ -4025,7 +4058,7 @@ i(87883,{awp=50004,c=a[239],f=111,lvl=11,spellID=125739})}),
 flt(1,{
 s(21393,44210,{f=1,lvl=29}),
 s(18376,38322,{f=1,lvl=29}),
-i(45854,{awp=30100,collectible=false,description="This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",f=1,lvl=27,spellID=64052,g={
+ah(45854,{awp=30100,description="This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",providers={{"i",45854},{"s",64051}},type="i",g={
 s(267060,45850,{awp=30003,f=1,lvl=27,spellID=64048}),
 s(267057,45851,{awp=30003,f=1,lvl=27,spellID=64047}),
 s(267058,45852,{awp=30003,f=1,lvl=27,spellID=64049}),
@@ -4081,18 +4114,18 @@ i(44293,{spellID=60276})})})}}),
 prof(755,{awp=30003,g={
 ah(31252,{type="s",g={
 i(46849,{awp=30200}),
-i(36917,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36923,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36932,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36929,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36926,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36920,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36921,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36933,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36930,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36918,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36924,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36927,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
+i(36917,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36923,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36932,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36929,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36926,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36920,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36921,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36933,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36930,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36918,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36924,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36927,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
 i(36931,{awp=30200,description="This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",providers={a[34]}}),
 i(36919,{awp=30200,description="This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",providers={a[34]}}),
 i(36928,{awp=30200,description="This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",providers={a[34]}}),
@@ -4645,8 +4678,8 @@ o(191133,{maps=a[257]}),
 i(36909,{maps=a[254],providers={a[121],a[122]}}),
 i(108305,{awp=60002,providers={a[121],a[122]},spellID=153822,g={
 i(36909,{awp=30003})}}),
-i(36912,{maps=a[261],providers={a[124],a[123]}}),
-i(108306,{awp=60002,providers={a[124],a[123]},spellID=153823,g={
+i(36912,{maps=a[261],providers={a[123],a[124]}}),
+i(108306,{awp=60002,providers={a[123],a[124]},spellID=153823,g={
 i(36912,{awp=30003})}}),
 i(36910,{maps=a[261],providers={a[130]}}),
 i(108391,{awp=60002,providers={a[130]},spellID=153890,g={
@@ -4772,6 +4805,9 @@ i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
+h(-679,{awp=110207,g={
+o(578160,{
+i(251764)})}}),
 prof(171,{awp=40003,g={
 flt(55,{
 i(65460,{f=55,spellID=92712}),
@@ -4806,10 +4842,10 @@ i(67539,{b=1})}}),
 i(58143,{f=55,lvl=30,spellID=134873}),
 i(58091,{f=55,lvl=30,spellID=79476})}),
 h(-679,{awp=110207,g={
-i(245517,{spellID=1238666}),
-i(257694,{spellID=1261858})}}),
+de(855,{itemID=245517,spellID=1238666}),
+de(11723,{itemID=257694,spellID=1261858})}}),
 flt(100,{
-ach(5749,{providers={{"i",65891},{"s",93326}}}),
+ach(5749,{providers={{"i",65891}}}),
 mnt(93326,{itemID=65891,lvl=30})}),
 flt(56,{
 i(56850,{spellID=78640}),
@@ -4938,8 +4974,8 @@ s(38300,75136,{awp=40300,f=7,lvl=32}),
 s(38283,75119,{awp=40300,f=7,lvl=32}),
 s(35610,69946,{awp=40200,f=7,lvl=32})}),
 h(-679,{awp=110207,g={
-i(257042,{spellID=1261091}),
-i(257409,{spellID=1261538})}}),
+de(11377,{itemID=257042,spellID=1261091}),
+de(11497,{itemID=257409,spellID=1261538})}}),
 flt(50,{
 i(55054,{f=55,lvl=30,spellID=76168}),
 i(65365),
@@ -4976,8 +5012,8 @@ s(35722,70163,{awp=40200,f=25,lvl=32}),
 s(35724,70165,{awp=40200,f=29,lvl=32})})}}),
 prof(185,{awp=40003,g={
 h(-22,{
-i(58265,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=32,providers={a[58],a[57],a[56]},spellID=80169}),
-i(58278,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=27,providers={a[58],a[57],a[56]},spellID=45548})}),
+i(58265,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=32,providers={a[56],a[57],a[58]},spellID=80169}),
+i(58278,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=27,providers={a[56],a[57],a[58]},spellID=45548})}),
 i(62661,{f=55,lvl=30,spellID=87597}),
 i(62665,{f=55,lvl=30,spellID=87599}),
 i(62670,{f=55,lvl=30,spellID=87584}),
@@ -5060,8 +5096,8 @@ flt(101,{
 p(267,{itemID=67274,npcID=46898,spellID=93836}),
 p(292,{itemID=67275,npcID=50545,spellID=93837})}),
 h(-679,{awp=110207,g={
-i(257404,{spellID=1261529}),
-i(257095,{spellID=1261196})}}),
+de(11494,{itemID=257404,spellID=1261529}),
+de(11433,{itemID=257095,spellID=1261196})}}),
 flt(103,{awp=70003,g={
 i(138791,{f=55,lvl=30,spellID=217173,g={
 ill(4098),
@@ -5113,6 +5149,9 @@ s(29682,59458,{f=6,learnedAt=1,lvl=32,requireSkill=202}),
 s(29673,59449,{f=4,learnedAt=1,lvl=32,requireSkill=202}),
 s(29601,59359,{f=7,learnedAt=1,lvl=32,requireSkill=202}),
 s(29672,59448,{f=7,learnedAt=1,lvl=32,requireSkill=202})}),
+h(-679,{awp=110207,g={
+de(1793,{itemID=245602,spellID=1239339}),
+de(11718,{itemID=257689,spellID=1261850})}}),
 flt(50,{
 i(67494,{b=1,collectible=false,f=55,requireSkill=202,spellID=94559}),
 i(60217,{f=113}),
@@ -5144,7 +5183,7 @@ i(53065,{coords={a[330],a[424],a[427],a[431],a[439]},description="Schools can al
 i(53071,{description="Can be caught on the seaside, though might be more uncommon than other saltwater fish.",maps=a[302],providers={a[46]}}),
 i(53066,{description="Schools can be found in inland waterways.",maps=a[324],providers={a[157]}}),
 i(53072,{description="Schools can be found on the seaside.",maps=a[302],providers={a[46],a[168]}}),
-i(53070,{description="Schools can be found on the seaside.",maps=a[322],providers={a[158],a[46]}}),
+i(53070,{description="Schools can be found on the seaside.",maps=a[322],providers={a[46],a[158]}}),
 i(53064,{description="Schools can be found in inland waterways.",maps=a[321],providers={a[155]}}),
 i(53068,{description="Can be caught in inland waterways.",maps={207,249},providers={a[46]}}),
 i(53063,{coords={a[333],a[363],a[392],a[407],a[428]},providers={a[154]}}),
@@ -5153,7 +5192,7 @@ mnt(64731,{b=1,itemID=46109}),
 i(53062,{description="Can be caught in inland waterways.",maps={198,207,241,249}}),
 s(34674,68050,{collectible=false,coords={a[391],a[362]},description="Can be caught by fishing in lava using a special lure.",f=23,lvl=32,providers={{"i",68049}}}),
 i(53067,{description="Can be caught in inland waterways.",maps={198,241}}),
-cs(28271,{c=a[447],itemID=22739,lvl=25,maps={198,207,241,245,249},providers={a[156],a[157],a[168],a[158],a[155],a[154],{"o",207724}}}),
+cs(28271,{c=a[447],itemID=22739,lvl=25,maps={198,207,241,245,249},providers={a[154],a[155],a[156],a[157],a[158],{"o",207724},a[168]}}),
 o(202778,{coords={a[330],a[424],a[427],a[431],a[439]},description="Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh."}),
 o(202781,{description="Please let us in the ATT-discord know if this school appears in any iterations of the game.",maps=a[321],rwp=40300,u=2}),
 o(202779,{description="Can be found in inland waterways.",maps=a[324]}),
@@ -5177,7 +5216,7 @@ i(52983,{awp=40003})}}),
 i(52986,{maps=a[307],providers={a[151]}}),
 i(108363,{awp=60002,providers={a[151]},spellID=153861,g={
 i(52986,{awp=40003})}}),
-i(63122,{f=55,providers={a[150],a[148],a[151],a[149],a[152],a[153]},requireSkill=182,spellID=88728}),
+i(63122,{f=55,providers={a[148],a[149],a[150],a[151],a[152],a[153]},requireSkill=182,spellID=88728}),
 i(52984,{coords={a[314],a[361],a[350],a[387]},description="Can be found near the base of vegetation and structures.",maps=a[297],providers={a[149]}}),
 i(108361,{awp=60002,providers={a[149]},spellID=153876,g={
 i(52984,{awp=40003})}}),
@@ -5201,8 +5240,8 @@ i(67319,{coords={a[438],a[443]},providers={a[59],a[60]}}),
 i(68047,{coords={a[438],a[443]},providers={a[59],a[60]}}),
 i(67335,{coords={a[438],a[443]},providers={a[59],a[60]}})}),
 ah(51005,{type="s",g={
-i(61979,{providers={a[150],a[148],a[151],a[149],a[152],a[153]}}),
-i(61980,{providers={a[150],a[148],a[151],a[149],a[152],a[153]}})}}),
+i(61979,{providers={a[148],a[149],a[150],a[151],a[152],a[153]}}),
+i(61980,{providers={a[148],a[149],a[150],a[151],a[152],a[153]}})}}),
 flt(56,{
 i(61978),
 i(61981)}),
@@ -5798,13 +5837,13 @@ o(202737,{maps={241,249}}),
 o(202741,{maps=a[320]}),
 o(202739,{maps=a[296]}),
 o(202740,{maps={244,245}}),
-i(52185,{maps=a[320],providers={a[144],a[147],a[45]}}),
+i(52185,{maps=a[320],providers={a[45],a[144],a[147]}}),
 i(108308,{awp=60002,providers={a[144],a[147]},spellID=153825,g={
 i(52185,{awp=40003})}}),
 i(53038,{maps=a[296],providers={a[142],a[145]}}),
 i(108307,{awp=60002,providers={a[142],a[145]},spellID=153824,g={
 i(53038,{awp=40003})}}),
-i(52183,{maps=a[320],providers={a[143],a[146],a[45]}}),
+i(52183,{maps=a[320],providers={a[45],a[143],a[146]}}),
 i(108309,{awp=60002,providers={a[143],a[146]},spellID=153826,g={
 i(52183,{awp=40003})}})}),
 sp(2656,{
@@ -5921,6 +5960,9 @@ i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
+h(-679,{awp=110207,g={
+o(562440,{
+i(251763)})}}),
 prof(171,{awp=50004,g={
 h(-26,{
 r(114774,{learnedAt=40,requireSkill=171}),
@@ -5981,8 +6023,8 @@ i(76093,{f=55,lvl=32,spellID=105702}),
 i(76090,{f=55,lvl=32,spellID=105698}),
 i(76089,{f=55,lvl=32,spellID=105697})}),
 h(-679,{awp=110207,g={
-i(257043,{spellID=1261092}),
-i(258214,{spellID=1262976})}}),
+de(11378,{itemID=257043,spellID=1261092}),
+de(11902,{itemID=258214,spellID=1262976})}}),
 flt(56,{
 i(87872,{f=55,spellID=127563}),
 i(76141),
@@ -6305,8 +6347,8 @@ s(52078,98615,{awp=50400,f=7,lvl=35}),
 s(42179,82900,{awp=70305,f=7,lvl=32,rwp=100002,u=2}),
 s(45152,87405,{f=7,lvl=35})}),
 h(-679,{awp=110207,g={
-i(247752,{spellID=1245237}),
-i(247661,{spellID=1245016})}}),
+de(3892,{itemID=247752,spellID=1245237}),
+de(3831,{itemID=247661,spellID=1245016})}}),
 flt(50,{
 i(98717,{awp=50400,b=1}),
 i(80431,{awp=70305,rwp=100002,u=2}),
@@ -6353,7 +6395,7 @@ s(49468,94582,{awp=50200,f=24,lvl=35}),
 s(49465,94579,{awp=50200,f=21,lvl=35})})}}),
 prof(185,{awp=50004,g={
 h(-679,{awp=110207,g={
-i(247220,{spellID=1244573})}}),
+de(2591,{itemID=247220,spellID=1244573})}}),
 i(86432,{f=55,lvl=33,spellID=125686}),
 i(87246,{f=55,lvl=35,spellID=126503}),
 i(87226,{f=55,lvl=30,spellID=126492}),
@@ -6454,8 +6496,8 @@ i(74721,{f=55}),
 i(74720,{f=55}),
 i(74722,{f=55})}),
 h(-679,{awp=110207,g={
-i(257097,{spellID=1261198}),
-i(257096,{spellID=1261197})}}),
+de(11435,{itemID=257097,spellID=1261198}),
+de(11434,{itemID=257096,spellID=1261197})}}),
 flt(103,{awp=70003,g={
 i(138793,{f=55,lvl=32,spellID=217175,g={
 ill(4441),
@@ -6493,6 +6535,9 @@ flt(101,{
 p(844,{itemID=87526,npcID=64899,spellID=126885}),
 p(1204,{awp=50400,itemID=94903,npcID=70082,spellID=138824}),
 p(1256,{awp=50400,itemID=100905,npcID=71693,spellID=143703})}),
+h(-679,{awp=110207,g={
+de(3873,{itemID=247733,spellID=1245217}),
+de(11904,{itemID=258216,spellID=1262979})}}),
 flt(61,{
 i(77544),
 i(77547),
@@ -7659,6 +7704,8 @@ i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
+h(-679,{awp=110207,g={
+i(251766)}}),
 prof(171,{awp=60003,g={
 flt(55,{
 i(116979,{awp=80001,f=55,lvl=35,spellID=172368}),
@@ -7687,8 +7734,8 @@ i(109223,{awp=80001,f=55,lvl=35,spellID=156438}),
 i(118704,{c=a[223],f=55,lvl=35,spellID=175821}),
 i(112090,{f=55,spellID=162313})}),
 h(-679,{awp=110207,g={
-i(257044,{spellID=1261093}),
-i(244318,{spellID=1236859})}}),
+de(11379,{itemID=257044,spellID=1261093}),
+de(1410,{itemID=244318,spellID=1236859})}}),
 flt(50,{
 i(118700,{b=1})}),
 flt(56,{
@@ -7793,8 +7840,8 @@ s(65294,114235,{bonusID=9146,cost={{"i",202211,1}},f=7,lvl=35})}),
 flt(101,{
 p(1569,{b=1,itemID=119328,npcID=84853,spellID=170276})}),
 h(-679,{awp=110207,g={
-i(245436,{spellID=1238568}),
-i(245600,{spellID=1239337})}}),
+de(1325,{itemID=245436,spellID=1238568}),
+de(1791,{itemID=245600,spellID=1239337})}}),
 flt(50,{
 i(202210,{awp=100005,b=1}),
 i(202208,{awp=100005,b=1}),
@@ -7862,7 +7909,7 @@ r(160973,{b=1,itemID=118316,learnedAt=50,lvl=10,requireSkill=185}),
 r(160979,{b=1,itemID=118318,learnedAt=50,lvl=10,requireSkill=185}),
 r(160984,{b=1,itemID=118322,learnedAt=75,lvl=10,requireSkill=185})}}),
 h(-679,{awp=110207,g={
-i(245428,{spellID=1238560})}}),
+de(749,{itemID=245428,spellID=1238560})}}),
 i(111449,{f=55,lvl=35,spellID=160890}),
 i(111433,{f=55,lvl=35,spellID=174303}),
 i(111436,{f=55,lvl=35,spellID=174305}),
@@ -7931,8 +7978,8 @@ i(110640,{f=55}),
 i(110641,{f=55,rwp=70003,u=2}),
 i(110642,{f=55})}),
 h(-679,{awp=110207,g={
-i(245601,{spellID=1239338}),
-i(251655,{spellID=1252917})}}),
+de(1792,{itemID=245601,spellID=1239338}),
+de(8787,{itemID=251655,spellID=1252917})}}),
 flt(103,{awp=70003,g={
 i(138795,{f=55,lvl=35,spellID=217180,g={
 ill(5334),
@@ -7958,6 +8005,9 @@ flt(101,{
 p(1412,{itemID=112057,npcID=80329,spellID=162135}),
 p(1403,{itemID=111402,npcID=79410,spellID=160403}),
 p(1565,{itemID=118741,npcID=88134,spellID=170288})}),
+h(-679,{awp=110207,g={
+de(8191,{itemID=251482,spellID=1252401}),
+de(1406,{itemID=244314,spellID=1236855})}}),
 flt(50,{
 i(127719,{awp=60200,lvl=35,rwp=100005,spellID=187506,u=2}),
 i(171072),
@@ -8412,6 +8462,9 @@ i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
+h(-679,{awp=110207,g={
+o(559409,{
+i(251767)})}}),
 prof(171,{awp=70003,g={
 h(-26,{
 sp(188299,{
@@ -8505,8 +8558,8 @@ i(127838,{f=55,lvl=40,spellID=188020}),
 i(151609,{awp=70300,f=55,spellID=247686}),
 i(127845,{f=55,lvl=40,spellID=188029})}),
 h(-679,{awp=110207,g={
-i(256680,{spellID=1260659}),
-i(257045,{spellID=1261094})}}),
+de(11281,{itemID=256680,spellID=1260659}),
+de(11380,{itemID=257045,spellID=1261094})}}),
 sp(213255,{
 i(137600,{b=1,g={
 s(80790,139393,{b=1,f=4,lvl=40}),
@@ -8522,7 +8575,7 @@ r(209611,{b=1,itemID=137867,learnedAt=80,lvl=10,requireSkill=755}),
 i(130904),
 i(130905),
 i(87399,{b=1}),
-ah(1174,{maps={630,634,641,680},providers={{"o",246812},{"o",268466},{"o",268451}},type="cu",g={
+ah(1174,{maps={630,634,641,680},providers={{"o",246812},{"o",268451},{"o",268466}},type="cu",g={
 i(130917,{b=1,cost={{"c",1174,50}},spellID=126935}),
 i(130920,{b=1,cost={{"c",1174,50}},spellID=196452}),
 i(130916,{b=1,cost={{"c",1174,50}},spellID=126935}),
@@ -8577,9 +8630,9 @@ s(80890,123896,{f=7,lvl=41,spellID=226221}),
 s(80891,123897,{f=7,lvl=40,spellID=226221}),
 s(85958,146667,{awp=70200,c=a[224],f=7,lvl=40,spellID=241330})}),
 h(-679,{awp=110207,g={
-i(247922,{spellID=1245908}),
-i(247909,{spellID=1245895}),
-i(245408,{spellID=1238533})}}),
+de(4036,{itemID=247922,spellID=1245908}),
+de(4023,{itemID=247909,spellID=1245895}),
+de(1314,{itemID=245408,spellID=1238533})}}),
 flt(50,{
 i(124461),
 i(136708,{f=55,spellID=209563}),
@@ -8656,19 +8709,14 @@ p(1699,{itemID=128533,npcID=96403,spellID=191071}),
 p(1701,{itemID=128535,npcID=96405,spellID=191073}),
 p(1700,{itemID=128534,npcID=96404,spellID=191072})}),
 h(-679,{awp=110207,g={
-i(256681,{spellID=1260660}),
-i(247923,{spellID=1245909})}}),
+de(11282,{itemID=256681,spellID=1260660}),
+de(4037,{itemID=247923,spellID=1245909})}}),
 flt(54,{
 i(136691,{f=54,lvl=45}),
 i(136689,{f=54,lvl=45})}),
 flt(102,{
 toy(128536)})}}),
 prof(202,{awp=70003,g={
-flt(101,{
-p(1886,{itemID=132519,npcID=106210,spellID=210696})}),
-flt(102,{
-toy(132518),
-toy(151652,{awp=70300,lvl=39,requireSkill=202})}),
 h(-88,{
 s(76356,132500,{f=4,learnedAt=1,lvl=40,requireSkill=202,spellID=226221}),
 s(76358,132502,{f=6,learnedAt=1,lvl=40,requireSkill=202,spellID=226221}),
@@ -8682,6 +8730,11 @@ s(76361,132505,{f=5,learnedAt=1,lvl=45,requireSkill=202,spellID=201360}),
 s(76360,132504,{f=4,learnedAt=1,lvl=45,requireSkill=202,spellID=201360}),
 s(76357,132501,{f=5,learnedAt=1,lvl=40,requireSkill=202,spellID=226221}),
 s(84517,144331,{awp=70105,f=4,learnedAt=1,lvl=45,requireSkill=202,spellID=201360})}),
+flt(101,{
+p(1886,{itemID=132519,npcID=106210,spellID=210696})}),
+h(-679,{awp=110207,g={
+de(11912,{itemID=258226,spellID=1263008}),
+de(11911,{itemID=258225,spellID=1263007})}}),
 flt(54,{
 i(136687,{f=54,lvl=45}),
 i(136688,{f=54,lvl=45})}),
@@ -8706,7 +8759,10 @@ cq(40732,{itemID=132525,requireSkill=202,spellID=200087}),
 cq(40735,{b=1,itemID=132529,requireSkill=202,spellID=200145}),
 cq(40738,{itemID=132524,requireSkill=202,spellID=200149}),
 i(144341,{awp=70105,b=1,f=55,requireSkill=202,spellID=200061}),
-i(132982,{spellID=210563})})}}),
+i(132982,{spellID=210563})}),
+flt(102,{
+toy(132518),
+toy(151652,{awp=70300,lvl=39,requireSkill=202})})}}),
 prof(356,{awp=70003,g={
 i(133742,{b=1,lvl=39,requireSkill=356,spellID=201826}),
 i(133733,{b=1,lvl=39,requireSkill=356,spellID=201826}),
@@ -8999,6 +9055,9 @@ i(152668,{awp=80001,b=1}),
 i(162460,{awp=80100,b=1}),
 i(162461,{awp=80100,b=1}),
 i(171320,{awp=80300,b=1}),
+h(-679,{awp=110207,g={
+o(556425,{
+i(251768)})}}),
 flt(100,{awp=80001,g={
 mnt(256123,{awp=80200,cost={{"i",158886,1},{"i",158887,1}},itemID=153594,lvl=10})}}),
 prof(171,{awp=80001,g={
@@ -9076,8 +9135,8 @@ i(168499,{awp=80200,f=55,lvl=40,spellID=298153}),
 i(168500,{awp=80200,f=55,lvl=40,spellID=298154}),
 i(168501,{awp=80200,f=55,lvl=40,spellID=298155})}),
 h(-679,{awp=110207,g={
-i(257046,{spellID=1261096}),
-i(257047,{spellID=1261097})}}),
+de(11381,{itemID=257046,spellID=1261096}),
+de(11382,{itemID=257047,spellID=1261097})}}),
 flt(50,{
 i(165744,{f=55,spellID=276183}),
 i(156631,{awp=80105,b=1,lvl=50,requireSkill=171,spellID=260385}),
@@ -9269,8 +9328,8 @@ s(105451,170300,{awp=80300,f=7,lvl=50,r=1}),
 s(105533,170389,{awp=80300,b=1,f=7,requireSkill=164}),
 s(105530,170386,{awp=80300,b=1,f=7,requireSkill=164})}),
 h(-679,{awp=110207,g={
-i(252397,{spellID=1254613}),
-i(252399,{spellID=1254615})}}),
+de(9046,{itemID=252397,spellID=1254613}),
+de(9048,{itemID=252399,spellID=1254615})}}),
 flt(50,{
 i(168417,{awp=80200,lvl=10,spellID=299971}),
 s(184332,152839,{awp=80105,b=1,f=57,learnedAt=150,lvl=50,requireSkill=164,spellID=253205}),
@@ -9353,7 +9412,7 @@ s(105445,170292,{awp=80300,f=20,lvl=50,r=2}),
 s(105459,170309,{awp=80300,f=20,lvl=50,r=1})})}}),
 prof(185,{awp=80001,g={
 h(-679,{awp=110207,g={
-i(245484,{spellID=1238625})}}),
+de(755,{itemID=245484,spellID=1238625})}}),
 i(168311,{awp=80200,f=55,spellID=297043}),
 i(168313,{awp=80200,f=55,lvl=45,spellID=297042}),
 i(174352,{awp=80300,f=55,spellID=316738}),
@@ -9421,8 +9480,8 @@ i(153436,{f=55})}),
 flt(101,{awp=80100,g={
 p(2201,{itemID=152878,npcID=139743,spellID=274760})}}),
 h(-679,{awp=110207,g={
-i(258560,{spellID=1263488}),
-i(258559,{spellID=1263487})}}),
+de(12164,{itemID=258560,spellID=1263488}),
+de(12163,{itemID=258559,spellID=1263487})}}),
 flt(50,{
 i(165741,{f=55,spellID=276180}),
 i(164766,{awp=80105,b=1,lvl=50,requireSkill=333,spellID=282748}),
@@ -9567,6 +9626,10 @@ s(105886,171010,{awp=80300,b=1,f=7,learnedAt=1,lvl=50,requireSkill=202,spellID=2
 s(102263,165888,{awp=80100,b=1,f=7,learnedAt=1,lvl=50,requireSkill=202,spellID=279347})})}),
 flt(101,{
 p(2530,{awp=80100,b=1,itemID=165849,npcID=147619,spellID=286514})}),
+h(-679,{awp=110207,g={
+de(2436,{itemID=246604,spellID=1243040}),
+de(2329,{itemID=246486,spellID=1242334}),
+de(2340,{itemID=246500,spellID=1242364})}}),
 flt(50,{
 i(153597,{f=55,spellID=256153}),
 i(153573,{f=55,spellID=256008}),
@@ -10355,6 +10418,9 @@ i(187742,{awp=90200,b=1}),
 i(183942,{awp=90002,b=1}),
 i(185960,{awp=90100,b=1}),
 i(187784,{awp=90200,b=1}),
+h(-679,{awp=110207,g={
+o(553616,{
+i(251772)})}}),
 prof(171,{awp=90002,g={
 flt(55,{
 i(187802,{awp=90200,f=55,lvl=60,spellID=359867}),
@@ -10388,8 +10454,8 @@ i(171269,{f=55,lvl=51,spellID=307194})}),
 flt(2,{
 s(113236,180751,{f=2,lvl=48})}),
 h(-679,{awp=110207,g={
-i(257051,{spellID=1261101}),
-i(257050,{spellID=1261100})}}),
+de(11386,{itemID=257051,spellID=1261101}),
+de(11385,{itemID=257050,spellID=1261100})}}),
 flt(50,{awp=90100,g={
 i(186697,{f=55,spellID=354681}),
 i(186701,{f=55,spellID=354875}),
@@ -10470,8 +10536,8 @@ s(106011,171447,{f=7,lvl=60}),
 s(106007,171443,{f=7,lvl=60}),
 s(106012,171448,{f=7,lvl=60})}),
 h(-679,{awp=110207,g={
-i(257048,{spellID=1261098}),
-i(257049,{spellID=1261099})}}),
+de(11383,{itemID=257048,spellID=1261098}),
+de(11384,{itemID=257049,spellID=1261099})}}),
 flt(50,{
 i(171441,{f=55,lvl=51,requireSkill=164,spellID=346245}),
 i(171436,{f=55,lvl=50,spellID=322749}),
@@ -10494,7 +10560,7 @@ s(105972,171386,{f=29,lvl=50}),
 s(105978,171392,{f=35,lvl=50})})}}),
 prof(185,{awp=90002,g={
 h(-679,{awp=110207,g={
-i(246705,{spellID=1243425})}}),
+de(2468,{itemID=246705,spellID=1243425})}}),
 i(172069,{f=55,lvl=55,spellID=308526}),
 i(172046,{f=55,lvl=50,spellID=308429}),
 i(186725,{awp=90100,f=55,lvl=55,spellID=314648}),
@@ -10550,8 +10616,8 @@ i(172362,{f=55,lvl=50}),
 i(172363,{f=55,lvl=50}),
 i(172364,{f=55,lvl=50})}),
 h(-679,{awp=110207,g={
-i(258237,{spellID=1263014}),
-i(257098,{spellID=1261199})}}),
+de(11918,{itemID=258237,spellID=1263014}),
+de(11436,{itemID=257098,spellID=1261199})}}),
 flt(50,{awp=90200,g={
 i(187825),
 i(187823)}}),
@@ -10577,6 +10643,9 @@ s(107299,172906,{b=1,f=5,learnedAt=1,lvl=60,requireSkill=202,spellID=329998}),
 s(107301,172908,{b=1,f=7,learnedAt=1,lvl=60,requireSkill=202,spellID=329998})}),
 flt(101,{
 p(2889,{itemID=180208,npcID=170421,spellID=330997})}),
+h(-679,{awp=110207,g={
+de(11928,{itemID=258252,spellID=1263029}),
+de(11921,{itemID=258240,spellID=1263017})}}),
 flt(50,{
 i(172915,{f=55,requireSkill=202,spellID=330338}),
 i(172902,{f=55,requireSkill=202,spellID=321295}),
@@ -11017,6 +11086,9 @@ i(211516,{awp=100206,b=1,cost={{"i",211515,2}}}),
 i(191529,{awp=100002,b=1,spellID=395662}),
 i(191526,{awp=100002,b=1,spellID=395663}),
 i(204462,{awp=100100,b=1,spellID=408595}),
+h(-679,{awp=110207,g={
+o(551833,{
+i(251773)})}}),
 prof(171,{awp=100002,g={
 sp(370747,{sym={{"select","spellID",370746},{"extract","recipeID"}},g={
 i(193366,{f=200,g={
@@ -11194,8 +11266,8 @@ i(191917,{f=55,spellID=371541}),
 i(191918,{f=55,spellID=371546}),
 i(191919,{f=55,spellID=371547})}),
 h(-679,{awp=110207,g={
-i(257052,{spellID=1261102}),
-i(248111,{spellID=1246275})}}),
+de(11387,{itemID=257052,spellID=1261102}),
+de(4167,{itemID=248111,spellID=1246275})}}),
 h(-244,{
 q(71251,{an="s:370747",providers={{"s",370747}},requireSkill=171,type="hqt"}),
 q(71253,{an="s:370745",providers={{"s",370745}},requireSkill=171,type="hqt"}),
@@ -11364,8 +11436,8 @@ s(169685,191623,{b=1,f=7,lvl=70,spellID=370788})}),
 flt(101,{
 p(3274,{b=1,itemID=191886,npcID=189095,spellID=378738})}),
 h(-679,{awp=110207,g={
-i(256430,{spellID=1260366}),
-i(256427,{spellID=1260363})}}),
+de(11165,{itemID=256430,spellID=1260366}),
+de(11162,{itemID=256427,spellID=1260363})}}),
 h(-244,{
 q(71353,{an="s:367712",providers={{"s",367712}},requireSkill=164,type="hqt"}),
 q(71355,{an="s:367714",providers={{"s",367714}},requireSkill=164,type="hqt"}),
@@ -11583,9 +11655,9 @@ r(381407,{learnedAt=45,requireSkill=185}),
 r(381398,{learnedAt=90,requireSkill=185}),
 r(381400,{learnedAt=90,requireSkill=185})}),
 h(-679,{awp=110207,g={
-i(247225,{spellID=1244579}),
-i(247222,{spellID=1244575}),
-i(247224,{spellID=1244577})}}),
+de(2596,{itemID=247225,spellID=1244579}),
+de(2593,{itemID=247222,spellID=1244575}),
+de(2595,{itemID=247224,spellID=1244577})}}),
 flt(50,{
 i(203409,{awp=100007})}),
 i(197757),
@@ -11743,8 +11815,8 @@ i(200044,{f=55,lvl=60})}),
 flt(101,{
 p(3390,{b=1,itemID=200479,npcID=197089,spellID=389801})}),
 h(-679,{awp=110207,g={
-i(256170,{spellID=1260069}),
-i(256171,{spellID=1260070})}}),
+de(10964,{itemID=256170,spellID=1260069}),
+de(10965,{itemID=256171,spellID=1260070})}}),
 h(-244,{
 q(71403,{an="s:389403",providers={{"s",389403}},requireSkill=333,type="hqt"}),
 q(71407,{an="s:389405",providers={{"s",389405}},requireSkill=333,type="hqt"}),
@@ -12024,6 +12096,9 @@ i(198303,{lvl=58,requireSkill=202}),
 i(202087,{lvl=58,spellID=396767})}),
 flt(101,{
 p(3306,{b=1,itemID=193572,npcID=189142,spellID=375321})}),
+h(-679,{awp=110207,g={
+de(4169,{itemID=248113,spellID=1246277}),
+de(11929,{itemID=258253,spellID=1263035})}}),
 h(-244,{
 q(71482,{an="s:382379",providers={{"s",382379}},requireSkill=202,type="hqt"}),
 q(71484,{an="s:382345",providers={{"s",382345}},requireSkill=202,type="hqt"}),
@@ -12500,18 +12575,18 @@ crit(61418,{achID=18825,awp=100107,id=5,maps=a[303],providers={a[183],a[210]},re
 q(71977,{an="s:391516",providers={{"s",391516}},requireSkill=182,type="hqt",g={
 crit(61416,{achID=18825,awp=100107,id=3,maps=a[305],providers={a[186]},requireSkill=182})}}),
 q(72345,{an="s:391564",providers={{"s",391564}},requireSkill=182,type="hqt",g={
-crit(61425,{achID=18829,awp=100107,id=4,maps=a[306],providers={a[182],a[195],a[190],a[185]},requireSkill=182})}}),
+crit(61425,{achID=18829,awp=100107,id=4,maps=a[306],providers={a[182],a[185],a[190],a[195]},requireSkill=182})}}),
 q(72343,{an="s:391562",providers={{"s",391562}},requireSkill=182,type="hqt",g={
-crit(61423,{achID=18829,awp=100107,id=2,maps=a[304],providers={a[180],a[197],a[188],a[187]},requireSkill=182})}}),
+crit(61423,{achID=18829,awp=100107,id=2,maps=a[304],providers={a[180],a[187],a[188],a[197]},requireSkill=182})}}),
 q(72348,{an="s:391558",providers={{"s",391558}},requireSkill=182,type="hqt",g={
-crit(61426,{achID=18829,awp=100107,id=5,maps=a[303],providers={a[179],a[213],a[194],a[215],a[191],a[216],a[184],a[214]},requireSkill=182})}}),
+crit(61426,{achID=18829,awp=100107,id=5,maps=a[303],providers={a[179],a[184],a[191],a[194],a[213],a[214],a[215],a[216]},requireSkill=182})}}),
 q(75138,{an="s:405134",awp=100100,providers={{"s",405134}},requireSkill=182,type="hqt",g={
-crit(61427,{achID=18829,awp=100107,id=6,maps=a[311],providers={a[208],a[205],a[206],a[207]},requireSkill=182})}}),
+crit(61427,{achID=18829,awp=100107,id=6,maps=a[311],providers={a[205],a[206],a[207],a[208]},requireSkill=182})}}),
 q(78007,{an="s:422293",awp=100200,providers={{"s",422293}},requireSkill=182,type="hqt"}),
 q(72344,{an="s:391557",providers={{"s",391557}},requireSkill=182,type="hqt",g={
-crit(61424,{achID=18829,awp=100107,id=3,maps=a[303],providers={a[178],a[209],a[193],a[211],a[192],a[212],a[183],a[210]},requireSkill=182})}}),
+crit(61424,{achID=18829,awp=100107,id=3,maps=a[303],providers={a[178],a[183],a[192],a[193],a[209],a[210],a[211],a[212]},requireSkill=182})}}),
 q(72342,{an="s:391560",providers={{"s",391560}},requireSkill=182,type="hqt",g={
-crit(61422,{achID=18829,awp=100107,id=1,maps=a[305],providers={a[181],a[196],a[189],a[186]},requireSkill=182})}})})}}),
+crit(61422,{achID=18829,awp=100107,id=1,maps=a[305],providers={a[181],a[186],a[189],a[196]},requireSkill=182})}})})}}),
 prof(773,{awp=100002,g={
 sp(382981,{
 i(198418),
@@ -13287,9 +13362,9 @@ i(193017,{b=1,f=55,spellID=376955}),
 i(204909,{awp=100100}),
 i(205115,{awp=100100}),
 i(205170,{awp=100100}),
-i(192992,{f=55,spellID=376381}),
-i(192993,{f=55,spellID=376381}),
-i(192994,{f=55,spellID=376381}),
+i(192992,{spellID=376381}),
+i(192993,{spellID=376381}),
+i(192994,{spellID=376381}),
 i(192892,{b=1}),
 i(202052,{b=1}),
 i(202058,{b=1}),
@@ -13724,7 +13799,7 @@ r(389406,{learnedAt=100,requireSkill=186}),
 r(389461,{learnedAt=60,requireSkill=186})}),
 h(-244,{
 q(71951,{an="s:384688",providers={{"s",384688}},requireSkill=186,type="hqt",g={
-crit(61370,{achID=18819,awp=100107,id=1,maps=a[303],providers={{"o",379252},{"o",379248}},requireSkill=186})}}),
+crit(61370,{achID=18819,awp=100107,id=1,maps=a[303],providers={{"o",379248},{"o",379252}},requireSkill=186})}}),
 q(72347,{an="s:389458",awp=100007,providers={{"s",389458}},requireSkill=186,type="hqt",g={
 crit(61377,{achID=18819,awp=100107,id=8,maps=a[310],providers={{"o",379272}},requireSkill=186})}}),
 q(71956,{an="s:389413",providers={{"s",389413}},requireSkill=186,type="hqt",g={
@@ -13765,7 +13840,7 @@ q(71967,{an="s:389704",providers={{"s",389704}},requireSkill=186,type="hqt",g={
 crit(61386,{achID=18821,awp=100107,id=5,maps=a[303],providers={a[177],a[202]},requireSkill=186})}}),
 q(78061,{an="s:422809",awp=100200,providers={{"s",422809}},requireSkill=186,type="hqt"}),
 q(75137,{an="s:405131",awp=100100,providers={{"s",405131}},requireSkill=186,type="hqt",g={
-crit(61387,{achID=18821,awp=100107,id=6,maps=a[311],providers={a[204],a[203]},requireSkill=186})}}),
+crit(61387,{achID=18821,awp=100107,id=6,maps=a[311],providers={a[203],a[204]},requireSkill=186})}}),
 q(71963,{an="s:389700",providers={{"s",389700}},requireSkill=186,type="hqt",g={
 crit(61382,{achID=18821,awp=100107,id=1,maps=a[303],providers={a[174],a[199]},requireSkill=186})}}),
 q(71966,{an="s:389702",providers={{"s",389702}},requireSkill=186,type="hqt",g={
@@ -14225,6 +14300,9 @@ i(228339,{awp=110002}),
 i(211296,{awp=110002,b=1,cost={{"i",211297,2}}}),
 i(230906,{awp=110100,b=1,cost={{"i",230905,2}}}),
 i(231756,{awp=110200,b=1,cost={{"i",231757,2}}}),
+h(-679,{awp=110207,g={
+o(543723,{
+i(248012)})}}),
 prof(171,{awp=110002,g={
 h(-26,{
 ah(211958,{providers={{"i",211958},{"s",430345}},type="i",g={
@@ -14392,8 +14470,8 @@ i(212289,{f=55,lvl=71,spellID=432403}),
 i(212292,{f=55,lvl=71,spellID=432430}),
 i(212298,{f=55,lvl=71,spellID=432452})}),
 h(-679,{awp=110207,g={
-i(252758,{spellID=1255217}),
-i(257102,{spellID=1261205})}}),
+de(9170,{itemID=252758,spellID=1255217}),
+de(11440,{itemID=257102,spellID=1261205})}}),
 h(-244,{
 q(81132,{an="s:433087",providers={{"s",433087}},requireSkill=171,type="hqt"}),
 q(81090,{an="s:430315",providers={a[221]},requireSkill=171,type="hqt"}),
@@ -14492,8 +14570,8 @@ s(219522,222429,{b=1,f=7,lvl=80}),
 s(219528,222435,{b=1,f=7,lvl=80}),
 s(219641,222458,{b=1,f=7,lvl=80,spellID=455211})}),
 h(-679,{awp=110207,g={
-i(245312,{spellID=1238411}),
-i(245323,{spellID=1238423})}}),
+de(1260,{itemID=245312,spellID=1238411}),
+de(1270,{itemID=245323,spellID=1238423})}}),
 h(-244,{
 q(80492,{an="s:450216",providers={{"s",450216}},requireSkill=164,type="hqt"}),
 q(80595,{an="s:450217",providers={{"s",450217}},requireSkill=164,type="hqt"}),
@@ -14675,10 +14753,10 @@ h(-26,{
 ah(447869,{type="s",g={
 r(447873,{learnedAt=15,requireSkill=185})}})}),
 h(-679,{awp=110207,g={
-i(239170,{spellID=1227834}),
-i(246708,{spellID=1243428}),
-i(246709,{spellID=1243429}),
-i(245326,{spellID=1238426})}}),
+de(759,{itemID=239170,spellID=1227834}),
+de(2471,{itemID=246708,spellID=1243428}),
+de(2472,{itemID=246709,spellID=1243429}),
+de(765,{itemID=245326,spellID=1238426})}}),
 i(222727,{f=55,lvl=68,spellID=457296}),
 i(235805,{awp=110100,f=55,lvl=68,spellID=454149}),
 i(223971,{f=55,lvl=68,spellID=456578}),
@@ -14881,8 +14959,8 @@ i(223678,{f=55,lvl=70}),
 i(223679,{f=55,lvl=70}),
 i(223680,{f=55,lvl=70})}),
 h(-679,{awp=110207,g={
-i(253039,{spellID=1255495}),
-i(253171,{spellID=1255723})}}),
+de(9187,{itemID=253039,spellID=1255495}),
+de(9245,{itemID=253171,spellID=1255723})}}),
 h(-244,{
 q(81040,{an="s:445367",providers={{"s",445367}},requireSkill=333,type="hqt"}),
 q(81072,{an="s:445400",providers={{"s",445400}},requireSkill=333,type="hqt"}),
@@ -15239,6 +15317,9 @@ i(221878,{f=55,lvl=68,spellID=453162}),
 i(221872,{f=55,lvl=68,spellID=453040}),
 i(221873,{f=55,lvl=68,spellID=453040}),
 i(221874,{f=55,lvl=68,spellID=453040})}),
+h(-679,{awp=110207,g={
+de(9268,{itemID=253252,spellID=1255902}),
+de(1984,{itemID=246066,spellID=1240580})}}),
 h(-244,{
 q(86460,{an="s:1213620",awp=110100,providers={{"s",1213620}},requireSkill=202,type="hqt"}),
 q(81356,{an="s:447367",providers={{"s",447367}},requireSkill=202,type="hqt"}),

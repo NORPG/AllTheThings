@@ -1111,11 +1111,12 @@ _.HeaderConstants = {
 	VENDORS = -58,
 	WEAPONS = -101,
 	WORLD_BOSSES = -61,
+	WORLD_DROPS = -698,
 	ZONE_DROPS = -63,
 };
 _.HeaderData = {
+	FILLNPCS = {[-698]=1,[-98]=1,[-95]=1,[-94]=1,[-93]=1,[-90]=1,[-63]=1,[-47]=1,[-27]=1,[-22]=1,[-19]=1},
 	IGNOREINMINILIST = {[-420]=1,[-49]=1},
-	FILLNPCS = {[-98]=1,[-95]=1,[-94]=1,[-93]=1,[-90]=1,[-63]=1,[-47]=1,[-27]=1,[-22]=1,[-19]=1},
 };
 localize(L.HEADER_NAMES, {
 	[-11] = "New Character",
@@ -1344,6 +1345,7 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Twilight Zone",
 	[-691] = "Treasures of Azeroth",
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
+	[-698] = TRANSMOG_SOURCE_4,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1632,6 +1634,7 @@ localize(L.HEADER_ICONS, {
 	[-661] = 236471,
 	[-691] = 7259806,
 	[-694] = _.asset("expansion_tbc"),
+	[-698] = _.asset("category_worlddrops"),
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1684,7 +1687,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=23,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=11,["monthDay"]=23,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=30,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=11,["monthDay"]=30,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=14,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=12,["monthDay"]=14,["weekday"]=1,["year"]=2025}),
@@ -1736,7 +1738,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=8,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=15,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=15,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=22,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=22,["weekday"]=1,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=22,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=22,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=29,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=29,["weekday"]=1,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
@@ -9328,7 +9331,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753956000,
+		release = 1753981200,
 		state = 2,
 	},
 	[5002] = {
@@ -9337,7 +9340,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1754992800,
+		release = 1755018000,
 		state = 2,
 	},
 	[5003] = {
@@ -9346,7 +9349,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755770400,
+		release = 1755795600,
 		state = 2,
 	},
 	[5004] = {
@@ -9355,7 +9358,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756202400,
+		release = 1756227600,
 		state = 2,
 	},
 	[5005] = {
@@ -9364,7 +9367,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756807200,
+		release = 1756832400,
 		state = 2,
 	},
 	[5006] = {
@@ -9373,7 +9376,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756980000,
+		release = 1757005200,
 		state = 2,
 	},
 	[5007] = {
@@ -9382,7 +9385,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758016800,
+		release = 1758042000,
 		state = 2,
 	},
 	[51] = {

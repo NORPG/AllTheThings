@@ -23585,7 +23585,7 @@ s(117656,2018,{awp=100107,coords={{16.8,37.2,47},{17.6,33.6,47}},crs={1110},f=25
 s(117068,880,{awp=100107,coords={{20.8,46.8,47},{80.6,59.6,47}},crs={202},f=28,lvl=18,q=2,rwp=40003,u=2}),
 s(118687,3360,{b=1,crs={412},f=1,lvl=25,q=1,rwp=40003,u=2}),
 s(117081,899,{awp=100107,coords={{18.8,27.8,47},{28.8,29.6,47}},crs={217},f=20,lvl=14,q=2,rwp=40003,u=2}),
-s(117094,920,{awp=100107,coords={{23.6,71.6,47},{49.8,77.8,47}},crs={215,909},f=23,lvl=20,q=2,rwp=40003,u=2})})}}),
+s(117094,920,{coords={{23.6,71.6,47},{49.8,77.8,47}},crs={215,909},f=23,lvl=20,q=2,rwp=40003,u=2})})}}),
 m(23,{icon=236760,lore="The Eastern Plaguelands is the more heavily devastated half of the Plaguelands, the remnants of the Kingdom of Lordaeron. They are located east of the Western Plaguelands and north of the Hinterlands.\n\nThe Scourge's rule here is supreme. Their southern capital of Stratholme is here, under the command of the lich, Kel'Thuzad. The ground is brown, ugly, and sick, the trees corrupted into giant mushrooms and the air polluted with orange mist. Undead, necromancers, and Damned cultists prowl the land. The Scarlet Crusade boasts a large army and battles fervently and vainly against the Scourge; outsiders are also unwelcome. Amani forest trolls strike from the north, attempting to reclaim their ancestral empire.",maps={24},petBattleLvl=12,g={
 m(124,{icon=135771,lore="The Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.",g={
 h(-45,{c={6},g={
@@ -33959,7 +33959,7 @@ s(145097,35359,{awp=20001,b=1,c={11},f=5,lvl=70,minReputation={935,9000},q=3,u=1
 s(145072,35330,{awp=20001,b=1,c={9},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
 s(145087,35345,{awp=20001,b=1,c={8},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
 r(33999,{awp=20001,b=1,itemID=28273,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
-r(27926,{awp=20001,collectible=false,itemID=22537,learnedAt=370,minReputation={935,21000},requireSkill=333,rwp=50004,u=2}),
+r(27926,{awp=20001,collectible=false,itemID=22537,learnedAt=370,minReputation={935,21000},requireSkill=333,u=5}),
 r(34010,{awp=20001,b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},rwp=50004,u=2}),
 r(17632,{awp=20001,b=1,itemID=13517,learnedAt=300,minReputation={935,21000},q=1,requireSkill=171,u=17}),

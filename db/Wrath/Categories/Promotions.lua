@@ -72,6 +72,12 @@ q(63450,{altQuests={63448},awp=20501,coords={{28,75.8,1434}},crs={5111,6740,6741
 mnt(348459,{awp=20501,itemID=184865,lvl=20,rwp=30400,u=2}),
 toy(184871,{awp=20501,rwp=30400,u=2}),
 toy(38233,{awp=20501,b=1,q=3,rwp=30400,u=2})}})}})}}),
+h(-694,{awp=50502,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",rwp=30002,u=2,g={
+mnt(1266345,{awp=50502,itemID=260438,rwp=30002,u=2}),
+toy(260622,{awp=50502,rwp=30002,u=2}),
+toy(260221,{awp=50502,rwp=30002,u=2}),
+p(4962,{awp=50502,itemID=260433,rwp=30002,u=2}),
+mnt(1266866,{awp=50502,itemID=260759,rwp=30002,u=2})}}),
 x(3,{description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(683,{awp=20403,providers={{"i",39286}},rwp=30305,u=2,g={
 crit(69846,{achID=683,awp=20403,id=3,providers={{"n",28883}},rwp=30305,u=2})}}),
@@ -80,7 +86,7 @@ h(-525,{awp=20504,rwp=40001,u=3,g={
 h(-522,{awp=20504,description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,rwp=40001,u=3,g={
 p(4234,{awp=20504,itemID=198665,petTypeID=9,rwp=40001,spellID=384796,u=3}),
 toy(198647,{awp=20504,rwp=40001,u=3}),
-ach(16332,{awp=20504,cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"n",194870},{"i",199914}},rwp=40001,u=3})}}),
+ach(16332,{awp=20504,cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},rwp=40001,u=3})}}),
 h(-523,{awp=20504,description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=3,g={
 mnt(372677,{awp=20504,itemID=192455,lvl=20,rwp=40001,u=3})}})}}),
 h(-526,{awp=30400,rwp=40402,u=3,g={
@@ -100,7 +106,7 @@ s(129974,19160,{awp=11101,b=1,description="This tabard was given to the people o
 p(244,{b=1,description="Granted to players that attach an authenticator to their account.",itemID=49646,petTypeID=7,q=3,spellID=69452,u=1}),
 p(240,{awp=40003,b=1,description="Reward from a Korean-exclusive World Event that mailed you this pet.",itemID=48527,petTypeID=6,q=3,spellID=67527,u=1}),
 p(155,{awp=20100,b=1,description="Reward from the 2007 Korean Worldwide Invitational (Korea Only)",itemID=32498,petTypeID=5,q=3,spellID=40405,u=2}),
-ach(3618,{awp=30102,providers={{"i",46892},{"i",45180}},u=2}),
+ach(3618,{awp=30102,providers={{"i",45180},{"i",46892}},u=2}),
 p(217,{awp=30102,b=1,description="This was obtained by participating in at least 200 arena matches in the 2009 Arena Tournament, or at least 50 matches on the same team in the years after that.",itemID=45180,petTypeID=1,q=3,spellID=63318,u=2}),
 p(1168,{awp=20100,b=1,description="Reward from a Korean Promotional Event (Korea Only)",itemID=20651,petTypeID=1,q=3,spellID=25018,u=2}),
 p(121,{awp=20003,b=1,description="Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",itemID=22114,petTypeID=1,q=3,spellID=27241,u=2}),
@@ -116,7 +122,7 @@ p(247,{awp=40003,b=1,description="Originally only available to the Chinese & Tai
 p(170,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,petTypeID=5,q=3,spellID=45174,u=2}),
 p(171,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,petTypeID=5,q=3,spellID=45175,u=2})}),
 h(-550,{awp=20403,rwp=30002,u=2,g={
-ach(1637,{awp=20403,providers={{"i",37297},{"s",48406}},rwp=30002,u=2}),
+ach(1637,{awp=20403,providers={{"i",37297}},rwp=30002,u=2}),
 p(179,{awp=20403,b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,petTypeID=2,q=3,rwp=30002,spellID=48406,u=2}),
 ach(1636,{awp=20403,providers={{"i",36941}},rwp=30002,u=2}),
 s(145354,36941,{awp=20403,b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,q=3,rwp=30002,u=2}),

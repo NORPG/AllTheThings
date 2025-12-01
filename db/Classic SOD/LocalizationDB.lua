@@ -1385,7 +1385,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=17,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=24,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=1,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=8,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=15,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=22,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=29,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=5,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
@@ -1411,7 +1410,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=5,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=12,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=19,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=26,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=23,["weekday"]=2,["year"]=2026},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=23,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=30,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026},{["remappedID"]=375})
 });
 
 -- Filter Database Module
@@ -5009,7 +5009,7 @@ local achievements = {
 		description = "Raise your reputation to Honored with the Bloodsail Buccaneers, and Exalted with Booty Bay, Everlook, Gadgetzan, Ratchet, Darkmoon Faire, Ravenholdt, and Shen'dralar.",
 		icon = 236206,
 		category = 81,
-		criteria = {8818,8821,8822,8823,8824,8825,8820,8819},
+		criteria = {58452,58453,58454,8824,8825,58455,58456,8823},
 	},
 	[2357] = {
 		name = "Dreadsteed of Xoroth",
@@ -10445,50 +10445,20 @@ local achievementCriterias = {
 		type = 43,
 		asset = 1557,
 	},
-	[8818] = {
-		name = "Honored with Bloodsail Buccaneers",
-		amount = 9000,
-		type = 46,
-		asset = 87,
-	},
-	[8819] = {
-		name = "Exalted with Booty Bay",
-		amount = 42000,
-		type = 46,
-		asset = 21,
-	},
-	[8820] = {
-		name = "Exalted with Everlook",
-		amount = 42000,
-		type = 46,
-		asset = 577,
-	},
-	[8821] = {
-		name = "Exalted with Gadgetzan",
-		amount = 42000,
-		type = 46,
-		asset = 369,
-	},
-	[8822] = {
-		name = "Exalted with Ratchet",
-		amount = 42000,
-		type = 46,
-		asset = 470,
-	},
 	[8823] = {
-		name = "Exalted with Darkmoon Faire",
+		name = "[DNT] Exalted with Darkmoon Faire",
 		amount = 42000,
 		type = 46,
 		asset = 909,
 	},
 	[8824] = {
-		name = "Exalted with Ravenholdt",
+		name = "[DNT] Exalted with Ravenholdt",
 		amount = 42000,
 		type = 46,
 		asset = 349,
 	},
 	[8825] = {
-		name = "Exalted with Shen'dralar",
+		name = "[DNT] Exalted with Shen'dralar",
 		amount = 42000,
 		type = 46,
 		asset = 809,
@@ -10687,6 +10657,31 @@ local achievementCriterias = {
 		name = "Onyxia",
 		type = 0,
 		asset = 10184,
+	},
+	[58452] = {
+		name = "[DNT] Exalted with Gadgetzan",
+		type = 8,
+		asset = 17522,
+	},
+	[58453] = {
+		name = "[DNT] Exalted with Ratchet",
+		type = 8,
+		asset = 17521,
+	},
+	[58454] = {
+		name = "[DNT] Exalted with Booty Bay",
+		type = 8,
+		asset = 17518,
+	},
+	[58455] = {
+		name = "[DNT] Exalted with Everlook",
+		type = 8,
+		asset = 17520,
+	},
+	[58456] = {
+		name = "[DNT] Honored with Bloodsail Buccaneers",
+		type = 8,
+		asset = 17523,
 	},
 };
 L.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;
@@ -11628,7 +11623,7 @@ localize(L.HEADER_NAMES, {
 	[-638] = "Alptraumeinfälle",
 	[-639] = "Runenschnitzen",
 	[-640] = "Seelenvermittler",
-	[-645] = "Weggelegte Vorräte",
+	[-645] = "Abgefangene Vorräte",
 	[-688] = "Blutmond",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -11639,9 +11634,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Die Gegenstände in dieser Liste teilen ihre Vorlage mit dem oben genannten Gegenstand. Im Modus für Einzigartige Vorlagen kann diese Liste Ihnen helfen zu verstehen, warum ein bestimmter Gegenstand als gesammelt markiert ist, oder ob nicht.",
 	[-342] = "Dieser Gegenstand hat eine einzigartige Vorlage. Ihr müsst diesen Gegenstand erhalten, um die Vorlage eurer Sammlung hinzuzufügen.",
 	[-343] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
-	[-632] = "Diese Saison bringt eine anfängliche Levelobergrenze von 25 und ein neues Level-25-Endspiel, einschließlich eines Blackfathom Deeps-Raids für 10 Spieler mit neuen Mechaniken, neuen und neu gestalteten Bossen, die die Taktiken und Strategien der Spieler herausfordern, und neuen Belohnungen.",
+	[-632] = "Diese Saison bringt eine anfängliche Levelobergrenze von 25 und ein neues Level-25-Endspiel, einschließlich eines Tiefschwarze Grotte-Raids für 10 Spieler mit neuen Mechaniken, neuen und neu gestalteten Bossen, die die Taktiken und Strategien der Spieler herausfordern, und neuen Belohnungen.",
 	[-639] = "Runengravur ist ein neues System, das kürzlich für Season of Discovery angekündigt wurde. Es ermöglicht jeder Klasse, ihr Spielerlebnis individuell anzupassen, indem sie neue einzigartige Fähigkeiten freischaltet!",
-	[-645] = "Questgegenstände für „Weggelegte Vorräte“ fallen von Mobs der Stufe 6 und höher in ganz Azeroth. Diese Quests erfordern die Lieferung der Waylaid-Vorräte an einen Vertreter der Organisation als Gegenleistung für ein paar Silbermünzen, Erfahrung und Ansehen. Natürlich fehlen in der Versorgungslieferung Gegenstände, und Sie können sie ergänzen, um höhere Reputationsbelohnungen zu erhalten.",
+	[-645] = "Questgegenstände für „Weggelegte Vorräte“ fallen von Mobs der Stufe 6 und höher in ganz Azeroth. Diese Quests erfordern die Lieferung der Abgefangene Vorräte an einen Vertreter der Organisation als Gegenleistung für ein paar Silbermünzen, Erfahrung und Ansehen. Natürlich fehlen in der Versorgungslieferung Gegenstände, und Sie können sie ergänzen, um höhere Reputationsbelohnungen zu erhalten.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
@@ -13914,14 +13909,9 @@ for key,value in pairs({
 	[8740] = "Insigne der Horde",
 	[8741] = "Insigne der Allianz",
 	[8749] = "Ruinen der Scharlachroten Enklave",
-	[8818] = "Wohlwollend bei den Blutsegelbukanieren",
-	[8819] = "Ehrfürchtig in der Beutebucht",
-	[8820] = "Ehrfürchtig in der Ewigen Warte",
-	[8821] = "Ehrfürchtig in Gadgetzan",
-	[8822] = "Ehrfürchtig in Ratschet",
-	[8823] = "Ehrfürchtig auf dem Dunkelmond-Jahrmarkt",
-	[8824] = "Ehrfürchtig in Rabenholdt",
-	[8825] = "Ehrfürchtig bei den Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essenz des Feuerfürsten",
 	[8894] = "Brustplatte des Eroberers",
 	[8895] = "Brustplatte des Rächers",
@@ -13955,6 +13945,11 @@ for key,value in pairs({
 	[13371] = "Medaillon der Allianz",
 	[17023] = "Ehrfürchtig bei den Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -14336,7 +14331,7 @@ localize(L.HEADER_NAMES, {
 	[-638] = "Incursions de cauchemar",
 	[-639] = "Gravure",
 	[-640] = "Courtiers D'âmes",
-	[-645] = "Fournitures isolées",
+	[-645] = "Fournitures égarées",
 	[-688] = "Lune de sang",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -14347,9 +14342,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Les éléments de cette liste sont des apparences partagées pour l'élément ci-dessus. En mode Apparence unique, cette liste peut vous aider à comprendre pourquoi ou pourquoi un élément spécifique serait marqué Collecté.",
 	[-342] = "Cet article a une apparence unique. Vous devez collecter cet objet spécifiquement pour gagner l’apparence.",
 	[-343] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
-	[-632] = "Cette saison apporte un niveau maximum initial de 25 et une nouvelle fin de partie de niveau 25, comprenant un raid Blackfathom Deeps à 10 joueurs avec de nouvelles mécaniques, des boss nouveaux et réinventés pour défier les tactiques et stratégies des joueurs, et de nouvelles récompenses.",
+	[-632] = "Cette saison apporte un niveau maximum initial de 25 et une nouvelle fin de partie de niveau 25, comprenant un raid Profondeurs de Brassenoire à 10 joueurs avec de nouvelles mécaniques, des boss nouveaux et réinventés pour défier les tactiques et stratégies des joueurs, et de nouvelles récompenses.",
 	[-639] = "La gravure de runes est un nouveau système récemment annoncé pour Season of Discovery. Il permet à chaque classe d'adapter son expérience de jeu en débloquant de nouvelles capacités uniques!",
-	[-645] = "Les objets de quête Waylaid Supplies proviennent des foules de niveau 6 et surtout partout en Azeroth. Ces quêtes nécessitent la livraison des fournitures Waylaid à un représentant de l'organisation en échange de quelques pièces d'argent, d'expérience et de réputation. Bien sûr, il manque des articles dans la livraison de fournitures, et vous pouvez les compléter pour obtenir de plus grandes récompenses de réputation.",
+	[-645] = "Les objets de quête Fournitures égarées proviennent des foules de niveau 6 et surtout partout en Azeroth. Ces quêtes nécessitent la livraison des Fournitures égarées à un représentant de l'organisation en échange de quelques pièces d'argent, d'expérience et de réputation. Bien sûr, il manque des articles dans la livraison de fournitures, et vous pouvez les compléter pour obtenir de plus grandes récompenses de réputation.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
@@ -16626,14 +16621,9 @@ for key,value in pairs({
 	[8740] = "Insigne de la Horde",
 	[8741] = "Insigne de l’Alliance",
 	[8749] = "Ruines de l’enclave Écarlate",
-	[8818] = "Honoré auprès de la Voile sanglante",
-	[8819] = "Exalté auprès de Baie-du-Butin",
-	[8820] = "Exalté auprès de Long-Guet",
-	[8821] = "Exalté auprès de Gadgetzan",
-	[8822] = "Exalté auprès de Cabestan",
-	[8823] = "Exalté auprès de la foire de Sombrelune",
-	[8824] = "Exalté auprès de Ravenholdt",
-	[8825] = "Exalté auprès des Shen’dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essence du seigneur du Feu",
 	[8894] = "Cuirasse de conquérant",
 	[8895] = "Cuirasse de vengeur",
@@ -16667,6 +16657,11 @@ for key,value in pairs({
 	[13371] = "Médaillon de l’Alliance",
 	[17023] = "Exalté auprès des Shen’dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -16750,7 +16745,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
 	[-342] = "Questo oggetto ha un aspetto unico. Devi raccogliere questo oggetto appositamente per guadagnare l'aspetto.",
 	[-343] = "Questo elenco contiene elementi non ottenibili che ATT Discord ha segnalato come bug che Blizzard deve ancora correggere.\n\nNOTA: tutti i filtri vengono ignorati in questo elenco per motivi di visibilità. In questo elenco sono presenti solo gli oggetti rimossi dal gioco a causa di negligenza e non un gigantesco drago sputafuoco.\n\nAgli sviluppatori Blizzard: correggete gli oggetti e gli incontri elencati di seguito.",
-	[-632] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
+	[-632] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Abissi di Fondocupo per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
 	[-639] = "L'incisione delle rune è un nuovo sistema recentemente annunciato per la Stagione delle Scoperte. Permette a ogni classe di personalizzare la propria esperienza di gioco sbloccando nuove abilità uniche!",
 	[-645] = "Gli oggetti della missione Waylaid Supplies vengono rilasciati dai mob di livello 6 e soprattutto su Azeroth. Queste missioni richiedono la consegna delle Forniture Waylaid a un rappresentante dell'organizzazione in cambio di argento, esperienza e reputazione. Naturalmente, ci sono degli articoli mancanti nella spedizione di rifornimenti e puoi integrarli per ottenere maggiori ricompense in termini di reputazione.",
 });
@@ -18176,14 +18171,9 @@ for key,value in pairs({
 	[8740] = "Insignia of the Horde",
 	[8741] = "Insignia of the Alliance",
 	[8749] = "Ruins of the Scarlet Enclave",
-	[8818] = "Honored with Bloodsail Buccaneers",
-	[8819] = "Exalted with Booty Bay",
-	[8820] = "Exalted with Everlook",
-	[8821] = "Exalted with Gadgetzan",
-	[8822] = "Exalted with Ratchet",
-	[8823] = "Exalted with Darkmoon Faire",
-	[8824] = "Exalted with Ravenholdt",
-	[8825] = "Exalted with Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essence of the Firelord",
 	[8894] = "Conqueror's Breastplate",
 	[8895] = "Avenger's Breastplate",
@@ -18217,6 +18207,11 @@ for key,value in pairs({
 	[13371] = "Medallion of the Alliance",
 	[17023] = "Exalted with the Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -18358,7 +18353,7 @@ localize(L.HEADER_NAMES, {
 	[-638] = "Incursões Pesadelares",
 	[-639] = "Gravura",
 	[-640] = "Corretores de Almas",
-	[-645] = "Suprimentos emboscados",
+	[-645] = "Suprimentos Escondidos",
 	[-688] = "Lua Sangrenta",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -18368,9 +18363,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
 	[-342] = "Este item tem uma aparência única. Você deve coletar este item especificamente para ganhar a aparência.",
 	[-343] = "Esta lista contém itens inacessíveis que o ATT Discord relatou como bugs que a Blizzard ainda não corrigiu.\n\nNOTA: Todos os filtros são ignorados nesta lista para visibilidade. Apenas itens removidos do jogo por negligência, em vez de um gigantesco dragão cuspidor de fogo, estão presentes nesta lista.\n\nPara os desenvolvedores da Blizzard: Corrijam os itens e encontros listados abaixo.",
-	[-632] = "Esta temporada traz um limite de nível inicial de 25 e um novo jogo final de nível 25, incluindo um ataque Blackfathom Deeps para 10 jogadores com novas mecânicas, chefes novos e reimaginados para desafiar as táticas e estratégias dos jogadores e novas recompensas.",
+	[-632] = "Esta temporada traz um limite de nível inicial de 25 e um novo jogo final de nível 25, incluindo um ataque Profundezas Negras para 10 jogadores com novas mecânicas, chefes novos e reimaginados para desafiar as táticas e estratégias dos jogadores e novas recompensas.",
 	[-639] = "A gravação de runas é um novo sistema anunciado recentemente para a Temporada de Descobertas. Ele permite que cada classe personalize sua experiência de jogo, desbloqueando novas habilidades únicas!",
-	[-645] = "Itens de missão Waylaid Supplies são obtidos de mobs de nível 6 e acima de Azeroth. Essas missões exigem a entrega dos Suprimentos Waylaid a um representante da organização em troca de um pouco de prata, experiência e reputação. É claro que faltam itens na remessa de suprimentos e você pode complementá-los para obter maiores recompensas de reputação.",
+	[-645] = "Itens de missão Suprimentos Escondidos são obtidos de mobs de nível 6 e acima de Azeroth. Essas missões exigem a entrega dos Suprimentos Escondidos a um representante da organização em troca de um pouco de prata, experiência e reputação. É claro que faltam itens na remessa de suprimentos e você pode complementá-los para obter maiores recompensas de reputação.",
 });
 localize(ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -20464,14 +20459,9 @@ for key,value in pairs({
 	[8740] = "Insígnia da Horda",
 	[8741] = "Insígnia da Aliança",
 	[8749] = "Ruínas do Enclave Escarlate",
-	[8818] = "Honrado pelos Bucaneiros da Vela Sangrenta",
-	[8819] = "Exaltado pela Angra do Butim",
-	[8820] = "Exaltado por Visteterna",
-	[8821] = "Exaltado por Geringontzan",
-	[8822] = "Exaltado pela Vila Catraca.",
-	[8823] = "Exaltado pela Feira de Negraluna",
-	[8824] = "Exaltado por Corvoforte",
-	[8825] = "Exaltado por Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essência do Senhor do Fogo",
 	[8894] = "Peitoral do Conquistador",
 	[8895] = "Peitoral do Vingador",
@@ -20505,6 +20495,11 @@ for key,value in pairs({
 	[13371] = "Medalhão da Aliança",
 	[17023] = "Exaltado com os Shen'dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -21240,7 +21235,7 @@ localize(L.HEADER_NAMES, {
 	[-638] = "Кошмарные вторжения",
 	[-639] = "Гравировка",
 	[-640] = "Душевные брокеры",
-	[-645] = "Подстерегающие припасы",
+	[-645] = "Перехват припасов",
 	[-688] = "Кровавая луна",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -21255,7 +21250,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-343] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
 	[-632] = "В этом сезоне начальный максимальный уровень равен 25, а также новый финал для 25-го уровня, включающий рейд в Непроглядную Пучину для 10 игроков с новой механикой, новыми и переосмысленными боссами, которые бросят вызов тактике и стратегии игроков, а также свежими наградами.",
 	[-639] = "Гравировка рун — это новая система, недавно анонсированная в сезоне «Открытие». Это позволяет каждому классу адаптировать свой игровой процесс, открывая новые уникальные способности!",
-	[-645] = "Квестовые предметы Waylaid Supplies падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
+	[-645] = "Квестовые предметы Перехват припасов падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
@@ -23519,14 +23514,9 @@ for key,value in pairs({
 	[8740] = "Знак различия Орды",
 	[8741] = "Знак различия Альянса",
 	[8749] = "Руины анклава Алого ордена",
-	[8818] = "Уважение среди Пиратов Кровавого Паруса",
-	[8819] = "Превознесение в Пиратской Бухте",
-	[8820] = "Превознесение в Круговзоре",
-	[8821] = "Превознесение в Прибамбасске",
-	[8822] = "Превознесение в Кабестане",
-	[8823] = "Превознесение у ярмарки Новолуния",
-	[8824] = "Превознесение у Черного Ворона",
-	[8825] = "Превознесение у Шен'драларов",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Сущность повелителя огня",
 	[8894] = "Кираса завоевателя",
 	[8895] = "Кираса Мстителя",
@@ -23560,6 +23550,11 @@ for key,value in pairs({
 	[13371] = "Медальон Альянса",
 	[17023] = "Превознесение у шен'дралар",
 	[54579] = "Ониксия",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -23659,7 +23654,7 @@ localize(L.HEADER_NAMES, {
 	[-638] = "악몽 침공지",
 	[-639] = "각인술",
 	[-640] = "소울 브로커",
-	[-645] = "웨이레이드 보급품",
+	[-645] = "잘못 놓인 보급품",
 	[-688] = "핏빛 달",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -25833,14 +25828,9 @@ for key,value in pairs({
 	[8740] = "호드 계급장",
 	[8741] = "얼라이언스 계급장",
 	[8749] = "붉은십자군 폐허",
-	[8818] = "붉은해적단 우호적",
-	[8819] = "무법항 확고한 동맹",
-	[8820] = "눈망루 마을 확고한 동맹",
-	[8821] = "가젯잔 확고한 동맹",
-	[8822] = "톱니항 확고한 동맹",
-	[8823] = "다크문 유랑단 확고한 동맹",
-	[8824] = "라벤홀트 암살단 확고한 동맹",
-	[8825] = "셴드랄라 확고한 동맹",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "불의 군주의 정수",
 	[8894] = "정복자의 가슴보호갑",
 	[8895] = "응징의 가슴보호갑",
@@ -25874,6 +25864,11 @@ for key,value in pairs({
 	[13371] = "얼라이언스의 메달",
 	[17023] = "셴드랄라 확고한 동맹",
 	[54579] = "오닉시아",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -26679,7 +26674,7 @@ localize(L.HEADER_NAMES, {
 	[-59] = "Maestro armero",
 	[-61] = "Jefes de mundo",
 	[-63] = "Botín de zona",
-	[-69] = "Temple of Ahn'Qiraj Modo dificil",
+	[-69] = "Templo de Ahn'Qiraj Modo dificil",
 	[-74] = "Dragones de la pesadilla",
 	[-97] = "Reliquias",
 	[-103] = "Evento de pre-parche",
@@ -26728,10 +26723,17 @@ localize(L.HEADER_NAMES, {
 	[-636] = "Nivel 3",
 	[-637] = "Caza de Monstruos",
 	[-638] = "Incursiones de la Pesadilla",
-	[-639] = "Grabado",
-	[-640] = "Corredores de Almas",
-	[-645] = "Suministros asaltados",
+	[-639] = "Grabado de Runas",
+	[-640] = "Especuladores de almas",
+	[-641] = "Entrenamiento de escudero",
+	[-642] = "Inspiración Rango 1",
+	[-643] = "Inspiración Rango 2",
+	[-644] = "Encantamientos de hombros para conjuntos de niveles",
+	[-645] = "Suministros saqueados",
+	[-646] = "Fabricado",
+	[-647] = "Recolección",
 	[-688] = "Luna Sangrienta",
+	[-697] = "Zul'Gurub Hakkar Modo dificil",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
@@ -26745,9 +26747,11 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-342] = "Este objeto tiene una apariencia única. Debes obtener este objeto específicamente para ganar la apariencia.",
 	[-343] = "Esta lista contiene objetos no obtenibles que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los objetos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los objetos y encuentros que se enumeran a continuación.",
 	[-613] = "Arboleda de la Pesadilla se encuentra cerca de los portales al Sueño Esmeralda.",
-	[-632] = "Esta temporada trae un límite de nivel inicial de 25 y un nuevo final de nivel 25, que incluye una incursión de 10 jugadores en Blackfathom Deeps con nuevas mecánicas, jefes nuevos y reinventados para desafiar las tácticas y estrategias de los jugadores, y nuevas recompensas.",
-	[-639] = "El grabado es un nuevo sistema anunciado recientemente para Season of Discovery. ¡Permite que cada clase adapte su experiencia de juego desbloqueando nuevas habilidades únicas!",
-	[-645] = "Los objetos de misión de Suministros Waylaid caen de mobs de nivel 6 y, sobre todo, en Azeroth. Estas misiones requieren la entrega de suministros Waylaid a un representante de la organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
+	[-632] = "Esta temporada trae un límite de nivel inicial de 25 y un nuevo final de nivel 25, que incluye una banda de 10 jugadores en Cavernas de Brazanegra con nuevas mecánicas, jefes nuevos y reinventados para desafiar las tácticas y estrategias de los jugadores, y nuevas recompensas.",
+	[-639] = "El Grabado de Runas es un nuevo sistema de clases para la Temporada de Descubrimiento. Permite a cada clase personalizar su experiencia de juego desbloqueando nuevas habilidades únicas.",
+	[-641] = "A partir del nivel 50, los paladines pueden completar una cadena de misiones en las Tierras de la Peste del Oeste que les otorgará una reliquia que invoca a su propio escudero. Este escudero puede subir de nivel luchando en combate y curándose con los hechizos del paladín. (Entra en combate y simplemente usa Destello de Luz de rango 1 mientras ataca a los enemigos).",
+	[-642] = "Después de recibir a tu escudero, invócalo usando la Reliquia y luego súbelo de nivel entrando en combate y manteniéndolo con vida.",
+	[-645] = "Los objetos de misión de Suministros saqueados caen de criaturas de nivel 6 o superior en todo Azeroth. Estas misiones requieren la entrega de Suministros saqueados a un representante de organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",
 });
 localize(L.HEADER_LORE, {
@@ -27851,7 +27855,7 @@ for key,value in pairs({
 	[522] = "Eleva una reputación a Exaltado.",
 	[523] = "Eleva 5 reputaciones a Exaltado.",
 	[524] = "Eleva 10 reputaciones a Exaltado.",
-	[546] = "Compra 6 ranuras adicionales en el banco.",
+	[546] = "Compra 7 ranuras adicionales en el banco.",
 	[627] = "Explora Dun Morogh y descubre todas las zonas cubiertas del mapa del mundo.",
 	[628] = "Derrota a Edwin VanCleef.",
 	[629] = "Derrota a Taragaman el Hambriento.",
@@ -29004,14 +29008,9 @@ for key,value in pairs({
 	[8740] = "Insignia de la Horda",
 	[8741] = "Insignia de la Alianza",
 	[8749] = "Ruinas de El Enclave Escarlata",
-	[8818] = "Honorable con Bucaneros Velasangre",
-	[8819] = "Exaltado con Bahía del Botín",
-	[8820] = "Exaltado con Vista Eterna",
-	[8821] = "Exaltado con Gadgetzan",
-	[8822] = "Exaltado con Trinquete",
-	[8823] = "Exaltado con la Feria de la Luna Negra",
-	[8824] = "Exaltado con Ravenholdt",
-	[8825] = "Exaltado con Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Esencia del Señor del Fuego",
 	[8894] = "Coraza de conquistador",
 	[8895] = "Coraza del Vengador",
@@ -29045,6 +29044,11 @@ for key,value in pairs({
 	[13371] = "Medallón de la Alianza",
 	[17023] = "Exaltado con los Shen'dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
@@ -29310,12 +29314,16 @@ localize(L.HEADER_NAMES, {
 	[-103] = "Evento de pre-expansion",
 	[-613] = "Arboleda de las Pesadillas",
 	[-615] = "Ópera de imprecación",
+	[-632] = "Temporada de descubrimiento",
 	[-638] = "Incursiones de pesadilla",
+	[-640] = "Negociante de almas",
+	[-645] = "Suministros faltantes",
 	[-688] = "Luna de sangre",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
 	[-613] = "Arboleda de las Pesadillas se encuentra cerca de los portales al Sueño Esmeralda.",
+	[-645] = "Los objetos de misión de Suministros faltantes caen de criaturas de nivel 6 o superior en todo Azeroth. Estas misiones requieren la entrega de Suministros faltantes a un representante de organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalar.",
 });
 for key,value in pairs({
@@ -30400,14 +30408,9 @@ for key,value in pairs({
 	[8740] = "Insignia de la Horda",
 	[8741] = "Insignia de la Alianza",
 	[8749] = "Ruinas de El Enclave Escarlata",
-	[8818] = "Honorable con Bucaneros Velasangre",
-	[8819] = "Exaltado con Bahía del Botín",
-	[8820] = "Exaltado con Vista Eterna",
-	[8821] = "Exaltado con Gadgetzan",
-	[8822] = "Exaltado con Trinquete",
-	[8823] = "Exaltado con la Feria de la Luna Negra",
-	[8824] = "Exaltado con Ravenholdt",
-	[8825] = "Exaltado con los Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Esencia del Señor del Fuego",
 	[8894] = "Coraza de conquistador",
 	[8895] = "Coraza del Vengador",
@@ -30441,6 +30444,11 @@ for key,value in pairs({
 	[13371] = "Medallón de la Alianza",
 	[17023] = "Exaltado con los Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -31308,7 +31316,7 @@ localize(L.HEADER_NAMES, {
 	[-638] = "梦魇进犯",
 	[-639] = "铭刻",
 	[-640] = "灵魂掮客",
-	[-645] = "被伏击的货物",
+	[-645] = "遭劫货物",
 	[-646] = "制造",
 	[-647] = "采集",
 	[-688] = "鲜血之月",
@@ -33422,14 +33430,9 @@ for key,value in pairs({
 	[8740] = "部落徽记",
 	[8741] = "联盟徽记",
 	[8749] = "血色领地废墟",
-	[8818] = "在血帆海盗的声望达到尊敬",
-	[8819] = "藏宝海湾崇拜",
-	[8820] = "永望镇崇拜",
-	[8821] = "加基森崇拜",
-	[8822] = "棘齿城崇拜",
-	[8823] = "暗月马戏团崇拜",
-	[8824] = "拉文霍德崇拜",
-	[8825] = "辛德拉崇拜",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "火焰之王的精华",
 	[8894] = "胜利者胸甲",
 	[8895] = "复仇者的胸甲",
@@ -33463,6 +33466,11 @@ for key,value in pairs({
 	[13371] = "联盟勋章",
 	[17023] = "辛德拉崇拜",
 	[54579] = "奥妮克希亚",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
@@ -34165,7 +34173,7 @@ localize(L.HEADER_NAMES, {
 	[-638] = "夢魘入侵",
 	[-639] = "紋刻",
 	[-640] = "靈魂仲介者",
-	[-645] = "遭攔截的貨物",
+	[-645] = "伏擊物資",
 	[-646] = "製作",
 	[-647] = "採集",
 	[-688] = "血月",
@@ -35557,14 +35565,9 @@ for key,value in pairs({
 	[8740] = "部落徽記",
 	[8741] = "聯盟徽記",
 	[8749] = "血色領區廢墟",
-	[8818] = "血帆海盜尊敬",
-	[8819] = "藏寶海灣崇拜",
-	[8820] = "永望鎮崇拜",
-	[8821] = "加基森崇拜",
-	[8822] = "棘齒城崇拜",
-	[8823] = "暗月馬戲團崇拜",
-	[8824] = "拉文霍德崇拜",
-	[8825] = "辛德拉崇拜",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "炎魔的精華",
 	[8894] = "征服者的胸甲",
 	[8895] = "復仇者的胸甲",
@@ -35598,6 +35601,11 @@ for key,value in pairs({
 	[13371] = "聯盟勳章",
 	[17023] = "辛德拉崇拜。",
 	[54579] = "奧妮克希亞",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end

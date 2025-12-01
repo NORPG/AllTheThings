@@ -34,7 +34,7 @@ q(11083,{awp=20100,coords={{71.6,87.6,1948}},minReputation={1015,3000},qgs={2316
 qo(1,{awp=20100,providers={{"n",23305}},u=1901}),
 qo(2,{awp=20100,providers={{"n",23324}},u=1901})}}),
 q(11086,{awp=20100,coords={{66.3,85.6,1948}},isDaily=1,maps={1951},maxReputation={1015,42000},qgs={23139},sourceQuests={11084},u=1901,g={
-qo(1,{awp=20100,coords={{12,40.6,1951}},providers={{"n",23393},{"n",22341},{"n",22342},{"n",22343},{"n",22363},{"n",22393}},u=1901})}}),
+qo(1,{awp=20100,coords={{12,40.6,1951}},providers={{"n",22341},{"n",22342},{"n",22343},{"n",22363},{"n",22393},{"n",23393}},u=1901})}}),
 q(11071,{awp=20100,coords={{65.5,85.3,1948}},qgs={23348},sourceQuests={11070},u=1901,g={
 ach(1638,{awp=20100,sourceQuests={11071},u=1901}),
 i(32863,{awp=20100,b=1,f=53,q=3,u=1901})}}),
@@ -77,7 +77,7 @@ qo(2,{awp=20100,providers={{"n",23309}},u=1901})}}),
 q(11084,{awp=20100,coords={{66,86.4,1948}},minReputation={1015,9000},qgs={23140},sourceQuests={11053},u=1901,g={
 i(32695,{awp=20100,b=1,f=53,q=3,u=1901})}}),
 q(11090,{awp=20100,coords={{66.2,85.6,1948}},maps={1951},qgs={23427},sourceQuests={11089},u=1901,g={
-qo(1,{awp=20100,coords={{10.6,41.4,1951}},providers={{"n",22357},{"i",32825}},u=1901}),
+qo(1,{awp=20100,coords={{10.6,41.4,1951}},providers={{"i",32825},{"n",22357}},u=1901}),
 s(143215,32871,{awp=20100,b=1,f=7,q=2,u=1901}),
 s(143213,32869,{awp=20100,b=1,f=5,q=2,u=1901}),
 s(143216,32872,{awp=20100,b=1,f=27,q=2,u=1901}),
@@ -113,7 +113,7 @@ mnt(41517,{awp=20100,b=1,itemID=32861,lvl=70,q=4,u=1901}),
 mnt(41518,{awp=20100,b=1,itemID=32862,lvl=70,q=4,u=1901})}})}}),
 h(-63,{awp=20100,u=1901,g={
 i(32427,{awp=20100,b=1,crs={23169,23264,23267,23269,23285,23286,23305,23324,23326,23501},q=1,u=1901}),
-i(32506,{awp=20100,b=1,crs={23169,23264,23269,23285,23286,23324,23326,23501},providers={{"o",185881},{"o",185915},{"o",185877}},q=2,u=1901}),
+i(32506,{awp=20100,b=1,crs={23169,23264,23269,23285,23286,23324,23326,23501},providers={{"o",185877},{"o",185881},{"o",185915}},q=2,u=1901}),
 i(32621,{awp=20100,b=1,coords={{74.6,86.5,1948}},crs={23267},lvl=70,minReputation={1015,0},q=1,u=1901}),
 i(32724,{awp=20100,b=1,coords={{69.4,86,1948}},crs={23286},q=1,sym={{"select","itemID",32506,32464,32468,32470}},u=1901,g={
 i(32726,{awp=20100,b=1,lvl=70,q=1,u=1901})}})}})}})}),
@@ -135,7 +135,7 @@ crit(10228,{achID=2836,awp=30200,crs={33561,33747,35328},id=1,providers={{"s",64
 crit(10224,{achID=2836,awp=30200,crs={33562,33739,35330},id=1,providers={{"s",64808}},u=31}),
 crit(9922,{achID=2836,awp=30200,crs={33384,33749,35327},id=1,providers={{"s",64816}},u=31}),
 crit(9921,{achID=2836,awp=30200,crs={33383,33748,35325},id=1,providers={{"s",64815}},u=31})}}),
-ach(3736,{awp=30200,providers={{"i",47541},{"s",67056}},u=32}),
+ach(3736,{awp=30200,providers={{"i",47541}},u=32}),
 ach(3677,{awp=30200,minReputation={1124,42000},r=1,sourceQuests={13736,13737,13738,13739,13740},u=31}),
 ach(4596,{awp=30200,description="You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",maps={125},sourceQuests={24795,24796,24798,24799,24800,24801},u=33,g={
 s(178266,50050,{awp=30200,b=1,f=23,lvl=80,q=4,u=33}),
@@ -266,7 +266,7 @@ q(13739,{awp=30200,coords={{76.5,24.2,118}},qgs={33373},races={5},sourceQuests={
 p(216,{awp=30200,b=1,itemID=45022,petTypeID=1,q=3,r=1,spellID=62746,u=31}),
 cu(241,{awp=30200,u=32})}}),
 q(13681,{awp=30100,coords={{74,24.6,118}},isDaily=1,maps={120},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31;end,qgs={33435},rwp=40001,sourceQuests={13820},u=31,g={
-qo(1,{awp=30200,providers={{"i",45278},{"o",194463},{"o",194461},{"i",45281}},u=31})}}),
+qo(1,{awp=30200,providers={{"i",45278},{"i",45281},{"o",194461},{"o",194463}},u=31})}}),
 q(14074,{awp=30200,coords={{76.2,19.6,118}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
 qo(1,{awp=30200,crs={34838,34839,34965},providers={{"i",46859},{"o",195274}},u=32}),
 cu(241,{awp=30200,u=32})}}),
@@ -444,17 +444,17 @@ cu(241,{awp=30200,providers={{"i",45724}},u=31})}}),
 q(24442,{awp=30200,crs={34838,34839},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,providers={{"i",49676}},sourceAchievements={2771,2817},u=32,g={
 qo(1,{awp=30200,coords={{43.9,24.5,170}},providers={{"i",49678},{"o",201367}},u=32})}}),
 q(14076,{awp=30200,coords={{76.2,19.6,118}},isDaily=1,maps={120},minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34912},r=2,sourceAchievements={3676},u=32,g={
-qo(1,{awp=30200,coords={{43.4,59.3,120}},providers={{"i",46889},{"n",34920},{"o",195308},{"i",46893}},u=32}),
+qo(1,{awp=30200,coords={{43.4,59.3,120}},providers={{"i",46889},{"i",46893},{"n",34920},{"o",195308}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(14092,{awp=30200,coords={{76.1,24,118}},isDaily=1,maps={120},minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34914},r=1,sourceAchievements={3677},u=32,g={
-qo(1,{awp=30200,coords={{43.4,59.3,120}},providers={{"i",46889},{"n",34920},{"o",195308},{"i",46893}},u=32}),
+qo(1,{awp=30200,coords={{43.4,59.3,120}},providers={{"i",46889},{"i",46893},{"n",34920},{"o",195308}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(13846,{awp=30200,coords={{69.5,22.4,118}},isDaily=1,maxReputation={1106,42000},qgs={34210},sourceQuests={13702,13732,13733,13734,13735,13736,13737,13738,13739,13740},u=31}),
 q(14105,{awp=30200,coords={{69.4,23.1,118}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={34882},sourceAchievements={2771,2817},u=32,g={
 qo(1,{awp=30200,coords={{64.2,21.6,118}},providers={{"n",34808}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(14101,{awp=30200,coords={{69.4,23.1,118}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={34882},sourceAchievements={2771,2817},u=32,g={
-qo(1,{awp=30200,coords={{50.4,15.6,170}},providers={{"n",34980},{"i",47006}},u=32}),
+qo(1,{awp=30200,coords={{50.4,15.6,170}},providers={{"i",47006},{"n",34980}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(13794,{awp=30200,c={1,2,3,4,5,7,8,9,11},coords={{69.6,22.8,118}},isBreadcrumb=1,nextQuests={13682,13789,13790,13809,13810,13811,13861,13862},qgs={33817},sourceQuests={13702,13732,13733,13734,13735,13736,13737,13738,13739,13740},u=31}),
 q(14108,{awp=30200,coords={{69.4,23.1,118}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={35094},sourceAchievements={2771,2817},u=32,g={
@@ -462,14 +462,14 @@ qo(1,{awp=30200,providers={{"i",46954},{"n",34925}},u=32}),
 qo(2,{awp=30200,providers={{"n",35092}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(14090,{awp=30200,coords={{76.2,19.6,118}},isDaily=1,maps={120},minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34912},r=2,sourceAchievements={3676},u=32,g={
-qo(1,{awp=30200,coords={{44.6,82,120}},providers={{"n",29618},{"i",46885}},u=32}),
+qo(1,{awp=30200,coords={{44.6,82,120}},providers={{"i",46885},{"n",29618}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(14141,{awp=30200,coords={{76.1,24,118}},isDaily=1,maps={120},minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34914},r=1,sourceAchievements={3677},u=32,g={
-qo(1,{awp=30200,coords={{44.6,82,120}},providers={{"n",29618},{"i",46885}},u=32}),
+qo(1,{awp=30200,coords={{44.6,82,120}},providers={{"i",46885},{"n",29618}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(14095,{awp=30200,crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,providers={{"i",46955}},sourceAchievements={2771,2817},u=32}),
 q(13627,{awp=30100,coords={{74.2,24.6,118}},isDaily=1,maps={127},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31;end,qgs={33434},rwp=40001,sourceQuests={13820},u=31,g={
-qo(1,{awp=30200,providers={{"i",45045},{"n",33308},{"i",45046}},u=31})}}),
+qo(1,{awp=30200,providers={{"i",45045},{"i",45046},{"n",33308}},u=31})}}),
 q(13625,{awp=30200,coords={{76.5,19.5,118}},isDaily=1,providers={{"i",46069}},qgs={33647,33843},r=2,sourceQuests={13828,13835,13837},u=31,g={
 qo(1,{awp=30200,providers={{"n",33229}},u=31}),
 qo(2,{awp=30200,providers={{"n",33243}},u=31}),
@@ -499,10 +499,10 @@ q(13838,{awp=30200,coords={{76.2,24.4,118}},providers={{"i",46070}},qgs={33659,3
 qo(1,{awp=30200,coords={{73.2,19.2,118}},providers={{"n",33974}},u=31}),
 qo(2,{awp=30200,providers={{"n",33243}},u=31})}}),
 q(14102,{awp=30200,coords={{69.4,23.1,118}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={34882},sourceAchievements={2771,2817},u=32,g={
-qo(1,{awp=30200,coords={{43.8,25.6,170}},providers={{"n",34965},{"i",47009}},u=32}),
+qo(1,{awp=30200,coords={{43.8,25.6,170}},providers={{"i",47009},{"n",34965}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(14104,{awp=30200,coords={{69.4,23.1,118}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={34882},sourceAchievements={2771,2817},u=32,g={
-qo(1,{awp=30200,coords={{58.6,31.6,170}},providers={{"n",35012},{"i",47029}},u=32}),
+qo(1,{awp=30200,coords={{58.6,31.6,170}},providers={{"i",47029},{"n",35012}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(14152,{awp=30200,coords={{76.2,19.6,118}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
 qo(1,{awp=30200,providers={{"n",34947}},u=32}),
@@ -519,19 +519,19 @@ q(14140,{awp=30200,coords={{76.1,24,118}},isDaily=1,minReputation={1124,42000},O
 qo(1,{awp=30200,providers={{"n",34838},{"n",34839}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(13789,{awp=30200,c={1,2,3,4,5,7,8,9,11},coords={{69.9,23.4,118}},isDaily=1,qgs={33763},r=2,sourceQuests={13794},u=31,g={
-qo(1,{awp=30200,providers={{"n",34728},{"n",34734},{"n",31738},{"n",31731}},u=31}),
+qo(1,{awp=30200,providers={{"n",31731},{"n",31738},{"n",34728},{"n",34734}},u=31}),
 i(46114,{awp=30200,b=1,q=1,u=31}),
 cu(241,{awp=30200,providers={{"i",45724}},u=31})}}),
 q(13810,{awp=30200,c={1,2,3,4,5,7,8,9,11},coords={{69.9,23.4,118}},isDaily=1,qgs={33763},r=1,sourceQuests={13794},u=31,g={
-qo(1,{awp=30200,providers={{"n",34728},{"n",34734},{"n",31738},{"n",31731}},u=31}),
+qo(1,{awp=30200,providers={{"n",31731},{"n",31738},{"n",34728},{"n",34734}},u=31}),
 i(46114,{awp=30200,b=1,q=1,u=31}),
 cu(241,{awp=30200,providers={{"i",45724}},u=31})}}),
 q(13791,{awp=30200,c={6},coords={{73.8,19.6,118}},isDaily=1,qgs={33769},r=2,sourceQuests={13795},u=31,g={
-qo(1,{awp=30200,providers={{"n",34728},{"n",34734},{"n",31738},{"n",31731}},u=31}),
+qo(1,{awp=30200,providers={{"n",31731},{"n",31738},{"n",34728},{"n",34734}},u=31}),
 i(46114,{awp=30200,b=1,q=1,u=31}),
 cu(241,{awp=30200,providers={{"i",45724}},u=31})}}),
 q(13813,{awp=30200,c={6},coords={{73.8,19.6,118}},isDaily=1,qgs={33769},r=1,sourceQuests={13795},u=31,g={
-qo(1,{awp=30200,providers={{"n",34728},{"n",34734},{"n",31738},{"n",31731}},u=31}),
+qo(1,{awp=30200,providers={{"n",31731},{"n",31738},{"n",34728},{"n",34734}},u=31}),
 i(46114,{awp=30200,b=1,q=1,u=31}),
 cu(241,{awp=30200,providers={{"i",45724}},u=31})}}),
 q(13667,{awp=30200,coords={{69.6,22.8,118}},qgs={33817},r=2,u=31,g={
@@ -539,9 +539,9 @@ crit(9698,{achID=2756,awp=30200,id=1,u=31})}}),
 q(13668,{awp=30200,coords={{69.6,22.8,118}},qgs={33817},r=1,u=31,g={
 crit(9699,{achID=2756,awp=30200,id=1,u=31})}}),
 q(13679,{awp=30200,coords={{76.5,19.4,118}},qgs={33625},r=2,sourceQuests={13672},u=31,g={
-qo(1,{awp=30200,coords={{71.4,19.6,118}},providers={{"n",33448},{"n",33447}},u=31})}}),
+qo(1,{awp=30200,coords={{71.4,19.6,118}},providers={{"n",33447},{"n",33448}},u=31})}}),
 q(13680,{awp=30200,coords={{76.3,24.4,118}},qgs={33542},r=1,sourceQuests={13678},u=31,g={
-qo(1,{awp=30200,coords={{71.4,19.6,118}},providers={{"n",33448},{"n",33447}},u=31})}}),
+qo(1,{awp=30200,coords={{71.4,19.6,118}},providers={{"n",33447},{"n",33448}},u=31})}}),
 q(13634,{awp=30200,coords={{69.4,23,118}},maps={1421},qgs={33417},r=1,sourceQuests={13668},u=31,g={
 qo(1,{awp=30200,coords={{53.1,28.1,1421}},providers={{"i",45062},{"o",194341}},u=31})}}),
 q(13633,{awp=30200,coords={{69.4,23,118}},maps={1436},qgs={33417},r=2,sourceQuests={13667},u=31,g={
@@ -549,11 +549,11 @@ qo(1,{awp=30200,coords={{53.2,28.1,1436}},providers={{"i",45062},{"o",194341}},u
 q(14016,{awp=30200,coords={{69.4,23,118}},qgs={33417},sourceQuests={13664},u=32,g={
 qo(1,{awp=30200,coords={{79.4,23.2,118}},providers={{"n",35127}},u=32})}}),
 q(13664,{awp=30200,coords={{69.4,23,118}},qgs={33417},sourceQuests={13663,13702,13732,13733,13734,13735,13736,13737,13738,13739,13740},u=31,g={
-qo(1,{awp=30200,coords={{71.4,23.8,118}},providers={{"n",33785},{"i",45568},{"n",33870}},u=31})}}),
+qo(1,{awp=30200,coords={{71.4,23.8,118}},providers={{"i",45568},{"n",33785},{"n",33870}},u=31})}}),
 q(14017,{awp=30200,coords={{69.4,23,118}},qgs={33417},sourceQuests={14016},u=32,g={
 qo(1,{awp=30200,coords={{61.6,22.6,118}},crs={35113},providers={{"i",47048}},u=32})}}),
 q(13663,{awp=30200,coords={{69.4,23,118}},qgs={33417},sourceQuests={13654},u=31,g={
-qo(1,{awp=30200,coords={{77.8,21.6,118}},providers={{"n",33519},{"i",45083}},u=31}),
+qo(1,{awp=30200,coords={{77.8,21.6,118}},providers={{"i",45083},{"n",33519}},u=31}),
 qo(2,{awp=30200,coords={{40.4,12.9,118},{54.1,8.6,118}},providers={{"i",45121},{"o",194423}},u=31}),
 qo(3,{awp=30200,coords={{40.4,12.9,118},{54.1,8.6,118}},providers={{"i",45122},{"o",194424}},u=31})}}),
 q(13820,{awp=30100,coords={{69.6,22.8,118}},isBreadcrumb=1,nextQuests={13627,13681},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31;end,qgs={33817},rwp=40001,u=31}),
@@ -594,7 +594,7 @@ q(13780,{awp=30200,coords={{76.5,24.2,118}},isDaily=1,maps={117,127},OnUpdate=_.
 qo(1,{awp=30200,providers={{"i",45003}},u=31}),
 i(44987,{awp=30200,b=1,q=1,u=31})}}),
 q(14107,{awp=30200,coords={{69.4,23.1,118}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={35094},sourceAchievements={2771,2817},u=32,g={
-qo(1,{awp=30200,providers={{"n",32149},{"i",47033},{"o",195344},{"i",47035}},u=32})}}),
+qo(1,{awp=30200,providers={{"i",47033},{"i",47035},{"n",32149},{"o",195344}},u=32})}}),
 q(13761,{awp=30200,coords={{76.4,19,118}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13717,qgs={33654},r=2,sourceQuests={13689,13706},u=31,g={
 qo(1,{awp=30200,crs={33285,33306,33382,33383,33384,33558,33561,33562,33564,33565},providers={{"i",45127}},u=31}),
 i(44987,{awp=30200,b=1,q=1,u=31})}}),
@@ -626,18 +626,18 @@ q(13782,{awp=30200,coords={{76.5,24.3,118}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOn
 qo(1,{awp=30200,crs={33285,33306,33382,33383,33384,33558,33561,33562,33564,33565},providers={{"i",45127}},u=31}),
 i(44987,{awp=30200,b=1,q=1,u=31})}}),
 q(14077,{awp=30200,coords={{76.2,19.6,118}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
-qo(1,{awp=30200,providers={{"n",34852},{"i",46870}},u=32}),
+qo(1,{awp=30200,providers={{"i",46870},{"n",34852}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(14144,{awp=30200,coords={{76.1,24,118}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34771},r=1,sourceAchievements={3677},u=32,g={
-qo(1,{awp=30200,providers={{"n",34852},{"i",46870}},u=32}),
+qo(1,{awp=30200,providers={{"i",46870},{"n",34852}},u=32}),
 cu(241,{awp=30200,u=32})}}),
 q(13795,{awp=30200,c={6},coords={{69.6,22.8,118}},qgs={33817},sourceQuests={13702,13732,13733,13734,13735,13736,13737,13738,13739,13740},u=31}),
 q(13641,{awp=30200,coords={{69.4,23,118}},maps={127},qgs={33417},sourceQuests={13633,13634},u=31,g={
 qo(1,{awp=30200,coords={{47,41.4,127}},crs={33422},providers={{"i",45064}},u=31})}}),
 q(13643,{awp=30200,coords={{69.4,23,118}},qgs={33417},sourceQuests={13641},u=31,g={
-qo(1,{awp=30200,coords={{79.2,23,118}},providers={{"n",33439},{"i",45070},{"o",194537}},u=31}),
-qo(2,{awp=30200,coords={{79.6,23.6,118}},providers={{"n",33455},{"i",45070},{"o",194539}},u=31}),
-qo(3,{awp=30200,coords={{79.6,22.8,118}},providers={{"n",33457},{"i",45070},{"o",194538}},u=31})}}),
+qo(1,{awp=30200,coords={{79.2,23,118}},providers={{"i",45070},{"n",33439},{"o",194537}},u=31}),
+qo(2,{awp=30200,coords={{79.6,23.6,118}},providers={{"i",45070},{"n",33455},{"o",194539}},u=31}),
+qo(3,{awp=30200,coords={{79.6,22.8,118}},providers={{"i",45070},{"n",33457},{"o",194538}},u=31})}}),
 q(13725,{awp=30200,coords={{76.3,19,118}},qgs={33592},r=2,sourceQuests={13717},u=31,g={
 qo(1,{awp=30200,coords={{68.8,20.4,118}},providers={{"n",33707}},u=31}),
 crit(9773,{achID=2760,awp=30200,id=1,r=2,u=31})}}),
@@ -689,7 +689,7 @@ qo(1,{awp=30200,providers={{"i",44987}},u=31})}}),
 q(13721,{awp=30200,coords={{76.5,24.2,118}},qgs={33373},r=1,sourceQuests={13695,13710},u=31,g={
 qo(1,{awp=30200,providers={{"i",44987}},u=31})}}),
 q(13654,{awp=30200,coords={{69.4,23,118}},maps={127},qgs={33417},sourceQuests={13643},u=31,g={
-qo(1,{awp=30200,coords={{38.6,59.6,127}},crs={33498},providers={{"i",45082},{"i",45080}},u=31})}}),
+qo(1,{awp=30200,coords={{38.6,59.6,127}},crs={33498},providers={{"i",45080},{"i",45082}},u=31})}}),
 q(13682,{awp=30200,c={1,2,3,4,5,7,8,9,11},coords={{69.9,23.4,118}},isDaily=1,qgs={33759},r=2,sourceQuests={13664,13794},u=31,g={
 qo(1,{awp=30200,providers={{"n",33687}},u=31}),
 qo(2,{awp=30200,providers={{"n",33695}},u=31}),
@@ -711,10 +711,10 @@ qo(2,{awp=30200,providers={{"n",33695}},u=31}),
 i(46114,{awp=30200,b=1,q=1,u=31}),
 cu(241,{awp=30200,providers={{"i",45724}},u=31})}}),
 q(13671,{awp=30200,coords={{76.4,19.4,118}},isDaily=1,qgs={33646},r=2,sourceQuests={13828,13835,13837},u=31,g={
-qo(1,{awp=30200,providers={{"n",31718},{"n",31783},{"n",29720},{"n",32257}},u=31}),
+qo(1,{awp=30200,providers={{"n",29720},{"n",31718},{"n",31783},{"n",32257}},u=31}),
 i(45192,{awp=30200,b=1,q=1,u=31})}}),
 q(13676,{awp=30200,coords={{76.3,24.3,118}},isDaily=1,qgs={33658},r=1,sourceQuests={13829,13838,13839},u=31,g={
-qo(1,{awp=30200,providers={{"n",31718},{"n",31783},{"n",29720},{"n",32257}},u=31}),
+qo(1,{awp=30200,providers={{"n",29720},{"n",31718},{"n",31783},{"n",32257}},u=31}),
 i(45192,{awp=30200,b=1,q=1,u=31})}}),
 q(13672,{awp=30200,coords={{76.5,19.4,118}},qgs={33625},r=2,sourceQuests={13828,13835,13837},u=31,g={
 qo(1,{awp=30200,providers={{"i",45192}},u=31})}}),
@@ -770,10 +770,10 @@ qo(1,{awp=30200,cost={{"i",49723,1},{"i",49740,1},{"i",49718,5}},crs={36494},pro
 q(24476,{awp=30200,coords={{74.2,31.2,118}},maps={183},qgs={36624},r=2,sourceQuests={24461},u=33,g={
 qo(1,{awp=30200,providers={{"i",49750},{"i",49920},{"n",37094}},r=2,u=33})}}),
 q(24480,{awp=30200,coords={{74.2,31.2,118}},description="Just enter the instance and a special event will unfold. There is no need to talk to Jaina.",maps={185},qgs={36624},r=2,sourceQuests={24476},u=33,g={
-qo(1,{awp=30200,providers={{"i",50254},{"i",49766},{"n",37158}},r=2,u=33})}}),
+qo(1,{awp=30200,providers={{"i",49766},{"i",50254},{"n",37158}},r=2,u=33})}}),
 q(24522,{awp=30200,coords={{74.2,31.2,118}},description="If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",maps={1957},providers={{"i",49870}},qgs={36624},r=2,sourceQuests={24480},u=33}),
 q(24535,{awp=30200,coords={{44.6,45.4,1957}},qgs={37527},r=2,sourceQuests={24522},u=33,g={
-qo(1,{awp=30200,coords={{53,80.2,1957}},providers={{"n",37552},{"n",37205}},r=2,u=33})}}),
+qo(1,{awp=30200,coords={{53,80.2,1957}},providers={{"n",37205},{"n",37552}},r=2,u=33})}}),
 q(24553,{awp=30200,c={1,2,3,4,6,8,9},coords={{44.6,45.4,1957}},maps={336},qgs={37527},r=2,sourceQuests={24535},u=33,g={
 qo(1,{awp=30200,providers={{"i",49871},{"i",49879},{"o",201794}},r=2,u=33})}}),
 q(24595,{awp=30200,c={5,7,11},coords={{44.6,45.4,1957}},maps={336},qgs={37527},r=2,sourceQuests={24535},u=33,g={
@@ -798,10 +798,10 @@ qo(1,{awp=30200,cost={{"i",49723,1},{"i",49740,1},{"i",49718,5}},crs={36494},pro
 q(24560,{awp=30200,coords={{74.2,31.2,118}},maps={183},qgs={36642},r=1,sourceQuests={24559},u=33,g={
 qo(1,{awp=30200,providers={{"i",49750},{"i",49920},{"n",37094}},r=1,u=33})}}),
 q(24561,{awp=30200,coords={{74.2,31.2,118}},description="Just enter the instance and a special event will unfold. There is no need to talk to Sylvanas.",maps={185},qgs={36642},r=1,sourceQuests={24560},u=33,g={
-qo(1,{awp=30200,providers={{"i",50254},{"i",49766},{"n",37158}},r=1,u=33})}}),
+qo(1,{awp=30200,providers={{"i",49766},{"i",50254},{"n",37158}},r=1,u=33})}}),
 q(24562,{awp=30200,coords={{74.2,31.2,118}},description="If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",maps={1957},providers={{"i",49870}},qgs={36642},r=1,sourceQuests={24561},u=33}),
 q(24563,{awp=30200,coords={{44.6,45.4,1957}},qgs={37527},r=1,sourceQuests={24562},u=33,g={
-qo(1,{awp=30200,coords={{53,80.2,1957}},providers={{"n",37552},{"n",37205}},r=1,u=33})}}),
+qo(1,{awp=30200,coords={{53,80.2,1957}},providers={{"n",37205},{"n",37552}},r=1,u=33})}}),
 q(24564,{awp=30200,c={1,2,3,4,6,8,9},coords={{44.6,45.4,1957}},qgs={37527},races={2,5,6,8},sourceQuests={24563},u=33,g={
 qo(1,{awp=30200,providers={{"i",49871},{"i",49879},{"o",201794}},r=1,u=33})}}),
 q(24598,{awp=30200,c={5,7,11},coords={{44.6,45.4,1957}},qgs={37527},races={2,5,6,8},sourceQuests={24563},u=33,g={

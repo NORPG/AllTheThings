@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,cl,cq,crit,cu,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,cl,cq,crit,cu,de,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"i",116788},{"o",384744},{1},{10},{11},{12},{13},{19.1,82,2023},{2},{201230},{222277},{225347},{3},{35.3,38.2,2339},{38.3,94.9,2112},{4},{49.2,58.3,2025},{5},{56.4,19.3,2022},{6},{68795,72366},{7.4,47.5,2024},{7},{79184},{8},{9}};
 _.Categories.Promotions={
 h(-514,{awp=90005,g={
@@ -118,7 +118,7 @@ s(284494,235987,{awp=110107,description="Obtained through watching Twitch Stream
 p(4858,{awp=110200,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 5th, 10:00 a.m. & September 16th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=246451,npcID=246983,rwp=110200,spellID=1242265,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1243589,{awp=110200,description="Rewarded from the Season 3 Shop Bundle.",itemID=246732,rwp=110205,u=2})),
 toy(232307,{awp=110200,description="Arena World Championship: TWW Season 3\n\nSign up on Raider.io for any of the 3 Cups, available until October 22nd 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",rwp=110205,u=2}),
-toy(232303,{awp=110205,description="Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/"}),
+toy(232303,{awp=110205,description="Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",u=2}),
 p(4856,{awp=110200,description="Included for free with any purchase over $75 from the World of Warcraft Collection on the Blizzard Gear Store. Available from September 8-30, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=246343,npcID=246663,rwp=110200,spellID=1241763,u=2}),
 p(4907,{awp=110200,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 1st, 10:00 a.m. & October 29th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=257515,npcID=254356,rwp=110205,spellID=1261676,u=2}),
 mnt(1245604,{awp=110205,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=247848,u=3}),
@@ -126,7 +126,8 @@ mnt(1234971,{awp=110205,description="Obtained if you set up a 12-Month WoW Subsc
 en(242480,{awp=110205,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=90654,rwp=110207,spellID=1232446,tmogSetID=4538,u=2,g={
 s(290242,242421,{f=2}),
 s(290265,242450,{f=2})}}),
-p(4908,{awp=110205,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2})}}),
+p(4908,{awp=110205,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2}),
+s(266784,235343,{awp=110207,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=2,rwp=110207,u=2})}}),
 h(-669,{awp=120000}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
@@ -232,7 +233,7 @@ h(-694,{awp=110205,description="These rewards were made available to anyone who 
 mnt(1256677,{itemID=253573,u=3}),
 toy(254666,{u=3}),
 toy(263489,{u=3}),
-p(4903,{itemID=253699,u=3}),
+p(4903,{itemID=253699,npcID=252859,spellID=1257069,u=3}),
 mnt(1255246,{itemID=252950,u=3})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(683,{providers={{"i",39286}},rwp=30305,u=2}),
@@ -474,14 +475,14 @@ h(-523,{description="These rewards were made available to anyone who purchased M
 ach(61402,{providers={{"s",1239138}},u=3}),
 p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
 p(4811,{itemID=243062,npcID=244145,spellID=1234588,u=3}),
-i(252668,{awp=110207,spellID=1254915,u=3}),
-i(252666,{awp=110207,spellID=1254913,u=3}),
-i(252667,{awp=110207,spellID=1254914,u=3}),
-i(252669,{awp=110207,spellID=1254916,u=3}),
-i(244668,{awp=110207,spellID=1237798,u=3}),
-i(246414,{awp=110207,spellID=1242068,u=3}),
-i(245939,{awp=110207,spellID=1240036,u=3}),
-i(248809,{awp=110207,spellID=1247795,u=3}),
+de(9151,{awp=110207,itemID=252668,spellID=1254915,u=3}),
+de(9149,{awp=110207,itemID=252666,spellID=1254913,u=3}),
+de(9150,{awp=110207,itemID=252667,spellID=1254914,u=3}),
+de(9152,{awp=110207,itemID=252669,spellID=1254916,u=3}),
+de(1458,{awp=110207,itemID=244668,spellID=1237798,u=3}),
+de(2231,{awp=110207,itemID=246414,spellID=1242068,u=3}),
+de(1894,{awp=110207,itemID=245939,spellID=1240036,u=3}),
+de(4843,{awp=110207,itemID=248809,spellID=1247795,u=3}),
 mnt(1239138,{itemID=245610,lvl=30,u=3}),
 mnt(1234303,{itemID=243019,lvl=30,u=3}),
 en(248974,{questID=91953,spellID=1248235,tmogSetID=5164,u=3,g={

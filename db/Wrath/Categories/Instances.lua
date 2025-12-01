@@ -445,9 +445,9 @@ i(18398,{awp=10001,b=1,f=52,q=3,rwp=30008,u=2})}}),
 q(6823,{awp=10001,coords={{79.2,73.6,1447}},lvl=55,minReputation={749,9000},qgs={13278},rwp=30008,sourceQuests={6822},u=2}),
 q(7633,{awp=10001,c={3},coords={{47,24.48,1448}},lvl=60,qgs={14524},rwp=40003,sourceQuests={7632}}),
 q(7487,{awp=10100,coords={{54.2,83.3,33}},description="Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",lvl=55,maps={242},qgs={14387},rwp=10300,u=2,g={
-qo(1,{awp=10100,providers={{"o",179553},{"i",18412}},rwp=10300,u=2})}}),
+qo(1,{awp=10100,providers={{"i",18412},{"o",179553}},rwp=10300,u=2})}}),
 q(7848,{awp=10300,coords={{54.2,83.3,35}},description="Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",lvl=55,maps={242},qgs={14387},g={
-qo(1,{awp=10300,providers={{"o",179553},{"i",18412}}})}}),
+qo(1,{awp=10300,providers={{"i",18412},{"o",179553}}})}}),
 q(6821,{awp=10001,coords={{79.2,73.6,1447}},lvl=55,maps={250,251,252,253,254,255},qgs={13278},rwp=30008,sourceQuests={6804,6805},u=2,g={
 qo(1,{awp=10001,providers={{"i",17322}},rwp=30008,u=2})}}),
 q(6824,{awp=10001,coords={{79.2,73.6,1447}},lvl=55,qgs={13278},rwp=30008,sourceQuests={6823},u=2,g={
@@ -1727,7 +1727,7 @@ s(131892,21453,{awp=10900,b=1,f=7,lvl=60,q=4,u=15})}})}}),
 inst(744,{awp=10900,coords={{46.76,7.53,327}},isRaid=1,lore="Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",lvl=50,maps={319,320,321},savedInstanceID=531,u=15,g={
 h(-12,{awp=10900,u=15,g={
 ach(956,{awp=10900,maps={75,1451},minReputation={910,42000},u=15}),
-ach(424,{awp=10900,providers={{"i",21321},{"s",26054}},u=15})}}),
+ach(424,{awp=10900,providers={{"i",21321}},u=15})}}),
 h(-31,{awp=10900,u=15,g={
 faction(910,{awp=10900,icon=134156,maps={75,1451},u=15})}}),
 h(-45,{awp=10900,u=15,g={
@@ -2090,7 +2090,7 @@ i(21579,{awp=10900,b=1,f=53,lvl=60,q=4,u=15})}})}}),
 inst(754,{awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",mapID=162,maps={163,164,165,166,167},rwp=30002,savedInstanceID=533,u=2,g={
 d(9,{awp=11100,lvl=60,rwp=30002,sourceQuests={9121},u=2,g={
 ah(22631,{awp=11100,c={5,8,9,11},isRaid=1,maps={75},rwp=30002,type="i",u=2,g={
-ach(425,{awp=11100,c={5,8,9,11},providers={{"i",22631},{"i",22589},{"i",22630},{"i",22632}},rwp=30002,u=2}),
+ach(425,{awp=11100,c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}},rwp=30002,u=2}),
 q(9251,{awp=11100,c={5,8,9,11},lvl=60,maps={320},qgs={15192},rwp=30002,sourceQuests={9250},u=2,g={
 qo(1,{awp=11100,providers={{"i",22733}},rwp=30002,u=2}),
 qo(2,{awp=11100,providers={{"i",22734}},rwp=30002,u=2})}}),
@@ -4074,7 +4074,7 @@ s(121526,6742,{b=1,f=6,filterForRWP=7,q=3,rwp=40003})}}),
 q(6522,{description="This version of the quest is given to players that HAVE NOT completed The Wrath Gate yet.",lvl=28,maps={1458},providers={{"i",17008}},r=1,rwp=40003}),
 q(14352,{awp=30300,description="This version of the quest is given to players that HAVE completed The Wrath Gate.",lvl=28,maps={1458},providers={{"i",49205}},r=1,rwp=40003}),
 q(1221,{coords={{62.4,37.6,1413}},lvl=20,qgs={3446},rwp=40003,g={
-qo(1,{crs={4781},providers={{"i",5876},{"o",20920},{"i",5880},{"i",6684}},rwp=40003}),
+qo(1,{crs={4781},providers={{"i",5876},{"i",5880},{"i",6684},{"o",20920}},rwp=40003}),
 qo(2,{coords={{62.3,37.6,1413}},providers={{"i",5880},{"o",21277}},rwp=40003}),
 qo(3,{coords={{62.3,37.6,1413}},providers={{"i",5897},{"o",21530}},rwp=40003}),
 qo(4,{coords={{62.3,37.6,1413}},providers={{"i",6684},{"o",68865}},rwp=40003}),
@@ -4082,7 +4082,7 @@ i(6755,{b=1,q=1,rwp=40003,g={
 i(6756,{b=1,f=113,q=1,rwp=40003})}})}}),
 q(1109,{coords={{49,69.8,1458}},lvl=30,qgs={2055},r=1,rwp=40003,g={
 qo(1,{providers={{"i",5801}},rwp=40003})}}),
-q(1100,{coords={{30,24,1441}},lvl=29,providers={{"i",5791},{"i",5790},{"o",19861}},r=2,rwp=40003}),
+q(1100,{coords={{30,24,1441}},lvl=29,providers={{"i",5790},{"i",5791},{"o",19861}},r=2,rwp=40003}),
 q(1142,{coords={{69.4,67.6,1457}},lvl=25,qgs={4510},r=2,rwp=40003,g={
 qo(1,{description="Drops from any creature in the Dungeon.",providers={{"i",5825}},rwp=40003}),
 s(121535,6751,{b=1,f=3,q=2,rwp=40003}),
@@ -4336,7 +4336,7 @@ crit(8906,{achID=2358,awp=30100,id=1,rwp=40003})}}),
 q(5522,{coords={{65.2,23.8,1428}},lvl=57,providers={{"i",13761}},qgs={10267},rwp=40003,sourceQuests={4735}}),
 q(7667,{awp=10400,c={7},coords={{39.2,48.4,1454}},cost={{"i",18335,1},{"i",12800,1}},lvl=58,qgs={13417},r=1,rwp=40003}),
 q(5463,{coords={{81.7,57.8,1423}},description="Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",lvl=57,maps={317},providers={{"i",13585}},qgs={11036},rwp=40003,sourceQuests={5462}}),
-q(5464,{lvl=57,maps={317},providers={{"o",176631},{"i",13624}},rwp=40003,sourceQuests={5463}}),
+q(5464,{lvl=57,maps={317},providers={{"i",13624},{"o",176631}},rwp=40003,sourceQuests={5463}}),
 q(5538,{coords={{42.66,83.77,1422}},cost={{"i",14628,1},{"g",150000}},lvl=55,qgs={11056},r=2,rwp=40003,sourceQuests={5537}}),
 q(5514,{coords={{83.3,69.2,1420}},cost={{"i",14628,1},{"g",150000}},lvl=55,maps={1422},qgs={11057},r=1,rwp=40003,sourceQuests={964}}),
 q(5529,{coords={{81.47,59.66,1423}},lvl=55,qgs={11035},rwp=40003,g={
@@ -4405,7 +4405,7 @@ s(128425,16716,{crs={10499,10500,11257},f=5,lvl=53,q=3,rwp=40003}),
 s(128423,16714,{crs={10495},f=5,lvl=52,q=3,rwp=40003})}}),
 n(14861,{awp=100105,rwp=50004,g={
 i(13523,{b=1,q=1,rwp=50004})}}),
-n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"o",175564},{"i",13523}},rwp=50004,g={
+n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",13523},{"o",175564}},rwp=50004,g={
 s(126132,14024,{awp=100105,b=1,f=20,lvl=56,q=3,rwp=50004}),
 s(126125,13983,{awp=100105,b=1,f=22,lvl=57,q=3,rwp=50004}),
 i(13960,{awp=100105,b=1,f=51,lvl=56,q=3,rwp=50004}),
@@ -5126,7 +5126,7 @@ i(22444,{q=1,rwp=40003}),
 s(123998,10799,{b=1,f=29,lvl=46,q=3,rwp=40003}),
 s(123999,10800,{b=1,f=5,lvl=47,q=3,rwp=40003}),
 s(123997,10798,{b=1,f=7,lvl=46,q=3,rwp=40003})}})}}),
-h(-367,{providers={{"n",5713},{"n",5715},{"n",5714},{"n",5717},{"n",5712},{"n",5716}},rwp=40003,g={
+h(-367,{providers={{"n",5712},{"n",5713},{"n",5714},{"n",5715},{"n",5716},{"n",5717}},rwp=40003,g={
 s(123982,10783,{b=1,f=5,lvl=47,q=3,rwp=40003}),
 s(123986,10787,{b=1,f=4,lvl=47,q=3,rwp=40003}),
 s(123983,10784,{b=1,f=6,lvl=47,q=3,rwp=40003}),
@@ -5209,8 +5209,8 @@ q(2204,{lvl=37,providers={{"i",7667}},r=2,rwp=40003,sourceQuests={2201},g={
 qo(1,{providers={{"i",7672}},rwp=40003})}}),
 q(2361,{coords={{36.4,3.6,1455}},lvl=37,qgs={6826},r=2,rwp=40003,sourceQuests={2204},g={
 i(7673,{b=1,f=51,q=3,rwp=40003})}}),
-q(2977,{coords={{37.7,81.5,1446}},lvl=45,maps={1455},providers={{"o",142343},{"i",6064}},r=2,rwp=40003,sourceQuests={2954}}),
-q(2967,{coords={{37.7,81.5,1446}},lvl=45,maps={1456},providers={{"o",142343},{"i",6064}},r=1,rwp=40003,sourceQuests={2954}}),
+q(2977,{coords={{37.7,81.5,1446}},lvl=45,maps={1455},providers={{"i",6064},{"o",142343}},r=2,rwp=40003,sourceQuests={2954}}),
+q(2967,{coords={{37.7,81.5,1446}},lvl=45,maps={1456},providers={{"i",6064},{"o",142343}},r=1,rwp=40003,sourceQuests={2954}}),
 q(2946,{coords={{77.2,11.8,1455}},lvl=45,providers={{"i",6064}},qgs={2916},r=2,rwp=40003,sourceQuests={2963}}),
 q(2966,{coords={{75.6,31.2,1456}},lvl=45,providers={{"i",6064}},qgs={5770},r=1,rwp=40003,sourceQuests={2965}}),
 q(2240,{lvl=35,qgs={6906},r=2,rwp=40003,sourceQuests={2398},g={
@@ -5522,7 +5522,7 @@ s(141075,30729,{awp=20001,f=3,lvl=70,q=4,u=17}),
 s(141076,30730,{awp=20001,f=5,lvl=70,q=4,u=17}),
 s(141071,30725,{awp=20001,f=4,lvl=70,q=4,u=17}),
 s(141073,30727,{awp=20001,f=4,lvl=70,q=4,u=17})}})}}),
-inst(745,{awp=20001,coords={{46.87,74.69,1430}},cost={{"i",24490,1}},description="The best route for a fuil clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",isLockoutShared=1,isRaid=1,lore="Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",lvl=70,maps={350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366},savedInstanceID=532,u=17,["zone-text-areaID"]=2562,g={
+inst(745,{awp=20001,coords={{46.87,74.69,1430}},cost={{"i",24490,1}},description="The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",isLockoutShared=1,isRaid=1,lore="Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",lvl=70,maps={350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366},savedInstanceID=532,u=17,["zone-text-areaID"]=2562,g={
 h(-12,{awp=20001,u=17,g={
 ach(960,{awp=20001,minReputation={967,42000},u=17})}}),
 h(-31,{awp=20001,u=17,g={
@@ -6681,7 +6681,7 @@ i(33499,{awp=20300,b=1,f=52,lvl=70,q=4,rwp=40100,u=20}),
 i(33496,{awp=20300,b=1,f=52,lvl=70,q=4,rwp=40100,u=20}),
 i(33498,{awp=20300,b=1,f=52,lvl=70,q=4,rwp=40100,u=20})}}),
 h(-87,{awp=20300,description="This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",rwp=40100,u=20,g={
-ach(430,{providers={{"i",33809},{"s",43688}},rwp=30002,u=2}),
+ach(430,{providers={{"i",33809}},rwp=30002,u=2}),
 mnt(43688,{b=1,itemID=33809,lvl=70,q=4,rwp=30002,u=2})}})}}),
 h(-58,{awp=20300,rwp=40100,u=20,g={
 n(23559,{awp=20300,coords={{71,67.2,1942}},rwp=40100,u=20,g={
@@ -7260,7 +7260,7 @@ s(138170,27823,{awp=20001,b=1,f=6,lvl=70,q=3,u=17}),
 s(138172,27825,{awp=20001,b=1,f=5,lvl=70,q=3,u=17}),
 s(138168,27821,{awp=20001,b=1,f=4,lvl=70,q=3,u=17}),
 i(27822,{awp=20001,b=1,f=52,lvl=70,q=3,u=17})}}),
-e(536,{awp=20001,cost={{"i",32079,1}},description="Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",npcID=22927,providers={{"o",185522},{"i",32092}},u=17,g={
+e(536,{awp=20001,cost={{"i",32079,1}},description="Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",npcID=22927,providers={{"i",32092},{"o",185522}},u=17,g={
 s(141916,31570,{awp=20001,f=6,lvl=70,q=3,u=17}),
 s(141908,31562,{awp=20001,f=5,lvl=70,q=3,u=17}),
 s(141900,31554,{awp=20001,f=4,lvl=70,q=3,u=17}),
@@ -7533,7 +7533,7 @@ q(10177,{coords={{50.2,45.4,1955}},isBreadcrumb=1,lvl=68,nextQuests={10094},qgs=
 h(-19,{awp=20001,u=17,g={
 i(28558,{b=1,description="Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",q=1,rwp=80001,u=17})}}),
 h(-63,{awp=20001,u=17,g={
-i(24514,{awp=20001,coords={{82.6,30.8,260}},providers={{"o",182196},{"n",22890}},q=1,u=17}),
+i(24514,{awp=20001,coords={{82.6,30.8,260}},providers={{"n",22890},{"o",182196}},q=1,u=17}),
 r(29621,{awp=20001,b=1,crs={18830},itemID=23607,learnedAt=365,q=3,requireSkill=164,u=17})}}),
 d(1,{awp=20001,u=17,g={
 e(544,{awp=20001,npcID=18731,u=17,g={
@@ -7651,7 +7651,7 @@ r(27977,{awp=20001,b=1,crs={20880},itemID=22556,learnedAt=360,q=2,requireSkill=3
 r(26782,{awp=20001,b=1,crs={20869},itemID=21905,learnedAt=350,q=2,requireSkill=197,u=17}),
 r(35521,{b=1,crs={20898},itemID=29672,learnedAt=340,q=2,requireSkill=165,rwp=50004,u=17}),
 r(29620,{awp=20001,b=1,crs={20900},itemID=23606,learnedAt=360,q=3,requireSkill=164,u=17}),
-i(24488,{awp=20001,coords={{59,24.8,270}},providers={{"o",182198},{"n",22892}},q=1,u=17})}}),
+i(24488,{awp=20001,coords={{59,24.8,270}},providers={{"n",22892},{"o",182198}},q=1,u=17})}}),
 d(1,{awp=20001,u=17,g={
 e(548,{awp=20001,npcID=20870,u=17,g={
 s(138720,28374,{awp=20001,b=1,f=4,lvl=70,q=3,u=17}),
@@ -8340,7 +8340,7 @@ i(24368,{awp=20001,q=1,u=17}),
 r(31054,{awp=20001,b=1,crs={17722},itemID=24159,learnedAt=355,q=3,requireSkill=755,u=17}),
 r(27914,{awp=20001,b=1,crs={17803},itemID=22533,learnedAt=350,q=2,requireSkill=333,u=17}),
 i(24367,{b=1,crs={17721,17800,17801,17802,17803,17805},lvl=67,q=1,rwp=40300,u=17}),
-i(24487,{awp=20001,coords={{59,24.8,263}},providers={{"o",182197},{"n",22891}},q=1,u=17})}}),
+i(24487,{awp=20001,coords={{59,24.8,263}},providers={{"n",22891},{"o",182197}},q=1,u=17})}}),
 d(1,{awp=20001,u=17,g={
 e(573,{awp=20001,npcID=17797,u=17,g={
 s(138136,27789,{b=1,f=3,lvl=68,q=3,rwp=110105,u=17}),
@@ -10315,7 +10315,7 @@ ach(2892,{awp=30100,rwp=70305,u=31}),
 ach(2890,{awp=30100,rwp=70305,u=31}),
 ach(2886,{awp=30100,rwp=70305,u=31}),
 ach(3097,{awp=30100,crs={33236,33572},rwp=70305,u=31}),
-ach(2979,{awp=30100,description="Must be killed before killing Freya or they will despawn.",providers={{"n",32915},{"n",32913},{"n",32914}},rwp=70305,u=31})}}),
+ach(2979,{awp=30100,description="Must be killed before killing Freya or they will despawn.",providers={{"n",32913},{"n",32914},{"n",32915}},rwp=70305,u=31})}}),
 h(-45,{awp=30100,u=31,g={
 q(13614,{providers={{"i",45791}},qgs={33957},rwp=70305,sourceQuests={13606,13609,13610,13611},u=31,g={
 i(45796,{b=1,q=1,rwp=40200,u=31}),
@@ -10661,7 +10661,7 @@ ach(2893,{awp=30100,rwp=70305,u=31}),
 ach(2891,{awp=30100,rwp=70305,u=31}),
 ach(2887,{awp=30100,rwp=70305,u=31}),
 ach(3098,{awp=30100,crs={33236,33572},rwp=70305,u=31}),
-ach(3118,{awp=30100,description="Must be killed before killing Freya or they will despawn.",providers={{"n",32915},{"n",32913},{"n",32914}},rwp=70305,u=31}),
+ach(3118,{awp=30100,description="Must be killed before killing Freya or they will despawn.",providers={{"n",32913},{"n",32914},{"n",32915}},rwp=70305,u=31}),
 ach(3259,{awp=30100,rwp=30200,u=2,g={
 title(125,{awp=30100,rwp=30200,u=2})}}),
 ach(3117,{awp=30100,rwp=30200,u=2,g={
@@ -12616,10 +12616,10 @@ q(24878,{isWeekly=1,lvl=80,qgs={38501},rwp=40001,u=33,g={
 qo(1,{awp=30300,providers={{"n",36626},{"n",36627}},u=33}),
 i(52006,{awp=30300,b=1,q=4,u=33})}}),
 q(24872,{isWeekly=1,lvl=80,qgs={38589},rwp=40001,u=33,g={
-qo(1,{awp=30300,crs={36853},providers={{"i",51026},{"i",50851}},u=33}),
+qo(1,{awp=30300,crs={36853},providers={{"i",50851},{"i",51026}},u=33}),
 i(52006,{awp=30300,b=1,q=4,u=33})}}),
 q(24880,{isWeekly=1,lvl=80,qgs={38589},rwp=40001,u=33,g={
-qo(1,{awp=30300,crs={36853},providers={{"i",51027},{"i",50851}},u=33}),
+qo(1,{awp=30300,crs={36853},providers={{"i",50851},{"i",51027}},u=33}),
 i(52006,{awp=30300,b=1,q=4,u=33})}}),
 q(24871,{isWeekly=1,lvl=80,qgs={38492},rwp=40001,u=33,g={
 qo(1,{awp=30300,providers={{"n",38490}},u=33}),
@@ -15415,14 +15415,14 @@ i(37195,{awp=30002,b=1,f=52,lvl=80,q=3,u=30}),
 i(37264,{awp=30002,b=1,f=53,lvl=80,q=3,u=30}),
 crit(6860,{achID=498,awp=30002,id=1,u=30})}}),
 e(625,{awp=30002,npcID=27656,u=30,g={
-ach(2046,{awp=30002,providers={{"n",27755},{"i",37859},{"n",27659}},u=30}),
-ach(2045,{awp=30002,providers={{"n",27692},{"i",37815},{"n",27657}},u=30}),
+ach(2046,{awp=30002,providers={{"i",37859},{"n",27659},{"n",27755}},u=30}),
+ach(2045,{awp=30002,providers={{"i",37815},{"n",27657},{"n",27692}},u=30}),
 ach(1871,{awp=30002,u=30,g={
-crit(7177,{achID=1871,awp=30002,providers={{"n",27755},{"i",37859},{"n",27659}},u=30}),
-crit(7178,{achID=1871,awp=30002,providers={{"n",27692},{"i",37815},{"n",27657}},u=30}),
-crit(7179,{achID=1871,awp=30002,providers={{"n",27756},{"i",37860},{"n",27658}},u=30})}}),
+crit(7177,{achID=1871,awp=30002,providers={{"i",37859},{"n",27659},{"n",27755}},u=30}),
+crit(7178,{achID=1871,awp=30002,providers={{"i",37815},{"n",27657},{"n",27692}},u=30}),
+crit(7179,{achID=1871,awp=30002,providers={{"i",37860},{"n",27658},{"n",27756}},u=30})}}),
 ach(1868,{awp=30002,u=30}),
-ach(2044,{awp=30002,providers={{"n",27756},{"i",37860},{"n",27658}},u=30}),
+ach(2044,{awp=30002,providers={{"i",37860},{"n",27658},{"n",27756}},u=30}),
 r(55397,{awp=30002,b=1,itemID=41798,learnedAt=420,q=3,requireSkill=755,u=30}),
 s(171387,37360,{awp=30002,b=1,f=28,lvl=80,q=4,u=30}),
 s(171363,37294,{awp=30002,b=1,f=4,lvl=80,q=3,u=30}),

@@ -800,7 +800,7 @@ q(35364,{lvl=30,type="hqt"}),
 q(35366,{lvl=35,type="hqt"})}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 q(35435,{lvl=30,type="hqt"})}}),
-inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
 q(35443,{lvl=35,type="hqt"})}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 q(35411,{lvl=35,type="hqt"}),
@@ -5337,7 +5337,7 @@ q(80198,{type="hqt"}),
 q(80019,{type="hqt"}),
 q(80021,{type="hqt"}),
 q(80020,{coords={{29.7,27.1,971}},providers={{"n",126773}},sourceQuests={79010},type="hqt"})}}),
-m(2023,{awp=100002,petBattleLvl=25,lvl=20,g={
+m(2023,{awp=100002,petBattleLvl=3,lvl=20,g={
 h(-12,{
 q(72610,{awp=100007,type="hqt"})}),
 h(-45,{
@@ -5354,7 +5354,7 @@ q(69867,{type="hqt"}),
 q(66505,{type="hqt"}),
 q(66512,{type="hqt"}),
 q(73904,{type="hqt"})})}}),
-m(2025,{awp=100002,petBattleLvl=25,lvl=40,g={
+m(2025,{awp=100002,petBattleLvl=7,lvl=40,g={
 h(-401,{awp=100105,g={
 q(77172,{type="hqt"}),
 q(77335,{type="hqt"}),
@@ -5401,7 +5401,7 @@ q(76709,{type="hqt"}),
 q(76712,{type="hqt"}),
 q(76715,{type="hqt"}),
 q(76710,{type="hqt"})}})}}),
-m(2024,{awp=100002,maps={2132,2262},petBattleLvl=25,lvl=30,g={
+m(2024,{awp=100002,maps={2132,2262},petBattleLvl=5,lvl=30,g={
 h(-45,{
 q(66046,{type="hqt"}),
 q(72779,{type="hqt"}),
@@ -5582,7 +5582,7 @@ q(75000,{repeatable=1,type="hqt"}),
 q(75001,{repeatable=1,type="hqt"}),
 q(75002,{repeatable=1,type="hqt"}),
 q(75003,{repeatable=1,type="hqt"})})}}),
-m(2022,{awp=100002,petBattleLvl=25,lvl=10,g={
+m(2022,{awp=100002,lvl=10,g={
 h(-45,{
 q(66898,{repeatable=1,type="hqt"}),
 q(70872,{type="hqt"}),
@@ -6333,7 +6333,6 @@ q(84817,{type="hqt"}),
 q(84818,{type="hqt"}),
 q(84819,{type="hqt"})}),
 h(-384,{awp=110100,g={
-h(-45),
 q(85204,{type="hqt"}),
 q(85203,{type="hqt"}),
 q(85202,{type="hqt"}),
@@ -6366,7 +6365,8 @@ q(86324,{type="hqt"}),
 q(86157,{type="hqt"}),
 q(86325,{type="hqt"}),
 q(86439,{awp=110100,type="hqt"}),
-q(91045,{awp=110200,type="hqt"})}}),
+q(91045,{awp=110200,type="hqt"}),
+q(87286,{awp=110100,isWeekly=1,providers={{"i",248017},{"n",244755},{"o",547532}},type="hqt"})}}),
 m(2274,{
 m(2339,{
 h(-45,{

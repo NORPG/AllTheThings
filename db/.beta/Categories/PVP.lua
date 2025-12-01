@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,artifact,cl,crit,cu,en,faction,flt,gach,h,i,ill,m,mm,mnt,n,o,p,pvprank,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreatePVPRank,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,artifact,cl,crit,cu,de,en,faction,flt,gach,h,i,ill,m,mm,mnt,n,o,p,pvprank,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreatePVPRank,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"i",112113},{"i",34753},{"n",14720},{"n",27881},{"n",28094},{"n",28366},{"n",28781},{"n",32627},{"n",34775},{"n",34793},{"n",42129},{"n",42131},{"n",42928},{"n",45344},{"n",80493},{"s",1228235},{"s",1262703},{"s",1270679},{"s",1843},{"s",218086},{"s",261968},{"s",271400},{"s",393121},{"s",446869},{"s",52459},{"s",60937},{"s",68357},{"SL_COV_KYR"},{"SL_COV_NEC"},{"SL_COV_NFA"},{"SL_COV_VEN"},{1,2,3,4,10},{1,2,3,4,5,6,7,8,9,10,11,22,25,26,27,28,29,30,31,32,34,35,36,37,52,70,84,85,86,91},{1,2,3,4,5,6,7,8,9,10,11},{1,2,4,5,6,7,10,11,13},{1,2,4,6,7,10,12,13},{1,2,6,10,11,13},{1,2,6,13},{1,2,6},{1,2,7},{1,2},{1,3,4,7,11,22,25,29,30,32,34,37,52,85,86},{1,3,4,7,11,22,25,29,30,32,34,37,52,85},{1},{10,11},{10,19},{10},{11},{11038,11061,12045,12167,12168},{112,397},{11578,11579},{11697,11698},{11697},{11698},{1177,42000},{1178,42000},{119272,145837,146626},{119484,145838,146633},{12},{12090,12135,12198},{12090},{12096},{12097},{12135},{12198},{13},{13151},{13154},{13176},{13236},{13257},{13320},{13377},{13442},{13447},{13448},{13776},{13777},{13816},{13817},{13840},{13841},{14185},{14186},{14187},{14188},{143555,143560},{144064},{144065},{14753},{14754},{14983},{15021},{15126},{15127},{15350},{15351},{1681,42000},{1682,42000},{199583},{2,5,6,8,10,9,26,27,28,31,36,35,70,84,91},{2,5,6,8,9,10,26,27,28,31,35,36,70,84,91},{2,5,6,8,9,10,26,27,28,31,35,36,70,84},{2,5,7,10,11,13},{2,5,7,8,9,10,11},{2,5,7,8,9,11},{2},{20,29},{2022,2023,2024,2025,2214,2215,2248,2255,2339},{2022,2023,2024,2025},{2022},{2023},{2024},{2025},{2214,2215,2248,2255,2346},{2214,2215,2248,2255},{25,34},{27},{29.6,74.8,627},{29.6,75,627},{3,4,7,10,11},{3,5,7,8,9,10,11,13},{3,7,13},{3},{30,39},{30},{35,44},{35,57.6,1670},{35},{36,58.6,1670},{39.4,82.2,1416},{4,10,11,12},{4,10,11},{4,5,7,8,9,11,13},{4},{40,46.7,14},{40,49},{40.2,20,10},{40.2,46.4,14},{40},{43,43.8,25},{43.1,17.6,91},{43.1,42.4,2112},{43.4,76.8,1478},{43.5,15.5,91},{43.6,42.4,2112},{43.9,12.6,91},{44.2,74.2,1478},{44.3,36.6,2112},{44.6,46.2,25},{44.6,74,1478},{44.7,37,2112},{45,27.8,1478},{45.2,45.2,25},{45.6,28.6,1478},{45.6,45.8,14},{45.8,28.8,1478},{45.8,29,1478},{45.8,76.2,1478},{45.9,38.7,2112},{45},{46.6,8.6,10},{46.6,84.2,91},{47531,47534,47590},{47537},{47540,47542,47544,47548,47549,56350},{47544},{47550,47552,47561,48036,51023},{47591},{47593},{48036},{48039},{48061},{48062},{48066},{48069},{48070},{48071},{48074},{49.5,82.7,91},{49.6,20.4,1334},{49.6,24.6,1478},{5,7,8,9,10,11},{5,8,9,10,11,13},{5,8,9},{5},{50,54.2,2339},{50,59},{50.1,85.1,91},{50.2,17.8,1334},{50.4,65.5,91},{50.9,30.8,91},{50},{509,3000},{509,42000},{51,49.65,244},{51.45,49.65,244},{51.6,58.2,862},{51.6,58.2,875},{510,3000},{510,42000},{55,76.5,2339},{55.1,76.2,2339},{55.2,76.8,2339},{56,76.7,88},{56.4,25.8,1161},{56.8,27.8,627},{57,27.8,627},{57.7,33.3,25},{57.8,34.6,89},{57.8,76.8,88},{58,34.4,89},{58.2,97.6,90},{58.6,34.2,25},{58},{59.7,31.2,25},{59.8,69.3,2339},{6},{60,69},{60.7,87.7,90},{60},{61.5,83.9,63},{61.8,83.8,63},{63,59.8,1416},{63},{63033},{63034},{63103},{63143},{63149},{63309},{63315},{67,56.6,111},{67.4,33.9,111},{68.5,30.4,14},{68},{69.8,90,87},{69.8,90.6,87},{6981},{7},{70},{7121},{7161},{7162},{729,42000},{73.3,29.7,14},{73.6,29.2,14},{730,42000},{79.4,18,84},{79.4,18.2,84},{79.8,30.4,85},{8},{80.6,30.6,85},{80},{81870},{82204},{82909},{83869},{84},{84173},{84473},{85},{85749},{86366},{889,3000},{890,3000},{9}};
 _.Categories.PVP={
 h(-299,{pvp=1,g={
@@ -325,7 +325,7 @@ title(23,{pvp=1,r=1,u=2})}}),
 ach(447,{awp=10400,pvp=1,r=1,rwp=20001,u=2,g={
 title(24,{pvp=1,r=1,u=2})}}),
 ach(61687,{awp=110207,providers={a[18]},pvp=1,g={
-i(247765,{pvp=1,sourceAchievements={61687},spellID=1245262})}}),
+de(3902,{itemID=247765,pvp=1,sourceAchievements={61687},spellID=1245262})}}),
 ach(388,{awp=30002,pvp=1,r=2}),
 ach(1006,{awp=30002,pvp=1,r=1}),
 ach(435,{awp=10400,pvp=1,r=2,rwp=20001,u=2,g={
@@ -352,13 +352,13 @@ ach(11471,{awp=70003,pvp=1,rwp=80001,u=2}),
 ach(12108,{awp=70003,pvp=1,rwp=80001,u=2}),
 ach(612,{awp=30002,maps=a[262],providers={{"n",134711}},pvp=1,r=2,rwp=80300,u=2}),
 ach(1157,{awp=30002,pvp=1,g={
-i(247756,{awp=110207,pvp=1,sourceAchievements={1157},spellID=1245253})}}),
+de(3893,{awp=110207,itemID=247756,pvp=1,sourceAchievements={1157},spellID=1245253})}}),
 ach(11693,{awp=70003,pvp=1,rwp=80001,u=2}),
 ach(61683,{awp=110207,providers={a[18]},pvp=1,g={
-i(247763,{pvp=1,sourceAchievements={61683},spellID=1245260})}}),
+de(3900,{itemID=247763,pvp=1,sourceAchievements={61683},spellID=1245260})}}),
 ach(14815,{awp=90001,providers={{"n",175137}},pvp=1,r=1}),
 ach(61686,{awp=110207,providers={a[18]},pvp=1,g={
-i(247770,{pvp=1,sourceAchievements={61686},spellID=1245267})}}),
+de(3907,{itemID=247770,pvp=1,sourceAchievements={61686},spellID=1245267})}}),
 ach(434,{awp=10400,pvp=1,r=2,rwp=20001,u=2,g={
 title(13,{pvp=1,r=2,u=2})}}),
 ach(452,{awp=10400,pvp=1,r=1,rwp=20001,u=2,g={
@@ -438,7 +438,7 @@ ach(247,{awp=30002,pvp=1}),
 ach(473,{awp=10400,pvp=1,r=2,rwp=20001,u=2,g={
 title(12,{pvp=1,r=2,u=2})}}),
 ach(61688,{awp=110207,providers={a[18]},pvp=1,g={
-i(247766,{pvp=1,sourceAchievements={61688},spellID=1245263})}}),
+de(3903,{itemID=247766,pvp=1,sourceAchievements={61688},spellID=1245263})}}),
 ach(441,{awp=10400,pvp=1,r=2,rwp=20001,u=2,g={
 title(4,{pvp=1,r=2,u=2})}}),
 ach(14817,{awp=90001,maps=a[262],providers={{"n",175135}},pvp=1,r=2,g={
@@ -457,9 +457,9 @@ ach(8450,{awp=50400,pvp=1,r=1,rwp=60002,u=2}),
 ach(9234,{awp=60002,pvp=1,r=2,rwp=60200,u=2}),
 ach(9233,{awp=60002,pvp=1,r=1,rwp=60200,u=2}),
 ach(61685,{awp=110207,providers={a[18]},pvp=1,g={
-i(247769,{pvp=1,sourceAchievements={61685},spellID=1245266})}}),
+de(3906,{itemID=247769,pvp=1,sourceAchievements={61685},spellID=1245266})}}),
 ach(61684,{awp=110207,providers={a[18]},pvp=1,g={
-i(247768,{pvp=1,sourceAchievements={61684},spellID=1245265})}}),
+de(3905,{itemID=247768,pvp=1,sourceAchievements={61684},spellID=1245265})}}),
 ach(12181,{awp=70003,pvp=1,rwp=80001,u=2}),
 ach(618,{awp=30002,maps={103},providers={{"n",17468}},pvp=1,r=1,g={
 crit(495,{achID=619,id=2,pvp=1,r=1})}}),
@@ -499,7 +499,7 @@ crit(57810,{achID=245,c_disp=a[66],id=13,pvp=1})}}),
 ach(714,{awp=20001,pvp=1,r=1,g={
 title(34,{pvp=1,r=1})}}),
 ach(229,{awp=30002,pvp=1,g={
-i(247745,{awp=110207,pvp=1,sourceAchievements={229},spellID=1245230})}}),
+de(3885,{awp=110207,itemID=247745,pvp=1,sourceAchievements={229},spellID=1245230})}}),
 ach(907,{awp=20001,pvp=1,r=2,g={
 title(35,{pvp=1,r=2})}}),
 ach(10743,{awp=70003,providers={a[20]},pvp=1,r=2,rwp=80001,u=2}),
@@ -525,7 +525,7 @@ ach(10088,{awp=60200,pvp=1,r=1,rwp=60202,u=2}),
 ach(604,{awp=30002,pvp=1,r=2}),
 ach(603,{awp=30002,pvp=1,r=1}),
 ach(231,{awp=30002,pvp=1,g={
-i(247744,{awp=110207,pvp=1,sourceAchievements={231},spellID=1245229})}}),
+de(3884,{awp=110207,itemID=247744,pvp=1,sourceAchievements={231},spellID=1245229})}}),
 ach(11691,{awp=70003,pvp=1,rwp=80001,u=2})}}),
 x(1,{description="In order to collect these, you need to have the original title associated with the gear.",pvp=1,g={
 h(-298,{awp=11101,pvp=1,rwp=20001,u=2,g={
@@ -43829,10 +43829,10 @@ ach(218,{awp=30002,pvp=1,rank=1}),
 ach(219,{awp=30002,pvp=1,rank=100,g={
 crit(3392,{achID=1167,id=1,pvp=1})}}),
 ach(221,{awp=30002,pvp=1,g={
-i(247758,{awp=110207,pvp=1,sourceAchievements={221},spellID=1245255}),
+de(3895,{awp=110207,itemID=247758,pvp=1,sourceAchievements={221},spellID=1245255}),
 crit(3393,{achID=1167,id=2,pvp=1})}}),
 ach(222,{awp=30002,pvp=1,g={
-i(247760,{awp=110207,pvp=1,sourceAchievements={222},spellID=1245257}),
+de(3897,{awp=110207,itemID=247760,pvp=1,sourceAchievements={222},spellID=1245257}),
 crit(3394,{achID=1167,id=3,pvp=1})}}),
 ach(1151,{awp=30002,pvp=1,r=2,g={
 crit(3395,{achID=1167,id=4,pvp=1})}}),
@@ -44107,10 +44107,10 @@ crit(3434,{achID=1169,id=5,pvp=1})}}),
 ach(159,{awp=30002,pvp=1,g={
 crit(3439,{achID=1169,id=10,pvp=1})}}),
 ach(158,{awp=30002,pvp=1,g={
-i(247757,{awp=110207,pvp=1,sourceAchievements={158},spellID=1245254}),
+de(3894,{awp=110207,itemID=247757,pvp=1,sourceAchievements={158},spellID=1245254}),
 crit(3433,{achID=1169,id=4,pvp=1})}}),
 ach(1153,{awp=30002,pvp=1,g={
-i(247759,{awp=110207,pvp=1,sourceAchievements={1153},spellID=1245256}),
+de(3896,{awp=110207,itemID=247759,pvp=1,sourceAchievements={1153},spellID=1245256}),
 crit(3435,{achID=1169,id=6,pvp=1})}}),
 ach(161,{awp=30002,pvp=1,g={
 crit(3437,{achID=1169,id=8,pvp=1})}}),
@@ -45617,7 +45617,7 @@ ach(5258,{pvp=1,g={
 crit(22722,{achID=8052,awp=50200,id=1,pvp=1,r=2}),
 crit(22722,{achID=8055,awp=50200,id=1,pvp=1,r=1})}}),
 ach(5245,{pvp=1,rank=1,g={
-i(256896,{awp=110207,pvp=1,sourceAchievements={5245},spellID=1260891})}}),
+de(11296,{awp=110207,itemID=256896,pvp=1,sourceAchievements={5245},spellID=1260891})}}),
 ach(5246,{pvp=1,rank=100,g={
 crit(14953,{achID=5258,id=2,pvp=1})}}),
 ach(5247,{pvp=1,g={
@@ -45660,12 +45660,12 @@ crit(68936,{achID=40617,id=2,pvp=1})}}),
 ach(40211,{pvp=1,g={
 crit(68938,{achID=40617,id=3,pvp=1})}}),
 ach(40210,{pvp=1,g={
-i(253170,{awp=110207,pvp=1,sourceAchievements={40210},spellID=1255722})}}),
+de(9244,{awp=110207,itemID=253170,pvp=1,sourceAchievements={40210},spellID=1255722})}}),
 ach(40613,{pvp=1,g={
 crit(68939,{achID=40617,id=4,pvp=1})}}),
 ach(40608,{pvp=1}),
 ach(40612,{pvp=1,g={
-i(247750,{awp=110207,pvp=1,sourceAchievements={40612},spellID=1245235}),
+de(3890,{awp=110207,itemID=247750,pvp=1,sourceAchievements={40612},spellID=1245235}),
 crit(68941,{achID=40617,id=6,pvp=1})}}),
 ach(40615,{pvp=1}),
 ach(40616,{pvp=1,g={
@@ -45727,11 +45727,11 @@ crit(3448,{achID=1171,id=4,pvp=1})}}),
 ach(214,{pvp=1,g={
 crit(3449,{achID=1171,id=5,pvp=1})}}),
 ach(212,{pvp=1,g={
-i(247761,{awp=110207,pvp=1,sourceAchievements={212},spellID=1245258}),
+de(3898,{awp=110207,itemID=247761,pvp=1,sourceAchievements={212},spellID=1245258}),
 crit(3451,{achID=1171,id=7,pvp=1})}}),
 ach(211,{pvp=1}),
 ach(213,{pvp=1,g={
-i(247762,{awp=110207,pvp=1,sourceAchievements={213},spellID=1245259}),
+de(3899,{awp=110207,itemID=247762,pvp=1,sourceAchievements={213},spellID=1245259}),
 crit(3450,{achID=1171,id=6,pvp=1})}}),
 ach(587,{pvp=1,g={
 crit(441,{achID=587,pvp=1}),
@@ -45915,8 +45915,8 @@ crit(7657,{achID=2194,id=4,pvp=1,u=2})}})}})}}),
 m(417,{awp=50004,icon=623704,pvp=1,g={
 h(-12,{pvp=1,g={
 ach(6981,{pvp=1,g={
-i(247741,{awp=110207,pvp=1,sourceAchievements=a[239],spellID=1245226}),
-i(247740,{awp=110207,pvp=1,sourceAchievements=a[239],spellID=1245225}),
+de(3881,{awp=110207,itemID=247741,pvp=1,sourceAchievements=a[239],spellID=1245226}),
+de(3880,{awp=110207,itemID=247740,pvp=1,sourceAchievements=a[239],spellID=1245225}),
 crit(22726,{achID=8052,awp=50200,id=5,pvp=1,r=2}),
 crit(22726,{achID=8055,awp=50200,id=5,pvp=1,r=1})}}),
 ach(6740,{pvp=1,rank=1}),
@@ -46058,7 +46058,7 @@ n(45344,{description="Is used by the attacking faction to destroy towers, which 
 m(206,{awp=40003,icon=136026,pvp=1,g={
 h(-12,{pvp=1,g={
 ach(5223,{pvp=1,g={
-i(247727,{awp=110207,pvp=1,sourceAchievements={5223},spellID=1245211}),
+de(3867,{awp=110207,itemID=247727,pvp=1,sourceAchievements={5223},spellID=1245211}),
 crit(22724,{achID=8052,awp=50200,id=3,pvp=1,r=2}),
 crit(22724,{achID=8055,awp=50200,id=3,pvp=1,r=1})}}),
 ach(5208,{pvp=1,rank=1}),
@@ -46106,12 +46106,12 @@ crit(229,{achID=1175,id=3,pvp=1,r=1})}}),
 ach(1173,{awp=30002,pvp=1,r=1,rwp=40300,sym={{"meta_achievement",167,199,200,872,168,201,204,1251,1502,1252,207}},u=2}),
 ach(166,{awp=30002,pvp=1,rank=1}),
 ach(167,{awp=30002,pvp=1,rank=100,g={
-i(247747,{awp=110207,pvp=1,sourceAchievements={167},spellID=1245232}),
+de(3887,{awp=110207,itemID=247747,pvp=1,sourceAchievements={167},spellID=1245232}),
 crit(3461,{achID=1172,id=1,pvp=1})}}),
 ach(199,{awp=30002,pvp=1,g={
 crit(3462,{achID=1172,id=2,pvp=1})}}),
 ach(200,{awp=30002,pvp=1,g={
-i(247746,{awp=110207,pvp=1,sourceAchievements={200},spellID=1245231}),
+de(3886,{awp=110207,itemID=247746,pvp=1,sourceAchievements={200},spellID=1245231}),
 crit(3463,{achID=1172,id=3,pvp=1})}}),
 ach(872,{awp=30002,pvp=1,g={
 crit(3464,{achID=1172,id=4,pvp=1})}}),

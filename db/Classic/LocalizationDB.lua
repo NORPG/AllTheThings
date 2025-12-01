@@ -219,6 +219,9 @@ L.DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your c
 L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Debug Mode |cffffffff(Show Everything)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Quite literally ... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
+L.DECOR_CHECKBOX = CATALOG_SHOP_TYPE_DECOR;
+L.DECOR_CHECKBOX_TOOLTIP = "Enable this option to track warband decor completion.";
+L.DECOR_ID = "Decor ID";
 L.DELETE_CHARACTER = "Right Click to Delete this Character";
 L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
 L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
@@ -971,10 +974,11 @@ _.HeaderConstants = {
 	VENDORS = -58,
 	WEAPONS = -101,
 	WORLD_BOSSES = -61,
+	WORLD_DROPS = -698,
 	ZONE_DROPS = -63,
 };
 _.HeaderData = {
-	FILLNPCS = {[-98]=1,[-95]=1,[-94]=1,[-93]=1,[-90]=1,[-63]=1,[-47]=1,[-22]=1,[-19]=1},
+	FILLNPCS = {[-698]=1,[-98]=1,[-95]=1,[-94]=1,[-93]=1,[-90]=1,[-63]=1,[-47]=1,[-22]=1,[-19]=1},
 };
 localize(L.HEADER_NAMES, {
 	[-11] = "New Character",
@@ -1066,7 +1070,7 @@ localize(L.HEADER_NAMES, {
 	[-520] = "BlizzCon",
 	[-521] = "Collector's Edition",
 	[-546] = "iCoke",
-	[-547] =  AUCTION_CATEGORY_MISCELLANEOUS,
+	[-547] = AUCTION_CATEGORY_MISCELLANEOUS,
 	[-551] = BATTLE_PET_SOURCE_9,
 	[-559] = "Children's Week",
 	[-574] = "Feast of Winter Veil",
@@ -1081,6 +1085,7 @@ localize(L.HEADER_NAMES, {
 	[-588] = "Stranglethorn Fishing Extravaganza",
 	[-610] = "Crieve's Never Implemented List",
 	[-611] = "Silithid Royalty",
+	[-698] = TRANSMOG_SOURCE_4,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1217,6 +1222,7 @@ localize(L.HEADER_ICONS, {
 	[-588] = _.asset("holiday_stv_fishing"),
 	[-610] = 132738,
 	[-611] = 133575,
+	[-698] = _.asset("category_worlddrops"),
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1290,7 +1296,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=5,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=12,["weekday"]=1,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=2,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=9,["weekday"]=1,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=14,["weekday"]=1,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=4,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=11,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
@@ -1300,7 +1305,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=7,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=14,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["remappedID"]=374})
 });
 
 -- Filter Database Module
@@ -3831,7 +3837,7 @@ local achievements = {
 	},
 	[546] = {
 		name = "Safe Deposit",
-		description = "Buy 6 additional bank slots.",
+		description = "Buy 7 additional bank slots.",
 		icon = 0,
 		category = 92,
 		criteria = {2002},
@@ -12192,7 +12198,7 @@ for key,value in pairs({
 	[522] = "Erreicht einen ehrfürchtigen Ruf.",
 	[523] = "Erreicht bei 5 Fraktionen einen ehrfürchtigen Ruf.",
 	[524] = "Erreicht bei 10 Fraktionen einen ehrfürchtigen Ruf.",
-	[546] = "Kauft 6 zusätzliche Bankplätze.",
+	[546] = "Kauft 7 zusätzliche Bankplätze.",
 	[627] = "Erforscht Dun Morogh und enthüllt die verdeckten Gebiete auf der Weltkarte.",
 	[628] = "Bezwingt Edwin van Cleef.",
 	[629] = "Bezwingt Taragaman den Hungerleider.",
@@ -16363,6 +16369,10 @@ for key,value in pairs({
 	[1610] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di Season of Discovery.|r",
 })
 do phases[key].description = value; end
+for key,value in pairs({
+	[546] = "Buy 6 additional bank slots.",
+})
+do achievements[key].description = value; end
 for key,value in pairs({
 	[81] = "Feats of Strength",
 	[92] = "General",
@@ -26597,7 +26607,7 @@ for key,value in pairs({
 	[522] = "Eleva una reputación a Exaltado.",
 	[523] = "Eleva 5 reputaciones a Exaltado.",
 	[524] = "Eleva 10 reputaciones a Exaltado.",
-	[546] = "Compra 6 ranuras adicionales en el banco.",
+	[546] = "Compra 7 ranuras adicionales en el banco.",
 	[627] = "Explora Dun Morogh y descubre todas las zonas cubiertas del mapa del mundo.",
 	[628] = "Derrota a Edwin VanCleef.",
 	[629] = "Derrota a Taragaman el Hambriento.",

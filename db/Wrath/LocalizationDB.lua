@@ -218,6 +218,9 @@ L.DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your c
 L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Debug Mode |cffffffff(Show Everything)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Quite literally ... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
+L.DECOR_CHECKBOX = CATALOG_SHOP_TYPE_DECOR;
+L.DECOR_CHECKBOX_TOOLTIP = "Enable this option to track warband decor completion.";
+L.DECOR_ID = "Decor ID";
 L.DELETE_CHARACTER = "Right Click to Delete this Character";
 L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
 L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
@@ -1036,10 +1039,11 @@ _.HeaderConstants = {
 	VENDORS = -58,
 	WEAPONS = -101,
 	WORLD_BOSSES = -61,
+	WORLD_DROPS = -698,
 	ZONE_DROPS = -63,
 };
 _.HeaderData = {
-	FILLNPCS = {[-98]=1,[-95]=1,[-94]=1,[-93]=1,[-90]=1,[-63]=1,[-47]=1,[-22]=1,[-19]=1},
+	FILLNPCS = {[-698]=1,[-98]=1,[-95]=1,[-94]=1,[-93]=1,[-90]=1,[-63]=1,[-47]=1,[-22]=1,[-19]=1},
 };
 localize(L.HEADER_NAMES, {
 	[-11] = "New Character",
@@ -1162,7 +1166,7 @@ localize(L.HEADER_NAMES, {
 	[-368] = "Storming the Citadel",
 	[-369] = "The Plagueworks",
 	[-370] = C_Map.GetAreaInfo(4892),
-	[-371] = "The Frostwing Halls",
+	[-371] = C_Map.GetAreaInfo(7932),
 	[-388] = C_Map.GetAreaInfo(1769),
 	[-413] = select(1,GetCategoryInfo(14941)),
 	[-476] = "Plunderstorm",
@@ -1179,7 +1183,7 @@ localize(L.HEADER_NAMES, {
 	[-526] = "Cata Classic Blazing Upgrade",
 	[-534] = "Starcraft II: Wings of Liberty",
 	[-546] = "iCoke",
-	[-547] =  AUCTION_CATEGORY_MISCELLANEOUS,
+	[-547] = AUCTION_CATEGORY_MISCELLANEOUS,
 	[-548] = REFER_A_FRIEND,
 	[-550] = "Spirit of Competition",
 	[-551] = BATTLE_PET_SOURCE_9,
@@ -1207,6 +1211,8 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Twilight Assist",
 	[-660] = "Twilight Duo",
 	[-661] = "Twilight Zone",
+	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
+	[-698] = TRANSMOG_SOURCE_4,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1413,6 +1419,8 @@ localize(L.HEADER_ICONS, {
 	[-659] = 236469,
 	[-660] = 236473,
 	[-661] = 236471,
+	[-694] = _.asset("expansion_tbc"),
+	[-698] = _.asset("category_worlddrops"),
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1457,9 +1465,6 @@ localize(L.EVENT_REMAPPING, {
 });
 
 -- Programmatic Event Scheduling
-_.Modules.Events.SetEventInformation(444, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
-});
 _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025}),
@@ -1474,6 +1479,9 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026})
+});
+_.Modules.Events.SetEventInformation(444, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
 });
 
 -- Filter Database Module
@@ -5497,7 +5505,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20501,
+		buildVersion = 20505,
 		state = 2,
 	},
 	[18] = {
@@ -5505,7 +5513,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 2 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20502,
+		buildVersion = 20506,
 		state = 2,
 	},
 	[1801] = {
@@ -5513,7 +5521,7 @@ local phases = {
 		description = "|cFFAAFFAAThis became available with the Ogri'la Faction during TBC Classic.|r",
 		lore = "|cFFFFAAAAIf the Ogri'la Faction is available on your server, simply turn this on.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20502,
+		buildVersion = 20506,
 		state = 2,
 	},
 	[1802] = {
@@ -5521,7 +5529,7 @@ local phases = {
 		description = "|cFFAAFFAAThis became available with the Skyguard Faction during TBC Classic.|r",
 		lore = "|cFFFFAAAAIf the Skyguard Faction is available on your server, simply turn this on.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20502,
+		buildVersion = 20506,
 		state = 2,
 	},
 	[19] = {
@@ -5529,7 +5537,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 3 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20503,
+		buildVersion = 20507,
 		state = 2,
 	},
 	[1901] = {
@@ -5537,7 +5545,7 @@ local phases = {
 		description = "|cFFAAFFAAThis became available with the Netherwing Faction during TBC Classic.|r",
 		lore = "|cFFFFAAAAIf the Netherwing Faction is available on your server, simply turn this on.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20503,
+		buildVersion = 20507,
 		state = 2,
 	},
 	[1902] = {
@@ -5553,7 +5561,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 4 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Zul'Aman.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20504,
+		buildVersion = 20508,
 		state = 2,
 	},
 	[21] = {
@@ -5561,7 +5569,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 5 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Sunwell Plateau and the Isle of Quel'Danas daily content.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20504,
+		buildVersion = 20508,
 		state = 2,
 	},
 	[2101] = {
@@ -19039,6 +19047,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "暮光帮凶",
 	[-660] = "暮光二重奏",
 	[-661] = "暮光领域",
+	[-694] = "'燃烧的远征'周年纪念版 - 外域升级",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -20997,6 +21006,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "暮光協助",
 	[-660] = "暮光雙人組",
 	[-661] = "暮光地帶",
+	[-694] = "燃燒的遠征：經典週年紀念版 - 外域升級",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定節日的活動中才能完成本節中的事物。",
