@@ -3,16 +3,64 @@
 SETLOCAL
 pushd %~dp0
 
-call :link_wowfolder "C:\Program Files\World of Warcraft"
-call :link_wowfolder "C:\Program Files (x86)\World of Warcraft"
-call :link_wowfolder "..\World of Warcraft"
-call :link_wowfolder "..\Blizzard\World of Warcraft"
-call :link_wowfolder "F:\World of Warcraft"
+:: Set the target folder name (case-insensitive match)
+set "TargetName=World of Warcraft"
+set "MatchedDir="
+
+:: Start from the batch’s directory (without trailing backslash)
+set "Dir=%~dp0"
+if "%Dir:~-1%"=="\" set "Dir=%Dir:~0,-1%"
+
+:Up
+:: Extract folder name and parent
+for %%F in ("%Dir%") do (
+    set "Name=%%~nxF"
+    set "Parent=%%~dpF"
+)
+
+:: Compare
+if /I "%Name%"=="%TargetName%" (
+    set "MatchedDir=%Dir%"
+    goto :Found
+)
+
+:: If we’re at root, stop
+for %%R in ("%Dir%") do if "%%~nxR"=="" goto :NotFound
+
+:: Move up one level
+if "%Parent:~-1%"=="\" (
+    set "Dir=%Parent:~0,-1%"
+) else (
+    set "Dir=%Parent%"
+)
+
+goto :Up
+
+:Found
+echo Found target folder: %MatchedDir%
+:: set "MatchedDir=%Dir%"
+goto :do_links
+
+:NotFound
+echo Target folder "%TargetName%" not found in folder heirarchy above this file
+goto :do_links
+
+:do_links
+if defined MatchedDir (
+    call :link_wowfolder "%MatchedDir%"
+) else (
+    call :link_wowfolder "C:\Program Files\World of Warcraft"
+    call :link_wowfolder "C:\Program Files (x86)\World of Warcraft"
+    call :link_wowfolder "..\World of Warcraft"
+    call :link_wowfolder "..\Blizzard\World of Warcraft"
+    call :link_wowfolder "F:\World of Warcraft"
+)
 call :report_taskcomplete
 EXIT /B 0
 
 :link_wowfolder
 if exist "%~1\" (
+    echo "Linking using root WoW folder: %~1"
     call :link_expansion "%~1\_classic_"
     call :link_expansion "%~1\_classic_era_"
     call :link_expansion "%~1\_classic_beta_"
