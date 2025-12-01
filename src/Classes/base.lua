@@ -464,11 +464,11 @@ end
 local function ImportClassFunctions(baseClassName, copyClassName, ...)
 	-- make sure the base class exists
 	local baseClass = type(baseClassName) == "table" and baseClassName or classDefinitions[baseClassName]
-	if not baseClass then error("ImportClassFunctions - base Class does not exist"..(baseClassName or "")) end
+	if not baseClass then error("ImportClassFunctions - base Class does not exist: "..(baseClassName or "")) end
 
 	-- make sure the copy class exists
 	local copyClass = type(copyClassName) == "table" and copyClassName or classDefinitions[copyClassName]
-	if not copyClass then error("ImportClassFunctions - copy Class does not exist"..(copyClassName or "")) end
+	if not copyClass then error("ImportClassFunctions - copy Class does not exist: "..(copyClassName or "")) end
 
 	local funcName, func
 	local count = select("#", ...)
