@@ -122,6 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 52.0, 34.6, DEADWIND_PASS },
 					["lvl"] = 60,
 					["groups"] = {
+						i(236002),	-- List of Components
 						objective(1, {	-- 0/1 Flame of Life
 							["description"] = "loot from lvl 60 Elite Red Dragon, in the right side of Wetland.",
 							["provider"] = { "i", 235789 },	-- Flame of Life (QI!)
@@ -163,6 +164,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					n(ZONE_DROPS, {
+						i(236878),	-- Mysterious Relic (Sword)
+						i(236879),	-- Mysterious Relic (Staff)
+						n(238657, {	-- Crypt Dweller
+							i(236880),	-- Mysterious Relic (Scythe)
+						}),
+						n(238511, {	-- The Gravekeeper
+							i(237024),	-- Opera Ticket
+						}),
 						i(235867),	-- Scrap of Parchment
 						i(236708),	-- Breastplate of Undead Slaying
 						i(236709),	-- Chestguard of Undead Slaying
@@ -245,10 +254,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(238365, {	-- Dark Rider		(4)
-						i(235892),	-- Darkrider's Spine
-						i(235868),	-- Bulwark of Ire
-						i(235872),	-- Stalker's Bands
-						i(235871),	-- Clutching Death Helm
+						["description"] = "To summon the Dark Rider Boss, you will need to collect 3 Mysterious Relics - a Staff, Sword, and Scythe. Once you have these you can use them to summon Dark Rider in the Prison",
+						["cost"] = { 
+							{ "i", 236878, 1 }, -- Mysterious Relic (Sword)
+							{ "i", 236879, 1 }, -- Mysterious Relic (Staff)
+							{ "i", 236880, 1 }, -- Mysterious Relic (Scythe)
+						},
+						["groups"] = {
+							i(235892),	-- Darkrider's Spine
+							i(235868),	-- Bulwark of Ire
+							i(235872),	-- Stalker's Bands
+							i(235871),	-- Clutching Death Helm
+						},
 					}),
 					n(238678),	-- Unk'omon <The Winged Sorrow>	(6)
 				},

@@ -1216,60 +1216,12 @@ i(237823),	-- Outrider's Mail Leggings
 i(237824),	-- Outrider's Chain Leggings
 i(237825),	-- Sentinel's Plate Legguards
 i(237826),	-- Outrider's Plate Legguards
-1.15.6.58866
-i(236002),	-- List of Components
-i(236878),	-- Mysterious Relic
-i(236879),	-- Mysterious Relic
-i(236880),	-- Mysterious Relic
-i(237024),	-- Opera Ticket
-i(238234),	-- Blessed Wizard Oil
-i(238241),	-- Consecrated Sharpening Stone
-i(238348),	-- The Axe of Severing
-i(238349),	-- Abomination Skin Leggings
-i(238350),	-- Scorn's Focal Dagger
-i(238351),	-- The Frozen Clutch
-i(238352),	-- Scorn's Icy Choker
-i(238353),	-- Mantle of Lady Falther'ess
-i(238354),	-- Lady Falther'ess' Finger
-i(238355),	-- Chains of the Lich
-i(238356),	-- Waistband of Balzaphon
-i(238357),	-- Staff of Balzaphon
-i(238358),	-- Blackwood's Thigh
-i(238360),	-- Lord Blackwood's Buckler
-i(238361),	-- Lord Blackwood's Blade
-i(238362),	-- Bracers of Mending
-i(238363),	-- The Shadow's Grasp
-i(238364),	-- Cloak of Revanchion
 1.15.7.59706
 i(190325),	-- Monster - Incubus Whip Mace1H
 i(237020),	-- Scarlet Insignia
 i(237023),	-- Pop-Up Shrub
 i(237037),	-- Haute Club Membership Card
 i(237163),	-- Ancient Hero's Skull
-i(238272),	-- Scarlet Infiltrator's Bandana
-i(238273),	-- Scarlet Infiltrator's Shoulderpads
-i(238274),	-- Scarlet Infiltrator's Vest
-i(238275),	-- Scarlet Infiltrator's Bracers
-i(238276),	-- Scarlet Infiltrator's Gloves
-i(238277),	-- Scarlet Infiltrator's Belt
-i(238278),	-- Scarlet Infiltrator's Trousers
-i(238279),	-- Scarlet Infiltrator's Shoes
-i(238280),	-- Scarlet Huntsman's Coif
-i(238281),	-- Scarlet Huntsman's Pauldrons
-i(238282),	-- Scarlet Huntsman's Chain
-i(238283),	-- Scarlet Huntsman's Wristguards
-i(238284),	-- Scarlet Huntsman's Handguards
-i(238285),	-- Scarlet Huntsman's Clasp
-i(238286),	-- Scarlet Huntsman's Legguards
-i(238287),	-- Scarlet Huntsman's Boots
-i(238288),	-- Scarlet Soldier's Helmet
-i(238289),	-- Scarlet Soldier's Spaulders
-i(238290),	-- Scarlet Soldier's Chestplate
-i(238291),	-- Scarlet Soldier's Protectors
-i(238292),	-- Scarlet Soldier's Grips
-i(238293),	-- Scarlet Soldier's Waistguard
-i(238294),	-- Scarlet Soldier's Legplates
-i(238295),	-- Scarlet Soldier's Stompers
 i(238637),	-- Prowler Steak
 i(238638),	-- Filet o' Flank
 i(238639),	-- Sunrise Omelette

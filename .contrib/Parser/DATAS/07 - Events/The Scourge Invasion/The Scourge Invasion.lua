@@ -214,6 +214,36 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					}),
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Consecrated Sharpening Stones
+				["allianceQuestData"] = q(88746, {	-- Consecrated Sharpening Stones [A]
+					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+					["coords"] = {
+						{ 54.7, 62.2, STORMWIND_CITY },
+						{ 34.0, 66.4, IRONFORGE },
+						{ 64.3, 44.5, DARNASSUS },
+						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+					},
+				}),
+				["hordeQuestData"] = q(88747, {	-- Consecrated Sharpening Stones [H]
+					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
+					["coords"] = {
+						{ 43.7, 52.6, THUNDER_BLUFF },
+						{ 52.5, 73.7, ORGRIMMAR },
+						{ 49.9, 29.4, UNDERCITY },
+						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+					},
+				}),
+				["sourceQuest"] = 9153,	-- Under the Shadow
+				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
+				["repeatable"] = true,
+				["lvl"] = 50,
+				["groups"] = {
+					i(238241),	-- Consecrated Sharpening Stone
+					i(237810),	-- Weighted Consecrated Sharpening Stone
+				},
+			}),
+			-- #else
 			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Consecrated Sharpening Stones
 				["allianceQuestData"] = q(9317, {	-- Consecrated Sharpening Stones [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
@@ -242,6 +272,25 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			q(88748, {	-- Cracked Necrotic Crystal
+				["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+				["providers"] = {
+					{ "n", 16431 },	-- Cracked Necrotic Crystal
+					{ "i", 22949 },	-- Cracked Necrotic Crystal
+				},
+				["maps"] = { STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
+				["lvl"] = 1,
+				["groups"] = {
+					i(238234),	-- Blessed Wizard Oil
+					i(238241),	-- Consecrated Sharpening Stone
+					i(237810),	-- Weighted Consecrated Sharpening Stone
+				},
+			}),
+			-- #else
 			q(9292, {	-- Cracked Necrotic Crystal
 				["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 				["providers"] = {
@@ -257,6 +306,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
+			-- #endif
 			q(12773, {	-- Darnassus
 				["sourceQuest"] = 12753,	-- A Desperate Alliance
 				["providers"] = {
@@ -307,6 +357,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				},
 				["lvl"] = 45,
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			q(88749, {	-- Faint Necrotic Crystal
+				["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+				["providers"] = {
+					{ "n", 16531 },	-- Faint Necrotic Crystal
+					{ "i", 22950 },	-- Faint Necrotic Crystal
+				},
+				["maps"] = { TIRISFAL_GLADES, UNDERCITY },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+				["lvl"] = 1,
+				["groups"] = {
+					i(238234),	-- Blessed Wizard Oil
+					i(238241),	-- Consecrated Sharpening Stone
+					i(237810),	-- Weighted Consecrated Sharpening Stone
+				},
+			}),
+			-- #else
 			q(9310, {	-- Faint Necrotic Crystal
 				["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 				["providers"] = {
@@ -322,6 +390,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
+			-- #endif
 			q(9262, {	-- Investigate the Scourge of Darnassus
 				["qg"] = 16495,	-- Lieutenant Beitha <The Argent Dawn>
 				["coord"] = { 77.7, 42.7, DARNASSUS },
@@ -724,6 +793,20 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["races"] = { TAUREN },
 				["lvl"] = 65,
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			q(88744, {	-- Under the Shadow
+				["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
+				["coord"] = { 81.1, 60.6, EASTERN_PLAGUELANDS },
+				["cost"] = { { "i", 22484, 10 } },	-- Necrotic Rune
+				["isYearly"] = true,
+				["lvl"] = 50,
+				["groups"] = {
+					i(238234),	-- Blessed Wizard Oil
+					i(238241),	-- Consecrated Sharpening Stone
+					i(237810),	-- Weighted Consecrated Sharpening Stone
+				},
+			}),
+			-- #else
 			q(9153, {	-- Under the Shadow
 				["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
 				["coord"] = { 81.1, 60.6, EASTERN_PLAGUELANDS },
@@ -735,57 +818,92 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
+			-- #endif
 		}),
 		n(14684, {	-- Balzaphon
 			["description"] = "Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",
 			["maps"] = { STRATHOLME },
 			["groups"] = {
+				-- #if SEASON_OF_DISCOVERY
+				i(238355),	-- Chains of the Lich
+				i(238356),	-- Waistband of Balzaphon
+				i(238357),	-- Staff of Balzaphon
+				-- #ELSE
 				i(23124),	-- Staff of Balzaphon
 				i(23125),	-- Chains of the Lich
 				i(23126),	-- Waistband of Balzaphon
+				-- #endif
 			},
 		}),
 		n(14686, {	-- Lady Falther'ess
 			["description"] = "Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",
 			["maps"] = { RAZORFEN_DOWNS },
 			["groups"] = {
-				i(23177),	-- Lady Falther'ess' Finger
+				-- #if SEASON_OF_DISCOVERY
+				i(238353),	-- Mantle of Lady Falther'ess
+				i(238354),	-- Lady Falther'ess' Finger
+				-- #else
+				i(23177),	-- Lady Falther'ess' Finger		
 				i(23178),	-- Mantle of Lady Falther'ess
+				-- #endif
 			},
 		}),
 		n(14695, {	-- Lord Blackwood
 			["description"] = "Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",
 			["maps"] = { SCHOLOMANCE },
 			["groups"] = {
+				-- #if SEASON_OF_DISCOVERY
+				i(238358),	-- Blackwood's Thigh
+				i(238360),	-- Lord Blackwood's Buckler
+				i(238361),	-- Lord Blackwood's Blade
+				-- #ELSE
 				i(23156),	-- Blackwood's Thigh
 				i(23132),	-- Lord Blackwood's Blade
 				i(23139),	-- Lord Blackwood's Buckler
+				-- #endif
 			},
 		}),
 		n(14690, {	-- Revanchion
 			["description"] = "Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",
 			["maps"] = { DIRE_MAUL },
 			["groups"] = {
+				-- #if SEASON_OF_DISCOVERY
+				i(238362),	-- Bracers of Mending
+				i(238363),	-- The Shadow's Grasp
+				i(238364),	-- Cloak of Revanchion
+				-- #ELSE
 				i(23127),	-- Cloak of Revanchion
 				i(23129),	-- Bracers of Mending
 				i(23128),	-- The Shadow's Grasp
+				-- #endif
 			},
 		}),
 		n(14693, {	-- Scorn
 			["description"] = "Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",
 			["maps"] = { SCARLET_MONASTERY },
 			["groups"] = {
+				-- #if SEASON_OF_DISCOVERY
+				i(238350),	-- Scorn's Focal Dagger
+				i(238351),	-- The Frozen Clutch
+				i(238352),	-- Scorn's Icy Choker
+				-- #ELSE
 				i(23168),	-- Scorn's Focal Dagger
 				i(23169),	-- Scorn's Icy Choker
 				i(23170),	-- The Frozen Clutch
+				-- #endif
 			},
 		}),
 		n(14682, {	-- Sever
 			["description"] = "Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
 			["maps"] = { SHADOWFANG_KEEP },
 			["groups"] = {
+				-- #if SEASON_OF_DISCOVERY
+				i(238348),	-- The Axe of Severing
+				i(238349),	-- Abomination Skin Leggings
+				-- #ELSE
 				i(23171),	-- The Axe of Severing
 				i(23173),	-- Abomination Skin Leggings
+				-- #endif
 			},
 		}),
 		n(16143, {	-- Shadow of Doom

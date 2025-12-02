@@ -16,10 +16,6 @@ r(1214309),	-- Dreamscale Visor
 r(1223787),	-- Icebane Breastplate
 r(1223789),	-- Icebane Gauntlets
 r(1223791),	-- Icebane Bracers
-1.15.7.59706
-r(1224631),	-- Scarlet Soldier's Helmet
-r(1224632),	-- Scarlet Soldier's Spaulders
-r(1224633),	-- Scarlet Soldier's Chestplate
 
 
 
