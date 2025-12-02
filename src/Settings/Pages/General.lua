@@ -893,7 +893,7 @@ end
 
 -- Decor were added during The War Within
 local accwideCheckboxDecor;
-if app.GameBuildVersion >= 110205 then	-- TODO: Change to 110207
+if app.GameBuildVersion >= 110207 then
 accwideCheckboxDecor =
 child:CreateAccountWideCheckbox("DECOR", "Decor")
 	:AlignBelow(accwideCheckboxCampsites)
@@ -904,7 +904,7 @@ end
 
 local headerGeneralThings = child:CreateHeaderLabel(L.GENERAL_THINGS_LABEL)
 headerGeneralThings:SetPoint("LEFT", headerMode, 0, 0)
-if app.GameBuildVersion >= 110205 then	-- TODO: Change to 110207
+if app.GameBuildVersion >= 110207 then
 	headerGeneralThings:SetPoint("TOP", accwideCheckboxDecor, "BOTTOM", 0, -10)
 elseif app.GameBuildVersion >= 110100 then
 	headerGeneralThings:SetPoint("TOP", accwideCheckboxCampsites, "BOTTOM", 0, -10)
