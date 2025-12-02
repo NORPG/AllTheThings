@@ -5097,6 +5097,9 @@ i(236067,{awp=11506,cost={{"i",237381,1},{"i",12363,3},{"i",12938,1}},f=52,lvl=6
 i(236074,{awp=11506,cost={{"i",237381,1},{"i",12363,3},{"i",12938,1}},f=52,lvl=60,u=1611})}}),
 n(16112,{awp=11506,coords={{81.6,58,1423}},u=1611,g={
 i(236022,{awp=11506,cost={{"i",237381,1},{"i",12363,3},{"i",12938,1}},f=52,lvl=60,u=1611})}}),
+h(-63,{awp=11506,u=1611,g={
+i(22682,{awp=11506,cost={{"i",237773,1}},description="Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",lvl=60,q=3,u=1611}),
+i(237773,{awp=11506,description="These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",u=1611})}}),
 h(-19,{awp=11506,u=1611,g={
 i(236237,{awp=11506,crs={15931,15932,16028},lvl=60,u=1611}),
 i(236240,{awp=11506,crs={15931,15932,16028},lvl=60,u=1611}),
@@ -5558,9 +5561,9 @@ s(289516,241177,{awp=11507,f=4,lvl=60,q=4,u=1612}),
 i(239216,{awp=11507,u=1612}),
 s(289499,241159,{awp=11507,f=4,lvl=60,q=4,u=1612}),
 r(1224609,{awp=11507,itemID=238300,learnedAt=285,requireSkill=197,u=1612}),
-i(238308,{awp=11507,f=200,u=1612}),
-i(238316,{awp=11507,f=200,u=1612}),
-i(238324,{awp=11507,f=200,u=1612}),
+r(1224617,{awp=11507,itemID=238308,learnedAt=285,requireSkill=165,u=1612}),
+r(1224625,{awp=11507,itemID=238316,learnedAt=285,requireSkill=165,u=1612}),
+r(1224633,{awp=11507,itemID=238324,learnedAt=285,requireSkill=164,u=1612}),
 i(239196,{awp=11507,c={1,2,3},u=1612}),
 i(241027,{awp=11507,f=52,lvl=60,u=1612}),
 i(241068,{awp=11507,f=53,lvl=60,u=1612})}}),
@@ -5592,10 +5595,10 @@ i(239710,{awp=11507,lvl=60,u=1612}),
 i(239726,{awp=11507,lvl=60,u=1612}),
 i(239216,{awp=11507,u=1612}),
 r(1224608,{awp=11507,itemID=238299,learnedAt=285,requireSkill=197,u=1612}),
-i(238307,{awp=11507,f=200,u=1612}),
-i(238315,{awp=11507,f=200,u=1612}),
+r(1224616,{awp=11507,itemID=238307,learnedAt=285,requireSkill=165,u=1612}),
+r(1224624,{awp=11507,itemID=238315,learnedAt=285,requireSkill=165,u=1612}),
 s(289505,241165,{awp=11507,f=4,lvl=60,q=4,u=1612}),
-i(238323,{awp=11507,f=200,u=1612}),
+r(1224632,{awp=11507,itemID=238323,learnedAt=285,requireSkill=164,u=1612}),
 s(289406,240924,{awp=11507,f=29,lvl=60,q=4,u=1612}),
 s(289507,241167,{awp=11507,f=4,lvl=60,q=4,u=1612}),
 s(289504,241164,{awp=11507,f=5,lvl=60,q=4,u=1612}),
@@ -5677,15 +5680,15 @@ i(239216,{awp=11507,u=1612}),
 r(1224607,{awp=11507,itemID=238298,learnedAt=285,requireSkill=197,u=1612}),
 r(1224608,{awp=11507,itemID=238299,learnedAt=285,requireSkill=197,u=1612}),
 r(1224609,{awp=11507,itemID=238300,learnedAt=285,requireSkill=197,u=1612}),
-i(238306,{awp=11507,f=200,u=1612}),
-i(238307,{awp=11507,f=200,u=1612}),
-i(238308,{awp=11507,f=200,u=1612}),
-i(238314,{awp=11507,f=200,u=1612}),
-i(238315,{awp=11507,f=200,u=1612}),
-i(238316,{awp=11507,f=200,u=1612}),
-i(238322,{awp=11507,f=200,u=1612}),
-i(238323,{awp=11507,f=200,u=1612}),
-i(238324,{awp=11507,f=200,u=1612}),
+r(1224615,{awp=11507,itemID=238306,learnedAt=285,requireSkill=165,u=1612}),
+r(1224616,{awp=11507,itemID=238307,learnedAt=285,requireSkill=165,u=1612}),
+r(1224617,{awp=11507,itemID=238308,learnedAt=285,requireSkill=165,u=1612}),
+r(1224623,{awp=11507,itemID=238314,learnedAt=285,requireSkill=165,u=1612}),
+r(1224624,{awp=11507,itemID=238315,learnedAt=285,requireSkill=165,u=1612}),
+r(1224625,{awp=11507,itemID=238316,learnedAt=285,requireSkill=165,u=1612}),
+r(1224631,{awp=11507,itemID=238322,learnedAt=285,requireSkill=164,u=1612}),
+r(1224632,{awp=11507,itemID=238323,learnedAt=285,requireSkill=164,u=1612}),
+r(1224633,{awp=11507,itemID=238324,learnedAt=285,requireSkill=164,u=1612}),
 s(289397,240851,{awp=11507,f=25,lvl=60,q=4,u=1612}),
 i(241032,{awp=11507,f=52,lvl=60,u=1612}),
 i(239695,{awp=11507,lvl=60,u=1612}),
@@ -7783,6 +7786,7 @@ qo(1,{awp=11506,crs={7369,7371,7372,7379},providers={{"i",235785}},u=1611}),
 qo(2,{awp=11506,coords={{52.2,34.2,1430}},providers={{"n",237818}},u=1611})}}),
 q(86968,{awp=11506,coords={{52.2,34.2,1430}},lvl=60,qgs={237818},sourceQuests={86967},u=1611}),
 q(86969,{awp=11506,coords={{52,34.6,1430}},lvl=60,qgs={218920},sourceQuests={86968},u=1611,g={
+i(236002,{awp=11506,u=1611}),
 qo(1,{awp=11506,crs={1045,1047,1048,1049,1050},description="loot from lvl 60 Elite Red Dragon, in the right side of Wetland.",providers={{"i",235789}},u=1611}),
 qo(2,{awp=11506,crs={11489,226923},providers={{"i",235787}},u=1611}),
 qo(3,{awp=11506,crs={238431},providers={{"i",235788}},u=1611})}}),
@@ -7793,6 +7797,12 @@ i(226404,{awp=11506,b=1,q=2,u=1611}),
 i(238681,{awp=11506,f=55,lvl=60,u=1611,g={
 i(22484,{awp=11506,b=1,q=2,u=1611})}})}}),
 h(-63,{awp=11506,u=1611,g={
+i(236878,{awp=11506,u=1611}),
+i(236879,{awp=11506,u=1611}),
+n(238657,{awp=11506,u=1611,g={
+i(236880,{awp=11506,u=1611})}}),
+n(238511,{awp=11506,u=1611,g={
+i(237024,{awp=11506,u=1611})}}),
 i(235867,{awp=11506,u=1611}),
 s(284817,236708,{awp=11506,f=7,lvl=58,q=4,u=1611}),
 s(284818,236709,{awp=11506,f=6,lvl=58,q=4,u=1611}),
@@ -7822,17 +7832,19 @@ s(284837,236728,{awp=11506,f=5,lvl=58,q=4,u=1611}),
 s(284831,236722,{awp=11506,f=4,lvl=58,q=4,u=1611}),
 s(284820,236711,{awp=11506,f=5,lvl=58,q=4,u=1611}),
 s(284828,236719,{awp=11506,f=4,lvl=58,q=4,u=1611})}}),
-h(-614,{awp=11506,u=1611,g={
-h(-19,{awp=11506,u=1611,g={
+h(-614,{awp=11506,description="There are 3 Failed Apprentices locked in cells. The Warden can be found patrolling the Prison, if you kill him, he drops Portcullis Key. You can use this key to free one of the Failed Apprentices",u=1611,g={
+n(238560,{awp=11506,u=1611,g={
+i(237011,{awp=11506,u=1611})}}),
+h(-19,{awp=11506,cost={{"i",237011,1}},crs={238213,238233,238234},u=1611,g={
 s(284434,235894,{awp=11506,f=27,lvl=60,q=4,u=1611}),
 s(284776,235880,{awp=11506,f=4,lvl=60,q=4,u=1611}),
 s(284775,235879,{awp=11506,f=6,lvl=60,q=4,u=1611}),
 s(284773,235873,{awp=11506,f=7,lvl=60,q=4,u=1611})}}),
-n(238233,{awp=11506,u=1611,g={
+n(238233,{awp=11506,cost={{"i",237011,1}},u=1611,g={
 i(235886,{awp=11506,f=51,lvl=60,u=1611})}}),
-n(238213,{awp=11506,u=1611,g={
+n(238213,{awp=11506,cost={{"i",237011,1}},u=1611,g={
 i(236782,{awp=11506,f=51,lvl=60,u=1611})}}),
-n(238234,{awp=11506,u=1611,g={
+n(238234,{awp=11506,cost={{"i",237011,1}},u=1611,g={
 i(235887,{awp=11506,f=51,lvl=60,u=1611})}})}}),
 h(-615,{awp=11506,u=1611,g={
 s(284730,235889,{awp=11506,f=28,lvl=60,q=4,u=1611}),
@@ -7850,7 +7862,8 @@ s(284435,235891,{awp=11506,f=24,lvl=60,q=4,u=1611}),
 s(284715,235890,{awp=11506,f=20,lvl=60,q=4,u=1611}),
 s(284759,235869,{awp=11506,f=5,lvl=60,q=4,u=1611}),
 s(284778,235882,{awp=11506,f=6,lvl=60,q=4,u=1611})}}),
-n(237439,{awp=11506,description="Kharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",u=1611,g={
+n(238678,{awp=11506,description="In the Library, use the torch to open the secret room behind the bookshelf. Mage, or Warlock should speak to Alfwhit Grigdert. He will spawn a portal and teleport back up to the Dark Rider room. Speak with Alfwhit Grigdert again and the boss will spawn. He will give Mark of the Master, a 25% attackspeed & 25% castspeed for 15minutes, when killed",u=1611}),
+n(237439,{awp=11506,description="Players can summon Kharon by interacting with Dialogues of the Dead at his Altar.\n\nKharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",u=1611,g={
 s(284424,235874,{awp=11506,f=4,lvl=60,q=4,u=1611}),
 s(284795,236642,{awp=11506,f=4,lvl=60,q=4,u=1611}),
 s(284792,235875,{awp=11506,f=5,lvl=60,q=4,u=1611}),
@@ -7859,12 +7872,11 @@ s(284794,235877,{awp=11506,f=7,lvl=60,q=4,u=1611}),
 s(284798,236645,{awp=11506,f=7,lvl=60,q=4,u=1611}),
 s(284796,236643,{awp=11506,f=5,lvl=60,q=4,u=1611}),
 s(284797,236644,{awp=11506,f=6,lvl=60,q=4,u=1611})}}),
-n(238365,{awp=11506,u=1611,g={
+n(238365,{awp=11506,cost={{"i",236880,1},{"i",236879,1},{"i",236878,1}},description="To summon the Dark Rider Boss, you will need to collect 3 Mysterious Relics - a Staff, Sword, and Scythe. Once you have these you can use them to summon Dark Rider in the Prison",u=1611,g={
 s(284556,235892,{awp=11506,f=32,lvl=60,q=4,u=1611}),
 s(284754,235868,{awp=11506,f=8,lvl=60,q=4,u=1611}),
 s(284772,235872,{awp=11506,f=5,lvl=60,q=4,u=1611}),
-s(284771,235871,{awp=11506,f=7,lvl=60,q=4,u=1611})}}),
-n(238678,{awp=11506,u=1611})}})}}),
+s(284771,235871,{awp=11506,f=7,lvl=60,q=4,u=1611})}})}})}}),
 inst(232,{coords={{35.7,55.5,1443}},lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,maps={67,68,281},savedInstanceID=349,u=1607,["zone-text-areaID"]=2100,g={
 h(-45,{
 q(7065,{coords={{63.8,10.6,1443}},lvl=45,qgs={13698},r=2,rwp=40003,g={

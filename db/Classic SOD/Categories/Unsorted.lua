@@ -16,4 +16,9 @@ r(439110,{itemID=217264,q=2,requireSkill=165}),
 r(439112,{itemID=217266,q=3,requireSkill=165}),
 r(439118,{itemID=217271,q=1,requireSkill=165})}),
 prof(333,{
-r(448624,{itemID=223163,q=2,requireSkill=333})})})})};
+r(448624,{itemID=223163,q=2,requireSkill=333})})})}),
+x(11,{
+flt(200,{
+prof(165,{
+r(1226689,{itemID=238925,lvl={60},requireSkill=165}),
+r(1226690,{itemID=238926,lvl={60},requireSkill=165})})})})};
