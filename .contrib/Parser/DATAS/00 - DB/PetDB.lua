@@ -4503,10 +4503,7 @@ i(252193, 4896);	-- Slippery Saul
 ------------------
 -- PATCH 11.2.7 --
 ------------------
-i(205017, 3519);	-- Byrn
-i(258737, 4913);	-- Moon Darter
 i(254876, 4911);	-- P.O.S.T. Assistant
-i(222967, 4475);	-- Webbers
 
 ------------------
 -- PATCH 12.0.0 --
@@ -4515,6 +4512,7 @@ i(250135, 4874);	-- Akil Fledgling
 i(193068, 3277);	-- Amber Treeflitter
 i(250142, 4882);	-- Azure Sporebat
 i(250148, 4879);	-- Blistercreepling
+i(205017, 3519);	-- Byrn
 i(238793, 4790);	-- Devouring Runt
 i(250143, 4883);	-- Dragonhawk Mosswing
 i(250139, 4878);	-- Ebon Snapling
@@ -4531,6 +4529,7 @@ i(258660, 4912);	-- Silvermoon Broom
 i(250140, 4880);	-- Swamp Biter
 i(251001, 4890);	-- Vibrant Manaling
 i(250138, 4877);	-- Violet Chick
+i(222967, 4475);	-- Webbers
 
 --- UNSORTED ---
 i(255151, 4906);	-- [DNT] Baby Amani Eagle (Grey)
@@ -4559,6 +4558,7 @@ i(259991, 4930);	-- Lil' Preyseeker
 i(260585, 4946);	-- Linda the Lucky
 i(262396, 4957);	-- Lost Star
 i(262999, 4971);	-- Luma
+i(258737, 4913);	-- Moon Darter
 i(250863, 4888);	-- Naloki
 i(251002, 4889);	-- Nether Familia
 i(262392, 4961);	-- Nibblesworth
