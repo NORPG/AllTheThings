@@ -54,7 +54,7 @@ root(ROOTS.Zones, {
 						it = "Tre cacciatori hanno circondato Mara Manto Lesto. Coinvolgili in combattimento e un Cassa Danneggiata verrà generato vicino a Mara Manto Lesto. Una volta terminata la battaglia, Mara ti ringrazierà e ti lascerà con il Cassa Danneggiata.",
 						ko = "세 명의 사냥꾼이 마라 스위프트메인을 둘러싸고 있습니다. 전투에 참여하면 마라 스위프트메인 근처에 낡은 상자가 생성됩니다. 전투가 끝나면 마라는 감사 인사를 전하고 낡은 상자를 남겨줄 것입니다.",
 						pt = "Três caçadores cercaram Mara Crinaveloz. Envolva-os em combate e um Baú Desgastado aparecerá perto de Mara Crinaveloz. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Desgastado.",
-						ru = "Трое охотников окружили Мара Стремительная Грива. Вступите с ними в бой, и рядом с Марой Быстрогривой появится Побитый сундук. Как только битва закончится, Мара поблагодарит вас и оставит с Побитый сундук.",
+						ru = "Трое охотников окружили Мару Стремительную Гриву. Вступите с ними в бой, и рядом с Марой Стремительной Гривой появится Побитый сундук. Как только битва закончится, Мара поблагодарит вас и оставит Побитый сундук.",
 						cn = "三名猎人包围了玛拉·斯威夫迈恩。与他们交战，玛拉·迅鬃附近会生成一个破烂的宝箱。战斗结束后，玛拉会感谢你，并给你留下破损的宝箱。",
 						-- TODO: tw = "",
 					},
