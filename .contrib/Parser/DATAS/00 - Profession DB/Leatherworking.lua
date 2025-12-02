@@ -57,7 +57,6 @@ i(0, 451706);		-- Screaming Chain Pauldrons
 i(0, 446189);		-- Shoulderpads of Obsession
 i(0, 446185);		-- Shrieking Spaulders
 i(0, 446190);		-- Wailing Chain Mantle
--- #endif
 
 ------------------
 -- PATCH 1.15.5 --
@@ -67,6 +66,23 @@ i(234236, 1213519);	-- Sharpened Chitin Armor Kit
 i(234237, 1213521);	-- Razorbramble Cowl
 i(234238, 1213523);	-- Razorbramble Shoulderpads
 i(234239, 1213525);	-- Razorbramble Leathers
+
+------------------
+-- PATCH 1.15.7 --
+------------------
+i(238309, 1224618);	-- Pattern: Scarlet Infiltrator's Bracers
+i(238310, 1224619);	-- Pattern: Scarlet Infiltrator's Gloves
+i(238311, 1224620);	-- Pattern: Scarlet Infiltrator's Belt
+i(238312, 1224621);	-- Pattern: Scarlet Infiltrator's Trousers
+i(238313, 1224622);	-- Pattern: Scarlet Infiltrator's Shoes
+
+i(238317, 1224626);	-- Pattern: Scarlet Huntsman's Wristguards
+i(238318, 1224627);	-- Pattern: Scarlet Huntsman's Handguards
+i(238319, 1224628);	-- Pattern: Scarlet Huntsman's Clasp
+i(238320, 1224629);	-- Pattern: Scarlet Huntsman's Legguards
+i(238321, 1224630);	-- Pattern: Scarlet Huntsman's Boots
+
+-- #endif
 
 -----------------
 --   CLASSIC   --

@@ -1270,21 +1270,6 @@ i(238292),	-- Scarlet Soldier's Grips
 i(238293),	-- Scarlet Soldier's Waistguard
 i(238294),	-- Scarlet Soldier's Legplates
 i(238295),	-- Scarlet Soldier's Stompers
-i(238309),	-- Pattern: Scarlet Infiltrator's Bracers
-i(238310),	-- Pattern: Scarlet Infiltrator's Gloves
-i(238311),	-- Pattern: Scarlet Infiltrator's Belt
-i(238312),	-- Pattern: Scarlet Infiltrator's Trousers
-i(238313),	-- Pattern: Scarlet Infiltrator's Shoes
-i(238317),	-- Pattern: Scarlet Huntsman's Wristguards
-i(238318),	-- Pattern: Scarlet Huntsman's Handguards
-i(238319),	-- Pattern: Scarlet Huntsman's Clasp
-i(238320),	-- Pattern: Scarlet Huntsman's Legguards
-i(238321),	-- Pattern: Scarlet Huntsman's Boots
-i(238325),	-- Plans: Scarlet Soldier's Protectors
-i(238326),	-- Plans: Scarlet Soldier's Grips
-i(238327),	-- Plans: Scarlet Soldier's Waistguard
-i(238328),	-- Plans: Scarlet Soldier's Legplates
-i(238329),	-- Plans: Scarlet Soldier's Stompers
 i(238637),	-- Prowler Steak
 i(238638),	-- Filet o' Flank
 i(238639),	-- Sunrise Omelette

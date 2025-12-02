@@ -72,6 +72,14 @@ i(234085, 1214257);	-- Black Grasp of the Destroyer
 i(234461, 1214274);	-- Obsidian Mail Tunic
 i(235039, 1215507);	-- Thick Obsidian Breastplate
 
+------------------
+-- PATCH 1.15.7 --
+------------------
+i(238325, 1224635); -- Plans: Scarlet Soldier's Protectors
+i(238326, 1224636); -- Plans: Scarlet Soldier's Grips
+i(238327, 1224637); -- Plans: Scarlet Soldier's Waistguard
+i(238328, 1224638); -- Plans: Scarlet Soldier's Legplates
+i(238329, 1224639); -- Plans: Scarlet Soldier's Stompers
 -- #endif
 
 -----------------

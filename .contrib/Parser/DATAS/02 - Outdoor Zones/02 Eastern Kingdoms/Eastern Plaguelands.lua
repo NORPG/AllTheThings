@@ -33,6 +33,108 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["maps"] = { LIGHTS_HOPE_CHAPEL },
 		-- #endif
 		["groups"] = {
+			-- #IF SEASON_OF_DISCOVERY
+			m(NEW_AVALON, {
+				["lore"] = "New Avalon is located just east of Tyr's Hand in the Eastern Plaguelands. The town encompasses Scarlet Hold, the New Avalon Orchard, the Scarlet Tavern, the Chapel of the Crimson Flame, the New Avalon Town Hall, and the New Avalon Forge. The Scarlet Overlook and King's Harbor are located to the southeast, and Havenshire is to the north.",
+				["groups"] = {
+					n(QUESTS, {
+						q(87459, {	-- Scarlet Activities
+							["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+						}),
+						q(87493, {	-- Unrest at Tyr's Hand
+							["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+							["sourceQuest"] = 87459,	-- Scarlet Activities
+						}),
+						q(87497, {	-- The Schism
+							["qg"] = 239032,	-- Commander Beatrix
+							["coord"] = { 67.8, 83.2, EASTERN_PLAGUELANDS },
+							["sourceQuest"] = 87493,	-- Unrest at Tyr's Hand
+						}),
+						q(89562, {	-- My Old Enemy
+							["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+							["sourceQuest"] = 87497,	-- The Schism
+						}),
+						--••••• 5 Leonid's Burden Leonid's Burden
+						--•••••• 6 The Wrecked Caravan The Wrecked Caravan
+						--••••••• 7 Something New Something New
+						--•••••••• 8 Servants of Death Servants of Death
+						--••••••••• 9 A Personal Matter A Personal Matter
+						--•••••••••• 10 The Culling The Culling
+						--••••••••••• 11 Terrordale Terrordale
+						--•••••••••••• 12 Stomping Out The Infestation Stomping Out The Infestation
+						--••••••••••••• 13 Loss Loss
+						--•••••••••••••• 14 The Right Path The Right Path
+						-- The Scarlet Reclamation Questline
+						q(87498, {	-- The Scarlet Reclamation
+							["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+							["sourceQuest"] = 87497,	-- The Schism
+						}),
+						--••••• 5 Gathering Intelligence Gathering Intelligence - Unlocks New Avalon New Avalon and Weakening The Defenses Weakening The Defenses
+
+						--•••••• 6 New Avalon New Avalon
+
+						--•••••• 6 Weakening The Defenses Weakening The Defenses
+						--••••••• 7 Report to Lord Tyrosus Report to Lord Tyrosus
+						--•••••••• 8 The Wrath of the Dawn The Wrath of the Dawn
+						--••••••••• 9 Decapitation Strike Decapitation Strike
+						--•••••••••• 10 Red = Dead Red = Dead
+						q(87518, {	-- Fall of the Grand Crusader
+							["qg"] = 239337,	-- Lord Maxwell Tyrosus <The Argent Dawn>
+						--	["coord"] = { 81.6, 57.8, SCARLET_ENCLAVE },
+							["maps"] = { SCARLET_ENCLAVE },
+						--	["sourceQuest"] = 87517,	-- Red = Dead
+							["groups"] = {
+								i(243229),	-- Hearthstone of the Dawn
+							},
+						}),
+					}),							
+					n(PROFESSIONS, {
+						prof(ENCHANTING, {
+							["description"] = "Before you can enter the Mage Tower to pick up the books, you will need to complete a small puzzle. First use the Scarlet Insignia, to disguise yourself then head to the Mage Tower within New Avalon.\nRun through the Stone Arches, and you will get a buff called Mystical Refraction this allows you to see colored crystals in the area.\nYou need to blend the color of the crystals to match the Mage Tower Portal door. You blend these by running under the floating tree.\nOnce you have solved the puzzle, simply walk through the portal to enter the Mage Tower. Once inside you will be greeted with Distracted Scarlet Wizards who you must avoid.\nOnce in, you will find the books on the bookcases throughout.\nEach book equals a different enchanting formula. Once you have looted the book, disenchant it then use 15 Illusion Dust, and 1 Righteous Orb to learn the enchant.",
+							["groups"] = {
+								i(242268, {	-- If You Give a Crusader an Enchant
+									i(241191),	-- Formula: Enchant Weapon - Grand Crusader
+								}),
+								i(242363, {	-- Who, What, Where, When, and Die! Five Keys to a Good Inquisition								
+									i(242361),	-- Formula: Enchant 2H Weapon - Grand Inquisitor
+								}),
+								i(242267, {	-- From Arcanist to Archmage
+									i(241195),	-- Formula: Enchant 2H Weapon - Grand Arcanist
+								}),
+								i(242268, {	-- World of Wardcraft
+									i(241201),	-- Formula: Enchant Weapon - Grand Sorcerer
+								}),
+							},						
+						}),
+					}),
+					n(VENDORS, {
+						n(28512, {	-- Quartermaster Ozorg
+						}),
+					}),
+					n(ZONE_DROPS, {
+						i(238309),	-- Pattern: Scarlet Infiltrator's Bracers
+						i(238310),	-- Pattern: Scarlet Infiltrator's Gloves
+						i(238311),	-- Pattern: Scarlet Infiltrator's Belt
+						i(238312),	-- Pattern: Scarlet Infiltrator's Trousers
+						i(238313),	-- Pattern: Scarlet Infiltrator's Shoes
+						i(238317),	-- Pattern: Scarlet Huntsman's Wristguards
+						i(238318),	-- Pattern: Scarlet Huntsman's Handguards
+						i(238319),	-- Pattern: Scarlet Huntsman's Clasp
+						i(238320),	-- Pattern: Scarlet Huntsman's Legguards
+						i(238321),	-- Pattern: Scarlet Huntsman's Boots
+						i(238325),	-- Plans: Scarlet Soldier's Protectors
+						i(238326),	-- Plans: Scarlet Soldier's Grips
+						i(238327),	-- Plans: Scarlet Soldier's Waistguard
+						i(238328),	-- Plans: Scarlet Soldier's Legplates
+						i(238329),	-- Plans: Scarlet Soldier's Stompers
+					}),
+				},
+			}),
+			-- #ENDIF
 			-- #if AFTER WRATH
 			m(THE_SCARLET_ENCLAVE, {
 				["lore"] = "The Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.",

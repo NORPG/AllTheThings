@@ -4813,7 +4813,8 @@ crit(1413,{achID=851,id=1})}),
 exp(978,{
 crit(1427,{achID=851,id=1})})}),
 h(-31,{
-faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end})}),
+faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end,g={
+crit(8821,{achID=2336,id=1,u=1609})}})}),
 h(-32,{
 fp(39,{coords={{51,29.2,1446}},crs={7823},r=2}),
 fp(40,{coords={{51.6,26.6,1446}},crs={7824},r=1})}),
@@ -5452,7 +5453,8 @@ crit(928,{achID=750,id=1})}),
 exp(1699,{
 crit(926,{achID=750,id=1})})}),
 h(-31,{
-faction(470,{icon=133784,maps={1446},OnTooltip=_.OnTooltipDB.ForRatchet})}),
+faction(470,{icon=133784,maps={1446},OnTooltip=_.OnTooltipDB.ForRatchet,g={
+crit(8822,{achID=2336,id=1,u=1609})}})}),
 h(-32,{
 fp(77,{coords={{44.4,59,1413}},crs={10378},r=1,rwp=40003}),
 fp(25,{coords={{51.4,30.2,1413}},crs={3615},r=1}),
@@ -6512,7 +6514,8 @@ crit(1474,{achID=857,id=1})}),
 exp(2244,{
 crit(1483,{achID=857,id=1})})}),
 h(-31,{
-faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook}),
+faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook,g={
+crit(8820,{achID=2336,id=1,u=1609})}}),
 faction(589,{icon=132252,OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerKill=50;if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500);else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000);if reputation>=9000 then	repPerKill=50;addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000);end	end	end	end,r=2})}),
 h(-32,{
 fp(52,{coords={{62.2,36.6,1452}},crs={11138},r=2}),
@@ -8287,7 +8290,7 @@ exp(284,{
 crit(961,{achID=760,id=1,rwp=40003})})}),
 h(-31,{
 faction(349,{icon=132292,OnTooltip=_.OnTooltipDB.Ravenholdt,g={
-crit(8824,{achID=2336,id=4,u=1609})}}),
+crit(8824,{achID=2336,id=1,u=1609})}}),
 faction(70,{description="Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",maxReputation={70,0},minReputation={70,-1}})}),
 h(-44,{
 n(214212,{coords={{88.6,73.6,1416}},providers={{"i",211421}},u=1605,g={
@@ -9868,6 +9871,42 @@ i(210043,{b=1,c={11},coords={{65.2,27.8,1431}},crs={211200},q=1,rwp=20001,u=1605
 s(156170,899,{awp=100107,coords={{18.8,27.8,1431},{28.8,29.6,1431}},crs={217},f=20,lvl=14,q=2,rwp=40003}),
 s(156179,920,{coords={{23.6,71.6,1431},{49.8,77.8,1431}},crs={215,909},f=23,lvl=20,q=2,rwp=40003})})}}),
 m(1423,{icon=236760,lore="Eastern Plaguelands is heavily-ravaged from the Scourge. The Argent Dawn has made some progress after The Lich King's defeat, but the zone is still full of Undead. Players explore Eastern Plaguelands primarily through escorting a Worgen merchant, Fiona, and her band of merry travelers she picks up along the way. The Plaguelands are the site for some of the most gripping storylines, including the Battle for Darrowshire and the fate of the Stratholme residents.",g={
+m(4343,{lore="New Avalon is located just east of Tyr's Hand in the Eastern Plaguelands. The town encompasses Scarlet Hold, the New Avalon Orchard, the Scarlet Tavern, the Chapel of the Crimson Flame, the New Avalon Town Hall, and the New Avalon Forge. The Scarlet Overlook and King's Harbor are located to the southeast, and Havenshire is to the north.",g={
+h(-45,{
+q(87459,{coords={{81.6,57.8,1423}},qgs={11036}}),
+q(87493,{coords={{81.6,57.8,1423}},qgs={11036},sourceQuests={87459}}),
+q(87497,{coords={{67.8,83.2,1423}},qgs={239032},sourceQuests={87493}}),
+q(89562,{coords={{81.6,57.8,1423}},qgs={11036},sourceQuests={87497}}),
+q(87498,{coords={{81.6,57.8,1423}},qgs={11036},sourceQuests={87497}}),
+q(87518,{maps={2856},qgs={239337},g={
+i(243229)}})}),
+h(-44,{
+prof(333,{description="Before you can enter the Mage Tower to pick up the books, you will need to complete a small puzzle. First use the Scarlet Insignia, to disguise yourself then head to the Mage Tower within New Avalon.\nRun through the Stone Arches, and you will get a buff called Mystical Refraction this allows you to see colored crystals in the area.\nYou need to blend the color of the crystals to match the Mage Tower Portal door. You blend these by running under the floating tree.\nOnce you have solved the puzzle, simply walk through the portal to enter the Mage Tower. Once inside you will be greeted with Distracted Scarlet Wizards who you must avoid.\nOnce in, you will find the books on the bookcases throughout.\nEach book equals a different enchanting formula. Once you have looted the book, disenchant it then use 15 Illusion Dust, and 1 Righteous Orb to learn the enchant.",g={
+i(242268,{f=55,g={
+i(241191,{f=200}),
+i(241201,{f=200})}}),
+i(242363,{f=55,g={
+i(242361,{f=200})}}),
+i(242267,{f=55,g={
+i(241195,{f=200})}})}})}),
+h(-58,{
+n(28512)}),
+h(-63,{
+r(1224618,{itemID=238309,learnedAt=260,requireSkill=165}),
+r(1224619,{itemID=238310,learnedAt=270,requireSkill=165}),
+r(1224620,{itemID=238311,learnedAt=260,requireSkill=165}),
+r(1224621,{itemID=238312,learnedAt=280,requireSkill=165}),
+r(1224622,{itemID=238313,learnedAt=270,requireSkill=165}),
+r(1224626,{itemID=238317,learnedAt=260,requireSkill=165}),
+r(1224627,{itemID=238318,learnedAt=270,requireSkill=165}),
+r(1224628,{itemID=238319,learnedAt=260,requireSkill=165}),
+r(1224629,{itemID=238320,learnedAt=280,requireSkill=165}),
+r(1224630,{itemID=238321,learnedAt=270,requireSkill=165}),
+r(1224635,{itemID=238325,learnedAt=260,requireSkill=164}),
+r(1224636,{itemID=238326,learnedAt=270,requireSkill=164}),
+r(1224637,{itemID=238327,learnedAt=260,requireSkill=164}),
+r(1224638,{itemID=238328,learnedAt=280,requireSkill=164}),
+r(1224639,{itemID=238329,learnedAt=270,requireSkill=164})})}}),
 h(-12,{
 ach(771,{
 crit(8749,{achID=771,id=1}),
@@ -12122,8 +12161,10 @@ crit(1222,{achID=781,id=1})}),
 exp(122,{
 crit(1219,{achID=781,id=1})})}),
 h(-31,{
-faction(87,{crs={9179},icon=133694,maps={1418},minReputation={87,41999},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	local isHuman=_.RaceIndex==1;local repForDressing=isHuman and 11 or 10;if t.dressing.collected then repForDressing=0;end	local repForAdmiral=isHuman and 220 or 200;if t.admiral.collected then repForAdmiral=0;end	t.minReputation[2]=math.max(t.reputation,41999)+ repForDressing + repForAdmiral;end	end}),
-faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end}),
+faction(87,{crs={9179},icon=133694,maps={1418},minReputation={87,41999},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	local isHuman=_.RaceIndex==1;local repForDressing=isHuman and 11 or 10;if t.dressing.collected then repForDressing=0;end	local repForAdmiral=isHuman and 220 or 200;if t.admiral.collected then repForAdmiral=0;end	t.minReputation[2]=math.max(t.reputation,41999)+ repForDressing + repForAdmiral;end	end,g={
+crit(8818,{achID=2336,id=1,u=1609})}}),
+faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end,g={
+crit(8819,{achID=2336,id=1,u=1609})}}),
 faction(2634,{description="This faction is probably not one that you can gain reputation with.",pvp=1,u=1})}),
 h(-32,{
 fp(18,{coords={{26.8,77,1434}},crs={2858},r=1}),
