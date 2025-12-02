@@ -3541,16 +3541,13 @@ applyclassicphase(PHASE_SIX,
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 								["cost"] = {
-									{ "i", 22682, 5 },	-- Frozen Rune
+									{ "i", 236656, 5 },	-- Frozen Rune
 									{ "i",  7080, 2 },	-- Essence of Water
 									{ "i", 14048, 4 },	-- Bolt of Runecloth
 									{ "i", 14227, 4 },	-- Ironweb Spider Silk
 									{ "g", 2000000 },	-- 200g
 								},
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236690),	-- Glacial Cloak
 								},
@@ -3560,7 +3557,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 5 },	-- Frozen Rune
+									{ "i", 236656, 5 },	-- Frozen Rune
 									{ "i",  7080, 4 },	-- Essence of Water
 									{ "i", 14048, 4 },	-- Bolt of Runecloth
 									{ "i", 14227, 2 },	-- Ironweb Spider Silk
@@ -3568,9 +3565,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { PRIEST, MAGE, WARLOCK },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236692),	-- Glacial Gloves
 								},
@@ -3581,7 +3575,7 @@ applyclassicphase(PHASE_SIX,
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 								["cost"] = {
-									{ "i", 22682, 8 },	-- Frozen Rune
+									{ "i", 236656, 8 },	-- Frozen Rune
 									{ "i",  7080, 6 },	-- Essence of Water
 									{ "i", 14048, 8 },	-- Bolt of Runecloth
 									{ "i", 14227, 4 },	-- Ironweb Spider Silk
@@ -3589,9 +3583,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { PRIEST, MAGE, WARLOCK },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236694),	-- Glacial Vest
 								},
@@ -3601,7 +3592,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 4 },	-- Frozen Rune
+									{ "i", 236656, 4 },	-- Frozen Rune
 									{ "i",  7080, 2 },	-- Essence of Water
 									{ "i", 14048, 2 },	-- Bolt of Runecloth
 									{ "i", 14227, 2 },	-- Ironweb Spider Silk
@@ -3609,9 +3600,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { PRIEST, MAGE, WARLOCK },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236693),	-- Glacial Wrists
 								},
@@ -3621,7 +3609,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 4 },	-- Frozen Rune
+									{ "i", 236656, 4 },	-- Frozen Rune
 									{ "i", 7080, 2 },	-- Essence of Water
 									{ "i", 12359, 12 },	-- Thorium Bar
 									{ "i", 12360, 2 },	-- Arcanite Bar
@@ -3629,9 +3617,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { WARRIOR, PALADIN },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236696),	-- Icebane Bracers
 								},
@@ -3642,7 +3627,7 @@ applyclassicphase(PHASE_SIX,
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 								["cost"] = {
-									{ "i", 22682, 8 },	-- Frozen Rune
+									{ "i", 236656, 8 },	-- Frozen Rune
 									{ "i", 7080, 4 },	-- Essence of Water
 									{ "i", 12359, 16 },	-- Thorium Bar
 									{ "i", 12360, 2 },	-- Arcanite Bar
@@ -3650,9 +3635,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { WARRIOR, PALADIN },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236695),	-- Icebane Breastplate
 								},
@@ -3662,7 +3644,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 5 },	-- Frozen Rune
+									{ "i", 236656, 5 },	-- Frozen Rune
 									{ "i", 7080, 2 },	-- Essence of Water
 									{ "i", 12359, 12 },	-- Thorium Bar
 									{ "i", 12360, 2 },	-- Arcanite Bar
@@ -3670,9 +3652,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { WARRIOR, PALADIN },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236697),	-- Icebane Gauntlets
 								},
@@ -3682,7 +3661,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 4 },	-- Frozen Rune
+									{ "i", 236656, 4 },	-- Frozen Rune
 									{ "i",  7080, 5 },	-- Essence of Water
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 									{ "i", 15408, 16 },	-- Heavy Scorpid Scale
@@ -3690,9 +3669,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { HUNTER, SHAMAN },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236698),	-- Icy Scale Bracers
 								},
@@ -3703,7 +3679,7 @@ applyclassicphase(PHASE_SIX,
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 								["cost"] = {
-									{ "i", 22682, 8 },	-- Frozen Rune
+									{ "i", 236656, 8 },	-- Frozen Rune
 									{ "i",  7080, 7 },	-- Essence of Water
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 									{ "i", 15408, 24 },	-- Heavy Scorpid Scale
@@ -3711,9 +3687,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { HUNTER, SHAMAN },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236699),	-- Icy Scale Breastplate
 								},
@@ -3723,7 +3696,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 5 },	-- Frozen Rune
+									{ "i", 236656, 5 },	-- Frozen Rune
 									{ "i",  7080, 5 },	-- Essence of Water
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 									{ "i", 15408, 16 },	-- Heavy Scorpid Scale
@@ -3731,9 +3704,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { HUNTER, SHAMAN },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236700),	-- Icy Scale Gauntlets
 								},
@@ -3752,7 +3722,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 4 },	-- Frozen Rune
+									{ "i", 236656, 4 },	-- Frozen Rune
 									{ "i",  7080, 3 },	-- Essence of Water
 									{ "i", 12810, 12 },	-- Enchanted Leather
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
@@ -3760,9 +3730,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { ROGUE, DRUID },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236701),	-- Polar Bracers
 								},
@@ -3772,7 +3739,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 5 },	-- Frozen Rune
+									{ "i", 236656, 5 },	-- Frozen Rune
 									{ "i",  7080, 3 },	-- Essence of Water
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 									{ "i", 12810, 12 },	-- Enchanted Leather
@@ -3780,9 +3747,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { ROGUE, DRUID },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236703),	-- Polar Gloves
 								},
@@ -3793,7 +3757,7 @@ applyclassicphase(PHASE_SIX,
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 								["cost"] = {
-									{ "i", 22682, 8 },	-- Frozen Rune
+									{ "i", 236656, 8 },	-- Frozen Rune
 									{ "i",  7080, 5 },	-- Essence of Water
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 									{ "i", 12810, 16 },	-- Enchanted Leather
@@ -3801,9 +3765,6 @@ applyclassicphase(PHASE_SIX,
 								},
 								["classes"] = { ROGUE, DRUID },
 								["lvl"] = 60,
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-								-- #endif
 								["groups"] = {
 									i(236702),	-- Polar Tunic
 								},
@@ -3813,7 +3774,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 1 },	-- Frozen Rune
+									{ "i", 236656, 1 },	-- Frozen Rune
 									{ "i", 12361, 1 },	-- Blue Sapphire
 									{ "i", 12360, 1 },	-- Arcanite Bar
 								},
@@ -3891,7 +3852,7 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 								["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 								["cost"] = {
-									{ "i", 22682, 2 },	-- Frozen Rune
+									{ "i", 236656, 2 },	-- Frozen Rune
 									{ "i",  7080, 2 },	-- Essence of Water
 									{ "i", 12361, 2 },	-- Blue Sapphire
 									{ "g", 300000 },	-- 30g
@@ -4105,7 +4066,7 @@ applyclassicphase(PHASE_SIX,
 							},
 						}),
 						n(ZONE_DROPS, {
-							i(22682, {	-- Frozen Rune
+							i(236656, {	-- Frozen Rune
 								-- #if BEFORE WRATH
 								["description"] = "Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",
 								-- #endif
