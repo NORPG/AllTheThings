@@ -16,7 +16,7 @@ i(205218),	-- Libram of Discovery
 i(205420),	-- Libram of Judgement
 i(205863),	-- Corrupted Libram
 i(205942),	-- Chimaeric Epiphany
-i(205943),	-- Prophecy of a Desecrated Citadel
+i(205943),	-- Prophecy of a Desecrated CitadelOtherworldly Treasure
 i(205946),	-- Memory of a Leader's Betrayal
 i(205948),	-- Anodyne Epiphany
 i(205949),	-- Manifold Epiphany
@@ -254,7 +254,6 @@ i(220352),	-- A Mind of Metal
 i(220353),	-- Conjurer's Codex
 i(220375),	-- Fragment of Air
 i(220379),	-- Torn Shaman's Notes
-i(220446),	-- Otherworldly Treasure
 i(220510),	-- Elemental Essence
 i(220525),	-- Glowing Fragment of Air
 i(220526),	-- Sludge-Covered G-7 C.O.R.E. Processor
@@ -362,12 +361,6 @@ i(223076),	-- Sergeant Major's Mail Gauntlets
 i(223077),	-- Sergeant Major's Mail Sabatons
 i(223078),	-- Knight's Mail Armor
 i(223147),	-- Spell Notes: Balefire Bolt
-i(223148),	-- Otherworldly Treasure
-i(223149),	-- Otherworldly Treasure
-i(223150),	-- Otherworldly Treasure
-i(223151),	-- Otherworldly Treasure
-i(223163),	-- Formula: Scroll of Spatial Mending
-i(223168),	-- Worldcore Fragment
 i(223171),	-- Scroll of Geomancy
 i(223173),	-- Geomancer's Cord
 i(223174),	-- Geomancer's Boots
@@ -378,29 +371,6 @@ i(223180),	-- Geomancer's Gloves
 i(223181),	-- Geomancer's Spaulders
 i(223182),	-- Geomancer's Trousers
 i(223183),	-- Geomancer's Wraps
-i(223198),	-- Modas Karkun
-i(223214),	-- Zila Gular
-i(223215),	-- Orah Raka
-i(223216),	-- Rakkan Archim
-i(223217),	-- Rakkas Lek
-i(223218),	-- Tor Kieldaz
-i(223219),	-- Fel Cloth Wristbands
-i(223221),	-- Fel Leather Wristbands
-i(223222),	-- Fel Mail Wristbands
-i(223237),	-- Fel Cloth Shoulder Pads
-i(223238),	-- Fel Leather Shoulder Pads
-i(223239),	-- Fel Mail Shoulders
-i(223240),	-- Fel Cloth Hood
-i(223241),	-- Fel Leather Hat
-i(223242),	-- Fel Mail Coif
-i(223248),	-- Fel Cloth Legs
-i(223249),	-- Fel Leather Legs
-i(223250),	-- Fel Mail Legs
-i(223251),	-- Fel Plate Legs
-i(223256),	-- Fel Cloth Robes
-i(223261),	-- Fel Leather Chest
-i(223262),	-- Fel Mail Chest
-i(223263),	-- Fel Plate Chest
 i(223323),	-- Shirt \\ Premo's Poise-Demanding Uniform
 i(223330),	-- Pulsating Eye
 i(223331),	-- Pulsating Eye
@@ -1306,9 +1276,6 @@ i(241124),	-- Reborn Knife
 i(241128),	-- Pile of Portiporters
 i(241169),	-- Prototype Nitro Boosts
 i(241190),	-- Bird Whistle
-i(241191),	-- Formula: Enchant Weapon - Grand Crusader
-i(241195),	-- Formula: Enchant 2H Weapon - Grand Arcanist
-i(241201),	-- Formula: Enchant Weapon - Grand Sorcerer
 i(241212),	-- Cluck Cannon
 i(241233),	-- [DNT] Super Strong Lockbox
 i(241241),	-- Lucky Doubloon
@@ -1342,7 +1309,6 @@ i(242316),	-- Dust of the Defiant
 i(242317),	-- Desecrated Prayerbook
 i(242319),	-- New Plague Samples
 i(242320),	-- New Plague Samples
-i(242361),	-- Formula: Enchant 2H Weapon - Grand Inquisitor
 i(242362),	-- Brilliance of the Grand Inquisitor
 i(242363),	-- Who, What, Where, When, and Die! Five Keys to a Good Inquisition
 i(242367),	-- Wing and String

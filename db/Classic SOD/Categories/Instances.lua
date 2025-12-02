@@ -897,6 +897,15 @@ i(18815,{b=1,f=53,lvl=60,q=4,rwp=11501,u=2}),
 i(17082,{b=1,f=53,lvl=60,q=4,rwp=11501,u=2}),
 i(17982,{awp=10100,b=1,f=52,lvl=60,q=3,rwp=10400,u=2})}})}}),
 d(201,{awp=11503,u=1608,g={
+n(13278,{awp=11503,coords={{79.2,73.6,1447}},u=1608,g={
+i(227925,{awp=11503,b=1,lvl=55,minReputation={749,21000},q=3,u=1608}),
+i(227915,{awp=11503,b=1,f=53,q=4,u=1608}),
+r(463866,{awp=11503,b=1,itemID=228979,learnedAt=305,q=4,requireSkill=333,u=1608}),
+i(227926,{awp=11503,b=1,q=3,u=1608}),
+i(227927,{awp=11503,b=1,lvl=50,q=4,u=1608}),
+s(224167,227923,{awp=11503,b=1,f=4,lvl=60,q=3,u=1608}),
+i(233213,{awp=11503,f=55,lvl=50,u=1610}),
+i(233201,{awp=11503,lvl=50,u=1610})}}),
 n(227819,{awp=11503,description="Speak to the Duke to Turn Up The Heat! (Or let your raid leader do that instead...)\n\nAlso sells 'Core Forged' versions of the Tier 2 gear.",providers={{"n",231178}},u=1609,g={
 cl(11,{awp=11503,u=1609,g={
 s(223173,226659,{awp=11503,b=1,c={11},cost={{"i",227764,1}},f=5,lvl=60,q=4,u=1608}),
@@ -3041,8 +3050,8 @@ r(1213628,{awp=11506,itemID=234275,learnedAt=320,requireSkill=333,u=1611}),
 r(1213633,{awp=11506,itemID=234276,learnedAt=320,requireSkill=333,u=1611}),
 r(1213635,{awp=11506,itemID=234277,learnedAt=320,requireSkill=333,u=1611}),
 r(1213607,{awp=11506,itemID=234271,learnedAt=320,requireSkill=333,u=1611}),
-i(235526,{awp=11506,f=200,u=1611}),
-i(235528,{awp=11506,f=200,u=1611}),
+r(1217189,{awp=11506,itemID=235526,learnedAt=320,requireSkill=333,u=1611}),
+r(1217203,{awp=11506,itemID=235528,learnedAt=320,requireSkill=333,u=1611}),
 r(1216005,{awp=11506,itemID=235133,learnedAt=320,requireSkill=333,u=1611}),
 r(1216007,{awp=11506,itemID=235134,learnedAt=320,requireSkill=333,u=1611}),
 r(1216010,{awp=11506,itemID=235135,learnedAt=320,requireSkill=333,u=1611}),
@@ -3888,6 +3897,29 @@ s(249176,234809,{awp=11505,f=28,lvl=60,q=4,u=1610}),
 s(249177,234810,{awp=11505,f=23,lvl=60,q=4,u=1610})}})}}),
 h(-55,{awp=11505,u=1610,g={
 n(234193,{awp=11505,description="Randomly spawns in the Temple of Ahn'Qiraj and will despawn within 10seconds after being attacked",u=1610,g={
+r(1217189,{awp=11505,itemID=235526,learnedAt=320,requireSkill=333,u=1610}),
+r(1217203,{awp=11505,itemID=235528,learnedAt=320,requireSkill=333,u=1610}),
+r(1213616,{awp=11505,itemID=233997,learnedAt=320,requireSkill=333,u=1610}),
+r(1213622,{awp=11505,itemID=233998,learnedAt=320,requireSkill=333,u=1610}),
+r(1213626,{awp=11505,itemID=233999,learnedAt=320,requireSkill=333,u=1610}),
+r(1213600,{awp=11505,itemID=234269,learnedAt=320,requireSkill=333,u=1610}),
+r(1213628,{awp=11505,itemID=234275,learnedAt=320,requireSkill=333,u=1610}),
+r(1213633,{awp=11505,itemID=234276,learnedAt=320,requireSkill=333,u=1610}),
+r(1213635,{awp=11505,itemID=234277,learnedAt=320,requireSkill=333,u=1610}),
+r(1216020,{awp=11505,itemID=235139,learnedAt=320,requireSkill=333,u=1610}),
+r(1216022,{awp=11505,itemID=235140,learnedAt=320,requireSkill=333,u=1610}),
+r(1216024,{awp=11505,itemID=235141,learnedAt=320,requireSkill=333,u=1610}),
+r(1216005,{awp=11505,itemID=235133,learnedAt=320,requireSkill=333,u=1610}),
+r(1216007,{awp=11505,itemID=235134,learnedAt=320,requireSkill=333,u=1610}),
+r(1216010,{awp=11505,itemID=235135,learnedAt=320,requireSkill=333,u=1610}),
+r(1213598,{awp=11505,itemID=234268,learnedAt=320,requireSkill=333,u=1610}),
+r(1213603,{awp=11505,itemID=234270,learnedAt=320,requireSkill=333,u=1610}),
+r(1213607,{awp=11505,itemID=234271,learnedAt=320,requireSkill=333,u=1610}),
+r(1213593,{awp=11505,itemID=234266,learnedAt=320,requireSkill=333,u=1610}),
+r(1213595,{awp=11505,itemID=234267,learnedAt=320,requireSkill=333,u=1610}),
+r(1216014,{awp=11505,itemID=235136,learnedAt=320,requireSkill=333,u=1610}),
+r(1216016,{awp=11505,itemID=235137,learnedAt=320,requireSkill=333,u=1610}),
+r(1216018,{awp=11505,itemID=235138,learnedAt=320,requireSkill=333,u=1610}),
 i(20876,{awp=11505,c={1,5,8,9},q=3,u=1610}),
 i(20879,{awp=11505,c={2,3,5,7,11},q=3,u=1610}),
 i(20875,{awp=11505,c={1,4,8,9},q=3,u=1610}),
@@ -3896,38 +3928,15 @@ i(20881,{awp=11505,c={2,3,4,7,11},q=3,u=1610}),
 i(20877,{awp=11505,c={2,5,7,8,9},q=3,u=1610}),
 i(20874,{awp=11505,c={1,3,4,8},q=3,u=1610}),
 i(20882,{awp=11505,c={1,3,4,11},q=3,u=1610}),
-r(1213616,{awp=11505,itemID=233997,learnedAt=320,requireSkill=333,u=1610}),
-r(1213622,{awp=11505,itemID=233998,learnedAt=320,requireSkill=333,u=1610}),
-r(1213626,{awp=11505,itemID=233999,learnedAt=320,requireSkill=333,u=1610}),
-r(1213593,{awp=11505,itemID=234266,learnedAt=320,requireSkill=333,u=1610}),
-r(1213595,{awp=11505,itemID=234267,learnedAt=320,requireSkill=333,u=1610}),
-r(1213598,{awp=11505,itemID=234268,learnedAt=320,requireSkill=333,u=1610}),
-r(1213600,{awp=11505,itemID=234269,learnedAt=320,requireSkill=333,u=1610}),
-r(1213603,{awp=11505,itemID=234270,learnedAt=320,requireSkill=333,u=1610}),
-r(1213628,{awp=11505,itemID=234275,learnedAt=320,requireSkill=333,u=1610}),
-r(1213633,{awp=11505,itemID=234276,learnedAt=320,requireSkill=333,u=1610}),
-r(1213635,{awp=11505,itemID=234277,learnedAt=320,requireSkill=333,u=1610}),
-r(1213607,{awp=11505,itemID=234271,learnedAt=320,requireSkill=333,u=1610}),
-i(235526,{awp=11505,f=200,u=1610}),
-i(235528,{awp=11505,f=200,u=1610}),
-r(1216005,{awp=11505,itemID=235133,learnedAt=320,requireSkill=333,u=1610}),
-r(1216007,{awp=11505,itemID=235134,learnedAt=320,requireSkill=333,u=1610}),
-r(1216010,{awp=11505,itemID=235135,learnedAt=320,requireSkill=333,u=1610}),
-r(1216014,{awp=11505,itemID=235136,learnedAt=320,requireSkill=333,u=1610}),
-r(1216016,{awp=11505,itemID=235137,learnedAt=320,requireSkill=333,u=1610}),
-r(1216018,{awp=11505,itemID=235138,learnedAt=320,requireSkill=333,u=1610}),
-r(1216020,{awp=11505,itemID=235139,learnedAt=320,requireSkill=333,u=1610}),
-r(1216022,{awp=11505,itemID=235140,learnedAt=320,requireSkill=333,u=1610}),
-r(1216024,{awp=11505,itemID=235141,learnedAt=320,requireSkill=333,u=1610}),
 r(1213513,{awp=11505,itemID=234235,learnedAt=320,requireSkill=165,u=1610}),
-r(1213519,{awp=11505,itemID=234236,learnedAt=320,requireSkill=165,u=1610}),
-r(1213521,{awp=11505,itemID=234237,learnedAt=320,requireSkill=165,u=1610}),
-r(1213525,{awp=11505,itemID=234239,learnedAt=320,requireSkill=165,u=1610}),
-r(1213523,{awp=11505,itemID=234238,learnedAt=320,requireSkill=165,u=1610}),
+r(1213534,{awp=11505,itemID=234244,learnedAt=320,requireSkill=197,u=1610}),
 r(1213536,{awp=11505,itemID=234249,learnedAt=320,requireSkill=197,u=1610}),
 r(1213538,{awp=11505,itemID=234250,learnedAt=320,requireSkill=197,u=1610}),
 r(1213540,{awp=11505,itemID=234251,learnedAt=320,requireSkill=197,u=1610}),
-r(1213534,{awp=11505,itemID=234244,learnedAt=320,requireSkill=197,u=1610}),
+r(1213521,{awp=11505,itemID=234237,learnedAt=320,requireSkill=165,u=1610}),
+r(1213523,{awp=11505,itemID=234238,learnedAt=320,requireSkill=165,u=1610}),
+r(1213525,{awp=11505,itemID=234239,learnedAt=320,requireSkill=165,u=1610}),
+r(1213519,{awp=11505,itemID=234236,learnedAt=320,requireSkill=165,u=1610}),
 r(1213527,{awp=11505,itemID=234240,learnedAt=315,requireSkill=197,u=1610}),
 r(1213530,{awp=11505,itemID=234241,learnedAt=315,requireSkill=197,u=1610}),
 r(1213532,{awp=11505,itemID=234242,learnedAt=315,requireSkill=197,u=1610}),
@@ -3935,8 +3944,8 @@ r(1213492,{awp=11505,itemID=234223,learnedAt=320,requireSkill=17041,u=1610}),
 r(1213498,{awp=11505,itemID=234224,learnedAt=320,requireSkill=17039,u=1610}),
 r(1213500,{awp=11505,itemID=234225,learnedAt=320,requireSkill=17040,u=1610}),
 r(1213502,{awp=11505,itemID=234226,learnedAt=320,requireSkill=17040,u=1610}),
-r(1213506,{awp=11505,itemID=234228,learnedAt=320,requireSkill=17041,u=1610}),
 r(1213504,{awp=11505,itemID=234227,learnedAt=320,requireSkill=17039,u=1610}),
+r(1213506,{awp=11505,itemID=234228,learnedAt=320,requireSkill=17041,u=1610}),
 r(1214137,{awp=11505,itemID=234429,learnedAt=320,requireSkill=9787,u=1610}),
 r(1213481,{awp=11505,itemID=234220,learnedAt=320,requireSkill=9788,u=1610}),
 r(1213484,{awp=11505,itemID=234221,learnedAt=320,requireSkill=9788,u=1610}),
@@ -3946,9 +3955,9 @@ r(1213552,{awp=11505,itemID=234256,learnedAt=315,requireSkill=171,u=1610}),
 r(1213548,{awp=11505,itemID=234255,learnedAt=315,requireSkill=171,u=1610}),
 r(1213544,{awp=11505,itemID=234252,learnedAt=315,requireSkill=171,u=1610}),
 r(1213586,{awp=11505,itemID=234264,learnedAt=315,requireSkill=202,u=1610}),
-r(1213588,{awp=11505,itemID=234265,learnedAt=315,requireSkill=202,u=1610}),
 r(1214145,{awp=11505,itemID=234435,learnedAt=320,requireSkill=202,u=1610}),
-r(1217207,{awp=11505,itemID=235530,learnedAt=320,requireSkill=202,u=1610})}})}}),
+r(1217207,{awp=11505,itemID=235530,learnedAt=320,requireSkill=202,u=1610}),
+r(1213588,{awp=11505,itemID=234265,learnedAt=315,requireSkill=202,u=1610})}})}}),
 n(15502,{awp=11505,coords={{65.2,50,1446}},u=1610,g={
 i(234016,{awp=11505,f=52,lvl=60,minReputation={910,0},u=1610}),
 i(234017,{awp=11505,f=52,lvl=60,minReputation={910,0},u=1610}),
@@ -5024,34 +5033,34 @@ qo(1,{awp=11506,providers={{"n",16145}},u=1611}),
 qo(2,{awp=11506,providers={{"n",15976}},u=1611}),
 qo(3,{awp=11506,providers={{"n",16021}},u=1611}),
 qo(4,{awp=11506,providers={{"n",16168}},u=1611})}}),
-q(9237,{awp=11506,coords={{81,59.6,1423}},cost={{"i",14227,4},{"i",14048,4},{"i",7080,2},{"i",22682,5},{"g",2000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9237,{awp=11506,coords={{81,59.6,1423}},cost={{"i",14227,4},{"i",14048,4},{"i",7080,2},{"i",236656,5},{"g",2000000}},lvl=60,minReputation={529,42000},qgs={16376},sourceQuests={9233},u=1611,g={
 s(284800,236690,{awp=11506,f=3,lvl=60,q=4,u=1611})}}),
-q(9239,{awp=11506,c={5,8,9},coords={{81,59.6,1423}},cost={{"i",14227,2},{"i",14048,4},{"i",7080,4},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9239,{awp=11506,c={5,8,9},coords={{81,59.6,1423}},cost={{"i",14227,2},{"i",14048,4},{"i",7080,4},{"i",236656,5},{"g",2000000}},lvl=60,qgs={16376},sourceQuests={9233},u=1611,g={
 s(284801,236692,{awp=11506,f=4,lvl=60,q=4,u=1611})}}),
-q(9240,{awp=11506,c={5,8,9},coords={{81,59.6,1423}},cost={{"i",14227,4},{"i",14048,8},{"i",7080,6},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9240,{awp=11506,c={5,8,9},coords={{81,59.6,1423}},cost={{"i",14227,4},{"i",14048,8},{"i",7080,6},{"i",236656,8},{"g",3000000}},lvl=60,minReputation={529,42000},qgs={16376},sourceQuests={9233},u=1611,g={
 s(284803,236694,{awp=11506,f=4,lvl=60,q=4,u=1611})}}),
-q(9238,{awp=11506,c={5,8,9},coords={{81,59.6,1423}},cost={{"i",14227,2},{"i",14048,2},{"i",7080,2},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9238,{awp=11506,c={5,8,9},coords={{81,59.6,1423}},cost={{"i",14227,2},{"i",14048,2},{"i",7080,2},{"i",236656,4},{"g",2000000}},lvl=60,qgs={16376},sourceQuests={9233},u=1611,g={
 s(284802,236693,{awp=11506,f=4,lvl=60,q=4,u=1611})}}),
-q(9235,{awp=11506,c={1,2},coords={{81,59.6,1423}},cost={{"i",12360,2},{"i",12359,12},{"i",7080,2},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9235,{awp=11506,c={1,2},coords={{81,59.6,1423}},cost={{"i",12360,2},{"i",12359,12},{"i",7080,2},{"i",236656,4},{"g",2000000}},lvl=60,qgs={16376},sourceQuests={9233},u=1611,g={
 s(284805,236696,{awp=11506,f=7,lvl=60,q=4,u=1611})}}),
-q(9236,{awp=11506,c={1,2},coords={{81,59.6,1423}},cost={{"i",12360,2},{"i",12359,16},{"i",7080,4},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9236,{awp=11506,c={1,2},coords={{81,59.6,1423}},cost={{"i",12360,2},{"i",12359,16},{"i",7080,4},{"i",236656,8},{"g",3000000}},lvl=60,minReputation={529,42000},qgs={16376},sourceQuests={9233},u=1611,g={
 s(284804,236695,{awp=11506,f=7,lvl=60,q=4,u=1611})}}),
-q(9234,{awp=11506,c={1,2},coords={{81,59.6,1423}},cost={{"i",12360,2},{"i",12359,12},{"i",7080,2},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9234,{awp=11506,c={1,2},coords={{81,59.6,1423}},cost={{"i",12360,2},{"i",12359,12},{"i",7080,2},{"i",236656,5},{"g",2000000}},lvl=60,qgs={16376},sourceQuests={9233},u=1611,g={
 s(284806,236697,{awp=11506,f=7,lvl=60,q=4,u=1611})}}),
-q(9244,{awp=11506,c={3,7},coords={{81,59.6,1423}},cost={{"i",15408,16},{"i",15407,3},{"i",7080,5},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9244,{awp=11506,c={3,7},coords={{81,59.6,1423}},cost={{"i",15408,16},{"i",15407,3},{"i",7080,5},{"i",236656,4},{"g",2000000}},lvl=60,qgs={16376},sourceQuests={9233},u=1611,g={
 s(284807,236698,{awp=11506,f=6,lvl=60,q=4,u=1611})}}),
-q(9246,{awp=11506,c={3,7},coords={{81,59.6,1423}},cost={{"i",15408,24},{"i",15407,5},{"i",7080,7},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9246,{awp=11506,c={3,7},coords={{81,59.6,1423}},cost={{"i",15408,24},{"i",15407,5},{"i",7080,7},{"i",236656,8},{"g",3000000}},lvl=60,minReputation={529,42000},qgs={16376},sourceQuests={9233},u=1611,g={
 s(284808,236699,{awp=11506,f=6,lvl=60,q=4,u=1611})}}),
-q(9245,{awp=11506,c={3,7},coords={{81,59.6,1423}},cost={{"i",15408,16},{"i",15407,3},{"i",7080,5},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9245,{awp=11506,c={3,7},coords={{81,59.6,1423}},cost={{"i",15408,16},{"i",15407,3},{"i",7080,5},{"i",236656,5},{"g",2000000}},lvl=60,qgs={16376},sourceQuests={9233},u=1611,g={
 s(284809,236700,{awp=11506,f=6,lvl=60,q=4,u=1611})}}),
 q(9233,{awp=11506,description="You must not have a profession above 270 skill for you to get this item from Omarion.",lvl=60,minReputation={529,21000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,providers={{"i",22719}},u=1611}),
-q(9241,{awp=11506,c={4,11},coords={{81,59.6,1423}},cost={{"i",15407,3},{"i",12810,12},{"i",7080,3},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9241,{awp=11506,c={4,11},coords={{81,59.6,1423}},cost={{"i",15407,3},{"i",12810,12},{"i",7080,3},{"i",236656,4},{"g",2000000}},lvl=60,qgs={16376},sourceQuests={9233},u=1611,g={
 s(284810,236701,{awp=11506,f=5,lvl=60,q=4,u=1611})}}),
-q(9242,{awp=11506,c={4,11},coords={{81,59.6,1423}},cost={{"i",12810,12},{"i",15407,3},{"i",7080,3},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9242,{awp=11506,c={4,11},coords={{81,59.6,1423}},cost={{"i",12810,12},{"i",15407,3},{"i",7080,3},{"i",236656,5},{"g",2000000}},lvl=60,qgs={16376},sourceQuests={9233},u=1611,g={
 s(284812,236703,{awp=11506,f=5,lvl=60,q=4,u=1611})}}),
-q(9243,{awp=11506,c={4,11},coords={{81,59.6,1423}},cost={{"i",12810,16},{"i",15407,5},{"i",7080,5},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=1611,g={
+q(9243,{awp=11506,c={4,11},coords={{81,59.6,1423}},cost={{"i",12810,16},{"i",15407,5},{"i",7080,5},{"i",236656,8},{"g",3000000}},lvl=60,minReputation={529,42000},qgs={16376},sourceQuests={9233},u=1611,g={
 s(284811,236702,{awp=11506,f=5,lvl=60,q=4,u=1611})}}),
-q(9230,{awp=11506,coords={{81.8,58.1,1423}},cost={{"i",12360,1},{"i",12361,1},{"i",22682,1}},lvl=60,qgs={16112},sourceQuests={9229},u=1611,g={
+q(9230,{awp=11506,coords={{81.8,58.1,1423}},cost={{"i",12360,1},{"i",12361,1},{"i",236656,1}},lvl=60,qgs={16112},sourceQuests={9229},u=1611,g={
 i(237294,{awp=11506,f=52,u=1611})}}),
 q(9121,{altQuests={9122,9123,9378},awp=11506,coords={{81.5,58.3,1423}},cost={{"i",12811,1},{"i",20725,2},{"i",14344,2},{"i",12363,5},{"g",600000}},lvl=60,minReputation={529,9000},qgs={16116},u=1611}),
 q(9122,{altQuests={9121,9123,9378},awp=11506,coords={{81.5,58.3,1423}},cost={{"i",20725,1},{"i",12363,2},{"g",300000}},lvl=60,minReputation={529,21000},qgs={16116},u=1611}),
@@ -5061,7 +5070,7 @@ i(236351,{awp=11506,f=53,u=1611}),
 i(236352,{awp=11506,f=53,u=1611})}}),
 q(9229,{awp=11506,coords={{81.8,58.1,1423}},lvl=60,qgs={16112},sourceQuests={9033},u=1611,g={
 qo(1,{awp=11506,providers={{"i",22708}},u=1611})}}),
-q(9232,{awp=11506,coords={{81,59.6,1423}},cost={{"i",12361,2},{"i",7080,2},{"i",22682,2},{"g",300000}},lvl=60,qgs={16376},sourceQuests={9033},u=1611,g={
+q(9232,{awp=11506,coords={{81,59.6,1423}},cost={{"i",12361,2},{"i",7080,2},{"i",236656,2},{"g",300000}},lvl=60,qgs={16376},sourceQuests={9033},u=1611,g={
 s(285182,237290,{awp=11506,f=7,q=4,u=1611}),
 s(285183,237291,{awp=11506,f=4,q=4,u=1611}),
 s(285184,237292,{awp=11506,f=5,q=4,u=1611}),
@@ -5098,7 +5107,7 @@ i(236074,{awp=11506,cost={{"i",237381,1},{"i",12363,3},{"i",12938,1}},f=52,lvl=6
 n(16112,{awp=11506,coords={{81.6,58,1423}},u=1611,g={
 i(236022,{awp=11506,cost={{"i",237381,1},{"i",12363,3},{"i",12938,1}},f=52,lvl=60,u=1611})}}),
 h(-63,{awp=11506,u=1611,g={
-i(22682,{awp=11506,cost={{"i",237773,1}},description="Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",lvl=60,q=3,u=1611}),
+i(236656,{awp=11506,cost={{"i",237773,1}},description="Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",lvl=60,u=1611}),
 i(237773,{awp=11506,description="These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",u=1611})}}),
 h(-19,{awp=11506,u=1611,g={
 i(236237,{awp=11506,crs={15931,15932,16028},lvl=60,u=1611}),
@@ -6991,7 +7000,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{awp=10200,maps={235,236,237,238,239},u=1608})}}),
 h(-31,{awp=10200,u=1608,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1608,g={
-crit(8825,{achID=2336,id=1,u=1609})}}),
+crit(8825,{achID=2336,id=5,u=1609})}}),
 faction(169,{awp=10200,icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1608})}}),
 h(-45,{awp=10200,u=1608,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1608}),
@@ -7796,6 +7805,18 @@ h(-19,{awp=11506,u=1611,g={
 i(226404,{awp=11506,b=1,q=2,u=1611}),
 i(238681,{awp=11506,f=55,lvl=60,u=1611,g={
 i(22484,{awp=11506,b=1,q=2,u=1611})}})}}),
+h(-44,{awp=11506,u=1611,g={
+prof(333,{awp=11506,u=1611,g={
+n(238270,{awp=11506,description="These enchants are learned from an Enchanted Text inside Karazhan Crypts. Encrypted Texts are found throughout the dungeon and can be decyphered by enchanters and mages using enchanting materials or Comprehension Charms respectively. Once the text is decyphered, it becomes a scroll; click on it to learn the recipe. Although the enchanting recipes are in randomized locations, the materials needed to decypher them are fixed by enchant according to the list below. This is helpful to know so you don't waste materials trying to learn enchants you already have.\n\n1x Nexus Crystal\nEnchant 2H Weapon - Spellblasting\nEnchant Off-Hand - Excellent Spirit\nEnchant Off-Hand - Superior Intellect\n\n1x Large Brilliant Shard\nEnchant Off-Hand - Wisdom\nEnchant Shield - Critical Strike\nEnchant Shield - Excellent Stamina\n\n1x Greater Eternal Essence\nEnchant Cloak - Agility\nEnchant Bracer - Greater Spellpower\nEnchant Gloves - Superior Strength",u=1611,g={
+sp(1219577,{awp=11506,u=1611}),
+sp(1219578,{awp=11506,u=1611}),
+sp(1219579,{awp=11506,u=1611}),
+sp(1219580,{awp=11506,u=1611}),
+sp(1219581,{awp=11506,u=1611}),
+sp(1219586,{awp=11506,u=1611}),
+sp(1219587,{awp=11506,u=1611}),
+sp(1220623,{awp=11506,u=1611}),
+sp(1220624,{awp=11506,u=1611})}})}})}}),
 h(-63,{awp=11506,u=1611,g={
 i(236878,{awp=11506,u=1611}),
 i(236879,{awp=11506,u=1611}),

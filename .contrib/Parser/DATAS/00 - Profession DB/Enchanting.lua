@@ -46,13 +46,21 @@ i(228981, 463869);	-- Conductive Shield Coating
 i(229008, 25081);	-- Enchant Cloak - Greater Fire Resistance
 i(229009, 25082);	-- Enchant Cloak - Greater Nature Resistance
 i(228982, 463871);	-- Enchant Shield - Law of Nature
+i(223163, 448624);	-- Scroll of Spatial Mending
+i(0, 446243);		-- Sigil of Living Dreams
 
+------------------
+-- PATCH 1.15.4 --
+------------------
+i(228979, 463866);	-- Sigil of Flowing Waters
 ------------------
 -- PATCH 1.15.5 --
 ------------------
 --- ITEM ---
 i(232610, 471400);	-- Magnificent Trollshine
 i(234272, 1213610);	-- Enchanted Repellent
+i(235528, 1217203); -- Enchant Bracer - Agility
+i(235526, 1217189); -- Enchant Bracer - Spell Power
 i(233997, 1213616);	-- Enchant Chest - Living Stats
 i(233998, 1213622);	-- Enchant Gloves - Holy Power
 i(233999, 1213626);	-- Enchant Gloves - Arcane Power
@@ -74,6 +82,27 @@ i(234267, 1213595);	-- Tear of the Dreamer
 i(235136, 1216014);	-- Totem of Pyroclastic Thunder
 i(235137, 1216016);	-- Totem of Thunderous Strikes
 i(235138, 1216018);	-- Totem of Flowing Magma
+
+------------------
+-- PATCH 1.15.6 --
+------------------
+i(0, 1219577);	-- Enchant Off-Hand - Superior Intellect
+i(0, 1219578);	-- Enchant Off-Hand - Excellent Spirit
+i(0, 1219579);	-- Enchant Off-Hand - Wisdom
+i(0, 1219580);	-- Enchant 2H Weapon - Spellblasting
+i(0, 1219581);	-- Enchant Shield - Excellent Stamina
+i(0, 1219586);	-- Enchant Gloves - Superior Strength
+i(0, 1219587);	-- Enchant Cloak - Agility
+i(0, 1220623);	-- Enchant Shield - Critical Strike
+i(0, 1220624);	-- Enchant Bracer - Greater Spellpower
+
+------------------
+-- PATCH 1.15.7 --
+------------------
+i(241191, 1231128);  -- Enchant Weapon - Grand Crusader
+i(241195, 1231139);  -- Enchant 2H Weapon - Grand Arcanist
+i(241201, 1231164);  -- Enchant Weapon - Grand Sorcerer
+i(242361, 1232172);  -- Enchant 2H Weapon - Grand Inquisitor
 -- #endif
 
 -----------------

@@ -837,6 +837,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_3 }, }, {
+				n(13278, {	-- Duke Hydraxis
+					["coords"] = { 79.2, 73.6, AZSHARA },
+					["groups"] = {
+						i(227925),	-- Beacon of Hydraxis
+						i(227915),	-- Duke's Domain
+						i(228979),	-- Enchanted Sigil: Flowing Waters
+						i(227926),	-- Hydraxian Coronation
+						i(227927),	-- Oath of the Sea
+						i(227923),	-- Water Treads
+						applyclassicphase(SOD_PHASE_SIX, i(233213)),	-- Ancient Lodestone
+						applyclassicphase(SOD_PHASE_SIX, i(233201)),	-- Shimmering Globe
+					},
+				}),
 				n(227819, {	-- Duke Hydraxis
 					["provider"] = { "n", 231178 },	-- Duke Hydraxis
 					["description"] = "Speak to the Duke to Turn Up The Heat! (Or let your raid leader do that instead...)\n\nAlso sells 'Core Forged' versions of the Tier 2 gear.",
