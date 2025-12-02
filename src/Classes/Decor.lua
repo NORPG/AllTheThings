@@ -24,6 +24,9 @@ local pairs
  	= pairs
 
 local IsAccountCached = app.IsAccountCached
+app.AddEventHandler("OnStartupDone", function()
+	IsAccountCached = app.IsAccountCached
+end)
 
 -- Decor Lib [STUB -- WIP]
 do
