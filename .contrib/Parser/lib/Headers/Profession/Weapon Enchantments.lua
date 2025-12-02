@@ -12,6 +12,6 @@ WEAPON_ENCHANTMENTS = createHeader({
 		-- TODO: pt = "",
 		ru = "Наложение чар на оружие",
 		cn = "武器附魔",
-		-- TODO: tw = "",
+		tw = "武器附魔",
 	},
 });

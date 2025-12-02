@@ -30,7 +30,7 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 		-- TODO: pt = "",
 		ru = "Кубок полётов на Высший пилотаж",
 		cn = "驭空术杯赛",
-		-- TODO: tw = "",
+		tw = "天空騎術競速",
 	},
 });
 BROKEN_ISLES_CUP_HEADER = createHeader({

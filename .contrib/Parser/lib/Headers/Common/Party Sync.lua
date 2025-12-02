@@ -15,7 +15,7 @@ PARTY_SYNC = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "队伍同步",
-		-- TODO: tw = "",
+		tw = "隊伍同步",
 		-- #endif
 	},
 });
