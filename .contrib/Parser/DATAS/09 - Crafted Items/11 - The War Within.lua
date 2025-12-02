@@ -1615,6 +1615,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				r(444186),	-- Algari Treatise on Tailoring
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(253164),	-- Algari Fence (DECOR!)
+			i(253165),	-- Algari Fencepost (DECOR!)
+			i(253022),	-- Dornogal Bookcase (DECOR!)
+			i(253167),	-- Forgeground Market Bins (DECOR!)
+			i(253036),	-- Freywold Table (DECOR!)
+			i(253169),	-- Meadery Storage Chest (DECOR!)
+		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = INSCRIPTION,
 		},{
@@ -1699,6 +1707,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80710, 444201);	-- Inquisitor's Baton
 			FirstCraft(80709, 444200);	-- Inquisitor's Crutch
 			FirstCraft(80705, 444196);	-- Inquisitor's Torch
+			-- Decor
+			-- FirstCraft(XXXXX, 1260005, ADDED_11_2_7);	-- Algari Fence
+			-- FirstCraft(XXXXX, 1260044, ADDED_11_2_7);	-- Algari Fencepost
+			-- FirstCraft(XXXXX, 1259796, ADDED_11_2_7);	-- Dornogal Bookcase
+			-- FirstCraft(XXXXX, 1259784, ADDED_11_2_7);	-- Forgeground Market Bins
+			-- FirstCraft(XXXXX, 1259818, ADDED_11_2_7);	-- Freywold Table
+			-- FirstCraft(XXXXX, 1259805, ADDED_11_2_7);	-- Meadery Storage Chest
 		})),
 		filter(GLYPHS, {
 			i(234246),	-- Glyph of the Admiral's Pistol Shot

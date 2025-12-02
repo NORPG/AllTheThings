@@ -250,16 +250,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(257100),	-- Apothecary's Worktable (DECOR!)
 			i(257041),	-- Stoppered Black Potion (DECOR!)
-			r(262639),	-- Black Dye Pigment
-			r(262643),	-- Blue Dye Pigment
-			r(262642),	-- Brown Dye Pigment
-			r(262647),	-- Green Dye Pigment
-			r(262656),	-- Orange Dye Pigment
-			r(262625),	-- Purple Dye Pigment
-			r(262655),	-- Red Dye Pigment
-			r(262628),	-- Teal Dye Pigment
-			r(260947),	-- White Dye Pigment
-			r(262648),	-- Yellow Dye Pigment
+			i(262639),	-- Black Dye Pigment
+			i(262643),	-- Blue Dye Pigment
+			i(262642),	-- Brown Dye Pigment
+			i(262647),	-- Green Dye Pigment
+			i(262656),	-- Orange Dye Pigment
+			i(262625),	-- Purple Dye Pigment
+			i(262655),	-- Red Dye Pigment
+			i(262628),	-- Teal Dye Pigment
+			i(260947),	-- White Dye Pigment
+			i(262648),	-- Yellow Dye Pigment
 		})),
 		filter(REAGENTS, {
 			i(12360),	-- Arcanite Bar
@@ -4761,6 +4761,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(39469),	-- Moonglow Ink
 			i(43122),	-- Shimmering Ink
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245502),	-- Brill Coffin (DECOR!)
+			i(245503),	-- Brill Coffin Lid (DECOR!)
+			i(246420),	-- Kharanos Bookcase (DECOR!)
+			i(258289),	-- Thunder Bluff Totem (DECOR!)
+			i(246423),	-- Wooden Ironforge Table (DECOR!)
+			i(262639),	-- Black Dye Pigment
+			i(262643),	-- Blue Dye Pigment
+			i(262642),	-- Brown Dye Pigment
+			i(262647),	-- Green Dye Pigment
+			i(262656),	-- Orange Dye Pigment
+			i(262625),	-- Purple Dye Pigment
+			i(262655),	-- Red Dye Pigment
+			i(262628),	-- Teal Dye Pigment
+			i(260947),	-- White Dye Pigment
+			i(262648),	-- Yellow Dye Pigment
+		})),
 		-- Non-reagent crafts:
 		filter(HELD_IN_OFF_HAND, {
 			i(43661),	-- Book of Stars

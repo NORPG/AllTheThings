@@ -1282,6 +1282,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(43126),	-- Ink of the Sea
 			i(43127),	-- Snowfall Ink
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258204),	-- Dalaran Post (DECOR!)
+			i(258207),	-- Dalaran Scholar's Bookcase (DECOR!)
+			i(258210),	-- Dalaran Street Sign (DECOR!)
+			i(258209),	-- Kirin Tor Crate (DECOR!)
+			i(258203),	-- Silver Dalaran Bench (DECOR!)
+		})),
 		-- Non-reagent crafts:
 		filter(GLYPHS, {
 			i(149755, {["timeline"]={ ADDED_7_2_5 }}),					-- Glyph of Angels

@@ -2,6 +2,34 @@
 -- INSCRIPTION --
 -----------------
 local SCROLLS = 107;
+CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1261572),	-- Brill Coffin
+		r(1261549),	-- Brill Coffin Lid
+		r(1261587),	-- Kharanos Bookcase
+		r(1269495),	-- Thunder Bluff Totem
+		r(1261644),	-- Wooden Ironforge Table
+		r(1268662),	-- Black Dye Pigment
+		r(1268984),	-- Blue Dye Pigment
+		r(1267108),	-- Brown Dye Pigment
+		r(1268985),	-- Green Dye Pigment
+		r(1268993),	-- Orange Dye Pigment
+		r(1269057),	-- Purple Dye Pigment
+		r(1268998),	-- Red Dye Pigment
+		r(1268999),	-- Teal Dye Pigment
+		r(1268770),	-- White Dye Pigment
+		r(1268989),	-- Yellow Dye Pigment
+	})),
+}));
+TBC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263810),	-- Aldor Bookcase
+		r(1263813),	-- Crystal Signpost
+		r(1263811),	-- Gilded Draenei Round Table
+		r(1263812),	-- Halaa Bench
+		r(1263814),	-- Talon King's Totem
+	})),
+}));
 WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
 	r(51005, {	-- Milling
 		-- #if NOT ANYCLASSIC
@@ -9,6 +37,13 @@ WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 		["collectible"] = false,
 		-- #endif
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263575),	-- Dalaran Post
+		r(1263570),	-- Dalaran Scholar's Bookcase
+		r(1263564),	-- Dalaran Street Sign
+		r(1263574),	-- Kirin Tor Crate
+		r(1263562),	-- Silver Dalaran Bench
+	})),
 	filter(MISC, {
 		r(59487),	-- Arcane Tarot
 		r(52739),	-- Armor Vellum / Enchanting Vellum[CATA+]
@@ -201,8 +236,36 @@ WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 		-- #endif
 	}),
 }));
-CATA_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_4_0_3 } }, {
-});
+CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1269534),	-- Gilnean Map
+		r(1269540),	-- Gilnean Postbox
+		r(1261278),	-- Gilnean Rocking Chair
+		r(1261288),	-- Gilnean Wall Shelf
+		r(1261259),	-- Gilnean Wooden Table
+	})),
+}));
+MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1261237),	-- Hanging Paper Lanterns
+		r(1261241),	-- Lorewalker's Bookcase
+		r(1261240),	-- Lucky Traveler's Bench
+		r(1261238),	-- Pandaren Wooden Table
+		r(1261239),	-- Square Pandaren Table
+	})),
+}));
+COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+}));
+LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260711),	-- Covered Square Suramar Table
+		r(1263344),	-- Dalaran Display Shelves
+		r(1260719),	-- Nightborne Jeweler's Table
+		r(1260737),	-- Suramar Dresser
+		r(1260730),	-- Suramar Storage Crate
+		r(1260704),	-- Tauren Storage Chest
+	})),
+}));
 BFA_INSCRIPTION = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(382984, {["timeline"] = {ADDED_10_0_0}}),	-- Kul Tiras and Zandalar Milling
 	r(256219),	-- Mass Mill Akunda's Bite
@@ -227,6 +290,14 @@ BFA_INSCRIPTION = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = {
 		r(264769),	-- War-Scroll of Fortitude
 		r(264766),	-- War-Scroll of Intellect
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260583),	-- Boralus Barrel
+		r(1260596),	-- Boralus Bookshelf
+		r(1260577),	-- Gilded Zandalari Table
+		r(1260593),	-- Proudmoore Shipping Crate
+		r(1260564),	-- Zuldazar Fence
+		r(1260508),	-- Zuldazar Fencepost
+	})),
 	filter(REAGENTS, {
 		r(264777),	-- Crimson Ink
 		r(264776),	-- Ultramarine Ink
@@ -269,6 +340,15 @@ SL_INSCRIPTION = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { A
 	r(311417),	-- Mass Mill Rising Glory
 	r(311414),	-- Mass Mill Vigil's Torch
 	r(311415),	-- Mass Mill Widowbloom
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263247),	-- Ardenweald Hanging Baskets
+		r(1263272),	-- Aspiring Soul's Chair
+		r(1263241),	-- Broker's Hex Table
+		r(1263243),	-- Cartel Ta Bookcase
+		r(1263293),	-- Hollow Night Fae Shrine
+		r(1263278),	-- Large Revendreth Storage Crate
+		r(1263285),	-- Tome of Maldraxxian Rituals
+	})),
 	filter(GLYPHS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 }},{
 		r(362412),	-- Glyph of the Wild Mushroom
 	})),
@@ -303,6 +383,15 @@ SL_INSCRIPTION = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { A
 DF_INSCRIPTION = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366251),	-- Dragon Isles Inscription
 	r(382981),	-- Dragon Isles Milling
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1259422),	-- Literature of the Blue Dragonflight
+		r(1259433),	-- Literature of the Green Dragonflight
+		r(1259429),	-- Literature of the Red Dragonflight
+		r(1259461),	-- Long Valdrakken Storage Crate
+		r(1259441),	-- Valdrakken Banded Barrel
+		r(1259451),	-- Valdrakken Storage Crate
+		r(1272572),	-- Valdrakken Wall Shelf
+	})),
 	filter(MISC, {
 		r(383563),	-- Blazing Fortune
 		r(383527),	-- Buzzing Rune
@@ -351,6 +440,14 @@ TWW_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423338),	-- Khaz Algar Inscription
 	r(444181),	-- Khaz Algar Milling
 	r(425140),	-- Recraft Equipment
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260005),	-- Algari Fence
+		r(1260044),	-- Algari Fencepost
+		r(1259796),	-- Dornogal Bookcase
+		r(1259784),	-- Forgeground Market Bins
+		r(1259818),	-- Freywold Table
+		r(1259805),	-- Meadery Storage Chest
+	})),
 	filter(MISC, {
 		r(444210),	-- Algari Missive of the Aurora
 		r(444211),	-- Algari Missive of the Feverflare

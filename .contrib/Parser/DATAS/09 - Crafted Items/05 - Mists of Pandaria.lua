@@ -878,6 +878,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(40916, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
 			i(45622, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247731),	-- Hanging Paper Lanterns (DECOR!)
+			i(247669),	-- Lorewalker's Bookcase (DECOR!)
+			i(247735),	-- Lucky Traveler's Bench (DECOR!)
+			i(245514),	-- Pandaren Wooden Table (DECOR!)
+			i(245513),	-- Square Pandaren Table (DECOR!)
+		})),
 		category(106, {	-- Tarot Cards
 			sp(111830, {	-- Darkmoon Card of Mists
 				i(79299),	-- Ace of Crane

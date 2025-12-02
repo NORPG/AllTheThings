@@ -1286,6 +1286,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(43125),	-- Darkflame Ink
 			i(43124),	-- Ethereal Ink
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258199),	-- Aldor Bookcase (DECOR!)
+			i(258197),	-- Crystal Signpost (DECOR!)
+			i(258198),	-- Gilded Draenei Round Table (DECOR!)
+			i(258215),	-- Halaa Bench (DECOR!)
+			i(258192),	-- Talon King's Totem (DECOR!)
+		})),
 		-- Non-reagent crafts:
 		filter(GLYPHS, {
 			i(42743, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]

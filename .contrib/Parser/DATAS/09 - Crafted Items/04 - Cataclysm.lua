@@ -1020,6 +1020,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(257696),	-- Gilnean Map (DECOR!)
+			i(257695),	-- Gilnean Postbox (DECOR!)
+			i(245623),	-- Gilnean Rocking Chair (DECOR!)
+			i(245622),	-- Gilnean Wall Shelf (DECOR!)
+			i(245621),	-- Gilnean Wooden Table (DECOR!)
+		})),
 		filter(REAGENTS, {
 			i(61978),	-- Blackfallow Ink
 			i(61981),	-- Inferno Ink

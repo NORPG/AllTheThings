@@ -1702,9 +1702,76 @@ i(244334, 1236908);	-- Vantus Rune: Manaforge Omega
 ------------------
 -- PATCH 11.2.7 --
 ------------------
+i(0, 1263810);		-- Aldor Bookcase
+i(0, 1260005);		-- Algari Fence
+i(0, 1260044);		-- Algari Fencepost
+i(0, 1263247);		-- Ardenweald Hanging Baskets
+i(0, 1263272);		-- Aspiring Soul's Chair
+i(0, 1260583);		-- Boralus Barrel
+i(0, 1260596);		-- Boralus Bookshelf
+i(0, 1261572);		-- Brill Coffin
+i(0, 1261549);		-- Brill Coffin Lid
+i(0, 1263241);		-- Broker's Hex Table
+i(0, 1263243);		-- Cartel Ta Bookcase
+i(0, 1260711);		-- Covered Square Suramar Table
+i(0, 1263813);		-- Crystal Signpost
+i(0, 1263344);		-- Dalaran Display Shelves
+i(0, 1263575);		-- Dalaran Post
+i(0, 1263570);		-- Dalaran Scholar's Bookcase
+i(0, 1263564);		-- Dalaran Street Sign
+i(0, 1259796);		-- Dornogal Bookcase
+i(0, 1259784);		-- Forgeground Market Bins
+i(0, 1259818);		-- Freywold Table
+i(0, 1263811);		-- Gilded Draenei Round Table
+i(0, 1260577);		-- Gilded Zandalari Table
+i(0, 1269534);		-- Gilnean Map
+i(0, 1269540);		-- Gilnean Postbox
+i(0, 1261278);		-- Gilnean Rocking Chair
+i(0, 1261288);		-- Gilnean Wall Shelf
+i(0, 1261259);		-- Gilnean Wooden Table
+i(0, 1263812);		-- Halaa Bench
+i(0, 1261237);		-- Hanging Paper Lanterns
+i(0, 1263293);		-- Hollow Night Fae Shrine
+i(0, 1261587);		-- Kharanos Bookcase
+i(0, 1263574);		-- Kirin Tor Crate
+i(0, 1263278);		-- Large Revendreth Storage Crate
+i(0, 1259422);		-- Literature of the Blue Dragonflight
+i(0, 1259433);		-- Literature of the Green Dragonflight
+i(0, 1259429);		-- Literature of the Red Dragonflight
+i(0, 1259461);		-- Long Valdrakken Storage Crate
+i(0, 1261241);		-- Lorewalker's Bookcase
+i(0, 1261240);		-- Lucky Traveler's Bench
+i(0, 1259805);		-- Meadery Storage Chest
+i(0, 1260719);		-- Nightborne Jeweler's Table
+i(0, 1261238);		-- Pandaren Wooden Table
+i(0, 1260593);		-- Proudmoore Shipping Crate
+i(0, 1263562);		-- Silver Dalaran Bench
+i(0, 1261239);		-- Square Pandaren Table
+i(0, 1260737);		-- Suramar Dresser
+i(0, 1260730);		-- Suramar Storage Crate
+i(0, 1263814);		-- Talon King's Totem
+i(0, 1260704);		-- Tauren Storage Chest
+i(0, 1269495);		-- Thunder Bluff Totem
+i(0, 1263285);		-- Tome of Maldraxxian Rituals
+i(0, 1259441);		-- Valdrakken Banded Barrel
+i(0, 1259451);		-- Valdrakken Storage Crate
+i(0, 1272572);		-- Valdrakken Wall Shelf
+i(0, 1261644);		-- Wooden Ironforge Table
+i(0, 1260564);		-- Zuldazar Fence
+i(0, 1260508);		-- Zuldazar Fencepost
+i(0, 1268662);		-- Black Dye Pigment
+i(0, 1268984);		-- Blue Dye Pigment
+i(0, 1267108);		-- Brown Dye Pigment
+i(0, 1268985);		-- Green Dye Pigment
+i(0, 1268993);		-- Orange Dye Pigment
+i(0, 1269057);		-- Purple Dye Pigment
+i(0, 1268998);		-- Red Dye Pigment
+i(0, 1268999);		-- Teal Dye Pigment
+i(0, 1268770);		-- White Dye Pigment
+i(0, 1268989);		-- Yellow Dye Pigment
 --- ITEM ---
-i(257025, 1261032);	-- Technique: Frostwall Elevated Brazier
-i(257028, 1261066);	-- Technique: Orcish Banded Barrel
-i(262809, 1269500);	-- Technique: Orcish Fence
-i(262810, 1269501);	-- Technique: Orcish Fencepost
-i(257027, 1261045);	-- Technique: Wooden Shipping Crate
+i(257025, 1261032);	-- Frostwall Elevated Brazier
+i(257028, 1261066);	-- Orcish Banded Barrel
+i(262809, 1269500);	-- Orcish Fence
+i(262810, 1269501);	-- Orcish Fencepost
+i(257027, 1261045);	-- Wooden Shipping Crate

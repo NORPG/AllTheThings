@@ -679,6 +679,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(118601),	-- Ocean Tarot
 			i(118603),	-- Savage Tarot
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245534),	-- Frostwall Elevated Brazier (DECOR!)
+			i(244317),	-- Orcish Banded Barrel (DECOR!)
+			i(244313),	-- Orcish Fence (DECOR!)
+			i(245441),	-- Orcish Fencepost (DECOR!)
+			i(244319),	-- Wooden Shipping Crate (DECOR!)
+		})),
 		filter(HELD_IN_OFF_HAND, {
 			i(113270, {	-- Shadowtome
 				["timeline"] = { CREATED_9_0_1 },

@@ -353,6 +353,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180755),	-- Fae Revel Masque
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258245),	-- Ardenweald Hanging Baskets (DECOR!)
+			i(258235),	-- Aspiring Soul's Chair (DECOR!)
+			i(258244),	-- Broker's Hex Table (DECOR!)
+			i(258250),	-- Cartel Ta Bookcase (DECOR!)
+			i(258242),	-- Hollow Night Fae Shrine (DECOR!)
+			i(258247),	-- Large Revendreth Storage Crate (DECOR!)
+			i(258239),	-- Tome of Maldraxxian Rituals (DECOR!)
+		})),
 		filter(GLYPHS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
 			i(190378, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Lupine
 			i(190380, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Vulpine

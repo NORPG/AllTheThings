@@ -1811,6 +1811,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			r(392944),	-- Draconic Treatise on Skinning
 			r(383520),	-- Draconic Treatise on Tailoring
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248118),	-- Literature of the Blue Dragonflight (DECOR!)
+			i(248119),	-- Literature of the Green Dragonflight (DECOR!)
+			i(248120),	-- Literature of the Red Dragonflight (DECOR!)
+			i(248108),	-- Long Valdrakken Storage Crate (DECOR!)
+			i(248106),	-- Valdrakken Banded Barrel (DECOR!)
+			i(248107),	-- Valdrakken Storage Crate (DECOR!)
+			i(264679),	-- Valdrakken Wall Shelf (DECOR!)
+		})),
 		n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(196981),	-- Cliffside Wylderdrake: Conical Head (MM!)
 			i(196988),	-- Cliffside Wylderdrake: Red Hair (MM!)
@@ -1993,6 +2002,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(78708, 427956, ADDED_10_2_0);	-- Mark of the Auric Dreamstag
 			-- Legendary
 			FirstCraft(78010, 422337, ADDED_10_2_0);	-- Lydiara's Binding Rune
+			-- Decor
+			-- FirstCraft(XXXXX, 1259422, ADDED_11_2_7);	-- Literature of the Blue Dragonflight
+			-- FirstCraft(XXXXX, 1259433, ADDED_11_2_7);	-- Literature of the Green Dragonflight
+			-- FirstCraft(XXXXX, 1259429, ADDED_11_2_7);	-- Literature of the Red Dragonflight
+			-- FirstCraft(XXXXX, 1259461, ADDED_11_2_7);	-- Long Valdrakken Storage Crate
+			-- FirstCraft(XXXXX, 1259441, ADDED_11_2_7);	-- Valdrakken Banded Barrel
+			-- FirstCraft(XXXXX, 1259451, ADDED_11_2_7);	-- Valdrakken Storage Crate
+			-- FirstCraft(XXXXX, 1272572, ADDED_11_2_7);	-- Valdrakken Wall Shelf
+			-- FirstCraft(XXXXX, 1259233, ADDED_11_2_7);	-- Valdrakken Market Tent
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)

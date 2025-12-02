@@ -569,6 +569,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			}),
 			i(139339),	-- Glyph of Yu'lon's Grace (CI!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247916),	-- Covered Square Suramar Table (DECOR!)
+			i(258224),	-- Dalaran Display Shelves (DECOR!)
+			i(247918),	-- Nightborne Jeweler's Table (DECOR!)
+			i(245396),	-- Suramar Dresser (DECOR!)
+			i(247925),	-- Suramar Storage Crate (DECOR!)
+			i(245459),	-- Tauren Storage Chest (DECOR!)
+
+		})),
 		category(106, {	-- Tarot Cards
 			sp(191659, {	-- Darkmoon Card of the Legion
 				sp(191654, {	-- Dominion Deck

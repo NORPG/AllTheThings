@@ -830,6 +830,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(162029),	-- Mark of the Humble Flyer (CI!)
 			i(162027),	-- Mark of the Tideskipper (CI!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(252035),	-- Boralus Barrel (DECOR!)
+			i(252401),	-- Boralus Bookshelf (DECOR!)
+			i(245499),	-- Gilded Zandalari Table (DECOR!)
+			i(252389),	-- Proudmoore Shipping Crate (DECOR!)
+			i(245415),	-- Zuldazar Fence (DECOR!)
+			i(245416),	-- Zuldazar Fencepost (DECOR!)
+		})),
 		n(WEAPONS, {
 			i(161936),	-- Honorable Combatant's Etched Vessel [A]
 			i(159940),	-- Honorable Combatant's Etched Vessel [H]
