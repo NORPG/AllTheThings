@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=11.2.5.64502
+SET BUILD=11.2.7.64632
 
 @REM Download new file versions
 call :download Achievement
