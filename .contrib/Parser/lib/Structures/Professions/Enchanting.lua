@@ -363,6 +363,13 @@ CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = 
 		r(74235),	-- Superior Intellect
 	}),
 }));
+CLASSIC_CATA_ENCHANTING = appendGroups(CLASSIC_ENCHANTING,
+-- #if AFTER CATA
+CATA_ENCHANTING
+-- #else
+{}
+-- #endif
+);
 COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3 } }, {
 	i(64411, {	-- Formula: Enchant Boots - Assassin's Step (RECIPE!)
 		["cost"] = {{"i", HEAVENLY_SHARD, 5}},

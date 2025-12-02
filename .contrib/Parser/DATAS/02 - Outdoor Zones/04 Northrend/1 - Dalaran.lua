@@ -1579,6 +1579,20 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_HERBALISM,
 						}),
 					}),
+					prof(INSCRIPTION, {
+						n(28702, {	-- Professor Pallin <Inscription Trainer>
+							["coord"] = { 42.6, 37.8, NORTHREND_DALARAN },
+							["groups"] = {
+								n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+									r(1263575),	-- Dalaran Post
+									r(1263570),	-- Dalaran Scholar's Bookcase
+									r(1263564),	-- Dalaran Street Sign
+									r(1263574),	-- Kirin Tor Crate
+									r(1263562),	-- Silver Dalaran Bench
+								})),
+							},
+						}),
+					}),
 					prof(JEWELCRAFTING, {
 						n(28721, {	-- Tiffany Cartier <Jewelcrafting Supplies>
 							["coord"] = { 40.4, 34.6, NORTHREND_DALARAN },

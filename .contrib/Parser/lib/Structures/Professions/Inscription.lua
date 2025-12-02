@@ -37,6 +37,7 @@ WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 		["collectible"] = false,
 		-- #endif
 	}),
+	--[[
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1263575),	-- Dalaran Post
 		r(1263570),	-- Dalaran Scholar's Bookcase
@@ -44,6 +45,7 @@ WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 		r(1263574),	-- Kirin Tor Crate
 		r(1263562),	-- Silver Dalaran Bench
 	})),
+	--]]
 	filter(MISC, {
 		r(59487),	-- Arcane Tarot
 		r(52739),	-- Armor Vellum / Enchanting Vellum[CATA+]
@@ -236,7 +238,7 @@ WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 		-- #endif
 	}),
 }));
-CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+CATA_INSCRIPTION = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1269534),	-- Gilnean Map
 		r(1269540),	-- Gilnean Postbox
@@ -245,7 +247,20 @@ CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(1261259),	-- Gilnean Wooden Table
 	})),
 }));
-MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+-- All this need clean up one day
+WRATH_CATA_INSCRIPTION = appendGroups(WRATH_INSCRIPTION,
+-- #if AFTER CATA
+CATA_INSCRIPTION,
+-- #endif
+{}
+);
+CLASSIC_WRATH_CATA_INSCRIPTION = appendGroups(WRATH_CATA_INSCRIPTION,
+-- #if AFTER CATA
+CLASSIC_INSCRIPTION,
+-- #endif
+{}
+);
+MOP_INSCRIPTION = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1261237),	-- Hanging Paper Lanterns
 		r(1261241),	-- Lorewalker's Bookcase
@@ -254,9 +269,9 @@ MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] 
 		r(1261239),	-- Square Pandaren Table
 	})),
 }));
-COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+COMMON_DRAENOR_INSCRIPTION_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 }));
-LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_INSCRIPTION = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260711),	-- Covered Square Suramar Table
 		r(1263344),	-- Dalaran Display Shelves

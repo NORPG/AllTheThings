@@ -119,6 +119,13 @@ CATA_COOKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	r(88006),	-- Blackened Surprise
 	r(88015),	-- Darkbrew Lager
 }));
+CLASSIC_CATA_COOKING = appendGroups(CLASSIC_COOKING,
+-- #if AFTER CATA
+CATA_COOKING
+-- #else
+{}
+-- #endif
+);
 CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
 	["providers"] = {
 		{ "n", 5160},	-- Emrul Riknussun <Cooking Supplier>

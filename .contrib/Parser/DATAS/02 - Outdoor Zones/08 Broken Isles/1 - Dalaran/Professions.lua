@@ -551,6 +551,10 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				prof(INSCRIPTION, {
+					n(92195, {	-- Profession Pallin <Inscription Trainer>
+						["coord"] = { 41.3, 37.0, LEGION_DALARAN },
+						["groups"] = LEGION_INSCRIPTION,
+					}),
 					q(43726, {	-- Tales of the Broken Isles
 						["provider"] = { "n", 97362 },	-- Dazzik "Proudmoore"
 						["repeatable"] = true,
@@ -569,10 +573,10 @@ root(ROOTS.Zones, {
 				prof(LEATHERWORKING, {
 					n(93523, {	-- Namha Moonwater <Leatherworking Trainer>
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-						["groups"] = {
+						["groups"] = appendGroups(LEGION_LEATHERWORKING, {
 							r(239413, {["timeline"] = {ADDED_7_2_0}}),	-- The Sentinel's Eternal Refuge (RECIPE!)
 							r(239414, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch (RECIPE!)
-						},
+						}),
 					}),
 				}),
 				prof(TAILORING, {
@@ -587,13 +591,13 @@ root(ROOTS.Zones, {
 					-- #endif
 					n(93542, {	-- Tanithria <Tailoring Trainer>
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["groups"] = {
+						["groups"] = appendGroups(LEGION_TAILORING, {
 							r(239412, {["timeline"] = {ADDED_7_2_0}}),	-- Celumbra, the Night's Dichotomy (RECIPE!)
 							r(186097),	-- Silkweave Cover (RECIPE!)
 							r(186100),	-- Silkweave Drape (RECIPE!)
 							r(186094),	-- Silkweave Flourish (RECIPE!)
 							r(186091),	-- Silkweave Shade (RECIPE!)
-						},
+						}),
 					}),
 				}),
 			}),

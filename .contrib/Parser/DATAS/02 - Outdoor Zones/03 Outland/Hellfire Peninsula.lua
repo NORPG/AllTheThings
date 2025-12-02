@@ -357,6 +357,19 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = TBC_HERBALISM,
 					}),
+					-- #if AFTER WRATH
+					prof(INSCRIPTION, {
+						["crs"] = {
+							30721,	-- Michael Schwan <Inscription Trainer> (A)
+							30722,	-- Neferatti <Inscription Trainer> (H)
+						},
+						["coords"] = {
+							{ 54.0, 65.6, HELLFIRE_PENINSULA },
+							{ 52.2, 36.0, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_INSCRIPTION,
+					}),
+					-- #endif
 					prof(JEWELCRAFTING, {
 						["crs"] = {
 							18774,	-- Tatiana <Jewelcrafting Trainer> (A)

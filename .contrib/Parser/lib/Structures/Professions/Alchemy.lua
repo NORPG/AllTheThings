@@ -286,6 +286,13 @@ CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(96252, {["timeline"] = {ADDED_4_0_6}}),	-- Volatile Alchemist Stone
 	}),
 }));
+CLASSIC_CATA_ALCHEMY = appendGroups(CLASSIC_ALCHEMY,
+-- #if AFTER CATA
+CATA_ALCHEMY
+-- #else
+{}
+-- #endif
+);
 MOP_ALCHEMY = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(105206, {	-- Alchemy (Zen Master)
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },

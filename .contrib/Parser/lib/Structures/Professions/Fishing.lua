@@ -81,6 +81,13 @@ CATA_FISHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
+CLASSIC_CATA_FISHING = appendGroups(CLASSIC_FISHING,
+-- #if AFTER CATA
+CATA_FISHING
+-- #else
+{}
+-- #endif
+);
 MOP_FISHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110410, {	-- Fishing (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },

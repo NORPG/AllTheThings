@@ -444,13 +444,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3347, {	-- Yelmak <Alchemy Trainer>
 						["coord"] = { 55.6, 46.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ALCHEMY,
-							-- #if AFTER CATA
-							CATA_ALCHEMY
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ALCHEMY,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -467,52 +461,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
 						["coord"] = { 76.4, 34.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_BLACKSMITHING,
-							-- #if AFTER CATA
-							CATA_BLACKSMITHING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_BLACKSMITHING,
 					}),
 				}),
 				prof(COOKING, {
 					n(3399, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1 }, }, {	-- Zamja <Cooking Trainer>
 						["coord"] = { 32.2, 69.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_COOKING,
-							-- #if AFTER CATA
-							CATA_COOKING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_COOKING,
 					})),
 				}),
 				prof(ENCHANTING, {
 					n(3345, {	-- Godan <Enchanting Trainer>
 						["coord"] = { 53.4, 49.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ENCHANTING,
-							-- #if AFTER CATA
-							CATA_ENCHANTING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ENCHANTING,
 					}),
 				}),
 				prof(ENGINEERING, {
 					n(11017, {	-- Roxxik <Engineering Trainer>
 						["coord"] = { 56.8, 56.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ENGINEERING,
-							-- #if AFTER CATA
-							CATA_ENGINEERING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ENGINEERING,
 					}),
 				}),
 				prof(FIRST_AID, {
@@ -524,37 +494,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(45540, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3, REMOVED_7_3_5 } }, {	-- Krenk Choplimb <Bandage Trainer>
 						["coord"] = { 37.6, 87.2, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FIRST_AID,
-							-- #if AFTER CATA
-							CATA_FIRST_AID
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FIRST_AID
 					})),
 					n(133109, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Mender Jessara <Bandage Trainer>
 						["coord"] = { 38.2, 86.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FIRST_AID,
-							-- #if AFTER CATA
-							CATA_FIRST_AID
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FIRST_AID,
 					})),
 				}),
 				prof(FISHING, {
 					n(3332, {	-- Lumak <Fishing Trainer>
 						["coord"] = { 66.6, 41.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FISHING,
-							-- #if AFTER CATA
-							CATA_FISHING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FISHING,
 					}),
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { ADDED_2_4_0 },
@@ -586,13 +538,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_HERBALISM,
-							-- #if AFTER CATA
-							CATA_HERBALISM
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_HERBALISM,
 					}),
 				}),
 				-- #if AFTER WRATH
@@ -601,13 +547,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						["groups"] = appendGroups(
-							WRATH_INSCRIPTION,
-							-- #if AFTER CATA
-							CATA_INSCRIPTION,
-							-- #endif
-							{}
-						),
+						["groups"] = CLASSIC_WRATH_CATA_INSCRIPTION,
 					}),
 				}),
 				-- #endif
@@ -633,7 +573,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["groups"] = COMMON_CATACLYSM_JEWELCRAFTING_RECIPES,
 					}),
-
 					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
 						["coord"] = { 72.4, 34.6, ORGRIMMAR },
 						["timeline"] = { ADDED_4_3_0 },

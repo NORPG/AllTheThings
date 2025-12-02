@@ -417,13 +417,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ALCHEMY,
-							-- #if AFTER CATA
-							CATA_ALCHEMY
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ALCHEMY,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -436,13 +430,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_BLACKSMITHING,
-							-- #if AFTER CATA
-							CATA_BLACKSMITHING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_BLACKSMITHING,
 					}),
 				}),
 				prof(COOKING, {
@@ -457,13 +445,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_COOKING,
-							-- #if AFTER CATA
-							CATA_COOKING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_COOKING,
 					})),
 				}),
 				prof(ENCHANTING, {
@@ -476,13 +458,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ENCHANTING,
-							-- #if AFTER CATA
-							CATA_ENCHANTING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ENCHANTING,
 					}),
 				}),
 				prof(ENGINEERING, {
@@ -497,26 +473,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ENGINEERING,
-							-- #if AFTER CATA
-							CATA_ENGINEERING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ENGINEERING,
 					}),
 				}),
 				prof(FIRST_AID, {
 					n(56796, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 } }, {	-- Angela Leifeld <Bandage Trainer>
 						["coord"] = { 52.2, 45.4, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FIRST_AID,
-							-- #if AFTER CATA
-							CATA_FIRST_AID
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FIRST_AID,
 					})),
 					n(2327, bubbleDownSelf({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Shaina Fuller <First Aid Trainer>
 						["coords"] = {
@@ -527,13 +491,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FIRST_AID,
-							-- #if AFTER CATA
-							CATA_FIRST_AID
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FIRST_AID,
 					})),
 				}),
 				prof(FISHING, {
@@ -546,13 +504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FISHING,
-							-- #if AFTER CATA
-							CATA_FISHING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FISHING,
 					}),
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { ADDED_2_4_0 },
@@ -570,13 +522,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_HERBALISM,
-							-- #if AFTER CATA
-							CATA_HERBALISM
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_HERBALISM,
 					}),
 				}),
 				-- #if AFTER WRATH
@@ -591,12 +537,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["timeline"] = { ADDED_3_0_2 },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(
-							WRATH_INSCRIPTION,
-							-- #if AFTER CATA
-							CATA_INSCRIPTION,
-							-- #endif
-							{
+						["groups"] = appendGroups(CLASSIC_WRATH_CATA_INSCRIPTION, {
 							i(140566, {	-- Technique: Songs of the Alliance (RECIPE!)
 								["timeline"] = { ADDED_7_0_3 },
 							}),

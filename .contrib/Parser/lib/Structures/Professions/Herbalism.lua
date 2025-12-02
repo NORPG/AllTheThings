@@ -91,6 +91,13 @@ CATA_HERBALISM = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 	r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265825, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Cataclysm)
 }));
+CLASSIC_CATA_HERBALISM = appendGroups(CLASSIC_HERBALISM,
+-- #if AFTER CATA
+CATA_HERBALISM
+-- #else
+{}
+-- #endif
+);
 MOP_HERBALISM = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110413, {	-- Herb Gathering (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },

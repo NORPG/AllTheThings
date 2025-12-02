@@ -503,6 +503,13 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"]
 		r(76293),	-- Stormforged Shield
 	}),
 }));
+CLASSIC_CATA_BLACKSMITHING = appendGroups(CLASSIC_BLACKSMITHING,
+-- #if AFTER CATA
+CATA_BLACKSMITHING
+-- #else
+{}
+-- #endif
+);
 COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	i(66100, {	-- Plans: Ebonsteel Belt Buckle (RECIPE!)
 		["cost"] = {{"i", PYRIUM, 5}},

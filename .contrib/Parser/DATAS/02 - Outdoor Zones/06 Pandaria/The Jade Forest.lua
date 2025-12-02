@@ -287,6 +287,10 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					prof(INSCRIPTION, {
+						n(56065, {	-- Inkmaster Wei <Inscription Trainer>
+							["coord"] = { 54.8, 45.0, THE_JADE_FOREST },
+							["groups"] = MOP_INSCRIPTION,
+						}),
 						q(31539, {	-- A Thing of Beauty
 							["qg"] = 56065,	-- Inkmaster Wei
 							["coord"] = { 54.6, 44.2, THE_JADE_FOREST },
