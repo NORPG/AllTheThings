@@ -762,7 +762,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--     TWW      --
 	------------------
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		hqt(86534),	-- temporary until 11.2.7 to prevent a parser warning due to bad blizz data
+		--hqt(86534),	-- temporary until 11.2.7 to prevent a parser warning due to bad blizz data
 	})),
 
 	--------------------

@@ -34,7 +34,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			233708,	-- Tocho Couldhide [H]
 		},
 		["coords"] = {
-			{ 53.1, 40.1,   FOUNDERS_POINT },	-- Lyssabel Dawnpetal [A]
+			{ 53.1, 40.1, FOUNDERS_POINT },	-- Lyssabel Dawnpetal [A]
 			{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide [H]
 		},
 		["groups"] = { i(266892) },	-- Neighbourhood Campsites (Unlocks 'Founders Point' and 'Razorwind Shores' Campsites. Could not see Campsite IDs even with them enabled in ATT Settings)
@@ -45,7 +45,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			255520,	-- Xiz'ro [H]
 		},
 		["coords"] = {
-			{ 51.9, 38.7,   FOUNDERS_POINT },	-- Lestia Goldenstrike [A]
+			{ 51.9, 38.7, FOUNDERS_POINT },	-- Lestia Goldenstrike [A]
 			{ 54.2, 58.0, RAZORWIND_SHORES },	-- Xiz'ro [H]
 		},
 	}),
@@ -55,10 +55,9 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			233708,	-- Tocho Couldhide [H]
 		},
 		["coords"] = {
-			{ 53.1, 40.1,   FOUNDERS_POINT },	-- Lyssabel Dawnpetal [A]
+			{ 53.1, 40.1, FOUNDERS_POINT },	-- Lyssabel Dawnpetal [A]
 			{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide [H]
 		},
-		["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
 		["groups"] = { i(239098) },	-- Neighborhood Charter
 	}),
 	-- Misc
