@@ -1435,6 +1435,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				}))
 			),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258211),	-- Kirin Tor Glass Table (DECOR!)
+			i(258208),	-- Kirin Tor Sun Chandelier (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(42336),	-- Bloodstone Band
 			i(42340),	-- Dream Signet
@@ -2315,6 +2319,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				i(43130),	-- Virulent Spaulders
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(257693),	-- Snowfall Tribe Scare-Totem (DECOR!)
+			i(258205),	-- Wolvar Postbag (DECOR!)
+		})),
 		filter(MISC, {
 			i(38375),	-- Borean Armor Kit
 			i(33568),	-- Borean Leather
@@ -2679,6 +2687,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(41600),	-- Glacial Bag
 			i(41598),	-- Mysterious Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258206),	-- Gilded Dalaran Banner (DECOR!)
+			i(258298),	-- Kirin Tor Skyline Banner (DECOR!)
+		})),
 		filter(MISC, {
 			-- #if AFTER BFA
 			i(34721),	-- Frostweave Bandage

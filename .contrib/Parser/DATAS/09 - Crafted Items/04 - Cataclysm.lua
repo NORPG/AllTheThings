@@ -1260,6 +1260,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				-- #endif
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(257406),	-- Smoke Lamp (DECOR!)
+			i(249143),	-- Smoke Sconce (DECOR!)
+		})),
 		filter(GEMS, {
 			n(SPECIAL, {
 				i(52255),	-- Bold Chimera's Eye
@@ -1779,6 +1783,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				dragonsoul(i(75116)),	-- Vicious Dragonscale Shoulders
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(264712),	-- Gilnean Spare Saddle (DECOR!)
+			i(264677),	-- Rolled Scarab Rug (DECOR!)
+			i(257806),	-- Scaled Twilight Mosaic (DECOR!)
+		})),
 		filter(MISC, {
 			i(56551),	-- Charscale Leg Armor
 			i(56550),	-- Dragonscale Leg Armor
@@ -2057,6 +2066,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			moltenfront(i(70138)),	-- Luxurious Silk Gem Bag
 			i(54445),	-- Otherworldly Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(257402),	-- "Unity of Thorns" Tapestry (DECOR!)
+			i(245618),	-- Surwich Expedition Tent (DECOR!)
+		})),
 		filter(MISC, {
 			-- #if AFTER BFA
 			i(53051),	-- Dense Embersilk Bandage

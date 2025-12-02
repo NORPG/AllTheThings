@@ -2346,6 +2346,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193371),	-- "Rhinestone" Sunglasses
 			i(194748),	-- Split-Lens Specs
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248109),	-- Valdrakken Fence
+			i(248110),	-- Valdrakken Fencepost
+			i(248654),	-- Valdrakken Gilded Throne
+		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
 		},{
@@ -2459,6 +2464,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74482, 400812, ADDED_10_0_7);	-- Crystal Tuning Fork
 			-- Legendary
 			FirstCraft(75434, 407161, ADDED_10_1_0);	-- Immaculate Coalescing Dracothyst
+			-- Decor
+			-- FirstCraft(XXXXX, 1259384, ADDED_11_2_7);	-- Valdrakken Fence
+			-- FirstCraft(XXXXX, 1259386, ADDED_11_2_7);	-- Valdrakken Fencepost
+			-- FirstCraft(XXXXX, 1259369, ADDED_11_2_7);	-- Valdrakken Gilded Throne
 		})),
 		filter(GEMS, {
 			i(192917),	-- Crafty Alexstraszite+
@@ -2767,6 +2776,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				i(193463),	-- Wind Spirit's Lasso
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248114),	-- Draconic Nesting Bed (DECOR!)
+			i(248657),	-- Valdrakken Market Tent (DECOR!)
+		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
 		},{
@@ -2940,6 +2953,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74483, 400814, ADDED_10_0_7);	-- Reinforced Pristine Leather
 			-- Legendary
 			FirstCraft(78009, 422330, ADDED_10_2_0);	-- Erden's Glowspore Grip
+			-- Decor
+			-- FirstCraft(XXXXX, 1259195, ADDED_11_2_7);	-- Draconic Nesting Bed
+			-- FirstCraft(XXXXX, 1259233, ADDED_11_2_7);	-- Valdrakken Market Tent
 		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
@@ -3383,6 +3399,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193509),	-- Vibrant Wildercloth Vestments
 			i(193510),	-- Vibrant Wildercloth Wristwraps
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248121),	-- Draconic Circular Rug (DECOR!)
+			i(257053),	-- Tapestry of the Five Flights (DECOR!)
+		})),
 		filter(MISC, {
 			i(193950),	-- Abrasive Polishing Cloth+
 			i(193951),	-- Abrasive Polishing Cloth++
@@ -3613,6 +3633,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(71849, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
 			-- Artisan Curios
 			FirstCraft(74318, 400815, ADDED_10_0_7);	-- Traditional Morqut Kite
+			-- Decor
+			-- FirstCraft(XXXXX, 1259247, ADDED_11_2_7);	-- Draconic Circular Rug
+			-- FirstCraft(XXXXX, 1261940, ADDED_11_2_7);	-- Tapestry of the Five Flights
 		})),
 	}),
 })));

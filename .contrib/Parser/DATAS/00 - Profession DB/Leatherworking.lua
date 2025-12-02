@@ -2600,6 +2600,30 @@ i(235338, 1216520); -- Charged Armor Kit
 ------------------
 -- PATCH 11.2.7 --
 ------------------
+i(0, 1263818);		-- Arakkoa Decoy Scarecrow
+i(0, 1263633);		-- Camp Narache Rug
+i(0, 1259195);		-- Draconic Nesting Bed
+i(0, 1272580);		-- Gilnean Spare Saddle
+i(0, 1262273);		-- Highmountain Tanner's Frame
+i(0, 1261672);		-- Loch Modan Bearskin Rug
+i(0, 1263313);		-- Maldraxxian Crate
+i(0, 1263308);		-- Margrave's Stitched Leather Rug
+i(0, 1263819);		-- Outland Mag'har Banner
+i(0, 1272588);		-- Rolled Scarab Rug
+i(0, 1263859);		-- Sandfury Diplomat's Banner
+i(0, 1269550);		-- Scaled Twilight Mosaic
+i(0, 1261245);		-- Serenity Peak Tent
+i(0, 1269499);		-- Snowfall Tribe Scare-Totem
+i(0, 1260765);		-- Tauren Fencepost
+i(0, 1260762);		-- Tauren Leather Fence
+i(0, 1259233);		-- Valdrakken Market Tent
+i(0, 1270836);		-- Well-Lit Incontinental Couch
+i(0, 1261248);		-- Wise Pandaren's Bed
+i(0, 1263613);		-- Wolvar Postbag
+i(0, 1260485);		-- Zandalari Ritual Drum
+i(0, 1260328);		-- Zhevra-Stripe Rug
 --- ITEM ---
-i(257033, 1261081); -- Pattern: Blackrock Bunkbed
-i(257058, 1261122); -- Pattern: Orcish Sleeping Cot
+i(257033, 1261081);	-- Blackrock Bunkbed
+i(257058, 1261122);	-- Orcish Sleeping Cot
+--- NYI---
+--r(1269498);		-- Snowfall Tribe Scare-Totem [Not Working?/Duplicate?]

@@ -1891,8 +1891,32 @@ i(239485, 1228338);	-- Pure Energizing Fiber
 i(239488, 1228342);	-- Pure Precise Fiber
 
 ------------------
--- PATCH 11.2.0 --
+-- PATCH 11.2.7 --
 ------------------
-i(257109, 1261231);	-- Pattern: Argussian Circular Rug
-i(258486, 1263360);	-- Pattern: Beloved Elekk Plushie
-i(257110, 1261232);	-- Pattern: Karabor Bed
+--- TRAINER ---
+i(0, 1262370);		-- "Unity of Thorns" Tapestry
+i(0, 1272578);		-- Aspirant's Ringed Banner
+i(0, 1263858);		-- Beloved Raptor Plushie
+i(0, 1260774);		-- Circular Shal'dorei Rug
+i(0, 1260215);		-- Dornogal Framed Rug
+i(0, 1259247);		-- Draconic Circular Rug
+i(0, 1263692);		-- Draenei Weaver's Loom
+i(0, 1261695);		-- Dwarven District Banner
+i(0, 1261688);		-- Elder Rise Rug
+i(0, 1263620);		-- Gilded Dalaran Banner
+i(0, 1263669);		-- Grand Drape of the Exiles
+i(0, 1272575);		-- Heart of the Forest Banner
+i(0, 1263627);		-- Kirin Tor Skyline Banner
+i(0, 1263853);		-- Kyrian Aspirant's Rolled Cushion
+i(0, 1263553);		-- Pandaren Fishing Net
+i(0, 1261250);		-- Pandaren Meander Rug
+i(0, 1260458);		-- Red Dazar'alor Rug
+i(0, 1260769);		-- Shal'dorei Open-Air Tent
+i(0, 1261317);		-- Surwich Expedition Tent
+i(0, 1261940);		-- Tapestry of the Five Flights
+i(0, 1260326);		-- Undermine Bean Bag Chair
+i(0, 1260475);		-- Zanchuli Tapestry
+--- ITEM ---
+i(257109, 1261231);	-- Argussian Circular Rug
+i(258486, 1263360);	-- Beloved Elekk Plushie
+i(257110, 1261232);	-- Karabor Bed

@@ -749,6 +749,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(115989),					-- Whispering Iron Band
 			WOD_CRAFTED_ITEM(115798),	-- Whispering Taladite Ring
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(251550),	-- Draenethyst Sconce (DECOR!)
+			i(251495),	-- Draenic Basin (DECOR!)
+		})),
 		filter(GEMS, {
 			i(115803),	-- Critical Strike Taladite
 			i(115809),	-- Greater Critical Strike Taladite
@@ -890,6 +894,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				-- #ENDIF
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245432),	-- Blackrock Bunkbed (DECOR!)
+			i(244323),	-- Orcish Sleeping Cot (DECOR!)
+		})),
 		filter(MISC, {
 			i(128014, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Burnished Essence
 			i(116261),	-- Burnished Inscription Bag
@@ -985,6 +993,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		filter(BATTLE_PETS, {
 			i(113216),	-- Elekk Plushie (PET!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(251546),	-- Argussian Circular Rug (DECOR!)
+			i(258303),	-- Beloved Elekk Plushie (DECOR!)
+			i(245421),	-- Karabor Bed (DECOR!)
+		})),
 		filter(MISC, {
 			-- #if AFTER BFA
 			i(111603),	-- Antiseptic Bandage

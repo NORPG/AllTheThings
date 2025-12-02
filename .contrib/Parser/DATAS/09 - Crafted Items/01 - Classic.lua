@@ -5312,6 +5312,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		filter(COSMETIC, {
 			i(204404, {["timeline"] = {ADDED_10_0_7}}),	-- Square Holders
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(246413),	-- Blackrock Lamppost (DECOR!)
+			i(246488),	-- Ironforge Chandelier (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(20964),	-- Aquamarine Signet
 			i(20958),	-- Blazing Citrine Ring
@@ -6190,6 +6194,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(34086, {["timeline"] = {ADDED_2_3_0, REMOVED_7_3_2}}),	-- Winter Boots
 			i(151791, {["timeline"] = {ADDED_7_3_2}}),	-- Winter Boots
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(257725),	-- Camp Narache Rug (DECOR!)
+			i(242948),	-- Loch Modan Bearskin Rug (DECOR!)
+		})),
 		filter(MISC, {
 			i(18251),	-- Core Armor Kit
 			i(4236),	-- Cured Heavy Hide
@@ -8352,6 +8360,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				})
 			)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(246685),	-- Dwarven District Banner (DECOR!)
+			i(243336),	-- Elder Rise Rug (DECOR!)
+		})),
 		filter(MISC, {
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 }})),	-- Gordok Ogre Suit
 			-- #if AFTER BFA

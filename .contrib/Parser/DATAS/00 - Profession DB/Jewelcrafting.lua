@@ -2439,6 +2439,30 @@ i(238922, 1226650);	-- Void-Crystal Panther
 ------------------
 -- PATCH 11.2.7 --
 ------------------
+-- TRAINER --
+i(0, 1261667);		-- Blackrock Lamppost
+i(0, 1269496);		-- Draenei Crystal Chandelier
+i(0, 1260172);		-- Gundargaz Candelabra
+i(0, 1261659);		-- Ironforge Chandelier
+i(0, 1261242);		-- Jade Temple Dragon Fountain
+i(0, 1263577);		-- Kirin Tor Glass Table
+i(0, 1263605);		-- Kirin Tor Sun Chandelier
+i(0, 1269502);		-- Kyrian Floating Lamp
+i(0, 1269504);		-- Maldraxxian Runic Tablet
+i(0, 1260096);		-- Octagonal Ochre Window
+i(0, 1261244);		-- Pandaren Stone Post
+i(0, 1261243);		-- Pandaren Stone Wall
+i(0, 1260757);		-- Shaded Suramar Window
+i(0, 1263815);		-- Shattrath Lamppost
+i(0, 1263817);		-- Shattrath Sconce
+i(0, 1260501);		-- Small Mask of Bwonsamdi, Loa of Graves
+i(0, 1262357);		-- Smoke Lamp
+i(0, 1261305);		-- Smoke Sconce
+i(0, 1263351);		-- Suramar Jeweler's Assortment
+i(0, 1259384);		-- Valdrakken Fence
+i(0, 1259386);		-- Valdrakken Fencepost
+i(0, 1259369);		-- Valdrakken Gilded Throne
+i(0, 1260492);		-- Zandalari Skullfire Lamp
 --- ITEM ---
-i(257031, 1261075);	-- Design: Draenethyst Sconce
-i(257030, 1261071);	-- Design: Draenic Basin
+i(257031, 1261075);	-- Draenethyst Sconce
+i(257030, 1261071);	-- Draenic Basin

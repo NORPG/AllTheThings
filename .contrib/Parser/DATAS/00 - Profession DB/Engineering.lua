@@ -1426,5 +1426,5 @@ i(0, 1263237);		-- Titanic Tyrhold Fountain
 i(0, 1259778);		-- Replica Rumbling Wastes Drill Pod
 i(0, 1259724);		-- Schmancy Goblin String Lights
 --- ITEM ---
-i(256962, 1261025);	-- Schematic: Draenei Stargazer's Telescope
-i(256964, 1261027);	-- Schematic: Frostwall Architect's Table
+i(256962, 1261025);	-- Draenei Stargazer's Telescope
+i(256964, 1261027);	-- Frostwall Architect's Table

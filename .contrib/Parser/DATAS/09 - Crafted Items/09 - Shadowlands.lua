@@ -460,6 +460,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180760),	-- Crown of the Righteous
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(262663),	-- Kyrian Floating Lamp (DECOR!)
+			i(260699),	-- Maldraxxian Runic Tablet (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(173138),	-- Deadly Laestrite Band
 			i(173134),	-- Deadly Sinvyr Ring
@@ -638,6 +642,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 				i(172264),	-- Shadowscale Waistguard
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258238),	-- Maldraxxian Crate (DECOR!)
+			i(258248),	-- Margrave's Stitched Leather Rug (DECOR!)
+		})),
 		filter(MISC, {
 			i(168419),	-- Comfortable Rider's Barding
 			i(172346),	-- Desolate Armor Kit
@@ -773,6 +781,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180752),	-- Pink Party Hat
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(264678),	-- Aspirant's Ringed Banner (DECOR!)
+			i(264713),	-- Heart of the Forest Banner (DECOR!)
+			i(258561),	-- Kyrian Aspirant's Rolled Cushion (DECOR!)
+		})),
 		filter(MISC, {
 			i(173191),	-- Heavy Shrouded Cloth Bandage
 			i(184480),	-- Lightless Silk Pouch

@@ -1403,6 +1403,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(24122),	-- Coronet of Verdant Flame
 			applyclassicphase(TBC_PHASE_TWO, i(32776, {["timeline"] = {ADDED_2_1_0}})),	-- Crown of the Sea Witch
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(262347),	-- Draenei Crystal Chandelier (DECOR!)
+			i(258201),	-- Shattrath Lamppost (DECOR!)
+			i(258200),	-- Shattrath Sconce (DECOR!)
+		})),
 		filter(GEMS, {
 			n(SPECIAL, {
 				["timeline"] = { ADDED_2_2_0 },
@@ -1906,6 +1911,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				-- #endif
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258191),	-- Arakkoa Decoy Scarecrow (DECOR!)
+			i(258190),	-- Outland Mag'har Banner (DECOR!)
+		})),
 		filter(MISC, {
 			i(29488, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Arcane Armor Kit
 			i(34490, {["timeline"] = {ADDED_2_3_0}}),	-- Bag of Many Hides
@@ -2511,6 +2520,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(21876),	-- Primal Mooncloth Bag
 			i(21858),	-- Spellfire Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258195),	-- Draenei Weaver's Loom (DECOR!)
+			i(258202),	-- Grand Drape of the Exiles (DECOR!)
+		})),
 		filter(MISC, {
 			-- #if AFTER BFA
 			i(21991),	-- Heavy Netherweave Bandage

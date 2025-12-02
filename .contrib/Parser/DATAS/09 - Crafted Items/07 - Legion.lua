@@ -669,6 +669,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(151579),	-- Labradorite
 			i(151719),	-- Lightsphene
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245557),	-- Shaded Suramar Window (DECOR!)
+			i(258227),	-- Suramar Jeweler's Assortment (DECOR!)
+		})),
 	}),
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
@@ -713,6 +717,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(146668, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(257400),	-- Highmountain Tanner's Frame (DECOR!)
+			i(245407),	-- Tauren Fencepost (DECOR!)
+			i(245406),	-- Tauren Leather Fence (DECOR!)
+		})),
 		filter(MISC, {
 			i(142406, {["timeline"] = {ADDED_7_1_0}}),	-- Drums of the Mountain
 			i(131746),	-- Stonehide Leather Barding
@@ -804,6 +813,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(142075, {["timeline"] = {ADDED_7_1_0}}),	-- Imbued Silkweave Bag
 			i(127035),	-- Silkweave Satchel
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258557),	-- Beloved Raptor Plushie (DECOR!)
+			i(247920),	-- Circular Shal'dorei Rug (DECOR!)
+			i(248010),	-- Shal'dorei Open-Air Tent (DECOR!)
+		})),
 		filter(MISC, {
 			i(139503),	-- Bloodtotem Saddle Blanket
 			i(137556),	-- Clothes Chest: Dalaran Citizens

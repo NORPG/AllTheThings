@@ -1943,6 +1943,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(215132),	-- Marvelous Mood Ring
 			i(215135),	-- Ring of Earthen Craftsmanship
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(253253),	-- Gundargaz Candelabra (DECOR!)
+			i(245559),	-- Octagonal Ochre Window (DECOR!)
+		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
 		},{
@@ -2025,6 +2029,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81255, 435389);	-- Remembrance Stone
 			-- Mounts
 			FirstCraft(89248, 1226650, ADDED_11_1_5);	-- Void-Crystal Panther
+			-- Decor
+			-- FirstCraft(XXXXX, 1260172, ADDED_11_2_7);	-- Gundargaz Candelabra
+			-- FirstCraft(XXXXX, 1260096, ADDED_11_2_7);	-- Octagonal Ochre Window
 		})),
 		filter(GEMS, {
 			i(213748),	-- Cognitive Bloodstone
@@ -2241,6 +2248,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(219501),	-- Vambraces of Deepening Darkness
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(239214),	-- Well-Lit Incontinental Couch (DECOR!)
+			i(243327),	-- Zhevra-Stripe Rug (DECOR!)
+		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
 		},{
@@ -2342,6 +2353,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80948, 444078);	-- Sporecoated Hide
 			FirstCraft(80951, 444087);	-- Storm-Touched Weapon Wrap
 			FirstCraft(80947, 444077);	-- Writhing Hide
+			-- Decor
+			-- FirstCraft(XXXXX, 1270836, ADDED_11_2_7);	-- Well-Lit Incontinental Couch
+			-- FirstCraft(XXXXX, 1260328, ADDED_11_2_7);	-- Zhevra-Stripe Rug
 		})),
 		filter(MISC, {
 			i(219495),	-- Blessed Weapon Grip+
@@ -2663,6 +2677,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222853),	-- Weavercloth Bag
 			i(222855),	-- Weavercloth Reagent Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(252755),	-- Dornogal Framed Rug (DECOR!)
+			i(245305),	-- Undermine Bean Bag Chair (DECOR!)
+		})),
 		filter(MISC, {
 			i(225729),	-- Algari Weaverline
 			i(222879),	-- Bright Polishing Cloth+
@@ -2822,6 +2840,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80863, 446999);	-- Weavercloth Spellthread
 			FirstCraft(80831, 446967);	-- Weavercloth Tailor's Coat
 			FirstCraft(80861, 446997);	-- Weavercloth Embroidery Thread
+			-- Decor
+			-- FirstCraft(XXXXX, 1260215, ADDED_11_2_7);	-- Dornogal Framed Rug
+			-- FirstCraft(XXXXX, 1260326, ADDED_11_2_7);	-- Undermine Bean Bag Chair
 		})),
 	}),
 })));

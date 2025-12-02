@@ -1034,6 +1034,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(82774),	-- Jade Owl (PET!)
 			i(82775),	-- Sapphire Cub (PET!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247736),	-- Jade Temple Dragon Fountain (DECOR!)
+			i(247728),	-- Pandaren Stone Post (DECOR!)
+			i(245509),	-- Pandaren Stone Wall (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(83801),	-- Band of Blood
 			i(83796),	-- Heart of the Earth
@@ -1755,6 +1760,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 				i(85848),	-- Stormscale Shoulders
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247856),	-- Serenity Peak Tent (DECOR!)
+			i(247767),	-- Wise Pandaren's Bed (DECOR!)
+		})),
 		filter(MISC, {
 			i(83765),	-- Angerhide Leg Armor
 			i(85568),	-- Brutal Leg Armor
@@ -2030,6 +2039,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 				i(90902),	-- Imperial Silkworm (PET!)
 			}))),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258302),	-- Pandaren Fishing Net (DECOR!)
+			i(247738),	-- Pandaren Meander Rug (DECOR!)
+		})),
 		-- #if AFTER BFA
 		filter(MISC, {
 			i(72986),	-- Heavy Windwool Bandage

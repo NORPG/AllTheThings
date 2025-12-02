@@ -974,6 +974,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(154122),	-- Tidal Amethyst
 			i(153704),	-- Viridium
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245496),	-- Small Mask of Bwonsamdi, Loa of Graves (DECOR!)
+			i(245414),	-- Zandalari Skullfire Lamp (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(153686),	-- Amberblaze Loop
 			i(168703, {["timeline"] = {ADDED_8_2_0}}),	-- Ascended Leviathan's Eye Loop
@@ -1336,6 +1340,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 				i(170441, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Cragscale Greaves
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258558),	-- Sandfury Diplomat's Banner (DECOR!)
+			i(245412),	-- Zandalari Ritual Drum (DECOR!)
+		})),
 		filter(MISC, {
 			i(165749),	-- Amber Rallying Horn
 			i(154166),	-- Coarse Leather Barding
@@ -1565,6 +1573,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(154695),	-- Deep Sea Bag
 			i(154696),	-- Embroidered Deep Sea Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(243101),	-- Red Dazar'alor Rug (DECOR!)
+			i(245418),	-- Zanchuli Tapestry (DECOR!)
+		})),
 		filter(REAGENTS, {
 			i(158378),	-- Embroidered Deep Sea Satin
 		}),
