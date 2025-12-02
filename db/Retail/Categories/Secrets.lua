@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,cq,crit,en,h,i,m,mnt,n,o,p,prof,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateEnsemble,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cq,crit,de,en,h,i,m,mnt,n,o,p,prof,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"i",207730},{"i",208092},{"i",228966},{"i",228996},{"n",185556},{"n",97128},{"o",408976},{"o",409166},{1,"questID",77308},{1,"questID",77520},{1,"questID",77521},{1,"questID",77522},{1,"questID",77524},{1,"questID",77578},{1,"questID",77579},{1,"questID",77580},{169414},{169415},{17.1,93.8,116},{17.8,93.2,116},{179566},{185562},{20,40,2022},{206864},{207696},{207697},{24.5,60.7,2022},{2736,8},{31.4,51.3,2248},{33.63,58.45,114},{337},{39.5,58.9,2023},{39.9,77.6,204},{44.6,20.2,205},{46.5,46.2,2112},{47.4,48.1,2112},{47.5,46.2,2112},{47.9,46.8,2112},{48,74.8,115},{50098},{52918},{54.9,28.9,2339},{55.1,19,2255},{56.4,17.5,2255},{58.5,39.1,627},{60.2,58.7,2025},{60.6,60,201},{62.8,72.8,2112},{63611},{65.9,43.2,204},{70},{71.8,62.5,680},{710,711,712},{72676},{73.2,74.9,790},{76504},{77203},{84677},{96479}};
 _.Categories.Secrets={
 x(8,{awp=80001,g={
@@ -123,7 +123,8 @@ q(72798,{coords={{16.1,62.6,2022}},cost={{"i",199203,1},{"i",199080,15},{"i",202
 p(3292,{b=1,itemID=193373,npcID=189117,spellID=375084})}})}}),
 h(-503,{awp=50004,description="Multi-expansion secret to obtaining Dog as a companion pet",g={
 q(30526,{coords={{42.4,50.2,376}},lvl=15,minReputation={1272,21600},qgs={59533},g={
-i(80144)}}),
+i(80144),
+de(4488,{awp=110207,itemID=248663,sourceQuests={30526},spellID=1247392})}}),
 q(46952,{awp=70200,coords={{58.8,53.8,582},{44.6,84.8,590}},description="You need to have an Herb Garden in your garrison. Show the Pebble to Dog by speaking with them. Do not throw the pebble at Dog.",qgs={87553},qis={147420},sourceQuests={30526,34193,36404}}),
 q(83093,{awp=110002,coords={a[29]},description="Interacting with the bowl near Dalaran's crash will send Dog running to you.",providers={{"o",452438}},sourceQuests={46952}}),
 q(83094,{awp=110002,coords={a[29]},description="Interact with Dog to get them as a pet.",qgs={225486},sourceQuests={83093},g={

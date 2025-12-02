@@ -269,8 +269,10 @@ MOP_INSCRIPTION = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"
 		r(1261239),	-- Square Pandaren Table
 	})),
 }));
+--[[
 COMMON_DRAENOR_INSCRIPTION_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 }));
+--]]
 LEGION_INSCRIPTION = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260711),	-- Covered Square Suramar Table
