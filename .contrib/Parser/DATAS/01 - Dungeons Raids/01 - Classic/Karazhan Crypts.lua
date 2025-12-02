@@ -204,22 +204,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(236710),	-- Wristguards of Undead Slaying
 						i(236712),	-- Bracers of Undead Slaying
 					}),
-					n(APPRENTICE , {	-- Apprentice
-						n(COMMON_BOSS_DROPS, {	-- Common Boss Drops
-							i(235894),	-- Doomsayer's Demise
-							i(235880),	-- Pauper Soles
-							i(235879),	-- Nimble Links
-							i(235873),	-- Crypt's Keepers
-						}),
-						n(238233, {	-- Kaigy Maryla <The Failed Apprentice>
-							i(235886),	-- Kaigy's Clasp
-						}),
-						n(238213, {	-- Sairuh Maryla <The Failed Apprentice>
-							i(236782),	-- Sairuh's Collar
-						}),
-						n(238234, {	-- Barian Maryla <The Failed Apprentice>
-							i(235887),	-- Barian's Choker
-						}),
+					n(APPRENTICE , {	-- Apprentice						
+						["description"] = "There are 3 Failed Apprentices locked in cells. The Warden can be found patrolling the Prison, if you kill him, he drops Portcullis Key. You can use this key to free one of the Failed Apprentices",
+						["groups"] = {
+							n(238560, {		-- The Warden
+								i(237011),	-- Portcullis Key
+							}),
+							n(COMMON_BOSS_DROPS, {	-- Common Boss Drops
+								["cost"] = { { "i", 237011, 1 } },	-- Portcullis Key
+								["crs"] = {
+									238233,	-- Kaigy Maryla <The Failed Apprentice>
+									238213,	-- Sairuh Maryla <The Failed Apprentice>
+									238234,	-- Barian Maryla <The Failed Apprentice>
+								},
+								["groups"] = {
+									i(235894),	-- Doomsayer's Demise
+									i(235880),	-- Pauper Soles
+									i(235879),	-- Nimble Links
+									i(235873),	-- Crypt's Keepers
+								},
+							}),
+							n(238233, {	-- Kaigy Maryla <The Failed Apprentice>
+								["cost"] = { { "i", 237011, 1 } },	-- Portcullis Key
+								["groups"] = {
+									i(235886),	-- Kaigy's Clasp
+								},
+							}),
+							n(238213, {	-- Sairuh Maryla <The Failed Apprentice>
+								["cost"] = { { "i", 237011, 1 } },	-- Portcullis Key
+								["groups"] = {
+									i(236782),	-- Sairuh's Collar
+								},
+							}),
+							n(238234, {	-- Barian Maryla <The Failed Apprentice>
+								["cost"] = { { "i", 237011, 1 } },	-- Portcullis Key
+								["groups"] = {
+									i(235887),	-- Barian's Choker
+								},
+							}),
+						},
 					}),
 					n(OPERA_OF_MALEDICTION, {	-- Opera of Malediction
 						i(235889),	-- Servant's Quarterstaff
@@ -240,8 +263,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(235869),	-- The Master's Cowl
 						i(235882),	-- Clattering Steps
 					}),
+					n(238678, {	--Unk'omon <The Winged Sorrow>
+						["description"] = "In the Library, use the torch to open the secret room behind the bookshelf. Mage, or Warlock should speak to Alfwhit Grigdert. He will spawn a portal and teleport back up to the Dark Rider room. Speak with Alfwhit Grigdert again and the boss will spawn. He will give Mark of the Master, a 25% attackspeed & 25% castspeed for 15minutes, when killed",
+						-- Nothing worth listining. Drops Felcloth, Demonic Rune, a sack of gems, random BoE greens/blues, and has a chance of dropping Sanctified armor
+					}),
 					n(237439, {	-- Kharon			(2)
-						["description"] = "Kharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",
+						["description"] = "Players can summon Kharon by interacting with Dialogues of the Dead at his Altar.\n\nKharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",
 						["groups"] = {
 							i(235874),	-- Cultist's Handwraps
 							i(236642),	-- Mender's Handwraps

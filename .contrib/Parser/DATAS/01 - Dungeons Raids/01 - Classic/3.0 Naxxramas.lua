@@ -4104,6 +4104,17 @@ applyclassicphase(PHASE_SIX,
 								}),
 							},
 						}),
+						n(ZONE_DROPS, {
+							i(22682, {	-- Frozen Rune
+								-- #if BEFORE WRATH
+								["description"] = "Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",
+								-- #endif
+								["cost"] = { { "i", 237773, 1 } },	-- Word of Thawing
+							}),
+							i(237773, {	-- Word of Thawing
+								["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
+							}),
+						}),						
 						n(COMMON_BOSS_DROPS, {
 							-- Helms
 							-- Thaddius Only
