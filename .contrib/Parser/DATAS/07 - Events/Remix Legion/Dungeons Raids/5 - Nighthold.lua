@@ -124,6 +124,10 @@ local COMMONLOOT = {
 	}),
 	filter(MAIL, {
 		-- Regular items
+		-- #if AFTER 11.2.7
+		i(247455),	-- Arcanochitin Hauberk
+		i(247450),	-- Architect's Coif of Despair
+		-- #endif
 		i(247470),	-- Belt of Celestial Alignment
 		i(247448),	-- Emblazoned Duskwatch Belt
 		i(247447),	-- Sabatons of Burning Steps

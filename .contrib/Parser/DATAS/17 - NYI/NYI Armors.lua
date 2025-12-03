@@ -5801,8 +5801,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(247474),	-- Vintage Suramar Nobility Hat
 					}),
 					filter(MAIL, {
+						-- #if BEFORE 11.2.7
 						i(247455),	-- Arcanochitin Hauberk
 						i(247450),	-- Architect's Coif of Despair
+						-- #endif
 						i(247476),	-- Hood of Fading Opportunity
 						i(247487),	-- Netherbranded Shoulderpads
 						i(247452),	-- Pauldrons of Warped Memory
@@ -5838,8 +5840,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(247474),	-- Vintage Suramar Nobility Hat
 					}),
 					filter(MAIL, {
+						-- #if BEFORE 11.2.7
 						i(247455),	-- Arcanochitin Hauberk
 						i(247450),	-- Architect's Coif of Despair
+						-- #endif
 						i(247476),	-- Hood of Fading Opportunity
 						i(247487),	-- Netherbranded Shoulderpads
 						i(247452),	-- Pauldrons of Warped Memory
@@ -5875,8 +5879,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(247474),	-- Vintage Suramar Nobility Hat
 					}),
 					filter(MAIL, {
+						-- #if BEFORE 11.2.7
 						i(247455),	-- Arcanochitin Hauberk
 						i(247450),	-- Architect's Coif of Despair
+						-- #endif
 						i(247476),	-- Hood of Fading Opportunity
 						i(247487),	-- Netherbranded Shoulderpads
 						i(247452),	-- Pauldrons of Warped Memory
@@ -5912,8 +5918,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(247474),	-- Vintage Suramar Nobility Hat
 					}),
 					filter(MAIL, {
+						-- #if BEFORE 11.2.7
 						i(247455),	-- Arcanochitin Hauberk
 						i(247450),	-- Architect's Coif of Despair
+						-- #endif
 						i(247476),	-- Hood of Fading Opportunity
 						i(247487),	-- Netherbranded Shoulderpads
 						i(247452),	-- Pauldrons of Warped Memory

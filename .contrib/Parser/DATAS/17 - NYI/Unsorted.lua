@@ -4895,9 +4895,6 @@ root(ROOTS.Unsorted, {
 				i(259025),	-- Azure Guardian's Claymore \\ RENAME 2H Sword
 				i(259026),	-- Azure Guardian's Polearm \\ RENAME Polearm
 			}),
-			n(ARMOR, {	-- Lemix?
-				i(259898),	-- Greyed Dragonscale Coif
-			}),
 			filter(BATTLE_PETS, {
 				i(245544),	-- Tiny Snow Buddy
 			}),
