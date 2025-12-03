@@ -155,7 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["sharedDescription"] = "[TBC]\nIf the boss loot that is not in the boss's loot table, @NORPG on Discord.",
+			--	["sharedDescription"] = "[TBC]\nIf the boss loot that is not in the boss's loot table, @NORPG on Discord.",
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {	-- Common Boss Drops
 						i(226404),	-- Tarnished Undermine Real
