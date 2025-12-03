@@ -692,7 +692,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					i(90445, {	-- Firerider Treads
 						-- #if BEFORE WOD
-						["classes"] = { SHAMAN },
+						["classes"] = { PALADIN },
 						-- #endif
 					}),
 					i(90442),	-- Flamefoot Tabi
