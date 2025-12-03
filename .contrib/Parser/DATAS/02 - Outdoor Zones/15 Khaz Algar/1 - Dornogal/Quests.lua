@@ -320,6 +320,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(91744, {["timeline"] = {ADDED_11_2_0}}),	-- provided 15x Carved Ethereal Crest
 				-- 11.2?
 				-- q(92487, {["timeline"] = {ADDED_11_2_0}}),	-- After turn in disk weekly quest, could be coffer key shard lockout?
+				hqt(93399, {
+					["name"] = "We are all frustrated, Danath.",
+					["provider"] = { "n", 234562 },	-- Danath Trollbane
+					["coord"] = { 46.3, 49.6, DORNOGAL },
+					["lockCriteria"] = { 1, "questID", 84638 },	-- Trouble in the Highlands [assumed]
+					["timeline"] = { ADDED_11_2_7 },
+					["repeatable"] = true,
+				}),
 			}),
 		}),
 	}),
