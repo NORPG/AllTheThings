@@ -65,4 +65,7 @@ do
 		-- Decor is not currently reliably refreshed, so don't clear missing
 		-- app.SetBatchAccountCached(CACHE, none)
 	end)
+	app.AddEventRegistration("HOUSE_DECOR_ADDED_TO_CHEST", function(decorUid, decorID)
+		app.SetThingCollected(KEY, decorID, true, true)
+	end)
 end
