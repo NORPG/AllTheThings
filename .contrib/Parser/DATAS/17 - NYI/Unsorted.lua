@@ -6900,14 +6900,10 @@ root(ROOTS.Unsorted, {
 				i(159145),	-- Empty Grog Bottle \\ Plundered Supplies
 				i(159224),	-- Zuldazar Hearthstone
 				i(159678),	-- Century Sauce
-				i(159740),	-- Add Keystone Affix: Skittish
-				i(159741),	-- Add Keystone Affix: Teeming
 				i(159783),	-- Kane's Coin Purse
-
 
 				i(159843),	-- Recruit Alliance Troop
 				i(159844),	-- Recruit Horde Troop
-				i(159961),	-- Set Keystone Map: Neltharion's Lair
 				i(159962),	-- Set Keystone: Time Trial 3
 				i(159963),	-- Set Keystone: Time Trial 2
 				i(159964),	-- Set Keystone: Time Trial 1

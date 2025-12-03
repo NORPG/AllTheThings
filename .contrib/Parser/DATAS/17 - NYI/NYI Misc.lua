@@ -327,16 +327,18 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
 		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
-			i(159734),	-- Add Keystone Affix: Fortified
-			i(159730),	-- Add Keystone Affix: Tyrannical
-			i(159732),	-- Add Keystone Affix: Bursting
-			i(159739),	-- Add Keystone Affix: Sanguine
-			i(159735),	-- Add Keystone Affix: Grievous
 			i(159731),	-- Add Keystone Affix: Bolstering
-			i(159738),	-- Add Keystone Affix: Raging
+			i(159732),	-- Add Keystone Affix: Bursting
 			i(159733),	-- Add Keystone Affix: Explosive
+			i(159734),	-- Add Keystone Affix: Fortified
+			i(159735),	-- Add Keystone Affix: Grievous
 			i(159736),	-- Add Keystone Affix: Necrotic
 			i(159737),	-- Add Keystone Affix: Quaking
+			i(159738),	-- Add Keystone Affix: Raging
+			i(159739),	-- Add Keystone Affix: Sanguine
+			i(159740),	-- Add Keystone Affix: Skittish
+			i(159741),	-- Add Keystone Affix: Teeming
+			i(159730),	-- Add Keystone Affix: Tyrannical
 			i(159742),	-- Add Keystone Affix: Volcanic
 			i(164258),	-- Cache of Uldir Treasures
 			i(164259),	-- Cache of Uldir Treasures
@@ -376,8 +378,9 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(159681),	-- Set Keystone Map: Darkheart Thicket
 			i(159686),	-- Set Keystone Map: Eye of Azshara
 			i(159687),	-- Set Keystone Map: Halls of Valor
-			i(159688),	-- Set Keystone Map: Maw of Souls
 			i(159689),	-- Set Keystone Map: Lower Karazhan
+			i(159688),	-- Set Keystone Map: Maw of Souls
+			i(159961),	-- Set Keystone Map: Neltharion's Lair
 			i(159691),	-- Set Keystone Map: Seat of the Triumvirate
 			i(159692),	-- Set Keystone Map: The Arcway
 			i(159690),	-- Set Keystone Map: Upper Karazhan
@@ -2020,6 +2023,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(253221),	-- Bulwark of Mannoroth
 			i(246789),	-- Cache of Infinite Power
 			i(253867),	-- Cache of Infinite Treasure
+			i(237753),	-- Cache of Timerunning Gear
 			i(243025),	-- Corrupted Ley Crystal
 			i(253222),	-- Corrupted Thorn of the Dream
 			i(242706),	-- Curious Curio

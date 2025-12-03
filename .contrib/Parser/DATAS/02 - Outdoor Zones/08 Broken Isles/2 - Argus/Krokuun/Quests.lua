@@ -243,7 +243,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.2, 75.4, KROKUUN },
 					}),
 					q(48542, {	-- Strike Back
-						["provider"] = { "i", 152575 },	-- Birth of the Ur'zul
+						["provider"] = { "i", 152575 },	-- Birth of the Ur'zul (QS!)
+						["coord"] = { 71.2, 64.2, KROKUUN },	-- General area where QS can be looted
 					}),
 					q(47541, {	-- The Best Prevention
 						["sourceQuests"] = { 47431 },	-- Gathering Light
@@ -411,6 +412,16 @@ root(ROOTS.Zones, {
 									["u"] = UNLEARNABLE,
 								}),
 							}),
+						},
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(152575, {	-- Birth of the Ur'zul (QS!)
+						["sourceQuest"] = 48460,	-- The Wranglers
+						["coord"] = { 71.2, 64.2, KROKUUN },	-- General area where ["crs"] are located
+						["crs"] = {
+							123130,	-- Eredar Acolyte
+							122835,	-- Eredar Soulshaper
 						},
 					}),
 				}),

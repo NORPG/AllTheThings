@@ -571,24 +571,39 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		}),
 		-- Infinite Epilogues
 		q(91522, {	-- Order from Chaos
+			["sourceQuests"] = {	-- Exo Note: Confirmed
+				45354,	-- Dispersion of the Discs (Mage)
+				46792,	-- Gathering of the Storms (Shaman)
+				46089,	-- Hiding In Plain Sight (Rogue)
+				46337,	-- Night of the Wilds (Hunter)
+				45770,	-- Stirring in the Shadows (Paladin)
+				46813,	-- The Lost Glacier (Death Knight)
+				45789,	-- The Sunken Vault (Priest)
+				46350,	-- The Trial of Ban-Lu (Monk)
+				46207,	-- The Trial of Rage (Warrior)
+				46243,	-- The Wrathsteed of Xoroth (Warlock)
+				46334,	-- To Fel and Back (Demon Hunter)
+				46319,	-- You Can't Take the Sky from Me (Druid)
+			},
+			["sourceQuestNumRequired"] = 1,
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 		}),
 		q(91728, {	-- Suramar Liberated
-			["sourceQuest"] = 91522,	-- Order from Chaos
+			["sourceQuest"] = 44719,	-- Breaching the Sanctum (Exo Note: Unconfirmed)
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 		}),
 		q(91729, {	-- Armies Gathered
-			["sourceQuest"] = 91728,	-- Suramar Liberated
+			["sourceQuest"] = 46246,	-- Strike Them Down (Exo Note: Unconfirmed)
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 		}),
 		q(91730, {	-- Azeroth Saved
-			["sourceQuest"] = 91729,	-- Armies Gathered
+			["sourceQuest"] = 49015,	-- Antorus, the Burning Throne: The Death of a Titan (Exo Note: Unconfirmed)
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,

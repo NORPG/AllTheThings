@@ -746,7 +746,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
-			n(106448, {	-- Tithris
+			n(185562, {	-- Tithris
 				["coord"] = { 47.3, 46.7, VALDRAKKEN },
 				["groups"] = {
 					i(203443, {	-- Box of Leapmaize Crackers (QI!)

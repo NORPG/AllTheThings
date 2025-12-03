@@ -10,18 +10,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		-- Added with Phase3 Legion Remix Release -- Gold 5th Nov 2025
 			["description"] = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.",
 			["groups"] = {
-				crit(108360, {["_quests"] = { 46207 }}),	-- (Warrior)
-				crit(108376, {["_quests"] = { 45770 }}),	-- (Paladin)
-				crit(108651, {["_quests"] = { 46337 }}),	-- (Hunter)
-				crit(108655, {["_quests"] = { 46089 }}),	-- (Rogue)
-				crit(108654, {["_quests"] = { 45789 }}),	-- (Priest)
-				crit(108648, {["_quests"] = { 46813 }}),	-- (Death Knight)
-				crit(108656, {["_quests"] = { 46792 }}),	-- (Shaman)
-				crit(108652, {["_quests"] = { 45354 }}),	-- (Mage)
-				crit(108657, {["_quests"] = { 46243 }}),	-- (Warlock)
-				crit(108653, {["_quests"] = { 46350 }}),	-- (Monk)
-				crit(108650, {["_quests"] = { 46319 }}),	-- (Druid)
-				crit(108649, {["_quests"] = { 46334 }}),	-- (Demon Hunter)
+				crit(108652, {["_quests"] = { 45354 }}),	-- Dispersion of the Discs (Mage)
+				crit(108656, {["_quests"] = { 46792 }}),	-- Gathering of the Storms (Shaman)
+				crit(108655, {["_quests"] = { 46089 }}),	-- Hiding In Plain Sight (Rogue)
+				crit(108651, {["_quests"] = { 46337 }}),	-- Night of the Wilds (Hunter)
+				crit(108376, {["_quests"] = { 45770 }}),	-- Stirring in the Shadows (Paladin)
+				crit(108648, {["_quests"] = { 46813 }}),	-- The Lost Glacier (Death Knight)
+				crit(108654, {["_quests"] = { 45789 }}),	-- The Sunken Vault (Priest)
+				crit(108653, {["_quests"] = { 46350 }}),	-- The Trial of Ban-Lu (Monk)
+				crit(108360, {["_quests"] = { 46207 }}),	-- The Trial of Rage (Warrior)
+				crit(108657, {["_quests"] = { 46243 }}),	-- The Wrathsteed of Xoroth (Warlock)
+				crit(108649, {["_quests"] = { 46334 }}),	-- To Fel and Back (Demon Hunter)
+				crit(108650, {["_quests"] = { 46319 }}),	-- You Can't Take the Sky from Me (Druid)
 			},
 		}),
 		ach(42624),	-- Broken Isles World Quests I

@@ -2501,8 +2501,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.2, 37.0, WINTERSPRING },
 					["timeline"] = { "added 1.15.3" },
 					["groups"] = {
-						i(227286, {	-- Warmed Rumsey Rum with Cream
-						}),
+						i(227286),	-- Warmed Rumsey Rum with Cream
 					},
 				}),
 				-- #endif

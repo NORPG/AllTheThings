@@ -454,7 +454,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							109434,	-- Silver Hand Knight
 						},
 						["maps"] = { AZSUNA },
-						["groups"] = {},	-- First order campaign
+						["groups"] = { i(139388) },	-- Codex of Command (QI!)
 					}),
 					q(42852, {	-- Champion: Justicar Julia Celeste
 						["sourceQuests"] = { 42890 },	-- The Codex of Command
@@ -497,11 +497,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
 						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
+						["groups"] = { i(139445) },	-- Fel Lexicon (QI!)
 					}),
 					q(43488, {	-- Blood of Our Enemy
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
 						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
+						["groups"] = { i(139465) },	-- Flask of Demon Blood (QI!)
 					}),
 					q(43535, {	-- Translation: Danger!
 						["sourceQuests"] = {
