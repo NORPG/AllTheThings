@@ -6130,7 +6130,8 @@ crit(1413,{achID=851,awp=30002,id=1})}),
 exp(978,{
 crit(1427,{achID=851,awp=30002,id=1})})}),
 h(-31,{
-faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end})}),
+faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end,g={
+crit(8821,{achID=2336,awp=30002,id=1,u=13})}})}),
 h(-32,{
 fp(39,{coords={{51,29.2,1446}},crs={7823},r=2}),
 fp(40,{coords={{51.6,26.6,1446}},crs={7824},r=1})}),
@@ -6661,7 +6662,8 @@ crit(928,{achID=750,awp=30002,id=1})}),
 exp(1699,{
 crit(926,{achID=750,awp=30002,id=1})})}),
 h(-31,{
-faction(470,{icon=133784,maps={1446},OnTooltip=_.OnTooltipDB.ForRatchet})}),
+faction(470,{icon=133784,maps={1446},OnTooltip=_.OnTooltipDB.ForRatchet,g={
+crit(8822,{achID=2336,awp=30002,id=1,u=13})}})}),
 h(-32,{
 fp(77,{coords={{44.4,59,1413}},crs={10378},r=1,rwp=40003}),
 fp(25,{coords={{51.4,30.2,1413}},crs={3615},r=1}),
@@ -7658,7 +7660,8 @@ crit(1474,{achID=857,awp=30002,id=1})}),
 exp(2244,{
 crit(1483,{achID=857,awp=30002,id=1})})}),
 h(-31,{
-faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook}),
+faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook,g={
+crit(8820,{achID=2336,awp=30002,id=1,u=13})}}),
 faction(589,{icon=132252,OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerKill=250;if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500);else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000);if reputation>=9000 then	repPerKill=350;addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000);end	end	end	end,r=2})}),
 h(-32,{
 fp(52,{coords={{62.2,36.6,1452}},crs={11138},r=2}),
@@ -9963,7 +9966,7 @@ exp(284,{
 crit(961,{achID=760,id=1,rwp=40003})})}),
 h(-31,{
 faction(349,{icon=132292,OnTooltip=_.OnTooltipDB.Ravenholdt,g={
-crit(8824,{achID=2336,awp=30002,id=4,u=13})}}),
+crit(8824,{achID=2336,awp=30002,id=1,u=13})}}),
 faction(70,{description="Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",maxReputation={70,0},minReputation={70,-1}})}),
 h(-44,{
 prof(356,{
@@ -14660,8 +14663,10 @@ crit(1222,{achID=781,awp=30002,id=1})}),
 exp(122,{
 crit(1219,{achID=781,awp=30002,id=1})})}),
 h(-31,{
-faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	end	end}),
-faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end})}),
+faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	end	end,g={
+crit(8818,{achID=2336,awp=30002,id=1,u=13})}}),
+faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end,g={
+crit(8819,{achID=2336,awp=30002,id=1,u=13})}})}),
 h(-32,{
 fp(18,{coords={{26.8,77,1434}},crs={2858},r=1}),
 fp(19,{coords={{27.4,77.6,1434}},crs={2859},r=2}),
@@ -18699,6 +18704,7 @@ r(30312,{awp=20005,learnedAt=320,requireSkill=202,u=17}),
 r(41307,{awp=20100,learnedAt=375,requireSkill=202,u=18})}})}}),
 prof(182,{awp=20001,coords={{52.2,36.2,1944},{53.6,65.8,1944}},crs={18748,18776},u=17,g={
 r(28695,{awp=20005,learnedAt=275,rank=5,requireSkill=182,rwp=80001,u=17})}}),
+prof(773,{awp=20001,coords={{52.2,36,1944},{54,65.6,1944}},crs={30721,30722},u=17}),
 prof(755,{awp=20001,coords={{54.6,63.6,1944},{56.8,37.6,1944}},crs={18751,18774},u=17,g={
 r(28897,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=755,rwp=80001,u=17}),
 h(-88,{awp=20005,u=17,g={
@@ -22978,6 +22984,8 @@ i(43650,{awp=30002,b=1,q=1,rwp=40003,u=30})}}),
 prof(182,{awp=30002,u=30,g={
 n(28704,{awp=30002,coords={{43.8,34.8,125}},u=30,g={
 r(50300,{awp=30003,learnedAt=350,rank=6,requireSkill=182,rwp=80001,u=30})}})}}),
+prof(773,{awp=30002,u=30,g={
+n(28702,{awp=30002,coords={{42.6,37.8,125}},u=30})}}),
 prof(755,{awp=30002,u=30,g={
 n(28721,{awp=30002,coords={{40.4,34.6,125}},u=30,g={
 r(56049,{awp=30003,b=1,cost={{"c",61,2}},itemID=42298,learnedAt=370,q=3,requireSkill=755,u=30}),

@@ -35996,6 +35996,7 @@ r(30312,{awp=20005,learnedAt=320,requireSkill=202,u=17}),
 r(41307,{awp=20100,learnedAt=375,requireSkill=202,u=18})}})}}),
 prof(182,{awp=20001,coords={{52.2,36.2,100},{53.6,65.8,100}},crs={18748,18776},u=17,g={
 r(28695,{awp=20005,learnedAt=275,rank=5,requireSkill=182,rwp=80001,u=17})}}),
+prof(773,{awp=20001,coords={{52.2,36,100},{54,65.6,100}},crs={30721,30722},u=17}),
 prof(755,{awp=20001,coords={{54.6,63.6,100},{56.8,37.6,100}},crs={18751,18774},u=17,g={
 r(28897,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=755,rwp=80001,u=17}),
 h(-88,{awp=20005,u=17,g={
@@ -40373,6 +40374,8 @@ i(43650,{awp=30002,rwp=40003,u=2})}}),
 prof(182,{awp=30002,u=30,g={
 n(28704,{awp=30002,coords={{43.8,34.8,125}},u=30,g={
 r(50300,{awp=30003,learnedAt=350,rank=6,requireSkill=182,rwp=80001,u=30})}})}}),
+prof(773,{awp=30002,u=30,g={
+n(28702,{awp=30002,coords={{42.6,37.8,125}},u=30})}}),
 prof(755,{awp=30002,u=30,g={
 n(28721,{awp=30002,coords={{40.4,34.6,125}},u=30,g={
 r(56049,{awp=30003,b=1,cost={{"c",61,2}},itemID=42298,learnedAt=370,q=3,requireSkill=755,u=30}),
@@ -53240,6 +53243,7 @@ prof(182,{awp=50004,u=50,g={
 n(66980,{awp=50004,coords={{27.8,15.6,371}},r=1,u=50,g={
 r(110413,{awp=50004,learnedAt=0,rank=8,requireSkill=182,rwp=80001,u=51})}})}}),
 prof(773,{awp=50004,u=50,g={
+n(56065,{awp=50004,coords={{54.8,45,371}},u=50}),
 q(31539,{awp=50004,coords={{54.6,44.2,371}},isWeekly=1,qgs={56065},requireSkill=773,u=50,g={
 qo(1,{awp=50004,providers={{"i",87811},{"i",87812}},u=50}),
 r(127378,{awp=50004,learnedAt=600,requireSkill=773,u=50}),

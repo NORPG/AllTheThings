@@ -21,9 +21,4 @@ r(461665,{itemID=227908,q=2,requireSkill=10658}),
 r(461690,{itemID=228276,q=4,requireSkill=10658})}),
 prof(165,{
 r(461706,{b=1,itemID=228301,q=3,requireSkill=165}),
-r(461754,{b=1,itemID=228319,q=3,requireSkill=165}),
-r(1213513,{b=1,itemID=234235,q=3,requireSkill=165}),
-r(1213519,{b=1,itemID=234236,q=3,requireSkill=165}),
-r(1213521,{b=1,itemID=234237,q=3,requireSkill=165}),
-r(1213523,{b=1,itemID=234238,q=3,requireSkill=165}),
-r(1213525,{b=1,itemID=234239,q=3,requireSkill=165})})})})};
+r(461754,{b=1,itemID=228319,q=3,requireSkill=165})})})})};

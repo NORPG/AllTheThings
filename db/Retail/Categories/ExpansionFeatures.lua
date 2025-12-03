@@ -13166,6 +13166,7 @@ q(42887,{c=a[971],coords={{45.9,51.6,630}},lvl=10,qgs={109356},sourceQuests={428
 q(43462,{c=a[971],coords={a[1299]},lvl=10,qgs=a[295],sourceQuests=a[1892]}),
 q(42888,{c=a[971],coords={a[1299]},lvl=10,qgs=a[295],sourceQuests=a[1892]}),
 q(42890,{c=a[971],lvl=10,maps=a[2985],qgs=a[295],sourceQuests={42888,43462},g={
+i(139388,{c=a[971]}),
 i(140929,{b=1,spellID=225186}),
 i(140517,{b=1,f=55})}}),
 q(42852,{c=a[971],coords={{50.2,72.8,24}},lvl=10,qgs={99995},sourceQuests=a[1893],g={
@@ -13175,8 +13176,10 @@ follower(479,{c=a[971]})}}),
 q(43494,{c=a[971],coords={a[2327]},lvl=10,qgs=a[3494],sourceQuests=a[1893]}),
 q(43486,{c=a[971],coords={a[2141]},lvl=10,qgs=a[3495],sourceQuests={42851,42852}}),
 q(49812,{c=a[971],coords={a[2141]},description="Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",isBreadcrumb=1,lvl=10,qgs=a[3495],sourceQuests=a[1937]}),
-q(43487,{c=a[971],coords={a[1965]},lvl=10,qgs=a[312],sourceQuests=a[1937]}),
-q(43488,{c=a[971],coords={a[1965]},lvl=10,qgs=a[312],sourceQuests=a[1937]}),
+q(43487,{c=a[971],coords={a[1965]},lvl=10,qgs=a[312],sourceQuests=a[1937],g={
+i(139445,{c=a[971]})}}),
+q(43488,{c=a[971],coords={a[1965]},lvl=10,qgs=a[312],sourceQuests=a[1937],g={
+i(139465,{c=a[971]})}}),
 q(43535,{c=a[971],coords={a[1965]},lvl=10,qgs=a[312],sourceQuests={43487,43488}}),
 q(43493,{c=a[971],coords={a[2327]},lvl=45,qgs=a[3494],sourceQuests={43535}}),
 q(43489,{c=a[971],coords={a[2327]},lvl=45,qgs=a[3494],sourceQuests={43493}}),
