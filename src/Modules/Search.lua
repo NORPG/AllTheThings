@@ -512,17 +512,8 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	return ClonedHierarchyGroups;
 end
 
--- Allows a user to use /att search|? [link]
--- to enable Debug Printing of Event messages
-app.ChatCommands.Add({"search","?"}, function(args)
-	local search = args[2]
-	if not search then
-		local guid = UnitGUID("target");
-		if guid then
-			search = "n:" .. select(6, ("-"):split(guid));
-		end
-	end
-
+-- Performs the internal logic of searching ATT for a given command/link and then navigating ATT's UI to show the results
+app.SearchAndOpen = function(search)
 	local results = SearchForLink(search)
 	if not results or #results == 0 then
 		results = SourceSearcher.LinkSources(search)
@@ -569,6 +560,20 @@ app.ChatCommands.Add({"search","?"}, function(args)
 	for window,_ in pairs(windows) do
 		window:ScrollTo(firstResult.key, firstResult[firstResult.key])
 	end
+end
+
+-- Allows a user to use /att search|? [link]
+-- to enable Debug Printing of Event messages
+app.ChatCommands.Add({"search","?"}, function(args)
+	local search = args[2]
+	if not search then
+		local guid = UnitGUID("target");
+		if guid then
+			search = "n:" .. select(6, ("-"):split(guid));
+		end
+	end
+
+	app.SearchAndOpen(search)
 
 	return true
 end, {
