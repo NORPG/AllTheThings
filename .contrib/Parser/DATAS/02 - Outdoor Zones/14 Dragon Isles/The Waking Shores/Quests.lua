@@ -744,9 +744,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66528 },	-- King Without a Crown
 					["provider"] = { "n", 193954 },	-- Dervishian
 					["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
-					["groups"] = {
-						i(192465),	-- Wulferd's Award-Winning Camera
-					},
+					["groups"] = { i(192465) },	-- Wulferd's Award-Winning Camera
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16401.04, {	-- Ruby Lifecalling
@@ -770,9 +768,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70351 },	-- Garden Party
 					["provider"] = { "n", 190866 },	-- Akora
 					["coord"] = { 60.2, 66.4, THE_WAKING_SHORES },
-					["groups"] = {
-						i(193826),	-- Trusty Dragonkin Rake
-					},
+					["groups"] = { i(193826) },	-- Trusty Dragonkin Rake
 				}),
 				q(66828, {	-- Huddle at the Hollow
 					["sourceQuests"] = { 66827 },	-- Flowers of our Labor

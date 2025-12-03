@@ -1257,16 +1257,14 @@ root(ROOTS.Zones, {
 				}),
 			},
 		}))),
-		header(HEADERS.Achievement, 61094, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 }, }, {	-- Old World Family Battler
+		header(HEADERS.Achievement, 61094, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 }, }, {	-- Old World Family Battler
 			petbattle(ach(61094, {	-- Old World Family Battler
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
 					61051,	-- Family Battler of Kalimdor
 					61040,	-- Family Battler of Eastern Kingdoms
 				}},
-				["groups"] = {
-					i(251491),	-- Magical Pet Clicker (TOY!)
-				},
+				["groups"] = { i(251491) },	-- Magical Pet Clicker (TOY!)
 			})),
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2556, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- Pest Control

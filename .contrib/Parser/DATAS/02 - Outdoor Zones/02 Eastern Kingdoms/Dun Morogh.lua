@@ -4733,6 +4733,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(256330, {	-- Kharanos Stone Bed (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 6400000,	-- 640g
+						}),
 						i(2894),	-- Rhapsody Malt
 						i(2686),	-- Thunder Ale
 					},

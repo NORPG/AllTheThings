@@ -161,6 +161,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["questID"] = 38943,
 				["coord"] = { 59.9, 72.3, VALSHARAH },
 			}),
+			o(269061, {	-- Small Treasure Chest
+				["coord"] = { 35.7, 65.8, VALSHARAH },
+			}),
 			o(242647, {	-- Treasure Chest
 				["questID"] = 39074,
 				["coord"] = { 65.4, 86.3, VALSHARAH },

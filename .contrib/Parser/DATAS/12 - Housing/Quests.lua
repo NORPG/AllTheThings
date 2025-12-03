@@ -157,6 +157,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(246243) },	-- Stormwind Beam Platform (DECOR!)
 		}),
 		q(92977, {	-- Decor Treasure Hunt
+			["coord"] = { 64.56, 85.60, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(245548) },	-- Iron-Reinforced Cupboard (DECOR!)
 		}),
 		q(92978, {	-- Decor Treasure Hunt

@@ -196,6 +196,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					199763,	-- Expedition Researcher's Hood
 					199765,	-- Field Scout's Helmet
 				}},
+				["groups"] = {
+					i(250912, {	-- Draconic Crafter's Forge (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = {{ "c", DRAGON_SUPPLIES, 600 }},
+					}),
+				},
 			}),
 			n(195768, {	-- Sorotis
 				["coord"] = { 26.1, 40.1, VALDRAKKEN },

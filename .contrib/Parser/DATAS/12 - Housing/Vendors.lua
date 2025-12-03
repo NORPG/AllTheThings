@@ -355,11 +355,12 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			}),
 		},
 	}),
+	n(255942, {	-- Jendry Clockson <Donut Vendor>
+		["groups"] = { i(260588) },	-- Jendry's Donut
+	}),
 	n(255519, {	-- Lestia Goldenstrike <Lumberjack>
 		["coord"] = { 51.9, 38.7, FOUNDERS_POINT },
-		["groups"] = {
-			i(253580),	-- Harvesting Hatchet
-		},
+		["groups"] = { i(253580) },	-- Harvesting Hatchet
 	}),
 	n(255221, {	-- Trevor Grenner <Decor Vendor>
 		["coord"] = { 53.5, 40.9, FOUNDERS_POINT },

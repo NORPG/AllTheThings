@@ -764,7 +764,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(91618, {	-- A Few Things First (Remix)
 						["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
 						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+						["coord"] = { 44.4, 28.8, LEGION_DALARAN },
 						["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
 						["cost"] = {{ "i", 147768, 1 }},	-- 1x Suramarian Sapphire
 					}),
@@ -818,7 +818,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+						["coord"] = { 44.5, 28.7, LEGION_DALARAN },
 						["groups"] = {
 							o(267765, {	-- Plated Barding
 								["coord"] = { 44.6, 28.4, LEGION_DALARAN },

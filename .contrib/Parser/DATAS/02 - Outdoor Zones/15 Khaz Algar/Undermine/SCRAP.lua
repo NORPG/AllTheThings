@@ -181,6 +181,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["description"] = "Requires the 'Scrappy S.C.R.A.P.per III' perk unlocked by reaching Renown 11 with The Cartels of Undermine.\n\nThen you have a chance to loot them from the progress-based reward containers that will appear for participating players when the 2-minute timer of their actual S.C.R.A.P. job ends.",
 						["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 11 },
 					}),
+					i(245315, {	-- Trashfire Barrel (DECOR!)
+						["description"] = "Can randomly drop while scraping.",
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				})),
 				n(VENDORS, {
 					n(234776, {	-- Angelo Rustbin <S.C.R.A.P. Exchange>

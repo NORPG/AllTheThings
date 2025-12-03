@@ -1519,11 +1519,11 @@ i(263489);	-- Naaru's Enfold
 -- PATCH 11.2.7 --
 ------------------
 i(242520);	-- Festival Hot Air Balloon
-i(251491);	-- Magical Pet Clicker
 
 ------------------
 -- PATCH 12.0.0 --
 ------------------
+i(251491);	-- Magical Pet Clicker
 i(256881);	-- Steward's Bauble
 i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(256893);	-- Wretched Dredger's Brand

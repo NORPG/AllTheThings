@@ -1108,6 +1108,14 @@ root(ROOTS.ExpansionFeatures,
 								}),
 							},
 						}),
+						n(88220, {	-- Peter <Waiter>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = { i(239162) },	-- Wooden Mug (DECOR!)
+						}),
+						n(87312, {	-- Vora Strongarm <Bartender>
+							["races"] = HORDE_ONLY,
+							["groups"] = { i(239162) },	-- Wooden Mug (DECOR!)
+						}),
 					}),
 				}),
 			}),

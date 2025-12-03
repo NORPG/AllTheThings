@@ -1097,6 +1097,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			q(56335, {	-- Wanna Charge? Gotta Pay!
 				["sourceQuest"] = 56320,	-- Your First Charge is Free
+				["qg"] = 154534,	-- Flux
 				["coord"] = { 61.4, 37.5, MECHAGON },
 				["repeatable"] = true,
 			}),
@@ -1109,9 +1110,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = {"o",329715},	-- Useful Bits and Pieces
 				["coord"] = { 43.0, 41.1, MECHAGON },
 				["isDaily"] = true,
-				["groups"] = {
-					i(169686),	-- Useful Bits and Pieces (QI!)
-				},
+				["groups"] = { i(169686) },	-- Useful Bits and Pieces (QI!)
 			}),
 			q(55995, {	-- We Can Fix It
 				["sourceQuest"] = 55729,	-- The Resistance Needs You!

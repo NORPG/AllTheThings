@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(83365),										-- A Frozen Path Through Time
 				q(83364, {["timeline"] = { ADDED_11_0_7 }}),	-- A Savage Path Through Time
 				q(88805, {["timeline"] = { ADDED_11_1_7 }}),	-- A Scarred Path Through Time
+				q(92649, {["timeline"] = { ADDED_11_2_7 }}),	-- A Shadowed Path Through Time
 				q(83359, {["timeline"] = { ADDED_11_0_7 }}),	-- A Shattered Path Through Time
 				q(83362, {["timeline"] = { ADDED_11_0_7 }}),	-- A Shrouded Path Through Time
 				q(86731, {["timeline"] = { ADDED_11_0_7 }}),	-- An Original Path Through Time

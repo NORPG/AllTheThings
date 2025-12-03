@@ -5223,8 +5223,6 @@ root(ROOTS.Unsorted, {
 				i(257406),	-- Smoke Lamp
 				i(257689),	-- Small Gilnean Windmill
 				i(257725),	-- Camp Narache Rug
-				i(258190),	-- Outland Mag'har Banner
-				i(258191),	-- Arakkoa Decoy Scarecrow
 				i(258192),	-- Talon King's Totem
 				i(258193),	-- Draenei Holo-Projector Pedestal
 				i(258194),	-- Tempest Keep Cryo-Pod
@@ -5271,7 +5269,6 @@ root(ROOTS.Unsorted, {
 				i(258561),	-- Kyrian Aspirant's Rolled Cushion
 				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
 				i(238975),	-- Reliquary Telescope
-				i(239162),	-- Wooden Mug
 				i(239177),	-- Open Tome of Twilight Nihilism
 				i(239179),	-- Tome of Twilight Nihilism
 				i(239213),	-- Well-Lit Incontinental Loveseat
@@ -5302,7 +5299,6 @@ root(ROOTS.Unsorted, {
 				i(245309),	-- Rusty Patchwork Tub
 				i(245311),	-- Undermine Wall Shelf
 				i(245313),	-- Spring-Powered Undermine Chair
-				i(245315),	-- Trashfire Barrel
 				i(245320),	-- Very Reliable Undermine Lamppost
 				i(245321),	-- Rust-Plated Storage Barrel
 				i(245413),	-- Zandalari Sconce
@@ -5354,27 +5350,19 @@ root(ROOTS.Unsorted, {
 				i(246110),	-- Filigree Moon Sconce
 				i(246424),	-- Square Stormpike Table
 				i(246481),	-- Retired Industrial Gnomegrabber
-				i(246482),	-- Mechanical Gnomish Lamppost
-				i(246485),	-- Mechagnome Sustenance Distribution Station
 				i(246487),	-- Gnomish Tesla Coil
-				i(246595),	-- Gnomish Fencepost
-				i(246596),	-- Gnomish Fence
-				i(246597),	-- Perpetual Motion Crate
 				i(246599),	-- Self-Sealing Stembarrel
 				i(246600),	-- Small Mechanical Crate
 				i(246602),	-- Small H.O.M.E. Cog
 				i(246605),	-- Mecha-Storage Mecha-Chest
-				i(246606),	-- Mechagon Armory Rack
 				i(246701),	-- Gnomish Sprocket Table
 				i(246703),	-- Double-Sprocket Table
-				i(246707),	-- Decorative Cinder Honeypot
 				i(246708),	-- Dornic Sliced Mineloaf
 				i(246709),	-- Earthen Hospitality Cheese-Like Brick
 				i(246845),	-- Tome of Shadowforge Cunning
 				i(246847),	-- Tome of Draenei Faith
 				i(246848),	-- Scribe's Working Notes
 				i(246860),	-- Tome of Forsaken Resilience
-				i(246863),	-- Open Tome of the Dragon's Dedication
 				i(246864),	-- Tome of the Lost Dragon
 				i(247662),	-- Pandaren Scholar's Lectern
 				i(247663),	-- Pandaren Scholar's Bookcase
@@ -5415,7 +5403,6 @@ root(ROOTS.Unsorted, {
 				i(251654),	-- Large Karabor Fountain
 				i(252390),	-- Small Hull'n'Home Table
 				i(252391),	-- Large Hull'n'Home Table
-				i(252392),	-- Admiral's Chandelier
 				i(252393),	-- Hull'n'Home Dresser
 				i(252404),	-- Hull'n'Home Chair
 				i(253021),	-- Freywold Bench
@@ -5429,11 +5416,8 @@ root(ROOTS.Unsorted, {
 				i(255840),	-- Champion Brawler's Gloves
 				i(256327),	-- Open Rust-Plated Storage Crate
 				i(256328),	-- Leftover Undermine Takeout
-				i(256330),	-- Kharanos Stone Bed
-				i(256331),	-- Shadowforge Lamppost
 				i(256903),	-- Gilnean Banded Crate
 				i(256905),	-- Small Gilnean Table
-				i(257349),	-- Naaru Crystal Icon
 				i(257352),	-- Large Brazier of Elune
 				i(257394),	-- Zandalari War Torch
 				i(257405),	-- Baradin Bay Fishing Rack
@@ -5499,7 +5483,6 @@ root(ROOTS.Unsorted, {
 				i(260522),	-- Duck Egg
 				i(260532),	-- Tuskarr Dinner Bell
 				i(260533),	-- Oddsight Focus
-				i(260588),	-- Jendry's Donut
 				i(260589),	-- Flame-Blessed Beach Towel
 				-- Misc What happened??!
 				i(262562),	-- Bolt of Pressed Linen
@@ -5683,17 +5666,14 @@ root(ROOTS.Unsorted, {
 			i(258654),	-- Wandering Isle Wraps
 			i(258655),	-- Wandering Isle Travel Belt
 			i(258656),	-- Wandering Isle Shoulderguards
-			i(252405),	-- Admiral's Low-Hanging Chandelier
 			i(245400),	-- Ceiling Cobweb
 			i(245401),	-- Tented Cobweb
 			i(245402),	-- Small Dangling Cobweb
 			i(245403),	-- Large Dangling Cobweb
 			i(245404),	-- Pillar Cobweb
 			i(247751),	-- Deactivated K'areshi Warp Cannon
-			i(248117),	-- Studious Dracthyr's Tomes
 			i(249548),	-- Augmenter's Opal Banner
 			i(249824),	-- Devastator's Brazier
-			i(250912),	-- Draconic Crafter's Forge
 			i(257393),	-- Suramar Stepping Stone
 			i(258306),	-- K'areshi Warp Platform
 			i(258320),	-- K'areshi Protectorate Portal

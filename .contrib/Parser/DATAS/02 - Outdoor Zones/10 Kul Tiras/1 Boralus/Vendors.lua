@@ -403,9 +403,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					2509,	-- Ornate Blunderbuss
 					2510,	-- Solid Blunderbuss
 				}},
-				["groups"] = {
-					i(3025),	-- BKP 42 "Ultra"
-				},
+				["groups"] = { i(3025) },	-- BKP 42 "Ultra"
 			}),
 			n(252345, {	-- Pearl Barlow <Decor Specialist>
 				["coord"] = { 68.0, 41.2, BORALUS },

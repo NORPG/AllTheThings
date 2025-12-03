@@ -2359,6 +2359,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
 							["timeline"] = { ADDED_7_1_5 },
 						}),
+						i(256331, { ["timeline"] = { ADDED_11_2_7 } }),	-- Shadowforge Lamppost (DECOR!)
 					},
 				}),
 				-- #if BEFORE 4.0.3

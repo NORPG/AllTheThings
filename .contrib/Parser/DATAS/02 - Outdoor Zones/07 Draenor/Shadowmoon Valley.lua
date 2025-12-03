@@ -1703,6 +1703,16 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(VENDORS, {
+					n(81133, {	-- Artificer Kallaes
+						["coord"] = { 46.2, 39.2, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(257349, {	-- Naaru Crystal Icon (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							}),
+						},
+					}),
 					n(84074, {	-- Merchant Derrook
 						["coord"] = { 57.4, 30.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,

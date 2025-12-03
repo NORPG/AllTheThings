@@ -1439,7 +1439,7 @@ root(ROOTS.Zones, {
 							i(82548),	-- Summit Guardian Gauntlets
 							i(82549),	-- Wallwatcher Gauntlets
 							i(247739, {	-- Kun-Lai Lacquered Rickshaw (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
+								["timeline"] = { ADDED_12_0_0 },
 							}),
 						},
 					}),
