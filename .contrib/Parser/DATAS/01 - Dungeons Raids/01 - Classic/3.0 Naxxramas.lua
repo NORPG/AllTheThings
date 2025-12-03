@@ -68,6 +68,7 @@ applyclassicphase(PHASE_SIX,
 				["lvl"] = 60,
 				["groups"] = {
 			-- #endif
+					-- #if NOT SEASON_OF_DISCOVERY
 					header(HEADERS.Item, 22631, {	-- Atiesh, Greatstaff of the Guardian (Priest)
 						-- #if BEFORE WRATH
 						["lore"] = "Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",
@@ -159,6 +160,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
+					-- #endif
 					-- #if ANYCLASSIC
 					n(ACHIEVEMENTS, {
 						applyclassicphase(SOM_PHASE_ONE, ach(15637, {	-- The Immortal (Season of Mastery)
@@ -2241,6 +2243,86 @@ applyclassicphase(PHASE_SIX,
 					-- #if SEASON_OF_DISCOVERY
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_6 }, }, {
+						header(HEADERS.Item, 22631, {	-- Atiesh, Greatstaff of the Guardian (Priest)
+							["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+							["maps"] = { CAVERNS_OF_TIME },
+							["isRaid"] = true,
+							["groups"] = {
+								q(9251, {	-- Atiesh, the Befouled Greatstaff
+									["sourceQuest"] = 9250,	-- Frame of Atiesh
+									["qg"] = 15192,	-- Anachronos
+									["maps"] = { TEMPLE_OF_AHNQIRAJ },
+									["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+									["lvl"] = 60,
+									["groups"] = {
+										objective(1, {	-- 0/1 Staff Head of Atiesh
+											["provider"] = { "i", 22733 },	-- Staff Head of Atiesh
+										}),
+										objective(2, {	-- 0/1 Base of Atiesh
+											["provider"] = { "i", 22734 },	-- Base of Atiesh
+										}),
+									},
+								}),
+								q(87441, {	-- Atiesh, Greatstaff of the Guardian [Priest]
+									["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+									["qg"] = 15192,	-- Anachronos
+									["maps"] = { STRATHOLME },
+									["cost"] = {
+										{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
+									},
+									["classes"] = { PRIEST },
+									["groups"] = {
+										i(236399),	-- Atiesh, Greatstaff of the Guardian (Priest)
+									},
+								}),
+								q(87442, {	-- Atiesh, Greatstaff of the Guardian [Mage]
+									["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+									["qg"] = 15192,	-- Anachronos
+									["maps"] = { STRATHOLME },
+									["cost"] = {
+										{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
+									},
+									["classes"] = { MAGE },
+									["groups"] = {
+										i(236400),	-- Atiesh, Greatstaff of the Guardian (Mage)
+									},
+								}),
+								q(87444, {	-- Atiesh, Greatstaff of the Guardian [Warlock]
+									["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+									["qg"] = 15192,	-- Anachronos
+									["maps"] = { STRATHOLME },
+									["cost"] = {
+										{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
+									},
+									["classes"] = { WARLOCK },
+									["groups"] = {
+										i(236398),	-- Atiesh, Greatstaff of the Guardian (Warlock)
+									},
+								}),
+								q(87443, {	-- Atiesh, Greatstaff of the Guardian [Druid]
+									["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+									["qg"] = 15192,	-- Anachronos
+									["maps"] = { STRATHOLME },
+									["cost"] = {
+										{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
+									},
+									["classes"] = { DRUID },
+									["groups"] = {
+										i(236401),	-- Atiesh, Greatstaff of the Guardian (Druid)
+									},
+								}),
+								q(9250, {	-- Frame of Atiesh
+									["description"] = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
+									["provider"] = { "i", 22727 },	-- Frame of Atiesh
+									["cost"] = {
+										{ "i", 22726, 40 },	-- Splinter of Atiesh
+									},
+									["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+									["lvl"] = 60,
+								}),
+							},
+						}),
+						
 						n(QUESTS, {
 							cl(WARRIOR, {
 								q(9037, {	-- Dreadnaught Helmet

@@ -4348,24 +4348,6 @@ s(249342,235013,{awp=11505,c={8},f=25,lvl=60,q=4,u=1610}),
 s(249343,235014,{awp=11505,f=23,lvl=60,q=4,u=1610}),
 s(266765,235282,{awp=11505,f=27,lvl=60,q=4,u=1610})}})}})}})}}),
 inst(754,{awp=11100,description="[TBC] \nNAXX is the raid that opened in SoD Phase 7. \nThe Loot and Quest information is still unclear. It will be added after the wowhead guide is updated.",isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},rwp=30002,savedInstanceID=533,sourceQuests={9121},u=1611,["zone-text-areaID"]=3456,g={
-ah(22631,{awp=11100,c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},rwp=30002,type="i",u=1611,g={
-ach(425,{awp=11100,c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}},rwp=30002,u=1611}),
-q(9251,{awp=11100,c={5,8,9,11},lvl=60,maps={320},qgs={15192},rwp=30002,sourceQuests={9250},u=1611,g={
-qo(1,{awp=11100,providers={{"i",22733}},rwp=30002,u=1611}),
-qo(2,{awp=11100,providers={{"i",22734}},rwp=30002,u=1611})}}),
-q(9257,{awp=11100,c={5},cost={{"i",22737,1}},maps={317},qgs={15192},rwp=30002,sourceQuests={9251},u=1611,g={
-s(165013,22631,{awp=11100,b=1,f=28,lvl=60,q=5,rwp=30002,u=1611}),
-crit(749,{achID=425,awp=11100,id=1,rwp=30002,u=1611})}}),
-q(9270,{awp=11100,c={8},cost={{"i",22737,1}},maps={317},qgs={15192},rwp=30002,sourceQuests={9251},u=1611,g={
-s(165010,22589,{awp=11100,b=1,f=28,lvl=60,q=5,rwp=30002,u=1611}),
-crit(748,{achID=425,awp=11100,id=1,rwp=30002,u=1611})}}),
-q(9271,{awp=11100,c={9},cost={{"i",22737,1}},maps={317},qgs={15192},rwp=30002,sourceQuests={9251},u=1611,g={
-s(165012,22630,{awp=11100,b=1,f=28,lvl=60,q=5,rwp=30002,u=1611}),
-crit(750,{achID=425,awp=11100,id=1,rwp=30002,u=1611})}}),
-q(9269,{awp=11100,c={11},cost={{"i",22737,1}},maps={317},qgs={15192},rwp=30002,sourceQuests={9251},u=1611,g={
-s(165014,22632,{awp=11100,b=1,f=28,lvl=60,q=5,rwp=30002,u=1611}),
-crit(747,{achID=425,awp=11100,id=1,rwp=30002,u=1611})}}),
-q(9250,{awp=11100,c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,providers={{"i",22727}},rwp=30002,u=1611})}}),
 h(-12,{awp=11100,rwp=30002,u=1611,g={
 ach(15637,{awp=11403,rwp=11500,u=2}),
 s(169660,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
@@ -4761,6 +4743,19 @@ i(23059,{b=1,c={1},f=52,lvl=60,q=4,rwp=11506,u=2}),
 i(23064,{b=1,c={11},f=52,lvl=60,q=4,rwp=11506,u=2}),
 i(23065,{b=1,c={7},f=52,lvl=60,q=4,rwp=11506,u=2})}})}})}}),
 d(201,{awp=11506,u=1611,g={
+ah(22631,{awp=11506,c={5,8,9,11},isRaid=1,maps={75},type="i",u=1611,g={
+q(9251,{awp=11506,c={5,8,9,11},lvl=60,maps={320},qgs={15192},sourceQuests={9250},u=1611,g={
+qo(1,{awp=11506,providers={{"i",22733}},u=1611}),
+qo(2,{awp=11506,providers={{"i",22734}},u=1611})}}),
+q(87441,{awp=11506,c={5},cost={{"i",22737,1}},maps={317},qgs={15192},sourceQuests={9251},u=1611,g={
+s(284781,236399,{awp=11506,c={5},f=28,lvl=60,q=5,u=1611})}}),
+q(87442,{awp=11506,c={8},cost={{"i",22737,1}},maps={317},qgs={15192},sourceQuests={9251},u=1611,g={
+s(284782,236400,{awp=11506,c={8},f=28,lvl=60,q=5,u=1611})}}),
+q(87444,{awp=11506,c={9},cost={{"i",22737,1}},maps={317},qgs={15192},sourceQuests={9251},u=1611,g={
+s(284780,236398,{awp=11506,c={9},f=28,lvl=60,q=5,u=1611})}}),
+q(87443,{awp=11506,c={11},cost={{"i",22737,1}},maps={317},qgs={15192},sourceQuests={9251},u=1611,g={
+s(284783,236401,{awp=11506,c={11},f=28,lvl=60,q=5,u=1611})}}),
+q(9250,{awp=11506,c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,providers={{"i",22727}},u=1611})}}),
 h(-45,{awp=11506,u=1611,g={
 cl(1,{awp=11506,u=1611,g={
 q(9037,{awp=11506,coords={{81.8,58.1,1423}},cost={{"i",20725,1},{"i",12360,5},{"i",22375,15},{"i",22353,1}},lvl=60,qgs={16112},repeatable=1,sourceQuests={9033},u=1611,g={
@@ -6999,7 +6994,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{awp=10200,maps={235,236,237,238,239},u=1608})}}),
 h(-31,{awp=10200,u=1608,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1608,g={
-crit(8825,{achID=2336,id=5,u=1609})}}),
+crit(8825,{achID=2336,id=1,u=1609})}}),
 faction(169,{awp=10200,icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1608})}}),
 h(-45,{awp=10200,u=1608,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1608}),
