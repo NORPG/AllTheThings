@@ -1784,6 +1784,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
+					["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
+					["coord"] = { 39.8, 9.2, DARNASSUS },
+					["cost"] = {{ "i", 208607, 1 }},	-- Deer Musk
+					["maps"] = { TELDRASSIL },
+					["crs"] = { 883 },	-- Deer
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(206032, {	-- Rune of Carve
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425758),	-- Engrave Gloves - Carve
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(52643, {	-- Rissa Halding <Mining Supplies>
 					["coord"] = { 50.25, 32.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
