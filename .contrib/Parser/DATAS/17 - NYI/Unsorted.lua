@@ -5353,25 +5353,16 @@ root(ROOTS.Unsorted, {
 				i(246100),	-- Small Bel'ameth Tent
 				i(246110),	-- Filigree Moon Sconce
 				i(246424),	-- Square Stormpike Table
-				i(246480),	-- Automated Gnomeregan Guardian
 				i(246481),	-- Retired Industrial Gnomegrabber
 				i(246482),	-- Mechanical Gnomish Lamppost
-				i(246484),	-- Mechagon Hanging Floodlight
 				i(246485),	-- Mechagnome Sustenance Distribution Station
 				i(246487),	-- Gnomish Tesla Coil
-				i(246497),	-- Small Emergency Warning Lamp
-				i(246498),	-- Emergency Warning Lamp
-				i(246499),	-- Mechagon Eyelight Lamp
-				i(246501),	-- Gnomish Safety Flamethrower
-				i(246503),	-- Large H.O.M.E. Cog
 				i(246595),	-- Gnomish Fencepost
 				i(246596),	-- Gnomish Fence
 				i(246597),	-- Perpetual Motion Crate
 				i(246599),	-- Self-Sealing Stembarrel
 				i(246600),	-- Small Mechanical Crate
-				i(246601),	-- Bolt Chair
 				i(246602),	-- Small H.O.M.E. Cog
-				i(246603),	-- Gnomish Cog Stack
 				i(246605),	-- Mecha-Storage Mecha-Chest
 				i(246606),	-- Mechagon Armory Rack
 				i(246701),	-- Gnomish Sprocket Table
