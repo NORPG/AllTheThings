@@ -1,3 +1,8 @@
+
+----------------------------------------------
+---- THIS FILE DOES NOT NEED .ROOT HEADER ----
+----------------------------------------------
+
 -- #if SEASON_OF_DISCOVERY
 -- TODO: Mark these as unavailable in Phase 1
 -- spellID 3538 Blacksmithing (Rank 3)
