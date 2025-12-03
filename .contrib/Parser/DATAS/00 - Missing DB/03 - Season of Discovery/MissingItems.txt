@@ -429,75 +429,7 @@ i(226699),	-- Brass-fitted Flam-Tamp Flange
 i(226856),	-- Guided Buoyancy Accelerant
 
 i(227041),	-- Scourge Shadow Scalpel
-
-
-
-
 i(227285),	-- Structural Dynamics of Flow
-i(227286),	-- Warmed Rumsey Rum with Cream
-i(227337),	-- Feline Gloves and Belt Set
-i(227338),	-- Astral Gloves and Belt Set
-i(227339),	-- Guardian's Gloves and Belt Set
-i(227340),	-- Mender's Gloves and Belt Set
-i(227341),	-- Pursuer's Gloves and Belt Set
-i(227342),	-- Prowler's Gloves and Belt Set
-i(227343),	-- Merciful Gloves and Belt Set
-i(227344),	-- Radiant Gloves and Belt Set
-i(227345),	-- Divine Will Gloves and Belt Set
-i(227346),	-- Dawn Gloves and Belt Set
-i(227347),	-- Twilight Gloves and Belt Set
-i(227348),	-- Thrill's Gloves and Belt Set
-i(227349),	-- Battle's Gloves and Belt Set
-i(227350),	-- Relief's Gloves and Belt Set
-i(227351),	-- Eruption's Gloves and Belt Set
-i(227352),	-- Impact's Gloves and Belt Set
-i(227353),	-- Resolve's Gloves and Belt Set
-i(227354),	-- Corrupted Gloves and Belt Set
-i(227355),	-- Wicked Gloves and Belt Set
-i(227356),	-- Immoveable Gloves and Belt Set
-i(227357),	-- Unstoppable Gloves and Belt Set
-i(227359),	-- Feline Boots, Legs, and Shoulders Set
-i(227360),	-- Astral Boots, Legs, and Shoulders Set
-i(227361),	-- Guardian's Boots, Legs, and Shoulders Set
-i(227365),	-- Mender's Boots, Legs, and Shoulders Set
-i(227366),	-- Pursuer's Boots, Legs, and Shoulders Set
-i(227367),	-- Prowler's Boots, Legs, and Shoulders Set
-i(227368),	-- Merciful Boots, Legs, and Shoulders Set
-i(227369),	-- Radiant Boots, Legs, and Shoulders Set
-i(227370),	-- Divine Will Boots, Legs, and Shoulders Set
-i(227371),	-- Dawn Boots, Legs, and Shoulders Set
-i(227372),	-- Twilight Boots, Legs, and Shoulders Set
-i(227373),	-- Thrill's Boots, Legs, and Shoulders Set
-i(227374),	-- Battle's Boots, Legs, and Shoulders Set
-i(227375),	-- Relief's Boots, Legs, and Shoulders Set
-i(227376),	-- Eruption's Boots, Legs, and Shoulders Set
-i(227377),	-- Impact's Boots, Legs, and Shoulders Set
-i(227378),	-- Resolve's Boots, Legs, and Shoulders Set
-i(227379),	-- Corrupted Boots, Legs, and Shoulders Set
-i(227380),	-- Wicked Boots, Legs, and Shoulders Set
-i(227381),	-- Immoveable Boots, Legs, and Shoulders Set
-i(227382),	-- Unstoppable Boots, Legs, and Shoulders Set
-i(227383),	-- Feline Helm and Chestpiece Set
-i(227384),	-- Astral Helm and Chestpiece Set
-i(227385),	-- Guardian's Helm and Chestpiece Set
-i(227387),	-- Mender's Helm and Chestpiece Set
-i(227388),	-- Pursuer's Helm and Chestpiece Set
-i(227389),	-- Prowler's Helm and Chestpiece Set
-i(227390),	-- Merciful Helm and Chestpiece Set
-i(227391),	-- Radiant Helm and Chestpiece Set
-i(227392),	-- Divine Will Helm and Chestpiece Set
-i(227393),	-- Dawn Helm and Chestpiece Set
-i(227394),	-- Twilight Helm and Chestpiece Set
-i(227395),	-- Thrill's Helm and Chestpiece Set
-i(227396),	-- Battle's Helm and Chestpiece Set
-i(227397),	-- Relief's Helm and Chestpiece Set
-i(227398),	-- Eruption's Helm and Chestpiece Set
-i(227399),	-- Impact's Helm and Chestpiece Set
-i(227400),	-- Resolve's Helm and Chestpiece Set
-i(227401),	-- Corrupted Helm and Chestpiece Set
-i(227402),	-- Wicked Helm and Chestpiece Set
-i(227403),	-- Immoveable Helm and Chestpiece Set
-i(227404),	-- Unstoppable Helm and Chestpiece Set
 i(227444),	-- Idol of the Huntress
 i(227451),	-- Sending Sigil
 i(227456),	-- Rune of the Crimson Tempest \\ Rune of Crimson Tempest

@@ -2496,6 +2496,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(228216, {	-- Numi
+					["coord"] = { 61.2, 37.0, WINTERSPRING },
+					["timeline"] = { "added 1.15.3" },
+					["groups"] = {
+						i(227286, {	-- Warmed Rumsey Rum with Cream
+						}),
+					},
+				}),
+				-- #endif
 				n(11189, {	-- Qia <Trade Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 59.6, 49.2, WINTERSPRING },
