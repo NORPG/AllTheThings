@@ -187,7 +187,6 @@ root(ROOTS.Promotions, {
 			pet(2623, {	-- Dottie (PET!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },
-				_DEBUG=true,
 			}),
 			i(72575, {	-- White Riding Camel (MOUNT!)
 				-- #if AFTER 10.0.2
