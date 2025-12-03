@@ -570,6 +570,12 @@ root(ROOTS.Zones, {
 						}),
 					}),
 				}),
+				prof(JEWELCRAFTING, {
+					n(93527, {	-- Timethy Jones <Jewelcrafting Trainer>
+						["coord"] = { 40.1, 35.3, LEGION_DALARAN },
+						["groups"] = LEGION_JEWELCRAFTING,
+					}),
+				}),
 				prof(LEATHERWORKING, {
 					n(93523, {	-- Namha Moonwater <Leatherworking Trainer>
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
