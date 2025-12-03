@@ -32,6 +32,7 @@ end)
 
 -- Decor Lib [STUB -- WIP]
 do
+	local DecorSearcherCached
 	app.CreateDecor = app.ExtendClass("Item", CLASSNAME, KEY, {
 		CACHE = function() return CACHE end,
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
@@ -42,6 +43,13 @@ do
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end)
 	app.AddEventHandler("OnRefreshCollections", function()
+		if not DecorSearcherCached then
+			-- this seems to properly cache some Decor stuff which seems to not be available in the API, but it's a bit delayed such that the
+			-- initial refresh on login won't quite capture it and a further force refresh will be required,
+			-- but better than telling users to open Housing UI manually
+			C_HousingCatalog.CreateCatalogSearcher()
+			DecorSearcherCached = true
+		end
 		local state, source
 		local saved, none = {}, {}
 		for id,sources in pairs(app.GetRawFieldContainer(KEY)) do
