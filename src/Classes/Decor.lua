@@ -78,4 +78,22 @@ do
 	app.AddEventRegistration("HOUSE_DECOR_ADDED_TO_CHEST", function(decorUid, decorID)
 		app.SetThingCollected(KEY, decorID, true, true)
 	end)
+	app.AddEventRegistryCallback("HousingCatalogEntry.OnInteract", function(val1, entryFrame, button, val2)
+		-- app.PrintDebug(val1, entryFrame, button, val2)
+		-- Allowing Alt-LeftClick to Search for this Decor entry in ATT
+		if not IsAltKeyDown() or button ~= "LeftButton" then return end
+
+		if not entryFrame then return end
+
+		local entryInfo = entryFrame.entryInfo
+		if not entryInfo then return end
+
+		local entryID = entryInfo.entryID
+		if not entryID then return end
+
+		local decorID = entryID.recordID
+		if not decorID then return end
+
+		app.SearchAndOpen("decor:"..decorID)
+	end)
 end
