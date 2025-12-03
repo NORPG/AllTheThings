@@ -535,16 +535,16 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			i(245358),	-- Small Fruit Platter (DECOR!)
 			i(246103),	-- Small Wooden Nightstand (DECOR!)
 			i(246101),	-- Small Wooden Stool (DECOR!)
-			i(246035),	-- Stormwind Angled Platform (DECOR!)
-			i(246031),	-- Stormwind Beam Platform (DECOR!)
+			i(246035,{["timeline"]={CREATED_11_2_7}}),	-- Stormwind Angled Platform (DECOR!)
+			i(246031,{["timeline"]={CREATED_11_2_7}}),	-- Stormwind Beam Platform (DECOR!)
 			i(242255),	-- Stormwind Hall Rug (DECOR!)
 			i(236678),	-- Stormwind Interior Doorway (DECOR!)
 			i(236676),	-- Stormwind Interior Narrow Wall (DECOR!)
 			i(236675),	-- Stormwind Interior Pillar (DECOR!)
 			i(236677),	-- Stormwind Interior Wall (DECOR!)
-			i(246033),	-- Stormwind Large Platform (DECOR!)
-			i(246032),	-- Stormwind Round Platform (DECOR!)
-			i(246034),	-- Stormwind Small Platform (DECOR!)
+			i(246033,{["timeline"]={CREATED_11_2_7}}),	-- Stormwind Large Platform (DECOR!)
+			i(246032,{["timeline"]={CREATED_11_2_7}}),	-- Stormwind Round Platform (DECOR!)
+			i(246034,{["timeline"]={CREATED_11_2_7}}),	-- Stormwind Small Platform (DECOR!)
 			i(244531),	-- Sturdy Fireplace (DECOR!)
 			i(244530),	-- Sturdy Wall Rack (DECOR!)
 			i(253593),	-- Sturdy Wooden Bathtub (DECOR!)
@@ -641,7 +641,7 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 		},
 	}),
 	n(255301, {	-- Botanist Boh'an <Decor Vendor>
-		["coord"] = { 54.2, 58.0, RAZORWIND_SHORES },
+		["coord"] = { 53.6, 58.0, RAZORWIND_SHORES },
 		["groups"] = {
 			i(248631),	-- Azsharan Firespear Tree (DECOR!)
 			i(248630),	-- Barrens Hosta Bush (DECOR!)
@@ -687,7 +687,7 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			i(247502),	-- Elven Woodvine Trellis (DECOR!)
 			i(253495),	-- Grand Elven Bench (DECOR!)
 			i(257691),	-- Open Elegant Elven Barrel (DECOR!)
-			i(241625),	-- Open Elven Wood Crate (DECOR!)
+			i(241625,{["timeline"]={CREATED_11_2_7}}),	-- Open Elven Wood Crate (DECOR!)
 			i(244118),	-- Rectangular Elegant Table (DECOR!)
 			i(243088),	-- Standing Ornate Weapon Rack (DECOR!)
 		},
