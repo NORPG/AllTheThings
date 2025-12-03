@@ -604,18 +604,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90410, {	-- Cap of Wandering Pride
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90413),	-- Crest of the Grand Warband
 					i(90416, {	-- Crown of Ranging Invasion
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90411),	-- Facemask of Unrepentant Banditry
 					i(90408, {	-- Free Spirit Hood
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90415),	-- Giantfoot Headguard
@@ -623,6 +626,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90412, {	-- Helm of Restoring Wind
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90409),	-- Sky-Sear Cowl
@@ -636,6 +640,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90422, {	-- Armor of the Single Cloud
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90425),	-- Carapace of Crushed Conviction
@@ -643,11 +648,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90423, {	-- Chestguard of the Unbowed Back
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90419, {	-- Fireproofed Chestguard
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90420),	-- Flameshot Wrap
@@ -655,6 +662,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90417, {	-- Robes of Blue Skies
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90418),	-- Robes of the Lightning Rider
@@ -664,17 +672,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90448, {	-- Cannonfire Cord
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90450, {	-- Carrot-Holder Belt
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90456),	-- Cord of Crazed Strength
 					i(90454, {	-- Girdle of the Galloping Giant
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90453),	-- Girdle of the Raging Rider
@@ -682,17 +693,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90452, {	-- Sparkmaker Girdle
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					-- Boots
 					i(90443, {	-- Burnmender Boots
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90445, {	-- Firerider Treads
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90442),	-- Flamefoot Tabi
@@ -701,11 +715,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90440, {	-- Slippers of Fiery Retribution
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90441, {	-- Stompdodger Boots
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90447),	-- Stompers of Vigorous Stomping
