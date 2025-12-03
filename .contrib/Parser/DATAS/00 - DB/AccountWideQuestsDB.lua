@@ -2086,6 +2086,7 @@ local AccountWideQuestsDB = {
 	91783,	-- Delver's Cosmetic Surprise Bag [TWW:S3]
 	91784,	-- Delver's Starter Kit [TWW:S3]
 	91812,	--
+	91863,	-- My First Home
 	91894,	-- Has rolled for Coren Special Loot (Daily Accountwide)(TWW Version)
 	91939,	-- Ensemble: Hollow Sentinel's Wingdrapes
 	91940,	-- Ensemble: Plumes of the Mother Eagle
@@ -2099,6 +2100,8 @@ local AccountWideQuestsDB = {
 	91948,	-- Ensemble: Capes of the Sudden Eclipse
 	91950,	-- Ensemble: Inquisitor's All-Seeing Madness
 	91951,	-- Ensemble: Shawls of Channeled Fury / Ensemble: Living Weapon's Capes
+	91968,	-- Welcome Home
+	91969,	-- Time to Decorate
 	92031,	-- Meet the Vandals
 	92078,	-- A New Recipe!
 	92487,	-- Open the first Wriggling Pinnacle Cache
@@ -2110,6 +2113,10 @@ local AccountWideQuestsDB = {
 	92862,	-- Ensemble: Forgotten Conservatory Clothes
 	92889,	-- Arsenal: Odyn's Spears
 	93033,	-- Triggers when you spawn in Bazaar for the first time [Remix: Legion]
+	93057,	-- A House For You
+	94210,	-- Feathering the Nest
+	94379,	-- This Old Hearth
+	94455,	-- Home at Last
 	-- #ENDIF
 }
 
