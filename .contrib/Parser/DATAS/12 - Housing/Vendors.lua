@@ -509,7 +509,7 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	-- Razorwind Shores
 	n(255325, {	-- "High Tides" Ren <Decor Vendor>
-		["coord"] = { 39.8, 73.8, RAZORWIND_SHORES },
+		["coord"] = { 39.8, 72.8, RAZORWIND_SHORES },
 		["groups"] = {
 			i(245383),	-- "Sunrise Canyon" Painting (DECOR!)
 			i(246502),	-- Charming Couch (DECOR!)

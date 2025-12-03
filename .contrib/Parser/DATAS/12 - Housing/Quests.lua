@@ -91,7 +91,6 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 		-- qg is added to the mobileDB because, even with sharedData, it triggers contrib reports. Temp fix until it gets sorted?
 		["qg"] = 248854,	-- The Last Architect
 		["coord"] = { 52.7, 37.5, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 	},{
 		q(92437, {	-- Decor Treasure Hunt
 			["groups"] = { i(245375) },	-- Sturdy Wooden Bookcase (DECOR!)
@@ -300,7 +299,6 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 		-- qg is added to the mobileDB because, even with sharedData, it triggers contrib reports. Temp fix until it gets sorted?
 		["qg"] = 253596,	-- The Last Architect
 		["coord"] = { 53.7, 57.4, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 	},{
 		q(93073, {	-- Decor Treasure Hunt
 			["groups"] = { i(236654) },	-- Orgrimmar Interior Doorway (DECOR)
