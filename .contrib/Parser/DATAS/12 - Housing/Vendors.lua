@@ -1,11 +1,12 @@
 ---------------------------------------------
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
+-- TODO: de-duplicate somehow. seems each vendor has a counterpart in the opposing zone, but nothing is really faction-based
+-- TODO: instead of duplicate rewards on vendors + source quest, maybe we can link them via crs and rely on Filler? need to test...
 root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-	-- Alliance
+	-- Founder's Point
 	n(255222, {	-- "High Tides" Ren <Decor Vendor>
 		["coord"] = { 62.4, 80.1, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(244662),	-- Closed Leather Curtains (DECOR!)
 			i(246223),	-- Cozy Hide-Covered Bench (DECOR!)
@@ -71,7 +72,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255228, {	-- "Len" Splinthoof <Decor Vendor>
 		["coord"] = { 62.5, 80.4, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(246883),	-- Crude Banded Crate
 			i(245546),	-- Durable Wooden Chest
@@ -103,7 +103,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255230, {	-- "Yen" Malone <Decor Vendor>
 		["coord"] = { 62.2, 80.3, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(248631),	-- Azsharan Firespear Tree
 			i(248630),	-- Barrens Hosta Bush
@@ -141,7 +140,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255218, {	-- Argan Hammerfist
 		["coord"] = { 52.2, 37.8, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(244780),	-- Circular Elven Table (DECOR!)
 			i(244169),	-- Elegant Almond Table (DECOR!)
@@ -160,7 +158,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255216, {	-- Balen Starfinder <Decor Vendor>
 		["coord"] = { 52.2, 37.8, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] =  {
 			i(246257),	-- Bel'ameth Angled Platform (DECOR!)
 			i(246254, {	-- Bel'ameth Beam Platform (DECOR!)
@@ -255,7 +252,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255213, {	-- Faarden the Builder <Decor Vendor>
 		["coord"] = { 52.0, 38.4, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] =  {
 			i(245662, {	-- Carved Wooden Bar Table (DECOR!)
 				["sourceQuest"] = 92999,	-- Decor Treasure Hunt 31
@@ -320,7 +316,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			{ 54.4, 56.0, RAZORWIND_SHORES },
 		},
 		["timeline"] = { ADDED_12_0_0 },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(253601, {	-- 590 Quel'Lithien Red (DECOR!)
 				["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
@@ -362,14 +357,12 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255519, {	-- Lestia Goldenstrike <Lumberjack>
 		["coord"] = { 51.9, 38.7, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(253580),	-- Harvesting Hatchet
 		},
 	}),
 	n(255221, {	-- Trevor Grenner <Decor Vendor>
 		["coord"] = { 53.5, 40.9, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(248648),	-- Autumn Leaf Pile (DECOR!)
 			i(266241),	-- Brumewood Hollow Large Garden Cluster (DECOR!)
@@ -415,7 +408,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255203, {	-- Xiao Dan <Decor Vendor>
 		["coord"] = { 52.0, 38.2, FOUNDERS_POINT },
-		["races"] = ALLIANCE_ONLY,
 		["groups"] =  {
 			i(245383),	-- "Sunrise Canyon" Painting (DECOR!)
 			i(246502, {	-- Charming Couch (DECOR!)
@@ -515,10 +507,9 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			}),
 		},
 	}),
-	-- Horde
+	-- Razorwind Shores
 	n(255325, {	-- "High Tides" Ren <Decor Vendor>
 		["coord"] = { 39.8, 73.8, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(245383),	-- "Sunrise Canyon" Painting (DECOR!)
 			i(246502),	-- Charming Couch (DECOR!)
@@ -577,7 +568,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255326, {	-- "Len" Splinthoof <Decor Vendor>
 		["coord"] = { 39.9, 73.3, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(245662),	-- Carved Wooden Bar Table (DECOR!)
 			i(246104),	-- Carved Wooden Crate (DECOR!)
@@ -619,7 +609,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255319, {	-- "Yen" Malone <Decor Vendor>
 		["coord"] = { 40.1, 73.2, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(248648),	-- Autumn Leaf Pile (DECOR!)
 			i(245371),	-- Charming Laurel Tree (DECOR!)
@@ -653,7 +642,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255301, {	-- Botanist Boh'an <Decor Vendor>
 		["coord"] = { 54.2, 58.0, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(248631),	-- Azsharan Firespear Tree (DECOR!)
 			i(248630),	-- Barrens Hosta Bush (DECOR!)
@@ -682,14 +670,12 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255520, {	-- Xiz'ro <Lumberjack>
 		["coord"] = { 54.2, 58.0, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(253580),	-- Harvesting Hatchet
 		},
 	}),
 	n(255299, {	-- Lefton Farrer <Decor Vendor>
 		["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(244780),	-- Circular Elven Table (DECOR!)
 			i(244169),	-- Elegant Almond Table (DECOR!)
@@ -708,7 +694,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255298, {	-- Jehzar Starfall <Decor Vendor>
 		["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(246257),	-- Bel'ameth Angled Platform (DECOR!)
 			i(246254),	-- Bel'ameth Beam Platform (DECOR!)
@@ -759,7 +744,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255297, {	-- Shon'ja <Decor Vendor>
 		["coord"] = { 54.1, 59.0, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(246883),	-- Crude Banded Crate (DECOR!)
 			i(245546),	-- Durable Wooden Chest (DECOR!)
@@ -791,7 +775,6 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 	}),
 	n(255278, {	-- Gronthul <Decor Vendor>
 		["coord"] = { 54.1, 59.1, RAZORWIND_SHORES },
-		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(244662),	-- Closed Leather Curtains (DECOR!)
 			i(246223),	-- Cozy Hide-Covered Bench (DECOR!)

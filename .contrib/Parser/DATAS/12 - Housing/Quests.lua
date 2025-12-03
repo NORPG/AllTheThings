@@ -478,6 +478,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(92654),	-- Triggered after talking to Elven Decor vendor
 			q(92666),	-- Triggered after talking to Local Decor vendor
 			q(92733),	-- Triggered after entering house
+			q(94424),	-- Triggered after entering house
 			q(92734),	-- Triggered after entering Razorwind and Founders Point
 			q(93629),	-- Triggered after completing 'Time to Decorate'
 			q(94392),	-- Triggered after talking to flora decor
