@@ -5,7 +5,9 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 	-- Alex: Not sure if Alliance share any of these or if its all horde
 	-- Exo: At least main quests are shared... Dunno about Decor Hunts.
 	q(93057, {	-- A House For You
+		["description"] = "Triggers on login. Requires a re-log if purchasing Midnight via in-game shop.",
 		["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+		["isBreadcrumb"] = true,
 	}),
 	q(91863, {	-- My First House
 		["sourceQuests"] = { 93057 },	-- A House For You
@@ -486,6 +488,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(94709),	-- Triggered after entering house (tutorial?)
 			q(94714),	-- Triggered after completing 'Feathering the Nest' (94210)
 			-- q(94750),	-- Unflagged after talking to Elven Decor vendor
+			q(94415),	-- Plumbing the Void (auto-completed when using Start Tutorial for housing and zoning into Razorwind Shores)
 		}),
 	}));
 });
