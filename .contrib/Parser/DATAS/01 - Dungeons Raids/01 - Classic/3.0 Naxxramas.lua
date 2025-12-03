@@ -1746,12 +1746,19 @@ applyclassicphase(PHASE_SIX,
 					-- #endif
 					),
 					n(ZONE_DROPS, {
-						i(22708),	-- Fate of Ramaladni
+						i(22708, {	-- Fate of Ramaladni
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
 						i(22682, {	-- Frozen Rune
 							-- #if BEFORE WRATH
 							["description"] = "Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",
 							-- #endif
 							["cost"] = { { "i", 23055, 1 } },	-- Word of Thawing
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
 						}),
 						i(22374),	-- Wartorn Chain Scrap
 						i(22376),	-- Wartorn Cloth Scrap
@@ -1759,21 +1766,76 @@ applyclassicphase(PHASE_SIX,
 						i(22375),	-- Wartorn Plate Scrap
 						i(23055, {	-- Word of Thawing
 							["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
 						}),
-						i(23221),	-- Misplaced Servo Arm
-						i(23044),	-- Harbinger of Doom
-						i(23238),	-- Stygian Buckler
-						i(23664),	-- Pauldrons of Elemental Fury
-						i(23667),	-- Spaulders of the Grand Crusader
-						i(23226),	-- Ghoul Skin Tunic
-						i(23069),	-- Necro-Knight's Garb
-						i(23666),	-- Belt of the Grand Crusader
-						i(23663),	-- Girdle of Elemental Fury
-						i(23665),	-- Leggings of Elemental Fury
-						i(23668),	-- Leggings of the Grand Crusader
-						i(23237),	-- Ring of the Eternal Flame
+						i(23221, {	-- Misplaced Servo Arm
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23044, {	-- Harbinger of Doom
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23238, {	-- Stygian Buckler
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23664, {	-- Pauldrons of Elemental Fury
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23667, {	-- Spaulders of the Grand Crusader
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23226, {	-- Ghoul Skin Tunic
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23069, {	-- Necro-Knight's Garb
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23666, {	-- Belt of the Grand Crusader
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23663, {	-- Girdle of Elemental Fury
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23665, {	-- Leggings of Elemental Fury
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23668, {	-- Leggings of the Grand Crusader
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
+						i(23237, {	-- Ring of the Eternal Flame
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+						}),
 					}),
-					n(COMMON_BOSS_DROPS, {
+					n(COMMON_BOSS_DROPS,
+					-- #if SEASON_OF_DISCOVERY
+					bubbleDown({ ["timeline"] = { REMOVED_1_15_6 } },
+					-- #endif
+					{
 						-- Helms
 						-- Thaddius Only
 
@@ -1896,7 +1958,11 @@ applyclassicphase(PHASE_SIX,
 								15928,	-- Thaddius
 							},
 						}),
-					}),
+					}
+					-- #if SEASON_OF_DISCOVERY
+					)
+					-- #endif
+					),
 					-- #if SEASON_OF_DISCOVERY
 					-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
 					d(DIFFICULTY.LEGACY_RAID.PLAYER20, bubbleDownTimelineEventSelf(REMOVED_1_15_6, {
