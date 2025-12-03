@@ -1898,6 +1898,8 @@ local getTimestamp = function(t)
 end
 local SECONDS_IN_A_DAY = 86400;
 local SECONDS_IN_A_WEEK = 604800;
+-- Creates a Custom Header for use within ATT data
+-- 'npcfill = true' indicates that Things Sourced under this Header can be 'filled' into the corresponding NPC Sources if tagged with applicable NPC data
 createHeader = function(data)
 	if not data then
 		print("INVALID HEADER: You must pass data into the createHeader function.");

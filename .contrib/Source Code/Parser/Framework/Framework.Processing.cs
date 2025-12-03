@@ -900,8 +900,8 @@ namespace ATT
 
         private static void DoConditionalDataMerging(IDictionary<string, object> data)
         {
-            Items.MergeInto(data);
             Objects.MergeSharedDataIntoObject(data);
+            Items.MergeInto(data);
         }
 
         /// <summary>

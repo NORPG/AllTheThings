@@ -1011,6 +1011,7 @@ end
 
 local Pets = root("_petDB");
 local Items = ItemDBConditional;
+local SpeciesDB = SpeciesDB
 local i = function(itemID, speciesID, altSpeciesID)
 	if itemID < 1 then return end
 	local item = Items[itemID];
@@ -1023,12 +1024,14 @@ local i = function(itemID, speciesID, altSpeciesID)
 	elseif item.speciesID then
 		item.speciesID = nil;
 	end
+	SpeciesDB[speciesID] = Items[itemID]
 	return item;
 end
 local n = function(creatureID, speciesID)
 	if creatureID < 1 then return end
 	local pet = { ["speciesID"] = speciesID, ["npcID"] = creatureID, ["ignoreBonus"] = true };
 	Pets[creatureID] = pet;
+	SpeciesDB[speciesID] = Pets[creatureID]
 	return pet;
 end
 
@@ -4153,7 +4156,7 @@ i(0, 4584);			-- Tan Stagshell
 i(222969, 4474);	-- Anub'Rekyute
 i(221764, 4519);	-- Burntram
 i(222979, 4545);	-- Clay Stonecharger
-i(221762, 4484);	-- Frenzied Bloodtick
+i(0, 4484);			-- Frenzied Bloodtick
 i(221195, 4458);	-- Illskitter
 i(221492, 4459);	-- Moss Skipper
 i(221759, 4512);	-- Sceaduthax

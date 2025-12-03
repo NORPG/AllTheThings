@@ -1,6 +1,8 @@
 local Items = ItemDBConditional;
+local MountDB = MountDB;
 local i = function(itemID, spellID)
 	Items[itemID] = { ["mountID"] = spellID, ["ignoreBonus"] = true, ["_drop"] = { "spellID" } };
+	MountDB[spellID] = Items[itemID]
 end
 -- If the mount is obtained from an item, use i(itemID, mountID);
 -- Otherwise use i(0, mountID); example if the mount is obtained from store.
@@ -34,7 +36,7 @@ i(236664, 0); -- Reins of Death
 i(236665, 0); -- Reins of Famine
 
 -- Phase 8
-i(239694, 0); -- Covenant of Light 
+i(239694, 0); -- Covenant of Light
 i(239695, 0); -- Scarlet Steed
 
 -- TBC Classic --
@@ -1420,7 +1422,11 @@ i(180415, 332245);	-- Winterborn Runestag
 i(184168, 344577);	-- Bound Shadehound
 i(0, 347812);		-- Sapphire Skyblazer
 i(0, 346136);		-- Viridian Phase-Hunter
+-- #if AFTER 11.2.5
+i(258430, 348162);	-- Wandering Ancient
+-- #else
 i(0, 348162);		-- Wandering Ancient
+-- #endif
 --- NYI ---
 i(0, 347813);		-- Fireplume Phoenix
 

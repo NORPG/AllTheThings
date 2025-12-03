@@ -1439,9 +1439,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(4505, {	-- Sporbit [Orange] (PET!)
 				["displayID"] = 115406,
 			}),
-			pet(4507, {	-- Sporbit [Purple] (PET!)
-				["displayID"] = 115405,
-			}),
 			pet(4504, {	-- Sporbit [Red] (PET!)
 				["displayID"] = 115408,
 			}),

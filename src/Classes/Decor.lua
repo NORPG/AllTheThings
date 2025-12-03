@@ -20,6 +20,7 @@ local C_HousingCatalog_GetCatalogEntryInfoByItem
 -- /dump C_HousingCatalog.GetDecorMaxOwnedCount(2112) -> 5000
 -- this is non-parameterized, returns some quantity of decor owned and placed?
 -- /dump C_HousingCatalog.GetDecorTotalOwnedCount() -> 110,39
+-- /dump C_HousingCatalog.GetCatalogEntryDebugInfoForID(7620)	-- force taint error
 
 local pairs
  	= pairs

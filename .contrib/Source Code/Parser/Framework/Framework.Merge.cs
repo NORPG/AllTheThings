@@ -776,6 +776,12 @@ namespace ATT
                     case "AchievementDB":
                         MergeAchievementDB(pair.Value);
                         break;
+                    case "MountDB":
+                        DBMerge(pair.Value, "mountID");
+                        break;
+                    case "SpeciesDB":
+                        DBMerge(pair.Value, "speciesID");
+                        break;
                     default:
                         {
                             // Get the object container for this section.
