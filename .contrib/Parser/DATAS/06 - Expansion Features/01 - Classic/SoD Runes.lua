@@ -3,6 +3,26 @@
 -------------------------------------------------------------------
 -- #IF SEASON_OF_DISCOVERY
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CLASSIC, {
+	cl(HUNTER, {
+		header(HEADERS.Item, 206032, {	-- Rune of Carve
+			applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
+				["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
+				["coord"] = { 39.8, 9.2, DARNASSUS },
+				["cost"] = {{ "i", 208607, 1 }},	-- Deer Musk
+				["maps"] = { TELDRASSIL },
+				["crs"] = { 883 },	-- Deer
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(206032, {	-- Rune of Carve
+						["classes"] = { HUNTER },
+						["groups"] = {
+							recipe(425758),	-- Engrave Gloves - Carve
+						},
+					}),
+				},
+			})),
+		}),
+	}),
 	cl(MAGE, {
 		--
 	}),
