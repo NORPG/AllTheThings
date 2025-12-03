@@ -61,6 +61,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide [H]
 		},
 		["groups"] = { i(239098) },	-- Neighborhood Charter
+		["timeline"] = { ADDED_12_0_0 },
 	}),
 	-- Misc
 	q(92572, {	-- Furniture Favor
