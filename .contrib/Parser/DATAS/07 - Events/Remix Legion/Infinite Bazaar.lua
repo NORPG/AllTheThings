@@ -523,6 +523,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							["cost"] = {{ "c", BRONZE, 10000 }},
 						}),
 					}),
+					filter(ILLUSIONS, {
+						i(138828, {	-- Illusion: Chronos (ILLUSION!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {{ "c", BRONZE, 100000 }},
+						}),
+						i(138827, {	-- Illusion: Nightmare (ILLUSION!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {{ "c", BRONZE, 80000 }},
+						}),
+					}),
 					filter(TOYS, {
 						i(129165, {	-- Barnacle-Encrusted Gem (TOY!)
 							["cost"] = {{ "c", BRONZE, 10000 }},

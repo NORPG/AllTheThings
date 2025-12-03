@@ -210,20 +210,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 39.1, 24.0, DORNOGAL },
 						["groups"] = bubbleDownRep(FACTION_COUNCIL_OF_DORNOGAL, {
 							{		-- RENOWN 1 --
+								i(248013, {	-- Recipe: Dornic Mine and Cheese Platter (RECIPE!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = {{"c", RESONANCE_CRYSTALS, 3000}},
+								}),
 								i(253168, {	-- Earthen Storage Crate (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
 								}),
 								i(245295, {	-- Literature of Dornogal (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
 								}),
 								i(245297, {	-- Literature of Gundargaz (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
 								}),
 								i(245296, {	-- Literature of Taelloch (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
 								}),
 								i(245561, {	-- Ornate Ochre Window (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = {{"c", RESONANCE_CRYSTALS, 650}},
 								}),
 							}, {	-- RENOWN 2 --
 								i(228419, {	-- Mineral-Sparkled Cape

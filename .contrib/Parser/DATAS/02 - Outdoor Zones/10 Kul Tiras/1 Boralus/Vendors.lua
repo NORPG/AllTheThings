@@ -406,7 +406,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = { i(3025) },	-- BKP 42 "Ultra"
 			}),
 			n(252345, {	-- Pearl Barlow <Decor Specialist>
-				["coord"] = { 68.0, 41.2, BORALUS },
+				["coord"] = { 70.7, 15.7, BORALUS },
 				["timeline"] = { ADDED_11_2_7 },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {

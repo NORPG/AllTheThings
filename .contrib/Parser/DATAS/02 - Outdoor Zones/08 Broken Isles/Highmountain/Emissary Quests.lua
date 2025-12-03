@@ -49,6 +49,7 @@ root(ROOTS.Zones, {
 					["repeatable"] = true,
 					["groups"] = {
 						i(152104, {	-- Highmountain Supplies
+							i(257724),	-- Bloodtotem Banner (DECOR!)
 							i(147807),	-- Highmountain Elderhorn (MOUNT!)
 						}),
 						un(REMOVED_FROM_GAME, i(146899, {	-- Highmountain Supplies

@@ -102,6 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(224762),	-- Delver's Waterskin
 						i(222700),	-- Granulated Spices
 						i(222699),	-- Khaz Algar Tomato
+						i(259894),	-- Perfect Preservatives
 						i(222695),	-- Twined Herbs
 					},
 				}),

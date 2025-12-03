@@ -4926,8 +4926,6 @@ root(ROOTS.Unsorted, {
 				i(253279),	-- Crusader's Amethyst Mace
 				i(253280),	-- Crusader's Ruby Mace
 				i(253281),	-- Crusader's Citrine Mace
-				i(254844),	-- Hammer of the Righteous Lightbringer
-				i(254845),	-- Hammer of the Fallen Lightbringer
 				i(256722),	-- Demoncaller's Azure Crest
 				i(256723),	-- Demoncaller's Emerald Crest
 				i(256724),	-- Demoncaller's Amethyst Crest
@@ -5034,8 +5032,6 @@ root(ROOTS.Unsorted, {
 				i(258315),	-- Pious Cloak of the Crusader
 				i(258316),	-- Pious Chestplate of the Crusader
 				i(258317),	-- Ensemble: Pious Regalia of the Crusader
-				i(258527),	-- Greathammer of the Fallen Lightbringer
-				i(258528),	-- Greathammer of the Righteous Lightbringer
 				i(258776),	-- South Guard's Silver Facemask
 				i(258777),	-- South Guard's Silver Mantle
 				i(258778),	-- South Guard's Silver Cinch
@@ -5130,7 +5126,6 @@ root(ROOTS.Unsorted, {
 				i(243101),	-- Red Dazar'alor Rug
 				i(243327),	-- Zhevra-Stripe Rug
 				i(243336),	-- Elder Rise Rug
-				i(244314),	-- Frostwall Architect's Table
 				i(244317),	-- Orcish Banded Barrel
 				i(244319),	-- Wooden Shipping Crate
 				i(244323),	-- Orcish Sleeping Cot
@@ -5189,7 +5184,6 @@ root(ROOTS.Unsorted, {
 				i(248108),	-- Long Valdrakken Storage Crate
 				i(248109),	-- Valdrakken Fence
 				i(248110),	-- Valdrakken Fencepost
-				i(248113),	-- Thaldraszus Telescope
 				i(248114),	-- Draconic Nesting Bed
 				i(248118),	-- Literature of the Blue Dragonflight
 				i(248119),	-- Literature of the Green Dragonflight
@@ -5198,7 +5192,6 @@ root(ROOTS.Unsorted, {
 				i(248654),	-- Valdrakken Gilded Throne
 				i(248657),	-- Valdrakken Market Tent
 				i(249143),	-- Smoke Sconce
-				i(251482),	-- Draenei Stargazer's Telescope
 				i(251495),	-- Draenic Basin
 				i(251546),	-- Argussian Circular Rug
 				i(251550),	-- Draenethyst Sconce
@@ -5329,7 +5322,6 @@ root(ROOTS.Unsorted, {
 				i(245500),	-- Red Dazar'alor Tent
 				i(245501),	-- Venthyr Tome of Unforgiven Sins
 				i(245512),	-- Pandaren Cradle Stool
-				i(245558),	-- Elaborate Suramar Window
 				i(245615),	-- Bradensbrook Smoke Lantern
 				i(245616),	-- Bradensbrook Thorned Well
 				i(245624),	-- Waning Wood Fence
@@ -5354,8 +5346,6 @@ root(ROOTS.Unsorted, {
 				i(246605),	-- Mecha-Storage Mecha-Chest
 				i(246701),	-- Gnomish Sprocket Table
 				i(246703),	-- Double-Sprocket Table
-				i(246708),	-- Dornic Sliced Mineloaf
-				i(246709),	-- Earthen Hospitality Cheese-Like Brick
 				i(246845),	-- Tome of Shadowforge Cunning
 				i(246847),	-- Tome of Draenei Faith
 				i(246848),	-- Scribe's Working Notes
@@ -5367,17 +5357,12 @@ root(ROOTS.Unsorted, {
 				i(247730),	-- Red Crane Kite
 				i(247731),	-- Hanging Paper Lanterns
 				i(247732),	-- Lucky Hanging Lantern
-				i(247842),	-- Nightborne Merchant's Stall
 				i(247855),	-- Pandaren Lacquered Crate
 				i(247858),	-- Shaohao Ceremonial Bell
 				i(247908),	-- Nightborne Lantern
-				i(247911),	-- Shal'dorei Seat
 				i(247912),	-- Large Traditional Shal'dorei Rug
-				i(247914),	-- Covered Ornate Suramar Table
 				i(247915),	-- Square Suramar Table
-				i(247917),	-- Covered Small Suramar Table
 				i(247919),	-- Traditional Shal'dorei Rug
-				i(248009),	-- Suramar Window
 				i(248116),	-- Valdrakken Chandelier
 				i(248401),	-- Ornamental Kaldorei Glaive
 				i(248758),	-- Relaxing Goblin Beach Chair with Cup Gripper
@@ -5424,7 +5409,6 @@ root(ROOTS.Unsorted, {
 				i(257694),	-- Gilnean Green Potion
 				i(257695),	-- Gilnean Postbox
 				i(257696),	-- Gilnean Map
-				i(257724),	-- Bloodtotem Banner
 				i(257806),	-- Scaled Twilight Mosaic
 				i(258145),	-- Eversong Party Platter
 				i(258147),	-- Empty Lorewalker's Bookcase
@@ -5503,7 +5487,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				i(233203),	-- Schematic: Housing Crafting Test Recipe
-				i(248013),	-- Model Plate: Dornic Mine and Cheese Platter
 				i(260947),	-- White Dye Pigment
 				i(262625),	-- Purple Dye Pigment
 				i(262628),	-- Teal Dye Pigment
@@ -5514,7 +5497,6 @@ root(ROOTS.Unsorted, {
 				i(262648),	-- Yellow Dye Pigment
 				i(262655),	-- Red Dye Pigment
 				i(262656),	-- Orange Dye Pigment
-				i(259894),	-- Perfect Preservatives
 				-- Dye
 				i(258838),	-- Housing Dye: Gold
 				i(259053),	-- Housing Dye: Warm Teak
@@ -5594,43 +5576,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(TIMEWALKING_HEADER, {	-- Timewalking Shadowlands
 				i(254693),	-- Distilled Knowledge of Timeways
-				i(254746),	-- Commendation of the Court of Harvesters
-				i(254851),	-- Maw Stalker's Quiver
-				i(254852),	-- Spirit Marksman's Quiver
-				i(254853),	-- Lance of the Architects
-				i(254854),	-- Putrid Necromancer Mantle
-				i(254855),	-- Amice of the Dark Necromancer
-				i(254856),	-- Soul Harvester's Scythe
-				i(254857),	-- Maw Executioner's Guillotine
-				i(254858),	-- Crossbow of the First Ones
-				i(254860),	-- Longsword of the First Ones
-				i(254861),	-- Sinstone Cleaver
-				i(254862),	-- Runeblade of the Maldraxxus Paragon
-				i(254863),	-- Staff of the Penitent
-				i(254864),	-- Oozeframe of the Mad Alchemist
-				i(254865),	-- Shell of the Forbidden Land
-				i(254866),	-- Progenitor's Fractured Smasher
-				i(254867),	-- Progenitor's Fix-It-Up
-				i(254868),	-- Sacred Bell of the Ascended
-				i(254872),	-- Creator's Rod of Origin
-				i(254873),	-- Zerith Vibroblade
-				i(256336),	-- Kyrian Sky Splitter
-				i(256337),	-- The Price Adjuster
-				i(256338),	-- Dagger of Forgotten Vows
-				i(256339),	-- Anima Drinker's Rapier
-				i(256340),	-- Skyguard's Longbow
-				i(256341),	-- Faithspire Redeemer
-				i(256348),	-- Fallen Ascendant's Bulwark
-				i(256349),	-- Warglaives of Devotion
-				i(256350),	-- Animaforged Sentinel's Plate
-				i(256351),	-- Robe of the Forsworn Seer
-				i(256352),	-- Mantle of Harmonized Spirit
-				i(256353),	-- Elysian Pathfinder's Mail
-				i(256355),	-- Animaforged Sentinel's Helm
-				i(256358),	-- Elysian Pathfinder's Visor
-				i(256359),	-- Cowl of the Forsworn Seer
-				i(256360),	-- Mask of Harmonized Spirit
-				i(258662),	-- Progenitor's Custodial Sentry
 			}),
 			filter(TOYS, {
 				i(243304),	-- Jubilant Snowman Costume
@@ -5691,7 +5636,6 @@ root(ROOTS.Unsorted, {
 			i(264677),	-- Rolled Scarab Rug
 			i(264678),	-- Aspirant's Ringed Banner \\ Aspirant's Ringed Sash
 			i(264679),	-- Valdrakken Wall Shelf
-			i(264705),	-- Glazed Sin'dorei Vial
 			i(264706),	-- Shadow Council Torch
 			i(264707),	-- Resizable All-Purpose Gear
 			i(264708),	-- Home Defense Gadget

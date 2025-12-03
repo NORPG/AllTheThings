@@ -75,9 +75,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 				}),
 				n(ZONE_REWARDS, {
-					filter(CLOAKS, {
-
-					}),
 					filter(CLOTH, {
 						i(240537),	-- Manasinged Amice
 						i(240534),	-- Manasinged Cinch

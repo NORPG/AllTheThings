@@ -7497,22 +7497,43 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 			}),
 		}),--]]
 		n(VENDORS, {
-			-- TODO: Update NPCID/Coords
-			n(239840, {	-- Collector Ta'steld <Timewalking Vendor>
+			n(242687, {	-- Collector Ta'steld <Timewalking Vendor>
 				["coords"] = {
-					-- { , , Oribos },
+					{ 56.3, 63.7, ORIBOS },
 				},
 				["groups"] = {
 					n(ARMOR, {
-						filter(BACK_F, {
-						}),
 						filter(CLOTH, {
+							i(256359, {	-- Cowl of the Forsworn Seer
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+							i(256351, {	-- Robe of the Forsworn Seer
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
 						}),
 						filter(LEATHER, {
+							i(256352, {	-- Mantle of Harmonized Spirit
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+							i(256360, {	-- Mask of Harmonized Spirit
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
 						}),
 						filter(MAIL, {
+							i(256353, {	-- Elysian Pathfinder's Mail
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+							i(256358, {	-- Elysian Pathfinder's Visor
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
 						}),
 						filter(PLATE, {
+							i(256355, {	-- Animaforged Sentinel's Helm
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+							i(256350, {	-- Animaforged Sentinel's Plate
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
 						}),
 					}),
 					filter(BATTLE_PETS, {
@@ -7521,12 +7542,78 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 						}),
 					}),
 					filter(COSMETIC, {
+						i(254855, {	-- Amice of the Dark Necromancer
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 450 }},
+						}),
+						i(254872, {	-- Creator's Rod of Origin
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254858, {	-- Crossbow of the First Ones
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(258527, {	-- Greathammer of the Fallen Lightbringer
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+						}),
+						i(258528, {	-- Greathammer of the Righteous Lightbringer
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+						}),
+						i(254844, {	-- Hammer of the Righteous Lightbringer
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254845, {	-- Hammer of the Fallen Lightbringer
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254853, {	-- Lance of the Architects
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254860, {	-- Longsword of the First Ones
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
+						i(254857, {	-- Maw Executioner's Guillotine
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254851, {	-- Maw Stalker's Quiver
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 600 }},
+						}),
+						i(254864, {	-- Oozeframe of the Mad Alchemist
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 600 }},
+						}),
+						i(258662, {	-- Progenitor's Custodial Sentry
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+						}),
+						i(254867, {	-- Progenitor's Fix-It-Up
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
+						i(254866, {	-- Progenitor's Fractured Smasher
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254854, {	-- Putrid Necromancer Mantle
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 450 }},
+						}),
+						i(254862, {	-- Runeblade of the Maldraxxus Paragon
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
+						i(254865, {	-- Shell of the Forbidden Land
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254861, {	-- Sinstone Cleaver
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254856, {	-- Soul Harvester's Scythe
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(254852, {	-- Spirit Marksman's Quiver
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 600 }},
+						}),
+						i(254863, {	-- Staff of the Penitent
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(254873, {	-- Zerith Vibroblade
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
 					}),
 					filter(MISC, {
 						i(254768, {	-- Commendation of Marasmius
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
-						}),
-						i(254761, {	-- Commendation of Ve'nari
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(254774, {	-- Commendation of the Archivist's Codex
@@ -7536,6 +7623,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(254762, {	-- Commendation of the Avowed
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(254746, {	-- Commendation of the Court of Harvesters
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(254763, {	-- Commendation of the Court of Night
@@ -7553,10 +7643,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 						i(254765, {	-- Commendation of the Stitchmasters
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
+						i(254759, {	-- Commendation of the Undying Army
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
 						i(254758, {	-- Commendation of the Wild Hunt
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
-						i(254759, {	-- Commendation of the Undying Army
+						i(254761, {	-- Commendation of Ve'nari
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 					}),
@@ -7595,6 +7688,33 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 						}),
 					}),
 					n(WEAPONS, {
+						i(256339, {	-- Anima Drinker's Rapier
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(256338, {	-- Dagger of Forgotten Vows
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(256341, {	-- Faithspire Redeemer
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(256348, {	-- Fallen Ascendant's Bulwark
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(256336, {	-- Kyrian Sky Splitter
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(254868, {	-- Sacred Bell of the Ascended
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(256340, {	-- Skyguard's Longbow
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(256337, {	-- The Price Adjuster
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(256349, {	-- Warglaives of Devotion
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
 					}),
 				},
 			}),

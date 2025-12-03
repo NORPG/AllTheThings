@@ -296,6 +296,9 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			-- WoWhead Comment: By the Stage area to the right of the city's center. A straight line down from the northest flight point.
 			["groups"] = { i(257691) },	-- Open Elegant Elven Barrel (DECOR!)
 		}),
+		q(93148, {	-- Decor Treasure Hunt
+			["groups"] = { i(244169) },	-- Elegant Almond Table (DECOR!)
+		}),
 	}));
 	header(HEADERS.Quest, 93109, sharedData({	-- Decor Treasure Hunt [Horde]
 		-- qg is added to the mobileDB because, even with sharedData, it triggers contrib reports. Temp fix until it gets sorted?

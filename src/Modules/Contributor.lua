@@ -1012,6 +1012,7 @@ MobileDB.GameObject = {
 	[232163] = true,	-- Vault of Forbidden Treasures [] Normal
 	[232165] = true,	-- Unlocked Stockpile of Pandaren Spoils [Spoils of Pandaria] Heroic
 	[232166] = true,	-- Unlocked Stockpile of Pandaren Spoils [Spoils of Pandaria] LFR
+	[233250] = true,	-- Finalize Garrison Plot
 	[233028] = true,	-- Tears of the Vale
 	[233029] = true,	-- Vault of Forbidden Treasures [] ?
 	[233030] = true,	-- Unlocked Stockpile of Pandaren Spoils [Spoils of Pandaria] ?

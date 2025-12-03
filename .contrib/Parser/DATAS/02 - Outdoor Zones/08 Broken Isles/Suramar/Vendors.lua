@@ -164,14 +164,6 @@ root(ROOTS.Zones, {
 									{ "c", ORDER_RESOURCES, 2000 },	-- 2,000x Order Resources
 								},
 							}),
-							i(245448, {	-- "Night on the Jeweled Estate" Painting (DECOR!)
-								["sourceAchievement"] = 11124,	-- Good Suramaritan
-								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {
-									{ "g", 5600000 },	-- 560g
-									{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
-								},
-							}),
 							i(139768, {	-- Amice of the Black Harvest
 								["classes"] = { WARLOCK },
 								["cost"] = 5000000,	-- 500g
@@ -258,6 +250,40 @@ root(ROOTS.Zones, {
 				n(107467, {	-- Jacin
 					["coord"] = { 49.0, 81.6, SURAMAR },
 					["groups"] = { i(137467) },	-- Shimmerfield Crystal
+				}),
+				n(252969, {	-- Jocenna
+					["coord"] = { 49.6, 62.8, SURAMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(245448, {	-- "Night on the Jeweled Estate" Painting (DECOR!)
+							["sourceAchievement"] = 11124,	-- Good Suramaritan
+							["cost"] = {
+								{ "g", 5600000 },	-- 560g
+								{ "c", ORDER_RESOURCES, 1000 },
+							},
+						}),
+						i(247914, {	-- Covered Ornate Suramar Table (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 400 } },
+						}),
+						i(247917, {	-- Covered Small Suramar Table (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+						}),
+						i(247843, {	-- Deluxe Suramar Sleeper (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 1200 } },
+						}),
+						i(245558, {	-- Elaborate Suramar Window (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 225 } },
+						}),
+						i(247842, {	-- Nightborne Merchant's Stall (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 600 } },
+						}),
+						i(247911, {	-- Shal'dorei Seat (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 100 } },
+						}),
+						i(248009, {	-- Suramar Window (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 175 } },
+						}),
+					},
 				}),
 				n(113843, {	-- Kieule <Souvenirs>
 					["coord"] = { 50.4, 53.0, SURAMAR },
