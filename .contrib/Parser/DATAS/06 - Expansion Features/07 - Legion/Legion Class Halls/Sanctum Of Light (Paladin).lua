@@ -915,6 +915,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 				}),
+				n(TREASURES, {
+					o(245358, {	-- Light in the Darkness
+						["coord"] = { 41.7, 64.4, LIGHTS_HOPE_CHAPEL },
+						["isDaily"] = true,
+						["groups"] = { i(130898) },	-- Light in the Darkness
+					}),
+					o(245359, {	-- Striding with the Sunwalkers
+						["coord"] = { 40.5, 55.9, LIGHTS_HOPE_CHAPEL },
+						["isDaily"] = true,
+						["groups"] = { i(130899) },	-- Striding with the Sunwalkers
+					}),
+				}),
 				n(VENDORS, {
 					n(99976, {	-- Crusader Lord Dalfors
 						["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",

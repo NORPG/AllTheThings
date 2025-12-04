@@ -236,8 +236,9 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(255650) },	-- Elegant Table Lamp (DECOR!)
 		}),
 		q(92996, {	-- Decor Treasure Hunt
-			-- WoWhead Comment: Underneath the pier with stairs down the hill. It's at furthest northwest corner/plot of the housing map.
+			["coord"] = { 29.0, 28.2, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(246502) },	-- Charming Couch (DECOR!)
+			-- Exo Note: ObjectID:572258
 		}),
 		q(92997, {	-- Decor Treasure Hunt
 			-- Exo Note: Somewhere around 24.1, 34.9
