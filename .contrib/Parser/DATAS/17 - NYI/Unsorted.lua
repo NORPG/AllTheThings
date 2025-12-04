@@ -5191,9 +5191,6 @@ root(ROOTS.Unsorted, {
 				i(246599),	-- Self-Sealing Stembarrel
 				i(246600),	-- Small Mechanical Crate
 				i(246602),	-- Small H.O.M.E. Cog
-				i(246605),	-- Mecha-Storage Mecha-Chest
-				i(246701),	-- Gnomish Sprocket Table
-				i(246703),	-- Double-Sprocket Table
 				i(246845),	-- Tome of Shadowforge Cunning
 				i(246847),	-- Tome of Draenei Faith
 				i(246848),	-- Scribe's Working Notes

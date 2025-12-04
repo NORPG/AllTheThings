@@ -47,10 +47,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = {{ "i", SPARE_PARTS, 10 }},
 						}),
+						i(246703, {	-- Double-Sprocket Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 2400000 },	-- 240g
+								{ "i", SPARE_CRATE, 3 },
+							},
+						}),
 						i(246603, {	-- Gnomish Cog Stack (DECOR!)
 							["sourceAchievement"] = 13475,	--  Junkyard Scavenger
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = {{ "i", SPARE_PARTS, 50 }},
+						}),
+						i(246701, {	-- Gnomish Sprocket Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 1600000 },	-- 160g
+								{ "i", SPARE_CRATE, 2 },
+							},
 						}),
 						i(246479, {	-- Gnomish T.O.O.L.B.O.X. (DECOR!)
 							["sourceAchievement"] = 13723,	--  M.C., Hammered
@@ -159,6 +173,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							["cost"] = {
 								{ "i", SPARE_CRATE, 30 },
 								{ "i", GALVANIC_OSCILLATOR, 6 },
+							},
+						}),
+						i(246605, {	-- Mecha-Storage Mecha-Chest (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 1200000 },	-- 120g
+								{ "i", GALVANIC_IGNITERCOIL, 2 },
 							},
 						}),
 						i(246499, {	-- Mechagon Eyelight Lamp (DECOR!)
