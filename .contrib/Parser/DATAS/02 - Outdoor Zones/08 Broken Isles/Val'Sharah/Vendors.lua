@@ -30,30 +30,18 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				},
 			}),
 			n(253387, {	-- Selfira Ambergrove <Decor Specialist>
+				["description"] = "Reputation-based Decor from this Vendor is currently NOT discounted!",	-- possibly a bug Blizz might fix
 				["coord"] = { 54.2, 72.4, VALSHARAH },
 				["timeline"] = { ADDED_11_2_7 },
+				["sym"] = {{"select","itemID",
+					-- Non-discounted Rep Items from Sylvia Hartshorn
+					245261,	-- Kaldorei Washbasin (DECOR!)
+					251494,	-- Moon-Blessed Barrel (DECOR!)
+					238861,	-- Cenarion Rectangular Rug (DECOR!)
+					264168,	-- Cenarion Round Rug (DECOR!)
+					238859,	-- Cenarion Privacy Screen (DECOR!)
+				}},
 				["groups"] = {
-					i(238859, {	-- Cenarion Privacy Screen (DECOR!)
-						["minReputation"] = { FACTION_THE_DREAMWEAVERS, EXALTED },	-- The Dreamweavers, Exalted
-						["cost"] = {
-							{ "g", 10000000 },	-- 1,000g
-							{ "c", ORDER_RESOURCES, 2000 },	-- 2,000x Order Resources
-						},
-					}),
-					i(238861, {	-- Cenarion Rectangular Rug (DECOR!)
-						["minReputation"] = { FACTION_THE_DREAMWEAVERS, HONORED },	-- The Dreamweavers, Honored
-						["cost"] = {
-							{ "g", 5000000 },	-- 500g
-							{ "c", ORDER_RESOURCES, 750 },	-- 750x Order Resources
-						},
-					}),
-					i(264168, {	-- Cenarion Round Rug (DECOR!)
-						["minReputation"] = { FACTION_THE_DREAMWEAVERS, HONORED },	-- The Dreamweavers, Honored
-						["cost"] = {
-							{ "g", 5000000 },	-- 500g
-							{ "c", ORDER_RESOURCES, 750 },	-- 750x Order Resources
-						},
-					}),
 					i(245739, {	-- Crescent Moon Lamppost (DECOR!)
 						["sourceQuest"] = 40890,	-- The Tears of Elune
 						["cost"] = {{ "c", ORDER_RESOURCES, 600 }},	-- 600x Order Resource
@@ -72,17 +60,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					i(245702, {	-- Kaldorei Wall Shelf (DECOR!)
 						["sourceQuest"] = 38147,	-- Entangled Dreams
 						["cost"] = {{ "c", ORDER_RESOURCES, 450 }},	-- 450x Order Resource
-					}),
-					i(245261, {	-- Kaldorei Washbasin (DECOR!)
-						["minReputation"] = { FACTION_THE_DREAMWEAVERS, REVERED },	-- The Dreamweavers, Revered
-						["cost"] = {
-							{ "g", 7000000 },	-- 700g
-							{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
-						},
-					}),
-					i(251494, {	-- Moon-Blessed Barrel (DECOR!)
-						["minReputation"] = { FACTION_THE_DREAMWEAVERS, FRIENDLY },	-- The Dreamweavers, Friendly
-						["cost"] = {{ "c", ORDER_RESOURCES, 200 }},	-- 200x Order Resource
 					}),
 					i(245697, {	-- Shala'nir Feather Bed (DECOR!)
 						["sourceAchievement"] = 10698,	-- That's Val'sharah Folks!

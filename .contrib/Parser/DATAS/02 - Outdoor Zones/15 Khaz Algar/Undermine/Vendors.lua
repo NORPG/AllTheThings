@@ -30,6 +30,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(237346),	-- Artisan Beverage Goblet Bobber (TOY!)
 					i(237345),	-- Limited Edition Rocket Bobber (TOY!)
 					i(237347),	-- Organically-Sourced Wellington Bobber (TOY!)
+					i(245309, {	-- Rusty Patchwork Tub (DECOR!)
+						["cost"] = {{ "i", 227673, 15 }},	-- "Gold" Fish
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				}),
 			}),
 			n(239112, {	-- Bombin' Bert

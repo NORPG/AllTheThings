@@ -5144,7 +5144,6 @@ root(ROOTS.Unsorted, {
 				i(245291),	-- Replica Dark Iron Mole Machine
 				i(245293),	-- Collection of Arathi Scripture
 				i(245294),	-- Councilward's Jeweled Goblet
-				i(245309),	-- Rusty Patchwork Tub
 				i(245320),	-- Very Reliable Undermine Lamppost
 				i(245413),	-- Zandalari Sconce
 				i(245422),	-- Draenic Bookcase
