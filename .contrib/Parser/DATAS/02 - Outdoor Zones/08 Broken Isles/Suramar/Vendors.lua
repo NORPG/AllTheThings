@@ -312,6 +312,14 @@ root(ROOTS.Zones, {
 						i(127279, {	-- Imbued Silkweave Shade [Rank 1] (RECIPE!)
 							["cost"] = {{ "i", 124437, 100 }},	-- 100x Shal'dorei Silk
 						}),
+						i(247912, {	-- Large Traditional Shal'dorei Rug (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {{ "c", 1155, 250 }},	-- 250x Ancient Mana
+						}),
+						i(247919, {	-- Traditional Shal'dorei Rug (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {{ "c", 1155, 100 }},	-- 150x SAncient Mana
+						}),
 					},
 				}),
 				n(93979, {	-- Leyweaver Jorjana
@@ -326,6 +334,18 @@ root(ROOTS.Zones, {
 					["coord"] = { 71.6, 48.8, SURAMAR },
 					["groups"] = { i(133819) },	-- Recipe: Koi-Scented Stormray [Rank 1] (RECIPE!)
 				}),
+				n(255101, {	-- Mynde <Stone Skimmer>
+					["coord"] = { 45.6, 69.2, SURAMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(257393, {	-- Suramar Stepping Stone (DECOR!)
+							["cost"] = {{ "c", 1155, 50 }},	-- 50x SAncient Mana
+						}),
+						i(257598, {	-- Suramar Stepping Stone Set (DECOR!)
+							["cost"] = {{ "c", 1155, 125 }},	-- 125x SAncient Mana
+						}),
+					},
+				}),
 				n(112059, {	-- Sasunne Dameuse <Souvenirs>
 					["coord"] = { 51.2, 50.0, SURAMAR },
 					["groups"] = {
@@ -336,6 +356,15 @@ root(ROOTS.Zones, {
 						--]]
 						i(130151, {	-- The "Devilsaur" Lunchbox (TOY!)
 							["cost"] = {{ "c", 1155, 1000 }},	-- 1,000x Ancient Mana
+						}),
+					},
+				}),
+				n(253434, {	-- Sileas Duskvine <Irongrove Goods>
+					-- TODO ["coord"] = { ,, SURAMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(245701, {	-- Elven Round Table (DECOR!)
+							["cost"] = {{ "c", ORDER_RESOURCES, 175 }},
 						}),
 					},
 				}),
@@ -433,6 +462,36 @@ root(ROOTS.Zones, {
 							["b"] = 1,	-- Force BoP since this is only available as a quest item
 							["classes"] = { PALADIN },
 							["cost"] = {{ "c", 1155, 500 }},	-- 500x Ancient Mana
+						}),
+					},
+				}),
+				n(248594, {	-- Sundries Merchant
+					["coord"] = { 50.9, 77.8, SURAMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(246001, {	-- Orange Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
+							["cost"] = {{ "c", 1155, 200 }},	-- 200x Ancient Mana
+						}),
+						i(244677, {	-- Purple Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, REVERED },
+							["cost"] = {{ "c", 1155, 300 }},	-- 300x Ancient Mana
+						}),
+						i(246002, {	-- Red Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, REVERED },
+							["cost"] = {{ "c", 1155, 300 }},	-- 300x Ancient Mana
+						}),
+						i(244654, {	-- Small Purple Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, FRIENDLY },
+							["cost"] = {{ "c", 1155, 100 }},	-- 100x Ancient Mana
+						}),
+						i(244678, {	-- Small Red Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, FRIENDLY },
+							["cost"] = {{ "c", 1155, 100 }},	-- 100x Ancient Mana
+						}),
+						i(244676, {	-- Teal Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
+							["cost"] = {{ "c", 1155, 200 }},	-- 200x Ancient Mana
 						}),
 					},
 				}),

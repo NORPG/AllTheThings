@@ -124,6 +124,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						["groups"] = bubbleDownClassicRep(FACTION_LAUGHING_SKULL_ORCS, {
 							{		-- Neutral
 							}, {	-- Friendly
+								i(245433, {	-- Blackrock Strongbox (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
+								}),
+								i(245431, {	-- Draenor Cookpot (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
+								}),
 								i(119159, {	-- Happy Fun Skull
 									["cost"] = 5000000,		-- 500g
 								}),

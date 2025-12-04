@@ -2109,8 +2109,11 @@ local AccountWideQuestsDB = {
 	92573,	-- Sturdy Chest
 	92626,	-- ??
 	92628,	-- ??
+	92680,	-- Ensemble: World-Defiler's Battle Armor
+	92681,	-- Ensemble: Zealous Felslingers Battle Armor
 	92861,	-- Ensemble: Eredath Lightseeker's Regalia
 	92862,	-- Ensemble: Forgotten Conservatory Clothes
+	92863,	-- Ensemble: Triumvirate High Guard's Battlegear
 	92889,	-- Arsenal: Odyn's Spears
 	93033,	-- Triggers when you spawn in Bazaar for the first time [Remix: Legion]
 	93057,	-- A House For You

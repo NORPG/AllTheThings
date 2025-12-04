@@ -4734,6 +4734,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(256330, {	-- Kharanos Stone Bed (DECOR!)
+							["races"] = { GNOME, DWARF, DARKIRON },
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = 6400000,	-- 640g
 						}),

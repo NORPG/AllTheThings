@@ -4062,10 +4062,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				q(82672, {	-- Another Timely Invitation
 					-- #IF AFTER TWW
 					["qgs"] = {
+						224419, -- Holiday Celebrant
 						224450, -- Holiday Celebrant
 					},
 					["coords"] = {
 						{ 45.5, 55.5, DORNOGAL },
+						{ 47.9, 78.2, ORGRIMMAR },
 					},
 					-- #ENDIF
 					["isYearly"] = true,

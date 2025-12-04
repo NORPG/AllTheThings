@@ -6553,6 +6553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13897),	-- White Traditional Hanbok
 					},
 				}),
+				-- #if BEFORE TWW
 				-- #if AFTER 8.0.1
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>
 					["description"] = "Appears in Stormwind after War of Thorns.",
@@ -6560,28 +6561,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDownClassicRep(FACTION_GILNEAS, {
 						{		-- Neutral
-							i(245620, {	-- Little Wolf's Loo (DECOR!)
-								["sourceQuest"] = 14402,	-- Ready to Go
-								["cost"] = 4500000,	-- 450g
-							}),
-							i(245518, {	-- Worgen's Chicken Coop (DECOR!)
-								["sourceQuest"] = 24675,	-- Last Meal
-								["cost"] = 1500000,	-- 150g
-							}),
 						}, {	-- Friendly
 							i(64882, {	-- Gilneas Tabard
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 						}, {	-- Honored
-							i(245605, {	-- Gilnean Stone Wall (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = 3000000,	-- 300g
-							}),
 						}, {	-- Revered
-							i(245603, {	-- Gilnean Noble's Trellis (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = 3500000,	-- 350g
-							}),
 							i(67532, {	-- Gilnean Satchel
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -6598,6 +6583,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				-- #endif
 				-- #endif
 				n(44246, {	-- Magatha Silverton <Justice Quartermaster>
 					["coords"] = {

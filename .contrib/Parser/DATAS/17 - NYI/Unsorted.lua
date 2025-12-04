@@ -5122,158 +5122,18 @@ root(ROOTS.Unsorted, {
 				i(263504),	-- Skymaster's Blood Pauldrons
 			}),
 			n(DECOR, {
-				i(242948),	-- Loch Modan Bearskin Rug
-				i(243101),	-- Red Dazar'alor Rug
-				i(243327),	-- Zhevra-Stripe Rug
-				i(243336),	-- Elder Rise Rug
-				i(244317),	-- Orcish Banded Barrel
-				i(244319),	-- Wooden Shipping Crate
-				i(244323),	-- Orcish Sleeping Cot
-				i(245305),	-- Undermine Bean Bag Chair
-				i(245396),	-- Suramar Dresser
-				i(245406),	-- Tauren Leather Fence
-				i(245407),	-- Tauren Fencepost
-				i(245412),	-- Zandalari Ritual Drum
-				i(245414),	-- Zandalari Skullfire Lamp
-				i(245415),	-- Zuldazar Fence
-				i(245416),	-- Zuldazar Fencepost
-				i(245418),	-- Zanchuli Tapestry
-				i(245421),	-- Karabor Bed
-				i(245432),	-- Blackrock Bunkbed
-				i(245459),	-- Tauren Storage Chest
-				i(245496),	-- Small Mask of Bwonsamdi, Loa of Graves
-				i(245499),	-- Gilded Zandalari Table
-				i(245502),	-- Brill Coffin
-				i(245503),	-- Brill Coffin Lid
-				i(245509),	-- Pandaren Stone Wall
-				i(245513),	-- Square Pandaren Table
-				i(245514),	-- Pandaren Wooden Table
-				i(245534),	-- Frostwall Elevated Brazier
-				i(245557),	-- Shaded Suramar Window
-				i(245559),	-- Octagonal Ochre Window
-				i(245602),	-- Gilnean Problem Solver
-				i(245618),	-- Surwich Expedition Tent
-				i(245621),	-- Gilnean Wooden Table
-				i(245622),	-- Gilnean Wall Shelf
-				i(245623),	-- Gilnean Rocking Chair
-				i(246066),	-- Schmancy Goblin String Lights
-				i(246413),	-- Blackrock Lamppost
-				i(246420),	-- Kharanos Bookcase
-				i(246423),	-- Wooden Ironforge Table
-				i(246486),	-- Gnomish Tesla Mega-Coil
-				i(246488),	-- Ironforge Chandelier
-				i(246500),	-- Mechagon Miniature Artificial Sun
-				i(246604),	-- Deactivated Atomic Recalibrator
-				i(246685),	-- Dwarven District Banner
-				i(247669),	-- Lorewalker's Bookcase
-				i(247728),	-- Pandaren Stone Post
-				i(247733),	-- Halfhill Cookpot
-				i(247735),	-- Lucky Traveler's Bench
-				i(247736),	-- Jade Temple Dragon Fountain
-				i(247738),	-- Pandaren Meander Rug
 				i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
-				i(247767),	-- Wise Pandaren's Bed
-				i(247856),	-- Serenity Peak Tent
-				i(247916),	-- Covered Square Suramar Table
-				i(247918),	-- Nightborne Jeweler's Table
-				i(247920),	-- Circular Shal'dorei Rug
-				i(247925),	-- Suramar Storage Crate
-				i(248010),	-- Shal'dorei Open-Air Tent
-				i(248106),	-- Valdrakken Banded Barrel
-				i(248107),	-- Valdrakken Storage Crate
-				i(248108),	-- Long Valdrakken Storage Crate
-				i(248109),	-- Valdrakken Fence
-				i(248110),	-- Valdrakken Fencepost
-				i(248114),	-- Draconic Nesting Bed
-				i(248118),	-- Literature of the Blue Dragonflight
-				i(248119),	-- Literature of the Green Dragonflight
-				i(248120),	-- Literature of the Red Dragonflight
-				i(248121),	-- Draconic Circular Rug
-				i(248654),	-- Valdrakken Gilded Throne
-				i(248657),	-- Valdrakken Market Tent
-				i(249143),	-- Smoke Sconce
-				i(251495),	-- Draenic Basin
-				i(251546),	-- Argussian Circular Rug
-				i(251550),	-- Draenethyst Sconce
-				i(252035),	-- Boralus Barrel
-				i(252389),	-- Proudmoore Shipping Crate
-				i(252401),	-- Boralus Bookshelf
-				i(252755),	-- Dornogal Framed Rug
-				i(253022),	-- Dornogal Bookcase
-				i(253036),	-- Freywold Table
-				i(253164),	-- Algari Fence
-				i(253165),	-- Algari Fencepost
-				i(253167),	-- Forgeground Market Bins
-				i(253169),	-- Meadery Storage Chest
-				i(253252),	-- Replica Rumbling Wastes Drill Pod
-				i(253253),	-- Gundargaz Candelabra
-				i(257053),	-- Tapestry of the Five Flights
-				i(257400),	-- Highmountain Tanner's Frame
-				i(257402),	-- "Unity of Thorns" Tapestry
-				i(257406),	-- Smoke Lamp
-				i(257689),	-- Small Gilnean Windmill
-				i(257725),	-- Camp Narache Rug
-				i(258192),	-- Talon King's Totem
-				i(258193),	-- Draenei Holo-Projector Pedestal
-				i(258194),	-- Tempest Keep Cryo-Pod
-				i(258195),	-- Draenei Weaver's Loom
-				i(258196),	-- Draenei Transmitter
-				i(258197),	-- Crystal Signpost
-				i(258198),	-- Gilded Draenei Round Table
-				i(258199),	-- Aldor Bookcase
-				i(258200),	-- Shattrath Sconce
-				i(258201),	-- Shattrath Lamppost
-				i(258202),	-- Grand Drape of the Exiles
-				i(258203),	-- Silver Dalaran Bench
-				i(258204),	-- Dalaran Post
-				i(258205),	-- Wolvar Postbag
-				i(258206),	-- Gilded Dalaran Banner
-				i(258207),	-- Dalaran Scholar's Bookcase
-				i(258208),	-- Kirin Tor Sun Chandelier
-				i(258209),	-- Kirin Tor Crate
-				i(258210),	-- Dalaran Street Sign
-				i(258211),	-- Kirin Tor Glass Table
-				i(258215),	-- Halaa Bench
-				i(258216),	-- Reconstructed Mogu Lightning Drill
-				i(258224),	-- Dalaran Display Shelves
-				i(258225),	-- Failed Failure Detection Pylon
-				i(258226),	-- Dalaran Auto-Hammer
-				i(258227),	-- Suramar Jeweler's Assortment
-				i(258235),	-- Aspiring Soul's Chair
-				i(258238),	-- Maldraxxian Crate
-				i(258239),	-- Tome of Maldraxxian Rituals
-				i(258240),	-- Kyrian Anima Barrel
-				i(258242),	-- Hollow Night Fae Shrine
-				i(258244),	-- Broker's Hex Table
-				i(258245),	-- Ardenweald Hanging Baskets
-				i(258247),	-- Large Revendreth Storage Crate
-				i(258248),	-- Margrave's Stitched Leather Rug
-				i(258250),	-- Cartel Ta Bookcase
-				i(258252),	-- Cartel Xy Capture Crate
-				i(258253),	-- Titanic Tyrhold Fountain
-				i(258298),	-- Kirin Tor Skyline Banner
-				i(258302),	-- Pandaren Fishing Net
-				i(258303),	-- Beloved Elekk Plushie
-				i(258557),	-- Beloved Raptor Plushie
-				i(258558),	-- Sandfury Diplomat's Banner
-				i(258561),	-- Kyrian Aspirant's Rolled Cushion
 				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
 				i(238975),	-- Reliquary Telescope
 				i(239177),	-- Open Tome of Twilight Nihilism
 				i(239179),	-- Tome of Twilight Nihilism
 				i(239213),	-- Well-Lit Incontinental Loveseat
-				i(239214),	-- Well-Lit Incontinental Couch
 				i(239606),	-- Forsaken Round Rug
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
 				i(241067),	-- Large Forsaken Spiked Brazier
-				i(244313),	-- Orcish Fence
 				i(244321),	-- Orcish Lumberjack's Stool
 				i(244322),	-- Frostwolf Banded Stool
-				i(244654),	-- Small Purple Suramar Seat Cushion
-				i(244676),	-- Teal Suramar Seat Cushion
-				i(244677),	-- Purple Suramar Seat Cushion
-				i(244678),	-- Small Red Suramar Seat Cushion
 				i(244777),	-- Surwich Peddler's Wagon
 				i(245258),	-- Val'sharah Bookcase
 				i(245259),	-- Small Val'sharah Bookcase
@@ -5294,9 +5154,6 @@ root(ROOTS.Unsorted, {
 				i(245413),	-- Zandalari Sconce
 				i(245422),	-- Draenic Bookcase
 				i(245425),	-- Hanging Draenethyst Light
-				i(245431),	-- Draenor Cookpot
-				i(245433),	-- Blackrock Strongbox
-				i(245441),	-- Orcish Fencepost
 				i(245444),	-- Orcish Communal Stove
 				i(245445),	-- Frostwolf Axe-Dart Board
 				i(245449),	-- Ancient Elven Highback Chair
@@ -5330,10 +5187,7 @@ root(ROOTS.Unsorted, {
 				i(245655),	-- Filigree Moon Lamp
 				i(245698),	-- Kaldorei Stone Fence
 				i(245699),	-- Kaldorei Stone Fencepost
-				i(245701),	-- Elven Round Table
 				i(245704),	-- Bel'ameth Barrel
-				i(246001),	-- Orange Suramar Seat Cushion
-				i(246002),	-- Red Suramar Seat Cushion
 				i(246089),	-- Bel'ameth Wooden Table
 				i(246100),	-- Small Bel'ameth Tent
 				i(246110),	-- Filigree Moon Sconce
@@ -5355,14 +5209,11 @@ root(ROOTS.Unsorted, {
 				i(247663),	-- Pandaren Scholar's Bookcase
 				i(247729),	-- Pandaren Stone Lamppost
 				i(247730),	-- Red Crane Kite
-				i(247731),	-- Hanging Paper Lanterns
 				i(247732),	-- Lucky Hanging Lantern
 				i(247855),	-- Pandaren Lacquered Crate
 				i(247858),	-- Shaohao Ceremonial Bell
 				i(247908),	-- Nightborne Lantern
-				i(247912),	-- Large Traditional Shal'dorei Rug
 				i(247915),	-- Square Suramar Table
-				i(247919),	-- Traditional Shal'dorei Rug
 				i(248116),	-- Valdrakken Chandelier
 				i(248401),	-- Ornamental Kaldorei Glaive
 				i(248758),	-- Relaxing Goblin Beach Chair with Cup Gripper
@@ -5404,20 +5255,10 @@ root(ROOTS.Unsorted, {
 				i(257394),	-- Zandalari War Torch
 				i(257405),	-- Baradin Bay Fishing Rack
 				i(257412),	-- Stoppered Gilnean Barrel
-				i(257598),	-- Suramar Stepping Stone Set
-				i(257693),	-- Snowfall Tribe Scare-Totem
-				i(257694),	-- Gilnean Green Potion
-				i(257695),	-- Gilnean Postbox
-				i(257696),	-- Gilnean Map
-				i(257806),	-- Scaled Twilight Mosaic
 				i(258145),	-- Eversong Party Platter
 				i(258147),	-- Empty Lorewalker's Bookcase
-				i(258289),	-- Thunder Bluff Totem
 				i(258765),	-- Hull'n'Home Window
 				i(259071),	-- Brawler's Guild Punching Bag
-				i(260699),	-- Maldraxxian Runic Tablet
-				i(262347),	-- Draenei Crystal Chandelier
-				i(262663),	-- Kyrian Floating Lamp
 				i(263021),	-- Brumewood Hollow Grassy Patch
 				i(263022),	-- Brumewood Hollow Grassy Spread
 				i(263023),	-- Founder's Point Grassy Patch
@@ -5616,7 +5457,6 @@ root(ROOTS.Unsorted, {
 			i(247751),	-- Deactivated K'areshi Warp Cannon
 			i(249548),	-- Augmenter's Opal Banner
 			i(249824),	-- Devastator's Brazier
-			i(257393),	-- Suramar Stepping Stone
 			i(258306),	-- K'areshi Warp Platform
 			i(258320),	-- K'areshi Protectorate Portal
 			i(258666),	-- Ethereal Pipe Segment
@@ -5633,7 +5473,6 @@ root(ROOTS.Unsorted, {
 			i(264362),	-- Golden Pandaren Privacy Screen
 			i(264675),	-- Cache from the Infinite's Armory
 			i(264676),	-- Dalaran Sewer Gate
-			i(264677),	-- Rolled Scarab Rug
 			i(264678),	-- Aspirant's Ringed Banner \\ Aspirant's Ringed Sash
 			i(264679),	-- Valdrakken Wall Shelf
 			i(264706),	-- Shadow Council Torch

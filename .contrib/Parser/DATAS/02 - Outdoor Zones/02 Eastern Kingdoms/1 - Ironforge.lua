@@ -1852,7 +1852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2529,	-- Zweihander
 					}},
 				}),
-				n(246411, {	-- Inge Brightview <Library Display Enthusiast>
+				n(253232, {	-- Inge Brightview <Library Display Enthusiast>
 					["coord"] = { 75.4, 9.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_11_2_7 },
