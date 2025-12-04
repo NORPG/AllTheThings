@@ -5407,24 +5407,6 @@ root(ROOTS.Unsorted, {
 				i(243304),	-- Jubilant Snowman Costume
 				i(245580),	-- Rolling Snowball
 			}),
-			i(258625),	-- Tushui Legwraps
-			i(258626),	-- Tushui Wooden Capsa
-			i(258628),	-- Tushui Bamboo Cover
-			i(258629),	-- Tushui Charm Band
-			i(258630),	-- Tushui Sandals
-			i(258631),	-- Tushui Tunic
-			i(258632),	-- Tushui Wraps
-			i(258633),	-- Tushui Travel Belt
-			i(258634),	-- Tushui Shoulderguards
-			i(258639),	-- Huojin Legwraps
-			i(258640),	-- Huojin Wooden Capsa
-			i(258641),	-- Huojin Bamboo Cover
-			i(258642),	-- Huojin Charm Band
-			i(258643),	-- Huojin Sandals
-			i(258644),	-- Huojin Tunic
-			i(258645),	-- Huojin Wraps
-			i(258646),	-- Huojin Travel Belt
-			i(258647),	-- Huojin Shoulderguards
 			i(258648),	-- Wandering Isle Legwraps
 			i(258649),	-- Wandering Isle Capsa
 			i(258650),	-- Wandering Isle Cover
@@ -5457,17 +5439,6 @@ root(ROOTS.Unsorted, {
 			i(264349),	-- Kun-Lai Lacquered Rickshaw
 			i(264362),	-- Golden Pandaren Privacy Screen
 			i(264675),	-- Cache from the Infinite's Armory
-			i(264676),	-- Dalaran Sewer Gate
-			i(264678),	-- Aspirant's Ringed Banner \\ Aspirant's Ringed Sash
-			i(264679),	-- Valdrakken Wall Shelf
-			i(264706),	-- Shadow Council Torch
-			i(264707),	-- Resizable All-Purpose Gear
-			i(264708),	-- Home Defense Gadget
-			i(264709),	-- Stranglekelp Sack
-			i(264710),	-- Dalaran Sun Sconce
-			i(264711),	-- Joybuzz's Joyful Wall of Trains
-			i(264712),	-- Gilnean Spare Saddle
-			i(264713),	-- Heart of the Forest Banner
 			i(257928),	-- Gnomeregan Recyli-Kiln
 			i(265822),	-- Unstable Mechagon Re-Localizatron
 		})),
