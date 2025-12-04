@@ -331,12 +331,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 							i(235533, {	-- Prototype Auto-Advertiser
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 100 }},
 							}),
+							i(256327, {	-- Open Rust-Plated Storage Crate (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 450 }},
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						}, {	-- Honored
 							i(234950, {	-- Atomic Regoblinator
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
 							}),
 							i(235534, {	-- Electropuncture Test Model
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 100 }},
+							}),
+							i(245307, {	-- Undermine Bookcase (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 800 }},
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Revered
 							i(229950, {	-- Darkfuse Demolisher (MOUNT!)
@@ -367,6 +375,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 							}),
 							i(235670, {	-- Bilgewater Cartel Banner (TOY!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
+							}),
+							i(255674, {	-- Incontinental Table Lamp (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 450 }},
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(245313, {	-- Spring-Powered Undermine Chair (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 450 }},
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Revered
 							i(232845, {	-- Bilgewater Junkhauler (PET!)
@@ -434,12 +450,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 							i(235671, {	-- Blackwater Cartel Banner (TOY!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
 							}),
+							i(255642, {	-- Undermine Alleyway Sconce (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 475 }},
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						}, {	-- Revered
 							i(232839, {	-- Wavebreaker Mechasaur (PET!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 6500 }},
 							}),
 							i(235801, {	-- Personal Fishing Barge (TOY!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
+							}),
+							i(248758, {	-- Relaxing Goblin Beach Chair with Cup Gripper (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 900 }},
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Exalted
 							i(229948, {	-- Blackwater Shredder Deluxe Mk 2 (MOUNT!)
@@ -493,12 +517,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 								["sourceAchievement"] = 41627,	-- C.H.E.T.T.ing it Twice
 								["cost"] = {{ "i", 235053, 1 }},	-- Completed C.H.E.T.T. List
 							}),
+							i(245321, {	-- Rust-Plated Storage Barrel (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 400 }},
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						}, {	-- Honored
 							i(236670, {	-- Maniacal Melodies (MM!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 975 }},
 							}),
 							i(235669, {	-- Steamwheedle Cartel Banner (TOY!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
+							}),
+							i(255641, {	-- Undermine Mechanic's Hanging Lamp (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 500 }},
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Revered
 							i(232853, {	-- Eepy (PET!)
@@ -566,12 +598,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 							i(235672, {	-- Venture Co. Banner (TOY!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
 							}),
+							i(245311, {	-- Undermine Wall Shelf (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 600 }},
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						}, {	-- Revered
 							i(232851, {	-- Rocketfist (PET!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 6500 }},
 							}),
 							i(235799, {	-- Throwin' Sawblade (TOY!)
 								["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
+							}),
+							i(255647, {	-- Spring-Powered Pointer (DECOR!)
+								["cost"] = {{ "c", RESONANCE_CRYSTALS, 650 }},
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Exalted
 							i(229946, {	-- Ocher Delivery Rocket (MOUNT!)

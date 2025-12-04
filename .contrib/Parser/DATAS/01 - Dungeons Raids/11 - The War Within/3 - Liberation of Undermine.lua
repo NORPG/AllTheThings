@@ -473,6 +473,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235621, {	-- Ando the Gat <Black Market Broker>
 						["groups"] = bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
 							{		-- RENOWN 1 --
+								i(239213, {	-- Well-Lit Incontinental Loveseat (DECOR!)
+									["cost"] = 10000000,	-- 1,000g
+									["timeline"] = { ADDED_11_2_7 },
+								}),
 							}, {	-- RENOWN 2 --
 							}, {	-- RENOWN 3 --
 							}, {	-- RENOWN 4 --
@@ -750,7 +754,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				BossOnly(BANDIT, {
 					ach(41119, {	-- One Rank Higher
-						i(245302, {["timeline"] = { ADDED_11_2_7 }}),	-- Gallagio L.U.C.K. Spinner (DECOR!)
+						i(245302, {	-- Gallagio L.U.C.K. Spinner (DECOR!)
+							["crs"] = { 235621 },	-- Ando the Gat <Black Market Broker> -- TODO: revise with new Source impl
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					}),
 					ach(41120),	-- Two Ranks Higher
 					ach(41121),	-- Three Ranks Higher

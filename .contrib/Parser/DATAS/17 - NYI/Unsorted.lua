@@ -5127,7 +5127,6 @@ root(ROOTS.Unsorted, {
 				i(238975),	-- Reliquary Telescope
 				i(239177),	-- Open Tome of Twilight Nihilism
 				i(239179),	-- Tome of Twilight Nihilism
-				i(239213),	-- Well-Lit Incontinental Loveseat
 				i(239606),	-- Forsaken Round Rug
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
@@ -5145,12 +5144,8 @@ root(ROOTS.Unsorted, {
 				i(245291),	-- Replica Dark Iron Mole Machine
 				i(245293),	-- Collection of Arathi Scripture
 				i(245294),	-- Councilward's Jeweled Goblet
-				i(245307),	-- Undermine Bookcase
 				i(245309),	-- Rusty Patchwork Tub
-				i(245311),	-- Undermine Wall Shelf
-				i(245313),	-- Spring-Powered Undermine Chair
 				i(245320),	-- Very Reliable Undermine Lamppost
-				i(245321),	-- Rust-Plated Storage Barrel
 				i(245413),	-- Zandalari Sconce
 				i(245422),	-- Draenic Bookcase
 				i(245425),	-- Hanging Draenethyst Light
@@ -5216,7 +5211,6 @@ root(ROOTS.Unsorted, {
 				i(247915),	-- Square Suramar Table
 				i(248116),	-- Valdrakken Chandelier
 				i(248401),	-- Ornamental Kaldorei Glaive
-				i(248758),	-- Relaxing Goblin Beach Chair with Cup Gripper
 				i(248808),	-- Nesingwary Elk Trophy
 				i(248934),	-- Golden Cloud Serpent Treasure Chest
 				i(249545),	-- Preserver's Censer
@@ -5241,13 +5235,8 @@ root(ROOTS.Unsorted, {
 				i(253021),	-- Freywold Bench
 				i(253035),	-- Freywold Seat
 				i(253166),	-- Freywold Fountain
-				i(255641),	-- Undermine Mechanic's Hanging Lamp
-				i(255642),	-- Undermine Alleyway Sconce
-				i(255647),	-- Spring-Powered Pointer
 				i(255673),	-- Moonclasp Satchel
-				i(255674),	-- Incontinental Table Lamp
 				i(255840),	-- Champion Brawler's Gloves
-				i(256327),	-- Open Rust-Plated Storage Crate
 				i(256328),	-- Leftover Undermine Takeout
 				i(256903),	-- Gilnean Banded Crate
 				i(256905),	-- Small Gilnean Table
