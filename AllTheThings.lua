@@ -3175,7 +3175,7 @@ customWindowUpdates.NWP = function(self, force)
 		end
 		local NWPwindow = {
 			text = L.NEW_WITH_PATCH,
-			icon = app.asset("WindowIcon_RWP"),
+			icon = app.asset("Interface_Newly_Added"),
 			description = L.NEW_WITH_PATCH_TOOLTIP,
 			visible = true,
 			back = 1,
@@ -3370,7 +3370,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 		end
 		local AWPwindow = {
 			text = L.ADDED_WITH_PATCH,
-			icon = 135769,
+			icon = app.asset("Interface_Newly_Added"),
 			description = L.ADDED_WITH_PATCH_TOOLTIP,
 			visible = true,
 			back = 1,
@@ -4124,7 +4124,7 @@ customWindowUpdates.RWP = function(self, force)
 		end
 		self.initialized = true;
 		self:SetData(app.CreateRawText(L.FUTURE_UNOBTAINABLE, {
-			["icon"] = app.asset("WindowIcon_RWP"),
+			["icon"] = app.asset("Interface_Future_Unobtainable"),
 			["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
 			["visible"] = true,
 			["back"] = 1,
