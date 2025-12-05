@@ -143,39 +143,51 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								q(94415),	-- Plumbing the Void
 								q(94416),	-- Rehoming Technology
 								i(258667, {	-- Angled Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800 } },
 								}),
 								i(258669, {	-- Corner Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800 } },
 								}),
 								i(247751, {	-- Deactivated K'areshi Warp Cannon (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 2000 } },
 								}),
 								i(258666, {	-- Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800 } },
 								}),
 								i(258885, {	-- Exposed Angled Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800 } },
 								}),
 								i(258766, {	-- Exposed Corner Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800 } },
 								}),
 								i(258835, {	-- Exposed Intersecting Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800 } },
 								}),
 								i(258767, {	-- Exposed Long Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800} },
 								}),
 								i(258306, {	-- K'areshi Warp Platform (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 1000 } },
 								}),
 								i(258320, {	-- K'areshi Protectorate Portal (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 1000 } },
 								}),
 								i(258668, {	-- Long Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800 } },
 								}),
 								i(258836, {	-- Reinforced Corner Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { {"c", RESONANCE_CRYSTALS, 800 } },
 								}),
 							}, {	-- RENOWN 2 --

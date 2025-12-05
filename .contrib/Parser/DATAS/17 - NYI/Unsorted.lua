@@ -5709,7 +5709,6 @@ root(ROOTS.Unsorted, {
 			n(DECOR, {
 				i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
 				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
-				i(238975),	-- Reliquary Telescope
 				i(239177),	-- Open Tome of Twilight Nihilism
 				i(239179),	-- Tome of Twilight Nihilism
 				i(239606),	-- Forsaken Round Rug
@@ -5720,13 +5719,7 @@ root(ROOTS.Unsorted, {
 				i(244322),	-- Frostwolf Banded Stool
 				i(244777),	-- Surwich Peddler's Wagon
 				i(245259),	-- Small Val'sharah Bookcase
-				i(245283),	-- Blood Elven Candelabra
-				i(245285),	-- Reliquary Storage Crate
-				i(245286),	-- Rectangular Sin'dorei Rug
-				i(245287),	-- Long Sin'dorei Rug
-				i(245288),	-- Circular Sin'dorei Rug
 				i(245291),	-- Replica Dark Iron Mole Machine
-				i(245293),	-- Collection of Arathi Scripture
 				i(245294),	-- Councilward's Jeweled Goblet
 				i(245413),	-- Zandalari Sconce
 				i(245425),	-- Hanging Draenethyst Light
@@ -5754,14 +5747,9 @@ root(ROOTS.Unsorted, {
 				i(245495),	-- Dazar'alor Market Tent
 				i(245500),	-- Red Dazar'alor Tent
 				i(245501),	-- Venthyr Tome of Unforgiven Sins
-				i(245512),	-- Pandaren Cradle Stool
 				i(245624),	-- Waning Wood Fence
-				i(245625),	-- Bel'ameth Bench
 				i(245627),	-- Elven Temple Brazier
 				i(245655),	-- Filigree Moon Lamp
-				i(245704),	-- Bel'ameth Barrel
-				i(246089),	-- Bel'ameth Wooden Table
-				i(246100),	-- Small Bel'ameth Tent
 				i(246110),	-- Filigree Moon Sconce
 				i(246424),	-- Square Stormpike Table
 				i(246481),	-- Retired Industrial Gnomegrabber
@@ -5773,23 +5761,17 @@ root(ROOTS.Unsorted, {
 				i(246847),	-- Tome of Draenei Faith
 				i(246848),	-- Scribe's Working Notes
 				i(246860),	-- Tome of Forsaken Resilience
-				i(247662),	-- Pandaren Scholar's Lectern
-				i(247663),	-- Pandaren Scholar's Bookcase
 				i(247729),	-- Pandaren Stone Lamppost
 				i(247730),	-- Red Crane Kite
 				i(247732),	-- Lucky Hanging Lantern
-				i(247855),	-- Pandaren Lacquered Crate
-				i(247858),	-- Shaohao Ceremonial Bell
 				i(247908),	-- Nightborne Lantern
 				i(247915),	-- Square Suramar Table
 				i(248116),	-- Valdrakken Chandelier
-				i(248401),	-- Ornamental Kaldorei Glaive
 				i(248808),	-- Nesingwary Elk Trophy
 				i(248934),	-- Golden Cloud Serpent Treasure Chest
 				i(249545),	-- Preserver's Censer
 				i(249547),	-- Evoker's Elegant Rug
 				i(249549),	-- Draconic Crafter's Table
-				i(251022),	-- Bel'ameth Traveler's Pack
 				i(251329),	-- Shadowmoon Open-Air Shed
 				i(251330),	-- Draenic Fencepost
 				i(251477),	-- Draenic Wooden Table
@@ -5813,7 +5795,6 @@ root(ROOTS.Unsorted, {
 				i(257352),	-- Large Brazier of Elune
 				i(257394),	-- Zandalari War Torch
 				i(258145),	-- Eversong Party Platter
-				i(258147),	-- Empty Lorewalker's Bookcase
 				i(258765),	-- Hull'n'Home Window
 				i(259071),	-- Brawler's Guild Punching Bag
 				i(263021),	-- Brumewood Hollow Grassy Patch

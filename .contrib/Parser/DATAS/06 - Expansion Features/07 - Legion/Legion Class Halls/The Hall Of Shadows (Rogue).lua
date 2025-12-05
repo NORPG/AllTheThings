@@ -1061,14 +1061,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								i(139588),	-- Pack of Battle Potions
 							}),
 							o(252284, {	-- Pile of Sticky Bombs
-								i(139584),	-- Sticky Bombs
+								["coord"] = { 30.8, 59.1, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139584) },	-- Sticky Bombs
 							}),
 							o(252272, {	-- Smoky Boots
 								i(139592),	-- Smoky Boots
 								i(130324),	-- Boots of Artful Dodging
 							}),
 							o(252282, {	-- Sparkling Set of Keys
-								i(94222),	-- Key to the Palace of Lei Shen
+								["coord"] = { 37.3, 59.6, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(94222) },	-- Key to the Palace of Lei Shen
 							}),
 							o(252279, {	-- Stolen Tome of Artifact Lore
 								i(139591),	-- Stolen Tome of Artifact Lore

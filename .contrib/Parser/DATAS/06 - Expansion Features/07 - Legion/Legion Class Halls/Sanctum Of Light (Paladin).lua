@@ -783,11 +783,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["classes"] = { PALADIN },
 						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 						["groups"] = {
-							i(143890),	-- Boots of Kicking (QI!)
-							i(143891),	-- Gauntless of Huge Grapsing (QI!)
-							i(143777),	-- Helm of Greatness (QI!)
-							i(143782),	-- Pants of Wonderment (QI!)
-							i(143889),	-- Spaulders of Hugeness (QI!)
+							o(267031, {	-- Sack of Armor
+								["coords"] = {
+									{ 44.3, 9.4, HIGHMOUNTAIN },
+									{ 44.8, 11.2, HIGHMOUNTAIN },
+									{ 44.9, 7.5, HIGHMOUNTAIN },
+									{ 45.0, 7.4, HIGHMOUNTAIN },
+									{ 46.2, 9.1, HIGHMOUNTAIN },
+									{ 47.2, 7.4, HIGHMOUNTAIN },
+									{ 49.5, 7.1, HIGHMOUNTAIN },
+									{ 49.6, 9.4, HIGHMOUNTAIN },
+									{ 50.8, 9.6, HIGHMOUNTAIN },
+									{ 51.8, 11.3, HIGHMOUNTAIN },
+									{ 53.0, 11.4, HIGHMOUNTAIN },
+									{ 54.0, 13.0, HIGHMOUNTAIN },
+									{ 55.3, 15.2, HIGHMOUNTAIN },
+								},
+								["groups"] = {
+									i(143890),	-- Boots of Kicking (QI!)
+									i(143891),	-- Gauntless of Huge Grapsing (QI!)
+									i(143777),	-- Helm of Greatness (QI!)
+									i(143782),	-- Pants of Wonderment (QI!)
+									i(143889),	-- Spaulders of Hugeness (QI!)
+								},
+							}),
 						},
 					}),
 					q(44220, {	-- Blessing of the Order
@@ -882,7 +901,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(45813, {	-- Where Art Thou, My Sweet
 						["sourceQuests"] = { 45645 },	-- A Fool's Errand
 						["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
-						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 48.6, 40.9, LEGION_DALARAN },
 						["classes"] = { PALADIN },
 						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 						["groups"] = { follower(1001) },	-- Maximillian of Northshire
