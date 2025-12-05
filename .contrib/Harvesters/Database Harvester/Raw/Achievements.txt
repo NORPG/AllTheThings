@@ -17634,3 +17634,55 @@
 62184@@@Prey: Breaking the Blade Nightmare)
 62222@@@Abyss Anglers: The Amani Way
 62223@@@Alchemy-on-Demand
+12.0.0.64741
+40016@@@Improving on History
+40018@@@Unleashed Monstrosities
+41806@@@Breaching the Voidstorm
+61467@@@Lorewalking: The Elves of Quel'Thalas
+61520@@@Explore Harandar
+61522@@@Skyriding Glyphs: Brightwing Estate
+61524@@@Skyriding Glyphs: Goldenmist Village
+61581@@@Zul'Aman Glyph Hunter
+61635@@@Voidspire: Weapons of the Void
+61636@@@Voidspire: Fanatics of the Light
+61637@@@Voidspire: Crown of the Cosmos
+61855@@@Explore Eversong Woods
+61856@@@Explore Zul'Aman
+61857@@@Explore Voidstorm
+61916@@@Rage of the Ren'dorei
+62230@@@Die in a Delve
+62232@@@Blacksmithing-on-Demand
+62233@@@Enchanting-on-Demand
+62234@@@Engineering-on-Demand
+62235@@@Inscription-on-Demand
+62236@@@Jewelcrafting-on-Demand
+62237@@@Leatherworking-on-Demand
+62238@@@Tailoring-on-Demand
+62239@@@Dedicated to the Craft: Alchemy
+62240@@@Dedicated to the Craft: Blacksmithing
+62241@@@Dedicated to the Craft: Enchanting
+62242@@@Dedicated to the Craft: Engineering
+62243@@@Dedicated to the Craft: Inscription
+62244@@@Dedicated to the Craft: Jewelcrafting
+62245@@@Dedicated to the Craft: Leatherworking
+62246@@@Dedicated to the Craft: Tailoring
+62247@@@Herbalism-on-Demand
+62248@@@Mining-on-Demand
+62249@@@Skinning-on-Demand
+62250@@@Dedicated to the Craft: Herbalism
+62251@@@Dedicated to the Craft: Mining
+62252@@@Dedicated to the Craft: Skinning
+62256@@@Yelling into the Voidstorm
+62260@@@That's Aln, Folks!
+62261@@@Forever Song
+62262@@@Silvermoon Court Champion
+62263@@@Amani Tribe Champion
+62264@@@Hara'ti Champion
+62265@@@The Singularity Champion
+62266@@@Abundance: An Acolyte no Longer
+62267@@@A Most Violent Loa
+62268@@@Abundance: Professionals Only
+62269@@@Altar of Blessings: Amani Curious
+62270@@@Altar of Blessings: One for Altar
+62271@@@Abyss Anglers: Trench Berserker
+62272@@@Abyss Anglers: Certified Depthdiver

@@ -2447,3 +2447,10 @@
 1261348@@@Blessed Amani Burrower
 1261360@@@Ancestral War Bear
 1261576@@@Hexed Vilefeather Eagle
+12.0.0.64741
+3363@@@Lost Nether Drake
+1243003@@@Light-forged Mechsuit
+1261332@@@Duskbrute Harrower
+1266703@@@Lab-grown Stormray
+1270522@@@Comfy Bel'ameth Flying Quilt
+1270523@@@Comfy Silvermoon Flying Quilt
