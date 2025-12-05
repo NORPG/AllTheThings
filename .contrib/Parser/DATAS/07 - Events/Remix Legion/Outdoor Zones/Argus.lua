@@ -25,8 +25,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 					}),
-					ach(42693),	-- Breaking the Legion I
-					ach(42694),	-- Breaking the Legion II
+					achpart(42693, 42695),	-- Breaking the Legion I
+					achpart(42694, 42695),	-- Breaking the Legion II
 					ach(42695),	-- Breaking the Legion III
 					ach(60818),	-- Elusive Foes: Argus
 					ach(60817),	-- Explore Argus
