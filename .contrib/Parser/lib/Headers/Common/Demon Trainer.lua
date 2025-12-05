@@ -7,7 +7,7 @@ DEMON_TRAINER = createHeader({
 		es = "Instructor de demonios",
 		mx = "Instructor de demonios",
 		fr = "Maître des démons",
-		-- TODO: it = "",
+		-- it = "Demon Trainer",
 		ko = "악마 훈련사",
 		pt = "Treinamento de Demônios",
 		ru = "Наставник демонов",
@@ -24,7 +24,7 @@ DEMON_TRAINER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "术士可以教导他们的恶魔新技能，一些高等级的魔典只能从你阵营首都的恶魔训练师那里购买。",
 		tw = "術士可以教導他們的惡魔新技能，一些高等級的魔典只能從你陣營首都的惡魔訓練師那裡購買。",
 	},
 });

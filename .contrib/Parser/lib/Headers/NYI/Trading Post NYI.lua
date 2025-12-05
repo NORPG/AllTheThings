@@ -11,7 +11,7 @@ TRADING_POST_NYI = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "货栈",
+		tw = "貿易站",
 	},
 });
