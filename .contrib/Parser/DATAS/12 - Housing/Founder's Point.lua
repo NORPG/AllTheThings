@@ -53,7 +53,8 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, bubbleDownSelf({ ["timeline"] = { ADDED_11
 	header(HEADERS.Quest, 92969, sharedData({	-- Decor Treasure Hunt
 		-- qg is added to the mobileDB because, even with sharedData, it triggers contrib reports. Temp fix until it gets sorted?
 		["qg"] = 248854,	-- The Last Architect
-		["coord"] = { 52.7, 37.5, FOUNDERS_POINT },
+		-- this allows proper merging with 'coord' used below
+		["coords"] = {{ 52.7, 37.5, FOUNDERS_POINT }},
 	},{
 		q(92437, {	-- Decor Treasure Hunt
 			["groups"] = { i(245375) },	-- Sturdy Wooden Bookcase (DECOR!)
@@ -151,6 +152,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, bubbleDownSelf({ ["timeline"] = { ADDED_11
 			["groups"] = { i(245372) },	-- Covered Wooden Table (DECOR!)
 		}),
 		q(92984, {	-- Decor Treasure Hunt
+			["coord"] = { 42.7, 53.9, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(245336) },	-- Sturdy Wooden Bed (DECOR!)
 		}),
 		q(92985, {	-- Decor Treasure Hunt
