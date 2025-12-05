@@ -2111,6 +2111,7 @@ local AccountWideQuestsDB = {
 	92628,	-- ??
 	92680,	-- Ensemble: World-Defiler's Battle Armor
 	92681,	-- Ensemble: Zealous Felslingers Battle Armor
+	92733,	-- Triggered after entering house
 	92861,	-- Ensemble: Eredath Lightseeker's Regalia
 	92862,	-- Ensemble: Forgotten Conservatory Clothes
 	92863,	-- Ensemble: Triumvirate High Guard's Battlegear
@@ -2119,6 +2120,8 @@ local AccountWideQuestsDB = {
 	93057,	-- A House For You
 	94210,	-- Feathering the Nest
 	94379,	-- This Old Hearth
+	94415,	-- Plumbing the Void
+	94416,	-- Rehoming Technology
 	94455,	-- Home at Last
 	-- #ENDIF
 }

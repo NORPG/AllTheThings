@@ -603,6 +603,14 @@ root(ROOTS.Zones, {
 							},
 							["groups"] = bubbleDownClassicRep(FACTION_ARGUSSIAN_REACH, {
 								{		-- Neutral
+									i(245422, {	-- Draenic Bookcase (DECOR!)
+										["timeline"] = { ADDED_11_2_7 },
+										["cost"] = 2400000,	-- 240g
+									}),
+									i(251480, {	-- Draenic Wooden Wall Shelf (DECOR!)
+										["timeline"] = { ADDED_11_2_7 },
+										["cost"] = 6400000,	-- 640g
+									}),
 								}, {	-- Friendly
 									i(152658),	-- Formula: Chaos Shatter (RECIPE!)
 									i(152725),	-- Technique: Mass Mill Astral Glory (RECIPE!)

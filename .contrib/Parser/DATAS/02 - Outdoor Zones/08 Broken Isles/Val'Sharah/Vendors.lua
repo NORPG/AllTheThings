@@ -4,6 +4,18 @@
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		n(VENDORS, {
+			n(252498, {	-- Corbin Branbell <Decor Specialist>
+				["coord"] = { 42.1, 59.4, VALSHARAH },
+				["timeline"] = { ADDED_11_2_7 },
+				["groups"] = {
+					i(245615, {	-- Bradensbrook Smoke Lantern (DECOR!)
+						["cost"] = { { "c", ORDER_RESOURCES, 350 } },	-- 350x Order Resource
+					}),
+					i(245616, {	-- Bradensbrook Thorned Well (DECOR!)
+						["cost"] = { { "c", ORDER_RESOURCES, 1000 } },	-- 1000x Order Resource
+					}),
+				},
+			}),
 			n(112634, {	-- Hilseth Travelstride <Provisioner>
 				["coords"] = {	-- Walks back-and-forth between the coordinates
 					{ 57.2, 72.4, VALSHARAH },
@@ -13,11 +25,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["groups"] = {
 					i(245260, {	-- Kaldorei Chef's Table (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = {{ "c", ORDER_RESOURCES, 400 }},	-- 400x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 400 } },	-- 400x Order Resource
 					}),
 					i(238863, {	-- Kaldorei Desk (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = {{ "c", ORDER_RESOURCES, 300 }},	-- 300x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 300 } },	-- 300x Order Resource
 					}),
 				},
 			}),
@@ -26,6 +38,23 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["groups"] = {
 					i(127022, {	-- Pattern: Imbued Silkweave Cinch [Rank 1] (RECIPE!)
 						["cost"] = {{ "i", 124437, 100 }},	-- 100x Shal'dorei Silk
+					}),
+				},
+			}),
+			n(109306, {	-- Myria Glenbrook
+				["coord"] = { 60.2, 84.9, VALSHARAH },
+				["groups"] = {
+					i(245698, {	-- Kaldorei Stone Fence (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", ORDER_RESOURCES, 150 } },	-- 150x Order Resource
+					}),
+					i(245699, {	-- Kaldorei Stone Fencepost (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", ORDER_RESOURCES, 75 } },	-- 75x Order Resource
+					}),
+					i(245258, {	-- Val'sharah Bookcase (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", ORDER_RESOURCES, 800 } },	-- 800x Order Resource
 					}),
 				},
 			}),

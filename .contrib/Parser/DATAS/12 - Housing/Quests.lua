@@ -125,7 +125,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(236678) },	-- Stormwind Interior Doorway (DECOR!)
 		}),
 		q(92968, {	-- Decor Treasure Hunt
-			-- WoWhead Comment: /way 52.83, 66.83
+			["coord"] = { 52.8, 66.9, FOUNDERS_POINT },
 			["groups"] = { i(236677) },	-- Stormwind Interior Wall (DECOR!)
 		}),
 		q(92969, {	-- Decor Treasure Hunt

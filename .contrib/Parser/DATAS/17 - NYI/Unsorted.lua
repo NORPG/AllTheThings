@@ -5134,7 +5134,6 @@ root(ROOTS.Unsorted, {
 				i(244321),	-- Orcish Lumberjack's Stool
 				i(244322),	-- Frostwolf Banded Stool
 				i(244777),	-- Surwich Peddler's Wagon
-				i(245258),	-- Val'sharah Bookcase
 				i(245259),	-- Small Val'sharah Bookcase
 				i(245283),	-- Blood Elven Candelabra
 				i(245285),	-- Reliquary Storage Crate
@@ -5146,7 +5145,6 @@ root(ROOTS.Unsorted, {
 				i(245294),	-- Councilward's Jeweled Goblet
 				i(245320),	-- Very Reliable Undermine Lamppost
 				i(245413),	-- Zandalari Sconce
-				i(245422),	-- Draenic Bookcase
 				i(245425),	-- Hanging Draenethyst Light
 				i(245444),	-- Orcish Communal Stove
 				i(245445),	-- Frostwolf Axe-Dart Board
@@ -5173,14 +5171,10 @@ root(ROOTS.Unsorted, {
 				i(245500),	-- Red Dazar'alor Tent
 				i(245501),	-- Venthyr Tome of Unforgiven Sins
 				i(245512),	-- Pandaren Cradle Stool
-				i(245615),	-- Bradensbrook Smoke Lantern
-				i(245616),	-- Bradensbrook Thorned Well
 				i(245624),	-- Waning Wood Fence
 				i(245625),	-- Bel'ameth Bench
 				i(245627),	-- Elven Temple Brazier
 				i(245655),	-- Filigree Moon Lamp
-				i(245698),	-- Kaldorei Stone Fence
-				i(245699),	-- Kaldorei Stone Fencepost
 				i(245704),	-- Bel'ameth Barrel
 				i(246089),	-- Bel'ameth Wooden Table
 				i(246100),	-- Small Bel'ameth Tent
@@ -5195,7 +5189,6 @@ root(ROOTS.Unsorted, {
 				i(246847),	-- Tome of Draenei Faith
 				i(246848),	-- Scribe's Working Notes
 				i(246860),	-- Tome of Forsaken Resilience
-				i(246864),	-- Tome of the Lost Dragon
 				i(247662),	-- Pandaren Scholar's Lectern
 				i(247663),	-- Pandaren Scholar's Bookcase
 				i(247729),	-- Pandaren Stone Lamppost
@@ -5217,7 +5210,6 @@ root(ROOTS.Unsorted, {
 				i(251330),	-- Draenic Fencepost
 				i(251477),	-- Draenic Wooden Table
 				i(251478),	-- Square Draenic Table
-				i(251480),	-- Draenic Wooden Wall Shelf
 				i(251547),	-- Draenei Farmer's Trellis
 				i(251548),	-- Draenic Fence
 				i(251549),	-- Emblem of the Naaru's Blessing
@@ -5238,8 +5230,6 @@ root(ROOTS.Unsorted, {
 				i(256905),	-- Small Gilnean Table
 				i(257352),	-- Large Brazier of Elune
 				i(257394),	-- Zandalari War Torch
-				i(257405),	-- Baradin Bay Fishing Rack
-				i(257412),	-- Stoppered Gilnean Barrel
 				i(258145),	-- Eversong Party Platter
 				i(258147),	-- Empty Lorewalker's Bookcase
 				i(258765),	-- Hull'n'Home Window
@@ -5439,7 +5429,6 @@ root(ROOTS.Unsorted, {
 			i(264349),	-- Kun-Lai Lacquered Rickshaw
 			i(264362),	-- Golden Pandaren Privacy Screen
 			i(264675),	-- Cache from the Infinite's Armory
-			i(257928),	-- Gnomeregan Recyli-Kiln
 			i(265822),	-- Unstable Mechagon Re-Localizatron
 		})),
 		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
@@ -5493,12 +5482,6 @@ root(ROOTS.Unsorted, {
 			i(239969),	-- Fel-marked Greaves
 			i(239970),	-- Fel-marked Cinch
 			i(240396),	-- Suramar Silver Mantle
-			i(240563),	-- Vileweave Gloves
-			i(240564),	-- Vileweave Bindings
-			i(240567),	-- Vileweave Cord
-			i(240569),	-- Vileweave Vestments
-			i(240570),	-- Vileweave Shawl
-			i(240571),	-- Vileweave Guise
 			i(241595),	-- Ensemble: Funerary Plate of the Chosen Dead
 			i(241598),	-- Ensemble: Funerary Plate of the Chosen Dead
 			i(241600),	-- Ensemble: Chains of the Chosen Dead
