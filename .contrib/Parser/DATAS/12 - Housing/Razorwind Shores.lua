@@ -1,9 +1,18 @@
 ---------------------------------------------
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
--- TODO: de-duplicate somehow. seems each vendor has a counterpart in the opposing zone, but nothing is really faction-based
--- TODO: instead of duplicate rewards on vendors + source quest, maybe we can link them via crs and rely on Filler? need to test...
 root(ROOTS.Housing, m(RAZORWIND_SHORES, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	n(EXPLORATION, {
+		visit_exploration(16226,{coord={58.6,49.3,2351}}),	-- Cragthorn Highlands
+		visit_exploration(16687,{coord={63.7,47.7,2351}}),	-- Four Sisters
+		visit_exploration(16688,{coord={53.7,71.2,2351}}),	-- Ragewater Springs
+		map_exploration(15524,{coord={54.0,50.0,2351}}),	-- Razorwind Shores
+		visit_exploration(16228,{coord={45.9,54.7,2351}}),	-- Runetotem's Bounty
+		visit_exploration(16229,{coord={41.1,69.7,2351}}),	-- Saltfang Shoals
+		visit_exploration(16690,{coord={41.0,75.6,2351}}),	-- Scorchsong Isle
+		visit_exploration(16589,{coord={55.6,56.2,2351}}),	-- The Common
+		visit_exploration(16753,{coord={62.2,76.9,2351}}),	-- The Bloom
+	}),
 	n(FLIGHT_PATHS, {
 		fp(2978, {	-- Cragthorn Highlands, Razorwind Shores
 			["coord"] = { 66.3, 56.5, RAZORWIND_SHORES },

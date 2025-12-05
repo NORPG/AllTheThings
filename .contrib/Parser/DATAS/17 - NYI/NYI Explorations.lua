@@ -1146,5 +1146,19 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(15334),	-- 11.2 - Karesh Test
 			exploration(15798),	-- Wastelander Ruins [PH] - UNUSED
 		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			-- NYI?
+			exploration(16541),	-- 12DUR_Oasis_TEST_MCarwen
+			exploration(15529),	-- Azshara_DemoArea
+			exploration(15512),	-- Dreg_DemoArea
+			exploration(15534),	-- Dreg_DemoArea_Flood
+			exploration(16227),	-- DurotarMain_Housing
+			exploration(15511),	-- Durotar_DemoArea
+			exploration(16107),	-- Elwynn 2 test
+			exploration(15542),	-- Housing NPC Prototype Neighborhood
+			exploration(15515),	-- Housing_Plots
+		})),
 	}),
 }));
