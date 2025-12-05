@@ -5728,7 +5728,6 @@ root(ROOTS.Unsorted, {
 				i(245291),	-- Replica Dark Iron Mole Machine
 				i(245293),	-- Collection of Arathi Scripture
 				i(245294),	-- Councilward's Jeweled Goblet
-				i(245320),	-- Very Reliable Undermine Lamppost
 				i(245413),	-- Zandalari Sconce
 				i(245425),	-- Hanging Draenethyst Light
 				i(245444),	-- Orcish Communal Stove
@@ -5808,9 +5807,7 @@ root(ROOTS.Unsorted, {
 				i(253021),	-- Freywold Bench
 				i(253035),	-- Freywold Seat
 				i(253166),	-- Freywold Fountain
-				i(255673),	-- Moonclasp Satchel
 				i(255840),	-- Champion Brawler's Gloves
-				i(256328),	-- Leftover Undermine Takeout
 				i(256903),	-- Gilnean Banded Crate
 				i(256905),	-- Small Gilnean Table
 				i(257352),	-- Large Brazier of Elune
@@ -5858,7 +5855,6 @@ root(ROOTS.Unsorted, {
 				i(244906),	-- Gently Shaken Gift
 				i(244908),	-- Winter Veil Gift
 				i(252990),	-- Drustvar Candies
-				i(263508),	-- Human Brain
 				i(260428),	-- Raw Mussel
 				i(260429),	-- Crescent Cove Crab
 				i(260519),	-- Farm Carrots
@@ -5991,25 +5987,8 @@ root(ROOTS.Unsorted, {
 			i(258654),	-- Wandering Isle Wraps
 			i(258655),	-- Wandering Isle Travel Belt
 			i(258656),	-- Wandering Isle Shoulderguards
-			i(245400),	-- Ceiling Cobweb
-			i(245401),	-- Tented Cobweb
-			i(245402),	-- Small Dangling Cobweb
-			i(245403),	-- Large Dangling Cobweb
-			i(245404),	-- Pillar Cobweb
-			i(247751),	-- Deactivated K'areshi Warp Cannon
 			i(249548),	-- Augmenter's Opal Banner
 			i(249824),	-- Devastator's Brazier
-			i(258306),	-- K'areshi Warp Platform
-			i(258320),	-- K'areshi Protectorate Portal
-			i(258666),	-- Ethereal Pipe Segment
-			i(258667),	-- Angled Ethereal Pipe Segment
-			i(258668),	-- Long Ethereal Pipe Segment
-			i(258669),	-- Corner Ethereal Pipe Segment
-			i(258766),	-- Exposed Corner Ethereal Pipe Segment
-			i(258767),	-- Exposed Long Ethereal Pipe Segment
-			i(258835),	-- Exposed Intersecting Ethereal Pipe Segment
-			i(258836),	-- Exposed Corner Ethereal Pipe Segment \\ Reinforced Corner Ethereal Pipe Segment
-			i(258885),	-- Exposed Angled Ethereal Pipe Segment
 			i(264242),	-- Dreadscar Battle Planning Map
 			i(264349),	-- Kun-Lai Lacquered Rickshaw
 			i(264362),	-- Golden Pandaren Privacy Screen
@@ -7224,12 +7203,10 @@ root(ROOTS.Unsorted, {
 				i(163040),	-- Storm Glider
 				i(163059),	-- Spoils of Jani
 				i(163062),	-- Crude Saurid Effigy
-				i(163064),	-- Silver Monkey Statue \\ Three Piece Silver Monkey Statue
 				i(163065),	-- Tusk Wax
 				i(163066),	-- Calcified Mosquito
 				i(163067),	-- Jacunda Tooth
 				i(163068),	-- Axebeak Feather
-				i(163069),	-- Cursed Coin
 				i(163070),	-- Rumpled Hat
 				i(163071),	-- Stinkbomb Casing
 				i(163074),	-- Hard White Pellet \\ Pile of Hard White Pellets
@@ -7390,7 +7367,6 @@ root(ROOTS.Unsorted, {
 				i(158766),	-- PH Flavor - Unused \\ PH Flavor - Diemetradon - Dinosaur
 				i(158767),	-- PH Flavor - Unused \\ PH Flavor - Gorilla
 				i(158768),	-- PH Flavor - Unused \\ PH Flavor - Carrion Bird - Bird
-				i(158769),	-- Monkey's Paw
 				i(158772),	-- PH Flavor - Unused \\ PH Flavor - Slime / Spore
 				i(158774),	-- PH Flavor - Unused \\ PH Flavor - Kraken
 				i(158776),	-- PH Flavor - Unused \\ PH Flavor - Hydra - Reptile
@@ -7416,7 +7392,6 @@ root(ROOTS.Unsorted, {
 				i(158815),	-- Stonebreaker Scale \\ PH Flavor - Raptor - Dinosaur
 				i(158816),	-- PH Flavor - Unused \\ PH Flavor - Dog
 				i(158817),	-- Razorpetal \\ PH Flavor - Snake - Reptile
-				i(158819),	-- Rat Tail \\ PH Flavor - Spider - Insect
 				i(158822),	-- Lustrous Black Feather \\ PH Flavor - Wind Serpent
 				i(158824),	-- PH Flavor - Unused \\ PH Flavor - Firefly - Insect
 				i(158825),	-- PH Flavor - Unused \\ PH Flavor - K'thir
@@ -7457,7 +7432,6 @@ root(ROOTS.Unsorted, {
 				i(163898),	-- Tiny Loa Effigy
 				i(163899),	-- Bone Sail Needle
 				i(163900),	-- Handbook of Knot Tying
-				i(163901),	-- Waterproof Flintbox
 				i(163902),	-- Treasure Map Fragment
 				i(163903),	-- Half-Eaten Sausage
 				i(163904),	-- Leaky Grog Flask
@@ -7475,7 +7449,6 @@ root(ROOTS.Unsorted, {
 				i(163917),	-- Tusk File
 				i(163919),	-- String of Broken Tusks
 				i(163920),	-- Bracelet of Teeth
-				i(163921),	-- Tiny Wicker Effigy
 				i(160551),	-- Partially Digested Mystery Meat
 				i(160560),	-- Piece of Wreckage
 				i(160579),	-- Digested Krolusk Chitin

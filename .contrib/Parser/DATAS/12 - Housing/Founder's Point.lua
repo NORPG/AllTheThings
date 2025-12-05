@@ -619,6 +619,16 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, bubbleDownSelf({ ["timeline"] = { ADDED_11
 		n(255942, {	-- Jendry Clockson <Donut Vendor>
 			["groups"] = { i(260588) },	-- Jendry's Donut
 		}),
+		n(256750, {	-- Klasa <Preowned Parts>
+			["coord"] = { 58.3, 61.7, FOUNDERS_POINT },
+			["groups"] = {
+				i(245400),	-- Ceiling Cobweb (DECOR!)
+				i(245401),	-- Tented Cobweb (DECOR!)
+				i(245402),	-- Small Dangling Cobweb (DECOR!)
+				i(245403),	-- Large Dangling Cobweb (DECOR!)
+				i(245404),	-- Pillar Cobweb (DECOR!)
+			},
+		}),
 		n(255519, {	-- Lestia Goldenstrike <Lumberjack>
 			["coord"] = { 51.9, 38.7, FOUNDERS_POINT },
 			["groups"] = { i(253580) },	-- Harvesting Hatchet

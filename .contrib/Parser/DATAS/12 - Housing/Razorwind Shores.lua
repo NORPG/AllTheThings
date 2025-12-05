@@ -320,7 +320,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, bubbleDownSelf({ ["timeline"] = { ADDED_
 				i(246106),	-- Wooden Chamberstick (DECOR!)
 				i(245656),	-- Wooden Gazebo (DECOR!)
 				i(245551),	-- Worker's Wooden Desk (DECOR!)
-
 			},
 		}),
 		n(255319, {	-- "Yen" Malone <Decor Vendor>
@@ -406,6 +405,16 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, bubbleDownSelf({ ["timeline"] = { ADDED_
 				i(241625,{["timeline"]={CREATED_11_2_7}}),	-- Open Elven Wood Crate (DECOR!)
 				i(244118),	-- Rectangular Elegant Table (DECOR!)
 				i(243088),	-- Standing Ornate Weapon Rack (DECOR!)
+			},
+		}),
+		n(240465, {	-- Lonomia <Cursed Goods>
+			["coord"] = { 68.3, 75.5, RAZORWIND_SHORES },
+			["groups"] = {
+				i(245400),	-- Ceiling Cobweb (DECOR!)
+				i(245401),	-- Tented Cobweb (DECOR!)
+				i(245402),	-- Small Dangling Cobweb (DECOR!)
+				i(245403),	-- Large Dangling Cobweb (DECOR!)
+				i(245404),	-- Pillar Cobweb (DECOR!)
 			},
 		}),
 		n(255298, {	-- Jehzar Starfall <Decor Vendor>

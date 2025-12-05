@@ -292,7 +292,7 @@ root(ROOTS.Zones, {
 								{ 39.8, 25.7, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 45.8, 24.9, THE_VINDICAAR_EREDATH_UPPER },
 							},
-							["cost"] = {{ "c", ORDER_RESOURCES, 900 }},	-- 900x Order Resources
+							["cost"] = { { "c", ORDER_RESOURCES, 900 } },
 							["repeatable"] = true,
 							["groups"] = {
 								i(152097, {	-- Lightforged Bulwark
@@ -415,7 +415,7 @@ root(ROOTS.Zones, {
 								{ 45.9, 23.9, THE_VINDICAAR_EREDATH_UPPER },
 								{ 39.2, 24.8, THE_VINDICAAR_KROKUUN_UPPER },
 							},
-							["cost"] = {{ "c", ORDER_RESOURCES, 150 }},	-- 150x Order Resources
+							["cost"] = { { "c", ORDER_RESOURCES, 150 } },
 							["isWeekly"] = true,
 							["groups"] = {
 								i(152097, {	-- Lightforged Bulwark

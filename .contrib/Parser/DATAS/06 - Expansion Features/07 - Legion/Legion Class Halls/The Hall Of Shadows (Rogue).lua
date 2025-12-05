@@ -1212,16 +1212,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250787, {	-- Replica Crucible of the Uncrowned (DECOR!)
 								["sourceAchievement"] = 42295,	-- Hidden Potential of the Shadowblade
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(140943, {	-- Shadowstalker's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(140979, {	-- Shadowstalker's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(140978, {	-- Shadowstalker's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},		-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(140541),	-- Shiv of the Uncrowned
 							i(140556),	-- Shortblade of the Uncrowned
@@ -1231,29 +1231,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250788, {	-- Stolen Copy of the Blood Ledger (DECOR!)
 								["sourceAchievement"] = 60970,	-- Legendary Research of the Uncrowned
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
 							i(250783, {	-- Uncrowned Apothecary's Cabinet (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(250784, {	-- Uncrowned Apothecary's Supplies (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(250785, {	-- Uncrowned Banner (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(260776, {	-- Uncrowned Market Stall (DECOR!)
 								["sourceAchievement"] = 42279,	-- The Shadowblade's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(250786, {	-- Uncrowned Planning Table (DECOR!)
 								["sourceAchievement"] = 60989,	-- Raise an Army for the Hall of Shadows
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] =  {{ "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(139746, {	-- Wristbands of the Uncrowned
 								["cost"] = 5000000,	-- 500g
@@ -1262,9 +1262,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					n(105982, {	-- Smudge Thunderwood <Herbal Concoctions>
 						["coord"] = { 64.6, 44.2, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							i(18160),	-- Recipe: Thistle Tea (RECIPE!)
-						},
+						["groups"] = { i(18160) }-- Recipe: Thistle Tea (RECIPE!)
 					}),
 					n(121282, {	-- Zan Shivsproket
 						["coord"] = { 42.5, 82.2, THE_HALL_OF_SHADOWS },
@@ -1275,7 +1273,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									46089,	-- Hiding in Plain Sight (A)
 									46178,	-- Hiding in Plain Sight (H)
 								},
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(143491, {	-- Shadowblade's Baneful Omen (MOUNT!)
@@ -1283,7 +1281,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									46089,	-- Hiding in Plain Sight (A)
 									46178,	-- Hiding in Plain Sight (H)
 								},
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(143492, {	-- Shadowblade's Lethal Omen (MOUNT!)
@@ -1291,7 +1289,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									46089,	-- Hiding in Plain Sight (A)
 									46178,	-- Hiding in Plain Sight (H)
 								},
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},

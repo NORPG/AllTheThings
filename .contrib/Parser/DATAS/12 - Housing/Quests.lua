@@ -104,7 +104,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(94709),	-- Triggered after entering house (tutorial?)
 			q(94714),	-- Triggered after completing 'Feathering the Nest' (94210)
 			-- q(94750),	-- Unflagged after talking to Elven Decor vendor
-			q(94415),	-- Plumbing the Void (auto-completed when using Start Tutorial for housing and zoning into Razorwind Shores)
 		}),
 	}));
 });

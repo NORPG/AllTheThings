@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					}, {	-- Friendly
 						i(251494, {	-- Moon-Blessed Barrel (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", ORDER_RESOURCES, 200 }},	-- 200x Order Resource
+							["cost"] = { { "c", ORDER_RESOURCES, 200 } },
 						}),
 						i(130158, {	-- Path of Elothir (TOY!)
 							["cost"] = 1000000,	-- 100g
@@ -111,22 +111,20 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					}, {	-- Honored
 						i(140214, {	-- Boon of the Harvester
 							["cost"] = 800000,	-- 80
-							["groups"] = {
-								i(140222),	-- Harvested Goods
-							},
+							["groups"] = { i(140222) },	-- Harvested Goods
 						}),
 						i(238861, {	-- Cenarion Rectangular Rug (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = {
 								{ "g", 5000000 },	-- 500g
-								{ "c", ORDER_RESOURCES, 750 },	-- 750x Order Resources
+								{ "c", ORDER_RESOURCES, 750 },
 							},
 						}),
 						i(264168, {	-- Cenarion Round Rug (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = {
 								{ "g", 5000000 },	-- 500g
-								{ "c", ORDER_RESOURCES, 750 },	-- 750x Order Resources
+								{ "c", ORDER_RESOURCES, 750 },
 							},
 						}),
 						i(128599, {	-- Formula: Enchant Ring - Word of Versatility [Rank 3] (RECIPE!)
@@ -153,7 +151,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = {
 								{ "g", 7000000 },	-- 700g
-								{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
+								{ "c", ORDER_RESOURCES, 1000 },
 							},
 						}),
 						i(130232, {	-- Moonfeather Statue (TOY!)
@@ -167,7 +165,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = {
 								{ "g", 10000000 },	-- 1,000g
-								{ "c", ORDER_RESOURCES, 2000 },	-- 2,000x Order Resources
+								{ "c", ORDER_RESOURCES, 2000 },
 							},
 						}),
 						i(140578, {	-- Dreamweaver Initiate's Tabard
