@@ -184,5 +184,5 @@ def exploration_mapping(build):
 
 """How to generate latest data from a new Build"""
 """Step 1: Run exploration_mapping(build: str) (You have to uncomment) with the build as a string ex. exploration_mapping("11.2.5.62785")."""
-# exploration_mapping("11.2.5.62785")
+# exploration_mapping("11.2.7.64743")
 """Step 2: Choose if you want to generate the file sorted by AreaID or MapID/ParentID."""
