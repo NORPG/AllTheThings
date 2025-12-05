@@ -1352,100 +1352,6 @@ root(ROOTS.Unsorted, {
 			i(249225),	-- Mandate of Sacred Death
 			i(249226),	-- Ebon Crown of Subjugation
 			i(249227),	-- 12.0 Delves - Season 1 - Curio - Utility 4
-			i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
-			i(249275),	-- 12.0 Raid - Shield - Shield
-			i(249276),	-- 12.0 Raid - Generic - Holdable
-			i(249277),	-- 12.0 Raid - Mace2H - Str - 2 Hand
-			i(249278),	-- 12.0 Raid - Staff - Agi - 2 Hand
-			i(249279),	-- 12.0 Raid - Guns - RangedRight
-			i(249280),	-- 12.0 Raid - Warglaives - Boss Name - Weapon
-			i(249281),	-- 12.0 Raid - Sword1H - Str -Weapon
-			i(249283),	-- 12.0 Raid - Dagger - Int - Boss Name - Weapon
-			i(249284),	-- 12.0 Raid - Dagger - Agi - Boss Name - Weapon
-			i(249286),	-- 12.0 Raid - Staff - Int - 2 Hand
-			i(249287),	-- 12.0 Raid - Mace1H - Agi - Boss Name - Weapon
-			i(249288),	-- 12.0 Raid - Bows - Ranged
-			i(249293),	-- 12.0 Raid - Mace1H - Int - Boss Name - Weapon
-			i(249294),	-- 12.0 Raid - Sword1H - Int - Boss Name - Weapon
-			i(249295),	-- 12.0 Raid - Mace1H - Str - Boss Name - Weapon
-			i(249296),	-- 12.0 Raid - Axe2H - Str - 2 Hand
-			i(249298),	-- 12.0 Raid - FistWeapon - Boss Name - Weapon
-			i(249302),	-- 12.0 Raid - Polearms - Agi - 2 Hand
-			i(249303),	-- 12.0 Raid - Mail - Waist
-			i(249304),	-- 12.0 Raid - Mail - Wrist
-			i(249305),	-- 12.0 Raid - Cloth - Feet
-			i(249306),	-- 12.0 Raid - Leather - Head
-			i(249307),	-- 12.0 Raid - Plate - Hand
-			i(249308),	-- 12.0 Raid - Cloth - Chest
-			i(249309),	-- 12.0 Raid - Plate - Chest
-			i(249310),	-- 12.0 Raid - Mail - Chest
-			i(249311),	-- 12.0 Raid - Plate - Legs
-			i(249312),	-- 12.0 Raid - Leather - Legs
-			i(249313),	-- 12.0 Raid - Plate - Shoulder
-			i(249314),	-- 12.0 Raid - Leather - Waist
-			i(249315),	-- 12.0 Raid - Cloth - Wrist
-			i(249316),	-- 12.0 Raid - Plate - Head
-			i(249317),	-- 12.0 Raid - Mail - Head
-			i(249318),	-- 12.0 Raid - Mail - Shoulder
-			i(249319),	-- 12.0 Raid - Cloth - Waist
-			i(249320),	-- 12.0 Raid - Mail - Feet
-			i(249321),	-- 12.0 Raid - Leather - Hand
-			i(249322),	-- 12.0 Raid - Leather - Chest
-			i(249323),	-- 12.0 Raid - Cloth - Legs
-			i(249324),	-- 12.0 Raid - Mail - Legs
-			i(249325),	-- 12.0 Raid - Mail - Hand
-			i(249326),	-- 12.0 Raid - Plate - Wrist
-			i(249327),	-- 12.0 Raid - Leather - Wrist
-			i(249328),	-- 12.0 Raid - Cloth - Shoulder
-			i(249329),	-- 12.0 Raid - Cloth - Head
-			i(249330),	-- 12.0 Raid - Cloth - Hand
-			i(249331),	-- 12.0 Raid - Plate - Waist
-			i(249332),	-- 12.0 Raid - Plate - Feet
-			i(249333),	-- 12.0 Raid - Leather - Shoulder
-			i(249334),	-- 12.0 Raid - Leather - Feet
-			i(249335),	-- 12.0 Raid - Generic - Cloak
-			i(249336),	-- 12.0 Raid - Generic - Finger
-			i(249337),	-- 12.0 Raid - Generic - Neck
-			i(249339),	-- Gloom-Spattered Dreadscale
-			i(249340),	-- Wraps of Cosmic Madness
-			i(249341),	-- Volatile Void Suffuser
-			i(249342),	-- Heart of Ancient Hunger
-			i(249343),	-- Gaze of the Alnseer
-			i(249344),	-- Light Company Guidon
-			i(249345),	-- Ranger-Captain's Iridescent Insignia
-			i(249346),	-- Vaelgor's Final Stare
-			i(249347),	-- Dreadful Adjective Thing (Cloth) \\ Dreadful Adjective Thing
-			i(249348),	-- Mystic Adjective Thing (Leather) \\ Mystic Adjective Thing
-			i(249349),	-- Venerated Adjective Thing (Mail) \\ Venerated Adjective Thing
-			i(249350),	-- Zenith Adjective Thing (Plate) \\ Zenith Adjective Thing
-			i(249351),	-- Dreadful Adjective Thing (Cloth) \\ Dreadful Adjective Thing
-			i(249352),	-- Mystic Adjective Thing (Leather) \\ Mystic Adjective Thing
-			i(249353),	-- Venerated Adjective Thing (Mail) \\ Venerated Adjective Thing
-			i(249354),	-- Zenith Adjective Thing (Plate) \\ Zenith Adjective Thing
-			i(249355),	-- Dreadful Adjective Thing (Cloth) \\ Dreadful Adjective Thing
-			i(249356),	-- Mystic Adjective Thing (Leather) \\ Mystic Adjective Thing
-			i(249357),	-- Venerated Adjective Thing (Mail) \\ Venerated Adjective Thing
-			i(249358),	-- Zenith Adjective Thing (Plate) \\ Zenith Adjective Thing
-			i(249359),	-- Dreadful Adjective Thing (Cloth) \\ Dreadful Adjective Thing
-			i(249360),	-- Mystic Adjective Thing (Leather) \\ Mystic Adjective Thing
-			i(249361),	-- Venerated Adjective Thing (Mail) \\ Venerated Adjective Thing
-			i(249362),	-- Zenith Adjective Thing (Plate) \\ Zenith Adjective Thing
-			i(249363),	-- Dreadful Adjective Thing (Cloth) \\ Dreadful Adjective Thing
-			i(249364),	-- Mystic Adjective Thing (Leather) \\ Mystic Adjective Thing
-			i(249365),	-- Venerated Adjective Thing (Mail) \\ Venerated Adjective Thing
-			i(249366),	-- Zenith Adjective Thing (Plate) \\ Zenith Adjective Thing
-			i(249367),	-- Curio
-			i(249368),	-- Eternal Voidsong Chain \\ 12.0 Raid - Generic - Neck
-			i(249369),	-- 12.0 Raid - Generic - Finger
-			i(249370),	-- 12.0 Raid - Generic - Cloak
-			i(249371),	-- 12.0 Raid - Mail - Waist
-			i(249373),	-- 12.0 Raid - Cloth - Feet
-			i(249374),	-- 12.0 Raid - Leather - Waist
-			i(249376),	-- 12.0 Raid - Cloth - Waist
-			i(249377),	-- 12.0 Raid - Mail - Feet
-			i(249380),	-- 12.0 Raid - Plate - Waist
-			i(249381),	-- 12.0 Raid - Plate - Feet
-			i(249382),	-- 12.0 Raid - Leather - Feet
 			i(249387),	-- Latent Shadowgraft
 			i(249401),	-- Vial of Gelatinous Ooze
 			i(249402),	-- Hellebora's Thorn
@@ -1584,22 +1490,7 @@ root(ROOTS.Unsorted, {
 			i(249691),	-- Holy Sunfire
 			i(249724),	-- Sunfruit Wedge
 			i(249732),	-- Vintner's Golden
-			i(249805),	-- Undreamt God's Oozing Vestige
-			i(249806),	-- Radiant Plume
-			i(249807),	-- The Eternal Egg
-			i(249808),	-- Litany of Lightblind Wrath
-			i(249809),	-- Locus-Walker's Ribbon
-			i(249810),	-- Shadow of the Empyrean Requiem
-			i(249811),	-- Light of the Cosmic Crescendo
-			i(249912),	-- 12.0 Raid - Cloth - Chest
-			i(249913),	-- 12.0 Raid - Leather - Head
-			i(249914),	-- 12.0 Raid - Mail - Head
-			i(249915),	-- 12.0 Raid - Plate - Legs
-			i(249919),	-- 12.0 Raid - Generic - Finger
-			i(249920),	-- Eye of Midnight \\ 12.0 Raid - Generic - Finger
-			i(249921),	-- 12.0 Raid - Shield - Shield
-			i(249922),	-- 12.0 Raid - Generic - Holdable
-			i(249925),	-- 12.0 Raid - Dagger - Agi - Weapon
+			--[[
 			i(249947),	-- 12.0 Raid - Class Set - Warrior - Armor - Generic - Cloak
 			i(249948),	-- 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
 			i(249949),	-- 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
@@ -1717,6 +1608,7 @@ root(ROOTS.Unsorted, {
 			i(250061),	-- 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
 			i(250062),	-- 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
 			i(250063),	-- 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
+			--]]
 			i(250096),	-- Worm Bait
 			i(250116),	-- Cache of Quel'Thalas Treasures
 			i(250117),	-- Cache of Quel'Thalas Treasures
@@ -4924,7 +4816,7 @@ root(ROOTS.Unsorted, {
 			i(249364),	-- Voidcured Unraveled Nullcore
 			i(249365),	-- Voidcast Unraveled Nullcore
 			i(249366),	-- Voidforged Unraveled Nullcore
-			i(249367),	-- Chiming Void Curio
+
 			i(249369),	-- Bond of Light
 			i(249370),	-- Draconic Nullcape
 			i(249371),	-- Scornbane Waistguard
@@ -4946,123 +4838,10 @@ root(ROOTS.Unsorted, {
 			i(249921),	-- Thalassian Dawnguard
 			i(249922),	-- Tome of Alnscorned Regret
 			i(249925),	-- Hungering Victory
-			i(249947),	-- Night Ender's Greatmantle
-			i(249948),	-- Night Ender's Warbands
-			i(249949),	-- Night Ender's Girdle
-			i(249950),	-- Night Ender's Pauldrons
-			i(249951),	-- Night Ender's Chausses
-			i(249952),	-- Night Ender's Tusks
-			i(249953),	-- Night Ender's Fists
-			i(249954),	-- Night Ender's Greatboots
-			i(249955),	-- Night Ender's Breastplate
-			i(249956),	-- Luminant Verdict's Greatmantle
-			i(249957),	-- Luminant Verdict's Cuffs
-			i(249958),	-- Luminant Verdict's Undaunted Emblem
-			i(249959),	-- Luminant Verdict's Providence Watch
-			i(249960),	-- Luminant Verdict's Greaves
-			i(249961),	-- Luminant Verdict's Unwavering Gaze
-			i(249962),	-- Luminant Verdict's Gauntlets
-			i(249963),	-- Luminant Verdict's Sabatons
-			i(249964),	-- Luminant Verdict's Divine Warplate
-			i(249965),	-- Relentless Rider's Drape
-			i(249966),	-- Relentless Rider's Manacles
-			i(249967),	-- Relentless Rider's Chain
-			i(249968),	-- Relentless Rider's Dreadthorns
-			i(249969),	-- Relentless Rider's Legguards
-			i(249970),	-- Relentless Rider's Crown
-			i(249971),	-- Relentless Rider's Bonegrasps
-			i(249972),	-- Relentless Rider's Stompers
-			i(249973),	-- Relentless Rider's Cuirass
-			i(249974),	-- Guardian of the Primal Core
-			i(249975),	-- Cuffs of the Primal Core
-			i(249976),	-- Ceinture of the Primal Core
-			i(249977),	-- Tempests of the Primal Core
-			i(249978),	-- Leggings of the Primal Core
-			i(249979),	-- Locus of the Primal Core
-			i(249980),	-- Earthgrips of the Primal Core
-			i(249981),	-- Sollerets of the Primal Core
-			i(249982),	-- Embrace of the Primal Core
-			i(249983),	-- Primal Sentry's Spine
-			i(249984),	-- Primal Sentry's Wound Stanchers
-			i(249985),	-- Primal Sentry's Cinch
-			i(249986),	-- Primal Sentry's Trophies
-			i(249987),	-- Primal Sentry's Legguards
-			i(249988),	-- Primal Sentry's Maw
-			i(249989),	-- Primal Sentry's Talonguards
-			i(249990),	-- Primal Sentry's Swiftsteps
-			i(249991),	-- Primal Sentry's Scaleplate
-			i(249992),	-- Shroud of the Black Talon
-			i(249993),	-- Bracers of the Black Talon
-			i(249994),	-- Girdle of the Black Talon
-			i(249995),	-- Beacons of the Black Talon
-			i(249996),	-- Greaves of the Black Talon
-			i(249997),	-- Hornhelm of the Black Talon
-			i(249998),	-- Enforcer's Grips of the Black Talon
-			i(249999),	-- Spelltreads of the Black Talon
-			i(250000),	-- Frenzyward of the Black Talon
-			i(250001),	-- Disappearing Cloth of the Grim Jest
-			i(250002),	-- Trick Bracers of the Grim Jest
-			i(250003),	-- Toolbelt of the Grim Jest
-			i(250004),	-- Venom Casks of the Grim Jest
-			i(250005),	-- Blade Holsters of the Grim Jest
-			i(250006),	-- Masquerade of the Grim Jest
-			i(250007),	-- Sleight of Hand of the Grim Jest
-			i(250008),	-- Balancing Boots of the Grim Jest
-			i(250009),	-- Fantastic Finery of the Grim Jest
-			i(250010),	-- Windwrap of Ra-den's Chosen
-			i(250011),	-- Strikeguards of Ra-den's Chosen
-			i(250012),	-- Stormsigil of Ra-den's Chosen
-			i(250013),	-- Aurastones of Ra-den's Chosen
-			i(250014),	-- Swiftsweepers of Ra-den's Chosen
-			i(250015),	-- Fearsome Visage of Ra-den's Chosen
-			i(250016),	-- Thunderfists of Ra-den's Chosen
-			i(250017),	-- Storm Crashers of Ra-den's Chosen
-			i(250018),	-- Battle Garb of Ra-den's Chosen
-			i(250019),	-- Leafdrape of the Luminous Bloom
-			i(250020),	-- Bindings of the Luminous Bloom
-			i(250021),	-- Barksash of the Luminous Bloom
-			i(250022),	-- Seedpods of the Luminous Bloom
-			i(250023),	-- Phloemwraps of the Luminous Bloom
-			i(250024),	-- Branches  of the Luminous Bloom
-			i(250025),	-- Arbortenders of the Luminous Bloom
-			i(250026),	-- Rootslippers of the Luminous Bloom
-			i(250027),	-- Trunk of the Luminous Bloom
-			i(250028),	-- Devouring Reaver's Drape
-			i(250029),	-- Devouring Reaver's Support Straps
-			i(250030),	-- Devouring Reaver's Emblem
-			i(250031),	-- Devouring Reaver's Exhaustplates
-			i(250032),	-- Devouring Reaver's Pistons
-			i(250033),	-- Devouring Reaver's Intake
-			i(250034),	-- Devouring Reaver's Essence Grips
-			i(250035),	-- Devouring Reaver's Soul Flatteners
-			i(250036),	-- Devouring Reaver's Engine
-			i(250037),	-- Abyssal Immolator's Ritual Mantle
-			i(250038),	-- Abyssal Immolator's Shackles
-			i(250039),	-- Abyssal Immolator's Blazing Core
-			i(250040),	-- Abyssal Immolator's Fury
-			i(250041),	-- Abyssal Immolator's Pillars
-			i(250042),	-- Abyssal Immolator's Smoldering Flames
-			i(250043),	-- Abyssal Immolator's Grasps
-			i(250044),	-- Abyssal Immolator's Ashwalkers
-			i(250045),	-- Abyssal Immolator's Dreadrobe
-			i(250046),	-- Blind Oath's Shroud
-			i(250047),	-- Blind Oath's Wraps
-			i(250048),	-- Blind Oath's Jeweled Sash
-			i(250049),	-- Blind Oath's Seraphguards
-			i(250050),	-- Blind Oath's Leggings
-			i(250051),	-- Blind Oath's Winged Crest
-			i(250052),	-- Blind Oath's Touch
-			i(250053),	-- Blind Oath's Slippers
-			i(250054),	-- Blind Oath's Raiment
-			i(250055),	-- Voidbreaker's Encryption
-			i(250056),	-- Voidbreaker's Bracers
-			i(250057),	-- Voidbreaker's Sage Cord
-			i(250058),	-- Voidbreaker's Leyline Nexi
-			i(250059),	-- Voidbreaker's Britches
-			i(250060),	-- Voidbreaker's Veil
-			i(250061),	-- Voidbreaker's Gloves
-			i(250062),	-- Voidbreaker's Treads
-			i(250063),	-- Voidbreaker's Robe
+
+
+
+
 			i(250247),	-- Amulet of the Abyssal Hymn
 			i(250797),	-- Spring Blossom Ceiling Light
 			i(250798),	-- Spring Blossom Shelf
@@ -5376,6 +5155,164 @@ root(ROOTS.Unsorted, {
 			i(268068),	-- Sturdy Torch
 			i(268085),	-- Hand Torch
 			i(268110),	-- Cheese Tray
+
+			--[[ Save if Darkal Needs
+			header(HEADERS.LFGDungeon, 3160, {	-- Crown of the Cosmos
+				-- Order
+				-- Back
+				-- Wrist
+				-- Waist
+				-- Shoulder
+				-- Legs
+				-- Head
+				-- Hands
+				-- Feet
+				-- Chest
+
+				-- Warrior
+				i(249947),	-- Night Ender's Greatmantle
+				i(249948),	-- Night Ender's Warbands
+				i(249949),	-- Night Ender's Girdle
+				i(249950),	-- Night Ender's Pauldrons
+				i(249951),	-- Night Ender's Chausses
+				i(249952),	-- Night Ender's Tusks
+				i(249953),	-- Night Ender's Fists
+				i(249954),	-- Night Ender's Greatboots
+				i(249955),	-- Night Ender's Breastplate
+
+				-- Paladin
+				i(249956),	-- Luminant Verdict's Greatmantle
+				i(249957),	-- Luminant Verdict's Cuffs
+				i(249958),	-- Luminant Verdict's Undaunted Emblem
+				i(249959),	-- Luminant Verdict's Providence Watch
+				i(249960),	-- Luminant Verdict's Greaves
+				i(249961),	-- Luminant Verdict's Unwavering Gaze
+				i(249962),	-- Luminant Verdict's Gauntlets
+				i(249963),	-- Luminant Verdict's Sabatons
+				i(249964),	-- Luminant Verdict's Divine Warplate
+
+				-- DK
+				i(249965),	-- Relentless Rider's Drape
+				i(249966),	-- Relentless Rider's Manacles
+				i(249967),	-- Relentless Rider's Chain
+				i(249968),	-- Relentless Rider's Dreadthorns
+				i(249969),	-- Relentless Rider's Legguards
+				i(249970),	-- Relentless Rider's Crown
+				i(249971),	-- Relentless Rider's Bonegrasps
+				i(249972),	-- Relentless Rider's Stompers
+				i(249973),	-- Relentless Rider's Cuirass
+
+				-- Shaman
+				i(249974),	-- Guardian of the Primal Core
+				i(249975),	-- Cuffs of the Primal Core
+				i(249976),	-- Ceinture of the Primal Core
+				i(249977),	-- Tempests of the Primal Core
+				i(249978),	-- Leggings of the Primal Core
+				i(249979),	-- Locus of the Primal Core
+				i(249980),	-- Earthgrips of the Primal Core
+				i(249981),	-- Sollerets of the Primal Core
+				i(249982),	-- Embrace of the Primal Core
+
+				-- Hunter
+				i(249983),	-- Primal Sentry's Spine
+				i(249984),	-- Primal Sentry's Wound Stanchers
+				i(249985),	-- Primal Sentry's Cinch
+				i(249986),	-- Primal Sentry's Trophies
+				i(249987),	-- Primal Sentry's Legguards
+				i(249988),	-- Primal Sentry's Maw
+				i(249989),	-- Primal Sentry's Talonguards
+				i(249990),	-- Primal Sentry's Swiftsteps
+				i(249991),	-- Primal Sentry's Scaleplate
+
+				-- Evoker
+				i(249992),	-- Shroud of the Black Talon
+				i(249993),	-- Bracers of the Black Talon
+				i(249994),	-- Girdle of the Black Talon
+				i(249995),	-- Beacons of the Black Talon
+				i(249996),	-- Greaves of the Black Talon
+				i(249997),	-- Hornhelm of the Black Talon
+				i(249998),	-- Enforcer's Grips of the Black Talon
+				i(249999),	-- Spelltreads of the Black Talon
+				i(250000),	-- Frenzyward of the Black Talon
+
+				-- Rogue
+				i(250001),	-- Disappearing Cloth of the Grim Jest
+				i(250002),	-- Trick Bracers of the Grim Jest
+				i(250003),	-- Toolbelt of the Grim Jest
+				i(250004),	-- Venom Casks of the Grim Jest
+				i(250005),	-- Blade Holsters of the Grim Jest
+				i(250006),	-- Masquerade of the Grim Jest
+				i(250007),	-- Sleight of Hand of the Grim Jest
+				i(250008),	-- Balancing Boots of the Grim Jest
+				i(250009),	-- Fantastic Finery of the Grim Jest
+
+				-- Monk
+				i(250010),	-- Windwrap of Ra-den's Chosen
+				i(250011),	-- Strikeguards of Ra-den's Chosen
+				i(250012),	-- Stormsigil of Ra-den's Chosen
+				i(250013),	-- Aurastones of Ra-den's Chosen
+				i(250014),	-- Swiftsweepers of Ra-den's Chosen
+				i(250015),	-- Fearsome Visage of Ra-den's Chosen
+				i(250016),	-- Thunderfists of Ra-den's Chosen
+				i(250017),	-- Storm Crashers of Ra-den's Chosen
+				i(250018),	-- Battle Garb of Ra-den's Chosen
+
+				-- Druid
+				i(250019),	-- Leafdrape of the Luminous Bloom
+				i(250020),	-- Bindings of the Luminous Bloom
+				i(250021),	-- Barksash of the Luminous Bloom
+				i(250022),	-- Seedpods of the Luminous Bloom
+				i(250023),	-- Phloemwraps of the Luminous Bloom
+				i(250024),	-- Branches  of the Luminous Bloom
+				i(250025),	-- Arbortenders of the Luminous Bloom
+				i(250026),	-- Rootslippers of the Luminous Bloom
+				i(250027),	-- Trunk of the Luminous Bloom
+
+				-- DH
+				i(250028),	-- Devouring Reaver's Drape
+				i(250029),	-- Devouring Reaver's Support Straps
+				i(250030),	-- Devouring Reaver's Emblem
+				i(250031),	-- Devouring Reaver's Exhaustplates
+				i(250032),	-- Devouring Reaver's Pistons
+				i(250033),	-- Devouring Reaver's Intake
+				i(250034),	-- Devouring Reaver's Essence Grips
+				i(250035),	-- Devouring Reaver's Soul Flatteners
+				i(250036),	-- Devouring Reaver's Engine
+
+				-- Warlock
+				i(250037),	-- Abyssal Immolator's Ritual Mantle
+				i(250038),	-- Abyssal Immolator's Shackles
+				i(250039),	-- Abyssal Immolator's Blazing Core
+				i(250040),	-- Abyssal Immolator's Fury
+				i(250041),	-- Abyssal Immolator's Pillars
+				i(250042),	-- Abyssal Immolator's Smoldering Flames
+				i(250043),	-- Abyssal Immolator's Grasps
+				i(250044),	-- Abyssal Immolator's Ashwalkers
+				i(250045),	-- Abyssal Immolator's Dreadrobe
+
+				-- Priest
+				i(250046),	-- Blind Oath's Shroud
+				i(250047),	-- Blind Oath's Wraps
+				i(250048),	-- Blind Oath's Jeweled Sash
+				i(250049),	-- Blind Oath's Seraphguards
+				i(250050),	-- Blind Oath's Leggings
+				i(250051),	-- Blind Oath's Winged Crest
+				i(250052),	-- Blind Oath's Touch
+				i(250053),	-- Blind Oath's Slippers
+				i(250054),	-- Blind Oath's Raiment
+
+				-- Mage
+				i(250055),	-- Voidbreaker's Encryption
+				i(250056),	-- Voidbreaker's Bracers
+				i(250057),	-- Voidbreaker's Sage Cord
+				i(250058),	-- Voidbreaker's Leyline Nexi
+				i(250059),	-- Voidbreaker's Britches
+				i(250060),	-- Voidbreaker's Veil
+				i(250061),	-- Voidbreaker's Gloves
+				i(250062),	-- Voidbreaker's Treads
+				i(250063),	-- Voidbreaker's Robe
+			}),
+			--]]
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
