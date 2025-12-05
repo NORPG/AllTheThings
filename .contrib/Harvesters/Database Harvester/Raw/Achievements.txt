@@ -72,6 +72,12 @@
 15210@@@Challenger: Season 2
 2.5.4.44833
 15853@@@<Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+2.5.5.64616
+62036@@@[DNT] Raid Attunement Achieved - Karazhan
+62037@@@[DNT] Raid Attunement Achieved - Coilfang: Serpentshrine Cavern
+62038@@@[DNT] Raid Attunement Achieved - Tempest Keep
+62039@@@[DNT] Raid Attunement Achieved - The Battle for Mount Hyjal
+62040@@@[DNT] Raid Attunement Achieved - Black Temple
 3.0.1.8303
 1@@@Race/Level Achievement [PH]
 2@@@Class/Level Achievement [PH]
