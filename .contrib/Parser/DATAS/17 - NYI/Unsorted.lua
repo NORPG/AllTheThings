@@ -6045,7 +6045,6 @@ root(ROOTS.Unsorted, {
 			i(239968),	-- Fel-marked Chestguard
 			i(239969),	-- Fel-marked Greaves
 			i(239970),	-- Fel-marked Cinch
-			i(240396),	-- Suramar Silver Mantle
 			i(241595),	-- Ensemble: Funerary Plate of the Chosen Dead
 			i(241598),	-- Ensemble: Funerary Plate of the Chosen Dead
 			i(241600),	-- Ensemble: Chains of the Chosen Dead
