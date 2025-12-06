@@ -50,6 +50,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 60271 },	-- A Grave Chance
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["groups"] = {
+						ach(14754),	-- The Forgotten One
+					},
 				}),
 			}),
 			q(62700, {	-- Ashes of the Tower
@@ -109,7 +112,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
 				["timeline"] = { ADDED_9_1_0 },
-				["groups"] = { i(186732) },	-- The Box of Many Things (QI!)
+				["groups"] = {
+					ach(15076),	-- The Box of Many Things
+					i(186732),	-- The Box of Many Things (QI!)
+				},
 			}),
 
 			-- Champion Unlocks

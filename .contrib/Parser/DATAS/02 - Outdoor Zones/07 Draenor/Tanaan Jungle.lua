@@ -19,14 +19,11 @@ root(ROOTS.Zones, {
 					ach(10061, {	-- Hellbane
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(10069),		-- I Came, I Clawed, I Conquered
-					ach(10070, {	-- Jungle Stalker
-						["sym"] = {{ "achievement_criteria" }},
-						["groups"] = { ach(10259) },	-- Jungle Hunter
-					}),
-					ach(10262, {	-- Jungle Treasure Master
-						ach(10261),		-- Jungle Treasure Hunter
-					}),
+					ach(10069),	-- I Came, I Clawed, I Conquered
+					achpart(10259, 10070),	-- Jungle Hunter / Jungle Stalker
+					ach(10070),	-- Jungle Stalker
+					achpart(10261, 10262),	-- Jungle Treasure Hunter / Jungle Treasure Master
+					ach(10262),	-- Jungle Treasure Master
 					ach(10334, {	-- Predator
 						title(59),	-- Predator
 					}),

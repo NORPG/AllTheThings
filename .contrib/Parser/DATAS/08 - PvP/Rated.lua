@@ -121,33 +121,29 @@ root(ROOTS.PVP, pvp(n(RATED, {
 				}),
 			},
 		}),
+		ach(5268, {	-- In Service of the Alliance (1)
+			["timeline"] = { ADDED_4_0_3 },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		ach(5322, {	-- In Service of the Alliance (10)
+			["timeline"] = { ADDED_4_0_3 },
+			["races"] = ALLIANCE_ONLY,
+		}),
 		ach(5327, {	-- In Service of the Alliance (25)
 			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
-				ach(5322, {	-- In Service of the Alliance (10)
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(5268, {	-- In Service of the Alliance (1)
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-			},
+		}),
+		ach(5269, {	-- In Service of the Horde (1)
+			["timeline"] = { ADDED_4_0_3 },
+			["races"] = HORDE_ONLY,
+		}),
+		ach(5323, {	-- In Service of the Horde (10)
+			["timeline"] = { ADDED_4_0_3 },
+			["races"] = HORDE_ONLY,
 		}),
 		ach(5324, {	-- In Service of the Horde (25)
 			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
-			["groups"] = {
-				ach(5323, {	-- In Service of the Horde (10)
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
-				ach(5269, {	-- In Service of the Horde (1)
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
-			},
 		}),
 		ach(5335, {	-- Knight
 			["timeline"] = { ADDED_4_0_3 },
@@ -291,6 +287,27 @@ root(ROOTS.PVP, pvp(n(RATED, {
 				}),
 			},
 		}),
+		ach(5328, {	-- Veteran of the Alliance
+			["timeline"] = { ADDED_4_0_3 },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				i(70909, {	-- Vicious War Steed (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				title(152, {	-- Veteran of the Alliance
+					["races"] = ALLIANCE_ONLY,
+				}),
+			},
+		}),
+		ach(5823, {	-- Veteran of the Alliance II
+			["timeline"] = { ADDED_4_2_0 },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				i(70909, {	-- Vicious War Steed (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+			},
+		}),
 		ach(5329, {	-- Warbound Veteran of the Alliance
 			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
@@ -298,26 +315,26 @@ root(ROOTS.PVP, pvp(n(RATED, {
 				title(145, {	-- Warbound
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(5823, {	-- Veteran of the Alliance II
-					["timeline"] = { ADDED_4_2_0 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(70909, {	-- Vicious War Steed (MOUNT!)
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
+			},
+		}),
+		ach(5325, {	-- Veteran of the Horde
+			["timeline"] = { ADDED_4_0_3 },
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				i(70910, {	-- Vicious War Wolf (MOUNT!)
+					["races"] = HORDE_ONLY,
 				}),
-				ach(5328, {	-- Veteran of the Alliance
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(70909, {	-- Vicious War Steed (MOUNT!)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						title(152, {	-- Veteran of the Alliance
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
+				title(153, {	-- Veteran of the Horde
+					["races"] = HORDE_ONLY,
+				}),
+			},
+		}),
+		ach(5824, {	-- Veteran of the Horde II
+			["timeline"] = { ADDED_4_2_0 },
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				i(70910, {	-- Vicious War Wolf (MOUNT!)
+					["races"] = HORDE_ONLY,
 				}),
 			},
 		}),
@@ -334,27 +351,6 @@ root(ROOTS.PVP, pvp(n(RATED, {
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
-				ach(5824, {	-- Veteran of the Horde II
-					["timeline"] = { ADDED_4_2_0 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(70910, {	-- Vicious War Wolf (MOUNT!)
-							["races"] = HORDE_ONLY,
-						}),
-					},
-				}),
-				ach(5325, {	-- Veteran of the Horde
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(70910, {	-- Vicious War Wolf (MOUNT!)
-							["races"] = HORDE_ONLY,
-						}),
-						title(153, {	-- Veteran of the Horde
-							["races"] = HORDE_ONLY,
-						}),
-					},
-				}),
 			},
 		}),
 		ach(5342, {	-- Warlord

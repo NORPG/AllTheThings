@@ -2886,15 +2886,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						-- #endif
 						ach(12388, {	-- Alone in the Darkness
-							ach(4626, {	-- And I'll Form the Head!
-								["provider"] = { "i", 45693 },	-- Mimiron's Head
-								["filterID"] = MOUNTS,
-							}),
 							i(45693),	-- Mimiron's Head (MOUNT!)
 							i(46312),	-- Vanquished Clutches of Yogg-Saron
 						}),
 						ach(5019, {	-- Alone in the Darkness - Guild Edition
 							["timeline"] = { ADDED_4_0_3 },
+						}),
+						ach(4626, {	-- And I'll Form the Head!
+							["provider"] = { "i", 45693 },	-- Mimiron's Head
 						}),
 						ach(12387, {	-- One Light in the Darkness
 							i(45533),	-- Dark Edge of Depravity

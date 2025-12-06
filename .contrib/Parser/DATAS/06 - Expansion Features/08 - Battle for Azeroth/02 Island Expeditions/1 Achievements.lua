@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ISLAND_EXPEDITIONS, {
 		n(ACHIEVEMENTS, {
-			ach(13142),		-- Archipelago Explorer
+			ach(13142),	-- Archipelago Explorer
 			pvp(ach(13134, {	-- Expedition Leader
 				-- #if BEFORE 11.0.7
 				["sym"] = {{"meta_achievement",
@@ -41,65 +41,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					title(382),	-- Expedition Leader
 				},
 			})),
-			ach(13122, {	-- Island Conqueror
-				ach(13097, {	-- Mythic: Dread Chain
-					ach(13096, {	-- Heroic: Dread Chain
-						ach(13095),	-- Dread Chain
-					}),
-				}),
-				ach(13101, {	-- Mythic: Molten Cay
-					ach(13100, {	-- Heroic: Molten Cay
-						ach(13099),	-- Molten Cay
-					}),
-				}),
-				ach(13105, {	-- Mythic: Rotting Mire
-					ach(13104, {	-- Heroic: Rotting Mire
-						ach(13103),	-- Rotting Mire
-					}),
-				}),
-				ach(13109, {	-- Mythic: Skittering Hollow
-					ach(13108, {	-- Heroic: Skittering Hollow
-						ach(13107),	-- Skittering Hollow
-					}),
-				}),
-				ach(12591, {	-- Mythic: Un'gol Ruins
-					ach(12589, {	-- Heroic: Un'gol Ruins
-						ach(12590),	-- Un'gol Ruins
-					}),
-				}),
-				ach(13113, {	-- Mythic: Verdant Wilds
-					ach(13112, {	-- Heroic: Verdant Wilds
-						ach(13111),	-- Verdant Wilds
-					}),
-				}),
-				ach(13116, {	-- Mythic: Whispering Reef
-					ach(13118, {	-- Heroic: Whispering Reef
-						ach(13119),	-- Whispering Reef
-					}),
-				}),
-				ach(13395, {	-- Mythic: Jorundall
-					ach(13394, {	-- Heroic: Jorundall
-						ach(13389),	-- Jorundall
-					}),
-				}),
-				ach(13398, {	-- Mythic: Havenswood
-					ach(13397, {	-- Heroic: Havenswood
-						ach(13396),	-- Havenswood
-					}),
-				}),
-				ach(13579, {	-- Mythic: Crestfall
-					ach(13578, {	-- Heroic: Crestfall
-						ach(13577),	-- Crestfall
-					}),
-				}),
-				ach(13583, {	-- Mythic: Snowblossom Village
-					ach(13582, {	-- Heroic: Snowblossom Village
-						ach(13581),	-- Snowblossom Village
-					}),
-				}),
-			}),
-			ach(13125),		-- Azerite Admiral
-			ach(13126),		-- Give Me The Energy
+			ach(13095),	-- Dread Chain
+			ach(13096),	-- Heroic: Dread Chain
+			ach(13097),	-- Mythic: Dread Chain
+			ach(13099),	-- Molten Cay
+			ach(13100),	-- Heroic: Molten Cay
+			ach(13101),	-- Mythic: Molten Cay
+			ach(13103),	-- Rotting Mire
+			ach(13104),	-- Heroic: Rotting Mire
+			ach(13105),	-- Mythic: Rotting Mire
+			ach(13107),	-- Skittering Hollow
+			ach(13108),	-- Heroic: Skittering Hollow
+			ach(13109),	-- Mythic: Skittering Hollow
+			ach(12590),	-- Un'gol Ruins
+			ach(12589),	-- Heroic: Un'gol Ruins
+			ach(12591),	-- Mythic: Un'gol Ruins
+			ach(13111),	-- Verdant Wilds
+			ach(13112),	-- Heroic: Verdant Wilds
+			ach(13113),	-- Mythic: Verdant Wilds
+			ach(13119),	-- Whispering Reef
+			ach(13118),	-- Heroic: Whispering Reef
+			ach(13116),	-- Mythic: Whispering Reef
+			ach(13389),	-- Jorundall
+			ach(13394),	-- Heroic: Jorundall
+			ach(13395),	-- Mythic: Jorundall
+			ach(13396),	-- Havenswood
+			ach(13397),	-- Heroic: Havenswood
+			ach(13398),	-- Mythic: Havenswood
+			ach(13577),	-- Crestfall
+			ach(13578),	-- Heroic: Crestfall
+			ach(13579),	-- Mythic: Crestfall
+			ach(13581),	-- Snowblossom Village
+			ach(13582),	-- Heroic: Snowblossom Village
+			ach(13583),	-- Mythic: Snowblossom Village
+			ach(13122),	-- Island Conqueror
+			ach(13125),	-- Azerite Admiral
+			ach(13126),	-- Give Me The Energy
 			ach(13127, {	-- Tell Me A Tale
 				crit(41937, {	-- Weathered Pamphlet
 					["_quests"] = { 53184 },
@@ -661,17 +638,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			pvp(ach(13141, {	-- Island Slayer
-				ach(13115),		-- Reef Madness
-				ach(13114),		-- War for the Wilds
-				ach(13110),		-- Skittering Smashed
-				ach(13106),		-- Mire Marauder
-				ach(13102),		-- Clash at the Cay
-				ach(13098),		-- Bane of the Chain
-				ach(12592),		-- Ruined the Ruins
-				ach(13399),		-- Jorundall Justice
-				ach(13400),		-- Havenswood Hero
-				ach(13580),		-- Crestfallen
-				ach(13584),		-- Snowblossom Scrapper
+				ach(13115),	-- Reef Madness
+				ach(13114),	-- War for the Wilds
+				ach(13110),	-- Skittering Smashed
+				ach(13106),	-- Mire Marauder
+				ach(13102),	-- Clash at the Cay
+				ach(13098),	-- Bane of the Chain
+				ach(12592),	-- Ruined the Ruins
+				ach(13399),	-- Jorundall Justice
+				ach(13400),	-- Havenswood Hero
+				ach(13580),	-- Crestfallen
+				ach(13584),	-- Snowblossom Scrapper
 			})),
 			pvp(ach(13129)),	-- Sucker Punch
 		}),

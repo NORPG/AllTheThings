@@ -67,10 +67,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(9228, {	-- Down Goes Van Rook (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(9220, {	-- Grand Theft, 3rd Degree
-					ach(9219),	-- Grand Theft, 2nd Degree
-					ach(9218),	-- Grand Theft, 1st Degree
-				}),
+				ach(9218),	-- Grand Theft, 1st Degree
+				ach(9219),	-- Grand Theft, 2nd Degree
+				ach(9220),	-- Grand Theft, 3rd Degree
 				ach(9216, {	-- High-value Targets
 					crit(25843, {	-- Elder Darkweaver Kath
 						["cr"] = 85771,	-- Elder Darkweaver Kath

@@ -31,8 +31,6 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(10749, {	-- Fighting with Style: War-torn (Alliance)
-				}),
 				--[[
 				-- this stuff is no longer a part of prestige and is based on honor levels/is not removed
 				-- just leaving it commented here in case the symlink needs to be used for something later idfk

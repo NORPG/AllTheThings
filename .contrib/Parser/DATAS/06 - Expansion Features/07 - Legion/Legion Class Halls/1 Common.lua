@@ -114,12 +114,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			ach(10747),	-- Fighting with Style: Upgraded
 			ach(10748, {	-- Fighting with Style: Valorous
 				["sym"] = {{"meta_achievement",
-						10459,	-- Improving on History
-						11160,	-- Unleashed Monstrosities
-						11162,	-- Keystone Master
-						11163,	-- Glory of the Legion Hero
-					},
-				},
+					10459,	-- Improving on History
+					11160,	-- Unleashed Monstrosities
+					11162,	-- Keystone Master
+					11163,	-- Glory of the Legion Hero
+				}},
 			}),
 			ach(10749, {	-- Fighting with Style: War-torn (A)
 				["races"] = ALLIANCE_ONLY,

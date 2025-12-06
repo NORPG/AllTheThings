@@ -13,7 +13,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			ach(14759),	-- It's Coming Back to Me...
 			ach(14760),	-- Recollection Collection
 			ach(14795),	-- Clearing the Fog
-			ach(14773),		-- Explosive Extermination
+			ach(14773),	-- Explosive Extermination
 			ach(14778, sharedData({	-- Extremely Ravenous
 				["cost"] = {{"i",170540,1}},	-- Ravenous Anima Cell
 			},{
@@ -119,25 +119,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 			})),
-			ach(15089, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Flawless Master (Layer 12)
-				i(186655),	-- Mawsworn Charger (MOUNT!)
-				ach(15088),	-- Flawless: Upper Reaches (Layer 12)
-				ach(15087),	-- Flawless: Mort'regar (Layer 12)
-				ach(15084),	-- Flawless: The Soulforges (Layer 12)
-				ach(15083),	-- Flawless: Coldheart Interstitia (Layer 12)
-				ach(15081),	-- Flawless: Skoldus Hall (Layer 12)
-				ach(15082),	-- Flawless: Fracture Chambers (Layer 12)
-			})),
-			ach(15322, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- Flawless Master (Layer 16)
-				i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
-				ach(15320),	-- Flawless: Upper Reaches (Layer 16)
-				ach(15319),	-- Flawless: Mort'regar (Layer 16)
-				ach(15317),	-- Flawless: The Soulforges (Layer 16)
-				ach(15318),	-- Flawless: Coldheart Interstitia (Layer 16)
-				ach(15314),	-- Flawless: Skoldus Hall (Layer 16)
-				ach(15316),	-- Flawless: Fracture Chambers (Layer 16)
-			})),
-			ach(14776),		-- For the Hoarder!
+			ach(15088, {["timeline"] = { ADDED_9_1_0 }}),	-- Flawless: Upper Reaches (Layer 12)
+			ach(15087, {["timeline"] = { ADDED_9_1_0 }}),	-- Flawless: Mort'regar (Layer 12)
+			ach(15084, {["timeline"] = { ADDED_9_1_0 }}),	-- Flawless: The Soulforges (Layer 12)
+			ach(15083, {["timeline"] = { ADDED_9_1_0 }}),	-- Flawless: Coldheart Interstitia (Layer 12)
+			ach(15081, {["timeline"] = { ADDED_9_1_0 }}),	-- Flawless: Skoldus Hall (Layer 12)
+			ach(15082, {["timeline"] = { ADDED_9_1_0 }}),	-- Flawless: Fracture Chambers (Layer 12)
+			ach(15089, {	-- Flawless Master (Layer 12)
+				["timeline"] = { ADDED_9_1_0 },
+				["g"] = { i(186655) },	-- Mawsworn Charger (MOUNT!)
+			}),
+			ach(15320, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: Upper Reaches (Layer 16)
+			ach(15319, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: Mort'regar (Layer 16)
+			ach(15317, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: The Soulforges (Layer 16)
+			ach(15318, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: Coldheart Interstitia (Layer 16)
+			ach(15314, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: Skoldus Hall (Layer 16)
+			ach(15316, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: Fracture Chambers (Layer 16)
+			ach(15322, {	-- Flawless Master (Layer 16)
+				["timeline"] = { ADDED_9_2_0 },
+				["g"] = { i(188736) },	-- Colossal Soulshredder Mawrat (MOUNT!)
+			}),
+			ach(14776),	-- For the Hoarder!
 			ach(14498, {	-- Gatekeepers of Torghast
 				crit(49158, {		-- Dark Aspirant Corrus
 					["crs"] = { 156239 },	-- Dark Aspirant Corrus
@@ -227,43 +229,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					["cr"] = 179133,	-- Vil'thras
 				}),
 			})),
-			ach(14755, {	-- Legendary Accord
+			ach(14755, {["timeline"] = { ADDED_9_1_0 }}),	-- Legendary Accord
+			ach(15080, {["timeline"] = { ADDED_9_1_0 }}),	-- So Blessed
+			ach(15079, {	-- Many, Many Things
 				["timeline"] = { ADDED_9_1_0 },
+				["g"] = { i(186551) },	-- Mord'al Eveningstar (PET!)
 			}),
-			ach(15079, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Many, Many Things
-				i(186551),		-- Mord'al Eveningstar (PET!)
-				ach(15076, {	-- The Box of Many Things
-					["sourceQuests"] = { 64216 },	-- Tower Knowledge
-				}),
-				ach(15080),		-- So Blessed
-			})),
-			ach(15092, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Master of Torment
-				ach(15093),	-- Avenge Me!
-				ach(15095),	-- No Doubt
-				ach(15094),	-- Rampage
-				ach(15096),	-- Crowd Pleaser
-			})),
-			ach(14501, {	-- Phanatical
-				ach(14499),		-- Phanciful
-				ach(14500),		-- Phantastic
-			}),
-			ach(14810, {	-- Terror of Torghast
-				ach(14809, {	-- Traversing Torghast
-					ach(14808, {	-- Touring Torghast
-						ach(14463),		-- Skoldus Hall
-						ach(14473),		-- Fracture Chambers
-						ach(14478),		-- The Soulforges
-						ach(14483),		-- Coldheart Interstitia
-						ach(14488),		-- Mort'regar
-						ach(14493),		-- The Upper Reaches
-					}),
-					crit(48160),	-- Skoldus Hall
-					crit(48161),	-- Fracture Chambers
-					crit(48162),	-- The Soulforges
-					crit(48164),	-- Coldheart Interstitia
-					crit(48163),	-- Mort'regar
-					crit(48165),	-- The Upper Reaches
-				}),
+			ach(15093, {["timeline"] = { ADDED_9_1_0 }}),	-- Avenge Me!
+			ach(15095, {["timeline"] = { ADDED_9_1_0 }}),	-- No Doubt
+			ach(15094, {["timeline"] = { ADDED_9_1_0 }}),	-- Rampage
+			ach(15096, {["timeline"] = { ADDED_9_1_0 }}),	-- Crowd Pleaser
+			ach(15092, {["timeline"] = { ADDED_9_1_0 }}),	-- Master of Torment
+			ach(14499),	-- Phanciful
+			ach(14500),	-- Phantastic
+			ach(14501),	-- Phanatical
+			ach(14463),	-- Skoldus Hall
+			ach(14473),	-- Fracture Chambers
+			ach(14478),	-- The Soulforges
+			ach(14483),	-- Coldheart Interstitia
+			ach(14488),	-- Mort'regar
+			ach(14493),	-- The Upper Reaches
+			ach(14808),	-- Touring Torghast
+			ach(14809, {	-- Traversing Torghast
 				crit(48160),	-- Skoldus Hall
 				crit(48161),	-- Fracture Chambers
 				crit(48162),	-- The Soulforges
@@ -271,21 +258,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				crit(48163),	-- Mort'regar
 				crit(48165),	-- The Upper Reaches
 			}),
-			ach(14754, {	-- The Forgotten One
-				["sourceQuests"] = { 60272 },	-- The Weak Link
+			ach(14810, {	-- Terror of Torghast
+				crit(48160),	-- Skoldus Hall
+				crit(48161),	-- Fracture Chambers
+				crit(48162),	-- The Soulforges
+				crit(48164),	-- Coldheart Interstitia
+				crit(48163),	-- Mort'regar
+				crit(48165),	-- The Upper Reaches
 			}),
-			ach(15251, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- The Jailer's Gauntlet: Layer 1
-				i(188679),	-- Lightless Tormentor (PET!)
-			})),
-			ach(15252, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- The Jailer's Gauntlet: Layer 2
-				i(188952),	-- Dominated Hearthstone (TOY!)
-			})),
-			ach(15253, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- The Jailer's Gauntlet: Layer 3
-				title(449),	-- Gauntlet Runner <Name>
-			})),
-			ach(15254, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- The Jailer's Gauntlet: Layer 4
-				i(188696),	-- Colossal Ebonclaw Mawrat (MOUNT!)
-			})),
+			ach(15251, {	-- The Jailer's Gauntlet: Layer 1
+				["timeline"] = { ADDED_9_2_0 },
+				["groups"] = { i(188679) },	-- Lightless Tormentor (PET!)
+			}),
+			ach(15252, {	-- The Jailer's Gauntlet: Layer 2
+				["timeline"] = { ADDED_9_2_0 },
+				["groups"] = { i(188952) },	-- Dominated Hearthstone (TOY!)
+			}),
+			ach(15253, {	-- The Jailer's Gauntlet: Layer 3
+				["timeline"] = { ADDED_9_2_0 },
+				["groups"] = { title(449) },	-- Gauntlet Runner <Name>
+			}),
+			ach(15254, {	-- The Jailer's Gauntlet: Layer 4
+				["timeline"] = { ADDED_9_2_0 },
+				["groups"] = { i(188696) },	-- Colossal Ebonclaw Mawrat (MOUNT!)
+			}),
 			ach(15255, {	-- The Jailer's Gauntlet: Layer 5
 				["timeline"] = { ADDED_9_2_0 },
 			}),
@@ -298,25 +294,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			ach(15258, {	-- The Jailer's Gauntlet: Layer 8
 				["timeline"] = { ADDED_9_2_0 },
 			}),
-			ach(14468),		-- Torghast: Twisting Corridors: Layer 1
+			ach(14468),	-- Torghast: Twisting Corridors: Layer 1
 			ach(14469, {	-- Torghast: Twisting Corridors: Layer 2
-				i(183412),		-- Death Seeker (PET!)
+				i(183412),	-- Death Seeker (PET!)
 			}),
-			ach(14470),		-- Torghast: Twisting Corridors: Layer 3
+			ach(14470),	-- Torghast: Twisting Corridors: Layer 3
 			ach(14471, {	-- Torghast: Twisting Corridors: Layer 4
-				i(184223),		-- Helm of the Dominated (TOY!)
+				i(184223),	-- Helm of the Dominated (TOY!)
 			}),
-			ach(14472),		-- Torghast: Twisting Corridors: Layer 5
+			ach(14472),	-- Torghast: Twisting Corridors: Layer 5
 			ach(14568, {	-- Torghast: Twisting Corridors: Layer 6
-				title(438),		-- Spirestalker
+				title(438),	-- Spirestalker
 			}),
-			ach(14569),		-- Torghast: Twisting Corridors: Layer 7
+			ach(14569),	-- Torghast: Twisting Corridors: Layer 7
 			ach(14570, {	-- Torghast: Twisting Corridors: Layer 8
-				i(184166),		-- Corridor Creeper (MOUNT!)
+				i(184166),	-- Corridor Creeper (MOUNT!)
 			}),
-			ach(15324, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- Tower Ranger
-				title(450),	-- <Name>, Tower Ranger
-			})),
+			ach(15324, {	-- Tower Ranger
+				["timeline"] = { ADDED_9_2_0 },
+				["groups"] = { title(450) },	-- <Name>, Tower Ranger
+			}),
 		}),
 	}),
 })));
