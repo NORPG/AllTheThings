@@ -1262,6 +1262,16 @@ root(ROOTS.Zones, {
 							-- #endif
 						}},
 					}),
+					n(28038, {	-- Purser Boulian <Innkeeper>
+						["coord"] = { 26.8, 59.3, SHOLAZAR_BASIN },
+						["groups"] = {
+							i(248807, {	-- Nesingwary Shoveltusk Trophy (DECOR!)
+								["sourceAchievement"] = 938,	-- The Snows of Northrend
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = 5000000,	-- 500g
+							}),
+						},
+					}),
 					n(31911, {	-- Tanak <Frenzyheart Quartermaster>
 						["coord"] = { 55.1, 69.0, SHOLAZAR_BASIN },
 						["groups"] = bubbleDownClassicRep(FACTION_FRENZYHEART_TRIBE, {
@@ -1278,9 +1288,7 @@ root(ROOTS.Zones, {
 								i(44717),	-- Disgusting Jar
 								i(44718, {	-- Ripe Disgusting Jar
 									["provider"] = { "i", 44717 },	-- Disgusting Jar
-									["groups"] = {
-										i(44719),	-- Frenzyheart Brew (TOY!)
-									},
+									["groups"] = { i(44719) },	-- Frenzyheart Brew (TOY!)
 								}),
 								i(44120),	-- Giant-Sized Gauntlets
 								i(44116),	-- Muddied Crimson Gloves

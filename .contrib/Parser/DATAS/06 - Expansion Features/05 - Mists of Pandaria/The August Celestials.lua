@@ -601,11 +601,19 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							i(88749),	-- Gauntlets of Jade Sutras
 							i(88741),	-- Gloves of Red Feathers
 							i(88746),	-- Gloves of the Overwhelming Swarm
+							i(264362, {	-- Golden Pandaren Privacy Screen (DECOR!)
+								["sourceQuest"] = 30000,	-- The Jade Serpent
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 							i(89665),	-- Leggings of Ponderous Advance
 							i(89659),	-- Leggings of Unfinished Conquest
 							i(88893),	-- Minh's Beaten Bracers
 							i(89668),	-- Mountain Stream Ringmail
 							i(88743),	-- Ogo's Elder Gloves
+							i(247729, {	-- Pandaren Stone Lamppost (DECOR!)
+								["sourceQuest"] = 31230,	-- Welcome to Dawn's Blossom
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 							i(89534),	-- Pressed Flower Cloak
 							i(88884),	-- Quillpaw Family Bracers
 							i(88748),	-- Ravenmane's Gloves

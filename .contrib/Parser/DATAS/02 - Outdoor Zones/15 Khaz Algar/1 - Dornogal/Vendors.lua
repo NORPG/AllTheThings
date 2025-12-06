@@ -693,6 +693,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					iensemble(219126),	-- Woven Artisan's Talent
 				}),
 			}),
+			n(252312, {	-- Second Chair Pawdo <Frederick's Fabulous Furniture>
+				["timeline"] = { ADDED_11_2_7 },
+				["coord"] = { 53.0, 67.9, DORNOGAL },
+				["sym"] = { {"select","itemID", 253168} },	-- Earthen Storage Crate (DECOR!)
+				["groups"] = { i(253173) },	-- Meadery Storage Barrel (DECOR!)
+			}),
 			n(234906, {	-- Syenite
 				["coord"] = { 58.0, 56.8, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0 },

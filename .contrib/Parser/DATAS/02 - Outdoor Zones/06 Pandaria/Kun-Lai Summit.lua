@@ -2360,6 +2360,15 @@ root(ROOTS.Zones, {
 						["groups"] = {
 						},
 					}),
+					n(59698, {	-- Brother Furtrim
+						["coord"] = { 57.2, 61.0, KUN_LAI_SUMMIT },
+						["groups"] = {
+							i(264349, {	-- Kun-Lai Lacquered Rickshaw (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = 10000000,	-- 1,000g
+							}),
+						},
+					}),
 					n(75693, {	-- Doris Chiltonius Season 12: Malevolent Gladiator Vendor. Items are tagged as S13
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,

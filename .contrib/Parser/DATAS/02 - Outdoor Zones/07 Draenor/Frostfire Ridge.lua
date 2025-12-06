@@ -1198,6 +1198,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 36205,	-- The Fractured Hammer
 						["qg"] = 78989,	-- Axe-Shaper Kugra
 						["requireSkill"] = BLACKSMITHING,
+						["coord"] = { 41.2, 52.8, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
 					}),
 					q(34861, {	-- We Need An Army

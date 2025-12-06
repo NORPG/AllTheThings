@@ -1407,6 +1407,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(29518),	-- Amani Scimitar
 					},
 				}),
+				o(2847, {	-- Tattered Chest
+					["coords"] = {
+						{ 10.9, 22.7, GHOSTLANDS },
+						{ 12.6, 25.1, GHOSTLANDS },
+						{ 14.5, 26.8, GHOSTLANDS },
+					},
+				}),
 			}),
 			n(VENDORS, {
 				n(16268, {	-- Eralan <Poison Supplies>

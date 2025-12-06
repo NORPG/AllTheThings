@@ -1154,6 +1154,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			n(QUESTS, {
 				q(84442, {	-- Invitation to the Spirit Festival [A]
 					["description"] = "Auto-accepted once criteria is met.",
+					["qg"] = { 126332 },	-- Aysa Cloudsinger
+					["coord"] = { 52.2, 13.7, STORMWIND_CITY },
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(84444, {	-- Invitation to the Spirit Festival [H]

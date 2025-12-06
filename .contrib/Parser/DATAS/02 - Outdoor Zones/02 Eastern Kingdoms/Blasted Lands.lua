@@ -1276,6 +1276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59401, {	-- Surwich Pauldrons
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						i(244777, { ["timeline"] = { ADDED_11_2_7 } }),	-- Surwich Peddler's Wagon (DECOR!)
 						i(59399, {	-- Wormthorn Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1304,6 +1305,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59440, {	-- Sunveil Breastplate
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						i(244777, { ["timeline"] = { ADDED_11_2_7 } }),	-- Surwich Peddler's Wagon (DECOR!)
 						i(59437, {	-- Wormthorn Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1843,6 +1845,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(44337, {	-- Maurice Essman <Blacksmith>
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(244777, { 	-- Surwich Peddler's Wagon (DECOR!)
+							["sourceQuest"] = 26187,	-- The Downfall of Marl Wormthorn (A)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 8800000,	-- 880g
+						}),
+					},
+				}),
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER CATA

@@ -4741,7 +4741,6 @@ root(ROOTS.Unsorted, {
 			i(248011),	-- Trueshot Skeletal Dragon Head
 			i(248485),	-- Wormhole Generator: Quel'Thalas
 			i(248807),	-- Nesingwary Mounted Shoveltusk Head
-			i(248808),	-- Nesingwary Mounted Elk Head
 			i(248965),	-- Resplendent Highborne Statue
 			i(249275),	-- Bulwark of Noble Resolve
 			i(249276),	-- Grimoire of the Eternal Light
@@ -5678,7 +5677,6 @@ root(ROOTS.Unsorted, {
 				i(245495),	-- Dazar'alor Market Tent
 				i(245500),	-- Red Dazar'alor Tent
 				i(245501),	-- Venthyr Tome of Unforgiven Sins
-				i(245624),	-- Waning Wood Fence
 				i(245627),	-- Elven Temple Brazier
 				i(245655),	-- Filigree Moon Lamp
 				i(246110),	-- Filigree Moon Sconce
@@ -5690,11 +5688,9 @@ root(ROOTS.Unsorted, {
 				i(246602),	-- Small H.O.M.E. Cog
 				i(246845),	-- Tome of Shadowforge Cunning
 				i(246860),	-- Tome of Forsaken Resilience
-				i(247729),	-- Pandaren Stone Lamppost
 				i(247908),	-- Nightborne Lantern
 				i(247915),	-- Square Suramar Table
 				i(248116),	-- Valdrakken Chandelier
-				i(248808),	-- Nesingwary Elk Trophy
 				i(248934),	-- Golden Cloud Serpent Treasure Chest
 				i(251329),	-- Shadowmoon Open-Air Shed
 				i(251330),	-- Draenic Fencepost
@@ -5710,12 +5706,8 @@ root(ROOTS.Unsorted, {
 				i(252391),	-- Large Hull'n'Home Table
 				i(252393),	-- Hull'n'Home Dresser
 				i(252404),	-- Hull'n'Home Chair
-				i(253021),	-- Freywold Bench
-				i(253035),	-- Freywold Seat
-				i(253166),	-- Freywold Fountain
 				i(255840),	-- Champion Brawler's Gloves
 				i(256903),	-- Gilnean Banded Crate
-				i(256905),	-- Small Gilnean Table
 				i(257394),	-- Zandalari War Torch
 				i(258765),	-- Hull'n'Home Window
 				i(259071),	-- Brawler's Guild Punching Bag
@@ -5758,7 +5750,6 @@ root(ROOTS.Unsorted, {
 				i(244906),	-- Gently Shaken Gift
 				i(244908),	-- Winter Veil Gift
 				i(252990),	-- Drustvar Candies
-				i(260428),	-- Raw Mussel
 				i(260429),	-- Crescent Cove Crab
 				i(260519),	-- Farm Carrots
 				i(260522),	-- Duck Egg
@@ -5890,8 +5881,6 @@ root(ROOTS.Unsorted, {
 			i(258655),	-- Wandering Isle Travel Belt
 			i(258656),	-- Wandering Isle Shoulderguards
 			i(264242),	-- Dreadscar Battle Planning Map
-			i(264349),	-- Kun-Lai Lacquered Rickshaw
-			i(264362),	-- Golden Pandaren Privacy Screen
 			i(264675),	-- Cache from the Infinite's Armory
 			i(265822),	-- Unstable Mechagon Re-Localizatron
 		})),

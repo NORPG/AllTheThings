@@ -17,6 +17,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				},
 			}),
+			n(252901, {	-- Cinnabar <Freywold Furniture>
+				["coord"] = { 42.0, 73.0, ISLE_OF_DORN },
+				["timeline"] = { ADDED_11_2_7 },
+				["groups"] = {
+					i(253021, {	-- Freywold Bench (DECOR!)
+						["cost"] = { {"i", RESONANCE_CRYSTALS, 400 } },
+					}),
+					i(253166, {	-- Freywold Fountain (DECOR!)
+						["cost"] = { {"i", RESONANCE_CRYSTALS, 1100 } },
+					}),
+					i(253035, {	-- Freywold Seat (DECOR!)
+						["cost"] = { {"i", RESONANCE_CRYSTALS, 300 } },
+					}),
+				},
+			}),
 		}),
 	}),
 }));

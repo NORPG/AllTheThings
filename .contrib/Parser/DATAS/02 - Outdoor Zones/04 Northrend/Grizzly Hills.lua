@@ -493,9 +493,7 @@ root(ROOTS.Zones, {
 							i(38745),	-- Fetid Loop
 							i(38747),	-- Mildly Tarnished Ring
 							i(38746),	-- Rancid Signet
-							i(248622, {	-- Wooden Outhouse (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
-							}),
+							i(248622, {	["timeline"] = { ADDED_11_2_7 } }),	-- Wooden Outhouse (DECOR!)
 						},
 					}),
 					pvp(q(12314, {	-- Down With Captain Zorna!
@@ -2160,6 +2158,16 @@ root(ROOTS.Zones, {
 								30750,	-- Draenic Warblade
 							}},
 						}),
+						n(27391, {	-- Woodsman Drake
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 32.4, 59.9, GRIZZLY_HILLS },
+							["groups"] = {
+								i(248622, {		-- Wooden Outhouse (DECOR!)
+									["sourceQuest"] = 12227,	-- Doing Your Duty
+									["timeline"] = { ADDED_11_2_7 },
+								}),
+							},
+						}),
 					},
 				}),
 				n(ZONE_DROPS, {
@@ -2167,9 +2175,7 @@ root(ROOTS.Zones, {
 						["description"] = "Kiss this frog.",
 						["provider"] = { "i", 44986 },	-- Warts-B-Gone Lip Balm
 						["coord"] = { 60.5, 51.5, GRIZZLY_HILLS },
-						["groups"] = {
-							i(44981),	-- Ashwood Brand
-						},
+						["groups"] = { i(44981) },	-- Ashwood Brand (QI!)
 					})),
 					i(36743, {	-- Desperate Mojo
 						["description"] = "Only used for a given quest, can otherwise be vendored.",

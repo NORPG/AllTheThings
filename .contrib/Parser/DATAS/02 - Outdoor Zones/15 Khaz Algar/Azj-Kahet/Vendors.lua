@@ -323,6 +323,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				},
 			}),
+			n(218202, {	-- Thripps <Web Furnishings>
+				["coord"] = { 50.2, 31.4, NERUBAR_LOWER },
+				["groups"] = {
+					i(246866, {	-- Kaheti Scribe's Records (DECOR!)
+						["sourceAchievement"] = 40542,	-- Smelling History (automated)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { {"c", KEJ, 1500 }},
+					}),
+				},
+			}),
 			n(218209, {	-- Tyro Uwe <Custom Twitchery Goods>
 				["coord"] = { 45.0, 16.7, NERUBAR },
 				["sourceQuests"] = { 78256 },	-- The General Consensus

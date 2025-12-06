@@ -225,6 +225,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, bubbleDownSelf({ ["timeline"] = { ADDED_11
 			["groups"] = { i(244782) },	-- Elven Floral Window (DECOR!)
 		}),
 		q(93002, {	-- Decor Treasure Hunt
+			["coord"] = { 57.8, 42.0, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(253490) },	-- Elegant Elven Desk (DECOR!)
 		}),
 		q(93003, {	-- Decor Treasure Hunt
@@ -240,7 +241,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, bubbleDownSelf({ ["timeline"] = { ADDED_11
 			["groups"] = { i(253441) },	-- Grand Elven Bookcase (DECOR!)
 		}),
 		q(93006, {	-- Decor Treasure Hunt
-			-- WoWhead Comment: In the small courtyard with Jorvan Longmoor, right next to the Local Blacksmith at 53.6, 39.6
+			["coord"] = { 53.7, 39.8, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(253479) },	-- Small Elegant Padded Chair (DECOR!)
 		}),
 		q(93007, {	-- Decor Treasure Hunt

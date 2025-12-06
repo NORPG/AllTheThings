@@ -3512,14 +3512,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						o(467403, {	-- Darkmoon Fortune Card
 							["description"] = "Behind the crate next to Alyx. After looting this, talk with her, she will tell you to Speak to Alphonse.\n\nYou need to obtain 1 card, it does not matter which one, in order to see gossip options and start the quest.\nThis one is just an example as it is located near Alyx, the main quest giver of the event.",
 							["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
-							["coord"] = { 63.0, 50.2, TANARIS },
+							["coords"] = {
+								{ 63.0, 50.2, TANARIS },
+								{ 58.9, 83.6, KALIMDOR },
+							},
 							["crs"] = {
 								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 								230838,	-- Alphonse Constant <Apprentice Cartomancer>
 							},
-							["groups"] = {
-								i(229219),	-- Six of Frost
-							},
+							["groups"] = { i(229219) },	-- Six of Frost
 						}),
 						q(84882, {	-- Deck Dismay
 							["description"] = "Speak to Alphonse after having looted the Six of Frost to unlock this quest. Use the Idol of Ohn'ahra to find more cards scattered around the grounds.",

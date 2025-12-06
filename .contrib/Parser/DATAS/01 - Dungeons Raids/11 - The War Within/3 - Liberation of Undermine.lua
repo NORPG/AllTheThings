@@ -473,10 +473,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235621, {	-- Ando the Gat <Black Market Broker>
 						["groups"] = bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
 							{		-- RENOWN 1 --
-								i(239213, {	-- Well-Lit Incontinental Loveseat (DECOR!)
-									["cost"] = 10000000,	-- 1,000g
-									["timeline"] = { ADDED_11_2_7 },
-								}),
 							}, {	-- RENOWN 2 --
 							}, {	-- RENOWN 3 --
 							}, {	-- RENOWN 4 --
@@ -489,6 +485,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 							}, {	-- RENOWN 10 --
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
+								i(239213, {	-- Well-Lit Incontinental Loveseat (DECOR!)
+									["cost"] = 10000000,	-- 1,000g
+									["timeline"] = { ADDED_11_2_7 },
+								}),
 							}, {	-- RENOWN 13 --
 							}, {	-- RENOWN 14 --
 							}, {	-- RENOWN 15 --

@@ -431,6 +431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(60930, {	-- Shield of Darkshire
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						i(245624, { ["timeline"] = { ADDED_11_2_7 } }),	-- Waning Wood Fence (DECOR!)
 					},
 				}),
 				q(157, {	-- Deliver the Thread
@@ -888,6 +889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(60940, {	-- Felbane Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						i(256905, { ["timeline"] = { ADDED_11_2_7 } }),	-- Small Gilnean Table (DECOR!)
 						i(60938, {	-- Yorgen's Boon
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2459,6 +2461,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(44114, {	-- Wilkinson <General Goods>
+					["coord"] = { 20.3, 58.4, DUSKWOOD },
+					["timeline"] = { ADDED_4_0_1 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(256905, { 	-- Small Gilnean Table (DECOR!)
+							["sourceQuest"] = 26754,	-- Morbent's Bane
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+						i(245624, { 	-- Waning Wood Fence (DECOR!)
+							["sourceQuest"] = 26760,	-- Cry For The Moon
+							["timeline"] = { ADDED_11_2_7 }
 						}),
 					},
 				}),

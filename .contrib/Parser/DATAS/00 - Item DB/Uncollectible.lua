@@ -2648,6 +2648,7 @@ i(243207);	-- Matted Cat Hair
 i(158769);	-- Monkey's Paw
 i(243222);	-- Pillaged Rake
 i(243224);	-- Pilfered Spade
+i(260428);	-- Raw Mussel
 i(243223);	-- Shredded Linen Cloth
 i(163064);	-- Silver Monkey Statue
 i(243200);	-- Slightly Smooth Scales

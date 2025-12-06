@@ -2962,13 +2962,14 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(80686),	-- Ambermist Hood
 							i(80687),	-- Blackthicket Helm
-							i(80688),	-- Jade Witch Helm
-							i(80689),	-- Glass Lake Headcover
-							i(80690),	-- Silkwood Cowl
 							i(80691),	-- Deepwoods Helm
 							i(80692),	-- Fox Grove Helm
-							i(80693),	-- Thunderwood Helm
+							i(80689),	-- Glass Lake Headcover
+							i(264362, { ["timeline"] = { ADDED_11_2_7 } }),	-- Golden Pandaren Privacy Screen (DECOR!)
 							i(80694),	-- Jade Tiger Helm
+							i(80688),	-- Jade Witch Helm
+							i(80690),	-- Silkwood Cowl
+							i(80693),	-- Thunderwood Helm
 						},
 					}),
 					q(29723, {	-- The Jade Witch
@@ -3516,6 +3517,8 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 59173 },	-- Kai Wanderbrew <Brewmaster>
 								["coord"] = { 47.0, 46.0, THE_JADE_FOREST },
 							}),
+							--
+							i(247729, { ["timeline"] = { ADDED_11_2_7 } }),	-- Pandaren Stone Lamppost (DECOR!)
 						},
 					}),
 					q(31734, {	-- Welcome Wagons
