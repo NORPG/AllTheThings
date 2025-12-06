@@ -95,13 +95,13 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, bubbleDownSelf({ ["timeline"] = { ADDED_
 		}),
 		q(93085, {	-- Decor Treasure Hunt
 			-- WoWhead Comment: Slightly north-east in town, really close. coords: /way 58.69, 56.05
-			["groups"] = { i(246026) },	-- Orgrimmar Beam Platform (DECOR)
+			["groups"] = { i(246026,{["timeline"]={CREATED_11_2_7}}) },	-- Orgrimmar Beam Platform (DECOR)
 		}),
 		q(93087, {	-- Decor Treasure Hunt
-			["groups"] = { i(246027) },	-- Orgrimmar Round Platform (DECOR)
+			["groups"] = { i(246027,{["timeline"]={CREATED_11_2_7}}) },	-- Orgrimmar Round Platform (DECOR)
 		}),
 		q(93088, {	-- Decor Treasure Hunt
-			["groups"] = { i(246028) },	-- Orgrimmar Large Platform (DECOR)
+			["groups"] = { i(246028,{["timeline"]={CREATED_11_2_7}}) },	-- Orgrimmar Large Platform (DECOR)
 		}),
 		q(93091, {	-- Decor Treasure Hunt
 			["groups"] = { i(246036) },	-- High-Backed Orgrimmar Chair (DECOR)
