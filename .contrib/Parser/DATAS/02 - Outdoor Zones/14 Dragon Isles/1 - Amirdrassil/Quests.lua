@@ -6,8 +6,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 		n(QUESTS, {
 			q(78643, {	-- Fair Skies and Strong Winds
 				["sourceQuests"] = { 76283 },	-- Andu-falah-dor
-				["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
-				["coord"] = { 58.0, 35.7, VALDRAKKEN },
+				["qgs"] = {
+					187678,	-- Alexstrasza the Life-Binder
+					216309, -- Alexstrasza
+				},
+				["coords"] = {
+					{ 58.0, 35.7, VALDRAKKEN },
+					{ 50.9, 61.7, AMIRDRASSIL },
+				},
 				["groups"] = {
 					ach(20206, {	-- Champion of the Dragonflights
 						title(547),	-- <Name>, Champion of the Dragonflights
