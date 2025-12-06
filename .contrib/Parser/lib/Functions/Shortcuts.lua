@@ -269,9 +269,11 @@ end
 sharedDataSelf = function(data, t)
 	if not data then
 		print("ERROR: sharedDataSelf: No Shared Data")
+		return t
 	end
 	if not t then
 		print("ERROR: sharedDataSelf: No Source 't'")
+		return t
 	end
 	-- if this is an array, convert to .groups container first to prevent merge confusion
 	t = togroups(t);
@@ -287,9 +289,11 @@ end
 bubbleDown = function(data, t)
 	if not data then
 		print("ERROR: bubbleDown: No Bubble Data")
+		return t
 	end
 	if not t then
 		print("ERROR: bubbleDown: No Source 't'")
+		return t
 	end
 	if not data.IgnoreWarnings then
 		for key,val in pairs(data) do
@@ -358,14 +362,40 @@ end
 bubbleDownSelf = function(data, t)
 	if not data then
 		print("ERROR: bubbleDownSelf: No Bubble Data")
+		return t
 	end
 	if not t then
 		print("ERROR: bubbleDownSelf: No Source 't'")
+		return t
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
+end
+-- Performs only the logic of applying the provided data against the merging object, this is intended as a quick replacement for those bubbleDown(Self) uses of only 'timeline' data
+timelineSelf = function(data, t)
+	if not data then
+		print("ERROR: timelineSelf: No Data")
+		return t
+	end
+	if not t then
+		print("ERROR: timelineSelf: No Source 't'")
+		return t
+	end
+	local datacount = 0
+	local withtimeline
+	for k, v in pairs(data) do
+		datacount = datacount + 1
+		withtimeline = withtimeline or k == "timeline"
+	end
+	if datacount > 1 or not withtimeline then
+		print("ERROR: timelineSelf is only intended to replace 'timeline' bubbleDowns, ensure no other data is being bubbled!")
+		return t
+	end
+	-- typically bubbleDownSelf is on expansion objects, and we want to avoid forcing timeline on these
+	-- so instead do a sharedData pass of the timeline
+	return sharedData(data, t)
 end
 -- Applies the timeline event (epoch) to all sub-groups of the provided table/array
 bubbleDownTimelineEvent = function(epoch, t)

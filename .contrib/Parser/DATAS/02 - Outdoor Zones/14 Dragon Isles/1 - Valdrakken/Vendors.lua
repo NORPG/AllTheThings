@@ -763,6 +763,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(249548, { ["timeline"] = { ADDED_11_2_7 } }),	-- Augmenter's Opal Banner (DECOR!)
 					i(249824, { ["timeline"] = { ADDED_11_2_7 } }),	-- Devastator's Brazier (DECOR!)
 					i(249549, {	-- Draconic Crafter's Table (DECOR!)
+						["sourceQuest"] = 72515,	-- Augmenting a Dragon
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = {{ "c", DRAGON_SUPPLIES, 200 }},
 					}),

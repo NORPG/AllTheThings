@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			n(216284, {	-- Mythrin'dir <Trade Goods>
 				["coord"] = { 54.1, 60.8, AMIRDRASSIL },
+				["sym"] = {{"select","itemID",211399}},	-- Technique: Glyph of the Lunar Chameleon
 				["groups"] = {
 					i(248759, {	-- Amirdrassil Stool (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
@@ -37,7 +38,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 					}),
-					i(211399),	-- Technique: Glyph of the Lunar Chameleon
 				},
 			}),
 		})),

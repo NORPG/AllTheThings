@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14754, {	-- The Forgotten One
