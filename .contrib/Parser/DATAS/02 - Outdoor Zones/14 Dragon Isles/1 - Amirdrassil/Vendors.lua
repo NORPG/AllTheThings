@@ -49,6 +49,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					i(210415, {	-- Darnassian Moonsilver Spaulders (COSMETIC!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 					}),
+					i(257352, {	-- Large Brazier of Elune
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
 				},
 			}),
 			n(216284, {	-- Mythrin'dir <Trade Goods>

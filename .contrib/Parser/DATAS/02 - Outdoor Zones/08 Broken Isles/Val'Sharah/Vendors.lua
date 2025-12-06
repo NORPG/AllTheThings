@@ -9,10 +9,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(245615, {	-- Bradensbrook Smoke Lantern (DECOR!)
-						["cost"] = { { "c", ORDER_RESOURCES, 350 } },	-- 350x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 350 } },
 					}),
 					i(245616, {	-- Bradensbrook Thorned Well (DECOR!)
-						["cost"] = { { "c", ORDER_RESOURCES, 1000 } },	-- 1000x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 					}),
 				},
 			}),
@@ -25,11 +25,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["groups"] = {
 					i(245260, {	-- Kaldorei Chef's Table (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", ORDER_RESOURCES, 400 } },	-- 400x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 400 } },
 					}),
 					i(238863, {	-- Kaldorei Desk (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", ORDER_RESOURCES, 300 } },	-- 300x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 300 } },
 					}),
 				},
 			}),
@@ -46,15 +46,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["groups"] = {
 					i(245698, {	-- Kaldorei Stone Fence (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", ORDER_RESOURCES, 150 } },	-- 150x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 150 } },
 					}),
 					i(245699, {	-- Kaldorei Stone Fencepost (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", ORDER_RESOURCES, 75 } },	-- 75x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 75 } },
 					}),
 					i(245258, {	-- Val'sharah Bookcase (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", ORDER_RESOURCES, 800 } },	-- 800x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 800 } },
 					}),
 				},
 			}),
@@ -73,26 +73,26 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["groups"] = {
 					i(245739, {	-- Crescent Moon Lamppost (DECOR!)
 						["sourceQuest"] = 40890,	-- The Tears of Elune
-						["cost"] = {{ "c", ORDER_RESOURCES, 600 }},	-- 600x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 600 } },
 					}),
 					i(238860, {	-- Deluxe Val'sharah Bed (DECOR!)
-						["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 					}),
 					i(245700, {	-- Kaldorei Cushioned Seat (DECOR!)
 						["sourceQuest"] = 38663,	-- The Die is Cast
-						["cost"] = {{ "c", ORDER_RESOURCES, 250 }},	-- 250x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 250 } },
 					}),
 					i(245703, {	-- Kaldorei Treasure Trove (DECOR!)
 						["sourceAchievement"] = 11258,	-- Treasures of Val'sharah
-						["cost"] = {{ "c", ORDER_RESOURCES, 750 }},	-- 750x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 750 } },
 					}),
 					i(245702, {	-- Kaldorei Wall Shelf (DECOR!)
 						["sourceQuest"] = 38147,	-- Entangled Dreams
-						["cost"] = {{ "c", ORDER_RESOURCES, 450 }},	-- 450x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 450 } },
 					}),
 					i(245697, {	-- Shala'nir Feather Bed (DECOR!)
 						["sourceAchievement"] = 10698,	-- That's Val'sharah Folks!
-						["cost"] = {{ "c", ORDER_RESOURCES, 950 }},	-- 950x Order Resource
+						["cost"] = { { "c", ORDER_RESOURCES, 950 } },
 					}),
 				},
 			}),

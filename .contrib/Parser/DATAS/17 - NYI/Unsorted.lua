@@ -5695,20 +5695,13 @@ root(ROOTS.Unsorted, {
 				i(246600),	-- Small Mechanical Crate
 				i(246602),	-- Small H.O.M.E. Cog
 				i(246845),	-- Tome of Shadowforge Cunning
-				i(246847),	-- Tome of Draenei Faith
-				i(246848),	-- Scribe's Working Notes
 				i(246860),	-- Tome of Forsaken Resilience
 				i(247729),	-- Pandaren Stone Lamppost
-				i(247730),	-- Red Crane Kite
-				i(247732),	-- Lucky Hanging Lantern
 				i(247908),	-- Nightborne Lantern
 				i(247915),	-- Square Suramar Table
 				i(248116),	-- Valdrakken Chandelier
 				i(248808),	-- Nesingwary Elk Trophy
 				i(248934),	-- Golden Cloud Serpent Treasure Chest
-				i(249545),	-- Preserver's Censer
-				i(249547),	-- Evoker's Elegant Rug
-				i(249549),	-- Draconic Crafter's Table
 				i(251329),	-- Shadowmoon Open-Air Shed
 				i(251330),	-- Draenic Fencepost
 				i(251477),	-- Draenic Wooden Table
@@ -5729,7 +5722,6 @@ root(ROOTS.Unsorted, {
 				i(255840),	-- Champion Brawler's Gloves
 				i(256903),	-- Gilnean Banded Crate
 				i(256905),	-- Small Gilnean Table
-				i(257352),	-- Large Brazier of Elune
 				i(257394),	-- Zandalari War Torch
 				i(258145),	-- Eversong Party Platter
 				i(258765),	-- Hull'n'Home Window
@@ -5884,7 +5876,6 @@ root(ROOTS.Unsorted, {
 				i(252952),	-- Bewitched Berries
 				i(253042),	-- Felwood Candies
 				i(253043),	-- Duskwood Candies
-				i(253517),	-- The Flickering Anima
 				i(254504),	-- Adventuring Letter
 				i(257891),	-- Dog Whistle
 				i(258217),	-- Honey Drops
@@ -5905,8 +5896,6 @@ root(ROOTS.Unsorted, {
 			i(258654),	-- Wandering Isle Wraps
 			i(258655),	-- Wandering Isle Travel Belt
 			i(258656),	-- Wandering Isle Shoulderguards
-			i(249548),	-- Augmenter's Opal Banner
-			i(249824),	-- Devastator's Brazier
 			i(264242),	-- Dreadscar Battle Planning Map
 			i(264349),	-- Kun-Lai Lacquered Rickshaw
 			i(264362),	-- Golden Pandaren Privacy Screen
@@ -8108,7 +8097,6 @@ root(ROOTS.Unsorted, {
 			i(169119),	-- Enhanced Water
 			i(169120),	-- Enhancement-Free Water
 			i(169122),	-- Gibraltian Monkey Wrench
-			i(169125),	-- Sonic Drive Screw
 			i(169126),	-- Supercharged Graphics Cog
 			i(169190),	-- Blueprint: Mega-Sized Spare Parts \\ Blueprint: TK45
 			i(169193),	-- Nazjatar Ring A
