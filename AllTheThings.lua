@@ -977,6 +977,7 @@ app.ThingKeys = {
 	titleID = true,
 	campsiteID = true,
 	decorID = true,
+	garrisonbuildingID = true,
 	achievementID = true,	-- special handling
 	criteriaID = true,	-- special handling
 };

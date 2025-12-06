@@ -369,6 +369,7 @@ MobileDB.Creature = {
 	 [83858] = true,	-- Khadgar's Servant
 	 [84247] = true,	-- Lumber Lord Oktron <Work Orders>
 	 [84857] = true,	-- Kyra Goldhands <Banker>
+	 [85369] = true,	-- Vee
 	 [85414] = true,	-- Alexi Barov
 	 [86629] = true,	-- Raza'kul
 	 [86677] = true,	-- Kuros

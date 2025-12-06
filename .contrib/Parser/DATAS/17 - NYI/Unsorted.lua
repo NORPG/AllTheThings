@@ -5652,16 +5652,12 @@ root(ROOTS.Unsorted, {
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
 				i(241067),	-- Large Forsaken Spiked Brazier
-				i(244321),	-- Orcish Lumberjack's Stool
-				i(244322),	-- Frostwolf Banded Stool
 				i(244777),	-- Surwich Peddler's Wagon
 				i(245259),	-- Small Val'sharah Bookcase
 				i(245291),	-- Replica Dark Iron Mole Machine
 				i(245294),	-- Councilward's Jeweled Goblet
 				i(245413),	-- Zandalari Sconce
 				i(245425),	-- Hanging Draenethyst Light
-				i(245444),	-- Orcish Communal Stove
-				i(245445),	-- Frostwolf Axe-Dart Board
 				i(245449),	-- Ancient Elven Highback Chair
 				i(245462),	-- Banshee Queen's Banner
 				i(245464),	-- Inert Blight Canister

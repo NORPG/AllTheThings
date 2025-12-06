@@ -117,6 +117,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, bubbleDownSelf({ ["timeline"] = { ADDED_
 		}),
 		q(93100, {	-- Decor Treasure Hunt
 			-- WoWhead Comment: Located in Saltfang Shoals. /way 66 75
+			["coord"] = { 64.8, 73.0, RAZORWIND_SHORES },	-- Treasure
 			["groups"] = { i(246587) },	-- Short Orgrimmar Bookcase (DECOR)
 		}),
 		q(93101, {	-- Decor Treasure Hunt

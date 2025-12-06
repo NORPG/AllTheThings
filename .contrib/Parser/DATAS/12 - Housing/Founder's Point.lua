@@ -95,6 +95,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, bubbleDownSelf({ ["timeline"] = { ADDED_11
 			["groups"] = { i(242951) },	-- Sturdy Wooden Bench (DECOR!)
 		}),
 		q(92970, {	-- Decor Treasure Hunt
+			["coord"] = { 39.1, 60.0, FOUNDERS_POINT },
 			["groups"] = { i(246742) },	-- Tall Sturdy Wooden Chair (DECOR!)
 		}),
 		q(92971, {	-- Decor Treasure Hunt
