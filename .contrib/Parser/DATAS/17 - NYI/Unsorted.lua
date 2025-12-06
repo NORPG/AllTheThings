@@ -5880,7 +5880,6 @@ root(ROOTS.Unsorted, {
 			i(258654),	-- Wandering Isle Wraps
 			i(258655),	-- Wandering Isle Travel Belt
 			i(258656),	-- Wandering Isle Shoulderguards
-			i(264242),	-- Dreadscar Battle Planning Map
 			i(264675),	-- Cache from the Infinite's Armory
 			i(265822),	-- Unstable Mechagon Re-Localizatron
 		})),

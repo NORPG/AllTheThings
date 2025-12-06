@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						i(256907),	-- Replica Tome of Blighted Implements (DECOR!)
 					}),
 					ach(60991, {	-- Raise an Army for the Dreadscar Rift
-						i(248941),	-- Dreadscar Battle Planning Map (DECOR!)
+						i(264242),	-- Dreadscar Battle Planning Map (DECOR!)
 					}),
 					ach(42281, {	-- The Netherlord's Campaign
 						i(248960),	-- Dreadscar Dais (DECOR!)
@@ -1013,7 +1013,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(139769, {	-- Cinch of the Black Harvest
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(248941, {	-- Dreadscar Battle Planning Map (DECOR!)
+							i(264242, {	-- Dreadscar Battle Planning Map (DECOR!)
 								["sourceAchievement"] = 60991,	-- Raise an Army for the Dreadscar Rift
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
