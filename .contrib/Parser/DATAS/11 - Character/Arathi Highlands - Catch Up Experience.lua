@@ -10,7 +10,11 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 	["description"] = "|cFFE50D12WARNING:|r Trying to fly out of the area will reset the whole experience.",
 	["timeline"] = { ADDED_11_2_7 },
 	["groups"] = {
-		n(QUESTS, {
+		-- It seems this entire questchain gives Gear Upgrade items
+		-- We could symlink all items, for now I put everything in groups as a comment
+		n(QUESTS, sharedData({
+			["isRepeatable"] = true,
+		}, {
 			q(90882, {	-- Gnoll Way
 				["qgs"] = {
 					244643,	-- Lady Jaina Proudmoore [A]
@@ -20,7 +24,8 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 					{ 70.0, 40.7, ARATHI_HIGHLANDS_CATCHUP },	-- Jaina
 					{ 69.8, 40.8, ARATHI_HIGHLANDS_CATCHUP },	-- Thrall
 				},
-				["groups"] = {	-- Needs to be tested on ALL Classes, gives Gear Update/Conversion class weapons. Probably use sym?
+				["groups"] = {	-- Weapons
+					--[[
 					-- Paladin
 					i(153892),	-- Sunsoul Bulwark
 					i(153889),	-- Sunsoul Scepter
@@ -29,6 +34,7 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 					-- Hunter
 					i(153814),	-- Trailseeker Spear
 					i(231839),	-- Trailseeker Longbow
+					]]--
 				},
 			}),
 			q(90883, {	-- To Go'shek Farm
@@ -53,12 +59,14 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["qg"] = 244729,	-- Farmer Bruvk
 				["coord"] = { 56.4, 59.6, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Rings
+					--[[
 					-- Paladin
 					i(153909),	-- Sunsoul Band of Stoicism
 					i(153908),	-- Sunsoul Ring of Stoicism
 					-- Hunter
 					i(153802),	-- Trailseeker Band of Onslaught
 					i(153803),	-- Trailseeker Ring of Onslaught
+					]]--
 				},
 			}),
 			q(90886, {	-- Best Laid Plans of Kobolds and Ogres
@@ -66,6 +74,7 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["qg"] = 244656,	-- Thrall
 				["coord"] = { 56.3, 59.6, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Boots and Gloves
+					--[[
 					-- Paladin
 					i(153902),	-- Sunsoul Greaves
 					i(153903),	-- Sunsoul Handguards
@@ -73,6 +82,7 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 					i(153807),	-- Trailseeker Gauntlets
 					i(153806),	-- Trailseeker Greaves
 					--
+					]]--
 					i(243573),	-- Poorly Written Plans (QI!)
 				},
 			}),
@@ -81,12 +91,14 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["qg"] = 244655,	-- Lady Jaina Proudmoore
 				["coord"] = { 56.5, 59.7, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Cloak and Chest
+					--[[
 					-- Paladin
 					i(153867),	-- Sunsoul Battleplate
 					i(153901),	-- Sunsoul Cloak of Stoicism
 					-- Hunter
 					i(153799),	-- Trailseeker Cloak of Rage
 					i(153805),	-- Trailseeker Vest
+					]]--
 				},
 			}),
 			q(90888, {	-- Saving Stromgarde Keep
@@ -98,12 +110,14 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["qg"] = 244655,	-- Lady Jaina Proudmoore
 				["coord"] = { 56.5, 59.7, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Trinkets
+					--[[
 					-- Paladin
 					i(153907),	-- Sunsoul Defender Idol
 					i(153910),	-- Sunsoul Defender Stone
 					-- Hunter
 					i(153801),	-- Trailseeker Idol of Rage
 					i(153804),	-- Trailseeker Stone of Rage
+					]]--
 				},
 			}),
 			q(92028, {	-- Pardon the Interruption
@@ -122,12 +136,14 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["coord"] = { 19.5, 57.4, ARATHI_HIGHLANDS_CATCHUP },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {	-- Pants and Necklace
+					--[[
 					-- Paladin
 					i(153906),	-- Sunsoul Amulet
 					i(153905),	-- Sunsoul Legguards
 					-- Hunter
 					i(153800),	-- Trailseeker Choker
 					i(153809),	-- Trailseeker Legguards
+					]]--
 				},
 			}),
 			q(90895, {	-- Catapult Bombardment [H]
@@ -136,12 +152,14 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["coord"] = { 19.5, 57.4, ARATHI_HIGHLANDS_CATCHUP },
 				["races"] = HORDE_ONLY,
 				["groups"] = {	-- Pants and Necklace
+					--[[
 					-- Paladin
 					i(153906),	-- Sunsoul Amulet
 					i(153905),	-- Sunsoul Legguards
 					-- Hunter
 					i(153800),	-- Trailseeker Choker
 					i(153809),	-- Trailseeker Legguards
+					]]--
 				},
 			}),
 			q(90893, {	-- Repelling the Siege
@@ -149,12 +167,14 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["qg"] = 244657,	-- Thrall
 				["coord"] = { 19.4, 57.4, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Waist and Wrist
+					--[[
 					-- Paladin
 					i(153913),	-- Sunsoul Armguards
 					i(153912),	-- Sunsoul Waistband
 					-- Hunter
 					i(153811),	-- Trailseeker Belt
 					i(153812),	-- Trailseeker Bracers
+					]]--
 				},
 			}),
 			q(90896, {	-- One Last Ogre
@@ -164,13 +184,15 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				},
 				["qg"] = 244666,	-- Thrall
 				["coord"] = { 24.6, 37.1, ARATHI_HIGHLANDS_CATCHUP },
-				["groups"] = {	-- Head & Shoulders... TM
+				["groups"] = {	-- Head & Shoulders
+					--[[
 					-- Paladin
 					i(153904),	-- Sunsoul Faceguard
 					i(153911),	-- Sunsoul Shoulderguards
 					-- Hunter
 					i(153808),	-- Trailseeker Helm
 					i(153810),	-- Trailseeker Spaulders
+					]]--
 				},
 			}),
 			q(90897, {	-- Back to Stromgarde
@@ -200,7 +222,7 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 					{ 69.2, 34.6, ARATHI_HIGHLANDS_CATCHUP },	-- Thrall [H]
 				},
 			}),
-		}),
+		})),
 	},
 })));
 
