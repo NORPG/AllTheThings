@@ -897,9 +897,8 @@ if app.GameBuildVersion >= 110207 then
 accwideCheckboxDecor =
 child:CreateAccountWideCheckbox("DECOR", "Decor")
 	:AlignBelow(accwideCheckboxCampsites)
-local decorCheckbox = child:CreateTrackingCheckbox("DECOR", "Decor", true)
+child:CreateTrackingCheckbox("DECOR", "Decor", true)
 	:AlignAfter(accwideCheckboxDecor)
-decorCheckbox:MarkAsWIP();	-- TODO: Remove WIP once Decor is working and done
 end
 
 local headerGeneralThings = child:CreateHeaderLabel(L.GENERAL_THINGS_LABEL)
