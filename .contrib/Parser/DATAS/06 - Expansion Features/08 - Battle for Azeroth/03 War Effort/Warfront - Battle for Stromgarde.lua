@@ -842,13 +842,13 @@ root(ROOTS.ExpansionFeatures,
 										crit(43403),	-- Demolishers
 									},
 								}),
+								achpart(12888, 12889, {	-- Strike Hard
+									["races"] = ALLIANCE_ONLY,
+								}),
 								ach(12889, {	-- Strike Fast (A)
 									["description"] = "You must personally capture each flag.",
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
-										ach(12888, {	-- Strike Hard
-											["races"] = ALLIANCE_ONLY,
-										}),
 										crit(41130),	-- Galson's Lode
 										crit(41131),	-- Highlands Mill
 										crit(41132),	-- Valorcall Pass
@@ -858,13 +858,13 @@ root(ROOTS.ExpansionFeatures,
 										crit(41136),	-- Northfold Crossing
 									},
 								}),
+								achpart(12877, 12876, {	-- Strike Hard
+									["races"] = HORDE_ONLY,
+								}),
 								ach(12876, {	-- Strike Fast (H)
 									["description"] = "You must personally capture each flag.",
 									["races"] = HORDE_ONLY,
 									["groups"] = {
-										ach(12877, {	-- Strike Hard
-											["races"] = HORDE_ONLY,
-										}),
 										crit(41111),	-- Circle of Elements
 										crit(41113),	-- Hatchet Ridge
 										crit(41114),	-- High Perch

@@ -1486,13 +1486,13 @@ namespace ATT
             if (!data.TryGetValue("achID", out long achID) || data.ContainsKey("criteriaID"))
                 return;
 
-            // Achievements should not nest other Achievements
-            if (data.TryGetValue("g", out List<object> g))
+            // Achievements should not nest other Achievements, unless they're specifically _noautomation
+            if (data.TryGetValue("g", out List<object> g) && !data.ContainsKey("_noautomation"))
             {
                 long gachID = 0;
                 if (g.Any(d => d is Dictionary<string, object> gd && gd.TryGetValue("achID", out gachID) && !gd.ContainsKey("criteriaID")))
                 {
-                    LogDebugWarn($"Achievement {achID} contains Achievement {gachID}. Use flat listing of Achievements, not nested", data);
+                    LogWarn($"Achievement {achID} contains Achievement {gachID}. Use flat listing of Achievements, not nested", data);
                 }
             }
         }

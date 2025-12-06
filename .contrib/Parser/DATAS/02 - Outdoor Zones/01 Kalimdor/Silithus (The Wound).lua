@@ -32,14 +32,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["lvl"] = { 50 },
 				["groups"] = {
 					n(ACHIEVEMENTS, {
-						ach(12955),		-- Champions of Azeroth
-						pvp(ach(13775, {	-- Essence Overload
-							["timeline"] = { ADDED_8_2_0 },
-							["groups"] = {
-								ach(13772),	-- Essence Essentials
-								ach(13773),	-- Essence Gains
-							},
-						})),
+						ach(12955),	-- Champions of Azeroth
+						pvp(ach(13772, {["timeline"] = { ADDED_8_2_0 }})),	-- Essence Essentials
+						pvp(ach(13773, {["timeline"] = { ADDED_8_2_0 }})),	-- Essence Gains
+						pvp(ach(13775, {["timeline"] = { ADDED_8_2_0 }})),	-- Essence Overload
 						ach(40958, {	-- Full Heart, Can't Lose
 							["timeline"] = { ADDED_11_0_7 },
 							-- Meta Achievement
@@ -54,13 +50,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 						}),
 						ach(13777, { ["timeline"] = { ADDED_8_2_0 }	}),	-- My Heart Container is Full
-						ach(13771, {	-- Power Is Beautiful
-							["timeline"] = { ADDED_8_2_0 },
-							["groups"] = {
-								ach(13769),	-- Power Up
-								ach(13770),	-- Power Creep
-							},
-						}),
+						ach(13769, {["timeline"] = { ADDED_8_2_0 }}),	-- Power Up
+						ach(13770, {["timeline"] = { ADDED_8_2_0 }}),	-- Power Creep
+						ach(13771, {["timeline"] = { ADDED_8_2_0 }}),	-- Power Is Beautiful
 						ach(13998, { ["timeline"] = { ADDED_8_3_0 }	}),	-- Pure of Heart
 						ach(14157, {	-- The Corruptor's End
 							["timeline"] = { ADDED_8_3_0 },
@@ -69,10 +61,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["sourceQuest"] = 58632,	-- Ny'alotha, the Waking City: The Corruptor's End
 								}),
 							},
-						}),
-						ach(13572, {	-- The Heart Forge
-							["timeline"] = { ADDED_8_2_0 },
-							["sourceQuest"] = 55618,	-- The Heart Forge
 						}),
 					}),
 					n(EMISSARY_QUESTS, {
@@ -134,7 +122,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_2_0 },
 							["groups"] = {
 								i(169292),	-- Charged Scale of the Blue Aspect (QI!)
-								i(168614), 	-- Charged Scale of the Blue Aspect
+								i(168614),	-- Charged Scale of the Blue Aspect
 							},
 						}),
 						q(54938, {	-- A Brother's Help
@@ -769,7 +757,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 152194,	-- MOTHER
 							["coord"] = { 48.1, 72.4, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_2_0 },
-							["groups"] = { i(168611) },	-- Petrified Ebony Scale
+							["groups"] = {
+								ach(13572),	-- The Heart Forge
+								i(168611),	-- Petrified Ebony Scale
+							},
 						}),
 						q(51211, {	-- The Heart of Azeroth
 							["sourceQuests"] = {

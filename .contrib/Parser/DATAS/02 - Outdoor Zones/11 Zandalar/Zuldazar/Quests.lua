@@ -907,6 +907,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127377 },	-- Pa'Ku
 				["coord"] = { 71.5, 49.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["groups"] = {
+					ach(13573, {	-- How to Ptrain Your Pterrordax
+						["races"] = HORDE_ONLY,
+					}),
+				},
 			}),
 			q(49919, {	-- Kaja'mite Ore Bust
 				["sourceQuests"] = { 49917 },	-- Kaja'mite? Kaja'must!

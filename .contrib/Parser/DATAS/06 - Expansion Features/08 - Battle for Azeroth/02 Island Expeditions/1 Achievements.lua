@@ -139,9 +139,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					["_quests"] = { 53155 },
 				}),
 			}),
-			ach(13124, {	-- Metal Detector
-				ach(13123),	-- My Dubs
-			}),
+			ach(13123),	-- My Dubs
+			ach(13124),	-- Metal Detector
 			ach(13128, {	-- I'm Here for the Pets
 				crit(41984, { ["provider"] = { "i", 163797 } }),	-- Scuttle
 				crit(41983, { ["provider"] = { "i", 163798 } }),	-- Captain Nibs
@@ -473,16 +472,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				-- 	},
 				-- }),
 			}),
-			pvp(ach(13121, {	-- Notorious
-				ach(13120, {	-- Blood in the Water
-					ach(12597),	-- Bayside Brawler
-				}),
-			})),
-			ach(12595, {	-- Expert Expeditioner
-				ach(12596, {	-- No Tourist
-					ach(12594),	-- Competent Captain
-				}),
-			}),
+			pvp(ach(12597)),	-- Bayside Brawler
+			pvp(ach(13120)),	-- Blood in the Water
+			pvp(ach(13121)),	-- Notorious
+			ach(12596),	-- No Tourist
+			ach(12594),	-- Competent Captain
+			ach(12595),	-- Expert Expeditioner
 			ach(13133, {	-- Team Deathmatch (A)
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -637,19 +632,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				},
 			}),
-			pvp(ach(13141, {	-- Island Slayer
-				ach(13115),	-- Reef Madness
-				ach(13114),	-- War for the Wilds
-				ach(13110),	-- Skittering Smashed
-				ach(13106),	-- Mire Marauder
-				ach(13102),	-- Clash at the Cay
-				ach(13098),	-- Bane of the Chain
-				ach(12592),	-- Ruined the Ruins
-				ach(13399),	-- Jorundall Justice
-				ach(13400),	-- Havenswood Hero
-				ach(13580),	-- Crestfallen
-				ach(13584),	-- Snowblossom Scrapper
-			})),
+			pvp(ach(13115)),	-- Reef Madness
+			pvp(ach(13114)),	-- War for the Wilds
+			pvp(ach(13110)),	-- Skittering Smashed
+			pvp(ach(13106)),	-- Mire Marauder
+			pvp(ach(13102)),	-- Clash at the Cay
+			pvp(ach(13098)),	-- Bane of the Chain
+			pvp(ach(12592)),	-- Ruined the Ruins
+			pvp(ach(13399)),	-- Jorundall Justice
+			pvp(ach(13400)),	-- Havenswood Hero
+			pvp(ach(13580)),	-- Crestfallen
+			pvp(ach(13584)),	-- Snowblossom Scrapper
+			pvp(ach(13141)),	-- Island Slayer
 			pvp(ach(13129)),	-- Sucker Punch
 		}),
 	}),

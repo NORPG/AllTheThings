@@ -757,12 +757,12 @@ root(ROOTS.ExpansionFeatures,
 								ach(14149, {	-- Heroic: War for the Shore (H)
 									["races"] = HORDE_ONLY,
 								}),
+								achpart(13302, 13305, {	-- Under Cover of Darkness (A)
+									["races"] = ALLIANCE_ONLY,
+								}),
 								ach(13305, {	-- Night Moves (A)
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
-										ach(13302, {	-- Under Cover of Darkness
-											["races"] = ALLIANCE_ONLY,
-										}),
 										crit(43889),	-- Bashal'Aran
 										crit(43896),	-- Gloomtide Strand
 										crit(43902),	-- Cinderfall Grove
@@ -772,12 +772,12 @@ root(ROOTS.ExpansionFeatures,
 										crit(43900),	-- Lor'danel Landing
 									},
 								}),
+								achpart(13301, 13306, {	-- Under Cover of Darkness
+									["races"] = HORDE_ONLY,
+								}),
 								ach(13306, {	-- Night Moves (H)
 									["races"] = HORDE_ONLY,
 									["groups"] = {
-										ach(13301, {	-- Under Cover of Darkness
-											["races"] = HORDE_ONLY,
-										}),
 										crit(43889),	-- Bashal'Aran
 										crit(43890),	-- Gloomtide Strand
 										crit(43891),	-- Cinderfall Grove
