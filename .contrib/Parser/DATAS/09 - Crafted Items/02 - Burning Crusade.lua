@@ -19,7 +19,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(572995, {	-- Olemba Lumber
+		o(572129, {	-- Olemba Lumber
 			i(242691),	-- Olemba Lumber
 		}),
 	})),
