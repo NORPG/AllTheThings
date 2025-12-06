@@ -748,6 +748,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(196637, {	-- Tethalash
 				["coord"] = { 25.6, 35.6, VALDRAKKEN },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["sym"] = {{"select","itemID",
 					198809,	-- Armored Vorquin Leystrider (MOUNT!)
 					201720,	-- Bronze Vorquin (MOUNT!)
