@@ -5646,8 +5646,6 @@ root(ROOTS.Unsorted, {
 			n(DECOR, {
 				i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
 				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
-				i(239177),	-- Open Tome of Twilight Nihilism
-				i(239179),	-- Tome of Twilight Nihilism
 				i(239606),	-- Forsaken Round Rug
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
@@ -5719,7 +5717,6 @@ root(ROOTS.Unsorted, {
 				i(256903),	-- Gilnean Banded Crate
 				i(256905),	-- Small Gilnean Table
 				i(257394),	-- Zandalari War Torch
-				i(258145),	-- Eversong Party Platter
 				i(258765),	-- Hull'n'Home Window
 				i(259071),	-- Brawler's Guild Punching Bag
 				i(263021),	-- Brumewood Hollow Grassy Patch
