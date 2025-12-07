@@ -233,11 +233,11 @@ local SourceLocationSettingsKey = setmetatable({
 local UnobtainableTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[1]..":0|t"
 local NotCurrentCharacterTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[0]..":0|t"
 local RETRIEVING_DATA = RETRIEVING_DATA
-local SummarizeShowForActiveRowKeys
 local function AddContainsData(group, tooltipInfo)
 	local key = group.key
+	local thingCheck = app.ThingKeys[key]
 	-- only show Contains on Things
-	if not app.ThingKeys[key] or (app.ActiveRowReference and not SummarizeShowForActiveRowKeys[key]) then return end
+	if not thingCheck or (app.ActiveRowReference and thingCheck ~= true) then return end
 
 	local working = group.working
 	-- Sort by the heirarchy of the group if not the raw group of an ATT list
@@ -402,13 +402,6 @@ local function AddContainsData(group, tooltipInfo)
 	return working
 end
 app.AddEventHandler("OnLoad", function()
-	SummarizeShowForActiveRowKeys = app.CloneDictionary(app.ThingKeys, {
-		-- Specific keys which we don't want to list Contains data on row reference tooltips but are considered Things
-		npcID = false,
-		creatureID = false,
-		encounterID = false,
-		explorationID = false,
-	})
 	app.Settings.CreateInformationType("SummarizeThings", {
 		text = "SummarizeThings",
 		priority = 2.9, HideCheckBox = true,
@@ -951,9 +944,7 @@ app.ThingKeys = {
 	-- professionID = true,
 	-- categoryID = true,
 	-- mapID = true,
-	npcID = true,
 	conduitID = true,
-	creatureID = true,
 	currencyID = true,
 	itemID = true,
 	toyID = true,
@@ -968,18 +959,21 @@ app.ThingKeys = {
 	illusionID = true,
 	questID = true,
 	objectID = true,
-	encounterID = true,
 	artifactID = true,
 	azeriteessenceID = true,
 	followerID = true,
 	factionID = true,
-	explorationID = true,
 	titleID = true,
 	campsiteID = true,
 	decorID = true,
 	garrisonbuildingID = true,
 	achievementID = true,	-- special handling
 	criteriaID = true,	-- special handling
+	-- 1 - Specific keys which we don't want to list Contains data on row reference tooltips but are considered Things
+	npcID = 1,
+	creatureID = 1,
+	encounterID = 1,
+	explorationID = 1,
 };
 local SpecificSources = {
 	headerID = {
