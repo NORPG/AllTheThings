@@ -5648,7 +5648,6 @@ root(ROOTS.Unsorted, {
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
 				i(245259),	-- Small Val'sharah Bookcase
-				i(245291),	-- Replica Dark Iron Mole Machine
 				i(245294),	-- Councilward's Jeweled Goblet
 				i(245425),	-- Hanging Draenethyst Light
 				i(245449),	-- Ancient Elven Highback Chair

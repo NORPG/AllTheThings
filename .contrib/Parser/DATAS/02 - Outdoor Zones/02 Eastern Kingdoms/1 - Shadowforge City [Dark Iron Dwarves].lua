@@ -122,6 +122,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 				},
 			}),
+			n(VENDORS, {
+				n(144129, {	-- Plugger Spazzring
+					["coord"] = { 49.9, 32.5, 1186 },
+					["groups"] = {
+						i(245291, {	-- Replica Dark Iron Mole Machine (DECOR!)
+							["cost"] = 25000000,	-- 2500g
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
+				}),
+			}),
 		},
 	}),
 }))

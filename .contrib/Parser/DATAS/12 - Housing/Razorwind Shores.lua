@@ -114,6 +114,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(246218) },	-- Iron-Reinforced Crate (DECOR)
 			}),
 			q(93099, {	-- Decor Treasure Hunt
+				["coord"] = { 68.2, 75.7, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(246224) },	-- Large Orgrimmar Bookcase (DECOR)
 			}),
 			q(93100, {	-- Decor Treasure Hunt
@@ -140,6 +141,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(246883) },	-- Crude Banded Crate (DECOR)
 			}),
 			q(93106, {	-- Decor Treasure Hunt
+				["coord"] = { 52.2, 81.8, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(247221) },	-- Small Orgrimmar Chair (DECOR)
 			}),
 			q(93107, {	-- Decor Treasure Hunt
