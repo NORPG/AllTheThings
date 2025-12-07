@@ -7210,7 +7210,7 @@ s(184650,203208,{f=3,races=a[136]}),
 s(184651,203209,{f=3,races=a[136]})}})}}),
 ra(24,{awp=110207,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Pandaren|r.",races=a[156],g={
 h(-45,{races=a[156],g={
-q(84442,{description="Auto-accepted once criteria is met.",races=a[158]}),
+q(84442,{coords={{52.2,13.7,84}},description="Auto-accepted once criteria is met.",qgs=a[72],races=a[158]}),
 q(84444,{description="Auto-accepted once criteria is met.",races=a[159]}),
 q(84451,{coords={{68.2,16.2,84}},qgs={229257},races=a[158],sourceQuests={84442}}),
 q(84452,{coords={{70.5,39,85}},qgs={229338},races=a[159],sourceQuests={84444}}),

@@ -5649,7 +5649,6 @@ root(ROOTS.Unsorted, {
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
 				i(241067),	-- Large Forsaken Spiked Brazier
-				i(244777),	-- Surwich Peddler's Wagon
 				i(245259),	-- Small Val'sharah Bookcase
 				i(245291),	-- Replica Dark Iron Mole Machine
 				i(245294),	-- Councilward's Jeweled Goblet

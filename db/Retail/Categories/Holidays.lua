@@ -14590,7 +14590,7 @@ ah(40871,{e=242,type="a",g={
 ach(40871,{e=242,g={
 s(229849,231907,{b=1,e=242,f=2}),
 crit(70472,{achID=40870,e=242,id=1})}}),
-o(467403,{coords={a[720]},crs={226683,230838},description="Behind the crate next to Alyx. After looting this, talk with her, she will tell you to Speak to Alphonse.\n\nYou need to obtain 1 card, it does not matter which one, in order to see gossip options and start the quest.\nThis one is just an example as it is located near Alyx, the main quest giver of the event.",e=242,sourceQuests=a[802],g={
+o(467403,{coords={{58.9,83.6,12},a[720]},crs={226683,230838},description="Behind the crate next to Alyx. After looting this, talk with her, she will tell you to Speak to Alphonse.\n\nYou need to obtain 1 card, it does not matter which one, in order to see gossip options and start the quest.\nThis one is just an example as it is located near Alyx, the main quest giver of the event.",e=242,sourceQuests=a[802],g={
 i(229219,{e=242})}}),
 q(84882,{coords={{63.9,52.4,71}},description="Speak to Alphonse after having looted the Six of Frost to unlock this quest. Use the Idol of Ohn'ahra to find more cards scattered around the grounds.",e=242,lvl=10,qgs={230838},qis={229219},g={
 o(467083,{coords={{63.97,51.51,71}},description="Under a bench near the Story Time stage.",e=242,g={

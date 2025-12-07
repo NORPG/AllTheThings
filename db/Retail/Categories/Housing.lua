@@ -16,7 +16,6 @@ ach(61316),
 ach(61317),
 ach(61318,{
 title(657)}),
-ach(40887),
 ach(61211,{description="Build your own home through Housing",sourceQuests={91863,92486}})}}),
 h(-45,{awp=110207,g={
 q(93057,{description="Triggers on login. Requires a re-log if purchasing Midnight via in-game shop.",isBreadcrumb=1,maps=a[1],nextQuests=a[10]}),
@@ -138,7 +137,7 @@ q(93000,{coords={a[6]},qgs=a[2],g={
 de(985,{itemID=241618,sourceQuests=a[47],spellID=1231528})}}),
 q(93001,{coords={a[6]},qgs=a[2],g={
 de(1488,{itemID=244782,spellID=1237900})}}),
-q(93002,{coords={a[6]},qgs=a[2],g={
+q(93002,{coords={a[6],{57.8,42,2352}},qgs=a[2],g={
 de(1162,{itemID=253490,sourceQuests=a[48],spellID=1256484})}}),
 q(93003,{coords={a[6]},qgs=a[2],g={
 de(11719,{itemID=257690,sourceQuests=a[49],spellID=1261851})}}),
@@ -146,7 +145,7 @@ q(93004,{coords={a[6]},qgs=a[2],g={
 de(1486,{itemID=244780,spellID=1237898})}}),
 q(93005,{coords={a[6]},qgs=a[2],g={
 de(994,{itemID=253441,sourceQuests=a[50],spellID=1256434})}}),
-q(93006,{coords={a[6]},qgs=a[2],g={
+q(93006,{coords={a[6],{53.7,39.8,2352}},qgs=a[2],g={
 de(1153,{itemID=253479,sourceQuests=a[51],spellID=1256473})}}),
 q(93007,{coords={a[6]},qgs=a[2],g={
 de(9255,{itemID=253181,sourceQuests=a[52],spellID=1255733})}}),
