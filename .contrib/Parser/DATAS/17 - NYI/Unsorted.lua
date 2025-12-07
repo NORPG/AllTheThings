@@ -5685,6 +5685,7 @@ root(ROOTS.Unsorted, {
 				i(263023),	-- Founder's Point Grassy Patch
 				i(263024),	-- Founder's Point Grassy Spread
 				i(263026),	-- Brawler's Barricade
+				i(247739),	-- Kun-Lai Lacquered Rickshaw
 			}),
 			filter(MISC, {
 				i(228939),	-- [DNT]Coffee Bean \\ Coffee Bean

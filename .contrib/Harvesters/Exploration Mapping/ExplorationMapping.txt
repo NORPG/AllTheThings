@@ -1025,7 +1025,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1218),	-- TESTAzshara
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1219),	-- Legash Encampment
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1220),	-- Darnassian Base Camp
-[Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1221),	-- Ruins of Eldarath 
+[Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1221),	-- Ruins of Eldarath
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1222),	-- Hetaera's Clutch
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1223),	-- Temple of Zin-Malor
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1224),	-- Bear's Head
@@ -1365,8 +1365,8 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1769),	-- Timbermaw Hold
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1770),	-- Shadow Hold
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1771),	-- Shrine of the Deceiver
-[Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1997),	-- Bloodvenom Post 
-[Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1998),	-- Talonbranch Glade 
+[Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1997),	-- Bloodvenom Post
+[Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1998),	-- Talonbranch Glade
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(2478),	-- Morlos'Aran
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(2479),	-- Emerald Sanctuary
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(2480),	-- Jadefire Glen
