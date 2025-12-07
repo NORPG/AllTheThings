@@ -69,7 +69,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245355) },	-- Sturdy Wooden Door (DECOR!)
 			}),
 			q(92963, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found near the entrance to the Brumewood Hollow of the Founders Point at 63.1, 46.7",
 				["coord"] = { 63.1, 46.7, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245356) },	-- Goldshire Window (DECOR!)
 			}),
@@ -127,7 +126,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245548) },	-- Iron-Reinforced Cupboard (DECOR!)
 			}),
 			q(92978, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found between the dock and the stranded boat at the Brumewood Hollow of the Founders Point at 54.2, 73.6",
 				["coord"] = { 54.2, 73.6, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(243334) },	-- Reinforced Wooden Chest (DECOR!)
 			}),
@@ -136,12 +134,10 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245334) },	-- Wicker Basket (DECOR!)
 			}),
 			q(92980, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found at The Outer Banks of the Founders Point at 28.6, 46.8",
 				["coord"] = { 28.6, 46.8, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245556) },	-- Iron-Reinforced Standing Mirror (DECOR!)
 			}),
 			q(92981, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found just below the Watch Tower at The Outer Banks of the Founders Point at 29.9, 48.2",
 				["coord"] = { 29.9, 48.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245547) },	-- Wide Charming Couch (DECOR!)
 			}),
@@ -166,7 +162,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(239075) },	-- Wrought Iron Chandelier (DECOR!)
 			}),
 			q(92987, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found below a big tree in the Gilded Oaks of the Founders Point at 36.6, 57.9",
 				["coord"] = { 36.6, 57.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(235677) },	-- Wrought Iron Floor Lamp (DECOR!)
 			}),
@@ -175,7 +170,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(235675) },	-- Three-Candle Wrought Iron Chandelier (DECOR!)
 			}),
 			q(92989, {	-- Decor Treasure Hunt
-				-- Exo Note: Lighthouse. Around 34.6, 74.0
+				["coord"] = { 34.0, 72.7, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(253589) },	-- Short Wooden Cabinet (DECOR!)
 			}),
 			q(92990, {	-- Decor Treasure Hunt
@@ -204,7 +199,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			q(92996, {	-- Decor Treasure Hunt
 				["coord"] = { 29.0, 28.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246502) },	-- Charming Couch (DECOR!)
-				-- Exo Note: ObjectID:572258
 			}),
 			q(92997, {	-- Decor Treasure Hunt
 				-- Exo Note: Somewhere around 24.1, 34.9

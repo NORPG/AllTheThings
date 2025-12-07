@@ -60,6 +60,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(236654) },	-- Orgrimmar Interior Doorway (DECOR)
 			}),
 			q(93074, {	-- Decor Treasure Hunt
+				["coord"] = { 55.6, 49.8, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(236655) },	-- Orgrimmar Interior Wall (DECOR)
 			}),
 			q(93075, {	-- Decor Treasure Hunt
@@ -73,7 +74,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(244534) },	-- Iron-Reinforced Door (DECOR)
 			}),
 			q(93080, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found under the tent in the Sellers Market at the Cragthorn Highlands of the Razorwind Shores at 62.6, 51.7",
 				["coord"] = { 62.6, 51.7, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(245266) },	-- Iron-Studded Wooden Window (DECOR)
 			}),
@@ -90,7 +90,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(245545) },	-- Orgrimmar Nightstand (DECOR)
 			}),
 			q(93084, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found at The Bloom of the Razorwind Shores at 60.7, 64.6",
 				["coord"] = { 60.7, 64.6, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(245546) },	-- Durable Wooden Chest (DECOR)
 			}),
@@ -118,12 +117,10 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(246224) },	-- Large Orgrimmar Bookcase (DECOR)
 			}),
 			q(93100, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Located in Saltfang Shoals. /way 66 75
 				["coord"] = { 64.8, 73.0, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(246587) },	-- Short Orgrimmar Bookcase (DECOR)
 			}),
 			q(93101, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found atop the arch at Saltfang Shoals of the Razorwind Shores at 61.9, 76.7",
 				["coord"] = { 61.9, 76.7, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(246687) },	-- Tusked Candleholder (DECOR)
 			}),
@@ -151,7 +148,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(251973) },	-- Hide-Covered Wall Shelf (DECOR)
 			}),
 			q(93109, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found at Saltfang Shoals of the Razorwind Shores at 47.8, 88.4",
 				["coord"] = { 47.8, 88.4, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(245680) },	-- Orgrimmar Bureaucrat's Desk (DECOR)
 			}),
@@ -200,7 +196,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(246249) },	-- Silvermoon Beam Platform (DECOR!)
 			}),
 			q(93141, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found right behind the tower located just Northwest of The Bluffs Flightpath at 50.4, 76.8",
 				["coord"] = { 50.4, 76.8, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(251981) },	-- Elegant Elven Chandelier (DECOR!)
 			}),
