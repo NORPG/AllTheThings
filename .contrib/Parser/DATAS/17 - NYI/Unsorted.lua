@@ -8186,7 +8186,6 @@ root(ROOTS.Unsorted, {
 			i(170269),	-- Elemental Chargestone
 			i(170272),	-- War-Torn Memento
 			i(170379),	-- Sunwarmed Sand
-			i(168632),	-- Slipstream Generator
 			i(168633),	-- Supplemental Oxygenation Device
 			i(168648),	-- Emergency Anti-Gravity Device
 			i(168785),	-- Subroutine: Defragmentation
