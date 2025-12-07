@@ -5648,34 +5648,22 @@ root(ROOTS.Unsorted, {
 				i(239606),	-- Forsaken Round Rug
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
-				i(241067),	-- Large Forsaken Spiked Brazier
 				i(245259),	-- Small Val'sharah Bookcase
 				i(245291),	-- Replica Dark Iron Mole Machine
 				i(245294),	-- Councilward's Jeweled Goblet
-				i(245413),	-- Zandalari Sconce
 				i(245425),	-- Hanging Draenethyst Light
 				i(245449),	-- Ancient Elven Highback Chair
 				i(245462),	-- Banshee Queen's Banner
-				i(245464),	-- Inert Blight Canister
 				i(245465),	-- Tirisfal Wooden Chair
 				i(245466),	-- Forsaken Spiked Chair
 				i(245469),	-- Lordaeron Lantern
 				i(245470),	-- Lordaeron Hanging Lantern
-				i(245471),	-- Blightfire Lantern
-				i(245472),	-- Blightfire Hanging Lantern
 				i(245473),	-- Forsaken Studded Table
-				i(245474),	-- Forsaken War Planning Table
 				i(245475),	-- Forsaken Long Table
-				i(245477),	-- Small Forsaken War Tent
 				i(245478),	-- Lordaeron Sconce
 				i(245479),	-- Blightfire Sconce
 				i(245480),	-- Lordaeron Torch
 				i(245481),	-- Blightfire Torch
-				i(245482),	-- Undercity Spiked Chest
-				i(245488),	-- Zandalari Rickshaw
-				i(245495),	-- Dazar'alor Market Tent
-				i(245500),	-- Red Dazar'alor Tent
-				i(245501),	-- Venthyr Tome of Unforgiven Sins
 				i(245627),	-- Elven Temple Brazier
 				i(245655),	-- Filigree Moon Lamp
 				i(246110),	-- Filigree Moon Sconce
@@ -5707,7 +5695,6 @@ root(ROOTS.Unsorted, {
 				i(252404),	-- Hull'n'Home Chair
 				i(255840),	-- Champion Brawler's Gloves
 				i(256903),	-- Gilnean Banded Crate
-				i(257394),	-- Zandalari War Torch
 				i(258765),	-- Hull'n'Home Window
 				i(259071),	-- Brawler's Guild Punching Bag
 				i(263021),	-- Brumewood Hollow Grassy Patch

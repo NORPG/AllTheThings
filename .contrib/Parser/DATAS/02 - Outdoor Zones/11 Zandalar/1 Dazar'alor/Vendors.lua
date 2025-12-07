@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(THE_GREAT_SEAL, {
 		n(VENDORS, {
 			n(141954, {	-- Arbo
@@ -40,9 +40,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					39987,	-- Tuskarr Fishing Spear
 				}},
 			}),
-			n(148923, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Captain Zen'taga <Dubloons Trader>
+			n(148923, {	-- Captain Zen'taga <Dubloons Trader>
 				["coord"] = { 44.4, 94.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_0 },
 				["groups"] = {
 					i(166491, {	-- Albino Duskwatcher (PET!)
 						["cost"] = { { "c", 1710, 200 }, },	-- 200x Seaferer's Dubloon
@@ -115,8 +116,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(166501, {	-- Soggy Page
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
+					i(245482, {	-- Undercity Spiked Chest (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", 1710, 250 }, },	-- 250x Seaferer's Dubloon
+					}),
 				},
-			})),
+			}),
 			n(161067, {	-- Captain Kitt
 				["coord"] = { 44.4, 94.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -484,8 +489,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(63045),	-- Tan Riding Camel (MOUNT!)
 				},
 			}),
-			n(148924, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Provisioner Mukra
+			n(148924, {	-- Provisioner Mukra
 				["coord"] = { 51.22, 95.08, DAZARALOR },
+				["timeline"] = { ADDED_8_1_0 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(166743, {	-- Blight Bomber (TOY!)
@@ -531,8 +537,36 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(166547, {	-- War-Torn Crimson Cloak
 						["cost"] = { { "c", 1716, 50 }, },	-- 50x Honorbound Service Medal
 					}),
+					i(245472, {	-- Blightfire Hanging Lantern (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", 1560, 150 }, },	-- 150x War Resources
+					}),
+					i(245471, {	-- Blightfire Lantern (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", 1560, 150 }, },	-- 150x War Resources
+					}),
+					i(245474, {	-- Forsaken War Planning Table (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", 1560, 300 }, },	-- 300x War Resources
+					}),
+					i(245464, {	-- Inert Blight Canister (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
+					}),
+					i(241067, {	-- Large Forsaken Spiked Brazier (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
+					}),
+					i(245476, {	-- Large Forsaken War Tent (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", 1560, 300 }, },	-- 300x War Resources
+					}),
+					i(245477, {	-- Small Forsaken War Tent (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
+					}),
 				},
-			})),
+			}),
 			n(126330, {	-- Rakle the Wretched
 				["coord"] = { 34.7, 11.5, DAZARALOR },
 				["races"] = HORDE_ONLY,

@@ -977,6 +977,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
+					i(245501, {	-- Venthyr Tome of Unforgiven Sins
+						-- ["minReputation"] = { },	-- renown 65
+						["description"] = "Requires Renown 65",
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = {{ "c", ANIMA, 1500 }},
+					}),
 				},
 			}),
 			n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
