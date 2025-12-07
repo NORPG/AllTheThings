@@ -1853,7 +1853,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			q(36627, {	-- Big Frostfire Gun
 				["sourceQuest"] = 36594,	-- "Spare" Parts
 				["qg"] = 85882,	-- Blixthraz Blastcharge
-				["coord"] = { 62.2, 73.4, FROSTWALL },
 				["requireSkill"] = ENGINEERING,
 				["races"] = HORDE_ONLY,
 				["groups"] = appendGroups(DRAENOR_ENGINEERING, {
@@ -2774,7 +2773,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			q(36594, {	-- "Spare" Parts
 				["sourceQuest"] = 36589,	-- Heavy Arms
 				["qg"] = 85882,	-- Blixthraz Blastcharge
-				["coord"] = { 62.2, 73.4, FROSTWALL },
 				["requireSkill"] = ENGINEERING,
 				["races"] = HORDE_ONLY,
 			}),

@@ -44,16 +44,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 					}),
-					cl(MONK, MISTWEAVER, {
-						i(139562, {	-- Breath of the Undying Serpent
-							artifact(519),	-- Sheilun, Staff of the Mists
-						}),
-					}),
-					cl(MONK, WINDWALKER, {
-						i(139563, {	-- The Stormfist
-							artifact(527),	-- Fists of the Heavens
-						}),
-					}),
 				}),
 				n_TrainingFollowers({
 					follower(702),	-- Echo of Chi-Ji
