@@ -1121,9 +1121,7 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 			return true;
 		end
 	end,
-	["ignoreSourceLookup"] = function(t)
-		return true;
-	end,
+	["ignoreSourceLookup"] = app.ReturnTrue,
 	isMinilistHeader = function(t)
 		local mapinfo = C_Map_GetMapInfo(t.mapID)
 		local mapType = mapinfo and mapinfo.mapType or 0
@@ -1226,9 +1224,7 @@ local instanceFields = {
 		end
 	end,
 	["isLockoutShared"] = app.ReturnFalse,
-	["ignoreSourceLookup"] = function(t)
-		return true;
-	end,
+	["ignoreSourceLookup"] = app.ReturnTrue,
 };
 local EJ_GetInstanceInfo = EJ_GetInstanceInfo;
 if EJ_GetInstanceInfo and app.GameBuildVersion >= 50000 then
@@ -1240,6 +1236,7 @@ if EJ_GetInstanceInfo and app.GameBuildVersion >= 50000 then
 		if lore then _t.lore = lore; end
 		if icon then _t.icon = icon; end
 		if link then _t.link = link; end
+		app.PrintDebug("cached instanceID",id,name,icon,link)
 		if field then return _t[field]; end
 	end
 	local oldIconField = instanceFields.icon;
