@@ -723,6 +723,7 @@ else
 end
 
 CacheFields = function(group, skipMapCaching, cacheName)
+	-- app.PrintDebug("CacheFields",app:SearchLink(group),skipMapCaching,cacheName)
 	allowMapCaching = not skipMapCaching
 	if cacheName then
 		local cache = cacheName and AllCaches[cacheName]
@@ -915,7 +916,7 @@ local function SearchForObject(field, id, require, allowMultiple)
 	fcache = fcache or GetRawField(field, id)
 	count = fcache and #fcache or 0;
 	if count == 0 then
-		-- app.PrintDebug("SFO",field,id,require,"0~")
+		-- app.PrintDebug("SFO:",field,id,require,"0~")
 		return allowMultiple and app.EmptyTable or nil
 	end
 	local fcacheObj;
@@ -927,11 +928,11 @@ local function SearchForObject(field, id, require, allowMultiple)
 			(require == 1 and fcacheObj[field] == id) or
 			(require == 2 and fcacheObj.key == field and fcacheObj[field] == id)
 		then
-			-- app.PrintDebug("SFO",field,id,require,"1=",fcacheObj.hash)
+			-- app.PrintDebug("SFO:",field,id,require,"1=",fcacheObj.hash)
 			return allowMultiple and {fcacheObj} or fcacheObj
 		end
 		-- one result, but doesn't meet the 'require'
-		-- app.PrintDebug("SFO",field,id,require,"1~",fcacheObj.hash)
+		-- app.PrintDebug("SFO:",field,id,require,"1~",fcacheObj.hash)
 		return allowMultiple and app.EmptyTable or nil
 	end
 
@@ -966,7 +967,7 @@ local function SearchForObject(field, id, require, allowMultiple)
 		-- No require
 		results = fcache
 	end
-	-- app.PrintDebug("SFO",field,id,require,"?>",#results)
+	-- app.PrintDebug("SFO:",field,id,require,"?>",#results)
 	-- if only 1 or no result, no point to try filtering
 	if #results <= 1 then return allowMultiple and results or results[1] end
 	-- try out accessibility sort on multiple results instead of filtering

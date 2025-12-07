@@ -1699,6 +1699,7 @@ app.AddEventHandler("RowOnLeave", function (self)
 	GameTooltip:ClearLines();
 	GameTooltip:Hide();
 end)
+local RowSearchSkipFillOptions = {SkipFill=true}
 app.AddEventHandler("RowOnEnter", function(self)
 	local reference = self.ref;
 	if not reference then return; end
@@ -1779,7 +1780,10 @@ app.AddEventHandler("RowOnEnter", function(self)
 	-- if nothing was rendered into tooltip using an actual link, then use the search result logic to replace our reference
 	-- after capturing relative field values
 	if not linkSuccessful and link then
-		local searchreference = app.GetCachedSearchResults(app.SearchForLink, link)
+		-- app.PrintDebug("Search link",link)
+		-- perform the search with no Filling since it's unnecessary in this context. either the row has groups, or it's a successful link which fills as needed above
+		local searchreference = app.GetCachedSearchResults(app.SearchForLink, link, nil, RowSearchSkipFillOptions)
+		-- app.PrintDebug("Search link",link,"=>",searchreference)
 		if searchreference then
 			local parent = rawget(reference, "parent")
 			local sourceParent = rawget(reference, "sourceParent")
