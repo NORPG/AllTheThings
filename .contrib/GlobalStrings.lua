@@ -3143,6 +3143,7 @@ CATALOG_SHOP_TYPE_SERVICE = "Service";
 CATALOG_SHOP_TYPE_VC_WARBAND = "Warband Currency";
 CATALOG_SHOP_WOW_FLAVOR_CLASSIC = "%s Classic";
 CATALOG_SHOP_WOW_FLAVOR_MODERN = "World of Warcraft: %s";
+CATALOG_SHOP_WOW_FLAVOR_TRR = "Titan Reforged Realm";
 CATCH_PET = "Catch Pet";
 CATCH_PET_CONDITION = "You must have a level 3 battle pet.";
 CATCH_PET_DESCRIPTION = "Attempt to catch a pet that is below 35% health.";
