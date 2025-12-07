@@ -5645,7 +5645,6 @@ root(ROOTS.Unsorted, {
 			n(DECOR, {
 				i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
 				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
-				i(239606),	-- Forsaken Round Rug
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
 				i(245259),	-- Small Val'sharah Bookcase
@@ -5654,16 +5653,6 @@ root(ROOTS.Unsorted, {
 				i(245425),	-- Hanging Draenethyst Light
 				i(245449),	-- Ancient Elven Highback Chair
 				i(245462),	-- Banshee Queen's Banner
-				i(245465),	-- Tirisfal Wooden Chair
-				i(245466),	-- Forsaken Spiked Chair
-				i(245469),	-- Lordaeron Lantern
-				i(245470),	-- Lordaeron Hanging Lantern
-				i(245473),	-- Forsaken Studded Table
-				i(245475),	-- Forsaken Long Table
-				i(245478),	-- Lordaeron Sconce
-				i(245479),	-- Blightfire Sconce
-				i(245480),	-- Lordaeron Torch
-				i(245481),	-- Blightfire Torch
 				i(245627),	-- Elven Temple Brazier
 				i(245655),	-- Filigree Moon Lamp
 				i(246110),	-- Filigree Moon Sconce
