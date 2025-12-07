@@ -9191,26 +9191,26 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [TWW] [Scenario] [Parent 15145 - Hallowfall] exploration(15150),	-- Priory of the Sacred Flame
 [N/A] [N/A] [N/A - N/A] exploration(15334),	-- 11.2 - Karesh Test
 [TWW] [Outdoor] [Map 2731 - 11.0 Dalaran Scenario] map_exploration(15177),	-- Dalaran
-[TWW] [N/A] [Map 2735 - Founder's Point] map_exploration(16105),	-- Founder's Point
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16376),	-- Brumewood Hollow
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16377),	-- Gilded Oaks
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16378),	-- The Outer Banks
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16588),	-- Town Center
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16700),	-- Faldir's Torch
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16701),	-- Morgan's Rest
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16704),	-- Breakwater Bight
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16709),	-- Crescent Cove
-[TWW] [N/A] [Parent 16105 - Founder's Point] exploration(16818),	-- Stoneveil Ridge
-[TWW] [N/A] [Map 2736 - Razorwind Shores] map_exploration(15524),	-- Razorwind Shores
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16226),	-- Cragthorn Highlands
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16227),	-- DurotarMain_Housing
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16228),	-- Runetotem's Bounty
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16229),	-- Saltfang Shoals
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16589),	-- The Common
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16687),	-- Four Sisters
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16688),	-- Ragewater Springs
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16690),	-- Scorchsong Isle
-[TWW] [N/A] [Parent 15524 - Razorwind Shores] exploration(16753),	-- The Bloom
+[TWW] [Neighborhood] [Map 2735 - Founder's Point] map_exploration(16105),	-- Founder's Point
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16376),	-- Brumewood Hollow
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16377),	-- Gilded Oaks
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16378),	-- The Outer Banks
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16588),	-- Town Center
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16700),	-- Faldir's Torch
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16701),	-- Morgan's Rest
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16704),	-- Breakwater Bight
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16709),	-- Crescent Cove
+[TWW] [Neighborhood] [Parent 16105 - Founder's Point] exploration(16818),	-- Stoneveil Ridge
+[TWW] [Neighborhood] [Map 2736 - Razorwind Shores] map_exploration(15524),	-- Razorwind Shores
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16226),	-- Cragthorn Highlands
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16227),	-- DurotarMain_Housing
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16228),	-- Runetotem's Bounty
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16229),	-- Saltfang Shoals
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16589),	-- The Common
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16687),	-- Four Sisters
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16688),	-- Ragewater Springs
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16690),	-- Scorchsong Isle
+[TWW] [Neighborhood] [Parent 15524 - Razorwind Shores] exploration(16753),	-- The Bloom
 [N/A] [N/A] [N/A - N/A] exploration(15511),	-- Durotar_DemoArea
 [N/A] [N/A] [N/A - N/A] exploration(15512),	-- Dreg_DemoArea
 [N/A] [N/A] [N/A - N/A] exploration(15515),	-- Housing_Plots
@@ -9309,7 +9309,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Scenario] [Parent 15431 - Silithus] exploration(15446),	-- Ravaged Twilight Camp
 [Vanilla] [Scenario] [Parent 15431 - Silithus] exploration(15447),	-- The Crystal Vale
 [Vanilla] [Scenario] [Parent 15431 - Silithus] exploration(15448),	-- Hive'Ashi
-[TWW] [N/A] [Map 2783 - Home Interior] map_exploration(16300),	-- Home Interior
+[TWW] [Housing] [Map 2783 - Home Interior] map_exploration(16300),	-- Home Interior
 [DF] [Outdoor] [Map 2785 - Dragon Isles] map_exploration(15509),	-- The Forbidden Reach
 [DF] [Outdoor] [Parent 15509 - The Forbidden Reach] exploration(15510),	-- The War Creche
 [DF] [Outdoor] [Map 2785 - Dragon Isles] map_exploration(15780),	-- Forbidden Reach - (11.0.5 Version) - Dracthyr for All

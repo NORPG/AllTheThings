@@ -52,7 +52,9 @@ def exploration_mapping(build):
         "3": "Battleground",
         "4": "Arena",
         "5": "Scenario",
-        "6": "Unknown"
+        "6": "Unknown",
+        "7": "Housing",
+        "8": "Neighborhood"
     }
 
     # Download CSVs into memory
