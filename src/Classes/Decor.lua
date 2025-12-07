@@ -12,8 +12,8 @@ if not C_HousingCatalog then
 	return
 end
 
-local C_HousingCatalog_GetCatalogEntryInfoByRecordID
-	= C_HousingCatalog.GetCatalogEntryInfoByRecordID
+local C_HousingCatalog_GetCatalogEntryInfoByRecordID,C_HouseEditor_IsHouseEditorActive
+	= C_HousingCatalog.GetCatalogEntryInfoByRecordID,C_HouseEditor.IsHouseEditorActive
 
 -- TODO: test other APIs
 -- this is non-parameterized, returns the max decor that can be owned
@@ -116,6 +116,9 @@ do
 		-- app.PrintDebug(val1, entryFrame, tooltip)
 		-- app.PrintTable(entryFrame)
 		-- app.PrintTable(tooltip)
+
+		-- Don't hook the ATT information when actually editing your House (unnecessary at that point)
+		if C_HouseEditor_IsHouseEditorActive() then return end
 
 		if not entryFrame then return end
 
