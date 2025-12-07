@@ -1779,21 +1779,23 @@ app.AddEventHandler("RowOnEnter", function(self)
 
 	-- if nothing was rendered into tooltip using an actual link, then use the search result logic to replace our reference
 	-- after capturing relative field values
-	if not linkSuccessful and link then
-		-- app.PrintDebug("Search link",link)
-		-- perform the search with no Filling since it's unnecessary in this context. either the row has groups, or it's a successful link which fills as needed above
-		local searchreference = app.GetCachedSearchResults(app.SearchForLink, link, nil, RowSearchSkipFillOptions)
-		-- app.PrintDebug("Search link",link,"=>",searchreference)
-		if searchreference then
-			local parent = rawget(reference, "parent")
-			local sourceParent = rawget(reference, "sourceParent")
-			reference = searchreference
-			reference.parent = parent
-			reference.sourceParent = sourceParent
-			app.ActiveRowReference = reference;
-			-- app.PrintDebug("Used search due to no link rendering",reference.working)
-		end
-	end
+	-- commenting this out i can't find counter-examples as to why i added it, and it helps fix some tooltips
+	-- will probably run into the reason again in the future and maybe will realize why... - Runaway
+	-- if not linkSuccessful and link then
+	-- 	-- app.PrintDebug("Search link",link)
+	-- 	-- perform the search with no Filling since it's unnecessary in this context. either the row has groups, or it's a successful link which fills as needed above
+	-- 	local searchreference = app.GetCachedSearchResults(app.SearchForLink, link, nil, RowSearchSkipFillOptions)
+	-- 	-- app.PrintDebug("Search link",link,"=>",searchreference)
+	-- 	if searchreference then
+	-- 		local parent = rawget(reference, "parent")
+	-- 		local sourceParent = rawget(reference, "sourceParent")
+	-- 		reference = searchreference
+	-- 		reference.parent = parent
+	-- 		reference.sourceParent = sourceParent
+	-- 		app.ActiveRowReference = reference;
+	-- 		-- app.PrintDebug("Used search due to no link rendering",reference.working)
+	-- 	end
+	-- end
 
 	-- Default top row line if nothing is generated from a link.
 	if tooltip:NumLines() < 1 then
