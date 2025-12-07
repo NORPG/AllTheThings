@@ -86,7 +86,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
 					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+					-- #IF NOT ANYCLASSIC
 					["requireSkill"] = BLACKSMITHING,
+					-- #ENDIF
 					["lvl"] = lvlsquish(60, 60, 20),
 					["groups"] = {
 						i(18592, {	-- Plans: Sulfuron Hammer (RECIPE!)
