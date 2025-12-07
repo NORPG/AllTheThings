@@ -450,7 +450,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 7.3.2
 			expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 } }, {
-				q(49619),	--
+				q(49619),	-- completed some missions on the Legion Mission Board
 				q(49620),	-- completed some missions on the Legion Mission Board
 				q(49621),	--
 			})),
