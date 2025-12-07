@@ -52,6 +52,7 @@ root(ROOTS.Zones, {
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
 						["cost"] = {{ "i", 94288, 9 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,
+						["_drop"] = { "g" },
 						["groups"] = {
 							-- i(89112),	-- Mote of Harmony	-- Doesnt need sourcing from a Quest
 						},
@@ -60,6 +61,7 @@ root(ROOTS.Zones, {
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
 						["cost"] = {{ "i", 94288, 99 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,
+						["_drop"] = { "g" },
 						["groups"] = {
 							-- i(76061),	-- Spirit of Harmony	-- Doesnt need sourcing from a Quest
 						},

@@ -740,7 +740,7 @@ root(ROOTS.Zones, {
 							i(101766), 	-- Recipe: Spiced Blossom Soup (RECIPE!)
 							i(101769), 	-- Recipe: Stuffed Lushrooms (RECIPE!)
 							i(103624),	-- Treasures of the Vale
-							applyclassicphase(MOP_PHASE_ONE, i(76061, { ["timeline"] = { ADDED_5_0_4 } })),	-- Spirit of Harmony
+							--applyclassicphase(MOP_PHASE_ONE, i(76061, { ["timeline"] = { ADDED_5_0_4 } })),	-- Spirit of Harmony // These are world drops
 						})),
 						{}),
 					}),

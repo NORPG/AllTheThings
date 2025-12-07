@@ -3642,7 +3642,6 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 					})),
 					i(74849),	-- Pink Turnip
-					i(74844),	-- Red Blossom Leek
 				}),
 			},
 		}),

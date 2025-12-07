@@ -1294,7 +1294,6 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(74844),	-- Red Blossom Leek
 				}),
 			},
 		}),

@@ -717,5 +717,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = 
 	filter(MISC, {
 		i(89112),	-- Mote of Harmony
 		i(76061),	-- Spirit of Harmony
+		i(74844, {	-- Red Blossom Leek
+			["description"] "Drops from Jinyu, Sprites or Zandalari.",
+		}),
 	}),
 })));
