@@ -52,10 +52,9 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 		-- It might be possible that some of these quests are Neutral but not yet datamined properly on WoWhead
 		-- In that case, create a Neutral Header in the Quests fileand move respective quests there.
 		header(HEADERS.Quest, 93109, sharedData({	-- Decor Treasure Hunt
-			-- qg is added to the mobileDB because, even with sharedData, it triggers contrib reports. Temp fix until it gets sorted?
 			["qg"] = 253596,	-- The Last Architect
 			-- this allows proper merging with 'coord' used below
-			["coords"] = { 53.7, 57.4, RAZORWIND_SHORES },
+			["coords"] = {{ 53.7, 57.4, RAZORWIND_SHORES }},
 		},{
 			q(93073, {	-- Decor Treasure Hunt
 				["groups"] = { i(236654) },	-- Orgrimmar Interior Doorway (DECOR)

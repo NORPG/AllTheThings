@@ -1433,13 +1433,13 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			q(53827, {	-- The Council Has Spoken
 				["sourceQuests"] = { 53825 },	-- The New Zanchuli Council
 				["provider"] = { "n", 145359 },	-- Princess Talanji
-				["coord"] = { 60.4, 38.9, DAZARALOR },
+				["coord"] = { 60.5, 38.8, 1166 },	-- Zanchul, Council Chambers
 				["races"] = HORDE_ONLY,
 			}),
 			q(53828, {	-- Gaze of the Loa
 				["sourceQuests"] = { 53827 },	-- The Council Has Spoken
 				["provider"] = { "n", 145359 },	-- Princess Talanji
-				["coord"] = { 60.4, 38.9, DAZARALOR },
+				["coord"] = { 60.5, 38.8, 1166 },	-- Zanchul, Council Chambers
 				["races"] = HORDE_ONLY,
 			}),
 			q(54031, {	-- Gaze of the Loa: Krag'wa

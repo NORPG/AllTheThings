@@ -568,8 +568,6 @@ MobileDB.Creature = {
 	[241603] = true,	-- Threadis
 	[241604] = true,	-- Destien
 	[241605] = true,	-- Kitzy
-	[248854] = true,	-- The Last Architect
-	[253596] = true,	-- The Last Architect
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates
