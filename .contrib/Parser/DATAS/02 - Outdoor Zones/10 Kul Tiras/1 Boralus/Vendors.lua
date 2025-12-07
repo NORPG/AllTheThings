@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(BORALUS, {
 		n(VENDORS, {
 			n(142190, {	-- Alchemist Hart <Amateur Potions>
@@ -307,6 +307,27 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(168022, {	-- Plans: Khaz'gorian Smithing Hammer (RECIPE!)
 						["sourceQuests"] = { 50275 },	-- Anvil's Away (A)
 						["timeline"] = { ADDED_8_1_5 },
+					}),
+				},
+			}),
+			n(246721, {	-- Janey Forrest
+				["coord"] = { 56.3, 45.8, BORALUS },
+				["timeline"] = { ADDED_11_2_7 },
+				["groups"] = {
+					i(252390, {	-- Small Hull'n'Home Table (DECOR!)
+						["cost"] = { { "c", 1560, 450 }, },	-- 450x War Resources
+					}),
+					i(252391, {	-- Large Hull'n'Home Table (DECOR!)
+						["cost"] = { { "c", 1560, 750 }, },	-- 750x War Resources
+					}),
+					i(252393, {	-- Hull'n'Home Dresser (DECOR!)
+						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+					}),
+					i(252404, {	-- Hull'n'Home Chair (DECOR!)
+						["cost"] = { { "c", 1560, 300 }, },	-- 300x War Resources
+					}),
+					i(258765, {	-- Hull'n'Home Window (DECOR!)
+						["cost"] = { { "c", 1560, 175 }, },	-- 175x War Resources
 					}),
 				},
 			}),

@@ -5678,13 +5678,8 @@ root(ROOTS.Unsorted, {
 				i(251640),	-- Draenic Forge
 				i(251653),	-- Draenethyst Lamppost
 				i(251654),	-- Large Karabor Fountain
-				i(252390),	-- Small Hull'n'Home Table
-				i(252391),	-- Large Hull'n'Home Table
-				i(252393),	-- Hull'n'Home Dresser
-				i(252404),	-- Hull'n'Home Chair
 				i(255840),	-- Champion Brawler's Gloves
 				i(256903),	-- Gilnean Banded Crate
-				i(258765),	-- Hull'n'Home Window
 				i(259071),	-- Brawler's Guild Punching Bag
 				i(263021),	-- Brumewood Hollow Grassy Patch
 				i(263022),	-- Brumewood Hollow Grassy Spread
