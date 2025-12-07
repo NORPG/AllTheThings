@@ -516,7 +516,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					mission(1502, {	-- There is no Brawlers Guild
 						q(45111, {	-- Everyone Loves a Good Fight
 							["provider"] = { "i", 142522 },	-- Rude Letter
+							-- #if BEFORE 11.2.7
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							-- #endif
 						}),
 					}),
 					mission(1296, {	-- The Emerald Nightfare: Facing Our Fears

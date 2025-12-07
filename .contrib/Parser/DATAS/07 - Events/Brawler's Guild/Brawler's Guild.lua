@@ -711,22 +711,18 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				}),
 			})),
 			-- WOD
-			sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 }, ["races"] = ALLIANCE_ONLY }, {
 				q(36702, {	-- Meatball
 					["description"] = "Reach Rank 5 in the arena.",
 					["qg"] = 86272,	-- Meatball
-					["groups"] = {
-						follower(203),	-- Meatball
-					},
+					["groups"] = { follower(203) },	-- Meatball
 				}),
 			}),
-			sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 }, ["races"] = HORDE_ONLY }, {
 				q(36702, {	-- Meatball
 					["description"] = "Reach Rank 5 in the arena.",
 					["qg"] = 86272,	-- Meatball
-					["groups"] = {
-						follower(203),	-- Meatball
-					},
+					["groups"] = { follower(203) },	-- Meatball
 				}),
 			}),
 			-- BFA

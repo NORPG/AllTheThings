@@ -369,6 +369,7 @@ i(163593);	-- Map of Zandalar Trade Winds
 i(163028);	-- Masterwork Statue of the First Trolls
 i(158751);	-- Matted Pelt
 i(158778);	-- Mucose Tendril
+i(158867);	-- Needlepoint Bill
 i(158866);	-- Oily Blubber
 i(163520);	-- Orange Glowing Puffer
 i(162685);	-- Overflowing Loa Tribute

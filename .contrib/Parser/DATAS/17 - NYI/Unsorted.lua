@@ -7269,7 +7269,6 @@ root(ROOTS.Unsorted, {
 				i(158850),	-- Vibrant Plumage \\ PH Flavor - Pig
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
-				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
 				i(158727),	-- Decayed Equipment
 				i(161202),	-- Polished Brass Sextant
 				i(161205),	-- Wooden Horse Carving

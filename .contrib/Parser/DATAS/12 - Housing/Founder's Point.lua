@@ -194,7 +194,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245576) },	-- Bel'ameth Round Interior Pillar (DECOR!)
 			}),
 			q(92994, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: At the apple orchard plots by the coast, in its western flowerbed where the gold and yellow flowers meet. It's a short walk straight north from plot #52.
+				["coord"] = { 36.9, 32.9, FOUNDERS_POINT },		-- Treasure
 				["groups"] = { i(245575) },	-- Bel'ameth Interior Wall (DECOR!)
 			}),
 			q(92995, {	-- Decor Treasure Hunt
