@@ -5656,11 +5656,7 @@ root(ROOTS.Unsorted, {
 				i(245655),	-- Filigree Moon Lamp
 				i(246110),	-- Filigree Moon Sconce
 				i(246424),	-- Square Stormpike Table
-				i(246481),	-- Retired Industrial Gnomegrabber
 				i(246487),	-- Gnomish Tesla Coil
-				i(246599),	-- Self-Sealing Stembarrel
-				i(246600),	-- Small Mechanical Crate
-				i(246602),	-- Small H.O.M.E. Cog
 				i(246845),	-- Tome of Shadowforge Cunning
 				i(246860),	-- Tome of Forsaken Resilience
 				i(247908),	-- Nightborne Lantern
@@ -5732,7 +5728,6 @@ root(ROOTS.Unsorted, {
 				i(262564),	-- Bolt of Soft Wool
 				i(262565),	-- Spool of Thread
 				-- house?
-				i(246697),	-- Self-Assembling Homeware Kit
 				i(249386),	-- Ghost Gear
 
 				-- Brawlers Guild

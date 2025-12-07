@@ -5,6 +5,18 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	m(MECHAGON, {
 		n(QUESTS, {
+			n(REWARDS, {
+				i(246697, {	-- Self-Assembling Homeware Kit
+					["description"] = "Randomly can replace the one of the rewards of between 3-4 of the island's daily quests, with some exceptions.",
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(246481),	-- Retired Industrial Gnomegrabber (DECOR!)
+						i(246599),	-- Self-Sealing Stembarrel (DECOR!)
+						i(246602),	-- Small H.O.M.E. Cog (DECOR!)
+						i(246600),	-- Small Mechanical Crate (DECOR!)
+					},
+				}),
+			}),
 			q(56493, {	-- A Direct Approach
 				["provider"] = { "n", 155188 },	-- Scrollsage Nola
 				["coord"] = { 72.2, 37.2, MECHAGON },
