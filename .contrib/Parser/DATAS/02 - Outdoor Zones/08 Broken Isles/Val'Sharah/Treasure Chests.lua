@@ -186,6 +186,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			o(242350, {	-- Treasure Chest
 				["questID"] = 38900,
+				-- #if AFTER 11.2.7
+				-- #if BEFORE 12.0.0
+				["isDaily"] = true,	-- Maybe only daily during remix?
+				-- #endif
+				-- #endif
 				["coord"] = { 64.5, 85.5, VALSHARAH },
 			}),
 			o(240652, {	-- Treasure Chest

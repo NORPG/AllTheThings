@@ -8,6 +8,11 @@ root(ROOTS.Zones, {
 			n(TREASURES, {
 				o(241717, {	-- Glimmering Treasure Chest
 					["questID"] = 38763,
+					-- #if AFTER 11.2.7
+					-- #if BEFORE 12.0.0
+					["isDaily"] = true,	-- Maybe only daily during remix?
+					-- #endif
+					-- #endif
 					["coord"] = { 49.7, 47.3, STORMHEIM },
 				}),
 				o(241721, {	-- Glimmering Treasure Chest
