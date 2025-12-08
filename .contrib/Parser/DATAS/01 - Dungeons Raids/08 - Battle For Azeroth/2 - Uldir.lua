@@ -51,7 +51,6 @@ local EncounterToCRS = {
 ------ EncounterToLoot ------
 local EncounterToLoot = {
 	[TALOC] = {
-		i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 		i(160679),	-- Khor, Hammer of the Corrupted
 		i(160680),	-- Titanspark Animator
 		i(160637),	-- Crimson Colossus Armguards
@@ -115,7 +114,6 @@ local EncounterToLoot = {
 		i(160655),	-- Syringe of Bloodborne Infirmity
 	},
 	[ZUL] = {
-		i(162422),	-- Pattern: Embroidered Deep Sea Bag [Rank 3] (RECIPE!)
 		i(160684),	-- Pursax, the Backborer
 		i(160691),	-- Tusk of the Reborn Prophet
 		i(160630),	-- Crest of the Undying Visionary
@@ -324,6 +322,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(162121),	-- Vantus Rune Technique: Uldir [Rank 1] (RECIPE!)
 					i(162124),	-- Vantus Rune Technique: Uldir [Rank 2] (RECIPE!)
 					i(162125),	-- Vantus Rune Technique: Uldir [Rank 3] (RECIPE!)
+				}),
+				BossOnly(TALOC, {
+					i(163119),	-- Khor, Hammer of the Guardian (transmog item)
+				}),
+				BossOnly(ZUL, {
+					i(162422),	-- Pattern: Embroidered Deep Sea Bag [Rank 3] (RECIPE!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
