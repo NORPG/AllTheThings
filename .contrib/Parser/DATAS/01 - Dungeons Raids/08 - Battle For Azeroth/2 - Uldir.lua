@@ -370,7 +370,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(ZUL, {
 					ach(12830),	-- Edgelords
-					i(162422),	-- Pattern: Embroidered Deep Sea Bag [Rank 3] (RECIPE!)
 					i(166502),	-- Blood-Soaked Tome of Dark Whispers (CI!)
 				}),
 				BossOnly(MYTHRAX, {
