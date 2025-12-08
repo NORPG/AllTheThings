@@ -1873,8 +1873,8 @@ crit(23372,{achID=8342,id=2,r=1,u=2})}}),
 q(32859,{awp=50300,rwp=70003,sourceQuests={32858},u=2,g={
 crit(23394,{achID=9176,awp=60002,id=2,r=2,u=2}),
 crit(23394,{achID=9177,awp=60003,id=2,r=1,u=2})}}),
-q(36702,{awp=60002,description="Reach Rank 5 in the arena.",lvl=40,qgs={86272},races={1,2,3,4,5,6,7,8,9,10,11,22,25,26,27,28,29,30,31,32,34,35,36,37,52,70,84,85},rwp=90002,u=2,g={
-follower(203,{u=2})}}),
+q(36702,{description="Reach Rank 5 in the arena.",lvl=40,qgs={86272},races={1,2,3,4,5,6,7,8,9,10,11,22,25,26,27,28,29,30,31,32,34,35,36,37,52,70,84,85},g={
+follower(203)}}),
 q(55002,{awp=80105,coords={a[331]},description="This quest can be accepted after you successfully complete any (or your first) Brawl.",lvl=80,qgs={68363},r=2,rwp=90002,u=2}),
 q(55003,{awp=80105,coords={a[420]},lvl=80,qgs=a[96],r=2,rwp=90002,sourceQuests=a[337],u=2}),
 q(55004,{awp=80105,coords={a[420]},lvl=80,qgs=a[96],r=2,rwp=90002,sourceQuests={55003},u=2}),

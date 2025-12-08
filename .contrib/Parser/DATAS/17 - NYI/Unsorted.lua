@@ -5836,15 +5836,6 @@ root(ROOTS.Unsorted, {
 				i(243304),	-- Jubilant Snowman Costume
 				i(245580),	-- Rolling Snowball
 			}),
-			i(258648),	-- Wandering Isle Legwraps
-			i(258649),	-- Wandering Isle Capsa
-			i(258650),	-- Wandering Isle Cover
-			i(258651),	-- Wandering Isle Charm
-			i(258652),	-- Wandering Isle Sandals
-			i(258653),	-- Wandering Isle Tunic
-			i(258654),	-- Wandering Isle Wraps
-			i(258655),	-- Wandering Isle Travel Belt
-			i(258656),	-- Wandering Isle Shoulderguards
 			i(264675),	-- Cache from the Infinite's Armory
 			i(265822),	-- Unstable Mechagon Re-Localizatron
 		})),

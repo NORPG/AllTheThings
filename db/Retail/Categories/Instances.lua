@@ -2570,7 +2570,7 @@ inst(228,{coords={{39.06,18.12,35}},description="The best route for a full clear
 h(-31,{
 faction(59,{maps={32},OnTooltip=_.OnTooltipDB.ThoriumBrotherhood})}),
 h(-45,{
-q(7604,{cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=20,qgs=a[222],qis={18628},requireSkill=164,g={
+q(7604,{cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=20,qgs=a[222],qis={18628},g={
 r(21161,{itemID=18592,learnedAt=300,requireSkill=164}),
 de(11274,{awp=110207,itemID=256673,sourceQuests={7604},spellID=1260651})}}),
 q(4264,{providers={{"i",11446}},r=2,rwp=30002,sourceQuests={4242},u=2}),
@@ -11114,7 +11114,7 @@ s(19549,40583,{b=1,c=a[484],f=7,lvl=30,modID=1}),
 s(19544,40577,{b=1,c=a[484],f=7,lvl=30,modID=1}),
 s(19534,40567,{b=1,c=a[1078],f=7,lvl=30,modID=1}),
 s(19523,40556,{b=1,c=a[1078],f=7,lvl=30,modID=1})}})})}}),
-inst(754,{awp=30002,coords={{35.7,22.9,23},{87.4,51.1,115}},isLockoutShared=1,isRaid=1,mapID=162,maps=a[340],savedInstanceID=533,g={
+inst(754,{awp=30002,coords={{35.7,22.9,23},{87.4,51.1,115}},description="Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",isLockoutShared=1,isRaid=1,mapID=162,maps=a[340],savedInstanceID=533,g={
 d(3,{
 h(-12,{
 ach(578,{
@@ -12014,8 +12014,8 @@ s(8828,22422,{b=1,cost={{"i",206579,70},{"i",12811,10},{"i",206642,1}},f=7,lvl=2
 s(8823,22417,{b=1,cost={{"i",206579,210},{"i",12811,10},{"i",206643,1}},f=7,lvl=25}),
 s(8826,22420,{b=1,cost={{"i",206579,140},{"i",12811,10},{"i",206644,1}},f=7,lvl=25})})}),
 h(-56,{
-o(403731,{description="Located everywhere inside of Naxxramas.",sourceQuests=a[1228],sqreq=1,g={
-i(22682,{lvl=25,spellID=29432})}})}),
+o(403731,{sourceQuests=a[1228],sqreq=1,g={
+i(22682,{description="31 Frozen Runes can be found through (Lower) Nazzramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",lvl=25,spellID=29432})}})}),
 h(-63,{
 i(207702)})}}),
 h(-12,{

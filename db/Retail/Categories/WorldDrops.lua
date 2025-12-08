@@ -7036,6 +7036,7 @@ r(146925,{learnedAt=75,requireSkill=197}),
 r(143011,{learnedAt=75,requireSkill=197})}})})}),
 flt(50,{
 i(89112,{spellID=129352}),
+i(74844,{description="Drops from Jinyu, Sprites or Zandalari."}),
 i(76061)})}}),
 x(6,{awp=60003,g={
 h(-51,{

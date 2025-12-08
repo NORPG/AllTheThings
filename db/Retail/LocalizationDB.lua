@@ -1120,7 +1120,7 @@ localize(L.HEADER_NAMES, {
 	[-101] = AUCTION_CATEGORY_WEAPONS,
 	[-102] = INVTYPE_WRIST,
 	[-103] = "Expansion Pre-Launch",
-	[-104] = "Remix: Legion",
+	[-104] = "WoW Remix: Legion",
 	[-105] = "WoW Remix: Mists of Pandaria",
 	[-106] = "Winds of Mysterious Fortune",
 	[-115] = "Buildings",
@@ -2472,7 +2472,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=30,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=11,["monthDay"]=30,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=14,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=12,["monthDay"]=14,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=21,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=12,["monthDay"]=21,["weekday"]=1,["year"]=2025}),
@@ -2524,7 +2523,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=8,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=15,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=15,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=22,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=22,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=29,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=29,["weekday"]=1,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=29,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=29,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=6,["weekday"]=1,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
@@ -31350,6 +31350,7 @@ localize(L.HEADER_NAMES, {
 	[-86] = "Troisième coffre",
 	[-87] = "Coffre final",
 	[-103] = "Pré-Lancement de l’Extension",
+	[-104] = "WoW Remix: Legion",
 	[-106] = "Vents de bonne aventure mystérieuse",
 	[-130] = "Garnisons",
 	[-132] = "L’équilibre de la puissance",
@@ -58462,7 +58463,7 @@ localize(L.HEADER_NAMES, {
 	[-37] = "다크문 축제",
 	[-38] = "멋의 대제전",
 	[-70] = "시간여행 던전 이벤트",
-	[-104] = "군단 리믹스",
+	[-104] = "WoW 리믹스: 군단",
 	[-105] = "WoW 리믹스: 판다리아의 안개",
 	[-106] = "수수께끼의 운세의 바람",
 	[-130] = "수비대",
@@ -73359,7 +73360,7 @@ localize(L.HEADER_NAMES, {
 	[-86] = "三箱",
 	[-87] = "最终宝箱",
 	[-103] = "资料片前夕",
-	[-104] = "军团再临：幻境新生",
+	[-104] = "《魔兽世界》幻境新生：军团再临",
 	[-105] = "《魔兽世界》幻境新生：熊猫人之谜",
 	[-106] = "神秘运势之风",
 	[-115] = "建筑",
@@ -80137,7 +80138,7 @@ localize(L.HEADER_NAMES, {
 	[-86] = "第三個箱子",
 	[-87] = "最後的箱子",
 	[-103] = "資料片前夕",
-	[-104] = "軍臨天下：混搭再造",
+	[-104] = "《魔獸世界》混搭再造：軍臨天下",
 	[-105] = "《魔獸世界》混搭再造：潘達利亞之謎",
 	[-106] = "神秘命運之風",
 	[-115] = "建築",

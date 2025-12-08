@@ -1345,9 +1345,15 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 						i(242520),	-- Festival Hot Air Balloon (TOY!)
 						iensemble(258635, {	-- Ensemble: Heritage of the Wandering Isle [Tushui Set, Alliance]
 							["races"] = { PANDAREN_ALLIANCE },
+							["extraTransmogSetSpells"] = {
+								1272412,	-- Ensemble: Heritage of the Wandering Isle [Wandering Isle Set, Neutral]
+							},
 						}),
 						iensemble(258657, {	-- Ensemble: Heritage of the Wandering Isle [Huojin Set, Horde]
 							["races"] = { PANDAREN_HORDE },
+							["extraTransmogSetSpells"] = {
+								1272412,	-- Ensemble: Heritage of the Wandering Isle [Wandering Isle Set, Neutral]
+							},
 						}),
 						i(258636, {	-- Honored Guest's Party Favor
 							["description"] = "Awarded to players completing the Heritage Questline more than once.",
