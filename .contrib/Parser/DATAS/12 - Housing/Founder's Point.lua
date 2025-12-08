@@ -233,7 +233,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(244780) },	-- Circular Elven Table (DECOR!)
 			}),
 			q(93005, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: at the fork between plots 16 and 11, just above the Brumewood Hollow area.
+				["coord"] = { 60.3, 56.8, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(253441) },	-- Grand Elven Bookcase (DECOR!)
 			}),
 			q(93006, {	-- Decor Treasure Hunt

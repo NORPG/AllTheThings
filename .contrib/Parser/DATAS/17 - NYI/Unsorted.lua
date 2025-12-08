@@ -5818,7 +5818,6 @@ root(ROOTS.Unsorted, {
 			filter(QUEST_ITEMS, {
 				i(229913),	-- Letter from Aysa
 				i(229995),	-- Gorgoa Reed
-				i(243573),	-- Poorly Written Plans
 				i(252423),	-- Truffles
 				i(252947),	-- Honeycomb
 				i(252952),	-- Bewitched Berries

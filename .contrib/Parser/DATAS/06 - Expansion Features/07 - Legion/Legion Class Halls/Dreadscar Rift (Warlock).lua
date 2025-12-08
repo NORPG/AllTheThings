@@ -307,6 +307,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								i(173526, {	-- Caer Darrow Scroll (QI!)
 									["timeline"] = { ADDED_9_0_1 }
 								}),
+								i(139034),	-- Letter from Gul'dan (QI!)
 							},
 						}),
 						q(43153, {	-- An Eye for a Scepter

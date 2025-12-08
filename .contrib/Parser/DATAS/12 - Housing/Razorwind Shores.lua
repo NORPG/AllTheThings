@@ -172,7 +172,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(246882) },	-- Long Orgrimmar Bench (DECOR)
 			}),
 			q(93134, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: in Runetoterm's Bounty just east of the flight point for that area. The treasure is under a canopy on top of the falls next to a telescope.
+				["coord"] = { 45.2, 56.3, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(248760) },	-- Lovely Elven Shelf (DECOR)
 			}),
 			q(93135, {	-- Decor Treasure Hunt
