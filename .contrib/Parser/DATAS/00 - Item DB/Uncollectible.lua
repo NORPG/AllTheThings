@@ -522,7 +522,9 @@ i(169143);	-- Seized Sparksaw
 i(168791);	-- Shiny Rocks
 i(169125);	-- Sonic Drive Screw
 i(170096);	-- Sodden Highborne Painting
+i(169126);	-- Supercharged Graphics Cog
 i(168007);	-- Torn Direbloom Petal
+i(168788);	-- Toy Soldier Weapons
 i(169135);	-- Warped Shock Absorber
 i(169998);	-- Weathered Bulwark
 i(168006);	-- Wilted Direbloom Petal

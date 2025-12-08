@@ -1104,6 +1104,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19092)),	-- Stormpike Mail Girgle
 						moh(1, i(19091)),	-- Stormpike Plate Girdle
 						moh(1, i(19325)),	-- Don Julio's Band
+						moh(1, i(246424, { ["timeline"] = { ADDED_11_2_7 } })),	-- Square Stormpike Table (DECOR!)
 						applyclassicphase(PHASE_FIVE, moh(1, i(21563))),	-- Don Rodrigo's Band
 						i(19320, {	-- Gnoll Skin Bandolier
 							["timeline"] = { REMOVED_4_0_1 },

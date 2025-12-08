@@ -92,6 +92,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(236677) },	-- Stormwind Interior Wall (DECOR!)
 			}),
 			q(92969, {	-- Decor Treasure Hunt
+				["coord"] = { 55.4, 71.5, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(242951) },	-- Sturdy Wooden Bench (DECOR!)
 			}),
 			q(92970, {	-- Decor Treasure Hunt

@@ -309,9 +309,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				["timeline"] = { ADDED_11_0_5 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(83274, {	-- An Original Path Through Time
 				["provider"] = { "n", 234555 },	-- Bobadormu
@@ -322,16 +320,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				["timeline"] = { ADDED_11_0_5 },
 				["isWeekly"] = true,
 				["lvl"] = 80,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(83285, {	-- The Ancient Scroll
 				["provider"] = { "i", 225348 },	-- Ancient Timewarped Scroll
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {
@@ -958,9 +952,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				["timeline"] = { ADDED_11_0_5 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(47523, {	-- Disturbance Detected: Black Temple
 				["provider"] = { "n", 123252 },	-- Vormu
@@ -2156,9 +2148,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				["timeline"] = { ADDED_11_0_5 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(50316, {	-- Disturbance Detected: Ulduar
 				["provider"] = { "n", 130654 },	-- Vormu
@@ -3710,9 +3700,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				["timeline"] = { ADDED_11_0_7 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(57637, {	-- Disturbance Detected: Firelands
 				["provider"] = { "n", 158276 },	-- Vormu
@@ -4734,16 +4722,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 				["timeline"] = { ADDED_11_0_7 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(45563, {	-- The Shrouded Coin
 				["provider"] = { "i", 143776 },	-- Shrouded Timewarped Coin
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {
@@ -5410,25 +5394,19 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 				["timeline"] = { ADDED_11_0_7 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(55498, {	-- The Shimmering Crystal (A)
 				["provider"] = { "i", 167921 },		-- Shimmering Timewarped Crystal (A)
 				["races"] = ALLIANCE_ONLY,
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 			q(55499, {	-- The Shimmering Crystal (H)
 				["provider"] = { "i", 167922 },		-- Shimmering Timewarped Crystal (H)
 				["races"] = HORDE_ONLY,
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {
@@ -6083,16 +6061,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				["timeline"] = { ADDED_11_0_7 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(64710, {	-- Whispering Felflame Crystal
 				["provider"] = { "i", 187611 },	-- Whispering Felflame Crystal
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {
@@ -7466,7 +7440,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 			}),
 		}),
 		n(QUESTS, {
-			-- TODO below max level quest
+			q(92647, {	-- A Shadowed Journey Through Time
+				--["qg"] = ,	--
+				--["coord"] = {  },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
 			q(92650, {	-- The Flickering Anima
 				["provider"] = { "i", 253517 },		-- The Flickering Anima
 				["isWeekly"] = true,

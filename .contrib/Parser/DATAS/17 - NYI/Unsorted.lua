@@ -5655,7 +5655,6 @@ root(ROOTS.Unsorted, {
 				i(245627),	-- Elven Temple Brazier
 				i(245655),	-- Filigree Moon Lamp
 				i(246110),	-- Filigree Moon Sconce
-				i(246424),	-- Square Stormpike Table
 				i(246487),	-- Gnomish Tesla Coil
 				i(246845),	-- Tome of Shadowforge Cunning
 				i(246860),	-- Tome of Forsaken Resilience
@@ -8013,7 +8012,6 @@ root(ROOTS.Unsorted, {
 			i(168662),	-- Maroon Pigment
 			i(168755),	-- Unpublished Research
 			i(168786),	-- Rotten Food
-			i(168788),	-- Toy Soldier Weapons
 			i(168789),	-- Perpetual Motion Device
 			i(168790),	-- Sack of Fish Bones
 			i(168794),	-- Last Year's Brewfest Flyer
@@ -8033,7 +8031,6 @@ root(ROOTS.Unsorted, {
 			i(169119),	-- Enhanced Water
 			i(169120),	-- Enhancement-Free Water
 			i(169122),	-- Gibraltian Monkey Wrench
-			i(169126),	-- Supercharged Graphics Cog
 			i(169190),	-- Blueprint: Mega-Sized Spare Parts \\ Blueprint: TK45
 			i(169193),	-- Nazjatar Ring A
 			i(169291),	-- Petrified Ebony Scale
