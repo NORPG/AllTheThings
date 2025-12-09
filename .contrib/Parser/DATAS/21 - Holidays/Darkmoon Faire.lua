@@ -15,7 +15,7 @@ MINIGAMES_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "小游戏",
-		-- TODO: tw = "",
+		tw = "小遊戲",
 	},
 	description = {
 		en = "The following minigames cost one Darkmoon Game Token to play and have a daily quest that grants you prize tickets as well as a number of associated achievements.",
