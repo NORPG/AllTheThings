@@ -60,7 +60,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				TANARIS,
 				THE_HINTERLANDS,
 				TIRISFAL_GLADES,
-				TWILIGHT_HIGHLANDS,
 				UNGORO_CRATER,
 				WESTERN_PLAGUELANDS,
 				WESTFALL,
@@ -101,7 +100,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				o(584615),	-- [Tanaris]
 				o(574416),	-- [The Hinterlands]
 				o(573368),	-- [Tirisfal Glades]
-				o(574611),	-- [Twilight Highlands]
 				o(584694),	-- [Un'Goro Crater]
 				o(573057),	-- [Western Plaguelands]
 				o(576282),	-- [Westfall]

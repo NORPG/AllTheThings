@@ -52,7 +52,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			["maps"] = {
 				MOUNT_HYJAL,
 				RUINS_OF_GILNEAS,
-				SILVERPINE_FOREST,
 				TWILIGHT_HIGHLANDS,
 				ULDUM,
 			},
@@ -60,7 +59,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				-- Objects
 				o(578160),	-- [Mount Hyjal]
 				o(573547),	-- [Ruins of Gilneas]
-				o(573459),	-- [Silverpine Forest]
 				o(574611),	-- [Twilight Highlands]
 				o(586651),	-- [Uldum]
 				-- Drops
