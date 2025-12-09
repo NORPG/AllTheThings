@@ -8,8 +8,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(559409, {	-- Fel-Touched Lumber
-			i(251767),	-- Fel-Touched Lumber
+		o_repeated({	-- Fel-Touched Lumber
+			["maps"] = {
+				AZSUNA,
+				BROKEN_SHORE,
+				EREDATH,
+				HIGHMOUNTAIN,
+				652,	-- Thunder Totem
+				750,	-- Thunder Totem
+				TRUESHOT_LODGE,
+				KROKUUN,
+				STORMHEIM,
+				SURAMAR,
+				VALSHARAH,
+				THE_DREAMGROVE,
+			},
+			["groups"] = {
+				-- Objects
+				o(559409),	-- [Azsuna]
+				o(562439),	-- [Broken Shore]
+				o(558389),	-- [Eredath]
+				o(560822),	-- [Highmountain/Thunder Totem/Trueshot Lodge]
+				o(558361),	-- [Krokuun]
+				o(560826),	-- [Stormheim]
+				o(562159),	-- [Suramar]
+				o(560358),	-- [Val'sharah/The Dreamgrove]
+				-- Drops
+				i(251767),	-- Fel-Touched Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {

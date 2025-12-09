@@ -109,10 +109,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		--o(572129, {	-- Shadowmoon Lumber
-		-- Exo Note: Unconfirmed ObjectID, could not find a single lumber in Draenor zones
-			i(251766),	-- Shadowmoon Lumber
-		--}),
+		-- Currently there are no Lumbers in Draenor and Shadowmoon Lumber is bought
+		-- from Lestia Goldenstrike/Xiz'ro in the housing areas
+		--[[
+		o_repeated({	-- Shadowmoon Lumber
+			["maps"] = {
+
+			},
+			["groups"] = {
+				-- Objects
+
+				-- Drops
+				i(251766),	-- Shadowmoon Lumber
+			},
+		}),
+		]]--
 	})),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {

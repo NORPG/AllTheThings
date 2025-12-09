@@ -36,8 +36,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	i(191526),	-- Lesser Illustrious Insight
 	i(204462, {["timeline"] = {ADDED_10_1_0}}),	-- Dracothyst Shards
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(551833, {	-- Dragonpine Lumber
-			i(251773),	-- Dragonpine Lumber
+		o_repeated({	-- Dragonpine Lumber
+			["maps"] = {
+				AMIRDRASSIL,
+				EMERALD_DREAM,
+				OHNAHRAN_PLAINS,
+				THALDRASZUS,
+				THE_AZURE_SPAN,
+				THE_FORBIDDEN_REACH,
+				THE_WAKING_SHORES,
+			},
+			["groups"] = {
+				-- Objects
+				o(547740),	-- [Amirdrassil]
+				o(555364),	-- [Emerald Dream]
+				o(547487),	-- [Ohn'ahran Plains]
+				o(551833),	-- [Thaldraszus/Valdrakken]
+				o(549325),	-- [The Azure Span/Traitor's Rest]
+				o(546955),	-- [The Forbidden Reach]
+				o(547258),	-- [The Waking Shores]
+				-- Drops
+				i(251773),	-- Dragonpine Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {

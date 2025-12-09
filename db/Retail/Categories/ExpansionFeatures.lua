@@ -11776,7 +11776,8 @@ artifact(811,{c=a[3492]})}})}})}),
 cl(9.267,{
 q(43100,{c=a[3492],coords={a[2580],a[1579]},lvl=10,qgs=a[199],sourceQuests=a[1710],sqreq=1,g={
 i(139035,{c=a[3492]}),
-i(173526,{awp=90001,c=a[3492],spellID=311703})}}),
+i(173526,{awp=90001,c=a[3492],spellID=311703}),
+i(139034,{b=1,c=a[3492]})}}),
 q(43153,{c=a[3492],coords={{69.2,79,22}},lvl=10,maps={773,774},qgs={109698},sourceQuests={43100}}),
 q(43254,{c=a[3492],coords={{73.8,42.9,627}},lvl=10,qgs={109838},sourceQuests={43153},g={
 o(252054,{c=a[3492],coords={{60.2,25.4,646}},g={
@@ -12622,7 +12623,7 @@ i(138482,{c=a[398]})}}),
 q(42801,{c=a[398],coords={{57.5,52.3,720}},lvl=10,qgs=a[287],sourceQuests={42594}}),
 q(42679,{c=a[398],coords={a[2777]},lvl=10,qgs=a[222],sourceQuests={42677}}),
 q(44223,{c=a[398],coords={{60,43.8,720}},description="Requires the |cFFFFD700Fel Armaments|r order hall upgrade.",lvl=45,qgs={110433}}),
-q(42653,{c=a[398],coords={{57.9,57.4,720}},description="This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",lvl=10,qgs={108239},sourceQuests=a[1652],g={
+q(42653,{c=a[398],coords={{57.9,57.4,720}},description="This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",lvl=10,qgs={108239},sourceQuests=a[1652],sqreq=1,g={
 follower(718,{c=a[398]})}}),
 q(43184,{c=a[398],coords={{62,49.2,721}},lvl=45,qgs=a[3558],sourceQuests=a[1818],g={
 follower(499,{c=a[398]})}}),
@@ -12636,7 +12637,7 @@ q(43185,{c=a[398],coords={{59,73.5,721}},lvl=45,qgs=a[3557],sourceQuests=a[1818]
 follower(807,{c=a[398]})}}),
 q(42695,{c=a[398],coords={a[2777]},lvl=10,qgs=a[282],sourceQuests=a[1878],g={
 follower(595,{c=a[398]})}}),
-q(42673,{c=a[398],coords={a[2686]},lvl=10,qgs=a[222],sourceQuests=a[1652],g={
+q(42673,{c=a[398],coords={a[2686]},lvl=10,qgs=a[222],sourceQuests=a[1652],sqreq=1,g={
 follower(721,{c=a[398]})}}),
 q(45391,{c=a[398],coords={{61.1,55.4,720}},lvl=45,qgs={117481},sourceQuests={46266},g={
 follower(990,{c=a[398]})}}),
@@ -12696,7 +12697,7 @@ q(42735,{c=a[398],coords={{57.6,53.3,720}},lvl=45,qgs=a[287],sourceQuests={42787
 q(42594,{c=a[398],coords={{26,52,627}},lvl=10,qgs={107968},sourceQuests={42593},g={
 o(250993,{c=a[398],coords={{59.8,49.2,627}},g={
 i(138139,{c=a[398]})}})}}),
-q(44694,{c=a[398],coords={{59,73.8,721}},lvl=45,qgs=a[3557],sourceQuests={42669}}),
+q(44694,{c=a[398],coords={{59,73.8,721}},lvl=45,qgs=a[3557],sourceQuests=a[1887]}),
 q(44214,{c=a[398],coords={a[2687]},lvl=10,qgs=a[280],sourceQuests=a[1926]}),
 q(45329,{c=a[398],coords={a[3248]},lvl=45,qgs=a[350],sourceQuests=a[2028]}),
 q(46725,{c=a[398],coords={a[2320]},lvl=45,qgs=a[367],sourceQuests=a[2032],g={

@@ -67,11 +67,11 @@ q(92965,{coords={a[6]},qgs=a[2],g={
 de(494,{itemID=235523,sourceQuests=a[16],spellID=1217181})}}),
 q(92966,{coords={a[6]},qgs=a[2],g={
 de(528,{itemID=236676,sourceQuests=a[17],spellID=1220600})}}),
-q(92967,{coords={a[6]},qgs=a[2],g={
+q(92967,{coords={a[6],{58.3,65.1,2352}},qgs=a[2],g={
 de(530,{itemID=236678,sourceQuests=a[18],spellID=1220603})}}),
 q(92968,{coords={a[6],{52.8,66.9,2352}},qgs=a[2],g={
 de(529,{itemID=236677,sourceQuests=a[19],spellID=1220601})}}),
-q(92969,{coords={a[6]},qgs=a[2],g={
+q(92969,{coords={a[6],{55.4,71.5,2352}},qgs=a[2],g={
 de(1122,{itemID=242951,sourceQuests=a[20],spellID=1234097})}}),
 q(92970,{coords={{39.1,60,2352},a[6]},qgs=a[2],g={
 de(2496,{itemID=246742,sourceQuests=a[21],spellID=1243651})}}),
@@ -105,7 +105,7 @@ q(92984,{coords={{42.7,53.9,2352},a[6]},qgs=a[2],g={
 de(495,{itemID=245336,sourceQuests=a[32],spellID=1238437})}}),
 q(92985,{coords={a[6]},qgs=a[2],g={
 de(1996,{itemID=246106,sourceQuests=a[33],spellID=1240793})}}),
-q(92986,{coords={a[6]},qgs=a[2],g={
+q(92986,{coords={{36.6,54.2,2352},a[6]},qgs=a[2],g={
 de(726,{itemID=239075,sourceQuests=a[34],spellID=1227187})}}),
 q(92987,{coords={{36.6,57.9,2352},a[6]},qgs=a[2],g={
 de(383,{itemID=235677,sourceQuests=a[35],spellID=1218169})}}),
@@ -143,7 +143,7 @@ q(93003,{coords={a[6]},qgs=a[2],g={
 de(11719,{itemID=257690,sourceQuests=a[49],spellID=1261851})}}),
 q(93004,{coords={a[6]},qgs=a[2],g={
 de(1486,{itemID=244780,spellID=1237898})}}),
-q(93005,{coords={a[6]},qgs=a[2],g={
+q(93005,{coords={a[6],{60.3,56.8,2352}},qgs=a[2],g={
 de(994,{itemID=253441,sourceQuests=a[50],spellID=1256434})}}),
 q(93006,{coords={a[6],{53.7,39.8,2352}},qgs=a[2],g={
 de(1153,{itemID=253479,sourceQuests=a[51],spellID=1256473})}}),
@@ -385,7 +385,8 @@ de(723,{itemID=245402,spellID=1238527}),
 de(724,{itemID=245403,spellID=1238528}),
 de(725,{itemID=245404,spellID=1238529})}}),
 n(255519,{coords={a[4]},g={
-i(253580,{spellID=1256697})}}),
+i(253580,{spellID=1256697}),
+i(251766,{cost={{"i",242691,1}}})}}),
 n(255221,{coords={{53.5,40.9,2352}},g={
 de(4474,{itemID=248648,spellID=1247355}),
 i(266241),
@@ -567,7 +568,7 @@ q(93132,{coords={a[8]},qgs=a[3],g={
 de(2535,{itemID=246869,spellID=1244141})}}),
 q(93133,{coords={a[8]},qgs=a[3],g={
 de(2548,{itemID=246882,spellID=1244154})}}),
-q(93134,{coords={a[8]},qgs=a[3],g={
+q(93134,{coords={{45.2,56.3,2351},a[8]},qgs=a[3],g={
 de(4562,{itemID=248760,sourceQuests=a[54],spellID=1247666})}}),
 q(93135,{coords={a[8]},qgs=a[3],g={
 de(1774,{itemID=245581,sourceQuests=a[55],spellID=1239185})}}),
@@ -740,7 +741,8 @@ de(11481,{itemID=257390,spellID=1261508}),
 de(11482,{itemID=257392,spellID=1261510}),
 de(4463,{itemID=248637,spellID=1247344})}}),
 n(255520,{coords={a[9]},g={
-i(253580,{spellID=1256697})}}),
+i(253580,{spellID=1256697}),
+i(251766,{cost={{"i",242691,1}}})}}),
 n(255299,{coords={a[7]},g={
 de(1486,{itemID=244780,spellID=1237898}),
 de(1356,{itemID=244169,spellID=1236505}),

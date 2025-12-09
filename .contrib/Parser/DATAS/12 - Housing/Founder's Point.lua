@@ -632,7 +632,12 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			}),
 			n(255519, {	-- Lestia Goldenstrike <Lumberjack>
 				["coord"] = { 51.9, 38.7, FOUNDERS_POINT },
-				["groups"] = { i(253580) },	-- Harvesting Hatchet
+				["groups"] = {
+					i(253580),	-- Harvesting Hatchet
+					i(251766, {	-- Shadowmoon Lumber
+						["cost"] = { { "i", 242691, 1 } },	-- Olemba Lumber
+					}),
+				},
 			}),
 			n(255221, {	-- Trevor Grenner <Decor Vendor>
 				["coord"] = { 53.5, 40.9, FOUNDERS_POINT },

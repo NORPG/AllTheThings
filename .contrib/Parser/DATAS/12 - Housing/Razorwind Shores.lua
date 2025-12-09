@@ -387,6 +387,9 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["coord"] = { 54.2, 58.0, RAZORWIND_SHORES },
 				["groups"] = {
 					i(253580),	-- Harvesting Hatchet
+					i(251766, {	-- Shadowmoon Lumber
+						["cost"] = { { "i", 242691, 1 } },	-- Olemba Lumber
+					}),
 				},
 			}),
 			n(255299, {	-- Lefton Farrer <Decor Vendor>
