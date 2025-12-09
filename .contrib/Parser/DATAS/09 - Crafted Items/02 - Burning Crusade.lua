@@ -19,23 +19,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(572129, {	-- Olemba Lumber
-			i(242691, {	-- Olemba Lumber
-				["coords"] = {
-					{ 45.3, 11.5, NETHERSTORM },	-- Eco-dome Farfield
-					{ 45.8, 53.6, NETHERSTORM },	-- Eco-dome Midrealm
-					{ 44.5, 35.0, NETHERSTORM },	-- The Stormspire
-					{ 44.0, 56.7, SHADOWMOON_VALLEY },	-- Sketh'lon Base Camp
-					{ 36.9, 31.8, SHADOWMOON_VALLEY },	-- Sketh'lon Wreckage
-				},
-				["maps"] = {
-					BLADES_EDGE_MOUNTAINS,
-					ISLE_OF_QUELDANAS,
-					NAGRAND,
-					TEROKKAR_FOREST,
-					ZANGARMARSH,
-				},
-			}),
+		o_repeated({	-- Olemba Lumber
+			["maps"] = {
+				BLADES_EDGE_MOUNTAINS,
+				ISLE_OF_QUELDANAS,
+				NAGRAND,
+				TEROKKAR_FOREST,
+				ZANGARMARSH,
+				-- SMV/Netherstorm have barely any nodes
+			},
+			["groups"] = {
+				-- Objects
+				o(571070),	-- [Terokkar Forest/Shattrah/Nagrand]
+				o(571071),	-- [Zangarmarsh]
+				o(571213),	-- [Blade's Edge Mountains]
+				o(571345),	-- [Netherstorm]
+				o(572094),	-- [Nagrand]
+				o(572129),	-- [Shadowmoon Valley]
+				o(572869),	-- [Eversong Woods/Ghostlands]
+				o(572995),	-- [Ghostlands]
+				-- Drops
+				i(242691),	-- Olemba Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {
