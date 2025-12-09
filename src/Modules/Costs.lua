@@ -740,7 +740,8 @@ do
 		local groupType = group.__type
 		-- app.PrintDebug("AGC:Run",app:SearchLink(group),IgnoredTypesForCost[groupType],IgnoredTypesForNestedCosts[groupType],group.filledCost)
 		-- don't include NonCollectible or VisualHeaders
-		if not IgnoredTypesForCost[groupType] then
+		-- don't include Costs of visible, but 'saved' Things
+		if not IgnoredTypesForCost[groupType] and not group.saved then
 			runner.Run(AddGroupCosts, group, Collector)
 		end
 		local g = group.g
