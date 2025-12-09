@@ -1089,7 +1089,7 @@ local function BuildSourceParent(group)
 					parent = parent.parent;
 				end
 				-- Things tagged with an npcID should show that NPC as a Source
-				if thing.key ~= "npcID" and thing.npcID then
+				if thing.key ~= "npcID" and thing.npcID and thing.hash ~= group.hash then
 					local parentNPC = CreateObject(SearchForObject("npcID", thing.npcID, "field") or {["npcID"] = thing.npcID}, true)
 					parents[#parents + 1] = parentNPC
 					-- achievement criteria can nest inside their Source for clarity
