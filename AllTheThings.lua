@@ -1080,7 +1080,7 @@ local function BuildSourceParent(group)
 						elseif parent.headerID and parent.crs then
 							local npcs = parent.crs
 							for i=1,#npcs do
-								parents[#parents + 1] = app.CreateNPC(npcs[i])
+								parents[#parents + 1] = CreateObject(SearchForObject("npcID", npcs[i], "field") or {["npcID"] = npcs[i]}, true)
 							end
 							break
 						end
