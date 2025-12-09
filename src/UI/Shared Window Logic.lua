@@ -9,8 +9,11 @@ local type
 app.UI = {
 	OnClick = {
 		IgnoreRightClick = function(row, button)
-			return button == "RightButton";
-		end
+			return button == "RightButton"
+		end,
+		OnlySortingRightClick = function(row, button)
+			return button == "RightButton" and not IsShiftKeyDown()
+		end,
 	}
 }
 

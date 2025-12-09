@@ -919,7 +919,7 @@ local function BuildCost(group)
 		skipFull = true,
 		SortPriority = -2.5,
 		g = {},
-		OnClick = app.UI.OnClick.IgnoreRightClick,
+		OnClick = app.UI.OnClick.OnlySortingRightClick,
 	});
 	-- Gold cost currently ignored
 	-- print("BuildCost",group.hash)
@@ -971,7 +971,7 @@ local function BuildTotalCost(group)
 		skipFull = true,
 		SortPriority = -2.4,
 		g = {},
-		OnClick = app.UI.OnClick.IgnoreRightClick,
+		OnClick = app.UI.OnClick.OnlySortingRightClick,
 	});
 	-- keep an unmodified text copy
 	costGroup.__text = costGroup.text
