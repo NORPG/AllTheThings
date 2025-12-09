@@ -1178,6 +1178,7 @@ local function BuildSourceParent(group)
 								pRef = app.CreateRecipe(recipeID);
 								parents[#parents + 1] = pRef
 							end
+							pRef.OnUpdate = app.AlwaysShowUpdate
 						end
 					end
 				end
