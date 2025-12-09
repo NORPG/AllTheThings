@@ -386,6 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 108239 },	-- Akama
 						["coord"] = { 57.9, 57.4, 720 },
 						["groups"] = {
@@ -452,6 +453,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
@@ -698,7 +700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(44694, {	-- One Battle at a Time
-						["sourceQuests"] = { 42669 },	-- Preparations for Invasion
+						["sourceQuests"] = { 42776 },	-- Two Worthies
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 73.8, 721 },
 						["lvl"] = 110,
