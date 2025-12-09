@@ -12,7 +12,7 @@ ARTILLERY_TOWER = createHeader({
 		-- TODO: pt = "",
 		ru = "Артиллерийная башня",
 		cn = WOWAPI_GetSpellName(182108) .. [[.." 塔"]],
-		tw = WOWAPI_GetSpellName(182108) .. [[.." 塔"]],
+		-- tw = WOWAPI_GetSpellName(182108) .. [[.." 塔"]],
 	},
 });
 

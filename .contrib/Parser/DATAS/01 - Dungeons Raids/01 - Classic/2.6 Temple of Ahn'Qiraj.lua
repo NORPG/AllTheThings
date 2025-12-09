@@ -14,16 +14,16 @@ SILITHID_ROYALTY_SHARED_DROPS = createHeader({
 	icon = 133575,
 	text = {
 		en = "Silithid Royalty",
-		-- TODO: de = "",
+		de = "Adel der Silithiden",
 		es = "Realeza Silitida",
 		mx = "Realeza Silitida",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
+		fr = "Famille royale silithide",
+		-- it = "Silithid Royalty",
+		ko = "실리시드 왕실",
+		pt = "Realeza Silítidea",
+		ru = "Силитидская знать",
 		cn = "安其拉三宝",
-		-- TODO: tw = "",
+		tw = "異種蠍皇族",
 	},
 });
 -- #endif

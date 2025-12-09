@@ -12,6 +12,6 @@ ARMOR_ENCHANTMENTS = createHeader({
 		-- TODO: pt = "",
 		ru = "Наложение чар на броню",
 		cn = "护甲附魔",
-		-- TODO: tw = "",
+		tw = "護甲附魔",
 	},
 });

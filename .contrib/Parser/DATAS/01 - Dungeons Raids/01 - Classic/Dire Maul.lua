@@ -45,7 +45,7 @@ GORDOK_COMMONS = createHeader({
 		-- TODO: pt = "",
 		ru = [[~DUNGEON_FLOOR_DIREMAUL1.." (Север)"]],
 		cn = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
-		tw = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
+		-- tw = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
 	},
 	description = {
 		en = "This part of the instance can be accessed from the northern-most portal.",
@@ -75,7 +75,7 @@ CAPITAL_GARDENS = createHeader({
 		-- TODO: pt = "",
 		ru = [[~DUNGEON_FLOOR_DIREMAUL2.." (Запад)"]],
 		cn = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
-		tw = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
+		-- tw = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
 	},
 	description = {
 		en = "This part of the instance can be accessed from the western-most portal. (left side)",
