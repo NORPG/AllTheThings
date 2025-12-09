@@ -998,6 +998,20 @@ local function GetThingSources(field, value)
 	local results = app.SearchForLink(field..":"..value)
 	return results
 end
+-- TODO: probably have parser generate CraftedItemDB for simpler use
+local function GetCraftingOutputRecipes(thing)
+	local recipeIDs
+	local itemID = thing.itemID
+	for reagent,recipes in pairs(app.ReagentsDB) do
+		for recipeID,info in pairs(recipes) do
+			if info[1] == itemID then
+				if recipeIDs then recipeIDs[#recipeIDs + 1] = recipeID
+				else recipeIDs = { recipeID } end
+			end
+		end
+	end
+	return recipeIDs
+end
 
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
 local function BuildSourceParent(group)
@@ -1148,6 +1162,22 @@ local function BuildSourceParent(group)
 						else
 							pRef = app.CreateNPC(id);
 							parents[#parents + 1] = pRef
+						end
+					end
+				end
+				-- Things which are a Item output of one or more Crafting Recipes should show those Recipes as a Source
+				if thing.itemID then
+					local recipes = GetCraftingOutputRecipes(thing)
+					if recipes then
+						for _,recipeID in ipairs(recipes) do
+							local pRef = SearchForObject("recipeID", recipeID, "field");
+							if pRef then
+								pRef = CreateObject(pRef, true);
+								parents[#parents + 1] = pRef
+							else
+								pRef = app.CreateRecipe(recipeID);
+								parents[#parents + 1] = pRef
+							end
 						end
 					end
 				end
