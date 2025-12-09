@@ -19,8 +19,52 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(575032, {	-- Ironwood Lumber
-			i(245586),	-- Ironwood Lumber
+		o_repeated({	-- Ironwood Lumber
+			-- ["maps"] = {
+			-- },
+			["groups"] = {
+				-- Objects
+				o(576400), -- Deadwind Pass
+				o(582143), -- Desolace
+				o(584615), -- Tanaris
+				o(577787), -- Moonglade
+				o(574966), -- Searing Gorge
+				o(574596), -- Arathi Highlands
+				o(578023), -- Stonetalon Mountains
+				o(573057), -- Western Plaguelands
+				o(574599), -- Wetlands
+				o(576622), -- Blasted Lands
+				o(574416), -- The Hinterlands
+				o(573695), -- Hillsbrad Foothills
+				o(574938), -- Badlands
+				o(573459), -- Silverpine Forest
+				o(581876), -- Southern Barrens
+				o(574913), -- Loch Modan
+				o(576402), -- Swamp of Sorrows
+				o(582149), -- Dustwallow Marsh
+				o(575031), -- Burning Steppes
+				o(584475), -- Feralas
+				o(573368), -- Tirisfal Glades
+				o(584445), -- Mulgore Camp Narache Thunder Bluff
+				o(576113), -- Redridge Mountains
+				o(577792), -- Darkshore
+				o(572254), -- Eastern Plaguelands
+				o(576717), -- Azshara
+				o(574731), -- New Tinkertown Coldridge Valley Dun Morogh
+				o(581830), -- Northern Barrens
+				o(576448), -- Northern Stranglethorn The Cape of Stranglethorn
+				o(577703), -- Winterspring
+				o(576282), -- Westfall
+				o(578925), -- Ashenvale
+				o(576692), -- Durotar Valley of Trials
+				o(577999), -- Felwood Kalimdor
+				o(576199), -- Duskwood
+				o(584694), -- Un'Goro Crater
+				o(575032), -- Elwynn Forest Northshire
+				o(574611), -- Twilight Highlands
+				-- Drops
+				i(245586),	-- Ironwood Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {
