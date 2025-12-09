@@ -85,6 +85,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(236676) },	-- Stormwind Interior Narrow Wall (DECOR!)
 			}),
 			q(92967, {	-- Decor Treasure Hunt
+				["coord"] = { 58.3, 65.1, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(236678) },	-- Stormwind Interior Doorway (DECOR!)
 			}),
 			q(92968, {	-- Decor Treasure Hunt
@@ -159,7 +160,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246106) },	-- Wooden Chamberstick (DECOR!)
 			}),
 			q(92986, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Between plots #13 and #14 in Founders Point 36.6, 54.2
+				["coord"] = { 36.6, 54.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(239075) },	-- Wrought Iron Chandelier (DECOR!)
 			}),
 			q(92987, {	-- Decor Treasure Hunt
