@@ -808,9 +808,9 @@ local InformationTypes = {
 			end
 			if maps and #maps > 0 then
 				local mapNames,uniques,name = {},{},nil;
-				local rootMapID = reference.mapID;
+				local rootMapID = reference.mapID
 				local myRealMapID = app.RealMapID
-				local onMyMap = rootMapID == myRealMapID
+				local onMyMap = myRealMapID and rootMapID == myRealMapID
 				if rootMapID then uniques[app.GetMapName(rootMapID) or rootMapID] = true; end
 				for i,mapID in ipairs(maps) do
 					onMyMap = onMyMap or mapID == myRealMapID
