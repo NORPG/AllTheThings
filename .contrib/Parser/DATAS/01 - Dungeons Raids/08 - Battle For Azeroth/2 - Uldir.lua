@@ -206,32 +206,32 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				ach(12521, {	-- Halls of Containment
 					crit(40246, {	-- Taloc
-						["_encounter"] = { TALOC, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { TALOC, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40247, {	-- MOTHER
-						["_encounter"] = { MOTHER, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { MOTHER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40223, {	-- Zek'voz, Herald of N'zoth
-						["_encounter"] = { ZEKVOZ, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { ZEKVOZ, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(12522, {	-- Crimson Descent
 					crit(40248, {	-- Vectis
-						["_encounter"] = { VECTIS, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { VECTIS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40222, {	-- Fetid Devourer
-						["_encounter"] = { FETID_DEVOURER, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { FETID_DEVOURER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40224, {	-- Zul, Reborn
-						["_encounter"] = { ZUL, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { ZUL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(12523, {	-- Heart of Corruption
 					crit(40220, {	-- Mythrax the Unraveler
-						["_encounter"] = { MYTHRAX, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { MYTHRAX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40221, {	-- G'huun
-						["_encounter"] = { GHUUN, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { GHUUN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(40960, {	-- Uldir
@@ -341,6 +341,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
+				ZoneDrops({}),
 				header(HEADERS.LFGDungeon, 12521, {	-- Halls of Containment
 					Boss(TALOC),
 					Boss(MOTHER),
@@ -384,6 +385,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
+				ZoneDrops({}),
 				Boss(TALOC),
 				Boss(MOTHER),
 				Boss(ZEKVOZ),
@@ -393,7 +395,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				Boss(MYTHRAX),
 				Boss(GHUUN),
 			}),
+			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
+				BossOnly(GHUUN, {
+					ach(12536, {	-- Ahead of the Curve: G'huun
+						["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 },
+					}),
+				}),
+			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
+				ZoneDrops({}),
 				Boss(TALOC),
 				Boss(MOTHER),
 				Boss(ZEKVOZ),
@@ -401,13 +411,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				Boss(VECTIS),
 				Boss(ZUL),
 				Boss(MYTHRAX),
-				Boss(GHUUN, {
-					ach(12536, {	-- Ahead of the Curve: G'huun
-						["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 },
-					}),
-				}),
+				Boss(GHUUN),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
+				ZoneDrops({}),
 				Boss(TALOC, {
 					ach(12524),	-- Mythic: Taloc
 				}),
@@ -437,13 +444,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						title(381),	-- <Name> the Purifier
 					}),
 					ach(13010),	-- Mythic: G'huun Guild Run
-					ach(12542, bubbleDownSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Alliance)
+					ach(12542, applyDataSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							title(374),	-- <Name>, Famed Slayer of G'huun
 						},
 					})),
-					ach(12543, bubbleDownSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Horde)
+					ach(12543, applyDataSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Horde)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							title(374),	-- <Name>, Famed Slayer of G'huun
