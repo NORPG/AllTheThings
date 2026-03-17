@@ -449,3 +449,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		},
 	}),
 })));
+
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
+	inst(1307, {	-- The Voidspire
+		["timeline"] = { ADDED_12_0_X_SEASONSTART },
+		["groups"] = {
+			q(95342),	-- Death to Vorasius??? - LFR
+		},
+	}),
+}))

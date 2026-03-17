@@ -109,11 +109,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(94836, {	-- Late Night Training: Week 2 of 4
 				["sourceQuests"] = { 94835 },	-- Early Morning Training: Week 1 of 4
 			}),
-			q(94837, {	-- ?? Training: Week 3 of 4
-				["sourceQuests"] = { 94836 },	-- Late Night Training: Week 1 of 4
+			q(94837, {	-- Midnight Training: Week 3 of 4
+				["sourceQuests"] = { 94836 },	-- Late Night Training: Week 2 of 4
 			}),
-			q(94838, {	-- ?? Training: Week 4 of 4
-				["sourceQuests"] = { 94837 },	-- ??: Week 1 of 4
+			q(94838, {	-- Final Training: Week 4 of 4
+				["sourceQuests"] = { 94837 },	-- Midnight: Week 3 of 4
 			}),
 		})),
 		-- Dungeons
