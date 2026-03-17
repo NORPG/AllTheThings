@@ -483,12 +483,10 @@ namespace ATT
                 if (databaseObject.TryGetValue(primaryKey, out object keyValue))
                 {
                     // get the container for objects of this key
-                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(primaryKey,
-                        _ => new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>());
+                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(primaryKey, NewConcurrentDictionary_object_string_object);
 
                     // get the specific merged object
-                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue,
-                        _ => new ConcurrentDictionary<string, object>());
+                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue, NewConcurrentDictionary_string_object);
 
                     foreach (var pair in databaseObject)
                     {
@@ -524,12 +522,10 @@ namespace ATT
                         continue;
 
                     // get the container for objects of this key
-                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(mergeObjectFieldPair.Key,
-                        _ => new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>());
+                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(mergeObjectFieldPair.Key, NewConcurrentDictionary_object_string_object);
 
                     // get the specific merged object
-                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue,
-                        _ => new ConcurrentDictionary<string, object>());
+                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue, NewConcurrentDictionary_string_object);
 
                     //if (DebugMode)
                     //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
@@ -687,8 +683,8 @@ namespace ATT
 
                 //data.DataBreakPoint("criteriaID", 60862);
 
-                var typeObjects = PostProcessMergeIntos.GetOrAdd(key, _ => new ConcurrentDictionary<decimal, ConcurrentDataList>());
-                var mergeObjects = typeObjects.GetOrAdd(keyValue, _ => new ConcurrentDataList());
+                var typeObjects = PostProcessMergeIntos.GetOrAdd(key, NewConcurrentDictionary_decimal_ConcurrentDataList);
+                var mergeObjects = typeObjects.GetOrAdd(keyValue, NewConcurrentDataList);
 
                 //LogDebug($"Post Process Merge Added: {key}:{keyValue}", data);
                 // Processing on groups happens IN PARALLEL so if we are adding content to be post-merged during that pass
@@ -835,7 +831,7 @@ namespace ATT
 
             internal static void TrackPostProcessMergeKey(string key, decimal value)
             {
-                var keyValues = PostProcessMergedKeyValues.GetOrAdd(key, _ => new ConcurrentHashSet<decimal>());
+                var keyValues = PostProcessMergedKeyValues.GetOrAdd(key, NewConcurrentHashSet_string_decimal);
 
                 //LogDebug($"Post Process MergeInto Performed: {key}:{value}");
                 keyValues.Add(value);

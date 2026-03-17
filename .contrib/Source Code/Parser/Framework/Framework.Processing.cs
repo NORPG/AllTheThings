@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using static ATT.Export;
 using static ATT.FieldTypes.TimelineEntry;
+using Data = System.Collections.Generic.IDictionary<string, object>;
 
 namespace ATT
 {
@@ -64,6 +65,25 @@ namespace ATT
                 CurrentParseStageHandler.RunActions();
             }
         }
+
+        #region Static Lambdas
+        public static ConcurrentDictionary<long, string> NewConcurrentDictionary_long_string(string _) =>
+            new ConcurrentDictionary<long, string>();
+        public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(object _) =>
+            new ConcurrentDictionary<string, object>();
+        public static ConcurrentDictionary<object, ConcurrentDictionary<string, object>> NewConcurrentDictionary_object_string_object(object _) =>
+            new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>();
+        public static ConcurrentDictionary<string, ConcurrentDictionary<string, object>> NewConcurrentDictionary_string_string_object(long _) =>
+            new ConcurrentDictionary<string, ConcurrentDictionary<string, object>>();
+        public static ConcurrentDictionary<decimal, ConcurrentDataList> NewConcurrentDictionary_decimal_ConcurrentDataList(string _) =>
+            new ConcurrentDictionary<decimal, ConcurrentDataList>();
+        public static ConcurrentDataList NewConcurrentDataList(decimal _) =>
+            new ConcurrentDataList();
+        public static ConcurrentHashSet<decimal> NewConcurrentHashSet_string_decimal(string _) =>
+            new ConcurrentHashSet<decimal>();
+        public static ConcurrentHashSet<Data> NewConcurrentHashSet_long_Data(long _) =>
+            new ConcurrentHashSet<Data>();
+        #endregion
 
         /// <summary>
         /// Process all of the data loaded into the database.
@@ -1111,7 +1131,7 @@ namespace ATT
                 if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objKeyValue.TryConvert(out long id))
                 {
                     // Store the name of this object (or whatever it is) in our table.
-                    NAMES_BY_TYPE.GetOrAdd(objectData.ObjectType, _ => new ConcurrentDictionary<long, string>()).TryAdd(id, name);
+                    NAMES_BY_TYPE.GetOrAdd(objectData.ObjectType, NewConcurrentDictionary_long_string).TryAdd(id, name);
 
                     // only certain types we will auto-localize, so remove the raw 'name' field
                     if (AutoLocalizeType(objectData.ObjectType))
@@ -1589,7 +1609,7 @@ namespace ATT
         {
             if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
             {
-                fieldSources.GetOrAdd(id, _ => new ConcurrentHashSet<IDictionary<string, object>>()).Add(data);
+                fieldSources.GetOrAdd(id, NewConcurrentHashSet_long_Data).Add(data);
             }
         }
 
@@ -1606,7 +1626,7 @@ namespace ATT
             {
                 if (data.TryGetValue(kvp.Key, out long id) && id > 0)
                 {
-                    kvp.Value.GetOrAdd(id, _ => new ConcurrentHashSet<IDictionary<string, object>>()).Add(data);
+                    kvp.Value.GetOrAdd(id, NewConcurrentHashSet_long_Data).Add(data);
                 }
                 // TODO: not treating encounters as sources for NPCs currently due to overzealous merging without respect to difficulty
                 // special cases where the id field is not in the data, but we will treat that data as Sourced for that key/id anyway
