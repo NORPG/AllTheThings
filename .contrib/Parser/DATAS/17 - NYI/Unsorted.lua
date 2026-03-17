@@ -905,7 +905,6 @@ root(ROOTS.Unsorted, {
 				i(269007),	-- Preyseeker's Glittering Coin Pouch
 			}),
 			filter(QUEST_ITEMS, {
-				i(246129),	-- Outsider's Gear
 				i(246152),	-- Saptor Frill
 				i(249775),	-- Bright Berry
 				i(253210),	-- Soothsayer's Signet
@@ -1690,7 +1689,6 @@ root(ROOTS.Unsorted, {
 				i(264969),	-- Extinction Voulge
 				i(264970),	-- Oblivion's Edge
 				i(264971),	-- Annihilation Rod
-				i(265072),	-- Amani Fangstitch Quiver
 				i(265366),	-- Twilight Executioner
 				i(265368),	-- Twilight Destroyer
 				i(266077),	-- Basic Black Quiver

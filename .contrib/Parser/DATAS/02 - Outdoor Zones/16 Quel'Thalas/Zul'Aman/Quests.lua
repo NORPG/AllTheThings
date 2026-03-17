@@ -1422,7 +1422,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 254783 },	-- Torundo the Grizzled
 						["coord"] = { 45.9, 47.4, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
-						["groups"] = { iensemble(264184) },	-- Arsenal: Heirlooms of Atal'Aman (COSMETIC!)
+						["groups"] = {
+							iensemble(264184, {	-- Arsenal: Heirlooms of Atal'Aman (COSMETIC!)
+								i(265072),	-- Amani Fangstitch Quiver (COSMETIC!)
+							}),
+						},
 					}),
 				}),
 			}),

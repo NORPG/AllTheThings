@@ -64,6 +64,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				q(91928, {	-- What's For Lunch? --TODO I think this goes here
+					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
 					["coord"] = { 26.4, 67.9, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = { i(248826) },	-- Trigore Flank (QI!)
 				}),
@@ -72,15 +73,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = { i(248905) },	-- Void Malgrease (QI!)
 				}),
-				--Alex: this quest currently in HQT but seems like Blizzard are dumb and re-use it, uncomment if it will be live
-				--q(54781, {	-- What's For Lunch?
-				--	["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
-				--	["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
-				--	["groups"] = {
-				--		i(248929),	-- Domanaar Snack Pack (QI!)
-				--		i(248927),	-- Stormray Fin (QI!)
-				--	},
-				--}),
+				q(54781, {	-- What's For Lunch?
+					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
+					["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
+					["groups"] = {
+						i(248929),	-- Domanaar Snack Pack (QI!)
+						i(248927),	-- Stormray Fin (QI!)
+					},
+				}),
 			}),
 			n(REWARDS, {
 				i(246951),	-- Stormarion Core

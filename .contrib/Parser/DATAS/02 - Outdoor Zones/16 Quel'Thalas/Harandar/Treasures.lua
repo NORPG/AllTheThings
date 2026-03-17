@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 92276,
 				}),
 				o(571298, {	-- Glowing Moth
-					["coord"] = { 61.7, 75.4, MAP.MIDNIGHT.HARANDAR },
+					["coord"] = { 61.7, 75.4, 2576 },	-- The Den
 					["questID"] = 92277,
 				}),
 				o(571318, {	-- Glowing Moth

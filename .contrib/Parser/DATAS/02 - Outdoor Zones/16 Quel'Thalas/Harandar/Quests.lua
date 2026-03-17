@@ -29,16 +29,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["qg"] = 245102,	-- Dalnir
 					["coord"] = { 35.3, 23.3, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = {
-						o(553793, {	-- Shield
-							["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = { i(246112) },	-- Alliance Shield (QI!)
-						}),
 						o(553844, {	-- Axe
 							["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
 							["races"] = HORDE_ONLY,
 							["groups"] = { i(246126) },	-- Horde Axe (QI!)
 						}),
+						o(553793, {	-- Shield
+							["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = { i(246112) },	-- Alliance Shield (QI!)
+						}),
+						i(246129),	-- Outsider's Gear (QI!)
 					},
 				}),
 				q(90959, {	-- Traditional Duties
