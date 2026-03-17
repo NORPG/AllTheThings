@@ -976,7 +976,6 @@ root(ROOTS.Unsorted, {
 			i(262430),	-- Ensemble: Tan Candlelight Kobold Romper
 			i(262649),	-- An Angler's Deep Dive
 			i(262787),	-- Dredged Journal Entry
-			i(262792),	-- Shredded Bloomline
 			i(262793),	-- Stranded Bloomline
 			i(262797),	-- Shredded Glimmerline
 			i(267277),	-- Unalloyed Abundance
@@ -1016,7 +1015,6 @@ root(ROOTS.Unsorted, {
 				i(245257),	-- Magical Marble
 				i(245276),	-- Zal'vithra Pigment
 				i(245585),	-- Combat Engagement Launcher
-				i(249689),	-- Ghostflower Tea with Sunfruit
 				i(250877),	-- Pylon Fragment
 				i(252658),	-- Set Keystone Map: Windrunner Spire
 				i(252951),	-- Set Keystone Map: Maisara Caverns

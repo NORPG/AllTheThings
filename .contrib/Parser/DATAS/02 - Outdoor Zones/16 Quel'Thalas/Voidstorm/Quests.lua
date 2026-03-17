@@ -894,16 +894,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["sourceQuest"] = 91565,	-- Voidscar Arena: The Grief Spire
 							["qg"] = 247375,	-- Vidious
 							["coord"] = { 74.0, 75.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+							["groups"] = { i(247422) },	-- Spiteful Shadowgraft (QI!)
 						}),
 						["hqd"] = q(94845, {	-- Voidscar Arena: The Bastion of Might
 							["sourceQuest"] = 91566,	-- Voidscar Arena: The Hate Spire
 							["qg"] = 247374,	-- Ziadan
 							["coord"] = { 23.6, 54.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+							["groups"] = { i(266183) },	-- Enigmatic Voidclarion (QI!)
 						}),
-						["groups"] = {
-							i(266183),	-- Enigmatic Voidclarion (QI!) [H]
-							i(247422),	-- Spiteful Shadowgraft (QI!) [A]
-						},
 					},
 					{	-- Voidscar Arena: A Familiar Grudge
 						["aqd"] = q(91599, {	-- Voidscar Arena: A Familiar Grudge [A]
@@ -1296,6 +1294,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							o(556511, {	-- Sunfruit
 								["coord"] = { 31.8, 87.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 								["groups"] = { i(249724) },	-- Sunfruit Wedge (QI!)
+							}),
+							--
+							n(MAILBOX, {	-- You receive this through the mailbox some time after completing the quest
+								i(249689),	-- Ghostflower Tea with Sunfruit
 							}),
 							--
 							i(264412),	-- Sin'dorei Magister's Keepsake

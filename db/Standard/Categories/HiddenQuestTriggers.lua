@@ -7257,7 +7257,8 @@ q(85172,{type="hqt"})}}),
 h(-9,{awp=110002,g={
 q(82788,{type="hqt"}),
 q(82789,{type="hqt"}),
-q(85050,{awp=110207,type="hqt"}),
+q(85049,{awp=110207,races={26},type="hqt"}),
+q(85050,{awp=110207,races={26},type="hqt"}),
 q(93888,{awp=110207,type="hqt"})}}),
 h(-11,{awp=110005,g={
 h(-45,{
@@ -7274,10 +7275,7 @@ q(92734,{type="hqt"}),
 q(93629,{type="hqt"}),
 q(94392,{type="hqt"}),
 q(95166,{isDaily=1,type="hqt"})}}),
-q(94708,{awp=120000,isDaily=1,type="hqt"}),
-q(94710,{awp=120000,type="hqt"}),
 q(94711,{awp=120000,type="hqt"}),
-q(94713,{awp=120000,type="hqt"}),
 q(95270,{awp=110207,isDaily=1,type="hqt"}),
 h(-557,{awp=110200,e=7,g={
 q(90118,{e=7,type="hqt"}),
