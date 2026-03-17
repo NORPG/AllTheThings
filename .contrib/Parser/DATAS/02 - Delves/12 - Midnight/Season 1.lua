@@ -97,10 +97,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(262389),	-- Veiled Blessing // alpha
 		}))),
 		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
-			--q(???),	-- Midnight Delves! (it pop on login but after cancel it -- didn't re-pop)
+			q(93519, {	-- Midnight Delves! (it pop on login but after cancel it -- didn't re-pop)
+				["description"] = "Pops on login",
+			}),
 			q(93501, {	-- The Season Starts: Midnight
 				--TODO: could be account wide one time quest per season, breadcrumb?
-				--["sourceQuests"] = { XXX },	-- ???
+				["sourceQuests"] = { 93519 },	-- Midnight Delves!
 				["provider"] = { "n", 242381 },	-- Valeera Sanguinar
 				["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),

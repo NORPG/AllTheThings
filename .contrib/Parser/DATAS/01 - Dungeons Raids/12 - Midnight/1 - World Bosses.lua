@@ -22,9 +22,15 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot)
 local Boss, BossWorldQuest =
 InstanceHelper.Boss, InstanceHelper.BossWorldQuest
 InstanceHelper.Coords = EncounterCoords
-
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
-	n(WORLD_BOSSES, {
-	}),
-}));
 --]]
+
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
+	n(WORLD_BOSSES, {
+		["timeline"] = { ADDED_12_0_1_LAUNCH },
+		["groups"] = {
+			-- TEMP UNTIL RESTRUCTURED
+			q(92560),	-- Lu'ashal WQ
+			q(92127),	-- Lu'ashal WQ
+		},
+	}),
+}))

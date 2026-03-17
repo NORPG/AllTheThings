@@ -97,13 +97,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 45.4, 70.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["lockCriteria"] = { 1, "lvl", 90 },
 			}),
-			-- PVP 4 part quest
-			q(94835, {	-- Early Morning Training
-				["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreave
-				["coord"] = { 48.9, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+		}),
+		-- PVP 4 part quest
+		n(QUESTS, sharedData({
+			["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreave
+			["coord"] = { 48.9, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+		},{
+			q(94835, {	-- Early Morning Training: Week 1 of 4
 				["groups"] = { i(267076) },	-- Novice Combatant's Medallion
 			}),
-		}),
+			q(94836, {	-- Late Night Training: Week 2 of 4
+				["sourceQuests"] = { 94835 },	-- Early Morning Training: Week 1 of 4
+			}),
+			q(94837, {	-- ?? Training: Week 3 of 4
+				["sourceQuests"] = { 94836 },	-- Late Night Training: Week 1 of 4
+			}),
+			q(94838, {	-- ?? Training: Week 4 of 4
+				["sourceQuests"] = { 94837 },	-- ??: Week 1 of 4
+			}),
+		})),
 		-- Dungeons
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 256210 },	-- Halduron Brightwing
@@ -186,7 +198,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94419, {["timeline"]={ADDED_12_0_X_SEASONSTART,REMOVED_12_1_0}}),	-- player recieve 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 				q(94410),	-- After turning in Unity Against the Void? Spark lockout?
 				--
-				q(94836),	-- Late Night Training: Week 2 of 4, after turn in questID 94835 (Early Morning Training (1st week))
 			}),
 		}),
 	}),
