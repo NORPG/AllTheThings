@@ -187,8 +187,6 @@ local EventSequence = {
 		"OnRefreshWindows"
 	},
 }
--- Mark that we're ready now! (Forced to the first event in OnReady)
-app.AddEventHandler("OnReady", function() app.IsReady = true end, true)
 -- Allows adding an EventSequence entry, preventing any duplication
 app.LinkEventSequence = function(event, followupEvent)
 	if not (event and followupEvent) then

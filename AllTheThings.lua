@@ -1503,7 +1503,6 @@ local function PrePopulateAchievementSymlinks()
 end
 app.AddEventHandler("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)
 
-
 app.AddEventHandler("OnReady", function()
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
