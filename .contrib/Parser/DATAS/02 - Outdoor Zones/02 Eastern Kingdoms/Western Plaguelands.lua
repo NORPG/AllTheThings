@@ -2583,13 +2583,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Good Luck Charm
-							["providers"] = {
-								{ "i", 12723 },	-- Good Luck Charm
-								{ "i", 12721 },	-- Good Luck Half-Charm
-								{ "i", 12722 },	-- Good Luck Other-Half-Charm
+							["provider"] = { "i", 12723 },	-- Good Luck Charm
+							["cost"] = {
+								{ "i", 12721, 1 },	-- Good Luck Half-Charm
+								{ "i", 12722, 1 },	-- Good Luck Other-Half-Charm
 							},
-							["coord"] = { 38.6, 56.2, WESTERN_PLAGUELANDS },
-							["cr"] = 10801,	-- Jabbering Ghoul
 						}),
 						i(13473, {	-- Felstone Good Luck Charm
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3260,16 +3258,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
 					["timeline"] = { REMOVED_4_0_3 },
 				})),
+				-- #endif
 				i(12738, {	-- Dalson Outhouse Key
 					["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10816,	-- Wandering Skeleton
 				}),
+				-- #if BEFORE 4.0.3
 				i(13354, {	-- Ectoplasmic Resonator
 					["description"] = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),
+				-- #endif
+				i(12722, {	-- Good Luck Other-Half-Charm
+					["coord"] = { 38.6, 56.2, WESTERN_PLAGUELANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 10801,	-- Jabbering Ghoul
+				}),
+				-- #if BEFORE 4.0.3
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
