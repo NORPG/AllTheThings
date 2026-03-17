@@ -29,7 +29,6 @@ local Reports = setmetatable({}, { __index = function(t,key)
 	t[key] = reportType
 	return reportType
 end})
-app.AddEventHandler("OnReportReset", function() wipe(Reports) end)
 
 -- Allows adding an Event handler function for in-game events when Contributor is enabled
 local function AddEventFunc(event, func)
@@ -231,9 +230,15 @@ local MapPrecisionOverrides = {
 	[1912] = 10,	-- The Runecarver's Oubliette
 	[2215] = 0.25,	-- Hallowfall
 	[2328] = 3,	-- The Proscenium
+	[2393] = 0.40,	-- Silvermoon City
+	[2395] = 0.20,	-- Eversong Woods
+	[2405] = 0.10,	-- Voidstorm
+	[2413] = 0.20,	-- Harandar
+	[2437] = 0.20,	-- Zul'Aman
 	[2438] = 5,	-- Scarlet Halls (Arator's Journey)
 	[2541] = 10,	-- Arcantina
 	[2477] = 4,	-- Voidscar Cavern, K'aresh
+	[2536] = 0.50,	-- Atal'Aman
 	[2565] = 3,	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
 	[2579] = 2,	-- Wartha'nan Crypts
 	[2583] = 2,	-- Wit'Kalar Crypt
@@ -262,6 +267,9 @@ local function Check_coords(objRef, maxCoordDistance)
 			-- app.PrintDebug("coords @",dist)
 			if dist < closest then closest = dist end
 		end
+	end
+	if DebugPrinting then
+		app.print("Contrib.Coords:",objRef.__type,id,relCoords and "relative" or "existing",("%.2f"):format(closest))
 	end
 	if sameMap then
 		-- quest has an accurate coord on accurate map
@@ -3241,6 +3249,11 @@ local function OnPLAYER_SOFT_TARGET_INTERACTION()
 	RegisterUNIT_SPELLCAST_SENT()
 end
 AddEventFunc("PLAYER_SOFT_TARGET_INTERACTION", OnPLAYER_SOFT_TARGET_INTERACTION)
+
+app.AddEventHandler("OnReportReset", function()
+	wipe(Reports)
+	api.LastQUEST_DETAIL = nil
+end)
 
 -- Contribution setup
 local function Contribute(contrib)
