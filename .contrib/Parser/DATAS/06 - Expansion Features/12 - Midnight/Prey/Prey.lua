@@ -37,6 +37,11 @@ local PREYSEEKER_BOX_SYM = {
 	{"where","filterID",TRINKET_F},
 }
 
+local TrapNPCs = {	-- probably a ton of these, it seems unique per target & difficulty
+	247073,	-- Loa-Blessed Trap
+	247070,	-- Gloomy Trap
+}
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PREY, {
 		n(ACHIEVEMENTS, {
@@ -152,7 +157,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			ach(62351),	-- Preying For Midnight
 			ach(62134),	-- The Deadliest of Prey
-			ach(62143),	-- Trapped In The Middle With You
+			ach(62143, {["crs"]=TrapNPCs}),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me
 		}),
 		n(FACTIONS, {
@@ -432,7 +437,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				i(262938),	-- Preyseeker's Champion Sack
 				i(269005),	-- Preyseeker's Glinting Coin Pouch
 				i(262936),	-- Preyseeker's Veteran Sack
-				i(255825),	-- Disarmed Trap
+				i(255825, {["crs"]=TrapNPCs}),	-- Disarmed Trap
 			}),
 			filter(REAGENTS, {
 				i(251283),	-- Tormented Tantalum
