@@ -68,7 +68,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				ach(61681),	-- Abundance: You Should See Him in a Crown
 			}),
 			n(QUESTS, {
+				q(91930, {	-- The Abundant Lands
+					--["sourceQuest"] = XXXXX,	-- Finished Midnight Campaign
+					["qg"] = 241924,	-- Chel the Chip
+					["coord"] = { 45.1, 67.6, MAP.MIDNIGHT.ZULAMAN },
+				}),
+				q(91932, {	-- The Abundant Awakening
+					["sourceQuest"] = 91930,	-- The Abundant Lands
+					["qg"] = 241928,	-- Chel the Chip
+					["coord"] = { 31.6, 26.3, MAP.MIDNIGHT.ZULAMAN },
+				}),
+				q(91933, {	-- The Abundant Honor
+					["sourceQuest"] = 91932,	-- The Abundant Awakening
+					["qg"] = 251601,	-- Dundun <Loa of Abundance>
+					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = { i(252607) },	-- Abundant Beacon (QI!)
+				}),
+				q(94361, {	-- The Abundant Life
+					["sourceQuest"] = 91933,	-- The Abundant Honor
+					["qgs"] = {
+						241928,	-- Chel the Chip
+						242704,	-- Dundun <Loa of Abundance>
+						251601,	-- Dundun <Loa of Abundance>
+					},
+					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN }, -- maybe any zone??
+				}),
 				q(89507, {	-- Abundant Offerings
+					--["sourceQuest"] = 91933,	-- The Abundant Honor
 					["qgs"] = {
 						257633,	-- Chel the Chip [Eversong Woods]
 						241928,	-- Chel the Chip [Zul'Aman]
@@ -77,7 +103,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					},
 					["coords"] = {
 						{ 56.7, 65.9, MAP.MIDNIGHT.EVERSONG_WOODS },
-						{ 31.6, 26.7, MAP.MIDNIGHT.ZULAMAN },
+						{ 31.6, 26.3, MAP.MIDNIGHT.ZULAMAN },
 						{ 38.9, 53.2, MAP.MIDNIGHT.VOIDSTORM },
 						{ 66.1, 61.5, MAP.MIDNIGHT.HARANDAR },
 					},
@@ -119,27 +145,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 							},
 						}),
 					},
-				}),
-				q(91933, {	-- The Abundant Honor
-					["qg"] = 251601,	-- Dundun <Loa of Abundance>
-					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN },
-					["groups"] = { i(252607) },	-- Abundant Beacon (QI!)
-				}),
-				q(91930, {	-- The Abundant Lands
-					["qg"] = 241924,	-- Chel the Chip
-					["coord"] = { 45.1, 67.6, MAP.MIDNIGHT.ZULAMAN },
-				}),
-				q(91932, {	-- The Abundant Awakening
-					["qg"] = 241928,	-- Chel the Chip
-					["coord"] = { 31.6, 26.7, MAP.MIDNIGHT.ZULAMAN },
-				}),
-				q(94361, {	-- The Abundant Life
-					["qgs"] = {
-						241928,	-- Chel the Chip
-						242704,	-- Dundun <Loa of Abundance>
-						251601,	-- Dundun <Loa of Abundance>
-					},
-					["coord"] = { 31.6, 26.7, MAP.MIDNIGHT.ZULAMAN }, -- maybe any zone??
 				}),
 				q(94834, {	-- Blessings of Abundance
 					["provider"] = { "i", 265746 },	-- Idol of Abundance (QS!)
