@@ -3256,6 +3256,7 @@ app.AddEventHandler("OnReportReset", function()
 end)
 
 -- Contribution setup
+api.IgnoreFirstReport = true
 local function Contribute(contrib)
 	app.Contributor = contrib == 1 and true or nil
 	AllTheThingsSavedVariables.Contributor = app.Contributor and 1 or 0
@@ -3268,7 +3269,7 @@ local function Contribute(contrib)
 				app:RegisterFuncEvent(event,func)
 			end
 		end
-	elseif app.IsReady then
+	elseif not api.IgnoreFirstReport then
 		app.print("Not showing ATT contribution information.")
 		if contribModule.Events then
 			for event,func in pairs(contribModule.Events) do
@@ -3277,6 +3278,7 @@ local function Contribute(contrib)
 			end
 		end
 	end
+	api.IgnoreFirstReport = nil
 end
 -- Allows a user to use /att contribute
 -- to opt-in/out of seeing additional reporting/chat/sound functionality to help with refining ATT data
