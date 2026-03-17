@@ -2626,7 +2626,7 @@ local AccountWideQuestsDB = {
 	94720,	-- Mindrot weekly reputation obtained.
 	94721,	-- Dracaena weekly reputation
 	94722,	-- Treetop weekly reputation obtained.
-	94747,	-- Forgotten Ink and Quill
+	94747,	-- ???
 	94750,	-- Abysslick weekly reputation obtained.
 	94751,	-- Aeonelle Blackstar weekly reputation
 	94753,	-- Blackcore weekly reputation
