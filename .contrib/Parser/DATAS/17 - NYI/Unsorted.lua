@@ -1431,24 +1431,7 @@ root(ROOTS.Unsorted, {
 				i(249615),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff AGI
 				i(249616),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff INT
 				i(249617),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Sword INT
-				-- World boss Loot
-				i(250446),	-- Cragtender Bulwark
-				i(250447),	-- Radiant Eversong Scepter \\ Radiant Eversong Censer
-				i(250448),	-- Voidbender's Spire
-				i(250449),	-- Skulking Nettledirk
-				i(250450),	-- Forest Sentinel's Savage Longbow
-				i(250451),	-- Dawncrazed Beast Cleaver
-				i(250452),	-- Blooming Thornblade
-				i(250453),	-- Scepter of the Unbound Light
-				i(250454),	-- Devouring Vanguard's Soulcleaver
-				i(250455),	-- Beastly Blossombarb
-				i(250456),	-- Wretched Scholar's Gilded Robe
-				i(250457),	-- Devouring Outrider's Chausses
-				i(250458),	-- Host Commander's Casque
-				i(250459),	-- Bramblestalker's Feathered Cowl
-				i(250460),	-- Encroaching Shadow Signet
-				i(250461),	-- Chain of the Ancient Watcher
-				i(250462),	-- Forgotten Farstrider's Insignia
+
 				-- Armor
 				i(251934),	-- Blessed Signet
 				-- Trinkets

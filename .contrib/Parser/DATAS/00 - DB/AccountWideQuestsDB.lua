@@ -2383,6 +2383,7 @@ local AccountWideQuestsDB = {
 	92091,	-- Unlock Ability 5 - Level 6
 	92092,	-- Unlock Ability 6 - Level 7
 	92093,	-- Unlock Ability 7 - Level 8
+	92127,	-- Lu-ashal
 	92173,	-- Ensemble: Shoulderguards of the Wastelander Seer
 	92175,	-- Ensemble: Ancient Capes of the Reshii
 	92386,	-- A Handful of Voidlight Marl (Amani Tribe)
