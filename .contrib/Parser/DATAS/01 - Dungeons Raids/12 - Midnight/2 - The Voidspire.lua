@@ -287,6 +287,17 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				ach(61606),	-- The Voidspire Guild Run
 				ach(61607),	-- Heroic: The Voidspire Guild Run
 			}),
+			n(QUESTS, {
+				q(88709, {	-- The Voidspire
+					-- ["qgs"] = {  },
+					["groups"] = {
+						i(257172),	-- Voidbreaker's Cape
+						i(257173),	-- Voidbreaker's Drape
+						i(257174),	-- Voidbreaker's Mantle
+						i(257175),	-- Voidbreaker's Wrap
+					},
+				}),
+			}),
 			o(532226, {	-- The Catalyst
 				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 40.3, 65.0, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -454,7 +465,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire
 		["timeline"] = { ADDED_12_0_X_SEASONSTART },
 		["groups"] = {
-			q(95342),	-- Death to Vorasius??? - LFR
+			q(95342),	-- Vorasius intro - L
+			q(95343),	-- Vorasius intro - N
+			q(95341),	-- Vorasius intro - H
+
+			q(93981, name(HEADERS.NPC, 252066)),	-- Gladius Slauros, N
+			q(93982, name(HEADERS.NPC, 252066)),	-- Gladius Slauros, H
 		},
 	}),
 }))
