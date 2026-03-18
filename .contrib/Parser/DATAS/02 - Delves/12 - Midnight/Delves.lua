@@ -205,6 +205,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				i(249659),	-- Rampant Thornstrap
 			}),
 			filter(TRINKET_F, {
+				i(264878),	-- Astalor's Anguish Agitator
 				i(251789),	-- Consecrated Chalice
 				i(251790),	-- Desecrated Chalice
 				i(251792),	-- Glorious Crusader's Keepsake
@@ -591,7 +592,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 				filter(MISC, {
 					o(570235, {	-- Worm Bait
-						i(250096),	-- Worm Bait (QI!)
+						["coord"] = { 51.5, 56.9, SHADOWGUARD_POINT },
+						["groups"] = { i(250096) },	-- Worm Bait (QI!)
 					}),
 				}),
 			}),

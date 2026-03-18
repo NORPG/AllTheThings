@@ -884,7 +884,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(DECOR, {
 				-- Housing
-				i(269010),	-- Essence of Lumber
 				i(253497),	-- Embroidered Sunfury Chair
 				i(256042),	-- Silvermoon Bench
 				i(256043),	-- Silvermoon Fencepost
@@ -1143,10 +1142,6 @@ root(ROOTS.Unsorted, {
 				-- Delve
 				i(262964),	-- Death's Hope
 				i(262966),	-- Budget Friendly
-				i(265014),	-- Echo of Radiance
-				i(265015),	-- Echo of Radiance
-				i(265016),	-- Echo of Radiance
-
 				-- DElve
 				i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
 				-- Cache
@@ -1531,8 +1526,6 @@ root(ROOTS.Unsorted, {
 				i(267391),	-- Test Item [DNT] - Dispelling a poison from target
 				i(267392),	-- Test Item [DNT] - When you have poison dispelled from you
 				i(267403),	-- Test Item [DNT] - Apply Poison - DISPEL TYPE
-				-- Trinket
-				i(264878),	-- Astalor's Anguish Agitator
 				-- Trinket
 				i(262753),	-- Shard of VoidStalker's Bracers
 				i(262754),	-- Void Pearl of Haste

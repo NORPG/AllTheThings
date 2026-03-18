@@ -156,14 +156,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					i(267648),	-- Boon of Vigor (Epic)
 				},
 			}),
-			--o(584515, {	-- Bountiful Heavy Trunk
-			--	["groups"] = {
-			--	},
-			--}),
-			--o(584518, {	-- Bountiful Heavy Trunk
-			--	["groups"] = {
-			--	},
-			--}),
+			--TODO Should these really be in the seasonal file vs the midnight delves file? Since when to objects change per season
+			o(584514, {	-- Bountiful Coffer
+				["groups"] = {
+				},
+			}),
+			o(584515, {	-- Bountiful Heavy Trunk
+				["groups"] = {
+				},
+			}),
+			o(584518, {	-- Bountiful Heavy Trunk
+				["groups"] = {
+				},
+			}),
 			o(584517, {	-- Heavy Trunk
 				["groups"] = {
 				},

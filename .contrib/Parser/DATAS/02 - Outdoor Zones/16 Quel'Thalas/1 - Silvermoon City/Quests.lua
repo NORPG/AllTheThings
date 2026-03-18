@@ -142,7 +142,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			},
 			["isWeekly"] = true,
 		}, {
-			q(95413),	-- Community Engagement
+			q(95413, {	-- Community Engagement
+				i(269010),	-- Essence of Lumber
+			}),
 			q(95416),	-- Going Postal
 			q(95440),	-- Housewarming
 		})),

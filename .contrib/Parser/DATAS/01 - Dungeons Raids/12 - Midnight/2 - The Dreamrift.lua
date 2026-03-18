@@ -157,6 +157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 		["timeline"] = { ADDED_12_0_X_SEASONSTART },
 		["groups"] = {
 			q(95541),	-- CHIMAERUS - LFR
+			--q(95542),	-- Chimaerus, also LFR?
 		},
 	}),
 }))

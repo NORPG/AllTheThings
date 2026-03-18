@@ -201,7 +201,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 		-- #if ANYCLASSIC
-		i(198665, {	-- Pebble's Pebble
+		i(198665, {	-- Pebble's Pebble (PET!)
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
@@ -209,7 +209,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
 		}),
-		i(239082, {	-- Sa'bak's Blessed
+		i(239082, {	-- Sa'bak's Blessed (PET!)
 			["timeline"] = { ADDED_11_1_7 },
 		}),
 		i(151234, {	-- Shadow (PET!)

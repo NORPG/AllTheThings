@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			-- Shades of the Row weekly
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 240837 },	-- Vyrin the Supplier
-				["coord"] = { 42.6, 46.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["coord"] = { 42.8, 45.7, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["maxReputation"] = { FACTION_SHADES_OF_THE_ROW, 6 },	-- Luminary
 				["isWeekly"] = true,
 			}, {

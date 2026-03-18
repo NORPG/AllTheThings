@@ -289,7 +289,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 			n(QUESTS, {
 				q(88709, {	-- The Voidspire
-					-- ["qgs"] = {  },
+					["qg"] = 239810,	-- High Exarch Turalyon
+					["coord"] = { 45.4, 63.0, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(257172),	-- Voidbreaker's Cape
 						i(257173),	-- Voidbreaker's Drape
@@ -394,6 +395,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
+				n(QUESTS, {
+					q(94475, {	-- The Voidspire: Flicker in the Hollow [N]
+						--["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						["groups"] = { i(265014) },	-- Echo of Radiance (QI!)
+					}),
+				}),
 				--ZoneDrops({}),
 				Boss(AVERZIAN),
 				Boss(VORASIUS),
@@ -419,6 +426,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
+				n(QUESTS, {
+					q(94476, {	-- The Voidspire: Flicker in the Hollow [H]
+						--["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						["groups"] = { i(265015) },	-- Echo of Radiance (QI!)
+					}),
+				}),
 				--ZoneDrops({}),
 				Boss(AVERZIAN),
 				Boss(VORASIUS),
@@ -431,6 +444,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
 						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+					}),
+				}),
+				n(QUESTS, {
+					q(94477, {	-- The Voidspire: Flicker in the Hollow [M]
+						--["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						["groups"] = { i(265016) },	-- Echo of Radiance (QI!)
 					}),
 				}),
 				--ZoneDrops({}),
@@ -473,8 +492,23 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			q(95343),	-- Vorasius intro - N
 			q(95341),	-- Vorasius intro - H
 
-			q(93981, name(HEADERS.NPC, 252066)),	-- Gladius Slauros, N
-			q(93982, name(HEADERS.NPC, 252066)),	-- Gladius Slauros, H
+			--q(95535),	-- Alleria
 		},
 	}),
-}))
+	inst(1296, bubbleDown({	-- The Voidspire
+		["isWeekly"] = 1307,
+	},{
+		-- LFR
+		-- Normal
+		q(93981, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
+		q(93993, name(HEADERS.NPC, 240864)),	-- Blinky
+		--q(93989, name(HEADERS.NPC, 252067)),	-- Terrace Watcher ??
+		-- Heroic
+		q(93982, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
+		q(93994, name(HEADERS.NPC, 240864)),	-- Blinky
+		--q(95341, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn ??
+		-- Mythic
+		-- All
+			--Do these exist? Only one HQT is being reported
+	})),
+}));
