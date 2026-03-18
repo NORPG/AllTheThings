@@ -732,6 +732,15 @@ app.CreateClass = function(className, classKey, fields, ...)
 						ImportClassFunctions(subfields, subfields.ImportFrom, unpack(subfields.ImportFields))
 					end
 					local subclass = CreateClassMeta(subfields, className .. subclassName)
+					if subfields.RootConstructor then
+						if app[subfields.RootConstructor] then
+							ClassError("RootConstructor for subclass",className .. subclassName,"has already been defined!")
+						else
+							app[subfields.RootConstructor] = function(id, t)
+								return setmetatable(constructor(id, t, classKey), subclass)
+							end
+						end
+					end
 					GenerateVariantClasses(subclass)
 					AppendVariantConditionals(conditionals, subclass)
 				else
