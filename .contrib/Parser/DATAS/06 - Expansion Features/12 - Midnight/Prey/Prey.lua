@@ -40,6 +40,10 @@ local PREYSEEKER_BOX_SYM = {
 local TrapNPCs = {	-- probably a ton of these, it seems unique per target & difficulty
 	247073,	-- Loa-Blessed Trap
 	247070,	-- Gloomy Trap
+	247071,	-- Shimmering Trap
+	247075,	-- Entangled Trap
+	247077,	-- Void-Cursed Trap
+	247076,	-- Anointed Trap
 }
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
@@ -614,7 +618,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(93857),	-- Veteran chest lockout (Hard), 2nd (after it - Veteran Sack as reward)
 			--- Nightmare
 			q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
-			--q(93158?),	-- Chapmpion chest lockout (Nightmare), 2nd (after it - Chapmpion Sack as reward)
+			q(93861),	-- Chapmpion chest lockout (Nightmare), 2nd (after it - Chapmpion Sack as reward)
 
 			-- Unknown?
 			q(93857),	-- Completed with questID 91098 and 93168
