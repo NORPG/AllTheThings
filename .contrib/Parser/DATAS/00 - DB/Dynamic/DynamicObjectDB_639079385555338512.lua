@@ -147,6 +147,8 @@
 			it = "Cassetta di Sicurezza con Serratura Tripla",
 			pt = "Cofre com Tranca Tripla",
 			ru = "Сейф с тремя замками",
+			cn = "三道锁的保险箱",
+			tw = "三重鎖保險箱",
 		},
 	},
 })
