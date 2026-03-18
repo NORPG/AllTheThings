@@ -1502,7 +1502,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			-- To Master's Perch (Not a breadcrumb)
 			q(93810, {	-- Masters' Perch
-				["sourceQuests"] = { 86565 },	-- No Prayer for the Wicked
+				--["sourceQuests"] = { 86565 },	-- No Prayer for the Wicked
 				["provider"] = { "n", 254765 },	-- Perodius
 				["coord"] = { 51.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
 			}),

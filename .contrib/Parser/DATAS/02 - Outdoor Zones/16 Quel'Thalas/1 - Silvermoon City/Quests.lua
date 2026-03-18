@@ -122,17 +122,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 		}, {
+			q(93755),	-- Den of Nalorakk
+			q(93753),	-- Magister's Terrace
+			q(93754),	-- Maisara Caverns
 			q(93752),	-- Murder Row
 			q(93758),	-- Nexus-Point Xenas
 			q(93757),	-- Voidscar Arena
 			q(93751),	-- Windrunner Spire
-			q(93753),	-- Magister's Terrace
-			q(93754),	-- Maisara Caverns
 		})),
 		-- Housing
 		n(QUESTS, sharedData({
-			["provider"] = { "n", 260957 },	-- Vaeli
-			["coord"] = { 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["qgs"] = {
+				260957,	-- Vaeli
+				260958,	-- Vaeli
+			},
+			["coord"] = {
+				{ 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				{ 51.9, 39.4, FOUNDERS_POINT },
+			},
 			["isWeekly"] = true,
 		}, {
 			q(95413),	-- Community Engagement

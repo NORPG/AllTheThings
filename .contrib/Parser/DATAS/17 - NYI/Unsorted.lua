@@ -1215,7 +1215,6 @@ root(ROOTS.Unsorted, {
 				i(249439),	-- Bright Feather
 				i(249440),	-- Bright Feather
 				i(249444),	-- Eversong Pyrepetal
-				i(249445),	-- Bolt of Mana Silk Cloth
 				i(249472),	-- Fragrant Bloodthistle
 				i(249517),	-- Smuggled Goods
 				i(249527),	-- Elder Painting
@@ -1372,14 +1371,12 @@ root(ROOTS.Unsorted, {
 				i(263395),	-- Ensemble: Elite Galactic Gladiator's Warlock Armor
 				i(263396),	-- Ensemble: Elite Galactic Gladiator's Warrior Armor
 				i(263397),	-- Arsenal: Elite Galactic Gladiator's Weapons
-				i(267469),	-- Novice Combatant's Insignia of Alacrity
 				i(267491),	-- Novice Combatant's Cloak
 				i(267573),	-- Cracked Medal of Conquest
 				i(256553),	-- Galactic Equipment Chest
 				--pvp
 				i(266314),	-- Novice Combatant's Necklace
 				i(266317),	-- Novice Combatant's Ring
-				i(267077),	-- Novice Combatant's Emblem
 				i(267177),	-- Slayer's Duellum Commendation
 			}),
 			n(ARMOR, {

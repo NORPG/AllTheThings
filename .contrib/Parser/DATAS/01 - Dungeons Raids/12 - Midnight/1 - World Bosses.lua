@@ -4,6 +4,7 @@
 
 --[[
 ------ Encounter Constants ------
+local LUASHAL =
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
@@ -11,6 +12,10 @@ local EncounterToCRS = {
 
 ------ EncounterToLoot ------
 local EncounterToLoot = {
+	[LUASHAL] = {
+		i(250458),	-- Host Commander's Casque
+		i(250447),	-- Radiant Eversong Scepter
+	},
 };
 
 ------ EncounterCoords ------

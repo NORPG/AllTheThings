@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LA
 				},
 			}),
 			q(92322, {	-- Timear Foresees a Proof of Demise!
-				["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
+				["provider"] = { "n", 264499 },	-- Archmage Lan'dalock
 				["coord"] = { 30.0, 19.3, ARCANTINA },
 				["groups"] = {
 					i(253176),	-- Ancient Zandalari Ritual Scroll (DECOR!)

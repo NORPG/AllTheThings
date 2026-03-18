@@ -159,6 +159,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91993, {	-- Diminutive Demand
 					i(249437),	-- Wand of Diminutive Proportions (QI!)
 				}),
+				q(91996, {	-- Fit for a Magister
+					o(568276, {	-- Unoccupied Mana Loom
+						["coord"] = { 47.0, 36.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = { i(249445) },	-- Bolt of Mana Silk Cloth (QI!)
+					}),
+				}),
 				q(90573),	-- Fortify the Runestones: Magisters
 				q(89276),	-- Light Snacks
 				q(91997, {	-- Power Clean

@@ -1325,8 +1325,14 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(QUESTS, {
 			q(93696, {	-- Tailoring Services Requested
 				["sourceQuests"] = { 93730 },	-- Crafting Orders: Tailoring
-				["provider"] = { "n", 243352 },	-- Galana <Tailoring Trainer>
-				["coord"] = { 48.2, 54.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["qgs"] = {
+					243352,	-- Galana <Tailoring Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 45.1, 55.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 48.2, 54.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
 				["isWeekly"] = true,
 				["groups"] = {
 					i(263460),	-- Thalassian Tailor's Notebook

@@ -1740,7 +1740,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["coord"] = { 64.6, 25.4, KORTHIA },
 				["groups"] = {
-					i(186175),	-- Sealed Container (QI!)
+					o(368631, {	-- Drop Box
+						i(186175),	-- Sealed Container (QI!)
+					}),
 				},
 			}),
 			q(63777, {	-- Sealed Secrets
