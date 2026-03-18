@@ -1389,7 +1389,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 		}),
 		n(QUESTS, sharedData({
-			["sourceQuests"] = { 86930 },	-- To Sow the Seed
+			-- ["sourceQuests"] = { 86930 },	-- To Sow the Seed (perhaps a different quest is required?)
 			["qg"] = 249361,	-- Shul'ka Li'tya
 			["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
 			["isWeekly"] = true,	-- Probably? Blue !
