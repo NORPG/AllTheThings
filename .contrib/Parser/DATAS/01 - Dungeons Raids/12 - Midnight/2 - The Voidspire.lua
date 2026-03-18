@@ -297,6 +297,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 						i(257175),	-- Voidbreaker's Wrap
 					},
 				}),
+				q(90724, {	-- The Broken Sky
+					["sourceQuests"] = { 88709 },	-- The Voidspire
+					["qg"] = 244297, -- Arator
+				}),
 			}),
 			o(532226, {	-- The Catalyst
 				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",

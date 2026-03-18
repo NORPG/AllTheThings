@@ -947,6 +947,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93866),	-- Die in a delve, trigger mail with A Grave Concern
 		q(92887),	-- Invaded by Nullaeus
 
+		q(93819),	-- Bountiful #1, Tier 8
+		q(93822),	-- Bountiful #2, Tier 9
+
 		-- Weekly summon boss questID
 		--hqt(86371, {	--	// automated/use TWW questID?
 		--	["name"] = "Seasonal delve map lockout"
