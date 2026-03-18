@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			})),
 			n(BONUS_OBJECTIVES, {
 				q(91966, {	-- Saltheril's Soiree
-					["sourceQuests"] = { 91629 },	-- High Esteem
+					["sourceQuests"] = { 89290 },	-- Saltheril's Soiree (AW weekly unlock)
 					["coord"] = { 42.7, 47.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["isDaily"] = true,
 				}),
@@ -402,7 +402,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		n(SALTHERILS_HAVEN, {
 			n(QUESTS, {
 				q(95113),	-- Weekly completion of ???
-				q(89290),	-- Weekly completion of Farstriders
+				q(89290, name(HEADERS.Quest, 91966, {isWeekly=true})),	-- Account-wide 'Saltheril's Soiree' unlock after picking a faction
 			}),
 		}),
 	}),

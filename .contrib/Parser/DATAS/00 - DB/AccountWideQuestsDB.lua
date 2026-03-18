@@ -2561,6 +2561,7 @@ local AccountWideQuestsDB = {
 	93556,	-- Ancient Runestone
 	93557,	-- Derelict Mural
 	93558,	-- Forgotten Mural
+	93784,	-- A Gnawing Void of Curiosity
 	93817,	-- Quest #93817*
 	93818,	-- Quest #93818*
 	93866,	-- Quest #93866*
