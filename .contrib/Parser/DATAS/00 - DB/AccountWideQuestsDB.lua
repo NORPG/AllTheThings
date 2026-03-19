@@ -2612,6 +2612,7 @@ local AccountWideQuestsDB = {
 	94685,	-- Bloated Snapdragon weekly reputation
 	94687,	-- Coralfang weekly reputation
 	94688,	-- Lady Liminus weekly reputation obtained.
+	94691,	-- Waverly weekly reputation obtained,
 	94692,	-- Banuran weekly reputation
 	94694,	-- Duskburn weekly reputation
 	94697,	-- The Snapping Scourge weekly reputation obtained.

@@ -102,8 +102,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91973, {	-- Naga Blade
-					o(568483, {	--
-						i(249499),	-- Naga Scimitar (QI!)
+					o(568483, {	-- Naga Scimitar
+						["coords"] = {
+							{ 35.0, 68.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.0, 68.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.6, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.2, 68.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						},
+						["groups"] = { i(249499) },	-- Naga Scimitar (QI!)
 					}),
 				}),
 			})),

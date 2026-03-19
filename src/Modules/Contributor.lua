@@ -2881,6 +2881,7 @@ MobileDB.GameObject = {
 	[580106] = true,	-- Void Zeal
 	[581830] = true,	-- Ironwood Lumber
 	[581876] = true,	-- Ironwood Lumber
+	[581922] = true,	-- Hidden Trove
 	[582143] = true,	-- Ironwood Lumber
 	[582149] = true,	-- Ironwood Lumber
 	[582157] = true,	-- Spiritpaw Satche

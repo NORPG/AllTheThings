@@ -974,7 +974,6 @@ root(ROOTS.Unsorted, {
 			i(262430),	-- Ensemble: Tan Candlelight Kobold Romper
 			i(262649),	-- An Angler's Deep Dive
 			i(262787),	-- Dredged Journal Entry
-			i(262793),	-- Stranded Bloomline
 			i(262797),	-- Shredded Glimmerline
 			i(267277),	-- Unalloyed Abundance
 		})),
@@ -1201,7 +1200,6 @@ root(ROOTS.Unsorted, {
 				i(248715),	-- Bones of de Fallen
 				i(248756),	-- Shadra's Gift
 				i(248927),	-- Stormray Fin
-				i(248929),	-- Domanaar Snack Pack
 				i(248931),	-- Tarnished Vilebranch Coin
 				i(249401),	-- Vial of Gelatinous Ooze
 				i(249407),	-- Harvested Lightwood
@@ -1437,10 +1435,6 @@ root(ROOTS.Unsorted, {
 				-- Armor Quest
 				i(257169),	-- Voidbreaker's Signet \\ [DNT] [PH] Max Level Campaign - Accessory - FINGER 1
 				i(257171),	-- Voidbreaker's Pendant \\ [DNT] [PH] Max Level Campaign - Accessory - NECK
-				i(257172),	-- Voidbreaker's Cape \\ [DNT] [PH] Max Level Campaign - Cloth - CLOAK
-				i(257173),	-- Voidbreaker's Drape \\ [DNT] [PH] Max Level Campaign - Leather - CLOAK
-				i(257174),	-- Voidbreaker's Mantle \\ [DNT] [PH] Max Level Campaign - Mail - CLOAK
-				i(257175),	-- Voidbreaker's Wrap \\ [DNT] [PH] Max Level Campaign - Plate - CLOAK
 				i(257220),	-- Voidbreaker's Band \\ [DNT] [PH] Max Level Campaign - Accessory - FINGER 2
 				i(257234),	-- Voidbreaker's Waraxe \\ [DNT] [PH] Max Level Campaign - Weapon - Axe1H - AGI
 				i(257237),	-- Voidbreaker's Longbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI
