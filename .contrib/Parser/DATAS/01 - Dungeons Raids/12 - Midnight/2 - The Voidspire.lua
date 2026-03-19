@@ -381,7 +381,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				n(QUESTS, {
 					q(94475, {	-- The Voidspire: Flicker in the Hollow [N]
-						--["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						["qg"] = 241076,	-- Riftblade Maella
 						["groups"] = { i(265014) },	-- Echo of Radiance (QI!)
 					}),
 				}),
