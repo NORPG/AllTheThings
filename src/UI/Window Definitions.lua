@@ -2269,11 +2269,11 @@ local FieldDefaults = {
 				-- app.PrintDebug("__handler",event,...)
 				handler(self, ...)
 			end
-			app.PrintDebug("AddEventHandler.__handler",self.Suffix,event)
+			-- app.PrintDebug("AddEventHandler.__handler",self.Suffix,event)
 			app.AddEventHandler(event, __handler)
 			self.Handlers[#self.Handlers + 1] = __handler
 		else
-			app.PrintDebug("AddEventHandler.handler",self.Suffix,event)
+			-- app.PrintDebug("AddEventHandler.handler",self.Suffix,event)
 			app.AddEventHandler(event, handler)
 			self.Handlers[#self.Handlers + 1] = handler
 		end
@@ -2302,7 +2302,7 @@ local FieldDefaults = {
 	SetData = function(self, data)
 		-- Allows a Window to set the root data object to itself and link the Window to the root data, if data exists
 		if data then
-			app.PrintDebug("Window:SetData",self.Suffix,data.text)
+			-- app.PrintDebug("Window:SetData",self.Suffix,data.text)
 			data.window = self;
 			self.data = data;
 		end
