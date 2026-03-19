@@ -1935,7 +1935,7 @@ ach(62239,{requireSkill=171,g={
 title(741,{requireSkill=171})}})}}),
 h(-45,{requireSkill=171,g={
 q(93690,{coords={
-[2393]={{47,52}}},isWeekly=1,lvl=78,qgs={243357},requireSkill=171,sourceQuests={84288},g={
+[2393]={{45,55.2},{47,52}}},isWeekly=1,lvl=78,qgs={243283,243357},requireSkill=171,sourceQuests={84288},g={
 i(263454,{b=1,isWeekly=1,requireSkill=171,spellID=1270530})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=171,g={
 r(1230891,{cost={{"c",3150,1}},learnedAt=80,requireSkill=171,skillID=2906}),
@@ -2492,7 +2492,7 @@ ach(62240,{requireSkill=164,g={
 title(742,{requireSkill=164})}})}}),
 h(-45,{requireSkill=164,g={
 q(93691,{coords={
-[2393]={{43.7,51.8}}},isWeekly=1,lvl=78,qgs={241450},requireSkill=164,sourceQuests={93726},g={
+[2393]={{43.7,51.8},{45.1,55.2}}},isWeekly=1,lvl=78,qgs={241450,243283},requireSkill=164,sourceQuests={93726},g={
 i(263455,{b=1,isWeekly=1,requireSkill=164,spellID=1270531})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=164,g={
 r(1229646,{cost={{"c",3151,1}},learnedAt=100,requireSkill=164,skillID=2907}),
@@ -8120,7 +8120,7 @@ ach(62246,{requireSkill=197,g={
 title(748,{requireSkill=197})}})}}),
 h(-45,{requireSkill=197,g={
 q(93696,{coords={
-[2393]={{48.2,54}}},isWeekly=1,lvl=78,qgs={243352},requireSkill=197,sourceQuests={93730},g={
+[2393]={{45.1,55},{48.2,54}}},isWeekly=1,lvl=78,qgs={243283,243352},requireSkill=197,sourceQuests={93730},g={
 i(263460,{b=1,isWeekly=1,requireSkill=197,spellID=1270540})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=197,g={
 r(1228950,{cost={{"c",3160,1}},learnedAt=100,requireSkill=197,skillID=2918}),

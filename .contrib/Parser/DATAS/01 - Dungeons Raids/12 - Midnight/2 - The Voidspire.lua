@@ -287,22 +287,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				ach(61606),	-- The Voidspire Guild Run
 				ach(61607),	-- Heroic: The Voidspire Guild Run
 			}),
-			n(QUESTS, {
-				q(88709, {	-- The Voidspire
-					["qg"] = 239810,	-- High Exarch Turalyon
-					["coord"] = { 45.4, 63.0, MAP.MIDNIGHT.VOIDSTORM },
-					["groups"] = {
-						i(257172),	-- Voidbreaker's Cape
-						i(257173),	-- Voidbreaker's Drape
-						i(257174),	-- Voidbreaker's Mantle
-						i(257175),	-- Voidbreaker's Wrap
-					},
-				}),
-				q(90724, {	-- The Broken Sky
-					["sourceQuests"] = { 88709 },	-- The Voidspire
-					["qg"] = 244297, -- Arator
-				}),
-			}),
 			o(532226, {	-- The Catalyst
 				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 40.3, 65.0, MAP.MIDNIGHT.SILVERMOON_CITY },

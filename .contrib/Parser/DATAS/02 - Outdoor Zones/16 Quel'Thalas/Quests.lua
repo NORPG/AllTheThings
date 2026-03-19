@@ -617,8 +617,38 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				--}),
 				--
 			}),
-			--header(HEADERS.AchCriteria, 42117.02, {	-- The Voidspire
-			--}),
+			header(HEADERS.AchCriteria, 42117.02, {	-- The Voidspire
+				q(90690, {	-- Charge of the Vanguard
+					["sourceQuests"] = { 88706 },	-- Nothing Stands Forever
+					["qg"] = 235787,	-- Lor'themar Theron
+					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+				}),
+				q(88709, {	-- The Voidspire
+					["sourceQuests"] = { 90690 },	-- Charge of the Vanguard
+					["qg"] = 239810,	-- High Exarch Turalyon
+					["coord"] = { 45.4, 63.0, MAP.MIDNIGHT.VOIDSTORM },
+					["groups"] = {
+						i(257172),	-- Voidbreaker's Cape
+						i(257173),	-- Voidbreaker's Drape
+						i(257174),	-- Voidbreaker's Mantle
+						i(257175),	-- Voidbreaker's Wrap
+					},
+				}),
+				q(90724, {	-- The Broken Sky
+					["sourceQuests"] = { 88709 },	-- The Voidspire
+					["qg"] = 244297, -- Arator
+					["maps"] = {
+						2529,	-- Voidspire
+						2530,	-- Crown of the Cosmos
+					},
+				}),
+				q(92520, {	-- Wake of the Darkwell
+					["sourceQuests"] = { 90724 },	-- The Broken Sky
+					["qg"] = 235787,	-- Lor'themar Theron
+					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+			}),
 			--header(HEADERS.AchCriteria, 42117.03, {	-- The Darkwell
 			--}),
 			--header(HEADERS.AchCriteria, 42117.04, {	-- Dawn of a New Well

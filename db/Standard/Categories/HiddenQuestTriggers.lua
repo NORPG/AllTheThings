@@ -7258,7 +7258,7 @@ h(-9,{awp=110002,g={
 q(82788,{type="hqt"}),
 q(82789,{type="hqt"}),
 q(85049,{awp=110207,races={26},type="hqt"}),
-q(85050,{awp=110207,races={26},type="hqt"}),
+q(85050,{awp=110207,races={25},type="hqt"}),
 q(93888,{awp=110207,type="hqt"})}}),
 h(-11,{awp=110005,g={
 h(-45,{
@@ -7370,6 +7370,8 @@ q(91187,{isDaily=1,type="hqt"}),
 q(91190,{isDaily=1,type="hqt"})}),
 q(93866,{type="hqt"}),
 q(92887,{type="hqt"}),
+q(93819,{type="hqt"}),
+q(93822,{type="hqt"}),
 h(-674)}}),
 m(2537,{lvl=80,g={
 m(2393,{
@@ -7378,8 +7380,7 @@ q(93067,{type="hqt"}),
 q(93275,{an="i:232875",isWeekly=1,type="hqt"}),
 q(93789,{type="hqt"}),
 q(94419,{awp=120001,rwp=120100,type="hqt"}),
-q(94410,{type="hqt"}),
-q(94836,{lvl=90,type="hqt"})})}),
+q(94410,{type="hqt"})})}),
 m(2395,{lvl=80,g={
 h(-45,{
 q(93818,{type="hqt"}),
@@ -7406,7 +7407,7 @@ q(86645,{type="hqt"})})}}),
 h(-686,{
 h(-45,{
 q(95113,{type="hqt"}),
-q(89290,{type="hqt"})})}),
+q(89290,{an="q:91966",isWeekly=1,type="hqt"})})}),
 m(2413,{maps={2576},lvl=83,g={
 h(-738,{
 q(89266,{an="n:241213",type="hqt"}),
@@ -7537,7 +7538,8 @@ q(95003,{type="hqt"}),
 q(93168,{type="hqt"}),
 q(93169,{type="hqt"}),
 q(93857,{type="hqt"}),
-q(93170,{type="hqt"})})}),
+q(93170,{type="hqt"}),
+q(93861,{type="hqt"})})}),
 h(-103,{
 h(-45,{
 q(95669,{isDaily=1,type="hqt"})}),
