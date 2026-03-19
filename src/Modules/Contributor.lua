@@ -236,6 +236,7 @@ local MapPrecisionOverrides = {
 	[2413] = 0.20,	-- Harandar
 	[2437] = 0.20,	-- Zul'Aman
 	[2438] = 5,	-- Scarlet Halls (Arator's Journey)
+	[2505] = 1,	-- The Gulf of Memory
 	[2541] = 10,	-- Arcantina
 	[2477] = 4,	-- Voidscar Cavern, K'aresh
 	[2536] = 0.50,	-- Atal'Aman

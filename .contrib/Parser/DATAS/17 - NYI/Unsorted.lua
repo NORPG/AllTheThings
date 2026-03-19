@@ -1736,7 +1736,6 @@ root(ROOTS.Unsorted, {
 				i(265397),	-- Cuddly Bright Grrgle
 				i(265398),	-- Cuddly Juniper Grrgle
 				i(265544),	-- Cuddly Basil Grrgle
-				i(265545),	-- Cuddly Void Grrgle
 				i(265546),	-- Cuddly Fel Grrgle
 				i(265547),	-- Cuddly Spectral Grrgle
 				i(265548),	-- Cuddly Emerald Grrgle

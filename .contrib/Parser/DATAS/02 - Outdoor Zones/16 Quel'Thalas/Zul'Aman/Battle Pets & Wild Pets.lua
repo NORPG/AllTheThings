@@ -39,6 +39,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(250145, {	-- Pangolil (PET!)
 				["crs"] = { 249825 },	-- Pangolil
 				["coords"] = {
+					{ 43.2, 54.4, MAP.MIDNIGHT.ZULAMAN },
 				},
 			}),
 			i(251004, {	-- Striped Snakebiter (PET!)

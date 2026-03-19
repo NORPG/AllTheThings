@@ -16,8 +16,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		filter(CONSUMABLES, {
 			i(241299),	-- Amani Extract+
 			i(241298),	-- Amani Extract++
-			i(241319),	-- Cauldron of Sin'dorei Flasks+
-			i(241318),	-- Cauldron of Sin'dorei Flasks++
+			i(241319, {	-- Cauldron of Sin'dorei Flasks+
+				i(245927),	-- Fleeting Flask of Thalassian Resistance+
+				i(245930),	-- Fleeting Flask of the Blood Knights+
+				i(245932),	-- Fleeting Flask of the Magisters+
+				i(245928),	-- Fleeting Flask of the Shattered Sun+
+			}),
+			i(241318, {	-- Cauldron of Sin'dorei Flasks++
+				i(245926),	-- Fleeting Flask of Thalassian Resistance++
+				i(245931),	-- Fleeting Flask of the Blood Knights++
+				i(245933),	-- Fleeting Flask of the Magisters++
+				i(245929),	-- Fleeting Flask of the Shattered Sun++
+			}),
 			i(241293),	-- Draught of Rampant Abandon+
 			i(241292),	-- Draught of Rampant Abandon++
 			i(241339),	-- Enlightenment Tonic+
