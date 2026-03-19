@@ -213,7 +213,7 @@ local DefaultFields = {
 			elseif u < 4 then
 				score = score + 10;
 			else
-				score = score + 1;
+				score = score + 1 + u;
 			end
 		end
 		t.AccessibilityScore = score;
