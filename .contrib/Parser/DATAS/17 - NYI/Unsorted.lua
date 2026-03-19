@@ -2039,9 +2039,6 @@ root(ROOTS.Unsorted, {
 				i(252990),	-- Drustvar Candies
 				i(260429),	-- Crescent Cove Crab
 				i(260519),	-- Farm Carrots
-				i(260522),	-- Duck Egg
-				i(260532),	-- Tuskarr Dinner Bell
-				i(260533),	-- Oddsight Focus
 				i(260589),	-- Flame-Blessed Beach Towel
 				-- house?
 				i(249386),	-- Ghost Gear
