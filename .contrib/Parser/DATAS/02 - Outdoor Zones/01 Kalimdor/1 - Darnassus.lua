@@ -106,6 +106,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(QUESTS, {
+				q(9432, {	-- Travel to Astranaar [Draenei]
+					["qg"] = 17105,	-- Emissary Valustraa
+					["coord"] = { 38.6, 81.0, DARNASSUS },
+					["timeline"] = { ADDED_2_0_1 , REMOVED_4_0_3 },
+					["races"] = { DRAENEI },
+					["lvl"] = 18,
+				}),
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
