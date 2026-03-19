@@ -6,17 +6,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		pvp(n(PVP, {
 			n(QUESTS, {
-			-- ToDO: Add correct questID
-			--	q(85229, {	-- Rallying All Rapscallions!
-			--		["provider"] = { "i", 257194 },	-- Artisan's Consortium Flyer
-			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
-			--		["groups"] = {
-			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
-			--			}),
-			--		},
-			--	}),
-			q(93899),	-- Slayer's Rise (TODO: Picked up from adventure journal, diidn't find proper source for it)
+				q(93171, {	-- Calling All Combatants!
+					["provider"] = { "i", 257194 },	-- Artisan's Consortium Flyer
+					["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+					["groups"] = {
+						i(256608, {	-- Galactic Gladiator's Heraldry x9
+							["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						}),
+					},
+				}),
+				q(93899),	-- Slayer's Rise (TODO: Picked up from adventure journal, diidn't find proper source for it)
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 254971 },	-- Zerella
@@ -162,5 +161,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 		})),
+	}),
+}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.VOIDSTORM, {
+			n(QUESTS, {
+				q(93645),	-- looted Spectral Battle Chest, first time of day/week/in zone
+			}),
+		}),
 	}),
 }));

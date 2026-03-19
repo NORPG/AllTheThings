@@ -239,7 +239,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			-- Weekly, up after r4 chain
 			q(94446, {	-- A Nightmarish Task
-				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf
+				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf	 // TODO: need some way to ignore on alts
 				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
@@ -602,8 +602,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
 			--q(95539), -- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 
-			--related to prey bosses kill - counter for something?
-			--doesn't matter on difficulty or whatever boss it was, weekly
+			-- 1k seasonal journey lockout, weekly
 			q(95000),	-- 1st per week
 			q(95001),	-- 2nd per week
 			q(95002),	-- 3rd per week
@@ -619,9 +618,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--- Nightmare
 			q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
 			q(93861),	-- Chapmpion chest lockout (Nightmare), 2nd (after it - Chapmpion Sack as reward)
-
-			-- Unknown?
-			q(93857),	-- Completed with questID 91098 and 93168
 		}),
 	}),
 }));

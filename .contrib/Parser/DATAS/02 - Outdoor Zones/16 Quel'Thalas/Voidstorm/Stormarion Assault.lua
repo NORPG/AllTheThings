@@ -63,15 +63,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(251284),	-- Anomaly Inverter (QI!)
 					},
 				}),
-				q(91928, {	-- What's For Lunch? --TODO I think this goes here
+				q(91928, {	-- What's For Lunch?
 					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
 					["coord"] = { 26.4, 67.9, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = { i(248826) },	-- Trigore Flank (QI!)
+					["_drop"] = { "races" },	-- Blizzard bug - bad API data, marked as alliance only
 				}),
 				q(91929, {	-- What's For Lunch?
 					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
 					["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = { i(248905) },	-- Void Malgrease (QI!)
+					["_drop"] = { "races" },	-- Blizzard bug - bad API data, marked as alliance only
 				}),
 				q(54781, {	-- What's For Lunch?
 					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
@@ -80,6 +82,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(248929),	-- Domanaar Snack Pack (QI!)
 						i(248927),	-- Stormray Fin (QI!)
 					},
+					["_drop"] = { "races" },	-- Blizzard bug - bad API data, marked as alliance only
 				}),
 			}),
 			n(REWARDS, {
