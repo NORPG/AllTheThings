@@ -458,7 +458,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			i(262346, {	-- Preyseeker's Champion Chest
 				["sym"] = PREYSEEKER_BOX_SYM,
 			}),
-			i(268545),	-- Aspiring Preyseeker's Chest
+			i(268545, {	-- Aspiring Preyseeker's Chest
+				["sym"] = PREYSEEKER_BOX_SYM,
+			}),
 		}),
 		n(VENDORS, {
 			n(258181, {	-- Construct Ali'a <Decor Specialist>
