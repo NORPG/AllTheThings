@@ -287,6 +287,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				ach(61606),	-- The Voidspire Guild Run
 				ach(61607),	-- Heroic: The Voidspire Guild Run
 			}),
+			n(QUESTS, {
+				q(94475, {	-- The Voidspire: Flicker in the Hollow
+					["qg"] = 241076,	-- Riftblade Maella
+				}),
+			}),
 			o(532226, {	-- The Catalyst
 				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 40.3, 65.0, MAP.MIDNIGHT.SILVERMOON_CITY },
