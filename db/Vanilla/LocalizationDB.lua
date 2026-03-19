@@ -29963,6 +29963,7 @@ L.CELEBRATIONS_LABEL = "庆祝和音效";
 L.CHANGE_SEARCH_FILTER = "更改搜索过滤";
 L.CHANGE_SEARCH_FILTER_DESC = "点击此按钮可更改搜索过滤。";
 L.CHANNEL_AMBIENCE = "环境";
+L.CHANNEL_MASTER = "主音量";
 L.CHARACTERUNLOCKS_CHECKBOX = "角色解锁";
 L.CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "启用此选项可跟踪角色解锁。这些是基于角色的各种解锁，无法明确归类为其他类型（例如 妖术变体、变形术变体、猎人物种驯服解锁、波可波克自定义等）。\n\n默认情况下按角色跟踪。";
 L.CHAT_COMMANDS_LABEL = "聊天命令";
@@ -30066,7 +30067,7 @@ L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "启用鼠标提示";
 L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "如果希望在鼠标提示中查看 ATT 提供的信息，请启用此选项。这包括其他玩家发送的物品链接，在拍卖行、在地下城助手、在你的包里、在世界、在 NPC 等等。\n\n如果你关闭了这个功能，就会严重降低你快速判断是否需要击杀首领或学习外观的能力。\n\n我们建议你保持此设置。";
 L.ENABLED = "已启用";
 L.ENCOUNTER_ID = "首领战斗 ID";
-L.ENSEMBLE_LEARNED = "该套装已被你的某个角色使用。";
+L.ENSEMBLE_LEARNED = "这套服装已被你的某个角色使用过。";
 L.EVENT_ACTIVE = "激活:";
 L.EVENT_END = "结束:";
 L.EVENT_ID = "事件 ID";
@@ -30644,7 +30645,12 @@ L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容。";
 L.YOU_DID_IT = "你做到了！";
 L.ZONE_DESC = "点击此按钮可根据缺少的内容选择随机地区。";
 localize(_.CategoryNames, {
+	[2] = "消耗品",
 	[3] = "塔罗牌",
+	[106] = "卡牌",
+	[221] = "护手",
+	[224] = "腿",
+	[259] = "披风",
 });
 localize(L.HEADER_NAMES, {
 	[-11] = "新角色",
@@ -33056,6 +33062,7 @@ L.EAST = "東部";
 L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "啟用指標提示";
 L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "如果希望在指標提示中查看 ATT 提供的資訊，請啟用此選項。這包括其他玩家發送的物品連接，在拍賣行、在地城助手、在你的背包裡、在世界、在 NPC 等等。\n\n如果你關閉了這個功能，就會嚴重降低你快速判斷是否需要擊殺首領或學習外觀的能力。\n\n我們建議你保持此設定。";
 L.ENCOUNTER_ID = "首領戰鬥 ID";
+L.ENSEMBLE_LEARNED = "這套服裝已被你的某個角色使用過。";
 L.EVENT_ACTIVE = "啟用:";
 L.EVENT_END = "結束:";
 L.EVENT_SCHEDULE = "事件時程表";

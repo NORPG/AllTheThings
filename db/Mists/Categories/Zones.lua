@@ -11057,8 +11057,11 @@ s(124519,11873,{b=1,f=3,q=2,u=2}),
 s(124520,11874,{b=1,f=5,q=2,u=2})}}),
 q(4005,{coords={
 [77]={{51.2,81.6}}},lvl=47,maps={71,78},qgs={9116},rwp=40003,sourceQuests={4084},u=2,g={
-qo(1,{coords={
-[71]={{70,49}}},crs={9453},providers={{"i",11169},{"i",11522},{"i",11617}},u=2})}}),
+qo(1,{providers={{"i",11522}},u=2}),
+i(11617,{q=1,u=2,g={
+i(11169,{q=1,u=2})}}),
+s(124321,11522,{coords={
+[71]={{70,49}}},crs={9453},f=1,providers={{"i",11169}},q=1,u=2})}}),
 q(28372,{awp=40003,coords={
 [77]={{44.2,27.9}}},isBreadcrumb=1,nextQuests={28334},qgs={48469},r=1,sourceQuests={28228,28264}}),
 q(28388,{awp=40003,coords={
@@ -20897,6 +20900,13 @@ o(202082,{awp=30200,coords={
 p(237,{itemID=48122,npcID=35397,q=1,spellID=67418})}}),
 n(6585,{coords={
 [78]={{63,18.6}}}})}),
+h(-56,{
+i(11315,{b=1,providers={{"o",164958}},q=1}),
+i(11184,{providers={{"o",164658},{"o",164778}},q=1}),
+i(11185,{providers={{"o",164659},{"o",164779}},q=1}),
+i(11186,{providers={{"o",164660},{"o",164780}},q=1}),
+i(11018,{providers={{"o",157936}},q=1,rwp=40003,u=2}),
+i(11188,{providers={{"o",164661},{"o",164781}},q=1})}),
 h(-58,{
 n(38561,{awp=40003,coords={
 [78]={{43.4,41.6}}},g={
@@ -20909,14 +20919,9 @@ n(12959,{coords={
 r(19084,{isLimited=1,itemID=15758,learnedAt=290,q=1,requireSkill=165}),
 r(19097,{isLimited=1,itemID=15772,learnedAt=300,q=3,requireSkill=165})}})}),
 h(-63,{
-i(11315,{b=1,providers={{"o",164958}},q=1}),
-i(11184,{providers={{"o",164658},{"o",164778}},q=1}),
-i(11185,{providers={{"o",164659},{"o",164779}},q=1}),
+i(11116,{b=1,lvl=48,q=2,rwp=40003,u=2}),
 i(12809,{crs={6560},q=2}),
-i(20768,{crs={6557,6559,9477},q=1,sym={{"select","itemID",20769}}}),
-i(11186,{providers={{"o",164660},{"o",164780}},q=1}),
-i(11018,{providers={{"o",157936}},q=1,rwp=40003,u=2}),
-i(11188,{providers={{"o",164661},{"o",164781}},q=1})}),
+i(20768,{crs={6557,6559,9477},q=1,sym={{"select","itemID",20769}}})}),
 h(-43,{awp=50004,pb=1,g={
 crit(21466,{achID=6612,id=20,pb=1}),
 crit(21534,{achID=6560,id=16,pb=1})}})}}),
@@ -34639,6 +34644,8 @@ r(9273,{isLimited=1,itemID=7561,learnedAt=165,q=1,requireSkill=202}),
 s(119957,4837,{f=1,isLimited=1,lvl=25,q=2}),
 s(119947,4827,{f=4,isLimited=1,lvl=23,q=2})}})}),
 h(-63,{
+i(3668,{b=1,coords={
+[25]={{50.8,58.8}}},crs={2434},description="The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",lvl=30,q=1,r=2,rwp=40003,u=2}),
 i(3711,{crs={2415},rwp=40003,u=2}),
 p(42,{awp=11101,itemID=8491,npcID=7383,pb=1,q=1,spellID=10675,g={
 crit(23577,{achID=8397,awp=50400,id=1,pb=1})}}),
@@ -37659,7 +37666,8 @@ qo(1,{crs={5850,5852,5855,8281},providers={{"i",10509}},u=2}),
 qo(2,{crs={5853,5854,5855},providers={{"i",10511}},u=2})}}),
 q(3181,{coords={
 [32]={{73,77.2}}},crs={5833},lvl=40,maps={48},providers={{"i",10000},{"i",10005}},r=2,rwp=40003,u=2}),
-q(4451,{crs={5840,5844,5846,8504,8566,15692},lvl=43,providers={{"i",11818},{"o",173265}},rwp=40003,u=2}),
+q(4451,{coords={
+[32]={{65.6,62.5}}},lvl=43,providers={{"i",11818},{"o",173265}},rwp=40003,u=2}),
 q(28035,{awp=40003,coords={
 [32]={{39.4,67.8}}},qgs={47393},sourceQuests={28034}}),
 q(28032,{awp=40003,coords={
@@ -37796,6 +37804,7 @@ n(14624,{coords={
 h(-63,{
 i(62916,{awp=40003,crs={8338,8566},description="In addition to being looted, this item can also be passively obtained by being attacked by said creatures. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",q=1}),
 i(18944,{crs={9318},q=1}),
+i(11818,{crs={5840,5844,5846,8504,8566,15692},lvl=43,q=1,rwp=40003,u=2}),
 r(18412,{awp=80200,coords={
 [32]={{19.4,36.6},{25.4,25.4}}},crs={5861},itemID=14476,learnedAt=270,q=2,requireSkill=197,rwp=40003,u=2}),
 r(18408,{awp=80200,coords={
@@ -43161,16 +43170,14 @@ q(27087,{awp=40003,coords={
 [22]={{46.9,63.8}}},qgs={44452},r=1,sourceQuests={27084,27085,27086}}),
 q(5142,{coords={
 [22]={{49.2,78.4}}},lvl=50,maps={23},qgs={10927},rwp=40003,u=2}),
-q(5060,{coords={
-[22]={{47.4,49.7}}},lvl=52,providers={{"o",175924}},rwp=40003,u=2,g={
 q(5059,{coords={
-[22]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,u=2,g={
-qo(1,{coords={
-[22]={{48.2,49.6}}},crs={10836},providers={{"i",12739}},questID=5060,u=2})}}),
+[22]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,rwp=40003,u=2,g={
+i(12739,{b=1,coords={
+[22]={{48.2,49.6}}},crs={10836},q=1,u=2})}}),
+q(5060,{coords={
+[22]={{47.4,49.7}}},lvl=52,providers={{"i",12739},{"o",175924}},rwp=40003,u=2,g={
 s(125723,13474,{b=1,f=31,q=2,u=2}),
-i(13475,{b=1,f=52,q=2,u=2}),
-i(12738,{b=1,coords={
-[22]={{48,49.8}}},crs={10816},q=1,u=2})}}),
+i(13475,{b=1,f=52,q=2,u=2})}}),
 q(26936,{awp=40003,coords={
 [18]={{83.3,69}}},lvl=35,qgs={10837},r=1,sourceQuests={26930,26933,26978}}),
 q(5507,{coords={
@@ -43442,8 +43449,7 @@ s(208103,62190,{b=1,f=1,q=2}),
 i(62189,{b=1,f=51,q=2})}}),
 q(5051,{coords={
 [22]={{38.4,54}}},lvl=50,qgs={10778},rwp=40003,sourceQuests={5050},u=2,g={
-qo(1,{coords={
-[22]={{38.6,56.2}}},crs={10801},providers={{"i",12721},{"i",12722},{"i",12723}},u=2}),
+qo(1,{cost={{"i",12722,1},{"i",12721,1}},providers={{"i",12723}},u=2}),
 i(13473,{b=1,f=51,q=2,u=2})}}),
 q(6004,{coords={
 [22]={{52,28}}},lvl=50,qgs={11610},rwp=40003,u=2,g={
@@ -43585,6 +43591,10 @@ r(16661,{itemID=12703,learnedAt=295,q=3,requireSkill=164}),
 r(17580,{b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171}),
 r(17562,{b=1,itemID=13485,learnedAt=275,q=2,requireSkill=171})}})}),
 h(-63,{
+i(12738,{b=1,coords={
+[22]={{48,49.8}}},crs={10816},q=1,rwp=40003,u=2}),
+i(12722,{coords={
+[22]={{38.6,56.2}}},crs={10801},q=1,rwp=40003,u=2}),
 r(19095,{awp=100107,coords={
 [22]={{62.4,36.2},{64.6,36}}},crs={1813},itemID=15771,learnedAt=300,q=3,requireSkill=165,rwp=40003,u=2}),
 r(11466,{crs={1783},itemID=9296,learnedAt=240,q=2,requireSkill=171,rwp=40003,u=2}),

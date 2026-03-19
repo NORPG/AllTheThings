@@ -3975,8 +3975,11 @@ s(160381,11873,{b=1,f=3,q=2}),
 s(160382,11874,{b=1,f=5,q=2})}}),
 q(4005,{coords={
 [1448]={{51.2,81.6}}},lvl=47,maps={1446,1449},qgs={9116},rwp=40003,sourceQuests={4084},g={
-qo(1,{coords={
-[1446]={{70,49}}},crs={9453},providers={{"i",11169},{"i",11522},{"i",11617}}})}}),
+qo(1,{providers={{"i",11522}}}),
+i(11617,{q=1,g={
+i(11169,{q=1})}}),
+s(160273,11522,{coords={
+[1446]={{70,49}}},crs={9453},f=1,providers={{"i",11169}},q=1})}}),
 q(5159,{coords={
 [1413]={{65.8,43.8}}},lvl=48,providers={{"i",12906}},qgs={5901},rwp=40003,sourceQuests={5158}}),
 q(4101,{coords={
@@ -8858,20 +8861,22 @@ n(6581,{coords={
 [1449]={{62.4,66}}}}),
 n(6585,{coords={
 [1449]={{68.5,12.7}}}})}),
+h(-56,{
+i(11315,{b=1,providers={{"o",164958}},q=1}),
+i(11184,{providers={{"o",164658},{"o",164778}},q=1}),
+i(11185,{providers={{"o",164659},{"o",164779}},q=1}),
+i(11186,{providers={{"o",164660},{"o",164780}},q=1}),
+i(11018,{providers={{"o",157936}},q=1,rwp=40003}),
+i(11188,{providers={{"o",164661},{"o",164781}},q=1})}),
 h(-58,{
 n(12959,{coords={
 [1449]={{43.2,7.8}}},g={
 r(19084,{isLimited=1,itemID=15758,learnedAt=290,q=1,requireSkill=10660})}})}),
 h(-63,{
-i(11315,{b=1,providers={{"o",164958}},q=1}),
-i(11184,{providers={{"o",164658},{"o",164778}},q=1}),
-i(11185,{providers={{"o",164659},{"o",164779}},q=1}),
+i(11116,{b=1,lvl=48,q=2,rwp=40003}),
 i(12809,{crs={6560},q=2}),
 i(20768,{crs={6557,6559,9477},q=1,sym={{"select","itemID",20769}}}),
-r(19097,{crs={6556,6557,6559,9477},itemID=15772,learnedAt=300,q=3,requireSkill=10660}),
-i(11186,{providers={{"o",164660},{"o",164780}},q=1}),
-i(11018,{providers={{"o",157936}},q=1,rwp=40003}),
-i(11188,{providers={{"o",164661},{"o",164781}},q=1})})}}),
+r(19097,{crs={6556,6557,6559,9477},itemID=15772,learnedAt=300,q=3,requireSkill=10660})})}}),
 m(1452,{icon=236854,lore="Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",g={
 h(-12,{
 ach(857,{
@@ -11293,8 +11298,7 @@ q(8233,_.ResolveQuestData({aqd=
 {coords={
 [1454]={{44,54.6}},
 [1458]={{85,75.2}}},qgs={3328,4583}},isBreadcrumb=1,lvl=50,nextQuests={8234},rwp=40003,u=1607})),
-q(522,{coords={
-[1424]={{50.8,58.8}}},crs={2434},lvl=30,providers={{"i",3668}},r=2,rwp=40003}),
+q(522,{lvl=30,providers={{"i",3668}},r=2,rwp=40003}),
 q(523,{coords={
 [1424]={{48.2,59.4}}},lvl=30,qgs={2276},r=2,rwp=40003,sourceQuests={522},g={
 qo(1,{coords={
@@ -15008,6 +15012,8 @@ r(403937,{u=1605})}})}}),
 i(210026,{b=1,c={11},coords={
 [1424]={{36.91,76.14},{54.43,82.01}}},description="Use Aquatic Form (or a swim speed potion) to click the statues one after another. Start at the eastern statue and swim to the western statue as the western statue's island can be climbed from the east, making it a direct line from eastern to western.",providers={{"o",409942},{"o",409949}},q=1,rwp=20001,u=1605})}),
 h(-63,{
+i(3668,{b=1,coords={
+[1424]={{50.8,58.8}}},crs={2434},description="The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",lvl=30,q=1,r=2,rwp=40003}),
 s(157171,3204,{awp=100107,coords={
 [1424]={{57.8,75.8},{58.8,74.6}}},crs={2372},f=5,lvl=21,q=2,rwp=40003}),
 s(157256,3336,{awp=100107,coords={
@@ -15934,7 +15940,8 @@ qo(1,{crs={5850,5852,5855,8281},providers={{"i",10509}}}),
 qo(2,{crs={5853,5854,5855},providers={{"i",10511}}})}}),
 q(3181,{coords={
 [1427]={{73,77.2}}},crs={5833},lvl=40,maps={1432},providers={{"i",10000},{"i",10005}},r=2,rwp=40003}),
-q(4451,{crs={5840,5844,5846,8504,8566,15692},lvl=43,providers={{"i",11818},{"o",173265}},rwp=40003}),
+q(4451,{coords={
+[1427]={{65.6,62.5}}},lvl=43,providers={{"i",11818},{"o",173265}},rwp=40003}),
 q(3453,{coords={
 [1427]={{39.1,39}}},lvl=40,qgs={8479},rwp=40003,sourceQuests={3452}}),
 q(3454,{coords={
@@ -15989,6 +15996,7 @@ n(14624,{coords={
 [1427]={{38.8,28.5}}}})}),
 h(-63,{
 i(18944,{crs={9318},q=1}),
+i(11818,{crs={5840,5844,5846,8504,8566,15692},lvl=43,q=1,rwp=40003}),
 r(18412,{awp=80200,coords={
 [1427]={{19.4,36.6},{25.4,25.4}}},crs={5861},itemID=14476,learnedAt=270,q=2,requireSkill=197,rwp=40003}),
 r(18408,{awp=80200,coords={
@@ -18524,16 +18532,14 @@ q(5407,{coords={
 i(12844,{b=1,factionID=529,q=2,repeatable=1})}}),
 q(5142,{coords={
 [1422]={{49.2,78.4}}},lvl=50,maps={1423},qgs={10927},rwp=40003}),
-q(5060,{coords={
-[1422]={{47.4,49.7}}},lvl=52,providers={{"o",175924}},rwp=40003,g={
 q(5059,{coords={
-[1422]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,g={
-qo(1,{coords={
-[1422]={{48.2,49.6}}},crs={10836},providers={{"i",12739}},questID=5060})}}),
+[1422]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,rwp=40003,g={
+i(12739,{b=1,coords={
+[1422]={{48.2,49.6}}},crs={10836},q=1})}}),
+q(5060,{coords={
+[1422]={{47.4,49.7}}},lvl=52,providers={{"i",12739},{"o",175924}},rwp=40003,g={
 s(160990,13474,{b=1,f=31,q=2}),
-i(13475,{b=1,f=52,q=2}),
-i(12738,{b=1,coords={
-[1422]={{48,49.8}}},crs={10816},q=1})}}),
+i(13475,{b=1,f=52,q=2})}}),
 q(5507,{coords={
 [1422]={{42.8,83.8}}},cost={{"i",12844,10}},lvl=55,minReputation={529,21000},qgs={10857},r=2,rwp=40003}),
 q(5504,{coords={
@@ -18644,8 +18650,7 @@ q(4985,{coords={
 qo(1,{providers={{"n",1816}}})}}),
 q(5051,{coords={
 [1422]={{38.4,54}}},lvl=50,qgs={10778},rwp=40003,sourceQuests={5050},g={
-qo(1,{coords={
-[1422]={{38.6,56.2}}},crs={10801},providers={{"i",12721},{"i",12722},{"i",12723}}}),
+qo(1,{cost={{"i",12722,1},{"i",12721,1}},providers={{"i",12723}}}),
 i(13473,{b=1,f=51,q=2})}}),
 q(6004,{coords={
 [1422]={{52,28}}},lvl=50,qgs={11610},rwp=40003,g={
@@ -18692,7 +18697,7 @@ r(16732,{b=1,itemID=12719,learnedAt=300,q=2,requireSkill=164})}}),
 n(1851,{coords={
 [1422]={{61.8,37.6},{64.2,33.4},{65,38.6},{66.6,42.6}}}})}),
 h(-56,{
-i(176213,{coords={
+o(176213,{coords={
 [1422]={{35.9,57.5},{36.5,53.6},{38.2,56.3},{39.7,69.6},{40.6,73.1},{40.8,57.5},{41.5,62.1},{42.2,54.8},{42.8,64.2},{43.3,68.3},{43.7,70.5},{44.2,65},{44.5,71.7},{44.6,53.5},{45.9,51.1},{45.9,71.4},{46.8,34.5},{47,67.1},{47,69.9},{47.6,70},{47.9,53.1},{49.4,68.1},{49.8,33.3},{52.3,55},{52.3,66.3},{53.3,66.2},{53.5,63.5},{54.9,27.1},{55.3,59.6},{56.7,34.7},{57.8,66.6},{62,58.5},{63.2,59.2},{63.6,75.5},{64,48.7},{64.1,57.9},{64.9,74.5},{65.8,76.8},{66.5,42.2},{67,53.8},{67.8,84.6},{68,44.7},{68.3,81.6},{68.7,49.2},{68.7,79.1},{68.9,73.8},{69.5,78.6}}},description="This item can be found sporatically on the ground in the Plaguelands.",rwp=40003,g={
 i(12938,{b=1,q=1})}}),
 i(226413,{awp=11503,b=1,c={3,8,11},coords={
@@ -18727,7 +18732,11 @@ r(461737,{awp=11503,itemID=228313,learnedAt=315,q=3,requireSkill=9788,u=1608}),
 r(17562,{b=1,itemID=13485,learnedAt=275,q=2,requireSkill=171})}})}),
 h(-63,{
 i(22526,{q=1,rwp=40003,u=1611}),
+i(12738,{b=1,coords={
+[1422]={{48,49.8}}},crs={10816},q=1,rwp=40003}),
 i(13354,{b=1,cost={{"i",13370,1}},description="These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",q=1,rwp=40003}),
+i(12722,{coords={
+[1422]={{38.6,56.2}}},crs={10801},q=1,rwp=40003}),
 r(20034,{crs={4494},itemID=16252,learnedAt=300,q=2,requireSkill=333}),
 i(12841,{b=1,description="Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(12840,{b=1,description="Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
