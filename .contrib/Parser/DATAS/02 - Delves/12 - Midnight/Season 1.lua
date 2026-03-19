@@ -258,9 +258,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					filter(MISC, {
 						i(263179, {	-- Delver's Cosmetic Surprise Bag
-							-- ["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+							-- ["cost"] = { { "c", VOIDLIGHT_MARL, 0 } },
 							-- Renown 0?
 							-- i(264847),	-- Dozing Vinepouch (COSMETIC!)	-- I looted it from it, need to properly sorted it out to delve
+							-- i(264859),	-- Twilight Follower's Cowl (COSMETIC!)
 						}),
 						i(262951, {	-- Sin'dorei Gravestone
 							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
