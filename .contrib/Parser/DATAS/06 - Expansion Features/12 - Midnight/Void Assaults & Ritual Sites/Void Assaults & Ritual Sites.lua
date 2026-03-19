@@ -42,12 +42,14 @@ VOID_ASSAULTS_RITUAL_SITES = createHeader({
 local FIELD_ACCOLADE = 3405;
 local DARK_PARTICLE = 267051;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
-	["maps"] = {
-		MAP.MIDNIGHT.EVERSONG_WOODS,
-		MAP.MIDNIGHT.ZULAMAN,
-	},
-	["groups"] = {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
+	["groups"] = sharedData({
+		["maps"] = {
+			MAP.MIDNIGHT.EVERSONG_WOODS,
+			MAP.MIDNIGHT.ZULAMAN,
+		},
+		["timeline"] = { ADDED_12_0_5 },
+	},{
 		n(VOID_ASSAULTS_RITUAL_SITES, {
 			faction(FACTION_RITUAL_SITES),
 			-- Void Rift: Bitter Bark; 30.8, 43.6, Zul'Aman
@@ -397,7 +399,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			n(QUESTS, {
 				q(95551, {	-- Misappropriated Treasures
-					["providers"] = { 
+					["providers"] = {
 						--TODO: could be only Exquisite Treasure as started of quest, not sure
 						{ "i", 271428 },	-- Crystalline Treasure (QS!/QI!)
 						{ "i", 271429 },	-- Ethereal Treasure (QS!/QI!)
@@ -423,25 +425,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				i(271785),	-- Ritual Spoils (on Daggerspine Landing UI)
 			}),
 		}),
-	},
-})));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
-	n(VOID_ASSAULTS_RITUAL_SITES, {
-		n(QUESTS, {
-			q(92589),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Ritual
-			q(94456),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
-			-- Daggerspine Landing
-			q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day & week), could be push quest for questID 95547 (Ritual Site Challenge Report: Tendrils)
-			q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_LANDING
-			q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_LANDING
-			q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_LANDING
-			q(96149),	-- Dark Obelisk @ 63.8, 70.5, DAGGERSPINE_LANDING
-			q(96150),	-- Dark Obelisk @ 39.5, 76.2, DAGGERSPINE_LANDING
-			q(96151),	-- Dark Obelisk @ 35.0, 63.8, DAGGERSPINE_LANDING
-			q(96152),	-- Dark Obelisk @ 50.4, 42.8, DAGGERSPINE_LANDING
-			q(96153),	-- Dark Obelisk @ 44.8, 47.4, DAGGERSPINE_LANDING
-			q(96154),	-- Dark Obelisk @ 42.5, 57.0, DAGGERSPINE_LANDING
-		}),
 	}),
-})));
+}))
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(VOID_ASSAULTS_RITUAL_SITES, {
+		["timeline"] = { ADDED_12_0_5 },
+		["groups"] = {
+			n(QUESTS, {
+				q(92589),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Ritual
+				q(94456),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
+				-- Daggerspine Landing
+				q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day & week), could be push quest for questID 95547 (Ritual Site Challenge Report: Tendrils)
+				q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_LANDING
+				q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_LANDING
+				q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_LANDING
+				q(96149),	-- Dark Obelisk @ 63.8, 70.5, DAGGERSPINE_LANDING
+				q(96150),	-- Dark Obelisk @ 39.5, 76.2, DAGGERSPINE_LANDING
+				q(96151),	-- Dark Obelisk @ 35.0, 63.8, DAGGERSPINE_LANDING
+				q(96152),	-- Dark Obelisk @ 50.4, 42.8, DAGGERSPINE_LANDING
+				q(96153),	-- Dark Obelisk @ 44.8, 47.4, DAGGERSPINE_LANDING
+				q(96154),	-- Dark Obelisk @ 42.5, 57.0, DAGGERSPINE_LANDING
+			}),
+		},
+	}),
+}))
