@@ -412,7 +412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				n(QUESTS, {
 					q(94476, {	-- The Voidspire: Flicker in the Hollow [H]
-						--["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						["qg"] = 241076,	-- Riftblade Maella
 						["groups"] = { i(265015) },	-- Echo of Radiance (QI!)
 					}),
 				}),
@@ -432,7 +432,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				n(QUESTS, {
 					q(94477, {	-- The Voidspire: Flicker in the Hollow [M]
-						--["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						["qg"] = 241076,	-- Riftblade Maella
 						["groups"] = { i(265016) },	-- Echo of Radiance (QI!)
 					}),
 				}),
