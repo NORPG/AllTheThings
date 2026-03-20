@@ -43,6 +43,7 @@ local TrapNPCs = {	-- probably a ton of these, it seems unique per target & diff
 	247071,	-- Shimmering Trap
 	247075,	-- Entangled Trap
 	247077,	-- Void-Cursed Trap
+	247078,	-- Void-Warped Trap
 	247076,	-- Anointed Trap
 }
 
