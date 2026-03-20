@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and checking Upgrade information
 
 -- Global locals
-local floor, 	  type, tonumber, ipairs, pairs
-	= math.floor, type, tonumber, ipairs, pairs
+local floor, 	 type,tonumber,ipairs,pairs,rawget
+	= math.floor,type,tonumber,ipairs,pairs,rawget
 
 -- App locals
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
@@ -566,20 +566,16 @@ local function HasUpgrade(t)
 	return t._up or GetUpgrade(t, up)
 end
 
-local UpgradeSources = {}
+local UpgradeSources = setmetatable({}, app.MetaTable.AutoTable)
 
 local function SetupUpgrade(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = HasUpgrade(t);
 	if upgrade then
 		t.isUpgrade = upgrade.collectible and not upgrade.collected
 		-- app.PrintDebug("SetupUpgrade",t.isUpgrade,app:SearchLink(t),"=>",app:SearchLink(upgrade))
 		-- store the upgrade source for ad-hoc updates
 		local upgradehash = upgrade.hash
 		local sources = UpgradeSources[upgradehash]
-		if not sources then
-			sources = {}
-			UpgradeSources[upgradehash] = sources
-		end
 		sources[#sources + 1] = t
 		Runner.Run(DGU, t)
 		return
@@ -596,7 +592,7 @@ local function SetupUpgrade(t)
 	end
 end
 local function CheckIsUpgrade(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = HasUpgrade(t);
 	if upgrade then
 		t.isUpgrade = upgrade.collectible and not upgrade.collected
 		-- app.PrintDebug("CheckIsUpgrade",t.isUpgrade,app:SearchLink(t),"=>",app:SearchLink(upgrade))
@@ -617,7 +613,7 @@ end
 
 local function OnSearchResultUpdate(t)
 	-- app.PrintDebug("UpdateUpgradeGroup",app:SearchLink(t))
-	local sources = UpgradeSources[t.hash]
+	local sources = rawget(UpgradeSources, t.hash)
 	if not sources then return end
 	for _,upgradeSource in ipairs(sources) do
 		-- app.PrintDebug("UpdateUpgradeGroup.source",app:SearchLink(upgradeSource))
@@ -698,7 +694,7 @@ end
 
 -- Returns whether 't' has an upgrade AND it is uncollected
 api.CollectibleAsUpgrade = function(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = HasUpgrade(t);
 	return upgrade and not upgrade.collected;
 end
 
