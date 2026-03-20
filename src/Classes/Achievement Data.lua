@@ -22,7 +22,7 @@ local SearchForField, GetFieldContainer
 	= app.SearchForField, app.GetFieldContainer;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local IsQuestFlaggedCompleted;
-local IsSpellKnown;
+local IsSpellKnownHelper;
 
 
 -- WoW API Cache
@@ -37,7 +37,7 @@ local GetNumTalentGroups = GetNumTalentGroups;
 -- Locals from future-loaded Modules
 app.AddEventHandler("OnLoad", function()
 	IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
-	IsSpellKnown = app.IsSpellKnown;
+	IsSpellKnownHelper = app.IsSpellKnownHelper;
 end)
 
 -- Achievement Criteria Data have independent detection methods based on their internal type.
@@ -59,7 +59,7 @@ local function GetQuestCompleted(questID)
 	return IsQuestFlaggedCompleted(questID) and 1 or 0;
 end
 local function GetSpellCompleted(spellID)
-	if IsSpellKnown(spellID) then
+	if IsSpellKnownHelper(spellID) then
 		return 1;
 	else
 		local spells = SearchForField("spellID", spellID);

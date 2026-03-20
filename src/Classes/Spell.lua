@@ -47,13 +47,11 @@ local SpellQuestOverrides = setmetatable({}, { __index = function(t,key)
 end})
 -- Consolidates some spell checking
 ---@param spellID number
----@param rank? number
----@param ignoreHigherRanks? boolean
 ---@return boolean isKnown
 local IsSpellKnownHelper
 -- In 11.2 some spell checking was consolidated
 if app.GameBuildVersion >= 110200 then
-	IsSpellKnownHelper = function(spellID, rank)
+	IsSpellKnownHelper = function(spellID)
 		if IsSpellKnown(spellID)
 			or IsSpellKnown(spellID, 1)
 			or IsSpellKnownOrOverridesKnown(spellID, 0, true)
@@ -64,7 +62,7 @@ if app.GameBuildVersion >= 110200 then
 	end
 else
 	local IsPlayerSpell = IsPlayerSpell;
-	IsSpellKnownHelper = function(spellID, rank)
+	IsSpellKnownHelper = function(spellID)
 		if IsPlayerSpell(spellID)
 			or IsSpellKnown(spellID)
 			or IsSpellKnown(spellID, 1)
@@ -76,7 +74,6 @@ else
 	end
 end
 app.IsSpellKnownHelper = IsSpellKnownHelper;
-app.IsSpellKnown = IsSpellKnownHelper;
 
 local SpellIDToSpellName = {};
 local SpellNameToSpellID;
@@ -198,9 +195,8 @@ do
 			return cache.GetCachedField(t, "icon", CacheInfo) or 136243;	-- Trade_engineering
 		end,
 		saved = function(t)
-			local id = t[KEY];
 			-- character known
-			if app.IsCached(CACHE, id) then return true; end
+			if app.IsCached(CACHE, t[KEY]) then return true; end
 		end,
 		collectible = app.ReturnFalse,
 		collected = function(t)
