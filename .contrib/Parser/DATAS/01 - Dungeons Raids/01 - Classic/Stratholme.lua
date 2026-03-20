@@ -1822,10 +1822,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(10440, {	-- Baron Rivendare
 						-- #if BEFORE 4.0.3
-						-- #if AFTER WRATH
 						-- NOTE: This will merge the data with the encounter object and push the removed T0 pieces to the bottom of the list.
 						["encounterID"] = 456,	-- Baron Rivendare
-						-- #endif
 						-- #endif
 						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
