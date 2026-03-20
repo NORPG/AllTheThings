@@ -15,9 +15,13 @@ local IsQuestFlaggedCompleted, SearchForField
 local GetSpellLink = app.WOWAPI.GetSpellLink;
 
 -- TODO: some of these deprecated in 11.2, move to WOWAPI
-local IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 ---@diagnostic disable-next-line: deprecated
-	= app.WOWAPI.IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo, app.WOWAPI.IsSpellKnownOrOverridesKnown
+local GetSpellTabInfo = GetSpellTabInfo
+
+-- WoW API
+local GetNumSpellTabs = app.WOWAPI.GetNumSpellTabs;
+local IsSpellKnown = app.WOWAPI.IsSpellKnown;
+local IsSpellKnownOrOverridesKnown = app.WOWAPI.IsSpellKnownOrOverridesKnown;
 
 local SpellQuestLinks = {
 	-- double check added Mount spells in Mount.lua [PerCharacterMountSpells/AccountWideMountSpells]
@@ -49,7 +53,7 @@ end})
 local IsSpellKnownHelper
 -- In 11.2 some spell checking was consolidated
 if app.GameBuildVersion >= 110200 then
-	IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
+	IsSpellKnownHelper = function(spellID, rank)
 		if IsSpellKnown(spellID)
 			or IsSpellKnown(spellID, 1)
 			or IsSpellKnownOrOverridesKnown(spellID, 0, true)
@@ -59,8 +63,8 @@ if app.GameBuildVersion >= 110200 then
 		end
 	end
 else
-	local IsPlayerSpell = app.WOWAPI.IsPlayerSpell
-	IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
+	local IsPlayerSpell = IsPlayerSpell;
+	IsSpellKnownHelper = function(spellID, rank)
 		if IsPlayerSpell(spellID)
 			or IsSpellKnown(spellID)
 			or IsSpellKnown(spellID, 1)
