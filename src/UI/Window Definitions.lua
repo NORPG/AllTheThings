@@ -3164,6 +3164,8 @@ app.CreatePopoutForSearch = function(search)
 			return true
 		end
 		if group.link or group.name or group.text or group.key then
+			-- if it's a specific item link, then make sure that link is forced in the resulting group
+			app.ImportRawLink(group, search)
 			app:CreateMiniListForGroup(group)
 			return true
 		end
