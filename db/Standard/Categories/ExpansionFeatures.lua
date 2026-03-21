@@ -17482,7 +17482,7 @@ de(5126,{c={10},itemID=248958,spellID=1248166})}})}}),
 h(-214,{c={10},g={
 cl(10.268,{
 gt(254,{c={10},coords={
-[709]={{55,56.5}}},description="Click this once per day.",questID=43974,g={
+[709]={{55,56.5}}},description="Click this once per day.",isDaily=1,questID=43974,g={
 i(139561,{b=1,c={10},f=55,spellID=220692,g={
 artifact(959,{c={10}})}}),
 i(140295,{b=1,c={10},f=55,lvl=42,spellID=221558}),
@@ -40428,7 +40428,7 @@ crit(71587,{achID=41215,awp=110100,id=7})}}),
 n(235117,{awp=110002,g={
 crit(71590,{achID=41215,awp=110100,id=10})}}),
 crit(71580,{achID=41214,id=2})}})}})})}})}),
-x(12,{awp=120001,maps={2395,2437},g={
+x(12,{awp=120001,g={
 h(-729,{coords={
 [2395]={{56.6,65.8}},
 [2405]={{38.9,53.2}},
@@ -40517,7 +40517,7 @@ q(89507,{coords={
 [2413]={{66.1,61.5}},
 [2437]={{31.6,26.3}}},isWeekly=1,lvl=80,qgs={241928,248658,257632,257633},g={
 i(269702,{f=55,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}}),
-i(268488,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}}),
+i(268488,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}},u=2}),
 i(263466,{b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}})}}),
 q(94834,{lvl=83,providers={{"i",265746}}})}),
 h(-58,{coords={
@@ -41610,7 +41610,7 @@ crit(105984,{achID=62176,id=1,providers={{"n",247857}}}),
 crit(105985,{achID=62176,id=2,providers={{"n",247860}}})}),
 ach(62351),
 ach(62134),
-ach(62143,{crs={247070,247071,247073,247075,247076,247077},providers={{"s",1242005}},g={
+ach(62143,{crs={247070,247071,247073,247075,247076,247077,247078},providers={{"s",1242005}},g={
 crit(112616,{achID=62351,id=3})}}),
 ach(62138,{providers={{"n",260848}},g={
 crit(112620,{achID=62351,id=7})}})}),
@@ -41915,14 +41915,16 @@ i(262928,{b=1,f=55,lvl=80}),
 i(262938,{b=1,f=55,lvl=80}),
 i(269005,{f=55}),
 i(262936,{b=1,f=55,lvl=80}),
-i(255825,{crs={247070,247071,247073,247075,247076,247077},f=55,spellID=1259472})}),
+i(255825,{crs={247070,247071,247073,247075,247076,247077,247078},f=55,spellID=1259472})}),
 flt(56,{
 i(251283)}),
 flt(200),
 i(257023,{b=1,f=55,lvl=80,sym={{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-88},{"finalize"},{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
 i(257026,{b=1,f=55,lvl=80,sym={{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-88},{"finalize"},{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
 i(262346,{b=1,f=55,lvl=80,sym={{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-88},{"finalize"},{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
-i(268545,{f=55})}),
+i(268545,{f=55,sym={{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-88},{"finalize"},{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
+i(269006,{f=55}),
+i(269007,{f=55})}),
 h(-58,{
 n(258181,{coords={
 [2393]={{55.8,66}}},g={
