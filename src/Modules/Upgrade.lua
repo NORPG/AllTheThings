@@ -694,7 +694,7 @@ end
 
 -- Returns whether 't' has an upgrade AND it is uncollected
 api.CollectibleAsUpgrade = function(t)
-	local upgrade = HasUpgrade(t);
+	local upgrade = t._up or NextUpgrade(t);
 	return upgrade and not upgrade.collected;
 end
 
