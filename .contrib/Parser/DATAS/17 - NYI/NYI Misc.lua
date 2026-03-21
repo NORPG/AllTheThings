@@ -1318,7 +1318,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(204330),	-- Inert Primordial Fragments
 			i(203218),	-- Iskaara Supply Pouch
 			i(203221),	-- Maruuk Supply Sack
-			i(204310),	-- Mycelial Threads
 			i(204307),	-- Ornate Bronze Lockbox
 			i(204216),	-- Primordial Pulverizing
 			i(204008),	-- Prodigious Sand Stone

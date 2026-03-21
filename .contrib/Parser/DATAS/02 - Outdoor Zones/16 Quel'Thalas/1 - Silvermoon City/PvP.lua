@@ -8,10 +8,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(QUESTS, {
 				q(93171, {	-- Calling All Combatants!
 					["provider"] = { "i", 257194 },	-- Artisan's Consortium Flyer
-					["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					["groups"] = {
 						i(256608, {	-- Galactic Gladiator's Heraldry x9
-							["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 						}),
 					},
 				}),

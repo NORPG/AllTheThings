@@ -67,8 +67,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(241334),	-- Vicious Thalassian Flask of Honor
 			i(241303),	-- Void-Shrouded Tincture+
 			i(241302),	-- Void-Shrouded Tincture++
-			i(241285),	-- Voidlight Potion Cauldron+
-			i(241284),	-- Voidlight Potion Cauldron++
+			i(241285, {	-- Voidlight Potion Cauldron+
+				i(245897),	-- Fleeting Light's Potential+
+			}),
+			i(241284, {	-- Voidlight Potion Cauldron++
+				i(245898),	-- Fleeting Light's Potential++
+			}),
 		}),
 		n(DECOR, {
 			i(262355),	-- Entropic Illuminant (DECOR!)

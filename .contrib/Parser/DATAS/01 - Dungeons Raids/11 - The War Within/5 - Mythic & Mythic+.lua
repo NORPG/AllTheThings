@@ -5,7 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 		i(234425, {	-- Forgotten Folio
-			["description"] = "Drops from the last boss of Mythic+ Dungeons. It contains various dungeon dropped profession recipes.",
+			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
 			["sym"] = {{"select","itemID",
 				223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
 				223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)

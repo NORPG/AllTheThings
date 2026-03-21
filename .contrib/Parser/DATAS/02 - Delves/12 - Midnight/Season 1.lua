@@ -47,9 +47,9 @@ local mapped = function(t)
 	end
 	return t
 end
-root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
+root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
 	n(DELVES_MID_S1, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			ach(61808),	-- Fabled Let Me Solo Him: Nullaeus
 			ach(61799, {	-- Let Me Solo Him: Nullaeus
 				i(263222),	-- Arcanovoid Construct (MOUNT!)
@@ -82,7 +82,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(257866),	-- Overflowing Voidspire
 			i(257768),	-- Time Lost Edict
 		}),
-		mapped(n(DELVE_COMPLETION,  bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+		mapped(n(DELVE_COMPLETION,  bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			-- Currently unaware of objectIDs so treated just as reward
 			i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
 			i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
@@ -96,7 +96,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(260924),	-- Sentinel's Blessing
 			i(262389),	-- Veiled Blessing // alpha
 		}))),
-		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			q(93519, {	-- Midnight Delves! (it pop on login but after cancel it -- didn't re-pop)
 				["description"] = "Pops on login",
 			}),
@@ -132,7 +132,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				["maps"] = ALL_REGULAR_DELVES_MID,
 			}),
 		})),
-		mapped(n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+		mapped(n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			o(584752, {	-- Mislaid Curiosity
 				["groups"] = {
 					-- Let's figure out if there will be some pre-seasonal IDs for experience / different per season stuff
@@ -185,7 +185,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					i(254869),	-- Chunk of Companion Experience (Epic)
 					-- TODO: Don't ask me, ask Blizzard.
 					i(264342),	-- Cosmic Void Cache (DECOR!)
-					i(262991),	-- Two Thousand and Two Nights (COSMETIC!) (TODO: it was looted from strongbox, however could be ATAL_AMAN loot table)
 				},
 			}),
 			o(581922),	-- Hidden Trove
@@ -200,11 +199,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				},
 			}),
 		}))),
-		n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(242398, {	-- Naleidea Rivergleam
 				["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = sharedData({
-					["timeline"] = { ADDED_12_0_X_SEASONSTART },
+					["timeline"] = { ADDED_12_0_1_SEASONSTART },
 				}, {
 					i(253342, {	-- Beacon of Hope
 						["cost"] = { { "c", UNDERCOIN, 5000 } },
@@ -224,7 +223,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(242399, {	-- Telemancer Astrandis
 				["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = sharedData({
-					["timeline"] = { ADDED_12_0_X_SEASONSTART },
+					["timeline"] = { ADDED_12_0_1_SEASONSTART },
 				}, {
 					n(DECOR, {
 						i(264175, {	-- Amani Strongbox (DECOR!)
@@ -260,8 +259,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						i(263179, {	-- Delver's Cosmetic Surprise Bag
 							-- ["cost"] = { { "c", VOIDLIGHT_MARL, 0 } },
 							-- Renown 0?
-							-- i(264847),	-- Dozing Vinepouch (COSMETIC!)	-- I looted it from it, need to properly sorted it out to delve
-							-- i(264859),	-- Twilight Follower's Cowl (COSMETIC!)
+							-- Just sym the cosmetic header
 						}),
 						i(262951, {	-- Sin'dorei Gravestone
 							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
@@ -292,7 +290,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
+	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
 		n(DELVES_MID_S1, {
 			-- Seasonal Delver's Journey Rewards
 			--q(92601),	-- pop after looting Cracked Keystone

@@ -934,12 +934,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242439),	-- Grassy Sweatpants
 				i(242410),	-- Grassy Sweatshirt
 
-				------ Sepia Sweatsuit Set ------
-				i(242457),	-- Ensemble: Sepia Sweatsuit
-				q(90641),	-- Ensemble: Sepia Sweatsuit
-				i(242438),	-- Sepia Sweatpants
-				i(242409),	-- Sepia Sweatshirt
-
 				------ Sunny Sweatsuit Set ------
 				i(242492),	-- Ensemble: Sunny Sweatsuit
 				q(90657),	-- Ensemble: Sunny Sweatsuit
@@ -1116,7 +1110,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(252710),	-- Midnight Winter Toque
 				i(252747),	-- Plum Winter Toque
 				i(250293),	-- Red Hot Portable Bakery
-				i(252712),	-- Sepia Winter Toque
 				i(252751),	-- Snowy Winter Toque
 				i(251669),	-- Sturdy Wearable Pot Lid
 				i(252752),	-- Sunny Winter Toque

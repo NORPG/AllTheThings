@@ -898,11 +898,6 @@ root(ROOTS.Unsorted, {
 				i(266130),	-- Gilded Silvermoon Gazebo
 				i(259354),	-- Brown Paper Sack
 			}),
-			filter(MISC, {
-				-- Prey
-				i(269006),	-- Preyseeker's Gleaming Coin Pouch
-				i(269007),	-- Preyseeker's Glittering Coin Pouch
-			}),
 			filter(QUEST_ITEMS, {
 				i(246152),	-- Saptor Frill
 				i(249775),	-- Bright Berry
@@ -979,13 +974,9 @@ root(ROOTS.Unsorted, {
 		})),
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 			n(PROFESSIONS, {
-				-- Professions
-				i(258839),	-- Concealed Catalogue
 
 				-- Crafting Reagent
 				i(237505),	-- Artisan's Moxie
-				i(247724),	-- Multicraft Manifold
-				i(247726),	-- Resourceful Routing
 
 				-- Profession Tool
 				i(246514),	-- Super Elegant Artisan's Tailoring Robe
@@ -1209,7 +1200,6 @@ root(ROOTS.Unsorted, {
 				i(249440),	-- Bright Feather
 				i(249444),	-- Eversong Pyrepetal
 				i(249472),	-- Fragrant Bloodthistle
-				i(249517),	-- Smuggled Goods
 				i(249527),	-- Elder Painting
 				i(249543),	-- Special Remedy
 				i(249553),	-- Lost Mirror
@@ -1471,7 +1461,6 @@ root(ROOTS.Unsorted, {
 				i(260371),	-- Infernal Greatlock Girdle
 				i(260372),	-- Nullstrider's Boots
 				i(260373),	-- Power Stance Breeches
-				i(260374),	-- Primal Spark Pauldrons
 				i(260375),	-- Raging Storm Sash
 				i(260376),	-- Breastplate of the Final Defense
 				i(260377),	-- Fading Dawn Sabatons
@@ -1595,7 +1584,6 @@ root(ROOTS.Unsorted, {
 				i(262761),	-- Pepe's Vacation Home
 				i(262819),	-- Midnight Dunecloth Skirt
 				i(262820),	-- Azure Dunecloth Skirt
-				i(262821),	-- Sepia Dunecloth Skirt
 				i(262822),	-- Grassy Dunecloth Skirt
 				i(262823),	-- Cloudy Dunecloth Skirt
 				i(262824),	-- Deep Dunecloth Skirt
@@ -1612,7 +1600,6 @@ root(ROOTS.Unsorted, {
 				i(262836),	-- Sunny Dunecloth Skirt
 				i(262837),	-- Midnight Dunecloth Belt
 				i(262838),	-- Azure Dunecloth Belt
-				i(262839),	-- Sepia Dunecloth Belt
 				i(262840),	-- Grassy Dunecloth Belt
 				i(262841),	-- Cloudy Dunecloth Belt
 				i(262842),	-- Deep Dunecloth Belt
@@ -1629,7 +1616,6 @@ root(ROOTS.Unsorted, {
 				i(262854),	-- Sunny Dunecloth Belt
 				i(262855),	-- Midnight Dunecloth Vest
 				i(262856),	-- Azure Dunecloth Vest
-				i(262857),	-- Sepia Dunecloth Vest
 				i(262858),	-- Cloudy Dunecloth Vest
 				i(262859),	-- Grassy Dunecloth Vest
 				i(262860),	-- Deep Dunecloth Vest
@@ -1645,14 +1631,12 @@ root(ROOTS.Unsorted, {
 				i(262871),	-- Snowy Dunecloth Vest
 				i(262872),	-- Sunny Dunecloth Vest
 				i(263009),	-- Valeera's Wicked Knife
-				i(263286),	-- Repurposed Fungarian Gong
 				i(263413),	-- Nullaeus Domaneye
 				i(263520),	-- Ensemble: Sprawling's Garb
 				i(263574),	-- Ensemble: Osseoclad's Wear
 				i(263575),	-- Ensemble: Elder Moss Outfit
 				i(263576),	-- Ensemble: Rampant Thorn Armor
 				i(263577),	-- Arsenal: Rootlands Weaponry
-				i(264859),	-- Twilight Follower's Cowl
 				i(264969),	-- Extinction Voulge
 				i(264970),	-- Oblivion's Edge
 				i(264971),	-- Annihilation Rod
@@ -1877,7 +1861,6 @@ root(ROOTS.Unsorted, {
 				i(257713),	-- Anubisath's Ethereal Blade
 				i(257759),	-- Sorcerer's Midnight Cowl
 				i(257760),	-- Sorcerer's Azure Cowl
-				i(257761),	-- Sorcerer's Sepia Cowl
 				i(257762),	-- Sorcerer's Grassy Cowl
 				i(257763),	-- Sorcerer's Cloudy Cowl
 				i(257764),	-- Sorcerer's Deep Cowl
@@ -1892,7 +1875,6 @@ root(ROOTS.Unsorted, {
 				i(257778),	-- Sorcerer's Sunny Cowl
 				i(257779),	-- Sorcerer's Midnight Cape
 				i(257780),	-- Sorcerer's Azure Cape
-				i(257781),	-- Sorcerer's Sepia Cape
 				i(257782),	-- Sorcerer's Grassy Cape
 				i(257783),	-- Sorcerer's Cloudy Cape
 				i(257784),	-- Sorcerer's Deep Cape
@@ -1907,7 +1889,6 @@ root(ROOTS.Unsorted, {
 				i(257796),	-- Sorcerer's Sunny Cape
 				i(257970),	-- Ensemble: Sorcerer's Midnight Garb \\ Ensemble: Sorcerer's Midnight Raiment
 				i(257971),	-- Ensemble: Sorcerer's Azure Garb \\ Ensemble: Sorcerer's Azure Raiment
-				i(257972),	-- Ensemble: Sorcerer's Sepia Garb \\ Ensemble: Sorcerer's Sepia Raiment
 				i(257974),	-- Ensemble: Sorcerer's Grassy Garb \\ Ensemble: Sorcerer's Grassy Raiment
 				i(257975),	-- Ensemble: Sorcerer's Cloudy Garb \\ Ensemble: Sorcerer's Cloudy Raiment
 				i(257976),	-- Ensemble: Sorcerer's Deep Garb \\ Ensemble: Sorcerer's Deep Raiment
@@ -1990,7 +1971,6 @@ root(ROOTS.Unsorted, {
 				i(260405),	-- South Guard's Silver Chausses
 				i(260412),	-- Rusty Chainkini
 				i(260413),	-- Copper Chainkini
-				i(260415),	-- Silver Chainkini
 				i(260416),	-- Gold Chainkini
 				i(260936),	-- Basic Brown Quiver
 			}),
@@ -3218,7 +3198,6 @@ root(ROOTS.Unsorted, {
 				i(158797),	-- Jar of Truffles
 				i(158858),	-- Adder's Fork
 				i(163847),	-- Silver Monkey Torso
-				i(163849),	-- Bad Troll Love Poem
 				i(163850),	-- Bloody Gamekeeper's Arm
 				i(163854),	-- Weighty Bag of Sand
 				i(163896),	-- Salty Pocket Lint

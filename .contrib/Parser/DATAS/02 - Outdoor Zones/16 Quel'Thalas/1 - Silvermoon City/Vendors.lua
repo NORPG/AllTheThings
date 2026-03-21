@@ -379,19 +379,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Season 1
 					i(246752, {	-- Celebratory Pack of Hero Dawncrests
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 2 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					}),
 					i(263897, {	-- Radiant Jewelbinder
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 6 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					}),
 					i(232875, {	-- Spark of Radiance
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 6 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					}),
 					i(246751, {	-- Triumphant Satchel of Champion Dawncrests
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 1 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					}),
 					-- Season 2
 					-- Season 3

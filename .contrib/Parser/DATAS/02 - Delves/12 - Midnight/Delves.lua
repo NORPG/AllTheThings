@@ -104,6 +104,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(262396),	-- Lost Star (PET!)
 			i(262392),	-- Nibblesworth (PET!)
 			i(262343),	-- Treja'saka (PET!)
+			i(262390),	-- Sporbie (PET!)
 			i(262342),	-- Spormilian (PET!)
 			i(262394),	-- Ziorg'pharon (PET!)
 		}),
@@ -112,6 +113,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		filter(MISC, {
 			i(254250),	-- Bountiful Coffer
 			i(257387),	-- Bountiful Heavy Trunk
+			i(262965),	-- Delver's Delight (TODO: should be questID)
 			i(257386),	-- Heavy Trunk (Delve reward UI)
 			i(232371),	-- Companion Experience (Delver's Call reward)
 			i(263488),	-- Companion Experience (Delver's Call reward)
@@ -220,8 +222,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(264847),	-- Dozing Vinepouch (COSMETIC!)
 			i(262992),	-- Myth Maker's Brush (COSMETIC!)
 			i(262970),	-- Ominous Tome (COSMETIC!)
+			i(263286),	-- Repurposed Fungarian Gong (COSMETIC!)
 			i(264848),	-- Sunlit Vinepouch (COSMETIC!)
 			i(264857),	-- Twilight Fanatic's Cowl (COSMETIC!)
+			i(264859),	-- Twilight Follower's Cowl (COSMETIC!)
+			i(262991),	-- Two Thousand and Two Nights (COSMETIC!)
 			i(264855),	-- Vilebranch Deathseer (COSMETIC!)
 			i(264854),	-- Vilebranch Soulseer (COSMETIC!)
 			i(263442),	-- Voidridden Domaneye (COSMETIC!)
@@ -311,21 +316,21 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		hqt(92791),	-- Level 43
 		hqt(92792),	-- Level 44
 		hqt(92793),	-- Level 45
-		hqt(92794, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 46
-		hqt(92795, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 47
-		hqt(92796, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 48
-		hqt(92797, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 49
-		--hqt(92798, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 50 (automated?)
-		hqt(92799, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 51
-		hqt(92800, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 52
-		hqt(92801, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 53
-		hqt(92803, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 54
-		hqt(92804, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 55
-		hqt(92805, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 56
-		hqt(92806, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 57
-		hqt(92807, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 58
-		hqt(92808, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 59
-		--hqt(92809, {["timeline"] = { ADDED_12_0_X_SEASONSTART }}),	-- Level 60 (automated?)
+		hqt(92794, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 46
+		hqt(92795, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 47
+		hqt(92796, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 48
+		hqt(92797, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 49
+		--hqt(92798, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 50 (automated?)
+		hqt(92799, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 51
+		hqt(92800, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 52
+		hqt(92801, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 53
+		hqt(92803, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 54
+		hqt(92804, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 55
+		hqt(92805, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 56
+		hqt(92806, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 57
+		hqt(92807, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 58
+		hqt(92808, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 59
+		--hqt(92809, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 60 (automated?)
 	}),
 	n(MAILBOX, {
 		i(258738, {	-- A Cordial Invitation (QS!)
@@ -485,14 +490,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["questID"] = 94038,
 				}),
 			}),
-			n(REWARDS, {
-				filter(BATTLE_PETS, {
-					i(262390),	-- Sporbie (PET!)
-				}),
-				filter(MISC, {
-					i(262965),	-- Delver's Delight (TODO: should be questID)
-				}),
-			}),
 		},
 	}),
 	m(COLLEGIATE_CALAMITY, {
@@ -514,7 +511,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["provider"] = { "o", 612038 },	-- Agitated Tome
 					["coords"] = {
 						{ 41.6, 61.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-						{ 59.5, 60.1, COLLEGIATE_CALAMITY },
+						{ 59.5, 60.1, 2577 },	-- Thalassian Library
 					},
 				}),
 			}),
@@ -530,13 +527,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				o(618286, {	-- Sturdy Chest
 					["coord"] = { 29.3, 54.7, COLLEGIATE_CALAMITY },
 					["questID"] = 94030,
-				}),
-			}),
-			n(REWARDS, {
-				filter(BATTLE_PETS, {
-					i(262390),	-- Sporbie (PET!)
-				}),
-				filter(MISC, {
 				}),
 			}),
 		},
@@ -949,7 +939,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93866),	-- Die in a delve, trigger mail with A Grave Concern
 		q(92887),	-- Invaded by Nullaeus
 
-		q(93819),	-- Bountiful #1, Tier 8
+		q(93819),	-- Bountiful #1, Tier 8+
 		q(93822),	-- Bountiful #2, Tier 9
 
 		-- Weekly summon boss questID
@@ -959,7 +949,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--		{"i",253342},	-- Beacon of Hope
 		--		{"i",252415},	-- Trovehunter's Bounty
 		--	},
-		--	["timeline"]={ADDED_12_0_X_SEASONSTART},
+		--	["timeline"]={ADDED_12_0_1_SEASONSTART},
 		--	["isWeekly"] = true,
 		--}),
 

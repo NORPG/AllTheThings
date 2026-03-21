@@ -462,6 +462,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			i(268545, {	-- Aspiring Preyseeker's Chest
 				["sym"] = PREYSEEKER_BOX_SYM,
 			}),
+			i(269006),	-- Preyseeker's Gleaming Coin Pouch
+			i(269007),	-- Preyseeker's Glittering Coin Pouch
 		}),
 		n(VENDORS, {
 			n(258181, {	-- Construct Ali'a <Decor Specialist>
@@ -620,7 +622,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(93857),	-- Veteran chest lockout (Hard), 2nd (after it - Veteran Sack as reward)
 			--- Nightmare
 			q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
-			q(93861),	-- Chapmpion chest lockout (Nightmare), 2nd (after it - Chapmpion Sack as reward)
+			q(93861),	-- Chapmpion chest lockout (Nightmare), 2nd
+			--q(93863),	-- Chapmpion chest lockout (Nightmare), 3rd??
+			--q(93864),	-- Chapmpion chest lockout (Nightmare), 4th??
 		}),
 	}),
 }));

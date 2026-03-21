@@ -3,9 +3,17 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
+	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+		i(258839, {	-- Concealed Catalogue
+			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+			--["sym"] = {{"select","itemID",
+
+			--}},
+		}),
+	})),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_UMBRAL, bubbleDownSelf({
-			["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }
 		},{
 			ach(61254),	-- Midnight Keystone Explorer: Season One
 			ach(61255, {	-- Midnight Keystone Conqueror: Season One

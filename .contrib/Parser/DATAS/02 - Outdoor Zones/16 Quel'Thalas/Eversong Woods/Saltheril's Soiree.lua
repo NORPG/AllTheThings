@@ -192,6 +192,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(249528),	-- Twilight Weaponry (QI!)
 				}),
 				q(90576),	-- Fortify the Runestone: Shades of the Row
+				q(92001, {	-- One Smuggler to Another
+					o(568506, {	-- Smuggled Goods
+						["coords"] = {
+							{ 36.8, 43.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.9, 44.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.9, 44.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 38.1, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 39.2, 44.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 40.6, 43.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 40.7, 44.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+						},
+						["groups"] = { i(249517) },	-- Smuggled Goods (QI!)
+					}),
+				}),
 				q(92004, {	-- Shady Dealings
 					i(249687),	-- Poisonous Frog Secretions (QI!)
 				}),
@@ -229,7 +243,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				i(268489, {	-- Surplus Bag of Party Favors (Pre-Season)
-					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_X_SEASONSTART },
+					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
 					["sym"] = { -- [Quel'Thalas Zone Rewards content]
 						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 						{"where","headerID",ZONE_REWARDS},{"pop"},
@@ -241,7 +255,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				i(263465, {	-- Surplus Bag of Party Favors (Season 1)
-					["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					["sym"] = { -- [Quel'Thalas Zone Rewards content]
 						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 						{"where","headerID",ZONE_REWARDS},{"pop"},
