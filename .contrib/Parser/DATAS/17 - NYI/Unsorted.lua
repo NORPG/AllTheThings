@@ -905,9 +905,6 @@ root(ROOTS.Unsorted, {
 				i(268551),	-- Scroll of Reflection
 				i(248723),	-- Stolen Documents
 			}),
-			n(SPECIAL, {
-				i(268274),	-- Blinky's Collar
-			}),
 			n(WEAPONS, {
 				i(269972),	-- Arathi Miner's Pickaxe
 				i(269973),	-- Warglaive of Unyielding Will

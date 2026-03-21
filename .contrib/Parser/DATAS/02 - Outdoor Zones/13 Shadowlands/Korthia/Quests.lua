@@ -1612,7 +1612,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["coord"] = { 64.6, 25.4, KORTHIA },
 				["groups"] = {
-					i(186170),	-- Observational Record (QI!)
+					o(368626, {	-- Observation Device
+						i(186170),	-- Observational Record (QI!)
+					}),
 				},
 			}),
 			q(63962, {	-- Observational Records

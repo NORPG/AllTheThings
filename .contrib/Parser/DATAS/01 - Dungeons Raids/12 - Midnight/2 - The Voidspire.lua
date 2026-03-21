@@ -316,6 +316,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(258522),	-- Plans: Bloomforged Greataxe (RECIPE!)
 					i(264498),	-- Voltaic Trigore Egg (DECOR!)
 				}),
+				n(240864, {	-- Blinky
+					i(268274),	-- Blinky's Collar
+				}),
 				BossOnly(SALHADAAR, {
 					i(264672),	-- Cosmic Ritual Stone (TOY!)
 					i(258123),	-- Pattern: Sunfire Silk Spellthread (RECIPE!)

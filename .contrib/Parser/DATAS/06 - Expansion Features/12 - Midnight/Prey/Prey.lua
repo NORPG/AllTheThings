@@ -623,8 +623,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--- Nightmare
 			q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
 			q(93861),	-- Chapmpion chest lockout (Nightmare), 2nd
-			--q(93863),	-- Chapmpion chest lockout (Nightmare), 3rd??
-			--q(93864),	-- Chapmpion chest lockout (Nightmare), 4th??
+			q(93863),	-- Chapmpion chest lockout (Nightmare), 3rd
+			q(93864),	-- Chapmpion chest lockout (Nightmare), 4th
 		}),
 	}),
 }));
