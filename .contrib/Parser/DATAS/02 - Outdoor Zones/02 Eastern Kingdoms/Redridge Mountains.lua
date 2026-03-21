@@ -1962,6 +1962,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 73.2, 71.2, REDRIDGE_MOUNTAINS },
 						-- #endif
 					},
+					-- #if BEFORE 4.0.3
+					["groups"] = {
+						i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
+					},
+					-- #endif
 				}),
 				n(14272, {	-- Snarlflare
 					["coords"] = {
