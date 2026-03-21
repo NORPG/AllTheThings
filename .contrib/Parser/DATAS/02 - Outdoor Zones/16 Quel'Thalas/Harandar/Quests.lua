@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					q(95324, {	-- The War Beyond the Roots
 						["sourceQuests"] = { 86898 },	-- Rise of the Haranir
-						["provider"] = { "n", 255819 }, -- Elder Hagar
+						["provider"] = { "n", 255819 },	-- Elder Hagar
 						["coord"] = { 36.5, 68.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 						["groups"] = {
 							ach(61506, {	-- Allied Race: Haranir

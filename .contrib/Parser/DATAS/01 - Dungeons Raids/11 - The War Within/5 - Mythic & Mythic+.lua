@@ -252,7 +252,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 			}),
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
-			-- Have to see what Blizzard does with those kind of achievements -- Goldenshacal 20th August 2025
+			-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal 20th August 2025
 			ach(42149, {	-- The War Within Season 3: Resilient Keystone 12
 				["_noautomation"] = true,
 			}),

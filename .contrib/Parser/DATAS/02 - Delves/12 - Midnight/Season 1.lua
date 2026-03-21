@@ -97,7 +97,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(262389),	-- Veiled Blessing // alpha
 		}))),
 		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
-			q(93519, {	-- Midnight Delves! (it pop on login but after cancel it -- didn't re-pop)
+			q(93519, {	-- Midnight Delves! (it pop on login but after cancel it	-- didn't re-pop)
 				["description"] = "Pops on login",
 			}),
 			q(93501, {	-- The Season Starts: Midnight

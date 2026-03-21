@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}},
 				}),
 				i(269704, {	-- Victorious Stormarion Cache (Leveling)
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
+					["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 						{"where","headerID",ZONE_REWARDS},{"pop"},
 						{"where","headerID",ARMOR},{"finalize"},
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(264483),	-- Cosmic Void Campfire (DECOR!)
 						i(262608),	-- Void Elf Stool (DECOR!)
 					},
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
+					["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 						{"where","headerID",ZONE_REWARDS},{"pop"},
 						{"where","headerID",ARMOR},{"finalize"},
@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(264483),	-- Cosmic Void Campfire (DECOR!)
 						i(262608),	-- Void Elf Stool (DECOR!)
 					},
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
+					["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 						{"where","headerID",ZONE_REWARDS},{"pop"},
 						{"where","headerID",ARMOR},{"finalize"},

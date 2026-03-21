@@ -919,7 +919,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 		["isWeekly"] = true,
 	},{
 		-- All
-		q(91046, name(HEADERS.Item, 245510)),	-- Loombeast Silk chance per week (assumed -- also triggered on alt with no loot)
+		q(91046, name(HEADERS.Item, 245510)),	-- Loombeast Silk chance per week (assumed	-- also triggered on alt with no loot)
 		q(91010, name(HEADERS.Encounter, PLEXUS)),	-- Sentinel Plexus
 		q(91012, name(HEADERS.Encounter, LOOMITHAR)),	-- Loomithar
 		q(91011, name(HEADERS.Encounter, NAAZINDHRI)),	-- Soulbinder Naazindhr

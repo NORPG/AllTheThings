@@ -91,7 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						242704,	-- Dundun <Loa of Abundance>
 						251601,	-- Dundun <Loa of Abundance>
 					},
-					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN }, -- maybe any zone??
+					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN },	-- maybe any zone??
 				}),
 				q(89507, {	-- Abundant Offerings
 					--["sourceQuest"] = 91933,	-- The Abundant Honor
@@ -110,7 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					["isWeekly"] = true,
 					["groups"] = {
 						i(269702, {	-- Overflowing Abundant Satchel
-							["sym"] = { -- [Quel'Thalas Zone Rewards content]
+							["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 								{"where","headerID",ZONE_REWARDS},{"pop"},
 								{"where","headerID",ARMOR},{"finalize"},
@@ -122,7 +122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						}),
 						i(268488, {	-- Overflowing Abundant Satchel (Pre-Season)
 							["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
-							["sym"] = { -- [Quel'Thalas Zone Rewards content]
+							["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 								{"where","headerID",ZONE_REWARDS},{"pop"},
 								{"where","headerID",ARMOR},{"finalize"},
@@ -134,7 +134,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						}),
 						i(263466, {	-- Overflowing Abundant Satchel (Season 1)
 							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-							["sym"] = { -- [Quel'Thalas Zone Rewards content]
+							["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 								{"where","headerID",ZONE_REWARDS},{"pop"},
 								{"where","headerID",ARMOR},{"finalize"},

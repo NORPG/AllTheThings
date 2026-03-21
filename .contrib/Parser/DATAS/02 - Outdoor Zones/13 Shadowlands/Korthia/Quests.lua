@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					n(NIGHT_FAE, {
 						["customCollect"] = "SL_COV_NFA",	-- Night Fae
 						["groups"] = {
-							-- Night Fae -- of the Twilight Grove -- Korthia Dailies
+							-- Night Fae	-- of the Twilight Grove	-- Korthia Dailies
 							i(184956),	-- Drape of the Twilight Grove
 							i(184950),	-- Handwraps of the Twilight Grove
 							i(184951),	-- Hood of the Twilight Grove
@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					n(KYRIAN, {
 						["customCollect"] = "SL_COV_KYR",	-- Kyrian
 						["groups"] = {
-							-- Kyrian -- Forsworn Aspirant's -- Korthia Dailies
+							-- Kyrian	-- Forsworn Aspirant's	-- Korthia Dailies
 							i(184990),	-- Forsworn Aspirant's Drape
 							i(184985),	-- Forsworn Aspirant's Handwraps
 							i(184986),	-- Forsworn Aspirant's Hood
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					n(NECROLORD, {
 						["customCollect"] = "SL_COV_NEC",	-- Necrolord
 						["groups"] = {
-							-- Necrolord -- Rogue Necromancer's -- Korthia Dailies
+							-- Necrolord	-- Rogue Necromancer's	-- Korthia Dailies
 							i(185019),	-- Rogue Necromancer's Drape
 							i(185013),	-- Rogue Necromancer's Handwraps
 							i(185014),	-- Rogue Necromancer's Hood
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					n(VENTHYR, {
 						["customCollect"] = "SL_COV_VEN",	-- Venthyr
 						["groups"] = {
-							-- Venthyr -- Radiant Court -- Korthia Dailies?
+							-- Venthyr	-- Radiant Court	-- Korthia Dailies?
 							i(185073),	-- Radiant Court Cape
 							i(185076),	-- Radiant Court Leggings
 							i(185078),	-- Radiant Court Handwraps
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							i(185079),	-- Radiant Court Slippers
 							i(185080),	-- Radiant Court Vestments
 							i(185074),	-- Radiant Court Wraps
-							-- Venthyr -- Redeemed Inquisitor's  -- Korthia Dailies?
+							-- Venthyr	-- Redeemed Inquisitor's 	-- Korthia Dailies?
 							i(185115),	-- Redeemed Inquisitor's Drape
 							i(185109),	-- Redeemed Inquisitor's Handwraps
 							i(185110),	-- Redeemed Inquisitor's Hood

@@ -619,8 +619,8 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 
 		------ Lavaborn Emerald Attire Set ------
-		iensemble(238428, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Ensemble: Lavaborn Emerald Attire -- Removed July 14, 2025
-		i(238948, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Fel Inferno Helm -- Removed July 14, 2025
+		iensemble(238428, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Ensemble: Lavaborn Emerald Attire	-- Removed July 14, 2025
+		i(238948, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Fel Inferno Helm	-- Removed July 14, 2025
 
 		iensemble(212221, {	-- Ensemble: Sky Witch's Attire
 			["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025

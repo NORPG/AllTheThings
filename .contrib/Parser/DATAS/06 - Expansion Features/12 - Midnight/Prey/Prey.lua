@@ -605,7 +605,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95536),	-- unflagged after looting Minor Coalesced Anguish
 			--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
 			--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
-			--q(95539), -- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
+			--q(95539),	-- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 
 			-- 1k seasonal journey lockout, weekly
 			q(95000),	-- 1st per week

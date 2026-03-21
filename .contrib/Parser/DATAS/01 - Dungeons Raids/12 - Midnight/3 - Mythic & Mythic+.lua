@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(61594),	-- Keystone Victor: Skyreach
 			ach(61590),	-- Keystone Victor: Windrunner Spire
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
-			-- Have to see what Blizzard does with those kind of achievements -- Goldenshacal October 2025
+			-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal October 2025
 			ach(61233, {	-- Midnight Season 1: Resilient Keystone 12
 				["_noautomation"] = true,
 			}),

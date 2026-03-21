@@ -50,13 +50,13 @@ local EncounterToLoot = {
 
 ------ EncounterCoords ------
 local EncounterCoords = {
-	[CRAGSPINE] = { -- Add coordinates and map here
+	[CRAGSPINE] = {	-- Add coordinates and map here
 	},
-	[LUASHAL] = { -- Add coordinates and map here
+	[LUASHAL] = {	-- Add coordinates and map here
 	},
-	[PREDAXUS] = { -- Add coordinates and map here
+	[PREDAXUS] = {	-- Add coordinates and map here
 	},
-	[THORMBELAN] = { -- Add coordinates and map here
+	[THORMBELAN] = {	-- Add coordinates and map here
 	},
 }
 
@@ -89,22 +89,22 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(250462),	-- Forgotten Farstrider's Insignia
 				},
 			}),
-			Boss(CRAGSPINE, { -- Cragspine
+			Boss(CRAGSPINE, {	-- Cragspine
 				-- ["questID"] = xx,
 			}),
-			-- BossWorldQuest(CRAGSPINE, 0), -- Cragspine WQ
-			Boss(LUASHAL, { -- Lu'ashal
+			-- BossWorldQuest(CRAGSPINE, 0),	-- Cragspine WQ
+			Boss(LUASHAL, {	-- Lu'ashal
 				["questID"] = 92127,	-- maybe this is something else since it's account-wide...
 			}),
-			BossWorldQuest(LUASHAL, 92560), -- Lu'ashal WQ
-			Boss(PREDAXUS, { -- Predaxus
+			BossWorldQuest(LUASHAL, 92560),	-- Lu'ashal WQ
+			Boss(PREDAXUS, {	-- Predaxus
 				-- ["questID"] = xx,
 			}),
-			-- BossWorldQuest(PREDAXUS, 0), -- Predaxus WQ
-			Boss(THORMBELAN, { -- Thormbelan
+			-- BossWorldQuest(PREDAXUS, 0),	-- Predaxus WQ
+			Boss(THORMBELAN, {	-- Thormbelan
 				-- ["questID"] = xx,
 			}),
-			-- BossWorldQuest(THORMBELAN, 0), -- Thormbelan WQ
+			-- BossWorldQuest(THORMBELAN, 0),	-- Thormbelan WQ
 		}),
 	}),
 }))

@@ -637,7 +637,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				}),
 				q(90724, {	-- The Broken Sky
 					["sourceQuests"] = { 88709 },	-- The Voidspire
-					["qg"] = 244297, -- Arator
+					["qg"] = 244297,	-- Arator
 					["maps"] = {
 						2529,	-- Voidspire
 						2530,	-- Crown of the Cosmos
@@ -666,7 +666,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(89247),	-- [DNT] (spellID 1227720), after accepting questID 86837 (Meet at the Sunwell)
 			--q(89196),	-- unflagged (???), after turn in questID 86839 (To Light's Hope)
 			--q(89247),	-- unflagged (???), after turn in questID 86903 (The Arcantina)
-			--q(94623),	-- Building the Voidforge -- completed with q:92630
+			--q(94623),	-- Building the Voidforge	-- completed with q:92630
 			q(95247, {["timeline"] = {ADDED_12_0_0}}),	-- when picking up q:92630 in Dornogal
 		}),
 	}),

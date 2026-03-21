@@ -96,7 +96,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			},{
 				q(92429, {	-- Alternative Skinning
 					["qgs"] = {
-						251056, -- Gerath
+						251056,	-- Gerath
 						254255,	-- Hera Fer
 					},
 					["coords"] = {
@@ -106,7 +106,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["groups"] = { i(251632) },	-- Biological Vacuum (QI!)
 				}),
 				q(92417, {	-- Farm to Table
-					["qg"] = 250970, -- Yolan Hidor
+					["qg"] = 250970,	-- Yolan Hidor
 					["coords"] = {
 						{ 53.2, 38.0, FOUNDERS_POINT },
 						{ 54.9, 57.3, RAZORWIND_SHORES },
@@ -123,7 +123,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				q(92402, {	-- Magical Touch
-					["qg"] = 254536, -- Gelen Jord
+					["qg"] = 254536,	-- Gelen Jord
 					["coords"] = {
 						{ 52.1, 38.1, FOUNDERS_POINT },
 						-- { X, Y, RAZORWIND_SHORES },
@@ -288,7 +288,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(253526, 15),	-- Sin'dorei Wine Display (DECOR!)
 					i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
 					-- Reach the fourth milestone of the endeavor
-					i(253802, { -- Deed of Patronage
+					i(253802, {	-- Deed of Patronage
 						["description"] = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item.",
 						["cost"] = { { "c", COMMUNITY_COUPONS, 30 } },
 					}),
@@ -299,7 +299,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				["isWeekly"] = true,
 			},{
 				q(92608, {	-- Landscape Photography
-					["qg"] = 252717, -- Corlen Hordralin
+					["qg"] = 252717,	-- Corlen Hordralin
 					["coords"] = {
 						{ 53.0, 37.2, FOUNDERS_POINT },	-- Founder's Point
 						{ 53.8, 55.6, RAZORWIND_SHORES },	-- Razorwind Shores

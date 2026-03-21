@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		--
 		i(264274, {	-- Fabled Adventurer's Cache (Pre-Season)
 			["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
-			["sym"] = { -- [Quel'Thalas Zone Rewards content]
+			["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 				{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",ARMOR},{"finalize"},
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 		i(260193, {	-- Fabled Veteran's Cache (Season 1)
 			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-			["sym"] = { -- [Quel'Thalas Zone Rewards content]
+			["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 				{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",ARMOR},{"finalize"},

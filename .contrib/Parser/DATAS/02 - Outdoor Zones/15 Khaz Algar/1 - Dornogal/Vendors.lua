@@ -780,99 +780,99 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					-- Season 1
 					-- Trade DOWN
 					i(221268, {	-- Pouch of Weathered Harbinger Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
 						["cost"] = { { "c", CARVED_HARBINGER_CREST, 15 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(221373, {	-- Satchel of Carved Harbinger Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
 						["cost"] = { { "c", RUNED_HARBINGER_CREST, 15 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(221375, {	-- Pack of Runed Harbinger Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
 						["cost"] = { { "c", GILDED_HARBINGER_CREST, 15 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					-- Trade UP
 					i(220767, {	-- Triumphant Satchel of Carved Harbinger Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
 						["cost"] = { { "c", WEATHERED_HARBINGER_CREST, 90 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(220773, {	-- Celebratory Pack of Runed Harbinger Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
 						["cost"] = { { "c", CARVED_HARBINGER_CREST, 90 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(220776, {	-- Glorious Cluster of Gilded Harbinger Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
 						["cost"] = { { "c", RUNED_HARBINGER_CREST, 90 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					-- Season 2
 					-- Trade DOWN
 					i(231267, {	-- Pouch of Weathered Undermine Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
 						["cost"] = { { "c", CARVED_UNDERMINE_CREST, 15 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231269, {	-- Satchel of Carved Undermine Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
 						["cost"] = { { "c", RUNED_UNDERMINE_CREST, 15 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231270, {	-- Pack of Runed Undermine Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
 						["cost"] = { { "c", GILDED_UNDERMINE_CREST, 15 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Trade UP
 					i(231153, {	-- Triumphant Satchel of Carved Undermine Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
 						["cost"] = { { "c", WEATHERED_UNDERMINE_CREST, 45 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231154, {	-- Celebratory Pack of Runed Undermine Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
 						["cost"] = { { "c", CARVED_UNDERMINE_CREST, 45 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231264, {	-- Glorious Cluster of Gilded Undermine Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
 						["cost"] = { { "c", RUNED_UNDERMINE_CREST, 45 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Season 3
 					-- Trade DOWN
 					i(240928, {	-- Pouch of Weathered Ethereal Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
 						["cost"] = { { "c", CARVED_ETHEREAL_CREST, 15 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240927, {	-- Satchel of Carved Ethereal Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
 						["cost"] = { { "c", WEATHERED_ETHEREAL_CREST, 15 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240926, {	-- Pack of Runed Ethereal Crests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
 						["cost"] = { { "c", GILDED_ETHEREAL_CREST, 15 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					-- Trade UP
 					i(240931, {	-- Triumphant Satchel of Carved Ethereal Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
 						["cost"] = { { "c", WEATHERED_ETHEREAL_CREST, 45 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240930, {	-- Celebratory Pack of Runed Ethereal Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
 						["cost"] = { { "c", CARVED_ETHEREAL_CREST, 45 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240929, {	-- Glorious Cluster of Gilded Ethereal Crests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
+						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
 						["cost"] = { { "c", RUNED_ETHEREAL_CREST, 45 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),

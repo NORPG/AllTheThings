@@ -90,7 +90,7 @@ root(ROOTS.Craftables, {
 								136632,	-- Chaos Blaster
 						}},
 						["groups"] = {
-							i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
+							i(136911),	-- Knockoff Blingtron	-- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
 						},
 					}),
 				},

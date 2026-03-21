@@ -2234,7 +2234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(63765),	-- Cloak of Valorous Direction
 					},
 				}),
-				q(28147, {	-- Purple is Your Color -- aa
+				q(28147, {	-- Purple is Your Color	-- aa
 					["qg"] = 47723,	-- Rotgrum
 					["coord"] = { 36.7, 37.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,

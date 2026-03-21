@@ -3099,7 +3099,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(246053),	-- Waygate Piece
 			}),
 			n(TREASURES, {
-				o(455498, { -- Sturdy Chest
+				o(455498, {	-- Sturdy Chest
 					["description"] = "Use Waygate on the 1st Level.",
 					["coords"] = {
 						{ 47.9, 24.6, 2455 },	-- Lower Chamber (Waygate)
@@ -3111,12 +3111,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 62.0, 11.1, 2455 },	-- Lower Chamber
 					["questID"] = 83673,
 				}),
-				o(455535, { -- Sturdy Chest
+				o(455535, {	-- Sturdy Chest
 					["description"] = "Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",
 					["coord"] = { 49.7, 92.6, 2455 },	-- Lower Chamber
 					["questID"] = 92573,
 				}),
-				o(539785, { -- Sturdy Chest
+				o(539785, {	-- Sturdy Chest
 					["coords"] = {
 						{ 43.9, 64.7, 2455 },	-- Lower Chamber
 						{ 43.3, 65.7, 2476 },	-- Archival Assault
@@ -3136,10 +3136,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					crit(68758),	-- Kidnapped Earthen
 					crit(68759),	-- Precious Ores
 					crit(68760),	-- Fiery Grounds
-					crit(102963, { -- Looking for Treasure
+					crit(102963, {	-- Looking for Treasure
 						["timeline"] = { ADDED_11_1_0 },
 					}),
-					crit(102964, { -- Bugs and Grubs
+					crit(102964, {	-- Bugs and Grubs
 						["timeline"] = { ADDED_11_1_0 },
 					}),
 				}),
@@ -3342,7 +3342,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 49.6, 35.7, FUNGAL_FOLLY },
 					["questID"] = 83452,
 					["groups"] = {
-						i(225556),	-- Ancient Construct (TOY!) -- confirmed 2/2
+						i(225556),	-- Ancient Construct (TOY!)	-- confirmed 2/2
 					},
 				}),
 				o(455496, {	-- Sturdy Chest

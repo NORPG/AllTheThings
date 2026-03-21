@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,	-- Presumed
 				["groups"] = {
 					i(265995, {	-- Quel'Thalas Adventurer's Cache
-						["sym"] = { -- [Quel'Thalas Zone Rewards content]
+						["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 							{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 							{"where","headerID",ZONE_REWARDS},{"pop"},
 							{"where","headerID",ARMOR},{"finalize"},
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["groups"] = {
 				i(268490, {	-- Apex Cache (Pre-Season)
 					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
+					["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 						{"where","headerID",ZONE_REWARDS},{"pop"},
 						{"where","headerID",ARMOR},{"finalize"},
@@ -168,7 +168,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				i(254677, {	-- Apex Cache (Season 1)
 					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
+					["sym"] = {	-- [Quel'Thalas Zone Rewards content]
 						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
 						{"where","headerID",ZONE_REWARDS},{"pop"},
 						{"where","headerID",ARMOR},{"finalize"},

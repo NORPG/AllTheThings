@@ -617,7 +617,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 89503 },	-- Somber Siblings
 						["qgs"] = {
 							247425,	-- Chana (mobileNPC)
-							256867, -- Grieving Amani (mobileNPC)
+							256867,	-- Grieving Amani (mobileNPC)
 						},
 						["coord"] = { 46.2, 74.8, MAP.MIDNIGHT.ZULAMAN },	-- General area where previous quest takes place
 						["groups"] = { i(239480) },	-- Resilient Sinew (QI!)
@@ -626,7 +626,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 89506 },	-- Strong Ties
 						["qgs"] = {
 							247425,	-- Chana (mobileNPC)
-							256867, -- Grieving Amani (mobileNPC)
+							256867,	-- Grieving Amani (mobileNPC)
 						},
 						["coord"] = { 46.7, 78.0, MAP.MIDNIGHT.ZULAMAN },	-- General area where previous quest takes place
 						["groups"] = {
@@ -643,7 +643,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 89513 },	-- Kindling Aplenty
 						["qgs"] = {
 							247425,	-- Chana (mobileNPC)
-							256867, -- Grieving Amani (mobileNPC)
+							256867,	-- Grieving Amani (mobileNPC)
 						},
 						["coord"] = { 48.5, 85.1, MAP.MIDNIGHT.ZULAMAN },	-- General area where previous quest takes place
 						["groups"] = {
@@ -660,7 +660,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["qgs"] = {
 							247425,	-- Chana (mobileNPC)
-							256867, -- Grieving Amani (mobileNPC)
+							256867,	-- Grieving Amani (mobileNPC)
 						},
 						["coord"] = { 47.3, 87.6, MAP.MIDNIGHT.ZULAMAN },	-- General area where previous quest takes place
 						["groups"] = { i(264654) },	-- Emberwing Hatchling (PET!)
@@ -1299,7 +1299,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					q(91840, {	-- One Will Not Rise
 						["sourceQuests"] = { 91838 },	-- De Vile Diminished
-						["qg"] = 249106, -- Witherbark Scout (Dak'zor) (mobileNPC)
+						["qg"] = 249106,	-- Witherbark Scout (Dak'zor) (mobileNPC)
 						["coord"] = { 47.1, 41.2, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
 							i(254778),	-- Altered Totem (QI!)
