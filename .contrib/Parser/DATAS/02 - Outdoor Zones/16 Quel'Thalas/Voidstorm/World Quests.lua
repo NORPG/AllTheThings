@@ -105,9 +105,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					},
 				}),
-				q(94581, {	-- Stand Your Ground
-					["coord"] = { 26.7, 68.3, MAP.MIDNIGHT.VOIDSTORM },
-				}),
 				q(92746, {	-- The Twist of the Stormfields
 					["coord"] = { 40.3, 59.4, MAP.MIDNIGHT.VOIDSTORM },
 				}),
