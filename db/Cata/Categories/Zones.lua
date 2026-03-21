@@ -717,6 +717,8 @@ i(67414,{b=1,q=1,u=40}),
 crit(17756,{achID=5848,awp=40200,id=1,r=2,u=40})}}),
 q(2519,{coords={
 [1457]={{29,45.4}}},isBreadcrumb=1,lvl=5,qgs={7316},r=2,rwp=40003,u=2}),
+q(9432,{awp=20001,coords={
+[1457]={{38.6,81}}},lvl=18,qgs={17105},races={11},rwp=40003,u=2}),
 q(730,{coords={
 [1457]={{31.2,84.2}}},isBreadcrumb=1,lvl=14,nextQuests={729},qgs={2912},r=2,rwp=40003,u=2}),
 q(3764,{coords={

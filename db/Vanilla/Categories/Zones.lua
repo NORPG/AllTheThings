@@ -1320,7 +1320,7 @@ r(264,{c={1,3,4}}),
 r(196,{c={1,2,3,7}}),
 r(227,{c={1,3,5,7,8,9,11}}),
 r(2567,{c={1,3,4}}),
-r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnown(16269)then	rawset(t,'collectible',false);end	end	end})}}),
+r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end})}}),
 n(11868,{coords={
 [1454]={{81.6,19.4}}},r=1,g={
 r(264,{c={1,3,4}}),
@@ -1328,7 +1328,7 @@ r(1180,{c={1,3,4,5,7,8,9,11}}),
 r(15590,{c={1,3,4,7,11}}),
 r(196,{c={1,2,3,7}}),
 r(2567,{c={1,3,4}}),
-r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnown(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
+r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
 m(1456,{icon=255144,isRaid=1,lore="Thunder Bluff is the Tauren capital city located in the northern part of the region of Mulgore. The whole of the city is built on bluffs several hundred feet above the surrounding landscape, and is accessible by elevators on the southwestern and northeastern sides.",g={
 h(-31,{
 faction(81,{icon=236454,OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=1})}),
@@ -1533,7 +1533,7 @@ n(11869,{coords={
 r(266,{c={1,3,4}}),
 r(198,{c={1,2,4,5,7,11}}),
 r(227,{c={1,3,5,7,8,9,11}}),
-r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnown(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
+r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
 m(1440,{icon=236713,lore="Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",g={
 h(-12,{
 ach(845,{
@@ -4384,14 +4384,14 @@ q(6001,{c={11},coords={
 [1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},r=2,rwp=40003,sourceQuests={5931},g={
 qo(1,{coords={
 [1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnown(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(6002,{c={11},coords={
 [1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},r=1,rwp=40003,sourceQuests={5932},g={
 qo(1,{coords={
 [1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnown(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(5929,{c={11},coords={
@@ -8707,8 +8707,8 @@ r(15590,{c={1,3,4,7,11}}),
 r(266,{c={1,3,4}}),
 r(196,{c={1,2,3,7}}),
 r(198,{c={1,2,4,5,7,11}}),
-r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnown(16269)then	rawset(t,'collectible',false);end	end	end}),
-r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnown(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
+r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end}),
+r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
 m(1453,{icon=255130,isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",g={
 h(-30,{
 exp(5150,{collectible=false}),

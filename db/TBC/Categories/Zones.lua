@@ -113,6 +113,8 @@ qo(2,{coords={
 [1439]={{31.6,44.8}}},crs={6133},providers={{"i",6809}}})}}),
 q(2519,{coords={
 [1457]={{29,45.4}}},isBreadcrumb=1,lvl=5,nextQuests={2518},qgs={7316},r=2,rwp=40003}),
+q(9432,{awp=20001,coords={
+[1457]={{38.6,81}}},lvl=18,qgs={17105},races={11},rwp=40003}),
 q(730,{coords={
 [1457]={{31.2,84.2}}},isBreadcrumb=1,lvl=14,nextQuests={729},qgs={2912},r=2,rwp=40003}),
 q(3764,{coords={
@@ -5916,14 +5918,14 @@ q(6001,{c={11},coords={
 [1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},r=2,rwp=40003,sourceQuests={5931},g={
 qo(1,{coords={
 [1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnown(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(6002,{c={11},coords={
 [1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},r=1,rwp=40003,sourceQuests={5932},g={
 qo(1,{coords={
 [1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnown(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(5929,{c={11},coords={
@@ -23562,10 +23564,10 @@ r(44770,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
 r(351766,{awp=20001,learnedAt=340,requireSkill=165,rwp=30002,u=20}),
 r(44970,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
 r(32455,{learnedAt=325,requireSkill=165,u=17}),
-r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=17}),
+r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=20}),
 r(32456,{learnedAt=300,requireSkill=165,u=17}),
 r(32454,{learnedAt=300,requireSkill=165,u=17}),
-r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=17}),
+r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=20}),
 r(45100,{awp=20300,learnedAt=300,requireSkill=165,u=17})}})}}),
 n(18754,{coords={
 [1944]={{56.2,38.6}}},r=1,u=17,g={
@@ -23593,10 +23595,10 @@ r(44770,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
 r(351766,{awp=20001,learnedAt=340,requireSkill=165,rwp=30002,u=20}),
 r(44970,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
 r(32455,{learnedAt=325,requireSkill=165,u=17}),
-r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=17}),
+r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=20}),
 r(32456,{learnedAt=300,requireSkill=165,u=17}),
 r(32454,{learnedAt=300,requireSkill=165,u=17}),
-r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=17}),
+r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=20}),
 r(45100,{awp=20300,learnedAt=300,requireSkill=165,u=17})}})}})}}),
 prof(186,{u=17,g={
 n(18779,{coords={

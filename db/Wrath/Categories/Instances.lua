@@ -7797,7 +7797,7 @@ i(27413,{b=1,f=52,lvl=65,q=3,u=17}),
 i(27416,{b=1,f=53,lvl=65,q=3,u=17})}})}}),
 d(2,{cost={{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18371,18373},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30587,{b=1,q=4,u=17}),
 i(30588,{b=1,q=4,u=17}),
 i(30586,{b=1,q=4,u=17})}}),
@@ -7887,7 +7887,7 @@ i(24154,{b=1,f=52,lvl=60,q=3,u=17})}})}}),
 d(2,{cost={{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 ach(667,{u=17}),
 h(-19,{crs={17306,17307,17308},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30593,{b=1,q=4,u=17}),
 i(30594,{b=1,q=4,u=17}),
 i(30592,{b=1,q=4,u=17})}}),
@@ -8105,7 +8105,7 @@ i(28490,{q=1,u=17}),
 r(28572,{b=1,itemID=22921,learnedAt=360,q=2,requireSkill=171,u=17})}})}}),
 d(2,{cost={{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18341,18343,18344,22927},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30584,{b=1,q=4,u=17}),
 i(30585,{b=1,q=4,u=17}),
 i(30583,{b=1,q=4,u=17})}}),
@@ -8228,7 +8228,7 @@ i(27432,{b=1,f=52,lvl=66,q=3,u=17}),
 r(31078,{b=1,itemID=24173,learnedAt=370,q=4,requireSkill=755,u=17})}})}}),
 d(2,{cost={{"i",30635,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17848,17862,18096},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30589,{b=1,q=4,u=17}),
 i(30591,{b=1,q=4,u=17}),
 i(30590,{b=1,q=4,u=17})}}),
@@ -8336,7 +8336,7 @@ i(27632,{q=1,u=17}),
 i(27991,{b=1,description="You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",q=1,rwp=40003,u=17})}})}}),
 d(2,{cost={{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18472,18473,23035},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30552,{b=1,q=4,u=17}),
 i(30553,{b=1,q=4,u=17}),
 i(30554,{b=1,q=4,u=17})}}),
@@ -8456,7 +8456,7 @@ s(138249,27902,{b=1,f=4,lvl=70,q=3,u=17}),
 r(31452,{b=1,itemID=24309,learnedAt=375,q=4,requireSkill=197,u=17})}})}}),
 d(2,{cost={{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18667,18708,18731,18732},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30559,{b=1,q=4,u=17}),
 i(30560,{b=1,q=4,u=17}),
 i(30563,{b=1,q=4,u=17})}}),
@@ -8574,7 +8574,7 @@ i(28407,{b=1,f=52,lvl=70,q=3,u=17}),
 i(28418,{b=1,f=53,lvl=70,q=3,u=17})}})}}),
 d(2,{cost={{"i",30634,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={20870,20885,20886,20912},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30582,{b=1,q=4,u=17}),
 i(30581,{b=1,q=4,u=17}),
 i(30575,{b=1,q=4,u=17})}}),
@@ -8670,7 +8670,7 @@ s(138220,27873,{b=1,f=5,lvl=70,q=3,u=17}),
 i(28190,{b=1,f=53,lvl=70,q=3,u=17})}})}}),
 d(2,{cost={{"i",30635,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17879,17880,17881},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30558,{b=1,q=4,u=17}),
 i(30556,{b=1,q=4,u=17}),
 i(30555,{b=1,q=4,u=17})}}),
@@ -8760,7 +8760,7 @@ s(134773,24396,{b=1,f=5,lvl=61,q=3,u=17}),
 s(134772,24395,{b=1,f=4,lvl=61,q=3,u=17})}})}}),
 d(2,{cost={{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17377,17380,17381},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30601,{b=1,q=4,u=17}),
 i(30600,{b=1,q=4,u=17}),
 i(30602,{b=1,q=4,u=17})}}),
@@ -8853,7 +8853,7 @@ r(31454,{b=1,itemID=24311,learnedAt=375,q=4,requireSkill=197,u=17}),
 i(31085,{q=1,u=17})}})}}),
 d(2,{cost={{"i",30634,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17975,17976,17977,17978,17980},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30574,{b=1,q=4,u=17}),
 i(30572,{b=1,q=4,u=17}),
 i(30573,{b=1,q=4,u=17})}}),
@@ -8960,7 +8960,7 @@ r(26784,{b=1,itemID=21907,learnedAt=370,q=2,requireSkill=197,u=17}),
 i(31086,{q=1,u=17})}})}}),
 d(2,{cost={{"i",30634,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={19219,19220,19221},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30566,{b=1,q=4,u=17}),
 i(30565,{b=1,q=4,u=17}),
 i(30564,{b=1,q=4,u=17})}}),
@@ -9105,7 +9105,7 @@ s(137883,27536,{b=1,f=4,lvl=70,q=3,u=17}),
 s(137881,27534,{b=1,f=1,lvl=70,q=3,u=17})}})}}),
 d(2,{cost={{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={16807,16808,16809,20923},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30547,{b=1,q=4,u=17}),
 i(30548,{b=1,q=4,u=17}),
 i(30546,{b=1,q=4,u=17})}}),
@@ -9205,7 +9205,7 @@ s(134742,24365,{b=1,f=5,lvl=62,q=3,u=17}),
 s(134741,24364,{b=1,f=7,lvl=62,q=3,u=17})}})}}),
 d(2,{cost={{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17941,17942,17991},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30603,{b=1,q=4,u=17}),
 i(30604,{b=1,q=4,u=17}),
 i(30605,{b=1,q=4,u=17})}}),
@@ -9298,7 +9298,7 @@ i(27805,{b=1,f=52,lvl=70,q=3,u=17}),
 r(31456,{b=1,itemID=24313,learnedAt=375,q=4,requireSkill=197,u=17})}})}}),
 d(2,{cost={{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17796,17797,17798},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30551,{b=1,q=4,u=17}),
 i(30549,{b=1,q=4,u=17}),
 i(30550,{b=1,q=4,u=17})}}),
@@ -9386,7 +9386,7 @@ s(134840,24465,{b=1,f=6,lvl=63,q=3,u=17}),
 s(134841,24466,{b=1,f=5,lvl=63,q=3,u=17})}})}}),
 d(2,{cost={{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17770,17826,17882,18105},u=17,g={
-cu(42,{u=20}),
+cu(42,{u=17}),
 i(30606,{b=1,q=4,u=17}),
 i(30608,{b=1,q=4,u=17}),
 i(30607,{b=1,q=4,u=17})}}),
