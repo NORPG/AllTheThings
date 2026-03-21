@@ -54,6 +54,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coords"] = {
 					{ 19.8, 77.1, MAP.MIDNIGHT.ZULAMAN },
 					{ 40.3, 72.9, MAP.MIDNIGHT.ZULAMAN },
+					{ 47.4, 49.8, MAP.MIDNIGHT.ZULAMAN },
 				},
 			}),
 		}),
