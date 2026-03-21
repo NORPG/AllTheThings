@@ -378,9 +378,6 @@ local ForReputationFields = {	-- Type 46
 	["GetRelatedThings"] = function(t)
 		return GetRelatedThingsForReputation;
 	end,
-	["ShouldShowRelatedThingsInTooltip"] = function(t)
-		return true;
-	end
 }
 local ForSpellsFields = {	-- Type 34
 	["collectible"] = app.ReturnTrue,
@@ -508,22 +505,6 @@ end
 local function OnTooltipForAchievementData(t, tooltipInfo)
 	local criteriaData = t.criteriaData;
 	if #criteriaData > 0 then
-		local relatedThings = {};
-		for i,criteria in ipairs(criteriaData) do
-			if criteria.ShouldShowRelatedThingsInTooltip then
-				criteria.GetRelatedThings(criteria, relatedThings);
-			end
-		end
-		
-		if #relatedThings > 0 then
-			tinsert(tooltipInfo, { left = " " });
-			for j,thing in ipairs(relatedThings) do
-				tinsert(tooltipInfo, {
-					left = "  |T" .. thing.icon .. ":0|t " .. thing.text,
-					right = app.GetProgressTextForTooltip(thing)
-				});
-			end
-		end
 		if not t.collectible and app.GameBuildVersion < 30000 then
 			tinsert(tooltipInfo, {
 				left = "\n \nCRIEVE NOTE: This achievement cannot be collected prior to Wrath Classic as it lacks any permanent collectible criteria.",
