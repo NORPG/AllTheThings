@@ -215,14 +215,16 @@ local Run = Runner.Run
 local IsRunning = Runner.IsRunning
 -- Runner.ToggleDebugFrameTime()
 local Callback = app.CallbackHandlers.Callback
-local IgnoredDebugEvents = {
+local IgnoredDebugEvents = setmetatable({
 	RowOnEnter = true,
 	RowOnLeave = true,
 	RowOnClick = true,
-	-- OnWindowUpdated = true,
-	-- OnWindowRefreshed = true,
+	OnWindowUpdated = true,
+	OnWindowRefreshed = true,
 	-- OnSearchResultUpdate = true,
-}
+}, { __index = function()
+	return true
+end})
 local function DebugEventTriggered(eventName,...)
 	if IgnoredDebugEvents[eventName] then return end
 	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.Renown),...)
