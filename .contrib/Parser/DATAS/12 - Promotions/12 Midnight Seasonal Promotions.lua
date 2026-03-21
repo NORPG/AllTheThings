@@ -155,6 +155,19 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between March 26th, 3:00 p.m. & April 23rd, 3:00 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed April 23rd, 2026
 			}),
+			i(264283, {	-- Backboard and Hoop Playset (DECOR!)
+				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Horde Board' at craftyourworldpromo.com to receive a code to the email you provided. ",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.5.99999" },	-- Removed ??
+			}),
+			i(264282, {	-- Bluebird's Golden Cage (DECOR!)
+				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Azeroth Inspiration' at craftyourworldpromo.com to receive a code to the email you provided. ",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.5.99999" },	-- Removed ??
+			}),
+			i(264281, {	-- Preserved Gift of Gilneas (DECOR!)
+				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided. ",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.5.99999" },	-- Removed ??
+			}),
+
 			-- Season 2
 
 			-- Season 3

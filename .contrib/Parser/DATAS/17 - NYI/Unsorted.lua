@@ -1746,9 +1746,6 @@ root(ROOTS.Unsorted, {
 				i(264278),	-- Sturdy Portable Ice Chest
 				i(264279),	-- Tall Corked Bottle of Liquid Mystery
 				i(264280),	-- Short Corked Bottle of Liquid Mystery
-				i(264281),	-- Preserved Gift of Gilneas
-				i(264282),	-- Bluebird's Golden Cage
-				i(264283),	-- Backboard and Hoop Playset
 				i(264384),	-- Zapmaster Viewer 3000
 				i(253254),	-- Lunar Celebrant's Cradle
 				i(253255),	-- Lunar Celebrant's Wide Pillow Roll
