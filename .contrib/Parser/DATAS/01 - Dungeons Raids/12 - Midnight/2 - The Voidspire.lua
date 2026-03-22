@@ -189,7 +189,13 @@ local EncounterToLoot = {
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {
+	i(260376),	-- Breastplate of the Final Defense
+	i(260377),	-- Fading Dawn Sabatons
+	i(260371),	-- Infernal Greatlock Girdle
+	i(260372),	-- Nullstrider's Boots
+	i(260373),	-- Power Stance Breeches
 	i(260374),	-- Primal Spark Pauldrons
+	i(260375),	-- Raging Storm Sash
 	i(260370),	-- Visage of Unseen Truths
 };
 

@@ -113,7 +113,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		filter(MISC, {
 			i(254250),	-- Bountiful Coffer
 			i(257387),	-- Bountiful Heavy Trunk
-			i(262965),	-- Delver's Delight
+			i(262965),	-- Delver's Delight (CI!)
 			i(257386),	-- Heavy Trunk (Delve reward UI)
 			i(232371),	-- Companion Experience (Delver's Call reward)
 			i(263488),	-- Companion Experience (Delver's Call reward)
@@ -126,9 +126,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
 			i(262586),	-- Primeval Arcane Remnant (QI!/QS!)
-			-- #if BEFORE TLT
-			currency(2803),	-- Undercoin
-			-- #endif
+			currency(2803, {	-- Undercoin
+				["timeline"] = { REMOVED_13_0_0 },
+			}),
 		}),
 		filter(RECIPES, {
 			i(259366),	-- Design: Replica Haranir Mural (RECIPE!)

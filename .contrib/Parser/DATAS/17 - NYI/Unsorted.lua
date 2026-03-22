@@ -1452,14 +1452,7 @@ root(ROOTS.Unsorted, {
 				i(257686),	-- Voidbreaker's Kukri \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI - 2
 				i(257687),	-- Voidbreaker's Basher \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR - 2
 				i(257688),	-- Voidbreaker's Warbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI - 2
-
-				-- Raid Might be bOE?
-				i(260371),	-- Infernal Greatlock Girdle
-				i(260372),	-- Nullstrider's Boots
-				i(260373),	-- Power Stance Breeches
-				i(260375),	-- Raging Storm Sash
-				i(260376),	-- Breastplate of the Final Defense
-				i(260377),	-- Fading Dawn Sabatons
+				--
 				i(260414),	-- Amulet of the Ascendant Void \\ Voidsong Chain
 				-- Armor
 				i(260475),	-- Ka'shuk Trainee's Cudgel
