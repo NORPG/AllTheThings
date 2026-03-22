@@ -576,7 +576,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			q(94636, {	-- Work It
-				["qg"] = 258396,	-- Cataloger Zhu
+				["qg"] = 258412,	-- Cataloger Zhu
 				["coord"] = { 47.5, 26.4, MAP.MIDNIGHT.ZULAMAN },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),

@@ -113,7 +113,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		filter(MISC, {
 			i(254250),	-- Bountiful Coffer
 			i(257387),	-- Bountiful Heavy Trunk
-			i(262965),	-- Delver's Delight (TODO: should be questID)
+			i(262965),	-- Delver's Delight
 			i(257386),	-- Heavy Trunk (Delve reward UI)
 			i(232371),	-- Companion Experience (Delver's Call reward)
 			i(263488),	-- Companion Experience (Delver's Call reward)
@@ -942,6 +942,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93866),	-- Die in a delve, trigger mail with A Grave Concern
 
 		q(93819),	-- Bountiful #1, Tier 8+
+		--q(93820),	-- "Opened 2nd bountiful chest at the end of the week"
+		--q(93821),	-- "1st bountiful delve (of the week?)"
 		q(93822),	-- Bountiful #2, Tier 9
 	})),
 }));

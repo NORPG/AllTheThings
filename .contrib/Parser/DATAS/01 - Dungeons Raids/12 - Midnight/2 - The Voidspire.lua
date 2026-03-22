@@ -190,6 +190,7 @@ local EncounterToLoot = {
 ------ Zone Drops ----------
 local ZoneDropLoot = {
 	i(260374),	-- Primal Spark Pauldrons
+	i(260370),	-- Visage of Unseen Truths
 };
 
 ------ Boss Functions ------

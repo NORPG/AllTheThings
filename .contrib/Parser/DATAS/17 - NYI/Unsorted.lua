@@ -1454,7 +1454,6 @@ root(ROOTS.Unsorted, {
 				i(257688),	-- Voidbreaker's Warbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI - 2
 
 				-- Raid Might be bOE?
-				i(260370),	-- Visage of Unseen Truths
 				i(260371),	-- Infernal Greatlock Girdle
 				i(260372),	-- Nullstrider's Boots
 				i(260373),	-- Power Stance Breeches
