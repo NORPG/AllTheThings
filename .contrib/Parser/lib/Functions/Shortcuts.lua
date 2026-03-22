@@ -1766,6 +1766,20 @@ cnUnavailable = function(t)	-- the object only unavailable on CN realm
 	return regionUnavailable("CN", t);
 end
 
+-- SYM Constants container
+do
+	local AutoTableMetaFunc
+	local function SelfAutoTable(t)
+		return setmetatable(t, { __index = AutoTableMetaFunc })
+	end
+	AutoTableMetaFunc = function(t, key)
+		local value = SelfAutoTable({})
+		t[key] = value
+		return value
+	end
+	SYM = SelfAutoTable({})
+end
+
 -- Temporary function to force Items to use the Misc filter so that they do not get turned into Recipes by the Parser
 -- until the 'guessing' logic is eventually relegated when Prof DB's are sufficient
 TempForceMisc = function(t)
