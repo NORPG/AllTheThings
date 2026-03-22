@@ -4,6 +4,7 @@
 root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	i(232875),	-- Spark of Radiance
 	n(DECOR, {
+		-- TODO: o_repeated with proper maps and objectIDs like other expacs?
 		o(618517, {	-- Thalassian Lumber
 			["maps"] = {
 				MAP.MIDNIGHT.EVERSONG_WOODS,

@@ -143,7 +143,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["isWeekly"] = true,
 		}, {
 			q(95413, {	-- Community Engagement
-				i(269010),	-- Essence of Lumber
+				-- Maybe do this better somehow. Technically this item should be a 'cost' on a symlink group attached to the respective Housing Lumberjack NPCs in both neighborhoods...  then could have proper coords on the NPC and cost indicator
+				i(269010, {	-- Essence of Lumber
+					["description"] = "Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",
+					["sym"] = {{"select","itemID",
+						245586,	-- Ironwood Lumber
+						242691,	-- Olemba Lumber
+						251762,	-- Coldwind Lumber
+						251764,	-- Ashwood Lumber
+						251763,	-- Bamboo Lumber
+						251766,	-- Shadowmoon Lumber
+						251767,	-- Fel-Touched Lumber
+						251768,	-- Darkpine Lumber
+						251772,	-- Arden Lumber
+						251773,	-- Dragonpine Lumber
+						248012,	-- Dornic Fir Lumber
+						256963,	-- Thalassian Lumber
+					}},
+				}),
 			}),
 			q(95416),	-- Going Postal
 			q(95440),	-- Housewarming
