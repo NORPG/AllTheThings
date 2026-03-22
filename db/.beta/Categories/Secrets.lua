@@ -503,6 +503,20 @@ n(230070,{coords={
 [46]={{47.4,68.3}}},description="Interacting with the button starts a 20 second timer, refreshing on clicking again. The orb to the left of the button reports how many times the button has been clicked within that window.",g={
 q(84702,{description="Unlocks an orb at the 10 O'clock basin.",type="hqt"}),
 q(84703,{description="Unlocks an orb at the 10 O'clock basin.",type="hqt"})}}),
+n(182086,{coords={
+[2022]={{66.2,70.2}}},cost={{"i",200638,1}},description="Feed Hek a Bubblefilled Flounder to be vomited a Duck Egg.",g={
+o(616048,{awp=120001,coords={
+[2022]={{66.3,70.2}}},g={
+i(260522,{b=1})}})}}),
+n(197973,{coords={
+[2112]={{40,78.3}}},description="If Papa and the shiny gift are missing, click the nearby Papa's Feather to call him home.",g={
+o(616053,{awp=120001,coords={
+[2112]={{40,78.3}}},providers={{"i",260522}},g={
+i(260532,{b=1})}})}}),
+n(184166,{coords={
+[2151]={{29.8,47.5},{35.3,40.7},{37.4,23.2},{41.3,38},{54.4,46.4},{54.6,55.4},{62.7,61.4},{63.9,50.7},{73.9,37.6}}},description="Hiding on the Forbidden Reach in one of several locations, To'No and Ko will be stealthed until you're right on top of them. May not be up in any locations, you might have to loop around until a spawn. Disappears a few minutes after being found. \nThe second dialogue interaction awards the Oddsight Focus while the first gives you some random loot.",g={
+i(260533,{awp=120001,b=1,cost={{"i",260532,1}},spellID=1266536})}}),
+q(93688,{awp=120001,description="Obtaining the focus fully lights up the 10 O'Clock Basin and removes the void from 11 and 12 O'Clock.",providers={{"i",260533}},type="hqt"}),
 o(475116,{coords={
 [46]={{47,78.1},{56.3,73.3},{70.1,90.3},{70.3,81},{70.5,61.7},{70.9,53.9}}},description="These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in the Nature statue room."}),
 i(228953)}})}}),

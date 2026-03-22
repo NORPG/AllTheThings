@@ -21,13 +21,13 @@ n(14457,{coords={
 [1452]={{54.6,42.6}}},description="This is only available during an Elemental Invasion.",u=12,g={
 r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=10658,u=12}),
 r(8782,{itemID=7091,learnedAt=150,q=2,requireSkill=197,u=12}),
-i(18679,{f=52,lvl=56,q=2,u=12}),
-i(18678,{f=51,lvl=56,q=3,u=12})}}),
+i(18678,{f=51,lvl=56,q=3,u=12}),
+i(18679,{f=52,lvl=56,q=2,u=12})}}),
 n(14454,{coords={
 [1451]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",u=12,g={
+r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=10658,u=12}),
 s(163625,18676,{f=6,lvl=56,q=3,u=12}),
-s(163626,18677,{f=3,lvl=56,q=2,u=12}),
-r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=10658,u=12})}})}}),
+s(163626,18677,{f=3,lvl=56,q=2,u=12})}})}}),
 h(-481,{maps={1454,1455},rwp=20001,u=1501,g={
 h(-210,{r=2,u=1501,g={
 q(8811,{coords={
