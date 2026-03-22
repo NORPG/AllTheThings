@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(REWARDS, {
 				i(246951),	-- Stormarion Core
 				i(248680),	-- Unstable Focusing Crystal
-				container(260940, {	-- Victorious Stormarion Pinnacle Cache
+				container(260940, {	-- Victorious Stormarion Pinnacle Cache (Season 1)
 					["providers"] = {
 						{ "i", 268485 },	-- Victorious Stormarion Pinnacle Cache (Pre-Season)
 						{ "i", 260979 },	-- Victorious Stormarion Cache
@@ -140,15 +140,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ "i", 260940 },	-- Victorious Stormarion Pinnacle Cache (Season 1)
 					},
 					["timeline"] = { ADDED_12_0_1_SEASONSTART },
-					["sym"] = {	-- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 			}),
 			n(TREASURES, {
