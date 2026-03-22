@@ -35,12 +35,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = {
 						i(260940, {	-- Victorious Stormarion Pinnacle Cache (Season 1)
 							["timeline"] = { ADDED_12_0_1_SEASONSTART },
+							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
 						i(268485, {	-- Victorious Stormarion Pinnacle Cache (Pre-Season)
 							["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
 						i(269704, {	-- Victorious Stormarion Cache (Leveling)
 							["timeline"] = { ADDED_12_0_1_SEASONSTART },
+							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
 					},
 				}),
@@ -133,14 +136,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(262608),	-- Void Elf Stool (DECOR!)
 						currency(3400),	-- Uncontaminated Void Sample
 					},
-				}),
-				container(269704, {	-- Victorious Stormarion Cache (Gear Only)
-					["providers"] = {
-						{ "i", 268485 },	-- Victorious Stormarion Pinnacle Cache (Pre-Season)
-						{ "i", 260940 },	-- Victorious Stormarion Pinnacle Cache (Season 1)
-					},
-					["timeline"] = { ADDED_12_0_1_SEASONSTART },
-					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 			}),
 			n(TREASURES, {
