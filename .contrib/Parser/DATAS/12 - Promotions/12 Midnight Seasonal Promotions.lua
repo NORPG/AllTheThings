@@ -151,6 +151,7 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}),
 			-- Season 1
+			-- ELEKK MOUNT PROMO HERE?
 			i(265545, {	-- Cuddly Void Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between March 26th, 3:00 p.m. & April 23rd, 3:00 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed April 23rd, 2026
