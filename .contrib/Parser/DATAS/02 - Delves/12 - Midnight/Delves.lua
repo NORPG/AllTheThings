@@ -366,6 +366,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		o(618495, {	-- Nullaeus Cache
+			["questID"] = 92887,
+			["isWeekly"] = true,
+			["cost"] = {{"i",253342,1}},	-- Beacon of Hope
 			["groups"] = {
 				i(262391),	-- Ominous Domanus (PET!)
 				i(265367),	-- Twilight Fang (COSMETIC!)
@@ -937,23 +940,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--	--q(),	-- factionName
 		})),
 		q(93866),	-- Die in a delve, trigger mail with A Grave Concern
-		q(92887),	-- Invaded by Nullaeus
 
 		q(93819),	-- Bountiful #1, Tier 8+
 		q(93822),	-- Bountiful #2, Tier 9
-
-		-- Weekly summon boss questID
-		--hqt(86371, {	--	// automated/use TWW questID?
-		--	["name"] = "Seasonal delve map lockout"
-		--	["providers"] = {
-		--		{"i",253342},	-- Beacon of Hope
-		--		{"i",252415},	-- Trovehunter's Bounty
-		--	},
-		--	["timeline"]={ADDED_12_0_1_SEASONSTART},
-		--	["isWeekly"] = true,
-		--}),
-
-		--automated
-		--q(93869),	-- Pious Memorial (itemID 262963)
 	})),
 }));
