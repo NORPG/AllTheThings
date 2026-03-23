@@ -1115,7 +1115,9 @@ faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
 firstcraft = function(id, t)							-- Create a FIRST CRAFT Object
-	return struct("firstcraftID", id, t);
+	t = struct("firstcraftID", id, t);
+	t.provider = { "s", id };
+	return t;
 end
 fc = firstcraft;
 flightpath = function(id, t)							-- Create a FLIGHT PATH Object
