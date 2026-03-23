@@ -2043,6 +2043,7 @@ i(213214);	-- Woven Lavareed Basket
 -- PATCH 10.2.6 --
 ------------------
 i(221779);	-- Bent Card
+i(217416);	-- Depleted Emerald Flightstone
 
 ------------------
 -- PATCH 10.2.7 --

@@ -684,7 +684,10 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 			q(55188, {	-- Tearing at the Seams [H]
 				["sourceQuests"] = { 53940 },	-- A Stitch in Time [H]
-				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["qgs"] = {
+					145022,	-- Timeweaver Delormi
+					151137,	-- Synchronous Tailor
+				},
 				["races"] = HORDE_ONLY,
 			}),
 			q(53810, {	-- The Severed Thread
@@ -701,7 +704,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					55188,	-- Tearing at the Seams [H]
 				},
 				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
+				["coord"] = { 62.1, 54.1, CAVERNS_OF_TIME },
 			}),
 			q(53858, {	-- Step Into Her Shoes
 				["sourceQuests"] = {

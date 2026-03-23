@@ -2582,6 +2582,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
 			["coord"] = { 47.6, 43.6, DORNOGAL },
+			["timeline"] = { REMOVED_12_0_1_SEASONSTART },
 			["groups"] = {
 				header(HEADERS.Item, 219391, {	-- Delver's Dirigible
 					i(235685, {	-- Delver's Dirigible Schematic: Drill (MM!)

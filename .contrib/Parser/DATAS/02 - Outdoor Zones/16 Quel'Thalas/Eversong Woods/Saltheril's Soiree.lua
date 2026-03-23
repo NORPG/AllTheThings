@@ -126,6 +126,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = { i(249732), },	-- Vintner's Golden (QI!)
 					}),
 				}),
+				q(91988, {	-- Brightwing Conservation
+					i(249775),	-- Bright Berry (QI!)
+				}),
 				q(90575),	-- Fortify the Runestones: Farstriders
 				q(91989, {	-- Ghostland Peppers
 					o(568477, {	-- Ghostland Pepper
@@ -185,6 +188,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["maxReputation"] = { FACTION_SHADES_OF_THE_ROW, 6 },	-- Luminary
 				["isWeekly"] = true,
 			}, {
+				q(92003, {	-- Artisanal Replicas
+					i(249688),	-- Felo'melorn Replica (QI!)
+				}),
 				q(92007, {	-- Begged, Borrowed or Stolen
 					i(249544),	-- Chest of Stolen Valuables (QI!)
 				}),

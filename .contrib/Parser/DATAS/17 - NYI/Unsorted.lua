@@ -900,7 +900,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(QUEST_ITEMS, {
 				i(246152),	-- Saptor Frill
-				i(249775),	-- Bright Berry
 				i(253210),	-- Soothsayer's Signet
 				i(268551),	-- Scroll of Reflection
 				i(248723),	-- Stolen Documents
@@ -1200,7 +1199,6 @@ root(ROOTS.Unsorted, {
 				i(249527),	-- Elder Painting
 				i(249543),	-- Special Remedy
 				i(249553),	-- Lost Mirror
-				i(249688),	-- Felo'melorn Replica
 				i(250705),	-- Naga Missive PH NAME
 				i(251899),	-- Anasterian's Book of Law
 				i(251904),	-- Crown of the High King
@@ -1620,7 +1618,6 @@ root(ROOTS.Unsorted, {
 				i(262871),	-- Snowy Dunecloth Vest
 				i(262872),	-- Sunny Dunecloth Vest
 				i(263009),	-- Valeera's Wicked Knife
-				i(263413),	-- Nullaeus Domaneye
 				i(263520),	-- Ensemble: Sprawling's Garb
 				i(263574),	-- Ensemble: Osseoclad's Wear
 				i(263575),	-- Ensemble: Elder Moss Outfit

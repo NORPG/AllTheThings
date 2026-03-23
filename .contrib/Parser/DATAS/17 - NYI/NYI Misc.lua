@@ -1548,7 +1548,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			------ Plunderstorm Valdrakken Vendor ------
 			i(220203),	-- Clutch of Wyrm's Dreaming Crests
 			i(217413),	-- Depleted Blackened Flightstone
-			i(217416),	-- Depleted Emerald Flightstone
 			i(217415),	-- Depleted Ruby Flightstone
 			i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
 			i(220204),	-- Pouch of Whelpling's Dreaming Crests

@@ -66,7 +66,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				title(550),	-- High Explorer <Name>
 			})),
 			ach(61796),	-- Midnight: Journey's End (Season 1)
-			ach(61797),	-- My Shady Nemesis
+			ach(61797, {	-- My Shady Nemesis
+				i(263413),	-- Nullaeus Domaneye (COSMETIC!)
+			}),
 		})),
 		n(CURIO, {
 			--Combat

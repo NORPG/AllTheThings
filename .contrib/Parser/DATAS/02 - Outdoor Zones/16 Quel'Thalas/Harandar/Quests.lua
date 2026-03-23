@@ -1348,7 +1348,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					86877,	-- Righteous Pruning
 				},
 				["qg"] = 241655,	-- Hannan
-				["coord"] = { 30.5, 77.2, MAP.MIDNIGHT.HARANDAR },
+				["coord"] = { 33.2, 76.0, MAP.MIDNIGHT.HARANDAR },
 			}),
 			q(93745, {	-- Har'athir, Village of Memory
 				["sourceQuests"] = { 86930 },	-- To Sow the Seed
