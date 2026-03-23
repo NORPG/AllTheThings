@@ -52785,7 +52785,7 @@ gach(16356),
 gach(16357)}),
 o(382621,{catalystID=3,coords={
 [2025]={{60.6,53.8}}},description="The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
-d(17,{rwp=110002,trackID=972,u=2,g={
+d(17,{awp=120005,rwp=110002,trackID=972,u=2,g={
 cl(6,{sym={{"sub","instance_tier",1200,17,6}},u=2,g={
 s(182840,200413,{b=1,bonusID=451,c={6},f=3,lvl=70,modID=4,u=2}),
 s(182832,200411,{b=1,bonusID=451,c={6},f=7,lvl=70,modID=4,u=2}),
@@ -53099,7 +53099,7 @@ e(2499,{crs={189492,193909},g={
 mm(201790,{b=1,questID=72367}),
 crit(55117,{achID=16343}),
 crit(55117,{achID=17112})}})}}),
-d(17,{rwp=110002,u=2,g={
+d(17,{awp=120005,rwp=110002,u=2,g={
 h(-63,{u=2,g={
 s(184061,202004,{f=5,lvl=70,modID=4,u=2}),
 i(201992,{f=52,lvl=70,modID=4,u=2}),
@@ -53974,7 +53974,7 @@ gach(18177),
 gach(18178)}),
 o(382621,{catalystID=6,coords={
 [2025]={{60.6,53.8}}},description="The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
-d(17,{rwp=110002,trackID=972,u=2,g={
+d(17,{awp=120005,rwp=110002,trackID=972,u=2,g={
 cl(6,{sym={{"sub","instance_tier",1208,17,6}},u=2,g={
 s(186273,202458,{b=1,c={6},f=7,lvl=70,modID=4,u=2}),
 s(186264,202456,{b=1,c={6},f=3,lvl=70,modID=4,u=2}),
@@ -54297,9 +54297,9 @@ crit(58883,{achID=18167})}})}}),
 d(122,{difficulties={17,14,15},g={
 e(2520,{crs={201754,203284},g={
 mm(206955,{b=1,questID=75967})}})}}),
-d(17,{rwp=110002,u=2,g={
+d(17,{awp=120005,rwp=110002,u=2,g={
 h(-63,{u=2,g={
-i(204075,{b=1,modID=4,rwp=100200,spellID=403297,u=2}),
+i(204075,{awp=100100,b=1,modID=4,rwp=100200,spellID=403297,u=2}),
 s(186477,204410,{f=4,lvl=70,modID=4,u=2}),
 s(186495,204411,{f=4,lvl=70,modID=4,u=2}),
 s(186694,204429,{f=7,lvl=70,modID=4,u=2}),
@@ -55294,7 +55294,7 @@ gach(19387),
 gach(19388)}),
 o(382621,{catalystID=7,coords={
 [2025]={{60.6,53.8}}},description="The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
-d(17,{rwp=110002,trackID=972,u=2,g={
+d(17,{awp=120005,rwp=110002,trackID=972,u=2,g={
 cl(6,{sym={{"sub","instance_tier",1207,17,6}},u=2,g={
 s(192297,207202,{b=1,c={6},f=7,lvl=70,modID=4,u=2}),
 s(192242,207197,{b=1,c={6},f=7,lvl=70,modID=4,u=2}),
@@ -55644,7 +55644,7 @@ i(207729)}}),
 crit(63103,{achID=19331}),
 crit(63103,{achID=19347})}})}}),
 d(17,{
-h(-63,{rwp=110002,u=2,g={
+h(-63,{awp=120005,rwp=110002,u=2,g={
 i(208442,{f=52,lvl=70,modID=4,u=2}),
 s(193305,208427,{f=7,lvl=70,modID=4,u=2}),
 s(193525,208431,{f=4,lvl=70,modID=4,u=2}),
@@ -55654,9 +55654,9 @@ s(193451,208434,{f=6,lvl=70,modID=4,u=2}),
 s(192605,208432,{f=5,lvl=70,modID=4,u=2}),
 s(192660,208420,{f=5,lvl=70,modID=4,u=2}),
 s(193574,208430,{f=4,lvl=70,modID=4,u=2})}}),
-h(-19,{crs={200926,200927,204931,206172,206689,208363,208365,208367,208445,208478,208956,209090,209333,210601},rwp=110002,u=2,g={
-cu(2706,{rwp=100206,u=2})}}),
-ah(19344,{rwp=110002,type="a",u=2,g={
+h(-19,{awp=120005,crs={200926,200927,204931,206172,206689,208363,208365,208367,208445,208478,208956,209090,209333,210601},rwp=110002,u=2,g={
+cu(2706,{awp=100200,rwp=100206,u=2})}}),
+ah(19344,{awp=120005,rwp=110002,type="a",u=2,g={
 e(2564,{npcID=209333,u=2,g={
 s(193418,207142,{b=1,f=6,lvl=70,modID=4,u=2}),
 s(194147,207120,{b=1,f=4,lvl=70,modID=4,u=2}),
@@ -55729,7 +55729,7 @@ s(193195,207156,{b=1,f=7,lvl=70,modID=4,u=2}),
 s(191077,207799,{b=1,f=26,lvl=70,modID=4,u=2}),
 s(193490,207161,{b=1,f=3,lvl=70,modID=4,u=2}),
 s(191080,207791,{b=1,f=35,lvl=70,modID=4,u=2})}})}}),
-ah(19345,{rwp=110002,type="a",u=2,g={
+ah(19345,{awp=120005,rwp=110002,type="a",u=2,g={
 e(2557,{npcID=208478,u=2,g={
 i(207175,{b=1,f=53,lvl=70,modID=4,spellID=426827,u=2}),
 s(192638,207130,{b=1,f=5,lvl=70,modID=4,u=2}),
@@ -55773,7 +55773,7 @@ s(192429,207129,{b=1,f=5,lvl=70,modID=4,u=2}),
 s(191068,207792,{b=1,f=29,lvl=70,modID=4,u=2}),
 i(207170,{b=1,f=53,lvl=70,modID=4,spellID=422081,u=2}),
 s(193429,207143,{b=1,f=6,lvl=70,modID=4,u=2})}})}}),
-ah(19346,{rwp=110002,type="a",u=2,g={
+ah(19346,{awp=120005,rwp=110002,type="a",u=2,g={
 e(2555,{crs={208363,208365,208367,208956},u=2,g={
 s(193462,207138,{b=1,f=6,lvl=70,modID=4,u=2}),
 s(193469,207139,{b=1,f=6,lvl=70,modID=4,u=2}),
@@ -55817,7 +55817,7 @@ s(193546,207123,{b=1,f=4,lvl=70,modID=4,u=2}),
 i(208615,{b=1,f=53,lvl=70,modID=4,spellID=422953,u=2}),
 s(191074,207798,{b=1,f=8,lvl=70,modID=4,u=2}),
 s(193400,210203,{b=1,f=6,lvl=70,modID=4,u=2})}})}}),
-ah(19347,{rwp=110002,type="a",u=2,g={
+ah(19347,{awp=120005,rwp=110002,type="a",u=2,g={
 e(2565,{crs={209090,210601},u=2,g={
 i(217324,{awp=100206,b=1,c={6,9,12},lvl=70,modID=83,nomerge=1,skipFill=1,spellID=439230,sym={{"select","itemID",217324.004},{"groupfill",1},{"pop"}},u=2}),
 i(217325,{awp=100206,b=1,c={3,8,11},lvl=70,modID=83,nomerge=1,skipFill=1,spellID=439230,sym={{"select","itemID",217325.004},{"groupfill",1},{"pop"}},u=2}),

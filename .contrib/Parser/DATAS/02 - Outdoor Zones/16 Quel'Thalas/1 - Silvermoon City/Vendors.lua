@@ -327,43 +327,43 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Season 1
 					--- Trade DOWN
 					i(263976, {	-- Bundle of Adventurer Dawncrests
-						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: LFR Crest\nReceive: Adventurer Crest",
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: LFR Crest\nReceive: Adventurer Crest",
 						["cost"] = { { "c", VETERAN_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246754, {	-- Pouch of Veteran Dawncrests
-						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
 						["cost"] = { { "c", CHAMPION_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246755, {	-- Satchel of Champion Dawncrests
-						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
 						["cost"] = { { "c", HERO_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246756, {	-- Pack of Hero Dawncrests
-						["description"] = "\n|cffff0000	-- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
 						["cost"] = { { "c", MYTH_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					--- Trade UP
 					i(263977, {	-- Venerable Satchel of Veteran Dawncrests
-						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Adventurer Crest\nReceive: LFR Crest",
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Adventurer Crest\nReceive: LFR Crest",
 						["cost"] = { { "c", ADVENTURER_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246751, {	-- Triumphant Satchel of Champion Dawncrests (TODO: Blizzard bug - same item ID as vault vendor)
-						["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
 						["cost"] = { { "c", VETERAN_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					--i(246752, {	-- Celebratory Pack of Hero Dawncrests (TODO: Blizzard bug - same item ID as vault vendor, speculation)
-					--	["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
+					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
 					--	["cost"] = { { "c", CHAMPION_DAWNCREST, 30 } },
 					--	["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					--}),
 					--i(XXXX, {	-- ???
-					--	["description"] = "\n|cff4caf50	-- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
+					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
 					--	["cost"] = { { "c", HERO_DAWNCREST, 30 } },
 					--	["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					--}),
