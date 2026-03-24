@@ -4290,7 +4290,6 @@ q(93713,{description="Area: |cFFf09f26Silvermoon City|r",g={
 i(263461)}}),
 q(93714,{description="Area: |cFFf09f26Silvermoon City|r",g={
 i(263461)}}),
-q(93756,{description="Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Dungeon|r"}),
 q(93782,{description="Area: |cFFf09f26Zul'Aman|r"}),
 q(93783,{description="Area: |cFFf09f26Zul'Aman|r"}),
 q(93922),

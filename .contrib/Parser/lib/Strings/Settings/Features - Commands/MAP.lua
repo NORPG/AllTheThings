@@ -3,6 +3,6 @@ createLocalizationString({
 	constant = "MAP",
 	export = true,
 	text = {
-		en = [[~WORLD_MAP]],
+		en = [[~BRAWL_TOOLTIP_MAP]],
 	},
 })
