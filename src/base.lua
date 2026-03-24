@@ -796,6 +796,7 @@ AllTheThingsSavedVariables = {};
 
 -- Data style exporters and utility for copying window data via various styles.
 local DataStyleExporters = {};
+app.DataStyleExporters = DataStyleExporters
 
 -- Register a new exporter by name.  If the style already exists or the
 -- provided function is invalid the call is ignored.
