@@ -3,7 +3,7 @@ createLocalizationString({
 	constant = "DIFFICULTY",
 	export = true,
 	text = {
-		-- en = [[~RUNEFORGE_LEGENDARY_POWER_LABEL]],	-- missing in MoP Classic
+		-- en = [[~CRF_DIFFICULTY]],	-- missing in MoP Classic
 		en = "Difficulty",
 		de = "Schwierigkeitsgrad",
 		es = "Dificultad",
