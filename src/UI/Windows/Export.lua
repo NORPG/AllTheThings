@@ -2,9 +2,22 @@
 local _, app = ...;
 local L = app.L;
 
+local ExportStyle
+local function UpdateExportStyle(row, button, styleID, active)
+	ExportStyle = styleID
+end
+local function DoExport(t)
+	if not ExportStyle then
+		app.print("Please select a Style to Export")
+		return
+	end
+	local window = app:GetWindow(t.text)
+	app:ExportStylizedData(window, ExportStyle)
+	app.print("Exported",window.Suffix,"as",ExportStyle,"style!")
+end
+
 -- Window
 app:CreateWindow("Export", {
-	SettingsName = "Export",
 	Commands = {
 		"attexport",
 		-- "export",	-- TODO uncomment when fixing how commands are defined
@@ -25,7 +38,7 @@ app:CreateWindow("Export", {
 				parent = styleGroup,
 				visible = true,
 				OnUpdate = app.AlwaysShowUpdate,
-				-- TODO OnClickHandler to assign the shared Export style and un-save other rows??/
+				OnClickHandler = UpdateExportStyle
 			}))
 		end
 
@@ -40,10 +53,12 @@ app:CreateWindow("Export", {
 
 				local rows = t.g
 				wipe(rows)
-				for windowKey in pairs(app.Windows) do
+				for suffix,window in pairs(app.Windows) do
 					-- TODO: save a hash table of existing window-row links and just skip re-adding
-					tinsert(rows, app.CreateRawText(windowKey, {
+					-- TODO: maybe wrap the window header data instead
+					tinsert(rows, app.CreateRawText(window.Suffix, {
 						OnUpdate = app.AlwaysShowUpdate,
+						OnClick = DoExport,
 						parent = t,
 						back = 0.2,
 					}))
