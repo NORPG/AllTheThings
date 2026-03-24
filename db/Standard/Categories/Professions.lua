@@ -7864,11 +7864,11 @@ q(53940,{awp=80105,coords={
 [1165]={{43.5,34.8}}},lvl=50,qgs={145022},r=1,requireSkill=197,sourceQuests={53938},g={
 i(167231,{requireSkill=197,spellID=292767})}}),
 q(55177,{awp=80105,lvl=50,qgs={145022},r=2,requireSkill=197,sourceQuests={53807}}),
-q(55188,{awp=80105,lvl=50,qgs={145022},r=1,requireSkill=197,sourceQuests={53940}}),
+q(55188,{awp=80105,lvl=50,qgs={145022,151137},r=1,requireSkill=197,sourceQuests={53940}}),
 q(53810,{awp=80105,coords={
 [75]={{62,53.9}}},lvl=50,qgs={151134},requireSkill=197,sourceQuests={55177,55188}}),
 q(53813,{awp=80105,coords={
-[75]={{43.5,34.8}}},lvl=50,qgs={151134},requireSkill=197,sourceQuests={55177,55188}}),
+[75]={{62.1,54.1}}},lvl=50,qgs={151134},requireSkill=197,sourceQuests={55177,55188}}),
 q(53858,{awp=80105,coords={
 [75]={{39.1,63.3}}},lvl=50,qgs={151134},requireSkill=197,sourceQuests={53810,53813}}),
 q(53866,{awp=80105,coords={
