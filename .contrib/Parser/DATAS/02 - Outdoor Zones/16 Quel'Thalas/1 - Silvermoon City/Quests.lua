@@ -119,6 +119,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93754),	-- Maisara Caverns
 			q(93752),	-- Murder Row
 			q(93758),	-- Nexus-Point Xenas
+			q(93756),	-- The Blinding Vale
 			q(93757),	-- Voidscar Arena
 			q(93751),	-- Windrunner Spire
 		})),
