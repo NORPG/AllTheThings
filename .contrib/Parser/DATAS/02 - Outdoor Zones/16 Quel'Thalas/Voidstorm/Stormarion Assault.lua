@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(262608),	-- Void Elf Stool (DECOR!)
 						currency(3400),	-- Uncontaminated Void Sample
 					},
-				}),
+				}), 
 			}),
 			n(TREASURES, {
 				o(566083, {	-- Stormarion Supplies

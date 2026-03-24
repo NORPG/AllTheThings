@@ -851,32 +851,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-	m(TORMENTS_RISE, {	-- TODO: Seasonal delve with boss
-		--["icon"] = ,
-		["coord"] = { 61.2, 71.4, MAP.MIDNIGHT.VOIDSTORM },
-		--["maps"] = {},
-		["groups"] = {
-			n(ACHIEVEMENTS, {
-			}),
-			n(EXPLORATION, {
-			}),
-			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
-			}),
-			n(TREASURES, {
-			}),
-			n(REWARDS, {
-				filter(BATTLE_PETS, {
-					i(262391),	-- Ominous Domanus (PET!)
-				}),
-				filter(MISC, {
-				}),
-			}),
-		},
-	}),
 	m(TWILIGHT_CRYPTS, {
 		--["icon"] = ,
 		["coord"] = { 25.4, 84.0, MAP.MIDNIGHT.ZULAMAN },
