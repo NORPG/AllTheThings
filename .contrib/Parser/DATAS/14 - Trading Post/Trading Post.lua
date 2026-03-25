@@ -2148,8 +2148,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(300, i(235401)),	-- Blood Monarch's Polearm
 				traderstender(250, i(235291)),	-- Blood Monarch's Sword
 				traderstender(200, i(235295)),	-- Blood Monarch's Wand
-				traderstender(370, iensemble(258725)),	-- Ensemble: Elaborate Lavender Mageweave
-				traderstender(100, iensemble(258727)),	-- Ensemble: Elaborate Ruby Mageweave
+				traderstender(500, iensemble(258725)),	-- Ensemble: Elaborate Lavender Mageweave
+				traderstender(500, iensemble(258727)),	-- Ensemble: Elaborate Ruby Mageweave
 				traderstender(370, iensemble(235228)),	-- Ensemble: Ornaments of the Blood Monarch
 				traderstender(100, iensemble(258018)),	-- Ensemble: Sorcerer's Violet Garb
 				traderstender(80, i(266097)),	-- Huntress' Moonblade
