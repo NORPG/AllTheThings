@@ -1453,6 +1453,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198180),	-- D.U.C.K.O.Y.+
 			i(198181),	-- D.U.C.K.O.Y.++
 			i(198182),	-- D.U.C.K.O.Y.+++
+			i(202310, {["provider"]={"i",202309}}),	-- Defective Doomsday Device
 			i(198163),	-- Endless Stack of Needles+
 			i(198164),	-- Endless Stack of Needles++
 			i(198165),	-- Endless Stack of Needles+++

@@ -1275,7 +1275,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 			i(203461),	-- Chronologically Reallocated Rations
 			i(202112),	-- Crystal Shattering Armaments
-			i(202310),	-- Defective Doomsday Device
 			i(201990),	-- Primal Mote
 			i(204277),	-- Ruby Whelp Treat
 			i(204236),	-- Sack of Stolen Dragon Glyphs
