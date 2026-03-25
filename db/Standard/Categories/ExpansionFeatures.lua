@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,artifact,aze,cd,cl,cq,crit,cs,cu,d,de,e,en,exp,faction,flt,follower,fp,gb,gm,gt,h,heir,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateAzeriteEssence,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateGarrisonTalent,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,artifact,aze,cd,cl,cq,crit,cs,cu,d,de,e,en,exp,faction,flt,follower,fp,gb,gm,gt,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateAzeriteEssence,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateGarrisonTalent,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
 x(2,{awp=20100,g={
@@ -13990,11 +13990,11 @@ i(140662,{b=1,c={9},spellID=224312}),
 i(140663,{b=1,c={9},spellID=224313}),
 i(140664,{b=1,c={9},spellID=224314}),
 i(140665,{b=1,c={9},spellID=224315}),
-q(44093,{an="i:140661",c={9},providers={{"i",140661}},type="hqt"}),
-q(44094,{an="i:140662",c={9},providers={{"i",140662}},sourceQuests={44093},type="hqt"}),
-q(44095,{an="i:140663",c={9},providers={{"i",140663}},sourceQuests={44094},type="hqt"}),
-q(44096,{an="i:140664",c={9},providers={{"i",140664}},sourceQuests={44095},type="hqt"}),
-q(44097,{an="i:140665",c={9},providers={{"i",140665}},sourceQuests={44096},type="hqt"}),
+hqt(44093,{an="i:140661",c={9},providers={{"i",140661}}}),
+hqt(44094,{an="i:140662",c={9},providers={{"i",140662}},sourceQuests={44093}}),
+hqt(44095,{an="i:140663",c={9},providers={{"i",140663}},sourceQuests={44094}}),
+hqt(44096,{an="i:140664",c={9},providers={{"i",140664}},sourceQuests={44095}}),
+hqt(44097,{an="i:140665",c={9},providers={{"i",140665}},sourceQuests={44096}}),
 i(139576,{b=1,c={9},f=55,sourceQuests={44097},spellID=225641,g={
 artifact(937,{c={9}})}})}})}}),
 h(-33,{c={9},g={
@@ -15957,8 +15957,8 @@ q(43683,{c={2},coords={
 q(43684,{c={2},coords={
 [22]={{42.4,18.7}}},description="After reading this, you can go kill Large Vile Slime next to Thondroril River in Western Plaguelands.",qgs={111121},sourceQuests={43683}}),
 q(43685,{c={2},cost={{"i",139623,1}},maps={22},qgs={111123},sourceQuests={43684}}),
-q(43688,{an="i:139624",c={2},coords={
-[24]={{49.8,72.2}}},description="You must have the Shard of Darkness in your inventory in order to trigger this dialog.",providers={{"i",139624}},qgs={90259},type="hqt"}),
+hqt(43688,{an="i:139624",c={2},coords={
+[24]={{49.8,72.2}}},description="You must have the Shard of Darkness in your inventory in order to trigger this dialog.",providers={{"i",139624}},qgs={90259}}),
 q(43687,{c={2},coords={
 [24]={{49.8,72.2}}},lvl=10,qgs={90259},sourceQuests={43688},g={
 i(139566,{b=1,c={2},f=55,spellID=220701,g={
@@ -18256,17 +18256,17 @@ h(-45,{
 q(46205,{coords={
 [630]={{55.1,67.4}}},lvl=10,qgs={117774},repeatable=1,sourceQuests={45795}}),
 q(45838,{awp=70000,lvl=10,repeatable=1,g={
-q(47193,{type="hqt",g={
-crit(36546,{achID=11544,id=1})}})}}),
+hqt(47193,{
+crit(36546,{achID=11544,id=1})})}}),
 q(45840,{awp=70000,lvl=10,repeatable=1,g={
-q(47194,{type="hqt",g={
-crit(36547,{achID=11544,id=2})}})}}),
+hqt(47194,{
+crit(36547,{achID=11544,id=2})})}}),
 q(45839,{awp=70000,lvl=10,repeatable=1,g={
-q(47195,{type="hqt",g={
-crit(36548,{achID=11544,id=3})}})}}),
+hqt(47195,{
+crit(36548,{achID=11544,id=3})})}}),
 q(45812,{awp=70000,lvl=10,repeatable=1,g={
-q(47196,{type="hqt",g={
-crit(36549,{achID=11544,id=4})}})}}),
+hqt(47196,{
+crit(36549,{achID=11544,id=4})})}}),
 q(46199,{coords={
 [630]={{58.4,21.4}}},lvl=10,qgs={119002},repeatable=1,sourceQuests={46205},g={
 i(142004,{b=1,f=55})}}),
@@ -39681,8 +39681,8 @@ q(84645,{coords={
 [2372]={{19.3,56.3}}},lvl=80,qgs={235041},sourceQuests={84641}}),
 q(84649,{coords={
 [2372]={{17.5,59.5}}},lvl=80,qgs={229940},sourceQuests={84643,84645}}),
-q(91524,{coords={
-[2372]={{17.4,59.5}}},lc={1,"questID",84650},providers={{"n",229951}},sourceQuests={84649},type="hqt"}),
+hqt(91524,{coords={
+[2372]={{17.4,59.5}}},lc={1,"questID",84650},providers={{"n",229951}},sourceQuests={84649}}),
 q(84650,{coords={
 [2372]={{17.5,59.5}}},lvl=80,qgs={229940},sourceQuests={84649},g={
 i(235345)}}),
@@ -39690,14 +39690,14 @@ q(84651,{coords={
 [2372]={{40.9,53.5}}},lvl=80,qgs={236815},sourceQuests={84650}}),
 q(84652,{coords={
 [2372]={{40.9,53.5}}},lvl=80,qgs={236815},sourceQuests={84650}}),
-q(91532,{coords={
-[2372]={{40.8,53.5}}},lc={1,"questID",84656},providers={{"n",230815}},sourceQuests={84651,84652},type="hqt"}),
+hqt(91532,{coords={
+[2372]={{40.8,53.5}}},lc={1,"questID",84656},providers={{"n",230815}},sourceQuests={84651,84652}}),
 q(84656,{coords={
 [2372]={{40.8,53.5}}},lvl=80,qgs={230815},sourceQuests={84651,84652}}),
 q(84704,{coords={
 [2372]={{69.7,39.2}}},lvl=80,qgs={230145},sourceQuests={84656}}),
-q(91534,{coords={
-[2372]={{69.6,32.8}}},lc={1,"questID",84707},providers={{"n",231759}},sourceQuests={84704},type="hqt"}),
+hqt(91534,{coords={
+[2372]={{69.6,32.8}}},lc={1,"questID",84707},providers={{"n",231759}},sourceQuests={84704}}),
 q(84707,{coords={
 [2372]={{69.5,32.8}}},lvl=80,qgs={231764},sourceQuests={84704}}),
 q(84706,{coords={
@@ -40014,12 +40014,12 @@ i(240185,{cost={{"i",219955,1},{"i",240186,1},{"i",221955,1}}}),
 i(240182,{cost={{"i",221858,3},{"i",240183,1},{"i",219903,1},{"i",221925,1},{"i",221945,1}}}),
 i(240188,{cost={{"i",240189,1},{"i",44501,4}}}),
 i(240179,{cost={{"i",240178,1},{"i",240193,1},{"i",221870,6}}}),
-q(90131,{cost={{"i",240181,1}},providers={{"n",242545}},type="hqt"}),
-q(90523,{cost={{"i",240190,1}},providers={{"n",242545}},type="hqt"}),
-q(90135,{cost={{"i",240185,1}},providers={{"n",242545}},type="hqt"}),
-q(90132,{cost={{"i",240182,1}},providers={{"n",242545}},type="hqt"}),
-q(90133,{cost={{"i",240188,1}},providers={{"n",242545}},type="hqt"}),
-q(90130,{cost={{"i",240179,2}},providers={{"n",242545}},type="hqt"}),
+hqt(90131,{cost={{"i",240181,1}},providers={{"n",242545}}}),
+hqt(90523,{cost={{"i",240190,1}},providers={{"n",242545}}}),
+hqt(90135,{cost={{"i",240185,1}},providers={{"n",242545}}}),
+hqt(90132,{cost={{"i",240182,1}},providers={{"n",242545}}}),
+hqt(90133,{cost={{"i",240188,1}},providers={{"n",242545}}}),
+hqt(90130,{cost={{"i",240179,2}},providers={{"n",242545}}}),
 mnt(428068,{b=1,itemID=211089,lvl=10,qgs={242545},questID=90136,sourceQuests={90130,90131,90132,90133,90135,90523}})}})}),
 h(-58,{
 h(-22,{crs={238544,238545,238546},g={

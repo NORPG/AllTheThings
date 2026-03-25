@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cat,cq,crit,cs,cu,de,fc,flt,h,i,ill,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDecor,_.CreateFirstCraft,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cat,cq,crit,cs,cu,de,fc,flt,h,hqt,i,ill,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDecor,_.CreateFirstCraft,_.CreateFilter,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Craftables=
 h(-23,{DontEnforceSkillRequirements=1,SortPriority=20,g={
 x(1,{
@@ -12158,16 +12158,16 @@ ah(391302,{type="s",g={
 i(200647)}}),
 h(-26,{
 r(391185,{cost={{"i",200479,1}},description="Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",learnedAt=50,providers={{"s",13262}},requireSkill=333,skillID=2825,sourceQuests={71934,71935,71936,71937,71938}}),
-q(71936,{cost={{"i",201358,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71939},type="hqt"}),
-q(71937,{cost={{"i",201359,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71940},type="hqt"}),
-q(71934,{cost={{"i",201356,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71941},type="hqt"}),
-q(71935,{cost={{"i",201357,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71942},type="hqt"}),
-q(71938,{cost={{"i",201360,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71943},type="hqt"}),
-q(71939,{an="i:201358",providers={{"i",201358}},requireSkill=333,type="hqt"}),
-q(71940,{an="i:201359",providers={{"i",201359}},requireSkill=333,type="hqt"}),
-q(71941,{an="i:201356",providers={{"i",201356}},requireSkill=333,type="hqt"}),
-q(71942,{an="i:201357",providers={{"i",201357}},requireSkill=333,type="hqt"}),
-q(71943,{an="i:201360",providers={{"i",201360}},requireSkill=333,type="hqt"})}),
+hqt(71936,{cost={{"i",201358,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71939}}),
+hqt(71937,{cost={{"i",201359,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71940}}),
+hqt(71934,{cost={{"i",201356,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71941}}),
+hqt(71935,{cost={{"i",201357,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71942}}),
+hqt(71938,{cost={{"i",201360,1}},providers={{"s",13262}},requireSkill=333,sourceQuests={71943}}),
+hqt(71939,{an="i:201358",providers={{"i",201358}},requireSkill=333}),
+hqt(71940,{an="i:201359",providers={{"i",201359}},requireSkill=333}),
+hqt(71941,{an="i:201356",providers={{"i",201356}},requireSkill=333}),
+hqt(71942,{an="i:201357",providers={{"i",201357}},requireSkill=333}),
+hqt(71943,{an="i:201360",providers={{"i",201360}},requireSkill=333})}),
 h(-243,{
 i(199934,{f=55,lvl=60}),
 i(199976,{f=55,lvl=60}),
@@ -12692,6 +12692,7 @@ i(198261,{lvl=58}),
 i(198180,{b=1,f=55,lvl=58,requireSkill=202,spellID=386279}),
 i(198181,{b=1,f=55,lvl=58,requireSkill=202,spellID=386279}),
 i(198182,{b=1,f=55,lvl=58,requireSkill=202,spellID=386279}),
+i(202310,{providers={{"i",202309}},spellID=398576}),
 i(198163,{f=55,lvl=58,spellID=386252}),
 i(198164,{f=55,lvl=58,spellID=386254}),
 i(198165,{f=55,lvl=58,spellID=386255}),

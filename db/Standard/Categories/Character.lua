@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,campsite,cl,crit,de,en,ens,exp,faction,flt,gach,h,heir,i,ill,m,mnt,n,o,p,q,r,ra,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateRace,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cl,crit,de,en,ens,exp,faction,flt,gach,h,heir,hqt,i,ill,m,mnt,n,o,p,q,r,ra,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateRace,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Character=
 h(-731,{SortPriority=40,g={
 h(-12,{
@@ -7105,8 +7105,8 @@ i(210580,{races={11}}),
 i(210588,{races={11}}),
 i(210576,{races={11}}),
 i(210538,{races={11}})}}),
-q(82162,{coords={
-[103]={{53.8,83.8}}},lc={1,"questID",78082},providers={{"n",210670}},races={11},sourceQuests={78082},type="hqt"}),
+hqt(82162,{coords={
+[103]={{53.8,83.8}}},lc={1,"questID",78082},providers={{"n",210670}},races={11},sourceQuests={78082}}),
 q(78083,{coords={
 [103]={{64.4,87.3}}},lvl=50,qgs={212387},races={11},sourceQuests={78082},g={
 toy(210455,{b=1,races={11}}),
@@ -7655,15 +7655,15 @@ o(464146,{races={25,26},g={
 i(235715,{races={25,26}})}})}}),
 q(84466,{coords={
 [2366]={{21.9,56.4}}},lvl=50,qgs={229465},races={25,26},sourceQuests={84465}}),
-q(89227,{coords={
-[2366]={{21.9,56.4}}},description="Dialogue becomes available after accepting 'Thousands of Years Ago...' (84466).",qgs={229465},races={25,26},sourceQuests={84465},type="hqt"}),
+hqt(89227,{coords={
+[2366]={{21.9,56.4}}},description="Dialogue becomes available after accepting 'Thousands of Years Ago...' (84466).",qgs={229465},races={25,26},sourceQuests={84465}}),
 q(84467,{coords={
 [2366]={{52.3,19.2}}},lvl=50,qgs={229476},races={25,26},sourceQuests={84466},g={
 o(509560,{coords={
 [2366]={{49.9,23.7},{50.9,18.9}}},races={25,26},g={
 i(235818,{b=1,f=55,races={25,26},spellID=1246888})}})}}),
-q(89270,{coords={
-[2366]={{48.4,20.6}}},description="Dialogue becomes available after accepting 'This Was Home' (84467).",qgs={231915},races={25,26},sourceQuests={84466},type="hqt"}),
+hqt(89270,{coords={
+[2366]={{48.4,20.6}}},description="Dialogue becomes available after accepting 'This Was Home' (84467).",qgs={231915},races={25,26},sourceQuests={84466}}),
 q(92030,{coords={
 [2366]={{52.3,19.2}}},lvl=50,qgs={229476},races={25,26},sourceQuests={84467},g={
 toy(242520,{b=1,races={25,26}}),
