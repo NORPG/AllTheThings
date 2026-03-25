@@ -9431,7 +9431,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(84600),	--
 			q(84601),	--
 			q(84602),	--
-			q(84603),	--
+			q(84603, {isDaily=true}),	--
 			q(84605),	--
 			q(84607),	--
 			q(84612),	--

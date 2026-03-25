@@ -479,13 +479,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 	}),
 })));
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["groups"] = {
-			q(95342),	-- Vorasius intro - L
-			q(95343),	-- Vorasius intro - N
-			q(95341),	-- Vorasius intro - H
+			q(95342, {isWeekly=true}),	-- Vorasius intro - L
+			q(95343, {isWeekly=true}),	-- Vorasius intro - N
+			q(95341, {isWeekly=true}),	-- Vorasius intro - H
 
 			--q(95535),	-- Alleria
 		},

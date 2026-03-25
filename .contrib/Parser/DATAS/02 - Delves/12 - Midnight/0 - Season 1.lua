@@ -69,6 +69,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					-- }),
 					n(252101, {	-- Nullaeus ?
 						["questID"] = 92888,	-- triggers on ? and ?? difficulties
+						["isDaily"] = true,
 						["groups"] = {
 							ach(61797, {	-- My Shady Nemesis
 								i(263413),	-- Nullaeus Domaneye
