@@ -39,7 +39,7 @@ local function GetWaypointLink(guid, text)
 	-- Generates a waypoint link with text (optional) inside the link should the vignette guid have a valid position.
 	if guid and C_VignetteInfo_GetVignettePosition then
 		local mapID = app.CurrentMapID;
-		if mapID then
+		if mapID and mapID > 0 then
 			local pos = C_VignetteInfo_GetVignettePosition(guid, mapID);
 			if pos then
 				if SettingsCache.PlotWaypoints then
@@ -72,6 +72,12 @@ local Ignored = setmetatable({
 		[258181] = true,	-- Construct Ali'a [Decor Specialist]
 		[250982] = true,	-- Dethelin [Decor Specialist]
 		[243286] = true,	-- Lyrendal [Artisan's Consortium Quartermaster]
+		[254944] = true,	-- Tajaka Sawtusk [Decor Specialist]
+		[240279] = true,	-- Magovu [Amani Tribe Renown Quartermaster]
+		[248328] = true,	-- Void Researcher Anomander [The Singularity Renown Quartermaster]
+		[257042] = true,	-- Research Console
+		[259922] = true,	-- Void Researcher Aemely [Decor Specialist]
+		[259864] = true,	-- Sathren Azuredawn [Decor Specialist]
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]
