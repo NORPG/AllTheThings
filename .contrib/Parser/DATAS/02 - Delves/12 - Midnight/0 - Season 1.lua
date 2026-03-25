@@ -57,27 +57,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				-- ["icon"] = [[~_.asset("Delves_Nerubian")]],
 				["coord"] = { 61.2, 71.4, MAP.MIDNIGHT.VOIDSTORM },
 				["groups"] = {
-					n(ACHIEVEMENTS, {
-						ach(61808, {	-- Fabled Let Me Solo Him: Nullaeus
-							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
-						}),
-						ach(61799, {	-- Let Me Solo Him: Nullaeus
-							i(263222),	-- Arcanovoid Construct (MOUNT!)
-						}),
-						ach(61798),	-- Lighting the Dark
-						mapped(ach(61800)),	-- Midnight Delves: Tier 4 (Season 1)
-						mapped(ach(61801)),	-- Midnight Delves: Tier 5 (Season 1)
-						mapped(ach(61802)),	-- Midnight Delves: Tier 6 (Season 1)
-						mapped(ach(61803)),	-- Midnight Delves: Tier 7 (Season 1)
-						mapped(ach(61804)),	-- Midnight Delves: Tier 8 (Season 1)
-						mapped(ach(61805)),	-- Midnight Delves: Tier 9 (Season 1)
-						mapped(ach(61806)),	-- Midnight Delves: Tier 10 (Season 1)
-						mapped(ach(61807, {	-- Midnight Delves: Tier 11 (Season 1)
-							title(550),	-- High Explorer <Name>
-						})),
-						ach(61796),	-- Midnight: Journey's End (Season 1)
-						ach(61797),	-- My Shady Nemesis
-					}),
 					-- n(DELVE_COMPLETION, {	-- TODO: check if still available in 12.1
 					-- 	n(TREASURES, {
 					-- 		filter(COSMETIC, {
@@ -89,14 +68,23 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					-- n(EXPLORATION, {
 					-- }),
 					n(252101, {	-- Nullaeus ?
-						-- ["questID"] = ,
-						-- ["groups"] = {
-						-- },
+						["questID"] = 92888,	-- triggers on ? and ?? difficulties
+						["groups"] = {
+							ach(61797, {	-- My Shady Nemesis
+								i(263413),	-- Nullaeus Domaneye
+							}),
+						},
 					}),
 					n(252892, {	-- Nullaeus ??
-						["questID"] = 92888,	-- maybe HQT for something else??
+						["questID"] = 95154,	-- triggered ?? difficulty
 						["groups"] = {
-							i(263413),	-- Nullaeus Domaneye
+							ach(61808, {	-- Fabled Let Me Solo Him: Nullaeus
+								["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
+							}),
+							ach(61799, {	-- Let Me Solo Him: Nullaeus
+								i(263222),	-- Arcanovoid Construct (MOUNT!)
+							}),
+							ach(61798),	-- Lighting the Dark
 						},
 					}),
 				},
