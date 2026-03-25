@@ -483,25 +483,24 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["groups"] = {
-			q(95342, {isWeekly=true}),	-- Vorasius intro - L
-			q(95343, {isWeekly=true}),	-- Vorasius intro - N
-			q(95341, {isWeekly=true}),	-- Vorasius intro - H
-
 			--q(95535),	-- Alleria
 		},
 	}),
-	inst(1296, bubbleDown({	-- The Voidspire
-		["isWeekly"] = 1307,
+	inst(1307, bubbleDown({	-- The Voidspire
+		["timeline"] = { ADDED_12_0_1_SEASONSTART },
+		["isWeekly"] = true,
 	},{
 		-- LFR
+		q(95342, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		-- Normal
 		q(93981, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
 		q(93993, name(HEADERS.NPC, 240864)),	-- Blinky
+		q(95343, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		--q(93989, name(HEADERS.NPC, 252067)),	-- Terrace Watcher ??
 		-- Heroic
 		q(93982, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
 		q(93994, name(HEADERS.NPC, 240864)),	-- Blinky
-		--q(95341, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn ??
+		q(95341, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		-- Mythic
 		-- All
 			--Do these exist? Only one HQT is being reported
