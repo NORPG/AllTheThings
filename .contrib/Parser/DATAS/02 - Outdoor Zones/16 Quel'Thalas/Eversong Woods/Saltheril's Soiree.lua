@@ -144,6 +144,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91984, {	-- Sungrub Silk
 					i(249422),	-- Sunsilk (QI!)
 				}),
+				q(91990, {	-- Sunset to Sea
+					i(267040),	-- Sea Caller (QI!)
+				}),
 				q(91985, {	-- Windrunner Memorabilia
 					i(249542),	-- Partially Used Memento (QI!)
 					o(568507, {	--

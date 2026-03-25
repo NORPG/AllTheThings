@@ -151,7 +151,10 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}),
 			-- Season 1
-			-- ELEKK MOUNT PROMO HERE?
+			i(246917, {	-- Thunder-ridged Elekk (MOUNT!)
+				["description"] = "Available from the pringleswow.de promotion in a limited quantity to the first 3000 players who scanned a QR code found around cities in Germany.",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_LAUNCH },
+			}),
 			i(265545, {	-- Cuddly Void Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between March 26th, 3:00 p.m. & April 23rd, 3:00 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed April 23rd, 2026
@@ -167,6 +170,10 @@ root(ROOTS.Promotions, {
 			i(264281, {	-- Preserved Gift of Gilneas (DECOR!)
 				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided.",
 				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed 6 April 2026 at 11:59pm (BST)
+			}),
+			i(262660, {	-- Egg Farmer's Backpack (COSMETIC!)
+				["description"] = "Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
 			}),
 
 			-- Season 2

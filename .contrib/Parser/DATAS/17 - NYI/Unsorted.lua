@@ -1220,8 +1220,6 @@ root(ROOTS.Unsorted, {
 				i(265655),	-- Ritual Components
 				i(265710),	-- Elementary Voidcore
 				i(265749),	-- Idol of the Depths \\ [PH] Threshadon Loa Blessing
-				i(266440),	-- Idol of Growth
-				i(267040),	-- Sea Caller
 				-- QI /Devourer??
 				i(250325),	-- Night's Embrace
 			}),
@@ -1349,7 +1347,6 @@ root(ROOTS.Unsorted, {
 				i(263395),	-- Ensemble: Elite Galactic Gladiator's Warlock Armor
 				i(263396),	-- Ensemble: Elite Galactic Gladiator's Warrior Armor
 				i(263397),	-- Arsenal: Elite Galactic Gladiator's Weapons
-				i(267491),	-- Novice Combatant's Cloak
 				i(267573),	-- Cracked Medal of Conquest
 				i(256553),	-- Galactic Equipment Chest
 				--pvp
@@ -1660,7 +1657,6 @@ root(ROOTS.Unsorted, {
 				i(262585),	-- Pristine Lunch Bag
 				i(262587),	-- Brown Lunch Bag
 				i(262588),	-- Sack Lunch
-				i(262660),	-- Egg Farmer's Backpack
 			}),
 			n(DECOR, {
 				-- On a Sathren Azuredawn vendor during Beta, not there on live. Maybe moved to some other vendor?

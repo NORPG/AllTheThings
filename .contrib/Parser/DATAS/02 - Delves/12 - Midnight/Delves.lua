@@ -704,6 +704,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 53.0, 43.1, THE_DARKWAY },
 					["questID"] = 94026,
 				}),
+				--o(xx, {
+				--	["coord"] = { 43.9, 46.0, THE_DARKWAY },
+				--	["questID"] = 94045,
+				--}),
 			}),
 			n(REWARDS, {
 				filter(MISC, {

@@ -10,36 +10,37 @@ local THORMBELAN = 2829
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
-	-- [CRAGSPINE] = {
-	-- 	-- Add CRS IDs here
-	-- },
+	[CRAGSPINE] = {
+		244424,
+	},
 	[LUASHAL] = {
 		244762,
 	},
-	-- [PREDAXUS] = {
-	-- 	-- Add CRS IDs here
-	-- },
-	-- [THORMBELAN] = {
-	-- 	-- Add CRS IDs here
-	-- },
+	[PREDAXUS] = {
+		248864
+	},
+	[THORMBELAN] = {
+		249776
+	},
 }
 
 ------ EncounterToLoot ------
 local EncounterToLoot = {
 	[CRAGSPINE] = {
-		i(250450),	-- Forest Sentinel's Savage Longbow
-		i(250446),	-- Cragtender Bulwark
 		i(250461),	-- Chain of the Ancient Watcher
+		i(250446),	-- Cragtender Bulwark
+		i(250450),	-- Forest Sentinel's Savage Longbow
+		i(266440),	-- Idol of Growth (QS!)
 	},
 	[LUASHAL] = {
 		i(250451),	-- Dawncrazed Beast Cleaver
-		i(250453),	-- Scepter of the Unbound Light
 		i(250447),	-- Radiant Eversong Scepter
+		i(250453),	-- Scepter of the Unbound Light
 	},
 	[PREDAXUS] = {
 		i(250454),	-- Devouring Vanguard's Soulcleaver
-		i(250448),	-- Voidbender's Spire
 		i(250460),	-- Encroaching Shadow Signet
+		i(250448),	-- Voidbender's Spire
 	},
 	[THORMBELAN] = {
 		i(250455),	-- Beastly Blossombarb
@@ -51,8 +52,10 @@ local EncounterToLoot = {
 ------ EncounterCoords ------
 local EncounterCoords = {
 	[CRAGSPINE] = {	-- Add coordinates and map here
+		{ 45.8, 47.4, MAP.MIDNIGHT.ZULAMAN },
 	},
 	[LUASHAL] = {	-- Add coordinates and map here
+		{ 45.2, 60.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 	},
 	[PREDAXUS] = {	-- Add coordinates and map here
 	},
@@ -90,17 +93,17 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				},
 			}),
 			Boss(CRAGSPINE, {	-- Cragspine
-				-- ["questID"] = xx,
+				["questID"] = 92128,
 			}),
-			-- BossWorldQuest(CRAGSPINE, 0),	-- Cragspine WQ
+			BossWorldQuest(CRAGSPINE, 92123),	-- Cragspine WQ
 			Boss(LUASHAL, {	-- Lu'ashal
 				["questID"] = 92127,	-- maybe this is something else since it's account-wide...
 			}),
 			BossWorldQuest(LUASHAL, 92560),	-- Lu'ashal WQ
 			Boss(PREDAXUS, {	-- Predaxus
-				-- ["questID"] = xx,
+				["questID"] = 92130,
 			}),
-			-- BossWorldQuest(PREDAXUS, 0),	-- Predaxus WQ
+			BossWorldQuest(PREDAXUS, 92636),	-- Predaxus WQ
 			Boss(THORMBELAN, {	-- Thormbelan
 				-- ["questID"] = xx,
 			}),
