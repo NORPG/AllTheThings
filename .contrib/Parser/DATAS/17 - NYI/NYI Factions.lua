@@ -739,6 +739,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
 			faction(2664),	-- Flynn Fairwind
 			faction(2665),	-- Lillistrasza
+			faction(2663),	-- Meerah
 			faction(2666),	-- Roasts and Boasts
 			faction(2662),	-- [PH] The Power of Friendship
 		})),
