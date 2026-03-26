@@ -4023,12 +4023,6 @@ root(ROOTS.Unsorted, {
 			i(170042),	-- Scattered Bones
 			i(170043),	-- Split Bone
 			i(170044),	-- Pitted Finger-Bone
-			i(170055),	-- Decrypted Message 001-322
-			i(170056),	-- Decrypted Message 001-346
-			i(170057),	-- Decrypted Message 001-372
-			i(170058),	-- Decrypted Message 001-398
-			i(170059),	-- Decrypted Message 002-001
-			i(170060),	-- Encrypted Message
 			i(170064),	-- Highmountain Totem
 			i(170078),	-- Gleaming Ashmaul Strongbox
 			i(170100),	-- Hungry Herald's Tentacle Taco
