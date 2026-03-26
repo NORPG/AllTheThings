@@ -502,6 +502,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93994, name(HEADERS.NPC, 240864)),	-- Blinky
 		q(95341, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		-- Mythic
+		q(95344, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		-- All
 			--Do these exist? Only one HQT is being reported
 	})),
