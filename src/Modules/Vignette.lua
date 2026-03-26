@@ -91,6 +91,7 @@ local Ignored = setmetatable({
 		[257042] = true,	-- Research Console
 		[259922] = true,	-- Void Researcher Aemely [Decor Specialist]
 		[259864] = true,	-- Sathren Azuredawn [Decor Specialist]
+		[256828] = true,	-- Dennia Silvertongue [Decor Specialist]
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]
