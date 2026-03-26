@@ -1878,7 +1878,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(231787),	-- Vigilante's Disposable Falling Shadow Grapple Gun
 			i(229810),	-- Vintage Kaja'Cola Can
 			i(236956),	-- Void-Touched Valorstone
-			i(235713),	-- Weird Sand
 			i(233054),	-- Wonder Ball
 			i(225766),	-- Zoom-Zoom Boosters
 			i(232929),	-- [DNT] Large Surge Chest

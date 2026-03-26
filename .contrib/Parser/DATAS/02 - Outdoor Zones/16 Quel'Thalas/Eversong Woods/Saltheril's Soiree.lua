@@ -182,6 +182,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91997, {	-- Power Clean
 					i(249452),	-- Inanimate Broom (QI!)
 				}),
+				q(91994, {	-- Pyrepetal Purposes
+					i(249444),	-- Eversong Pyrepetal (QI!)
+				}),
 				q(91995),	-- What Horrible Magic
 			})),
 			-- Shades of the Row weekly
@@ -196,6 +199,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92007, {	-- Begged, Borrowed or Stolen
 					i(249544),	-- Chest of Stolen Valuables (QI!)
+				}),
+				q(91999, {	-- A Bit of Bloodthistle
+					i(249472),	-- Fragrant Bloodthistle (QI!)
 				}),
 				q(92002, {	-- Dangerous Showpieces
 					i(249528),	-- Twilight Weaponry (QI!)

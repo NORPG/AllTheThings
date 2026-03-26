@@ -1194,8 +1194,6 @@ root(ROOTS.Unsorted, {
 				i(249421),	-- Mana-Fortified Vintage
 				i(249439),	-- Bright Feather
 				i(249440),	-- Bright Feather
-				i(249444),	-- Eversong Pyrepetal
-				i(249472),	-- Fragrant Bloodthistle
 				i(249527),	-- Elder Painting
 				i(249543),	-- Special Remedy
 				i(249553),	-- Lost Mirror
