@@ -344,18 +344,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			q(91104),	-- Prey: Zadu, Fist of Nalorakk (Normal)
 			q(91228),	-- Prey: Zadu, Fist of Nalorakk (Hard)
 			q(91229),	-- Prey: Zadu, Fist of Nalorakk (Nightmare)
-			q(93872),	-- Prey Complete - Normal #1
-			q(93853),	-- Prey Complete - Normal #2
-			q(93855),	-- Prey Complete - Normal #3
-			q(93856),	-- Prey Complete - Normal #4
-			q(93874),	-- Prey Complete - Hard #1
-			q(93875),	-- Prey Complete - Hard #2
-			q(93858),	-- Prey Complete - Hard #3
-			q(93860),	-- Prey Complete - Hard #4
-			-- q(TODO),	-- Prey Complete - Nightmare #1
-			-- q(TODO),	-- Prey Complete - Nightmare #2
-			-- q(TODO),	-- Prey Complete - Nightmare #3
-			-- q(TODO),	-- Prey Complete - Nightmare #4
 		})),
 		n(REWARDS, {
 			-- Currency
@@ -613,6 +601,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(95002),	-- 3rd per week
 			q(95003),	-- 4th per week
 
+			q(93872),	-- Prey Complete - Normal #1
+			q(93853),	-- Prey Complete - Normal #2
+			q(93855),	-- Prey Complete - Normal #3
+			q(93856),	-- Prey Complete - Normal #4
+			q(93874),	-- Prey Complete - Hard #1
+			q(93875),	-- Prey Complete - Hard #2
+			q(93858),	-- Prey Complete - Hard #3
+			q(93860),	-- Prey Complete - Hard #4
 			--Seems like lockout for rewards? Weekly
 			--- Adventures
 			q(93168),	-- Adventurer chest lockout (Normal), 1st
