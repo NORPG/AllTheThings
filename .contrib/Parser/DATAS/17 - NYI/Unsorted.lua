@@ -396,8 +396,6 @@ root(ROOTS.Unsorted, {
 			i(263925),	-- Void-Touched Foci
 			i(263926),	-- Void-Touched Greatwand
 			i(263927),	-- Void-Touched Glaiveblade
-			i(263928),	-- Cache of Void-Touched Armaments
-			i(263929),	-- Cache of Void-Touched Armaments
 			i(263941),	-- Void-Touched Rifle
 			i(263942),	-- Void-Touched Fang
 			i(263943),	-- Void-Touched Gutter
@@ -416,19 +414,7 @@ root(ROOTS.Unsorted, {
 			i(263969),	-- Void-Touched Greatwand
 			i(263970),	-- Void-Touched Glaiveblade
 			i(264162),	-- Enchanted Snowflake [PH]
-			i(264314),	-- Cache of Void-Touched Headgear
-			i(264315),	-- Cache of Void-Touched Shoulderwear
-			i(264316),	-- Cache of Void-Touched Cloaks
-			i(264317),	-- Cache of Void-Touched Chestpieces
-			i(264318),	-- Cache of Void-Touched Bracers
-			i(264319),	-- Cache of Void-Touched Gloves
-			i(264320),	-- Cache of Void-Touched Belts
-			i(264321),	-- Cache of Void-Touched Legwear
-			i(264322),	-- Cache of Void-Touched Boots
-			i(264323),	-- Cache of Void-Touched Weapons
 			i(264324),	-- PH Decor (Floating Podium, Ink Well, Runed Paper, Void Candle)
-			i(264348),	-- Unbound Manawyrm
-			i(264914),	-- Ranger's Cache
 			i(265924),	-- High-Mounted Razorwind Bowl Chandelier
 			i(265925),	-- Razorwind Bowl Chandelier
 			i(265926),	-- Low-Hanging Razorwind Bowl Chandelier
@@ -529,7 +515,6 @@ root(ROOTS.Unsorted, {
 			i(268513),	-- Emberstone Loyalist Boltshot
 			i(268514),	-- Gilneas Loyalist Boltshot
 			i(268552),	-- Ascendant Voidcore
-			i(268578),	-- Void-Touched Hawkstrider
 			i(268592),	-- Blue Sunwalker Breastplate
 			i(268593),	-- Blue Sunwalker Cloak
 			i(268594),	-- Blue Sunwalker Gauntlets
@@ -628,7 +613,6 @@ root(ROOTS.Unsorted, {
 			i(268910),	-- Sunbringer's Totemic Edge
 			i(268911),	-- Dawnchaser Totemic Edge
 			i(268969),	-- Nebulous Voidcache: Delver's Trove
-			i(268996),	-- Field Accolade
 			i(269001),	-- Arsenal: Drakebreaker's Weapons
 			i(269002),	-- Arsenal: Hellbloom Weapons
 			i(269234),	-- Overflowing Ritual Site Cache
@@ -647,8 +631,6 @@ root(ROOTS.Unsorted, {
 			i(270061),	-- Void-Bathed Snapdragon
 			i(270062),	-- Void-Touched Chick
 			i(270063),	-- Void-Touched Lynx Kitten
-			i(270244),	-- Field Pouch
-			i(270247),	-- Field Satchel
 			i(270279),	-- Crown of Midnight Springflowers
 			i(270280),	-- Crown of Azure Springflowers
 			i(270281),	-- Crown of Sepia Springflowers
@@ -667,8 +649,6 @@ root(ROOTS.Unsorted, {
 			i(270295),	-- Crown of Aquatic Springflowers
 			i(270296),	-- Crown of Snowy Springflowers
 			i(270297),	-- Crown of Sunny Springflowers
-			i(270330),	-- Void-Touched Dragonhawk Egg
-			i(270331),	-- Void-Infused Mindbreaker Fry
 			i(270932),	-- Wriggling Field Pouch
 			i(270933),	-- Bulging Field Pouch
 			i(270934),	-- Recruit's Field Pouch
@@ -724,7 +704,6 @@ root(ROOTS.Unsorted, {
 			i(270986),	-- Ranger Recruit's Medallion
 			i(270987),	-- Recruit's Field Satchel
 			i(270988),	-- Wriggling Capybara
-			i(270989),	-- Cappy
 			i(270990),	-- Curious Lynx Kitten
 			i(270991),	-- Sunfury Great Bulwark
 			i(270992),	-- Amani Hex Crest
@@ -786,7 +765,6 @@ root(ROOTS.Unsorted, {
 			i(271048),	-- Wriggling Tentacle Fetish
 			i(271049),	-- Ritual Weaver's Spellstick
 			i(271050),	-- Forest Hunter's Quiver
-			i(271158),	-- Dark Obelisk
 			i(271162),	-- Sin'dorei Garden Swing
 			i(271163),	-- Blazing Guardian's Rug
 			i(271164),	-- Dream Guardian's Rug
@@ -805,11 +783,7 @@ root(ROOTS.Unsorted, {
 			i(271341),	-- Galactic Voidsliver
 			i(271342),	-- Galactic Void Matrix
 			i(271353),	-- Collection of Valuables
-			i(271785),	-- Ritual Spoils
-			i(271786),	-- Ritual Site Reports
-			i(271787),	-- Field Accolades
 			i(271814),	-- Spring Dagger-Tined Rake
-			i(271973),	-- Ritual Spoils
 			i(271974),	-- Ritual Spoils
 			i(271975),	-- Ritual Spoils
 			i(271976),	-- Ritual Spoils
@@ -860,16 +834,11 @@ root(ROOTS.Unsorted, {
 			i(272961),	-- Spellbreakers Bladestaff
 			i(273013),	-- Void-Permeated Hide Scrap
 			i(273014),	-- Howling Glass Shard
-			i(273135),	-- Void Elf Floating Desk
-			i(273142),	-- Runic Parchment
-			i(273147),	-- Void Inkwell
 			i(273152),	-- Delve Gearbox
 			i(273153),	-- Delve Gearbox
 			i(273154),	-- Delve Gearbox
 			i(273155),	-- Delve Gearbox
 			i(273156),	-- Delve Gearbox
-			i(273157),	-- Void Flame Candle
-			i(273159),	-- Void Elf Scribe's Desk
 		})),
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
 			n(ARMOR, {
