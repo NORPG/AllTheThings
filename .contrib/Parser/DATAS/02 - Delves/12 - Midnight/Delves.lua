@@ -917,7 +917,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--	-- One time rep bonus from Bountiful Delves
 		--	--q(),	-- factionName
 		})),
-		q(93866),	-- Die in a delve, trigger mail with A Grave Concern
+		q(93866, name(HEADERS.Item, 258738)),	-- Die in a delve, trigger mail with A Grave Concern
 
 		q(93819),	-- Bountiful #1, Tier 8+
 		--q(93820),	-- "Opened 2nd bountiful chest at the end of the week"
