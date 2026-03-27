@@ -3339,6 +3339,7 @@ end, {
 app.ChatCommands.Add("contribute-debug", function(args)
 	DebugPrinting = not DebugPrinting
 	AllTheThingsSavedVariables.Contributor_DebugPrinting = DebugPrinting
+	app.print("Showing",DebugPrinting and "debug" or "basic","ATT contribution information.")
 	return true
 end, {
 	"Usage : /att contribute-debug"
