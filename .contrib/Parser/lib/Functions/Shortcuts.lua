@@ -21,6 +21,22 @@ struct = function(field, id, t)		-- Construct a commonly formatted object.
 		error("Don't reuse tables within constructed objects! Fix Group: "..field..":"..id.." which has "..t[field].." already assigned!")
 	end
 	t[field] = id;
+	if t._DATAGROUP then
+		local group = DATAGROUP[t._DATAGROUP]
+		group[#group + 1] = t
+		group = IDGROUP[t._DATAGROUP][field]
+		group[#group + 1] = id
+	end
+	if t._DATAGROUPS then
+		local datagroup
+		for i=1,#t._DATAGROUPS do
+			datagroup = t._DATAGROUPS[i]
+			local group = DATAGROUP[datagroup]
+			group[#group + 1] = t
+			group = IDGROUP[datagroup][field]
+			group[#group + 1] = id
+		end
+	end
 	return t;
 end
 
@@ -1538,6 +1554,29 @@ r_withQuest = function(recipeID, questID, added, description, maps)
 	end
     return t
 end
+-- Creates a simple 'gathered' Item which has a set of object providers
+-- Note: If additional table data is provided it must be the last param
+i_gathered = function(itemID, ...)
+	local t
+	local params = {...}
+	local last = params[#params]
+	if type(last) == "table" then
+		t = i(itemID, last)
+		last = nil
+		params[#params] = nil
+	else
+		t = i(itemID)
+	end
+	local providers = t.providers
+	if not providers then
+		providers = {}
+		t.providers = providers
+	end
+	for i=1,#params do
+		providers[#providers + 1] = { "o", params[i] }
+	end
+	return t
+end
 -- Outdoor Zones Headers with Filters
 battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
 	if not t then
@@ -1768,17 +1807,22 @@ cnUnavailable = function(t)	-- the object only unavailable on CN realm
 	return regionUnavailable("CN", t);
 end
 
--- SYM Constants container
+-- Constants containers
 do
 	local AutoTableMetaFunc
 	local function SelfAutoTable(t)
 		return setmetatable(t, { __index = AutoTableMetaFunc })
 	end
 	AutoTableMetaFunc = function(t, key)
-		local value = SelfAutoTable({})
-		t[key] = value
-		return value
+		-- only auto-key string keys
+		if type(key) == "string" then
+			local value = SelfAutoTable({})
+			t[key] = value
+			return value
+		end
 	end
+	DATAGROUP = SelfAutoTable({})
+	IDGROUP = SelfAutoTable({})
 	SYM = SelfAutoTable({})
 end
 
