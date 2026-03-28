@@ -19325,6 +19325,7 @@ SPELL_FAILED_CUSTOM_ERROR_263 = "You must be at your shipyard.";
 SPELL_FAILED_CUSTOM_ERROR_264 = "Requires a level 3 Mage Tower.";
 SPELL_FAILED_CUSTOM_ERROR_265 = "Requires a level 3 Spirit Lodge.";
 SPELL_FAILED_CUSTOM_ERROR_266 = "You do not like Fel Eggs and Ham.";
+SPELL_FAILED_CUSTOM_ERROR_2666 = "Your quest log is full.";
 SPELL_FAILED_CUSTOM_ERROR_267 = "You have already entered in to this trade agreement.";
 SPELL_FAILED_CUSTOM_ERROR_268 = "You cannot steal that while guards are on duty.";
 SPELL_FAILED_CUSTOM_ERROR_269 = "You have already used a Vantus Rune this week.";
