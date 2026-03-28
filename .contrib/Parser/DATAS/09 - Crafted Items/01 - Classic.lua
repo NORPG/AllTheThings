@@ -6495,6 +6495,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- ____________________________________________
 						-- Gold
 						o(1734, {	-- Gold Vein
+							["description"] = "Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 155,
 							-- #endif
@@ -6943,7 +6944,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "o", 165658 },	-- Dark Iron Deposit
 						}),
 						i(2776, {	-- Gold Ore
-							["description"] = "Gold Veins is a rare spawn in place of Iron Deposits and Mithril Deposits.",
 							["maps_disp"] = {
 								ARATHI_HIGHLANDS,
 								BADLANDS,
