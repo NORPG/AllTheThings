@@ -28,6 +28,7 @@ L.ACCOUNT_WIDE_DEATHS_TOOLTIP = "Death tracking really only exists for pre-Wrath
 L.ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
+L.ACCOUNT_WIDE_PROFESSION_NODES_TOOLTIP = "Profession nodes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
 L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
 L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "Recipes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
 L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked Account-Wide in Blizzard's database for achievements, so turning this on may be a good idea.";
@@ -602,6 +603,9 @@ L.PRESET_UPDATE_SUCCESS = "Updated the preset successfully.";
 L.PROFESSION = "Profession";
 L.PROFESSION_LIST = "Profession List";
 L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
+L.PROFESSION_NODE_ID = "Profession Node ID";
+L.PROFESSION_NODES_CHECKBOX = "Profession Nodes";
+L.PROFESSION_NODES_CHECKBOX_TOOLTIP = "Enable this option to track profession nodes completion.";
 L.PROFILE = "Profile";
 L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
@@ -1721,6 +1725,7 @@ localize(L.HEADER_NAMES, {
 	[-739] = COVENANT_SANCTUM_TAB_RENOWN.." 2",
 	[-740] = COVENANT_SANCTUM_TAB_RENOWN.." 4",
 	[-743] = COVENANT_SANCTUM_TAB_RENOWN.." 9",
+	[-744] = "Nodes",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2437,6 +2442,7 @@ localize(L.HEADER_ICONS, {
 	[-739] = 5015301,
 	[-740] = 5015301,
 	[-743] = 5015301,
+	[-744] = 1120721,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
