@@ -1114,8 +1114,6 @@ root(ROOTS.Unsorted, {
 				i(249543),	-- Special Remedy
 				i(249553),	-- Lost Mirror
 				i(250705),	-- Naga Missive PH NAME
-				i(251899),	-- Anasterian's Book of Law
-				i(251904),	-- Crown of the High King
 				i(252192),	-- Rune Key
 				i(253519),	-- Pathogenic Essence
 				i(254368),	-- Soul Essence
@@ -1328,27 +1326,7 @@ root(ROOTS.Unsorted, {
 				i(251794),	-- Gris-gris of Confidence
 				i(251882),	-- Fragmented Light Shard
 				i(251886),	-- Unstable Mana-Locket
-				-- Armor Quest
-				i(257169),	-- Voidbreaker's Signet \\ [DNT] [PH] Max Level Campaign - Accessory - FINGER 1
-				i(257171),	-- Voidbreaker's Pendant \\ [DNT] [PH] Max Level Campaign - Accessory - NECK
-				i(257220),	-- Voidbreaker's Band \\ [DNT] [PH] Max Level Campaign - Accessory - FINGER 2
-				i(257234),	-- Voidbreaker's Waraxe \\ [DNT] [PH] Max Level Campaign - Weapon - Axe1H - AGI
-				i(257237),	-- Voidbreaker's Longbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI
-				i(257238),	-- Voidbreaker's Dagger \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI
-				i(257242),	-- Voidbreaker's Sight \\ [DNT] [PH] Max Level Campaign - Generic - Offhand - INT
-				i(257248),	-- Voidbreaker's Hammer \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - AGI
-				i(257249),	-- Voidbreaker's War Mace \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR
-				i(257250),	-- Voidbreaker's Mace \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - INT
-				i(257251),	-- Voidbreaker's Poleaxe \\ [DNT] [PH] Max Level Campaign - Weapon - Polearms - AGI
-				i(257254),	-- Voidbreaker's Spike \\ [DNT] [PH] Max Level Campaign - Weapon - Staff - AGI
-				i(257256),	-- Voidbreaker's Staff \\ [DNT] [PH] Max Level Campaign - Weapon - Staff - INT
-				i(257269),	-- Voidbreaker's Ritual Sword \\ [DNT] [PH] Max Level Campaign - Weapon - Sword1H - INT
-				i(257270),	-- Voidbreaker's Blade \\ [DNT] [PH] Max Level Campaign - Weapon - Sword1H - AGI
-				i(257271),	-- Voidbreaker's Longsword \\ [DNT] [PH] Max Level Campaign - Weapon - Sword1H - STR
-				i(257284),	-- Voidbreaker's Greatsword \\ [DNT] [PH] Max Level Campaign - Weapon - Sword2H - STR
-				i(257289),	-- Voidbreaker's Glaive \\ [DNT] [PH] Max Level Campaign - Weapon - Warglaives - AGI/INT
 				-- Quest Armor
-				i(257537),	-- Voidbreaker's Wall \\ [DNT] [PH] Max Level Campaign - Weapon - Shield - STRINT
 				i(257538),	-- Scorching Conqueror's Crown
 				i(257539),	-- Scorching Conqueror's Belt
 				i(257540),	-- Scorching Conqueror's Treads
@@ -1358,9 +1336,6 @@ root(ROOTS.Unsorted, {
 				i(257544),	-- Scorching Conqueror's Mantle
 				i(257545),	-- Scorching Conqueror's Cloak
 				i(257547),	-- Ensemble: Scorching Conqueror
-				i(257686),	-- Voidbreaker's Kukri \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI - 2
-				i(257687),	-- Voidbreaker's Basher \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR - 2
-				i(257688),	-- Voidbreaker's Warbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI - 2
 				--
 				i(260414),	-- Amulet of the Ascendant Void \\ Voidsong Chain
 				-- Armor
@@ -1393,12 +1368,7 @@ root(ROOTS.Unsorted, {
 				i(257235),	-- Voidbreaker's Cleaver
 				i(257236),	-- Voidbreaker's Runeaxe
 				i(257239),	-- Voidbreaker's Knife
-				i(257252),	-- Voidbreaker's Bardiche
 				i(257534),	-- Voidbreaker's Baton
-				-- Quest rewards
-				i(264286),	-- Voidbreaker's Choker
-				i(264287),	-- Voidbreaker's Circle
-				i(264288),	-- Voidbreaker's Ring
 				-- Armor
 				i(267387),	-- Test Item [DNT] - While you are poisoned
 				i(267388),	-- Test Item [DNT] - Apply Poison - Label
@@ -1573,10 +1543,6 @@ root(ROOTS.Unsorted, {
 				i(262588),	-- Sack Lunch
 			}),
 			n(DECOR, {
-				-- On a Sathren Azuredawn vendor during Beta, not there on live. Maybe moved to some other vendor?
-				i(246458),	-- Grand Aethercharged Crystal
-				i(251914),	-- Sumptuous Berry Pie (DECOR!)
-				--
 				i(263239),	-- Cuddly Tan Grrgle \\ Cuddly  Tan Grrgle
 				i(263241),	-- Cuddly Seafoam Grrgle
 				i(263242),	-- Cuddly Saffron Grrgle

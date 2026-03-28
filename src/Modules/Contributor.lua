@@ -2857,6 +2857,7 @@ MobileDB.GameObject = {
 	[573522] = true,	-- Suspicious Keyring
 	[573547] = true,	-- Ashwood Lumber
 	[573695] = true,	-- Ironwood Lumber
+	[573838] = true,	-- Ley Line Coil (q:88930)
 	[573841] = true,	-- Fungalcap Crock [Harandar]
 	[573991] = true,	-- Budding Barrel [Harandar]
 	[574126] = true,	-- Leaf-wrapped Package [Harandar]

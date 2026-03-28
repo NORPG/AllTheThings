@@ -157,6 +157,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					}),
 				},
 			}),
+			q(90718, {	-- Request of the Arcantina
+				["sourceQuests"] = { 92520 },	-- Wake of the Darkwell
+				["qg"] = 240265,	-- Chief Telemancer Oculeth
+				["coord"] = { 47.4, 69.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = { i(260165) },	-- Request for Reagents (PQI!)
+			}),
 			-- Unsorted, these are part of the highly decorated achievement, need to be fitted into the rest of the structure of this file. Do not put them in HQT or you will get parser warnings.
 			hqt(92380),	-- Defense Fragment
 			hqt(92379, name(HEADERS.Item, 250876, {	-- Evergreen Vine

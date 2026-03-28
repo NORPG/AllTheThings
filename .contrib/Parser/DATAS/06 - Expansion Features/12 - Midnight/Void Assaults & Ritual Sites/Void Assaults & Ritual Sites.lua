@@ -249,36 +249,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 				n(WEAPONS, {
 					-- Cache of Void-Touched Weapons (itemID 264323)
-					i(263894),	-- Void-Touched Rifle
-					i(263898),	-- Void-Touched Fang
-					i(263900),	-- Void-Touched Gutter
-					i(263901),	-- Void-Touched Sacrificial Knife
-					i(263902),	-- Void-Touched Twinblade
-					i(263903),	-- Void-Touched Basher
-					i(263904),	-- Void-Touched Gavel
 					i(263905),	-- Void-Touched Apprentice's Gavel
-					i(263906),	-- Void-Touched Bulwark
-					i(263907),	-- Void-Touched Spade
-					i(263908),	-- Void-Touched Poleaxe
-					i(263909),	-- Void-Touched Sunfury Stave
-					i(263910),	-- Void-Touched Beacon Staff
+					i(263903),	-- Void-Touched Basher
 					i(263911),	-- Void-Touched Battle Baton
-					i(263912),	-- Void-Touched Magister's Baton
-					i(263913),	-- Void-Touched Smasher
-					i(263914),	-- Void-Touched Hammer
-					i(263915),	-- Void-Touched Torch
-					i(263916),	-- Void-Touched Tome
-					i(263917),	-- Void-Touched Flaredblade
-					i(263918),	-- Void-Touched Guard's Blade
-					i(263919),	-- Void-Touched Magister's Sword
+					i(263910),	-- Void-Touched Beacon Staff
+					i(263906),	-- Void-Touched Bulwark
 					i(263920),	-- Void-Touched Dueling Blade
-					i(263921),	-- Void-Touched Sunfury Blade
-					i(263922),	-- Void-Touched Mageblade
+					i(263898),	-- Void-Touched Fang
+					i(263917),	-- Void-Touched Flaredblade
+					i(263925),	-- Void-Touched Foci
+					i(263904),	-- Void-Touched Gavel
+					i(263927),	-- Void-Touched Glaiveblade
 					i(263923),	-- Void-Touched Greatblade
 					i(263924),	-- Void-Touched Greatbow
-					i(263925),	-- Void-Touched Foci
 					i(263926),	-- Void-Touched Greatwand
-					i(263927),	-- Void-Touched Glaiveblade
+					i(263918),	-- Void-Touched Guard's Blade
+					i(263900),	-- Void-Touched Gutter
+					i(263914),	-- Void-Touched Hammer
+					i(263922),	-- Void-Touched Mageblade
+					i(263912),	-- Void-Touched Magister's Baton
+					i(263919),	-- Void-Touched Magister's Sword
+					i(263908),	-- Void-Touched Poleaxe
+					i(263894),	-- Void-Touched Rifle
+					i(263901),	-- Void-Touched Sacrificial Knife
+					i(263913),	-- Void-Touched Smasher
+					i(263907),	-- Void-Touched Spade
+					i(263921),	-- Void-Touched Sunfury Blade
+					i(263909),	-- Void-Touched Sunfury Stave
+					i(263916),	-- Void-Touched Tome
+					i(263915),	-- Void-Touched Torch
+					i(263902),	-- Void-Touched Twinblade
 				}),
 				filter(MISC, {
 				}),

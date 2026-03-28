@@ -9136,7 +9136,7 @@ i(124108),
 i(133731,{b=1,lvl=39,requireSkill=356,spellID=201826}),
 i(133726,{b=1,lvl=39,requireSkill=356,spellID=201826}),
 i(133734,{b=1,lvl=39,requireSkill=356,spellID=201826}),
-mnt(253711,{awp=70300,b=1,description="Caught in green pools around Antoran Wastes.",itemID=152912,lvl=10,mapID=885}),
+mnt(253711,{awp=70300,b=1,itemID=152912,lvl=10}),
 i(124111),
 i(133741,{b=1,lvl=39,requireSkill=356,spellID=201826}),
 i(133738,{b=1,lvl=39,requireSkill=356,spellID=201826}),
@@ -10813,7 +10813,13 @@ i(158381,{f=55,lvl=40,spellID=267198}),
 i(159791,{f=55,requireSkill=197,spellID=268965})})}}),
 h(-45,{
 q(56042,{isDaily=1,lvl=50,qgs={153897},g={
-i(168740,{b=1,sym={{"select","itemID",132892},{"pop"}}})}})})}),
+i(168740,{b=1,sym={{"select","itemID",132892},{"pop"}},g={
+i(170060,{b=1,spellID=303556,g={
+i(170055,{b=1}),
+i(170056,{b=1}),
+i(170057,{b=1}),
+i(170058,{b=1}),
+i(170059,{b=1})}})}})}})})}),
 x(9,{
 i(173381,{awp=90002,b=1}),
 i(173382,{awp=90002,b=1}),

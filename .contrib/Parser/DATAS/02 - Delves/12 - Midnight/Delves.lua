@@ -704,10 +704,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 53.0, 43.1, THE_DARKWAY },
 					["questID"] = 94026,
 				}),
-				--o(xx, {
-				--	["coord"] = { 43.9, 46.0, THE_DARKWAY },
-				--	["questID"] = 94045,
-				--}),
+				o(618284, {	-- Sturdy Chest
+					["coord"] = { 41.6, 48.2, THE_DARKWAY },
+					["questID"] = 94027,
+				}),
+				o(618296, {	-- Sturdy Chest
+					["coord"] = { 45.6, 45.4, THE_DARKWAY },
+					["questID"] = 94045,
+				}),
 			}),
 			n(REWARDS, {
 				filter(MISC, {

@@ -3500,6 +3500,9 @@ h(-45,{requireSkill=333,g={
 q(93699,{coords={
 [2393]={{48,53.9}}},isWeekly=1,lvl=78,qgs={243349},requireSkill=333,g={
 i(263464,{b=1,isWeekly=1,requireSkill=333,spellID=1270532})}}),
+q(93697,{coords={
+[2393]={{48,53.9}}},isWeekly=1,lvl=78,qgs={243349},requireSkill=333,g={
+i(263464,{b=1,isWeekly=1,requireSkill=333,spellID=1270532})}}),
 q(93698,{coords={
 [2393]={{48,53.9}}},isWeekly=1,lvl=78,qgs={243349},requireSkill=333,g={
 i(263464,{b=1,isWeekly=1,requireSkill=333,spellID=1270532})}})}}),

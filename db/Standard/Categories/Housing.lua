@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,campsite,cq,cu,de,exp,faction,flt,fp,h,i,m,n,prof,q,r,title=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateCurrencyClass,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateTitle;
+local ach,ah,campsite,cq,cu,de,exp,flt,fp,h,i,m,n,prof,q,r,title=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateCurrencyClass,_.CreateDecor,_.CreateExploration,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateTitle;
 categories.Housing=
 h(-682,{SortPriority=45,g={
 h(-12,{awp=110207,g={
@@ -36,10 +36,7 @@ ach(62365,{awp=120001,cost={{"i",251772,250}}}),
 ach(62366,{awp=120001,cost={{"i",251773,250}}}),
 ach(62369,{awp=120001,cost={{"i",248012,250}}}),
 ach(62370,{awp=120001,cost={{"i",256963,250}}}),
-ach(40887,{awp=120000}),
 ach(61211,{description="Build your own home through Housing",sourceQuests={91863,92486}})}}),
-h(-31,{awp=120000,g={
-faction(2663)}}),
 prof(2984,{awp=110207,coords={
 [2351]={{53.6,58.1}},
 [2352]={{52.4,37.6}}},g={
