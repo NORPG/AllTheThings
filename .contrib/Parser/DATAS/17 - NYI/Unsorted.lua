@@ -361,58 +361,6 @@ root(ROOTS.Unsorted, {
 			i(263860),	-- Bracelets of Voidwrath
 			i(263879),	-- [DNT] [AUTOGEN] 12PH_Folk_Gazebo02.M2
 			i(263883),	-- [DNT] [AUTOGEN] 12PH_Folk_Trellis02.M2
-			i(263889),	-- Void-Laced Signet
-			i(263890),	-- Void-Laced Ring
-			i(263891),	-- Void-Laced Pendant
-			i(263892),	-- Void-Laced Torc
-			i(263893),	-- Void-Laced Necklace
-			i(263894),	-- Void-Touched Rifle
-			i(263898),	-- Void-Touched Fang
-			i(263900),	-- Void-Touched Gutter
-			i(263901),	-- Void-Touched Sacrificial Knife
-			i(263902),	-- Void-Touched Twinblade
-			i(263903),	-- Void-Touched Basher
-			i(263904),	-- Void-Touched Gavel
-			i(263905),	-- Void-Touched Apprentice's Gavel
-			i(263906),	-- Void-Touched Bulwark
-			i(263907),	-- Void-Touched Spade
-			i(263908),	-- Void-Touched Poleaxe
-			i(263909),	-- Void-Touched Sunfury Stave
-			i(263910),	-- Void-Touched Beacon Staff
-			i(263911),	-- Void-Touched Battle Baton
-			i(263912),	-- Void-Touched Magister's Baton
-			i(263913),	-- Void-Touched Smasher
-			i(263914),	-- Void-Touched Hammer
-			i(263915),	-- Void-Touched Torch
-			i(263916),	-- Void-Touched Tome
-			i(263917),	-- Void-Touched Flaredblade
-			i(263918),	-- Void-Touched Guard's Blade
-			i(263919),	-- Void-Touched Magister's Sword
-			i(263920),	-- Void-Touched Dueling Blade
-			i(263921),	-- Void-Touched Sunfury Blade
-			i(263922),	-- Void-Touched Mageblade
-			i(263923),	-- Void-Touched Greatblade
-			i(263924),	-- Void-Touched Greatbow
-			i(263925),	-- Void-Touched Foci
-			i(263926),	-- Void-Touched Greatwand
-			i(263927),	-- Void-Touched Glaiveblade
-			i(263941),	-- Void-Touched Rifle
-			i(263942),	-- Void-Touched Fang
-			i(263943),	-- Void-Touched Gutter
-			i(263946),	-- Void-Touched Basher
-			i(263949),	-- Void-Touched Bulwark
-			i(263950),	-- Void-Touched Spade
-			i(263952),	-- Void-Touched Sunfury Stave
-			i(263954),	-- Void-Touched Battle Baton
-			i(263956),	-- Void-Touched Smasher
-			i(263959),	-- Void-Touched Tome
-			i(263960),	-- Void-Touched Flaredblade
-			i(263963),	-- Void-Touched Dueling Blade
-			i(263966),	-- Void-Touched Greatblade
-			i(263967),	-- Void-Touched Greatbow
-			i(263968),	-- Void-Touched Foci
-			i(263969),	-- Void-Touched Greatwand
-			i(263970),	-- Void-Touched Glaiveblade
 			i(264162),	-- Enchanted Snowflake [PH]
 			i(264324),	-- PH Decor (Floating Podium, Ink Well, Runed Paper, Void Candle)
 			i(265924),	-- High-Mounted Razorwind Bowl Chandelier
@@ -427,7 +375,6 @@ root(ROOTS.Unsorted, {
 			i(266250),	-- Long Hanging Tavern Lantern
 			i(266260),	-- [DNT] [AUTOGEN] 12PH_Opulent_Crate02_Open.M2
 			i(266448),	-- Hal'hadar Battery Core
-			i(267051),	-- Dark Particle
 			i(267075),	-- Ornate Elven Stovetop
 			i(267083),	-- Razorwind Campfire Grill
 			i(267084),	-- Founder's Point Hay Bale

@@ -1269,5 +1269,26 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242635),	-- Twilight's Blade - Armor - Tabard
 			}),
 		})),
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+			n(WEAPONS, {
+				i(263946),	-- Void-Touched Basher
+				i(263954),	-- Void-Touched Battle Baton
+				i(263949),	-- Void-Touched Bulwark
+				i(263963),	-- Void-Touched Dueling Blade
+				i(263942),	-- Void-Touched Fang
+				i(263960),	-- Void-Touched Flaredblade
+				i(263968),	-- Void-Touched Foci
+				i(263970),	-- Void-Touched Glaiveblade
+				i(263966),	-- Void-Touched Greatblade
+				i(263967),	-- Void-Touched Greatbow
+				i(263969),	-- Void-Touched Greatwand
+				i(263943),	-- Void-Touched Gutter
+				i(263941),	-- Void-Touched Rifle
+				i(263956),	-- Void-Touched Smasher
+				i(263950),	-- Void-Touched Spade
+				i(263952),	-- Void-Touched Sunfury Stave
+				i(263959),	-- Void-Touched Tome
+			}),
+		})),
 	}),
 }));

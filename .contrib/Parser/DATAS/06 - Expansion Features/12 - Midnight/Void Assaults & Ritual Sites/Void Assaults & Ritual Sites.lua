@@ -49,7 +49,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			MAP.MIDNIGHT.ZULAMAN,
 		},
 		["timeline"] = { ADDED_12_0_5 },
-	},{
+	}, {
 		n(VOID_ASSAULTS_RITUAL_SITES, {
 			faction(FACTION_RITUAL_SITES),
 			-- Void Rift: Bitter Bark; 30.8, 43.6, Zul'Aman
@@ -215,9 +215,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 					filter(FINGER_F, {
 						i(263888),	-- Void-Laced Band
+						i(263890),	-- Void-Laced Ring
+						i(263889),	-- Void-Laced Signet
 					}),
 					filter(LEATHER, {
-						--Cache of Void-Touched Armaments (itemID 263928)
+						-- Cache of Void-Touched Armaments (itemID 263928)
 						i(263800),	-- Bindings of the Void Acolyte
 						i(263798),	-- Cord of the Void Acolyte
 						i(263794),	-- Grips of the Void Acolyte
@@ -238,11 +240,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					filter(MAIL, {
 					}),
 					filter(NECK_F, {
+						i(263893),	-- Void-Laced Necklace
+						i(263891),	-- Void-Laced Pendant
+						i(263892),	-- Void-Laced Torc
 					}),
 					filter(PLATE, {
 					}),
 				}),
 				n(WEAPONS, {
+					-- Cache of Void-Touched Weapons (itemID 264323)
+					i(263894),	-- Void-Touched Rifle
+					i(263898),	-- Void-Touched Fang
+					i(263900),	-- Void-Touched Gutter
+					i(263901),	-- Void-Touched Sacrificial Knife
+					i(263902),	-- Void-Touched Twinblade
+					i(263903),	-- Void-Touched Basher
+					i(263904),	-- Void-Touched Gavel
+					i(263905),	-- Void-Touched Apprentice's Gavel
+					i(263906),	-- Void-Touched Bulwark
+					i(263907),	-- Void-Touched Spade
+					i(263908),	-- Void-Touched Poleaxe
+					i(263909),	-- Void-Touched Sunfury Stave
+					i(263910),	-- Void-Touched Beacon Staff
+					i(263911),	-- Void-Touched Battle Baton
+					i(263912),	-- Void-Touched Magister's Baton
+					i(263913),	-- Void-Touched Smasher
+					i(263914),	-- Void-Touched Hammer
+					i(263915),	-- Void-Touched Torch
+					i(263916),	-- Void-Touched Tome
+					i(263917),	-- Void-Touched Flaredblade
+					i(263918),	-- Void-Touched Guard's Blade
+					i(263919),	-- Void-Touched Magister's Sword
+					i(263920),	-- Void-Touched Dueling Blade
+					i(263921),	-- Void-Touched Sunfury Blade
+					i(263922),	-- Void-Touched Mageblade
+					i(263923),	-- Void-Touched Greatblade
+					i(263924),	-- Void-Touched Greatbow
+					i(263925),	-- Void-Touched Foci
+					i(263926),	-- Void-Touched Greatwand
+					i(263927),	-- Void-Touched Glaiveblade
 				}),
 				filter(MISC, {
 				}),

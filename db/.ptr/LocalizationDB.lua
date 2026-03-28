@@ -2602,6 +2602,7 @@ localize(L.EVENT_REMAPPING, {
 	[1708] = 239,
 	[1709] = 239,
 	[1710] = 239,
+	[1807] = 447,
 });
 
 localize(L.EVENT_TIMERUNNING_SEASONS, {
