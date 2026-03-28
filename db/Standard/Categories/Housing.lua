@@ -207,6 +207,13 @@ q(89450,{awp=120000,coords={
 [2351]={{55.3,57.6}},
 [2352]={{53.1,40.1}}},qgs={233063,233708},g={
 i(239098,{spellID=1225512})}}),
+q(94995,{awp=120000,coords={
+[2351]={{53.7,58.1}},
+[2352]={{52.4,37.8}}},qgs={255125,255126},g={
+i(259115),
+i(259113),
+i(259114),
+i(259126)}}),
 q(92578,{coords={
 [84]={{56.1,77.1}},
 [85]={{52.9,89}},
@@ -233,13 +240,34 @@ q(92580,{coords={
 [2339]={{52.9,68}}},lvl=10,qgs={252312},g={
 de(2330,{itemID=246487,sourceQuests={92580},spellID=1242335}),
 i(265822,{spellID=1277282})}}),
-q(94995,{awp=120000,coords={
-[2351]={{53.7,58.1}},
-[2352]={{52.4,37.8}}},qgs={255125,255126},g={
-i(259115),
-i(259113),
-i(259114),
-i(259126)}})}}),
+q(95413,{awp=120001,coords={
+[2351]={{52.9,59.8}},
+[2352]={{51.9,39.5}},
+[2393]={{49.5,65.8}}},isWeekly=1,qgs={260942,260943,260957,260958},g={
+i(269010,{description="Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",sym={{"select","itemID",245586,242691,251762,251764,251763,251766,251767,251768,251772,251773,248012,256963}}})}}),
+q(95416,{awp=120001,coords={
+[2351]={{52.9,59.8}},
+[2352]={{51.9,39.5}},
+[2393]={{49.5,65.8}}},isWeekly=1,qgs={260942,260943,260957,260958},g={
+i(269010,{description="Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",sym={{"select","itemID",245586,242691,251762,251764,251763,251766,251767,251768,251772,251773,248012,256963}}})}}),
+q(95440,{awp=120001,coords={
+[2351]={{52.9,59.8}},
+[2352]={{51.9,39.5}},
+[2393]={{49.5,65.8}}},isWeekly=1,qgs={260942,260943,260957,260958},g={
+i(269010,{description="Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",sym={{"select","itemID",245586,242691,251762,251764,251763,251766,251767,251768,251772,251773,248012,256963}}})}})}}),
+h(-745,{awp=120001,g={
+q(95407,{coords={
+[2352]={{51.9,39.5}}},qgs={260942},repeatable=1}),
+q(95408,{coords={
+[2352]={{51.9,39.5}}},qgs={260942},repeatable=1}),
+q(95409,{coords={
+[2352]={{51.9,39.5}}},qgs={260942},repeatable=1}),
+q(95410,{coords={
+[2351]={{52.9,59.8}}},qgs={260943},repeatable=1}),
+q(95411,{coords={
+[2351]={{52.9,59.8}}},qgs={260943},repeatable=1}),
+q(95412,{coords={
+[2351]={{52.9,59.8}}},qgs={260943},repeatable=1})}}),
 h(-22,{awp=110207,description="It is advised to use the |cffffffffNPC Filler for the Mini List|r to allow these Items to fill properly under NPCs within your current Housing Neighborhood.",g={
 de(1452,{crs={255222,255278},itemID=244662,spellID=1237792}),
 de(2092,{crs={255222,255278},itemID=246223,spellID=1241203}),

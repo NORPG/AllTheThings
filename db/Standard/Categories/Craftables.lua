@@ -2016,7 +2016,7 @@ o(181248,{awp=20001,coords={
 [95]={{30,50}}},requireSkill=186}),
 o(165658,{maps={232,242},requireSkill=186}),
 o(1734,{coords={
-[64]={{44.1,37.2}}},maps={14,15,22,23,26,32,36,66,69,71,199,210},requireSkill=186}),
+[64]={{44.1,37.2}}},description="Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",maps={14,15,22,23,26,32,36,66,69,71,199,210},requireSkill=186}),
 o(73941,{coords={
 [64]={{66.1,86.2}},
 [69]={{73.5,63.5},{76.8,61.5}}},requireSkill=186}),
@@ -2044,7 +2044,7 @@ o(123309,{coords={
 o(2047,{maps={15,17,23,32,36,51,64,69,71,77,78,81,83},requireSkill=186}),
 i(2770,{maps_disp={1,7,10,18,21,27,37,48,52,62,76,94,95,97,106},providers={{"o",1731}}}),
 i(11370,{maps_disp={232,242},providers={{"o",165658}}}),
-i(2776,{description="Gold Veins is a rare spawn in place of Iron Deposits and Mithril Deposits.",maps_disp={14,15,22,23,26,32,36,64,66,69,71,77,199,210},providers={{"o",1734},{"o",73941}}}),
+i(2776,{maps_disp={14,15,22,23,26,32,36,64,66,69,71,77,199,210},providers={{"o",1734},{"o",73941}}}),
 i(108296,{awp=60002,providers={{"o",1734},{"o",73941}},spellID=153813,g={
 i(2776)}}),
 i(2772,{maps_disp={14,15,22,23,26,66,69,199,210},providers={{"o",1735}}}),

@@ -361,6 +361,7 @@ HeaderAssignments = {
 	["Lumber Yard"] = -123,
 	["Lunar Festival"] = -580,
 	["Mage Tower"] = -140,
+	["Mail Delivery Races"] = -745,
 	["Mailbox"] = -39,
 	["Main Gate"] = -365,
 	["Main Hand"] = -677,
@@ -724,4 +725,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -745;
+NextHeaderID = -746;

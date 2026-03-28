@@ -1726,6 +1726,7 @@ localize(L.HEADER_NAMES, {
 	[-740] = COVENANT_SANCTUM_TAB_RENOWN.." 4",
 	[-743] = COVENANT_SANCTUM_TAB_RENOWN.." 9",
 	[-744] = "Nodes",
+	[-745] = "Mail Delivery Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2443,6 +2444,7 @@ localize(L.HEADER_ICONS, {
 	[-740] = 5015301,
 	[-743] = 5015301,
 	[-744] = 1120721,
+	[-745] = 413580,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
