@@ -398,6 +398,7 @@ HeaderAssignments = {
 	["Nightfall"] = -407,
 	["Nightmare Grove"] = -613,
 	["Noblegarden"] = -583,
+	["Nodes"] = -744,
 	["Normal Raid Vendor"] = -346,
 	["North"] = -3,
 	["Northrend Cup"] = -571,
@@ -723,4 +724,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -744;
+NextHeaderID = -745;

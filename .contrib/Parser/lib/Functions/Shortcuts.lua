@@ -892,7 +892,7 @@ achievementCategory = achcat;
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);
 end
-az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
+az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object
 	if t or type(rank) == "number" then
 		t = struct("azeriteessenceID", id, t or {});
 		t.rank = rank;
@@ -912,7 +912,7 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 	t.customCollect = { "!HOA" };
 	return t;
 end
-campsite = function(id, t)
+campsite = function(id, t)								-- Create a CAMPSITE Object
 	return struct("campsiteID", id, t);
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
@@ -1423,6 +1423,12 @@ end
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
+professionnode = function(id, t)						-- Create a PROFESSION NODE Object
+	t = struct("professionnodeID", id, t);
+	t.collectible = false;	-- Temporary before it's all sorted
+	return t;
+end
+pn = professionnode;
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
 	return bubbleDown({ ["pvp"] = true }, t);
 end
