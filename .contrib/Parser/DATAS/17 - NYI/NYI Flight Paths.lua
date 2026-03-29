@@ -779,6 +779,8 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(3219),	-- 12.0 Silvermoon Sunfury Spire Teleport Top
 			fp(3211),	-- 12.0 Silvermoon Teleport Thalassian University Base
 			fp(3135),	-- 12.0 Z1 - Isle of Quel'Danas - Flightmaster - Gloaming - SJC
+			fp(3170),	-- Collapsar
+			fp(3171),	-- Deep Well
 			fp(3093),	-- Quest Path 10497: 12.0 Z3 - Legends - Shrine 01 - Exit Path - (LWB)
 			fp(3101),	-- Quest Path 10502: 12.0 Z3 - Legends - Shrine 02 - Exit Path - (LWB)
 			fp(3104),	-- Quest Path 10509: 12.0 Z3 - Legends - Shrine 03 - Exit Path - (LWB)

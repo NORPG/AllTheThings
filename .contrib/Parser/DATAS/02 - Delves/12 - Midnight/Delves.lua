@@ -628,12 +628,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				fp(3169, {	-- Base Node
 					--["coord"] = {},	-- TODO: Add coord
 				}),
-				fp(3170, {	-- Collapsar
-					--["coord"] = {},	-- TODO: Add coord
-				}),
-				fp(3171, {	-- Deep Well
-					--["coord"] = {},	-- TODO: Add coord
-				}),
 				fp(3172, {	-- Exposed Vein
 					--["coord"] = {},	-- TODO: Add coord
 				}),
