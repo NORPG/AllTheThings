@@ -64284,7 +64284,13 @@ ach(61249),
 ach(61250),
 ach(61251,{collectible=false}),
 ach(61252,{collectible=false}),
-ach(61253,{collectible=false})}})}}),
+ach(61253,{collectible=false})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+flt(110,{(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+title(756)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+title(757)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+title(758)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+title(759)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+title(760))}))}}),
 inst(1311,{awp=120001,coords={
 [2437]={{30,84.5}}},maps={2513,2514,2564},g={
 d(101,{difficulties={1,2,23},g={

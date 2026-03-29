@@ -128,11 +128,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			["timeline"] = { ADDED_12_0_1 }
 		}, {
 			-- https://www.wowhead.com/news/chinese-community-earns-exclusive-titles-through-mythic-mentorship-380999
-			title(756),	-- Volunteer <Name>						// 10 Dungeons
-			title(757),	-- Caring Citizen <Name>				// 50 Dungeons
-			title(758),	-- <Name>, The Backbone of the Realm	// 100 Dungeons
-			title(759),	-- <Name>, The Philanthropist			// 200 Dungeons
-			title(760),	-- <Name>, The Everlasting				// 500 Dungeons
+			cnONLY(title(756)),	-- Volunteer <Name>						// 10 Dungeons
+			cnONLY(title(757)),	-- Caring Citizen <Name>				// 50 Dungeons
+			cnONLY(title(758)),	-- <Name>, The Backbone of the Realm	// 100 Dungeons
+			cnONLY(title(759)),	-- <Name>, The Philanthropist			// 200 Dungeons
+			cnONLY(title(760)),	-- <Name>, The Everlasting				// 500 Dungeons
 		}))),
 	}),
 }));

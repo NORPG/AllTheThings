@@ -4,10 +4,10 @@ _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,o,p,pn,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfessionNode,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.NeverImplemented={
 h(-744,{
-pn(28607,{collectible=false}),
-pn(28608,{collectible=false}),
-pn(28609,{collectible=false}),
-pn(28610,{collectible=false})}),
+pn(28607),
+pn(28608),
+pn(28609),
+pn(28610)}),
 h(-12,{
 x(1,{
 ach(15329),
@@ -11713,6 +11713,8 @@ fp(3218),
 fp(3219),
 fp(3211),
 fp(3135),
+fp(3170),
+fp(3171),
 fp(3093),
 fp(3101),
 fp(3104),
@@ -50466,6 +50468,8 @@ s(229179,230832,{f=25}),
 s(295464,248342),
 s(295476,248354),
 s(295466,248344)}}),
+x(12.0000001,{awp=120000,g={
+s(304110,266268,{b=1,f=34,lvl=10})}}),
 x(2,{
 h(-235,{
 s(14859,32187,{f=33}),
