@@ -160,14 +160,7 @@ do
 		end
 	end
 
-	local ProfessionNodeInfoMeta = setmetatable({}, {
-		__index = function(t, id)
-			if not id then return app.EmptyTable end
-			local info = {}
-			t[id] = info
-			return info
-		end
-	})
+	local ProfessionNodeInfoMeta = setmetatable({}, app.MetaTable.AutoTable);
 
 	app.CreateProfessionNode = app.CreateClass(CLASSNAME, KEY, {
 		CACHE = function() return CACHE end,
@@ -187,18 +180,11 @@ do
 			return app.Settings.Collectibles[CACHE]
 		end,
 		collected = function(t)
-			for _, skillLineID in ipairs(C_TradeSkillUI_GetAllProfessionTradeSkillLines()) do
-				local configID = PROFESSION_CONFIGS[skillLineID]
-				if configID and configID ~= 0 then
-					if C_ProfSpecs_GetStateForPath(t[KEY], configID) == 2 then
-						return true
-					end
-				end
-			end
-			return false
+			return app.TypicalCharacterCollected(CACHE, t[KEY])
 		end,
 		saved = function(t)
-			return t.collected
+			-- character saved
+			if app.IsCached(CACHE, t[KEY]) then return 1 end
 		end,
 	})
 	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
@@ -209,7 +195,6 @@ do
 	app.AddGenericFieldConverter(KEY);
 	app.AddEventHandler("OnRefreshCollections", function()
 		local saved, none = {}, {}
-
 		for _, skillLineID in ipairs(C_TradeSkillUI_GetAllProfessionTradeSkillLines()) do
 			local configID = PROFESSION_CONFIGS[skillLineID]
 			if configID and configID ~= 0 then
@@ -221,34 +206,33 @@ do
 
 						for pathID in pairs(pathIDs) do
 							local info = ProfessionNodeInfoMeta[pathID]
-							if not info then
-								info = {}
-								ProfessionNodeInfoMeta[pathID] = info
-							end
-							local nodeInfo = C_Traits_GetNodeInfo(configID, pathID)
 
-							local chosenEntryID = nodeInfo
-								and (nodeInfo.entryIDsWithCommittedRanks and nodeInfo.entryIDsWithCommittedRanks[1]
-								or nodeInfo.entryIDs and nodeInfo.entryIDs[1]
-								or nodeInfo.activeEntry and nodeInfo.activeEntry.entryID)
+							-- We could store localized names in the user's cache
+							-- so when they load a profession it will have proper language values
+							-- Something similar to Flight Paths
+							-- local nodeInfo = C_Traits_GetNodeInfo(configID, pathID)
+							-- local chosenEntryID = nodeInfo
+							-- 	and (nodeInfo.entryIDsWithCommittedRanks and nodeInfo.entryIDsWithCommittedRanks[1]
+							-- 	or nodeInfo.entryIDs and nodeInfo.entryIDs[1]
+							-- 	or nodeInfo.activeEntry and nodeInfo.activeEntry.entryID)
 
-							local name, icon
-							if chosenEntryID then
-								local entryInfo = C_Traits_GetEntryInfo(configID, chosenEntryID)
-								local def = entryInfo and entryInfo.definitionID and C_Traits_GetDefinitionInfo(entryInfo.definitionID)
+							-- local name, icon
+							-- if chosenEntryID then
+							-- 	local entryInfo = C_Traits_GetEntryInfo(configID, chosenEntryID)
+							-- 	local def = entryInfo and entryInfo.definitionID and C_Traits_GetDefinitionInfo(entryInfo.definitionID)
 
-								if def then
-									if def.overrideName and def.overrideName ~= "" then
-										name = def.overrideName
-									end
-									if def.overrideIcon and def.overrideIcon ~= 0 then
-										icon = def.overrideIcon
-									end
-								end
-							end
+							-- 	if def then
+							-- 		if def.overrideName and def.overrideName ~= "" then
+							-- 			name = def.overrideName
+							-- 		end
+							-- 		if def.overrideIcon and def.overrideIcon ~= 0 then
+							-- 			icon = def.overrideIcon
+							-- 		end
+							-- 	end
+							-- end
 
-							info.name = name
-							info.icon = icon
+							-- info.name = name
+							-- info.icon = icon
 
 							local perks = C_ProfSpecs_GetPerksForPath(pathID) or {}
 							local desc = {}

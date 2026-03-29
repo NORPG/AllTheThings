@@ -1424,9 +1424,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 professionnode = function(id, t)						-- Create a PROFESSION NODE Object
-	t = struct("professionnodeID", id, t);
-	t.collectible = false;	-- Temporary before it's all sorted
-	return t;
+	return struct("professionnodeID", id, t);
 end
 pn = professionnode;
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
