@@ -28,6 +28,7 @@ L.ACCOUNT_WIDE_DEATHS_TOOLTIP = "Death tracking really only exists for pre-Wrath
 L.ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
+L.ACCOUNT_WIDE_PROFESSION_NODES_TOOLTIP = "Profession nodes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
 L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
 L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "Recipes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
 L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked Account-Wide in Blizzard's database for achievements, so turning this on may be a good idea.";
@@ -599,6 +600,9 @@ L.PRESET_UPDATE_SUCCESS = "Updated the preset successfully.";
 L.PROFESSION = "Profession";
 L.PROFESSION_LIST = "Profession List";
 L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
+L.PROFESSION_NODE_ID = "Profession Node ID";
+L.PROFESSION_NODES_CHECKBOX = "Profession Nodes";
+L.PROFESSION_NODES_CHECKBOX_TOOLTIP = "Enable this option to track profession nodes completion.";
 L.PROFILE = "Profile";
 L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
@@ -1114,6 +1118,7 @@ _.HeaderConstants = {
 	HEIRLOOMS = -219,
 	HOLIDAYS = -36,
 	HONOR_TITLES = -298,
+	HOUSING = -682,
 	IN_GAME_SHOP = -213,
 	LEGS = -95,
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
@@ -1386,6 +1391,7 @@ localize(L.HEADER_NAMES, {
 	[-660] = "Twilight Duo",
 	[-661] = "Twilight Zone",
 	[-679] = CATALOG_SHOP_TYPE_DECOR,
+	[-682] = BINDING_HEADER_HOUSING_SYSTEM,
 	[-691] = "Treasures of Azeroth",
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
@@ -1397,6 +1403,7 @@ localize(L.HEADER_NAMES, {
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-736] = BATTLE_PET_SOURCE_8,
+	[-745] = "Mail Delivery Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1694,6 +1701,7 @@ localize(L.HEADER_ICONS, {
 	[-660] = 236473,
 	[-661] = 236471,
 	[-679] = _.asset("interface_decor"),
+	[-682] = _.asset("category_housing"),
 	[-691] = 7259806,
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
@@ -1705,6 +1713,7 @@ localize(L.HEADER_ICONS, {
 	[-734] = _.asset("category_event"),
 	[-735] = _.asset("category_expansionfeatures"),
 	[-736] = _.asset("category_promo"),
+	[-745] = 413580,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1757,7 +1766,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=22,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=3,["monthDay"]=22,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=29,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=3,["monthDay"]=29,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=5,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=5,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=12,["weekday"]=1,["year"]=2026}),
@@ -1809,7 +1817,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=28,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=28,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=3,["monthDay"]=7,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=3,["monthDay"]=14,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=21,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=3,["monthDay"]=21,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=21,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=3,["monthDay"]=21,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=28,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=3,["monthDay"]=28,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -9472,7 +9481,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753948800,
+		release = 1753956000,
 		state = 2,
 	},
 	[5002] = {
@@ -9481,7 +9490,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1754985600,
+		release = 1754992800,
 		state = 2,
 	},
 	[5003] = {
@@ -9490,7 +9499,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755763200,
+		release = 1755770400,
 		state = 2,
 	},
 	[5004] = {
@@ -9499,7 +9508,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756195200,
+		release = 1756202400,
 		state = 2,
 	},
 	[5005] = {
@@ -9508,7 +9517,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756800000,
+		release = 1756807200,
 		state = 2,
 	},
 	[5006] = {
@@ -9517,7 +9526,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756972800,
+		release = 1756980000,
 		state = 2,
 	},
 	[5007] = {
@@ -9526,7 +9535,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758009600,
+		release = 1758016800,
 		state = 2,
 	},
 	[51] = {
@@ -9551,7 +9560,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765958400,
+		release = 1765969200,
 		state = 2,
 	},
 	[53] = {
@@ -9576,7 +9585,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50505,
-		release = 1776672000,
+		release = 1776679200,
 		state = 2,
 	},
 };

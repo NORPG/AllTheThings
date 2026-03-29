@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,artifact,cl,cq,crit,cu,d,de,e,en,faction,flt,follower,h,heir,i,ill,inst,m,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,artifact,cl,cq,crit,cu,d,de,e,en,faction,flt,follower,h,heir,hqt,i,ill,inst,m,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-103,{
@@ -1267,18 +1267,18 @@ n(185784,{u=2,g={
 i(199838,{b=2,spellID=388242,u=2}),
 crit(55367,{achID=16431,id=1,u=2})}})}}),
 h(-35,{u=2,g={
-q(72285,{coords={
-[84]={{25.4,55.2}}},qgs={189078},r=2,sourceQuests={65101,66577},type="hqt",u=2}),
-q(72286,{coords={
-[84]={{27.1,53.8}}},qgs={194756},r=2,sourceQuests={65101,66577},type="hqt",u=2}),
-q(72287,{coords={
-[84]={{27.1,53.8}}},qgs={189600},r=2,sourceQuests={65101,66577},type="hqt",u=2}),
-q(72288,{coords={
-[1]={{55.9,12.1}}},providers={{"n",198411}},r=1,sourceQuests={65443,72256},type="hqt",u=2}),
-q(72289,{coords={
-[1]={{55.7,12.2}}},providers={{"n",184665}},r=1,sourceQuests={65443,72256},type="hqt",u=2}),
-q(72290,{coords={
-[1]={{55.6,12.3}}},providers={{"n",184858}},r=1,sourceQuests={72256},type="hqt",u=2})}})}}),
+hqt(72285,{coords={
+[84]={{25.4,55.2}}},qgs={189078},r=2,sourceQuests={65101,66577},u=2}),
+hqt(72286,{coords={
+[84]={{27.1,53.8}}},qgs={194756},r=2,sourceQuests={65101,66577},u=2}),
+hqt(72287,{coords={
+[84]={{27.1,53.8}}},qgs={189600},r=2,sourceQuests={65101,66577},u=2}),
+hqt(72288,{coords={
+[1]={{55.9,12.1}}},providers={{"n",198411}},r=1,sourceQuests={65443,72256},u=2}),
+hqt(72289,{coords={
+[1]={{55.7,12.2}}},providers={{"n",184665}},r=1,sourceQuests={65443,72256},u=2}),
+hqt(72290,{coords={
+[1]={{55.6,12.3}}},providers={{"n",184858}},r=1,sourceQuests={72256},u=2})}})}}),
 x(11,{awp=110000,rwp=110002,u=2,g={
 h(-12,{u=2,g={
 ach(40796,{u=2,g={
@@ -1560,8 +1560,8 @@ o(553558,{coords={
 [241]={{46.5,72}}},u=2,g={
 i(246399,{u=2})}}),
 i(246400,{u=2})}}),
-q(92103,{coords={
-[241]={{49.9,80.8}}},description="Dialogue becomes available after accepting 'Midnight Dress' (90765).",qgs={237506},sourceQuests={90765},type="hqt",u=2}),
+hqt(92103,{coords={
+[241]={{49.9,80.8}}},description="Dialogue becomes available after accepting 'Midnight Dress' (90765).",qgs={237506},sourceQuests={90765},u=2}),
 q(90766,{coords={
 [241]={{46.4,72}}},lvl=10,qgs={246021},sourceQuests={90765},u=2}),
 q(90767,{coords={

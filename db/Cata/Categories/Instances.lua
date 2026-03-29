@@ -9351,7 +9351,7 @@ i(30589,{b=1,q=4,u=17}),
 i(30591,{b=1,q=4,u=17}),
 i(30590,{b=1,q=4,u=17})}}),
 n(28132,{description="This is a neutral Elite Creature that wanders the road.",u=17,g={
-toy(38506,{b=1,q=3,rwp=70003,u=17}),
+toy(38506,{b=1,q=3,rwp=70003,sourceID=145487,u=17}),
 i(38329,{q=1,u=17})}}),
 e(538,{npcID=17848,u=17,g={
 s(138556,28210,{b=1,f=23,lvl=70,q=3,u=17}),

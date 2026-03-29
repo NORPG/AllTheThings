@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cat,cq,crit,cs,cu,d,e,en,faction,flt,h,heir,i,ill,inst,m,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cat,cq,crit,cs,cu,d,e,en,faction,flt,h,heir,hqt,i,ill,inst,m,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Holidays=
 h(-36,{difficultyID=19,SortPriority=30,SortType="EventStart",g={
 h(-12,{awp=30002,g={
@@ -144,7 +144,7 @@ n(23872,{awp=20001,e=7,isDaily=1,maps={242,243},g={
 ach(295,{awp=30002,e=7,g={
 crit(6184,{achID=1683,e=7,id=3})}}),
 i(117393,{awp=60002,b=1,e=7,g={
-q(91894,{awp=110200,description="This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=7,isDaily=1,type="hqt",g={
+hqt(91894,{awp=110200,description="This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=7,isDaily=1,g={
 mnt(1247662,{b=1,description="Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",e=7,itemID=248761,lvl=10}),
 mm(208742,{awp=100107,b=1,description="Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",e=7,questID=77774}),
 mnt(49379,{awp=20001,b=1,description="Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",e=7,itemID=37828,lvl=10}),
@@ -7309,10 +7309,10 @@ i(50320,{awp=30302,b=1,e=9}),
 i(49641,{awp=30302,b=1,e=9}),
 i(54537,{b=1,e=9,g={
 ach(4627,{e=9,providers={{"i",50250}}}),
-q(74957,{awp=100005,e=9,isDaily=1,type="hqt"}),
-q(86172,{awp=110007,e=9,isDaily=1,type="hqt"}),
-q(79104,{awp=100205,e=9,isDaily=1,type="hqt"}),
-q(93466,{awp=120000,e=9,isDaily=1,type="hqt"}),
+hqt(74957,{awp=100005,e=9,isDaily=1}),
+hqt(86172,{awp=110007,e=9,isDaily=1}),
+hqt(79104,{awp=100205,e=9,isDaily=1}),
+hqt(93466,{awp=120000,e=9,isDaily=1}),
 mnt(71342,{b=1,e=9,itemID=50250,lvl=10}),
 s(24329,49715,{e=9,f=2}),
 p(251,{b=1,e=9,itemID=50446,npcID=38374,spellID=71840}),
@@ -9279,7 +9279,7 @@ i(117394,{awp=60002,b=1,e=11,g={
 s(65955,117373,{b=1,e=11,f=28,spellID=46643}),
 p(253,{awp=30303,b=1,e=11,itemID=53641,npcID=40198,spellID=74932}),
 ill(3273,{awp=70003,b=1,e=11,itemID=138838,questID=42948}),
-q(83134,{awp=100207,description="Items under this group only have a chance to drop on your first kill per day for your warband.",e=11,isDaily=1,type="hqt",g={
+hqt(83134,{awp=100207,description="Items under this group only have a chance to drop on your first kill per day for your warband.",e=11,isDaily=1,g={
 mm(224163,{b=1,e=11,questID=82741}),
 s(292134,244356,{awp=110107,e=11,f=2}),
 s(292192,244422,{awp=110107,e=11,f=29}),
@@ -10979,7 +10979,7 @@ q(79135,{awp=100206,coords={
 [1]={{52.6,41.2}}},e=15,isDaily=1,qgs={217125},r=1,sourceQuests={79578}}),
 q(73192,{awp=100206,e=15,isDaily=1,maps={37},providers={{"i",210594}},r=2,g={
 i(216874,{b=1,e=15,g={
-q(82543,{e=15,isDaily=1,type="hqt"}),
+hqt(82543,{e=15,isDaily=1}),
 mnt(432455,{b=1,e=15,itemID=212599,lvl=10}),
 s(194962,212698,{e=15,f=2}),
 s(194963,212699,{e=15,f=2}),
@@ -10990,7 +10990,7 @@ s(194978,212715,{e=15,f=2})}}),
 i(213428,{b=1,e=15,sym={{"select","itemID",212698,212699,212701,212711,212985,212715}}})}}),
 q(79558,{awp=100206,e=15,isDaily=1,maps={1},providers={{"i",216932}},r=1,g={
 i(216874,{b=1,e=15,g={
-q(82543,{e=15,isDaily=1,type="hqt"}),
+hqt(82543,{e=15,isDaily=1}),
 mnt(432455,{b=1,e=15,itemID=212599,lvl=10}),
 s(194962,212698,{e=15,f=2}),
 s(194963,212699,{e=15,f=2}),
@@ -16528,8 +16528,8 @@ q(82817,{coords={
 i(232471,{b=1,e=242,lvl=80,sym={{"select","headerID",-609},{"pop"},{"where","instanceID",1301},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 q(84735,{coords={
 [71]={{63,49.7}}},e=242,lvl=30,qgs={229494},rwp=110007,u=2}),
-q(84743,{coords={
-[71]={{63,49.7}}},e=242,providers={{"n",229494}},type="hqt"})}}),
+hqt(84743,{coords={
+[71]={{63,49.7}}},e=242,providers={{"n",229494}}})}}),
 h(-58,{e=242,rwp=110007,u=2,g={
 s(229519,231418,{b=1,e=242,f=22,lvl=22,u=2}),
 s(229567,231480,{b=1,e=242,f=6,lvl=22,u=2}),
@@ -16846,7 +16846,7 @@ i(228620,{coords={
 toy(206696,{b=1,e=242})}}),
 q(84868,{coords={
 [71]={{63.3,52.4}}},e=242,lvl=10,qgs={226766},sourceQuests={84521},g={
-q(83831,{e=242,type="hqt"}),
+hqt(83831,{e=242}),
 i(229351,{b=1,f=55,spellID=459811})}})}}),
 h(-58,{e=242,g={
 n(226766,{coords={

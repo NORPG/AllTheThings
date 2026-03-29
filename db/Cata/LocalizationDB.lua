@@ -28,6 +28,7 @@ L.ACCOUNT_WIDE_DEATHS_TOOLTIP = "Death tracking really only exists for pre-Wrath
 L.ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
+L.ACCOUNT_WIDE_PROFESSION_NODES_TOOLTIP = "Profession nodes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
 L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
 L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "Recipes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
 L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked Account-Wide in Blizzard's database for achievements, so turning this on may be a good idea.";
@@ -599,6 +600,9 @@ L.PRESET_UPDATE_SUCCESS = "Updated the preset successfully.";
 L.PROFESSION = "Profession";
 L.PROFESSION_LIST = "Profession List";
 L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
+L.PROFESSION_NODE_ID = "Profession Node ID";
+L.PROFESSION_NODES_CHECKBOX = "Profession Nodes";
+L.PROFESSION_NODES_CHECKBOX_TOOLTIP = "Enable this option to track profession nodes completion.";
 L.PROFILE = "Profile";
 L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
@@ -1081,6 +1085,7 @@ _.HeaderConstants = {
 	HEIRLOOMS = -219,
 	HOLIDAYS = -36,
 	HONOR_TITLES = -298,
+	HOUSING = -682,
 	IN_GAME_SHOP = -213,
 	LEGS = -95,
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
@@ -1310,6 +1315,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Twilight Assist",
 	[-660] = "Twilight Duo",
 	[-661] = "Twilight Zone",
+	[-682] = BINDING_HEADER_HOUSING_SYSTEM,
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
@@ -1320,6 +1326,7 @@ localize(L.HEADER_NAMES, {
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-736] = BATTLE_PET_SOURCE_8,
+	[-745] = "Mail Delivery Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1564,6 +1571,7 @@ localize(L.HEADER_ICONS, {
 	[-659] = 236469,
 	[-660] = 236473,
 	[-661] = 236471,
+	[-682] = _.asset("category_housing"),
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
 	[-721] = 237382,
@@ -1574,6 +1582,7 @@ localize(L.HEADER_ICONS, {
 	[-734] = _.asset("category_event"),
 	[-735] = _.asset("category_expansionfeatures"),
 	[-736] = _.asset("category_promo"),
+	[-745] = 413580,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
