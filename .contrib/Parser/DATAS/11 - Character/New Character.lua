@@ -118,9 +118,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-			i(270433, {	-- Dawnroot Haranir Quarterstaff
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
-			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270433),	-- Dawnroot Haranir Quarterstaff
+			})),
 			i(3661),	-- Handcrafted Staff
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
@@ -1368,14 +1368,13 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
-				i(270440),	-- Rootbound Haranir Handaxe
 				i(270442),	-- Rootbound Haranir Chopper
 			})),
-			i(266268, {	-- Rootbound Haranir Claws
+			i(266269, {	-- Rootbound Haranir Aegis
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-			i(266269, {	-- Rootbound Haranir Aegis
+			i(270440, {	-- Rootbound Haranir Handaxe
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
