@@ -831,17 +831,6 @@ root(ROOTS.Unsorted, {
 				i(269987),	-- Vault Guard's Axe
 				i(269988),	-- Peacekeeper's Axe
 			}),
-			n(SPECIAL, {
-				-- Haranir Class Trial?
-				i(270430),	-- Windpetal Haranir Crook
-				i(270431),	-- Haranir Footlocker
-				i(270439),	-- Wildgrove Haranir Spear
-				i(270440),	-- Rootbound Haranir Handaxe
-				i(270441),	-- Thornpierce Haranir Chopper
-				i(270442),	-- Rootbound Haranir Chopper
-				i(270443),	-- Wildbloom Haranir Bastion
-				i(270444),	-- Wildbloom Haranir Carver
-			}),
 			i(232791),	-- Cracked Medal of Conquest
 			i(250930),	-- Frostfall Groveglider
 			i(250971),	-- Cindertuft Groveglider
