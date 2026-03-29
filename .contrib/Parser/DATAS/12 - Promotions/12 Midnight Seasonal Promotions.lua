@@ -135,15 +135,15 @@ root(ROOTS.Promotions, {
 			}),
 			i(263298, {	-- Cuddly Alliance Blue Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66562" },
 			}),
 			i(263299, {	-- Cuddly Horde Red Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66562" },
 			}),
 			i(252194, {	-- Fishmonger May (PET!)
 				["description"] = "Obtained by gifting an eligible creator's channel two Twitch subscriptions between February 26th, 03:00 p.m. & March 26th, 03:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that will also reward the pet!",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66562" },
 			}),
 			i(260360, {	-- Gummi the Glow Wyrm (PET!)
 				["description"] = "Trolli + Xbox promotional item. Available between March 1st 2026 - September 30th 2026 by purchasing Trolli Gummi Pop products in any retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Sometime later you should receive a code to your email to redeem on Battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
