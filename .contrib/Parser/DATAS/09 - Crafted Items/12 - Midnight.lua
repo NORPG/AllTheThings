@@ -2147,10 +2147,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PROFESSIONS, {
+		prof(ALCHEMY, {	--TODO rankmax
+			q(90721),	-- 10/?? Synthesis Synergy
+			q(90722),	-- 15/?? Synthesis Synergy
+		}),
 		prof(TAILORING, {
 			q(89423),	-- 30/30 Arcanoweave Expertise
 			q(89422),	-- 0/20 Arcanoweave Expertise
 			q(89460),	-- 0/20 Sunfire Expertise
+			q(89461),	-- 20/20 Sunfire Expertise
 		}),
 		prof(SKINNING, {
 			q(88522),	-- 20/40 Thorough Tanning (2nd charge)

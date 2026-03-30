@@ -194,15 +194,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["maxReputation"] = { FACTION_SHADES_OF_THE_ROW, 6 },	-- Luminary
 				["isWeekly"] = true,
 			}, {
+				q(91999, {	-- A Bit of Bloodthistle
+					i(249472),	-- Fragrant Bloodthistle (QI!)
+				}),
 				q(92003, {	-- Artisanal Replicas
 					i(249688),	-- Felo'melorn Replica (QI!)
 				}),
 				q(92007, {	-- Begged, Borrowed or Stolen
 					i(249544),	-- Chest of Stolen Valuables (QI!)
 				}),
-				q(91999, {	-- A Bit of Bloodthistle
-					i(249472),	-- Fragrant Bloodthistle (QI!)
-				}),
+				q(92000),	-- Bring the Ruckus
 				q(92002, {	-- Dangerous Showpieces
 					i(249528),	-- Twilight Weaponry (QI!)
 				}),

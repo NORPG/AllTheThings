@@ -978,7 +978,6 @@ root(ROOTS.Unsorted, {
 				i(252609),	-- Coffer Key Shard
 				i(252648),	-- Key Shard Cluster
 				i(253226),	-- Restored Coffer Key
-				i(254253),	-- Spoils of Nullaeus \\ Nullaeus
 				i(254256),	-- Delver's Bounty
 				i(254257),	-- Delver's Bounty
 				i(254258),	-- Delver's Bounty

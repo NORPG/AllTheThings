@@ -46,6 +46,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --
 					}, {	-- RENOWN 18 --
+						q(94471),	-- A Trove of Voidlight Marl
 					}, {	-- RENOWN 19 --
 					}, {	-- RENOWN 20 --
 						------ Paragon ------

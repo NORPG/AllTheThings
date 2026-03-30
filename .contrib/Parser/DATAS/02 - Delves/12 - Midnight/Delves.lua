@@ -707,10 +707,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["questID"] = 94045,
 				}),
 			}),
-			n(REWARDS, {
-				filter(MISC, {
-				}),
-			}),
 		},
 	}),
 	m(THE_GULF_OF_MEMORY, {

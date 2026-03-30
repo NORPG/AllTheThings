@@ -223,6 +223,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(264342),	-- Cosmic Void Cache (DECOR!)
 					},
 				}),
+				o(623258),	-- Pilfered Trunk
 				o(581922),	-- Hidden Trove
 				o(584503, {	-- Grand Sanctified Spoils (Rare, if it has different version of it)
 					["groups"] = {

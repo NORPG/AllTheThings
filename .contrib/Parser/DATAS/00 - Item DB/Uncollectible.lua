@@ -2781,6 +2781,7 @@ i(260665);	-- Sizable Tusk
 i(260616);	-- Soft Marine Fungi
 i(246376);	-- Solaarian Sintalia
 i(243478);	-- Spare Pamphlets
+i(254253);	-- Spoils of Nullaeus
 i(260260);	-- Springrunner Sparkling
 i(260291);	-- Stargazer Pudding
 i(260267);	-- Steamed Hexx'alor Lobster

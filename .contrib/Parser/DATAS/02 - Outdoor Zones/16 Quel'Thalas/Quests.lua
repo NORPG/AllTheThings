@@ -637,7 +637,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				}),
 				q(90724, {	-- The Broken Sky
 					["sourceQuests"] = { 88709 },	-- The Voidspire
-					["qg"] = 244297,	-- Arator
+					["qgs"] = {
+						244297,	-- Arator
+						253603,	-- Arator
+					},
+					["coord"] = { 45.7, 49.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["maps"] = {
 						2529,	-- Voidspire
 						2530,	-- Crown of the Cosmos
