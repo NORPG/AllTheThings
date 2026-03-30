@@ -2149,6 +2149,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 	n(PROFESSIONS, {
 		prof(TAILORING, {
 			q(89423),	-- 30/30 Arcanoweave Expertise
+			q(89422),	-- 0/20 Arcanoweave Expertise
+			q(89460),	-- 0/20 Sunfire Expertise
 		}),
 		prof(SKINNING, {
 			q(88522),	-- 20/40 Thorough Tanning (2nd charge)
