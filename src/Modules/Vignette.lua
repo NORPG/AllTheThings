@@ -93,6 +93,7 @@ local Ignored = setmetatable({
 		[259864] = true,	-- Sathren Azuredawn [Decor Specialist]
 		[256828] = true,	-- Dennia Silvertongue [Decor Specialist]
 		[252873] = true,	-- Morta Gage [Decor Specialist]
+		[240407] = true,	-- Naynar [Haranir Renown Quartermaster]
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]

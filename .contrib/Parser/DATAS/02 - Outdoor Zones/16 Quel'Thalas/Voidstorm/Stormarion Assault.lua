@@ -160,7 +160,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 					--q(91463?),	-- Wave 1 started (Stage 2 of 7), no hqt
 					q(91464),	-- Wave 2 preparation started (Stage 3 of 7)
 					q(91465),	-- Wave 3 preparation started (Stage 5 of 7)
-					q(93793),	-- fired after completion first Stormarion Assault (Victorious Stormarion Pinnacle Cache was looted?)/ probably WQs unloock in area? / Special Assignment #1 completion of the week in Eversong
 				}),
 			}),
 		}),
