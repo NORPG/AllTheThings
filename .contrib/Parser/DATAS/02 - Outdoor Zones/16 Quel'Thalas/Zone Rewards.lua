@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(QUESTS, {
-			q(93790),	-- after obtain any epic seasonal chest from outdoor activity (e.g. Fabled Veteran's Cache) first time per week
+			q(93790, name(HEADERS.Item, 260193)),	-- after obtain any epic seasonal chest from outdoor activity (e.g. Fabled Veteran's Cache) first time per week
 		}),
 	}),
 }));
