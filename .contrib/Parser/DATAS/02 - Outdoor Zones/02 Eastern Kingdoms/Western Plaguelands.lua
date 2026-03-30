@@ -1494,6 +1494,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(5142, {	-- Little Pamela
+					["altQuests"] = { 5601 }, -- Sister Pamela
 					["qg"] = 10927,	-- Marlene Redpath
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3261,6 +3262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(12738, {	-- Dalson Outhouse Key
 					["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
+					["sourceQuest"] = 5058,	-- Mrs. Dalson's Diary
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10816,	-- Wandering Skeleton
 				}),

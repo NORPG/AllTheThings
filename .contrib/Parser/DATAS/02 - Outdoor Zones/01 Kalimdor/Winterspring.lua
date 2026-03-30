@@ -582,23 +582,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(4809, {	-- Chillwind Horns
-					["sourceQuest"] = 4808,	-- Felnok Steelspring
-					["qg"] = 10468,	-- Felnok Steelspring
-					["coord"] = { 61.6, 38.6, WINTERSPRING },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 50,
-					["groups"] = {
-						objective(1, {	-- 0/8 Uncracked Chillwind Horn
-							["provider"] = { "i", 12444 },	-- Uncracked Chillwind Horn
-							["crs"] = {
-								7447,	-- Fledgling Chillwind
-								7448,	-- Chillwind Chimaera
-								7449,	-- Chillwind Ravager
-							},
-						}),
-					},
-				}),
 				q(28830, {	-- Chips off the Old Block
 					["sourceQuest"] = 28829,	-- Razor Beak and Antlers Pointy
 					["qg"] = 50263,	-- Jadrag the Slicer
@@ -1452,6 +1435,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5601, {	-- Sister Pamela
+					["altQuests"] = { 5142 }, -- Little Pamela
 					["qg"] = 11629,	-- Jessica Redpath
 					["coord"] = { 61.2, 39.0, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },

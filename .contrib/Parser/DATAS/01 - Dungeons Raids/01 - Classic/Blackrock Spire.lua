@@ -10,6 +10,8 @@ LOWER_BLACKROCK_SPIRE = createHeader({
 	},
 	description = {
 		en = "Also known as 'Lower' Blackrock Spire.",
+		es = "También conocida como 'Cumbre de Roca inferior'.",
+		mx = "También conocida como 'Cumbre de Roca inferior'.",
 		cn = "又称黑石塔下层",
 	},
 });
@@ -22,9 +24,13 @@ UPPER_BLACKROCK_SPIRE = createHeader({
 	description = {
 		-- #if AFTER 3.0.8
 		en = "Also known as 'Upper' Blackrock Spire.",
+		es = "También conocida como 'Cumbre de Roca superior'.",
+		mx = "También conocida como 'Cumbre de Roca superior'.",
 		cn = "又称黑石塔上层",
 		-- #else
 		en = "One member of your group must have completed the Seal of Ascension quest chain in order for the fires to light and the door to open to this portion of the instance. Also known as 'Upper' Blackrock Spire.",
+		es = "Un miembro de tu grupo debe haber completado la cadena de misiones del Sello de Ascensión para que se enciendan las hogueras y se abra la puerta a esta parte de la instancia. También conocida como la Cumbre de Roca Negra superior.",
+		mx = "Un miembro de tu grupo debe haber completado la cadena de misiones del Sello de Ascensión para que se prendan las hogueras y se abra la puerta a esta parte de la instancia. También conocida como la Cumbre de Roca Negra superior.",
 		cn = "你的队伍中必须有一名成员完成 “升腾之印（Seal of Ascension）” 任务链，才能点燃火焰并打开通往副本这一部分的门，即黑石塔上层（Upper Blackrock Spire）",
 		-- #endif
 	},
@@ -693,20 +699,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
 			}),
-			-- #if AFTER TBC
-			q(6568, {	-- Mistress of Deception
-				["sourceQuest"] = 6567,	-- The Champion of the Horde
-				["providers"] = {
-					{ "n", 10182 },	-- Rokaro <Champion of the Horde>
-					{ "i", 16785 },	-- Rokaro's Letter
-				},
-				["coord"] = { 25.6, 70.0, DESOLACE },
-				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { WESTERN_PLAGUELANDS },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 55,
-			}),
-			-- #endif
 			q(4866, {	-- Mother's Milk
 				-- #if BEFORE 4.0.3
 				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
@@ -1074,13 +1066,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 				},
 			}),
-			-- #if BEFORE TBC
-			q(6568, {	-- The Testament of Rexxar
+			q(6568, {	-- The Testament of Rexxar(Classic)/Mistress of Deception(TBC)
 				["sourceQuest"] = 6567,	-- The Champion of the Horde
 				["providers"] = {
-					{ "n", 10182 },	-- Rexxar <Champion of the Horde>
-					{ "i", 16785 },	-- Rexxar's Testament
+					{ "n", 10182 },	-- Rexxar <Champion of the Horde>/Rokaro <Champion of the Horde>
+					{ "i", 16785 },	-- Rexxar's Testament/Rokaro's Letter
 				},
+				-- #if BEFORE TBC
 				["coords"] = {
 					{ 54.0, 3.2, DESOLACE },
 					{ 62.8, 22.6, DESOLACE },
@@ -1092,12 +1084,31 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 40.8, 78.6, DESOLACE },
 					{ 42.4, 96.8, DESOLACE },
 				},
+				-- #else
+				["coord"] = { 25.6, 70.0, DESOLACE },
+				-- #endif
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 			}),
-			-- #endif
+			q(4809, {	-- Chillwind Horns
+				["sourceQuest"] = 4808,	-- Felnok Steelspring
+				["qg"] = 10468,	-- Felnok Steelspring
+				["coord"] = { 61.6, 38.6, WINTERSPRING },
+				["timeline"] = { REMOVED_4_0_3 },
+				["lvl"] = 50,
+				["groups"] = {
+					objective(1, {	-- 0/8 Uncracked Chillwind Horn
+						["provider"] = { "i", 12444 },	-- Uncracked Chillwind Horn
+						["crs"] = {
+							7447,	-- Fledgling Chillwind
+							7448,	-- Chillwind Chimaera
+							7449,	-- Chillwind Ravager
+						},
+					}),
+				},
+			}),
 			q(4907, {	-- Tinkee Steamboil
 				["sourceQuest"] = 4810,	-- Return to Tinkee
 				["qg"] = 10468,	-- Felnok Steelspring
