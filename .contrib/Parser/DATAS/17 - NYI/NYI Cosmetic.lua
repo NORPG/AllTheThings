@@ -991,17 +991,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(246978),	-- Felreaver's Hellfire Shoulderguards
 				i(246980),	-- Felreaver's Hellfire Treads
 
-				------ Felreaver's Legion Set ------
-				i(246973),	-- Ensemble: Fashion of the Fanatic Felcyclist
-				q(91636),	-- Ensemble: Fashion of the Fanatic Felcyclist
-				i(246968),	-- Felreaver's Legion Belt
-				i(246966),	-- Felreaver's Legion Gauntlets
-				i(246971),	-- Felreaver's Legion Helm
-				i(246969),	-- Felreaver's Legion Jacket
-				i(246967),	-- Felreaver's Legion Legguards
-				i(246970),	-- Felreaver's Legion Shoulderguards
-				i(246972),	-- Felreaver's Legion Treads
-
 				------ Stillwater Fisher Set ------
 				i(244231),	-- Ensemble: Stillwater Fisher Attire
 				q(90930),	-- Ensemble: Stillwater Fisher Attire

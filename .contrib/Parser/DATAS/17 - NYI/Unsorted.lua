@@ -943,8 +943,6 @@ root(ROOTS.Unsorted, {
 				i(266213),	-- Incense Materials
 				i(260603),	-- Frail and Flexible Wing
 				i(260682),	-- Rusty Tusk Ring
-				i(262432),	-- Weathered Lockbox
-				i(262559),	-- Spare Key
 				i(267487),	-- Ignited Torch
 				i(267620),	-- Simple Stein
 				i(267621),	-- Traditional Stein

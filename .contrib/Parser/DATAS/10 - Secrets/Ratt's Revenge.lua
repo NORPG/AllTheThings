@@ -492,7 +492,46 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 					["timeline"] = { ADDED_12_0_1_LAUNCH },
 				}),
 				-- 11 O'clock Basin
+				n(255888, {	-- Divine Flame of Beledar
+					["provider"] = { "i", 260533 },	-- Oddsight Focus
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+					["coord"] = { 33.2, 54.6, HALLOWFALL },
+				}),
+				hqt(93764, {	-- Radiant Singer
+					["name"] = "Become a Radiant Singer",
+					["description"] = "This step is pretty complicated and requires a 40 man raid, you're also gonna probably need an addon like BeledarOrchestra.\n\nFully lights up the 11 O'Clock Basin.",
+					["provider"] = { "n", 255888 },	-- Divine Flame of Beledar
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+					["groups"] = { ach(61516) },	-- Radiant Singer
+				}),
 				-- 12 O'clock Basin
+				hqt(93765, {	-- Deliver the Orb of Shadows
+					["name"] = "Deliver the Orb of Shadows",
+					["description"] = "Head to the southeast of Suramar near the coordinates. Use your Torch of Pyrreth to find a wandering invisible ghost, once found, an extra action button will spawn an Orb of Shadows.\n\nYou must take this orb to Golk the Rumble in the center of Azsuna at the second coordinates. The player carrying the orb cannot take damage, jump, or swim, and enemies will spark periodically to attack them, a group of players and water walking of some kind will make this easier.\n\nFully lights up the 12 O'Clock Basin.",
+					["coords"] = {
+						{ 82.5, 67.4, SURAMAR },
+						{ 57.8, 42.8, AZSUNA },
+					},
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+					["groups"] = {
+						i(262432, {	-- Weathered Lockbox
+							i(246973),	-- Ensemble: Fashion of the Fanatic Felcyclist
+						}),
+						i(262559),	-- Spare Key
+					},
+				}),
+				--o(TODO, {	-- Hidden Footlocker
+				--	["description"] = "In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having posession of the Spare Key.",
+				--	["providers"] = {
+				--		{ "i", 262559, 1 },	-- Spare Key
+				--		{ "i", 260533, 1 },	-- Oddsight Focus
+				--		{ "i", 228966, 1 },	-- Starry-Eyed Goggles
+				--	},
+				--	--["coord"] = { xx, xx, 46 },	-- Karazhan Catacombs
+				--	["timeline"] = { ADDED_12_0_1_LAUNCH },
+				--	["groups"] = { i(262561) },	-- Ratts' Journal, Page 317
+				--}),
+				--
 				o(475116, {	-- Ordinary Pebble
 					["description"] = "These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in the Nature statue room.",
 					["coords"] = {
