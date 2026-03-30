@@ -52746,7 +52746,7 @@ s(185590,204432,{awp=100002,b=1,f=7,lvl=70})}}),
 q(74892,{awp=100100,coords={
 [2133]={{27.5,44.4}}},crs={199853,199855},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2531},{"pop"}}}),
 e(2562,{awp=100200,coords={
-[2200]={{39.6,54.1}}},isRaid=1,isWeekly=1,npcID=209574,g={
+[2200]={{39.6,54.1}}},isRaid=1,isWeekly=1,npcID=209574,questID=77758,g={
 cq(78528,{awp=100002,b=1,c={11},itemID=210751,lvl=11,spellID=426483}),
 s(193033,210433,{awp=100002,f=2,lvl=58}),
 mm(210480,{awp=100002,b=1,questID=78409}),
