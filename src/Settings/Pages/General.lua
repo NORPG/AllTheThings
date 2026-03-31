@@ -713,7 +713,7 @@ checkboxLootMode:AlignBelow(checkboxAccountMode)
 
 local headerAccountThings = child:CreateHeaderLabel(L.ACCOUNT_THINGS_LABEL)
 headerAccountThings:SetPoint("LEFT", headerMode, 0, 0)
-headerAccountThings:SetPoint("TOP", checkboxLootMode, "BOTTOM", 0, -10)
+headerAccountThings:SetPoint("TOP", checkboxLootMode, "BOTTOM", 0, -5)
 headerAccountThings.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
