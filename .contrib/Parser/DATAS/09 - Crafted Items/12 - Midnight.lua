@@ -129,6 +129,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245647),	-- School of Gems+
 			i(245648),	-- School of Gems++
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ALCHEMY,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ALCHEMY, 1 }}
+		},{
+			pn(107284),	-- Alchemical Mastery
+			pn(107105),	-- Brilliant Potioneer
+			pn(107209),	-- Clever Creations
+			pn(107102),	-- Cunning Potioneer
+			pn(107211),	-- Flask Abundance
+			pn(107214),	-- Fluent in Flasks
+			pn(107210),	-- Haranir Secrets
+			pn(107212),	-- Ingenious Libations
+			pn(107256),	-- Inspired Transmutation
+			pn(107254),	-- Metamorphic Mastery
+			pn(107106),	-- Path of Light
+			pn(107103),	-- Path of Void
+			pn(107208),	-- Phial Abundance
+			pn(107107),	-- Potion Prowess
+			pn(107104),	-- Prolific Potioneer - Light
+			pn(107101),	-- Prolific Potioneer - Void
+			pn(107281),	-- Recycle
+			pn(107283),	-- Reduce
+			pn(107282),	-- Reuse
+			pn(107213),	-- Sin'dorei Specialist
+			pn(107255),	-- Synthesis Synergy
+			pn(107257),	-- Transmutation Authority
+		})),
 		filter(REAGENTS, {
 			i(241281),	-- Composite Flora+
 			i(241280),	-- Composite Flora++
@@ -316,6 +343,41 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(259234, {["requireSkill"] = TAILORING}),	-- Sunforged Needle Set
 			i(237946, {["requireSkill"] = TAILORING}),	-- Thalassian Needle Set
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, 1 }}
+		},{
+			pn(104288),	-- Alloys
+			pn(104576),	-- Armorsmithing
+			pn(104567),	-- Articulating Armor
+			pn(104627),	-- Axes and Polearms
+			pn(104566),	-- Belts
+			pn(104632),	-- Blades
+			pn(104574),	-- Chestplates
+			pn(104258),	-- Craftsmithing
+			pn(104564),	-- Gauntlets
+			pn(104573),	-- Greaves
+			pn(104629),	-- Hafted Weapons
+			pn(104570),	-- Helms
+			pn(104575),	-- Large Plate Armor
+			pn(104630),	-- Long Blades
+			pn(104628),	-- Maces
+			pn(104569),	-- Pauldrons
+			pn(104289),	-- Prolific Worker
+			pn(104290),	-- Resourceful Smith
+			pn(104568),	-- Sabatons
+			pn(104571),	-- Sculpted Armor
+			pn(104291),	-- Second Nature
+			pn(104572),	-- Shields
+			pn(104631),	-- Short Blades
+			pn(104292),	-- The Old Ways
+			pn(104255),	-- Tool Stones
+			pn(104256),	-- Trade Accessories
+			pn(104257),	-- Trade Tools
+			pn(104565),	-- Vambraces
+			pn(104633),	-- Weaponsmithing
+			pn(104626),	-- Weaponstones
+		})),
 		filter(REAGENTS, {
 			i(238202),	-- Gloaming Alloy+
 			i(238203),	-- Gloaming Alloy++
@@ -685,6 +747,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244177, {["requireSkill"] = ENCHANTING}),	-- Runed Dazzling Thorium Rod
 			i(244175, {["requireSkill"] = ENCHANTING}),	-- Runed Refulgent Copper Rod
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENCHANTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 }}
+		},{
+			pn(107764),	-- Amani Augments
+			pn(107759),	-- Azerothian Arms
+			pn(107762),	-- Berserker Brawn
+			pn(107646),	-- Crystal Collector
+			pn(107649),	-- Disenchanting Delegate
+			pn(107648),	-- Dust Deliverer
+			pn(107769),	-- Elevating Equipment
+			pn(107766),	-- Eversong Empowerments
+			pn(107684),	-- Excellent Expendables
+			pn(107760),	-- Haranir Heightening
+			pn(107615),	-- Infinite Ingenuity
+			pn(107688),	-- Mastering Mirages
+			pn(107614),	-- Multicrafting Meticulously
+			pn(107757),	-- Nature's Novelties
+			pn(107687),	-- Outstanding Outfits
+			pn(107765),	-- Quel'Thalas Quality
+			pn(107686),	-- Reputable Rods
+			pn(107616),	-- Responsible Resources
+			pn(107647),	-- Shard Supplier
+			pn(107767),	-- Silvermoon's Spellpower
+			pn(107617),	-- Spellbound Shatterer
+			pn(107768),	-- Thalassian Talents
+			pn(107689),	-- Transitories, Tonics, and Tools
+			pn(107761),	-- Trollish Tools
+			pn(107758),	-- Worldsoul Wards
+			pn(107685),	-- Worthy Wands
+			pn(107763),	-- Zul'Aman Zeal
+		})),
 		n(WEAPON_ENCHANTMENTS, {
 			i(243964),	-- Enchant Tool - Amani Perception+
 			i(243965),	-- Enchant Tool - Amani Perception++
@@ -947,6 +1041,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244718, {["requireSkill"] = ENGINEERING}),	-- Turbo-Junker's Multitool v1
 			i(259183, {["requireSkill"] = ENGINEERING}),	-- Turbo-Junker's Multitool v9
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENGINEERING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENGINEERING, 1 }}
+		},{
+			pn(106788),	-- Bits
+			pn(106789),	-- Bits and Bots
+			pn(109138),	-- Boots
+			pn(106787),	-- Bots
+			pn(109139),	-- Bracers
+			pn(109141),	-- Combat Analytics
+			pn(106754),	-- Concentrated Effort
+			pn(106717),	-- Engineering Accessories
+			pn(106711),	-- Engineering Tools
+			pn(106718),	-- Finishing Touches
+			pn(106715),	-- Fishing Rods
+			pn(109140),	-- Goggles
+			pn(110352),	-- Guns
+			pn(106713),	-- Jewelcrafting Tools
+			pn(106714),	-- Mandatory Tools
+			pn(106719),	-- Market Mobility
+			pn(106716),	-- Mining Accessories
+			pn(106753),	-- Multicraft
+			pn(106755),	-- Recycling
+			pn(106752),	-- Resourcefulness
+			pn(106712),	-- Tailoring Tools
+		})),
 		filter(REAGENTS, {
 			i(257735),	-- B0P, Curator of Booms+
 			i(257741),	-- B0P, Curator of Booms++
@@ -1112,6 +1232,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1224896, 87738),	-- Wild Sanguithorn
 			r_withQuest(1224893, 87732),	-- Wild Tranquility Bloom
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = HERBALISM,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.HERBALISM, 1 }}
+		},{
+			pn(104480),	-- Bloom Bringer
+			pn(104421),	-- Botany
+			pn(104481),	-- Bountiful Harvests
+			pn(104419),	-- Cultivation
+			pn(104706),	-- Lightfused
+			pn(104476),	-- Lily Looter
+			pn(104707),	-- Midnight Overload
+			pn(104420),	-- Mulching
+			pn(104704),	-- Primal
+			pn(104478),	-- Root Rummager
+			pn(104477),	-- Silver Searcher
+			pn(104479),	-- Thorn Thresher
+			pn(104703),	-- Voidbound
+			pn(104705),	-- Wild
+		})),
 		i(236776),	-- Argentleaf+
 		i(236777),	-- Argentleaf++
 		i(236774),	-- Azeroot+
@@ -1361,6 +1500,46 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245776, {["requireSkill"] = COOKING}),	-- Sin'dorei Quill
 			i(245780, {["requireSkill"] = INSCRIPTION}),	-- Sin'dorei Rolling Pin
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = INSCRIPTION,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 }}
+		},{
+			pn(106279),	-- Added Flair
+			pn(106185),	-- Alchemist's Mixing Rod
+			pn(106351),	-- Blood
+			pn(106192),	-- Blueprints
+			pn(106189),	-- Bows
+			pn(106280),	-- Calm Hands
+			pn(106184),	-- Chef's Rolling Pin
+			pn(106358),	-- Darkmoon Curiosity
+			pn(106349),	-- Darkmoon Dominion: Blood
+			pn(106352),	-- Darkmoon Dominion: Hunt
+			pn(106346),	-- Darkmoon Dominion: Rot
+			pn(106355),	-- Darkmoon Dominion: Void
+			pn(106350),	-- Darkmoon Sigil: Blood
+			pn(106353),	-- Darkmoon Sigil: Hunt
+			pn(106347),	-- Darkmoon Sigil: Rot
+			pn(106356),	-- Darkmoon Sigil: Void
+			pn(106277),	-- Dextrous Diligence
+			pn(106191),	-- Field Research
+			pn(106354),	-- Hunt
+			pn(106278),	-- Keen Eye
+			pn(106188),	-- Lamps and Lanterns
+			pn(106187),	-- Market Research
+			pn(109659),	-- Parchment
+			pn(109652),	-- Perfect Ciphers
+			pn(109657),	-- Perfect Contracts
+			pn(109654),	-- Perfect Inks
+			pn(109653),	-- Perfect Milling
+			pn(109658),	-- Perfect Missives
+			pn(109656),	-- Perfect Vantus Runes
+			pn(109660),	-- Perfected Products
+			pn(109655),	-- Processing
+			pn(106348),	-- Rot
+			pn(106186),	-- Scribe's Quill
+			pn(106190),	-- Staves
+			pn(106357),	-- Void
+		})),
 		filter(REAGENTS, {
 			i(245764),	-- Codified Azeroot+
 			i(245765),	-- Codified Azeroot++
@@ -1664,6 +1843,46 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(240957, {["requireSkill"] = INSCRIPTION}),	-- Sin'dorei Scribe's Spectacles
 			i(246525, {["requireSkill"] = INSCRIPTION}),	-- Thalassian Scribe's Crystalline Lens
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = JEWELCRAFTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1 }}
+		},{
+			pn(107059),	-- Alluring Accessories
+			pn(106891),	-- Austere Amethyst
+			pn(106974),	-- Boldly Basic
+			pn(107012),	-- Calculated Concentration
+			pn(106981),	-- Copper Consumer
+			pn(107056),	-- Crafting Couture
+			pn(106977),	-- Crushing Connoisseur
+			pn(106890),	-- Deadly Amethyst
+			pn(106895),	-- Deadly Lapis
+			pn(106899),	-- Deadly Peridot
+			pn(106901),	-- Glamorous Gems
+			pn(106887),	-- Glorious Garnet
+			pn(106896),	-- Lustrous Lapis
+			pn(107057),	-- Luxurious Lockets
+			pn(106885),	-- Masterful Garnet
+			pn(106893),	-- Masterful Lapis
+			pn(106898),	-- Masterful Peridot
+			pn(106976),	-- Material Manufacturer
+			pn(106975),	-- Optionally Optimal
+			pn(107013),	-- Outrageous Output
+			pn(106900),	-- Powerful Peridot
+			pn(106983),	-- Proficient Processor
+			pn(106982),	-- Prospecting Pro
+			pn(106889),	-- Quick Amethyst
+			pn(106886),	-- Quick Garnet
+			pn(106894),	-- Quick Lapis
+			pn(107058),	-- Regal Rings
+			pn(106979),	-- Silver Scrapper
+			pn(107014),	-- Skilled Savings
+			pn(106978),	-- Thorium Thresher
+			pn(107015),	-- Thoughtful Throughput
+			pn(106980),	-- Tin-vestigator
+			pn(106888),	-- Versatile Amethyst
+			pn(106884),	-- Versatile Garnet
+			pn(106897),	-- Versatile Peridot
+		})),
 		filter(REAGENTS, {
 			i(240974),	-- Kaleidoscopic Prism+
 			i(240975),	-- Kaleidoscopic Prism++
@@ -1885,6 +2104,43 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244808, {["requireSkill"] = SKINNING}),	-- Thalassian Wildseeker's Workbag
 			i(244618, {["requireSkill"] = ENGINEERING}),	-- Tinker's Handguard
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = LEATHERWORKING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, 1 }}
+		},{
+			pn(107987),	-- Advanced Armor
+			pn(107816),	-- Artisanal Accessories
+			pn(107988),	-- Balanced Bracers
+			pn(107984),	-- Bettering Bands
+			pn(107992),	-- Bolstered Bulwarks
+			pn(107813),	-- Brimming Basics
+			pn(107886),	-- Capable Caps
+			pn(107815),	-- Commanding Commodities
+			pn(107919),	-- Concentrated Crafter
+			pn(107812),	-- Crucial Consumables
+			pn(107985),	-- Cutting Claws
+			pn(107883),	-- Embroidered Ensembles
+			pn(107986),	-- Fantastic Faulds
+			pn(107817),	-- Flawless Fortes
+			pn(107881),	-- Grand Gloves
+			pn(107889),	-- Lasting Leather
+			pn(107921),	-- Learned Leatherworker
+			pn(107918),	-- Mastering Multicraft
+			pn(107885),	-- Mighty Mantles
+			pn(107814),	-- Overwhelming Optionals
+			pn(107989),	-- Powerful Plumes
+			pn(107993),	-- Safeguarding Scales
+			pn(107888),	-- Securely Shaped
+			pn(107880),	-- Sturdy Sashes
+			pn(107983),	-- Talented Talons
+			pn(107879),	-- Tasteful Treads
+			pn(107887),	-- Terrific Tunics
+			pn(107882),	-- Toughened Tassets
+			pn(107991),	-- Valuable Vests
+			pn(107990),	-- Versatile Visages
+			pn(107920),	-- Waning Waste
+			pn(107884),	-- Wonderful Wristguards
+		})),
 		filter(REAGENTS, {
 			i(244603),	-- Blessed Pango Charm+
 			i(244604),	-- Blessed Pango Charm++
@@ -1930,6 +2186,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1225353, 88486),	-- Wild Refulgent Copper
 			r_withQuest(1225368, 88485),	-- Wild Umbral Tin
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = MINING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.MINING, 1 }}
+		},{
+			pn(105565),	-- Brilliant Silver
+			pn(105525),	-- Lightfused
+			pn(105475),	-- Meticulous Mining
+			pn(105526),	-- Over-LODED
+			pn(105568),	-- Plentiful Ores
+			pn(105523),	-- Primal
+			pn(105567),	-- Refulgent Copper
+			pn(105474),	-- Rich Deposits
+			pn(105473),	-- Seams
+			pn(105566),	-- Umbral Tin
+			pn(105522),	-- Voidbound
+			pn(105524),	-- Wild
+		})),
 		i(237364),	-- Brilliant Silver Ore+
 		i(237365),	-- Brilliant Silver Ore++
 		i(237507),	-- Cloudy Quartz
@@ -1962,6 +2235,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(238513),	-- Void-Tempered Scales+
 			i(238514),	-- Void-Tempered Scales++
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = SKINNING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.SKINNING, 1 }}
+		},{
+			pn(106058),	-- Careful Carving
+			pn(106117),	-- Component Collector
+			pn(106056),	-- Dedicated Diffuser
+			pn(106059),	-- Gainful Gathering
+			pn(106088),	-- Lasting Leather
+			pn(106118),	-- Majestic Materials
+			pn(106087),	-- Superb Scales
+			pn(106119),	-- Talented Tracker
+			pn(106089),	-- Thorough Tanning
+			pn(106057),	-- Trophy Taker
+		})),
 		i(238656),	-- Grand Beast Lure
 		i(238657),	-- Lightbloom Diffuser
 		i(238652),	-- Majestic Eversong Lure
@@ -2128,6 +2416,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(267060, {["requireSkill"] = HERBALISM}),	-- Thalassian Herbalist's Cowl
 			i(267062, {["requireSkill"] = TAILORING}),	-- Thalassian Tailor's Threads
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = TAILORING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.TAILORING, 1 }}
+		},{
+			pn(104324),	-- Arcanoweave Expertise
+			pn(104325),	-- Arcanoweaving
+			pn(104210),	-- Belts
+			pn(104214),	-- Boots
+			pn(104209),	-- Bracers
+			pn(104204),	-- Cloaks
+			pn(104389),	-- Creative Efficiency
+			pn(104349),	-- Eastern Kingdoms Cloth
+			pn(104211),	-- Elegant Accessories
+			pn(104387),	-- Embroidery
+			pn(104350),	-- Fabric Specialist
+			pn(104388),	-- Fashion Genius
+			pn(104390),	-- Fiber Arts
+			pn(104213),	-- Gloves
+			pn(104212),	-- Hats
+			pn(104215),	-- Head-to-Toes
+			pn(104328),	-- Nimble Needlework
+			pn(104348),	-- Otherworldly Cloth
+			pn(104207),	-- Outfit Essentials
+			pn(104206),	-- Robes
+			pn(104208),	-- Shoulders
+			pn(104216),	-- Sin'dorei Finery
+			pn(104326),	-- Sunfire Expertise
+			pn(104327),	-- Sunfire Silk Weaving
+			pn(104386),	-- Textile Utilization
+			pn(104205),	-- Trousers
+		})),
 		filter(REAGENTS, {
 			i(239198),	-- Arcanoweave Bolt+
 			i(239200),	-- Arcanoweave Bolt++
@@ -2147,7 +2466,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PROFESSIONS, {
-		prof(ALCHEMY, {	--TODO rankmax
+		prof(ALCHEMY, {
 			q(90720),	-- 5/20 Synthesis Synergy
 			q(90721),	-- 10/20 Synthesis Synergy
 			q(90722),	-- 15/20 Synthesis Synergy
