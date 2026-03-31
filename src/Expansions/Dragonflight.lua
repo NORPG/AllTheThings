@@ -267,43 +267,42 @@ do
 
 	-- Debug code to get new Profession Nodes for ProfessionNodeDB
 	local DB = {}
-	local CONFIG_ID_TO_NAME = {
-		[6245516] = "Dragon Isles Alchemy",
-		[7394486] = "Dragon Isles Blacksmithing",
-		[6242413] = "Dragon Isles Enchanting",
-		[7394543] = "Dragon Isles Engineering",
-		[7504756] = "Dragon Isles Herbalism",
-		[7506369] = "Dragon Isles Inscription",
-		[7506146] = "Dragon Isles Jewelcrafting",
-		[7482558] = "Dragon Isles Leatherworking",
-		[7504772] = "Dragon Isles Mining",
-		[7482532] = "Dragon Isles Skinning",
-		[7502531] = "Dragon Isles Tailoring",
-
-		[49821319] = "Khaz Algar Alchemy",
-		[53234328] = "Khaz Algar Blacksmithing",
-		[49821129] = "Khaz Algar Enchanting",
-		[53234066] = "Khaz Algar Engineering",
-		[51575851] = "Khaz Algar Herbalism",
-		[53298521] = "Khaz Algar Inscription",
-		[53298900] = "Khaz Algar Jewelcrafting",
-		[53638479] = "Khaz Algar Leatherworking",
-		[51576185] = "Khaz Algar Mining",
-		[53638451] = "Khaz Algar Skinning",
-		[53209291] = "Khaz Algar Tailoring",
-
-		[99469361] = "Midnight Alchemy",
-		[100893235] = "Midnight Blacksmithing",
-		[99469489] = "Midnight Enchanting",
-		[100893266] = "Midnight Engineering",
-		[100481094] = "Midnight Herbalism",
-		[100688108] = "Midnight Inscription",
-		[100688072] = "Midnight Jewelcrafting",
-		[100891138] = "Midnight Leatherworking",
-		[100481136] = "Midnight Mining",
-		[100891127] = "Midnight Skinning",
-		[100149496] = "Midnight Tailoring",
+	local SKILLLINES_TO_NAME = {
+		[2823] = "Dragon Isles Alchemy",
+		[2822] = "Dragon Isles Blacksmithing",
+		[2825] = "Dragon Isles Enchanting",
+		[2827] = "Dragon Isles Engineering",
+		[2832] = "Dragon Isles Herbalism",
+		[2828] = "Dragon Isles Inscription",
+		[2829] = "Dragon Isles Jewelcrafting",
+		[2830] = "Dragon Isles Leatherworking",
+		[2833] = "Dragon Isles Mining",
+		[2834] = "Dragon Isles Skinning",
+		[2831] = "Dragon Isles Tailoring",
+		[2871] = "Khaz Algar Alchemy",
+		[2872] = "Khaz Algar Blacksmithing",
+		[2874] = "Khaz Algar Enchanting",
+		[2875] = "Khaz Algar Engineering",
+		[2877] = "Khaz Algar Herbalism",
+		[2878] = "Khaz Algar Inscription",
+		[2879] = "Khaz Algar Jewelcrafting",
+		[2880] = "Khaz Algar Leatherworking",
+		[2881] = "Khaz Algar Mining",
+		[2882] = "Khaz Algar Skinning",
+		[2883] = "Khaz Algar Tailoring",
+		[2906] = "Midnight Alchemy",
+		[2907] = "Midnight Blacksmithing",
+		[2909] = "Midnight Enchanting",
+		[2910] = "Midnight Engineering",
+		[2912] = "Midnight Herbalism",
+		[2913] = "Midnight Inscription",
+		[2914] = "Midnight Jewelcrafting",
+		[2915] = "Midnight Leatherworking",
+		[2916] = "Midnight Mining",
+		[2917] = "Midnight Skinning",
+		[2918] = "Midnight Tailoring",
 	}
+
 	local function PrintProfessionNodeSummary()
 		local nodes = {}
 
@@ -314,12 +313,12 @@ do
 		if #nodes == 0 then return end
 
 		app.Sort(nodes, function(a, b)
-			local function getConfigID(d)
-				return d.configID or math.huge
+			local function getSkillLineID(d)
+				return d.skillLineID or math.huge
 			end
 
-			local aMin = getConfigID(a.data)
-			local bMin = getConfigID(b.data)
+			local aMin = getSkillLineID(a.data)
+			local bMin = getSkillLineID(b.data)
 
 			if aMin ~= bMin then
 				return aMin < bMin
@@ -340,8 +339,8 @@ do
 				local name = '"' .. d.name:gsub('"', '\\"') .. '"'
 				local icon = d.icon
 
-				local cid = d.configID
-				local professionName = CONFIG_ID_TO_NAME[cid]
+				local skillLineID = d.skillLineID
+				local professionName = SKILLLINES_TO_NAME[skillLineID]
 
 				local line = "AssignProfessionNode(" .. id .. ", " .. name .. ", " .. icon .. ") -- " .. professionName
 
@@ -358,44 +357,46 @@ do
 	end
 	local function DebugHarvestProfessionNodes()
 		for _, skillLineID in ipairs(C_TradeSkillUI_GetAllProfessionTradeSkillLines()) do
-			local configID = PROFESSION_CONFIGS[skillLineID]
-			if configID and configID ~= 0 then
-				for _, tabID in ipairs(C_ProfSpecs_GetSpecTabIDsForSkillLine(skillLineID) or {}) do
-					local rootPath = C_ProfSpecs_GetRootPathForTab(tabID)
-					if rootPath then
-						local pathIDs = {}
-						CollectChildPaths(pathIDs, rootPath)
+			if TRACKED_SKILLLINES[skillLineID] then
+				local configID = C_ProfSpecs_GetConfigIDForSkillLine(skillLineID)
+				if configID and configID ~= 0 then
+					for _, tabID in ipairs(C_ProfSpecs_GetSpecTabIDsForSkillLine(skillLineID) or {}) do
+						local rootPath = C_ProfSpecs_GetRootPathForTab(tabID)
+						if rootPath then
+							local pathIDs = {}
+							CollectChildPaths(pathIDs, rootPath)
 
-						for pathID in pairs(pathIDs) do
-							local nodeInfo = C_Traits_GetNodeInfo(configID, pathID)
-							local chosenEntryID = nodeInfo
-								and (nodeInfo.entryIDsWithCommittedRanks and nodeInfo.entryIDsWithCommittedRanks[1]
-								or nodeInfo.entryIDs and nodeInfo.entryIDs[1]
-								or nodeInfo.activeEntry and nodeInfo.activeEntry.entryID)
+							for pathID in pairs(pathIDs) do
+								local nodeInfo = C_Traits_GetNodeInfo(configID, pathID)
+								local chosenEntryID = nodeInfo
+									and (nodeInfo.entryIDsWithCommittedRanks and nodeInfo.entryIDsWithCommittedRanks[1]
+									or nodeInfo.entryIDs and nodeInfo.entryIDs[1]
+									or nodeInfo.activeEntry and nodeInfo.activeEntry.entryID)
 
-							local name, icon
-							if chosenEntryID then
-								local entryInfo = C_Traits_GetEntryInfo(configID, chosenEntryID)
-								local def = entryInfo and entryInfo.definitionID and C_Traits_GetDefinitionInfo(entryInfo.definitionID)
+								local name, icon
+								if chosenEntryID then
+									local entryInfo = C_Traits_GetEntryInfo(configID, chosenEntryID)
+									local def = entryInfo and entryInfo.definitionID and C_Traits_GetDefinitionInfo(entryInfo.definitionID)
 
-								if def then
-									if def.overrideName and def.overrideName ~= "" then
-										name = def.overrideName
-									end
-									if def.overrideIcon and def.overrideIcon ~= 0 then
-										icon = def.overrideIcon
+									if def then
+										if def.overrideName and def.overrideName ~= "" then
+											name = def.overrideName
+										end
+										if def.overrideIcon and def.overrideIcon ~= 0 then
+											icon = def.overrideIcon
+										end
 									end
 								end
-							end
 
-							-- Only store valid data
-							if name and icon then
-								if not DB[pathID] then
-									DB[pathID] = {
-										name = name,
-										icon = icon,
-										configID = configID,
-									}
+								-- Only store valid data
+								if name and icon then
+									if not DB[pathID] then
+										DB[pathID] = {
+											name = name,
+											icon = icon,
+											skillLineID = skillLineID,
+										}
+									end
 								end
 							end
 						end
