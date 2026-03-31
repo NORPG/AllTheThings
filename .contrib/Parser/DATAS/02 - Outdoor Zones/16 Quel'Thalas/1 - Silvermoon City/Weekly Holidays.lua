@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--q(XXX),	-- A Savage Path Through Time
 				--q(XXX),	-- A Scarred Path Through Time
 				q(93628),	-- A Shadowed Path Through Time
-				--q(XXX),	-- A Shattered Path Through Time
+				q(93611),	-- A Shattered Path Through Time
 				--q(XXX),	-- A Shrouded Path Through Time
 				--q(XXX),	-- An Original Path Through Time
 			})),
