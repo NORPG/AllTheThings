@@ -1769,30 +1769,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(194966),	-- Thousandbite Piranha
 	}),
 	prof(HERBALISM, {
-		header(HEADERS.Spell, 2366, {	-- Herb Gathering
-			i(191467),	-- Bubble Poppy+
-			i(191468),	-- Bubble Poppy++
-			i(191469),	-- Bubble Poppy+++
-			i(203416, {["timeline"] = {ADDED_10_0_7}}),	-- Dormant Lifebloom Seeds
-			i(200678),	-- Dreambloom
-			i(200677),	-- Dreambloom Petal
-			i(191460),	-- Hochenblume+
-			i(191461),	-- Hochenblume++
-			i(191462),	-- Hochenblume+++
-			i(202014),	-- Infused Pollen
-			i(197755),	-- Lava Beetle
-			i(200506),	-- Roused Seedling
-			i(190330),	-- Rousing Decay
-			i(200507),	-- Decayed Roused Seedling
-			i(200508),	-- Propagating Roused Seedling
-			i(200509),	-- Agitated Roused Seedling
-			i(191464),	-- Saxifrage+
-			i(191465),	-- Saxifrage++
-			i(191466),	-- Saxifrage+++
-			i(191470),	-- Writhebark+
-			i(191471),	-- Writhebark++
-			i(191472),	-- Writhebark+++
-		}),
 		n(DISCOVERY, {
 			header(HEADERS.Map, EMERALD_DREAM, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 }, }, {
 				["groups"] = sharedData({
@@ -1848,6 +1824,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			r_withQuest(391504, 71979),	-- Windswept Saxifrage
 			r_withQuest(391516, 71977),	-- Windswept Writhebark
 			r_withQuest(391447, 71970),	-- Writhebark
+		}),
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
+			i(191467),	-- Bubble Poppy+
+			i(191468),	-- Bubble Poppy++
+			i(191469),	-- Bubble Poppy+++
+			i(203416, {["timeline"] = {ADDED_10_0_7}}),	-- Dormant Lifebloom Seeds
+			i(200678),	-- Dreambloom
+			i(200677),	-- Dreambloom Petal
+			i(191460),	-- Hochenblume+
+			i(191461),	-- Hochenblume++
+			i(191462),	-- Hochenblume+++
+			i(202014),	-- Infused Pollen
+			i(197755),	-- Lava Beetle
+			i(200506),	-- Roused Seedling
+			i(190330),	-- Rousing Decay
+			i(200507),	-- Decayed Roused Seedling
+			i(200508),	-- Propagating Roused Seedling
+			i(200509),	-- Agitated Roused Seedling
+			i(191464),	-- Saxifrage+
+			i(191465),	-- Saxifrage++
+			i(191466),	-- Saxifrage+++
+			i(191470),	-- Writhebark+
+			i(191471),	-- Writhebark++
+			i(191472),	-- Writhebark+++
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["requireSkill"] = HERBALISM,

@@ -514,26 +514,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(242290),	-- Wise Tails
 	}),
 	prof(ENCHANTING, {
-		header(HEADERS.Spell, 1280952, {	-- Disenchant
-			i(267655),	-- Brimming Mana Shard
-			i(243605),	-- Dawn Crystal+
-			i(243606),	-- Dawn Crystal++
-			i(243599),	-- Eversinging Dust+
-			i(243600),	-- Eversinging Dust++
-			i(267653),	-- Glimmering Powder
-			i(243602),	-- Radiant Shard+
-			i(243603),	-- Radiant Shard++
-			i(267654),	-- Swirling Arcane Essence
-		}),
-		header(HEADERS.Spell, 1280401, {	-- Dawn Shatter
-			i(267401),	-- Dawn Shatter
-		}),
-		header(HEADERS.Spell, 1280394, {	-- Radiant Shatter
-			i(267393),	-- Radiant Shatter
-		}),
-		header(HEADERS.Spell, 1235731, {	-- Shatter Essence
-			i(245934),	-- Shatter Essence
-		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(244008),	-- Enchant Boots - Farstrider's Hunt+
 			i(244009),	-- Enchant Boots - Farstrider's Hunt++
@@ -600,6 +580,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(243733),	-- Thalassian Phoenix Oil+
 			i(243734),	-- Thalassian Phoenix Oil++
 		}),
+		header(HEADERS.Spell, 1280401, {	-- Dawn Shatter
+			i(267401),	-- Dawn Shatter
+		}),
 		n(DECOR, {
 			i(262459),	-- Animated Sin'dorei Hammer (DECOR!)
 			i(262458),	-- Animated Sin'dorei Pick (DECOR!)
@@ -612,6 +595,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(262590),	-- Rootflame Campfire (DECOR!)
 			i(246693),	-- Self-Pouring Thalassian Sunwine (DECOR!)
 			i(262470),	-- Spellbound Tome of Thalassian Magics (DECOR!)
+		}),
+		header(HEADERS.Spell, 1280952, {	-- Disenchant
+			i(267655),	-- Brimming Mana Shard
+			i(243605),	-- Dawn Crystal+
+			i(243606),	-- Dawn Crystal++
+			i(243599),	-- Eversinging Dust+
+			i(243600),	-- Eversinging Dust++
+			i(267653),	-- Glimmering Powder
+			i(243602),	-- Radiant Shard+
+			i(243603),	-- Radiant Shard++
+			i(267654),	-- Swirling Arcane Essence
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
@@ -791,6 +785,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			pn(107685),	-- Worthy Wands
 			pn(107763),	-- Zul'Aman Zeal
 		})),
+		header(HEADERS.Spell, 1280394, {	-- Radiant Shatter
+			i(267393),	-- Radiant Shatter
+		}),
+		header(HEADERS.Spell, 1235731, {	-- Shatter Essence
+			i(245934),	-- Shatter Essence
+		}),
 		n(WEAPON_ENCHANTMENTS, {
 			i(243964),	-- Enchant Tool - Amani Perception+
 			i(243965),	-- Enchant Tool - Amani Perception++
@@ -829,44 +829,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(ENGINEERING, {
-		header(HEADERS.Spell, 1229930, {	-- Recycling
-			i(243578),	-- Aetherlume+
-			i(243579),	-- Aetherlume++
-			i(243581),	-- Evercore+
-			i(243582),	-- Evercore++
-			r(1248612),	-- Ambient Aethercharged Crystal
-			r(1261945),	-- B0P, Curator of Booms
-			r(1229922),	-- B1P, Scorcher of Souls
-			r(1229927),	-- Curious Red Button
-			r(1229923),	-- Emergency Soul Link
-			r(1261866),	-- Farstrider's Hawkeye
-			r(1229919),	-- Kinetic Ankle Primers
-			r(1261895),	-- Laced Zoomshots
-			r(1229916),	-- Lucky Keychain
-			r(1229917),	-- M3DDY, Travel-Sized
-			r(1229887),	-- Quel'dorei Bands
-			r(1229888),	-- Quel'dorei Bracelets
-			r(1229892),	-- Quel'dorei Clonkers
-			r(1229882),	-- Quel'dorei Cloth Goggles
-			r(1229889),	-- Quel'dorei Guards
-			r(1229883),	-- Quel'dorei Leather Optics
-			r(1229884),	-- Quel'dorei Mail Shroud
-			r(1229891),	-- Quel'dorei Runners
-			r(1229886),	-- Quel'dorei Silken Cuffs
-			r(1229890),	-- Quel'dorei Softsteppers
-			r(1229893),	-- Quel'dorei Stompers
-			r(1229885),	-- Quel'dorei Visor
-			r(1248615),	-- Ren'dorei Crafting Framework
-			r(1248611),	-- Ren'dorei Lightpost
-			r(1248613),	-- Ren'dorei Stargazer
-			r(1248610),	-- Ren'dorei Void Projector
-			r(1248616),	-- Ren'dorei Warp Orb
-			r(1248614),	-- Small Telogrus Lamp
-			r(1261893),	-- Smuggler's Lynxeye
-			r(1229926),	-- W-47CH D0G
-			r(1261913),	-- Weighted Boomshots
-			r(1229928),	-- Wormhole Generator: Quel'Thalas
-		}),
 		n(ARMOR, {
 			i(244748),	-- Aetherlume Bands
 			i(244749),	-- Aetherlume Bracelets
@@ -1103,6 +1065,44 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(243576),	-- Soul Sprocket+
 			i(243577),	-- Soul Sprocket++
 		}),
+		header(HEADERS.Spell, 1229930, {	-- Recycling
+			i(243578),	-- Aetherlume+
+			i(243579),	-- Aetherlume++
+			i(243581),	-- Evercore+
+			i(243582),	-- Evercore++
+			r(1248612),	-- Ambient Aethercharged Crystal
+			r(1261945),	-- B0P, Curator of Booms
+			r(1229922),	-- B1P, Scorcher of Souls
+			r(1229927),	-- Curious Red Button
+			r(1229923),	-- Emergency Soul Link
+			r(1261866),	-- Farstrider's Hawkeye
+			r(1229919),	-- Kinetic Ankle Primers
+			r(1261895),	-- Laced Zoomshots
+			r(1229916),	-- Lucky Keychain
+			r(1229917),	-- M3DDY, Travel-Sized
+			r(1229887),	-- Quel'dorei Bands
+			r(1229888),	-- Quel'dorei Bracelets
+			r(1229892),	-- Quel'dorei Clonkers
+			r(1229882),	-- Quel'dorei Cloth Goggles
+			r(1229889),	-- Quel'dorei Guards
+			r(1229883),	-- Quel'dorei Leather Optics
+			r(1229884),	-- Quel'dorei Mail Shroud
+			r(1229891),	-- Quel'dorei Runners
+			r(1229886),	-- Quel'dorei Silken Cuffs
+			r(1229890),	-- Quel'dorei Softsteppers
+			r(1229893),	-- Quel'dorei Stompers
+			r(1229885),	-- Quel'dorei Visor
+			r(1248615),	-- Ren'dorei Crafting Framework
+			r(1248611),	-- Ren'dorei Lightpost
+			r(1248613),	-- Ren'dorei Stargazer
+			r(1248610),	-- Ren'dorei Void Projector
+			r(1248616),	-- Ren'dorei Warp Orb
+			r(1248614),	-- Small Telogrus Lamp
+			r(1261893),	-- Smuggler's Lynxeye
+			r(1229926),	-- W-47CH D0G
+			r(1261913),	-- Weighted Boomshots
+			r(1229928),	-- Wormhole Generator: Quel'Thalas
+		}),
 		filter(TOYS, {
 			i(248485),	-- Wormhole Generator: Quel'Thalas (TOY!)
 		}),
@@ -1244,6 +1244,29 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1224896, 87738),	-- Wild Sanguithorn
 			r_withQuest(1224893, 87732),	-- Wild Tranquility Bloom
 		}),
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
+			i(236776),	-- Argentleaf+
+			i(236777),	-- Argentleaf++
+			i(236774),	-- Azeroot+
+			i(236775),	-- Azeroot++
+			i(238389),	-- Empowered Mulch
+			i(237498),	-- Glowing Resilient Seed
+			i(238388),	-- Imbued Mulch
+			i(238387),	-- Magical Mulch
+			i(236778),	-- Mana Lily+
+			i(236779),	-- Mana Lily++
+			i(236780),	-- Nocturnal Lotus
+			i(237500),	-- Primal Resilient Seed
+			i(237497),	-- Resilient Seed
+			i(236770),	-- Sanguithorn+
+			i(236771),	-- Sanguithorn++
+			i(238467),	-- Thalassian Phoenix Ember
+			i(238465),	-- Thalassian Phoenix Plume
+			i(238466),	-- Thalassian Phoenix Tail
+			i(236761),	-- Tranquility Bloom+
+			i(236767),	-- Tranquility Bloom++
+			i(237499),	-- Wild Resilient Seed
+		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["requireSkill"] = HERBALISM,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.HERBALISM, 1 }}
@@ -1263,51 +1286,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			pn(104703),	-- Voidbound
 			pn(104705),	-- Wild
 		})),
-		i(236776),	-- Argentleaf+
-		i(236777),	-- Argentleaf++
-		i(236774),	-- Azeroot+
-		i(236775),	-- Azeroot++
-		i(238389),	-- Empowered Mulch
-		i(237498),	-- Glowing Resilient Seed
-		i(238388),	-- Imbued Mulch
-		i(238387),	-- Magical Mulch
-		i(236778),	-- Mana Lily+
-		i(236779),	-- Mana Lily++
-		i(236780),	-- Nocturnal Lotus
-		i(237500),	-- Primal Resilient Seed
-		i(237497),	-- Resilient Seed
-		i(236770),	-- Sanguithorn+
-		i(236771),	-- Sanguithorn++
-		i(238467),	-- Thalassian Phoenix Ember
-		i(238465),	-- Thalassian Phoenix Plume
-		i(238466),	-- Thalassian Phoenix Tail
-		i(236761),	-- Tranquility Bloom+
-		i(236767),	-- Tranquility Bloom++
-		i(237499),	-- Wild Resilient Seed
 	}),
 	prof(INSCRIPTION, {
-		salvagerecipe(1269575, 262908, {	-- Midnight Milling
-			i(245803),	-- Argentleaf Pigment+
-			i(245804),	-- Argentleaf Pigment++
-			i(245867),	-- Mana Lily Pigment+
-			i(245866),	-- Mana Lily Pigment++
-			i(245807),	-- Powder Pigment+
-			i(245808),	-- Powder Pigment++
-			i(245865),	-- Sanguithorn Pigment+
-			i(245864),	-- Sanguithorn Pigment++
-		}),
-		header(HEADERS.Spell, 1230084, {	-- Transcribe: Blood
-			i(245810),	-- Transcribe: Blood
-		}),
-		header(HEADERS.Spell, 1230082, {	-- Transcribe: Hunt
-			i(245812),	-- Transcribe: Hunt
-		}),
-		header(HEADERS.Spell, 1230080, {	-- Transcribe: Rot
-			i(245811),	-- Transcribe: Rot
-		}),
-		header(HEADERS.Spell, 1230078, {	-- Transcribe: Void
-			i(245813),	-- Transcribe: Void
-		}),
 		n(DISCOVERY, {
 			header(HEADERS.Spell, 1230032, {	-- Algari Treatise on Inscription
 				r(1230034),	-- Thalassian Treatise on Alchemy
@@ -1402,6 +1382,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(90406, 1230033);	-- Thalassian Treatise on Tailoring
 			FirstCraft(90423, 1230050);	-- Vantus Rune: Radiant
 		})),
+		salvagerecipe(1269575, 262908, {	-- Midnight Milling
+			i(245803),	-- Argentleaf Pigment+
+			i(245804),	-- Argentleaf Pigment++
+			i(245867),	-- Mana Lily Pigment+
+			i(245866),	-- Mana Lily Pigment++
+			i(245807),	-- Powder Pigment+
+			i(245808),	-- Powder Pigment++
+			i(245865),	-- Sanguithorn Pigment+
+			i(245864),	-- Sanguithorn Pigment++
+		}),
 		filter(MISC, {
 			i(245797),	-- Contract: The Amani Tribe+
 			i(245798),	-- Contract: The Amani Tribe++
@@ -1596,6 +1586,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245791),	-- Thalassian Missive of the Quickblade+
 			i(245792),	-- Thalassian Missive of the Quickblade++
 		}),
+		header(HEADERS.Spell, 1230084, {	-- Transcribe: Blood
+			i(245810),	-- Transcribe: Blood
+		}),
+		header(HEADERS.Spell, 1230082, {	-- Transcribe: Hunt
+			i(245812),	-- Transcribe: Hunt
+		}),
+		header(HEADERS.Spell, 1230080, {	-- Transcribe: Rot
+			i(245811),	-- Transcribe: Rot
+		}),
+		header(HEADERS.Spell, 1230078, {	-- Transcribe: Void
+			i(245813),	-- Transcribe: Void
+		}),
 		filter(TRINKET_F, {
 			i(245855),	-- Darkmoon Deck: Blood
 			i(245829),	-- Darkmoon Deck: Hunt
@@ -1627,34 +1629,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	prof(JEWELCRAFTING, {
 		n(DISCOVERY, {
 			r(1231132),	-- Midnight Crushing
-		}),
-		header(HEADERS.Spell, 1231127, {	-- Midnight Prospecting
-			i(242554),	-- Amani Lapis+
-			i(242722),	-- Amani Lapis++
-			i(242788),	-- Duskshrouded Stone+
-			i(242789),	-- Duskshrouded Stone++
-			i(242608),	-- Eversong Diamond+
-			i(242712),	-- Eversong Diamond++
-			i(242612),	-- Flawless Amani Lapis+
-			i(242727),	-- Flawless Amani Lapis++
-			i(242610),	-- Flawless Harandar Peridot+
-			i(242726),	-- Flawless Harandar Peridot++
-			i(242613),	-- Flawless Sanguine Garnet+
-			i(242724),	-- Flawless Sanguine Garnet++
-			i(242611),	-- Flawless Tenebrous Amethyst+
-			i(242725),	-- Flawless Tenebrous Amethyst++
-			i(242607),	-- Harandar Peridot+
-			i(242720),	-- Harandar Peridot++
-			i(242553),	-- Sanguine Garnet+
-			i(242723),	-- Sanguine Garnet++
-			i(242606),	-- Tenebrous Amethyst+
-			i(242721),	-- Tenebrous Amethyst++
-		}),
-		header(HEADERS.Spell, 1231132, {	-- Midnight Crushing
-			i(242787),	-- Crystalline Glass+
-			i(242786),	-- Crystalline Glass++
-			i(242620),	-- Glimmering Gemdust+
-			i(242621),	-- Glimmering Gemdust++
 		}),
 		n(DECOR, {
 			i(262471),	-- Bejeweled Sin'dorei Lyre (DECOR!)
@@ -1822,6 +1796,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(240880),	-- Versatile Lapis++
 			i(240861),	-- Versatile Peridot+
 			i(240862),	-- Versatile Peridot++
+		}),
+		header(HEADERS.Spell, 1231132, {	-- Midnight Crushing
+			i(242787),	-- Crystalline Glass+
+			i(242786),	-- Crystalline Glass++
+			i(242620),	-- Glimmering Gemdust+
+			i(242621),	-- Glimmering Gemdust++
+		}),
+		header(HEADERS.Spell, 1231127, {	-- Midnight Prospecting
+			i(242554),	-- Amani Lapis+
+			i(242722),	-- Amani Lapis++
+			i(242788),	-- Duskshrouded Stone+
+			i(242789),	-- Duskshrouded Stone++
+			i(242608),	-- Eversong Diamond+
+			i(242712),	-- Eversong Diamond++
+			i(242612),	-- Flawless Amani Lapis+
+			i(242727),	-- Flawless Amani Lapis++
+			i(242610),	-- Flawless Harandar Peridot+
+			i(242726),	-- Flawless Harandar Peridot++
+			i(242613),	-- Flawless Sanguine Garnet+
+			i(242724),	-- Flawless Sanguine Garnet++
+			i(242611),	-- Flawless Tenebrous Amethyst+
+			i(242725),	-- Flawless Tenebrous Amethyst++
+			i(242607),	-- Harandar Peridot+
+			i(242720),	-- Harandar Peridot++
+			i(242553),	-- Sanguine Garnet+
+			i(242723),	-- Sanguine Garnet++
+			i(242606),	-- Tenebrous Amethyst+
+			i(242721),	-- Tenebrous Amethyst++
 		}),
 		filter(MISC, {
 			i(241132),	-- Amani Lapis Prism+
@@ -2198,6 +2200,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1225353, 88486),	-- Wild Refulgent Copper
 			r_withQuest(1225368, 88485),	-- Wild Umbral Tin
 		}),
+		header(HEADERS.Spell, 2575, {	-- Mining
+			i(237364),	-- Brilliant Silver Ore+
+			i(237365),	-- Brilliant Silver Ore++
+			i(237507),	-- Cloudy Quartz
+			i(237366),	-- Dazzling Thorium
+			i(237496),	-- Igneous Rock Specimen
+			i(237359),	-- Refulgent Copper Ore+
+			i(237361),	-- Refulgent Copper Ore++
+			i(237506),	-- Septarian Nodule
+			i(237362),	-- Umbral Tin Ore+
+			i(237363),	-- Umbral Tin Ore++
+			i(265530),	-- Plans: Ornamental Silvermoon Hanger (RECIPE!)
+		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["requireSkill"] = MINING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.MINING, 1 }}
@@ -2215,17 +2230,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			pn(105522),	-- Voidbound
 			pn(105524),	-- Wild
 		})),
-		i(237364),	-- Brilliant Silver Ore+
-		i(237365),	-- Brilliant Silver Ore++
-		i(237507),	-- Cloudy Quartz
-		i(237366),	-- Dazzling Thorium
-		i(237496),	-- Igneous Rock Specimen
-		i(237359),	-- Refulgent Copper Ore+
-		i(237361),	-- Refulgent Copper Ore++
-		i(237506),	-- Septarian Nodule
-		i(237362),	-- Umbral Tin Ore+
-		i(237363),	-- Umbral Tin Ore++
-		i(265530),	-- Plans: Ornamental Silvermoon Hanger (RECIPE!)
 	}),
 	prof(SKINNING, {
 		header(HEADERS.Spell, 471014, {	-- Midnight Skinning

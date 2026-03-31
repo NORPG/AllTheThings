@@ -1577,42 +1577,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(220139),	-- Whispering Stargazer
 	}),
 	prof(HERBALISM, {
-		header(HEADERS.Spell, 2366, {	-- Herb Gathering
-			i(210808),	-- Arathor's Spear+
-			i(210809),	-- Arathor's Spear++
-			i(210810),	-- Arathor's Spear+++
-			i(210805),	-- Blessing Blossom+
-			i(210806),	-- Blessing Blossom++
-			i(210807),	-- Blessing Blossom+++
-			i(213610),	-- Crystalline Powder
-			i(214605),	-- Crystallized Verdant Seed
-			i(224264),	-- Deepgrove Petal
-			i(224835),	-- Deepgrove Roots
-			i(224265),	-- Deepgrove Rose
-			i(219196),	-- Empowered Mulch
-			i(219195),	-- Imbued Mulch
-			i(214597),	-- Irradiated Verdant Seed
-			i(240194, {["timeline"] = {ADDED_11_2_0}}),	-- K'areshi Lotus
-			i(213613),	-- Leyline Residue
-			i(210799),	-- Luredrop+
-			i(210800),	-- Luredrop++
-			i(210801),	-- Luredrop+++
-			i(219194),	-- Magical Mulch
-			i(210796),	-- Mycobloom+
-			i(210797),	-- Mycobloom++
-			i(210798),	-- Mycobloom+++
-			i(213197),	-- Null Lotus
-			i(210802),	-- Orbinid+
-			i(210803),	-- Orbinid++
-			i(210804),	-- Orbinid+++
-			i(239690, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+
-			i(239691, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom++
-			i(239692, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+++
-			i(214595),	-- Sporefused Verdant Seed
-			i(214561),	-- Verdant Seed
-			i(213612),	-- Viridescent Spores
-			i(213611),	-- Writhing Sample
-		}),
 		n(DISCOVERY, {
 			r_withQuest(435858, 79916),	-- Altered Luredrop
 			r_withQuest(435840, 79909),	-- Altered Mycobloom
@@ -1654,6 +1618,42 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(435861, 79919),	-- Sporefused Luredrop
 			r_withQuest(435850, 79912),	-- Sporefused Mycobloom
 			r_withQuest(435867, 79926),	-- Sporefused Orbinid
+		}),
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
+			i(210808),	-- Arathor's Spear+
+			i(210809),	-- Arathor's Spear++
+			i(210810),	-- Arathor's Spear+++
+			i(210805),	-- Blessing Blossom+
+			i(210806),	-- Blessing Blossom++
+			i(210807),	-- Blessing Blossom+++
+			i(213610),	-- Crystalline Powder
+			i(214605),	-- Crystallized Verdant Seed
+			i(224264),	-- Deepgrove Petal
+			i(224835),	-- Deepgrove Roots
+			i(224265),	-- Deepgrove Rose
+			i(219196),	-- Empowered Mulch
+			i(219195),	-- Imbued Mulch
+			i(214597),	-- Irradiated Verdant Seed
+			i(240194, {["timeline"] = {ADDED_11_2_0}}),	-- K'areshi Lotus
+			i(213613),	-- Leyline Residue
+			i(210799),	-- Luredrop+
+			i(210800),	-- Luredrop++
+			i(210801),	-- Luredrop+++
+			i(219194),	-- Magical Mulch
+			i(210796),	-- Mycobloom+
+			i(210797),	-- Mycobloom++
+			i(210798),	-- Mycobloom+++
+			i(213197),	-- Null Lotus
+			i(210802),	-- Orbinid+
+			i(210803),	-- Orbinid++
+			i(210804),	-- Orbinid+++
+			i(239690, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+
+			i(239691, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom++
+			i(239692, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+++
+			i(214595),	-- Sporefused Verdant Seed
+			i(214561),	-- Verdant Seed
+			i(213612),	-- Viridescent Spores
+			i(213611),	-- Writhing Sample
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["requireSkill"] = HERBALISM,
