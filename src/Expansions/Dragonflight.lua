@@ -166,15 +166,15 @@ do
 		CACHE = function() return CACHE end,
 		name = function(t)
 			local info = app.ProfessionNodeDB and app.ProfessionNodeDB[t[KEY]]
-			return info.name
+			return info and info.name or UNKNOWN
 		end,
 		icon = function(t)
 			local info = app.ProfessionNodeDB and app.ProfessionNodeDB[t[KEY]]
-			return info.icon
+			return info and info.icon or QUESTION_MARK_ICON
 		end,
 		description = function(t)
 			local info = ProfessionNodeInfoMeta[t[KEY]]
-			return info.description or ""
+			return info and info.description or ""
 		end,
 		collectible = function(t)
 			return app.Settings.Collectibles[CACHE]
