@@ -1741,6 +1741,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				i(205128, {["timeline"] = {ADDED_10_1_0}}),	-- Technique: Winding Slitherdrake: Yellow and Silver Armor (RECIPE!)
 			},
 		}),
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 		i(194967),	-- Aileron Seamoth
 		i(194968),	-- Cerulean Spinefish
 		i(199338),	-- Copper Coin of the Isles
@@ -1762,14 +1767,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(198614),	-- Soggy Clump of Darkmoon Cards
 		i(194969),	-- Temporal Dragonhead
 		i(194966),	-- Thousandbite Piranha
-		filter(RECIPES, {
-			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
-			}),
-		}),
 	}),
 	prof(HERBALISM, {
-		spell(2366, {	-- Herb Gathering
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			i(191467),	-- Bubble Poppy+
 			i(191468),	-- Bubble Poppy++
 			i(191469),	-- Bubble Poppy+++
@@ -3267,7 +3267,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(MINING, {
-		spell(2575, {	-- Mining
+		n(DISCOVERY, {
+			r_withQuest(384688, 71951),	-- Draconium Deposit
+			r_withQuest(389458, 72347, ADDED_10_0_7),	-- Draconium Seam
+			r_withQuest(389413, 71956),	-- Hardened Draconium
+			r_withQuest(389463, 71955),	-- Hardened Serevite
+			r_withQuest(389420, 71962),	-- Infurious Draconium
+			r_withQuest(389464, 71961),	-- Infurious Serevite
+			r_withQuest(421247, 77828, ADDED_10_2_0),	-- Living Draconium Deposit
+			r_withQuest(421244, 77827, ADDED_10_2_0),	-- Living Serevite Deposit
+			r_withQuest(405121, 75140, ADDED_10_1_0),	-- Metamorphic Draconium
+			r_withQuest(405120, 75139, ADDED_10_1_0),	-- Metamorphic Serevite
+			r_withQuest(384690, 71954),	-- Molten Draconium
+			r_withQuest(389459, 71953),	-- Molten Serevite
+			r_withQuest(389701, 71964),	-- Overload Hardened Node
+			r_withQuest(389704, 71967),	-- Overload Infurious Node
+			r_withQuest(422809, 78061, ADDED_10_2_0),	-- Overload Living Deposit
+			r_withQuest(405131, 75137, ADDED_10_1_0),	-- Overload Metamorphic Node
+			r_withQuest(389700, 71963),	-- Overload Molten Node
+			r_withQuest(389702, 71966),	-- Overload Primal Node
+			r_withQuest(389703, 71965),	-- Overload Titan-Touched Node
+			r_withQuest(389409, 71960),	-- Primal Draconium
+			r_withQuest(389462, 71959),	-- Primal Serevite
+			r_withQuest(384693, 71952),	-- Rich Draconium
+			r_withQuest(389460, 71950),	-- Rich Serevite
+			r_withQuest(389465, 72346, ADDED_10_0_7),	-- Serevite Seam
+			r_withQuest(389406, 71958),	-- Titan-Touched Draconium
+			r_withQuest(389461, 71957),	-- Titan-Touched Serevite
+		}),
+		header(HEADERS.Spell, 2575, {	-- Mining
 			i(203418, {["timeline"] = {ADDED_10_0_7}}),	-- Amplified Quaking Stone
 			i(189143),	-- Draconium Ore+
 			i(188658, {["_drop"] = {"requireSkill"}}),	-- Draconium Ore++
@@ -3320,34 +3348,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(192860),	-- Ysemerald++
 			i(192861),	-- Ysemerald+++
 			--]]
-		}),
-		n(DISCOVERY, {
-			r_withQuest(384688, 71951),	-- Draconium Deposit
-			r_withQuest(389458, 72347, ADDED_10_0_7),	-- Draconium Seam
-			r_withQuest(389413, 71956),	-- Hardened Draconium
-			r_withQuest(389463, 71955),	-- Hardened Serevite
-			r_withQuest(389420, 71962),	-- Infurious Draconium
-			r_withQuest(389464, 71961),	-- Infurious Serevite
-			r_withQuest(421247, 77828, ADDED_10_2_0),	-- Living Draconium Deposit
-			r_withQuest(421244, 77827, ADDED_10_2_0),	-- Living Serevite Deposit
-			r_withQuest(405121, 75140, ADDED_10_1_0),	-- Metamorphic Draconium
-			r_withQuest(405120, 75139, ADDED_10_1_0),	-- Metamorphic Serevite
-			r_withQuest(384690, 71954),	-- Molten Draconium
-			r_withQuest(389459, 71953),	-- Molten Serevite
-			r_withQuest(389701, 71964),	-- Overload Hardened Node
-			r_withQuest(389704, 71967),	-- Overload Infurious Node
-			r_withQuest(422809, 78061, ADDED_10_2_0),	-- Overload Living Deposit
-			r_withQuest(405131, 75137, ADDED_10_1_0),	-- Overload Metamorphic Node
-			r_withQuest(389700, 71963),	-- Overload Molten Node
-			r_withQuest(389702, 71966),	-- Overload Primal Node
-			r_withQuest(389703, 71965),	-- Overload Titan-Touched Node
-			r_withQuest(389409, 71960),	-- Primal Draconium
-			r_withQuest(389462, 71959),	-- Primal Serevite
-			r_withQuest(384693, 71952),	-- Rich Draconium
-			r_withQuest(389460, 71950),	-- Rich Serevite
-			r_withQuest(389465, 72346, ADDED_10_0_7),	-- Serevite Seam
-			r_withQuest(389406, 71958),	-- Titan-Touched Draconium
-			r_withQuest(389461, 71957),	-- Titan-Touched Serevite
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["requireSkill"] = MINING,
