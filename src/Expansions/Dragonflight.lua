@@ -104,52 +104,52 @@ do
 	local CLASSNAME = "ProfessionNode"
 	local KEY = "professionnodeID"
 
-	local C_ProfSpecs_GetSpecTabIDsForSkillLine = C_ProfSpecs.GetSpecTabIDsForSkillLine
-	local C_ProfSpecs_GetRootPathForTab = C_ProfSpecs.GetRootPathForTab
 	local C_ProfSpecs_GetChildrenForPath = C_ProfSpecs.GetChildrenForPath
-	local C_ProfSpecs_GetPerksForPath = C_ProfSpecs.GetPerksForPath
+	local C_ProfSpecs_GetConfigIDForSkillLine = C_ProfSpecs.GetConfigIDForSkillLine
 	local C_ProfSpecs_GetDescriptionForPerk = C_ProfSpecs.GetDescriptionForPerk
+	local C_ProfSpecs_GetPerksForPath = C_ProfSpecs.GetPerksForPath
+	local C_ProfSpecs_GetRootPathForTab = C_ProfSpecs.GetRootPathForTab
+	local C_ProfSpecs_GetSpecTabIDsForSkillLine = C_ProfSpecs.GetSpecTabIDsForSkillLine
 	local C_ProfSpecs_GetStateForPath = C_ProfSpecs.GetStateForPath
-	local C_Traits_GetNodeInfo = C_Traits.GetNodeInfo
-	local C_Traits_GetEntryInfo = C_Traits.GetEntryInfo
-	local C_Traits_GetDefinitionInfo = C_Traits.GetDefinitionInfo
 	local C_TradeSkillUI_GetAllProfessionTradeSkillLines = C_TradeSkillUI.GetAllProfessionTradeSkillLines
+	local C_Traits_GetDefinitionInfo = C_Traits.GetDefinitionInfo
+	local C_Traits_GetEntryInfo = C_Traits.GetEntryInfo
+	local C_Traits_GetNodeInfo = C_Traits.GetNodeInfo
 
-	local PROFESSION_CONFIGS = {
-		-- /dump C_ProfSpecs.GetConfigIDForSkillLine(skillLineID)
-		[2823] = 6245516,	-- Dragon Isles Alchemy
-		[2822] = 7394486,	-- Dragon Isles Blacksmithing
-		[2825] = 6242413,	-- Dragon Isles Enchanting
-		[2827] = 7394543,	-- Dragon Isles Engineering
-		[2832] = 7504756,	-- Dragon Isles Herbalism
-		[2828] = 7506369,	-- Dragon Isles Inscription
-		[2829] = 7506146,	-- Dragon Isles Jewelcrafting
-		[2830] = 7482558,	-- Dragon Isles Leatherworking
-		[2833] = 7504772,	-- Dragon Isles Mining
-		[2834] = 7482532,	-- Dragon Isles Skinning
-		[2831] = 7502531,	-- Dragon Isles Tailoring
-		[2871] = 49821319,	-- Khaz Algar Alchemy
-		[2872] = 53234328,	-- Khaz Algar Blacksmithing
-		[2874] = 49821129,	-- Khaz Algar Enchanting
-		[2875] = 53234066,	-- Khaz Algar Engineering
-		[2877] = 51575851,	-- Khaz Algar Herbalism
-		[2878] = 53298521,	-- Khaz Algar Inscription
-		[2879] = 53298900,	-- Khaz Algar Jewelcrafting
-		[2880] = 53638479,	-- Khaz Algar Leatherworking
-		[2881] = 51576185,	-- Khaz Algar Mining
-		[2882] = 53638451,	-- Khaz Algar Skinning
-		[2883] = 53209291,	-- Khaz Algar Tailoring
-		[2906] = 99469361,	-- Midnight Alchemy
-		[2907] = 100893235,	-- Midnight Blacksmithing
-		[2909] = 99469489,	-- Midnight Enchanting
-		[2910] = 100893266,	-- Midnight Engineering
-		[2912] = 100481094,	-- Midnight Herbalism
-		[2913] = 100688108,	-- Midnight Inscription
-		[2914] = 100688072,	-- Midnight Jewelcrafting
-		[2915] = 100891138,	-- Midnight Leatherworking
-		[2916] = 100481136,	-- Midnight Mining
-		[2917] = 100891127,	-- Midnight Skinning
-		[2918] = 100149496,	-- Midnight Tailoring
+	local TRACKED_SKILLLINES = {
+		[2823] = true,	-- Dragon Isles Alchemy
+		[2822] = true,	-- Dragon Isles Blacksmithing
+		[2825] = true,	-- Dragon Isles Enchanting
+		[2827] = true,	-- Dragon Isles Engineering
+		[2832] = true,	-- Dragon Isles Herbalism
+		[2828] = true,	-- Dragon Isles Inscription
+		[2829] = true,	-- Dragon Isles Jewelcrafting
+		[2830] = true,	-- Dragon Isles Leatherworking
+		[2833] = true,	-- Dragon Isles Mining
+		[2834] = true,	-- Dragon Isles Skinning
+		[2831] = true,	-- Dragon Isles Tailoring
+		[2871] = true,	-- Khaz Algar Alchemy
+		[2872] = true,	-- Khaz Algar Blacksmithing
+		[2874] = true,	-- Khaz Algar Enchanting
+		[2875] = true,	-- Khaz Algar Engineering
+		[2877] = true,	-- Khaz Algar Herbalism
+		[2878] = true,	-- Khaz Algar Inscription
+		[2879] = true,	-- Khaz Algar Jewelcrafting
+		[2880] = true,	-- Khaz Algar Leatherworking
+		[2881] = true,	-- Khaz Algar Mining
+		[2882] = true,	-- Khaz Algar Skinning
+		[2883] = true,	-- Khaz Algar Tailoring
+		[2906] = true,	-- Midnight Alchemy
+		[2907] = true,	-- Midnight Blacksmithing
+		[2909] = true,	-- Midnight Enchanting
+		[2910] = true,	-- Midnight Engineering
+		[2912] = true,	-- Midnight Herbalism
+		[2913] = true,	-- Midnight Inscription
+		[2914] = true,	-- Midnight Jewelcrafting
+		[2915] = true,	-- Midnight Leatherworking
+		[2916] = true,	-- Midnight Mining
+		[2917] = true,	-- Midnight Skinning
+		[2918] = true,	-- Midnight Tailoring
 	}
 
 	-- Recursive helper
@@ -196,61 +196,63 @@ do
 	app.AddEventHandler("OnRefreshCollections", function()
 		local saved, none = {}, {}
 		for _, skillLineID in ipairs(C_TradeSkillUI_GetAllProfessionTradeSkillLines()) do
-			local configID = PROFESSION_CONFIGS[skillLineID]
-			if configID and configID ~= 0 then
-				for _, tabID in ipairs(C_ProfSpecs_GetSpecTabIDsForSkillLine(skillLineID) or {}) do
-					local rootPath = C_ProfSpecs_GetRootPathForTab(tabID)
-					if rootPath then
-						local pathIDs = {}
-						CollectChildPaths(pathIDs, rootPath)
+			if TRACKED_SKILLLINES[skillLineID] then
+				local configID = C_ProfSpecs_GetConfigIDForSkillLine(skillLineID)
+				if configID and configID ~= 0 then
+					for _, tabID in ipairs(C_ProfSpecs_GetSpecTabIDsForSkillLine(skillLineID) or {}) do
+						local rootPath = C_ProfSpecs_GetRootPathForTab(tabID)
+						if rootPath then
+							local pathIDs = {}
+							CollectChildPaths(pathIDs, rootPath)
 
-						for pathID in pairs(pathIDs) do
-							local info = ProfessionNodeInfoMeta[pathID]
+							for pathID in pairs(pathIDs) do
+								local info = ProfessionNodeInfoMeta[pathID]
 
-							-- API C_Traits_GetDefinitionInfo does not return info
-							-- if you don't have the profession on the current character
-							-- We could store localized names in the user's cache
-							-- so when they load a profession it will have proper language values
-							-- Something similar to Flight Paths
-							-- local nodeInfo = C_Traits_GetNodeInfo(configID, pathID)
-							-- local chosenEntryID = nodeInfo
-							-- 	and (nodeInfo.entryIDsWithCommittedRanks and nodeInfo.entryIDsWithCommittedRanks[1]
-							-- 	or nodeInfo.entryIDs and nodeInfo.entryIDs[1]
-							-- 	or nodeInfo.activeEntry and nodeInfo.activeEntry.entryID)
+								-- API C_Traits_GetDefinitionInfo does not return info
+								-- if you don't have the profession on the current character
+								-- We could store localized names in the user's cache
+								-- so when they load a profession it will have proper language values
+								-- Something similar to Flight Paths
+								-- local nodeInfo = C_Traits_GetNodeInfo(configID, pathID)
+								-- local chosenEntryID = nodeInfo
+								-- 	and (nodeInfo.entryIDsWithCommittedRanks and nodeInfo.entryIDsWithCommittedRanks[1]
+								-- 	or nodeInfo.entryIDs and nodeInfo.entryIDs[1]
+								-- 	or nodeInfo.activeEntry and nodeInfo.activeEntry.entryID)
 
-							-- local name, icon
-							-- if chosenEntryID then
-							-- 	local entryInfo = C_Traits_GetEntryInfo(configID, chosenEntryID)
-							-- 	local def = entryInfo and entryInfo.definitionID and C_Traits_GetDefinitionInfo(entryInfo.definitionID)
+								-- local name, icon
+								-- if chosenEntryID then
+								-- 	local entryInfo = C_Traits_GetEntryInfo(configID, chosenEntryID)
+								-- 	local def = entryInfo and entryInfo.definitionID and C_Traits_GetDefinitionInfo(entryInfo.definitionID)
 
-							-- 	if def then
-							-- 		if def.overrideName and def.overrideName ~= "" then
-							-- 			name = def.overrideName
-							-- 		end
-							-- 		if def.overrideIcon and def.overrideIcon ~= 0 then
-							-- 			icon = def.overrideIcon
-							-- 		end
-							-- 	end
-							-- end
+								-- 	if def then
+								-- 		if def.overrideName and def.overrideName ~= "" then
+								-- 			name = def.overrideName
+								-- 		end
+								-- 		if def.overrideIcon and def.overrideIcon ~= 0 then
+								-- 			icon = def.overrideIcon
+								-- 		end
+								-- 	end
+								-- end
 
-							-- info.name = name
-							-- info.icon = icon
+								-- info.name = name
+								-- info.icon = icon
 
-							local perks = C_ProfSpecs_GetPerksForPath(pathID) or {}
-							local desc = {}
-							for _, perk in ipairs(perks) do
-								local d = C_ProfSpecs_GetDescriptionForPerk(perk.perkID)
-								if d and d ~= "" then
-									desc[#desc+1] = d
+								local perks = C_ProfSpecs_GetPerksForPath(pathID) or {}
+								local desc = {}
+								for _, perk in ipairs(perks) do
+									local d = C_ProfSpecs_GetDescriptionForPerk(perk.perkID)
+									if d and d ~= "" then
+										desc[#desc+1] = d
+									end
 								end
-							end
-							info.description = table_concat(desc, "\n\n")
+								info.description = table_concat(desc, "\n\n")
 
-							local state = C_ProfSpecs_GetStateForPath(pathID, configID)
-							if state == 2 then
-								saved[pathID] = true
-							else
-								none[pathID] = true
+								local state = C_ProfSpecs_GetStateForPath(pathID, configID)
+								if state == 2 then
+									saved[pathID] = true
+								else
+									none[pathID] = true
+								end
 							end
 						end
 					end
