@@ -365,15 +365,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				i(254748),	-- Chunk of Companion Experience (Epic)
 			},
 		}),
-		o(618495, {	-- Nullaeus Cache
-			["questID"] = 92887,
-			["isWeekly"] = true,
-			["cost"] = {{"i",253342,1}},	-- Beacon of Hope
-			["groups"] = {
-				i(262391),	-- Ominous Domanus (PET!)
-				i(265367),	-- Twilight Fang (COSMETIC!)
-			},
-		}),
 	})),
 	n(VENDORS, {
 		n(242398, {	-- Naleidea Rivergleam

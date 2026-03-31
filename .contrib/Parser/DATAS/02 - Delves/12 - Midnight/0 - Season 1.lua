@@ -192,6 +192,17 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(267648),	-- Boon of Vigor (Epic)
 					},
 				}),
+				o(618495, {	-- Nullaeus Cache
+					["questID"] = 92887,
+					["isWeekly"] = true,
+					["cost"] = {{"i",253342,1}},	-- Beacon of Hope
+					["groups"] = {
+						i(262391),	-- Ominous Domanus (PET!)
+						i(265368),	-- Twilight Destroyer (COSMETIC!)
+						i(265366),	-- Twilight Executioner (COSMETIC!)
+						i(265367),	-- Twilight Fang (COSMETIC!)
+					},
+				}),
 				--TODO Should these really be in the seasonal file vs the midnight delves file? Since when to objects change per season
 				o(584514, {	-- Bountiful Coffer
 					["groups"] = {

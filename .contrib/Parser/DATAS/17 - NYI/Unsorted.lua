@@ -1486,8 +1486,6 @@ root(ROOTS.Unsorted, {
 				i(264969),	-- Extinction Voulge
 				i(264970),	-- Oblivion's Edge
 				i(264971),	-- Annihilation Rod
-				i(265366),	-- Twilight Executioner
-				i(265368),	-- Twilight Destroyer
 				i(266077),	-- Basic Black Quiver
 				i(266078),	-- Basic Blue Quiver
 				i(266079),	-- Basic Bronze Quiver
