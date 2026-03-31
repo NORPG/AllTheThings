@@ -614,6 +614,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(93861),	-- Prey Complete - Nightmare #2
 			q(93863),	-- Prey Complete - Nightmare #3
 			q(93864),	-- Prey Complete - Nightmare #4
+
+			-- these fire when preys completed, but not entirely sure what they mean...
+			-- they are also account-wide
+			q(93872, {name="Why did this trigger? #1"}),	-- Prey Complete - ??
+			q(93873, {name="Why did this trigger? #2"}),	-- Prey Complete - ??
+			q(93874, {name="Why did this trigger? #3"}),	-- Prey Complete - ??
+			q(93875, {name="Why did this trigger? #4"}),	-- Prey Complete - ??
 		})),
 		-- One-Time
 		n(QUESTS, {
@@ -624,14 +631,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
 			--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
 			--q(95539),	-- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
-
-
-			-- these fire when preys completed, but not entirely sure what they mean...
-			-- they are also account-wide
-			q(93872, {name="Why did this trigger? #1"}),	-- Prey Complete - ??
-			q(93873, {name="Why did this trigger? #2"}),	-- Prey Complete - ??
-			q(93874, {name="Why did this trigger? #3"}),	-- Prey Complete - ??
-			q(93875, {name="Why did this trigger? #4"}),	-- Prey Complete - ??
 		}),
 	}),
 }));
