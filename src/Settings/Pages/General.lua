@@ -996,9 +996,8 @@ if app.GameBuildVersion >= 100000 then
 accwideCheckboxProfessionNodes =
 child:CreateAccountWideCheckbox("PROFESSION_NODES", "ProfessionNodes")
 	:AlignBelow(accwideCheckboxTitles)
-local professionnodeCheckbox = child:CreateTrackingCheckbox("PROFESSION_NODES", "ProfessionNodes", true)
+child:CreateTrackingCheckbox("PROFESSION_NODES", "ProfessionNodes", true)
 	:AlignAfter(accwideCheckboxProfessionNodes)
-	professionnodeCheckbox:MarkAsWIP();	-- TODO: Remove when done
 end
 
 -- Column 2
