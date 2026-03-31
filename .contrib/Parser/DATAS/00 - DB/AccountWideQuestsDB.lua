@@ -1949,6 +1949,7 @@ local AccountWideQuestsDB = {
 	85546,	-- Resonance Crystals
 	85661,	-- Upgraded Apparel
 	85718,	-- A Shining Stone
+	85719,	-- Delve daily bonus xp
 	85757,
 	85776,	-- GNZ Airmaster 9000
 	85781,	-- GE86 Advance

@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Boss(THORMBELAN, {	-- Thormbelan
 				-- ["questID"] = xx,
 			}),
-			-- BossWorldQuest(THORMBELAN, 0),	-- Thormbelan WQ
+			BossWorldQuest(THORMBELAN, 92034),	-- Thormbelan WQ
 		}),
 	}),
 }))

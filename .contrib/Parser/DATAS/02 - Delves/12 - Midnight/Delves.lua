@@ -900,14 +900,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		n(BOUNTIFUL, sharedData({
 			["isDaily"] = true,
 		},{
-			q(91188),	-- Atal'Aman
-			q(91186),	-- Collegiate Calamity
-			q(91189),	-- Shadow Enclave
-			q(91184),	-- Shadowguard Point
-			q(91183),	-- Sunkiller Sanctum
-			q(91185),	-- The Grudge Pit
-			q(91187),	-- The Gulf of Memory
-			q(91190),	-- Twilight Crypts
+			q(91188, name(HEADERS.Map, ATAL_AMAN)),	-- Atal'Aman
+			q(91186, name(HEADERS.Map, COLLEGIATE_CALAMITY)),	-- Collegiate Calamity
+			q(91189, name(HEADERS.Map, THE_SHADOW_ENCLAVE)),	-- Shadow Enclave
+			q(91184, name(HEADERS.Map, SHADOWGUARD_POINT)),	-- Shadowguard Point
+			q(91183, name(HEADERS.Map, SUNKILLER_SANCTUM)),	-- Sunkiller Sanctum
+			q(91185, name(HEADERS.Map, THE_GRUDGE_PIT)),	-- The Grudge Pit
+			q(91187, name(HEADERS.Map, THE_GULF_OF_MEMORY)),	-- The Gulf of Memory
+			q(91190, name(HEADERS.Map, TWILIGHT_CRYPTS)),	-- Twilight Crypts
 		--	-- One time rep bonus from Bountiful Delves
 		--	--q(),	-- factionName
 		})),
@@ -916,6 +916,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93819),	-- Bountiful #1, Tier 8+
 		--q(93820),	-- "Opened 2nd bountiful chest at the end of the week"
 		--q(93821),	-- "1st bountiful delve (of the week?)"
-		q(93822),	-- Bountiful #2, Tier 9
+		q(93822, name(HEADERS.Object, 584514)),	-- Bountiful #2, Tier 9
 	})),
 }));
+
+
+--[[
+Bountiful - Grudge Pit - Tier 8
+85719
+91185
+-- Bountiful Chest
+93822
+
+
+]]
