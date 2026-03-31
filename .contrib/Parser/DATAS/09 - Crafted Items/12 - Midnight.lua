@@ -4,13 +4,25 @@
 root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	i(232875),	-- Spark of Radiance
 	n(DECOR, {
-		-- TODO: o_repeated with proper maps and objectIDs like other expacs?
-		o(618517, {	-- Thalassian Lumber
+		o_repeated({	-- Dornic Fir Lumber
 			["maps"] = {
 				MAP.MIDNIGHT.EVERSONG_WOODS,
 				MAP.MIDNIGHT.SILVERMOON_CITY,
+				MAP.MIDNIGHT.HARANDAR,
+				MAP.MIDNIGHT.VOIDSTORM,
+				MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR,
+				MAP.MIDNIGHT.ZULAMAN,
+				MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR,
 			},
-			["groups"] = { i(256963) },	-- Thalassian Lumber
+			["groups"] = {
+				-- Objects
+				o(618517),	-- [Eversong Woods/Silvermoon City]
+				o(618520),	-- [Harandar]
+				o(618519),	-- [Voidstorm/Masters' Perch]
+				o(618518),	-- [Zul'Aman/Atal'Aman]
+				-- Drops
+				i(256963),	-- Thalassian Lumber
+			},
 		}),
 	}),
 	prof(ALCHEMY, {
