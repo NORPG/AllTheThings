@@ -986,7 +986,6 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = LEATHERWORKING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, 1 }}
 		},{
 			pn(31182),	-- Awl Inspiring Works
@@ -1338,7 +1337,6 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = LEATHERWORKING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }}
 		},{
 			pn(97559),	-- Arathi Armorer
@@ -1508,7 +1506,6 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = LEATHERWORKING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, 1 }}
 		},{
 			pn(107987),	-- Advanced Armor

@@ -644,7 +644,6 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ENGINEERING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENGINEERING, 1 }}
 		},{
 			pn(50893),	-- Creation
@@ -1049,7 +1048,6 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ENGINEERING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENGINEERING, 1 }}
 		},{
 			pn(100838),	-- Adjustable Cogwheel
@@ -1193,7 +1191,6 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			ach(60888),	-- Pushing My Buttons
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ENGINEERING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENGINEERING, 1 }}
 		},{
 			pn(106788),	-- Bits

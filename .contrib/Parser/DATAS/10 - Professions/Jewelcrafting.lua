@@ -363,7 +363,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = JEWELCRAFTING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }}
 		},{
 			pn(28659),	-- Air
@@ -755,7 +754,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = JEWELCRAFTING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1 }}
 		},{
 			pn(98244),	-- Amulets
@@ -922,7 +920,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = JEWELCRAFTING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1 }}
 		},{
 			pn(107059),	-- Alluring Accessories

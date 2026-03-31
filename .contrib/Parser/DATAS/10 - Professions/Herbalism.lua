@@ -1307,7 +1307,6 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			}),
 		})),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = HERBALISM,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.HERBALISM, 1 }}
 		},{
 			pn(59699),	-- Arboriculture
@@ -1428,7 +1427,6 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = HERBALISM,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }}
 		},{
 			pn(96296),	-- Altered
@@ -1607,7 +1605,6 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = HERBALISM,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.HERBALISM, 1 }}
 		},{
 			pn(104480),	-- Bloom Bringer

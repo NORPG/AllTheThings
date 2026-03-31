@@ -5243,7 +5243,6 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = INSCRIPTION,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 }}
 		},{
 			pn(43531),	-- Air
@@ -5606,7 +5605,6 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = INSCRIPTION,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 }}
 		},{
 			pn(101557),	-- Alchemist's Mixing Rod
@@ -5762,7 +5760,6 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = INSCRIPTION,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 }}
 		},{
 			pn(106279),	-- Added Flair

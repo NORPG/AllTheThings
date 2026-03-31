@@ -486,7 +486,6 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 		})),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ENCHANTING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 }}
 		},{
 			pn(64135),	-- Adaptive
@@ -825,7 +824,6 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ENCHANTING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }}
 		},{
 			pn(100001),	-- Accentuated Accessories
@@ -1035,7 +1033,6 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ENCHANTING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 }}
 		},{
 			pn(107764),	-- Amani Augments

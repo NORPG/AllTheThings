@@ -712,7 +712,6 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			})),
 		})),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.SKINNING, 1 }}
 		},{
 			pn(34759),	-- Bait Crafter
@@ -833,7 +832,6 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["requireSkill"] = SKINNING }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.SKINNING, 1 }}
 		},{
 			pn(96828),	-- Concrete Chitin
@@ -999,7 +997,6 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.SKINNING, 1 }}
 		},{
 			pn(106058),	-- Careful Carving

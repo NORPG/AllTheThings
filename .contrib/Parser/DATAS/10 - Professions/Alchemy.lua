@@ -754,7 +754,6 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		})),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ALCHEMY,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ALCHEMY, 1 }}
 		},{
 			pn(22481),	-- Air-Formulated Phials
@@ -1075,7 +1074,6 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			ach(19716),	-- Plentiful Algari Potions (automated)
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ALCHEMY,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ALCHEMY, 1 }}
 		},{
 			pn(99020),	-- Alchemical Mastery
@@ -1220,7 +1218,6 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ALCHEMY,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ALCHEMY, 1 }}
 		},{
 			pn(107284),	-- Alchemical Mastery

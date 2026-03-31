@@ -864,7 +864,6 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = TAILORING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.TAILORING, 1 }}
 		},{
 			pn(40215),	-- Armbands
@@ -1219,7 +1218,6 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = TAILORING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.TAILORING, 1 }}
 		},{
 			pn(100906),	-- Additional Embroidery
@@ -1388,7 +1386,6 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = TAILORING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.TAILORING, 1 }}
 		},{
 			pn(104324),	-- Arcanoweave Expertise

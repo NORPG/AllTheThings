@@ -1185,7 +1185,6 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			}),
 		})),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = MINING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.MINING, 1 }}
 		},{
 			pn(57291),	-- Draconium
@@ -1291,7 +1290,6 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = MINING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.MINING, 1 }}
 		},{
 			pn(100083),	-- Aqirite
@@ -1469,7 +1467,6 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = MINING,
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.MINING, 1 }}
 		},{
 			pn(105565),	-- Brilliant Silver
