@@ -61,7 +61,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	})),
 	prof(ALCHEMY, {
-		spell(370747, {	-- Advanced Phial Experimentation
+		header(HEADERS.Spell, 370747, {	-- Advanced Phial Experimentation
 			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes
 			["groups"] = {
 				i(193366, {	-- Advanced Phial Experimentation
@@ -75,7 +75,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				}),
 			},
 		}),
-		spell(370745, {	-- Advanced Potion Experimentation
+		header(HEADERS.Spell, 370745, {	-- Advanced Potion Experimentation
 			-- Nothing moved to Basic yet, so don't symlink to it
 			-- ["sym"] = {{"select","spellID",370743},{"extract","recipeID"}},	-- Basic Potion Experimentation -> Recipes
 			["groups"] = {
@@ -107,7 +107,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				}),
 			},
 		}),
-		spell(370746, {	-- Basic Phial Experimentation
+		header(HEADERS.Spell, 370746, {	-- Basic Phial Experimentation
 			i(192180,{	-- Basic Phial Experimentation
 				-- Recipes Discoverable
 				r(370472),	-- Aerated Phial of Deftness (RECIPE!)
@@ -123,7 +123,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 		}),
-		spell(370743, {	-- Basic Potion Experimentation
+		header(HEADERS.Spell, 370743, {	-- Basic Potion Experimentation
 			i(193365,{	-- Basic Potion Experimentation
 				-- Recipes Discoverable
 			}),
@@ -832,76 +832,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(197770),	-- Zesty Water
 	}),
 	prof(ENCHANTING, {
-		header(HEADERS.Spell, 392888, {	-- Disenchant
-			i(194123),	-- Chromatic Dust
-			i(200113),	-- Resonant Crystal
-			i(194124),	-- Vibrant Shard
-			i(201360, {	-- Glimmer of Order
-				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
-			}),
-		}),
-		header(HEADERS.Spell, 391304, {	-- Elemental Shatter
-			i(200648),	-- Elemental Shatter
-			i(200969),	-- Elemental Shatter: Air
-			i(200984),	-- Elemental Shatter: Earth
-			i(200989),	-- Elemental Shatter: Fire
-			i(200991),	-- Elemental Shatter: Frost
-			i(200994),	-- Elemental Shatter: Order
-		}),
-		header(HEADERS.Spell, 391302, {	-- Crystalline Shatter
-			i(200647),	-- Crystalline Shatter
-		}),
-		n(DISCOVERY, sharedData({
-			["requireSkill"] = ENCHANTING,
-		},{
-			r(391185, {	-- Primal Invocation Extract
-				["description"] = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
-				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
-				["provider"] = {"s",13262},	-- Disenchant
-				["sourceQuests"] = {
-					71936,	-- Disenchanted Glimmer of Air
-					71937,	-- Disenchanted Glimmer of Earth
-					71934,	-- Disenchanted Glimmer of Fire
-					71935,	-- Disenchanted Glimmer of Frost
-					71938,	-- Disenchanted Glimmer of Order
-				},
-			}),
-			hqt(71936, {
-				["name"] = "Disenchanted Glimmer of Air",
-				["sourceQuest"] = 71939,	-- Glimmer of Air Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201358,1}},	-- Glimmer of Air
-			}),
-			hqt(71937, {
-				["name"] = "Disenchanted Glimmer of Earth",
-				["sourceQuest"] = 71940,	-- Glimmer of Earth Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201359,1}},	-- Glimmer of Earth
-			}),
-			hqt(71934, {
-				["name"] = "Disenchanted Glimmer of Fire",
-				["sourceQuest"] = 71941,	-- Glimmer of Fire Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201356,1}},	-- Glimmer of Fire
-			}),
-			hqt(71935, {
-				["name"] = "Disenchanted Glimmer of Frost",
-				["sourceQuest"] = 71942,	-- Glimmer of Frost Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201357,1}},	-- Glimmer of Frost
-			}),
-			hqt(71938, {
-				["name"] = "Disenchanted Glimmer of Order",
-				["sourceQuest"] = 71943,	-- Glimmer of Order Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201360,1}},	-- Glimmer of Order
-			}),
-			itemDropHQT(201358, 71939),	-- Glimmer of Air Drop
-			itemDropHQT(201359, 71940),	-- Glimmer of Earth Drop
-			itemDropHQT(201356, 71941),	-- Glimmer of Fire Drop
-			itemDropHQT(201357, 71942),	-- Glimmer of Frost Drop
-			itemDropHQT(201360, 71943),	-- Glimmer of Order Drop
-		})),
 		n(ARMOR_ENCHANTMENTS, {
 			i(199934),	-- Enchant Boots - Plainsrunner's Breeze+
 			i(199976),	-- Enchant Boots - Plainsrunner's Breeze++
@@ -988,10 +918,80 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		filter(BATTLE_PETS, {
 			i(200479),	-- Sophic Amalgamation (PET!)
 		}),
+		header(HEADERS.Spell, 391302, {	-- Crystalline Shatter
+			i(200647),	-- Crystalline Shatter
+		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(256170),	-- Draconic Scribe's Basin (DECOR!)
 			i(256171),	-- Five Flights' Grimoire (DECOR!)
 		})),
+		n(DISCOVERY, sharedData({
+			["requireSkill"] = ENCHANTING,
+		},{
+			r(391185, {	-- Primal Invocation Extract
+				["description"] = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
+				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
+				["provider"] = {"s",13262},	-- Disenchant
+				["sourceQuests"] = {
+					71936,	-- Disenchanted Glimmer of Air
+					71937,	-- Disenchanted Glimmer of Earth
+					71934,	-- Disenchanted Glimmer of Fire
+					71935,	-- Disenchanted Glimmer of Frost
+					71938,	-- Disenchanted Glimmer of Order
+				},
+			}),
+			hqt(71936, {
+				["name"] = "Disenchanted Glimmer of Air",
+				["sourceQuest"] = 71939,	-- Glimmer of Air Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201358,1}},	-- Glimmer of Air
+			}),
+			hqt(71937, {
+				["name"] = "Disenchanted Glimmer of Earth",
+				["sourceQuest"] = 71940,	-- Glimmer of Earth Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201359,1}},	-- Glimmer of Earth
+			}),
+			hqt(71934, {
+				["name"] = "Disenchanted Glimmer of Fire",
+				["sourceQuest"] = 71941,	-- Glimmer of Fire Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201356,1}},	-- Glimmer of Fire
+			}),
+			hqt(71935, {
+				["name"] = "Disenchanted Glimmer of Frost",
+				["sourceQuest"] = 71942,	-- Glimmer of Frost Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201357,1}},	-- Glimmer of Frost
+			}),
+			hqt(71938, {
+				["name"] = "Disenchanted Glimmer of Order",
+				["sourceQuest"] = 71943,	-- Glimmer of Order Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201360,1}},	-- Glimmer of Order
+			}),
+			itemDropHQT(201358, 71939),	-- Glimmer of Air Drop
+			itemDropHQT(201359, 71940),	-- Glimmer of Earth Drop
+			itemDropHQT(201356, 71941),	-- Glimmer of Fire Drop
+			itemDropHQT(201357, 71942),	-- Glimmer of Frost Drop
+			itemDropHQT(201360, 71943),	-- Glimmer of Order Drop
+		})),
+		header(HEADERS.Spell, 392888, {	-- Disenchant
+			i(194123),	-- Chromatic Dust
+			i(200113),	-- Resonant Crystal
+			i(194124),	-- Vibrant Shard
+			i(201360, {	-- Glimmer of Order
+				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
+			}),
+		}),
+		header(HEADERS.Spell, 391304, {	-- Elemental Shatter
+			i(200648),	-- Elemental Shatter
+			i(200969),	-- Elemental Shatter: Air
+			i(200984),	-- Elemental Shatter: Earth
+			i(200989),	-- Elemental Shatter: Fire
+			i(200991),	-- Elemental Shatter: Frost
+			i(200994),	-- Elemental Shatter: Order
+		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
 		},{
@@ -1256,40 +1256,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(ENGINEERING, {
-		n(DISCOVERY, {
-			["description"] = "Multiple Ways of Discovering.",
-			["groups"] = {
-				r(382350),	-- Calibrated Safety Switch
-				r(382319),	-- Complicated Cuffs
-				r(382349),	-- Critical Failure Prevention Unit
-				r(382320),	-- Difficult Wrist Protectors
-				r(382317),	-- Overengineered Sleeve Extenders
-				r(382318),	-- Needlessly Complex Wristguards
-				r(384491),	-- Spring-Loaded Capacitor Casing
-			},
-		}),
-		spell(382330, {	-- Creature Combustion Canister
-			r(382355),	-- EZ-Thro Creature Combustion Canister
-		}),
-		spell(382343, {	-- Gravitational Displacer
-			r(382356),	-- EZ-Thro Gravitational Displacer
-		}),
-		spell(382323, {	-- Grease Grenade
-			r(386670),	-- EZ-Thro Grease Grenade
-		}),
-		spell(382378, {	-- Greased-Up Gears
-			r(382363),	-- Meticulously-Tuned Gear
-			r(382364),	-- One-Size-Fits-All Gear
-			r(382362),	-- Rapidly Ticking Gear
-			r(382361),	-- Razor-Sharp Gear
-		}),
-		spell(407005, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Polarity Bomb
-			r(407006),	-- EZ-Thro Polarity Bomb
-		})),
-		spell(382322, {	-- Primal Deconstruction Charge
-			r(382357),	-- EZ-Thro Primal Deconstruction Charge
-		}),
-		spell(382374, {	-- Rummage Through Scrap
+		header(HEADERS.Spell, 382374, {	-- Rummage Through Scrap
 			["cost"] = {{"i",198651,5}},	-- Piece of Scrap
 			["groups"] = {
 				i(202309, {["timeline"] = {ADDED_10_0_5}}),	-- Defective Doomsday Device (TOY!)
@@ -1353,10 +1320,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		filter(BATTLE_PETS, {
 			i(193572),	-- Quack-E (PET!)
 		}),
+		header(HEADERS.Spell, 382330, {	-- Creature Combustion Canister
+			r(382355),	-- EZ-Thro Creature Combustion Canister
+		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(248113),	-- Thaldraszus Telescope (DECOR!)
 			i(258253),	-- Titanic Tyrhold Fountain (DECOR!)
 		})),
+		n(DISCOVERY, {
+			["description"] = "Multiple Ways of Discovering.",
+			["groups"] = {
+				r(382350),	-- Calibrated Safety Switch
+				r(382319),	-- Complicated Cuffs
+				r(382349),	-- Critical Failure Prevention Unit
+				r(382320),	-- Difficult Wrist Protectors
+				r(382317),	-- Overengineered Sleeve Extenders
+				r(382318),	-- Needlessly Complex Wristguards
+				r(384491),	-- Spring-Loaded Capacitor Casing
+			},
+		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENGINEERING,
 		},{
@@ -1486,6 +1468,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Legendary
 			FirstCraft(75435, 407170, ADDED_10_1_0);	-- Inspired Order Recalibrator
 		})),
+		header(HEADERS.Spell, 382343, {	-- Gravitational Displacer
+			r(382356),	-- EZ-Thro Gravitational Displacer
+		}),
+		header(HEADERS.Spell, 382323, {	-- Grease Grenade
+			r(386670),	-- EZ-Thro Grease Grenade
+		}),
+		header(HEADERS.Spell, 382378, {	-- Greased-Up Gears
+			r(382363),	-- Meticulously-Tuned Gear
+			r(382364),	-- One-Size-Fits-All Gear
+			r(382362),	-- Rapidly Ticking Gear
+			r(382361),	-- Razor-Sharp Gear
+		}),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
 			i(198222),	-- Blue Fireflight
@@ -1622,6 +1616,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(199414),	-- Zapthrottle Soul Inhaler
 			-- Weird
 			i(198650),	-- Rummage Through Scrap
+		}),
+		header(HEADERS.Spell, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Polarity Bomb
+			r(407006),	-- EZ-Thro Polarity Bomb
+		})),
+		header(HEADERS.Spell, 382322, {	-- Primal Deconstruction Charge
+			r(382357),	-- EZ-Thro Primal Deconstruction Charge
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(198204, {["requireSkill"] = ENGINEERING}),	-- Draconium Brainwave Amplifier
@@ -1869,20 +1869,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		})),
 	}),
 	prof(INSCRIPTION, {
-		salvagerecipe(382981, 198390, {	-- Dragon Isles Milling
-			i(198418),	-- Blazing Pigment+
-			i(198419),	-- Blazing Pigment++
-			i(198420),	-- Blazing Pigment+++
-			i(198415),	-- Flourishing Pigment+
-			i(198416),	-- Flourishing Pigment++
-			i(198417),	-- Flourishing Pigment+++
-			i(198412),	-- Serene Pigment+
-			i(198413),	-- Serene Pigment++
-			i(198414),	-- Serene Pigment+++
-			i(198421),	-- Shimmering Pigment+
-			i(198422),	-- Shimmering Pigment++
-			i(198423),	-- Shimmering Pigment+++
-		}),
 		n(DISCOVERY, {
 			header(HEADERS.Spell, 383759, {	-- Draconic Treatise on Inscription
 				r(383522),	-- Draconic Treatise on Alchemy
@@ -1906,6 +1892,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(248107),	-- Valdrakken Storage Crate (DECOR!)
 			i(264679),	-- Valdrakken Wall Shelf (DECOR!)
 		})),
+		salvagerecipe(382981, 198390, {	-- Dragon Isles Milling
+			i(198418),	-- Blazing Pigment+
+			i(198419),	-- Blazing Pigment++
+			i(198420),	-- Blazing Pigment+++
+			i(198415),	-- Flourishing Pigment+
+			i(198416),	-- Flourishing Pigment++
+			i(198417),	-- Flourishing Pigment+++
+			i(198412),	-- Serene Pigment+
+			i(198413),	-- Serene Pigment++
+			i(198414),	-- Serene Pigment+++
+			i(198421),	-- Shimmering Pigment+
+			i(198422),	-- Shimmering Pigment++
+			i(198423),	-- Shimmering Pigment+++
+		}),
 		n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(196981),	-- Cliffside Wylderdrake: Conical Head (MM!)
 			i(196988),	-- Cliffside Wylderdrake: Red Hair (MM!)
@@ -2448,6 +2448,43 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(JEWELCRAFTING, {
+		n(ARMOR, {
+			i(194082),	-- Band of New Beginnings
+			i(192998),	-- Crimson Combatant's Jeweled Amulet
+			i(192997),	-- Crimson Combatant's Jeweled Signet
+			i(193002),	-- Choker of Shielding
+			i(211536, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Signet
+			i(211537, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Amulet
+			i(193001),	-- Elemental Lariat
+			i(193005),	-- Idol of the Dreamer
+			i(193006),	-- Idol of the Earth Warder
+			i(193003),	-- Idol of the Lifebinder
+			i(193004),	-- Idol of the Spell-Weaver
+			i(204095, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Amulet
+			i(204094, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Signet
+			i(192996),	-- Pendant of Impending Perils
+			i(193000),	-- Ring-Bound Hourglass
+			i(192999),	-- Signet of Titanic Insight
+			i(201759),	-- Torc of Passed Time
+			i(208238, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Amulet
+			i(208237, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Signet
+		}),
+		filter(BATTLE_PETS, {
+			i(193885),	-- Jeweled Amber Whelpling (PET!)
+			i(193888),	-- Jeweled Emerald Whelpling (PET!)
+			i(193889),	-- Jeweled Onyx Whelpling (PET!)
+			i(193887),	-- Jeweled Ruby Whelpling (PET!)
+			i(193886),	-- Jeweled Sapphire Whelpling (PET!)
+		}),
+		filter(COSMETIC, {
+			i(193371),	-- "Rhinestone" Sunglasses
+			i(194748),	-- Split-Lens Specs
+		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248109),	-- Valdrakken Fence
+			i(248110),	-- Valdrakken Fencepost
+			i(248654),	-- Valdrakken Gilded Throne
+		})),
 		header(HEADERS.Spell, 374627, {	-- Dragon Isles Prospecting
 			i(192852),	-- Alexstraszite+
 			i(192853),	-- Alexstraszite++
@@ -2486,43 +2523,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(192860),	-- Ysemerald++
 			i(192861),	-- Ysemerald+++
 		}),
-		n(ARMOR, {
-			i(194082),	-- Band of New Beginnings
-			i(192998),	-- Crimson Combatant's Jeweled Amulet
-			i(192997),	-- Crimson Combatant's Jeweled Signet
-			i(193002),	-- Choker of Shielding
-			i(211536, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Signet
-			i(211537, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Amulet
-			i(193001),	-- Elemental Lariat
-			i(193005),	-- Idol of the Dreamer
-			i(193006),	-- Idol of the Earth Warder
-			i(193003),	-- Idol of the Lifebinder
-			i(193004),	-- Idol of the Spell-Weaver
-			i(204095, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Amulet
-			i(204094, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Signet
-			i(192996),	-- Pendant of Impending Perils
-			i(193000),	-- Ring-Bound Hourglass
-			i(192999),	-- Signet of Titanic Insight
-			i(201759),	-- Torc of Passed Time
-			i(208238, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Amulet
-			i(208237, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Signet
-		}),
-		filter(BATTLE_PETS, {
-			i(193885),	-- Jeweled Amber Whelpling (PET!)
-			i(193888),	-- Jeweled Emerald Whelpling (PET!)
-			i(193889),	-- Jeweled Onyx Whelpling (PET!)
-			i(193887),	-- Jeweled Ruby Whelpling (PET!)
-			i(193886),	-- Jeweled Sapphire Whelpling (PET!)
-		}),
-		filter(COSMETIC, {
-			i(193371),	-- "Rhinestone" Sunglasses
-			i(194748),	-- Split-Lens Specs
-		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
-			i(248109),	-- Valdrakken Fence
-			i(248110),	-- Valdrakken Fencepost
-			i(248654),	-- Valdrakken Gilded Throne
-		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
 		},{
@@ -3427,11 +3427,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(193895),	-- Temporal Dragonhead Lure
 		i(198807),	-- Titan-Infused Creature Bait
 		i(193894),	-- Thousandbite Piranha Lure
-		-- n(FIRST_CRAFTS_HEADER, sharedData({
-		-- 	["requireSkill"] = SKINNING,
-		-- },{
-		--	-- Listed under HQ until Quest Tracking Update
-		-- })),
 	}),
 	prof(TAILORING, {
 		n(ARMOR, {
@@ -3506,6 +3501,136 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(248121),	-- Draconic Circular Rug (DECOR!)
 			i(257053),	-- Tapestry of the Five Flights (DECOR!)
+		})),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = TAILORING,
+		},{
+			-- Woven Cloth	--
+			FirstCraft(71842, 376556);	-- Azureweave Bolt
+			FirstCraft(71843, 376557);	-- Chronocloth Bolt
+			FirstCraft(71845, 376559);	-- Infurious Wildercloth Bolt
+			FirstCraft(71844, 376558);	-- Vibrant Wildercloth Bolt
+			FirstCraft(71841, 376555);	-- Wildercloth Bolt
+			-- Optional Reagents --
+			FirstCraft(71827, 376541);	-- Blue Silken Lining
+			FirstCraft(71828, 376542);	-- Bronzed Grip Wrappings
+			FirstCraft(75819, 409839, ADDED_10_1_0);	-- Medical Wrap Kit
+			FirstCraft(75589, 408304, ADDED_10_1_0);	-- Reserve Parachute
+			FirstCraft(78510, 426434, ADDED_10_2_0);	-- Verdant Tether
+			-- Finishing Reagents --
+			FirstCraft(71819, 376533);	-- Abrasive Polishing Cloth
+			FirstCraft(71820, 376534);	-- Vibrant Polishing Cloth
+			FirstCraft(71822, 376536);	-- Chromatic Embroidery Thread
+			FirstCraft(71821, 376535);	-- Blazing Embroidery Thread
+			FirstCraft(71823, 376537);	-- Shimmering Embroidery Thread
+			-- Garments --
+			FirstCraft(71813, 376527);	-- Crimson Combatant's Wildercloth Bands
+			FirstCraft(71805, 376519);	-- Crimson Combatant's Wildercloth Cloak
+			FirstCraft(71808, 376522);	-- Crimson Combatant's Wildercloth Gloves
+			FirstCraft(71809, 376523);	-- Crimson Combatant's Wildercloth Hood
+			FirstCraft(71810, 376524);	-- Crimson Combatant's Wildercloth Leggings
+			FirstCraft(71812, 376526);	-- Crimson Combatant's Wildercloth Sash
+			FirstCraft(71811, 376525);	-- Crimson Combatant's Wildercloth Shoulderpads
+			FirstCraft(71807, 376521);	-- Crimson Combatant's Wildercloth Treads
+			FirstCraft(71806, 376520);	-- Crimson Combatant's Wildercloth Tunic
+			FirstCraft(79052, 430081, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Bands
+			FirstCraft(79057, 430073, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Cloak
+			FirstCraft(79054, 430076, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Gloves
+			FirstCraft(79053, 430077, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Hood
+			FirstCraft(79049, 430078, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Leggings
+			FirstCraft(79056, 430080, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Sash
+			FirstCraft(79050, 430079, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Shoulderpads
+			FirstCraft(79051, 430075, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Treads
+			FirstCraft(79055, 430074, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Tunic
+			FirstCraft(74831, 403157, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Bands
+			FirstCraft(74823, 403149, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Cloak
+			FirstCraft(74826, 403152, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Gloves
+			FirstCraft(74827, 403153, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Hood
+			FirstCraft(74828, 403154, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Leggings
+			FirstCraft(74830, 403156, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Sash
+			FirstCraft(74829, 403155, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Shoulderpads
+			FirstCraft(74825, 403151, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Treads
+			FirstCraft(74824, 403150, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Tunic
+			FirstCraft(71795, 376509);	-- Surveyor's Cloth Bands
+			FirstCraft(71793, 376507);	-- Surveyor's Cloth Robe
+			FirstCraft(71794, 376508);	-- Surveyor's Cloth Treads
+			FirstCraft(72504, 395809);	-- Surveyor's Seasoned Cord
+			FirstCraft(72506, 395813);	-- Surveyor's Seasoned Gloves
+			FirstCraft(72507, 395807);	-- Surveyor's Seasoned Hood
+			FirstCraft(72508, 395814);	-- Surveyor's Seasoned Pants
+			FirstCraft(72509, 395815);	-- Surveyor's Seasoned Shoulders
+			FirstCraft(71792, 376506);	-- Surveyor's Tailored Cloak
+			FirstCraft(75590, 408318, ADDED_10_1_0);	-- Undulating Sporecloak
+			FirstCraft(77438, 419030, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Bands
+			FirstCraft(77465, 419022, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Cloak
+			FirstCraft(77468, 419025, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Gloves
+			FirstCraft(77469, 419026, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Hood
+			FirstCraft(77470, 419027, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Leggings
+			FirstCraft(77472, 419029, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Sash
+			FirstCraft(77471, 419028, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Shoulderpads
+			FirstCraft(77467, 419024, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Treads
+			FirstCraft(77466, 419023, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Tunic
+			FirstCraft(71803, 376517);	-- Vibrant Wildercloth Girdle
+			FirstCraft(71799, 376513);	-- Vibrant Wildercloth Handwraps
+			FirstCraft(71800, 376514);	-- Vibrant Wildercloth Headcover
+			FirstCraft(71796, 376510);	-- Vibrant Wildercloth Shawl
+			FirstCraft(71802, 376516);	-- Vibrant Wildercloth Shoulderspikes
+			FirstCraft(71801, 376515);	-- Vibrant Wildercloth Slacks
+			FirstCraft(71798, 376512);	-- Vibrant Wildercloth Slippers
+			FirstCraft(71797, 376511);	-- Vibrant Wildercloth Vestments
+			FirstCraft(71804, 376518);	-- Vibrant Wildercloth Wristwrap
+			-- Azureweave Garments --
+			FirstCraft(71779, 376493);	-- Amice of the Blue
+			FirstCraft(71788, 376502);	-- Azureweave Mantle
+			FirstCraft(71786, 376500);	-- Azureweave Robe
+			FirstCraft(71787, 376501);	-- Azureweave Slippers
+			FirstCraft(71782, 376496);	-- Blue Dragon Soles
+			FirstCraft(71780, 376494);	-- Infurious Binding of Gesticulation
+			-- Chronocloth Garments --
+			FirstCraft(71783, 376497);	-- Allied Wristguards of Time Dilation
+			FirstCraft(71789, 376503);	-- Chronocloth Gloves
+			FirstCraft(71790, 376504);	-- Chronocloth Leggings
+			FirstCraft(71791, 376505);	-- Chronocloth Sash
+			FirstCraft(71778, 376492);	-- Hood of Surging Time
+			FirstCraft(71781, 376495);	-- Infurious Legwraps of Possibility
+			-- Profession Garments --
+			FirstCraft(71832, 376546);	-- Dragoncloth Tailoring Vestments
+			FirstCraft(71830, 376544);	-- Master's Wildercloth Alchemist's Robe
+			FirstCraft(71834, 376548);	-- Master's Wildercloth Chef's Hat
+			FirstCraft(71836, 376550);	-- Master's Wildercloth Enchanter's Hat
+			FirstCraft(71838, 376552);	-- Master's Wildercloth Fishing Cap
+			FirstCraft(71840, 376554);	-- Master's Wildercloth Gardening Hat
+			FirstCraft(71829, 376543);	-- Wildercloth Alchemist's Robe
+			FirstCraft(71833, 376547);	-- Wildercloth Chef's Hat
+			FirstCraft(71835, 376549);	-- Wildercloth Enchanter's Hat
+			FirstCraft(71837, 376551);	-- Wildercloth Fishing Cap
+			FirstCraft(71839, 376553);	-- Wildercloth Gardening Hat
+			FirstCraft(71831, 376545);	-- Wildercloth Tailor's Coat
+			-- Spellthread --
+			FirstCraft(71825, 376539);	-- Frozen Spellthread
+			FirstCraft(71826, 376540);	-- Temporal Spellthread
+			FirstCraft(71824, 376538);	-- Vibrant Spellthread
+			-- Embroidered Bags --
+			FirstCraft(71815, 376529);	-- Azureweave Expedition Pack
+			FirstCraft(71847, 376561);	-- Chronocloth Reagent Bag
+			FirstCraft(75236, 405974, ADDED_10_0_7);	-- Paw-Made Winterpelt Reagent Bag
+			FirstCraft(71846, 376560);	-- Simply Stitched Reagent Bag
+			FirstCraft(71814, 376528);	-- Wildercloth Bag
+			-- Assorted Embroidery --
+			FirstCraft(71818, 376532);	-- Explorer's Banner of Geology
+			FirstCraft(71817, 376531);	-- Explorer's Banner of Herbology
+			FirstCraft(71853, 376568);	-- Cold Cushion
+			FirstCraft(71852, 376567);	-- Cushion of Time Travel
+			FirstCraft(71855, 376570);	-- Dragonscale Expedition's Expedition Tent
+			FirstCraft(71850, 376565);	-- Duck-Stuffed Duck Lovie
+			FirstCraft(71851, 376566);	-- Forlorn Funeral Pall
+			FirstCraft(71854, 376569);	-- Market Tent
+			FirstCraft(71816, 376530);	-- Wildercloth Bandage
+			-- Experiments --
+			FirstCraft(71848, 376563);	-- Fiddle with Draconium Fabric Cutters
+			FirstCraft(71849, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
+			-- Artisan Curios
+			FirstCraft(74318, 400815, ADDED_10_0_7);	-- Traditional Morqut Kite
 		})),
 		filter(MISC, {
 			i(193950),	-- Abrasive Polishing Cloth+
@@ -3639,136 +3764,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198041),	-- Khaz'gorite Fabric Cutters Left Blade
 			i(194065),	-- Khaz'gorite Fabric Cutters Right Blade
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = TAILORING,
-		},{
-			-- Woven Cloth	--
-			FirstCraft(71842, 376556);	-- Azureweave Bolt
-			FirstCraft(71843, 376557);	-- Chronocloth Bolt
-			FirstCraft(71845, 376559);	-- Infurious Wildercloth Bolt
-			FirstCraft(71844, 376558);	-- Vibrant Wildercloth Bolt
-			FirstCraft(71841, 376555);	-- Wildercloth Bolt
-			-- Optional Reagents --
-			FirstCraft(71827, 376541);	-- Blue Silken Lining
-			FirstCraft(71828, 376542);	-- Bronzed Grip Wrappings
-			FirstCraft(75819, 409839, ADDED_10_1_0);	-- Medical Wrap Kit
-			FirstCraft(75589, 408304, ADDED_10_1_0);	-- Reserve Parachute
-			FirstCraft(78510, 426434, ADDED_10_2_0);	-- Verdant Tether
-			-- Finishing Reagents --
-			FirstCraft(71819, 376533);	-- Abrasive Polishing Cloth
-			FirstCraft(71820, 376534);	-- Vibrant Polishing Cloth
-			FirstCraft(71822, 376536);	-- Chromatic Embroidery Thread
-			FirstCraft(71821, 376535);	-- Blazing Embroidery Thread
-			FirstCraft(71823, 376537);	-- Shimmering Embroidery Thread
-			-- Garments --
-			FirstCraft(71813, 376527);	-- Crimson Combatant's Wildercloth Bands
-			FirstCraft(71805, 376519);	-- Crimson Combatant's Wildercloth Cloak
-			FirstCraft(71808, 376522);	-- Crimson Combatant's Wildercloth Gloves
-			FirstCraft(71809, 376523);	-- Crimson Combatant's Wildercloth Hood
-			FirstCraft(71810, 376524);	-- Crimson Combatant's Wildercloth Leggings
-			FirstCraft(71812, 376526);	-- Crimson Combatant's Wildercloth Sash
-			FirstCraft(71811, 376525);	-- Crimson Combatant's Wildercloth Shoulderpads
-			FirstCraft(71807, 376521);	-- Crimson Combatant's Wildercloth Treads
-			FirstCraft(71806, 376520);	-- Crimson Combatant's Wildercloth Tunic
-			FirstCraft(79052, 430081, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Bands
-			FirstCraft(79057, 430073, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Cloak
-			FirstCraft(79054, 430076, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Gloves
-			FirstCraft(79053, 430077, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Hood
-			FirstCraft(79049, 430078, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Leggings
-			FirstCraft(79056, 430080, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Sash
-			FirstCraft(79050, 430079, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Shoulderpads
-			FirstCraft(79051, 430075, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Treads
-			FirstCraft(79055, 430074, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Tunic
-			FirstCraft(74831, 403157, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Bands
-			FirstCraft(74823, 403149, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Cloak
-			FirstCraft(74826, 403152, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Gloves
-			FirstCraft(74827, 403153, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Hood
-			FirstCraft(74828, 403154, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Leggings
-			FirstCraft(74830, 403156, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Sash
-			FirstCraft(74829, 403155, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Shoulderpads
-			FirstCraft(74825, 403151, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Treads
-			FirstCraft(74824, 403150, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Tunic
-			FirstCraft(71795, 376509);	-- Surveyor's Cloth Bands
-			FirstCraft(71793, 376507);	-- Surveyor's Cloth Robe
-			FirstCraft(71794, 376508);	-- Surveyor's Cloth Treads
-			FirstCraft(72504, 395809);	-- Surveyor's Seasoned Cord
-			FirstCraft(72506, 395813);	-- Surveyor's Seasoned Gloves
-			FirstCraft(72507, 395807);	-- Surveyor's Seasoned Hood
-			FirstCraft(72508, 395814);	-- Surveyor's Seasoned Pants
-			FirstCraft(72509, 395815);	-- Surveyor's Seasoned Shoulders
-			FirstCraft(71792, 376506);	-- Surveyor's Tailored Cloak
-			FirstCraft(75590, 408318, ADDED_10_1_0);	-- Undulating Sporecloak
-			FirstCraft(77438, 419030, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Bands
-			FirstCraft(77465, 419022, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Cloak
-			FirstCraft(77468, 419025, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Gloves
-			FirstCraft(77469, 419026, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Hood
-			FirstCraft(77470, 419027, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Leggings
-			FirstCraft(77472, 419029, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Sash
-			FirstCraft(77471, 419028, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Shoulderpads
-			FirstCraft(77467, 419024, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Treads
-			FirstCraft(77466, 419023, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Tunic
-			FirstCraft(71803, 376517);	-- Vibrant Wildercloth Girdle
-			FirstCraft(71799, 376513);	-- Vibrant Wildercloth Handwraps
-			FirstCraft(71800, 376514);	-- Vibrant Wildercloth Headcover
-			FirstCraft(71796, 376510);	-- Vibrant Wildercloth Shawl
-			FirstCraft(71802, 376516);	-- Vibrant Wildercloth Shoulderspikes
-			FirstCraft(71801, 376515);	-- Vibrant Wildercloth Slacks
-			FirstCraft(71798, 376512);	-- Vibrant Wildercloth Slippers
-			FirstCraft(71797, 376511);	-- Vibrant Wildercloth Vestments
-			FirstCraft(71804, 376518);	-- Vibrant Wildercloth Wristwrap
-			-- Azureweave Garments --
-			FirstCraft(71779, 376493);	-- Amice of the Blue
-			FirstCraft(71788, 376502);	-- Azureweave Mantle
-			FirstCraft(71786, 376500);	-- Azureweave Robe
-			FirstCraft(71787, 376501);	-- Azureweave Slippers
-			FirstCraft(71782, 376496);	-- Blue Dragon Soles
-			FirstCraft(71780, 376494);	-- Infurious Binding of Gesticulation
-			-- Chronocloth Garments --
-			FirstCraft(71783, 376497);	-- Allied Wristguards of Time Dilation
-			FirstCraft(71789, 376503);	-- Chronocloth Gloves
-			FirstCraft(71790, 376504);	-- Chronocloth Leggings
-			FirstCraft(71791, 376505);	-- Chronocloth Sash
-			FirstCraft(71778, 376492);	-- Hood of Surging Time
-			FirstCraft(71781, 376495);	-- Infurious Legwraps of Possibility
-			-- Profession Garments --
-			FirstCraft(71832, 376546);	-- Dragoncloth Tailoring Vestments
-			FirstCraft(71830, 376544);	-- Master's Wildercloth Alchemist's Robe
-			FirstCraft(71834, 376548);	-- Master's Wildercloth Chef's Hat
-			FirstCraft(71836, 376550);	-- Master's Wildercloth Enchanter's Hat
-			FirstCraft(71838, 376552);	-- Master's Wildercloth Fishing Cap
-			FirstCraft(71840, 376554);	-- Master's Wildercloth Gardening Hat
-			FirstCraft(71829, 376543);	-- Wildercloth Alchemist's Robe
-			FirstCraft(71833, 376547);	-- Wildercloth Chef's Hat
-			FirstCraft(71835, 376549);	-- Wildercloth Enchanter's Hat
-			FirstCraft(71837, 376551);	-- Wildercloth Fishing Cap
-			FirstCraft(71839, 376553);	-- Wildercloth Gardening Hat
-			FirstCraft(71831, 376545);	-- Wildercloth Tailor's Coat
-			-- Spellthread --
-			FirstCraft(71825, 376539);	-- Frozen Spellthread
-			FirstCraft(71826, 376540);	-- Temporal Spellthread
-			FirstCraft(71824, 376538);	-- Vibrant Spellthread
-			-- Embroidered Bags --
-			FirstCraft(71815, 376529);	-- Azureweave Expedition Pack
-			FirstCraft(71847, 376561);	-- Chronocloth Reagent Bag
-			FirstCraft(75236, 405974, ADDED_10_0_7);	-- Paw-Made Winterpelt Reagent Bag
-			FirstCraft(71846, 376560);	-- Simply Stitched Reagent Bag
-			FirstCraft(71814, 376528);	-- Wildercloth Bag
-			-- Assorted Embroidery --
-			FirstCraft(71818, 376532);	-- Explorer's Banner of Geology
-			FirstCraft(71817, 376531);	-- Explorer's Banner of Herbology
-			FirstCraft(71853, 376568);	-- Cold Cushion
-			FirstCraft(71852, 376567);	-- Cushion of Time Travel
-			FirstCraft(71855, 376570);	-- Dragonscale Expedition's Expedition Tent
-			FirstCraft(71850, 376565);	-- Duck-Stuffed Duck Lovie
-			FirstCraft(71851, 376566);	-- Forlorn Funeral Pall
-			FirstCraft(71854, 376569);	-- Market Tent
-			FirstCraft(71816, 376530);	-- Wildercloth Bandage
-			-- Experiments --
-			FirstCraft(71848, 376563);	-- Fiddle with Draconium Fabric Cutters
-			FirstCraft(71849, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
-			-- Artisan Curios
-			FirstCraft(74318, 400815, ADDED_10_0_7);	-- Traditional Morqut Kite
-		})),
 	}),
 })));
 
@@ -3776,7 +3771,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
-			q(71948),	-- Maxxed Out Transmutation
+			q(71948),	-- Transmutation 20/20
 		}),
 		prof(BLACKSMITHING, {
 			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom (spellID 384716)
@@ -3921,10 +3916,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			q(74181, name(HEADERS.NPC, 188451)),	-- Skinning Zerimek
 		})),
 		prof(TAILORING, {
-			q(71946),	-- Timeweaving unlocked
-			q(71947),	-- Timeweaving Full maxed out
-			q(71290),	-- Azureweave unlocked
-			q(71294),	-- Azureweave Full maxed out
+			q(71946),	-- Timeweaving 0/20
+			q(71947),	-- Timeweaving 20/20
+			q(71290),	-- Azureweave 0/20
+			q(71294),	-- Azureweave 20/20
 		}),
 	}),
 })));
