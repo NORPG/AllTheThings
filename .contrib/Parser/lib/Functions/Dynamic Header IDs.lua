@@ -449,6 +449,7 @@ HeaderAssignments = {
 	["Primal Gladiator: Warlords Season 1"] = -266,
 	["Primal Storms"] = -191,
 	["Prized Gladiator: The War Within Season 2"] = -289,
+	["Profession Nodes"] = -746,
 	["Professions"] = -44,
 	["Promotions"] = -736,
 	["Protocol Inferno"] = -66,
@@ -725,4 +726,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -746;
+NextHeaderID = -747;

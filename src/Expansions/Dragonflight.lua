@@ -207,6 +207,8 @@ do
 						for pathID in pairs(pathIDs) do
 							local info = ProfessionNodeInfoMeta[pathID]
 
+							-- API C_Traits_GetDefinitionInfo does not return info
+							-- if you don't have the profession on the current character
 							-- We could store localized names in the user's cache
 							-- so when they load a profession it will have proper language values
 							-- Something similar to Flight Paths
