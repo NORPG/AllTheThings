@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(219457),	-- Earthen Traveler's Saber
 						i(219459),	-- Earthen Traveler's Staff
 						i(258264, {	-- Kobold Candle Trio (DECOR!)
-							["timeline"] = { ADDED_12_0_0 },
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},
 				}),
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 69.6, 40.9, THE_RINGING_DEEPS },
 					["groups"] = {
 						i(258265, {	-- Kobold Wagon (DECOR!)
-							["timeline"] = { ADDED_12_0_0 },
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 						i(228657),	-- Scrit's Handmade Girdle
 						i(228655),	-- Scrit's Handmade Gloves
@@ -889,7 +889,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(216681),	-- Merchant Stall Parts (QI!)
 						--
 						i(258267, {	-- Candle-Festooned Wooden Awning (DECOR!)
-							["timeline"] = { ADDED_12_0_0 },
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},
 				}),
@@ -995,7 +995,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 						--
 						i(258262, {	-- Kobold Digger's Chair (DECOR!)
-							["timeline"] = { ADDED_12_0_0 },
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},
 				}),
