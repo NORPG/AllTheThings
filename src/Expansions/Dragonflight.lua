@@ -267,41 +267,18 @@ do
 
 	-- Debug code to get new Profession Nodes for ProfessionNodeDB
 	local DB = {}
-	local SKILLLINES_TO_NAME = {
-		[2823] = "Dragon Isles Alchemy",
-		[2822] = "Dragon Isles Blacksmithing",
-		[2825] = "Dragon Isles Enchanting",
-		[2827] = "Dragon Isles Engineering",
-		[2832] = "Dragon Isles Herbalism",
-		[2828] = "Dragon Isles Inscription",
-		[2829] = "Dragon Isles Jewelcrafting",
-		[2830] = "Dragon Isles Leatherworking",
-		[2833] = "Dragon Isles Mining",
-		[2834] = "Dragon Isles Skinning",
-		[2831] = "Dragon Isles Tailoring",
-		[2871] = "Khaz Algar Alchemy",
-		[2872] = "Khaz Algar Blacksmithing",
-		[2874] = "Khaz Algar Enchanting",
-		[2875] = "Khaz Algar Engineering",
-		[2877] = "Khaz Algar Herbalism",
-		[2878] = "Khaz Algar Inscription",
-		[2879] = "Khaz Algar Jewelcrafting",
-		[2880] = "Khaz Algar Leatherworking",
-		[2881] = "Khaz Algar Mining",
-		[2882] = "Khaz Algar Skinning",
-		[2883] = "Khaz Algar Tailoring",
-		[2906] = "Midnight Alchemy",
-		[2907] = "Midnight Blacksmithing",
-		[2909] = "Midnight Enchanting",
-		[2910] = "Midnight Engineering",
-		[2912] = "Midnight Herbalism",
-		[2913] = "Midnight Inscription",
-		[2914] = "Midnight Jewelcrafting",
-		[2915] = "Midnight Leatherworking",
-		[2916] = "Midnight Mining",
-		[2917] = "Midnight Skinning",
-		[2918] = "Midnight Tailoring",
-	}
+	local SKILLLINE_NAMES = {}
+
+	local function BuildTrackedSkillLineNames()
+		for skillLineID in pairs(TRACKED_SKILLLINES) do
+			local name = C_TradeSkillUI.GetTradeSkillDisplayName(skillLineID)
+			if name then
+				SKILLLINE_NAMES[skillLineID] = name
+			else
+				SKILLLINE_NAMES[skillLineID] = UNKNOWN .. skillLineID
+			end
+		end
+	end
 
 	local function PrintProfessionNodeSummary()
 		local nodes = {}
@@ -340,7 +317,7 @@ do
 				local icon = d.icon
 
 				local skillLineID = d.skillLineID
-				local professionName = SKILLLINES_TO_NAME[skillLineID]
+				local professionName = SKILLLINE_NAMES[skillLineID]
 
 				local line = "AssignProfessionNode(" .. id .. ", " .. name .. ", " .. icon .. ") -- " .. professionName
 
@@ -414,5 +391,6 @@ do
 
 		PrintProfessionNodeSummary()
 	end
+	--BuildTrackedSkillLineNames()
 	--DebugHarvestProfessionNodes()
 end
