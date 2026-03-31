@@ -284,6 +284,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(MISC, {
 			i(212781),	-- Formulated Courage
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ALCHEMY,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ALCHEMY, 1 }}
+		},{
+			pn(99020),	-- Alchemical Mastery
+			pn(99016),	-- Arathor's Spear Lore
+			pn(99015),	-- Blessing Blossom Lore
+			pn(99040),	-- Bulk Production
+			pn(98952),	-- Bulk Production
+			pn(98953),	-- Fantastic Flasks
+			pn(100205),	-- Gleaming Transmutagen
+			pn(99018),	-- Luredrop Lore
+			pn(100208),	-- Mercurial Materials
+			pn(99019),	-- Mycobloom Lore
+			pn(100206),	-- Ominous Materials
+			pn(99017),	-- Orbinid Lore
+			pn(99041),	-- Potent Potions
+			pn(98951),	-- Profession Phials
+			pn(99059),	-- Thaumaturgy
+			pn(99058),	-- Transmutation
+			pn(100207),	-- Volatile Materials
+		})),
 		filter(REAGENTS, {
 			i(212514),	-- Blasphemite
 			i(228401),	-- Bubbling Mycobloom Culture+
@@ -472,6 +494,45 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222480, {["requireSkill"] = HERBALISM}),	-- Proficient Sickle
 			i(222482, {["requireSkill"] = SKINNING}),	-- Proficient Skinning Knife
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 }}
+		},{
+			pn(99580),	-- Alloys
+			pn(99239),	-- Armorsmithing
+			pn(99447),	-- Axes and Polearms
+			pn(99229),	-- Belts
+			pn(99452),	-- Blades
+			pn(99237),	-- Breastplates
+			pn(99265),	-- Discerning Discipline
+			pn(99267),	-- Everburning Forge
+			pn(99230),	-- Fine Armor
+			pn(99582),	-- Fortuitous Forges
+			pn(99581),	-- Frameworks
+			pn(99227),	-- Gauntlets
+			pn(99264),	-- Gracious Forging
+			pn(99236),	-- Greaves
+			pn(99449),	-- Hafted
+			pn(99233),	-- Helms
+			pn(99266),	-- Imaginative Foresight
+			pn(99238),	-- Large Plate Armor
+			pn(99450),	-- Long Blades
+			pn(99448),	-- Maces
+			pn(99589),	-- Means of Production
+			pn(99232),	-- Pauldrons
+			pn(99231),	-- Sabatons
+			pn(99234),	-- Sculpted Armor
+			pn(99235),	-- Shields
+			pn(99451),	-- Short Blades
+			pn(99585),	-- Stonework
+			pn(99583),	-- Tool Enhancement
+			pn(99588),	-- Tools of the Trade
+			pn(99586),	-- Trade Accessories
+			pn(99587),	-- Trade Tools
+			pn(99228),	-- Vambraces
+			pn(99584),	-- Weapon Stones
+			pn(99453),	-- Weaponsmithing
+		})),
 		filter(REAGENTS, {
 			i(222511),	-- Adjustable Framework+
 			i(222512),	-- Adjustable Framework++
@@ -965,6 +1026,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224115),	-- Runed Ironclaw Rod
 			i(224116),	-- Runed Null Stone Rod
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENCHANTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }}
+		},{
+			pn(100001),	-- Accentuated Accessories
+			pn(100003),	-- Arathor Alterations
+			pn(100004),	-- Bolstered Breastplates
+			pn(99936),	-- Combat Crafts
+			pn(99999),	-- Cursed Chants
+			pn(99939),	-- Deceptive Decorations
+			pn(99890),	-- Designated Disenchanter
+			pn(100007),	-- Earthen Enhancements
+			pn(99940),	-- Ephemerals, Enrichments, and Equipment
+			pn(99887),	-- Epic Escalations
+			pn(100008),	-- Everlasting Enchantments
+			pn(99938),	-- Exquisite Equipment
+			pn(99934),	-- Finalized Finishers
+			pn(100002),	-- Fortified Flames
+			pn(100038),	-- Immaculate Ingenuity
+			pn(100037),	-- Magnificent Multicrafting
+			pn(99935),	-- Material Maestro
+			pn(100000),	-- Nerubian Novelties
+			pn(99933),	-- Optimal Oils
+			pn(99937),	-- Professional Production
+			pn(99888),	-- Rare Resourcing
+			pn(100039),	-- Resourceful Residue
+			pn(100040),	-- Supplementary Shattering
+			pn(100005),	-- Terrific Tools
+			pn(99998),	-- Tertiary Trivialities
+			pn(99889),	-- Uncommon Utilitarian
+			pn(100006),	-- Wondrous Weapons
+		})),
 		filter(REAGENTS, {
 			i(224173),	-- Concentration Concentrate+
 			i(224174),	-- Concentration Concentrate++
@@ -1349,6 +1442,29 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221787),	-- Spring-Loaded Aqirite Fabric Cutters
 			i(221786),	-- Spring-Loaded Bismuth Fabric Cutters
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENGINEERING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENGINEERING, 1 }}
+		},{
+			pn(100838),	-- Adjustable Cogwheel
+			pn(100762),	-- Bracers
+			pn(100764),	-- Calibrated Chaos
+			pn(100791),	-- Devices
+			pn(100765),	-- Engineered Equipment
+			pn(100790),	-- Explosives
+			pn(100759),	-- Goggles
+			pn(100763),	-- Guns
+			pn(100837),	-- Impeccable Cogwheel
+			pn(100842),	-- Ingenious
+			pn(100843),	-- Inventing
+			pn(100761),	-- Inventor's Necessities
+			pn(100840),	-- Overclocked Cogwheel
+			pn(100841),	-- Parts
+			pn(100760),	-- Profession Gear
+			pn(100836),	-- Scrapper
+			pn(100839),	-- Serrated Cogwheel
+			pn(100789),	-- Tinkers
+		})),
 		filter(MOUNTS, {
 			i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
 		}),
@@ -1539,6 +1655,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(435850, 79912),	-- Sporefused Mycobloom
 			r_withQuest(435867, 79926),	-- Sporefused Orbinid
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = HERBALISM,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }}
+		},{
+			pn(96296),	-- Altered
+			pn(96357),	-- Blossom Browser
+			pn(96248),	-- Botany
+			pn(96358),	-- Bountiful Harvests
+			pn(96356),	-- Carnivorous Connoisseur
+			pn(96297),	-- Crystallized
+			pn(96247),	-- Cultivation
+			pn(96355),	-- Fungus Forager
+			pn(96294),	-- Irradiated
+			pn(96246),	-- Mulching
+			pn(96354),	-- Orbinid Observer
+			pn(96298),	-- Overloading the Underground
+			pn(96353),	-- Spear Scavenger
+			pn(96295),	-- Sporefused
+		})),
 	}),
 	prof(INSCRIPTION, {
 		salvagerecipe(444181, 222545, {	-- Khaz Algar Milling
@@ -1807,6 +1942,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222576),	-- Patient Alchemist's Mixing Rod
 			i(222574),	-- Silver Tongue's Quill
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = INSCRIPTION,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 }}
+		},{
+			pn(101557),	-- Alchemist's Mixing Rod
+			pn(101881),	-- Archival Additions
+			pn(101563),	-- Careful Carvings
+			pn(101556),	-- Chef's Rolling Pin
+			pn(101562),	-- Combative Curiosities
+			pn(101874),	-- Contracts
+			pn(101880),	-- Cryptic Collection
+			pn(101876),	-- Darkmoon Sigil: Ascension
+			pn(101879),	-- Darkmoon Sigil: Radiance
+			pn(101878),	-- Darkmoon Sigil: Symbiosis
+			pn(101877),	-- Darkmoon Sigil: Vivacity
+			pn(101593),	-- Detail Oriented
+			pn(101594),	-- Eureka!
+			pn(101626),	-- Improved Ciphers
+			pn(101624),	-- Improved Inks
+			pn(101625),	-- Improved Milling
+			pn(101873),	-- Missives
+			pn(101592),	-- Multitasking
+			pn(101559),	-- Polished Production
+			pn(101595),	-- Pursuit of Knowledge
+			pn(101627),	-- Pursuit of Perfection
+			pn(101875),	-- Runic Research
+			pn(101558),	-- Scribe's Quill
+			pn(101561),	-- Staves
+			pn(101560),	-- Torches
+			pn(101872),	-- Vantus Runes
+		})),
 		filter(REAGENTS, {
 			i(222635),	-- Algari Missive of Crafting Speed+
 			i(222636),	-- Algari Missive of Crafting Speed++
@@ -2176,6 +2342,40 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(215119, {["requireSkill"] = INSCRIPTION}),	-- Right-Handed Magnifying Glass
 			i(215117, {["requireSkill"] = INSCRIPTION}),	-- Storyteller's Glasses
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = JEWELCRAFTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1 }}
+		},{
+			pn(98244),	-- Amulets
+			pn(101953),	-- Artisan's Accessories
+			pn(98612),	-- Deadly Emerald
+			pn(98608),	-- Deadly Onyx
+			pn(98600),	-- Deadly Sapphire
+			pn(98662),	-- Emerald
+			pn(98613),	-- Emerald
+			pn(98663),	-- Gem Finding
+			pn(98614),	-- Gemcutting
+			pn(98665),	-- Glasswork
+			pn(98245),	-- Jewelrycrafting
+			pn(98664),	-- Masonry
+			pn(98611),	-- Masterful Emerald
+			pn(98603),	-- Masterful Ruby
+			pn(98598),	-- Masterful Sapphire
+			pn(98661),	-- Onyx
+			pn(98609),	-- Onyx
+			pn(98607),	-- Quick Onyx
+			pn(98604),	-- Quick Ruby
+			pn(98599),	-- Quick Sapphire
+			pn(98243),	-- Rings
+			pn(98605),	-- Ruby
+			pn(98660),	-- Ruby
+			pn(98659),	-- Sapphire
+			pn(98601),	-- Sapphire
+			pn(98666),	-- Shaping
+			pn(98610),	-- Versatile Emerald
+			pn(98606),	-- Versatile Onyx
+			pn(98602),	-- Versatile Ruby
+		})),
 		filter(REAGENTS, {
 			i(213753),	-- Decorative Lens+
 			i(213754),	-- Decorative Lens++
@@ -2408,6 +2608,43 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219873, {["requireSkill"] = BLACKSMITHING}),	-- Steelsmith's Apron
 			i(219867, {["requireSkill"] = HERBALISM}),	-- Stonebound Herbalist's Pack
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = LEATHERWORKING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }}
+		},{
+			pn(97559),	-- Arathi Armorer
+			pn(97707),	-- Armbands
+			pn(97557),	-- Beastly Bulwarks
+			pn(97775),	-- Bindings
+			pn(97782),	-- Breastplates
+			pn(97638),	-- Commanding Concentration
+			pn(97784),	-- Concrete Chitin
+			pn(97777),	-- Cuisses
+			pn(97706),	-- Embroidered Leather Armor
+			pn(97780),	-- Epaulets
+			pn(97556),	-- Epic Ensembles
+			pn(97560),	-- Flawless Fortes
+			pn(97776),	-- Gauntlets
+			pn(97704),	-- Grasps
+			pn(97781),	-- Guises
+			pn(97709),	-- Hoods
+			pn(97637),	-- Industrious Innovations
+			pn(97778),	-- Intricate Chitin
+			pn(97702),	-- Kickers
+			pn(97783),	-- Large Chitin
+			pn(97640),	-- Learned Leatherworker
+			pn(97705),	-- Legwraps
+			pn(97712),	-- Luxurious Leathers
+			pn(97708),	-- Mantles
+			pn(97558),	-- Nerubian Nous
+			pn(97711),	-- Shaped Leather Armor
+			pn(97555),	-- Spotless Stitching
+			pn(97774),	-- Stompers
+			pn(97710),	-- Tunics
+			pn(97779),	-- Vambraces
+			pn(97703),	-- Waistbands
+			pn(97639),	-- Waste Not
+		})),
 		filter(REAGENTS, {
 			i(219880),	-- Carapace-Backed Hide+
 			i(219881),	-- Carapace-Backed Hide++
@@ -2470,6 +2707,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(439718, 80362),	-- Weeping Bismuth
 			r_withQuest(439720, 80364),	-- Weeping Ironclaw
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = MINING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.MINING, 1 }}
+		},{
+			pn(100083),	-- Aqirite
+			pn(100084),	-- Bismuth
+			pn(100161),	-- Crystallized
+			pn(100082),	-- Ironclaw
+			pn(100162),	-- Mastering the Mysterious
+			pn(100111),	-- Mining Fundamentals
+			pn(100159),	-- Outlawed Techniques
+			pn(100085),	-- Plethora of Ore
+			pn(100110),	-- Rich Deposits
+			pn(100109),	-- Seams
+			pn(100158),	-- Webbed
+			pn(100160),	-- Weeping
+		})),
 		-- Gathered Items
 		i(210933),	-- Aqirite+
 		i(210934),	-- Aqirite++
@@ -2524,6 +2778,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212673),	-- Thunderous Hide+++
 			i(224780),	-- Toughened Thunderous Hide
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = SKINNING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.SKINNING, 1 }}
+		},{
+			pn(96828),	-- Concrete Chitin
+			pn(96769),	-- Fishing Friend
+			pn(96770),	-- Harvesting
+			pn(96798),	-- Impressive Infuser
+			pn(96800),	-- Luring
+			pn(96829),	-- Luxurious Leathers
+			pn(96768),	-- Meat Carver
+			pn(96830),	-- Tanning
+			pn(96799),	-- Trained Tracker
+			pn(96767),	-- Trophy Taker
+		})),
 		i(219005),	-- Arathor Hammerfish Lure
 		i(219019),	-- Beast Lure Scent
 		i(218738),	-- Bizarrely Shaped Stomach
@@ -2649,6 +2918,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222841),	-- Weavercloth Gardening Hat
 			i(222844),	-- Weavercloth Tailor's Coat
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = TAILORING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.TAILORING, 1 }}
+		},{
+			pn(100906),	-- Additional Embroidery
+			pn(101790),	-- Armbands
+			pn(101789),	-- Belts
+			pn(101796),	-- Cloaks
+			pn(100305),	-- Dawnweave Tailoring
+			pn(100304),	-- Dawnweaving
+			pn(100303),	-- Duskweave Tailoring
+			pn(100302),	-- Duskweaving
+			pn(100937),	-- Extra Threads
+			pn(101798),	-- Footwear
+			pn(100306),	-- From Dawn Until Dusk
+			pn(101799),	-- Gloves
+			pn(101797),	-- Hats
+			pn(101793),	-- Leggings
+			pn(100936),	-- Less is More
+			pn(101792),	-- Making a Statement
+			pn(101791),	-- Mantles
+			pn(100907),	-- Quality Fabric
+			pn(101794),	-- Robes
+			pn(100905),	-- Spellthread
+			pn(100939),	-- Textile Treasures
+			pn(100938),	-- The Perfect Loop
+			pn(101801),	-- Threads of Devotion
+			pn(101800),	-- Weathering Wear
+			pn(100904),	-- Weaving and Unraveling
+			pn(101795),	-- Weighted Garments
+		})),
 		filter(REAGENTS, {
 			i(228930),	-- Adorning Ribbon
 			i(222801),	-- Dawnweave Bolt+
