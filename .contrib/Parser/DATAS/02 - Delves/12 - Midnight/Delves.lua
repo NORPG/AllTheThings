@@ -280,7 +280,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		hqt(92092),	-- Unlock Ability 6 - Level 7
 		hqt(92093),	-- Unlock Ability 7 - Level 8
 		hqt(92756),	-- Level 9
-		--hqt(92758),	-- Level 10 (automated)
+		hqt(92758),	-- Level 10
 		hqt(92759),	-- Level 11
 		hqt(92760),	-- Level 12
 		hqt(92761),	-- Level 13
@@ -290,7 +290,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		hqt(92765),	-- Level 17
 		hqt(92766),	-- Level 18
 		hqt(92767),	-- Level 19
-		--hqt(92768),	-- Level 20 (automated)
+		hqt(92768),	-- Level 20
 		hqt(92769),	-- Level 21
 		hqt(92770),	-- Level 22
 		hqt(92771),	-- Level 23
@@ -300,7 +300,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		hqt(92775),	-- Level 27
 		hqt(92776),	-- Level 28
 		hqt(92777),	-- Level 29
-		--hqt(92778),	-- Level 30 (automated)
+		hqt(92778),	-- Level 30
 		hqt(92779),	-- Level 31
 		hqt(92780),	-- Level 32
 		hqt(92781),	-- Level 33
@@ -310,7 +310,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		hqt(92785),	-- Level 37
 		hqt(92786),	-- Level 38
 		hqt(92787),	-- Level 39
-		--hqt(92788),	-- Level 40 (automated)
+		hqt(92788),	-- Level 40
 		hqt(92789),	-- Level 41
 		hqt(92790),	-- Level 42
 		hqt(92791),	-- Level 43
@@ -320,7 +320,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		hqt(92795, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 47
 		hqt(92796, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 48
 		hqt(92797, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 49
-		--hqt(92798, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 50 (automated?)
+		hqt(92798, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 50
 		hqt(92799, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 51
 		hqt(92800, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 52
 		hqt(92801, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 53
@@ -330,7 +330,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		hqt(92806, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 57
 		hqt(92807, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 58
 		hqt(92808, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 59
-		--hqt(92809, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 60 (automated?)
+		hqt(92809, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 60
 	}),
 	n(MAILBOX, {
 		i(258738, {	-- A Cordial Invitation (QS!)

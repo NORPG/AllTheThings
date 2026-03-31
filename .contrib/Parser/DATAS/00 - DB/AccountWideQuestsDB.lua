@@ -2434,8 +2434,7 @@ local AccountWideQuestsDB = {
 	92733,	-- Triggered after entering house
 	92734,	-- Quest #92734*
 	92756,	-- Level 9
-	92758,	-- Criteria: Buddy System
-	92758,	-- Criteria: Buddy System
+	92758,	-- Level 10
 	92759,	-- Level 11
 	92760,	-- Level 12
 	92761,	-- Level 13
@@ -2445,7 +2444,7 @@ local AccountWideQuestsDB = {
 	92765,	-- Level 17
 	92766,	-- Level 18
 	92767,	-- Level 19
-	92768,	-- Buddy System II
+	92768,	-- Level 20
 	92769,	-- Level 21
 	92770,	-- Level 22
 	92771,	-- Level 23
@@ -2455,6 +2454,7 @@ local AccountWideQuestsDB = {
 	92775,	-- Level 27
 	92776,	-- Level 28
 	92777,	-- Level 29
+	92778,	-- Level 30
 	92779,	-- Level 31
 	92780,	-- Level 32
 	92781,	-- Level 33
@@ -2464,6 +2464,7 @@ local AccountWideQuestsDB = {
 	92785,	-- Level 37
 	92786,	-- Level 38
 	92787,	-- Level 39
+	92788,	-- Level 40
 	92789,	-- Level 41
 	92790,	-- Level 42
 	92791,	-- Level 43
@@ -2473,6 +2474,7 @@ local AccountWideQuestsDB = {
 	92795,	-- Level 47
 	92796,	-- Level 48
 	92797,	-- Level 49
+	92798,	-- Level 50
 	92799,	-- Level 51
 	92800,	-- Level 52
 	92801,	-- Level 53
@@ -2482,6 +2484,7 @@ local AccountWideQuestsDB = {
 	92806,	-- Level 57
 	92807,	-- Level 58
 	92808,	-- Level 59
+	92809,	-- Level 60
 	92813,	-- Quest #92813*
 	92857,	-- Ta'readon's Mount Voucher
 	92861,	-- Ensemble: Eredath Lightseeker's Regalia

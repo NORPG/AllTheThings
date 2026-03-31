@@ -38,13 +38,19 @@ local PREYSEEKER_BOX_SYM = {
 }
 
 local TrapNPCs = {	-- probably a ton of these, it seems unique per target & difficulty
-	247073,	-- Loa-Blessed Trap
 	247070,	-- Gloomy Trap
 	247071,	-- Shimmering Trap
+	247072,	-- Vicious Trap
+	247073,	-- Loa-Blessed Trap
+	247074,	-- Ranger's Trap
 	247075,	-- Entangled Trap
+	247076,	-- Anointed Trap
 	247077,	-- Void-Cursed Trap
 	247078,	-- Void-Warped Trap
-	247076,	-- Anointed Trap
+	247079,	-- Icy Trap
+	247080,	-- Mana-Laden Trap
+	247081,	-- Thorny Trap
+	247082,	-- Twilight Trap
 }
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
@@ -586,6 +592,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(PREY, {
+		-- Weekly
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+		},{
+			-- 1k seasonal journey lockout, weekly
+			q(95000, name(HEADERS.Faction, 2764)),	-- 1st per week
+			q(95001, name(HEADERS.Faction, 2764)),	-- 2nd per week
+			q(95002, name(HEADERS.Faction, 2764)),	-- 3rd per week
+			q(95003, name(HEADERS.Faction, 2764)),	-- 4th per week
+
+			q(93168),	-- Prey Complete - Normal #1
+			q(93853),	-- Prey Complete - Normal #2
+			q(93855),	-- Prey Complete - Normal #3
+			q(93856),	-- Prey Complete - Normal #4
+			q(93169),	-- Prey Complete - Hard #1
+			q(93857),	-- Prey Complete - Hard #2
+			q(93858),	-- Prey Complete - Hard #3
+			q(93860),	-- Prey Complete - Hard #4
+			q(93170),	-- Prey Complete - Nightmare #1
+			q(93861),	-- Prey Complete - Nightmare #2
+			q(93863),	-- Prey Complete - Nightmare #3
+			q(93864),	-- Prey Complete - Nightmare #4
+		})),
+		-- One-Time
 		n(QUESTS, {
 			--whatever that rng things are happen
 			--q(95485),	-- after zone (Eversong Woods) rare kill during Prey (and unflagged at same frame)
@@ -595,32 +625,42 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
 			--q(95539),	-- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 
-			-- 1k seasonal journey lockout, weekly
-			q(95000),	-- 1st per week
-			q(95001),	-- 2nd per week
-			q(95002),	-- 3rd per week
-			q(95003),	-- 4th per week
 
-			q(93872),	-- Prey Complete - Normal #1
-			q(93853),	-- Prey Complete - Normal #2
-			q(93855),	-- Prey Complete - Normal #3
-			q(93856),	-- Prey Complete - Normal #4
-			q(93874),	-- Prey Complete - Hard #1
-			q(93875),	-- Prey Complete - Hard #2
-			q(93858),	-- Prey Complete - Hard #3
-			q(93860),	-- Prey Complete - Hard #4
-			--Seems like lockout for rewards? Weekly
-			--- Adventures
-			q(93168),	-- Adventurer chest lockout (Normal), 1st
-			--q(93156?),	-- Adventurer chest lockout (Normal), 2nd (after it - Adventures Sack as reward)
-			--- Veteran
-			q(93169),	-- Veteran chest lockout (Hard), 1st
-			q(93857),	-- Veteran chest lockout (Hard), 2nd (after it - Veteran Sack as reward)
-			--- Nightmare
-			q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
-			q(93861),	-- Chapmpion chest lockout (Nightmare), 2nd
-			q(93863),	-- Chapmpion chest lockout (Nightmare), 3rd
-			q(93864),	-- Chapmpion chest lockout (Nightmare), 4th
+			-- these fire when preys completed, but not entirely sure what they mean...
+			-- they are also account-wide
+			q(93872, {name="Why did this trigger? #1"}),	-- Prey Complete - ??
+			q(93873, {name="Why did this trigger? #2"}),	-- Prey Complete - ??
+			q(93874, {name="Why did this trigger? #3"}),	-- Prey Complete - ??
+			q(93875, {name="Why did this trigger? #4"}),	-- Prey Complete - ??
 		}),
 	}),
 }));
+
+
+--[[
+
+N Prey #1
+93168
+93875
+95003 - 4th per acct
+
+N Prey #2
+93853
+
+N Prey #3
+93855
+
+N Prey #4
+93856
+
+
+
+M Prey 1
+93170
+M Prey 2
+93861
+M Prey 3
+93863
+M Prey 4
+
+]]
