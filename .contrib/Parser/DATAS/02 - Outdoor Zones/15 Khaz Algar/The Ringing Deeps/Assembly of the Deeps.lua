@@ -417,7 +417,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								i(253162, {	-- Earthen Chain Wall Shelf (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = { { "c", RESONANCE_CRYSTALS, 600  } },
-									-- Exo Note: Unknown which Renown rank
 								}),
 								i(228418, {	-- Noncandescent Smithing Choker
 									["cost"] = { { "c", RESONANCE_CRYSTALS, 250 } },
@@ -442,16 +441,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- RENOWN 7 --
 							}, {	-- RENOWN 8 --
 								i(212107, {	-- Inflammable Forging Goggles
-									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223294, {	-- Noncandescent Smithing Hood
-									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223295, {	-- Slag-Accruing Mask
-									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223293, {	-- Unmelting Ironworker Helmet
-									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 							}, {	-- RENOWN 9 --
 							}, {	-- RENOWN 10 --
@@ -488,16 +487,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 								}),
 								i(223306, {	-- Inflammable Forging Cinch
-									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223305, {	-- Noncandescent Smithing Cord
-									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223304, {	-- Slag-Accruing Waistguard
-									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223307, {	-- Unmelting Ironworker Clasp
-									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 							}, {	-- RENOWN 19 --
 								i(223505, {	-- Crimson Mudnose (MOUNT!)
