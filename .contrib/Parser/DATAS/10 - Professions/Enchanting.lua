@@ -485,6 +485,30 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				}),
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENCHANTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 }}
+		},{
+			pn(64135),	-- Adaptive
+			pn(64134),	-- Artistry
+			pn(64141),	-- Burning
+			pn(68401),	-- Draconic Disenchantment
+			pn(64140),	-- Earthen
+			pn(64143),	-- Enchantment
+			pn(64138),	-- Frozen
+			pn(68443),	-- Illusory Goods
+			pn(68402),	-- Insight of the Blue
+			pn(68441),	-- Inspired Devotion
+			pn(64133),	-- Magical Reinforcement
+			pn(64136),	-- Material Manipulation
+			pn(64142),	-- Primal
+			pn(68400),	-- Primal Extraction
+			pn(68442),	-- Resourceful Writ
+			pn(68444),	-- Rods and Wands
+			pn(68445),	-- Rods, Runes, and Ruses
+			pn(64139),	-- Sophic
+			pn(64137),	-- Wafting
+		})),
 		n(QUESTS, {
 			q(70360, {	-- Dragon Isles Enchanting
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Enchanting.",
@@ -800,6 +824,38 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENCHANTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }}
+		},{
+			pn(100001),	-- Accentuated Accessories
+			pn(100003),	-- Arathor Alterations
+			pn(100004),	-- Bolstered Breastplates
+			pn(99936),	-- Combat Crafts
+			pn(99999),	-- Cursed Chants
+			pn(99939),	-- Deceptive Decorations
+			pn(99890),	-- Designated Disenchanter
+			pn(100007),	-- Earthen Enhancements
+			pn(99940),	-- Ephemerals, Enrichments, and Equipment
+			pn(99887),	-- Epic Escalations
+			pn(100008),	-- Everlasting Enchantments
+			pn(99938),	-- Exquisite Equipment
+			pn(99934),	-- Finalized Finishers
+			pn(100002),	-- Fortified Flames
+			pn(100038),	-- Immaculate Ingenuity
+			pn(100037),	-- Magnificent Multicrafting
+			pn(99935),	-- Material Maestro
+			pn(100000),	-- Nerubian Novelties
+			pn(99933),	-- Optimal Oils
+			pn(99937),	-- Professional Production
+			pn(99888),	-- Rare Resourcing
+			pn(100039),	-- Resourceful Residue
+			pn(100040),	-- Supplementary Shattering
+			pn(100005),	-- Terrific Tools
+			pn(99998),	-- Tertiary Trivialities
+			pn(99889),	-- Uncommon Utilitarian
+			pn(100006),	-- Wondrous Weapons
+		})),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 219085 },	-- Nagad <Enchanting Trainer>
 			["coord"] = { 52.7, 71.1, DORNOGAL },
@@ -978,6 +1034,38 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENCHANTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 }}
+		},{
+			pn(107764),	-- Amani Augments
+			pn(107759),	-- Azerothian Arms
+			pn(107762),	-- Berserker Brawn
+			pn(107646),	-- Crystal Collector
+			pn(107649),	-- Disenchanting Delegate
+			pn(107648),	-- Dust Deliverer
+			pn(107769),	-- Elevating Equipment
+			pn(107766),	-- Eversong Empowerments
+			pn(107684),	-- Excellent Expendables
+			pn(107760),	-- Haranir Heightening
+			pn(107615),	-- Infinite Ingenuity
+			pn(107688),	-- Mastering Mirages
+			pn(107614),	-- Multicrafting Meticulously
+			pn(107757),	-- Nature's Novelties
+			pn(107687),	-- Outstanding Outfits
+			pn(107765),	-- Quel'Thalas Quality
+			pn(107686),	-- Reputable Rods
+			pn(107616),	-- Responsible Resources
+			pn(107647),	-- Shard Supplier
+			pn(107767),	-- Silvermoon's Spellpower
+			pn(107617),	-- Spellbound Shatterer
+			pn(107768),	-- Thalassian Talents
+			pn(107689),	-- Transitories, Tonics, and Tools
+			pn(107761),	-- Trollish Tools
+			pn(107758),	-- Worldsoul Wards
+			pn(107685),	-- Worthy Wands
+			pn(107763),	-- Zul'Aman Zeal
+		})),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 243349 },	-- Dolothos <Enchanting Trainer>
 			["coord"] = { 48.0, 53.9, MAP.MIDNIGHT.SILVERMOON_CITY },

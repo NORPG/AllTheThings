@@ -643,6 +643,26 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				crit(61602),	-- 2 Frost Souls Captured
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENGINEERING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENGINEERING, 1 }}
+		},{
+			pn(50893),	-- Creation
+			pn(50891),	-- EZ-Thro
+			pn(50894),	-- Explosives
+			pn(50929),	-- Function Over Form
+			pn(50928),	-- Gear
+			pn(50927),	-- Gears for Gear
+			pn(50990),	-- Generalist
+			pn(50955),	-- Inventions
+			pn(50956),	-- Mechanical Mind
+			pn(50954),	-- Novelties
+			pn(50993),	-- Optimized Efficiency
+			pn(50992),	-- Pieces Parts
+			pn(50991),	-- Scrapper
+			pn(50892),	-- Short Fuse
+			pn(50926),	-- Utility
+		})),
 		n(QUESTS, {
 			i(198156, {	-- Wyrmhole Generator: Dragon Isles (TOY!)
 				["description"] = "You can collect additional portal options.\nRANDOM LOCATION = Carelessly leap into the portal...\nTHE WAKING SHORES = Pray return to the Waking Shores.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE FORBIDDEN REACH = Disregard the word 'Forbidden' and venture...\nZARALEK CAVERN = Flip the portal horizontally...\nEMERALD DREAM = Close your eyes and snore loudly.",
@@ -1028,6 +1048,29 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENGINEERING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENGINEERING, 1 }}
+		},{
+			pn(100838),	-- Adjustable Cogwheel
+			pn(100762),	-- Bracers
+			pn(100764),	-- Calibrated Chaos
+			pn(100791),	-- Devices
+			pn(100765),	-- Engineered Equipment
+			pn(100790),	-- Explosives
+			pn(100759),	-- Goggles
+			pn(100763),	-- Guns
+			pn(100837),	-- Impeccable Cogwheel
+			pn(100842),	-- Ingenious
+			pn(100843),	-- Inventing
+			pn(100761),	-- Inventor's Necessities
+			pn(100840),	-- Overclocked Cogwheel
+			pn(100841),	-- Parts
+			pn(100760),	-- Profession Gear
+			pn(100836),	-- Scrapper
+			pn(100839),	-- Serrated Cogwheel
+			pn(100789),	-- Tinkers
+		})),
 		n(QUESTS, {
 			q(84128, {	-- Engineering Services Requested
 				["sourceQuests"] = { 84285 },	-- Crafting Orders: Engineering
@@ -1149,6 +1192,32 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 			ach(60888),	-- Pushing My Buttons
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ENGINEERING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENGINEERING, 1 }}
+		},{
+			pn(106788),	-- Bits
+			pn(106789),	-- Bits and Bots
+			pn(109138),	-- Boots
+			pn(106787),	-- Bots
+			pn(109139),	-- Bracers
+			pn(109141),	-- Combat Analytics
+			pn(106754),	-- Concentrated Effort
+			pn(106717),	-- Engineering Accessories
+			pn(106711),	-- Engineering Tools
+			pn(106718),	-- Finishing Touches
+			pn(106715),	-- Fishing Rods
+			pn(109140),	-- Goggles
+			pn(110352),	-- Guns
+			pn(106713),	-- Jewelcrafting Tools
+			pn(106714),	-- Mandatory Tools
+			pn(106719),	-- Market Mobility
+			pn(106716),	-- Mining Accessories
+			pn(106753),	-- Multicraft
+			pn(106755),	-- Recycling
+			pn(106752),	-- Resourcefulness
+			pn(106712),	-- Tailoring Tools
+		})),
 		n(QUESTS, {
 			q(93692, {	-- Engineering Services Requested
 				["sourceQuests"] = { 93727 },	-- Crafting Orders: Engineering

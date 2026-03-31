@@ -863,6 +863,37 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				}),
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = TAILORING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.TAILORING, 1 }}
+		},{
+			pn(40215),	-- Armbands
+			pn(40073),	-- Azureweave Tailoring
+			pn(40072),	-- Azureweaving
+			pn(40214),	-- Belts
+			pn(40071),	-- Chronocloth Tailoring
+			pn(40218),	-- Cloaks
+			pn(40007),	-- Cloth Collection
+			pn(40074),	-- Draconic Needlework
+			pn(40217),	-- Embellishments
+			pn(40035),	-- Embroidery
+			pn(40220),	-- Footwear
+			pn(40226),	-- Garmentcrafting
+			pn(40221),	-- Gloves
+			pn(40219),	-- Hats
+			pn(40223),	-- Leggings
+			pn(40216),	-- Mantles
+			pn(40222),	-- Outerwear
+			pn(40225),	-- Outfits
+			pn(40224),	-- Robes
+			pn(40005),	-- Shrewd Stitchery
+			pn(40006),	-- Sparing Sewing
+			pn(40037),	-- Spinning
+			pn(40008),	-- Tailoring Mastery
+			pn(40038),	-- Textiles
+			pn(40070),	-- Timeweaving
+			pn(40036),	-- Weaving
+		})),
 		n(QUESTS, {
 			q(72249, {	-- Dragon Isles Tailoring
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
@@ -1187,6 +1218,37 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = TAILORING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.TAILORING, 1 }}
+		},{
+			pn(100906),	-- Additional Embroidery
+			pn(101790),	-- Armbands
+			pn(101789),	-- Belts
+			pn(101796),	-- Cloaks
+			pn(100305),	-- Dawnweave Tailoring
+			pn(100304),	-- Dawnweaving
+			pn(100303),	-- Duskweave Tailoring
+			pn(100302),	-- Duskweaving
+			pn(100937),	-- Extra Threads
+			pn(101798),	-- Footwear
+			pn(100306),	-- From Dawn Until Dusk
+			pn(101799),	-- Gloves
+			pn(101797),	-- Hats
+			pn(101793),	-- Leggings
+			pn(100936),	-- Less is More
+			pn(101792),	-- Making a Statement
+			pn(101791),	-- Mantles
+			pn(100907),	-- Quality Fabric
+			pn(101794),	-- Robes
+			pn(100905),	-- Spellthread
+			pn(100939),	-- Textile Treasures
+			pn(100938),	-- The Perfect Loop
+			pn(101801),	-- Threads of Devotion
+			pn(101800),	-- Weathering Wear
+			pn(100904),	-- Weaving and Unraveling
+			pn(101795),	-- Weighted Garments
+		})),
 		n(QUESTS, {
 			q(84132, {	-- Tailoring Services Requested
 				["sourceQuests"] = { 84281 },	-- Crafting Orders: Tailoring
@@ -1325,6 +1387,37 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = TAILORING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.TAILORING, 1 }}
+		},{
+			pn(104324),	-- Arcanoweave Expertise
+			pn(104325),	-- Arcanoweaving
+			pn(104210),	-- Belts
+			pn(104214),	-- Boots
+			pn(104209),	-- Bracers
+			pn(104204),	-- Cloaks
+			pn(104389),	-- Creative Efficiency
+			pn(104349),	-- Eastern Kingdoms Cloth
+			pn(104211),	-- Elegant Accessories
+			pn(104387),	-- Embroidery
+			pn(104350),	-- Fabric Specialist
+			pn(104388),	-- Fashion Genius
+			pn(104390),	-- Fiber Arts
+			pn(104213),	-- Gloves
+			pn(104212),	-- Hats
+			pn(104215),	-- Head-to-Toes
+			pn(104328),	-- Nimble Needlework
+			pn(104348),	-- Otherworldly Cloth
+			pn(104207),	-- Outfit Essentials
+			pn(104206),	-- Robes
+			pn(104208),	-- Shoulders
+			pn(104216),	-- Sin'dorei Finery
+			pn(104326),	-- Sunfire Expertise
+			pn(104327),	-- Sunfire Silk Weaving
+			pn(104386),	-- Textile Utilization
+			pn(104205),	-- Trousers
+		})),
 		n(QUESTS, {
 			q(93696, {	-- Tailoring Services Requested
 				["sourceQuests"] = { 93730 },	-- Crafting Orders: Tailoring

@@ -404,29 +404,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(191519),	-- Writhefire Oil+++
 			i(194337),	-- Liquid Courage
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ALCHEMY,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ALCHEMY, 1 }}
-		},{
-			pn(22481),	-- Air-Formulated Phials
-			pn(19485),	-- Air-Formulated Potions
-			pn(19539),	-- Alchemical Theory
-			pn(19482),	-- Batch Production
-			pn(22478),	-- Batch Production
-			pn(19537),	-- Chemical Synthesis
-			pn(19536),	-- Decayology
-			pn(22482),	-- Frost-Formulated Phials
-			pn(19486),	-- Frost-Formulated Potions
-			pn(19534),	-- Inspiring Ambienc
-			pn(22479),	-- Phial Experimentation
-			pn(22480),	-- Phial Lore
-			pn(22483),	-- Phial Mastery
-			pn(19483),	-- Potion Experimentation
-			pn(19484),	-- Potion Lore
-			pn(19487),	-- Potion Mastery
-			pn(19535),	-- Resourceful Routines
-			pn(19538),	-- Transmutation
-		})),
 		filter(REAGENTS, {
 			i(191570),	-- Dragon's Alchemical Solution
 			i(191493),	-- Primal Convergent+
@@ -683,38 +660,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(191224, {["requireSkill"] = HERBALISM}),	-- Khaz'gorite Sickle
 			i(191225, {["requireSkill"] = SKINNING}),	-- Khaz'gorite Skinning Knife
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = BLACKSMITHING,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 }}
-		},{
-			pn(23912),	-- Armorsmithing
-			pn(23721),	-- Axes, Picks & Polearms
-			pn(23902),	-- Belts
-			pn(23726),	-- Blades
-			pn(23910),	-- Breastplates
-			pn(23903),	-- Fine Armor
-			pn(23900),	-- Gauntlets
-			pn(23908),	-- Greaves
-			pn(23723),	-- Hafted
-			pn(42828),	-- Hammer Control
-			pn(23906),	-- Helms
-			pn(23911),	-- Large Plate Armor
-			pn(23724),	-- Long Blades
-			pn(23722),	-- Maces & Hammers
-			pn(23905),	-- Pauldrons
-			pn(42826),	-- Poignant Plans
-			pn(23904),	-- Sabatons
-			pn(42827),	-- Safety Smithing
-			pn(23907),	-- Sculpted Armor
-			pn(23909),	-- Shields
-			pn(23725),	-- Short Blades
-			pn(23761),	-- Smelting
-			pn(23765),	-- Specialty Smithing
-			pn(23762),	-- Stonework
-			pn(23764),	-- Toolsmithing
-			pn(23901),	-- Vambraces
-			pn(23727),	-- Weaponsmithing
-		})),
 		filter(REAGENTS, {
 			i(190530),	-- Frostfire Alloy+
 			i(190531),	-- Frostfire Alloy++
@@ -1143,30 +1088,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198716, {["requireSkill"] = ENCHANTING}),	-- Runed Khaz'gorite Rod
 			i(201601, {["requireSkill"] = ENCHANTING}),	-- Runed Serevite Rod
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ENCHANTING,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 }}
-		},{
-			pn(64135),	-- Adaptive
-			pn(64134),	-- Artistry
-			pn(64141),	-- Burning
-			pn(68401),	-- Draconic Disenchantment
-			pn(64140),	-- Earthen
-			pn(64143),	-- Enchantment
-			pn(64138),	-- Frozen
-			pn(68443),	-- Illusory Goods
-			pn(68402),	-- Insight of the Blue
-			pn(68441),	-- Inspired Devotion
-			pn(64133),	-- Magical Reinforcement
-			pn(64136),	-- Material Manipulation
-			pn(64142),	-- Primal
-			pn(68400),	-- Primal Extraction
-			pn(68442),	-- Resourceful Writ
-			pn(68444),	-- Rods and Wands
-			pn(68445),	-- Rods, Runes, and Ruses
-			pn(64139),	-- Sophic
-			pn(64137),	-- Wafting
-		})),
 		filter(REAGENTS, {
 			i(211519, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Enchanted Aspect's Awakened Crest
 			i(206961, {["timeline"] = {ADDED_10_2_0}}),	-- Enchanted Aspect's Dreaming Crest
@@ -1642,26 +1563,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(194125, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Draconium Fabric Cutters
 			i(194126, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Khaz'gorite Fabric Cutters
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = ENGINEERING,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENGINEERING, 1 }}
-		},{
-			pn(50893),	-- Creation
-			pn(50891),	-- EZ-Thro
-			pn(50894),	-- Explosives
-			pn(50929),	-- Function Over Form
-			pn(50928),	-- Gear
-			pn(50927),	-- Gears for Gear
-			pn(50990),	-- Generalist
-			pn(50955),	-- Inventions
-			pn(50956),	-- Mechanical Mind
-			pn(50954),	-- Novelties
-			pn(50993),	-- Optimized Efficiency
-			pn(50992),	-- Pieces Parts
-			pn(50991),	-- Scrapper
-			pn(50892),	-- Short Fuse
-			pn(50926),	-- Utility
-		})),
 		filter(REAGENTS, {
 			i(198195),	-- Arclight Capacitor+
 			i(198196),	-- Arclight Capacitor++
@@ -1849,24 +1750,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(191471),	-- Writhebark++
 			i(191472),	-- Writhebark+++
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = HERBALISM,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.HERBALISM, 1 }}
-		},{
-			pn(59699),	-- Arboriculture
-			pn(59651),	-- Botany
-			pn(59701),	-- Bountiful Harvests
-			pn(59650),	-- Conversance
-			pn(59649),	-- Cultivation
-			pn(59617),	-- Decayed
-			pn(59697),	-- Floriculture
-			pn(59619),	-- Frigid
-			pn(59698),	-- Fungiculture
-			pn(59700),	-- Horticulture
-			pn(59621),	-- Mastering the Elements
-			pn(59618),	-- Titan-Touched
-			pn(59620),	-- Windswept
-		})),
 	}),
 	prof(INSCRIPTION, {
 		n(DISCOVERY, {
@@ -2272,39 +2155,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(194874, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Fastened Quill
 			i(194875, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Resplendent Quill
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = INSCRIPTION,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 }}
-		},{
-			pn(43531),	-- Air
-			pn(43535),	-- Archiving
-			pn(43525),	-- Azurescale Sigil
-			pn(43522),	-- Bronzescale Sigil
-			pn(34888),	-- Codexes
-			pn(43528),	-- Contracts and Missives
-			pn(43534),	-- Darkmoon Mysteries
-			pn(43527),	-- Draconic Treatises
-			pn(43530),	-- Earth
-			pn(43524),	-- Emberscale Sigil
-			pn(34886),	-- Fauna Runes
-			pn(43533),	-- Fire
-			pn(34831),	-- Flawless Inks
-			pn(43532),	-- Frost
-			pn(34833),	-- Infinite Discovery
-			pn(43521),	-- Jetscale Sigil
-			pn(34834),	-- Perfect Practice
-			pn(34891),	-- Profession Tools
-			pn(34835),	-- Rune Mastery
-			pn(34893),	-- Runebinding
-			pn(34889),	-- Runic Scripture
-			pn(43523),	-- Sagescale Sigil
-			pn(43526),	-- Scale Sigils
-			pn(43529),	-- Shared Knowledge
-			pn(34890),	-- Staves
-			pn(34832),	-- Understanding Flora
-			pn(34887),	-- Vantus Runes
-			pn(34892),	-- Woodcarving
-		})),
 		filter(REAGENTS, {
 			i(194871),	-- Azurescale Sigil+
 			i(199051),	-- Azurescale Sigil++
@@ -2793,30 +2643,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193042, {["requireSkill"] = ENCHANTING}),	-- Resonant Focus
 			i(193037, {["requireSkill"] = JEWELCRAFTING}),	-- Sundered Onyx Loupe
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = JEWELCRAFTING,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }}
-		},{
-			pn(28659),	-- Air
-			pn(81118),	-- Brilliant Baubling
-			pn(28724),	-- Carving
-			pn(28658),	-- Earth
-			pn(28610),	-- Enterprising
-			pn(28608),	-- Extravagancies
-			pn(28660),	-- Faceting
-			pn(28657),	-- Fire
-			pn(28656),	-- Frost
-			pn(28607),	-- Glassware
-			pn(28723),	-- Idols
-			pn(28672),	-- Jeweler's Toolset Mastery
-			pn(28727),	-- Jewelry
-			pn(28726),	-- Necklaces
-			pn(28609),	-- Prospecting
-			pn(28725),	-- Rings
-			pn(81119),	-- Saving Slivers
-			pn(28728),	-- Setting
-			pn(28722),	-- Stone
-		})),
 		filter(REAGENTS, {
 			i(191474),	-- Draconic Vial+
 			i(191475),	-- Draconic Vial++
@@ -3197,42 +3023,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193482, {["requireSkill"] = SKINNING}),	-- Skinner's Cap
 			i(193612, {["requireSkill"] = BLACKSMITHING}),	-- Smithing Apron
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = LEATHERWORKING,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, 1 }}
-		},{
-			pn(31182),	-- Awl Inspiring Works
-			pn(28537),	-- Belts
-			pn(28428),	-- Belts
-			pn(31144),	-- Bestial Primacy
-			pn(31181),	-- Bonding and Stitching
-			pn(28430),	-- Boots
-			pn(28536),	-- Boots
-			pn(28433),	-- Bracers
-			pn(28544),	-- Chestpieces
-			pn(31180),	-- Curing and Tanning
-			pn(31143),	-- Decaying Grasp
-			pn(31145),	-- Elemental Mastery
-			pn(28540),	-- Embroidered Leather Armor
-			pn(28431),	-- Gauntlets
-			pn(28538),	-- Gloves
-			pn(28435),	-- Greaves
-			pn(28543),	-- Helms
-			pn(28432),	-- Intricate Mail
-			pn(28437),	-- Large Mail
-			pn(28546),	-- Leather Armor Crafting
-			pn(31184),	-- Leatherworking Discipline
-			pn(28539),	-- Legguards
-			pn(28438),	-- Mail Armor Crafting
-			pn(28434),	-- Mail Helms
-			pn(28436),	-- Mail Shirts
-			pn(31146),	-- Primordial Leatherworking
-			pn(28545),	-- Shaped Leather Armor
-			pn(31183),	-- Shear Mastery of Leather
-			pn(28429),	-- Shoulderguards
-			pn(28542),	-- Shoulderpads
-			pn(28541),	-- Wristwraps
-		})),
 		filter(REAGENTS, {
 			i(193242),	-- Earthshine Scales+
 			i(193243),	-- Earthshine Scales++
@@ -3349,23 +3139,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(192861),	-- Ysemerald+++
 			--]]
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = MINING,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.MINING, 1 }}
-		},{
-			pn(57291),	-- Draconium
-			pn(57343),	-- Hardened
-			pn(57261),	-- Industrialization
-			pn(57345),	-- Mastering the Elements
-			pn(57293),	-- Metallurgy
-			pn(57263),	-- Mining Process
-			pn(57344),	-- Molten
-			pn(57341),	-- Primal
-			pn(57292),	-- Serevite
-			pn(57260),	-- Sorting
-			pn(57262),	-- Surveying
-			pn(57342),	-- Titan-Touched
-		})),
 	}),
 	prof(SKINNING, {
 		header(HEADERS.Spell, 366259, {	-- Skinning (Dragon Isle)
@@ -3399,21 +3172,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(202016),	-- Saturated Bone
 			i(193256),	-- Windsong Plumage
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.SKINNING, 1 }}
-		},{
-			pn(34759),	-- Bait Crafter
-			pn(34757),	-- Elemental Infusion
-			pn(34729),	-- Harvesting
-			pn(34688),	-- Leather Mastery
-			pn(34728),	-- Lure Crafter
-			pn(34758),	-- Mastery
-			pn(34727),	-- Meat Carver
-			pn(34687),	-- Scale Mastery
-			pn(34689),	-- Tanning
-			pn(34726),	-- Trophy Collector
-		})),
 		i(198401),	-- Aileron Seamoth Lure
 		i(198404),	-- Bottled Pheromones
 		i(193896),	-- Cerulean Spinefish Lure
@@ -3699,37 +3457,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193538, {["requireSkill"] = HERBALISM}),	-- Wildercloth Gardening Hat
 			i(193541, {["requireSkill"] = TAILORING}),	-- Wildercloth Tailor's Coat
 		}),
-		n(PROFESSION_NODES_HEADER, sharedData({
-			["requireSkill"] = TAILORING,
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.TAILORING, 1 }}
-		},{
-			pn(40215),	-- Armbands
-			pn(40073),	-- Azureweave Tailoring
-			pn(40072),	-- Azureweaving
-			pn(40214),	-- Belts
-			pn(40071),	-- Chronocloth Tailoring
-			pn(40218),	-- Cloaks
-			pn(40007),	-- Cloth Collection
-			pn(40074),	-- Draconic Needlework
-			pn(40217),	-- Embellishments
-			pn(40035),	-- Embroidery
-			pn(40220),	-- Footwear
-			pn(40226),	-- Garmentcrafting
-			pn(40221),	-- Gloves
-			pn(40219),	-- Hats
-			pn(40223),	-- Leggings
-			pn(40216),	-- Mantles
-			pn(40222),	-- Outerwear
-			pn(40225),	-- Outfits
-			pn(40224),	-- Robes
-			pn(40005),	-- Shrewd Stitchery
-			pn(40006),	-- Sparing Sewing
-			pn(40037),	-- Spinning
-			pn(40008),	-- Tailoring Mastery
-			pn(40038),	-- Textiles
-			pn(40070),	-- Timeweaving
-			pn(40036),	-- Weaving
-		})),
 		filter(REAGENTS, {
 			i(193938),	-- Azureweave Bolt+
 			i(193939),	-- Azureweave Bolt++

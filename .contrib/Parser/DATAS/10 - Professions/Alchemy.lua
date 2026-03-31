@@ -753,6 +753,29 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				crit(61280),	-- Charged Phial of Alacrity
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ALCHEMY,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ALCHEMY, 1 }}
+		},{
+			pn(22481),	-- Air-Formulated Phials
+			pn(19485),	-- Air-Formulated Potions
+			pn(19539),	-- Alchemical Theory
+			pn(19482),	-- Batch Production
+			pn(22478),	-- Batch Production
+			pn(19537),	-- Chemical Synthesis
+			pn(19536),	-- Decayology
+			pn(22482),	-- Frost-Formulated Phials
+			pn(19486),	-- Frost-Formulated Potions
+			pn(19534),	-- Inspiring Ambienc
+			pn(22479),	-- Phial Experimentation
+			pn(22480),	-- Phial Lore
+			pn(22483),	-- Phial Mastery
+			pn(19483),	-- Potion Experimentation
+			pn(19484),	-- Potion Lore
+			pn(19487),	-- Potion Mastery
+			pn(19535),	-- Resourceful Routines
+			pn(19538),	-- Transmutation
+		})),
 		n(QUESTS, {
 			q(70355, {	-- Dragon Isles Alchemy
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
@@ -1051,6 +1074,28 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			ach(19704),	-- Overflowing Algari Flasks (automated)
 			ach(19716),	-- Plentiful Algari Potions (automated)
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ALCHEMY,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ALCHEMY, 1 }}
+		},{
+			pn(99020),	-- Alchemical Mastery
+			pn(99016),	-- Arathor's Spear Lore
+			pn(99015),	-- Blessing Blossom Lore
+			pn(99040),	-- Bulk Production
+			pn(98952),	-- Bulk Production
+			pn(98953),	-- Fantastic Flasks
+			pn(100205),	-- Gleaming Transmutagen
+			pn(99018),	-- Luredrop Lore
+			pn(100208),	-- Mercurial Materials
+			pn(99019),	-- Mycobloom Lore
+			pn(100206),	-- Ominous Materials
+			pn(99017),	-- Orbinid Lore
+			pn(99041),	-- Potent Potions
+			pn(98951),	-- Profession Phials
+			pn(99059),	-- Thaumaturgy
+			pn(99058),	-- Transmutation
+			pn(100207),	-- Volatile Materials
+		})),
 		n(QUESTS, {
 			q(84133, {	-- Alchemy Services Requested
 				["sourceQuests"] = { 84288 },	-- Crafting Orders: Alchemy
@@ -1174,6 +1219,33 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = ALCHEMY,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ALCHEMY, 1 }}
+		},{
+			pn(107284),	-- Alchemical Mastery
+			pn(107105),	-- Brilliant Potioneer
+			pn(107209),	-- Clever Creations
+			pn(107102),	-- Cunning Potioneer
+			pn(107211),	-- Flask Abundance
+			pn(107214),	-- Fluent in Flasks
+			pn(107210),	-- Haranir Secrets
+			pn(107212),	-- Ingenious Libations
+			pn(107256),	-- Inspired Transmutation
+			pn(107254),	-- Metamorphic Mastery
+			pn(107106),	-- Path of Light
+			pn(107103),	-- Path of Void
+			pn(107208),	-- Phial Abundance
+			pn(107107),	-- Potion Prowess
+			pn(107104),	-- Prolific Potioneer - Light
+			pn(107101),	-- Prolific Potioneer - Void
+			pn(107281),	-- Recycle
+			pn(107283),	-- Reduce
+			pn(107282),	-- Reuse
+			pn(107213),	-- Sin'dorei Specialist
+			pn(107255),	-- Synthesis Synergy
+			pn(107257),	-- Transmutation Authority
+		})),
 		n(QUESTS, {
 			q(93690, {	-- Alchemy Services Requested
 				["sourceQuests"] = { 84288 },	-- Crafting Orders: Alchemy

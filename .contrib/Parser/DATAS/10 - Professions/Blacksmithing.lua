@@ -816,6 +816,38 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 }}
+		},{
+			pn(23912),	-- Armorsmithing
+			pn(23721),	-- Axes, Picks & Polearms
+			pn(23902),	-- Belts
+			pn(23726),	-- Blades
+			pn(23910),	-- Breastplates
+			pn(23903),	-- Fine Armor
+			pn(23900),	-- Gauntlets
+			pn(23908),	-- Greaves
+			pn(23723),	-- Hafted
+			pn(42828),	-- Hammer Control
+			pn(23906),	-- Helms
+			pn(23911),	-- Large Plate Armor
+			pn(23724),	-- Long Blades
+			pn(23722),	-- Maces & Hammers
+			pn(23905),	-- Pauldrons
+			pn(42826),	-- Poignant Plans
+			pn(23904),	-- Sabatons
+			pn(42827),	-- Safety Smithing
+			pn(23907),	-- Sculpted Armor
+			pn(23909),	-- Shields
+			pn(23725),	-- Short Blades
+			pn(23761),	-- Smelting
+			pn(23765),	-- Specialty Smithing
+			pn(23762),	-- Stonework
+			pn(23764),	-- Toolsmithing
+			pn(23901),	-- Vambraces
+			pn(23727),	-- Weaponsmithing
+		})),
 		n(QUESTS, {
 			q(70358, {	-- Dragon Isles Blacksmithing
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
@@ -1149,6 +1181,45 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 }}
+		},{
+			pn(99580),	-- Alloys
+			pn(99239),	-- Armorsmithing
+			pn(99447),	-- Axes and Polearms
+			pn(99229),	-- Belts
+			pn(99452),	-- Blades
+			pn(99237),	-- Breastplates
+			pn(99265),	-- Discerning Discipline
+			pn(99267),	-- Everburning Forge
+			pn(99230),	-- Fine Armor
+			pn(99582),	-- Fortuitous Forges
+			pn(99581),	-- Frameworks
+			pn(99227),	-- Gauntlets
+			pn(99264),	-- Gracious Forging
+			pn(99236),	-- Greaves
+			pn(99449),	-- Hafted
+			pn(99233),	-- Helms
+			pn(99266),	-- Imaginative Foresight
+			pn(99238),	-- Large Plate Armor
+			pn(99450),	-- Long Blades
+			pn(99448),	-- Maces
+			pn(99589),	-- Means of Production
+			pn(99232),	-- Pauldrons
+			pn(99231),	-- Sabatons
+			pn(99234),	-- Sculpted Armor
+			pn(99235),	-- Shields
+			pn(99451),	-- Short Blades
+			pn(99585),	-- Stonework
+			pn(99583),	-- Tool Enhancement
+			pn(99588),	-- Tools of the Trade
+			pn(99586),	-- Trade Accessories
+			pn(99587),	-- Trade Tools
+			pn(99228),	-- Vambraces
+			pn(99584),	-- Weapon Stones
+			pn(99453),	-- Weaponsmithing
+		})),
 		n(QUESTS, {
 			q(84127, {	-- Blacksmithing Services Requested
 				["sourceQuests"] = { 84274 },	-- Crafting Orders: Blacksmithing
@@ -1286,6 +1357,41 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, 1 }}
+		},{
+			pn(104288),	-- Alloys
+			pn(104576),	-- Armorsmithing
+			pn(104567),	-- Articulating Armor
+			pn(104627),	-- Axes and Polearms
+			pn(104566),	-- Belts
+			pn(104632),	-- Blades
+			pn(104574),	-- Chestplates
+			pn(104258),	-- Craftsmithing
+			pn(104564),	-- Gauntlets
+			pn(104573),	-- Greaves
+			pn(104629),	-- Hafted Weapons
+			pn(104570),	-- Helms
+			pn(104575),	-- Large Plate Armor
+			pn(104630),	-- Long Blades
+			pn(104628),	-- Maces
+			pn(104569),	-- Pauldrons
+			pn(104289),	-- Prolific Worker
+			pn(104290),	-- Resourceful Smith
+			pn(104568),	-- Sabatons
+			pn(104571),	-- Sculpted Armor
+			pn(104291),	-- Second Nature
+			pn(104572),	-- Shields
+			pn(104631),	-- Short Blades
+			pn(104292),	-- The Old Ways
+			pn(104255),	-- Tool Stones
+			pn(104256),	-- Trade Accessories
+			pn(104257),	-- Trade Tools
+			pn(104565),	-- Vambraces
+			pn(104633),	-- Weaponsmithing
+			pn(104626),	-- Weaponstones
+		})),
 		n(QUESTS, {
 			q(93691, {	-- Blacksmithing Services Requested
 				["sourceQuests"] = { 93726 },	-- Crafting Orders: Blacksmithing

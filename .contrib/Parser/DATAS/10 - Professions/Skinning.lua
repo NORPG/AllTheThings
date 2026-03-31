@@ -711,6 +711,21 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				}),
 			})),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = SKINNING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.SKINNING, 1 }}
+		},{
+			pn(34759),	-- Bait Crafter
+			pn(34757),	-- Elemental Infusion
+			pn(34729),	-- Harvesting
+			pn(34688),	-- Leather Mastery
+			pn(34728),	-- Lure Crafter
+			pn(34758),	-- Mastery
+			pn(34727),	-- Meat Carver
+			pn(34687),	-- Scale Mastery
+			pn(34689),	-- Tanning
+			pn(34726),	-- Trophy Collector
+		})),
 		n(QUESTS, {
 			q(70363, {	-- Dragon Isles Skinning
 				["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
@@ -817,6 +832,21 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["requireSkill"] = SKINNING }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = SKINNING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.SKINNING, 1 }}
+		},{
+			pn(96828),	-- Concrete Chitin
+			pn(96769),	-- Fishing Friend
+			pn(96770),	-- Harvesting
+			pn(96798),	-- Impressive Infuser
+			pn(96800),	-- Luring
+			pn(96829),	-- Luxurious Leathers
+			pn(96768),	-- Meat Carver
+			pn(96830),	-- Tanning
+			pn(96799),	-- Trained Tracker
+			pn(96767),	-- Trophy Taker
+		})),
 		n(QUESTS, sharedData({
 			-- ["description"] = "Requires 50 Skill.",
 			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
@@ -968,6 +998,21 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = SKINNING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.SKINNING, 1 }}
+		},{
+			pn(106058),	-- Careful Carving
+			pn(106117),	-- Component Collector
+			pn(106056),	-- Dedicated Diffuser
+			pn(106059),	-- Gainful Gathering
+			pn(106088),	-- Lasting Leather
+			pn(106118),	-- Majestic Materials
+			pn(106087),	-- Superb Scales
+			pn(106119),	-- Talented Tracker
+			pn(106089),	-- Thorough Tanning
+			pn(106057),	-- Trophy Taker
+		})),
 		n(QUESTS, sharedData({
 			-- ["description"] = "Requires 50 Skill.",
 			["provider"] = { "n", 243527 },	-- Tyn <Skinning Trainer>

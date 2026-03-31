@@ -1306,6 +1306,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				}),
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = HERBALISM,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.HERBALISM, 1 }}
+		},{
+			pn(59699),	-- Arboriculture
+			pn(59651),	-- Botany
+			pn(59701),	-- Bountiful Harvests
+			pn(59650),	-- Conversance
+			pn(59649),	-- Cultivation
+			pn(59617),	-- Decayed
+			pn(59697),	-- Floriculture
+			pn(59619),	-- Frigid
+			pn(59698),	-- Fungiculture
+			pn(59700),	-- Horticulture
+			pn(59621),	-- Mastering the Elements
+			pn(59618),	-- Titan-Touched
+			pn(59620),	-- Windswept
+		})),
 		n(QUESTS, {
 			q(70364, {	-- Dragon Isles Herbalism
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
@@ -1409,6 +1427,25 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = HERBALISM,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }}
+		},{
+			pn(96296),	-- Altered
+			pn(96357),	-- Blossom Browser
+			pn(96248),	-- Botany
+			pn(96358),	-- Bountiful Harvests
+			pn(96356),	-- Carnivorous Connoisseur
+			pn(96297),	-- Crystallized
+			pn(96247),	-- Cultivation
+			pn(96355),	-- Fungus Forager
+			pn(96294),	-- Irradiated
+			pn(96246),	-- Mulching
+			pn(96354),	-- Orbinid Observer
+			pn(96298),	-- Overloading the Underground
+			pn(96353),	-- Spear Scavenger
+			pn(96295),	-- Sporefused
+		})),
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 219101 },	-- Akdan <Herbalism Trainer>
@@ -1569,6 +1606,25 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = HERBALISM,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.HERBALISM, 1 }}
+		},{
+			pn(104480),	-- Bloom Bringer
+			pn(104421),	-- Botany
+			pn(104481),	-- Bountiful Harvests
+			pn(104419),	-- Cultivation
+			pn(104706),	-- Lightfused
+			pn(104476),	-- Lily Looter
+			pn(104707),	-- Midnight Overload
+			pn(104420),	-- Mulching
+			pn(104704),	-- Primal
+			pn(104478),	-- Root Rummager
+			pn(104477),	-- Silver Searcher
+			pn(104479),	-- Thorn Thresher
+			pn(104703),	-- Voidbound
+			pn(104705),	-- Wild
+		})),
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 243355 },	-- Botanist Nathera <Herbalism Trainer>
@@ -1593,30 +1649,6 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				r(1223014),	-- Overload Infused Herb
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["provider"] = { "n", 219101 },	-- Akdan <Herbalism Trainer>
-			["coord"] = { 44.8, 69.4, DORNOGAL },
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(224817),	-- Algari Herbalist's Notes
-			},
-		},{
-			q(82965),	-- Light and Shadow
-			q(82958),	-- Little Blessings
-		})),
-		n(QUESTS, {
-			q(91451, {	-- Stalk Market
-				["description"] = "Obtained the first time you harvest Phantom Bloom.",
-				["providers"] = {
-					{ "o", 527489 },	-- Lush Phantom Bloom
-					{ "o", 527488 },	-- Phantom Bloom
-				},
-				["timeline"] = { ADDED_11_2_0 },
-				["groups"] = { i(246582) },	-- Inscrutable Flora (QS!)
-			}),
-		}),]]--
 		n(TREASURES, {
 			o(525974, {	-- A Spade
 				["coord"] = { 64.2, 30.5, MAP.MIDNIGHT.EVERSONG_WOODS },

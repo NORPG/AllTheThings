@@ -362,6 +362,30 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = JEWELCRAFTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }}
+		},{
+			pn(28659),	-- Air
+			pn(81118),	-- Brilliant Baubling
+			pn(28724),	-- Carving
+			pn(28658),	-- Earth
+			pn(28610),	-- Enterprising
+			pn(28608),	-- Extravagancies
+			pn(28660),	-- Faceting
+			pn(28657),	-- Fire
+			pn(28656),	-- Frost
+			pn(28607),	-- Glassware
+			pn(28723),	-- Idols
+			pn(28672),	-- Jeweler's Toolset Mastery
+			pn(28727),	-- Jewelry
+			pn(28726),	-- Necklaces
+			pn(28609),	-- Prospecting
+			pn(28725),	-- Rings
+			pn(81119),	-- Saving Slivers
+			pn(28728),	-- Setting
+			pn(28722),	-- Stone
+		})),
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18941, {	-- Dazzling Dragons
 			-- #if BEFORE 10.2.0
@@ -730,6 +754,40 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = JEWELCRAFTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1 }}
+		},{
+			pn(98244),	-- Amulets
+			pn(101953),	-- Artisan's Accessories
+			pn(98612),	-- Deadly Emerald
+			pn(98608),	-- Deadly Onyx
+			pn(98600),	-- Deadly Sapphire
+			pn(98662),	-- Emerald
+			pn(98613),	-- Emerald
+			pn(98663),	-- Gem Finding
+			pn(98614),	-- Gemcutting
+			pn(98665),	-- Glasswork
+			pn(98245),	-- Jewelrycrafting
+			pn(98664),	-- Masonry
+			pn(98611),	-- Masterful Emerald
+			pn(98603),	-- Masterful Ruby
+			pn(98598),	-- Masterful Sapphire
+			pn(98661),	-- Onyx
+			pn(98609),	-- Onyx
+			pn(98607),	-- Quick Onyx
+			pn(98604),	-- Quick Ruby
+			pn(98599),	-- Quick Sapphire
+			pn(98243),	-- Rings
+			pn(98605),	-- Ruby
+			pn(98660),	-- Ruby
+			pn(98659),	-- Sapphire
+			pn(98601),	-- Sapphire
+			pn(98666),	-- Shaping
+			pn(98610),	-- Versatile Emerald
+			pn(98606),	-- Versatile Onyx
+			pn(98602),	-- Versatile Ruby
+		})),
 		n(QUESTS, {
 			q(84130, {	-- Jewelcrafting Services Requested
 				["sourceQuests"] = { 84279 },	-- Crafting Orders: Jewelcrafting
@@ -863,6 +921,46 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = JEWELCRAFTING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1 }}
+		},{
+			pn(107059),	-- Alluring Accessories
+			pn(106891),	-- Austere Amethyst
+			pn(106974),	-- Boldly Basic
+			pn(107012),	-- Calculated Concentration
+			pn(106981),	-- Copper Consumer
+			pn(107056),	-- Crafting Couture
+			pn(106977),	-- Crushing Connoisseur
+			pn(106890),	-- Deadly Amethyst
+			pn(106895),	-- Deadly Lapis
+			pn(106899),	-- Deadly Peridot
+			pn(106901),	-- Glamorous Gems
+			pn(106887),	-- Glorious Garnet
+			pn(106896),	-- Lustrous Lapis
+			pn(107057),	-- Luxurious Lockets
+			pn(106885),	-- Masterful Garnet
+			pn(106893),	-- Masterful Lapis
+			pn(106898),	-- Masterful Peridot
+			pn(106976),	-- Material Manufacturer
+			pn(106975),	-- Optionally Optimal
+			pn(107013),	-- Outrageous Output
+			pn(106900),	-- Powerful Peridot
+			pn(106983),	-- Proficient Processor
+			pn(106982),	-- Prospecting Pro
+			pn(106889),	-- Quick Amethyst
+			pn(106886),	-- Quick Garnet
+			pn(106894),	-- Quick Lapis
+			pn(107058),	-- Regal Rings
+			pn(106979),	-- Silver Scrapper
+			pn(107014),	-- Skilled Savings
+			pn(106978),	-- Thorium Thresher
+			pn(107015),	-- Thoughtful Throughput
+			pn(106980),	-- Tin-vestigator
+			pn(106888),	-- Versatile Amethyst
+			pn(106884),	-- Versatile Garnet
+			pn(106897),	-- Versatile Peridot
+		})),
 		n(QUESTS, {
 			q(93694, {	-- Jewelcrafting Services Requested
 				["sourceQuests"] = { 93729 },	-- Crafting Orders: Jewelcrafting

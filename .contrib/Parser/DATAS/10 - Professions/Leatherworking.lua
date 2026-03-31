@@ -985,6 +985,42 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = LEATHERWORKING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, 1 }}
+		},{
+			pn(31182),	-- Awl Inspiring Works
+			pn(28537),	-- Belts
+			pn(28428),	-- Belts
+			pn(31144),	-- Bestial Primacy
+			pn(31181),	-- Bonding and Stitching
+			pn(28430),	-- Boots
+			pn(28536),	-- Boots
+			pn(28433),	-- Bracers
+			pn(28544),	-- Chestpieces
+			pn(31180),	-- Curing and Tanning
+			pn(31143),	-- Decaying Grasp
+			pn(31145),	-- Elemental Mastery
+			pn(28540),	-- Embroidered Leather Armor
+			pn(28431),	-- Gauntlets
+			pn(28538),	-- Gloves
+			pn(28435),	-- Greaves
+			pn(28543),	-- Helms
+			pn(28432),	-- Intricate Mail
+			pn(28437),	-- Large Mail
+			pn(28546),	-- Leather Armor Crafting
+			pn(31184),	-- Leatherworking Discipline
+			pn(28539),	-- Legguards
+			pn(28438),	-- Mail Armor Crafting
+			pn(28434),	-- Mail Helms
+			pn(28436),	-- Mail Shirts
+			pn(31146),	-- Primordial Leatherworking
+			pn(28545),	-- Shaped Leather Armor
+			pn(31183),	-- Shear Mastery of Leather
+			pn(28429),	-- Shoulderguards
+			pn(28542),	-- Shoulderpads
+			pn(28541),	-- Wristwraps
+		})),
 		n(QUESTS, {
 			q(70362, {	-- Dragon Isles Leatherworking
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
@@ -1301,6 +1337,43 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = LEATHERWORKING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }}
+		},{
+			pn(97559),	-- Arathi Armorer
+			pn(97707),	-- Armbands
+			pn(97557),	-- Beastly Bulwarks
+			pn(97775),	-- Bindings
+			pn(97782),	-- Breastplates
+			pn(97638),	-- Commanding Concentration
+			pn(97784),	-- Concrete Chitin
+			pn(97777),	-- Cuisses
+			pn(97706),	-- Embroidered Leather Armor
+			pn(97780),	-- Epaulets
+			pn(97556),	-- Epic Ensembles
+			pn(97560),	-- Flawless Fortes
+			pn(97776),	-- Gauntlets
+			pn(97704),	-- Grasps
+			pn(97781),	-- Guises
+			pn(97709),	-- Hoods
+			pn(97637),	-- Industrious Innovations
+			pn(97778),	-- Intricate Chitin
+			pn(97702),	-- Kickers
+			pn(97783),	-- Large Chitin
+			pn(97640),	-- Learned Leatherworker
+			pn(97705),	-- Legwraps
+			pn(97712),	-- Luxurious Leathers
+			pn(97708),	-- Mantles
+			pn(97558),	-- Nerubian Nous
+			pn(97711),	-- Shaped Leather Armor
+			pn(97555),	-- Spotless Stitching
+			pn(97774),	-- Stompers
+			pn(97710),	-- Tunics
+			pn(97779),	-- Vambraces
+			pn(97703),	-- Waistbands
+			pn(97639),	-- Waste Not
+		})),
 		n(QUESTS, {
 			q(84131, {	-- Leatherworking Services Requested
 				["sourceQuests"] = { 84280 },	-- Crafting Orders: Leatherworking
@@ -1434,6 +1507,43 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = LEATHERWORKING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, 1 }}
+		},{
+			pn(107987),	-- Advanced Armor
+			pn(107816),	-- Artisanal Accessories
+			pn(107988),	-- Balanced Bracers
+			pn(107984),	-- Bettering Bands
+			pn(107992),	-- Bolstered Bulwarks
+			pn(107813),	-- Brimming Basics
+			pn(107886),	-- Capable Caps
+			pn(107815),	-- Commanding Commodities
+			pn(107919),	-- Concentrated Crafter
+			pn(107812),	-- Crucial Consumables
+			pn(107985),	-- Cutting Claws
+			pn(107883),	-- Embroidered Ensembles
+			pn(107986),	-- Fantastic Faulds
+			pn(107817),	-- Flawless Fortes
+			pn(107881),	-- Grand Gloves
+			pn(107889),	-- Lasting Leather
+			pn(107921),	-- Learned Leatherworker
+			pn(107918),	-- Mastering Multicraft
+			pn(107885),	-- Mighty Mantles
+			pn(107814),	-- Overwhelming Optionals
+			pn(107989),	-- Powerful Plumes
+			pn(107993),	-- Safeguarding Scales
+			pn(107888),	-- Securely Shaped
+			pn(107880),	-- Sturdy Sashes
+			pn(107983),	-- Talented Talons
+			pn(107879),	-- Tasteful Treads
+			pn(107887),	-- Terrific Tunics
+			pn(107882),	-- Toughened Tassets
+			pn(107991),	-- Valuable Vests
+			pn(107990),	-- Versatile Visages
+			pn(107920),	-- Waning Waste
+			pn(107884),	-- Wonderful Wristguards
+		})),
 		n(QUESTS, {
 			q(93695, {	-- Leatherworking Services Requested
 				["sourceQuests"] = { 93731 },	-- Crafting Orders: Leatherworking

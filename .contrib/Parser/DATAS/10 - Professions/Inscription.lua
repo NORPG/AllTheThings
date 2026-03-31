@@ -5242,6 +5242,39 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = INSCRIPTION,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 }}
+		},{
+			pn(43531),	-- Air
+			pn(43535),	-- Archiving
+			pn(43525),	-- Azurescale Sigil
+			pn(43522),	-- Bronzescale Sigil
+			pn(34888),	-- Codexes
+			pn(43528),	-- Contracts and Missives
+			pn(43534),	-- Darkmoon Mysteries
+			pn(43527),	-- Draconic Treatises
+			pn(43530),	-- Earth
+			pn(43524),	-- Emberscale Sigil
+			pn(34886),	-- Fauna Runes
+			pn(43533),	-- Fire
+			pn(34831),	-- Flawless Inks
+			pn(43532),	-- Frost
+			pn(34833),	-- Infinite Discovery
+			pn(43521),	-- Jetscale Sigil
+			pn(34834),	-- Perfect Practice
+			pn(34891),	-- Profession Tools
+			pn(34835),	-- Rune Mastery
+			pn(34893),	-- Runebinding
+			pn(34889),	-- Runic Scripture
+			pn(43523),	-- Sagescale Sigil
+			pn(43526),	-- Scale Sigils
+			pn(43529),	-- Shared Knowledge
+			pn(34890),	-- Staves
+			pn(34832),	-- Understanding Flora
+			pn(34887),	-- Vantus Runes
+			pn(34892),	-- Woodcarving
+		})),
 		n(QUESTS, {
 			q(70361, {	-- Dragon Isles Inscription
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
@@ -5572,6 +5605,37 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = INSCRIPTION,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 }}
+		},{
+			pn(101557),	-- Alchemist's Mixing Rod
+			pn(101881),	-- Archival Additions
+			pn(101563),	-- Careful Carvings
+			pn(101556),	-- Chef's Rolling Pin
+			pn(101562),	-- Combative Curiosities
+			pn(101874),	-- Contracts
+			pn(101880),	-- Cryptic Collection
+			pn(101876),	-- Darkmoon Sigil: Ascension
+			pn(101879),	-- Darkmoon Sigil: Radiance
+			pn(101878),	-- Darkmoon Sigil: Symbiosis
+			pn(101877),	-- Darkmoon Sigil: Vivacity
+			pn(101593),	-- Detail Oriented
+			pn(101594),	-- Eureka!
+			pn(101626),	-- Improved Ciphers
+			pn(101624),	-- Improved Inks
+			pn(101625),	-- Improved Milling
+			pn(101873),	-- Missives
+			pn(101592),	-- Multitasking
+			pn(101559),	-- Polished Production
+			pn(101595),	-- Pursuit of Knowledge
+			pn(101627),	-- Pursuit of Perfection
+			pn(101875),	-- Runic Research
+			pn(101558),	-- Scribe's Quill
+			pn(101561),	-- Staves
+			pn(101560),	-- Torches
+			pn(101872),	-- Vantus Runes
+		})),
 		n(QUESTS, {
 			q(84129, {	-- Inscription Services Requested
 				["sourceQuests"] = { 84287 },	-- Crafting Orders: Inscription
@@ -5697,6 +5761,46 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = INSCRIPTION,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 }}
+		},{
+			pn(106279),	-- Added Flair
+			pn(106185),	-- Alchemist's Mixing Rod
+			pn(106351),	-- Blood
+			pn(106192),	-- Blueprints
+			pn(106189),	-- Bows
+			pn(106280),	-- Calm Hands
+			pn(106184),	-- Chef's Rolling Pin
+			pn(106358),	-- Darkmoon Curiosity
+			pn(106349),	-- Darkmoon Dominion: Blood
+			pn(106352),	-- Darkmoon Dominion: Hunt
+			pn(106346),	-- Darkmoon Dominion: Rot
+			pn(106355),	-- Darkmoon Dominion: Void
+			pn(106350),	-- Darkmoon Sigil: Blood
+			pn(106353),	-- Darkmoon Sigil: Hunt
+			pn(106347),	-- Darkmoon Sigil: Rot
+			pn(106356),	-- Darkmoon Sigil: Void
+			pn(106277),	-- Dextrous Diligence
+			pn(106191),	-- Field Research
+			pn(106354),	-- Hunt
+			pn(106278),	-- Keen Eye
+			pn(106188),	-- Lamps and Lanterns
+			pn(106187),	-- Market Research
+			pn(109659),	-- Parchment
+			pn(109652),	-- Perfect Ciphers
+			pn(109657),	-- Perfect Contracts
+			pn(109654),	-- Perfect Inks
+			pn(109653),	-- Perfect Milling
+			pn(109658),	-- Perfect Missives
+			pn(109656),	-- Perfect Vantus Runes
+			pn(109660),	-- Perfected Products
+			pn(109655),	-- Processing
+			pn(106348),	-- Rot
+			pn(106186),	-- Scribe's Quill
+			pn(106190),	-- Staves
+			pn(106357),	-- Void
+		})),
 		n(QUESTS, {
 			q(93693, {	-- Inscription Services Requested
 				["sourceQuests"] = { 93728 },	-- Crafting Orders: Inscription

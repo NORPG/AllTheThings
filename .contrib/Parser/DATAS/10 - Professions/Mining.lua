@@ -1184,6 +1184,23 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				}),
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = MINING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.MINING, 1 }}
+		},{
+			pn(57291),	-- Draconium
+			pn(57343),	-- Hardened
+			pn(57261),	-- Industrialization
+			pn(57345),	-- Mastering the Elements
+			pn(57293),	-- Metallurgy
+			pn(57263),	-- Mining Process
+			pn(57344),	-- Molten
+			pn(57341),	-- Primal
+			pn(57292),	-- Serevite
+			pn(57260),	-- Sorting
+			pn(57262),	-- Surveying
+			pn(57342),	-- Titan-Touched
+		})),
 		n(QUESTS, {
 			q(70028, {	-- Artisan's Supply: Salt Deposits
 				["provider"] = { "n", 187261 },	-- Grun Ashbeard
@@ -1273,6 +1290,23 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = MINING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.MINING, 1 }}
+		},{
+			pn(100083),	-- Aqirite
+			pn(100084),	-- Bismuth
+			pn(100161),	-- Crystallized
+			pn(100082),	-- Ironclaw
+			pn(100162),	-- Mastering the Mysterious
+			pn(100111),	-- Mining Fundamentals
+			pn(100159),	-- Outlawed Techniques
+			pn(100085),	-- Plethora of Ore
+			pn(100110),	-- Rich Deposits
+			pn(100109),	-- Seams
+			pn(100158),	-- Webbed
+			pn(100160),	-- Weeping
+		})),
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 219097 },	-- Tarib <Mining Trainer>
@@ -1434,6 +1468,23 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 			}),
 		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["requireSkill"] = MINING,
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.MINING, 1 }}
+		},{
+			pn(105565),	-- Brilliant Silver
+			pn(105525),	-- Lightfused
+			pn(105475),	-- Meticulous Mining
+			pn(105526),	-- Over-LODED
+			pn(105568),	-- Plentiful Ores
+			pn(105523),	-- Primal
+			pn(105567),	-- Refulgent Copper
+			pn(105474),	-- Rich Deposits
+			pn(105473),	-- Seams
+			pn(105566),	-- Umbral Tin
+			pn(105522),	-- Voidbound
+			pn(105524),	-- Wild
+		})),
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 241455 },	-- Belil <Mining Trainer>
@@ -1453,18 +1504,6 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				r(1225392),	-- Overload Infused Deposit
 			}),
 		}),
-		--[[
-		n(QUESTS, {
-			q(91420, {	-- Swap Meet
-				["description"] = "Obtained the first time you harvest Desolate Deposit.",
-				["providers"] = {
-					{ "i", 246504 },	-- Inscrutable Ore (QS!)
-					{ "o", 523491 },	-- Desolate Deposit
-					{ "o", 523512 },	-- Rich Desolate Deposit
-				},
-				["timeline"] = { ADDED_11_2_0 },
-			}),
-		}),--]]
 		n(TREASURES, {
 			o(525908, {	-- Amani Expert's Chisel
 				["coord"] = { 33.3, 65.9, 2536 },	-- Atal'Aman Outdoor
