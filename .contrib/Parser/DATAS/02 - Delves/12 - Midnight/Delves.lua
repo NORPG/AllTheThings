@@ -716,6 +716,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["provider"] = { "o", 612259 },	-- The Gulf of Memory
 					["coords"] = {
 						{ 50.8, 17.8, THE_GULF_OF_MEMORY },
+						{ 51.3, 16.6, THE_GULF_OF_MEMORY },
 						{ 52.9, 51.7, MAP.MIDNIGHT.HARANDAR },
 					},
 				}),
@@ -856,6 +857,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["provider"] = { "o", 612242 },	-- Twilight Crypts
 					["coords"] = {
 						{ 47.2, 39.6, TWILIGHT_CRYPTS },
+						{ 48.2, 38.1, TWILIGHT_CRYPTS },
 						{ 43.7, 67.3, MAP.MIDNIGHT.ZULAMAN },
 					},
 				}),
@@ -899,8 +901,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91185, name(HEADERS.Map, THE_GRUDGE_PIT)),	-- The Grudge Pit
 			q(91187, name(HEADERS.Map, THE_GULF_OF_MEMORY)),	-- The Gulf of Memory
 			q(91190, name(HEADERS.Map, TWILIGHT_CRYPTS)),	-- Twilight Crypts
-		--	-- One time rep bonus from Bountiful Delves
-		--	--q(),	-- factionName
+			q(92444, name(HEADERS.Map, THE_DARKWAY)),	-- The Darkway
+			-- q(???, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
 		})),
 		q(93866, name(HEADERS.Item, 258738)),	-- Die in a delve, trigger mail with A Grave Concern
 

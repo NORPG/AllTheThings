@@ -491,6 +491,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["isWeekly"] = true,
 	},{
 		-- LFR
+		q(93980, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
 		q(95342, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		-- Normal
 		q(93981, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
