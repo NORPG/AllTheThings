@@ -206,6 +206,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(250352),	-- Worn Supply Bag
 				},
 			},
+			q(94957, {	-- War of Light and Shadow
+				-- This requires to not use the first alt campaign skip
+				--["sourceQuests"] = { TODO },	-- TODO
+				--["lockCriteria"] = { 1, "questID", TODO },	-- TODO
+				["provider"] = { "n", 240523 },	-- Scouting Map
+				["coord"] = { 45.5, 70.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
 			-- due to hqt after this quest, I currently treat this as end of all intro part for Midnight
 			n(BONUS_OBJECTIVES, {
 				q(89441, {	-- Clear the Decks
