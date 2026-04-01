@@ -213,3 +213,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 	}),
 })));
 --]]
+
+
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({  }, {
+	inst(1308, {	-- March on Quel'Danas
+		["timeline"] = { ADDED_12_0_1_SEASONSTART },
+		["groups"] = {
+			-- LFR
+			-- Normal
+			q(94565),	-- ??
+			-- Heroic
+			q(94563),	-- Belo'ren miniboss
+			q(94567),	-- trash prior to L'ura (named mob I missed)
+			-- Mythic
+		},
+	}),
+})))

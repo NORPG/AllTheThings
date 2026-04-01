@@ -135,6 +135,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				--header(HEADERS.AchCriteria, 61574.06, {	-- Root of the World
+				-- sourceQuest = 90740, {	-- A Legend to Know
 				--}),
 				--header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
 				--}),
@@ -160,13 +161,47 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(90734, {	-- In the Name of the Goddess
 						["sourceQuestNumRequired"] = 3,
 					}),
-					q(90740, {	-- A Legend to Know
-						["sourceQuestNumRequired"] = 5,	-- guessed
-					}),
-					q(90745, {	-- The Empty Cradle
-						["sourceQuestNumRequired"] = 7,	-- guessed
+					q(90735, {	-- The Stolen Staff
+						["sourceQuestNumRequired"] = 5,
 					}),
 				})),
+				header(HEADERS.Achievement, 42278, {	-- The Empty Cradle
+					q(90738, {	-- To the Blossoming Terrace
+						["qg"] = 243759, -- Aksem
+						["sourceQuest"] =  90735,	-- The Stolen Staff
+						["coord"] = { 53.4, 49.5, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(90736, {	-- That's Not Yours
+						["qg"] = 243762, -- Shul'ka Seila
+						["sourceQuest"] =  90738,	-- To the Blossoming Terrace
+						["coord"] = { 58.8, 47.7, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(90737, {	-- Nested Clues
+						["qg"] = 243762, -- Shul'ka Seila
+						["sourceQuest"] =  90738,	-- To the Blossoming Terrace
+						["coord"] = { 58.8, 47.7, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(90739, {	-- The Root of Things
+						["qg"] = 243762, -- Shul'ka Seila
+						["sourceQuests"] = {
+							90736,	-- That's Not Yours
+							90737,	-- Nested Clues
+						},
+						["coord"] = { 58.8, 47.7, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(90740, {	-- A Legend to Know
+						["sourceQuests"] = { 90739 },	-- The Root of Things
+						["provider"] = { "n", 243759 },	-- Aksem
+						["coord"] = { 53.4, 49.4, MAP.MIDNIGHT.HARANDAR },
+					}),
+						-- TODO
+					q(90741),	-- Once More Into the Rift
+					q(90742),	-- Shrouded by Aln'hara
+					q(90743),	-- Ritual Reinforcement
+					q(90744),	-- The Dreamrift: Malformed Mystery
+					q(90745, {	-- The Empty Cradle
+					}),
+				}),
 			}),
 			n(REWARDS, {
 				i(269703, {	-- Avid Learner's Supply Pack

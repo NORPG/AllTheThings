@@ -413,7 +413,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(SALTHERILS_HAVEN, {
 			n(QUESTS, {
-				q(95113),	-- Weekly completion of ???
+				q(95113, name(HEADERS.Item, 269701, {isWeekly=true})),	-- Surplus Bag of Party Favors
 				q(89290, name(HEADERS.Quest, 91966, {isWeekly=true})),	-- Account-wide 'Saltheril's Soiree' unlock after picking a faction
 			}),
 		}),
