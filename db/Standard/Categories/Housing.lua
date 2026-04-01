@@ -185,7 +185,10 @@ r(1277207,{requireSkill=2984}),
 r(1265104,{requireSkill=2984}),
 r(1265119,{requireSkill=2984}),
 r(1264891,{requireSkill=2984})})}}),
-h(-45,{awp=110207,g={
+h(-45,{awp=110207,coords={
+[2351]={{52.9,59.8}},
+[2352]={{51.9,39.5}},
+[2393]={{49.5,65.8}}},isWeekly=1,qgs={260942,260943,260957,260958},g={
 q(93057,{description="Triggers on login. Requires a re-log if purchasing Midnight via in-game shop.",isBreadcrumb=1,maps={2351,2352},nextQuests={91863}}),
 q(91863,{maps={2351,2352},sourceQuests={93057}}),
 q(94455,{maps={2351,2352},sourceQuests={91863}}),

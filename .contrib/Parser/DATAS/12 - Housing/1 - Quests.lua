@@ -134,7 +134,7 @@ root(ROOTS.Housing, {
 			},
 		}),
 	})),
-	n(QUESTS, sharedData({
+	n(QUESTS, sharedDataSelf({
 		["qgs"] = {
 			260942,	-- Vaeli @ Founder's Point
 			260943,	-- Vaeli @ Razorwind Shores
