@@ -172,6 +172,7 @@ root(ROOTS.Housing, {
 		q(95413),	-- Community Engagement
 		q(95416),	-- Going Postal
 		q(95440),	-- Housewarming
+		q(95438),	-- Lost Animals
 	})),
 	n(MAIL_DELIVERY_RACES, sharedData({	-- Founder's Point Mail Delivery
 		["qg"] = 260942,	-- Vaeli

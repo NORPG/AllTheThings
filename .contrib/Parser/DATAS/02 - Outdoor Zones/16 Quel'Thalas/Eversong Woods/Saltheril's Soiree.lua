@@ -201,7 +201,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(249688),	-- Felo'melorn Replica (QI!)
 				}),
 				q(92007, {	-- Begged, Borrowed or Stolen
-					i(249544),	-- Chest of Stolen Valuables (QI!)
+					o(568519, {	-- Chest of Stolen Valuables
+						["coord"] = { 57.4, 35.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = { i(249544) },	-- Chest of Stolen Valuables (QI!)
+					}),
 				}),
 				q(92000),	-- Bring the Ruckus
 				q(92002, {	-- Dangerous Showpieces

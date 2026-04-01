@@ -992,6 +992,7 @@ ihqt(248126, 91784);				-- Delver's Starter Kit
 ihqt(262645, 93794);				-- Beyond the Event Horizon: Alchemy
 ihqt(262644, 93795);				-- Beyond the Event Horizon: Blacksmithing
 ihqt(262646, 93796);				-- Beyond the Event Horizon: Engineering
+iq(262964, 93868);					-- Death's Hope
 iq(253802, 92710);					-- Deed of Patronage
 iq(262965, 93867);					-- Delver's Delight
 ihqt(250445, 92186);				-- Echo of Abundance: Enchanting

@@ -978,11 +978,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							91605,	-- Voidscar Arena: The Wrong Side
 							91603,	-- Voidscar Arena: Two Against One
 						},
-						["aqd"] = {
-							["qg"] = 256885,	-- Vidious
-						},
-						["hqd"] = {
-							["qg"] = 256901,	-- Ziadan
+						["qgs"] = {
+							256885,	-- Vidious
+							256901,	-- Ziadan
 						},
 						["coord"] = { 53.7, 11.3, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					}),

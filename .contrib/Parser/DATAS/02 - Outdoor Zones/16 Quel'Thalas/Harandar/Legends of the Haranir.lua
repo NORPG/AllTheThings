@@ -175,6 +175,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 243762, -- Shul'ka Seila
 						["sourceQuest"] =  90738,	-- To the Blossoming Terrace
 						["coord"] = { 58.8, 47.7, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							o(536214, {	-- Blossom-Bound Nest
+								["coords"] = {
+									{ 59.3, 45.6, MAP.MIDNIGHT.HARANDAR },
+									{ 59.3, 47.4, MAP.MIDNIGHT.HARANDAR },
+									{ 59.4, 44.6, MAP.MIDNIGHT.HARANDAR },
+									{ 59.6, 44.7, MAP.MIDNIGHT.HARANDAR },
+									{ 60.3, 43.8, MAP.MIDNIGHT.HARANDAR },
+									{ 60.7, 43.5, MAP.MIDNIGHT.HARANDAR },
+								},
+								["groups"] = { i(246221) },	-- Stolen Belongings (QI!)
+							}),
+						}
 					}),
 					q(90737, {	-- Nested Clues
 						["qg"] = 243762, -- Shul'ka Seila

@@ -549,6 +549,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 9.7, 50.3, PARHELION_PLAZA },
 					["questID"] = 94019,
 				}),
+				--o(TODO, {	-- Sturdy Chest
+				--	["coord"] = { 23.4, 59.3, PARHELION_PLAZA },
+				--	["questID"] = 94015,
+				--	["groups"] = { i(262964) },	-- Death's Hope (CI!)
+				--}),
+				o(618287, {	-- Sturdy Chest
+					["coord"] = { 36.5, 86.1, PARHELION_PLAZA },
+					["questID"] = 94033,
+				}),
 			}),
 			n(REWARDS, {
 				filter(MISC, {

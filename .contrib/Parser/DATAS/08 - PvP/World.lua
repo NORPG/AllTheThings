@@ -384,16 +384,16 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					ach(61449),	-- Customary Rise			-- 25 Wins
 				}),
 				n(TREASURES, {
-					-- o(433370, {	-- Spectral Battle Chest
+					o(527903, {	-- Spectral Battle Chest
 						ach(61265),	-- Spectral Capture		-- 1 Chest
 						ach(61266),	-- Spectral Stocker		-- 10 Chest
-					-- }),
+					}),
 				}),
 			}),
 			n(TREASURES, {
-				-- o(433370,{	-- War Supply Chest
-				-- 	["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
-				-- }),
+				o(433370,{	-- War Supply Chest
+					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
+				}),
 			}),
 			n(REWARDS, {
 				currency(2123, {	-- Bloody Tokens
@@ -420,12 +420,12 @@ root(ROOTS.HiddenQuestTriggers, {
 			}),
 			q(80413, {	-- after looting War Supply chest, first time per day
 				["name"] = "First War Supply Chest of the Day!",
-				["timeline"] = {ADDED_10_2_7},
+				["timeline"] = { ADDED_10_2_7 },
 				["isDaily"] = true,
 			}),
 			q(80414, {	-- after looting War Supply chest, first time per day
 				["name"] = "First War Supply Chest of the Day!",
-				["timeline"] = {ADDED_10_2_7},
+				["timeline"] = { ADDED_10_2_7 },
 				["isDaily"] = true,
 			}),
 		}),

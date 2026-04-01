@@ -1028,7 +1028,6 @@ root(ROOTS.Unsorted, {
 				i(267242),	-- Boon of Speed
 				i(267243),	-- Boon of Vitality
 				-- Delve
-				i(262964),	-- Death's Hope
 				i(262966),	-- Budget Friendly
 				-- DElve
 				i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
@@ -1070,7 +1069,6 @@ root(ROOTS.Unsorted, {
 				i(245348),	-- Void Sample
 				i(246054),	-- Light Altered Eye
 				i(246087),	-- Precious Key
-				i(246221),	-- Stolen Belongings
 				i(246374),	-- Juvenile Blood
 				i(246397),	-- Twilight Cultist Robes
 				i(246443),	-- Amani Hatchet
@@ -1142,7 +1140,6 @@ root(ROOTS.Unsorted, {
 				i(258739),	-- Chillcrawler (PET!)
 				i(262768),	-- Chirpy Mandrake (PET!) [Trading Post]
 				i(260306),	-- Distorted Memory (PET!) [Quest?]
-				i(262762),	-- Grumpy Mandrake (PET!) [Trading Post]
 				i(262881),	-- Lil' Staropod (PET!) [Promotion]
 				i(262763),	-- Plump Mandrake (PET!) [Trading Post]
 				i(262769),	-- Screechy Mandrake (PET!) [Trading Post]
@@ -1186,7 +1183,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(260896),	-- Accented Pseudoshell (MOUNT!) [Trading Post]
-				i(260893),	-- Arboreal Pseudoshell (MOUNT!) [Trading Post]
 				i(262707),	-- Blooded Snapvine (MOUNT!) [Trading Post]
 				i(260894),	-- Cabbage Pseudoshell (MOUNT!) [Trading Post]
 				i(262496),	-- Delver's Arcane Golem (MOUNT!) [Delves?]
@@ -1200,7 +1196,6 @@ root(ROOTS.Unsorted, {
 				i(260895),	-- Lavender Pseudoshell (MOUNT!) [Trading Post]
 				i(257143),	-- Peridot Dragonhawk (MOUNT!) [Questline?]
 				i(262708),	-- Savage Snapvine (MOUNT!) [Trading Post]
-				i(262705),	-- Vicious Snapvine (MOUNT!) [Trading Post]
 			}),
 			n(PVP, {
 				i(255618),	-- Galactic Gladiator's Splitter

@@ -1673,6 +1673,7 @@ MobileDB.GameObject = {
 	[267952] = true,	-- Stolen Crate (q:44850)
 	[268380] = true,	-- Legion Cage (q:46262)
 	[268436] = true,	-- Unearthed Relic (Broken Shore)
+	[268437] = true,	-- Smoldering Infernal Core
 	[268440] = true,	-- Highborne Archaeology Find
 	[268442] = true,	-- Xorothian Calling Stone (q:46243)
 	[268450] = true,	-- Highmountain Tauren Archaeology Find
