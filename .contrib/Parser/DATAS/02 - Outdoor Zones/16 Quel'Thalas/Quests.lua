@@ -807,9 +807,32 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 			}),
-			--header(HEADERS.AchCriteria, 42117.04, {	-- The Darkwell
-			--}),
-			--header(HEADERS.AchCriteria, 42117.05, {	-- Dawn of a New Well
+			header(HEADERS.AchCriteria, 42117.04, {	-- The Battle of the Bridge
+				q(88769, {	-- The Battle of the Bridge
+					["sourceQuest"] = 88942,	-- The Elves are Going to War
+					["qg"] = 240267,	-- Arator
+					["coord"] = { 45.9, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(258122),	-- Emerald Hatchling (PET!)
+						i(260233),	-- Emerald Hawkstrider (MOUNT!)
+					},
+				}),
+			}),
+			header(HEADERS.AchCriteria, 42117.05, {	-- The Darkwell
+				q(90748, {	-- Quel'Danas
+					["sourceQuest"] = 88769,	-- The Battle of the Bridge
+					["qg"] = 235787,	-- Lor'themar Theron
+					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+				}),
+				q(88710, {	-- March on Quel'Danas
+					["sourceQuest"] = 90748,	-- Quel'Danas
+					["qg"] = 245061,	-- Arator
+					["coord"] = { 52.6, 90.2, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					["groups"] = { i(257736) },	-- Lightcalled Hearthstone (TOY!)
+				}),
+			}),
+			--header(HEADERS.AchCriteria, 42117.06, {	-- Dawn of a New Well
 			--}),
 		}),
 	}),

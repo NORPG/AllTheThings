@@ -2689,6 +2689,7 @@ MobileDB.GameObject = {
 	[523829] = true,	-- Cozy Heat Lamp (q:88669, 88981)
 	[524223] = true,	-- K'arroc Egg (q:88671)
 	[524348] = true,	-- Snake Egg (q:88672)
+	[524562] = true,	-- Ethereal Turret (q:88769)
 	[525100] = true,	-- Fragrant Dreaming Glory q(88669, 88981)
 	[525110] = true,	-- Stove
 	[525189] = true,	-- Portal to the Oasis

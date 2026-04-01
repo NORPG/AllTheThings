@@ -12,6 +12,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["lore"] = "Silvermoon City is the crown jewel of the blood elves and their capital city. It is nestled in the northern reaches of the Eversong Woods (at the northernmost tip of the Eastern Kingdoms) in their ancestral homeland of Quel'Thalas",
 			["isRaid"] = true,
 			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["maps"] = {
+				2443,	-- Silvermoon City, The Bazaar (The Battle of the Bridge scenario)
+			},
 		}),
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			["icon"] = 7301737,

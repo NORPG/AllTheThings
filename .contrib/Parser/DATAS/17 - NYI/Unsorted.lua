@@ -1186,7 +1186,6 @@ root(ROOTS.Unsorted, {
 				i(262707),	-- Blooded Snapvine (MOUNT!) [Trading Post]
 				i(260894),	-- Cabbage Pseudoshell (MOUNT!) [Trading Post]
 				i(262496),	-- Delver's Arcane Golem (MOUNT!) [Delves?]
-				i(260233),	-- Emerald Hawkstrider (MOUNT!) [Questline?]
 				i(264273),	-- Fel Spirehawk (MOUNT!) [Promotions?]
 				i(262706),	-- Ferocious Snapvine (MOUNT!) [Trading Post]
 				i(263449),	-- Fluffy Comfy Flying Quilt (MOUNT!) [Trading Post]

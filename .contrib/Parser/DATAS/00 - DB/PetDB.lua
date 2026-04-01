@@ -4539,7 +4539,6 @@ i(0, 4905);			-- [DNT] Baby Amazard (Red)
 i(0, 4945);			-- Aud'rei III
 i(0, 4887);			-- Dundun
 i(242251, 0);		-- [NYI] Magical Broom Pet
-i(258122, 0);		-- Emerald Hatchling
 i(250141, 0);		-- Purple Swamp Leech
 
 ------------------
@@ -4559,6 +4558,7 @@ i(250143, 4883);	-- Dragonhawk Mosswing
 i(259224, 4928);	-- Dragonhawk Munchkin
 i(250139, 4878);	-- Ebon Snapling
 i(264654, 4977);	-- Emberwing Hatchling
+i(258122, 4909);	-- Emerald Hatchling
 i(260922, 4950);	-- Fidoficus
 i(252194, 4897);	-- Fishmonger May
 i(264909, 4982);	-- Flicker

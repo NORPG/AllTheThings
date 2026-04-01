@@ -62975,7 +62975,6 @@ r(1230488,{itemID=256715,requireSkill=755,skillID=2914}),
 de(15467,{itemID=264187,spellID=1271354}),
 crit(109381,{achID=61367})}}),
 e(2740,{npcID=214650,g={
-toy(257736,{b=1}),
 de(15756,{itemID=264492,spellID=1272055}),
 de(19198,{itemID=267646,rwp=120100,spellID=1280917}),
 crit(109382,{achID=61367})}})}}),

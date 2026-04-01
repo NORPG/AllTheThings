@@ -102,7 +102,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(264187),	-- Blessed Phoenix Egg (DECOR!)
 				}),
 				BossOnly(LURA, {
-					i(257736),	-- Lightcalled Hearthstone (TOY!)
 					--i(258519),	-- Plans: Magister's Valediction (RECIPE!)
 					i(264492),	-- Chaotic Void Maw (DECOR!)
 					i(267646, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Argent Trophy (DECOR!)

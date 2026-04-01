@@ -1663,9 +1663,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(242251, {	-- [NYI] Magical Broom Pet (PET!)
 				--["displayID"] = ,
 			}),
-			i(258122, {	-- Emerald Hatchling (PET!)
-				["displayID"] = 128293,
-			}),
 			i(250141, {	-- Purple Swamp Leech (PET!)
 				["displayID"] = 128277,
 			}),
