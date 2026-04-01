@@ -19283,9 +19283,6 @@ i(12384,{b=1,q=1,u=2})}}),
 q(4804,{coords={
 [1452]={{61.8,38.2}}},cost={{"i",4804,3}},lvl=55,qgs={10307},repeatable=1,rwp=40003,sourceQuests={975},u=2,g={
 i(12457,{b=1,q=1,u=2})}}),
-q(4809,{coords={
-[1452]={{61.6,38.6}}},lvl=50,qgs={10468},rwp=40003,sourceQuests={4808},u=2,g={
-qo(1,{crs={7447,7448,7449},providers={{"i",12444}},u=2})}}),
 q(28830,{awp=40003,coords={
 [1452]={{61.8,74.6}}},qgs={50263},sourceQuests={28829},g={
 qo(1,{providers={{"n",50258}}})}}),
@@ -19484,7 +19481,7 @@ qo(1,{coords={
 [1452]={{49.8,9.8}}},cost={{"i",12733,1}},providers={{"n",10737},{"o",177684}},u=2}),
 s(127694,15783,{b=1,f=20,q=2,u=2}),
 s(127693,15782,{b=1,f=25,q=2,u=2})}}),
-q(5601,{coords={
+q(5601,{altQuests={5142},coords={
 [1452]={{61.2,39}}},lvl=50,qgs={11629},rwp=40003,u=2}),
 q(5306,{coords={
 [1452]={{61.2,37}}},learnedAt=250,lvl=50,maps={250},qgs={11192},requireSkill=164,rwp=40003,u=2,g={
@@ -26659,7 +26656,7 @@ q(28432,{awp=40003,coords={
 [1428]={{44.5,44.4}}},providers={{"i",63357}},qgs={48568},r=1,sourceQuests={28428,28429,28430,28431}}),
 q(3822,{coords={
 [1428]={{79.8,45.4}}},lvl=48,qgs={9136},r=1,rwp=40003,sourceQuests={3821},u=2,g={
-qo(1,{crs={3822},providers={{"i",11058}},u=2}),
+qo(1,{crs={8977},providers={{"i",11058}},u=2}),
 i(11869,{b=1,f=52,q=2,u=2})}}),
 q(28312,{awp=40003,coords={
 [1428]={{73.6,67.1}}},qgs={48307},r=2,sourceQuests={28310},g={
@@ -29164,9 +29161,9 @@ crit(15628,{achID=5442,id=1})}}),
 q(27459,{awp=40003,coords={
 [1423]={{75.6,52.5}}},qgs={11036},sourceQuests={27463}}),
 q(6144,{coords={
-[1423]={{23,68.2}}},description="This version of the quest is only available to those that have not yet completed the Wrath Gate.",lvl=56,maps={1458},qgs={11878},r=1,rwp=40003,u=2}),
+[1423]={{23,68.2}}},description="This version of the quest is only available to those that have not yet completed the Wrath Gate.",lvl=56,maps={1458},qgs={11878},r=1,rwp=40003,sourceQuests={6135,6136},u=2}),
 q(14349,{awp=30300,coords={
-[1423]={{23,68.2}}},lvl=56,maps={1458},qgs={11878},r=1,rwp=40003,u=2}),
+[1423]={{23,68.2}}},lvl=56,maps={1458},qgs={11878},r=1,rwp=40003,sourceQuests={6135,6136},u=2}),
 q(5961,{coords={
 [1458]={{57.8,91.8}}},lvl=54,qgs={10181},r=1,rwp=40003,u=2}),
 q(27619,{awp=40003,coords={
@@ -40426,7 +40423,7 @@ q(27000,{awp=40003,coords={
 qo(1,{providers={{"n",44284},{"n",44836}}})}}),
 q(27087,{awp=40003,coords={
 [1422]={{46.9,63.8}}},qgs={44452},r=1,sourceQuests={27084,27085,27086}}),
-q(5142,{coords={
+q(5142,{altQuests={5601},coords={
 [1422]={{49.2,78.4}}},lvl=50,maps={1423},qgs={10927},rwp=40003,u=2}),
 q(5059,{coords={
 [1422]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,rwp=40003,u=2,g={
@@ -40830,7 +40827,7 @@ r(17580,{b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171}),
 r(17562,{b=1,itemID=13485,learnedAt=275,q=2,requireSkill=171})}})}),
 h(-63,{
 i(12738,{b=1,coords={
-[1422]={{48,49.8}}},crs={10816},q=1,rwp=40003,u=2}),
+[1422]={{48,49.8}}},crs={10816},q=1,rwp=40003,sourceQuests={5058},u=2}),
 i(12722,{coords={
 [1422]={{38.6,56.2}}},crs={10801},q=1,rwp=40003,u=2}),
 r(19095,{awp=100107,coords={

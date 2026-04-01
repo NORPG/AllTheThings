@@ -9555,9 +9555,6 @@ i(12384,{b=1,q=1})}}),
 q(4804,{coords={
 [1452]={{61.8,38.2}}},cost={{"i",4804,3}},lvl=55,qgs={10307},repeatable=1,rwp=40003,sourceQuests={975},g={
 i(12457,{b=1,q=1})}}),
-q(4809,{coords={
-[1452]={{61.6,38.6}}},lvl=50,qgs={10468},rwp=40003,sourceQuests={4808},g={
-qo(1,{crs={7447,7448,7449},providers={{"i",12444}}})}}),
 q(5307,{coords={
 [1452]={{61.2,37.2}}},learnedAt=250,lvl=50,maps={317},qgs={11193},requireSkill=164,rwp=40003,g={
 qo(1,{crs={11121},providers={{"i",13350}}}),
@@ -9634,7 +9631,7 @@ qo(1,{coords={
 i(12733,{crs={7430,7431,7432,7433,7434},q=1}),
 s(127694,15783,{b=1,f=20,q=2}),
 s(127693,15782,{b=1,f=25,q=2})}}),
-q(5601,{coords={
+q(5601,{altQuests={5142},coords={
 [1452]={{61.2,39}}},lvl=50,qgs={11629},rwp=40003}),
 q(5306,{coords={
 [1452]={{61.2,37}}},description="Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",learnedAt=250,lvl=50,maps={250},qgs={11192},requireSkill=164,rwp=40003,g={
@@ -13253,7 +13250,7 @@ q(7629,{c={9},coords={
 [1428]={{12.4,31.6}}},lvl=60,maps={476},providers={{"i",18688}},qgs={14437},rwp=40003,sourceQuests={7625,7630}}),
 q(3822,{coords={
 [1428]={{79.8,45.4}}},lvl=48,qgs={9136},r=1,rwp=40003,sourceQuests={3821},g={
-qo(1,{crs={3822},providers={{"i",11058}}}),
+qo(1,{crs={8977},providers={{"i",11058}}}),
 i(11869,{b=1,f=52,q=2})}}),
 q(4481,{coords={
 [1428]={{65,23.6}}},cost={{"i",11952,4},{"i",11733,1},{"i",8411,1},{"i",11754,1},{"g",300000}},lvl=50,qgs={9836},repeatable=1,rwp=40003,g={
@@ -14425,7 +14422,7 @@ qo(1,{coords={
 [1423]={{39,91.2}}},providers={{"i",15209},{"n",10936}}}),
 i(15723,{b=1,f=55,lvl=50,q=2})}}),
 q(6144,{coords={
-[1423]={{26.6,74.8}}},lvl=56,maps={1458},qgs={11878},r=1,rwp=40003}),
+[1423]={{26.6,74.8}}},lvl=56,maps={1458},qgs={11878},r=1,rwp=40003,sourceQuests={6135,6136}}),
 q(5961,{coords={
 [1458]={{57.8,91.8}}},lvl=54,qgs={10181},r=1,rwp=40003}),
 q(6136,{coords={
@@ -19914,7 +19911,7 @@ i(12844,{b=1,factionID=529,q=2,repeatable=1})}}),
 q(5407,{coords={
 [1420]={{83.2,68.4}}},cost={{"i",12841,10}},lvl=50,qgs={10839},r=1,repeatable=1,rwp=40003,g={
 i(12844,{b=1,factionID=529,q=2,repeatable=1})}}),
-q(5142,{coords={
+q(5142,{altQuests={5601},coords={
 [1422]={{49.2,78.4}}},lvl=50,maps={1423},qgs={10927},rwp=40003}),
 q(5059,{coords={
 [1422]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,rwp=40003,g={
@@ -20122,7 +20119,7 @@ r(17562,{b=1,itemID=13485,learnedAt=275,q=2,requireSkill=171})}})}),
 h(-63,{
 i(22526,{q=1,rwp=40003,u=16}),
 i(12738,{b=1,coords={
-[1422]={{48,49.8}}},crs={10816},q=1,rwp=40003}),
+[1422]={{48,49.8}}},crs={10816},q=1,rwp=40003,sourceQuests={5058}}),
 i(13354,{b=1,cost={{"i",13370,1}},description="These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",q=1,rwp=40003}),
 i(12722,{coords={
 [1422]={{38.6,56.2}}},crs={10801},q=1,rwp=40003}),

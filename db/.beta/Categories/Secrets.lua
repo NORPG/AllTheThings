@@ -517,6 +517,26 @@ n(184166,{coords={
 [2151]={{29.8,47.5},{35.3,40.7},{37.4,23.2},{41.3,38},{54.4,46.4},{54.6,55.4},{62.7,61.4},{63.9,50.7},{73.9,37.6}}},description="Hiding on the Forbidden Reach in one of several locations, To'No and Ko will be stealthed until you're right on top of them. May not be up in any locations, you might have to loop around until a spawn. Disappears a few minutes after being found. \nThe second dialogue interaction awards the Oddsight Focus while the first gives you some random loot.",g={
 i(260533,{awp=120001,b=1,cost={{"i",260532,1}},spellID=1266536})}}),
 hqt(93688,{awp=120001,description="Obtaining the focus fully lights up the 10 O'Clock Basin and removes the void from 11 and 12 O'Clock.",providers={{"i",260533}}}),
+n(255888,{awp=120001,coords={
+[2215]={{33.2,54.6}}},providers={{"i",260533}}}),
+hqt(93764,{awp=120001,description="This step is pretty complicated and requires a 40 man raid, you're also gonna probably need an addon like BeledarOrchestra.\n\nFully lights up the 11 O'Clock Basin.",providers={{"n",255888}},g={
+ach(61516)}}),
+hqt(93765,{awp=120001,coords={
+[630]={{57.8,42.8}},
+[680]={{82.5,67.4}}},description="Head to the southeast of Suramar near the coordinates. Use your Torch of Pyrreth to find a wandering invisible ghost, once found, an extra action button will spawn an Orb of Shadows.\n\nYou must take this orb to Golk the Rumble in the center of Azsuna at the second coordinates and talk to them. The player carrying the orb cannot take damage, jump, or swim, and enemies will spark periodically to attack them, a group of players and water walking of some kind will make this easier. Don't be over water for too long though or your buff will drop. The Starry-Eyed Goggles will stop the Darkness debuff.\n\nFully lights up the 12 O'Clock Basin.",g={
+i(262432,{b=1,g={
+en(246973,{questID=91636,spellID=1244440,tmogSetID=5152,g={
+s(293223,246966,{f=2}),
+s(293224,246967,{f=2}),
+s(293225,246968,{f=2}),
+s(293226,246969,{f=2}),
+s(293227,246970,{f=2}),
+s(293228,246971,{f=2}),
+s(293229,246972,{f=2})}})}}),
+i(262559,{b=1,spellID=1268983})}}),
+o(616681,{awp=120001,coords={
+[46]={{68.5,20.9}}},cost={{"i",262559,1}},description="In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having posession of the Spare Key.",providers={{"i",228966},{"i",260533}},g={
+i(262561)}}),
 o(475116,{coords={
 [46]={{47,78.1},{56.3,73.3},{70.1,90.3},{70.3,81},{70.5,61.7},{70.9,53.9}}},description="These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in the Nature statue room."}),
 i(228953)}})}}),

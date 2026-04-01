@@ -4426,8 +4426,6 @@ s(5082,13962,{b=1,f=5,u=2})}}),
 q(4766,{altQuests={4764},coords={
 [84]={{74,30}}},qgs={2285},r=2,rwp=40003,u=2}),
 q(5002,{maps={36},qgs={10257},qis={12770},r=2,rwp=40003,sourceQuests={5001},u=2}),
-q(6568,{coords={
-[66]={{25.6,70}}},maps={22},qgs={10182},qis={16785},r=1,rwp=40003,sourceQuests={6567},u=2}),
 q(4866,{coords={
 [36]={{65,23.6}}},crs={10596},qgs={9563},rwp=40003,u=2,g={
 i(15873,{b=1,f=53,spellID=20587,u=2})}}),
@@ -4486,6 +4484,10 @@ q(6582,{coords={
 [70]={{56.8,87.4}}},maps={83},qgs={10321},qis={16869},r=1,rwp=40003,sourceQuests={6570},u=2}),
 q(6583,{coords={
 [70]={{56.8,87.4}}},maps={51},qgs={10321},qis={16870},r=1,rwp=40003,sourceQuests={6570},u=2}),
+q(6568,{coords={
+[66]={{25.6,70}}},maps={22},qgs={10182},qis={16785},r=1,rwp=40003,sourceQuests={6567},u=2}),
+q(4809,{coords={
+[83]={{61.6,38.6}}},crs={7447,7448,7449},qgs={10468},qis={12444},rwp=40003,sourceQuests={4808},u=2}),
 q(4907,{coords={
 [83]={{61.6,38.6}}},isBreadcrumb=1,nextQuests={4734},qgs={10468},rwp=40003,sourceQuests={4810},u=2}),
 q(27440,{awp=40003,crs={9196,9237,9568},lvl=20,qgs={10299},sourceQuests={27469,27470,27471},g={
@@ -6532,7 +6534,7 @@ q(5848,{coords={
 [22]={{65.6,75.4}}},qgs={11936},qis={14679},rwp=40003,sourceQuests={5846},u=2,g={
 o(177287)}}),
 q(6163,{coords={
-[23]={{26.6,74.8}}},crs={10439},qgs={11878},qis={15880},r=1,rwp=40003,u=2,g={
+[23]={{26.6,74.8}}},crs={10439},qgs={11878},qis={15880},r=1,rwp=40003,sourceQuests={6135},u=2,g={
 i(18022,{b=1,f=52,u=2}),
 i(17001,{b=1,f=52,u=2})}}),
 q(5742,{coords={
@@ -21691,7 +21693,7 @@ gach(5134)}})}),
 d(24,{sym={{"sub","tw_instance",66}}})}}),
 inst(184,{awp=40300,coords={
 [71]={{64.7,49.9}},
-[75]={{57.7,30.4}}},description="Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Myrozond is always the last boss.",mapID=401,maps={402,403,404,405,406},savedInstanceID=938,g={
+[75]={{57.7,30.4}}},description="Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Murozond is always the last boss.",mapID=401,maps={402,403,404,405,406},savedInstanceID=938,g={
 h(-45,{
 q(30097,{lvl=35,qgs={57864},g={
 s(37348,72871,{b=1,f=27,lvl=32}),
@@ -52746,7 +52748,7 @@ s(185590,204432,{awp=100002,b=1,f=7,lvl=70})}}),
 q(74892,{awp=100100,coords={
 [2133]={{27.5,44.4}}},crs={199853,199855},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2531},{"pop"}}}),
 e(2562,{awp=100200,coords={
-[2200]={{39.6,54.1}}},isRaid=1,isWeekly=1,npcID=209574,g={
+[2200]={{39.6,54.1}}},isRaid=1,isWeekly=1,npcID=209574,questID=77758,g={
 cq(78528,{awp=100002,b=1,c={11},itemID=210751,lvl=11,spellID=426483}),
 s(193033,210433,{awp=100002,f=2,lvl=58}),
 mm(210480,{awp=100002,b=1,questID=78409}),
@@ -62951,7 +62953,8 @@ q(92636,{crs={248864},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encount
 e(2829,{isRaid=1,isWeekly=1,npcID=249776,g={
 s(297853,250455,{f=29,lvl=90}),
 s(297850,250452,{f=25,lvl=90}),
-s(297847,250449,{f=20,lvl=90})}})}}),
+s(297847,250449,{f=20,lvl=90})}}),
+q(92034,{crs={249776},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2829},{"pop"}}})}}),
 inst(1308,{awp=120001,coords={
 [2424]={{52.6,86}}},isRaid=1,maps={2533,2534},g={
 h(-12,{
@@ -62972,7 +62975,6 @@ r(1230488,{itemID=256715,requireSkill=755,skillID=2914}),
 de(15467,{itemID=264187,spellID=1271354}),
 crit(109381,{achID=61367})}}),
 e(2740,{npcID=214650,g={
-toy(257736,{b=1}),
 de(15756,{itemID=264492,spellID=1272055}),
 de(19198,{itemID=267646,rwp=120100,spellID=1280917}),
 crit(109382,{achID=61367})}})}}),
@@ -63120,7 +63122,10 @@ s(302166,260408,{b=1,f=35,lvl=90,modID=6,spellID=1266257}),
 s(296347,249913,{b=1,f=5,lvl=90,modID=6}),
 s(296351,249914,{b=1,f=6,lvl=90,modID=6}),
 s(296343,249912,{b=1,f=4,lvl=90,modID=6}),
-i(249810,{b=1,f=53,lvl=90,modID=6,spellID=1259518})}})})}}),
+i(249810,{b=1,f=53,lvl=90,modID=6,spellID=1259518})}})}),
+q(94565),
+q(94563),
+q(94567)}}),
 inst(1314,{awp=120001,coords={
 [2413]={{61,64.2}}},isRaid=1,maps={2531,2532},g={
 h(-12,{

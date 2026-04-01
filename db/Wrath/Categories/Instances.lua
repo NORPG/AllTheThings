@@ -3503,8 +3503,6 @@ s(126116,13962,{b=1,f=5,q=3})}}),
 q(4766,{altQuests={4764},coords={
 [1453]={{74,30}}},lvl=57,qgs={2285},r=2,rwp=40003}),
 q(5002,{lvl=55,maps={1428},providers={{"i",12770}},qgs={10257},r=2,rwp=40003,sourceQuests={5001}}),
-q(6568,{coords={
-[1443]={{25.6,70}}},lvl=55,maps={1422},providers={{"i",16785}},qgs={10182},r=1,rwp=40003,sourceQuests={6567}}),
 q(4866,{coords={
 [1428]={{65,23.6}}},description="You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",lvl=55,qgs={9563},rwp=40003,g={
 qo(1,{providers={{"n",10596}}}),
@@ -3577,6 +3575,11 @@ q(6583,{coords={
 [1445]={{56.8,87.4}}},lvl=55,maps={1435},qgs={10321},r=1,rwp=40003,sourceQuests={6570},g={
 qo(1,{coords={
 [1435]={{80.2,57.2}}},providers={{"i",16870}},qgs={12900}})}}),
+q(6568,{coords={
+[1443]={{25.6,70}}},lvl=55,maps={1422},providers={{"i",16785}},qgs={10182},r=1,rwp=40003,sourceQuests={6567}}),
+q(4809,{coords={
+[1452]={{61.6,38.6}}},lvl=50,qgs={10468},rwp=40003,sourceQuests={4808},g={
+qo(1,{crs={7447,7448,7449},providers={{"i",12444}}})}}),
 q(4907,{coords={
 [1452]={{61.6,38.6}}},isBreadcrumb=1,lvl=57,nextQuests={4734},qgs={10468},rwp=40003,sourceQuests={4810}}),
 q(4867,{lvl=55,providers={{"i",12730}},qgs={10799},rwp=40003,g={
@@ -5256,7 +5259,7 @@ q(5848,{coords={
 [1422]={{65.6,75.4}}},lvl=52,qgs={11936},rwp=40003,sourceQuests={5846},g={
 qo(1,{providers={{"i",14679},{"o",177287}}})}}),
 q(6163,{coords={
-[1423]={{26.6,74.8}}},lvl=55,qgs={11878},r=1,rwp=40003,g={
+[1423]={{26.6,74.8}}},lvl=55,qgs={11878},r=1,rwp=40003,sourceQuests={6135},g={
 qo(1,{crs={10439},providers={{"i",15880}}}),
 i(18022,{b=1,f=52,q=3}),
 i(17001,{b=1,f=52,q=2})}}),
