@@ -1727,6 +1727,7 @@ localize(L.HEADER_NAMES, {
 	[-743] = COVENANT_SANCTUM_TAB_RENOWN.." 9",
 	[-745] = "Mail Delivery Races",
 	[-746] = "Profession Nodes",
+	[-747] = "Coca-Cola",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1843,6 +1844,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
 	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
+	[-747] = "Go to https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, play a short game and get 1 reward per week. Sweepstakes starts on April 1, 2026 and ends at 11:59 pm ET on July 30, 2026 or once all rewards have been claimed, whichever occurs first. 2392 of each reward available per week. Resets at 12:00 am ET weekly. No purchase necessary.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2445,6 +2447,7 @@ localize(L.HEADER_ICONS, {
 	[-743] = 5015301,
 	[-745] = 413580,
 	[-746] = 4622272,
+	[-747] = 132529,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -25574,6 +25577,7 @@ L.QUEST_NAMES = {
 	[85680] = "Stay awhile and listen: Adelgonn ",
 	[85681] = "Stay awhile and listen: Moira Thaurissan",
 	[85682] = "Stay awhile and listen: Magni Bronzebeard",
+	[85719] = "Daily Account-Wide Delve Companion Bonus XP",
 	[85774] = "Stay awhile and listen: Xal'atath",
 	[85799] = "Use the Turbulent Runekey in The Forgotten Vault (Storm Phase)",
 	[85800] = "Use the Cyclonic Runekey in The Forgotten Vault (Storm Phase)",

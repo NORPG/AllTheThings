@@ -182,7 +182,13 @@ de(16965,{awp=120001,description="Obtained through watching Twitch Streamers wit
 de(15555,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Horde Board' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264283,rwp=120001,spellID=1271564}),
 de(15554,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Azeroth Inspiration' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264282,rwp=120001,spellID=1271563}),
 de(15553,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264281,rwp=120001,spellID=1271562}),
-s(302459,262660,{awp=120001,description="Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",f=3,rwp=120001,u=2})}}),
+s(302459,262660,{awp=120001,description="Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",f=3,rwp=120001,u=2}),
+h(-747,{awp=120001,rwp=120007,g={
+mnt(1268809,{itemID=262438,lvl=10}),
+de(15550,{itemID=264278,spellID=1271559}),
+de(15229,{itemID=263383,spellID=1270445}),
+de(15551,{itemID=264279,spellID=1271560}),
+de(15552,{itemID=264280,spellID=1271561})}})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),

@@ -113,6 +113,7 @@ HeaderAssignments = {
 	["Class Trial"] = -17,
 	["Classes"] = -18,
 	["Climbing"] = -461,
+	["Coca-Cola Giveaway"] = -747,
 	["Collector's Edition"] = -521,
 	["Combatant Gear"] = -294,
 	["Command Table"] = -154,
@@ -726,4 +727,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -747;
+NextHeaderID = -748;

@@ -21693,7 +21693,7 @@ gach(5134)}})}),
 d(24,{sym={{"sub","tw_instance",66}}})}}),
 inst(184,{awp=40300,coords={
 [71]={{64.7,49.9}},
-[75]={{57.7,30.4}}},description="Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Myrozond is always the last boss.",mapID=401,maps={402,403,404,405,406},savedInstanceID=938,g={
+[75]={{57.7,30.4}}},description="Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Murozond is always the last boss.",mapID=401,maps={402,403,404,405,406},savedInstanceID=938,g={
 h(-45,{
 q(30097,{lvl=35,qgs={57864},g={
 s(37348,72871,{b=1,f=27,lvl=32}),
@@ -62953,7 +62953,8 @@ q(92636,{crs={248864},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encount
 e(2829,{isRaid=1,isWeekly=1,npcID=249776,g={
 s(297853,250455,{f=29,lvl=90}),
 s(297850,250452,{f=25,lvl=90}),
-s(297847,250449,{f=20,lvl=90})}})}}),
+s(297847,250449,{f=20,lvl=90})}}),
+q(92034,{crs={249776},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2829},{"pop"}}})}}),
 inst(1308,{awp=120001,coords={
 [2424]={{52.6,86}}},isRaid=1,maps={2533,2534},g={
 h(-12,{
@@ -63122,7 +63123,10 @@ s(302166,260408,{b=1,f=35,lvl=90,modID=6,spellID=1266257}),
 s(296347,249913,{b=1,f=5,lvl=90,modID=6}),
 s(296351,249914,{b=1,f=6,lvl=90,modID=6}),
 s(296343,249912,{b=1,f=4,lvl=90,modID=6}),
-i(249810,{b=1,f=53,lvl=90,modID=6,spellID=1259518})}})})}}),
+i(249810,{b=1,f=53,lvl=90,modID=6,spellID=1259518})}})}),
+q(94565),
+q(94563),
+q(94567)}}),
 inst(1314,{awp=120001,coords={
 [2413]={{61,64.2}}},isRaid=1,maps={2531,2532},g={
 h(-12,{

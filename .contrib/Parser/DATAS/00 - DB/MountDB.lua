@@ -2299,7 +2299,6 @@ i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(262496, 1268919);	-- Delver's Arcane Golem
 i(260233, 1265785);	-- Emerald Hawkstrider
-i(262438, 1268809);	-- Fantastical Goblin Waveshredder
 i(264273, 1271549);	-- Fel Spirehawk
 i(262706, 1269277);	-- Ferocious Snapvine
 i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
@@ -2346,6 +2345,7 @@ i(257176, 1261332);	-- Duskbrute Harrower
 i(256424, 1260356);	-- Echo of Aln'sharan
 i(222988, 447173);	-- Elder Glowmite
 i(262502, 1268926);	-- Elven Arcane Guardian
+i(262438, 1268809);	-- Fantastical Goblin Waveshredder
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257142, 1261291);	-- Fiery Dragonhawk
 i(257448, 1261585);	-- Frenzied Shredclaw

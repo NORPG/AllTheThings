@@ -36,6 +36,17 @@ RAZER = createHeader({
 	},
 });
 
+COCA_COLA = createHeader({
+	readable = "Coca-Cola Giveaway",
+	icon = 132529,
+	text = {
+		en = "Coca-Cola",
+	},
+	description = {
+		en = "Go to https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, play a short game and get 1 reward per week. Sweepstakes starts on April 1, 2026 and ends at 11:59 pm ET on July 30, 2026 or once all rewards have been claimed, whichever occurs first. 2392 of each reward available per week. Resets at 12:00 am ET weekly. No purchase necessary.",
+	},
+});
+
 root(ROOTS.Promotions, {
 	n(MIDNIGHT_SEASONAL_PROMOTIONS, {
 		["timeline"] = { ADDED_12_0_0 },
@@ -175,6 +186,15 @@ root(ROOTS.Promotions, {
 				["description"] = "Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
 			}),
+			n(COCA_COLA, sharedDataSelf({
+				["timeline"] = { "added 12.0.1.66709", "removed 12.0.7.99999" },
+			}, {
+				i(262438),	-- Fantastical Goblin Waveshredder (MOUNT!)
+				i(264278),	-- Sturdy Portable Ice Chest (DECOR!)
+				i(263383),	-- Corked Bottle of Liquid Mystery (DECOR!)
+				i(264279),	-- Tall Corked Bottle of Liquid Mystery (DECOR!)
+				i(264280),	-- Short Corked Bottle of Liquid Mystery (DECOR!)
+			}));
 
 			-- Season 2
 

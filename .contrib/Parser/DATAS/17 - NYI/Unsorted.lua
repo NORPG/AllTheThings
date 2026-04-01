@@ -1191,7 +1191,6 @@ root(ROOTS.Unsorted, {
 				i(260894),	-- Cabbage Pseudoshell (MOUNT!) [Trading Post]
 				i(262496),	-- Delver's Arcane Golem (MOUNT!) [Delves?]
 				i(260233),	-- Emerald Hawkstrider (MOUNT!) [Questline?]
-				i(262438),	-- Fantastical Goblin Waveshredder (MOUNT!) [Promotions?]
 				i(264273),	-- Fel Spirehawk (MOUNT!) [Promotions?]
 				i(262706),	-- Ferocious Snapvine (MOUNT!) [Trading Post]
 				i(263449),	-- Fluffy Comfy Flying Quilt (MOUNT!) [Trading Post]
@@ -1578,10 +1577,6 @@ root(ROOTS.Unsorted, {
 				i(264500),	-- Devouring Host Ritual Engine (DECOR!)
 				-- Promo?
 				i(255643),	-- Silvermoon Barrel
-				i(263383),	-- Corked Bottle of Liquid Mystery
-				i(264278),	-- Sturdy Portable Ice Chest
-				i(264279),	-- Tall Corked Bottle of Liquid Mystery
-				i(264280),	-- Short Corked Bottle of Liquid Mystery
 				i(264384),	-- Zapmaster Viewer 3000
 				i(253254),	-- Lunar Celebrant's Cradle
 				i(253255),	-- Lunar Celebrant's Wide Pillow Roll
