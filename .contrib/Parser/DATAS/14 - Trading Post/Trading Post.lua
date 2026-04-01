@@ -2174,7 +2174,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(225, i(234602)),	-- Wings of the Blood Monarch
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66192", "removed 12.0.1.99999" } }, {	-- TODO: Timeline out correctly
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66709", "removed 12.0.1.99999" } }, {	-- TODO: Timeline out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(235593),	-- Ensemble: Forest Dweller's Butterfly Attire
 			}),
