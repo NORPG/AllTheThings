@@ -232,6 +232,7 @@ HeaderAssignments = {
 	["Factions"] = -31,
 	["Faithful Dog Secret"] = -503,
 	["Family Battler"] = -1,
+	["Fanta Giveaway"] = -748,
 	["Fearless Gladiator: Legion Season 2"] = -270,
 	["Feast of Winter Veil"] = -574,
 	["February"] = -325,
@@ -727,4 +728,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -748;
+NextHeaderID = -749;

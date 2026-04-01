@@ -12783,9 +12783,8 @@ i(198167,{b=1,lvl=58}),
 i(198168,{b=1,lvl=58}),
 i(199414,{lvl=61,spellID=381924}),
 i(198650,{f=55})}),
-ah(
-{timeline={"added 10.1.0.49407"},g={
-r(407006)}},{type="s"}),
+ah(407005,{awp=100100,type="s",g={
+r(407006,{awp=100002,learnedAt=50,requireSkill=202,skillID=2827})}}),
 ah(382322,{type="s",g={
 r(382357,{learnedAt=50,requireSkill=202,skillID=2827})}}),
 flt(57,{
