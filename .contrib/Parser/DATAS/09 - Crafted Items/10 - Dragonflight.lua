@@ -1538,9 +1538,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Weird
 			i(198650),	-- Rummage Through Scrap
 		}),
-		header(HEADERS.Spell, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Polarity Bomb
-			r(407006),	-- EZ-Thro Polarity Bomb
-		})),
+		header(HEADERS.Spell, 407005, {	-- Polarity Bomb
+			["timeline"] = { ADDED_10_1_0 },
+			["groups"] = { r(407006) },	-- EZ-Thro Polarity Bomb
+		}),
 		header(HEADERS.Spell, 382322, {	-- Primal Deconstruction Charge
 			r(382357),	-- EZ-Thro Primal Deconstruction Charge
 		}),

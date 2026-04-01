@@ -5,6 +5,10 @@
 ---@param t? table
 ---@return table|nil
 struct = function(field, id, t)		-- Construct a commonly formatted object.
+	if type(id) ~= "number" then
+		error("struct() requires a number 'id'. Received:",type(id),"for",field)
+		return
+	end
 	if not t then t = {};
 	elseif (t.g or t.groups) and t[1] then
 		error("Don't use 'g' or 'groups' with an array of objects! Fix Group: "..field..":"..id);
@@ -1174,7 +1178,7 @@ header = function(ty, id, t)							-- Create an Automatic Header which will use 
 		-- Create an Automatic Header which will use the plain Text of the specified in-game object based on Type-ID combination
 		t = struct("headerID", id, t);
 		if not ty then
-			error("Invalid header type for id",id);
+			error("Invalid header() type for id",id);
 		end
 		t.type = ty;
 	else
