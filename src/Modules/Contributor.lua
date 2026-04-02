@@ -2944,6 +2944,7 @@ MobileDB.GameObject = {
 	[584540] = true,	-- Chest of Proven Valor [Den of Nalorakk]
 	[584615] = true,	-- Ironwood Lumber
 	[584694] = true,	-- Ironwood Lumber
+	[584750] = true,	-- Lost Page from Nostro's Compendium (q:92324)
 	[584752] = true,	-- Mislaid Curiosity
 	[584772] = true,	-- Portal to the Isle of Thunder (q:92322)
 	[586651] = true,	-- Ashwood Lumber
