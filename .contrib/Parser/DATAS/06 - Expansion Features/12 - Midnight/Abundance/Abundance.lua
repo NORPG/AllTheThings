@@ -124,7 +124,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				}),
 				q(94834, {	-- Blessings of Abundance
 					["provider"] = { "i", 265746 },	-- Idol of Abundance (QS!)
-				})
+				}),
+				n(BONUS_OBJECTIVES, {
+					q(91430, {	-- Runaway Limbs!
+						-- Exo Note: Triggered during Wartha'nan Crypts Abundance event. I don't know what the criteria is. Was unable to complete it.
+						-- Bunch of limbs spawn in the first room, wandering around. Requires you to "stomp" 5 of them. Could not "stomp" a single one. Jumping on them and walking over them didn't work. Didn't see any extra spells or something.
+						["coord"] = { 44.1, 31.5, 2579 },	-- Wartha'nan Crypts
+					}),
+				}),
 			}),
 			n(VENDORS, {
 				["crs"] = {

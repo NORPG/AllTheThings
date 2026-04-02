@@ -222,6 +222,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			["timeline"] = { ADDED_12_0_0 },
 			["groups"] = {
 				q(94905),	-- Triggered after completing "Home: Arcane Acrobatics" activity during 'Consortium Consternation' Endeavor
+				q(95406),	-- Lost Animals, Triggered after completing 'Lost Animals' (95438)
 			},
 		}),
 	})
