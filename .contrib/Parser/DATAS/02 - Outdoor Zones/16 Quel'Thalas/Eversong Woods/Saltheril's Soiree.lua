@@ -186,6 +186,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(249444),	-- Eversong Pyrepetal (QI!)
 				}),
 				q(91995),	-- What Horrible Magic
+				q(91992, {	-- Where Has the Wine Gone?
+					o_repeated({	-- Mana-Fortified Vintage
+						["coord"] = { 43.5, 37.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(249421),	-- Mana-Fortified Vintage (QI!)
+							o(568213),	-- Mana-Fortified Vintage
+							o(568214),	-- Mana-Fortified Vintage
+						},
+					})
+				}),
 			})),
 			-- Shades of the Row weekly
 			n(QUESTS, sharedData({

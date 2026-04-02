@@ -140,21 +140,26 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["provider"] = { "n", 250408 },	-- Kelsey Steelspark
 				["coord"] = { 78.7, 60.0, ARCANTINA },
 				["groups"] = {
-					i(253177),	-- Pylon Fragment (DECOR!)
-					o(584750, {	--
+					o(584750, {	-- Lost Page from Nostro's Compendium
 						i(255681),	-- Lost Page from Nostro's Compendium (QI!)
 					}),
+					o(572034, {	-- Pylon Fragment
+						i(250877),	-- Pylon Fragment
+					}),
+					--
+					i(253177),	-- Pylon Fragment (DECOR!)
 				},
 			}),
 			q(92323, {	-- Where the Fire Once Burned
 				["provider"] = { "n", 250405 },	-- Thisalee Crow
 				["coord"] = { 76.4, 39.4, ARCANTINA },
 				["groups"] = {
-					i(253175),	-- Hyjal Climbing Vine (DECOR!)
-					i(250876),	-- Evergreen Vine
-					o(617884, {	--
+					o(617884, {	-- Lucifern
 						i(263872),	-- Lucifern (QI!)
 					}),
+					--
+					i(250876),	-- Evergreen Vine
+					i(253175),	-- Hyjal Climbing Vine (DECOR!)
 				},
 			}),
 			q(90718, {	-- Request of the Arcantina

@@ -868,7 +868,6 @@ root(ROOTS.Unsorted, {
 			i(262428),	-- Tan Candlelight Kobold Backpack
 			i(262429),	-- Tan Candlelight Kobold Belt
 			i(262430),	-- Ensemble: Tan Candlelight Kobold Romper
-			i(262649),	-- An Angler's Deep Dive
 			i(262787),	-- Dredged Journal Entry
 			i(262797),	-- Shredded Glimmerline
 			i(267277),	-- Unalloyed Abundance
@@ -904,7 +903,6 @@ root(ROOTS.Unsorted, {
 				i(245257),	-- Magical Marble
 				i(245276),	-- Zal'vithra Pigment
 				i(245585),	-- Combat Engagement Launcher
-				i(250877),	-- Pylon Fragment
 				i(252658),	-- Set Keystone Map: Windrunner Spire
 				i(252951),	-- Set Keystone Map: Maisara Caverns
 				i(253009),	-- Set Keystone Map: Pit of Saron
@@ -1091,7 +1089,6 @@ root(ROOTS.Unsorted, {
 				i(249401),	-- Vial of Gelatinous Ooze
 				i(249407),	-- Harvested Lightwood
 				i(249414),	-- Feelings Journal
-				i(249421),	-- Mana-Fortified Vintage
 				i(249439),	-- Bright Feather
 				i(249440),	-- Bright Feather
 				i(249527),	-- Elder Painting
