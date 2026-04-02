@@ -869,7 +869,6 @@ root(ROOTS.Unsorted, {
 			i(262429),	-- Tan Candlelight Kobold Belt
 			i(262430),	-- Ensemble: Tan Candlelight Kobold Romper
 			i(262787),	-- Dredged Journal Entry
-			i(262797),	-- Shredded Glimmerline
 			i(267277),	-- Unalloyed Abundance
 		})),
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
