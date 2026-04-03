@@ -2745,11 +2745,11 @@ local AccountWideQuestsDB = {
 	95002,	-- Quest #95002*
 	95003,	-- Quest #95003*
 	95166,	-- Pet the Dog (245551)
+	95324,	-- The War Beyond the Roots
 	95413,	-- Community Engagement
 	95416,	-- Going Postal
 	95438,	-- Lost Animals
 	95440,	-- Housewarming
-	95324,	-- The War Beyond the Roots
 	95535,	-- Quest #95535*
 	95536,	-- Quest #95536*
 	95537,	-- Quest #95537*
