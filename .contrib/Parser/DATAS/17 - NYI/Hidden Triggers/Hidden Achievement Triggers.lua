@@ -4137,6 +4137,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 12.0.1.65867
 			ach(62489),	-- Last Call for Undercoin
+
+			-- 12.0.1.66337
+			ach(62603),	-- [DNT] <Hidden> Mythic+ Rating > 0 (Midnight, any season) \\ [DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season) (copy)
+			ach(62612),	-- [DNT] Midnight Epic Edition Decor
+			ach(62620),	-- Allied Race: Haranir (copy)
 		})),
 	}),
 });

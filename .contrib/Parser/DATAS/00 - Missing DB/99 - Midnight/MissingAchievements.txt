@@ -1,7 +1,3 @@
-12.0.1.66337
-ach(62603),	-- [DNT] <Hidden> Mythic+ Rating > 0 (Midnight, any season) \\ [DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season) (copy)
-ach(62612),	-- [DNT] Midnight Epic Edition Decor
-ach(62620),	-- Allied Race: Haranir (copy)
 12.0.5.66330
 ach(61792),	-- T-A-G that spells "Gotcha!"
 ach(61793),	-- Deployed to the Void
