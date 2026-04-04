@@ -657,7 +657,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(88920, {	-- The Kaldorei
 					["sourceQuest"] = 92520,	-- Wake of the Darkwell
 					["qg"] = 240267,	-- Arator
-					["coord"] = { 45.9, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["coords"] = {
+						{ 45.9, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 45.3, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					},
 				}),
 				q(88923, {	-- Children of the Stars
 					["sourceQuest"] = 88920,	-- The Kaldorei
