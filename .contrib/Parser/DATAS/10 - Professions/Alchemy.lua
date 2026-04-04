@@ -1245,7 +1245,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		})),
 		n(QUESTS, {
 			q(93690, {	-- Alchemy Services Requested
-				["sourceQuests"] = { 84288 },	-- Crafting Orders: Alchemy
+				["sourceQuests"] = { 93724 },	-- Crafting Orders: Alchemy
 				["qgs"] = {
 					243357,	-- Camberon <Alchemy Trainer>
 					243283,	-- Captain Flaresworn <Requisitions Officer>
