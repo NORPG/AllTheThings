@@ -81,11 +81,16 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["groups"] = {
 							ach(61808, {	-- Fabled Let Me Solo Him: Nullaeus
 								["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
+								["groups"] = {
+									title(689),	-- <Name>, Fabled Vanquisher of Nullaeus
+								},
 							}),
 							ach(61799, {	-- Let Me Solo Him: Nullaeus
 								i(263222),	-- Arcanovoid Construct (MOUNT!)
 							}),
-							ach(61798),	-- Lighting the Dark
+							ach(61798, {	-- Lighting the Dark
+								title(688),	-- <Name> the Ominous
+							}),
 						},
 					}),
 				},

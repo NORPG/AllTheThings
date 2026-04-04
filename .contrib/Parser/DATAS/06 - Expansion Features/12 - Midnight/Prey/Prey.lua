@@ -166,7 +166,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			ach(62176, {	-- Prey: The Fallen Farstriders (Nightmare)
 				i(265797),	-- Preyseeker's Farstrider Effigy (DECOR!)
 			}),
-			ach(62351),	-- Preying For Midnight
+			ach(62351, {	-- Preying For Midnight
+				title(755),	-- Preyseeker <Name>
+			}),
 			ach(62134),	-- The Deadliest of Prey
 			ach(62143, {["crs"]=TrapNPCs}),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me

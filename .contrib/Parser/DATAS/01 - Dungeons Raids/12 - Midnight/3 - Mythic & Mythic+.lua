@@ -53,14 +53,30 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(61272, {	-- Keystone Hero: Skyreach
 				spell(1254557),	-- Path of the Crowning Pinnacle
 			}),
-			ach(61591),	-- Keystone Victor: Algeth'ar Academy
-			ach(61587),	-- Keystone Victor: Magisters' Terrace (Midnight)
-			ach(61588),	-- Keystone Victor: Maisara Caverns
-			ach(61589),	-- Keystone Victor: Nexus-Point Xenas
-			ach(61592),	-- Keystone Victor: Pit of Saron
-			ach(61593),	-- Keystone Victor: Seat of the Triumvirate
-			ach(61594),	-- Keystone Victor: Skyreach
-			ach(61590),	-- Keystone Victor: Windrunner Spire
+			ach(61591, {	-- Keystone Victor: Algeth'ar Academy
+				title(682),	-- <Name>, Top Student
+			}),
+			ach(61587, {	-- Keystone Victor: Magisters' Terrace (Midnight)
+				title(687),	-- Terrace Terror <Name>
+			}),
+			ach(61588, {	-- Keystone Victor: Maisara Caverns
+				title(686),	-- Maisaran Soultender <Name>
+			}),
+			ach(61589, {	-- Keystone Victor: Nexus-Point Xenas
+				title(685),	-- <Name>, Nexus Navigator
+			}),
+			ach(61592, {	-- Keystone Victor: Pit of Saron
+				title(681),	-- Scourgebane <Name>
+			}),
+			ach(61593, {	-- Keystone Victor: Seat of the Triumvirate
+				title(683),	-- Despair Defier <Name>
+			}),
+			ach(61594, {	-- Keystone Victor: Skyreach
+				title(294),	-- <Name>, Scion of Rukhmar
+			}),
+			ach(61590, {	-- Keystone Victor: Windrunner Spire
+				title(684),	-- Windrunner Mediator <Name>
+			}),
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
 			-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal October 2025
 			ach(61233, {	-- Midnight Season 1: Resilient Keystone 12

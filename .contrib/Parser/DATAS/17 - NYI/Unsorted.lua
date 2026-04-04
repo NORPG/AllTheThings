@@ -820,6 +820,12 @@ root(ROOTS.Unsorted, {
 				i(268551),	-- Scroll of Reflection
 				i(248723),	-- Stolen Documents
 			}),
+			filter(TITLES, {
+				title(761),	-- <Name>, World Apex
+				title(762),	-- Azeroth's Top Ten Youth <Name>
+				title(763),	-- Model of the Era <Name>
+				title(764),	-- Big Brother <Name>
+			}),
 			n(WEAPONS, {
 				i(269972),	-- Arathi Miner's Pickaxe
 				i(269973),	-- Warglaive of Unyielding Will

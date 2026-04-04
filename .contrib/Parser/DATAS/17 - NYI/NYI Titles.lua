@@ -92,5 +92,14 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 			title(623),	-- Stalwart <Name>
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			title(660),	-- [PH] <Name>
+			title(661),	-- [PH] <Name>
+			title(662),	-- [PH] <Name>
+			title(663),	-- [PH] <Name>
+		})),
+	}),
 }));
 -- #endif
