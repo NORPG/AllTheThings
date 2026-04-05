@@ -2008,7 +2008,7 @@ pn(107255,{cost={{"c",3150,1}},requireSkill=171}),
 pn(107257,{cost={{"c",3150,1}},requireSkill=171})}}),
 h(-45,{requireSkill=171,g={
 q(93690,{coords={
-[2393]={{45,55.2},{47,52}}},isWeekly=1,lvl=78,qgs={243283,243357},requireSkill=171,sourceQuests={84288},g={
+[2393]={{45,55.2},{47,52}}},isWeekly=1,lvl=78,qgs={243283,243357},requireSkill=171,sourceQuests={93724},g={
 i(263454,{b=1,isWeekly=1,requireSkill=171,spellID=1270530})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=171,g={
 r(1230891,{cost={{"c",3150,1}},learnedAt=80,requireSkill=171,skillID=2906}),

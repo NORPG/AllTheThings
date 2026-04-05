@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local de,en,flt,h,i,mnt,p,prof,q,r,s,x=_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateExpansion;
+local de,en,flt,h,i,mnt,p,prof,q,r,s,title,x=_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
 categories.Unsorted={
 x(12,{
 x(12.0001,{awp=120001,g={
@@ -30,6 +30,11 @@ i(246152),
 i(253210),
 i(268551,{spellID=1282789}),
 i(248723)}),
+flt(110,{
+title(761),
+title(762),
+title(763),
+title(764)}),
 h(-101,{
 s(304843,269972,{f=21}),
 s(304844,269973,{f=35}),

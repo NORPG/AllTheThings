@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local de,en,flt,h,i,mnt,p,prof,q,r,s,toy,x=_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
+local de,en,flt,h,i,mnt,p,prof,q,r,s,title,toy,x=_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Unsorted={
 x(12,{
 x(12.0005,{awp=120005,g={
@@ -812,6 +812,11 @@ i(246152),
 i(253210),
 i(268551,{spellID=1282789}),
 i(248723)}),
+flt(110,{
+title(761),
+title(762),
+title(763),
+title(764)}),
 h(-101,{
 s(304843,269972,{f=21}),
 s(304844,269973,{f=35}),
@@ -859,9 +864,7 @@ s(302361,262427,{f=2}),
 s(302362,262428,{f=3}),
 s(302363,262429,{f=2}),
 en(262430,{spellID=1268764}),
-i(262649,{f=55,spellID=1290196}),
 i(262787,{f=55,spellID=1269417}),
-i(262797,{f=55,spellID=1269458}),
 i(267277,{f=55})}}),
 x(12.0000001,{awp=120000,g={
 h(-44,{
@@ -887,7 +890,6 @@ i(239077,{b=1,f=55}),
 i(245257,{b=1,lvl=10}),
 i(245276),
 i(245585,{f=55,spellID=1246302}),
-i(250877,{b=1}),
 i(252658,{f=55,lvl=45,spellID=1254855}),
 i(252951,{f=55,lvl=45,spellID=1255252}),
 i(253009,{f=55,lvl=45,spellID=1255365}),
@@ -1055,7 +1057,6 @@ i(248931),
 i(249401),
 i(249407),
 i(249414),
-i(249421),
 i(249439),
 i(249440),
 i(249527),
@@ -4046,7 +4047,6 @@ q(91834),
 q(91837,{description="Area: |cFFf09f26Zul'Aman|r"}),
 q(91975,{description="Area: |cFFf09f26Eversong Woods|r",isDaily=1}),
 q(91976,{description="Area: |cFFf09f26Eversong Woods|r",isDaily=1}),
-q(91992,{description="Area: |cFFf09f26Eversong Woods|r",isDaily=1}),
 q(92388,{description="Area: |cFFf09f26Amani'Zar Village|r"}),
 q(92418,{description="Area: |cFFf09f26Zul'Aman|r"}),
 q(92524),

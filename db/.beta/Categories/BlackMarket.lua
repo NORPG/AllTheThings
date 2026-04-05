@@ -374,7 +374,11 @@ i(102137,{awp=50400,b=1,rwp=60002,u=2}),
 i(97565,{awp=50300,b=1,rwp=50400,u=2}),
 h(-58,{awp=50004,u=9,g={
 n(243247,{coords={
-[2393]={{81.9,48.6}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}),
+[2393]={{51.84,48.53}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}),
+n(219055,{coords={
+[2339]={{64.8,52.7}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}),
+n(100986,{coords={
+[628]={{71.37,17.93}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(94829,_.ResolveQuestData({aqd=
 {coords={
 [582]={{37.2,35.8}}}},hqd=
