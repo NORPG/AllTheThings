@@ -75,13 +75,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["sourceQuest"] = 90961,	-- Stranger in a New Land
 					["qg"] = 133407,	-- Ambassador Blackguard
 					["coord"] = { 39.5, 79.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
+					["races"] = HARANIR_HORDE,
 				}),
 				q(94445, {	-- Choose a Path [A]
 					["sourceQuest"] = 90961,	-- Stranger in a New Land
 					["qg"] = 133362,	-- Ambassador Moorgard
 					["coord"] = { 53.1, 15.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HARANIR_ALLIANCE,
 				}),
 			})),
 			header(HEADERS.Achievement, 41804, {	-- One Does Not Simply Walk Into Harandar
