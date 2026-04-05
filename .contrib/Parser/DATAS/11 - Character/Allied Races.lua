@@ -53,7 +53,6 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 		["u"] = REMOVED_FROM_GAME,
 	}),
 	race(DARKIRON, {
-
 		["description"] =
 		-- #if BEFORE 10.1.5
 		"To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
@@ -342,6 +341,82 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 					i(224244),	-- Earthen Staff
 				},
 			}),
+		}),
+	})),
+	header(HEADERS.Race, HARANIR_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH }}, {
+		q(90957, {	-- Initiation Day
+			["qg"] = 245090,	-- Hagar
+			["coord"] = { 34.8, 24.9, MAP.MIDNIGHT.HARANDAR },
+			["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+			["groups"] = {
+				i(257529),	-- Coarse Haranir Cowl
+				i(257528),	-- Entwined Haranir Cowl
+				i(257530),	-- Hardened Haranir Cowl
+				i(257527),	-- Woven Haranir Cowl
+			},
+		}),
+		q(90958, {	-- Roots Above All
+			["sourceQuest"] = 90957,	-- Initiation Day
+			["qg"] = 245102,	-- Dalnir
+			["coord"] = { 35.3, 23.3, MAP.MIDNIGHT.HARANDAR },
+			["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+			["groups"] = {
+				o(553844, {	-- Axe
+					["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = { i(246126) },	-- Horde Axe (QI!)
+				}),
+				o(553793, {	-- Shield
+					["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(246112) },	-- Alliance Shield (QI!)
+				}),
+				i(246129),	-- Outsider's Gear (QI!)
+			},
+		}),
+		q(90959, {	-- Traditional Duties
+			["sourceQuest"] = 90958,	-- Roots Above All
+			["qg"] = 245879,	-- Orweyna
+			["coord"] = { 35.3, 23.5, MAP.MIDNIGHT.HARANDAR },
+			["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+			["groups"] = {
+				i(257558),	-- Woven Haranir Leaves
+				i(257559),	-- Entwined Haranir Leaves
+				i(257560),	-- Coarse Haranir Leaves
+				i(257561),	-- Hardened Haranir Leaves
+			},
+		}),
+		q(90960, {	-- My Story, My Legacy
+			["sourceQuest"] = 90959,	-- Traditional Duties
+			["qg"] = 245096,	-- Hagar
+			["coord"] = { 34.0, 26.9, MAP.MIDNIGHT.HARANDAR },
+			["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+		}),
+		q(90961, {	-- Stranger in a New Land
+			["sourceQuest"] = 90960,	-- My Story, My Legacy
+			["qg"] = 245097,	-- Hagar
+			["coord"] = { 31.9, 27.4, MAP.MIDNIGHT.HARANDAR },
+			["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+			["groups"] = {
+				i(246740, {	-- Tabard of the Haranir
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(246795, {	-- Tabard of the Haranir
+					["races"] = HORDE_ONLY,
+				}),
+			},
+		}),
+		q(94444, {	-- Choose a Path [H]
+			["sourceQuest"] = 90961,	-- Stranger in a New Land
+			["qg"] = 133407,	-- Ambassador Blackguard
+			["coord"] = { 39.5, 79.4, ORGRIMMAR },
+			["races"] = HARANIR_HORDE,
+		}),
+		q(94445, {	-- Choose a Path [A]
+			["sourceQuest"] = 90961,	-- Stranger in a New Land
+			["qg"] = 133362,	-- Ambassador Moorgard
+			["coord"] = { 53.1, 15.3, STORMWIND_CITY },
+			["races"] = HARANIR_ALLIANCE,
 		}),
 	})),
 	race(HIGHMOUNTAIN_TAUREN, {
