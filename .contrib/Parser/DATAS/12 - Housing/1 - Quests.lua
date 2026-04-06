@@ -134,66 +134,72 @@ root(ROOTS.Housing, {
 			},
 		}),
 	})),
-	n(QUESTS, sharedDataSelf({
-		["qgs"] = {
-			260942,	-- Vaeli @ Founder's Point
-			260943,	-- Vaeli @ Razorwind Shores
-			260957,	-- Vaeli @ Silvermoon City
-			260958,	-- Vaeli (This ID has been reported in both Neighborhoods)
-		},
-		["coords"] = {
-			{ 51.9, 39.5, FOUNDERS_POINT },
-			{ 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-			{ 52.9, 59.8, RAZORWIND_SHORES }
-		},
-		["isWeekly"] = true,
+	n(QUESTS, {
+		["groups"] = sharedData({
+			["qgs"] = {
+				260942,	-- Vaeli @ Founder's Point
+				260943,	-- Vaeli @ Razorwind Shores
+				260957,	-- Vaeli @ Silvermoon City
+				260958,	-- Vaeli (This ID has been reported in both Neighborhoods)
+			},
+			["coords"] = {
+				{ 51.9, 39.5, FOUNDERS_POINT },
+				{ 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				{ 52.9, 59.8, RAZORWIND_SHORES }
+			},
+			["isWeekly"] = true,
+			["groups"] = {	-- All quests given by Vaeli offer 'Essence of Lumber' as a reward
+				-- Maybe do this better somehow. Technically this item should be a 'cost' on a symlink group attached to the respective Housing Lumberjack NPCs in both neighborhoods...  then could have proper coords on the NPC and cost indicator
+				i(269010, {	-- Essence of Lumber
+					["description"] = "Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",
+					["sym"] = {{"select","itemID",
+						245586,	-- Ironwood Lumber
+						242691,	-- Olemba Lumber
+						251762,	-- Coldwind Lumber
+						251764,	-- Ashwood Lumber
+						251763,	-- Bamboo Lumber
+						251766,	-- Shadowmoon Lumber
+						251767,	-- Fel-Touched Lumber
+						251768,	-- Darkpine Lumber
+						251772,	-- Arden Lumber
+						251773,	-- Dragonpine Lumber
+						248012,	-- Dornic Fir Lumber
+						256963,	-- Thalassian Lumber
+					}},
+				}),
+			},
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+		}, {
+			q(95413),	-- Community Engagement
+			q(95416),	-- Going Postal
+			q(95440),	-- Housewarming
+			q(95438),	-- Lost Animals
+		}),
+	}),
+	n(MAIL_DELIVERY_RACES, {	-- Founder's Point Mail Delivery
 		["timeline"] = { ADDED_12_0_1_LAUNCH },
-		["groups"] = {	-- All quests given by Vaeli offer 'Essence of Lumber' as a reward
-			-- Maybe do this better somehow. Technically this item should be a 'cost' on a symlink group attached to the respective Housing Lumberjack NPCs in both neighborhoods...  then could have proper coords on the NPC and cost indicator
-			i(269010, {	-- Essence of Lumber
-				["description"] = "Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",
-				["sym"] = {{"select","itemID",
-					245586,	-- Ironwood Lumber
-					242691,	-- Olemba Lumber
-					251762,	-- Coldwind Lumber
-					251764,	-- Ashwood Lumber
-					251763,	-- Bamboo Lumber
-					251766,	-- Shadowmoon Lumber
-					251767,	-- Fel-Touched Lumber
-					251768,	-- Darkpine Lumber
-					251772,	-- Arden Lumber
-					251773,	-- Dragonpine Lumber
-					248012,	-- Dornic Fir Lumber
-					256963,	-- Thalassian Lumber
-				}},
-			}),
-		},
-	}, {
-		q(95413),	-- Community Engagement
-		q(95416),	-- Going Postal
-		q(95440),	-- Housewarming
-		q(95438),	-- Lost Animals
-	})),
-	n(MAIL_DELIVERY_RACES, sharedData({	-- Founder's Point Mail Delivery
-		["qg"] = 260942,	-- Vaeli
-		["coord"] = { 51.9, 39.5, FOUNDERS_POINT },
-		["isRepeatable"] = true,
+		["groups"] = sharedData({	-- All Founder's Point Mail Delivery quests
+			["qg"] = 260942,	-- Vaeli
+			["coord"] = { 51.9, 39.5, FOUNDERS_POINT },
+			["isRepeatable"] = true,
+		}, {
+			q(95407),	-- Autumnal Addresses		// Gilded Oaks route
+			q(95408),	-- Coastal Courier			// Outer Banks route
+			q(95409),	-- High Road, Hollow Road	// Ridge and Hollow route
+		}),
+	}),
+	n(MAIL_DELIVERY_RACES, {	-- Razorwind Mail Delivery
 		["timeline"] = { ADDED_12_0_1_LAUNCH },
-	}, {
-		q(95407),	-- Autumnal Addresses		// Gilded Oaks route
-		q(95408),	-- Coastal Courier			// Outer Banks route
-		q(95409),	-- High Road, Hollow Road	// Ridge and Hollow route
-	})),
-	n(MAIL_DELIVERY_RACES, sharedData({	-- Razorwind Mail Delivery
-		["qg"] = 260943,	-- Vaeli
-		["coord"] = { 52.9, 59.8, RAZORWIND_SHORES },
-		["isRepeatable"] = true,
-		["timeline"] = { ADDED_12_0_1_LAUNCH },
-	}, {
-		q(95410),	-- Cragthorn Certified		// Cragthorn Highlands route
-		q(95411),	-- Desert Dispatch			// Bloom and Shore route
-		q(95412),	-- Runetotem Run			// Runetotem's Bounty route
-	})),
+		["groups"] = sharedData({
+			["qg"] = 260943,	-- Vaeli
+			["coord"] = { 52.9, 59.8, RAZORWIND_SHORES },
+			["isRepeatable"] = true,
+		}, {
+			q(95410),	-- Cragthorn Certified		// Cragthorn Highlands route
+			q(95411),	-- Desert Dispatch			// Bloom and Shore route
+			q(95412),	-- Runetotem Run			// Runetotem's Bounty route
+		}),
+	}),
 });
 
 root(ROOTS.HiddenQuestTriggers, {
