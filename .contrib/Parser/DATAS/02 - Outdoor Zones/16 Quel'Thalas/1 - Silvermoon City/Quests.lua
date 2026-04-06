@@ -156,6 +156,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		})),
 	}),
 }));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.SILVERMOON_CITY, {
@@ -165,6 +166,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(93789),	-- Apex Cache (season 1) was opened / bonus roll for something?
 				q(94419, {["timeline"]={ADDED_12_0_1_SEASONSTART,REMOVED_12_1_0}}),	-- player receive 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 				q(94410),	-- After turning in Unity Against the Void? Spark lockout?
+				q(93742),	-- Looted Dawnlight Manaflux after Midnight Season 1: Catalyst Unbound
 				--
 			}),
 		}),

@@ -523,6 +523,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				-- #if AFTER TWW
 				{ 45.9, 55.0, DORNOGAL },
 				-- #endif
+				-- #if after MID
+				{ 51.2, 76.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -688,6 +691,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 53.99, 50.70, DUN_MOROGH },	-- Kharanos
 				-- #IF AFTER TWW
 				{ 46.0, 54.9, DORNOGAL },	-- Dornogal
+				-- #ENDIF
+				-- #IF AFTER MID
+				{ 51.2, 76.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				-- #ENDIF
 				-- #else
 				{ 48.9, 50.0, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle

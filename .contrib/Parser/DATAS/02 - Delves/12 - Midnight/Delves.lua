@@ -549,13 +549,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 9.7, 50.3, PARHELION_PLAZA },
 					["questID"] = 94019,
 				}),
-				--o(TODO, {	-- Sturdy Chest
-				--	["coord"] = { 23.4, 59.3, PARHELION_PLAZA },
-				--	["questID"] = 94015,
-				--	["groups"] = { i(262964) },	-- Death's Hope (CI!)
-				--}),
+				o(618113, {	-- Sturdy Chest
+					["coord"] = { 23.4, 59.3, PARHELION_PLAZA },
+					["questID"] = 94015,
+					["groups"] = { i(262964) },	-- Death's Hope (CI!)
+				}),
 				o(618287, {	-- Sturdy Chest
-					["coord"] = { 36.5, 86.1, PARHELION_PLAZA },
+					["coord"] = { 40.9, 86.8, PARHELION_PLAZA },
 					["questID"] = 94033,
 				}),
 			}),
@@ -911,7 +911,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91187, name(HEADERS.Map, THE_GULF_OF_MEMORY)),	-- The Gulf of Memory
 			q(91190, name(HEADERS.Map, TWILIGHT_CRYPTS)),	-- Twilight Crypts
 			q(92444, name(HEADERS.Map, THE_DARKWAY)),	-- The Darkway
-			-- q(???, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
+			q(91182, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
 		})),
 		q(93866, name(HEADERS.Item, 258738)),	-- Die in a delve, trigger mail with A Grave Concern
 

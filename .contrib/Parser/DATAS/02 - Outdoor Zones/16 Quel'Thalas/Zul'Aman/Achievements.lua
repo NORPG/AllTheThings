@@ -5,7 +5,13 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
 		n(ACHIEVEMENTS, {
-			ach(62267),	-- A Most Violent Loa
+			ach(62267, {	-- A Most Violent Loa
+				["description"] = "Kill 100 Kapara or Kapara pups around Zul'Aman to draw the wrath of Filo, Loa of Childhood.",
+				["crs"] = {
+					250101,	-- Kapara
+					250100,	-- Kapara Pup
+				},
+			}),
 			ach(62269),	-- Altar of Blessings: Amani Curious
 			ach(62270),	-- Altar of Blessings: One for Altar
 			ach(62121),	-- Altar of Blessings: Sacred Buffet Devotee

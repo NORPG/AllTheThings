@@ -297,6 +297,11 @@ root(ROOTS.Zones, {
 						["qg"] = 81173,	-- Illuminate Praavi
 						["coord"] = { 35.4, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(223508, {	-- Star Reading
+								i(112385),	-- Star Reading (QI!)
+							}),
+						},
 					}),
 					q(33120, {	-- A Curse Upon the Woods
 						["sourceQuest"] = 33113,	-- Shadowmoonwell
@@ -582,6 +587,21 @@ root(ROOTS.Zones, {
 						["qg"] = 80761,	-- Beezil Linkspanner
 						["coord"] = { 53.4, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(231152, {	-- Youthvine
+								["coords"] = {
+									{ 53.9, 69.5, DRAENOR_SHADOWMOON_VALLEY },
+									{ 54.2, 71.2, DRAENOR_SHADOWMOON_VALLEY },
+									{ 54.4, 69.3, DRAENOR_SHADOWMOON_VALLEY },
+									{ 54.8, 70.0, DRAENOR_SHADOWMOON_VALLEY },
+									{ 54.8, 71.1, DRAENOR_SHADOWMOON_VALLEY },
+									{ 54.9, 71.7, DRAENOR_SHADOWMOON_VALLEY },
+									{ 55.5, 70.0, DRAENOR_SHADOWMOON_VALLEY },
+									{ 55.5, 71.0, DRAENOR_SHADOWMOON_VALLEY },
+								},
+								["groups"] = { i(112328) },	-- Youngroot (QI!)
+							}),
+						},
 					}),
 					q(34455, {	-- Free Their Minds
 						["providers"] = {
@@ -702,6 +722,12 @@ root(ROOTS.Zones, {
 						["qg"] = 71502,	-- Ariaana
 						["coord"] = { 52.0, 32.7, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(230883, {	-- Draenei Bucket
+								["coord"] = { 51.9, 32.4, DRAENOR_SHADOWMOON_VALLEY },
+								["groups"] = { i(111908) },	-- Draenei Bucket (QI!)
+							}),
+						},
 					}),
 					q(35032, {	-- Into Anguish
 						["sourceQuest"] = 34043,	-- Darkest Night
@@ -730,6 +756,27 @@ root(ROOTS.Zones, {
 						["qg"] = 80248,	-- Zukaza
 						["coord"] = { 46.3, 25.3, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(230901, {	-- Lunarblossom
+								["coords"] = {
+									{ 48.2, 13.8, DRAENOR_SHADOWMOON_VALLEY },
+									{ 49.2, 14.4, DRAENOR_SHADOWMOON_VALLEY },
+									{ 49.4, 14.8, DRAENOR_SHADOWMOON_VALLEY },
+									{ 50.1, 15.0, DRAENOR_SHADOWMOON_VALLEY },
+									{ 50.1, 20.9, DRAENOR_SHADOWMOON_VALLEY },
+									{ 50.4, 17.1, DRAENOR_SHADOWMOON_VALLEY },
+									{ 50.7, 24.4, DRAENOR_SHADOWMOON_VALLEY },
+									{ 50.8, 20.8, DRAENOR_SHADOWMOON_VALLEY },
+									{ 50.9, 15.3, DRAENOR_SHADOWMOON_VALLEY },
+									{ 50.9, 20.2, DRAENOR_SHADOWMOON_VALLEY },
+									{ 51.1, 17.3, DRAENOR_SHADOWMOON_VALLEY },
+									{ 51.1, 19.2, DRAENOR_SHADOWMOON_VALLEY },
+									{ 51.1, 22.4, DRAENOR_SHADOWMOON_VALLEY },
+									{ 51.5, 19.4, DRAENOR_SHADOWMOON_VALLEY },
+								},
+								["groups"] = { i(111937) },	-- Lunarblossom (QI!)
+							}),
+						},
 					}),
 					q(36199, {	-- Moonshell Claws
 						["sourceQuest"] = 34194,	-- Looking For Help
@@ -949,6 +996,12 @@ root(ROOTS.Zones, {
 						["qg"] = 79043,	-- Prophet Velen
 						["coord"] = { 40.6, 54.9, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(111024, {	-- Pristine Star Lily
+								["coord"] = { 47.3, 52.0, DRAENOR_SHADOWMOON_VALLEY },
+								["groups"] = { i(111024) },	-- Pristine Star Lily (QI!)
+							}),
+						},
 					}),
 					q(36266, {	-- The Clothes on Their Backs
 						["sourceQuest"] = 36262,	-- Ameeka, Master Tailor
@@ -1191,6 +1244,7 @@ root(ROOTS.Zones, {
 							35450,	-- The Southern Wilds
 							35459,	-- The Southern Wilds
 						},
+						["qg"] = 76200,	-- Prelate Reenu
 						["coord"] = { 57.0, 57.5, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,

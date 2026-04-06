@@ -337,6 +337,7 @@ i(162673);	-- Knotted Bowline
 i(163376);	-- Kurt's Ornate Key
 i(162632);	-- Lavish Sethrallis Figurine
 i(159140);	-- Lifeless Clay
+i(163089);	-- Long-Stemmed Pipe
 i(158745);	-- Luminous Scale
 i(158823);	-- Malfunctioning Rocket Boots
 i(163593);	-- Map of Zandalar Trade Winds
@@ -355,6 +356,7 @@ i(155615);	-- Pestilent Muck
 i(162633);	-- Petrified Jungle Orchid
 i(158781);	-- Pilfered Curio
 i(155601);	-- Pointy Leg Segment
+i(161202);	-- Polished Brass Sextant
 i(163375);	-- Portrait of Commander Martens
 i(158840);	-- Prehensile Tongue
 i(163518);	-- Purple Glowing Puffer

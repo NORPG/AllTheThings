@@ -5801,8 +5801,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		n(QUESTS, {
 			q(93693, {	-- Inscription Services Requested
 				["sourceQuests"] = { 93728 },	-- Crafting Orders: Inscription
-				["provider"] = { "n", 243553 },	-- Zantasia <Inscription Trainer>
-				["coord"] = { 46.9, 51.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["qgs"] = {
+					243553,	-- Zantasia <Inscription Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 46.9, 51.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
 				["isWeekly"] = true,
 				["groups"] = {
 					i(263457),	-- Thalassian Scribe's Journal

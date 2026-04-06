@@ -348,7 +348,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(DELVES_MID_S1, {
 				-- Seasonal Delver's Journey Rewards
 				--q(92601),	-- pop after looting Cracked Keystone
-				--q(93742),	-- pop in first delve (Atal'Aman) after ability to loot catalyst charges was obtained (achievementID 61519 - Midnight Season 1: Catalyst Unbound)
 				--automated stuff
 				--q(93880),	-- Delver's Starter Kit (itemID 263178)
 				--q(93881),	-- Delver's Cosmetic Surprise Bag (itemID 263179)

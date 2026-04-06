@@ -951,3 +951,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 		}),
 	}),
 }))));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(SEASON_GALACTIC, {
+		n(QUESTS, {
+			q(93742, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Looted Dawnlight Manaflux after Midnight Season 1: Catalyst Unbound
+		}),
+	}),
+}));

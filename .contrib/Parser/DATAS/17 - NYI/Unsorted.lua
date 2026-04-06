@@ -904,7 +904,6 @@ root(ROOTS.Unsorted, {
 				i(237516),	-- Cerulean Ore
 				i(237517),	-- Citrine Ore
 				i(238729),	-- [OLD] Abundant Token
-				i(239077),	-- Mound of Mildly-Meaningful Meat
 				i(245257),	-- Magical Marble
 				i(245276),	-- Zal'vithra Pigment
 				i(245585),	-- Combat Engagement Launcher
@@ -1243,8 +1242,6 @@ root(ROOTS.Unsorted, {
 				i(267573),	-- Cracked Medal of Conquest
 				i(256553),	-- Galactic Equipment Chest
 				--pvp
-				i(266314),	-- Novice Combatant's Necklace
-				i(266317),	-- Novice Combatant's Ring
 				i(267177),	-- Slayer's Duellum Commendation
 			}),
 			n(ARMOR, {
@@ -2716,11 +2713,6 @@ root(ROOTS.Unsorted, {
 				i(155823),	-- Icy Snowball
 				i(156508),	-- Blessed Bandage
 				i(156635),	-- Honey-Stained Notebook
-				i(156640),	-- Vol'jin's Invulnerability Totem
-				i(156641),	-- Zul's Saurid Ward
-				i(156642),	-- Rastakhan's Eternal Flame Totem
-				i(156643),	-- Talanji's Whispering Wisps Totem
-				i(156646),	-- Bottled Azerite
 				i(156661),	-- REUSE ME \\ HERB (PH)
 				i(156737),	-- Forsaken Memento
 				i(156924),	-- Silver Shrapnel
@@ -2816,7 +2808,6 @@ root(ROOTS.Unsorted, {
 				i(163085),	-- Onion Garland
 				i(163086),	-- Crimsonwood Dentures
 				i(163088),	-- Perfectly Ordinary Broomstick
-				i(163089),	-- Long-Stemmed Pipe
 				i(163090),	-- Cured Billow-Weed
 				i(163093),	-- Witch's Ritual Chalk
 				i(163095),	-- Golden Troll Berserker \\ Finely Crafted Tin Soldier
@@ -3011,7 +3002,6 @@ root(ROOTS.Unsorted, {
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
 				i(158727),	-- Decayed Equipment
-				i(161202),	-- Polished Brass Sextant
 				i(161209),	-- Coven Dream Catcher
 				i(161210),	-- Homemade Child's Doll
 				i(161212),	-- Wavespeaker's Star Chart
@@ -3666,7 +3656,6 @@ root(ROOTS.Unsorted, {
 			i(167933),	-- Rubber Scraps
 			i(168015),	-- Taster of Rebirth \\ Fel-Tainted Vessel \\ Fel-tainted Vessel
 			i(168019),	-- Obsidian Sigilstone
-			i(168134),	-- Fine Azerite Powder
 			i(168135),	-- Titan's Blood
 			i(168137),	-- Precision Blessing Tools
 			i(168141),	-- Ice-Encased Ancient Blood Pigment

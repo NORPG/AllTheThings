@@ -214,18 +214,18 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 --]]
 
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({  }, {
-	inst(1308, {	-- March on Quel'Danas
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
+	inst(1308, bubbleDown({	-- March on Quel'Danas
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
-		["groups"] = { --TODO Uncomment when source and npcids are confirmed and added
-			-- LFR
-			-- Normal
-			--q(94561),	-- Voidbreaker Throggan??
-			--q(94565),	-- ??
-			-- Heroic
-			--q(94563),	-- Belo'ren miniboss
-			--q(94567),	-- trash prior to L'ura (named mob I missed)
-			-- Mythic
-		},
-	}),
-})))
+		["isWeekly"] = true,
+	},{	--TODO Uncomment when source and npcids are confirmed and added
+		-- LFR
+		-- Normal
+		q(94561, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
+		--q(94565),	-- ??
+		-- Heroic
+		q(94563, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
+		--q(94567),	-- trash prior to L'ura (named mob I missed)
+		-- Mythic
+	})),
+}));

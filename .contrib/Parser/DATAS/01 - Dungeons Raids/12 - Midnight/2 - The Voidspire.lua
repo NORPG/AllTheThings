@@ -505,7 +505,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93990, name(HEADERS.NPC, 252067)),	-- Terrace Watcher
 		-- Mythic
 		q(95344, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
-		-- All
-			--Do these exist? Only one HQT is being reported
+		q(93995, name(HEADERS.NPC, 240864)),	-- Blinky
 	})),
 }));

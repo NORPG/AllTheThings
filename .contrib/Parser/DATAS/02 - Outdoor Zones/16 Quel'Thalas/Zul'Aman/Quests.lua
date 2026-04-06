@@ -518,6 +518,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							o(525374, {	-- Stolen Equipment
 								["coords"] = {
 									{ 29.9, 27.9, MAP.MIDNIGHT.ZULAMAN },
+									{ 29.6, 29.0, MAP.MIDNIGHT.ZULAMAN },
 									{ 30.3, 27.7, MAP.MIDNIGHT.ZULAMAN },
 									{ 30.3, 28.4, MAP.MIDNIGHT.ZULAMAN },
 									{ 30.4, 27.3, MAP.MIDNIGHT.ZULAMAN },
@@ -1256,6 +1257,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{ 45.4, 65.8, MAP.MIDNIGHT.ZULAMAN },
 									{ 46.6, 68.6, MAP.MIDNIGHT.ZULAMAN },
 									{ 46.9, 66.0, MAP.MIDNIGHT.ZULAMAN },
+									{ 46.9, 66.7, MAP.MIDNIGHT.ZULAMAN },
 								},
 								["groups"] = { i(258891) },	-- Pristine Shade Lily (QI!)
 							}),

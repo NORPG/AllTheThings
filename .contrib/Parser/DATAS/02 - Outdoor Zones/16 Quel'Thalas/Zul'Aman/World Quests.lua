@@ -127,6 +127,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						o(525374, {	-- Stolen Equipment
 							["coords"] = {
 								{ 29.9, 27.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 29.6, 29.0, MAP.MIDNIGHT.ZULAMAN },
 								{ 30.3, 27.7, MAP.MIDNIGHT.ZULAMAN },
 								{ 30.3, 28.4, MAP.MIDNIGHT.ZULAMAN },
 								{ 30.4, 27.3, MAP.MIDNIGHT.ZULAMAN },
@@ -146,8 +147,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91399, {	-- Ashes of the Void
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
-					["qg"] = 246880,	-- Kul'kul
-					["coord"] = { 28.5, 76.9, MAP.MIDNIGHT.ZULAMAN },
+					["qg"] = 246878,	-- Nan'kejo
+					["coord"] = { 22.6, 73.2, MAP.MIDNIGHT.ZULAMAN },
 					["isDaily"] = true,
 					["groups"] = { i(246439) },	-- Void Ashes (QI!)
 				}),
@@ -159,8 +160,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91401, {	-- Dead by Dusk
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
-					["qg"] = 246878,	-- Nan'kejo
-					["coord"] = { 22.7, 73.2, MAP.MIDNIGHT.ZULAMAN },
+					["qg"] = 246880,	-- Kul'kul
+					["coord"] = { 28.4, 76.8, MAP.MIDNIGHT.ZULAMAN },
 					["isDaily"] = true,
 					["groups"] = { i(246440) },	-- Cultist Femur (QI!)
 				}),

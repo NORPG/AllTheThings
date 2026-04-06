@@ -682,7 +682,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			o(380558, {	-- Enchanted Debris
 				["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
 				["questID"] = 70272,
-				["coord"] = { 57.5, 58.5, THE_WAKING_SHORES },
+				["coord"] = { 59.9, 57.0, THE_WAKING_SHORES },
 				["groups"] = {
 					i(201012),	-- Enchanted Debris
 				},
