@@ -338,12 +338,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(212532),	-- Reno's Hat
 				i(211926),	-- Riders of Azeroth Tabard
 				i(190688),	-- Silvered Helm of Righteousness
-				i(212705),	-- Spring Reveler's Cornsilk Attire
-				i(212706),	-- Spring Reveler's Cornsilk Belt
-				i(212707),	-- Spring Reveler's Cornsilk Boots
-				i(212713),	-- Spring Reveler's Cornsilk Dress
-				i(212987),	-- Spring Reveler's Cornsilk Pants
-				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
 				i(212610),	-- Wings of the Emerald Monarch
 			}),
 			n(WEAPONS, {
