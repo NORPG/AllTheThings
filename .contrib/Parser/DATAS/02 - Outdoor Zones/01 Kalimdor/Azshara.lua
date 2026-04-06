@@ -423,24 +423,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3602, {	-- Azsharite
 					["sourceQuest"] = 3511,	-- The Name of the Beast (3/3)
-					["providers"] = {
-						{ "n", 7783 },	-- Loramus Thalipedes
-						{ "i", 10834 },	-- Felhound Tracker Kit
-						{ "i", 10832 },	-- Fel Tracker Owner's Manual
-					},
+					["qg"] = 7783,	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/20 Crystallized Azsharite
-							["providers"] = {
-								{ "i",  10714 },	-- Crystallized Azsharite
-								{ "o", 152622 },	-- Azsharite Formation
-							},
-							["cost"] = { { "i", 10831, 1 } },	-- Fel Orb
+							["provider"] = { "i",  10714 },	-- Crystallized Azsharite
 						}),
-						i(10839),	-- Crystallized Note
-						i(10840),	-- Crystallized Note
+						i(10834, {	-- Felhound Tracker Kit
+							i(10832),	-- Fel Tracker Owner's Manual
+							i(10831),	-- Fel Orb
+						}),
 					},
 				}),
 				q(14385, {	-- Azsharite Experiment Number One
@@ -2587,8 +2581,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				o(152620, {	-- Azsharite Formation
+					["coord"] = { 50.0, 70.1, AZSHARA },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(10714),	-- Crystallized Azsharite
+						i(10840),	-- Crystallized Note
+					},
+				}),
+				o(152621, {	-- Azsharite Formation
+					["coord"] = { 52.6, 78.3, AZSHARA },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(10714),	-- Crystallized Azsharite
+						i(10839),	-- Crystallized Note
+					},
+				}),
+				o(152622, {	-- Azsharite Formation
+					["coord"] = { 60.7, 86.5, AZSHARA },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(10714),	-- Crystallized Azsharite
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(226412, {	-- Rune of Pole Weapon Specialization
 					["provider"] = { "o", 457091 },	-- Chen's Training Manual
 					["coord"] = { 76.9, 44.2, AZSHARA },
@@ -2600,8 +2617,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				-- #endif
 			}),
-			-- #endif
 			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
 					["coord"] = { 45.2, 90.8, AZSHARA },
