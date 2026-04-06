@@ -20,7 +20,12 @@ local AccountWideQuestsDB = {
 	-- PUT NEW QUESTIDS HERE vv IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
 	------------------------------------------------------------------------------
 
-
+	80083,	-- Black Duck Disguise
+	80084,	-- Brown Duck Disguise
+	80085,	-- Mallard Duck Disguise
+	80087,	-- Pink Duck Disguise
+	80088,	-- White Duck Disguise
+	80089,	-- Yellow Duck Disguise
 
 	------------------------------------------------------------------------------
 	-- PUT NEW QUESTIDS HERE ^^ IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
