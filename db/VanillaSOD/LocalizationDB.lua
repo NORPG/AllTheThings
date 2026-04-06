@@ -992,7 +992,6 @@ _.HeaderConstants = {
 	HEAD = -94,
 	HOLIDAYS = -36,
 	HONOR_TITLES = -298,
-	HOUSING = -682,
 	LEGS = -95,
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
 	LUNAR_FESTIVAL_HEADER = -580,
@@ -1174,7 +1173,6 @@ localize(L.HEADER_NAMES, {
 	[-645] = "Waylaid Supplies",
 	[-646] = "Crafted",
 	[-647] = "Gathering",
-	[-682] = BINDING_HEADER_HOUSING_SYSTEM,
 	[-688] = "Blood Moon",
 	[-697] = "Zul'Gurub Hakkar Hardmode",
 	[-698] = TRANSMOG_SOURCE_4,
@@ -1189,7 +1187,6 @@ localize(L.HEADER_NAMES, {
 	[-732] = BUG_CATEGORY2,
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-736] = BATTLE_PET_SOURCE_8,
-	[-745] = "Mail Delivery Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1381,7 +1378,6 @@ localize(L.HEADER_ICONS, {
 	[-645] = 132763,
 	[-646] = 131034,
 	[-647] = 131025,
-	[-682] = _.asset("category_housing"),
 	[-688] = 237513,
 	[-697] = 237211,
 	[-698] = _.asset("category_worlddrops"),
@@ -1396,7 +1392,6 @@ localize(L.HEADER_ICONS, {
 	[-732] = _.asset("category_zones"),
 	[-734] = _.asset("category_event"),
 	[-736] = _.asset("category_promo"),
-	[-745] = 413580,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1470,7 +1465,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=23,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=30,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=6,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=13,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=20,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=27,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=4,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=11,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
@@ -1496,7 +1490,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=8,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=15,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=22,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=1,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=8,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=15,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=22,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=29,["weekday"]=2,["year"]=2027},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=22,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=29,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=5,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=12,["weekday"]=2,["year"]=2027},{["remappedID"]=374})
 });
 
 -- Filter Database Module

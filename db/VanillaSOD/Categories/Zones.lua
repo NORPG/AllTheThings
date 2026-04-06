@@ -835,7 +835,7 @@ s(158814,7298,{b=1,c={4},f=20,q=2})}}),
 q(2460,{c={4},coords={
 [1454]={{43,53.4}}},lvl=20,qgs={3401},r=1,rwp=40003,sourceQuests={2380}}),
 q(6611,{coords={
-[1454]={{57.4,53.6}}},description="Becomes available at Cooking skill level 225 when character level requirement is met.",isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6610},qgs={3399},r=1,requireSkill=185}),
+[1454]={{57.4,53.6}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6610},qgs={3399},r=1,requireSkill=185}),
 q(2380,{altQuests={2378},c={4},coords={
 [1411]={{51.98,43.7}}},isBreadcrumb=1,lvl=16,nextQuests={2460},qgs={3170},r=1,rwp=40003}),
 q(2753,{coords={
@@ -855,7 +855,7 @@ q(7661,{coords={
 q(2382,{c={4},coords={
 [1454]={{42.8,53}}},lvl=16,qgs={3402},r=1,rwp=40003,sourceQuests={2379}}),
 q(6608,{coords={
-[1454]={{69.8,29.6}}},description="Requires 225 Skill in Classic Fishing",isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6607},qgs={3332},r=1,requireSkill=356}),
+[1454]={{69.8,29.6}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6607},qgs={3332},r=1,requireSkill=356}),
 q(78304,{coords={
 [1454]={{80.2,29.6}}},lvl=20,maps={1413},providers={{"i",211448}},qgs={3408},r=1,rwp=20001,sourceQuests={78288},u=1605,g={
 i(210210,{u=1605})}}),

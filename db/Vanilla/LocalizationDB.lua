@@ -992,7 +992,6 @@ _.HeaderConstants = {
 	HEAD = -94,
 	HOLIDAYS = -36,
 	HONOR_TITLES = -298,
-	HOUSING = -682,
 	LEGS = -95,
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
 	LUNAR_FESTIVAL_HEADER = -580,
@@ -1136,7 +1135,6 @@ localize(L.HEADER_NAMES, {
 	[-588] = "Stranglethorn Fishing Extravaganza",
 	[-610] = "Crieve's Never Implemented List",
 	[-611] = "Silithid Royalty",
-	[-682] = BINDING_HEADER_HOUSING_SYSTEM,
 	[-698] = TRANSMOG_SOURCE_4,
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 	[-723] = "Elemental Invasions",
@@ -1149,7 +1147,6 @@ localize(L.HEADER_NAMES, {
 	[-732] = BUG_CATEGORY2,
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-736] = BATTLE_PET_SOURCE_8,
-	[-745] = "Mail Delivery Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1294,7 +1291,6 @@ localize(L.HEADER_ICONS, {
 	[-588] = _.asset("holiday_stv_fishing"),
 	[-610] = 132738,
 	[-611] = 133575,
-	[-682] = _.asset("category_housing"),
 	[-698] = _.asset("category_worlddrops"),
 	[-721] = 237382,
 	[-723] = 135793,
@@ -1307,7 +1303,6 @@ localize(L.HEADER_ICONS, {
 	[-732] = _.asset("category_zones"),
 	[-734] = _.asset("category_event"),
 	[-736] = _.asset("category_promo"),
-	[-745] = 413580,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

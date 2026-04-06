@@ -1085,7 +1085,6 @@ _.HeaderConstants = {
 	HEIRLOOMS = -219,
 	HOLIDAYS = -36,
 	HONOR_TITLES = -298,
-	HOUSING = -682,
 	IN_GAME_SHOP = -213,
 	LEGS = -95,
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
@@ -1315,7 +1314,6 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Twilight Assist",
 	[-660] = "Twilight Duo",
 	[-661] = "Twilight Zone",
-	[-682] = BINDING_HEADER_HOUSING_SYSTEM,
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
@@ -1326,7 +1324,6 @@ localize(L.HEADER_NAMES, {
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-736] = BATTLE_PET_SOURCE_8,
-	[-745] = "Mail Delivery Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1571,7 +1568,6 @@ localize(L.HEADER_ICONS, {
 	[-659] = 236469,
 	[-660] = 236473,
 	[-661] = 236471,
-	[-682] = _.asset("category_housing"),
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
 	[-721] = 237382,
@@ -1582,7 +1578,6 @@ localize(L.HEADER_ICONS, {
 	[-734] = _.asset("category_event"),
 	[-735] = _.asset("category_expansionfeatures"),
 	[-736] = _.asset("category_promo"),
-	[-745] = 413580,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

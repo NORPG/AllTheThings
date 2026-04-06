@@ -2957,7 +2957,7 @@ s(121842,7298,{b=1,c={4},f=20,q=2,u=2})}}),
 q(2460,{c={4},coords={
 [85]={{43,53.4}}},lvl=20,qgs={3401},r=1,rwp=40003,sourceQuests={2380,10794},u=2}),
 q(6611,{coords={
-[85]={{32.2,69.4}}},description="Becomes available at Cooking skill level 225 when character level requirement is met.",isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6610,13825},qgs={3399},r=1,requireSkill=185}),
+[85]={{32.2,69.4}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6610,13825},qgs={3399},r=1,requireSkill=185}),
 q(2380,{altQuests={2378},c={4},coords={
 [1]={{51.98,43.7}}},isBreadcrumb=1,lvl=16,nextQuests={2460},qgs={3170},r=1,rwp=40003,u=2}),
 q(26830,{awp=40003,coords={
@@ -2995,7 +2995,7 @@ q(7661,{coords={
 q(2382,{c={4},coords={
 [85]={{42.8,53}}},lvl=16,qgs={3402},r=1,rwp=40003,sourceQuests={2379},u=2}),
 q(6608,{coords={
-[85]={{66.6,41.6}}},description="Requires 225 Skill in Classic Fishing",isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6607},qgs={3332},r=1,requireSkill=356}),
+[85]={{66.6,41.6}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6607},qgs={3332},r=1,requireSkill=356}),
 q(2379,{altQuests={10372},c={4},coords={
 [85]={{43,53.4}}},lvl=16,qgs={3401},r=1,rwp=40003,sourceQuests={2378},u=2})}),
 h(-58,{
@@ -52727,7 +52727,7 @@ r(33291,{itemID=27695,learnedAt=300,q=1,requireSkill=185,u=17})}})}}),
 h(-63,{u=17,g={
 i(25459,{b=1,crs={18285},lvl=62,q=1,u=17}),
 i(24291,{crs={18124,18125,18127,19402,19519},q=1,u=17}),
-p(146,{awp=20100,crs={20197},description="Teaches you how to summon the pet Firefly. This is an extremely rare drop.",itemID=29960,npcID=21076,q=1,spellID=36034,u=17}),
+p(146,{awp=20100,crs={20197},description="This is an extremely rare drop.",itemID=29960,npcID=21076,q=1,spellID=36034,u=17}),
 i(24330,{b=1,crs={18340},f=55,lvl=59,q=1,u=17}),
 i(24449,{crs={18128,18129,18134,18135,18280,18281},q=1,u=17}),
 i(24401,{description="Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",q=1,u=17})}})}})}}),

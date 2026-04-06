@@ -1118,7 +1118,6 @@ _.HeaderConstants = {
 	HEIRLOOMS = -219,
 	HOLIDAYS = -36,
 	HONOR_TITLES = -298,
-	HOUSING = -682,
 	IN_GAME_SHOP = -213,
 	LEGS = -95,
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
@@ -1391,7 +1390,6 @@ localize(L.HEADER_NAMES, {
 	[-660] = "Twilight Duo",
 	[-661] = "Twilight Zone",
 	[-679] = CATALOG_SHOP_TYPE_DECOR,
-	[-682] = BINDING_HEADER_HOUSING_SYSTEM,
 	[-691] = "Treasures of Azeroth",
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
@@ -1403,7 +1401,6 @@ localize(L.HEADER_NAMES, {
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-736] = BATTLE_PET_SOURCE_8,
-	[-745] = "Mail Delivery Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1701,7 +1698,6 @@ localize(L.HEADER_ICONS, {
 	[-660] = 236473,
 	[-661] = 236471,
 	[-679] = _.asset("interface_decor"),
-	[-682] = _.asset("category_housing"),
 	[-691] = 7259806,
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
@@ -1713,7 +1709,6 @@ localize(L.HEADER_ICONS, {
 	[-734] = _.asset("category_event"),
 	[-735] = _.asset("category_expansionfeatures"),
 	[-736] = _.asset("category_promo"),
-	[-745] = 413580,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -9481,7 +9476,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753956000,
+		release = 1753981200,
 		state = 2,
 	},
 	[5002] = {
@@ -9490,7 +9485,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1754992800,
+		release = 1755018000,
 		state = 2,
 	},
 	[5003] = {
@@ -9499,7 +9494,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755770400,
+		release = 1755795600,
 		state = 2,
 	},
 	[5004] = {
@@ -9508,7 +9503,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756202400,
+		release = 1756227600,
 		state = 2,
 	},
 	[5005] = {
@@ -9517,7 +9512,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756807200,
+		release = 1756832400,
 		state = 2,
 	},
 	[5006] = {
@@ -9526,7 +9521,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756980000,
+		release = 1757005200,
 		state = 2,
 	},
 	[5007] = {
@@ -9535,7 +9530,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758016800,
+		release = 1758042000,
 		state = 2,
 	},
 	[51] = {
@@ -9560,7 +9555,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765969200,
+		release = 1765994400,
 		state = 2,
 	},
 	[53] = {
@@ -9585,7 +9580,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50505,
-		release = 1776679200,
+		release = 1776704400,
 		state = 2,
 	},
 };

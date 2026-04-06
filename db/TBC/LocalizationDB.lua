@@ -1005,7 +1005,6 @@ _.HeaderConstants = {
 	HEIRLOOMS = -219,
 	HOLIDAYS = -36,
 	HONOR_TITLES = -298,
-	HOUSING = -682,
 	IN_GAME_SHOP = -213,
 	LEGS = -95,
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
@@ -1176,7 +1175,6 @@ localize(L.HEADER_NAMES, {
 	[-588] = "Stranglethorn Fishing Extravaganza",
 	[-610] = "Crieve's Never Implemented List",
 	[-611] = "Silithid Royalty",
-	[-682] = BINDING_HEADER_HOUSING_SYSTEM,
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
@@ -1191,7 +1189,6 @@ localize(L.HEADER_NAMES, {
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-736] = BATTLE_PET_SOURCE_8,
-	[-745] = "Mail Delivery Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1344,7 +1341,6 @@ localize(L.HEADER_ICONS, {
 	[-588] = _.asset("holiday_stv_fishing"),
 	[-610] = 132738,
 	[-611] = 133575,
-	[-682] = _.asset("category_housing"),
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
 	[-723] = 135793,
