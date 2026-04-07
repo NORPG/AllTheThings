@@ -863,14 +863,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216881),	-- Duck Disguiser (TOY!)
-				-- #if BEFORE 12.0.1
 				i(216890),	-- Black Duck Disguise (CI!)
 				i(216897),	-- Brown Duck Disguise (CI!)
 				i(216898),	-- Mallard Duck Disguise (CI!)
 				i(216900),	-- Pink Duck Disguise (CI!)
 				i(216901),	-- White Duck Disguise (CI!)
 				i(216902),	-- Yellow Duck Disguise (CI!)
-				-- #endif
 				i(212608),	-- Duck Potion (QI!)
 				o(420195, {	-- Golden Egg Heirloom
 					["coord"] = { 30.4, 91.3, ELWYNN_FOREST },
@@ -886,14 +884,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216881),	-- Duck Disguiser (TOY!)
-				-- #if BEFORE 12.0.1
 				i(216890),	-- Black Duck Disguise (CI!)
 				i(216897),	-- Brown Duck Disguise (CI!)
 				i(216898),	-- Mallard Duck Disguise (CI!)
 				i(216900),	-- Pink Duck Disguise (CI!)
 				i(216901),	-- White Duck Disguise (CI!)
 				i(216902),	-- Yellow Duck Disguise (CI!)
-				-- #endif
 				i(216488),	-- Duck Potion (QI!)
 				o(424098, {	-- Golden Egg Heirloom
 					["coord"] = { 44.5, 35.2, DUROTAR },
