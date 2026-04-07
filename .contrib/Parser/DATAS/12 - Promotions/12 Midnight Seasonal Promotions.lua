@@ -172,15 +172,15 @@ root(ROOTS.Promotions, {
 			}),
 			i(264283, {	-- Backboard and Hoop Playset (DECOR!)
 				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Horde Board' at craftyourworldpromo.com to receive a code to the email you provided.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed 6 April 2026 at 11:59pm (BST)
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66709" },	-- Removed 6 April 2026 at 11:59pm (BST)
 			}),
 			i(264282, {	-- Bluebird's Golden Cage (DECOR!)
 				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Azeroth Inspiration' at craftyourworldpromo.com to receive a code to the email you provided.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed 6 April 2026 at 11:59pm (BST)
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66709" },	-- Removed 6 April 2026 at 11:59pm (BST)
 			}),
 			i(264281, {	-- Preserved Gift of Gilneas (DECOR!)
 				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed 6 April 2026 at 11:59pm (BST)
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66709" },	-- Removed 6 April 2026 at 11:59pm (BST)
 			}),
 			i(262660, {	-- Egg Farmer's Backpack (COSMETIC!)
 				["description"] = "Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",
