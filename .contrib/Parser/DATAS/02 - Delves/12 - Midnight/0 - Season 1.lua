@@ -312,10 +312,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 								-- Renown 0?
 								-- Just sym the cosmetic header
 							}),
-							i(262951, {	-- Sin'dorei Gravestone
+							i(262951, {	-- Sin'dorei Gravestone (CI!)
 								["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 								-- Renown 6
-								--["questID"] = ???,
 							}),
 						}),
 						filter(MOUNTS, {

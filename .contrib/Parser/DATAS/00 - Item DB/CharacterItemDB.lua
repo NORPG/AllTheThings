@@ -992,6 +992,7 @@ ihqt(248126, 91784);				-- Delver's Starter Kit
 ihqt(262645, 93794);				-- Beyond the Event Horizon: Alchemy
 ihqt(262644, 93795);				-- Beyond the Event Horizon: Blacksmithing
 ihqt(262646, 93796);				-- Beyond the Event Horizon: Engineering
+iq(262966, 93866);					-- Budget Friendly
 iq(262964, 93868);					-- Death's Hope
 iq(253802, 92710);					-- Deed of Patronage
 iq(262965, 93867);					-- Delver's Delight
@@ -1007,6 +1008,8 @@ is(0, 1254400);						-- Path of the Windrunners
 is(0, 1254551);						-- Path of Dark Dereliction
 is(0, 1254555);						-- Path of Unyielding Blight
 is(0, 1254557);						-- Path of the Crowning Pinnacle
+iq(262963, 93869);					-- Pious Memorial
+iq(262951, 93859);					-- Sin'dorei Gravestone
 ihqt(257600, 92374);				-- Skill Issue: Enchanting
 ihqt(257599, 93222);				-- Skill Issue: Jewelcrafting
 ihqt(257601, 93201);				-- Skill Issue: Tailoring

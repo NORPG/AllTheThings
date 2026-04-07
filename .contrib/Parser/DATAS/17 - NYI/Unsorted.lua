@@ -1029,8 +1029,6 @@ root(ROOTS.Unsorted, {
 				i(267236),	-- Boon of Speed
 				i(267242),	-- Boon of Speed
 				i(267243),	-- Boon of Vitality
-				-- Delve
-				i(262966),	-- Budget Friendly
 				-- DElve
 				i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
 				-- Cache

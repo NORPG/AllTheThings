@@ -344,6 +344,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		q(93453, {	-- A Grave Concern
 			["provider"] = { "i", 258738 },	-- A Cordial Invitation (QI!/QS!)
+			["groups"] = { i(262966), },	-- Budget Friendly (CI!)
 		}),
 	}),
 	n(RARES, {
@@ -415,7 +416,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					i(244193, {	-- L00T RAID-R Mini
 						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
-					i(262963, {	-- Pious Memorial
+					i(262963, {	-- Pious Memorial (CI!)
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(233061, {	-- Rock-in-a-Bottle
@@ -913,7 +914,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(92444, name(HEADERS.Map, THE_DARKWAY)),	-- The Darkway
 			q(91182, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
 		})),
-		q(93866, name(HEADERS.Item, 258738)),	-- Die in a delve, trigger mail with A Grave Concern
 
 		q(93819),	-- Bountiful #1, Tier 8+
 		--q(93820),	-- "Opened 2nd bountiful chest at the end of the week"
