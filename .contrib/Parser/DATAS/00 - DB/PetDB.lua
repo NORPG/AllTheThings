@@ -4620,6 +4620,7 @@ i(270330, 5036);	-- Void-Touched Dragonhawk Egg
 --- Unsorted ---
 i(269836, 5019);	-- Chubs
 i(270990, 5040);	-- Curious Lynx Kitten
+i(274266, 5065);	-- Ka'bubb
 i(269999, 5020);	-- Overloaded Manaling
 i(270061, 5021);	-- Void-Bathed Snapdragon
 i(269829, 5017);	-- Void-Scarred Eaglet
