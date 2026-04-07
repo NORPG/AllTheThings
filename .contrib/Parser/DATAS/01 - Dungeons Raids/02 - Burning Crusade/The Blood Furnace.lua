@@ -256,6 +256,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["cost"] = {
 					{ "i", 30622, 1 },	-- Flamewrought Key [A]
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265830, 1 },	-- Communal Flamewrought Key [A]
+					{ "i", 265826, 1 },	-- Communal Flamewrought Key [H]
+					-- #endif
 				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),

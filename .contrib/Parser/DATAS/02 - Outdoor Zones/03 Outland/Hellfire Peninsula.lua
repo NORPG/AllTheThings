@@ -3374,6 +3374,18 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35475)),	-- Stalker's Chain Gauntlets
 								applyclassicphase(TBC_PHASE_TWO, i(35471)),	-- Wyrmhide Gloves
 							}, {	-- Revered
+								-- #if CLASSIC_ANNIVERSARY
+								i(265829, {	-- Communal Flamewrought Pouch
+									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										i(265830, {	-- Communal Flamewrought Key
+											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
+								}),
+								-- #endif
 								i(24180),	-- Design: Dawnstone Crab (RECIPE!)
 								i(32883, {	-- Felbane Slugs
 									["timeline"] = { REMOVED_4_0_1 },
@@ -3461,6 +3473,18 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35377)),	-- Stalker's Chain Gauntlets
 								applyclassicphase(TBC_PHASE_TWO, i(35371)),	-- Wyrmhide Gloves
 							}, {	-- Revered
+								-- #if CLASSIC_ANNIVERSARY
+								i(265829, {	-- Communal Flamewrought Pouch
+									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(265826, {	-- Communal Flamewrought Key
+											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+											["races"] = HORDE_ONLY,
+										}),
+									},
+								}),
+								-- #endif
 								i(29168),	-- Ancestral Band
 								i(29167),	-- Blackened Spear
 								i(31358),	-- Design: Dawnstone Crab (RECIPE!)

@@ -7712,7 +7712,7 @@ s(134442,24064,{b=1,f=7,lvl=60,q=3,u=17}),
 i(24045,{b=1,f=52,lvl=60,q=3,u=17}),
 i(24151,{b=1,f=52,lvl=60,q=3,u=17}),
 i(24154,{b=1,f=52,lvl=60,q=3,u=17})}})}}),
-d(2,{cost={{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265826,1},{"i",265830,1},{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 ach(667,{u=17}),
 h(-19,{crs={17306,17307,17308},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
@@ -8585,7 +8585,7 @@ s(134775,24398,{b=1,f=5,lvl=61,q=3,u=17}),
 s(134774,24397,{b=1,f=4,lvl=61,q=3,u=17}),
 s(134773,24396,{b=1,f=5,lvl=61,q=3,u=17}),
 s(134772,24395,{b=1,f=4,lvl=61,q=3,u=17})}})}}),
-d(2,{cost={{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265826,1},{"i",265830,1},{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17377,17380,17381},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30601,{b=1,q=4,u=17}),
@@ -8930,7 +8930,7 @@ s(137821,27474,{b=1,f=6,lvl=70,q=3,u=17}),
 i(27529,{b=1,f=53,lvl=70,q=3,u=17}),
 s(137883,27536,{b=1,f=4,lvl=70,q=3,u=17}),
 s(137881,27534,{b=1,f=1,lvl=70,q=3,u=17})}})}}),
-d(2,{cost={{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265826,1},{"i",265830,1},{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={16807,16808,16809,20923},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30547,{b=1,q=4,u=17}),
