@@ -2305,7 +2305,6 @@ i(262661, 1269181);	-- Ghastropod
 i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
 i(262909, 1269556);	-- Hypo-Speed X6000
 i(260895, 1267002);	-- Lavender Pseudoshell
-i(257143, 1261293);	-- Peridot Dragonhawk
 i(262708, 1269280);	-- Savage Snapvine
 --- NYI ---
 i(0, 1252141);		-- [DNT] Jellyfish
@@ -2359,6 +2358,7 @@ i(257446, 1261583);	-- Insatiable Shredclaw
 i(260697, 1266703);	-- Lab-grown Stormray
 i(260231, 1265784);	-- Lucent Hawkstrider
 i(260916, 3363);	-- Nether-Swept Drake
+i(257143, 1261293);	-- Peridot Dragonhawk
 i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
 i(257192, 1261337);	-- Preyseeker's Wrath

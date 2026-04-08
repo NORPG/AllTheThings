@@ -835,8 +835,77 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["groups"] = { i(257736) },	-- Lightcalled Hearthstone (TOY!)
 				}),
 			}),
-			--header(HEADERS.AchCriteria, 42117.06, {	-- Dawn of a New Well
-			--}),
+			header(HEADERS.AchCriteria, 42117.06, {	-- Dawn of a New Well
+				q(92689, {	-- A Path Forward
+					["sourceQuest"] = 88710,	-- March on Quel'Danas
+					["qg"] = 235787,	-- Lor'themar Theron
+					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(90876, {	-- Reluctant Hand
+					["description"] = "Becomes available after accepting 'A Path Forward' (92689).",
+					["sourceQuest"] = 92689,	-- A Path Forward
+					["qg"] = 244701,	-- Grand Magister Rommath
+					["coord"] = { 53.4, 60.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(90871, {	-- The Silversun Compact
+					["description"] = "Becomes available after accepting 'A Path Forward' (92689).",
+					["sourceQuest"] = 92689,	-- A Path Forward
+					["qg"] = 244699,	-- Vereesa Windrunner
+					["coord"] = { 40.1, 89.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						-- spell(1280609),	-- Silversun Compact Regalia, rewards following item appearances (not items themselves)
+						i(267466),	-- Silversun Compact Cape (COSMETIC!)
+						i(267467),	-- Silversun Compact Tabard (COSMETIC!)
+						i(267468),	-- Silversun Compact Shoulderpads (COSMETIC!)
+					},
+				}),
+				q(90861, {	-- Those Left Behind
+					["sourceQuests"] = {
+						90876,	-- Reluctant Hand
+						90871,	-- The Silversun Compact
+					},
+					["qg"] = 235787,	-- Lor'themar Theron
+					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(90862, {	-- In Times of Need
+					["sourceQuest"] = 90861,	-- Those Left Behind
+					["qg"] = 244557,	-- Arator
+					["coord"] = { 52.7, 58.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+				}),
+				q(90867, {	-- From Darkness, Light
+					["sourceQuest"] = 90862,	-- In Times of Need
+					["qg"] = 244576,	-- Lady Liadrin
+					["coord"] = { 52.6, 46.1, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					["groups"] = {
+						i(265631),	-- Farstriders' Glory Statue (DECOR!)
+						i(265106),	-- Farstriders' Pride Statue (DECOR!)
+						i(257143),	-- Peridot Dragonhawk (MOUNT!)
+					},
+				}),
+				------ Stay awhile and listen ------
+				hqt(92802, {	-- Stay awhile and listen: Arator
+					["name"] = "Stay awhile and listen: Arator",
+					["description"] = "Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",
+					["sourceQuest"] = 90862,	-- In Times of Need
+					["qg"] = 246789,	-- Arator
+					["coord"] = { 52.6, 45.9, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+				}),
+				hqt(92810, {	-- Stay awhile and listen: Faerin Lothar
+					["name"] = "Stay awhile and listen: Faerin Lothar",
+					["description"] = "Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",
+					["sourceQuest"] = 90862,	-- In Times of Need
+					["qg"] = 253144,	-- Faerin Lothar
+					["coord"] = { 53.2, 47.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+				}),
+				hqt(92757, {	-- Stay awhile and listen: Grand Magister Rommath
+					["name"] = "Stay awhile and listen: Grand Magister Rommath",
+					["description"] = "Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",
+					["sourceQuest"] = 90862,	-- In Times of Need
+					["qg"] = 244578,	-- Grand Magister Rommath
+					["coord"] = { 51.2, 44.5, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+				}),
+				--
+			}),
 		}),
 	}),
 })));
@@ -851,7 +920,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(89196),	-- unflagged (???), after turn in questID 86839 (To Light's Hope)
 			--q(89247),	-- unflagged (???), after turn in questID 86903 (The Arcantina)
 			--q(94623),	-- Building the Voidforge	-- completed with q:92630
-			q(95247, {["timeline"] = {ADDED_12_0_0}}),	-- when picking up q:92630 in Dornogal
+			q(95247, { ["timeline"] = { ADDED_12_0_0 } }),	-- when picking up q:92630 in Dornogal
+			q(95044, { ["timeline"] = { ADDED_12_0_1 } }),	-- Triggered after turning in 'The Silversun Compact' (90871), probably related to the 'Silversun Compact Regalia' spell
 		}),
 	}),
 }));

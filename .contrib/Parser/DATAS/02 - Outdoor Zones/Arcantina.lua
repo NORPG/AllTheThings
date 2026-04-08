@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			-- Unsorted, these are part of the highly decorated achievement, need to be fitted into the rest of the structure of this file. Do not put them in HQT or you will get parser warnings.
 			hqt(92380),	-- Defense Fragment
 			hqt(92379, name(HEADERS.Item, 250876, {	-- Evergreen Vine
-				["cost"] = {{"i",250876,1}},	-- Evergreen Vine
+				["cost"] = { { "i", 250876, 1 } },	-- Evergreen Vine
 			})),
 			hqt(92382, name(HEADERS.Item, 250879, {	-- Heavy Anchor
 				i(250879),	-- Heavy Anchor

@@ -35213,7 +35213,7 @@ s(193747,210707,{b=1,cost={{"c",2003,600}},f=5,lvl=70,minReputation={2574,14}}),
 s(193741,210701,{b=1,cost={{"c",2003,600}},f=6,lvl=70,minReputation={2574,14}}),
 s(193745,210705,{b=1,cost={{"c",2003,600}},f=7,lvl=70,minReputation={2574,14}}),
 p(4308,{b=1,cost={{"c",2003,375}},itemID=210692,minReputation={2574,15},npcID=212570,questID=78888,spellID=426545}),
-p(4307,{b=1,cost={{"c",2003,375}},itemID=210691,minReputation={2574,15},npcID=212569,questID=78889,spellID=426544}),
+p(4307,{b=1,cost={{"c",2003,375}},itemID=210691,minReputation={2574,15},npcID=212569,providers={{"i",210556},{"i",210692},{"i",210870}},questID=78855,spellID=426544}),
 en(210790,{b=1,cost={{"c",2003,500}},minReputation={2574,16},questID=78599,spellID=427129,tmogSetID=3302,g={
 s(193795,210789,{f=2}),
 s(193794,210788,{f=3}),

@@ -13,10 +13,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(254773),	-- "Eversong Langern" Painting (DECOR!)
 					i(253488),	-- Diamond Honor Stone (DECOR!)
 					i(251911, {	-- Eversong Dessert Platter (DECOR!)
+						["sourceAchievement"] = 62186,	-- The Party Must Go On
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(251909, {	-- Eversong Feast Platter (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
+					i(265631, {	-- Farstriders' Glory Statue (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+					}),
+					i(265106, {	-- Farstriders' Pride Statue (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
 					i(243106),	-- Gemmed Eversong Lantern (DECOR!)
 					i(263211, {	-- Gilded Eversong Cup (DECOR!)

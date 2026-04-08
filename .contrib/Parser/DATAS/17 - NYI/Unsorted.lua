@@ -1192,7 +1192,6 @@ root(ROOTS.Unsorted, {
 				i(263450),	-- Gruffy Comfy Flying Quilt (MOUNT!) [Trading Post]
 				i(262909),	-- Hypo-Speed X6000 (MOUNT!) [Promotions?]
 				i(260895),	-- Lavender Pseudoshell (MOUNT!) [Trading Post]
-				i(257143),	-- Peridot Dragonhawk (MOUNT!) [Questline?]
 				i(262708),	-- Savage Snapvine (MOUNT!) [Trading Post]
 			}),
 			n(PVP, {
