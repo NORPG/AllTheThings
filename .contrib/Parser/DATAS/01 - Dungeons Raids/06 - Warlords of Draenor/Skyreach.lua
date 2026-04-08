@@ -186,7 +186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(258049),	-- Viryx's Indomitable Bulwark
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.MYTHIC, {["ItemAppearanceModifierID"] = 0}).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {["ItemAppearanceModifierID"] = 0}).AddGroups({
 				BossOnly(RANJIT, {
 					i(258046),	-- Chakram-Breaker Greatsword
 					i(258574),	-- Legwraps of Swirling Light
