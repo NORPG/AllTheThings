@@ -1336,6 +1336,13 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				right = GetTimePlayedString(totalTimePlayed)
 			});
 		end
+		local battleTag = character.battleTag;
+		if battleTag then
+			tinsert(tooltipInfo, {
+				left = BATTLETAG,
+				right = battleTag
+			});
+		end
 		local primeData = character.PrimeData;
 		if primeData then
 			local buildString;
