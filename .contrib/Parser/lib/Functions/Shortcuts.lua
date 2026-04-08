@@ -684,6 +684,7 @@ ChronicleOfLostMemories = function(t)
 			190598,	-- Memory of Unity (WARRIOR)
 		},
 	}
+	t._drop = { "customCollect" }
 	return i(184665, t)	-- Chronicle of Lost Memories
 end
 
@@ -2542,6 +2543,11 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	object.f = RECIPES;
 
 	-- Update the skill requirement.
+	if requireSkill then
+		if itemID ~= 0 then
+			RecipeDB[recipeID]._requireSkill = requireSkill;
+		end
+	end
 	requireSkill = requireSkill or CurrentProfessionID;
 	local originalRequireSkill = object.requireSkill;
 	if not originalRequireSkill then
@@ -2566,7 +2572,7 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 		if unobtainType == "number" then
 			-- #if ANYCLASSIC
 			-- CRIEVE NOTE: At this time, this is exclusive to Classic builds.
-			object.u = unobtainStatus;
+			RecipeDB[recipeID].u = unobtainStatus
 			-- #endif
 		elseif unobtainType == "string" then
 			object.timeline = { unobtainStatus };

@@ -645,13 +645,6 @@ namespace ATT
         internal static Dictionary<long, Dictionary<string, object>> CategoryDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
 
         /// <summary>
-        /// Populated with a set of parsed Item Dictionary datas which will conditionally be merged following the DataValidation phase. This
-        /// is useful to be able to define specific relationships on specific Items (Mount/Pet/etc.) and only incorporate the relationship if
-        /// the Item is Sourced elsewhere for the specific ATT Build
-        /// </summary>
-        internal static List<IDictionary<string, object>> ConditionalItemData { get; } = new List<IDictionary<string, object>>();
-
-        /// <summary>
         /// The CustomHeaders table from main.lua that is used to generate custom headers.
         /// </summary>
         internal static Dictionary<long, object> CustomHeaders { get; private set; }
@@ -874,7 +867,7 @@ namespace ATT
 
             if (idtype == "itemID")
             {
-                Items.TryGetName(idreference, out string name);
+                idreference.TryGetName(out string name);
                 idreference.TryRemove("_modItemID", out _);
                 Objects.Merge(idreference, "name", name);
             }
@@ -941,7 +934,7 @@ namespace ATT
         public static void SortByName(List<object> list)
         {
             // If the list is null, then return immediately.
-            if (list == null) return;
+            if (list == null || !(bool)Config["UseNameSorting"]) return;
 
             // Sort the List by Name / Bonus ID / Mod ID
             list.Sort(SortByName);
@@ -950,6 +943,25 @@ namespace ATT
             foreach (var objRef in list)
             {
                 SortByName(objRef as IDictionary<string, object>);
+            }
+        }
+
+        /// <summary>
+        /// Attempt to sort the list by the name field.
+        /// </summary>
+        /// <param name="list">The list of objects.</param>
+        public static void SortByName(List<IDictionary<string, object>> list)
+        {
+            // If the list is null, then return immediately.
+            if (list == null || !(bool)Config["UseNameSorting"]) return;
+
+            // Sort the List by Name / Bonus ID / Mod ID
+            list.Sort(SortByName);
+
+            // Check to see if the list of objects has a relative g field.
+            foreach (var objRef in list)
+            {
+                SortByName(objRef);
             }
         }
 
@@ -963,9 +975,9 @@ namespace ATT
             if (a == null) return;
 
             // If a contains relative groups, then try to sort them.
-            if (a.TryGetValue("g", out object aRef))
+            if (a.TryGetValue("g", out List<object> aRef))
             {
-                SortByName(aRef as List<object>);
+                SortByName(aRef);
             }
         }
 
@@ -1002,10 +1014,10 @@ namespace ATT
             if (b == null) return 1;
 
             // If a contains a name, then try to get it.
-            if (a.ContainsKey("itemID") && Items.Get(a).TryGetValue("name", out string aRef))
+            if (a.TryGetName(out string aRef))
             {
                 // If b contains a name, then try to get it.
-                if (b.ContainsKey("itemID") && Items.Get(b).TryGetValue("name", out string bRef))
+                if (b.TryGetName(out string bRef))
                 {
                     // Both have a name, compare them!
                     var first = Compare(aRef, bRef);
@@ -1013,13 +1025,13 @@ namespace ATT
                     {
                         // If they have the same name, then sort by BonusID/ModID.
                         // If a contains a bonusID, then try to get it.
-                        if (a.TryGetValue("bonusID", out aRef))
+                        if (a.TryGetValue("bonusID", out long aBonus))
                         {
                             // If b contains a bonusID, then try to get it.
-                            if (b.TryGetValue("bonusID", out bRef))
+                            if (b.TryGetValue("bonusID", out long bBonus))
                             {
                                 // Both have a bonusID, compare them!
-                                return Convert.ToInt64(aRef).CompareTo(bRef);
+                                return aBonus.CompareTo(bBonus);
                             }
 
                             // BonusID goes first
@@ -1027,13 +1039,13 @@ namespace ATT
                         }
 
                         // If a contains a modID, then try to get it.
-                        if (a.TryGetValue("modID", out aRef))
+                        if (a.TryGetValue("modID", out long aMod))
                         {
                             // If b contains a modID, then try to get it.
-                            if (b.TryGetValue("modID", out bRef))
+                            if (b.TryGetValue("modID", out long bMod))
                             {
                                 // Both have a modID, compare them!
-                                return Convert.ToInt64(aRef).CompareTo(bRef);
+                                return aMod.CompareTo(bMod);
                             }
 
                             // ModID goes first
@@ -1683,10 +1695,12 @@ namespace ATT
         }
         #endregion
         #region Lua Conversion
+        static bool IsIconValid(object assetID) => (assetID.TryConvert(out long lID) && IsIconValid(lID))
+                                                    || (assetID.TryConvert(out string sID) && IsIconValid(sID));
         static bool IsIconValid(long assetID)
         {
             // If Blizzard isn't being friendly to a game flavor (TBC!), we need to check the validity of icons before exporting them.
-            if (Framework.BLIZZ_ICONS_ARE_HARD)
+            if (BLIZZ_ICONS_ARE_HARD)
             {
                 return AssetDB.ContainsKey(assetID);
             }
@@ -1695,7 +1709,7 @@ namespace ATT
         static bool IsIconValid(string icon)
         {
             // If Blizzard isn't being friendly to a game flavor (TBC!), we need to check the validity of icons before exporting them.
-            if (Framework.BLIZZ_ICONS_ARE_HARD)
+            if (BLIZZ_ICONS_ARE_HARD)
             {
                 if (long.TryParse(icon, out long assetID))
                 {
@@ -2597,7 +2611,7 @@ namespace ATT
                                     if (item.TryGetValue("mountID", out long spellID))
                                     {
                                         builder.Append("i(").Append(itemID).Append(", ").Append(spellID).Append(");");
-                                        if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
+                                        if (item != null && item.TryGetName(out string name)) builder.Append("\t-- ").Append(name);
                                         builder.AppendLine();
                                     }
                                     else if (item.TryGetValue("f", out long f) && f == 100)
@@ -2605,7 +2619,7 @@ namespace ATT
                                         builder.Append("i(").Append(itemID);
                                         if (item.TryGetValue("spellID", out spellID)) builder.Append(", ").Append(spellID);
                                         builder.Append(");");
-                                        if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
+                                        if (item != null && item.TryGetName(out string name)) builder.Append("\t-- ").Append(name);
                                         builder.AppendLine();
                                     }
                                 }

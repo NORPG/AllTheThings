@@ -49,6 +49,20 @@ namespace ATT
             handler.AddConditionAction(condition, act);
         }
 
+        /// <summary>
+        /// Allows running the Handlers defined for a specific <see cref="ParseStage"/> against a given data object
+        /// </summary>
+        public static void RunHandlerActionForData(ParseStage stage, IDictionary<string, object> data)
+        {
+            if (!Handlers.TryGetValue(stage, out var handler))
+            {
+                LogWarn($"No handlers found for stage {stage}");
+                return;
+            }
+
+            handler.RunActions(data);
+        }
+
         private static void AddDataForHandlers(IDictionary<string, object> data)
         {
             if (CurrentParseStageHandler != null)
@@ -71,8 +85,10 @@ namespace ATT
             new ConcurrentDictionary<long, string>();
         public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(object _) =>
             new ConcurrentDictionary<string, object>();
-        public static ConcurrentDictionary<object, ConcurrentDictionary<string, object>> NewConcurrentDictionary_object_string_object(object _) =>
-            new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>();
+        public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(decimal _) =>
+            new ConcurrentDictionary<string, object>();
+        public static ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>> NewConcurrentDictionary_decimal_string_object(object _) =>
+            new ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>>();
         public static ConcurrentDictionary<string, ConcurrentDictionary<string, object>> NewConcurrentDictionary_string_string_object(long _) =>
             new ConcurrentDictionary<string, ConcurrentDictionary<string, object>>();
         public static ConcurrentDictionary<decimal, ConcurrentDataList> NewConcurrentDictionary_decimal_ConcurrentDataList(string _) =>
@@ -90,22 +106,6 @@ namespace ATT
         /// </summary>
         public static void Process()
         {
-            // Combine DB information
-            // Achievements
-            MergeAchievementDB(WagoData.GetAll<Achievement>().Values.Select(i => i.GetExportableData()), true);
-
-            // Items
-            MergeItemDB(WagoData.GetAll<Item>().Values.Select(i => i.GetExportableData()));
-
-            // Item Search Name (Quality, Required Skills, Item Level, Race/Class Requirements)
-            MergeItemDB(WagoData.GetAll<ItemSearchName>().Values.Select(i => i.GetExportableData()));
-
-            // House Decor
-            MergeItemDB(WagoData.GetAll<HouseDecor>().Values.Select(i => i.GetExportableData()));
-
-            // Recipe Skill lines
-            MergeRecipeDB(WagoData.GetAll<SkillLineAbility>().Values.Select(i => i.GetExportableData()));
-
             // GlyphGB
             foreach (var glyph in WagoData.GetAll<GlyphProperties>().Values)
             {
@@ -241,11 +241,12 @@ namespace ATT
             Validator.OnlyClean = true;
             ProcessingFunction = DataConsolidation;
             ProcessContainers();
-            RunCurrentParseStageHandlers();
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
             if (worldDrops != null) SortByName(worldDrops);
+
+            RunCurrentParseStageHandlers();
 
             // Build the Unsorted Container.
             CurrentParseStage = ParseStage.UnsortedGeneration;
@@ -480,12 +481,12 @@ namespace ATT
                         && !pair.Value.TryGetValue("nextQuests", out object nextQuests))
                     {
                         // Breadcrumb quest without next quests information
-                        orphanedBreadcrumbs.Add(pair.Key is long key ? key : 0);
+                        orphanedBreadcrumbs.Add(pair.Key);
                     }
                 }
 
                 var unsortedQuests = new List<object>();
-                long maxQuestID = questDB.Max(x => x.Key is long key ? key : 0);
+                long maxQuestID = (long)questDB.Max(x => x.Key);
                 for (long i = 1; i <= maxQuestID; i++)
                 {
                     // add any quest information which is not sourced/referenced but includes more than just a questID into the Unsorted category
@@ -593,22 +594,7 @@ namespace ATT
         private static void AdditionalProcessing()
         {
             // Clean out any temporary containers
-            string[] temporaryKeys = Objects.AllContainers.Keys.Where(k => k[0] == '_').ToArray();
-            temporaryKeys.All(k => Objects.AllContainers.Remove(k));
-
-            // Merge conditional data
-            foreach (var data in ConditionalItemData)
-            {
-                Items.Merge(data, true);
-                Objects.MergeFromDB("itemID", data);
-            }
-
-            // Go through and merge all of the item species data into the item containers.
-            foreach (var pair in Items.AllItemsWithSpecies)
-            {
-                var item = Items.GetNull(pair.Key);
-                if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
-            }
+            Objects.AllContainers.Keys.Where(k => k[0] == '_').ToArray().Select(k => Objects.AllContainers.Remove(k)).Count();
         }
 
         /// <summary>
@@ -651,6 +637,8 @@ namespace ATT
                 // Capture references to specified Debug DB keys for Debug output
                 CaptureDebugDBData(data);
             }
+
+            // data.DataBreakPoint("_DEBUG", true);
 
             // Cache the state of values that are inherited from parent objects to their children.
 
@@ -729,15 +717,18 @@ namespace ATT
             // handle the current processing against the data
             bool success = true;
 
-            // data.DataBreakPoint("_DEBUG", true);
-            //bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == Config["TEMP_itemID"];
-            //if (track)
-            //    Log($"Tracking Item: {tempItemID} before {CurrentParseStage} stage", data);
+            long configTrackItemID = (long)Config["TRACK_itemID"];
+            bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == configTrackItemID;
+            if (track)
+            {
+                Log($"Item Data: {tempItemID} before {CurrentParseStage} Process", data);
+            }
             if (ProcessingFunction(data, parentData))
             {
-                //if (track)
-                //    Log($"Tracking Item: {tempItemID} after {CurrentParseStage} stage", data);
-                // Store the parent relationship
+                if (track)
+                {
+                    Log($"Item Data: {tempItemID} after {CurrentParseStage} Process", data);
+                }
                 data["__parent"] = parentData;
 
                 // Add this data to the necessary Handlers for the current Parse Stage
@@ -941,6 +932,16 @@ namespace ATT
                 else MarkPhaseAsRequired(phase);
             }
 
+            // If this has an Icon, make sure it's valid
+            if (data.TryGetValue("icon", out object icon))
+            {
+                if (!IsIconValid(icon))
+                {
+                    LogWarn($"Invalid icon '{icon}' specified, removing field.", data);
+                    data.Remove("icon");
+                }
+            }
+
             return true;
         }
 
@@ -1123,6 +1124,11 @@ namespace ATT
             // OnInit references should be stored in ExportDB.OnClickDB, so mark those which are referenced
             CheckExportDataRefs(data, "OnClick");
 
+            Consolidate_TrackUsage(data);
+        }
+
+        private static void Consolidate_Cleaning(IDictionary<string, object> data)
+        {
             // convert the 'name' into an auto-localized type
             if (data.TryGetValue("name", out string name))
             {
@@ -1140,11 +1146,6 @@ namespace ATT
                 }
             }
 
-            Consolidate_TrackUsage(data);
-        }
-
-        private static void Consolidate_Cleaning(IDictionary<string, object> data)
-        {
             CheckObjectConversion(data);
 
             List<string> removeKeys = new List<string>();
@@ -1209,12 +1210,7 @@ namespace ATT
             }
             else
             {
-                ConcurrentDataList sortedg = new ConcurrentDataList();
-                foreach (IDictionary<string, object> subdata in sort_g.AsTypedEnumerable<IDictionary<string, object>>())
-                {
-                    sortedg.Add(subdata);
-                }
-
+                ConcurrentDataList sortedg = new ConcurrentDataList(sort_g.AsTypedEnumerable<IDictionary<string, object>>());
                 Objects.Merge(data, "g", sortedg);
             }
         }
@@ -1348,10 +1344,12 @@ namespace ATT
                 // we need to apply that logic to this data specifically as well
                 // but don't capture that this item is actually sourced within the ensemble
                 DoConditionalDataMerging(source);
-                Objects.AssignFilterID(source);
+                RunHandlerActionForData(ParseStage.ConditionalData, source);
+                RunHandlerActionForData(ParseStage.Consolidation, source);
                 // skip consolidation step since all the data is generated for this object and doesn't need further cleanup
                 CaptureDebugDBData(source);
             }
+            SortByName(rawSources);
             Objects.Merge(data, "g", rawSources);
 
             // when Blizzard references a questID and tmogSetID which conflict from the same SpellID on an Item, we end up with one Item potentially granting 2 TransmogSets
@@ -2213,15 +2211,10 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
-            // Grab AchievementDB info
-            ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
 
             // Guild Achievements are not collectible
-            if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
+            if (data.TryGetValue("isGuild", out bool isGuild) && isGuild)
             {
-                //data["collectible"] = false;  // This is now handled in the class.
-                data["isGuild"] = true;
-
                 // Make sure any Criteria which are listed under Guild Achievements are also forced non-collectible
                 if (data.TryGetValue("g", out List<object> g))
                 {
@@ -2285,7 +2278,7 @@ namespace ATT
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             // TODO: include the WagoDB Achievement Data somehow...
-            if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
+            if (data.TryGetValue("_criteriaTreeID", out long criteriaTreeID) &&
                 WagoData.TryGetValue(criteriaTreeID, out CriteriaTree criteriaTree))
             {
                 // Some Achievements we use specific symlinks to show information instead of Criteria (for pre-CATA parses)
@@ -2322,11 +2315,9 @@ namespace ATT
                 return;
 
             data.TryGetValue("achID", out long achID);
-            // Grab AchievementDB info
-            ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
             IDictionary<string, object> matchedCriteriaInfo = null;
 
-            if (achInfo.TryGetValue("g", out List<object> criteriaList))
+            if (data.TryGetValue("g", out List<object> criteriaList))
             {
                 if (criteriaList.Count >= criteriaID)
                 {
@@ -3770,7 +3761,7 @@ namespace ATT
                 int encIndex = 0;
                 while (encIndex < encounterListData.Count)
                 {
-                    decimal encounterHash = GetEncounterHash(encounterListData[encIndex], encounterListData.Count > 1 ? encounterListData[encIndex + 1] : 0);
+                    decimal encounterHash = GetEncounterHash(encounterListData[encIndex], encounterListData.Count > encIndex + 1 ? encounterListData[encIndex + 1] : 0);
                     DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
                     encIndex += 2;
                 }
@@ -4167,6 +4158,13 @@ namespace ATT
                 data.Remove("r");
             }
 
+            // _requireSkill should replace requireSkill since it is directly assigned in contrib ProfessionDB for a Recipe
+            if (data.TryGetValue("requireSkill", out long requireSkill) && data.TryGetValue("_requireSkill", out long _requireSkill) && requireSkill != _requireSkill)
+            {
+                LogWarn($"Conflicting fields: requireSkill in data [{requireSkill}] differs from assigned DB value [{_requireSkill}]. Fix or remove the requireSkill value in either source to prevent this warning", data);
+                data["requireSkill"] = _requireSkill;
+            }
+
             // Sourced BoE Items with requireSkill which are not directly linked to a Profession-based Filter
             if (data.ContainsKey("requireSkill") &&
                 data.ContainsKey("itemID") &&
@@ -4179,6 +4177,13 @@ namespace ATT
                     LogDebug($"INFO: Conflicting fields: b/f/requireSkill. Dropping 'requireSkill' as pre-caution.", data);
                     data.Remove("requireSkill");
                 }
+            }
+
+            // requireSkill & skillID -- don't need to both exist if identical
+            if (data.TryGetValue("requireSkill", out requireSkill) && data.TryGetValue("skillID", out long skillID) && requireSkill == skillID)
+            {
+                LogDebug($"INFO: Conflicting fields: requireSkill & skillID have identical values. Dropping 'skillID'", data);
+                data.Remove("skillID");
             }
 
             // awp & rwp
@@ -4274,7 +4279,9 @@ namespace ATT
             }
 
             // Titles under Guild Achievements (Hall of Fame) are not 'really' collectible since they are tied to the Guild
-            if (data.TryGetValue("titleID", out long titleID) && data.TryGetValue("__parent", out IDictionary<string, object> parent) && parent.TryGetValue("isGuild", out bool isGuild))
+            if (data.TryGetValue("titleID", out long titleID)
+                && data.TryGetValue("__parent", out IDictionary<string, object> parent)
+                && parent.TryGetValue("isGuild", out bool isGuild) && isGuild)
             {
                 data["collectible"] = false;
                 LogDebug($"INFO: HoF Guild Achievement Title marked uncollectible: achID={titleID}", data);
@@ -4310,7 +4317,7 @@ namespace ATT
                 && !data.ContainsKey("illusionID")
                 && data.TryGetValue("questID", out long questID))
             {
-                Items.TryGetName(data, out string name);
+                data.TryGetName(out string name);
 
                 if (TryGetSOURCED("questID", questID, out var referencedAsQuest))
                 {
@@ -4333,7 +4340,7 @@ namespace ATT
                 {
                     if (data.TryGetValue("recipeID", out long recipeID))
                     {
-                        Items.TryGetName(data, out string name);
+                        data.TryGetName(out string name);
                         LogDebug($"INFO: Removing invalid Recipe {recipeID} data from Item '{name}' due to Filter {filter}", data);
                         data.Remove("requireSkill");
                         data.Remove("recipeID");
@@ -4463,10 +4470,16 @@ namespace ATT
 
         private static void CheckObjectConversion(IDictionary<string, object> data)
         {
-            if (ObjectData.TryFindObjectConversion(data, out ObjectData conversionObject, out object convertValue))
+            if (ObjectData.TryFindObjectConversion(data, out ObjectData conversionObject, out decimal convertValue))
             {
-                LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
                 data.Remove("type");
+                // don't convert if the converted key is an invalid value
+                if (convertValue <= 0)
+                {
+                    LogDebugWarn($"Type Conversion for {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} failed due to bad-value converted value: {convertValue}", data);
+                    return;
+                }
+                LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
                 data.Remove(conversionObject.ConvertedKey);
                 data[conversionObject.ObjectType] = convertValue;
             }
@@ -4475,7 +4488,12 @@ namespace ATT
         private static void IncrementTypeUseCount(string key, decimal id)
         {
             ConcurrentDictionary<decimal, int> idCounts = TypeUseCounts[key];
-            idCounts.AddOrUpdate(id, 1, (k, count) => count + 1);
+            idCounts.AddOrUpdate(id, 1, IncrementCount());
+
+            Func<decimal, int, int> IncrementCount()
+            {
+                return (k, count) => count + 1;
+            }
         }
 
         /// <summary>
@@ -4884,7 +4902,7 @@ namespace ATT
             if (!data.TryGetValue("requireSkill", out long requiredSkill))
                 return;
 
-            Items.TryGetName(data, out string name);
+            data.TryGetName(out string name);
             // see if a matching recipe name exists for this skill, and use that recipeID
             if (Objects.FindRecipeForData(requiredSkill, data, out long recipeID))
             {

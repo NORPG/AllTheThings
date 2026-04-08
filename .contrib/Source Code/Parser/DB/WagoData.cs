@@ -129,6 +129,21 @@ namespace ATT.DB
         }
 
         /// <summary>
+        /// Get the exportable data for a given module.
+        /// </summary>
+        /// <param name="o">The object.</param>
+        /// <returns>The exportable data.</returns>
+        public static IEnumerable<IDictionary<string, object>> GetExportableData(string moduleName)
+        {
+            if (DataModuleAttribute.GetAllDataModules().TryGetValue(moduleName, out var module))
+            {
+                var getExportableData = typeof(Cache<>).MakeGenericType(module).GetMethod("GetAllExportable", BindingFlags.Public | BindingFlags.Static);
+                return (IEnumerable<IDictionary<string, object>>)getExportableData.Invoke(null, Array.Empty<object>());
+            }
+            return null;
+        }
+
+        /// <summary>
         /// The cached generic methods used by the default LoadFromCSV function.
         /// </summary>
         private static readonly ConcurrentDictionary<string, MethodInfo> CachedGenericMethods = new ConcurrentDictionary<string, MethodInfo>();
@@ -1220,6 +1235,10 @@ namespace ATT.DB
 
                 Framework.LogDebug($"INFO: Wago Type {ParseType.Name} Loaded with {CachedData.Count} entries");
             }
+
+            public static IEnumerable<Dictionary<string, object>> GetAllExportable() => ExportableDataProperties is null
+                ? Array.Empty<Dictionary<string, object>>()
+                : CachedData.Values.Select(GetExportableData);
             #endregion
             #region Localized Data Caching + Checking
             /// <summary>

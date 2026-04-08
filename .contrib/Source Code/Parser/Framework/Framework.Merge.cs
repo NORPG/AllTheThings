@@ -52,14 +52,14 @@ namespace ATT
                             {
                                 foreach (var itemValuePair in itemDB)
                                 {
-                                    MergeKvpToItemDB(itemValuePair);
+                                    MergeKvpToConditionalData(itemValuePair);
                                 }
                             }
                             else if (pair.Value is Dictionary<decimal, object> modItemDB)
                             {
                                 foreach (var itemValuePair in modItemDB)
                                 {
-                                    MergeKvpToItemDB(itemValuePair);
+                                    MergeKvpToConditionalData(itemValuePair);
                                 }
                             }
                             else if (pair.Value is List<object> items)
@@ -68,7 +68,7 @@ namespace ATT
                                 {
                                     if (o is IDictionary<string, object> item)
                                     {
-                                        Items.MergeFromDB(item);
+                                        Objects.MergeFromDB("itemID", item);
                                     }
                                     else
                                     {
@@ -107,7 +107,6 @@ namespace ATT
                                     if (o is IDictionary<string, object> item)
                                     {
                                         Objects.MergeFromDB("itemID", item);
-                                        ConditionalItemData.Add(item);
                                     }
                                     else
                                     {
@@ -140,8 +139,8 @@ namespace ATT
                                 {
                                     if (itemValuePair.Value is IDictionary<string, object> item)
                                     {
-                                        var itemSpecies = Items.GetWithSpecies(itemValuePair.Key);
-                                        foreach (var p in item) Items.Merge(itemSpecies, p.Key, p.Value);
+                                        item["itemID"] = itemValuePair.Key;
+                                        Objects.MergeFromDB("itemID", item);
                                     }
                                     else
                                     {
@@ -611,24 +610,10 @@ namespace ATT
             {
                 item["itemID"] = itemValuePair.Key;
                 Objects.MergeFromDB("itemID", item);
-                ConditionalItemData.Add(item);
             }
             else
             {
                 ThrowBadFormatDB("ItemConditionalDB", itemValuePair);
-            }
-        }
-
-        private static void MergeKvpToItemDB<TKey>(KeyValuePair<TKey, object> itemValuePair)
-        {
-            if (itemValuePair.Value is IDictionary<string, object> item)
-            {
-                item["itemID"] = itemValuePair.Key;
-                Items.MergeFromDB(item);
-            }
-            else
-            {
-                ThrowBadFormatDB("ItemDB", itemValuePair);
             }
         }
 
@@ -882,13 +867,13 @@ namespace ATT
             }
         }
 
-        private static void DBMerge(IEnumerable<object> dbList, string keyID)
+        public static void DBMerge(IEnumerable<object> dbList, string keyID, bool relaxed = false)
         {
             foreach (var o in dbList)
             {
                 if (o is IDictionary<string, object> data)
                 {
-                    DBMerge(data, keyID);
+                    DBMerge(data, keyID, relaxed);
                 }
                 else
                 {
@@ -897,14 +882,13 @@ namespace ATT
             }
         }
 
-        private static void DBMerge(IDictionary<string, object> data, string keyID)
+        public static void DBMerge(IDictionary<string, object> data, string keyID, bool relaxed = false)
         {
             if (data.ContainsKey(keyID))
             {
                 Objects.MergeFromDB(keyID, data);
-                Items.MergeFromDB(data);
             }
-            else
+            else if (!relaxed)
             {
                 LogError($"Trying to merge DB data which doesn't have the expected Merge Key! {keyID}", data);
             }
