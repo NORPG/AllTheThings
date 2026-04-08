@@ -47,16 +47,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["isWeekly"] = true,
 					--["groups"] = { i(229129) },	-- Cache of Delver's Spoils TODO: currently - Cache of Quel'Thalas Treasures (N)
 				}),
-			--	q(XXXX, {	-- Emissary of War
-			--		["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreaver
-			--		["coord"] = { 48.8, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-			--		["isWeekly"] = true,
-			--		["groups"] = {
-			--			i(250117, {	-- Cache of Quel'Thalas Treasures (H)
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-			--			}),
-			--		},
-			--	}),
+				q(93598, {	-- Emissary of War
+					["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreaver
+					["coord"] = { 48.8, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isWeekly"] = true,
+					["groups"] = {
+						i(250117, {	-- Cache of Quel'Thalas Treasures (H)
+							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

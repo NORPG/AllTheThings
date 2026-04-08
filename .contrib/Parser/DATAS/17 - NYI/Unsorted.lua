@@ -1031,8 +1031,6 @@ root(ROOTS.Unsorted, {
 				i(267243),	-- Boon of Vitality
 				-- DElve
 				i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
-				-- Cache
-				i(250117),	-- Cache of Quel'Thalas Treasures
 				-- Boon?
 				i(260910),	-- Boon of Vitality
 			}),
