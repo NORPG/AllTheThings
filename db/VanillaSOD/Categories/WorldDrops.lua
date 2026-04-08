@@ -1,4 +1,4 @@
-﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
+﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
@@ -3233,7 +3233,7 @@ r(17564,{itemID=13487,learnedAt=275,q=2,requireSkill=171})}),
 prof(164,{
 r(9995,{itemID=7992,learnedAt=220,q=2,requireSkill=164}),
 r(3321,{itemID=3609,learnedAt=35,q=2,requireSkill=164}),
-r(16660,{awp=11503,itemID=12698,learnedAt=290,q=3,requireSkill=164}),
+r(16660,{awp=11503,itemID=12698,learnedAt=290,minReputation={529,21000},q=3,requireSkill=9788}),
 r(10005,{itemID=7993,learnedAt=240,q=2,requireSkill=164}),
 r(3295,{itemID=2883,learnedAt=125,q=2,requireSkill=164}),
 r(3497,{itemID=3868,learnedAt=200,q=2,requireSkill=164}),

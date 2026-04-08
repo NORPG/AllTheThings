@@ -1,22 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local flt,h,i,prof,q,r,s,x=_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateExpansion;
+local h,q=_.CreateCustomHeader,_.CreateQuest;
 categories.Unsorted={
-x(2,{
-flt(4,{
-s(133747,23349,{f=4,q=1}),
-s(201246,23472,{f=4,q=1})})}),
-x(4,{
-flt(200,{
-prof(185,{
-r(6417,{b=1,itemID=44977,q=1,requireSkill=185})}),
-prof(773,{
-r(71015,{itemID=50167,requireSkill=773})})})}),
-x(5,{
-flt(200,{
-prof(165,{
-i(86286,{b=1,f=200,q=3,requireSkill=165})})})}),
 h(-45,{
 q(38932,{lc={1,"achID",10372}}),
 q(39355,{lc={1,"achID",10378}}),

@@ -14803,8 +14803,8 @@ n(15174,{awp=40003,coords={
 r(17576,{isLimited=1,itemID=13496,learnedAt=290,q=2,requireSkill=171})}}),
 n(15419,{coords={
 [1451]={{55.6,37.2}}},sym={{"select","itemID",20753,20752,20758,22307}},g={
-r(25081,{b=1,itemID=20732,learnedAt=300,q=1,requireSkill=333,rwp=50004,u=15}),
-r(25082,{b=1,itemID=20733,learnedAt=300,q=1,requireSkill=333,rwp=50004,u=15}),
+r(25081,{b=1,itemID=20732,learnedAt=300,minReputation={609,3000},q=1,requireSkill=333,rwp=50004,u=15}),
+r(25082,{b=1,itemID=20733,learnedAt=300,minReputation={609,9000},q=1,requireSkill=333,rwp=50004,u=15}),
 r(25127,{itemID=20754,learnedAt=250,q=1,requireSkill=333,u=15}),
 r(25128,{itemID=20755,learnedAt=275,q=1,requireSkill=333,u=15}),
 r(27659,{itemID=22308,learnedAt=275,q=1,requireSkill=197,u=15})}}),
@@ -18089,7 +18089,7 @@ q(8481,{coords={
 [1448]={{64.4,5.1}}},lvl=45,maps={1452},minReputation={576,42000},qgs={11555},g={
 qo(1,{coords={
 [1452]={{68,37.6}}},cost={{"i",21144,1}},crs={15623},providers={{"i",21145}}}),
-i(21326,{b=1,f=53,q=4})}}),
+i(21326,{b=1,f=53,minReputation={576,42000},q=4})}}),
 q(8460,{altQuests={6131},coords={
 [1448]={{50.9,85}}},lvl=45,qgs={11554},rwp=40003,u=2,g={
 qo(1,{providers={{"n",7153}},u=2}),
@@ -26951,12 +26951,12 @@ crit(1159,{achID=777,id=1})}})}),
 h(-58,{
 n(18255,{coords={
 [1430]={{47.2,75}}},u=17,g={
-r(38503,{b=1,itemID=31401,learnedAt=375,q=4,requireSkill=755,u=17}),
-r(42620,{awp=20300,b=1,itemID=33165,learnedAt=350,q=1,requireSkill=333,u=19}),
-r(42546,{awp=20200,b=1,itemID=33124,learnedAt=360,q=3,requireSkill=165,u=19}),
-r(42731,{awp=20200,b=1,itemID=33205,learnedAt=365,q=4,requireSkill=165,u=19}),
-r(42736,{awp=20200,itemID=33209,learnedAt=375,q=2,requireSkill=171,rwp=50004,u=19}),
-i(29187,{b=1,lvl=70,q=2,u=17})}})}),
+r(38503,{b=1,itemID=31401,learnedAt=375,minReputation={967,9000},q=4,requireSkill=755,u=17}),
+r(42620,{awp=20300,b=1,itemID=33165,learnedAt=350,minReputation={967,42000},q=1,requireSkill=333,u=19}),
+r(42546,{awp=20200,b=1,itemID=33124,learnedAt=360,minReputation={967,42000},q=3,requireSkill=165,u=19}),
+r(42731,{awp=20200,b=1,itemID=33205,learnedAt=365,minReputation={967,21000},q=4,requireSkill=165,u=19}),
+r(42736,{awp=20200,itemID=33209,learnedAt=375,minReputation={967,9000},q=2,requireSkill=171,rwp=50004,u=19}),
+i(29187,{b=1,lvl=70,minReputation={967,9000},q=2,u=17})}})}),
 h(-63,{
 r(20010,{crs={7372},itemID=16246,learnedAt=295,q=2,requireSkill=333})})}}),
 m(499,{icon=133861,lore="The Deeprun Tram is a long, fully enclosed, underground (and partially underwater) set of double tracks upon which rolls two sets of three wagons, all credited to the gnomes' technical engineering. The service is fast and smooth, and is provided free of charge to travelers between the Alliance-aligned cities of Ironforge and Stormwind City.",["zone-text-areaID"]=2257,g={
@@ -39071,14 +39071,14 @@ s(208186,62404,{b=1,f=5,lvl=83,minReputation={1172,9000},q=3,r=1}),
 s(208188,62406,{b=1,f=4,lvl=83,minReputation={1172,9000},q=3,r=1}),
 s(208187,62405,{b=1,f=5,lvl=83,minReputation={1172,9000},q=3,r=1}),
 i(62416,{b=1,f=51,lvl=85,minReputation={1172,21000},q=4}),
-s(208193,62417,{b=1,f=5,lvl=85,minReputation={1172,42000},q=4,r=1}),
-s(208195,62420,{b=1,f=5,lvl=85,minReputation={1172,42000},q=4,r=1}),
-s(208194,62418,{b=1,f=7,lvl=85,minReputation={1172,42000},q=4,r=1}),
+s(208193,62417,{b=1,f=5,lvl=85,minReputation={1172,21000},q=4,r=1}),
+s(208195,62420,{b=1,f=5,lvl=85,minReputation={1172,21000},q=4,r=1}),
+s(208194,62418,{b=1,f=7,lvl=85,minReputation={1172,21000},q=4,r=1}),
 i(62368,{b=2,description="This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",f=55,lvl=85,minReputation={1172,21000},q=7,rwp=50004}),
 i(68763,{b=1,f=55,lvl=85,minReputation={1172,21000},q=7,rwp=50004}),
-s(208192,62410,{b=1,f=7,lvl=85,minReputation={1172,21000},q=3,r=1}),
-s(208191,62409,{b=1,f=6,lvl=85,minReputation={1172,21000},q=3,r=1}),
-s(208190,62408,{b=1,f=7,lvl=85,minReputation={1172,21000},q=3,r=1}),
+s(208192,62410,{b=1,f=7,lvl=85,minReputation={1172,42000},q=3,r=1}),
+s(208191,62409,{b=1,f=6,lvl=85,minReputation={1172,42000},q=3,r=1}),
+s(208190,62408,{b=1,f=7,lvl=85,minReputation={1172,42000},q=3,r=1}),
 i(62415,{b=1,f=52,lvl=85,minReputation={1172,42000},q=3})}}),
 n(49549,{coords={
 [241]={{77.2,52.8}}},r=1,sym={{"select","itemID",2451,62260,62261,62262,62266,62263,62264,62265,62253,62254,62255,62256,62257,62259,62258,17190}}}),
@@ -42249,9 +42249,9 @@ s(145113,35375,{b=1,c={11},f=5,lvl=70,minReputation={935,9000},q=3,u=18}),
 s(139526,29180,{b=1,f=6,lvl=70,minReputation={935,21000},q=3,u=17}),
 r(42592,{awp=20200,b=1,itemID=33159,learnedAt=360,minReputation={935,21000},q=1,requireSkill=755,u=17}),
 r(31082,{b=1,itemID=24182,learnedAt=370,minReputation={935,21000},q=3,requireSkill=755,u=17}),
-s(145097,35359,{b=1,c={11},f=5,lvl=70,minReputation={935,9000},q=3,u=18}),
-s(145072,35330,{b=1,c={9},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
-s(145087,35345,{b=1,c={8},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
+s(145097,35359,{b=1,c={11},f=5,lvl=70,minReputation={935,21000},q=3,u=18}),
+s(145072,35330,{b=1,c={9},f=4,lvl=70,minReputation={935,21000},q=3,u=18}),
+s(145087,35345,{b=1,c={8},f=4,lvl=70,minReputation={935,21000},q=3,u=18}),
 r(27926,{b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333,u=17}),
 r(34010,{b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},q=2,rwp=50004,u=17}),

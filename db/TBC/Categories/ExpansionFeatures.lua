@@ -5,11 +5,11 @@ local ach,ah,faction,h,i,mnt,n,prof,q,qo,s,x=_.CreateAchievement,_.CreateHeader,
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
 x(2,{awp=20100,g={
-ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",lvl=70,maps={1948},type="fa",u=1901,g={
+ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={1948},type="fa",u=1901,g={
 h(-12,{u=1901,g={
 ach(898,{minReputation={1015,42000},u=1901})}}),
 h(-31,{u=1901,g={
-faction(1015,{OnTooltip=_.OnTooltipDB.ForNetherwing,u=1901})}}),
+faction(1015,{icon=132250,OnTooltip=_.OnTooltipDB.ForNetherwing,u=1901})}}),
 prof(182,{u=1901,g={
 i(32468,{providers={{"o",185881}},q=1,u=1901})}}),
 prof(186,{u=1901,g={
@@ -71,7 +71,7 @@ q(11014,{coords={
 [1948]={{66.2,85.6}}},qgs={23139},sourceQuests={11013},u=1901}),
 q(11092,{coords={
 [1948]={{66,86.4}}},minReputation={1015,21000},qgs={23140},sourceQuests={11084},u=1901,g={
-i(32864,{b=1,f=53,q=3,u=1901})}}),
+i(32864,{b=1,f=53,minReputation={1015,21000},q=3,u=1901})}}),
 q(11013,{coords={
 [1948]={{59.3,58.7}}},qgs={22113},sourceQuests={11012},u=1901}),
 q(11109,{coords={
@@ -102,14 +102,14 @@ q(11076,{coords={
 qo(1,{providers={{"i",32723},{"o",185939}},u=1901})}}),
 q(11053,{coords={
 [1948]={{66,86.4}}},minReputation={1015,3000},qgs={23140},sourceQuests={11014},u=1901,g={
-i(32694,{b=1,f=53,q=2,u=1901})}}),
+i(32694,{b=1,f=53,minReputation={1015,3000},q=2,u=1901})}}),
 q(11082,{coords={
 [1948]={{63,87.8}}},qgs={23149},sourceQuests={11081},u=1901,g={
 qo(1,{providers={{"i",32734}},u=1901}),
 qo(2,{providers={{"n",23309}},u=1901})}}),
 q(11084,{coords={
 [1948]={{66,86.4}}},minReputation={1015,9000},qgs={23140},sourceQuests={11053},u=1901,g={
-i(32695,{b=1,f=53,q=3,u=1901})}}),
+i(32695,{b=1,f=53,minReputation={1015,9000},q=3,u=1901})}}),
 q(11090,{coords={
 [1948]={{66.2,85.6}}},maps={1951},qgs={23427},sourceQuests={11089},u=1901,g={
 qo(1,{coords={
@@ -167,5 +167,5 @@ i(32621,{b=1,coords={
 [1948]={{74.6,86.5}}},crs={23267},lvl=70,minReputation={1015,0},q=1,u=1901}),
 i(32724,{b=1,coords={
 [1948]={{69.4,86}}},crs={23286},q=1,sym={{"select","itemID",32506,32464,32468,32470}},u=1901,g={
-i(32726,{b=1,lvl=70,q=1,u=1901})}})}})}})}})}});
+i(32726,{b=1,lvl=70,minReputation={1015,3000},q=1,u=1901})}})}})}})}})}});
 end);

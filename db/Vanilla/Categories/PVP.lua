@@ -1,4 +1,4 @@
-﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end 
+﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
@@ -990,10 +990,10 @@ s(164245,20209,{b=1,f=7,lvl=40,minReputation={510,21000},pvp=1,q=3}),
 s(164244,20208,{b=1,f=7,lvl=58,minReputation={510,21000},pvp=1,q=3}),
 s(164247,20211,{b=1,f=7,lvl=48,minReputation={510,21000},pvp=1,q=3}),
 s(164246,20210,{b=1,f=6,filterForRWP=7,lvl=28,minReputation={510,21000},pvp=1,q=3}),
-i(20072,{b=1,f=53,lvl=58,pvp=1,q=3}),
-i(21115,{b=1,f=53,lvl=48,pvp=1,q=3}),
-i(21116,{b=1,f=53,lvl=38,pvp=1,q=3}),
-i(21120,{b=1,f=53,lvl=28,pvp=1,q=3})}}),
+i(20072,{b=1,f=53,lvl=58,minReputation={510,3000},pvp=1,q=3}),
+i(21115,{b=1,f=53,lvl=48,minReputation={510,3000},pvp=1,q=3}),
+i(21116,{b=1,f=53,lvl=38,minReputation={510,3000},pvp=1,q=3}),
+i(21120,{b=1,f=53,lvl=28,minReputation={510,3000},pvp=1,q=3})}}),
 n(15127,{coords={
 [1417]={{46,45.2}}},pvp=1,r=2,g={
 s(164134,20069,{b=1,f=28,lvl=60,minReputation={509,42000},pvp=1,q=4}),
@@ -1062,10 +1062,10 @@ s(164181,20129,{b=1,f=6,filterForRWP=7,lvl=28,minReputation={509,21000},pvp=1,q=
 s(164180,20128,{b=1,f=7,lvl=40,minReputation={509,21000},pvp=1,q=3}),
 s(164119,20048,{b=1,f=7,lvl=58,minReputation={509,21000},pvp=1,q=3}),
 s(164179,20127,{b=1,f=7,lvl=48,minReputation={509,21000},pvp=1,q=3}),
-i(20071,{b=1,f=53,lvl=58,pvp=1,q=3}),
-i(21117,{b=1,f=53,lvl=48,pvp=1,q=3}),
-i(21118,{b=1,f=53,lvl=38,pvp=1,q=3}),
-i(21119,{b=1,f=53,lvl=28,pvp=1,q=3})}})}})}}),
+i(20071,{b=1,f=53,lvl=58,minReputation={509,3000},pvp=1,q=3}),
+i(21117,{b=1,f=53,lvl=48,minReputation={509,3000},pvp=1,q=3}),
+i(21118,{b=1,f=53,lvl=38,minReputation={509,3000},pvp=1,q=3}),
+i(21119,{b=1,f=53,lvl=28,minReputation={509,3000},pvp=1,q=3})}})}})}}),
 m(1460,{icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(713,{maps={1440},minReputation={890,42000},pvp=1,r=2,u=12,g={

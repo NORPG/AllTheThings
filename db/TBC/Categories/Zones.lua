@@ -14,7 +14,7 @@ ach(1678,{r=2}),
 ach(1680,{r=1,rwp=50004})}),
 m(1457,{isRaid=1,lore="The atmosphere inside the city is quiet and tranquil. It does not have the feeling of confinement that one would feel in Stormwind or Ironforge, where the buildings are grouped close together. Darnassus is open to the sky, and the graceful bridges spanning the lake around which it is built set the buildings wide apart. The elegant bridges, beautiful groves, and leaf-covered pathways that dot the city's landscape are testaments to the night elves' reverence for nature. One of Darnassus's most notable structures is the stunning Temple of the Moon, the center of worship for High Priestess Tyrande Whisperwind and her Sisters of Elune. The prime reason why the city's population is so low is that it is isolated: Teldrassil is a small island away from the main mass of Azeroth, and the only way to gain access from another continent is to fly or sail to Rut'theran Village, a small settlement at the base of Teldrassil, and from there step into the glowing portal to the city proper. Darnassus is home to night elves of all vocations and remains a symbol of the night elves' rich culture and glorious history.",g={
 h(-31,{
-faction(69,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=2})}),
+faction(69,{icon=236449,OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=2})}),
 h(-45,{
 q(7799,{coords={
 [1457]={{64,23}}},cost={{"i",4338,60}},lvl=40,qgs={14725},r=2,rwp=40003}),
@@ -257,7 +257,7 @@ ach(1836,{providers={{"i",34486}},requireSkill=356,u=17})}),
 h(-30,{
 exp(5170,{collectible=false})}),
 h(-31,{
-faction(530,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=1}),
+faction(530,{icon=236456,OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=1}),
 faction(76,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=1})}),
 h(-32,{
 fp(23,{coords={
@@ -2637,7 +2637,7 @@ r(17571,{awp=100107,coords={
 [1447]={{53.6,23.8},{56.6,23.6}}},crs={6201},itemID=13491,learnedAt=280,q=2,requireSkill=171,rwp=40003}),
 r(19794,{crs={6195},itemID=16045,learnedAt=270,q=2,requireSkill=202,rwp=40003})})}}),
 m(1943,{awp=20001,lore="Azuremyst Isle is the zone the Draenei spaceship crashed into, leading to the formation of the Exodar as their capital city. Quests focus on the draenei acquainting themselves with the land and trying to strengthen their struggling settlements. Since this island was so far-out, there was very little other civilization before the crash.",maps={98,99},u=17,g={
-m(468,{lore="Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",u=17,["zone-text-areas"]={3526,3560,3527,3559,3529,3530,3528,3561},g={
+m(468,{icon=135756,lore="Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",u=17,["zone-text-areas"]={3526,3560,3527,3559,3529,3530,3528,3561},g={
 h(-45,{u=17,g={
 q(9798,{cost={{"i",23003,1}},lvl=2,providers={{"i",24414}},r=2,u=17}),
 q(9311,{coords={
@@ -3422,9 +3422,9 @@ i(23870,{b=1,coords={
 i(23900,{b=1,coords={
 [1950]={{36.6,72.5},{38.5,82.3}}},crs={17528},description="Tzerak spawns at 38.5, 82.3, on the demon seal, then walks through Nazzivian to get to the monument at 36.6, 72.5.",lvl=10,q=1,r=2,u=17})}})}}),
 m(75,{coords={
-[1446]={{65.9,49.4}}},lore="Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",maps={74},["zone-text-areaID"]=1941,g={
+[1446]={{65.9,49.4}}},icon=134156,lore="Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",maps={74},["zone-text-areaID"]=1941,g={
 h(-31,{awp=20001,g={
-faction(989,{maps={273,274},u=17,g={
+faction(989,{icon=134156,maps={273,274},u=17,g={
 crit(4765,{achID=763,id=1,r=1,u=17}),
 crit(4765,{achID=764,id=1,r=2,u=17})}})}}),
 h(-45,{
@@ -3438,8 +3438,8 @@ q(10279,{coords={
 [1446]={{66,49.6}}},isBreadcrumb=1,lvl=66,nextQuests={10277},qgs={20142},u=17})}),
 h(-58,{
 n(19932,{u=19,g={
-i(31737,{b=1,f=37,lvl=70,minReputation={990,9000},q=4,rwp=40001,u=19}),
-i(31735,{b=1,f=37,lvl=70,minReputation={990,9000},q=4,rwp=40001,u=19}),
+i(31737,{b=1,f=37,lvl=70,minReputation={989,9000},q=4,rwp=40001,u=19}),
+i(31735,{b=1,f=37,lvl=70,minReputation={989,9000},q=4,rwp=40001,u=19}),
 r(27927,{awp=20501,itemID=186683,learnedAt=375,minReputation={989,21000},requireSkill=333,u=19})}}),
 n(21643,{coords={
 [74]={{40,77.2}}},u=17,g={
@@ -3861,8 +3861,8 @@ crit(1368,{achID=848,id=1})}),
 exp(607,{
 crit(1376,{achID=848,id=1})})}),
 h(-31,{
-faction(92,{maxReputation={93,9000},minReputation={92,9000},OnTooltip=_.OnTooltipDB.DesolaceCentaurs}),
-faction(93,{maxReputation={92,9000},minReputation={93,9000},OnTooltip=_.OnTooltipDB.DesolaceCentaurs})}),
+faction(92,{icon=134151,maxReputation={93,9000},minReputation={92,9000},OnTooltip=_.OnTooltipDB.DesolaceCentaurs}),
+faction(93,{icon=134151,maxReputation={92,9000},minReputation={93,9000},OnTooltip=_.OnTooltipDB.DesolaceCentaurs})}),
 h(-32,{
 fp(37,{coords={
 [1443]={{64.7,10.5}}},crs={6706},r=2}),
@@ -5894,7 +5894,7 @@ r(23507,{b=1,itemID=19027,learnedAt=250,q=1,requireSkill=202})}})}),
 h(-63,{
 i(21024,{crs={12800,12801,12802,12803},q=1}),
 i(8705,{b=1,description="This item has a chance to drop from any creature in Feralas.",lvl=40,q=2})})}}),
-m(1450,{lore="Moonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.",g={
+m(1450,{icon=135758,lore="Moonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.",g={
 h(-12,{
 ach(855,{
 crit(1501,{achID=43,id=1})})}),
@@ -6967,8 +6967,8 @@ n(15174,{coords={
 [1451]={{51.8,39}}}}),
 n(15419,{coords={
 [1451]={{52,39.7}}},sym={{"select","itemID",20753,20752,20758,22307,6342}},g={
-r(25081,{b=1,itemID=20732,learnedAt=300,q=1,requireSkill=333,rwp=50004,u=15}),
-r(25082,{b=1,itemID=20733,learnedAt=300,q=1,requireSkill=333,rwp=50004,u=15}),
+r(25081,{b=1,itemID=20732,learnedAt=300,minReputation={609,3000},q=1,requireSkill=333,rwp=50004,u=15}),
+r(25082,{b=1,itemID=20733,learnedAt=300,minReputation={609,9000},q=1,requireSkill=333,rwp=50004,u=15}),
 r(25127,{itemID=20754,learnedAt=250,q=1,requireSkill=333,u=15}),
 r(25128,{itemID=20755,learnedAt=275,q=1,requireSkill=333,u=15}),
 r(27659,{itemID=22308,learnedAt=275,q=1,requireSkill=197,u=15})}}),
@@ -7319,7 +7319,7 @@ crit(1413,{achID=851,id=1})}),
 exp(978,{
 crit(1427,{achID=851,id=1})})}),
 h(-31,{
-faction(369,{maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end,g={
+faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end,g={
 crit(8821,{achID=2336,id=1,u=13})}})}),
 h(-32,{
 fp(39,{coords={
@@ -7681,7 +7681,7 @@ i(9249,{description="Unlocks the Captain's Chest located in one of the ships har
 s(122806,9359,{description="This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",f=23,lvl=40,q=3})}}),
 i(8483,{crs={5615,5616,5617,5618,5623,7805},q=1})})}}),
 m(1438,{lore="In the past few years, the night elves have moved their capital to an island off northwest Kalimdor. Here, the Circle of the Ancients and the wise druids pooled their power to create a great tree akin to the World Tree, but on a smaller scale.\n\nThey called this tree Teldrassil, meaning “Crown of the Earth,” and built their city of Darnassus atop it. The island takes the name of the tree as well, and a twilite forest now covers it.",maps={59,60,61},g={
-m(460,{lore="Shadowglen is the starting area for night elves in the northeast part of Teldrassil, just north of Starbreeze Village. A small twilight field, bathed in a quiet dusk, the area is dominated by the great tree Aldrassil, which lies at the clearing's center. It has class trainers for all night elf classes. Another notable location is Shadowthread Cave, which lies in the region's extreme northwest. The area is ringed by mountains; the only gap is to the south, where the path headed to Dolanaar parts the mountain range.",maps={58},["zone-text-areas"]={188,256,257},g={
+m(460,{icon=236449,lore="Shadowglen is the starting area for night elves in the northeast part of Teldrassil, just north of Starbreeze Village. A small twilight field, bathed in a quiet dusk, the area is dominated by the great tree Aldrassil, which lies at the clearing's center. It has class trainers for all night elf classes. Another notable location is Shadowthread Cave, which lies in the region's extreme northwest. The area is ringed by mountains; the only gap is to the south, where the path headed to Dolanaar parts the mountain range.",maps={58},["zone-text-areas"]={188,256,257},g={
 h(-45,{
 q(3519,{coords={
 [1438]={{54.6,33}}},lvl=2,qgs={8584},r=2,rwp=40003,sourceQuests={4495}}),
@@ -8060,7 +8060,7 @@ crit(928,{achID=750,id=1})}),
 exp(1699,{
 crit(926,{achID=750,id=1})})}),
 h(-31,{
-faction(470,{maps={1446},OnTooltip=_.OnTooltipDB.ForRatchet,g={
+faction(470,{icon=133784,maps={1446},OnTooltip=_.OnTooltipDB.ForRatchet,g={
 crit(8822,{achID=2336,id=1,u=13})}})}),
 h(-32,{
 fp(77,{coords={
@@ -9231,7 +9231,7 @@ q(8481,{coords={
 [1448]={{65.2,2.6}}},lvl=45,maps={1452},minReputation={576,42000},qgs={11555},g={
 qo(1,{coords={
 [1452]={{68,37.6}}},cost={{"i",21144,1}},crs={15623},providers={{"i",21145}}}),
-i(21326,{b=1,f=53,q=4})}}),
+i(21326,{b=1,f=53,minReputation={576,42000},q=4})}}),
 q(8460,{altQuests={6131},coords={
 [1448]={{50.9,85}}},lvl=45,qgs={11554},rwp=40003,g={
 qo(1,{providers={{"n",7153}}}),
@@ -9530,9 +9530,9 @@ crit(1474,{achID=857,id=1})}),
 exp(2244,{
 crit(1483,{achID=857,id=1})})}),
 h(-31,{
-faction(577,{maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook,g={
+faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook,g={
 crit(8820,{achID=2336,id=1,u=13})}}),
-faction(589,{OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerKill=250;if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500);else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000);if reputation>=9000 then	repPerKill=350;addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000);end	end	end	end,r=2})}),
+faction(589,{icon=132252,OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerKill=250;if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500);else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000);if reputation>=9000 then	repPerKill=350;addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000);end	end	end	end,r=2})}),
 h(-32,{
 fp(52,{coords={
 [1452]={{62.2,36.6}}},crs={11138},r=2}),
@@ -9809,7 +9809,7 @@ h(-12,{awp=20001,g={
 ach(1837,{providers={{"i",34484}},requireSkill=356,u=17})}}),
 h(-31,{
 faction(54,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=2}),
-faction(47,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=2})}),
+faction(47,{icon=236444,OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=2})}),
 h(-32,{
 fp(6,{coords={
 [1455]={{55.6,48}}},crs={1573},r=2})}),
@@ -12184,7 +12184,7 @@ crit(960,{achID=760,id=1,rwp=40003})}),
 exp(284,{
 crit(961,{achID=760,id=1,rwp=40003})})}),
 h(-31,{
-faction(349,{OnTooltip=_.OnTooltipDB.Ravenholdt,g={
+faction(349,{icon=132292,OnTooltip=_.OnTooltipDB.Ravenholdt,g={
 crit(8824,{achID=2336,id=1,u=13})}}),
 faction(70,{description="Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",maxReputation={70,0},minReputation={70,-1}})}),
 prof(633,{c={4},g={
@@ -13373,24 +13373,24 @@ crit(1159,{achID=777,id=1})})}),
 h(-58,{
 n(18255,{coords={
 [1430]={{47.2,75}}},u=17,g={
-r(38503,{b=1,itemID=31401,learnedAt=375,q=4,requireSkill=755,u=17}),
-r(42620,{awp=20300,b=1,itemID=33165,learnedAt=350,q=1,requireSkill=333,u=19}),
-r(42546,{awp=20200,b=1,itemID=33124,learnedAt=360,q=3,requireSkill=165,u=19}),
-r(42731,{awp=20200,b=1,itemID=33205,learnedAt=365,q=4,requireSkill=165,u=19}),
-r(42736,{awp=20200,itemID=33209,learnedAt=375,q=2,requireSkill=171,rwp=50004,u=19}),
-i(29187,{b=1,lvl=70,q=2,u=17}),
+r(38503,{b=1,itemID=31401,learnedAt=375,minReputation={967,9000},q=4,requireSkill=755,u=17}),
+r(42620,{awp=20300,b=1,itemID=33165,learnedAt=350,minReputation={967,42000},q=1,requireSkill=333,u=19}),
+r(42546,{awp=20200,b=1,itemID=33124,learnedAt=360,minReputation={967,42000},q=3,requireSkill=165,u=19}),
+r(42731,{awp=20200,b=1,itemID=33205,learnedAt=365,minReputation={967,21000},q=4,requireSkill=165,u=19}),
+r(42736,{awp=20200,itemID=33209,learnedAt=375,minReputation={967,9000},q=2,requireSkill=171,rwp=50004,u=19}),
+i(29187,{b=1,lvl=70,minReputation={967,9000},q=2,u=17}),
 i(34581,{b=1,f=37,lvl=70,minReputation={967,21000},q=4,rwp=40001,u=19}),
 i(34582,{b=1,f=37,lvl=70,minReputation={967,21000},q=4,rwp=40001,u=19})}})}),
 h(-63,{
 r(20010,{crs={7372},itemID=16246,learnedAt=295,q=2,requireSkill=333})})}}),
-m(499,{lore="The Deeprun Tram is a long, fully enclosed, underground (and partially underwater) set of double tracks upon which rolls two sets of three wagons, all credited to the gnomes' technical engineering. The service is fast and smooth, and is provided free of charge to travelers between the Alliance-aligned cities of Ironforge and Stormwind City.",["zone-text-areaID"]=2257,g={
+m(499,{icon=133861,lore="The Deeprun Tram is a long, fully enclosed, underground (and partially underwater) set of double tracks upon which rolls two sets of three wagons, all credited to the gnomes' technical engineering. The service is fast and smooth, and is provided free of charge to travelers between the Alliance-aligned cities of Ironforge and Stormwind City.",["zone-text-areaID"]=2257,g={
 h(-45,{
 q(6661,{lvl=10,qgs={12997},r=2,g={
 qo(1,{crs={13016},providers={{"i",17117}}})}}),
 q(6662,{lvl=10,providers={{"i",17118}},qgs={12997},r=2,sourceQuests={6661},g={
 i(17119,{f=55,lvl=5,q=1})}})})}}),
 m(1426,{lore="Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",maps={29,31,469,470},g={
-m(427,{lore="Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",maps={28,428},["zone-text-areas"]={132,800,77},g={
+m(427,{icon=236444,lore="Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",maps={28,428},["zone-text-areas"]={132,800,77},g={
 h(-45,{
 q(170,{coords={
 [1426]={{29.6,71.2}}},qgs={713},r=2,rwp=40003,sourceQuests={179},g={
@@ -14209,7 +14209,7 @@ crit(1090,{achID=771,id=1})}),
 exp(2273,{
 crit(1097,{achID=771,id=1})})}),
 h(-31,{
-faction(529,{maps={162,317,476,1422}})}),
+faction(529,{icon=134501,maps={162,317,476,1422}})}),
 h(-32,{
 fp(87,{collectible=false,description="If Plaguewood Tower is controlled by your faction, you can fly to this tower."}),
 fp(86,{collectible=false,description="If Plaguewood Tower is controlled by your faction, you can fly to this tower."}),
@@ -15041,7 +15041,7 @@ i(1399,{crs={476},f=55,q=1,rwp=40003}),
 s(116995,781,{awp=100107,coords={
 [1429]={{23.8,91.6},{26.6,89.6},{27.6,95.4},{28,86.8}}},crs={97,478},f=23,lvl=4,q=1,rwp=40003})})}}),
 m(1941,{awp=20001,lore="Eversong Woods is the starter zone for the Blood Elf race. It is a golden forest with typical high elf buildings. In the center of the map is a blighted strip known as the Dead Scar, a remnant from Arthas' battle against the High Elves. Quests involve learning about the blood elves' rich history, decadent lifestyle, and their struggles to keep the Dead Scar from growing.",u=17,g={
-m(467,{lore="Sunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving.",u=17,["zone-text-areas"]={3431},g={
+m(467,{icon=135761,lore="Sunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving.",u=17,["zone-text-areas"]={3431},g={
 h(-45,{u=17,g={
 q(8336,{awp=11201,coords={
 [1941]={{38.3,19.1}}},lvl=2,qgs={15296},races={10},rwp=60002,sourceQuests={8326},u=17,g={
@@ -18211,9 +18211,9 @@ crit(1222,{achID=781,id=1})}),
 exp(122,{
 crit(1219,{achID=781,id=1})})}),
 h(-31,{
-faction(87,{crs={9179},maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	if t.maxPossibleReputation<42000 then	tinsert(tooltipInfo,{left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true});end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	local isHuman=_.RaceIndex==1;local repForDressing=isHuman and 11 or 10;if t.dressing.collected then repForDressing=0;end	local repForAdmiral=isHuman and 550 or 500;if t.admiral.collected then repForAdmiral=0;end	t.maxPossibleReputation=math.max(t.reputation,41999)+ repForDressing + repForAdmiral;if t.maxPossibleReputation<42000 then	t.locked=true;end	end	end,g={
+faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	if t.maxPossibleReputation<42000 then	tinsert(tooltipInfo,{left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true});end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	local isHuman=_.RaceIndex==1;local repForDressing=isHuman and 11 or 10;if t.dressing.collected then repForDressing=0;end	local repForAdmiral=isHuman and 550 or 500;if t.admiral.collected then repForAdmiral=0;end	t.maxPossibleReputation=math.max(t.reputation,41999)+ repForDressing + repForAdmiral;if t.maxPossibleReputation<42000 then	t.locked=true;end	end	end,g={
 crit(8818,{achID=2336,id=1,u=13})}}),
-faction(21,{maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end,g={
+faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end,g={
 crit(8819,{achID=2336,id=1,u=13})}})}),
 h(-32,{
 fp(18,{coords={
@@ -20765,7 +20765,7 @@ h(-12,{u=17,g={
 ach(1262,{r=2,u=17}),
 ach(1274,{r=1,rwp=50004,u=17}),
 ach(44,{u=17})}}),
-m(1955,{isRaid=1,lore="Shattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.",lvl=58,u=17,g={
+m(1955,{icon=135760,isRaid=1,lore="Shattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.",lvl=58,u=17,g={
 h(-12,{u=17,g={
 ach(1205,{lore="NOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",providers={{"i",31779},{"i",31780}},u=17}),
 ach(903,{u=17}),
@@ -21112,9 +21112,9 @@ s(145113,35375,{b=1,c={11},f=5,lvl=70,minReputation={935,9000},q=3,u=18}),
 s(139526,29180,{b=1,f=6,lvl=70,minReputation={935,21000},q=3,u=17}),
 r(42592,{awp=20200,b=1,itemID=33159,learnedAt=360,minReputation={935,21000},q=1,requireSkill=755,u=17}),
 r(31082,{b=1,itemID=24182,learnedAt=370,minReputation={935,21000},q=3,requireSkill=755,u=17}),
-s(145097,35359,{b=1,c={11},f=5,lvl=70,minReputation={935,9000},q=3,u=18}),
-s(145072,35330,{b=1,c={9},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
-s(145087,35345,{b=1,c={8},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
+s(145097,35359,{b=1,c={11},f=5,lvl=70,minReputation={935,21000},q=3,u=18}),
+s(145072,35330,{b=1,c={9},f=4,lvl=70,minReputation={935,21000},q=3,u=18}),
+s(145087,35345,{b=1,c={8},f=4,lvl=70,minReputation={935,21000},q=3,u=18}),
 r(27926,{b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333,u=17}),
 r(34010,{b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},q=2,rwp=50004,u=17}),
@@ -27126,7 +27126,7 @@ exp(3677,{u=17}),
 exp(3892,{collectible=false,u=17,g={
 crit(1746,{achID=867,id=1,u=17})}})}}),
 h(-31,{u=17,g={
-faction(1031,{OnTooltip=_.OnTooltipDB.ForSkyguard,u=1802})}}),
+faction(1031,{icon=132191,OnTooltip=_.OnTooltipDB.ForSkyguard,u=1802})}}),
 h(-32,{u=17,g={
 fp(121,{coords={
 [1952]={{59.4,55.4}}},crs={18809},r=2,u=17}),

@@ -1,4 +1,4 @@
-﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
+﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
@@ -6035,11 +6035,11 @@ n(15174,{coords={
 [1451]={{51.8,39}}}}),
 n(15419,{coords={
 [1451]={{52,39.7}}},sym={{"select","itemID",20753,20752,20758,22307,6342}},g={
-r(25081,{b=1,itemID=20732,learnedAt=300,q=1,requireSkill=333,rwp=50004,u=1610}),
-r(25082,{b=1,itemID=20733,learnedAt=300,q=1,requireSkill=333,rwp=50004,u=1610}),
+r(25081,{b=1,itemID=20732,learnedAt=300,minReputation={609,3000},q=1,requireSkill=333,rwp=50004,u=1610}),
+r(25082,{b=1,itemID=20733,learnedAt=300,minReputation={609,9000},q=1,requireSkill=333,rwp=50004,u=1610}),
 r(25127,{itemID=20754,learnedAt=250,q=1,requireSkill=333,u=1610}),
-r(1213610,{awp=11505,b=1,itemID=234272,learnedAt=320,q=2,requireSkill=333,u=1610}),
-r(1213607,{awp=11505,b=1,itemID=234271,learnedAt=320,q=2,requireSkill=333,u=1610}),
+r(1213610,{awp=11505,b=1,itemID=234272,learnedAt=320,minReputation={609,3000},q=2,requireSkill=333,u=1610}),
+r(1213607,{awp=11505,b=1,itemID=234271,learnedAt=320,minReputation={609,3000},q=2,requireSkill=333,u=1610}),
 r(25128,{itemID=20755,learnedAt=275,q=1,requireSkill=333,u=1610}),
 r(27659,{itemID=22308,learnedAt=275,q=1,requireSkill=197,u=1610})}}),
 n(15175,{awp=11505,coords={
@@ -8612,7 +8612,7 @@ q(8481,{coords={
 [1448]={{65.2,2.6}}},lvl=45,maps={1452},minReputation={576,42000},qgs={11555},g={
 qo(1,{coords={
 [1452]={{68,37.6}}},cost={{"i",21144,1}},crs={15623},providers={{"i",21145}}}),
-i(21326,{b=1,f=53,q=4})}}),
+i(21326,{b=1,f=53,minReputation={576,42000},q=4})}}),
 q(8460,{altQuests={6131},coords={
 [1448]={{50.9,85}}},lvl=45,qgs={11554},rwp=40003,g={
 qo(1,{providers={{"n",7153}}}),
@@ -14143,7 +14143,7 @@ i(18173,{b=1,description="You must have first completed 'Mantles of the Dawn' in
 r(23802,{b=1,itemID=19447,learnedAt=300,minReputation={529,21000},q=1,requireSkill=333,u=1609}),
 r(23665,{b=1,itemID=19217,learnedAt=300,minReputation={529,21000},q=1,requireSkill=197,u=1609}),
 r(23706,{b=1,itemID=19329,learnedAt=300,minReputation={529,21000},q=1,requireSkill=165,u=1609}),
-r(16660,{awp=11503,itemID=12698,learnedAt=290,minReputation={529,21000},q=3,requireSkill=164,u=1608}),
+r(16660,{awp=11503,itemID=12698,learnedAt=290,minReputation={529,21000},q=3,requireSkill=9788,u=1608}),
 r(23633,{b=1,itemID=19205,learnedAt=300,minReputation={529,21000},q=1,requireSkill=164,u=1609}),
 i(13810,{b=1,f=55,lvl=45,minReputation={529,21000},q=1}),
 i(13813,{b=1,f=55,lvl=45,minReputation={529,21000},q=1}),
