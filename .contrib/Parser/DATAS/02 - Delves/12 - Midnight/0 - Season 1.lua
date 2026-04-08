@@ -278,31 +278,31 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["groups"] = {
 						n(DECOR, {
 							i(264175, {	-- Amani Strongbox (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								--Renown 3
 							}),
 							i(264170, {	-- Ancient Kaldorei Coffer (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								--Renown 4
 							}),
 							i(264007, {	-- Corewarden's Spoils (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								--Renown 8
 							}),
 							i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								--Renown 10
 							}),
 							i(263994, {	-- Fungal Chest (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								--Renown 2
 							}),
 							i(264008, {	-- Root-Wrapped Reliquary (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								--Renown 7
 							}),
 							i(263996, {	-- Twilight Tabernacle (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								--Renown 1
 							}),
 						}),
