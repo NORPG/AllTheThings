@@ -69,26 +69,19 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				},
 			}),
 			q(92325, {	-- Crumbling Legacy
-				["provider"] = { "n", 250409 },	-- Gamon
-				["coord"] = { 72.6, 57.6, ARCANTINA },
+				["provider"] = { "n", 250410 },	-- Gorgonna
+				["coord"] = { 68.2, 58.5, ARCANTINA },
 				["groups"] = {
+					o(617232, {	-- Forgotten Practice Equipment
+						["coord"] = { 53.1, 33.5, NAGRAND },
+						["groups"] = { i(262911) },	-- Practice Axe (QI!)
+					}),
+					o(572035, {	-- Weathered Tome
+						["coord"] = { 56.3, 34.3, NAGRAND },
+						["groups"] = { i(250878) },	-- Weathered Tome (QI!)
+					}),
+					--
 					i(253544),	-- Weathered History of the Warchiefs (DECOR!)
-					i(262911, {	-- Tombstone Piece (QI!)
-						["providers"] = {
-							{ "o", 617246 },	--
-							{ "o", 617247 },	--
-							{ "o", 617232 },	--
-							{ "o", 617245 },	--
-						},
-					}),
-					o(572035, {
-						["questID"] = 92381,
-						["groups"] = {
-							i(250878, {	-- Weathered Tome (QI!)
-								["coord"] = { 62.3, 43.3, ARCANTINA },
-							}),
-						},
-					}),
 				},
 			}),
 			q(92320, {	-- Still Behind Enemy Portals
@@ -353,6 +346,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["groups"] = {
 			n(QUESTS, {
 				q(94976, name(HEADERS.Item, 250876)),	-- Evergreen Vine placement unlock
+				q(92381, name(HEADERS.Item, 250878)),	-- Weathered Tome placement unlock
 			}),
 		},
 	}),
