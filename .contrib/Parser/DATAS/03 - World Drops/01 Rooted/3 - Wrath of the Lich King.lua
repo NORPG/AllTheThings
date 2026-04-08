@@ -1236,7 +1236,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		prof(TAILORING, {
 			i(43876, {	-- A Guide to Northern Cloth Scavenging (RECIPE!)
 				-- #if NOT ANYCLASSIC
-				["filterID"] = MISC,	-- temporarily collectible apparently, but becomes unlearned at some
 				["collectible"] = false,
 				-- #endif
 			}),
@@ -1260,7 +1259,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			-- 	Cooking reagents
 			-- 	Other reagents
 			-- _________________________________
-			-- 
+			--
 			-- 	Cloth + Silk:
 			{
 				i(33470, {
@@ -1286,7 +1285,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				}),
 			},
 			-- _________________________________
-			-- 
+			--
 			-- 	Elemental reagents:
 			sharedData({	-- Air
 				["coords"] = {
@@ -1455,7 +1454,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			}),
 			{
 			-- _________________________________
-			-- 
+			--
 			-- 	Clams:
 				i(44700, {	-- Brooding Darkwater Clam
 					["coords"] = {
@@ -1531,7 +1530,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				}),
 				-- i(45909),	-- Giant Darkwater Clam > Properly sourced in Crafted Items/Fishing.
 			-- _________________________________
-			-- 
+			--
 			-- 	Cooking reagents:
 				i(43013, {	-- Chilled Meat
 					["description"] = "Can drop from any Northrend beasts.",
@@ -1657,7 +1656,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					},
 				}),
 			-- __________________________________
-			-- 
+			--
 			-- Other reagents:
 				i(43102, {	-- Frozen Orb
 					["description"] = "Has a chance to drop from the last boss of any Heroic WotLK dungeon.",

@@ -930,5 +930,9 @@ Bountiful - Grudge Pit - Tier 8
 -- Bountiful Chest
 93822
 
+Bountiful - Parhelion - Tier 9
+91182
+-- Bountiful Chest
+93821
 
 ]]

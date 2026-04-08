@@ -497,13 +497,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93981, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
 		q(93993, name(HEADERS.NPC, 240864)),	-- Blinky
 		q(95343, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
-		--q(93989, name(HEADERS.NPC, 252067)),	-- Terrace Watcher ??
+		q(93989, name(HEADERS.NPC, 252067)),	-- Terrace Watcher
 		-- Heroic
 		q(93982, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
 		q(93994, name(HEADERS.NPC, 240864)),	-- Blinky
 		q(95341, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		q(93990, name(HEADERS.NPC, 252067)),	-- Terrace Watcher
 		-- Mythic
+		q(93983, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
 		q(95344, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		q(93995, name(HEADERS.NPC, 240864)),	-- Blinky
 	})),

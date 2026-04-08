@@ -712,7 +712,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
 		}),
-		i(2264277, {	-- Paw Pal House Shadowglen Roof (DECOR!)
+		i(264277, {	-- Paw Pal House Shadowglen Roof (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
 		}),

@@ -630,7 +630,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(136693),	-- Straszan Mark
 		}),
 	}),
-	prof(FISHING, {
+	prof(FISHING, bubbleDown({
+		["requireSkill"] = FISHING,
+	},{
 		spell(201943, {	-- Better Luck Next Time
 			["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
 			["groups"] = {
@@ -652,7 +654,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				}),
 			},
 		}),
-	}),
+	})),
 	prof(JEWELCRAFTING, {
 		filter(TOYS, {
 			i(130254),	-- Chatterstone (TOY!)

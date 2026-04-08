@@ -738,29 +738,23 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				},
 			})),
 		}),
-		i(168016, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Hyper-Compressed Ocean (TOY!)
+		container(168016, {	-- Hyper-Compressed Ocean (TOY!)
 			["crs"] = { 152121 },	-- Hyper-Compressed Ocean NPC
-			["groups"] = {	-- Confirmed Drops
-				i(139408, {	-- Deck Sandals
-					["bonusID"] = 1812,
-				}),
-				i(139407, {	-- Diver's Chain Boots
-					["bonusID"] = 1812,
-				}),
-				i(139405, {	-- Kul'Tiras Marine Issue Boots
-					["bonusID"] = 1812,
-				}),
-				i(139406, {	-- Sea Dog Boots
-					["bonusID"] = 1812,
-				}),
+			["timeline"] = { ADDED_8_2_0 },
+			-- Confirmed Drops
+			["sym"] = {{"select","itemID",
+				7187,	-- VanCleef's Boots
+				139408,	-- Deck Sandals
+				139407,	-- Diver's Chain Boots
+				139405,	-- Kul'Tiras Marine Issue Boots
+				139406,	-- Sea Dog Boots
+			}},
+			["groups"] = {
 				i(7188, {	-- Stormwind Guard Shield
-					["timeline"] = { CREATED_1_12_1, ADDED_8_2_0 },
+					["timeline"] = { ADDED_8_2_0 },
 				}),
-				i(7187, {	-- VanCleef's Boots
-					["requireSkill"] = IGNORED_VALUE,	-- not exclusive to fishing, listed under dented boots also
-				}),
-			}
-		})),
+			},
+		}),
 	})),
 	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
@@ -885,7 +879,6 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(244817),	-- Recipe: Blood Hunter Lure
 			i(244816),	-- Recipe: Lucky Loa Lure
 			i(244815),	-- Recipe: Ominous Octopus Lure
-			i(267395),	-- Technique: Homely Wall Shelves (RECIPE!)
 		}),
 		n(TREASURES, {
 			o(540505, {	-- Patient Treasure
