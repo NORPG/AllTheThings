@@ -40582,7 +40582,7 @@ crit(109029,{achID=61490}),
 crit(109881,{achID=61490}),
 i(260173,{b=1})}),
 ach(61858,{
-i(265071,{b=1,questID=94482,spellID=1273357,tmogSetID=5601,type="ihqt",g={
+i(265071,{b=1,questID=94482,spellID=1273357,type="ihqt",g={
 d(17,{
 cl(6,{
 s(296602,249965,{b=1,bonusID=6894,c={6},f=3,lvl=90}),

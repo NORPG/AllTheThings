@@ -3524,7 +3524,7 @@ r(389558,{cost={{"c",2030,1}},learnedAt=85,requireSkill=333,skillID=2825}),
 r(389410,{cost={{"c",2030,1}},learnedAt=40,requireSkill=333,skillID=2825})}}),
 h(-56,{awp=100002,requireSkill=333,g={
 o(380558,{coords={
-[2022]={{57.5,58.5}}},description="Interact with the Disenchanted Broom, then follow it to the location of the treasure.",questID=70272,requireSkill=333,g={
+[2022]={{59.9,57}}},description="Interact with the Disenchanted Broom, then follow it to the location of the treasure.",questID=70272,requireSkill=333,g={
 i(201012,{b=1,requireSkill=333,spellID=384370})}}),
 o(380600,{coords={
 [2024]={{21.6,45.5}}},questID=70298,requireSkill=333,g={
@@ -6062,7 +6062,7 @@ pn(106190,{cost={{"c",3155,1}},requireSkill=773}),
 pn(106357,{cost={{"c",3155,1}},requireSkill=773})}}),
 h(-45,{awp=120001,requireSkill=773,g={
 q(93693,{coords={
-[2393]={{46.9,51.7}}},isWeekly=1,lvl=78,qgs={243553},requireSkill=773,sourceQuests={93728},g={
+[2393]={{45,55.2},{46.9,51.7}}},isWeekly=1,lvl=78,qgs={243283,243553},requireSkill=773,sourceQuests={93728},g={
 i(263457,{b=1,isWeekly=1,requireSkill=773,spellID=1270535})}})}}),
 flt(200,{awp=120001,description="These are learned by specialization.",requireSkill=773,g={
 r(1230060,{cost={{"c",3155,1}},learnedAt=100,requireSkill=773,skillID=2913}),
