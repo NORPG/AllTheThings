@@ -221,6 +221,11 @@ namespace ATT
             AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_Parallel);
             // the last operation since it involves deletion of many fields from data which may otherwise be needed in prior steps
             AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_Cleaning);
+            // special case for Classic -- any 'spell' object with a 'Recipe' filter can convert to a Recipe
+            if (PreProcessorTags.Contains("ANYCLASSIC"))
+            {
+                AddHandlerAction(ParseStage.Consolidation, data => data.ContainsKey("spellID"), Consolidate_ConvertManualRecipe);
+            }
 
             // Merge the Item Data into the Containers.
             CurrentParseStage = ParseStage.Validation;
@@ -4573,6 +4578,16 @@ namespace ATT
                 LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
                 data.Remove(conversionObject.ConvertedKey);
                 data[conversionObject.ObjectType] = convertValue;
+            }
+        }
+
+        private static void Consolidate_ConvertManualRecipe(Data data)
+        {
+            if (data.TryGetValue("spellID", out long spellID) && data.TryGetValue("f", out long f) && f == (long)Objects.Filters.Recipe)
+            {
+                data.Remove("spellID");
+                data["recipeID"] = spellID;
+                LogDebug($"INFO: Classic Type Recipe Conversion =>recipeID ({spellID})");
             }
         }
 
