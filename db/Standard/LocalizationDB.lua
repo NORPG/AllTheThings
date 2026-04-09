@@ -12969,7 +12969,6 @@ local ObjectNames = {
 	[617163] = "Malignant Chest",
 	[617232] = "Forgotten Practice Equipment",
 	[617237] = "Sealed Twilight's Blade Cache",
-	[617245] = "Broken Armor",
 	[617375] = "Murloc-Skewered Lynxfish",
 	[617432] = "Forgotten Ink and Quill",
 	[617534] = "Gilded Armillary Sphere",
@@ -21901,7 +21900,6 @@ local ObjectModels = {
 	[617163] = 6210898,
 	[617232] = 1064189,
 	[617237] = 5975175,
-	[617245] = 1015965,
 	[617375] = 1091579,
 	[617432] = 6935639,
 	[617534] = 6033622,
@@ -70703,10 +70701,13 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-564] = "Cerca de la entrada, los visitantes reciben un mazo para golpear a unos gnolls disecados que salen de nueve barriles en la zona. Los jugadores tendrán 60 segundos para ganar 30 puntos. Los gnolls son de tres tipos: normales, Hogger y bebés, que otorgan 1 punto, 3 puntos o un derribo, respectivamente.",
 	[-565] = "Saludos, aficionados a la lucha. ¡Los villanos más malvados de Azeroth se han unido y han vuelto para vengarse! Venid a Ventormenta, Orgrimmar o Dornogal y enfrentaos a los malvados jefes del pasado de Azeroth.",
 	[-592] = "Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
+	[-669] = "Estas promociones tuvieron lugar durante el tiempo en que Midnight era la expansión más reciente.\n\nSe enumeran en el orden en que aparecieron por primera vez.",
 	[-687] = "Al transferir un Cronoaventurero a retail, cualquier botín de banda Normal+ en tus |cffFF0000bolsas o banco solamente|R otorgará las apariencias para sus variantes de Remix de dificultad BdB, N, H, y M.",
 	[-691] = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
+	[-708] = "Sorteo de montura Razer x World of Warcraft. Comienza el 21 de enero de 2025 a las 10:00 a. m. PST y finaliza el 31 de enero de 2026 a las 11:59 p. m. PST. No es necesario realizar ninguna compra.",
 	[-721] = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
 	[-723] = "Aumentan los informes de incursiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
+	[-748] = "Visita https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, juega un mini juego y consigue 1 premio por semana. El sorteo comienza el 1 de abril de 2026 y finaliza a las 23:59 (hora del este) del 30 de julio de 2026 o cuando se hayan reclamado todos los premios, lo que ocurra primero. Hay 2392 premios de cada tipo disponibles por semana. Se reinicia semanalmente a las 00:00 (ET). No es necesario realizar ninguna compra.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -77985,7 +77986,10 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-561] = "Para jugar al juego de baile de la Feria de la Luna Negra, habla con Simon Sezdans frente al Pabellón Sur. Cada intento cuesta una Ficha de Juego de la Luna Negra. Hablar con Simon también determinará la dificultad de tu juego de baile:\n ¡Algo divertido y relajado! (Fácil)\n ¡Me gustaría un pequeño desafío! (Medio)\n ¡Enséñame tus movimientos, no te contengas! (Difícil)\n\nEl Maestro de Baile de la Luna Negra no es un juego de ritmo como la mayoría de los juegos de baile, sino un juego de memoria. Tendrás un bailarín a tu lado en la pista de baile, que iniciará una secuencia de movimientos resaltados con runas frente a él. Las partidas fáciles tendrán una secuencia de 3 runas a la vez, las partidas medias, 4 runas, y las partidas difíciles, 5 runas.\n\nHay tres runas posibles: Danza de la gallina (Amarillo), Vuelta poderosa (Morado) y Agitar puño (Azul). Una vez que el oponente termine su secuencia, tienes 5 segundos para igualar la secuencia exacta utilizada por el Bailarín. No hay castigo por tomarse el tiempo para completar la secuencia, siempre y cuando lo hagas a tiempo y no te saltes ningún paso. El juego termina después de 5 rondas (si completas todos los pasos correctamente), pero puede terminar antes de tiempo si te saltas demasiados. Si no te saltas ningún paso, obtendrás una puntuación perfecta.",
 	[-565] = "Saludos, fans de la lucha. ¡Los villanos más malvados volvieron en equipos para buscar venganza! Acércate a Ventormenta, Orgrimmar o Dornogal para pelear contra jefes malignos del pasado de Azeroth.",
 	[-592] = "¡Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
+	[-669] = "Estas promociones sucedieron durante el tiempo en que Midnight era la expansión más reciente.\n\nSe listan en el orden en que aparecieron por primera vez.",
+	[-708] = "Sorteo de montura Razer x World of Warcraft. Comienza el 21 de enero de 2025 a las 10:00 a. m. PST y finaliza el 31 de enero de 2026 a las 11:59 p. m. PST. No es necesario comprar nada.",
 	[-723] = "Aumentan los informes de invasiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
+	[-748] = "Visita https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, juega un minijuego y consigue 1 premio por semana. El sorteo empieza el 1 de abril de 2026 y acaba a las 23:59 (hora del este) del 30 de julio de 2026 o cuando se hayan reclamado todos los premios, lo que ocurra primero. Hay 2392 premios de cada tipo disponibles por semana. Se reinicia semanalmente a las 00:00 (ET). No es necesario realizar ninguna compra.",
 });
 localize(ObjectNames, {
 	[276623] = "Depósito rico en platino",
