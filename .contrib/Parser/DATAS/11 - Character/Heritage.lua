@@ -1327,12 +1327,14 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 						i(242520),	-- Festival Hot Air Balloon (TOY!)
 						iensemble(258635, {	-- Ensemble: Heritage of the Wandering Isle [Tushui Set, Alliance]
 							["races"] = { PANDAREN_ALLIANCE },
+							["questID"] = 93439,	-- manually applied for now since Parser will complain due to how Blizz did these
 							["extraTransmogSetSpells"] = {
 								1272412,	-- Ensemble: Heritage of the Wandering Isle [Wandering Isle Set, Neutral]
 							},
 						}),
 						iensemble(258657, {	-- Ensemble: Heritage of the Wandering Isle [Huojin Set, Horde]
 							["races"] = { PANDAREN_HORDE },
+							["questID"] = 93439,	-- manually applied for now since Parser will complain due to how Blizz did these
 							["extraTransmogSetSpells"] = {
 								1272412,	-- Ensemble: Heritage of the Wandering Isle [Wandering Isle Set, Neutral]
 							},
