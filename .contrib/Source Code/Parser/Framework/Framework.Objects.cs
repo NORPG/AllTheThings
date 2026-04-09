@@ -2010,6 +2010,7 @@ end");
                     case "_items":
                     case "qis":
                     case "poiIDs":
+                    case "_questIDs":
                         MergeUniqueIntegerArrayData(item, field, value);
                         break;
 

@@ -32,6 +32,9 @@ namespace ATT
 
         private static readonly ConcurrentDictionary<ParseStage, Handler> Handlers = new ConcurrentDictionary<ParseStage, Handler>();
 
+        private static readonly ConcurrentDictionary<string, ConcurrentDictionary<long, int>> FieldValueReuse =
+            new ConcurrentDictionary<string, ConcurrentDictionary<long, int>>();
+
         /// <summary>
         /// This is assigned when <see cref="CurrentParseStage"/> is changed
         /// </summary>
@@ -83,6 +86,8 @@ namespace ATT
         #region Static Lambdas
         public static ConcurrentDictionary<long, string> NewConcurrentDictionary_long_string(string _) =>
             new ConcurrentDictionary<long, string>();
+        public static ConcurrentDictionary<long, int> NewConcurrentDictionary_long_int(string _) =>
+            new ConcurrentDictionary<long, int>();
         public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(object _) =>
             new ConcurrentDictionary<string, object>();
         public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(decimal _) =>
@@ -197,6 +202,7 @@ namespace ATT
 
             AddHandlerAction(ParseStage.Incorporation, data => data.ContainsKey("speciesID"), Incorporate_Species);
             AddHandlerAction(ParseStage.Incorporation, data => HasSpell(data) && !data.ContainsKey("_unsorted"), Incorporate_Spell);
+            AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate__questIDs);
             AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate_Parallel);
             // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
             AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Objects.PostProcessMergeInto);
@@ -1392,6 +1398,29 @@ namespace ATT
         {
             Incorporate__spellQuests(data);
             Incorporate_DataCloning(data);
+        }
+
+        private static void Incorporate__questIDs(IDictionary<string, object> data)
+        {
+            if (!data.TryGetValue("_questIDs", out List<object> questIDs))
+                return;
+
+            if (questIDs.Count > 1)
+            {
+                // hopefully these quests are all sourced elsewhere, so we will assign this data as a provider for them
+                LogDebug($"INFO: Multiple questIDs {ToJSON(questIDs)} assigned via _questIDs, using _spellQuests as fallback", data);
+                IncorporateDataField(data, "_spellQuests", questIDs);
+            }
+            else
+            {
+                foreach (long questID in questIDs.AsTypedEnumerable<long>())
+                {
+                    if (!CheckAndAssignQuestID(questID, data))
+                    {
+                        LogWarn($"Determined questID {questID} for data was not assigned (Is it duplicated elsewhere?)", data);
+                    }
+                }
+            }
         }
 
         private static void Incorporate__spellQuests(IDictionary<string, object> data)
@@ -3388,7 +3417,7 @@ namespace ATT
         private static void Incorporate_Spell(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("spellID", out long spellID) && !data.ContainsKey("_extraSpells")) return;
-            if (data.ContainsKey("_noautomation")) return;
+            if (data.ContainsAnyKey("_noautomation", "_Incorporate_Spell")) return;
 
             // See what the Spell links to
             if (spellID > 0)
@@ -3418,6 +3447,8 @@ namespace ATT
                     }
                 }
             }
+
+            data["_Incorporate_Spell"] = true;
         }
 
         private static void Incorporate_SpellEffect(IDictionary<string, object> data, SpellEffect spellEffect)
@@ -3426,51 +3457,93 @@ namespace ATT
             // ref. /att i:181538 -> SpellID 336988
             if (spellEffect.IsQuestComplete())
             {
+                long spellID = spellEffect.SpellID;
                 long questID = spellEffect.EffectMiscValue_0;
-                if (!data.TryGetValue("questID", out long existingQuestID))
+
+                // multi-ItemEffects for SpellEffect => _multiItemEffectQuestIDs
+                int multipleItemsForSpellEffect =
+                    WagoData.TryGetSpellAssociations(spellID, out List<ItemEffect> itemEffects) ? itemEffects.Count : 0;
+
+                // multi-SpellEffects for SpellID => _multiSpellEffectQuestIDs
+                int multipleQuests =
+                    WagoData.TryGetSpellAssociations(spellID, out List<SpellEffect> spellEffects) ?
+                    spellEffects.Where(se => se.IsQuestComplete()).Select(s => s.EffectMiscValue_0).Distinct().Count() : 0;
+
+                // multi-QuestIDs for SpellEffect => _multiQuestIDSpellEffects
+                int multipleSpellEffectsForQuestID = WagoData.EnumerateForQuestID<SpellEffect>(questID).Where(se => se.IsQuestComplete()).Count();
+
+                // only 1 sequence which triggers this quest, it's safe to assign on the data directly
+                if (multipleItemsForSpellEffect <= 1 && multipleQuests <= 1 && multipleSpellEffectsForQuestID <= 1)
                 {
-                    bool allowMergeQuestID = true;
-                    // we only want to attach a questID to an Item if that Quest is only linked via 1 ItemEffect...
-                    long spellID = spellEffect.SpellID;
-                    if (WagoData.TryGetSpellAssociations(spellID, out List<ItemEffect> itemEffects) && itemEffects.Count > 1)
+                    if (!data.TryGetValue("questID", out long existingQuestID))
                     {
-                        //LogDebug($"INFO: Ignored assignment of data 'questID' {spellEffect.EffectMiscValue_0} due to {matchingItemEffects.Count} shared ItemEffect use", data);
-                        // assign this data as a provider of the questID instead since this data may link to multiple questIDs
-                        // If this QuestID isn't Sourced, just allow assigning it directly anyway... can review duplication for manual resolution if it happens
-                        allowMergeQuestID = !Assign_QuestProviderFromData(questID, data);
+                        if (CheckAndAssignQuestID(questID, data))
+                            LogDebug($"INFO: Assigned data '_questIDs' {questID} due to non-overlapping ItemEffect-SpellEffect[{spellID}]-Quest sequence ", data);
                     }
-                    else
+                    else if (existingQuestID != questID)
                     {
-                        // if there's a 2nd (or more) then ignore assigning the questID from a specific Spell
-                        HashSet<IDBType> matchingSpellEffects = new HashSet<IDBType>(
-                            WagoData.EnumerateForQuestID<SpellEffect>(questID).Where(se => se.IsQuestComplete()));
-                        foreach (IDBType spellMatches in
-                            WagoData.EnumerateForSpellID<SpellEffect>(spellID).Where(se => se.IsQuestComplete()))
+                        // if it's sourced elsewhere already then ignore warning
+                        if (!TryGetSOURCED("questID", questID, out var quests))
                         {
-                            matchingSpellEffects.Add(spellMatches);
+                            LogWarn($"Determined 'questID' {questID} due to unique ItemEffect-SpellEffect[{spellID}]-Quest sequence but a different questID {existingQuestID} was already present!", data);
                         }
-
-                        if (matchingSpellEffects.Count > 1)
+                        else
                         {
-                            //LogDebug($"INFO: Ignored assignment of data 'questID' {questID} due to multiple SpellEffect use", data);
-                            // assign this data as a provider of the questID instead since this data links to multiple questIDs
-                            allowMergeQuestID = !Assign_QuestProviderFromData(questID, data);
+                            if (quests.Count == 1 && data.TryGetValue("itemID", out long itemID))
+                            {
+                                var possibleHqt = quests.First();
+                                if (possibleHqt.TryGetValue("type", out string hqtType) && hqtType == "hqt")
+                                {
+                                    // assign this Item as the name for the HQT
+                                    IncorporateDataField(possibleHqt, "an", "i:" + itemID.ToString());
+                                }
+                            }
                         }
-                    }
-
-                    if (allowMergeQuestID)
-                    {
-                        // we may end up with multiple quests related to this data, so collect all the eligible ones and consolidate later
-                        IncorporateDataField(data, "_spellQuests", questID);
-                        LogDebug($"INFO: Assigned data '_spellQuests' {questID} due to Complete Quest SpellEffect for SpellID {spellID}", data);
                     }
                 }
-                else if (questID != existingQuestID)
+                // this spell effect triggers multiple questID, but this questID is still unique to this item/spell effect, so try to apply it later
+                else if (multipleItemsForSpellEffect <= 1 && multipleSpellEffectsForQuestID <= 1)
                 {
-                    // additional spell effects that trigger additional questIDs, we will link the data as a provider of that additional questID's Source if possible
-                    Assign_QuestProviderFromData(questID, data);
+                    if (!data.TryGetValue("questID", out long existingQuestID))
+                    {
+                        IncorporateDataField(data, "_questIDs", questID);
+                        LogDebug($"INFO: Assigned data '_questIDs' {questID} due to non-overlapping ItemEffect-SpellEffect[{spellID}]-Quest sequence ", data);
+                    }
+                    else if (existingQuestID != questID)
+                    {
+                        // if it's sourced elsewhere already then ignore warning
+                        if (!TryGetSOURCED("questID", questID, out var quests))
+                        {
+                            LogWarn($"Determined 'questID' {questID} due to non-overlapping ItemEffect-SpellEffect[{spellID}]-Quest sequence but a different questID {existingQuestID} was already present!", data);
+                        }
+                        else
+                        {
+                            if (quests.Count == 1 && data.TryGetValue("itemID", out long itemID))
+                            {
+                                var possibleHqt = quests.First();
+                                if (possibleHqt.TryGetValue("type", out string hqtType) && hqtType == "hqt")
+                                {
+                                    // assign this Item as the name for the HQT
+                                    IncorporateDataField(possibleHqt, "an", "i:" + itemID.ToString());
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    // also track how many times we add this questID to different data _spellQuests, so we know whether it can be attached as a questID or not
+                    if (!data.TryGetValue("_spellQuests", out List<object> existingSpellQuests)
+                        || !existingSpellQuests.TrySmartContains(questID, out _))
+                    {
+                        FieldValueReuse.GetOrAdd("_spellQuests", NewConcurrentDictionary_long_int)
+                            .AddOrUpdate(questID, 1, (long key, int existing) => existing + 1);
+                    }
+                    IncorporateDataField(data, "_spellQuests", questID);
+                    LogDebug($"INFO: Assigned data '_spellQuests' {questID} due to overlapping {multipleItemsForSpellEffect} x ItemEffect, {multipleSpellEffectsForQuestID} x SpellEffect {multipleQuests} x Quest sequences", data);
                 }
             }
+
             if (spellEffect.IsLearnedTransmogSet())
             {
                 long tmogSetID = spellEffect.EffectMiscValue_0;
@@ -3487,6 +3560,7 @@ namespace ATT
                     data["spellID"] = spellEffect.SpellID;
                 }
             }
+
             if (spellEffect.IsApplyAura() || spellEffect.IsTriggerSpell())
             {
                 // if a spell effect applies an aura which is itself another spell / triggers another spell directly
@@ -3536,6 +3610,23 @@ namespace ATT
                         allowMergeQuestID = false;
                     }
                 }
+            }
+
+            // if this QuestID was assigned multiple times in _spellQuests, then it should not be assigned to one specific place
+            if (FieldValueReuse.TryGetValue("_spellQuests", out var spellQuestReuse)
+                && spellQuestReuse.TryGetValue(questID, out int spellQuestCount)
+                && spellQuestCount > 1)
+            {
+                // this questID is also already sourced elsewhere, just ignore it
+                if (sourcedQuests != null)
+                {
+                    LogDebug($"INFO: Ignoring Quest {questID} assignment to data since it is linked to {spellQuestCount} data objects", data);
+                }
+                else
+                {
+                    LogWarn($"INFO: Ignoring Quest {questID} assignment to data since it is used in {spellQuestCount} data objects. Source it directly instead in a way that makes sense, i.e. hqt({questID})", data);
+                }
+                allowMergeQuestID = false;
             }
 
             if (allowMergeQuestID)
