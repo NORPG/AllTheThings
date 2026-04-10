@@ -915,10 +915,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91182, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
 		})),
 
-		q(93819),	-- Bountiful #1, Tier 8+
-		--q(93820),	-- "Opened 2nd bountiful chest at the end of the week"
-		--q(93821),	-- "1st bountiful delve (of the week?)"
-		q(93822, name(HEADERS.Object, 584514)),	-- Bountiful #2, Tier 9
+		-- q(93819, name(HEADERS.Faction, FAC, {isWeekly=true})),	--
+		-- q(93820, name(HEADERS.Faction, FAC, {isWeekly=true})),	--
+		q(93821, name(HEADERS.Faction, FACTION_SILVERMOON_COURT, {isWeekly=true})),	-- Silvermoon Court Rep
+		-- q(93822, name(HEADERS.Faction, FAC, {isWeekly=true})),	--
+
+		-- TEMP for better reports
+		q(93819, {isWeekly=true,u=1,name="Report this Quest! What Reputation did you just gain?"}),	--
+		q(93820, {isWeekly=true,u=1,name="Report this Quest! What Reputation did you just gain?"}),	--
+		q(93822, {isWeekly=true,u=1,name="Report this Quest! What Reputation did you just gain?"}),	--
 	})),
 }));
 
