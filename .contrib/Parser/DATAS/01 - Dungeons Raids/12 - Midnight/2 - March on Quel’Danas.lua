@@ -214,7 +214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 --]]
 
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1308, bubbleDown({	-- March on Quel'Danas
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["isWeekly"] = true,

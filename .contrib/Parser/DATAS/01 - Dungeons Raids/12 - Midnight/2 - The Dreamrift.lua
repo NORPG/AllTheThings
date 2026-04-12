@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 	}),
 })));
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1314, {	-- The Dreamrift
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["groups"] = {
