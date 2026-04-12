@@ -154,6 +154,7 @@ HeaderAssignments = {
 	["Deadly Gladiator"] = -251,
 	["December"] = -335,
 	["Decor"] = -679,
+	["Decor Duel"] = -749,
 	["Defeat a Lieutenant"] = -618,
 	["Defense Protocol Alpha"] = -71,
 	["Defense Protocol Beta"] = -72,
@@ -728,4 +729,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -749;
+NextHeaderID = -750;

@@ -1582,9 +1582,9 @@ i(248485);	-- Wormhole Generator: Quel'Thalas
 ------------------
 -- PATCH 12.0.5 --
 ------------------
---- Unsorted ---
 i(268456);	-- Animated Bench
 i(268455);	-- Enchanted Hourglass
+--- Unsorted ---
 i(267472);	-- Gnomatic Projector
 i(272287);	-- Nap Mat
 i(267323);	-- Troll Scroll of Rainbow Roll

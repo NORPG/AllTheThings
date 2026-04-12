@@ -1,14 +1,4 @@
 12.0.5.66330
-ach(61792),	-- T-A-G that spells "Gotcha!"
-ach(61793),	-- Deployed to the Void
-ach(61878),	-- Tagged and Bagged
-ach(61879),	-- You're It
-ach(61880),	-- It's Cold Here in This Shadow
-ach(61881),	-- Hide and Peekless
-ach(61882),	-- Null and Avoided
-ach(61883),	-- Now You Don't See Me...
-ach(61886),	-- The Whole Kit and Caboodle
-ach(61887),	-- Disguised to the Nines
 ach(62506),	-- Abyss Anglers: Pressurized Eyeglass
 ach(62519),	-- [DNT] Research Sites: Collection - Bear Pet - Tracking
 ach(62520),	-- [DNT] Research Sites: Collection - Bear Mount - Tracking

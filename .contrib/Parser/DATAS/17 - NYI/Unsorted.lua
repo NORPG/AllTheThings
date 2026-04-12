@@ -109,17 +109,9 @@ root(ROOTS.Unsorted, {
 			i(262358),	-- Sin'dorei Captain's Mantle
 			i(262369),	-- Sin'dorei Handglaive
 			i(262658),	-- Nebulous Voidcache: Midnight Falls
-			i(262741),	-- "Dispelling Leap" Kit
-			i(262742),	-- "Swift" Kit
-			i(262743),	-- "Nullification Field" Kit
-			i(262744),	-- "Riftwalk" Kit
-			i(262745),	-- "Stealth" Kit
-			i(262746),	-- "Clockwork Sentinel" Kit
 			i(262748),	-- Autumn Dagger-Tined Rake
 			i(262749),	-- Spring Dagger-Tined Rake
 			i(262750),	-- Red Dagger-Tined Rake
-			i(262755),	-- "Eccentro-Magic Pulse" Enhancement
-			i(262756),	-- "Make Decoy" Enhancement
 			i(262757),	-- "Greater Metamorph" Enhancement
 			i(262962),	-- Carved Wooden Chair
 			i(263032),	-- Razorwind Fishing Net
@@ -428,9 +420,6 @@ root(ROOTS.Unsorted, {
 			i(268450),	-- Ambermill Rebel Boots
 			i(268451),	-- Ambermill Rebel Bracer
 			i(268452),	-- Ensemble: Ambermill Rebel Streetware
-			i(268455),	-- Enchanted Hourglass
-			i(268456),	-- Animated Bench
-			i(268457),	-- Sin'dorei Tiffin-Style Lamp
 			i(268458),	-- Nebulous Voidcache: Belo'ren, Child of Al'ar
 			i(268459),	-- Nebulous Voidcache: Imperator Averzian
 			i(268460),	-- Nebulous Voidcache: Vorasius
@@ -448,7 +437,6 @@ root(ROOTS.Unsorted, {
 			i(268472),	-- Blossomback Arboon
 			i(268473),	-- Nebulous Voidcache: Maisara Caverns
 			i(268474),	-- Amberback Arboon
-			i(268481),	-- Magister's Spell Bee Comb
 			i(268491),	-- Ambermill Rebel Bonecracker
 			i(268492),	-- Pyrewood Rebel Bonecracker
 			i(268493),	-- Emberstone Loyalist Bonecracker
@@ -563,10 +551,6 @@ root(ROOTS.Unsorted, {
 			i(269001),	-- Arsenal: Drakebreaker's Weapons
 			i(269002),	-- Arsenal: Hellbloom Weapons
 			i(269234),	-- Overflowing Ritual Site Cache
-			i(269613),	-- Sin'dorei Covered Cookpot
-			i(269614),	-- Sin'dorei Open Cookpot
-			i(269636),	-- Sin'dorei Cookpot Lid
-			i(269641),	-- Sin'dorei Display Case
 			i(269668),	-- Hungering Oblivium
 			i(269768),	-- Nebulous Voidcache: Prey
 			i(269817),	-- Ritual Site Challenge Report: Tendrils
@@ -712,7 +696,6 @@ root(ROOTS.Unsorted, {
 			i(271048),	-- Wriggling Tentacle Fetish
 			i(271049),	-- Ritual Weaver's Spellstick
 			i(271050),	-- Forest Hunter's Quiver
-			i(271162),	-- Sin'dorei Garden Swing
 			i(271163),	-- Blazing Guardian's Rug
 			i(271164),	-- Dream Guardian's Rug
 			i(271165),	-- Nightmare Guardian's Rug
@@ -756,29 +739,13 @@ root(ROOTS.Unsorted, {
 			i(272128),	-- Soggy Lynx Toy
 			i(272144),	-- Onyx Bloodknight Bladestaff
 			i(272287),	-- Nap Mat
-			i(272316),	-- Spellbreakers Bladelance
-			i(272317),	-- Spellbreakers Phoenixglaive
-			i(272318),	-- Spellbreaker Phoenixblade
-			i(272320),	-- Nullbeacon Rift Channeler
-			i(272321),	-- Arcane Ranger's Spellbow
-			i(272336),	-- Nullbeacon Rift Smasher
-			i(272337),	-- Mage Guard's Spellblade
-			i(272338),	-- Mage Guard's Spellsteel
 			i(272339),	-- Umbral Champion's Illustrious Banner
 			i(272391),	-- Pattern: Rope Lynx Harness
 			i(272392),	-- Broken Lynx Leash
 			i(272400),	-- Fine Lynx Fur
-			i(272441),	-- Lumbermill Lumber Stack
-			i(272442),	-- Empty Wooden Toolbox
-			i(272443),	-- Suramar Arcfruit Bowl
-			i(272444),	-- Small Decorative Dornogal Opal
-			i(272445),	-- Decorative Dornogal Opal
-			i(272446),	-- Large Decorative Dornogal Opal
 			i(272892),	-- Shattered Gem
 			i(272893),	-- Icy Harness
 			i(272894),	-- Inert Runestone
-			i(272960),	-- Spellbreakers Shieldwall
-			i(272961),	-- Spellbreakers Bladestaff
 			i(273013),	-- Void-Permeated Hide Scrap
 			i(273014),	-- Howling Glass Shard
 			i(273152),	-- Delve Gearbox

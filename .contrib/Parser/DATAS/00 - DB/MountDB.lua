@@ -2389,6 +2389,7 @@ i(257200, 1261351);	-- Witherbark Pango
 ------------------
 -- PATCH 12.0.5 --
 ------------------
+i(268481, 1282471);	-- Breaker Bee
 i(264348, 1271698);	-- Unbound Manawyrm
 i(268578, 1282936);	-- Void-Touched Hawkstrider
 i(269828, 1286606);	-- Void-Corrupted Eagle Talon
@@ -2402,7 +2403,6 @@ i(268876, 1283910);	-- Flame-Painted Sun Roc
 i(268362, 1282274);	-- Gilnean Copper Charger
 i(268360, 1282268);	-- Gilnean Iron Charger
 i(268364, 1282276);	-- Gilneas Loyalist's Rouncey
-i(268481, 1282471);	-- Breaker Bee
 i(268363, 1282275);	-- Pyrewood Rebel's Rouncey
 i(264348, 1271698);	-- Unbound Manawyrm
 i(270058, 1287359);	-- Void-Corrupted Lynx
