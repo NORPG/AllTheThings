@@ -593,77 +593,86 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(258963),	-- Shroom Jumper's Parachute (TOY!)
 					},
 				}),
-				o(591054, {	-- Gift of the Cycle
-					["coord"] = { 47.3, 50.5, 2576 },	-- The Den
-					["questID"] = 93144,
-					["groups"] = {
-						n(254030, {	-- Child-like Spirit
-							["coord"] = { 51.4, 47.5, MAP.MIDNIGHT.HARANDAR },
-							["cost"] = { { "i", 256882, 1 } },	-- A Tattered Ball
-							["questID"] = 93130,
-							["groups"] = {
-								o(588966, {	-- A Tattered Ball
-									["coord"] = { 51.1, 50.5, MAP.MIDNIGHT.HARANDAR },
-									["groups"] = {
-										i(256882),	-- A Tattered Ball
-									},
-								}),
-							},
-						}),
-						n(254116, {	-- Elder Spirit
-							["coord"] = { 51.2, 58.6, MAP.MIDNIGHT.HARANDAR },
-							["cost"] = { { "i", 257054, 1 } },	-- A Rolled-Up Pillow
-							["questID"] = 93146,
-							["groups"] = {
-								o(590801, {	-- A Rolled-Up Pillow
-									["coord"] = { 51.4, 56.0, MAP.MIDNIGHT.HARANDAR },
-									["groups"] = {
-										i(257054),	-- A Rolled-Up Pillow
-									},
-								}),
-							},
-						}),
-						n(254104, {	-- Huntress Spirit
-							["coord"] = { 47.2, 53.2, MAP.MIDNIGHT.HARANDAR },
-							["cost"] = { { "i", 257024, 1 } },	-- A Lost Hunting Knife
-							["questID"] = 93145,
-							["groups"] = {
-								o(589205, {	-- A Lost Hunting Knife
-									["coord"] = { 45.1, 54.0, MAP.MIDNIGHT.HARANDAR },
-									["groups"] = {
-										i(257024),	-- A Lost Hunting Knife
-									},
-								}),
-							},
-						}),
-						i(259084),	-- Gift of the Cycle (TOY!)
-					},
+				header(HEADERS.Item, 259084, {	-- Gift of the Cycle
+					o(588966, {	-- A Tattered Ball
+						["coord"] = { 51.1, 50.5, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(256882),	-- A Tattered Ball
+						},
+					}),
+					n(254030, {	-- Child-like Spirit
+						["coord"] = { 51.4, 47.5, MAP.MIDNIGHT.HARANDAR },
+						["cost"] = { { "i", 256882, 1 } },	-- A Tattered Ball
+						["questID"] = 93130,
+					}),
+					o(590801, {	-- A Rolled-Up Pillow
+						["coord"] = { 51.4, 56.0, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(257054),	-- A Rolled-Up Pillow
+						},
+					}),
+					n(254116, {	-- Elder Spirit
+						["coord"] = { 51.2, 58.6, MAP.MIDNIGHT.HARANDAR },
+						["cost"] = { { "i", 257054, 1 } },	-- A Rolled-Up Pillow
+						["questID"] = 93146,
+					}),
+					o(589205, {	-- A Lost Hunting Knife
+						["coord"] = { 45.1, 54.0, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(257024),	-- A Lost Hunting Knife
+						},
+					}),
+					n(254104, {	-- Huntress Spirit
+						["coord"] = { 47.2, 53.2, MAP.MIDNIGHT.HARANDAR },
+						["cost"] = { { "i", 257024, 1 } },	-- A Lost Hunting Knife
+						["questID"] = 93145,
+					}),
+					o(591054, {	-- Gift of the Cycle
+						["coord"] = { 47.3, 50.5, 2576 },	-- The Den
+						["questID"] = 93144,
+						["sourceQuests"] = {
+							93130,	-- Child-like Spirit
+							93146,	-- Elder Spirit
+							93145,	-- Huntress Spirit
+						},
+						["groups"] = {
+							i(259084),	-- Gift of the Cycle (TOY!)
+						},
+					}),
 				}),
-				o(613392, {	-- Impenatrably Sealed Groud
-					["description"] = "Obtain mysterious fluids from other objects in same cave, then mix red and purple for Fizzing Fluid.",
-					["coord"] = { 26.7, 67.6, MAP.MIDNIGHT.HARANDAR },
-					["questID"] = 93508,
-					["cost"] = { { "i", 260266, 1 } },	-- 1x Fizzing Fluid
-					["groups"] = {
-						i(260730),	-- Perturbed Sporebat (PET!)
-						--
-						o(615936, {	-- Dangling Jub
-							["coord"] = { 27.1, 67.7, MAP.MIDNIGHT.HARANDAR },
-							["groups"] = { i(260251) },	-- Mysterious Red Fluid
-						}),
-						o(615930, {	-- Hanging Flask
-							["coord"] = { 26.7, 68.0, MAP.MIDNIGHT.HARANDAR },
-							["groups"] = { i(260250) },	-- Mysterious Purple Fluid
-						}),
-						o(615939, {	-- Discarded Bottle
-							["coord"] = { 26.6, 67.6, MAP.MIDNIGHT.HARANDAR },
-							["groups"] = { i(260248) },	-- Mysterious Green Fluid
-						}),
-						o(614560, {	-- Durable Vase
-							["coord"] = { 26.5, 67.9, MAP.MIDNIGHT.HARANDAR },
-							["groups"] = { i(260266) },	-- Fizzing Fluid
-						}),
-					},
+				header(HEADERS.Object, 613392, {	-- Impenatrably Sealed Groud
+					o(615936, {	-- Dangling Jub
+						["coord"] = { 27.1, 67.7, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(260251) },	-- Mysterious Red Fluid
+					}),
+					o(615930, {	-- Hanging Flask
+						["coord"] = { 26.7, 68.0, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(260250) },	-- Mysterious Purple Fluid
+					}),
+					o(615939, {	-- Discarded Bottle
+						["coord"] = { 26.6, 67.6, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(260248) },	-- Mysterious Green Fluid
+					}),
+					o(614560, {	-- Durable Vase
+						["coord"] = { 26.5, 67.9, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(260266, {	-- Fizzing Fluid
+								["cost"] = {
+									{ "i", 260251, 1 },	-- Mysterious Red Fluid
+									{ "i", 260250, 1 },	-- Mysterious Purple Fluid
+								},
+							}),
+						 },
+					}),
+					o(613392, {	-- Impenatrably Sealed Groud
+						["description"] = "Obtain mysterious fluids from other objects in same cave, then mix red and purple for Fizzing Fluid.",
+						["coord"] = { 26.7, 67.6, MAP.MIDNIGHT.HARANDAR },
+						["questID"] = 93508,
+						["cost"] = { { "i", 260266, 1 } },	-- 1x Fizzing Fluid
+						["groups"] = {
+							i(260730),	-- Perturbed Sporebat (PET!)
+						},
+					}),
 				}),
 				o(573307, {	-- Kemet's Simmering Cauldron
 					["coord"] = { 55.6, 39.4, MAP.MIDNIGHT.HARANDAR },

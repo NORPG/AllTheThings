@@ -123,6 +123,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["provider"] = { "o", 617659 },	-- Sealed Twilight's Blade Bounty
 					["coord"] = { 21.9, 77.4, MAP.MIDNIGHT.ZULAMAN },
 					["questID"] = 93871,
+					["sourceQuests"] = {
+						93916,	-- Sealing Orb #1, Unlocked
+						93917,	-- Sealing Orb #2, Unlocked
+						93918,	-- Sealing Orb #3, Unlocked
+						93919,	-- Sealing Orb #4, Unlocked
+					},
 					["groups"] = {
 						q(93916, {	-- Sealing Orb #1, Unlocked
 							["coord"] = { 26.1, 80.7, MAP.MIDNIGHT.ZULAMAN },

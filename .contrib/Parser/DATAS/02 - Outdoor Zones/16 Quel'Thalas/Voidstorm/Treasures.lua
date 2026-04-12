@@ -53,6 +53,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(617163, {	-- Malignant Chest
 					["coord"] = { 53.4, 42.7, MAP.MIDNIGHT.VOIDSTORM },
 					["questID"] = 93840,
+					["sourceQuests"] = {
+						93812,	-- Malignant Node
+						93813,	-- Malignant Node
+						93814,	-- Malignant Node
+						93815,	-- Malignant Node
+					},
 					["groups"] = {
 						o(616878, {	-- Malignant Node
 							["coord"] = { 53.5, 43.3, MAP.MIDNIGHT.VOIDSTORM },
@@ -66,7 +72,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["coord"] = { 53.5, 43.9, MAP.MIDNIGHT.VOIDSTORM },
 							["questID"] = 93814,
 						}),
-						o(616892, {
+						o(616892, {	-- Malignant Node
 							["coord"] = { 53.2, 42.7, MAP.MIDNIGHT.VOIDSTORM },
 							["questID"] = 93815,
 						}),

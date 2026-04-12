@@ -1553,7 +1553,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 			}),
 			o(525907, {	-- Star Metal Deposit
-				["coord"] = { 41.8, 38.2, MAP.MIDNIGHT.VOIDSTORM },
+				["coord"] = { 34.2, 76.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 89150,
 				["groups"] = {
 					i(238602),	-- Star Metal Deposit
