@@ -148,6 +148,7 @@ local function QueueSendChunks(method, target, detail, chunks)
 		acks = {},
 		uid = uid,
 	};
+	app.print("Starting sync for " .. pendingChunk.detail .. " with " .. target);
 	pending[uid] = pendingChunk;
 	uid = uid + 1;
 	app:StartATTCoroutine("Sync_ProcessSendChunks", ProcessSendChunks);
