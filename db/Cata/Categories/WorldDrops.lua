@@ -3419,17 +3419,17 @@ r(7893,{itemID=6391,learnedAt=120,q=2,requireSkill=197}),
 r(8782,{itemID=7091,learnedAt=150,q=2,requireSkill=197}),
 r(12059,{itemID=10301,learnedAt=215,q=2,requireSkill=197})}),
 cl(11,{
-i(17682,{c={11},collectible=false,f=200,lvl=50,rank=1,spellID=21849}),
-i(17683,{c={11},collectible=false,f=200,lvl=60,rank=2,spellID=21850})}),
+r(21849,{c={11},collectible=false,itemID=17682,lvl=50,rank=1}),
+r(21850,{c={11},collectible=false,itemID=17683,lvl=60,rank=2})}),
 cl(8,{
-i(18600,{c={8},collectible=false,f=200,lvl=56,rank=1,spellID=23028}),
-i(22890,{c={8},collectible=false,f=200,lvl=60,rank=5,spellID=28609,u=16})}),
+r(23028,{c={8},collectible=false,itemID=18600,lvl=56,rank=1}),
+r(28609,{c={8},collectible=false,itemID=22890,lvl=60,rank=5,u=16})}),
 cl(5,{
-i(17413,{c={5},collectible=false,f=200,lvl=48,rank=1,spellID=21562}),
-i(17414,{c={5},collectible=false,f=200,lvl=60,rank=2,spellID=21564}),
-i(22393,{c={5},collectible=false,f=200,lvl=60,rank=1,spellID=27683,u=15})}),
+r(21562,{c={5},collectible=false,itemID=17413,lvl=48,rank=1}),
+r(21564,{c={5},collectible=false,itemID=17414,lvl=60,rank=2}),
+r(27683,{c={5},collectible=false,itemID=22393,lvl=60,rank=1,u=15})}),
 cl(9,{
-i(22891,{c={9},collectible=false,f=200,lvl=60,rank=4,spellID=28610,u=16})})}),
+r(28610,{c={9},collectible=false,itemID=22891,lvl=60,rank=4,u=16})})}),
 flt(56,{
 i(35562,{awp=20400,coords={
 [1448]={{39,45.2},{43.5,63},{46.1,83},{54.1,86.7}}},crs={8956,8958},description="Drops from bears in highlevel vanilla zones like Angerclaw bears in Felwood.",q=1}),

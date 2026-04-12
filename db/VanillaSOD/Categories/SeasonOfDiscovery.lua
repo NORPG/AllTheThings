@@ -1206,7 +1206,7 @@ h(-640,_.ResolveQuestData({aqd=
 [1458]={{84,26}}},crs={208226,208682},maps={1420}},rwp=20001,u=1605,g={
 i(205022,{b=1,c={9},cost={{"i",205019,1},{"i",205020,1}},f=55,q=2,u=1605,g={
 r(403920,{u=1605})}}),
-i(221978,{b=1,description="Casting Drain Soul on any mob will reward you with this.",f=200,q=1,spellID=445459,u=1607,g={
+r(445459,{b=1,description="Casting Drain Soul on any mob will reward you with this.",itemID=221978,q=1,u=1607,g={
 i(220446,{b=1,f=55,q=2,u=1607,g={
 i(221499,{b=1,c={9},f=55,q=2,u=1607}),
 s(219737,223215,{b=1,c={9},f=27,lvl=10,q=3,u=1607}),
@@ -1279,7 +1279,7 @@ q(84126,{c={2},coords={
 qo(1,{coords={
 [1423]={{86.8,39.4}}},providers={{"i",227685},{"n",227985}},rwp=20001,u=1608}),
 r(440790,{rwp=20001,u=1608}),
-i(226399,{b=1,c={2},f=200,lvl=25,q=2,rwp=20001,spellID=407788,u=1608})}})}}),
+r(407788,{b=1,c={2},itemID=226399,lvl=25,q=2,rwp=20001,u=1608})}})}}),
 h(-644,{rwp=20001,u=1605,g={
 h(-45,{u=1605,g={
 q(88745,{coords={

@@ -3396,17 +3396,17 @@ r(7893,{itemID=6391,learnedAt=120,q=2,requireSkill=197}),
 r(8782,{itemID=7091,learnedAt=150,q=2,requireSkill=197}),
 r(12059,{itemID=10301,learnedAt=215,q=2,requireSkill=197})}),
 cl(11,{
-i(17682,{c={11},f=200,lvl=50,q=3,rank=1,spellID=21849}),
-i(17683,{c={11},f=200,lvl=60,q=3,rank=2,spellID=21850})}),
+r(21849,{c={11},itemID=17682,lvl=50,q=3,rank=1}),
+r(21850,{c={11},itemID=17683,lvl=60,q=3,rank=2})}),
 cl(8,{
-i(18600,{c={8},f=200,lvl=56,q=3,rank=1,spellID=23028}),
-i(22890,{c={8},f=200,lvl=60,q=3,rank=5,spellID=28609,u=16})}),
+r(23028,{c={8},itemID=18600,lvl=56,q=3,rank=1}),
+r(28609,{c={8},itemID=22890,lvl=60,q=3,rank=5,u=16})}),
 cl(5,{
-i(17413,{c={5},f=200,lvl=48,q=3,rank=1,spellID=21562}),
-i(17414,{c={5},f=200,lvl=60,q=3,rank=2,spellID=21564}),
-i(22393,{c={5},f=200,lvl=60,q=3,rank=1,spellID=27683,u=15})}),
+r(21562,{c={5},itemID=17413,lvl=48,q=3,rank=1}),
+r(21564,{c={5},itemID=17414,lvl=60,q=3,rank=2}),
+r(27683,{c={5},itemID=22393,lvl=60,q=3,rank=1,u=15})}),
 cl(9,{
-i(22891,{c={9},f=200,lvl=60,q=3,rank=4,spellID=28610,u=16})})}),
+r(28610,{c={9},itemID=22891,lvl=60,q=3,rank=4,u=16})})}),
 flt(56,{
 i(35562,{awp=20400,coords={
 [1448]={{39,45.2},{43.5,63},{46.1,83},{54.1,86.7}}},crs={8956,8958},description="Drops from bears in the level bracket 45-60 like Angerclaw bears in Felwood.",q=1}),
@@ -4718,14 +4718,14 @@ i(27681,{coords={
 [1953]={{56.4,60},{66.3,61.8}}},crs={18464,18465,18884,23219},q=1,u=17})}}),
 flt(200,{u=17,g={
 cl(11,{u=17,g={
-i(22146,{c={11},f=200,lvl=70,q=3,rank=3,spellID=26991,u=17})}}),
+r(26991,{c={11},itemID=22146,lvl=70,q=3,rank=3,u=17})}}),
 cl(8,{u=17,g={
-i(22153,{c={8},f=200,lvl=70,q=3,rank=2,spellID=27127,u=17}),
-i(31501,{c={8},description="Learn both of these tomes and then visit your trainer for the table.",f=200,lvl=70,q=3,rank=8,spellID=33717,u=17}),
-i(29550,{c={8},description="Learn both of these tomes and then visit your trainer for the table.",f=200,lvl=70,q=3,rank=9,spellID=27090,u=17})}}),
+r(27127,{c={8},itemID=22153,lvl=70,q=3,rank=2,u=17}),
+r(33717,{c={8},description="Learn both of these tomes and then visit your trainer for the table.",itemID=31501,lvl=70,q=3,rank=8,u=17}),
+r(27090,{c={8},description="Learn both of these tomes and then visit your trainer for the table.",itemID=29550,lvl=70,q=3,rank=9,u=17})}}),
 cl(5,{u=17,g={
-i(29549,{c={5},f=200,lvl=70,q=3,rank=3,spellID=25392,u=17}),
-i(31837,{c={5},f=200,lvl=70,q=3,rank=2,spellID=39374,u=17})}}),
+r(25392,{c={5},itemID=29549,lvl=70,q=3,rank=3,u=17}),
+r(39374,{c={5},itemID=31837,lvl=70,q=3,rank=2,u=17})}}),
 prof(171,{u=17,g={
 r(28565,{itemID=22914,learnedAt=350,q=2,requireSkill=171,u=17}),
 r(28578,{itemID=22926,learnedAt=365,q=2,requireSkill=171,u=17}),

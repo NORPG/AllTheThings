@@ -17,7 +17,11 @@ toy(33219,{b=1,description="Obtained if you set up a 6 Month WoW Subscription be
 q(65562,{altQuests={65561},coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 s(134092,23705,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",f=9,q=4,u=3})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=60,q=4,u=2}))}}),
+mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=60,q=4,u=2})),
+q(96254,{altQuests={96253},awp=20505,coords={
+[1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=40200,u=3,g={
+i(273162,{u=3,g={
+mnt(1291813,{description="Earned by completing the introductory questline for Midnight in retail servers",itemID=273150,u=3})}})}})}}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=20001,u=2,g={
@@ -33,9 +37,10 @@ h(-47,{awp=11101,description="Every character you created was able to select bet
 p(93,{b=1,itemID=13584,petTypeID=6,q=3,spellID=17708,u=3}),
 p(92,{b=1,itemID=13583,petTypeID=8,q=3,spellID=17707,u=3}),
 p(94,{b=1,itemID=13582,petTypeID=5,q=3,spellID=17709,u=3})}})}}),
-x(2,{awp=20001,description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
-p(131,{b=1,itemID=25535,petTypeID=2,q=3,rwp=30002,spellID=32298,u=3}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
-p(111,{b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,rwp=30002,spellID=24988,u=3}))}}),
+q(63865,{altQuests={63770},awp=20501,coords={
+[1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30002,u=3,g={
+p(131,{b=1,itemID=25535,petTypeID=2,q=3,spellID=32298,u=3}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
+p(111,{b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,spellID=24988,u=3}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=30400,u=3,g={
 h(-45,{u=3,g={
 q(63450,{altQuests={63448},coords={

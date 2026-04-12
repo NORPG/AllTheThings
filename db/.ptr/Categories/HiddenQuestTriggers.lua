@@ -803,7 +803,7 @@ hqt(35364),
 hqt(35366)}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 hqt(35435)}}),
-inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
 hqt(35443)}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 hqt(35411),
@@ -7358,6 +7358,11 @@ hqt(84598,{an="cu:3100"}),
 hqt(85833,{an="cu:3100"}),
 hqt(84608,{an="cu:3100"})})}),
 x(12,{
+inst(1308,{awp=120001,isRaid=1,g={
+hqt(94561,{an="n:250802",isWeekly=1}),
+hqt(94563,{an="n:250802",isWeekly=1})}}),
+inst(1314,{awp=120001,isRaid=1,g={
+hqt(95541)}}),
 inst(1307,{awp=120001,isRaid=1,g={
 hqt(93980,{an="n:252066",isWeekly=1}),
 hqt(95342,{an="n:240831",isWeekly=1}),

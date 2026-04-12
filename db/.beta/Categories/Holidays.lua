@@ -170,9 +170,9 @@ s(36596,71332,{awp=40001,e=7,f=23,lvl=32,rwp=50004,u=2}),
 s(23992,49120,{b=1,e=7,f=20,lvl=30,rwp=40001,u=2}),
 s(23735,48663,{e=7,f=23,lvl=30,rwp=40001,u=2}),
 i(37863,{awp=20001,b=1,e=7,f=55,spellID=49844})}}),
-i(117361,{awp=60002,b=1,e=7,f=53,spellID=286542}),
+i(117361,{awp=60002,b=1,e=7,f=53,spellID=101285}),
 i(117357,{awp=60002,b=1,e=7,f=53,spellID=127967}),
-i(117391,{awp=60002,b=1,e=7,f=53,spellID=286577}),
+i(117391,{awp=60002,b=1,e=7,f=53,spellID=178422}),
 i(117360,{awp=60002,b=1,e=7,f=53,spellID=127926}),
 i(117358,{awp=60002,b=1,e=7,f=53,spellID=127924}),
 i(117359,{awp=60002,b=1,e=7,f=53,spellID=127914}),
@@ -354,11 +354,11 @@ q(11419,{awp=20001,e=7,lvl=10,maps={1},providers={{"i",33978}},r=1,rwp=20403,u=2
 q(29394,{awp=40200,coords={
 [27]={{53.6,38.6}}},cost={{"i",33306,1}},e=7,isDaily=1,qgs={23558},r=2,sourceQuests={11122},g={
 i(33306,{e=7,spellID=42924}),
-i(33797,{b=1,e=7,f=55})}}),
+i(33797,{b=1,e=7,f=55,spellID=44066})}}),
 q(29393,{awp=40200,coords={
 [1]={{42.6,17.6}}},cost={{"i",33306,1}},e=7,isDaily=1,qgs={24497},r=1,sourceQuests={11412},g={
 i(33306,{e=7,spellID=42924}),
-i(33797,{b=1,e=7,f=55})}}),
+i(33797,{b=1,e=7,f=55,spellID=44066})}}),
 q(12278,{altQuests={12420},awp=20202,e=7,maps={27},providers={{"i",37571}},r=2,repeatable=1,g={
 crit(9860,{achID=2796,awp=30002,e=7,id=3})}}),
 q(12420,{altQuests={12278},awp=20202,e=7,isYearly=1,maps={27},providers={{"i",37736}},r=2,u=2,g={
@@ -1470,7 +1470,7 @@ i(35287,{e=1,f=55,lvl=23,spellID=2023})}}),
 i(127141,{awp=60200,e=1,g={
 i(124669,{e=1,spellID=185785})}}),
 i(124669,{awp=60200,e=1,spellID=185785}),
-s(48914,93732,{awp=50200,b=1,e=1,f=2,spellID=7823}),
+s(48914,93732,{awp=50200,b=1,e=1,f=2,spellID=136600}),
 p(340,{awp=40300,b=1,e=1,itemID=73953,npcID=55386,spellID=103588}),
 i(124670,{awp=60200,b=1,e=1,g={
 i(160092,{awp=80001,e=1,f=55,lvl=37,spellID=270372})}}),
@@ -1945,7 +1945,7 @@ toy(105898,{e=1}),
 i(105891,{e=1,lvl=35}),
 i(101675,{b=1,e=1,f=55,spellID=145133})}}),
 n(204964,{awp=100105,c={9},coords={
-[407]={{44.8,78.8}}},description="Question Madam Shadow until you get punished.\n 1) Cast Corruption.\n 2) Cast Curse of Exhaustion\n 3) Cast Agony\n 4) Oh yeah, don't forget to RUN!\n\nNote: The QuestID on this NPC will become unobtainable after learning the Grimoire (if obtained elsewhere), though Party Sync can allow fighting the NPC again regardless.",DisablePartySync=1,e=1,isDaily=1,lc={1,"questID",76747},providers={{"i",207294}},questID=77158,sourceQuests={76430},g={
+[407]={{44.8,78.8}}},description="Question Madam Shadow until you get punished.\n 1) Cast Corruption.\n 2) Cast Curse of Exhaustion\n 3) Cast Agony\n 4) Oh yeah, don't forget to RUN!\n\nNote: The QuestID on this NPC will become unobtainable after learning the Grimoire (if obtained elsewhere), though Party Sync can allow fighting the NPC again regardless.",DisablePartySync=1,e=1,isDaily=1,lc={1,"questID",76747},questID=77158,sourceQuests={76430},g={
 cq(76747,{b=1,c={9},e=1,itemID=207294,lvl=11,spellID=416360})}})}}),
 h(-47,{e=1,g={
 i(19422,{b=1,coords={
@@ -7200,7 +7200,7 @@ q(24806,{coords={
 i(46007,{b=1,e=161,u=2})}}),
 q(24803,{coords={
 [125]={{52.6,65.6}}},cost={{"i",50289,1}},e=161,isWeekly=1,lvl=10,qgs={38294},repeatable=1,u=2,g={
-s(24667,50287,{b=1,e=161,f=2,requireSkill=356,spellID=71435}),
+s(24667,50287,{b=1,e=161,f=2,requireSkill=356,spellID=71436}),
 heir(50255,{e=161,rwp=60100,u=2}),
 heir(122529,{u=2})}})}}),
 prof(356,{e=161,u=2,g={
@@ -7316,7 +7316,7 @@ hqt(93466,{awp=120000,e=9,isDaily=1}),
 mnt(71342,{b=1,e=9,itemID=50250,lvl=10}),
 s(24329,49715,{e=9,f=2}),
 p(251,{b=1,e=9,itemID=50446,npcID=38374,spellID=71840}),
-s(24841,50741,{e=9,f=2,lvl=28,spellID=71947}),
+s(24841,50741,{e=9,f=2,lvl=28,spellID=71988}),
 toy(50471,{b=1,e=9}),
 mm(211812,{awp=100205,b=1,e=9,questID=79088}),
 mnt(472479,{awp=110007,b=1,e=9,itemID=232926,lvl=10}),
@@ -7324,7 +7324,7 @@ mnt(1218013,{awp=120000,e=9,itemID=235658})}}),
 i(147907,{awp=70205,b=1,e=9,g={
 s(24329,49715,{awp=30300,e=9,f=2}),
 p(251,{awp=30300,b=1,e=9,itemID=50446,npcID=38374,spellID=71840}),
-s(24841,50741,{awp=30300,e=9,f=2,lvl=28,spellID=71947})}}),
+s(24841,50741,{awp=30300,e=9,f=2,lvl=28,spellID=71988})}}),
 i(143908,{awp=70003,b=1,e=9,f=51,spellID=171615}),
 i(143906,{awp=70003,b=1,e=9,f=51,spellID=171615}),
 i(143907,{awp=70003,b=1,e=9,f=51,spellID=171615}),
@@ -7427,7 +7427,7 @@ d(23,{
 e(2423,{npcID=164266,g={
 i(188692,{awp=90105,description="Does NOT give progression towards 'Traveler's Log - Love is in the Air: Throw Rose Petals on Players'.",e=9,modID=23,spellID=61415})}})})}})})}}),
 prof(356,{e=9,g={
-i(211383,{awp=100205,description="Fished in Olivia's pond during event.",e=9,spellID=428251})}}),
+i(211383,{awp=100205,description="Fished in Olivia's pond during event.",e=9,spellID=427553})}}),
 h(-45,{e=9,g={
 q(9029,{coords={
 [1416]={{89.3,75.1}}},e=9,isYearly=1,providers={{"o",181073}},rwp=30300,sourceQuests={8984,9028},u=2,g={
@@ -7716,7 +7716,7 @@ q(78369,{awp=100205,coords={
 i(49927,{e=9,f=106,isDaily=1,isYearly=1}),
 o(413126,{coords={
 [21]={{45.7,68.5}}},e=9,isYearly=1,g={
-i(210431,{e=9,isYearly=1,spellID=428127}),
+i(210431,{e=9,isYearly=1,spellID=425641}),
 i(211127,{b=1,e=9,isYearly=1})}}),
 crit(63266,{achID=1695,awp=30002,e=9,id=21})}}),
 q(78379,{awp=100205,coords={
@@ -7749,7 +7749,7 @@ q(78984,{awp=100205,coords={
 i(49927,{e=9,f=106,isDaily=1,isYearly=1}),
 o(413126,{coords={
 [21]={{45.7,68.5}}},e=9,isYearly=1,g={
-i(210431,{e=9,isYearly=1,spellID=428127}),
+i(210431,{e=9,isYearly=1,spellID=425641}),
 i(211782,{b=1,e=9,isYearly=1})}})}}),
 q(78985,{awp=100205,coords={
 [21]={{45.7,68.5}}},e=9,isYearly=1,qgs={37172},r=1,sourceQuests={78984},g={
@@ -7987,7 +7987,7 @@ i(49860,{e=9,f=55,spellID=70244})}}),
 h(-58,{e=9,g={
 n(211873,{awp=100205,coords={
 [37]={{33.6,47.8}}},e=9,r=2,g={
-i(210318,{b=1,cost={{"i",49927,1}},e=9,f=55,spellID=426440}),
+i(210318,{b=1,cost={{"i",49927,1}},e=9,f=55,spellID=425347}),
 i(22261,{cost={{"i",49927,10}},e=9,f=106,spellID=27661}),
 i(34258,{cost={{"i",49927,5}},e=9,f=55,spellID=45153}),
 i(116648,{b=1,cost={{"i",49927,40}},e=9,f=106,spellID=171607}),
@@ -7995,20 +7995,20 @@ i(211976,{cost={{"i",49927,5}},e=9,f=55,spellID=431058}),
 toy(144339,{b=1,cost={{"i",49927,100}},e=9})}}),
 n(213094,{awp=100205,coords={
 [37]={{33.7,51.3}}},e=9,r=2,g={
-i(210928,{b=1,e=9,spellID=428756}),
-i(239015,{awp=110007,b=1,e=9,spellID=1227057})}}),
+i(210928,{b=1,e=9,spellID=428657}),
+i(239015,{awp=110007,b=1,e=9,spellID=1227060})}}),
 n(214482,{awp=100205,coords={
 [1]={{41.2,18.2}}},e=9,r=1,g={
 i(210821,{e=9,f=55,lvl=40,spellID=10257}),
 i(210819,{e=9,f=55,lvl=30,spellID=10256}),
-i(239015,{awp=110007,b=1,e=9,spellID=1227057})}}),
+i(239015,{awp=110007,b=1,e=9,spellID=1227060})}}),
 n(214493,{awp=100205,coords={
 [1]={{41.1,17.8}},
 [37]={{33.57,50.9}}},e=9,races={1,2,3,4,5,6,7,8,9,10,11,22,25,26,27,28,29,30,31,32,34,35,36,37,52,70,84,85,86,91},g={
 i(210841,{e=9,f=55,spellID=226803}),
-i(210929,{b=1,e=9,spellID=428755}),
+i(210929,{b=1,e=9,spellID=428639}),
 i(210842,{e=9,f=55,spellID=226806}),
-i(239015,{awp=110007,b=1,e=9,spellID=1227057})}}),
+i(239015,{awp=110007,b=1,e=9,spellID=1227060})}}),
 n(214488,{awp=100205,coords={
 [1]={{41.4,17.8}}},e=9,r=1,g={
 s(194115,211359,{cost={{"i",49927,20}},e=9,f=2}),
@@ -8214,13 +8214,13 @@ s(266766,235289,{awp=120000,cost={{"i",49927,30}},e=9,f=25}),
 s(266770,235293,{awp=120000,cost={{"i",49927,30}},e=9,f=27})}})}}),
 n(211864,{awp=100205,coords={
 [37]={{33.6,49.8}}},e=9,r=2,g={
-i(210926,{b=1,e=9,spellID=428754}),
+i(210926,{b=1,e=9,spellID=428654}),
 i(49909,{cost={{"i",49927,10}},e=9,g={
 i(22236,{e=9,f=55,spellID=71074}),
 i(22237,{e=9,f=55,spellID=71073}),
 i(22239,{e=9,f=55,spellID=71068}),
 i(22238,{e=9,f=55,spellID=71071})}}),
-i(239015,{awp=110007,b=1,e=9,spellID=1227057})}}),
+i(239015,{awp=110007,b=1,e=9,spellID=1227060})}}),
 n(212886,{awp=100205,coords={
 [37]={{34.2,50.6}}},e=9,r=2,g={
 i(210927,{b=1,e=9,f=55,spellID=428659})}}),
@@ -8228,7 +8228,7 @@ n(211810,{awp=100205,coords={
 [37]={{33.6,49.8}}},e=9,r=2,g={
 i(210821,{e=9,f=55,lvl=40,spellID=10257}),
 i(210819,{e=9,f=55,lvl=30,spellID=10256}),
-i(210928,{b=1,e=9,spellID=428756})}}),
+i(210928,{b=1,e=9,spellID=428657})}}),
 n(211887,{awp=100205,coords={
 [37]={{34.2,48.8}}},e=9,r=2,g={
 s(194115,211359,{cost={{"i",49927,20}},e=9,f=2}),
@@ -8255,7 +8255,7 @@ n(212587,{awp=100205,coords={
 i(210695,{e=9,f=55,spellID=215752})}}),
 n(214489,{awp=100205,coords={
 [1]={{41,17.2}}},e=9,r=1,g={
-i(210318,{b=1,cost={{"i",49927,1}},e=9,f=55,spellID=426440}),
+i(210318,{b=1,cost={{"i",49927,1}},e=9,f=55,spellID=425347}),
 i(22261,{cost={{"i",49927,10}},e=9,f=106,spellID=27661}),
 i(34258,{cost={{"i",49927,5}},e=9,f=55,spellID=45153}),
 i(116648,{b=1,cost={{"i",49927,40}},e=9,f=106,spellID=171607}),
@@ -11310,7 +11310,7 @@ q(8193,{coords={
 [210]={{41.4,73}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
 s(7884,19970,{b=1,e=6,f=57,requireSkill=356,spellID=24301}),
 i(19979,{b=1,e=6,f=53,spellID=24347}),
-s(24667,50287,{awp=50100,b=1,e=6,f=2,requireSkill=356,spellID=71435}),
+s(24667,50287,{awp=50100,b=1,e=6,f=2,requireSkill=356,spellID=71436}),
 heir(50255,{awp=50100,e=6,rwp=60100,u=2}),
 heir(122529,{awp=60100,e=6}),
 crit(406,{achID=306,awp=30002,e=6,id=1})}}),
@@ -11325,7 +11325,7 @@ q(8221,{coords={
 s(7885,19972,{b=1,e=6,f=4,requireSkill=356,spellID=7823})}}),
 q(32435,{awp=50100,coords={
 [210]={{41.4,73}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,rwp=70100,u=2,g={
-s(24667,50287,{b=1,e=6,f=2,requireSkill=356,spellID=71435}),
+s(24667,50287,{b=1,e=6,f=2,requireSkill=356,spellID=71436}),
 heir(50255,{e=6,rwp=60100,u=2}),
 heir(122529,{awp=60100,e=6,u=2}),
 i(19971,{b=1,e=6,f=55,requireSkill=356,spellID=24302,u=2}),
@@ -11337,7 +11337,7 @@ crit(22515,{achID=306,awp=30002,e=6,id=2})}}),
 q(44765,{awp=70100,coords={
 [210]={{41.4,73}}},e=6,isWorldQuest=1,qgs={15077},requireSkill=356,g={
 s(7884,19970,{b=1,e=6,f=57,requireSkill=356,spellID=24301}),
-s(24667,50287,{b=1,e=6,f=2,requireSkill=356,spellID=71435}),
+s(24667,50287,{b=1,e=6,f=2,requireSkill=356,spellID=71436}),
 heir(122529,{e=6}),
 i(19979,{b=1,e=6,f=53,spellID=24347}),
 i(19971,{b=1,e=6,f=55,requireSkill=356,spellID=24302}),
@@ -12267,7 +12267,7 @@ s(76756,133456,{b=1,e=559,f=7,lvl=27,modID=22}),
 i(133464,{b=1,e=559,f=53,lvl=27,modID=22,spellID=45057}),
 i(133463,{b=1,e=559,f=53,lvl=27,modID=22,spellID=45354}),
 i(133461,{b=1,e=559,f=53,lvl=27,modID=22,spellID=45054}),
-i(133462,{b=1,e=559,f=53,lvl=27,modID=22,spellID=45059})}}),
+i(133462,{b=1,e=559,f=53,lvl=27,modID=22,spellID=45064})}}),
 e(533,{e=559,npcID=24664,g={
 p(175,{b=1,e=559,itemID=35504,npcID=26119,spellID=46599}),
 mnt(46628,{b=1,e=559,itemID=35513,lvl=10}),
@@ -12486,7 +12486,7 @@ s(165701,188383,{b=1,e=559,f=3,lvl=27,modID=22}),
 s(165687,188366,{b=1,e=559,f=7,lvl=27,modID=22}),
 s(165710,188393,{b=1,e=559,f=6,lvl=27,modID=22})}}),
 e(562,{e=559,npcID=17977,g={
-i(188396,{b=1,e=559,f=53,lvl=27,modID=22,spellID=38334}),
+i(188396,{b=1,e=559,f=53,lvl=27,modID=22,spellID=34210}),
 s(165714,188398,{b=1,e=559,f=4,lvl=27,modID=22}),
 s(165715,188399,{b=1,e=559,f=6,lvl=27,modID=22}),
 s(165716,188400,{b=1,e=559,f=28,lvl=27,modID=22}),
@@ -13381,7 +13381,7 @@ s(92820,156247,{b=1,e=562,f=4,lvl=30,modID=22}),
 i(156234,{b=1,e=562,f=53,lvl=30,modID=22,spellID=64792}),
 i(156345,{b=1,e=562,f=53,lvl=30,modID=22,spellID=65012}),
 i(156245,{b=1,e=562,f=53,lvl=30,modID=22,spellID=64738}),
-i(156458,{b=1,e=562,f=53,lvl=30,modID=22,spellID=259384}),
+i(156458,{b=1,e=562,f=53,lvl=30,modID=22,spellID=64981}),
 crit(39295,{achID=12310})}})}}),
 inst(271,{difficultyID=24,e=562,rwp=90105,savedInstanceID=619,u=2,g={
 e(580,{e=562,npcID=29309,u=2,g={
@@ -14119,7 +14119,7 @@ s(106287,171758,{b=1,c={1},e=587,f=7,lvl=32,modID=22}),
 s(106331,171802,{b=1,c={5},e=587,f=4,lvl=32,modID=22}),
 s(106382,171869,{b=1,c={6},e=587,f=7,modID=22}),
 s(106384,171871,{b=1,c={6},e=587,f=7,modID=22}),
-s(106184,171648,{b=1,e=587,f=28,lvl=32,modID=22,spellID=99246}),
+s(106184,171648,{b=1,e=587,f=28,lvl=32,modID=22,spellID=99245}),
 s(106250,171719,{b=1,e=587,f=27,lvl=32,modID=22}),
 i(171720,{b=1,e=587,f=51,lvl=32,modID=22}),
 s(106247,171716,{b=1,e=587,f=7,lvl=32,modID=22}),
@@ -14285,7 +14285,7 @@ s(76691,133374,{b=1,e=587,f=6,lvl=32,modID=22,u=2}),
 s(76655,133309,{b=1,e=587,f=3,lvl=32,modID=22,u=2}),
 s(76648,133297,{b=1,e=587,f=5,lvl=32,modID=22,u=2}),
 i(133299,{b=1,e=587,f=52,lvl=32,modID=22,u=2}),
-i(133305,{b=1,e=587,f=53,lvl=32,modID=22,spellID=96173,u=2}),
+i(133305,{b=1,e=587,f=53,lvl=32,modID=22,spellID=91308,u=2}),
 i(133300,{b=1,e=587,f=53,lvl=32,modID=22,spellID=91374,u=2})}})}}),
 inst(69,{awp=60203,difficultyID=24,e=587,savedInstanceID=755,g={
 e(117,{e=587,npcID=44577,g={
@@ -16873,7 +16873,7 @@ toy(206696,{b=1,e=242})}}),
 q(84868,{coords={
 [71]={{63.3,52.4}}},e=242,lvl=10,qgs={226766},sourceQuests={84521},g={
 hqt(83831,{e=242}),
-i(229351,{b=1,f=55,spellID=459811})}})}}),
+i(229351,{b=1,f=55,spellID=464634})}})}}),
 h(-58,{e=242,g={
 n(226766,{coords={
 [71]={{63.3,52.4}}},description="You need to get up to the quest 'A Whiff of Help' in the chain and accept it in order to buy the items.",e=242,rwp=110007,sourceQuests={84868},u=2,g={
@@ -16881,7 +16881,7 @@ i(232005,{e=242,f=55,spellID=433,u=2}),
 i(232006,{e=242,f=55,spellID=104235,u=2}),
 i(232009,{e=242,f=55,spellID=433,u=2}),
 i(232007,{e=242,f=55,spellID=431,u=2}),
-i(229351,{b=1,e=242,f=55,spellID=459811,u=2}),
+i(229351,{b=1,e=242,f=55,spellID=464634,u=2}),
 i(229375,{b=1,e=242,f=55,spellID=464886,u=2})}}),
 n(230310,{coords={
 [210]={{33.6,63.5}}},description="Inside the Booty Bay goblin statue behind chests in the back.",e=242,g={
@@ -16932,13 +16932,13 @@ q(84296,{coords={
 i(227664,{e=242,spellID=460306}),
 o(457156,{coords={
 [114]={{85.9,34}}},e=242,g={
-i(227665,{b=1,e=242,spellID=460383})}}),
+i(227665,{b=1,e=242,spellID=462610})}}),
 o(457161,{coords={
 [114]={{85.9,33.9}}},description="Use Torch of Pyrreth to reveal the page.",e=242,providers={{"i",208092}},g={
-i(227672,{e=242,spellID=154665})}}),
+i(227672,{e=242,spellID=462610})}}),
 o(457160,{coords={
 [114]={{88.1,34.6}}},e=242,g={
-i(227671,{e=242,spellID=460383})}}),
+i(227671,{e=242,spellID=462610})}}),
 o(457197,{coords={
 [119]={{49.7,36}}},e=242}),
 n(228634,{coords={
@@ -16975,7 +16975,7 @@ n(229847,{coords={
 [2024]={{13.4,48.9}}},e=242}),
 o(465234,{coords={
 [2022]={{47,83.5}}},description="Inside a cart in Dragonscale Basecamp.",e=242,g={
-i(228791,{e=242,spellID=463245})}}),
+i(228791,{e=242,spellID=462610})}}),
 o(465277,{coords={
 [2023]={{62,37.5}}},description="By a river by the eastern side of Maruukai.",e=242,g={
 i(228795,{e=242,spellID=463261})}})}}),
@@ -16991,7 +16991,7 @@ n(229847,{coords={
 [2024]={{13.4,48.9}}},e=242}),
 o(465234,{coords={
 [2022]={{47,83.5}}},description="Inside a cart in Dragonscale Basecamp.",e=242,g={
-i(228791,{e=242,spellID=463245})}}),
+i(228791,{e=242,spellID=462610})}}),
 o(465277,{coords={
 [2023]={{62,37.5}}},description="By a river by the eastern side of Maruukai.",e=242,g={
 i(228795,{e=242,spellID=463261})}})}}),
@@ -17007,7 +17007,7 @@ n(142178,{coords={
 i(232364,{spellID=462610})}}),
 o(467293,{coords={
 [2023]={{57.9,31.7}}},description="Atop the high mountain peak behind Maruukai.",e=242,g={
-i(229350,{e=242,spellID=464625})}}),
+i(229350,{e=242,spellID=462610})}}),
 o(467305,{coords={
 [2023]={{39.6,58.3}}},description="Place the Chew Toy inside the Toy Box and then hide in the nearby bush.\nAfter Bakar Pup takes the toy, follow him to the cave.",e=242}),
 o(467329,{coords={
@@ -17022,7 +17022,7 @@ o(472068,{coords={
 i(229196,{spellID=462610})}}),
 o(467293,{coords={
 [2023]={{57.9,31.7}}},description="Atop the high mountain peak behind Maruukai.",e=242,g={
-i(229350,{e=242,spellID=464625})}}),
+i(229350,{e=242,spellID=462610})}}),
 o(467305,{coords={
 [2023]={{39.6,58.3}}},description="Place the Chew Toy inside the Toy Box and then hide in the nearby bush.\nAfter Bakar Pup takes the toy, follow him to the cave.",e=242}),
 o(467329,{coords={
@@ -17190,19 +17190,19 @@ q(84923,{coords={
 [71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232407,232408},sourceQuests={83831}}),
 q(84924,{coords={
 [71]={{64.2,51.3}}},description="Interact with four feathers hidden around Spires of Arak, Shattrath, Nagrand and Frostfire Ridge in Draenor.",e=242,lvl=10,qgs={228273},sourceQuests={84923},g={
-i(229958,{e=242,spellID=420213}),
+i(229958,{e=242,spellID=462610}),
 o(469568,{coords={
 [542]={{45.8,53.6}}},description="On the alignment controls device atop the Windswept Terrace spire in Spires of Arak directly south of Veil Terokk.",e=242,g={
-i(229408,{e=242,spellID=420213})}}),
+i(229408,{e=242,spellID=462610})}}),
 o(469569,{coords={
 [535]={{29.6,29.6}}},description="On a rock in Shattrath Overlook on the north-west side of Shattrath (Talador).",e=242,g={
-i(229409,{e=242,spellID=420213})}}),
+i(229409,{e=242,spellID=462610})}}),
 o(469573,{coords={
 [550]={{83.8,19.4}}},description="Atop a seaside mountain in the Elemental Plateau in Nagrand (Draenor).",e=242,g={
-i(229410,{e=242,spellID=420213})}}),
+i(229410,{e=242,spellID=462610})}}),
 o(469574,{coords={
 [525]={{42.1,67.5}}},description="On a ridge slightly north of the Horde shipyard in Frostfire Ridge.",e=242,g={
-i(229411,{e=242,spellID=420213})}}),
+i(229411,{e=242,spellID=462610})}}),
 crit(70455,{achID=40871,e=242,id=7})}}),
 q(84506,{coords={
 [71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232407,232408},sourceQuests={83831}}),

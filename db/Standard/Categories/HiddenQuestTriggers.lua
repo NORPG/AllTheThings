@@ -803,7 +803,7 @@ hqt(35364),
 hqt(35366)}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 hqt(35435)}}),
-inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
 hqt(35443)}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 hqt(35411),
@@ -7358,6 +7358,11 @@ hqt(84598,{an="cu:3100"}),
 hqt(85833,{an="cu:3100"}),
 hqt(84608,{an="cu:3100"})})}),
 x(12,{
+inst(1308,{awp=120001,isRaid=1,g={
+hqt(94561,{an="n:250802",isWeekly=1}),
+hqt(94563,{an="n:250802",isWeekly=1})}}),
+inst(1314,{awp=120001,isRaid=1,g={
+hqt(95541)}}),
 inst(1307,{awp=120001,isRaid=1,g={
 hqt(93980,{an="n:252066",isWeekly=1}),
 hqt(95342,{an="n:240831",isWeekly=1}),
@@ -7385,8 +7390,10 @@ hqt(91187,{an="m:2505",isDaily=1}),
 hqt(91190,{an="m:2503",isDaily=1}),
 hqt(92444,{an="m:2525",isDaily=1}),
 hqt(91182,{an="m:2545",isDaily=1})}),
-hqt(93819),
-hqt(93822,{an="o:584514"})}}),
+hqt(93821,{an="fa:2710",isWeekly=1}),
+hqt(93819,{isWeekly=1,u=1}),
+hqt(93820,{isWeekly=1,u=1}),
+hqt(93822,{isWeekly=1,u=1})}}),
 m(2537,{lvl=80,g={
 m(2405,{maps={2444,2526,2527},lvl=88,g={
 h(-45,{

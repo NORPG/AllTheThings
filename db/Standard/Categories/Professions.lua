@@ -7796,7 +7796,7 @@ o(525912,{coords={
 [2437]={{42,46.5}}},questID=89145,requireSkill=186,g={
 i(238597,{b=1,requireSkill=186,spellID=1225656})}}),
 o(525907,{coords={
-[2405]={{41.8,38.2}}},questID=89150,requireSkill=186,g={
+[2444]={{34.2,76}}},questID=89150,requireSkill=186,g={
 i(238602,{b=1,requireSkill=186,spellID=1225656})}})}}),
 h(-246,{requireSkill=186,g={
 q(95135,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",245762}},requireSkill=186,g={

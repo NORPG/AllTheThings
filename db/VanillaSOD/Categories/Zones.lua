@@ -902,7 +902,7 @@ i(18841,{b=1,f=55,lvl=41,q=1})}}),
 n(3144,{awp=11503,coords={
 [1454]={{34.6,38.6}}},r=1,sourceQuests={6602},u=1608,g={
 heir(226500,{b=2,lvl=50,q=7,u=1608}),
-i(228222,{b=1,c={1},f=200,lvl=60,q=2,spellID=461475,u=1608})}}),
+r(461475,{b=1,c={1},itemID=228222,lvl=60,q=2,u=1608})}}),
 n(3367,{coords={
 [1454]={{46.5,36.6},{50.8,58.7}}},description="This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",r=1}),
 n(4043,{coords={
@@ -10391,7 +10391,7 @@ q(1248,{coords={
 [1453]={{60,64.3}}},lvl=28,qgs={482},r=2,rwp=40003,sourceQuests={1247}}),
 q(84418,{awp=11503,c={2},coords={
 [1453]={{37.4,32}}},lvl=48,qgs={5492},r=2,u=1608,g={
-i(228238,{b=1,c={2},f=200,lvl=45,q=2,spellID=461607,u=1608})}}),
+r(461607,{b=1,c={2},itemID=228238,lvl=45,q=2,u=1608})}}),
 q(2758,{coords={
 [1453]={{56,16}}},cost={{"i",6040,6}},learnedAt=210,lvl=40,qgs={7798},r=2,requireSkill=164,rwp=11501,u=2,g={
 r(11643,{description="This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",itemID=9367,learnedAt=205,q=2,requireSkill=164})}}),
@@ -10838,7 +10838,7 @@ n(1326,{coords={
 n(17804,{awp=11503,coords={
 [1453]={{70.6,86}}},r=2,sourceQuests={6502},u=1608,g={
 heir(226500,{b=2,lvl=50,q=7,u=1608}),
-i(228222,{b=1,c={1},f=200,lvl=60,q=2,spellID=461475,u=1608})}}),
+r(461475,{b=1,c={1},itemID=228222,lvl=60,q=2,u=1608})}}),
 n(1350,{coords={
 [1453]={{43.6,43.6}}},r=2,g={
 s(156923,2617,{f=4,lvl=32,q=1}),

@@ -94,10 +94,11 @@ ach(664,{awp=30002,providers={{"i",13582}},u=3}),
 p(93,{awp=11101,b=1,itemID=13584,npcID=11326,q=3,spellID=17708,u=3}),
 p(92,{awp=11101,b=1,itemID=13583,npcID=11325,q=3,spellID=17707,u=3}),
 p(94,{awp=11101,b=1,itemID=13582,npcID=11327,q=3,spellID=17709,u=3})}})}}),
-x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
-ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
-p(131,{awp=20001,b=1,itemID=25535,npcID=18381,q=3,rwp=30002,spellID=32298,u=2}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
-p(111,{awp=20001,b=1,description="This was only available in the EU.",itemID=30360,npcID=15358,q=3,rwp=30002,spellID=24988,u=2}))}}),
+q(63865,{altQuests={63770},awp=20501,coords={
+[210]={{42.6,71.6}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",maps={84,85,87,88,103,110,111,998},qgs={17249},rwp=30002,u=2,g={
+p(131,{b=1,itemID=25535,npcID=18381,q=3,spellID=32298,u=2}),
+ach(665,{awp=30002,u=2}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
+p(111,{b=1,description="This was only available in the EU.",itemID=30360,npcID=15358,q=3,spellID=24988,u=2}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=30400,u=2,g={
 h(-45,{u=2,g={
 q(63450,{altQuests={63448},coords={
