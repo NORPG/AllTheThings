@@ -803,7 +803,7 @@ hqt(35364),
 hqt(35366)}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 hqt(35435)}}),
-inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
 hqt(35443)}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 hqt(35411),
@@ -7543,6 +7543,8 @@ hqt(94706),
 hqt(94697),
 hqt(94704),
 hqt(94705)})}})}}),
+h(-730,{awp=120005,g={
+hqt(89044,{repeatable=1})}}),
 m(2541,{awp=120001,icon=_.asset("Arcantina"),g={
 h(-45,{
 hqt(94976,{an="i:250876"}),

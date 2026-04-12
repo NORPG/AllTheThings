@@ -704,10 +704,6 @@ root(ROOTS.Unsorted, {
 			i(271172),	-- Nightmare Guardian's Table
 			i(271173),	-- Blazing Guardian's Table
 			i(271174),	-- Dream Guardian's Table
-			i(271181),	-- Finnow Chum
-			i(271182),	-- Plecofin Bait
-			i(271183),	-- Murkskimmer Meat
-			i(271184),	-- Pressurized Eyeglass
 			i(271221),	-- Wriggling Recruit's Field Pouch
 			i(271222),	-- Bulging Recruit's Field Pouch
 			i(271341),	-- Galactic Voidsliver
@@ -772,7 +768,6 @@ root(ROOTS.Unsorted, {
 				i(256043),	-- Silvermoon Fencepost
 				i(256172),	-- Silvermoon Fence
 				i(263031),	-- Twisted Rope Coil
-				i(264251),	-- Depthdiver's Cooking Spit
 				i(264352),	-- Elegant Elven Bathtub
 				i(264353),	-- Empty Elegant Elven Bathtub
 				i(265031),	-- Consortium Translocation Portal
@@ -1079,7 +1074,6 @@ root(ROOTS.Unsorted, {
 				i(264357),	-- Void-Ridden Crab Meat
 				i(265655),	-- Ritual Components
 				i(265710),	-- Elementary Voidcore
-				i(265749),	-- Idol of the Depths \\ [PH] Threshadon Loa Blessing
 				-- QI /Devourer??
 				i(250325),	-- Night's Embrace
 			}),
@@ -1331,7 +1325,6 @@ root(ROOTS.Unsorted, {
 				i(248933),	-- Burden of War
 				i(253389),	-- Manaforge Raider's Umbral Ward (MAIN HAND SLOT)
 				i(253402),	-- Scorching
-				i(253582),	-- Fangfin Flailer
 				i(258404),	-- Lil' Blue Whirlwind
 				i(258405),	-- Lil' Black Whirlwind
 				i(258407),	-- Lil' Green Whirlwind
@@ -1454,10 +1447,6 @@ root(ROOTS.Unsorted, {
 				i(266090),	-- Basic Purple Quiver
 				i(266091),	-- Basic Rugged Quiver
 				i(266092),	-- Basic Sea Green Quiver
-				i(266901),	-- Depthdiver's Cloak
-				i(266902),	-- Depthdiver's Tabard
-				i(266903),	-- Depthdiver's Shoulderpads
-				i(266969),	-- Ensemble: Depthdiver Vestments
 				i(266971),	-- [PH] Hara'ti Cloak - Yellow
 				i(266972),	-- [PH] Hara'ti Shoulders - Yellow
 				i(266973),	-- [PH] Hara'ti Tabard - Yellow
@@ -1523,12 +1512,7 @@ root(ROOTS.Unsorted, {
 				i(250868),	-- Crimson Crystal Column
 				i(250869),	-- Crimson Crystal Core
 				i(250870),	-- Crimson Crystal Fragment
-				i(258535),	-- Simple Bone-Tied Charm
-				i(258536),	-- Windmark Tribal Charm
-				i(258537),	-- Amani Dreamer's Charm
-				i(258538),	-- Barebone Rope Charm
 				i(263291),	-- Spring Blossom Pond
-				i(264252),	-- Zul'Aman Forest Hammock
 				i(264500),	-- Devouring Host Ritual Engine (DECOR!)
 				-- Promo?
 				i(255643),	-- Silvermoon Barrel

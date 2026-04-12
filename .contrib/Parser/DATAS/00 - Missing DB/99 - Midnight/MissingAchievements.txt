@@ -1,5 +1,4 @@
 12.0.5.66330
-ach(62506),	-- Abyss Anglers: Pressurized Eyeglass
 ach(62519),	-- [DNT] Research Sites: Collection - Bear Pet - Tracking
 ach(62520),	-- [DNT] Research Sites: Collection - Bear Mount - Tracking
 ach(62586),	-- [DNT] Research Sites: Collection - Eagle Pet - Tracking

@@ -392,19 +392,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				q(82270),	-- Ensemble: Copper Diver Suit
 				i(222959),	-- Ensemble: Tropical Sunrise Swimwear
 				q(82231),	-- Ensemble: Tropical Sunrise Swimwear
-
-				------ Green Diver Set ------
-				i(223245),	-- Ensemble: Green Diver Suit
-				q(82269),	-- Ensemble: Green Diver Suit
-				i(223226),	-- Green Diver's Belt
-				i(223223),	-- Green Diver's Bonnet
-				i(223228),	-- Green Diver's Boots
-				i(223225),	-- Green Diver's Corselet
-				i(223229),	-- Green Diver's Gloves
-				i(223227),	-- Green Diver's Greaves
-				i(223224),	-- Green Diver's Pauldrons
-				i(223253),	-- Green Diver's Tank
-				i(223259),	-- Green Diver's Wrist Seal
 			}),
 			n(WEAPONS, {
 				i(220690),	-- Water Blaster P.R.
