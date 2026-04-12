@@ -213,6 +213,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(90743),	-- Ritual Reinforcement
 					q(90744),	-- The Dreamrift: Malformed Mystery
 					q(90745, {	-- The Empty Cradle
+						["sourceQuests"] = { 90744 },	-- The Dreamrift: Malformed Mystery
+						["provider"] = { "n", 243759 },	-- Aksem
+						["coord"] = { 53.4, 49.4, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(260306),	-- Distorted Memory (PET!)
+						},
 					}),
 				}),
 			}),

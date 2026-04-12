@@ -4529,7 +4529,6 @@ i(222967, 4475);	-- Webbers
 --- UNSORTED ---
 i(258739, 4914);	-- Chillcrawler
 i(262768, 4965);	-- Chirpy Mandrake
-i(260306, 4942);	-- Distorted Memory
 i(262881, 4968);	-- Lil' Staropod
 i(262763, 4964);	-- Plump Mandrake
 i(262769, 4966);	-- Screechy Mandrake
@@ -4553,6 +4552,7 @@ i(263492, 4952);	-- Blitzcreek
 i(260942, 4951);	-- Bubbly Snapling
 i(246314, 4974);	-- Dali
 i(238793, 4790);	-- Devouring Runt
+i(260306, 4942);	-- Distorted Memory
 i(258189, 4910);	-- Do, child of Filo
 i(250143, 4883);	-- Dragonhawk Mosswing
 i(259224, 4928);	-- Dragonhawk Munchkin

@@ -1097,7 +1097,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(258739),	-- Chillcrawler (PET!)
 				i(262768),	-- Chirpy Mandrake (PET!) [Trading Post]
-				i(260306),	-- Distorted Memory (PET!) [Quest?]
 				i(262881),	-- Lil' Staropod (PET!) [Promotion]
 				i(262763),	-- Plump Mandrake (PET!) [Trading Post]
 				i(262769),	-- Screechy Mandrake (PET!) [Trading Post]
