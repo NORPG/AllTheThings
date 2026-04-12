@@ -1739,11 +1739,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			})),
 			header(HEADERS.Achievement, 42731, {	-- Become a Hero. Become a Phasediver!
 				q(90938, {	-- A Skip Through the Void
+					["description"] = "It may be possible to acquire this quest (if it is already locked) by doing the following steps (guessed from personal experience)\n1. Log out/in without the Reshii Wraps equipped.\n2. Zone to K'aresh\n3. Equip Reshii Wraps\n4. Enter Untethered Space\nAt this point the quest was active in my log when previously it was not. However it never showed in chat that it was 'accepted' at a certain point, so I'm unsure of when specifically it became available. -- Runaway",
 					["sourceQuests"] = { 84957 },	-- Return to the Veiled Market
 					["qg"] = 241588,	-- Hashim
 					["coord"] = { 50.3, 36.3, KARESH },
 					["lockCriteria"] = { 1, "questID", 85003 },	-- Restoring Operational Efficiency (completing this quest will prevent using the 'skip' option, and thus locking from this skip quest)
-					["DisablePartySync"] = true,
 				}),
 				q(89380, {	-- Another World
 					-- ["sourceQuests"] = { ??? },	-- According to playthrough, this unlocks after HQT 91812 is Triggered
