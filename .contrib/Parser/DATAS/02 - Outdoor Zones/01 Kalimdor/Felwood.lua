@@ -1128,24 +1128,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(939, {	-- Flute of Xavaric
 					["sourceQuest"] = 4906,	-- Further Corruption
 					["provider"] = { "i", 11668 },	-- Flute of Xavaric
-					["coord"] = { 39.6, 22.2, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["cr"] = 10648,	-- Xavaric
 					["lvl"] = 49,
 					["groups"] = {
-						objective(2, {	-- 0/5 Jadefire Felbind
-							["provider"] = { "i", 11674 },	-- Jadefire Felbind
-							["crs"] = {
-								7105,	-- Jadefire Satyr
-								7106,	-- Jadefire Rogue
-								7107,	-- Jadefire Trickster
-								7108,	-- Jadefire Betrayer
-								7109,	-- Jadefire Felsworn
-								7110,	-- Jadefire Shadowstalker
-								7111,	-- Jadefire Hellcaller
-							},
-						}),
 						objective(1, {	-- 0/5 Jadefire Felbind
 							["provider"] = { "i", 11674 },	-- Jadefire Felbind
 							["crs"] = {
@@ -3083,6 +3069,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						9464,	-- Overlord Ror
 						14342,	-- Ragepaw
 					},
+				}),
+				i(11668, {	-- Flute of Xavaric
+					["coord"] = { 39.6, 22.2, FELWOOD },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 10648,	-- Xavaric
 				}),
 				i(20768, {	-- Oozing Bag
 					["crs"] = {
