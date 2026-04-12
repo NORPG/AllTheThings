@@ -49,9 +49,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["qg"] = 240195,	-- Depthdiver Jeju
 					["coord"] = { 68.2, 20.2, MAP.MIDNIGHT.ZULAMAN },
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, {	-- Appears as a Bonus Objective quest every time you dive
 					q(92447, {	-- Abyss Anglers
 						["coord"] = { 68.2, 19.9, MAP.MIDNIGHT.ZULAMAN },
+						["isRepeatable"] = true,
 					}),
 				}),
 			}),
@@ -157,7 +158,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
 		n(ABYSS_ANGLERS, {
-			q(89044),	-- Triggered after 'Suiting up for a dive' during 'Joining the Abyss Anglers' (96388)
+			q(89044, { ["isRepeatable"] = true }),	-- Constantly triggers. Usually flags as completed when you dive, unflags when you surface
 		}),
 	})),
 });
