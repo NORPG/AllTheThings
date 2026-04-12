@@ -1,16 +1,4 @@
 ﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
-	[525932] = {
-		readable = "Half-Baked Techniques",
-		text = {
-			en = "Half-Baked Techniques",
-		},
-	},
-	[525952] = {
-		readable = "Enchanted Sunfire Silk",
-		text = {
-			en = "Enchanted Sunfire Silk",
-		},
-	},
 	[553966] = {
 		readable = "Pygmy Oil",
 		text = {
