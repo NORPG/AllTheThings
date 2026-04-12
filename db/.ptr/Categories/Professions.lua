@@ -9,48 +9,48 @@ x(7,{requireSkill=794,g={
 h(-12,{awp=70003,requireSkill=794,g={
 ach(10602,{requireSkill=794,sym={{"partial_achievement",10603}},g={
 cl(1,{requireSkill=794,g={
-artifact(797,{b=1,c={1},itemID=128910,requireSkill=794,sourceID=77716,spellID=206429}),
+artifact(797,{b=1,c={1},itemID=128910,requireSkill=794,sourceID=77716,spellID=197886}),
 artifact(658,{b=1,c={1},isOffHand=1,itemID=134553,requireSkill=794,sourceID=77776}),
 artifact(151,{b=1,c={1},isOffHand=1,itemID=128288,requireSkill=794,sourceID=73911,spellID=240856})}}),
 cl(2,{requireSkill=794,g={
-artifact(15,{b=1,c={2},itemID=120978,requireSkill=794,sourceID=70218,spellID=225110}),
-artifact(581,{b=1,c={2},itemID=128823,requireSkill=794,sourceID=77240,spellID=211838}),
+artifact(15,{b=1,c={2},itemID=120978,requireSkill=794,sourceID=70218,spellID=196118}),
+artifact(581,{b=1,c={2},itemID=128823,requireSkill=794,sourceID=77240,spellID=197886}),
 artifact(710,{b=1,c={2},isOffHand=1,itemID=128867,requireSkill=794,sourceID=77289,spellID=240863})}}),
 cl(3,{requireSkill=794,g={
-artifact(220,{b=1,c={3},itemID=128826,requireSkill=794,sourceID=75212,spellID=200279}),
-artifact(455,{b=1,c={3},itemID=128861,requireSkill=794,sourceID=77029,spellID=212009}),
-artifact(474,{b=1,c={3},itemID=128808,requireSkill=794,sourceID=77049,spellID=208602})}}),
+artifact(220,{b=1,c={3},itemID=128826,requireSkill=794,sourceID=75212,spellID=197886}),
+artifact(455,{b=1,c={3},itemID=128861,requireSkill=794,sourceID=77029,spellID=197886}),
+artifact(474,{b=1,c={3},itemID=128808,requireSkill=794,sourceID=77049,spellID=197886})}}),
 cl(4,{requireSkill=794,g={
 artifact(236,{b=1,c={4},collectible=false,isOffHand=1,itemID=128869,requireSkill=794,sourceID=73682}),
 artifact(699,{b=1,c={4},isOffHand=1,itemID=134552,requireSkill=794,sourceID=77758}),
 artifact(78,{b=1,c={4},isOffHand=1,itemID=128479,requireSkill=794,sourceID=73533,spellID=190435})}}),
 cl(5,{requireSkill=794,g={
-artifact(729,{b=1,c={5},itemID=128868,requireSkill=794,sourceID=77374,spellID=208011}),
-artifact(751,{b=1,c={5},itemID=128825,requireSkill=794,sourceID=77396,spellID=210733}),
+artifact(729,{b=1,c={5},itemID=128868,requireSkill=794,sourceID=77374,spellID=197886}),
+artifact(751,{b=1,c={5},itemID=128825,requireSkill=794,sourceID=77396,spellID=197886}),
 artifact(251,{b=1,c={5},isOffHand=1,itemID=133958,requireSkill=794,sourceID=77416})}}),
 cl(6,{requireSkill=794,g={
-artifact(363,{b=1,c={6},itemID=128402,requireSkill=794,sourceID=76956,spellID=200152}),
+artifact(363,{b=1,c={6},itemID=128402,requireSkill=794,sourceID=76956,spellID=197886}),
 artifact(379,{b=1,c={6},isOffHand=1,itemID=128293,requireSkill=794,sourceID=77182}),
-artifact(397,{b=1,c={6},itemID=128403,requireSkill=794,sourceID=76990,spellID=202618})}}),
+artifact(397,{b=1,c={6},itemID=128403,requireSkill=794,sourceID=76990,spellID=197886})}}),
 cl(7,{requireSkill=794,g={
 artifact(306,{b=1,c={7},isOffHand=1,itemID=128873,requireSkill=794,sourceID=80560}),
 artifact(679,{b=1,c={7},isOffHand=1,itemID=128936,requireSkill=794,sourceID=78647}),
 artifact(778,{b=1,c={7},isOffHand=1,itemID=128934,requireSkill=794,sourceID=77697})}}),
 cl(8,{requireSkill=794,g={
-artifact(175,{b=1,c={8},itemID=128862,requireSkill=794,sourceID=74467,spellID=214775}),
+artifact(175,{b=1,c={8},itemID=128862,requireSkill=794,sourceID=74467,spellID=197886}),
 artifact(486,{b=1,c={8},isOffHand=1,itemID=133959,requireSkill=794,sourceID=77355}),
-artifact(131,{b=1,c={8},itemID=127857,requireSkill=794,sourceID=73870,spellID=211954})}}),
+artifact(131,{b=1,c={8},itemID=127857,requireSkill=794,sourceID=73870,spellID=197886})}}),
 cl(9,{requireSkill=794,g={
-artifact(195,{b=1,c={9},itemID=128941,requireSkill=794,sourceID=74602,spellID=219839}),
-artifact(316,{b=1,c={9},itemID=128942,requireSkill=794,sourceID=76823,spellID=204819}),
+artifact(195,{b=1,c={9},itemID=128941,requireSkill=794,sourceID=74602,spellID=197886}),
+artifact(316,{b=1,c={9},itemID=128942,requireSkill=794,sourceID=76823,spellID=197886}),
 artifact(817,{b=1,c={9},isOffHand=1,itemID=137246,requireSkill=794,sourceID=80369,spellID=205077})}}),
 cl(10,{requireSkill=794,g={
-artifact(514,{b=1,c={10},itemID=128937,requireSkill=794,sourceID=77089,spellID=202435}),
-artifact(345,{b=1,c={10},itemID=128938,requireSkill=794,sourceID=76935,spellID=217814}),
+artifact(514,{b=1,c={10},itemID=128937,requireSkill=794,sourceID=77089,spellID=197886}),
+artifact(345,{b=1,c={10},itemID=128938,requireSkill=794,sourceID=76935,spellID=197886}),
 artifact(524,{b=1,c={10},isOffHand=1,itemID=133948,requireSkill=794,sourceID=77125})}}),
 cl(11,{requireSkill=794,g={
-artifact(416,{b=1,c={11},itemID=128858,requireSkill=794,sourceID=77009,spellID=205387}),
-artifact(52,{b=1,c={11},itemID=128306,requireSkill=794,sourceID=73405,spellID=207560}),
+artifact(416,{b=1,c={11},itemID=128858,requireSkill=794,sourceID=77009,spellID=197886}),
+artifact(52,{b=1,c={11},itemID=128306,requireSkill=794,sourceID=73405,spellID=197886}),
 artifact(438,{b=1,c={11},isOffHand=1,itemID=128859,requireSkill=794,sourceID=97356}),
 artifact(276,{b=1,c={11},isOffHand=1,itemID=128822,requireSkill=794,sourceID=97336})}}),
 cl(12,{requireSkill=794,g={
@@ -4651,7 +4651,7 @@ ach(4917,{requireSkill=356}),
 ach(5851,{awp=40200,requireSkill=356})}}),
 ah(67414,{awp=40001,description="Fishing Daily Quest Reward",providers={{"i",67414},{"i",112623}},requireSkill=356,type="i",g={
 p(211,{awp=40003,b=1,itemID=44983,npcID=33226,requireSkill=356,spellID=62561}),
-s(15661,33820,{awp=40003,b=1,f=4,requireSkill=356,spellID=7823}),
+s(15661,33820,{awp=40003,b=1,f=4,requireSkill=356,spellID=43699}),
 s(22166,45991,{awp=40003,b=1,f=57,requireSkill=356,spellID=59731}),
 s(22167,45992,{awp=40003,b=1,f=57,requireSkill=356,spellID=59731}),
 i(67410,{awp=40003,requireSkill=356}),
@@ -4760,7 +4760,7 @@ i(133722,{description="You must be in |cffffffffThe Great Sea|r when you use thi
 i(133740,{b=1,lvl=39,requireSkill=356,spellID=201826}),
 i(139667,{b=1,lvl=39,requireSkill=356,spellID=221474})}})}}),
 i(133713,{description="An important note - if you use this item with another bait active (or vice versa) the new buff WILL REPLACE the previous one. As such, it's best to wait until your bait buff expires before using this item. This does not apply to Arcane Lure, which can be used concurrently with any other bait/lure.",f=55,lvl=39,maps={634},requireSkill=356,spellID=201816,g={
-i(133714,{description="This item will allow you to catch the rare fish Thundering Stormray in Stormheim.",f=55,lvl=39,requireSkill=356,spellID=202006,g={
+i(133714,{description="This item will allow you to catch the rare fish Thundering Stormray in Stormheim.",f=55,lvl=39,requireSkill=356,spellID=201817,g={
 i(133736,{b=1,lvl=39,requireSkill=356,spellID=201826}),
 i(139663,{b=1,lvl=39,requireSkill=356,spellID=221474})}})}}),
 i(133707,{description="This item will allow you to catch the rare fish Terrorfin in Val'sharah.",f=55,lvl=39,maps={641},requireSkill=356,spellID=201810,g={
@@ -7807,7 +7807,7 @@ o(525912,{coords={
 [2437]={{42,46.5}}},questID=89145,requireSkill=186,g={
 i(238597,{b=1,requireSkill=186,spellID=1225656})}}),
 o(525907,{coords={
-[2405]={{41.8,38.2}}},questID=89150,requireSkill=186,g={
+[2444]={{34.2,76}}},questID=89150,requireSkill=186,g={
 i(238602,{b=1,requireSkill=186,spellID=1225656})}})}}),
 h(-246,{requireSkill=186,g={
 q(95135,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",245762}},requireSkill=186,g={

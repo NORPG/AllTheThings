@@ -172,7 +172,7 @@ i(202072,{b=1,coords={
 i(202066,{cost={{"i",202073,25}},description="Now that your barrel is half full, the fishing gets harder. You're looking for lava fish now.",requireSkill=356,sourceQuests={72676},spellID=396699,g={
 i(202073,{b=1,coords={
 [2022]={{35.8,64.6}}},description="You'll need 25 of these fish. Keep in mind, they're rarer drops, so this will take longer than the Frigid Floe Fish."})}}),
-q(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",providers={{"i",202068}},requireSkill=356,sourceQuests={72676},g={
+q(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",requireSkill=356,sourceQuests={72676},g={
 i(202074,{b=1,coords={
 [2025]={{56,44.5}}},description="Just one! But it'll take a while. Having good Perception on your Profession gear may help."}),
 i(202068,{spellID=396698})}}),
@@ -385,7 +385,7 @@ i(262880,{f=55,spellID=11629})})}}),
 ah(40967,{awp=110005,description="***Using Debug Mode is recommended.***\n",type="a",g={
 o(182030,{coords={
 [78]={{44.5,8}}},description="Inside a rotten tree trunk in the far north of Un'Goro Crater. Use your Torch of Pyrreth to reveal it.",providers={{"i",208092}},g={
-i(228941,{b=1,spellID=420213})}}),
+i(228941,{b=1,spellID=463482})}}),
 hqt(84685,{coords={
 [2339]={{54.9,28.9}}},sourceAchievements={40870}}),
 q(84684,{coords={
@@ -413,7 +413,7 @@ hqt(84676,{coords={
 hqt(84677,{description="Requires the 1 O'clock basin to have been completed to see the obelisk personally.\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Azsuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\n\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\n\nFully lights up the 2 O'clock basin",providers={{"n",37865},{"n",153297}},g={
 n(153297,{coords={
 [1530]={{83.7,27.6}}},cost={{"i",116812,1},{"i",229413,1}},providers={{"i",168123},{"i",175140}},g={
-i(53156,{b=1,description="Opens both doors in the room with the Red Button.",spellID=420213})}})}}),
+i(53156,{b=1,description="Opens both doors in the room with the Red Button.",spellID=3366})}})}}),
 ah(228967,{description="1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin, fully lighting with 9 orbs.",providers={{"i",53156}},sourceQuests={84677},type="i",g={
 i(228965,{b=1,sourceQuests={84677},spellID=3366}),
 o(466393,{coords={
