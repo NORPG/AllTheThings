@@ -346,8 +346,11 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			})),
 			cl(SHAMAN, sharedData({ ["classes"] = { SHAMAN } }, {
 				q(59002, {	-- A Shaman's Duty
-					["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies
-					["provider"] = { "n", 163329 },	-- Ghostwolf
+					["sourceQuests"] = { 
+						55194,	-- Stocking Up on Supplies [A] 
+						59950,	-- Stocking Up on Supplies [H]
+					},	
+					["provider"] = { "n", 163329 },	-- Ghost Wolf
 					["coord"] = { 52.3, 55.6, EXILES_REACH },
 					["groups"] = {
 						o(342366, {	-- Veil Blossom
