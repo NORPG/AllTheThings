@@ -945,7 +945,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					i(168601),	-- Ward Stone (QI!)
 				},
 			}),
-			q(59981, {	-- Controlling Their Stones [H]
+			q(59981, {	-- Controlling their Stones [H]
 				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
 				["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 40.2, 32.4, EXILES_REACH },
