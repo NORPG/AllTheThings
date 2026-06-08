@@ -346,10 +346,10 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			})),
 			cl(SHAMAN, sharedData({ ["classes"] = { SHAMAN } }, {
 				q(59002, {	-- A Shaman's Duty
-					["sourceQuests"] = { 
-						55194,	-- Stocking Up on Supplies [A] 
+					["sourceQuests"] = {
+						55194,	-- Stocking Up on Supplies [A]
 						59950,	-- Stocking Up on Supplies [H]
-					},	
+					},
 					["provider"] = { "n", 163329 },	-- Ghost Wolf
 					["coord"] = { 52.3, 55.6, EXILES_REACH },
 					["groups"] = {
@@ -1439,7 +1439,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(175198, {	-- Expeditionary Mail Spaulders
-						["races"] = ALLIANCE_ONLY
+						["races"] = ALLIANCE_ONLY,
 					}),
 					i(175196, {	-- Expeditionary Plate Shoulderguard
 						["races"] = ALLIANCE_ONLY,
