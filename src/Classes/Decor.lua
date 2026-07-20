@@ -24,7 +24,7 @@ local C_HousingCatalog_GetCatalogEntryInfo,C_HouseEditor_IsHouseEditorActive,C_T
 -- /dump C_HousingCatalog.GetCatalogEntryInfoByRecordID(1, 383, true)
 
 local pairs
- 	= pairs
+	= pairs
 
 local IsAccountCached = app.IsAccountCached
 app.AddEventHandler("OnStartup", function()
