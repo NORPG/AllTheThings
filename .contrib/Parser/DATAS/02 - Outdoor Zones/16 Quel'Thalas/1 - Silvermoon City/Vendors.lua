@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 42.1, 58.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(259996, {	-- Quel'Thalas Equipment Chest
-						["timeline"] = { "added 12.0.5.67602" },
+						["timeline"] = { "added 12.0.5.67602", REMOVED_12_1_0 },
 						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
 						["sym"] = {
 							-- MID Season 1 dungeons (Normal+ difficulty)
