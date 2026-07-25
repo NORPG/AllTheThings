@@ -110,7 +110,11 @@ root(ROOTS.Holidays,
 				}),
 				-- Repeatable Quests
 				q(93870, {	-- The Ephemeron Masquerade
-					["sourceQuest"] = 93719,	-- Nothing Captured, Nothing Gained
+					["sourceQuests"] = {
+						93719,	-- Nothing Captured, Nothing Gained
+						93914,	-- AW HQT during quest chain, possibly considered as unlock for alts...
+					},
+					["sourceQuestNumRequired"] = 1,
 					["qg"] = 256697,	-- Propagandist Naicira
 					["coord"] = { 31.5, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["isDaily"] = true,	-- Speculation

@@ -171,9 +171,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257380),	-- Player Experience (Uncommon)
 			i(257381),	-- Player Experience (Rare)
 			i(257379),	-- Player Experience (Epic)
-			i(265714, {	-- Trovehunter's Bounty
-				["providers"] = {{"o",618495}}, -- Nullaeus Cache (verified)
-			}),
+			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
 			i(262586, {	-- Primeval Arcane Remnant (QI!/QS!)
 				["providers"] = {
@@ -575,7 +573,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			o(581922, {	-- Hidden Trove
 				["VerifyLoot"] = true,
-				["provider"] = { "i", 265714 },	-- Trovehunter's Bounty
+				["providers"] = {
+					{"i",252415},	-- Trovehunter's Bounty
+					{"i",265714},	-- Trovehunter's Bounty (Delve UI)
+				},
 			}),
 			o(506498, {	-- Gilded Stash
 				["timeline"] = { ADDED_12_0_1_SEASONSTART },

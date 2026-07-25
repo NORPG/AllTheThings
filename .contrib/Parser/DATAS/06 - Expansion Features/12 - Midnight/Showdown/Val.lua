@@ -322,18 +322,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(276098),	-- Raided Items (Low Level)
 					}),
 					n(SPECIAL, {	-- Move to Treasures if objectid is found
-						header(HEADERS.Spell, 1300397, {	-- Testament
-							["description"] = "Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. Return to the hilt again to claim your reward.",
+					}),
+					n(TREASURES, {
+						o(655270, {	-- Dominaar Storage Vessel
+							["description"] = "Spawns randomly throughout the zone.",
+						}),
+						o(658799, {	-- Enchanted Hilt
+							["description"] = "Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. You will have 2 stacks of the 'Vanquishing' buff when completed. Return to the hilt again to claim your reward.",
 							["coords"] = {
 								{ 61.4, 78.8, VAL },	-- Cave
 								{ 70.5, 84.3, VAL },	-- Enchanted Hilt
 							},
 							["groups"] = { i(276290) },	-- Ice Guardian's Sleetblade (COSMETIC!)
-						}),
-					}),
-					n(TREASURES, {
-						o(655270, {	-- Dominaar Storage Vessel
-							["description"] = "Spawns randomly throughout the zone.",
 						}),
 					}),
 					n(WORLD_QUESTS, bubbleDownFiltered({

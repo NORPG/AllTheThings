@@ -132,7 +132,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
 				i(253245),	-- Cracked Keystone (QI!/QS!/CI!)
 				i(268297),	-- Rattling Bag o' Gold
-				i(252415),	-- Trovehunter's Bounty
+				i(252415, {	-- Trovehunter's Bounty
+					["providers"] = {{"o",618495}}, -- Nullaeus Cache (verified)
+				}),
 				-- Blessings
 				i(264669),	-- Blessing of Potency
 				i(264670),	-- Blessing of Zeal

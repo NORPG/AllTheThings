@@ -3648,7 +3648,6 @@ root(ROOTS.Unsorted, {
 				i(163386),	-- Bloodied Sentinel's Glaive
 				i(163562),	-- Blightcaller's Easy Death
 				i(163647),	-- Azerite Shard
-				i(163856),	-- Ancient Pilgrimage Scrollcasing
 				i(151611),	-- Dreadtick Mandible
 				i(153571),	-- Poisoned Blow Dart
 				i(155676),	-- Ancient Journal

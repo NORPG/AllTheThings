@@ -303,6 +303,7 @@ for i,mapID in ipairs({
 
 	-- #if AFTER 12.0.7
 	2623,	-- Naigtal
+	2622,	-- Val
 	-- #endif
 })
 do table.insert(FlightPathMapIDs, mapID); end
