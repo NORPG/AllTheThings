@@ -4797,6 +4797,27 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["provider"] = { "n", 92195 },	-- Professor Pallin
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 				["groups"] = {
+					o(244679, {	-- Hearthstone Card
+						["coords"] = {
+							{ 46.3, 39.7, LEGION_DALARAN },
+							{ 47.0, 38.7, LEGION_DALARAN },
+							{ 47.3, 41.1, LEGION_DALARAN },
+							{ 47.4, 40.3, LEGION_DALARAN },
+							{ 47.5, 40.8, LEGION_DALARAN },
+							{ 47.6, 40.3, LEGION_DALARAN },
+							{ 48.1, 41.8, LEGION_DALARAN },
+							{ 48.4, 39.4, LEGION_DALARAN },
+							{ 48.6, 39.4, LEGION_DALARAN },
+							{ 48.6, 40.8, LEGION_DALARAN },
+							{ 48.7, 38.4, LEGION_DALARAN },
+							{ 48.7, 41.5, LEGION_DALARAN },
+							{ 48.9, 39.9, LEGION_DALARAN },
+							{ 49.8, 39.5, LEGION_DALARAN },
+							{ 49.9, 39.1, LEGION_DALARAN },
+						},
+						["groups"] = { i(129092) },	-- Hearthstone Card (QI!)
+					}),
+					--
 					r(192854),	-- Prophecy Tarot [Rank 1] (RECIPE!)
 				},
 			}),

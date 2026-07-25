@@ -193,7 +193,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(97036, {	-- Umbral Title Bout
 							["sourceQuest"] = 97035,	-- Depose the Deranged
-							["qg"] = 264941, -- Impotus
+							["qg"] = 267578, -- Impotus
 							["coord"] = { 62.3, 21.8, VAL },
 						}),
 						-- Repeatable
@@ -350,6 +350,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 40.2, 77.5, 2618 },	-- Void Acropolis (Lower)
 							["cr"] = { 261072 },	-- Imperator Pertinax
 						}),
+						q(95394, {	-- Aberration Liberation
+							["coord"] = { 38.5, 39.2, VAL },
+						}),
 						q(95393, {	-- Caver Saviour
 							["coord"] = { 61.6, 78.8, VAL },
 						}),
@@ -364,6 +367,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(95404, {	-- Freeze Range Eggs
 							["coord"] = { 56.0, 49.6, VAL },
+						}),
+						q(96400, {	-- Lingering Corruption
+							["coord"] = { 68.6, 22.2, 2621 },	-- Forgotten Depths
 						}),
 						q(95401, {	-- Junction Dysfunction
 							["coord"] = { 35.8, 74.3, VAL },
