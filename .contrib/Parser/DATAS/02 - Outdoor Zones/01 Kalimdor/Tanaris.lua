@@ -1465,6 +1465,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16971),	-- Clamlette Surprise
 						recipe(18260, {	-- Cooking (Artisan)
 							["timeline"] = { REMOVED_3_1_0 },
+							["rank"] = 4,
 						}),
 						recipe(64054, {	-- Clamlette Magnifique (RECIPE!)
 							["timeline"] = { ADDED_3_1_0 },
@@ -1486,6 +1487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16971),	-- Clamlette Surprise
 						recipe(18260, {	-- Cooking (Artisan)
 							["timeline"] = { REMOVED_3_1_0 },
+							["rank"] = 4,
 						}),
 						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
 					},

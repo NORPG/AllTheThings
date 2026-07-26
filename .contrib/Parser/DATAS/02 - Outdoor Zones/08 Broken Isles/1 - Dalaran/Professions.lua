@@ -223,6 +223,7 @@ root(ROOTS.Zones, {
 							r(195128, {	-- Cooking (Legion Master)
 								["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
 								["collectible"] = false,
+								["rank"] = 10,
 							}),
 							applyclassicphase(BFA_PHASE_ONE, r(264644, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Cooking
 						},
@@ -234,6 +235,7 @@ root(ROOTS.Zones, {
 							r(195128, {	-- Cooking (Legion Master)
 								["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
 								["collectible"] = false,
+								["rank"] = 10,
 							}),
 							applyclassicphase(BFA_PHASE_ONE, r(264644, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Cooking
 						},

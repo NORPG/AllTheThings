@@ -5871,7 +5871,7 @@ q(4509,{coords={
 q(6610,{altQuests={13825},coords={
 [1446]={{52.6,28.1}}},cost={{"i",8932,20},{"i",7974,10},{"i",12207,12}},learnedAt=225,lvl=35,qgs={8125},requireSkill=185,sourceQuests={6611,6612},g={
 i(16971,{f=55,lvl=40,q=1}),
-r(18260,{learnedAt=200,requireSkill=185,rwp=30100})}}),
+r(18260,{learnedAt=200,rank=4,requireSkill=185,rwp=30100})}}),
 q(2882,{coords={
 [1446]={{55.4,92.2}}},cost={{"i",9252,1},{"i",9253,1},{"i",9251,1},{"i",9275,1}},lvl=40,providers={{"i",9254},{"o",142189}},repeatable=1,rwp=40003,g={
 qo(1,{crs={7899,7901,7902},providers={{"i",9275}}}),

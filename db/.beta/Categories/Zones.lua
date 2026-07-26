@@ -3483,7 +3483,7 @@ n(133261,{awp=70305,coords={
 r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
 r(25704,{itemID=21099,requireSkill=185,skillID=2548})}}),
 n(12795,{coords={
-[85]={{38.2,72.6}}},r=1,sym={{"select","expansionID",1},{"find","headerID",-211},{"pop"},{"exclude","headerID",-101}}}),
+[85]={{38.2,72.6}}},r=1,sym={{"select","symselector",4},{"pop"},{"exclude","headerID",-101}}}),
 n(50323,{awp=40003,coords={
 [85]={{50,58.6}}},r=1,g={
 s(32492,64884,{b=1,f=9,r=1,spellID=57818}),
@@ -5016,7 +5016,7 @@ s(32516,64909,{b=1,f=3,lvl=15,minReputation={76,42000},r=1}),
 s(32517,64910,{b=1,f=3,lvl=15,minReputation={76,42000},r=1}),
 s(32515,64908,{b=1,f=3,lvl=15,minReputation={76,42000},r=1})}}),
 n(12794,{coords={
-[85]={{38.6,72.8}}},r=1,sym={{"select","expansionID",1},{"find","headerID",-211},{"find","headerID",-101},{"pop"}}}),
+[85]={{38.6,72.8}}},r=1,sym={{"select","symselector",4},{"find","headerID",-101},{"pop"}}}),
 n(46708,{awp=40001,coords={
 [85]={{56.6,61.2}}},r=1,g={
 r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
@@ -17980,12 +17980,12 @@ q(24933,{awp=40003,coords={
 q(6610,{altQuests={13825},coords={
 [71]={{52.4,29}}},cost={{"i",3927,20},{"i",7974,10},{"i",12207,12}},learnedAt=225,lvl=15,qgs={40589},requireSkill=185,sourceQuests={6611,6612},g={
 i(16971,{f=55,lvl=17,spellID=10256}),
-r(18260,{requireSkill=185,rwp=30100,u=2}),
+r(18260,{rank=4,requireSkill=185,rwp=30100,u=2}),
 r(64054,{awp=30100,learnedAt=250,requireSkill=185,skillID=2548})}}),
 q(13825,{awp=30100,coords={
 [71]={{52.63,28.12}}},lc={1,"spellID",64054},learnedAt=225,qgs={8125},requireSkill=185,rwp=40003,sourceQuests={6611,6612},u=2,g={
 i(16971,{f=55,lvl=17,spellID=10256,u=2}),
-r(18260,{requireSkill=185,rwp=30100,u=2}),
+r(18260,{rank=4,requireSkill=185,rwp=30100,u=2}),
 r(64054,{learnedAt=250,requireSkill=185,skillID=2548,u=2})}}),
 q(2882,{coords={
 [71]={{55.4,92.2}}},cost={{"i",9252,1},{"i",9253,1},{"i",9251,1},{"i",9275,1}},crs={7899,7901,7902},providers={{"i",9254},{"o",142189}},qis={9275},repeatable=1,rwp=40003,u=2,g={
@@ -26290,7 +26290,7 @@ toy(97921,{awp=70100,b=1}),
 i(138382,{awp=70003}),
 s(80190,138385,{awp=70003,f=10})}}),
 n(12784,{awp=20001,coords={
-[84]={{75.2,67.2}}},description="Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",r=2,sym={{"select","expansionID",1},{"find","headerID",-210},{"find","headerID",-101},{"pop"}}}),
+[84]={{75.2,67.2}}},description="Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",r=2,sym={{"select","symselector",5},{"find","headerID",-101},{"pop"}}}),
 n(12783,{coords={
 [84]={{76.2,65.6}}},pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"i",137642,15}},itemID=29465,lvl=10,pvp=1,r=2}),
@@ -26732,7 +26732,7 @@ i(1941)}}),
 n(1320,{coords={
 [84]={{72,62.2}}},r=2,sym={{"select","itemID",2471,2473,2474,3893,2475,2472,2470,2464,2467,2468,2463,2469,3890,2465}}}),
 n(12785,{awp=20001,coords={
-[84]={{75.4,67}}},r=2,sym={{"select","expansionID",1},{"find","headerID",-210},{"pop"},{"exclude","headerID",-101}}}),
+[84]={{75.4,67}}},r=2,sym={{"select","symselector",5},{"pop"},{"exclude","headerID",-101}}}),
 n(8665,{awp=80001,coords={
 [84]={{56,3.22}}},r=2,rwp=100205,u=2,g={
 p(68,{itemID=8500,npcID=7553,spellID=10707,u=2}),
@@ -73856,7 +73856,7 @@ i(104261,{b=1}),
 crit(23981,{achID=8714,id=24}),
 crit(65643,{achID=20002,awp=100207,e=437,id=2,rwp=110002,u=2})}}),
 n(73854,{coords={
-[554]={{44,70}}},description="Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",isDaily=1,questID=32967,g={
+[554]={{44,70}}},description="Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",isDaily=1,providers={{"n",72095},{"n",73297}},questID=32967,g={
 i(104268,{b=1}),
 crit(23976,{achID=8714,id=10}),
 crit(65665,{achID=20001,awp=100207,e=437,id=3,rwp=110002,u=2})}}),
@@ -73908,13 +73908,13 @@ mnt(148476,{b=1,itemID=104269,lvl=10}),
 crit(23984,{achID=8714,id=27}),
 crit(65647,{achID=20002,awp=100207,e=437,id=6,rwp=110002,u=2})}}),
 n(73163,{coords={
-[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,questID=33303,g={
+[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,providers={{"n",72841}},questID=33303,g={
 p(1330,{b=1,itemID=104161,npcID=73364,spellID=148052}),
 i(104292,{b=1}),
 crit(23989,{achID=8714,id=18}),
 crit(65652,{achID=20002,awp=100207,e=437,id=11,rwp=110002,u=2})}}),
 n(73160,{coords={
-[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,questID=33296,g={
+[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,providers={{"n",72844}},questID=33296,g={
 i(89770,{b=1,lvl=10,spellID=130895}),
 crit(23968,{achID=8714,id=2}),
 crit(65676,{achID=20001,awp=100207,e=437,id=13,rwp=110002,u=2})}}),
@@ -73926,7 +73926,7 @@ toy(104331,{b=1,lvl=10}),
 crit(23994,{achID=8714,id=22}),
 crit(65658,{achID=20002,awp=100207,e=437,id=16,rwp=110002,u=2})}}),
 n(72193,{coords={
-[554]={{33.8,85.8}}},isDaily=1,qgs={72151},questID=33292,g={
+[554]={{33.8,85.8}}},isDaily=1,providers={{"n",72151}},questID=33292,g={
 i(104035,{b=1}),
 crit(23973,{achID=8714,id=7}),
 crit(65669,{achID=20001,awp=100207,e=437,id=6,rwp=110002,u=2})}}),
@@ -73938,7 +73938,7 @@ i(104222,{rwp=70003,u=2}),
 crit(23979,{achID=8714,id=13}),
 crit(65675,{achID=20001,awp=100207,e=437,id=12,rwp=110002,u=2})}}),
 n(73166,{coords={
-[554]={{23.6,28.6},{68.8,74.8}}},description="Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",isDaily=1,questID=33302,g={
+[554]={{16.2,60.6},{17.8,73.7},{18,54.3},{18.4,57.9},{18.4,62.5},{20.2,77.7},{20.6,47.6},{20.8,71.3},{21.1,63.5},{21.8,31.4},{22.4,35.4},{23.5,27.9},{25.1,74.9},{27.1,80.2},{27.5,74.7},{29.8,84.3},{30.7,31.3},{32.7,85.4},{36,87.9},{38.6,86.7},{40.9,90.5},{45.2,89.5},{52.4,86.4},{62.1,83},{62.5,79.8},{65.8,78.4},{69.1,74.9},{69.9,71.1},{70.6,65}}},description="Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",isDaily=1,providers={{"n",72766}},questID=33302,g={
 i(104293,{b=1,spellID=148528}),
 p(1337,{b=1,itemID=104168,npcID=73366,spellID=148066}),
 crit(23985,{achID=8714,id=17}),
@@ -73969,7 +73969,9 @@ n(73704,{coords={
 [554]={{71.2,82.6}}},isDaily=1,questID=33305,g={
 crit(24144,{achID=8714,id=19}),
 crit(65644,{achID=20002,awp=100207,e=437,id=3,rwp=110002,u=2})}}),
-n(72769,{isDaily=1,questID=33293,g={
+n(72769,{coords={
+[554]={{43.1,41.2}},
+[555]={{48.2,62.2},{54.8,68},{56.2,30.4},{62.6,36},{64,47.8},{65.2,64.8},{70.6,62.6},{73.8,31}}},isDaily=1,questID=33293,g={
 i(104258,{b=1}),
 p(1348,{b=1,itemID=104307,npcID=73738,spellID=148552}),
 r(148274,{itemID=104227,requireSkill=773,skillID=2510}),
@@ -74002,7 +74004,7 @@ i(104225,{rwp=70003,u=2}),
 crit(23971,{achID=8714,id=5}),
 crit(65671,{achID=20001,awp=100207,e=437,id=9,rwp=110002,u=2})}}),
 n(71919,{coords={
-[554]={{37.8,77.2}}},description="Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",isDaily=1,qgs={71908,71944},questID=32959,g={
+[554]={{37.8,77.2}}},description="Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",isDaily=1,providers={{"n",71908},{"n",71944}},questID=32959,g={
 p(1336,{b=1,itemID=104167,npcID=73367,spellID=148063}),
 crit(23972,{achID=8714,id=6}),
 crit(65670,{achID=20001,awp=100207,e=437,id=7,rwp=110002,u=2})}})}),
@@ -83006,12 +83008,40 @@ q(34925,{coords={
 [577]={{41.8,41.6}}},lvl=10,qgs={79917},sourceQuests={34442}}),
 q(35019,{coords={
 [577]={{48.6,14.2}}},lvl=10,qgs={78554},r=2,sourceQuests={34436},g={
+o(231160,{type="AsGenericObjectContainer",g={
+i(112337),
+o(231160,{type="AsSubGenericObject"}),
+o(231163,{type="AsSubGenericObject"}),
+o(231164,{type="AsSubGenericObject"}),
+o(231166,{type="AsSubGenericObject"}),
+o(231167,{type="AsSubGenericObject"}),
+o(231168,{type="AsSubGenericObject"}),
+o(231815,{type="AsSubGenericObject"}),
+o(231816,{type="AsSubGenericObject"}),
+o(231817,{type="AsSubGenericObject"}),
+o(231818,{type="AsSubGenericObject"}),
+o(231819,{type="AsSubGenericObject"}),
+o(231820,{type="AsSubGenericObject"})}}),
 s(61164,112670,{b=1,f=4}),
 s(61165,112671,{b=1,f=6}),
 s(61163,112669,{b=1,f=7}),
 s(61162,112668,{b=1,f=5})}}),
 q(35005,{coords={
 [577]={{50,13.3}}},lvl=10,qgs={78553},r=1,sourceQuests={34741},g={
+o(231160,{type="AsGenericObjectContainer",g={
+i(112337),
+o(231160,{type="AsSubGenericObject"}),
+o(231163,{type="AsSubGenericObject"}),
+o(231164,{type="AsSubGenericObject"}),
+o(231166,{type="AsSubGenericObject"}),
+o(231167,{type="AsSubGenericObject"}),
+o(231168,{type="AsSubGenericObject"}),
+o(231815,{type="AsSubGenericObject"}),
+o(231816,{type="AsSubGenericObject"}),
+o(231817,{type="AsSubGenericObject"}),
+o(231818,{type="AsSubGenericObject"}),
+o(231819,{type="AsSubGenericObject"}),
+o(231820,{type="AsSubGenericObject"})}}),
 s(61164,112670,{b=1,f=4}),
 s(61165,112671,{b=1,f=6}),
 s(61163,112669,{b=1,f=7}),
@@ -86688,8 +86718,7 @@ s(62147,113170,{b=1,f=28,r=2}),
 s(62148,113171,{b=1,f=24,r=2}),
 s(62151,113174,{b=1,f=23,r=2}),
 s(62146,113169,{b=1,f=32,r=2}),
-s(62152,113175,{b=1,f=20,r=2}),
-s(66481,118186,{b=1,f=27,r=1})}}),
+s(62152,113175,{b=1,f=20,r=2})}}),
 q(34352,{coords={
 [539]={{59,82.2}}},lvl=40,qgs={83494},sourceQuests={35861,35876}}),
 q(34781,{coords={
@@ -91175,11 +91204,11 @@ r(1260698,{learnedAt=85,requireSkill=164,skillID=2454})}})}})}),
 prof(185,{
 n(93536,{coords={
 [627]={{69.8,38.6}}},r=1,g={
-r(195128,{collectible=false,requireSkill=185,rwp=80001,u=2}),
+r(195128,{collectible=false,rank=10,requireSkill=185,rwp=80001,u=2}),
 r(264644,{awp=80001,requireSkill=185})}}),
 n(99330,{coords={
 [627]={{44,66}}},r=2,g={
-r(195128,{collectible=false,requireSkill=185,rwp=80001,u=2}),
+r(195128,{collectible=false,rank=10,requireSkill=185,rwp=80001,u=2}),
 r(264644,{awp=80001,requireSkill=185})}}),
 n(101846,{description="Takes various meat, fish, and other reagents for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",g={
 r(201528,{b=1,cost={{"i",124119,5}},itemID=133835,lvl=10,requireSkill=185,skillID=2542}),
@@ -93888,11 +93917,11 @@ crit(35946,{achID=11189,id=861})}}),
 q(44894,{isWorldQuest=1}),
 q(41495,{isWorldQuest=1,requireSkill=186,g={
 crit(33726,{achID=11189,id=84})}}),
-q(41481,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41481,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(33716,{achID=11189,id=74})}}),
-q(41482,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41482,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(33717,{achID=11189,id=75})}}),
-q(41483,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41483,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(33718,{achID=11189,id=76})}}),
 q(41529,{isWorldQuest=1,requireSkill=182,g={
 crit(33707,{achID=11189,id=65})}}),
@@ -96503,11 +96532,11 @@ crit(35927,{achID=11189,id=842})}}),
 q(41203,{isWorldQuest=1,requireSkill=186,g={
 i(141231),
 crit(33887,{achID=11189,id=266})}}),
-q(41208,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41208,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(33881,{achID=11189,id=260})}}),
-q(41209,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41209,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(33882,{achID=11189,id=261})}}),
-q(41210,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41210,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(33883,{achID=11189,id=262})}}),
 q(41706,{isWorldQuest=1,g={
 crit(33826,{achID=11189,id=197})}}),
@@ -97819,7 +97848,7 @@ i(132203)}}),
 q(38817,{coords={
 [634]={{68,48.6}}},lvl=10,qgs={93446},sourceQuests={38811,39791},g={
 o(241870,{coords={
-[634]={{69.2,42.3},{69.4,44.3},{69.6,41.7},{69.8,45.7},{70.7,42},{71.2,45.6},{71.4,44.5},{72.9,43.9}}},type="AsGenericObjectContainer",g={
+[634]={{69.2,42.3},{69.4,44.3},{69.6,41.7},{69.8,45.7},{70.7,42},{71.2,45.6},{71.4,44.5},{72.2,43.2},{72.9,43.9}}},type="AsGenericObjectContainer",g={
 i(124512),
 o(241870,{type="AsSubGenericObject"}),
 o(241871,{type="AsSubGenericObject"}),
@@ -98527,11 +98556,11 @@ crit(35918,{achID=11189,id=833})}}),
 q(41534,{isWorldQuest=1,requireSkill=182,g={
 i(140959),
 crit(34065,{achID=11189,id=459})}}),
-q(41490,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41490,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34077,{achID=11189,id=471})}}),
-q(41489,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41489,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34076,{achID=11189,id=470})}}),
-q(41488,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41488,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34075,{achID=11189,id=469})}}),
 q(41938,{isWorldQuest=1,g={
 crit(34035,{achID=11189,id=420})}}),
@@ -100348,6 +100377,12 @@ cq(43987,{b=1,itemID=140327,spellID=224380,g={
 crit(31932,{achID=11133,id=8})}})}}),
 o(257291,{description="These repeatable chests spawn all over the map in Suramar.",maps={680},g={
 crit(33556,{achID=11260,id=2})}}),
+o(251052,{coords={
+[683]={{38.1,42.5}}},description="Does not show on minimap.\nMay require dying to resurrect on the other side of the magic barrier. However it may be possible to bounce or phase through the wall when approached from the very edge at different angles or speeds.",questID=44179,g={
+crit(33563,{achID=11260,id=9})}}),
+o(258034,{coords={
+[683]={{77,61.9}}},description="Does not show on minimap.",questID=43416,g={
+crit(33609,{achID=11260,id=55})}}),
 o(252447,{coords={
 [680]={{46.6,26}}},questID=43744}),
 o(252448,{coords={
@@ -100658,11 +100693,11 @@ o(266032,{type="AsSubGenericObject"}),
 i(142216,{b=1,spellID=233234})}})}}),
 q(44780,{isWorldQuest=1}),
 q(45068,{isWorldQuest=1}),
-q(41493,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41493,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34198,{achID=11189,id=606})}}),
-q(41492,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41492,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34197,{achID=11189,id=605})}}),
-q(41491,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41491,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34196,{achID=11189,id=604})}}),
 q(41447,{isWorldQuest=1,requireSkill=186,g={
 i(141250),
@@ -102053,11 +102088,11 @@ q(41955,{isWorldQuest=1,g={
 crit(34376,{achID=11189,id=799})}}),
 q(42075,{isWorldQuest=1,g={
 crit(34284,{achID=11189,id=698})}}),
-q(41484,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41484,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34310,{achID=11189,id=733})}}),
-q(41486,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41486,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34311,{achID=11189,id=734})}}),
-q(41487,{isWorldQuest=1,requireSkill=186,sym={{"select","headerID",191970}},g={
+q(41487,{isWorldQuest=1,requireSkill=186,sym={{"select","symselector",2}},g={
 crit(34312,{achID=11189,id=735})}}),
 q(41336,{isWorldQuest=1,requireSkill=393,g={
 crit(34094,{achID=11189,id=488})}}),
@@ -105455,7 +105490,7 @@ i(169900,{b=1,cost={{"i",169590,15}},description="The amount of |cff9832dfBurgeo
 i(169899,{b=1,cost={{"i",169590,15}},description="Requires reaching Elite rating in PvP and opening your next weekly chest.\n",f=55,lvl=50,pvp=1,spellID=303835,u=2})}}),
 q(54978,{coords={
 [1161]={{70.4,27}}},isWeekly=1,lvl=50,pvp=1,qgs={135614},r=2,g={
-i(167100,{b=1,modID=53,pvp=1,sym={{"select","headerID",-148},{"find","mapID",14},{"find","headerID",-19},{"find","headerID",-210},{"extract","sourceID"},{"modID",53}}})}}),
+i(167100,{b=1,modID=53,pvp=1,sym={{"select","symselector",6},{"find","headerID",-210},{"extract","sourceID"},{"modID",53}}})}}),
 q(52944,{coords={
 [1161]={{56.4,26}}},isWeekly=1,lvl=50,pvp=1,qgs={143559},r=2,g={
 i(167744,{b=1,pvp=1,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}}}),
@@ -106260,7 +106295,7 @@ i(168269,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"wh
 i(170144,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175021,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175024,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
-i(154992,{b=1,pvp=1,sym={{"select","headerID",-279},{"find","headerID",-296},{"pop"}},u=2}),
+i(154992,{b=1,pvp=1,sym={{"select","symselector",7},{"pop"}},u=2}),
 i(164261,{b=1,pvp=1,r=2,u=2}),
 i(167744,{awp=80100,b=1,pvp=1,rwp=90001,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}},u=2})}),
 h(-45,{
@@ -112163,7 +112198,7 @@ n(139280,{coords={
 s(91531,154474,{b=1,f=5,lvl=50}),
 crit(41834,{achID=12939,id=26})}}),
 n(133356,{coords={
-[895]={{60.7,17.4}}},providers={{"o",281172}},qgs={133353},questID=50301,g={
+[895]={{60.7,17.4}}},providers={{"n",133353},{"o",281172}},questID=50301,g={
 s(96420,160466,{b=1,f=6,lvl=50}),
 crit(41835,{achID=12939,id=27})}}),
 n(139289,{coords={
@@ -114207,7 +114242,7 @@ i(168269,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"wh
 i(170144,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175021,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175024,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
-i(154992,{b=1,pvp=1,sym={{"select","headerID",-279},{"find","headerID",-296},{"pop"}},u=2}),
+i(154992,{b=1,pvp=1,sym={{"select","symselector",7},{"pop"}},u=2}),
 i(164262,{b=1,pvp=1,r=1,u=2}),
 i(167744,{awp=80100,b=1,pvp=1,rwp=90001,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}},u=2})}),
 h(-45,{
@@ -122774,7 +122809,7 @@ q(65775,{awp=90200,coords={
 h(-58,{pvp=1,g={
 n(164095,{coords={
 [1670]={{36,58.6}}},pvp=1,g={
-h(-221,{pvp=1,g={
+h(-221,{pvp=1,symselector=8,g={
 rfl(202,{b=1,cost={{"c",1792,1500}},itemID=183246,pvp=1,spellID=342040}),
 rfl(67,{b=1,c={3},cost={{"c",1792,1500}},itemID=183252,pvp=1,spellID=342040}),
 rfl(8,{b=1,c={8},cost={{"c",1792,1500}},itemID=183268,pvp=1,spellID=342040}),
@@ -123182,7 +123217,7 @@ cu(1813)}}),
 i(188167,{cost=5000000,f=55,lvl=50,spellID=361734}),
 i(187997,{b=2,cost=50000000,f=55,spellID=361234}),
 i(187998,{b=2,cost=75000000,f=55,spellID=361235}),
-i(190184,{b=2,cost=5000000,lvl=60,questID=65623,sourceAchievements={14834},spellID=366882,sym={{"select","expansionID",9},{"find","headerID",-155},{"pop"}},type="ihqt"}),
+i(190184,{b=2,cost=5000000,lvl=60,questID=65623,sourceAchievements={14834},spellID=366882,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
 toy(187869,{b=1,cost=100000000}),
 i(188673,{cost={{"c",1813,10000}},spellID=362986})}}),
 n(176067,{coords={
@@ -123387,7 +123422,7 @@ faction(2464),
 h(-58,{
 n(162447,{coords={
 [1565]={{59.6,52.9}}},g={
-i(184665,{b=1,cost={{"c",1885,35}},f=55,lvl=60,minReputation={2464,1},spellID=347413,sym={{"select","headerID",-221},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1885,35}},f=55,lvl=60,minReputation={2464,1},spellID=347413,sym={{"select","symselector",8},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 h(-167,{minReputation={2464,1},g={
 i(187871,{awp=90105,b=1,cost={{"c",1885,25},{"c",1813,15000}},customCollect={"SL_COV_NFA"},lvl=50,minReputation={2464,1}}),
 i(187881,{awp=90105,b=1,cost={{"c",1885,50},{"c",1813,25000}},customCollect={"SL_COV_NFA"},lvl=50,minReputation={2464,1}}),
@@ -123462,7 +123497,7 @@ h(-58,{
 n(158556,{coords={
 [1565]={{48.4,50.4}},
 [1701]={{59.6,31.8}}},g={
-i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2465,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","expansionID",9},{"find","headerID",-155},{"pop"}},type="ihqt"}),
+i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2465,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
 p(2910,{b=1,cost={{"i",163036,250}},itemID=180641,minReputation={2465,3000},npcID=171248,spellID=334156}),
 r(309644,{b=1,itemID=183096,minReputation={2465,9000},requireSkill=333,skillID=2753}),
 s(115839,184754,{b=1,f=3,lvl=60,minReputation={2465,9000}}),
@@ -125744,7 +125779,7 @@ crit(50055,{achID=14311,id=9})}})}),
 h(-58,{
 n(160470,{coords={
 [1533]={{52.2,47}}},g={
-i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2407,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","expansionID",9},{"find","headerID",-155},{"pop"}},type="ihqt"}),
+i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2407,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
 r(311424,{b=1,itemID=183098,minReputation={2407,3000},requireSkill=773,skillID=2756}),
 r(322590,{b=1,itemID=183094,minReputation={2407,9000},requireSkill=164,skillID=2751}),
 i(184756,{b=1,f=52,lvl=60,minReputation={2407,9000}}),
@@ -126750,7 +126785,9 @@ q(63783,{coords={
 i(185754)}}),
 q(63934,{coords={
 [1961]={{61.4,22.4}}},isDaily=1,lvl=60,qgs={178802},sourceQuests={64556},g={
-i(186164)}}),
+o(368601,{coords={
+[1961]={{56.3,37.7},{56.8,35},{57.3,38.4},{57.3,38.6},{57.5,38.7},{58.2,37.5},{58.3,37.2},{59.2,33.2},{60,38.2},{60.1,38.5},{60.9,33.3},{60.9,35.1},{61,33.5},{61.3,37.7},{61.5,37.8}}},g={
+i(186164)}})}}),
 q(63793,{coords={
 [1961]={{64.7,25.6}}},isDaily=1,lvl=60,providers={{"o",368772}},sourceQuests={64556}}),
 q(63964,{coords={
@@ -127241,7 +127278,7 @@ i(187613,{b=1,cost={{"c",1931,25}},minReputation={2472,2},spellID=355192}),
 i(186984,{b=1,cost={{"c",1931,25}},minReputation={2472,2},spellID=355192}),
 cq(64339,{b=1,cost={{"c",1931,100}},itemID=186714,minReputation={2472,2},spellID=356208}),
 cq(64307,{b=1,cost={{"c",1931,800}},itemID=187145,minReputation={2472,2},spellID=356226}),
-i(184665,{b=1,cost={{"c",1931,1500}},description="|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",f=55,lvl=60,minReputation={2472,3},spellID=347413,sym={{"select","headerID",-221},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1931,1500}},description="|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",f=55,lvl=60,minReputation={2472,3},spellID=347413,sym={{"select","symselector",8},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 i(186718,{b=1,cost={{"c",1931,50}},minReputation={2472,3}}),
 i(186470,{b=1,cost={{"c",1931,2500}},minReputation={2472,4},spellID=353824,g={
 r(343676,{learnedAt=200,minReputation={2472,4},requireSkill=171,skillID=2750}),
@@ -127273,7 +127310,7 @@ i(187077,{cost={{"c",1828,300}},spellID=355776}),
 i(191031,{awp=90200,cost={{"c",1906,300}},spellID=368867}),
 i(187532,{b=1,cost={{"c",1767,2500}},lvl=60,spellID=358498}),
 i(187134,{b=1,cost={{"c",1906,1000}},f=55,spellID=356613}),
-i(184665,{b=1,cost={{"c",1906,400}},f=55,lvl=60,spellID=347413,sym={{"select","headerID",-221},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}})}}),
+i(184665,{b=1,cost={{"c",1906,400}},f=55,lvl=60,spellID=347413,sym={{"select","symselector",8},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}})}}),
 n(179321,{coords={
 [1961]={{63.5,23.3}}},g={
 i(188156,{awp=90105,b=2,cost={{"c",1767,750}},f=55,lvl=60,minReputation={2470,3000},spellID=361698,sym={{"sub","korthian_armaments","INVTYPE_FINGER"},{"sub","korthian_armaments","INVTYPE_TRINKET"}}}),
@@ -128447,7 +128484,7 @@ i(184203,{b=1})}}),
 n(173003,{coords={
 [1536]={{50.6,53.4}}},g={
 i(183112,{b=1,cost={{"i",163036,250}},minReputation={2410,0},spellID=340714}),
-i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2410,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","expansionID",9},{"find","headerID",-155},{"pop"}},type="ihqt"}),
+i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2410,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
 s(115827,184741,{b=1,f=4,lvl=60,minReputation={2410,9000}}),
 s(115826,184740,{b=1,f=7,lvl=60,minReputation={2410,9000}}),
 s(115825,184739,{b=1,f=5,lvl=60,minReputation={2410,9000}}),
@@ -130097,7 +130134,7 @@ n(167815,{coords={
 i(179271,{f=55,lvl=50,spellID=348439})}}),
 n(156822,{coords={
 [1525]={{61.4,63.8}}},minReputation={2413,3000},g={
-i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2413,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","expansionID",9},{"find","headerID",-155},{"pop"}},type="ihqt"}),
+i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2413,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
 i(177665,{b=1,lvl=48,minReputation={2413,3000},spellID=323602}),
 s(115809,184723,{b=1,f=5,lvl=60,minReputation={2413,9000}}),
 r(311870,{b=1,cost=13500000,itemID=183099,minReputation={2413,9000},requireSkill=755,skillID=2757}),
@@ -133810,7 +133847,7 @@ i(189467,{b=1,spellID=364521})}}),
 n(182257,{coords={
 [1970]={{34.8,64.1}}},g={
 i(198449,{awp=90205,b=2,f=55,minReputation={2478,0},spellID=383606}),
-i(190640,{b=1,cost=5000000,lvl=60,minReputation={2478,3000},questID=65694,sourceAchievements={14834},spellID=367894,sym={{"select","expansionID",9},{"find","headerID",-155},{"pop"}},type="ihqt"}),
+i(190640,{b=1,cost=5000000,lvl=60,minReputation={2478,3000},questID=65694,sourceAchievements={14834},spellID=367894,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
 i(191701,{b=1,f=55,minReputation={2478,9000}}),
 i(187750,{b=1,minReputation={2478,9000},spellID=359658,g={
 r(359666,{learnedAt=201,minReputation={2478,9000},requireSkill=171,skillID=2750}),
@@ -133828,7 +133865,7 @@ r(359669,{learnedAt=201,minReputation={2478,9000},requireSkill=165,skillID=2758}
 r(359670,{learnedAt=201,minReputation={2478,9000},requireSkill=197,skillID=2759})}}),
 i(191781,{b=1,minReputation={2478,9000}}),
 mnt(359276,{b=1,cost={{"c",1813,5000}},itemID=187640,minReputation={2478,21000}}),
-i(190956,{b=1,cost=25000000,lvl=60,minReputation={2478,21000},questID=70705,sourceAchievements={14834},spellID=368491,sym={{"select","expansionID",9},{"find","headerID",-155},{"pop"}},type="ihqt"}),
+i(190956,{b=1,cost=25000000,lvl=60,minReputation={2478,21000},questID=70705,sourceAchievements={14834},spellID=368491,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
 i(189174,{minReputation={2478,21000}}),
 rfl(264,{b=1,c={6},itemID=190584,minReputation={2478,21000},spellID=367716}),
 rfl(267,{b=1,c={12},itemID=190587,minReputation={2478,21000},spellID=367716}),
@@ -136496,7 +136533,7 @@ q(78821,{coords={
 i(211376,{b=1,description="Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed."}),
 i(211394,{b=1,lvl=70,sym={{"select","itemID",211389},{"pop"},{"exclude","itemID",211417,210243}}})}})}),
 h(-46,{
-n(209915,{description="Can randomly spawn near any planting spot.",isWeekly=1,qgs={210063},questID=77856})}),
+n(209915,{description="Can randomly spawn near any planting spot.",isWeekly=1,providers={{"n",210063}},questID=77856})}),
 h(-47,{
 i(210219,{b=1,cost={{"i",208047,1}},sym={{"select","npcID",211265},{"pop"},{"where","filterID",100},{"select","itemID",210218},{"pop"}}}),
 i(210218,{b=1,cost={{"i",208067,1}},sym={{"select","npcID",211265},{"pop"},{"where","filterID",101},{"pop"}},g={
@@ -137299,7 +137336,7 @@ s(189679,208346,{b=1,f=4,lvl=70}),
 s(189688,208361,{b=1,f=28,lvl=70}),
 crit(62935,{achID=19316,id=7})}}),
 n(210111,{coords={
-[2200]={{57.1,52.5},{59,71.9},{60,63.3}}},description="Can spawn during Emerald Frenzy event.",isDaily=1,qgs={210663},questID=78263,g={
+[2200]={{57.1,52.5},{59,71.9},{60,63.3}}},description="Can spawn during Emerald Frenzy event.",isDaily=1,providers={{"n",210663}},questID=78263,g={
 s(189694,208367,{b=1,f=20,lvl=70}),
 s(189663,208330,{b=1,f=6,lvl=70}),
 s(189668,208335,{b=1,f=4,lvl=70}),
@@ -137538,7 +137575,7 @@ o(407862,{coords={
 toy(210725,{b=1}),
 crit(62953,{achID=19317,id=2})}}),
 n(210544,{coords={
-[2200]={{61.6,59.5},{62.9,60.4},{64.3,61.3}}},description="Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",isWeekly=1,qgs={210538},questID=78033,g={
+[2200]={{61.6,59.5},{62.9,60.4},{64.3,61.3}}},description="Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",isWeekly=1,providers={{"n",210538}},questID=78033,g={
 o(408706,{coords={
 [2200]={{61.6,59.5}}},questID=78005,g={
 crit(62960,{achID=19317,id=5})}})}}),
@@ -149760,7 +149797,7 @@ i(209837,{awp=100200,b=1,lvl=70,spellID=423532}),
 i(209839,{awp=100200,b=1,lvl=70,spellID=423537}),
 i(217243,{awp=100206,b=1,lvl=70,spellID=439060}),
 i(217242,{awp=100206,b=1,lvl=70,spellID=439058}),
-i(215362,{awp=100206,b=1,description="Rewarded from any 'Awakened' Zone Activity",f=55,lvl=70,sym={{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","filterID",4,5,6,7,53},{"finalize"},{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101},{"finalize"},{"select","expansionID",10},{"pop"},{"where","headerID",-101}},g={
+i(215362,{awp=100206,b=1,description="Rewarded from any 'Awakened' Zone Activity",f=55,lvl=70,sym={{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","filterID",4,5,6,7,53},{"finalize"},{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101},{"finalize"},{"select","symselector",9}},g={
 i(202172,{awp=100002,b=1})}}),
 flt(4,{
 s(179951,191989,{b=1,f=4,lvl=60}),
@@ -153802,7 +153839,7 @@ s(220221,223936,{f=6,lvl=68,minReputation={2570,3}}),
 s(220204,223918,{f=31,lvl=68,minReputation={2570,3}}),
 crit(69724,{achID=40851,id=21})}}),
 n(207780,{coords={
-[2215]={{61.1,18.3}}},isDaily=1,minReputation={2570,3},qgs={220492},questID=82564,g={
+[2215]={{61.1,18.3}}},isDaily=1,minReputation={2570,3},providers={{"n",220492}},questID=82564,g={
 s(220210,223925,{f=7,lvl=68,minReputation={2570,3}}),
 i(221234,{f=51,lvl=68,minReputation={2570,3}}),
 crit(69727,{achID=40851,id=24})}}),
@@ -155195,7 +155232,7 @@ s(219843,223374,{b=1,f=4,lvl=68}),
 s(219847,223381,{b=1,f=5,lvl=68}),
 crit(69704,{achID=40851,id=2})}}),
 n(218452,{coords={
-[2215]={{52.3,27}}},qgs={218455},questID=80010,g={
+[2215]={{52.3,27}}},providers={{"n",218455}},questID=80010,g={
 s(219851,223385,{b=1,f=6,lvl=68}),
 s(219850,223384,{b=1,f=4,lvl=68}),
 s(219848,223382,{b=1,f=5,lvl=68}),
@@ -169923,7 +169960,7 @@ n(248700,{coords={
 s(303481,264634,{b=1,f=28,lvl=80}),
 s(303459,264596,{b=1,f=3,lvl=80})}}),
 n(248823,{coords={
-[2405]={{24.8,68}}},cost={{"i",248680,3}},isDaily=1,qgs={248825,248907},questID=94463,g={
+[2405]={{24.8,68}}},cost={{"i",248680,3}},isDaily=1,providers={{"n",248825},{"n",248907}},questID=94463,g={
 i(264606,{b=1,f=51,lvl=80}),
 s(303383,264519,{b=1,f=8,lvl=80})}}),
 n(248068,{coords={
@@ -171239,7 +171276,7 @@ i(251783,{b=1,f=53,lvl=78,spellID=1253111}),
 s(303467,264620,{b=1,f=20,lvl=80}),
 crit(111845,{achID=62122,id=7})}}),
 n(245691,{coords={
-[2437]={{46.4,43.5}}},isDaily=1,qgs={246122},questID=91072,g={
+[2437]={{46.4,43.5}}},isDaily=1,providers={{"n",246122}},questID=91072,g={
 s(303446,264582,{b=1,f=7,lvl=80}),
 s(303389,264525,{b=1,f=4,lvl=80}),
 crit(111852,{achID=62122,id=14})}}),

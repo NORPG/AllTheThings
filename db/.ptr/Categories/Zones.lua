@@ -17980,12 +17980,12 @@ q(24933,{awp=40003,coords={
 q(6610,{altQuests={13825},coords={
 [71]={{52.4,29}}},cost={{"i",3927,20},{"i",7974,10},{"i",12207,12}},learnedAt=225,lvl=15,qgs={40589},requireSkill=185,sourceQuests={6611,6612},g={
 i(16971,{f=55,lvl=17,spellID=10256}),
-r(18260,{requireSkill=185,rwp=30100,u=2}),
+r(18260,{rank=4,requireSkill=185,rwp=30100,u=2}),
 r(64054,{awp=30100,learnedAt=250,requireSkill=185,skillID=2548})}}),
 q(13825,{awp=30100,coords={
 [71]={{52.63,28.12}}},lc={1,"spellID",64054},learnedAt=225,qgs={8125},requireSkill=185,rwp=40003,sourceQuests={6611,6612},u=2,g={
 i(16971,{f=55,lvl=17,spellID=10256,u=2}),
-r(18260,{requireSkill=185,rwp=30100,u=2}),
+r(18260,{rank=4,requireSkill=185,rwp=30100,u=2}),
 r(64054,{learnedAt=250,requireSkill=185,skillID=2548,u=2})}}),
 q(2882,{coords={
 [71]={{55.4,92.2}}},cost={{"i",9252,1},{"i",9253,1},{"i",9251,1},{"i",9275,1}},crs={7899,7901,7902},providers={{"i",9254},{"o",142189}},qis={9275},repeatable=1,rwp=40003,u=2,g={
@@ -91205,11 +91205,11 @@ r(1260698,{learnedAt=85,requireSkill=164,skillID=2454})}})}})}),
 prof(185,{
 n(93536,{coords={
 [627]={{69.8,38.6}}},r=1,g={
-r(195128,{collectible=false,requireSkill=185,rwp=80001,u=2}),
+r(195128,{collectible=false,rank=10,requireSkill=185,rwp=80001,u=2}),
 r(264644,{awp=80001,requireSkill=185})}}),
 n(99330,{coords={
 [627]={{44,66}}},r=2,g={
-r(195128,{collectible=false,requireSkill=185,rwp=80001,u=2}),
+r(195128,{collectible=false,rank=10,requireSkill=185,rwp=80001,u=2}),
 r(264644,{awp=80001,requireSkill=185})}}),
 n(101846,{description="Takes various meat, fish, and other reagents for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",g={
 r(201528,{b=1,cost={{"i",124119,5}},itemID=133835,lvl=10,requireSkill=185,skillID=2542}),
