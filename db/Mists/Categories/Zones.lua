@@ -25575,7 +25575,7 @@ mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,rwp=20001,u=2}),
 mnt(22723,{awp=20001,b=1,cost={{"c",1901,2000}},itemID=29471,lvl=40,pvp=1,q=4}),
 mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,rwp=20001,u=2})}}),
 n(12778,{awp=30002,coords={
-[84]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","expansionID",2},{"pop"},{"contains","headerID",-250,-249,-248,-247},{"pop"},{"where","headerID",-296},{"pop"}},u=2}),
+[84]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",4},{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"pop"},{"where","headerID",-296},{"pop"}},u=2}),
 n(54660,{coords={
 [84]={{74.8,67.6}}},r=2,rwp=50004,sym={{"sub","pvp_gear_base",4,-258,-295},{"merge"},{"pop"}},u=2}),
 n(52545,{coords={
@@ -71792,7 +71792,7 @@ i(104299,{b=1,lvl=90,q=3,u=54}),
 i(104261,{b=1,q=3,u=54}),
 crit(23981,{achID=8714,id=24,u=54})}}),
 n(73854,{coords={
-[554]={{44,70}}},description="Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",isDaily=1,questID=32967,u=54,g={
+[554]={{44,70}}},description="Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",isDaily=1,providers={{"n",72095},{"n",73297}},questID=32967,u=54,g={
 i(104268,{b=1,q=3,u=54}),
 crit(23976,{achID=8714,id=10,u=54})}}),
 n(73281,{coords={
@@ -71834,12 +71834,12 @@ i(104286,{b=1,q=1,u=54}),
 mnt(148476,{b=1,itemID=104269,lvl=90,q=4,u=54}),
 crit(23984,{achID=8714,id=27,u=54})}}),
 n(73163,{coords={
-[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,questID=33303,u=54,g={
+[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,providers={{"n",72841}},questID=33303,u=54,g={
 p(1330,{b=1,itemID=104161,npcID=73364,q=3,spellID=148052,u=54}),
 i(104292,{b=1,q=3,u=54}),
 crit(23989,{achID=8714,id=18,u=54})}}),
 n(73160,{coords={
-[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,questID=33296,u=54,g={
+[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,providers={{"n",72844}},questID=33296,u=54,g={
 i(89770,{b=1,lvl=85,q=2,u=54}),
 crit(23968,{achID=8714,id=2,u=54})}}),
 n(73169,{coords={
@@ -71849,7 +71849,7 @@ r(148292,{itemID=104245,learnedAt=500,q=2,requireSkill=773,u=54}),
 toy(104331,{b=1,lvl=85,q=3,u=54}),
 crit(23994,{achID=8714,id=22,u=54})}}),
 n(72193,{coords={
-[554]={{33.8,85.8}}},isDaily=1,qgs={72151},questID=33292,u=54,g={
+[554]={{33.8,85.8}}},isDaily=1,providers={{"n",72151}},questID=33292,u=54,g={
 i(104035,{b=1,q=1,u=54}),
 crit(23973,{achID=8714,id=7,u=54})}}),
 n(73277,{coords={
@@ -71859,7 +71859,7 @@ i(104289,{b=1,f=55,lvl=90,q=2,u=54}),
 r(148269,{itemID=104222,learnedAt=500,q=2,requireSkill=773,rwp=70003,u=54}),
 crit(23979,{achID=8714,id=13,u=54})}}),
 n(73166,{coords={
-[554]={{23.6,28.6},{68.8,74.8}}},description="Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",isDaily=1,questID=33302,u=54,g={
+[554]={{16.2,60.6},{17.8,73.7},{18,54.3},{18.4,57.9},{18.4,62.5},{20.2,77.7},{20.6,47.6},{20.8,71.3},{21.1,63.5},{21.8,31.4},{22.4,35.4},{23.5,27.9},{25.1,74.9},{27.1,80.2},{27.5,74.7},{29.8,84.3},{30.7,31.3},{32.7,85.4},{36,87.9},{38.6,86.7},{40.9,90.5},{45.2,89.5},{52.4,86.4},{62.1,83},{62.5,79.8},{65.8,78.4},{69.1,74.9},{69.9,71.1},{70.6,65}}},description="Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",isDaily=1,providers={{"n",72766}},questID=33302,u=54,g={
 i(104293,{b=1,q=2,u=54}),
 p(1337,{b=1,itemID=104168,npcID=73366,q=3,spellID=148066,u=54}),
 crit(23985,{achID=8714,id=17,u=54})}}),
@@ -71885,7 +71885,9 @@ crit(23975,{achID=8714,id=9,u=54})}}),
 n(73704,{coords={
 [554]={{71.2,82.6}}},isDaily=1,questID=33305,u=54,g={
 crit(24144,{achID=8714,id=19,u=54})}}),
-n(72769,{isDaily=1,questID=33293,u=54,g={
+n(72769,{coords={
+[554]={{43.1,41.2}},
+[555]={{48.2,62.2},{54.8,68},{56.2,30.4},{62.6,36},{64,47.8},{65.2,64.8},{70.6,62.6},{73.8,31}}},isDaily=1,questID=33293,u=54,g={
 i(104258,{b=1,q=3,u=54}),
 p(1348,{b=1,itemID=104307,npcID=73738,q=3,spellID=148552,u=54}),
 r(148274,{itemID=104227,learnedAt=500,q=2,requireSkill=773,u=54}),
@@ -71913,7 +71915,7 @@ i(104303,{b=1,q=3,u=54}),
 r(148272,{itemID=104225,learnedAt=500,q=2,requireSkill=773,rwp=70003,u=54}),
 crit(23971,{achID=8714,id=5,u=54})}}),
 n(71919,{coords={
-[554]={{37.8,77.2}}},description="Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",isDaily=1,qgs={71908,71944},questID=32959,u=54,g={
+[554]={{37.8,77.2}}},description="Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",isDaily=1,providers={{"n",71908},{"n",71944}},questID=32959,u=54,g={
 p(1336,{b=1,itemID=104167,npcID=73367,q=3,spellID=148063,u=54}),
 crit(23972,{achID=8714,id=6,u=54})}})}}),
 h(-56,{u=54,g={

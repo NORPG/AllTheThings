@@ -5240,11 +5240,9 @@ s(279144,98146,{b=1,f=3,lvl=90,q=4,sourceAchievements={7536},u=53}),
 s(279145,98147,{b=1,f=3,lvl=90,q=4,sourceAchievements={7536},u=53}),
 s(279146,98148,{b=1,f=3,lvl=90,q=4,sourceAchievements={7536},u=53})}}),
 q(32870,{awp=50300,coords={
-[433]={{73.2,79.6}}},isBreadcrumb=1,qgs={71426},sourceQuests={32805},u=53}),
-q(33087,{awp=50400,coords={
-[433]={{73.2,79.6}}},qgs={71426},sourceQuests={32805},u=54}),
+[433]={{73.2,79.6}}},isBreadcrumb=1,nextQuests={33088},qgs={71426},sourceQuests={32805},u=53}),
 q(33088,{awp=50400,coords={
-[433]={{54.6,72.6}}},qgs={69782},sourceQuests={33087},u=54}),
+[433]={{54.6,72.6}}},qgs={69782},sourceQuests={32870},u=54}),
 q(33098,{awp=50400,coords={
 [554]={{34.6,53.8}}},cost={{"c",777,5000}},qgs={72695},sourceQuests={33088},u=54}),
 q(33100,{awp=50400,coords={

@@ -12703,7 +12703,7 @@ mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,r=2,rwp=20001,u=2}),
 mnt(22723,{awp=20001,b=1,cost={{"c",1901,16650}},itemID=29471,lvl=40,pvp=1,q=4,r=2}),
 mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,r=2,rwp=20001,u=2})}}),
 n(12778,{awp=30002,coords={
-[1453]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","expansionID",2},{"pop"},{"contains","headerID",-250,-249,-248,-247},{"pop"},{"where","headerID",-296},{"pop"}}}),
+[1453]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",4},{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"pop"},{"where","headerID",-296},{"pop"}}}),
 n(34078,{coords={
 [1453]={{74.7,67.2}}},r=2,rwp=40003,sym={{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"}},u=33}),
 n(34077,{coords={

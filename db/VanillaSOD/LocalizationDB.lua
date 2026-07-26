@@ -17302,6 +17302,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
+	[32] = "Cassa Sprofondata",
 	[34] = "Vecchio Fiasco",
 	[35] = "Scrigno del Capitano",
 	[36] = "Barile Spezzato",
@@ -26820,10 +26821,15 @@ L.FACTION_MODE_TOOLTIP = "Activa este ajuste si quieres ver los datos de Modo Cu
 L.FACTION_SPECIFIC_REP = "No se pueden ver todas las reputaciones de un mismo personaje. Por ejemplo, los jugadores de la Alianza no pueden ver a los Escoltas Grito de Guerra, y los de la Horda no pueden ver a los Centinelas Ala de Plata.";
 L.FACTIONS = "Reputaciones";
 L.FAILED_ITEM_INFO = "No se pudo obtener la información del objeto. Es posible que el objeto no sea válido o que aún no se haya almacenado en caché en el servidor.";
+L.FILL_CATALYST_DATA_CHECKBOX_TOOLTIP = "Rellena el Catalizador |T" .. _.asset("Interface_Catalyst") .. ":0|t resultado del Objeto actual si es posible y se determina mediante ATT.\n\nNOTA: Este Relleno no se aplica a la Mini Lista ATT.";
+L.FILL_COST_DATA_CHECKBOX_TOOLTIP = "Rellena cualquier compra que se pueda hacer con un costo determinado |T".._.asset("Moneda")..":0|t\n\nNOTA: Una "compra" es un término amplio que esencialmente significa que requiere/consume/usa/agota/etc. el "coste" para poder obtenerse.";
 L.FILL_DYNAMIC_QUESTS_CHECKBOX = "Rellenar misiones dinámicas";
 L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres permitir objetos/divisas que son usadas para coleccionar cosas se rellenen con esas compras cuando estás en misiones dinámicas.\n\nPor ejemplo, esto causa que la ventana de [Misiones de mundo] actúe como una Mini Lista en vez de actuar como una lista principal en cuento a mostrar el Coste.\nTen en cuenta que esto aumenta drásticamente la cantidad de contenido que aparece en la ventana.";
 L.FILL_NPC_DATA_CHECKBOX = "Rellenar datos PNJ";
 L.FILL_NPC_DATA_CHECKBOX_TOOLTIP = "Activa esta opción si quieres rellenar con toda la información relevante sobre un PNJ (Botín de jefe compartido, botín, etc) cuando se muestra en una Mini Lista. Esta opción puede causar un gran numero de duplicados, pero la idea es que el PNJ se mantenga visible en la Mini Lista si necesitas algo disponible de ese PNJ.\n\nNota: Gran cantidad del contenido de mundo de Dragonflight depende de que este ajuste esté activo para ser exacto porque muchos PNJ raros comparten botín.\n\nPor defecto: Desactivado";
+L.FILL_OBJECT_DATA_CHECKBOX_TOOLTIP = "Rellena los datos comunes que proporciona un objeto de entorno como origen (por ejemplo, nodos de minería, herboristería o pesca).";
+L.FILL_SYMLINK_DATA_CHECKBOX_TOOLTIP = "Rellena el contenido que tiene disponibilidad alternativa y destacada en Fuentes adicionales.\nEste concepto se utiliza generalmente para ayudar a mostrar contenido que puede estar ubicado en un grupo general de 'Recompensas' (o similar) en la lista principal, pero que se puede mostrar más claramente en Fuentes específicas (varios proveedores, etc.) cuando se encuentra en la Mini lista o en las ventanas emergentes.\n\nNOTA: Las ventanas emergentes donde hay un enlace simbólico disponible mostrarán este texto:\n%s";
+L.FILL_UPGRADE_DATA_CHECKBOX_TOOLTIP = "Rellena cualquier mejora |T".._.asset("Interface_Upgrade")..":0|t que esté disponible para el objeto dado\n\nPara una lista ATT, esto se muestra normalmente si está disponible para el estado predeterminado de un elemento como Origen, mientras que en las sugerencias se basa en los datos brutos del elemento cuando se muestra.";
 L.FILLERS_EXPLANATION = "|cffFFFFFFLos rellenos son mecanismos mediante los cuales se introducen datos adicionales en/debajo de otro contenido de ATT dentro de varios elementos de la IU para mostrar el uso o propósito de un objeto determinado. Por ejemplo, un relleno proporcionaría la visualización de las compras resultantes de un artículo. \nEsta pestaña le permite modificar sus preferencias sobre qué rellenos estarán activos en ATT.|r";
 L.FILLERS_LABEL = "Rellenos";
 L.FILTER_ID = "Filtro ID";
@@ -27004,6 +27010,7 @@ L.NOT_TRADEABLE = "No comerciable";
 L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente.";
 L.NPC = "PNJ";
 L.NPC_ID = "Pnj ID";
+L.OBJECT = "Objeto de entorno";
 L.OBJECT_ID = "Objeto de entorno ID";
 L.OBJECT_TYPE = "Tipo de objeto";
 L.OBJECTIVES = "Objetivos";
@@ -27103,7 +27110,7 @@ L.RAID_DIFF = "Dificultad de banda";
 L.RAID_DIFF_DESC = "Ajuste de dificultad para bandas.\n\n¡Haz clic aquí para cambiarla ahora!";
 L.RAID_DIFF_DESC_2 = "Este ajuste te permite personalizar la dificultad de una banda.\n\nHaz clic en esta línea para volver al Asistente de Banda.";
 L.READDED_WITH_PATCH_CLASSIC_FORMAT = "Esto se vuelve a agregar con el parche %s";
-L.REAGENT = "Material";
+L.REAGENT = "Componente";
 L.REAGENT_CACHE_OUT_OF_DATE = "¡La cache de ingredientes está desactualizada y se actualizará cuando abras tus profesiones!";
 L.RECENTLY_MADE_OBTAINABLE = "|cFFFF0000Si conseguiste esto (cualquier sitio excepto de Cajones\nde objetos recuperados), por favor dí en nuestro Discord dónde lo conseguiste!|r";
 L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000Cuanta más información, mejor. Gracias!|r";
@@ -27463,6 +27470,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",
 	[-721] = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
 	[-723] = "Aumentan los informes de incursiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
+	[-736] = "Esta sección está destinada a promociones del mundo real que introdujeron contenido extremadamente raro en el juego antes de que algunos de ellos aparecieran en la tienda del juego.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -29874,6 +29882,7 @@ L.EXPANSION_ID = "ID de Expansión";
 L.EXPLORATION_ID = "ID de Exploración";
 L.FACTION_DESC = "Haz click en este botón para seleccionar una facción aleatoria en función de lo que te falta.";
 L.FACTION_ID = "ID de Facción";
+L.FILL_COST_DATA_CHECKBOX_TOOLTIP = "Rellena cualquier compra que se pueda hacer con un costo determinado |T".._.asset("Moneda")..":0|t\n\nNOTA: Una "compra" es un término amplio que esencialmente significa que requiere/consume/usa/agota/etc. el "costo" para poder obtenerse.";
 L.FILTER_ID = "ID de Filtro";
 L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX = "Filtro mini lista Cronoaventurero";
 L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP = "Habilita esta opción para filtrar el contenido de Cronoaventurero de manera adecuada (solo de la mini lista) cuando juegues con un personaje Retail o Cronoaventurero.\n\nNOTA: ¡Esta opción solo estará disponible durante los eventos de Cronoaventurero!";
@@ -29970,6 +29979,7 @@ L.QUESTS_HIDDEN_TRACKER_CHECKBOX_TOOLTIP = "Activa esta opción para incluir esp
 L.RAID_DESC = "Haz click en este botón para seleccionar una banda aleatoria basado en lo que te falta.";
 L.RAID_DIFF_DESC = "Ajuste de dificultad para bandas.\n\n¡Haz click aquí para cambiarla ahora!";
 L.RAID_DIFF_DESC_2 = "Este ajuste te permite personalizar la dificultad de una banda.\n\nHaz click en esta línea para volver al Asistente de Banda.";
+L.REAGENT = "Material";
 L.RECENTLY_MADE_OBTAINABLE = "|cFFFF0000Si conseguiste esto (cualquier sitio excepto de Cajones\nde rescate), por favor avisa en nuestro Discord dónde lo conseguiste!|r";
 L.REFRESHING_COLLECTION = "Actualizando colección ...";
 L.REMOVED_WITH_PATCH = "Removido en el Parche";
@@ -30050,7 +30060,6 @@ localize(_.CategoryNames, {
 });
 localize(L.HEADER_NAMES, {
 	[-19] = "Botín compartido entre los jefes",
-	[-27] = "Botin",
 	[-36] = "Fiestas",
 	[-59] = "Maestro de armas",
 	[-63] = "Botín de la zona",
@@ -30080,6 +30089,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-645] = "Los objetos de misión de Suministros faltantes caen de criaturas de nivel 6 o superior en todo Azeroth. Estas misiones requieren la entrega de Suministros faltantes a un representante de organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalar.",
 	[-723] = "Aumentan los informes de invasiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
+	[-736] = "Esta sección está para promociones del mundo real que introdujeron contenido extremadamente raro en el juego antes de que algunos de ellos aparecieran en la tienda del juego.",
 });
 for key,value in pairs({
 	[2] = "Removido del juego",
@@ -35116,6 +35126,8 @@ localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",
 });
 localize(ObjectNames, {
+	[31] = "老舊獅子雕像",
+	[32] = "沉沒的箱子",
 	[176785] = "彈藥箱",
 	[179697] = "競技場寶箱",
 	[180248] = "可口魚魚群",
