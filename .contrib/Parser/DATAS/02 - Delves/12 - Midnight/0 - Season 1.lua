@@ -68,17 +68,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					-- n(EXPLORATION, {
 					-- }),
 					n(252101, {	-- Nullaeus ?
-						["questID"] = 92888,	-- triggers on ? and ?? difficulties
-						["isDaily"] = true,
+						["questID"] = 96417,
+						["isWeekly"] = true,
 						["groups"] = {
 							ach(61797, {	-- My Shady Nemesis
 								i(263413),	-- Nullaeus Domaneye (COSMETIC!)
 							}),
 							i(262391),	-- Ominous Domanus (PET!)
+							hqt(95155, name(HEADERS.NPC, 252892)),	-- Nullaeus ? (first time)
 						},
 					}),
 					n(252892, {	-- Nullaeus ??
-						["questID"] = 95154,	-- triggered ?? difficulty
+						["questID"] = 96416,
+						["isWeekly"] = true,
 						["groups"] = {
 							ach(61808, {	-- Fabled Let Me Solo Him: Nullaeus
 								["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
@@ -93,6 +95,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 								title(688),	-- <Name> the Ominous
 							}),
 							i(262391),	-- Ominous Domanus (PET!)
+							hqt(95154, name(HEADERS.NPC, 252892)),	-- Nullaeus ?? (first time)
 						},
 					}),
 				},
@@ -275,8 +278,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				--q(93883),	-- Restored Coffer Key (itemID 263191)
 
 				--q(93686),	-- tiggered after a delve
-				q(95155),	-- Nullaeus ?
-				q(96416),	-- Nullaeus ??
+				q(92888, name(HEADERS.NPC, 252892)),	-- Nullaeus ? and ??
 			}),
 		},
 	}),
