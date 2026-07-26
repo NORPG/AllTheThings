@@ -159,6 +159,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		filter(CONSUMABLES, {
 		}),
 		filter(MISC, {
+			-- Blessings
+			i(264669),	-- Blessing of Potency
+			i(264670),	-- Blessing of Zeal
+			i(260913),	-- Crimson Blessing
+			i(260924),	-- Sentinel's Blessing
+			i(262389),	-- Veiled Blessing
+			--
 			i(254250),	-- Bountiful Coffer
 			i(257387),	-- Bountiful Heavy Trunk
 			i(262965),	-- Delver's Delight (CI!)
@@ -171,6 +178,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257380),	-- Player Experience (Uncommon)
 			i(257381),	-- Player Experience (Rare)
 			i(257379),	-- Player Experience (Epic)
+			i(268297),	-- Rattling Bag o' Gold
 			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
 			i(262586, {	-- Primeval Arcane Remnant (QI!/QS!)
@@ -214,6 +222,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		n(ARMOR, {
+			-- Season 2, Leather set: Miststalker, i272245 obtained from object 584518 Bountiful Heavy Trunk
+			-- i272225 Pyrewalker's Mantle dropped from object 584514 Bountiful Coffer
+			-- However, Osseoclad set still drops from Chests
 			filter(BACK_F, {
 				["providers"] = {
 					{"o",584514},	-- Bountiful Coffer
@@ -1108,6 +1119,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				ach(63170),	-- Gnarldor Isle Discoveries
 				ach(63437),	-- Gnarldor Isle Stories
 			}),
+			filter(MISC, {
+				i(276286),	-- Gnarled Heart
+			}),
+			n(TREASURES, {
+				o(655978, {	-- Sturdy Chest
+					["coord"] = { 60.4, 68.2, GNARLDOR_ISLE },
+					["questID"] = 96802,
+					["groups"] = { i(262496) },	-- Delver's Arcane Golem (MOUNT!)
+				}),
+				o(655980, {	-- Sturdy Chest
+					["coord"] = { 52.4, 40.9, GNARLDOR_ISLE },
+					["questID"] = 96804,
+				}),
+				o(655981, {	-- Sturdy Chest
+					["coord"] = { 28.7, 41.7, GNARLDOR_ISLE },
+					["questID"] = 96805,
+				}),
+			}),
 		},
 	}),
 	m(PARHELION_PLAZA, {
@@ -1362,6 +1391,20 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				ach(63171),	-- The Ring of Glory Discoveries
 				ach(63436),	-- The Ring of Glory Stories
 			}),
+			n(TREASURES, {
+				o(655979, {	-- Sturdy Chest
+					["coord"] = { 25.2, 73.7, THE_RING_OF_GLORY },
+					["questID"] = 96803,
+				}),
+				o(655982, {	-- Sturdy Chest
+					["coord"] = { 48.6, 94.9, THE_RING_OF_GLORY },
+					["questID"] = 96806,
+				}),
+				o(655983, {	-- Sturdy Chest
+					["coord"] = { 44.1, 22.7, THE_RING_OF_GLORY },
+					["questID"] = 96807,
+				}),
+			}),
 		},
 	}),
 	m(THE_SHADOW_ENCLAVE, {
@@ -1459,7 +1502,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(BOUNTIFUL, sharedData({
 			["isDaily"] = true,
-		},{
+		}, {
 			q(91188, name(HEADERS.Map, ATAL_AMAN)),	-- Atal'Aman
 			q(91186, name(HEADERS.Map, COLLEGIATE_CALAMITY)),	-- Collegiate Calamity
 			q(91189, name(HEADERS.Map, THE_SHADOW_ENCLAVE)),	-- Shadow Enclave
@@ -1478,5 +1521,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93935, {isWeekly=true}),	-- 1st weekly bonus Hero item from Bountiful chest
 		q(93936, {isWeekly=true}),	-- 2nd weekly bonus Hero item from Bountiful chest
 		q(93937, {isWeekly=true}),	-- 3rd weekly bonus Hero item from Bountiful chest
+	})),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+		n(BOUNTIFUL, sharedData({
+			["isDaily"] = true,
+		}, {
+			q(97064, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory
+			--98501, Looted first Bountiful Chest of the week
+		})),
 	})),
 }));

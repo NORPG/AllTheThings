@@ -134,16 +134,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
 				i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
 				i(253245),	-- Cracked Keystone (QI!/QS!/CI!)
-				i(268297),	-- Rattling Bag o' Gold
 				i(252415, {	-- Trovehunter's Bounty
 					["providers"] = {{"o",618495}}, -- Nullaeus Cache (verified)
 				}),
-				-- Blessings
-				i(264669),	-- Blessing of Potency
-				i(264670),	-- Blessing of Zeal
-				i(260913),	-- Crimson Blessing
-				i(260924),	-- Sentinel's Blessing
-				i(262389),	-- Veiled Blessing
 				-- Bonus roll
 				i(268969, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Delver's Trove
 			})),

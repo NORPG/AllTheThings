@@ -1097,9 +1097,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(260894, {	-- Cabbage Pseudoshell (MOUNT!)
 				["displayID"] = 139485,
 			}),
-			i(262496, {	-- Delver's Arcane Golem (MOUNT!)
-				["displayID"] = 138593,
-			}),
 			i(264273, {	-- Fel Spirehawk (MOUNT!)
 				["displayID"] = 140095,
 			}),

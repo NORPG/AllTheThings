@@ -71,6 +71,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				filter(TRINKET_F, {
 					i(274493),	-- Effigy of Ula'Tek's Faithful
 					i(274496),	-- Ophidian Bone Whistle
+					i(274495),	-- Pulse Seeker's Oculus
 					i(274497),	-- Spirit-Rending Poison
 				}),
 			}),

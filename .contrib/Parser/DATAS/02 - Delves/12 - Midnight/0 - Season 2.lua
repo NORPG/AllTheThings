@@ -122,23 +122,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(249224),	-- Motionless Nulltide
 				i(257866),	-- Overflowing Voidspire
 				i(257768),	-- Time Lost Edict
-			}),
+			}),--]]
 			mapped(n(DELVE_COMPLETION, {
-				-- Currently unaware of objectIDs so treated just as reward
-				i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
-				i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
-				i(253245),	-- Cracked Keystone (QI!/QS!/CI!)
-				i(268297),	-- Rattling Bag o' Gold
-				i(252415),	-- Trovehunter's Bounty
-				-- Blessings
-				i(264669),	-- Blessing of Potency
-				i(264670),	-- Blessing of Zeal
-				i(260913),	-- Crimson Blessing
-				i(260924),	-- Sentinel's Blessing
-				i(262389),	-- Veiled Blessing
-				-- Bonus roll
-				i(268969, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Delver's Trove
-			})),--]]
+				i(274970),	-- Ancient Curio (Utility) (QI!/QS!)
+				i(277506),	-- Codex of the Soul Coilers (QS!)
+				i(273000),	-- Corrosive Soul
+				i(274374, {	-- Trovehunter's Bounty
+					["providers"] = {{"o",584518}}, -- Bountiful Heavy Trunk (verified)
+				}),
+			})),
 			n(FACTIONS, {
 				faction(2796),	-- Delves: Season 2
 			}),
@@ -165,13 +157,16 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["maps"] = { VENOMFALL_DEEPS },
 					["groups"] = { i(275988) },	-- Corrosive Victory (TOY!)
 				}),
-			}),
-			--[[n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
-				i(268650, {	-- Ascendant Voidshard
-					i(268552),	-- Ascendant Voidcore
+				q(96615, {	-- Ancient Curiosity: Utility
+					["provider"] = { "i", 274970 },	-- Ancient Curio (QI!/QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
 				}),
-			})),
-			mapped(n(TREASURES, {
+				q(97616, {	-- Corrosive Gifts: Corrosive Power
+					["provider"] = { "i", 277506 },	-- Codex of the Soul Coilers (QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				}),
+			}),
+			--[[mapped(n(TREASURES, {
 				o(618495, {	-- Nullaeus Cache
 					["questID"] = 92887,
 					["isWeekly"] = true,

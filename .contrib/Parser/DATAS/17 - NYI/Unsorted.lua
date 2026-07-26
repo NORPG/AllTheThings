@@ -698,7 +698,6 @@ root(ROOTS.Unsorted, {
 			i(273881),	-- Anti-Venom Shell
 			i(274272),	-- Amani Equipment Chest
 			i(274372),	-- Big ol' Bag of Polished Pet Charms
-			i(274374),	-- Trovehunter's Bounty
 			i(274416),	-- Warded Key
 			i(274421),	-- Crate of Community Coupons
 			i(274423),	-- Unborn Val'kyr
@@ -727,7 +726,6 @@ root(ROOTS.Unsorted, {
 			i(274475),	-- Yellow Housing Dye
 			i(274476),	-- Spark of Tides
 			i(274494),	-- Chiral Marrowgrafter
-			i(274495),	-- Pulse Seeker's Oculus
 			i(274499),	-- Toxiferous Transfusion
 			i(274579),	-- Undamaged Trap Needle
 			i(274587),	-- Spotted Killifish
@@ -775,7 +773,6 @@ root(ROOTS.Unsorted, {
 			i(274907),	-- Seaside Painted Surfboard
 			i(274909),	-- Seaside Murloc Tiki Totem
 			i(274965),	-- Ancient Curio
-			i(274970),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
 			i(274991),	-- Seaside Fire Pit
 			i(275013),	-- Tokka's Multi-Ward
@@ -980,7 +977,6 @@ root(ROOTS.Unsorted, {
 			i(276230),	-- Pepe
 			i(276234),	-- Vibrant Venomfang
 			i(276258),	-- Companion Command Crystal
-			i(276286),	-- Gnarled Heart
 			i(276297),	-- Rustbolt Jetpack
 			i(276312),	-- Griftah's Torch of Rotation
 			i(276405),	-- [PH] Rainbow Axe - 1h - Blue
@@ -1086,7 +1082,6 @@ root(ROOTS.Unsorted, {
 			i(277480),	-- Gorgoneion Gaze
 			i(277481),	-- Lithic Plumage
 			i(277482),	-- Ouroboric Cycle
-			i(277506),	-- Corrosive Soul
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
 			i(277803),	-- Venom-Cursed Spellcarver
@@ -1387,14 +1382,12 @@ root(ROOTS.Unsorted, {
 			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
 			i(279152),	-- Intact Snake Head
-			i(279153),	-- Large Trophy
 			i(279154),	-- Large Leaf
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
 			i(279156),	-- [ph] SpiceWitch Head 02 - Grey
 			i(279157),	-- Frayed Nomad's Cord
 			i(279158),	-- [ph] SpiceWitch Head 02 - Grey (Hair Vis)
 			i(279159),	-- [ph] SpiceWitch Head 02 - Hallow
-			i(279160),	-- Mud-Caked Footwraps
 			i(279161),	-- [ph] SpiceWitch Head 02 - Hallow (Hair Vis)
 			i(279162),	-- [ph] SpiceWitch Head 02 - Orange
 			i(279163),	-- [ph] SpiceWitch Head 02 - Orange (Hair Vis)

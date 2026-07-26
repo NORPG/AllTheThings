@@ -11,8 +11,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = { i(280689) },	-- Big Mon's Big Spear
 			}),
 			n(257906, {	-- Coin-Eye Skully
-			--	["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-			--	["questID"] = 94619,
+				["description"] = "Can be found swimmping around the sunken ship.",
+				["coord"] = { 58.0, 66.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 94619,
 			--	["groups"] = {  },
 			}),
 			n(261142, {	-- Destra

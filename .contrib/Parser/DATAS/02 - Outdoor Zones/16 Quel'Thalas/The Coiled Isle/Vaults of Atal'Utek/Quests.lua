@@ -6,6 +6,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 			n(QUESTS, {
+				header(HEADERS.NPC, 111573, {	-- Altar of Corrosion
+					q(97640, {	-- Vaults of Atal'Utek: One Coin Too Many
+						["qg"] = 272024,	-- Sack of Coins
+						["coord"] = { 42.3, 14.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					}),
+					q(98428, {	-- Vaults of Atal'Utek: The Altar of Corrosion
+						["sourceQuest"] = 97640,	-- Vaults of Atal'Utek: One Coin Too Many
+						["qg"] = 262880,	-- Er'inye
+						["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					}),
+					q(96644, {	-- Essence of Malice
+						["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
+						["qg"] = 262880,	-- Er'inye
+						["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["isWeekly"] = true,	-- Assumption
+						["groups"] = { i(278470) },	-- Malefic Venom (QI!)
+					}),
+				}),
 				q(98388, {	-- Vaults of Atal'Utek: Certain Doom
 					["qgs"] = {
 						262798,	-- Warleader Abdumati
@@ -15,23 +33,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Warleader Abdumati @ Amani Foothold
 						{ 53.9, 39.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Mok'sa the Stone @ Eastern Amani Outpost
 					},
-				}),
-				-- Altar of Corrosion
-				q(97640, {	-- Vaults of Atal'Utek: One Coin Too Many
-					["qg"] = 272024,	-- Sack of Coins
-					["coord"] = { 42.3, 14.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-				}),
-				q(98428, {	-- Vaults of Atal'Utek: The Altar of Corrosion
-					["sourceQuest"] = 97640,	-- Vaults of Atal'Utek: One Coin Too Many
-					["qg"] = 262880,	-- Er'inye
-					["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-				}),
-				q(96644, {	-- Essence of Malice
-					["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
-					["qg"] = 262880,	-- Er'inye
-					["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					["isWeekly"] = true,	-- Assumption
-					["groups"] = { i(278470) },	-- Malefic Venom (QI!)
 				}),
 				-- Zone Repeatables
 				q(95520, {	-- Purging the Vaults

@@ -2502,6 +2502,7 @@ i(275657, 1297404);	-- Apophic Soul Crusher
 i(275656, 1297224);	-- Auriferous Venomfang
 i(276162, 1298808);	-- Corroded Soul Crusher
 i(275652, 1297220);	-- Crimson Venomfang
+i(262496, 1268919);	-- Delver's Arcane Golem
 i(276553, 1299965);	-- Emerald Skyfang
 i(276802, 1300778);	-- Indigo Coiled Horror
 i(275658, 1297405);	-- Primeval Skyfriend
@@ -2521,7 +2522,6 @@ i(278574, 1305206);	-- Crested Aqua Leafmimic
 i(278573, 1305204);	-- Crested Ember Leafmimic
 i(278575, 1305207);	-- Crested Verdant Leafmimic
 i(278576, 1305209);	-- Crested Violet Leafmimic
-i(262496, 1268919);	-- Delver's Arcane Golem
 i(275659, 1297407);	-- Hexflame Reaver
 i(275571, 1296986);	-- Moonlit Witchwick's Rider
 i(275570, 1296985);	-- Mossy Witchwick's Rider
