@@ -24,13 +24,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				},
 				["groups"] = {
 					n(ACHIEVEMENTS, {
-						ach(62842),	-- A Celestial Pain
 						ach(62903),	-- Climate Strange: Val
 						ach(63386),	-- Frosty Domanaar Politics
 						ach(62917),	-- Heroic Climate Strange: Val
 						ach(62881),	-- Showdown Slugger: Val
 						ach(62880),	-- Showdown Success: Val
-						ach(63349),	-- Ultradon Carnage
 					}),
 					n(createHeader({
 						readable = "Portal Bridges",
@@ -400,9 +398,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(95572, {	-- Thunder Pains
 							["coord"] = { 46.2, 49.5, VAL },
+							["groups"] = {
+								ach(62842),	-- A Celestial Pain
+							},
 						}),
 						q(95395, {	-- Until it is Done
 							["coord"] = { 32.3, 50.1, VAL },
+							["groups"] = {
+								ach(63349),	-- Ultradon Carnage
+							},
 						}),
 					})),
 					n(ZONE_DROPS, {
