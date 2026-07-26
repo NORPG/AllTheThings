@@ -96,6 +96,12 @@ local Ignored = setmetatable({
 		[240407] = true,	-- Naynar [Haranir Renown Quartermaster]
 		[255114] = true,	-- Maku [Decor Specialist]
 		[252910] = true,	-- Garnett [Decor Specialist]
+		[256750] = true,	-- Klasa [Decor Specialist]
+		[255213] = true,	-- Faarden the Builder [Decor Specialist]
+		[255216] = true,	-- Balen the Starfinder [Decor Specialist]
+		[255221] = true,	-- Trevor Grenner [Decor Specialist]
+		[255218] = true,	-- Argan Hammerfist [Decor Specialist]
+		[255203] = true,	-- Xiao Dan [Decor Specialist]
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]
