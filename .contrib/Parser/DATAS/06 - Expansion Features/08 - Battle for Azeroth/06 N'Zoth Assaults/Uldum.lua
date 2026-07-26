@@ -805,12 +805,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						q(57970, {	-- Ruinator Xok'nixx
 							["sourceQuest"] = 57971,	-- Ruins of Ammon
 							["provider"] = { "n", 159820 },	-- Mender Dyrin
-							["coord"] = { 27.9, 63.4, NZOTH_ASSAULT_ULDUM },
+							["coord"] = { 28.0, 63.5, NZOTH_ASSAULT_ULDUM },
 						}),
 						q(57969, {	-- Tend the Wounded
 							["sourceQuest"] = 57971,	-- Ruins of Ammon
 							["provider"] = { "n", 159820 },	-- Mender Dyrin
-							["coord"] = { 27.9, 63.4, NZOTH_ASSAULT_ULDUM },
+							["coord"] = { 28.0, 63.5, NZOTH_ASSAULT_ULDUM },
 							["groups"] = {
 								i(174326),	-- Rough Burlap Bandages (QI!)
 							},
@@ -822,7 +822,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								57969,	-- Tend the Wounded
 							},
 							["provider"] = { "n", 159820 },	-- Mender Dyrin
-							["coord"] = { 27.9, 63.4, NZOTH_ASSAULT_ULDUM },
+							["coord"] = { 28.0, 63.5, NZOTH_ASSAULT_ULDUM },
 						}),
 						q(58008, {	-- All Gassed Up
 							["sourceQuest"] = 57990,	-- Obelisk of the Sun
@@ -913,7 +913,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						q(56889, {	-- Wounded Wastewanderers
 							["provider"] = { "n", 159820 },	-- Mender Dyrin
-							["coord"] = { 40.1, 21.3, NZOTH_ASSAULT_ULDUM },
+							["coord"] = { 28.0, 63.5, NZOTH_ASSAULT_ULDUM },
 							["groups"] = {
 								i(174326),	-- Rough Burlap Bandages (QI!)
 							},

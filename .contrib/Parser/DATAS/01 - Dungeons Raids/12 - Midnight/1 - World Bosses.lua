@@ -138,6 +138,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 			n(261072, {	-- Imperator Pertinax
 				["timeline"] = { ADDED_12_0_7 },
+				["questID"] = 98292,	-- + 96787/96788/98587/98588 (Heroic)
 				["isRaid"] = true,
 				["isWeekly"] = true,
 				["coord"] = { 40.2, 77.5, 2618 },	-- Void Acropolis (Lower)

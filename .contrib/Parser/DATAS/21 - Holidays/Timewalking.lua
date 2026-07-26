@@ -480,14 +480,16 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 						i(224565),	-- Commendation of the Wintersaber Trainers
 						i(224570),	-- Commendation of the Zandalar Tribe
 					})),
-					filter(MISC, {
+					filter(MISC, sharedData({
+						["modID"] = 0,
+					}, {
 						i(224190, {	-- Kreeg's Hardy Draught
 							["cost"] = {{"c", TIMEWARPED_BADGE, 25}}
 						}),
 						i(225378, {	-- Mohawk Grenade
 							["cost"] = {{"c", TIMEWARPED_BADGE, 200}}
 						}),
-					}),
+					})),
 					filter(MOUNTS, {
 						i(224398, {	-- Frayfeather Hippogryph (MOUNT!)
 							["cost"] = {{"c", TIMEWARPED_BADGE, 5000}}
