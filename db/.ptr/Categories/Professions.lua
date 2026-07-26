@@ -2443,7 +2443,8 @@ i(198606,{awp=100002,b=1,isWeekly=1,requireSkill=164,spellID=384418}),
 i(204434,{awp=100002,requireSkill=164})}}),
 q(75569,{awp=100100,coords={
 [2112]={{36.5,62.5}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={203516},requireSkill=164,g={
-i(198606,{awp=100002,b=1,isWeekly=1,requireSkill=164,spellID=384418})}}),
+i(205117,{awp=100002,requireSkill=164}),
+i(198606,{b=1,isWeekly=1,requireSkill=164,spellID=384418})}}),
 q(77935,{awp=100200,coords={
 [2112]={{36.8,63.1}}},cost={{"i",190484,3}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},requireSkill=164,g={
 i(198606,{awp=100002,b=1,isWeekly=1,requireSkill=164,spellID=384418})}}),
@@ -5633,6 +5634,9 @@ q(39932,{coords={
 [627]={{41.6,37.2}}},lvl=10,qgs={92195},requireSkill=773,sourceQuests={39931}}),
 q(39933,{coords={
 [627]={{41.6,37.2}}},lvl=10,qgs={92195},requireSkill=773,sourceQuests={39932},g={
+o(244679,{coords={
+[627]={{46.3,39.7},{47,38.7},{47.3,41.1},{47.4,40.3},{47.5,40.8},{47.6,40.3},{48.1,41.8},{48.4,39.4},{48.6,39.4},{48.6,40.8},{48.7,38.4},{48.7,41.5},{48.9,39.9},{49.8,39.5},{49.9,39.1}}},requireSkill=773,g={
+i(129092,{requireSkill=773})}}),
 r(192854,{learnedAt=60,requireSkill=773,skillID=2508})}}),
 q(40056,{c={12},coords={
 [627]={{41.6,37.2}}},lvl=10,qgs={92195},requireSkill=773,sourceQuests={39933}}),
@@ -7598,7 +7602,7 @@ r(184497,{requireSkill=186})}}),
 q(38804,{coords={
 [680]={{28,26.4}}},lvl=10,qgs={93776},requireSkill=186,sourceQuests={38801},g={
 r(184498,{requireSkill=186})}})}}),
-ah(191970,{awp=70003,crs={93237},maps={630,634,641,646,650,680},requireSkill=186,type="s",g={
+ah(191970,{awp=70003,crs={93237},maps={630,634,641,646,650,680},requireSkill=186,symselector=2,type="s",g={
 q(38806,{lvl=45,providers={{"i",124502}},requireSkill=186,g={
 r(184504,{requireSkill=186})}}),
 q(38807,{coords={

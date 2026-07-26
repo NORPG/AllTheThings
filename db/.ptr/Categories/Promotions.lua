@@ -280,7 +280,16 @@ ach(14904,{awp=90002,rwp=90200,u=2}),
 mnt(358072,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 Collection: Legendary Pack.",itemID=258427,lvl=10,rwp=100205,u=2}),
 toy(210042,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",rwp=100205,u=2}),
 p(3579,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",itemID=258482,npcID=205467,rwp=100205,spellID=411448,u=2}),
-ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2})}),
+ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2}),
+en(276872,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",questID=97195,rwp=120100,spellID=1300978,tmogSetID=5715,u=2,g={
+s(309897,276864,{f=2}),
+s(309896,276861,{f=2}),
+s(309899,276868,{f=3}),
+s(309898,276866,{f=3}),
+s(309900,276870,{f=3})}}),
+p(5064,{awp=120007,description="Received after buying the Blizzcon 2026 Ultimate Bundle.",itemID=274150,npcID=264863,rwp=120100,spellID=1293301,u=2}),
+de(25936,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=276873,rwp=120100,spellID=1300983,u=2}),
+mnt(1293456,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=274260,rwp=120100,u=2})}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=20001,u=2,g={
