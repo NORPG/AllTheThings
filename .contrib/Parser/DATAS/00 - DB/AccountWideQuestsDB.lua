@@ -2510,6 +2510,7 @@ local AccountWideQuestsDB = {
 	92889,	-- Arsenal: Odyn's Spears
 	92890,	-- A Handful of Voidlight Marl (Hara'ti)
 	92891,	-- A Cluster of Voidlight Marl
+	92892,	-- A Trove of Voidlight Marl
 	92961,	-- Decor Treasure Hunt
 	92962,	-- Decor Treasure Hunt
 	92963,	-- Decor Treasure Hunt
@@ -2864,9 +2865,13 @@ local AccountWideQuestsDB = {
 	96124,	-- A Small Bundle of Goods
 	96214,	-- Tracking Quest
 	96215,	-- Tracking Quest
+	96496,	-- The Road Not Taken Twice
+	96497,	-- Spatial Reasoning
 	96534,	-- Preparing for Threats
 	96744,	-- Bouncy Mushrooms
 	96745,	-- Aerospores
+	96787,	-- Quest #96787*
+	96788,	-- Quest #96788*
 	96790,	-- ??
 	96791,	-- Quest #96791*
 	96845,	-- The Grappler
