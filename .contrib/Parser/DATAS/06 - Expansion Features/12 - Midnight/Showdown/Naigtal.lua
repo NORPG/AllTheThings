@@ -1,16 +1,12 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
-local FIELD_ACCOLADE = 3405;
-local DARK_PARTICLE = 267051;
-
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(SHOWDOWN, {
-		["description"] = "Naigtal, is a world of giant mushrooms, rich in arcane energy, covered in vast oceans with ley lines running beneath them. The Azerothian forces on Naigtal during the War of Light and Shadow presume the natives to have been wiped out by the Legion.",
 		["timeline"] = { ADDED_12_0_7 },
 		["groups"] = {
 			m(NAIGTAL, {
+				["description"] = "Naigtal, is a world of giant mushrooms, rich in arcane energy, covered in vast oceans with ley lines running beneath them. The Azerothian forces on Naigtal during the War of Light and Shadow presume the natives to have been wiped out by the Legion.",
 				["icon"] = 775461,
 				["cr"] = 264322,	-- Greater Void Portal
 				["coord"] = { 51.4, 71.3, MAP.MIDNIGHT.VOIDSTORM },
@@ -375,100 +371,134 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["groups"] = { i(276390) },	-- Riftstalker's Overflowing Prize
 						}),
 					}),
-					n(RARES, sharedData({ ["isRepeatable"] = true }, {
-						n(264569, {	-- Auredar's Chassis <The Vacant Vigilant>
-							["coord"] = { 28.8, 62.9, NAIGTAL },
-							["questID"] = 96316,
-							["groups"] = {	-- Wrists
-								i(275151),	-- Bands of Draenic Mourning
-								i(275159),	-- Construct Manipulator Bracers
-								i(275143),	-- Draeni Ceremonial Cuffs
-								i(275167),	-- Intact Construct Plates
-							},
+					n(RARES, {
+						["symselector"] = SymSelector.MID_SHOWDOWN_NAIGTAL_RARES,
+						["groups"] = sharedData({ ["isRepeatable"] = true }, {
+							n(264569, {	-- Auredar's Chassis <The Vacant Vigilant>
+								["coord"] = { 28.8, 62.9, NAIGTAL },
+								["questID"] = 96316,
+								["groups"] = {	-- Wrists
+									i(275151),	-- Bands of Draenic Mourning
+									i(275159),	-- Construct Manipulator Bracers
+									i(275143),	-- Draeni Ceremonial Cuffs
+									i(275167),	-- Intact Construct Plates
+									i(274827),	-- Draenic Drive Chain
+									i(274873),	-- Funeral Attendant's Spire
+								},
+							}),
+							n(263950, {	-- Broxion <Contagious Anomaly>
+								["coord"] = { 44.2, 51.0, NAIGTAL },
+								["questID"] = 96206,
+								["groups"] = {	-- Hands
+									i(275138),	-- Spore-Handler's Handwraps
+									i(275146),	-- Spore-Membrane Gloves
+									i(275162),	-- Spore-Shined Gloves
+									i(275154),	-- Swamp Trekker's Grips
+									i(274890),	-- Enchanted Spore
+								},
+							}),
+							n(264571, {	-- Indomitable Mk XII <Blazing Reaver>
+								["description"] = "Patrols up and down the central road.",
+								["coord"] = { 53.8, 51.6, NAIGTAL },
+								["questID"] = 96317,
+								["groups"] = {	-- Legs
+									i(275164),	-- Indomitable Mechanized Legplates
+									i(275156),	-- Gear-Linked Leggings
+									i(275140),	-- Leggings of Tainted Stuffing
+									i(275148),	-- Reaver's Padded Trousers
+									i(274891),	-- Mk XII Gear Drive
+								},
+							}),
+							n(263947, {	-- Interminable Uarn <The Undying Stalk>
+								["coord"] = { 37.6, 61.8, NAIGTAL },
+								["questID"] = 96205,
+								["groups"] = {	-- Head
+									i(275147),	-- Bioluminescent Swamp Mask
+									i(275139),	-- Crown of Fungal Spores
+									i(275155),	-- Interminable Fungal Helmet
+									i(275163),	-- Uarn's Reinforced Headplate
+									i(274862),	-- Corrupted Draenei Priest's Kris
+									i(274876),	-- Reinforced Fungalhide Bulwark
+								},
+							}),
+							n(263955, {	-- Lomelith <The Bogshaker>
+								["description"] = "Roams around the area.",
+								["coord"] = { 67.7, 62.9, NAIGTAL },
+								["questID"] = 96208,
+								["groups"] = {
+									i(274860),	-- Ancient Spore-Coated Axe
+									i(274819),	-- Fungle Fold Frock
+									i(274823),	-- Spongy Gill Loop
+								},
+							}),
+							n(263954, {	-- Swalewing Matriarch <The Manabog Apex>
+								["description"] = "Roams around the area.",
+								["coord"] = { 77.7, 38.0, NAIGTAL },
+								["questID"] = 96207,
+								["groups"] = {	-- Feet
+									i(275153),	-- Flickering Scale Sabatons
+									i(275137),	-- Flickering Soft-Steppers
+									i(275145),	-- Swalewing Skin Footpads
+									i(275161),	-- Swamp-Resistant Stompers
+									i(274874),	-- Flickering Wing Separator
+								},
+							}),
+							n(264576, {	-- Slaipaan <The Fel-Gorged>
+								["description"] = "Roams around the area.",
+								["coord"] = { 56.1, 61.4, NAIGTAL },
+								["questID"] = 96320,
+								["groups"] = {	-- Chests
+									i(275152),	-- Burrower's Linked Hauberk
+									i(275136),	-- Leaf-Woven Blouse
+									i(275144),	-- Leafy-Hide Coat
+									i(275160),	-- Slaipaan's Carapace
+									i(274871),	-- Giant Worm Piercer
+								},
+							}),
+							n(265698, {	-- Voidwarped Sporebat
+								["coord"] = { 48.8, 47.4, NAIGTAL },
+								["questID"] = 96566,
+								["groups"] = {	-- Waists
+									i(275166),	-- Voidwarped Greatbelt
+									i(275142),	-- Voidwarped Sash
+									i(275158),	-- Voidwarped Scale Girdle
+									i(275150),	-- Sporebat Leather Belt
+									i(274866),	-- Voidwarped Edge
+								},
+							}),
+							n(267422, {	-- Warbringer Thal'kuur <The Mutinied>
+								["description"] = "Roams around the area.",
+								["coord"] = { 56.1, 61.4, NAIGTAL },
+								["questID"] = 97014,
+								["groups"] = {	-- Shoulders
+									i(275149),	-- Fungal Draped Epaulets
+									i(275165),	-- Petrified Mushroom Shoulderplates
+									i(275141),	-- Spore-Speckled Shoulderpads
+									i(275157),	-- Swampwalker's Spaulders
+									i(274864),	-- Sporebloom Gavel
+								},
+							}),
+							n(264574, {	-- Warp Agent Xi'grivr <Ky'veza's Second>
+								["coord"] = { 70.3, 76.4, NAIGTAL },
+								["questID"] = 96319,
+								["groups"] = {
+									i(274821),	-- Drape of the Hal'hadar Assassin
+									i(274825),	-- Hal'hadar Assassin's Signet
+									i(274870),	-- Assassin's Void-String Bow
+								},
+							}),
 						}),
-						n(263950, {	-- Broxion <Contagious Anomaly>
-							["coord"] = { 44.2, 51.0, NAIGTAL },
-							["questID"] = 96206,
-							["groups"] = {	-- Hands
-								i(275138),	-- Spore-Handler's Handwraps
-								i(275146),	-- Spore-Membrane Gloves
-								i(275162),	-- Spore-Shined Gloves
-								i(275154),	-- Swamp Trekker's Grips
-							},
-						}),
-						n(264571, {	-- Indomitable Mk XII <Blazing Reaver>
-							["description"] = "Patrols up and down the central road.",
-							["coord"] = { 53.8, 51.6, NAIGTAL },
-							["questID"] = 96317,
-							["groups"] = {	-- Legs
-								i(275164),	-- Indomitable Mechanized Legplates
-								i(275156),	-- Gear-Linked Leggings
-								i(275140),	-- Leggings of Tainted Stuffing
-								i(275148),	-- Reaver's Padded Trousers
-							},
-						}),
-						n(263947, {	-- Interminable Uarn <The Undying Stalk>
-							["coord"] = { 37.6, 61.8, NAIGTAL },
-							["questID"] = 96205,
-							["groups"] = {	-- Head
-								i(275147),	-- Bioluminescent Swamp Mask
-								i(275139),	-- Crown of Fungal Spores
-								i(275155),	-- Interminable Fungal Helmet
-								i(275163),	-- Uarn's Reinforced Headplate
-							},
-						}),
-						n(263955, {	-- Lomelith <The Bogshaker>
-							["description"] = "Roams around the area.",
-							["coord"] = { 67.7, 62.9, NAIGTAL },
-							["questID"] = 96208,
-						}),
-						n(263954, {	-- Swalewing Matriarch <The Manabog Apex>
-							["description"] = "Roams around the area.",
-							["coord"] = { 77.7, 38.0, NAIGTAL },
-							["questID"] = 96207,
-							["groups"] = {	-- Feet
-								i(275153),	-- Flickering Scale Sabatons
-								i(275137),	-- Flickering Soft-Steppers
-								i(275145),	-- Swalewing Skin Footpads
-								i(275161),	-- Swamp-Resistant Stompers
-							},
-						}),
-						n(264576, {	-- Slaipaan <The Fel-Gorged>
-							["description"] = "Roams around the area.",
-							["coord"] = { 56.1, 61.4, NAIGTAL },
-							["questID"] = 96320,
-							["groups"] = {	-- Chests
-								i(275152),	-- Burrower's Linked Hauberk
-								i(275136),	-- Leaf-Woven Blouse
-								i(275144),	-- Leafy-Hide Coat
-								i(275160),	-- Slaipaan's Carapace
-							},
-						}),
-						n(265698, {	-- Voidwarped Sporebat
-							["coord"] = { 48.8, 47.4, NAIGTAL },
-							["questID"] = 96566,
-							["groups"] = {	-- Waists
-								i(275166),	-- Voidwarped Greatbelt
-								i(275142),	-- Voidwarped Sash
-								i(275158),	-- Voidwarped Scale Girdle
-								i(275150),	-- Sporebat Leather Belt
-							},
-						}),
-						n(267422, {	-- Warbringer Thal'kuur <The Mutinied>
-							["description"] = "Roams around the area.",
-							["coord"] = { 56.1, 61.4, NAIGTAL },
-							["questID"] = 97014,
-							["groups"] = {	-- Shoulders
-								i(275149),	-- Fungal Draped Epaulets
-								i(275165),	-- Petrified Mushroom Shoulderplates
-								i(275141),	-- Spore-Speckled Shoulderpads
-								i(275157),	-- Swampwalker's Spaulders
-							},
-						}),
-						n(264574, {	-- Warp Agent Xi'grivr <Ky'veza's Second>
-							["coord"] = { 70.3, 76.4, NAIGTAL },
-							["questID"] = 96319,
-						}),
+					}),
+					-- Elite Patrols
+					n(SPECIAL, sharedData({
+						["sym"] = {SymSelector.select("MID_SHOWDOWN_ZONE_REWARDS")},
+						["skipFill"] = 1,
+					},{
+						n(265882),	-- Spellslinger Rem'lazar <Warp Rider>
+						n(265881),	-- Renegade Kulivero <Warp Rider>
+						n(265879),	-- Guardian Halazir <Warp Rider>
+						n(265880),	-- Techno-Medic Alazj <Warp Rider>
+						n(264769),	-- Ethereal Adjutant
 					})),
 					n(REWARDS, {
 						i(276089),	-- Field Accolades (Normal)
@@ -539,6 +569,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						o(655271, {	-- Hal'hadar Pocket-Storage
 							["description"] = "Spawns randomly throughout the zone.",
+							["sym"] = {{"select","itemID",278026},{"pop"}},	-- TODO: use source tech eventually
 						}),
 						o(659301, {	-- Highland Redcap
 							["coord"] = { 29.0, 61.8, NAIGTAL },
@@ -670,103 +701,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					})),
 					n(ZONE_DROPS, {
-						i(DARK_PARTICLE),
-						i(276298),	-- Forgotten Fel-Shard Talon (COSMETIC!)
 						i(276288),	-- Forgotten Sword of Vilaldoun (COSMETIC!)
 						i(276368),	-- Partially-Digested Redcap
-						i(276330),	-- Taken Riftwalker's Starbarb (COSMETIC!)
 						i(275520, {	-- Technoseer's Communique (QS!)
-							["cr"] = 265537,	-- Hal'hadar Forge Grunt
+							["provider"] = { "n", 265537 },	-- Hal'hadar Forge Grunt
 							["coord"] = { 74.2, 73.5, NAIGTAL },
 						}),
 						i(276300),	-- Vilaldoun Anchorite's Scepter (COSMETIC!)
-					}),
-					n(ZONE_REWARDS, {
-						currency(FIELD_ACCOLADE),
-						i(278116),	-- Player Experience
-						n(ARMOR, {
-							filter(BACK_F, {
-								i(274820),	-- Cloak of the Voracious Gorger
-								i(274818),	-- Drape of Intense Darkness
-								i(274821),	-- Drape of the Hal'hadar Assassin
-								i(274819),	-- Fungle Fold Frock
-							}),
-							filter(CLOTH, {
-								i(274835),	-- Bands of Pincher Sinew
-								i(274834),	-- Cord of Domineering Resolve
-								i(274829),	-- Creature Corruptor Slippers
-								i(274828),	-- Domanaar Subjugator's Vestments
-								i(274832),	-- Fel-Tainted Trousers
-								i(274830),	-- Ice-Glazed Gloves
-								i(274833),	-- Icy Spidersilk Mantle
-								i(274831),	-- Portal Shaper's Circlet
-							}),
-							filter(FINGER_F, {
-								i(274822),	-- Band of the Beast Reaper
-								i(274825),	-- Hal'hadar Assassin's Signet
-								i(274823),	-- Spongy Gill Loop
-								i(274824),	-- Worldeater's Bone Ring
-							}),
-							filter(LEATHER, {
-								i(274839),	-- Cold-World Cover
-								i(274837),	-- Corrupted Hide Boots
-								i(274841),	-- Frigid Cavedweller's Shoulderpads
-								i(274842),	-- Gatekeeper's Leather Waistguard
-								i(274838),	-- Gloves of the Descending Destroyer
-								i(274840),	-- Pants of the Lost Legion
-								i(274843),	-- Pincher-Proof Wristguards
-								i(274836),	-- Sleet-Resistant Jerkin
-							}),
-							filter(MAIL, {
-								i(274847),	-- Atomus's Headcover
-								i(274849),	-- Frostscale Spider's Monnion
-								i(274846),	-- Glacier Basin Gauntlets
-								i(274851),	-- Glittering Frostscale Wraps
-								i(274845),	-- Greaves of Corrupted Scale
-								i(274848),	-- Legguards of Fel-Corruption
-								i(274850),	-- Mercilus's Chain Waistguard
-								i(274844),	-- Sleetlink Hauberk
-							}),
-							filter(NECK_F, {
-								i(274826),	-- Coiling Smoke Chain
-								i(274827),	-- Draenic Drive Chain
-							}),
-							filter(PLATE, {
-								i(274857),	-- Chitonous Broodmother's Spaulders
-								i(274853),	-- Creature Crushers
-								i(274858),	-- Domanaar Battle Belt
-								i(274856),	-- Felguard's Frozen Greaves
-								i(274859),	-- Klaxid Plate Vambraces
-								i(274855),	-- Portal-Keeper's Helm
-								i(274854),	-- Shadowguard Plate Gauntlets
-								i(274852),	-- Sleetstone Chestplate
-							}),
-							filter(TRINKET_F, {
-								i(274890),	-- Enchanted Spore
-								i(274893),	-- Frosty Klaxid Stinger
-								i(274891),	-- Mk XII Gear Drive
-								i(274892),	-- Resilient Felblood Vial
-							}),
-						}),
-						n(WEAPONS, {
-							i(274860),	-- Ancient Spore-Coated Axe
-							i(274870),	-- Assassin's Void-String Bow
-							i(274862),	-- Corrupted Draenei Priest's Kris
-							i(274863),	-- Cudgel of the Twisted Reaper
-							i(274872),	-- Darkness' Horrific Barb
-							i(274865),	-- Destroyer's Drop Hammer
-							i(274874),	-- Flickering Wing Separator
-							i(274861),	-- Frosty Broodmother's Fang
-							i(274873),	-- Funeral Attendant's Spire
-							i(274871),	-- Giant Worm Piercer
-							i(274867),	-- Inscribed Domanaar's Sword
-							i(274868),	-- Portal Master's Shortblade
-							i(274876),	-- Reinforced Fungalhide Bulwark
-							i(274875),	-- Riftwalker's Lantern
-							i(274864),	-- Sporebloom Gavel
-							i(274866),	-- Voidwarped Edge
-							i(274869),	-- Void-Iced Warglaives
-						}),
 					}),
 				},
 			}),
