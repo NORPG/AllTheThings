@@ -21,31 +21,8 @@ ach(62482),	-- Humanoid Battler of Cataclysm
 ach(62483),	-- Magic Battler of Cataclysm
 ach(62487),	-- Mechanical Battler of Cataclysm
 ach(62488),	-- Undead Battler of Cataclysm
-ach(62497),	-- Venomous Weapons of Conquest
 ach(62566),	-- Vicious Saddle (44)
 ach(62567),	-- Vicious Saddle (44)
-ach(62911),	-- Rival II: Midnight Season 2
-ach(62921),	-- Battle Mender: Midnight Season 2
-ach(62922),	-- Venomous Gladiator: Midnight Season 2
-ach(62923),	-- Venomous Legend: Midnight Season 2
-ach(62924),	-- Venomous Marshal: Midnight Season 2
-ach(62925),	-- Venomous Warlord: Midnight Season 2
-ach(62926),	-- Combatant I: Midnight Season 2
-ach(62927),	-- Challenger I: Midnight Season 2
-ach(62928),	-- Rival I: Midnight Season 2
-ach(62929),	-- Duelist: Midnight Season 2
-ach(62930),	-- Gladiator: Midnight Season 2
-ach(62931),	-- Elite: Midnight Season 2
-ach(62932),	-- Legend: Midnight Season 2
-ach(62950),	-- Strategist: Midnight Season 2
-ach(62951),	-- Combatant II: Midnight Season 2
-ach(62952),	-- Challenger II: Midnight Season 2
-ach(62953),	-- Hero of the Alliance: Venomous
-ach(62954),	-- Hero of the Horde: Venomous
-ach(62955),	-- Venomous Gladiator's Goredrake
-ach(63099),	-- Venomous Combatant
-ach(63103),	-- Venomous Combatant
-ach(63167),	-- Tour of Duty: The Coiled Isle
 ach(63250),	-- Is Venom Stasis A Joke To You?
 ach(63253),	-- A Round on the House in Midnight
 ach(63254),	-- Glory of the Venomous Abyss Raider
@@ -64,7 +41,6 @@ ach(63454),	-- Nine, Ten, Never Sleep Again
 ach(63457),	-- Let Sleeping Skulls Lie
 ach(63472),	-- Fang Fatale
 ach(63473),	-- Sssensational!
-ach(63608),	-- Venomous Vestments
 ach(63611),	-- Big Prey Hunter (Season 2)
 ach(63621),	-- Keystone Victor: Altar of Fangs
 ach(63622),	-- Keystone Victor: Den of Nalorakk

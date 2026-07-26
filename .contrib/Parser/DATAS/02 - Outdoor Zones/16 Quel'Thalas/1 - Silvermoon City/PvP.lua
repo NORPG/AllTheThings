@@ -137,8 +137,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								},
 								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 							}),
+							i(276187, {	-- Venomous Jeweler's Setting
+								["cost"] = {
+									{ "i", 253307, 3 },	-- 3x Infused Heliotrope
+									{ "c", HONOR, 5000 },
+								},
+								["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+							}),
 						}),
 						filter(REAGENTS, {
+							-- Season 1
 							i(256607, {	-- Galactic Aspirant's Heraldry
 								["cost"] = { { "c", HONOR, 175 } },	-- TODO: fix cost when Blizzard fix it
 								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
@@ -150,6 +158,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(256608, {	-- Galactic Gladiator's Heraldry
 								["cost"] = { { "c", CONQUEST, 175 } },	-- TODO: fix cost when Blizzard fix it
 								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+							}),
+							-- Season 2
+							i(275383, {	-- Venomous Aspirant's Heraldry
+								["cost"] = { { "c", HONOR, 175 } },
+								["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+							}),
+							i(275380, {	-- Venomous Combatant's Heraldry
+								["cost"] = { { "c", HONOR, 175 } },
+								["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+							}),
+							i(275385, {	-- Venomous Gladiator's Heraldry
+								["cost"] = { { "c", CONQUEST, 175 } },
+								["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 							}),
 							i(253307, {	-- Infused Heliotrope
 								["cost"] = { { "c", HONOR, 2500 } },
