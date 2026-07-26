@@ -2888,7 +2888,7 @@ q(93907,{coords={
 q(96242,{coords={
 [2393]={{31.5,76.5}}},qgs={257125},sourceQuests={93907}}),
 q(93870,{coords={
-[2393]={{31.5,76.4}}},isDaily=1,qgs={256697},sourceQuests={93719}})}),
+[2393]={{31.5,76.4}}},isDaily=1,qgs={256697},sourceQuests={93719,93914},sqreq=1})}),
 h(-47,{
 o(621494,{
 cu(3393),
@@ -11800,8 +11800,8 @@ heir(224571,{cost={{"c",1166,50}},e=1508,f=55,factionID=59,repeatable=1,spellID=
 heir(224566,{cost={{"c",1166,50}},e=1508,f=55,factionID=576,repeatable=1,spellID=453221}),
 heir(224565,{cost={{"c",1166,50}},e=1508,f=55,factionID=589,r=2,repeatable=1,spellID=453223}),
 heir(224570,{cost={{"c",1166,50}},e=1508,f=55,factionID=270,repeatable=1,spellID=453217}),
-i(224190,{b=1,cost={{"c",1166,25}},e=1508,modID=22,spellID=451981}),
-i(225378,{b=1,cost={{"c",1166,200}},e=1508,f=55,modID=22,spellID=58493})}}),
+i(224190,{b=1,cost={{"c",1166,25}},e=1508,spellID=451981}),
+i(225378,{b=1,cost={{"c",1166,200}},e=1508,f=55,spellID=58493})}}),
 flt(100,{awp=110005,e=1508,g={
 mnt(452643,{b=1,cost={{"c",1166,5000}},e=1508,itemID=224398})}}),
 flt(102,{awp=110005,e=1508,g={
@@ -16950,7 +16950,7 @@ ach(41038,{e=242,rwp=110007,u=2}),
 ach(41013,{e=242,questID=85661}),
 ach(40661,{coords={
 [71]={{61.7,50},{61.8,49.9},{61.9,50.1},{62,50.1},{62.2,49.6},{62.3,49.3}}},crs={227559},e=242,providers={{"i",224157},{"n",227682}}})}}),
-inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=22,g={
+inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=25,g={
 h(-12,{e=242,g={
 ach(40999,{e=242,g={
 crit(70571,{achID=40999,e=242,id=2,providers={{"n",232243}}}),
@@ -16962,7 +16962,7 @@ h(-45,{e=242,g={
 q(82817,{coords={
 [84]={{56,18.4}},
 [85]={{52.8,82.8}}},e=242,isWeekly=1,lvl=30,qgs={234556},rwp=110007,u=2,g={
-i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",22},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 q(84735,{coords={
 [71]={{63,49.7}}},e=242,lvl=30,qgs={229494},rwp=110007,u=2}),
 hqt(84743,{coords={
@@ -17071,11 +17071,11 @@ s(229527,231428,{b=1,e=242,f=23,lvl=22,u=2}),
 s(229522,231422,{b=1,e=242,f=5,lvl=22,u=2}),
 s(229538,231441,{b=1,e=242,f=5,lvl=22,u=2}),
 n(223881,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",22},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(233209,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",22},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(224322,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",22},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 d(113,{difficulties={17,14,15},e=242,g={
 h(-63,{e=242,g={
 s(229587,231501,{e=242,f=4,lvl=80}),
@@ -17760,7 +17760,7 @@ q(82783,{coords={
 [71]={{62.6,50}}},e=242,isWeekly=1,lvl=10,maps={2354},qgs={226368},g={
 ach(40977,{e=242,g={
 crit(70589,{achID=40976,e=242,id=8})}}),
-i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",22},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 cu(1166,{e=242})}})}}),
 h(-56,{e=242,g={
 o(455795,{coords={

@@ -73856,7 +73856,7 @@ i(104261,{b=1}),
 crit(23981,{achID=8714,id=24}),
 crit(65643,{achID=20002,awp=100207,e=437,id=2,rwp=110002,u=2})}}),
 n(73854,{coords={
-[554]={{44,70}}},description="Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",isDaily=1,questID=32967,g={
+[554]={{44,70}}},description="Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",isDaily=1,providers={{"n",72095},{"n",73297}},questID=32967,g={
 i(104268,{b=1}),
 crit(23976,{achID=8714,id=10}),
 crit(65665,{achID=20001,awp=100207,e=437,id=3,rwp=110002,u=2})}}),
@@ -73908,13 +73908,13 @@ mnt(148476,{b=1,itemID=104269,lvl=10}),
 crit(23984,{achID=8714,id=27}),
 crit(65647,{achID=20002,awp=100207,e=437,id=6,rwp=110002,u=2})}}),
 n(73163,{coords={
-[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,questID=33303,g={
+[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,providers={{"n",72841}},questID=33303,g={
 p(1330,{b=1,itemID=104161,npcID=73364,spellID=148052}),
 i(104292,{b=1}),
 crit(23989,{achID=8714,id=18}),
 crit(65652,{achID=20002,awp=100207,e=437,id=11,rwp=110002,u=2})}}),
 n(73160,{coords={
-[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,questID=33296,g={
+[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,providers={{"n",72844}},questID=33296,g={
 i(89770,{b=1,lvl=10,spellID=130895}),
 crit(23968,{achID=8714,id=2}),
 crit(65676,{achID=20001,awp=100207,e=437,id=13,rwp=110002,u=2})}}),
@@ -73926,7 +73926,7 @@ toy(104331,{b=1,lvl=10}),
 crit(23994,{achID=8714,id=22}),
 crit(65658,{achID=20002,awp=100207,e=437,id=16,rwp=110002,u=2})}}),
 n(72193,{coords={
-[554]={{33.8,85.8}}},isDaily=1,qgs={72151},questID=33292,g={
+[554]={{33.8,85.8}}},isDaily=1,providers={{"n",72151}},questID=33292,g={
 i(104035,{b=1}),
 crit(23973,{achID=8714,id=7}),
 crit(65669,{achID=20001,awp=100207,e=437,id=6,rwp=110002,u=2})}}),
@@ -73938,7 +73938,7 @@ i(104222,{rwp=70003,u=2}),
 crit(23979,{achID=8714,id=13}),
 crit(65675,{achID=20001,awp=100207,e=437,id=12,rwp=110002,u=2})}}),
 n(73166,{coords={
-[554]={{23.6,28.6},{68.8,74.8}}},description="Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",isDaily=1,questID=33302,g={
+[554]={{16.2,60.6},{17.8,73.7},{18,54.3},{18.4,57.9},{18.4,62.5},{20.2,77.7},{20.6,47.6},{20.8,71.3},{21.1,63.5},{21.8,31.4},{22.4,35.4},{23.5,27.9},{25.1,74.9},{27.1,80.2},{27.5,74.7},{29.8,84.3},{30.7,31.3},{32.7,85.4},{36,87.9},{38.6,86.7},{40.9,90.5},{45.2,89.5},{52.4,86.4},{62.1,83},{62.5,79.8},{65.8,78.4},{69.1,74.9},{69.9,71.1},{70.6,65}}},description="Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",isDaily=1,providers={{"n",72766}},questID=33302,g={
 i(104293,{b=1,spellID=148528}),
 p(1337,{b=1,itemID=104168,npcID=73366,spellID=148066}),
 crit(23985,{achID=8714,id=17}),
@@ -73969,7 +73969,9 @@ n(73704,{coords={
 [554]={{71.2,82.6}}},isDaily=1,questID=33305,g={
 crit(24144,{achID=8714,id=19}),
 crit(65644,{achID=20002,awp=100207,e=437,id=3,rwp=110002,u=2})}}),
-n(72769,{isDaily=1,questID=33293,g={
+n(72769,{coords={
+[554]={{43.1,41.2}},
+[555]={{48.2,62.2},{54.8,68},{56.2,30.4},{62.6,36},{64,47.8},{65.2,64.8},{70.6,62.6},{73.8,31}}},isDaily=1,questID=33293,g={
 i(104258,{b=1}),
 p(1348,{b=1,itemID=104307,npcID=73738,spellID=148552}),
 r(148274,{itemID=104227,requireSkill=773,skillID=2510}),
@@ -74002,7 +74004,7 @@ i(104225,{rwp=70003,u=2}),
 crit(23971,{achID=8714,id=5}),
 crit(65671,{achID=20001,awp=100207,e=437,id=9,rwp=110002,u=2})}}),
 n(71919,{coords={
-[554]={{37.8,77.2}}},description="Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",isDaily=1,qgs={71908,71944},questID=32959,g={
+[554]={{37.8,77.2}}},description="Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",isDaily=1,providers={{"n",71908},{"n",71944}},questID=32959,g={
 p(1336,{b=1,itemID=104167,npcID=73367,spellID=148063}),
 crit(23972,{achID=8714,id=6}),
 crit(65670,{achID=20001,awp=100207,e=437,id=7,rwp=110002,u=2})}})}),
@@ -86717,8 +86719,7 @@ s(62147,113170,{b=1,f=28,r=2}),
 s(62148,113171,{b=1,f=24,r=2}),
 s(62151,113174,{b=1,f=23,r=2}),
 s(62146,113169,{b=1,f=32,r=2}),
-s(62152,113175,{b=1,f=20,r=2}),
-s(66481,118186,{b=1,f=27,r=1})}}),
+s(62152,113175,{b=1,f=20,r=2})}}),
 q(34352,{coords={
 [539]={{59,82.2}}},lvl=40,qgs={83494},sourceQuests={35861,35876}}),
 q(34781,{coords={
@@ -112198,7 +112199,7 @@ n(139280,{coords={
 s(91531,154474,{b=1,f=5,lvl=50}),
 crit(41834,{achID=12939,id=26})}}),
 n(133356,{coords={
-[895]={{60.7,17.4}}},providers={{"o",281172}},qgs={133353},questID=50301,g={
+[895]={{60.7,17.4}}},providers={{"n",133353},{"o",281172}},questID=50301,g={
 s(96420,160466,{b=1,f=6,lvl=50}),
 crit(41835,{achID=12939,id=27})}}),
 n(139289,{coords={
@@ -136533,7 +136534,7 @@ q(78821,{coords={
 i(211376,{b=1,description="Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed."}),
 i(211394,{b=1,lvl=70,sym={{"select","itemID",211389},{"pop"},{"exclude","itemID",211417,210243}}})}})}),
 h(-46,{
-n(209915,{description="Can randomly spawn near any planting spot.",isWeekly=1,qgs={210063},questID=77856})}),
+n(209915,{description="Can randomly spawn near any planting spot.",isWeekly=1,providers={{"n",210063}},questID=77856})}),
 h(-47,{
 i(210219,{b=1,cost={{"i",208047,1}},sym={{"select","npcID",211265},{"pop"},{"where","filterID",100},{"select","itemID",210218},{"pop"}}}),
 i(210218,{b=1,cost={{"i",208067,1}},sym={{"select","npcID",211265},{"pop"},{"where","filterID",101},{"pop"}},g={
@@ -137336,7 +137337,7 @@ s(189679,208346,{b=1,f=4,lvl=70}),
 s(189688,208361,{b=1,f=28,lvl=70}),
 crit(62935,{achID=19316,id=7})}}),
 n(210111,{coords={
-[2200]={{57.1,52.5},{59,71.9},{60,63.3}}},description="Can spawn during Emerald Frenzy event.",isDaily=1,qgs={210663},questID=78263,g={
+[2200]={{57.1,52.5},{59,71.9},{60,63.3}}},description="Can spawn during Emerald Frenzy event.",isDaily=1,providers={{"n",210663}},questID=78263,g={
 s(189694,208367,{b=1,f=20,lvl=70}),
 s(189663,208330,{b=1,f=6,lvl=70}),
 s(189668,208335,{b=1,f=4,lvl=70}),
@@ -137575,7 +137576,7 @@ o(407862,{coords={
 toy(210725,{b=1}),
 crit(62953,{achID=19317,id=2})}}),
 n(210544,{coords={
-[2200]={{61.6,59.5},{62.9,60.4},{64.3,61.3}}},description="Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",isWeekly=1,qgs={210538},questID=78033,g={
+[2200]={{61.6,59.5},{62.9,60.4},{64.3,61.3}}},description="Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",isWeekly=1,providers={{"n",210538}},questID=78033,g={
 o(408706,{coords={
 [2200]={{61.6,59.5}}},questID=78005,g={
 crit(62960,{achID=19317,id=5})}})}}),
@@ -153839,7 +153840,7 @@ s(220221,223936,{f=6,lvl=68,minReputation={2570,3}}),
 s(220204,223918,{f=31,lvl=68,minReputation={2570,3}}),
 crit(69724,{achID=40851,id=21})}}),
 n(207780,{coords={
-[2215]={{61.1,18.3}}},isDaily=1,minReputation={2570,3},qgs={220492},questID=82564,g={
+[2215]={{61.1,18.3}}},isDaily=1,minReputation={2570,3},providers={{"n",220492}},questID=82564,g={
 s(220210,223925,{f=7,lvl=68,minReputation={2570,3}}),
 i(221234,{f=51,lvl=68,minReputation={2570,3}}),
 crit(69727,{achID=40851,id=24})}}),
@@ -155232,7 +155233,7 @@ s(219843,223374,{b=1,f=4,lvl=68}),
 s(219847,223381,{b=1,f=5,lvl=68}),
 crit(69704,{achID=40851,id=2})}}),
 n(218452,{coords={
-[2215]={{52.3,27}}},qgs={218455},questID=80010,g={
+[2215]={{52.3,27}}},providers={{"n",218455}},questID=80010,g={
 s(219851,223385,{b=1,f=6,lvl=68}),
 s(219850,223384,{b=1,f=4,lvl=68}),
 s(219848,223382,{b=1,f=5,lvl=68}),
@@ -165608,7 +165609,7 @@ i(265835,{b=1,spellID=1277307})}})}),
 h(-58,{
 n(261303,{coords={
 [2393]={{42.1,58.7}}},g={
-i(259996,{awp=120005,cost={{"c",3316,750}},f=55,lvl=90,spellID=1265461,sym={{"select","instanceID",1201,1300,1315,1316,1299},{"pop"},{"where","difficultyID",101},{"extract","itemID"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"},{"finalize"},{"select","instanceID",278},{"pop"},{"where","difficultyID",2},{"extract","itemID"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"},{"finalize"},{"select","instanceID",945,476},{"pop"},{"where","difficultyID",104},{"extract","itemID"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"},{"finalize"},{"select","instanceID",945},{"pop"},{"where","difficultyID",23},{"extract","itemID"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}}})}}),
+i(259996,{awp=120005,cost={{"c",3316,750}},f=55,lvl=90,rwp=120100,spellID=1265461,sym={{"select","instanceID",1201,1300,1315,1316,1299},{"pop"},{"where","difficultyID",101},{"extract","itemID"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"},{"finalize"},{"select","instanceID",278},{"pop"},{"where","difficultyID",2},{"extract","itemID"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"},{"finalize"},{"select","instanceID",945,476},{"pop"},{"where","difficultyID",104},{"extract","itemID"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"},{"finalize"},{"select","instanceID",945},{"pop"},{"where","difficultyID",23},{"extract","itemID"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}}})}}),
 n(259722,{coords={
 [2393]={{41.7,66.4}}},g={
 en(265024,{b=1,cost={{"i",264882,1}},spellID=1275893,tmogSetID=5569,g={
@@ -165798,7 +165799,7 @@ n(251248,{coords={
 [2393]={{57.7,71.6}}},g={
 i(273307,{awp=120005,f=55,spellID=1292077})}}),
 n(267859,{awp=120007,coords={
-[2393]={{39.4,59.4}}},g={
+[2393]={{39.4,59.4}}},rwp=120100,g={
 s(308887,274450,{f=9}),
 s(308888,274451,{f=9}),
 de(24194,{itemID=274736,spellID=1295145}),
@@ -170070,7 +170071,7 @@ n(248700,{coords={
 s(303481,264634,{b=1,f=28,lvl=80}),
 s(303459,264596,{b=1,f=3,lvl=80})}}),
 n(248823,{coords={
-[2405]={{24.8,68}}},cost={{"i",248680,3}},isDaily=1,qgs={248825,248907},questID=94463,g={
+[2405]={{24.8,68}}},cost={{"i",248680,3}},isDaily=1,providers={{"n",248825},{"n",248907}},questID=94463,g={
 i(264606,{b=1,f=51,lvl=80}),
 s(303383,264519,{b=1,f=8,lvl=80})}}),
 n(248068,{coords={
@@ -171604,7 +171605,7 @@ i(251783,{b=1,f=53,lvl=78,spellID=1253111}),
 s(303467,264620,{b=1,f=20,lvl=80}),
 crit(111845,{achID=62122,id=7})}}),
 n(245691,{coords={
-[2437]={{46.4,43.5}}},isDaily=1,qgs={246122},questID=91072,g={
+[2437]={{46.4,43.5}}},isDaily=1,providers={{"n",246122}},questID=91072,g={
 s(303446,264582,{b=1,f=7,lvl=80}),
 s(303389,264525,{b=1,f=4,lvl=80}),
 crit(111852,{achID=62122,id=14})}}),
