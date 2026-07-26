@@ -36,7 +36,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93687, {	-- Taste True Power
 				--["sourceQuests"] = { ??? },	-- ??
 				["provider"] = { "n", 243229 },	-- Eldara Dawnrunner
-				["timeline"] = { ADDED_12_0_1_SEASONSTART },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			q(96614, {	-- Forged Through Fire
+				--["sourceQuests"] = { ??? },	-- ??
+				["provider"] = { "n", 243229 },	-- Eldara Dawnrunner
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			-- Crests, Season 1
@@ -66,6 +72,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			-- Crests, Season 2
 			q(96633, {	-- Equipment Seminar
+				["provider"] = { "n", 239676 },	-- Vaskarn
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			q(96635, {	-- Upgrade Practicum
+				["sourceQuests"] = { 96633 },	-- Equipment Seminar
 				["provider"] = { "n", 239676 },	-- Vaskarn
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },

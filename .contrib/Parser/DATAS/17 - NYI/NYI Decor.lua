@@ -314,7 +314,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(1145),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporePod01_LightBloom.m2
 			rawdecor(1146),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone01.m2
 			rawdecor(1149),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_WallShelf01.m2
-			rawdecor(1150),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_Sarcophagus02.m2
 			rawdecor(1151),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporeContainer01_Lightbloom.m2
 			rawdecor(1152),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporeContainer01.m2
 			rawdecor(1154),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone04.m2
@@ -338,7 +337,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(1425),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_GrindingWheel02.m2
 			rawdecor(1426),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn01.m2
 			rawdecor(1427),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn02.m2
-			rawdecor(1428),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn03.m2
 			rawdecor(1429),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn01_Destroyed01.m2
 			rawdecor(1430),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn04.m2
 			rawdecor(1431),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn05.m2

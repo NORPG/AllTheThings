@@ -37,6 +37,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94803, {	-- Going for the Crown
 						i(277920),	-- Vibrant Crownfeather (QI!)
 					}),
+					q(94806, {	-- Wriggling and Wet
+						i(277935),	-- Pungent Leech Leg (QI!)
+					}),
 				})),
 				n(QUESTS, sharedDataSelf({	-- Brinedrinker Gills
 					["qg"] = 268394,	-- Brinedrinker Gills
@@ -51,6 +54,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
 							-- Rank 1: Stranger (Neutral)
+							i(281022, {	-- Eerie Lure
+								["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+							}),
 							i(262792, {	-- Shredded Bloomline
 								["cost"] = { { "c", COILED_FILAMENT, 10 } },
 							}),
@@ -91,20 +97,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
 								["cost"] = { { "c", VOIDLIGHT_MARL, 1500 } },
 							}),
-							i(275318, {	-- Schematic: Fine Captain's Bottle (RECIPE!)
-								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
-								["cost"] = { { "c", ARTISAN_MOXIE.ENGINEERING, 150 } },
-							}),
-							i(275322, {	-- Technique: Ferocious Feline Trinket (RECIPE!)
-								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
-								["cost"] = { { "c", ARTISAN_MOXIE.INSCRIPTION, 150 } },
-							}),
 							-- Rank 4: Venom Trawler
 							i(277925, {	-- Blue Tortollan Signpost (DECOR!)
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 							}),
-							i(278391, {	-- Eerie Lure (CI?)
+							i(278391, {	-- Eerie Bauble
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 							}),
@@ -125,6 +123,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["cost"] = { { "g", 1000000 } },	-- 100g
 							}),
 							-- Rank 5: Bloodsworn Crew
+							i(274796, {	-- Envenomed Deathblade (COSMETIC!)
+								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 5 },
+								["cost"] = { { "c", COILED_FILAMENT, 500 } },
+							}),
 							i(274814, {	-- Envenomed Game Ripper (COSMETIC!)
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 5 },
 								["cost"] = { { "c", COILED_FILAMENT, 1000 } },

@@ -34,8 +34,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(265262, {	-- Hisstara <The Raiser>
 				["coord"] = { 43.9, 50.8, MAP.MIDNIGHT.THE_COILED_ISLE },
-				--["questID"] = 96464,
-				--["groups"] = {  },
+				["questID"] = 96464,
+				["groups"] = { i(280702) },	-- Mantle of the Riser
 			}),
 			n(268090, {	-- Kari'zah the Forgotten
 				["coord"] = { 24.9, 73.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(263456, {	-- Szarith The Fanged
-			--	["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+			--	["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },	-- The Underbelly, Vaults of Atal'Utek
 			--	["questID"] = 96030,
 			--	["groups"] = {  },
 			}),
@@ -87,6 +87,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				}),
 				q(98350, {	-- Weekly reputation: Garsecg
 					["name"] = "Garsecg weekly reputation obtained.",
+				}),
+				q(98348, {	-- Weekly reputation: Hisstara
+					["name"] = "Hisstara weekly reputation obtained.",
 				}),
 				q(98346, {	-- Weekly reputation: Kari'zah the Forgotten
 					["name"] = "Kari'zah the Forgotten weekly reputation obtained.",

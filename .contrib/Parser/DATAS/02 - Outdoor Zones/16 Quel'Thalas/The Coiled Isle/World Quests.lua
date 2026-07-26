@@ -31,8 +31,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(94572, {	-- Shell the Future
 					["coord"] = { 74.5, 59.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
+				q(95990, {	-- Slithering Heights
+					["coord"] = { 38.7, 47.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(96066, {	-- Slithering Surveyor
 					["coord"] = { 56.9, 49.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(95529, {	-- Spearin' Sky Snakes
+					["coord"] = { 48.8, 64.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95429, {	-- Swift of Foot
 					["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },

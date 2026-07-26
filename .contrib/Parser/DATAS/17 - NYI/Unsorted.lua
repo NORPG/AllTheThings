@@ -26,8 +26,6 @@ root(ROOTS.Unsorted, {
 			i(251630),	-- Recipe: Amani Cornucopia
 			i(253397),	-- Revered Deepstone Table
 			i(253449),	-- Bound Silvermoon Drapes
-			i(253455),	-- Unearthed Sarcophagus Lid
-			i(253473),	-- Unearthed Sarcophagus Base
 			i(253481),	-- Masterful Sin'dorei Gravestone
 			i(254561),	-- Ogre Champion's Prized Skull
 			i(255702),	-- [PH] Snake Corpse
@@ -56,12 +54,10 @@ root(ROOTS.Unsorted, {
 			i(265622),	-- Knotted Swamp Stick
 			i(265626),	-- Shattered Teapot
 			i(265790),	-- Cache of Mistcrests
-			i(266169),	-- Soulcoiler Canopy
 			i(266327),	-- Pristine Spinal Barb
 			i(267045),	-- Quivering Egg
 			i(267080),	-- Amani Blueflame Chandelier
 			i(267233),	-- Dehydrated Troll Eye Necklace
-			i(267378),	-- Venom Scholar's Focus
 			i(268095),	-- Fresh Poultice
 			i(268113),	-- Jan'alai's Breath
 			-- WB
@@ -93,7 +89,6 @@ root(ROOTS.Unsorted, {
 			i(268965),	-- Familiar Threshadon Tooth Necklace
 			i(268968),	-- Hastily Written Note
 			i(269578),	-- Poison Dart Frog Gland
-			i(269637),	-- Serpent-Caller Spike
 			i(269720),	-- Corrosive Hekte
 			i(269918),	-- Venom-Corroded Gallstone
 			i(270191),	-- Lil'Kruul's Hilt
@@ -583,7 +578,6 @@ root(ROOTS.Unsorted, {
 			i(271681),	-- Perennial Frostbound Charm
 			i(271693),	-- Congealed Venom
 			i(271717),	-- Cup of Kafa
-			i(271850),	-- Venomous Tendril
 			i(271863),	-- Ophidian Bile
 			i(271864),	-- Rotten Pneuma
 			i(271865),	-- Scavenged Weapon
@@ -595,7 +589,6 @@ root(ROOTS.Unsorted, {
 			i(271884),	-- Concentrated Silvermoon Health Potion
 			i(271886),	-- Liquid Luster
 			i(271887),	-- Liquid Luster
-			i(271888),	-- Recipe: Liquid Luster
 			i(271889),	-- Alluring Nostrum
 			i(271890),	-- Alluring Nostrum
 			i(271991),	-- Venomous Equipment Chest
@@ -668,7 +661,6 @@ root(ROOTS.Unsorted, {
 			i(272280),	-- Exhumed Soul-Cleaver
 			i(272283),	-- Swordsman's Emanation
 			i(272358),	-- Seaside Firefly Jar
-			i(272362),	-- Venombound Ropes
 			i(273004),	-- Corrosive Reroll
 			i(273056),	-- Odious Alloy
 			i(273057),	-- Odious Alloy
@@ -749,7 +741,6 @@ root(ROOTS.Unsorted, {
 			i(274784),	-- Seaside Tiki Frondtree
 			i(274786),	-- Seaside Waterfall Basin
 			i(274788),	-- Seaside Depths Porthole
-			i(274796),	-- Envenomed Deathblade
 			i(274801),	-- Envenomed Snakefang
 			i(274803),	-- Envenomed Trollsplitter
 			i(274804),	-- Envenomed Elfcleaver
@@ -829,7 +820,9 @@ root(ROOTS.Unsorted, {
 			i(275308),	-- Plans: Amani Forgemaster's Rack
 			i(275312),	-- Formula: Furious Tiki Mask
 			i(275314),	-- Formula: Enchanted Eversong Trout
+			i(275318),	-- Schematic: Proudmoore Ship-in-a-Bottle
 			i(275320),	-- Schematic: Aetherlume Field Lamp
+			i(275322),	-- Technique: Ferocious Feline Trinket
 			i(275324),	-- Technique: Inscribed Amani Mural
 			i(275326),	-- Technique: Chiseled Amani Tablet
 			i(275328),	-- Technique: Turquoise Amani Tapestry
@@ -906,12 +899,7 @@ root(ROOTS.Unsorted, {
 			i(275572),	-- [PH] Broomstick Spice - Hallow
 			i(275573),	-- [PH] Broomstick Spice - Pink
 			i(275574),	-- [PH] Broomstick Spice - Red
-			i(275578),	-- Soulcoiler Sconce
-			i(275628),	-- Cauldron of Ula'tek
-			i(275631),	-- Corrosive Writhling
-			i(275632),	-- Volatile Venomfang
 			i(275634),	-- Artisan's Consortium Flyer
-			i(275654),	-- Caustic Venomfang
 			i(275655),	-- Venom Serpent - White
 			i(275659),	-- Hexflame Reaver
 			i(275660),	-- Preyhunter's Courser
@@ -1084,13 +1072,10 @@ root(ROOTS.Unsorted, {
 			i(277482),	-- Ouroboric Cycle
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
-			i(277803),	-- Venom-Cursed Spellcarver
-			i(277809),	-- Venom-Cursed Claymore
 			i(277821),	-- Ula'tek Snakehead Lure
 			i(277847),	-- Unbroken Trap Hinge
 			i(277848),	-- Untouched Crab Lure
 			i(277849),	-- Mushed Crab
-			i(277935),	-- Pungent Leech Leg
 			i(277937),	-- Balanced Offering
 			i(277938),	-- Virulent Offering
 			i(277939),	-- Volatile Offering
@@ -1398,20 +1383,11 @@ root(ROOTS.Unsorted, {
 			i(279207),	-- Blackened Sludgefish
 			i(279209),	-- Plainsrunner's Sun Tunic
 			i(279210),	-- Explosive Tlhapi
-			i(279217),	-- Venom-Cursed Eagle's Shroud
-			i(279220),	-- Venom-Cursed Lynx's Mane
-			i(279222),	-- Venom-Cursed Dragonhawk's Mantle
-			i(279223),	-- Venom-Cursed Bear's Greatcloak
-			i(279224),	-- Ensemble: Venom-Cursed Eagle's Raiment
-			i(279227),	-- Ensemble: Venom-Cursed Lynx's Garb
-			i(279228),	-- Ensemble: Venom-Cursed Dragonhawk's Scales
-			i(279230),	-- Ensemble: Venom-Cursed Bear's Guard
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
 			i(279287),	-- Corroded Pouch
 			i(279288),	-- Corroded Satchel
 			i(279290),	-- Fang Lover's
 			i(279345),	-- Corroded Satchel
-			i(279358),	-- Arsenal: Venom-Cursed Arms
 			i(279359),	-- Concocted Poisonous Residue
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279361),	-- Keen Hex Mask
@@ -1508,9 +1484,6 @@ root(ROOTS.Unsorted, {
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
-			i(279917),	-- Soulcoiler Skull
-			i(279919),	-- Soulcoiler Jaw
-			i(279922),	-- Altar of Corrosion
 			i(279997),	-- Insidious Venomstone
 			i(280003),	-- Excising Knife
 			i(280004),	-- Corroded Key

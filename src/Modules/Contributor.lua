@@ -793,6 +793,7 @@ MobileDB.Creature = {
 	[263327] = true,	-- Ofi the Sly
 	[265166] = true,	-- Baraat the Longshot
 	[256674] = true,	-- Ja'bonu
+	[272109] = true,	-- Hawkeye Socho
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates

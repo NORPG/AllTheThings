@@ -26413,6 +26413,7 @@ L.QUEST_NAMES = {
 	[98345] = "Siltmouth weekly reputation obtained.",
 	[98346] = "Kari'zah the Forgotten weekly reputation obtained.",
 	[98347] = "Lockjaw weekly reputation obtained.",
+	[98348] = "Hisstara weekly reputation obtained.",
 	[98350] = "Garsecg weekly reputation obtained.",
 	[98351] = "Nar'zira weekly reputation obtained.",
 	[98353] = "Big Mon weekly reputation obtained.",
