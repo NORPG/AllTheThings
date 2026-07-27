@@ -2,9 +2,9 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 	n(SEASON_VENOMOUS, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
 			ach(62497, {	-- Venomous Weapons of Conquest
 				i(270560),	-- Venomous Gladiator's Weapon Token
 			}),
