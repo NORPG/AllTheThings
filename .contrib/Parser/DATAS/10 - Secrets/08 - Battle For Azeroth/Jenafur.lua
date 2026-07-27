@@ -32,28 +32,35 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 					{ "n", 160373 },	-- Meaty Morsel
 					{ "n", 160372 },	-- Slathered Rib
 				},
+				["cost"] = {
+					{ "i", 173787, 2 },	-- Fishy Bits
+					{ "i", 173780, 2 },	-- Marbled Steak
+					{ "i", 173783, 2 },	-- Juicy Drumstick
+					{ "i", 173779, 1 },	-- Meaty Morsel
+					{ "i", 173777, 1 },	-- Slathered Rib
+				},
 				["sourceQuest"] = 58098,	-- Step 2: Empty Dish
 				["coord"] = { 46.7, 70.1, DEADWIND_PASS },	-- Return to Karazhan entrance
 				["groups"] = {
 					n(160374, {	-- Fishy Bits (2)
 						["description"] = "Two are required.\n\n|cFFFFFFFF1.|r The first Fishy Bits can be found in the hallway prior to Maiden of Virtue. Near the middle of hall on the left side, there is a doorway flanked by two lion statues. The Fishy Bits are just past the lion statues and before the left-hand bust directly after them, against the wall.\n\n|cFFFFFFFF2.|r The second Fishy Bits can be found in Moroes' room, very close to the boss's platform. It's between the bottom right corner of the platform and the upper left corner of the small right-hand table.\n",
-						["itemID"] = 173787,	-- Fishy Bits
+						["groups"] = { i(173787) },	-- Fishy Bits
 					}),
 					n(160370, {	-- Marbled Steak (2)
 						["description"] = "Two are required.\n\n|cFFFFFFFF1.|r Progress through the dungeon, killing the Opera boss, and head towards Maiden of Virtue. When you exit the Opera Hall, in the area before you turn towards Maiden, there is a wide hallway with two rugs, one red and one purple. The first Marbled Steak can be found on the right-hand edge of the purple rug.\n\n|cFFFFFFFF2.|r The second Marbled Steak is just before Maiden of Virtue in the last little room off to the left of the hallway. The Marbled Steak is in the upper-left corner of the antechamber, behind what looks like a very large, high-backed chair.\n",
-						["itemID"] = 173780,	-- Marbled Steak
+						["groups"] = { i(173780) },	-- Marbled Steak
 					}),
 					n(160371, {	-- Juicy Drumstick (2)
 						["description"] = "Two are required.\n\n|cFFFFFFFF1.|r The first Juicy Drumstick can be found close to the second Marbled Steak, in the last room before Maiden of Virtue. Head all the way into the room, and you will see the Juicy Drumstick on an ottoman in front of another high-backed chair. It's next to a tall candelabra and a portrait of a woman.\n\n|cFFFFFFFF2.|r The second Juicy Drumstick can be found in Moroes' room, in front of the boss's platform. It's closer to the small left-hand table, near the bottom edge of the big black and gold carpet.\n",
-						["itemID"] = 173783,	-- Juicy Drumstick
+						["groups"] = { i(173783) },	-- Juicy Drumstick
 					}),
 					n(160373, {	-- Meaty Morsel
 						["description"] = "Can be found about halfway down the hallway prior to Maiden of Vigilance. There is a section on the right-hand side with a rectangular table and three chairs between two bookshelves, all covered in cobwebs. The Meaty Morsel is on a tiny round table between the first bookshelf and chair.\n",
-						["itemID"] = 173779,	-- Meaty Morsel
+						["groups"] = { i(173779) },	-- Meaty Morsel
 					}),
 					n(160372, {	-- Slathered Rib
 						["description"] = "Can be found in Moroes' room, on the right side of the long table. There are a couple on the table, but the easiest one to spot is on a gold platter sitting between a large roast pig and fish.\n",
-						["itemID"] = 173777,	-- Slathered Rib
+						["groups"] = { i(173777) },	-- Slathered Rib
 					}),
 					o(9999921, {	-- Placement
 						["description"] = "After you have all the meats collected, head back to the audience area of the Opera Hall. To orient yourself in the room, you want to have your back to the stage.\n\nYou will be placing each meat relative to two very tiny piles of kibble on the left side of the room (again, while faced away from the stage). You will probably need to zoom in to see them. Each tile on the floor represents a box in a 12-by-12 grid.\n\n|cff413f43 00|r = Empty cell\n|cff4db62c 00|r = Pile of Kibble\n|cffeea016 00|r = Fishy Bits\n|cffeee116 00|r = Juicy Drumstick\n|cff16ceee 00|r = Meaty Morsel\n|cffce16ee 00|r = Marbled Steak\n|cff9e5ced 00|r = Slathered Rib\n\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00|r|cffeee116 00|r|cff413f43 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00|r|cff9e5ced 00|r|cff413f43 00|r|cffeea016 00|r|cff413f43 00 00|r\n|cff413f43 00|r|cff4db62c 00|r|cff413f43 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00|r|cffce16ee 00|r|cff413f43 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00|r|cff16ceee 00|r|cff413f43 00 00 00 00 00 00|r\n|cff413f43 00|r|cff4db62c 00|r|cff413f43 00 00|r|cffeea016 00|r|cff413f43 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00|r|cffce16ee 00|r|cff413f43 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00|r|cffeee116 00|r|cff413f43 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n\nIf you have placed all the meats properly, Jenafur will spawn as soon as you finish. You can use |cFFFFFFFF/tar Jenafur|r to find her in the room, and then all you have to do is walk over and pet her for her to be added to your collection.\n",

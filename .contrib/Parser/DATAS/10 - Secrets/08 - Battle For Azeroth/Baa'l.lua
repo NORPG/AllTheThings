@@ -8,21 +8,9 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 		["modelScale"] = 1.1,
 		["displayID"] = 80456,
 		["groups"] = {
-			q(52819, {	-- Step 1: Conspicious Note
-				["name"] = translate({
-					en = "|cFFFFFFFFStep 1:|r Conspicious Note",
-					es = "|cFFFFFFFFStep 1:|r Nota llamativa",
-					de = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
-					fr = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
-					it = "|cFFFFFFFFStep 1:|r Nota Vistosa",
-					mx = "|cFFFFFFFFStep 1:|rNota sospechosa",
-					pt = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
-					ru = "|cFFFFFFFFШаг 1:|r Примечательная записка",
-					ko = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
-					cn = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
-				}),
+			o(293849, {	-- Step 1: Conspicious Note
 				["description"] = "|cFFFFFFFFStep 1:|r Head to Nazmir. The note is high up on the side of the temple in the middle of the zone. If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\n\nThe note reads: \"Begin at the beginning\"\n",
-				["provider"] = { "o", 293849 },	-- Conspicious Note
+				["questID"] = 52819,
 				["coord"] = { 51.8, 59.0, NAZMIR },
 			}),
 			o(293837, {	-- Step 2: First Ordinary Pebble

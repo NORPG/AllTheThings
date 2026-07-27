@@ -9,7 +9,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 		["displayID"] = 102074,
 		["cost"] = { { "i", 202042, 1 } },	-- 1x Aquatic Shades (TOY!)
 		["groups"] = {
-			q(72676, {	-- Step 1: Dance, Dance 'Til You're Dead
+			hqt(72676, {	-- Step 1: Dance, Dance 'Til You're Dead
 				["name"] = "Step 1: Dance, Dance 'Til You're Dead",
 				["description"] = "Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off.",
 				["coord"] = { 19.6, 36.5, THE_WAKING_SHORES },
@@ -48,7 +48,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					}),
 				},
 			}),
-			q(72808, {	-- Step 5: One Last Fish
+			hqt(72808, {	-- Step 5: One Last Fish
 				["name"] = "Step 5: One Last Fish",
 				["description"] = "Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",
 				["sourceQuests"] = { 72676 },	-- Step 1: Dance, Dance 'Til You're Dead
@@ -67,7 +67,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				["description"] = "Head back to where you originally picked up the empty barrel, and place the Overflowing Fish Barrel on the ground.",
 				["coord"] = { 20.0, 40.0, THE_WAKING_SHORES },
 			}),
-			q(72738, {	-- Step 7: The Way to an Otto's Heart
+			hqt(72738, {	-- Step 7: The Way to an Otto's Heart
 				["name"] = "Step 7: The Way to an Otto's Heart",
 				["sourceQuests"] = { 72808 },	-- Step 5: One Last Fish
 				["provider"] = { "n", 199563 },	-- Otto
