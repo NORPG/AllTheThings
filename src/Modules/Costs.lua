@@ -732,7 +732,7 @@ do
 		return k
 	end}
 
-	local function AddGroupCosts(o, Collector, amount)
+	local function AddGroupCosts(Collector, o, amount)
 		-- app.PrintDebug("AGC",app:SearchLink(o),o.visible,amount)
 		-- if we're adding a specific amount, then we ignore the duplicate prevention
 		if not amount then
@@ -799,8 +799,8 @@ do
 		local groupType = group.__type
 		-- app.PrintDebug("AGC:Run",app:SearchLink(group),IgnoredTypes[groupType],IgnoredTypesForNested[groupType],group.filledCost)
 		-- don't include NonCollectible or VisualHeaders
-		if not IgnoredTypes[groupType] then
-			runner.Run(AddGroupCosts, group, Collector)
+		if not IgnoredTypes[groupType] and not group.window then
+			runner.Run(AddGroupCosts, Collector, group)
 		end
 		local g = group.g
 		if not g then return end
@@ -880,6 +880,10 @@ do
 	end
 	local function ScanSubCosts(Collector)
 		-- app.PrintDebug("SSC:Start",Collector,Collector.WindowGroup.text)
+		-- if cost data has been gathered, then include the Cost of the window group as well
+		if next(Collector.Data) then
+			Collector:AddGroupCosts(Collector.WindowGroup)
+		end
 		local costThing
 		local anyNewCost
 		local CurCostData = app.CloneDictionary(Collector.Data)
@@ -895,7 +899,7 @@ do
 							costType.Amounts[id] = amount
 							costThing = app.SearchForObject("currencyID", id, "key") or app.CreateCurrencyClass(id)
 							anyNewCost = true
-							AddGroupCosts(costThing, Collector, amount)
+							Collector:AddGroupCosts(costThing, amount)
 						end
 					end
 				elseif costKey == "i" then
@@ -906,7 +910,7 @@ do
 							costType.Amounts[id] = amount
 							costThing = app.SearchForObject("itemID", id, "field") or app.CreateItem(id)
 							anyNewCost = true
-							AddGroupCosts(costThing, Collector, amount)
+							Collector:AddGroupCosts(costThing, amount)
 						end
 					end
 				end
@@ -960,6 +964,7 @@ do
 		Reset = Reset,
 		CheckStatusForScan = CheckStatusForScan,
 		UpdateStatus = UpdateStatus,
+		AddGroupCosts = AddGroupCosts,
 	}
 
 	api.GetCostCollector = function(group, infoGroup)

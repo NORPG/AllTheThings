@@ -2847,6 +2847,7 @@ MobileDB.GameObject = {
 	[452948] = true,	-- Hallowfall Farm Supplies
 	[452972] = true,	-- Fallow Corn
 	[453968] = true,	-- Torch (q:82583)
+	[454010] = true,	-- Luredrop
 	[454188] = true,	-- Spoils of K'aresh [Nexus-Princess Ky'veza]
 	[454311] = true,	-- Redberry
 	[454312] = true,	-- Redberry
