@@ -222,7 +222,7 @@ namespace ATT
                 }
 
                 // Export all of the Items to the Item DB folder.
-                File.WriteAllText(Path.Combine(directory, "AllItemFiltersByID.lua"), filterBuilder.AppendLine().Append("};").ToString(), Encoding.UTF8);
+                File.WriteAllText(Path.Combine(directory, "AllItemFiltersByID.lua"), filterBuilder.AppendLine().Append("}").ToString(), Encoding.UTF8);
                 File.WriteAllText(Path.Combine(directory, "AllItemsByID.lua"), builder2.ToString(), Encoding.UTF8);
                 File.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString(), Encoding.UTF8);
                 File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString(), Encoding.UTF8);

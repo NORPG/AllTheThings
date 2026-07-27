@@ -1299,7 +1299,7 @@ namespace ATT
                 {
                     var filename = Path.Combine(categoryFolder, $"{containerPair.Key}.lua");
                     var content = containerPair.Value.ToString();
-                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end\n{content}";
+                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return end\n{content}";
                     WriteIfDifferent(filename, content);
                 });
             }
@@ -1321,7 +1321,7 @@ namespace ATT
                 {
                     StringBuilder locale = new StringBuilder(10000);
                     locale.AppendLine("--   WARNING: This file is dynamically generated   --");
-                    locale.AppendLine("local appName, _ = ...;");
+                    locale.AppendLine("local appName, _ = ...");
                     locale.Append("local keys = ");
                     AddTableNewLines = true;
                     locale.AppendLine(ExportCompressedLua(AllLocaleTypes).ToString());
@@ -1384,7 +1384,7 @@ end");
                         if (entryName != null) builder.Append("\t-- ").Append(entryName);
                     }
                 }
-                File.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("};").ToString(), Encoding.UTF8);
+                File.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("}").ToString(), Encoding.UTF8);
             }
 
             private static void ProcessDB(List<object> list)

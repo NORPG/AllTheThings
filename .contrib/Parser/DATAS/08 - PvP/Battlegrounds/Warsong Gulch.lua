@@ -42,9 +42,10 @@ ExportDB.OnTooltipDB.ForWarsongGulch = [[~function(t, tooltipInfo)
 -- #if BEFORE TBC
 		addRepInfo(tooltipInfo, reputation, "Concerted Efforts", 100, 42000);
 -- #endif
-		local repPerFlagCapture = 35;
 -- #if AFTER 6.1.0
 		local repPerFlagCapture = 100;
+-- #else
+		local repPerFlagCapture = 35;
 -- #endif
 		addRepInfo(tooltipInfo, reputation, "Flags Captured", repPerFlagCapture, 42000);
 -- #if BEFORE 6.0.2

@@ -28,7 +28,7 @@ namespace ATT
         {
             new [] { @"\n|\r", "\t" },
             new [] { @"\t[\t]+", "\t" },
-            new [] { @";[\s]*", @";" },
+            new [] { @";[\s]*", @" " },
             new [] { @",[\s]*", @"," },
             new [] { @"[\s]+=[\s]+", @"=" },
             new [] { @"[\s]+==[\s]+", @"==" },
@@ -398,12 +398,12 @@ namespace ATT
                 isPrimaryRootCategory = true;
             }
             else ExportCompressedLua(builder, category);
-            builder.AppendLine(";").AppendLine("end);");
+            builder.AppendLine().AppendLine("end)");
             builder.Insert(0, "--STRUCTURE_REPLACEMENTS" + Environment.NewLine);
             ExportLocalVariablesForLua(builder);
             builder.Insert(0, new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
-                .AppendLine("local appName, _ = ...;")
+                .AppendLine("local appName, _ = ...")
                 .Append("_.AddEventHandler(\"")
                 .Append(isPrimaryRootCategory ? "OnBuildDataCache" : "OnBuildHiddenDataCache")
                 .AppendLine("\", function(categories)"));

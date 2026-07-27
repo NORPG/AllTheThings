@@ -170,7 +170,7 @@ namespace ATT
                 if (count++ > 0) builder2.Append(',');
                 builder2.Append(table.Key);
             }
-            builder2.Append("};").AppendLine();
+            builder2.Append("}").AppendLine();
             builder.Replace("--STRUCTURE_REPLACEMENTS" + Environment.NewLine, builder2.ToString());
         }
 

@@ -1773,7 +1773,11 @@ namespace ATT
             {
                 return builder.Append(value);
             }
-            return builder.Append("\"").Append(value.Replace("\"", "\\\"")).Append("\"");
+            if (value.Contains("\""))
+            {
+                return builder.Append("[[").Append(value.Trim('[', ']')).Append("]]");
+            }
+            return builder.Append("\"").Append(value).Append("\"");
         }
 
         static StringBuilder ExportStringKeyValue(StringBuilder builder, object key, string value)
@@ -2156,7 +2160,7 @@ namespace ATT
                         {
                             // Now export it based on what we know.
                             var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
-                                .AppendLine("local headers = CustomHeaders or {};");
+                                .AppendLine("local headers = CustomHeaders or {}");
                             var subbuilder = new StringBuilder();
                             var icons = new Dictionary<long, string>();
                             var constants = new Dictionary<long, string>();
@@ -2192,7 +2196,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        subbuilder.Append("headers[").Append(key).Append("].icon = 134400;");
+                                        subbuilder.Append("headers[").Append(key).Append("].icon = 134400");
                                         ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                     }
                                     if (header.TryGetValue("text", out value))
@@ -2209,7 +2213,6 @@ namespace ATT
                                             enString = readable;
                                             subbuilder.Append("headers");
                                             ExportStringKeyFieldValue(subbuilder, key, ".text.en", enString);
-                                            subbuilder.Append(";");
                                             ExportReadableConstantComment(subbuilder, readable, constant).AppendLine(" - You MUST supply an 'en' localization!");
                                             localeData["en"] = enString;    // This will prevent it from getting written twice
                                         }
@@ -2221,7 +2224,6 @@ namespace ATT
                                                 {
                                                     subbuilder.Append("headers");
                                                     ExportStringKeyFieldValue(subbuilder, key, $".text.{locale}", enString);
-                                                    subbuilder.Append(";");
                                                     ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                                 }
                                             }
@@ -2241,7 +2243,6 @@ namespace ATT
                                             enString = readable;
                                             subbuilder.Append("headers");
                                             ExportStringKeyFieldValue(subbuilder, key, ".description.en", enString);
-                                            subbuilder.Append(";");
                                             ExportReadableConstantComment(subbuilder, readable, constant).AppendLine(" - You MUST supply an 'en' localization!");
                                             localeData["en"] = enString;    // This will prevent it from getting written twice
                                         }
@@ -2253,7 +2254,6 @@ namespace ATT
                                                 {
                                                     subbuilder.Append("headers");
                                                     ExportStringKeyFieldValue(subbuilder, key, $".description.{locale}", enString);
-                                                    subbuilder.Append(";");
                                                     ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                                 }
                                             }
@@ -2273,7 +2273,6 @@ namespace ATT
                                             enString = readable;
                                             subbuilder.Append("headers");
                                             ExportStringKeyFieldValue(subbuilder, key, ".lore.en", enString);
-                                            subbuilder.Append(";");
                                             ExportReadableConstantComment(subbuilder, readable, constant).AppendLine(" - You MUST supply an 'en' localization!");
                                             localeData["en"] = enString;    // This will prevent it from getting written twice
                                         }
@@ -2285,7 +2284,6 @@ namespace ATT
                                                 {
                                                     subbuilder.Append("headers");
                                                     ExportStringKeyFieldValue(subbuilder, key, $".lore.{locale}", enString);
-                                                    subbuilder.Append(";");
                                                     ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                                 }
                                             }
@@ -2393,7 +2391,7 @@ namespace ATT
                                 }
                                 builder.AppendLine("\t},");
                             }
-                            builder.AppendLine("})").AppendLine("do FlightPathDB[key] = value; end");
+                            builder.AppendLine("})").AppendLine("do FlightPathDB[key] = value end");
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "FlightPathDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
@@ -2491,8 +2489,8 @@ namespace ATT
                                 }
                                 builder.AppendLine("\t},");
                             }
-                            dbbuilder.AppendLine("})").AppendLine("do ObjectDB[objectID] = objectData; end");
-                            dynamicbuilder.AppendLine("})").AppendLine("do ObjectDB[objectID] = objectData; end");
+                            dbbuilder.AppendLine("})").AppendLine("do ObjectDB[objectID] = objectData end");
+                            dynamicbuilder.AppendLine("})").AppendLine("do ObjectDB[objectID] = objectData end");
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), dbbuilder.ToString(), Encoding.UTF8);
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB (Dynamic).lua"), dynamicbuilder.ToString(), Encoding.UTF8);
                         }
@@ -2503,7 +2501,7 @@ namespace ATT
                             var builder = new StringBuilder("-----------------------------------------------------\n--   P H A S E   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
                             var keys = Phases.Keys.ToList();
                             keys.Sort();
-                            builder.Append("local Phases = Phases; for phaseID,phaseData in pairs({").AppendLine();
+                            builder.Append("local Phases = Phases for phaseID,phaseData in pairs({").AppendLine();
                             foreach (var key in keys)
                             {
                                 if (Phases.TryGetValue(key, out object o) && o is IDictionary<string, object> phaseData)
@@ -2604,7 +2602,7 @@ namespace ATT
                                     builder.AppendLine("\t},");
                                 }
                             }
-                            builder.AppendLine("})").AppendLine("do Phases[phaseID] = phaseData; end");
+                            builder.AppendLine("})").AppendLine("do Phases[phaseID] = phaseData end");
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "Phases.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
@@ -2622,7 +2620,7 @@ namespace ATT
                                 {
                                     if (item.TryGetValue("mountID", out long spellID))
                                     {
-                                        builder.Append("i(").Append(itemID).Append(", ").Append(spellID).Append(");");
+                                        builder.Append("i(").Append(itemID).Append(", ").Append(spellID).Append(")");
                                         if (item != null && item.TryGetName(out string name)) builder.Append("\t-- ").Append(name);
                                         builder.AppendLine();
                                     }
@@ -2630,7 +2628,7 @@ namespace ATT
                                     {
                                         builder.Append("i(").Append(itemID);
                                         if (item.TryGetValue("spellID", out spellID)) builder.Append(", ").Append(spellID);
-                                        builder.Append(");");
+                                        builder.Append(")");
                                         if (item != null && item.TryGetName(out string name)) builder.Append("\t-- ").Append(name);
                                         builder.AppendLine();
                                     }
@@ -2643,14 +2641,14 @@ namespace ATT
 
                 // Prepare a Localization Database file.
                 StringBuilder localizationDatabase = new StringBuilder().AppendLine("---@diagnostic disable: deprecated");
-                if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) localizationDatabase.Append("if not (").Append(DATA_REQUIREMENTS).AppendLine(") then return; end");
+                if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) localizationDatabase.Append("if not (").Append(DATA_REQUIREMENTS).AppendLine(") then return end");
                 localizationDatabase
                     .AppendLine("-----------------------------------------------------------------")
                     .AppendLine("--   L O C A L I Z A T I O N   D A T A B A S E   M O D U L E   --")
                     .AppendLine("-----------------------------------------------------------------")
-                    .AppendLine("local localize = function(t, data) for k,v in pairs(data) do t[k] = v; end end")
-                    .AppendLine("local appName, _, a = ...;")
-                    .AppendLine("local L = _.L;").AppendLine();
+                    .AppendLine("local localize = function(t, data) for k,v in pairs(data) do t[k] = v end end")
+                    .AppendLine("local appName, _, a = ...")
+                    .AppendLine("local L = _.L").AppendLine();
                 Dictionary<string, StringBuilder> localizationByLocale = new Dictionary<string, StringBuilder>();
                 foreach (var language in new List<string>
                 {
@@ -2695,7 +2693,7 @@ namespace ATT
                             if (data.TryGetValue(key, out string name))
                             {
                                 builder.Append("L.").Append(key).Append(" = ");
-                                ExportStringValue(builder, name).AppendLine(";");
+                                ExportStringValue(builder, name).AppendLine();
                             }
                         }
                     }
@@ -2712,7 +2710,7 @@ namespace ATT
                                 if (data.TryGetValue(key, out string name))
                                 {
                                     localeBuilder.Append("L.").Append(key).Append(" = ");
-                                    ExportStringValue(localeBuilder, name).AppendLine(";");
+                                    ExportStringValue(localeBuilder, name).AppendLine();
                                 }
                             }
                         }
@@ -2779,7 +2777,7 @@ namespace ATT
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            localeBuilder.AppendLine("});");
+                            localeBuilder.AppendLine("})");
                         }
                     }
 
@@ -2817,8 +2815,8 @@ namespace ATT
                         var headerIDsByKey = ExportRawLua(CustomHeaderIDsByKey);
                         var dynamicHeaderIDsFileName = $"{addonRootFolder}/.contrib/Parser/lib/Functions/Dynamic Header IDs.lua";
                         headerIDsByKey
-                            .Insert(0, $"-- This file is dynamically generated by Parser! DO NOT MODIFY IT MANUALLY!{Environment.NewLine}HeaderAssignments = ").AppendLine(";")
-                            .Append("NextHeaderID = ").Append(minHeaderID - 1).Append(";");
+                            .Insert(0, $"-- This file is dynamically generated by Parser! DO NOT MODIFY IT MANUALLY!{Environment.NewLine}HeaderAssignments = ").AppendLine()
+                            .Append("NextHeaderID = ").Append(minHeaderID - 1);
                         WriteIfDifferent(dynamicHeaderIDsFileName, headerIDsByKey.ToString());
                     }
 
@@ -2928,7 +2926,7 @@ namespace ATT
                     {
                         builder.Append("\t").Append(key).Append(" = ").Append(constants[key]).AppendLine(",");
                     }
-                    builder.AppendLine("};");
+                    builder.AppendLine("}");
 
                     // Write extra header data
                     builder.AppendLine("_.HeaderData = {");
@@ -2937,7 +2935,7 @@ namespace ATT
                         AddTableNewLines = false;
                         builder.Append("\t").Append(key.Key).Append(" = ").Append(ExportCompressedLua(key.Value)).AppendLine(",");
                     }
-                    builder.AppendLine("};");
+                    builder.AppendLine("}");
 
                     // Get all of the english translations and always write them to the file.
                     if (localizationForText.TryGetValue("en", out var data))
@@ -2951,7 +2949,7 @@ namespace ATT
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("});");
+                        builder.AppendLine("})");
                     }
                     if (localizationForDescriptions.TryGetValue("en", out data))
                     {
@@ -2964,7 +2962,7 @@ namespace ATT
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("});");
+                        builder.AppendLine("})");
                     }
                     if (localizationForLore.TryGetValue("en", out data))
                     {
@@ -2977,7 +2975,7 @@ namespace ATT
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("});");
+                        builder.AppendLine("})");
                     }
 
                     // Write the icons last.
@@ -2989,7 +2987,7 @@ namespace ATT
                             ExportIconKeyValue(builder, key, icon);
                         }
                     }
-                    builder.AppendLine("});");
+                    builder.AppendLine("})");
 
                     // Write the event information!
                     if (eventIDs.Any())
@@ -3002,7 +3000,7 @@ namespace ATT
                                 ExportObjectKeyValue(builder, key, eventID).AppendLine();
                             }
                         }
-                        builder.AppendLine("});");
+                        builder.AppendLine("})");
                     }
                     if (eventRemaps.Any())
                     {
@@ -3013,7 +3011,7 @@ namespace ATT
                         {
                             ExportObjectKeyValue(builder, remappedKey, eventRemaps[remappedKey]).AppendLine();
                         }
-                        builder.AppendLine("});").AppendLine();
+                        builder.AppendLine("})").AppendLine();
                     }
                     if (timerunningSeasonIDs.Any())
                     {
@@ -3022,14 +3020,14 @@ namespace ATT
                         {
                             ExportObjectKeyValue(builder, pair.Value, pair.Key).AppendLine();
                         }
-                        builder.AppendLine("});").AppendLine();
+                        builder.AppendLine("})").AppendLine();
                     }
                     if (eventSchedules.Any())
                     {
                         builder.AppendLine("-- Programmatic Event Scheduling");
                         foreach (var pair in eventSchedules)
                         {
-                            builder.Append("_.Modules.Events.SetEventInformation(").Append(pair.Key).Append(", ").Append(pair.Value).Append(");").AppendLine();
+                            builder.Append("_.Modules.Events.SetEventInformation(").Append(pair.Key).Append(", ").Append(pair.Value).Append(")").AppendLine();
                         }
                     }
 
@@ -3047,7 +3045,7 @@ namespace ATT
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            localeBuilder.AppendLine("});");
+                            localeBuilder.AppendLine("})");
                         }
                     }
                     foreach (var localePair in localizationForDescriptions)
@@ -3063,7 +3061,7 @@ namespace ATT
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            localeBuilder.AppendLine("});");
+                            localeBuilder.AppendLine("})");
                         }
                     }
                     foreach (var localePair in localizationForLore)
@@ -3079,7 +3077,7 @@ namespace ATT
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            localeBuilder.AppendLine("});");
+                            localeBuilder.AppendLine("})");
                         }
                     }
 
@@ -3132,7 +3130,7 @@ namespace ATT
                         {
                             builder.Append("\t").Append(key).Append(" = ").Append(constants[key]).AppendLine(",");
                         }
-                        builder.AppendLine("};");
+                        builder.AppendLine("}");
                     }
 
                     // Get all of the english translations and always write them to the file.
@@ -3164,7 +3162,7 @@ namespace ATT
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            localeBuilder.AppendLine("});");
+                            localeBuilder.AppendLine("})");
                         }
                     }
 
@@ -3245,7 +3243,7 @@ namespace ATT
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            localeBuilder.AppendLine("});");
+                            localeBuilder.AppendLine("})");
                         }
                     }
 
@@ -3359,7 +3357,7 @@ namespace ATT
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("}; _.ObjectNames = ObjectNames;");
+                        builder.AppendLine("} _.ObjectNames = ObjectNames");
                     }
 
                     // Now grab the non-english localizations and conditionally write them to the file.
@@ -3383,7 +3381,7 @@ namespace ATT
                                 {
                                     ExportStringKeyValue(localeBuilder, tuple.Item1, tuple.Item2).AppendLine();
                                 }
-                                localeBuilder.AppendLine("});");
+                                localeBuilder.AppendLine("})");
                             }
                             if (tupledConsolidatedKeys.Any())
                             {
@@ -3395,7 +3393,7 @@ namespace ATT
                                         {
                                             localeBuilder.Append("for i,objectID in ipairs(").Append(tuple.Item1).Append(") do ObjectNames[objectID] = ");
                                             ExportStringValue(localeBuilder, name);
-                                            localeBuilder.AppendLine("; end");
+                                            localeBuilder.AppendLine(" end");
                                         }
                                     }
                                 }
@@ -3412,7 +3410,7 @@ namespace ATT
                             ExportIconKeyValue(builder, key, icon);
                         }
                     }
-                    builder.AppendLine("}; _.ObjectIcons = ObjectIcons;");
+                    builder.AppendLine("} _.ObjectIcons = ObjectIcons");
 
                     // Write the model information last.
                     builder.AppendLine("local ObjectModels = {");
@@ -3423,13 +3421,13 @@ namespace ATT
                             ExportObjectKeyValue(builder, key, modelID).AppendLine();
                         }
                     }
-                    builder.AppendLine("}; _.ObjectModels = ObjectModels;");
+                    builder.AppendLine("} _.ObjectModels = ObjectModels");
                     if (tupledConsolidatedKeys.Any())
                     {
                         builder.AppendLine().AppendLine("-- Consolidated Object Data");
                         foreach (var tuple in tupledConsolidatedKeys)
                         {
-                            if (tuple.Item2.Any()) builder.Append("local ").Append(tuple.Item1).Append(" = { ").Append(string.Join(",", tuple.Item2)).AppendLine(" };");
+                            if (tuple.Item2.Any()) builder.Append("local ").Append(tuple.Item1).Append(" = { ").Append(string.Join(",", tuple.Item2)).AppendLine(" }");
                         }
                         foreach (var tuple in tupledConsolidatedKeys)
                         {
@@ -3440,16 +3438,16 @@ namespace ATT
                                 if (enObjectData.TryGetValue(firstObjectID, out string name))
                                 {
                                     builder.Append("\tObjectNames[objectID] = ");
-                                    ExportStringValue(builder, name).AppendLine(";");
+                                    ExportStringValue(builder, name).AppendLine();
                                 }
                                 if (icons.TryGetValue(firstObjectID, out string icon) && IsIconValid(icon))
                                 {
                                     builder.Append("\tObjectIcons[objectID] = ");
-                                    ExportIconValue(builder, icon).AppendLine(";");
+                                    ExportIconValue(builder, icon).AppendLine();
                                 }
                                 if (modelIDs.TryGetValue(firstObjectID, out long modelID))
                                 {
-                                    builder.Append("\tObjectModels[objectID] = ").Append(modelID).AppendLine(";");
+                                    builder.Append("\tObjectModels[objectID] = ").Append(modelID).AppendLine();
                                 }
                                 builder.AppendLine("end");
                             }
@@ -3510,7 +3508,7 @@ namespace ATT
                     {
                         builder.Append("\t").Append(key).Append(" = ").Append(constants[key]).AppendLine(",");
                     }
-                    builder.AppendLine("};");
+                    builder.AppendLine("}");
 
                     // Get all of the english translations and always write them to the file.
                     builder.AppendLine("local phases = {");
@@ -3568,7 +3566,7 @@ namespace ATT
                             builder.AppendLine(",").AppendLine("\t},");
                         }
                     }
-                    builder.AppendLine("};\nL.PHASES = phases;");
+                    builder.AppendLine("} L.PHASES = phases");
 
                     // Now grab the non-english localizations and conditionally write them to the file.
                     foreach (var localePair in localizationForText)
@@ -3714,7 +3712,7 @@ namespace ATT
                                 builder.AppendLine(",").AppendLine("\t},");
                             }
                         }
-                        builder.AppendLine("};\nL.ACHIEVEMENT_DATA = achievements;");
+                        builder.AppendLine("} L.ACHIEVEMENT_DATA = achievements");
 
                         // Now grab the non-english localizations and conditionally write them to the file.
                         foreach (var localePair in localizationForText)
@@ -3844,7 +3842,7 @@ namespace ATT
                                 builder.AppendLine(",").AppendLine("\t},");
                             }
                         }
-                        builder.AppendLine("};\nL.ACHIEVEMENT_CATEGORY_DATA = achievementCategories;");
+                        builder.AppendLine("} L.ACHIEVEMENT_CATEGORY_DATA = achievementCategories");
 
                         // Now grab the non-english localizations and conditionally write them to the file.
                         foreach (var localePair in localizationForText)
@@ -3957,7 +3955,7 @@ namespace ATT
                                 builder.AppendLine(",").AppendLine("\t},");
                             }
                         }
-                        builder.AppendLine("};\nL.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;");
+                        builder.AppendLine("} L.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias");
 
                         // Write out the World Map Overlay explorationIDs that are referenced.
                         if (referencedWorldMapOverlays.Count > 0)
@@ -3977,7 +3975,7 @@ namespace ATT
                                     builder.AppendLine(" },");
                                 }
                             }
-                            builder.AppendLine("};\nL.WORLD_MAP_OVERLAY_DATA = worldMapOverlayData;");
+                            builder.AppendLine("} L.WORLD_MAP_OVERLAY_DATA = worldMapOverlayData");
                         }
 
                         // Now grab the non-english localizations and conditionally write them to the file.
@@ -4044,7 +4042,7 @@ namespace ATT
                 var localeKeys = localizationByLocale.Keys.ToList();
                 SortSupportedLocales(localeKeys);
                 localizationDatabase.AppendLine("-- Supported Locales")
-                    .AppendLine("local simplifiedLocale = GetLocale():sub(1,2);");
+                    .AppendLine("local simplifiedLocale = GetLocale():sub(1,2)");
                 bool containsES = localizationByLocale.TryGetValue("es", out StringBuilder esBuilder) && esBuilder.Length > 0;
                 bool containsMX = localizationByLocale.TryGetValue("mx", out StringBuilder mxBuilder) && mxBuilder.Length > 0;
                 localeKeys.Remove("es"); localeKeys.Remove("mx");
@@ -4098,7 +4096,7 @@ setmetatable(_.FilterConstants, {
         rawset(t, key, -9999999999);
         return -9999999999;
     end
-});
+})
 setmetatable(_.HeaderConstants, {
     __index = function(t, key)
 	    if key == ""ToDebugString"" then return end
@@ -4106,7 +4104,7 @@ setmetatable(_.HeaderConstants, {
         rawset(t, key, -9999999999);
         return -9999999999;
     end
-});");
+})");
 
                 // Check to make sure the content is different since Diff tools are dumb as hell.
                 var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}LocalizationDB.lua");
