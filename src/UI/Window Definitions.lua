@@ -2611,32 +2611,6 @@ local function BuildWindow(suffix)
 		window:DefaultRedraw();
 	end
 
-	-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
-	-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
-	local delays = {};
-	window.DelayedCall = function(self, method, delay, force)
-		delays[method] = delay or 60;
-		window:StartATTCoroutine("DelayedCall::" .. method, function()
-			while delays[method] > 0 or InCombatLockdown() do
-				delays[method] = delays[method] - 1;
-				coroutine.yield();
-			end
-			window:StartATTCoroutine("DelayedCall::" .. method .. "PT2", function()
-				coroutine.yield();
-				window[method](window, force);
-			end);
-		end);
-	end
-	function window:DelayedRebuild()
-		self:DelayedCall("Rebuild", 0);
-	end
-	function window:DelayedRefresh()
-		self:DelayedCall("Refresh", 0);
-	end
-	function window:DelayedUpdate(force)
-		self:DelayedCall("Update", 10, force);
-	end
-
 	-- The Close Button.
 	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
 	closeButton:SetScript("OnClick", OnCloseButtonPressed);
@@ -2687,6 +2661,31 @@ local function BuildWindow(suffix)
 	container:Show();
 
 	if not definition.IgnoreQuestUpdates and app.IsClassic then
+		-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
+		-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
+		local delays = {};
+		window.DelayedCall = function(self, method, delay, force)
+			delays[method] = delay or 60;
+			window:StartATTCoroutine("DelayedCall::" .. method, function()
+				while delays[method] > 0 or InCombatLockdown() do
+					delays[method] = delays[method] - 1;
+					coroutine.yield();
+				end
+				window:StartATTCoroutine("DelayedCall::" .. method .. "PT2", function()
+					coroutine.yield();
+					window[method](window, force);
+				end);
+			end);
+		end
+		function window:DelayedRebuild()
+			self:DelayedCall("Rebuild", 0);
+		end
+		function window:DelayedRefresh()
+			self:DelayedCall("Refresh", 0);
+		end
+		function window:DelayedUpdate(force)
+			self:DelayedCall("Update", 10, force);
+		end
 		local delayedRefresh = function()
 			window:DelayedRefresh();
 		end;
@@ -2696,16 +2695,11 @@ local function BuildWindow(suffix)
 		window:RegisterEvent("QUEST_WATCH_UPDATE");
 		window:RegisterEvent("QUEST_ITEM_UPDATE");
 		window:RegisterEvent("BAG_UPDATE_DELAYED");
-		local delayedUpdateWithTrigger = function()
-			window:Redraw();
-			window:DelayedUpdate(true);
-		end;
-		handlers.QUEST_TURNED_IN = delayedUpdateWithTrigger;
-		handlers.QUEST_ACCEPTED = delayedUpdateWithTrigger;
-		handlers.QUEST_REMOVED = delayedUpdateWithTrigger;
-		window:RegisterEvent("QUEST_ACCEPTED");
-		window:RegisterEvent("QUEST_REMOVED");
-		window:RegisterEvent("QUEST_TURNED_IN");
+
+		-- this is horrid, essentially ANY interaction with the quest log (clicking a quest, etc.) causes a
+		-- spam of coroutine creation across many ATT windows
+		-- in order to simply perform updates against the windows to ensure we update Objective groups for active Quests
+		-- since QUEST_LOG_UPDATE does not specify any payload
 		local delayedUpdate = function()
 			window:DelayedUpdate();
 		end;
