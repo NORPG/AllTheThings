@@ -104,6 +104,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					un(REMOVED_FROM_GAME, i(127115)),	-- Tome of Chaos
 				},
 			}),
+			d(DIFFICULTY.RAID.MULTI.ALL, {	-- Queue NPC
+				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+			}),
 			d(DIFFICULTY.RAID.MULTI.ALL, {
 				cr(90284, e(1425, {	-- Iron Reaver
 				})),

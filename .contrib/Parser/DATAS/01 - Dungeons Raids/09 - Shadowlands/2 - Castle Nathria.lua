@@ -259,6 +259,12 @@ InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, Instanc
 InstanceHelper.BossObjects = {
 	[ARTIFICER_XYMOX] = { 357751 },	-- Spoils of Sin
 }
+-- #if AFTER 10.1.5
+InstanceHelper.LFRQueueNPC = {	-- Queue NPC
+	["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
+	["coord"] = { 41.3, 71.0, ORIBOS },
+}
+-- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1190, {	-- Castle Nathria
@@ -727,12 +733,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183199),	-- Withering Ground
 				}),
 			}),
-			-- #if AFTER 10.1.5
-			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
-				["coord"] = { 41.3, 71.0, ORIBOS },
-			}),
-			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				ZoneDrops(),
 				n(LEECHING_VAULTS_HEADER, {

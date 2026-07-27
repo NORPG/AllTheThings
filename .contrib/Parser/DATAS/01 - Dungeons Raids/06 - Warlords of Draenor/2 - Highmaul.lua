@@ -149,6 +149,10 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.ZoneDrops
 
+InstanceHelper.LFRQueueNPC = {
+	["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+}
+
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(477, {	-- Highmaul
 		["mapID"] = 612,
@@ -206,9 +210,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(OGRON),
 				BossOnly(KORAGH),
 				BossOnly(MARGOK),
-			}),
-			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				header(HEADERS.LFGDungeon, 849, {	-- The Walled City

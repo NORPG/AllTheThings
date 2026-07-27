@@ -407,6 +407,9 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
+InstanceHelper.LFRQueueNPC = {
+	["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+}
 
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(457, {	-- Blackrock Foundry
@@ -483,9 +486,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(BLACKHAND, {	-- Blackhand
 					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 				}),
-			}),
-			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
 			-- LFR has unique items for whatever reason
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({

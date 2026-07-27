@@ -45,6 +45,17 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot)
 local Boss, BossOnly, Difficulty, CommonBossDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
 
+InstanceHelper.LFRQueueNPC = {
+	["crs"] = {
+		177193,	-- Kiku
+		177208,	-- Eppu
+	},
+	["coords"] = {
+		{ 74.0, 13.4, BORALUS },	-- Kiku
+		{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+	},
+}
+
 root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
 	inst(1177, {	-- Crucible of Storms
 		["coord"] = { 83.8, 47.0, STORMSONG_VALLEY },
@@ -78,16 +89,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(UUNAT, {
 					i(167864),	-- Trident of Deep Ocean
 				}),
-			}),
-			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["crs"] = {
-					177193,	-- Kiku
-					177208,	-- Eppu
-				},
-				["coords"] = {
-					{ 74.0, 13.4, BORALUS },	-- Kiku
-					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
-				},
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				header(HEADERS.LFGDungeon, 1951, {	-- Crucible of Storms

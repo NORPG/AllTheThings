@@ -166,6 +166,11 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.ZoneDrops
 
+InstanceHelper.LFRQueueNPC = {
+	["cr"] = 111246,	-- Archmage Timear
+	["coord"] = { 63.7, 55.0, LEGION_DALARAN },
+}
+
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(768, {	-- The Emerald Nightmare
 		["coord"] = { 56.3, 36.9, VALSHARAH },
@@ -272,10 +277,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
 					i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
 				}),
-			}),
-			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["cr"] = 111246,	-- Archmage Timear
-				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				ZoneDrops({}),

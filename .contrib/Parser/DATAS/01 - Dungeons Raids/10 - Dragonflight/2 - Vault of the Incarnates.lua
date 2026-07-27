@@ -162,6 +162,12 @@ InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, Instanc
 InstanceHelper.BossObjects = {
 	[RASZAGETH] = { 378046 },	-- Stormforged Treasure Trove
 }
+-- #if AFTER 12.0.5
+InstanceHelper.LFRQueueNPC = {	-- Queue NPC
+	["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
+	["coord"] = { 58.5, 35.4, VALDRAKKEN },
+}
+-- #endif
 
 ------ Difficulty To BonusID for those Tiers... ------
 -- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
@@ -625,12 +631,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (MM!)
 				}),
 			}),
-			-- #if AFTER 12.0.5
-			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
-				["coord"] = { 58.5, 35.4, VALDRAKKEN },
-			}),
-			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
 				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark

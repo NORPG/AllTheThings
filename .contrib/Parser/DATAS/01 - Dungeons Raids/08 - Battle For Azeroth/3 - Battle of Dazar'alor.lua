@@ -66,6 +66,16 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
 			}),
+			d(DIFFICULTY.RAID.MULTI.ALL, {	-- Queue NPC
+				["crs"] = {
+					177193,	-- Kiku
+					177208,	-- Eppu
+				},
+				["coords"] = {
+					{ 74.0, 13.4, BORALUS },	-- Kiku
+					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+				},
+			}),
 			d(DIFFICULTY.RAID.MULTI.ALL, {
 				-- e(2344, {	-- Champion of the Light	-- 2333 Horde
 				-- 	["crs"] = {

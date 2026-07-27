@@ -283,6 +283,13 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
+-- #if AFTER 12.0.5
+InstanceHelper.LFRQueueNPC = {	-- Queue NPC
+	["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
+	["coord"] = { 58.5, 35.4, VALDRAKKEN },
+}
+-- #endif
+
 local TIMELINE_LFR = { ADDED_10_1_0, REMOVED_11_0_2, ADDED_12_0_5 }
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
@@ -773,12 +780,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(206955),	-- Highland Drake: Embodiment of the Hellforged (MM!) [LFR, Normal, Heroic]
 				}),
 			}),
-			-- #if AFTER 12.0.5
-			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
-				["coord"] = { 58.5, 35.4, VALDRAKKEN },
-			}),
-			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment

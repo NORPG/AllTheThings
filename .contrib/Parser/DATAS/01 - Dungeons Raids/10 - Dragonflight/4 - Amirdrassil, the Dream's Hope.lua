@@ -272,6 +272,12 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
+-- #if AFTER 12.0.5
+InstanceHelper.LFRQueueNPC = {	-- Queue NPC
+	["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
+	["coord"] = { 58.5, 35.4, VALDRAKKEN },
+}
+-- #endif
 InstanceHelper.UpgradeMapping = {
 	-- Disabled in 10.2.7
 	-- #IF BEFORE 10.2.7
@@ -1534,12 +1540,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					}),
 				}),
 			}),
-			-- #if AFTER 12.0.5
-			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
-				["coord"] = { 58.5, 35.4, VALDRAKKEN },
-			}),
-			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades(bubbleDown({ ["timeline"] = TIMELINE_LFR }, {
 				ZoneDrops({
 				}),

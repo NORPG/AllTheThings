@@ -146,9 +146,17 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	}
 	local function Difficulty(difficultyID, t)
 		local diff = d(difficultyID, t)
+		diff = togroups(diff)
 		-- d() can sometimes change the applied difficultyID, so just track the exact one passed in since
 		-- it's likely the same one re-used in the file
 		CurrentDifficultyID = difficultyID
+		if helper.LFRQueueNPC and (difficultyID == DIFFICULTY.RAID.LFR or difficultyID == DIFFICULTY.RAID.MULTI.ALL or difficultyID == DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC) then
+			-- assign the crs/coords to the difficulty group
+			diff.cr = clone(helper.LFRQueueNPC.cr)
+			diff.crs = clone(helper.LFRQueueNPC.crs)
+			diff.coord = clone(helper.LFRQueueNPC.coord)
+			diff.coords = clone(helper.LFRQueueNPC.coords)
+		end
 		return setmetatable(diff, helperMeta)
 	end
 
