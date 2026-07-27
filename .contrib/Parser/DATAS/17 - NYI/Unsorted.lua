@@ -998,7 +998,6 @@ root(ROOTS.Unsorted, {
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
-			i(279997),	-- Insidious Venomstone
 			i(280003),	-- Excising Knife
 			i(280004),	-- Corroded Key
 			i(280006),	-- Spirit Loupe

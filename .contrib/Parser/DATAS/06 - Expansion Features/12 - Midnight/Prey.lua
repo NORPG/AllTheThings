@@ -53,16 +53,36 @@ local TrapNPCs = {	-- probably a ton of these, it seems unique per target & diff
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PREY, {
 		n(ACHIEVEMENTS, {
-			ach(63164, { ["timeline"] = { ADDED_12_0_7 } }),	-- Big Prey Hunter (Season 1)
 			ach(62403),	-- 'Tis But A Scratch
+			ach(63164, {	-- Big Prey Hunter (Season 1)
+				["timeline"] = { ADDED_12_0_7 },
+			}),
+			ach(63611, {	-- Big Prey Hunter (Season 2)
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			ach(63452, {	-- Fangs for the Memories
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			ach(62383),	-- Gotta Hunt Them All
 			ach(62142),	-- I Didn't Hear No Bell
 			ach(62136),	-- I'm Good At What I Do
 			ach(62137),	-- I'm Not Trapped In Here With You
+			ach(63644, {	-- Kill Me Now
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			ach(62140),	-- Kitchen Nightmare
+			ach(63457, {	-- Let Sleeping Skulls Lie
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			ach(62141),	-- Look, I'm Just Trying To Fish Here
 			ach(62139),	-- Midnight Hunter
 			ach(62135),	-- Now It's A Party
+			ach(63453, {	-- One, Two, Ral'kala's Coming for You (1/50)
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			ach(63454, {	-- Nine, Ten, Never Sleep Again (50/50)
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			ach(62154, {	-- Prey: A Different Kind of Void (Hard)
 				i(265798),	-- Preyseeker's Ren'dorei Bust (DECOR!)
 			}),
@@ -104,6 +124,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			ach(62181, {	-- Prey: Chasing Death (Nightmare)
 				i(265690),	-- Preyseeker's Knight-Errant Effigy (DECOR!)
+			}),
+			ach(63415, {	-- Prey: Coiled Nightmares
+				["timeline"] = { ADDED_12_1_0 },
 			}),
 			ach(62162, {	-- Prey: Dominating the Void (Hard)
 				i(265704),	-- Preyseeker's Executor Bust (DECOR!)
@@ -167,9 +190,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			ach(62351, {	-- Preying For Midnight
 				title(755),	-- Preyseeker <Name>
 			}),
+			ach(63642, {	-- Sashay Away
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			ach(63451, {	-- Scales for Days
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			ach(63416, {	-- That's a Wrap
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			ach(62134),	-- The Deadliest of Prey
 			ach(62143, {["crs"]=TrapNPCs}),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me
+			ach(63643, {	-- You Guys, Again?
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 		}),
 		n(EVENT_COMPLETION, {symselector=SymSelector.MIDNIGHT_PREY_EVENT_COMPLETION}),
 		n(EVENT_COMPLETION, {

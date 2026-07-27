@@ -885,6 +885,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 		}),
+		ach(63400, {	-- Tricks and Treats of Midnight
+			["timeline"] = { ADDED_12_1_0 },
+		}),
 		ach(5836, {	-- Tricks and Treats of Northrend (A)
 			["timeline"] = { ADDED_4_2_0 },
 			["races"] = ALLIANCE_ONLY,

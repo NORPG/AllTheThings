@@ -4226,6 +4226,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(62914),	-- Champion Mistcrests earned
 			ach(62915),	-- Hero Mistcrests earned
 			ach(62916),	-- Myth Mistcrests earned
+			-- PvP
+			ach(62566),	-- Vicious Saddle (44)
+			ach(62567),	-- Vicious Saddle (44)
 			-- Raids
 			ach(63537),	-- Entombed Sentinels (Raid Finder The Venomous Abyss)
 			ach(63538),	-- Entombed Sentinels (Normal The Venomous Abyss)

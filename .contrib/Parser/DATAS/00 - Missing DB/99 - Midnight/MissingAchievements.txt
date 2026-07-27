@@ -21,35 +21,3 @@ ach(62482),	-- Humanoid Battler of Cataclysm
 ach(62483),	-- Magic Battler of Cataclysm
 ach(62487),	-- Mechanical Battler of Cataclysm
 ach(62488),	-- Undead Battler of Cataclysm
-ach(62566),	-- Vicious Saddle (44)
-ach(62567),	-- Vicious Saddle (44)
-ach(63250),	-- Is Venom Stasis A Joke To You?
-ach(63253),	-- A Round on the House in Midnight
-ach(63254),	-- Glory of the Venomous Abyss Raider
-ach(63391),	-- Jumping Through Hoops
-ach(63397),	-- Kept You Waiting Huh?
-ach(63400),	-- Tricks and Treats of Midnight
-ach(63415),	-- Prey: Coiled Nightmares
-ach(63416),	-- That's a Wrap
-ach(63418),	-- Well, Well, Little Sky
-ach(63434),	-- Buddy System VII: Valeera
-ach(63435),	-- Buddy System VIII: Valeera
-ach(63451),	-- Scales for Days
-ach(63452),	-- Fangs for the Memories
-ach(63453),	-- One, Two, Ral'kala's Coming for You
-ach(63454),	-- Nine, Ten, Never Sleep Again
-ach(63457),	-- Let Sleeping Skulls Lie
-ach(63472),	-- Fang Fatale
-ach(63473),	-- Sssensational!
-ach(63611),	-- Big Prey Hunter (Season 2)
-ach(63621),	-- Keystone Victor: Altar of Fangs
-ach(63622),	-- Keystone Victor: Den of Nalorakk
-ach(63623),	-- Keystone Victor: Murder Row
-ach(63624),	-- Keystone Victor: The Blinding Vale
-ach(63625),	-- Keystone Victor: Voidscar Arena
-ach(63626),	-- Keystone Victor: Kings' Rest
-ach(63627),	-- Keystone Victor: Ruby Life Pools
-ach(63628),	-- Keystone Victor: Temple of Sethraliss
-ach(63642),	-- Sashay Away
-ach(63643),	-- You Guys, Again?
-ach(63644),	-- Kill Me Now

@@ -66,6 +66,12 @@ local mapped = function(t)
 end
 root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		ach(63434, {	-- Buddy System VII: Valeera
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		ach(63435, {	-- Buddy System VIII: Valeera
+			["timeline"] = { ADDED_12_1_0 },
+		}),
 		ach(61722),	-- Curio Enthusiast: Midnight
 		ach(61723),	-- Curio Fanatic: Midnight
 		ach(61741),	-- Delve Loremaster: Midnight

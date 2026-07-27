@@ -26,7 +26,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		achraw(61490, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }, }, {	-- Midnight Season 1: Champion of the Dawn
 			crit(108731),	-- Attained 1600+ Rated PVP rating
 			crit(109029),	-- Attained 2000+ Mythic Plus rating
-			crit(109881),	-- Defeated Dimensius on Heroic or Mythic difficulty
+			crit(109881),	-- Defeated Midnight Falls in March on Quel'Danas on Heroic or Mythic difficulty
 			i(260173),	-- Crystallized Dawnlight Manaflux
 		})),
 		ach(61858, {	-- Light of the Party (automated)
@@ -402,6 +402,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		}),
 		ach(62872, {	-- Midnight Season 2: Serpent Scion
 			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		}),
+		ach(63473, {	-- Sssensational!
+			i(279997),	-- Insidious Venomstone (CI!)
 		}),
 	}),
 })));

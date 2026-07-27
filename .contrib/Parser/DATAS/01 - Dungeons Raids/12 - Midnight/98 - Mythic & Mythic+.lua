@@ -178,6 +178,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(62443),	-- Keystone Hero: Temple of Sethraliss
 			ach(62437),	-- Keystone Hero: The Blinding Vale
 			ach(62438),	-- Keystone Hero: Voidscar Arena
+			ach(63621),	-- Keystone Victor: Altar of Fangs
+			ach(63622),	-- Keystone Victor: Den of Nalorakk
+			ach(63626),	-- Keystone Victor: Kings' Rest
+			ach(63623),	-- Keystone Victor: Murder Row
+			ach(63627),	-- Keystone Victor: Ruby Life Pools (Midnight Season 2)
+			ach(63628),	-- Keystone Victor: Temple of Sethraliss
+			ach(63624),	-- Keystone Victor: The Blinding Vale
+			ach(63625),	-- Keystone Victor: Voidscar Arena
 			ach(62445),	-- Midnight Keystone Explorer: Season 2
 			ach(62446),	-- Midnight Keystone Conqueror: Season 2
 			ach(62447),	-- Midnight Keystone Master: Season 2

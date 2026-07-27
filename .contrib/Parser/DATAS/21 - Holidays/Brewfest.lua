@@ -330,6 +330,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			ach(41212, {	-- A Round on the House in Khaz Algar (automated)
 				["timeline"] = { ADDED_11_2_0 },
 			}),
+			ach(63253, {	-- A Round on the House in Midnight
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			ach(1684, {	-- Brewmaster (A)
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",
@@ -646,7 +649,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				n(QUESTS, sharedData({
 					["isYearly"] = true,
-				},{
+				}, {
 					q(90870, {	-- Gathering the Grub (A)
 						["qg"] = 242172,	-- Gritta Brewstone
 						["coord"] = { 56.0, 37.4, DUN_MOROGH },
@@ -1241,6 +1244,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["groups"] = BREWFEST_TOKEN,
 					}),
 				}),
+				--header(HEADERS.Achievement, 63253, {	-- A Round on the House in Midnight
+				--}),
 				q(29397, {	-- A New Supplier of Souvenirs (A)
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					["qg"] = 24468,	-- Pol Amberstill
@@ -2399,7 +2404,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #if NOT ANYCLASSIC
 			["f"] = COSMETIC,	-- These Steins turn into 'Miscellanous' filter, which doesn't allow SourceIDs to be attached in Retail
 			-- #endif
-		},{
+		}, {
 			fillstein(i(33016, {	-- Blue Brewfest Stein
 				["lore"] = "This stein was the reward from the 2008 Brewfest.",
 				["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
