@@ -6,12 +6,11 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDownSelf({ ["timeline"] =
 	["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 	["lvl"] = 110,
 	["groups"] = {
-		o(9999946, {	-- Summon Baa'l
+		hqt(52829, name(HEADERS.NPC, 141941, {	-- Summon Baa'l
 			["displayID"] = 80456,	-- Baa'l
-			["questID"] = 52829,
 			["sourceQuests"] = { 52828 },
-			["description"] = "Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!",
-		}),
+			["description"] = "Summon Baa'l from Pet Journal.\n\nSouls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!",
+		})),
 		o(294096, {	-- Lit Orb 	-- Summoned Baal' at this location and 52829 triggered, possibly his emote text  "Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!"
 			["model"] = 1046021,
 			["questID"] = 52830,	-- Orb click

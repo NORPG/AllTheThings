@@ -308670,16 +308670,6 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "放置",
 		},
 	},
-	[9999946] = {
-		readable = "Summon Baa'l",
-		icon = 631719,
-		text = {
-			en = "Summon Baa'l",
-			fr = "Invoquer Baa'l",
-			ru = "Призовите Бее'ла",
-			cn = "召唤巴尔",
-		},
-	},
 	[9999972] = {
 		readable = "Treasure Chest",
 		text = {
