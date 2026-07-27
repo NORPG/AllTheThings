@@ -127,6 +127,11 @@ local ConversionMethods = setmetatable({
 		end
 		return IsRetrievingConversionMethod(GetSpellName(app.SkillDB.SkillToSpell[skillID] or 0), reference)
 	end,
+	difficultyID = function(difficultyID, reference)
+		if difficultyID and difficultyID > 0 then
+			return difficultyID
+		end
+	end,
 }, {
 	__index = function(t, key)
 		return DefaultConversionMethod;
