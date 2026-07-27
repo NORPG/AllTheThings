@@ -880,3 +880,51 @@ end
 
 
 end
+
+
+do -- Appearances which don't collect automatically
+local contains
+	= app.contains
+local C_TransmogCollection_GetSourceInfo
+	= C_TransmogCollection.GetSourceInfo;
+local C_TransmogCollection_GetAllAppearanceSources
+	= C_TransmogCollection.GetAllAppearanceSources
+
+	local NonSharedSourceIDs = {}
+	local function CheckSourceID(sourceID)
+		local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID);
+		if not sourceInfo then return end
+		-- app.PrintDebug("ASI",app:SearchLink(group))
+		-- app.PrintGroup(group)
+		local o = app.SearchForObject("sourceID", sourceID)
+		if not o or o.u == 1 or o.artifactID or o._missing then return end
+
+		local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
+		if #allVisualSources < 1 or not contains(allVisualSources, sourceID) then
+			-- Items with SourceInfo which don't register as having any visual data or don't include themselves as a shared appearance...
+			-- This typically happens on Items which can have a collectible SourceID, but not usable for Transmog
+			-- don't show the message on Sources which are explicitly non-collectible
+			NonSharedSourceIDs[#NonSharedSourceIDs + 1] = sourceID
+			app.print("Added Non-Shared SourceID",sourceID)
+		end
+	end
+
+	function ATTcheckunsharedsources(min,max)
+		local Runner = app.CreateRunner("ATTcheckunsharedsources")
+		Runner.SetPerFrameDefault(100)
+		min = math.max(1,min or 1)
+		max = math.min(330000,max or 330000)
+
+		Runner.Run(app.print, "Starting SourceID Scan for",min,"to",max,"...")
+
+		for i=min,max do
+			Runner.Run(CheckSourceID, i)
+		end
+
+		Runner.Run(app.print, "Completed SourceID Scan for",min,"to",max)
+
+		AllTheThingsHarvestItems.UnsharedSourceIDs = NonSharedSourceIDs
+	end
+
+
+end
