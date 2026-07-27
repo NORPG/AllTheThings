@@ -2169,8 +2169,8 @@ namespace ATT
             data.TryGetValue("type", out string type);
             // Convert any 'n' providers into 'qgs' for data simplicity, if not an item listed first
             if (type != "hqt" && data.TryGetValue(out Providers providers)
-                // if not a raw NPC
-                && !data.ContainsAnyKey("npcID")
+                // if not a raw NPC/Header
+                && !data.ContainsAnyKey("npcID","headerID")
                 // if not an item listed first
                 && providers.FirstItemProvider == 0
                 && providers.GetProviderType("n", true) != null)
