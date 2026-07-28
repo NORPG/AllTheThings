@@ -1265,7 +1265,6 @@ function app:GetDatabaseRoot()
 	app.CloneDictionary(app.BaseClass.__class, DefaultRootKeys)
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
-	local g = {};
 	local rootData = setmetatable({
 		key = "ROOT",
 		text = L.TITLE,
@@ -1275,7 +1274,7 @@ function app:GetDatabaseRoot()
 		font = "GameFontNormalLarge",
 		SortType = "Global",
 		expanded = true,
-		g = g,
+		g = {},
 	}, {
 		__index = function(t, key)
 			local defaultKeyFunc = DefaultRootKeys[key]
@@ -1306,7 +1305,7 @@ function app:GetDatabaseRoot()
 	for key,category in pairs(AllCategories) do
 		--print("Found Category:", key);
 		category.RootCategory = key;
-		tinsert(g, category);
+		NestObject(rootData, category)
 	end
 	for key,category in pairs(AllHiddenCategories) do
 		--print("Found Hidden Category:", key);
@@ -1321,6 +1320,7 @@ function app:GetDatabaseRoot()
 	-- app.PrintMemoryUsage()
 
 	if app.IsRetail then
+		app.AddEventHandler("OnDataCached", function(categories, rootData)
 		-- CRIEVE NOTE: This needs to be versioned at the very least before it can be enabled in classic land
 		-- Create Dynamic Groups Button
 		local dynamicHeader = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
@@ -1527,13 +1527,13 @@ function app:GetDatabaseRoot()
 
 			},
 		});
-		tinsert(g, dynamicHeader);
+		NestObject(rootData, dynamicHeader)
 		dynamicHeader.parent = rootData;
 		app.AssignChildren(dynamicHeader);
+		end)
 	end
 
 	-- app.PrintMemoryUsage("Finished loading data cache")
-	-- app.PrintMemoryUsage()
 	app.GetDatabaseRoot = function()
 		-- app.PrintDebug("Cached data cache")
 		return rootData;
