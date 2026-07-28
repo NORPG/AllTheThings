@@ -129,6 +129,7 @@ local RunnerEvents = {
 	OnRefreshCollections = true,
 	OnRecalculate = true,
 	OnUpdateWindows = true,
+	["Events.ProcessRemoveHandlers"] = true,
 }
 -- Represents Events which must always be run synchronously in the same frame as when they are triggered. These should be user-based triggers
 -- typically where their execution must be handled ASAP, even if other Events are running through the Runner
