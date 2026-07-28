@@ -264,114 +264,113 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					}),
 					n(RARES, {
-						["symselector"] = SymSelector.MID_SHOWDOWN_VAL_RARES,
 						["groups"] = sharedData({ ["isRepeatable"] = true }, {
 							n(262421, {	-- Atomus <Portal Master>
 								["coord"] = { 38.2, 79.4, VAL },
 								["questID"] = 95940,
-								["groups"] = {
-									i(274831),	-- Portal Shaper's Circlet
-									i(274839),	-- Cold-World Cover
-									i(274847),	-- Atomus's Headcover
-									i(274855),	-- Portal-Keeper's Helm
-									i(274868),	-- Portal Master's Shortblade
-								},
+								["sym"] = {{"select","itemID",
+									274831,	-- Portal Shaper's Circlet
+									274839,	-- Cold-World Cover
+									274847,	-- Atomus's Headcover
+									274855,	-- Portal-Keeper's Helm
+									274868,	-- Portal Master's Shortblade
+								}},
 							}),
 							n(261716, {	-- Glacial Broodmother <Frost-Hive Alpha>
 								["coord"] = { 67.2, 42.4, VAL },
 								["questID"] = 95559,
-								["groups"] = {
-									i(274833),	-- Icy Spidersilk Mantle
-									i(274841),	-- Frigid Cavedweller's Shoulderpads
-									i(274849),	-- Frostscale Spider's Monnion
-									i(274857),	-- Chitonous Broodmother's Spaulders
-									i(274861),	-- Frosty Broodmother's Fang
-								},
+								["sym"] = {{"select","itemID",
+									274833, 	-- Icy Spidersilk Mantle
+									274841, 	-- Frigid Cavedweller's Shoulderpads
+									274849, 	-- Frostscale Spider's Monnion
+									274857, 	-- Chitonous Broodmother's Spaulders
+									274861, 	-- Frosty Broodmother's Fang
+								}},
 							}),
 							n(264866, {	-- Krilkan
 								["coord"] = { 44.6, 52.8, VAL },
 								["questID"] = 96372,
-								["groups"] = {
-									i(274835),	-- Bands of Pincher Sinew
-									i(274843),	-- Pincher-Proof Wristguards
-									i(274851),	-- Glittering Frostscale Wraps
-									i(274859),	-- Klaxid Plate Vambraces
-									i(274893),	-- Frosty Klaxid Stinger
-								},
+								["sym"] = {{"select","itemID",
+									274835, 	-- Bands of Pincher Sinew
+									274843, 	-- Pincher-Proof Wristguards
+									274851, 	-- Glittering Frostscale Wraps
+									274859, 	-- Klaxid Plate Vambraces
+									274893, 	-- Frosty Klaxid Stinger
+								}},
 							}),
 							n(264865, {	-- Mercilus
 								["coord"] = { 49.7, 79.2, VAL },
 								["questID"] = 96371,
-								["groups"] = {
-									i(274834),	-- Cord of Domineering Resolve
-									i(274842),	-- Gatekeeper's Leather Waistguard
-									i(274850),	-- Mercilus's Chain Waistguard
-									i(274858),	-- Domanaar Battle Belt
-									i(274867),	-- Inscribed Domanaar's Sword
-								},
+								["sym"] = {{"select","itemID",
+									274834, 	-- Cord of Domineering Resolve
+									274842, 	-- Gatekeeper's Leather Waistguard
+									274850, 	-- Mercilus's Chain Waistguard
+									274858, 	-- Domanaar Battle Belt
+									274867, 	-- Inscribed Domanaar's Sword
+								}},
 							}),
 							n(264869, {	-- Nelgothar <The Forgotten>
 								["coord"] = { 23.2, 41.9, VAL },
 								["questID"] = 96374,
-								["groups"] = {
-									i(274832),	-- Fel-Tainted Trousers
-									i(274840),	-- Pants of the Lost Legion
-									i(274848),	-- Legguards of Fel-Corruption
-									i(274856),	-- Felguard's Frozen Greaves
-									i(274892),	-- Resilient Felblood Vial
-								},
+								["sym"] = {{"select","itemID",
+									274832, 	-- Fel-Tainted Trousers
+									274840, 	-- Pants of the Lost Legion
+									274848, 	-- Legguards of Fel-Corruption
+									274856, 	-- Felguard's Frozen Greaves
+									274892, 	-- Resilient Felblood Vial
+								}},
 							}),
 							n(264868, {	-- Opprimius <Reaper of Beasts>
 								["coord"] = { 33.0, 43.0, VAL },
 								["questID"] = 96373,
-								["groups"] = {
-									i(274829),	-- Creature Corruptor Slippers
-									i(274837),	-- Corrupted Hide Boots
-									i(274845),	-- Greaves of Corrupted Scale
-									i(274853),	-- Creature Crushers
-									i(274822),	-- Band of the Beast Reaper
-									i(274863),	-- Cudgel of the Twisted Reaper
-								},
+								["sym"] = {{"select","itemID",
+									274829, 	-- Creature Corruptor Slippers
+									274837, 	-- Corrupted Hide Boots
+									274845, 	-- Greaves of Corrupted Scale
+									274853, 	-- Creature Crushers
+									274822, 	-- Band of the Beast Reaper
+									274863, 	-- Cudgel of the Twisted Reaper
+								}},
 							}),
 							n(265269, {	-- Shadowguard Destroyer
 								["coord"] = { 46.0, 64.6, VAL },
 								["questID"] = 96465,
-								["groups"] = {
-									i(274830),	-- Ice-Glazed Gloves
-									i(274838),	-- Gloves of the Descending Destroyer
-									i(274846),	-- Glacier Basin Gauntlets
-									i(274854),	-- Shadowguard Plate Gauntlets
-									i(274865),	-- Destroyer's Drop Hammer
-								},
+								["sym"] = {{"select","itemID",
+									274830, 	-- Ice-Glazed Gloves
+									274838, 	-- Gloves of the Descending Destroyer
+									274846, 	-- Glacier Basin Gauntlets
+									274854, 	-- Shadowguard Plate Gauntlets
+									274865, 	-- Destroyer's Drop Hammer
+								}},
 							}),
 							n(261965, {	-- Sleet-Rune <The Void-Infused Watcher>
 								["coord"] = { 55.2, 65.6, VAL },
 								["questID"] = 95939,
-								["groups"] = {
-									i(274828),	-- Domanaar Subjugator's Vestments
-									i(274836),	-- Sleet-Resistant Jerkin
-									i(274844),	-- Sleetlink Hauberk
-									i(274852),	-- Sleetstone Chestplate
-									i(274869),	-- Void-Iced Warglaives
-								},
+								["sym"] = {{"select","itemID",
+									274828, 	-- Domanaar Subjugator's Vestments
+									274836, 	-- Sleet-Resistant Jerkin
+									274844, 	-- Sleetlink Hauberk
+									274852, 	-- Sleetstone Chestplate
+									274869, 	-- Void-Iced Warglaives
+								}},
 							}),
 							n(264870, {	-- The Horror Below <The Living Whisper>
 								["coord"] = { 35.5, 57.6, VAL },
 								["questID"] = 96375,
-								["groups"] = {
-									i(274818),	-- Drape of Intense Darkness
-									i(274826),	-- Coiling Smoke Chain
-									i(274872),	-- Darkness' Horrific Barb
-								},
+								["sym"] = {{"select","itemID",
+									274818, 	-- Drape of Intense Darkness
+									274826, 	-- Coiling Smoke Chain
+									274872, 	-- Darkness' Horrific Barb
+								}},
 							}),
 							n(264864, {	-- Xirah <Voracious Glutton>
 								["coord"] = { 28.6, 74.6, VAL },
 								["questID"] = 96370,
-								["groups"] = {
-									i(274820),	-- Cloak of the Voracious Gorger
-									i(274824),	-- Worldeater's Bone Ring
-									i(274875),	-- Riftwalker's Lantern
-								},
+								["sym"] = {{"select","itemID",
+									274820, 	-- Cloak of the Voracious Gorger
+									274824, 	-- Worldeater's Bone Ring
+									274875, 	-- Riftwalker's Lantern
+								}},
 							}),
 						}),
 					}),
@@ -386,15 +385,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(276098),	-- Raided Items (Low Level)
 					}),
 					-- Elite Patrols
-					n(SPECIAL, sharedData({
-						["sym"] = {SymSelector.select("MID_SHOWDOWN_ZONE_REWARDS")},
-						["skipFill"] = 1,
-					},{
+					n(SPECIAL, {
 						n(264876),	-- Reaper Gorzok <Blackstar Legion>
 						n(265447),	-- Starseeker Dreadus <Blackstar Legion>
 						n(265446),	-- Vanguard Kadoxe <Blackstar Legion>
 						n(265445),	-- Mender Amatory <Blackstar Legion>
-					})),
+					}),
 					n(TREASURES, {
 						o(655270, {	-- Dominaar Storage Vessel
 							["description"] = "Spawns randomly throughout the zone.",

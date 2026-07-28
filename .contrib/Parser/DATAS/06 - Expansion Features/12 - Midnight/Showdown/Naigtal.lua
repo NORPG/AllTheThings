@@ -377,129 +377,142 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							n(264569, {	-- Auredar's Chassis <The Vacant Vigilant>
 								["coord"] = { 28.8, 62.9, NAIGTAL },
 								["questID"] = 96316,
+								["sym"] = {{"select","itemID",
+									274827,	-- Draenic Drive Chain
+									274873,	-- Funeral Attendant's Spire
+								}},
 								["groups"] = {	-- Wrists
 									i(275151),	-- Bands of Draenic Mourning
 									i(275159),	-- Construct Manipulator Bracers
 									i(275143),	-- Draeni Ceremonial Cuffs
 									i(275167),	-- Intact Construct Plates
-									i(274827),	-- Draenic Drive Chain
-									i(274873),	-- Funeral Attendant's Spire
 								},
 							}),
 							n(263950, {	-- Broxion <Contagious Anomaly>
 								["coord"] = { 44.2, 51.0, NAIGTAL },
 								["questID"] = 96206,
+								["sym"] = {{"select","itemID",
+									274890,	-- Enchanted Spore
+								}},
 								["groups"] = {	-- Hands
 									i(275138),	-- Spore-Handler's Handwraps
 									i(275146),	-- Spore-Membrane Gloves
 									i(275162),	-- Spore-Shined Gloves
 									i(275154),	-- Swamp Trekker's Grips
-									i(274890),	-- Enchanted Spore
 								},
 							}),
 							n(264571, {	-- Indomitable Mk XII <Blazing Reaver>
 								["description"] = "Patrols up and down the central road.",
 								["coord"] = { 53.8, 51.6, NAIGTAL },
 								["questID"] = 96317,
+								["sym"] = {{"select","itemID",
+									274891,	-- Mk XII Gear Drive
+								}},
 								["groups"] = {	-- Legs
 									i(275164),	-- Indomitable Mechanized Legplates
 									i(275156),	-- Gear-Linked Leggings
 									i(275140),	-- Leggings of Tainted Stuffing
 									i(275148),	-- Reaver's Padded Trousers
-									i(274891),	-- Mk XII Gear Drive
 								},
 							}),
 							n(263947, {	-- Interminable Uarn <The Undying Stalk>
 								["coord"] = { 37.6, 61.8, NAIGTAL },
 								["questID"] = 96205,
+								["sym"] = {{"select","itemID",
+									274862,	-- Corrupted Draenei Priest's Kris
+									274876,	-- Reinforced Fungalhide Bulwark
+								}},
 								["groups"] = {	-- Head
 									i(275147),	-- Bioluminescent Swamp Mask
 									i(275139),	-- Crown of Fungal Spores
 									i(275155),	-- Interminable Fungal Helmet
 									i(275163),	-- Uarn's Reinforced Headplate
-									i(274862),	-- Corrupted Draenei Priest's Kris
-									i(274876),	-- Reinforced Fungalhide Bulwark
 								},
 							}),
 							n(263955, {	-- Lomelith <The Bogshaker>
 								["description"] = "Roams around the area.",
 								["coord"] = { 67.7, 62.9, NAIGTAL },
 								["questID"] = 96208,
-								["groups"] = {
-									i(274860),	-- Ancient Spore-Coated Axe
-									i(274819),	-- Fungle Fold Frock
-									i(274823),	-- Spongy Gill Loop
-								},
+								["sym"] = {{"select","itemID",
+									274860,	-- Ancient Spore-Coated Axe
+									274819,	-- Fungle Fold Frock
+									274823,	-- Spongy Gill Loop
+								}},
 							}),
 							n(263954, {	-- Swalewing Matriarch <The Manabog Apex>
 								["description"] = "Roams around the area.",
 								["coord"] = { 77.7, 38.0, NAIGTAL },
 								["questID"] = 96207,
+								["sym"] = {{"select","itemID",
+									274874,	-- Flickering Wing Separator
+								}},
 								["groups"] = {	-- Feet
 									i(275153),	-- Flickering Scale Sabatons
 									i(275137),	-- Flickering Soft-Steppers
 									i(275145),	-- Swalewing Skin Footpads
 									i(275161),	-- Swamp-Resistant Stompers
-									i(274874),	-- Flickering Wing Separator
 								},
 							}),
 							n(264576, {	-- Slaipaan <The Fel-Gorged>
 								["description"] = "Roams around the area.",
 								["coord"] = { 56.1, 61.4, NAIGTAL },
 								["questID"] = 96320,
+								["sym"] = {{"select","itemID",
+									274871,	-- Giant Worm Piercer
+								}},
 								["groups"] = {	-- Chests
 									i(275152),	-- Burrower's Linked Hauberk
 									i(275136),	-- Leaf-Woven Blouse
 									i(275144),	-- Leafy-Hide Coat
 									i(275160),	-- Slaipaan's Carapace
-									i(274871),	-- Giant Worm Piercer
 								},
 							}),
 							n(265698, {	-- Voidwarped Sporebat
 								["coord"] = { 48.8, 47.4, NAIGTAL },
 								["questID"] = 96566,
+								["sym"] = {{"select","itemID",
+									274866,	-- Voidwarped Edge
+								}},
 								["groups"] = {	-- Waists
 									i(275166),	-- Voidwarped Greatbelt
 									i(275142),	-- Voidwarped Sash
 									i(275158),	-- Voidwarped Scale Girdle
 									i(275150),	-- Sporebat Leather Belt
-									i(274866),	-- Voidwarped Edge
 								},
 							}),
 							n(267422, {	-- Warbringer Thal'kuur <The Mutinied>
 								["description"] = "Roams around the area.",
 								["coord"] = { 56.1, 61.4, NAIGTAL },
 								["questID"] = 97014,
+								["sym"] = {{"select","itemID",
+									274864,	-- Sporebloom Gavel
+								}},
 								["groups"] = {	-- Shoulders
 									i(275149),	-- Fungal Draped Epaulets
 									i(275165),	-- Petrified Mushroom Shoulderplates
 									i(275141),	-- Spore-Speckled Shoulderpads
 									i(275157),	-- Swampwalker's Spaulders
-									i(274864),	-- Sporebloom Gavel
 								},
 							}),
 							n(264574, {	-- Warp Agent Xi'grivr <Ky'veza's Second>
 								["coord"] = { 70.3, 76.4, NAIGTAL },
 								["questID"] = 96319,
-								["groups"] = {
-									i(274821),	-- Drape of the Hal'hadar Assassin
-									i(274825),	-- Hal'hadar Assassin's Signet
-									i(274870),	-- Assassin's Void-String Bow
-								},
+								["sym"] = {{"select","itemID",
+									274821,	-- Drape of the Hal'hadar Assassin
+									274825,	-- Hal'hadar Assassin's Signet
+									274870,	-- Assassin's Void-String Bow
+								}},
 							}),
 						}),
 					}),
 					-- Elite Patrols
-					n(SPECIAL, sharedData({
-						["sym"] = {SymSelector.select("MID_SHOWDOWN_ZONE_REWARDS")},
-						["skipFill"] = 1,
-					},{
+					n(SPECIAL, {
 						n(265882),	-- Spellslinger Rem'lazar <Warp Rider>
 						n(265881),	-- Renegade Kulivero <Warp Rider>
 						n(265879),	-- Guardian Halazir <Warp Rider>
 						n(265880),	-- Techno-Medic Alazj <Warp Rider>
 						n(264769),	-- Ethereal Adjutant
-					})),
+					}),
 					n(REWARDS, {
 						i(276089),	-- Field Accolades (Normal)
 						i(276090),	-- Field Accolades (Heroic)
