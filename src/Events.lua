@@ -27,10 +27,12 @@ app.AddEventHandler = function(eventName, handler, forceStart)
 	end
 	-- app.PrintDebug("Added Handler",handler,"@",#handlers,"in Event",eventName)
 end
+-- Runs immediately and wipes the set of Handlers assigned for a specific Event
 app.RemoveAllEventHandlers = function(eventName)
-	wipe(EventHandlers[eventName]);
+	EventHandlers[eventName] = nil
 end
-app.RemoveEventHandler = function(handler)
+local RemoveHandlers = {}
+local function RemoveHandler(handler)
 	if type(handler) ~= "function" then
 		app.print("RemoveEventHandler was provided a non-function",handler)
 		return
@@ -57,6 +59,22 @@ app.RemoveEventHandler = function(handler)
 		-- else app.PrintDebug("Handler",handler,"not in Event",eventName)
 		end
 	end
+end
+local function ProcessRemoveHandlers()
+	for i=1,#RemoveHandlers do
+		RemoveHandler(RemoveHandlers[i])
+	end
+	app.wipearray(RemoveHandlers)
+end
+app.AddEventHandler("Events.ProcessRemoveHandlers", ProcessRemoveHandlers)
+-- Queues proper removal of the provided Handler, from all Events to which it may be assigned
+app.RemoveEventHandler = function(handler)
+	if type(handler) ~= "function" then
+		app.print("RemoveEventHandler was provided a non-function",handler)
+		return
+	end
+	RemoveHandlers[#RemoveHandlers + 1] = handler
+	app.HandleEvent("Events.ProcessRemoveHandlers")
 end
 -- Most of the time, there's no reason for ATT to try handling game events until it's even ready to do anything with it
 -- So instead of individually adding a bazillion OnReady event registrations, let's just have one method do that all for us

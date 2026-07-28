@@ -2220,7 +2220,7 @@ local function ShowPrecallShowWindows()
 		-- app.PrintDebug("Precall Show",k)
 		app.Windows[k]:Show()
 	end
-	app.FunctionRunner.Run(app.RemoveEventHandler, ShowPrecallShowWindows)
+	app.RemoveEventHandler(ShowPrecallShowWindows)
 end
 app.AddEventHandler("OnRefreshCollectionsDone", ShowPrecallShowWindows)
 local function SetupCommandsForDefinition(definition)

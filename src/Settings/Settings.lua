@@ -1939,6 +1939,6 @@ local function ConvertAutoOpenSettings()
 		app:GetWindow("WorldQuests"):SetShouldAutomaticallyOpen(true)
 		settings:SetTooltipSetting("Auto:WorldQuestsList", nil)
 	end
-	app.FunctionRunner.Run(app.RemoveEventHandler, ConvertAutoOpenSettings)
+	app.RemoveEventHandler(ConvertAutoOpenSettings)
 end
 app.AddEventHandler("OnLoad", ConvertAutoOpenSettings)
