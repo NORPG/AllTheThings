@@ -1230,95 +1230,28 @@ local function SimpleHeaderGroup(npcID, t)
 	return t
 end
 
-function app:GetDatabaseRoot()
-	-- app.PrintMemoryUsage("app:GetDatabaseRoot init")
-
-	-- not really worth moving this into a Class since it's literally allowed to be used once
-	local DefaultRootKeys = {
-		__type = function(t) return "ROOT" end,
-		title = function(t)
-			return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage
-		end,
-		summaryText = function(t)
-			if not rawget(t,"TLUG") and app.CurrentCharacter then
-				local primeData = app.CurrentCharacter.PrimeData
-				if primeData then
-					return app.Modules.Color.GetProgressColorText(primeData.progress, primeData.total)
-				end
-			end
-			return app.Modules.Color.GetProgressColorText(t.progress, t.total)
-		end,
-		modeString = function(t)
-			return app.Settings:GetModeString()
-		end,
-		untilNextPercentage = function(t)
-			if not rawget(t,"TLUG") and app.CurrentCharacter then
-				local primeData = app.CurrentCharacter.PrimeData
-				if primeData then
-					return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total)
-				end
-			end
-			return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total)
-		end,
-		visible = app.ReturnTrue,
-	}
-	app.CloneDictionary(app.BaseClass.__class, DefaultRootKeys)
-
-	-- Update the Row Data by filtering raw data (this function only runs once)
-	local rootData = setmetatable({
-		key = "ROOT",
-		text = L.TITLE,
-		icon = app.asset("logo_32x32"),
-		preview = app.asset("Discord_2_128"),
-		description = L.DESCRIPTION,
-		font = "GameFontNormalLarge",
-		SortType = "Global",
-		expanded = true,
-		g = {},
-	}, {
-		__index = function(t, key)
-			local defaultKeyFunc = DefaultRootKeys[key]
-			if defaultKeyFunc then return defaultKeyFunc(t) end
-		end,
-		__newindex = function(t, key, val)
-			-- app.PrintDebug("Top-Root-Set",rawget(t,"TLUG"),key,val)
-			if key == "visible" then
-				return;
-			end
-			-- until the Main list receives a top-level update
-			if not rawget(t,"TLUG") then
-				-- ignore setting progress/total values
-				if key == "progress" or key == "total" then
-					return;
-				end
-			end
-			rawset(t, key, val);
+do -- Initial Data Loading Events
+	app.AddEventHandler("OnHiddenDataCached", function(categories)
+		for key,category in pairs(categories) do
+			--print("Found Hidden Category:", key);
+			category.RootCategory = key;
+			-- hidden data fields are only cached when hooked to a Window
 		end
-	});
+	end)
+	app.AddEventHandler("OnDataCached", function(categories, rootData)
+		for key,category in pairs(categories) do
+			--print("Found Category:", key);
+			category.RootCategory = key;
+			NestObject(rootData, category)
+		end
 
-	-- Build the Categories and assign them to temporary tables.
-	local AllCategories, AllHiddenCategories = {}, {};
-	app.HandleEvent("OnBuildHiddenDataCache", AllHiddenCategories);
-	app.HandleEvent("OnBuildDataCache", AllCategories);
-	app.RemoveAllEventHandlers("OnBuildHiddenDataCache");
-	app.RemoveAllEventHandlers("OnBuildDataCache");
-	for key,category in pairs(AllCategories) do
-		--print("Found Category:", key);
-		category.RootCategory = key;
-		NestObject(rootData, category)
-	end
-	for key,category in pairs(AllHiddenCategories) do
-		--print("Found Hidden Category:", key);
-		category.RootCategory = key;
-	end
-
-	-- app.PrintMemoryUsage()
-	-- app.PrintDebug("Begin Cache Prime")
-	app.AssignChildren(rootData);
-	app.CacheFields(rootData);
-	-- app.PrintDebugPrior("Ended Cache Prime")
-	-- app.PrintMemoryUsage()
-
+		-- app.PrintMemoryUsage()
+		-- app.PrintDebug("Begin Cache Prime")
+		app.AssignChildren(rootData);
+		app.CacheFields(rootData);
+		-- app.PrintDebugPrior("Ended Cache Prime")
+		-- app.PrintMemoryUsage()
+	end)
 	if app.IsRetail then
 		app.AddEventHandler("OnDataCached", function(categories, rootData)
 		-- CRIEVE NOTE: This needs to be versioned at the very least before it can be enabled in classic land
@@ -1532,18 +1465,79 @@ function app:GetDatabaseRoot()
 		app.AssignChildren(dynamicHeader);
 		end)
 	end
+end
+
+function app:GetDatabaseRoot()
+	-- app.PrintMemoryUsage("app:GetDatabaseRoot init")
+
+	-- not really worth moving this into a Class since it's literally allowed to be used once
+	local DefaultRootKeys = {
+		__type = function(t) return "ROOT" end,
+		title = function(t)
+			return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage
+		end,
+		summaryText = function(t)
+			if not rawget(t,"TLUG") and app.CurrentCharacter then
+				local primeData = app.CurrentCharacter.PrimeData
+				if primeData then
+					return app.Modules.Color.GetProgressColorText(primeData.progress, primeData.total)
+				end
+			end
+			return app.Modules.Color.GetProgressColorText(t.progress, t.total)
+		end,
+		modeString = function(t)
+			return app.Settings:GetModeString()
+		end,
+		untilNextPercentage = function(t)
+			if not rawget(t,"TLUG") and app.CurrentCharacter then
+				local primeData = app.CurrentCharacter.PrimeData
+				if primeData then
+					return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total)
+				end
+			end
+			return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total)
+		end,
+		visible = app.ReturnTrue,
+	}
+	app.CloneDictionary(app.BaseClass.__class, DefaultRootKeys)
+
+	-- Update the Row Data by filtering raw data (this function only runs once)
+	local rootData = setmetatable({
+		key = "ROOT",
+		text = L.TITLE,
+		icon = app.asset("logo_32x32"),
+		preview = app.asset("Discord_2_128"),
+		description = L.DESCRIPTION,
+		font = "GameFontNormalLarge",
+		SortType = "Global",
+		expanded = true,
+		g = {},
+	}, {
+		__index = function(t, key)
+			local defaultKeyFunc = DefaultRootKeys[key]
+			if defaultKeyFunc then return defaultKeyFunc(t) end
+		end,
+		__newindex = function(t, key, val)
+			-- app.PrintDebug("Top-Root-Set",rawget(t,"TLUG"),key,val)
+			if key == "visible" then
+				return;
+			end
+			-- until the Main list receives a top-level update
+			if not rawget(t,"TLUG") then
+				-- ignore setting progress/total values
+				if key == "progress" or key == "total" then
+					return;
+				end
+			end
+			rawset(t, key, val);
+		end
+	});
 
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	app.GetDatabaseRoot = function()
 		-- app.PrintDebug("Cached data cache")
 		return rootData;
 	end
-	app.HandleEvent("OnHiddenDataCached", AllHiddenCategories);
-	app.HandleEvent("OnDataCached", AllCategories, rootData);
-	app.RemoveAllEventHandlers("OnHiddenDataCached");
-	app.RemoveAllEventHandlers("OnDataCached");
-	AllHiddenCategories = nil;
-	AllCategories = nil;
 	return rootData;
 end
 
@@ -1739,10 +1733,23 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
 
-	-- Cache the data for the first time
-	-- TODO: Move the logic here rather than in GetDatabaseRoot itself. (this will prevent windows from killing things)
-	app:GetDatabaseRoot();
+	-- OnLoad events can fire once all data is loaded & cached
+	app.AddEventHandler("OnLoad", function()
+		app.RemoveAllEventHandlers("OnBuildHiddenDataCache")
+		app.RemoveAllEventHandlers("OnBuildDataCache")
+		app.RemoveAllEventHandlers("OnHiddenDataCached")
+		app.RemoveAllEventHandlers("OnDataCached")
+	end)
+	-- app.DesignateAwaitedEvent("OnLoad", "OnBuildHiddenDataCache", "OnBuildDataCache", "OnHiddenDataCached", "OnDataCached")
+	app.LinkEventSequence("OnDataCached", "OnLoad")
 
-	-- OnLoad events (saved variables are now available)
-	app.HandleEvent("OnLoad")
+	-- Build the Categories and assign them to temporary tables.
+	local AllCategories, AllHiddenCategories = {}, {}
+	app.HandleEvent("OnBuildHiddenDataCache", AllHiddenCategories)
+	app.HandleEvent("OnBuildDataCache", AllCategories)
+	-- Cache the data for the first time
+	app.HandleEvent("OnHiddenDataCached", AllHiddenCategories)
+	app.HandleEvent("OnDataCached", AllCategories, app:GetDatabaseRoot())
+	AllHiddenCategories = nil
+	AllCategories = nil
 end)
