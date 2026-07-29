@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,cq,crit,cs,cu,d,e,en,faction,flt,h,heir,hqt,i,ill,inst,m,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Holidays=
@@ -202,7 +202,7 @@ i(38290,{b=1,e=7,f=53,lvl=27,rwp=30002,spellID=51953,u=2}),
 i(38288,{b=1,e=7,f=53,lvl=27,rwp=30002,spellID=51954,u=2}),
 i(38287,{b=1,e=7,f=53,lvl=27,rwp=30002,spellID=51955,u=2}),
 i(38280,{b=1,e=7,r=2}),
-i(38281,{b=1,e=7,r=1})}}),(function(t)if GetCVar("portal")=="EU" then	local quests={[11117]=1,[11431]=1,[11118]=1,[11120]=1};for i,quest in ipairs(t.g)do	if quest.questID and quests[quest.questID] then	quest.u=2;end	end	end	return t;end)(
+i(38281,{b=1,e=7,r=1})}}),(function(t)if GetCVar("portal")=="EU" then	local quests={[11117]=1,[11431]=1,[11118]=1,[11120]=1}for i,quest in ipairs(t.g)do	if quest.questID and quests[quest.questID] then	quest.u=2 end	end	end	return t end)(
 h(-45,{e=7,g={
 ah(18579,{awp=100107,e=7,type="a",g={
 q(77152,{coords={
@@ -472,7 +472,7 @@ q(11447,{altQuests={11446},awp=20202,coords={
 i(33034,{e=7,f=55,lvl=23,spellID=44114}),
 i(34020,{e=7,f=55,lvl=11,spellID=44111}),
 i(34017,{e=7,f=55,spellID=44107})}})}})),
-h(-47,{e=7,g={(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any;if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true;break;end	end	end	if not any then return t;end	end	t.u=nil;t.rwp=30002;if t.g then	for i,o in ipairs(t.g)do	o.u=nil;o.rwp=30002;end	end	return t;end)(
+h(-47,{e=7,g={(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=30002 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=30002 end	end	return t end)(
 s(15238,33016,{awp=20403,description="Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",e=7,f=2,lore="This stein was the reward from the 2008 Brewfest.",rwp=30002,spellID=41920,u=2,g={
 s(15239,33017,{b=1,coords={
 [27]={{55.8,38.2}}},e=7,f=2,providers={{"o",186183}},spellID=41921,u=2}),
@@ -490,7 +490,7 @@ s(105141,169450,{e=7,f=2,spellID=41921}),
 s(105142,169452,{e=7,f=2,spellID=41943}),
 s(105143,169453,{e=7,f=2,spellID=41944}),
 s(105144,169454,{e=7,f=2,spellID=41945}),
-s(105145,169455,{e=7,f=2,spellID=41946})}}),(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any;if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true;break;end	end	end	if not any then return t;end	end	t.u=nil;t.rwp=40001;if t.g then	for i,o in ipairs(t.g)do	o.u=nil;o.rwp=40001;end	end	return t;end)(
+s(105145,169455,{e=7,f=2,spellID=41946})}}),(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=40001 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=40001 end	end	return t end)(
 s(18084,37892,{awp=30002,description="Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",e=7,f=2,lore="This stein was the reward from the 2009 & 2010 Brewfest.",rwp=40001,spellID=41920,u=2,g={
 s(18085,37893,{b=1,coords={
 [27]={{55.8,38.2}}},e=7,f=2,providers={{"o",186183}},spellID=41921,u=2}),
@@ -503,7 +503,7 @@ s(18088,37896,{b=1,coords={
 [1]={{40.8,18}}},e=7,f=2,providers={{"o",186186}},spellID=41945,u=2}),
 s(18087,37895,{b=1,coords={
 [1]={{40.2,17.4}}},e=7,f=2,providers={{"o",186187}},spellID=41946,u=2})}})),
-s(27941,56836,{awp=40001,e=7,f=2,lore="This stein was the reward from the 2011 Brewfest onward.",spellID=101582}),(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any;if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true;break;end	end	end	if not any then return t;end	end	t.u=nil;t.rwp=20403;if t.g then	for i,o in ipairs(t.g)do	o.u=nil;o.rwp=20403;end	end	return t;end)(
+s(27941,56836,{awp=40001,e=7,f=2,lore="This stein was the reward from the 2011 Brewfest onward.",spellID=101582}),(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=20403 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=20403 end	end	return t end)(
 s(15167,32912,{awp=20001,description="Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",e=7,f=2,lore="This stein was the reward from the 2007 Brewfest.",rwp=20403,spellID=41920,u=2,g={
 s(15169,32915,{b=1,coords={
 [27]={{55.8,38.2}}},e=7,f=2,providers={{"o",186183}},spellID=41921,u=2}),
@@ -594,7 +594,7 @@ i(37816,{awp=20403,b=1,cost={{"i",37829,20}},e=7,f=106,lvl=10,spellID=62062})}})
 n(153574,{awp=80200,coords={
 [27]={{54.8,38.6}}},e=7,r=2,g={
 toy(169865,{b=1,cost={{"i",169599,5}},e=7})}}),
-n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(";if t.g then	for i,item in ipairs(t.g)do	item.u=2;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest?! BUY THE RAMS RIGHT NOW!\n\nAlso kinda jealous...\n - Crieve";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	end	end,r=1,sourceQuests={11419},g={
+n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(" if t.g then	for i,item in ipairs(t.g)do	item.u=2 end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest?! BUY THE RAMS RIGHT NOW!\n\nAlso kinda jealous...\n - Crieve" if t.g then	for i,item in ipairs(t.g)do	item.u=nil end	end	end	end,r=1,sourceQuests={11419},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=10}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=10,rwp=20403,u=2})}}),
 n(24501,{awp=20202,coords={
@@ -657,7 +657,7 @@ i(34064,{e=7,f=55,lvl=11,spellID=5007}),
 i(33026,{e=7,f=55,lvl=26,spellID=35271}),
 i(138884,{awp=70003,e=7,spellID=217685})}}),
 n(24468,{awp=20202,coords={
-[27]={{53.6,38.6}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(";if t.g then	for i,item in ipairs(t.g)do	item.u=2;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest?! BUY THE RAMS RIGHT NOW!\n\nAlso kinda jealous...\n - Crieve";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	end	end,r=2,sourceQuests={11400},g={
+[27]={{53.6,38.6}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(" if t.g then	for i,item in ipairs(t.g)do	item.u=2 end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest?! BUY THE RAMS RIGHT NOW!\n\nAlso kinda jealous...\n - Crieve" if t.g then	for i,item in ipairs(t.g)do	item.u=nil end	end	end	end,r=2,sourceQuests={11400},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=10}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=10,rwp=20403,u=2})}}),
 n(241300,{awp=110200,coords={
@@ -12221,7 +12221,7 @@ s(89038,150575,{b=1,c={11},e=559,f=5,lvl=27,modID=22}),
 s(89190,150766,{b=1,c={6},e=559,f=7,lvl=27,modID=22}),
 i(150527,{b=1,e=559,f=53,lvl=27,modID=22,spellID=244066})}}),
 e(1590,{e=559,npcID=22917,g={
-ach(11869,{c={12},e=559,g={
+ach(11869,{e=559,sourceAchievements={426},g={
 i(150372,{b=1,c={12},e=559,f=55,lvl=45,modID=22,spellID=243721,tmogSetID=1347,g={
 s(89282,151137,{b=1,c={12},e=559,f=35,lvl=27,modID=22})}})}}),
 cq(38064,{b=1,e=559,itemID=122196,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=180706,g={
@@ -16563,7 +16563,7 @@ ach(41038,{e=242,rwp=110007,u=2}),
 ach(41013,{e=242,questID=85661}),
 ach(40661,{coords={
 [71]={{61.7,50},{61.8,49.9},{61.9,50.1},{62,50.1},{62.2,49.6},{62.3,49.3}}},crs={227559},e=242,providers={{"i",224157},{"n",227682}}})}}),
-inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=25,g={
+inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=24,g={
 h(-12,{e=242,g={
 ach(40999,{e=242,g={
 crit(70571,{achID=40999,e=242,id=2,providers={{"n",232243}}}),
@@ -16575,7 +16575,7 @@ h(-45,{e=242,g={
 q(82817,{coords={
 [84]={{56,18.4}},
 [85]={{52.8,82.8}}},e=242,isWeekly=1,lvl=30,qgs={234556},rwp=110007,u=2,g={
-i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 q(84735,{coords={
 [71]={{63,49.7}}},e=242,lvl=30,qgs={229494},rwp=110007,u=2}),
 hqt(84743,{coords={
@@ -16684,11 +16684,11 @@ s(229527,231428,{b=1,e=242,f=23,lvl=22,u=2}),
 s(229522,231422,{b=1,e=242,f=5,lvl=22,u=2}),
 s(229538,231441,{b=1,e=242,f=5,lvl=22,u=2}),
 n(223881,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(233209,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(224322,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 d(113,{difficulties={17,14,15},e=242,g={
 h(-63,{e=242,g={
 s(229587,231501,{e=242,f=4,lvl=80}),
@@ -17373,7 +17373,7 @@ q(82783,{coords={
 [71]={{62.6,50}}},e=242,isWeekly=1,lvl=10,maps={2354},qgs={226368},g={
 ach(40977,{e=242,g={
 crit(70589,{achID=40976,e=242,id=8})}}),
-i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",25},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 cu(1166,{e=242})}})}}),
 h(-56,{e=242,g={
 o(455795,{coords={
@@ -17763,5 +17763,5 @@ s(298622,253156,{cost={{"c",1166,30}},e=242,f=2}),
 s(298623,253157,{cost={{"c",1166,30}},e=242,f=2}),
 s(298624,253158,{cost={{"c",1166,30}},e=242,f=2}),
 s(298625,253159,{cost={{"c",1166,50}},e=242,f=2}),
-s(298626,253160,{cost={{"c",1166,50}},e=242,f=2})}})}})}})}})}});
-end);
+s(298626,253160,{cost={{"c",1166,50}},e=242,f=2})}})}})}})}})}})
+end)

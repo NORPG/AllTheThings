@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local h,hqt,inst,m,prof,x=_.CreateCustomHeader,_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateProfession,_.CreateExpansion;
 categories.HiddenQuestTriggers={
@@ -287,5 +287,5 @@ hqt(11937),
 hqt(47465),
 hqt(47464),
 hqt(47466),
-hqt(28997)})};
-end);
+hqt(28997)})}
+end)

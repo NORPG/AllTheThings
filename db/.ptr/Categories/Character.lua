@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,campsite,cl,crit,de,en,ens,exp,faction,flt,gach,h,heir,hqt,i,ill,m,mnt,n,o,p,q,r,ra,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateRace,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Character=
@@ -9462,5 +9462,5 @@ sp(465226)}})}}),
 h(-513,{awp=110100,g={
 campsite(1,{description="Granted to all warbands as default."}),
 campsite(4,{description="Granted to all warbands."}),
-campsite(29,{description="Granted to all warbands."})}})}})}});
-end);
+campsite(29,{description="Granted to all warbands."})}})}})}})
+end)

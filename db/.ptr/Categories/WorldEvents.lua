@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,artifact,cl,cq,crit,cu,d,de,e,en,faction,flt,follower,h,heir,hqt,i,ill,inst,m,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.WorldEvents=
@@ -194,8 +194,8 @@ s(46746,90036,{b=1,f=8,lvl=32,u=2})}})}}),
 h(-58,{u=2,g={
 n(63546,{coords={
 [70]={{55.8,49.6}}},description="Sells the following items if you completed the level 85 version of the Theramore's Fall Scenario on your current character during the Pre-Launch of MOP.",g={
-s(46212,89196,{b=1,f=9,OnUpdate=function(t)if	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil;else	t.u=2;end	end,r=2,spellID=129624}),
-toy(89205,{b=1,OnUpdate=function(t)if	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil;else	t.u=2;end	end,r=1})}})}})}})}}),
+s(46212,89196,{b=1,f=9,OnUpdate=function(t)if	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil else	t.u=2 end	end,r=2,spellID=129624}),
+toy(89205,{b=1,OnUpdate=function(t)if	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil else	t.u=2 end	end,r=1})}})}})}})}}),
 x(7,{awp=70003,g={
 h(-12,{u=2,g={
 ach(11201,{u=2}),
@@ -2722,7 +2722,7 @@ ach(42502,{e=447,u=2,g={
 crit(106003,{achID=42502,e=447,id=1,providers={{"s",1233913}},u=2})}}),
 ach(42503,{e=447,u=2,g={
 crit(106003,{achID=42503,e=447,id=1,providers={{"s",1233913}},u=2})}}),
-ach(42565,{description="Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.\n\nDruids can skip some of the dungeon quests.\n\nRogues have to do every single quest, including getting every follower.",e=447,OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left=" "});local index=#tooltipInfo + 1;local progress,total=0,0;for i,id in pairs({-288,-272,3,7,6,0,8,4,9,5,2,1})do	local cl=_.CreateCharacterClass(i);local a,b,c=GetAchievementCriteriaInfoByID(42565,108648+id)tinsert(tooltipInfo,{left="|T"..cl.icon..":0|t "..cl.text,right=_.GetCollectionIcon(c)});if c then progress=progress + 1;end	total=total + 1;end	tinsert(tooltipInfo,index,{left="|cffffffffYour Account Completion Progress|r",right=_.Modules.Color.GetProgressColorText(progress,total)});end,u=2}),
+ach(42565,{description="Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.\n\nDruids can skip some of the dungeon quests.\n\nRogues have to do every single quest, including getting every follower.",e=447,OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left=" "})local index=#tooltipInfo + 1 local progress,total=0,0 for i,id in pairs({-288,-272,3,7,6,0,8,4,9,5,2,1})do	local cl=_.CreateCharacterClass(i)local a,b,c=GetAchievementCriteriaInfoByID(42565,108648+id)tinsert(tooltipInfo,{left="|T"..cl.icon..":0|t "..cl.text,right=_.GetCollectionIcon(c)})if c then progress=progress + 1 end	total=total + 1 end	tinsert(tooltipInfo,index,{left="|cffffffffYour Account Completion Progress|r",right=_.Modules.Color.GetProgressColorText(progress,total)})end,u=2}),
 ach(42624,{e=447,u=2}),
 ach(42539,{e=447,u=2}),
 ach(42570,{e=447,u=2}),
@@ -19271,5 +19271,5 @@ s(284445,235929,{b=1,e=450,f=23,lvl=70}),
 s(284444,235928,{b=1,e=450,f=22,lvl=70})}})}}),
 i(236944,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}}),
 i(235911,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}}),
-i(235052,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}})}})}});
-end);
+i(235052,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}})}})}})
+end)

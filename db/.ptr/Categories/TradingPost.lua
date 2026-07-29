@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,crit,en,flt,h,mnt,n,p,q,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy;
 categories.TradingPost=
@@ -3213,5 +3213,5 @@ s(290218,242378,{cost={{"c",2032,175}},f=32,u=2}),
 s(290200,242350,{cost={{"c",2032,200}},f=23,u=2}),
 s(290222,242383,{cost={{"c",2032,175}},f=3,u=2}),
 s(290204,242354,{cost={{"c",2032,200}},f=35,u=2}),
-s(290226,242388,{cost={{"c",2032,150}},f=27,u=2})}})}})}})}});
-end);
+s(290226,242388,{cost={{"c",2032,150}},f=27,u=2})}})}})}})}})
+end)

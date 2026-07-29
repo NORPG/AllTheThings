@@ -1,6 +1,6 @@
-﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end
+﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return end
 ---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,crit,exp,faction,h,i,m,mnt,n,pvprank,q,qo,s,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
 categories.PVP=
@@ -46,7 +46,7 @@ pvprank(11,{pvp=1}),
 pvprank(12,{pvp=1}),
 pvprank(13,{pvp=1}),
 pvprank(14,{pvp=1})}}),
-h(-210,{awp=10400,pvp=1,r=2,symselector=22,g={
+h(-210,{awp=10400,pvp=1,r=2,symselector=21,g={
 h(-101,{pvp=1,g={
 s(163703,18825,{b=1,f=8,lvl=60,pvp=1,q=4}),
 s(163727,18867,{b=1,f=24,lvl=60,pvp=1,q=4}),
@@ -210,7 +210,7 @@ i(18862,{b=1,c={5},f=53,pvp=1,q=3}),
 i(18857,{b=1,c={4},f=53,pvp=1,q=3}),
 i(18858,{b=1,c={9},f=53,pvp=1,q=3}),
 i(18854,{b=1,c={1},f=53,pvp=1,q=3})}}),
-h(-211,{awp=11101,pvp=1,r=1,symselector=23,g={
+h(-211,{awp=11101,pvp=1,r=1,symselector=22,g={
 h(-101,{pvp=1,g={
 s(163709,18831,{b=1,f=22,lvl=60,pvp=1,q=4}),
 s(165286,23464,{b=1,f=23,lvl=60,pvp=1,q=4}),
@@ -1262,5 +1262,5 @@ i(20439,{b=1,f=52,lvl=18,pvp=1,q=3}),
 i(21567,{b=1,c={1,2,3,4},f=53,lvl=40,pvp=1,q=3,u=16}),
 i(21568,{b=1,c={1,2,3,4},f=53,lvl=20,pvp=1,q=3,u=16}),
 i(21565,{b=1,c={5,7,8,9,11},f=53,lvl=40,pvp=1,q=3,u=16}),
-i(21566,{b=1,c={5,7,8,9,11},f=53,lvl=20,pvp=1,q=3,u=16})}})}})}})}})}});
-end);
+i(21566,{b=1,c={5,7,8,9,11},f=53,lvl=20,pvp=1,q=3,u=16})}})}})}})}})}})
+end)

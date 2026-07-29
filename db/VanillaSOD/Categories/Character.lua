@@ -1,6 +1,6 @@
-﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end
+﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return end
 ---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,crit,faction,flt,h,i,mnt,r,s=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateRecipe,_.CreateItemSource;
 categories.Character=
@@ -25,7 +25,7 @@ ach(10,{rwp=90001}),
 ach(11,{rwp=90001}),
 ach(879,{providers={{"i",8586},{"i",12302},{"i",12303},{"i",12330},{"i",12351},{"i",12353},{"i",12354},{"i",13317},{"i",13326},{"i",13327},{"i",13328},{"i",13329},{"i",15292},{"i",15293}},rwp=10400,u=2}),
 ach(522),
-ach(16433,{awp=11403,OnUpdate=function(t)if t.collectible and _.Level>=60 then	local i,spellID=1,select(10,UnitBuff("player",1));while spellID do	if spellID==364001 then	t:SetAchievementCollected(t.achievementID,true);return false;end	i=i + 1;spellID=select(10,UnitBuff("player",i));end;t:SetAchievementCollected(t.achievementID,false);end	end,rwp=11500,u=2}),
+ach(16433,{awp=11403,OnUpdate=function(t)if t.collectible and _.Level>=60 then	local i,spellID=1,select(10,UnitBuff("player",1))while spellID do	if spellID==364001 then	t:SetAchievementCollected(t.achievementID,true)return false end	i=i + 1 spellID=select(10,UnitBuff("player",i))end t:SetAchievementCollected(t.achievementID,false)end	end,rwp=11500,u=2}),
 flt(100,{
 ach(2142),
 ach(2141)})}),
@@ -201,5 +201,5 @@ r(7809,{b=1,c={9},itemID=16346,lvl=20,q=1,rank=2}),
 r(7810,{b=1,c={9},itemID=16347,lvl=30,q=1,rank=3}),
 r(7811,{b=1,c={9},itemID=16348,lvl=40,q=1,rank=4}),
 r(11774,{b=1,c={9},itemID=16349,lvl=50,q=1,rank=5}),
-r(11775,{b=1,c={9},itemID=16350,lvl=60,q=1,rank=6})}})})}});
-end);
+r(11775,{b=1,c={9},itemID=16350,lvl=60,q=1,rank=6})}})})}})
+end)

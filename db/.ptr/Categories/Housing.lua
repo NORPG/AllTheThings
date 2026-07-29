@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,campsite,cq,crit,cu,de,exp,flt,fp,h,hqt,i,m,n,o,prof,q,r,title=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateExploration,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateTitle;
 categories.Housing=
@@ -1471,5 +1471,5 @@ n(240465,{coords={
 n(255297,{coords={
 [2351]={{54.1,59}}}}),
 n(255520,{coords={
-[2351]={{54.2,58}}}})})}})}});
-end);
+[2351]={{54.2,58}}}})})}})}})
+end)

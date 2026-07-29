@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,campsite,cq,crit,cu,de,en,exp,faction,flt,fp,h,hqt,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Delves=
@@ -3123,5 +3123,5 @@ ach(41105,{awp=110100,crs={225401},maps={2249,2250,2251,2259,2269,2277,2299,2301
 ach(40819,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452,2502,2503,2505,2506,2510,2525,2528,2535,2545,2547}}),
 ach(40885,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452,2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},g={
 s(285229,237355,{awp=110100,f=3})}}),
-ach(40436,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452,2502,2503,2505,2506,2510,2525,2528,2535,2545,2547}})}})}});
-end);
+ach(40436,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452,2502,2503,2505,2506,2510,2525,2528,2535,2545,2547}})}})}})
+end)

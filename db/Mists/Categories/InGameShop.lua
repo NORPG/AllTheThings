@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,crit,flt,h,i,mnt,p,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateItemSource,_.CreateToy;
 categories.InGameShop=
@@ -71,5 +71,5 @@ toy(184871,{b=1,q=3,u=3}),
 toy(198647,{b=1,q=4,u=3}),
 toy(33219,{b=1,q=3,u=3}),
 toy(32542,{b=1,q=3,u=3}),
-toy(38233,{b=1,q=3,u=3})}})}});
-end);
+toy(38233,{b=1,q=3,u=3})}})}})
+end)

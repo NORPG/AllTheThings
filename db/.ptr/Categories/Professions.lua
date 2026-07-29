@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,artifact,cat,cl,cq,crit,cu,de,en,faction,flt,h,heir,i,mnt,n,o,p,pn,prof,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCategory,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfessionNode,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Professions=
@@ -9140,5 +9140,5 @@ cu(3160,{requireSkill=197})}}),
 q(93543,{isWeekly=1,providers={{"i",259203}},requireSkill=197,g={
 cu(3160,{requireSkill=197})}}),
 q(93542,{isWeekly=1,providers={{"i",259202}},requireSkill=197,g={
-cu(3160,{requireSkill=197})}})}})}})})}});
-end);
+cu(3160,{requireSkill=197})}})}})}})})}})
+end)

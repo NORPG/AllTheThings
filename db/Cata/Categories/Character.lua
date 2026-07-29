@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,crit,faction,flt,gach,h,heir,i,mnt,p,r,s,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
 categories.Character=
@@ -2016,5 +2016,5 @@ ach(1250,{pb=1,u=17,g={
 p(160,{b=1,itemID=40653,npcID=23274,pb=1,petTypeID=5,q=3,spellID=40990,u=17})}}),
 ach(1248,{pb=1}),
 ach(15,{pb=1}),
-ach(1017,{pb=1})}})}})}});
-end);
+ach(1017,{pb=1})}})}})}})
+end)

@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,crit,cs,d,faction,flt,h,heir,i,inst,mnt,n,o,p,prof,q,qo,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Holidays=
@@ -122,9 +122,9 @@ i(34020,{e=7,f=55,lvl=25,q=1}),
 i(34017,{e=7,f=55,q=1})}}),
 q(11400,{awp=20001,e=7,lvl=40,maps={1426},providers={{"i",34028}},r=2,rwp=20403,u=2}),
 q(11419,{awp=20001,e=7,lvl=40,maps={1411},providers={{"i",33978}},r=1,rwp=20403,u=2}),
-q(12278,{altQuests={12420},awp=20202,e=7,maps={1426},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2;t.OnUpdate=nil;end	end	end,providers={{"i",37736}},r=2,repeatable=1,g={
+q(12278,{altQuests={12420},awp=20202,e=7,maps={1426},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,providers={{"i",37736}},r=2,repeatable=1,g={
 crit(9860,{achID=2796,awp=30002,e=7,id=1})}}),
-q(12306,{altQuests={12421},awp=20202,e=7,maps={1411},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2;t.OnUpdate=nil;end	end	end,providers={{"i",37737}},r=1,repeatable=1,g={
+q(12306,{altQuests={12421},awp=20202,e=7,maps={1411},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,providers={{"i",37737}},r=1,repeatable=1,g={
 crit(9862,{achID=2796,awp=30002,e=7,id=1})}}),
 q(11117,{awp=30002,coords={
 [1426]={{48,39.5}}},e=7,isYearly=1,qgs={23486},r=2,g={
@@ -213,7 +213,7 @@ q(11447,{altQuests={11446},awp=20202,coords={
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(34020,{e=7,f=55,lvl=25,q=1}),
 i(34017,{e=7,f=55,q=1})}})}}),
-h(-47,{e=7,g={(function(t)if GetItemCount(t.itemID,true)<1 then	local any;if t.g then	for i,o in ipairs(t.g)do	if GetItemCount(o.itemID,true)>0 then	any=true;break;end	end	end	if not any then return t;end	end	t.u=nil;t.rwp=30002;if t.g then	for i,o in ipairs(t.g)do	o.u=nil;o.rwp=30002;end	end	return t;end)(
+h(-47,{e=7,g={(function(t)if GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=30002 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=30002 end	end	return t end)(
 s(143353,33016,{awp=20403,b=1,e=7,f=2,filterForRWP=2,lore="This stein was the reward from the 2008 Brewfest.",q=3,rwp=30002,u=2,g={
 s(143354,33017,{b=1,coords={
 [1426]={{48.8,39.8}}},e=7,f=2,filterForRWP=2,providers={{"o",186183}},q=3,u=2}),
@@ -225,7 +225,7 @@ s(143356,33019,{b=1,coords={
 s(143357,33020,{b=1,coords={
 [1411]={{44.4,17.6}}},e=7,f=2,filterForRWP=2,providers={{"o",186186}},q=3,u=2}),
 s(143358,33021,{b=1,coords={
-[1411]={{43.6,17.6}}},e=7,f=2,filterForRWP=2,providers={{"o",186187}},q=3,u=2})}})),(function(t)if GetItemCount(t.itemID,true)<1 then	local any;if t.g then	for i,o in ipairs(t.g)do	if GetItemCount(o.itemID,true)>0 then	any=true;break;end	end	end	if not any then return t;end	end	t.u=nil;t.rwp=40001;if t.g then	for i,o in ipairs(t.g)do	o.u=nil;o.rwp=40001;end	end	return t;end)(
+[1411]={{43.6,17.6}}},e=7,f=2,filterForRWP=2,providers={{"o",186187}},q=3,u=2})}})),(function(t)if GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=40001 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=40001 end	end	return t end)(
 s(145411,37892,{awp=30002,b=1,e=7,f=2,filterForRWP=2,lore="This stein was the reward from the 2009 & 2010 Brewfest.",q=3,rwp=40001,g={
 s(145412,37893,{b=1,coords={
 [1426]={{48.8,39.8}}},e=7,f=2,filterForRWP=2,providers={{"o",186183}},q=3}),
@@ -237,7 +237,7 @@ s(145416,37897,{b=1,coords={
 s(145415,37896,{b=1,coords={
 [1411]={{44.4,17.6}}},e=7,f=2,filterForRWP=2,providers={{"o",186186}},q=3}),
 s(145414,37895,{b=1,coords={
-[1411]={{43.6,17.6}}},e=7,f=2,filterForRWP=2,providers={{"o",186187}},q=3})}})),(function(t)if GetItemCount(t.itemID,true)<1 then	local any;if t.g then	for i,o in ipairs(t.g)do	if GetItemCount(o.itemID,true)>0 then	any=true;break;end	end	end	if not any then return t;end	end	t.u=nil;t.rwp=20403;if t.g then	for i,o in ipairs(t.g)do	o.u=nil;o.rwp=20403;end	end	return t;end)(
+[1411]={{43.6,17.6}}},e=7,f=2,filterForRWP=2,providers={{"o",186187}},q=3})}})),(function(t)if GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=20403 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=20403 end	end	return t end)(
 s(143256,32912,{awp=20001,b=1,e=7,f=2,filterForRWP=2,lore="This stein was the reward from the 2007 Brewfest.",q=3,rwp=20403,u=2,g={
 s(143259,32915,{b=1,coords={
 [1426]={{48.8,39.8}}},e=7,f=2,filterForRWP=2,providers={{"o",186183}},q=3,u=2}),
@@ -250,7 +250,7 @@ s(143263,32919,{b=1,coords={
 [1411]={{44.4,17.6}}},e=7,f=2,filterForRWP=2,providers={{"o",186186}},q=3,u=2}),
 s(143264,32920,{b=1,coords={
 [1411]={{43.6,17.6}}},e=7,f=2,filterForRWP=2,providers={{"o",186187}},q=3,u=2})}}))}}),
-h(-58,{e=7,OnTooltip=function(t,tooltipInfo)local itemID=37829;local item=_.SearchForField("itemID",itemID)[1];local icon="|T"..item.icon..":0|t";local link=item.link or RETRIEVING_DATA;tinsert(tooltipInfo,{left=" "});tinsert(tooltipInfo,{left="One-Time Quests:"});local coren=_.IsQuestFlaggedCompleted(12491);tinsert(tooltipInfo,{left=" "..icon.." 40 for Direbrew's Dire Brew",right=_.GetCompletionIcon(coren)});local pink=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 11120 or 11118);tinsert(tooltipInfo,{left=" "..icon.." 40 for Pink Elekks On Parade",right=_.GetCompletionIcon(pink)});local chucked=_.IsQuestFlaggedCompleted(12022);tinsert(tooltipInfo,{left=" "..icon.." 10 for Chug and Chuck",right=_.GetCompletionIcon(chucked)});local back=_.IsQuestFlaggedCompleted(11122);tinsert(tooltipInfo,{left=" "..icon.." 10 for There And Back Again",right=_.GetCompletionIcon(back)});tinsert(tooltipInfo,{left=" "});tinsert(tooltipInfo,{left="Daily Quests:"});local barked=_.IsQuestFlaggedCompleted(11293);tinsert(tooltipInfo,{left=" "..icon.." 15 for Brewfest Barking",right=_.GetCollectionIcon(barked)});local invasion=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 12192 or 12020);tinsert(tooltipInfo,{left=" "..icon.." 10 for Dark Iron Invasion",right=_.GetCollectionIcon(invasion)});tinsert(tooltipInfo,{left=" "..icon.." 0-22 for Ram Racing Dialog** (every 18 hours)"});tinsert(tooltipInfo,{left="** Log out in a rested location and it will be reset after 8 hours."});local today=date("*t");local start=time({day=20,month=9,year=today.year,hour=0,min=0,sec=0});local ends=time({day=6,month=10,year=today.year,hour=0,min=0,sec=0});local now=time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0});if now>=start and now<=ends then	local secondsPerDay=86400;local totalDays=math.floor(difftime(ends,start)/ secondsPerDay);local m=60 +(25 * totalDays);tinsert(tooltipInfo,{left=" "});tinsert(tooltipInfo,{left="Currently",right=GetItemCount(itemID,true).."x "..icon.." "..link});tinsert(tooltipInfo,{left="Total Possible*",right=m.." - "..(m +(22 * totalDays)).."x "..icon.." "..link});local remaining=math.floor(difftime(ends,now)/ secondsPerDay);if remaining<=1 then	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0);tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount + 22).."x "..icon.." "..link});else	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)+(25 * remaining);tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount +(22 * remaining)).."x "..icon.." "..link});end	tinsert(tooltipInfo,{left="* Based on if you didn't miss a single day and only whole days count."});end	end,g={
+h(-58,{e=7,OnTooltip=function(t,tooltipInfo)local itemID=37829 local item=_.SearchForField("itemID",itemID)[1] local icon="|T"..item.icon..":0|t" local link=item.link or RETRIEVING_DATA tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="One-Time Quests:"})local coren=_.IsQuestFlaggedCompleted(12491)tinsert(tooltipInfo,{left=" "..icon.." 40 for Direbrew's Dire Brew",right=_.GetCompletionIcon(coren)})local pink=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 11120 or 11118)tinsert(tooltipInfo,{left=" "..icon.." 40 for Pink Elekks On Parade",right=_.GetCompletionIcon(pink)})local chucked=_.IsQuestFlaggedCompleted(12022)tinsert(tooltipInfo,{left=" "..icon.." 10 for Chug and Chuck",right=_.GetCompletionIcon(chucked)})local back=_.IsQuestFlaggedCompleted(11122)tinsert(tooltipInfo,{left=" "..icon.." 10 for There And Back Again",right=_.GetCompletionIcon(back)})tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Daily Quests:"})local barked=_.IsQuestFlaggedCompleted(11293)tinsert(tooltipInfo,{left=" "..icon.." 15 for Brewfest Barking",right=_.GetCollectionIcon(barked)})local invasion=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 12192 or 12020)tinsert(tooltipInfo,{left=" "..icon.." 10 for Dark Iron Invasion",right=_.GetCollectionIcon(invasion)})tinsert(tooltipInfo,{left=" "..icon.." 0-22 for Ram Racing Dialog** (every 18 hours)"})tinsert(tooltipInfo,{left="** Log out in a rested location and it will be reset after 8 hours."})local today=date("*t")local start=time({day=20,month=9,year=today.year,hour=0,min=0,sec=0})local ends=time({day=6,month=10,year=today.year,hour=0,min=0,sec=0})local now=time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0})if now>=start and now<=ends then	local secondsPerDay=86400 local totalDays=math.floor(difftime(ends,start)/ secondsPerDay)local m=60 +(25 * totalDays)tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Currently",right=GetItemCount(itemID,true).."x "..icon.." "..link})tinsert(tooltipInfo,{left="Total Possible*",right=m.." - "..(m +(22 * totalDays)).."x "..icon.." "..link})local remaining=math.floor(difftime(ends,now)/ secondsPerDay)if remaining<=1 then	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount + 22).."x "..icon.." "..link})else	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)+(25 * remaining)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount +(22 * remaining)).."x "..icon.." "..link})end	tinsert(tooltipInfo,{left="* Based on if you didn't miss a single day and only whole days count."})end	end,g={
 n(23604,{awp=20202,coords={
 [1411]={{43.9,17.9}}},e=7,r=1,g={
 i(34065,{e=7,f=55,lvl=5,q=1})}}),
@@ -326,7 +326,7 @@ i(37737,{b=1,cost={{"i",37829,200}},e=7,q=1,r=1}),
 i(33978,{awp=20001,b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=1,rwp=20403,u=2})}}),
 flt(102,{e=7,g={
 toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}})}}),
-n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest.";else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	end	end,r=1,sourceQuests={11419},g={
+n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest." else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!" if t.g then	for i,item in ipairs(t.g)do	item.u=nil end	end	end	end,r=1,sourceQuests={11419},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=40,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=20,q=3,rwp=20403,u=2})}}),
 n(24501,{awp=20202,coords={
@@ -351,7 +351,7 @@ i(33025,{e=7,f=55,lvl=55,q=1}),
 i(34064,{e=7,f=55,lvl=25,q=1}),
 i(33026,{e=7,f=55,lvl=65,q=1})}}),
 n(24468,{awp=20202,coords={
-[1426]={{46.4,40.3}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest.";else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	end	end,r=2,sourceQuests={11400},g={
+[1426]={{46.4,40.3}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest." else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!" if t.g then	for i,item in ipairs(t.g)do	item.u=nil end	end	end	end,r=2,sourceQuests={11400},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=40,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=20,q=3,rwp=20403,u=2})}}),
 n(23533,{awp=20202,coords={
@@ -558,7 +558,7 @@ qo(1,{coords={
 [1454]={{52.6,69.6}}},crs={14480},e=13,providers={{"i",7228}}})}})}})}}),
 h(-37,{e=1,maps={1412,1429,1952},g={
 h(-31,{awp=30002,e=1,g={
-faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerTierTurnIn=250;local tierOneMaxRep=500;if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep);else	local tierTwoMaxRep=1050;if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep);else	local tierThreeMaxRep=1700;if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep);else	local tierFourMaxRep=2500;if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep);else	local tierFiveMaxRep=5001;if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep);end	end	end	end	end	local repPerDeckTurnIn=350;addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000);end	end,g={
+faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo local repPerTierTurnIn=250 local tierOneMaxRep=500 if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep)else	local tierTwoMaxRep=1050 if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep)else	local tierThreeMaxRep=1700 if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep)else	local tierFourMaxRep=2500 if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep)else	local tierFiveMaxRep=5001 if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep)end	end	end	end	end	local repPerDeckTurnIn=350 addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000)end	end,g={
 crit(8823,{achID=2336,id=8,u=13})}})}}),
 h(-45,{e=1,g={
 q(7930,{coords={
@@ -2035,7 +2035,7 @@ q(24803,{coords={
 [125]={{52.6,65.6}}},cost={{"i",50289,1}},e=161,isWeekly=1,qgs={38294},u=30,g={
 s(178413,50287,{b=1,e=161,f=2,learnedAt=200,q=3,requireSkill=356,u=30}),
 heir(50255,{b=1,e=161,q=7,rwp=60100,u=30}),
-crit(12910,{achID=306,awp=30002,e=161,id=1,u=30})}})}}),
+crit(12910,{achID=306,e=6,id=1,u=30})}})}}),
 prof(356,{e=161,u=30,g={
 i(50289,{b=1,description="Can be fished from any school of fish in Northrend.",e=161,q=1,u=30})}})}}),
 h(-579,{awp=11101,e=9,g={
@@ -4058,7 +4058,7 @@ q(8193,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
 s(130584,19970,{b=1,e=6,f=57,learnedAt=300,q=3,requireSkill=356}),
 i(19979,{b=1,e=6,f=53,q=3}),
-crit(406,{achID=306,awp=30002,e=161,id=1,u=30})}}),
+crit(406,{achID=306,awp=30300,e=6,id=1,rwp=50004,u=30})}}),
 q(8225,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19803,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
 s(130583,19969,{b=1,e=6,f=4,lvl=35,q=2,requireSkill=356})}}),
@@ -4081,5 +4081,5 @@ ach(2398,{e=242,u=1}),
 p(202,{b=1,e=242,itemID=44819,petTypeID=8,q=1,spellID=61855,u=1})}}),
 h(-594,{e=242,u=1,g={
 ach(4400,{e=242,u=1}),
-p(243,{b=1,e=242,itemID=49362,petTypeID=2,q=1,spellID=69002,u=1})}})}})}});
-end);
+p(243,{b=1,e=242,itemID=49362,petTypeID=2,q=1,spellID=69002,u=1})}})}})}})
+end)

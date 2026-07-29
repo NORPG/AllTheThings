@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,crit,flt,h,i,p,prof,q,qo,r,s,settings,sp,title,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateExpansion;
 categories.Professions=
@@ -1500,9 +1500,9 @@ r(73506,{learnedAt=525,requireSkill=755,u=40}),
 r(73504,{learnedAt=525,requireSkill=755,u=40}),
 r(73505,{learnedAt=525,requireSkill=755,u=40}),
 r(73497,{learnedAt=460,requireSkill=755,u=40}),
-r(99543,{awp=40003,learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,requireSkill=755,rwp=50004,u=40}),
-r(99544,{awp=40003,learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,requireSkill=755,rwp=50004,u=40}),
-r(99542,{awp=40003,learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,requireSkill=755,rwp=50004,u=40})}}),
+r(99543,{awp=40003,learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,requireSkill=755,rwp=50004,u=40}),
+r(99544,{awp=40003,learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,requireSkill=755,rwp=50004,u=40}),
+r(99542,{awp=40003,learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,requireSkill=755,rwp=50004,u=40})}}),
 cat(842,{u=40,g={
 r(73498,{learnedAt=525,requireSkill=755,u=40}),
 r(1216328,{awp=40200,learnedAt=515,requireSkill=755,u=41}),
@@ -1514,9 +1514,9 @@ r(73495,{learnedAt=450,requireSkill=755,u=40}),
 r(73494,{learnedAt=425,requireSkill=755,u=40}),
 r(98921,{learnedAt=525,requireSkill=755,u=40}),
 r(73502,{learnedAt=525,requireSkill=755,u=40}),
-r(99540,{awp=40003,learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,requireSkill=755,rwp=50004,u=40}),
-r(99541,{awp=40003,learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,requireSkill=755,rwp=50004,u=40}),
-r(99539,{awp=40003,learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,requireSkill=755,rwp=50004,u=40})}}),
+r(99540,{awp=40003,learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,requireSkill=755,rwp=50004,u=40}),
+r(99541,{awp=40003,learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,requireSkill=755,rwp=50004,u=40}),
+r(99539,{awp=40003,learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,requireSkill=755,rwp=50004,u=40})}}),
 cat(843,{u=40,g={
 r(73627,{learnedAt=460,requireSkill=755,u=40}),
 r(73625,{learnedAt=450,requireSkill=755,u=40}),
@@ -2089,5 +2089,5 @@ q(10832,{altQuests={10831,10833},coords={
 qo(1,{cost={{"i",31742,1}},crs={22408},providers={{"i",31741}},requireSkill=197,u=2}),
 r(26797,{requireSkill=197,u=2})}})}})}}),
 x(3,{requireSkill=197}),
-x(4,{requireSkill=197})})}});
-end);
+x(4,{requireSkill=197})})}})
+end)

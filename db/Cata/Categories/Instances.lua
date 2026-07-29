@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cl,crit,cs,cu,d,e,faction,flt,gach,gcat,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateGuildAchievementCriteria,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Instances=
@@ -3425,7 +3425,7 @@ e(371,{npcID=9319,g={
 s(124364,11628,{b=1,f=32,lvl=47,q=3}),
 s(124365,11629,{b=1,f=31,lvl=47,q=3}),
 s(124363,11627,{b=1,f=6,lvl=47,q=3}),
-s(124359,11623,{b=1,f=3,lvl=47,q=3})}}),(function(t)if GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+s(124359,11623,{b=1,f=3,lvl=47,q=3})}}),(function(t)if GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16059,{cost={{"i",21986,1}},description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",providers={{"o",181074}},rwp=40003,u=2,g={
 i(22047,{q=1,u=2}),
 s(132704,22305,{b=1,c={5,8,9},f=4,lvl=56,q=3,u=2}),
@@ -3910,7 +3910,7 @@ s(125506,13179,{b=1,f=6,lvl=55,q=3}),
 s(128385,16676,{f=6,lvl=54,q=3,rwp=40003,u=2}),
 s(132630,22231,{b=1,f=4,lvl=55,q=3}),
 i(28972,{awp=20001,b=1,f=36,lvl=55,q=3,rwp=50004}),
-i(13173,{awp=11101,b=1,lvl=55,q=3,rwp=20001,u=2})}}),(function(t)if GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+i(13173,{awp=11101,b=1,lvl=55,q=3,rwp=20001,u=2})}}),(function(t)if GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16080,{cost={{"i",22057,1},{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=40003,u=2,g={
 qo(2,{providers={{"i",21984}},questID=8966,u=2}),
 qo(2,{providers={{"i",22046}},questID=8989,u=2}),
@@ -4058,7 +4058,7 @@ s(125293,12964,{b=1,f=6,lvl=55,q=3}),
 s(132710,22311,{b=1,c={5,8,9},f=4,lvl=56,q=3,rwp=40003,u=2}),
 i(19227,{q=3,u=13}),
 prof(393,{
-i(12731,{q=4})})}),(function(t)if GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+i(12731,{q=4})})}),(function(t)if GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16042,{cost={{"i",22057,1},{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",u=15,g={
 s(132735,22336,{b=1,f=8,lvl=55,q=3,u=15}),
 s(132734,22335,{b=1,f=28,lvl=55,q=3,u=15}),
@@ -4313,7 +4313,7 @@ s(129256,18308,{b=1,f=5,lvl=36,q=3,u=1101}),
 s(129267,18319,{b=1,f=5,filterForRWP=5,lvl=36,q=3,u=1101}),
 s(129261,18313,{b=1,f=6,filterForRWP=6,lvl=36,q=3,u=1101}),
 s(129254,18306,{b=1,f=4,lvl=36,q=3,u=1101})}}),
-n(11491,{description="Talk to him for him to break down the door.",u=1101}),(function(t)if GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+n(11491,{description="Talk to him for him to break down the door.",u=1101}),(function(t)if GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16097,{cost={{"i",22057,1},{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",rwp=40003,u=2,g={
 qo(2,{awp=10200,providers={{"i",21984}},questID=8967,u=15}),
 qo(2,{awp=10200,providers={{"i",22046}},questID=8990,u=15}),
@@ -11764,7 +11764,7 @@ ach(576,{sym={{"meta_achievement",562,566,568,564,572,574}},u=30}),
 ach(2187,{rwp=40003,u=2,g={
 title(109,{u=2})}})}}),
 h(-45,{u=30,g={
-q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,providers={{"i",44569}},u=30})}}),
+q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,providers={{"i",44569}},u=30})}}),
 h(-78,{u=30,g={
 e(1601,{lore="Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",npcID=15956,u=30,g={
 crit(5100,{achID=562,u=30}),
@@ -11827,7 +11827,7 @@ ach(572,{u=30}),
 ach(2146,{u=30,g={
 crit(7570,{achID=2137,id=9,u=30})}}),
 crit(7158,{achID=578,OnUpdate=_.OnUpdateDB.DEDICATED_10M,u=30}),
-i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,q=4,u=30})}}),
+i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,q=4,u=30})}}),
 e(1615,{lore="He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",npcID=15990,u=30,g={
 ach(574,{u=30}),
 ach(2184,{crs={16428},u=30,g={
@@ -12322,7 +12322,7 @@ inst(756,{awp=30002,coords={
 d(3,{u=30,g={
 h(-45,{u=30,g={
 q(13384,{coords={
-[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,qgs={27990},sourceQuests={13372},u=30,g={
+[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,qgs={27990},sourceQuests={13372},u=30,g={
 qo(1,{providers={{"i",44650}},u=30}),
 i(44658,{b=1,f=51,q=4,u=30}),
 i(44660,{b=1,f=51,q=4,u=30}),
@@ -12527,7 +12527,7 @@ s(175882,45694,{b=1,f=4,lvl=80,q=4,u=31}),
 i(45675,{b=1,f=52,lvl=80,q=4,u=31}),
 crit(9974,{achID=2886,u=31})}}),
 e(1650,{npcID=32871,u=31,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3004,{rwp=40003,u=2}),
 ach(3036,{rwp=70305,u=31,g={
 title(129,{u=31})}}),
@@ -12717,7 +12717,7 @@ s(176313,46346,{b=1,f=6,lvl=80,q=4,u=31}),
 i(46010,{b=1,f=52,lvl=80,q=4,u=31}),
 crit(9948,{achID=2892,u=31})}}),
 e(1649,{npcID=33288,u=31,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3159,{rwp=70305,u=31,g={
 i(46312,{b=1,f=53,lvl=80,q=4,u=31})}}),
 gach(5019,{awp=40003,u=31}),
@@ -12929,7 +12929,7 @@ i(45254,{b=1,c={2,6},lvl=80,q=4,rwp=50004,u=31}),
 i(45255,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004,u=31}),
 crit(9957,{achID=2887,u=31})}}),
 e(1650,{npcID=32871,u=31,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3005,{rwp=40003,u=2}),
 ach(3037,{rwp=70305,u=31,g={
 title(130,{u=31})}}),
@@ -13142,7 +13142,7 @@ i(45509,{b=1,c={7,11},lvl=80,q=4,rwp=50004,u=31}),
 i(45145,{b=1,c={2,6},lvl=80,q=4,rwp=50004,u=31}),
 crit(9964,{achID=2893,u=31})}}),
 e(1649,{npcID=33288,u=31,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3164,{rwp=70305,u=31,g={
 ach(4626,{providers={{"i",45693}},u=31}),
 mnt(63796,{b=1,itemID=45693,lvl=70,q=4,u=31})}}),
@@ -15166,7 +15166,7 @@ s(178724,50784,{b=1,f=6,lvl=80,q=4,u=33}),
 s(202580,50778,{b=1,f=5,lvl=80,q=4,u=33}),
 s(178723,50783,{b=1,f=5,lvl=80,q=4,u=33}),
 i(50342,{b=1,f=53,lvl=80,q=4,u=33}),
-crit(12773,{achID=4531,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(12773,{achID=4531,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4536,{u=33,g={
 crit(12919,{achID=4602,awp=30002,id=1,u=33})}}),
@@ -15376,7 +15376,7 @@ s(179774,51919,{b=1,f=6,lvl=80,q=4,u=33}),
 s(179780,51925,{b=1,f=5,lvl=80,q=4,u=33}),
 s(179775,51920,{b=1,f=5,lvl=80,q=4,u=33}),
 i(50343,{b=1,f=53,lvl=80,q=4,u=33}),
-crit(13104,{achID=4628,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(13104,{achID=4628,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4536,{u=33,g={
 crit(12919,{achID=4602,awp=30002,id=1,u=33})}}),
@@ -15612,7 +15612,7 @@ s(178216,49983,{b=1,f=7,lvl=80,q=4,u=33}),
 s(178223,49993,{b=1,f=6,lvl=80,q=4,u=33}),
 i(49985,{b=1,f=52,lvl=80,q=4,u=33}),
 i(49990,{b=1,f=52,lvl=80,q=4,u=33}),
-crit(12948,{achID=4604,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(12948,{achID=4604,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4612,{u=33,g={
 crit(13018,{achID=4603,awp=30002,id=1,u=33})}}),
@@ -15837,7 +15837,7 @@ s(178608,50639,{b=1,f=7,lvl=80,q=4,u=33}),
 s(178618,50652,{b=1,f=6,lvl=80,q=4,u=33}),
 i(50642,{b=1,f=52,lvl=80,q=4,u=33}),
 i(50644,{b=1,f=52,lvl=80,q=4,u=33}),
-crit(13106,{achID=4632,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(13106,{achID=4632,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4612,{u=33,g={
 crit(13018,{achID=4603,awp=30002,id=1,u=33})}}),
@@ -18574,19 +18574,19 @@ i(67130,{f=51,lvl=85,q=4,u=40})}}),
 n(50063,{coords={
 [249]={{38,60.6}}},isRaid=1,u=40,g={
 s(212429,69877,{awp=40100,f=5,lvl=85,q=4,u=4001}),
-s(211113,67240,{f=5,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}}),
+s(211113,67240,{f=5,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50056,{coords={
 [198]={{37.6,73.4},{40.4,81.8}}},isRaid=1,u=40,g={
 s(212419,69842,{awp=40100,f=7,lvl=85,q=4,u=4001}),
-s(211108,67235,{f=7,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}}),
+s(211108,67235,{f=7,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50089,{coords={
 [241]={{51,7.6},{52.2,10.6},{56.6,11},{57.2,7.8},{59.8,6.8}}},isRaid=1,u=40,g={
 s(212421,69844,{awp=40100,f=20,lvl=85,q=4,u=4001}),
-s(211118,67246,{f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}}),
+s(211118,67246,{f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50009,{coords={
 [204]={{63.4,32.6},{65.8,20.4},{71.8,18.4},{75.6,36.6},{77,25.4}}},isRaid=1,u=40,g={
 s(212420,69843,{awp=40100,f=29,lvl=85,q=4,u=4001}),
-s(211036,67153,{f=29,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}}),
+s(211036,67153,{f=29,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50005,{coords={
 [204]={{39.4,71.9},{40.4,73.8},{41,76.6},{41.8,73.4},{42.2,76}},
 [205]={{38.5,67},{46.2,48.6},{57.2,80.8},{66.4,44.2}}},isRaid=1,maps={203},u=40,g={
@@ -18594,7 +18594,7 @@ mnt(98718,{itemID=67151,lvl=78,q=4,u=40})}}),
 n(50061,{coords={
 [207]={{40.6,52.4},{45.4,39},{45.4,63.8},{56.6,42.6},{57.2,59}}},isRaid=1,u=40,g={
 s(212428,69876,{awp=40100,f=6,lvl=85,q=4,u=4001}),
-s(211112,67239,{f=6,lvl=84,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}})}}),
+s(211112,67239,{f=6,lvl=84,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}})}}),
 inst(75,{awp=40003,coords={
 [2340]={{46.1,47.9}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=282,savedInstanceID=757,u=40,g={
 h(-12,{u=40,g={
@@ -21543,5 +21543,5 @@ s(212370,69620,{b=1,f=20,lvl=85,q=4,u=4001}),
 s(212371,69621,{b=1,f=20,lvl=85,q=4,u=4001}),
 s(212373,69623,{b=1,f=5,lvl=85,q=4,u=4001}),
 s(212377,69627,{b=1,f=8,lvl=85,q=4,u=4001}),
-n(52167,{description="|CFFFF0000At least one MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r\n\nIn Phase 2 their spirits will spawn and they must be pulled up to Hakkar's chains in order to break them with their ability 'Body Slam'.",u=4001})}})}})}})}})}});
-end);
+n(52167,{description="|CFFFF0000At least one MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r\n\nIn Phase 2 their spirits will spawn and they must be pulled up to Hakkar's chains in order to break them with their ability 'Body Slam'.",u=4001})}})}})}})}})}})
+end)

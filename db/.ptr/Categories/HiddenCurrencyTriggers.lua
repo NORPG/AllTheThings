@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local cu,x=_.CreateCurrencyClass,_.CreateExpansion;
 categories.HiddenCurrencyTriggers={
@@ -111,5 +111,5 @@ cu(2874),
 cu(2875),
 cu(2876),
 cu(3000),
-cu(3001)}})})};
-end);
+cu(3001)}})})}
+end)

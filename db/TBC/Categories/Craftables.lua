@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,flt,h,i,mnt,n,o,p,prof,r,s,sp,toy,x=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
 categories.Craftables=
@@ -2718,5 +2718,5 @@ i(21845,{coords={
 [1952]={{45.02,23.54}}},description="Coordinates are for select Moonwells around the world.",q=3,u=17}),
 i(24272,{coords={
 [1948]={{58.3,70.9}}},q=3,u=17}),
-i(24271,{maps_disp={1953},q=3,u=17})}})}})}})}});
-end);
+i(24271,{maps_disp={1953},q=3,u=17})}})}})}})}})
+end)

@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local flt,h,i,q,s,x=_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
 categories.Unsorted={
@@ -2265,5 +2265,5 @@ q(94869),
 q(94870),
 q(94882),
 q(94883),
-q(95215,{description="Category: |cFFf09f26Demon Hunter|r"})})};
-end);
+q(95215,{description="Category: |cFFf09f26Demon Hunter|r"})})}
+end)

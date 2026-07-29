@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local crit,de,flt,h,i,mnt,p,q,s,toy,x=_.CreateAchievementCriteria,_.CreateDecor,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.Unsorted={
@@ -3627,5 +3627,5 @@ q(94010),
 q(94580),
 q(94582),
 q(94831,{description="Area: |cFFf09f26Valdrakken|r"}),
-q(95215,{description="Category: |cFFf09f26Demon Hunter|r"})})};
-end);
+q(95215,{description="Category: |cFFf09f26Demon Hunter|r"})})}
+end)

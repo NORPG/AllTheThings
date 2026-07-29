@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,crit,de,en,flt,h,i,mnt,p,q,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy;
 categories.InGameShop=
@@ -32,12 +32,12 @@ p(3253,{awp=100105,itemID=190608,npcID=185611,spellID=367778,u=3}),
 p(2780,{awp=90005,npcID=158142,u=3}),
 p(1386,{awp=100100,itemID=109014,npcID=77137,spellID=155748,u=3,g={
 crit(24600,{achID=8917,id=3,u=3})}}),
-p(4264,{awp=110105,b=1,itemID=208446,npcID=209163,spellID=419467,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(4264,{awp=110105,b=1,itemID=208446,npcID=209163,spellID=419467,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 p(4894,{awp=110207,itemID=252650,npcID=251511,spellID=1254822,u=3})),
 p(297,{awp=40003,b=1,itemID=68385,npcID=51600,spellID=95787,u=3}),
 p(3249,{awp=90205,b=1,itemID=190586,npcID=185586,spellID=367702,u=3}),
 p(671,{awp=80300,itemID=85871,npcID=63832,spellID=124660,u=3,g={
-crit(34637,{achID=6848,awp=50004,id=3,rwp=50407,u=2})}}),
+crit(34637,{achID=6848,id=3,u=2})}}),
 p(3175,{awp=100200,npcID=181535,u=3}),
 p(4855,{awp=110205,itemID=246342,npcID=246662,rwp=110207,spellID=1241760,u=2}),
 p(4969,{awp=120001,description="Part of the charity Roofus Pack.",itemID=262982,npcID=256698,rwp=120005,spellID=1269627,u=3}),
@@ -54,7 +54,7 @@ p(4591,{b=1,itemID=224260,npcID=224718,spellID=452223,u=3})}})}}),
 p(4684,{awp=110007,itemID=231310,npcID=232533,spellID=468228,u=3}),
 p(2051,{awp=70300,b=1,itemID=147900,npcID=122033,spellID=243499,u=3}),
 p(2184,{awp=80001,b=1,itemID=160587,npcID=138742,spellID=272771,u=3}),
-p(4568,{awp=110105,b=1,itemID=223498,npcID=223691,spellID=449280,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(4568,{awp=110105,b=1,itemID=223498,npcID=223691,spellID=449280,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 p(4717,{awp=110007,itemID=233190,npcID=234439,spellID=473300,u=3})),
 p(156,{awp=90005,b=1,itemID=32588,npcID=23234,rwp=90105,spellID=40549,u=2}),
 p(2185,{awp=80001,b=1,itemID=160588,npcID=138741,rwp=100107,spellID=272772,u=2}),
@@ -73,12 +73,12 @@ i(68384,{awp=40003,b=1,f=101,rwp=80300,u=2}),
 p(296,{awp=40003,b=1,itemID=68618,npcID=51601,r=2,rwp=80300,spellID=95786,u=2}),
 p(298,{awp=40003,b=1,itemID=68619,npcID=51649,r=1,rwp=80300,spellID=95909,u=2}),
 p(1691,{awp=60202,itemID=128426,npcID=95841,rwp=100107,spellID=190020,u=2,g={
-crit(28787,{achID=10321,id=1,rwp=70305,u=2})}}),
+crit(28787,{achID=10321,id=1,u=2})}}),
 p(248,{awp=30202,b=1,itemID=49665,npcID=36911,rwp=100002,spellID=69541,u=2}),
 p(4682,{awp=110005,b=1,itemID=231294,npcID=232502,rwp=110007,spellID=468186,u=2}),
 p(2890,{awp=100105,b=1,itemID=190601,npcID=171025,rwp=100107,spellID=333570,u=2}),
 p(2143,{awp=70305,itemID=153541,npcID=129049,rwp=100107,spellID=255702,u=2,g={
-crit(38154,{achID=12232,id=1,rwp=80307,u=2})}}),
+crit(38154,{achID=12232,id=1,u=2})}}),
 p(246,{awp=30302,b=1,description="This item is available only if you purchase the Plush Toy and redeem the code.",itemID=49663,npcID=36909,rwp=80300,spellID=69536,u=2})}}),
 flt(55,{awp=50400,u=3,g={
 i(103557,{f=55,rwp=60002,spellID=146939,u=2}),
@@ -647,5 +647,5 @@ toy(166777,{awp=80105,b=1,rwp=100100,u=2}),
 toy(210467,{awp=100205,b=1,u=3}),
 toy(208883,{awp=110207,b=1,u=3}),
 toy(193588,{awp=100200,b=1,u=3}),
-toy(166779,{awp=80105,b=1,u=3})}})}});
-end);
+toy(166779,{awp=80105,b=1,u=3})}})}})
+end)

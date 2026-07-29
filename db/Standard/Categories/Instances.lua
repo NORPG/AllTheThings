@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cd,cl,cq,crit,cs,cu,d,de,e,en,ens,faction,flt,follower,fp,gach,gcat,h,heir,hqt,i,ill,inst,m,mm,mnt,n,o,p,prof,q,r,rfl,s,settings,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGuildAchievement,_.CreateGuildAchievementCriteria,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Instances=
@@ -3349,7 +3349,7 @@ e(371,{npcID=9319,g={
 s(4205,11628,{b=1,f=32,lvl=20,spellID=248218}),
 s(4206,11629,{b=1,f=31,lvl=20,spellID=248218}),
 s(4204,11627,{b=1,f=6,lvl=20}),
-s(4200,11623,{b=1,f=3,lvl=20})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+s(4200,11623,{b=1,f=3,lvl=20})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16059,{cost={{"i",21986,1}},description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",providers={{"o",181074}},rwp=40003,u=2,g={
 i(22047,{spellID=27739,u=6}),
 s(8779,22305,{b=1,c={5,8,9},f=4,lvl=23,u=6}),
@@ -3944,7 +3944,7 @@ s(7266,18319,{b=1,f=5,lvl=15}),
 s(7263,18313,{b=1,f=6,lvl=15}),
 s(7256,18306,{b=1,f=4,lvl=15}),
 i(18315,{b=1,f=52,lvl=15})}}),
-n(11491,{description="Talk to him for him to break down the door."}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+n(11491,{description="Talk to him for him to break down the door."}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16097,{cost={{"i",22057,1},{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",qis={21984,22046},rwp=40003,u=2,g={
 s(8784,22315,{b=1,f=23,lvl=23,u=6}),
 s(8783,22314,{b=1,f=29,lvl=23,u=6}),
@@ -4592,7 +4592,7 @@ s(4783,13175,{awp=100107,b=1,f=32,lvl=23}),
 i(13177,{b=1,f=51,lvl=23}),
 s(4784,13179,{b=1,f=6,lvl=23}),
 s(6807,16676,{f=6,lvl=23,rwp=40003,u=2}),
-s(8748,22231,{b=1,f=4,lvl=23})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+s(8748,22231,{b=1,f=4,lvl=23})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16080,{cost={{"i",22057,1},{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",qis={21984,22046},rwp=40003,u=2,g={
 s(8788,22322,{b=1,f=23,lvl=23,u=6}),
 s(8787,22319,{b=1,f=1,lvl=23,u=6}),
@@ -4743,7 +4743,7 @@ s(4612,12965,{b=1,f=4,lvl=23,u=2}),
 s(4611,12964,{b=1,f=6,lvl=23,u=2}),
 s(8781,22311,{b=1,c={5,8,9},f=4,lvl=23,rwp=40003,u=2}),
 prof(393,{u=2,g={
-i(12731,{u=2})}})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+i(12731,{u=2})}})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16042,{u=2,g={
 s(8796,22336,{b=1,f=8,lvl=23,u=6}),
 s(8795,22335,{b=1,f=28,lvl=23,u=6}),
@@ -5897,7 +5897,7 @@ s(7435,18693,{b=1,f=4,lvl=17,modID=1}),
 s(5348,14340,{b=1,f=4,lvl=17,modID=1}),
 s(5437,14502,{b=1,f=5,lvl=17,modID=1}),
 s(5439,14522,{b=1,f=6,lvl=17,modID=1}),
-s(7436,18694,{b=1,f=6,lvl=17,modID=1})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+s(7436,18694,{b=1,f=6,lvl=17,modID=1})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16118,{awp=100105,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",g={
 s(8793,22332,{b=1,f=25,lvl=17,modID=1}),
 s(8794,22333,{b=1,f=24,lvl=17,modID=1}),
@@ -6697,7 +6697,7 @@ i(12103,{b=1,f=51,lvl=18}),
 s(7453,18720,{b=1,f=4,lvl=18}),
 s(4847,13358,{b=1,f=5,lvl=18}),
 s(4852,13369,{b=1,f=4,lvl=18}),
-s(6856,16725,{b=1,f=7,lvl=23,rwp=40003,u=2})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+s(6856,16725,{b=1,f=7,lvl=23,rwp=40003,u=2})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 o(181083,{awp=100105,cost={{"i",22057,1},{"i",22051,1}},crs={16101,16102},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",qis={21984,22046},g={
 s(8791,22329,{b=1,f=1,lvl=24}),
 i(22327,{b=1,f=51,lvl=24}),
@@ -13587,7 +13587,7 @@ title(130)}),
 ach(12400,{
 crit(39522,{achID=12400}),
 crit(39523,{achID=12400})}),
-ach(3316,{lc={1,"lvl",31},OnUpdate=function(t)if _.Level>30 and not settings.AccountWide.Achievements then t.collectible=false;end end,g={
+ach(3316,{lc={1,"lvl",31},OnUpdate=function(t)if _.Level>30 and not settings.AccountWide.Achievements then t.collectible=false end end,g={
 title(131)}}),
 i(46052,{b=1,lvl=30}),
 i(46053,{b=1,lvl=30}),
@@ -16067,7 +16067,7 @@ s(24869,50784,{b=1,f=6,lvl=30,modID=1}),
 s(24863,50778,{b=1,f=5,lvl=30,modID=1}),
 s(24868,50783,{b=1,f=5,lvl=30,modID=1}),
 i(50342,{b=1,f=53,lvl=30,modID=1,spellID=71402}),
-crit(12773,{achID=4531})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(12773,{achID=4531})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4536,{
 crit(12919,{achID=4602,awp=30002,id=8})}),
@@ -16293,7 +16293,7 @@ s(25634,51919,{b=1,f=6,lvl=30,modID=1}),
 s(25640,51925,{b=1,f=5,lvl=30,modID=1}),
 s(25635,51920,{b=1,f=5,lvl=30,modID=1}),
 i(50343,{b=1,f=53,lvl=30,modID=1,spellID=71540}),
-crit(13104,{achID=4628})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(13104,{achID=4628})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4536,{
 crit(12919,{achID=4602,awp=30002,id=8})}),
@@ -16545,7 +16545,7 @@ s(24469,49983,{b=1,f=7,lvl=30,modID=1}),
 s(24476,49993,{b=1,f=6,lvl=30,modID=1}),
 i(49985,{b=1,f=52,lvl=30,modID=1}),
 i(49990,{b=1,f=52,lvl=30,modID=1}),
-crit(12948,{achID=4604})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(12948,{achID=4604})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4612,{
 crit(13018,{achID=4603,awp=30002,id=8})}),
@@ -16787,7 +16787,7 @@ s(24761,50639,{b=1,f=7,lvl=30,modID=1}),
 s(24771,50652,{b=1,f=6,lvl=30,modID=1}),
 i(50642,{b=1,f=52,lvl=30,modID=1}),
 i(50644,{b=1,f=52,lvl=30,modID=1}),
-crit(13106,{achID=4632})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(13106,{achID=4632})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4612,{
 crit(13018,{achID=4603,awp=30002,id=8})}),
@@ -31816,7 +31816,7 @@ ach(8986),
 ach(8987),
 ach(8988),
 gach(9416)}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{crs={94870},difficulties={17,14,15,16},g={
 e(1128,{npcID=78714,g={
 ill(5331,{awp=70003,b=1,itemID=138807,lvl=35,questID=42908}),
 crit(25010,{achID=8986})}}),
@@ -32291,7 +32291,7 @@ gach(9417)}),
 h(-19,{crs={76806,76814,76865,76877,76906,76973,76974,77182,77231,77325,77477,77557,77692},g={
 i(115510,{b=1,spellID=170470,u=2,g={
 i(115509,{b=1,u=2})}})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{crs={94870},difficulties={17,14,15,16},g={
 e(1154,{npcID=76806,g={
 i(115479,{u=2})}}),
 e(1123,{npcID=76814,g={
@@ -33386,7 +33386,7 @@ ach(10020),
 ach(10019)}),
 h(-19,{crs={89890,90199,90269,90284,90316,90378,90435,91331,91349,92146,92330,93068,95068},g={
 i(127115,{b=1,u=2})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{crs={94870},difficulties={17,14,15,16},g={
 e(1425,{npcID=90284}),
 e(1396,{npcID=90378}),
 e(1433,{npcID=90316}),
@@ -36300,7 +36300,8 @@ ach(42029,{awp=110107}),
 gach(10866,{awp=70000})}),
 flt(101,{pb=1,g={
 p(1722,{description="Once you defeat Xavius these will spawn in the area after him.",npcID=97206,pb=1})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 e(1703,{npcID=102672,g={
 r(192809,{b=1,itemID=139636,lvl=10,requireSkill=773,skillID=2508}),
 r(192861,{b=1,itemID=137748,lvl=10,requireSkill=773,skillID=2508}),
@@ -36964,7 +36965,8 @@ s(83976,143345,{f=7,lvl={45}}),
 s(83989,143358,{f=7,lvl={45}}),
 s(294646,247568,{b=1,f=3,lvl={45}}),
 s(83994,143363,{f=7,lvl={45}})}})}})}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={114263,114323,114344,114537},g={
 en(143509,{b=1,c={5,8,9},lvl=45,questID=45225,spellID=231673,tmogSetID=174,g={
 s(84132,143362,{f=4,lvl={45},modID=4}),
@@ -37439,7 +37441,8 @@ q(45420,{lvl=45,qgs={106522},sourceQuests={45417},g={
 sp(233377),
 crit(36177,{achID=10877,awp=70003,id=3}),
 crit(106027,{achID=42593,awp=110205,e=447,id=3,rwp=110207,u=2})}})}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 e(1706,{npcID=102263,g={
 r(192815,{b=1,itemID=139642,lvl=10,requireSkill=773,skillID=2508}),
 r(192867,{b=1,itemID=137754,lvl=10,requireSkill=773,skillID=2508}),
@@ -38494,7 +38497,8 @@ q(46507,{isWorldQuest=1})}),
 h(-55,{awp=100205,g={
 n(118930,{
 cq(79374,{b=1,c={9},description="Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",itemID=212779,lvl=11,spellID=433077})})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={115767,115844,116407,116689,116691,116939,117264,117269,118289,118374,118460,118462,118518,118523,119072},g={
 r(238577,{b=1,itemID=146411,lvl=10,requireSkill=773,skillID=2508}),
 r(238579,{b=1,itemID=146413,lvl=10,requireSkill=773,skillID=2508})}}),
@@ -39482,7 +39486,8 @@ q(48954,{awp=110205,lvl=45,providers={{"i",152900}},rwp=110207,u=2,g={
 mnt(253639,{b=1,itemID=152901,u=2})}}),
 q(49077,{lvl=45,qgs={129429},g={
 i(153555)}})}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={121975,122104,122135,122333,122366,122367,122369,122450,122467,122468,122469,122477,122500,122578,124158,124445,124828},g={
 r(247614,{b=1,itemID=151654,lvl=10,requireSkill=773,skillID=2508}),
 r(247615,{b=1,itemID=151655,lvl=10,requireSkill=773,skillID=2508}),
@@ -43700,7 +43705,9 @@ q(53577,{icon=2000859,sourceQuests={53576}}),
 q(53578,{icon=2000859,sourceQuests={53577}}),
 q(53579,{icon=2000859,sourceQuests={53578}}),
 q(53580,{icon=2000859,sourceQuests={53579}})}})}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[1161]={{74,13.4}},
+[1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={132998,133298,133492,134442,134445,134503,134546,135452,135824,136429,137022,137023,137119,138529,138530,138959,138967},g={
 r(276977,{b=1,itemID=162521,lvl=10,requireSkill=171,skillID=2478}),
 i(162461,{b=1}),
@@ -44220,7 +44227,9 @@ i(165703,{b=1}),
 r(285639,{b=1,itemID=165693,lvl=10,requireSkill=773,skillID=2507}),
 r(285640,{b=1,itemID=165694,lvl=10,requireSkill=773,skillID=2507}),
 r(285641,{b=1,itemID=165695,lvl=10,requireSkill=773,skillID=2507})}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[1161]={{74,13.4}},
+[1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 e(2330,{crs={144747,144767,144941,144963},g={
 p(2527,{b=1,itemID=165846,npcID=147586,spellID=286483}),
 p(2529,{b=1,itemID=165847,npcID=147587,spellID=286482})}}),
@@ -44846,7 +44855,9 @@ h(-12,{
 ach(13414,{
 crit(70194,{achID=40953,awp=110007,id=3})}),
 gach(13420)}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[1161]={{74,13.4}},
+[1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={144754,144755,145371},g={
 r(285925,{b=1,itemID=165735,lvl=10,requireSkill=773,skillID=2507}),
 r(285926,{b=1,itemID=165736,lvl=10,requireSkill=773,skillID=2507}),
@@ -44987,7 +44998,9 @@ flt(101,{pb=1,g={
 p(2657,{npcID=154718,pb=1}),
 p(2658,{npcID=154720,pb=1}),
 p(2659,{npcID=154722,pb=1})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[1161]={{74,13.4}},
+[1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={150653,150859,151881,152128,152236,152364,152852,152853,152910},g={
 i(169329,{b=1}),
 r(298625,{b=1,itemID=168625,requireSkill=773,skillID=2507}),
@@ -45630,7 +45643,9 @@ h(-141,{
 i(173883,{b=1,cost={{"i",174279,15}},f=55,spellID=312793}),
 i(173884,{b=1,cost={{"i",174279,30}},f=55,spellID=312794}),
 i(173885,{b=1,cost={{"i",174279,60}},f=55,spellID=312795})}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[1161]={{74,13.4}},
+[1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={156523,156575,156818,156866,157231,157238,157253,157254,157354,157439,157602,157620,158041,158328,160229,162429},g={
 r(306482,{b=1,itemID=171202,requireSkill=773,skillID=2507}),
 r(306483,{b=1,itemID=171201,requireSkill=773,skillID=2507}),
@@ -48181,7 +48196,8 @@ gach(14720),
 gach(14652)}),
 h(-19,{crs={164261,164406,164407,165066,165067,165521,165759,165805,166644,166969,166970,166971,167406,168112,168113,168156,168973,169457,169458},g={
 r(311453,{b=1,itemID=173068,requireSkill=773,skillID=2756})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[1670]={{41.3,71}}},crs={205959},difficulties={17,14,15,16},g={
 h(-62,{
 q(66693,{awp=90205,isWorldQuest=1,rwp=100002,u=2})}),
 h(-63,{
@@ -49046,7 +49062,8 @@ gach(15184)}),
 h(-19,{crs={175559,175611,175725,175726,175727,175729,175730,175731,175732,176523,176531,177094,177095},g={
 r(354394,{b=1,itemID=186671,requireSkill=773,skillID=2756}),
 i(186599,{b=1,lvl=60})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[1670]={{41.3,71}}},crs={205959},difficulties={17,14,15,16},g={
 h(-62,{
 q(66694,{awp=90205,isWorldQuest=1,rwp=100002,u=2})}),
 e(2435,{npcID=175611,g={
@@ -49949,7 +49966,8 @@ o(375907,{coords={
 i(189476,{b=1,spellID=364521})}})}),
 o(375368,{catalystID=2,coords={
 [1970]={{47.4,88.6}}},description="The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & non-set Items from the Sepulcher of the First Ones Raid into your class' Transmog Set Items.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",modelScale=4,sourceQuests={64842},g={
-d(17,{trackID=972,g={
+d(17,{coords={
+[1670]={{41.3,71}}},crs={205959},trackID=972,g={
 cl(6,{cost={{"i",190189,2070}},sym={{"sub","instance_tier",1195,17,6}},g={
 s(166162,188873,{b=1,c={6},f=3,lvl=60,modID=4}),
 s(168593,188870,{b=1,c={6},f=7,lvl=60,modID=4}),
@@ -50197,7 +50215,8 @@ s(166425,188945,{b=1,c={1},f=3,lvl=60,modID=6}),
 s(168558,188944,{b=1,c={1},f=7,lvl=60,modID=6}),
 s(166404,188939,{b=1,c={1},f=7,lvl=60,modID=6}),
 s(166420,188943,{b=1,c={1},f=7,lvl=60,modID=6})}})}})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[1670]={{41.3,71}}},crs={205959},difficulties={17,14,15,16},g={
 h(-62,{
 q(66695,{awp=90205,isWorldQuest=1,rwp=100002,u=2})}),
 e(2458,{crs={180773,184522},g={
@@ -52105,7 +52124,7 @@ cd(70,{b=1,c={6},itemID=181836,spellID=341427}),
 s(116672,185792,{b=1,f=7,lvl=60}),
 s(116693,185814,{b=1,f=4,lvl=60}),
 s(116657,185777,{b=1,f=20,lvl=60}),
-s(116674,185794,{awp=90100,b=1,f=6,lvl=60,rwp=110200,u=2}),
+s(116674,185794,{awp=90100,b=1,f=6,lvl=60}),
 s(116698,185821,{b=1,f=20,lvl=60}),
 s(293028,246282,{awp=110200,b=1,f=6,lvl=68}),
 i(246281,{awp=110200,b=1,f=52,lvl=68}),
@@ -52523,7 +52542,8 @@ gach(16356),
 gach(16357)}),
 o(382621,{catalystID=3,coords={
 [2025]={{60.6,53.8}}},description="The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
-d(17,{awp=120005,trackID=972,g={
+d(17,{awp=120005,coords={
+[2112]={{58.5,35.4}}},crs={262873},trackID=972,g={
 cl(6,{sym={{"sub","instance_tier",1200,17,6}},g={
 s(182840,200413,{b=1,bonusID=451,c={6},f=3,lvl=70,modID=4}),
 s(182832,200411,{b=1,bonusID=451,c={6},f=7,lvl=70,modID=4}),
@@ -52810,7 +52830,8 @@ q(72260,{coords={
 h(-63,{
 i(201412,{b=1}),
 i(201411,{b=1})}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[2112]={{58.5,35.4}}},crs={262873},difficulties={17,14,15,16},g={
 e(2480,{npcID=184972,g={
 crit(55109,{achID=16343}),
 crit(55109,{achID=17110})}}),
@@ -53713,7 +53734,8 @@ gach(18177),
 gach(18178)}),
 o(382621,{catalystID=6,coords={
 [2025]={{60.6,53.8}}},description="The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
-d(17,{awp=120005,trackID=972,g={
+d(17,{awp=120005,coords={
+[2112]={{58.5,35.4}}},crs={262873},trackID=972,g={
 cl(6,{sym={{"sub","instance_tier",1208,17,6}},g={
 s(186273,202458,{b=1,c={6},f=7,lvl=70,modID=4}),
 s(186264,202456,{b=1,c={6},f=3,lvl=70,modID=4}),
@@ -53980,7 +54002,8 @@ s(186287,202439,{b=1,c={1},f=7,lvl=70,modID=6})}})}})}}),
 h(-19,{crs={199659,200912,200913,200918,201261,201320,201579,201668,201754,201773,201774,201934,202375,202637,202791,203133,203284},g={
 i(204857,{b=1}),
 i(204464)}}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[2112]={{58.5,35.4}}},crs={262873},difficulties={17,14,15,16},g={
 e(2522,{npcID=201261,g={
 r(408326,{itemID=205145,requireSkill=164,skillID=2822}),
 crit(58866,{achID=18160}),
@@ -55034,7 +55057,8 @@ gach(19387),
 gach(19388)}),
 o(382621,{catalystID=7,coords={
 [2025]={{60.6,53.8}}},description="The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
-d(17,{awp=120005,trackID=972,g={
+d(17,{awp=120005,coords={
+[2112]={{58.5,35.4}}},crs={262873},trackID=972,g={
 cl(6,{sym={{"sub","instance_tier",1207,17,6}},g={
 s(192297,207202,{b=1,c={6},f=7,lvl=70,modID=4}),
 s(192242,207197,{b=1,c={6},f=7,lvl=70,modID=4}),
@@ -55304,7 +55328,8 @@ h(-55,{
 i(210783,{description="Fish in the lava pools of the Pit of Volcoross.",spellID=427134}),
 i(210782,{description="Fish in the waters of the Wellspring Atrium.",spellID=427130}),
 i(210784,{b=1,cost={{"i",210782,10},{"i",210783,10}},description="First get the Attuned Angler Buff by returing 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",spellID=427125})}),
-d(109,{difficulties={17,14,15,16},g={
+d(109,{coords={
+[2112]={{58.5,35.4}}},crs={262873},difficulties={17,14,15,16},g={
 h(-19,{crs={200926,200927,204931,206172,206689,208363,208365,208367,208445,208478,208956,209090,209333,210601},g={
 i(210780,{b=1,spellID=427075})}}),
 h(-45,{
@@ -64678,12 +64703,12 @@ gach(61621),
 mnt(1263635,{b=1,itemID=262914,lvl=10})}})})}}),
 h(-19,{awp=120001,g={
 i(258839,{b=1,description="Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes."})}})}),
-h(-68,{awp=120001,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-flt(110,{(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-title(756)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-title(757)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-title(758)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-title(759)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+h(-68,{awp=120001,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+flt(110,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+title(756)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+title(757)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+title(758)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+title(759)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 title(760))})),
 h(-58,{
 n(197711,{coords={
@@ -64708,5 +64733,5 @@ mnt(1296756,{awp=120005,cost={{"i",275436,1}},itemID=275444}),
 mnt(1296731,{awp=120005,cost={{"i",275436,1}},itemID=275440}),
 mnt(1296759,{awp=120005,cost={{"i",275436,1}},itemID=275446}),
 mnt(1296758,{awp=120005,cost={{"i",275436,1}},itemID=275445}),
-mnt(1296760,{awp=120005,cost={{"i",275436,1}},itemID=275447})})}})})}})}});
-end);
+mnt(1296760,{awp=120005,cost={{"i",275436,1}},itemID=275447})})}})})}})}})
+end)

@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,artifact,campsite,cat,cd,cl,cq,crit,cs,cu,de,en,ens,exp,faction,flt,follower,fp,gb,gm,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateWarbandScene,_.CreateCategory,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Zones=
@@ -1337,7 +1337,7 @@ n(4203,{coords={
 [89]={{56.6,52.8}}},r=2,sym={{"select","itemID",2025,15905,1198,2029,851,922,927,15904,2024,925,1197,2030,853,2028,2207,2209,2507,928,924,852,854,3026,2026,2027,15903,1196}},g={
 s(6502,15906,{f=34,lvl=5,rwp=60002,u=2}),
 s(6504,15909,{f=34,lvl=13,rwp=60002,u=2}),
-s(6503,15907,{f=34,lvl=10,rwp=60002,u=2})}}),(function(t)if _.RaceIndex==22 then	t.minReputation=nil;end	return t;end)(
+s(6503,15907,{f=34,lvl=10,rwp=60002,u=2})}}),(function(t)if _.RaceIndex==22 then	t.minReputation=nil end	return t end)(
 n(55285,{awp=40300,coords={
 [89]={{48.2,21.8}}},minReputation={1134,42000},r=2,g={
 mnt(103195,{b=1,itemID=73838,lvl=10,r=2}),
@@ -1388,7 +1388,7 @@ s(4163,11306,{f=32,isLimited=1,lvl=12}),
 s(4165,11308,{f=32,isLimited=1,lvl=19})}}),
 n(52641,{awp=40100,coords={
 [89]={{56.6,52.6}}},r=2,sym={{"sub","common_recipes_vendor",55684}},g={
-r(3492,{isLimited=1,itemID=12162,requireSkill=164,skillID=2477})}}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil;end	return t;end)(
+r(3492,{isLimited=1,itemID=12162,requireSkill=164,skillID=2477})}}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil end	return t end)(
 n(4730,{coords={
 [89]={{42.6,32.8}}},minReputation={69,42000},r=2,g={
 mnt(10789,{b=1,itemID=8632,lvl=10,r=2}),
@@ -4213,7 +4213,7 @@ s(834,2509,{f=31,lvl=2}),
 s(1065,3026,{f=32,lvl=8}),
 s(4160,11303,{f=32,isLimited=1,lvl=5}),
 s(4164,11307,{f=32,isLimited=1,lvl=18}),
-s(4163,11306,{f=32,isLimited=1,lvl=12})}}),(function(t)if _.RaceIndex==9 then	t.minReputation=nil;end	return t;end)(
+s(4163,11306,{f=32,isLimited=1,lvl=12})}}),(function(t)if _.RaceIndex==9 then	t.minReputation=nil end	return t end)(
 n(48510,{awp=40001,coords={
 [85]={{36.2,86.6}}},minReputation={1133,42000},r=1,g={
 mnt(87091,{awp=40003,b=1,itemID=62462,lvl=10,r=1}),
@@ -4374,7 +4374,7 @@ r(12075,{isLimited=1,itemID=10314,requireSkill=197,skillID=2540}),
 r(12080,{isLimited=1,itemID=10317,requireSkill=197,skillID=2540}),
 r(6688,{isLimited=1,itemID=5772,requireSkill=197,skillID=2540})}}),
 n(45558,{awp=40001,coords={
-[85]={{41,79.8}}},description="This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",OnUpdate=function(t,parent,defaultUpdate)if _.MODE_DEBUG or(defaultUpdate(t,parent)and not ATTAccountWideData.Achievements[12452])then	t.visible=true;else	t.visible=false;end	return true;end,r=1,sym={{"sub","common_recipes_vendor",3364}},g={
+[85]={{41,79.8}}},description="This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",OnUpdate=function(t,parent,defaultUpdate)if _.MODE_DEBUG or(defaultUpdate(t,parent)and not ATTAccountWideData.Achievements[12452])then	t.visible=true else	t.visible=false end	return true end,r=1,sym={{"sub","common_recipes_vendor",3364}},g={
 r(7630,{isLimited=1,itemID=6270,requireSkill=197,skillID=2540}),
 r(7639,{isLimited=1,itemID=6274,requireSkill=197,skillID=2540}),
 r(12075,{isLimited=1,itemID=10314,requireSkill=197,skillID=2540}),
@@ -4444,7 +4444,7 @@ s(8253,20904,{awp=100005,f=7}),
 s(28822,58231,{awp=100005,f=7})}}),
 n(46716,{awp=40001,coords={
 [85]={{55.2,55.8}}},r=1,g={
-r(223940,{awp=70003,b=1,itemID=140565,lvl=10,requireSkill=773,skillID=2508})}}),(function(t)if _.RaceIndex==2 then	t.minReputation=nil;end	return t;end)(
+r(223940,{awp=70003,b=1,itemID=140565,lvl=10,requireSkill=773,skillID=2508})}}),(function(t)if _.RaceIndex==2 then	t.minReputation=nil end	return t end)(
 n(3362,{coords={
 [85]={{61.6,35.6}}},minReputation={76,42000},r=1,g={
 mnt(64658,{awp=30100,b=1,itemID=46099,lvl=10,r=1}),
@@ -5179,7 +5179,7 @@ s(67,287,{f=6,lvl=8}),
 s(471,1852,{f=6,lvl=8}),
 s(72,718,{f=6,lvl=8}),
 s(66,286,{f=6,lvl=8}),
-s(65,285,{f=6,lvl=8})}}),(function(t)if _.RaceIndex==26 then	t.minReputation=nil;end	return t;end)(
+s(65,285,{f=6,lvl=8})}}),(function(t)if _.RaceIndex==26 then	t.minReputation=nil end	return t end)(
 n(66022,{awp=50004,coords={
 [85]={{69.8,41}}},minReputation={1352,42000},r=1,g={
 mnt(127286,{b=1,itemID=91008,lvl=10,races={25,26}}),
@@ -5387,7 +5387,7 @@ p(141,{itemID=29904,npcID=21018,spellID=35911}),
 p(140,{itemID=29903,npcID=21008,spellID=35910})}}),
 n(30716,{awp=30002,coords={
 [103]={{40.5,39.8}}},r=2,g={
-r(210656,{awp=70003,b=1,itemID=137789,lvl=10,requireSkill=773,skillID=2508})}}),(function(t)if _.RaceIndex==11 then	t.minReputation=nil;end	return t;end)(
+r(210656,{awp=70003,b=1,itemID=137789,lvl=10,requireSkill=773,skillID=2508})}}),(function(t)if _.RaceIndex==11 then	t.minReputation=nil end	return t end)(
 n(17584,{coords={
 [103]={{81.5,51.4}}},minReputation={930,42000},r=2,g={
 mnt(35713,{b=1,itemID=29745,lvl=10,r=2}),
@@ -10330,7 +10330,7 @@ toy(98552,{b=1})}}),
 n(5942,{coords={
 [1]={{57.4,77}}},r=1,g={
 r(7827,{itemID=6368,requireSkill=185,skillID=2548}),
-r(7752,{itemID=6326,requireSkill=185,skillID=2548})}}),(function(t)if _.RaceIndex==8 then	t.minReputation=nil;end	return t;end)(
+r(7752,{itemID=6326,requireSkill=185,skillID=2548})}}),(function(t)if _.RaceIndex==8 then	t.minReputation=nil end	return t end)(
 n(7952,{coords={
 [1]={{55.2,75.6}}},minReputation={530,42000},r=1,g={
 mnt(8395,{b=1,itemID=8588,lvl=10,r=1}),
@@ -10760,7 +10760,7 @@ q(11209,{awp=20300,coords={
 [70]={{58.8,60.2}}},qgs={12919},qis={33166},r=2,rwp=40003,sourceQuests={11194},u=2,g={
 i(19221,{f=55,spellID=11629,u=2})}}),
 q(13826,{awp=30100,coords={
-[70]={{58.6,60.2}}},description="If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",learnedAt=225,OnUpdate=function(t)if not t.collected and t.collectible and C_Item.GetItemCount(45858,true)==0 then	t.collectible=false;end	end,qgs={12919},requireSkill=356,g={
+[70]={{58.6,60.2}}},description="If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",learnedAt=225,OnUpdate=function(t)if not t.collected and t.collectible and C_Item.GetItemCount(45858,true)==0 then	t.collectible=false end	end,qgs={12919},requireSkill=356,g={
 s(22092,45858,{b=1,f=57,requireSkill=356,spellID=96043})}}),
 q(6607,{altQuests={13826},coords={
 [70]={{58.6,60}}},learnedAt=225,lvl=15,maps={51,66,69,210,224},qgs={12919},qis={16967,16968,16969,16970},requireSkill=356,sourceQuests={6608,6609},g={
@@ -11213,7 +11213,7 @@ r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
 r(25704,{itemID=21099,requireSkill=185,skillID=2548})}}),
 n(6567,{coords={
 [70]={{35.2,30.8}}},r=1,g={
-r(3862,{isLimited=1,itemID=4355,requireSkill=197,skillID=2540})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(3862,{isLimited=1,itemID=4355,requireSkill=197,skillID=2540})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(4885,{coords={
 [70]={{65.2,51.4}}},minReputation={72,42000},r=2,g={
 mnt(458,{b=1,itemID=5656,lvl=10,r=2}),
@@ -14298,7 +14298,7 @@ n(5786,{coords={
 n(5807,{awp=100107,coords={
 [7]={{49.6,22.8},{50.6,26.6},{54.4,20.2},{55.6,24.4}}},g={
 s(7216,17922,{f=5,lvl=3})}})}),
-h(-58,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil;end	return t;end)(
+h(-58,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil end	return t end)(
 n(3685,{coords={
 [7]={{47.6,58}}},minReputation={81,42000},r=1,g={
 mnt(18989,{b=1,itemID=15277,lvl=10,r=1}),
@@ -25370,7 +25370,7 @@ s(1999,5211,{f=27,lvl=10}),
 s(1997,5209,{f=27,lvl=8}),
 s(2084,5347,{f=27,lvl=13}),
 s(2006,5238,{f=27,lvl=17}),
-s(1996,5208,{f=27,lvl=7})}}),(function(t)if _.RaceIndex==22 then	t.minReputation=nil;end	return t;end)(
+s(1996,5208,{f=27,lvl=7})}}),(function(t)if _.RaceIndex==22 then	t.minReputation=nil end	return t end)(
 n(55285,{awp=80001,coords={
 [84]={{52.4,8.2}}},minReputation={1134,42000},r=2,rwp=100205,u=2,g={
 mnt(103195,{awp=40300,b=1,itemID=73838,lvl=10,r=2}),
@@ -26205,7 +26205,7 @@ r(76462,{awp=40003,b=1,cost={{"i",51950,5}},itemID=66122,requireSkill=164,skillI
 r(76461,{awp=40003,b=1,cost={{"i",53039,2}},itemID=66121,requireSkill=164,skillID=2474})}}),
 n(5512,{coords={
 [84]={{63.2,37.6}}},r=2,sym={{"sub","common_recipes_vendor",55684}},g={
-r(3492,{isLimited=1,itemID=12162,requireSkill=164,skillID=2477})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(3492,{isLimited=1,itemID=12162,requireSkill=164,skillID=2477})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(43694,{awp=40001,coords={
 [84]={{77,67.8}}},minReputation={72,42000},r=2,g={
 mnt(470,{b=1,itemID=2411,lvl=10,r=2}),
@@ -26274,7 +26274,7 @@ s(114,844,{f=5,lvl=6}),
 s(116,846,{f=5,lvl=6}),
 s(115,845,{f=5,lvl=6})}}),
 n(52027,{awp=40006,coords={
-[84]={{79.4,69.7}}},r=2,rwp=60002,sym={{"select","npcID",32509},{"pop"}},u=2}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil;end	return t;end)(
+[84]={{79.4,69.7}}},r=2,rwp=60002,sym={{"select","npcID",32509},{"pop"}},u=2}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil end	return t end)(
 n(4730,{awp=80001,coords={
 [84]={{55,12.6}}},minReputation={69,42000},r=2,rwp=100205,u=2,g={
 mnt(10789,{b=1,itemID=8632,lvl=10,r=2,u=2}),
@@ -26657,7 +26657,7 @@ s(22000,45579,{awp=30100,b=1,f=9,r=2,spellID=57818}),
 s(32495,64887,{awp=40003,b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
 s(32496,64888,{awp=40003,b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
 s(32494,64886,{awp=40003,b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
-i(67526,{awp=40003,b=1,f=113,minReputation={69,21000}})}}),(function(t)if _.RaceIndex==25 then	t.minReputation=nil;end	return t;end)(
+i(67526,{awp=40003,b=1,f=113,minReputation={69,21000}})}}),(function(t)if _.RaceIndex==25 then	t.minReputation=nil end	return t end)(
 n(65068,{awp=50004,coords={
 [84]={{67.8,18.4}}},minReputation={1353,42000},r=2,g={
 mnt(127286,{b=1,itemID=87795,lvl=10,races={1,2,3,4,5,6,7,8,9,10,11,22,27,28,29,30,31,32,34,35,36,37,52,70,84,85,86,91}}),
@@ -30712,7 +30712,7 @@ de(11130,{awp=110207,cost=6400000,itemID=256330,races={3,7,34},spellID=1260221})
 i(2894,{f=55,spellID=11007}),
 i(2686,{f=55,spellID=11007})}}),
 n(46996,{coords={
-[27]={{78.6,20}}},r=2,sym={{"select","itemID",926,2025,2029,927,925,1197,2030,2028,853,928,852,924,20981,854,2026,1196,37}}}),(function(t)if _.RaceIndex==7 then	t.minReputation=nil;end	return t;end)(
+[27]={{78.6,20}}},r=2,sym={{"select","itemID",926,2025,2029,927,925,1197,2030,2028,853,928,852,924,20981,854,2026,1196,37}}}),(function(t)if _.RaceIndex==7 then	t.minReputation=nil end	return t end)(
 n(7955,{coords={
 [27]={{56.2,46.3}}},minReputation={54,42000},r=2,g={
 mnt(10969,{b=1,itemID=8595,lvl=10,r=2}),
@@ -30723,7 +30723,7 @@ mnt(23225,{b=1,itemID=18772,lvl=10,r=2}),
 mnt(23223,{b=1,itemID=18773,lvl=10,r=2}),
 mnt(23222,{b=1,itemID=18774,lvl=10,r=2}),
 mnt(17459,{b=1,itemID=13327,lvl=10,r=2,rwp=10400,u=2}),
-mnt(15779,{b=1,itemID=13326,lvl=10,r=2,rwp=10400,u=2})}})),(function(t)if _.RaceIndex==3 then	t.minReputation=nil;end	return t;end)(
+mnt(15779,{b=1,itemID=13326,lvl=10,r=2,rwp=10400,u=2})}})),(function(t)if _.RaceIndex==3 then	t.minReputation=nil end	return t end)(
 n(1261,{coords={
 [27]={{70.6,48.9}}},minReputation={47,42000},r=2,g={
 mnt(6899,{b=1,itemID=5872,lvl=10,r=2}),
@@ -33321,7 +33321,7 @@ r(7633,{isLimited=1,itemID=6272,requireSkill=197,skillID=2540})}}),
 n(6749,{coords={
 [37]={{42.8,65.8}}},r=2,g={
 mnt(16082,{b=1,itemID=12354,lvl=10,r=2,rwp=10400,u=2}),
-mnt(16083,{b=1,itemID=12353,lvl=10,r=2,rwp=10400,u=2})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+mnt(16083,{b=1,itemID=12353,lvl=10,r=2,rwp=10400,u=2})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(384,{coords={
 [37]={{84,65.4}}},minReputation={72,42000},r=2,g={
 mnt(458,{b=1,itemID=5656,lvl=10,r=2}),
@@ -33829,7 +33829,7 @@ s(22006,45585,{awp=30100,b=1,f=9,r=1,spellID=57818}),
 s(32522,64915,{b=1,f=3,lvl=15,minReputation={911,42000},r=1}),
 s(32523,64916,{b=1,f=3,lvl=15,minReputation={911,42000},r=1}),
 s(32521,64914,{b=1,f=3,lvl=15,minReputation={911,42000},r=1}),
-i(67535,{b=1,f=113,minReputation={911,21000}})}}),(function(t)if _.RaceIndex==10 then	t.minReputation=nil;end	return t;end)(
+i(67535,{b=1,f=113,minReputation={911,21000}})}}),(function(t)if _.RaceIndex==10 then	t.minReputation=nil end	return t end)(
 n(16264,{coords={
 [94]={{61,54.6}}},minReputation={911,42000},r=1,g={
 mnt(35022,{b=1,itemID=29221,lvl=10,r=1}),
@@ -41352,7 +41352,7 @@ n(3548,{coords={
 n(12943,{coords={
 [18]={{83.2,69.4}}},r=1,g={
 r(19067,{isLimited=1,itemID=15741,requireSkill=165,skillID=2532}),
-r(19049,{isLimited=1,itemID=15725,requireSkill=165,skillID=2532})}}),(function(t)if _.RaceIndex==5 then	t.minReputation=nil;end	return t;end)(
+r(19049,{isLimited=1,itemID=15725,requireSkill=165,skillID=2532})}}),(function(t)if _.RaceIndex==5 then	t.minReputation=nil end	return t end)(
 n(4731,{coords={
 [18]={{61.8,51.8}}},minReputation={68,42000},r=1,g={
 mnt(64977,{awp=30100,b=1,itemID=46308,lvl=10,r=1}),
@@ -45070,7 +45070,7 @@ n(3178,{coords={
 de(11495,{awp=110207,itemID=257405,spellID=1261533}),
 r(20916,{itemID=17062,requireSkill=185,skillID=2548}),
 r(7827,{itemID=6368,requireSkill=185,skillID=2548}),
-r(7828,{itemID=6369,requireSkill=185,skillID=2548})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(7828,{itemID=6369,requireSkill=185,skillID=2548})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(1460,{coords={
 [56]={{9.2,56.6}}},minReputation={72,42000},r=2,g={
 mnt(470,{b=1,itemID=2411,lvl=10,r=2}),
@@ -73776,7 +73776,8 @@ q(33231,{coords={
 q(33232,{coords={
 [390]={{80.6,33}}},isBreadcrumb=1,lvl=30,nextQuests={33156},qgs={73691},r=1,sourceQuests={33229,33230},g={
 i(104110,{spellID=147985})}}),
-q(33222,{isDaily=1,qgs={73626}}),
+q(33222,{coords={
+[554]={{34.7,60.3}}},isDaily=1,qgs={73626}}),
 q(33379,{coords={
 [554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33378},g={
 i(105935,{spellID=149375})}}),
@@ -98181,7 +98182,7 @@ i(129206,{b=1,f=52,lvl=39}),
 crit(33295,{achID=11263,id=3}),
 crit(106706,{achID=60807,awp=110205,e=447,id=3,rwp=110207,u=2})}}),
 h(-396,{coords={
-[634]={{44.2,22.8}}},isDaily=1,qgs={92626,92631,92633,92634},questID=38630,r=2,g={
+[634]={{44.2,22.8}}},isDaily=1,providers={{"n",92626},{"n",92631},{"n",92633},{"n",92634}},questID=38630,r=2,g={
 s(73958,129266,{b=1,f=7,lvl=39}),
 crit(33302,{achID=11263,id=9}),
 crit(106713,{achID=60807,awp=110205,e=447,id=9,rwp=110207,u=2})}}),
@@ -98281,7 +98282,7 @@ s(80203,138418,{b=1,f=6,lvl=39}),
 crit(33299,{achID=11263,id=7}),
 crit(106710,{achID=60807,awp=110205,e=447,id=7,rwp=110207,u=2})}}),
 h(-397,{coords={
-[634]={{44,22.9}}},isDaily=1,qgs={92604,92609,92611,92613},questID=38627,r=1,g={
+[634]={{44,22.9}}},isDaily=1,providers={{"n",92604},{"n",92609},{"n",92611},{"n",92613}},questID=38627,r=1,g={
 s(73957,129264,{b=1,f=7,lvl=39}),
 crit(33301,{achID=11263,id=9}),
 crit(106712,{achID=60807,awp=110205,e=447,id=9,rwp=110207,u=2})}})}),
@@ -104597,23 +104598,25 @@ o(287531,{coords={
 o(291244,{coords={
 [942]={{69.9,52.6},{70.2,59.1}}},isDaily=1,questID=51927,type="AsSubGenericObject"}),
 o(291246,{coords={
-[942]={{66.1,45.3}}},isDaily=1,questID=51930,type="AsSubGenericObject"}),
+[942]={{66.1,45.3},{66.8,43.7}}},isDaily=1,questID=51930,type="AsSubGenericObject"}),
 o(291254,{coords={
-[942]={{59.3,42.5},{62,40.1}}},isDaily=1,questID=51935,type="AsSubGenericObject"}),
+[942]={{59.3,42.5},{61.2,40.3},{62,40.1}}},isDaily=1,questID=51935,type="AsSubGenericObject"}),
 o(291255,{coords={
-[942]={{76.2,37.1}}},isDaily=1,questID=51938,type="AsSubGenericObject"}),
+[942]={{74.1,32.1},{76.2,37.1}}},isDaily=1,questID=51938,type="AsSubGenericObject"}),
 o(291257,{coords={
 [942]={{64.4,70.2},{65.9,75.7},{66.4,68.2},{67.3,78},{68.1,71.4},{68.8,78.8},{69.2,77.2},{69.4,68.1},{71.2,69.4},{72,65.9},{72.1,68.7},{72.7,72.8},{73.3,67.5},{74.1,67.8}}},isDaily=1,questID=51939,type="AsSubGenericObject"}),
 o(291258,{coords={
-[942]={{47.7,64.7},{49.8,66.1},{66.2,40.4}}},isDaily=1,questID=51940,type="AsSubGenericObject"}),
+[942]={{47.7,64.7},{49.8,66.1},{50.4,62.6},{66.2,40.4}}},isDaily=1,questID=51940,type="AsSubGenericObject"}),
 o(291259,{coords={
-[942]={{39,58.2}}},isDaily=1,questID=51941,type="AsSubGenericObject"}),
+[942]={{39,58.2},{42,60.7}}},isDaily=1,questID=51941,type="AsSubGenericObject"}),
 o(291263,{coords={
-[1183]={{57.8,54.1}}},isDaily=1,questID=51942,type="AsSubGenericObject"}),
+[1183]={{51.2,47.8},{57.8,54.1}}},isDaily=1,questID=51942,type="AsSubGenericObject"}),
 o(291264,{coords={
-[942]={{34.3,75.9}}},isDaily=1,questID=51943,type="AsSubGenericObject"}),
+[942]={{34.1,69.4},{34.3,75.9}}},isDaily=1,questID=51943,type="AsSubGenericObject"}),
 o(291265,{coords={
-[942]={{26.2,61.9},{31.4,40.6}}},isDaily=1,questID=51944,type="AsSubGenericObject"}),
+[942]={{26.2,61.9},{31.4,40.6},{32.1,51.6}}},isDaily=1,questID=51944,type="AsSubGenericObject"}),
+o(291266,{coords={
+[942]={{37.9,44.1}}},isDaily=1,questID=51945,type="AsSubGenericObject"}),
 o(291267,{coords={
 [942]={{57.6,50.9},{60.9,51.2}}},isDaily=1,questID=51946,type="AsSubGenericObject"}),
 o(273900,{coords={
@@ -110481,7 +110484,7 @@ crit(41758,{achID=12940,id=6})}}),
 n(132047,{coords={
 [942]={{69.6,51}}},questID=53611}),
 n(139328,{coords={
-[942]={{34.6,32.4}}},description="Red is the default color when a WQ isn't active. To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",questID=51956,g={
+[942]={{34.6,32.4}}},crs={144420},description="Red is the default color when a WQ isn't active. To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",questID=51956,g={
 s(91697,154664,{b=1,f=26,lvl=50}),
 crit(41420,{achID=13054,id=1}),
 crit(41756,{achID=12940,id=4})}}),
@@ -110514,8 +110517,9 @@ n(141088,{coords={
 i(158224,{b=1,f=53,lvl=50,spellID=268544}),
 crit(41816,{achID=12940,id=24})}}),
 n(135947,{coords={
-[942]={{53.8,72.2}}},questID=50024,g={
-s(91523,154466,{b=1,f=4,lvl=50}),
+[942]={{53.8,72.2}}},customCollect={"HOA"},questID=50024,g={
+o(286952,{
+s(91523,154466,{b=1,f=4,lvl=50})}),
 crit(41787,{achID=12940,id=22})}}),
 n(139980,{coords={
 [942]={{60,46.6}}},questID=52123,g={
@@ -110536,7 +110540,9 @@ crit(41843,{achID=12940,id=29})}}),
 n(142088,{coords={
 [942]={{46.8,42.1}}},questID=52457,g={
 i(158215,{b=1,f=53,lvl=50,spellID=268550}),
-crit(41762,{achID=12940,id=10})}})}),
+crit(41762,{achID=12940,id=10})}}),
+n(140398,{coords={
+[942]={{31.7,55.1}}},questID=53624})}),
 h(-55,{
 hqt(53111,{an="n:143128",coords={
 [1161]={{52.7,47.9},{55.5,62.9},{58.1,66.3},{72.4,73.3}}},description="Obtain an |cFFFfffffAnnealed Honey Amulet|r from mobs in the Mildenhall Meadery area in Stormsong Valley (|cFFFfffff69.2, 68.8|r). It has a low droprate, so be patient!\n\nTrack down Rosaline Mildenhall in Boralus, listen to her story, give her the amulet, and accept the letter she gives you.\n\nRosaline can be found in one of the following locations: (|cFFFfffff51.5, 48.0|r), (|cFFFfffff55.5, 62.5|r), (|cFFFfffff58.1, 66.3|r), or (|cFFFfffff72.4, 73.3|r). If you can't enter the building to speak to her, you can use /tar and set an 'interact with target' keybind.",providers={{"i",163699},{"n",143128}},r=2,g={
@@ -155050,7 +155056,7 @@ s(224586,228438,{b=1,f=7,lvl=70}),
 s(224585,228437,{b=1,f=6,lvl=70}),
 s(224584,228436,{b=1,f=5,lvl=70}),
 s(224583,228435,{b=1,f=4,lvl=70}),
-crit(69686,{achID=40844,id=14})}}),(function(t)if _.indexOf(t.races,_.RaceIndex)then	t.c_disp=t.c	t.c=nil;elseif _.indexOf(t.c,_.ClassIndex)then	t.r_disp=t.races	t.races=nil;end	return t;end)(
+crit(69686,{achID=40844,id=14})}}),(function(t)if _.indexOf(t.races,_.RaceIndex)then	t.c_disp=t.c	t.c=nil elseif _.indexOf(t.c,_.ClassIndex)then	t.r_disp=t.races	t.races=nil end	return t end)(
 q(83279,{c={5,6,9,12},coords={
 [2215]={{68.1,44.2}}},description="This quest is only obtainable as either a Death Knight, Demon Hunter, Shadow Priest, or Warlock or as an Undead or Void Elf.",lvl=75,qgs={225879},races={5,29},sourceQuests={83247}}))}}),
 ah(40844.15,{type="crit",g={
@@ -165465,7 +165471,7 @@ q(93965,{coords={
 [2393]={{41.8,76.4}}},lvl=80,qgs={257039},sourceQuests={94012},g={
 toy(263871,{b=1})}}),
 q(93687,{coords={
-[2393]={{40.2,64.8}}},lvl=90,qgs={243229}}),
+[2393]={{40.2,64.8}}},lvl=90,qgs={243229},rwp=120100}),
 q(94430,{coords={
 [2393]={{48.6,62}}},lvl=90,qgs={239676},rwp=120100}),
 q(94417,{coords={
@@ -172835,5 +172841,5 @@ s(108772,174811,{crs={150237,150238},customCollect={"NPE"},f=4,lvl=8}),
 s(108755,174792,{crs={150228,150229},customCollect={"NPE"},f=5,lvl=8}),
 s(108777,174816,{crs={152571,152843},customCollect={"NPE"},f=5,lvl=8}),
 s(108773,174812,{crs={150237,150238},customCollect={"NPE"},f=5,lvl=8}),
-i(176398,{b=1,crs={162817},customCollect={"NPE"},f=113})}})}})}});
-end);
+i(176398,{b=1,crs={162817},customCollect={"NPE"},f=113})}})}})}})
+end)

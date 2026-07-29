@@ -1,6 +1,6 @@
-﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end
+﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return end
 ---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,flt,h,i,o,p,prof,r,s,sp,toy,x=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
 categories.Craftables=
@@ -1835,5 +1835,5 @@ i(213379,{awp=11501,q=3,u=1606}),
 i(14342,{coords={
 [1440]={{60,72}},
 [1453]={{21,53}},
-[1457]={{43.1,80.27}}},description="Coordinates are for select Moonwells around the world.",q=1})})})})}});
-end);
+[1457]={{43.1,80.27}}},description="Coordinates are for select Moonwells around the world.",q=1})})})})}})
+end)

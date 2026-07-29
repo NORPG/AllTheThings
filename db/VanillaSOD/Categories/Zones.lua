@@ -1,6 +1,6 @@
-﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end
+﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return end
 ---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cl,crit,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,toy=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateToy;
 categories.Zones=
@@ -145,7 +145,7 @@ s(158725,6966,{b=1,c={1},f=21,q=2}),
 s(158726,6967,{b=1,c={1},f=25,q=2}),
 s(158727,6968,{b=1,c={1},f=23,q=2}),
 s(158728,6969,{b=1,c={1},f=20,q=2})}})}),
-h(-48,{(function(t)if _.RaceIndex==4 then	t.minReputation=nil;end	return t;end)(
+h(-48,{(function(t)if _.RaceIndex==4 then	t.minReputation=nil end	return t end)(
 n(4753,{coords={
 [1457]={{38.6,16}}},minReputation={69,42000},r=2,g={
 r(828,{cost=200000,lvl=40})}}))}),
@@ -202,7 +202,7 @@ n(4173,{coords={
 [1457]={{63.3,66.3}}},r=2,sym={{"select","itemID",3027,3026}},g={
 s(160245,11303,{f=32,isLimited=1,lvl=11,q=2}),
 s(160248,11306,{f=32,isLimited=1,lvl=27,q=2}),
-s(160250,11308,{f=32,isLimited=1,lvl=44,q=2})}}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil;end	return t;end)(
+s(160250,11308,{f=32,isLimited=1,lvl=44,q=2})}}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil end	return t end)(
 n(4730,{coords={
 [1457]={{38.3,15.3}}},minReputation={69,42000},r=2,g={
 mnt(10789,{itemID=8632,lvl=40,q=3,r=2}),
@@ -325,7 +325,7 @@ n(3355,{coords={
 [1454]={{76.4,34.4}}},r=1,g={
 r(2018,{lvl=5,rank=1,requireSkill=164}),
 r(3100,{learnedAt=50,lvl=10,rank=2,requireSkill=164,rwp=80001}),
-r(3538,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=164,rwp=80001}),
+r(3538,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=164,rwp=80001}),
 h(-88,{
 r(2661,{learnedAt=35,requireSkill=164}),
 r(3319,{learnedAt=20,requireSkill=164}),
@@ -417,7 +417,7 @@ n(3345,{coords={
 [1454]={{53.4,49.4}}},r=1,g={
 r(7411,{lvl=5,rank=1,requireSkill=333}),
 r(7412,{learnedAt=50,lvl=10,rank=2,requireSkill=333,rwp=80001}),
-r(7413,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=333,rwp=80001}),
+r(7413,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=333,rwp=80001}),
 r(13262,{collectible=false,learnedAt=20,requireSkill=333}),
 h(-243,{
 r(7857,{learnedAt=120,requireSkill=333}),
@@ -520,8 +520,8 @@ n(3404,{coords={
 r(2383,{rank=1,requireSkill=182}),
 r(2366,{lvl=5,rank=1,requireSkill=182}),
 r(2368,{learnedAt=50,lvl=10,rank=2,requireSkill=182,rwp=80001}),
-r(3570,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=182,rwp=80001}),
-r(11993,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=182,rwp=80001})}})}),
+r(3570,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=182,rwp=80001}),
+r(11993,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=182,rwp=80001})}})}),
 prof(165,{
 n(3365,{coords={
 [1454]={{62.8,44.6}}},r=1,g={
@@ -574,8 +574,8 @@ n(3357,{coords={
 r(2580,{rank=1,requireSkill=186}),
 r(2575,{lvl=5,rank=1,requireSkill=186}),
 r(2576,{learnedAt=50,lvl=10,rank=2,requireSkill=186,rwp=80001}),
-r(3564,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=186,rwp=80001}),
-r(10248,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=186,rwp=80001}),
+r(3564,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=186,rwp=80001}),
+r(10248,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=186,rwp=80001}),
 r(2656,{requireSkill=186}),
 r(2659,{learnedAt=65,requireSkill=186}),
 r(2657,{learnedAt=25,requireSkill=186}),
@@ -617,14 +617,14 @@ n(7088,{coords={
 [1454]={{63.2,45.2}}},r=1,g={
 r(8613,{lvl=5,rank=1,requireSkill=393}),
 r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
-r(8618,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=393,rwp=80001}),
-r(10768,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=393,rwp=80001})}})}),
+r(8618,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=393,rwp=80001}),
+r(10768,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=393,rwp=80001})}})}),
 prof(197,{
 n(3363,{coords={
 [1454]={{63.6,50}}},r=1,g={
 r(3908,{lvl=5,rank=1,requireSkill=197}),
 r(3909,{learnedAt=50,lvl=10,rank=2,requireSkill=197,rwp=80001}),
-r(3910,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=197,rwp=80001}),
+r(3910,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=197,rwp=80001}),
 h(-88,{
 r(8766,{learnedAt=175,requireSkill=197}),
 r(8760,{learnedAt=145,requireSkill=197}),
@@ -861,7 +861,7 @@ q(78304,{coords={
 i(210210,{u=1605})}}),
 q(2379,{c={4},coords={
 [1454]={{43,53.4}}},lvl=16,qgs={3401},r=1,rwp=40003,sourceQuests={2378}})}),
-h(-48,{(function(t)if _.RaceIndex==2 then	t.minReputation=nil;end	return t;end)(
+h(-48,{(function(t)if _.RaceIndex==2 then	t.minReputation=nil end	return t end)(
 n(4752,{coords={
 [1454]={{69.2,13}}},minReputation={76,42000},r=1,g={
 r(825,{cost=200000,lvl=40})}}))}),
@@ -1149,7 +1149,7 @@ n(46718,{coords={
 n(3330,{coords={
 [1454]={{46,57.8}}},r=1,g={
 s(156876,2527,{f=28,lvl=31,q=1}),
-s(156884,2535,{f=28,lvl=40,q=1})}}),(function(t)if _.RaceIndex==2 then	t.minReputation=nil;end	return t;end)(
+s(156884,2535,{f=28,lvl=40,q=1})}}),(function(t)if _.RaceIndex==2 then	t.minReputation=nil end	return t end)(
 n(3362,{coords={
 [1454]={{69.4,12.4}}},minReputation={76,42000},r=1,g={
 mnt(6654,{itemID=5668,lvl=40,q=3,r=1}),
@@ -1379,7 +1379,7 @@ r(264,{c={1,3,4}}),
 r(196,{c={1,2,3,7}}),
 r(227,{c={1,3,5,7,8,9,11}}),
 r(2567,{c={1,3,4}}),
-r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end})}}),
+r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end})}}),
 n(11868,{coords={
 [1454]={{81.6,19.4}}},r=1,g={
 r(264,{c={1,3,4}}),
@@ -1387,7 +1387,7 @@ r(1180,{c={1,3,4,5,7,8,9,11}}),
 r(15590,{c={1,3,4,7,11}}),
 r(196,{c={1,2,3,7}}),
 r(2567,{c={1,3,4}}),
-r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
+r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end})}})}})}}),
 m(1456,{icon=255144,isRaid=1,lore="Thunder Bluff is the Tauren capital city located in the northern part of the region of Mulgore. The whole of the city is built on bluffs several hundred feet above the surrounding landscape, and is accessible by elevators on the southwestern and northeastern sides.",g={
 h(-31,{
 faction(81,{icon=236454,OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=1})}),
@@ -1611,7 +1611,7 @@ n(11869,{coords={
 r(266,{c={1,3,4}}),
 r(198,{c={1,2,4,5,7,11}}),
 r(227,{c={1,3,5,7,8,9,11}}),
-r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
+r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end})}})}})}}),
 m(1440,{icon=236713,lore="Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",g={
 h(-12,{
 ach(845,{
@@ -2010,7 +2010,7 @@ n(3958,{coords={
 r(7149,{isLimited=1,itemID=5973,learnedAt=170,q=1,requireSkill=165})}}),
 n(3955,{coords={
 [1440]={{49.5,67.1}}},r=2,g={
-r(3413,{itemID=16072,learnedAt=125,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606;end	t.OnUpdate=nil;end,q=1,rank=3,requireSkill=185,rwp=30100})}}),
+r(3413,{itemID=16072,learnedAt=125,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606 end	t.OnUpdate=nil end,q=1,rank=3,requireSkill=185,rwp=30100})}}),
 n(3960,{coords={
 [1440]={{50,66.6}}},r=2,g={
 r(3397,{itemID=3734,learnedAt=110,q=1,requireSkill=185,rwp=40003}),
@@ -3041,7 +3041,7 @@ r(6419,{isLimited=1,itemID=5489,learnedAt=110,q=1,requireSkill=185}),
 r(15855,{isLimited=1,itemID=12228,learnedAt=175,q=1,requireSkill=185})}}),
 n(12033,{coords={
 [1443]={{26.2,69.8}}},r=1,g={
-r(3413,{itemID=16072,learnedAt=125,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606;end	t.OnUpdate=nil;end,q=1,rank=3,requireSkill=185,rwp=30100}),
+r(3413,{itemID=16072,learnedAt=125,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606 end	t.OnUpdate=nil end,q=1,rank=3,requireSkill=185,rwp=30100}),
 r(20916,{itemID=17062,learnedAt=175,q=1,requireSkill=185}),
 r(7828,{itemID=6369,learnedAt=175,q=1,requireSkill=185}),
 r(25954,{itemID=21219,learnedAt=175,q=1,requireSkill=185}),
@@ -3460,7 +3460,7 @@ n(5808,{coords={
 [1411]={{46.6,79.8},{48.2,78.2},{49.6,80.6}}},rwp=40003}),
 n(5809,{coords={
 [1411]={{59.6,59}}}})}),
-h(-48,{(function(t)if _.RaceIndex==8 then	t.minReputation=nil;end	return t;end)(
+h(-48,{(function(t)if _.RaceIndex==8 then	t.minReputation=nil end	return t end)(
 n(7953,{coords={
 [1411]={{55.3,75.5}}},minReputation={530,42000},races={2,5,8},g={
 r(10861,{cost=200000,lvl=40})}}))}),
@@ -3502,7 +3502,7 @@ r(425758,{u=1605})}})}}),
 n(5942,{coords={
 [1411]={{56,73.4}}},r=1,g={
 r(7827,{itemID=6368,learnedAt=50,q=1,requireSkill=185}),
-r(7752,{itemID=6326,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==8 then	t.minReputation=nil;end	return t;end)(
+r(7752,{itemID=6326,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==8 then	t.minReputation=nil end	return t end)(
 n(7952,{coords={
 [1411]={{55.2,75.6}}},minReputation={530,42000},r=1,g={
 mnt(8395,{itemID=8588,lvl=40,q=3,races={2,5,8}}),
@@ -3585,7 +3585,7 @@ o(180685)}),
 prof(197,{
 n(11052,{coords={
 [1445]={{66.2,51.6}}},r=2,g={
-r(12180,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=197,rwp=80001}),
+r(12180,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=197,rwp=80001}),
 h(-88,{
 r(12073,{learnedAt=230,requireSkill=197}),
 r(12072,{learnedAt=230,requireSkill=197}),
@@ -3844,12 +3844,12 @@ n(14235,{coords={
 h(-58,{
 n(13476,{coords={
 [1445]={{36.4,30.4}}},r=1,rwp=40003,g={
-r(7924,{itemID=16084,learnedAt=125,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606;end	t.OnUpdate=nil;end,q=1,rank=3,requireSkill=129,rwp=30100}),
+r(7924,{itemID=16084,learnedAt=125,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606 end	t.OnUpdate=nil end,q=1,rank=3,requireSkill=129,rwp=30100}),
 r(7929,{itemID=16112,learnedAt=180,q=1,requireSkill=129,rwp=30100}),
 r(10840,{itemID=16113,learnedAt=210,q=1,requireSkill=129,rwp=30100})}}),
 n(6567,{coords={
 [1445]={{35.2,30.8}}},r=1,g={
-r(3862,{isLimited=1,itemID=4355,learnedAt=200,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(3862,{isLimited=1,itemID=4355,learnedAt=200,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(4885,{coords={
 [1445]={{65.2,51.4}}},minReputation={72,42000},r=2,g={
 mnt(458,{itemID=5656,lvl=40,q=3,r=2}),
@@ -4401,8 +4401,8 @@ h(-44,{
 prof(171,{
 n(7948,{coords={
 [1444]={{46.6,42.8}}},r=2,g={
-r(3464,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=171,rwp=80001}),
-r(11611,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=171,rwp=80001}),
+r(3464,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=171,rwp=80001}),
+r(11611,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=171,rwp=80001}),
 flt(55,{
 r(11461,{learnedAt=235,requireSkill=171}),
 r(12609,{learnedAt=200,requireSkill=171}),
@@ -4434,8 +4434,8 @@ r(10647,{learnedAt=250,requireSkill=10660}),
 r(10621,{learnedAt=225,requireSkill=10660})}}),
 n(11098,{coords={
 [1444]={{74.4,43}}},r=1,g={
-r(3811,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=165,rwp=80001}),
-r(10662,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=165,rwp=80001}),
+r(3811,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=165,rwp=80001}),
+r(10662,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=165,rwp=80001}),
 h(-88,{
 r(6661,{learnedAt=190,requireSkill=165}),
 r(7151,{learnedAt=175,requireSkill=165}),
@@ -4879,14 +4879,14 @@ q(6001,{c={11},coords={
 [1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},r=2,rwp=40003,sourceQuests={5931},g={
 qo(1,{coords={
 [1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2 ATTAccountWideData.Spells[5487]=1 end	t.collected=2 end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(6002,{c={11},coords={
 [1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},r=1,rwp=40003,sourceQuests={5932},g={
 qo(1,{coords={
 [1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2 ATTAccountWideData.Spells[5487]=1 end	t.collected=2 end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(5929,{c={11},coords={
@@ -5319,7 +5319,7 @@ n(203079,{coords={
 [1412]={{37.8,55},{40.6,53.8},{45.6,36.4},{51.8,39.2},{60.2,67.6}}},providers={{"o",392029}},u=1605,g={
 i(204441,{b=1,c={1},f=55,q=2,u=1605,g={
 r(403474,{u=1605})}})}})}),
-h(-48,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil;end	return t;end)(
+h(-48,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil end	return t end)(
 n(3690,{coords={
 [1412]={{47.6,58.4}}},minReputation={81,42000},r=1,g={
 r(18995,{cost=200000,lvl=40})}}))}),
@@ -5344,7 +5344,7 @@ r(410098,{u=1605})}}),
 i(206989,{b=1,c={11},coords={
 [1412]={{35.7,69.6}}},description="Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",f=55,providers={{"n",207577},{"o",404433}},q=2,u=1605,g={
 r(416044,{u=1605})}})}),
-h(-58,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil;end	return t;end)(
+h(-58,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil end	return t end)(
 n(3685,{coords={
 [1412]={{47.6,58.4}}},minReputation={81,42000},r=1,g={
 mnt(18989,{itemID=15277,lvl=40,q=3,r=1}),
@@ -6434,7 +6434,7 @@ crit(1413,{achID=851,id=1})}),
 exp(978,{
 crit(1427,{achID=851,id=1})})}),
 h(-31,{
-faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end,g={
+faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000)if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999)end	end	end,g={
 crit(58452,{achID=2336,id=1,u=1609})}})}),
 h(-32,{
 fp(39,{coords={
@@ -6448,8 +6448,8 @@ h(-44,{
 prof(202,{
 n(8736,{coords={
 [1446]={{51.6,30.2}}},g={
-r(4038,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=202,rwp=80001}),
-r(12656,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=202,rwp=80001}),
+r(4038,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=202,rwp=80001}),
+r(12656,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=202,rwp=80001}),
 h(-88,{
 r(12594,{learnedAt=205,requireSkill=202}),
 r(12622,{learnedAt=245,requireSkill=202}),
@@ -8921,7 +8921,7 @@ crit(1483,{achID=857,id=1})})}),
 h(-31,{
 faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook,g={
 crit(58455,{achID=2336,id=6,u=1609})}}),
-faction(589,{icon=132252,OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerKill=50;if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500);else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000);if reputation>=9000 then	repPerKill=50;addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000);end	end	end	end,r=2})}),
+faction(589,{icon=132252,OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo local repPerKill=50 if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500)else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000)if reputation>=9000 then	repPerKill=50 addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000)end	end	end	end,r=2})}),
 h(-32,{
 fp(52,{coords={
 [1452]={{62.2,36.6}}},crs={11138},r=2}),
@@ -9220,7 +9220,7 @@ n(4258,{coords={
 [1455]={{52.6,40.8}}},r=2,g={
 r(2018,{lvl=5,rank=1,requireSkill=164}),
 r(3100,{learnedAt=50,lvl=10,rank=2,requireSkill=164,rwp=80001}),
-r(3538,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=164,rwp=80001}),
+r(3538,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=164,rwp=80001}),
 h(-88,{
 r(2661,{learnedAt=35,requireSkill=164}),
 r(3319,{learnedAt=20,requireSkill=164}),
@@ -9675,8 +9675,8 @@ r(15590,{c={1,3,4,7,11}}),
 r(266,{c={1,3,4}}),
 r(196,{c={1,2,3,7}}),
 r(198,{c={1,2,4,5,7,11}}),
-r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end}),
-r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil);if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false);end	end	end})}})}})}}),
+r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end}),
+r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end})}})}})}}),
 m(1453,{icon=255130,isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",g={
 h(-30,{
 exp(5150,{collectible=false}),
@@ -9720,7 +9720,7 @@ n(5511,{coords={
 [1453]={{57,16.6}}},r=2,g={
 r(2018,{lvl=5,rank=1,requireSkill=164}),
 r(3100,{learnedAt=50,lvl=10,rank=2,requireSkill=164,rwp=80001}),
-r(3538,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=164,rwp=80001}),
+r(3538,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=164,rwp=80001}),
 h(-88,{
 r(2661,{learnedAt=35,requireSkill=164}),
 r(3319,{learnedAt=20,requireSkill=164}),
@@ -9812,7 +9812,7 @@ n(1317,{coords={
 [1453]={{43,64.6}}},r=2,g={
 r(7411,{lvl=5,rank=1,requireSkill=333}),
 r(7412,{learnedAt=50,lvl=10,rank=2,requireSkill=333,rwp=80001}),
-r(7413,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=333,rwp=80001}),
+r(7413,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=333,rwp=80001}),
 r(13262,{collectible=false,learnedAt=20,requireSkill=333}),
 h(-243,{
 r(7857,{learnedAt=120,requireSkill=333}),
@@ -9915,8 +9915,8 @@ n(5566,{coords={
 r(2383,{rank=1,requireSkill=182}),
 r(2366,{lvl=5,rank=1,requireSkill=182}),
 r(2368,{learnedAt=50,lvl=10,rank=2,requireSkill=182,rwp=80001}),
-r(3570,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=182,rwp=80001}),
-r(11993,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=182,rwp=80001})}})}),
+r(3570,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=182,rwp=80001}),
+r(11993,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=182,rwp=80001})}})}),
 prof(165,{
 n(5564,{coords={
 [1453]={{67.2,49.6}}},r=2,g={
@@ -9969,8 +9969,8 @@ n(5513,{coords={
 r(2580,{rank=1,requireSkill=186}),
 r(2575,{lvl=5,rank=1,requireSkill=186}),
 r(2576,{learnedAt=50,lvl=10,rank=2,requireSkill=186,rwp=80001}),
-r(3564,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=186,rwp=80001}),
-r(10248,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=186,rwp=80001}),
+r(3564,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=186,rwp=80001}),
+r(10248,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=186,rwp=80001}),
 r(2656,{requireSkill=186}),
 r(2659,{learnedAt=65,requireSkill=186}),
 r(2657,{learnedAt=25,requireSkill=186}),
@@ -10012,14 +10012,14 @@ n(1292,{coords={
 [1453]={{67.8,49}}},r=2,g={
 r(8613,{lvl=5,rank=1,requireSkill=393}),
 r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
-r(8618,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=393,rwp=80001}),
-r(10768,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=393,rwp=80001})}})}),
+r(8618,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=393,rwp=80001}),
+r(10768,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=393,rwp=80001})}})}),
 prof(197,{
 n(1346,{coords={
 [1453]={{43.6,73.8}}},r=2,g={
 r(3908,{lvl=5,rank=1,requireSkill=197}),
 r(3909,{learnedAt=50,lvl=10,rank=2,requireSkill=197,rwp=80001}),
-r(3910,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=197,rwp=80001}),
+r(3910,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=197,rwp=80001}),
 h(-88,{
 r(8766,{learnedAt=175,requireSkill=197}),
 r(8760,{learnedAt=145,requireSkill=197}),
@@ -11872,7 +11872,7 @@ n(2816,{coords={
 r(4097,{description="Horde Players Beware: even if you buy this item off the Auction House, it is currently unlearnable. Only Alliance players are able to properly learn this pattern. Fire up your bug reports.",isLimited=1,itemID=13288,learnedAt=165,q=2,r=2,requireSkill=165})}}),
 n(2805,{coords={
 [1417]={{27,58.8}}},r=2,g={
-r(7924,{itemID=16084,learnedAt=125,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606;end	t.OnUpdate=nil;end,q=1,rank=3,requireSkill=129,rwp=30100}),
+r(7924,{itemID=16084,learnedAt=125,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606 end	t.OnUpdate=nil end,q=1,rank=3,requireSkill=129,rwp=30100}),
 r(7929,{itemID=16112,learnedAt=180,q=1,requireSkill=129,rwp=30100}),
 r(10840,{itemID=16113,learnedAt=210,q=1,requireSkill=129,rwp=30100})}}),
 n(2812,{coords={
@@ -13027,10 +13027,10 @@ n(203079,{coords={
 [1426]={{53.8,47.2}}},providers={{"o",392029}},u=1605,g={
 i(204441,{b=1,c={1},f=55,q=2,u=1605,g={
 r(403474,{u=1605})}})}})}),
-h(-48,{(function(t)if _.RaceIndex==7 then	t.minReputation=nil;end	return t;end)(
+h(-48,{(function(t)if _.RaceIndex==7 then	t.minReputation=nil end	return t end)(
 n(7954,{coords={
 [1426]={{49.2,48}}},minReputation={54,42000},races={3,7},g={
-r(10907,{cost=200000,lvl=40})}})),(function(t)if _.RaceIndex==3 then	t.minReputation=nil;end	return t;end)(
+r(10907,{cost=200000,lvl=40})}})),(function(t)if _.RaceIndex==3 then	t.minReputation=nil end	return t end)(
 n(4772,{coords={
 [1426]={{63.8,50.2}}},minReputation={47,42000},r=2,g={
 r(826,{cost=200000,lvl=40})}}))}),
@@ -13066,7 +13066,7 @@ r(7751,{itemID=6325,q=1,requireSkill=185})}}),
 n(1247,{coords={
 [1426]={{47.4,52.6}}},r=2,g={
 i(2894,{f=55,q=1}),
-i(2686,{f=55,q=1})}}),(function(t)if _.RaceIndex==7 then	t.minReputation=nil;end	return t;end)(
+i(2686,{f=55,q=1})}}),(function(t)if _.RaceIndex==7 then	t.minReputation=nil end	return t end)(
 n(7955,{coords={
 [1426]={{49,48}}},minReputation={54,42000},r=2,g={
 mnt(10969,{itemID=8595,lvl=40,q=3,races={3,7}}),
@@ -13081,7 +13081,7 @@ mnt(15779,{itemID=13326,lvl=60,q=4,races={3,7},rwp=10400,u=2})}})),
 n(208711,{coords={
 [1426]={{63.6,50.2}}},cost={{"i",208180,1}},crs={721},description="Use the musk and tame a Rabbit and then bring it to Toby.",r=2,u=1605,g={
 i(206032,{b=1,c={3},f=55,q=2,u=1605,g={
-r(425758,{u=1605})}})}}),(function(t)if _.RaceIndex==3 then	t.minReputation=nil;end	return t;end)(
+r(425758,{u=1605})}})}}),(function(t)if _.RaceIndex==3 then	t.minReputation=nil end	return t end)(
 n(1261,{coords={
 [1426]={{63.4,50.6}}},minReputation={47,42000},r=2,g={
 mnt(6899,{itemID=5872,lvl=40,q=3,r=2}),
@@ -14532,7 +14532,7 @@ n(203079,{coords={
 [1429]={{25.6,69.6},{30.6,74.2},{38.4,76.8}}},providers={{"o",392029}},u=1605,g={
 i(204441,{b=1,c={1},f=55,q=2,u=1605,g={
 r(403474,{u=1605})}})}})}),
-h(-48,{(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+h(-48,{(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(4732,{coords={
 [1429]={{84.2,65}}},minReputation={72,42000},r=2,g={
 r(824,{cost=200000,lvl=40})}}))}),
@@ -14595,7 +14595,7 @@ r(7633,{isLimited=1,itemID=6272,learnedAt=70,q=1,requireSkill=197})}}),
 n(6749,{coords={
 [1429]={{42.8,65.8}}},r=2,g={
 mnt(16082,{itemID=12354,lvl=60,q=4,r=2,rwp=10400,u=2}),
-mnt(16083,{itemID=12353,lvl=60,q=4,r=2,rwp=10400,u=2})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+mnt(16083,{itemID=12353,lvl=60,q=4,r=2,rwp=10400,u=2})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(384,{coords={
 [1429]={{84,65.4}}},minReputation={72,42000},r=2,g={
 mnt(458,{itemID=5656,lvl=40,q=3,r=2}),
@@ -14705,7 +14705,7 @@ o(180662)}),
 prof(197,{
 n(2399,{coords={
 [1424]={{63.6,20.8}}},r=1,g={
-r(12180,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=197,rwp=80001}),
+r(12180,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=197,rwp=80001}),
 h(-88,{
 r(12073,{learnedAt=230,requireSkill=197}),
 r(12072,{learnedAt=230,requireSkill=197}),
@@ -14976,7 +14976,7 @@ r(20916,{itemID=17062,learnedAt=175,q=1,requireSkill=185})}}),
 n(2394,{coords={
 [1424]={{62,21}}},r=1,g={
 r(7639,{isLimited=1,itemID=6274,learnedAt=100,q=1,requireSkill=197}),
-r(3870,{isLimited=1,itemID=6401,learnedAt=155,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(3870,{isLimited=1,itemID=6401,learnedAt=155,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(2357,{coords={
 [1424]={{52.2,55.4}}},minReputation={72,42000},r=2,rwp=40003,g={
 mnt(472,{itemID=2414,lvl=40,q=3,r=2}),
@@ -16399,9 +16399,9 @@ crit(1222,{achID=781,id=1})}),
 exp(122,{
 crit(1219,{achID=781,id=1})})}),
 h(-31,{
-faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	if t.maxPossibleReputation<42000 then	tinsert(tooltipInfo,{left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true});end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	local isHuman=_.RaceIndex==1;local repForDressing=isHuman and 11 or 10;if t.dressing.collected then repForDressing=0;end	local repForAdmiral=isHuman and 220 or 200;if t.admiral.collected then repForAdmiral=0;end	t.maxPossibleReputation=math.max(t.reputation,41999)+ repForDressing + repForAdmiral;if t.maxPossibleReputation<42000 then	t.locked=true;end	end	end,g={
+faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return end	local reputation=t.reputation if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true})tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true})if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000)else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000)tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1})if not t.eventful then	t.eventful=true if DBM then	local f=CreateFrame("FRAME",nil,UIParent)f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo())end)f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...)if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)")DBM:CreatePizzaTimer(510,"Respawn (max)")end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0)f:SetSize(1,1)f:Hide()end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing)end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral)end	if t.maxPossibleReputation<42000 then	tinsert(tooltipInfo,{left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true})end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272)if f and #f>0 then t.dressing=f[1] end	end	if not t.admiral then	local f=_.SearchForField("questID",4621)if f and #f>0 then t.admiral=f[1] end	end	local isHuman=_.RaceIndex==1 local repForDressing=isHuman and 11 or 10 if t.dressing.collected then repForDressing=0 end	local repForAdmiral=isHuman and 220 or 200 if t.admiral.collected then repForAdmiral=0 end	t.maxPossibleReputation=math.max(t.reputation,41999)+ repForDressing + repForAdmiral if t.maxPossibleReputation<42000 then	t.locked=true end	end	end,g={
 crit(58456,{achID=2336,id=7,u=1609})}}),
-faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end,g={
+faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000)addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5})end	end,g={
 crit(58454,{achID=2336,id=3,u=1609})}}),
 faction(2634,{description="This faction is probably not one that you can gain reputation with.",pvp=1,u=1})}),
 h(-32,{
@@ -16415,7 +16415,7 @@ h(-44,{
 prof(164,{
 n(2836,{coords={
 [1434]={{29,75.4}}},g={
-r(9785,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=164,rwp=80001}),
+r(9785,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=164,rwp=80001}),
 h(-88,{
 r(9968,{learnedAt=235,requireSkill=164}),
 r(9959,{learnedAt=230,requireSkill=164}),
@@ -17082,7 +17082,7 @@ n(2832,{coords={
 i(4595,{f=55,q=1})}}),
 n(2626,{coords={
 [1434]={{27.4,77.1}}},g={
-r(7732,{itemID=16083,learnedAt=125,lvl=20,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606;end	t.OnUpdate=nil;end,q=1,rank=3,requireSkill=356,rwp=30100})}}),
+r(7732,{itemID=16083,learnedAt=125,lvl=20,OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=1606 end	t.OnUpdate=nil end,q=1,rank=3,requireSkill=356,rwp=30100})}}),
 n(227853,{awp=11503,coords={
 [1434]={{28.4,75.8}}},sourceQuests={83934},u=1608,g={
 cl(11,{u=1608,g={
@@ -17373,8 +17373,8 @@ h(-44,{
 prof(171,{
 n(1386,{coords={
 [1435]={{49.8,56}}},r=1,g={
-r(3464,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=171,rwp=80001}),
-r(11611,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=171,rwp=80001}),
+r(3464,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=171,rwp=80001}),
+r(11611,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=171,rwp=80001}),
 flt(55,{
 r(11461,{learnedAt=235,requireSkill=171}),
 r(12609,{learnedAt=200,requireSkill=171}),
@@ -17598,7 +17598,7 @@ crit(1128,{achID=773,id=1})}),
 exp(1883,{
 crit(1120,{achID=773,id=1})})}),
 h(-31,{
-faction(471,{description="This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",minReputation={471,21000},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Trolls in the Hinterlands (Stops at Revered)",5,20999,0);tinsert(tooltipInfo,{left=" * PROTIP: Do NOT turn in the necklaces until after Revered!",r=1,g=0.5,b=0.5});else	local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Troll Tribal Necklaces (x5)",2,42000);local remaining=((remainingTurnIns * 5)- GetItemCount(9259,true));if remaining>0 then	tinsert(tooltipInfo,{left="You need "..remaining.." more necklaces for Exalted.",r=1,g=1,b=0});end	end	end	end,r=2})}),
+faction(471,{description="This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",minReputation={471,21000},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Trolls in the Hinterlands (Stops at Revered)",5,20999,0)tinsert(tooltipInfo,{left=" * PROTIP: Do NOT turn in the necklaces until after Revered!",r=1,g=0.5,b=0.5})else	local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Troll Tribal Necklaces (x5)",2,42000)local remaining=((remainingTurnIns * 5)- GetItemCount(9259,true))if remaining>0 then	tinsert(tooltipInfo,{left="You need "..remaining.." more necklaces for Exalted.",r=1,g=1,b=0})end	end	end	end,r=2})}),
 h(-32,{
 fp(43,{coords={
 [1425]={{11,46}}},crs={8018},r=2}),
@@ -17608,8 +17608,8 @@ h(-44,{
 prof(165,{
 n(11097,{coords={
 [1425]={{13.4,43.4}}},r=2,g={
-r(3811,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=165,rwp=80001}),
-r(10662,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=165,rwp=80001}),
+r(3811,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20 end,rank=3,requireSkill=165,rwp=80001}),
+r(10662,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35 end,rank=4,requireSkill=165,rwp=80001}),
 h(-88,{
 r(6661,{learnedAt=190,requireSkill=165}),
 r(7151,{learnedAt=175,requireSkill=165}),
@@ -18256,7 +18256,7 @@ n(10359,{coords={
 n(1533,{awp=100107,coords={
 [1420]={{46,35.4}}},g={
 s(157244,3323,{f=4,lvl=3,q=1,rwp=40003})}})}),
-h(-48,{(function(t)if _.RaceIndex==5 then	t.minReputation=nil;end	return t;end)(
+h(-48,{(function(t)if _.RaceIndex==5 then	t.minReputation=nil end	return t end)(
 n(4773,{coords={
 [1420]={{60,52.6}}},minReputation={68,42000},races={2,5,8},g={
 r(10906,{cost=200000,lvl=40})}}))}),
@@ -18301,7 +18301,7 @@ n(3548,{coords={
 n(12943,{coords={
 [1420]={{83.2,69.6}}},r=1,g={
 r(19067,{isLimited=1,itemID=15741,learnedAt=275,q=1,requireSkill=10658}),
-r(19049,{isLimited=1,itemID=15725,learnedAt=260,q=1,requireSkill=165})}}),(function(t)if _.RaceIndex==5 then	t.minReputation=nil;end	return t;end)(
+r(19049,{isLimited=1,itemID=15725,learnedAt=260,q=1,requireSkill=165})}}),(function(t)if _.RaceIndex==5 then	t.minReputation=nil end	return t end)(
 n(4731,{coords={
 [1420]={{59.8,52.6}}},minReputation={68,42000},r=1,g={
 mnt(17463,{itemID=13332,lvl=40,q=3,races={2,5,8}}),
@@ -19436,7 +19436,7 @@ n(3178,{coords={
 [1437]={{8,58.3}}},r=2,g={
 r(20916,{itemID=17062,learnedAt=175,q=1,requireSkill=185}),
 r(7827,{itemID=6368,learnedAt=50,q=1,requireSkill=185}),
-r(7828,{itemID=6369,learnedAt=175,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(7828,{itemID=6369,learnedAt=175,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(1460,{coords={
 [1437]={{8.6,54.4}}},minReputation={72,42000},r=2,g={
 mnt(470,{itemID=2411,lvl=40,q=1,r=2}),
@@ -19486,5 +19486,5 @@ s(158411,6315,{awp=100107,coords={
 [1437]={{48.8,17.6},{48.9,17.6}}},crs={6523},f=33,lvl=22,q=2,rwp=40003}),
 p(58,{crs={1042,1044,1069},itemID=8499,petTypeID=2,q=1,spellID=10697}),
 s(156103,756,{awp=100107,coords={
-[1437]={{48,18.6},{61.2,25.4}}},crs={1053},f=22,lvl=24,q=2,rwp=40003})})}})}})}});
-end);
+[1437]={{48,18.6},{61.2,25.4}}},crs={1053},f=22,lvl=24,q=2,rwp=40003})})}})}})}})
+end)

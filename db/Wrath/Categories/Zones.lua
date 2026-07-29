@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,cl,crit,cs,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,sp,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy;
 categories.Zones=
@@ -654,7 +654,7 @@ n(4173,{coords={
 [1457]={{63.3,66.3}}},r=2,sym={{"select","itemID",3027,3026}},g={
 s(124210,11303,{f=32,isLimited=1,lvl=11,q=2}),
 s(124213,11306,{f=32,isLimited=1,lvl=27,q=2}),
-s(124215,11308,{f=32,isLimited=1,lvl=44,q=2})}}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil;end	return t;end)(
+s(124215,11308,{f=32,isLimited=1,lvl=44,q=2})}}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil end	return t end)(
 n(4730,{coords={
 [1457]={{38.3,15.3}}},minReputation={69,42000},r=2,g={
 mnt(10789,{b=1,itemID=8632,lvl=20,q=3,r=2}),
@@ -1970,7 +1970,7 @@ n(46718,{coords={
 n(3330,{coords={
 [1454]={{46,57.8}}},r=1,g={
 s(118026,2527,{f=28,lvl=31,q=1}),
-s(118034,2535,{f=28,lvl=40,q=1})}}),(function(t)if _.RaceIndex==2 then	t.minReputation=nil;end	return t;end)(
+s(118034,2535,{f=28,lvl=40,q=1})}}),(function(t)if _.RaceIndex==2 then	t.minReputation=nil end	return t end)(
 n(3362,{coords={
 [1454]={{69.4,12.4}}},minReputation={76,42000},r=1,g={
 mnt(64658,{awp=30100,b=1,itemID=46099,lvl=20,q=3,r=1}),
@@ -2445,7 +2445,7 @@ p(138,{itemID=29901,petTypeID=3,q=1,spellID=35907,u=17}),
 p(141,{itemID=29904,petTypeID=3,q=1,spellID=35911,u=17}),
 p(140,{itemID=29903,petTypeID=3,q=1,spellID=35910,u=17})}}),
 n(30716,{awp=30002,coords={
-[1947]={{40.5,39.8}}},r=2,u=17}),(function(t)if _.RaceIndex==11 then	t.minReputation=nil;end	return t;end)(
+[1947]={{40.5,39.8}}},r=2,u=17}),(function(t)if _.RaceIndex==11 then	t.minReputation=nil end	return t end)(
 n(17584,{coords={
 [1947]={{81.5,51.4}}},minReputation={930,42000},r=2,u=17,g={
 mnt(35713,{b=1,itemID=29745,lvl=40,q=4,r=2,u=17}),
@@ -5220,7 +5220,7 @@ r(6413,{itemID=5483,learnedAt=20,q=1,requireSkill=185})}}),
 n(5942,{coords={
 [1411]={{56,73.4}}},r=1,g={
 r(7827,{itemID=6368,learnedAt=50,q=1,requireSkill=185}),
-r(7752,{itemID=6326,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==8 then	t.minReputation=nil;end	return t;end)(
+r(7752,{itemID=6326,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==8 then	t.minReputation=nil end	return t end)(
 n(7952,{coords={
 [1411]={{55.2,75.6}}},minReputation={530,42000},r=1,g={
 mnt(8395,{b=1,itemID=8588,lvl=20,q=3,r=1}),
@@ -5463,7 +5463,7 @@ q(11209,{awp=20300,coords={
 qo(1,{providers={{"i",33166}}}),
 i(19221,{f=55,q=1})}}),
 q(13826,{awp=30100,coords={
-[1445]={{58.6,60.2}}},description="If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",learnedAt=225,lvl=35,OnUpdate=function(t)if not t.collected and t.collectible and GetItemCount(45858,true)==0 then	t.collectible=false;end	end,qgs={12919},requireSkill=356,g={
+[1445]={{58.6,60.2}}},description="If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",learnedAt=225,lvl=35,OnUpdate=function(t)if not t.collected and t.collectible and GetItemCount(45858,true)==0 then	t.collectible=false end	end,qgs={12919},requireSkill=356,g={
 s(175943,45858,{b=1,f=57,learnedAt=225,q=3,requireSkill=356})}}),
 q(6607,{altQuests={13826},coords={
 [1445]={{58.6,60}}},learnedAt=225,lvl=35,maps={1434,1435,1443,1444},qgs={12919},requireSkill=356,sourceQuests={6608,6609},g={
@@ -5763,7 +5763,7 @@ r(7929,{itemID=16112,learnedAt=180,q=1,requireSkill=129,rwp=30100,u=2}),
 r(10840,{itemID=16113,learnedAt=210,q=1,requireSkill=129,rwp=30100,u=2})}}),
 n(6567,{coords={
 [1445]={{35.2,30.8}}},r=1,g={
-r(3862,{isLimited=1,itemID=4355,learnedAt=200,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(3862,{isLimited=1,itemID=4355,learnedAt=200,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(4885,{coords={
 [1445]={{65.2,51.4}}},minReputation={72,42000},r=2,g={
 mnt(458,{b=1,itemID=5656,lvl=20,q=3,r=2}),
@@ -6675,14 +6675,14 @@ q(6001,{c={11},coords={
 [1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},r=2,rwp=40003,sourceQuests={5931},g={
 qo(1,{coords={
 [1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2 ATTAccountWideData.Spells[5487]=1 end	t.collected=2 end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(6002,{c={11},coords={
 [1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},r=1,rwp=40003,sourceQuests={5932},g={
 qo(1,{coords={
 [1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2 ATTAccountWideData.Spells[5487]=1 end	t.collected=2 end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(5929,{c={11},coords={
@@ -7061,7 +7061,7 @@ n(5786,{coords={
 n(5807,{awp=100107,coords={
 [1412]={{49.6,22.8},{50.6,26.6},{54.4,20.2},{55.6,24.4}}},g={
 s(129111,17922,{f=5,lvl=5,q=2,rwp=40003})}})}),
-h(-58,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil;end	return t;end)(
+h(-58,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil end	return t end)(
 n(3685,{coords={
 [1412]={{47.6,58.4}}},minReputation={81,42000},r=1,g={
 mnt(18989,{b=1,itemID=15277,lvl=20,q=3,r=1}),
@@ -8069,7 +8069,7 @@ crit(1413,{achID=851,id=1})}}),
 exp(978,{awp=30002,g={
 crit(1427,{achID=851,id=1})}})}),
 h(-31,{
-faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end})}),
+faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000)if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999)end	end	end})}),
 h(-32,{
 fp(39,{coords={
 [1446]={{51,29.2}}},crs={7823},r=2}),
@@ -10324,7 +10324,7 @@ exp(2244,{
 crit(1483,{achID=857,id=1})})}}),
 h(-31,{
 faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook}),
-faction(589,{icon=132252,OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerKill=250;if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500);else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000);if reputation>=9000 then	repPerKill=350;addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000);end	end	end	end,r=2})}),
+faction(589,{icon=132252,OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo local repPerKill=250 if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500)else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000)if reputation>=9000 then	repPerKill=350 addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000)end	end	end	end,r=2})}),
 h(-32,{
 fp(52,{coords={
 [1452]={{62.2,36.6}}},crs={11138},r=2}),
@@ -14814,7 +14814,7 @@ r(7751,{itemID=6325,q=1,requireSkill=185})}}),
 n(1247,{coords={
 [1426]={{47.4,52.6}}},r=2,g={
 i(2894,{f=55,q=1}),
-i(2686,{f=55,q=1})}}),(function(t)if _.RaceIndex==7 then	t.minReputation=nil;end	return t;end)(
+i(2686,{f=55,q=1})}}),(function(t)if _.RaceIndex==7 then	t.minReputation=nil end	return t end)(
 n(7955,{coords={
 [1426]={{49,48}}},minReputation={54,42000},r=2,g={
 mnt(10969,{b=1,itemID=8595,lvl=20,q=3,r=2}),
@@ -14825,7 +14825,7 @@ mnt(23225,{b=1,itemID=18772,lvl=40,q=4,r=2}),
 mnt(23223,{b=1,itemID=18773,lvl=40,q=4,r=2}),
 mnt(23222,{b=1,itemID=18774,lvl=40,q=4,r=2}),
 mnt(17459,{b=1,itemID=13327,lvl=40,q=4,r=2,rwp=10400,u=2}),
-mnt(15779,{b=1,itemID=13326,lvl=40,q=4,r=2,rwp=10400,u=2})}})),(function(t)if _.RaceIndex==3 then	t.minReputation=nil;end	return t;end)(
+mnt(15779,{b=1,itemID=13326,lvl=40,q=4,r=2,rwp=10400,u=2})}})),(function(t)if _.RaceIndex==3 then	t.minReputation=nil end	return t end)(
 n(1261,{coords={
 [1426]={{63.4,50.6}}},minReputation={47,42000},r=2,g={
 mnt(6899,{b=1,itemID=5872,lvl=20,q=3,r=2}),
@@ -16381,7 +16381,7 @@ r(7633,{isLimited=1,itemID=6272,learnedAt=70,q=1,requireSkill=197})}}),
 n(6749,{coords={
 [1429]={{42.8,65.8}}},r=2,g={
 mnt(16082,{b=1,itemID=12354,lvl=40,q=4,r=2,rwp=10400,u=2}),
-mnt(16083,{b=1,itemID=12353,lvl=40,q=4,r=2,rwp=10400,u=2})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+mnt(16083,{b=1,itemID=12353,lvl=40,q=4,r=2,rwp=10400,u=2})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(384,{coords={
 [1429]={{84,65.4}}},minReputation={72,42000},r=2,g={
 mnt(458,{b=1,itemID=5656,lvl=20,q=3,r=2}),
@@ -16881,7 +16881,7 @@ i(3927,{f=55,lvl=35,q=1,u=17}),
 i(1707,{f=55,lvl=25,q=1,u=17})}}),
 n(16262,{coords={
 [1941]={{49,47}}},r=1,u=17,g={
-r(33276,{itemID=27685,q=1,requireSkill=185,u=17})}}),(function(t)if _.RaceIndex==10 then	t.minReputation=nil;end	return t;end)(
+r(33276,{itemID=27685,q=1,requireSkill=185,u=17})}}),(function(t)if _.RaceIndex==10 then	t.minReputation=nil end	return t end)(
 n(16264,{coords={
 [1941]={{61,54.6}}},minReputation={911,42000},r=1,u=17,g={
 mnt(35022,{b=1,itemID=29221,lvl=20,q=3,r=1,u=17}),
@@ -17645,7 +17645,7 @@ r(20916,{itemID=17062,learnedAt=175,q=1,requireSkill=185})}}),
 n(2394,{coords={
 [1424]={{62,21}}},r=1,g={
 r(7639,{isLimited=1,itemID=6274,learnedAt=100,q=1,requireSkill=197}),
-r(3870,{isLimited=1,itemID=6401,learnedAt=155,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(3870,{isLimited=1,itemID=6401,learnedAt=155,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(2357,{coords={
 [1424]={{52.2,55.4}}},minReputation={72,42000},r=2,rwp=40003,g={
 mnt(472,{b=1,itemID=2414,lvl=20,q=3,r=2}),
@@ -17821,7 +17821,7 @@ q(11521,{coords={
 [1957]={{51.4,32.4}}},isDaily=1,lvl=70,maps={1952},maxReputation={1077,42000},qgs={24975},u=2107,g={
 qo(1,{cost={{"i",34255,1}},providers={{"i",34254},{"n",24922},{"o",187072}},u=2107})}}),
 q(11517,{coords={
-[1957]={{47.2,35}}},isBreadcrumb=1,lvl=70,maps={1955},nextQuests={11513},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(2102)and 2 or 2101;end,qgs={25034},u=2101}),
+[1957]={{47.2,35}}},isBreadcrumb=1,lvl=70,maps={1955},nextQuests={11513},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(2102)and 2 or 2101 end,qgs={25034},u=2101}),
 q(11534,{coords={
 [1957]={{47.2,35}}},isBreadcrumb=1,lvl=70,nextQuests={11514},qgs={25034},u=2102}),
 q(11556,{coords={
@@ -19609,8 +19609,8 @@ crit(1222,{achID=781,id=1})}}),
 exp(122,{awp=30002,g={
 crit(1219,{achID=781,id=1})}})}),
 h(-31,{
-faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	if t.maxPossibleReputation<42000 then	tinsert(tooltipInfo,{left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true});end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	end	end}),
-faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end})}),
+faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return end	local reputation=t.reputation if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true})tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true})if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000)else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000)tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1})if not t.eventful then	t.eventful=true if DBM then	local f=CreateFrame("FRAME",nil,UIParent)f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo())end)f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...)if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)")DBM:CreatePizzaTimer(510,"Respawn (max)")end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0)f:SetSize(1,1)f:Hide()end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing)end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral)end	if t.maxPossibleReputation<42000 then	tinsert(tooltipInfo,{left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true})end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272)if f and #f>0 then t.dressing=f[1] end	end	if not t.admiral then	local f=_.SearchForField("questID",4621)if f and #f>0 then t.admiral=f[1] end	end	end	end}),
+faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000)addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5})end	end})}),
 h(-32,{
 fp(18,{coords={
 [1434]={{26.8,77}}},crs={2858},r=1}),
@@ -21109,7 +21109,7 @@ n(3548,{coords={
 n(12943,{coords={
 [1420]={{83.2,69.6}}},r=1,g={
 r(19067,{isLimited=1,itemID=15741,learnedAt=275,q=1,requireSkill=165}),
-r(19049,{isLimited=1,itemID=15725,learnedAt=260,q=1,requireSkill=165})}}),(function(t)if _.RaceIndex==5 then	t.minReputation=nil;end	return t;end)(
+r(19049,{isLimited=1,itemID=15725,learnedAt=260,q=1,requireSkill=165})}}),(function(t)if _.RaceIndex==5 then	t.minReputation=nil end	return t end)(
 n(4731,{coords={
 [1420]={{59.8,52.6}}},minReputation={68,42000},r=1,g={
 mnt(64977,{awp=30100,b=1,itemID=46308,lvl=20,q=3,r=1}),
@@ -22121,7 +22121,7 @@ n(3178,{coords={
 [1437]={{8,58.3}}},r=2,g={
 r(20916,{itemID=17062,learnedAt=175,q=1,requireSkill=185}),
 r(7827,{itemID=6368,learnedAt=50,q=1,requireSkill=185}),
-r(7828,{itemID=6369,learnedAt=175,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil;end	return t;end)(
+r(7828,{itemID=6369,learnedAt=175,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(1460,{coords={
 [1437]={{8.6,54.4}}},minReputation={72,42000},r=2,g={
 mnt(470,{b=1,itemID=2411,lvl=20,q=3,r=2}),
@@ -30234,7 +30234,7 @@ toy(43824,{b=1,crs={16128},description="If you lost the book, Rhonin will provid
 ach(1010,{maps={115,118},u=30}),
 ach(1782,{r=2,requireSkill=185,u=30}),
 ach(1783,{r=1,requireSkill=185,u=30}),
-ach(2019,{OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,rwp=40001,u=30}),
+ach(2019,{OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,rwp=40001,u=30}),
 ach(2095,{requireSkill=356,u=30,g={
 crit(7464,{achID=2095,id=1,providers={{"i",43686}},u=30}),
 crit(7465,{achID=2095,id=1,providers={{"i",43678}},u=30}),
@@ -30272,7 +30272,7 @@ crit(7251,{achID=1957,id=1,providers={{"i",43628}},u=30}),
 crit(7257,{achID=1957,id=1,providers={{"i",43630}},u=30}),
 crit(7252,{achID=1957,id=1,providers={{"i",43634}},u=30}),
 crit(7250,{achID=1957,id=1,providers={{"i",43635}},u=30})}}),
-ach(2018,{OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,rwp=40001,u=30})}}),
+ach(2018,{OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,rwp=40001,u=30})}}),
 h(-31,{u=30,g={
 faction(1090,{icon=135933,providers={{"i",43157}},u=30}),
 faction(1094,{icon=132483,maps={118},r=2,u=30,g={
@@ -31171,56 +31171,56 @@ q(24583,{coords={
 [125]={{57.3,66.7}}},isWeekly=1,maps={162},qgs={20735},u=33,g={
 qo(1,{providers={{"n",16028}},u=33})}}),
 q(13254,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={157,158,159},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={157,158,159},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43726}},u=30}),
-crit(7309,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7309,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13256,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={168},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={168},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43823}},u=30}),
-crit(7311,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7311,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13250,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={153,154},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={153,154},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43693}},u=30}),
-crit(7305,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7305,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13255,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={132},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={132},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43821}},u=30}),
-crit(7310,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7310,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13245,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={133,134,135},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={133,134,135},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43662}},u=30}),
-crit(7300,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7300,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13246,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={129},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={129},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43665}},u=30}),
-crit(7301,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7301,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13248,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={136,137},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={136,137},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43669}},u=30}),
-crit(7303,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7303,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13247,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={142,143,144,145,146},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={142,143,144,145,146},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43668}},u=30}),
-crit(7302,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7302,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13253,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={138,139},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={138,139},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43724}},u=30}),
-crit(7308,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7308,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13251,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={130,131},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={130,131},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43697}},u=30}),
-crit(7306,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7306,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13252,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={140},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={140},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43699}},u=30}),
-crit(7307,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7307,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(14199,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={171},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=32;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=32,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={171},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=32 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=32,g={
 qo(1,{providers={{"i",48418}},u=32})}}),
 q(13249,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={160,161},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={20735},rwp=40001,u=30,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={160,161},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={20735},rwp=40001,u=30,g={
 qo(1,{providers={{"i",43670}},u=30}),
-crit(7304,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7304,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(78752,{awp=30300,coords={
 [125]={{57.6,66.8}}},description="The quest item can also drop from any of the new Icecrown Heroic Dungeons.",isDaily=1,maps={129,130,131,132,133,134,135,136,137,138,139,140,142,143,144,145,146,153,154,157,158,159,160,161,168,171,183,184,185},maxReputation={1090,42000},qgs={20735},rwp=40001,u=33,g={
 qo(1,{providers={{"i",211206}},u=33}),
@@ -31288,41 +31288,41 @@ q(12791,{coords={
 q(12796,{coords={
 [121]={{40.6,66.9}}},isBreadcrumb=1,nextQuests={12790},qgs={29169},u=30}),
 q(13240,{coords={
-[125]={{63.8,55}}},isDaily=1,lvl=78,maps={142,143,144,145,146},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={31439},rwp=40001,u=30,g={
+[125]={{63.8,55}}},isDaily=1,lvl=78,maps={142,143,144,145,146},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={31439},rwp=40001,u=30,g={
 qo(1,{providers={{"n",27641}},u=30}),
 i(44711,{b=1,factionID=1106,q=2,repeatable=1,rwp=60002,u=30}),
 i(44713,{b=1,factionID=1098,q=2,repeatable=1,rwp=60002,u=30}),
 i(43950,{b=1,factionID=1090,q=2,repeatable=1,rwp=60002,u=30}),
 i(49702,{b=1,factionID=1119,q=2,repeatable=1,rwp=60002,u=30}),
 i(44710,{b=1,factionID=1091,q=2,repeatable=1,rwp=60002,u=30}),
-crit(7296,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7296,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13243,{coords={
-[125]={{63.8,55}}},isDaily=1,lvl=78,maps={130,131},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={31439},rwp=40001,u=30,g={
+[125]={{63.8,55}}},isDaily=1,lvl=78,maps={130,131},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={31439},rwp=40001,u=30,g={
 qo(1,{providers={{"n",27744}},u=30}),
 i(44711,{b=1,factionID=1106,q=2,repeatable=1,rwp=60002,u=30}),
 i(44713,{b=1,factionID=1098,q=2,repeatable=1,rwp=60002,u=30}),
 i(43950,{b=1,factionID=1090,q=2,repeatable=1,rwp=60002,u=30}),
 i(49702,{b=1,factionID=1119,q=2,repeatable=1,rwp=60002,u=30}),
 i(44710,{b=1,factionID=1091,q=2,repeatable=1,rwp=60002,u=30}),
-crit(7298,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7298,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13244,{coords={
-[125]={{63.8,55}}},isDaily=1,lvl=78,maps={138,139},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={31439},rwp=40001,u=30,g={
+[125]={{63.8,55}}},isDaily=1,lvl=78,maps={138,139},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={31439},rwp=40001,u=30,g={
 qo(1,{providers={{"n",28838}},u=30}),
 i(44711,{b=1,factionID=1106,q=2,repeatable=1,rwp=60002,u=30}),
 i(44713,{b=1,factionID=1098,q=2,repeatable=1,rwp=60002,u=30}),
 i(43950,{b=1,factionID=1090,q=2,repeatable=1,rwp=60002,u=30}),
 i(49702,{b=1,factionID=1119,q=2,repeatable=1,rwp=60002,u=30}),
 i(44710,{b=1,factionID=1091,q=2,repeatable=1,rwp=60002,u=30}),
-crit(7299,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7299,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(13241,{coords={
-[125]={{63.8,55}}},isDaily=1,lvl=78,maps={136,137},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,qgs={31439},rwp=40001,u=30,g={
+[125]={{63.8,55}}},isDaily=1,lvl=78,maps={136,137},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,qgs={31439},rwp=40001,u=30,g={
 qo(1,{providers={{"n",26696}},u=30}),
 i(44711,{b=1,factionID=1106,q=2,repeatable=1,rwp=60002,u=30}),
 i(44713,{b=1,factionID=1098,q=2,repeatable=1,rwp=60002,u=30}),
 i(43950,{b=1,factionID=1090,q=2,repeatable=1,rwp=60002,u=30}),
 i(49702,{b=1,factionID=1119,q=2,repeatable=1,rwp=60002,u=30}),
 i(44710,{b=1,factionID=1091,q=2,repeatable=1,rwp=60002,u=30}),
-crit(7297,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30300;end	end,u=30})}}),
+crit(7297,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30300 end	end,u=30})}}),
 q(14103,{coords={
 [125]={{40.7,35.4}}},cost={{"i",46849,10}},qgs={28701},repeatable=1,requireSkill=755,u=32,g={
 cu(61,{u=32})}}),
@@ -41185,5 +41185,5 @@ r(54980,{b=1,coords={
 i(38660,{b=1,coords={
 [121]={{14,69},{16.2,75.6},{17.6,70.8},{22.4,71.6}}},crs={28519},description="This Item will drop instead of |cffffffffWrithing Choker|r until |cffffd700Cleansing Drak'Tharon|r has been completed.",lvl=74,q=1,u=30}),
 i(38673,{b=1,coords={
-[121]={{14,69},{16.2,75.6},{17.6,70.8},{22.4,71.6}}},crs={28519},description="This Item will drop instead of |cffffffffUnliving Choker|r once |cffffd700Cleansing Drak'Tharon|r has been completed.",lvl=74,q=1,sourceQuests={12238},u=30})}})}})}})}});
-end);
+[121]={{14,69},{16.2,75.6},{17.6,70.8},{22.4,71.6}}},crs={28519},description="This Item will drop instead of |cffffffffUnliving Choker|r once |cffffd700Cleansing Drak'Tharon|r has been completed.",lvl=74,q=1,sourceQuests={12238},u=30})}})}})}})}})
+end)

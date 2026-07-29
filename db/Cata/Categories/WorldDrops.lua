@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,cat,cl,cu,flt,h,i,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
@@ -6781,5 +6781,5 @@ toy(36863,{description="Can be pickpocketed from Northrend humanoids.",q=1}),
 toy(36862,{description="Can be pickpocketed from Northrend humanoids.",q=1})}})}),
 x(4,{awp=40001,g={
 flt(102,{
-toy(63269,{description="Can be pickpocketed from Cataclysm humanoids.",q=1})})}})}})}});
-end);
+toy(63269,{description="Can be pickpocketed from Cataclysm humanoids.",q=1})})}})}})}})
+end)

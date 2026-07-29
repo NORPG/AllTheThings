@@ -1,6 +1,6 @@
-﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end
+﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return end
 ---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cat,h,i,prof,q,r,x=_.CreateAchievement,_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateExpansion;
 categories.Professions=
@@ -348,5 +348,5 @@ r(13228,{lvl=40}),
 r(13229,{lvl=48}),
 r(13230,{lvl=56})})}}),
 prof(393),
-prof(197)}});
-end);
+prof(197)}})
+end)

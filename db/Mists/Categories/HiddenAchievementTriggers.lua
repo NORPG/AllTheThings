@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ach,crit,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateExpansion;
 categories.HiddenAchievementTriggers={
@@ -878,5 +878,5 @@ ach(61951,{
 crit(111512,{achID=61987,awp=50502,id=9,rwp=50503,u=2})}),
 ach(61952,{
 crit(111505,{achID=61987,awp=50502,id=2,rwp=50503,u=2})}),
-ach(61680)}})};
-end);
+ach(61680)}})}
+end)

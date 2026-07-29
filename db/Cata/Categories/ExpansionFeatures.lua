@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,crit,cs,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
@@ -3055,5 +3055,5 @@ i(62471,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4}),
 i(62470,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4}),
 i(62468,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4})}})}),
 h(-63,{
-p(278,{b=1,crs={47676},itemID=64403,npcID=48641,petTypeID=8,q=3,spellID=90637})})}})})}});
-end);
+p(278,{b=1,crs={47676},itemID=64403,npcID=48641,petTypeID=8,q=3,spellID=90637})})}})})}})
+end)

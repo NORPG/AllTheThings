@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ah,cl,cu,faction,gb,h,hqt,i,inst,m,n,o,prof,x=_.CreateHeader,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateExpansion;
 categories.HiddenQuestTriggers={
@@ -2538,11 +2538,9 @@ hqt(51163),
 hqt(53428),
 hqt(53477)}),
 h(-56,{
-hqt(51945),
 hqt(53652)}),
 h(-62,{
 hqt(50541),
-hqt(53624),
 hqt(53612)})}}),
 m(895,{maps={1171,1172,1184,1185},petBattleLvl=25,lvl=10,g={
 h(-61,{
@@ -8096,5 +8094,5 @@ hqt(11937),
 hqt(47465),
 hqt(47464),
 hqt(47466),
-hqt(28997)})};
-end);
+hqt(28997)})}
+end)

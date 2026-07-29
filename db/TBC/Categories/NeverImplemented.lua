@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local cl,crit,cs,exp,faction,flt,fp,h,i,mnt,p,prof,q,r,s,sp,toy,x=_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
 categories.NeverImplemented={
@@ -6433,5 +6433,5 @@ i(32740,{f=36,q=0}),
 i(28023,{f=36,q=0}),
 i(33338,{f=36,q=0}),
 i(31497,{f=36,q=0}),
-i(31499,{f=36,q=0})})})})})};
-end);
+i(31499,{f=36,q=0})})})})})}
+end)

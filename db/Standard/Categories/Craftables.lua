@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,cq,crit,cs,cu,de,fc,flt,h,hqt,i,ill,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDecor,_.CreateFirstCraft,_.CreateFilter,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Craftables=
@@ -19066,5 +19066,5 @@ i(239703),
 i(239201),
 i(239202),
 i(240164),
-i(240165)})})}})}});
-end);
+i(240165)})})}})}})
+end)

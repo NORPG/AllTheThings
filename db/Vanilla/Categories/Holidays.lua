@@ -1,6 +1,6 @@
-﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end
+﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return end
 ---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cat,crit,faction,h,i,n,o,p,prof,q,qo,r,s,toy=_.CreateAchievement,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 categories.Holidays=
@@ -56,7 +56,7 @@ qo(1,{coords={
 [1454]={{52.6,69.6}}},crs={14480},e=13,providers={{"i",7228}}})}})}})}}),
 h(-37,{e=1,maps={1412,1429},g={
 h(-31,{e=1,g={
-faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerTierTurnIn=100;local tierOneMaxRep=500;if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep);else	local tierTwoMaxRep=1050;if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep);else	local tierThreeMaxRep=1700;if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep);else	local tierFourMaxRep=2500;if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep);else	local tierFiveMaxRep=5001;if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep);end	end	end	end	end	local repPerDeckTurnIn=150;addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000);end	end,g={
+faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo local repPerTierTurnIn=100 local tierOneMaxRep=500 if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep)else	local tierTwoMaxRep=1050 if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep)else	local tierThreeMaxRep=1700 if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep)else	local tierFourMaxRep=2500 if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep)else	local tierFiveMaxRep=5001 if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep)end	end	end	end	end	local repPerDeckTurnIn=150 addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000)end	end,g={
 crit(8823,{achID=2336,id=8,u=13})}})}}),
 h(-45,{e=1,g={
 q(7930,{coords={
@@ -1253,5 +1253,5 @@ i(19803,{b=1,e=6,q=2}),
 i(19806,{b=1,e=6,q=2}),
 i(19805,{b=1,e=6,q=2}),
 s(163999,19808,{e=6,f=23,lvl=40,q=2}),
-i(19807,{b=1,e=6,q=1})}})}})}})}});
-end);
+i(19807,{b=1,e=6,q=1})}})}})}})}})
+end)

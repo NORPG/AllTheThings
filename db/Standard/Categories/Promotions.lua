@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,cq,crit,cu,de,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Promotions=
@@ -57,17 +57,17 @@ h(-517,{awp=110002,u=3,g={
 mnt(163025,{b=1,description="Acquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=112327,lvl=10,u=3}),
 p(4595,{b=1,itemID=224576,npcID=225354,spellID=453266,u=3}),
 mnt(453255,{description="Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224574,lvl=10,u=3})}}),
-h(-691,{awp=110205,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1255159,{itemID=252679,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1255179,{itemID=252681,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(449142,{itemID=223471,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(449132,{itemID=223459,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+h(-691,{awp=110205,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(1255159,{itemID=252679,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(1255179,{itemID=252681,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(449142,{itemID=223471,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(449132,{itemID=223459,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=3,g={
-crit(34643,{achID=6185,awp=40300,id=3,u=2})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-p(333,{b=1,itemID=72134,npcID=54730,spellID=102317,u=3}))}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-ach(40910,{description="Rewarded for the Aid in the stress testing of the realms in China.",rwp=110005,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(366962,{itemID=190231,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-p(4286,{b=1,itemID=210409,npcID=211942,spellID=425472,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+crit(34643,{achID=6185,awp=40300,id=3,u=2})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+p(333,{b=1,itemID=72134,npcID=54730,spellID=102317,u=3}))}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+ach(40910,{description="Rewarded for the Aid in the stress testing of the realms in China.",rwp=110005,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(366962,{itemID=190231,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+p(4286,{b=1,itemID=210409,npcID=211942,spellID=425472,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 mnt(464443,{b=1,description="Rewarded for returning to World of Warcraft in 2024. China Only.",itemID=229128,lvl=10,u=2})),
 mnt(136505,{awp=110002,itemID=93671,lvl=10,u=2}),
 p(3254,{awp=110002,description="Obtained by gifting an eligible creator's channel two Twitch subscriptions between August 26th, 03:00 p.m. & September 26th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that will also reward the pet!",itemID=190609,npcID=185621,spellID=367800,u=2}),
@@ -93,16 +93,16 @@ mnt(449132,{awp=110005,description="Obtained through watching the official Warcr
 mnt(449142,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223471,lvl=10,u=2}),
 p(4630,{awp=110005,description="Available with the purchase of a Murloc Thrall plushie from the Blizzard Gear Store. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=229368,npcID=230834,spellID=464808,u=3}),
 mnt(139595,{awp=110007,b=1,itemID=95341,lvl=10,rwp=110105,u=2}),
-s(230822,233207,{awp=110007,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 14th, 10:00 a.m. & February 4th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=3,rwp=110007,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1216542,{awp=110007,b=1,description="Rewarded from the Treasure Workshop.",itemID=235344,lvl=10,rwp=110100,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(235378,{awp=110007,b=1,rwp=110100,spellID=1216746,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(459784,{itemID=227362,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(42777,{itemID=49284,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(42776,{itemID=49283,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(46199,{itemID=49286,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(46197,{itemID=49285,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(45047,{b=1,f=55,spellID=62857,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(35223,{b=1,f=55,spellID=46168,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+s(230822,233207,{awp=110007,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 14th, 10:00 a.m. & February 4th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=3,rwp=110007,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(1216542,{awp=110007,b=1,description="Rewarded from the Treasure Workshop.",itemID=235344,lvl=10,rwp=110100,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(235378,{awp=110007,b=1,rwp=110100,spellID=1216746,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(459784,{itemID=227362,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(42777,{itemID=49284,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(42776,{itemID=49283,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(46199,{itemID=49286,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(46197,{itemID=49285,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(45047,{b=1,f=55,spellID=62857,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(35223,{b=1,f=55,spellID=46168,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 i(46779,{b=1,f=55,spellID=65745,u=2}))}})),
 p(4762,{awp=110100,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 25th, 10:00 a.m. & March 25th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=238261,npcID=240137,rwp=110100,spellID=1224569,u=2}),
 en(229822,{awp=110007,description="Included as a code in the physical goodie bag given to attendees of 30th Anniversary Live events.",questID=84999,rwp=110105,spellID=465518,tmogSetID=3901,u=2,g={
@@ -116,7 +116,7 @@ p(4791,{awp=110100,description="Included for free with any purchase from the Wor
 p(4410,{awp=110105,b=1,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 22nd, 10:00 a.m. & May 20th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=212791,npcID=216455,rwp=110105,spellID=433098,u=2}),
 mnt(1236262,{awp=110107,description="Finish the Pandaren Wandering Isle starting zone in |cFFfe040fMoP Classic|r until you arrive in Orgrimmar/Stormwind to receive this mount in Retail.\n\nPromotion starts on July 1st until July 30th.",rwp=110107,u=2}),
 s(284494,235987,{awp=110107,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between July 14th, 10:00 a.m. & August 11th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=3,rwp=110200,u=2}),
-p(4858,{awp=110200,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 5th, 10:00 a.m. & September 16th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=246451,npcID=246983,rwp=110200,spellID=1242265,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(4858,{awp=110200,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 5th, 10:00 a.m. & September 16th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=246451,npcID=246983,rwp=110200,spellID=1242265,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 mnt(1243589,{awp=110200,b=1,description="Rewarded from the Season 3 Shop Bundle.",itemID=246732,lvl=10,rwp=110205,u=2})),
 toy(232307,{awp=110200,b=1,description="Arena World Championship: TWW Season 3\n\nSign up on Raider.io for any of the 3 Cups, available until October 22nd 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",rwp=110205,u=2}),
 toy(232303,{awp=110205,b=1,description="Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",u=2}),
@@ -139,11 +139,11 @@ mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),
 p(4690,{itemID=232519,npcID=233481,spellID=470914,u=2})}}),
 ach(62387,{description="Obtained by logging in to an account with an active subscription before the release of Midnight on March 2nd, 2026.",rwp=120001,u=2,g={
 de(14467,{itemID=260785,sourceAchievements={62387},spellID=1266894,u=2})}}),
-h(-760,{rwp=120001,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-p(4907,{b=1,itemID=257515,npcID=254356,spellID=1261676,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-s(18369,38311,{b=1,f=9,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-s(266784,235343,{f=2,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-p(4902,{itemID=253404,npcID=252686,spellID=1256380,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+h(-760,{rwp=120001,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+p(4907,{b=1,itemID=257515,npcID=254356,spellID=1261676,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+s(18369,38311,{b=1,f=9,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+s(266784,235343,{f=2,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+p(4902,{itemID=253404,npcID=252686,spellID=1256380,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 en(257547,{questID=93198,spellID=1261729,tmogSetID=5335,u=2,g={
 s(301195,257538,{f=2}),
 s(301201,257544,{f=2}),
@@ -152,33 +152,33 @@ s(301196,257539,{f=2}),
 s(301200,257543,{f=2}),
 s(301197,257540,{f=2}),
 s(301199,257542,{f=2}),
-s(301202,257545,{f=3})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9265,{itemID=253244,spellID=1255878,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9276,{itemID=253292,spellID=1255993,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9275,{itemID=253291,spellID=1255992,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9270,{itemID=253254,spellID=1255904,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9274,{itemID=253290,spellID=1255991,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9272,{itemID=253256,spellID=1255906,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9273,{itemID=253257,spellID=1255907,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9277,{itemID=253293,spellID=1255994,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9278,{itemID=253294,spellID=1255995,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9279,{itemID=253295,spellID=1255996,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9280,{itemID=253296,spellID=1255997,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9281,{itemID=253297,spellID=1255998,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9271,{itemID=253255,spellID=1255905,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-toy(258840,{u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-s(298858,253402,{f=29,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(254735,{f=100,spellID=1258573,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-toy(258136,{u=2}))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269743,{b=1,spellID=1286271,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(251542,{f=55,spellID=1252638,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-toy(258135,{u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1284640,{itemID=269009,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1258574,{itemID=254736,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(255973,{f=106,spellID=1259687,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(46779,{b=1,f=55,spellID=65745,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(42776,{itemID=49283,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(46199,{itemID=49286,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+s(301202,257545,{f=3})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9265,{itemID=253244,spellID=1255878,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9276,{itemID=253292,spellID=1255993,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9275,{itemID=253291,spellID=1255992,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9270,{itemID=253254,spellID=1255904,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9274,{itemID=253290,spellID=1255991,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9272,{itemID=253256,spellID=1255906,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9273,{itemID=253257,spellID=1255907,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9277,{itemID=253293,spellID=1255994,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9278,{itemID=253294,spellID=1255995,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9279,{itemID=253295,spellID=1255996,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9280,{itemID=253296,spellID=1255997,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9281,{itemID=253297,spellID=1255998,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(9271,{itemID=253255,spellID=1255905,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+toy(258840,{u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+s(298858,253402,{f=29,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(254735,{f=100,spellID=1258573,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+toy(258136,{u=2}))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(269743,{b=1,spellID=1286271,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(251542,{f=55,spellID=1252638,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+toy(258135,{u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(1284640,{itemID=269009,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(1258574,{itemID=254736,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(255973,{f=106,spellID=1259687,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(46779,{b=1,f=55,spellID=65745,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(42776,{itemID=49283,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(46199,{itemID=49286,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 mnt(46197,{itemID=49285,lvl=10,u=2}))}}))}}),
 de(15668,{awp=120001,description="Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' and authorize the Account connection.",itemID=264396,rwp=120100,spellID=1271935}),
 de(15669,{awp=120001,description="Visit |cFFFFD700zillow.com/warcraft|r\n\nClick on 'Explore Homes'\n\nFlip between Alliance and Horde until you see 'Greener's Plant Nursery' advertisement\n\nClick on 'Free Sample' and authorize the Account connection.",itemID=264397,rwp=120100,spellID=1271936}),
@@ -315,7 +315,7 @@ crit(34632,{achID=664,awp=30002,id=3,rwp=30002,u=2})}})}})}}),
 x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
 ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
 p(131,{awp=20001,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
-crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
+crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
 p(111,{awp=20001,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=120007,u=2,g={
 mnt(346136,{b=1,itemID=248090,lvl=10,u=2})}}),
@@ -1435,7 +1435,7 @@ h(-550,{awp=20403,rwp=30002,u=2,g={
 ach(1637,{providers={{"i",37297}},u=2}),
 p(179,{b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,npcID=27217,spellID=48406,u=2}),
 ach(1636,{providers={{"i",36941}},u=2}),
-s(17489,36941,{b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+s(17489,36941,{b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	end	end,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 p(180,{b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,npcID=27346,spellID=48408,u=2}))}}),
 h(-551,{awp=20001,u=10,g={
 flt(101,{u=10,g={
@@ -1695,5 +1695,5 @@ o(392032,{coords={
 o(405584,{coords={
 [2025]={{49.2,58.3}}},questID=75038,type="AsSubGenericObject"}),
 o(387722,{coords={
-[2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}})}});
-end);
+[2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}})}})
+end)

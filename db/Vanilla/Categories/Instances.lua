@@ -1,6 +1,6 @@
-﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end
+﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return end
 ---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cl,crit,cs,e,faction,flt,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
 categories.Instances=
@@ -3705,9 +3705,9 @@ h(-12,{u=1101,g={
 ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1101}),
 ach(644,{maps={235,236,237,238,239},u=1101})}}),
 h(-31,{u=1101,g={
-faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1101,g={
+faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000)end	end,rwp=40003,u=1101,g={
 crit(8825,{achID=2336,id=5,u=13})}}),
-faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1101})}}),
+faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true})local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1})addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999)addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999)end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000)addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000)addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000)end	end,u=1101})}}),
 h(-45,{u=1101,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1101}),
 q(7463,{c={8},lvl=60,maps={236,237,238,239},qgs={14368},rwp=40003,u=1101,g={
@@ -5519,7 +5519,7 @@ q(4143,{coords={
 [1444]={{45.1,25.6}}},lvl=47,maps={1449},qgs={7775},r=2,rwp=40003,sourceQuests={4142},g={
 qo(1,{providers={{"i",11318}}})}}),
 q(3512,{coords={
-[1435]={{13.7,71.7}}},description="This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",lvl=48,maps={1452},OnUpdate=function(t)if not _.IsQuestFlaggedCompleted(3374)and(_.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	t.description="|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r";end	end,qgs={5353},rwp=40003,sourceQuests={3374}}),
+[1435]={{13.7,71.7}}},description="This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",lvl=48,maps={1452},OnUpdate=function(t)if not _.IsQuestFlaggedCompleted(3374)and(_.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1)then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r" end	end,qgs={5353},rwp=40003,sourceQuests={3374}}),
 q(3446,{coords={
 [1446]={{52.6,45.8}}},lvl=46,providers={{"i",10466},{"o",148836}},qgs={7771},rwp=40003,sourceQuests={3444}}),
 q(1475,{coords={
@@ -5540,7 +5540,7 @@ s(164257,20255,{b=1,f=5,q=3,u=14})}}),
 q(3373,{description="Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",lvl=48,providers={{"i",10454},{"o",148512}},rwp=40003,g={
 i(10455,{b=1,f=53,q=2})}}),
 q(3374,{coords={
-[1435]={{13.7,71.7}}},cost={{"i",10455,1}},description="You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",lvl=48,OnUpdate=function(t)if not t.collected and _.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1 then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	t.description="|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r";end	end,providers={{"i",10589}},qgs={5353},rwp=40003,sourceQuests={3373}}),
+[1435]={{13.7,71.7}}},cost={{"i",10455,1}},description="You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",lvl=48,OnUpdate=function(t)if not t.collected and _.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1 then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r" end	end,providers={{"i",10589}},qgs={5353},rwp=40003,sourceQuests={3373}}),
 q(3528,{coords={
 [1446]={{66.8,22.4}}},lvl=40,qgs={8579},rwp=40003,sourceQuests={4787},g={
 qo(1,{cost={{"i",10663,1},{"i",10465,1}},crs={8443},providers={{"i",10662}}}),
@@ -6077,5 +6077,5 @@ i(10661,{q=1})}),
 e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
 i(8707,{q=1}),
 s(159379,9467,{b=1,f=20,lvl=42,q=2}),
-s(159380,9469,{b=1,f=6,lvl=43,q=3})}})}})})}});
-end);
+s(159380,9469,{b=1,f=6,lvl=43,q=3})}})}})})}})
+end)

@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ah,cl,faction,h,hqt,inst,m,prof,settings,x=_.CreateHeader,_.CreateCharacterClass,_.CreateFaction,_.CreateCustomHeader,_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateProfession,_.Settings,_.CreateExpansion;
 categories.HiddenQuestTriggers={
@@ -488,7 +488,7 @@ hqt(30722)})}}),
 ah(1269,{awp=50004,type="fa",g={
 h(-45,{
 hqt(31652),
-hqt(30294,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;else	t.u=50;t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2})})}}),
+hqt(30294,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2})})}}),
 ah(1272,{awp=50004,type="fa",g={
 ah(1277,{type="fa",g={
 hqt(31344),
@@ -829,5 +829,5 @@ hqt(11937),
 hqt(47465),
 hqt(47464),
 hqt(47466),
-hqt(28997)})};
-end);
+hqt(28997)})}
+end)

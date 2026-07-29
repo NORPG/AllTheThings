@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,crit,cu,faction,fp,h,heir,i,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateFaction,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
@@ -351,7 +351,7 @@ q(13739,{coords={
 p(216,{b=1,itemID=45022,petTypeID=1,q=3,r=1,spellID=62746,u=31}),
 cu(241,{u=32})}}),
 q(13681,{awp=30100,coords={
-[118]={{74,24.6}}},isDaily=1,maps={120},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31;end,qgs={33435},rwp=40001,sourceQuests={13820},u=31,g={
+[118]={{74,24.6}}},isDaily=1,maps={120},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31 end,qgs={33435},rwp=40001,sourceQuests={13820},u=31,g={
 qo(1,{awp=30200,providers={{"i",45278},{"i",45281},{"o",194461},{"o",194463}},u=31})}}),
 q(14074,{coords={
 [118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
@@ -623,7 +623,7 @@ qo(1,{coords={
 cu(241,{u=32})}}),
 q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,providers={{"i",46955}},sourceAchievements={2771,2817},u=32}),
 q(13627,{awp=30100,coords={
-[118]={{74.2,24.6}}},isDaily=1,maps={127},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31;end,qgs={33434},rwp=40001,sourceQuests={13820},u=31,g={
+[118]={{74.2,24.6}}},isDaily=1,maps={127},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31 end,qgs={33434},rwp=40001,sourceQuests={13820},u=31,g={
 qo(1,{awp=30200,providers={{"i",45045},{"i",45046},{"n",33308}},u=31})}}),
 q(13625,{coords={
 [118]={{76.5,19.5}}},isDaily=1,providers={{"i",46069}},qgs={33647,33843},r=2,sourceQuests={13828,13835,13837},u=31,g={
@@ -758,7 +758,7 @@ qo(2,{coords={
 qo(3,{coords={
 [118]={{40.4,12.9},{54.1,8.6}}},providers={{"i",45122},{"o",194424}},u=31})}}),
 q(13820,{awp=30100,coords={
-[118]={{69.6,22.8}}},isBreadcrumb=1,nextQuests={13627,13681},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31;end,qgs={33817},rwp=40001,u=31}),
+[118]={{69.6,22.8}}},isBreadcrumb=1,nextQuests={13627,13681},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31 end,qgs={33817},rwp=40001,u=31}),
 q(13670,{coords={
 [118]={{76.5,19.4}}},isDaily=1,maps={117,127},qgs={33625},r=2,sourceQuests={13828,13835,13837},u=31,g={
 qo(1,{providers={{"i",45003}},u=31}),
@@ -1722,5 +1722,5 @@ s(176481,47151,{b=1,cost={{"c",2711,30}},f=5,lvl=80,q=4,r=2,u=33}),
 s(176407,47055,{b=1,cost={{"c",2711,30}},f=5,lvl=80,q=4,r=2,u=33}),
 s(176448,47108,{b=1,cost={{"c",2711,30}},f=7,lvl=80,q=4,r=2,u=33}),
 s(176420,47073,{b=1,cost={{"c",2711,30}},f=6,lvl=80,q=4,r=2,u=33}),
-s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,lvl=80,q=4,r=2,u=33})}})}})}})})}});
-end);
+s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,lvl=80,q=4,r=2,u=33})}})}})}})})}})
+end)

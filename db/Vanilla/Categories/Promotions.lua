@@ -1,6 +1,6 @@
-﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end
+﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return end
 ---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local flt,h,i,mnt,p,q,s,x=_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
 categories.Promotions=
@@ -45,5 +45,5 @@ s(165302,23705,{b=1,f=9,q=4,u=1}),
 s(165303,23709,{b=1,f=9,q=1,u=1})}}),
 flt(102,{u=1,g={
 i(23716,{awp=20203,b=1,f=53,q=1,u=1}),
-i(23714,{awp=20203,b=1,f=53,q=1,u=1})}})}})}});
-end);
+i(23714,{awp=20203,b=1,f=53,q=1,u=1})}})}})}})
+end)

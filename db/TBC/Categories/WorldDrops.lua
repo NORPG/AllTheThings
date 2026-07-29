@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,cat,cl,flt,h,i,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
@@ -4716,7 +4716,7 @@ i(27681,{coords={
 [1953]={{56.4,60},{66.3,61.8}}},crs={18464,18465,18884,23219},q=1,u=17})}}),
 flt(200,{u=17,g={
 cl(11,{u=17,g={
-r(26991,{c={11},itemID=22146,lvl=70,q=3,rank=3,u=17})}}),
+r(26991,{c={11},itemID=22146,lvl=70,maps={246,256,258,260,261,262,263,265,266,267,269,272,273,274,329,330,331,332,333,334,335,340,347,348,350},q=3,rank=3,u=17})}}),
 cl(8,{u=17,g={
 r(27127,{c={8},itemID=22153,lvl=70,q=3,rank=2,u=17}),
 r(33717,{c={8},description="Learn both of these tomes and then visit your trainer for the table.",itemID=31501,lvl=70,q=3,rank=8,u=17}),
@@ -4872,5 +4872,5 @@ i(16883,{q=1})}}),
 ah(921,{description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
 x(1,{
 i(6150,{description="Can be pickpocketed from Classic humanoids."}),
-i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",q=1})})}})}});
-end);
+i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",q=1})})}})}})
+end)

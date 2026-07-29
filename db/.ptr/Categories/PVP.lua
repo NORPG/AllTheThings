@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,artifact,cl,crit,cu,de,en,faction,flt,gach,h,i,ill,m,mm,mnt,n,o,p,pvprank,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreatePVPRank,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.PVP=
@@ -1102,7 +1102,7 @@ s(12805,28874,{b=1,c={11},f=5,lvl=27,pvp=1,r=1,u=2}),
 s(12806,28875,{b=1,c={11},f=5,lvl=27,pvp=1,r=1,u=2}),
 s(12802,28871,{b=1,c={11},f=5,lvl=27,pvp=1,r=1,spellID=96148,u=2}),
 s(12804,28873,{b=1,c={11},f=5,lvl=27,pvp=1,r=1,u=2})}})}})}}),
-h(-247,{awp=20001,pvp=1,symselector=17,g={
+h(-247,{awp=20001,pvp=1,symselector=16,g={
 h(-12,{pvp=1,g={
 ach(886,{providers={{"i",30609}},pvp=1,u=2}),
 mnt(37015,{b=1,description="Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=30609,lvl=10,pvp=1,u=2}),
@@ -1371,7 +1371,7 @@ i(30345,{awp=20003,b=1,c={7},f=53,lvl=27,pvp=1,rwp=40001,spellID=42292,u=2}),
 i(30343,{awp=20003,b=1,c={9},f=53,lvl=27,pvp=1,rwp=40001,spellID=42292,u=2}),
 i(30344,{awp=20003,b=1,c={1},f=53,lvl=27,pvp=1,rwp=40001,spellID=42292,u=2}),
 i(24551,{awp=20003,b=1,f=53,lvl=27,pvp=1,rwp=60002,spellID=32140,u=2})}})}})}}),
-h(-248,{awp=20102,pvp=1,symselector=18,g={
+h(-248,{awp=20102,pvp=1,symselector=17,g={
 h(-12,{pvp=1,g={
 ach(11707,{awp=70200,pvp=1,g={
 crit(36385,{achID=11761,id=6})}}),
@@ -1576,7 +1576,7 @@ flt(52,{pvp=1,g={
 i(33056,{awp=20003,b=1,f=52,lvl=27,pvp=1,rwp=20504,u=2}),
 i(33064,{awp=20003,b=1,f=52,lvl=27,pvp=1,rwp=20504,u=2}),
 i(33057,{awp=20003,b=1,f=52,lvl=27,pvp=1,rwp=20504,u=2})}})}})}}),
-h(-249,{awp=20300,pvp=1,symselector=19,g={
+h(-249,{awp=20300,pvp=1,symselector=18,g={
 h(-12,{pvp=1,g={
 ach(11708,{awp=70200,pvp=1,g={
 crit(36386,{achID=11761,id=7})}}),
@@ -1796,7 +1796,7 @@ i(34576,{awp=20003,b=1,f=53,lvl=27,pvp=1,rwp=30002,spellID=44055,u=2}),
 i(34577,{awp=20003,b=1,f=53,lvl=27,pvp=1,rwp=30002,spellID=44055,u=2}),
 i(34578,{awp=20003,b=1,f=53,lvl=27,pvp=1,rwp=30002,spellID=44055,u=2}),
 i(34580,{awp=20003,b=1,f=53,lvl=27,pvp=1,rwp=30002,spellID=44055,u=2})}})}})}}),
-h(-250,{awp=20403,pvp=1,symselector=20,g={
+h(-250,{awp=20403,pvp=1,symselector=19,g={
 h(-12,{pvp=1,g={
 ach(11709,{awp=70200,pvp=1,g={
 crit(36387,{achID=11761,id=8})}}),
@@ -29787,7 +29787,7 @@ s(116333,185297,{b=1,cost={{"c",1792,1750}},f=32,lvl=60,pvp=1,u=2}),
 s(116324,185288,{b=1,cost={{"c",1792,1750}},f=28,lvl=60,pvp=1,u=2}),
 s(116325,185289,{b=1,cost={{"c",1792,875}},f=25,lvl=60,pvp=1,u=2}),
 s(116329,185293,{b=1,cost={{"c",1792,875}},f=35,lvl=60,pvp=1,u=2})}})}})}}),
-h(-296,{pvp=1,symselector=21,g={
+h(-296,{pvp=1,symselector=20,g={
 n(168011,{coords={
 [1670]={{35,57.6}}},pvp=1,g={
 en(201876,{b=1,cost={{"i",137642,80}},lvl=60,pvp=1,questID=74275,spellID=395615,tmogSetID=2753,g={
@@ -30417,7 +30417,7 @@ s(146455,186961,{b=1,cost={{"c",1792,1750}},f=32,lvl=60,pvp=1,u=2}),
 s(146446,186952,{b=1,cost={{"c",1792,1750}},f=28,lvl=60,pvp=1,u=2}),
 s(146447,186953,{b=1,cost={{"c",1792,875}},f=25,lvl=60,pvp=1,u=2}),
 s(146451,186957,{b=1,cost={{"c",1792,875}},f=35,lvl=60,pvp=1,u=2})}})}})}}),
-h(-296,{pvp=1,symselector=22,g={
+h(-296,{pvp=1,symselector=21,g={
 n(168011,{coords={
 [1670]={{35,57.6}}},pvp=1,g={
 en(201873,{b=1,cost={{"i",137642,80}},lvl=60,pvp=1,questID=74273,spellID=395595,tmogSetID=2750,g={
@@ -31419,7 +31419,7 @@ s(180369,192407,{b=1,cost={{"c",1792,1750}},f=32,lvl=60,pvp=1,u=2}),
 s(180360,192398,{b=1,cost={{"c",1792,1750}},f=28,lvl=60,pvp=1,u=2}),
 s(180361,192399,{b=1,cost={{"c",1792,875}},f=25,lvl=60,pvp=1,u=2}),
 s(180365,192403,{b=1,cost={{"c",1792,875}},f=35,lvl=60,pvp=1,u=2})}})}})}}),
-h(-296,{pvp=1,symselector=23,g={
+h(-296,{pvp=1,symselector=22,g={
 n(168011,{coords={
 [1670]={{35,57.6}}},pvp=1,g={
 flt(3,{awp=90205,pvp=1,rwp=100000,u=2,g={
@@ -43767,14 +43767,14 @@ s(295481,248359,{awp=110200,bonusID=7532,cost={{"i",137642,5}},f=25,lvl=80,pvp=1
 s(295467,248345,{awp=110200,bonusID=7532,cost={{"i",137642,5}},f=35,lvl=80,pvp=1,rwp=120001,u=2})}})}}),
 h(-47,{pvp=1,g={
 i(230284,{b=1,description="Rewarded within the first few wins in queued PvP Content.",pvp=1,rwp=120001,u=2})}})}})}}),
-x(12,{awp=120001,pvp=1,g={
-h(-305,{pvp=1,rwp=130000,g={
+x(12,{pvp=1,g={
+h(-305,{awp=120001,pvp=1,rwp=130000,g={
 h(-12,{pvp=1,g={
 ach(61200,{c={2,5,7,10,11,13},pvp=1,g={
 s(300663,255969,{b=1,f=3,lvl=90,pvp=1})}}),
 ach(61199,{c={2,5,7,10,11,13},pvp=1,g={
 s(300662,255968,{b=1,f=3,lvl=90,pvp=1})}})}})}}),
-h(-666,{pvp=1,g={
+h(-666,{awp=120001,pvp=1,g={
 h(-12,{pvp=1,rwp=120100,u=2,g={
 ach(61443,{pvp=1,u=2,g={
 i(255671,{b=1,pvp=1,u=2})}}),
@@ -44460,46 +44460,46 @@ h(-47,{pvp=1,g={
 i(257194,{b=1,description="Rewarded within the first few wins in queued PvP Content.",pvp=1,rwp=120100,u=2}),
 i(271341,{awp=120005,f=55,pvp=1,rwp=120007,spellID=1288884,u=2,g={
 i(271342,{awp=120001,f=55,pvp=1,spellID=1288889})}})}})}}),
-n(62436,{pvp=1,g={
-h(-12,{pvp=1,rwp=120100,u=2,g={
-ach(62497,{pvp=1,u=2,g={
-i(270560,{pvp=1,u=2})}}),
-ach(63099,{collectible=false,pvp=1,r=2,u=2}),
-ach(63103,{collectible=false,pvp=1,r=1,u=2}),
-ach(62926,{pvp=1,u=2}),
-ach(62951,{pvp=1,u=2}),
-ach(62927,{pvp=1,u=2}),
-ach(62952,{pvp=1,u=2}),
-ach(62929,{pvp=1,u=2,g={
-s(307796,272010,{f=3,pvp=1,r=2,u=2}),
-s(307795,272007,{f=3,pvp=1,r=1,u=2})}}),
-ach(62931,{pvp=1,u=2,g={
+n(62436,{awp=120100,pvp=1,g={
+h(-12,{pvp=1,rwp=120200,g={
+ach(62497,{pvp=1,g={
+i(270560,{pvp=1})}}),
+ach(63099,{collectible=false,pvp=1,r=2}),
+ach(63103,{collectible=false,pvp=1,r=1}),
+ach(62926,{pvp=1}),
+ach(62951,{pvp=1}),
+ach(62927,{pvp=1}),
+ach(62952,{pvp=1}),
+ach(62929,{pvp=1,g={
+s(307796,272010,{f=3,pvp=1,r=2}),
+s(307795,272007,{f=3,pvp=1,r=1})}}),
+ach(62931,{pvp=1,g={
 crit(116039,{achID=63473,id=2})}}),
-ach(62922,{pvp=1,u=2,g={
-title(767,{pvp=1,u=2})}}),
-ach(62930,{pvp=1,u=2,g={
-mnt(1266211,{itemID=275302,pvp=1,u=2})}}),
-ach(62955,{providers={{"s",1266211}},pvp=1,u=2}),
-ach(62928,{pvp=1,u=2}),
-ach(62911,{pvp=1,u=2}),
-ach(62924,{pvp=1,r=2,u=2,g={
-title(769,{pvp=1,u=2})}}),
-ach(62925,{pvp=1,r=1,u=2,g={
-title(770,{pvp=1,u=2})}}),
-ach(62953,{pvp=1,r=2,u=2}),
-ach(62954,{pvp=1,r=1,u=2}),
-ach(62950,{pvp=1,u=2,g={
-s(309132,275068,{f=3,pvp=1,u=2})}}),
-ach(62932,{pvp=1,u=2}),
-ach(62921,{c={2,5,7,10,11,13},pvp=1,u=2}),
-ach(62923,{pvp=1,u=2,g={
-title(768,{pvp=1,u=2})}}),
-ach(63608,{pvp=1,u=2,g={
+ach(62922,{pvp=1,g={
+title(767,{pvp=1})}}),
+ach(62930,{pvp=1,g={
+mnt(1266211,{itemID=275302,pvp=1})}}),
+ach(62955,{providers={{"s",1266211}},pvp=1}),
+ach(62928,{pvp=1}),
+ach(62911,{pvp=1}),
+ach(62924,{pvp=1,r=2,g={
+title(769,{pvp=1})}}),
+ach(62925,{pvp=1,r=1,g={
+title(770,{pvp=1})}}),
+ach(62953,{pvp=1,r=2}),
+ach(62954,{pvp=1,r=1}),
+ach(62950,{pvp=1,g={
+s(309132,275068,{f=3,pvp=1})}}),
+ach(62932,{pvp=1}),
+ach(62921,{c={2,5,7,10,11,13},pvp=1}),
+ach(62923,{pvp=1,g={
+title(768,{pvp=1})}}),
+ach(63608,{pvp=1,g={
 crit(116985,{achID=11761,awp=70200,id=74})}})}}),
-flt(100,{awp=120100,pvp=1,rwp=120200,g={
+flt(100,{pvp=1,rwp=120200,g={
 mnt(1296670,{itemID=275433,pvp=1,r=2}),
 mnt(1296672,{itemID=275432,pvp=1,r=1})}}),
-h(-297,{awp=120100,pvp=1,rwp=120200,g={
+h(-297,{pvp=1,rwp=120200,g={
 n(243224,{coords={
 [2393]={{34.1,81.7}}},pvp=1,g={
 flt(3,{pvp=1,g={
@@ -44572,7 +44572,7 @@ s(305108,270408,{f=25,pvp=1}),
 s(305094,270394,{f=27,pvp=1}),
 s(310180,277970,{c={3},f=26,pvp=1}),
 s(305095,270395,{f=35,pvp=1})}})}})}}),
-h(-293,{awp=120100,pvp=1,rwp=120200,g={
+h(-293,{pvp=1,rwp=120200,g={
 n(243221,{coords={
 [2393]={{34,81}}},pvp=1,g={
 flt(3,{pvp=1,g={
@@ -44688,7 +44688,7 @@ s(305132,270457,{f=25,pvp=1}),
 s(305130,270455,{f=27,pvp=1}),
 s(305123,270448,{c={3},f=26,pvp=1}),
 s(305129,270454,{f=35,pvp=1})}})}})}}),
-h(-296,{awp=120100,pvp=1,rwp=120200,g={
+h(-296,{pvp=1,rwp=120200,g={
 n(243220,{coords={
 [2393]={{34.1,80.4}}},pvp=1,g={
 h(-18,{pvp=1,g={
@@ -45000,7 +45000,7 @@ s(306236,270845,{f=28,pvp=1}),
 s(306237,270846,{f=28,pvp=1}),
 s(306223,270832,{f=25,pvp=1}),
 s(306243,270852,{c={3},f=26,pvp=1})}})}})}}),
-h(-295,{awp=120100,pvp=1,rwp=120200,g={
+h(-295,{pvp=1,rwp=120200,g={
 n(255844,{coords={
 [2393]={{34,80.7}}},pvp=1,g={
 s(307793,272005,{bonusID=7532,cost={{"c",1792,100}},f=9,pvp=1,r=2,sourceAchievements={62931}}),
@@ -49230,5 +49230,5 @@ cu(1792,{pvp=1})}}),
 o(433370,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
 cu(1792,{pvp=1})}})}}),
 h(-47,{awp=120001,pvp=1,g={
-cu(2123,{pvp=1,rwp=130000})}})}})}})}});
-end);
+cu(2123,{pvp=1,rwp=130000})}})}})}})}})
+end)

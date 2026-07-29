@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local flt,h,mnt,p=_.CreateFilter,_.CreateCustomHeader,_.CreateMount,_.CreateSpecies;
 categories.InGameShop=
@@ -14,5 +14,5 @@ flt(100,{u=3,g={
 mnt(440915,{awp=30403,u=3}),
 mnt(372677,{awp=30400,itemID=192455,lvl=20,u=3}),
 mnt(348459,{awp=30400,itemID=184865,lvl=20,u=3}),
-mnt(75614,{awp=30303,b=1,itemID=54811,lvl=20,q=4,rwp=100002,u=2})}})}});
-end);
+mnt(75614,{awp=30303,b=1,itemID=54811,lvl=20,q=4,rwp=100002,u=2})}})}})
+end)

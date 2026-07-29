@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.NeverImplemented={
@@ -10833,7 +10833,6 @@ de(1144),
 de(1145),
 de(1146),
 de(1149),
-de(1150),
 de(1151),
 de(1152),
 de(1154),
@@ -10857,7 +10856,6 @@ de(1424),
 de(1425),
 de(1426),
 de(1427),
-de(1428),
 de(1429),
 de(1430),
 de(1431),
@@ -59094,5 +59092,5 @@ s(167489,189555,{b=1,f=24,lvl=58}),
 s(167490,189556,{b=1,f=24,lvl=58}),
 s(167491,189557,{b=1,f=24,lvl=58}),
 s(167492,189558,{b=1,f=24,lvl=58}),
-s(167493,189559,{b=1,f=24,lvl=58})})})})})};
-end);
+s(167493,189559,{b=1,f=24,lvl=58})})})})})}
+end)

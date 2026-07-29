@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local flt,follower,h,i,mm,q,s,x=_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateItem,_.CreateMountMod,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
 categories.Sourceless={
@@ -441,5 +441,5 @@ x(11.0207,{awp=110207,g={
 q(84833)}})}),
 x(12,{awp=120000,g={
 x(12.0000001,{
-q(94747)})}})})};
-end);
+q(94747)})}})})}
+end)

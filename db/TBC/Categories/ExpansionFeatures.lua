@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,faction,h,i,mnt,n,prof,q,qo,s,x=_.CreateAchievement,_.CreateHeader,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
 categories.ExpansionFeatures=
@@ -167,5 +167,5 @@ i(32621,{b=1,coords={
 [1948]={{74.6,86.5}}},crs={23267},lvl=70,minReputation={1015,0},q=1,u=1901}),
 i(32724,{b=1,coords={
 [1948]={{69.4,86}}},crs={23286},q=1,sym={{"select","itemID",32506,32464,32468,32470}},u=1901,g={
-i(32726,{b=1,lvl=70,minReputation={1015,3000},q=1,u=1901})}})}})}})}})}});
-end);
+i(32726,{b=1,lvl=70,minReputation={1015,3000},q=1,u=1901})}})}})}})}})}})
+end)

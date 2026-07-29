@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,crit,faction,flt,h,i,m,mnt,n,pvprank,q,qo,s,settings,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateExpansion;
 categories.PVP=
@@ -49,7 +49,7 @@ pvprank(11,{pvp=1,u=2}),
 pvprank(12,{pvp=1,u=2}),
 pvprank(13,{pvp=1,u=2}),
 pvprank(14,{pvp=1,u=2})}}),
-h(-210,{awp=10400,pvp=1,r=2,symselector=22,g={
+h(-210,{awp=10400,pvp=1,r=2,symselector=21,g={
 h(-101,{pvp=1,g={
 s(129729,18825,{b=1,f=8,lvl=60,pvp=1,q=4}),
 s(129771,18867,{b=1,f=24,lvl=60,pvp=1,q=4}),
@@ -213,7 +213,7 @@ i(18862,{b=1,c={5},f=53,pvp=1,q=3}),
 i(18857,{b=1,c={4},f=53,pvp=1,q=3}),
 i(18858,{b=1,c={9},f=53,pvp=1,q=3}),
 i(18854,{b=1,c={1},f=53,pvp=1,q=3})}}),
-h(-211,{awp=11101,pvp=1,r=1,symselector=23,g={
+h(-211,{awp=11101,pvp=1,r=1,symselector=22,g={
 h(-101,{pvp=1,g={
 s(129735,18831,{b=1,f=22,lvl=60,pvp=1,q=4}),
 s(133860,23464,{b=1,f=23,lvl=60,pvp=1,q=4}),
@@ -623,16 +623,16 @@ s(139221,28875,{b=1,c={11},f=5,lvl=70,pvp=1,q=3,u=17}),
 s(139217,28871,{b=1,c={11},f=5,lvl=70,pvp=1,q=3,u=17}),
 s(139219,28873,{b=1,c={11},f=5,lvl=70,pvp=1,q=3,u=17})}})}})}}),
 h(-247,{awp=20001,pvp=1,symselector=4,u=17,g={
-h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,rwp=20102,u=2,g={
-ach(886,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,providers={{"i",30609}},pvp=1,u=2}),
-mnt(37015,{b=1,description="Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=30609,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,q=4,u=2}),
-ach(15022,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,u=2}),
-ach(15020,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,u=2}),
-ach(15019,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,u=2,g={
-mnt(37015,{b=1,itemID=30609,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,q=4,u=2})}}),
-ach(15018,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,u=2,g={
-title(41,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,u=2})}}),
-ach(15021,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2;else	t.u=17;end	end,pvp=1,u=2})}}),
+h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,rwp=20102,u=2,g={
+ach(886,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,providers={{"i",30609}},pvp=1,u=2}),
+mnt(37015,{b=1,description="Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=30609,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,q=4,u=2}),
+ach(15022,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,u=2}),
+ach(15020,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,u=2}),
+ach(15019,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,u=2,g={
+mnt(37015,{b=1,itemID=30609,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,q=4,u=2})}}),
+ach(15018,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,u=2,g={
+title(41,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,u=2})}}),
+ach(15021,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=17 end	end,pvp=1,u=2})}}),
 h(-296,{pvp=1,u=17,g={
 h(-101,{pvp=1,u=17,g={
 s(138648,28302,{b=1,f=23,lvl=70,pvp=1,q=4,u=17}),
@@ -891,16 +891,16 @@ i(33939,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002,u=17}),
 i(33951,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002,u=17}),
 i(28357,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002,u=17})}})}})}}),
 h(-248,{awp=20102,pvp=1,symselector=5,u=18,g={
-h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,rwp=20300,u=2,g={
-ach(418,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,u=2,g={
-title(37,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,u=2})}}),
-ach(887,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,providers={{"i",34092}},pvp=1,u=2}),
-mnt(44744,{b=1,description="Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",itemID=34092,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,q=4,u=2}),
-ach(15210,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,u=2}),
-ach(15208,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,u=2}),
-ach(15199,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,u=2,g={
-mnt(44744,{b=1,itemID=34092,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,q=4,u=2})}}),
-ach(15209,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2;else	t.u=18;end	end,pvp=1,u=2})}}),
+h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,rwp=20300,u=2,g={
+ach(418,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,u=2,g={
+title(37,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,u=2})}}),
+ach(887,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,providers={{"i",34092}},pvp=1,u=2}),
+mnt(44744,{b=1,description="Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",itemID=34092,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,q=4,u=2}),
+ach(15210,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,u=2}),
+ach(15208,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,u=2}),
+ach(15199,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,u=2,g={
+mnt(44744,{b=1,itemID=34092,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,q=4,u=2})}}),
+ach(15209,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=18 end	end,pvp=1,u=2})}}),
 h(-296,{pvp=1,u=18,g={
 h(-101,{pvp=1,u=18,g={
 s(143602,33313,{b=1,f=8,lvl=70,pvp=1,q=4,u=18}),
@@ -1092,16 +1092,16 @@ i(33940,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002,u=18}),
 i(33952,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002,u=18}),
 i(33078,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002,u=18})}})}})}}),
 h(-249,{awp=20300,pvp=1,symselector=6,u=19,g={
-h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,rwp=20403,u=2,g={
-ach(419,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,u=2,g={
-title(40,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,u=2})}}),
-ach(888,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,providers={{"i",37676}},pvp=1,u=2}),
-mnt(49193,{b=1,description="Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",itemID=37676,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,q=4,u=2}),
-ach(15207,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,u=2}),
-ach(15205,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,u=2}),
-ach(15204,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,u=2,g={
-mnt(49193,{b=1,itemID=37676,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,q=4,u=2})}}),
-ach(15206,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2;else	t.u=19;end	end,pvp=1,u=2})}}),
+h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,rwp=20403,u=2,g={
+ach(419,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,u=2,g={
+title(40,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,u=2})}}),
+ach(888,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,providers={{"i",37676}},pvp=1,u=2}),
+mnt(49193,{b=1,description="Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",itemID=37676,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,q=4,u=2}),
+ach(15207,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,u=2}),
+ach(15205,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,u=2}),
+ach(15204,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,u=2,g={
+mnt(49193,{b=1,itemID=37676,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,q=4,u=2})}}),
+ach(15206,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=19 end	end,pvp=1,u=2})}}),
 h(-296,{pvp=1,u=19,g={
 h(-101,{pvp=1,u=19,g={
 s(143735,33661,{b=1,f=8,lvl=70,pvp=1,q=4,u=19}),
@@ -1313,16 +1313,16 @@ i(34577,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=30002,u=20}),
 i(34578,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=30002,u=20}),
 i(34580,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=30002,u=20})}})}})}}),
 h(-250,{awp=20403,pvp=1,symselector=7,u=21,g={
-h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,rwp=30002,u=4,g={
-ach(420,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,u=4,g={
-title(49,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,u=4})}}),
-ach(2316,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,providers={{"i",43516}},pvp=1,u=4}),
-mnt(58615,{b=1,description="Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",itemID=43516,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,q=4,u=4}),
-ach(15203,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,u=4}),
-ach(15201,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,u=4}),
-ach(15200,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,u=4,g={
-mnt(58615,{b=1,itemID=43516,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,q=4,u=4})}}),
-ach(15202,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2;else	t.u=21;end	end,pvp=1,u=4})}}),
+h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,rwp=30002,u=4,g={
+ach(420,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,u=4,g={
+title(49,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,u=4})}}),
+ach(2316,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,providers={{"i",43516}},pvp=1,u=4}),
+mnt(58615,{b=1,description="Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",itemID=43516,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,q=4,u=4}),
+ach(15203,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,u=4}),
+ach(15201,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,u=4}),
+ach(15200,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,u=4,g={
+mnt(58615,{b=1,itemID=43516,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,q=4,u=4})}}),
+ach(15202,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=21 end	end,pvp=1,u=4})}}),
 h(-296,{pvp=1,u=21,g={
 h(-101,{pvp=1,u=21,g={
 s(144753,34986,{b=1,f=8,lvl=70,pvp=1,q=4,u=21}),
@@ -2389,5 +2389,5 @@ i(20439,{b=1,f=52,lvl=18,pvp=1,q=3}),
 i(21567,{b=1,c={1,2,3,4},f=53,lvl=40,pvp=1,q=3,u=16}),
 i(21568,{b=1,c={1,2,3,4},f=53,lvl=20,pvp=1,q=3,u=16}),
 i(21565,{b=1,c={5,7,8,9,11},f=53,lvl=40,pvp=1,q=3,u=16}),
-i(21566,{b=1,c={5,7,8,9,11},f=53,lvl=20,pvp=1,q=3,u=16})}})}})}})}})}});
-end);
+i(21566,{b=1,c={5,7,8,9,11},f=53,lvl=20,pvp=1,q=3,u=16})}})}})}})}})}})
+end)

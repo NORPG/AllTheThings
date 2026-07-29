@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,cat,cl,cu,flt,h,i,prof,q,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
@@ -9352,5 +9352,5 @@ i(151164,{b=1,spellID=245616}),
 i(151152,{b=1,spellID=245616}),
 i(151161,{b=1,spellID=245616}),
 i(151151,{b=1,spellID=245616}),
-i(151165,{b=1,spellID=245616})})}})}});
-end);
+i(151165,{b=1,spellID=245616})})}})}})
+end)

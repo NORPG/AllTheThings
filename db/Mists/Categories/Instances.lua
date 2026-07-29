@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cl,crit,cs,cu,d,e,faction,flt,gach,gcat,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateGuildAchievementCriteria,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Instances=
@@ -3446,7 +3446,7 @@ e(371,{npcID=9319,g={
 s(124364,11628,{b=1,f=32,lvl=47,q=3}),
 s(124365,11629,{b=1,f=31,lvl=47,q=3}),
 s(124363,11627,{b=1,f=6,lvl=47,q=3}),
-s(124359,11623,{b=1,f=3,lvl=47,q=3})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+s(124359,11623,{b=1,f=3,lvl=47,q=3})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16059,{cost={{"i",21986,1}},description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",providers={{"o",181074}},rwp=40003,u=2,g={
 i(22047,{q=1,u=2}),
 s(132704,22305,{b=1,c={5,8,9},f=4,lvl=56,q=3,u=2}),
@@ -3927,7 +3927,7 @@ s(125502,13175,{awp=100107,b=1,description="This item appears to have been remov
 i(13177,{b=1,f=51,lvl=55,q=3}),
 s(125506,13179,{b=1,f=6,lvl=55,q=3}),
 s(128385,16676,{f=6,lvl=54,q=3,rwp=40003,u=2}),
-s(132630,22231,{b=1,f=4,lvl=55,q=3})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+s(132630,22231,{b=1,f=4,lvl=55,q=3})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16080,{cost={{"i",22057,1},{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=40003,u=2,g={
 qo(2,{providers={{"i",21984}},questID=8966,u=2}),
 qo(2,{providers={{"i",22046}},questID=8989,u=2}),
@@ -4076,7 +4076,7 @@ s(125293,12964,{b=1,f=6,lvl=55,q=3}),
 s(132710,22311,{b=1,c={5,8,9},f=4,lvl=56,q=3,rwp=40003,u=2}),
 i(19227,{q=3,u=13}),
 prof(393,{
-i(12731,{q=4})})}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+i(12731,{q=4})})}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16042,{cost={{"i",22057,1},{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",u=15,g={
 s(132735,22336,{b=1,f=8,lvl=55,q=3,u=15}),
 s(132734,22335,{b=1,f=28,lvl=55,q=3,u=15}),
@@ -4527,7 +4527,7 @@ s(129256,18308,{b=1,f=5,lvl=36,q=3,u=1101}),
 s(129267,18319,{b=1,f=5,filterForRWP=5,lvl=36,q=3,u=1101}),
 s(129261,18313,{b=1,f=6,filterForRWP=6,lvl=36,q=3,u=1101}),
 s(129254,18306,{b=1,f=4,lvl=36,q=3,u=1101})}}),
-n(11491,{description="Talk to him for him to break down the door.",u=1101}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
+n(11491,{description="Talk to him for him to break down the door.",u=1101}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
 n(16097,{cost={{"i",22057,1},{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",rwp=40003,u=2,g={
 qo(2,{providers={{"i",21984}},questID=8967,u=15}),
 qo(2,{providers={{"i",22046}},questID=8990,u=15}),
@@ -12235,7 +12235,7 @@ ach(576,{sym={{"meta_achievement",562,566,568,564,572,574}},u=30}),
 ach(2187,{rwp=40003,u=2,g={
 title(109,{u=2})}})}}),
 h(-45,{u=30,g={
-q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,providers={{"i",44569}},u=30})}}),
+q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,providers={{"i",44569}},u=30})}}),
 h(-78,{u=30,g={
 e(1601,{lore="Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",npcID=15956,u=30,g={
 crit(5100,{achID=562,u=30}),
@@ -12298,7 +12298,7 @@ ach(572,{u=30}),
 ach(2146,{u=30,g={
 crit(7570,{achID=2137,id=9,u=30})}}),
 crit(7158,{achID=578,OnUpdate=_.OnUpdateDB.DEDICATED_10M,u=30}),
-i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,q=4,u=30})}}),
+i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,q=4,u=30})}}),
 e(1615,{lore="He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",npcID=15990,u=30,g={
 ach(574,{u=30}),
 ach(2184,{crs={16428},description="Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",u=30,g={
@@ -12799,7 +12799,7 @@ inst(756,{awp=30002,coords={
 d(3,{u=30,g={
 h(-45,{u=30,g={
 q(13384,{coords={
-[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,qgs={27990},sourceQuests={13372},u=30,g={
+[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,qgs={27990},sourceQuests={13372},u=30,g={
 qo(1,{providers={{"i",44650}},u=30}),
 i(44658,{b=1,f=51,modID=1,q=4,u=30}),
 i(44660,{b=1,f=51,modID=1,q=4,u=30}),
@@ -13004,7 +13004,7 @@ s(175882,45694,{b=1,f=4,lvl=80,modID=1,q=4,u=31}),
 i(45675,{b=1,f=52,lvl=80,modID=1,q=4,u=31}),
 crit(9974,{achID=2886,u=31})}}),
 e(1650,{npcID=32871,u=31,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3004,{rwp=40003,u=2}),
 ach(3036,{rwp=70305,u=31,g={
 title(129,{u=31})}}),
@@ -13194,7 +13194,7 @@ s(176313,46346,{b=1,f=6,lvl=80,modID=1,q=4,u=31}),
 i(46010,{b=1,f=52,lvl=80,modID=1,q=4,u=31}),
 crit(9948,{achID=2892,u=31})}}),
 e(1649,{npcID=33288,u=31,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3159,{rwp=70305,u=31,g={
 i(46312,{b=1,f=53,lvl=80,modID=1,q=4,u=31})}}),
 gach(5019,{awp=40003,u=31}),
@@ -13406,7 +13406,7 @@ i(45254,{b=1,modID=1,rwp=50004,u=2}),
 i(45255,{b=1,modID=1,rwp=50004,u=2}),
 crit(9957,{achID=2887,u=31})}}),
 e(1650,{npcID=32871,u=31,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3005,{rwp=40003,u=2}),
 ach(3037,{rwp=70305,u=31,g={
 title(130,{u=31})}}),
@@ -13619,7 +13619,7 @@ i(45509,{b=1,modID=1,rwp=50004,u=2}),
 i(45145,{b=1,modID=1,rwp=50004,u=2}),
 crit(9964,{achID=2893,u=31})}}),
 e(1649,{npcID=33288,u=31,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3164,{rwp=70305,u=31,g={
 ach(4626,{providers={{"i",45693}},u=31}),
 mnt(63796,{b=1,itemID=45693,lvl=70,q=4,u=31})}}),
@@ -15643,7 +15643,7 @@ s(178724,50784,{b=1,f=6,lvl=80,modID=1,q=4,u=33}),
 s(202580,50778,{b=1,f=5,lvl=80,modID=1,q=4,u=33}),
 s(178723,50783,{b=1,f=5,lvl=80,modID=1,q=4,u=33}),
 i(50342,{b=1,f=53,lvl=80,modID=1,q=4,u=33}),
-crit(12773,{achID=4531,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(12773,{achID=4531,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4536,{u=33,g={
 crit(12919,{achID=4602,awp=30002,id=8,u=33})}}),
@@ -15853,7 +15853,7 @@ s(179774,51919,{b=1,f=6,lvl=80,modID=1,q=4,u=33}),
 s(179780,51925,{b=1,f=5,lvl=80,modID=1,q=4,u=33}),
 s(179775,51920,{b=1,f=5,lvl=80,modID=1,q=4,u=33}),
 i(50343,{b=1,f=53,lvl=80,modID=1,q=4,u=33}),
-crit(13104,{achID=4628,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(13104,{achID=4628,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4536,{u=33,g={
 crit(12919,{achID=4602,awp=30002,id=8,u=33})}}),
@@ -16089,7 +16089,7 @@ s(178216,49983,{b=1,f=7,lvl=80,modID=1,q=4,u=33}),
 s(178223,49993,{b=1,f=6,lvl=80,modID=1,q=4,u=33}),
 i(49985,{b=1,f=52,lvl=80,modID=1,q=4,u=33}),
 i(49990,{b=1,f=52,lvl=80,modID=1,q=4,u=33}),
-crit(12948,{achID=4604,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(12948,{achID=4604,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4612,{u=33,g={
 crit(13018,{achID=4603,awp=30002,id=8,u=33})}}),
@@ -16314,7 +16314,7 @@ s(178608,50639,{b=1,f=7,lvl=80,modID=1,q=4,u=33}),
 s(178618,50652,{b=1,f=6,lvl=80,modID=1,q=4,u=33}),
 i(50642,{b=1,f=52,lvl=80,modID=1,q=4,u=33}),
 i(50644,{b=1,f=52,lvl=80,modID=1,q=4,u=33}),
-crit(13106,{achID=4632,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(13106,{achID=4632,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4612,{u=33,g={
 crit(13018,{achID=4603,awp=30002,id=8,u=33})}}),
@@ -19051,19 +19051,19 @@ i(67130,{f=51,lvl=85,q=4,u=40})}}),
 n(50063,{coords={
 [249]={{38,60.6}}},isRaid=1,u=40,g={
 s(212429,69877,{awp=40100,f=5,lvl=85,q=4,u=4001}),
-s(211113,67240,{f=5,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}}),
+s(211113,67240,{f=5,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50056,{coords={
 [198]={{37.6,73.4},{40.4,81.8}}},isRaid=1,u=40,g={
 s(212419,69842,{awp=40100,f=7,lvl=85,q=4,u=4001}),
-s(211108,67235,{f=7,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}}),
+s(211108,67235,{f=7,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50089,{coords={
 [241]={{51,7.6},{52.2,10.6},{56.6,11},{57.2,7.8},{59.8,6.8}}},isRaid=1,u=40,g={
 s(212421,69844,{awp=40100,f=20,lvl=85,q=4,u=4001}),
-s(211118,67246,{f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}}),
+s(211118,67246,{f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50009,{coords={
 [204]={{63.4,32.6},{65.8,20.4},{71.8,18.4},{75.6,36.6},{77,25.4}}},isRaid=1,u=40,g={
 s(212420,69843,{awp=40100,f=29,lvl=85,q=4,u=4001}),
-s(211036,67153,{f=29,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}}),
+s(211036,67153,{f=29,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50005,{coords={
 [204]={{39.4,71.9},{40.4,73.8},{41,76.6},{41.8,73.4},{42.2,76}},
 [205]={{38.5,67},{46.2,48.6},{57.2,80.8},{66.4,44.2}}},isRaid=1,maps={203},u=40,g={
@@ -19071,7 +19071,7 @@ mnt(98718,{itemID=67151,lvl=78,q=4,u=40})}}),
 n(50061,{coords={
 [207]={{40.6,52.4},{45.4,39},{45.4,63.8},{56.6,42.6},{57.2,59}}},isRaid=1,u=40,g={
 s(212428,69876,{awp=40100,f=6,lvl=85,q=4,u=4001}),
-s(211112,67239,{f=6,lvl=84,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40100;end	end,q=3,rwp=40100,u=2})}})}}),
+s(211112,67239,{f=6,lvl=84,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}})}}),
 inst(75,{awp=40003,coords={
 [244]={{46.1,47.9}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=282,savedInstanceID=757,u=40,g={
 h(-12,{u=40,g={
@@ -23132,7 +23132,7 @@ mnt(127170,{b=1,itemID=87777,lvl=90,q=4,u=5001})}}),
 e(677,{crs={60399,60400},u=5001,g={
 ach(6455,{u=5001,g={
 crit(19949,{achID=6932,id=6,u=50})}}),
-ach(6954,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5001;t.rwp=50200;end	end,rwp=50200,u=2})}})}}),
+ach(6954,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5001 t.rwp=50200 end	end,rwp=50200,u=2})}})}}),
 d(1,{difficulties={3,4},u=5001,g={
 e(679,{crs={59915,60043,60047,60051},u=5001,g={
 i(85922,{b=1,f=51,lvl=90,q=4,u=5001}),
@@ -23312,9 +23312,9 @@ e(677,{crs={60399,60400},u=5001,g={
 ach(6724,{u=5001,g={
 title(204,{u=5001}),
 crit(19966,{achID=6932,id=21,u=50})}}),
-ach(7485,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5001;t.rwp=50200;end	end,rwp=50200,u=2}),
+ach(7485,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5001 t.rwp=50200 end	end,rwp=50200,u=2}),
 gach(6675,{u=5001}),
-gach(6680,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5001;t.rwp=50200;end	end,rwp=50200,u=2}),
+gach(6680,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5001 t.rwp=50200 end	end,rwp=50200,u=2}),
 s(273909,89941,{b=1,f=7,lvl=90,q=4,u=5001}),
 s(272154,87070,{b=1,f=5,lvl=90,q=4,u=5001}),
 s(273908,89940,{b=1,f=6,lvl=90,q=4,u=5001}),
@@ -23567,7 +23567,7 @@ e(743,{npcID=62837,u=5003,g={
 ach(6922,{u=5003,g={
 crit(21105,{achID=6922,providers={{"n",63591}},u=5003}),
 crit(19956,{achID=6932,id=11,u=50})}}),
-ach(8246,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5003;t.rwp=50200;end	end,rwp=50200,u=2})}})}}),
+ach(8246,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5003 t.rwp=50200 end	end,rwp=50200,u=2})}})}}),
 d(1,{difficulties={3,4},u=5003,g={
 e(745,{npcID=62980,u=5003,g={
 s(271579,86203,{b=1,f=7,lvl=90,q=4,u=5003}),
@@ -23726,8 +23726,8 @@ s(272079,86986,{b=1,f=7,lvl=90,q=4,u=5003}),
 s(272077,86984,{b=1,f=5,lvl=90,q=4,u=5003}),
 s(272076,86983,{b=1,f=20,lvl=90,q=4,u=5003})}}),
 e(743,{npcID=62837,u=5003,g={
-ach(7486,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5003;t.rwp=50200;end	end,rwp=50200,u=2}),
-gach(6679,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5003;t.rwp=50200;end	end,rwp=50200,u=2}),
+ach(7486,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5003 t.rwp=50200 end	end,rwp=50200,u=2}),
+gach(6679,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5003 t.rwp=50200 end	end,rwp=50200,u=2}),
 ach(6730,{u=5003,g={
 crit(19972,{achID=6932,id=27,u=50})}}),
 gach(6677,{u=5003}),
@@ -23910,7 +23910,7 @@ crit(19957,{achID=6932,id=13,u=50})}})}}),
 e(709,{npcID=60999,u=5006,g={
 ach(6825,{u=5006,g={
 crit(19960,{achID=6932,id=15,u=50})}}),
-ach(8248,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5006;t.rwp=50200;end	end,rwp=50200,u=2}),
+ach(8248,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5006 t.rwp=50200 end	end,rwp=50200,u=2}),
 crit(19913,{achID=6926,id=6,u=50})}})}}),
 d(1,{difficulties={3,4},u=5006,g={
 e(683,{crs={60583,60585,60586},u=5006,g={
@@ -24086,9 +24086,9 @@ s(272247,87181,{b=1,f=5,lvl=90,q=4,u=5006})}}),
 e(709,{npcID=60999,u=5006,g={
 ach(6734,{u=5006,g={
 title(198,{u=5006})}}),
-ach(7487,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5006;t.rwp=50200;end	end,rwp=50200,u=2}),
+ach(7487,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5006 t.rwp=50200 end	end,rwp=50200,u=2}),
 gach(6676,{u=5006}),
-gach(6678,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;t.rwp=nil;else	t.u=5006;t.rwp=50200;end	end,rwp=50200,u=2}),
+gach(6678,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=5006 t.rwp=50200 end	end,rwp=50200,u=2}),
 i(89259,{b=1,c={2,5,9},lvl=90,q=4,u=5006}),
 i(89260,{b=1,c={1,3,7,10},lvl=90,q=4,u=5006}),
 i(89258,{b=1,c={4,6,8,11},lvl=90,q=4,u=5006}),
@@ -24545,7 +24545,7 @@ e(829,{crs={68904,68905},u=52,g={
 ach(8086,{u=52,g={
 crit(22977,{achID=8124,id=21,u=52})}})}}),
 e(832,{npcID=68397,u=52,g={
-ach(8249,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;t.rwp=nil;else	t.u=52;t.rwp=50400;end	end,rwp=50400,u=2}),
+ach(8249,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 t.rwp=nil else	t.u=52 t.rwp=50400 end	end,rwp=50400,u=2}),
 ach(8090,{u=52,g={
 crit(22797,{achID=8090,u=52}),
 crit(22996,{achID=8090,u=52}),
@@ -25497,7 +25497,7 @@ s(278487,96911,{b=1,f=28,lvl=90,q=4,u=52}),
 s(278490,96914,{b=1,f=7,lvl=90,q=4,u=52}),
 s(278484,96907,{b=1,f=34,lvl=90,q=4,u=52})}})}}),
 e(832,{npcID=68397,u=52,g={
-ach(8238,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;t.rwp=nil;else	t.u=52;t.rwp=50400;end	end,rwp=50400,u=2}),
+ach(8238,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 t.rwp=nil else	t.u=52 t.rwp=50400 end	end,rwp=50400,u=2}),
 ach(8067,{u=52,g={
 title(222,{u=52})}}),
 gach(8139,{u=52}),
@@ -25543,11 +25543,11 @@ s(278499,96926,{b=1,f=8,lvl=90,q=4,u=52}),
 i(96930,{b=1,f=53,lvl=90,q=4,u=52}),
 s(278498,96925,{b=1,f=22,lvl=90,q=4,u=52})}})}}),
 e(831,{npcID=69473,u=52,g={
-ach(8260,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;t.rwp=nil;else	t.u=52;t.rwp=50400;end	end,rwp=50400,u=2}),
+ach(8260,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 t.rwp=nil else	t.u=52 t.rwp=50400 end	end,rwp=50400,u=2}),
 ach(8068,{u=52}),
 gach(8258,{u=52}),
 ach(8089,{rwp=60002,u=52}),
-gach(8257,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;t.rwp=nil;else	t.u=52;t.rwp=50400;end	end,rwp=50400,u=2}),
+gach(8257,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 t.rwp=nil else	t.u=52 t.rwp=50400 end	end,rwp=50400,u=2}),
 s(277078,95025,{b=1,f=7,lvl=90,q=4,u=52}),
 s(277071,95013,{b=1,f=3,lvl=90,q=4,u=52}),
 s(277059,95001,{b=1,f=7,lvl=90,q=4,u=52}),
@@ -26307,314 +26307,6 @@ crit(23782,{achID=8454,id=13,u=54})}})}}),
 e(869,{npcID=71865,u=54,g={
 ach(8537,{u=54,g={
 crit(23783,{achID=8454,id=14,u=54})}})}})}}),
-d(14,{rwp=60002,u=54,g={
-h(-63,{u=54,g={
-s(284364,105838,{b=1,f=3,lvl=90,q=4,u=54}),
-s(284356,105830,{b=1,f=3,lvl=90,q=4,u=54}),
-s(284352,105826,{b=1,f=3,lvl=90,q=4,u=54}),
-s(284355,105829,{b=1,f=3,lvl=90,q=4,u=54}),
-s(284365,105839,{b=1,f=3,lvl=90,q=4,u=54}),
-s(284353,105827,{b=1,f=4,lvl=90,q=4,u=54}),
-s(284354,105828,{b=1,f=4,lvl=90,q=4,u=54}),
-s(284358,105832,{b=1,f=5,lvl=90,q=4,u=54}),
-s(284357,105831,{b=1,f=5,lvl=90,q=4,u=54}),
-s(284359,105833,{b=1,f=6,lvl=90,q=4,u=54}),
-s(284360,105834,{b=1,f=6,lvl=90,q=4,u=54}),
-s(284363,105837,{b=1,f=7,lvl=90,q=4,u=54}),
-s(284361,105835,{b=1,f=7,lvl=90,q=4,u=54}),
-s(284362,105836,{b=1,f=7,lvl=90,q=4,u=54})}}),
-e(852,{npcID=71543,u=54,g={
-s(283461,104671,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283466,104678,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283458,104668,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283454,104664,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283455,104665,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283464,104674,{b=1,f=3,lvl=90,q=4,u=54}),
-s(283456,104666,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283460,104670,{b=1,f=23,lvl=90,q=4,u=54}),
-s(283468,104680,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283452,104662,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283463,104673,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283462,104672,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104660,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283459,104669,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283453,104663,{b=1,f=6,lvl=90,q=4,u=54}),
-i(104675,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283465,104677,{b=1,f=5,lvl=90,q=4,u=54}),
-i(104676,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283467,104679,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283457,104667,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283451,104661,{b=1,f=28,lvl=90,q=4,u=54}),
-s(283469,104681,{b=1,f=7,lvl=90,q=4,u=54})}}),
-e(849,{crs={71475,71479,71480},u=54,g={
-s(283475,104687,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283470,104682,{b=1,f=33,lvl=90,q=4,u=54}),
-s(283487,104702,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283477,104690,{b=1,f=3,lvl=90,q=4,u=54}),
-s(283486,104701,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283473,104685,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283481,104695,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104696,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283474,104686,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283482,104697,{b=1,f=1,lvl=90,q=4,u=54}),
-s(283479,104693,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104691,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283484,104699,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283478,104692,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283476,104688,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283485,104700,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283480,104694,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283483,104698,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283471,104683,{b=1,f=34,lvl=90,q=4,u=54}),
-i(104689,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283472,104684,{b=1,f=5,lvl=90,q=4,u=54})}}),
-e(866,{crs={71965,72276},u=54,g={
-s(283498,104715,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283502,104720,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283493,104709,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283497,104714,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283504,104722,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283503,104721,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283495,104711,{b=1,f=3,lvl=90,q=4,u=54}),
-i(104712,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283490,104706,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283491,104707,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283501,104719,{b=1,f=8,lvl=90,q=4,u=54}),
-s(283488,104703,{b=1,f=20,lvl=90,q=4,u=54}),
-s(283492,104708,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283494,104710,{b=1,f=7,lvl=90,q=4,u=54}),
-i(104704,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283500,104717,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283489,104705,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283499,104716,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283505,104723,{b=1,f=6,lvl=90,q=4,u=54}),
-i(104718,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283506,104724,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283496,104713,{b=1,f=25,lvl=90,q=4,u=54})}}),
-e(867,{npcID=71734,u=54,g={
-i(99743,{b=1,c={2,5,9},lvl=90,q=4,u=54}),
-i(99744,{b=1,c={1,3,7,10},lvl=90,q=4,u=54}),
-i(99742,{b=1,c={4,6,8,11},lvl=90,q=4,u=54}),
-i(104725,{b=1,f=53,lvl=90,q=4,u=54}),
-i(104733,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283509,104730,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283507,104728,{b=1,f=28,lvl=90,q=4,u=54}),
-s(283511,104732,{b=1,f=26,lvl=90,q=4,u=54}),
-s(283510,104731,{b=1,f=7,lvl=90,q=4,u=54}),
-i(104726,{b=1,f=51,lvl=90,q=4,u=54}),
-i(104727,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283508,104729,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283512,104734,{b=1,f=8,lvl=90,q=4,u=54})}}),
-e(881,{npcID=72249,u=54,g={
-s(283519,104742,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283521,104746,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283516,104739,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283513,104735,{b=1,f=32,lvl=90,q=4,u=54}),
-s(283517,104740,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283527,104753,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283526,104752,{b=1,f=28,lvl=90,q=4,u=54}),
-i(104744,{b=1,f=53,lvl=90,q=4,u=54}),
-i(104751,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283523,104748,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104745,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283528,104754,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283515,104738,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283520,104743,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283522,104747,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283525,104750,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283524,104749,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283529,104755,{b=1,f=7,lvl=90,q=4,u=54}),
-i(104736,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283518,104741,{b=1,f=7,lvl=90,q=4,u=54}),
-s(282994,103778,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283530,104756,{b=1,f=7,lvl=90,q=4,u=54})}}),
-e(864,{npcID=71466,u=54,g={
-s(283540,104768,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283549,104778,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283542,104770,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283546,104775,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283548,104777,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283536,104762,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283539,104765,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283543,104771,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104767,{b=1,f=53,lvl=90,q=4,u=54}),
-i(104766,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283545,104774,{b=1,f=1,lvl=90,q=4,u=54}),
-s(283532,104758,{b=1,f=5,lvl=90,q=4,u=54}),
-i(104773,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283541,104769,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283534,104760,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283535,104761,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283533,104759,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283531,104757,{b=1,f=23,lvl=90,q=4,u=54}),
-s(283544,104772,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283538,104764,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283547,104776,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283537,104763,{b=1,f=7,lvl=90,q=4,u=54})}}),
-e(856,{npcID=71859,u=54,g={
-s(283556,104786,{b=1,f=7,lvl=90,q=4,u=54}),
-i(104792,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283562,104796,{b=1,f=6,lvl=90,q=4,u=54}),
-i(104787,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283555,104785,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283551,104781,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283561,104795,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283557,104788,{b=1,f=21,lvl=90,q=4,u=54}),
-s(283553,104783,{b=1,f=6,lvl=90,q=4,u=54}),
-i(104780,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283559,104791,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283560,104794,{b=1,f=23,lvl=90,q=4,u=54}),
-i(104793,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283550,104779,{b=1,f=3,lvl=90,q=4,u=54}),
-i(104789,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283552,104782,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283564,104798,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283563,104797,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283565,104799,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283558,104790,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283554,104784,{b=1,f=7,lvl=90,q=4,u=54})}}),
-e(850,{npcID=71515,u=54,g={
-i(99746,{b=1,c={2,5,9},lvl=90,q=4,u=54}),
-i(99747,{b=1,c={1,3,7,10},lvl=90,q=4,u=54}),
-i(99745,{b=1,c={4,6,8,11},lvl=90,q=4,u=54}),
-s(283568,104803,{b=1,f=25,lvl=90,q=4,u=54}),
-s(283574,104809,{b=1,f=8,lvl=90,q=4,u=54}),
-s(283572,104807,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283573,104808,{b=1,f=24,lvl=90,q=4,u=54}),
-i(104802,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283566,104800,{b=1,f=20,lvl=90,q=4,u=54}),
-s(283571,104806,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283570,104805,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283567,104801,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283569,104804,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283575,104810,{b=1,f=4,lvl=90,q=4,u=54})}}),
-e(846,{npcID=71454,u=54,g={
-s(283587,104826,{b=1,f=3,lvl=90,q=4,u=54}),
-s(283581,104817,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283589,104829,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283590,104830,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283591,104831,{b=1,f=6,lvl=90,q=4,u=54}),
-i(104825,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283577,104813,{b=1,f=29,lvl=90,q=4,u=54}),
-s(283585,104823,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283576,104812,{b=1,f=31,lvl=90,q=4,u=54}),
-s(283578,104814,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283582,104818,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283580,104816,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283583,104820,{b=1,f=21,lvl=90,q=4,u=54}),
-i(104819,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283584,104822,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104811,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283586,104824,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104827,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283592,104832,{b=1,f=7,lvl=90,q=4,u=54}),
-i(104821,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283588,104828,{b=1,f=8,lvl=90,q=4,u=54}),
-s(283579,104815,{b=1,f=6,lvl=90,q=4,u=54})}}),
-e(870,{npcID=71889,u=54,g={
-s(283597,104838,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283601,104843,{b=1,f=8,lvl=90,q=4,u=54}),
-s(283596,104837,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283602,104844,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283608,104851,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283607,104850,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283593,104834,{b=1,f=25,lvl=90,q=4,u=54}),
-s(283598,104839,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283604,104847,{b=1,f=27,lvl=90,q=4,u=54}),
-s(283605,104848,{b=1,f=5,lvl=90,q=4,u=54}),
-i(104846,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283595,104836,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283603,104845,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283610,104853,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283600,104841,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283594,104835,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283609,104852,{b=1,f=7,lvl=90,q=4,u=54}),
-i(104842,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283606,104849,{b=1,f=5,lvl=90,q=4,u=54}),
-i(104833,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283599,104840,{b=1,f=7,lvl=90,q=4,u=54})}}),
-e(851,{npcID=71529,u=54,g={
-i(99749,{b=1,c={2,5,9},lvl=90,q=4,u=54}),
-i(99750,{b=1,c={1,3,7,10},lvl=90,q=4,u=54}),
-i(99748,{b=1,c={4,6,8,11},lvl=90,q=4,u=54}),
-s(283613,104857,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283616,104863,{b=1,f=29,lvl=90,q=4,u=54}),
-i(104864,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283614,104858,{b=1,f=1,lvl=90,q=4,u=54}),
-i(104855,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283611,104854,{b=1,f=20,lvl=90,q=4,u=54}),
-s(283615,104861,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283612,104856,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104859,{b=1,f=52,lvl=90,q=4,u=54}),
-i(104860,{b=1,f=53,lvl=90,q=4,u=54}),
-i(104862,{b=1,f=53,lvl=90,q=4,u=54})}}),
-e(865,{npcID=71504,u=54,g={
-i(99755,{b=1,c={2,5,9},lvl=90,q=4,u=54}),
-i(99756,{b=1,c={1,3,7,10},lvl=90,q=4,u=54}),
-i(99754,{b=1,c={4,6,8,11},lvl=90,q=4,u=54}),
-i(104873,{b=1,f=52,lvl=90,q=4,u=54}),
-i(104875,{b=1,f=51,lvl=90,q=4,u=54}),
-s(283619,104869,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283620,104870,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283622,104872,{b=1,f=7,lvl=90,q=4,u=54}),
-i(104868,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283617,104866,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283618,104867,{b=1,f=28,lvl=90,q=4,u=54}),
-s(283621,104871,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283623,104874,{b=1,f=23,lvl=90,q=4,u=54}),
-i(104865,{b=1,f=53,lvl=90,q=4,u=54})}}),
-e(853,{crs={71152,71153,71154,71155,71156,71157,71158,71160,71161},u=54,g={
-i(99752,{b=1,c={2,5,9},lvl=90,q=4,u=54}),
-i(99753,{b=1,c={1,3,7,10},lvl=90,q=4,u=54}),
-i(99751,{b=1,c={4,6,8,11},lvl=90,q=4,u=54}),
-s(283628,104882,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283626,104879,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283629,104883,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283630,104884,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283624,104876,{b=1,f=32,lvl=90,q=4,u=54}),
-i(104881,{b=1,f=52,lvl=90,q=4,u=54}),
-i(104877,{b=1,f=52,lvl=90,q=4,u=54}),
-s(283631,104886,{b=1,f=25,lvl=90,q=4,u=54}),
-s(283625,104878,{b=1,f=21,lvl=90,q=4,u=54}),
-s(283627,104880,{b=1,f=20,lvl=90,q=4,u=54}),
-i(104885,{b=1,f=53,lvl=90,q=4,u=54})}}),
-e(869,{npcID=71865,u=54,g={
-i(105864,{b=1,c={2,5,9},lvl=90,q=4,u=54}),
-i(105863,{b=1,c={1,3,7,10},lvl=90,q=4,u=54}),
-i(105865,{b=1,c={4,6,8,11},lvl=90,q=4,u=54}),
-s(283643,104899,{b=1,f=4,lvl=90,q=4,u=54}),
-i(104901,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283635,104890,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283650,104907,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283633,104888,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283649,104906,{b=1,f=6,lvl=90,q=4,u=54}),
-i(104898,{b=1,f=53,lvl=90,q=4,u=54}),
-s(283644,104900,{b=1,f=4,lvl=90,q=4,u=54}),
-s(283641,104896,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283648,104905,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283645,104902,{b=1,f=23,lvl=90,q=4,u=54}),
-s(283634,104889,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283632,104887,{b=1,f=28,lvl=90,q=4,u=54}),
-s(283638,104893,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283651,104908,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283636,104891,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283646,104903,{b=1,f=1,lvl=90,q=4,u=54}),
-s(283647,104904,{b=1,f=5,lvl=90,q=4,u=54}),
-s(283637,104892,{b=1,f=6,lvl=90,q=4,u=54}),
-s(283639,104894,{b=1,f=7,lvl=90,q=4,u=54}),
-s(283642,104897,{b=1,f=22,lvl=90,q=4,u=54}),
-h(-219,{u=54,g={
-s(284259,105674,{b=2,f=8,lvl=90,q=4,u=54}),
-s(284257,105672,{b=2,f=21,lvl=90,q=4,u=54}),
-s(284264,105679,{b=2,f=22,lvl=90,q=4,u=54}),
-s(284263,105678,{b=2,f=25,lvl=90,q=4,u=54}),
-s(284258,105673,{b=2,f=29,lvl=90,q=4,u=54}),
-s(284256,105671,{b=2,f=20,lvl=90,q=4,u=54}),
-s(284265,105680,{b=2,f=8,lvl=90,q=4,u=54}),
-s(284261,105676,{b=2,f=1,lvl=90,q=4,u=54}),
-s(284262,105677,{b=2,f=28,lvl=90,q=4,u=54}),
-s(284255,105670,{b=2,f=32,lvl=90,q=4,u=54}),
-s(284260,105675,{b=2,f=23,lvl=90,q=4,u=54})}})}})}}),
 d(115,{difficulties={1,2,3,4,5,6},u=54,g={
 e(869,{npcID=71865,u=54,g={
 ach(8679,{r=2,u=54,g={
@@ -26623,12 +26315,12 @@ ach(8680,{r=1,u=54,g={
 title(212,{r=1,u=54})}})}})}}),
 d(120,{difficulties={3,5},rwp=60002,u=54,g={
 e(869,{npcID=71865,u=54,g={
-ach(8398,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2;t.rwp=nil;else	t.u=54;t.rwp=60002;end	end,u=54,g={
-mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2;t.rwp=nil;else	t.u=54;t.rwp=60002;end	end,q=4,u=54})}})}})}}),
+ach(8398,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,u=54,g={
+mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,q=4,u=54})}})}})}}),
 d(121,{difficulties={4,6},rwp=60002,u=54,g={
 e(869,{npcID=71865,u=54,g={
-ach(8399,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2;t.rwp=nil;else	t.u=54;t.rwp=60002;end	end,u=54,g={
-mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2;t.rwp=nil;else	t.u=54;t.rwp=60002;end	end,q=4,u=54})}})}})}}),
+ach(8399,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,u=54,g={
+mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,q=4,u=54})}})}})}}),
 d(1,{difficulties={3,4},rwp=60002,u=54,g={
 h(-63,{u=54,g={
 s(283045,103846,{b=1,f=3,lvl=90,q=4,u=54}),
@@ -27731,6 +27423,7 @@ title(214,{u=54})}}),
 i(105867,{b=1,c={2,5,9},lvl=90,q=4,u=54}),
 i(105866,{b=1,c={1,3,7,10},lvl=90,q=4,u=54}),
 i(105868,{b=1,c={4,6,8,11},lvl=90,q=4,u=54}),
+mnt(148417,{b=1,itemID=104253,lvl=90,q=4,u=54}),
 s(283442,104650,{b=1,f=4,lvl=90,q=4,u=54}),
 i(104652,{b=1,f=53,lvl=90,q=4,u=54}),
 s(283434,104641,{b=1,f=6,lvl=90,q=4,u=54}),
@@ -27790,12 +27483,12 @@ s(284243,105642,{b=1,f=7,lvl=90,q=4,u=54}),
 s(284245,105644,{b=1,f=22,lvl=90,q=4,u=54})}})}})}}),
 d(5,{rwp=60002,u=54,g={
 e(869,{npcID=71865,u=54,g={
-ach(8400,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2;t.rwp=nil;else	t.u=54;t.rwp=60002;end	end,u=54}),
-gach(8512,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2;t.rwp=nil;else	t.u=54;t.rwp=60002;end	end,u=54})}})}}),
+ach(8400,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,u=54}),
+gach(8512,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,u=54})}})}}),
 d(6,{rwp=60002,u=54,g={
 e(869,{npcID=71865,u=54,g={
-ach(8401,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2;t.rwp=nil;else	t.u=54;t.rwp=60002;end	end,u=54}),
-gach(8513,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2;t.rwp=nil;else	t.u=54;t.rwp=60002;end	end,u=54})}})}})}}),
+ach(8401,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,u=54}),
+gach(8513,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,u=54})}})}})}}),
 inst(303,{awp=50004,coords={
 [390]={{15.8,74.8}}},maps={437,438},savedInstanceID=962,u=50,g={
 h(-45,{u=50,g={
@@ -28660,5 +28353,5 @@ i(99668,{b=1,c={4,6,8,11},lvl=90,q=4,u=5401}),
 s(283725,104998,{b=1,f=4,lvl=90,q=4,u=5401}),
 s(283748,105025,{b=1,f=6,lvl=90,q=4,u=5401}),
 i(105070,{b=1,f=53,lvl=90,q=4,u=5401}),
-s(283697,104962,{b=1,f=25,lvl=90,q=4,u=5401})}})}}))}})}})}});
-end);
+s(283697,104962,{b=1,f=25,lvl=90,q=4,u=5401})}})}}))}})}})}})
+end)

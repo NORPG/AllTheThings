@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,flt,h,i,p,q,s,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
 categories.GroupFinder=
@@ -702,5 +702,5 @@ i(173668,{b=1,f=52}),
 i(173669,{b=1,f=52})}),
 flt(53,{
 i(173667,{b=1,f=53}),
-i(173666,{b=1,f=53})})}})}})}});
-end);
+i(173666,{b=1,f=53})})}})}})}})
+end)

@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,h,i,mnt,n,p,q,qo,r,s,title,toy,x=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.WorldEvents=
@@ -785,5 +785,5 @@ i(23010,{b=1,q=1,u=2}),
 i(23011,{b=1,q=1,u=2}),
 i(23012,{b=1,q=1,u=2}),
 i(23013,{b=1,q=1,u=2}),
-i(23016,{b=1,q=1,u=2})}})}})}});
-end);
+i(23016,{b=1,q=1,u=2})}})}})}})
+end)

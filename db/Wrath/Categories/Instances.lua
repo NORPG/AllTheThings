@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cl,crit,cs,cu,d,e,faction,flt,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Instances=
@@ -851,15 +851,15 @@ q(7634,{awp=10001,c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18704,1}},lvl=60,maps={1452},qgs={14526},rwp=40003,sourceQuests={7633},g={
 i(18714,{b=1,c={3},f=113,lvl=60,q=4})}}),
 q(7496,{awp=10001,coords={
-[1453]={{67.2,85.1}}},lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,qgs={1748},r=2,rwp=100000,sourceQuests={7495},g={
-i(18403,{b=1,f=52,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4}),
-i(18404,{b=1,f=51,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4}),
-i(18406,{b=1,f=53,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4})}}),
+[1453]={{67.2,85.1}}},lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,qgs={1748},r=2,rwp=100000,sourceQuests={7495},g={
+i(18403,{b=1,f=52,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4}),
+i(18404,{b=1,f=51,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4}),
+i(18406,{b=1,f=53,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4})}}),
 q(7491,{awp=10001,coords={
-[1454]={{32,37.8}}},lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,qgs={4949},r=1,rwp=100000,sourceQuests={7490},g={
-i(18403,{b=1,f=52,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4}),
-i(18404,{b=1,f=51,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4}),
-i(18406,{b=1,f=53,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4})}}),
+[1454]={{32,37.8}}},lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,qgs={4949},r=1,rwp=100000,sourceQuests={7490},g={
+i(18403,{b=1,f=52,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4}),
+i(18404,{b=1,f=51,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4}),
+i(18406,{b=1,f=53,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4})}}),
 q(7507,{c={1,2},description="You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",lvl=60,maps={234},providers={{"i",18401}},rwp=30300,u=2,g={
 i(18513,{b=1,q=4,u=2})}}),
 q(7636,{awp=10001,c={3},coords={
@@ -889,8 +889,8 @@ q(7493,{coords={
 [1454]={{52.2,75.8}}},learnedAt=300,lvl=60,qgs={14392},r=1,requireSkill=165,sourceQuests={7491,24429},g={
 r(19093,{awp=30202,learnedAt=300,requireSkill=165}),
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
-q(7495,{awp=10001,lvl=60,maps={1453},OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,providers={{"i",18423}},r=2,rwp=100000}),
-q(7490,{awp=10001,lvl=60,maps={1454},OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,providers={{"i",18422}},r=1,rwp=100000})}),
+q(7495,{awp=10001,lvl=60,maps={1453},OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,providers={{"i",18423}},r=2,rwp=100000}),
+q(7490,{awp=10001,lvl=60,maps={1454},OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,providers={{"i",18422}},r=1,rwp=100000})}),
 prof(393,{
 i(15410,{q=3})}),
 d(3,{lvl=80,u=32,g={
@@ -985,15 +985,15 @@ s(178047,49491,{b=1,f=3,lvl=80,q=4,u=32}),
 i(49489,{b=1,f=52,lvl=80,q=4,u=32}),
 i(49464,{b=1,f=53,lvl=80,q=4,u=32}),
 i(49488,{b=1,f=53,lvl=80,q=4,u=32})}})}}),
-d(9,{OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,sourceQuests={6502,6602},g={
+d(9,{OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,sourceQuests={6502,6602},g={
 n(10184,{
-ach(684,{awp=10001,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,rwp=100000}),
-i(18423,{awp=10001,b=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,r=2,rwp=100000}),
-i(18422,{awp=10001,b=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,r=1,rwp=100000}),
-i(17966,{awp=10001,b=1,f=113,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=2,rwp=100000}),
-s(128742,17068,{awp=10001,b=1,f=21,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,rwp=100000}),
-s(128749,17075,{awp=10001,b=1,f=25,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,rwp=100000}),
-s(128741,17067,{awp=10001,b=1,f=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,rwp=100000}),
+ach(684,{awp=10001,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,rwp=100000}),
+i(18423,{awp=10001,b=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,r=2,rwp=100000}),
+i(18422,{awp=10001,b=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,r=1,rwp=100000}),
+i(17966,{awp=10001,b=1,f=113,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=2,rwp=100000}),
+s(128742,17068,{awp=10001,b=1,f=21,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
+s(128749,17075,{awp=10001,b=1,f=25,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
+s(128741,17067,{awp=10001,b=1,f=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
 s(128583,16908,{b=1,c={4},f=5,lvl=60,q=4}),
 s(128614,16939,{b=1,c={3},f=6,lvl=60,q=4}),
 s(128596,16921,{b=1,c={5},f=4,lvl=60,q=4}),
@@ -1003,10 +1003,10 @@ s(128630,16955,{b=1,c={2},f=7,lvl=60,q=4}),
 s(128604,16929,{b=1,c={9},f=4,lvl=60,q=4}),
 s(128589,16914,{b=1,c={8},f=4,lvl=60,q=4}),
 s(128575,16900,{b=1,c={11},f=5,lvl=60,q=4}),
-i(18205,{awp=10001,b=1,f=51,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,rwp=100000}),
-s(128752,17078,{awp=10001,b=1,f=3,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,rwp=100000}),
-i(18813,{awp=10001,b=1,f=52,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,rwp=100000}),
-i(17064,{awp=10001,b=1,f=53,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2;t.rwp=nil;else	t.u=nil;t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!";t.rwp=100001;end	end,q=4,rwp=100000})})}})}}),
+i(18205,{awp=10001,b=1,f=51,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
+s(128752,17078,{awp=10001,b=1,f=3,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
+i(18813,{awp=10001,b=1,f=52,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
+i(17064,{awp=10001,b=1,f=53,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000})})}})}}),
 inst(742,{awp=10600,coords={
 [33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},u=13,g={
 h(-45,{u=13,g={
@@ -3863,9 +3863,9 @@ h(-12,{u=1101,g={
 ach(5788,{maps={236,237,238},minReputation={809,42000},rwp=40003,u=1101}),
 ach(644,{maps={235,236,237,238,239},u=1101})}}),
 h(-31,{u=1101,g={
-faction(809,{awp=30002,maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",500,42000);end	end,rwp=40003,u=1101,g={
+faction(809,{awp=30002,maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",500,42000)end	end,rwp=40003,u=1101,g={
 crit(8825,{achID=2336,id=5,u=13})}}),
-faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",350,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",75,42000);end	end,u=1101})}}),
+faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true})local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1})addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999)addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999)end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000)addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",350,42000)addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",75,42000)end	end,u=1101})}}),
 h(-45,{u=1101,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1101}),
 q(7463,{c={8},lvl=60,maps={236,237,238,239},qgs={14368},rwp=40003,u=1101,g={
@@ -5715,7 +5715,7 @@ q(4143,{coords={
 [1444]={{45.1,25.6}}},lvl=47,maps={1449},qgs={7775},r=2,rwp=40003,sourceQuests={4142},g={
 qo(1,{providers={{"i",11318}}})}}),
 q(3512,{coords={
-[1435]={{13.7,71.7}}},description="This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",lvl=48,maps={1452},OnUpdate=function(t)if not _.IsQuestFlaggedCompleted(3374)and(_.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	t.description="|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r";end	end,qgs={5353},rwp=40003,sourceQuests={3374}}),
+[1435]={{13.7,71.7}}},description="This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",lvl=48,maps={1452},OnUpdate=function(t)if not _.IsQuestFlaggedCompleted(3374)and(_.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1)then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r" end	end,qgs={5353},rwp=40003,sourceQuests={3374}}),
 q(3446,{coords={
 [1446]={{52.6,45.8}}},lvl=46,providers={{"i",10466},{"o",148836}},qgs={7771},rwp=40003,sourceQuests={3444}}),
 q(1475,{coords={
@@ -5736,7 +5736,7 @@ s(130841,20255,{b=1,f=5,q=3,u=14})}}),
 q(3373,{description="Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",lvl=48,providers={{"i",10454},{"o",148512}},rwp=40003,g={
 i(10455,{b=1,f=53,q=2})}}),
 q(3374,{coords={
-[1435]={{13.7,71.7}}},cost={{"i",10455,1}},description="You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",lvl=48,OnUpdate=function(t)if not t.collected and _.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1 then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	t.description="|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r";end	end,providers={{"i",10589}},qgs={5353},rwp=40003,sourceQuests={3373}}),
+[1435]={{13.7,71.7}}},cost={{"i",10455,1}},description="You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",lvl=48,OnUpdate=function(t)if not t.collected and _.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1 then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r" end	end,providers={{"i",10589}},qgs={5353},rwp=40003,sourceQuests={3373}}),
 q(3528,{coords={
 [1446]={{66.8,22.4}}},lvl=40,qgs={8579},rwp=40003,sourceQuests={4787},g={
 qo(1,{cost={{"i",10663,1},{"i",10465,1}},crs={8443},providers={{"i",10662}}}),
@@ -9421,9 +9421,9 @@ title(97,{u=30})}}),
 ach(2136,{sym={{"meta_achievement",1919,2150,2036,2037,1296,1297,1860,1862,2038,2056,2151,2039,2057,1816,1865,2041,2153,1864,2040,2058,1866,2154,2155,1867,1834,2042,1817,1872,2043,1873,2156,2157,1871,1868,2044,2045,2046}},u=30,g={
 mnt(59961,{b=1,itemID=44160,lvl=70,q=4,u=30})}}),
 ach(2137,{maps={141,155,162},sym={{"meta_achievement",2187,1858,1856,1996,1997,2178,622,1874,2047,2051,2146,2176,2148,2184}},u=30,g={
-mnt(60021,{b=1,itemID=44175,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,q=4,rwp=30100,u=2})}}),
+mnt(60021,{b=1,itemID=44175,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,q=4,rwp=30100,u=2})}}),
 ach(2138,{maps={141,155,162},sym={{"meta_achievement",1859,1857,2186,2139,2140,2179,2177,623,1875,2048,2149,2054,2147,2185}},u=30,g={
-mnt(59976,{b=1,itemID=44164,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,q=4,rwp=30100,u=2})}}),
+mnt(59976,{b=1,itemID=44164,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,q=4,rwp=30100,u=2})}}),
 ach(1289,{sym={{"meta_achievement",492,491,500,493,495,497,496,490,498,494,489,499}},u=30}),
 ach(1288,{sym={{"meta_achievement",481,480,479,482,484,486,485,478,487,483,477,488}},u=30})}}),
 inst(753,{awp=30002,coords={
@@ -10451,8 +10451,8 @@ ach(576,{sym={{"meta_achievement",562,566,568,564,572,574}},u=30}),
 ach(2187,{rwp=40003,u=30,g={
 title(109,{u=30})}})}}),
 h(-45,{u=30,g={
-q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,providers={{"i",44569}},u=30,g={
-i(44582,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,q=4,rwp=40200,u=30})}})}}),
+q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,providers={{"i",44569}},u=30,g={
+i(44582,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,q=4,rwp=40200,u=30})}})}}),
 h(-78,{u=30,g={
 e(1601,{lore="Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",npcID=15956,u=30,g={
 crit(5100,{achID=562,u=30}),
@@ -10508,7 +10508,7 @@ e(1614,{lore="Once a noble blue dragon within the mountains of Northrend, Sapphi
 ach(572,{u=30}),
 ach(2146,{u=30}),
 crit(7158,{achID=578,OnUpdate=_.OnUpdateDB.DEDICATED_10M,u=30}),
-i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,q=4,u=30})}}),
+i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,q=4,u=30})}}),
 e(1615,{lore="He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",npcID=15990,u=30,g={
 ach(574,{u=30}),
 ach(2184,{crs={16428},u=30}),
@@ -10987,7 +10987,7 @@ inst(756,{awp=30002,coords={
 d(3,{u=30,g={
 h(-45,{u=30,g={
 q(13384,{coords={
-[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2;t.rwp=nil;else	t.u=30;t.rwp=30100;end	end,qgs={27990},sourceQuests={13372},u=30,g={
+[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,qgs={27990},sourceQuests={13372},u=30,g={
 qo(1,{providers={{"i",44650}},u=30}),
 i(44658,{b=1,f=51,q=4,u=30}),
 i(44660,{b=1,f=51,q=4,u=30}),
@@ -11182,7 +11182,7 @@ s(175882,45694,{b=1,f=4,lvl=80,q=4,u=31}),
 i(45675,{b=1,f=52,lvl=80,q=4,u=31}),
 crit(9974,{achID=2886,u=31})}}),
 e(1650,{npcID=32871,u=31,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3004,{rwp=40003,u=31}),
 ach(3036,{rwp=70305,u=31,g={
 title(129,{u=31})}}),
@@ -11371,7 +11371,7 @@ s(176313,46346,{b=1,f=6,lvl=80,q=4,u=31}),
 i(46010,{b=1,f=52,lvl=80,q=4,u=31}),
 crit(9948,{achID=2892,u=31})}}),
 e(1649,{npcID=33288,u=31,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3159,{rwp=70305,u=31,g={
 i(46312,{b=1,f=53,lvl=80,q=4,u=31})}}),
 ach(3158,{rwp=70305,u=31,g={
@@ -11582,7 +11582,7 @@ i(45254,{b=1,lvl=80,q=4,rwp=50004,u=31}),
 i(45255,{b=1,f=54,lvl=80,q=4,rwp=50004,u=31}),
 crit(9957,{achID=2887,u=31})}}),
 e(1650,{npcID=32871,u=31,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3005,{rwp=40003,u=31}),
 ach(3037,{rwp=70305,u=31,g={
 title(130,{u=31})}}),
@@ -11794,7 +11794,7 @@ i(45509,{b=1,f=54,lvl=80,q=4,rwp=50004,u=31}),
 i(45145,{b=1,f=54,lvl=80,q=4,rwp=50004,u=31}),
 crit(9964,{achID=2893,u=31})}}),
 e(1649,{npcID=33288,u=31,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2;t.rwp=nil;else	t.u=31;t.rwp=30200;end	end,u=31}),
+ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end,u=31}),
 ach(3164,{rwp=70305,u=31,g={
 ach(4626,{providers={{"i",45693}},u=31}),
 mnt(63796,{b=1,itemID=45693,lvl=70,q=4,u=31})}}),
@@ -13818,7 +13818,7 @@ s(178724,50784,{b=1,f=6,lvl=80,q=4,u=33}),
 s(178718,50778,{b=1,f=5,lvl=80,q=4,u=33}),
 s(178723,50783,{b=1,f=5,lvl=80,q=4,u=33}),
 i(50342,{b=1,f=53,lvl=80,q=4,u=33}),
-crit(12773,{achID=4531,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(12773,{achID=4531,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4536,{u=33}),
 s(178727,50787,{b=1,f=21,lvl=80,q=4,u=33}),
@@ -14010,7 +14010,7 @@ s(179774,51919,{b=1,f=6,lvl=80,q=4,u=33}),
 s(179780,51925,{b=1,f=5,lvl=80,q=4,u=33}),
 s(179775,51920,{b=1,f=5,lvl=80,q=4,u=33}),
 i(50343,{b=1,f=53,lvl=80,q=4,u=33}),
-crit(13104,{achID=4628,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(13104,{achID=4628,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4536,{u=33}),
 s(179771,51916,{b=1,f=21,lvl=80,q=4,u=33}),
@@ -14225,7 +14225,7 @@ s(178216,49983,{b=1,f=7,lvl=80,q=4,u=33}),
 s(178223,49993,{b=1,f=6,lvl=80,q=4,u=33}),
 i(49985,{b=1,f=52,lvl=80,q=4,u=33}),
 i(49990,{b=1,f=52,lvl=80,q=4,u=33}),
-crit(12948,{achID=4604,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(12948,{achID=4604,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4612,{u=33}),
 s(178458,50411,{b=1,f=21,lvl=80,q=4,u=33}),
@@ -14431,7 +14431,7 @@ s(178608,50639,{b=1,f=7,lvl=80,q=4,u=33}),
 s(178618,50652,{b=1,f=6,lvl=80,q=4,u=33}),
 i(50642,{b=1,f=52,lvl=80,q=4,u=33}),
 i(50644,{b=1,f=52,lvl=80,q=4,u=33}),
-crit(13106,{achID=4632,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2];t.providers=nil;return t;end)(
+crit(13106,{achID=4632,u=33})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},u=33,g={
 ach(4612,{u=33}),
 s(178620,50654,{b=1,f=21,lvl=80,q=4,u=33}),
@@ -16898,5 +16898,5 @@ crit(63371,{achID=19437,id=4,u=33})}}),
 e(643,{npcID=26693,u=33,g={
 crit(63369,{achID=19437,id=3,u=33})}}),
 e(644,{npcID=26861,u=33,g={
-crit(63366,{achID=19437,id=1,u=33})}})}}))}})}})}});
-end);
+crit(63366,{achID=19437,id=1,u=33})}})}}))}})}})}})
+end)

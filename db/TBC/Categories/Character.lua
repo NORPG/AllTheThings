@@ -1,5 +1,5 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,faction,flt,h,i,mnt,p,r,s,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateExpansion;
 categories.Character=
@@ -396,5 +396,5 @@ r(7810,{b=1,c={9},itemID=16347,lvl=30,q=1,rank=3}),
 r(7811,{b=1,c={9},itemID=16348,lvl=40,q=1,rank=4}),
 r(11774,{b=1,c={9},itemID=16349,lvl=50,q=1,rank=5}),
 r(11775,{b=1,c={9},itemID=16350,lvl=60,q=1,rank=6}),
-r(27270,{b=1,c={9},itemID=22182,lvl=70,q=1,rank=7,u=17})}})})}});
-end);
+r(27270,{b=1,c={9},itemID=22182,lvl=70,q=1,rank=7,u=17})}})})}})
+end)
