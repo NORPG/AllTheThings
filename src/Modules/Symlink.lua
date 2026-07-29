@@ -1025,6 +1025,8 @@ app.AddEventHandler("OnLoad", function()
 		SettingsTooltip = app.L.FILL_SYMLINK_DATA_CHECKBOX_TOOLTIP:format(app.Modules.Color.Colorize(app.L.SYM_ROW_INFORMATION, app.Colors.SymLink)),
 	})
 
+	local NPCFillThings = app.CloneDictionary(app.ThingKeys)
+	NPCFillThings.encounterID = nil
 	-- Pulls in Common drop content for specific NPCs if any exists
 	-- (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 	Fill.AddFiller("NPC",
@@ -1039,7 +1041,6 @@ app.AddEventHandler("OnLoad", function()
 		local npcGroups = SearchForField("npcID", npcID);
 		if not npcGroups or #npcGroups == 0 then return end
 
-		local ThingKeys = app.ThingKeys
 		-- see if there's a difficulty wrapping the fill group
 		local difficultyID = GetRelativeValue(group, "difficultyID");
 		if difficultyID then
@@ -1049,7 +1050,7 @@ app.AddEventHandler("OnLoad", function()
 			for i=1,#npcGroups do
 				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
-					if ThingKeys[npcGroup.key] and npcGroup.providers then
+					if NPCFillThings[npcGroup.key] and npcGroup.providers then
 						-- app.PrintDebug("IsThingDrop.Diff",group.hash,"<==",npcGroup.hash)
 						if groups then groups[#groups + 1] = CreateObject(npcGroup)
 						else groups = { CreateObject(npcGroup) }; end
@@ -1080,7 +1081,7 @@ app.AddEventHandler("OnLoad", function()
 			for i=1,#npcGroups do
 				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
-					if ThingKeys[npcGroup.key] and npcGroup.providers then
+					if NPCFillThings[npcGroup.key] and npcGroup.providers then
 						-- app.PrintDebug("IsThingDrop",group.hash,"<==",npcGroup.hash)
 						if groups then groups[#groups + 1] = CreateObject(npcGroup)
 						else groups = { CreateObject(npcGroup) }; end
