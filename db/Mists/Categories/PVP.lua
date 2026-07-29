@@ -8524,7 +8524,7 @@ ach(398,{pvp=1}),
 ach(875,{pvp=1}),
 ach(876,{awp=30003,pvp=1,g={
 s(174779,43349,{b=1,f=9,pvp=1,q=4}),
-crit(3489,{achID=1174,awp=30002,id=3,pvp=1,rwp=70003})}}),
+crit(3489,{achID=1174,id=3,pvp=1,rwp=70003})}}),
 ach(2090,{pvp=1,g={
 title(32,{collectible=false,pvp=1})}}),
 ach(2092,{pvp=1,g={
@@ -8586,8 +8586,8 @@ h(-12,{pvp=1,g={
 ach(708,{minReputation={729,42000},pvp=1,r=1,u=12}),
 ach(709,{minReputation={730,42000},pvp=1,r=2,u=12}),
 ach(1167,{awp=30002,pvp=1,g={
-crit(226,{achID=230,awp=20001,id=2,pvp=1,r=2,u=17}),
-crit(226,{achID=1175,awp=20001,id=1,pvp=1,r=1,u=17})}}),
+crit(226,{achID=230,id=2,pvp=1,r=2,u=17}),
+crit(226,{achID=1175,id=1,pvp=1,r=1,u=17})}}),
 ach(1168,{awp=30002,pvp=1,r=1,rwp=40300,sym={{"meta_achievement",219,221,222,224,1164,223,873,220,582,706,707,1166}},u=2}),
 ach(218,{awp=30002,pvp=1,rank=1}),
 ach(219,{awp=30002,pvp=1,rank=100,g={
@@ -8922,8 +8922,8 @@ s(129191,18231,{f=10,filterForRWP=2,pvp=1,q=1})}})}}),
 m(93,{icon=236385,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(1169,{awp=30002,pvp=1,g={
-crit(227,{achID=230,awp=20001,id=3,pvp=1,r=2,u=17}),
-crit(227,{achID=1175,awp=20001,id=2,pvp=1,r=1,u=17})}}),
+crit(227,{achID=230,id=3,pvp=1,r=2,u=17}),
+crit(227,{achID=1175,id=2,pvp=1,r=1,u=17})}}),
 ach(1170,{awp=30002,pvp=1,r=1,rwp=40300,sym={{"meta_achievement",155,165,158,73,1153,157,161,156,159,162,583,584}},u=2}),
 ach(154,{awp=30002,pvp=1,rank=1}),
 ach(155,{awp=30002,pvp=1,rank=100,g={
@@ -9365,8 +9365,8 @@ crit(23522,{achID=8360,id=7,pvp=1})}})}})}}),
 m(112,{icon=236392,maps={112,397},pvp=1,u=17,g={
 h(-12,{awp=30002,pvp=1,u=17,g={
 ach(1171,{pvp=1,u=17,g={
-crit(3503,{achID=230,awp=20001,id=5,pvp=1,r=2,u=17}),
-crit(3503,{achID=1175,awp=20001,id=4,pvp=1,r=1,u=17})}}),
+crit(3503,{achID=230,id=5,pvp=1,r=2,u=17}),
+crit(3503,{achID=1175,id=4,pvp=1,r=1,u=17})}}),
 ach(208,{pvp=1,rank=1,u=17}),
 ach(209,{pvp=1,rank=100,u=17,g={
 crit(3446,{achID=1171,id=2,pvp=1,u=17})}}),
@@ -9498,8 +9498,8 @@ crit(20793,{achID=7106,id=9,pvp=1})}})}})}}),
 m(128,{awp=30002,icon=236394,pvp=1,rwp=80001,u=30,g={
 h(-12,{pvp=1,u=30,g={
 ach(2194,{pvp=1,u=30,g={
-crit(7640,{achID=230,awp=20001,id=6,pvp=1,r=2,u=17}),
-crit(7640,{achID=1175,awp=20001,id=5,pvp=1,r=1,u=17})}}),
+crit(7640,{achID=230,id=6,pvp=1,r=2,u=17}),
+crit(7640,{achID=1175,id=5,pvp=1,r=1,u=17})}}),
 ach(2195,{pvp=1,r=1,rwp=40300,sym={{"meta_achievement",1309,1310,1765,1761,2193,2192,1763,2189,1764,2190,1766,2191,2200}},u=2}),
 ach(1308,{pvp=1,rank=1,u=30}),
 ach(1309,{pvp=1,rank=100,u=30,g={
@@ -9757,8 +9757,8 @@ crit(63600,{achID=5223,id=12,pvp=1})}})}})}}),
 m(92,{icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(1172,{awp=30002,pvp=1,g={
-crit(229,{achID=230,awp=20001,id=4,pvp=1,r=2,u=17}),
-crit(229,{achID=1175,awp=20001,id=3,pvp=1,r=1,u=17})}}),
+crit(229,{achID=230,id=4,pvp=1,r=2,u=17}),
+crit(229,{achID=1175,id=3,pvp=1,r=1,u=17})}}),
 ach(1173,{awp=30002,pvp=1,r=1,rwp=40300,sym={{"meta_achievement",167,199,200,872,168,201,204,1251,1502,1252,207}},u=2}),
 ach(166,{awp=30002,pvp=1,rank=1}),
 ach(167,{awp=30002,pvp=1,rank=100,g={

@@ -2839,9 +2839,9 @@ q(3765,{coords={
 q(26899,{awp=40003,crs={4832},qgs={44387},qis={5881},r=1,rwp=60002,u=2}),
 q(6563,{coords={
 [63]={{11.6,34.3}}},lvl=10,qgs={12736},qis={16784},r=1,rwp=40003,sourceQuests={6562},u=2,g={
-o(178184),
-o(178185),
-o(178186)}}),
+o(178184,{u=2}),
+o(178185,{u=2}),
+o(178186,{u=2})}}),
 q(34672,{awp=60002,crs={75155},lvl=10,qgs={75606},r=2,g={
 s(33351,65986,{b=1,f=8}),
 s(33331,65962,{b=1,f=7}),
@@ -2919,7 +2919,7 @@ s(2643,6903,{b=1,f=4,lvl=10}),
 s(89437,151438,{awp=70300,b=1,f=5,lvl=10})}}),
 e(444,{awp=60002,npcID=75408,g={
 ach(632,{
-crit(3943,{achID=1283,awp=30002,id=6})}),
+crit(3943,{achID=1283,id=6})}),
 gach(5041),
 s(2649,6909,{b=1,f=26,lvl=10,spellID=259009}),
 s(2651,6911,{b=1,f=5,lvl=10}),
@@ -3669,7 +3669,7 @@ s(1988,5196,{b=1,f=21,lvl=7,modID=1}),
 i(1156,{b=1,f=52,lvl=7,modID=1})}}),
 e(93,{awp=40003,npcID=47739,g={
 ach(628,{
-crit(3939,{achID=1283,awp=30002,id=2})}),
+crit(3939,{achID=1283,id=2})}),
 gach(5037),
 s(1984,5192,{b=1,f=25,lvl=7,modID=1}),
 s(1989,5197,{b=1,f=23,lvl=7,modID=1}),
@@ -3680,7 +3680,7 @@ de(4401,{awp=110207,itemID=248332,spellID=1246969})}})}),
 d(2,{awp=40003,g={
 e(89,{npcID=47162,g={
 ach(5366,{
-crit(16041,{achID=4845,awp=40000,id=16})}),
+crit(16041,{achID=4845,id=16})}),
 s(32727,65163,{b=1,f=20,lvl=32,modID=2}),
 s(31829,63470,{b=1,f=7,lvl=32,modID=2,rwp=110105,u=2}),
 s(287847,238939,{awp=110105,b=1,f=7,lvl=32,modID=2}),
@@ -3692,7 +3692,7 @@ s(287846,238938,{awp=110105,b=1,f=5,lvl=32,modID=2}),
 s(93814,157628,{awp=70305,b=1,f=4,lvl=7,modID=2})}}),
 e(90,{npcID=47296,g={
 ach(5367,{
-crit(16042,{achID=4845,awp=40000,id=17})}),
+crit(16042,{achID=4845,id=17})}),
 s(32728,65164,{b=1,f=25,lvl=32,modID=2}),
 s(31832,63473,{b=1,f=3,lvl=32,modID=2}),
 s(93933,157752,{awp=70305,b=1,f=4,lvl=7,modID=2}),
@@ -3701,7 +3701,7 @@ s(31833,63474,{b=1,f=7,lvl=32,modID=2}),
 s(31834,63475,{b=1,f=6,lvl=32,modID=2})}}),
 e(91,{npcID=43778,g={
 ach(5368,{
-crit(16043,{achID=4845,awp=40000,id=18})}),
+crit(16043,{achID=4845,id=18})}),
 s(32731,65167,{b=1,f=28,lvl=32,modID=2}),
 s(32729,65165,{b=1,f=24,lvl=32,modID=2}),
 s(32730,65166,{b=1,f=25,lvl=32,modID=2}),
@@ -3710,13 +3710,13 @@ s(93934,157753,{awp=70305,b=1,f=5,lvl=7,modID=2}),
 s(93935,157754,{awp=70305,b=1,f=6,lvl=7,modID=2})}}),
 e(92,{npcID=47626,g={
 ach(5369,{
-crit(16044,{achID=4845,awp=40000,id=19})}),
+crit(16044,{achID=4845,id=19})}),
 s(32732,65168,{b=1,f=22,lvl=32,modID=2}),
 s(32733,65170,{b=1,f=21,lvl=32,modID=2}),
 i(65169,{b=1,f=52,lvl=32,modID=2})}}),
 e(93,{npcID=47739,g={
 ach(5370,{
-crit(16045,{achID=4845,awp=40000,id=20})}),
+crit(16045,{achID=4845,id=20})}),
 s(32734,65171,{b=1,f=23,lvl=32,modID=2}),
 s(32736,65173,{b=1,f=25,lvl=32,modID=2}),
 s(32735,65172,{b=1,f=27,lvl=32,modID=2}),
@@ -3724,11 +3724,11 @@ s(32738,65177,{b=1,f=3,lvl=32,modID=2}),
 s(32737,65174,{b=1,f=4,lvl=32,modID=2})}}),
 e(95,{npcID=49541,g={
 ach(5083,{
-crit(14383,{achID=4844,awp=40000,id=9}),
-crit(14383,{achID=5506,awp=40000,id=9})}),
+crit(14383,{achID=4844,id=9}),
+crit(14383,{achID=5506,id=9})}),
 gach(5141),
 ach(5371,{
-crit(16046,{achID=4845,awp=40000,id=21})}),
+crit(16046,{achID=4845,id=21})}),
 s(31842,63485,{b=1,f=5,lvl=32,modID=2}),
 s(31837,63478,{b=1,f=7,lvl=32,modID=2}),
 s(31841,63484,{b=1,f=4,lvl=32,modID=2}),
@@ -4253,7 +4253,7 @@ q(2923,{coords={
 h(-47,{
 ah(9363,{description="Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",providers={{"i",9363}},type="i",g={
 cq(38081,{awp=60100,b=1,itemID=122207,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,r=2,spellID=181583,g={
-crit(27749,{achID=10015,awp=60003,id=13,r=2})}}),
+crit(27749,{achID=10015,id=13,r=2})}}),
 i(9280,{b=1}),
 i(10299,{b=1,f=51,lvl=12}),
 i(10298,{b=1,f=52,lvl=11})}})}),
@@ -4468,16 +4468,16 @@ i(12849,{b=1,u=2})}}),
 q(27444,{awp=40003,crs={10429},qgs={10299},rwp=60002,sourceQuests={27469,27470,27471},u=2}),
 q(4788,{coords={
 [71]={{66.8,24}}},qgs={10460},qis={12740,12741},rwp=40003,sourceQuests={5065},u=2,g={
-o(175949),
-o(175950)}}),
+o(175949,{u=2}),
+o(175950,{u=2})}}),
 q(8182,{coords={
 [71]={{66.8,24}}},qgs={10460},rwp=40003,sourceQuests={8181},u=2}),
 q(5065,{coords={
 [71]={{66.8,24}}},maps={23},qgs={10460},qis={12411,12412},rwp=40003,sourceQuests={3528},u=2,g={
 o(175487,{coords={
-[23]={{66.9,9}}}}),
+[23]={{66.9,9}}},u=2}),
 o(175488,{coords={
-[23]={{67.2,11.4}}}})}}),
+[23]={{67.2,11.4}}},u=2})}}),
 q(5160,{maps={83},qgs={10740},qis={12923},rwp=40003,u=2}),
 q(4724,{coords={
 [15]={{5.8,47.6}}},crs={10220},qgs={9081},r=1,rwp=40003,u=2,g={
@@ -5000,7 +5000,7 @@ s(76387,132552,{awp=70003,b=1,f=6,lvl=6}),
 s(42166,82884,{b=1,f=5,lvl=6})}}),
 e(697,{awp=50004,npcID=61528,g={
 ach(629,{
-crit(3940,{achID=1283,awp=30002,id=3})}),
+crit(3940,{achID=1283,id=3})}),
 gach(5038),
 s(42169,82888,{b=1,f=28,lvl=6}),
 s(42165,82883,{b=1,f=25,lvl=6,spellID=258981}),
@@ -5096,7 +5096,7 @@ s(4077,10768,{b=1,f=6,lvl=17}),
 s(89450,151454,{awp=70300,b=1,f=7,lvl=17})}}),
 e(1141,{awp=60002,crs={74434,74876},g={
 ach(636,{
-crit(3947,{achID=1283,awp=30002,id=10})}),
+crit(3947,{achID=1283,id=10})}),
 gach(5045),
 s(4070,10761,{b=1,f=20,lvl=17,spellID=259007}),
 s(4072,10763,{b=1,f=7,lvl=17}),
@@ -5125,13 +5125,13 @@ q(1221,{coords={
 [10]={{62.4,37.6}}},crs={4781},qgs={3446},qis={5876,5880,5897,6684},rwp=40003,u=2,g={
 i(6755,{b=1,u=2,g={
 i(6756,{b=1,f=113,u=2})}}),
-o(20920),
+o(20920,{u=2}),
 o(21277,{coords={
-[10]={{62.3,37.6}}}}),
+[10]={{62.3,37.6}}},u=2}),
 o(21530,{coords={
-[10]={{62.3,37.6}}}}),
+[10]={{62.3,37.6}}},u=2}),
 o(68865,{coords={
-[10]={{62.3,37.6}}}})}}),
+[10]={{62.3,37.6}}},u=2})}}),
 q(26908,{awp=40003,coords={
 [199]={{45.1,85.4}}},lvl=10,qgs={37812}}),
 q(1109,{coords={
@@ -5512,7 +5512,7 @@ s(2930,7720,{awp=110002,b=1,f=4,lvl=15})})})}}),
 d(102,{awp=50004,difficulties={1,2},g={
 e(674,{crs={3977,60040},g={
 ach(637,{
-crit(3948,{achID=1283,awp=30002,id=11})}),
+crit(3948,{achID=1283,id=11})}),
 gach(5046)}})}}),
 d(1,{
 h(-45,{
@@ -5691,22 +5691,22 @@ o(177241,{coords={
 [22]={{45.6,69.2}}}})}}),
 q(5343,{coords={
 [22]={{43.5,83.7}}},qgs={11023},qis={13448,13450,13451,13471},r=2,rwp=40003,u=2,g={
-o(176484),
-o(176485),
-o(176486),
-o(176487)}}),
+o(176484,{u=2}),
+o(176485,{u=2}),
+o(176486,{u=2}),
+o(176487,{u=2})}}),
 q(5341,{coords={
 [18]={{83.06,71.6}}},maps={22},qgs={11022},qis={13448,13450,13451,13471},r=1,rwp=40003,u=2,g={
-o(176484),
-o(176485),
-o(176486),
-o(176487)}}),
+o(176484,{u=2}),
+o(176485,{u=2}),
+o(176486,{u=2}),
+o(176487,{u=2})}}),
 q(27143,{awp=40003,qgs={45109},qis={13448,13450,13451,13471},rwp=50004,u=2,g={
 i(65923,{b=1,f=53,modID=1,spellID=93742,u=2}),
-o(176484),
-o(176485),
-o(176486),
-o(176487)}}),
+o(176484,{u=2}),
+o(176485,{u=2}),
+o(176486,{u=2}),
+o(176487,{u=2})}}),
 q(5531,{coords={
 [23]={{81.73,57.83}}},qgs={11036},qis={13761},rwp=40003,sourceQuests={5522},u=2}),
 q(76257,{providers={{"i",206373}},g={
@@ -5717,11 +5717,11 @@ s(6481,15854,{b=1,f=28,modID=1,u=2}),
 s(6480,15853,{b=1,f=21,modID=1,spellID=265236,u=2})}}),
 q(5382,{coords={
 [22]={{70.2,73.7}}},crs={11261},description="Talk to Eva until she offers the quest.",qgs={11216},rwp=40003,u=2,g={
-o(176544),
-o(176545)}}),
+o(176544,{u=2}),
+o(176545,{u=2})}}),
 q(27146,{awp=40003,crs={11261},qgs={45107},rwp=50004,u=2,g={
-o(176544),
-o(176545)}}),
+o(176544,{u=2}),
+o(176545,{u=2})}}),
 q(5801,{coords={
 [71]={{51.5,28.8}}},cost={{"i",12359,2},{"i",14644,1}},maps={78},qgs={5411},qis={14645},r=2,rwp=40003,sourceQuests={5538},u=2}),
 q(5802,{coords={
@@ -5987,7 +5987,7 @@ i(85592,{b=1,f=55,spellID=124298}),
 i(85593,{b=1,f=55,spellID=124299})}})}),
 e(684,{npcID=59080,g={
 ach(645,{
-crit(3956,{achID=1283,awp=30002,id=19})}),
+crit(3956,{achID=1283,id=19})}),
 gach(5054)}})}}),
 d(1,{
 h(-45,{
@@ -6424,7 +6424,7 @@ n(4275,{rwp=40003,u=2,g={
 s(2376,6392,{b=1,f=4,lvl=8,modID=1,u=2})}}),
 e(100,{awp=40003,npcID=46964,g={
 ach(631,{
-crit(3942,{achID=1283,awp=30002,id=5})}),
+crit(3942,{achID=1283,id=5})}),
 gach(5040),
 i(60877),
 i(60882),
@@ -6439,7 +6439,7 @@ s(89259,151073,{awp=70300,b=1,f=7,lvl=8,modID=1})}})}),
 d(2,{awp=40003,g={
 e(96,{npcID=46962,g={
 ach(5503,{
-crit(16047,{achID=4845,awp=40000,id=22})}),
+crit(16047,{achID=4845,id=22})}),
 s(31799,63433,{b=1,f=4,lvl=32,modID=2}),
 s(31803,63437,{b=1,f=4,lvl=32,modID=2}),
 s(31800,63434,{b=1,f=7,lvl=32,modID=2}),
@@ -6454,7 +6454,7 @@ s(31806,63444,{b=1,f=7,lvl=32,modID=2}),
 s(31805,63440,{b=1,f=4,lvl=32,modID=2})}}),
 e(98,{npcID=4278,g={
 ach(5504,{
-crit(16048,{achID=4845,awp=40000,id=23})}),
+crit(16048,{achID=4845,id=23})}),
 s(31807,63445,{b=1,f=22,lvl=32,modID=2}),
 s(31811,63449,{b=1,f=5,lvl=32,modID=2}),
 s(31810,63448,{b=1,f=3,lvl=32,modID=2}),
@@ -6474,10 +6474,10 @@ e(100,{npcID=46964,g={
 ach(5505,{
 crit(16086,{achID=5505}),
 crit(16544,{achID=5505}),
-crit(16049,{achID=4845,awp=40000,id=24})}),
+crit(16049,{achID=4845,id=24})}),
 ach(5093,{
-crit(14384,{achID=4844,awp=40000,id=10}),
-crit(14384,{achID=5506,awp=40000,id=10})}),
+crit(14384,{achID=4844,id=10}),
+crit(14384,{achID=5506,id=10})}),
 gach(5142),
 s(31821,63461,{b=1,f=28,lvl=32,modID=2}),
 s(31817,63456,{b=1,f=20,lvl=32,modID=2,spellID=265353}),
@@ -6873,7 +6873,7 @@ s(2222,5967,{b=1,f=4,lvl=10}),
 s(496,1929,{b=1,f=4,lvl=10})}}),
 e(464,{awp=40001,npcID=46254,g={
 ach(633,{
-crit(3944,{achID=1283,awp=30002,id=7})}),
+crit(3944,{achID=1283,id=7})}),
 gach(5042,{awp=40003}),
 s(511,1959,{b=1,f=22,lvl=10}),
 s(89260,151074,{awp=70300,b=1,f=7,lvl=10}),
@@ -7726,8 +7726,8 @@ e(1556,{description="|CFFFF0000Moroes MUST be killed before you are allowed to p
 h(-19,{crs={17521,17533,17534,17535,17543,17546,17547,17548,17603,18168},description="These items can drop from any of the Opera Hall bosses.",g={
 r(213036,{awp=70003,b=1,itemID=138017,lvl=10,requireSkill=197,skillID=2534}),
 cq(38093,{awp=60100,b=1,itemID=122231,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181609,g={
-crit(27758,{achID=10015,awp=60003,id=22,r=2}),
-crit(27758,{achID=10016,awp=60003,id=22,r=1})}}),
+crit(27758,{achID=10015,id=22,r=2}),
+crit(27758,{achID=10016,id=22,r=1})}}),
 s(12571,28593,{b=1,f=7,lvl=27}),
 s(12569,28589,{b=1,f=6,lvl=27}),
 s(12570,28591,{b=1,f=5,lvl=27}),
@@ -8692,8 +8692,8 @@ crit(4021,{achID=1286,id=8})}}),
 gach(5091,{awp=40003}),
 ach(426,{c={1,4,6,10,12},description="Once you have both, simply equip them for this achievement.",providers={{"i",32837},{"i",32838}}}),
 cq(38064,{awp=60100,b=1,itemID=122196,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=180706,g={
-crit(27711,{achID=10015,awp=60003,id=1,r=2}),
-crit(27711,{achID=10016,awp=60003,id=1,r=1})}}),
+crit(27711,{achID=10015,id=1,r=2}),
+crit(27711,{achID=10016,id=1,r=1})}}),
 s(15136,32837,{b=1,c={1,4,6,10,12},collectible=false,description="Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",f=25,lvl=27}),
 s(15137,32838,{b=1,c={1,4,6,10,12},collectible=false,description="Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",f=25,lvl=27}),
 i(31089,{b=2,c={2,5,9},lvl=27,spellID=238161}),
@@ -12706,8 +12706,8 @@ crit(22473,{achID=7934,id=5})}})}})}),
 h(-82,{
 e(1615,{npcID=15990,g={
 cq(38065,{awp=60100,b=1,itemID=122197,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181277,g={
-crit(27712,{achID=10015,awp=60003,id=2,r=2}),
-crit(27712,{achID=10016,awp=60003,id=2,r=1})}})}})})}}),
+crit(27712,{achID=10015,id=2,r=2}),
+crit(27712,{achID=10016,id=2,r=1})}})}})})}}),
 ah(18372,{awp=100105,description="With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStages 1-3 takes place in Scholomance and Plaguelands, see instructions in the 'Wards of the Dread Citadel'-header in the respective zones.\n\nThe following stages takes place in Naxxramas, and you can get here from Eastern Plaguelands by using a portal at coordinates 35.7, 23.1. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.\n\nStage 4: Makeshift Grappling Hook, see the instructions in the subheader below.\n\nStage 5: Mutually Beneficial Transactions, see the instructions in the subheader below.\n\nStage 6: Forgotten Knowledge, see the instructions in the subheader below.\n\nCongratulations, all is unlocked and welcome to the grind!",type="a",g={
 ah(206473,{description="1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sweing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",type="i",g={
 prof(356,{
@@ -12851,7 +12851,7 @@ h(-19,{
 i(206375,{b=2})}),
 h(-225,{
 ach(11744,{
-crit(36406,{achID=11761,awp=70200,id=27})}),
+crit(36406,{achID=11761,id=27})}),
 h(-23,{
 flt(4,{
 i(206617,{b=2,c={5,8,9},cost={{"i",206645,1},{"i",206609,1}},spellID=414110}),
@@ -16036,7 +16036,7 @@ ach(4531,{
 crit(12765,{achID=4532,id=2})}),
 e(1624,{npcID=36612,g={
 ach(4534,{
-crit(12917,{achID=4602,awp=30002,id=6})}),
+crit(12917,{achID=4602,id=6})}),
 p(1963,{awp=70100,b=1,itemID=142094,npcID=115146,spellID=229101,g={
 crit(34598,{achID=11320,id=11})}}),
 s(24848,50761,{b=1,f=26,lvl=30,modID=1}),
@@ -16054,7 +16054,7 @@ i(50339,{b=1,f=53,lvl=30,modID=1,spellID=71565}),
 crit(12770,{achID=4531})}}),
 e(1625,{npcID=36855,g={
 ach(4535,{
-crit(12918,{achID=4602,awp=30002,id=7})}),
+crit(12918,{achID=4602,id=7})}),
 s(24861,50776,{b=1,f=32,lvl=30,modID=1}),
 s(24866,50781,{b=1,f=1,lvl=30,modID=1}),
 s(24864,50779,{b=1,f=7,lvl=30,modID=1}),
@@ -16070,7 +16070,7 @@ i(50342,{b=1,f=53,lvl=30,modID=1,spellID=71402}),
 crit(12773,{achID=4531})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4536,{
-crit(12919,{achID=4602,awp=30002,id=8})}),
+crit(12919,{achID=4602,id=8})}),
 s(24872,50787,{b=1,f=21,lvl=30,modID=1}),
 s(24877,50793,{b=1,f=20,lvl=30,modID=1}),
 s(24878,50794,{b=1,f=8,lvl=30,modID=1}),
@@ -16086,7 +16086,7 @@ i(50340,{b=1,f=53,lvl=30,modID=1,spellID=71571}),
 crit(12771,{achID=4531})}})),
 e(1628,{npcID=37813,g={
 ach(4537,{
-crit(12920,{achID=4602,awp=30002,id=9})}),
+crit(12920,{achID=4602,id=9})}),
 p(1964,{awp=70100,b=1,itemID=142095,npcID=115147,spellID=229102,g={
 crit(34599,{achID=11320,id=12})}}),
 s(24888,50805,{b=1,f=28,lvl=30,modID=1}),
@@ -16110,7 +16110,7 @@ ach(4528,{
 crit(12767,{achID=4532,id=3})}),
 e(1629,{npcID=36626,g={
 ach(4577,{
-crit(12922,{achID=4602,awp=30002,id=11})}),
+crit(12922,{achID=4602,id=11})}),
 s(24947,50966,{b=1,f=28,lvl=30,modID=1,spellID=72770}),
 s(24892,50810,{b=1,f=23,lvl=30,modID=1}),
 i(50852,{b=1,f=51,lvl=30,modID=1}),
@@ -16127,7 +16127,7 @@ i(50999,{b=1,f=36,lvl=30,modID=1,rwp=50004,u=2}),
 crit(12759,{achID=4528})}}),
 e(1630,{npcID=36627,g={
 ach(4538,{
-crit(12921,{achID=4602,awp=30002,id=10})}),
+crit(12921,{achID=4602,id=10})}),
 s(24978,50998,{b=1,f=28,lvl=30,modID=1}),
 s(24982,51003,{b=1,f=34,lvl=30,modID=1}),
 s(24983,51004,{b=1,f=23,lvl=30,modID=1}),
@@ -16142,7 +16142,7 @@ i(51001,{b=1,f=52,lvl=30,modID=1}),
 crit(12760,{achID=4528})}}),
 e(1631,{npcID=36678,g={
 ach(4578,{
-crit(12923,{achID=4602,awp=30002,id=12})}),
+crit(12923,{achID=4602,id=12})}),
 p(1965,{awp=70100,b=1,itemID=142096,npcID=115148,spellID=229103,g={
 crit(34600,{achID=11320,id=13})}}),
 s(24989,51011,{b=1,f=20,lvl=30,modID=1}),
@@ -16163,7 +16163,7 @@ ach(4529,{
 crit(12768,{achID=4532,id=4})}),
 e(1632,{crs={37970,37972,37973},g={
 ach(4582,{
-crit(12924,{achID=4602,awp=30002,id=13})}),
+crit(12924,{achID=4602,id=13})}),
 s(24998,51022,{b=1,f=29,lvl=30,modID=1}),
 s(24997,51021,{b=1,f=25,lvl=30,modID=1}),
 s(25197,51326,{b=1,f=27,lvl=30,modID=1}),
@@ -16181,7 +16181,7 @@ e(1633,{npcID=37955,g={
 ach(4539,{
 crit(12780,{achID=4539}),
 crit(13011,{achID=4539}),
-crit(12925,{achID=4602,awp=30002,id=14})}),
+crit(12925,{achID=4602,id=14})}),
 s(25242,51384,{b=1,f=20,lvl=30,modID=1}),
 s(25397,51553,{b=1,f=27,lvl=30,modID=1}),
 s(25243,51385,{b=1,f=31,lvl=30,modID=1}),
@@ -16200,7 +16200,7 @@ ach(4527,{
 crit(12766,{achID=4532,id=5})}),
 e(1634,{npcID=36789,g={
 ach(4579,{
-crit(12926,{achID=4602,awp=30002,id=15})}),
+crit(12926,{achID=4602,id=15})}),
 s(25402,51562,{b=1,f=24,lvl=30,modID=1}),
 s(25419,51582,{b=1,f=28,lvl=30,modID=1}),
 s(25401,51561,{b=1,f=31,lvl=30,modID=1}),
@@ -16216,7 +16216,7 @@ s(25406,51566,{b=1,f=6,lvl=30,modID=1}),
 crit(12757,{achID=4527})}}),
 e(1635,{npcID=36853,g={
 ach(4580,{
-crit(12927,{achID=4602,awp=30002,id=16})}),
+crit(12927,{achID=4602,id=16})}),
 p(1966,{awp=70100,b=1,itemID=142097,npcID=115149,spellID=229104,g={
 crit(34601,{achID=11320,id=14})}}),
 s(25526,51788,{b=1,f=20,lvl=30,modID=1}),
@@ -16234,7 +16234,7 @@ s(25523,51785,{b=1,f=6,lvl=30,modID=1}),
 crit(12758,{achID=4527})}}),
 e(1636,{npcID=36597,g={
 ach(4601,{
-crit(12928,{achID=4602,awp=30002,id=17})}),
+crit(12928,{achID=4602,id=17})}),
 ach(4581),
 ach(4530,{
 title(140),
@@ -16252,17 +16252,17 @@ s(25531,51795,{b=1,f=21,lvl=30,modID=1}),
 s(25534,51798,{b=1,f=23,lvl=30,modID=1}),
 s(25538,51802,{b=1,f=33,lvl=30,modID=1}),
 cq(38092,{awp=60100,b=1,itemID=122229,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181607,g={
-crit(27757,{achID=10015,awp=60003,id=21,r=2}),
-crit(27757,{achID=10016,awp=60003,id=21,r=1})}}),
+crit(27757,{achID=10015,id=21,r=2}),
+crit(27757,{achID=10016,id=21,r=1})}}),
 i(139547,{awp=70003,b=1,c={6},f=55,modID=1,sourceQuests={38990},spellID=220651})}})})}),
 d(5,{
 h(-368,{
 ach(4628,{
-crit(13071,{achID=4602,awp=30002,id=2}),
+crit(13071,{achID=4602,id=2}),
 crit(13071,{achID=4636,id=2})}),
 e(1624,{npcID=36612,g={
 ach(4534,{
-crit(12917,{achID=4602,awp=30002,id=6})}),
+crit(12917,{achID=4602,id=6})}),
 p(1963,{awp=70100,b=1,itemID=142094,npcID=115146,spellID=229101,g={
 crit(34598,{achID=11320,id=11})}}),
 s(25650,51936,{b=1,f=26,lvl=30,modID=1}),
@@ -16280,7 +16280,7 @@ i(50346,{b=1,f=53,lvl=30,modID=1,spellID=71574}),
 crit(13090,{achID=4628})}}),
 e(1625,{npcID=36855,g={
 ach(4535,{
-crit(12918,{achID=4602,awp=30002,id=7})}),
+crit(12918,{achID=4602,id=7})}),
 s(25642,51927,{b=1,f=32,lvl=30,modID=1}),
 s(25637,51922,{b=1,f=1,lvl=30,modID=1}),
 s(25639,51924,{b=1,f=7,lvl=30,modID=1}),
@@ -16296,7 +16296,7 @@ i(50343,{b=1,f=53,lvl=30,modID=1,spellID=71540}),
 crit(13104,{achID=4628})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4536,{
-crit(12919,{achID=4602,awp=30002,id=8})}),
+crit(12919,{achID=4602,id=8})}),
 s(25631,51916,{b=1,f=21,lvl=30,modID=1}),
 s(25626,51910,{b=1,f=20,lvl=30,modID=1}),
 s(25625,51909,{b=1,f=8,lvl=30,modID=1}),
@@ -16312,7 +16312,7 @@ i(50345,{b=1,f=53,lvl=30,modID=1,spellID=71573}),
 crit(13110,{achID=4628})}})),
 e(1628,{npcID=37813,g={
 ach(4537,{
-crit(12920,{achID=4602,awp=30002,id=9})}),
+crit(12920,{achID=4602,id=9})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
 i(52025,{b=2,c={4,6,8,11},lvl=30}),
@@ -16336,11 +16336,11 @@ n(37904,{description="After you kill Deathbringer Saurfang, this vendor shows up
 i(49926,{modID=1})}})}),
 h(-369,{
 ach(4629,{
-crit(13072,{achID=4602,awp=30002,id=3}),
+crit(13072,{achID=4602,id=3}),
 crit(13072,{achID=4636,id=3})}),
 e(1629,{npcID=36626,g={
 ach(4577,{
-crit(12922,{achID=4602,awp=30002,id=11})}),
+crit(12922,{achID=4602,id=11})}),
 s(25606,51887,{b=1,f=28,lvl=30,modID=1,spellID=72770}),
 s(25611,51893,{b=1,f=23,lvl=30,modID=1}),
 i(51890,{b=1,f=51,lvl=30,modID=1}),
@@ -16356,7 +16356,7 @@ i(51884,{b=1,f=52,lvl=30,modID=1}),
 crit(13116,{achID=4629})}}),
 e(1630,{npcID=36627,g={
 ach(4538,{
-crit(12921,{achID=4602,awp=30002,id=10})}),
+crit(12921,{achID=4602,id=10})}),
 s(25601,51881,{b=1,f=28,lvl=30,modID=1}),
 s(25597,51876,{b=1,f=34,lvl=30,modID=1}),
 s(25596,51875,{b=1,f=23,lvl=30,modID=1}),
@@ -16372,7 +16372,7 @@ i(51880,{b=1,f=36,lvl=30,modID=1,rwp=50004,u=2}),
 crit(13119,{achID=4629})}}),
 e(1631,{npcID=36678,g={
 ach(4578,{
-crit(12923,{achID=4602,awp=30002,id=12})}),
+crit(12923,{achID=4602,id=12})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
 i(52025,{b=2,c={4,6,8,11},lvl=30}),
@@ -16393,11 +16393,11 @@ i(50344,{b=1,f=53,lvl=30,modID=1,spellID=71578}),
 crit(13128,{achID=4629})}})}),
 h(-370,{
 ach(4630,{
-crit(13073,{achID=4602,awp=30002,id=4}),
+crit(13073,{achID=4602,id=4}),
 crit(13073,{achID=4636,id=4})}),
 e(1632,{crs={37970,37972,37973},g={
 ach(4582,{
-crit(12924,{achID=4602,awp=30002,id=13})}),
+crit(12924,{achID=4602,id=13})}),
 s(25581,51857,{b=1,f=29,lvl=30,modID=1}),
 s(25582,51858,{b=1,f=25,lvl=30,modID=1}),
 s(25577,51852,{b=1,f=27,lvl=30,modID=1}),
@@ -16415,7 +16415,7 @@ e(1633,{npcID=37955,g={
 ach(4539,{
 crit(12780,{achID=4539}),
 crit(13011,{achID=4539}),
-crit(12925,{achID=4602,awp=30002,id=14})}),
+crit(12925,{achID=4602,id=14})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
 i(52025,{b=2,c={4,6,8,11},lvl=30}),
@@ -16434,11 +16434,11 @@ i(51843,{b=1,f=52,lvl=30,modID=1}),
 crit(13131,{achID=4630})}})}),
 h(-371,{
 ach(4631,{
-crit(13074,{achID=4602,awp=30002,id=5}),
+crit(13074,{achID=4602,id=5}),
 crit(13074,{achID=4636,id=5})}),
 e(1634,{npcID=36789,g={
 ach(4579,{
-crit(12926,{achID=4602,awp=30002,id=15})}),
+crit(12926,{achID=4602,id=15})}),
 s(25561,51833,{b=1,f=24,lvl=30,modID=1}),
 s(25556,51828,{b=1,f=28,lvl=30,modID=1}),
 s(25562,51834,{b=1,f=31,lvl=30,modID=1}),
@@ -16454,7 +16454,7 @@ s(25557,51829,{b=1,f=6,lvl=30,modID=1}),
 crit(13125,{achID=4631})}}),
 e(1635,{npcID=36853,g={
 ach(4580,{
-crit(12927,{achID=4602,awp=30002,id=16})}),
+crit(12927,{achID=4602,id=16})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
 i(52025,{b=2,c={4,6,8,11},lvl=30}),
@@ -16478,7 +16478,7 @@ ach(4583,{
 title(139),
 crit(13065,{achID=4636,id=6})}),
 ach(4601,{
-crit(12928,{achID=4602,awp=30002,id=17})}),
+crit(12928,{achID=4602,id=17})}),
 ach(4581),
 gach(5023,{awp=40003}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
@@ -16497,8 +16497,8 @@ s(25661,51947,{b=1,f=21,lvl=30,modID=1}),
 s(25658,51944,{b=1,f=23,lvl=30,modID=1}),
 s(25654,51940,{b=1,f=33,lvl=30,modID=1}),
 cq(38092,{awp=60100,b=1,itemID=122229,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181607,g={
-crit(27757,{achID=10015,awp=60003,id=21,r=2}),
-crit(27757,{achID=10016,awp=60003,id=21,r=1})}}),
+crit(27757,{achID=10015,id=21,r=2}),
+crit(27757,{achID=10016,id=21,r=1})}}),
 i(139547,{awp=70003,b=1,c={6},f=55,modID=1,sourceQuests={38990},spellID=220651})}})})}),
 d(4,{
 h(-19,{crs={36597,36612,36626,36627,36678,36789,36853,36855,36939,36948,37813,37955,37970},g={
@@ -16508,7 +16508,7 @@ ach(4604,{
 crit(12956,{achID=4608,id=2})}),
 e(1624,{npcID=36612,g={
 ach(4610,{
-crit(13016,{achID=4603,awp=30002,id=6})}),
+crit(13016,{achID=4603,id=6})}),
 p(1963,{awp=70100,b=1,itemID=142094,npcID=115146,spellID=229101,g={
 crit(34598,{achID=11320,id=11})}}),
 s(24709,50415,{b=1,f=22,lvl=30,modID=1}),
@@ -16529,7 +16529,7 @@ i(49967,{f=52,lvl=30,modID=1}),
 crit(12945,{achID=4604})}}),
 e(1625,{npcID=36855,g={
 ach(4611,{
-crit(13017,{achID=4603,awp=30002,id=7})}),
+crit(13017,{achID=4603,id=7})}),
 s(24475,49992,{b=1,f=28,lvl=30,modID=1,spellID=71845}),
 s(24468,49982,{b=1,f=20,lvl=30,modID=1,spellID=71880}),
 s(24505,50034,{b=1,f=32,lvl=30,modID=1,spellID=71835}),
@@ -16548,7 +16548,7 @@ i(49990,{b=1,f=52,lvl=30,modID=1}),
 crit(12948,{achID=4604})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4612,{
-crit(13018,{achID=4603,awp=30002,id=8})}),
+crit(13018,{achID=4603,id=8})}),
 s(24706,50411,{b=1,f=21,lvl=30,modID=1}),
 s(24486,50006,{b=1,f=4,lvl=30,modID=1}),
 i(50005,{b=1,f=51,lvl=30,modID=1}),
@@ -16567,7 +16567,7 @@ i(50352,{b=1,f=53,lvl=30,modID=1,spellID=71634}),
 crit(12947,{achID=4604})}})),
 e(1628,{npcID=37813,g={
 ach(4613,{
-crit(13019,{achID=4603,awp=30002,id=9})}),
+crit(13019,{achID=4603,id=9})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
 i(52025,{b=2,c={4,6,8,11},lvl=30}),
@@ -16588,7 +16588,7 @@ crit(12959,{achID=4608,id=3})}),
 e(1629,{npcID=36626,g={
 i(50226,{b=1,c={1,2,6},description="This can drop from Festergut on 25-Man Normal or Heroic.",modID=1}),
 ach(4615,{
-crit(13021,{achID=4603,awp=30002,id=11})}),
+crit(13021,{achID=4603,id=11})}),
 s(24511,50040,{b=1,f=28,lvl=30,modID=1}),
 s(24506,50035,{b=1,f=34,lvl=30,modID=1,spellID=309563}),
 s(24526,50060,{b=1,f=7,lvl=30,modID=1}),
@@ -16609,7 +16609,7 @@ crit(12949,{achID=4605})}}),
 e(1630,{npcID=36627,g={
 i(50231,{b=1,c={1,2,6},description="This can drop from Rotface on 25-Man Normal or Heroic.",modID=1}),
 ach(4614,{
-crit(13020,{achID=4603,awp=30002,id=10})}),
+crit(13020,{achID=4603,id=10})}),
 s(24493,50016,{b=1,f=20,lvl=30,modID=1}),
 s(24501,50028,{b=1,f=23,lvl=30,modID=1,spellID=71865}),
 s(24504,50033,{b=1,f=27,lvl=30,modID=1}),
@@ -16628,7 +16628,7 @@ i(50353,{b=1,f=53,lvl=30,modID=1,spellID=71602}),
 crit(12950,{achID=4605})}}),
 e(1631,{npcID=36678,g={
 ach(4616,{
-crit(13022,{achID=4603,awp=30002,id=12})}),
+crit(13022,{achID=4603,id=12})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
 i(52025,{b=2,c={4,6,8,11},lvl=30}),
@@ -16645,7 +16645,7 @@ ach(4606,{
 crit(12960,{achID=4608,id=4})}),
 e(1632,{crs={37970,37972,37973},g={
 ach(4617,{
-crit(13023,{achID=4603,awp=30002,id=13})}),
+crit(13023,{achID=4603,id=13})}),
 s(24452,49919,{b=1,f=24,lvl=30,modID=1}),
 s(24603,50184,{b=1,f=34,lvl=30,modID=1}),
 s(24595,50173,{b=1,f=1,lvl=30,modID=1}),
@@ -16666,7 +16666,7 @@ e(1633,{npcID=37955,g={
 ach(4618,{
 crit(13012,{achID=4618}),
 crit(13013,{achID=4618}),
-crit(13024,{achID=4603,awp=30002,id=14})}),
+crit(13024,{achID=4603,id=14})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
 i(52025,{b=2,c={4,6,8,11},lvl=30}),
@@ -16682,7 +16682,7 @@ ach(4607,{
 crit(12958,{achID=4608,id=5})}),
 e(1634,{npcID=36789,g={
 ach(4619,{
-crit(13025,{achID=4603,awp=30002,id=15})}),
+crit(13025,{achID=4603,id=15})}),
 ill(5871,{awp=70003,b=1,c={7},itemID=138832,questID=42941}),
 s(24602,50183,{b=1,f=20,lvl=30,modID=1}),
 s(24734,50472,{f=27,lvl=30,modID=1}),
@@ -16702,7 +16702,7 @@ i(50186,{b=1,f=52,lvl=30,modID=1}),
 crit(12954,{achID=4607})}}),
 e(1635,{npcID=36853,g={
 ach(4620,{
-crit(13026,{achID=4603,awp=30002,id=16})}),
+crit(13026,{achID=4603,id=16})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
 i(52025,{b=2,c={4,6,8,11},lvl=30}),
@@ -16716,9 +16716,9 @@ i(50361,{b=1,f=53,lvl=30,modID=1,spellID=71635}),
 crit(12955,{achID=4607})}}),
 e(1636,{npcID=36597,g={
 ach(4621,{
-crit(13027,{achID=4603,awp=30002,id=17})}),
+crit(13027,{achID=4603,id=17})}),
 ach(4622,{
-crit(13028,{achID=4603,awp=30002,id=18})}),
+crit(13028,{achID=4603,id=18})}),
 ach(4597,{
 title(140),
 crit(12957,{achID=4608,id=6})}),
@@ -16738,19 +16738,19 @@ s(24480,49997,{b=1,f=23,lvl=30,modID=1}),
 s(24718,50428,{b=1,f=23,lvl=30,modID=1}),
 s(24467,49981,{b=1,f=33,lvl=30,modID=1}),
 cq(38092,{awp=60100,b=1,itemID=122229,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181607,g={
-crit(27757,{achID=10015,awp=60003,id=21,r=2}),
-crit(27757,{achID=10016,awp=60003,id=21,r=1})}}),
+crit(27757,{achID=10015,id=21,r=2}),
+crit(27757,{achID=10016,id=21,r=1})}}),
 i(139547,{awp=70003,b=1,c={6},f=55,modID=1,sourceQuests={38990},spellID=220651})}})})}),
 d(6,{
 h(-19,{crs={36597,36612,36626,36627,36678,36789,36853,36855,36939,36948,37813,37955,37970},g={
 i(50274,{b=1,modID=1})}}),
 h(-368,{
 ach(4632,{
-crit(13075,{achID=4603,awp=30002,id=2}),
+crit(13075,{achID=4603,id=2}),
 crit(13075,{achID=4637,id=2})}),
 e(1624,{npcID=36612,g={
 ach(4610,{
-crit(13016,{achID=4603,awp=30002,id=6})}),
+crit(13016,{achID=4603,id=6})}),
 p(1963,{awp=70100,b=1,itemID=142094,npcID=115146,spellID=229101,g={
 crit(34598,{achID=11320,id=11})}}),
 s(24816,50709,{b=1,f=22,lvl=30,modID=1}),
@@ -16771,7 +16771,7 @@ i(50610,{b=1,f=52,lvl=30,modID=1}),
 crit(13091,{achID=4632})}}),
 e(1625,{npcID=36855,g={
 ach(4611,{
-crit(13017,{achID=4603,awp=30002,id=7})}),
+crit(13017,{achID=4603,id=7})}),
 s(24767,50648,{b=1,f=28,lvl=30,modID=1,spellID=71846}),
 s(24763,50641,{b=1,f=20,lvl=30,modID=1,spellID=71892}),
 s(24760,50638,{b=1,f=32,lvl=30,modID=1,spellID=71836}),
@@ -16790,7 +16790,7 @@ i(50644,{b=1,f=52,lvl=30,modID=1}),
 crit(13106,{achID=4632})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4612,{
-crit(13018,{achID=4603,awp=30002,id=8})}),
+crit(13018,{achID=4603,id=8})}),
 s(24773,50654,{b=1,f=21,lvl=30,modID=1}),
 s(24778,50661,{b=1,f=4,lvl=30,modID=1}),
 i(50658,{b=1,f=51,lvl=30,modID=1}),
@@ -16809,7 +16809,7 @@ i(50349,{b=1,f=53,lvl=30,modID=1,spellID=71640}),
 crit(13111,{achID=4632})}})),
 e(1628,{npcID=37813,g={
 ach(4613,{
-crit(13019,{achID=4603,awp=30002,id=9})}),
+crit(13019,{achID=4603,id=9})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52030,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
@@ -16829,12 +16829,12 @@ n(37904,{description="After you kill Deathbringer Saurfang, this vendor shows up
 i(49926,{modID=1})}})}),
 h(-369,{
 ach(4633,{
-crit(13076,{achID=4603,awp=30002,id=3}),
+crit(13076,{achID=4603,id=3}),
 crit(13076,{achID=4637,id=3})}),
 e(1629,{npcID=36626,g={
 i(50226,{b=1,c={1,2,6},description="This can drop from Festergut on 25-Man Normal or Heroic.",modID=1}),
 ach(4615,{
-crit(13021,{achID=4603,awp=30002,id=11})}),
+crit(13021,{achID=4603,id=11})}),
 s(24804,50695,{b=1,f=28,lvl=30,modID=1}),
 s(24802,50692,{b=1,f=34,lvl=30,modID=1,spellID=309563}),
 s(24809,50701,{b=1,f=7,lvl=30,modID=1}),
@@ -16855,7 +16855,7 @@ crit(13117,{achID=4633})}}),
 e(1630,{npcID=36627,g={
 i(50231,{b=1,c={1,2,6},description="This can drop from Rotface on 25-Man Normal or Heroic.",modID=1}),
 ach(4614,{
-crit(13020,{achID=4603,awp=30002,id=10})}),
+crit(13020,{achID=4603,id=10})}),
 s(24789,50676,{b=1,f=20,lvl=30,modID=1}),
 s(24795,50685,{b=1,f=23,lvl=30,modID=1,spellID=71868}),
 s(24794,50684,{b=1,f=27,lvl=30,modID=1}),
@@ -16874,7 +16874,7 @@ i(50348,{b=1,f=53,lvl=30,modID=1,spellID=71645}),
 crit(13120,{achID=4633})}}),
 e(1631,{npcID=36678,g={
 ach(4616,{
-crit(13022,{achID=4603,awp=30002,id=12})}),
+crit(13022,{achID=4603,id=12})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52030,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
@@ -16891,11 +16891,11 @@ i(50706,{b=1,f=53,lvl=30,modID=1,spellID=71545}),
 crit(13129,{achID=4633})}})}),
 h(-370,{
 ach(4634,{
-crit(13077,{achID=4603,awp=30002,id=4}),
+crit(13077,{achID=4603,id=4}),
 crit(13077,{achID=4637,id=4})}),
 e(1632,{crs={37970,37972,37973},g={
 ach(4617,{
-crit(13023,{achID=4603,awp=30002,id=13})}),
+crit(13023,{achID=4603,id=13})}),
 s(24736,50603,{b=1,f=24,lvl=30,modID=1}),
 s(24817,50710,{b=1,f=34,lvl=30,modID=1}),
 s(24825,50719,{b=1,f=1,lvl=30,modID=1}),
@@ -16916,7 +16916,7 @@ e(1633,{npcID=37955,g={
 ach(4618,{
 crit(13012,{achID=4618}),
 crit(13013,{achID=4618}),
-crit(13024,{achID=4603,awp=30002,id=14})}),
+crit(13024,{achID=4603,id=14})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52030,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
@@ -16932,11 +16932,11 @@ i(50726,{b=1,f=53,lvl=30,modID=1,spellID=71646}),
 crit(13132,{achID=4634})}})}),
 h(-371,{
 ach(4635,{
-crit(13078,{achID=4603,awp=30002,id=5}),
+crit(13078,{achID=4603,id=5}),
 crit(13078,{achID=4637,id=5})}),
 e(1634,{npcID=36789,g={
 ach(4619,{
-crit(13025,{achID=4603,awp=30002,id=15})}),
+crit(13025,{achID=4603,id=15})}),
 ill(5871,{awp=70003,b=1,c={7},itemID=138832,questID=42941}),
 s(24749,50621,{b=1,f=20,lvl=30,modID=1}),
 s(24757,50631,{b=1,f=27,lvl=30,modID=1}),
@@ -16956,7 +16956,7 @@ i(50618,{b=1,f=52,lvl=30,modID=1}),
 crit(13126,{achID=4635})}}),
 e(1635,{npcID=36853,g={
 ach(4620,{
-crit(13026,{achID=4603,awp=30002,id=16})}),
+crit(13026,{achID=4603,id=16})}),
 i(52027,{b=2,c={2,5,9},lvl=30}),
 i(52030,{b=2,c={2,5,9},lvl=30}),
 i(52026,{b=2,c={1,3,7},lvl=30}),
@@ -16973,9 +16973,9 @@ i(50364,{b=1,f=53,lvl=30,modID=1,spellID=71638}),
 crit(13135,{achID=4635})}}),
 e(1636,{npcID=36597,g={
 ach(4621,{
-crit(13027,{achID=4603,awp=30002,id=17})}),
+crit(13027,{achID=4603,id=17})}),
 ach(4622,{
-crit(13028,{achID=4603,awp=30002,id=18})}),
+crit(13028,{achID=4603,id=18})}),
 gach(5023,{awp=40003}),
 ach(4584,{
 title(138),
@@ -17001,8 +17001,8 @@ s(24840,50738,{b=1,f=23,lvl=30,modID=1}),
 s(24836,50734,{b=1,f=23,lvl=30,modID=1}),
 s(24835,50733,{b=1,f=33,lvl=30,modID=1}),
 cq(38092,{awp=60100,b=1,itemID=122229,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181607,g={
-crit(27757,{achID=10015,awp=60003,id=21,r=2}),
-crit(27757,{achID=10016,awp=60003,id=21,r=1})}}),
+crit(27757,{achID=10015,id=21,r=2}),
+crit(27757,{achID=10016,id=21,r=1})}}),
 i(139547,{awp=70003,b=1,c={6},f=55,modID=1,sourceQuests={38990},spellID=220651})}})})})}}),
 inst(761,{awp=30305,coords={
 [115]={{61.2,52.7}}},isLockoutShared=1,isRaid=1,mapID=200,savedInstanceID=724,g={
@@ -17350,7 +17350,7 @@ s(19635,40755,{awp=30002,b=1,f=7}),
 s(19637,40757,{awp=30002,b=1,f=5}),
 s(19636,40756,{awp=30002,b=1,f=6}),
 s(19638,40758,{awp=30002,b=1,f=4}),
-crit(5804,{achID=1596,awp=30002,id=1})}}),
+crit(5804,{achID=1596,id=1})}}),
 q(13129,{cost={{"i",43214,1}},crs={26631},lvl=15,qgs={26664,55677},qis={43215},g={
 s(21464,44368,{b=1,f=6}),
 s(21465,44369,{b=1,f=7}),
@@ -17724,8 +17724,8 @@ s(17521,36992,{b=1,f=6,lvl=29,modID=1}),
 s(18065,37854,{b=1,f=4,lvl=30,modID=1}),
 i(36993,{b=1,f=53,lvl=29,modID=1,spellID=60214}),
 cq(38098,{awp=60100,b=1,itemID=122237,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181657,g={
-crit(27763,{achID=10015,awp=60003,id=27,r=2}),
-crit(27763,{achID=10016,awp=60003,id=27,r=1})}}),
+crit(27763,{achID=10015,id=27,r=2}),
+crit(27763,{achID=10016,id=27,r=1})}}),
 crit(5458,{achID=486,id=5})}})}),
 d(2,{
 h(-63,{
@@ -17789,8 +17789,8 @@ s(17521,36992,{b=1,f=6,lvl=29,modID=2}),
 s(18065,37854,{b=1,f=4,lvl=30,modID=2}),
 i(36993,{b=1,f=53,lvl=29,modID=2,spellID=60214}),
 cq(38098,{awp=60100,b=1,itemID=122237,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181657,g={
-crit(27763,{achID=10015,awp=60003,id=27,r=2}),
-crit(27763,{achID=10016,awp=60003,id=27,r=1})}}),
+crit(27763,{achID=10015,id=27,r=2}),
+crit(27763,{achID=10016,id=27,r=1})}}),
 crit(5616,{achID=497,id=5}),
 crit(5616,{achID=1658,id=9})}})}),
 d(24,{sym={{"sub","tw_instance",275}}})}}),
@@ -19633,7 +19633,7 @@ i(73535,{b=1,f=53,lvl=32,r=2,spellID=42292}),
 i(73534,{b=1,f=53,lvl=32,r=1,spellID=42292}),
 i(73536,{b=1,f=53,lvl=32,r=2,spellID=42292}),
 i(73537,{b=1,f=53,lvl=32,r=1,spellID=42292}),
-gcat(18479,{achID=5425,awp=40003})}}),
+gcat(18479,{achID=5425})}}),
 e(140,{awp=40200,npcID=52363,g={
 ach(6045),
 i(70382,{b=1,c={1,2,6},f=51,lvl=32}),
@@ -19787,12 +19787,12 @@ i(70391,{b=1,f=53,lvl=32,r=2,spellID=42292}),
 i(70394,{b=1,f=53,lvl=32,r=1,spellID=42292}),
 i(70392,{b=1,f=53,lvl=32,r=2,spellID=42292}),
 i(70395,{b=1,f=53,lvl=32,r=1,spellID=42292}),
-gcat(18478,{achID=5425,awp=40003})}})}}),
+gcat(18478,{achID=5425})}})}}),
 inst(73,{awp=40003,coords={
 [13]={{47.54,68.93}}},isLockoutShared=1,isRaid=1,maps={285,286},savedInstanceID=669,g={
 h(-12,{
 ach(4842,{
-crit(16059,{achID=5506,awp=40000,id=11})}),
+crit(16059,{achID=5506,id=11})}),
 gach(4985)}),
 h(-63,{
 s(29689,59466,{f=3,lvl=32}),
@@ -19810,7 +19810,7 @@ i(59461,{f=53,lvl=32,spellID=91836})}),
 d(115,{difficulties={1,2,3,4,5,6},g={
 e(170,{npcID=41570,g={
 ach(5306,{
-crit(15265,{achID=4853,awp=40000,id=14})}),
+crit(15265,{achID=4853,id=14})}),
 crit(13537,{achID=4842,id=2})}}),
 e(169,{npcID=42179,g={
 ach(5307,{
@@ -19818,34 +19818,34 @@ crit(15651,{achID=5307}),
 crit(15652,{achID=5307}),
 crit(15653,{achID=5307}),
 crit(15654,{achID=5307}),
-crit(15266,{achID=4853,awp=40000,id=15})}),
+crit(15266,{achID=4853,id=15})}),
 p(2078,{awp=70300,b=1,itemID=152966,npcID=127850,spellID=253788,g={
 crit(37670,{achID=12079,id=1})}}),
 crit(13538,{achID=4842,id=3})}}),
 e(173,{npcID=41378,g={
 ach(5310,{
-crit(15269,{achID=4853,awp=40000,id=18})}),
+crit(15269,{achID=4853,id=18})}),
 title(147,{collectible=false}),
 p(2079,{awp=70300,b=1,itemID=152967,npcID=127852,spellID=253790,g={
 crit(37671,{achID=12079,id=2})}}),
 crit(13539,{achID=4842,id=4})}}),
 e(171,{npcID=41442,g={
 ach(5308,{
-crit(15267,{achID=4853,awp=40000,id=16})}),
+crit(15267,{achID=4853,id=16})}),
 crit(13541,{achID=4842,id=5})}}),
 e(172,{npcID=43296,g={
 ach(5309,{
-crit(15268,{achID=4853,awp=40000,id=17})}),
+crit(15268,{achID=4853,id=17})}),
 crit(13540,{achID=4842,id=6})}}),
 e(174,{npcID=41376,g={
 ach(4849,{
-crit(15270,{achID=4853,awp=40000,id=19})}),
+crit(15270,{achID=4853,id=19})}),
 ill(4097,{awp=70003,b=1,itemID=138802,lvl=30,questID=42898}),
 p(2080,{awp=70300,b=1,itemID=152968,npcID=127853,spellID=253799,g={
 crit(37672,{achID=12079,id=3})}}),
 cq(38063,{awp=60100,b=1,itemID=122195,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=180698,g={
-crit(27710,{achID=10015,awp=60003,id=3,r=2}),
-crit(27710,{achID=10016,awp=60003,id=3,r=1})}}),
+crit(27710,{achID=10015,id=3,r=2}),
+crit(27710,{achID=10016,id=3,r=1})}}),
 crit(13542,{achID=4842,id=7})}})}}),
 d(1,{difficulties={3,4},g={
 e(170,{npcID=41570,g={
@@ -19933,7 +19933,7 @@ i(59441,{b=1,f=53,lvl=32,spellID=92125})}})}}),
 d(2,{difficulties={5,6},g={
 e(170,{npcID=41570,g={
 ach(5094,{
-crit(15676,{achID=4853,awp=40000,id=2})}),
+crit(15676,{achID=4853,id=2})}),
 i(67429,{b=2,c={2,5,9},lvl=32,spellID=238182}),
 i(67430,{b=2,c={1,3,7},lvl=32,spellID=238182}),
 i(67431,{b=2,c={4,6,8,11},lvl=32,spellID=238182}),
@@ -19951,7 +19951,7 @@ s(32643,65051,{b=1,f=7,lvl=32}),
 i(65048,{b=1,f=53,lvl=32,spellID=92356})}}),
 e(169,{npcID=42179,g={
 ach(5107,{
-crit(15677,{achID=4853,awp=40000,id=3})}),
+crit(15677,{achID=4853,id=3})}),
 s(32668,65081,{b=1,f=20,lvl=32}),
 s(32664,65077,{b=1,f=4,lvl=32}),
 s(32665,65078,{b=1,f=5,lvl=32}),
@@ -19966,7 +19966,7 @@ i(65082,{b=1,f=52,lvl=32}),
 i(65076,{b=1,f=52,lvl=32})}}),
 e(173,{npcID=41378,g={
 ach(5108,{
-crit(15678,{achID=4853,awp=40000,id=4})}),
+crit(15678,{achID=4853,id=4})}),
 i(67428,{b=2,c={2,5,9},lvl=32,spellID=238263}),
 i(67427,{b=2,c={1,3,7},lvl=32,spellID=238263}),
 i(67426,{b=2,c={4,6,8,11},lvl=32,spellID=238263}),
@@ -19984,7 +19984,7 @@ s(32626,65033,{b=1,f=6,lvl=32}),
 i(65029,{b=1,f=53,lvl=32,spellID=92331})}}),
 e(171,{npcID=41442,g={
 ach(5109,{
-crit(15679,{achID=4853,awp=40000,id=5})}),
+crit(15679,{achID=4853,id=5})}),
 s(32649,65058,{b=1,f=32,lvl=32}),
 s(32644,65052,{b=1,f=8,lvl=32}),
 s(32656,65066,{b=1,f=5,lvl=32}),
@@ -19999,7 +19999,7 @@ s(32653,65063,{b=1,f=6,lvl=32}),
 i(65053,{b=1,f=53,lvl=32,spellID=92319})}}),
 e(172,{npcID=43296,g={
 ach(5115,{
-crit(15680,{achID=4853,awp=40000,id=6})}),
+crit(15680,{achID=4853,id=6})}),
 s(32654,65064,{b=1,f=27,lvl=32}),
 s(32657,65067,{b=1,f=7,lvl=32}),
 s(32658,65068,{b=1,f=6,lvl=32}),
@@ -20015,7 +20015,7 @@ i(65072,{b=1,f=53,lvl=32,spellID=92346})}}),
 e(174,{npcID=41376,g={
 ach(5116,{
 title(187),
-crit(15681,{achID=4853,awp=40000,id=7})}),
+crit(15681,{achID=4853,id=7})}),
 gach(5462),
 gach(5409,{u=2}),
 i(65001,{b=2,c={2,5,9},lvl=32,spellID=238183}),
@@ -20038,7 +20038,7 @@ inst(72,{awp=40003,coords={
 [241]={{34.2,77.7}}},isLockoutShared=1,isRaid=1,mapID=294,maps={295,296},savedInstanceID=671,g={
 h(-12,{
 ach(4850,{
-crit(16061,{achID=5506,awp=40000,id=13})}),
+crit(16061,{achID=5506,id=13})}),
 gach(4986),
 ach(11754,{awp=70200,maps={285,286},g={
 crit(36415,{achID=11761,id=36})}})}),
@@ -20054,25 +20054,25 @@ i(59520,{f=53,lvl=32,spellID=92114})}),
 d(115,{difficulties={1,2,3,4,5,6},g={
 e(156,{npcID=44600,g={
 ach(5300,{
-crit(15271,{achID=4853,awp=40000,id=20})}),
+crit(15271,{achID=4853,id=20})}),
 crit(13577,{achID=4850,id=2})}}),
 e(157,{crs={45992,45993},g={
 ach(4852,{
 crit(13576,{achID=4852}),
 crit(16015,{achID=4852,providers={{"n",49864}}}),
-crit(15272,{achID=4853,awp=40000,id=21})}),
+crit(15272,{achID=4853,id=21})}),
 p(2081,{awp=70300,b=1,itemID=152969,npcID=127857,spellID=253805,g={
 crit(37673,{achID=12079,id=4})}}),
 crit(13576,{achID=4850,id=3})}}),
 e(158,{crs={43686,43687,43688,43689,43735},g={
 ach(5311,{
-crit(15273,{achID=4853,awp=40000,id=22})}),
+crit(15273,{achID=4853,id=22})}),
 p(2082,{awp=70300,b=1,itemID=152970,npcID=127858,spellID=253809,g={
 crit(37674,{achID=12079,id=5})}}),
 crit(13578,{achID=4850,id=4})}}),
 e(167,{npcID=43324,g={
 ach(5312,{
-crit(15274,{achID=4853,awp=40000,id=23})}),
+crit(15274,{achID=4853,id=23})}),
 p(2083,{awp=70300,b=1,itemID=152972,npcID=127859,spellID=253813,g={
 crit(37675,{achID=12079,id=6})}}),
 cq(59032,{awp=80300,b=1,itemID=175159,races={35},spellID=319246}),
@@ -20137,7 +20137,7 @@ i(59500,{b=1,f=53,lvl=32,spellID=91186})}})}}),
 d(2,{difficulties={5,6},g={
 e(156,{npcID=44600,g={
 ach(5118,{
-crit(15682,{achID=4853,awp=40000,id=8})}),
+crit(15682,{achID=4853,id=8})}),
 i(67423,{b=2,c={2,5,9},lvl=32,spellID=238184}),
 i(67424,{b=2,c={1,3,7},lvl=32,spellID=238184}),
 i(67425,{b=2,c={4,6,8,11},lvl=32,spellID=238184}),
@@ -20155,7 +20155,7 @@ s(32715,65144,{b=1,f=5,lvl=32}),
 i(65140,{b=1,f=53,lvl=32,spellID=92353})}}),
 e(157,{crs={45992,45993},g={
 ach(5117,{
-crit(15683,{achID=4853,awp=40000,id=9})}),
+crit(15683,{achID=4853,id=9})}),
 s(32674,65091,{b=1,f=20,lvl=32}),
 s(32677,65094,{b=1,f=25,lvl=32}),
 s(32678,65095,{b=1,f=33,lvl=32}),
@@ -20170,7 +20170,7 @@ i(65105,{b=1,f=53,lvl=32,spellID=92322}),
 i(65109,{b=1,f=53,lvl=32,spellID=92357})}}),
 e(158,{crs={43686,43687,43688,43689,43735},g={
 ach(5119,{
-crit(15684,{achID=4853,awp=40000,id=10})}),
+crit(15684,{achID=4853,id=10})}),
 s(32688,65111,{b=1,f=1,lvl=32}),
 s(32695,65120,{b=1,f=6,lvl=32}),
 s(32691,65115,{b=1,f=7,lvl=32}),
@@ -20185,7 +20185,7 @@ i(65118,{b=1,f=53,lvl=32,spellID=92343}),
 i(65110,{b=1,f=53,lvl=32,spellID=92328})}}),
 e(167,{npcID=43324,g={
 ach(5120,{
-crit(15685,{achID=4853,awp=40000,id=11})}),
+crit(15685,{achID=4853,id=11})}),
 gach(5461),
 i(65088,{b=2,c={2,5,9},lvl=32,spellID=238185}),
 i(65087,{b=2,c={1,3,7},lvl=32,spellID=238185}),
@@ -20226,18 +20226,18 @@ inst(74,{awp=40003,coords={
 [249]={{38.37,80.63}}},isLockoutShared=1,isRaid=1,mapID=328,savedInstanceID=754,g={
 h(-12,{
 ach(4851,{
-crit(16060,{achID=5506,awp=40000,id=12})}),
+crit(16060,{achID=5506,id=12})}),
 gach(4987)}),
 d(115,{difficulties={1,2,3,4,5,6},g={
 e(154,{npcID=45871,g={
 ach(5304,{
-crit(15276,{achID=4853,awp=40000,id=24})}),
+crit(15276,{achID=4853,id=24})}),
 p(2085,{awp=70300,b=1,itemID=152974,npcID=127863,spellID=253818,g={
 crit(37677,{achID=12079,id=7})}}),
 crit(14097,{achID=4851,id=2})}}),
 e(155,{npcID=46753,g={
 ach(5305,{
-crit(15277,{achID=4853,awp=40000,id=25})}),
+crit(15277,{achID=4853,id=25})}),
 ill(5875,{awp=70003,b=1,c={7},itemID=138836,questID=42945}),
 mnt(88744,{b=1,itemID=63041,lvl=10}),
 p(2084,{awp=70300,b=1,itemID=152973,npcID=127862,spellID=253816,g={
@@ -20286,7 +20286,7 @@ i(63499,{b=1,f=52,lvl=32})}})}}),
 d(2,{difficulties={5,6},g={
 e(154,{npcID=45871,g={
 ach(5122,{
-crit(15686,{achID=4853,awp=40000,id=12})}),
+crit(15686,{achID=4853,id=12})}),
 s(32911,65374,{b=1,f=5,lvl=32}),
 s(32914,65377,{b=1,f=6,lvl=32}),
 s(32908,65369,{b=1,f=7,lvl=32}),
@@ -20301,7 +20301,7 @@ i(65373,{b=1,f=52,lvl=32})}}),
 e(155,{npcID=46753,g={
 ach(5123,{
 title(151),
-crit(15687,{achID=4853,awp=40000,id=13})}),
+crit(15687,{achID=4853,id=13})}),
 gach(5463),
 gach(5410,{u=2}),
 i(65001,{b=2,c={2,5,9},lvl=32,spellID=238183}),
@@ -20972,8 +20972,8 @@ i(77974,{b=1,c={3,4,7,10,11},f=53,lvl=32,spellID=109718}),
 p(2091,{awp=70300,b=1,itemID=152980,npcID=127953,spellID=253927,g={
 crit(37683,{achID=12079,id=14})}}),
 cq(38066,{awp=60100,b=1,itemID=122198,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181280,g={
-crit(27740,{achID=10015,awp=60003,id=4,r=2}),
-crit(27740,{achID=10016,awp=60003,id=4,r=1})}})}}),
+crit(27740,{achID=10015,id=4,r=2}),
+crit(27740,{achID=10016,id=4,r=1})}})}}),
 e(333,{npcID=56173,g={
 s(39859,78482,{b=1,f=29,lvl=32,spellID=109862}),
 s(39864,78487,{b=1,f=26,lvl=32,spellID=109839}),
@@ -20988,8 +20988,8 @@ i(89810,{awp=50004,b=1}),
 p(2092,{awp=70300,b=1,itemID=152981,npcID=127954,spellID=253928,g={
 crit(37684,{achID=12079,id=15})}}),
 cq(38066,{awp=60100,b=1,itemID=122198,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181280,g={
-crit(27740,{achID=10015,awp=60003,id=4,r=2}),
-crit(27740,{achID=10016,awp=60003,id=4,r=1})}})}})}})}}),
+crit(27740,{achID=10015,id=4,r=2}),
+crit(27740,{achID=10016,id=4,r=1})}})}})}})}}),
 d(115,{difficulties={1,2,3,4,5,6},g={
 h(-19,{crs={55265,55294,55308,55312,55689,56427},g={
 i(71998,{description="Drops commonly from Dragon Soul bosses."}),
@@ -21045,8 +21045,8 @@ crit(18588,{achID=6169,id=12})}),
 p(2091,{awp=70300,b=1,itemID=152980,npcID=127953,spellID=253927,g={
 crit(37683,{achID=12079,id=14})}}),
 cq(38066,{awp=60100,b=1,itemID=122198,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181280,g={
-crit(27740,{achID=10015,awp=60003,id=4,r=2}),
-crit(27740,{achID=10016,awp=60003,id=4,r=1})}})}}),
+crit(27740,{achID=10015,id=4,r=2}),
+crit(27740,{achID=10016,id=4,r=1})}})}}),
 e(333,{npcID=56173,g={
 ach(6180,{description="Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlexstrasza on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alexstrasza in time. Make sure the aspect is properly assaulted to get credit.",g={
 crit(18658,{achID=6180,providers={{"n",56099}}}),
@@ -21061,8 +21061,8 @@ i(78352),
 p(2092,{awp=70300,b=1,itemID=152981,npcID=127954,spellID=253928,g={
 crit(37684,{achID=12079,id=15})}}),
 cq(38066,{awp=60100,b=1,itemID=122198,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181280,g={
-crit(27740,{achID=10015,awp=60003,id=4,r=2}),
-crit(27740,{achID=10016,awp=60003,id=4,r=1})}})}})}}),
+crit(27740,{achID=10015,id=4,r=2}),
+crit(27740,{achID=10016,id=4,r=1})}})}})}}),
 d(1,{difficulties={3,4},g={
 h(-19,{crs={55265,55294,55308,55312,55689,56427},g={
 i(77230,{b=1,f=52,lvl=32}),
@@ -21427,19 +21427,19 @@ i(56320,{b=1,f=53,lvl=32,spellID=90888})}})}}),
 d(2,{
 e(105,{npcID=39665,g={
 ach(5281,{
-crit(13555,{achID=4845,awp=40000,id=2})})}}),
+crit(13555,{achID=4845,id=2})})}}),
 e(106,{npcID=39679,g={
 ach(5282,{
-crit(15247,{achID=4845,awp=40000,id=3})})}}),
+crit(15247,{achID=4845,id=3})})}}),
 e(107,{npcID=39698,g={
 ach(5283,{
-crit(15248,{achID=4845,awp=40000,id=4})})}}),
+crit(15248,{achID=4845,id=4})})}}),
 e(109,{npcID=39705,g={
 ach(5284,{
-crit(15249,{achID=4845,awp=40000,id=5})}),
+crit(15249,{achID=4845,id=5})}),
 ach(5060,{
-crit(13550,{achID=4844,awp=40000,id=2}),
-crit(13550,{achID=5506,awp=40000,id=2})}),
+crit(13550,{achID=4844,id=2}),
+crit(13550,{achID=5506,id=2})}),
 gach(5134)}})}),
 d(24,{sym={{"sub","tw_instance",66}}})}}),
 inst(184,{awp=40300,coords={
@@ -21600,10 +21600,10 @@ e(131,{npcID=39625,g={
 ach(5297,{rwp=110100,u=2})}}),
 e(134,{npcID=40484,g={
 ach(5298,{
-crit(15263,{achID=4845,awp=40000,id=25})}),
+crit(15263,{achID=4845,id=25})}),
 ach(5062,{
-crit(13552,{achID=4844,awp=40000,id=6}),
-crit(13552,{achID=5506,awp=40000,id=6})}),
+crit(13552,{achID=4844,id=6}),
+crit(13552,{achID=5506,id=6})}),
 gach(5138)}})})}}),
 inst(70,{awp=40003,coords={
 [249]={{71.81,52.16}}},mapID=297,maps={298,299},savedInstanceID=644,g={
@@ -21721,22 +21721,22 @@ s(27730,56430,{b=1,f=25,lvl=32})}})}}),
 d(2,{
 h(-12,{
 ach(5296,{
-crit(15261,{achID=4845,awp=40000,id=15})})}),
+crit(15261,{achID=4845,id=15})})}),
 h(-63,{
 s(27735,56438,{f=1,lvl=31,modID=2,u=1})}),
 e(124,{npcID=39425,g={
 ach(5293,{
-crit(15258,{achID=4845,awp=40000,id=12})})}}),
+crit(15258,{achID=4845,id=12})})}}),
 e(125,{npcID=39428,g={
 ach(5294,{
-crit(15259,{achID=4845,awp=40000,id=13})})}}),
+crit(15259,{achID=4845,id=13})})}}),
 e(130,{npcID=39378,g={
 ach(5065,{
-crit(13553,{achID=4844,awp=40000,id=7}),
-crit(13553,{achID=5506,awp=40000,id=7})}),
+crit(13553,{achID=4844,id=7}),
+crit(13553,{achID=5506,id=7})}),
 gach(5139),
 ach(5295,{
-crit(15260,{achID=4845,awp=40000,id=14})})}})})}}),
+crit(15260,{achID=4845,id=14})})}})})}}),
 inst(186,{awp=40300,coords={
 [71]={{64.7,49.9}},
 [75]={{66.2,29.2}}},mapID=399,maps={400},savedInstanceID=940,g={
@@ -21869,16 +21869,16 @@ s(27713,56402,{b=1,f=8,lvl=32})}})}}),
 d(2,{
 e(118,{crs={43614,49045},g={
 ach(5291,{
-crit(15256,{achID=4845,awp=40000,id=10})})}}),
+crit(15256,{achID=4845,id=10})})}}),
 e(119,{npcID=43612,g={
 ach(5290,{
-crit(15255,{achID=4845,awp=40000,id=9})})}}),
+crit(15255,{achID=4845,id=9})})}}),
 e(122,{npcID=44819,g={
 ach(5292,{
-crit(15257,{achID=4845,awp=40000,id=11})}),
+crit(15257,{achID=4845,id=11})}),
 ach(5066,{
-crit(13574,{achID=4844,awp=40000,id=8}),
-crit(13574,{achID=5506,awp=40000,id=8})}),
+crit(13574,{achID=4844,id=8}),
+crit(13574,{achID=5506,id=8})}),
 gach(5140)}})}),
 d(24,{sym={{"sub","tw_instance",69}}})}}),
 inst(67,{awp=40003,coords={
@@ -21966,11 +21966,11 @@ i(56351,{b=1,f=53,lvl=32,spellID=91140})}})}}),
 d(2,{
 e(113,{npcID=42333,g={
 ach(5063,{
-crit(13562,{achID=4844,awp=40000,id=4}),
-crit(13562,{achID=5506,awp=40000,id=4})}),
+crit(13562,{achID=4844,id=4}),
+crit(13562,{achID=5506,id=4})}),
 gach(5136),
 ach(5287,{
-crit(15252,{achID=4845,awp=40000,id=6})})}})}),
+crit(15252,{achID=4845,id=6})})}})}),
 d(24,{sym={{"sub","tw_instance",67}}})}}),
 inst(68,{awp=40003,coords={
 [249]={{76.76,84.44}}},mapID=325,savedInstanceID=657,g={
@@ -22019,7 +22019,7 @@ s(27423,55853,{b=1,f=31,lvl=30,modID=1,u=2})}})}}),
 d(102,{difficulties={1,2},g={
 h(-12,{
 ach(5289,{
-crit(22268,{achID=4845,awp=40000,id=8})})}),
+crit(22268,{achID=4845,id=8})})}),
 e(114,{npcID=43878,g={
 s(27683,56357,{b=1,f=20,lvl=32}),
 i(157601,{awp=70305,b=1,f=51,lvl=32}),
@@ -22053,11 +22053,11 @@ s(27696,56376,{b=1,f=31,lvl=32,rwp=70305,u=2})}})}}),
 d(2,{
 e(116,{npcID=43875,g={
 ach(5064,{
-crit(13568,{achID=4844,awp=40000,id=5}),
-crit(13568,{achID=5506,awp=40000,id=5})}),
+crit(13568,{achID=4844,id=5}),
+crit(13568,{achID=5506,id=5})}),
 gach(5137),
 ach(5288,{
-crit(15253,{achID=4845,awp=40000,id=7})})}})}),
+crit(15253,{achID=4845,id=7})})}})}),
 h(-68,{awp=100100,rwp=100200,u=2,g={
 i(206183,{b=1,f=51,lvl=58,u=2}),
 i(206180,{b=1,f=51,lvl=58,u=2}),
@@ -22158,8 +22158,8 @@ e(101,{npcID=40586,g={
 ach(5285,{rwp=100200,u=2})}}),
 e(104,{npcID=44566,g={
 ach(5061,{
-crit(13551,{achID=4844,awp=40000,id=3}),
-crit(13551,{achID=5506,awp=40000,id=3})}),
+crit(13551,{achID=4844,id=3}),
+crit(13551,{achID=5506,id=3})}),
 gach(5135),
 ach(5286,{rwp=100200,u=2})}})}),
 d(24,{sym={{"sub","tw_instance",65}}})}}),
@@ -22677,7 +22677,7 @@ s(35530,69621,{b=1,f=20,lvl=32,modID=2}),
 s(35532,69623,{b=1,f=5,lvl=32,modID=2}),
 s(35536,69627,{b=1,f=8,lvl=32,modID=2}),
 cq(38080,{awp=60100,b=1,itemID=122215,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,r=1,spellID=181591,g={
-crit(27773,{achID=10016,awp=60003,id=12,r=1})}}),
+crit(27773,{achID=10016,id=12,r=1})}}),
 n(52167,{description="|CFFFF0000At least one MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r\n\nIn Phase 2 their spirits will spawn and they must be pulled up to Hakkar's chains in order to break them with their ability 'Body Slam'."})}})})}})}),
 x(5,{
 h(-12,{awp=50004,g={
@@ -24985,8 +24985,8 @@ e(709,{npcID=60999,g={
 i(87210,{b=1}),
 ill(4442,{awp=70003,b=1,itemID=138805,lvl=32,questID=42906}),
 cq(38067,{awp=60100,b=1,itemID=122199,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181570,g={
-crit(27741,{achID=10015,awp=60003,id=5,r=2}),
-crit(27741,{achID=10016,awp=60003,id=5,r=1})}}),
+crit(27741,{achID=10015,id=5,r=2}),
+crit(27741,{achID=10016,id=5,r=1})}}),
 crit(19521,{achID=6689,id=4})}})}}),
 d(7,{coords={
 [390]={{83,30.6}}},crs={80633},g={
@@ -32455,8 +32455,8 @@ s(66940,116042,{b=1,f=6,lvl=40,modID=4}),
 i(116317,{b=1,f=53,lvl=40,modID=4}),
 ill(5336,{awp=70003,b=1,itemID=138809,lvl=35,questID=42910}),
 cq(38068,{awp=60100,b=1,itemID=122200,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181575,g={
-crit(27742,{achID=10015,awp=60003,id=6,r=2}),
-crit(27742,{achID=10016,awp=60003,id=6,r=1})}}),
+crit(27742,{achID=10015,id=6,r=2}),
+crit(27742,{achID=10016,id=6,r=1})}}),
 crit(24982,{achID=8992})}})}})}}),
 d(110,{difficulties={14,15,16},g={
 e(1202,{npcID=77182,g={
@@ -32495,8 +32495,8 @@ ach(8952,{
 crit(24667,{achID=8985,id=17})}),
 ill(5336,{awp=70003,b=1,itemID=138809,lvl=35,questID=42910}),
 cq(38068,{awp=60100,b=1,itemID=122200,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181575,g={
-crit(27742,{achID=10015,awp=60003,id=6,r=2}),
-crit(27742,{achID=10016,awp=60003,id=6,r=1})}})}})}}),
+crit(27742,{achID=10015,id=6,r=2}),
+crit(27742,{achID=10016,id=6,r=1})}})}})}}),
 d(14,{
 h(-45,{
 q(37029,{altQuests={37030,37031},description="The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",lvl=40,qgs={87225},g={
@@ -33424,7 +33424,7 @@ s(73062,128075,{b=1,f=4,lvl=40,modID=4}),
 s(73276,128168,{b=1,f=5,lvl=40,modID=4}),
 i(128141,{b=1,f=53,lvl=40,modID=4}),
 cq(39364,{b=1,itemID=128256,lc={1,"achID",10376},lvl=40,g={
-crit(28531,{achID=10166,awp=60003,id=9})}}),
+crit(28531,{achID=10166,id=9})}}),
 crit(28076,{achID=10023})}}),
 e(1392,{npcID=90435,g={
 s(73220,128134,{b=1,f=7,lvl=40,modID=4}),
@@ -33600,7 +33600,7 @@ e(1426,{npcID=95068,g={
 ach(10026,{crs={90018},g={
 crit(28495,{achID=10149,id=1})}}),
 cq(39364,{b=1,itemID=128256,lc={1,"achID",10376},lvl=40,g={
-crit(28531,{achID=10166,awp=60003,id=9})}})}}),
+crit(28531,{achID=10166,id=9})}})}}),
 e(1425,{npcID=90284,g={
 ach(10057,{crs={94808},description="When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at max level.",g={
 crit(28497,{achID=10149,id=2})}})}}),
@@ -37439,7 +37439,7 @@ q(45417,{coords={
 i(143757,{b=1,f=55})}}),
 q(45420,{lvl=45,qgs={106522},sourceQuests={45417},g={
 sp(233377),
-crit(36177,{achID=10877,awp=70003,id=3}),
+crit(36177,{achID=10877,id=3}),
 crit(106027,{achID=42593,awp=110205,e=447,id=3,rwp=110207,u=2})}})}),
 d(109,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
@@ -37715,37 +37715,37 @@ i(140200,{b=1,g={
 i(140199,{b=1})}})}}),
 e(1706,{npcID=102263,g={
 ach(10678,{
-crit(32348,{achID=11180,awp=70003,id=8})})}}),
+crit(32348,{achID=11180,id=8})})}}),
 e(1725,{npcID=104415,g={
 ach(10697,{
-crit(32346,{achID=11180,awp=70003,id=9})}),
+crit(32346,{achID=11180,id=9})}),
 i(142559,{b=1,lvl=45})}}),
 e(1731,{npcID=104288,g={
 ach(10742,{
-crit(32343,{achID=11180,awp=70003,id=10})})}}),
+crit(32343,{achID=11180,id=10})})}}),
 e(1751,{npcID=104881,g={
 ach(10817,{
 crit(31807,{achID=10817}),
 crit(31806,{achID=10817}),
 crit(31808,{achID=10817}),
-crit(32337,{achID=11180,awp=70003,id=11})})}}),
+crit(32337,{achID=11180,id=11})})}}),
 e(1762,{npcID=103685,g={
 ach(10704,{
-crit(32344,{achID=11180,awp=70003,id=13})})}}),
+crit(32344,{achID=11180,id=13})})}}),
 e(1713,{npcID=101002,g={
 ach(10575,{
-crit(32350,{achID=11180,awp=70003,id=14})})}}),
+crit(32350,{achID=11180,id=14})})}}),
 e(1761,{crs={104528,109038,109040,109041},g={
 ach(10754)}}),
 e(1732,{npcID=103758,g={
 ach(10851,{crs={111595},g={
-crit(32335,{achID=11180,awp=70003,id=12})}})}}),
+crit(32335,{achID=11180,id=12})}})}}),
 e(1743,{npcID=106643,g={
 ach(10699,{crs={108802},g={
-crit(32345,{achID=11180,awp=70003,id=15})}})}}),
+crit(32345,{achID=11180,id=15})}})}}),
 e(1737,{crs={104154,111022},g={
 ach(10696,{crs={105630},g={
-crit(32347,{achID=11180,awp=70003,id=16})}}),
+crit(32347,{achID=11180,id=16})}}),
 mnt(213134,{b=1,itemID=137574,lvl=10})}})}}),
 d(14,{
 h(-63,{
@@ -39468,7 +39468,7 @@ inst(946,{awp=70300,coords={
 h(-12,{
 ach(42032,{awp=110107}),
 ach(12020,{
-crit(37667,{achID=11761,awp=70200,id=45})}),
+crit(37667,{achID=11761,id=45})}),
 ach(11988,{
 crit(104518,{achID=42032,awp=110107,id=1})}),
 ach(11989,{
@@ -41405,7 +41405,7 @@ i(144466,{b=1,f=54,lvl=40,modID=2}),
 i(144467,{b=1,f=54,lvl=40,modID=2})}}),
 e(1878,{npcID=120793,g={
 ach(11700,{
-crit(39986,{achID=11298,awp=70003,id=4})}),
+crit(39986,{achID=11298,id=4})}),
 ach(11701),
 i(144478,{b=1,f=52,lvl=40,modID=2}),
 s(84605,144486,{b=1,f=5,lvl=40,modID=2}),
@@ -43046,7 +43046,7 @@ s(301471,258524,{awp=120001,b=1,f=34,lvl=78}),
 s(301470,258523,{awp=120001,b=1,f=1,lvl=78})}}),
 e(1982,{crs={122314,124729},g={
 ach(12007,{
-crit(37704,{achID=11298,awp=70003,id=4}),
+crit(37704,{achID=11298,id=4}),
 crit(37704,{achID=12083,id=8})}),
 de(926,{awp=110207,itemID=241044,spellID=1230953}),
 r(254238,{b=1,itemID=153037,lvl=10,requireSkill=773,skillID=2508}),
@@ -43678,7 +43678,7 @@ inst(1031,{awp=80001,isRaid=1,lvl=50,maps={1148,1149,1150,1151,1152,1153,1154,11
 h(-12,{
 gach(12537),
 ach(12991,{
-crit(41315,{achID=11761,awp=70200,id=46}),
+crit(41315,{achID=11761,id=46}),
 crit(41315,{achID=41209,awp=110007,id=1})}),
 ach(12806,{
 mnt(250735,{b=1,itemID=163216,lvl=10})}),
@@ -44204,7 +44204,7 @@ h(-12,{
 ach(40961,{awp=110007,g={
 crit(70193,{achID=40953,id=2})}}),
 ach(13385,{
-crit(44188,{achID=11761,awp=70200,id=49}),
+crit(44188,{achID=11761,id=49}),
 crit(44188,{achID=41209,awp=110007,id=3})}),
 ach(13315,{
 mnt(289101,{b=1,itemID=166539,lvl=10})}),
@@ -44981,7 +44981,7 @@ crit(70195,{achID=40953,id=4})}}),
 ach(13687,{
 mnt(292419,{b=1,itemID=167171,lvl=10})}),
 ach(13571,{
-crit(45993,{achID=11761,awp=70200,id=51}),
+crit(45993,{achID=11761,id=51}),
 crit(45993,{achID=41209,awp=110007,id=5})}),
 gach(13734)}),
 h(-141,{
@@ -45624,7 +45624,7 @@ inst(1180,{awp=80300,coords={
 [1530]={{41.6,45.5}}},isRaid=1,lvl=50,maps={1580,1581,1582,1590,1591,1592,1593,1594,1595,1596,1597},savedInstanceID=2217,g={
 h(-12,{
 ach(14058,{
-crit(47289,{achID=11761,awp=70200,id=52}),
+crit(47289,{achID=11761,id=52}),
 crit(47289,{achID=41209,awp=110007,id=7})}),
 ach(14146,{
 mnt(316343,{b=1,itemID=174861})}),
@@ -48184,7 +48184,7 @@ ach(14718),
 ach(14355,{
 mnt(332903,{b=1,itemID=182596})}),
 ach(14614,{
-crit(50545,{achID=11761,awp=70200,id=54})}),
+crit(50545,{achID=11761,id=54})}),
 ach(15663,{awp=90205,rwp=100002,u=2,g={
 crit(53613,{achID=15684,id=1,u=2})}}),
 ach(15664,{awp=90205,rwp=100002,u=2,g={
@@ -49049,7 +49049,7 @@ ach(15130,{
 mnt(339957,{b=1,itemID=186653})}),
 ach(15191,{c={3},providers={{"i",186414}}}),
 ach(15110,{
-crit(52376,{achID=11761,awp=70200,id=57})}),
+crit(52376,{achID=11761,id=57})}),
 ach(15667,{awp=90205,rwp=100002,u=2,g={
 crit(53614,{achID=15684,id=2,u=2})}}),
 ach(15668,{awp=90205,rwp=100002,u=2,g={
@@ -49929,7 +49929,7 @@ ach(15490),
 ach(15491,{
 mnt(359379,{b=1,itemID=187675})}),
 ach(15409,{
-crit(53144,{achID=11761,awp=70200,id=59})}),
+crit(53144,{achID=11761,id=59})}),
 ach(15681,{awp=90205,rwp=100002,u=2,g={
 crit(53726,{achID=15684,id=3,u=2})}}),
 ach(15682,{awp=90205,rwp=100002,u=2,g={
@@ -51486,8 +51486,8 @@ crit(53624,{achID=15693,id=1,u=2}),
 crit(53625,{achID=15693,id=2,u=2})}}),
 ach(15692,{awp=110205,maps={809},rwp=110207,u=2,g={
 cs(373262,{awp=90205,rwp=100000,u=2}),
-crit(53622,{achID=15692,awp=90205,id=1,rwp=100000,u=2}),
-crit(53623,{achID=15692,awp=90205,id=2,rwp=100000,u=2})}}),
+crit(53622,{achID=15692,id=1,rwp=100000,u=2}),
+crit(53623,{achID=15692,id=2,rwp=100000,u=2})}}),
 ach(15500,{u=2,g={
 cs(367416,{u=2}),
 crit(53264,{achID=15500,id=1,u=2}),
@@ -52445,7 +52445,7 @@ crit(64597,{achID=19458,awp=100206,id=4})}),
 ach(11162),
 ach(11185),
 ach(11184,{
-crit(32165,{achID=10748,awp=70003,id=3})}),
+crit(32165,{achID=10748,id=3})}),
 ach(11183)}}),
 h(-19,{awp=100206,g={
 d(109,{difficulties={17,14,15,16},g={
@@ -52537,7 +52537,7 @@ crit(64816,{achID=20481,id=3,u=2})}}),
 ach(19566,{awp=100206,rwp=110002,u=2,g={
 crit(64819,{achID=19576,id=1,u=2})}}),
 ach(16395,{
-crit(56804,{achID=11761,awp=70200,id=60})}),
+crit(56804,{achID=11761,id=60})}),
 gach(16356),
 gach(16357)}),
 o(382621,{catalystID=3,coords={
@@ -53726,7 +53726,7 @@ crit(64817,{achID=20481,id=4,u=2})}}),
 ach(19569,{awp=100206,rwp=110002,u=2,g={
 crit(64820,{achID=19576,id=2,u=2})}}),
 ach(17765,{
-crit(60102,{achID=11761,awp=70200,id=63})}),
+crit(60102,{achID=11761,id=63})}),
 gach(18177),
 gach(18178)}),
 o(382621,{catalystID=6,coords={
@@ -55046,7 +55046,7 @@ crit(64818,{achID=20481,id=5,u=2})}}),
 ach(19572,{awp=100206,rwp=110002,u=2,g={
 crit(64821,{achID=19576,id=3,u=2})}}),
 ach(19442,{
-crit(64518,{achID=11761,awp=70200,id=65})}),
+crit(64518,{achID=11761,id=65})}),
 gach(19387),
 gach(19388)}),
 o(382621,{catalystID=7,coords={
@@ -58117,7 +58117,7 @@ ach(40246),
 ach(40232,{
 mnt(447190,{b=1,itemID=223266,lvl=10})}),
 ach(40469,{
-crit(107381,{achID=11761,awp=70200,id=66})}),
+crit(107381,{achID=11761,id=66})}),
 gach(40256),
 gach(40257)}),
 h(-32,{
@@ -59300,7 +59300,7 @@ ach(41224),
 ach(41286,{
 mnt(468068,{b=1,itemID=231173,lvl=10})}),
 ach(41525,{
-crit(107382,{achID=11761,awp=70200,id=69})}),
+crit(107382,{achID=11761,id=69})}),
 gach(41289),
 gach(41290)}),
 ah(2685,{type="fa",g={
@@ -60594,7 +60594,7 @@ ach(41600),
 ach(41597,{
 mnt(1233511,{b=1,itemID=242714,lvl=10})}),
 ach(42316,{
-crit(107383,{achID=11761,awp=70200,id=71})}),
+crit(107383,{achID=11761,id=71})}),
 gach(41620),
 gach(41621)}),
 ah(2736,{type="fa",g={
@@ -62730,7 +62730,7 @@ crit(112624,{achID=61380,id=1})}}),
 ach(61380,{
 mnt(1266980,{b=1,itemID=260887,lvl=10})}),
 ach(61843,{
-crit(113785,{achID=11761,awp=70200,id=73})}),
+crit(113785,{achID=11761,id=73})}),
 gach(61609),
 gach(61610)}),
 d(109,{difficulties={17,14,15,16},g={
@@ -62892,7 +62892,7 @@ h(-12,{
 ach(61380,{
 mnt(1266980,{b=1,itemID=260887,lvl=10})}),
 ach(61843,{
-crit(113785,{achID=11761,awp=70200,id=73})})}),
+crit(113785,{achID=11761,id=73})})}),
 d(109,{difficulties={17,14,15,16},g={
 h(-45,{
 q(93923,{lvl=90})}),
@@ -63051,7 +63051,7 @@ crit(112624,{achID=61380,id=1})}}),
 ach(61380,{
 mnt(1266980,{b=1,itemID=260887,lvl=10})}),
 ach(61843,{
-crit(113785,{achID=11761,awp=70200,id=73})}),
+crit(113785,{achID=11761,id=73})}),
 gach(61606),
 gach(61607)}),
 o(532226,{catalystID=12,coords={

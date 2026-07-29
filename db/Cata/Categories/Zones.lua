@@ -28,7 +28,7 @@ title(98,{u=30})}}),
 ach(762,{awp=30002,r=1,u=11,g={
 title(98,{u=30})}}),
 ach(4868,{awp=40003,u=40,g={
-crit(13600,{achID=46,awp=30002,id=1,u=30})}}),
+crit(13600,{achID=46,id=1,u=30})}}),
 ach(941,{maps={119,1434,1951},u=30}),
 ach(1833,{awp=30002,g={
 crit(16952,{achID=1833,id=1,providers={{"i",58256}}}),
@@ -245,9 +245,9 @@ crit(10618,{achID=1833,id=1,providers={{"i",46319}}}),
 crit(10498,{achID=1833,id=1,providers={{"i",37497}}})}}),
 ach(5752,{awp=40100}),
 ach(4875,{awp=40003,r=2,u=40,g={
-crit(16021,{achID=1681,awp=30002,id=1,r=2,rwp=50004,u=30})}}),
+crit(16021,{achID=1681,id=1,r=2,rwp=50004,u=30})}}),
 ach(4983,{awp=40003,r=1,rwp=50004,u=40,g={
-crit(62963,{achID=1682,awp=30002,id=1,r=1,u=30})}}),
+crit(62963,{achID=1682,id=1,r=1,u=30})}}),
 ach(1576,{awp=30002,maps={121,1951},u=30}),
 ach(2556,{awp=30002,u=30,g={
 crit(9364,{achID=2556,id=1,providers={{"n",16068}},u=30}),
@@ -556,7 +556,7 @@ faction(69,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,providers={{"i",45579}},r=2
 crit(5328,{achID=948,awp=30002,id=1,r=2,u=11}),
 crit(5328,{achID=2760,awp=30200,id=1,r=2,u=31})}}),
 faction(1134,{awp=40003,maps={1453},providers={{"i",64882}},r=2,u=40,g={
-crit(16826,{achID=948,awp=30002,id=1,r=2,u=11})}})}),
+crit(16826,{achID=948,id=1,r=2,u=11})}})}),
 h(-32,{awp=40001,g={
 fp(457,{coords={
 [1457]={{36.61,47.82}}},crs={40552},r=2})}}),
@@ -888,7 +888,7 @@ h(-30,{
 exp(5170,{collectible=false})}),
 h(-31,{
 faction(1133,{awp=40003,providers={{"i",64884}},r=1,g={
-crit(16825,{achID=762,awp=30002,id=1,r=1,u=11})}}),
+crit(16825,{achID=762,id=1,r=1,u=11})}}),
 faction(530,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,providers={{"i",45582}},r=1,g={
 crit(5313,{achID=762,awp=30002,id=1,r=1,u=11}),
 crit(5313,{achID=2766,awp=30200,id=1,r=1,u=31})}}),
@@ -5043,7 +5043,7 @@ n(5189,{coords={
 m(1440,{icon=236713,lore="Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",g={
 h(-12,{
 ach(4925,{awp=40003,r=2,sourceQuests={13626,13683,13796,13853,13869,13886,13979,13987,25607,26469,26472,26482},g={
-crit(69983,{achID=1678,awp=30002,id=11,r=2})}}),
+crit(69983,{achID=1678,id=11,r=2})}}),
 ach(4976,{awp=40003,r=1,sourceQuests={6641,13619,13653,13805,13842,13873,13883,13888,13901,13920,13947,13980,13983,26890},g={
 crit(6100,{achID=1680,id=1,r=1,rwp=50004})}}),
 ach(845,{awp=30002,g={
@@ -6995,7 +6995,7 @@ i(23759,{b=1,coords={
 m(1950,{awp=20001,icon=236721,lore="Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",lvl=10,u=17,g={
 h(-12,{u=17,g={
 ach(4926,{awp=40003,r=2,sourceQuests={9579,9683,9689,9700,9711,9740,9741,9759,10065,10066,10067},u=17,g={
-crit(6104,{achID=1678,awp=30002,id=2,r=2})}}),
+crit(6104,{achID=1678,id=2,r=2})}}),
 ach(861,{u=17,g={
 crit(1601,{achID=43,awp=30002,id=1})}})}}),
 h(-30,{u=17,g={
@@ -7466,7 +7466,7 @@ i(29181,{b=1,f=53,lvl=70,minReputation={989,42000},q=4,u=17})}})})}}),
 m(1439,{icon=236739,lore="Darkshore, a shadowy forest punctuated by waterfalls, is one of the saddest zones in the game. It underwent many changes and heavy losses in the Cataclysm--invasions by the trolls, Twilight Cultist infiltrations in the south, and most notably, the destruction of Auberdine, viewed by many as one of the most atmospheric towns. Alliance players help rescue and comfort dying NPCs, aid the refugees of Auberdine, and assist Malfurion Stormrage in driving back the threat of the cultists.",g={
 h(-12,{
 ach(4928,{awp=40003,r=2,sourceQuests={13515,13546,13569,13588,13891,13897},g={
-crit(6105,{achID=1678,awp=30002,id=4,r=2})}}),
+crit(6105,{achID=1678,id=4,r=2})}}),
 ach(844,{awp=30002,g={
 crit(1490,{achID=43,id=1})}}),
 ach(5453,{awp=40003,r=2,sourceQuests={28529}})}),
@@ -8199,7 +8199,7 @@ i(45040,{awp=40003,b=1,coords={
 m(1443,{icon=236742,lore="Desolace used to be a barren zone, primarily populated by centaur tribes. Post-Shattering, the Cenarion Circle has begun to heal the land, leading to regrowth in the center of Desolace.",g={
 h(-12,{
 ach(4930,{awp=40003,sourceQuests={1456,5581,14198,14227,14302,14307,14309,14327,14335,14342,14346,14381,14394},g={
-crit(6106,{achID=1678,awp=30002,id=5,r=2}),
+crit(6106,{achID=1678,id=5,r=2}),
 crit(6106,{achID=1680,id=1,r=1,rwp=50004})}}),
 ach(848,{awp=30002,g={
 crit(1494,{achID=43,id=1})}})}),
@@ -9568,7 +9568,7 @@ i(5466,{crs={3125,3126,3127,5823},description="Only drops from scorpids in Durot
 m(1445,{icon=236758,lore="A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",maps={416},g={
 h(-12,{
 ach(4929,{awp=40003,r=2,sourceQuests={27186,27190,27191,27213,27222,27241,27245,27247,27291,27411},g={
-crit(69984,{achID=1678,awp=30002,id=7,r=2})}}),
+crit(69984,{achID=1678,id=7,r=2})}}),
 ach(4978,{awp=40003,r=1,sourceQuests={1202,9437,25051,26682,27186,27190,27191,27229,27244,27257,27258,27297,27411,27415,27417,27418,27419},g={
 crit(6109,{achID=1680,id=1,r=1,rwp=50004})}}),
 ach(850,{awp=30002,g={
@@ -9585,14 +9585,14 @@ exp(496,{awp=30002,g={
 crit(1363,{achID=850,id=1})}}),
 exp(499,{awp=40001}),
 exp(4046,{awp=40001,g={
-crit(14113,{achID=850,awp=30002,id=1})}}),
+crit(14113,{achID=850,id=1})}}),
 exp(518),
 exp(4010,{awp=40001,g={
-crit(14114,{achID=850,awp=30002,id=1})}}),
+crit(14114,{achID=850,id=1})}}),
 exp(504,{awp=40001}),
 exp(503,{awp=40001}),
 exp(403,{awp=40001,g={
-crit(14115,{achID=850,awp=30002,id=1})}}),
+crit(14115,{achID=850,id=1})}}),
 exp(508,{awp=40001}),
 exp(497,{awp=40001}),
 exp(509,{collectible=false}),
@@ -10475,7 +10475,7 @@ h(-12,{
 ach(853,{awp=30002,g={
 crit(1499,{achID=43,id=1})}}),
 ach(4931,{awp=40003,sourceQuests={27995,27997,28126,28128,28129,28148,28213,28214,28228,28264,28288,28338,28340,28341,28342,28358,28359,28364,28366,28368,28374,28389},g={
-crit(6110,{achID=1678,awp=30002,id=6,r=2}),
+crit(6110,{achID=1678,id=6,r=2}),
 crit(6110,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(1765,{awp=30002,g={
@@ -11160,19 +11160,19 @@ h(-12,{
 ach(849,{awp=30002,g={
 crit(1496,{achID=43,id=1})}}),
 ach(4932,{awp=40003,r=2,sourceQuests={25333,25398,25438,25468,25469,26401},g={
-crit(69985,{achID=1678,awp=30002,id=14,r=2})}}),
+crit(69985,{achID=1678,id=14,r=2})}}),
 ach(4979,{awp=40003,r=1,sourceQuests={25250,25329,25383,25391,25645},g={
 crit(6111,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(1099,{awp=30002,g={
 crit(1390,{achID=849,id=1})}}),
 exp(5036,{awp=40001,g={
-crit(1393,{achID=849,awp=30002,id=1})}}),
+crit(1393,{achID=849,id=1})}}),
 exp(2577,{awp=30002,g={
 crit(1385,{achID=849,id=1})}}),
 exp(1111),
 exp(5072,{awp=40001,g={
-crit(1394,{achID=849,awp=30002,id=1})}}),
+crit(1394,{achID=849,id=1})}}),
 exp(1105,{awp=30002,g={
 crit(1386,{achID=849,id=1})}}),
 exp(1106),
@@ -11183,7 +11183,7 @@ crit(1391,{achID=849,id=1})}}),
 exp(1137,{awp=30002,g={
 crit(1395,{achID=849,id=1})}}),
 exp(1116,{awp=40001,g={
-crit(1371,{achID=849,awp=30002,id=1})}}),
+crit(1371,{achID=849,id=1})}}),
 exp(2522,{awp=30002,g={
 crit(1388,{achID=849,id=1})}}),
 exp(1114),
@@ -13195,7 +13195,7 @@ r(6414,{itemID=5484,learnedAt=35,q=1,requireSkill=185})}})})}}),
 m(1413,{awp=40003,icon=236717,lore="Northern Barrens is a dry grassy zone, dotted with farms and few lush oasis. It is primarily a low-level zone for Horde players, but Alliance players can travel to the Steamwheedle Cartel city of Ratchet.",maps={11},g={
 h(-12,{
 ach(750,{
-crit(1489,{achID=43,awp=30002,id=1})}),
+crit(1489,{achID=43,id=1})}),
 ach(4933,{r=1,sourceQuests={872,877,880,4021,5041,13971,14042,14050,14063,14067,29094,29111},g={
 crit(6129,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
@@ -14183,7 +14183,7 @@ h(-12,{
 ach(856,{awp=30002,g={
 crit(1502,{achID=43,id=1})}}),
 ach(4934,{awp=40003,sourceQuests={8287,8306,8314,8321,8323},g={
-crit(6123,{achID=1678,awp=30002,id=1,r=2}),
+crit(6123,{achID=1678,id=1,r=2}),
 crit(6123,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(3428),
@@ -14861,9 +14861,9 @@ s(130903,20407,{crs={11880,11881,11882,11883,14479,15201,15213,15541,15542},desc
 m(199,{awp=40003,icon=236717,lore="Southern Barrens is a war-torn land after the Shattering. Camp Taurajo has been razed as the Alliance retaliate for the Horde's offensive in Ashenvale, plowing through to link Theramore to their northern bases. Naralex, formerly sleeping in Wailing Caverns, is rescued and has created a wild mutant jungle in this zone as well.",g={
 h(-12,{
 ach(4996,{
-crit(16066,{achID=43,awp=30002,id=1})}),
+crit(16066,{achID=43,id=1})}),
 ach(4937,{r=2,sourceQuests={24566,24601,24653,24824,24939,24948,24956,25000,25002,25008,25027,25042,25044,25057,25059,25080,25081,25082,25085,25175,25185,25186},g={
-crit(62971,{achID=1678,awp=30002,id=13,r=2})}}),
+crit(62971,{achID=1678,id=13,r=2})}}),
 ach(4981,{r=1,sourceQuests={24505,24512,24513,24514,24517,24519,24525,24534,24542,24552,24566,24572,24573,24601,24608,24621,24631,24633,24637,24654,24667,24747,24824,25284},g={
 crit(15239,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
@@ -15472,7 +15472,7 @@ h(-12,{
 ach(847,{awp=30002,g={
 crit(1493,{achID=43,id=1})}}),
 ach(4936,{awp=40003,r=2,sourceQuests={25642,25646,25851,25931},g={
-crit(69982,{achID=1678,awp=30002,id=8,r=2})}}),
+crit(69982,{achID=1678,id=8,r=2})}}),
 ach(4980,{awp=40003,r=1,sourceQuests={26010,26058,26067,26068,26115},g={
 crit(6126,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
@@ -16181,7 +16181,7 @@ h(-12,{
 ach(851,{awp=30002,g={
 crit(1497,{achID=43,id=1})}}),
 ach(4935,{awp=40003,sourceQuests={24950,24953,25001,25065,25107,25166,25421,25513,25591},g={
-crit(6127,{achID=1678,awp=30002,id=9,r=2}),
+crit(6127,{achID=1678,id=9,r=2}),
 crit(6127,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(1939,{awp=30002,g={
@@ -17310,7 +17310,7 @@ h(-12,{
 ach(846,{awp=30002,g={
 crit(1492,{achID=43,id=1})}}),
 ach(4938,{awp=40003,sourceQuests={25627,25628,27327,27328,28048,28098,28160,28161},g={
-crit(6130,{achID=1678,awp=30002,id=10,r=2}),
+crit(6130,{achID=1678,id=10,r=2}),
 crit(6130,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(2097,{awp=30002,g={
@@ -18724,7 +18724,7 @@ h(-12,{
 ach(854,{awp=30002,g={
 crit(1500,{achID=43,id=1})}}),
 ach(4939,{awp=40003,sourceQuests={24695,24707,24720,24721,24722,24723},g={
-crit(6132,{achID=1678,awp=30002,id=12,r=2}),
+crit(6132,{achID=1678,id=12,r=2}),
 crit(6132,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(537,{awp=30002,g={
@@ -19219,7 +19219,7 @@ ach(857,{awp=30002,g={
 crit(1503,{achID=43,id=1})}}),
 ach(3356,{providers={{"i",13086}},r=2}),
 ach(4940,{awp=40003,sourceQuests={28472,28628,28639,28710,28722,28742,28782,28828,28830,28831,28842,28848},g={
-crit(6134,{achID=1678,awp=30002,id=3,r=2}),
+crit(6134,{achID=1678,id=3,r=2}),
 crit(6134,{achID=1680,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(2248),
@@ -24674,7 +24674,7 @@ n(5754,{coords={
 m(1417,{icon=236712,lore="The Arathi Highlands are located in southeastern Lordaeron, east of Hillsbrad Foothills and south of the Hinterlands. It is a flat but craggy region that has traditionally been the home of the humans of Arathor, who gave the region its name. The main hubs of activity are now Refuge Pointe and Hammerfall, which houses bases for Alliance and Horde, respectively. The large city of Stromgarde lies in ruins to the southwest, and pockets of Syndicate resistance dot the land. The Boulderfist Orges also infest Arathor, and prove to be a constant threat to the Alliance, Horde, and Syndicate factions vying for supremacy.",g={
 h(-12,{
 ach(4896,{awp=40003,sourceQuests={26029,26038,26049,26081,26108,26117,26628,26912},g={
-crit(5901,{achID=1676,awp=30002,id=1,r=2}),
+crit(5901,{achID=1676,id=1,r=2}),
 crit(5901,{achID=1677,id=1,r=1,rwp=50004})}}),
 ach(761,{awp=30002,g={
 crit(1278,{achID=42,id=1})}})}),
@@ -25283,7 +25283,7 @@ i(4480,{crs={2572,2573,2574,2762},f=55,lvl=25,q=1})})}}),
 m(1418,{icon=236716,lore="Badlands is a scorched zone and the home of the Earthen, Dark Iron Dwarves, and Goblins in Fuselight-by-the-Sea. Formerly a short zone before Cataclysm, it now has two notable chains: The Day Deathwing Died, and the sad tale of the dragon Rhea.",g={
 h(-12,{
 ach(4900,{awp=40003,sourceQuests={27715,27769,27794,27888,27930},g={
-crit(5902,{achID=1676,awp=30002,id=1,r=2}),
+crit(5902,{achID=1676,id=1,r=2}),
 crit(5902,{achID=1677,id=1,r=1,rwp=50004})}}),
 ach(765,{awp=30002,g={
 crit(1279,{achID=42,id=1})}}),
@@ -25900,7 +25900,7 @@ s(124343,11603,{f=34,lvl=51,q=3})}})})}}),
 m(1419,{icon=236720,lore="The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",g={
 h(-12,{
 ach(4909,{awp=40003,sourceQuests={25701,25705,25706,25720,26171,26187},g={
-crit(5906,{achID=1676,awp=30002,id=1,r=2}),
+crit(5906,{achID=1676,id=1,r=2}),
 crit(5906,{achID=1677,id=1,r=1,rwp=50004})}}),
 ach(766,{awp=30002,g={
 crit(1280,{achID=42,id=1})}})}),
@@ -26425,7 +26425,7 @@ h(-12,{
 ach(775,{awp=30002,g={
 crit(1281,{achID=42,id=1})}}),
 ach(4901,{awp=40003,sourceQuests={28183,28286,28322,28326,28425,28441,28449,28456},g={
-crit(5907,{achID=1676,awp=30002,id=1,r=2}),
+crit(5907,{achID=1676,id=1,r=2}),
 crit(5907,{achID=1677,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(255,{awp=30002,g={
@@ -27755,7 +27755,7 @@ h(-12,{
 ach(778,{awp=30002,g={
 crit(1284,{achID=42,id=1})}}),
 ach(4907,{awp=40003,r=2,rwp=50004,sourceQuests={26620,26623,26674,26686,26691,26727,26754,26797},g={
-crit(5912,{achID=1676,awp=30002,id=1,r=2})}})}),
+crit(5912,{achID=1676,id=1,r=2})}})}),
 h(-30,{
 exp(536,{awp=30002,g={
 crit(1162,{achID=778,id=1})}}),
@@ -28634,7 +28634,7 @@ s(172341,39205,{coords={
 [1423]={{54.6,42.8},{56.8,49.8},{59.6,31.2}}},crs={28557,28576,28577,28819,28822},f=4,lvl=4,q=0})})}}),
 h(-12,{
 ach(4892,{awp=40003,sourceQuests={27373,27391,27489,27527,27620},g={
-crit(5913,{achID=1676,awp=30002,id=1,r=2}),
+crit(5913,{achID=1676,id=1,r=2}),
 crit(5913,{achID=1677,id=1,r=1,rwp=50004})}}),
 ach(771,{awp=30002,g={
 crit(1286,{achID=42,id=1})}}),
@@ -33022,7 +33022,7 @@ h(-12,{
 ach(779,{awp=30002,g={
 crit(1288,{achID=42,id=1})}}),
 ach(4899,{awp=40003,r=2,sourceQuests={13648,25118,26147,26148,26868,27026,27033,27037,27116},g={
-crit(5922,{achID=1676,awp=30002,id=1,r=2})}})}),
+crit(5922,{achID=1676,id=1,r=2})}})}),
 h(-30,{
 exp(925),
 exp(837),
@@ -33539,7 +33539,7 @@ h(-12,{
 ach(781,{awp=30002,g={
 crit(1293,{achID=42,id=1})}}),
 ach(4906,{awp=40003,sourceQuests={208,26269,26305,26345,26362,26731,26734,26737,26765,26775},g={
-crit(15213,{achID=1676,awp=30002,id=1,r=2}),
+crit(15213,{achID=1676,id=1,r=2}),
 crit(15213,{achID=1677,id=1,r=1,rwp=50004})}}),
 ach(940,{awp=30002,sourceQuests={208},g={
 crit(2008,{achID=941,id=1,u=30})}})}),
@@ -34277,7 +34277,7 @@ h(-12,{
 ach(780,{awp=30002,g={
 crit(1289,{achID=42,id=1})}}),
 ach(4902,{awp=40003,r=2,sourceQuests={26545,26607,26726},g={
-crit(5929,{achID=1676,awp=30002,id=1,r=2})}})}),
+crit(5929,{achID=1676,id=1,r=2})}})}),
 h(-30,{
 exp(97,{awp=30002,g={
 crit(1191,{achID=780,id=1})}}),
@@ -34881,7 +34881,7 @@ h(-12,{
 ach(774,{awp=30002,g={
 crit(1291,{achID=42,id=1})}}),
 ach(4910,{awp=40001,sourceQuests={27964,27979,28035,28064,28099},g={
-crit(5932,{achID=1676,awp=30002,id=1,r=2}),
+crit(5932,{achID=1676,id=1,r=2}),
 crit(5932,{achID=1677,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(1957,{awp=30002,g={
@@ -35774,7 +35774,7 @@ h(-12,{
 ach(782,{awp=30002,g={
 crit(1294,{achID=42,id=1})}}),
 ach(4904,{awp=40003,sourceQuests={24913,27600,27849,27851,27857,27911,27914},g={
-crit(5939,{achID=1676,awp=30002,id=1,r=2}),
+crit(5939,{achID=1676,id=1,r=2}),
 crit(5939,{achID=1677,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(5458,{awp=30002,g={
@@ -36223,10 +36223,10 @@ h(-12,{
 ach(871,{awp=30002,sourceQuests={4621},u=11,g={
 title(111,{u=11})}}),
 ach(4905,{awp=40003,sourceQuests={26555,26612,26613,26665,26703,26814},g={
-crit(5935,{achID=1676,awp=30002,id=1,r=2}),
+crit(5935,{achID=1676,id=1,r=2}),
 crit(5935,{achID=1677,id=1,r=1,rwp=50004})}}),
 ach(4995,{awp=40003,g={
-crit(1277,{achID=42,awp=30002,id=1})}})}),
+crit(1277,{achID=42,id=1})}})}),
 h(-30,{
 exp(35,{awp=40003,g={
 crit(14050,{achID=4995,id=1})}}),
@@ -36984,7 +36984,7 @@ h(-12,{
 ach(773,{awp=30002,g={
 crit(1295,{achID=42,id=1})}}),
 ach(4897,{awp=40003,sourceQuests={26210,26211,26212,26224,26225,26238,26240,26267,26268,26283,26308,26309,26357,26368,26369,26387,26419,26462,26485,26486,26490,26491,26492,26516,26521,26524,26525,26526,26532,26643},g={
-crit(5942,{achID=1676,awp=30002,id=1,r=2}),
+crit(5942,{achID=1676,id=1,r=2}),
 crit(5942,{achID=1677,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(348,{awp=30002,g={
@@ -40134,7 +40134,7 @@ h(-12,{
 ach(770,{awp=30002,g={
 crit(1296,{achID=42,id=1})}}),
 ach(4893,{awp=40003,sourceQuests={26926,26938,26955,27144,27155,27165,27174,27206},g={
-crit(5947,{achID=1676,awp=30002,id=1,r=2}),
+crit(5947,{achID=1676,id=1,r=2}),
 crit(5947,{achID=1677,id=1,r=1,rwp=50004})}})}),
 h(-30,{
 exp(193,{awp=30002,g={
@@ -40903,7 +40903,7 @@ h(-12,{
 ach(802,{awp=30002,g={
 crit(1297,{achID=42,id=1})}}),
 ach(4903,{awp=40003,r=2,sourceQuests={26270,26297,26370},g={
-crit(5948,{achID=1676,awp=30002,id=1,r=2})}})}),
+crit(5948,{achID=1676,id=1,r=2})}})}),
 h(-30,{
 exp(219,{awp=30002,g={
 crit(1257,{achID=802,id=1})}}),
@@ -41364,7 +41364,7 @@ h(-12,{
 ach(841,{awp=30002,g={
 crit(1298,{achID=42,id=1})}}),
 ach(4898,{awp=40003,r=2,rwp=50004,sourceQuests={25733,25734,25735,25780,25801,25805,25819,25857,25868,26120,26128,26189},g={
-crit(5949,{achID=1676,awp=30002,id=1,r=2})}})}),
+crit(5949,{achID=1676,id=1,r=2})}})}),
 h(-30,{
 exp(1036,{awp=30002,g={
 crit(1270,{achID=841,id=1})}}),

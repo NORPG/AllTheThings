@@ -63,7 +63,7 @@ mnt(1255179,{itemID=252681,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.
 mnt(449142,{itemID=223471,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 mnt(449132,{itemID=223459,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=3,g={
-crit(34643,{achID=6185,awp=40300,id=3,u=2})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+crit(34643,{achID=6185,id=3,u=2})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 p(333,{b=1,itemID=72134,npcID=54730,spellID=102317,u=3}))}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 ach(40910,{description="Rewarded for the Aid in the stress testing of the realms in China.",rwp=110005,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 mnt(366962,{itemID=190231,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(

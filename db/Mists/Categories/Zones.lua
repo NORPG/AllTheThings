@@ -30,7 +30,7 @@ title(98,{u=30})}}),
 ach(762,{awp=30002,r=1,u=11,g={
 title(98,{u=30})}}),
 ach(4868,{awp=40003,u=40,g={
-crit(13600,{achID=46,awp=30002,id=5,u=30})}}),
+crit(13600,{achID=46,id=5,u=30})}}),
 ach(941,{maps={50,107,119},u=30}),
 ach(1833,{awp=30002,g={
 crit(16952,{achID=1833,id=1,providers={{"i",58256}}}),
@@ -576,7 +576,7 @@ faction(69,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,providers={{"i",45579}},r=2
 crit(5328,{achID=948,awp=30002,id=2,r=2,u=11}),
 crit(5328,{achID=2760,awp=30200,id=2,r=2,u=31})}}),
 faction(1134,{awp=40003,maps={84},providers={{"i",64882}},r=2,u=40,g={
-crit(16826,{achID=948,awp=30002,id=4,r=2,u=11})}})}),
+crit(16826,{achID=948,id=4,r=2,u=11})}})}),
 h(-32,{awp=40001,g={
 fp(457,{coords={
 [89]={{36.61,47.82}}},crs={40552},r=2})}}),
@@ -912,7 +912,7 @@ h(-30,{
 exp(5170,{collectible=false})}),
 h(-31,{
 faction(1133,{awp=40003,providers={{"i",64884}},r=1,g={
-crit(16825,{achID=762,awp=30002,id=2,r=1,u=11})}}),
+crit(16825,{achID=762,id=2,r=1,u=11})}}),
 faction(530,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,providers={{"i",45582}},r=1,g={
 crit(5313,{achID=762,awp=30002,id=3,r=1,u=11}),
 crit(5313,{achID=2766,awp=30200,id=2,r=1,u=31})}}),
@@ -5018,8 +5018,8 @@ n(16714,{coords={
 [103]={{69.8,89.4}}},r=2,sym={{"select","itemID",926,2025,2520,1198,2029,851,922,927,2024,2528,852,2207,2209,923,2526,2208,2534,2027,1196}},u=17}),
 n(16750,{coords={
 [103]={{67.6,94.6}}},r=2,sym={{"select","itemID",847,1845,849,1846,850,848,2392,2393,2395,2396,2397,2394,1853,287,1852,718,286,285}},u=17})}}),
-h(-43,{awp=50004,pb=1,g={
-crit(19848,{achID=6584,id=4,pb=1})}}),
+h(-43,{pb=1,g={
+crit(19848,{achID=6584,awp=50004,id=4,pb=1})}}),
 h(-12,{
 crit(11080,{achID=3556,awp=30202,e=101,id=3,r=2}),
 crit(11138,{achID=3581,awp=30202,e=101,id=3,r=1}),
@@ -5339,9 +5339,9 @@ crit(19850,{achID=6621,id=2,pb=1})}})}}),
 m(63,{icon=236713,lore="Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",petBattleLvl=4,g={
 h(-12,{
 ach(4925,{awp=40003,r=2,sourceQuests={13626,13683,13796,13853,13869,13886,13979,13987,25607,26469,26472,26482},g={
-crit(69983,{achID=1678,awp=30002,id=1})}}),
+crit(69983,{achID=1678,id=1})}}),
 ach(4976,{awp=40003,r=1,sourceQuests={6641,13619,13653,13805,13842,13873,13883,13888,13901,13920,13947,13980,13983,26890},g={
-crit(6100,{achID=1678,awp=30002,id=1})}}),
+crit(6100,{achID=1678,id=1})}}),
 ach(845,{awp=30002,g={
 crit(1491,{achID=43,id=11})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",417,424,379,420}},g={
@@ -5350,7 +5350,7 @@ crit(21702,{achID=6585,id=27,pb=1})}}),
 p(495,{npcID=62312,pb=1,g={
 crit(21691,{achID=6585,id=28,pb=1})}}),
 p(450,{npcID=61753,pb=1,g={
-crit(19443,{achID=2556,awp=30002,id=13,u=30}),
+crit(19443,{achID=2556,id=13,u=30}),
 crit(21514,{achID=6585,id=42,pb=1}),
 crit(21514,{achID=6586,id=44,pb=1}),
 crit(21514,{achID=6588,id=15,pb=1,u=30})}}),
@@ -6248,7 +6248,7 @@ i(11151,{crs={3834,3919},f=200,q=2,requireSkill=333,rwp=40300,u=2})})}}),
 m(76,{icon=236714,lore="Azshara was taken over by the goblins post-Shattering. It used to be the night elves' greatest center before the Sundering, but was destroyed due to the reckless magic of the Highborne. Known for being a beautiful and tranquil autumnal zone pre-Shattering, the Goblins have marred the landscape with their pollution and quarries, carving the land into the shape of a Horde symbol.",petBattleLvl=3,g={
 h(-12,{
 ach(4927,{awp=40003,r=1,sourceQuests={14155,14216,14295,14383,14388,14392,14422,14464,24434,24439,24449},g={
-crit(6101,{achID=1678,awp=30002,id=1})}}),
+crit(6101,{achID=1678,id=1})}}),
 ach(852,{awp=30002,g={
 crit(1498,{achID=43,id=18})}}),
 ach(5448,{awp=40003,providers={{"s",66212}}}),
@@ -7346,7 +7346,7 @@ i(23759,{b=1,coords={
 m(106,{awp=20001,icon=236721,lore="Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",lvl=10,u=17,petBattleLvl=3,g={
 h(-12,{u=17,g={
 ach(4926,{awp=40003,r=2,sourceQuests={9579,9683,9689,9700,9711,9740,9741,9759,10065,10066,10067},u=17,g={
-crit(6104,{achID=1678,awp=30002,id=1})}}),
+crit(6104,{achID=1678,id=1})}}),
 ach(861,{u=17,g={
 crit(1601,{achID=43,awp=30002,id=10})}})}}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",628,627,417,397}},u=17,g={
@@ -7825,7 +7825,7 @@ i(29181,{b=1,f=53,lvl=70,minReputation={989,42000},q=4,u=17})}})})}}),
 m(62,{icon=236739,lore="Darkshore, a shadowy forest punctuated by waterfalls, is one of the saddest zones in the game. It underwent many changes and heavy losses in the Cataclysm--invasions by the trolls, Twilight Cultist infiltrations in the south, and most notably, the destruction of Auberdine, viewed by many as one of the most atmospheric towns. Alliance players help rescue and comfort dying NPCs, aid the refugees of Auberdine, and assist Malfurion Stormrage in driving back the threat of the cultists.",petBattleLvl=3,g={
 h(-12,{
 ach(4928,{awp=40003,r=2,sourceQuests={13515,13546,13569,13588,13891,13897},g={
-crit(6105,{achID=1678,awp=30002,id=1})}}),
+crit(6105,{achID=1678,id=1})}}),
 ach(844,{awp=30002,g={
 crit(1490,{achID=43,id=9})}}),
 ach(5453,{awp=40003,r=2,sourceQuests={28529}})}),
@@ -8576,7 +8576,7 @@ i(45040,{awp=40003,b=1,coords={
 m(66,{icon=236742,lore="Desolace used to be a barren zone, primarily populated by centaur tribes. Post-Shattering, the Cenarion Circle has begun to heal the land, leading to regrowth in the center of Desolace.",petBattleLvl=7,g={
 h(-12,{
 ach(4930,{awp=40003,sourceQuests={1456,5581,14198,14227,14302,14307,14309,14327,14335,14342,14346,14381,14394},g={
-crit(6106,{achID=1678,awp=30002,id=1})}}),
+crit(6106,{achID=1678,id=1})}}),
 ach(848,{awp=30002,g={
 crit(1494,{achID=43,id=14})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",838,479,478,417,452,424,419}},g={
@@ -8585,7 +8585,7 @@ crit(21712,{achID=6585,id=20,pb=1})}}),
 p(483,{npcID=62185,pb=1,g={
 crit(21715,{achID=6585,id=35,pb=1})}}),
 p(482,{npcID=62184,pb=1,g={
-crit(21307,{achID=5548,awp=40003,id=8}),
+crit(21307,{achID=5548,id=8}),
 crit(21699,{achID=6585,id=61,pb=1}),
 crit(21716,{achID=6587,id=14,pb=1,u=17})}}),
 p(485,{description="Found in the southeastern area of Desolace. It only spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",npcID=62187,pb=1,g={
@@ -9588,7 +9588,7 @@ crit(11082,{achID=3557,awp=30202,e=101,id=2,r=1}),
 crit(11134,{achID=3580,awp=30202,e=101,id=2,r=2})}),
 flt(101,{awp=50004,pb=1,g={
 p(635,{npcID=61325,pb=1,g={
-crit(19368,{achID=2556,awp=30002,id=12,u=30}),
+crit(19368,{achID=2556,id=12,u=30}),
 crit(21509,{achID=6585,id=1,pb=1}),
 crit(21509,{achID=6586,id=1,pb=1}),
 crit(21509,{achID=6587,id=1,pb=1,u=17})}}),
@@ -9597,19 +9597,19 @@ crit(21698,{achID=6585,id=15,pb=1})}}),
 p(467,{npcID=62115,pb=1,g={
 crit(21719,{achID=6585,id=22,pb=1})}}),
 p(448,{npcID=61751,pb=1,g={
-crit(21285,{achID=1206,awp=30002,id=10}),
+crit(21285,{achID=1206,id=10}),
 crit(21612,{achID=6585,id=33,pb=1}),
 crit(21612,{achID=6586,id=26,pb=1})}}),
 p(466,{npcID=62114,pb=1,g={
 crit(21720,{achID=6585,id=80,pb=1})}}),
 p(420,{npcID=61369,pb=1,g={
-crit(21291,{achID=1206,awp=30002,id=20}),
+crit(21291,{achID=1206,id=20}),
 crit(21646,{achID=6585,id=90,pb=1}),
 crit(21646,{achID=6586,id=81,pb=1}),
 crit(21646,{achID=6587,id=25,pb=1,u=17}),
 crit(21646,{achID=6588,id=30,pb=1,u=30})}}),
 p(418,{npcID=61367,pb=1,g={
-crit(19438,{achID=2556,awp=30002,id=2,u=30}),
+crit(19438,{achID=2556,id=2,u=30}),
 crit(21661,{achID=6585,id=99,pb=1}),
 crit(21661,{achID=6586,id=86,pb=1})}})}}),
 h(-30,{
@@ -10030,14 +10030,14 @@ i(5466,{crs={3125,3126,3127,5823},description="Only drops from scorpids in Durot
 m(70,{icon=236758,lore="A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",maps={416},petBattleLvl=12,g={
 h(-12,{
 ach(4929,{awp=40003,r=2,sourceQuests={27186,27190,27191,27213,27222,27241,27245,27247,27291,27411},g={
-crit(69984,{achID=1678,awp=30002,id=1})}}),
+crit(69984,{achID=1678,id=1})}}),
 ach(4978,{awp=40003,r=1,sourceQuests={1202,9437,25051,26682,27186,27190,27191,27229,27244,27257,27258,27297,27411,27415,27417,27418,27419},g={
-crit(6109,{achID=1678,awp=30002,id=1})}}),
+crit(6109,{achID=1678,id=1})}}),
 ach(850,{awp=30002,g={
 crit(1495,{achID=43,id=15})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",398,387,412,420}},g={
 p(385,{npcID=61143,pb=1,g={
-crit(19440,{achID=2556,awp=30002,id=7,u=30}),
+crit(19440,{achID=2556,id=7,u=30}),
 crit(21631,{achID=6585,id=46,pb=1}),
 crit(21631,{achID=6586,id=49,pb=1}),
 crit(21631,{achID=6587,id=9,pb=1,u=17}),
@@ -10056,14 +10056,14 @@ exp(496,{awp=30002,g={
 crit(1363,{achID=850,id=8})}}),
 exp(499,{awp=40001}),
 exp(4046,{awp=40001,g={
-crit(14113,{achID=850,awp=30002,id=4})}}),
+crit(14113,{achID=850,id=4})}}),
 exp(518),
 exp(4010,{awp=40001,g={
-crit(14114,{achID=850,awp=30002,id=5})}}),
+crit(14114,{achID=850,id=5})}}),
 exp(504,{awp=40001}),
 exp(503,{awp=40001}),
 exp(403,{awp=40001,g={
-crit(14115,{achID=850,awp=30002,id=6})}}),
+crit(14115,{achID=850,id=6})}}),
 exp(508,{awp=40001}),
 exp(497,{awp=40001}),
 exp(509,{collectible=false}),
@@ -10975,7 +10975,7 @@ h(-12,{
 ach(853,{awp=30002,g={
 crit(1499,{achID=43,id=19})}}),
 ach(4931,{awp=40003,sourceQuests={27995,27997,28126,28128,28129,28148,28213,28214,28228,28264,28288,28338,28340,28341,28342,28358,28359,28364,28366,28368,28374,28389},g={
-crit(6110,{achID=1678,awp=30002,id=1})}})}),
+crit(6110,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",406,420}},g={
 p(500,{description="Can be found around Shatter Scar Vale near Infernal Sentries.",npcID=62317,pb=1,g={
 crit(21722,{achID=6585,id=43,pb=1})}}),
@@ -11697,14 +11697,14 @@ h(-12,{
 ach(849,{awp=30002,g={
 crit(1496,{achID=43,id=16})}}),
 ach(4932,{awp=40003,r=2,sourceQuests={25333,25398,25438,25468,25469,26401},g={
-crit(69985,{achID=1678,awp=30002,id=1})}}),
+crit(69985,{achID=1678,id=1})}}),
 ach(4979,{awp=40003,r=1,sourceQuests={25250,25329,25383,25391,25645},g={
-crit(6111,{achID=1678,awp=30002,id=1})}})}),
+crit(6111,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",378,379}},g={
 p(557,{description="Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",npcID=62395,pb=1,g={
 crit(21726,{achID=6585,id=47,pb=1})}}),
 p(387,{npcID=61142,pb=1,g={
-crit(19428,{achID=2556,awp=30002,id=10,u=30}),
+crit(19428,{achID=2556,id=10,u=30}),
 crit(21519,{achID=6585,id=75,pb=1}),
 crit(21519,{achID=6586,id=67,pb=1}),
 crit(21519,{achID=6587,id=20,pb=1,u=17}),
@@ -11714,12 +11714,12 @@ h(-30,{
 exp(1099,{awp=30002,g={
 crit(1390,{achID=849,id=10})}}),
 exp(5036,{awp=40001,g={
-crit(1393,{achID=849,awp=30002,id=13})}}),
+crit(1393,{achID=849,id=13})}}),
 exp(2577,{awp=30002,g={
 crit(1385,{achID=849,id=6})}}),
 exp(1111),
 exp(5072,{awp=40001,g={
-crit(1394,{achID=849,awp=30002,id=14})}}),
+crit(1394,{achID=849,id=14})}}),
 exp(1105,{awp=30002,g={
 crit(1386,{achID=849,id=7})}}),
 exp(1106),
@@ -11730,7 +11730,7 @@ crit(1391,{achID=849,id=11})}}),
 exp(1137,{awp=30002,g={
 crit(1395,{achID=849,id=2})}}),
 exp(1116,{awp=40001,g={
-crit(1371,{achID=849,awp=30002,id=3})}}),
+crit(1371,{achID=849,id=3})}}),
 exp(2522,{awp=30002,g={
 crit(1388,{achID=849,id=8})}}),
 exp(1114),
@@ -12682,7 +12682,7 @@ p(479,{coords={
 crit(21713,{achID=6585,id=23,pb=1})}}),
 p(415,{coords={
 [198]={{60,70}}},description="Common around fiery and dry areas of Mount Hyjal, as well as around Searing Gorge, Blasted Lands and Burning Steppes",npcID=61328,pb=1,g={
-crit(19442,{achID=2556,awp=30002,id=16,u=30}),
+crit(19442,{achID=2556,id=16,u=30}),
 crit(21621,{achID=6585,id=25,pb=1}),
 crit(21621,{achID=6586,id=21,pb=1})}}),
 p(541,{coords={
@@ -12690,7 +12690,7 @@ p(541,{coords={
 crit(21732,{achID=6585,id=26,pb=1})}}),
 p(539,{coords={
 [198]={{52.5,17.3}}},description="Can be found in the Hyjal Barrow Dens.",npcID=62884,pb=1,g={
-crit(21301,{achID=5548,awp=40003,id=3})}}),
+crit(21301,{achID=5548,id=3})}}),
 p(547,{coords={
 [198]={{60.55,26.35}}},description="Can be found around the Nordrassil pond.",npcID=62888,pb=1,g={
 crit(21734,{achID=6585,id=48,pb=1})}}),
@@ -14160,16 +14160,16 @@ r(6414,{itemID=5484,learnedAt=35,q=1,requireSkill=185})}})})}}),
 m(10,{awp=40003,icon=236717,lore="Northern Barrens is a dry grassy zone, dotted with farms and few lush oasis. It is primarily a low-level zone for Horde players, but Alliance players can travel to the Steamwheedle Cartel city of Ratchet.",maps={11},petBattleLvl=3,g={
 h(-12,{
 ach(750,{
-crit(1489,{achID=43,awp=30002,id=6})}),
+crit(1489,{achID=43,id=6})}),
 ach(4933,{r=1,sourceQuests={872,877,880,4021,5041,13971,14042,14050,14063,14067,29094,29111},g={
-crit(6129,{achID=1678,awp=30002,id=1})}})}),
+crit(6129,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",635,631,419}},g={
 p(474,{description="Can be found under large trees alongside Plainsland Cheetahs.",npcID=62129,pb=1,g={
 crit(21737,{achID=6585,id=12,pb=1}),
 crit(23581,{achID=8397,awp=50400,id=5,pb=1})}}),
 p(1157,{awp=50100,description="Can be found at The Dry Hills, alongside Witchwing Harpies.",npcID=68804,pb=1}),
 p(386,{npcID=61141,pb=1,g={
-crit(21292,{achID=1206,awp=30002,id=21}),
+crit(21292,{achID=1206,id=21}),
 crit(21613,{achID=6585,id=51,pb=1}),
 crit(21613,{achID=6586,id=52,pb=1}),
 crit(21613,{achID=6587,id=11,pb=1,u=17})}})}}),
@@ -15184,7 +15184,7 @@ h(-12,{
 ach(856,{awp=30002,g={
 crit(1502,{achID=43,id=22})}}),
 ach(4934,{awp=40003,sourceQuests={8287,8306,8314,8321,8323},g={
-crit(6123,{achID=1678,awp=30002,id=1})}})}),
+crit(6123,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",406,484,482,512,414,511}},g={
 p(513,{description="Starts spawning June 21st. Stops spawning September 23rd.",npcID=62526,pb=1,g={
 crit(21739,{achID=6585,id=52,pb=1})}}),
@@ -15888,11 +15888,11 @@ crit(21542,{achID=6560,id=18,pb=1})}})}}),
 m(199,{awp=40003,icon=236717,lore="Southern Barrens is a war-torn land after the Shattering. Camp Taurajo has been razed as the Alliance retaliate for the Horde's offensive in Ashenvale, plowing through to link Theramore to their northern bases. Naralex, formerly sleeping in Wailing Caverns, is rescued and has created a wild mutant jungle in this zone as well.",petBattleLvl=9,g={
 h(-12,{
 ach(4996,{
-crit(16066,{achID=43,awp=30002,id=8})}),
+crit(16066,{achID=43,id=8})}),
 ach(4937,{r=2,sourceQuests={24566,24601,24653,24824,24939,24948,24956,25000,25002,25008,25027,25042,25044,25057,25059,25080,25081,25082,25085,25175,25185,25186},g={
-crit(62971,{achID=1678,awp=30002,id=1})}}),
+crit(62971,{achID=1678,id=1})}}),
 ach(4981,{r=1,sourceQuests={24505,24512,24513,24514,24517,24519,24525,24534,24542,24552,24566,24572,24573,24601,24608,24621,24631,24633,24637,24654,24667,24747,24824,25284},g={
-crit(15239,{achID=1678,awp=30002,id=1})}})}),
+crit(15239,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",635,474,631,386,419}},g={
 p(475,{description="Can be found with groups of roaming Dusthoof Giraffe.",npcID=62130,pb=1,g={
 crit(21742,{achID=6585,id=30,pb=1})}})}}),
@@ -16513,14 +16513,14 @@ h(-12,{
 ach(847,{awp=30002,g={
 crit(1493,{achID=43,id=13})}}),
 ach(4936,{awp=40003,r=2,sourceQuests={25642,25646,25851,25931},g={
-crit(69982,{achID=1678,awp=30002,id=1})}}),
+crit(69982,{achID=1678,id=1})}}),
 ach(4980,{awp=40003,r=1,sourceQuests={26010,26058,26067,26068,26115},g={
-crit(6126,{achID=1678,awp=30002,id=1})}})}),
+crit(6126,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",487,633,378,472,417,424}},g={
 p(488,{npcID=62190,pb=1,g={
 crit(21743,{achID=6585,id=14,pb=1})}}),
 p(412,{description="The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",npcID=61327,pb=1,g={
-crit(19448,{achID=2556,awp=30002,id=3,u=30}),
+crit(19448,{achID=2556,id=3,u=30}),
 crit(21521,{achID=6585,id=78,pb=1}),
 crit(21521,{achID=6586,id=70,pb=1}),
 crit(21521,{achID=6588,id=26,pb=1,u=30})}}),
@@ -17265,10 +17265,10 @@ h(-12,{
 ach(851,{awp=30002,g={
 crit(1497,{achID=43,id=17})}}),
 ach(4935,{awp=40003,sourceQuests={24950,24953,25001,25065,25107,25166,25421,25513,25591},g={
-crit(6127,{achID=1678,awp=30002,id=1})}})}),
+crit(6127,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",484,431,511}},g={
 p(430,{npcID=61438,pb=1,g={
-crit(19449,{achID=2556,awp=30002,id=17,u=30}),
+crit(19449,{achID=2556,id=17,u=30}),
 crit(21616,{achID=6585,id=31,pb=1}),
 crit(21616,{achID=6586,id=23,pb=1})}}),
 p(491,{description="This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",npcID=62257,pb=1,g={
@@ -18986,7 +18986,7 @@ h(-12,{
 ach(846,{awp=30002,g={
 crit(1492,{achID=43,id=12})}}),
 ach(4938,{awp=40003,sourceQuests={25627,25628,27327,27328,28048,28098,28160,28161},g={
-crit(6130,{achID=1678,awp=30002,id=1})}})}),
+crit(6130,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",398,424,414}},g={
 p(505,{coords={
 [64]={{33.8,58.4},{55.8,61.6}}},description="Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",npcID=62255,pb=1,g={
@@ -19888,11 +19888,11 @@ p(543,{coords={
 crit(21752,{achID=6585,id=39,pb=1})}}),
 p(542,{coords={
 [249]={{48.5,34.15},{57.3,50.8},{58,76.8},{59.2,31.5},{66,72.4}}},description="Found around Vir'nal river.",npcID=62892,pb=1,g={
-crit(21305,{achID=5548,awp=40003,id=5}),
+crit(21305,{achID=5548,id=5}),
 crit(21753,{achID=6585,id=41,pb=1})}}),
 p(544,{coords={
 [249]={{48.5,34.15},{57.3,50.8},{58,76.8},{59.2,31.5}}},description="Found around Vir'nal river.",npcID=62895,pb=1,g={
-crit(21303,{achID=5548,awp=40003,id=6}),
+crit(21303,{achID=5548,id=6}),
 crit(21754,{achID=6585,id=49,pb=1})}}),
 p(511,{coords={
 [81]={{36.7,77.7},{48,37}},
@@ -20472,7 +20472,7 @@ h(-12,{
 ach(854,{awp=30002,g={
 crit(1500,{achID=43,id=20})}}),
 ach(4939,{awp=40003,sourceQuests={24695,24707,24720,24721,24722,24723},g={
-crit(6132,{achID=1678,awp=30002,id=1})}})}),
+crit(6132,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",406,393,415,404,503,405}},g={
 p(632,{coords={
 [78]={{50,49}},
@@ -20483,7 +20483,7 @@ crit(21750,{achID=6585,id=21,pb=1})}}),
 p(631,{npcID=62127,pb=1,g={
 crit(21738,{achID=6585,id=24,pb=1})}}),
 p(403,{npcID=61313,pb=1,g={
-crit(21286,{achID=1206,awp=30002,id=11}),
+crit(21286,{achID=1206,id=11}),
 crit(21657,{achID=6585,id=50,pb=1}),
 crit(21657,{achID=6586,id=50,pb=1})}}),
 p(502,{description="Only found around water in Un'goro.",npcID=62370,pb=1,g={
@@ -20984,14 +20984,14 @@ ach(857,{awp=30002,g={
 crit(1503,{achID=43,id=7})}}),
 ach(3356,{providers={{"i",13086}},r=2}),
 ach(4940,{awp=40003,sourceQuests={28472,28628,28639,28710,28722,28742,28782,28828,28830,28831,28842,28848},g={
-crit(6134,{achID=1678,awp=30002,id=1})}})}),
+crit(6134,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",441,633,472,471}},g={
 p(487,{npcID=62189,pb=1,g={
-crit(21300,{achID=5548,awp=40003,id=1}),
+crit(21300,{achID=5548,id=1}),
 crit(21728,{achID=6585,id=2,pb=1})}}),
 p(1163,{awp=50100,description="Found in Everlook.",npcID=68839,pb=1}),
 p(634,{description="Can most commonly be found in Frostwhisper Gorge in southern Winterspring and Lake Kel'theril.",npcID=62435,pb=1,g={
-crit(19417,{achID=2556,awp=30002,id=11,u=30}),
+crit(19417,{achID=2556,id=11,u=30}),
 crit(21512,{achID=6585,id=17,pb=1}),
 crit(21512,{achID=6586,id=16,pb=1})}}),
 p(69,{description="Starts spawning December 21st. Stops spawning March 20th",npcID=7554,pb=1,g={
@@ -22323,10 +22323,10 @@ n(16664,{coords={
 [110]={{78.45,42.55}}},r=1,sym={{"sub","common_vendor",4599}},u=17}),
 n(16623,{coords={
 [110]={{64.8,48.6}}},r=1,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840,3597,3598,203,201,202,200,3606,2367,3607,2369,2366,2364}},u=17})}}),
-h(-43,{awp=50004,pb=1,g={
-crit(19852,{achID=6621,id=4,pb=1})}}),
-h(-12,{awp=40300,g={
-crit(18296,{achID=6031,e=1,id=5,providers={{"i",74142}},r=1})}})}}),
+h(-43,{pb=1,g={
+crit(19852,{achID=6621,awp=50004,id=4,pb=1})}}),
+h(-12,{
+crit(18296,{achID=6031,awp=40300,e=1,id=5,providers={{"i",74142}},r=1})})}}),
 m(84,{icon=255130,isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",g={
 h(-12,{
 ach(5476,{awp=40200,r=2,requireSkill=356,u=40,g={
@@ -26760,7 +26760,7 @@ crit(19851,{achID=6621,id=3,pb=1})}})}}),
 m(14,{icon=236712,lore="The Arathi Highlands are located in southeastern Lordaeron, east of Hillsbrad Foothills and south of the Hinterlands. It is a flat but craggy region that has traditionally been the home of the humans of Arathor, who gave the region its name. The main hubs of activity are now Refuge Pointe and Hammerfall, which houses bases for Alliance and Horde, respectively. The large city of Stromgarde lies in ruins to the southwest, and pockets of Syndicate resistance dot the land. The Boulderfist Orges also infest Arathor, and prove to be a constant threat to the Alliance, Horde, and Syndicate factions vying for supremacy.",petBattleLvl=7,g={
 h(-12,{
 ach(4896,{awp=40003,sourceQuests={26029,26038,26049,26081,26108,26117,26628,26912},g={
-crit(5901,{achID=1676,awp=30002,id=1})}}),
+crit(5901,{achID=1676,id=1})}}),
 ach(761,{awp=30002,g={
 crit(1278,{achID=42,id=3})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",386,417,419}},g={
@@ -27395,7 +27395,7 @@ crit(21562,{achID=6560,id=36,pb=1})}})}}),
 m(15,{icon=236716,lore="Badlands is a scorched zone and the home of the Earthen, Dark Iron Dwarves, and Goblins in Fuselight-by-the-Sea. Formerly a short zone before Cataclysm, it now has two notable chains: The Day Deathwing Died, and the sad tale of the dragon Rhea.",petBattleLvl=13,g={
 h(-12,{
 ach(4900,{awp=40003,sourceQuests={27715,27769,27794,27888,27930},g={
-crit(5902,{achID=1676,awp=30002,id=1})}}),
+crit(5902,{achID=1676,id=1})}}),
 ach(765,{awp=30002,g={
 crit(1279,{achID=42,id=4})}}),
 ach(5444,{awp=40003,crs={46393},providers={{"s",86425}}})}),
@@ -28037,7 +28037,7 @@ s(124343,11603,{f=34,lvl=51,q=3})}})})}}),
 m(17,{icon=236720,lore="The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",petBattleLvl=16,g={
 h(-12,{
 ach(4909,{awp=40003,sourceQuests={25701,25705,25706,25720,26171,26187},g={
-crit(5906,{achID=1676,awp=30002,id=1})}}),
+crit(5906,{achID=1676,id=1})}}),
 ach(766,{awp=30002,g={
 crit(1280,{achID=42,id=5})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",635,415,414,412}},g={
@@ -28569,7 +28569,7 @@ h(-12,{
 ach(775,{awp=30002,g={
 crit(1281,{achID=42,id=6})}}),
 ach(4901,{awp=40003,sourceQuests={28183,28286,28322,28326,28425,28441,28449,28456},g={
-crit(5907,{achID=1676,awp=30002,id=1})}})}),
+crit(5907,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",393,415,423,414}},g={
 p(425,{npcID=61385,pb=1,g={
 crit(21624,{achID=6586,id=4,pb=1}),
@@ -30008,7 +30008,7 @@ crit(21630,{achID=6586,id=17,pb=1})}}),
 p(399,{npcID=61258,pb=1,g={
 crit(21632,{achID=6586,id=55,pb=1})}}),
 p(397,{npcID=61255,pb=1,g={
-crit(21290,{achID=1206,awp=30002,id=16}),
+crit(21290,{achID=1206,id=16}),
 crit(21633,{achID=6585,id=73,pb=1}),
 crit(21633,{achID=6586,id=65,pb=1}),
 crit(21633,{achID=6587,id=18,pb=1,u=17}),
@@ -30907,7 +30907,7 @@ s(172341,39205,{coords={
 [23]={{54.6,42.8},{56.8,49.8},{59.6,31.2}}},crs={28557,28576,28577,28819,28822},f=4,lvl=4,q=0})})}}),
 h(-12,{
 ach(4892,{awp=40003,sourceQuests={27373,27391,27489,27527,27620},g={
-crit(5913,{achID=1676,awp=30002,id=1})}}),
+crit(5913,{achID=1676,id=1})}}),
 ach(771,{awp=30002,g={
 crit(1286,{achID=42,id=25})}}),
 ach(5442,{awp=40003}),
@@ -32170,16 +32170,16 @@ flt(101,{awp=50004,pb=1,sym={{"select","speciesID",646}},g={
 p(374,{npcID=60649,pb=1,g={
 crit(22886,{achID=6586,id=9,pb=1})}}),
 p(459,{description="Found commonly around the small farmhouse SW of Northshire and on Sunstrider Isle.",npcID=62019,pb=1,g={
-crit(21278,{achID=1206,awp=30002,id=2}),
+crit(21278,{achID=1206,id=2}),
 crit(21610,{achID=6586,id=12,pb=1}),
 crit(21610,{achID=6587,id=4,pb=1,u=17}),
 crit(23580,{achID=8397,awp=50400,id=4,pb=1})}}),
 p(447,{npcID=61165,pb=1,g={
-crit(21282,{achID=1206,awp=30002,id=7}),
+crit(21282,{achID=1206,id=7}),
 crit(21639,{achID=6586,id=18,pb=1}),
 crit(21639,{achID=6588,id=9,pb=1,u=30})}}),
 p(378,{npcID=61080,pb=1,g={
-crit(21287,{achID=1206,awp=30002,id=12}),
+crit(21287,{achID=1206,id=12}),
 crit(21508,{achID=6585,id=53,pb=1}),
 crit(21508,{achID=6586,id=53,pb=1}),
 crit(21508,{achID=6587,id=12,pb=1,u=17}),
@@ -32190,8 +32190,8 @@ crit(21518,{achID=6585,id=74,pb=1}),
 crit(21518,{achID=6586,id=66,pb=1}),
 crit(21518,{achID=6587,id=19,pb=1,u=17})}}),
 p(379,{npcID=61081,pb=1,g={
-crit(19426,{achID=2556,awp=30002,id=4,u=30}),
-crit(21276,{achID=1206,awp=30002,id=17}),
+crit(19426,{achID=2556,id=4,u=30}),
+crit(21276,{achID=1206,id=17}),
 crit(21522,{achID=6585,id=82,pb=1}),
 crit(21522,{achID=6586,id=73,pb=1}),
 crit(21522,{achID=6587,id=22,pb=1,u=17}),
@@ -33065,10 +33065,10 @@ h(-12,{u=17,g={
 ach(858,{u=17,g={
 crit(1551,{achID=42,awp=30002,id=16})}}),
 ach(4908,{awp=40003,r=1,sourceQuests={9149,9150,9152,9155,9156,9159,9164,9167,9169,9170,9171,9173,9174,9192,9193,9199,9214,9215,9216,9218,9220,9274,9275,9277,9315},u=17,g={
-crit(5916,{achID=1676,awp=30002,id=1})}})}}),
+crit(5916,{achID=1676,id=1})}})}}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",450,417,419,387,420}},u=17,g={
 p(461,{npcID=62022,pb=1,u=17,g={
-crit(19437,{achID=2556,awp=30002,id=1,u=30}),
+crit(19437,{achID=2556,id=1,u=30}),
 crit(21647,{achID=6586,id=37,pb=1})}}),
 p(463,{description="Found along the western coastline and on the little island.",npcID=62034,pb=1,u=17,g={
 crit(21648,{achID=6586,id=72,pb=1})}})}}),
@@ -33842,7 +33842,7 @@ h(-12,{
 ach(772,{awp=30002,g={
 crit(1287,{achID=42,id=9})}}),
 ach(4895,{awp=40003,r=1,sourceQuests={28138,28144,28146,28156,28237,28616,28634,28636,28647},g={
-crit(5918,{achID=1676,awp=30002,id=1})}})}),
+crit(5918,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",646,648,450,378,417,412,379,420}},g={
 p(453,{coords={
 [25]={{35.4,69.6}}},npcID=61758,pb=1,g={
@@ -35491,7 +35491,7 @@ h(-12,{
 ach(779,{awp=30002,g={
 crit(1288,{achID=42,id=10})}}),
 ach(4899,{awp=40003,r=2,sourceQuests={13648,25118,25733,25734,25735,25780,25801,25805,25819,25857,25868,26120,26128,26147,26148,26189,26868,27026,27033,27037,27116},g={
-crit(5922,{achID=1676,awp=30002,id=1})}})}),
+crit(5922,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",441,417,419,387,440,379}},g={
 p(437,{npcID=61459,pb=1,g={
 crit(21653,{achID=6586,id=40,pb=1})}})}}),
@@ -36014,7 +36014,7 @@ h(-12,{
 ach(781,{awp=30002,g={
 crit(1293,{achID=42,id=17})}}),
 ach(4906,{awp=40003,sourceQuests={208,26269,26305,26345,26362,26731,26734,26737,26765,26775},g={
-crit(15213,{achID=1676,awp=30002,id=1})}}),
+crit(15213,{achID=1676,id=1})}}),
 ach(940,{awp=30002,sourceQuests={208},g={
 crit(2008,{achID=941,id=2,u=30})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",404,424,401}},g={
@@ -36781,7 +36781,7 @@ h(-12,{
 ach(780,{awp=30002,g={
 crit(1289,{achID=42,id=11})}}),
 ach(4902,{awp=40003,r=2,sourceQuests={26545,26607,26726},g={
-crit(5929,{achID=1676,awp=30002,id=1})}})}),
+crit(5929,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",646,378}},g={
 p(395,{npcID=61171,pb=1,g={
 crit(21662,{achID=6586,id=20,pb=1})}}),
@@ -36791,7 +36791,7 @@ crit(21663,{achID=6586,id=47,pb=1})}}),
 p(392,{npcID=61168,pb=1,g={
 crit(21664,{achID=6586,id=58,pb=1})}}),
 p(424,{npcID=61169,pb=1,g={
-crit(19423,{achID=2556,awp=30002,id=9,u=30}),
+crit(19423,{achID=2556,id=9,u=30}),
 crit(21517,{achID=6585,id=59,pb=1}),
 crit(21517,{achID=6586,id=60,pb=1}),
 crit(21517,{achID=6588,id=21,pb=1,u=30})}})}}),
@@ -37412,12 +37412,12 @@ h(-12,{
 ach(774,{awp=30002,g={
 crit(1291,{achID=42,id=14})}}),
 ach(4910,{awp=40001,sourceQuests={27964,27979,28035,28064,28099},g={
-crit(5932,{achID=1676,awp=30002,id=1})}})}),
+crit(5932,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",415}},g={
 p(427,{npcID=61420,pb=1,g={
 crit(21665,{achID=6586,id=3,pb=1})}}),
 p(423,{npcID=61383,pb=1,g={
-crit(21297,{achID=2557,awp=30002,id=8,u=30}),
+crit(21297,{achID=2557,id=8,u=30}),
 crit(21627,{achID=6586,id=39,pb=1})}}),
 p(428,{npcID=61425,pb=1,g={
 crit(21666,{achID=6586,id=46,pb=1})}})}}),
@@ -37878,7 +37878,7 @@ h(-12,{
 ach(769,{awp=30002,g={
 crit(1292,{achID=42,id=15})}}),
 ach(4894,{awp=40003,r=1,sourceQuests={27056,27096,27290,27438,27518,27601},g={
-crit(9081,{achID=1676,awp=30002,id=1})}})}),
+crit(9081,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",628,627,378,417,387,379,420}},g={
 p(455,{npcID=61890,pb=1,g={
 crit(21667,{achID=6586,id=10,pb=1})}})}}),
@@ -38350,10 +38350,10 @@ h(-12,{
 ach(782,{awp=30002,g={
 crit(1294,{achID=42,id=19})}}),
 ach(4904,{awp=40003,sourceQuests={24913,27600,27849,27851,27857,27911,27914},g={
-crit(5939,{achID=1676,awp=30002,id=1})}})}),
+crit(5939,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",403,401,420,418}},g={
 p(648,{npcID=61368,pb=1,g={
-crit(21296,{achID=2557,awp=30002,id=7,u=30}),
+crit(21296,{achID=2557,id=7,u=30}),
 crit(21649,{achID=6586,id=30,pb=1}),
 crit(21649,{achID=6588,id=13,pb=1,u=30})}}),
 p(422,{npcID=61372,pb=1,g={
@@ -38832,9 +38832,9 @@ h(-12,{
 ach(871,{awp=30002,sourceQuests={4621},u=11,g={
 title(111,{u=11})}}),
 ach(4905,{awp=40003,sourceQuests={26555,26612,26613,26665,26703,26814},g={
-crit(5935,{achID=1676,awp=30002,id=1})}}),
+crit(5935,{achID=1676,id=1})}}),
 ach(4995,{awp=40003,g={
-crit(1277,{achID=42,awp=30002,id=18})}})}),
+crit(1277,{achID=42,id=18})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",406,421,407,408,404,424,405}},g={
 p(411,{description="Can be found on Jaguero Isle in The Cape of Stranglethorn. They only spawn when it's raining on the island, and this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the Isle.",npcID=61324,pb=1,g={
 crit(21668,{achID=6586,id=5,pb=1})}}),
@@ -38843,7 +38843,7 @@ crit(21659,{achID=6585,id=85,pb=1}),
 crit(21659,{achID=6586,id=74,pb=1}),
 crit(21659,{achID=6588,id=28,pb=1,u=30})}}),
 p(410,{description="Can be found reliably as secondary pets alongside Baby Apes, but also found in Booty Bay.",npcID=61323,pb=1,g={
-crit(21312,{achID=5548,awp=40003,id=12}),
+crit(21312,{achID=5548,id=12}),
 crit(21670,{achID=6586,id=87,pb=1})}})}}),
 h(-30,{
 exp(35,{awp=40003,g={
@@ -39612,7 +39612,7 @@ h(-12,{
 ach(773,{awp=30002,g={
 crit(1295,{achID=42,id=20})}}),
 ach(4897,{awp=40003,sourceQuests={26210,26211,26212,26224,26225,26238,26240,26267,26268,26283,26308,26309,26357,26368,26369,26387,26419,26462,26485,26486,26490,26491,26492,26516,26521,26524,26525,26526,26532,26643},g={
-crit(5942,{achID=1676,awp=30002,id=1})}})}),
+crit(5942,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",393,448,450,417}},g={
 p(449,{npcID=61752,pb=1,g={
 crit(21674,{achID=6586,id=11,pb=1}),
@@ -40178,7 +40178,7 @@ m(18,{icon=236849,lore="On the northern coast of Lordaeron lies the eerie Tirisf
 m(465,{icon=236457,lore="Deathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.",maps={466},g={
 flt(101,{awp=50004,pb=1,g={
 p(417,{description="Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them.",npcID=61366,pb=1,g={
-crit(19451,{achID=2556,awp=30002,id=18,u=30}),
+crit(19451,{achID=2556,id=18,u=30}),
 crit(21516,{achID=6585,id=55,pb=1}),
 crit(21516,{achID=6586,id=54,pb=1}),
 crit(21516,{achID=6587,id=13,pb=1,u=17}),
@@ -40853,12 +40853,12 @@ crit(21681,{achID=6586,id=28,pb=1})}}),
 p(645,{coords={
 [241]={{29.8,25.13},{46.5,25.1}},
 [634]={{60.78,54.4},{68.25,40}}},description="Commonly found around Vermillion Redoubt in Twilight Highlands.",npcID=62906,pb=1,g={
-crit(21302,{achID=5548,awp=40003,id=4}),
+crit(21302,{achID=5548,id=4}),
 crit(21682,{achID=6586,id=29,pb=1})}}),
 p(431,{coords={
 [71]={{48.9,36.55}},
 [241]={{42.85,53.3},{57,38.7},{65.75,41}}},description="Most commonly found thorough the Verall River valley in Twilight Highlands. Can also be found scattered around north of the river valley, as well as around Badlands and Tanaris.",npcID=61439,pb=1,g={
-crit(21306,{achID=5548,awp=40003,id=7}),
+crit(21306,{achID=5548,id=7}),
 crit(21617,{achID=6585,id=56,pb=1}),
 crit(21617,{achID=6586,id=56,pb=1})}}),
 p(552,{coords={
@@ -40875,7 +40875,7 @@ p(548,{coords={
 crit(21685,{achID=6586,id=89,pb=1})}}),
 p(549,{coords={
 [241]={{45.6,41.3},{46.5,25.1},{50.6,32.2},{56.6,71},{65.5,58},{71.6,66.65}}},description="Very common pet in the forests of Twilight Highlands.",npcID=62904,pb=1,g={
-crit(21313,{achID=5548,awp=40003,id=13}),
+crit(21313,{achID=5548,id=13}),
 crit(21686,{achID=6586,id=90,pb=1})}})}}),
 h(-30,{
 exp(5584,{collectible=false}),
@@ -42875,7 +42875,7 @@ h(-12,{
 ach(770,{awp=30002,g={
 crit(1296,{achID=42,id=24})}}),
 ach(4893,{awp=40003,sourceQuests={26926,26938,26955,27144,27155,27165,27174,27206},g={
-crit(5947,{achID=1676,awp=30002,id=1})}})}),
+crit(5947,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",398,648,378,379,420}},g={
 p(456,{coords={
 [22]={{45.4,70}}},npcID=61826,pb=1})}}),
@@ -43669,15 +43669,15 @@ h(-12,{
 ach(802,{awp=30002,g={
 crit(1297,{achID=42,id=21})}}),
 ach(4903,{awp=40003,r=2,sourceQuests={26270,26297,26370},g={
-crit(5948,{achID=1676,awp=30002,id=1})}})}),
+crit(5948,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",385,386,387,419,379}},g={
 p(646,{npcID=62664,pb=1,g={
-crit(21279,{achID=1206,awp=30002,id=3}),
+crit(21279,{achID=1206,id=3}),
 crit(21629,{achID=6585,id=11,pb=1}),
 crit(21629,{achID=6586,id=13,pb=1}),
 crit(21629,{achID=6588,id=5,pb=1,u=30})}}),
 p(388,{npcID=61158,pb=1,g={
-crit(21280,{achID=1206,awp=30002,id=15}),
+crit(21280,{achID=1206,id=15}),
 crit(21706,{achID=6585,id=69,pb=1}),
 crit(21706,{achID=6588,id=23,pb=1,u=30}),
 crit(21706,{achID=6589,id=39,u=50})}}),
@@ -47224,7 +47224,7 @@ ach(1271,{r=1,sourceQuests={9345,9351,9356,9370,9387,9391,9397,9406,9472,10136,1
 crit(3915,{achID=1262,id=1,u=17})}})}}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",635}},u=17,g={
 p(414,{npcID=61326,pb=1,u=17,g={
-crit(19425,{achID=2556,awp=30002,id=14,u=30}),
+crit(19425,{achID=2556,id=14,u=30}),
 crit(21622,{achID=6585,id=65,pb=1}),
 crit(21622,{achID=6586,id=62,pb=1}),
 crit(21622,{achID=6587,id=16,pb=1,u=17})}})}}),
@@ -56886,11 +56886,11 @@ ach(1012,{minReputation={1037,42000},r=2,u=30}),
 ach(1011,{minReputation={1052,42000},r=1,u=30})}}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",388}},u=30,g={
 p(641,{npcID=62693,pb=1,u=30,g={
-crit(21293,{achID=2557,awp=30002,id=1,u=30}),
+crit(21293,{achID=2557,id=1,u=30}),
 crit(21767,{achID=6588,id=2,pb=1,u=30})}}),
 p(639,{coords={
 [114]={{57,35}}},description="Found all over the yellow/brown tundra between Warsong Hold and Sholazar Basin.",npcID=62695,pb=1,u=30,g={
-crit(21294,{achID=2557,awp=30002,id=2,u=30}),
+crit(21294,{achID=2557,id=2,u=30}),
 crit(21768,{achID=6588,id=4,pb=1,u=30})}}),
 p(1165,{awp=50100,coords={
 [114]={{30,30}}},description="Found in Coldarra.",npcID=68845,pb=1,u=30}),
@@ -56899,7 +56899,7 @@ p(530,{coords={
 crit(21769,{achID=6588,id=18,pb=1,u=30})}}),
 p(536,{coords={
 [115]={{9,60},{18.7,63.3}}},description="There is only a few spawns of this pet, which can be found by the shore in the westernmost part of Dragonblight. However, it is a common secondary pet in both Borean Tundra and Dragonblight!",npcID=62835,pb=1,u=30,g={
-crit(21299,{achID=2557,awp=30002,id=12,u=30}),
+crit(21299,{achID=2557,id=12,u=30}),
 crit(21770,{achID=6588,id=31,pb=1,u=30})}})}}),
 h(-30,{u=30,g={
 exp(4023,{collectible=false,u=30,g={
@@ -59219,13 +59219,13 @@ ach(2016,{pvp=1,r=2,u=30}),
 ach(2017,{pvp=1,r=1,u=30})}}),
 flt(101,{awp=50004,pb=1,u=30,g={
 p(647,{npcID=62818,pb=1,u=30,g={
-crit(21295,{achID=2557,awp=30002,id=6,u=30}),
+crit(21295,{achID=2557,id=6,u=30}),
 crit(21679,{achID=6586,id=25,pb=1}),
 crit(21679,{achID=6588,id=12,pb=1,u=30})}}),
 p(534,{npcID=62819,pb=1,u=30,g={
 crit(21772,{achID=6588,id=14,pb=1,u=30})}}),
 p(633,{npcID=61677,pb=1,u=30,g={
-crit(21298,{achID=2557,awp=30002,id=9,u=30}),
+crit(21298,{achID=2557,id=9,u=30}),
 crit(21688,{achID=6585,id=45,pb=1}),
 crit(21688,{achID=6586,id=48,pb=1}),
 crit(21688,{achID=6588,id=16,pb=1,u=30})}})}}),
@@ -60044,11 +60044,11 @@ crit(5049,{achID=41,id=2,u=30})}})}}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",646,647,450,378,417,424,388,397,387,412,379}},u=30,g={
 p(523,{coords={
 [117]={{56.5,51}}},description="Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occasionally as a secondary pet.",npcID=62640,pb=1,u=30,g={
-crit(19444,{achID=2556,awp=30002,id=6,u=30}),
+crit(19444,{achID=2556,id=6,u=30}),
 crit(21773,{achID=6588,id=7,pb=1,u=30})}}),
 p(644,{coords={
 [117]={{58,52}}},description="Found in Wyrmskull Village outside Utgarde Keep as well as occasionally as a secondary pet.",npcID=62641,pb=1,u=30,g={
-crit(19439,{achID=2556,awp=30002,id=15,u=30}),
+crit(19439,{achID=2556,id=15,u=30}),
 crit(21774,{achID=6588,id=10,pb=1,u=30})}}),
 p(529,{coords={
 [117]={{30,62}}},description="Found around Kamagua, on The Isle of Spears.",npcID=62669,pb=1,u=30,g={
@@ -65126,7 +65126,7 @@ h(-12,{u=50,g={
 ach(6541,{u=50,g={
 crit(19386,{achID=7520,id=1})}}),
 ach(6974,{u=50,g={
-crit(20129,{achID=46,awp=30002,id=6,u=30})}}),
+crit(20129,{achID=46,id=6,u=30})}}),
 ach(6828,{r=2,u=50,g={
 mnt(130985,{b=1,itemID=89785,lvl=70,q=4,r=2,u=50}),
 crit(19738,{achID=6829,id=2,rwp=50200,u=2})}}),
@@ -73451,8 +73451,8 @@ n(66741,{awp=50100,coords={
 q(31958,{isDaily=1,pb=1,sourceAchievements={6606},g={
 i(89125,{awp=50004,b=1,f=55,pb=1,q=1}),
 crit(23493,{achID=8348,awp=50300,id=6,pb=1})}}),
-crit(21857,{achID=6606,awp=50004,id=7,pb=1,u=50}),
-crit(21857,{achID=7499,awp=50004,id=43,pb=1})}}),
+crit(21857,{achID=6606,id=7,pb=1,u=50}),
+crit(21857,{achID=7499,id=43,pb=1})}}),
 q(31951,{coords={
 [390]={{31.2,74.2}}},pb=1,qgs={66741},sourceQuests={31930,31952},g={
 qo(1,{coords={

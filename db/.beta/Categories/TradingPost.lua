@@ -253,7 +253,7 @@ h(-555,{u=2,g={
 mnt(412088,{b=1,itemID=206156,lvl=10,questID=76157,u=2})}}),
 flt(101,{pb=1,u=2,g={
 p(242,{b=1,cost={{"c",2032,750}},itemID=49343,npcID=36511,pb=1,spellID=68810,u=2,g={
-crit(23598,{achID=8397,awp=50400,id=23,pb=1})}})}}),
+crit(23598,{achID=8397,id=23,pb=1})}})}}),
 flt(100,{u=2,g={
 mnt(411565,{b=1,cost={{"c",2032,650}},itemID=206027,lvl=10,u=2}),
 mnt(107203,{b=1,cost={{"c",2032,900}},itemID=76755,lvl=10,u=2})}}),
@@ -1549,7 +1549,7 @@ p(3244,{cost={{"c",2032,200}},itemID=190176,npcID=185324,spellID=366842,u=2}),
 p(3250,{cost={{"c",2032,200}},itemID=190603,npcID=183708,spellID=367732,u=2}),
 p(4253,{b=1,cost={{"c",2032,200}},itemID=208045,npcID=208436,spellID=417464,u=2}),
 p(242,{b=1,cost={{"c",2032,200}},itemID=49343,npcID=36511,pb=1,spellID=68810,u=2,g={
-crit(23598,{achID=8397,awp=50400,id=23,pb=1})}})}}),
+crit(23598,{achID=8397,id=23,pb=1})}})}}),
 flt(100,{u=2,g={
 mnt(417245,{b=1,cost={{"c",2032,500}},itemID=207821,lvl=10,u=2}),
 mnt(427435,{b=1,cost={{"c",2032,500}},itemID=210919,u=2}),

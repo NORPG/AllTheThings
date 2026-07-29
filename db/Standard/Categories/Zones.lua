@@ -39,13 +39,13 @@ title(98)}}),
 ach(9069,{awp=60002,pb=1,providers={{"i",113216}},g={
 p(1605,{b=1,itemID=120121,npcID=88830,pb=1,spellID=177233})}}),
 ach(12988,{awp=80001,g={
-crit(41308,{achID=46,awp=30002,id=9}),
-crit(41308,{achID=12989,awp=80000,id=1}),
+crit(41308,{achID=46,id=9}),
+crit(41308,{achID=12989,id=1}),
 crit(41308,{achID=40956,awp=110007,id=9})}}),
 ach(12930,{awp=80001,pb=1,g={
 p(2431,{b=1,itemID=163634,npcID=143464,pb=1,spellID=279576})}}),
 ach(4868,{awp=40003,g={
-crit(13600,{achID=46,awp=30002,id=5})}}),
+crit(13600,{achID=46,id=5})}}),
 ah(13279,{awp=80001,pb=1,type="a",g={
 ach(13279,{pb=1,g={
 p(2535,{b=1,itemID=165907,npcID=147884,pb=1,spellID=286837})}}),
@@ -877,7 +877,7 @@ p(3518,{b=1,itemID=205013,npcID=204237,pb=1,spellID=407946})}}),
 ach(46,{
 title(47)}),
 ach(13144,{awp=80001,g={
-crit(43123,{achID=12989,awp=80000,id=3}),
+crit(43123,{achID=12989,id=3}),
 crit(43123,{achID=40956,awp=110007,id=10})}}),
 ach(6590,{awp=50004,pb=1,g={
 title(199,{pb=1})}})}),
@@ -1156,7 +1156,7 @@ faction(69,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,providers={{"i",45579}},r=2
 crit(5328,{achID=948,awp=30002,id=2,r=2}),
 crit(5328,{achID=2760,awp=30200,id=2,r=2})}}),
 faction(1134,{awp=40003,maps={84},providers={{"i",64882}},r=2,g={
-crit(16826,{achID=948,awp=30002,id=4,r=2})}})}),
+crit(16826,{achID=948,id=4,r=2})}})}),
 h(-32,{awp=40001,g={
 fp(457,{coords={
 [89]={{36.61,47.82}}},crs={40552},r=2})}}),
@@ -1326,8 +1326,8 @@ h(-56,{awp=60100,g={
 o(240625,{coords={
 [89]={{43,75.8}}},description="Loot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.",g={
 cq(38100,{b=1,itemID=122239,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181659,g={
-crit(27765,{achID=10015,awp=60003,id=29,r=2}),
-crit(27765,{achID=10016,awp=60003,id=29,r=1})}})}})}}),
+crit(27765,{achID=10015,id=29,r=2}),
+crit(27765,{achID=10016,id=29,r=1})}})}})}}),
 h(-58,{
 n(4234,{coords={
 [89]={{54.6,83.2}}},r=2,sym={{"select","itemID",2527,2535}}}),
@@ -1485,7 +1485,7 @@ exp(5170,{collectible=false,coords={
 [85]={{48.8,83.3}}}})}),
 h(-31,{
 faction(1133,{awp=40003,providers={{"i",64884}},r=1,g={
-crit(16825,{achID=762,awp=30002,id=2,r=1})}}),
+crit(16825,{achID=762,id=2,r=1})}}),
 faction(530,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,providers={{"i",45582}},r=1,g={
 crit(5313,{achID=762,awp=30002,id=3,r=1}),
 crit(5313,{achID=2766,awp=30200,id=2,r=1})}}),
@@ -5402,8 +5402,8 @@ n(16714,{coords={
 [103]={{69.8,89.4}}},r=2,sym={{"select","itemID",926,2025,2520,1198,2029,851,922,927,2024,2528,852,2207,2209,923,2526,2208,2534,2027,1196}}}),
 n(16750,{coords={
 [103]={{67.6,94.6}}},r=2,sym={{"select","itemID",847,1845,849,1846,850,848,2392,2393,2395,2396,2397,2394,1853,287,1852,718,286,285}}})}),
-h(-43,{awp=50004,pb=1,g={
-crit(19848,{achID=6584,id=4,pb=1})}}),
+h(-43,{pb=1,g={
+crit(19848,{achID=6584,awp=50004,id=4,pb=1})}}),
 h(-12,{
 crit(6639,{achID=603,awp=30002,pvp=1}),
 crit(11080,{achID=3556,awp=30202,e=101,id=3,r=2}),
@@ -5429,7 +5429,7 @@ h(-44,{awp=60100,g={
 prof(356,{
 cq(38076,{b=1,coords={
 [88]={{28.61,24.61}}},description="Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",itemID=122214,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,r=1,spellID=181590,g={
-crit(27771,{achID=10016,awp=60003,id=10,r=1})}})})}}),
+crit(27771,{achID=10016,id=10,r=1})}})})}}),
 h(-45,{
 q(29362,{awp=40100,coords={
 [88]={{51.2,52.2}}},isDaily=1,lvl=10,qgs={3026},r=1,requireSkill=185,g={
@@ -5721,9 +5721,9 @@ crit(19850,{achID=6621,id=2,pb=1})}})}}),
 m(63,{icon=236713,lore="Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",petBattleLvl=4,lvl=7,g={
 h(-12,{
 ach(4925,{awp=40003,r=2,g={
-crit(15218,{achID=1678,awp=30002,id=1})}}),
+crit(15218,{achID=1678,id=1})}}),
 ach(4976,{awp=40003,r=1,g={
-crit(15231,{achID=1678,awp=30002,id=1})}}),
+crit(15231,{achID=1678,id=1})}}),
 ach(845,{awp=30002,g={
 crit(1491,{achID=43,id=11})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",417,424,379,420}},g={
@@ -5732,7 +5732,7 @@ crit(21702,{achID=6585,id=27,pb=1})}}),
 p(495,{npcID=62312,pb=1,g={
 crit(21691,{achID=6585,id=28,pb=1})}}),
 p(450,{npcID=61753,pb=1,g={
-crit(19443,{achID=2556,awp=30002,id=13}),
+crit(19443,{achID=2556,id=13}),
 crit(21514,{achID=6585,id=42,pb=1}),
 crit(21514,{achID=6586,id=43,pb=1}),
 crit(21514,{achID=6588,id=15,pb=1})}}),
@@ -5855,8 +5855,8 @@ q(26454,{awp=40003,coords={
 o(181916)}}),
 q(9517,{awp=20001,coords={
 [63]={{86.8,44.8}}},qgs={17291},qis={23776,24081},r=2,rwp=40003,u=2,g={
-o(181687),
-o(181916)}}),
+o(181687,{u=2}),
+o(181916,{u=2})}}),
 q(13624,{awp=40003,coords={
 [63]={{26.7,36.9}}},lvl=7,qgs={11806},r=2}),
 q(13919,{awp=40003,coords={
@@ -6406,9 +6406,9 @@ s(2155,5613,{b=1,f=28,spellID=14134,u=2})}}),
 q(1140,{coords={
 [63]={{26.2,38.6}}},qgs={3663},r=2,rwp=40003,sourceQuests={973},u=2,g={
 o(19901,{coords={
-[63]={{66.7,57}}}}),
+[63]={{66.7,57}}},u=2}),
 o(20352,{coords={
-[63]={{81.6,48.5}}}})}}),
+[63]={{81.6,48.5}}},u=2})}}),
 q(1167,{coords={
 [63]={{26.2,38.6}}},maps={62},qgs={3663},r=2,rwp=40003,sourceQuests={1140},u=2}),
 q(6543,{coords={
@@ -6513,9 +6513,9 @@ s(7032,16975,{b=1,f=4,u=2}),
 s(7033,16977,{b=1,f=5,u=2}),
 s(7034,16978,{b=1,f=7,u=2}),
 o(178195,{coords={
-[63]={{66.5,56.9},{79.1,45.5},{80.7,49.7}}}}),
+[63]={{66.5,56.9},{79.1,45.5},{80.7,49.7}}},u=2}),
 o(178204,{coords={
-[224]={{25.6,73.4}}}})}}),
+[224]={{25.6,73.4}}},u=2})}}),
 q(25945,{awp=40003,coords={
 [63]={{49.8,65.7}}},lvl=10,qgs={41678},r=1,sourceQuests={28532}}),
 q(13617,{awp=40003,coords={
@@ -6544,8 +6544,8 @@ n(10559,{coords={
 o(240617,{awp=60100,coords={
 [63]={{56.5,49.3}}},description="Found inside a large hollow tree trunk.",modelScale=0.2,g={
 cq(38090,{b=1,itemID=122226,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181604,g={
-crit(27755,{achID=10015,awp=60003,id=19,r=2}),
-crit(27755,{achID=10016,awp=60003,id=19,r=1})}})}}),
+crit(27755,{achID=10015,id=19,r=2}),
+crit(27755,{achID=10016,id=19,r=1})}})}}),
 n(10644,{coords={
 [63]={{25.2,26.8},{26.2,15.4}}}}),
 n(10643,{coords={
@@ -6605,7 +6605,7 @@ r(13617,{awp=40300,b=1,itemID=78343,requireSkill=333,skillID=2494})})}}),
 m(76,{icon=236714,lore="Azshara was taken over by the goblins post-Shattering. It used to be the night elves' greatest center before the Sundering, but was destroyed due to the reckless magic of the Highborne. Known for being a beautiful and tranquil autumnal zone pre-Shattering, the Goblins have marred the landscape with their pollution and quarries, carving the land into the shape of a Horde symbol.",petBattleLvl=3,lvl=5,g={
 h(-12,{
 ach(4927,{awp=40003,r=1,g={
-crit(15232,{achID=1678,awp=30002,id=1})}}),
+crit(15232,{achID=1678,id=1})}}),
 ach(852,{awp=30002,g={
 crit(1498,{achID=43,id=18})}}),
 ach(5448,{awp=40003,providers={{"s",66212}}}),
@@ -7049,10 +7049,10 @@ q(5535,{coords={
 [76]={{11.4,78.2}}},crs={6116,6117},qgs={11548},rwp=40003,u=2}),
 q(3517,{coords={
 [76]={{22.4,51.4}}},qgs={8587},qis={10538,10539,10540,10541},r=1,rwp=40003,u=2,g={
-o(148513),
-o(148514),
-o(148515),
-o(148516)}}),
+o(148513,{u=2}),
+o(148514,{u=2}),
+o(148515,{u=2}),
+o(148516,{u=2})}}),
 q(14487,{awp=40003,coords={
 [76]={{34.3,44.9}}},lvl=5,qgs={36745},qis={49642},r=1,sourceQuests={24448},g={
 i(49629,{spellID=69310}),
@@ -7684,7 +7684,7 @@ i(23759,{b=1,coords={
 m(106,{awp=20001,icon=236721,lore="Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",petBattleLvl=3,g={
 h(-12,{
 ach(4926,{awp=40003,r=2,g={
-crit(15219,{achID=1678,awp=30002,id=1})}}),
+crit(15219,{achID=1678,id=1})}}),
 ach(861,{
 crit(1601,{achID=43,awp=30002,id=10})})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",628,627,417,397}},g={
@@ -8148,7 +8148,7 @@ toy(170380,{b=1,cost={{"c",1166,1000}}})}})})}}),
 m(62,{crs={141489},icon=236739,lore="Darkshore, a shadowy forest punctuated by waterfalls, is one of the saddest zones in the game. It underwent many changes and heavy losses in the Cataclysm--invasions by the trolls, Twilight Cultist infiltrations in the south, and most notably, the destruction of Auberdine, viewed by many as one of the most atmospheric towns. Alliance players help rescue and comfort dying NPCs, aid the refugees of Auberdine, and assist Malfurion Stormrage in driving back the threat of the cultists.",petBattleLvl=3,petBattleLvl=3,lvl=5,g={
 h(-12,{
 ach(4928,{awp=40003,r=2,g={
-crit(15220,{achID=1678,awp=30002,id=1})}}),
+crit(15220,{achID=1678,id=1})}}),
 ach(844,{awp=30002,g={
 crit(1490,{achID=43,id=9})}}),
 ach(13251,{awp=80100,r=2,g={
@@ -8325,9 +8325,9 @@ q(947,{coords={
 [62]={{37.3,43.6}}},qgs={3583},qis={5270,5271},r=2,rwp=40003,u=2,g={
 s(2152,5610,{b=1,f=3,u=2}),
 o(11713,{coords={
-[62]={{55.4,36.4}}}}),
+[62]={{55.4,36.4}}},u=2}),
 o(11714,{coords={
-[62]={{55.1,34.6}}}})}}),
+[62]={{55.1,34.6}}},u=2})}}),
 q(2138,{coords={
 [62]={{38.8,43.4}}},crs={2164},qgs={3701},r=2,rwp=40003,sourceQuests={2118},u=2}),
 q(13545,{awp=40003,coords={
@@ -8352,9 +8352,9 @@ q(982,{coords={
 s(6169,15401,{b=1,f=4,u=2}),
 s(6170,15402,{b=1,f=6,u=2}),
 o(175165,{coords={
-[62]={{38.3,28.8}}}}),
+[62]={{38.3,28.8}}},u=2}),
 o(175166,{coords={
-[62]={{39.7,27.4}}}})}}),
+[62]={{39.7,27.4}}},u=2})}}),
 q(13507,{awp=40003,coords={
 [62]={{58.9,19.4}}},crs={32859,34248},lvl=5,qgs={32965},r=2,sourceQuests={13504,13505},g={
 s(25836,52659,{b=1,f=3}),
@@ -8624,9 +8624,9 @@ crit(38793,{achID=4928,id=3,r=2})}}),
 q(953,{coords={
 [62]={{40.3,59.7}}},qgs={3639},r=2,rwp=40003,u=2,g={
 o(17188,{coords={
-[62]={{43.3,58.7}}}}),
+[62]={{43.3,58.7}}},u=2}),
 o(17189,{coords={
-[62]={{42.7,63.1}}}})}}),
+[62]={{42.7,63.1}}},u=2})}}),
 q(1141,{coords={
 [62]={{36.1,44.9}}},cost={{"i",12238,6}},qgs={10216},r=2,requireSkill=356,rwp=40003,u=2,g={
 s(4367,12225,{b=1,f=57,requireSkill=356,spellID=15956,u=2})}}),
@@ -8862,7 +8862,7 @@ i(45040,{awp=40003,b=1,coords={
 m(66,{icon=236742,lore="Desolace used to be a barren zone, primarily populated by centaur tribes. Post-Shattering, the Cenarion Circle has begun to heal the land, leading to regrowth in the center of Desolace.",petBattleLvl=7,lvl=10,g={
 h(-12,{
 ach(4930,{awp=40003,g={
-crit(16678,{achID=1678,awp=30002,id=1})}}),
+crit(16678,{achID=1678,id=1})}}),
 ach(848,{awp=30002,g={
 crit(1494,{achID=43,id=14})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",838,479,478,417,452,424,419}},g={
@@ -8871,7 +8871,7 @@ crit(21712,{achID=6585,id=20,pb=1})}}),
 p(483,{npcID=62185,pb=1,g={
 crit(21715,{achID=6585,id=35,pb=1})}}),
 p(482,{npcID=62184,pb=1,g={
-crit(21307,{achID=5548,awp=40003,id=8}),
+crit(21307,{achID=5548,id=8}),
 crit(21699,{achID=6585,id=61,pb=1}),
 crit(21716,{achID=6587,id=14,pb=1})}}),
 p(485,{description="Found in the southeastern area of Desolace. It only spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",npcID=62187,pb=1,g={
@@ -9842,7 +9842,7 @@ crit(11082,{achID=3557,awp=30202,e=101,id=1,r=1}),
 crit(11134,{achID=3580,awp=30202,e=101,id=1,r=2})}),
 flt(101,{awp=50004,pb=1,g={
 p(635,{npcID=61325,pb=1,g={
-crit(19368,{achID=2556,awp=30002,id=12}),
+crit(19368,{achID=2556,id=12}),
 crit(21509,{achID=6585,id=1,pb=1}),
 crit(21509,{achID=6586,id=1,pb=1}),
 crit(21509,{achID=6587,id=1,pb=1})}}),
@@ -9864,7 +9864,7 @@ crit(21646,{achID=6586,id=80,pb=1}),
 crit(21646,{achID=6587,id=25,pb=1}),
 crit(21646,{achID=6588,id=30,pb=1})}}),
 p(418,{npcID=61367,pb=1,g={
-crit(19438,{achID=2556,awp=30002,id=2}),
+crit(19438,{achID=2556,id=2}),
 crit(21661,{achID=6585,id=98,pb=1}),
 crit(21661,{achID=6586,id=85,pb=1})}})}}),
 h(-30,{
@@ -10270,11 +10270,11 @@ q(786,{coords={
 s(1919,4933,{b=1,f=3,u=2}),
 s(2235,6062,{b=1,f=4,u=2}),
 o(3189,{coords={
-[1]={{49.8,81.3}}}}),
+[1]={{49.8,81.3}}},u=2}),
 o(3190,{coords={
-[1]={{47.6,77.4}}}}),
+[1]={{47.6,77.4}}},u=2}),
 o(3192,{coords={
-[1]={{46.3,79}}}})}}),
+[1]={{46.3,79}}},u=2})}}),
 q(44281,{awp=70003,coords={
 [1]={{46,13.7}}},lvl=10,qgs={4311},r=1,sourceQuests={43926},g={
 i(141294,{b=1,f=52})}}),
@@ -10356,14 +10356,14 @@ i(142266),
 i(142263,{f=55,spellID=229868})})}}),
 h(-12,{
 ach(4929,{awp=40003,r=2,g={
-crit(15221,{achID=1678,awp=30002,id=1})}}),
+crit(15221,{achID=1678,id=1})}}),
 ach(4978,{awp=40003,r=1,g={
-crit(15233,{achID=1678,awp=30002,id=1})}}),
+crit(15233,{achID=1678,id=1})}}),
 ach(850,{awp=30002,g={
 crit(1495,{achID=43,id=15})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",398,387,412,420}},g={
 p(385,{npcID=61143,pb=1,g={
-crit(19440,{achID=2556,awp=30002,id=7}),
+crit(19440,{achID=2556,id=7}),
 crit(21631,{achID=6585,id=46,pb=1}),
 crit(21631,{achID=6586,id=48,pb=1}),
 crit(21631,{achID=6587,id=9,pb=1}),
@@ -10383,14 +10383,14 @@ exp(496,{awp=30002,g={
 crit(1363,{achID=850,id=8})}}),
 exp(499,{awp=40001}),
 exp(4046,{awp=40001,g={
-crit(14113,{achID=850,awp=30002,id=4})}}),
+crit(14113,{achID=850,id=4})}}),
 exp(518),
 exp(4010,{awp=40001,g={
-crit(14114,{achID=850,awp=30002,id=5})}}),
+crit(14114,{achID=850,id=5})}}),
 exp(504,{awp=40001}),
 exp(503,{awp=40001}),
 exp(403,{awp=40001,g={
-crit(14115,{achID=850,awp=30002,id=6})}}),
+crit(14115,{achID=850,id=6})}}),
 exp(508,{awp=40001}),
 exp(497,{awp=40001}),
 exp(509,{collectible=false}),
@@ -11274,7 +11274,7 @@ h(-12,{
 ach(853,{awp=30002,g={
 crit(1499,{achID=43,id=19})}}),
 ach(4931,{awp=40003,g={
-crit(15234,{achID=1678,awp=30002,id=1})}})}),
+crit(15234,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",406,420}},g={
 p(500,{description="Can be found around Shatter Scar Vale near Infernal Sentries.",npcID=62317,pb=1,g={
 crit(21722,{achID=6585,id=43,pb=1})}}),
@@ -11556,13 +11556,13 @@ o(176161,{coords={
 q(5165,{coords={
 [77]={{51.2,82.2}}},qgs={10922},qis={12906},rwp=40003,sourceQuests={5159},u=2,g={
 o(176158,{coords={
-[77]={{36.3,56.3}}}}),
+[77]={{36.3,56.3}}},u=2}),
 o(176159,{coords={
-[77]={{37.7,52.7}}}}),
+[77]={{37.7,52.7}}},u=2}),
 o(176160,{coords={
-[77]={{36.7,53.3}}}}),
+[77]={{36.7,53.3}}},u=2}),
 o(176161,{coords={
-[77]={{36.5,55.2}}}})}}),
+[77]={{36.5,55.2}}},u=2})}}),
 q(28382,{awp=40003,coords={
 [77]={{61.8,26.6}}},crs={48453},lvl=15,qgs={47931},r=2,sourceQuests={28381},g={
 s(32893,65341,{b=1,f=8}),
@@ -11955,14 +11955,14 @@ h(-12,{
 ach(849,{awp=30002,g={
 crit(1496,{achID=43,id=16})}}),
 ach(4932,{awp=40003,r=2,g={
-crit(15223,{achID=1678,awp=30002,id=1})}}),
+crit(15223,{achID=1678,id=1})}}),
 ach(4979,{awp=40003,r=1,g={
-crit(15235,{achID=1678,awp=30002,id=1})}})}),
+crit(15235,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",378,379}},g={
 p(557,{description="Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",npcID=62395,pb=1,g={
 crit(21726,{achID=6585,id=47,pb=1})}}),
 p(387,{npcID=61142,pb=1,g={
-crit(19428,{achID=2556,awp=30002,id=10}),
+crit(19428,{achID=2556,id=10}),
 crit(21519,{achID=6585,id=74,pb=1}),
 crit(21519,{achID=6586,id=66,pb=1}),
 crit(21519,{achID=6587,id=20,pb=1}),
@@ -11972,12 +11972,12 @@ h(-30,{
 exp(1099,{awp=30002,g={
 crit(1390,{achID=849,id=10})}}),
 exp(5036,{awp=40001,g={
-crit(1393,{achID=849,awp=30002,id=13})}}),
+crit(1393,{achID=849,id=13})}}),
 exp(2577,{awp=30002,g={
 crit(1385,{achID=849,id=6})}}),
 exp(1111),
 exp(5072,{awp=40001,g={
-crit(1394,{achID=849,awp=30002,id=14})}}),
+crit(1394,{achID=849,id=14})}}),
 exp(1105,{awp=30002,g={
 crit(1386,{achID=849,id=7})}}),
 exp(1106),
@@ -11988,7 +11988,7 @@ crit(1391,{achID=849,id=11})}}),
 exp(1137,{awp=30002,g={
 crit(1395,{achID=849,id=2})}}),
 exp(1116,{awp=40001,g={
-crit(1371,{achID=849,awp=30002,id=3})}}),
+crit(1371,{achID=849,id=3})}}),
 exp(2522,{awp=30002,g={
 crit(1388,{achID=849,id=8})}}),
 exp(1114),
@@ -12913,7 +12913,7 @@ p(479,{coords={
 crit(21713,{achID=6585,id=23,pb=1})}}),
 p(415,{coords={
 [198]={{60,70}}},description="Common around fiery and dry areas of Mount Hyjal, as well as around Searing Gorge, Blasted Lands and Burning Steppes",npcID=61328,pb=1,g={
-crit(19442,{achID=2556,awp=30002,id=16}),
+crit(19442,{achID=2556,id=16}),
 crit(21621,{achID=6585,id=25,pb=1}),
 crit(21621,{achID=6586,id=20,pb=1})}}),
 p(541,{coords={
@@ -12921,7 +12921,7 @@ p(541,{coords={
 crit(21732,{achID=6585,id=26,pb=1})}}),
 p(539,{coords={
 [198]={{52.5,17.3}}},description="Can be found in the Hyjal Barrow Dens.",npcID=62884,pb=1,g={
-crit(21301,{achID=5548,awp=40003,id=3})}}),
+crit(21301,{achID=5548,id=3})}}),
 p(547,{coords={
 [198]={{60.55,26.35}}},description="Can be found around the Nordrassil pond.",npcID=62888,pb=1,g={
 crit(21734,{achID=6585,id=48,pb=1})}}),
@@ -14178,8 +14178,8 @@ q(767,{coords={
 [7]={{47.5,60.2}}},qgs={2993},r=1,rwp=40003,sourceQuests={763},u=2}),
 q(771,{coords={
 [7]={{47.8,57.5}}},qgs={3054},qis={4808,4809},r=1,rwp=40003,sourceQuests={767},u=2,g={
-o(2910),
-o(2912)}}),
+o(2910,{u=2}),
+o(2912,{u=2})}}),
 q(772,{coords={
 [7]={{47.8,57.5}}},qgs={3054},qis={4823},r=1,rwp=40003,sourceQuests={771},u=2,g={
 s(1896,4906,{b=1,f=5,u=2}),
@@ -14319,9 +14319,9 @@ r(6414,{itemID=5484,requireSkill=185,skillID=2548})}})})}}),
 m(10,{awp=40003,icon=236717,lore="Northern Barrens is a dry grassy zone, dotted with farms and few lush oasis. It is primarily a low-level zone for Horde players, but Alliance players can travel to the Steamwheedle Cartel city of Ratchet.",maps={11},petBattleLvl=3,lvl=5,g={
 h(-12,{
 ach(750,{
-crit(1489,{achID=43,awp=30002,id=6})}),
+crit(1489,{achID=43,id=6})}),
 ach(4933,{r=1,g={
-crit(15236,{achID=1678,awp=30002,id=1})}})}),
+crit(15236,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",635,631,419}},g={
 p(474,{description="Can be found under large trees alongside Plainsland Cheetahs.",npcID=62129,pb=1,g={
 crit(21737,{achID=6585,id=12,pb=1}),
@@ -14757,7 +14757,7 @@ s(35454,69221,{b=1,f=4}),
 s(35449,69216,{b=1,f=5}),
 s(75991,131710,{awp=70003,b=1,f=6}),
 s(35455,69222,{b=1,f=22}),
-crit(38790,{achID=4933,awp=40003,id=7,r=1})}}),
+crit(38790,{achID=4933,id=7,r=1})}}),
 q(29109,{awp=40100,coords={
 [10]={{48.7,59.5}}},lvl=5,qgs={3429},r=1,sourceQuests={29095}}),
 q(29110,{awp=40100,coords={
@@ -14850,11 +14850,11 @@ q(894,{coords={
 q(900,{coords={
 [10]={{52.41,11.6}}},providers={{"o",4141}},rwp=40003,sourceQuests={894},u=2,g={
 o(4072,{coords={
-[10]={{52.3,11.6}}}}),
+[10]={{52.3,11.6}}},u=2}),
 o(61935,{coords={
-[10]={{52.3,11.4}}}}),
+[10]={{52.3,11.4}}},u=2}),
 o(61936,{coords={
-[10]={{52.4,11.5}}}})}}),
+[10]={{52.4,11.5}}},u=2})}}),
 q(901,{coords={
 [10]={{52.41,11.6}}},crs={3471},providers={{"o",4141}},qis={5089},rwp=40003,sourceQuests={900},u=2}),
 q(902,{coords={
@@ -14907,9 +14907,9 @@ q(888,{coords={
 s(2077,5337,{b=1,f=4,u=2}),
 s(2068,5320,{b=1,f=7,u=2}),
 o(3767,{coords={
-[10]={{62.6,49.7}}}}),
+[10]={{62.6,49.7}}},u=2}),
 o(3768,{coords={
-[10]={{63.6,49.2}}}})}}),
+[10]={{63.6,49.2}}},u=2})}}),
 q(3281,{coords={
 [10]={{51.93,30.32}}},qgs={3464},qis={5061},r=1,rwp=40003,sourceQuests={869},u=2,g={
 s(4277,11853,{b=1,f=5,u=2}),
@@ -15000,7 +15000,7 @@ q(29094,{awp=40100,coords={
 s(35450,69217,{b=1,f=5}),
 s(35456,69223,{b=1,f=21}),
 s(75990,131709,{awp=70003,b=1,f=6}),
-crit(38789,{achID=4933,awp=40003,id=6,r=1})}}),
+crit(38789,{achID=4933,id=6,r=1})}}),
 q(877,{coords={
 [10]={{60.6,85.4}}},lvl=5,qgs={34626},qis={5068},r=1,sourceQuests={13988},g={
 crit(38784,{achID=4933,id=4,r=1}),
@@ -15771,7 +15771,7 @@ h(-12,{
 ach(856,{awp=30002,g={
 crit(1502,{achID=43,id=22})}}),
 ach(4934,{awp=40003,g={
-crit(15237,{achID=1678,awp=30002,id=1})}})}),
+crit(15237,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",406,484,482,512,414,511}},g={
 p(513,{description="Starts spawning June 21st. Stops spawning September 23rd.",npcID=62526,pb=1,g={
 crit(21739,{achID=6585,id=52,pb=1})}}),
@@ -16043,14 +16043,14 @@ q(9419,{coords={
 [81]={{39.6,46.8}}},qgs={17080},r=2,rwp=70200,sourceQuests={9415},u=2,g={
 i(13446,{f=55,lvl=20,spellID=17534,u=2}),
 i(13444,{f=55,lvl=10,spellID=17531,u=2}),
-o(181597),
-o(181598)}}),
+o(181597,{u=2}),
+o(181598,{u=2})}}),
 q(9422,{coords={
 [81]={{54.6,62.8}}},qgs={17079},r=1,rwp=70200,sourceQuests={9416},u=2,g={
 i(13446,{f=55,lvl=20,spellID=17534,u=2}),
 i(13444,{f=55,lvl=10,spellID=17531,u=2}),
-o(181597),
-o(181598)}}),
+o(181597,{u=2}),
+o(181598,{u=2})}}),
 q(8779,{cost={{"i",11178,1},{"i",14344,1},{"i",12364,1}},providers={{"i",21259}},repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,u=2}),
 i(20805,{b=1,r=2,u=2})}}),
@@ -16435,11 +16435,11 @@ crit(21542,{achID=6560,id=18,pb=1})}})}}),
 m(199,{awp=40003,icon=236717,lore="Southern Barrens is a war-torn land after the Shattering. Camp Taurajo has been razed as the Alliance retaliate for the Horde's offensive in Ashenvale, plowing through to link Theramore to their northern bases. Naralex, formerly sleeping in Wailing Caverns, is rescued and has created a wild mutant jungle in this zone as well.",petBattleLvl=9,lvl=10,g={
 h(-12,{
 ach(4996,{
-crit(16066,{achID=43,awp=30002,id=8})}),
+crit(16066,{achID=43,id=8})}),
 ach(4937,{r=2,g={
-crit(15226,{achID=1678,awp=30002,id=1})}}),
+crit(15226,{achID=1678,id=1})}}),
 ach(4981,{r=1,g={
-crit(15239,{achID=1678,awp=30002,id=1})}})}),
+crit(15239,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",635,474,631,386,419}},g={
 p(475,{description="Can be found with groups of roaming Dusthoof Giraffe.",npcID=62130,pb=1,g={
 crit(21742,{achID=6585,id=30,pb=1})}})}}),
@@ -17078,14 +17078,14 @@ h(-12,{
 ach(847,{awp=30002,g={
 crit(1493,{achID=43,id=13})}}),
 ach(4936,{awp=40003,r=2,g={
-crit(15225,{achID=1678,awp=30002,id=1})}}),
+crit(15225,{achID=1678,id=1})}}),
 ach(4980,{awp=40003,r=1,g={
-crit(15238,{achID=1678,awp=30002,id=1})}})}),
+crit(15238,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",487,633,378,472,417,424}},g={
 p(488,{npcID=62190,pb=1,g={
 crit(21743,{achID=6585,id=14,pb=1})}}),
 p(412,{description="The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",npcID=61327,pb=1,g={
-crit(19448,{achID=2556,awp=30002,id=3}),
+crit(19448,{achID=2556,id=3}),
 crit(21521,{achID=6585,id=77,pb=1}),
 crit(21521,{achID=6586,id=69,pb=1}),
 crit(21521,{achID=6588,id=26,pb=1})}}),
@@ -17634,11 +17634,11 @@ s(2562,6671,{b=1,f=7,u=2}),
 s(2561,6670,{b=1,f=5,u=2}),
 i(6669,{b=1,f=52,u=2}),
 o(19596,{coords={
-[65]={{25.6,11.4}}}}),
+[65]={{25.6,11.4}}},u=2}),
 o(19597,{coords={
-[65]={{29.5,15.8}}}}),
+[65]={{29.5,15.8}}},u=2}),
 o(19598,{coords={
-[65]={{27.9,13.8}}}})}}),
+[65]={{27.9,13.8}}},u=2})}}),
 q(1063,{coords={
 [10]={{35.28,27.84}}},qgs={4049},r=1,rwp=40003,sourceQuests={1062},u=2}),
 q(26100,{awp=40003,coords={
@@ -17794,10 +17794,10 @@ h(-12,{
 ach(851,{awp=30002,g={
 crit(1497,{achID=43,id=17})}}),
 ach(4935,{awp=40003,g={
-crit(15240,{achID=1678,awp=30002,id=1})}})}),
+crit(15240,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",484,431,511}},g={
 p(430,{npcID=61438,pb=1,g={
-crit(19449,{achID=2556,awp=30002,id=17}),
+crit(19449,{achID=2556,id=17}),
 crit(21616,{achID=6585,id=31,pb=1}),
 crit(21616,{achID=6586,id=22,pb=1})}}),
 p(491,{description="This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",npcID=62257,pb=1,g={
@@ -19300,8 +19300,8 @@ s(4034,10656,{b=1,f=7}),
 o(152095)}}),
 q(3521,{coords={
 [57]={{60.8,42}}},crs={1986,1988,1989},qgs={8583},qis={10639,10640,10641},r=2,rwp=40003,sourceQuests={3519},u=2,g={
-o(152094),
-o(152095)}}),
+o(152094,{u=2}),
+o(152095,{u=2})}}),
 q(3522,{coords={
 [57]={{60.8,42}}},qgs={8583},qis={10642},r=2,rwp=40003,sourceQuests={3522},u=2,g={
 s(4033,10655,{b=1,f=4,u=2}),
@@ -19679,7 +19679,7 @@ h(-12,{
 ach(846,{awp=30002,g={
 crit(1492,{achID=43,id=12})}}),
 ach(4938,{awp=40003,g={
-crit(15241,{achID=1678,awp=30002,id=1})}})}),
+crit(15241,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",398,424,414}},g={
 p(505,{coords={
 [64]={{33.8,58.4},{55.8,61.6}}},description="Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",npcID=62255,pb=1,g={
@@ -20029,11 +20029,11 @@ s(6207,15457,{b=1,f=4,u=2}),
 s(6208,15458,{b=1,f=5,u=2}),
 s(6209,15459,{b=1,f=7,u=2}),
 o(176344,{coords={
-[64]={{32,33}}}}),
+[64]={{32,33}}},u=2}),
 o(190483,{coords={
-[64]={{34,39}}}}),
+[64]={{34,39}}},u=2}),
 o(190484,{coords={
-[64]={{39,41}}}})}}),
+[64]={{39,41}}},u=2})}}),
 q(1105,{coords={
 [64]={{78.1,77.1}}},crs={4142,4143,4144},qgs={4453},qis={5795},rwp=40003,u=2}),
 q(25660,{awp=40003,coords={
@@ -20574,11 +20574,11 @@ p(543,{coords={
 crit(21752,{achID=6585,id=39,pb=1})}}),
 p(542,{coords={
 [249]={{48.5,34.15},{57.3,50.8},{58,76.8},{59.2,31.5},{66,72.4}}},description="Found around Vir'nal river.",npcID=62892,pb=1,g={
-crit(21305,{achID=5548,awp=40003,id=5}),
+crit(21305,{achID=5548,id=5}),
 crit(21753,{achID=6585,id=41,pb=1})}}),
 p(544,{coords={
 [249]={{48.5,34.15},{57.3,50.8},{58,76.8},{59.2,31.5}}},description="Found around Vir'nal river.",npcID=62895,pb=1,g={
-crit(21303,{achID=5548,awp=40003,id=6}),
+crit(21303,{achID=5548,id=6}),
 crit(21754,{achID=6585,id=49,pb=1})}}),
 p(511,{coords={
 [81]={{36.7,77.7},{48,37}},
@@ -21124,7 +21124,7 @@ h(-12,{
 ach(854,{awp=30002,g={
 crit(1500,{achID=43,id=20})}}),
 ach(4939,{awp=40003,g={
-crit(15242,{achID=1678,awp=30002,id=1})}})}),
+crit(15242,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",406,393,415,404,503,405}},g={
 p(632,{coords={
 [78]={{50,49}},
@@ -21295,9 +21295,9 @@ r(17557,{itemID=13481,requireSkill=171,skillID=2485,u=2})}}),
 q(3881,{coords={
 [78]={{43.9,7.1}}},qgs={9270},qis={11112,11113},rwp=40003,u=2,g={
 o(161521,{coords={
-[78]={{38.5,66}}}}),
+[78]={{38.5,66}}},u=2}),
 o(161526,{coords={
-[78]={{68.4,36.4}}}})}}),
+[78]={{68.4,36.4}}},u=2})}}),
 q(24695,{awp=40003,coords={
 [78]={{83.5,46}}},lvl=15,qgs={38502},sourceQuests={24694},g={
 i(53594,{b=1,f=51}),
@@ -21626,14 +21626,14 @@ ach(857,{awp=30002,g={
 crit(1503,{achID=43,id=7})}}),
 ach(3356,{providers={{"i",13086}},r=2}),
 ach(4940,{awp=40003,g={
-crit(15243,{achID=1678,awp=30002,id=1})}})}),
+crit(15243,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",441,633,472,471}},g={
 p(487,{npcID=62189,pb=1,g={
-crit(21300,{achID=5548,awp=40003,id=1}),
+crit(21300,{achID=5548,id=1}),
 crit(21728,{achID=6585,id=2,pb=1})}}),
 p(1163,{awp=50100,description="Found in Everlook.",npcID=68839,pb=1}),
 p(634,{description="Can most commonly be found in Frostwhisper Gorge in southern Winterspring and Lake Kel'theril.",npcID=62435,pb=1,g={
-crit(19417,{achID=2556,awp=30002,id=11}),
+crit(19417,{achID=2556,id=11}),
 crit(21512,{achID=6585,id=17,pb=1})}}),
 p(69,{description="Starts spawning December 21st. Stops spawning March 20th",npcID=7554,pb=1,g={
 crit(21757,{achID=6585,id=75,pb=1})}})}}),
@@ -22045,13 +22045,13 @@ q(6603,{coords={
 q(5245,{coords={
 [83]={{52,30.4}}},maps={23},qgs={10301},qis={12891,12896,12897,12898,12899},r=2,rwp=40003,sourceQuests={5244},u=2,g={
 o(175888,{coords={
-[83]={{55,42}}}}),
+[83]={{55,42}}},u=2}),
 o(175891,{coords={
-[83]={{50,41}}}}),
+[83]={{50,41}}},u=2}),
 o(175892,{coords={
-[83]={{53,43}}}}),
+[83]={{53,43}}},u=2}),
 o(175893,{coords={
-[83]={{52,41}}}})}}),
+[83]={{52,41}}},u=2})}}),
 q(28615,{awp=40003,coords={
 [83]={{65.3,46.2}}},lvl=15,qgs={48723},g={
 i(64637,{spellID=91647})}}),
@@ -22173,8 +22173,8 @@ h(-56,{awp=60100,g={
 o(240616,{coords={
 [83]={{68,73.9}}},description="Loot the Frozen Supplies in a nook at the base of the pillar.",g={
 cq(38089,{b=1,itemID=122224,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181603,g={
-crit(27754,{achID=10015,awp=60003,id=18,r=2}),
-crit(27754,{achID=10016,awp=60003,id=18,r=1})}})}})}}),
+crit(27754,{achID=10015,id=18,r=2}),
+crit(27754,{achID=10016,id=18,r=1})}})}})}}),
 h(-58,{
 n(50129,{awp=40003,coords={
 [83]={{58,63.8}}},g={
@@ -22262,13 +22262,13 @@ crit(19409,{achID=6590,id=1,pb=1})}}),
 ach(6613,{awp=50004,pb=1,g={
 crit(19429,{achID=6611,id=4,pb=1})}}),
 ach(12456,{awp=70305,r=2,g={
-crit(39733,{achID=1676,awp=30002,id=1})}}),
+crit(39733,{achID=1676,id=1})}}),
 ach(1676,{awp=50004,g={
 crit(6143,{achID=7520,id=1})}}),
 ach(6603,{awp=50004,pb=1,r=2,g={
 crit(19418,{achID=6607,id=5,pb=1})}}),
 ach(12455,{awp=70305,r=2,g={
-crit(39734,{achID=1676,awp=30002,id=1})}}),
+crit(39734,{achID=1676,id=1})}}),
 ah(61040,{awp=120000,pb=1,type="a",g={
 ach(61040,{pb=1,g={
 p(3519,{b=1,itemID=205017,npcID=204240,pb=1,spellID=407955}),
@@ -22339,7 +22339,7 @@ r(10015,{learnedAt=285,requireSkill=164,rwp=40003,skillID=2477,u=2})}})}),
 prof(356,{
 i(34864,{awp=20400}),
 cq(38075,{awp=60100,b=1,itemID=122204,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,r=2,spellID=181579,g={
-crit(27746,{achID=10015,awp=60003,id=10,r=2})}}),
+crit(27746,{achID=10015,id=10,r=2})}}),
 s(15992,34484,{awp=20300,b=1,collectible=false,description="Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!"})})}),
 h(-45,{
 q(38396,{awp=60100,coords={
@@ -22403,13 +22403,13 @@ q(3451,{coords={
 q(3483,{coords={
 [87]={{71,94.2}}},qgs={8517},r=2,repeatable=1,sourceQuests={3451},u=2}),
 o(149480,{coords={
-[76]={{39,50}}}}),
+[76]={{39,50}}},u=2}),
 o(149481,{coords={
-[76]={{36,53}}}}),
+[76]={{36,53}}},u=2}),
 o(149482,{coords={
-[76]={{39,55}}}}),
+[76]={{39,55}}},u=2}),
 o(149483,{coords={
-[76]={{42,64}}}})}}),
+[76]={{42,64}}},u=2})}}),
 q(7342,{coords={
 [87]={{19.6,52.2}}},qgs={14183},r=2,repeatable=1,rwp=40003,u=2}),
 q(29355,{awp=40001,coords={
@@ -23025,8 +23025,8 @@ q(9722,{c={2},coords={
 [110]={{92,38.8}}},qgs={25223},races={10},rwp=40003,sourceQuests={9721},u=2}),
 q(9692,{c={2},coords={
 [110]={{89.3,35.2}}},cost={{"i",24223,1}},crs={4802,4803,4805,17830,17832},maps={95,213,221,310},qgs={17717},qis={6995,24224,24225,24226},races={10},rwp=40003,sourceQuests={9691},u=2,g={
-o(182011),
-o(182024)}}),
+o(182011,{u=2}),
+o(182024,{u=2})}}),
 q(9619,{c={9},coords={
 [95]={{42.6,15.7}}},crs={5676},providers={{"o",181698}},qis={23732},races={10},rwp=40003,sourceQuests={9529},u=2}),
 q(9690,{c={2},coords={
@@ -23145,10 +23145,10 @@ n(16623,{coords={
 [110]={{64.8,48.6}}},r=1,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840,3597,3598,203,201,202,200,3606,2367,3607,2369,2366,2364}}})}),
 o(207325,{awp=40001,coords={
 [110]={{62.5,60.5}}},r=1,skipFill=1,sym={{"select","questID",49851,29390,29388,36499,29612,29611,43926,28790,29157,49817,49852,28572,28493,28496,28580,28711,39198,28671,28667,27722,28548,39203,49543,28554,28577,28542,28510,49545,39206,28560,49546,28571,49533,49537,49538,49540,49541,27721,49549,39196,39201,28494,28688,28705,28581,49532,49535,28527,28568,28549,49548,49536,28532,28677,49547,28509,39182,28704,28574,28504,49542,28717,28557,28526,49539,27718,28575,28545,39180,49534}}}),
-h(-43,{awp=50004,pb=1,g={
-crit(19852,{achID=6621,id=4,pb=1})}}),
-h(-12,{awp=30002,pvp=1,g={
-crit(6634,{achID=604,pvp=1})}})}}),
+h(-43,{pb=1,g={
+crit(19852,{achID=6621,awp=50004,id=4,pb=1})}}),
+h(-12,{pvp=1,g={
+crit(6634,{achID=604,awp=30002,pvp=1})}})}}),
 m(84,{icon=255130,isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",g={
 h(-12,{
 ach(5476,{awp=40200,r=2,requireSkill=356,g={
@@ -24712,9 +24712,9 @@ q(212,{coords={
 q(335,{coords={
 [84]={{40.1,85.3}}},maps={47,56},qgs={1435},qis={2779,2784},r=2,rwp=40003,u=2,g={
 o(321,{coords={
-[47]={{78.5,36}}}}),
+[47]={{78.5,36}}},u=2}),
 o(2084,{coords={
-[56]={{64.7,75.5}}}})}}),
+[56]={{64.7,75.5}}},u=2})}}),
 q(336,{coords={
 [84]={{40.1,85.3}}},qgs={1435},qis={2788},r=2,rwp=40003,sourceQuests={335},u=2}),
 q(62250,{awp=100002,description="This quest is automatically offered upon reaching the specified level while in Chromie Time.",lc={1,"lvl",61},lvl=10,r=2,g={
@@ -24937,11 +24937,11 @@ q(2745,{coords={
 q(1920,{c={8},coords={
 [84]={{49.5,85.8}}},crs={6492},qgs={5497},qis={7247,7292,7308},races={1,7},rwp=40003,sourceQuests={1919},u=2,g={
 o(103574,{coords={
-[84]={{51,95}}}}),
+[84]={{51,95}}},u=2}),
 o(105174,{coords={
-[84]={{49.6,85.4}}}}),
+[84]={{49.6,85.4}}},u=2}),
 o(105175,{coords={
-[84]={{49.6,85.4}}}})}}),
+[84]={{49.6,85.4}}},u=2})}}),
 q(2746,{coords={
 [84]={{73.2,35.7}}},cost={{"i",4306,3}},maps={37},qgs={7766},qis={8683},r=2,rwp=40003,sourceQuests={2745},u=2,g={
 o(142076,{coords={
@@ -27227,11 +27227,11 @@ q(243,{coords={
 q(1960,{c={8},coords={
 [90]={{85,10.2}}},crs={6492},qgs={4568},qis={7247,7292,7308},r=1,rwp=40003,sourceQuests={1959},u=2,g={
 o(103574,{coords={
-[90]={{53.9,73.2}}}}),
+[90]={{53.9,73.2}}},u=2}),
 o(105174,{coords={
-[90]={{85.4,10.2}}}}),
+[90]={{85.4,10.2}}},u=2}),
 o(105175,{coords={
-[90]={{85.4,10.2}}}})}}),
+[90]={{85.4,10.2}}},u=2})}}),
 q(29320,{awp=40100,coords={
 [90]={{80.7,31.2}}},isDaily=1,lvl=10,qgs={4573},r=1,requireSkill=356,g={
 i(69907,{spellID=99315}),
@@ -27357,8 +27357,8 @@ h(-56,{awp=60100,g={
 o(240623,{coords={
 [90]={{58.1,93.8}}},description="Use Zidormi to access Tirisfal Glades of the past. Loot the strongbox at the base of a pillar to the left of Sylvanas Windrunner. Alliance characters *can* loot this.",icon=1041430,modelRotation=270,modelScale=1.3,g={
 cq(38095,{b=1,itemID=122233,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181654,g={
-crit(27760,{achID=10015,awp=60003,id=24,r=2}),
-crit(27760,{achID=10016,awp=60003,id=24,r=1})}})}})}}),
+crit(27760,{achID=10015,id=24,r=2}),
+crit(27760,{achID=10016,id=24,r=1})}})}})}}),
 h(-58,{
 n(4604,{coords={
 [90]={{54.8,38}}},r=1,sym={{"select","itemID",3027,3026}},g={
@@ -27612,7 +27612,7 @@ crit(19851,{achID=6621,id=3,pb=1})}})}}),
 m(14,{icon=236712,lore="The Arathi Highlands are located in southeastern Lordaeron, east of Hillsbrad Foothills and south of the Hinterlands. It is a flat but craggy region that has traditionally been the home of the humans of Arathor, who gave the region its name. The main hubs of activity are now Refuge Pointe and Hammerfall, which houses bases for Alliance and Horde, respectively. The large city of Stromgarde lies in ruins to the southwest, and pockets of Syndicate resistance dot the land. The Boulderfist Orges also infest Arathor, and prove to be a constant threat to the Alliance, Horde, and Syndicate factions vying for supremacy.",petBattleLvl=7,lvl=10,g={
 h(-12,{
 ach(4896,{awp=40003,g={
-crit(15204,{achID=1676,awp=30002,id=1})}}),
+crit(15204,{achID=1676,id=1})}}),
 ach(761,{awp=30002,g={
 crit(1278,{achID=42,id=3})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",386,417,419}},g={
@@ -27700,11 +27700,11 @@ q(695,{coords={
 q(696,{coords={
 [14]={{46.65,47}}},qgs={2789},qis={4530,4531,4532},r=2,rwp=40003,sourceQuests={695},u=2,g={
 o(2716,{coords={
-[14]={{18.1,69.1}}}}),
+[14]={{18.1,69.1}}},u=2}),
 o(2717,{coords={
-[14]={{18.2,68.2}}}}),
+[14]={{18.2,68.2}}},u=2}),
 o(2718,{coords={
-[14]={{18,67.9}}}})}}),
+[14]={{18,67.9}}},u=2})}}),
 q(26038,{awp=40003,coords={
 [14]={{13,69.2}}},lvl=10,qgs={41983},qis={4530,4531,4532},r=2,sourceQuests={26037},g={
 s(29431,59159,{b=1,f=24}),
@@ -27762,13 +27762,13 @@ q(662,{coords={
 [14]={{32.6,81.4}}},qgs={2767},qis={4487,4488,4489,4490},rwp=40003,sourceQuests={663},u=2,g={
 s(1748,4511,{b=1,f=23,u=2}),
 o(2707,{coords={
-[14]={{23,84.5}}}}),
+[14]={{23,84.5}}},u=2}),
 o(2708,{coords={
-[14]={{20.5,85.5}}}}),
+[14]={{20.5,85.5}}},u=2}),
 o(2709,{coords={
-[14]={{23.5,85.1}}}}),
+[14]={{23.5,85.1}}},u=2}),
 o(2710,{coords={
-[14]={{20.7,85.1}}}})}}),
+[14]={{20.7,85.1}}},u=2})}}),
 q(664,{coords={
 [14]={{33.8,80.8}}},crs={2595,2596},qgs={2769},rwp=40003,u=2,g={
 s(1747,4509,{b=1,f=5,u=2})}}),
@@ -27899,11 +27899,11 @@ q(26052,{awp=40003,coords={
 q(651,{coords={
 [14]={{84.3,30.9}}},providers={{"o",2701}},qis={4483,4484,4485},rwp=40003,sourceQuests={642},u=2,g={
 o(2689,{coords={
-[14]={{25.5,30.2}}}}),
+[14]={{25.5,30.2}}},u=2}),
 o(2690,{coords={
-[14]={{52.1,50.7}}}}),
+[14]={{52.1,50.7}}},u=2}),
 o(2691,{coords={
-[14]={{66.7,29.8}}}})}}),
+[14]={{66.7,29.8}}},u=2})}}),
 q(26041,{awp=40003,coords={
 [14]={{79.8,31.6}}},lvl=10,providers={{"o",2701}},qis={4483,4484,4485},sourceQuests={26039},g={
 o(2689,{coords={
@@ -28201,7 +28201,7 @@ crit(21562,{achID=6560,id=36,pb=1})}})}}),
 m(15,{icon=236716,lore="Badlands is a scorched zone and the home of the Earthen, Dark Iron Dwarves, and Goblins in Fuselight-by-the-Sea. Formerly a short zone before Cataclysm, it now has two notable chains: The Day Deathwing Died, and the sad tale of the dragon Rhea.",petBattleLvl=13,lvl=15,g={
 h(-12,{
 ach(4900,{awp=40003,g={
-crit(15205,{achID=1676,awp=30002,id=1})}}),
+crit(15205,{achID=1676,id=1})}}),
 ach(765,{awp=30002,g={
 crit(1279,{achID=42,id=4})}}),
 ach(5444,{awp=40003,crs={46393},providers={{"s",86425}}})}),
@@ -28687,9 +28687,9 @@ o(126049)}}),
 q(9439,{awp=20001,coords={
 [15]={{5.8,48}}},qgs={17097},qis={23658,23660},r=1,rwp=40003,u=2,g={
 o(181627,{coords={
-[15]={{41.7,26.8}}}}),
+[15]={{41.7,26.8}}},u=2}),
 o(181628,{coords={
-[15]={{41,29.2}}}})}}),
+[15]={{41,29.2}}},u=2})}}),
 q(28580,{awp=40003,coords={
 [25]={{56.6,47},{59.9,63.5}},
 [85]={{23.4,94.2},{45.6,5.9},{49.8,76.4},{58.3,45.7},{59,44.4},{66.7,49.5}},
@@ -28813,7 +28813,7 @@ hqt(53656,{coords={
 m(17,{crs={88206},icon=236720,lore="The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",petBattleLvl=16,lvl=15,g={
 h(-12,{
 ach(4909,{awp=40003,g={
-crit(15206,{achID=1676,awp=30002,id=1})}}),
+crit(15206,{achID=1676,id=1})}}),
 ach(766,{awp=30002,g={
 crit(1280,{achID=42,id=5})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",635,415,414,412}},g={
@@ -29328,7 +29328,7 @@ h(-12,{
 ach(775,{awp=30002,g={
 crit(1281,{achID=42,id=6})}}),
 ach(4901,{awp=40003,g={
-crit(15207,{achID=1676,awp=30002,id=1})}})}),
+crit(15207,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",393,415,423,414}},g={
 p(425,{npcID=61385,pb=1,g={
 crit(21624,{achID=6586,id=4,pb=1}),
@@ -31279,8 +31279,8 @@ s(2297,6204,{f=5,lvl=12})}}),
 n(91592,{awp=60100,coords={
 [47]={{23.7,36.3}}},description="Travel to the northeast corner of Raven Hill Cemetery. Getting this music roll requires speaking to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges).",g={
 cq(38088,{b=1,itemID=122223,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181602,g={
-crit(27753,{achID=10015,awp=60003,id=17,r=2}),
-crit(27753,{achID=10016,awp=60003,id=17,r=1})}})}}),
+crit(27753,{achID=10015,id=17,r=2}),
+crit(27753,{achID=10016,id=17,r=1})}})}}),
 n(503,{awp=100107,coords={
 [47]={{20.3,26.8},{24.2,34.5},{25.6,30.2}}},description="Spawns in one of multiple locations in the Dawning Wood Catacombs.",g={
 s(1734,4462,{f=3,lvl=12}),
@@ -31789,7 +31789,7 @@ r(413515,{itemID=206528,requireSkill=773,skillID=2514}),
 r(416690,{itemID=207575,requireSkill=773,skillID=2514})}})})}})}}),
 h(-12,{
 ach(4892,{awp=40003,g={
-crit(15209,{achID=1676,awp=30002,id=1})}}),
+crit(15209,{achID=1676,id=1})}}),
 ach(771,{awp=30002,g={
 crit(1286,{achID=42,id=25})}}),
 ach(5442,{awp=40003,g={
@@ -32141,9 +32141,9 @@ q(28578,{awp=40003,coords={
 q(5168,{coords={
 [23]={{75.6,53.8}}},maps={22},qgs={11063},qis={12954,12955},rwp=40003,sourceQuests={5210},u=2,g={
 o(176206,{coords={
-[22]={{42.4,18.9}}}}),
+[22]={{42.4,18.9}}},u=2}),
 o(176207,{coords={
-[22]={{63.7,57.2}}}})}}),
+[22]={{63.7,57.2}}},u=2})}}),
 q(27388,{awp=40003,coords={
 [23]={{35.2,68.1}}},crs={11063},lvl=15,qgs={10667},qis={12954,12955,13202},sourceQuests={27386},g={
 o(176206,{coords={
@@ -32451,9 +32451,9 @@ o(205877,{coords={
 q(5181,{coords={
 [23]={{75.6,53.8}}},qgs={11063},qis={12956,12957},rwp=40003,sourceQuests={5210},u=2,g={
 o(176208,{coords={
-[23]={{51.1,49.9}}}}),
+[23]={{51.1,49.9}}},u=2}),
 o(176209,{coords={
-[23]={{53.9,65.8}}}})}}),
+[23]={{53.9,65.8}}},u=2})}}),
 q(27387,{awp=40003,coords={
 [23]={{35.2,68.1}}},lvl=15,qgs={10667},qis={12956,12957},sourceQuests={27386},g={
 s(31604,62954,{b=1,f=5}),
@@ -32994,8 +32994,8 @@ crit(21518,{achID=6585,id=73,pb=1}),
 crit(21518,{achID=6586,id=65,pb=1}),
 crit(21518,{achID=6587,id=19,pb=1})}}),
 p(379,{npcID=61081,pb=1,g={
-crit(19426,{achID=2556,awp=30002,id=4}),
-crit(21276,{achID=1206,awp=30002,id=17}),
+crit(19426,{achID=2556,id=4}),
+crit(21276,{achID=1206,id=17}),
 crit(21522,{achID=6585,id=81,pb=1}),
 crit(21522,{achID=6586,id=72,pb=1}),
 crit(21522,{achID=6587,id=22,pb=1}),
@@ -33409,11 +33409,11 @@ s(8291,20996,{b=1,f=5,u=2}),
 s(8290,20995,{b=1,f=4,u=2}),
 s(75516,131235,{b=1,f=6,u=2}),
 o(180510,{coords={
-[467]={{52.1,69.4}}}}),
+[467]={{52.1,69.4}}},u=2}),
 o(180511,{coords={
-[467]={{40.4,50.2}}}}),
+[467]={{40.4,50.2}}},u=2}),
 o(180512,{coords={
-[467]={{59.9,57.1}}}})}}),
+[467]={{59.9,57.1}}},u=2})}}),
 q(37443,{altQuests={8330},awp=60002,coords={
 [467]={{64,42.6}}},qgs={15295},qis={20470,20471,20472},races={10},sourceQuests={8326},g={
 i(20474,{b=1,f=113}),
@@ -33878,10 +33878,10 @@ h(-12,{
 ach(858,{
 crit(1551,{achID=42,awp=30002,id=16})}),
 ach(4908,{awp=40003,r=1,g={
-crit(15210,{achID=1676,awp=30002,id=1})}})}),
+crit(15210,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",450,417,419,387,420}},g={
 p(461,{npcID=62022,pb=1,g={
-crit(19437,{achID=2556,awp=30002,id=1}),
+crit(19437,{achID=2556,id=1}),
 crit(21647,{achID=6586,id=36,pb=1})}}),
 p(463,{description="Found along the western coastline and on the little island.",npcID=62034,pb=1,g={
 crit(21648,{achID=6586,id=71,pb=1})}})}}),
@@ -34621,7 +34621,7 @@ h(-12,{
 ach(772,{awp=30002,g={
 crit(1287,{achID=42,id=9})}}),
 ach(4895,{awp=40003,r=1,g={
-crit(15211,{achID=1676,awp=30002,id=1})}})}),
+crit(15211,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",646,648,450,378,417,412,379,420}},g={
 p(453,{coords={
 [25]={{35.4,69.6}}},npcID=61758,pb=1,g={
@@ -34764,9 +34764,9 @@ o(1736,{coords={
 q(532,{coords={
 [25]={{62.32,20.33}}},crs={2387},qgs={2215},qis={3657},r=1,rwp=40003,sourceQuests={529},u=2,g={
 o(1759,{coords={
-[25]={{29.6,41.6}}}}),
+[25]={{29.6,41.6}}},u=2}),
 o(1761,{coords={
-[25]={{29.7,41.8}}}})}}),
+[25]={{29.7,41.8}}},u=2})}}),
 q(539,{coords={
 [25]={{62.32,20.33}}},crs={2269},qgs={2215},r=1,rwp=40003,sourceQuests={532},u=2}),
 q(541,{coords={
@@ -34956,11 +34956,11 @@ q(552,{coords={
 q(553,{coords={
 [25]={{63.87,19.66}}},qgs={2429},qis={3710},r=1,rwp=40003,sourceQuests={552},u=2,g={
 o(1768,{coords={
-[25]={{46,32}}}}),
+[25]={{46,32}}},u=2}),
 o(1769,{coords={
-[25]={{46,32}}}}),
+[25]={{46,32}}},u=2}),
 o(1770,{coords={
-[1416]={{37,68}}}})}}),
+[1416]={{37,68}}},u=2})}}),
 q(28331,{awp=40001,coords={
 [25]={{49.1,66.3}}},crs={48269},lvl=7,qgs={48129},qis={63508},r=1,g={
 s(33123,65676,{awp=40003,b=1,f=28})}}),
@@ -35185,9 +35185,9 @@ s(1392,3752,{b=1,f=4,u=2}),
 s(1381,3733,{b=1,f=7,u=2}),
 r(3397,{itemID=3734,requireSkill=185,skillID=2548,u=2}),
 o(1721,{coords={
-[25]={{75.2,41.6},{75.6,42.6},{79.6,42}}}}),
+[25]={{75.2,41.6},{75.6,42.6},{79.6,42}}},u=2}),
 o(1722,{coords={
-[25]={{79.6,39.6},{79.6,40.6}}}})}}),
+[25]={{79.6,39.6},{79.6,40.6}}},u=2})}}),
 q(28375,{awp=40001,coords={
 [25]={{50,74.3}}},lvl=7,qgs={48218},r=1,sourceQuests={28354}}),
 q(1713,{c={1},coords={
@@ -36248,13 +36248,13 @@ s(29307,58975,{awp=40003,b=1,f=31,u=2}),
 s(29306,58974,{awp=40003,b=1,f=27,u=2}),
 s(29305,58973,{awp=40003,b=1,f=29,u=2}),
 o(104564,{coords={
-[48]={{48.8,30}}}}),
+[48]={{48.8,30}}},u=2}),
 o(104569,{coords={
-[48]={{48.5,20.6}}}}),
+[48]={{48.5,20.6}}},u=2}),
 o(104574,{coords={
-[48]={{51.8,24.3}}}}),
+[48]={{51.8,24.3}}},u=2}),
 o(104575,{coords={
-[48]={{54.3,26.5}}}})}}),
+[48]={{54.3,26.5}}},u=2})}}),
 q(27032,{awp=40003,coords={
 [48]={{81.6,64.7}}},lvl=5,qgs={6577},r=2,sourceQuests={27031}}),
 q(26932,{awp=40003,coords={
@@ -36624,7 +36624,7 @@ h(-12,{
 ach(781,{awp=30002,g={
 crit(1293,{achID=42,id=17})}}),
 ach(4906,{awp=40003,g={
-crit(15213,{achID=1676,awp=30002,id=1})}}),
+crit(15213,{achID=1676,id=1})}}),
 ach(940,{sourceQuests={208},g={
 de(4841,{awp=110207,itemID=248808,spellID=1247794}),
 crit(2008,{achID=941,awp=30002,id=2})}})}),
@@ -36768,9 +36768,9 @@ q(204,{coords={
 s(1632,4126,{b=1,f=21,u=2}),
 s(1644,4140,{b=1,f=4,u=2}),
 o(263,{coords={
-[224]={{44.5,9.8}}}}),
+[224]={{44.5,9.8}}},u=2}),
 o(264,{coords={
-[224]={{44.5,9.8}}}})}}),
+[224]={{44.5,9.8}}},u=2})}}),
 q(26732,{awp=40003,coords={
 [50]={{47.3,11.1}}},crs={937,940,941,942},lvl=10,qgs={739},qis={2633},r=2,g={
 s(30469,61054,{b=1,f=7}),
@@ -36929,13 +36929,13 @@ q(26740,{awp=40003,coords={
 q(207,{coords={
 [224]={{37.8,3.6}}},qgs={739},qis={2005,2006,2007,2008},r=2,rwp=40003,u=2,g={
 o(52,{coords={
-[224]={{23,12}}}}),
+[224]={{23,12}}},u=2}),
 o(54,{coords={
-[224]={{23.7,9}}}}),
+[224]={{23.7,9}}},u=2}),
 o(57,{coords={
-[224]={{29.5,19.2}}}}),
+[224]={{29.5,19.2}}},u=2}),
 o(58,{coords={
-[224]={{24.8,22.8},{24.8,23.1}}}})}}),
+[224]={{24.8,22.8},{24.8,23.1}}},u=2})}}),
 q(206,{coords={
 [224]={{37.8,3.6}}},crs={818},qgs={739},qis={3616},r=2,rwp=40003,sourceQuests={202,205},u=2,g={
 s(1631,4125,{b=1,f=1,u=2})}}),
@@ -37059,11 +37059,11 @@ q(586,{coords={
 q(585,{coords={
 [224]={{32.2,27.7}}},providers={{"o",2076}},qis={3906,3907,3908},r=1,rwp=40003,sourceQuests={584},u=2,g={
 o(2891,{coords={
-[224]={{46.1,32.4}}}}),
+[224]={{46.1,32.4}}},u=2}),
 o(2892,{coords={
-[224]={{42.2,36.1}}}}),
+[224]={{42.2,36.1}}},u=2}),
 o(2893,{coords={
-[224]={{47.6,39.5}}}})}}),
+[224]={{47.6,39.5}}},u=2})}}),
 q(26301,{awp=40003,coords={
 [50]={{38.5,48.7}}},lvl=10,providers={{"o",2076}},qis={3906,3907},r=1,sourceQuests={26300},g={
 s(30510,61099,{b=1,f=7}),
@@ -37357,7 +37357,7 @@ h(-12,{
 ach(780,{awp=30002,g={
 crit(1289,{achID=42,id=11})}}),
 ach(4902,{awp=40003,r=2,g={
-crit(15198,{achID=1676,awp=30002,id=1})}})}),
+crit(15198,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",646,378}},g={
 p(395,{npcID=61171,pb=1,g={
 crit(21662,{achID=6586,id=19,pb=1})}}),
@@ -37367,7 +37367,7 @@ crit(21663,{achID=6586,id=46,pb=1})}}),
 p(392,{npcID=61168,pb=1,g={
 crit(21664,{achID=6586,id=57,pb=1})}}),
 p(424,{npcID=61169,pb=1,g={
-crit(19423,{achID=2556,awp=30002,id=9}),
+crit(19423,{achID=2556,id=9}),
 crit(21517,{achID=6585,id=59,pb=1}),
 crit(21517,{achID=6586,id=59,pb=1}),
 crit(21517,{achID=6588,id=21,pb=1})}})}}),
@@ -38093,12 +38093,12 @@ h(-12,{
 ach(774,{awp=30002,g={
 crit(1291,{achID=42,id=14})}}),
 ach(4910,{awp=40001,g={
-crit(15214,{achID=1676,awp=30002,id=1})}})}),
+crit(15214,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",415}},g={
 p(427,{npcID=61420,pb=1,g={
 crit(21665,{achID=6586,id=3,pb=1})}}),
 p(423,{npcID=61383,pb=1,g={
-crit(21297,{achID=2557,awp=30002,id=8,maps={32,36},providers={{"n",9700}}}),
+crit(21297,{achID=2557,id=8,maps={32,36},providers={{"n",9700}}}),
 crit(21627,{achID=6586,id=38,pb=1})}}),
 p(428,{npcID=61425,pb=1,g={
 crit(21666,{achID=6586,id=45,pb=1})}})}}),
@@ -38206,12 +38206,12 @@ i(62825,{coords={
 [32]={{18,42.2}}},crs={47309},spellID=88259}),
 i(62823,{coords={
 [32]={{14.6,37.6}}},crs={47310},spellID=88259}),
-crit(38264,{achID=4910,awp=40001,id=2})}}),
+crit(38264,{achID=4910,id=2})}}),
 q(28033,{awp=40003,coords={
 [32]={{39.4,67.8}}},lvl=15,qgs={47393},sourceQuests={28028,28029,28030}}),
 q(27964,{awp=40003,coords={
 [32]={{68.5,53.3}}},crs={47271},lvl=15,qgs={47266},qis={62806},sourceQuests={27963},g={
-crit(38257,{achID=4910,awp=40001,id=1}),
+crit(38257,{achID=4910,id=1}),
 o(206573,{coords={
 [32]={{56.3,46.3}}}})}}),
 q(3441,{coords={
@@ -38258,9 +38258,9 @@ q(4450,{coords={
 [32]={{65.5,62.2}}},crs={5856,9916},maps={51,70,71},providers={{"o",173265}},qis={11723,11724,11725,11727},rwp=40003,sourceQuests={4449},u=2,g={
 s(4284,11860,{b=1,f=27,u=2}),
 s(4285,11861,{b=1,f=6,spellID=144320,u=2}),
-o(173266),
+o(173266,{u=2}),
 o(174728,{coords={
-[70]={{54.1,55.8}}}})}}),
+[70]={{54.1,55.8}}},u=2})}}),
 q(7704,{awp=30300,providers={{"i",18950},{"n",14636},{"o",179832}},rwp=40003,u=2,g={
 i(18951,{b=1,f=53,spellID=12438})}}),
 q(28058,{awp=40003,coords={
@@ -38308,7 +38308,7 @@ q(3182,{coords={
 [48]={{18.2,84}}},qgs={3836},qis={10005},r=2,rwp=40003,sourceQuests={3181},u=2}),
 q(28099,{awp=40003,coords={
 [32]={{38.1,26.9}}},crs={47553},lvl=15,qgs={14625},qis={63028},sourceQuests={27965},g={
-crit(38261,{achID=4910,awp=40001,id=2})}}),
+crit(38261,{achID=4910,id=2})}}),
 q(27977,{awp=40003,coords={
 [32]={{36.1,28.2}}},crs={5840,8566},lvl=15,qgs={14626},qis={18959,18960},sourceQuests={27965},g={
 s(31761,63222,{b=1,f=7}),
@@ -38347,13 +38347,13 @@ s(4057,10742,{b=1,f=4,u=2}),
 s(4058,10743,{b=1,f=6,u=2}),
 s(4059,10744,{b=1,f=21,u=2}),
 o(149025,{coords={
-[32]={{33,60}}}}),
+[32]={{33,60}}},u=2}),
 o(149030,{coords={
-[32]={{44,60}}}}),
+[32]={{44,60}}},u=2}),
 o(149031,{coords={
-[32]={{50,55}}}}),
+[32]={{50,55}}},u=2}),
 o(149032,{coords={
-[32]={{33,54}}}})}}),
+[32]={{33,54}}},u=2})}}),
 q(28029,{awp=40003,coords={
 [32]={{39.4,67.8}}},lvl=15,qgs={47393},qis={10515},sourceQuests={27986},g={
 o(149025,{coords={
@@ -38396,7 +38396,7 @@ q(4451,{coords={
 q(28035,{awp=40003,coords={
 [32]={{39.4,67.8}}},lvl=15,qgs={47393},sourceQuests={28034},g={
 de(1315,{awp=110207,itemID=245333,spellID=1238433}),
-crit(38266,{achID=4910,awp=40001,id=3})}}),
+crit(38266,{achID=4910,id=3})}}),
 q(28032,{awp=40003,coords={
 [32]={{38.8,68.9}}},crs={9318},lvl=15,qgs={47440},qis={62914},sourceQuests={27986},g={
 s(31770,63233,{b=1,f=7}),
@@ -38455,7 +38455,7 @@ s(31779,63244,{b=1,f=7}),
 s(31778,63243,{b=1,f=23}),
 i(63242,{b=1,f=51}),
 de(2226,{awp=110207,itemID=246409,spellID=1242063}),
-crit(38267,{achID=4910,awp=40001,id=4})}}),
+crit(38267,{achID=4910,id=4})}}),
 q(7722,{coords={
 [32]={{38.8,28.5}}},qgs={14624},qis={18922},rwp=40003,u=2,g={
 o(179826,{coords={
@@ -38551,7 +38551,7 @@ h(-12,{
 ach(769,{awp=30002,g={
 crit(1292,{achID=42,id=15})}}),
 ach(4894,{awp=40003,r=1,g={
-crit(15215,{achID=1676,awp=30002,id=1})}})}),
+crit(15215,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",628,627,378,417,387,379,420}},g={
 p(455,{npcID=61890,pb=1,g={
 crit(21667,{achID=6586,id=10,pb=1})}})}}),
@@ -38987,10 +38987,10 @@ h(-12,{
 ach(782,{awp=30002,g={
 crit(1294,{achID=42,id=19})}}),
 ach(4904,{awp=40003,g={
-crit(15216,{achID=1676,awp=30002,id=1})}})}),
+crit(15216,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",403,401,420,418}},g={
 p(648,{npcID=61368,pb=1,g={
-crit(21296,{achID=2557,awp=30002,id=7,maps={25,51,121},providers={{"n",6653}}}),
+crit(21296,{achID=2557,id=7,maps={25,51,121},providers={{"n",6653}}}),
 crit(21649,{achID=6586,id=29,pb=1}),
 crit(21649,{achID=6588,id=13,pb=1})}}),
 p(422,{npcID=61372,pb=1,g={
@@ -39232,19 +39232,19 @@ q(27852,{awp=40003,coords={
 q(9610,{awp=20001,coords={
 [51]={{25.9,32.4}}},qgs={18221},qis={6175},r=2,rwp=40003,u=2,g={
 o(30854,{coords={
-[51]={{65.5,55.5}}}}),
+[51]={{65.5,55.5}}},u=2}),
 o(30855,{coords={
-[51]={{65.5,55.5}}}}),
+[51]={{65.5,55.5}}},u=2}),
 o(30856,{coords={
-[51]={{65.5,55.5}}}})}}),
+[51]={{65.5,55.5}}},u=2})}}),
 q(1424,{coords={
 [51]={{64.2,20.8}}},qgs={1443},qis={6175},r=1,rwp=40003,u=2,g={
 o(30854,{coords={
-[51]={{65.5,55.5}}}}),
+[51]={{65.5,55.5}}},u=2}),
 o(30855,{coords={
-[51]={{65.5,55.5}}}}),
+[51]={{65.5,55.5}}},u=2}),
 o(30856,{coords={
-[51]={{65.5,55.5}}}})}}),
+[51]={{65.5,55.5}}},u=2})}}),
 q(27694,{awp=40003,coords={
 [51]={{69.4,54.5}}},lvl=15,maps={220},qgs={46071},qis={6175},sourceQuests={27869},g={
 o(30854,{coords={
@@ -39334,13 +39334,13 @@ q(27909,{awp=40003,coords={
 q(2681,{coords={
 [51]={{34.3,66.2}}},maps={17},qgs={7572},rwp=40003,sourceQuests={2801},u=2,g={
 o(141812,{coords={
-[17]={{51.8,56.8},{58,49.8},{63.8,55.8}}}}),
+[17]={{51.8,56.8},{58,49.8},{63.8,55.8}}},u=2}),
 o(141857,{coords={
-[17]={{41.6,14.2},{49.8,43.8}}}}),
+[17]={{41.6,14.2},{49.8,43.8}}},u=2}),
 o(141858,{coords={
-[17]={{64,40.6},{64.6,46.6},{64.8,34.6}}}}),
+[17]={{64,40.6},{64.6,46.6},{64.8,34.6}}},u=2}),
 o(141859,{coords={
-[17]={{38.6,34},{42.8,41.4}}}})}}),
+[17]={{38.6,34},{42.8,41.4}}},u=2})}}),
 q(2623,{coords={
 [51]={{45,57.2}}},crs={950},qgs={7643},qis={8463},r=1,rwp=40003,sourceQuests={2622},u=2}),
 q(1422,{coords={
@@ -39460,9 +39460,9 @@ h(-12,{
 ach(871,{awp=30002,sourceQuests={4621},g={
 title(111)}}),
 ach(4905,{awp=40003,g={
-crit(15208,{achID=1676,awp=30002,id=1})}}),
+crit(15208,{achID=1676,id=1})}}),
 ach(4995,{awp=40003,g={
-crit(1277,{achID=42,awp=30002,id=18})}})}),
+crit(1277,{achID=42,id=18})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",406,421,407,408,404,424,405}},g={
 p(411,{description="Can be found on Jaguero Isle in The Cape of Stranglethorn. They only spawn when it's raining on the island, and this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the Isle.",npcID=61324,pb=1,g={
 crit(21668,{achID=6586,id=5,pb=1})}}),
@@ -39471,7 +39471,7 @@ crit(21659,{achID=6585,id=84,pb=1}),
 crit(21659,{achID=6586,id=73,pb=1}),
 crit(21659,{achID=6588,id=28,pb=1})}}),
 p(410,{description="Can be found reliably as secondary pets alongside Baby Apes, but also found in Booty Bay.",npcID=61323,pb=1,g={
-crit(21312,{achID=5548,awp=40003,id=12}),
+crit(21312,{achID=5548,id=12}),
 crit(21670,{achID=6586,id=86,pb=1})}})}}),
 h(-30,{
 exp(35,{awp=40003,g={
@@ -39981,9 +39981,9 @@ q(599,{coords={
 q(604,{coords={
 [224]={{27.2,77}}},crs={1563},qgs={2487},qis={3920,3921},rwp=40003,sourceQuests={599},u=2,g={
 o(2086,{coords={
-[224]={{27.2,82.7},{29.6,80.8}}}}),
+[224]={{27.2,82.7},{29.6,80.8}}},u=2}),
 o(2087,{coords={
-[224]={{27,82.4},{29.6,80.9}}}})}}),
+[224]={{27,82.4},{29.6,80.9}}},u=2})}}),
 q(608,{coords={
 [224]={{27.2,77}}},qgs={2487},rwp=40003,sourceQuests={604},u=2,g={
 s(1642,4138,{b=1,f=6,u=2})}}),
@@ -40117,8 +40117,8 @@ s(7447,18712,{f=7,lvl=13,pvp=1}),
 s(7444,18709,{f=4,lvl=13,pvp=1}),
 heir(126948,{awp=60200,cost={{"i",19024,1}},description="Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",pvp=1,spellID=186323}),
 cq(38087,{awp=60100,b=1,itemID=122222,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,pvp=1,spellID=181601,g={
-crit(27752,{achID=10015,awp=60003,id=16,r=2}),
-crit(27752,{achID=10016,awp=60003,id=16,r=1})}})}}),
+crit(27752,{achID=10015,id=16,r=2}),
+crit(27752,{achID=10016,id=16,r=1})}})}}),
 o(2560,{rwp=40003,u=2,g={
 i(4098,{u=2})}})}),
 h(-58,{
@@ -40242,7 +40242,7 @@ h(-12,{
 ach(773,{awp=30002,g={
 crit(1295,{achID=42,id=20})}}),
 ach(4897,{awp=40003,g={
-crit(15212,{achID=1676,awp=30002,id=1})}})}),
+crit(15212,{achID=1676,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",393,448,450,417}},g={
 p(449,{npcID=61752,pb=1,g={
 crit(21674,{achID=6586,id=11,pb=1}),
@@ -40582,9 +40582,9 @@ q(7849,{coords={
 s(7598,19117,{b=1,f=7,u=2}),
 s(7597,19116,{b=1,f=4,u=2}),
 o(179914,{coords={
-[26]={{62.2,75.5}}}}),
+[26]={{62.2,75.5}}},u=2}),
 o(179915,{coords={
-[26]={{58.6,64.9}}}})}}),
+[26]={{58.6,64.9}}},u=2})}}),
 q(26532,{awp=40003,coords={
 [26]={{34.3,67.7}}},crs={43007},lvl=10,qgs={43298},r=2,sourceQuests={26531},g={
 s(29524,59269,{b=1,f=4}),
@@ -40743,11 +40743,11 @@ q(28574,{awp=40003,coords={
 q(2988,{coords={
 [26]={{9.8,44.5}}},qgs={5636},r=2,rwp=40003,u=2,g={
 o(144066,{coords={
-[26]={{23.2,58.7}}}}),
+[26]={{23.2,58.7}}},u=2}),
 o(144067,{coords={
-[26]={{23.1,58.7}}}}),
+[26]={{23.1,58.7}}},u=2}),
 o(144068,{coords={
-[26]={{31.9,57.2}}}})}})}),
+[26]={{31.9,57.2}}},u=2})}})}),
 h(-46,{
 n(8215,{coords={
 [26]={{71.6,62.6},{73.8,55.8},{78.6,50.8}}}}),
@@ -40812,7 +40812,7 @@ m(18,{icon=236849,lore="On the northern coast of Lordaeron lies the eerie Tirisf
 m(465,{icon=236457,lore="Deathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.",maps={466},g={
 flt(101,{awp=50004,pb=1,g={
 p(417,{description="Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them.",npcID=61366,pb=1,g={
-crit(19451,{achID=2556,awp=30002,id=18}),
+crit(19451,{achID=2556,id=18}),
 crit(21516,{achID=6585,id=55,pb=1}),
 crit(21516,{achID=6586,id=53,pb=1}),
 crit(21516,{achID=6587,id=13,pb=1}),
@@ -41080,13 +41080,13 @@ q(26930,{awp=40003,coords={
 q(1821,{c={1},coords={
 [18]={{61.73,52.3}}},qgs={1500},qis={7566,7567,7568,7569},r=1,rwp=40003,sourceQuests={1820},u=2,g={
 o(105169,{coords={
-[18]={{52.6,25.9}}}}),
+[18]={{52.6,25.9}}},u=2}),
 o(105170,{coords={
-[18]={{51.7,25.7}}}}),
+[18]={{51.7,25.7}}},u=2}),
 o(105171,{coords={
-[18]={{51.9,27.1}}}}),
+[18]={{51.9,27.1}}},u=2}),
 o(105172,{coords={
-[18]={{52.6,26.9}}}})}}),
+[18]={{52.6,26.9}}},u=2})}}),
 q(24993,{awp=40003,coords={
 [18]={{60.5,51.8}}},crs={38967},qgs={1515},r=1,sourceQuests={24992},g={
 s(28096,57155,{b=1,f=26}),
@@ -41298,8 +41298,8 @@ s(1677,4303,{f=23,lvl=3})}}),
 o(240624,{awp=60100,coords={
 [18]={{17.6,67.6}}},description="Rougly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",sourceQuests={37961,38356},g={
 cq(38096,{b=1,itemID=122234,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181655,g={
-crit(27761,{achID=10015,awp=60003,id=25,r=2}),
-crit(27761,{achID=10016,awp=60003,id=25,r=1})}})}}),
+crit(27761,{achID=10015,id=25,r=2}),
+crit(27761,{achID=10016,id=25,r=1})}})}}),
 n(1936,{coords={
 [18]={{34.2,52.6},{38,49.8}}},g={
 s(1211,3334,{awp=100107,f=24,lvl=2}),
@@ -41437,12 +41437,12 @@ crit(21681,{achID=6586,id=27,pb=1})}}),
 p(645,{coords={
 [241]={{29.8,25.13},{46.5,25.1}},
 [634]={{60.78,54.4},{68.25,40}}},description="Commonly found around Vermillion Redoubt in Twilight Highlands.",npcID=62906,pb=1,g={
-crit(21302,{achID=5548,awp=40003,id=4}),
+crit(21302,{achID=5548,id=4}),
 crit(21682,{achID=6586,id=28,pb=1})}}),
 p(431,{coords={
 [71]={{48.9,36.55}},
 [241]={{42.85,53.3},{57,38.7},{65.75,41}}},description="Most commonly found thorough the Verall River valley in Twilight Highlands. Can also be found scattered around north of the river valley, as well as around Badlands and Tanaris.",npcID=61439,pb=1,g={
-crit(21306,{achID=5548,awp=40003,id=7}),
+crit(21306,{achID=5548,id=7}),
 crit(21617,{achID=6585,id=56,pb=1}),
 crit(21617,{achID=6586,id=55,pb=1})}}),
 p(552,{coords={
@@ -41461,7 +41461,7 @@ p(548,{coords={
 crit(21685,{achID=6586,id=88,pb=1})}}),
 p(549,{coords={
 [241]={{45.6,41.3},{46.5,25.1},{50.6,32.2},{56.6,71},{65.5,58},{71.6,66.65}}},description="Very common pet in the forests of Twilight Highlands.",npcID=62904,pb=1,g={
-crit(21313,{achID=5548,awp=40003,id=13}),
+crit(21313,{achID=5548,id=13}),
 crit(21686,{achID=6586,id=89,pb=1})}})}}),
 h(-30,{
 exp(5584,{collectible=false,coords={
@@ -43355,7 +43355,7 @@ h(-12,{
 ach(770,{awp=30002,g={
 crit(1296,{achID=42,id=24})}}),
 ach(4893,{awp=40003,g={
-crit(15217,{achID=1676,awp=30002,id=1})}})}),
+crit(15217,{achID=1676,id=1})}})}),
 h(-214,{awp=70003,g={
 n(111122,{c={2},coords={
 [22]={{69,45.8}}},description="Supposedly has a random spawn up to 30 hours, unpredictable due to phasing and server sharding, be prepared to wait.",sourceQuests={43684},g={
@@ -43768,10 +43768,10 @@ q(5096,{coords={
 [18]={{83,69}}},qgs={10837},qis={12807,12814},r=1,rwp=40003,sourceQuests={5093,5094,5095,10374},u=2,g={
 o(176092,{coords={
 [18]={{83.1,69.1}},
-[22]={{40,53}}}}),
+[22]={{40,53}}},u=2}),
 o(176210,{coords={
 [18]={{83.1,69.1}},
-[22]={{40,53}}}})}}),
+[22]={{40,53}}},u=2})}}),
 q(27162,{awp=40003,coords={
 [22]={{41,70.4}}},lvl=15,qgs={44453},r=2,sourceQuests={27159,27160},g={
 s(31230,62151,{b=1,f=7}),
@@ -43869,11 +43869,11 @@ q(27205,{awp=40003,coords={
 q(6185,{coords={
 [22]={{43.6,84.5}}},maps={23},qgs={12425},qis={16001,16002,16003},r=2,rwp=40003,sourceQuests={6184},u=2,g={
 o(177804,{coords={
-[23]={{27.3,75}}}}),
+[23]={{27.3,75}}},u=2}),
 o(177805,{coords={
-[23]={{28.8,74.9}}}}),
+[23]={{28.8,74.9}}},u=2}),
 o(177806,{coords={
-[23]={{28.8,79.8}}}})}}),
+[23]={{28.8,79.8}}},u=2})}}),
 q(27161,{awp=40003,coords={
 [22]={{41.2,70}}},crs={44329},lvl=15,qgs={44467},qis={60849},r=2,g={
 o(204966,{coords={
@@ -44387,11 +44387,11 @@ o(759,{coords={
 q(49,{coords={
 [52]={{44.6,80.2}}},maps={26,51,71},qgs={239},qis={738,739,740},r=2,rwp=40003,sourceQuests={48},u=2,g={
 o(50935,{coords={
-[71]={{65.8,36.7}}}}),
+[71]={{65.8,36.7}}},u=2}),
 o(50936,{coords={
-[51]={{62.5,23.3}}}}),
+[51]={{62.5,23.3}}},u=2}),
 o(50937,{coords={
-[26]={{39.9,66.2}}}})}}),
+[26]={{39.9,66.2}}},u=2})}}),
 q(50,{coords={
 [52]={{44.6,80.2}}},cost={{"i",6037,1}},qgs={239},r=2,rwp=40003,sourceQuests={49},u=2}),
 q(51,{coords={
@@ -44946,10 +44946,10 @@ q(276,{coords={
 q(299,{coords={
 [56]={{38.8,52.2}}},qgs={1077},qis={2658,2659,2660,2661},r=2,rwp=40003,u=2,g={
 s(1006,2913,{b=1,f=4,u=2}),
-o(331),
-o(333),
-o(334),
-o(35252)}}),
+o(331,{u=2}),
+o(333,{u=2}),
+o(334,{u=2}),
+o(35252,{u=2})}}),
 q(464,{coords={
 [56]={{9.8,57.4}}},crs={1034,1035,1036,1037,1038,1057,2091},qgs={2104},qis={3337},r=2,rwp=40003,sourceQuests={473},u=2}),
 q(26981,{awp=40003,coords={
@@ -47248,7 +47248,7 @@ ach(1271,{r=1,g={
 crit(3915,{achID=1262,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",635}},g={
 p(414,{npcID=61326,pb=1,g={
-crit(19425,{achID=2556,awp=30002,id=14}),
+crit(19425,{achID=2556,id=14}),
 crit(21622,{achID=6585,id=65,pb=1}),
 crit(21622,{achID=6586,id=61,pb=1}),
 crit(21622,{achID=6587,id=16,pb=1})}})}}),
@@ -51658,8 +51658,8 @@ h(-56,{
 o(240622,{awp=60100,coords={
 [104]={{57.3,47.1}}},description="Loot the Warden's Scroll Case inside the Warden's Cage (underground).",modelScale=0.5,g={
 cq(38091,{b=1,itemID=122228,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181605,g={
-crit(27756,{achID=10015,awp=60003,id=20,r=2}),
-crit(27756,{achID=10016,awp=60003,id=20,r=1})}})}})})}}),
+crit(27756,{achID=10015,id=20,r=2}),
+crit(27756,{achID=10016,id=20,r=1})}})}})})}}),
 m(108,{icon=236847,lore="Terokkar Forest is a zone in central Outland that is home to Shattrath City, as well as quest hubs for level 15-30 players. The northern half of Terokkar is lush and the quests cover the threat of the Arakoaa and magic-addicted elves. The souther half is a wasteland known as the Bone Wastes, created when the Shadow Council blew up Auchindoun. There is also a daily quest hub, Skettis, for players with flying mounts--rewards include vanity items.",petBattleLvl=18,lvl=15,g={
 h(-12,{
 ach(867,{
@@ -57280,11 +57280,11 @@ ach(1012,{minReputation={1037,42000},r=2}),
 ach(1011,{minReputation={1052,42000},r=1})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",388}},g={
 p(641,{npcID=62693,pb=1,g={
-crit(21293,{achID=2557,awp=30002,id=1,maps={114,115,121},providers={{"n",29328}}}),
+crit(21293,{achID=2557,id=1,maps={114,115,121},providers={{"n",29328}}}),
 crit(21767,{achID=6588,id=2,pb=1})}}),
 p(639,{coords={
 [114]={{57,35}}},description="Found all over the yellow/brown tundra between Warsong Hold and Sholazar Basin.",npcID=62695,pb=1,g={
-crit(21294,{achID=2557,awp=30002,id=2,maps={114},providers={{"n",31685}}}),
+crit(21294,{achID=2557,id=2,maps={114},providers={{"n",31685}}}),
 crit(21768,{achID=6588,id=4,pb=1})}}),
 p(1165,{awp=50100,coords={
 [114]={{30,30}}},description="Found in Coldarra.",npcID=68845,pb=1}),
@@ -57293,7 +57293,7 @@ p(530,{coords={
 crit(21769,{achID=6588,id=18,pb=1})}}),
 p(536,{coords={
 [115]={{9,60},{18.7,63.3}}},description="There is only a few spawns of this pet, which can be found by the shore in the westernmost part of Dragonblight. However, it is a common secondary pet in both Borean Tundra and Dragonblight!",npcID=62835,pb=1,g={
-crit(21299,{achID=2557,awp=30002,id=12,maps={114},providers={{"n",28440}}}),
+crit(21299,{achID=2557,id=12,maps={114},providers={{"n",28440}}}),
 crit(21770,{achID=6588,id=31,pb=1})}})}}),
 h(-30,{
 exp(4023,{collectible=false,coords={
@@ -59660,13 +59660,13 @@ ach(2016,{pvp=1,r=2}),
 ach(2017,{pvp=1,r=1})}),
 flt(101,{awp=50004,pb=1,g={
 p(647,{npcID=62818,pb=1,g={
-crit(21295,{achID=2557,awp=30002,id=6,maps={116,241},providers={{"n",31889},{"n",62818}}}),
+crit(21295,{achID=2557,id=6,maps={116,241},providers={{"n",31889},{"n",62818}}}),
 crit(21679,{achID=6586,id=24,pb=1}),
 crit(21679,{achID=6588,id=12,pb=1})}}),
 p(534,{npcID=62819,pb=1,g={
 crit(21772,{achID=6588,id=14,pb=1})}}),
 p(633,{npcID=61677,pb=1,g={
-crit(21298,{achID=2557,awp=30002,id=9,maps={65,83,116,117},providers={{"n",31890}}}),
+crit(21298,{achID=2557,id=9,maps={65,83,116,117},providers={{"n",31890}}}),
 crit(21688,{achID=6585,id=45,pb=1}),
 crit(21688,{achID=6586,id=47,pb=1}),
 crit(21688,{achID=6588,id=16,pb=1})}})}}),
@@ -60434,8 +60434,8 @@ i(38362,{b=1,pvp=1,rwp=50004,u=2}),
 i(38361,{b=1,pvp=1,rwp=50004,u=2})}}),
 n(91632,{awp=60100,description="Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",g={
 cq(38097,{b=1,itemID=122236,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181656,g={
-crit(27762,{achID=10015,awp=60003,id=26,r=2}),
-crit(27762,{achID=10016,awp=60003,id=26,r=1})}})}}),
+crit(27762,{achID=10015,id=26,r=2}),
+crit(27762,{achID=10016,id=26,r=1})}})}}),
 n(26229,{coords={
 [116]={{59.6,27.8}}},r=2,sym={{"select","itemID",30758,30749,30750}}}),
 n(27391,{coords={
@@ -60468,11 +60468,11 @@ crit(5049,{achID=41,id=2})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",646,647,450,378,417,424,388,397,387,412,379}},g={
 p(523,{coords={
 [117]={{56.5,51}}},description="Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occasionally as a secondary pet.",npcID=62640,pb=1,g={
-crit(19444,{achID=2556,awp=30002,id=6}),
+crit(19444,{achID=2556,id=6}),
 crit(21773,{achID=6588,id=7,pb=1})}}),
 p(644,{coords={
 [117]={{58,52}}},description="Found in Wyrmskull Village outside Utgarde Keep as well as occasionally as a secondary pet.",npcID=62641,pb=1,g={
-crit(19439,{achID=2556,awp=30002,id=15}),
+crit(19439,{achID=2556,id=15}),
 crit(21774,{achID=6588,id=10,pb=1})}}),
 p(529,{coords={
 [117]={{30,62}}},description="Found around Kamagua, on The Isle of Spears.",npcID=62669,pb=1,g={
@@ -65830,7 +65830,7 @@ h(-12,{
 ach(6541,{
 crit(19386,{achID=7520,id=1})}),
 ach(6974,{
-crit(20129,{achID=46,awp=30002,id=6})}),
+crit(20129,{achID=46,id=6})}),
 ach(6828,{r=2,g={
 mnt(130985,{b=1,itemID=89785,lvl=10,r=2}),
 crit(19738,{achID=6829,id=2,rwp=50200,u=2})}}),
@@ -75774,8 +75774,8 @@ n(66741,{awp=50100,coords={
 q(31958,{isDaily=1,pb=1,sourceAchievements={6606},g={
 i(89125,{awp=50004,b=1,f=55,pb=1}),
 crit(23493,{achID=8348,awp=50300,id=6,pb=1})}}),
-crit(21857,{achID=6606,awp=50004,id=7,pb=1}),
-crit(21857,{achID=7499,awp=50004,id=43,pb=1}),
+crit(21857,{achID=6606,id=7,pb=1}),
+crit(21857,{achID=7499,id=43,pb=1}),
 crit(25118,{achID=9069,awp=60002,id=1,pb=1})}}),
 q(31951,{coords={
 [390]={{31.2,74.2}},
@@ -82932,7 +82932,7 @@ gb(144,{b=1,cost={{"i",116394,1}},itemID=111986,lvl=10}),
 gb(9,{b=1,cost={{"i",116395,1}},itemID=116185,lvl=10,r=1})}})}})}}),
 h(-12,{
 ach(8935,{
-crit(28066,{achID=46,awp=30002,id=7}),
+crit(28066,{achID=46,id=7}),
 crit(28066,{achID=10018,id=1})}),
 ach(10018,{
 mnt(191633,{b=1,itemID=128706,lvl=10})}),
@@ -82945,15 +82945,15 @@ crit(28977,{achID=10018,id=4})}}),
 ach(9728,{
 crit(26824,{achID=9728,id=23,questID=34521,u=1})}),
 ach(10053,{awp=60200,g={
-crit(28185,{achID=10053,awp=60003,id=1,providers={{"i",127870}}}),
-crit(28184,{achID=10053,awp=60003,id=2,providers={{"i",127865}}}),
-crit(28183,{achID=10053,awp=60003,id=3,providers={{"i",127869}}}),
-crit(28182,{achID=10053,awp=60003,id=4,providers={{"i",127867}}})}}),
+crit(28185,{achID=10053,id=1,providers={{"i",127870}}}),
+crit(28184,{achID=10053,id=2,providers={{"i",127865}}}),
+crit(28183,{achID=10053,id=3,providers={{"i",127869}}}),
+crit(28182,{achID=10053,id=4,providers={{"i",127867}}})}}),
 ach(9833,{r=2,g={
-crit(27594,{achID=7520,awp=50004,id=1}),
+crit(27594,{achID=7520,id=1}),
 crit(27594,{achID=10018,id=2})}}),
 ach(9923,{r=1,g={
-crit(27859,{achID=7520,awp=50004,id=1}),
+crit(27859,{achID=7520,id=1}),
 crit(27859,{achID=10018,id=2})}}),
 ach(9724,{awp=60002,pb=1}),
 ach(14728,{
@@ -84099,8 +84099,8 @@ crit(27259,{achID=9685,id=2,pb=1})}}),
 p(1469,{npcID=85192,pb=1,g={
 crit(27258,{achID=9685,id=11,pb=1})}}),
 p(702,{npcID=63919,pb=1,g={
-crit(20824,{achID=6350,awp=50004,id=9}),
-crit(21789,{achID=6589,awp=50004,id=21})}}),
+crit(20824,{achID=6350,id=9}),
+crit(21789,{achID=6589,id=21})}}),
 p(1594,{coords={
 [543]={{40.8,77.4},{46,90.8}}},description="Best general locations to find these are around the coords. Killing other nearby critters helps spawn them.",npcID=88571,pb=1,g={
 crit(27275,{achID=9685,id=17,pb=1})}}),
@@ -84109,7 +84109,7 @@ crit(49784,{achID=14728,coords={
 [543]={{42.4,38.99}}},id=11})}}),
 p(568,{coords={
 [543]={{40.8,80.6},{58.8,61.6}}},npcID=63001,pb=1,g={
-crit(21795,{achID=6589,awp=50004,id=45})}}),
+crit(21795,{achID=6589,id=45})}}),
 p(1463,{coords={
 [543]={{50.8,80.2}}},description="Found in a small area around this coordinate.",npcID=85254,pb=1,g={
 crit(27254,{achID=9685,id=24,pb=1})}})}}),
@@ -86504,7 +86504,7 @@ ach(9481,{providers={{"n",85357}}})}),
 flt(101,{pb=1,sym={{"select","speciesID",560,412}},g={
 p(407,{coords={
 [539]={{23.6,26},{38,25.6}}},npcID=61320,pb=1,g={
-crit(21655,{achID=6586,awp=50004,id=21,pb=1})}}),
+crit(21655,{achID=6586,id=21,pb=1})}}),
 p(1447,{description="Found mostly on the northeast coast.",npcID=82045,pb=1,g={
 crit(27248,{achID=9685,id=14,pb=1}),
 crit(49747,{achID=14728,coords={
@@ -87402,7 +87402,7 @@ p(1592,{coords={
 [542]={{37.8,41.8},{45,35},{45.6,62.4},{46,48.4},{49.6,50.8},{53,70.6},{55.6,32.4},{56.6,42},{57.8,51},{59,68.6}}},description="Only one is up at a time. Once captured or killed, it immediately respawns.",npcID=88356,pb=1}),
 p(568,{coords={
 [542]={{48.8,45.4}}},npcID=63001,pb=1,g={
-crit(21795,{achID=6589,awp=50004,id=45})}}),
+crit(21795,{achID=6589,id=45})}}),
 p(1590,{npcID=88359,pb=1,g={
 crit(27272,{achID=9685,id=20,pb=1})}}),
 p(1456,{npcID=85007,pb=1,g={
@@ -88373,7 +88373,7 @@ n(87123,{coords={
 [542]={{46.4,45.2}}},description="Items will be unavailable until you complete the pet battle daily quest |cFFFFD700Vesharr|r.",g={
 p(1597,{b=1,itemID=120051,npcID=88574,spellID=177215}),
 p(1596,{b=1,cost=10000000,itemID=120050,npcID=88573,spellID=170283}),
-crit(27006,{achID=9069,awp=60002,id=40,pb=1}),
+crit(27006,{achID=9069,id=40,pb=1}),
 crit(27014,{achID=9724,id=6,pb=1})}}),
 n(88045,{coords={
 [542]={{52,50.4}}},sourceQuests={34991},g={
@@ -88419,7 +88419,7 @@ crit(49785,{achID=14728,coords={
 [535]={{81.7,27.11}}},id=12})}}),
 p(568,{coords={
 [535]={{83.7,29.2}}},npcID=63001,pb=1,g={
-crit(21795,{achID=6589,awp=50004,id=45})}})}}),
+crit(21795,{achID=6589,id=45})}})}}),
 h(-30,{
 exp(6925,{
 crit(26201,{achID=8940,id=10})}),
@@ -90643,7 +90643,7 @@ cq(43016,{b=1,itemID=139003,rwp=90100,spellID=218078,u=2})}),
 ach(10672,{
 crit(32417,{achID=11190,id=4})}),
 ach(11188,{
-crit(32415,{achID=46,awp=30002,id=8}),
+crit(32415,{achID=46,id=8}),
 crit(32415,{achID=11190,id=1})}),
 ach(11190,{
 crit(34388,{achID=11446,id=1})}),
@@ -90679,7 +90679,7 @@ mnt(193695,{itemID=129280,lvl=10,r=2}),
 mnt(204166,{itemID=143864,lvl=10,r=1})}),
 ach(11159),
 ach(11157,{
-crit(32157,{achID=7520,awp=50004,id=1}),
+crit(32157,{achID=7520,id=1}),
 crit(32157,{achID=11190,id=2}),
 crit(109701,{achID=42114,awp=110207,id=1})}),
 ach(11653),
@@ -91132,8 +91132,8 @@ m(627,{icon=1535374,isRaid=1,lore="Dalaran moves to the Broken Isles as the mage
 h(-12,{
 ach(10585,{rwp=90100,sourceQuests={41778},u=2}),
 ach(10586,{providers={{"s",193024}},rwp=90100,u=2}),
-crit(5787,{achID=1291,awp=30002,e=9,id=3}),
-crit(6261,{achID=1690,awp=30002,e=14,id=2})}),
+crit(5787,{achID=1291,e=9,id=3}),
+crit(6261,{achID=1690,e=14,id=2})}),
 flt(101,{pb=1,g={
 p(1778,{description="In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15-minute buff. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r. Multiple people can click the rug. If there are none present you can realm hop until you find one. The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",npcID=98506,pb=1,g={
 crit(33134,{achID=11233,id=28,pb=1})}})}}),
@@ -92720,8 +92720,8 @@ crit(33107,{achID=11233,id=1,pb=1}),
 crit(50224,{achID=14729,coords={
 [630]={{30,35.6}}},id=3})}}),
 p(706,{npcID=63062,pb=1,g={
-crit(21314,{achID=6350,awp=50004,id=2}),
-crit(21798,{achID=6589,awp=50004,id=5})}}),
+crit(21314,{achID=6350,id=2}),
+crit(21798,{achID=6589,id=5})}}),
 p(1914,{npcID=110826,pb=1,g={
 crit(33139,{achID=11233,id=33,pb=1}),
 crit(50225,{achID=14729,coords={
@@ -92738,7 +92738,7 @@ p(1710,{coords={
 crit(33109,{achID=11233,id=3,pb=1})}}),
 p(699,{coords={
 [630]={{48.4,22.8}}},npcID=63715,pb=1,g={
-crit(21787,{achID=6589,awp=50004,id=17})}}),
+crit(21787,{achID=6589,id=17})}}),
 p(1728,{coords={
 [630]={{31.2,30.6},{55.8,59},{61.8,61.6}}},npcID=97283,pb=1,g={
 crit(33114,{achID=11233,id=8,pb=1})}}),
@@ -92746,7 +92746,7 @@ p(1729,{npcID=97294,pb=1,g={
 crit(33115,{achID=11233,id=9,pb=1})}}),
 p(743,{coords={
 [630]={{45,56.2},{50.2,49.2},{57,59}}},npcID=64352,pb=1,g={
-crit(21841,{achID=6589,awp=50004,id=34})}}),
+crit(21841,{achID=6589,id=34})}}),
 p(1935,{awp=70100,coords={
 [630]={{20,21.8}}},description="Found at the given coord on Seabreak Isle.",npcID=113440,pb=1}),
 ah(115787,{awp=70100,crs={115741},description="1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",pb=1,type="n",g={
@@ -94423,10 +94423,10 @@ crit(36667,{achID=11802,id=8,providers={{"n",121635}}}),
 crit(36668,{achID=11802,id=9,providers={{"n",121635}}})}),
 ach(11737),
 ach(11543,{
-crit(35260,{achID=11446,awp=70003,id=2})}),
+crit(35260,{achID=11446,id=2})}),
 ach(11738),
 ach(11545,{
-crit(35257,{achID=11446,awp=70003,id=3})}),
+crit(35257,{achID=11446,id=3})}),
 ach(11841),
 ach(11735)}}),
 h(-28,{awp=70200,g={
@@ -94505,7 +94505,7 @@ exp(8560),
 exp(8553)}}),
 h(-31,{awp=70200,g={
 faction(2045,{
-crit(35977,{achID=11298,awp=70003,id=6})})}}),
+crit(35977,{achID=11298,id=6})})}}),
 h(-32,{awp=70200,g={
 fp(1942,{coords={
 [646]={{70.6,47.6}}},crs={120118}}),
@@ -94635,7 +94635,7 @@ crit(36611,{achID=11546,id=14})}}),
 q(47137,{coords={
 [646]={{44.4,63.4}}},description="In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",lvl=45,qgs={116576},sourceQuests={43359,43407,43409,43412,43414,43415,43418,43420,43422,43423,43424,43425,46734},sqreq=2,g={
 crit(36604,{achID=11546,id=7}),
-crit(36604,{achID=11846,awp=70003}),
+crit(36604,{achID=11846}),
 crit(106045,{achID=42647,awp=110205,e=447,id=6,rwp=110207,u=2})}}),
 q(46247,{coords={
 [646]={{44.4,63.4}}},lvl=45,qgs={116576},sourceQuests={46286},g={
@@ -95016,209 +95016,209 @@ toy(147708,{b=1,cost={{"c",1226,25000}},lvl=10,minReputation={2045,42000}}),
 s(86060,147205,{b=1,cost={{"c",1226,10000}},f=9,lvl=39,minReputation={2045,42000}})}})}}),
 h(-62,{awp=70200,g={
 q(46209,{c={3},isWorldQuest=1,g={
-crit(36290,{achID=11189,awp=70003,id=917})}}),
+crit(36290,{achID=11189,id=917})}}),
 q(45473,{isWorldQuest=1,g={
 o(267575,{
 i(146947)}),
-crit(36270,{achID=11189,awp=70003,id=897})}}),
+crit(36270,{achID=11189,id=897})}}),
 q(46932,{isWorldQuest=1,g={
-crit(36300,{achID=11189,awp=70003,id=927})}}),
+crit(36300,{achID=11189,id=927})}}),
 q(45988,{isWorldQuest=1,g={
 o(267642,{coords={
 [646]={{50.9,12.5},{51.8,12.3},{52.8,18.8},{53,12.1},{53.1,13},{53.4,18.1},{53.4,19.9},{53.8,17},{54.2,12.8},{54.2,19.4},{54.4,17.6},{54.5,15.3},{55.4,15.7},{55.5,16.4}}},g={
 i(144238)}}),
-crit(36260,{achID=11189,awp=70003,id=887})}}),
+crit(36260,{achID=11189,id=887})}}),
 q(46105,{isWorldQuest=1,g={
 i(147206),
-crit(36321,{achID=11189,awp=70003,id=948})}}),
+crit(36321,{achID=11189,id=948})}}),
 q(46104,{isWorldQuest=1,g={
-crit(36322,{achID=11189,awp=70003,id=949})}}),
+crit(36322,{achID=11189,id=949})}}),
 q(45694,{isWorldQuest=1,g={
 i(143856),
-crit(36309,{achID=11189,awp=70003,id=936})}}),
+crit(36309,{achID=11189,id=936})}}),
 q(46750,{isWorldQuest=1,g={
 i(146892),
-crit(36317,{achID=11189,awp=70003,id=944})}}),
+crit(36317,{achID=11189,id=944})}}),
 q(45559,{isWorldQuest=1,g={
-crit(36306,{achID=11189,awp=70003,id=933})}}),
+crit(36306,{achID=11189,id=933})}}),
 q(45542,{isWorldQuest=1,g={
 ach(11681),
-crit(36305,{achID=11189,awp=70003,id=932})}}),
+crit(36305,{achID=11189,id=932})}}),
 q(45520,{isWorldQuest=1,g={
-crit(36302,{achID=11189,awp=70003,id=929})}}),
+crit(36302,{achID=11189,id=929})}}),
 q(46073,{isWorldQuest=1,g={
-crit(36287,{achID=11189,awp=70003,id=914})}}),
+crit(36287,{achID=11189,id=914})}}),
 q(46761,{isWorldQuest=1,g={
 i(146896,{spellID=239905}),
-crit(36282,{achID=11189,awp=70003,id=909})}}),
+crit(36282,{achID=11189,id=909})}}),
 q(46068,{isWorldQuest=1,g={
-crit(36276,{achID=11189,awp=70003,id=903})}}),
+crit(36276,{achID=11189,id=903})}}),
 q(46201,{isWorldQuest=1,g={
-crit(36280,{achID=11189,awp=70003,id=907})}}),
+crit(36280,{achID=11189,id=907})}}),
 q(46814,{isWorldQuest=1,g={
-crit(36315,{achID=11189,awp=70003,id=942})}}),
+crit(36315,{achID=11189,id=942})}}),
 q(44846,{c={1,3,4,5,6,7,8,9,10,11,12,13},isWorldQuest=1,g={
-crit(34654,{achID=11189,awp=70003,id=966})}}),
+crit(34654,{achID=11189,id=966})}}),
 q(45178,{isWorldQuest=1,g={
-crit(36266,{achID=11189,awp=70003,id=893})}}),
+crit(36266,{achID=11189,id=893})}}),
 q(45358,{isWorldQuest=1,g={
-crit(36267,{achID=11189,awp=70003,id=894})}}),
+crit(36267,{achID=11189,id=894})}}),
 q(45531,{isWorldQuest=1,g={
-crit(36257,{achID=11189,awp=70003,id=884})}}),
+crit(36257,{achID=11189,id=884})}}),
 q(45837,{isWorldQuest=1,g={
-crit(36256,{achID=11189,awp=70003,id=883})}}),
+crit(36256,{achID=11189,id=883})}}),
 q(46821,{isWorldQuest=1,g={
-crit(36296,{achID=11189,awp=70003,id=923})}}),
+crit(36296,{achID=11189,id=923})}}),
 q(45969,{c={11},isWorldQuest=1,g={
-crit(36481,{achID=11189,awp=70003,id=957})}}),
+crit(36481,{achID=11189,id=957})}}),
 q(45970,{isWorldQuest=1,g={
-crit(36482,{achID=11189,awp=70003,id=958})}}),
+crit(36482,{achID=11189,id=958})}}),
 q(46829,{isWorldQuest=1,g={
 i(147283),
 i(147284),
 i(147286),
 i(147285),
-crit(36294,{achID=11189,awp=70003,id=921})}}),
+crit(36294,{achID=11189,id=921})}}),
 q(46288,{isWorldQuest=1,g={
-crit(36327,{achID=11189,awp=70003,id=954})}}),
+crit(36327,{achID=11189,id=954})}}),
 q(45878,{isWorldQuest=1,g={
-crit(36483,{achID=11189,awp=70003,id=959})}}),
+crit(36483,{achID=11189,id=959})}}),
 q(45744,{isWorldQuest=1,g={
-crit(36283,{achID=11189,awp=70003,id=910})}}),
+crit(36283,{achID=11189,id=910})}}),
 q(47132,{isWorldQuest=1,g={
-crit(36490,{achID=11189,awp=70003,id=967})}}),
+crit(36490,{achID=11189,id=967})}}),
 q(46126,{isWorldQuest=1,g={
-crit(36265,{achID=11189,awp=70003,id=892})}}),
+crit(36265,{achID=11189,id=892})}}),
 q(46077,{c={2},isWorldQuest=1,g={
-crit(36262,{achID=11189,awp=70003,id=889})}}),
+crit(36262,{achID=11189,id=889})}}),
 q(46933,{isWorldQuest=1,g={
-crit(36301,{achID=11189,awp=70003,id=928})}}),
+crit(36301,{achID=11189,id=928})}}),
 q(45934,{isWorldQuest=1,g={
-crit(36268,{achID=11189,awp=70003,id=895})}}),
+crit(36268,{achID=11189,id=895})}}),
 q(46072,{isWorldQuest=1,g={
-crit(36328,{achID=11189,awp=70003,id=955})}}),
+crit(36328,{achID=11189,id=955})}}),
 q(46198,{isWorldQuest=1,g={
 i(144362),
-crit(36316,{achID=11189,awp=70003,id=943})}}),
+crit(36316,{achID=11189,id=943})}}),
 q(46212,{isWorldQuest=1,g={
-crit(36291,{achID=11189,awp=70003,id=918})}}),
+crit(36291,{achID=11189,id=918})}}),
 q(40390,{c={2},isWorldQuest=1,g={
-crit(36484,{achID=11189,awp=70003,id=960})}}),
+crit(36484,{achID=11189,id=960})}}),
 q(45985,{isWorldQuest=1,g={
 o(267655,{coords={
 [646]={{52.4,55.4},{53.9,58.6},{54.3,56.7},{54.4,58},{55,56.7},{56.7,55.4},{56.7,56.8}}},g={
 i(144240)}}),
-crit(36313,{achID=11189,awp=70003,id=940})}}),
+crit(36313,{achID=11189,id=940})}}),
 q(45541,{isWorldQuest=1,g={
-crit(36304,{achID=11189,awp=70003,id=931})}}),
+crit(36304,{achID=11189,id=931})}}),
 q(46066,{isWorldQuest=1,g={
-crit(36485,{achID=11189,awp=70003,id=961})}}),
+crit(36485,{achID=11189,id=961})}}),
 q(46112,{isWorldQuest=1,pb=1,g={
-crit(36252,{achID=11189,awp=70003,id=879})}}),
+crit(36252,{achID=11189,id=879})}}),
 q(46113,{isWorldQuest=1,pb=1,g={
-crit(36250,{achID=11189,awp=70003,id=877})}}),
+crit(36250,{achID=11189,id=877})}}),
 q(46111,{isWorldQuest=1,pb=1,g={
-crit(36251,{achID=11189,awp=70003,id=878})}}),
+crit(36251,{achID=11189,id=878})}}),
 q(46817,{isWorldQuest=1,g={
-crit(36295,{achID=11189,awp=70003,id=922})}}),
+crit(36295,{achID=11189,id=922})}}),
 q(45743,{isWorldQuest=1,g={
-crit(36284,{achID=11189,awp=70003,id=911})}}),
+crit(36284,{achID=11189,id=911})}}),
 q(45776,{c={4},isWorldQuest=1,g={
-crit(36286,{achID=11189,awp=70003,id=913})}}),
+crit(36286,{achID=11189,id=913})}}),
 q(45653,{c={8},isWorldQuest=1,g={
-crit(36308,{achID=11189,awp=70003,id=935})}}),
+crit(36308,{achID=11189,id=935})}}),
 q(45472,{isWorldQuest=1,g={
-crit(36269,{achID=11189,awp=70003,id=896})}}),
+crit(36269,{achID=11189,id=896})}}),
 q(46308,{isWorldQuest=1,g={
-crit(36311,{achID=11189,awp=70003,id=938})}}),
+crit(36311,{achID=11189,id=938})}}),
 q(46046,{c={6},isWorldQuest=1,g={
 i(144241),
-crit(36298,{achID=11189,awp=70003,id=925})}}),
+crit(36298,{achID=11189,id=925})}}),
 q(46754,{c={8},isWorldQuest=1,g={
-crit(36324,{achID=11189,awp=70003,id=951})}}),
+crit(36324,{achID=11189,id=951})}}),
 q(46707,{isWorldQuest=1,g={
-crit(36312,{achID=11189,awp=70003,id=939})}}),
+crit(36312,{achID=11189,id=939})}}),
 q(46755,{isWorldQuest=1,g={
-crit(36278,{achID=11189,awp=70003,id=905})}}),
+crit(36278,{achID=11189,id=905})}}),
 q(46756,{isWorldQuest=1,g={
-crit(36277,{achID=11189,awp=70003,id=904})}}),
+crit(36277,{achID=11189,id=904})}}),
 q(46825,{isWorldQuest=1,g={
 o(268765,{
 i(147211,{spellID=245987})}),
-crit(36293,{achID=11189,awp=70003,id=920})}}),
+crit(36293,{achID=11189,id=920})}}),
 q(46822,{isWorldQuest=1,g={
-crit(36288,{achID=11189,awp=70003,id=915})}}),
+crit(36288,{achID=11189,id=915})}}),
 q(46833,{isWorldQuest=1,g={
-crit(36289,{achID=11189,awp=70003,id=916})}}),
+crit(36289,{achID=11189,id=916})}}),
 q(44751,{isWorldQuest=1,g={
-crit(36271,{achID=11189,awp=70003,id=898})}}),
+crit(36271,{achID=11189,id=898})}}),
 q(45792,{isWorldQuest=1,g={
-crit(36274,{achID=11189,awp=70003,id=901})}}),
+crit(36274,{achID=11189,id=901})}}),
 q(45793,{c={9},isWorldQuest=1,g={
-crit(36275,{achID=11189,awp=70003,id=902})}}),
+crit(36275,{achID=11189,id=902})}}),
 q(46752,{isWorldQuest=1,g={
 i(146892),
-crit(36318,{achID=11189,awp=70003,id=945})}}),
+crit(36318,{achID=11189,id=945})}}),
 q(45797,{isWorldQuest=1,g={
-crit(36486,{achID=11189,awp=70003,id=962})}}),
+crit(36486,{achID=11189,id=962})}}),
 q(46180,{isWorldQuest=1,g={
-crit(36263,{achID=11189,awp=70003,id=890})}}),
+crit(36263,{achID=11189,id=890})}}),
 q(45929,{isWorldQuest=1,g={
-crit(36254,{achID=11189,awp=70003,id=881})}}),
+crit(36254,{achID=11189,id=881})}}),
 q(46075,{isWorldQuest=1,g={
 o(267768,{type="AsGenericObjectContainer",g={
 o(267768,{type="AsSubGenericObject"}),
 o(267769,{type="AsSubGenericObject"}),
 o(267770,{type="AsSubGenericObject"}),
 i(143851)}}),
-crit(36259,{achID=11189,awp=70003,id=886})}}),
+crit(36259,{achID=11189,id=886})}}),
 q(46076,{isWorldQuest=1,g={
-crit(36261,{achID=11189,awp=70003,id=888})}}),
+crit(36261,{achID=11189,id=888})}}),
 q(46175,{isWorldQuest=1,g={
 ach(11607),
-crit(36487,{achID=11189,awp=70003,id=963})}}),
+crit(36487,{achID=11189,id=963})}}),
 q(46001,{isWorldQuest=1,g={
-crit(36488,{achID=11189,awp=70003,id=964})}}),
+crit(36488,{achID=11189,id=964})}}),
 q(45550,{isWorldQuest=1,g={
-crit(36320,{achID=11189,awp=70003,id=947})}}),
+crit(36320,{achID=11189,id=947})}}),
 q(45549,{c={3},isWorldQuest=1,g={
-crit(36319,{achID=11189,awp=70003,id=946})}}),
+crit(36319,{achID=11189,id=946})}}),
 q(45626,{isWorldQuest=1,g={
-crit(36307,{achID=11189,awp=70003,id=934})}}),
+crit(36307,{achID=11189,id=934})}}),
 q(46360,{isWorldQuest=1,g={
-crit(36310,{achID=11189,awp=70003,id=937})}}),
+crit(36310,{achID=11189,id=937})}}),
 q(46109,{isWorldQuest=1,g={
-crit(36326,{achID=11189,awp=70003,id=953})}}),
+crit(36326,{achID=11189,id=953})}}),
 q(46236,{isWorldQuest=1,g={
-crit(36255,{achID=11189,awp=70003,id=882})}}),
+crit(36255,{achID=11189,id=882})}}),
 q(46762,{isWorldQuest=1,g={
 i(146896,{spellID=239905}),
-crit(36281,{achID=11189,awp=70003,id=908})}}),
+crit(36281,{achID=11189,id=908})}}),
 q(46811,{c={6},isWorldQuest=1,g={
-crit(36314,{achID=11189,awp=70003,id=941})}}),
+crit(36314,{achID=11189,id=941})}}),
 q(45805,{isWorldQuest=1,g={
 i(143924,{spellID=234410}),
-crit(36285,{achID=11189,awp=70003,id=912})}}),
+crit(36285,{achID=11189,id=912})}}),
 q(45035,{isWorldQuest=1,g={
-crit(36272,{achID=11189,awp=70003,id=899})}}),
+crit(36272,{achID=11189,id=899})}}),
 q(46942,{isWorldQuest=1,g={
-crit(36279,{achID=11189,awp=70003,id=906})}}),
+crit(36279,{achID=11189,id=906})}}),
 q(46160,{isWorldQuest=1,g={
-crit(36323,{achID=11189,awp=70003,id=950})}}),
+crit(36323,{achID=11189,id=950})}}),
 q(46032,{isWorldQuest=1,g={
-crit(36297,{achID=11189,awp=70003,id=924})}}),
+crit(36297,{achID=11189,id=924})}}),
 q(46325,{isWorldQuest=1,g={
-crit(36329,{achID=11189,awp=70003,id=956})}}),
+crit(36329,{achID=11189,id=956})}}),
 q(46063,{isWorldQuest=1,g={
-crit(36299,{achID=11189,awp=70003,id=926})}}),
+crit(36299,{achID=11189,id=926})}}),
 q(46866,{isWorldQuest=1,g={
-crit(36264,{achID=11189,awp=70003,id=891})}}),
+crit(36264,{achID=11189,id=891})}}),
 q(45379,{isWorldQuest=1,g={
-crit(36292,{achID=11189,awp=70003,id=919})}}),
+crit(36292,{achID=11189,id=919})}}),
 q(45973,{isWorldQuest=1,g={
 o(268715,{
 i(146951)}),
-crit(36325,{achID=11189,awp=70003,id=952})}}),
+crit(36325,{achID=11189,id=952})}}),
 q(45791,{isWorldQuest=1,g={
 o(267278,{coords={
 [646]={{77.2,39.7},{78.1,39.6},{79,38.4},{79,41.1}}},g={
@@ -95226,11 +95226,11 @@ i(143888)}}),
 o(267277,{coords={
 [646]={{77.2,40.2},{77.4,39},{77.5,38.9},{78.3,41.4},{78.5,41.1},{78.8,37.9},{79.2,42.1},{79.3,38.7},{79.3,40},{79.4,42.5},{80.4,42.6},{80.6,44.5},{80.9,43.1}}},g={
 i(143888)}}),
-crit(36489,{achID=11189,awp=70003,id=965})}}),
+crit(36489,{achID=11189,id=965})}}),
 q(45930,{isWorldQuest=1,g={
-crit(36253,{achID=11189,awp=70003,id=880})}}),
+crit(36253,{achID=11189,id=880})}}),
 q(45977,{isWorldQuest=1,sym={{"select","npcID",118403}},g={
-crit(36303,{achID=11189,awp=70003,id=930})}}),
+crit(36303,{achID=11189,id=930})}}),
 q(44748,{isWorldQuest=1,g={
 o(265551,{coords={
 [646]={{45.7,73.4},{47,70.8},{48.4,70.9},{48.5,69.1},{48.5,73.5},{48.9,67.4},{48.9,72.6},{49,70.4},{49.8,68.3},{49.9,71.8},{49.9,72.4},{50.1,70.9},{50.4,69.4}}},type="AsGenericObjectContainer",g={
@@ -95238,7 +95238,7 @@ i(142079),
 o(265551,{type="AsSubGenericObject"}),
 o(265552,{type="AsSubGenericObject"}),
 o(265554,{type="AsSubGenericObject"})}}),
-crit(36273,{achID=11189,awp=70003,id=900})}})}}),
+crit(36273,{achID=11189,id=900})}})}}),
 h(-64,{awp=70200,g={
 s(86048,146886,{b=1,f=3,lvl=40}),
 s(86021,146857,{b=1,f=3,lvl=40}),
@@ -95359,7 +95359,7 @@ p(1731,{description="Found in the Blind Marshlands and in Faronaar (in a small a
 crit(33116,{achID=11233,id=10,pb=1})}}),
 p(569,{coords={
 [650]={{43,59.8}}},npcID=63002,pb=1,g={
-crit(21784,{achID=6589,awp=50004,id=13})}}),
+crit(21784,{achID=6589,id=13})}}),
 p(1762,{coords={
 [650]={{50.8,33.6}}},npcID=98192,pb=1,g={
 crit(33128,{achID=11233,id=22,pb=1})}}),
@@ -97358,7 +97358,7 @@ ach(10793,{sourceQuests={42483}})}),
 flt(101,{pb=1,sym={{"select","speciesID",1708,1743,647,550,645,1579,1583,1713,633,1441}},g={
 p(380,{coords={
 [634]={{35.8,52.2}}},npcID=62992,pb=1,g={
-crit(21781,{achID=6589,awp=50004,id=7})}}),
+crit(21781,{achID=6589,id=7})}}),
 p(1712,{description="Found in yellow areas on the map in Stormheim.",npcID=97080,pb=1,g={
 crit(33110,{achID=11233,id=4,pb=1}),
 crit(50232,{achID=14729,coords={
@@ -97368,7 +97368,7 @@ p(1744,{coords={
 crit(33124,{achID=11233,id=18,pb=1})}}),
 p(743,{coords={
 [634]={{56.8,45.5}}},npcID=64352,pb=1,g={
-crit(21841,{achID=6589,awp=50004,id=34})}}),
+crit(21841,{achID=6589,id=34})}}),
 p(1749,{description="Found in yellow areas on the map in Stormheim.",npcID=97840,pb=1,g={
 crit(33125,{achID=11233,id=19,pb=1})}}),
 p(1736,{npcID=97542,pb=1,g={
@@ -98989,8 +98989,8 @@ crit(109710,{achID=42114,awp=110207,id=7})}),
 ach(11133,{sourceQuests={41138,42230,42488,42792,42833}})}),
 flt(101,{pb=1,sym={{"select","speciesID",425,1914,751,1325,1591}},g={
 p(706,{npcID=63062,pb=1,g={
-crit(21314,{achID=6350,awp=50004,id=2}),
-crit(21798,{achID=6589,awp=50004,id=5})}}),
+crit(21314,{achID=6350,id=2}),
+crit(21798,{achID=6589,id=5})}}),
 p(1809,{coords={
 [680]={{21,41}}},description="Found around Falanaar.",npcID=99527,pb=1,g={
 crit(33136,{achID=11233,id=30,pb=1})}}),
@@ -101213,7 +101213,7 @@ crit(50228,{achID=14729,coords={
 [641]={{63.6,72}}},id=7})}}),
 p(380,{coords={
 [641]={{53.2,46.6}}},npcID=62992,pb=1,g={
-crit(21781,{achID=6589,awp=50004,id=7})}}),
+crit(21781,{achID=6589,id=7})}}),
 p(1913,{description="Found around the grassy area in southern Val'Sharah.",npcID=110741,pb=1,g={
 crit(33138,{achID=11233,id=32,pb=1}),
 crit(50227,{achID=14729,coords={
@@ -104555,14 +104555,14 @@ h(-12,{
 ach(12891,{r=2,g={
 crit(44252,{achID=13517,id=1})}}),
 ach(12947,{
-crit(41310,{achID=12989,awp=80000,id=2}),
+crit(41310,{achID=12989,id=2}),
 crit(41310,{achID=40953,awp=110007,id=9})}),
 ach(12936,{
 toy(163697,{b=1})}),
 ach(12593,{r=2,g={
-crit(41137,{achID=7520,awp=50004,id=1}),
+crit(41137,{achID=7520,id=1}),
 crit(41137,{achID=12891,id=1,r=2}),
-crit(41137,{achID=12989,awp=80000,id=4}),
+crit(41137,{achID=12989,id=4}),
 crit(41137,{achID=40956,awp=110007,id=8})}}),
 ach(13517,{
 mnt(295386,{b=1,itemID=168056,lvl=10,r=2}),
@@ -106567,8 +106567,8 @@ crit(41652,{achID=13087,id=5,providers={{"i",155813}}}),
 crit(41653,{achID=13087,id=6,providers={{"i",155814}}}),
 crit(71363,{achID=41207,awp=110007,id=3})}}),
 ach(12579,{pvp=1,g={
-crit(40591,{achID=12604,awp=80000,id=6,pvp=1,r=1}),
-crit(40591,{achID=12605,awp=80000,id=6,pvp=1,r=2})}}),
+crit(40591,{achID=12604,id=6,pvp=1,r=1}),
+crit(40591,{achID=12605,id=6,pvp=1,r=2})}}),
 ach(12995,{
 crit(71362,{achID=41207,awp=110007,id=2})}),
 ach(41207,{awp=110007,g={
@@ -107666,7 +107666,7 @@ r(29571,{isLimited=1,itemID=23593,requireSkill=164,skillID=2476}),
 r(29728,{isLimited=1,itemID=23638,requireSkill=164,skillID=2476})}})}),
 h(-62,{
 q(53701,{isDaily=1,isWorldQuest=1,lvl=50,poiIDs={5964},pvp=1,r=2,sharedDescription="Requires War Mode Active",g={
-crit(44018,{achID=13387,awp=80000,id=3,pvp=1,questID=54771,r=2})}}),
+crit(44018,{achID=13387,id=3,pvp=1,questID=54771,r=2})}}),
 q(51616,{isWorldQuest=1,lvl=50,r=2,g={
 crit(42282,{achID=13144,id=12})}}),
 q(51719,{isWorldQuest=1,lvl=50,r=1,g={
@@ -107818,7 +107818,7 @@ crit(42277,{achID=13144,id=7})}}),
 q(51467,{isWorldQuest=1,lvl=50,g={
 crit(42343,{achID=13144,id=73})}}),
 q(54137,{isDaily=1,isWorldQuest=1,lvl=50,poiIDs={5964},pvp=1,r=1,sharedDescription="Requires War Mode Active",g={
-crit(44026,{achID=13388,awp=80000,id=5,pvp=1,questID=54772,r=1})}}),
+crit(44026,{achID=13388,id=5,pvp=1,questID=54772,r=1})}}),
 q(54688,{isWorldQuest=1,lvl=50,r=1}),
 q(51693,{isWorldQuest=1,lvl=50,r=2,g={
 crit(42283,{achID=13144,id=13})}}),
@@ -108083,7 +108083,7 @@ crit(44307,{achID=13473,id=4,providers={{"n",150608}}}),
 crit(44308,{achID=13473,id=5,providers={{"n",150609}}}),
 de(2326,{awp=110207,itemID=246483,spellID=1242331})}),
 ach(13776,{
-crit(46115,{achID=13250,awp=80000,id=5})}),
+crit(46115,{achID=13250,id=5})}),
 ach(13482,{providers={{"n",150969}},g={
 crit(45783,{achID=13555,id=2})}}),
 ach(13555,{
@@ -108160,7 +108160,7 @@ crit(45629,{achID=13696,id=2,providers={{"i",167071},{"n",155523}}})}}),
 ach(13489,{requireSkill=356,g={
 toy(167698,{b=1,lvl=10,sourceAchievements={13489}})}}),
 ach(13570,{pvp=1}),
-crit(45749,{achID=13623,awp=80000,maps={1462},pvp=1})}}),
+crit(45749,{achID=13623,maps={1462},pvp=1})}}),
 flt(101,{awp=80200,pb=1,g={
 h(-45,{pb=1,g={
 q(56442,{coords={
@@ -108251,7 +108251,7 @@ exp(10467,{
 crit(46047,{achID=13776,id=6})})}}),
 h(-31,{
 faction(2391,{
-crit(45265,{achID=13250,awp=80000,id=2})})}),
+crit(45265,{achID=13250,id=2})})}),
 h(-32,{awp=80200,g={
 fp(2442,{coords={
 [1462]={{77.8,40.9}}},r=2}),
@@ -109412,8 +109412,8 @@ ach(13046,{providers={{"s",279418}},g={
 crit(71356,{achID=41206,awp=110007,id=4})}}),
 ach(12956),
 ach(12578,{pvp=1,g={
-crit(40590,{achID=12604,awp=80000,id=7,pvp=1,r=1}),
-crit(40590,{achID=12605,awp=80000,id=7,pvp=1,r=2})}}),
+crit(40590,{achID=12604,id=7,pvp=1,r=1}),
+crit(40590,{achID=12605,id=7,pvp=1,r=2})}}),
 ach(12853,{
 crit(71354,{achID=41206,awp=110007,id=2})})}),
 flt(101,{pb=1,sym={{"select","speciesID",2399,2381}},g={
@@ -109423,7 +109423,7 @@ crit(41275,{achID=12930,id=3,pb=1})}}),
 p(2379,{coords={
 [942]={{45.6,61.2},{50.6,50.4},{74.2,69.6}}},description="Found mostly around these coords.",npcID=143038,pb=1,g={
 crit(41280,{achID=12930,id=27,pb=1}),
-crit(50236,{achID=14730,awp=80000,coords={
+crit(50236,{achID=14730,coords={
 [942]={{45.87,62.73}}},id=1})}}),
 p(2373,{coords={
 [942]={{56.6,30.2},{63.2,30},{63.2,37.2},{64.6,44.6}}},description="Best found along the waterways above Sagehold. Coords are a route.",npcID=143032,pb=1,g={
@@ -111074,7 +111074,7 @@ crit(42669,{achID=13144,id=399})}}),
 q(51982,{isWorldQuest=1,lvl=50,poiIDs={5966},qgs={135800},r=2,g={
 i(166459,{spellID=288658}),
 crit(42677,{achID=13144,id=407}),
-crit(44017,{achID=13387,awp=80000,id=2,pvp=1,questID=54775,r=2,sharedDescription="Requires War Mode Active"})}}),
+crit(44017,{achID=13387,id=2,pvp=1,questID=54775,r=2,sharedDescription="Requires War Mode Active"})}}),
 q(52380,{isWorldQuest=1,lvl=50,r=2,g={
 crit(42423,{achID=13144,id=153})}}),
 q(52322,{isWorldQuest=1,lvl=50,g={
@@ -111269,8 +111269,8 @@ ach(13049,{r=2,g={
 de(9140,{awp=110207,itemID=252653,spellID=1254846}),
 crit(71393,{achID=41205,awp=110007,id=7})}}),
 ach(12577,{pvp=1,g={
-crit(40589,{achID=12604,awp=80000,id=8,pvp=1,r=1}),
-crit(40589,{achID=12605,awp=80000,id=8,pvp=1,r=2})}}),
+crit(40589,{achID=12604,id=8,pvp=1,r=1}),
+crit(40589,{achID=12605,id=8,pvp=1,r=2})}}),
 ach(12852,{
 crit(71349,{achID=41205,awp=110007,id=2})})}),
 flt(101,{pb=1,sym={{"select","speciesID",487,2400,478,2399,2377}},g={
@@ -112299,8 +112299,8 @@ q(53812,{isWorldQuest=1,lvl=50,r=2}),
 q(50322,{isWorldQuest=1,lvl=50,r=2,g={
 crit(42801,{achID=13144,id=531})}}),
 q(53711,{isWorldQuest=1,lvl=50,poiIDs={5896},qgs={135808},r=2,g={
-crit(43630,{achID=13283,awp=80000,id=1,r=2}),
-crit(44016,{achID=13387,awp=80000,id=1,pvp=1,questID=54782,r=2,sharedDescription="Requires War Mode Active"})}}),
+crit(43630,{achID=13283,id=1,r=2}),
+crit(44016,{achID=13387,id=1,pvp=1,questID=54782,r=2,sharedDescription="Requires War Mode Active"})}}),
 q(51385,{isWorldQuest=1,lvl=50,r=2,g={
 i(153486),
 crit(42795,{achID=13144,id=525})}}),
@@ -112349,7 +112349,7 @@ q(53280,{isWorldQuest=1,lvl=50,requireSkill=182,g={
 crit(42402,{achID=13144,id=132})}}),
 q(54281,{isWorldQuest=1,lvl=50,r=2}),
 q(53939,{isWorldQuest=1,lvl=50,poiIDs={5896},pvp=1,qgs={135447},r=1,sharedDescription="Requires War Mode Active",g={
-crit(44022,{achID=13388,awp=80000,id=1,pvp=1,questID=54769,r=1})}}),
+crit(44022,{achID=13388,id=1,pvp=1,questID=54769,r=1})}}),
 q(52755,{isWorldQuest=1,lvl=50,r=1,g={
 crit(42727,{achID=13144,id=457})}}),
 q(51665,{isWorldQuest=1,lvl=50,g={
@@ -112698,7 +112698,7 @@ i(160326)}})}})})}})}}),
 m(875,{awp=80001,icon=2176536,lore="With the advent of the Cataclysm, the island was thrown into chaos, as large sections of its capital were lost to the sea and the jungle of Nazmir began to sink, transforming it into a swamp. This would lead the Zandalari themselves to attempt to forge a new nation in other parts of the world to escape their compromised home, though they were largely unsuccessful at the time.\n\nNot as strong as in times past, beset by internal troubles within Zandalar itself, and amidst another war with the Alliance, the trolls of Zandalar now seek fresh allies, setting the ancient island up as a major theater for the impending Battle for Azeroth.",["zone-text-continent"]=1,lvl=10,g={
 h(-12,{
 ach(12947,{
-crit(41310,{achID=12989,awp=80000,id=2}),
+crit(41310,{achID=12989,id=2}),
 crit(41310,{achID=40953,awp=110007,id=9})}),
 ach(12936,{
 toy(163697,{b=1})}),
@@ -112740,7 +112740,7 @@ crit(41675,{achID=13048,coords={
 crit(41672,{achID=13048,coords={
 [862]={{71.13,40.34}}},id=3,providers={{"n",139365}}})}),
 ach(13294,{r=1,g={
-crit(43881,{achID=7520,awp=50004,id=1}),
+crit(43881,{achID=7520,id=1}),
 crit(43881,{achID=40956,awp=110007,id=7})}}),
 ach(11861,{r=1,g={
 crit(40030,{achID=12479,id=1,r=1}),
@@ -112750,7 +112750,7 @@ mnt(295387,{b=1,itemID=168055,lvl=10,r=1}),
 crit(71302,{achID=40955,awp=110007,id=3})}),
 ach(12479,{r=1,g={
 de(1183,{awp=110207,itemID=245522,spellID=1238671}),
-crit(41309,{achID=12989,awp=80000,id=4}),
+crit(41309,{achID=12989,id=4}),
 crit(41309,{achID=13517,id=3})}})}),
 h(-62,{
 ah(2163,{type="fa",g={
@@ -114454,15 +114454,15 @@ crit(40031,{achID=13294,id=2,r=1})}}),
 ach(13263,{r=1,sourceQuests={53782},g={
 crit(71305,{achID=40955,awp=110007,id=5})}}),
 ach(12574,{pvp=1,g={
-crit(40593,{achID=12604,awp=80000,id=4,pvp=1,r=1}),
-crit(40593,{achID=12605,awp=80000,id=4,pvp=1,r=2})}}),
+crit(40593,{achID=12604,id=4,pvp=1,r=1}),
+crit(40593,{achID=12605,id=4,pvp=1,r=2})}}),
 ach(12771,{
 crit(71378,{achID=41203,awp=110007,id=2})})}),
 flt(101,{pb=1,g={
 p(2388,{coords={
 [863]={{35,54.6},{36.2,65.2},{36.4,46.8},{39.2,64.2}}},description="Found all around the Terrace of Sorrows.",npcID=143047,pb=1,g={
 crit(41288,{achID=12930,id=16,pb=1}),
-crit(50244,{achID=14730,awp=80000,coords={
+crit(50244,{achID=14730,coords={
 [863]={{30.3,66.91}}},id=10})}}),
 p(2398,{coords={
 [863]={{28.8,39.4},{76.8,46.8}}},description="Found around Krag'wa's Burrow and NE of Shoaljai Tar Pits.",npcID=143055,pb=1,g={
@@ -115012,7 +115012,7 @@ q(49477,{coords={
 [863]={{34,39.6}}},isBreadcrumb=1,lvl=20,nextQuests={48492},providers={{"o",278577}},r=1}),
 q(50444,{coords={
 [863]={{53.9,74.1}}},lvl=20,qgs={136608},sourceQuests={47442,51145},g={
-crit(40044,{achID=12482,awp=80000,id=11})}}),
+crit(40044,{achID=12482,id=11})}}),
 q(50082,{coords={
 [863]={{44.1,62.8}}},lvl=20,qgs={133125},r=1,sourceQuests={50079,50081},g={
 s(94792,159036,{b=1,f=6,r=1}),
@@ -115273,14 +115273,14 @@ n(124475,{coords={
 [863]={{29.1,55.6}}},questID=47878}),
 n(143316,{coords={
 [863]={{52.6,70}}},g={
-crit(41390,{achID=13027,awp=80000,id=1})}}),
+crit(41390,{achID=13027,id=1})}}),
 n(126460,{coords={
 [863]={{31.4,38.1}}},questID=48508,g={
 crit(41469,{achID=12942,id=23}),
 s(98586,162621,{b=1,f=7,lvl=50})}}),
 n(143311,{coords={
 [863]={{73.6,48.8}}},g={
-crit(41393,{achID=13027,awp=80000,id=4})}}),
+crit(41393,{achID=13027,id=4})}}),
 n(126056,{coords={
 [863]={{49.4,37.2}}},questID=48406,g={
 crit(41470,{achID=12942,id=24}),
@@ -115603,7 +115603,7 @@ crit(42941,{achID=13144,id=671})}}),
 q(50517,{isWorldQuest=1,lvl=50,g={
 crit(42530,{achID=13144,id=260})}}),
 q(54136,{isWorldQuest=1,lvl=50,poiIDs={5969},pvp=1,qgs={135446},r=2,sharedDescription="Requires War Mode Active",g={
-crit(44020,{achID=13387,awp=80000,id=5,pvp=1,questID=54773,r=2})}}),
+crit(44020,{achID=13387,id=5,pvp=1,questID=54773,r=2})}}),
 q(52754,{isWorldQuest=1,lvl=50,pb=1,qgs={141529},g={
 crit(42489,{achID=13144,id=219}),
 crit(44221,{achID=12936,id=13,providers={{"n",141529}}})}}),
@@ -115645,7 +115645,7 @@ i(166726)}}),
 q(50676,{isWorldQuest=1,lvl=50,g={
 crit(42491,{achID=13144,id=221})}}),
 q(54135,{isWorldQuest=1,lvl=50,poiIDs={5969},pvp=1,qgs={135459},r=1,sharedDescription="Requires War Mode Active",g={
-crit(44023,{achID=13388,awp=80000,id=2,pvp=1,questID=54774,r=1})}}),
+crit(44023,{achID=13388,id=2,pvp=1,questID=54774,r=1})}}),
 q(50961,{isWorldQuest=1,lvl=50,r=2,g={
 o(281722,{
 i(158176)}),
@@ -115877,8 +115877,8 @@ crit(40032,{achID=12479,id=3,r=1}),
 crit(40032,{achID=13294,id=3,r=1})}}),
 ach(12949,{r=1}),
 ach(12576,{pvp=1,g={
-crit(40592,{achID=12604,awp=80000,id=5,pvp=1,r=1}),
-crit(40592,{achID=12605,awp=80000,id=5,pvp=1,r=2})}}),
+crit(40592,{achID=12604,id=5,pvp=1,r=1}),
+crit(40592,{achID=12605,id=5,pvp=1,r=2})}}),
 ach(12849,{
 crit(71386,{achID=41204,awp=110007,id=2})}),
 ach(13014,{r=1,g={
@@ -116447,7 +116447,7 @@ q(50751,{coords={
 [864]={{51.98,27.71}}},lvl=30,qgs={138519},r=1,sourceQuests={50550}}),
 q(50901,{coords={
 [864]={{42.1,72.1}}},lvl=30,qgs={133859},sourceQuests={47442,51145},g={
-crit(40048,{achID=12482,awp=80000,id=12})}}),
+crit(40048,{achID=12482,id=12})}}),
 q(48656,{coords={
 [864]={{43.3,78.6}}},lvl=30,providers={{"o",276187}},r=1,sourceQuests={48655}}),
 q(47871,{coords={
@@ -116812,7 +116812,7 @@ crit(41621,{achID=12943,id=16}),
 s(96956,161024,{b=1,f=4,lvl=50})}}),
 n(143313,{coords={
 [864]={{61,18.3}}},g={
-crit(41392,{achID=13027,awp=80000,id=3})}}),
+crit(41392,{achID=13027,id=3})}}),
 n(136340,{coords={
 [864]={{49,72}}},questID=51126,g={
 crit(41622,{achID=12943,id=17}),
@@ -117188,7 +117188,7 @@ crit(42914,{achID=13144,id=644})}}),
 q(51928,{isWorldQuest=1,lvl=50,g={
 crit(42912,{achID=13144,id=642})}}),
 q(53885,{isWorldQuest=1,lvl=50,poiIDs={5970},pvp=1,qgs={135804},r=1,sharedDescription="Requires War Mode Active",g={
-crit(44024,{achID=13388,awp=80000,id=3,pvp=1,questID=54778,r=1})}}),
+crit(44024,{achID=13388,id=3,pvp=1,questID=54778,r=1})}}),
 q(54574,{isWorldQuest=1,lvl=50,r=2}),
 q(51100,{isWorldQuest=1,lvl=50,g={
 crit(42861,{achID=13144,id=591})}}),
@@ -117206,7 +117206,7 @@ crit(42826,{achID=13144,id=556})}}),
 q(51635,{isWorldQuest=1,lvl=50,g={
 crit(42817,{achID=13144,id=547})}}),
 q(54134,{isWorldQuest=1,lvl=50,poiIDs={5970},pvp=1,qgs={135446},r=2,sharedDescription="Requires War Mode Active",g={
-crit(44019,{achID=13387,awp=80000,id=4,pvp=1,questID=54777,r=2})}}),
+crit(44019,{achID=13387,id=4,pvp=1,questID=54777,r=2})}}),
 q(50851,{isWorldQuest=1,lvl=50,g={
 n(134694,{coords={
 [864]={{37.41,88.71}}},description="This rare is only up when its associated world quest is active.",questID=50666,repeatable=1,g={
@@ -117481,8 +117481,8 @@ ach(12481,{r=1,sourceQuests={50954},g={
 crit(40036,{achID=12479,id=5,r=1})}}),
 ach(12956),
 ach(12575,{pvp=1,g={
-crit(40594,{achID=12604,awp=80000,id=9,pvp=1,r=1}),
-crit(40594,{achID=12605,awp=80000,id=9,pvp=1,r=2})}}),
+crit(40594,{achID=12604,id=9,pvp=1,r=1}),
+crit(40594,{achID=12605,id=9,pvp=1,r=2})}}),
 ach(12851,{
 crit(71371,{achID=41202,awp=110007,id=2})})}),
 flt(101,{pb=1,g={
@@ -117782,7 +117782,7 @@ i(159765,{b=1,f=53,spellID=268624}),
 i(155308,{b=1,f=52})}}),
 q(50332,{coords={
 [862]={{66.2,16.6}}},lvl=10,qgs={133490},sourceQuests={47442,51145},g={
-crit(40038,{achID=12482,awp=80000,id=4})}}),
+crit(40038,{achID=12482,id=4})}}),
 q(50074,{coords={
 [862]={{64.1,35.3}}},lvl=10,qgs={130905},r=1,sourceQuests={49801},g={
 i(156475,{spellID=259144})}}),
@@ -118127,7 +118127,7 @@ q(49424,{coords={
 [862]={{49.3,44.4}}},lvl=10,qgs={129561},r=1,sourceQuests={49965}}),
 q(50381,{coords={
 [862]={{61.9,46.9}}},lvl=10,qgs={133612},sourceQuests={47442,51145},g={
-crit(40039,{achID=12482,awp=80000,id=7})}}),
+crit(40039,{achID=12482,id=7})}}),
 q(53476,{description="You receive the item that starts this quest from looting any treasure chest.",lvl=10,maps={863,864,895,896,942},providers={{"i",163856}},g={
 i(163853),
 i(163852,{spellID=280608}),
@@ -118399,7 +118399,7 @@ s(96966,161034,{b=1,f=6,lvl=50}),
 crit(41871,{achID=12944,id=7})}}),
 n(143314,{coords={
 [862]={{45.6,79}}},g={
-crit(41391,{achID=13027,awp=80000,id=2})}}),
+crit(41391,{achID=13027,id=2})}}),
 n(128699,{coords={
 [862]={{59.68,18.22}}},questID=49267,g={
 s(97034,161104,{b=1,f=6,lvl=50}),
@@ -118961,7 +118961,7 @@ q(51497,{isWorldQuest=1,lvl=50,r=1,g={
 i(160307,{spellID=271249}),
 crit(43098,{achID=13144,id=828})}}),
 q(54132,{isWorldQuest=1,lvl=50,poiIDs={5966},pvp=1,qgs={135447},r=1,sharedDescription="Requires War Mode Active",g={
-crit(44027,{achID=13388,awp=80000,id=6,pvp=1,questID=54776,r=1})}}),
+crit(44027,{achID=13388,id=6,pvp=1,questID=54776,r=1})}}),
 q(51178,{isWorldQuest=1,lvl=50,r=2,g={
 ach(13035),
 crit(43090,{achID=13144,id=820})}}),
@@ -119022,7 +119022,7 @@ i(159755),
 crit(43083,{achID=13144,id=813})}}),
 q(54532,{isWorldQuest=1,r=1}),
 q(54138,{isWorldQuest=1,lvl=10,poiIDs={5973},pvp=1,qgs={135446},r=2,sharedDescription="Requires War Mode Active",g={
-crit(44021,{achID=13387,awp=80000,id=6,pvp=1,questID=54779,r=2})}}),
+crit(44021,{achID=13387,id=6,pvp=1,questID=54779,r=2})}}),
 q(52250,{isWorldQuest=1,lvl=50,r=2,g={
 crit(43109,{achID=13144,id=839})}}),
 q(54504,{isWorldQuest=1,r=2}),
@@ -119035,7 +119035,7 @@ crit(43030,{achID=13144,id=760})}}),
 q(51630,{isWorldQuest=1,lvl=50,g={
 crit(42824,{achID=13144,id=554})}}),
 q(53883,{isWorldQuest=1,lvl=10,poiIDs={5973},pvp=1,qgs={135447},r=1,sharedDescription="Requires War Mode Active",g={
-crit(44025,{achID=13388,awp=80000,id=4,pvp=1,questID=54780,r=1})}}),
+crit(44025,{achID=13388,id=4,pvp=1,questID=54780,r=1})}}),
 q(54522,{isWorldQuest=1,r=1}),
 q(52938,{isWorldQuest=1,lvl=50,pb=1,g={
 crit(43046,{achID=13144,id=776}),
@@ -119240,7 +119240,7 @@ crit(45838,{achID=13638,id=4})}}),
 ach(13763,{description="This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",g={
 crit(45868,{achID=13638,id=10})}}),
 ach(13712,{
-crit(45925,{achID=13250,awp=80000,id=4}),
+crit(45925,{achID=13250,id=4}),
 crit(45925,{achID=13638,id=12})}),
 ach(13836,{
 o(245286,{coords={
@@ -119353,7 +119353,7 @@ ach(13710,{r=2,g={
 crit(45928,{achID=13638,id=15}),
 crit(45928,{achID=40955,awp=110007,id=10})}}),
 ach(13720,{pvp=1,questID=56792,g={
-crit(45751,{achID=13623,awp=80000,id=4,maps={1355},pvp=1})}}),
+crit(45751,{achID=13623,id=4,maps={1355},pvp=1})}}),
 ach(13722,{coords={
 [1355]={{28.5,31.2}}},crs={152275},description="Tadpoles are easily found in and around Bloodfin Village.",g={
 crit(45842,{achID=13638,id=6})}}),
@@ -119373,7 +119373,7 @@ crit(45927,{achID=13638,id=15}),
 crit(45927,{achID=40955,awp=110007,id=10})}}),
 ach(13558,{r=2,g={
 crit(45270,{achID=13638,id=13})}}),
-crit(45750,{achID=13623,awp=80000,maps={1355},pvp=1})}),
+crit(45750,{achID=13623,maps={1355},pvp=1})}),
 flt(101,{pb=1,g={
 p(2678,{npcID=154814,pb=1,g={
 crit(45594,{achID=13694,id=4,pb=1})}}),
@@ -119547,9 +119547,9 @@ exp(10346,{
 crit(46063,{achID=13712,id=16})})}),
 h(-31,{
 faction(2373,{r=1,g={
-crit(45267,{achID=13250,awp=80000,id=3})}}),
+crit(45267,{achID=13250,id=3})}}),
 faction(2400,{r=2,g={
-crit(45266,{achID=13250,awp=80000,id=3})}}),
+crit(45266,{achID=13250,id=3})}}),
 faction(2375,{r=2,g={
 crit(45737,{achID=13635,id=5})}}),
 faction(2376,{r=2,g={
@@ -122249,7 +122249,7 @@ crit(51036,{achID=14877,coords={
 [1565]={{51.2,44.2}}},id=11,pb=1,providers={{"n",173377}}}),
 crit(51046,{achID=14879,id=10,pb=1})}})}}),
 ach(14280,{
-crit(50305,{achID=7520,awp=50004,id=1})}),
+crit(50305,{achID=7520,id=1})}),
 ach(15388,{awp=90105}),
 ach(14867,{pb=1}),
 ach(14825),
@@ -123487,7 +123487,7 @@ r(360899,{awp=90105,b=1,cost={{"c",1885,5},{"c",1813,1000}},itemID=187937,lvl=10
 mnt(340503,{b=1,cost={{"c",1885,5},{"c",1813,5000}},itemID=183053,lvl=10,minReputation={2464,4}})}})})}}),
 ah(2465,{type="fa",g={
 faction(2465,{
-crit(48577,{achID=14315,awp=90000,id=4})}),
+crit(48577,{achID=14315,id=4})}),
 h(-12,{
 ach(14337,{minReputation={2465,42000}})}),
 h(-28,{
@@ -125038,7 +125038,7 @@ exp(13503,{collectible=false,coords={
 [1533]={{30.3,53.3}}}})}),
 h(-31,{
 faction(2407,{
-crit(48574,{achID=14315,awp=90000,id=1})})}),
+crit(48574,{achID=14315,id=1})})}),
 h(-32,{
 fp(2519,{coords={
 [1533]={{48.1,74.2}}}}),
@@ -127745,7 +127745,7 @@ exp(13406),
 exp(12906)}),
 h(-31,{
 faction(2410,{
-crit(48575,{achID=14315,awp=90000,id=2})})}),
+crit(48575,{achID=14315,id=2})})}),
 h(-32,{
 fp(2398,{coords={
 [1536]={{52.4,67.7}}},customCollect={"SL_COV_NEC"}}),
@@ -128226,7 +128226,7 @@ n(159105,{coords={
 [1536]={{49.8,24.6}}},isDaily=1,questID=58005,g={
 s(115471,184188,{b=1,f=21,lvl=48}),
 cq(62408,{b=1,description="This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",itemID=183692,spellID=341911,g={
-crit(49930,{achID=14763,awp=90000,id=2,providers={{"i",183692}}})}}),
+crit(49930,{achID=14763,id=2,providers={{"i",183692}}})}}),
 i(183833,{b=1}),
 s(115466,184181,{b=1,f=21,lvl=48}),
 s(115472,184189,{b=1,f=21,lvl=48}),
@@ -128327,7 +128327,7 @@ crit(48875,{achID=14308,id=21})}}),
 n(157125,{coords={
 [1536]={{29,51.6}}},crs={157124},description="Get an |cFFFFFFFFAni-Matter Orb|r from Synder Sixfold at |cFFFFFFFF26.3, 42.7|r (either while doing the weekly quest |cFF349cffAni-Matter Animator|r, or speak to Synder afterward to get another orb from him). Use it to reanimate soldiers near the rare's spawnpoint until a yellow dot appears on your minimap, indicating that Zargox is available to summon.",isDaily=1,questID=59290,g={
 cq(62404,{b=1,description="This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",itemID=183690,spellID=341908,g={
-crit(49929,{achID=14763,awp=90000,id=1,providers={{"i",183690}}})}}),
+crit(49929,{achID=14763,id=1,providers={{"i",183690}}})}}),
 s(115598,184285,{b=1,f=7,lvl=48}),
 s(113748,181804,{customCollect={"SL_COV_NEC"},f=3,lvl=50}),
 crit(48864,{achID=14308,id=3})}})}),
@@ -128809,7 +128809,7 @@ i(180532,{lvl=50}),
 i(181777,{b=1,coords={
 [1536]={{38,70.6}}},crs={170563},spellID=81040}),
 cq(62405,{b=1,crs={157509,160048,161599,162732,165014,165027,166335,166358,167935,171745},description="This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",itemID=183691,spellID=341909,g={
-crit(49933,{achID=14763,awp=90000,id=5,providers={{"i",183691}}})}}),
+crit(49933,{achID=14763,id=5,providers={{"i",183691}}})}}),
 cq(62255,{b=1,c={3},itemID=183124,spellID=340825}),
 i(186727,{awp=90100,b=1,spellID=354767})}),
 h(-64,{
@@ -129049,7 +129049,7 @@ exp(11017,{collectible=false,coords={
 crit(48558,{achID=14306,id=3})}})}),
 h(-31,{
 faction(2413,{
-crit(48576,{achID=14315,awp=90000,id=3})}),
+crit(48576,{achID=14315,id=3})}),
 ah(2439,{description="To unlock this faction, you must complete |cFFFFD700The Final Atonement|r questline in Revendreth.\n\nReputation with The Avowed is gained first by killing Depraved mobs outside the Halls of Atonement. Once you reach Friendly, use your |cFFFFFFFFSinstone Fragments|r to complete daily quests and summon Inquisitors, High Inquisitors, and Grand Inquisitors.\n\nMembers of the |cFFfe040fVenthyr Covenant|r can purchase a special mount and cosmetic cloak from the Avowed quartermaster that are unavailable to other covenants.",icon=458226,sourceQuests={57929},type="fa",g={
 faction(2439,{icon=458226}),
 h(-12,{
@@ -133897,102 +133897,102 @@ h(-62,{
 q(65081,{coords={
 [1970]={{47.9,88.7}}},isWorldQuest=1,sourceQuests={64230},g={
 i(187949),
-crit(53443,{achID=14758,awp=90002,id=207})}}),
+crit(53443,{achID=14758,id=207})}}),
 q(65232,{coords={
 [1970]={{57.2,66.5}}},isWorldQuest=1,sourceQuests={64230},g={
-crit(53436,{achID=14758,awp=90002,id=201})}}),
+crit(53436,{achID=14758,id=201})}}),
 q(65119,{coords={
 [1970]={{56.8,32.7}}},isWorldQuest=1,sourceQuests={64230},g={
 i(188137),
-crit(53433,{achID=14758,awp=90002,id=198})}}),
+crit(53433,{achID=14758,id=198})}}),
 q(65117,{coords={
 [1970]={{44.1,30.8}}},isWorldQuest=1,sourceQuests={64230},g={
-crit(53432,{achID=14758,awp=90002,id=197})}}),
+crit(53432,{achID=14758,id=197})}}),
 q(65230,{coords={
 [1970]={{47.4,80.3}}},isWorldQuest=1,sourceQuests={64230},g={
-crit(53434,{achID=14758,awp=90002,id=199})}}),
+crit(53434,{achID=14758,id=199})}}),
 q(64974,{coords={
 [1970]={{57.6,47.5}}},isWorldQuest=1,sourceQuests={64230},g={
 i(187841,{b=1,f=55}),
-crit(53442,{achID=14758,awp=90002,id=206})}}),
+crit(53442,{achID=14758,id=206})}}),
 q(65244,{coords={
 [1970]={{42.1,71}}},isWorldQuest=1,sourceQuests={64230}}),
 q(64960,{coords={
 [1970]={{56.8,31.9}}},isWorldQuest=1,sourceQuests={64230},g={
 i(187816,{spellID=359951}),
 i(187820,{b=1,f=55,spellID=359977}),
-crit(53441,{achID=14758,awp=90002,id=205})}}),
+crit(53441,{achID=14758,id=205})}}),
 q(65102,{coords={
 [1970]={{47.8,64}}},isWorldQuest=1,sourceQuests={64230},g={
 i(187999,{spellID=361264}),
-crit(53445,{achID=14758,awp=90002,id=209})}}),
+crit(53445,{achID=14758,id=209})}}),
 q(65089,{coords={
 [1970]={{60,68.8}}},isWorldQuest=1,sourceQuests={64230},sym={{"select","objectID",373561}},g={
 i(187987,{spellID=361171}),
-crit(53444,{achID=14758,awp=90002,id=208})}}),
+crit(53444,{achID=14758,id=208})}}),
 q(65231,{coords={
 [1970]={{67.2,39.1}}},isWorldQuest=1,sourceQuests={64230},g={
 i(188522,{b=1}),
-crit(53435,{achID=14758,awp=90002,id=200})}}),
+crit(53435,{achID=14758,id=200})}}),
 q(65115,{coords={
 [1970]={{44.6,30.9}}},isWorldQuest=1,sourceQuests={64230},g={
 i(188118),
-crit(53431,{achID=14758,awp=90002,id=196})}}),
+crit(53431,{achID=14758,id=196})}}),
 q(65262,{coords={
 [1970]={{43.5,63.7}}},isWorldQuest=1,sourceQuests={64230},g={
-crit(53440,{achID=14758,awp=90002,id=204})}}),
+crit(53440,{achID=14758,id=204})}}),
 q(65252,{coords={
 [1970]={{37.9,39.9}}},isWorldQuest=1,sourceQuests={64230},g={
-crit(53439,{achID=14758,awp=90002,id=203})}}),
+crit(53439,{achID=14758,id=203})}}),
 q(65234,{coords={
 [1970]={{63,58}}},isWorldQuest=1,sourceQuests={64230},g={
 i(188529),
-crit(53437,{achID=14758,awp=90002,id=202})}}),
+crit(53437,{achID=14758,id=202})}}),
 q(65406,{coords={
 [1970]={{65.7,41}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65417,{coords={
 [1970]={{55,48}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65416,{coords={
 [1970]={{53,45.6}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65408,{coords={
 [1970]={{53.2,86.8}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65402,{coords={
 [1970]={{32,52.6}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65407,{coords={
 [1970]={{52.4,57.1}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65414,{coords={
 [1970]={{63.1,36.5}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65415,{coords={
 [1970]={{47.6,39}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65405,{coords={
 [1970]={{57.2,65.7}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65412,{coords={
 [1970]={{51.3,25.8}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65413,{coords={
 [1970]={{55.9,84}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65404,{coords={
 [1970]={{59.1,36.7}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65410,{coords={
 [1970]={{55.7,50}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65411,{coords={
 [1970]={{35.2,59.1}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}}),
+crit(53446,{achID=14758,id=210,questID=65418})}}),
 q(65403,{coords={
 [1970]={{38.4,70.4}}},isWorldQuest=1,sharedDescription="Requires Cachial",sourceQuests={64230},g={
-crit(53446,{achID=14758,awp=90002,id=210,questID=65418})}})}),
+crit(53446,{achID=14758,id=210,questID=65418})}})}),
 h(-63,{
 i(189704,{b=1,crs={181403}}),
 i(187707),
@@ -139212,7 +139212,7 @@ n(192045,{awp=100005,coords={
 [2023]={{58.6,68.2}}},isDaily=1,questID=74088,g={
 q(74440,{isDaily=1}),
 i(200141,{b=1,f=52,lvl=60}),
-crit(56076,{achID=16677,awp=100002,id=15})}}),
+crit(56076,{achID=16677,id=15})}}),
 n(193209,{coords={
 [2023]={{31.5,64}}},isDaily=1,questID=73901,g={
 i(200879,{b=1,f=55,g={
@@ -142944,7 +142944,7 @@ n(186962,{coords={
 n(193157,{awp=110007,coords={
 [2024]={{24.5,47.3}}},isDaily=1,questID=73873,g={
 s(182437,200302,{b=1,f=25,lvl=60}),
-crit(56098,{achID=16678,awp=100002,id=2})}}),
+crit(56098,{achID=16678,id=2})}}),
 n(193691,{coords={
 [2024]={{49.5,36.1}}},description="Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",minReputation={2511,7},questID=72730,g={
 i(198070,{b=1}),
@@ -144064,7 +144064,7 @@ n(200885,{coords={
 [2151]={{59.8,58.8}}},isDaily=1,questID=73222,g={
 q(74344,{isDaily=1}),
 mm(197628,{b=1,questID=69834,g={
-crit(56339,{achID=16705,awp=100005,id=12,providers={{"i",197628}}})}}),
+crit(56339,{achID=16705,id=12,providers={{"i",197628}}})}}),
 crit(58466,{achID=17525,id=9})}}),
 n(203353,{description="Can spawn anywhere on the isle.",isDaily=1,g={
 mm(197000,{b=1,questID=69200}),
@@ -144087,13 +144087,13 @@ n(200956,{coords={
 [2151]={{26.6,41.5}}},isDaily=1,questID=73366,g={
 q(74349,{isDaily=1}),
 mm(197636,{b=1,questID=69847,g={
-crit(56303,{achID=16701,awp=100005,id=8,providers={{"i",197636}}})}}),
+crit(56303,{achID=16701,id=8,providers={{"i",197636}}})}}),
 crit(58471,{achID=17525,id=14})}}),
 n(200978,{coords={
 [2102]={{67.3,56.3}}},description="Inside the War Creche.",isDaily=1,questID=73385,g={
 q(74350,{isDaily=1}),
 mm(197590,{b=1,questID=69794,g={
-crit(56327,{achID=16705,awp=100005,id=2,providers={{"i",197590}}})}}),
+crit(56327,{achID=16705,id=2,providers={{"i",197590}}})}}),
 crit(58472,{achID=17525,id=15})}}),
 n(200600,{coords={
 [2151]={{46.9,9.8}}},description="In a cave.",isDaily=1,questID=73117,g={
@@ -144132,7 +144132,7 @@ n(200911,{coords={
 [2151]={{74.51,54.61},{78.51,49.61}}},description="The left coordinates is the entrance point to the cave, the mob is in the middle of the cave.",isDaily=1,questID=73225,g={
 q(74351,{isDaily=1}),
 mm(197617,{b=1,questID=69821,g={
-crit(56300,{achID=16701,awp=100005,id=5,providers={{"i",197617}}})}}),
+crit(56300,{achID=16701,id=5,providers={{"i",197617}}})}}),
 crit(58473,{achID=17525,id=16})}}),
 n(200960,{coords={
 [2102]={{42,83.8}}},description="Inside the War Creche.",isDaily=1,questID=73367,g={
@@ -144143,7 +144143,7 @@ n(201013,{coords={
 [2151]={{63.6,25.5}}},crs={201310},isDaily=1,questID=73409,g={
 q(74347,{isDaily=1}),
 mm(197609,{b=1,questID=69813,g={
-crit(56320,{achID=16704,awp=100005,id=9,providers={{"i",197609}}})}}),
+crit(56320,{achID=16704,id=9,providers={{"i",197609}}})}}),
 crit(58469,{achID=17525,id=12})}})}),
 h(-56,{
 o(386633,{coords={
@@ -149920,7 +149920,7 @@ flt(101,{pb=1,g={
 p(4518,{coords={
 [2214]={{36.9,13}},
 [2339]={{47.9,56}}},npcID=222713,pb=1,g={
-crit(67309,{achID=40194,awp=110000,id=18,pb=1})}})}}),
+crit(67309,{achID=40194,id=18,pb=1})}})}}),
 h(-30,{
 exp(15110,{collectible=false,coords={
 [2339]={{55.7,70.6}}}}),
@@ -149951,7 +149951,7 @@ exp(15185,{collectible=false,coords={
 h(-32,{
 fp(2928,{coords={
 [2339]={{44.7,51.1}}},crs={212369},g={
-crit(68170,{achID=40430,awp=110000,id=1})}})}),
+crit(68170,{achID=40430,id=1})}})}),
 h(-44,{
 h(-45,{
 q(84260,{coords={
@@ -151499,15 +151499,15 @@ crit(71290,{achID=41189,awp=110007,id=1})}),
 ach(41189,{awp=110007,g={
 crit(71258,{achID=41201,id=4})}}),
 ach(19559,{
-crit(67096,{achID=20596,awp=110000,id=4}),
-crit(67096,{achID=40231,awp=110000,id=4})}),
+crit(67096,{achID=20596,id=4}),
+crit(67096,{achID=40231,id=4})}),
 ach(40705,{sr=1,g={
-crit(69279,{achID=40702,awp=110000,id=4})}}),
+crit(69279,{achID=40702,id=4})}}),
 ach(40620,{providers={{"n",222119}}}),
 ach(40629,{
 crit(71297,{achID=41189,awp=110007,id=8})}),
 ach(40822,{
-crit(69612,{achID=40790,awp=110000,id=4})}),
+crit(69612,{achID=40790,id=4})}),
 ach(40624,{
 crit(68972,{achID=40624,coords={
 [2213]={{39.4,65.4}}},id=1,providers={{"n",227217}}}),
@@ -151579,7 +151579,7 @@ ach(40542,{
 de(2532,{awp=110207,itemID=246866,sourceAchievements={40542},spellID=1244138}),
 crit(71296,{achID=41189,awp=110007,id=7})}),
 ach(40636,{
-crit(70385,{achID=20596,awp=110000,id=8})}),
+crit(70385,{achID=20596,id=8})}),
 ach(40633,{coords={
 [2255]={{67.2,28.4}}},description="Stand in the pool and acquire 100 stacks of 'Unseeming Shift' debuff.",providers={{"s",461573}},g={
 crit(71293,{achID=41189,awp=110007,id=4})}}),
@@ -151595,20 +151595,20 @@ crit(71292,{achID=41189,awp=110007,id=3})}})}),
 flt(101,{pb=1,sym={{"select","speciesID",4456,4515,4499,4498,4510}},g={
 p(4471,{coords={
 [2255]={{37.4,54.2},{43.5,64.2},{59.7,70.2}}},npcID=222325,pb=1,g={
-crit(67297,{achID=40194,awp=110000,id=6,pb=1})}}),
+crit(67297,{achID=40194,id=6,pb=1})}}),
 p(4480,{coords={
 [2255]={{63.6,85.1}}},description="Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet.",npcID=222351,pb=1,g={
-crit(67300,{achID=40194,awp=110000,id=9,pb=1})}}),
+crit(67300,{achID=40194,id=9,pb=1})}}),
 p(3550,{description="Backline pet only.",maps={2255},npcID=204361,pb=1}),
 p(4477,{coords={
 [2255]={{38.5,56.1},{40,61.3},{44.3,65}}},npcID=222344,pb=1,g={
-crit(67298,{achID=40194,awp=110000,id=7,pb=1})}}),
+crit(67298,{achID=40194,id=7,pb=1})}}),
 p(4483,{coords={
 [2255]={{57.3,63.7}}},description="It can be found both as a frontline and a backline pet in battles throughout Azj-Kahet.",npcID=222421,pb=1,g={
-crit(67308,{achID=40194,awp=110000,id=17,pb=1})}}),
+crit(67308,{achID=40194,id=17,pb=1})}}),
 p(4481,{coords={
 [2255]={{61,74.8}}},description="Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet. Can also be found as a backline pet around the zone.",npcID=222354,pb=1,g={
-crit(67299,{achID=40194,awp=110000,id=8,pb=1})}})}}),
+crit(67299,{achID=40194,id=8,pb=1})}})}}),
 h(-30,{
 exp(14758),
 exp(14752,{collectible=false,coords={
@@ -151693,22 +151693,22 @@ m(2216)}),
 h(-32,{
 fp(2920,{coords={
 [2255]={{59.9,18.7}}},crs={216973},g={
-crit(68178,{achID=40430,awp=110000,id=17})}}),
+crit(68178,{achID=40430,id=17})}}),
 fp(2921,{coords={
 [2255]={{76.8,64.4}}},crs={216979},g={
-crit(68179,{achID=40430,awp=110000,id=18})}}),
+crit(68179,{achID=40430,id=18})}}),
 fp(2893,{coords={
 [2216]={{54,44.4}}},crs={209330},g={
-crit(68176,{achID=40430,awp=110000,id=19})}}),
+crit(68176,{achID=40430,id=19})}}),
 fp(2882,{coords={
 [2255]={{57.3,51.1}}},crs={207470},g={
-crit(68174,{achID=40430,awp=110000,id=20})}}),
+crit(68174,{achID=40430,id=20})}}),
 fp(2889,{coords={
 [2255]={{23.1,51.1}}},crs={208384},g={
-crit(68175,{achID=40430,awp=110000,id=21})}}),
+crit(68175,{achID=40430,id=21})}}),
 fp(2919,{coords={
 [2255]={{46,69.9}}},crs={216972},g={
-crit(68177,{achID=40430,awp=110000,id=22})}})}),
+crit(68177,{achID=40430,id=22})}})}),
 h(-45,{
 ah(19559,{type="a",g={
 q(78384,{coords={
@@ -152293,23 +152293,23 @@ crit(69655,{achID=40840,id=4})}})}),
 h(-53,{sr=1,g={
 h(-12,{sr=1,g={
 ach(40343,{sr=1,g={
-crit(67971,{achID=40352,awp=110000,id=10})}}),
+crit(67971,{achID=40352,id=10})}}),
 ach(40344,{sr=1,g={
-crit(67983,{achID=40353,awp=110000,id=10})}}),
+crit(67983,{achID=40353,id=10})}}),
 ach(40345,{sr=1,g={
-crit(67995,{achID=40354,awp=110000,id=10})}}),
+crit(67995,{achID=40354,id=10})}}),
 ach(40346,{sr=1,g={
-crit(67972,{achID=40352,awp=110000,id=11})}}),
+crit(67972,{achID=40352,id=11})}}),
 ach(40347,{sr=1,g={
-crit(67984,{achID=40353,awp=110000,id=11})}}),
+crit(67984,{achID=40353,id=11})}}),
 ach(40348,{sr=1,g={
-crit(67996,{achID=40354,awp=110000,id=11})}}),
+crit(67996,{achID=40354,id=11})}}),
 ach(40349,{sr=1,g={
-crit(67973,{achID=40352,awp=110000,id=12})}}),
+crit(67973,{achID=40352,id=12})}}),
 ach(40350,{sr=1,g={
-crit(67985,{achID=40353,awp=110000,id=12})}}),
+crit(67985,{achID=40353,id=12})}}),
 ach(40351,{sr=1,g={
-crit(67997,{achID=40354,awp=110000,id=12})}})}}),
+crit(67997,{achID=40354,id=12})}})}}),
 h(-45,{sr=1,g={
 q(80277,{collectible=false,coords={
 [2213]={{27,8}}},isDaily=1,lvl=70,qgs={219564},repeatable=1,sr=1,g={
@@ -153114,10 +153114,10 @@ i(226206,{b=1})}})}),
 h(-62,{sourceQuests={79197,79573},g={
 q(82297,{coords={
 [2255]={{51.8,29.8},{53.9,37}}},isWorldQuest=1,pb=1,qgs={223406},g={
-crit(67134,{achID=40153,awp=110000,id=5,pb=1,providers={{"n",223406}}})}}),
+crit(67134,{achID=40153,id=5,pb=1,providers={{"n",223406}}})}}),
 q(82295,{coords={
 [2216]={{61.3,37}}},isWorldQuest=1,pb=1,qgs={223443},g={
-crit(67138,{achID=40153,awp=110000,id=8,pb=1,providers={{"n",223443}}})}}),
+crit(67138,{achID=40153,id=8,pb=1,providers={{"n",223443}}})}}),
 q(80409,{coords={
 [2255]={{80.2,62.6}}},isWorldQuest=1,pvp=1,g={
 crit(66980,{achID=40087,id=7,pvp=1}),
@@ -153224,14 +153224,14 @@ crit(71237,{achID=41188,awp=110007,id=5})}),
 ach(41188,{awp=110007,g={
 crit(71257,{achID=41201,id=3})}}),
 ach(40826,{
-crit(69614,{achID=40790,awp=110000,id=3})}),
+crit(69614,{achID=40790,id=3})}),
 ach(20594,{coords={
 [2215]={{43.2,51.8}}},crs={213306,215678,220225},description="Use healing spells, bandages or Algari Healing Potion to heal 20 patients over 20 days. This does not have to be done on consecutive days.",providers={{"n",222309}}}),
 ach(20598,{
-crit(67095,{achID=20596,awp=110000,id=3}),
-crit(67095,{achID=40231,awp=110000,id=3})}),
+crit(67095,{achID=20596,id=3}),
+crit(67095,{achID=40231,id=3})}),
 ach(40704,{sr=1,g={
-crit(69278,{achID=40702,awp=110000,id=3})}}),
+crit(69278,{achID=40702,id=3})}}),
 ach(40360,{
 s(222944,226160,{f=24,lvl=70}),
 s(222945,226161,{f=23,lvl=70})}),
@@ -153290,7 +153290,7 @@ ach(40689,{coords={
 [2215]={{45.7,12.4}}},sr=1,g={
 crit(69263,{achID=40704,id=9})}}),
 ach(40844,{
-crit(70384,{achID=20596,awp=110000,id=7})}),
+crit(70384,{achID=20596,id=7})}),
 ach(40625,{
 crit(68975,{achID=40625,coords={
 [2215]={{60.4,60.2}}},id=1,providers={{"n",220720}}}),
@@ -153336,42 +153336,42 @@ flt(101,{pb=1,g={
 p(3525,{description="Backline pet only.",npcID=204271,pb=1}),
 p(4456,{coords={
 [2214]={{57.8,42.6}}},description="Found commonly in groups around the Ringing Deeps and as backline in all 3 main underground zones.",npcID=222066,pb=1,g={
-crit(67293,{achID=40194,awp=110000,id=2,pb=1})}}),
+crit(67293,{achID=40194,id=2,pb=1})}}),
 p(4460,{coords={
 [2215]={{48.7,35.6}}},description="Found around farms in Hallowfall, frontline & backline.",npcID=222195,pb=1,g={
-crit(67304,{achID=40194,awp=110000,id=13,pb=1})}}),
+crit(67304,{achID=40194,id=13,pb=1})}}),
 p(4515,{coords={
 [2214]={{39,37.9}},
 [2215]={{45.9,64.2}}},description="Found most commonly between the Coreway and Hallowfall gates, or around Mereldar and The Weaver's Lair.",npcID=222614,pb=1,g={
-crit(67295,{achID=40194,awp=110000,id=4,pb=1})}}),
+crit(67295,{achID=40194,id=4,pb=1})}}),
 p(4457,{coords={
 [2214]={{55.2,41.9}},
 [2215]={{55.9,43}}},description="Found commonly in small groups around the 3 main underground zones.",npcID=222071,pb=1,g={
-crit(67292,{achID=40194,awp=110000,id=1,pb=1})}}),
+crit(67292,{achID=40194,id=1,pb=1})}}),
 p(4499,{coords={
 [2214]={{36.4,27.9}},
 [2215]={{43.8,49.4}}},npcID=222584,pb=1,g={
-crit(67301,{achID=40194,awp=110000,id=10,pb=1})}}),
+crit(67301,{achID=40194,id=10,pb=1})}}),
 p(4461,{coords={
 [2215]={{48.9,40},{49,63},{61.1,29.8}}},description="Likely a Rare spawn of Arathi Chicken, can be found frontline & backline. Coords are some confirmed repeat spawn spots.",npcID=222194,pb=1,g={
-crit(67303,{achID=40194,awp=110000,id=12,pb=1})}}),
+crit(67303,{achID=40194,id=12,pb=1})}}),
 p(4533,{coords={
 [2214]={{38,36.9}},
 [2215]={{57.2,38.2}},
 [2248]={{52.6,68.3}}},npcID=222875,pb=1,g={
-crit(67305,{achID=40194,awp=110000,id=14,pb=1})}}),
+crit(67305,{achID=40194,id=14,pb=1})}}),
 p(4521,{coords={
 [2248]={{72.7,44.2}}},npcID=222736,pb=1,g={
-crit(67311,{achID=40194,awp=110000,id=20,pb=1})}}),
+crit(67311,{achID=40194,id=20,pb=1})}}),
 p(4544,{coords={
 [2215]={{37.6,46},{46.2,31.8},{48.4,59},{54,51.8},{58.6,34.6},{59,49.2},{61.4,46},{61.8,44.2},{63.2,49},{72,46}}},description="Only spawns during Beledar's void state. Found around cliffs overlooking water.",npcID=223136,pb=1}),
 p(4516,{coords={
 [2214]={{53,47.9}},
 [2255]={{57.8,71.5}}},npcID=222615,pb=1,g={
-crit(67296,{achID=40194,awp=110000,id=5,pb=1})}}),
+crit(67296,{achID=40194,id=5,pb=1})}}),
 p(4510,{coords={
 [2215]={{65.9,39.3}}},npcID=222608,pb=1,g={
-crit(67307,{achID=40194,awp=110000,id=16,pb=1})}})}}),
+crit(67307,{achID=40194,id=16,pb=1})}})}}),
 h(-30,{
 exp(14921),
 exp(15106,{collectible=false,coords={
@@ -153512,28 +153512,28 @@ i(237433,{b=1,cost={{"c",2815,3900}},f=51,lvl=80,minReputation={2688,10},spellID
 h(-32,{
 fp(2922,{coords={
 [2215]={{67.5,44.6}}},crs={217639},g={
-crit(68180,{achID=40430,awp=110000,id=9})}}),
+crit(68180,{achID=40430,id=9})}}),
 fp(2944,{coords={
 [2215]={{61.3,31}}},crs={206537},g={
-crit(68188,{achID=40430,awp=110000,id=11})}}),
+crit(68188,{achID=40430,id=11})}}),
 fp(2924,{coords={
 [2215]={{40.5,71.3}}},crs={218304},g={
-crit(68182,{achID=40430,awp=110000,id=10})}}),
+crit(68182,{achID=40430,id=10})}}),
 fp(2923,{coords={
 [2215]={{52.9,61.3}}},crs={218300},g={
-crit(68181,{achID=40430,awp=110000,id=12})}}),
+crit(68181,{achID=40430,id=12})}}),
 fp(2943,{coords={
 [2215]={{48.4,40.7}}},crs={218295},g={
-crit(68187,{achID=40430,awp=110000,id=13})}}),
+crit(68187,{achID=40430,id=13})}}),
 fp(2941,{coords={
 [2215]={{41.6,52.6}}},crs={218305},g={
-crit(68185,{achID=40430,awp=110000,id=14})}}),
+crit(68185,{achID=40430,id=14})}}),
 fp(2942,{coords={
 [2215]={{41.1,33.7}}},crs={218323},g={
-crit(68186,{achID=40430,awp=110000,id=16})}}),
+crit(68186,{achID=40430,id=16})}}),
 fp(2950,{coords={
 [2215]={{71.4,56.5}}},crs={218298},g={
-crit(68189,{achID=40430,awp=110000,id=15})}})}),
+crit(68189,{achID=40430,id=15})}})}),
 ah(2570,{icon=5891368,type="fa",g={
 faction(2570),
 title(566,{minReputation={2570,25}}),
@@ -155248,23 +155248,23 @@ crit(69705,{achID=40851,id=3})}})}),
 h(-53,{sr=1,g={
 h(-12,{sr=1,g={
 ach(40334,{sr=1,g={
-crit(67968,{achID=40352,awp=110000,id=7})}}),
+crit(67968,{achID=40352,id=7})}}),
 ach(40335,{sr=1,g={
-crit(67980,{achID=40353,awp=110000,id=7})}}),
+crit(67980,{achID=40353,id=7})}}),
 ach(40336,{sr=1,g={
-crit(67992,{achID=40354,awp=110000,id=7})}}),
+crit(67992,{achID=40354,id=7})}}),
 ach(40337,{sr=1,g={
-crit(67969,{achID=40352,awp=110000,id=8})}}),
+crit(67969,{achID=40352,id=8})}}),
 ach(40338,{sr=1,g={
-crit(67981,{achID=40353,awp=110000,id=8})}}),
+crit(67981,{achID=40353,id=8})}}),
 ach(40339,{sr=1,g={
-crit(67993,{achID=40354,awp=110000,id=8})}}),
+crit(67993,{achID=40354,id=8})}}),
 ach(40340,{sr=1,g={
-crit(67970,{achID=40352,awp=110000,id=9})}}),
+crit(67970,{achID=40352,id=9})}}),
 ach(40341,{sr=1,g={
-crit(67982,{achID=40353,awp=110000,id=9})}}),
+crit(67982,{achID=40353,id=9})}}),
 ach(40342,{sr=1,g={
-crit(67994,{achID=40354,awp=110000,id=9})}})}}),
+crit(67994,{achID=40354,id=9})}})}}),
 h(-45,{sr=1,g={
 q(80256,{collectible=false,coords={
 [2215]={{72.8,38.4}}},isDaily=1,lvl=70,qgs={219557},repeatable=1,sr=1,g={
@@ -155562,10 +155562,10 @@ i(225238,{b=1,f=55})}})}),
 h(-62,{sourceQuests={79197,79573},g={
 q(82294,{coords={
 [2215]={{57.4,62.8}}},isWorldQuest=1,pb=1,qgs={223442},g={
-crit(67137,{achID=40153,awp=110000,id=7,pb=1,providers={{"n",223442}}})}}),
+crit(67137,{achID=40153,id=7,pb=1,providers={{"n",223442}}})}}),
 q(82298,{coords={
 [2215]={{61.1,69}}},isWorldQuest=1,pb=1,qgs={223409},g={
-crit(67133,{achID=40153,awp=110000,id=3,pb=1,providers={{"n",223409}}})}}),
+crit(67133,{achID=40153,id=3,pb=1,providers={{"n",223409}}})}}),
 q(81622,{coords={
 [2215]={{38.2,36.4}}},isWorldQuest=1,pvp=1,g={
 crit(66978,{achID=40087,id=6,pvp=1}),
@@ -155653,9 +155653,9 @@ h(-12,{
 ach(40435,{
 crit(71220,{achID=41186,awp=110007,id=1})}),
 ach(40831,{
-crit(69616,{achID=40790,awp=110000,id=1})}),
+crit(69616,{achID=40790,id=1})}),
 ach(40166,{sr=1,g={
-crit(69276,{achID=40702,awp=110000,id=1})}}),
+crit(69276,{achID=40702,id=1})}}),
 ach(41186,{awp=110007,g={
 de(2533,{awp=110207,itemID=246867,spellID=1244139}),
 crit(71255,{achID=41201,id=1})}}),
@@ -155691,10 +155691,10 @@ ach(40152,{coords={
 crit(67178,{achID=40166,id=1})}}),
 ach(20595,{
 de(9169,{awp=110207,itemID=252757,spellID=1255216}),
-crit(67097,{achID=20596,awp=110000,id=5})}),
+crit(67097,{achID=20596,id=5})}),
 ach(20118,{
-crit(67093,{achID=20596,awp=110000,id=1}),
-crit(67093,{achID=40231,awp=110000,id=1})}),
+crit(67093,{achID=20596,id=1}),
+crit(67093,{achID=40231,id=1})}),
 ach(40083,{pvp=1,g={
 crit(67002,{achID=40097,id=3,pvp=1})}}),
 ach(40434,{
@@ -155702,46 +155702,46 @@ crit(71221,{achID=41186,awp=110007,id=2})})}),
 flt(101,{pb=1,g={
 p(4540,{coords={
 [2248]={{47,29.6},{57.9,20.1}}},npcID=223092,pb=1,g={
-crit(67320,{achID=40194,awp=110000,id=28,pb=1})}}),
+crit(67320,{achID=40194,id=28,pb=1})}}),
 p(4541,{coords={
 [2339]={{27.3,67.6}}},npcID=223090,pb=1,g={
-crit(67317,{achID=40194,awp=110000,id=25,pb=1})}}),
+crit(67317,{achID=40194,id=25,pb=1})}}),
 p(4577,{coords={
 [2248]={{74,40.1},{74.1,44.8}}},npcID=223698,pb=1,g={
-crit(68270,{achID=40194,awp=110000,id=30,pb=1})}}),
+crit(68270,{achID=40194,id=30,pb=1})}}),
 p(3361,{description="Backline pet only.",npcID=192363,pb=1}),
 p(4538,{coords={
 [2248]={{25.5,62}}},npcID=223094,pb=1,g={
-crit(67318,{achID=40194,awp=110000,id=26,pb=1})}}),
+crit(67318,{achID=40194,id=26,pb=1})}}),
 p(4514,{coords={
 [2214]={{45.7,32.5}},
 [2215]={{46.3,63.4}},
 [2248]={{51.6,69}}},npcID=222613,pb=1,g={
-crit(67294,{achID=40194,awp=110000,id=3,pb=1})}}),
+crit(67294,{achID=40194,id=3,pb=1})}}),
 p(4525,{coords={
 [2248]={{44.3,76}}},npcID=222774,pb=1,g={
-crit(67313,{achID=40194,awp=110000,id=22,pb=1})}}),
+crit(67313,{achID=40194,id=22,pb=1})}}),
 p(4535,{coords={
 [2215]={{58.5,31.7}},
 [2248]={{66,48.8}}},npcID=222877,pb=1,g={
-crit(67306,{achID=40194,awp=110000,id=15,pb=1})}}),
+crit(67306,{achID=40194,id=15,pb=1})}}),
 p(4539,{coords={
 [2248]={{24.2,51.6}}},npcID=223093,pb=1,g={
-crit(67319,{achID=40194,awp=110000,id=27,pb=1})}}),
+crit(67319,{achID=40194,id=27,pb=1})}}),
 p(4485,{coords={
 [2248]={{63.6,57.4}}},npcID=222499,pb=1,g={
-crit(67310,{achID=40194,awp=110000,id=19,pb=1})}}),
+crit(67310,{achID=40194,id=19,pb=1})}}),
 p(4526,{coords={
 [2248]={{41.4,71.7}}},npcID=222775,pb=1,g={
-crit(67314,{achID=40194,awp=110000,id=23,pb=1})}}),
+crit(67314,{achID=40194,id=23,pb=1})}}),
 p(4529,{coords={
 [2248]={{55.5,60.3}}},npcID=222778,pb=1,g={
-crit(67315,{achID=40194,awp=110000,id=24,pb=1})}}),
+crit(67315,{achID=40194,id=24,pb=1})}}),
 p(4522,{coords={
 [2215]={{38.3,54.9}},
 [2248]={{57.7,69.2}},
 [2255]={{50,59.4}}},npcID=222739,pb=1,g={
-crit(67312,{achID=40194,awp=110000,id=21,pb=1})}})}}),
+crit(67312,{achID=40194,id=21,pb=1})}})}}),
 ah(2590,{icon=5891369,type="fa",g={
 faction(2590),
 title(565,{minReputation={2590,25}}),
@@ -155953,13 +155953,13 @@ crit(69792,{achID=40831,id=7})})}),
 h(-32,{
 fp(2931,{coords={
 [2248]={{67.5,43.3}}},crs={217542},g={
-crit(68172,{achID=40430,awp=110000,id=2})}}),
+crit(68172,{achID=40430,id=2})}}),
 fp(2929,{coords={
 [2248]={{41.1,73}}},crs={217439},g={
-crit(68171,{achID=40430,awp=110000,id=3})}}),
+crit(68171,{achID=40430,id=3})}}),
 fp(2932,{coords={
 [2248]={{59.2,28.6}}},crs={217543},g={
-crit(68173,{achID=40430,awp=110000,id=4})}}),
+crit(68173,{achID=40430,id=4})}}),
 fp(2970,{awp=110007,coords={
 [2248]={{29.7,58.3}}},crs={227029},sourceQuests={83539}})}),
 h(-45,{
@@ -156609,23 +156609,23 @@ crit(68213,{achID=40435,id=4})}})}),
 h(-53,{sr=1,g={
 h(-12,{sr=1,g={
 ach(40316,{sr=1,g={
-crit(67962,{achID=40352,awp=110000,id=1})}}),
+crit(67962,{achID=40352,id=1})}}),
 ach(40317,{sr=1,g={
-crit(67974,{achID=40353,awp=110000,id=1})}}),
+crit(67974,{achID=40353,id=1})}}),
 ach(40318,{sr=1,g={
-crit(67986,{achID=40354,awp=110000,id=1})}}),
+crit(67986,{achID=40354,id=1})}}),
 ach(40319,{sr=1,g={
-crit(67963,{achID=40352,awp=110000,id=2})}}),
+crit(67963,{achID=40352,id=2})}}),
 ach(40320,{sr=1,g={
-crit(67975,{achID=40353,awp=110000,id=2})}}),
+crit(67975,{achID=40353,id=2})}}),
 ach(40321,{sr=1,g={
-crit(67987,{achID=40354,awp=110000,id=2})}}),
+crit(67987,{achID=40354,id=2})}}),
 ach(40322,{sr=1,g={
-crit(67964,{achID=40352,awp=110000,id=3})}}),
+crit(67964,{achID=40352,id=3})}}),
 ach(40323,{sr=1,g={
-crit(67976,{achID=40353,awp=110000,id=3})}}),
+crit(67976,{achID=40353,id=3})}}),
 ach(40324,{sr=1,g={
-crit(67988,{achID=40354,awp=110000,id=3})}})}}),
+crit(67988,{achID=40354,id=3})}})}}),
 h(-45,{sr=1,g={
 q(80221,{collectible=false,coords={
 [2248]={{53.5,64.2}}},isDaily=1,lvl=70,qgs={219547},repeatable=1,sr=1,g={
@@ -156893,10 +156893,10 @@ de(9183,{cost={{"c",2815,300}},itemID=253035,spellID=1255491})}})}),
 h(-62,{sourceQuests={79197,79573},g={
 q(82292,{coords={
 [2248]={{34.9,85.6}}},isWorldQuest=1,pb=1,qgs={223446},g={
-crit(67135,{achID=40153,awp=110000,id=4,pb=1,providers={{"n",223446}}})}}),
+crit(67135,{achID=40153,id=4,pb=1,providers={{"n",223446}}})}}),
 q(82291,{coords={
 [2248]={{48.2,32}}},isWorldQuest=1,pb=1,qgs={223407},g={
-crit(67131,{achID=40153,awp=110000,id=1,pb=1,providers={{"n",223407}}})}}),
+crit(67131,{achID=40153,id=1,pb=1,providers={{"n",223407}}})}}),
 q(80394,{coords={
 [2248]={{61.6,21.4}}},isWorldQuest=1,pvp=1,g={
 crit(66975,{achID=40087,id=2,pvp=1}),
@@ -160311,7 +160311,7 @@ h(-12,{
 ach(40837,{
 crit(71226,{achID=41187,awp=110007,id=1})}),
 ach(40825,{
-crit(69613,{achID=40790,awp=110000,id=2})}),
+crit(69613,{achID=40790,id=2})}),
 ach(40614,{coords={
 [2214]={{40.2,50.2}}},questID=83623,g={
 i(225930,{coords={
@@ -160357,14 +160357,14 @@ ach(40680,{coords={
 [2214]={{42.3,51.8}}},sr=1,g={
 crit(69254,{achID=40703,id=9})}}),
 ach(40799,{
-crit(70383,{achID=20596,awp=110000,id=6})}),
+crit(70383,{achID=20596,id=6})}),
 ach(40585,{cost={{"i",212493,100}},g={
 crit(71229,{achID=41187,awp=110007,id=4})}}),
 ach(19560,{
-crit(67094,{achID=20596,awp=110000,id=2}),
-crit(67094,{achID=40231,awp=110000,id=2})}),
+crit(67094,{achID=20596,id=2}),
+crit(67094,{achID=40231,id=2})}),
 ach(40703,{sr=1,g={
-crit(69277,{achID=40702,awp=110000,id=2})}}),
+crit(69277,{achID=40702,id=2})}}),
 ach(40475,{
 crit(68670,{achID=40475,coords={
 [2214]={{53.28,67.64}}},id=1,providers={{"n",226626}}}),
@@ -160629,7 +160629,7 @@ flt(101,{pb=1,g={
 p(4498,{coords={
 [2214]={{39.2,27.6}},
 [2215]={{44.7,57.8}}},npcID=222582,pb=1,g={
-crit(67302,{achID=40194,awp=110000,id=11,pb=1})}}),
+crit(67302,{achID=40194,id=11,pb=1})}}),
 p(3547,{description="Backline pet only.",npcID=204354,pb=1}),
 p(4571,{coords={
 [2214]={{43.6,31.6}}},npcID=223706,pb=1}),
@@ -160637,7 +160637,7 @@ p(4573,{coords={
 [2214]={{52.6,43.8}}},npcID=223712,pb=1}),
 p(4574,{coords={
 [2214]={{60.5,48.5},{63.8,47}}},description="Found around the area of Taelloch/Obsidian Hollow.",npcID=223715,pb=1,g={
-crit(68269,{achID=40194,awp=110000,id=29,pb=1})}})}}),
+crit(68269,{achID=40194,id=29,pb=1})}})}}),
 h(-30,{
 exp(14819),
 exp(15356),
@@ -160703,18 +160703,18 @@ crit(69769,{achID=40825,id=5})}})}),
 h(-32,{
 fp(2926,{coords={
 [2214]={{54,64.1}}},crs={224940},g={
-crit(68184,{achID=40430,awp=110000,id=5})}}),
+crit(68184,{achID=40430,id=5})}}),
 fp(2962,{coords={
 [2214]={{42.7,33.4}}},crs={215563},g={
-crit(68190,{achID=40430,awp=110000,id=6})}}),
+crit(68190,{achID=40430,id=6})}}),
 fp(3000,{awp=110100,coords={
 [2214]={{75.7,83.4}}},crs={228137}}),
 fp(2925,{coords={
 [2214]={{60.5,78.1}}},crs={224884},g={
-crit(68183,{achID=40430,awp=110000,id=7})}}),
+crit(68183,{achID=40430,id=7})}}),
 fp(2963,{coords={
 [2214]={{57.2,47.9}}},crs={218388},g={
-crit(68191,{achID=40430,awp=110000,id=8})}})}),
+crit(68191,{achID=40430,id=8})}})}),
 h(-45,{
 ah(19560,{type="a",g={
 q(80434,{coords={
@@ -161343,23 +161343,23 @@ crit(69626,{achID=40837,id=4})}})}),
 h(-53,{sr=1,g={
 h(-12,{sr=1,g={
 ach(40325,{sr=1,g={
-crit(67965,{achID=40352,awp=110000,id=4})}}),
+crit(67965,{achID=40352,id=4})}}),
 ach(40326,{sr=1,g={
-crit(67977,{achID=40353,awp=110000,id=4})}}),
+crit(67977,{achID=40353,id=4})}}),
 ach(40327,{sr=1,g={
-crit(67989,{achID=40354,awp=110000,id=4})}}),
+crit(67989,{achID=40354,id=4})}}),
 ach(40328,{sr=1,g={
-crit(67966,{achID=40352,awp=110000,id=5})}}),
+crit(67966,{achID=40352,id=5})}}),
 ach(40329,{sr=1,g={
-crit(67978,{achID=40353,awp=110000,id=5})}}),
+crit(67978,{achID=40353,id=5})}}),
 ach(40330,{sr=1,g={
-crit(67990,{achID=40354,awp=110000,id=5})}}),
+crit(67990,{achID=40354,id=5})}}),
 ach(40331,{sr=1,g={
-crit(67967,{achID=40352,awp=110000,id=6})}}),
+crit(67967,{achID=40352,id=6})}}),
 ach(40332,{sr=1,g={
-crit(67979,{achID=40353,awp=110000,id=6})}}),
+crit(67979,{achID=40353,id=6})}}),
 ach(40333,{sr=1,g={
-crit(67991,{achID=40354,awp=110000,id=6})}})}}),
+crit(67991,{achID=40354,id=6})}})}}),
 h(-45,{sr=1,g={
 q(80240,{collectible=false,coords={
 [2214]={{48.3,46.9}}},isDaily=1,lvl=70,qgs={219554},repeatable=1,sr=1,g={
@@ -161701,10 +161701,10 @@ n(225220,{coords={
 h(-62,{sourceQuests={79197,79573},g={
 q(82293,{coords={
 [2214]={{57.4,37.6}}},isWorldQuest=1,pb=1,qgs={223444},g={
-crit(67136,{achID=40153,awp=110000,id=6,pb=1,providers={{"n",223444}}})}}),
+crit(67136,{achID=40153,id=6,pb=1,providers={{"n",223444}}})}}),
 q(82300,{coords={
 [2214]={{62.7,58.1}}},isWorldQuest=1,pb=1,qgs={222535},g={
-crit(67132,{achID=40153,awp=110000,id=2,pb=1,providers={{"n",222535}}})}}),
+crit(67132,{achID=40153,id=2,pb=1,providers={{"n",222535}}})}}),
 q(80208,{coords={
 [2214]={{57.5,82}}},isWorldQuest=1,pvp=1,g={
 crit(66976,{achID=40087,id=3,pvp=1}),
@@ -164661,7 +164661,7 @@ exp(16645,{collectible=false,coords={
 h(-32,{
 fp(3131,{coords={
 [2393]={{51,71.2}}},crs={239639},g={
-crit(111115,{achID=61859,awp=120000,id=1})}}),
+crit(111115,{achID=61859,id=1})}}),
 fp(3132,{coords={
 [2393]={{69.4,63.3}}},crs={246564},r=1})}),
 h(-44,{
@@ -165886,18 +165886,18 @@ de(1446,{itemID=244656,spellID=1237785}),
 crit(112455,{achID=62261,id=6})}),
 ach(62288,{
 de(10542,{itemID=254773,spellID=1258651}),
-crit(112499,{achID=62057,awp=120000,id=1})}),
+crit(112499,{achID=62057,id=1})}),
 ach(41802,{
-crit(104578,{achID=42045,awp=120000,id=1}),
-crit(104578,{achID=61839,awp=120000,id=2}),
-crit(104578,{achID=62110,awp=120000,id=1})}),
+crit(104578,{achID=42045,id=1}),
+crit(104578,{achID=61839,id=2}),
+crit(104578,{achID=62110,id=1})}),
 ach(61576,{sr=1,g={
-crit(110383,{achID=61584,awp=120000,id=1})}}),
+crit(110383,{achID=61584,id=1})}}),
 ach(61855,{
-crit(111097,{achID=61854,awp=120000,id=2}),
+crit(111097,{achID=61854,id=2}),
 crit(111097,{achID=62261,id=2})}),
 ach(62261,{
-crit(112840,{achID=62386,awp=120000,id=1})}),
+crit(112840,{achID=62386,id=1})}),
 ach(61522,{coords={
 [2395]={{65.2,32.6}}},sr=1,g={
 crit(110336,{achID=61576,id=2})}}),
@@ -165933,7 +165933,7 @@ ach(61528,{coords={
 [2395]={{52.5,67.6}}},sr=1,g={
 crit(110342,{achID=61576,id=8})}}),
 ach(61957,{
-crit(111791,{achID=62110,awp=120000,id=6})}),
+crit(111791,{achID=62110,id=6})}),
 ach(61221,{pvp=1}),
 ach(61960,{
 p(5012,{itemID=269028,npcID=260899,spellID=1284800}),
@@ -165941,13 +165941,13 @@ crit(112450,{achID=62261,id=1})})}),
 flt(101,{
 p(3277,{b=1,coords={
 [2395]={{42.6,38.7}}},crs={241500},itemID=193068,npcID=241500,spellID=374710,g={
-crit(112791,{achID=61091,awp=120000,id=2})}}),
+crit(112791,{achID=61091,id=2})}}),
 p(4890,{b=1,coords={
 [2395]={{40.3,36.7},{43.1,80.6},{50.9,47.7},{53,54.2}}},crs={250572},itemID=251001,npcID=250572,spellID=1251770,g={
-crit(112806,{achID=61091,awp=120000,id=17})}}),
+crit(112806,{achID=61091,id=17})}}),
 p(4877,{b=1,coords={
 [2395]={{45.3,71.8},{52,37.4}}},crs={249817},itemID=250138,npcID=249817,spellID=1250370,g={
-crit(112807,{achID=61091,awp=120000,id=18})}})}),
+crit(112807,{achID=61091,id=18})}})}),
 h(-30,{
 exp(16052,{
 crit(112430,{achID=61855,id=1})}),
@@ -165994,12 +165994,12 @@ exp(16053)}),
 h(-32,{
 fp(3133,{coords={
 [2395]={{44.7,45}}},crs={242913},g={
-crit(111116,{achID=61859,awp=120000,id=2})}}),
+crit(111116,{achID=61859,id=2})}}),
 fp(3190,{coords={
 [2395]={{31,90.1}}},crs={244537},r=2}),
 fp(3134,{coords={
 [2395]={{47.8,67.1}}},crs={238480},g={
-crit(111118,{achID=61859,awp=120000,id=3})}})}),
+crit(111118,{achID=61859,id=3})}})}),
 h(-45,{
 ah(41802,{type="a",g={
 ah(41802.01,{type="crit",g={
@@ -167162,22 +167162,22 @@ crit(111472,{achID=61960,id=2})}})}}),
 ah(62104,{type="a",g={
 o(613850,{coords={
 [2395]={{57.8,50.9}}},questID=93562,g={
-crit(111832,{achID=62104,awp=120000,id=5})}}),
+crit(111832,{achID=62104,id=5})}}),
 o(526903,{coords={
 [2395]={{48,88.2}}},questID=91841,g={
-crit(111828,{achID=62104,awp=120000,id=1})}}),
+crit(111828,{achID=62104,id=1})}}),
 o(613847,{coords={
 [2395]={{50.5,43.5}}},questID=93564,g={
-crit(111830,{achID=62104,awp=120000,id=3})}}),
+crit(111830,{achID=62104,id=3})}}),
 o(507966,{coords={
 [2395]={{36.1,72.5}}},questID=93565,g={
-crit(111831,{achID=62104,awp=120000,id=4})}}),
+crit(111831,{achID=62104,id=4})}}),
 o(613861,{coords={
 [2395]={{37.6,13.8}}},questID=93563,g={
-crit(111829,{achID=62104,awp=120000,id=2})}}),
+crit(111829,{achID=62104,id=2})}}),
 o(613887,{coords={
 [2393]={{38.1,77}}},questID=93570,g={
-crit(111833,{achID=62104,awp=120000,id=6})}})}}),
+crit(111833,{achID=62104,id=6})}})}}),
 ah(62288,{type="a",g={
 o(619621,{coords={
 [2393]={{20.2,79.6}},
@@ -167317,22 +167317,22 @@ ach(61052,{
 title(754),
 crit(112424,{achID=62260,id=7})}),
 ach(61520,{
-crit(111096,{achID=61854,awp=120000,id=1}),
+crit(111096,{achID=61854,id=1}),
 crit(112422,{achID=62260,id=2})}),
 ach(61582,{sr=1,g={
-crit(110385,{achID=61584,awp=120000,id=3})}}),
+crit(110385,{achID=61584,id=3})}}),
 ach(61860,{
 crit(112425,{achID=62260,id=8})}),
 ach(62290,{
 de(17516,{itemID=265792,spellID=1277172}),
-crit(112501,{achID=62057,awp=120000,id=3})}),
+crit(112501,{achID=62057,id=3})}),
 ach(61264,{
 de(15501,{itemID=264266,spellID=1271512}),
 crit(112418,{achID=62260,id=3})}),
 ach(41804,{
-crit(104581,{achID=42045,awp=120000,id=4}),
-crit(104581,{achID=61839,awp=120000,id=3}),
-crit(104581,{achID=62110,awp=120000,id=3})}),
+crit(104581,{achID=42045,id=4}),
+crit(104581,{achID=61839,id=3}),
+crit(104581,{achID=62110,id=3})}),
 ach(61547,{coords={
 [2413]={{54.6,35.6}}},sr=1,g={
 crit(110368,{achID=61582,id=5})}}),
@@ -167361,9 +167361,9 @@ ach(61544,{coords={
 [2413]={{47.1,53.1}}},sr=1,g={
 crit(110365,{achID=61582,id=2})}}),
 ach(61739,{
-crit(111792,{achID=62110,awp=120000,id=7})}),
+crit(111792,{achID=62110,id=7})}),
 ach(62260,{
-crit(112842,{achID=62386,awp=120000,id=3})}),
+crit(112842,{achID=62386,id=3})}),
 ach(61263,{
 mnt(1270673,{itemID=263579}),
 crit(110256,{achID=61263,id=8,questID=93650}),
@@ -167372,18 +167372,18 @@ ach(61223,{pvp=1})}),
 flt(101,{
 p(4882,{b=1,coords={
 [2413]={{52.4,80.2},{53.4,67},{59.9,45.7},{62,48},{64.9,57.1}}},crs={249822},itemID=250142,npcID=249822,spellID=1250366,g={
-crit(112792,{achID=61091,awp=120000,id=3})}}),
+crit(112792,{achID=61091,id=3})}}),
 p(4876,{b=1,crs={249816},itemID=250137,npcID=249816,spellID=1250371,g={
-crit(112799,{achID=61091,awp=120000,id=10})}}),
+crit(112799,{achID=61091,id=10})}}),
 p(4875,{b=1,coords={
 [2413]={{40.6,43.1},{52.9,80.2},{55.9,59.7},{68.4,41.9}}},crs={249815},itemID=250136,npcID=249815,spellID=1250373,g={
-crit(112802,{achID=61091,awp=120000,id=13})}}),
+crit(112802,{achID=61091,id=13})}}),
 p(4886,{b=1,coords={
 [2413]={{48.6,58.2},{50.5,26.9},{56,60.9},{71.7,53.3}}},crs={249827},itemID=250147,npcID=249827,spellID=1250361,g={
-crit(112803,{achID=61091,awp=120000,id=14})}}),
+crit(112803,{achID=61091,id=14})}}),
 p(4497,{b=1,coords={
 [2413]={{60.9,19.4},{61.4,18.1}}},crs={222077},itemID=221495,npcID=222077,spellID=446465,g={
-crit(112809,{achID=61091,awp=120000,id=20})}})}),
+crit(112809,{achID=61091,id=20})}})}),
 h(-30,{
 exp(16401),
 exp(15922),
@@ -167426,19 +167426,19 @@ exp(16347)}),
 h(-32,{
 fp(3195,{coords={
 [2413]={{31.7,67.4}}},crs={254936},g={
-crit(111126,{achID=61859,awp=120000,id=10})}}),
+crit(111126,{achID=61859,id=10})}}),
 fp(3192,{coords={
 [2413]={{69.4,52.6}}},crs={248036},g={
-crit(111127,{achID=61859,awp=120000,id=11})}}),
+crit(111127,{achID=61859,id=11})}}),
 fp(3194,{coords={
 [2413]={{64.6,23.2}}},crs={254935},g={
-crit(111128,{achID=61859,awp=120000,id=12})}}),
+crit(111128,{achID=61859,id=12})}}),
 fp(3196,{coords={
 [2413]={{35.5,23.8}}},crs={247997},g={
-crit(111129,{achID=61859,awp=120000,id=13})}}),
+crit(111129,{achID=61859,id=13})}}),
 fp(3193,{coords={
 [2413]={{54.1,53.2}}},crs={255056},g={
-crit(111130,{achID=61859,awp=120000,id=14})}})}),
+crit(111130,{achID=61859,id=14})}})}),
 ah(2704,{icon=7505704,type="fa",g={
 faction(2704),
 h(-12,{
@@ -168842,16 +168842,16 @@ crit(111587,{achID=62290,id=5})}})}}),
 ah(62104,{type="a",g={
 o(613823,{coords={
 [2413]={{33.3,60.9}}},questID=93556,g={
-crit(111824,{achID=62104,awp=120000,id=14})}}),
+crit(111824,{achID=62104,id=14})}}),
 o(613827,{coords={
 [2413]={{72.4,38.1}}},questID=93557,g={
-crit(111825,{achID=62104,awp=120000,id=15})}}),
+crit(111825,{achID=62104,id=15})}}),
 o(613828,{coords={
 [2413]={{68.2,23.8}}},questID=93558,g={
-crit(111826,{achID=62104,awp=120000,id=16})}}),
+crit(111826,{achID=62104,id=16})}}),
 o(613818,{coords={
 [2413]={{55.7,54}}},questID=93554,g={
-crit(111823,{achID=62104,awp=120000,id=13})}})}}),
+crit(111823,{achID=62104,id=13})}})}}),
 ah(61263,{type="a",g={
 o(572998,{coords={
 [2413]={{47,50.4}}},questID=92426,g={
@@ -169034,10 +169034,10 @@ ach(62273,{description="Earning this achievement rewards a 'Voidfeather Dragonha
 flt(101,{
 p(4889,{b=1,coords={
 [2424]={{34.6,15.5},{42.5,32.5},{43,21.9},{49.5,29.4}}},crs={250571},itemID=251002,npcID=250571,spellID=1251746,g={
-crit(112800,{achID=61091,awp=120000,id=11})}}),
+crit(112800,{achID=61091,id=11})}}),
 p(4891,{b=1,coords={
 [2424]={{42.7,30.7}}},crs={250573},itemID=251003,npcID=250573,spellID=1251771,g={
-crit(112810,{achID=61091,awp=120000,id=21})}})}),
+crit(112810,{achID=61091,id=21})}})}),
 h(-30,{
 exp(16754),
 exp(16810),
@@ -169051,7 +169051,7 @@ exp(16526)}),
 h(-32,{
 fp(3125,{coords={
 [2424]={{57.6,33.9}}},crs={246560},g={
-crit(111119,{achID=61859,awp=120000,id=19})}})}),
+crit(111119,{achID=61859,id=19})}})}),
 h(-45,{
 ah(62191,{type="a",g={
 q(91281,{coords={
@@ -169215,11 +169215,11 @@ i(237899,{f=55,spellID=1223190})})})}}),
 m(2405,{awp=120001,icon=5927657,lore="It is a world shaped by the Void where predation reigns supreme, and serves as Xal'atath's launching point for her attack on the Sunwell.",maps={2444,2526,2527},lvl=88,g={
 h(-12,{
 ach(41806,{
-crit(104580,{achID=42045,awp=120000,id=5}),
-crit(104580,{achID=61839,awp=120000,id=6}),
-crit(104580,{achID=62110,awp=120000,id=4})}),
+crit(104580,{achID=42045,id=5}),
+crit(104580,{achID=61839,id=6}),
+crit(104580,{achID=62110,id=4})}),
 ach(61857,{
-crit(111099,{achID=61854,awp=120000,id=4}),
+crit(111099,{achID=61854,id=4}),
 crit(111099,{achID=62256,id=3})}),
 ach(61861,{questID=94047}),
 ach(61563,{coords={
@@ -169256,7 +169256,7 @@ ach(61552,{coords={
 [2405]={{51.3,62.7}}},sr=1,g={
 crit(110372,{achID=61583,id=1})}}),
 ach(61864,{
-crit(111793,{achID=62110,awp=120000,id=9})}),
+crit(111793,{achID=62110,id=9})}),
 ach(62385,{providers={{"s",1270742}},g={
 mnt(1266703,{itemID=260697})}}),
 ach(62130,{
@@ -169269,25 +169269,25 @@ ach(62126,{
 toy(264695,{b=1}),
 crit(112415,{achID=62256,id=2})}),
 ach(61583,{sr=1,g={
-crit(110386,{achID=61584,awp=120000,id=4})}}),
+crit(110386,{achID=61584,id=4})}}),
 ach(62291,{
 de(15890,{itemID=264656,spellID=1272186}),
-crit(112502,{achID=62057,awp=120000,id=4})}),
+crit(112502,{achID=62057,id=4})}),
 ach(62256,{
-crit(112843,{achID=62386,awp=120000,id=4})})}),
+crit(112843,{achID=62386,id=4})})}),
 flt(101,{
 p(4879,{b=1,coords={
 [2405]={{31.1,44.2},{46.9,88.5},{53.4,72.5}}},crs={249819},itemID=250148,npcID=249819,spellID=1250360,g={
-crit(112793,{achID=61091,awp=120000,id=4})}}),
+crit(112793,{achID=61091,id=4})}}),
 p(4790,{b=1,coords={
 [2405]={{39.5,38.2},{41,38.5}}},crs={240014},itemID=238793,npcID=240014,spellID=1226298,g={
-crit(112794,{achID=61091,awp=120000,id=5})}}),
+crit(112794,{achID=61091,id=5})}}),
 p(4892,{b=1,coords={
 [2405]={{64.8,74.2}}},crs={250680},itemID=251005,npcID=250680,spellID=1251782,g={
-crit(112801,{achID=61091,awp=120000,id=12})}}),
+crit(112801,{achID=61091,id=12})}}),
 p(4795,{b=1,coords={
 [2405]={{28.3,52.9},{29.5,53.8},{30.5,66.2}}},crs={241439},itemID=239101,npcID=241439,spellID=1250138,g={
-crit(112808,{achID=61091,awp=120000,id=19})}})}),
+crit(112808,{achID=61091,id=19})}})}),
 h(-30,{
 exp(16216),
 exp(16223),
@@ -169331,16 +169331,16 @@ mnt(3363,{itemID=260916,lvl=10})})}),
 h(-32,{
 fp(3121,{coords={
 [2405]={{51.1,69.3}}},crs={235703},g={
-crit(111131,{achID=61859,awp=120000,id=15})}}),
+crit(111131,{achID=61859,id=15})}}),
 fp(3120,{coords={
 [2405]={{42.3,73.7}}},crs={244636},g={
-crit(111132,{achID=61859,awp=120000,id=16})}}),
+crit(111132,{achID=61859,id=16})}}),
 fp(3123,{coords={
 [2444]={{37.8,81.6}}},crs={245571},sourceQuests={86510},g={
-crit(111133,{achID=61859,awp=120000,id=17})}}),
+crit(111133,{achID=61859,id=17})}}),
 fp(3119,{coords={
 [2405]={{36.9,59}}},crs={240683},g={
-crit(111134,{achID=61859,awp=120000,id=18})}})}),
+crit(111134,{achID=61859,id=18})}})}),
 h(-45,{
 q(89388,{coords={
 [2393]={{45.5,70.4}}},lvl=80,qgs={240523}}),
@@ -170314,19 +170314,19 @@ crit(111864,{achID=62126,id=2})}})}}),
 ah(62104,{type="a",g={
 o(618558,{coords={
 [2405]={{40.5,58.6}}},questID=94395,g={
-crit(111836,{achID=62104,awp=120000,id=19})}}),
+crit(111836,{achID=62104,id=19})}}),
 o(618554,{coords={
 [2405]={{50.3,87.7}}},questID=94394,g={
-crit(111835,{achID=62104,awp=120000,id=18})}}),
+crit(111835,{achID=62104,id=18})}}),
 o(618571,{coords={
 [2405]={{27.8,54}}},questID=94398,g={
-crit(111838,{achID=62104,awp=120000,id=21})}}),
+crit(111838,{achID=62104,id=21})}}),
 o(618569,{coords={
 [2405]={{60.4,45.5}}},questID=94397,g={
-crit(111837,{achID=62104,awp=120000,id=20})}}),
+crit(111837,{achID=62104,id=20})}}),
 o(618542,{coords={
 [2405]={{63.4,78.2}}},questID=94389,g={
-crit(111834,{achID=62104,awp=120000,id=17})}})}}),
+crit(111834,{achID=62104,id=17})}})}}),
 ah(62291,{type="a",g={
 o(619662,{coords={
 [2405]={{36.5,44.3}}},questID=94552,g={
@@ -170651,11 +170651,11 @@ crit(112456,{achID=61453,id=5})}),
 ach(62120),
 ach(61856,{
 crit(111098,{achID=61453,id=3}),
-crit(111098,{achID=61854,awp=120000,id=3})}),
+crit(111098,{achID=61854,id=3})}),
 ach(41803,{
-crit(104579,{achID=42045,awp=120000,id=2}),
-crit(104579,{achID=61839,awp=120000,id=4}),
-crit(104579,{achID=62110,awp=120000,id=2})}),
+crit(104579,{achID=42045,id=2}),
+crit(104579,{achID=61839,id=4}),
+crit(104579,{achID=62110,id=2})}),
 ach(62200,{
 crit(112847,{achID=62200,coords={
 [2437]={{45.9,66}}},providers={{"n",260881},{"o",633820}}}),
@@ -170670,7 +170670,7 @@ crit(112848,{achID=62200,coords={
 crit(112846,{achID=62200,coords={
 [2437]={{54.3,20.6}}},providers={{"n",260879},{"o",633814}}})}),
 ach(61453,{
-crit(112841,{achID=62386,awp=120000,id=2})}),
+crit(112841,{achID=62386,id=2})}),
 ach(62199,{
 hqt(95005,{coords={
 [2437]={{59.2,71.1}}},qgs={258933}}),
@@ -170750,15 +170750,15 @@ toy(268717),
 crit(112452,{achID=61453,id=1})}),
 ach(61452,{
 crit(112811,{achID=61452,id=14,providers={{"n",260849}}}),
-crit(109738,{achID=62110,awp=120000,id=8})}),
+crit(109738,{achID=62110,id=8})}),
 ach(62202,{coords={
 [2437]={{32.2,22.3},{51.6,32.7}}},qgs={261115},questID=95450,g={
 crit(112042,{achID=62202,id=1,providers={{"n",258938}}})}}),
 ach(61581,{sr=1,g={
-crit(110384,{achID=61584,awp=120000,id=2})}}),
+crit(110384,{achID=61584,id=2})}}),
 ach(62289,{
 de(11325,{itemID=256925,spellID=1260929}),
-crit(112500,{achID=62057,awp=120000,id=2})})}),
+crit(112500,{achID=62057,id=2})})}),
 ah(2696,{icon=7505698,type="fa",g={
 faction(2696),
 h(-12,{
@@ -170823,25 +170823,25 @@ s(298050,250855,{cost={{"c",3316,5000}},f=2,minReputation={2696,20}})}})})}}),
 flt(101,{
 p(4874,{b=1,coords={
 [2437]={{47.1,76},{52.9,80.9},{56.3,70.5}}},crs={249812},itemID=250135,npcID=249812,spellID=1250374,g={
-crit(112790,{achID=61091,awp=120000,id=1})}}),
+crit(112790,{achID=61091,id=1})}}),
 p(4883,{b=1,coords={
 [2437]={{50.5,24.7},{51.8,28.9},{54.2,22.4}}},crs={249824},itemID=250143,npcID=249824,spellID=1250365,g={
-crit(112795,{achID=61091,awp=120000,id=6})}}),
+crit(112795,{achID=61091,id=6})}}),
 p(4878,{b=1,coords={
 [2437]={{41.4,48.5},{55.6,84.9}}},crs={249818},itemID=250139,npcID=249818,spellID=1250369,g={
-crit(112796,{achID=61091,awp=120000,id=7})}}),
+crit(112796,{achID=61091,id=7})}}),
 p(4885,{b=1,coords={
 [2437]={{34.6,82.9},{35.7,76.7},{45.7,34.8},{48,57.5}}},crs={249826},itemID=250146,npcID=249826,spellID=1250362,g={
-crit(112798,{achID=61091,awp=120000,id=9})}}),
+crit(112798,{achID=61091,id=9})}}),
 p(4884,{b=1,coords={
 [2437]={{43.2,54.4}}},crs={249825},itemID=250145,npcID=249825,spellID=1250363,g={
-crit(112797,{achID=61091,awp=120000,id=8})}}),
+crit(112797,{achID=61091,id=8})}}),
 p(3364,{b=1,coords={
 [2437]={{46.5,57.6},{51.7,67.1}}},crs={192368},itemID=251004,npcID=192368,spellID=377417,g={
-crit(112804,{achID=61091,awp=120000,id=15})}}),
+crit(112804,{achID=61091,id=15})}}),
 p(4880,{b=1,coords={
 [2437]={{19.8,77.1},{40.3,72.9},{47.4,49.8}}},crs={249820},itemID=250140,npcID=249820,spellID=1250368,g={
-crit(112805,{achID=61091,awp=120000,id=16})}})}),
+crit(112805,{achID=61091,id=16})}})}),
 h(-30,{
 exp(16183,{
 crit(112393,{achID=61856,id=2})}),
@@ -170884,22 +170884,22 @@ exp(16348)}),
 h(-32,{
 fp(3127,{coords={
 [2437]={{44.8,65.4}}},crs={241036},g={
-crit(111120,{achID=61859,awp=120000,id=4})}}),
+crit(111120,{achID=61859,id=4})}}),
 fp(3128,{coords={
 [2536]={{39.8,40.8}}},crs={241031},g={
-crit(111121,{achID=61859,awp=120000,id=5})}}),
+crit(111121,{achID=61859,id=5})}}),
 fp(3129,{coords={
 [2437]={{44,33.6}}},crs={251081},g={
-crit(111122,{achID=61859,awp=120000,id=6})}}),
+crit(111122,{achID=61859,id=6})}}),
 fp(3126,{coords={
 [2437]={{33.9,78.3}}},crs={249150},g={
-crit(111123,{achID=61859,awp=120000,id=7})}}),
+crit(111123,{achID=61859,id=7})}}),
 fp(3106,{coords={
 [2437]={{47.3,25.5}}},crs={242011},g={
-crit(111124,{achID=61859,awp=120000,id=8})}}),
+crit(111124,{achID=61859,id=8})}}),
 fp(3130,{coords={
 [2437]={{38.9,23.2}}},crs={251073},g={
-crit(111125,{achID=61859,awp=120000,id=9})}})}),
+crit(111125,{achID=61859,id=9})}})}),
 h(-45,{
 h(-14,{
 q(91040,{coords={
@@ -171292,7 +171292,7 @@ s(303376,264472,{b=1,f=5,lvl=80}),
 s(303375,264471,{b=1,f=4,lvl=80}),
 s(303377,264473,{b=1,f=6,lvl=80}),
 crit(109727,{achID=61452,id=9}),
-crit(109727,{achID=61910,awp=120000,id=3})}})}}),
+crit(109727,{achID=61910,id=3})}})}}),
 ah(61452.1,{type="crit",g={
 q(92450,{coords={
 [2437]={{45.2,69.8}}},lvl=83,qgs={251258},sourceQuests={86652}}),
@@ -171641,22 +171641,22 @@ h(-56,{
 ah(62104,{type="a",g={
 o(620314,{coords={
 [2437]={{53.1,82.1}}},questID=94627,g={
-crit(111772,{achID=62104,awp=120000,id=7})}}),
+crit(111772,{achID=62104,id=7})}}),
 o(620327,{coords={
 [2437]={{52.9,32.1}}},questID=94674,g={
-crit(111778,{achID=62104,awp=120000,id=12})}}),
+crit(111778,{achID=62104,id=12})}}),
 o(620321,{coords={
 [2437]={{32.1,31.6}}},questID=94628,g={
-crit(111773,{achID=62104,awp=120000,id=8})}}),
+crit(111773,{achID=62104,id=8})}}),
 o(620323,{coords={
 [2437]={{55.1,17.6}}},questID=94631,g={
-crit(111774,{achID=62104,awp=120000,id=9})}}),
+crit(111774,{achID=62104,id=9})}}),
 o(620326,{coords={
 [2437]={{39.3,44.7}}},questID=94673,g={
-crit(111777,{achID=62104,awp=120000,id=11})}}),
+crit(111777,{achID=62104,id=11})}}),
 o(620324,{coords={
 [2437]={{30.2,84.6}}},questID=94632,g={
-crit(111775,{achID=62104,awp=120000,id=10})}}),
+crit(111775,{achID=62104,id=10})}}),
 o(620325,{awp=120005,coords={
 [2437]={{37.5,26.7}}},questID=94633})}}),
 ah(62125,{type="a",g={
@@ -171833,9 +171833,9 @@ h(-63,{
 i(259361,{description="Can be looted from enemies near Maisara Caverns dungeon",f=55})})}}),
 h(-12,{
 ach(41805,{awp=120001,g={
-crit(104582,{achID=42045,awp=120000,id=3}),
-crit(104582,{achID=61839,awp=120000,id=5}),
-crit(104582,{achID=62110,awp=120000,id=5})}}),
+crit(104582,{achID=42045,id=3}),
+crit(104582,{achID=61839,id=5}),
+crit(104582,{achID=62110,id=5})}}),
 ach(62188,{awp=120001}),
 ach(62386,{
 mnt(1253924,{b=1,itemID=252011,lvl=10})}),
@@ -172119,7 +172119,7 @@ s(301056,257186,{b=1,f=7,lvl=90}),
 s(301055,257185,{b=1,f=6,lvl=90}),
 s(301054,257184,{b=1,f=5,lvl=90}),
 s(301053,257183,{b=1,f=4,lvl=90}),
-crit(104633,{achID=42117,awp=120000,id=1})}})}}),
+crit(104633,{achID=42117,id=1})}})}}),
 ah(42117.02,{type="crit",g={
 q(90690,{coords={
 [2393]={{45.4,70.3}}},isBreadcrumb=1,lvl=90,nextQuests={88709},qgs={235787},sourceQuests={88706}}),
@@ -172134,7 +172134,7 @@ q(90724,{coords={
 [2405]={{44.5,66.1}}},lvl=90,maps={2529,2530},qgs={244297,253603},sourceQuests={88709}}),
 q(92520,{coords={
 [2393]={{45.4,70.3}}},lvl=90,qgs={235787},sourceQuests={90724},g={
-crit(104634,{achID=42117,awp=120000,id=2})}})}}),
+crit(104634,{achID=42117,id=2})}})}}),
 ah(42117.03,{type="crit",g={
 q(88920,{coords={
 [2393]={{45.3,70.3},{45.9,70.3}}},qgs={240267},sourceQuests={92520}}),
@@ -172198,20 +172198,20 @@ q(88919,{coords={
 q(88942,{coords={
 [2393]={{40.4,32.9}}},qgs={254654},sourceQuests={88919},g={
 de(2299,{itemID=246458,spellID=1242300}),
-crit(104636,{achID=42117,awp=120000,id=3})}})}}),
+crit(104636,{achID=42117,id=3})}})}}),
 ah(42117.04,{type="crit",g={
 q(88769,{coords={
 [2393]={{45.9,70.3}}},qgs={240267},sourceQuests={88942},g={
 p(4909,{b=1,itemID=258122,npcID=254647,spellID=1262832}),
 mnt(1265785,{b=1,itemID=260233,lvl=10}),
-crit(104637,{achID=42117,awp=120000,id=4})}})}}),
+crit(104637,{achID=42117,id=4})}})}}),
 ah(42117.05,{type="crit",g={
 q(90748,{coords={
 [2393]={{45.4,70.3}}},isBreadcrumb=1,lvl=90,nextQuests={88710},qgs={235787},sourceQuests={88769}}),
 q(88710,{coords={
 [2424]={{52.6,90.2}}},lvl=90,maps={2533},qgs={243824,245061},sourceQuests={90748},g={
 toy(257736,{b=1}),
-crit(104638,{achID=42117,awp=120000,id=5})}})}}),
+crit(104638,{achID=42117,id=5})}})}}),
 ah(42117.06,{type="crit",g={
 q(92689,{coords={
 [2393]={{45.4,70.3}}},qgs={235787},sourceQuests={88710}}),
@@ -172231,7 +172231,7 @@ q(90867,{coords={
 de(17294,{itemID=265631,spellID=1276489}),
 de(16691,{itemID=265106,spellID=1274824}),
 mnt(1261293,{b=1,itemID=257143,lvl=10}),
-crit(109877,{achID=42117,awp=120000,id=6})}}),
+crit(109877,{achID=42117,id=6})}}),
 hqt(92802,{coords={
 [2424]={{52.6,45.9}}},description="Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",qgs={246789},sourceQuests={90862}}),
 hqt(92810,{coords={

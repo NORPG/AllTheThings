@@ -25,7 +25,7 @@ p(1603,{awp=60002,b=1,itemID=118516,npcID=88807,spellID=177232,u=3}),
 p(3153,{awp=90105,b=1,itemID=248092,npcID=179589,spellID=354743,u=3}),
 p(1248,{awp=50300,b=1,itemID=98550,npcID=71488,spellID=142880,u=3}),
 p(1466,{awp=60203,b=1,itemID=128424,npcID=85283,pb=1,spellID=190035,u=3,g={
-crit(29725,{achID=8397,awp=50400,id=3,pb=1})}}),
+crit(29725,{achID=8397,id=3,pb=1})}}),
 p(1117,{awp=50100,b=1,itemID=92707,npcID=68267,pb=1,spellID=134538,u=3,g={
 crit(23596,{achID=8397,awp=50400,id=7,pb=1})}}),
 p(3253,{awp=100105,itemID=190608,npcID=185611,spellID=367778,u=3}),
@@ -37,7 +37,7 @@ p(4894,{awp=110207,itemID=252650,npcID=251511,spellID=1254822,u=3})),
 p(297,{awp=40003,b=1,itemID=68385,npcID=51600,spellID=95787,u=3}),
 p(3249,{awp=90205,b=1,itemID=190586,npcID=185586,spellID=367702,u=3}),
 p(671,{awp=80300,itemID=85871,npcID=63832,spellID=124660,u=3,g={
-crit(34637,{achID=6848,awp=50004,id=3,rwp=50407,u=2})}}),
+crit(34637,{achID=6848,id=3,rwp=50407,u=2})}}),
 p(3175,{awp=100200,npcID=181535,u=3}),
 p(4855,{awp=110205,itemID=246342,npcID=246662,rwp=110207,spellID=1241760,u=2}),
 p(4969,{awp=120001,description="Part of the charity Roofus Pack.",itemID=262982,npcID=256698,rwp=120005,spellID=1269627,u=2}),

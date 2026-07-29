@@ -5019,7 +5019,7 @@ ach(398,{pvp=1}),
 ach(875,{pvp=1}),
 ach(876,{awp=30003,pvp=1,g={
 s(174779,43349,{b=1,f=9,pvp=1,q=4}),
-crit(3489,{achID=1174,awp=30002,id=1,pvp=1,rwp=70003})}}),
+crit(3489,{achID=1174,id=1,pvp=1,rwp=70003})}}),
 ach(2090,{pvp=1,g={
 title(32,{collectible=false,pvp=1})}}),
 ach(2092,{pvp=1,g={
@@ -5082,9 +5082,9 @@ crit(645,{achID=714,id=1,pvp=1,r=1,u=12})}}),
 ach(709,{minReputation={730,42000},pvp=1,r=2,u=12,g={
 crit(1896,{achID=907,id=1,pvp=1,r=2,u=12})}}),
 ach(1167,{pvp=1,g={
-crit(226,{achID=230,awp=20001,id=1,pvp=1,r=2,u=17})}}),
+crit(226,{achID=230,id=1,pvp=1,r=2,u=17})}}),
 ach(1168,{pvp=1,r=1,rwp=40300,u=2,g={
-crit(3500,{achID=1175,awp=20001,id=1,pvp=1,r=1,u=17})}}),
+crit(3500,{achID=1175,id=1,pvp=1,r=1,u=17})}}),
 ach(218,{pvp=1,rank=1}),
 ach(219,{pvp=1,rank=100,g={
 crit(3392,{achID=1167,id=1,pvp=1}),
@@ -5422,9 +5422,9 @@ s(129191,18231,{f=10,filterForRWP=2,pvp=1,q=1})}})}}),
 m(1461,{icon=236385,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
 h(-12,{awp=30002,pvp=1,g={
 ach(1169,{pvp=1,g={
-crit(227,{achID=230,awp=20001,id=1,pvp=1,r=2,u=17})}}),
+crit(227,{achID=230,id=1,pvp=1,r=2,u=17})}}),
 ach(1170,{pvp=1,r=1,rwp=40300,u=2,g={
-crit(3501,{achID=1175,awp=20001,id=1,pvp=1,r=1,u=17})}}),
+crit(3501,{achID=1175,id=1,pvp=1,r=1,u=17})}}),
 ach(154,{pvp=1,rank=1}),
 ach(155,{pvp=1,rank=100,g={
 crit(3416,{achID=1169,id=1,pvp=1}),
@@ -5844,8 +5844,8 @@ crit(14990,{achID=5258,id=1,pvp=1})}})}})}}),
 m(1956,{icon=236392,maps={397,1956},pvp=1,u=17,g={
 h(-12,{awp=30002,pvp=1,u=17,g={
 ach(1171,{pvp=1,u=17,g={
-crit(3503,{achID=230,awp=20001,id=1,pvp=1,r=2,u=17}),
-crit(3503,{achID=1175,awp=20001,id=1,pvp=1,r=1,u=17})}}),
+crit(3503,{achID=230,id=1,pvp=1,r=2,u=17}),
+crit(3503,{achID=1175,id=1,pvp=1,r=1,u=17})}}),
 ach(208,{pvp=1,rank=1,u=17}),
 ach(209,{pvp=1,rank=100,u=17,g={
 crit(3446,{achID=1171,id=1,pvp=1,u=17})}}),
@@ -5944,9 +5944,9 @@ ach(4176,{pvp=1,r=1,u=32})}})}}),
 m(128,{awp=30002,icon=236394,pvp=1,rwp=80001,u=30,g={
 h(-12,{pvp=1,u=30,g={
 ach(2194,{pvp=1,u=30,g={
-crit(7640,{achID=230,awp=20001,id=1,pvp=1,r=2,u=17})}}),
+crit(7640,{achID=230,id=1,pvp=1,r=2,u=17})}}),
 ach(2195,{pvp=1,r=1,rwp=40300,u=2,g={
-crit(7641,{achID=1175,awp=20001,id=1,pvp=1,r=1,u=17})}}),
+crit(7641,{achID=1175,id=1,pvp=1,r=1,u=17})}}),
 ach(1308,{pvp=1,rank=1,u=30}),
 ach(1309,{pvp=1,rank=100,u=30,g={
 crit(7654,{achID=2194,id=1,pvp=1,u=30}),
@@ -6176,9 +6176,9 @@ ach(5552,{pvp=1,r=1})}})}}),
 m(1460,{icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
 h(-12,{awp=30002,pvp=1,g={
 ach(1172,{pvp=1,g={
-crit(229,{achID=230,awp=20001,id=1,pvp=1,r=2,u=17})}}),
+crit(229,{achID=230,id=1,pvp=1,r=2,u=17})}}),
 ach(1173,{pvp=1,r=1,rwp=40300,u=2,g={
-crit(3502,{achID=1175,awp=20001,id=1,pvp=1,r=1,u=17})}}),
+crit(3502,{achID=1175,id=1,pvp=1,r=1,u=17})}}),
 ach(166,{pvp=1,rank=1}),
 ach(167,{pvp=1,rank=100,g={
 crit(3461,{achID=1172,id=1,pvp=1}),
@@ -6422,7 +6422,7 @@ ach(2776,{awp=30002,pvp=1,r=1,rwp=40300,u=2}),
 ach(1717,{providers={{"s",56902}},pvp=1,rank=1,u=30}),
 ach(1718,{providers={{"s",56902}},pvp=1,rank=100,u=30,g={
 crit(9758,{achID=1752,id=1,pvp=1,u=30}),
-crit(9758,{achID=2776,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
+crit(9758,{achID=2776,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
 ach(2085,{cost={{"c",161,50}},pvp=1,rwp=40001,u=2}),
 ach(2086,{cost={{"c",161,100}},pvp=1,rwp=40001,u=2}),
 ach(2087,{cost={{"c",161,250}},pvp=1,rwp=40001,u=2}),
@@ -6430,7 +6430,7 @@ ach(2088,{cost={{"c",161,500}},pvp=1,rwp=40001,u=2}),
 ach(2089,{cost={{"c",161,1000}},pvp=1,rwp=40001,u=2}),
 ach(2080,{providers={{"i",43956},{"i",44077}},pvp=1,u=30,g={
 crit(9761,{achID=1752,id=1,pvp=1,u=30}),
-crit(9761,{achID=2776,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
+crit(9761,{achID=2776,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
 ach(1737,{pvp=1,r=2,u=30,g={
 crit(9178,{achID=1737,id=1,providers={{"n",27881}},pvp=1,r=2,u=30}),
 crit(9179,{achID=1737,id=1,providers={{"n",28094}},pvp=1,r=2,u=30}),
@@ -6442,16 +6442,16 @@ crit(9178,{achID=2476,id=1,providers={{"n",27881}},pvp=1,r=1,u=30}),
 crit(9179,{achID=2476,id=1,providers={{"n",28094}},pvp=1,r=1,u=30}),
 crit(9180,{achID=2476,id=1,providers={{"n",28312},{"n",32627}},pvp=1,r=1,u=30}),
 crit(9181,{achID=2476,id=1,providers={{"n",28366}},pvp=1,r=1,u=30}),
-crit(9767,{achID=2776,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
+crit(9767,{achID=2776,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
 ach(1751,{pvp=1,u=30,g={
 crit(9771,{achID=1752,id=1,pvp=1,u=30}),
-crit(9771,{achID=2776,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
+crit(9771,{achID=2776,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
 ach(1727,{pvp=1,u=30,g={
 crit(9770,{achID=1752,id=1,pvp=1,u=30}),
-crit(9770,{achID=2776,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
+crit(9770,{achID=2776,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
 ach(1723,{pvp=1,u=30,g={
 crit(9769,{achID=1752,id=1,pvp=1,u=30}),
-crit(9769,{achID=2776,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
+crit(9769,{achID=2776,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
 ach(2199,{pvp=1,u=30,g={
 crit(7709,{achID=2199,coords={
 [123]={{49.3,21.1}}},pvp=1,u=30}),
@@ -6474,10 +6474,10 @@ crit(7713,{achID=2199,coords={
 crit(7719,{achID=2199,coords={
 [123]={{22.1,34.9}}},pvp=1,u=30}),
 crit(9760,{achID=1752,id=1,pvp=1,u=30}),
-crit(9760,{achID=2776,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
+crit(9760,{achID=2776,id=1,pvp=1,r=1,rwp=40300,u=2})}}),
 ach(1755,{providers={{"s",56902}},pvp=1,u=30,g={
 crit(9759,{achID=1752,id=1,pvp=1,u=30}),
-crit(9759,{achID=2776,awp=30002,id=1,pvp=1,r=1,rwp=40300,u=2})}})}})}})}}),
+crit(9759,{achID=2776,id=1,pvp=1,r=1,rwp=40300,u=2})}})}})}})}}),
 h(-305,{awp=40003,pvp=1,g={
 h(-12,{pvp=1,g={
 h(-210,{pvp=1,r=2,g={

@@ -2904,7 +2904,7 @@ ach(398,{pvp=1}),
 ach(875,{pvp=1}),
 ach(876,{awp=30003,pvp=1,g={
 s(174779,43349,{b=1,f=9,pvp=1,q=4}),
-crit(3489,{achID=1174,awp=30002,id=1,pvp=1,rwp=70003})}}),
+crit(3489,{achID=1174,id=1,pvp=1,rwp=70003})}}),
 ach(2090,{pvp=1,g={
 title(32,{collectible=false,pvp=1})}}),
 ach(2092,{pvp=1,g={
