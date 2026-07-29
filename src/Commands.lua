@@ -28,7 +28,7 @@ function app:SetupReportDialog(id, reportMessage, text, replace)
 		-- print("Setup Report", id, reportMessage)
 		reports[id] = {
 			msg = reportMessage,
-			text = (type(text) == "table" and app.TableConcat(text, nil, "", "\n") or text)
+			text = (type(text) == "table" and app.TableConcatWithSecrets(text, "\n") or text)
 		};
 		return true;
 	end
