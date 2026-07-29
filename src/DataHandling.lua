@@ -671,7 +671,7 @@ local function UpdateSearchResults(searchResults, updateFunc)
 		-- TODO: use event
 		app.WipeSearchCache()
 	end
-	app.PrintDebug("UpdateSearchResults Done",#searchResults,"=>",#found)
+	-- app.PrintDebug("UpdateSearchResults Done",#searchResults,"=>",#found)
 end
 -- Pulls all cached fields for the field/id and passes the results into UpdateSearchResults
 local function UpdateRawID(field, id, updateFunc)
