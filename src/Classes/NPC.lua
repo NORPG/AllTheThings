@@ -67,7 +67,7 @@ if C_TooltipInfo_GetHyperlink then
 					end
 				end
 				-- return a secret name but don't cache it for re-use
-				if app.WOWAPI.issecretvalue(title) then
+				if issecretvalue(title) then
 					-- app.PrintDebug("returning secret name", title)
 					return title
 				end
