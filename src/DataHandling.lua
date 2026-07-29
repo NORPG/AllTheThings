@@ -638,14 +638,17 @@ local function UpdateSearchResults(searchResults, updateFunc)
 	local hashes = {}
 	local found = {}
 	local HandleEvent = app.HandleEvent
+	updateFunc = updateFunc or DirectGroupUpdate
 	-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
 	local result
 	for i=1,#searchResults do
 		result = searchResults[i]
 		hashes[result.hash] = true
 		found[#found + 1] = result
-		-- Make sure any update events are handled for this Thing
-		HandleEvent("OnSearchResultUpdate", result)
+		if updateFunc == DirectGroupUpdate then
+			-- Make sure any update events are handled for this Thing if it actually needs an Update
+			HandleEvent("OnSearchResultUpdate", result)
+		end
 	end
 
 	-- loop through visible ATT windows and collect matching groups
@@ -661,13 +664,14 @@ local function UpdateSearchResults(searchResults, updateFunc)
 
 	-- apply direct updates to all found groups
 	-- app.PrintDebug("Updating",#found,"groups")
-	updateFunc = updateFunc or DirectGroupUpdate
 	for i=1,#found do
 		updateFunc(found[i])
 	end
-	-- TODO: use event
-	app.WipeSearchCache()
-	-- app.PrintDebug("UpdateSearchResults Done",#searchResults,"=>",#found)
+	if updateFunc == DirectGroupUpdate then
+		-- TODO: use event
+		app.WipeSearchCache()
+	end
+	app.PrintDebug("UpdateSearchResults Done",#searchResults,"=>",#found)
 end
 -- Pulls all cached fields for the field/id and passes the results into UpdateSearchResults
 local function UpdateRawID(field, id, updateFunc)
