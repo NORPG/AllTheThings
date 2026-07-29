@@ -23,14 +23,14 @@ local C_PetJournal_GetNumCollectedInfo,C_PetJournal_GetPetInfoByPetID,C_PetJourn
 -- Due to bad Blizzard data being returned from C_PetJournal.GetNumPets
 -- we can only use the method of scanning the players collected pets if this API returns the proper number of total
 -- pets existing within the game
-app.PrintDebug("BattlePet.Load:C_PetJournal_GetNumPets",C_PetJournal_GetNumPets())
+app.PrintDebug("BattlePet.Load:C_PetJournal_GetNumPets",C_PetJournal.GetNumPets())
 local TOTAL_PETS_FOR_SCAN
 if app.IsClassic then
 	-- TODO: adjust/revise if viable
 	TOTAL_PETS_FOR_SCAN = 100
 else
-	-- updated 11.1
-	TOTAL_PETS_FOR_SCAN = 2412
+	-- updated 12.0.7
+	TOTAL_PETS_FOR_SCAN = 2632
 end
 
 local cache = app.CreateCache(KEY);
@@ -101,13 +101,15 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 		return app.TypicalAccountCollected(CACHE, t[KEY])
 	end,
 	saved = function(t)
-		local saved = CollectedSpeciesHelper[t[KEY]] > 0
+		local id = t[KEY]
+		local saved = CollectedSpeciesHelper[id] > 0
 		-- weird bug where ATT fails to scan battle pets,
 		-- can manually make it collected when checking the saved state (i.e. displayed in a row)
 		-- character collected
 		if saved then
+			-- CollectedSpeciesHelper[id] = nil
 			if not t.collected then
-				app.SetThingCollected(KEY, t[KEY], not PerCharacterSpecies[t[KEY]], true)
+				app.SetThingCollected(KEY, id, not PerCharacterSpecies[id], true)
 			end
 			return 1
 		end
@@ -164,11 +166,13 @@ local function RefreshBattlePets()
 		-- and everything is great
 		app.PrintDebug("RCBP:Scan")
 		local petID, speciesID
+		local checked = {}
 		for i=1,ownedPets do
 			petID, speciesID = C_PetJournal_GetPetInfoByIndex(i)
 			-- app.PrintDebug("RCBP",i,petID,speciesID,speciesID and CollectedSpeciesHelper[speciesID])
 			-- apparently some users can have a nil speciesID here...
-			if speciesID then
+			if speciesID and not checked[speciesID] then
+				checked[speciesID] = true
 				num = CollectedSpeciesHelper[speciesID]
 				if num > 0 then
 					if petID then
