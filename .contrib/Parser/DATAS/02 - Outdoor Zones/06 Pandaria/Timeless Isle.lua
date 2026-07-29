@@ -1056,6 +1056,7 @@ root(ROOTS.Zones, {
 					}),
 					q(33222, {	-- Little Tommy Newcomer
 						["qg"] = 73626,	-- Little Tommy Newcomer
+						["coord"] = { 34.7, 60.3, TIMELESS_ISLE },
 						["isDaily"] = true,
 					}),
 					q(33379, {	-- One Final Turn

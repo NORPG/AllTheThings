@@ -263,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(185814),	-- Auctioneer's Counting Bracers
 							i(185777),	-- Fang of Alcruux
 							i(185794, {	-- Gavel Pounders
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+								["timeline"] = { ADDED_9_1_0 },
 							}),
 							i(185821),	-- Gluttonous Rondel
 							i(246282, {	-- Order Bashers
