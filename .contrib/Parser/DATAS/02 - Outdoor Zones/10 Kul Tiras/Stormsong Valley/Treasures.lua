@@ -147,7 +147,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	m(KUL_TIRAS, {
 		m(STORMSONG_VALLEY, {
 			n(TREASURES, {
-				q(51945),	-- Stormsong Valley repeatable random chest
 				q(53652),	-- Reported as "Alliance BfA: Opened a chest in Stormsong Valley and got this"
 			}),
 		}),

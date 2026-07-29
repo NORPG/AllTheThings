@@ -286,6 +286,7 @@ local MapPrecisionOverrides = {
 	 [886] = 7,	-- The Vindicaar, Antoran Wastes Upper
 	 [887] = 7,	-- The Vindicaar, Antoran Wastes Lower
 	 [940] = 7,	-- The Vindicaar
+	 [942] = 0.30,	-- Stormsong Valley
 	[1021] = 1,	-- Chamber of Heart
 	[1164] = 6,	-- Dazar'alor Hall of Chroniclers
 	[1176] = 3,	-- Breath Of Pa'ku

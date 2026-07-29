@@ -286,6 +286,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(139328, {	-- Sabertron
 				["questID"] = 51956,
 				["coord"] = { 34.6, 32.4, STORMSONG_VALLEY },
+				["crs"] = { 144420 },	-- Vignette
 				["description"] = "Red is the default color when a WQ isn't active. To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
 				["groups"] = {
 					i(154664),	-- Lionsight Omensword
@@ -364,10 +365,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135947, {	-- Strange Mushroom Ring
 				["questID"] = 50024,
 				["coord"] = { 53.8, 72.2, STORMSONG_VALLEY },	-- cave entrance
+				["customCollect"] = { "HOA" },	-- without HOA the chest has no loot and does not trigger the questID lol
 				["groups"] = {
-					i(154466),	-- Fungalshroud Raiment
-					crit(41787, {	-- Strange Mushroom Ring
-						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
+					o(286952, {	-- Lichen-Covered Chest
+						i(154466),	-- Fungalshroud Raiment
+						crit(41787, {	-- Strange Mushroom Ring
+							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
+						}),
 					}),
 				},
 			}),
@@ -423,6 +427,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
+			}),
+			n(140398, {	-- Zeritaj
+				["questID"] = 53624,
+				["coord"] = { 31.7, 55.1, STORMSONG_VALLEY },
 			}),
 		}),
 	}),

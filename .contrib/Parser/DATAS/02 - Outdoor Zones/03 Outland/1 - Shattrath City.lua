@@ -950,7 +950,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["repeatable"] = true,
 						["groups"] = {
-							i(31800), 	-- Outcasts Cache
+							i(31800), 	-- Outcast's Cache
 						},
 					}),
 					q(10415, {	-- More Firewing Signets
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
 						["groups"] = {
-							i(31800), 	-- Outcasts Cache
+							i(31800), 	-- Outcast's Cache
 						},
 					}),
 					q(10037, {	-- Rather Be Fishin'
@@ -1230,7 +1230,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["groups"] = {
-							i(31800), 	-- Outcasts Cache
+							i(31800), 	-- Outcast's Cache
 						},
 					}),
 					q(10883, {	-- The Tempest Key

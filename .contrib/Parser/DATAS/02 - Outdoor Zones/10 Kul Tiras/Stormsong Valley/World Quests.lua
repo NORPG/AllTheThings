@@ -705,7 +705,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		m(STORMSONG_VALLEY, {
 			n(WORLD_QUESTS, {
 				q(50541),	-- triggered after defeating Beehemoth WQ
-				q(53624),	-- Zeritarj killID
 				q(53612),	-- Pest Remover Mk. II killID
 			}),
 		}),
