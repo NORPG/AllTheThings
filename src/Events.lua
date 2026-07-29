@@ -131,6 +131,14 @@ local RunnerEvents = {
 	OnUpdateWindows = true,
 	["Events.ProcessRemoveHandlers"] = true,
 }
+app.DesignateRunnerEvent = function(event)
+	if not event then
+		app.print("DesignateRunnerEvent needs an event",event)
+		return
+	end
+
+	RunnerEvents[event] = true
+end
 -- Represents Events which must always be run synchronously in the same frame as when they are triggered. These should be user-based triggers
 -- typically where their execution must be handled ASAP, even if other Events are running through the Runner
 local ImmediateEvents = {
@@ -148,10 +156,6 @@ local ImmediateEvents = {
 	OnReady = true,
 	OnRefreshSettings = true,
 	OnNewPopoutGroup = true,
-	OnBuildDataCache = true,
-	OnBuildHiddenDataCache = true,
-	OnDataCached = true,
-	OnHiddenDataCached = true,
 	["OnAddExtraMainCategories"] = true,
 	["Fill.OnAddFiller"] = true,
 	["Fill.DefinedSettings"] = true,

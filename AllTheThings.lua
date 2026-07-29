@@ -1231,6 +1231,7 @@ local function SimpleHeaderGroup(npcID, t)
 end
 
 do -- Initial Data Loading Events
+	-- TODO: with Progressive loading, these cache events might also need to be per-frame spread...
 	app.AddEventHandler("OnHiddenDataCached", function(categories)
 		for key,category in pairs(categories) do
 			--print("Found Hidden Category:", key);
@@ -1733,6 +1734,19 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
 
+	-- Determine the load style for ATT data
+	if AllTheThingsSavedVariables.LoadStyle == 1 then
+		app.DesignateRunnerEvent("OnBuildDataCache")
+		app.DesignateRunnerEvent("OnBuildHiddenDataCache")
+		app.DesignateRunnerEvent("OnDataCached")
+		app.DesignateRunnerEvent("OnHiddenDataCached")
+		app.AddEventHandler("OnStartup", function()
+			app.print((LFG_LIST_LOADING or "Loading..."),DONE)
+		end)
+		-- reminder in chat if using progressive loading
+		app.print((UNIT_NAMEPLATES_THREAT_DISPLAY_PROGRESSIVE or "Progressive"),(LFG_LIST_LOADING or "Loading..."),"Toggle via /att use-progressive-loading")
+	end
+
 	-- OnLoad events can fire once all data is loaded & cached
 	app.AddEventHandler("OnLoad", function()
 		app.RemoveAllEventHandlers("OnBuildHiddenDataCache")
@@ -1753,3 +1767,16 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	AllHiddenCategories = nil
 	AllCategories = nil
 end)
+
+-- Add a Command that lets players toggle how ATT loads to potentially facilitate script timeout restrictions
+app.ChatCommands.Add("use-progressive-loading", function(args)
+	local newLoadStyle = AllTheThingsSavedVariables.LoadStyle == 1 and 0 or 1
+	AllTheThingsSavedVariables.LoadStyle = newLoadStyle
+	-- ATT Loading Style : [Progressive/Instant]
+	app.print(newLoadStyle == 1 and (UNIT_NAMEPLATES_THREAT_DISPLAY_PROGRESSIVE or "Progressive") or (SPELL_CAST_TIME_INSTANT or "Instant"),(LFG_LIST_LOADING or "Loading..."))
+	app.print("/rl ->",RELOADUI)
+	return true
+end, {
+	"Usage : /att use-progressive-loading",
+	"Allows changing some load behavior of ATT to spread out the load sequence across many more game frames, potentially allowing successful loading in some game environments or locations where tighter addon restrictions may temporarily exist.",
+})
