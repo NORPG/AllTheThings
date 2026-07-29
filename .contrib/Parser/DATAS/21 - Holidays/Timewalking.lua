@@ -1539,7 +1539,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				})),
 				cr(22917, e(1590, {	-- Illidan Stormrage
 					ach(11869, {	-- I'll Hold These For You Until You Get Out
-						["classes"] = { DEMONHUNTER },
+						["sourceAchievements"] = { 426 },	-- Warglaives of Azzinoth
 						["groups"] = {
 							i(150372, {	-- Arsenal: The Warglaives of Azzinoth
 								i(151137),	-- Warglaive of Azzinoth
