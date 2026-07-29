@@ -1763,18 +1763,27 @@ namespace ATT
 
         static StringBuilder ExportStringValue(StringBuilder builder, string value)
         {
-            value = value.Replace("\n", "\\n").Replace("\r", "\\r");
+            var value2 = value.Replace("\n", "\\n").Replace("\r", "\\r");
+            bool hasNewlines = value != value2;
+            value = value2;
             if (value.StartsWith("~"))
             {
                 return builder.Append(value.Substring(1));
             }
-            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
+            if (value.StartsWith("GetSpellInfo")
+                || value.StartsWith("GetItem")
+                || value.StartsWith("select(")
+                || value.StartsWith("C_")
                 || value.StartsWith("_."))
             {
                 return builder.Append(value);
             }
             if (value.Contains("\""))
             {
+                if (hasNewlines)
+                {
+                    return builder.Append("\"").Append(value.Replace("\"", "\\\"")).Append("\"");
+                }
                 return builder.Append("[[").Append(value.Trim('[', ']')).Append("]]");
             }
             return builder.Append("\"").Append(value).Append("\"");
