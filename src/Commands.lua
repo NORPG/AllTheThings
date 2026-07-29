@@ -28,6 +28,7 @@ function app:SetupReportDialog(id, reportMessage, text, replace)
 		-- print("Setup Report", id, reportMessage)
 		reports[id] = {
 			msg = reportMessage,
+			-- FYI: Safely-handling secrets through here doesn't matter anyway since the EditBox:SetText method doesn't allow secrets! Cool
 			text = (type(text) == "table" and app.TableConcatWithSecrets(text, "\n") or text)
 		};
 		return true;

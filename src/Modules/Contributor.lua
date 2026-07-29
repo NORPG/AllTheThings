@@ -107,8 +107,15 @@ local function DoReport(reporttype, id)
 		orderedReportData[#orderedReportData + 1] = "type: "..reportData.type
 		reportData.type = nil
 	end
+	-- secret report data
+	local issecretvalue = app.WOWAPI.issecretvalue
+	local val
 	for i=1,#reportData do
-		orderedReportData[#orderedReportData + 1] = reportData[i]
+		val = reportData[i]
+		-- EditBox:SetText cannot accept secret values in the end, so trying to maintain them through the report sequence is pointless
+		if not issecretvalue(val) then
+			orderedReportData[#orderedReportData + 1] = val
+		end
 	end
 	app.wipearray(reportData)
 	-- keyed report data
@@ -117,10 +124,17 @@ local function DoReport(reporttype, id)
 	for k,v in pairs(reportData) do
 		vtype = type(v)
 		if vtype == "number" then
-			keyedData[#keyedData + 1] = tostring(k)..": "..tostring(v)
+			val = tostring(k)..": "..tostring(v)
 		else
-			keyedData[#keyedData + 1] = tostring(k)..": \""..tostring(v).."\""
+			val = tostring(v)
+			-- EditBox:SetText cannot accept secret values in the end, so trying to maintain them through the report sequence is pointless
+			if issecretvalue(val) then
+				val = tostring(k)..": <secret>"
+			else
+				val = tostring(k)..": \""..tostring(v).."\""
+			end
 		end
+		keyedData[#keyedData + 1] = val
 	end
 	-- common report data
 	reportData[#reportData + 1] = "### "..reporttype..":"..id
@@ -220,8 +234,18 @@ local function AddReportData(reporttype, id, data, chatlink)
 				reportData[k] = v
 			end
 		end
+		-- secret report data
+		local issecretvalue = app.WOWAPI.issecretvalue
+		local orderedReportData = {}
+		local val
+		for i=1,#data do
+			val = data[i]
+			if not issecretvalue(val) then
+				orderedReportData[#orderedReportData + 1] = val
+			end
+		end
 		-- add any distinct ordered data first
-		app.ArrayAppendDistinct(reportData, data)
+		app.ArrayAppendDistinct(reportData, orderedReportData)
 		app.wipearray(data)
 		-- add/replace keyed data
 		for k,v in pairs(data) do
@@ -241,6 +265,7 @@ api.DoReport = function(id, text)
 	AddReportData("test", id, text)
 end
 api.AddReportData = AddReportData
+-- /run ATTC.Modules.Contributor.AddReportData("test", 6, {secretwrap(1,2,3),ALLOWREPEAT=1,SpecialValue=secretwrap("hello")}, "TEST")
 
 
 -- Used to override the precision of coord accuracy based on irregularly sized maps
