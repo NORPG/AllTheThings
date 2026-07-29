@@ -69,6 +69,44 @@ app.TableConcat = function(tbl, field, def, sep, i, j)
 	end
 	return "";
 end
+-- Performs table.concat(tbl, sep, i, j) on the given array, but safely handles concat manually if any values are secrets
+-- Currently table.concat will throw an exception if tbl contains any secrets values, but repeated use of .. is acceptable
+app.TableConcatWithSecrets = function(tbl, sep, i, j)
+	if tbl then
+		sep = sep or ""
+		-- testing /dump ATTC.TableConcatWithSecrets({secretwrap(1,2,3)}," : ")
+		if issecrettable(tbl) then
+			app.PrintDebug("table is secret??")
+			app.PrintTable(tbl)
+		else
+			-- if any value is a secret, table.concat fails
+			local issecret
+			local issecretvalue = issecretvalue
+			for i=1,#tbl do
+				if issecretvalue(tbl[i]) then
+					issecret = true
+					break
+				end
+			end
+			if issecret then
+				local s = ""
+				local c = #tbl
+				if c == 0 then return s end
+				if c == 1 then return tbl[1] end
+				local last = tbl[c]
+				c = c - 1
+				for i=1,c do
+					s = s..tbl[i]..sep
+				end
+				s = s..last
+				return s
+			else
+				return table_concat(tbl, sep, i, j)
+			end
+		end
+	end
+	return ""
+end
 -- Concats all the key/value pairs in the table into a string
 app.StringifyTable = function(tbl, sep)
 	if tbl then
@@ -125,12 +163,13 @@ app.ArrayAppendDistinct = function(a1, ...)
 			end
 		else
 			local a, b
+			local contains = app.contains
 			for n=1,arrs do
 				a = select(n, ...)
 				if a then
 					for ai=1,#a do
 						b = a[ai]
-						if not app.contains(a1, b) then
+						if not contains(a1, b) then
 							a1[#a1 + 1] = a[ai]
 						end
 					end
