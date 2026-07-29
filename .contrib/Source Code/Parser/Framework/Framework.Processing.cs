@@ -998,14 +998,13 @@ namespace ATT
 
             Objects.PerformWipes(data);
 
-
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data, parentData))
                 return false;
 
             Consolidate_lvl(data);
+            Consolidate_criteria(data, parentData);
             Consolidate_item(data, parentData);
-            CheckRequiredDataRelationships(data);
 
             data.TryGetValue("g", out List<object> g);
             int subGroupCount = g?.Count ?? 0;
@@ -1217,6 +1216,11 @@ namespace ATT
             else
             {
                 ConcurrentDataList sortedg = new ConcurrentDataList(sort_g.AsTypedEnumerable<IDictionary<string, object>>());
+
+                foreach (Data group in sortedg)
+                {
+                    Validate_InheritedFields(group, data);
+                }
                 Objects.Merge(data, "g", sortedg);
             }
         }
@@ -2170,7 +2174,7 @@ namespace ATT
             // Convert any 'n' providers into 'qgs' for data simplicity, if not an item listed first
             if (type != "hqt" && data.TryGetValue(out Providers providers)
                 // if not a raw NPC/Header
-                && !data.ContainsAnyKey("npcID","headerID")
+                && !data.ContainsAnyKey("npcID", "headerID")
                 // if not an item listed first
                 && providers.FirstItemProvider == 0
                 && providers.GetProviderType("n", true) != null)
@@ -4413,6 +4417,23 @@ namespace ATT
             }
         }
 
+        private static void Consolidate_criteria(IDictionary<string, object> data, IDictionary<string, object> parentData)
+        {
+            if (!data.TryGetValue("criteriaID", out long criteriaID)) return;
+
+            // Criteria groups need to know their associated Achievement
+            if (!data.ContainsKey("achID"))
+            {
+                LogError($"'criteriaID' {criteriaID} missing 'achID' under final Parent: [{ToJSON(parentData)}]", data);
+            }
+            // Criteria nested under another Thing can never supercede that Thing's awp
+            if (parentData.TryGetValue("awp", out long parentAWP) && data.TryGetValue("awp", out long awp) && awp < parentAWP)
+            {
+                LogDebug($"INFO: Removed Criteria AWP:{awp} which is before Parent AWP:{parentAWP}", data);
+                data.Remove("awp");
+            }
+        }
+
         private static void Consolidate_item(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
             if (!data.TryGetValue("itemID", out long itemID)) return;
@@ -4471,6 +4492,7 @@ namespace ATT
             }
 
             // Retail: Items listed directly under a Quest which are of the 'Quest Item' class should be converted into 'qis' on the Quest
+            /*
             if (PreProcessorTags.Contains("RETAIL")
                 && data.TryGetValue("f", out long filterVal)
                 && filterVal == (long)Objects.Filters.Quest
@@ -4478,13 +4500,14 @@ namespace ATT
             {
                 // TODO: need to ignore any items which are referenced by other fields, such as 'providers' or 'cost'
                 // Blizzard still has lots of 'Quest' Items which are actually viable currencies or useful items i.e. 37829
-                //Objects.Merge(parentData, "qis", itemID);
-                //LogDebug($"INFO: Converted Quest Item {itemID} into 'qis' of parent Quest {parentQuestID}", data);
-                //// mark the item as having been referenced so it doesn't get put into Unsorted
-                //Items.MarkItemAsReferenced(itemID);
-                //// remove the item from the list since it's now part of the parent quest
-                //data["_remove"] = true;
+                Objects.Merge(parentData, "qis", itemID);
+                LogDebug($"INFO: Converted Quest Item {itemID} into 'qis' of parent Quest {parentQuestID}", data);
+                // mark the item as having been referenced so it doesn't get put into Unsorted
+                Items.MarkItemAsReferenced(itemID);
+                // remove the item from the list since it's now part of the parent quest
+                data["_remove"] = true;
             }
+            //*/
 
             // Items with only 'n' providers should just use 'crs' for simplicity
             // TODO: perhaps the specific 'Providers' vs. 'Creatures' wording in tooltips is intended specifically, maybe revise providers handling eventually
@@ -4529,21 +4552,6 @@ namespace ATT
                 {
                     var level = Convert.ToInt64(lvlRef);
                     if (level <= NestedMinLvl) data.Remove("lvl");
-                }
-            }
-        }
-
-        /// <summary>
-        /// Checks the data for any required data relationships based on existing fields
-        /// </summary>
-        private static void CheckRequiredDataRelationships(IDictionary<string, object> data)
-        {
-            // Criteria groups need to know their associated Achievement
-            if (data.TryGetValue("criteriaID", out decimal criteriaID))
-            {
-                if (!data.ContainsKey("achID"))
-                {
-                    LogError($"'criteriaID' {criteriaID} missing 'achID' [{CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}]", data);
                 }
             }
         }
