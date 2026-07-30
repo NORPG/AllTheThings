@@ -164,6 +164,7 @@ do
 		if field then return _t[field]; end
 	end
 	app.CreateFollower = app.CreateClass(CLASSNAME, KEY, {
+		CACHE = CACHE,
 		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);
 		end,
@@ -214,6 +215,13 @@ do
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	end);
+	app.AddEventRegistration("GARRISON_FOLLOWER_ADDED", function(guid)
+		local info = C_Garrison_GetFollowerInfo(guid)
+		local id = info and info.garrFollowerID
+		if not id then return end
+
+		app.SetThingCollected("followerID", id, nil, true)
 	end);
 	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	app.AddEventHandler("OnLoad", function()
