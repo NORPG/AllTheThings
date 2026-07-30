@@ -214,6 +214,18 @@ end, {
 	"Usage : /att debug-events",
 	"Allows toggling the debug printing and monitoring of all game events that ATT handles.",
 })
+-- Add a Command that lets players toggle how ATT loads to potentially facilitate script timeout restrictions
+app.ChatCommands.Add("use-progressive-loading", function(args)
+	local newLoadStyle = AllTheThingsSavedVariables.LoadStyle == 1 and 0 or 1
+	AllTheThingsSavedVariables.LoadStyle = newLoadStyle
+	-- ATT Loading Style : [Progressive/Instant]
+	app.print(newLoadStyle == 1 and (UNIT_NAMEPLATES_THREAT_DISPLAY_PROGRESSIVE or "Progressive") or (SPELL_CAST_TIME_INSTANT or "Instant"),(LFG_LIST_LOADING or "Loading..."))
+	app.print("/rl ->",RELOADUI)
+	return true
+end, {
+	"Usage : /att use-progressive-loading",
+	"Allows changing some load behavior of ATT to spread out the load sequence across many more game frames, potentially allowing successful loading in some game environments or locations where tighter addon restrictions may temporarily exist.",
+})
 local ForceDebugPrint
 app.AddEventHandler("OnToggle-DebugEvents", function()
 	app.DebuggingEvents = not app.DebuggingEvents
