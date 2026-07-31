@@ -104,8 +104,6 @@ root(ROOTS.Unsorted, {
 			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
-			i(271423),	-- Diver's Key
-			i(271424),	-- Diver's Key Fragment
 			i(271434),	-- Venom Rite Mantle
 			i(271435),	-- Slippers of the Hissing Cult
 			i(271436),	-- Slitherscale Girdle
@@ -309,7 +307,6 @@ root(ROOTS.Unsorted, {
 			i(275048),	-- Decrepit Key
 			i(275053),	-- Kobold Candle Collection
 			i(275054),	-- Wooden Toy Sword
-			i(275060),	-- Forgotten Relic
 			i(275062),	-- Illusion: Venomcoil
 			i(275063),	-- [PH] Taretha Axe - Black
 			i(275064),	-- [PH] Taretha Axe - Blue
@@ -419,7 +416,6 @@ root(ROOTS.Unsorted, {
 			i(276167),	-- Ori'kassi's Lance
 			i(276168),	-- Fang of Ss'akrithos
 			i(276169),	-- Malformed Barrier
-			i(276171),	-- Ophidian Circle
 			i(276172),	-- Headdress of Mutagenesis
 			i(276173),	-- Clutchguard Sandals
 			i(276174),	-- Leviathan's Oozing Scalemail
@@ -726,8 +722,6 @@ root(ROOTS.Unsorted, {
 			i(279018),	-- [ph] SpiceWitch Head - Blue
 			i(279019),	-- [ph] SpiceWitch Shoulders - Blue
 			i(279022),	-- [ph] Ensemble: SpiceWitch Blue Attire
-			i(279052),	-- Ancient Amani Mask
-			i(279053),	-- Ancient Amani Mask
 			i(279056),	-- [ph] SpiceWitch Chest - Green
 			i(279057),	-- [ph] SpiceWitch Feet - Green
 			i(279058),	-- [ph] SpiceWitch Waist - Green
@@ -921,7 +915,6 @@ root(ROOTS.Unsorted, {
 			i(280047),	-- Feathered Bell
 			i(280089),	-- Mask Fragment
 			i(280090),	-- Mask Fragment
-			i(280091),	-- Latent Purifier
 			i(280097),	-- Venomous Aspirant's Insignia of Alacrity
 			i(280118),	-- Venomous Aspirant's Medallion
 			i(280123),	-- Sharp Axe Holster
