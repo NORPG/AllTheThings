@@ -19,16 +19,6 @@ headerWeaponsAndArmor.OnRefresh = function(self)
 	end
 end
 
-local textWeaponsAndArmorExplain = child:CreateTextLabel(L.ITEM_EXPLAIN_LABEL)
-textWeaponsAndArmorExplain:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 0, -4)
-textWeaponsAndArmorExplain.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
-	end
-end
-
 -- Stuff to automatically generate the armor & weapon checkboxes
 local last = headerWeaponsAndArmor
 local itemFilterNames = L.FILTER_ID_TYPES
@@ -58,7 +48,7 @@ for i,filterID in ipairs({
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 21 then
-		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", -2, -6)
+		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", -2, -6)
 	-- Spacing
 	elseif filterID == 20 then
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -2)
@@ -136,7 +126,7 @@ for i,filterID in ipairs({
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 4 then
-		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", 320, -6)
+		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 320, -6)
 	-- Spacing
 	elseif filterID == 2 or filterID == 11 or filterID == 51 then
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
