@@ -251,7 +251,7 @@ local function SendMessageChunks(method, target, detail, msg, chunksize)
 		-- When the message exceeds the length, we have to cut it into sections and deliver it as a set of chunks.
 		--print("Encoded Message exceeded maximum (" .. chunksize .. "): ", encodedLength);
 		local chunks = {};
-		chunksize = chunksize - 32;
+		chunksize = chunksize - 32;	-- extra chunk information in each chunk message takes some space
 		for i=1,encodedLength,chunksize do
 			local chunk;
 			local j = i + chunksize - 1;
@@ -269,14 +269,14 @@ local function SendMessageChunks(method, target, detail, msg, chunksize)
 	end
 end
 local function _SendAddonMessage(target, msg)
-	DebugPrint("SEND.MSG",target,msg:sub(1, 500))
+	DebugPrint("SEND.MSG",target,msg:len(),msg:sub(1, 500))
 	C_ChatInfo.SendAddonMessage(AddonMessagePrefix, msg, "WHISPER", target);
 end
 local function SendAddonMessage(target, detail, msg)
 	SendMessageChunks(_SendAddonMessage, target, detail, msg, 255);
 end
 local function _SendBattleNetMessage(target, msg)
-	DebugPrint("SEND.NET",target,msg:sub(1, 500))
+	DebugPrint("SEND.NET",target,msg:len(),msg:sub(1, 500))
 	BNSendGameData(target, AddonMessagePrefix, msg);
 end
 local function SendBattleNetMessage(target, detail, msg)
@@ -697,7 +697,6 @@ local b64index = {}
 for i = 1, #b64chars do
     b64index[b64chars:sub(i,i)] = i - 1
 end
-
 local function b64encode(bytes)
     local t = {}
     local n = #bytes
@@ -708,27 +707,33 @@ local function b64encode(bytes)
         local b2 = bytes[i];     i = i + 1
         local b3 = bytes[i];     i = i + 1
 
+        -- Compute 6-bit groups
         local n1 = bit.rshift(b1, 2)
         local n2 = bit.bor(bit.lshift(bit.band(b1, 3), 4), bit.rshift(b2 or 0, 4))
         local n3 = bit.bor(bit.lshift(bit.band(b2 or 0, 15), 2), bit.rshift(b3 or 0, 6))
         local n4 = bit.band(b3 or 0, 63)
 
+        -- Always emit 4 chars, but replace with '=' when needed
         t[#t+1] = b64chars:sub(n1+1, n1+1)
         t[#t+1] = b64chars:sub(n2+1, n2+1)
 
-        if b2 then
+        if b2 == nil then
+            -- Only 1 byte input → 2 chars + '=='
+            t[#t+1] = "="
+            t[#t+1] = "="
+        elseif b3 == nil then
+            -- Only 2 bytes input → 3 chars + '='
             t[#t+1] = b64chars:sub(n3+1, n3+1)
-        end
-        if b3 then
+            t[#t+1] = "="
+        else
+            -- Full 3 bytes → 4 chars
+            t[#t+1] = b64chars:sub(n3+1, n3+1)
             t[#t+1] = b64chars:sub(n4+1, n4+1)
         end
     end
 
     return table.concat(t)
 end
-
--- Web-safe Base64 decode
-
 local function b64decode(str)
     local bytes = {}
     local n = #str
@@ -737,25 +742,41 @@ local function b64decode(str)
     while i <= n do
         local c1 = b64index[str:sub(i,i)]; i = i + 1
         local c2 = b64index[str:sub(i,i)]; i = i + 1
-        local c3 = b64index[str:sub(i,i)]; i = i + 1
-        local c4 = b64index[str:sub(i,i)]; i = i + 1
 
+        local c3char = str:sub(i,i)
+        local c4char = str:sub(i+1,i+1)
+
+        local c3 = b64index[c3char]
+        local c4 = b64index[c4char]
+
+        i = i + 2
+
+        -- byte 1 (always present)
         local b1 = bit.bor(bit.lshift(c1, 2), bit.rshift(c2, 4))
         bytes[#bytes+1] = bit.band(b1, 0xFF)
 
-        if c3 then
+        -- byte 2 (only if c3 is not padding)
+        if c3char ~= "=" then
             local b2 = bit.bor(bit.lshift(bit.band(c2, 15), 4), bit.rshift(c3, 2))
             bytes[#bytes+1] = bit.band(b2, 0xFF)
+        else
+            -- c3 is padding → stop decoding this quartet
+            break
         end
 
-        if c4 then
+        -- byte 3 (only if c4 is not padding)
+        if c4char ~= "=" then
             local b3 = bit.bor(bit.lshift(bit.band(c3, 3), 6), c4)
             bytes[#bytes+1] = bit.band(b3, 0xFF)
+        else
+            -- c4 is padding → stop decoding this quartet
+            break
         end
     end
 
     return bytes
 end
+
 local function rleEncodeBytes(bytes)
     local out = {}
     local n = #bytes
@@ -1622,8 +1643,7 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 			character[fieldName] = data;
 			-- app.PrintDebug("deserialized",fieldName,"@",fieldDataString:len(),"into",app.CountTable(data),"keys")
 		elseif not ok then
-			app.report("Failed to deserialize",fieldName,fieldDataString)
-			app.print(data)
+			app.report("Failed to deserialize",fieldName,fieldDataString,data)
 		end
 	end
 
