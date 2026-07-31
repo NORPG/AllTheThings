@@ -571,7 +571,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["lockCriteria"] = { 1, "questID", 51722 },	-- This HQT is likely the lock criterium according to Jewel
 					}),
 					q(51918, {	-- Uniting Kul Tiras - completed once per account
-						["sourceQuests"] = { 52654 },	-- The War Campaign
+						["sourceQuests"] = {
+							52654,	-- The War Campaign
+							53063,	-- A Mission of Unity
+						},
 						["altQuests"] = { 52450 },	-- Uniting Kul Tiras
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, BORALUS },

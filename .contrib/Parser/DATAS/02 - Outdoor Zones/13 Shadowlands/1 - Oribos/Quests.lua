@@ -162,12 +162,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["description"] = "Provided automatically when zoning or changing floors in Oribos.",
 					["sourceQuests"] = {
 						60501,	-- Redemption for the Redeemer
-						60146,	-- Torment Chamber: Thrall
-						-- 63645,	-- The Dawnkeep Prisoner	-- TODO: confirm
+						61730,	-- The Captive King
+						-- 63645,	-- The Dawnkeep Prisoner	-- TODO: confirm in SL Classic kek
 					},
-					["altQuests"] = { 60146 },	-- Torment Chamber: Thrall
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_2_5 },
 					-- This quest gets skipped over during marking all the quest as done when using the skip, and it also doesn't pop up for people who after the skip implementation try to do the chain manually.
 					-- In short, things are broken, and until Blizzard does something about it (please submit a bug report to them if this affects you), marking this as breadcrumb and not obtainable in party sync is the best way to handle this in ATT.
 				}),
