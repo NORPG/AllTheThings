@@ -1257,30 +1257,15 @@ root(ROOTS.Unsorted, {
 				i(271583),	-- Duskwatch Outlaw's Cloak
 				i(271584),	-- Duskwatch Outlaw's Gloves
 				i(271585),	-- Ensemble: Duskwatch Outlaw
-				i(271682),	-- Midnight Outlaw's Hat
-				i(271683),	-- Midnight Outlaw's Bandana
-				i(271684),	-- Badlands Lawbringer's Hat
-				i(271685),	-- Badlands Lawbringer's Bandana
-				i(271686),	-- Righteous Lawbringer's Hat
-				i(271687),	-- Righteous Lawbringer's Bandana
 				i(271688),	-- Bloodwatch Outlaw's Hat
 				i(271689),	-- Bloodwatch Outlaw's Bandana
 				i(271690),	-- Duskwatch Outlaw's Hat
 				i(271691),	-- Duskwatch Outlaw's Bandana
 				i(273132),	-- Stylish Violet Top Hat
 				i(273133),	-- Stylish Crimson Top Hat
-				i(273858),	-- Badlands Lawbringer's Treads
-				i(273859),	-- Badlands Lawbringer's Britches
-				i(273860),	-- Badlands Lawbringer's Undercoat
 				i(273861),	-- Bloodwatch Outlaw's Britches
 				i(273862),	-- Bloodwatch Outlaw's Treads
 				i(273863),	-- Bloodwatch Outlaw's Undercoat
-				i(273864),	-- Righteous Lawbringer's Britches
-				i(273865),	-- Righteous Lawbringer's Treads
-				i(273866),	-- Righteous Lawbringer's Tunic
-				i(273867),	-- Midnight Outlaw's Britches
-				i(273868),	-- Midnight Badland Brigands Treads
-				i(273869),	-- Midnight Outlaw's Undercoat
 				i(273870),	-- Duskwatch Outlaw's Britches
 				i(273871),	-- Duskwatch Outlaw's Treads
 				i(273872),	-- Duskwatch Outlaw's Undercoat
@@ -1360,7 +1345,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				-- Trading Post
-				i(274681),	-- Badlands Buzzard
 				i(273650),	-- Green Rocket Mount [PH]
 				i(273652),	-- Pink Rocket Mount [PH]
 				-- NYI?

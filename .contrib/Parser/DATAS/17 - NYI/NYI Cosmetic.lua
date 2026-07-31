@@ -517,10 +517,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(230082),	-- Prowler's Lively Mask
 				i(230041),	-- Prowler's Lively Shoulder Cape
 
-				------ Prowler's Midnight Set ------
-				i(230054),	-- Prowler's Midnight Cowl
-				i(230074),	-- Prowler's Midnight Mask
-
 				------ Prowler's Plum Set ------
 				i(230178),	-- Ensemble: Prowler's Plum Headgear
 				q(85137),	-- Ensemble: Prowler's Plum Headgear

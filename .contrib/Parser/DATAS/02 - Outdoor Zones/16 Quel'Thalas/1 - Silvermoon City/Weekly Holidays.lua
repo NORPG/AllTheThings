@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}, {
-				--q(XXX),	-- A Burning Path Through Time
+				q(93608, { ["timeline"] = { ADDED_12_0_7 } }),	-- A Burning Path Through Time
 				q(93614, { ["timeline"] = { ADDED_12_0_7 } }),	-- A Fel Path Through Time
 				--q(XXX),	-- A Frozen Path Through Time
 				q(93613, { ["timeline"] = { ADDED_12_0_5 } }),	-- A Savage Path Through Time
