@@ -68400,7 +68400,7 @@ s(45273,87605,{b=1,f=5,lvl=30}),
 s(45279,87611,{b=1,f=7,lvl=30}),
 i(87217,{b=1})}}),
 n(50787,{coords={
-[418]={{58.7,43.8}}},g={
+[418]={{56.1,47}}},g={
 s(47143,90723,{f=6,lvl=30}),
 crit(21092,{achID=7439,id=45}),
 crit(65593,{achID=19995,awp=100207,e=437,id=1,rwp=110002,u=2})}}),
@@ -104617,7 +104617,7 @@ o(291264,{coords={
 o(291265,{coords={
 [942]={{26.2,61.9},{31.4,40.6},{32.1,51.6}}},isDaily=1,questID=51944,type="AsSubGenericObject"}),
 o(291266,{coords={
-[942]={{37.9,44.1}}},isDaily=1,questID=51945,type="AsSubGenericObject"}),
+[942]={{37.9,44.1},{39,44.7}}},isDaily=1,questID=51945,type="AsSubGenericObject"}),
 o(291267,{coords={
 [942]={{57.6,50.9},{60.9,51.2}}},isDaily=1,questID=51946,type="AsSubGenericObject"}),
 o(273900,{coords={
@@ -110611,7 +110611,7 @@ o(280619,{coords={
 [942]={{42.8,47.2}}},questID=50089,g={
 crit(41062,{achID=12853,id=2})}}),
 o(294311,{coords={
-[942]={{77.8,42.1},{78.7,57.4},{79.1,43.3},{79.6,55.2},{81.7,50.1},{82.1,44},{82.2,44},{83.1,44.1},{84.2,54.5},{84.7,53.3},{85.4,50.4},{85.5,50.4},{85.6,53.3},{86,52.3}}},isDaily=1,questID=52989,sharedDescription="Items which currently allow unlocking an Appearance Source when vendored, though are not available to transmog.",g={
+[942]={{77.8,42.1},{78.7,57.4},{79.1,43.3},{79.6,55.2},{80,55.5},{81.7,50.1},{82.1,44},{82.2,44},{83.1,44.1},{84.2,54.5},{84.7,53.3},{85.4,50.4},{85.5,50.4},{85.6,53.3},{86,52.3}}},isDaily=1,questID=52989,sharedDescription="Items which currently allow unlocking an Appearance Source when vendored, though are not available to transmog.",g={
 s(98599,162661),
 s(98605,162671),
 s(98601,162663),
@@ -122941,7 +122941,7 @@ i(184242)}}),
 q(60146,{coords={
 [1670]={{39.9,68.5}}},lvl=60,qgs={164079},sourceQuests={62969},g={
 i(184551)}}),
-q(61557,{altQuests={60146},description="Provided automatically when zoning or changing floors in Oribos.",DisablePartySync=1,isBreadcrumb=1,lvl=60,sourceQuests={60146,60501}}),
+q(61557,{description="Provided automatically when zoning or changing floors in Oribos.",DisablePartySync=1,isBreadcrumb=1,lvl=60,rwp=90205,sourceQuests={60501,61730},u=2}),
 q(62836,{coords={
 [1670]={{39.9,68.5}}},lvl=60,qgs={164079},sourceQuests={60146},g={
 i(184276),
@@ -165903,6 +165903,10 @@ n(243160,{coords={
 i(188152,{spellID=113902})}})}),
 h(-60,{
 h(-45,{
+q(93608,{awp=120007,coords={
+[2393]={{48.9,64.6}}},isWeekly=1,lvl=90,qgs={256212},g={
+i(250116,{awp=120001,b=1,lvl=90,rwp=120100,u=2}),
+i(274714,{awp=120100,rwp=120200})}}),
 q(93614,{awp=120007,coords={
 [2393]={{48.9,64.6}}},isWeekly=1,lvl=90,qgs={256212},g={
 i(250116,{awp=120001,b=1,lvl=90,rwp=120100,u=2}),

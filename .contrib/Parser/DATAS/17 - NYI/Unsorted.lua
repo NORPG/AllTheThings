@@ -25,13 +25,9 @@ root(ROOTS.Unsorted, {
 			i(249923),	-- Sin'dorei Golden Welcome
 			i(251630),	-- Recipe: Amani Cornucopia
 			i(253397),	-- Revered Deepstone Table
-			i(253449),	-- Bound Silvermoon Drapes
 			i(253481),	-- Masterful Sin'dorei Gravestone
 			i(254561),	-- Ogre Champion's Prized Skull
 			i(255702),	-- [PH] Snake Corpse
-			i(258027),	-- Vaunted Preyhunter's Shoulder-Spikes
-			i(258029),	-- Vaunted Preyhunter's Plumed Helm
-			i(258031),	-- Vaunted Preyhunter's Knapsack
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
@@ -207,7 +203,6 @@ root(ROOTS.Unsorted, {
 			i(273057),	-- Odious Alloy
 			i(273059),	-- Hunter's Ritual Stone
 			i(273060),	-- Hunter's Ritual Stone
-			i(273061),	-- Plans: Hunter's Ritual Stone
 			i(273062),	-- Coiled Snake-Eye
 			i(273063),	-- Coiled Snake-Eye
 			i(273064),	-- Schematic: Coiled Snake-Eye
@@ -342,7 +337,6 @@ root(ROOTS.Unsorted, {
 			i(275269),	-- Hearty Feast of Knowledge
 			i(275273),	-- Recipe: Sweet-And-Sour Skewer
 			i(275274),	-- Alchemy
-			i(275275),	-- Recipe: Concocted Poisonous Residue
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
 			i(275280),	-- Gamey Flank
@@ -357,7 +351,6 @@ root(ROOTS.Unsorted, {
 			i(275305),	-- Amani Forgemaster's Glaive
 			i(275306),	-- Plans: Amani Forgemaster's Glaive
 			i(275308),	-- Plans: Amani Forgemaster's Rack
-			i(275312),	-- Formula: Furious Tiki Mask
 			i(275314),	-- Formula: Enchanted Eversong Trout
 			i(275318),	-- Schematic: Proudmoore Ship-in-a-Bottle
 			i(275320),	-- Schematic: Aetherlume Field Lamp
@@ -368,65 +361,18 @@ root(ROOTS.Unsorted, {
 			i(275334),	-- Pattern: Stretched Snakeskin Rack
 			i(275338),	-- Pattern: Rolled Bed Linens
 			i(275342),	-- Pattern: Tortollan Slingsack
-			i(275488),	-- Preyhunter's Polished Brigandine
-			i(275489),	-- Preyhunter's Polished Greatbelt
-			i(275490),	-- Preyhunter's Polished Greatboots
-			i(275491),	-- Preyhunter's Polished Handguards
-			i(275492),	-- Preyhunter's Polished Helmet
-			i(275493),	-- Preyhunter's Polished Pauldrons
-			i(275494),	-- Preyhunter's Polished Tassets
-			i(275495),	-- Preyhunter's Polished Vambraces
-			i(275496),	-- Preyhunter's Refined Cord
-			i(275497),	-- Preyhunter's Refined Crown
-			i(275498),	-- Preyhunter's Refined Cuffs
-			i(275499),	-- Preyhunter's Refined Epaulet
-			i(275500),	-- Preyhunter's Refined Gloves
-			i(275501),	-- Preyhunter's Refined Slippers
-			i(275502),	-- Preyhunter's Refined Tights
-			i(275503),	-- Preyhunter's Refined Vestments
-			i(275504),	-- Preyhunter's Rugged Bindings
-			i(275505),	-- Preyhunter's Rugged Clasp
-			i(275506),	-- Preyhunter's Rugged Grips
-			i(275507),	-- Preyhunter's Rugged Haubergeon
-			i(275508),	-- Preyhunter's Rugged Legguards
-			i(275509),	-- Preyhunter's Rugged Plume
-			i(275510),	-- Preyhunter's Rugged Sabatons
-			i(275511),	-- Preyhunter's Rugged Shoulderguards
-			i(275512),	-- Preyhunter's Sleek Armlets
-			i(275513),	-- Preyhunter's Sleek Belt
-			i(275514),	-- Preyhunter's Sleek Boots
-			i(275515),	-- Preyhunter's Sleek Gauntlets
-			i(275516),	-- Preyhunter's Sleek Jerkin
-			i(275517),	-- Preyhunter's Sleek Mask
-			i(275518),	-- Preyhunter's Sleek Shoulderpads
-			i(275519),	-- Preyhunter's Sleek Trousers
-			i(275522),	-- Preyhunter's Refined Shawl
-			i(275523),	-- Preyhunter's Sleek Capelet
-			i(275524),	-- Preyhunter's Rugged Stole
-			i(275525),	-- Preyhunter's Polished Cloak
 			i(275526),	-- Preyhunter's Band
 			i(275527),	-- Preyhunter's Signet
 			i(275528),	-- Preyhunter's Ring
 			i(275529),	-- Preyhunter's Circle
 			i(275530),	-- Preyhunter's Clasp
 			i(275531),	-- Preyhunter's Choker
-			i(275532),	-- Preyhunter's Hatchet
-			i(275533),	-- Preyhunter's Kukri
 			i(275534),	-- Preyhunter's Shiv
 			i(275535),	-- Preyhunter's Cudgel
 			i(275536),	-- Preyseeker's Scepter
-			i(275537),	-- Preyhunter's Hammer
 			i(275538),	-- Preyhunter's Scimitar
-			i(275539),	-- Preyhunter's Ritual Blade
 			i(275540),	-- Preyhunter's Longsword
-			i(275541),	-- Preyhunter's Warglaive
-			i(275542),	-- Preyhunter's Longbow
-			i(275543),	-- Preyhunter's Spear
-			i(275544),	-- Preyhunter's Staff
 			i(275545),	-- Preyhunter's Spire
-			i(275546),	-- Preyhunter's Falchion
-			i(275547),	-- Preyhunter's Lantern
-			i(275548),	-- Preyhunter's Tower Shield
 			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
 			i(275571),	-- [PH] Broomstick Spice - Grey
@@ -436,25 +382,16 @@ root(ROOTS.Unsorted, {
 			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
 			i(275659),	-- Hexflame Reaver
-			i(275660),	-- Preyhunter's Courser
 			i(275676),	-- R0CKY-To-Go
 			i(275683),	-- G-00
 			i(275684),	-- Schematic: DU5TY, Lazy Looter
 			i(275695),	-- Design: Piercing Amani Lapis
 			i(275697),	-- Design: Roaring Amani Garnet
-			i(275702),	-- Preyhunter's Prismguard
 			i(275703),	-- ArcaneGolem2 Pet - Red
-			i(275704),	-- Preyhunter's Riftbreaker
-			i(275726),	-- Preyhunter's Champion Chest
-			i(275728),	-- Preyhunter's Champion Sack
-			i(275822),	-- Preyhunter's Veteran Chest
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(275855),	-- Zul'Aman Swamp Palm Sprout
 			i(275899),	-- Venom-Soaked Satchel
 			i(275911),	-- Venom-Covered Chest
-			i(275917),	-- Preyhunter's Veteran Sack
-			i(275918),	-- Preyhunter's Adventurer Chest
-			i(275919),	-- Preyhunter's Adventurer Sack
 			i(276033),	-- Loa Watcher's Pendant
 			i(276034),	-- Entangling Brood Ring
 			i(276035),	-- Soulcoiler's Signet
@@ -472,7 +409,6 @@ root(ROOTS.Unsorted, {
 			i(276060),	-- Hexxer's Blastin' Rod
 			i(276061),	-- Witch Doctor's Bloodletter
 			i(276062),	-- Hydra Neckchopper
-			i(276104),	-- Aspiring Preyhunter's Chest
 			i(276117),	-- Clouded Blood-Pearl
 			i(276124),	-- Ancient Knucklebone
 			i(276126),	-- Serpent's Feather
@@ -494,10 +430,8 @@ root(ROOTS.Unsorted, {
 			i(276205),	-- Legitimate Shipment of Swivel Guns
 			i(276206),	-- Leagally Sourced Cannon Shot
 			i(276207),	-- Preyhunter's Masquerade
-			i(276229),	-- Preyhunter's Trophy Stand
 			i(276230),	-- Pepe
 			i(276234),	-- Vibrant Venomfang
-			i(276258),	-- Companion Command Crystal
 			i(276297),	-- Rustbolt Jetpack
 			i(276312),	-- Griftah's Torch of Rotation
 			i(276405),	-- [PH] Rainbow Axe - 1h - Blue
@@ -627,10 +561,6 @@ root(ROOTS.Unsorted, {
 			i(278095),	-- Liver Pulp
 			i(278099),	-- Malt
 			i(278100),	-- Grain
-			i(278101),	-- Ensemble: Preyhunter's Polished Armor
-			i(278103),	-- Ensemble: Preyhunter's Rugged Armor
-			i(278104),	-- Ensemble: Preyhunter's Sleek Armor
-			i(278105),	-- Ensemble: Preyhunter's Refined Armor
 			i(278106),	-- DNT Coiled Color Changer
 			i(278110),	-- DNT Ula'tek Pole Dummy A
 			i(278111),	-- DNT Ula'tek Pole Dummy B
@@ -638,18 +568,9 @@ root(ROOTS.Unsorted, {
 			i(278113),	-- DNT Ula'tek Pole Dummy D
 			i(278114),	-- DNT Ula'tek Pole Dummy E
 			i(278115),	-- DNT Ula'tek Pole Dummy F
-			i(278123),	-- Sturdy Silvermoon Crate Lid
-			i(278126),	-- Mysterious Sin'dorei Candlestick
-			i(278130),	-- Gilded Silvermoon Compass
-			i(278134),	-- Sturdy Silvermoon Crate
-			i(278145),	-- Stonecarved Sin'dorei Jar
-			i(278148),	-- Adorned Sin'dorei Satchel
-			i(278151),	-- Hanging Blood Knights Shield
 			i(278154),	-- Hooked Net Trap
 			i(278193),	-- Aqiri Mandible
-			i(278241),	-- Arsenal: Preyseeker's Lost Armaments
 			i(278245),	-- Royal Attendant's Coffin
-			i(278261),	-- Arsenal: Preyhunter's Lost Armaments
 			i(278276),	-- Spoils of Azta'rec
 			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
 			i(278284),	-- Nebulous Voidcache: Ula'tek
@@ -667,12 +588,8 @@ root(ROOTS.Unsorted, {
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
-			i(278369),	-- Preyhunter's Scaled Effigy
-			i(278372),	-- Preyhunter's Fanged Effigy
 			i(278374),	-- Preyhunter's Fanged Bust
-			i(278376),	-- Preyhunter's Terror Effigy
 			i(278378),	-- Preyhunter's Scaled Bust
-			i(278380),	-- Preyhunter's Terror Bust
 			i(278472),	-- Noxious Corrosive Coin
 			i(278517),	-- Lost Med'jai Amulet
 			i(278523),	-- Feather of Tok'jara
@@ -840,7 +757,6 @@ root(ROOTS.Unsorted, {
 			i(279089),	-- [ph] SpiceWitch Shoulders - Hallow
 			i(279090),	-- [ph] Ensemble: SpiceWitch Hallow Attire
 			i(279091),	-- Oozing Goby
-			i(279092),	-- Anguish-Touched Pouch
 			i(279093),	-- Giggling Skull
 			i(279094),	-- Grotesque Sturgeon
 			i(279095),	-- [ph] SpiceWitch Chest - Orange

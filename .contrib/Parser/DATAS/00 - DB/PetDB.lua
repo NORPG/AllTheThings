@@ -4652,6 +4652,8 @@ i(270253, 5030);	-- Jaundiced Slitherer
 i(279921, 5131);	-- Ki'clak
 i(270252, 5032);	-- Nightfur Kapara
 i(270214, 5028);	-- Poisoned Parasite
+i(275702, 5076);	-- Preyhunter's Prismguard
+i(275704, 5078);	-- Preyhunter's Riftbreaker
 i(270251, 5033);	-- Sleek Snakebiter
 i(276248, 5093);	-- Snek'zali
 i(270250, 5034);	-- Steady Croakfrog
@@ -4676,8 +4678,6 @@ i(270191, 5026);	-- Lil'Kruul
 i(277321, 5118);	-- Mewkahen
 i(278572, 5126);	-- Pale Hexscale
 i(280178, 5133);	-- Poison Dart Frog
-i(275702, 5076);	-- Preyhunter's Prismguard
-i(275704, 5078);	-- Preyhunter's Riftbreaker
 i(280305, 5125);	-- Soulcoil Remnant
 i(279197, 5129);	-- Slitherfang
 i(276234, 5092);	-- Vibrant Venomfang
