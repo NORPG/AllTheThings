@@ -150,6 +150,7 @@ root(ROOTS.Zones, {
 					["questID"] = 51945,
 					["coords"] = {
 						{ 37.9, 44.1, STORMSONG_VALLEY },
+						{ 39.0, 44.7, STORMSONG_VALLEY },
 					},
 				}),
 				o(291267, {	-- Small Treasure Chest
