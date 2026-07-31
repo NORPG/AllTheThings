@@ -41,7 +41,7 @@ local ItemFilterOnRefresh = function(self)
 	else
 		self.Text:SetTextColor(1, 1, 1);
 	end
-	if app.MODE_DEBUG_OR_ACCOUNT then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -159,7 +159,7 @@ local buttonClassDefaults = child:CreateButton(
 buttonClassDefaults:SetPoint("LEFT", headerWeaponsAndArmor, 0, 0)
 buttonClassDefaults:SetPoint("BOTTOM", child, "BOTTOM", 0, 10)
 buttonClassDefaults.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
+	if app.MODE_DEBUG then
 		self:Disable()
 	else
 		self:Enable()
@@ -178,7 +178,7 @@ local buttonAll = child:CreateButton(
 })
 buttonAll:AlignAfter(buttonClassDefaults, 8)
 buttonAll.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
+	if app.MODE_DEBUG then
 		self:Disable()
 	else
 		self:Enable()
@@ -197,7 +197,7 @@ local buttonNone = child:CreateButton(
 })
 buttonNone:AlignAfter(buttonAll, 8)
 buttonNone.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
+	if app.MODE_DEBUG then
 		self:Disable()
 	else
 		self:Enable()

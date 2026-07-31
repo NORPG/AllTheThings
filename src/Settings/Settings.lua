@@ -1770,7 +1770,7 @@ settings.UpdateMode = function(self, doRefresh)
 
 		if self:Get("AccountMode") then
 			app.MODE_ACCOUNT = true;
-			filterSet.FilterID()
+			filterSet.FilterID(true)
 			filterSet.Class()
 			filterSet.RequireSkill()
 			filterSet.MinReputation()
