@@ -219,7 +219,7 @@ app.ChatCommands.Add("use-progressive-loading", function(args)
 	local newLoadStyle = AllTheThingsSavedVariables.LoadStyle == 1 and 0 or 1
 	AllTheThingsSavedVariables.LoadStyle = newLoadStyle
 	-- ATT Loading Style : [Progressive/Instant]
-	app.print(newLoadStyle == 1 and (UNIT_NAMEPLATES_THREAT_DISPLAY_PROGRESSIVE or "Progressive") or (SPELL_CAST_TIME_INSTANT or "Instant"),(LFG_LIST_LOADING or "Loading..."))
+	app.print(newLoadStyle == 1 and (UNIT_NAMEPLATES_THREAT_DISPLAY_PROGRESSIVE or "Progressive") or (SPELL_CAST_TIME_INSTANT_NO_MANA or "Instant"),(LFG_LIST_LOADING or "Loading..."))
 	app.print("/rl ->",RELOADUI)
 	return true
 end, {
