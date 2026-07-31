@@ -280,7 +280,7 @@ local function _SendBattleNetMessage(target, msg)
 	BNSendGameData(target, AddonMessagePrefix, msg);
 end
 local function SendBattleNetMessage(target, detail, msg)
-	SendMessageChunks(_SendBattleNetMessage, target, detail, msg, 4086);
+	SendMessageChunks(_SendBattleNetMessage, target, detail, msg, 4050);	-- wiki reports 4078 is max
 end
 local function SplitString(separator, text)
 	local sep, res = separator or '%s', {}
