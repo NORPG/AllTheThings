@@ -1477,6 +1477,7 @@ MobileDB.GameObject = {
 	[237729] = true,	-- Pillar of Life
 	[237730] = true,	-- Pillar of Rejuvenation
 	[238979] = true,	-- Tidestone Vault Door
+	[239067] = true,	-- War Mill Work Order
 	[239452] = true,	-- Demon Ward (q:37658)
 	[239692] = true,	-- Arcane-infused Egg (q:37727)
 	[239775] = true,	-- Coral Trident Rack
