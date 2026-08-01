@@ -129988,8 +129988,11 @@ s(112979,180394,{b=1,f=4,lvl=48}),
 i(180386,{b=1}),
 s(112969,180335,{customCollect={"SL_COV_VEN"},f=28,lvl=50}),
 s(112971,180337,{customCollect={"SL_COV_VEN"},f=21,lvl=50})}}),
+o(353210,{coords={
+[1525]={{50.3,49}}},g={
+i(180173,{b=1,spellID=107829})}}),
 o(351543,{coords={
-[1525]={{50.2,49}}},crs={169865},description="Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r. Clicking the chain will pull you up to the tiny alcove above the treasure. Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",isDaily=1,questID=60200,g={
+[1525]={{50.2,49}}},cost={{"i",180173,1}},crs={169865},description="Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r. Clicking the chain will pull you up to the tiny alcove above the treasure. Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",isDaily=1,questID=60200,g={
 i(180379,{b=1,requireSkill=197}),
 s(114311,182723,{b=1,f=6,lvl=48}),
 s(112985,180401,{b=1,f=25,lvl=48})}}),
