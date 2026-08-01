@@ -204,7 +204,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
 			}),
 			n(FANTA, sharedDataSelf({
-				["timeline"] = { "added 12.0.1.66709", "removed 12.0.7.99999" },
+				["timeline"] = { "added 12.0.1.66709", "removed 12.0.7.68887" },
 			}, {
 				i(262438),	-- Fantastical Goblin Waveshredder (MOUNT!)
 				i(264278),	-- Sturdy Portable Ice Chest (DECOR!)
