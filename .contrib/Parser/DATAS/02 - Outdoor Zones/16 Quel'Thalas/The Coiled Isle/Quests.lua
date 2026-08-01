@@ -1026,16 +1026,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			-- Curse Surges
-			-- Exo Note: It may require a separate file. Depends on the content. From what I can see, they work in the same way as Void Assaults
 			q(96995, {	-- Turn Back the Surge
 				["qg"] = 267635,	-- Talon Commander Zela
 				["coord"] = { 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["isWeekly"] = true,	-- Assumption
+				["groups"] = { i(275911) },	-- Venom-Covered Chest
 			}),
-			i(275899),	-- Venom-Soaked Satchel (Rewarded for killing the "boss" of the Curse Surge)
-			hqt(96935, {	-- Curse Surge
-				-- Exo Note: Two events were active at the time, Ss'akrithos and Leviathan, Triggered on Ss'akrithos' death.
-				["isWeekly"] = true,	-- Assumption, Could be daily. Curse Surge events between 30 minutes and 1 hour
+		}),
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+			n(QUESTS, {
+				hqt(96935, { ["isWeekly"] = true }),	-- Curse Surge
 			}),
 		}),
 	}),

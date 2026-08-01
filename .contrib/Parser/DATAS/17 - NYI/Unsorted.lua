@@ -262,7 +262,6 @@ root(ROOTS.Unsorted, {
 			i(274763),	-- Fleeting Liquid Luster
 			i(274764),	-- Fleeting Liquid Luster
 			i(274767),	-- Seaside Lounge Chair
-			i(274777),	-- Neutralized Venom Clot
 			i(274784),	-- Seaside Tiki Frondtree
 			i(274786),	-- Seaside Waterfall Basin
 			i(274788),	-- Seaside Depths Porthole
@@ -372,7 +371,6 @@ root(ROOTS.Unsorted, {
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(275855),	-- Zul'Aman Swamp Palm Sprout
-			i(275911),	-- Venom-Covered Chest
 			i(276033),	-- Loa Watcher's Pendant
 			i(276034),	-- Entangling Brood Ring
 			i(276035),	-- Soulcoiler's Signet

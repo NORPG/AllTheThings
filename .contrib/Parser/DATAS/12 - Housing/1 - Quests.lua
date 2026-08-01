@@ -6,7 +6,7 @@ MAIL_DELIVERY_RACES = createHeader({
 	readable = "Mail Delivery Races",
 	icon = 413580,
 	text = {
-		en = "Neighborhood postal route",
+		en = "Neighborhood Postal Route",
 		de = "Postroute in der Nachbarschaft",
 		es = "Ruta postal del vecindario",
 		mx = "Ruta postal de vecindario",
@@ -143,7 +143,7 @@ root(ROOTS.Housing, {
 				["groups"] = { i(269010) },	-- Essence of Lumber
 			}),
 			q(98204, {	-- Cursed Keepsake
-				["description"] = "You can complete and obtain only 1 of 2 offered Decor Scenarios per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",
+				["description"] = "Decor offered by the quest is on a rotation.\nYou can complete and obtain only 1 of 2 offered Decor Scenarios per Housing Area, per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",
 				-- Exo Note: Not sure if this is the Amani Endeavor related or not. Placing here for now.
 				["qg"] = 262726,	-- Cursed Keepsake
 				["coords"] = {
@@ -154,9 +154,12 @@ root(ROOTS.Housing, {
 				["timeline"] = { ADDED_12_1_0 },
 				["groups"] = {
 					i(274481),	-- Keepsake Corruption (QI!)
-					--
-					i(267355),	-- Purified Elven Mirror (DECOR!)
+					-- Decor offered if turning quest in Founder's Point
 					i(267435),	-- Purified Kaldorei Candle (DECOR!)
+					i(268943),	-- Purified Elven Glowlamp (DECOR!)
+					-- Decor offered if turning quest in Razorwind Shores
+					i(267355),	-- Purified Elven Mirror (DECOR!)
+					i(272129),	-- Purified Tauren Pot (DECOR!)
 				},
 			}),
 		},
