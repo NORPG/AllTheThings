@@ -183,9 +183,6 @@ do
 		link = function(t)
 			return cache.GetCachedField(t, "link", CacheInfo);
 		end,
-		description = function(t)
-			return L.FOLLOWERS_COLLECTION_DESC;
-		end,
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collected = function(t)
 			return app.TypicalCharacterCollected(CACHE, t[KEY])
