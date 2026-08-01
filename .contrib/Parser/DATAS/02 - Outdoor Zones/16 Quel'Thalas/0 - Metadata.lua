@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 			["icon"] = 136070,
-			--["lore"] = "",
+			["lore"] = "The Vaults of Atal’Utek are an ancient, venom-corrupted Amani troll prison complex on the Coiled Isle. Built by the Amani empire long ago as a massive containment facility and designed to imprison Ula'tek, a horrific and ancient serpent goddess of venom and hatred whom the trolls came to view as a catastrophic threat.",
 			["timeline"] = { ADDED_12_1_0 },
 			["maps"] = {
 				2638,	-- Profaned Mausoleum

@@ -1032,6 +1032,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["isWeekly"] = true,	-- Assumption
 			}),
+			i(275899),	-- Venom-Soaked Satchel (Rewarded for killing the "boss" of the Curse Surge)
 			hqt(96935, {	-- Curse Surge
 				-- Exo Note: Two events were active at the time, Ss'akrithos and Leviathan, Triggered on Ss'akrithos' death.
 				["isWeekly"] = true,	-- Assumption, Could be daily. Curse Surge events between 30 minutes and 1 hour

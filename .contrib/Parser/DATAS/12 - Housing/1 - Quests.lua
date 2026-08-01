@@ -110,10 +110,30 @@ root(ROOTS.Housing, {
 				},
 				["timeline"] = { ADDED_12_0_0 },
 				["groups"] = {
-					i(259115),	-- Alliance Blue Dye
-					i(259113),	-- Horde Red Dye
-					i(259114),	-- Lush Green Dye
-					i(259126),	-- Void Violet Dye
+					i(259115, {	-- Alliance Blue Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(274468, {	-- Blue Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(274470, {	-- Green Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(259113, {	-- Horde Red Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(259114, {	-- Lush Green Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(274472, {	-- Purple Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(274473, {	-- Red Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(259126, {	-- Void Violet Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
 				},
 			}),
 			hqt(95389, {	-- Looted Essence of Lumber from logging trees (Weekly)

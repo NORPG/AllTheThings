@@ -97,6 +97,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
 								["cost"] = { { "c", VOIDLIGHT_MARL, 1500 } },
 							}),
+							i(275318, {	-- Schematic: Proudmoore Ship-in-a-Bottle (RECIPE!)
+								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+								["cost"] = { { "c", ARTISAN_MOXIE.ENGINEERING, 150 } },
+							}),
 							-- Rank 4: Venom Trawler
 							i(277925, {	-- Blue Tortollan Signpost (DECOR!)
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },

@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 95841,
 				}),
 				header(HEADERS.Object, 645208, {	-- Sunken Diver's Chest
-					["description"] = "You need to kill |cFFFFD700Ss'akrithos|r during 3 separate 'Murloc Madness' Curse Surges and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
+					["description"] = "You need to kill |cFFFFD700Ss'akrithos|r during 3 separate 'Mlurkrr Massacre' Curse Surges and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
 					["groups"] = {
 						i(271423, {	-- Diver's Key
 							["cost"] = { { "i", 271424, 3 } },	-- 3x Diver's Key Fragment

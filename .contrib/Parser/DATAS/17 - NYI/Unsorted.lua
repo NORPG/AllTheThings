@@ -34,7 +34,6 @@ root(ROOTS.Unsorted, {
 			i(260417),	-- Gnarldin Supplies
 			i(260419),	-- Cursed Zandalari Coin
 			i(260420),	-- Swamp Apple
-			i(260424),	-- Lumpy Gallstone
 			i(260425),	-- Morsel of Crab Meat
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
@@ -73,7 +72,6 @@ root(ROOTS.Unsorted, {
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
 			i(268585),	-- Pup Treat
-			i(268628),	-- Zapgut Gland
 			i(268823),	-- Scroll of Seeking
 			i(268826),	-- Ballast Stone
 			i(268871),	-- Specifically Sized Rock
@@ -84,12 +82,9 @@ root(ROOTS.Unsorted, {
 			i(268964),	-- Familiar Amani Headdress
 			i(268965),	-- Familiar Threshadon Tooth Necklace
 			i(268968),	-- Hastily Written Note
-			i(269578),	-- Poison Dart Frog Gland
 			i(269720),	-- Corrosive Hekte
-			i(269918),	-- Venom-Corroded Gallstone
 			i(270191),	-- Lil'Kruul's Hilt
 			i(270211),	-- Furiostraza's Filter
-			i(270249),	-- Cursed Spawn
 			i(270267),	-- Twilight Missive
 			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
@@ -243,11 +238,8 @@ root(ROOTS.Unsorted, {
 			i(274464),	-- Black Housing Dye
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274468),	-- Blue Housing Dye
 			i(274469),	-- Brown Housing Dye
 			i(274471),	-- Orange Housing Dye
-			i(274472),	-- Purple Housing Dye
-			i(274473),	-- Red Housing Dye
 			i(274474),	-- White Housing Dye
 			i(274475),	-- Yellow Housing Dye
 			i(274476),	-- Spark of Tides
@@ -271,7 +263,6 @@ root(ROOTS.Unsorted, {
 			i(274764),	-- Fleeting Liquid Luster
 			i(274767),	-- Seaside Lounge Chair
 			i(274777),	-- Neutralized Venom Clot
-			i(274781),	-- Cursebound Globe
 			i(274784),	-- Seaside Tiki Frondtree
 			i(274786),	-- Seaside Waterfall Basin
 			i(274788),	-- Seaside Depths Porthole
@@ -336,20 +327,14 @@ root(ROOTS.Unsorted, {
 			i(275274),	-- Alchemy
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
-			i(275280),	-- Gamey Flank
-			i(275282),	-- Smooth Loin
-			i(275284),	-- Slobbery Tongue
 			i(275285),	-- Malleable Root
-			i(275286),	-- Leafy Appendage
 			i(275287),	-- Cellular Slab
 			i(275288),	-- Photosynthesized Scrap
-			i(275289),	-- Winged Stalk
 			i(275303),	-- Amani Forgemaster's Workbench
 			i(275305),	-- Amani Forgemaster's Glaive
 			i(275306),	-- Plans: Amani Forgemaster's Glaive
 			i(275308),	-- Plans: Amani Forgemaster's Rack
 			i(275314),	-- Formula: Enchanted Eversong Trout
-			i(275318),	-- Schematic: Proudmoore Ship-in-a-Bottle
 			i(275320),	-- Schematic: Aetherlume Field Lamp
 			i(275322),	-- Technique: Ferocious Feline Trinket
 			i(275324),	-- Technique: Inscribed Amani Mural
@@ -387,23 +372,19 @@ root(ROOTS.Unsorted, {
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(275855),	-- Zul'Aman Swamp Palm Sprout
-			i(275899),	-- Venom-Soaked Satchel
 			i(275911),	-- Venom-Covered Chest
 			i(276033),	-- Loa Watcher's Pendant
 			i(276034),	-- Entangling Brood Ring
 			i(276035),	-- Soulcoiler's Signet
 			i(276042),	-- Templetusk Shield
 			i(276043),	-- Vilefang Censer
-			i(276046),	-- Superclutch Smasher
 			i(276047),	-- Swamp Whomper
 			i(276049),	-- Snakeslayer's Claymore
 			i(276050),	-- Victorious Spiritstaff
-			i(276052),	-- Venomshot Greatbow
 			i(276053),	-- Snakehunter's Warglaive
 			i(276054),	-- Serpentvine Machete
 			i(276055),	-- Soulweaver's Curseblade
 			i(276058),	-- Ruinous Slitherslicer
-			i(276060),	-- Hexxer's Blastin' Rod
 			i(276061),	-- Witch Doctor's Bloodletter
 			i(276062),	-- Hydra Neckchopper
 			i(276117),	-- Clouded Blood-Pearl
