@@ -164,7 +164,7 @@ do
 		if field then return _t[field]; end
 	end
 	app.CreateFollower = app.CreateClass(CLASSNAME, KEY, {
-		CACHE = CACHE,
+		CACHE = function() return CACHE end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);
 		end,
