@@ -3462,12 +3462,17 @@ MobileDB.GameObject = {
 	[654422] = true,	-- Energized Crystal Conductor (q:96569)
 	[655270] = true,	-- Dominaar Storage Vessel [Ritual Site: Val]
 	[655271] = true,	-- Hal'hadar Pocket-Storage [Ritual Site: Naigtal]
+	[656001] = true,	-- Cursed Refulgent Copper
 	[656044] = true,	-- Singing Shell [The Coiled Isle]
 	[656135] = true,	-- Slumbering Starfish [The Coiled Isle]
 	[657959] = true,	-- Crate of Pilfered Tributes
 	[658802] = true,	-- Ancient Crypt Reliquary
 	[659301] = true,	-- Highland Redcap [Ritual Site: Naigtal]
 	[659898] = true,	-- Spongy Sporebat Nest [Ritual Site: Naigtal]
+	[660374] = true,	-- Cursed Brilliant Silver
+	[660376] = true,	-- Cursed Umbral Tin
+	[660387] = true,	-- Cursed Sanguithorn
+	[660388] = true,	-- Cursed Tranquility Bloom
 	[660768] = true,	-- Zul'jan's Strongbox [Altar of Fangs]
 }
 
