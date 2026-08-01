@@ -2871,6 +2871,9 @@ local AccountWideQuestsDB = {
 	97111,	-- ??
 	97115,	-- First Preference Killing of the week
 	97116,	-- Has rolled for Ahune Special Loot (Daily Accountwide)
+	97640,	-- Vaults of Atal'Utek: One Coin Too Many
+	98388,	-- Into the Vaults of Atal'Utek
+	98428,	-- Vaults of Atal'Utek: The Altar of Corrosion
 
 	-- Weird partial cases... ??
 	-- 45237,	-- Ensemble: Funerary Plate of the Chosen Dead (Only flags complete for Plate characters)
