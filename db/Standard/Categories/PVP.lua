@@ -38768,8 +38768,7 @@ title(555,{pvp=1,u=2})}}),
 ach(40234,{pvp=1,r=1,u=2,g={
 title(554,{pvp=1,u=2})}}),
 ach(40233,{pvp=1,u=2,g={
-toy(225933,{b=1,lvl=80,pvp=1,u=2}),
-title(539,{collectible=false,pvp=1,u=2})}}),
+toy(225933,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(40395,{pvp=1,u=2,g={
 toy(225933,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(40381,{pvp=1,u=2,g={
@@ -40518,8 +40517,7 @@ title(610,{pvp=1,u=2})}}),
 ach(41356,{pvp=1,r=1,u=2,g={
 title(609,{pvp=1,u=2})}}),
 ach(41363,{pvp=1,u=2,g={
-toy(235519,{b=1,lvl=80,pvp=1,u=2}),
-title(539,{collectible=false,pvp=1,u=2})}}),
+toy(235519,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(41358,{pvp=1,u=2,g={
 toy(235519,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(41355,{pvp=1,u=2,g={
@@ -42041,8 +42039,7 @@ title(632,{pvp=1,u=2})}}),
 ach(42038,{pvp=1,r=2,u=2}),
 ach(42037,{pvp=1,r=1,u=2}),
 ach(42024,{pvp=1,u=2,g={
-toy(242636,{b=1,lvl=80,pvp=1,u=2}),
-title(539,{collectible=false,pvp=1,u=2})}}),
+toy(242636,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(42023,{pvp=1,u=2,g={
 toy(242636,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(42044,{c={2,5,7,10,11,13},pvp=1,u=2}),
