@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(RARES, {
 				q(98353, {	-- Weekly reputation: Big Mon
 					["name"] = "Big Mon weekly reputation obtained.",
@@ -160,6 +160,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 					["name"] = "Szarith The Fanged weekly reputation obtained.",
 				}),
 			}),
-		}),
+		})),
 	}),
 }));

@@ -162,10 +162,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			header(HEADERS.Faction, FACTION_CAPTAIN_TOKKA, {
 				q(97537),	-- Triggered after turning in 'A Collection of Rot' (94804)
 			}),
-		}),
+		})),
 	}),
 }));
