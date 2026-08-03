@@ -174,6 +174,13 @@ local function presetStore()
 		["AccountWide:Conduits"] = settings:Get("AccountWide:Conduits"),
 	}
 
+	for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+		local setting = settings:GetFilter(i)
+		if setting ~= nil then
+			settingsTable[i] = setting
+		end
+	end
+
 	settings:Set("PresetRestore", settingsTable)
 end
 
@@ -256,6 +263,13 @@ modeButton:SetScript("OnClick", function()
 				settings:Set("AccountWide:Followers", settings:Get("PresetRestore")["AccountWide:Followers"])
 				settings:Set("AccountWide:AzeriteEssences", settings:Get("PresetRestore")["AccountWide:AzeriteEssences"])
 				settings:Set("AccountWide:Conduits", settings:Get("PresetRestore")["AccountWide:Conduits"])
+
+				for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+					local setting = settings:Get("PresetRestore")[i]
+					if setting ~= nil then
+						settings:SetFilter(i, setting)
+					end
+				end
 
 				-- Reset our preset storage
 				settings:Set("PresetRestore", {})
