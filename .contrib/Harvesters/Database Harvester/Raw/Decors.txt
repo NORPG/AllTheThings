@@ -3744,3 +3744,10 @@
 27041@@@Forgotten Amani Mural
 27042@@@"The Hunger Awakens" Mural
 27043@@@"Rage of the Shackled" Mural
+12.1.0.68301
+25666@@@Traditional Brewfest Banner
+25672@@@Brewfest Fence
+25673@@@Brewfest Fencepost
+25674@@@Hanging Brewfest Wreath
+25675@@@Brewfest Crate
+26374@@@Lost Explorers' Mailbox

@@ -337895,3 +337895,87 @@
 280275@@@Hanging Longwick Rope
 280277@@@Weathered Med'jai Signet
 280278@@@Temple Guardian's Ring
+12.1.0.68301
+244347@@@Purified Troll Urn
+245991@@@Purified Sindorei Candle
+245993@@@Purified Floating Lantern
+248101@@@Traditional Brewfest Stein
+252042@@@Purified Troll Pitcher
+253396@@@Purified Crude Axe
+253703@@@Purified Crude Hammer
+255652@@@Purified Troll Loop
+255712@@@Purified Ancient Urn
+256361@@@Purified Troll Pendant
+256684@@@Purified Troll Amulet
+258540@@@Purified Troll Ring
+263876@@@Purified Folk Mirror
+267205@@@Purified Folk Candle
+267355@@@Purified Elven Mirror
+267435@@@Purified Kaldorei Candle
+268943@@@Purified Elven Glowlamp
+272129@@@Purified Tauren Pot
+272142@@@Purified Earthen Pot
+277764@@@Venom-Cursed Bear's Battle Bands
+277765@@@Venom-Cursed Bear's Warbelt
+277766@@@Venom-Cursed Bear's Pauldrons
+277767@@@Venom-Cursed Bear's Greaves
+277768@@@Venom-Cursed Bear's Jaws
+277769@@@Venom-Cursed Bear's Gauntlets
+277770@@@Venom-Cursed Bear's Charge
+277771@@@Venom-Cursed Bear's Chestguard
+277772@@@Venom-Cursed Dragonhawk's Scalebands
+277773@@@Venom-Cursed Dragonhawk's Waistguard
+277774@@@Venom-Cursed Dragonhawk's Amice
+277775@@@Venom-Cursed Dragonhawk's Legguards
+277776@@@Venom-Cursed Dragonhawk's Guise
+277777@@@Venom-Cursed Dragonhawk's Grips
+277778@@@Venom-Cursed Dragonhawk's Flight
+277779@@@Venom-Cursed Dragonhawk's Crest
+277780@@@Venom-Cursed Lynx's Bracers
+277781@@@Venom-Cursed Lynx's Buckle
+277782@@@Venom-Cursed Lynx's Spaulders
+277783@@@Venom-Cursed Lynx's Breeches
+277784@@@Venom-Cursed Lynx's Gaze
+277785@@@Venom-Cursed Lynx's Claws
+277786@@@Venom-Cursed Lynx's Paws
+277787@@@Venom-Cursed Lynx's Harness
+277788@@@Venom-Cursed Eagle's Wristbands
+277789@@@Venom-Cursed Eagle's Cinch
+277790@@@Venom-Cursed Eagle's Wingspan
+277791@@@Venom-Cursed Eagle's Leggings
+277792@@@Venom-Cursed Eagle's Plumage
+277793@@@Venom-Cursed Eagle's Handwraps
+277794@@@Venom-Cursed Eagle's Talons
+277795@@@Venom-Cursed Eagle's Robes
+277798@@@Venom-Cursed Spellfang
+277799@@@Venom-Cursed Cudgel
+277800@@@Venom-Cursed Focus
+277801@@@Venom-Cursed Boneglaive
+277802@@@Venom-Cursed Guillotine
+277804@@@Venom-Cursed Longbow
+277805@@@Venom-Cursed Dirk
+277806@@@Venom-Cursed Hidepiercer
+277807@@@Venom-Cursed Ritual Staff
+277808@@@Venom-Cursed Gladius
+277810@@@Venom-Cursed Aegis
+278696@@@Purified Dracthyr Stein
+278701@@@Purified Goblin Cup
+279054@@@Idol of Blue Water and Blue Sky
+279118@@@Lost Explorers' Mailbox
+279329@@@Amani Forgemaster's Rack
+279387@@@Ula'took
+280201@@@Book of Storytime
+280305@@@Soulcoil Remnant
+280333@@@Pirate's Eyepatch
+280335@@@Brewfest Crate
+280337@@@Traditional Brewfest Banner
+280339@@@Brewfest Fence
+280341@@@Brewfest Fencepost
+280343@@@Hanging Brewfest Wreath
+280376@@@Shadow Shard Sliver
+280377@@@Breath of Jan'alai
+280409@@@Potion of Liquid Undeath
+280419@@@Cursed Badge of the Soulcoilers
+280422@@@Spirit Sprouts
+280425@@@Afterlife Ale
+280446@@@Unnerving Bait

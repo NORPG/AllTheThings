@@ -477118,3 +477118,286 @@
 1308040@@@Crawling Clutch
 1308041@@@In the Pit
 1308061@@@[DNT] Queue for Cursed Keepsake
+12.1.0.68301
+267027@@@Poison Spit
+273222@@@Volley
+462990@@@Lesser Primal Storm Elemental
+1269487@@@Blue Water, Blue Sky
+1271622@@@[DNT] Head Mason's Tablet
+1279712@@@12.1 Delves - All - Fungal Pharmacon, Spawner: Spawn Spell
+1279722@@@12.1 Delves - All - Fungal Pharmacon, Spawner: Summon
+1280143@@@Ofi's Flame Familiar
+1282299@@@Ofi's Lightning Familiar
+1283004@@@Max Offerings Acquired
+1283581@@@Guillotine initial hit
+1287687@@@Soulbinding
+1289109@@@Thunder Spit
+1289416@@@Envenom
+1289426@@@Envenom
+1289587@@@Thunder Spit
+1289588@@@Thunder Spit
+1289602@@@Thunder Spit
+1289683@@@Ritual of Awakening
+1291397@@@Venomous Emergence
+1291404@@@Venomous Emergence
+1291405@@@Venomous Emergence
+1291468@@@Sunder Slam
+1291734@@@Thunder Spit
+1291735@@@Thunder Spit
+1292892@@@Control Venom
+1293131@@@Serpent's Stormcall
+1293474@@@12.1 Ula'tek - Warrior - Guardian - Thaze'ala - OnSpawn [DNT]
+1296045@@@Imbued Conduction
+1296052@@@Imbued Conduction
+1296912@@@Storm Strikes
+1298329@@@Thunder Spit
+1298570@@@Caustic Wingfall
+1298616@@@Caustic Wingfall
+1298685@@@Caustic Wingfall
+1298687@@@Caustic Wingfall
+1298975@@@12.1 Delves - HexTrolls01 - V04 - Springstep Rune: Delayed Trigger [Feather Fall]
+1299751@@@Push!
+1300235@@@Soul Exhaustion
+1300503@@@Spiteful Hunt
+1300685@@@REUSE
+1300735@@@Soulcoil Well
+1301413@@@Boneslicer
+1301416@@@Boneslicer
+1301507@@@Boneslicer
+1301508@@@Boneslicer
+1301509@@@Boneslicer
+1303318@@@Toxic Genesis
+1306032@@@Collect Lost Explorers' Mailbox
+1306162@@@Divine Arbiter
+1306436@@@Possess Torch
+1306643@@@Serpent Defeated
+1306694@@@Ula'took
+1307184@@@Dread Bolt
+1307332@@@Ravage
+1307333@@@Mutilate
+1307567@@@Mass Envenom
+1307571@@@Envenom
+1307764@@@Venomous Emergence
+1307925@@@Book of Storytime
+1308062@@@[DNT] Cursed Curios - Scenario Entry - Scourge
+1308065@@@Enrage
+1308072@@@Jeytha Dummy 05 (DNT)
+1308073@@@[DNT] Cursed Curios - Scenario Entry - Void
+1308075@@@[DNT] Queue for Cursed Keepsake
+1308077@@@Jeytha Dummy 06 (DNT)
+1308088@@@Kill Credit (DNT)
+1308093@@@Spirit's Wrath
+1308098@@@Kill Credit (DNT)
+1308099@@@Kill Credit (DNT)
+1308100@@@Poisoned Cheap Shot
+1308106@@@Stealth
+1308112@@@[DNT] Cursed Curios - Scenario Entry - Nerubian
+1308113@@@Arrow Barrage
+1308114@@@[DNT] Queue for Cursed Keepsake
+1308115@@@Repeatable Treasure - Cover Spell [DNT
+1308116@@@Arrow Barrage
+1308119@@@[DNT] Screen Effect - Nerubians
+1308120@@@Kill Credit (DNT)
+1308122@@@Venomous Emergence
+1308123@@@Venomous Emergence
+1308125@@@Spirit's Wrath
+1308133@@@Collecting
+1308134@@@Test Fire Dest Cone
+1308135@@@Test Fire Target Cone
+1308148@@@Cytotoxin
+1308150@@@Jeytha Dummy 07 (DNT)
+1308176@@@Dream Conduit
+1308188@@@Dire Beast
+1308193@@@Twins
+1308203@@@Purge Venom
+1308204@@@[DNT] Knockback
+1308214@@@Shadow Breath
+1308217@@@Teleport
+1308227@@@Immortal Coil
+1308230@@@Teleport
+1308231@@@Teleport
+1308232@@@Teleport
+1308233@@@Teleport
+1308234@@@Teleport
+1308235@@@Teleport
+1308236@@@Teleport
+1308238@@@Shadow Breath
+1308239@@@Immortal Coil
+1308240@@@Soulcoiler's Curse
+1308241@@@Immortal Coil
+1308242@@@Immortal Coil
+1308243@@@Immortal Coil
+1308244@@@Immortal Coil
+1308245@@@Screen Shake
+1308248@@@Immortal Coil
+1308249@@@Immortal Coil
+1308260@@@[DNT] Cursed Curios - Scenario Entry - Dragonkin
+1308261@@@[DNT] Queue for Cursed Keepsake
+1308262@@@(DNT)
+1308274@@@[DNT] Cursed Curios - Scenario Entry - Old Gods
+1308275@@@Putrid Membrane
+1308276@@@[DNT] Queue for Cursed Keepsake
+1308284@@@Opening
+1308292@@@Collect Brewfest Crate
+1308294@@@Collect Traditional Brewfest Banner
+1308296@@@Collect Brewfest Fence
+1308298@@@Collect Brewfest Fencepost
+1308300@@@Collect Hanging Brewfest Wreath
+1308305@@@12.1 Delves - Fungarians03 - V04 - Burrows: Criteria Credit Backup, A
+1308306@@@12.1 Delves - Fungarians03 - V04 - Burrows: Criteria Credit Backup, B
+1308307@@@12.1 Delves - Fungarians03 - V04 - Burrows: Criteria Credit Backup, C
+1308308@@@12.1 Delves - Fungarians03 - V04 - Burrows: Criteria Credit Backup, D
+1308311@@@Retaliatory Malice
+1308312@@@Ping Reset to Trapped Spirits on Boss Despawn [DNT]
+1308313@@@Ping Reset to Trapped Thaze'ala on Boss Despawn [DNT]
+1308314@@@Ping Reset to Dead Phase 1 Boss on Phase 2 Boss Despawn [DNT]
+1308315@@@12.1 Delves - Fungarians03 - V04 - Burrows: Criteria Credit Backup, Event
+1308316@@@12.1 Delves - Fungarians03 - V04 - Burrows: Criteria Credit Backup, Periodic
+1308321@@@Retaliatory Malice
+1308322@@@[DNT] Destroy Water and Corruption
+1308323@@@Retaliatory Malice
+1308330@@@Gravebound
+1308331@@@12.1 Delves - Fungarians03 - V04 - Altar, Dupe: Area Trigger, Periodic > Targeting > Missile
+1308341@@@Seriously Sharp Seashell
+1308347@@@[DNT] Holiday - Outfit
+1308355@@@Rouse the Brood
+1308356@@@Rouse the Brood
+1308371@@@Call of the Serpent
+1308373@@@AI Cast AoE
+1308374@@@AI Cast AoE
+1308385@@@Visceral Burst
+1308386@@@Visceral Burst
+1308388@@@Lightbloom's Essence
+1308389@@@Visceral Burst
+1308391@@@Crawling Clutch
+1308395@@@Phase-Lost Rustbolt Rocketpack
+1308397@@@AI Cast AoE
+1308399@@@Answered Calling
+1308407@@@Jetpack (With Flames - Cast From Vehicle)
+1308408@@@Cancel: Jetpack
+1308428@@@[DNT]Zul'jan Jump Charge
+1308431@@@[DNT]Zul'jan Jump Charge
+1308433@@@Revenge
+1308434@@@Training Grounds Quest
+1308436@@@[DNT]Zul'jan Jump Charge
+1308437@@@Spirit's Wrath
+1308442@@@Static Build-Up
+1308443@@@[DNT]Malacrass Intro
+1308444@@@[DNT]Malacrass Transform
+1308447@@@Static Build-Up
+1308448@@@Listener
+1308459@@@Caustic Wingfall
+1308460@@@Caustic Wingfall
+1308464@@@Volatile Purge
+1308465@@@Call of the Serpent
+1308466@@@Call of the Serpent
+1308479@@@Spirit's Wrath
+1308481@@@Rouse the Brood
+1308482@@@Rouse the Brood
+1308486@@@Static Build-Up
+1308495@@@Teleport
+1308498@@@12.1 Delves - All - Fungal Pharmacon, Spawner: Missile
+1308500@@@[DNT] Amani Exile's Words
+1308501@@@[DNT] Worn Tablet
+1308502@@@[DNT] Abandoned Tablet
+1308504@@@[DNT] Message in a Bottle
+1308505@@@[DNT] Oily Black Stone
+1308506@@@[DNT] Forum Rules
+1308507@@@[DNT] Survival Journals
+1308508@@@[DNT] Zandalari Logbook
+1308509@@@[DNT] Profaned Plaque
+1308512@@@Laced Edge
+1308513@@@Twins
+1308518@@@Laced Edge
+1308522@@@Wild Guardian Spirit
+1308525@@@[DNT] Ral'kala Treasure Table Push
+1308539@@@AI Cast AoE
+1308541@@@[DNT] Push Action Set Check
+1308544@@@The Carnage Pit
+1308545@@@[DNT] Push Action Set Check
+1308546@@@Venomous Slash
+1308554@@@[DNT] Normal + Hard Unlock
+1308556@@@Submerge
+1308559@@@Shadow Shard Sliver
+1308565@@@AI Cast AoE
+1308572@@@Teleport
+1308573@@@AI Cast AoE
+1308574@@@Teleport
+1308575@@@Anim Replace - State_Ready1H
+1308579@@@[DNT] Boss 2 Trash Creatures Stop Fighting WS
+1308583@@@Uncoiled Wrath
+1308590@@@Potion of Liquid Undeath
+1308593@@@Potion of Liquid Undeath
+1308594@@@Potion of Liquid Undeath
+1308596@@@World Boss Damage Reduction
+1308625@@@Frost Infusion
+1308636@@@Blazebound Barrier
+1308639@@@Spirit's Wrath
+1308642@@@Giant Growth - 300%
+1308647@@@Answered Calling
+1308649@@@Vampiric Insight
+1308653@@@Listener
+1308654@@@Training Grounds Quest
+1308655@@@Bloodburrow Rootbind
+1308656@@@Shadow Channel
+1308661@@@Regenerative Rootbind
+1308686@@@Poison Spray
+1308687@@@Poison Spray
+1308690@@@Poison Spray
+1308693@@@Cursed Badge of the Soulcoilers
+1308711@@@Uncoiled Wrath
+1308717@@@Spirit Sprouts
+1308719@@@Well Resting
+1308722@@@Rootwrath Onslaught
+1308723@@@Raid Boss Immunity - Immunities Purges Effect
+1308724@@@Threatened
+1308726@@@World Boss Damage Reduction
+1308728@@@Breath of Jan'alai
+1308729@@@Manifestation of Dread
+1308734@@@Afterlife Ale
+1308737@@@Rootwrath Onslaught
+1308738@@@Overload
+1308740@@@Overload
+1308744@@@AI Cast AoE
+1308745@@@Shadow Shard Sliver
+1308747@@@Rootwrath Onslaught
+1308748@@@Noxious Spray
+1308759@@@[DNT] Set Weekly Bit
+1308760@@@AI Cast AoE
+1308761@@@AI Cast AoE
+1308774@@@[DNT]Zul'jan Spawn Checker
+1308776@@@[DNT] Scenario Entry Credit
+1308779@@@Shadowtouched Apparitions
+1308780@@@[DNT] Scenario Entry Credit Aura
+1308781@@@Spiteful Hunt
+1308783@@@[DNT]Nek'zali Spawn Checker
+1308787@@@[DNT]Nek'zali Spawn Checker
+1308794@@@Fang of Ula'tek
+1308795@@@[DNT] Corruption Cancellation - EVERYWHERE
+1308801@@@Caustic Rain
+1308808@@@Fang of Ula'tek
+1308809@@@Soul Sever
+1308824@@@Breath of Jan'alai
+1308826@@@Rootshield
+1308827@@@Overexerted
+1308829@@@Unnerving Bait
+1308831@@@Spirit Bolt
+1308835@@@Caustic Rain
+1308837@@@Blocker Aura [DNT]
+1308838@@@Lightning Bite
+1308839@@@Caustic Rain
+1308840@@@[DNT]Tortollans Spawn Checker
+1308841@@@Caustic Rain
+1308842@@@<DNT>
+1308845@@@Cancel Blocker Aura [DNT]
+1308847@@@<DNT>
+1308848@@@Exit Ghost Vehicle - Aura Check Cover Spell [DNT]
+1308849@@@[DNT] Increase Max Health
+1308852@@@Soul Transfer
+1308853@@@Splinters
+1308862@@@Fetid Spit
+1308863@@@Hatch
+1308864@@@Infest
+1308865@@@Infest
+1308871@@@Blood Rain Clears
+1308882@@@Teleport
