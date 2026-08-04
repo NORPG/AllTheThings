@@ -99645,6 +99645,39 @@
 280387@@@The Frost Lord's War Cloak
 280388@@@Frostscythe of Lord Ahune
 280389@@@Frostscythe of Lord Ahune
+5.5.4.69032
+274037@@@Tuskarr Hermit Crab
+274730@@@Tuskarr Ice Fishing Tent
+274967@@@Varian's Dragon Throne
+281681@@@Varian's Dragon Spirit
+282030@@@Thousand-Year Pickled Egg
+282031@@@Thousand-Year Pickled Egg
+282032@@@Mithril Wristwatch
+282033@@@Mithril Wristwatch
+282034@@@Coren's Cold Chromium Coaster
+282035@@@Coren's Cold Chromium Coaster
+282036@@@Bitterest Balebrew Charm
+282037@@@Bitterest Balebrew Charm
+282038@@@Brawler's Statue
+282039@@@Brawler's Statue
+282040@@@Bubbliest Brightbrew Charm
+282041@@@Bubbliest Brightbrew Charm
+282042@@@Direbrew's Bloodied Shanker
+282043@@@Direbrew's Bloodied Shanker
+282108@@@Tremendous Tankard O' Terror
+282109@@@Tremendous Tankard O' Terror
+282171@@@The Horseman's Horrific Hood
+282172@@@The Horseman's Horrific Hood
+282173@@@The Horseman's Sinister Slicer
+282174@@@The Horseman's Sinister Slicer
+282175@@@Seal of Ghoulish Glee
+282176@@@Seal of Ghoulish Glee
+282177@@@Band of the Petrified Pumpkin
+282178@@@Band of the Petrified Pumpkin
+282179@@@The Horseman's Ring
+282180@@@The Horseman's Ring
+282181@@@Wicked Witch's Signet
+282182@@@Wicked Witch's Signet
 7.3.0.24473
 25@@@ Shortsword
 35@@@ Staff
