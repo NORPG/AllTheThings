@@ -69066,6 +69066,42 @@
 3.80.1.68768
 1301737@@@Sunflash Driftmoth
 1301783@@@Sunflutter Driftmoth
+3.80.2.68943
+96573@@@Pet Sit or Sleep
+96577@@@Sleepy Pet (No Zs)
+97779@@@Lashtail Hatchling
+97801@@@Lashtail Hatchling: Bone in Mouth Visual
+97803@@@Lashtail Hatchling: Throw Bone
+97809@@@Lashtail Hatchling Passive
+115758@@@Knockdown
+116035@@@Rafting Visual, Bombs & Fishing Barrel
+129466@@@Paddle Raft
+375473@@@Backswimmer Timbertooth
+383268@@@Tuskarr Dinghy
+383279@@@Tuskarr Dinghy
+383299@@@Rafting Wake
+435115@@@Guardian Quilen
+1247613@@@Equip Transmog Outfit
+1247917@@@Clear Current Transmogrifications
+1254171@@@[DNT] Fish
+1254207@@@Fishmonger May
+1254319@@@[DNT] Seal
+1254334@@@[DNT] Seal!!
+1263886@@@Equip Transmog Outfit
+1272615@@@Clear Transmog Outfit
+1283375@@@Clear Transmog Outfit
+1283376@@@Equip Transmog Outfit
+1312621@@@Encapsulate
+1312640@@@Fire Wall
+1312777@@@Might of the Sunwell
+1312780@@@Might of the Sunwell
+1312781@@@Tenacity
+1312782@@@Tenacity
+1312783@@@Tenacity
+1312784@@@Tenacity
+1312785@@@Tenacity
+1312809@@@Might of the Sunwell
+1312867@@@Sanctuary
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward
@@ -89742,8 +89778,6 @@
 96570@@@Gaping Wound
 96571@@@Panther Cub
 96572@@@Serpent's Poison
-96573@@@Pet Sit or Sleep
-96577@@@Sleepy Pet (No Zs)
 96584@@@Summon Fleet Master Seahorn
 96585@@@Summon Maximillian of Northshire
 96586@@@Summon Linken
@@ -90657,14 +90691,10 @@
 97775@@@Molten Splash
 97776@@@Claw Flurry
 97777@@@Claw Flurry
-97779@@@Lashtail Hatchling
 97780@@@Summon Beam Target
 97795@@@Flare Gun
 97796@@@Flare Gun
-97801@@@Lashtail Hatchling: Bone in Mouth Visual
-97803@@@Lashtail Hatchling: Throw Bone
 97804@@@Ping Actors
-97809@@@Lashtail Hatchling Passive
 97813@@@[DND] Quest Credit
 97817@@@Leap of Faith
 97820@@@Solar Core Explosion
@@ -102309,7 +102339,6 @@
 115750@@@Blinding Light
 115753@@@Hurricane Kick
 115754@@@Hurricane Kick
-115758@@@Knockdown
 115759@@@Supply Barrage
 115761@@@Chi Blast
 115762@@@Hozen Pirate Hat
@@ -102504,7 +102533,6 @@
 116031@@@Grummle Ambusher Threat Nuke Aura
 116032@@@Rafting
 116034@@@Lullaby
-116035@@@Rafting Visual, Bombs & Fishing Barrel
 116036@@@Jasper Petrification
 116037@@@Player Farm - Summon Wild Green Cabbage
 116038@@@Jasper Petrification
@@ -111329,7 +111357,6 @@
 129463@@@Crane Kick
 129464@@@Forest Song
 129465@@@Celestial Gate Scene
-129466@@@Paddle Raft
 129467@@@Portal: Stormwind
 129468@@@Burrow
 129469@@@Burrow
@@ -333466,14 +333493,12 @@
 383265@@@Summon Shikaar Bakar
 383266@@@Shikaar Bakar
 383267@@@Dragon Riding: AdvFlyRoll [DNT]
-383268@@@Tuskarr Dinghy
 383269@@@Abomination Limb
 383270@@@Summon Shikaar Bakar
 383273@@@[DNT] Gauntlet Controller Aura
 383275@@@Water Bolt
 383277@@@Summon Shikaar Ohuna
 383278@@@Shikaar Ohuna
-383279@@@Tuskarr Dinghy
 383280@@@Summon Shikaar Ohuna
 383281@@@Hidden Opportunity [NYI]
 383282@@@High Tide
@@ -333489,7 +333514,6 @@
 383295@@@Deft Experience
 383297@@@Critical Thinking
 383298@@@Brand of Melting Flesh
-383299@@@Rafting Wake
 383301@@@Brand of Melting Flesh
 383303@@@Improved Maelstrom Weapon
 383306@@@Create Time Capsule [DNT]
@@ -338800,7 +338824,6 @@
 375397@@@Lava Splash
 375413@@@Blackfeather Nester
 375448@@@Brightfeather
-375473@@@Backswimmer Timbertooth
 375499@@@Time-Lost Timbertooth
 375511@@@Emerald Frillfish
 375536@@@Purple Frillfish
@@ -377968,7 +377991,6 @@
 435107@@@Forest Windsteed
 435108@@@Daystorm Windsteed
 435109@@@Feathered Windsurfer
-435115@@@Guardian Quilen
 435118@@@Marble Quilen
 435123@@@Gilded Riding Crane
 435124@@@Luxurious Riding Crane
@@ -428574,14 +428596,10 @@
 1254117@@@Lightforged Phase Beacon
 1254118@@@Lightforged Phase Beacon
 1254162@@@Lil' Chompers
-1254171@@@[DNT] Fish
 1254201@@@Slippery Saul
-1254207@@@Fishmonger May
 1254208@@@Fishstick Keith
 1254212@@@Festive Eve
 1254213@@@Bundled-up Bob
-1254319@@@[DNT] Seal
-1254334@@@[DNT] Seal!!
 1254363@@@(PH LEGION REMIX MOUNT)
 1254381@@@Fledgling Warden's Companion
 1254431@@@Bronze
@@ -457515,7 +457533,6 @@
 1246745@@@Exorcism
 1246935@@@Filo, Loa of Childhood
 1246936@@@Pahk, Loa of the Depths
-1247613@@@Equip Transmog Outfit
 1247729@@@Thermal Void
 1247730@@@Thermal Void
 1247769@@@Improved Flurry
@@ -457569,7 +457586,6 @@
 1262148@@@Dark Constellation
 1263088@@@Carved Idol of Halazzi
 1263466@@@Burning Amani Pinecone
-1263886@@@Equip Transmog Outfit
 1264330@@@Devastating Focus
 1264991@@@Shadowbind
 1265344@@@[dnt] Player In Exal Area Maintain Aura
@@ -457641,7 +457657,6 @@
 1272060@@@Imperator's Torment Crystal
 1272061@@@Voltaic Trigore Egg
 1272063@@@Devouring Host Ritual Engine
-1272615@@@Clear Transmog Outfit
 1272706@@@[DNT] Misplaced Unit Despawn Timer (30 sec)
 1272735@@@Dungeon: Nexus-Point Xenas
 1272755@@@Nova
@@ -458096,7 +458111,6 @@
 1246309@@@B1P, Scorcher of Souls
 1246944@@@Mot'amra, Loa of Pestilence
 1247076@@@[DNT] [AUTOGEN] 12BE_BloodElf_Structure_Statue02.m2
-1247917@@@Clear Current Transmogrifications
 1248176@@@[DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask01.m2
 1248177@@@[DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask02.m2
 1248178@@@[DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask03.m2
@@ -462320,8 +462334,6 @@
 1283246@@@Summon Webmage
 1283344@@@Reaver's Glaive
 1283368@@@Stab
-1283375@@@Clear Transmog Outfit
-1283376@@@Equip Transmog Outfit
 1283402@@@Overhead Slash
 1283442@@@Bloodthirst Heal
 1283444@@@Test Spell 4 [DNT]

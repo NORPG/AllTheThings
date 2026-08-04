@@ -258,6 +258,10 @@
 266912@@@Pinky
 3.80.1.68768
 268569@@@Sunflutter Driftmoth
+3.80.2.68943
+52894@@@Lashtail Hatchling
+189655@@@Backswimmer Timbertooth
+251819@@@Fishmonger May
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -294,7 +298,6 @@
 52343@@@Landro's Lichling
 52344@@@Nightsaber Cub
 52831@@@Winterspring Cub
-52894@@@Lashtail Hatchling
 53048@@@Legs
 53225@@@Pterrordax Hatchling
 53232@@@Voodoo Figurine
@@ -18910,7 +18913,6 @@
 189160@@@Black Slyvern Pup
 189209@@@Whitewhisker
 189211@@@Time-Lost Slyvern
-189655@@@Backswimmer Timbertooth
 189657@@@Dusky Timbertooth
 189660@@@Light Baby Timbertooth
 189661@@@Time-Lost Timbertooth
@@ -23037,7 +23039,6 @@
 249947@@@Crimson Pilgrim
 251804@@@Lil' Chompers
 251817@@@Slippery Saul
-251819@@@Fishmonger May
 251820@@@Fishstick Keith
 251821@@@Festive Eve
 251822@@@Bundled-up Bob

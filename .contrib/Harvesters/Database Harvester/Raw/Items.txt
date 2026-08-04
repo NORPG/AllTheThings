@@ -54072,6 +54072,13 @@
 279578@@@Empowered Zandalari Bijou
 3.80.1.68768
 277193@@@Sunflutter Driftmoth
+3.80.2.68943
+69251@@@Lashtail Hatchling
+193837@@@Backswimmer Timbertooth
+198428@@@Tuskarr Dinghy
+200882@@@Big Kinook's Spare Ladle
+213601@@@Reins of the Guardian Quilen
+252194@@@Fishmonger May
 4.4.0.53627
 80@@@Soft Fur-Lined Shoes
 732@@@Ripe Okra
@@ -70044,7 +70051,6 @@
 69243@@@Ice Cream Cake Slice
 69244@@@Ice Cream Bar
 69245@@@Timeless Eye
-69251@@@Lashtail Hatchling
 69255@@@ZG Plate Helm 3
 69256@@@ZG Plate Helm 2
 69257@@@ZG Plate Helm 1
@@ -283245,7 +283251,6 @@
 198424@@@Refine Dragon Isles Hides
 198425@@@Refine Dragon Isles Leather
 198426@@@Refine Dragon Isles Scales
-198428@@@Tuskarr Dinghy
 198429@@@Typhoon Bringer
 198430@@@Time Capsule
 198431@@@Jetscale Sigil
@@ -285836,7 +285841,6 @@
 193620@@@Time-Lost Slyvern
 193834@@@Blackfeather Nester
 193835@@@Brightfeather
-193837@@@Backswimmer Timbertooth
 193850@@@Time-Lost Timbertooth
 193851@@@Purple Frillfish
 193852@@@Azure Frillfish
@@ -286045,7 +286049,6 @@
 200878@@@Floaty Boaty Controller
 200879@@@Zenet Egg
 200880@@@Wind-Sealed Mana Capsule
-200882@@@Big Kinook's Spare Ladle
 200883@@@Illusion: Primal Air
 200885@@@Cinna-Cinderbloom Brew
 200886@@@Lemon Silverleaf Brew
@@ -298773,7 +298776,6 @@
 213597@@@Reins of the Forest Windsteed
 213598@@@Reins of the Dashing Windsteed
 213600@@@Reins of the Marble Quilen
-213601@@@Reins of the Guardian Quilen
 213602@@@Reins of the Gilded Riding Crane
 213603@@@Reins of the Pale Riding Crane
 213604@@@Reins of the Tropical Riding Crane
@@ -323595,7 +323597,6 @@
 252021@@@Flawed Lightbound Crystal
 252137@@@Lil' Chompers
 252193@@@Slippery Saul
-252194@@@Fishmonger May
 252195@@@Fishstick Keith
 252199@@@Festive Eve
 252200@@@Bundled-up Bob

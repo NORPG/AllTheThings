@@ -378,6 +378,8 @@
 1291315@@@Spring Panda
 3.80.1.68768
 1301737@@@Sunflash Driftmoth
+3.80.2.68943
+435115@@@Guardian Quilen
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -1896,7 +1898,6 @@
 435107@@@Forest Windsteed
 435108@@@Daystorm Windsteed
 435109@@@Feathered Windsurfer
-435115@@@Guardian Quilen
 435118@@@Marble Quilen
 435123@@@Gilded Riding Crane
 435124@@@Luxurious Riding Crane
