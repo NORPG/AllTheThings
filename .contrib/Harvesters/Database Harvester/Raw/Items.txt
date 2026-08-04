@@ -37262,6 +37262,55 @@
 279240@@@Shroud of Winter's Chill
 279241@@@Shroud of Winter's Chill
 279242@@@Shroud of Winter's Chill
+2.5.6.68941
+281726@@@Dark Iron Smoking Pipe
+281734@@@Dark Iron Smoking Pipe
+281735@@@Dark Iron Smoking Pipe
+281736@@@Dark Iron Smoking Pipe
+281737@@@Empty Mug of Direbrew
+281738@@@Empty Mug of Direbrew
+281739@@@Empty Mug of Direbrew
+281740@@@Empty Mug of Direbrew
+281741@@@Coren's Lucky Coin
+281742@@@Coren's Lucky Coin
+281743@@@Coren's Lucky Coin
+281744@@@Coren's Lucky Coin
+281745@@@Direbrew Hops
+281747@@@Direbrew Hops
+281748@@@Direbrew Hops
+281749@@@Direbrew Hops
+281892@@@Balebrew Charm
+281893@@@Balebrew Charm
+281894@@@Brightbrew Charm
+281895@@@Brightbrew Charm
+281897@@@Brightbrew Charm
+281898@@@Brightbrew Charm
+281899@@@Balebrew Charm
+281900@@@Balebrew Charm
+281901@@@Direbrew's Shanker
+281902@@@Direbrew's Shanker
+281903@@@Direbrew's Shanker
+281904@@@Direbrew's Shanker
+281905@@@Ring of Ghoulish Delight
+281906@@@Ring of Ghoulish Delight
+281907@@@Ring of Ghoulish Delight
+281908@@@Ring of Ghoulish Delight
+281909@@@The Horseman's Signet Ring
+281910@@@The Horseman's Signet Ring
+281911@@@The Horseman's Signet Ring
+281912@@@The Horseman's Signet Ring
+281913@@@Witches Band
+281914@@@Witches Band
+281915@@@Witches Band
+281916@@@Witches Band
+281917@@@The Horseman's Helm
+281918@@@The Horseman's Helm
+281919@@@The Horseman's Helm
+281920@@@The Horseman's Helm
+281921@@@The Horseman's Blade
+281922@@@The Horseman's Blade
+281923@@@The Horseman's Blade
+281924@@@The Horseman's Blade
 3.4.0.43659
 1100@@@Monster Bag
 1254@@@Lesser Firestone (DEPRECATED)
