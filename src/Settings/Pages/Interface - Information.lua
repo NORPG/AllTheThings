@@ -72,7 +72,7 @@ local ConversionMethods = setmetatable({
 		end
 		local icon = GetSpellIcon(spellID);
 		if icon then
-			name = "|T" .. icon .. ":0|t" .. name;
+			name = "|T" .. icon .. ":0|t " .. name;
 		end
 		return name;
 	end,
@@ -105,7 +105,7 @@ local ConversionMethods = setmetatable({
 		end
 		local icon = item and item.icon
 		if icon then
-			link = "|T" .. icon .. ":0|t" .. link
+			link = "|T" .. icon .. ":0|t " .. link
 		end
 		if app.Settings:GetTooltipSetting("itemID") then
 			return link .. " (" .. itemID .. ")"
