@@ -40,74 +40,77 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	})),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
-			spell(188299, {	-- Ancient Healing Potion [Rank 2]
-				i(127935),	-- Recipe: Ancient Healing Potion [Rank 3] (RECIPE!)
+			i(127935, {	-- Recipe: Ancient Healing Potion [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188299 },	-- Ancient Healing Potion [Rank 2]
 			}),
-			spell(188301, {	-- Ancient Mana Potion [Rank 1]
-				i(127918),	-- Recipe: Ancient Mana Potion [Rank 2] (RECIPE!)
+			i(127918, {	-- Recipe: Ancient Mana Potion [Rank 2] (RECIPE!)
+				["provider"] = { "s", 188301 },	-- Ancient Mana Potion [Rank 1]
 			}),
-			spell(188302, {	-- Ancient Mana Potion [Rank 2]
-				i(127936),	-- Recipe: Ancient Mana Potion [Rank 3] (RECIPE!)
+			i(127936, {	-- Recipe: Ancient Mana Potion [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188302 },	-- Ancient Mana Potion [Rank 2]
 			}),
-			spell(188304, {	-- Ancient Rejuvenation Potion [Rank 1]
-				i(127919),	-- Recipe: Ancient Rejuvenation Potion [Rank 2] (RECIPE!)
+			i(127919, {	-- Recipe: Ancient Rejuvenation Potion [Rank 2] (RECIPE!)
+				["provider"] = { "s", 188304 },	-- Ancient Rejuvenation Potion [Rank 1]
 			}),
-			spell(188305, {	-- Ancient Rejuvenation Potion [Rank 2]
-				i(127937),	-- Recipe: Ancient Rejuvenation Potion [Rank 3] (RECIPE!)
+			i(127937, {	-- Recipe: Ancient Rejuvenation Potion [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188305 },	-- Ancient Rejuvenation Potion [Rank 2]
 			}),
-			spell(251646, bubbleDownSelf({["timeline"] = { ADDED_7_3_0 } }, {	-- Astral Healing Potion
-				i(152617),	-- Recipe: Astral Healing Potion [Rank 2]
-			})),
-			spell(188314, {	-- Avalanche Elixir [Rank 2]
-				i(127940),	-- Recipe: Avalanche Elixir [Rank 3] (RECIPE!)
+			i(152617, {	-- Recipe: Astral Healing Potion [Rank 2]
+				["provider"] = { "s", 251646 },	-- Astral Healing Potion
+				["timeline"] = { ADDED_7_3_0 },
 			}),
-			spell(188308, {	-- Draught of Raw Magic [Rank 2]
-				i(127938),	-- Recipe: Draught of Raw Magic [Rank 3] (RECIPE!)
+			i(127940, {	-- Recipe: Avalanche Elixir [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188314 },	-- Avalanche Elixir [Rank 2]
 			}),
-			spell(188347, {	-- Flask of Ten Thousand Scars [Rank 2]
-				i(127951),	-- Recipe: Flask of Ten Thousand Scars [Rank 3] (RECIPE!)
+			i(127938, {	-- Recipe: Draught of Raw Magic [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188308 },	-- Draught of Raw Magic [Rank 2]
 			}),
-			spell(188344, {	-- Flask of the Countless Armies [Rank 2]
-				i(127950),	-- Recipe: Flask of the Countless Armies [Rank 3] (RECIPE!)
+			i(127951, {	-- Recipe: Flask of Ten Thousand Scars [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188347 },	-- Flask of Ten Thousand Scars [Rank 2]
 			}),
-			spell(188341, {	-- Flask of the Seventh Demon [Rank 2]
-				i(127949),	-- Recipe: Flask of the Seventh Demon [Rank 3] (RECIPE!)
+			i(127950, {	-- Recipe: Flask of the Countless Armies [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188344 },	-- Flask of the Countless Armies [Rank 2]
 			}),
-			spell(188338, {	-- Flask of the Whispered Pact [Rank 2]
-				i(127948),	-- Recipe: Flask of the Whispered Pact [Rank 3] (RECIPE!)
+			i(127949, {	-- Recipe: Flask of the Seventh Demon [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188341 },	-- Flask of the Seventh Demon [Rank 2]
 			}),
-			spell(188323, {	-- Infernal Alchemist Stone [Rank 2]
-				i(127943),	-- Recipe: Infernal Alchemist Stone [Rank 3] (RECIPE!)
+			i(127948, {	-- Recipe: Flask of the Whispered Pact [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188338 },	-- Flask of the Whispered Pact [Rank 2]
 			}),
-			spell(188335, {	-- Leytorrent Potion [Rank 2]
-				i(127947),	-- Recipe: Leytorrent Potion [Rank 3] (RECIPE!)
+			i(127943, {	-- Recipe: Infernal Alchemist Stone [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188323 },	-- Infernal Alchemist Stone [Rank 2]
 			}),
-			spell(247620, bubbleDownSelf({["timeline"] = { ADDED_7_3_0 } }, {	-- Lightblood Elixir [Rank 2]
-				i(151659),	-- Recipe: Lightblood Elixir [Rank 3] (RECIPE!)
-			})),
-			spell(188326, {	-- Potion of Deadly Grace [Rank 2]
-				i(127944),	-- Recipe: Potion of Deadly Grace [Rank 3] (RECIPE!)
+			i(127947, {	-- Recipe: Leytorrent Potion [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188335 },	-- Leytorrent Potion [Rank 2]
 			}),
-			spell(188329, {	-- Potion of the Old War [Rank 2]
-				i(127945),	-- Recipe: Potion of the Old War [Rank 3] (RECIPE!)
+			i(151659, {	-- Recipe: Lightblood Elixir [Rank 3] (RECIPE!)
+				["provider"] = { "s", 247620 },	-- Lightblood Elixir [Rank 2]
+				["timeline"] = { ADDED_7_3_0 },
 			}),
-			spell(188317, {	-- Skaggldrynk [Rank 2]
-				i(127941),	-- Recipe: Skaggldrynk [Rank 3] (RECIPE!)
+			i(127944, {	-- Recipe: Potion of Deadly Grace [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188326 },	-- Potion of Deadly Grace [Rank 2]
 			}),
-			spell(188320, {	-- Skystep Potion [Rank 2]
-				i(127942),	-- Recipe: Skystep Potion [Rank 3] (RECIPE!)
+			i(127945, {	-- Recipe: Potion of the Old War [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188329 },	-- Potion of the Old War [Rank 2]
 			}),
-			spell(188350, {	-- Spirit Cauldron [Rank 2]
-				i(127952),	-- Recipe: Spirit Cauldron [Rank 3] (RECIPE!)
+			i(127941, {	-- Recipe: Skaggldrynk [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188317 },	-- Skaggldrynk [Rank 2]
 			}),
-			spell(188311, {	-- Sylvan Elixir [Rank 2]
-				i(127939),	-- Recipe: Sylvan Elixir [Rank 3] (RECIPE!)
+			i(127942, {	-- Recipe: Skystep Potion [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188320 },	-- Skystep Potion [Rank 2]
 			}),
-			spell(247690, bubbleDownSelf({["timeline"] = { ADDED_7_3_0 } }, {	-- Tears of the Naaru [Rank 2]
-				i(151705),	-- Recipe: Tears of the Naaru [Rank 3] (RECIPE!)
-			})),
-			spell(188332, {	-- Unbending Potion [Rank 2]
-				i(127946),	-- Recipe: Unbending Potion [Rank 3] (RECIPE!)
+			i(127952, {	-- Recipe: Spirit Cauldron [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188350 },	-- Spirit Cauldron [Rank 2]
+			}),
+			i(127939, {	-- Recipe: Sylvan Elixir [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188311 },	-- Sylvan Elixir [Rank 2]
+			}),
+			i(151705, {	-- Recipe: Tears of the Naaru [Rank 3] (RECIPE!)
+				["provider"] = { "s", 247690 },	-- Tears of the Naaru [Rank 2]
+				["timeline"] = { ADDED_7_3_0 },
+			}),
+			i(127946, {	-- Recipe: Unbending Potion [Rank 3] (RECIPE!)
+				["provider"] = { "s", 188332 },	-- Unbending Potion [Rank 2]
 			}),
 			spell(188800, {	-- Wild Transformation [Rank 1]
 				i(128210),	-- Recipe: Wild Transmutation [Rank 2] (RECIPE!)
@@ -147,7 +150,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 					i(139789),	-- Transmutant (PET!)
 				},
 			}),
-			spell(213256, {	-- Transmute: Meat to Pet
+			header(HEADER.Spell, 213256, {	-- Transmute: Meat to Pet
 				i(137599),	-- Pulsating Sac
 			}),
 		}),
