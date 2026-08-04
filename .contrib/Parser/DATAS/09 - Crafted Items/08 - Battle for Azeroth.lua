@@ -1013,42 +1013,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(JEWELCRAFTING, {
 		n(DISCOVERY, {
-			-- TODO these are wrong and need to be fixed to have proper pre-recipe providers, not their 'own' recipe
 			i(168772, {	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
-				["timeline"] = { ADDED_8_2_0 },
-				["provider"] = { "s", 299018 },	-- Ascended Leviathan's Eye Loop
-			}),
-			i(171083, {	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
-				["timeline"] = { ADDED_8_3_0 },
-				["provider"] = { "s", 305981 },	-- Awakened Leviathan's Eye Loop
-			}),
-			i(168771, {	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
 				["timeline"] = { ADDED_8_2_0 },
 				["provider"] = { "s", 299017 },	-- Crushing Leviathan's Eye Loop
 			}),
+			i(171083, {	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305982 },	-- Unbound Leviathan's Eye Loop
+			}),
+			i(168771, {	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299016 },	-- Leviathan's Eye Loop
+			}),
 			i(166541, {	-- Design: Emblazoned Kraken's Eye Loop (RECIPE!)
-				["timeline"] = { ADDED_8_1_0 },
-				["provider"] = { "s", 289175 },	-- Emblazoned Kraken's Eye Loop
-			}),
-			i(166543, {	-- Design: Eternal Kraken's Eye Loop (RECIPE!)
-				["timeline"] = { ADDED_8_1_0 },
-				["provider"] = { "s", 289181 },	-- Eternal Kraken's Eye Loopp
-			}),
-			i(166540, {	-- Design: Imbued Kraken's Eye Loop (RECIPE!)
 				["timeline"] = { ADDED_8_1_0 },
 				["provider"] = { "s", 289174 },	-- Imbued Kraken's Eye Loop
 			}),
-			i(166542, {	-- Design: Spirited Kraken's Eye Loop (RECIPE!)
+			i(166543, {	-- Design: Eternal Kraken's Eye Loop (RECIPE!)
 				["timeline"] = { ADDED_8_1_0 },
 				["provider"] = { "s", 289180 },	-- Spirited Kraken's Eye Loop
 			}),
+			i(166540, {	-- Design: Imbued Kraken's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 289105 },	-- Kraken's Eye Loop
+			}),
+			i(166542, {	-- Design: Spirited Kraken's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 289179 },	-- Tidal Kraken's Eye Loop
+			}),
 			i(171082, {	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
 				["timeline"] = { ADDED_8_3_0 },
-				["provider"] = { "s", 305980 },	-- Peerless Leviathan's Eye Loop
-			}),
-			i(174365, {	-- Design: Unbound Leviathan's Eye Loop (RECIPE!)
-				["timeline"] = { ADDED_8_3_0 },
-				["provider"] = { "s", 305982 },	-- Unbound Leviathan's Eye Loop
+				["provider"] = { "s", 305981 },	-- Awakened Leviathan's Eye Loop
 			}),
 		}),
 		header(HEADERS.Spell, 31252, {	-- Prospecting
