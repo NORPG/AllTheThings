@@ -95,45 +95,77 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	}),
 	prof(BLACKSMITHING, {
 		n(DISCOVERY, {
-			spell(307705, {	-- Shadowghast Armguards [Rank 1]
-				r(332006),	-- Shadowghast Armguards [Rank 2] (RECIPE!)
-				r(332041),	-- Shadowghast Armguards [Rank 3] (RECIPE!)
-				r(338976),	-- Shadowghast Armguards [Rank 4] (RECIPE!)
+			r(332006, {	-- Shadowghast Armguards [Rank 2] (RECIPE!)
+				["provider"] = { "s", 307705 },	-- Shadowghast Armguards [Rank 1]
 			}),
-			spell(307712, {	-- Shadowghast Breastplate [Rank 1]
-				r(332013),	-- Shadowghast Breastplate [Rank 2] (RECIPE!)
-				r(332048),	-- Shadowghast Breastplate [Rank 3] (RECIPE!)
-				r(338968),	-- Shadowghast Breastplate [Rank 4] (RECIPE!)
+			r(332041, {	-- Shadowghast Armguards [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332006 },	-- Shadowghast Armguards [Rank 2]
 			}),
-			spell(307710, {	-- Shadowghast Gauntlets [Rank 1]
-				r(332011),	-- Shadowghast Gauntlets [Rank 2] (RECIPE!)
-				r(332046),	-- Shadowghast Gauntlets [Rank 3] (RECIPE!)
-				r(338970),	-- Shadowghast Gauntlets [Rank 4] (RECIPE!)
+			r(338976, {	-- Shadowghast Armguards [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332041 },	-- Shadowghast Armguards [Rank 3]
 			}),
-			spell(307708, {	-- Shadowghast Greaves [Rank 1]
-				r(332009),	-- Shadowghast Greaves [Rank 2] (RECIPE!)
-				r(332044),	-- Shadowghast Greaves [Rank 3] (RECIPE!)
-				r(338972),	-- Shadowghast Greaves [Rank 4] (RECIPE!)
+			r(332013, {	-- Shadowghast Breastplate [Rank 2] (RECIPE!)
+				["provider"] = { "s", 307712 },	-- Shadowghast Breastplate [Rank 1]
 			}),
-			spell(307709, {	-- Shadowghast Helm [Rank 1]
-				r(332010),	-- Shadowghast Helm [Rank 2] (RECIPE!)
-				r(332045),	-- Shadowghast Helm [Rank 3] (RECIPE!)
-				r(338971),	-- Shadowghast Helm [Rank 4] (RECIPE!)
+			r(332048, {	-- Shadowghast Breastplate [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332013 },	-- Shadowghast Breastplate [Rank 2]
 			}),
-			spell(307707, {	-- Shadowghast Pauldrons [Rank 1]
-				r(332008),	-- Shadowghast Pauldrons [Rank 2] (RECIPE!)
-				r(332043),	-- Shadowghast Pauldrons [Rank 3] (RECIPE!)
-				r(338974),	-- Shadowghast Pauldrons [Rank 4] (RECIPE!)
+			r(338968, {	-- Shadowghast Breastplate [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332048 },	-- Shadowghast Breastplate [Rank 3]
 			}),
-			spell(307711, {	-- Shadowghast Sabatons [Rank 1]
-				r(332012),	-- Shadowghast Sabatons [Rank 2] (RECIPE!)
-				r(332047),	-- Shadowghast Sabatons [Rank 3] (RECIPE!)
-				r(338969),	-- Shadowghast Sabatons [Rank 4] (RECIPE!)
+			r(332011, {	-- Shadowghast Gauntlets [Rank 2] (RECIPE!)
+				["provider"] = { "s", 307710 },	-- Shadowghast Gauntlets [Rank 1]
 			}),
-			spell(307706, {	-- Shadowghast Waistguard [Rank 1]
-				r(332007),	-- Shadowghast Waistguard [Rank 2] (RECIPE!)
-				r(332042),	-- Shadowghast Waistguard [Rank 3] (RECIPE!)
-				r(338975),	-- Shadowghast Waistguard [Rank 4] (RECIPE!)
+			r(332046, {	-- Shadowghast Gauntlets [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332011 },	-- Shadowghast Gauntlets [Rank 2]
+			}),
+			r(338970, {	-- Shadowghast Gauntlets [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332046 },	-- Shadowghast Gauntlets [Rank 3]
+			}),
+			r(332009, {	-- Shadowghast Greaves [Rank 2] (RECIPE!)
+				["provider"] = { "s", 307708 },	-- Shadowghast Greaves [Rank 1]
+			}),
+			r(332044, {	-- Shadowghast Greaves [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332009 },	-- Shadowghast Greaves [Rank 2]
+			}),
+			r(338972, {	-- Shadowghast Greaves [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332044 },	-- Shadowghast Greaves [Rank 3]
+			}),
+			r(332010, {	-- Shadowghast Helm [Rank 2] (RECIPE!)
+				["provider"] = { "s", 307709 },	-- Shadowghast Helm [Rank 1]
+			}),
+			r(332045, {	-- Shadowghast Helm [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332010 },	-- Shadowghast Helm [Rank 2]
+			}),
+			r(338971, {	-- Shadowghast Helm [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332045 },	-- Shadowghast Helm [Rank 3]
+			}),
+			r(332008, {	-- Shadowghast Pauldrons [Rank 2] (RECIPE!)
+				["provider"] = { "s", 307707 },	-- Shadowghast Pauldrons [Rank 1]
+			}),
+			r(332043, {	-- Shadowghast Pauldrons [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332008 },	-- Shadowghast Pauldrons [Rank 2]
+			}),
+			r(338974, {	-- Shadowghast Pauldrons [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332043 },	-- Shadowghast Pauldrons [Rank 3]
+			}),
+			r(332012, {	-- Shadowghast Sabatons [Rank 2] (RECIPE!)
+				["provider"] = { "s", 307711 },	-- Shadowghast Sabatons [Rank 1]
+			}),
+			r(332047, {	-- Shadowghast Sabatons [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332012 },	-- Shadowghast Sabatons [Rank 2]
+			}),
+			r(338969, {	-- Shadowghast Sabatons [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332047 },	-- Shadowghast Sabatons [Rank 3]
+			}),
+			r(332007, {	-- Shadowghast Waistguard [Rank 2] (RECIPE!)
+				["provider"] = { "s", 307706 },	-- Shadowghast Waistguard [Rank 1]
+			}),
+			r(332042, {	-- Shadowghast Waistguard [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332007 },	-- Shadowghast Waistguard [Rank 2]
+			}),
+			r(338975, {	-- Shadowghast Waistguard [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332042 },	-- Shadowghast Waistguard [Rank 3]
 			}),
 		}),
 		n(ARMOR, {
@@ -469,15 +501,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(173110),	-- Umbryl
 		}),
 		n(DISCOVERY, {
-			spell(327921, {	-- Shadowghast Necklace [Rank 1]
-				r(332040),	-- Shadowghast Necklace [Rank 2]
-				r(332075),	-- Shadowghast Necklace [Rank 3]
-				r(338977),	-- Shadowghast Necklace [Rank 4]
+			r(332040, {	-- Shadowghast Necklace [Rank 2]
+				["provider"] = { "s", 327921 },	-- Shadowghast Necklace [Rank 1]
 			}),
-			spell(327920, {	-- Shadowghast Ring [Rank 1]
-				r(332039),	-- Shadowghast Ring [Rank 2]
-				r(332074),	-- Shadowghast Ring [Rank 3]
-				r(338978),	-- Shadowghast Ring [Rank 4]
+			r(332075, {	-- Shadowghast Necklace [Rank 3]
+				["provider"] = { "s", 332040 },	-- Shadowghast Necklace [Rank 2]
+			}),
+			r(338977, {	-- Shadowghast Necklace [Rank 4]
+				["provider"] = { "s", 332075 },	-- Shadowghast Necklace [Rank 3]
+			}),
+			r(332039, {	-- Shadowghast Ring [Rank 2]
+				["provider"] = { "s", 327920 },	-- Shadowghast Ring [Rank 1]
+			}),
+			r(332074, {	-- Shadowghast Ring [Rank 3]
+				["provider"] = { "s", 332039 },	-- Shadowghast Ring [Rank 2]
+			}),
+			r(338978, {	-- Shadowghast Ring [Rank 4]
+				["provider"] = { "s", 332074 },	-- Shadowghast Ring [Rank 3]
 			}),
 		}),
 		filter(COSMETIC, {
@@ -530,85 +570,149 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	}),
 	prof(LEATHERWORKING, {
 		n(DISCOVERY, {
-			spell(309213, {	-- Boneshatter Armguards [Rank 1]
-				r(332029),	-- Boneshatter Armguards [Rank 2] (RECIPE!)
-				r(332064),	-- Boneshatter Armguards [Rank 3] (RECIPE!)
-				r(338994),	-- Boneshatter Armguards [Rank 4] (RECIPE!)
+			r(332029, {	-- Boneshatter Armguards [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309213 },	-- Boneshatter Armguards [Rank 1]
 			}),
-			spell(309208, {	-- Boneshatter Gauntlets [Rank 1]
-				r(332024),	-- Boneshatter Gauntlets [Rank 2] (RECIPE!)
-				r(332059),	-- Boneshatter Gauntlets [Rank 3] (RECIPE!)
-				r(338989),	-- Boneshatter Gauntlets [Rank 4] (RECIPE!)
+			r(332064, {	-- Boneshatter Armguards [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332029 },	-- Boneshatter Armguards [Rank 2]
 			}),
-			spell(309210, {	-- Boneshatter Greaves [Rank 1]
-				r(332026),	-- Boneshatter Greaves [Rank 2] (RECIPE!)
-				r(332061),	-- Boneshatter Greaves [Rank 3] (RECIPE!)
-				r(338991),	-- Boneshatter Greaves [Rank 4] (RECIPE!)
+			r(338994, {	-- Boneshatter Armguards [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332064 },	-- Boneshatter Armguards [Rank 3]
 			}),
-			spell(309209, {	-- Boneshatter Helm [Rank 1]
-				r(332025),	-- Boneshatter Helm [Rank 2] (RECIPE!)
-				r(332060),	-- Boneshatter Helm [Rank 3] (RECIPE!)
-				r(338990),	-- Boneshatter Helm [Rank 4] (RECIPE!)
+			r(332024, {	-- Boneshatter Gauntlets [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309208 },	-- Boneshatter Gauntlets [Rank 1]
 			}),
-			spell(309211, {	-- Boneshatter Pauldrons [Rank 1]
-				r(332027),	-- Boneshatter Pauldrons [Rank 2] (RECIPE!)
-				r(332062),	-- Boneshatter Pauldrons [Rank 3] (RECIPE!)
-				r(338992),	-- Boneshatter Pauldrons [Rank 4] (RECIPE!)
+			r(332059, {	-- Boneshatter Gauntlets [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332024 },	-- Boneshatter Gauntlets [Rank 2]
 			}),
-			spell(309206, {	-- Boneshatter Treads [Rank 1]
-				r(332022),	-- Boneshatter Treads [Rank 2] (RECIPE!)
-				r(332057),	-- Boneshatter Treads [Rank 3] (RECIPE!)
-				r(338988),	-- Boneshatter Treads [Rank 4] (RECIPE!)
+			r(338989, {	-- Boneshatter Gauntlets [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332059 },	-- Boneshatter Gauntlets [Rank 3]
 			}),
-			spell(309207, {	-- Boneshatter Vest [Rank 1]
-				r(332023),	-- Boneshatter Vest [Rank 2] (RECIPE!)
-				r(332058),	-- Boneshatter Vest [Rank 3] (RECIPE!)
-				r(338987),	-- Boneshatter Vest [Rank 4] (RECIPE!)
+			r(332026, {	-- Boneshatter Greaves [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309210 },	-- Boneshatter Greaves [Rank 1]
 			}),
-			spell(309212, {	-- Boneshatter Waistguard [Rank 1]
-				r(332028),	-- Boneshatter Waistguard [Rank 2] (RECIPE!)
-				r(332063),	-- Boneshatter Waistguard [Rank 3] (RECIPE!)
-				r(338993),	-- Boneshatter Waistguard [Rank 4] (RECIPE!)
+			r(332061, {	-- Boneshatter Greaves [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332026 },	-- Boneshatter Greaves [Rank 2]
 			}),
-			spell(309205, {	-- Umbrahide Armguards [Rank 1]
-				r(332021),	-- Umbrahide Armguards [Rank 2] (RECIPE!)
-				r(332056),	-- Umbrahide Armguards [Rank 3] (RECIPE!)
-				r(338986),	-- Umbrahide Armguards [Rank 4] (RECIPE!)
+			r(338991, {	-- Boneshatter Greaves [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332061 },	-- Boneshatter Greaves [Rank 3]
 			}),
-			spell(309200, {	-- Umbrahide Gauntlets [Rank 1]
-				r(332016),	-- Umbrahide Gauntlets [Rank 2] (RECIPE!)
-				r(332051),	-- Umbrahide Gauntlets [Rank 3] (RECIPE!)
-				r(338981),	-- Umbrahide Gauntlets [Rank 4] (RECIPE!)
+			r(332025, {	-- Boneshatter Helm [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309209 },	-- Boneshatter Helm [Rank 1]
 			}),
-			spell(309201, {	-- Umbrahide Helm [Rank 1]
-				r(332017),	-- Umbrahide Helm [Rank 2] (RECIPE!)
-				r(332052),	-- Umbrahide Helm [Rank 3] (RECIPE!)
-				r(338982),	-- Umbrahide Helm [Rank 4] (RECIPE!)
+			r(332060, {	-- Boneshatter Helm [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332025 },	-- Boneshatter Helm [Rank 2]
 			}),
-			spell(309202, {	-- Umbrahide Leggings [Rank 1]
-				r(332018),	-- Umbrahide Leggings [Rank 2] (RECIPE!)
-				r(332053),	-- Umbrahide Leggings [Rank 3] (RECIPE!)
-				r(338983),	-- Umbrahide Leggings [Rank 4] (RECIPE!)
+			r(338990, {	-- Boneshatter Helm [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332060 },	-- Boneshatter Helm [Rank 3]
 			}),
-			spell(309203, {	-- Umbrahide Pauldrons [Rank 1]
-				r(332019),	-- Umbrahide Pauldrons [Rank 2] (RECIPE!)
-				r(332054),	-- Umbrahide Pauldrons [Rank 3] (RECIPE!)
-				r(338984),	-- Umbrahide Pauldrons [Rank 4] (RECIPE!)
+			r(332027, {	-- Boneshatter Pauldrons [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309211 },	-- Boneshatter Pauldrons [Rank 1]
 			}),
-			spell(309198, {	-- Umbrahide Treads [Rank 1]
-				r(332014),	-- Umbrahide Treads [Rank 2] (RECIPE!)
-				r(332049),	-- Umbrahide Treads [Rank 3] (RECIPE!)
-				r(338980),	-- Umbrahide Treads [Rank 4] (RECIPE!)
+			r(332062, {	-- Boneshatter Pauldrons [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332027 },	-- Boneshatter Pauldrons [Rank 2]
 			}),
-			spell(309199, {	-- Umbrahide Vest [Rank 1]
-				r(332015),	-- Umbrahide Vest [Rank 2] (RECIPE!)
-				r(332050),	-- Umbrahide Vest [Rank 3] (RECIPE!)
-				r(338979),	-- Umbrahide Vest [Rank 4] (RECIPE!)
+			r(338992, {	-- Boneshatter Pauldrons [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332062 },	-- Boneshatter Pauldrons [Rank 3]
 			}),
-			spell(309204, {	-- Umbrahide Waistguard [Rank 1]
-				r(332020),	-- Umbrahide Waistguard [Rank 2] (RECIPE!)
-				r(332055),	-- Umbrahide Waistguard [Rank 3] (RECIPE!)
-				r(338985),	-- Umbrahide Waistguard [Rank 4] (RECIPE!)
+			r(332022, {	-- Boneshatter Treads [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309206 },	-- Boneshatter Treads [Rank 1]
+			}),
+			r(332057, {	-- Boneshatter Treads [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332022 },	-- Boneshatter Treads [Rank 2]
+			}),
+			r(338988, {	-- Boneshatter Treads [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332057 },	-- Boneshatter Treads [Rank 3]
+			}),
+			r(332023, {	-- Boneshatter Vest [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309207 },	-- Boneshatter Vest [Rank 1]
+			}),
+			r(332058, {	-- Boneshatter Vest [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332023 },	-- Boneshatter Vest [Rank 2]
+			}),
+			r(338987, {	-- Boneshatter Vest [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332058 },	-- Boneshatter Vest [Rank 3]
+			}),
+			r(332028, {	-- Boneshatter Waistguard [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309212 },	-- Boneshatter Waistguard [Rank 1]
+			}),
+			r(332063, {	-- Boneshatter Waistguard [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332028 },	-- Boneshatter Waistguard [Rank 2]
+			}),
+			r(338993, {	-- Boneshatter Waistguard [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332063 },	-- Boneshatter Waistguard [Rank 3]
+			}),
+			r(332021, {	-- Umbrahide Armguards [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309205 },	-- Umbrahide Armguards [Rank 1]
+			}),
+			r(332056, {	-- Umbrahide Armguards [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332021 },	-- Umbrahide Armguards [Rank 2]
+			}),
+			r(338986, {	-- Umbrahide Armguards [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332056 },	-- Umbrahide Armguards [Rank 3]
+			}),
+			r(332016, {	-- Umbrahide Gauntlets [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309200 },	-- Umbrahide Gauntlets [Rank 1]
+			}),
+			r(332051, {	-- Umbrahide Gauntlets [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332016 },	-- Umbrahide Gauntlets [Rank 2]
+			}),
+			r(338981, {	-- Umbrahide Gauntlets [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332051 },	-- Umbrahide Gauntlets [Rank 3]
+			}),
+			r(332017, {	-- Umbrahide Helm [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309201 },	-- Umbrahide Helm [Rank 1]
+			}),
+			r(332052, {	-- Umbrahide Helm [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332017 },	-- Umbrahide Helm [Rank 2]
+			}),
+			r(338982, {	-- Umbrahide Helm [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332052 },	-- Umbrahide Helm [Rank 3]
+			}),
+			r(332018, {	-- Umbrahide Leggings [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309202 },	-- Umbrahide Leggings [Rank 1]
+			}),
+			r(332053, {	-- Umbrahide Leggings [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332018 },	-- Umbrahide Leggings [Rank 2]
+			}),
+			r(338983, {	-- Umbrahide Leggings [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332053 },	-- Umbrahide Leggings [Rank 3]
+			}),
+			r(332019, {	-- Umbrahide Pauldrons [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309203 },	-- Umbrahide Pauldrons [Rank 1]
+			}),
+			r(332054, {	-- Umbrahide Pauldrons [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332019 },	-- Umbrahide Pauldrons [Rank 2]
+			}),
+			r(338984, {	-- Umbrahide Pauldrons [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332054 },	-- Umbrahide Pauldrons [Rank 3]
+			}),
+			r(332014, { 	-- Umbrahide Treads [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309198 },	-- Umbrahide Treads [Rank 1]
+			}),
+			r(332049, {	-- Umbrahide Treads [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332014 },	-- Umbrahide Treads [Rank 2]
+			}),
+			r(338980, {	-- Umbrahide Treads [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332049 },	-- Umbrahide Treads [Rank 3]
+			}),
+			r(332015, {	-- Umbrahide Vest [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309199 },	-- Umbrahide Vest [Rank 1]
+			}),
+			r(332050, {	-- Umbrahide Vest [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332015 },	-- Umbrahide Vest [Rank 2]
+			}),
+			r(338979, {	-- Umbrahide Vest [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332050 },	-- Umbrahide Vest [Rank 3]
+			}),
+			r(332020, {	-- Umbrahide Waistguard [Rank 2] (RECIPE!)
+				["provider"] = { "s", 309204 },	-- Umbrahide Waistguard [Rank 1]
+			}),
+			r(332055, {	-- Umbrahide Waistguard [Rank 3] (RECIPE!)
+				["provider"] = { "s", 332020 },	-- Umbrahide Waistguard [Rank 2]
+			}),
+			r(338985, {	-- Umbrahide Waistguard [Rank 4] (RECIPE!)
+				["provider"] = { "s", 332055 },	-- Umbrahide Waistguard [Rank 3]
 			}),
 		}),
 		n(ARMOR, {
@@ -726,50 +830,86 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {
-			spell(310885, {	-- Grim-Veiled Belt [Rank 1]
-				r(332037),	-- Grim-Veiled Belt [Rank 2]
-				r(332072),	-- Grim-Veiled Belt [Rank 3]
-				r(339003),	-- Grim-Veiled Belt [Rank 4]
+			r(332037, { 	-- Grim-Veiled Belt [Rank 2]
+				["provider"] = { "s", 310885 },	-- Grim-Veiled Belt [Rank 1]
 			}),
-			spell(310886, {	-- Grim-Veiled Bracers [Rank 1]
-				r(332038),	-- Grim-Veiled Bracers [Rank 2]
-				r(332073),	-- Grim-Veiled Bracers [Rank 3]
-				r(339004),	-- Grim-Veiled Bracers [Rank 4]
+			r(332072, { 	-- Grim-Veiled Belt [Rank 3]
+				["provider"] = { "s", 332037 },	-- Grim-Veiled Belt [Rank 2]
 			}),
-			spell(310880, {	-- Grim-Veiled Cape [Rank 1]
-				r(332032),	-- Grim-Veiled Cape [Rank 2]
-				r(332067),	-- Grim-Veiled Cape [Rank 3]
-				r(338995),	-- Grim-Veiled Cape [Rank 4]
+			r(339003, { 	-- Grim-Veiled Belt [Rank 4]
+				["provider"] = { "s", 332072 },	-- Grim-Veiled Belt [Rank 3]
 			}),
-			spell(310882, {	-- Grim-Veiled Hood [Rank 1]
-				r(332034),	-- Grim-Veiled Hood [Rank 2]
-				r(332069),	-- Grim-Veiled Hood [Rank 3]
-				r(339000),	-- Grim-Veiled Hood [Rank 4]
+			r(332038, { 	-- Grim-Veiled Bracers [Rank 2]
+				["provider"] = { "s", 310886 },	-- Grim-Veiled Bracers [Rank 1]
 			}),
-			spell(310881, {	-- Grim-Veiled Mittens [Rank 1]
-				r(332033),	-- Grim-Veiled Mittens [Rank 2]
-				r(332068),	-- Grim-Veiled Mittens [Rank 3]
-				r(338998),	-- Grim-Veiled Mittens [Rank 4]
+			r(332073, { 	-- Grim-Veiled Bracers [Rank 3]
+				["provider"] = { "s", 332038 },	-- Grim-Veiled Bracers [Rank 2]
 			}),
-			spell(310883, {	-- Grim-Veiled Pants [Rank 1]
-				r(332035),	-- Grim-Veiled Pants [Rank 2]
-				r(332070),	-- Grim-Veiled Pants [Rank 3]
-				r(339001),	-- Grim-Veiled Pants [Rank 4]
+			r(339004, { 	-- Grim-Veiled Bracers [Rank 4]
+				["provider"] = { "s", 332073 },	-- Grim-Veiled Bracers [Rank 3]
 			}),
-			spell(310879, {	-- Grim-Veiled Robe [Rank 1]
-				r(332031),	-- Grim-Veiled Robe [Rank 2]
-				r(332066),	-- Grim-Veiled Robe [Rank 3]
-				r(338996),	-- Grim-Veiled Robe [Rank 4]
+			r(332032, { 	-- Grim-Veiled Cape [Rank 2]
+				["provider"] = { "s", 310880 },	-- Grim-Veiled Cape [Rank 1]
 			}),
-			spell(310878, {	-- Grim-Veiled Sandals [Rank 1]
-				r(332030),	-- Grim-Veiled Sandals [Rank 2]
-				r(332065),	-- Grim-Veiled Sandals [Rank 3]
-				r(338997),	-- Grim-Veiled Sandals [Rank 4]
+			r(332067, { 	-- Grim-Veiled Cape [Rank 3]
+				["provider"] = { "s", 332032 },	-- Grim-Veiled Cape [Rank 2]
 			}),
-			spell(310884, {	-- Grim-Veiled Spaulders [Rank 1]
-				r(332036),	-- Grim-Veiled Spaulders [Rank 2]
-				r(332071),	-- Grim-Veiled Spaulders [Rank 3]
-				r(339002),	-- Grim-Veiled Spaulders [Rank 4]
+			r(338995, { 	-- Grim-Veiled Cape [Rank 4]
+				["provider"] = { "s", 332067 },	-- Grim-Veiled Cape [Rank 3]
+			}),
+			r(332034, { 	-- Grim-Veiled Hood [Rank 2]
+				["provider"] = { "s", 310882 },	-- Grim-Veiled Hood [Rank 1]
+			}),
+			r(332069, { 	-- Grim-Veiled Hood [Rank 3]
+				["provider"] = { "s", 332034 },	-- Grim-Veiled Hood [Rank 2]
+			}),
+			r(339000, { 	-- Grim-Veiled Hood [Rank 4]
+				["provider"] = { "s", 332069 },	-- Grim-Veiled Hood [Rank 3]
+			}),
+			r(332033, { 	-- Grim-Veiled Mittens [Rank 2]
+				["provider"] = { "s", 310881 },	-- Grim-Veiled Mittens [Rank 1]
+			}),
+			r(332068, { 	-- Grim-Veiled Mittens [Rank 3]
+				["provider"] = { "s", 332033 },	-- Grim-Veiled Mittens [Rank 2]
+			}),
+			r(338998, { 	-- Grim-Veiled Mittens [Rank 4]
+				["provider"] = { "s", 332068 },	-- Grim-Veiled Mittens [Rank 3]
+			}),
+			r(332035, { 	-- Grim-Veiled Pants [Rank 2]
+				["provider"] = { "s", 310883 },	-- Grim-Veiled Pants [Rank 1]
+			}),
+			r(332070, { 	-- Grim-Veiled Pants [Rank 3]
+				["provider"] = { "s", 332035 },	-- Grim-Veiled Pants [Rank 2]
+			}),
+			r(339001, { 	-- Grim-Veiled Pants [Rank 4]
+				["provider"] = { "s", 332070 },	-- Grim-Veiled Pants [Rank 3]
+			}),
+			r(332031, { 	-- Grim-Veiled Robe [Rank 2]
+				["provider"] = { "s", 310879 },	-- Grim-Veiled Robe [Rank 1]
+			}),
+			r(332066, { 	-- Grim-Veiled Robe [Rank 3]
+				["provider"] = { "s", 332031 },	-- Grim-Veiled Robe [Rank 2]
+			}),
+			r(338996, { 	-- Grim-Veiled Robe [Rank 4]
+				["provider"] = { "s", 332066 },	-- Grim-Veiled Robe [Rank 3]
+			}),
+			r(332030, { 	-- Grim-Veiled Sandals [Rank 2]
+				["provider"] = { "s", 310878 },	-- Grim-Veiled Sandals [Rank 1]
+			}),
+			r(332065, { 	-- Grim-Veiled Sandals [Rank 3]
+				["provider"] = { "s", 332030 },	-- Grim-Veiled Sandals [Rank 2]
+			}),
+			r(338997, { 	-- Grim-Veiled Sandals [Rank 4]
+				["provider"] = { "s", 332065 },	-- Grim-Veiled Sandals [Rank 3]
+			}),
+			r(332036, { 	-- Grim-Veiled Spaulders [Rank 2]
+				["provider"] = { "s", 310884 },	-- Grim-Veiled Spaulders [Rank 1]
+			}),
+			r(332071, { 	-- Grim-Veiled Spaulders [Rank 3]
+				["provider"] = { "s", 332036 },	-- Grim-Veiled Spaulders [Rank 2]
+			}),
+			r(339002, { 	-- Grim-Veiled Spaulders [Rank 4]
+				["provider"] = { "s", 332071 },	-- Grim-Veiled Spaulders [Rank 3]
 			}),
 		}),
 		n(ARMOR, {
