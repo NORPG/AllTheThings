@@ -478073,3 +478073,301 @@
 1310759@@@Molten Gold
 1310760@@@Barrel Through
 1310761@@@Barrel Through
+12.1.0.68675
+230351@@@Summon Imp Horde
+230945@@@Call Servants
+235110@@@Nether Horrors
+235112@@@Smoldering Infernal
+242386@@@Arcane Annihilation
+242394@@@Arcane Annihilation
+243547@@@Summon Fuming Imp
+1237024@@@Collect Forgotten Amani Urn
+1256448@@@Collect Unearthed Amani Sarcophagus Lid
+1256467@@@Collect Unearthed Amani Sarcophagus Base
+1275754@@@Collect Fortified Amani Awning
+1283501@@@[DNT] [AUTOGEN] Collect 12PH_LEG_11EA_Earthen_Decor_LoungeChair01.M2
+1285456@@@[DNT] Blood+ Shadow Active Aura
+1285998@@@Infected Gash
+1286315@@@Staff of Shackles
+1286317@@@Carrying Staff of Shackles
+1286332@@@Carry Staff of Shackles [DNT]
+1286359@@@Carry Staff of Venom
+1286360@@@Staff of Venom
+1286903@@@Cosmetic Egg Finder
+1287040@@@Place Staff of Venom
+1287048@@@Placing Staff of Venom
+1287061@@@Place Staff of Shackles
+1287062@@@Placing Staff of Shackles
+1287066@@@Staff of Serpents
+1287067@@@Carry Staff of Shackles
+1287068@@@Place Staff of Serpents [DNT]
+1287069@@@Placing Staff of Serpents
+1287098@@@Carry Staff of Serpents
+1287163@@@Carry Staff of Serpents
+1287935@@@Cosmetic Egg Finder
+1288103@@@Sermon of Ula'tek
+1288124@@@Sermon of Ula'tek
+1289263@@@Venom-Tipped Blade
+1291530@@@Sanguineous Fortitude
+1293971@@@Flame Infusion
+1296429@@@Ersatz Venom Splatter
+1296502@@@Proudmoore Ship-in-a-Bottle
+1296635@@@Hunter Survival 12.1 Class Set 4pc
+1298489@@@Flame Infusion
+1298868@@@Sermon of Ula'tek
+1298873@@@Sermon of Ula'tek
+1298876@@@Echo of Ula'tek
+1298877@@@Sermon of Ula'tek
+1299750@@@Soulcoiler's Curse
+1300325@@@Ravenous Doomscale
+1301099@@@Ensemble: Vestments of Jan'alai's Chosen
+1301101@@@Ensemble: Chainmail of Akil'zon's Chosen
+1301266@@@Corrosive Gifts
+1302152@@@Latent Hex
+1303370@@@Collect Kobold's Hanging Kandles
+1303405@@@Ravenous Doomscale
+1304849@@@Corrosive Gifts
+1305755@@@Ensemble: Pyrewalker's Panoply
+1305757@@@Ensemble: Galerider's Battlegear
+1306118@@@Renewed Vigor
+1306239@@@Sermon of Ula'tek
+1306321@@@Ensemble: Venom-Cursed Dragonhawk's Raiment
+1306355@@@Ensemble: Venom-Cursed Eagle's Scales
+1306440@@@Corrosive Gifts
+1308010@@@Abdumati's Commendation
+1308774@@@[DNT]Zul'jan RP Completed Checker
+1309222@@@Sermon of Ula'tek
+1309229@@@Sermon of Ula'tek
+1309261@@@Sermon of Ula'tek
+1309267@@@Sermon of Ula'tek
+1309366@@@Sermon of Ula'tek
+1309374@@@Sermon of Ula'tek
+1309375@@@Sermon of Ula'tek
+1309683@@@Collect Venomous Defender's Barricade
+1310510@@@Cosmetic Egg Finder
+1310675@@@Corrosive Gifts
+1310762@@@Vicious Echoes
+1310763@@@Vicious Echoes
+1310764@@@Vicious Echoes
+1310769@@@Race Starting
+1310770@@@Race Starting
+1310788@@@Collecting
+1310790@@@Guiding Pup
+1310791@@@Guiding Pup
+1310793@@@Placing
+1310823@@@Collecting
+1310824@@@Crunchy Appetizer
+1310825@@@Crunchy Appetizer
+1310881@@@Gloombomb
+1310882@@@Gloombomb
+1310883@@@Gloombomb
+1310896@@@[DNT] Corrosive UI Test
+1310903@@@Corrosive Codex
+1310913@@@Corrosive Codex
+1310915@@@Corrosive Codex
+1310916@@@Corrosive Codex
+1310917@@@Corrosive Codex
+1310918@@@Corrosive Codex
+1310919@@@Corrosive Codex
+1310920@@@Corrosive Codex
+1310921@@@Corrosive Codex
+1310922@@@Corrosive Codex
+1310923@@@Corrosive Codex
+1310924@@@Corrosive Codex
+1310951@@@Jan'alai's Breath
+1310952@@@Sumptuous Soup
+1310955@@@Sumptuous Soup
+1310956@@@Tasty Blob
+1310957@@@Tasty Blob
+1310974@@@Toxic Atrophy
+1310977@@@Jiggly Dessert
+1310978@@@Jiggly Dessert
+1310984@@@Placing
+1310992@@@Fungal Burst
+1311007@@@Vine Grip
+1311011@@@[DNT] Disable VO
+1311017@@@Vine Grip
+1311021@@@Upgrading
+1311030@@@Cursed Fishing
+1311031@@@Vine Grip
+1311035@@@Vine Grip
+1311036@@@[DNT] Malacrass Mask
+1311037@@@Mother's Wrath
+1311050@@@Infest
+1311053@@@Infest
+1311055@@@Corrosive Codex
+1311056@@@Call of the Serpent
+1311061@@@Slithering Clutch
+1311066@@@Possess Hoji
+1311075@@@Vine Grip
+1311078@@@Possess Hoji
+1311079@@@Possessed
+1311080@@@Vine Grip
+1311082@@@Ghastly Regeneration
+1311088@@@Play Timeline Scene (DNT)
+1311091@@@Corrosive Codex
+1311092@@@Corrosive Codex
+1311093@@@Corrosive Codex
+1311094@@@Corrosive Codex
+1311095@@@Corrosive Codex
+1311096@@@Corrosive Codex
+1311097@@@Corrosive Codex
+1311098@@@Corrosive Codex
+1311099@@@Corrosive Codex
+1311100@@@Corrosive Codex
+1311101@@@Corrosive Codex
+1311102@@@Corrosive Codex
+1311103@@@Corrosive Codex
+1311104@@@Corrosive Codex
+1311105@@@Corrosive Codex
+1311106@@@Corrosive Codex
+1311107@@@Corrosive Codex
+1311108@@@Corrosive Codex
+1311109@@@Corrosive Codex
+1311110@@@Corrosive Codex
+1311111@@@Corrosive Codex
+1311112@@@Corrosive Codex
+1311113@@@Corrosive Codex
+1311114@@@[DNT] 12.0 Dungeon - Windrunner Spire - Sound Squisher
+1311116@@@Blocker Aura [DNT]
+1311121@@@Venom-Crazed
+1311122@@@Venom-Crazed
+1311124@@@Platform B Destroyed
+1311125@@@Vehicle Casts: Wandering Spirit [DNT]
+1311126@@@Platform C Destroyed
+1311127@@@Platform D Destroyed
+1311129@@@Platform E Destroyed
+1311133@@@Vehicle Casts: Wandering Spirit [DNT]
+1311136@@@Sharp Nail
+1311162@@@Corrosive Gifts
+1311488@@@Helical Toxins
+1311494@@@Soul Bolt
+1311499@@@Serpentogenesis
+1311500@@@Serpentogenesis
+1311506@@@Energy to 100
+1311508@@@Evolve
+1311516@@@Potent Venom
+1311521@@@Potent Venom
+1311524@@@Potent Venom
+1311536@@@[DNT] Energy Gain
+1311537@@@Malignance
+1311538@@@[DNT] Energy To Zero
+1311539@@@Malignance
+1311540@@@Malignance
+1311543@@@Chillstorm
+1311545@@@[DNT] Energy Init
+1311556@@@Melee
+1311566@@@Zul'jan
+1311569@@@Ghostly Object [DNT]
+1311572@@@Melee
+1311579@@@Fel Burst
+1311581@@@Sonic Scream
+1311587@@@Relic Rupture
+1311588@@@Grasping Fangs
+1311589@@@Grasping Fangs
+1311600@@@Blight Vein
+1311602@@@Blight Vein
+1311607@@@Corrosive Gifts
+1311609@@@Blight Vein
+1311611@@@Grasping Fangs
+1311612@@@Grasping Fangs
+1311613@@@Grasping Fangs
+1311617@@@<DNT> Teleport
+1311618@@@<DNT> Cover
+1311619@@@Axegrinder
+1311621@@@<DNT> Teleport
+1311622@@@<DNT> Cover
+1311623@@@<DNT> Teleport
+1311624@@@<DNT> Cover
+1311625@@@<DNT> Teleport
+1311626@@@<DNT> Cover
+1311631@@@Collecting
+1311646@@@Toxic Incubation
+1311653@@@Soul Leech
+1311673@@@Noxious Bile
+1311682@@@Unnerving Fixation
+1311692@@@Shred Armor
+1311694@@@No-Show
+1311695@@@Shred Armor
+1311702@@@[DNT] Kill Credit
+1311707@@@Collect a Bunch of Rooms
+1311710@@@Thundering Storm
+1311711@@@Thundering Storm
+1311712@@@Lightning Strike
+1311713@@@Summon Delve Altar
+1311726@@@Disruption Orb
+1311730@@@Disrupting Blast
+1311747@@@Orb of Disruption
+1311750@@@Orb of Disruption
+1311752@@@Orb of Disruption
+1311754@@@Forked Lightning
+1311760@@@Soulcoiled
+1311763@@@Soulcoiled
+1311769@@@Tempest Stormshield
+1311778@@@Rip and Slice
+1311788@@@Soulcoiled
+1311792@@@Polarized Field
+1311795@@@Curse of Cooperation
+1311796@@@Mask Link Controller
+1311798@@@Curse of Cooperation
+1311800@@@Curse of Cooperation
+1311801@@@Caustic Waves
+1311802@@@Caustic Waves
+1311803@@@Gale Force
+1311804@@@Overload
+1311805@@@Tempest Winds
+1311807@@@Caustic Waves
+1311808@@@Tempest Winds
+1311811@@@Battle Manager
+1311813@@@Battle Manager
+1311814@@@REUSE
+1311816@@@Battle Manager
+1311817@@@Liquid Head
+1311818@@@Warden's Protection
+1311819@@@Flag Quests
+1311820@@@[DNT] Prologue Skip Prompt
+1311821@@@Recently Petted
+1311824@@@Collect Venomous Thread
+1311828@@@Collect Venomous Globule
+1311831@@@Collect Pungent Atal'Utek Shroom
+1311833@@@Collect Atal'Utek Ivy
+1311871@@@Mighty Thud
+1311881@@@Toxic Womb
+1311901@@@Leap Into the Unknown
+1311902@@@Fall Out of the Unknown
+1311905@@@[DNT] THIS IS A TEST
+1311913@@@Shadowburn
+1311917@@@Venomous Birthing
+1311923@@@Dark Waves
+1311933@@@Dark Waves
+1311939@@@Enter The Venomous Abyss Raid Story Mode
+1311941@@@Shadow Slash
+1311942@@@Shadow Slash
+1311944@@@Collect Corrosive Cache
+1311952@@@Prey: Torments
+1311956@@@Burn Corruption
+1311959@@@[DNT]Targeting CD
+1311963@@@Bombardier
+1311964@@@Latent Hex
+1311969@@@Hedonic Gorging
+1311975@@@Healing
+1311976@@@Unnerving Fixation
+1311979@@@Latent Hex
+1311980@@@Latent Hex
+1311981@@@Latent Hex
+1311982@@@Latent Hex
+1311983@@@Stomp Detector
+1311987@@@Serpentine Gust
+1311988@@@Serpentine Gust
+1311990@@@[DNT] Exit Vehicle Teleport
+1311991@@@[DNT] Exit Vehicle Teleport
+1311992@@@[DNT] Player Controlling Vehicle
+1311993@@@[DNT] Cancel Staff
+1311994@@@[DNT] Cancel Staff
+1311995@@@[DNT] Cancel Staff
+1311996@@@[DNT] Cancel Staff
+1311997@@@Virulent Spit
+1311998@@@Virulent Spit
+1311999@@@Virulent Spit
+1312000@@@Stage 02 Completed
+1312001@@@Random Doomscale Egg Dunk Emote

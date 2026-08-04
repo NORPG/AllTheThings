@@ -24607,3 +24607,7 @@
 271946@@@12.1 Rogue Champion
 271948@@@12.1 Shaman Champion
 271952@@@12.1 Warlock Champion
+12.1.0.68675
+253630@@@Zul'jan
+272671@@@Khadgar
+272984@@@Shadowpine Soldier, Fighter

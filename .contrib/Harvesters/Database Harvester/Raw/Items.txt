@@ -338246,3 +338246,146 @@
 281311@@@Amani Scout's Spear
 281325@@@Amani Scout's Quarterstaff
 281326@@@Amani Scout's Staff
+12.1.0.68675
+244345@@@Forgotten Amani Urn
+253455@@@Unearthed Amani Sarcophagus Lid
+253473@@@Unearthed Amani Sarcophagus Base
+260238@@@Pus-Filled Murloc Eye
+265386@@@Fortified Amani Awning
+268225@@@Coiled Hex Legguards
+271175@@@Venomjade Necklace
+272225@@@Pyrewalker's Mantle
+272227@@@Galerider's Veil
+272231@@@Pyrewalker's Doublet
+272232@@@Pyrewalker's Buskins
+272233@@@Pyrewalker's Gloves
+272234@@@Pyrewalker's Miter
+272235@@@Pyrewalker's Treads
+272236@@@Pyrewalker's Mantlet
+272237@@@Pyrewalker's Obi
+272238@@@Pyrewalker's Wraps
+272247@@@Galerider's Byrnie
+272248@@@Galerider's Chausses
+272249@@@Galerider's Chain Clasps
+272250@@@Galerider's Gaze
+272251@@@Galerider's Chausses
+272252@@@Galerider's Mantle
+272253@@@Galerider's Mail Skirt
+272254@@@Galerider's Mesh Wraps
+274765@@@Fleeting Alluring Nostrum
+275273@@@Recipe: Sweet-And-Sour Skewers
+275275@@@Recipe: Ersatz Venom Splatter
+275306@@@Plans: Amani Forgemaster's Decorative Spear
+275314@@@Formula: Enchanted Voidwell Fish
+275316@@@Schematic: Coiled Amani Hookshot
+275318@@@Schematic: Proudmoore Ship-in-a-Bottle
+276001@@@Skytalon Armguards
+276003@@@Flamebeak Bracers
+276005@@@Skytalon Treads
+276007@@@Flamebeak Sandals
+276009@@@Skytalon Gloves
+276011@@@Flamebeak Grips
+276013@@@Skytalon Hauberk
+276015@@@Flamebeak Robes
+276017@@@Skytalon Helmet
+276019@@@Flamebeak Crown
+276021@@@Skytalon Spaulders
+276023@@@Flamebeak Mantle
+276025@@@Skytalon Breeches
+276027@@@Flamebeak Leggings
+276029@@@Skytalon Belt
+276031@@@Flamebeak Cord
+276038@@@Skytalon Cloak
+276039@@@Flamebeak Drape
+276142@@@Corrosive Codex
+276572@@@Helm of Akil'zon's Chosen
+276574@@@Headdress of Jan'alai's Chosen
+276583@@@Pauldrons of Akil'zon's Chosen
+276584@@@Chainmail of Akil'zon's Chosen
+276585@@@Cape of Akil'zon's Chosen
+276586@@@Armbands of Akil'zon's Chosen
+276587@@@Gauntlets of Akil'zon's Chosen
+276588@@@Girdle of Akil'zon's Chosen
+276589@@@Leggings of Akil'zon's Chosen
+276590@@@Sabatons of Akil'zon's Chosen
+276599@@@Epaulets of Jan'alai's Chosen
+276600@@@Vestments of Jan'alai's Chosen
+276601@@@Cloak of Jan'alai's Chosen
+276602@@@Bracelets of Jan'alai's Chosen
+276603@@@Handwraps of Jan'alai's Chosen
+276604@@@Sash of Jan'alai's Chosen
+276605@@@Pantaloons of Jan'alai's Chosen
+276606@@@Footwraps of Jan'alai's Chosen
+276607@@@Ensemble: Vestments of Jan'alai's Chosen
+276609@@@Ensemble: Chainmail of Akil'zon's Chosen
+276826@@@Focus of Jan'alai's Chosen
+276827@@@Warstaff of Jan'alai's Chosen
+276829@@@Mace of Akil'zon's Chosen
+276832@@@Warspear of Akil'zon's Chosen
+276833@@@Warbow of Akil'zon's Chosen
+276835@@@Axe of Akil'zon's Chosen
+276836@@@Wand of Jan'alai's Chosen
+277772@@@Venom-Cursed Eagle's Scalebands
+277773@@@Venom-Cursed Eagle's Waistguard
+277774@@@Venom-Cursed Eagle's Amice
+277775@@@Venom-Cursed Eagle's Legguards
+277776@@@Venom-Cursed Eagle's Guise
+277777@@@Venom-Cursed Eagle's Grips
+277778@@@Venom-Cursed Eagle's Flight
+277779@@@Venom-Cursed Eagle's Crest
+277788@@@Venom-Cursed Dragonhawk's Wristbands
+277789@@@Venom-Cursed Dragonhawk's Cinch
+277790@@@Venom-Cursed Dragonhawk's Wingspan
+277791@@@Venom-Cursed Dragonhawk's Leggings
+277792@@@Venom-Cursed Dragonhawk's Plumage
+277793@@@Venom-Cursed Dragonhawk's Handwraps
+277794@@@Venom-Cursed Dragonhawk's Talons
+277795@@@Venom-Cursed Dragonhawk's Robes
+278044@@@Kobold's Hanging Kandles
+278397@@@Ephemeral Star Ooze
+278841@@@Ensemble: Pyrewalker's Panoply
+278843@@@Ensemble: Galerider's Battlegear
+279217@@@Venom-Cursed Dragonhawk's Shroud
+279222@@@Venom-Cursed Eagle's Mantle
+279224@@@Ensemble: Venom-Cursed Dragonhawk's Raiment
+279228@@@Ensemble: Venom-Cursed Eagle's Scales
+279332@@@Keen Hex Mask
+279350@@@Rolled Bed Linens
+280764@@@Venomous Defender's Barricade
+280846@@@Beguiling Memories of the Sea
+281405@@@Cache of Void-Touched Armaments: Boots
+281406@@@Cache of Void-Touched Armaments: Legs
+281407@@@Cache of Void-Touched Armaments: Belts
+281408@@@Cache of Void-Touched Armaments: Gloves
+281409@@@Cache of Void-Touched Armaments: Bracers
+281410@@@Cache of Void-Touched Armaments: Chest
+281411@@@Cache of Void-Touched Armaments: Cloak
+281412@@@Cache of Void-Touched Armaments: Shoulder
+281413@@@Cache of Void-Touched Armaments: Head
+281414@@@Cache of Void-Touched Armaments: Weapons
+281415@@@Cache of Void-Touched Armaments: Necklaces
+281416@@@Cache of Void-Touched Armaments: Rings
+281417@@@Cache of Void-Touched Armaments: Boots
+281418@@@Cache of Void-Touched Armaments: Legs
+281419@@@Cache of Void-Touched Armaments: Belts
+281420@@@Cache of Void-Touched Armaments: Gloves
+281421@@@Cache of Void-Touched Armaments: Bracers
+281422@@@Cache of Void-Touched Armaments: Chest
+281423@@@Cache of Void-Touched Armaments: Cloak
+281424@@@Cache of Void-Touched Armaments: Shoulder
+281425@@@Cache of Void-Touched Armaments: Head
+281426@@@Cache of Void-Touched Armaments: Weapons
+281427@@@Cache of Void-Touched Armaments: Necklaces
+281428@@@Cache of Void-Touched Armaments: Rings
+281429@@@Cache of Void-Touched Armaments
+281566@@@Amani Warrior's Cleaver
+281567@@@Profane Ritual Staff
+281568@@@Vul'zahn's Smuggled Spear
+281569@@@Quiver of the Drowned Marksman
+281570@@@Amani Incense Stick
+281571@@@Focus of Fangs
+281573@@@Venomous Thread
+281577@@@Venomous Globule
+281580@@@Pungent Atal'Utek Shroom
+281582@@@Atal'Utek Ivy
+281620@@@Corrosive Cache
