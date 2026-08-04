@@ -49,30 +49,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
-			spell(298995, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Alchemist Stone
-				i(168757),	-- Recipe: Crushing Alchemist Stone (RECIPE!)
-			})),
-			spell(305993, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Awakened Alchemist Stone
-				i(171084),	-- Recipe: Peerless Alchemist Stone (RECIPE!)
-			})),
-			spell(298996, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Alchemist Stone
-				i(168758),	-- Recipe: Ascended Alchemist Stone (RECIPE!)
-			})),
-			spell(291085, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Alchemist Stone
-				i(166978),	-- Recipe: Emblazoned Alchemist Stone (RECIPE!)
-			})),
-			spell(291084, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Sanguinated Alchemist Stone
-				i(166977),	-- Recipe: Imbued Alchemist Stone (RECIPE!)
-			})),
-			spell(286922, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Spirited Alchemist Stone
-				i(165930),	-- Recipe: Eternal Alchemist Stone (RECIPE!)
-			})),
-			spell(286921, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Tidal Alchemist Stone
-				i(165929),	-- Recipe: Spirited Alchemist Stone (RECIPE!)
-			})),
-			spell(305994, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Alchemist Stone
-				i(171086),	-- Recipe: Awakened Alchemist Stone (RECIPE!)
-			})),
+			i(168757, {	-- Recipe: Crushing Alchemist Stone (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 298995 },	-- Abyssal Alchemist Stone
+			}),
+			i(171084, {	-- Recipe: Peerless Alchemist Stone (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305993 },	-- Awakened Alchemist Stone
+			}),
+			i(168758, {	-- Recipe: Ascended Alchemist Stone (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 298996 },	-- Crushing Alchemist Stone
+			}),
+			i(166978, {	-- Recipe: Emblazoned Alchemist Stone (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 291085 },	-- Imbued Alchemist Stone
+			}),
+			i(166977, {	-- Recipe: Imbued Alchemist Stone (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 291084 },	-- Sanguinated Alchemist Stone
+			}),
+			i(165930, {	-- Recipe: Eternal Alchemist Stone (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286922 },	-- Spirited Alchemist Stone
+			}),
+			i(165929, {	-- Recipe: Spirited Alchemist Stone (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286921 },	-- Tidal Alchemist Stone
+			}),
+			i(171086, {	-- Recipe: Awakened Alchemist Stone (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305994 },	-- Unbound Alchemist Stone
+			}),
 		}),
 		filter(BATTLE_PETS, {
 			spell(251808, {	-- Transmute: Meat to Pet
@@ -226,54 +234,66 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(BLACKSMITHING, {
 		n(DISCOVERY, {
-			spell(285081, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Girdle
-				i(165642),	-- Plans: Fortified Stormsteel Girdle (RECIPE!)
-			})),
-			spell(285082, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Legguards
-				i(165640),	-- Plans: Fortified Stormsteel Legguards (RECIPE!)
-			})),
-			spell(285089, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Girdle
-				i(165643),	-- Plans: Tempered Stormsteel Girdle (RECIPE!)
-			})),
-			spell(285090, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Legguards
-				i(165641),	-- Plans: Tempered Stormsteel Legguards (RECIPE!)
-			})),
-			spell(253191, {	-- Imbued Stormsteel Girdle
-				i(162498),	-- Plans: Emblazoned Stormsteel Girdle (RECIPE!)
+			i(165642, {	-- Plans: Fortified Stormsteel Girdle (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285081 },	-- Enhanced Stormsteel Girdle
 			}),
-			spell(253187, {	-- Imbued Stormsteel Legguards
-				i(162496),	-- Plans: Emblazoned Stormsteel Legguards (RECIPE!)
+			i(165640, {	-- Plans: Fortified Stormsteel Legguards (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285082 },	-- Enhanced Stormsteel Legguards
 			}),
-			spell(305839, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Girdle
-				i(171107),	-- Plans: Eldritch Osmenite Girdle (RECIPE!)
-			})),
-			spell(305842, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Legguards
-				i(171109),	-- Plans: Eldritch Osmenite Legguards (RECIPE!)
-			})),
-			spell(299001, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Girdle
-				i(168761),	-- Plans: Reinforced Osmenite Girdle (RECIPE!)
-			})),
-			spell(298998, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Legguards
-				i(168759),	-- Plans: Reinforced Osmenite Legguards (RECIPE!)
-			})),
-			spell(299002, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Girdle
-				i(168762),	-- Plans: Banded Osmenite Girdle (RECIPE!)
-			})),
-			spell(298999, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Legguards
-				i(168760),	-- Plans: Banded Osmenite Legguards (RECIPE!)
-			})),
-			spell(253190, {	-- Stormsteel Girdle
-				i(162497),	-- Plans: Imbued Stormsteel Girdle (RECIPE!)
+			i(165643, {	-- Plans: Tempered Stormsteel Girdle (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285089 },	-- Fortified Stormsteel Girdle
 			}),
-			spell(253186, {	-- Stormsteel Legguards
-				i(162495),	-- Plans: Imbued Stormsteel Legguards (RECIPE!)
+			i(165641, {	-- Plans: Tempered Stormsteel Legguards (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285090 },	-- Fortified Stormsteel Legguards
 			}),
-			spell(305840, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Girdle
-				i(171108),	-- Plans: Maddening Osmenite Girdle (RECIPE!)
-			})),
-			spell(305843, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Legguards
-				i(171110),	-- Plans: Maddening Osmenite Legguards (RECIPE!)
-			})),
+			i(162498, {	-- Plans: Emblazoned Stormsteel Girdle (RECIPE!)
+				["provider"] = { "s", 253191 },	-- Imbued Stormsteel Girdle
+			}),
+			i(162496, {	-- Plans: Emblazoned Stormsteel Legguards (RECIPE!)
+				["provider"] = { "s", 253187 },	-- Imbued Stormsteel Legguards
+			}),
+			i(171107, {	-- Plans: Eldritch Osmenite Girdle (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305839 },	-- Maddening Osmenite Girdle
+			}),
+			i(171109, {	-- Plans: Eldritch Osmenite Legguards (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305842 },	-- Maddening Osmenite Legguards
+			}),
+			i(168761, {	-- Plans: Reinforced Osmenite Girdle (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299001 },	-- Osmenite Girdle
+			}),
+			i(168759, {	-- Plans: Reinforced Osmenite Legguards (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 298998 },	-- Osmenite Legguards
+			}),
+			i(168762, {	-- Plans: Banded Osmenite Girdle (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299002 },	-- Reinforced Osmenite Girdle
+			}),
+			i(168760, {	-- Plans: Banded Osmenite Legguards (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 298999 },	-- Reinforced Osmenite Legguards
+			}),
+			i(162497, {	-- Plans: Imbued Stormsteel Girdle (RECIPE!)
+				["provider"] = { "s", 253190 },	-- Stormsteel Girdle
+			}),
+			i(162495, {	-- Plans: Imbued Stormsteel Legguards (RECIPE!)
+				["provider"] = { "s", 253186 },	-- Stormsteel Legguards
+			}),
+			i(171108, {	-- Plans: Maddening Osmenite Girdle (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305840 },	-- Unsettling Osmenite Girdle
+			}),
+			i(171110, {	-- Plans: Maddening Osmenite Legguards (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305843 },	-- Unsettling Osmenite Legguards
+			}),
 		}),
 		n(ARMOR, {
 			i(168682, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Osmenite Girdle [A]
@@ -577,90 +597,118 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(ENGINEERING, {
 		n(DISCOVERY, {
-			spell(305951, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- A-N0M-A-L0U5 Bionic Bifocals
-				i(170408),	-- Schematic: Superior Bionic Bifocals (RECIPE!)
-			})),
-			spell(305942, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- A-N0M-A-L0U5 Gearspun Goggles
-				i(170406),	-- Schematic: Superior Gearspun Goggles (RECIPE!)
-			})),
-			spell(305948, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- A-N0M-A-L0U5 Orthogonal Optics
-				i(170410),	-- Schematic: Superior Orthogonal Optics (RECIPE!)
-			})),
-			spell(305945, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- A-N0M-A-L0U5 Synthetic Specs
-				i(170404),	-- Schematic: Superior Synthetic Specs (RECIPE!)
-			})),
-			spell(299010, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Bionic Bifocals
-				i(168767),	-- Schematic: A5C-3N-D3D Bionic Bifocals (RECIPE!)
-			})),
-			spell(299007, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Gearspun Goggles
-				i(168765),	-- Schematic: A5C-3N-D3D Gearspun Goggles (RECIPE!)
-			})),
-			spell(299013, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Orthogonal Optics
-				i(168769),	-- Schematic: A5C-3N-D3D Orthogonal Optics (RECIPE!)
-			})),
-			spell(299004, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Synthetic Specs
-				i(168763),	-- Schematic: A5C-3N-D3D Synthetic Specs (RECIPE!)
-			})),
-			spell(299011, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- A5C-3N-D3D Bionic Bifocals
-				i(168768),	-- Schematic: Charged A5C-3N-D3D Bionic Bifocals (RECIPE!)
-			})),
-			spell(299008, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- A5C-3N-D3D Gearspun Goggles
-				i(168766),	-- Schematic: Charged A5C-3N-D3D Gearspun Goggles (RECIPE!)
-			})),
-			spell(299014, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- A5C-3N-D3D Orthogonal Optics
-				i(168770),	-- Schematic: Charged A5C-3N-D3D Orthogonal Optics (RECIPE!)
-			})),
-			spell(299005, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- A5C-3N-D3D Synthetic Specs
-				i(168764),	-- Schematic: Charged A5C-3N-D3D Synthetic Specs (RECIPE!)
-			})),
-			spell(291093, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Bionic Bifocals
-				i(166989),	-- Schematic: Emblazoned Bionic Bifocals (RECIPE!)
-			})),
-			spell(291091, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Gearspun Goggles
-				i(166988),	-- Schematic: Emblazoned Gearspun Goggles (RECIPE!)
-			})),
-			spell(291095, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Orthogonal Optics
-				i(166990),	-- Schematic: Emblazoned Orthogonal Optics (RECIPE!)
-			})),
-			spell(291089, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Synthetic Specs
-				i(166987),	-- Schematic: Emblazoned Synthetic Specs (RECIPE!)
-			})),
-			spell(286865, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- SP1-R1-73D Bionic Bifocals
-				i(165912),	-- Schematic: Charged SP1-R1-73D Bionic Bifocals (RECIPE!)
-			})),
-			spell(286868, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- SP1-R1-73D Gearspun Goggles
-				i(165914),	-- Schematic: Charged SP1-R1-73D Gearspun Goggles (RECIPE!)
-			})),
-			spell(286871, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- SP1-R1-73D Orthogonal Optics
-				i(165916),	-- Schematic: Charged SP1-R1-73D Orthogonal Optics (RECIPE!)
-			})),
-			spell(286874, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- SP1-R1-73D Synthetic Specs
-				i(165918),	-- Schematic: Charged SP1-R1-73D Synthetic Specs (RECIPE!)
-			})),
-			spell(305950, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Superior Bionic Bifocals
-				i(170409),	-- Schematic: Paramount Bionic Bifocals (RECIPE!)
-			})),
-			spell(305941, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Superior Gearspun Goggles
-				i(170407),	-- Schematic: Paramount Gearspun Goggles (RECIPE!)
-			})),
-			spell(305947, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Superior Orthogonal Optics
-				i(170411),	-- Schematic: Paramount Orthogonal Optics (RECIPE!)
-			})),
-			spell(305944, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Superior Synthetic Specs
-				i(170405),	-- Schematic: Paramount Synthetic Specs (RECIPE!)
-			})),
-			spell(286864, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Surging Bionic Bifocals
-				i(165911),	-- Schematic: SP1-R1-73D Bionic Bifocals (RECIPE!)
-			})),
-			spell(286867, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Surging Gearspun Goggles
-				i(165913),	-- Schematic: SP1-R1-73D Gearspun Goggles (RECIPE!)
-			})),
-			spell(286870, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Surging Orthogonal Optics
-				i(165915),	-- Schematic: SP1-R1-73D Orthogonal Optics (RECIPE!)
-			})),
-			spell(286873, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Surging Synthetic Specs
-				i(165917),	-- Schematic: SP1-R1-73D Synthetic Specs (RECIPE!)
-			})),
+			i(170408, {	-- Schematic: Superior Bionic Bifocals (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305951 },	-- A-N0M-A-L0U5 Bionic Bifocals
+			}),
+			i(170406, {	-- Schematic: Superior Gearspun Goggles (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305942 },	-- A-N0M-A-L0U5 Gearspun Goggles
+			}),
+			i(170410, {	-- Schematic: Superior Orthogonal Optics (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305948 },	-- A-N0M-A-L0U5 Orthogonal Optics
+			}),
+			i(170404, {	-- Schematic: Superior Synthetic Specs (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305945 },	-- A-N0M-A-L0U5 Synthetic Specs
+			}),
+			i(168767, {	-- Schematic: A5C-3N-D3D Bionic Bifocals (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299010 },	-- Abyssal Bionic Bifocals
+			}),
+			i(168765, {	-- Schematic: A5C-3N-D3D Gearspun Goggles (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299007 },	-- Abyssal Gearspun Goggles
+			}),
+			i(168769, {	-- Schematic: A5C-3N-D3D Orthogonal Optics (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299013 },	-- Abyssal Orthogonal Optics
+			}),
+			i(168763, {	-- Schematic: A5C-3N-D3D Synthetic Specs (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299004 },	-- Abyssal Synthetic Specs
+			}),
+			i(168768, {	-- Schematic: Charged A5C-3N-D3D Bionic Bifocals (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299011 },	-- A5C-3N-D3D Bionic Bifocals
+			}),
+			i(168766, {	-- Schematic: Charged A5C-3N-D3D Gearspun Goggles (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299008 },	-- A5C-3N-D3D Gearspun Goggles
+			}),
+			i(168770, {	-- Schematic: Charged A5C-3N-D3D Orthogonal Optics (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299014 },	-- A5C-3N-D3D Orthogonal Optics
+			}),
+			i(168764, {	-- Schematic: Charged A5C-3N-D3D Synthetic Specs (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299005 },	-- A5C-3N-D3D Synthetic Specs
+			}),
+			i(166989, {	-- Schematic: Emblazoned Bionic Bifocals (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 291093 },	-- Imbued Bionic Bifocals
+			}),
+			i(166988, {	-- Schematic: Emblazoned Gearspun Goggles (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 291091 },	-- Imbued Gearspun Goggles
+			}),
+			i(166990, {	-- Schematic: Emblazoned Orthogonal Optics (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 291095 },	-- Imbued Orthogonal Optics
+			}),
+			i(166987, {	-- Schematic: Emblazoned Synthetic Specs (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 291089 },	-- Imbued Synthetic Specs
+			}),
+			i(165912, {	-- Schematic: Charged SP1-R1-73D Bionic Bifocals (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286865 },	-- SP1-R1-73D Bionic Bifocals
+			}),
+			i(165914, {	-- Schematic: Charged SP1-R1-73D Gearspun Goggles (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286868 },	-- SP1-R1-73D Gearspun Goggles
+			}),
+			i(165916, {	-- Schematic: Charged SP1-R1-73D Orthogonal Optics (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286871 },	-- SP1-R1-73D Orthogonal Optics
+			}),
+			i(165918, {	-- Schematic: Charged SP1-R1-73D Synthetic Specs (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286874 },	-- SP1-R1-73D Synthetic Specs
+			}),
+			i(170409, {	-- Schematic: Paramount Bionic Bifocals (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305950 },	-- Superior Bionic Bifocals
+			}),
+			i(170407, {	-- Schematic: Paramount Gearspun Goggles (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305941 },	-- Superior Gearspun Goggles
+			}),
+			i(170411, {	-- Schematic: Paramount Orthogonal Optics (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305947 },	-- Superior Orthogonal Optics
+			}),
+			i(170405, {	-- Schematic: Paramount Synthetic Specs (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305944 },	-- Superior Synthetic Specs
+			}),
+			i(165911, {	-- Schematic: SP1-R1-73D Bionic Bifocals (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286864 },	-- Surging Bionic Bifocals
+			}),
+			i(165913, {	-- Schematic: SP1-R1-73D Gearspun Goggles (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286867 },	-- Surging Gearspun Goggles
+			}),
+			i(165915, {	-- Schematic: SP1-R1-73D Orthogonal Optics (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286870 },	-- Surging Orthogonal Optics
+			}),
+			i(165917, {	-- Schematic: SP1-R1-73D Synthetic Specs (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 286873 },	-- Surging Synthetic Specs
+			}),
 		}),
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -807,7 +855,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			["description"] = "Caught in Dazar'alor.",
 		}),
 		i(168302, { ["timeline"] = { ADDED_8_2_0 } }),	-- Viper Fish
-		spell(273293, {	-- Aromatic Fish Oil
+		header(HEADERS.Spell, 273293, {	-- Aromatic Fish Oil
 			i(160711),	-- Aromatic Fish Oil
 		}),
 		filter(RECIPES, {
@@ -965,33 +1013,43 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(JEWELCRAFTING, {
 		n(DISCOVERY, {
-			spell(299018, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Ascended Leviathan's Eye Loop
-				i(168772),	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
-			})),
-			spell(305981, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Awakened Leviathan's Eye Loop
-				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
-			})),
-			spell(299017, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Leviathan's Eye Loop
-				i(168771),	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
-			})),
-			spell(289175, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Emblazoned Kraken's Eye Loop
-				i(166541),	-- Design: Emblazoned Kraken's Eye Loop (RECIPE!)
-			})),
-			spell(289181, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Eternal Kraken's Eye Loopp
-				i(166543),	-- Design: Eternal Kraken's Eye Loop (RECIPE!)
-			})),
-			spell(289174, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Kraken's Eye Loop
-				i(166540),	-- Design: Imbued Kraken's Eye Loop (RECIPE!)
-			})),
-			spell(289180, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Spirited Kraken's Eye Loop
-				i(166542),	-- Design: Spirited Kraken's Eye Loop (RECIPE!)
-			})),
-			spell(305980, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Peerless Leviathan's Eye Loop
-				i(171082),	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
-			})),
-			spell(305982, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Leviathan's Eye Loop
-				i(174365),	-- Design: Unbound Leviathan's Eye Loop (RECIPE!)
-			})),
+			-- TODO these are wrong and need to be fixed to have proper pre-recipe providers, not their 'own' recipe
+			i(168772, {	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299018 },	-- Ascended Leviathan's Eye Loop
+			}),
+			i(171083, {	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305981 },	-- Awakened Leviathan's Eye Loop
+			}),
+			i(168771, {	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299017 },	-- Crushing Leviathan's Eye Loop
+			}),
+			i(166541, {	-- Design: Emblazoned Kraken's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 289175 },	-- Emblazoned Kraken's Eye Loop
+			}),
+			i(166543, {	-- Design: Eternal Kraken's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 289181 },	-- Eternal Kraken's Eye Loopp
+			}),
+			i(166540, {	-- Design: Imbued Kraken's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 289174 },	-- Imbued Kraken's Eye Loop
+			}),
+			i(166542, {	-- Design: Spirited Kraken's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 289180 },	-- Spirited Kraken's Eye Loop
+			}),
+			i(171082, {	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305980 },	-- Peerless Leviathan's Eye Loop
+			}),
+			i(174365, {	-- Design: Unbound Leviathan's Eye Loop (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305982 },	-- Unbound Leviathan's Eye Loop
+			}),
 		}),
 		header(HEADERS.Spell, 31252, {	-- Prospecting
 			i(154123),	-- Amberblaze
@@ -1081,102 +1139,126 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(LEATHERWORKING, {
 		n(DISCOVERY, {
-			spell(299025, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Cragscale Boots
-				i(168777),	-- Pattern: Reinforced Cragscale Boots (RECIPE!)
-			})),
-			spell(299028, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Cragscale Greaves
-				i(168779),	-- Pattern: Reinforced Cragscale Greaves (RECIPE!)
-			})),
-			spell(299019, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Dredged Leather Boots
-				i(168773),	-- Pattern: Reinforced Dredged Boots (RECIPE!)
-			})),
-			spell(299022, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Dredged Leather Leggings
-				i(168775),	-- Pattern: Reinforced Dredged Leggings (RECIPE!)
-			})),
-			spell(285079, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Mistscale Boots
-				i(165648),	-- Pattern: Fortified Mistscale Boots (RECIPE!)
-			})),
-			spell(285080, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Mistscale Greaves
-				i(165650),	-- Pattern: Fortified Mistscale Greaves (RECIPE!)
-			})),
-			spell(285083, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Tempest Boots
-				i(165644),	-- Pattern: Fortified Tempest Boots (RECIPE!)
-			})),
-			spell(285084, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Tempest Leggings
-				i(165646),	-- Pattern: Fortified Tempest Leggings (RECIPE!)
-			})),
-			spell(285087, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Mistscale Boots
-				i(165649),	-- Pattern: Tempered Mistscale Boots (RECIPE!)
-			})),
-			spell(285088, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Mistscale Greaves
-				i(165651),	-- Pattern: Tempered Mistscale Greaves (RECIPE!)
-			})),
-			spell(285091, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Tempest Boots
-				i(165645),	-- Pattern: Tempered Tempest Boots (RECIPE!)
-			})),
-			spell(285092, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Tempest Leggings
-				i(165647),	-- Pattern: Tempered Tempest Leggings (RECIPE!)
-			})),
-			spell(256765, {	-- Hardened Tempest Boots
-				i(162499),	-- Pattern: Imbued Tempest Boots (RECIPE!)
+			i(168777, {	-- Pattern: Reinforced Cragscale Boots (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299025 },	-- Cragscale Boots
 			}),
-			spell(256768, {	-- Hardened Tempest Leggings
-				i(162501),	-- Pattern: Imbued Tempest Leggings (RECIPE!)
+			i(168779, {	-- Pattern: Reinforced Cragscale Greaves (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299028 },	-- Cragscale Greaves
 			}),
-			spell(256772, {	-- Imbued Mistscale Boots
-				i(162504),	-- Pattern: Emblazoned Mistscale Boots (RECIPE!)
+			i(168773, {	-- Pattern: Reinforced Dredged Boots (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299019 },	-- Dredged Leather Boots
 			}),
-			spell(256775, {	-- Imbued Mistscale Leggings
-				i(162506),	-- Pattern: Emblazoned Mistscale Leggings (RECIPE!)
+			i(168775, {	-- Pattern: Reinforced Dredged Leggings (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299022 },	-- Dredged Leather Leggings
 			}),
-			spell(256766, {	-- Imbued Tempest Boots
-				i(162500),	-- Pattern: Emblazoned Tempest Boots (RECIPE!)
+			i(165648, {	-- Pattern: Fortified Mistscale Boots (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285079 },	-- Enhanced Mistscale Boots
 			}),
-			spell(256769, {	-- Imbued Tempest Leggings
-				i(162502),	-- Pattern: Emblazoned Tempest Leggings (RECIPE!)
+			i(165650, {	-- Pattern: Fortified Mistscale Greaves (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285080 },	-- Enhanced Mistscale Greaves
 			}),
-			spell(305802, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Cragscale Boots
-				i(171122),	-- Pattern: Eldritch Cragscale Boots (RECIPE!)
-			})),
-			spell(305806, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Cragscale Greaves
-				i(171118),	-- Pattern: Eldritch Cragscale Greaves (RECIPE!)
-			})),
-			spell(305795, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Dredged Leather Boots
-				i(171126),	-- Pattern: Eldritch Dredged Leather Boots (RECIPE!)
-			})),
-			spell(305798, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Dredged Leather Leggings
-				i(171124),	-- Pattern: Eldritch Dredged Leather Leggings (RECIPE!)
-			})),
-			spell(256771, {	-- Mistscale Boots
-				i(162503),	-- Pattern: Imbued Mistscale Boots (RECIPE!)
+			i(165644, {	-- Pattern: Fortified Tempest Boots (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285083 },	-- Enhanced Tempest Boots
 			}),
-			spell(256774, {	-- Mistscale Leggings
-				i(162505),	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
+			i(165646, {	-- Pattern: Fortified Tempest Leggings (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285084 },	-- Enhanced Tempest Leggings
 			}),
-			spell(299026, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Cragscale Boots
-				i(168778),	-- Pattern: Banded Cragscale Boots (RECIPE!)
-			})),
-			spell(299029, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Cragscale Greaves
-				i(168780),	-- Pattern: Pattern: Banded Cragscale Greaves (RECIPE!)
-			})),
-			spell(299020, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Dredged Boots
-				i(168774),	-- Pattern: Banded Dredged Boots (RECIPE!)
-			})),
-			spell(299023, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Dredged Leggings
-				i(168776),	-- Pattern: Banded Dredged Leggings (RECIPE!)
-			})),
-			spell(305803, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Cragscale Boots
-				i(171123),	-- Pattern: Maddening Cragscale Boots (RECIPE!)
-			})),
-			spell(305800, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Cragscale Greaves
-				i(171128),	-- Pattern: Maddening Cragscale Greaves (RECIPE!)
-			})),
-			spell(305796, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Dredged Leather Boots
-				i(171127),	-- Pattern: Maddening Dredged Leather Boots (RECIPE!)
-			})),
-			spell(305804, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Dredged Leather Leggings
-				i(171125),	-- Pattern: Maddening Dredged Leather Leggings (RECIPE!)
-			})),
+			i(165649, {	-- Pattern: Tempered Mistscale Boots (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285087 },	-- Fortified Mistscale Boots
+			}),
+			i(165651, {	-- Pattern: Tempered Mistscale Greaves (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285088 },	-- Fortified Mistscale Greaves
+			}),
+			i(165645, {	-- Pattern: Tempered Tempest Boots (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285091 },	-- Fortified Tempest Boots
+			}),
+			i(165647, {	-- Pattern: Tempered Tempest Leggings (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285092 },	-- Fortified Tempest Leggings
+			}),
+			i(162499, {	-- Pattern: Imbued Tempest Boots (RECIPE!)
+				["provider"] = { "s", 256765 },	-- Hardened Tempest Boots
+			}),
+			i(162501, {	-- Pattern: Imbued Tempest Leggings (RECIPE!)
+				["provider"] = { "s", 256768 },	-- Hardened Tempest Leggings
+			}),
+			i(162504, {	-- Pattern: Emblazoned Mistscale Boots (RECIPE!)
+				["provider"] = { "s", 256772 },	-- Imbued Mistscale Boots
+			}),
+			i(162506, {	-- Pattern: Emblazoned Mistscale Leggings (RECIPE!)
+				["provider"] = { "s", 256775 },	-- Imbued Mistscale Leggings
+			}),
+			i(162500, {	-- Pattern: Emblazoned Tempest Boots (RECIPE!)
+				["provider"] = { "s", 256766 },	-- Imbued Tempest Boots
+			}),
+			i(162502, {	-- Pattern: Emblazoned Tempest Leggings (RECIPE!)
+				["provider"] = { "s", 256769 },	-- Imbued Tempest Leggings
+			}),
+			i(171122, {	-- Pattern: Eldritch Cragscale Boots (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305802 },	-- Maddening Cragscale Boots
+			}),
+			i(171118, {	-- Pattern: Eldritch Cragscale Greaves (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305806 },	-- Maddening Cragscale Greaves
+			}),
+			i(171126, {	-- Pattern: Eldritch Dredged Leather Boots (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305795 },	-- Maddening Dredged Leather Boots
+			}),
+			i(171124, {	-- Pattern: Eldritch Dredged Leather Leggings (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305798 },	-- Maddening Dredged Leather Leggings
+			}),
+			i(162503, {	-- Pattern: Imbued Mistscale Boots (RECIPE!)
+				["provider"] = { "s", 256771 },	-- Mistscale Boots
+			}),
+			i(162505, {	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
+				["provider"] = { "s", 256774 },	-- Mistscale Leggings
+			}),
+			i(168778, {	-- Pattern: Banded Cragscale Boots (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299026 },	-- Reinforced Cragscale Boots
+			}),
+			i(168780, {	-- Pattern: Pattern: Banded Cragscale Greaves (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299029 },	-- Reinforced Cragscale Greaves
+			}),
+			i(168774, {	-- Pattern: Banded Dredged Boots (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299020 },	-- Reinforced Dredged Boots
+			}),
+			i(168776, {	-- Pattern: Banded Dredged Leggings (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299023 },	-- Reinforced Dredged Leggings
+			}),
+			i(171123, {	-- Pattern: Maddening Cragscale Boots (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305803 },	-- Unsettling Cragscale Boots
+			}),
+			i(171128, {	-- Pattern: Maddening Cragscale Greaves (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305800 },	-- Unsettling Cragscale Greaves
+			}),
+			i(171127, {	-- Pattern: Maddening Dredged Leather Boots (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305796 },	-- Unsettling Dredged Leather Boots
+			}),
+			i(171125, {	-- Pattern: Maddening Dredged Leather Leggings (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 305804 },	-- Unsettling Dredged Leather Leggings
+			}),
 		}),
 		n(ARMOR, {
 			filter(LEATHER, {
@@ -1450,54 +1532,66 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {
-			spell(257122, {	-- Embroidered Deep Sea Breeches
-				i(162509),	-- Pattern: Imbued Deep Sea Breeches (RECIPE!)
+			i(162509, {	-- Pattern: Imbued Deep Sea Breeches (RECIPE!)
+				["provider"] = { "s", 257122 },	-- Embroidered Deep Sea Breeches
 			}),
-			spell(257118, {	-- Embroidered Deep Sea Gloves
-				i(162507),	-- Pattern: Imbued Deep Sea Gloves (RECIPE!)
+			i(162507, {	-- Pattern: Imbued Deep Sea Gloves (RECIPE!)
+				["provider"] = { "s", 257118 },	-- Embroidered Deep Sea Gloves
 			}),
-			spell(285077, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Deep Sea Breeches
-				i(165655),	-- Pattern: Fortified Deep Sea Breeches (RECIPE!)
-			})),
-			spell(285078, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Deep Sea Gloves
-				i(165652),	-- Pattern: Fortified Deep Sea Gloves (RECIPE!)
-			})),
-			spell(285085, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Deep Sea Breeches
-				i(165654),	-- Pattern: Tempered Deep Sea Breeches (RECIPE!)
-			})),
-			spell(285086, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Deep Sea Gloves
-				i(165653),	-- Pattern: Tempered Deep Sea Gloves (RECIPE!)
-			})),
-			spell(299034, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Gilded Seaweave Breeches
-				i(168783),	-- Pattern: Reinforced Seaweave Breeches (RECIPE!)
-			})),
-			spell(299031, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Gilded Seaweave Gloves
-				i(168781),	-- Pattern: Reinforced Seaweave Gloves (RECIPE!)
-			})),
-			spell(257123, {	-- Imbued Deep Sea Breeches
-				i(162510),	-- Pattern: Emblazoned Deep Sea Breeches (RECIPE!)
+			i(165655, {	-- Pattern: Fortified Deep Sea Breeches (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285077 },	-- Enhanced Deep Sea Breeches
 			}),
-			spell(257120, {	-- Imbued Deep Sea Gloves
-				i(162508),	-- Pattern: Emblazoned Deep Sea Gloves (RECIPE!)
+			i(165652, {	-- Pattern: Fortified Deep Sea Gloves (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285078 },	-- Enhanced Deep Sea Gloves
 			}),
-			spell(304563, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Seaweave Breeches
-				i(171147),	-- Pattern: Eldritch Seaweave Breeches (RECIPE!)
-			})),
-			spell(304560, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Seaweave Gloves
-				i(171149),	-- Pattern: Eldritch Seaweave Gloves (RECIPE!)
-			})),
-			spell(299035, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Seaweave Breeches
-			i(168784),	-- Pattern: Banded Seaweave Breeches (RECIPE!)
-			})),
-			spell(299032, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Seaweave Gloves
-				i(168782),	-- Pattern: Banded Seaweave Gloves (RECIPE!)
-			})),
-			spell(304562, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Seaweave Breeches
-				i(171148),	-- Pattern: Maddening Seaweave Breeches (RECIPE!)
-			})),
-			spell(304559, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Seaweave Gloves
-				i(171150),	-- Pattern: Maddening Seaweave Gloves (RECIPE!)
-			})),
+			i(165654, {	-- Pattern: Tempered Deep Sea Breeches (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285085 },	-- Fortified Deep Sea Breeches
+			}),
+			i(165653, {	-- Pattern: Tempered Deep Sea Gloves (RECIPE!)
+				["timeline"] = { ADDED_8_1_0 },
+				["provider"] = { "s", 285086 },	-- Fortified Deep Sea Gloves
+			}),
+			i(168783, {	-- Pattern: Reinforced Seaweave Breeches (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299034 },	-- Gilded Seaweave Breeches
+			}),
+			i(168781, {	-- Pattern: Reinforced Seaweave Gloves (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299031 },	-- Gilded Seaweave Gloves
+			}),
+			i(162510, {	-- Pattern: Emblazoned Deep Sea Breeches (RECIPE!)
+				["provider"] = { "s", 257123 },	-- Imbued Deep Sea Breeches
+			}),
+			i(162508, {	-- Pattern: Emblazoned Deep Sea Gloves (RECIPE!)
+				["provider"] = { "s", 257120 },	-- Imbued Deep Sea Gloves
+			}),
+			i(171147, {	-- Pattern: Eldritch Seaweave Breeches (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 304563 },	-- Maddening Seaweave Breeches
+			}),
+			i(171149, {	-- Pattern: Eldritch Seaweave Gloves (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 304560 },	-- Maddening Seaweave Gloves
+			}),
+			i(168784, {	-- Pattern: Banded Seaweave Breeches (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299035 },	-- Reinforced Seaweave Breeches
+			}),
+			i(168782, {	-- Pattern: Banded Seaweave Gloves (RECIPE!)
+				["timeline"] = { ADDED_8_2_0 },
+				["provider"] = { "s", 299032 },	-- Reinforced Seaweave Gloves
+			}),
+			i(171148, {	-- Pattern: Maddening Seaweave Breeches (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 304562 },	-- Unsettling Seaweave Breeches
+			}),
+			i(171150, {	-- Pattern: Maddening Seaweave Gloves (RECIPE!)
+				["timeline"] = { ADDED_8_3_0 },
+				["provider"] = { "s", 304559 },	-- Unsettling Seaweave Gloves
+			}),
 		}),
 		n(ARMOR, {
 			i(168733, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Seaweave Breeches [A]
