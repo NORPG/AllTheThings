@@ -170,7 +170,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(260360, {	-- Gummi the Glow Wyrm (PET!)
 				["description"] = "Trolli + Xbox promotional item. Available between March 1st 2026 - September 30th 2026 by purchasing Trolli Gummi Pop products in any retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Sometime later you should receive a code to your email to redeem on Battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
-				["timeline"] = { "added 12.0.1.66192", "removed 12.1.0.99999" },
+				["timeline"] = { "added 12.0.1.66192", "removed 12.1.0.99999" },	-- TODO: Timeline out. Available through September 30, 2026.
 				["u"] = REAL_MONEY,
 			}),
 			-- Season 1
