@@ -69063,6 +69063,9 @@
 1309558@@@Wrath of the Stars
 1309559@@@Fire of the Heavens
 1309829@@@Wrath
+3.80.1.68768
+1301737@@@Sunflash Driftmoth
+1301783@@@Sunflutter Driftmoth
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward

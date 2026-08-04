@@ -376,6 +376,8 @@
 1285897@@@Sha-Warped Owl
 3.80.1.68181
 1291315@@@Spring Panda
+3.80.1.68768
+1301737@@@Sunflash Driftmoth
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse

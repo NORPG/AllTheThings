@@ -256,6 +256,8 @@
 263923@@@Sha-Warped Beaky
 3.80.1.68044
 266912@@@Pinky
+3.80.1.68768
+268569@@@Sunflutter Driftmoth
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
