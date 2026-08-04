@@ -338389,3 +338389,24 @@
 281580@@@Pungent Atal'Utek Shroom
 281582@@@Atal'Utek Ivy
 281620@@@Corrosive Cache
+12.1.0.68745
+272997@@@Stormwind Armory Plans
+274661@@@Silvermoon Display Room Plans
+274662@@@Silvermoon Small Study Plans
+274663@@@Silvermoon Armory Plans
+274664@@@Silvermoon Lofty Study Plans
+274665@@@Stormwind Grand Hall Plans
+274666@@@Stormwind Display Room Plans
+274667@@@Stormwind Kitchen Plans
+274668@@@Bel'ameth Meeting Room Plans
+274669@@@Bel'ameth Theater Plans
+274670@@@Bel'ameth Temple Room Plans
+274671@@@Bel'ameth Nestled Bedroom Plans
+274673@@@Orgrimmar Council Room Plans
+274674@@@Orgrimmar Theater Plans
+274675@@@Orgrimmar Stone Pit Room Plans
+274676@@@Orgrimmar Display Room Plans
+274677@@@Sky Blue Riverside Room Plans
+274678@@@Verdant Riverside Room Plans
+276243@@@Autumnal Westfall Barn Plans
+276244@@@Springtime Westfall Barn Plans

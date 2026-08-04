@@ -478371,3 +478371,26 @@
 1311999@@@Virulent Spit
 1312000@@@Stage 02 Completed
 1312001@@@Random Doomscale Egg Dunk Emote
+12.1.0.68745
+1294676@@@Collect Full_Layout_Rugged_Prn room
+1294698@@@Collect Silvermoon Display Room room
+1294699@@@Collect Silvermoon Small Study Room room
+1294700@@@Collect Silvermoon Armory room
+1294701@@@Collect Silvermoon Lofty Study Room room
+1294702@@@Collect Stormwind Grand Hall room
+1294704@@@Collect Stormwind Display Room room
+1294705@@@Collect Stormwind Armory room
+1294706@@@Collect Bel'ameth Meeting Room room
+1294707@@@Collect Bel'ameth Theater Room room
+1294708@@@Collect Bel'ameth Temple Room room
+1294709@@@Collect Bel'ameth Nestled Bedroom room
+1294710@@@Collect Full_Layout_Prefab_S room
+1294712@@@Collect Orgrimmar Council Room room
+1294713@@@Collect Orgrimmar Theater room
+1294715@@@Collect Orgrimmar Stone Pit Room room
+1294717@@@Collect Orgrimmar Display Room room
+1294718@@@Collect Sky Blue Riverside Room
+1294719@@@Collect Verdant Riverside Room
+1299150@@@Collect Autumnal Westfall Barn Room
+1299151@@@Collect Springtime Westfall Barn Room
+1299265@@@Collect Stormwind Kitchen room
