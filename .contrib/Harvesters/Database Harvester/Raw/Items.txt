@@ -335634,6 +335634,10 @@
 280791@@@Cache of Void-Touched Armaments: Weapons
 280792@@@Cache of Void-Touched Armaments: Necklaces
 280793@@@Cache of Void-Touched Armaments: Rings
+12.0.7.68774
+272956@@@Sunflicker Driftmoth
+273655@@@Sunflare Driftmoth
+276245@@@Shadow Spirehawk
 12.1.0.68209
 158368@@@Sethraliss' Defiled Relic
 169391@@@Bubble-Eyed Rolly
