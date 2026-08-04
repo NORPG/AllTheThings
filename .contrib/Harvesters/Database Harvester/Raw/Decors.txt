@@ -3493,6 +3493,8 @@
 23706@@@Prized Orb of Azeroth
 24193@@@Framed Horde Pride
 24194@@@Framed Alliance Pride
+12.0.7.68887
+25936@@@Perch of the Dawnfire Phoenix
 12.1.0.68209
 1135@@@[DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Forge01.m2 - DUPLICATE do not use
 1136@@@Bound Silvermoon Drapes

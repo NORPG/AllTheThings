@@ -2586,6 +2586,8 @@
 12.0.7.68774
 1292356@@@Sunflare Driftmoth
 1299156@@@Shadow Spirehawk
+12.0.7.68887
+1293456@@@Rabbit'ath
 12.1.0.68209
 1266211@@@Venomous Gladiator's Goredrake
 1292668@@@Spirit of Tok'jara

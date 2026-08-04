@@ -468563,6 +468563,12 @@
 1312196@@@[DNT] Exit - Kick Out Sequence
 1312197@@@[DNT] Exit - Kick Out Sequence
 1312660@@@[DNT] Cover Events
+12.0.7.68887
+1293301@@@Murk'atath
+1293456@@@Rabbit'ath
+1293703@@@[DNT] Void Stone
+1300978@@@Ensemble: Garb of the Dawnfire Phoenix
+1300983@@@Collect Perch of the Dawnfire Phoenix
 12.1.0.68209
 73510@@@Shadeburst
 164452@@@Shadow Word: Madness
