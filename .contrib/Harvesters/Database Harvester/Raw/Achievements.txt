@@ -18396,3 +18396,7 @@
 63681@@@Heroic: Nymrissa Wavecaller
 63682@@@Mythic: Nymrissa Wavecaller
 63683@@@Nymrissa Wavecaller
+12.1.0.68569
+63686@@@Nymrissa Wavecaller Guild Run
+63687@@@Heroic: Nymrissa Wavecaller Guild Run
+63688@@@Mythic: Nymrissa Wavecaller Guild Run

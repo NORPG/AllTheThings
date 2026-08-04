@@ -477849,3 +477849,227 @@
 1310043@@@Play Movie
 1310044@@@Play Movie
 1310045@@@Cancel Movie
+12.1.0.68569
+234428@@@Tormenting Eye
+235110@@@Nether Invasion
+235112@@@Summon Infernal
+273249@@@Spark Walls
+1248177@@@Collect Mysterious Voodoo Mask
+1262497@@@Monstrous Roar
+1264633@@@Goddess' Chosen
+1266703@@@Lab-Grown Stormray
+1269065@@@Ride to the Isle of Fangs
+1277051@@@Infected Gash
+1280190@@@Get Her...
+1285483@@@[DNT] Shadow + Fire Fountain Active Aura
+1285669@@@Empowered Running
+1286365@@@[DNT]  Fire + Blood Active Aura
+1289237@@@Caustic Deluge
+1291700@@@Vicious Echoes
+1293547@@@[DNT] Well Visual
+1295672@@@Plague Froth
+1296221@@@Mutilate
+1296222@@@Mutilate
+1299764@@@Mother's Boon
+1299860@@@Spark Vortex
+1300369@@@Relentless Rider's Strength
+1300685@@@Soul Constrictor
+1303620@@@Toxic Womb
+1306161@@@Divine Arbiter
+1306738@@@Collect "Summoning of Ula'tek" Mural
+1307375@@@Blisterburst
+1308831@@@Poison Spit
+1309983@@@Disturb Bones
+1310061@@@Eerie Lure
+1310091@@@Player Check
+1310093@@@Player Check
+1310096@@@Feasted
+1310097@@@[DNT] Ghostly
+1310098@@@Caustic Waves
+1310099@@@Tainted Blood
+1310102@@@Tainted Blood
+1310104@@@Tainted Blood
+1310105@@@Tainted Burst
+1310116@@@Poison Spit
+1310120@@@Poison Bolt
+1310125@@@Northern Amani Bulwark
+1310126@@@Bloodvenom Injection
+1310134@@@Battle
+1310136@@@Eastern Amani Outpost
+1310138@@@Gryphon/Wyvern Pet - Mounting Check Aura
+1310145@@@[DNT] Cutscene Viewed
+1310147@@@Energy Bar
+1310150@@@Rampant Thorn
+1310157@@@Blazing Rush
+1310159@@@[DNT]
+1310160@@@Blazing Rush
+1310169@@@Teleport - The Darkway (DNT)
+1310170@@@Teleport - The Darkway (DNT)
+1310171@@@Teleport - The Darkway (DNT)
+1310172@@@[DNT] Flightmaster Interact
+1310174@@@[DNT] Flightmaster Interact
+1310175@@@[DNT] Flightmaster Interact
+1310176@@@[DNT] Flightmaster Interact
+1310177@@@[DNT] Flightmaster Interact
+1310178@@@[DNT] Flightmaster Interact
+1310211@@@Ravenous Feast
+1310213@@@Rampant Thorn
+1310216@@@Spirit Walk
+1310217@@@[DNT] Spirit Walk Cover
+1310218@@@Altar of Corrosion
+1310220@@@[DNT] Check Cursed Status
+1310223@@@[DNT] Spirit Cosmetic
+1310224@@@Challenge the Wilds
+1310235@@@[DNT] Zul'jan Mod Scale
+1310237@@@[DNT] Zul'jan Remove Mod Scale
+1310248@@@Rapid Refreezing
+1310259@@@Unfinished Mixture
+1310261@@@Gryphon/Wyvern Pet - Mounting Check Aura
+1310270@@@Frost Barrage
+1310271@@@Mutating Elixir
+1310280@@@Grab Fish
+1310287@@@Flames of Ula'tek
+1310292@@@Grab Fish
+1310294@@@Gryphon/Wyvern Pet - Mounting Check Aura
+1310302@@@Scouring Sand
+1310307@@@Frost Barrage
+1310309@@@Macestorm
+1310311@@@Storm Blessed
+1310312@@@Spawn Loot
+1310313@@@Burrow
+1310314@@@Shadowgrafted
+1310319@@@Bolster
+1310320@@@Exhausted
+1310321@@@Concussion
+1310323@@@Burrow
+1310324@@@Mending Void
+1310347@@@On Endeavor [DNT]
+1310355@@@Tempest Stormshield
+1310357@@@Preparing Toxin
+1310358@@@Toxic Atrophy
+1310359@@@Additional Quests
+1310360@@@Envenomed
+1310361@@@Tempest Stormshield
+1310363@@@Tempest Stormshield
+1310371@@@Stone Breaker
+1310372@@@Blood Debt
+1310375@@@Repeatable Quests
+1310378@@@Scent of Blood
+1310379@@@[DNT] 12.1 - Housing - Endeavor - Ohn'ahran Plains - Teleport (RPS)
+1310383@@@Mod Speed 100%
+1310389@@@Divine Guidance
+1310396@@@Serpent's Stormcall
+1310402@@@Serpent's Stormcall
+1310407@@@Collecting
+1310413@@@Ravenous Stomp
+1310415@@@[DNT] To Eredath
+1310419@@@[DNT] Cleaning Supplies Acquired
+1310428@@@Scent of Blood
+1310432@@@Set Friendly
+1310433@@@Scent of Blood
+1310434@@@Scent of Blood
+1310437@@@Vantus Rune: Nymrissa Wavecaller
+1310439@@@Vantus Rune: Nymrissa Wavecaller
+1310461@@@Divine Arbiter
+1310464@@@Spirit Burst [DNT]
+1310470@@@Eternal Venom
+1310473@@@Hunting Leap
+1310487@@@Blast Chunks
+1310488@@@Blast Chunks
+1310489@@@Blast Chunks
+1310492@@@[DNT]Cosmetic missile
+1310494@@@Corroded Spirit
+1310498@@@Mutagenic Venom
+1310500@@@Aftershock
+1310501@@@Aftershock
+1310510@@@Toxic Cascade
+1310511@@@Toxic Cascade
+1310526@@@Escape Rope [DNT]
+1310528@@@Escape Rope
+1310529@@@Escape Rope
+1310537@@@[DNT] Cancel Jeytha Aura
+1310538@@@[DNT] Cancel Jeytha Aura
+1310539@@@[DNT] Cancel Jeytha Aura
+1310540@@@[DNT] Cancel Jeytha Aura
+1310541@@@[DNT] Cancel Jeytha Aura
+1310542@@@[DNT] Cancel Jeytha Aura
+1310544@@@Virulent Mutation
+1310547@@@Toxic Atrophy
+1310554@@@Virulent Mutation
+1310555@@@Virulent Mutation
+1310558@@@Haunting Spirits
+1310561@@@Haunting Spirits
+1310571@@@Bloody Demise
+1310575@@@Conqueror's Venomous Varnish
+1310578@@@Conqueror's Venomous Lacquer
+1310580@@@Upgrade
+1310581@@@Upgrade
+1310585@@@Upgrade
+1310586@@@Upgrade
+1310599@@@Electrical Discharge
+1310611@@@Immune
+1310616@@@Shredding Shards
+1310618@@@[DNT] Cancel Eligible for Storytime
+1310619@@@Cancel Scene 01 (DNT)
+1310620@@@Arsenal: Scout Team Seven Weapons
+1310625@@@Flaming Barrage
+1310626@@@Send Event - Boon Missile
+1310631@@@Walking Pup
+1310634@@@Teleport (On Leave Combat)
+1310637@@@Training Grounds
+1310662@@@Piercing Frost
+1310665@@@Prepare Blood
+1310666@@@Toxic Atrophy
+1310667@@@Burning Flames
+1310670@@@Prepare Fire
+1310672@@@Prepare Shadow
+1310675@@@Corrosive Palimpsest
+1310680@@@Venom Bolt
+1310683@@@Venom Bolt
+1310686@@@Ardent Defender
+1310689@@@Scout Team Seven Quiver
+1310690@@@Spark Vortex
+1310691@@@Mutagenic Venom
+1310692@@@Static Shocks
+1310693@@@Static Shocks
+1310696@@@Open Eye of Sethraliss
+1310700@@@Open Eye of Sethraliss
+1310701@@@Open Eye of Sethraliss
+1310712@@@Gale Force
+1310713@@@Gale Force
+1310714@@@Gale Force
+1310715@@@Gale Force
+1310716@@@Gale Force
+1310717@@@Gale Force
+1310718@@@Toxic Womb
+1310719@@@Toxic Womb
+1310720@@@Tempest Winds
+1310722@@@Frenzy
+1310724@@@Denergize
+1310732@@@Malevolent Resonance
+1310733@@@Malevolent Resonance
+1310734@@@Malevolent Resonance
+1310736@@@Toxic Womb
+1310737@@@Toxic Womb
+1310738@@@Toxic Womb
+1310739@@@Accumulate Charge
+1310740@@@Removal
+1310742@@@Burrow
+1310743@@@[DNT]Bronze Affix Block Marker
+1310744@@@Malevolent Resonance
+1310745@@@Unnerving Fixation
+1310746@@@Blighted Sever
+1310747@@@Blighted Sever
+1310748@@@Blighted Sever
+1310749@@@[DNT] Arrow Renderer
+1310750@@@[DNT] Arrow
+1310751@@@Spiritcackle
+1310752@@@Eternal Nightfall
+1310754@@@Heavy Slams
+1310755@@@Heavy Slams
+1310756@@@Necrotic Energy
+1310757@@@Necrotic Energy
+1310758@@@Necrotic Energy
+1310759@@@Molten Gold
+1310760@@@Barrel Through
+1310761@@@Barrel Through

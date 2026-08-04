@@ -3809,3 +3809,6 @@
 27046@@@Tuskarr Fishing Gear Rack
 27047@@@[DNT] [AUTOGEN] 12PH_Leg_Book_Troll_03.M2
 27167@@@Color-Curious Candle
+12.1.0.68569
+5130@@@Mysterious Voodoo Mask
+27041@@@"Summoning of Ula'tek" Mural

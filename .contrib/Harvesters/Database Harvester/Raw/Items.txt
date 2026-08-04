@@ -338001,3 +338001,248 @@
 274422@@@Ossified Relic
 274493@@@Effigy of Ula'tek's Faithful
 274589@@@Ula'tek Snakehead
+12.1.0.68569
+242788@@@Dusk-Shrouded Stone
+242789@@@Dusk-Shrouded Stone
+248962@@@Mysterious Voodoo Mask
+267376@@@Jan'alai's Cinder
+274857@@@Chitinous Broodmother's Spaulders
+275063@@@Foxton's Song of Warmth
+275064@@@Foxton's Song of Mercy
+275065@@@Foxton's Song of Binding
+275066@@@Foxton's Song of Strength
+275230@@@Moonstone Bracelet of Friendship
+275231@@@Souldarite Bracelet of Friendship
+275232@@@Moss Agate Bracelet of Friendship
+275235@@@Star Ruby Bracelet of Friendship
+275237@@@Dragon's Eye Diamond Bracelet of Friendship
+275305@@@Amani Forgemaster's Decorative Spear
+275324@@@Technique: "Cursed Gaze of Ula'tek" Mural
+275536@@@Preyhunter's Scepter
+275551@@@Autumnal Witchwick's Rider
+275570@@@Mossy Witchwick's Rider
+275571@@@Moonlit Witchwick's Rider
+275572@@@Scarlet Witchwick's Rider
+275573@@@Blushing Witchwick's Rider
+275574@@@Carmine Witchwick's Rider
+275656@@@Auriferous Venomfang
+275660@@@Preyhunter's Fury
+275684@@@Schematic: G-00
+276206@@@Legally Sourced Cannon Shot
+276405@@@Elegant Draenite Chopper
+276406@@@Elegant Talasite Chopper
+276408@@@Elegant Pyrestone Chopper
+276409@@@Grand Draenite War Axe
+276410@@@Grand Talasite War Axe
+276412@@@Grand Pyrestone War Axe
+276413@@@Ceremonial Draenite War Maul
+276414@@@Ceremonial Talasite War Maul
+276416@@@Ceremonial Pyrestone War Maul
+276417@@@Battle-Hardened Draenite War Maul
+276418@@@Battle-Hardened Talasite War Maul
+276421@@@Battle-Hardened Pyrestone War Maul
+276549@@@Topaz Skyfang
+276626@@@Wide Maruukai Barricade
+276650@@@Maruukai Barricade
+276652@@@Tapered Maruukai Barricade
+276654@@@Bakar's Favorite Ball
+276656@@@Maruukai Wooden Table
+276658@@@Maruukai Feast Table
+276661@@@Maruukai Chef's Stove
+276663@@@Bakar's Napping Rug
+276665@@@Ornate Khanam's Rug
+276667@@@Large Ornate Khanam's Rug
+276669@@@Maruukai Storage Basket
+276671@@@Open Maruukai Storage Basket
+276673@@@Bakar's Snack
+276675@@@Bakar's Dinner
+276803@@@Ruby Writhe
+277261@@@Whoofle Bramblewing
+277282@@@Archmage's Familiar
+277322@@@Amewbisath
+277326@@@Axe of the Amani
+277506@@@Codex of the Soul Coilers
+277934@@@Slithersoul Spoils
+277949@@@Sizzling Venom
+278151@@@Blood Knight's Decorative Shield
+278290@@@Nebulous Voidcache: The Coiled Altar
+278391@@@Eerie Bauble
+278573@@@Crested Ember Leafmimic
+278577@@@Ravenholdt Assassin's Tunic
+278578@@@Ravenholdt Assassin's Mask
+278579@@@Ravenholdt Assassin's Spaulder
+278580@@@Ravenholdt Assassin's Gloves
+278581@@@Ravenholdt Assassin's Belt
+278582@@@Ravenholdt Assassin's Leggings
+278583@@@Ravenholdt Assassin's Boots
+278605@@@Ensemble: Ravenholdt Assassin's Attire
+278806@@@Playwright's Collection: Painted Mogu Masks
+278808@@@Playwright's Collection: Painted Witch's Masks
+278814@@@Playwright's Collection: Painted Sun Masks
+278815@@@Playwright's Collection: Painted Abomination Masks
+278816@@@Playwright's Collection: Painted Sha Masks
+278818@@@Playwright's Collection: Painted Grovetender's Masks
+278872@@@Lil' Perdition's Play-Blade
+278873@@@Lil' Armegeddon's Play-Blade
+278993@@@Lil' Armegeddon's Play-More
+279013@@@Wintry Witchwick Chestpiece
+279014@@@Wintry Witchwick Boots
+279015@@@Wintry Witchwick Belt
+279016@@@Wintry Witchwick Gloves
+279017@@@Wintry Witchwick Skirt
+279018@@@Wintry Witchwick Cat Hat
+279019@@@Wintry Witchwick Shoulderpads
+279022@@@Ensemble: Wintry Witchwick Ensemble
+279056@@@Mossy Witchwick Chestpiece
+279057@@@Mossy Witchwick Boots
+279058@@@Mossy Witchwick Belt
+279059@@@Mossy Witchwick Gloves
+279061@@@Mossy Witchwick Skirt
+279062@@@Mossy Witchwick Cat Hat
+279063@@@Mossy Witchwick Shoulderpads
+279065@@@Ensemble: Mossy Witchwick Ensemble
+279066@@@Moonlit Witchwick Chestpiece
+279070@@@Wintry Witchwick Flowing Cat Hat
+279071@@@Mossy Witchwick Flowing Cat Hat
+279072@@@Moonlit Witchwick Boots
+279074@@@Moonlit Witchwick Belt
+279075@@@Moonlit Witchwick Gloves
+279076@@@Moonlit Witchwick Skirt
+279077@@@Moonlit Witchwick Cat Hat
+279078@@@Moonlit Witchwick Flowing Cat Hat
+279079@@@Moonlit Witchwick Shoulderpads
+279080@@@Ensemble: Moonlit Witchwick Ensemble
+279081@@@Scarlet Witchwick Chestpiece
+279083@@@Scarlet Witchwick Boots
+279084@@@Scarlet Witchwick Belt
+279085@@@Scarlet Witchwick Gloves
+279086@@@Scarlet Witchwick Skirt
+279087@@@Scarlet Witchwick Cat Hat
+279088@@@Scarlet Witchwick Flowing Cat Hat
+279089@@@Scarlet Witchwick Shoulderpads
+279090@@@Ensemble: Scarlet Witchwick Ensemble
+279095@@@Autumnal Witchwick Chestpiece
+279096@@@Autumnal Witchwick Boots
+279097@@@Autumnal Witchwick Belt
+279098@@@Autumnal Witchwick Gloves
+279099@@@Autumnal Witchwick Skirt
+279101@@@Autumnal Witchwick Cat Hat
+279102@@@Autumnal Witchwick Flowing Cat Hat
+279103@@@Autumnal Witchwick Shoulderpads
+279104@@@Ensemble: Autumnal Witchwick Ensemble
+279107@@@Blushing Witchwick Chestpiece
+279108@@@Blushing Witchwick Boots
+279109@@@Blushing Witchwick Belt
+279110@@@Blushing Witchwick Gloves
+279111@@@Blushing Witchwick Skirt
+279114@@@Blushing Witchwick Cat Hat
+279133@@@Blushing Witchwick Flowing Cat Hat
+279134@@@Blushing Witchwick Shoulderpads
+279135@@@Ensemble: Blushing Witchwick Ensemble
+279136@@@Wintry Witchwick Shouldergourds
+279137@@@Mossy Witchwick Shouldergourds
+279138@@@Moonlit Witchwick Shouldergourds
+279139@@@Scarlet Witchwick Shouldergourds
+279140@@@Autumnal Witchwick Shouldergourds
+279141@@@Blushing Witchwick Shouldergourds
+279147@@@Unrecognizable Bone
+279149@@@Wintry Witchwick Jack Hat
+279150@@@Wintry Witchwick Flowing Jack Hat
+279151@@@Mossy Witchwick Jack Hat
+279155@@@Mossy Witchwick Flowing Jack Hat
+279156@@@Moonlit Witchwick Jack Hat
+279158@@@Moonlit Witchwick Flowing Jack Hat
+279159@@@Scarlet Witchwick Jack Hat
+279161@@@Scarlet Witchwick Flowing Jack Hat
+279162@@@Autumnal Witchwick Jack Hat
+279163@@@Autumnal Witchwick Flowing Jack Hat
+279164@@@Blushiing Witchwick Jack Hat
+279165@@@Blushiing Witchwick Flowing Jack Hat
+279335@@@Enchanted Voidwell Fish
+279337@@@Coiled Amani Hookshot
+279339@@@Proudmoore Ship-in-a-Bottle
+279341@@@Aetherlume Field Lamp
+279343@@@Piercing Amani Lapis
+279346@@@Stretched Snakeskin Rack
+279348@@@Mounted Moby
+279350@@@Twilight's Blade Bedroll
+279353@@@Tortollan Slingsack
+279359@@@Ersatz Venom Splatter
+279452@@@"Summoning of Ula'tek" Mural
+279458@@@Draenei Rock Goblet
+279579@@@Crusader's Zweihander
+279818@@@Basic Steel Sabatons
+279819@@@Basic Dark Iron Sabatons
+280102@@@Handful of Corrosive Coins
+280146@@@Small Triangular Wooden Tile
+280148@@@Large Triangular Wooden Tile
+280150@@@Tall Round Wooden Column
+280152@@@Short Round Wooden Column
+280154@@@Short Square Wooden Column
+280156@@@Tall Square Wooden Column
+280164@@@Spiral Wooden Stairs
+280458@@@Delver's Corroded Pouch of Undercoin
+280513@@@Color-Curious Candle
+280540@@@Lil' Mon
+280581@@@Wintry Witchwick's Rider
+280625@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_BarnQuilt01.M2
+280627@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_FloralBasket01.M2
+280629@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_RockingChair01.M2
+280631@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_AppleJuicer01.M2
+280633@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_HangingLight01.M2
+280635@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_SaddleStand01.M2
+280637@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_Tractor01.M2
+280639@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Rug01.M2
+280642@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Pumpkins01.M2
+280644@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Corn01.M2
+280646@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Vines01.M2
+280650@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Shed01.M2
+280652@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_PicnicTable01.M2
+280654@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Window01_Day.M2
+280689@@@Big Mon's Big Spear
+280690@@@Bow of the Snapper
+280691@@@Dagger of the Slithering Ritual
+280692@@@Plunderer's Pummeler
+280693@@@Staff of All-Knowing
+280694@@@Blade of the Forgotten
+280695@@@Skully's Skullcleaver
+280698@@@Szarith's Underbelly Slicer
+280700@@@Armbands of the Rotten Claw
+280701@@@Waistwrap of the Fanged
+280702@@@Mantle of the Riser
+280704@@@Siltmouth's Venom Waders
+280706@@@Sss'alik's Rotting Claws
+280708@@@Venom-Shelled Sash
+280709@@@Triple Threat Pauldrons
+280710@@@Garsecg's Barnacled Girdle
+280711@@@Pitted Specter Shackles
+280712@@@Bracers of the Sleeping Hydra
+280713@@@Big Mon's Buckle
+280714@@@Hull Render Hauberk
+280715@@@Eye of Skully
+280716@@@Locket of the Omnilegent
+280717@@@Farthik's Precious Pendant
+280718@@@Unflappable Flapping Cape
+280732@@@Warbound Pack of Hero Mistcrests
+280734@@@Warbound Pack of Champion Mistcrests
+280737@@@Warbound Pack of Veteran Mistcrests
+280752@@@"Cursed Gaze of Ula'tek" Mural
+280757@@@Chiseled Amani Tablet
+280762@@@Roaring Amani Garnet
+280842@@@Shadowhunters' Hexblade
+280873@@@Protected Tortollan Scroll Case
+281021@@@Eerie Lure
+281022@@@Eerie Lure
+281223@@@Satchel of Corrosive Coins
+281224@@@Conqueror's Venomous Varnish
+281225@@@Conqueror's Venomus Lacquer
+281226@@@Arsenal: Scout Team Seven Weapons
+281227@@@Soulcoiler's Rush'kah
+281244@@@Amani Scout's Quiver
+281245@@@Amani Scout's Shield
+281247@@@Amani Scout's Axe
+281248@@@Amani Scout's Bow
+281249@@@Amani Scout's Mojo
+281311@@@Amani Scout's Spear
+281325@@@Amani Scout's Quarterstaff
+281326@@@Amani Scout's Staff
