@@ -342,7 +342,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(HERBALISM, {
-		spell(2366, {	-- Herb Gathering
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			i(169701),	-- Death Blossom
 			i(169700),	-- Death Blossom Petal
 			i(187699, {["timeline"] = {ADDED_9_2_0}}),	-- First Flower
@@ -359,7 +359,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(INSCRIPTION, {
-		spell(311418, {	-- Mass Mill Nightshade
+		header(HEADERS.Spell, 311418, {	-- Mass Mill Nightshade
 			i(173057),	-- Luminous Pigment
 			i(175788),	-- Tranquil Pigment
 			i(173056),	-- Umbral Pigment
@@ -459,7 +459,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		spell(325248, {	-- Shadowlands Prospecting
+		header(HEADERS.Spell, 325248, {	-- Shadowlands Prospecting
 			i(173109),	-- Angerseye
 			i(173170),	-- Essence of Rebirth
 			i(173172),	-- Essence of Servitude
@@ -693,7 +693,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(MINING, {
-		spell(2575, {	-- Mining
+		header(HEADERS.Spell, 2575, {	-- Mining
 			i(171839),	-- Elethium Nugget
 			i(171833),	-- Elethium Ore
 			i(171834),	-- Laestrite Nugget
