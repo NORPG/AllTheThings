@@ -24611,3 +24611,8 @@
 253630@@@Zul'jan
 272671@@@Khadgar
 272984@@@Shadowpine Soldier, Fighter
+12.1.0.68824
+273117@@@Zen'vi Crowbloom
+273118@@@Luma Rootwarden
+273121@@@Nara Kelpthorn
+273123@@@Vulric Bloomborne

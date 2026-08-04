@@ -478394,3 +478394,152 @@
 1299150@@@Collect Autumnal Westfall Barn Room
 1299151@@@Collect Springtime Westfall Barn Room
 1299265@@@Collect Stormwind Kitchen room
+12.1.0.68824
+1247568@@@Renewed Critical Strike
+1247569@@@Renewed Haste
+1247570@@@Renewed Mastery
+1247571@@@Renewed Versatility
+1263762@@@Radiant Light
+1263971@@@Mind-Numbing Poison
+1277051@@@Mutilated Gash
+1284109@@@Hollowing Strikes
+1284110@@@Hollowing Strikes
+1285998@@@Mutilated Gash
+1288115@@@Poison Splash
+1292778@@@Final Ascension
+1292779@@@Final Ascension
+1292780@@@Final Ascension
+1296975@@@Mor'zahi's Command
+1297022@@@Mor'zahi's Command
+1297024@@@Mor'zahi's Command
+1297075@@@Final Ascension
+1297372@@@Final Ascension
+1297380@@@Final Ascension
+1297630@@@Vessel of Awakening
+1297631@@@Vessel of Awakening
+1297632@@@Vessel of Awakening
+1297644@@@United Defense
+1298400@@@Final Ascension
+1300771@@@Circling Prey
+1300772@@@Circling Prey
+1300773@@@Circling Prey
+1300774@@@Circling Prey
+1300775@@@Circling Prey
+1300938@@@Hobbled
+1301406@@@Tactical Reload
+1301510@@@Circling Prey
+1301514@@@Circling Prey
+1306060@@@Vessel of Awakening
+1306995@@@[DNT] Summon Secret Souvenir 26
+1310357@@@Toxic Barrage
+1310359@@@The Vaults of Atal'Utek
+1310379@@@[DNT] 12.1 - Housing - Endeavor - The Ringing Deeps - Teleport (REM)
+1312014@@@[DNT] Cancel Carry Auras
+1312015@@@[DNT] Boss Emote at Self
+1312024@@@Hold Hammer
+1312027@@@Void-Touched
+1312031@@@[DNT] Cosmetic - Holyfire Hand
+1312043@@@AI Cast AoE
+1312046@@@Necro Dissolve In
+1312066@@@Infest
+1312100@@@[DNT] Wave Event bypass
+1312104@@@Spit Gold
+1312131@@@Spiritveil
+1312132@@@Malevolent Resonance
+1312135@@@Override Mana Bar Color - Holy
+1312136@@@[DNT] No More Spells
+1312137@@@Tether of Awakening
+1312138@@@Explosive Acids
+1312139@@@Explosive Acids
+1312140@@@Explosive Acids
+1312141@@@Explosive Acids
+1312142@@@Explosive Acids
+1312143@@@Explosive Acids
+1312144@@@Serpent's Renewal
+1312145@@@Serpent's Renewal
+1312146@@@Awakening Slam
+1312147@@@[DNT]Summon Half-Finished Mummy
+1312148@@@Awakening Slam
+1312150@@@Rancid Yolk
+1312151@@@REUSE
+1312156@@@Venomous Surge
+1312169@@@(DNT) Stun, No Casting, No Fall Dmg
+1312181@@@Drop Egg
+1312189@@@Virulence
+1312195@@@Drop Egg
+1312214@@@Corruption
+1312219@@@Raging Crosswinds
+1312262@@@Toxic Burn
+1312339@@@Eternal Nightfall
+1312349@@@[DNT]Hoji Whirlwind
+1312350@@@[DNT]Hoji Roll
+1312351@@@[DNT]Hoji Confused
+1312363@@@Splinters
+1312366@@@Miasmic Coating
+1312393@@@Purging the Vaults
+1312399@@@Destroy Center Platform
+1312411@@@Destroy Center Platform
+1312421@@@[DNT] Shadow Tumor Lockout
+1312424@@@Unworthy
+1312425@@@[DNT] wick pile charge
+1312426@@@Ultimate Infusion [PH]
+1312427@@@Plague Wave
+1312487@@@Virulent Mutation
+1312496@@@Virulent Mutation
+1312565@@@Virulent Mutation
+1312568@@@[DNT] Wave Aimer
+1312569@@@Embalm
+1312590@@@Cannon Barrage
+1312593@@@Cannon Barrage
+1312594@@@Cannon Barrage
+1312601@@@[DNT] Targeted
+1312630@@@Soul Sever
+1312633@@@Rage of the Shackled
+1312635@@@Unnerving Fixation
+1312638@@@Ula'tek Death Cosmetic
+1312662@@@Malignance
+1312663@@@Soulbound
+1312669@@@Flaming Embers
+1312684@@@Roaring Firebreath
+1312691@@@[DNT] Absorb Souls
+1312703@@@[DNT] Absorb Souls
+1312708@@@[DNT] Absorb Souls
+1312711@@@[DNT] Absorb Souls
+1312742@@@[DNT] F Off Centaurs
+1312747@@@Collecting
+1312759@@@Frozen Tempest
+1312760@@@Frozen Tempest
+1312761@@@Chillstorm
+1312792@@@Noxious Ground
+1312796@@@Noxious Ground
+1312797@@@Noxious Ground
+1312811@@@Sever
+1312812@@@Sever
+1312821@@@Blighted Sever
+1312822@@@Blighted Sever
+1312824@@@Soul Sever
+1312825@@@Soul Sever
+1312837@@@[DNT] Use Reagent Indicator
+1312843@@@Swelling Tides
+1312844@@@[DNT] Reagent Applied
+1312846@@@Axegrinder
+1312848@@@Command Constructs
+1312850@@@Embalming Ritual
+1312853@@@Splinters
+1312854@@@Unnerving Fixation
+1312865@@@Dreadmarch
+1312866@@@Dreadmarch
+1312868@@@Splinters
+1312876@@@Generic Spell
+1312911@@@Command Constructs
+1312967@@@Volatile Purge
+1312998@@@Impetuous Wrath
+1313101@@@Poison Tide
+1313109@@@Poison Tide
+1313122@@@[DNT] No Spells After Fight
+1313123@@@[DNT] Health Copy - Nama
+1313125@@@[DNT] Health Copy - Iku
+1313126@@@[DNT] Health Copy - Gebbo
+1313127@@@Stormcloud Detonation
+1313131@@@Vessel of Awakening
+1313154@@@Blightscale Viper
