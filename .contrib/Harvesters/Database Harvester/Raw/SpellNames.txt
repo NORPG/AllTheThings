@@ -69102,6 +69102,8 @@
 1312785@@@Tenacity
 1312809@@@Might of the Sunwell
 1312867@@@Sanctuary
+3.80.2.69077
+1314755@@@Zandalari Spiritflash
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward
