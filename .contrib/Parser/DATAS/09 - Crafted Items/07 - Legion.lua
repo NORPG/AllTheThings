@@ -150,7 +150,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 					i(139789),	-- Transmutant (PET!)
 				},
 			}),
-			header(HEADER.Spell, 213256, {	-- Transmute: Meat to Pet
+			header(HEADERS.Spell, 213256, {	-- Transmute: Meat to Pet
 				i(137599),	-- Pulsating Sac
 			}),
 		}),
