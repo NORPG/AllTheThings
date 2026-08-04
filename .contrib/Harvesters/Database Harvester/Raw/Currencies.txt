@@ -1518,3 +1518,6 @@
 3568@@@Contained Corruption
 3569@@@Cleansing Multiplier
 3570@@@Wave Multiplier
+2.5.5.68575
+1900@@@Arena Points
+1901@@@Honor Points
