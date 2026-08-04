@@ -335619,6 +335619,21 @@
 276281@@@Kickable Practice Ball
 276294@@@Temporary Alliance Tabard
 276295@@@Temporary Horde Tabard
+12.0.7.68453
+267078@@@Stoneforged Sentinel
+280781@@@Cache of Void-Touched Armaments
+280782@@@Cache of Void-Touched Armaments: Boots
+280783@@@Cache of Void-Touched Armaments: Legs
+280784@@@Cache of Void-Touched Armaments: Belts
+280785@@@Cache of Void-Touched Armaments: Gloves
+280786@@@Cache of Void-Touched Armaments: Bracers
+280787@@@Cache of Void-Touched Armaments: Chest
+280788@@@Cache of Void-Touched Armaments: Cloak
+280789@@@Cache of Void-Touched Armaments: Shoulder
+280790@@@Cache of Void-Touched Armaments: Head
+280791@@@Cache of Void-Touched Armaments: Weapons
+280792@@@Cache of Void-Touched Armaments: Necklaces
+280793@@@Cache of Void-Touched Armaments: Rings
 12.1.0.68209
 158368@@@Sethraliss' Defiled Relic
 169391@@@Bubble-Eyed Rolly

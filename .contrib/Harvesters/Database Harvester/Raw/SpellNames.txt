@@ -468543,6 +468543,12 @@
 12.0.7.68367
 1308499@@@Enveloped in Shadows
 1309012@@@Rotmire's Sporeheart
+12.0.7.68453
+1279352@@@Stoneforged Sentinel
+1283845@@@[DNT] Companion Roc Mount - Master - Audio
+1283851@@@[DNT] Companion Roc Mount - Head - Avian
+1283852@@@[DNT] Companion Roc Mount - Head - Feline
+1283853@@@[DNT] Companion Roc Mount - Head - Draconic
 12.1.0.68209
 73510@@@Shadeburst
 164452@@@Shadow Word: Madness

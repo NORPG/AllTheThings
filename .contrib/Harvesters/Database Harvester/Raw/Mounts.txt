@@ -2581,6 +2581,8 @@
 350220@@@Liquid Hot Magma Slug
 12.0.7.68182
 1292344@@@Bilgewater X-TREME Firework Rocket
+12.0.7.68453
+1279352@@@Stoneforged Sentinel
 12.1.0.68209
 1266211@@@Venomous Gladiator's Goredrake
 1292668@@@Spirit of Tok'jara
