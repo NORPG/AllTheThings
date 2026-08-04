@@ -1264,18 +1264,23 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
 						}),
 						iensemble(232319, {	-- Ensemble: Auchenai Priest's Raiment
+							["modID"] = 14,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						iensemble(232321, {	-- Ensemble: Boulderfist Mystic's Battlegear
+							["modID"] = 14,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						iensemble(232322, {	-- Ensemble: Cenarion Mender's Battlegear
+							["modID"] = 14,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						iensemble(232318, {	-- Ensemble: Shadowmoon Warlock's Vestments
+							["modID"] = 14,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						iensemble(232320, {	-- Ensemble: Telhamat Anchorite's Raiment
+							["modID"] = 14,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						i(232048, {	-- Felguard Sentinel's Polearm
