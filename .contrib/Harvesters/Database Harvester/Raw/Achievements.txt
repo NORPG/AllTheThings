@@ -18402,3 +18402,9 @@
 63688@@@Mythic: Nymrissa Wavecaller Guild Run
 12.1.0.68824
 63440@@@Venomfall Deeps clears
+12.1.0.68914
+63695@@@Arena Exercise
+63696@@@Arena Exercise
+63697@@@Arena Exercise
+63698@@@Arena Exercise
+63699@@@World Wide Trainer

@@ -3829,3 +3829,19 @@
 26204@@@Corrosive Cache
 26375@@@Pungent Atal'Utek Shroom
 26376@@@Atal'Utek Ivy
+12.1.0.68914
+25765@@@Framed Moonbrook Quilt
+25895@@@Jansen Farm Floral Basket
+25896@@@Saldean Autumnal Woven Rug
+26703@@@Sentinel Hill Rocking Chair
+26704@@@Demont Orchard Juicer
+26705@@@Furlbrow Farm Pumpkin Trio
+26706@@@Molsen Farm Corn Row
+26707@@@Old Moonbrook Creeping Ivy
+26708@@@Westfall Farmer's Shed
+26875@@@Westfall Harvest Lamp
+26876@@@Sentinel Hill Picnic Table
+26877@@@Old Moonbrook Daylight Window
+26940@@@Maxwell Stables Saddle
+27045@@@Torquewrench Tractor
+27973@@@Old Moonbrook Nighttime Window

@@ -478543,3 +478543,151 @@
 1313127@@@Stormcloud Detonation
 1313131@@@Vessel of Awakening
 1313154@@@Blightscale Viper
+12.1.0.68914
+1238158@@@Lightbloom Pollination
+1258668@@@Swirling Whirlpools
+1258669@@@Swirling Whirlpools
+1258671@@@Swirling Whirlpools
+1258673@@@Swirling Whirlpools
+1258676@@@Swirling Whirlpools
+1258677@@@Swirling Whirlpools
+1277386@@@Wavecaller's Might
+1282487@@@Fangs of the Coiled Altar
+1282500@@@Fangs of the Coiled Altar
+1282512@@@Fangs of the Coiled Altar
+1282520@@@Twinfang Toxin
+1282526@@@Fangs of the Coiled Altar
+1282937@@@Iceblade Flurry
+1282945@@@Iceblade Flurry
+1282947@@@Iceblade Flurry
+1283242@@@Fangs of the Coiled Altar
+1285999@@@Mutilate
+1288879@@@Serpent's Bite
+1289092@@@Stone Breaker
+1289895@@@Fangs of the Coiled Altar
+1289962@@@Blightscale Clutch
+1289970@@@Blightscale Clutch
+1289974@@@Blightscale Clutch
+1290409@@@Blightscale Clutch
+1293146@@@Serpent's Bite
+1295209@@@Caustic Explosion
+1295876@@@Serpent's Bite
+1296512@@@Twilight's Blade Bedroll
+1298228@@@Fishy Feedback
+1298381@@@Defilement of the Coiled Altar
+1298391@@@Defilement of the Coiled Altar
+1298393@@@Defilement of the Coiled Altar
+1298395@@@Corrupted Toxin
+1298397@@@Defilement of the Coiled Altar
+1298399@@@Defilement of the Coiled Altar
+1298449@@@Defilement of the Coiled Altar
+1298452@@@Defilement of the Coiled Altar
+1298453@@@Defilement of the Coiled Altar
+1298594@@@Defilement of the Coiled Altar
+1298686@@@Defilement of the Coiled Altar
+1298690@@@Defilement of the Coiled Altar
+1298693@@@Defilement of the Coiled Altar
+1298701@@@Defilement of the Coiled Altar
+1298767@@@Defilement of the Coiled Altar
+1300146@@@Hatching Doom
+1300194@@@Hatching Doom
+1300195@@@Hatching Doom
+1300201@@@Hatching Doom
+1300893@@@Defilement of the Coiled Altar
+1301799@@@Blightscale Clutch
+1303378@@@Barbed Bulwark
+1304459@@@Malignance
+1305872@@@Serpent's Bite
+1306584@@@Fangs of the Coiled Altar
+1306586@@@Fangs of the Coiled Altar
+1306746@@@Malignant Totem
+1306818@@@Malignant Totem
+1306819@@@Malignant Totem
+1306820@@@Malignant Totem
+1306847@@@Serpent's Bite
+1306862@@@Hatching Doom
+1307363@@@Barbed Bulwark
+1307425@@@Guillotine
+1307538@@@Barbed Bulwark
+1307652@@@Grim Guillotine
+1308039@@@Slithering Clutch
+1308040@@@Slithering Clutch
+1308391@@@Slithering Clutch
+1309460@@@Collect Framed Moonbrook Quilt
+1309464@@@Collect Jansen Farm Floral Basket
+1309466@@@Collect Sentinel Hill Rocking Chair
+1309469@@@Collect Demont Orchard Juicer
+1309473@@@Collect Westfall Harvest Lamp
+1309475@@@Collect Maxwell Stables Saddle
+1309477@@@Collect Torquewrench Tractor
+1309479@@@Collect Saldean Autumnal Woven Rug
+1309481@@@Collect Furlbrow Farm Pumpkin Trio
+1309484@@@Collect Molsen Farm Corn Row
+1309486@@@Collect Old Moonbrook Creeping Ivy
+1309489@@@Collect Westfall Farmer's Shed
+1309492@@@Collect Sentinel Hill Picnic Table
+1309494@@@Collect Old Moonbrook Daylight Window
+1310763@@@Fester Burst
+1311061@@@Blightscale Clutch
+1312876@@@Serpent's Bite
+1313123@@@Dark Unity
+1313125@@@Dark Unity
+1313126@@@Dark Unity
+1313155@@@Warden's Protection
+1313161@@@[DNT] Devolving
+1313196@@@Soulbound
+1313197@@@Tier 11
+1313204@@@Soulbound
+1313207@@@Freeing
+1313213@@@Ula'tek's Mark
+1313251@@@[DNT] Cycle Scenario Propping
+1313303@@@Fishy Feedback
+1313308@@@Kill Credit: Ula'tek Defeated
+1313355@@@Doomscale Cauldron
+1313391@@@Chilling Frost
+1313393@@@Chilling Frost
+1313394@@@Splinters
+1313395@@@Chilling Frost
+1313402@@@Frost Orb
+1313418@@@Wrath of Ula'tek
+1313420@@@Generic Spell
+1313422@@@Thinned Blood
+1313428@@@Achievement Credit
+1313432@@@Achievement Credit
+1313441@@@[DNT] Fresh Meat Blood Decal
+1313448@@@Frost Orb
+1313450@@@Frost Burst
+1313453@@@Collecting
+1313456@@@Shatter
+1313457@@@[DNT] 12.1 - Housing - Endeavor - The Ringing Deeps - Teleport (REM)
+1313458@@@[DNT] 12.1 - Housing - Endeavor - The Ringing Deeps - Teleport (REM)
+1313464@@@[DNT] 12.1 - Housing - Endeavor - The Ringing Deeps - Teleport (REM)
+1313465@@@[DNT] 12.1 - Housing - Endeavor - The Ringing Deeps - Teleport (REM)
+1313466@@@[DNT] Soloability Active
+1313469@@@[DNT] Unit of Interest Gears (<20 yds)
+1313472@@@Undermining
+1313473@@@Shrieking Blightscale
+1313515@@@Soul Transfer
+1313529@@@Ingested Venom
+1313531@@@Acidic Expulsion
+1313532@@@Sanguine Storm
+1313533@@@Sanguine Storm
+1313534@@@Eternal Nightfall
+1313593@@@Deserter
+1313630@@@Haymaker
+1313638@@@ClearAllDebuffs
+1313651@@@Collect Autumnal Westfall Barn Facade
+1313655@@@Collect Springtime Westfall Barn Facade
+1313663@@@Collect Old Moonbrook Nighttime Window
+1313667@@@Generic Spell
+1313690@@@Aftershock
+1313728@@@Soulcoiled
+1313754@@@Slithering Gestation
+1313755@@@Generic Spell
+1313756@@@Writhing Gestation
+1313757@@@Boiling Venom
+1313758@@@Boiling Venom
+1313800@@@Cosmetic Orbs
+1313802@@@Barrier Integrity
+1313803@@@Drain Barrier
+1313804@@@Drain Barrier

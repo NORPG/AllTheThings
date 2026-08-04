@@ -24616,3 +24616,5 @@
 273118@@@Luma Rootwarden
 273121@@@Nara Kelpthorn
 273123@@@Vulric Bloomborne
+12.1.0.68914
+273727@@@Sound Stalker - 12.1 Raid - Temple of Ula'Tek - Boss 8 - P2 - Right

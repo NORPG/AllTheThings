@@ -338413,3 +338413,41 @@
 12.1.0.68824
 281225@@@Conqueror's Venomous Lacquer
 282183@@@Fabled Coiled Isle Veteran's Cache
+12.1.0.68914
+268970@@@Majestic Eagle Statue
+268972@@@Pressed Sanguithorn
+268973@@@Bone Pen
+268974@@@Deactivated Amani Hex Ward
+268975@@@Amani War Axe
+268976@@@"Aromatic" Bottle
+268977@@@Ossein Fish Trinket
+268978@@@Torga Statue
+269019@@@Amani Construction Hammer
+269020@@@Scrimshaw Ward
+269021@@@Jan'alai Bibelot
+269937@@@Neighborhood Knick Knack
+269994@@@Griftah's Token of Appreciation
+275271@@@Recipe: Venom-Spiced Cutlets
+275338@@@Pattern: Twilight's Blade Bedroll
+279064@@@Naj'kula's Flame Amulet
+279164@@@Blushing Witchwick Jack Hat
+279165@@@Blushing Witchwick Flowing Jack Hat
+279356@@@Opalescent Amani Peridot
+280503@@@Ulantu's Notes
+280625@@@Framed Moonbrook Quilt
+280627@@@Jansen Farm Floral Basket
+280629@@@Sentinel Hill Rocking Chair
+280631@@@Demont Orchard Juicer
+280633@@@Westfall Harvest Lamp
+280635@@@Maxwell Stables Saddle
+280637@@@Torquewrench Tractor
+280639@@@Saldean Autumnal Woven Rug
+280642@@@Furlbrow Farm Pumpkin Trio
+280644@@@Molsen Farm Corn Row
+280646@@@Old Moonbrook Creeping Ivy
+280650@@@Westfall Farmer's Shed
+280652@@@Sentinel Hill Picnic Table
+280654@@@Old Moonbrook Daylight Window
+282340@@@Autumnal Westfall Barn Facade Plans
+282343@@@Springtime Westfall Barn Facade Plans
+282347@@@Old Moonbrook Nighttime Window
