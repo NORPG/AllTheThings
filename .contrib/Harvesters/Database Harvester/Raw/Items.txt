@@ -99632,6 +99632,19 @@
 277650@@@Satchel of Shining Curiosities
 277652@@@Reins of the Juvenile Frostwyrm
 277947@@@Reins of the Darkshade Drake
+5.5.4.68317
+280378@@@Icebound Cloak
+280379@@@The Frost Lord's Battle Shroud
+280380@@@Shroud of Winter's Chill
+280381@@@Cloak of the Frigid Winds
+280382@@@The Frost Lord's War Cloak
+280383@@@Icebound Cloak
+280384@@@The Frost Lord's Battle Shroud
+280385@@@Shroud of Winter's Chill
+280386@@@Cloak of the Frigid Winds
+280387@@@The Frost Lord's War Cloak
+280388@@@Frostscythe of Lord Ahune
+280389@@@Frostscythe of Lord Ahune
 7.3.0.24473
 25@@@ Shortsword
 35@@@ Staff

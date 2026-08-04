@@ -1534,3 +1534,14 @@
 3311@@@Emblem of Final Stand
 3403@@@Titanic Ember
 3406@@@Titanic Fragment
+5.5.4.68317
+104@@@Honor Points DEPRECATED
+390@@@Conquest Points
+392@@@Honor Deprecated 3
+484@@@Conquest BG Meta
+3148@@@Fissure Stone Fragment
+3281@@@Obsidian Fragment
+3350@@@August Stone Fragment
+3407@@@Platinum Coins
+3414@@@August Stone Shard
+3416@@@August Stone Cluster
