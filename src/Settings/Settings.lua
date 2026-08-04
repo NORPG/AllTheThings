@@ -843,36 +843,6 @@ settings.ApplySettingsMetatable = function(self, container, meta)
 		RawSettings[container] = settingscontainer
 	end
 end
-local insaneFilters = {	-- Filter IDs
-	11,	-- Artifacts
-	2,	-- Cosmetic
-	3,	-- Cloaks
-	10,	-- Shirts
-	9,	-- Tabards
-	33,	-- Crossbows
-	32,	-- Bows
-	31,	-- Guns
-	36,	-- Thrown
-	57,	-- Profession Equipment
-	34,	-- Fist Weapons
-	35,	-- Warglaives
-	27,	-- Wands
-	21,	-- 1H Axes
-	22,	-- 2H Axes
-	23,	-- 1H Maces
-	24,	-- 2H Maces
-	25,	-- 1H Swords
-	26,	-- 2H Swords
-	1,	-- Held in Off-Hand
-	8,	-- Shields
-	4,	-- Cloth
-	5,	-- Leather
-	6,	-- Mail
-	7,	-- Plate
-	20,	-- Daggers
-	29,	-- Polearms
-	28,	-- Staves
-}
 settings.GetModeString = function(self)
 	local mode = L.MODE;
 	if settings:Get("Thing:Transmog") or app.MODE_DEBUG then
@@ -960,7 +930,7 @@ settings.GetModeString = function(self)
 			end
 		end
 		local hasAllInsaneFilters = true
-		for _, filterID in pairs(insaneFilters) do
+		for filterID in pairs(app.EquipmentFilters) do
 			if not settings:GetFilter(filterID) then
 				hasAllInsaneFilters = false
 				break
@@ -1064,7 +1034,7 @@ settings.GetShortModeString = function(self)
 			end
 		end
 		local hasAllInsaneFilters = true
-		for _, filterID in pairs(insaneFilters) do
+		for filterID in pairs(app.EquipmentFilters) do
 			if not settings:GetFilter(filterID) then
 				hasAllInsaneFilters = false
 				break
@@ -1638,8 +1608,8 @@ settings.ToggleFilters = function(self)
 		settings:ResetFilters()	-- Class Defaults
 		app.print(L.FILTERS_PAGE.." "..L.CLASS_DEFAULTS_BUTTON.."|R "..L.ENABLED..".")
 	else
-		for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-			settings:SetFilter(i, true)
+		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+			settings:SetFilter(filterID, true)
 		end
 		app.print(L.FILTERS_PAGE.." "..L.ALL_BUTTON.."|R "..L.ENABLED..".")
 	end

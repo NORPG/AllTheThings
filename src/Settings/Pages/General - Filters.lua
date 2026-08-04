@@ -60,43 +60,50 @@ for i,filterID in ipairs({
 	last = filter
 end
 
-local allEquipmentFilters = {	-- Filter IDs
-	11,	-- Artifacts
-	54,	-- Artifact Relics
-	2,	-- Cosmetic
-	3,	-- Cloaks
-	10,	-- Shirts
-	9,	-- Tabards
-	33,	-- Crossbows
-	32,	-- Bows
-	31,	-- Guns
-	36,	-- Thrown
-	50,	-- Miscellaneous
-	57,	-- Profession Equipment
-	34,	-- Fist Weapons
-	35,	-- Warglaives
-	27,	-- Wands
-	21,	-- 1H Axes
-	22,	-- 2H Axes
-	23,	-- 1H Maces
-	24,	-- 2H Maces
-	25,	-- 1H Swords
-	26,	-- 2H Swords
-	1,	-- Held in Off-Hand
-	8,	-- Shields
-	4,	-- Cloth
-	5,	-- Leather
-	6,	-- Mail
-	7,	-- Plate
-	20,	-- Daggers
-	29,	-- Polearms
-	28,	-- Staves
-	51,	-- Neck
-	52,	-- Finger
-	53,	-- Trinket
-	55,	-- Consumable
-	104,	-- Quest Items
-	113,	-- Bags
+app.EquipmentFilters = {
+	[21] = true,  -- 1H Axes
+	[22] = true,  -- 2H Axes
+	[23] = true,  -- 1H Maces
+	[24] = true,  -- 2H Maces
+	[25] = true,  -- 1H Swords
+	[26] = true,  -- 2H Swords
+
+	[20] = true,  -- Daggers
+	[34] = true,  -- Fist Weapons
+	[29] = true,  -- Polearms
+	[28] = true,  -- Staves
+	[35] = true,  -- Warglaives
+
+	[32] = true,  -- Bows
+	[33] = true,  -- Crossbows
+	[31] = true,  -- Guns
+	[36] = true,  -- Thrown
+	[27] = true,  -- Wands
+
+	[8] = true,   -- Shields
+	[1] = true,   -- Held in Off-Hand
+
+	[4] = true,   -- Cloth
+	[5] = true,   -- Leather
+	[6] = true,   -- Mail
+	[7] = true,   -- Plate
+
+	[2] = true,   -- Cosmetic
+	[3] = true,   -- Back
+	[10] = true,  -- Shirt
+	[9] = true,   -- Tabard
+
+	[11] = true,	-- Artifacts
+	[54] = true,	-- Artifact Relic
+	[57] = true,	-- Profession Equipment
+	[50] = true,	-- Miscellaneous
+
+	[51] = true,	-- Neck
+	[52] = true,	-- Finger
+	[53] = true,	-- Trinket
+	[113] = true,	-- Bag
+	[55] = true,	-- Consumables
+	[104] = true,	-- Quest Items
 }
 
 -- Bows, Crossbows, Guns, Thrown, Wands, Shields, Off-hands
@@ -160,8 +167,8 @@ local buttonAll = child:CreateButton(
 { text = L.ALL_BUTTON, tooltip = L.ALL_BUTTON_TOOLTIP, },
 {
 	OnClick = function(self)
-		for k,v in pairs(allEquipmentFilters) do
-			settings:SetFilter(v, true)
+		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+			settings:SetFilter(filterID, true)
 		end
 		settings:UpdateMode(1)
 	end,
@@ -179,8 +186,8 @@ local buttonNone = child:CreateButton(
 { text = L.UNCHECK_ALL_BUTTON, tooltip = L.UNCHECK_ALL_BUTTON_TOOLTIP, },
 {
 	OnClick = function(self)
-		for k,v in pairs(allEquipmentFilters) do
-			settings:SetFilter(v, false)
+		for filterID in pairs(app.EquipmentFilters) do
+			settings:SetFilter(filterID, false)
 		end
 		settings:UpdateMode(1)
 	end,
