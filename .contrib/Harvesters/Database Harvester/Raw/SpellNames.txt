@@ -477401,3 +477401,451 @@
 1308865@@@Infest
 1308871@@@Blood Rain Clears
 1308882@@@Teleport
+12.1.0.68412
+265977@@@Lightning Spire
+265979@@@Lightning Spire
+265986@@@Lightning Spire
+265988@@@Lightning Spire
+265990@@@Lightning Spire
+266923@@@Galvanized
+274006@@@Lightning Spire
+1214980@@@Health Funnel
+1240276@@@Collect Purified Sin'dorei Candle
+1256438@@@[DNT] [AUTOGEN] Collect 11WE_WildElves_Decor_HangingBanner03.m2
+1283107@@@Harsh Winds
+1283606@@@Execution
+1286317@@@Carrying Stave of Shackles
+1286332@@@Carry Stave of Shackles [DNT]
+1286359@@@Carry Stave of Venom
+1286364@@@Carrying Staff of Venom
+1286503@@@Spiteful Soulcoiler
+1287040@@@Place Stave of Venom
+1287061@@@Place Stave of Shackles
+1287067@@@Carry Stave of Shackles
+1287068@@@Place Stave of Serpents [DNT]
+1287250@@@Spectral Coils
+1287260@@@Spectral Coils
+1287265@@@Spectral Coils
+1288966@@@Collect Clutch of Ula'tek
+1289113@@@Collect Egg of Ula'tek
+1289635@@@Collect Oozing Vilescar Barricade
+1290809@@@Coiling Ichor
+1290811@@@Coiling Ichor
+1290814@@@Coiling Ichor
+1290878@@@Coiling Ichor
+1291405@@@Corrosive Spit
+1292188@@@Caustic Waves
+1292196@@@Caustic Waves
+1292209@@@Caustic Waves
+1292211@@@Caustic Waves
+1292235@@@Caustic Waves
+1292313@@@Echo of Jawae
+1292403@@@Caustic Waves
+1292445@@@Coiling Ichor
+1292505@@@Congealed Gore
+1292552@@@Congealed Gore
+1292619@@@Coiling Ichor
+1292823@@@Anti-Venom
+1293123@@@Gore Rattle
+1293749@@@Vile Flood
+1294293@@@Vile Flood
+1294599@@@Vile Flood
+1294605@@@Vile Flood
+1294742@@@Hungering Pyre
+1295073@@@Virulent Whirl
+1295406@@@Ula'tek Snakehead
+1295830@@@Elastic Springvine
+1295853@@@Release Springvine
+1295871@@@Grabbing Springvine
+1296215@@@Ravage
+1296217@@@Ravage
+1296496@@@Amani Forgemaster's Decorative Spear
+1296500@@@Enchanted Voidwell Fish
+1296501@@@Coiled Amani Hookshot
+1296505@@@"Cursed Gaze of Ula'tek" Mural
+1296724@@@Autumnal Witchwick's Rider
+1296985@@@Mossy Witchwick's Rider
+1296986@@@Moonlit Witchwick's Rider
+1296987@@@Scarlet Witchwick's Rider
+1296988@@@Blushing Witchwick's Rider
+1296989@@@Carmine Witchwick's Rider
+1297091@@@Withering Grasp
+1297224@@@Auriferous Venomfang
+1297381@@@Hearty Forage
+1297408@@@Preyhunter's Fury
+1297696@@@Healing Breeze
+1298559@@@Gore Rattle
+1298570@@@Caustic Waves
+1298616@@@Caustic Waves
+1298685@@@Caustic Waves
+1298687@@@Caustic Waves
+1298726@@@Gore Rattle
+1298727@@@Gore Rattle
+1299010@@@Spectral Coils
+1299033@@@Spectral Coils
+1299059@@@Spectral Coils
+1299063@@@Spectral Coils
+1299069@@@Spectral Coils
+1299301@@@Grim Execution
+1299394@@@Carry Stave
+1299506@@@Ancient Judgment
+1299526@@@Venomous Heart
+1299757@@@Toxic Cascade
+1299758@@@Toxic Cascade
+1299759@@@Toxic Cascade
+1299760@@@Toxic Cascade
+1299761@@@Toxic Cascade
+1299762@@@Toxic Cascade
+1299763@@@Toxic Cascade
+1299764@@@Toxic Cascade
+1299919@@@Toxic Cascade
+1299961@@@Topaz Skyfang
+1300012@@@Spectral Coils
+1300051@@@Collect Wide Maruukai Barricade
+1300100@@@Complete Corpesburster Achievement [DNT]
+1300266@@@Collect Maruukai Barricade
+1300268@@@Collect Tapered Maruukai Barricade
+1300270@@@Collect Bakar's Favorite Ball
+1300272@@@Collect Maruukai Wooden Table
+1300274@@@Collect Maruukai Feast Table
+1300277@@@Collect Maruukai Chef's Stove
+1300279@@@Collect Bakar's Napping Rug
+1300281@@@Collect Ornate Khanam's Rug
+1300283@@@Collect Large Ornate Khanam's Rug
+1300285@@@Collect Maruukai Storage Basket
+1300287@@@Collect Open Maruukai Storage Basket
+1300289@@@Collect Bakar's Snack
+1300291@@@Collect Bakar's Dinner
+1300516@@@Soul Exhaustion
+1300530@@@Spectral Coils
+1300531@@@Spectral Coils
+1300777@@@Venomous Coiler
+1300779@@@Ruby Writhe
+1300845@@@Test Spectral Coils Positions
+1301817@@@Whoofle Bramblewing
+1302008@@@Archmage's Familiar
+1302095@@@Amewbisath
+1302692@@@Spectral Coils
+1302842@@@Toxic Burn
+1302964@@@Vile Flood
+1302966@@@Vile Flood
+1303316@@@Venom Splash
+1303319@@@Venom Splash
+1303330@@@Serpentogenesis
+1303581@@@Ula'tek's Coating
+1303622@@@Caustic Waves
+1303660@@@Collect Blood Knight's Decorative Shield
+1304527@@@Gore Rattle
+1304752@@@Eerie Bauble
+1305204@@@Crested Ember Leafmimic
+1305221@@@Ensemble: Ravenholdt Assassin's Attire
+1305953@@@Ensemble: Wintry Witchwick Ensemble
+1306002@@@Ensemble: Mossy Witchwick Ensemble
+1306009@@@Ensemble: Moonlit Witchwick Ensemble
+1306013@@@Ensemble: Scarlet Witchwick Ensemble
+1306025@@@Ensemble: Autumnal Witchwick Ensemble
+1306050@@@Ensemble: Blushing Witchwick Ensemble
+1306236@@@Not USED
+1306501@@@Collect Coiled Amani Hookshot
+1306554@@@Collect Amani Forgemaster's Decorative Spear
+1306557@@@Collect Ersatz Venom Splatter
+1306564@@@Collect Enchanted Voidwell Fish
+1306566@@@Collect Coiled Amani Hookshot
+1306568@@@Collect Proudmoore Ship-in-a-Bottle
+1306591@@@Collect Twilight's Blade Bedroll
+1306771@@@Collect Draenei Rock Goblet
+1306872@@@Sanguine Storm
+1306876@@@Sanguine Storm
+1307346@@@Barbed Bulwark
+1307855@@@Collect Small Triangular Wooden Tile
+1307857@@@Collect Large Triangular Wooden Tile
+1307859@@@Collect Tall Round Wooden Column
+1307861@@@Collect Short Round Wooden Column
+1307863@@@Collect Short Square Wooden Column
+1307865@@@Collect Tall Square Wooden Column
+1307873@@@Collect Spiral Wooden Stairs
+1308013@@@50-Lb Midnight Salmon
+1308240@@@Immortal Coil
+1308459@@@Caustic Waves
+1308460@@@Caustic Waves
+1308795@@@[DNT] Corruption Cancellation - Cover
+1308899@@@[DNT] Boss Emote at Self
+1308900@@@[DNT] Boss Emote at Self
+1308901@@@[DNT] Boss Emote at Self
+1308920@@@[DNT] Boss Emote at Self
+1308921@@@[DNT] Boss Emote at Self
+1308925@@@[DNT] Death Teleport Checker
+1308926@@@[DNT] Death Teleport - 1
+1308927@@@Spectral Coils
+1308928@@@Open Index of Anguish (DNT)
+1308932@@@[DNT] Death Teleport - 2
+1308936@@@Harvesting
+1308938@@@Exhaustion Removal
+1308941@@@[DNT] Decor Proxy
+1308947@@@Venom Explosion
+1308956@@@Imbibe
+1308957@@@Delver's Corroded Pouch of Undercoin
+1308973@@@Caustic Waves
+1308982@@@Blood Bomb
+1308998@@@Generic Spell
+1309006@@@Inescapable Grasp
+1309008@@@Inescapable Grasp
+1309021@@@Play Stay A While Scene (DNT)
+1309022@@@Coaxing Slime
+1309058@@@Howling Maelstrom
+1309060@@@Burrow
+1309063@@@Burrow
+1309066@@@Burrow
+1309068@@@Burrow
+1309070@@@Caustic Waves
+1309074@@@Caustic Waves
+1309084@@@[DNT] Cursed Curios - Get Status
+1309097@@@Collect Color-Curious Candle
+1309105@@@Spirit Shield
+1309106@@@Spirit Shield
+1309108@@@Toxin Cloud
+1309117@@@Ancestral Vision
+1309126@@@[DNT] Corruption Cancellation - 5
+1309129@@@[DNT] Corruption Cancellation - 15
+1309130@@@[DNT]Hidden Amani Spirit
+1309131@@@[DNT] Corruption Cancellation - 25
+1309132@@@[DNT] Corruption Cancellation - 35
+1309133@@@[DNT] Corruption Cancellation - 45
+1309134@@@[DNT] Corruption Cancellation - 55
+1309136@@@[DNT] Corruption Cancellation - 65
+1309137@@@[DNT] Corruption Cancellation - 75
+1309138@@@Quest Generic - CoreFX Utility Stand Here - Quest Area Trigger [DNT]
+1309139@@@Venomous Jeweler's Setting
+1309155@@@[DNT] God Ray
+1309156@@@Venomous Jeweler's Setting
+1309157@@@Venomous Jeweler's Setting
+1309160@@@Venomous Jeweler's Setting
+1309174@@@Caustic Secretion
+1309175@@@Lil' Mon
+1309188@@@Skull Giggling
+1309200@@@Studying
+1309202@@@Studying
+1309211@@@Caustic Secretion
+1309218@@@Caustic Secretion
+1309222@@@Sermon of Ula'Tek
+1309229@@@Sermon of Ula'Tek
+1309235@@@Caustic Secretion
+1309239@@@Pull
+1309240@@@Pull
+1309255@@@Virulent Cyst
+1309257@@@<DNT>
+1309261@@@Sermon of Ula'Tek
+1309267@@@Sermon of Ula'Tek
+1309274@@@Goremaw's Bite
+1309275@@@Toxic Deluge
+1309277@@@Toxic Deluge
+1309279@@@Toxic Deluge
+1309288@@@Swirling Spirit
+1309299@@@[DNT]Su'mekaya Comforted
+1309301@@@[DNT] [AUTOGEN] Collect 12PH_Leg_Book_Troll_03.M2
+1309306@@@[DNT] 12.1 Raid - Sound Squisher
+1309307@@@[DNT]Rah'ven Comforted
+1309308@@@[DNT]Babooi'jin Comforted
+1309309@@@Goremaw's Bite
+1309311@@@[DNT]Vola'ni Comforted
+1309312@@@Reversal Charm
+1309313@@@[DNT]Momo'jin Comforted
+1309314@@@[DNT]Haka'li Comforted
+1309316@@@[DNT]Jino'ka Comforted
+1309317@@@[DNT]Kora'man Comforted
+1309340@@@Wintry Witchwick's Rider
+1309344@@@Toxic Binding
+1309362@@@[DNT]B'faloh Comforted
+1309366@@@Sermon of Ula'Tek
+1309368@@@<DNT>
+1309374@@@Sermon of Ula'Tek
+1309375@@@Sermon of Ula'Tek
+1309376@@@Veteran Adventurer's Loyal Companion
+1309382@@@Infest
+1309385@@@Pool of Darkness
+1309386@@@[DNT] Brewfest Serving Platter
+1309387@@@Choke Snake
+1309390@@@Ritual Reversal
+1309392@@@Tortollan Glasses [DNT]
+1309393@@@Pirate Crew (Bandana, Blue) [DNT]
+1309396@@@Tortollan Eyepatch [DNT]
+1309398@@@Infest
+1309400@@@Soul Fragment
+1309403@@@Unnerving Fixation
+1309406@@@Venom Wave
+1309412@@@Venom Wave
+1309413@@@Lightning Spire
+1309415@@@Virulent Twister
+1309416@@@Virulent Twister
+1309418@@@Venom Storm
+1309426@@@Lightning Spire
+1309427@@@[DNT] Use Charm Indicator
+1309429@@@Gathering
+1309433@@@[DNT] Miniboss Totem Check For Achievement Aura
+1309444@@@Nightmare I [DNT]
+1309447@@@Hard I [DNT]
+1309448@@@Nightmare II [DNT]
+1309449@@@Hard II [DNT]
+1309453@@@Nightmare III [DNT]
+1309456@@@Hard III [DNT]
+1309460@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_PSL_BarnQuilt01.M2
+1309464@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_PSL_FloralBasket01.M2
+1309466@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_PSL_RockingChair01.M2
+1309469@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_PSL_AppleJuicer01.M2
+1309471@@@Noxious Slick
+1309473@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_PSL_HangingLight01.M2
+1309475@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_PSL_SaddleStand01.M2
+1309477@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_PSL_Tractor01.M2
+1309479@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_Pastel_Rug01.M2
+1309481@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_Pastel_Pumpkins01.M2
+1309484@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_Pastel_Corn01.M2
+1309486@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_Pastel_Vines01.M2
+1309488@@@Lightning Spire
+1309489@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_Pastel_Shed01.M2
+1309491@@@Lightning Spire
+1309492@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_Pastel_PicnicTable01.M2
+1309494@@@[DNT] [AUTOGEN] Collect 12PH_Shop_Fall_Pastel_Window01_Day.M2
+1309497@@@Refractive Images
+1309499@@@Reinforced
+1309519@@@Peculiar
+1309522@@@Ssscavenging
+1309525@@@Induction
+1309527@@@Drifting Globules
+1309528@@@[DNT] Inverted Infusion Totem
+1309532@@@Isolated Implosion
+1309535@@@Isolated Implosion
+1309537@@@[DNT] Devolving
+1309538@@@[DNT] Devolving
+1309540@@@Ritual of Blazebinding
+1309541@@@Swirling Spirit
+1309548@@@Inferno Spit
+1309560@@@[DNT] Null Space Entry
+1309561@@@[DNT] Null Space Entry
+1309566@@@Check for Players - 100 Yards
+1309571@@@Check for Players - 100 Yards
+1309573@@@[DNT] Check for Players
+1309600@@@Warbound Pack of Hero Mistcrests
+1309602@@@Warbound Pack of Champion Dawncrests
+1309606@@@Sculpting
+1309608@@@Hammering
+1309609@@@Warbound Pack of Veteran Mistcrests
+1309613@@@Wavecalling
+1309619@@@Healing Wave
+1309620@@@[DNT] Desaturation
+1309624@@@Soul-Weave
+1309626@@@[DNT] Necro Beam Sky Pillar
+1309629@@@[DNT] Cosmetic Poison Aura
+1309638@@@Magister's Spell Missive
+1309656@@@Fish Cleanup
+1309657@@@Collect "Cursed Gaze of Ula'tek" Mural
+1309662@@@Collect Chiseled Amani Tablet
+1309668@@@Collect Roaring Amani Garnet
+1309683@@@Collect [DNT] [AUTOGEN] 12SN_Snakeoid_Defense_Barricade01.m2
+1309705@@@Steel Barrage
+1309707@@@Summon Looming Mutagenitor - Sound Only
+1309716@@@[DNT] Binding Snare
+1309717@@@Mark of the Halazzi
+1309724@@@Eating
+1309738@@@Virulent Mutation
+1309741@@@Grenade Toss
+1309742@@@Virulent Mutation
+1309749@@@Play Stay A While Scene (DNT)
+1309750@@@Kneel and Hold Torch
+1309758@@@Mutagenic Venom
+1309759@@@Mutagenic Venom
+1309764@@@Rescuing
+1309774@@@Malice
+1309786@@@Refraction
+1309787@@@Refraction
+1309793@@@Amplified Refraction
+1309794@@@Blessing of Protection
+1309800@@@Tame Beast - DEBUG
+1309815@@@Ping Commander [DNT]
+1309816@@@Examining
+1309817@@@Push Loot - Corrosive Coin [DNT]
+1309818@@@Elemental Explosion
+1309819@@@Upgrade
+1309820@@@Miasmic Jewelbinder
+1309821@@@Upgrade
+1309822@@@Upgrade
+1309824@@@Warden's Protection
+1309832@@@[DNT] Safe Zone
+1309839@@@Souvenir Support
+1309849@@@Examining
+1309859@@@Ping Er'inye [DNT]
+1309884@@@Flag Quests
+1309887@@@Venom Bubbles
+1309889@@@Venom Bubbles
+1309893@@@<DNT>
+1309895@@@<DNT>
+1309896@@@<DNT>
+1309902@@@Dance While Everyone Watches
+1309904@@@Dance While Everyone Watches
+1309910@@@Ritual Reagent
+1309911@@@Starvation Effigy FX
+1309912@@@[DNT] Tokens
+1309913@@@Glaive Toss
+1309915@@@<DNT> Enter Follower Dungeon - Altar of Fangs
+1309919@@@Frigid Roar
+1309920@@@[DNT] [NYI] Consecutive Bounce Count
+1309923@@@Applying Reagent
+1309924@@@Volatile Totem
+1309925@@@Volatile Totem
+1309929@@@Collect Beguiling Memories of the Sea
+1309931@@@Volatile Flames
+1309932@@@Volatile Flames
+1309940@@@Guillotined
+1309942@@@Collect Protected Tortollan Scroll Case
+1309944@@@Guillotined
+1309947@@@Harsh Winter
+1309948@@@Collect Seeker's First Draft
+1309951@@@Harsh Winter
+1309953@@@Mutagenic Venom
+1309954@@@[DNT] MawPowerTest
+1309956@@@Mutagenic Venom
+1309959@@@Mutagenic Venom
+1309960@@@Cleaning Wax Spills
+1309961@@@Wax Cleaned
+1309964@@@Harsh Winter
+1309966@@@[DNT] Ping Wax Sculptor: Cool Rock [cost: 1]
+1309968@@@[DNT] Ping Wax Sculptor: Boot [cost: 1]
+1309970@@@Health Funnel
+1309971@@@[DNT] Ping Wax Sculptor: Cooler Rock [cost: 1]
+1309972@@@[DNT] Ping Wax Sculptor: Cheese [cost: 1]
+1309974@@@[DNT] Ping Wax Sculptor: Goblet [cost: 1]
+1309977@@@[DNT] Spirit Cosmetic
+1309979@@@Reclaim Essence
+1309980@@@Cursed
+1309983@@@[DNT] Check Cursed Status
+1309984@@@[DNT] Summon Cursed Spirit
+1309985@@@[DNT] Summon Uncursed Spirit
+1309987@@@Soulbound
+1309995@@@Soulbound
+1310005@@@Volatile Venom
+1310012@@@Mutating Elixir
+1310013@@@Tainted Blood
+1310016@@@[DNT]Sarcophagus Room Door Open
+1310017@@@Twisted Curse
+1310018@@@Ancient Guardian's Aid
+1310019@@@Maddened Pursuit
+1310020@@@Immortal Coil
+1310021@@@Soulcoiler's Curse
+1310024@@@[DNT]Assign Left Doors With Entry String ID
+1310025@@@Gravitic Orbs
+1310026@@@Atomized
+1310027@@@Relic Rupture
+1310028@@@Relic Rupture
+1310031@@@Relic Rupture
+1310032@@@Spooky Mask
+1310033@@@Forceful Slam
+1310034@@@Stomp Detector
+1310035@@@Teleport (On Leave Combat)
+1310036@@@Teleport (On Leave Combat)
+1310037@@@Teleport (On Leave Combat)
+1310038@@@Teleport (On Encounter Success)
+1310039@@@Teleport (On Encounter Success)
+1310040@@@Teleport (On Encounter Success)
+1310042@@@Play Movie
+1310043@@@Play Movie
+1310044@@@Play Movie
+1310045@@@Cancel Movie

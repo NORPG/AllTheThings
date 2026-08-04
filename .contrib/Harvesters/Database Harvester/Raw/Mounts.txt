@@ -2620,3 +2620,18 @@
 1305206@@@Crested Aqua Leafmimic
 1305207@@@Crested Verdant Leafmimic
 1305209@@@Crested Violet Leafmimic
+12.1.0.68412
+1296724@@@Autumnal Witchwick's Rider
+1296985@@@Mossy Witchwick's Rider
+1296986@@@Moonlit Witchwick's Rider
+1296987@@@Scarlet Witchwick's Rider
+1296988@@@Blushing Witchwick's Rider
+1296989@@@Carmine Witchwick's Rider
+1297224@@@Auriferous Venomfang
+1297408@@@Preyhunter's Fury
+1299961@@@Topaz Skyfang
+1300779@@@Ruby Writhe
+1301817@@@Whoofle Bramblewing
+1305204@@@Crested Ember Leafmimic
+1309340@@@Wintry Witchwick's Rider
+1309376@@@Veteran Adventurer's Loyal Companion

@@ -1545,3 +1545,6 @@
 3407@@@Platinum Coins
 3414@@@August Stone Shard
 3416@@@August Stone Cluster
+12.1.0.68412
+3574@@@PMM Currency 1
+3575@@@PMM Currency 2

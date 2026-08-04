@@ -3751,3 +3751,61 @@
 25674@@@Hanging Brewfest Wreath
 25675@@@Brewfest Crate
 26374@@@Lost Explorers' Mailbox
+12.1.0.68412
+1907@@@Purified Sin'dorei Candle
+17800@@@Flat Snakeskin Canopy
+23176@@@Maruukai Barricade
+23177@@@Wide Maruukai Barricade
+23178@@@Maruukai Storage Basket
+23179@@@Open Maruukai Storage Basket
+23180@@@Maruukai Wooden Table
+23181@@@Maruukai Feast Table
+23182@@@Bakar's Napping Rug
+23183@@@Ornate Khanam's Rug
+23184@@@Large Ornate Khanam's Rug
+23185@@@Maruukai Chef's Stove
+23186@@@Tapered Maruukai Barricade
+23548@@@Bakar's Favorite Ball
+23550@@@Bakar's Snack
+23551@@@Bakar's Dinner
+23555@@@Small Triangular Wooden Tile
+23556@@@Large Triangular Wooden Tile
+23557@@@Tall Round Wooden Column
+23558@@@Short Round Wooden Column
+23559@@@Short Square Wooden Column
+23560@@@Tall Square Wooden Column
+23710@@@Spiral Wooden Stairs
+25139@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Defense_Barricade01.m2
+25279@@@Blood Knight's Decorative Shield
+25765@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_BarnQuilt01.M2
+25895@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_FloralBasket01.M2
+25896@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Rug01.M2
+26367@@@Protected Tortollan Scroll Case
+26380@@@Chiseled Amani Tablet
+26381@@@Amani Forgemaster's Decorative Spear
+26383@@@Coiled Amani Hookshot
+26384@@@"Cursed Gaze of Ula'tek" Mural
+26391@@@Ersatz Venom Splatter
+26477@@@Draenei Rock Goblet
+26485@@@Proudmoore Ship-in-a-Bottle
+26490@@@Roaring Amani Garnet
+26495@@@Twilight's Blade Bedroll
+26496@@@Enchanted Voidwell Fish
+26703@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_RockingChair01.M2
+26704@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_AppleJuicer01.M2
+26705@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Pumpkins01.M2
+26706@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Corn01.M2
+26707@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Vines01.M2
+26708@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Shed01.M2
+26875@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_HangingLight01.M2
+26876@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_PicnicTable01.M2
+26877@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Window01_Day.M2
+26878@@@Tuskarr Fire Pit
+26879@@@Tuskarr Hanging Grill
+26935@@@Seeker's First Draft
+26940@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_SaddleStand01.M2
+27044@@@Beguiling Memories of the Sea
+27045@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_Tractor01.M2
+27046@@@Tuskarr Fishing Gear Rack
+27047@@@[DNT] [AUTOGEN] 12PH_Leg_Book_Troll_03.M2
+27167@@@Color-Curious Candle

@@ -337979,3 +337979,25 @@
 280422@@@Spirit Sprouts
 280425@@@Afterlife Ale
 280446@@@Unnerving Bait
+12.1.0.68412
+237343@@@Nunchucks of the Renaissance
+238217@@@Offhand Renaissance Nunchucks
+245991@@@Purified Sin'dorei Candle
+250310@@@Thief's Notched Blade
+250312@@@Monastery's Katana
+250314@@@Initiate's Training Glaive
+259190@@@Thalassian Whetstone
+260379@@@Dark Ranger's Shortbow
+260387@@@Silver Ranger's Shortbow
+263709@@@Amani Forgemaster's Workbench
+266077@@@Dark Ranger's Shadow Quiver
+266085@@@Silver Ranger's Spell Quiver
+269752@@@Nunchucks of the Artisan
+269754@@@Offhand Artisan Nunchucks
+271358@@@Clutch of Ula'tek
+271604@@@Egg of Ula'tek
+272267@@@Unconfined Labrys
+272273@@@Enshrined Ceremonial Scepter
+274422@@@Ossified Relic
+274493@@@Effigy of Ula'tek's Faithful
+274589@@@Ula'tek Snakehead
