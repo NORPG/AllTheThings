@@ -69050,6 +69050,19 @@
 1306939@@@Destroy Bijou
 3.80.1.68318
 1307061@@@[DNT] Prevention Aura
+3.80.1.68572
+48517@@@Solar Energy
+48518@@@Lunar Energy
+1286791@@@TRR - Item - P5 - T6.5 - Rogue - Damage - 2P Bonus
+1309395@@@Rune Strike Activator [DNT]
+1309397@@@Elune's Orbital Cannon
+1309554@@@Lunar Energy
+1309555@@@Solar Energy
+1309556@@@Eclipse
+1309557@@@Chosen of the Moon
+1309558@@@Wrath of the Stars
+1309559@@@Fire of the Heavens
+1309829@@@Wrath
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward
