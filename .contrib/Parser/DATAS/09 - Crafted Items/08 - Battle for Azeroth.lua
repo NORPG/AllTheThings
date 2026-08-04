@@ -83,19 +83,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			}),
 		}),
 		filter(BATTLE_PETS, {
-			spell(251808, {	-- Transmute: Meat to Pet
-				i(160324, {	-- Grumbling Sac
+			i(160325),	-- Quivering Sac
+			i(160324, {	-- Grumbling Sac
+				["provider"] = { "i", 160325 },	-- Quivering Sac
+				["groups"] = {
 					i(163859),	-- Baby Crawg (PET!)
 					i(163861),	-- Bloated Bloodfeaster (PET!)
 					i(163860),	-- Gearspring Hopper (PET!)
 					i(163858),	-- Slippy (PET!)
-				}),
-				i(160325, {	-- Quivering Sac
-					i(163859),	-- Baby Crawg (PET!)
-					i(163861),	-- Bloated Bloodfeaster (PET!)
-					i(163860),	-- Gearspring Hopper (PET!)
-					i(163858),	-- Slippy (PET!)
-				}),
+				},
 			}),
 		}),
 		spell(286547, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Transmute: Herbs to Anchors
@@ -865,7 +861,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 	}),
 	prof(HERBALISM, {
-		spell(2366, {	-- Herb Gathering
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			i(152507),	-- Akunda's Bite
 			i(152510),	-- Anchor Weed
 			i(159877),	-- Dead Pollen-Covered Bee

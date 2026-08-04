@@ -663,7 +663,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				["requireSkill"] = HERBALISM
 			}),
 		}),
-		spell(2366, {	-- Herb Gathering
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			DRAENOR_HERBALISM,
 			i(109625),	-- Broken Fireweed Stem
 			i(109624),	-- Broken Frostweed Stem
@@ -956,7 +956,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				["requireSkill"] = MINING,
 			}),
 		}),
-		spell(2575, {	-- Mining
+		header(HEADERS.Spell, 2575, {	-- Mining
 			DRAENOR_MINING,
 			i(109992),	-- Blackrock Fragment
 			i(109118),	-- Blackrock Ore
@@ -966,7 +966,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 	}),
 	prof(SKINNING, {
-		spell(8613, {	-- Skinning
+		header(HEADERS.Spell, 8613, {	-- Skinning
 			DRAENOR_SKINNING,
 			i(110609),	-- Raw Beast Hide
 			i(110610),	-- Raw Beast Hide Scraps

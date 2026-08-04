@@ -534,7 +534,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			r(193290),	-- Herbalism Journal
 			applyclassicphase(BFA_PHASE_ONE, r(265834, {["timeline"] = {ADDED_8_0_1}})),	-- Herb Gathering (Legion)
 		}),
-		spell(2366, {	-- Herb Gathering
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			i(151857, {["timeline"] = {ADDED_7_3_0}}),	-- Adolescent Astral Glory
 			i(124101),	-- Aethril
 			i(129117),	-- Aethril Sample
@@ -821,7 +821,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			r(2656),	-- Mining Journal / Smelting
 			applyclassicphase(BFA_PHASE_ONE, r(265849, {["timeline"] = {ADDED_8_0_1}})),	-- Mining (Legion)
 		}),
-		spell(2575, {	-- Mining
+		header(HEADERS.Spell, 2575, {	-- Mining
 			i(124493),	-- Battered Mining Pick
 			i(124494),	-- Chunk of Horn
 			i(151864, {["timeline"] = {ADDED_7_3_0}}),	-- Embedded Empyrium Ore
@@ -871,7 +871,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			r(194174),	-- Skinning Journal
 			applyclassicphase(BFA_PHASE_ONE, r(265867, {["timeline"] = {ADDED_8_0_1}})),	-- Skinning (Legion)
 		}),
-		spell(8613, {	-- Skinning
+		header(HEADERS.Spell, 8613, {	-- Skinning
 			i(151566, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Leather
 			i(124115),	-- Stormscale
 			i(124113),	-- Stonehide Leather
