@@ -335648,6 +335648,9 @@
 276870@@@Cloaked Wings of the Dawnfire Phoenix
 276872@@@Ensemble: Garb of the Dawnfire Phoenix
 276873@@@Perch of the Dawnfire Phoenix
+12.0.7.68974
+282425@@@Band of the Beast Reaper
+282426@@@Draenic Drive Chain
 12.1.0.68209
 158368@@@Sethraliss' Defiled Relic
 169391@@@Bubble-Eyed Rolly

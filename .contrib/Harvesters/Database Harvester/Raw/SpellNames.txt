@@ -468569,6 +468569,8 @@
 1293703@@@[DNT] Void Stone
 1300978@@@Ensemble: Garb of the Dawnfire Phoenix
 1300983@@@Collect Perch of the Dawnfire Phoenix
+12.0.7.68974
+1230909@@@Abundance - Phase 1 Aura
 12.1.0.68209
 73510@@@Shadeburst
 164452@@@Shadow Word: Madness
