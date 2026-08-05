@@ -2443,9 +2443,6 @@ root(ROOTS.Unsorted, {
 				i(163058),	-- Jellied Deepsea Eel
 				i(163060),	-- Fried Sweetbread
 				i(163061),	-- Roasted Lasher Seeds
-				i(163075),	-- Stormshore Haddock
-				i(163076),	-- Murkfathom Herring
-				i(163077),	-- Glacier Bay Halibut
 				i(163081),	-- Spicy Barbecued Buzzard Wing
 				i(163083),	-- Col. Tenders Spiced Chicken
 				i(163100),	-- Kul Tiran Meatballs
@@ -3499,7 +3496,6 @@ root(ROOTS.Unsorted, {
 			i(167674),	-- Stone Statue
 			i(167675),	-- Stone Statue
 			i(167696),	-- Build-a-Computer Kit
-			i(167739),	-- Fathom Ray Roe
 			i(167746),	-- Mist Blossom
 			i(168021),	-- Nullifier Transport Relay
 			i(168187),	-- Highborne Relic

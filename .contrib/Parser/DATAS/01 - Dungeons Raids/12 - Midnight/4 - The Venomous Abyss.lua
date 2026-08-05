@@ -8,7 +8,7 @@ local VASHNIK = 2882;
 local EXPLORERS = 2894;
 local SSZORAK = 2871;
 local TWIN_FANGS = 2887;
-local BARGAINED_CROWN = 2883;
+local COILED_ALTAR = 2883;
 local ULATEK = 2895;
 
 ------ EncounterToCRS ------
@@ -29,7 +29,7 @@ local EncounterToCRS = {
 		1,
 	},
 	[TWIN_FANGS] = { 1 },
-	[BARGAINED_CROWN] = { 1 },
+	[COILED_ALTAR] = { 1 },
 	[ULATEK] = { 1 },
 };
 
@@ -207,7 +207,7 @@ local EncounterToLoot = {
 		i(268220),	-- Scaleplate Strangulators
 		i(270170),	-- Vexhul's Everflowing Gland
 	};
-	[BARGAINED_CROWN] = {
+	[COILED_ALTAR] = {
 		i(268209),	-- Aman'muso, Warlord's Vengeance
 		i(268211),	-- Baleful Hexblade
 		i(268255),	-- Cackling Soultreads
@@ -283,8 +283,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				ach(63532, {	-- The Venomous Abyss: Ula'tek
-					crit(116125, {	-- The Bargained Crown
-						["_encounter"] = { BARGAINED_CROWN, DIFFICULTY.RAID.MULTI.ALL },
+					crit(116125, {	-- The Coiled Altar
+						["_encounter"] = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116126, {	-- Ula'tek
 						["_encounter"] = { ULATEK, DIFFICULTY.RAID.MULTI.ALL },
@@ -309,8 +309,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					crit(116124, {	-- The Twin Fangs
 						["_encounter"] = { TWIN_FANGS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(116125, {	-- The Bargained Crown
-						["_encounter"] = { BARGAINED_CROWN, DIFFICULTY.RAID.MULTI.ALL },
+					crit(116125, {	-- The Coiled Altar
+						["_encounter"] = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116126, {	-- Ula'tek
 						["_encounter"] = { ULATEK, DIFFICULTY.RAID.MULTI.ALL },
@@ -335,8 +335,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					crit(116116, {	-- The Twin Fangs
 						["_encounter"] = { TWIN_FANGS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
-					crit(116117, {	-- The Bargained Crown
-						["_encounter"] = { BARGAINED_CROWN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					crit(116117, {	-- The Coiled Altar
+						["_encounter"] = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(116118, {	-- Ula'tek
 						["_encounter"] = { ULATEK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
@@ -389,7 +389,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(TWIN_FANGS, {
 					i(279122),	-- Venom-Fanged Font (DECOR)
 				}),
-				BossOnly(BARGAINED_CROWN, {
+				BossOnly(COILED_ALTAR, {
 					i(279131),	-- Pillar of the Coiled Isle (DECOR!)
 					i(275937),	-- Hex Lord's Visage (COSMETIC!)
 					i(275938),	-- Hex Lord's Gaze (COSMETIC!)
@@ -417,7 +417,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					Boss(TWIN_FANGS),
 				}),
 				header(HEADERS.LFGDungeon, 3320, {	-- The Heart of Ula'tek
-					Boss(BARGAINED_CROWN),
+					Boss(COILED_ALTAR),
 					Boss(ULATEK, {
 						i(270909, {	-- Slumbering Coil Curio
 							["sym"] = {
@@ -429,6 +429,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
+				n(ACHIEVEMENTS, {
+					ach(63670),	-- Comforting Da Spirits
+				}),
 				BossOnly(NEKZALI, {
 					ach(63418),	-- Well, Well, Little Sky
 				}),
@@ -445,10 +448,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(63391),	-- Jumping Through Hoops
 				}),
 				BossOnly(TWIN_FANGS, {
-					ach(63656),	-- Four-Course Meal
+					ach(63656),	-- Taking a Bite out of Slime
 				}),
-				BossOnly(BARGAINED_CROWN, {
-					--
+				BossOnly(COILED_ALTAR, {
+					ach(63669),	-- Watch Out Behind You
 				}),
 				BossOnly(ULATEK, {
 					ach(63609, {	-- No Egg Scramble
@@ -471,7 +474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				Boss(EXPLORERS),
 				Boss(SSZORAK),
 				Boss(TWIN_FANGS),
-				Boss(BARGAINED_CROWN),
+				Boss(COILED_ALTAR),
 				Boss(ULATEK, {
 					i(270909, {	-- Slumbering Coil Curio
 						["sym"] = {
@@ -488,7 +491,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(EXPLORERS),
 				BossOnly(SSZORAK),
 				BossOnly(TWIN_FANGS),
-				BossOnly(BARGAINED_CROWN),
+				BossOnly(COILED_ALTAR),
 				BossOnly(ULATEK, {
 					ach(63650, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Ahead of the Curve: Ula'tek
 					i(279125, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Aureate Trophy (DECOR!)
@@ -509,7 +512,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				Boss(EXPLORERS),
 				Boss(SSZORAK),
 				Boss(TWIN_FANGS),
-				Boss(BARGAINED_CROWN),
+				Boss(COILED_ALTAR),
 				Boss(ULATEK, {
 					i(270909, {	-- Slumbering Coil Curio
 						["sym"] = {
@@ -546,8 +549,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				Boss(TWIN_FANGS, {
 					ach(63528),	-- Mythic: The Twin Fangs
 				}),
-				Boss(BARGAINED_CROWN, {
-					ach(63529),	-- Mythic: The Bargained Crown
+				Boss(COILED_ALTAR, {
+					ach(63529),	-- Mythic: The Coiled Altar
 				}),
 				Boss(ULATEK, {
 					ach(63476, {	-- Mythic: Ula'tek

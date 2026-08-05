@@ -309,6 +309,7 @@ i(158874);	-- Frothing Vapor
 i(158770);	-- Gelatinous Roe
 i(158865);	-- Ghastly Ooze
 i(158856);	-- Giant Frog Leg
+i(163077);	-- Glacier Bay Halibut
 i(158777);	-- Glimmering Ember
 i(158795);	-- Glittering Chill
 i(163078);	-- Glittering Earring
@@ -345,6 +346,7 @@ i(163593);	-- Map of Zandalar Trade Winds
 i(163028);	-- Masterwork Statue of the First Trolls
 i(158751);	-- Matted Pelt
 i(158778);	-- Mucose Tendril
+i(163076);	-- Murkfathom Herring
 i(158867);	-- Needlepoint Bill
 i(158866);	-- Oily Blubber
 i(163520);	-- Orange Glowing Puffer
@@ -401,6 +403,7 @@ i(158848);	-- Spoiled Feast
 i(155609);	-- Springy Eyeball
 i(155610);	-- Stinging Nettle
 i(158869);	-- Stone Tusk
+i(163075);	-- Stormshore Haddock
 i(169127);	-- Tastefully Scented Grease
 i(158746);	-- Tattered White Flag
 i(161200);	-- Teardrop Pearl
@@ -487,6 +490,7 @@ i(170054);	-- Decrypted Message 001-316
 i(169976);	-- Disintegrating Leaf
 i(170097);	-- Discarded Quel'dorei Tome
 i(169149);	-- Dulled Micro-Serrated Incisor
+i(167739);	-- Fathom Ray Roe
 i(170005);	-- Fractured Pearl
 i(169138);	-- Fractured Personality Module
 i(169962);	-- Frayed Fetish
