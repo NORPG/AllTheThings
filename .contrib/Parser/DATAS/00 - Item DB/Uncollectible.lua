@@ -2911,4 +2911,5 @@ i(279153);	-- Large Trophy
 i(279160);	-- Mud-Caked Footwraps
 i(274954);	-- Pristine Fang
 i(274953);	-- Serpentine Iris
+i(273288);	-- Sou'jin Soup
 i(280184);	-- Sweetsaw Surprise

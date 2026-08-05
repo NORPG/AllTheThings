@@ -2,13 +2,6 @@
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
 
-local i_DecorCoupons = function(itemID, couponCost)
-	return
-	i(itemID, {
-		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
-	})
-end
-
 root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 	["timeline"] = { ADDED_11_2_7 },
 	["groups"] = {
@@ -61,7 +54,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 			["qg"] = 253596,	-- The Last Architect
 			-- this allows proper merging with 'coord' used below
 			["coords"] = {{ 53.7, 57.4, RAZORWIND_SHORES }},
-		},{
+		}, {
 			q(93073, {	-- Decor Treasure Hunt
 				["coord"] = { 53.7, 50.2, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(236654) },	-- Orgrimmar Interior Doorway (DECOR!)
@@ -276,9 +269,11 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 		}));
 		-- TODO: Instead of duplicate rewards on vendors + source quest, maybe we can link them via crs and rely on Filler? need to test...
 		n(VENDORS, {
-			n(267794, {	-- Agratha <Pet Decor Vendor>
-				["coord"] = { 53.6, 54.4, RAZORWIND_SHORES },
-				["timeline"] = { ADDED_12_1_0 },
+			n(257303, {	-- "Den" Nightshade <Westfall Decor Procurement Specialist>
+				["coord"] = { 39.4, 70.2, RAZORWIND_SHORES },
+			}),
+			n(257295, {	-- "Fen" Rucket <Alliance Housing "Planner">
+				["coord"] = { 39.4, 70.7, RAZORWIND_SHORES },
 			}),
 			n(255325, {	-- "High Tides" Ren <Decor Vendor>
 				["coord"] = { 39.8, 72.8, RAZORWIND_SHORES },
@@ -295,6 +290,10 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 			}),
 			n(255319, {	-- "Yen" Malone <Decor Vendor>
 				["coord"] = { 40.1, 73.2, RAZORWIND_SHORES },
+			}),
+			n(267794, {	-- Agratha <Pet Decor Vendor>
+				["coord"] = { 53.6, 54.4, RAZORWIND_SHORES },
+				["timeline"] = { ADDED_12_1_0 },
 			}),
 			n(255301, {	-- Botanist Boh'an <Decor Vendor>
 				["coord"] = { 53.6, 58.0, RAZORWIND_SHORES },
@@ -313,16 +312,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 			}),
 			n(254687, {	-- Rotha <General Contractor>
 				["coord"] = { 53.5, 56.6, RAZORWIND_SHORES },
-				["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
-					i_DecorCoupons(274673, 50),	-- Orgrimmar Council Room Plans (ARTROOM!)
-					i_DecorCoupons(274676, 50),	-- Orgrimmar Display Room Plans (ARTROOM!)
-					i_DecorCoupons(274675, 50),	-- Orgrimmar Stone Pit Room Plans (ARTROOM!)
-					i_DecorCoupons(274674, 50),	-- Orgrimmar Theater Plans (ARTROOM!)
-					i_DecorCoupons(274663, 50),	-- Silvermoon Armory Plans (ARTROOM!)
-					i_DecorCoupons(274661, 50),	-- Silvermoon Display Room Plans (ARTROOM!)
-					i_DecorCoupons(274664, 50),	-- Silvermoon Lofty Study Plans (ARTROOM!)
-					i_DecorCoupons(274662, 50),	-- Silvermoon Small Study Plans (ARTROOM!)
-				}),
 			}),
 			n(255297, {	-- Shon'ja <Decor Vendor>
 				["coord"] = { 54.1, 59.0, RAZORWIND_SHORES },

@@ -1,5 +1,3 @@
-12.0.7.67227
-ach(62413),	-- The Curse of Ula'tek
 12.1.0.68209
 ach(62460),	-- Family Battler of Outland
 ach(62461),	-- Family Battler of Cataclysm

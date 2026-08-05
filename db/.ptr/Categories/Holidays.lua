@@ -11634,7 +11634,8 @@ s(7794,19808,{collectible=false,description="Keep this in your bank until the ap
 i(19807,{e=6})}})}})}}),
 h(-589,{awp=70205,e=266,g={
 q(47709,{coords={
-[469]={{36.3,36.5}}},e=266,isYearly=1,qgs={124280},r=2})}}),
+[469]={{36.3,36.5}}},e=266,isYearly=1,qgs={124280},r=2,g={
+toy(267472,{awp=120100,e=266})}})}}),
 h(-590,{awp=70105,e=249,sharedDescription="Thousand Boat Bash must be available for this World Quest to display.",g={
 h(-62,{e=249,g={
 q(45808,{e=249,isWorldQuest=1,maps={64},g={

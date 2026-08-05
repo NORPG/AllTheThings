@@ -10,8 +10,6 @@ root(ROOTS.Unsorted, {
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
 			i(241151),	-- Coiled Stargorger Lure
-			i(243337),	-- Bound-Left Silvermoon Drapes
-			i(243338),	-- Bound-Right Silvermoon Drapes
 			i(244344),	-- Griftah's Mystical Polter-Urn
 			i(245539),	-- Elegant Enchanted Vanity
 			i(246958),	-- Mastercrafted Fungal Row Planter
@@ -40,7 +38,6 @@ root(ROOTS.Unsorted, {
 			i(263192),	-- Unattainable Artifact of Desire
 			i(263874),	-- Emerald-Encrusted Amani Ritual Skull
 			i(263875),	-- Griftah's Resizing Hex-Skull
-			i(263880),	-- Cherished Pet's Rug
 			i(264162),	-- Enchanted Snowflake
 			i(265399),	-- Ritually-Charred Bones
 			i(265400),	-- Calcified Turtle Heart
@@ -207,7 +204,6 @@ root(ROOTS.Unsorted, {
 			i(273070),	-- Pattern: Adorned Fang
 			i(273071),	-- Enchant Weapon - Rite of the Hash'ey
 			i(273072),	-- Enchant Weapon - Rite of the Hash'ey
-			i(273288),	-- Sou'jin Soup
 			i(273303),	-- Ritual Gem
 			i(273311),	-- Kobold Candle Collection
 			i(273312),	-- Large Exodar Crystal
@@ -1042,10 +1038,8 @@ root(ROOTS.Unsorted, {
 			i(255652),	-- Purified Troll Loop
 			i(255712),	-- Purified Ancient Urn
 			i(256361),	-- Purified Troll Pendant
-			i(256684),	-- Purified Troll Amulet
 			i(258540),	-- Purified Troll Ring
 			i(263876),	-- Purified Folk Mirror
-			i(267205),	-- Purified Folk Candle
 			i(272142),	-- Purified Earthen Pot
 			i(277764),	-- Venom-Cursed Bear's Battle Bands
 			i(277765),	-- Venom-Cursed Bear's Warbelt
@@ -1117,20 +1111,6 @@ root(ROOTS.Unsorted, {
 			i(280513),	-- Color-Curious Candle
 			i(280540),	-- Lil' Mon
 			i(280581),	-- Wintry Witchwick's Rider
-			i(280625),	-- Framed Moonbrook Quilt \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_BarnQuilt01.M2
-			i(280627),	-- Jansen Farm Floral Basket \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_FloralBasket01.M2
-			i(280629),	-- Sentinel Hill Rocking Chair \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_RockingChair01.M2
-			i(280631),	-- Demont Orchard Juicer \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_AppleJuicer01.M2
-			i(280633),	-- Westfall Harvest Lamp \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_HangingLight01.M2
-			i(280635),	-- Maxwell Stables Saddle \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_SaddleStand01.M2
-			i(280637),	-- Torquewrench Tractor \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_Tractor01.M2
-			i(280639),	-- Saldean Autumnal Woven Rug \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Rug01.M2
-			i(280642),	-- Furlbrow Farm Pumpkin Trio \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Pumpkins01.M2
-			i(280644),	-- Molsen Farm Corn Row \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Corn01.M2
-			i(280646),	-- Old Moonbrook Creeping Ivy \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Vines01.M2
-			i(280650),	-- Westfall Farmer's Shed \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Shed01.M2
-			i(280652),	-- Sentinel Hill Picnic Table \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_PicnicTable01.M2
-			i(280654),	-- Old Moonbrook Daylight Window \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Window01_Day.M2
 			i(280690),	-- Bow of the Snapper
 			i(280691),	-- Dagger of the Slithering Ritual
 			i(280692),	-- Plunderer's Pummeler
@@ -1213,7 +1193,6 @@ root(ROOTS.Unsorted, {
 			i(275271),	-- Recipe: Venom-Spiced Cutlets
 			i(279356),	-- Opalescent Amani Peridot
 			i(280503),	-- Ulantu's Notes
-			i(282347),	-- Old Moonbrook Nighttime Window
 
 
 			--[[ If Darkal Needs

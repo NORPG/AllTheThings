@@ -19,7 +19,12 @@
 
 --]]
 
-
+local i_DecorCoupons = function(itemID, couponCost)
+	return
+	i(itemID, {
+		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
+	})
+end
 
 root(ROOTS.Housing, {
 	n(COMMON_VENDOR_ITEMS, {
@@ -246,6 +251,8 @@ root(ROOTS.Housing, {
 			i(245576),	-- Bel'ameth Round Interior Pillar (DECOR!)
 			i(246258),	-- Bel'ameth Round Platform (DECOR!)
 			i(246256),	-- Bel'ameth Small Platform (DECOR!)
+			i(243337, {["timeline"] = { ADDED_12_1_0 }}),	-- Bound-Left Silvermoon Drapes (DECOR!)
+			i(243338, {["timeline"] = { ADDED_12_1_0 }}),	-- Bound-Right Silvermoon Drapes (DECOR!)
 			i(253493),	-- Carved Elven Bookcase (DECOR!)
 			i(243242),	-- Circular Elven Floor Rug (DECOR!)
 			i(247501),	-- Elegant Carved Door (DECOR!)
@@ -536,12 +543,70 @@ root(ROOTS.Housing, {
 		},
 	}),
 	n_CommonVendorItems({
-		["timeline"] = { ADDED_12_1_0 },
+		["crs"] = {
+			257297,	-- "Fen" Rucket <Artisanal Room "Planner"> [Founder's Point]
+			254687,	-- Rotha <General Contractor> [Razorwind Shores]
+		},
+		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+			i_DecorCoupons(274673, 50),	-- Orgrimmar Council Room Plans (ARTROOM!)
+			i_DecorCoupons(274676, 50),	-- Orgrimmar Display Room Plans (ARTROOM!)
+			i_DecorCoupons(274675, 50),	-- Orgrimmar Stone Pit Room Plans (ARTROOM!)
+			i_DecorCoupons(274674, 50),	-- Orgrimmar Theater Plans (ARTROOM!)
+			i_DecorCoupons(274663, 50),	-- Silvermoon Armory Plans (ARTROOM!)
+			i_DecorCoupons(274661, 50),	-- Silvermoon Display Room Plans (ARTROOM!)
+			i_DecorCoupons(274664, 50),	-- Silvermoon Lofty Study Plans (ARTROOM!)
+			i_DecorCoupons(274662, 50),	-- Silvermoon Small Study Plans (ARTROOM!)
+		}),
+	}),
+	n_CommonVendorItems({
+		["crs"] = {
+			255104,	-- Jorvan Longmoor <General Contractor> [Founder's Point]
+			257295,	-- "Fen" Rucket <Alliance Housing "Planner"> [Razorwind Shores]
+		},
+		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+			i_DecorCoupons(274668, 50),	-- Bel'ameth Meeting Room Plans (ARTROOM!)
+			i_DecorCoupons(274671, 50),	-- Bel'ameth Nestled Bedroom Plans (ARTROOM!)
+			i_DecorCoupons(274670, 50),	-- Bel'ameth Temple Room Plans (ARTROOM!)
+			i_DecorCoupons(274669, 50),	-- Bel'ameth Theater Plans (ARTROOM!)
+			i_DecorCoupons(272997, 50),	-- Stormwind Armory Plans (ARTROOM!)
+			i_DecorCoupons(274666, 50),	-- Stormwind Display Room Plans (ARTROOM!)
+			i_DecorCoupons(274665, 50),	-- Stormwind Grand Hall Plans (ARTROOM!)
+			i_DecorCoupons(274667, 50),	-- Stormwind Kitchen Plans (ARTROOM!)
+			i_DecorCoupons(276243, 75),	-- Autumnal Westfall Barn Plans (ARTROOM!)
+			i_DecorCoupons(276244, 75),	-- Springtime Westfall Barn Plans (ARTROOM!)
+			i_DecorCoupons(282340, 200),	-- Autumnal Westfall Barn Facade Plans (ARTHOUSE!)
+			i_DecorCoupons(282343, 200),	-- Springtime Westfall Barn Facade Plans (ARTHOUSE!)
+		}),
+	}),
+	n_CommonVendorItems({
+		["crs"] = {
+			257321,	-- Fel'orei Moonstrider <Westfall Decor Vendor> [Founder's Point]
+			257303,	-- "Den" Nightshade <Westfall Decor Procurement Specialist> [Razorwind Shores]
+		},
+		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+			i_DecorCoupons(280631, 20),	-- Demont Orchard Juicer (DECOR!)
+			i_DecorCoupons(280625, 10),	-- Framed Moonbrook Quilt (DECOR!)
+			i_DecorCoupons(280642, 10),	-- Furlbrow Farm Pumpkin Trio (DECOR!)
+			i_DecorCoupons(280627, 10),	-- Jansen Farm Floral Basket (DECOR!)
+			i_DecorCoupons(280635, 20),	-- Maxwell Stables Saddle (DECOR!)
+			i_DecorCoupons(280644, 20),	-- Molsen Farm Corn Row (DECOR!)
+			i_DecorCoupons(280646, 10),	-- Old Moonbrook Creeping Ivy (DECOR!)
+			i_DecorCoupons(280654, 20),	-- Old Moonbrook Daylight Window (DECOR!)
+			i_DecorCoupons(282347, 20),	-- Old Moonbrook Nighttime Window (DECOR!)
+			i_DecorCoupons(280639, 10),	-- Saldean Autumnal Woven Rug (DECOR!)
+			i_DecorCoupons(280652, 30),	-- Sentinel Hill Picnic Table (DECOR!)
+			i_DecorCoupons(280629, 20),	-- Sentinel Hill Rocking Chair (DECOR!)
+			i_DecorCoupons(280637, 30),	-- Torquewrench Tractor (DECOR!)
+			i_DecorCoupons(280650, 30),	-- Westfall Farmer's Shed (DECOR!)
+			i_DecorCoupons(280633, 10),	-- Westfall Harvest Lamp (DECOR!)
+		}),
+	}),
+	n_CommonVendorItems({
 		["crs"] = {
 			257332,	-- Devin Slatesmith <Decor Vendor> [Founder's Point]
 			257257,	-- Merki <Decor Vendor> [Razorwind Shores]
 		},
-		["groups"] = {
+		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
 			i(280148),	-- Large Triangular Wooden Tile (DECOR!)
 			i(280144),	-- Large Wooden Floor Tile (DECOR!)
 			i(280160),	-- Large Wooden Wall Tile (DECOR!)
@@ -554,7 +619,7 @@ root(ROOTS.Housing, {
 			i(280150),	-- Tall Round Wooden Column (DECOR!)
 			i(280156),	-- Tall Square Wooden Column (DECOR!)
 			i(280162),	-- Wide Wooden Staircase (DECOR!)
-		},
+		}),
 	}),
 	n_CommonVendorItems({
 		["timeline"] = { ADDED_12_1_0 },
@@ -563,6 +628,7 @@ root(ROOTS.Housing, {
 			267794,	-- Agratha <Pet Decor Vendor> [Razorwind Shores]
 		},
 		["groups"] = {
+			i(263880),	-- Cherished Pet's Rug (DECOR!)
 			i(277121),	-- Cozy Bird Nest (DECOR!)
 			i(277160),	-- Cozy Lightbloom Lilypad (DECOR!)
 			i(277144),	-- Crossroads Pet Cage (DECOR!)

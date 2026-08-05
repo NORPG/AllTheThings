@@ -59,8 +59,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(1190),	-- Sin'dorei Display Case (DECOR!)
 			rawdecor(1264),	-- Rust-Plated Storage Crate (DECOR!)
 			rawdecor(1279),	-- [DNT] Spring-Powered Pointer - DO NOT USE - new asset coming (DECOR!)
-			rawdecor(1283),	-- Left-Bound Silvermoon Drapes \\ Open Silvermoon Drapes (DECOR!)
-			rawdecor(1284),	-- Right-Bound Silvermoon Drapes \\ Small Silvermoon Drapes (DECOR!)
 			rawdecor(1288),	-- [DNT] Tauren Hanging Brazier - DO NOT USE - new asset (DECOR!)
 			rawdecor(1319),	-- Durotar Signal Brazier (DECOR!)
 			rawdecor(1320),	-- Durotar Hanging Brazier (DECOR!)
@@ -480,7 +478,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(10898),	-- [DNT] [AUTOGEN] 12PM_Primitive_Furniture_Table02.m2
 			rawdecor(11140),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack08.m2
 			rawdecor(11141),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_RopeKnot01.m2
-			rawdecor(11285),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack07.m2
 			rawdecor(11329),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Incense01.m2
 			rawdecor(11330),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_SmallTent01.m2
 			rawdecor(11331),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_Awning02.m2
@@ -671,7 +668,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(15286),	-- [DNT] [AUTOGEN] 12PH_Folk_Mirror_Wall01.m2
 			rawdecor(15287),	-- [DNT] [AUTOGEN] 12PH_Folk_WallLamp01.m2
 			rawdecor(15288),	-- [DNT] [AUTOGEN] 12PH_Folk_Table_Bar_Small01.m2
-			rawdecor(15290),	-- [DNT] [AUTOGEN] 12PH_Folk_Rug03.M2
 			rawdecor(15291),	-- [DNT] [AUTOGEN] 12PH_Folk_Sconce01.M2
 			rawdecor(15292),	-- [DNT] [AUTOGEN] 12PH_Folk_Window_Interior01.M2
 			rawdecor(15600),	-- [DNT] [AUTOGEN] 12PH_Folk_Sofa_Medium01.m2
@@ -682,7 +678,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(17753),	-- [DNT] [AUTOGEN] 12PH_Opulent_Bench_Long01.M2
 			rawdecor(17888),	-- [DNT] [AUTOGEN] 12PH_Opulent_Rug03.M2
 			rawdecor(18795),	-- [DNT] [AUTOGEN] 12PH_Folk_Candelabra01.m2
-			rawdecor(18796),	-- [DNT] [AUTOGEN] 12PH_Folk_Candelabra02.m2
 			rawdecor(18797),	-- [DNT] [AUTOGEN] 12PH_Opulent_Chair_Dining_Small01.M2
 			rawdecor(18880),	-- [DNT] [AUTOGEN] 12PH_Opulent_Mirror_Wall01.M2
 			rawdecor(18881),	-- [DNT] [AUTOGEN] 12PH_Opulent_Bed_Small01.M2

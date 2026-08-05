@@ -147,8 +147,8 @@ root(ROOTS.Housing, {
 				-- Exo Note: Not sure if this is the Amani Endeavor related or not. Placing here for now.
 				["qg"] = 262726,	-- Cursed Keepsake
 				["coords"] = {
-					{ 52.7, 37.6, FOUNDERS_POINT },	-- Cursed Kaldorei Candle
-					{ 53.7, 57.4, RAZORWIND_SHORES },	-- Cursed Elven Mirror
+					{ 52.7, 37.6, FOUNDERS_POINT },
+					{ 53.7, 57.4, RAZORWIND_SHORES },
 				},
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_12_1_0 },
@@ -157,9 +157,11 @@ root(ROOTS.Housing, {
 					-- Decor offered if turning quest in Founder's Point
 					i(267435),	-- Purified Kaldorei Candle (DECOR!)
 					i(268943),	-- Purified Elven Glowlamp (DECOR!)
+					i(267205),	-- Purified Folk Candle (DECOR!)
 					-- Decor offered if turning quest in Razorwind Shores
 					i(267355),	-- Purified Elven Mirror (DECOR!)
 					i(272129),	-- Purified Tauren Pot (DECOR!)
+					i(256684),	-- Purified Troll Amulet (DECOR!)
 				},
 			}),
 		},

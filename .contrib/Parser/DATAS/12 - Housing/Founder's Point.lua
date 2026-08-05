@@ -2,13 +2,6 @@
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
 
-local i_DecorCoupons = function(itemID, couponCost)
-	return
-	i(itemID, {
-		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
-	})
-end
-
 root(ROOTS.Housing, m(FOUNDERS_POINT, {
 	["timeline"] = { ADDED_11_2_7 },
 	["groups"] = {
@@ -62,7 +55,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			["qg"] = 248854,	-- The Last Architect
 			-- this allows proper merging with 'coord' used below
 			["coords"] = {{ 52.7, 37.5, FOUNDERS_POINT }},
-		},{
+		}, {
 			q(92437, {	-- Decor Treasure Hunt
 				["coord"] = { 63.2, 38.3, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245375) },	-- Sturdy Wooden Bookcase (DECOR!)
@@ -286,6 +279,9 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 		}));
 		-- TODO: Instead of duplicate rewards on vendors + source quest, maybe we can link them via crs and rely on Filler? need to test...
 		n(VENDORS, {
+			n(257297, {	-- "Fen" Rucket <Artisanal Room "Planner">
+				["coord"] = { 63.6, 79.6, FOUNDERS_POINT },
+			}),
 			n(255222, {	-- "High Tides" Ren <Decor Vendor>
 				["coord"] = { 62.4, 80.1, FOUNDERS_POINT },
 			}),
@@ -304,25 +300,14 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			n(255213, {	-- Faarden the Builder <Decor Vendor>
 				["coord"] = { 52.0, 38.4, FOUNDERS_POINT },
 			}),
+			n(257321, {	-- Fel'orei Moonstrider <Westfall Decor Vendor>
+				["coord"] = { 52.0, 38.5, FOUNDERS_POINT },
+			}),
 			n(255942, {	-- Jendry Clockson <Donut Vendor>
 				["groups"] = { i(260588) },	-- Jendry's Donut
 			}),
 			n(255104, {	-- Jorvan Longmoor <General Contractor>
 				["coord"] = { 54.0, 39.6, FOUNDERS_POINT },
-				["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
-					i_DecorCoupons(274668, 50),	-- Bel'ameth Meeting Room Plans (ARTROOM!)
-					i_DecorCoupons(274671, 50),	-- Bel'ameth Nestled Bedroom Plans (ARTROOM!)
-					i_DecorCoupons(274670, 50),	-- Bel'ameth Temple Room Plans (ARTROOM!)
-					i_DecorCoupons(274669, 50),	-- Bel'ameth Theater Plans (ARTROOM!)
-					i_DecorCoupons(272997, 50),	-- Stormwind Armory Plans (ARTROOM!)
-					i_DecorCoupons(274666, 50),	-- Stormwind Display Room Plans (ARTROOM!)
-					i_DecorCoupons(274665, 50),	-- Stormwind Grand Hall Plans (ARTROOM!)
-					i_DecorCoupons(274667, 50),	-- Stormwind Kitchen Plans (ARTROOM!)
-					i_DecorCoupons(276243, 75),	-- Autumnal Westfall Barn Plans (ARTROOM!)
-					i_DecorCoupons(276244, 75),	-- Springtime Westfall Barn Plans (ARTROOM!)
-					i_DecorCoupons(282340, 200),	-- Autumnal Westfall Barn Facade Plans (ARTHOUSE!)
-					i_DecorCoupons(282343, 200),	-- Springtime Westfall Barn Facade Plans (ARTHOUSE!)
-				}),
 			}),
 			n(256750, {	-- Klasa <Preowned Parts>
 				["coord"] = { 58.3, 61.7, FOUNDERS_POINT },
