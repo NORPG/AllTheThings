@@ -1122,6 +1122,73 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 				},
 			}),
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
+				n(STORMING_THE_CITADEL, {
+					e(1624, {	-- Lord Marrowgar
+						["creatureID"] = 36612,	-- Lord Marrowgar
+						["groups"] = {
+							i(142094, {	-- Boneshard (PET!)
+								["timeline"] = { ADDED_7_1_0 },
+							}),
+						},
+					}),
+					e(1628, {	-- Deathbringer Saurfang
+						["creatureID"] = 37813,	-- Deathbringer Saurfang
+						["groups"] = {
+							i(142095, {	-- Blood Boil (PET!)
+								["timeline"] = { ADDED_7_1_0 },
+							}),
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+						},
+					}),
+					n(37904, {	-- Brazie Getz
+						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(49926),	-- Brazie's Black Book of Secrets
+						},
+					}),
+				}),
+				n(THE_PLAGUEWORKS, {
+					e(1631, {	-- Professor Putricide
+						["creatureID"] = 36678,	-- Professor Putricide
+						["groups"] = {
+							i(142096, {	-- Blightbreath (PET!)
+								["timeline"] = { ADDED_7_1_0 },
+							}),
+						},
+					}),
+				}),
+				n(THE_FROSTWING_HALLS, {
+					e(1635, {	-- Sindragosa
+						["creatureID"] = 36853,	-- Sindragosa
+						["groups"] = {
+							i(142097, {	-- Soulbroken Whelpling (PET!)
+								["timeline"] = { ADDED_7_1_0 },
+							}),
+						},
+					}),
+					e(1636, {	-- The Lich King
+						["creatureID"] = 36597,	-- The Lich King
+						["groups"] = {
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
+								["classes"] = { DEATHKNIGHT },
+							}),
+							i(122229, {	-- Music Roll: Invincible
+								["timeline"] = { ADDED_6_1_0 },
+							}),
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+						},
+					}),
+				}),
+			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				n(STORMING_THE_CITADEL, {
 					ach(4531, {	-- Storming the Citadel (10 player)
@@ -1227,17 +1294,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50806),	-- Leggings of Unrelenting Blood
 							i(50804),	-- Icecrown Spire Sandals
 							i(50803),	-- Saurfang's Cold-Forged Band
-							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-						},
-					}),
-					n(37904, {	-- Brazie Getz
-						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
 				}),
@@ -1295,9 +1351,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
-							i(142096, {	-- Blightbreath (PET!)
-								["timeline"] = { ADDED_7_1_0 },
-							}),
 							i(51011),	-- Flesh-Carving Scalpel
 							i(51010),	-- The Facelifter
 							i(51013),	-- Discarded Bag of Entrails
@@ -1397,9 +1450,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
 							ach(4580),	-- All You Can Eat (10 player)
-							i(142097, {	-- Soulbroken Whelpling (PET!)
-								["timeline"] = { ADDED_7_1_0 },
-							}),
 							i(51788),	-- Bleak Coldarra Carver
 							i(51784),	-- Splintershard
 							i(51791),	-- Lost Pavise of the Blue Flight
@@ -1425,10 +1475,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { ADDED_7_1_0 },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
-								["classes"] = { DEATHKNIGHT },
-							}),
 							i(51799),	-- Halion, Staff of Forgotten Love
 							i(51797),	-- Tainted Twig of Nordrassil
 							i(51796),	-- Warmace of Menethil
@@ -1438,13 +1484,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51795),	-- Troggbane, Axe of the Frostborne King
 							i(51798),	-- Valius, Gavel of the Lightbringer
 							i(51802),	-- Windrunner's Heartseeker
-							i(122229, {	-- Music Roll: Invincible
-								["timeline"] = { ADDED_6_1_0 },
-							}),
-							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { ADDED_7_0_3 },
-							}),
 						},
 					}),
 				}),
@@ -1557,17 +1596,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51897),	-- Leggings of Unrelenting Blood
 							i(51899),	-- Icecrown Spire Sandals
 							i(51900),	-- Saurfang's Cold-Forged Band
-							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-						},
-					}),
-					n(37904, {	-- Brazie Getz
-						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
 				}),
@@ -1628,9 +1656,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142096, {	-- Blightbreath (PET!)
-								["timeline"] = { ADDED_7_1_0 },
-							}),
 							i(51868),	-- Flesh-Carving Scalpel
 							i(51869),	-- The Facelifter
 							i(51866),	-- Discarded Bag of Entrails
@@ -1736,9 +1761,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142097, {	-- Soulbroken Whelpling (PET!)
-								["timeline"] = { ADDED_7_1_0 },
-							}),
 							i(51815),	-- Bleak Coldarra Carver
 							i(51819),	-- Splintershard
 							i(51812),	-- Lost Pavise of the Blue Flight
@@ -1770,10 +1792,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { ADDED_7_1_0 },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
-								["classes"] = { DEATHKNIGHT },
-							}),
 							i(51943),	-- Halion, Staff of Forgotten Love
 							i(51945),	-- Tainted Twig of Nordrassil
 							i(51946),	-- Warmace of Menethil
@@ -1783,13 +1801,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51947),	-- Troggbane, Axe of the Frostborne King
 							i(51944),	-- Valius, Gavel of the Lightbringer
 							i(51940),	-- Windrunner's Heartseeker
-							i(122229, {	-- Music Roll: Invincible
-								["timeline"] = { ADDED_6_1_0 },
-							}),
-							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { ADDED_7_0_3 },
-							}),
 						},
 					}),
 				}),
@@ -1924,17 +1935,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50333),	-- Toskk's Maximized Wristguards
 							i(50015),	-- Belt of the Blood Nova
 							i(50362),	-- Deathbringer's Will
-							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-						},
-					}),
-					n(37904, {	-- Brazie Getz
-						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
 				}),
@@ -2008,9 +2008,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142096, {	-- Blightbreath (PET!)
-								["timeline"] = { ADDED_7_1_0 },
-							}),
 							i(50179),	-- Last Word
 							i(50068),	-- Rigormortis
 							i(50067),	-- Astrylian's Sutured Cinch
@@ -2113,9 +2110,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142097, {	-- Soulbroken Whelpling (PET!)
-								["timeline"] = { ADDED_7_1_0 },
-							}),
 							i(50423),	-- Sundial of Eternal Dusk
 							i(50421),	-- Sindragosa's Cruel Claw
 							i(50424),	-- Memory of Malygos
@@ -2137,10 +2131,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { ADDED_7_1_0 },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
-								["classes"] = { DEATHKNIGHT },
-							}),
 							i(50429),	-- Archus, Greatstaff of Antonidas
 							i(50070),	-- Glorenzelg, High-Blade of the Silver Hand
 							i(50425),	-- Oathbinder, Charge of the Ranger-General
@@ -2150,13 +2140,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(49997),	-- Mithrios, Bronzebeard's Legacy
 							i(50428),	-- Royal Scepter of Terenas II
 							i(49981),	-- Fal'inrush, Defender of Quel'Thalas
-							i(122229, {	-- Music Roll: Invincible
-								["timeline"] = { ADDED_6_1_0 },
-							}),
-							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { ADDED_7_0_3 },
-							}),
 						},
 					}),
 				}),
@@ -2294,17 +2277,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50670),	-- Toskk's Maximized Wristguards
 							i(50671),	-- Belt of the Blood Nova
 							i(50363),	-- Deathbringer's Will
-							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-						},
-					}),
-					n(37904, {	-- Brazie Getz
-						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
 				}),
@@ -2381,9 +2353,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142096, {	-- Blightbreath (PET!)
-								["timeline"] = { ADDED_7_1_0 },
-							}),
 							i(50708),	-- Last Word
 							i(50704),	-- Rigormortis
 							i(50707),	-- Astrylian's Sutured Cinch
@@ -2492,9 +2461,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142097, {	-- Soulbroken Whelpling (PET!)
-								["timeline"] = { ADDED_7_1_0 },
-							}),
 							i(50635),	-- Sundial of Eternal Dusk
 							i(50633),	-- Sindragosa's Cruel Claw
 							i(50636),	-- Memory of Malygos
@@ -2527,10 +2493,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { ADDED_7_1_0 },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
-								["classes"] = { DEATHKNIGHT },
-							}),
 							i(50731),	-- Archus, Greatstaff of Antonidas
 							i(50730),	-- Glorenzelg, High-Blade of the Silver Hand
 							i(50735),	-- Oathbinder, Charge of the Ranger-General
@@ -2540,13 +2502,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50738),	-- Mithrios, Bronzebeard's Legacy
 							i(50734),	-- Royal Scepter of Terenas II
 							i(50733),	-- Fal'inrush, Defender of Quel'Thalas
-							i(122229, {	-- Music Roll: Invincible
-								["timeline"] = { ADDED_6_1_0 },
-							}),
-							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { ADDED_7_0_3 },
-							}),
 						},
 					}),
 				}),
