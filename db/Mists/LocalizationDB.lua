@@ -40,6 +40,7 @@ L.ACHIEVEMENT_ID = "Achievement ID"
 L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch."
 L.ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS
 L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements."
+L.ACTIVATE_NEXT_PROFILE = "Activate Next Profile"
 L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account"
 L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account."
 L.ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to."
@@ -799,6 +800,7 @@ L.STORE_IN_PROFILE_BUTTON_TOOLTIP = "By default, ATT stores these Filters on a p
 L.STRANGER_THINGS_LABEL = "Stranger Things"
 L.SUMMARIZE_CHECKBOX = "Summarize Things"
 L.SUMMARIZE_CHECKBOX_TOOLTIP = "Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on."
+L.SWITCH_NO_NEXT_PROFILE = "No next profile to switch to."
 L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location"
 L.SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object."
 L.SYMLINK = "Sym-Link"
@@ -9518,7 +9520,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753984800,
+		release = 1753956000,
 		state = 2,
 	},
 	[5002] = {
@@ -9527,7 +9529,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755021600,
+		release = 1754992800,
 		state = 2,
 	},
 	[5003] = {
@@ -9536,7 +9538,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755799200,
+		release = 1755770400,
 		state = 2,
 	},
 	[5004] = {
@@ -9545,7 +9547,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756231200,
+		release = 1756202400,
 		state = 2,
 	},
 	[5005] = {
@@ -9554,7 +9556,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756836000,
+		release = 1756807200,
 		state = 2,
 	},
 	[5006] = {
@@ -9563,7 +9565,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757008800,
+		release = 1756980000,
 		state = 2,
 	},
 	[5007] = {
@@ -9572,7 +9574,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758045600,
+		release = 1758016800,
 		state = 2,
 	},
 	[51] = {
@@ -9597,7 +9599,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765998000,
+		release = 1765969200,
 		state = 2,
 	},
 	[53] = {
@@ -9622,7 +9624,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781632800,
+		release = 1781604000,
 		state = 2,
 	},
 } L.PHASES = phases

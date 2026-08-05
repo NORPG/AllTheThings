@@ -1616,6 +1616,38 @@ settings.ToggleFilters = function(self)
 		app.print(L.FILTERS_PAGE.." "..L.ALL_BUTTON.."|R "..L.ENABLED..".")
 	end
 end
+settings.ActivateNextProfile = function(self)
+	if AllTheThingsProfiles and AllTheThingsProfiles.Profiles then
+		local profiles = {}
+		for key in pairs(AllTheThingsProfiles.Profiles) do
+			table.insert(profiles, { name = key })
+			if key == settings:GetProfile(true) then
+				currentProfile = #profiles
+			end
+		end
+		if #profiles >= 2 and currentProfile then
+			table.sort(profiles, function(a, b) return a.name < b.name end)
+			local currentProfile
+			for i, profile in ipairs(profiles) do
+				if profile.name == settings:GetProfile(true) then
+					currentProfile = i
+					break
+				end
+			end
+			local nextProfile = currentProfile % #profiles + 1
+			local announceProfile = settings:Get("Profile:ShowProfileLoadedMessage")
+			settings:Set("Profile:ShowProfileLoadedMessage", true)
+			settings:SetProfile(profiles[nextProfile].name)
+			settings:ApplyProfile()
+			settings:UpdateMode(1)
+			settings:Set("Profile:ShowProfileLoadedMessage", announceProfile)
+		else
+			app.print(L.SWITCH_NO_NEXT_PROFILE)
+		end
+	else
+		app.print(L.SWITCH_NO_NEXT_PROFILE)
+	end
+end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode)
 	self:UpdateMode(1)

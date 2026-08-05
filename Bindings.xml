@@ -33,6 +33,9 @@
 		AllTheThings.Settings:SetTooltipSetting("SourceLocations",
 		not AllTheThings.Settings:GetTooltipSetting("SourceLocations"));
 	</Binding>
+	<Binding name="ALLTHETHINGS_ACTIVATENEXTPROFILE" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ActivateNextProfile();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS_MODULES" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.ToggleMainList();
 	</Binding>
