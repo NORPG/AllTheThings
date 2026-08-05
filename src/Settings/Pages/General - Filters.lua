@@ -84,6 +84,7 @@ app.EquipmentFilters = {
 	[2] = true,   -- Cosmetic
 
 	[57] = true,  -- Profession Equipment
+	[11] = true,  -- Artifacts
 }
 
 for i, filterID in ipairs({
