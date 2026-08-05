@@ -176,11 +176,11 @@ o(280844,{coords={
 [388]={{37.7,63}}},description="|cFFFFFFFFLetter 7:|r Go to |cFFFFFFFF37.7, 63.0|r in |cFFFFD700Townlong Steppes|r. The final |cFFFFD700Letter from Ms. Graham|r is located near a bell on the back part of the temple. Click it. The note reads...\r\r|cFFFFFFFFMice look so sad when they have a Cleft lip.\n\nHoping you succeed,\n~Ana|r\n",model=1661948,questID=50187,sourceQuests={40288}}),
 o(280845,{coords={
 [114]={{27.6,27.1}}},description="|cFFFFFFFFThe Gift:|r Go to |cFFFFFFFF27.6, 27.1|r in |cFFFFD700Coldarra, Borean Tundra|r. The |cFFFFFFFFBlue Crystal Monocle|r is in a container on the highest Nexus ring.\n",questID=50181,sourceQuests={50187},g={
-s(93108,156724,{b=1,f=2,spellID=260931})}})}}),
+s(93108,156724,{b=1,f=2,loc=40,spellID=260931})}})}}),
 ah(156727,{coords={
 [542]={{35.3,33.6}}},description="Go to |cFFFFD700Skyreach|r in |cFFFFD700Spires of Arak|r. Behind the final boss of the instance, |cFFFFD700High Sage Viryx|r, you will find a console that you are able to interact with. Use the four glowing yellow balls to move the sun across the board (the north ball, for instance, makes the sun move up).\n\nThe directions and order in which you must move the sun are:\n\n|cFFFFFFFFRight -> Up -> Down -> Up -> Right -> Right -> Up -> Left -> Down -> Up -> Left -> Down|r\n\nLoot the chest that spawns to obtain the |cFFFFFFFFGreen Crystal Monocle|r\n",icon=133146,type="i",g={
 o(280883,{questID=50185,g={
-s(93111,156727,{b=1,f=2,spellID=260933})}})}}),
+s(93111,156727,{b=1,f=2,loc=40,spellID=260933})}})}}),
 ah(156725,{description="Fish NPCs across Vashj'ir sell sea-themed currencies which need to be exchanged between the various NPCs in order to obtain the currencies required to purchase the |cFFFFD700Red Crystal Monocle|r.\n\nThe currencies expire after a period of time so it is advised that you purchase the items in the order listed.\n",type="i",g={
 o(13000002,{description="Exchange the following items with the NPC until you receive 5 |cFFFFD700Scintillating Murloc Skin Lotion|r.\n",g={
 o(13000003,{description="Exchange the following items with the NPC until you receive 50 |cFFFFD700Glittergill Glitter|r.\n",g={
@@ -235,10 +235,10 @@ o(13000029,{coords={
 [204]={{16,82.2}}},description="|cFFFFFFFFStep 5:|r Purchase 5 |cFFFFD700Captured Cavitation Bubble|r from |cFFFFD700The Blackfish|r at |cFFFFFFFF16.0, 82.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the southwest corner of the Abandoned Reef.\n"})}}),
 o(13000030,{coords={
 [205]={{44.6,20.2}}},description="Exchange the 3 items with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir for the |cFFFFD700Red Crystal Monocle|r.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",g={
-s(93109,156725,{b=1,f=2,spellID=260929})}})}}),
+s(93109,156725,{b=1,f=2,loc=40,spellID=260929})}})}}),
 ah(156726,{description="Go to |cFFFFD700Halls of Origination|r in |cFFFFD700Uldum|r. After the first boss in Halls of Origination, there is a large room with an elevator. While wearing the |cFFFFD700Talisman of True Treasure Tracking|r, you can click a Stellar Refraction Device that spawns colorful constellations in the room below the elevator.\n\nTo access the puzzle, head north from the elevator and there will be an open way with a staircase to the floor below.\n\nYour objective here is to transform all constellations to the same color. To do this, there are three special refractors that change their colors when clicked on.\n\n|cFFFFD700The Hivemind HoO Puzzle Helper|r addon is recommended to complete this step, as it simply requires you to input the current colors of the constellations, then gives you directions on how to click the refractors to solve it.\n\nWhen all constellations have the same color, a chest will spawn on top of the Stellar Refraction Device containing the |cFFFFFFFFYellow Crystal Monocle|r.\n\n|cFFCC33FFBe careful to not accidentally click the Refraction Device when looting the monocle, as this will restart the puzzle and despawn the chest|r.\n",icon=133146,providers={{"i",27944}},type="i",g={
 o(280886,{questID=50183,g={
-s(93110,156726,{b=1,f=2,sourceQuests={50183},spellID=260930})}})}})}}),
+s(93110,156726,{b=1,f=2,loc=40,sourceQuests={50183},spellID=260930})}})}})}}),
 o(13000033,{description="|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group. Four members must each collect a different monocle before the group can continue with the secret. You must be in a party and have the same warmode. Four party members with different monocles must go to four different withered in suramar while one stay in Dalaran",g={
 n(132595,{coords={
 [680]={{71.8,62.5}}},description="Red Monocle",providers={{"i",156725}}}),
@@ -448,7 +448,7 @@ h(-12,{
 ach(18644,{sym={{"select","questID",77289,77288,77291,77292,77290,77293,77296,77294,77297,77298,77299,78208,78207,77300,77302,77301,77295}},g={
 p(4263,{b=1,itemID=208151,npcID=208643,spellID=418079})}}),
 ach(18643,{sym={{"select","questID",77289,77288,77291,77292,77290,77293,77296,77294,77297,77298,77299,78208,78207,77300,77302,77301,77295}},g={
-s(189592,208150,{f=2})}}),
+s(189592,208150,{f=2,loc=40})}}),
 ach(18642,{coords={
 [114]={{33.6,58.4}}},cost={{"i",207580,1}},questID=76987,g={
 title(512),
@@ -457,7 +457,7 @@ ach(18645,{
 crit(60754,{achID=18645,providers={{"i",206696}}}),
 crit(60755,{achID=18645,providers={{"i",208092}}}),
 crit(60756,{achID=18645,providers={{"i",207730}}}),
-s(189591,208149,{f=2})}),
+s(189591,208149,{f=2,loc=40})}),
 ach(18646,{
 mnt(418078,{b=1,itemID=208152}),
 title(519)}),
@@ -995,13 +995,13 @@ hqt(93765,{awp=120001,coords={
 [680]={{82.5,67.4}}},description="Head to the southeast of Suramar near the coordinates. Use your Torch of Pyrreth to find a wandering invisible ghost, once found, an extra action button will spawn an Orb of Shadows.\n\nYou must take this orb to Golk the Rumble in the center of Azsuna at the second coordinates and talk to them. The player carrying the orb cannot take damage, jump, or swim, and enemies will spark periodically to attack them, a group of players and water walking of some kind will make this easier. Don't be over water for too long though or your buff will drop. The Starry-Eyed Goggles will stop the Darkness debuff.\n\nFully lights up the 12 O'Clock Basin.",g={
 i(262432,{b=1,g={
 en(246973,{questID=91636,spellID=1244440,tmogSetID=5152,g={
-s(293225,246968,{f=2}),
-s(293223,246966,{f=2}),
-s(293228,246971,{f=2}),
-s(293226,246969,{f=2}),
-s(293224,246967,{f=2}),
-s(293227,246970,{f=2}),
-s(293229,246972,{f=2})}})}}),
+s(293225,246968,{f=2,loc=45}),
+s(293223,246966,{f=2,loc=44}),
+s(293228,246971,{f=2,loc=40}),
+s(293226,246969,{f=2,loc=42}),
+s(293224,246967,{f=2,loc=46}),
+s(293227,246970,{f=2,loc=41}),
+s(293229,246972,{f=2,loc=47})}})}}),
 i(262559,{b=1,spellID=1268983})}}),
 o(616681,{awp=120001,coords={
 [46]={{68.5,20.9}}},cost={{"i",262559,1}},description="In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having posession of the Spare Key.",providers={{"i",228966},{"i",260533}},g={
@@ -1157,5 +1157,5 @@ o(294335,{coords={
 [14]={{88.4,69.2}}},description="Go outside and find the Rotten Potato. You will need to get exactly 144 stacks of Rotten Potato by clicking the potato. After getting 144 stacks of the buff, go back and talk to Grimmy and select his new dialogue option\"How do I smell?\"\n\nGrimmy's new dialogue says:\n\n\"Oh, my, just like my mother used to after she made her famous pie.\n\nVery well, I will show you...my life's work!\n\nIt's in the chest out back, and it's all yours!\n\nI hope it was worth it!\"",model=2020463,modelScale=0.5,questID=52921,sourceQuests={52920}}),
 o(294703,{coords={
 [14]={{85.1,73.3}}},description="After asking Grimmy how you smell, go outside behind and above his house, and on the hill will be Grimmy's Rusty Lockbox waiting for you to open it.",questID=52922,sourceQuests={52921},g={
-s(98614,162690,{f=2,lvl=45})}})}})}})
+s(98614,162690,{f=2,loc=45,lvl=45})}})}})}})
 end)

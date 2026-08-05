@@ -112,7 +112,7 @@ for i, filterID in ipairs({
 	40, 41, 42, 44, 46, -- Head, Shoulder, Chest, Hands, Legs
 	3, 43, 45, 47,      -- Back, Wrist, Waist, Feet
 	10, 9, 2,           -- Shirt, Tabard, Cosmetic
-	57,                 -- Profession Equipment
+	57, 11                 -- Profession Equipment, Artifacts (TODO: move to separate Thing instead of Filter Type)
 }) do
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start

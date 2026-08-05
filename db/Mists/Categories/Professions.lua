@@ -911,7 +911,7 @@ ach(4917,{requireSkill=356}),
 ach(5851,{awp=40200,requireSkill=356})}}),
 ah(67414,{awp=40001,description="Fishing Daily Quest Reward",providers={{"i",67414},{"i",112623}},requireSkill=356,type="i",g={
 p(211,{awp=40003,b=1,itemID=44983,npcID=33226,q=3,requireSkill=356,spellID=62561}),
-s(143883,33820,{awp=40003,b=1,f=4,q=3,requireSkill=356}),
+s(143883,33820,{awp=40003,b=1,f=4,loc=40,q=3,requireSkill=356}),
 s(176031,45991,{awp=40003,b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
 s(176032,45992,{awp=40003,b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
 i(67410,{awp=40003,requireSkill=356}),

@@ -25,7 +25,7 @@ i(18679,{f=52,lvl=56,q=2,u=12})}}),
 n(14454,{coords={
 [1451]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",u=12,g={
 r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=10658,u=12}),
-s(163625,18676,{f=6,lvl=56,q=3,u=12}),
+s(163625,18676,{f=6,loc=45,lvl=56,q=3,u=12}),
 s(163626,18677,{f=3,lvl=56,q=2,u=12})}})}}),
 h(-481,{maps={1454,1455},rwp=20001,u=1501,g={
 h(-210,{r=2,u=1501,g={
@@ -427,7 +427,7 @@ i(21042,{b=1,q=1,u=15,g={
 i(21037,{b=1,q=1,u=15}),
 i(21041,{b=1,q=1,u=15}),
 i(21039,{b=1,q=1,u=15}),
-s(164454,21040,{b=1,f=4,q=1,u=15})}})}}),
+s(164454,21040,{b=1,f=4,loc=42,q=1,u=15})}})}}),
 q(8597,{coords={
 [1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8576},u=15}),
 q(8586,{coords={
@@ -442,7 +442,7 @@ q(8730,{lvl=60,maps={287},qgs={13020},sourceQuests={8555},u=15,g={
 qo(1,{crs={11583},providers={{"i",21138}},u=15}),
 i(21142,{crs={11583},description="You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",q=1,u=15}),
 i(21529,{b=1,f=51,lvl=60,q=4,u=15}),
-s(164650,21530,{b=1,f=6,lvl=60,q=4,u=15})}}),
+s(164650,21530,{b=1,f=6,loc=46,lvl=60,q=4,u=15})}}),
 q(8584,{coords={
 [1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8576},u=15}),
 q(8288,{coords={
@@ -476,7 +476,7 @@ i(21175,{b=1,q=1,u=15})}}),
 q(8736,{coords={
 [1450]={{36.18,41.79}}},description="You do NOT want to kill Eranikus or allow Remulos to die.",lvl=60,minReputation={910,0},qgs={11832},sourceQuests={8735},u=15,g={
 i(21531,{b=1,f=51,lvl=60,q=4,u=15}),
-s(164651,21532,{b=1,f=5,lvl=60,q=4,u=15})}}),
+s(164651,21532,{b=1,f=5,loc=47,lvl=60,q=4,u=15})}}),
 q(8735,{coords={
 [1450]={{36.18,41.79}}},lvl=60,maps={1425,1431,1440,1444},minReputation={910,0},qgs={11832},sourceQuests={8734},u=15,g={
 qo(1,{coords={
@@ -504,7 +504,7 @@ i(21108,{b=1,crs={10184},q=4,u=15}),
 i(21109,{b=1,coords={
 [287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",providers={{"o",180667}},q=4,u=15}),
 i(21110,{b=1,crs={11502},q=4,u=15}),
-s(164642,21517,{b=1,f=4,lvl=60,q=4,u=15})}}),
+s(164642,21517,{b=1,f=4,loc=40,lvl=60,q=4,u=15})}}),
 q(8301,{coords={
 [1451]={{49.5,36.4}}},cost={{"i",20384,200}},lvl=60,qgs={15180},sourceQuests={8288},u=15,g={
 i(20402,{b=1,q=2,u=15}),
@@ -514,7 +514,7 @@ q(8729,{coords={
 qo(1,{coords={
 [1447]={{65,55}}},cost={{"i",21136,1}},crs={15571},description="This summons a 40 man raid boss.",providers={{"i",21137},{"o",180669}},u=15}),
 i(21526,{b=1,f=52,lvl=60,q=4,u=15}),
-s(164649,21527,{b=1,f=4,lvl=60,q=4,u=15})}}),
+s(164649,21527,{b=1,f=4,loc=42,lvl=60,q=4,u=15})}}),
 q(8576,{coords={
 [1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8575},u=15}),
 q(8745,{coords={
@@ -538,19 +538,19 @@ q(9094,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,30}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
-s(165181,23084,{b=1,f=4,q=3,u=1601}),
-s(165179,23081,{b=1,f=5,q=3,u=1601}),
-s(165180,23082,{b=1,f=6,q=3,u=1601}),
-s(165178,23078,{b=1,f=7,q=3,u=1601})}}),
+s(165181,23084,{b=1,f=4,loc=44,q=3,u=1601}),
+s(165179,23081,{b=1,f=5,loc=44,q=3,u=1601}),
+s(165180,23082,{b=1,f=6,loc=44,q=3,u=1601}),
+s(165178,23078,{b=1,f=7,loc=44,q=3,u=1601})}}),
 q(9333,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,30}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
-s(165181,23084,{b=1,f=4,q=3,u=1601}),
-s(165179,23081,{b=1,f=5,q=3,u=1601}),
-s(165180,23082,{b=1,f=6,q=3,u=1601}),
-s(165178,23078,{b=1,f=7,q=3,u=1601})}}),
+s(165181,23084,{b=1,f=4,loc=44,q=3,u=1601}),
+s(165179,23081,{b=1,f=5,loc=44,q=3,u=1601}),
+s(165180,23082,{b=1,f=6,loc=44,q=3,u=1601}),
+s(165178,23078,{b=1,f=7,loc=44,q=3,u=1601})}}),
 q(9318,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
@@ -665,7 +665,7 @@ i(23122,{b=1,lvl=50,q=2,u=1601})}})}}),
 n(14684,{description="Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",maps={317},u=1601,g={
 s(165190,23124,{b=1,f=28,lvl=55,q=3,u=1601}),
 i(23125,{b=1,f=51,lvl=55,q=3,u=1601}),
-s(165191,23126,{b=1,f=4,lvl=55,q=3,u=1601})}}),
+s(165191,23126,{b=1,f=4,loc=45,lvl=55,q=3,u=1601})}}),
 n(14686,{description="Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",maps={300},u=1601,g={
 s(165202,23177,{b=1,f=27,lvl=36,q=3,u=1601}),
 s(165203,23178,{b=1,f=3,lvl=36,q=3,u=1601})}}),
@@ -675,21 +675,21 @@ s(165195,23132,{b=1,f=25,lvl=57,q=3,u=1601}),
 s(165196,23139,{b=1,f=8,lvl=57,q=3,u=1601})}}),
 n(14690,{description="Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",maps={234},u=1601,g={
 s(165192,23127,{b=1,f=3,lvl=58,q=3,u=1601}),
-s(165194,23129,{b=1,f=4,lvl=57,q=3,u=1601}),
-s(165193,23128,{b=1,f=4,lvl=57,q=3,u=1601})}}),
+s(165194,23129,{b=1,f=4,loc=43,lvl=57,q=3,u=1601}),
+s(165193,23128,{b=1,f=4,loc=44,lvl=57,q=3,u=1601})}}),
 n(14693,{description="Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",maps={435},u=1601,g={
 s(165198,23168,{b=1,f=20,lvl=30,q=3,u=1601}),
 i(23169,{b=1,f=51,lvl=30,q=3,u=1601}),
-s(165199,23170,{b=1,f=6,lvl=30,q=3,u=1601})}}),
+s(165199,23170,{b=1,f=6,loc=44,lvl=30,q=3,u=1601})}}),
 n(14682,{description="Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",maps={310},u=1601,g={
 s(165200,23171,{b=1,f=22,lvl=20,q=3,u=1601}),
-s(165201,23173,{b=1,f=4,lvl=20,q=3,u=1601})}}),
+s(165201,23173,{b=1,f=4,loc=46,lvl=20,q=3,u=1601})}}),
 n(16143,{cost={{"i",22484,8}},description="To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",u=1601,g={
 i(22484,{b=1,q=2,u=1601}),
-s(165183,23087,{b=1,f=7,lvl=58,q=3,rwp=20001,u=1601}),
-s(165184,23088,{b=1,f=6,lvl=58,q=3,rwp=20001,u=1601}),
-s(165182,23085,{b=1,f=4,lvl=58,q=3,rwp=20001,u=1601}),
-s(165185,23089,{b=1,f=5,lvl=58,q=3,rwp=20001,u=1601})}}),
+s(165183,23087,{b=1,f=7,loc=42,lvl=58,q=3,rwp=20001,u=1601}),
+s(165184,23088,{b=1,f=6,loc=42,lvl=58,q=3,rwp=20001,u=1601}),
+s(165182,23085,{b=1,f=4,loc=42,lvl=58,q=3,rwp=20001,u=1601}),
+s(165185,23089,{b=1,f=5,loc=42,lvl=58,q=3,rwp=20001,u=1601})}}),
 h(-63,{crs={16141,16298,16299,16383},u=1601,g={
 i(22484,{b=1,q=2,u=1601}),
 i(22970,{b=1,lvl=45,q=1,u=1601}),
@@ -699,10 +699,10 @@ i(22974,{b=1,lvl=45,q=1,u=1601}),
 i(22975,{b=1,lvl=45,q=1,u=1601}),
 i(22977,{b=1,lvl=45,q=1,u=1601})}}),
 h(-46,{crs={14697,16379,16380},u=1601,g={
-s(165187,23091,{f=4,lvl=58,q=3,rwp=20001,u=1601}),
-s(165189,23093,{f=5,lvl=58,q=3,rwp=20001,u=1601}),
-s(165188,23092,{f=6,lvl=58,q=3,rwp=20001,u=1601}),
-s(165186,23090,{f=7,lvl=58,q=3,rwp=20001,u=1601})}}),
+s(165187,23091,{f=4,loc=43,lvl=58,q=3,rwp=20001,u=1601}),
+s(165189,23093,{f=5,loc=43,lvl=58,q=3,rwp=20001,u=1601}),
+s(165188,23092,{f=6,loc=43,lvl=58,q=3,rwp=20001,u=1601}),
+s(165186,23090,{f=7,loc=43,lvl=58,q=3,rwp=20001,u=1601})}}),
 h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",u=1601,g={
 i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,q=1,u=1601}),
 i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,q=1,u=1601}),
