@@ -27,5 +27,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.THE_GREAT_GNOMEREGAN_RUN, n(THE_GREAT_GNO
 		["provider"] = { "n", 124280 },	-- Mina Gleespanner
 		["coord"] = { 36.3, 36.5, NEW_TINKERTOWN },
 		["isYearly"] = true,
+		["groups"] = {
+			-- Possibly Ally only? Kinda ass tho
+			i(267472, {	-- Gnomatic Projector (TOY!)
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+		},
 	}),
 }))));
