@@ -69,12 +69,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(61642),	-- Heroic: Den of Nalorakk
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
-				BossOnly(NALORAKK, {
-					ach(61643),	-- Mythic: Den of Nalorakk
-					ach(61605),	-- Mythic: Den of Nalorakk Guild Run
-				}),
-			}),
+			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
+                ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+                ["groups"] = {
+					BossOnly(NALORAKK, {
+						ach(61643),	-- Mythic: Den of Nalorakk
+						ach(61605),	-- Mythic: Den of Nalorakk Guild Run
+					}),
+                },
+            }),
 		},
 	}),
 })));
