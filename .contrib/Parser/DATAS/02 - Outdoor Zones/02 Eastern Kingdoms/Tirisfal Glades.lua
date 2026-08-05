@@ -3239,7 +3239,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3329, {	-- Spiked Wooden Plank
 					["coords"] = {
 						{ 58.6, 31.0, TIRISFAL_GLADES },
-						{ 58.6, 31.2, TIRISFAL_GLADES },
+						{ 58.8, 31.6, TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1753,	-- Maggot Eye

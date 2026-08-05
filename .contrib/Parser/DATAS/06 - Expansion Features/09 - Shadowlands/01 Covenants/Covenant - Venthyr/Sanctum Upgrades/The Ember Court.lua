@@ -2068,7 +2068,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 												{ 49.6, 40.9, ARDENWEALD },
 												{ 49.9, 38.1, ARDENWEALD },
 												{ 49.9, 39.6, ARDENWEALD },
-												{ 50.4, 41.5, ARDENWEALD },
 												{ 50.5, 39.4, ARDENWEALD },
 												{ 50.5, 41.4, ARDENWEALD },
 											},

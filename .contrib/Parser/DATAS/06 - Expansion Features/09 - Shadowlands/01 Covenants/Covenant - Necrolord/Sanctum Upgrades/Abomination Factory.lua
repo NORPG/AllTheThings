@@ -826,7 +826,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											o(352019, {	-- Ossein Battlemail
 												["coords"] = {
 													{ 53.4, 57.0, MALDRAXXUS },
-													{ 53.5, 57.0, MALDRAXXUS },
 													{ 54.4, 57.6, MALDRAXXUS },
 													{ 54.9, 59.1, MALDRAXXUS },
 													{ 55.3, 58.4, MALDRAXXUS },
@@ -1284,10 +1283,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 													{ 36.8, 38.1, MALDRAXXUS },
 													{ 36.9, 37.4, MALDRAXXUS },
 													{ 36.9, 39.7, MALDRAXXUS },
-													{ 37.4, 39.4, MALDRAXXUS },
 													{ 37.5, 38.3, MALDRAXXUS },
 													{ 37.5, 39.4, MALDRAXXUS },
-													{ 37.5, 39.5, MALDRAXXUS },
 												},
 												["groups"] = { i(178788) },	-- Anima Traces (QI!)
 											}),

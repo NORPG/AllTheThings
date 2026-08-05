@@ -874,8 +874,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				objective(1, {	-- Salandria taken to Sporeggar
 					["provider"] = { "n", 22823 },	-- Hch'uu
 					["coords"] = {
-						{ 19.43, 51.31, ZANGARMARSH },	-- Salandria taken to Sporeggar
-						{ 19.28, 51.34, ZANGARMARSH },	-- Speak to Hch'uu
+						{ 19.3, 51.3, ZANGARMARSH },	-- Speak to Hch'uu
 					},
 				}),
 			},
@@ -964,8 +963,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				objective(1, {	-- Dornaa taken to Aeris Landing
 					["provider"] = { "n", 22836 },	-- Jheel
 					["coords"] = {
-						{ 31.44, 57.46, NAGRAND },	-- Dornaa taken to Aeris Landing
-						{ 31.49, 57.61, NAGRAND },	-- Speak to Jheel
+						{ 31.5, 57.6, NAGRAND },	-- Speak to Jheel
 					},
 				}),
 			},

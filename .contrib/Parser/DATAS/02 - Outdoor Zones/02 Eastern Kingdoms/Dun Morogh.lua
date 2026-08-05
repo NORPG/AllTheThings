@@ -4992,7 +4992,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						-- #if AFTER 10.1.7
 						{ 71.2, 52.8, DUN_MOROGH },
-						{ 67.6, 59.0, DUN_MOROGH },
 						{ 67.6, 59.1, DUN_MOROGH },
 						-- #else
 						{ 30.8, 40.4, DUN_MOROGH },

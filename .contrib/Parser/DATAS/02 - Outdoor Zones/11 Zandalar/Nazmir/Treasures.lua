@@ -48,7 +48,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 62.0, 35.5, NAZMIR },
 					{ 64.0, 33.9, NAZMIR },
 					{ 64.8, 41.1, NAZMIR },
-					{ 65.4, 60.7, NAZMIR },
 					{ 65.5, 60.7, NAZMIR },
 					{ 65.6, 50.9, NAZMIR },
 					{ 66.0, 47.6, NAZMIR },

@@ -526,7 +526,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{ 29.2, 30.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 29.3, 28.3, MAP.MIDNIGHT.ZULAMAN },
 									{ 29.3, 29.0, MAP.MIDNIGHT.ZULAMAN },
-									{ 29.5, 29.0, MAP.MIDNIGHT.ZULAMAN },
 									{ 29.5, 29.6, MAP.MIDNIGHT.ZULAMAN },
 									{ 29.9, 31.0, MAP.MIDNIGHT.ZULAMAN },
 									{ 30.3, 28.4, MAP.MIDNIGHT.ZULAMAN },
@@ -960,13 +959,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							o(617375, {	-- Murloc-Skewered Lynxfish
 								["coords"] = {
-									{ 48.6, 58.4, MAP.MIDNIGHT.ZULAMAN },
 									{ 48.6, 58.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 48.7, 59.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 48.8, 56.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.0, 56.4, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.3, 60.6, MAP.MIDNIGHT.ZULAMAN },
-									{ 49.9, 59.4, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.9, 59.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.9, 61.2, MAP.MIDNIGHT.ZULAMAN },
 									{ 50.4, 58.3, MAP.MIDNIGHT.ZULAMAN },

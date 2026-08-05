@@ -1929,7 +1929,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					o(278453, {	-- Voodoo Totem
 						["coords"] = {
-							{ 62.4, 28.5, ZULDAZAR },
 							{ 62.5, 28.4, ZULDAZAR },
 							{ 62.7, 29.1, ZULDAZAR },
 							{ 63.1, 30.2, ZULDAZAR },

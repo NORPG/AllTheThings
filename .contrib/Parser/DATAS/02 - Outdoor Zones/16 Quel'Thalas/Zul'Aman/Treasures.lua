@@ -201,7 +201,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(587912, {	-- Giant Grab Bag
 				["coords"] = {
 					{ 26.0, 35.9, MAP.MIDNIGHT.ZULAMAN },
-					{ 26.4, 38.4, MAP.MIDNIGHT.ZULAMAN },
 					{ 26.4, 38.5, MAP.MIDNIGHT.ZULAMAN },
 					{ 27.6, 37.7, MAP.MIDNIGHT.ZULAMAN },
 					{ 27.6, 39.1, MAP.MIDNIGHT.ZULAMAN },

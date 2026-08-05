@@ -782,7 +782,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					o(340664, {	-- Expended Wildseed
 						["coords"] = {
 							{ 50.7, 78.4, ARDENWEALD },
-							{ 50.7, 78.5, ARDENWEALD },
 							{ 51.2, 79.6, ARDENWEALD },
 							{ 51.4, 76.7, ARDENWEALD },
 							{ 52.0, 77.4, ARDENWEALD },

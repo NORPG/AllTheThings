@@ -2638,7 +2638,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["provider"] = { "i", 224157 },	-- Pet Mirror
 					["crs"] = { 227559 },	-- Zoomy Treat
 					["coords"] = {
-						{ 62.0, 50.1, TANARIS },
 						{ 61.9, 50.1, TANARIS },
 						{ 61.8, 49.9, TANARIS },
 						{ 61.7, 50.0, TANARIS },

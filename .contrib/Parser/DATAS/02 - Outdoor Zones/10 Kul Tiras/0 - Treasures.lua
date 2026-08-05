@@ -251,13 +251,11 @@ root(ROOTS.Zones, {
 					["coords"] = {
 						{ 76.3, 80.9, TIRAGARDE_SOUND },
 						{ 76.6, 81.2, TIRAGARDE_SOUND },
-						{ 76.8, 83.4, TIRAGARDE_SOUND },
 						{ 76.8, 83.5, TIRAGARDE_SOUND },
 						{ 77.0, 85.5, TIRAGARDE_SOUND },
 						{ 77.4, 85.3, TIRAGARDE_SOUND },
 						{ 77.5, 82.7, TIRAGARDE_SOUND },
 						{ 77.7, 85.0, TIRAGARDE_SOUND },
-						{ 78.0, 80.4, TIRAGARDE_SOUND },
 						{ 78.0, 80.5, TIRAGARDE_SOUND },
 					},
 				}),

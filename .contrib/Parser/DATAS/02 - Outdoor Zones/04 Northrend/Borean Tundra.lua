@@ -3203,7 +3203,6 @@ root(ROOTS.Zones, {
 							{ 65.2, 28.4, BOREAN_TUNDRA },
 							-- Scavenge-bot 004-A8
 							{ 59.2, 17.6, BOREAN_TUNDRA },
-							{ 65.6, 17.6, BOREAN_TUNDRA },
 							{ 61.6, 22.2, BOREAN_TUNDRA },
 							{ 65.0, 28.6, BOREAN_TUNDRA },
 							-- Sentry-bot 57-K

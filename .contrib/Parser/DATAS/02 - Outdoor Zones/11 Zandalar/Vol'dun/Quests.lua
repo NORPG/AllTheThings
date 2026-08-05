@@ -961,7 +961,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							{ 46.2, 76.2, VOLDUN },
 							{ 46.4, 70.2, VOLDUN },
 							{ 46.4, 73.4, VOLDUN },
-							{ 46.5, 70.0, VOLDUN },
 							{ 47.2, 71.5, VOLDUN },
 							{ 47.7, 70.2, VOLDUN },
 							{ 48.0, 70.6, VOLDUN },

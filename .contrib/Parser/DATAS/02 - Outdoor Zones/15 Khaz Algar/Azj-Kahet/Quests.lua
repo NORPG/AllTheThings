@@ -896,7 +896,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						o(441257, {	-- Crate of Alchemical Potions
 							["coords"] = {
 								{ 55.3, 53.9, AZJ_KAHET },
-								{ 55.4, 54.6, AZJ_KAHET },
 								{ 55.5, 54.7, AZJ_KAHET },
 								{ 56.0, 56.1, AZJ_KAHET },
 								{ 56.1, 53.4, AZJ_KAHET },

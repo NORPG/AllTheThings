@@ -85,7 +85,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								{ 85.5, 26.8, OHNAHRAN_PLAINS },
 								{ 86.4, 26.3, OHNAHRAN_PLAINS },
 								{ 86.5, 25.3, OHNAHRAN_PLAINS },
-								{ 86.5, 26.3, OHNAHRAN_PLAINS },
 								{ 86.8, 26.7, OHNAHRAN_PLAINS },
 							},
 							["groups"] = { i(192812) },	-- Feralbloom Pod (QI!)
@@ -152,7 +151,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								{ 70.3, 35.7, OHNAHRAN_PLAINS },
 								{ 70.4, 39.7, OHNAHRAN_PLAINS },
 								{ 70.5, 37.7, OHNAHRAN_PLAINS },
-								{ 70.5, 39.6, OHNAHRAN_PLAINS },
 							},
 							["groups"] = { i(191101) },	-- River Reeds (QI!)
 						}),

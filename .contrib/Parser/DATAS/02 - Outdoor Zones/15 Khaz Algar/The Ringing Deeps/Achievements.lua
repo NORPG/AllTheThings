@@ -27,7 +27,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					{ 54.2, 76.8, THE_RINGING_DEEPS },
 					{ 54.4, 78.1, THE_RINGING_DEEPS },
 					{ 55.1, 77.8, THE_RINGING_DEEPS },
-					{ 55.4, 78.7, THE_RINGING_DEEPS },
 					{ 55.4, 79.7, THE_RINGING_DEEPS },
 					{ 55.5, 78.7, THE_RINGING_DEEPS },
 					{ 58.4, 76.8, THE_RINGING_DEEPS },

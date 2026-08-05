@@ -1993,7 +1993,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 177624 },	-- Xabraxxis' Demon Bag
 							},
 							["coords"] = {
-								{ 52.30, 33.39, DARKSHORE },
 								{ 52.5, 33.5, DARKSHORE },
 							},
 							["cost"] = {

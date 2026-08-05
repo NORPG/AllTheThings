@@ -21,7 +21,6 @@ local HARIKA_THE_HORRID = n(165290, {	-- Harika the Horrid
 		}),
 		o(348676, {	-- Ballista Bolt
 			["coords"] = {
-				{ 41.0, 73.7, REVENDRETH },
 				{ 42.6, 73.3, REVENDRETH },
 				{ 42.2, 73.6, REVENDRETH },
 				{ 41.5, 74.8, REVENDRETH },

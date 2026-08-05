@@ -9,10 +9,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				241748,	-- Eternus
 				249256,	-- Pile of Chronoqueries
 			},
-			["coords"] = {
-				{ 45.7, 68.5, BROKEN_ISLES },
-				{ 45.8, 68.5, BROKEN_ISLES },
-			},
+			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
 			["isRepeatable"] = true,
 		}, {
 			q(91445),	-- Infinite Research: Advanced Combat Studies, Comprehensive

@@ -21,7 +21,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 20.43, 55.32, DRUSTVAR },
 					{ 27.30, 53.21, DRUSTVAR },
 					{ 26.10, 54.56, DRUSTVAR },
-					{ 21.94, 59.36, DRUSTVAR },
 					{ 21.17, 57.45, DRUSTVAR },
 					{ 19.98, 55.15, DRUSTVAR },
 					{ 19.97, 54.62, DRUSTVAR },

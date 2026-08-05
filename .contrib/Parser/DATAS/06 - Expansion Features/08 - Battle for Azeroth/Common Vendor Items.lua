@@ -235,12 +235,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 			["coords"] = {
 				{ 74.25, 17.76, BORALUS },	-- Allison Weber
-				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville / Sarella Griffin
 				{ 53.99, 75.22, BORALUS },	-- Bored Barkeep
 				{ 75.37, 14.48, BORALUS },	-- Harold Atkey
 				{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
 				{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
-				{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
 				{ 53.31, 28.29, TIRAGARDE_SOUND },	-- Terry Rigglesmith
 				{ 73.27, 16.02, BORALUS },	-- Victor Esquivias [Patrols]
 				{ 74.12, 12.66, BORALUS },	-- Wesley Rockhold

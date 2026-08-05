@@ -3618,7 +3618,6 @@ root(ROOTS.Zones, {
 					}),
 					i(23580, {	-- Avruu's Orb
 						["coords"] = {
-							{ 25.57, 76.45, HELLFIRE_PENINSULA },
 							{ 25.57, 76.33, HELLFIRE_PENINSULA },
 							{ 25.53, 75.92, HELLFIRE_PENINSULA },
 							{ 25.64, 75.25, HELLFIRE_PENINSULA },

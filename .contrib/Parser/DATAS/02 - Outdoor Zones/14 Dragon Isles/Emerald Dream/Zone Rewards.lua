@@ -9,7 +9,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coords"] = {
 					{ 38.3, 59.3, EMERALD_DREAM },
 					{ 39.9, 52.5, EMERALD_DREAM },
-					{ 40.6, 43.4, EMERALD_DREAM },
 					{ 40.6, 43.5, EMERALD_DREAM },
 					{ 40.8, 24.6, EMERALD_DREAM },
 					{ 42.7, 74.2, EMERALD_DREAM },
@@ -18,7 +17,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 49.2, 48.3, EMERALD_DREAM },
 					{ 49.8, 35.2, EMERALD_DREAM },
 					{ 51.3, 58.6, EMERALD_DREAM },
-					{ 54.4, 67.7, EMERALD_DREAM },
 					{ 54.5, 67.7, EMERALD_DREAM },
 					{ 56.5, 37.5, EMERALD_DREAM },
 					{ 56.7, 45.0, EMERALD_DREAM },
