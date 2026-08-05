@@ -41,25 +41,6 @@ local ItemFilterOnRefresh = function(self)
 	end
 end
 
-for i,filterID in ipairs({
-	21, 22, 23, 24, 25, 26,	-- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
-	20, 34, 29, 28, 35		-- Daggers, Fist Weapons, Polearms, Staves, Warglaives
-}) do
-	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
-	-- Start
-	if filterID == 21 then
-		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", -2, -6)
-	-- Spacing
-	elseif filterID == 20 then
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -2)
-	else
-		filter:AlignBelow(last)
-	end
-	filter.filterID = filterID
-	filter:SetATTTooltip(L.FILTER_ID ..": "..filterID)
-	last = filter
-end
-
 app.EquipmentFilters = {
 	[21] = true,  -- 1H Axes
 	[22] = true,  -- 2H Axes
@@ -77,7 +58,6 @@ app.EquipmentFilters = {
 	[32] = true,  -- Bows
 	[33] = true,  -- Crossbows
 	[31] = true,  -- Guns
-	[36] = true,  -- Thrown
 	[27] = true,  -- Wands
 
 	[8] = true,   -- Shields
@@ -88,32 +68,36 @@ app.EquipmentFilters = {
 	[6] = true,   -- Mail
 	[7] = true,   -- Plate
 
-	[2] = true,   -- Cosmetic
+	[40] = true,  -- Head
+	[41] = true,  -- Shoulder
+	[42] = true,  -- Chest
+	[44] = true,  -- Hands
+	[46] = true,  -- Legs
+
 	[3] = true,   -- Back
+	[43] = true,  -- Wrist
+	[45] = true,  -- Waist
+	[47] = true,  -- Feet
+
 	[10] = true,  -- Shirt
 	[9] = true,   -- Tabard
+	[2] = true,   -- Cosmetic
 
-	[11] = true,	-- Artifacts
-	[54] = true,	-- Artifact Relic
-	[57] = true,	-- Profession Equipment
-	[50] = true,	-- Miscellaneous
-
-	[51] = true,	-- Neck
-	[52] = true,	-- Finger
-	[53] = true,	-- Trinket
-	[113] = true,	-- Bag
-	[55] = true,	-- Consumables
-	[104] = true,	-- Quest Items
+	[57] = true,  -- Profession Equipment
 }
 
--- Bows, Crossbows, Guns, Thrown, Wands, Shields, Off-hands
-for i,filterID in ipairs({ 32, 33, 31, 36, 27, 8, 1 }) do
+for i, filterID in ipairs({
+	21, 22, 23, 24, 25, 26, -- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
+	20, 34, 29, 28, 35,     -- Daggers, Fist Weapons, Polearms, Staves, Warglaives
+	32, 33, 31, 27,         -- Bows, Crossbows, Guns, Wands
+	8, 1                    -- Shields, Off-hands
+}) do
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
-	if filterID == 32 then
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -10)
+	if filterID == 21 then
+		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", -2, -6)
 	-- Spacing
-	elseif filterID == 8 then
+	elseif filterID == 20 or filterID == 32 or filterID == 8 then
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
 	else
 		filter:AlignBelow(last)
@@ -123,19 +107,19 @@ for i,filterID in ipairs({ 32, 33, 31, 36, 27, 8, 1 }) do
 	last = filter
 end
 
--- Artifacts, Relics, Profession Tools
-for i,filterID in ipairs({
-	4, 5, 6, 7,		-- Cloth, Leather, Mail, Plate
-	2, 3, 10, 9,	-- Cosmetic, Cloak, Shirt, Tabard
-	11, 54, 57,		-- Artifacts, Relics, Profession Tools
-	50, 51, 52, 53, 113, 55, 104
+for i, filterID in ipairs({
+	4, 5, 6, 7,		     -- Cloth, Leather, Mail, Plate
+	40, 41, 42, 44, 46, -- Head, Shoulder, Chest, Hands, Legs
+	3, 43, 45, 47,      -- Back, Wrist, Waist, Feet
+	10, 9, 2,           -- Shirt, Tabard, Cosmetic
+	57,                 -- Profession Equipment
 }) do
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 4 then
-		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 320, -6)
+		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 300, -6)
 	-- Spacing
-	elseif filterID == 2 or filterID == 11 or filterID == 51 then
+	elseif filterID == 40 or filterID == 3 or filterID == 10 or filterID == 57 then
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
 	else
 		filter:AlignBelow(last)
@@ -145,7 +129,7 @@ for i,filterID in ipairs({
 	last = filter
 end
 
--- The 3 buttons
+-- The three buttons
 local buttonClassDefaults = child:CreateButton(
 { text = L.CLASS_DEFAULTS_BUTTON, tooltip = L.CLASS_DEFAULTS_BUTTON_TOOLTIP, },
 {
