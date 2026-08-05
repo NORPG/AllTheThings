@@ -71,10 +71,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				-- Myrhial Check Automation
-				-- Multiple Raids this tier... Duplicate Glory and Tier Set Achievements?
-				ach(61380, {	-- Glory of the Midnight Raider (automated)
-					i(260887),	-- Tenebrous Harrower (MOUNT!)
-				}),
 				ach(61843),	-- Quel'Dressed
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({

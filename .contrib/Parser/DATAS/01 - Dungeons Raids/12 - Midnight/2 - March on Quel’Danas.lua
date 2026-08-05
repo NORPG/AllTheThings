@@ -88,9 +88,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				ach(61371),	-- Mythic: March on Quel'Danas (automated)
 				-- Multiple Raids this tier... Duplicate Glory and Tier Set Achievements?
 				ach(62352),	-- Nothing to See Here
-				ach(61380, {	-- Glory of the Midnight Raider (automated)
-					i(260887),	-- Tenebrous Harrower (MOUNT!)
-				}),
 				ach(61843),	-- Quel'Dressed
 				ach(61609),	-- March on Quel'Danas Guild Run
 				ach(61610),	-- Heroic: March on Quel'Danas Guild Run

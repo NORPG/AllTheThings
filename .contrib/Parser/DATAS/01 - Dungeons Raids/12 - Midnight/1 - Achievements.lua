@@ -14,5 +14,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			i(240840),	-- Niblet (PET!)
 		}),
 		ach(61568),	-- Glory of the Midnight Hero
+		ach(61380, {	-- Glory of the Midnight Raider (automated)
+			i(260887),	-- Tenebrous Harrower (MOUNT!)
+		}),
 	}),
 })));

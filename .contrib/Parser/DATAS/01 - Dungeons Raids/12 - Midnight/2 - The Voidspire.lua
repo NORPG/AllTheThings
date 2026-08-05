@@ -355,11 +355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				ach(61370),	-- Mythic: The Voidspire (automated)
-				-- Multiple Raids this tier... Duplicate Glory and Tier Set Achievements?
 				ach(62352),	-- Nothing to See Here
-				ach(61380, {	-- Glory of the Midnight Raider (automated)
-					i(260887),	-- Tenebrous Harrower (MOUNT!)
-				}),
 				ach(61843),	-- Quel'Dressed
 				ach(61606),	-- The Voidspire Guild Run
 				ach(61607),	-- Heroic: The Voidspire Guild Run
