@@ -18,9 +18,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 56.0, 78.7, OHNAHRAN_PLAINS },
 				["isWeekly"] = true,
 				["sym"] = {
+					{"select","mapID",DRAGON_ISLES,},{"pop"},
+					{"where","headerID", ZONE_REWARDS},{"pop"},
+					SYM.SUB.INVTYPE_ALL_SLOTS,
 					{"select", "itemID",
-						201442,	-- Primal Revenant's Frostblade
-						201443,	-- Primal Revenant's Icewall
 						201028,	-- Nokhudon Boots
 						201027,	-- Nokhudon Breeches
 						201031,	-- Nokhudon Cloak
@@ -37,16 +38,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						201385,	-- Nokhud Centaur Warstaff
 						201383,	-- Nokhud Stalker's Spear
 					},
-					{"select", "mapID",
-						DRAGON_ISLES,
-					},
-					{"pop"},
-					{"where", "headerID", ZONE_REWARDS},
-					{"pop"},
-					SYM.SUB.INVTYPE_ALL_SLOTS,
+				},
+				["groups"] = {
+					i(201442),	-- Primal Revenant's Frostblade
+					i(201443),	-- Primal Revenant's Icewall
 				},
 			}),
 			o(376581, {	-- Clan Chest
+				["description"] = "Does not show on minimap.\nEach 'cluster' of nearby coords has an independent spawn.\nPersists 90 sec once opened.\nRespawn: 60m",
 				["coords"] = {
 					{ 25.0, 37.8, OHNAHRAN_PLAINS },
 					{ 25.3, 37.4, OHNAHRAN_PLAINS },
@@ -57,12 +56,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 33.5, 42.4, OHNAHRAN_PLAINS },
 					{ 34.8, 37.0, OHNAHRAN_PLAINS },
 					{ 35.0, 41.9, OHNAHRAN_PLAINS },
+					{ 35.3, 36.9, OHNAHRAN_PLAINS },
 					{ 35.4, 65.8, OHNAHRAN_PLAINS },
+					{ 35.3, 66.3, OHNAHRAN_PLAINS },
 					{ 36.0, 41.0, OHNAHRAN_PLAINS },
 					{ 36.1, 41.7, OHNAHRAN_PLAINS },
 					{ 49.4, 67.3, OHNAHRAN_PLAINS },
 					{ 49.4, 67.7, OHNAHRAN_PLAINS },
-					{ 50.4, 66.3, OHNAHRAN_PLAINS },
 					{ 50.5, 66.4, OHNAHRAN_PLAINS },
 					{ 50.9, 66.5, OHNAHRAN_PLAINS },
 					{ 71.9, 56.7, OHNAHRAN_PLAINS },
@@ -72,11 +72,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 75.2, 41.6, OHNAHRAN_PLAINS },
 					{ 75.5, 40.5, OHNAHRAN_PLAINS },
 					{ 83.7, 53.4, OHNAHRAN_PLAINS },
-					{ 85.4, 54.7, OHNAHRAN_PLAINS },
+					{ 85.5, 54.7, OHNAHRAN_PLAINS },
 					{ 86.4, 50.7, OHNAHRAN_PLAINS },
-					{ 86.4, 53.3, OHNAHRAN_PLAINS },
+					{ 86.5, 53.2, OHNAHRAN_PLAINS },
 				},
 				["groups"] = {
+					-- TODO: alt sources of various zone NPCs
 					i(201028),	-- Nokhudon Boots
 					i(201027),	-- Nokhudon Breeches
 					i(201031),	-- Nokhudon Cloak

@@ -123,11 +123,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
+					["sym"] = {{"select","itemID",
+						201447,	-- Primal Revenant's Breezeblade
+						201445,	-- Primal Revenant's Emberblade
+						201442,	-- Primal Revenant's Frostblade
+						201446,	-- Primal Revenant's Firewall
+						201448,	-- Primal Revenant's Windwall
+						201443,	-- Primal Revenant's Icewall
+					}},
 					["groups"]= {
 						i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
-						i(201447),	-- Primal Revenant's Breezeblade
 						i(201444),	-- Primal Revenant's Earthblade
-						i(201446),	-- Primal Revenant's Firewall
 					}
 				});
 			}),

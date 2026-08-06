@@ -275,8 +275,8 @@ api.AddReportData = AddReportData
 -- 1) Go to the map in question with the ability to interact with an object/quest in the zone
 -- 2) Stutter-step to the maximum distance which allows valid interaction
 -- 3) Interact with the object/quest (this should trigger a contrib report link, if not use /att report-reset and try again)
--- 4) Check the 'coord distance' reported, and round it up to the next whole number
--- 5) That number is then DOUBLED and added into this table for the mapID.
+-- 4) Check the 'coord distance' reported on an accurately-coorded object, double it, then round it up to the next whole 0.X number
+-- 5) Then add 0.1 to that number and insert it into this table for the mapID
 -- Effectively, this number should represent 2x the Interaction Coord Distance for a given map
 local MapPrecisionOverrides = {
 	  [24] = 2,	-- Light's Hope Chapel
@@ -326,6 +326,8 @@ local MapPrecisionOverrides = {
 	[1702] = 2,	-- The Roots
 	[1703] = 5,	-- Heart of the Forest
 	[1912] = 10,	-- The Runecarver's Oubliette
+	[2023] = 0.30,	-- Ohn'ahran Plains
+	[2024] = 0.30,	-- The Azure Span
 	[2215] = 0.25,	-- Hallowfall
 	[2328] = 3,	-- The Proscenium
 	[2393] = 0.40,	-- Silvermoon City
@@ -374,7 +376,8 @@ local function Check_coords(objRef, maxCoordDistance)
 		end
 	end
 	if DebugPrinting then
-		app.print("Contrib.Coords:",objRef.__type,id,relCoords and "relative" or "existing",("%.2f"):format(closest))
+		local precisionOverride = app.round(closest * 2, 1) + 0.1
+		app.print("Contrib.Coords:",objRef.__type,id,relCoords and "relative" or "existing",("%.2f"):format(closest),"Map Precision Est.",precisionOverride)
 	end
 	if sameMap then
 		-- quest has an accurate coord on accurate map
@@ -2540,8 +2543,6 @@ MobileDB.GameObject = {
 	[379263] = true,	-- Rich Draconium Deposit
 	[379267] = true,	-- Rich Draconium Deposit
 	[380834] = true,	-- Decay Tainted Chest
-	[381042] = true,	-- Shimmering Chest
-	[381043] = true,	-- Lightning Bound Chest
 	[381102] = true,	-- Serevite Deposit
 	[381104] = true,	-- Rich Serevite Deposit
 	[381105] = true,	-- Rich Serevite Deposit
