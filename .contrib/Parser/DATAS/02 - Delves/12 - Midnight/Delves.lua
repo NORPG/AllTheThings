@@ -728,7 +728,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{46.00, 22.00, THE_SHADOW_ENCLAVE},
 				{47.94, 57.33, THE_SHADOW_ENCLAVE},
 				-- Twilight Crypts
-				{44.91, 54.72, TWILIGHT_CRYPTS},
+				{45.1, 54.8, 2504},
+				{39.1, 84.1, 2504},
 				{39.45, 84.72, TWILIGHT_CRYPTS},
 				{20.85, 62.86, TWILIGHT_CRYPTS},
 			},
