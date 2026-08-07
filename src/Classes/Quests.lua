@@ -1514,9 +1514,14 @@ else
 end
 
 -- Quest Lib
+local QuestsWhichDeterminedCost = {}
+-- jank af refactor this to use GetCache
 local QuestWithReputationCostCollectibles = setmetatable({}, {
 	__index = function(t, quest)
-		local costCollectibles
+		QuestsWhichDeterminedCost[quest] = true
+		local costCollectibles = quest.__costCollectibles
+		if costCollectibles ~= nil then return costCollectibles end
+
 		if NotInGame(quest) or not app.IsQuestAvailable(quest) then
 			-- app.PrintDebug("ignore costcollectibles for unavailable quest", quest.questID,NotInGame(quest),app.IsQuestAvailable(quest))
 			costCollectibles = false
@@ -1525,26 +1530,34 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 			local maxReputation = quest.maxReputation
 			if maxReputation then
 				local faction = app.SearchForObject("factionID", maxReputation[1], "key") or app.CreateFaction(maxReputation[1])
-				if faction:CompareReputation(maxReputation[2]) or not faction.collectible then
-					costCollectibles = false;
-				else
-					if app.RecursiveGroupRequirementsFilter(quest) then
-						-- app.PrintDebug("Assign",quest.r,"/",quest.c,"to Faction",app:SearchLink(faction),"collectible via",app:SearchLink(quest))
-						costCollectibles = { faction }
-					-- else app.PrintDebug("Filtered",quest.r,"/",quest.c,"on Faction",app:SearchLink(faction),"collectible via",app:SearchLink(quest))
-					end
+				-- only case to treat as 'possible' cost collectible is when character does NOT exceed the maxReputation
+				if not faction:CompareReputation(maxReputation[2]) then
+					-- app.PrintDebug("QuestWithReputation.costCollectibles",app:SearchLink(quest),"=>",app:SearchLink(faction))
+					costCollectibles = { faction }
 				end
 			else
 				costCollectibles = false;
 			end
 		end
 		t[quest] = costCollectibles
+		quest.__costCollectibles = costCollectibles
 		return costCollectibles
 	end,
 });
 app.AddEventHandler("OnSettingsNeedsRefresh", function()
 	-- since the quest costCollectibles depends on Filtering, it needs to be reset when Settings are changed which can change filtering
 	wipe(QuestWithReputationCostCollectibles)
+end)
+app.AddEventHandler("OnRefreshCollectionsDone", function()
+	-- after refreshing full collection, make sure to do a Cost Update pass on any QuestWithReputation objects
+	-- which have checked their CostCollectibles
+	-- otherwise these only get updated based on chained Item costs onto the Quest
+	local next = next
+	local CostRunner = app.Modules.Costs.Runner
+	local CollectibleAsCost = app.CollectibleAsCost
+	for quest in next,QuestsWhichDeterminedCost do
+		CostRunner.Run(CollectibleAsCost, quest)
+	end
 end)
 local createQuest = app.CreateClass("Quest", "questID", {
 	CACHE = function() return CACHE end,
