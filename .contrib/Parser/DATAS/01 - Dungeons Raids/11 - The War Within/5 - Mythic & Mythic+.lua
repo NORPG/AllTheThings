@@ -185,7 +185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["collectible"] = false,
 			}),
 		})),
-		header(HEADERS.Achievement, SEASON_3_TWW, bubbleDownSelf({
+		header(HEADERS.Achievement, SEASON_UNBOUND, bubbleDownSelf({
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH }
 		},{
 			ach(42169),	-- The War Within Keystone Explorer: Season Three
