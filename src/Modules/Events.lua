@@ -82,7 +82,6 @@ app.AddEventHandler("OnLoad", function()
 	remapping[1666] = 1669; -- TW
 
 	-- Remap SL Timewalking => US
-	-- Maybe mapping is to 1704
 	remapping[1704] = 1703; --
 	remapping[1705] = 1703; --
 	remapping[1706] = 1703; --
