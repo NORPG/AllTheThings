@@ -1161,11 +1161,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(257784),	-- Sorcerer's Deep Cape
 				i(257764),	-- Sorcerer's Deep Cowl
 
-				------ Sorcerer's Grassy Garb Set ------
-				i(257974),	-- Ensemble: Sorcerer's Grassy Garb
-				i(257782),	-- Sorcerer's Grassy Cape
-				i(257762),	-- Sorcerer's Grassy Cowl
-
 				------ Sorcerer's Plum Garb Set ------
 				i(258003),	-- Ensemble: Sorcerer's Plum Garb
 				i(257791),	-- Sorcerer's Plum Cape
