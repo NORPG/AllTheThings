@@ -2445,6 +2445,96 @@ createHeader = function(data)
 					startTimeStamp = startTimeStamp + SECONDS_IN_A_WEEK;
 					totalOffset = totalOffset + 1;
 				end
+			elseif data.eventSchedule[1] == 5 then	-- Setup Phase: Starts the first Friday of the month (3 days of assembly with no vendors). Open Phase: Opens on Monday following setup and stays active until Sunday evening.
+				-- START_YEAR, START_MONTH
+				-- Example: 2026, 7
+				local eventIDs = data.eventIDs;
+				if not eventIDs then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, MISSING EVENT IDs!");
+					return;
+				end
+				local totalEventIDs = #eventIDs;
+				if totalEventIDs < 1 then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, EVENT IDs EMPTY!");
+					return;
+				end
+
+				-- Calculate the difference between the specified month/year and the current month/year
+				local year, month, totalMonthOffset = data.eventSchedule[2], data.eventSchedule[3], 0;
+				local currentYear, currentMonth = currentDate.year, currentDate.month;
+				while year < currentYear do
+					while month <= 12 do
+						month = month + 1;
+						totalMonthOffset = totalMonthOffset + 1;
+					end
+					month = 1;
+					year = year + 1;
+				end
+				while month < currentMonth do
+					month = month + 1;
+					totalMonthOffset = totalMonthOffset + 1;
+				end
+
+				-- Go back one month, to get last month's data.
+				totalMonthOffset = (totalMonthOffset + totalEventIDs) - 1;	-- Ensure the offset is 0 or more
+				month = month - 1;
+				if month == 0 then month = 12; end
+
+				local veryfirst = true;
+				for monthOffset = 0,10,1 do
+					if veryfirst then
+						veryfirst = false;
+					else
+						schedule = schedule .. ",";
+					end
+
+					-- Grab the current eventID
+					local eventID = eventIDs[(totalMonthOffset % totalEventIDs) + 1];
+
+					-- Determine the first Friday
+					local startTime = {
+						year=year,
+						month=month,
+						monthDay=1,
+						--weekday=7,	-- generated below
+						hour=0,
+						minute=0,
+					};
+					local startTimeStamp = getTimestamp(startTime) + 30;	-- Add a 30 second offset to prevent bad imprecision from causing problems.
+
+					-- Find the first Friday of the Month
+					for dayOffset = 1,14,1 do
+						if os.date("*t", startTimeStamp).wday == 6 then
+							break;
+						end
+						startTime.monthDay = startTime.monthDay + 1;
+						startTimeStamp = getTimestamp(startTime);
+					end
+
+					-- Determine the next Sunday
+					local endTime = {
+						year=startTime.year,
+						month=startTime.month,
+						monthDay=startTime.monthDay + 10,
+						--weekday=7,	-- generated below
+						hour=0,
+						minute=0,
+					};
+					local endTimeStamp = getTimestamp(endTime);
+					startTime.weekday = os.date("*t", startTimeStamp).wday;
+					endTime.weekday = os.date("*t", endTimeStamp).wday;
+
+					-- Append the schedule
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ",{[\"remappedID\"]=" .. eventID .. "})";
+
+					totalMonthOffset = totalMonthOffset + 1;
+					month = month + 1;
+					if month > 12 then
+						month = 1;
+						year = year + 1;
+					end
+				end
+			
 			else
 				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
 				return;
