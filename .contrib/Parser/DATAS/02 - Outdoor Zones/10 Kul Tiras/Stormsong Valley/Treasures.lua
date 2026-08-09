@@ -82,6 +82,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 79.6, 55.2, STORMSONG_VALLEY },
 					{ 80.0, 55.5, STORMSONG_VALLEY },
 					{ 81.7, 50.1, STORMSONG_VALLEY },
+					{ 81.8, 50.7, STORMSONG_VALLEY },
 					{ 82.2, 44.0, STORMSONG_VALLEY },
 					{ 83.1, 44.1, STORMSONG_VALLEY },
 					{ 84.2, 54.5, STORMSONG_VALLEY },

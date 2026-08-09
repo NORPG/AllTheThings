@@ -149,6 +149,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 						i(275220),	-- Imperator's Voidedged Cutlass
 						i(275221),	-- Beast Collector's Cudgel
 						i(275222),	-- Base Commander's Decapitator
+						i(282425),	-- Band of the Beast Reaper
 					}),
 					d(DIFFICULTY.RAID.NORMAL, {
 						-- Normal appearances

@@ -1524,7 +1524,6 @@ root(ROOTS.Unsorted, {
 				i(264368),	-- ??
 			}),
 			i(276245),	-- Shadow Spirehawk
-			i(282425),	-- Band of the Beast Reaper
 			i(282426),	-- Draenic Drive Chain
 		})),
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
