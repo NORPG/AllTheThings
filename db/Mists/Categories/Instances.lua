@@ -15608,6 +15608,17 @@ s(178477,50449,{f=4,loc=41,lvl=80,q=4,u=33}),
 i(50452,{f=51,lvl=80,q=4,u=33})}}),
 h(-19,{crs={36597,36612,36626,36627,36678,36789,36853,36855,36939,36948,37813,37955,37970},u=33,g={
 i(49908,{description="Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty.",q=3,u=33})}}),
+d(115,{difficulties={1,2,3,4,5,6},u=33,g={
+h(-368,{u=33,g={
+e(1624,{npcID=36612,u=33}),
+e(1628,{npcID=37813,u=33}),
+n(37904,{description="After you kill Deathbringer Saurfang, this vendor shows up in the camp.",r=2,u=33,g={
+i(49926,{q=4,u=33})}})}}),
+h(-369,{u=33,g={
+e(1631,{npcID=36678,u=33})}}),
+h(-371,{u=33,g={
+e(1635,{npcID=36853,u=33}),
+e(1636,{npcID=36597,u=33})}})}}),
 d(3,{u=33,g={
 h(-368,{u=33,g={
 ach(4531,{u=33,g={
@@ -15675,9 +15686,7 @@ s(178746,50808,{b=1,f=7,loc=46,lvl=80,modID=1,q=4,u=33}),
 s(178744,50806,{b=1,f=5,loc=46,lvl=80,modID=1,q=4,u=33}),
 s(178742,50804,{b=1,f=4,loc=47,lvl=80,modID=1,q=4,u=33}),
 i(50803,{b=1,f=52,lvl=80,modID=1,q=4,u=33}),
-crit(12772,{achID=4531,u=33})}}),
-n(37904,{description="After you kill Deathbringer Saurfang, this vendor shows up in the camp.",r=2,u=33,g={
-i(49926,{modID=1,q=4,u=33})}})}}),
+crit(12772,{achID=4531,u=33})}})}}),
 h(-369,{u=33,g={
 ach(4528,{u=33,g={
 crit(12767,{achID=4532,id=3,u=33})}}),
@@ -15888,9 +15897,7 @@ s(179752,51895,{b=1,f=7,loc=46,lvl=80,modID=1,q=4,u=33}),
 s(179754,51897,{b=1,f=5,loc=46,lvl=80,modID=1,q=4,u=33}),
 s(179756,51899,{b=1,f=4,loc=47,lvl=80,modID=1,q=4,u=33}),
 i(51900,{b=1,f=52,lvl=80,modID=1,q=4,u=33}),
-crit(13113,{achID=4628,u=33})}}),
-n(37904,{description="After you kill Deathbringer Saurfang, this vendor shows up in the camp.",r=2,u=33,g={
-i(49926,{modID=1,q=4,u=33})}})}}),
+crit(13113,{achID=4628,u=33})}})}}),
 h(-369,{u=33,g={
 ach(4629,{u=33,g={
 crit(13072,{achID=4602,id=3,u=33}),
@@ -16120,9 +16127,7 @@ s(178238,50014,{b=1,f=3,lvl=80,modID=1,q=4,u=33}),
 s(178449,50333,{b=1,f=5,loc=43,lvl=80,modID=1,q=4,u=33}),
 s(178239,50015,{f=6,loc=45,lvl=80,modID=1,q=4,u=33}),
 i(50362,{b=1,f=53,lvl=80,modID=1,q=4,u=33}),
-crit(12946,{achID=4604,u=33})}}),
-n(37904,{description="After you kill Deathbringer Saurfang, this vendor shows up in the camp.",r=2,u=33,g={
-i(49926,{modID=1,q=4,u=33})}})}}),
+crit(12946,{achID=4604,u=33})}})}}),
 h(-369,{u=33,g={
 ach(4605,{u=33,g={
 crit(12959,{achID=4608,id=3,u=33})}}),
@@ -16348,9 +16353,7 @@ s(178629,50668,{b=1,f=3,lvl=80,modID=1,q=4,u=33}),
 s(178630,50670,{b=1,f=5,loc=43,lvl=80,modID=1,q=4,u=33}),
 s(178631,50671,{b=1,f=6,loc=45,lvl=80,modID=1,q=4,u=33}),
 i(50363,{b=1,f=53,lvl=80,modID=1,q=4,u=33}),
-crit(13114,{achID=4632,u=33})}}),
-n(37904,{description="After you kill Deathbringer Saurfang, this vendor shows up in the camp.",r=2,u=33,g={
-i(49926,{modID=1,q=4,u=33})}})}}),
+crit(13114,{achID=4632,u=33})}})}}),
 h(-369,{u=33,g={
 ach(4633,{u=33,g={
 crit(13076,{achID=4603,id=3,u=33}),

@@ -46372,7 +46372,7 @@ n(33676,{awp=30100,coords={
 [111]={{36.4,44.6}}},minReputation={932,0}})})}}),
 m(105,{icon=236719,lore="Blade's Edge is a level 20-30 questing zone in Outland, filled with splintered mountain peaks, plunging lush valleys, and dusty canyons. Players learn about the presence of the Burning Legion through a mysterious Fel Mask, as well as how Blade's Edge was the original home of the Ogres. Ogri'la is a faction of friendly ogres that players with flying mounts can gain reputation with.",petBattleLvl=18,lvl=20,g={
 h(-12,{
-ach(896,{minReputation={1038,42000}}),
+ach(896,{awp=20100,minReputation={1038,42000}}),
 ach(865,{
 crit(1786,{achID=44,id=6})}),
 ach(1193,{
@@ -46498,7 +46498,7 @@ exp(3952,{collectible=false,coords={
 exp(3954,{collectible=false,coords={
 [105]={{43.6,30.7}}}})}),
 h(-31,{
-faction(1038,{OnTooltip=_.OnTooltipDB.ForOgrila})}),
+faction(1038,{awp=20100,OnTooltip=_.OnTooltipDB.ForOgrila})}),
 h(-32,{
 fp(160,{coords={
 [105]={{61.6,39.6}}},crs={22216}}),
@@ -110611,7 +110611,7 @@ o(280619,{coords={
 [942]={{42.8,47.2}}},questID=50089,g={
 crit(41062,{achID=12853,id=2})}}),
 o(294311,{coords={
-[942]={{77.8,42.1},{78.7,57.4},{79.1,43.3},{79.6,55.2},{80,55.5},{81.7,50.1},{82.1,44},{82.2,44},{83.1,44.1},{84.2,54.5},{84.7,53.3},{85.4,50.4},{85.5,50.4},{85.6,53.3},{86,52.3}}},isDaily=1,questID=52989,sharedDescription="Items which currently allow unlocking an Appearance Source when vendored, though are not available to transmog.",g={
+[942]={{77.8,42.1},{78.7,57.4},{79.1,43.3},{79.6,55.2},{80,55.5},{81.7,50.1},{81.8,50.7},{82.1,44},{82.2,44},{83.1,44.1},{84.2,54.5},{84.7,53.3},{85.4,50.4},{85.5,50.4},{85.6,53.3},{86,52.3}}},isDaily=1,questID=52989,sharedDescription="Items which currently allow unlocking an Appearance Source when vendored, though are not available to transmog.",g={
 s(98599,162661),
 s(98605,162671),
 s(98601,162663),

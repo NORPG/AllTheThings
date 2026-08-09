@@ -4422,7 +4422,7 @@ s(124565,11936,{b=1,f=4,loc=45,q=2})}}),
 q(4763,{coords={
 [1439]={{37.4,40.2}}},lvl=15,qgs={3649},r=2,rwp=40003,g={
 qo(1,{coords={
-[1439]={{52.3,33.39},{52.5,33.5}}},cost={{"i",12343,1},{"i",12342,1},{"i",12341,1},{"i",12347,1}},crs={10373},providers={{"i",12355},{"o",177624}}}),
+[1439]={{52.5,33.5}}},cost={{"i",12343,1},{"i",12342,1},{"i",12341,1},{"i",12347,1}},crs={10373},providers={{"i",12355},{"o",177624}}}),
 i(12347,{coords={
 [1439]={{37.76,44.02}}},providers={{"i",12346}},q=1}),
 i(12341,{coords={
@@ -21138,7 +21138,7 @@ s(118648,3319,{awp=100107,coords={
 s(118657,3328,{awp=100107,coords={
 [1420]={{86.6,53.8}}},crs={1555},f=4,loc=42,lvl=4,q=1,rwp=40003}),
 s(118658,3329,{awp=100107,coords={
-[1420]={{58.6,31},{58.6,31.2}}},crs={1753},f=23,lvl=6,q=1,rwp=40003}),
+[1420]={{58.6,31},{58.8,31.6}}},crs={1753},f=23,lvl=6,q=1,rwp=40003}),
 s(119448,4263,{awp=100107,coords={
 [1420]={{78.4,36.8},{78.8,33},{79.6,26.8}}},crs={1660},f=8,lvl=5,q=1,rwp=40003}),
 s(118654,3325,{awp=100107,coords={
@@ -23765,7 +23765,7 @@ n(33676,{awp=30100,coords={
 [1955]={{36.4,44.6}}},minReputation={932,0},u=17})}})}}),
 m(1949,{icon=236719,lore="Blade's Edge is a level 20-30 questing zone in Outland, filled with splintered mountain peaks, plunging lush valleys, and dusty canyons. Players learn about the presence of the Burning Legion through a mysterious Fel Mask, as well as how Blade's Edge was the original home of the Ogres. Ogri'la is a faction of friendly ogres that players with flying mounts can gain reputation with.",u=17,g={
 h(-12,{u=17,g={
-ach(896,{minReputation={1038,42000},u=1801}),
+ach(896,{awp=20100,minReputation={1038,42000},u=1801}),
 ach(865,{u=17,g={
 crit(1619,{achID=865,id=1,u=17}),
 crit(1689,{achID=865,id=1,u=17}),
@@ -23851,7 +23851,7 @@ crit(1708,{achID=865,id=1,u=17})}}),
 exp(3952,{collectible=false,u=17}),
 exp(3954,{collectible=false,u=17})}}),
 h(-31,{u=17,g={
-faction(1038,{OnTooltip=_.OnTooltipDB.ForOgrila,u=1801})}}),
+faction(1038,{awp=20100,OnTooltip=_.OnTooltipDB.ForOgrila,u=1801})}}),
 h(-32,{u=17,g={
 fp(160,{coords={
 [1949]={{61.6,39.6}}},crs={22216},u=17}),
@@ -26242,7 +26242,7 @@ i(31799,{cost={{"i",4291,1}},pvp=1,q=1,u=17})}})}}),
 h(-63,{u=17,g={
 i(28552,{b=1,crs={16906},description="Must have started or completed |cFFFFD700Make Them Listen|r for this item to become available.",lvl=58,q=1,r=1,u=17}),
 i(23580,{b=1,coords={
-[1944]={{25.53,75.92},{25.57,76.33},{25.57,76.45},{25.64,75.25}}},crs={17084},lvl=60,q=1,u=17}),
+[1944]={{25.53,75.92},{25.57,76.33},{25.64,75.25}}},crs={17084},lvl=60,q=1,u=17}),
 i(31347,{crs={16907},q=1,u=17}),
 i(31346,{coords={
 [1944]={{69,69}}},cost={{"i",31347,1}},q=1,u=17}),

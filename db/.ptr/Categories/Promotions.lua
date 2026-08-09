@@ -209,7 +209,10 @@ p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to
 de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771,u=2}),
 toy(272339,{awp=120007,description="Break the Meta: Midnight Season 1\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on July 14th at 8:00 AM PDT and lasts for 1 week.\nFor more details & requirements check out: raider.io/events/break-the-meta-midnight-season-1/event-info-rules",rwp=120007,u=2}),
 de(16813,{awp=120007,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between June 16th, 10:00 a.m. & July 14th, 10:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265389,rwp=120007,spellID=1275765,u=2}),
-mnt(1292356,{awp=120007,description="Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",itemID=273655,u=3})}}),
+mnt(1292356,{awp=120007,description="Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",itemID=273655,u=3}),
+en(257974,{awp=120100,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=93324,rwp=120100,spellID=1262585,tmogSetID=5340,u=2,g={
+s(301329,257782,{f=3}),
+s(301311,257762,{f=2,loc=40})}})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
@@ -345,7 +348,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,id=3,u=2})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -369,7 +372,7 @@ ach(10320,{providers={{"i",128425}},rwp=70305,u=2}),
 ach(10321,{rwp=70305,u=2}),
 mnt(189998,{b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
 p(1691,{itemID=128426,npcID=95841,rwp=70305,spellID=190020,u=2,g={
-crit(28787,{achID=10321,id=1,rwp=100107,u=2})}})}}),
+crit(28787,{achID=10321,id=1,u=2})}})}}),
 x(8,{awp=70305,description="These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(12230,{providers={{"i",153540}},r=1,rwp=80307,u=2}),
 ach(12229,{providers={{"i",153539}},r=2,rwp=80307,u=2}),
@@ -377,7 +380,7 @@ ach(12232,{rwp=80307,u=2}),
 mnt(255696,{b=1,itemID=153540,lvl=10,r=1,rwp=80307,u=2}),
 mnt(255695,{b=1,itemID=153539,lvl=10,r=2,rwp=80307,u=2}),
 p(2143,{itemID=153541,npcID=129049,rwp=80307,spellID=255702,u=2,g={
-crit(38154,{achID=12232,id=1,rwp=100107,u=2})}})}}),
+crit(38154,{achID=12232,id=1,u=2})}})}}),
 x(9,{awp=80307,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",rwp=90205,u=2,g={
 ach(14283,{providers={{"s",307932}},u=2}),
