@@ -100463,6 +100463,14 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 269806,"Azshara's Deepscale Breeches",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,0,65536,0,-1,-1
 269807,"Azshara's Deepscale Leggings",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,0,65536,0,-1,-1
 269808,"Azshara's Deepscale Boots",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,0,65536,0,-1,-1
+272326,"Varian's Azure Dragon Crown",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272327,"Varian's Azure Dragon Sabatons",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272328,"Varian's Azure Dragon Chestplate",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272329,"Varian's Azure Dragon Claws",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272330,"Varian's Azure Dragon Greaves",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272331,"Varian's Azure Dragon Pauldron",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272332,"Varian's Azure Dragon Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272333,"Varian's Azure Dragon Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 6121,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
 20902,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
 23474,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
@@ -101622,6 +101630,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91514,"Malevolent Gladiator's Dragonhide Legguards",4,4,0,0,1024,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91506,"Malevolent Gladiator's Dreadplate Legguards",4,4,0,0,32,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91614,"Malevolent Gladiator's Copperskin Legguards",4,4,0,6,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
+87043,"Bindings of Ancient Spirits",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 91581,"Malevolent Gladiator's Chain Leggings",4,4,0,0,4,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91589,"Malevolent Gladiator's Silk Trousers",4,4,0,0,128,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91789,"Malevolent Gladiator's Plate Legguards",4,4,0,0,1,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -101660,6 +101669,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91508,"Malevolent Gladiator's Dreadplate Shoulders",4,4,0,0,32,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91606,"Malevolent Gladiator's Ironskin Spaulders",4,4,0,0,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91616,"Malevolent Gladiator's Copperskin Spaulders",4,4,0,0,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
+87040,"Circuit of the Frail Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073766400,0,0,0,-1,-1
 91583,"Malevolent Gladiator's Chain Spaulders",4,4,0,0,4,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91791,"Malevolent Gladiator's Plate Shoulders",4,4,0,0,1,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91781,"Malevolent Gladiator's Felweave Amice",4,4,0,0,256,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -101738,8 +101748,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 87033,"Netherrealm Shoulderpads",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87039,"Eye of the Ancient Spirit",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87037,"Sandals of the Severed Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
-87043,"Bindings of Ancient Spirits",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
-87040,"Circuit of the Frail Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073766400,0,0,0,-1,-1
 87041,"Spaulders of the Divided Mind",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87042,"Leggings of Imprisoned Will",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87038,"Shadowsummoner Spaulders",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
@@ -102533,7 +102541,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 102849,"Grievous Gladiator's Dreadplate Shoulders",4,4,0,0,32,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
 102850,"Grievous Gladiator's Dragonhide Helm",4,4,0,0,1024,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
 102851,"Grievous Gladiator's Dragonhide Legguards",4,4,0,0,1024,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
-105409,"Hood of Blackened Tears",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 102852,"Grievous Gladiator's Ringmail Spaulders",4,4,0,0,64,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
 102853,"Grievous Gladiator's Ironskin Legguards",4,4,0,0,512,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
 102854,"Grievous Gladiator's Kodohide Gloves",4,4,0,0,1024,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
@@ -102610,7 +102617,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 102940,"Grievous Gladiator's Mail Armor",4,4,0,0,64,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
 102941,"Grievous Gladiator's Scaled Shoulders",4,4,0,0,2,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
 102944,"Grievous Gladiator's Scaled Chestpiece",4,4,0,0,2,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
-104640,"Kor'kron Elite Skullmask",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 102945,"Grievous Gladiator's Clasp of Meditation",4,4,0,5,2,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
 102947,"Grievous Gladiator's Mooncloth Mantle",4,4,0,0,16,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
 102948,"Grievous Gladiator's Satin Hood",4,4,0,0,16,35,0,0,0,40,4096,8193,0,0,0,1309324210,-1440044374
@@ -102650,6 +102656,8 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 105417,"Encapsulated Essence of Immerseus",4,4,0,0,-1,35,0,0,0,42,0,1073750016,8388608,0,0,-1,-1
 104413,"Hood of Blackened Tears",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 105160,"Hood of Blackened Tears",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
+105409,"Hood of Blackened Tears",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
+104640,"Kor'kron Elite Skullmask",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 105387,"Kor'kron Elite Skullmask",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 105636,"Kor'kron Elite Skullmask",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 104414,"Puddle Punishers",4,4,0,0,-1,35,0,0,0,42,0,1073750016,8388608,0,0,-1,-1
