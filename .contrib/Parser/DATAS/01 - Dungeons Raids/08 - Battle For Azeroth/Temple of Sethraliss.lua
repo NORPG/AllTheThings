@@ -25,6 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["lvl"] = 120,
 				}),
 			}),
+			-- Was Midnight Season 2 Mythic+ Dungeon
 			-- #if AFTER 12.1
 			-- #if BEFORE 12.2
 			d(DIFFICULTY.DUNGEON.NORMAL, {

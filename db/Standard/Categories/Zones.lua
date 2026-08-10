@@ -102999,7 +102999,8 @@ ach(12073,{
 crit(37691,{achID=12083,id=2})}),
 ach(12072,{rwp=80001,sourceQuests={49224},u=2}),
 ach(12083,{
-title(366)}),
+title(366),
+crit(37704,{achID=12083,id=8})}),
 ach(12074,{
 crit(37694,{achID=12083,id=5})}),
 ach(12102),

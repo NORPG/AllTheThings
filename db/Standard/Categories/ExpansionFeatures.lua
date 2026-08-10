@@ -13067,7 +13067,8 @@ h(-12,{maps={24,626,647,648,695,702,709,717,720,721,726,734,735,739,747},g={
 ach(11298,{
 crit(5212,{achID=11298,description="Rewarded by a quest in your class's Order Hall campaign.",sourceQuests={44213,44217,44232,44233,44240,44249,44250,44251,44252,44253,44254,44255}}),
 crit(34492,{achID=11298,id=4}),
-crit(34493,{achID=11298,id=4})}),
+crit(34493,{achID=11298,id=4}),
+crit(37704,{achID=11298,id=4})}),
 ach(10994,{sym={{"partial_achievement",11137}},g={
 crit(32418,{achID=11190,id=5})}}),
 ach(11135,{sym={{"partial_achievement",11137}}}),

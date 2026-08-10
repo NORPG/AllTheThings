@@ -17,6 +17,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["coord"] = { 60.0, 76.0, THE_WAKING_SHORES },
 				}),
 			}),
+			-- Was Midnight Season 2 Mythic+ Dungeon
 			-- #if AFTER 12.1
 			-- #if BEFORE 12.2
 			d(DIFFICULTY.DUNGEON.NORMAL, {

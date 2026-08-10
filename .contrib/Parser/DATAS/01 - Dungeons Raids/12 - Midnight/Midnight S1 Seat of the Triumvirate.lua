@@ -6,10 +6,9 @@
 -- InstanceHelper.BossObjects = {
 -- 	[MPLUS] = { 546729 },	-- Treasure Chest
 -- }
--- Was Midnight Season 1 Mythic+ Dungeon
--- #if BEFORE 12.0
--- #if AFTER 12.1
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+-- #if AFTER 12.0
+-- #if BEFORE 12.1
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
 	inst(945, {	-- Seat of the Triumvirate
 		["mapID"] = 903,
 		["coord"] = { 22.2, 55.9, EREDATH },

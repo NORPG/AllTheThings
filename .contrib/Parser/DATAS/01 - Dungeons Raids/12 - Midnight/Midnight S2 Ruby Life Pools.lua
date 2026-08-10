@@ -3,7 +3,7 @@
 -----------------------------------------------------
 -- #if AFTER 12.1
 -- #if BEFORE 12.2
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
 	inst(1202, {	-- Ruby Life Pools
 		["coord"] = { 60.1, 75.7, THE_WAKING_SHORES },
 		["maps"] = {

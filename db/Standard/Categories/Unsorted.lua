@@ -2425,8 +2425,17 @@ q(45746,{c={3},description="Type: |cFFf09f26Legendary|r\nCategory: |cFFf09f26Hun
 q(47029,{c={5},description="Category: |cFFf09f26Artifact|r"}),
 q(47593,{c={4},description="Category: |cFFf09f26Rogue|r"}),
 q(47608,{c={4},description="Category: |cFFf09f26Rogue|r"}),
+q(48230,{description="Area: |cFFf09f26Eredath|r"}),
+q(48231,{description="Type: |cFFf09f26Dungeon|r\nArea: |cFFf09f26The Seat of the Triumvirate|r",g={
+i(152939)}}),
+q(48261,{description="Area: |cFFf09f26Eredath|r",g={
+i(152937)}}),
+q(48271,{description="Type: |cFFf09f26Group|r\nArea: |cFFf09f26Eredath|r",g={
+i(152938)}}),
 q(48796,{description="Area: |cFFf09f26Antoran Wastes|r",isDaily=1}),
 q(48798,{description="Area: |cFFf09f26Antoran Wastes|r",isDaily=1}),
+q(48803,{description="Area: |cFFf09f26Krokuun|r"}),
+q(48864,{description="Area: |cFFf09f26Krokuun|r"}),
 q(48937,{
 i(152891)}),
 q(64877,{description="Area: |cFFf09f26The Waking Shores|r"}),

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 -- #if AFTER 12.1
 -- #if BEFORE 12.2
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
 	inst(1030, {	-- Temple of Sethraliss
 		["coord"] = { 51.9, 25.4, VOLDUN },
 		["maps"] = {
