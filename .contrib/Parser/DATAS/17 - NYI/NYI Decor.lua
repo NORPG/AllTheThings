@@ -303,7 +303,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(1135),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Forge01.m2
 			rawdecor(1138),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Navigation_FenceCapper01.m2
 			rawdecor(1139),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Bench01.m2
-			rawdecor(1140),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_Sarcophagus03.m2
 			rawdecor(1143),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_Jug01.m2
 			rawdecor(1144),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Decor_Fountain01_LightBloom.m2
 			rawdecor(1145),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporePod01_LightBloom.m2

@@ -29,7 +29,6 @@ root(ROOTS.Unsorted, {
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
-			i(260417),	-- Gnarldin Supplies
 			i(260419),	-- Cursed Zandalari Coin
 			i(260420),	-- Swamp Apple
 			i(260425),	-- Morsel of Crab Meat
@@ -421,10 +420,6 @@ root(ROOTS.Unsorted, {
 			i(276418),	-- [PH] Rainbow Mace- 2h - Green
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
 			i(276421),	-- [PH] Rainbow Mace- 2h - Red
-			i(276531),	-- Cursebreaker's Vambraces
-			i(276532),	-- Cursebreaker's Bracers
-			i(276533),	-- Cursebreaker's Wristwraps
-			i(276534),	-- Cursebreaker's Cuffs
 			i(276536),	-- Corrosive Reticule
 			i(276547),	-- Afflicted Soul
 			i(276548),	-- Tormented Soul
@@ -515,7 +510,6 @@ root(ROOTS.Unsorted, {
 			i(277989),	-- Ghostcaller's Bell
 			i(277990),	-- Cursemail Gauntlets
 			i(277991),	-- Shrieking Tacklebox
-			i(277992),	-- Crab Trap Pieces
 			i(277993),	-- Spiritsurge Incense
 			i(277996),	-- Summoning Salt
 			i(277997),	-- Malevolent Fishing Codex
@@ -972,62 +966,6 @@ root(ROOTS.Unsorted, {
 			i(275546),	-- Preyhunter's Falchion
 			i(275547),	-- Preyhunter's Lantern
 			i(275548),	-- Preyhunter's Tower Shield
-			i(276571),	-- Greathelm of Nalorakk's Chosen
-			i(276572),	-- Helm of Akil'zon's Chosen \\ Helm of Jan'alai's Chosen
-			i(276573),	-- Cowl of Halazzi's Chosen
-			i(276574),	-- Headdress of Jan'alai's Chosen \\ Headdress of Akil'zon's Chosen
-			i(276575),	-- Shoulderplates of Nalorakk's Chosen
-			i(276576),	-- Breastplate of Nalorakk's Chosen
-			i(276577),	-- Greatcloak of Nalorakk's Chosen
-			i(276578),	-- Wristplates of Nalorakk's Chosen
-			i(276579),	-- Handguards of Nalorakk's Chosen
-			i(276580),	-- Greatbelt of Nalorakk's Chosen
-			i(276581),	-- Wargreaves of Nalorakk's Chosen
-			i(276582),	-- Warboots of Nalorakk's Chosen
-			i(276583),	-- Pauldrons of Akil'zon's Chosen \\ Pauldrons of Jan'alai's Chosen
-			i(276584),	-- Chainmail of Akil'zon's Chosen \\ Chainmail of Jan'alai's Chosen
-			i(276585),	-- Cape of Akil'zon's Chosen \\ Cape of Jan'alai's Chosen
-			i(276586),	-- Armbands of Akil'zon's Chosen \\ Armbands of Jan'alai's Chosen
-			i(276587),	-- Gauntlets of Akil'zon's Chosen \\ Gauntlets of Jan'alai's Chosen
-			i(276588),	-- Girdle of Akil'zon's Chosen \\ Girdle of Jan'alai's Chosen
-			i(276589),	-- Leggings of Akil'zon's Chosen \\ Leggings of Jan'alai's Chosen
-			i(276590),	-- Sabatons of Akil'zon's Chosen \\ Sabatons of Jan'alai's Chosen
-			i(276591),	-- Mantle of Halazzi's Chosen
-			i(276592),	-- Tunic of Halazzi's Chosen
-			i(276593),	-- Pelt of Halazzi's Chosen
-			i(276594),	-- Wristwraps of Halazzi's Chosen
-			i(276595),	-- Gloves of Halazzi's Chosen
-			i(276596),	-- Belt of Halazzi's Chosen
-			i(276597),	-- Breeches of Halazzi's Chosen
-			i(276598),	-- Anklewraps of Halazzi's Chosen
-			i(276599),	-- Epaulets of Jan'alai's Chosen \\ Epaulets of Akil'zon's Chosen
-			i(276600),	-- Vestments of Jan'alai's Chosen \\ Vestments of Akil'zon's Chosen
-			i(276601),	-- Cloak of Jan'alai's Chosen \\ Cloak of Akil'zon's Chosen
-			i(276602),	-- Bracelets of Jan'alai's Chosen \\ Bracelets of Akil'zon's Chosen
-			i(276603),	-- Handwraps of Jan'alai's Chosen \\ Handwraps of Akil'zon's Chosen
-			i(276604),	-- Sash of Jan'alai's Chosen \\ Sash of Akil'zon's Chosen
-			i(276605),	-- Pantaloons of Jan'alai's Chosen \\ Pantaloons of Akil'zon's Chosen
-			i(276606),	-- Footwraps of Jan'alai's Chosen \\ Footwraps of Akil'zon's Chosen
-			i(276825),	-- Bulwark of Nalorakk's Chosen
-			i(276826),	-- Focus of Jan'alai's Chosen \\ Focus of Akil'zon's Chosen
-			i(276827),	-- Warstaff of Jan'alai's Chosen \\ Warstaff of Akil'zon's Chosen
-			i(276828),	-- Sword of Halazzi's Chosen
-			i(276829),	-- Mace of Akil'zon's Chosen \\ Mace of Jan'alai's Chosen
-			i(276830),	-- Dagger of Halazzi's Chosen
-			i(276831),	-- Warblade of Nalorakk's Chosen
-			i(276832),	-- Warspear of Akil'zon's Chosen \\ Warspear of Jan'alai's Chosen
-			i(276833),	-- Warbow of Akil'zon's Chosen \\ Warbow of Jan'alai's Chosen
-			i(276834),	-- Warglaive of Halazzi's Chosen
-			i(276835),	-- Axe of Akil'zon's Chosen \\ Axe of Jan'alai's Chosen
-			i(276836),	-- Wand of Jan'alai's Chosen \\ Wand of Akil'zon's Chosen
-			i(276837),	-- Waraxe of Nalorakk's Chosen
-			i(277803),	-- Venom-Cursed Spellcarver
-			i(277809),	-- Venom-Cursed Claymore
-			i(279217),	-- Venom-Cursed Dragonhawk's Shroud \\ Venom-Cursed Eagle's Shroud
-			i(279220),	-- Venom-Cursed Lynx's Mane
-			i(279222),	-- Venom-Cursed Eagle's Mantle \\ Venom-Cursed Dragonhawk's Mantle
-			i(279223),	-- Venom-Cursed Bear's Greatcloak
-			i(279576),	-- Void Vestige
 			i(244347),	-- Purified Troll Urn
 			i(245991),	-- Purified Sin'dorei Candle \\ Purified Sindorei Candle
 			i(245993),	-- Purified Floating Lantern
@@ -1041,49 +979,6 @@ root(ROOTS.Unsorted, {
 			i(258540),	-- Purified Troll Ring
 			i(263876),	-- Purified Folk Mirror
 			i(272142),	-- Purified Earthen Pot
-			i(277764),	-- Venom-Cursed Bear's Battle Bands
-			i(277765),	-- Venom-Cursed Bear's Warbelt
-			i(277766),	-- Venom-Cursed Bear's Pauldrons
-			i(277767),	-- Venom-Cursed Bear's Greaves
-			i(277768),	-- Venom-Cursed Bear's Jaws
-			i(277769),	-- Venom-Cursed Bear's Gauntlets
-			i(277770),	-- Venom-Cursed Bear's Charge
-			i(277771),	-- Venom-Cursed Bear's Chestguard
-			i(277772),	-- Venom-Cursed Eagle's Scalebands \\ Venom-Cursed Dragonhawk's Scalebands
-			i(277773),	-- Venom-Cursed Eagle's Waistguard \\ Venom-Cursed Dragonhawk's Waistguard
-			i(277774),	-- Venom-Cursed Eagle's Amice \\ Venom-Cursed Dragonhawk's Amice
-			i(277775),	-- Venom-Cursed Eagle's Legguards \\ Venom-Cursed Dragonhawk's Legguards
-			i(277776),	-- Venom-Cursed Eagle's Guise \\ Venom-Cursed Dragonhawk's Guise
-			i(277777),	-- Venom-Cursed Eagle's Grips \\ Venom-Cursed Dragonhawk's Grips
-			i(277778),	-- Venom-Cursed Eagle's Flight \\ Venom-Cursed Dragonhawk's Flight
-			i(277779),	-- Venom-Cursed Eagle's Crest \\ Venom-Cursed Dragonhawk's Crest
-			i(277780),	-- Venom-Cursed Lynx's Bracers
-			i(277781),	-- Venom-Cursed Lynx's Buckle
-			i(277782),	-- Venom-Cursed Lynx's Spaulders
-			i(277783),	-- Venom-Cursed Lynx's Breeches
-			i(277784),	-- Venom-Cursed Lynx's Gaze
-			i(277785),	-- Venom-Cursed Lynx's Claws
-			i(277786),	-- Venom-Cursed Lynx's Paws
-			i(277787),	-- Venom-Cursed Lynx's Harness
-			i(277788),	-- Venom-Cursed Dragonhawk's Wristbands \\ Venom-Cursed Eagle's Wristbands
-			i(277789),	-- Venom-Cursed Dragonhawk's Cinch \\ Venom-Cursed Eagle's Cinch
-			i(277790),	-- Venom-Cursed Dragonhawk's Wingspan \\ Venom-Cursed Eagle's Wingspan
-			i(277791),	-- Venom-Cursed Dragonhawk's Leggings \\ Venom-Cursed Eagle's Leggings
-			i(277792),	-- Venom-Cursed Dragonhawk's Plumage \\ Venom-Cursed Eagle's Plumage
-			i(277793),	-- Venom-Cursed Dragonhawk's Handwraps \\ Venom-Cursed Eagle's Handwraps
-			i(277794),	-- Venom-Cursed Dragonhawk's Talons \\ Venom-Cursed Eagle's Talons
-			i(277795),	-- Venom-Cursed Dragonhawk's Robes \\ Venom-Cursed Eagle's Robes
-			i(277798),	-- Venom-Cursed Spellfang
-			i(277799),	-- Venom-Cursed Cudgel
-			i(277800),	-- Venom-Cursed Focus
-			i(277801),	-- Venom-Cursed Boneglaive
-			i(277802),	-- Venom-Cursed Guillotine
-			i(277804),	-- Venom-Cursed Longbow
-			i(277805),	-- Venom-Cursed Dirk
-			i(277806),	-- Venom-Cursed Hidepiercer
-			i(277807),	-- Venom-Cursed Ritual Staff
-			i(277808),	-- Venom-Cursed Gladius
-			i(277810),	-- Venom-Cursed Aegis
 			i(278696),	-- Purified Dracthyr Stein
 			i(278701),	-- Purified Goblin Cup
 			i(279329),	-- Amani Forgemaster's Rack
@@ -1145,31 +1040,6 @@ root(ROOTS.Unsorted, {
 			i(278397),	-- Ephemeral Star Ooze
 			i(279332),	-- Keen Hex Mask
 			i(280846),	-- Beguiling Memories of the Sea
-			i(281405),	-- Cache of Void-Touched Armaments: Boots
-			i(281406),	-- Cache of Void-Touched Armaments: Legs
-			i(281407),	-- Cache of Void-Touched Armaments: Belts
-			i(281408),	-- Cache of Void-Touched Armaments: Gloves
-			i(281409),	-- Cache of Void-Touched Armaments: Bracers
-			i(281410),	-- Cache of Void-Touched Armaments: Chest
-			i(281411),	-- Cache of Void-Touched Armaments: Cloak
-			i(281412),	-- Cache of Void-Touched Armaments: Shoulder
-			i(281413),	-- Cache of Void-Touched Armaments: Head
-			i(281414),	-- Cache of Void-Touched Armaments: Weapons
-			i(281415),	-- Cache of Void-Touched Armaments: Necklaces
-			i(281416),	-- Cache of Void-Touched Armaments: Rings
-			i(281417),	-- Cache of Void-Touched Armaments: Boots
-			i(281418),	-- Cache of Void-Touched Armaments: Legs
-			i(281419),	-- Cache of Void-Touched Armaments: Belts
-			i(281420),	-- Cache of Void-Touched Armaments: Gloves
-			i(281421),	-- Cache of Void-Touched Armaments: Bracers
-			i(281422),	-- Cache of Void-Touched Armaments: Chest
-			i(281423),	-- Cache of Void-Touched Armaments: Cloak
-			i(281424),	-- Cache of Void-Touched Armaments: Shoulder
-			i(281425),	-- Cache of Void-Touched Armaments: Head
-			i(281426),	-- Cache of Void-Touched Armaments: Weapons
-			i(281427),	-- Cache of Void-Touched Armaments: Necklaces
-			i(281428),	-- Cache of Void-Touched Armaments: Rings
-			i(281429),	-- Cache of Void-Touched Armaments
 			i(281566),	-- Amani Warrior's Cleaver
 			i(281567),	-- Profane Ritual Staff
 			i(281568),	-- Vul'zahn's Smuggled Spear

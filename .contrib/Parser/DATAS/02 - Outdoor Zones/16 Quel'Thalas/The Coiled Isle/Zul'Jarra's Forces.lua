@@ -30,6 +30,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						q(97670),	-- A Handful of Voidlight Marl
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
+						q(97383),	-- Spirit Corrosion
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --
 					}, {	-- RENOWN 11 --

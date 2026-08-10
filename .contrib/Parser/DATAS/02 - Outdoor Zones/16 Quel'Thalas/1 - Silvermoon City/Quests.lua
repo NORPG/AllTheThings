@@ -82,6 +82,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
+			q(96637, {	-- Veteran Symposium
+				["sourceQuests"] = { 96635 },	-- Upgrade Practicum
+				["provider"] = { "n", 239676 },	-- Vaskarn
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
 			-- Sparks
 			q(93942, {	-- Spark of Radiance
 				["provider"] = { "i", 232875 },	-- Spark of Radiance
@@ -110,6 +116,34 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(96245, {	-- You've Seen it All Before
 				["description"] = "Automatically acquired on reaching level 90 if you have another level 90 character who has completed the campaign.",
 				["timeline"] = { ADDED_12_0_5 },
+			}),
+			-- Hunt for Xal'atath
+			q(98172, {	-- Trailing Xal'atath
+				["provider"] = { "n", 270645 },	-- Vareesa Windrunner
+				["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = {
+					i(279573),	-- Fading Voidwhisper (QI!)
+					--
+					i(279576),	-- Void Vestige
+				},
+			}),
+			-- Nebulous Voidcores
+			q(97945, {	-- In the Catalyst's Shadow
+				["qg"] = 243907,	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(97978, {	-- Prismatic Potential
+				["sourceQuest"] = 97945,	-- In the Catalyst's Shadow
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = {
+					--spell(1305977),	-- Nebulous Voidcores
+					i(265695),	-- Elementary Voidcore Shard (QI!)
+				},
 			}),
 		}),
 		-- PVP 4 Part Quest
@@ -194,20 +228,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93892),	-- Midnight: Stormarion Assault
 			q(93766),	-- Midnight: World Quests
 			q(95842, { ["timeline"] = { ADDED_12_0_5 } }),	-- Midnight: Void Assaults
-		})),
-		-- Hunt for Xal'atath
-		n(QUESTS, sharedData({
-			["provider"] = { "n", 270645 },	-- Vareesa Windrunner
-			["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-			["isWeekly"] = true,
-			["timeline"] = { ADDED_12_1_0 },	-- Exo Note: Unsure if it will be removed at 12.2.0 Launch.
-			["groups"] = {
-				i(279576),	-- Void Vestige
-			},
-		}, {
-			q(98172, {	-- Trailing Xal'atath
-				i(279573),	-- Fading Voidwhisper (QI!)
-			}),
 		})),
 		n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			campsite(155, {	-- Silvermoon City (CAMPSITE!)

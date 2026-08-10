@@ -375,6 +375,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(273307),	-- Vial of Intrepid Lemonade
 				}),
 			}),
+			n(251091, {	-- Nael Silvertongue <"Bookseller">
+				["coord"] = { 50.7, 56.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(257418, {	-- Ornate Sin'dorei Sconce (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+				},
+			}),
 			n(267859, {	-- Richmond <Sporting Goods>
 				["coord"] = { 39.4, 59.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 },

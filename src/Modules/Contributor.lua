@@ -3399,6 +3399,7 @@ MobileDB.GameObject = {
 	[614788] = true,	-- Summons to Broken Shorw (q:92320)
 	[614804] = true,	-- Corrupted Lantern
 	[614893] = true,	-- Paint Bowl (q:90535)
+	[615902] = true,	-- Gnarldin Supplies (wq:93648)
 	[616052] = true,	-- Flame-Hardened Sap of Teldrassil
 	[616055] = true,	-- Forgotten Cache [Windrunner Spire]
 	[616622] = true,	-- Woodworking Tool (q:92907)

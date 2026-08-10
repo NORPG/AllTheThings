@@ -23,6 +23,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					},
 				}),
+				q(93648, {	-- Gnarly Skullduggery
+					["coord"] = { 57.3, 76.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["groups"] = {
+						o(615902, {	-- Gnarldin Supplies
+							i(260417),	-- Gnarldin Supplies (QI!)
+						}),
+					},
+				}),
 				q(93649, {	-- Got the Gall
 					["coord"] = { 29.4, 50.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["groups"] = {
@@ -40,6 +48,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--["sourceQuest"] = 93906,	-- Untethering the Two
 					["coord"] = { 69.6, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["groups"] = { i(267085) },	-- Swirling Ectoplasm
+				}),
+				q(94611, {	-- Predators and Prey
+					["coord"] = { 64.7, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95923, {	-- Ruin Runner Rush
 					["coord"] = { 74.9, 62.7, MAP.MIDNIGHT.THE_COILED_ISLE },

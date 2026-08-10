@@ -31,6 +31,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["isDaily"] = true,
 				}, {
 					q(94804),	-- A Collection of Rot
+					q(94800, {	-- Crushed Crabs
+						i(277992),	-- Crab Trap Pieces (QI!)
+					}),
 					q(94796, {	-- Curing Curse Resistance
 						i(278094),	-- Whole Uncursed Liver (QI!)
 					}),
@@ -49,6 +52,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}, {
 					q(97562),	-- Culling the Killifish
 					q(97571),	-- Dogging the Darters
+					q(97557),	-- Tailing the Tlhapi
 				})),
 				n(VENDORS, {
 					n(257598, {	-- Second Mate Sluggs
