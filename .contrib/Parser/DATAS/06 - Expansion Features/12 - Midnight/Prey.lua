@@ -625,6 +625,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					}),
 				},
 			}),
+			-- #if AFTER 12.1.0
 			n(259939, {	-- Construct E'nui <Rewards>
 				["coord"] = { 56.9, 67.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["timeline"] = { ADDED_12_1_0 },
@@ -671,54 +672,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					}),
 				},
 			}),
+			-- #endif
 			n(252956, {	-- Construct V'anore <Rewards>
 				["coord"] = { 55.7, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
-					-- Season 1 Rewards. Moved to Construct E'nui at the start of Season 2
-					anguish(1200, i(259991, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Lil' Preyseeker (PET!)
-					anguish(800, i(264434, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Voldy (PET!)
-					anguish(2000, i(257191, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Preyseeker's Hubris (MOUNT!)
-					anguish(2550, i(257192, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Preyseeker's Wrath (MOUNT!)
-					anguish(400, i(258022, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Skilled Preyseeker's Plumed Helm (COSMETIC!)
-					anguish(400, i(258024, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Skilled Preyseeker's Shoulder-spikes (COSMETIC!)
-					anguish(500, i(258028, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Famed Preyseeker's Plumed Helm (COSMETIC!)
-					anguish(500, i(258026, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Famed Preyseeker's Shoulder-spikes (COSMETIC!)
-					anguish(500, i(258030, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Famed Preyseeker's Knapsack (COSMETIC!)
-					anguish(1600, iensemble(266196, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Ensemble: Preyseeker's Refined Armor
-					anguish(1600, iensemble(266197, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Ensemble: Preyseeker's Sleek Armor
-					anguish(1600, iensemble(266198, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Ensemble: Preyseeker's Rugged Armor
-					anguish(1600, iensemble(266199, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Ensemble: Preyseeker's Polished Armor
-					anguish(800, i(263933, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Preyseeker's Hearthstone (TOY!)
-					anguish(600, i(264666, { ["timeline"] = { REMOVED_12_1_0 } })),	-- Rod of Exanguishation (TOY!)
-					i(256754, {	-- Formula: Enchant Shoulders - Nature's Embrace (RECIPE!)
-						["timeline"] = { REMOVED_12_1_0 },
-						["cost"] = {
-							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
-							{ "c", 3392, 500 },	-- Remnant of Anguish
-						},
-					}),
-					i(256756, {	-- Formula: Enchant Boots - Farstrider's Hunt (RECIPE!)
-						["timeline"] = { REMOVED_12_1_0 },
-						["cost"] = {
-							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
-							{ "c", 3392, 500 },	-- Remnant of Anguish
-						},
-					}),
-					i(267399, {	-- Technique: Sturdy Ren'dorei Cask (RECIPE!)
-						["timeline"] = { REMOVED_12_1_0 },
-						["cost"] = {
-							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
-							{ "c", 3392, 500 },	-- Remnant of Anguish
-						},
-					}),
-					i(267400, {	-- Technique: Wild Hanging Scroll (RECIPE!)
-						["timeline"] = { REMOVED_12_1_0 },
-						["cost"] = {
-							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
-							{ "c", 3392, 500 },	-- Remnant of Anguish
-						},
-					}),
-					-- Season 2 Rewards.
+					-- #IF AFTER 12.1.0
+					-- Season 2 Rewards
 					anguish(800, i(276229, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Trophy Stand (TOY!)
 					anguish(600, i(276258, { ["timeline"] = { ADDED_12_1_0 } })),	-- Companion Command Crystal (TOY!)
 					i(275312, {	-- Formula: Furious Tiki Mask (RECIPE!)
@@ -754,6 +713,48 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					anguish(1200, i(275702, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Prismguard (PET!)
 					anguish(1000, i(279092, { ["timeline"] = { ADDED_12_1_0 } })),	-- Anguish-Touched Pouch
 					anguish(2250, i(275660, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Courser (MOUNT!)
+					-- #else
+					-- Season 1 Rewards. Moved to Construct E'nui at the start of Season 2
+					anguish(1200, i(259991)),	-- Lil' Preyseeker (PET!)
+					anguish(800, i(264434)),	-- Voldy (PET!)
+					anguish(2000, i(257191)),	-- Preyseeker's Hubris (MOUNT!)
+					anguish(2550, i(257192)),	-- Preyseeker's Wrath (MOUNT!)
+					anguish(400, i(258022)),	-- Skilled Preyseeker's Plumed Helm (COSMETIC!)
+					anguish(400, i(258024)),	-- Skilled Preyseeker's Shoulder-spikes (COSMETIC!)
+					anguish(500, i(258028)),	-- Famed Preyseeker's Plumed Helm (COSMETIC!)
+					anguish(500, i(258026)),	-- Famed Preyseeker's Shoulder-spikes (COSMETIC!)
+					anguish(500, i(258030)),	-- Famed Preyseeker's Knapsack (COSMETIC!)
+					anguish(1600, iensemble(266196)),	-- Ensemble: Preyseeker's Refined Armor
+					anguish(1600, iensemble(266197)),	-- Ensemble: Preyseeker's Sleek Armor
+					anguish(1600, iensemble(266198)),	-- Ensemble: Preyseeker's Rugged Armor
+					anguish(1600, iensemble(266199)),	-- Ensemble: Preyseeker's Polished Armor
+					anguish(800, i(263933)),	-- Preyseeker's Hearthstone (TOY!)
+					anguish(600, i(264666)),	-- Rod of Exanguishation (TOY!)
+					i(256754, {	-- Formula: Enchant Shoulders - Nature's Embrace (RECIPE!)
+						["cost"] = {
+							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(256756, {	-- Formula: Enchant Boots - Farstrider's Hunt (RECIPE!)
+						["cost"] = {
+							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(267399, {	-- Technique: Sturdy Ren'dorei Cask (RECIPE!)
+						["cost"] = {
+							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(267400, {	-- Technique: Wild Hanging Scroll (RECIPE!)
+						["cost"] = {
+							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					-- #endif
 				},
 			}),
 		}),
