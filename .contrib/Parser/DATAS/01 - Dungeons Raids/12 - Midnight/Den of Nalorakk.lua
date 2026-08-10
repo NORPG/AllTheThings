@@ -64,10 +64,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(245573),	-- Salmon
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
-				BossOnly(NALORAKK, {
-					ach(61642),	-- Heroic: Den of Nalorakk
-				}),
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+                ["groups"] = {
+					BossOnly(NALORAKK, {
+						ach(61642),	-- Heroic: Den of Nalorakk
+					}),
+				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
                 ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },

@@ -62,10 +62,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(251231),	-- Singularity Slicer
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
-				BossOnly(CHARONUS, {
-					ach(61509),	-- Heroic: Voidscar Arena
-				}),
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+                ["groups"] = {
+					BossOnly(CHARONUS, {
+						ach(61509),	-- Heroic: Voidscar Arena
+					}),
+				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
                 ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },

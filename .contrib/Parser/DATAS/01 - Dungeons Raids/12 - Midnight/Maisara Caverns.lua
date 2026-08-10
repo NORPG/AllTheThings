@@ -70,10 +70,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(250258),	-- Vessel of Tortured Souls
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
-				BossOnly(RAKTUL, {
-					ach(61644),	-- Heroic: Maisara Caverns
-				}),
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				["groups"] = {
+					BossOnly(RAKTUL, {
+						ach(61644),	-- Heroic: Maisara Caverns
+					}),
+				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
                 ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },

@@ -68,10 +68,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(251157),	-- Searing Spaulders
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
-				BossOnly(LOTHRAXION, {
-					ach(61646),	-- Heroic: Nexus-Point Xenas
-				}),
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				["groups"] = {
+					BossOnly(LOTHRAXION, {
+						ach(61646),	-- Heroic: Nexus-Point Xenas
+					}),
+				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
                 ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },

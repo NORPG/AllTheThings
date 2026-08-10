@@ -81,10 +81,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(251199),	-- Worldroot Canopy
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
-				BossOnly(ZIEKKET, {
-					ach(61648),	-- Heroic: The Blinding Vale
-				}),
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+                ["groups"] = {
+					BossOnly(ZIEKKET, {
+						ach(61648),	-- Heroic: The Blinding Vale
+					}),
+				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
                 ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
