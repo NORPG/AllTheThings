@@ -2,9 +2,6 @@
 local _, app = ...;
 local L = app.L;
 
--- This window is not currently supported by Classic!
-if not app.IsRetail then return; end
-
 -- Global locals
 local ipairs
 	= ipairs
