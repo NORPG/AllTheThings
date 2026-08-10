@@ -25,6 +25,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["lvl"] = 120,
 				}),
 			}),
+			-- #if AFTER 12.1
+			-- #if BEFORE 12.2
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2142, {	-- Adderis and Aspix
 					["crs"] = {
@@ -91,71 +93,83 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			-- #endif
+			-- #endif
+			-- #if BEFORE 12.1
+			-- #if AFTER 12.2
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
+				e(2142, {	-- Adderis and Aspix
+					["crs"] = {
+						133379,	-- Adderis
+						133944,	-- Aspix
+					},
+					["groups"] = {
+						i(159636),	-- Staff of the Lightning Serpent
+						i(158370),	-- Twin-Strike Polearm
+						i(159380),	-- Arc-Glass Bindings
+						i(159263),	-- Bindings of the Slithering Current
+						i(159425),	-- Shard-Tipped Vambraces
+						i(159317),	-- Whirling Dervish Sash
+						i(159329),	-- Leggings of the Galeforce Viper
+						i(159435),	-- Legplates of Charged Duality
+						i(159388),	-- Sabatons of Coruscating Energy
+						i(159259),	-- Sandswept Sandals
+					},
+				}),
+				e(2143, {	-- Merektha
+					["crs"] = {
+						133384,	-- Merektha
+					},
+					["groups"] = {
+						i(158714),	-- Swarm's Eedge
+						i(159637),	-- Snakeebite Recurvee
+						i(159437),	-- Fangproof Gauntlets
+						i(159255),	-- Ouroborial Sash
+						i(159375),	-- Legguards of the Awakening Brood
+						i(159327),	-- Sand-Shined Snakeskin Sandals
+						i(162544),	-- Jad Phidian Band
+						i(158367),	-- Merektha's Fang
+					},
+				}),
+				e(2144, {	-- Galvazzt
+					["crs"] = {
+						133389,	-- Galvazzt
+					},
+					["groups"] = {
+						i(158369),	-- Galvanized Stormcrusher
+						i(159664),	-- Bulwark of Brimming Potential
+						i(159247),	-- Handwraps of Oscillating Polarity
+						i(159442),	-- Sand-Scoured Greatbelt
+						i(158366),	-- Charged Sandstone Band
+						i(158374),	-- Tiny Eelectromental in a Jar
+						i(168154),	-- Static Induction Matrix
+					},
+				}),
+				e(2145, {	-- Avatar of Sethraliss
+					["crs"] = { 133392 },	-- Avatar of Sethraliss
+					["groups"] = {
+						ach(12504),	-- The Temple of Sethraliss
+						i(158373),	-- Resonating Crystal Scimitar
+						i(159318),	-- Hood of the Slithering Loa
+						i(159374),	-- Sethraliss' Fanged Helm
+						i(159254),	-- Brood Cleanser's Amice
+						i(159439),	-- C'thraxxi Binders Pauldrons
+						i(159370),	-- Corrupted Hexxer's Vestments
+						i(159424),	-- Desert Guardian's Breastplate
+						i(159257),	-- Robes of the Reborn Serpent
+						i(159337),	-- Grips of Electrified Defense
+						i(158368),	-- Fangs of Intertwined Essence
+						i(168131),	-- Essence of the Sands
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				["lvl"] = 120,
 				["groups"] = {
-					e(2142, {	-- Adderis and Aspix
-						["crs"] = {
-							133379,	-- Adderis
-							133944,	-- Aspix
-						},
-						["groups"] = {
-							i(159636),	-- Staff of the Lightning Serpent
-							i(158370),	-- Twin-Strike Polearm
-							i(159380),	-- Arc-Glass Bindings
-							i(159263),	-- Bindings of the Slithering Current
-							i(159425),	-- Shard-Tipped Vambraces
-							i(159317),	-- Whirling Dervish Sash
-							i(159329),	-- Leggings of the Galeforce Viper
-							i(159435),	-- Legplates of Charged Duality
-							i(159388),	-- Sabatons of Coruscating Energy
-							i(159259),	-- Sandswept Sandals
-						},
-					}),
-					e(2143, {	-- Merektha
-						["crs"] = {
-							133384,	-- Merektha
-						},
-						["groups"] = {
-							i(158714),	-- Swarm's Eedge
-							i(159637),	-- Snakeebite Recurvee
-							i(159437),	-- Fangproof Gauntlets
-							i(159255),	-- Ouroborial Sash
-							i(159375),	-- Legguards of the Awakening Brood
-							i(159327),	-- Sand-Shined Snakeskin Sandals
-							i(162544),	-- Jad Phidian Band
-							i(158367),	-- Merektha's Fang
-						},
-					}),
-					e(2144, {	-- Galvazzt
-						["crs"] = {
-							133389,	-- Galvazzt
-						},
-						["groups"] = {
-							i(158369),	-- Galvanized Stormcrusher
-							i(159664),	-- Bulwark of Brimming Potential
-							i(159247),	-- Handwraps of Oscillating Polarity
-							i(159442),	-- Sand-Scoured Greatbelt
-							i(158366),	-- Charged Sandstone Band
-							i(158374),	-- Tiny Eelectromental in a Jar
-							i(168154),	-- Static Induction Matrix
-						},
-					}),
 					e(2145, {	-- Avatar of Sethraliss
 						["crs"] = { 133392 },	-- Avatar of Sethraliss
 						["groups"] = {
 							ach(12505),	-- Heroic: The Temple of Sethraliss
-							i(158373),	-- Resonating Crystal Scimitar
-							i(159318),	-- Hood of the Slithering Loa
-							i(159374),	-- Sethraliss' Fanged Helm
-							i(159254),	-- Brood Cleanser's Amice
-							i(159439),	-- C'thraxxi Binders Pauldrons
-							i(159370),	-- Corrupted Hexxer's Vestments
-							i(159424),	-- Desert Guardian's Breastplate
-							i(159257),	-- Robes of the Reborn Serpent
-							i(159337),	-- Grips of Electrified Defense
-							i(158368),	-- Fangs of Intertwined Essence
-							i(168131),	-- Essence of the Sands
 						},
 					}),
 				},
@@ -166,24 +180,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				["groups"] = {
 					ach(12503, {	-- Snake Eyes
 						["timeline"] = { REMOVED_12_1_0 },
-					}),
-					e(2142, {	-- Adderis and Aspix
-						["crs"] = {
-							133379,	-- Adderis
-							133944,	-- Aspix
-						},
-						["groups"] = {
-							i(159636),	-- Staff of the Lightning Serpent
-							i(158370),	-- Twin-Strike Polearm
-							i(159380),	-- Arc-Glass Bindings
-							i(159263),	-- Bindings of the Slithering Current
-							i(159425),	-- Shard-Tipped Vambraces
-							i(159317),	-- Whirling Dervish Sash
-							i(159329),	-- Leggings of the Galeforce Viper
-							i(159435),	-- Legplates of Charged Duality
-							i(159388),	-- Sabatons of Coruscating Energy
-							i(159259),	-- Sandswept Sandals
-						},
 					}),
 					e(2143, {	-- Merektha
 						["crs"] = {
@@ -198,28 +194,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 									i(160702),	-- Spawn of Merektha (PET!)
 								}),
 							}),
-							i(158714),	-- Swarm's Eedge
-							i(159637),	-- Snakeebite Recurvee
-							i(159437),	-- Fangproof Gauntlets
-							i(159255),	-- Ouroborial Sash
-							i(159375),	-- Legguards of the Awakening Brood
-							i(159327),	-- Sand-Shined Snakeskin Sandals
-							i(162544),	-- Jad Phidian Band
-							i(158367),	-- Merektha's Fang
-						},
-					}),
-					e(2144, {	-- Galvazzt
-						["crs"] = {
-							133389,	-- Galvazzt
-						},
-						["groups"] = {
-							i(158369),	-- Galvanized Stormcrusher
-							i(159664),	-- Bulwark of Brimming Potential
-							i(159247),	-- Handwraps of Oscillating Polarity
-							i(159442),	-- Sand-Scoured Greatbelt
-							i(158366),	-- Charged Sandstone Band
-							i(158374),	-- Tiny Eelectromental in a Jar
-							i(168154),	-- Static Induction Matrix
 						},
 					}),
 					e(2145, {	-- Avatar of Sethraliss
@@ -230,21 +204,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							}),
 							ach(12506),	-- Mythic: The Temple of Sethraliss
 							ach(13004),	-- Mythic: The Temple of Sethraliss Guild Run
-							i(158373),	-- Resonating Crystal Scimitar
-							i(159318),	-- Hood of the Slithering Loa
-							i(159374),	-- Sethraliss' Fanged Helm
-							i(159254),	-- Brood Cleanser's Amice
-							i(159439),	-- C'thraxxi Binders Pauldrons
-							i(159370),	-- Corrupted Hexxer's Vestments
-							i(159424),	-- Desert Guardian's Breastplate
-							i(159257),	-- Robes of the Reborn Serpent
-							i(159337),	-- Grips of Electrified Defense
-							i(158368),	-- Fangs of Intertwined Essence
-							i(168131),	-- Essence of the Sands
 						},
 					}),
 				},
 			}),
+			-- #endif
+			-- #endif
 		},
 	}),
 })));

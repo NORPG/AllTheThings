@@ -1,9 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
--- #if BEFORE 12.1
--- #if AFTER 12.2
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+-- #if AFTER 12.1
+-- #if BEFORE 12.2
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	inst(1041, {	-- Kings' Rest
 		["coord"] = { 37.6, 39.4, ZULDAZAR },
 		["maps"] = {
