@@ -40,12 +40,14 @@ ExportDB.OnTooltipDB.ForTimbermawHold = [[~function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Kill Deadwood or Winterfall Furbolgs", 20, 42000, ]] .. UNFRIENDLY .. [[);
 		-- #elseif AFTER TBC
 		if reputation < ]] .. (REVERED - 1) .. [[ then
-			addRepInfo(tooltipInfo, reputation, "Kill Deadwood or Winterfall Furbolgs (Stops at Revered)", 10, ]] .. (REVERED - 1) .. [[, ]] .. UNFRIENDLY .. [[);
+			addRepInfo(tooltipInfo, reputation, "Kill Deadwood Furbolgs (Stops at Revered)", 10, ]] .. (REVERED - 1) .. [[, ]] .. UNFRIENDLY .. [[);
 		end
+		addRepInfo(tooltipInfo, reputation, "Kill Winterfall Furbolgs", 10, 42000, ]] .. UNFRIENDLY .. [[);
 		-- #else
 		if reputation < ]] .. (HONORED - 1) .. [[ then
-			addRepInfo(tooltipInfo, reputation, "Kill Deadwood or Winterfall Furbolgs (Stops at Honored)", 5, ]] .. (HONORED - 1) .. [[, ]] .. UNFRIENDLY .. [[);
+			addRepInfo(tooltipInfo, reputation, "Kill Deadwood Furbolgs (Stops at Honored)", 5, ]] .. (HONORED - 1) .. [[, ]] .. UNFRIENDLY .. [[);
 		end
+		addRepInfo(tooltipInfo, reputation, "Kill Winterfall Furbolgs", 5, 42000, ]] .. UNFRIENDLY .. [[);
 		-- #endif
 		-- #if AFTER CATA
 		local repPerTurnIn = 2000;
