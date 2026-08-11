@@ -977,7 +977,6 @@ root(ROOTS.Unsorted, {
 			i(255712),	-- Purified Ancient Urn
 			i(256361),	-- Purified Troll Pendant
 			i(258540),	-- Purified Troll Ring
-			i(263876),	-- Purified Folk Mirror
 			i(272142),	-- Purified Earthen Pot
 			i(278696),	-- Purified Dracthyr Stein
 			i(278701),	-- Purified Goblin Cup
@@ -1040,9 +1039,6 @@ root(ROOTS.Unsorted, {
 			i(278397),	-- Ephemeral Star Ooze
 			i(279332),	-- Keen Hex Mask
 			i(280846),	-- Beguiling Memories of the Sea
-			i(281566),	-- Amani Warrior's Cleaver
-			i(281567),	-- Profane Ritual Staff
-			i(281568),	-- Vul'zahn's Smuggled Spear
 			i(281569),	-- Quiver of the Drowned Marksman
 			i(281570),	-- Amani Incense Stick
 			i(281571),	-- Focus of Fangs

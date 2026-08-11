@@ -664,7 +664,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			i(266260),	-- [DNT] [AUTOGEN] 12PH_Opulent_Crate02_Open.M2 (DECOR!)
 
 			--
-			rawdecor(15286),	-- [DNT] [AUTOGEN] 12PH_Folk_Mirror_Wall01.m2
 			rawdecor(15287),	-- [DNT] [AUTOGEN] 12PH_Folk_WallLamp01.m2
 			rawdecor(15288),	-- [DNT] [AUTOGEN] 12PH_Folk_Table_Bar_Small01.m2
 			rawdecor(15291),	-- [DNT] [AUTOGEN] 12PH_Folk_Sconce01.M2

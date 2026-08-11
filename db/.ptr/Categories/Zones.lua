@@ -170060,7 +170060,8 @@ q(93233,{coords={
 q(93339,{coords={
 [2512]={{66,39}}},qgs={255226},sourceQuests={94447},g={
 o(611269,{
-i(257977)})}}),
+i(257977)}),
+de(21616,{itemID=271176})}}),
 q(93340,{coords={
 [2512]={{68.9,37.2}}},qgs={255553},sourceQuests={93233,93239,93339},g={
 i(280376,{f=53,spellID=1308559}),
@@ -170160,7 +170161,8 @@ q(96458,{coords={
 crit(116553,{achID=63641,id=11})}}),
 q(96457,{coords={
 [2512]={{56.9,68}}},providers={{"o",660985}},sourceQuests={96458},g={
-i(279064)}})}})}}),
+i(279064),
+de(21725,{itemID=271609})}})}})}}),
 q(96995,{coords={
 [2512]={{58.7,45.8}}},isWeekly=1,qgs={267635},g={
 i(275911,{f=55})}})}),
@@ -170276,6 +170278,7 @@ crit(115312,{achID=63359,id=12})}}),
 o(641984,{coords={
 [2512]={{73.5,56.5}}},questID=95558,g={
 i(269861,{lore="Translated from Zandali language:\n'May the loas of the land protect us and bless us. May the spirits of our ancestors have mercy on our house and guide our hand in fortune.'"}),
+de(26376,{itemID=281582,spellID=1311833}),
 i(269868),
 crit(115308,{achID=63359,id=19})}}),
 o(642322,{coords={
@@ -170289,7 +170292,9 @@ o(642307,{coords={
 [2512]={{64.9,78.9}}},questID=95591,g={
 i(278003),
 crit(115314,{achID=63359,id=20})}}),
-ah(645549,{description="1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n3. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n4. Go to Ata'leki <Spectral Foods Vendor>, ask about spectral food and then buy Spirit Sprouts.\n5. Go back to the Forgotten Soldier and commit sudoku (*wink, wink*) in his vicinity.\n6. Release your spirit and eat Spirit Sprouts. Remain seating, at least 10 seconds, until you get a buff.\n7. Talk to Spirit Healer and accept the Resurrection.\n8. Go back to the Nameless Grave.",providers={{"n",263244},{"o",645553}},type="o",g={
+ah(645549,{description="***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go to Ata'leki <Spectral Foods Vendor>, ask about spectral food and then buy Spirit Sprouts.\n6. Go back to the Forgotten Soldier and commit sudoku (*wink, wink*) in his vicinity (Easiest way is to switch the Flight Style, fly high in the air and drop off the mount).\n7. Release your spirit and eat Spirit Sprouts. Remain seating, at least 10 seconds, until you get a buff.\n8. Talk to Spirit Healer and accept the Resurrection.\n9. Go back to the Nameless Grave.",providers={{"n",263244},{"o",645553}},type="o",g={
+n(263241,{coords={
+[2512]={{69,52.7}}}}),
 n(263242,{coords={
 [2512]={{70.4,58.4}}}}),
 n(263243,{coords={
@@ -170309,10 +170314,12 @@ ah(261867,{coords={
 o(642210,{coords={
 [2512]={{70.2,64.5}}},g={
 i(269935)}}),
+hqt(95574),
 o(642205,{questID=95571,g={
+de(1428,{itemID=244345,spellID=1237024}),
+i(274493,{f=53,spellID=1294329}),
 i(251783,{b=1,f=53,lvl=78,spellID=1253111}),
-crit(115310,{achID=63359,id=11})}}),
-hqt(95574)}}),
+crit(115310,{achID=63359,id=11})}})}}),
 o(629421,{coords={
 [2512]={{75.4,57.3}}},questID=95164,g={
 toy(268504),
@@ -170331,6 +170338,7 @@ n(263202,{description="Activate First."}),
 n(263187,{description="Activate Second."}),
 n(263185,{description="Activate Third."}),
 n(268062,{description="Activate Fourth."}),
+s(311942,281567,{f=28}),
 crit(115292,{achID=63359,id=5})}}),
 o(644813,{coords={
 [2512]={{29.5,67.2}}},questID=95855,g={
@@ -170366,12 +170374,14 @@ n(263265,{coords={
 i(271792)}}),
 o(648564,{coords={
 [2512]={{58.2,45.7}}},cost={{"i",271792,1}},questID=95976,g={
+s(311943,281568,{f=29}),
 crit(115293,{achID=63359,id=21})}})}}),
 o(644791,{coords={
 [2512]={{49.5,32}}},questID=95854,g={
 crit(115301,{achID=63359,id=17})}}),
 o(642786,{coords={
 [2512]={{44,26.5}}},questID=95727,g={
+s(311941,281566,{f=21}),
 i(270268),
 crit(115297,{achID=63359,id=22})}})}}),
 ah(63662,{type="a",g={
@@ -170414,11 +170424,13 @@ n(256688,{coords={
 i(280422,{f=55,spellID=1308717})}}),
 n(270399,{coords={
 [2512]={{58.6,45.9}}},g={
+de(27041,{cost={{"c",3316,500}},itemID=279452,spellID=1306738}),
 de(27042,{cost={{"c",3316,500}},itemID=279508,spellID=1306839}),
 de(15283,{cost={{"c",3316,500}},itemID=263873,spellID=1270747}),
-de(26376,{cost={{"c",3316,150}},itemID=281582,sourceQuests={95558},spellID=1311833}),
-de(27041,{cost={{"c",3316,500}},itemID=279452,spellID=1306738}),
-de(1428,{cost={{"c",3316,150}},itemID=244345,sourceQuests={95571},spellID=1237024}),
+de(26376,{cost={{"c",3316,150}},itemID=281582,spellID=1311833}),
+de(21725,{cost={{"c",3316,150}},itemID=271609}),
+de(21616,{cost={{"c",3316,150}},itemID=271176}),
+de(1428,{cost={{"c",3316,150}},itemID=244345,spellID=1237024}),
 de(26484,{cost={{"c",3316,150}},itemID=279285,spellID=1306457}),
 de(5130,{cost={{"c",3316,150}},itemID=248962,spellID=1248177}),
 de(21833,{cost={{"c",3316,250}},itemID=271851,spellID=1289635}),

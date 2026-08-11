@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["qg"] = 255270,	-- Orweyna (mobileNPC)
 						["coord"] = { 45.3, 45.2, 2639 },	-- Crypt of the Denied, Coordinate depend on where you turned in your previous quests
-						["groups"] = { i(279452) },	-- Forgotten Amani Mural (DECOR!)
+						["groups"] = { i(279452) },	-- "Summoning of Ula'tek" Mural (DECOR!)
 					}),
 				}),
 				header(HEADERS.AchCriteria, 62297.04, {	-- Original Sin
@@ -813,6 +813,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							o(611269, {	-- Feathered Trinket
 								i(257977),	-- Feathered Trinket (QI!)
 							}),
+							--
+							i(271176),	-- Feathered Ula'tek Talisman (DECOR!)
 						},
 					}),
 					q(93340, {	-- The Shadow Shard
@@ -1021,7 +1023,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 96458,	-- Last Promise
 						["provider"] = { "o", 660985 },	-- Ulantu's Scout Pack
 						["coord"] = { 56.9, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(279064) },	-- Naj'kula Flame Amulet (PQI!)
+						["groups"] = {
+							i(279064),	-- Naj'kula Flame Amulet (PQI!)
+							--
+							i(271609),	-- Destroyed Clutch of Ula'tek (DECOR!)
+						},
 					}),
 				}),
 			}),

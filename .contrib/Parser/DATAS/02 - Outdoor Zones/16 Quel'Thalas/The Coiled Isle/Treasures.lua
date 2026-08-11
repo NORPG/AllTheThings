@@ -81,6 +81,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(269861, {	-- A Tattered Amani Scroll
 							["lore"] = "Translated from Zandali language:\n'May the loas of the land protect us and bless us. May the spirits of our ancestors have mercy on our house and guide our hand in fortune.'",
 						}),
+						i(281582),	-- Atal'Utek Ivy (DECOR!)
 						i(269868),	-- Miniature Hand-Crafted Mask
 					},
 				}),
@@ -101,12 +102,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				header(HEADERS.Object, 645549, {	-- Grave of Someone Forgotten
 					-- https://www.youtube.com/watch?v=kOQRZnsootw
 					-- Found this video but it does not work for me, Forgotten Soldier did not disappear. It's like a step is missing...
-					["description"] = "1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n3. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n4. Go to Ata'leki <Spectral Foods Vendor>, ask about spectral food and then buy Spirit Sprouts.\n5. Go back to the Forgotten Soldier and commit sudoku (*wink, wink*) in his vicinity.\n6. Release your spirit and eat Spirit Sprouts. Remain seating, at least 10 seconds, until you get a buff.\n7. Talk to Spirit Healer and accept the Resurrection.\n8. Go back to the Nameless Grave.",
+					["description"] = "***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go to Ata'leki <Spectral Foods Vendor>, ask about spectral food and then buy Spirit Sprouts.\n6. Go back to the Forgotten Soldier and commit sudoku (*wink, wink*) in his vicinity (Easiest way is to switch the Flight Style, fly high in the air and drop off the mount).\n7. Release your spirit and eat Spirit Sprouts. Remain seating, at least 10 seconds, until you get a buff.\n8. Talk to Spirit Healer and accept the Resurrection.\n9. Go back to the Nameless Grave.",
 					["providers"] = {
 						{ "n", 263244 },	-- Forgotten Soldier
 						{ "o", 645553 },	-- Nameless Grave
 					},
 					["groups"] = {
+						n(263241, {	-- Zuzan
+							["coord"] = { 69.0, 52.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+						}),
 						n(263242, {	-- Zan'ja
 							["coord"] = { 70.4, 58.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 						}),
@@ -141,11 +145,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["coord"] = { 70.2, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(269935) },	-- Forgotten Trinket
 						}),
+						hqt(95574, { ["name"] = "Lost Spirit freed.", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
 						o(642205, {	-- Forgotten Treasure
 							["questID"] = 95571,
-							["groups"] = { i(251783) },	-- Lost Idol of the Hash'ey
+							["groups"] = {
+								i(244345),	-- Forgotten Amani Urn (DECOR!)
+								-- Exo Note: I think trinket reward is based on Class
+								i(274493),	-- Effigy of Ula'tek's Faithful
+								i(251783),	-- Lost Idol of the Hash'ey
+							},
 						}),
-						hqt(95574, { ["name"] = "Lost Spirit freed.", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
 					},
 				}),
 				o(629421, {	-- Malfunctioning Staff
@@ -179,6 +188,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						n(268062, {	-- Mysterious Trinket
 							["description"] = "Activate Fourth.",
 						}),
+						--
+						i(281567),	-- Profane Ritual Staff (COSMETIC!)
 					},
 				}),
 				o(644813, {	-- Smoldering Incense
@@ -240,6 +251,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["coord"] = { 58.2, 45.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["cost"] = { { "i", 271792, 1 } },	-- 1x Soldier's Smuggled Treasure Key
 							["questID"] = 95976,
+							["groups"] = { i(281568) },	-- Vul'zahn's Smuggled Spear (COSMETIC!)
 						}),
 					},
 				}),
@@ -250,7 +262,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(642786, {	-- Zul'Jan's Stash
 					["coord"] = { 44.0, 26.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95727,
-					["groups"] = { i(270268) },	-- Crumpled Note
+					["groups"] = {
+						i(281566),	-- Amani Warrior's Cleaver (COSMETIC!)
+						i(270268),	-- Crumpled Note
+					},
 				}),
 			}),
 			header(HEADERS.Achievement, 63662, {	-- Student of Hissstory

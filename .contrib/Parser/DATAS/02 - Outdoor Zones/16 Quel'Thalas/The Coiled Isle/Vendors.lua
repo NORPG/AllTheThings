@@ -14,6 +14,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(270399, {	-- Firetender Zab'ni <Decor Specialist>
 				["coord"] = { 58.6, 45.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["groups"] = {
+					i(279452, {	-- "Summoning of Ula'tek" Mural (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+					}),
 					i(279508, {	-- "The Hunger Awakens" Mural (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
@@ -21,14 +24,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
 					i(281582, {	-- Atal'Utek Ivy (DECOR!)
-						["sourceQuest"] = 95558,	-- Crumbling Urn
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
-					i(279452, {	-- Forgotten Amani Mural (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+					i(271609, {	-- Destroyed Clutch of Ula'tek (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
+					i(271176, {	-- Feathered Ula'tek Talisman (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(244345, {	-- Forgotten Amani Urn (DECOR!)
-						["sourceQuest"] = 95571,	-- Forgotten Treasure
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(279285, {	-- Lost Tortollan Scroll (DECOR!)

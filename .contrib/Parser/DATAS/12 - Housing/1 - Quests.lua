@@ -158,6 +158,7 @@ root(ROOTS.Housing, {
 					i(267435),	-- Purified Kaldorei Candle (DECOR!)
 					i(268943),	-- Purified Elven Glowlamp (DECOR!)
 					i(267205),	-- Purified Folk Candle (DECOR!)
+					i(263876),	-- Purified Folk Mirror (DECOR!)
 					-- Decor offered if turning quest in Razorwind Shores
 					i(267355),	-- Purified Elven Mirror (DECOR!)
 					i(272129),	-- Purified Tauren Pot (DECOR!)
