@@ -1014,7 +1014,6 @@ root(ROOTS.Unsorted, {
 			i(280701),	-- Waistwrap of the Fanged
 			i(280709),	-- Triple Threat Pauldrons
 			i(280713),	-- Big Mon's Buckle
-			i(280715),	-- Eye of Skully
 			i(280718),	-- Unflappable Flapping Cape
 			i(280732),	-- Warbound Pack of Hero Mistcrests
 			i(280734),	-- Warbound Pack of Champion Mistcrests

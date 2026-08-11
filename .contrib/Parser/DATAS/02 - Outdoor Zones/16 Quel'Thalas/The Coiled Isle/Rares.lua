@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(257906, {	-- Coin-Eye Skully
 					["coord"] = { 58.0, 66.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 94619,
-				--	["groups"] = {  },
+					["groups"] = { i(280715) },	-- Eye of Skully
 				}),
 				n(261142, {	-- Destra
 					["coord"] = { 52.1, 32.3, MAP.MIDNIGHT.THE_COILED_ISLE },
