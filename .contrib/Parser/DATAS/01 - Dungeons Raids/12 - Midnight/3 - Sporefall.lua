@@ -7,7 +7,7 @@ local ROTMIRE = 2711;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
-	[ROTMIRE] = { 256116 },	-- Rotmire (wrong ID still)
+	[ROTMIRE] = { 254176 },	-- Rotmire
 };
 
 ------ EncounterToLoot ------
