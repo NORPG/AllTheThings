@@ -130,6 +130,7 @@ root(ROOTS.Holidays,
 				n(264056, {	-- Disguised Decor Duel Vendor <Illusionary Coin Trader>
 					["coord"] = { 31.6, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["timeline"] = { ADDED_12_0_5 },
+					["_forcetimeline"] = true,
 					["groups"] = {
 						i(272445, {	-- Decorative Dornogal Opal (DECOR!)
 							["cost"] = {
