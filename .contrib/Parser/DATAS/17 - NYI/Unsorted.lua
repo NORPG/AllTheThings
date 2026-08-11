@@ -409,7 +409,6 @@ root(ROOTS.Unsorted, {
 			i(276536),	-- Corrosive Reticule
 			i(276547),	-- Afflicted Soul
 			i(276548),	-- Tormented Soul
-			i(276549),	-- Wind Serpent - Yellow
 			i(276550),	-- Wind Serpent - White
 			i(276552),	-- Wind Serpent - Pink
 			i(276611),	-- Clam Stuffed Crab
@@ -446,7 +445,6 @@ root(ROOTS.Unsorted, {
 			i(276748),	-- Scroll of the Salty Souvenir: West
 			i(276749),	-- Scroll of the Salty Souvenir: South
 			i(276800),	-- [PH]Writhes Mount - Yellow
-			i(276803),	-- [PH]Writhes Mount - Pink
 			i(276881),	-- Breath of Blight
 			i(276882),	-- Breath of Ruin
 			i(277137),	-- Wriggling Venom-Soaked Satchel

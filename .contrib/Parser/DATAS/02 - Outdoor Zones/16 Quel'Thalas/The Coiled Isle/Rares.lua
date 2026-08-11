@@ -8,6 +8,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			header(HEADERS.Achievement, 63358, sharedData({	-- Coiled to Strike
 				["isDaily"] = true,
 			}, {
+				n(COMMON_BOSS_DROPS, {
+					["isDaily"] = IGNORED_VALUE,
+					["crs"] = {
+						256631,	-- Big Mon
+						257906,	-- Coin-Eye Skully
+						261142,	-- Destra
+						264854,	-- Farthik the Plunderer
+						258916,	-- Garsecg
+						265262,	-- Hisstara
+						268090,	-- Kari'zah the Forgotten
+						265237,	-- Lockjaw
+						258920,	-- Nar'zira
+						268049,	-- Siltmouth
+						261109,	-- Sss'alik
+						263456,	-- Szarith The Fanged
+					},
+					["groups"] = {
+						i(276803),	-- Ruby Writhe (MOUNT!)
+						i(276549),	-- Topaz Skyfang (MOUNT!)
+					},
+				}),
 				n(256631, {	-- Big Mon <Ancient Amani Warband>
 					["coord"] = { 69.8, 63.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 93829,
