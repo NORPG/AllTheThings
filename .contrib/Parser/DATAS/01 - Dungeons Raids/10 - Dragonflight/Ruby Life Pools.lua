@@ -17,9 +17,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["coord"] = { 60.0, 76.0, THE_WAKING_SHORES },
 				}),
 			}),
-			-- Was Midnight Season 2 Mythic+ Dungeon
-			-- #if AFTER 12.1
-			-- #if BEFORE 12.2
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
@@ -67,10 +64,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			-- #endif
-			-- #endif
-			-- #if BEFORE 12.1
-			-- #if AFTER 12.2
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
@@ -154,8 +147,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			-- #endif
-			-- #endif
 		},
 	}),
 })));
