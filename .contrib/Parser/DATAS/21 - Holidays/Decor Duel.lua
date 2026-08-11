@@ -37,10 +37,10 @@ local ILLUSIONARY_COIN = 3393;
 
 root(ROOTS.Holidays,
 	--applyevent(EVENTS.DECOR_DUEL,	-- DO NOT TOUCH! (for now) It is placed among 'World Events' in-game under Achievements but there is no EventID on Wago. Maybe move to World Events?	-- Exo
-	bubbleDown({ ["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 } }, {
 	n(DECOR_DUEL, {
 		["maps"] = { MAP.MIDNIGHT.SILVERMOON_CITY },	-- Silvermoon City
 		["cr"] = 257125,	-- Fieldweaver Amolenne <Match Coordinator>
+		["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61793),	-- Deployed to the Void
@@ -129,42 +129,115 @@ root(ROOTS.Holidays,
 			n(VENDORS, {
 				n(264056, {	-- Disguised Decor Duel Vendor <Illusionary Coin Trader>
 					["coord"] = { 31.6, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["timeline"] = { ADDED_12_0_5 },
 					["groups"] = {
 						i(272445, {	-- Decorative Dornogal Opal (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,200},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,10},
+								-- #ENDIF
+							},
 						}),
 						i(272442, {	-- Empty Wooden Toolbox (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,300},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,20},
+								-- #ENDIF
+							},
 						}),
 						i(272446, {	-- Large Decorative Dornogal Opal (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,200},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,10},
+								-- #ENDIF
+							},
 						}),
 						i(269636, {	-- Sin'dorei Cookpot Lid (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 15 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,250},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,15},
+								-- #ENDIF
+							},
 						}),
 						i(269613, {	-- Sin'dorei Covered Cookpot (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 30 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,350},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,30},
+								-- #ENDIF
+							},
 						}),
 						i(269641, {	-- Sin'dorei Display Case (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 50 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,400},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,50},
+								-- #ENDIF
+							},
 						}),
 						i(271162, {	-- Sin'dorei Garden Swing (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 120 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,750},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,120},
+								-- #ENDIF
+							},
 						}),
 						i(269614, {	-- Sin'dorei Open Cookpot (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 15 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,250},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,15},
+								-- #ENDIF
+							},
 						}),
 						i(268457, {	-- Sin'dorei Tiffin-Style Lamp (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 50 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,400},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,50},
+								-- #ENDIF
+							},
 						}),
 						i(272444, {	-- Small Decorative Dornogal Opal (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,200},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,10},
+								-- #ENDIF
+							},
 						}),
 						i(272441, {	-- Small Lumber Pile (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,200},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,10},
+								-- #ENDIF
+							},
 						}),
 						i(272443, {	-- Suramar Arcfruit Bowl (DECOR!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+							["cost"] = {
+								-- #IF AFTER 12.1
+								{"c",VOIDLIGHT_MARL,300},
+								-- #ELSE
+								{"c",ILLUSIONARY_COIN,20},
+								-- #ENDIF
+							},
 						}),
 					},
 				}),
@@ -242,10 +315,7 @@ root(ROOTS.Holidays,
 				}),
 			}),
 		},
-	}),
-})
---)
-);
+	}))
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MID, {
