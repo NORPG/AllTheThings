@@ -188,9 +188,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(63625),	-- Keystone Victor: Voidscar Arena
 			ach(62445),	-- Midnight Keystone Explorer: Season 2
 			ach(62446),	-- Midnight Keystone Conqueror: Season 2
-			ach(62447),	-- Midnight Keystone Master: Season 2
+			ach(62447, {	-- Midnight Keystone Master: Season 2
+				i(276881),	-- Breath of Blight (MOUNT!)
+			}),
 			ach(62448),	-- Midnight Keystone Hero: Season 2
-			ach(62449),	-- Midnight Keystone Legend: Season 2
+			ach(62449, {	-- Midnight Keystone Legend: Season 2
+				i(276882),	-- Breath of Ruin (MOUNT!)
+			}),
 			ach(62436),	-- Venomous Hero: Midnight Season 2
 			-- Check the comment on previous season
 			ach(62417, {	-- Midnight Season 2: Resilient Keystone 12

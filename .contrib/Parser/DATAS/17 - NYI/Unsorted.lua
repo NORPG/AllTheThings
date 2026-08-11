@@ -445,8 +445,6 @@ root(ROOTS.Unsorted, {
 			i(276748),	-- Scroll of the Salty Souvenir: West
 			i(276749),	-- Scroll of the Salty Souvenir: South
 			i(276800),	-- [PH]Writhes Mount - Yellow
-			i(276881),	-- Breath of Blight
-			i(276882),	-- Breath of Ruin
 			i(277137),	-- Wriggling Venom-Soaked Satchel
 			i(277157),	-- Barnacle-Encrusted Chest
 			i(277192),	-- Umbral Ashes
