@@ -56,7 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
             n(QUESTS, {
             }),
-			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.MID_WORLD_BOSS_RAID).AddGroups({
 				n(WORLD_QUESTS, {
 					q(97128, {	-- Lair: Nymrissa Wavecaller
 						["isWeekly"] = true;
@@ -68,10 +68,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
                     i(279112),	-- Clumped Asteroidea (DECOR!)
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
-				header(HEADERS.LFGDungeon, 3215, {	-- Sporefall
-					Boss(NYMRISSA),
-				}),
+			Difficulty(DIFFICULTY.RAID.WORLD).AddGroupsWithUpgrades({
+				Boss(NYMRISSA),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				Boss(NYMRISSA, {

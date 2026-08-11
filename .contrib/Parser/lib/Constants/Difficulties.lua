@@ -19,6 +19,7 @@ DIFFICULTY = {
 		HEROIC = 15,
 		MYTHIC = 16,
 		MYTHIC_FLEX = 233,
+		WORLD = 250,
 	},
 	LEGACY_RAID = {
 		PLAYER10_NORMAL = 3,
@@ -131,6 +132,12 @@ DIFFICULTY.RAID.MULTI = {
 		DIFFICULTY.RAID.NORMAL,
 		DIFFICULTY.RAID.HEROIC,
 	}),
+	MID_WORLD_BOSS_RAID = GetOrCreateMultiDifficulty({
+		DIFFICULTY.RAID.WORLD,
+		DIFFICULTY.RAID.NORMAL,
+		DIFFICULTY.RAID.HEROIC,
+		DIFFICULTY.RAID.MYTHIC
+	}),
 };
 
 -- Legacy Raid Multi-Difficulties
@@ -206,6 +213,7 @@ DifficultyDB = {
 	[DIFFICULTY.RAID.HEROIC] = { icon = 311235, modID = 5 },
 	[DIFFICULTY.RAID.MYTHIC] = { icon = 311237, modID = 6 },
 	[DIFFICULTY.RAID.LFR] = { icon = 308480, modID = 4 },
+	[DIFFICULTY.RAID.WORLD] = { icon = 308480, modID = 4 },
 	[18] = { icon = 311236, modID = 1 },	-- Event unused?
 	[DIFFICULTY.DUNGEON.MYTHIC] = { icon = 311237, modID = 23 },
 	[DIFFICULTY.DUNGEON.TIMEWALKING] = { icon = 311238, modID = 22 },
