@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 ------ Encounter Constants ------
-local NYMRISSA = 2711;
+local NYMRISSA = 2849;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
