@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=12.0.7.68974
+SET BUILD=12.1.0.69273
 
 @REM Download new file versions
 call :download Achievement
@@ -18,6 +18,7 @@ call :download ItemEffect
 call :download ItemModifiedAppearance
 call :download ItemXItemEffect
 call :download ItemSearchName
+call :download ItemSparse
 call :download ModifierTree
 call :download SkillLineAbility
 call :downloadcleaned SpellEffect
