@@ -209,7 +209,10 @@ p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to
 de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771,u=2}),
 toy(272339,{awp=120007,description="Break the Meta: Midnight Season 1\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on July 14th at 8:00 AM PDT and lasts for 1 week.\nFor more details & requirements check out: raider.io/events/break-the-meta-midnight-season-1/event-info-rules",rwp=120007,u=2}),
 de(16813,{awp=120007,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between June 16th, 10:00 a.m. & July 14th, 10:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265389,rwp=120007,spellID=1275765,u=2}),
-mnt(1292356,{awp=120007,description="Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",itemID=273655,u=3})}}),
+mnt(1292356,{awp=120007,description="Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",itemID=273655,u=3}),
+en(257974,{awp=120100,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=93324,rwp=120100,spellID=1262585,tmogSetID=5340,g={
+s(301329,257782,{f=3}),
+s(301311,257762,{f=2,loc=40})}})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
