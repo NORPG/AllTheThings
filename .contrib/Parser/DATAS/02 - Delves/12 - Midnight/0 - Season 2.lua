@@ -63,21 +63,21 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		["groups"] = {
 			-- MID Season 2 Boss
 			m(VENOMFALL_DEEPS, {
-				--["icon"] = 7452103,
+				["icon"] = 7876113,
 				["coord"] = { 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["groups"] = {
-					--n(XXXXXX, {	-- Azta'rec ?
+					n(262455, {	-- Azta'rec ?
 						--["questID"] = XXXXX,	-- triggers on ? and ?? difficulties
 						--["isDaily"] = true,
-						--["groups"] = {
+						["groups"] = {
 							ach(63326, {	-- My Venomous Nemesis
 								i(276163),	-- Apophic Patagia (COSMETIC!)
 							}),
-						--},
-					--}),
-					--n(XXXXXX, {	-- Azta'rec ??
+						},
+					}),
+					n(265500, {	-- Azta'rec ??
 						--["questID"] = XXXXX,	-- triggered ?? difficulty
-						--["groups"] = {
+						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
 								["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },
 								["groups"] = {
@@ -90,8 +90,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(63332, {	-- Purging the Poison
 								title(775),	-- <Name> the Poisonous
 							}),
-						--},
-					--}),
+						},
+					}),
 				},
 			}),
 			n(ACHIEVEMENTS, {
@@ -167,7 +167,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 			}),
 			--[[mapped(n(TREASURES, {
-				o(618495, {	-- Nullaeus Cache
+				o(656489, {	-- Azta'rec Cache
 					["questID"] = 92887,
 					["isWeekly"] = true,
 					["cost"] = { { "i", 253342, 1 } },	-- Beacon of Hope
