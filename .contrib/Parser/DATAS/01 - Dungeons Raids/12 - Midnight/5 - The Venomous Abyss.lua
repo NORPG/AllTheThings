@@ -14,6 +14,7 @@ local ULATEK = 2895;
 ------ EncounterToCRS ------
 local EncounterToCRS = {
 	[NEKZALI] = { 253547 },	-- Nek'zali the Soulcoiler
+	--[[
 	[ENTOMBED] = {
 		1,
 		1,
@@ -31,6 +32,7 @@ local EncounterToCRS = {
 	[TWIN_FANGS] = { 1 },
 	[COILED_ALTAR] = { 1 },
 	[ULATEK] = { 1 },
+	--]]
 };
 
 ------ EncounterToLoot ------
