@@ -211,6 +211,7 @@ local EncounterToLoot = {
 		i(268209),	-- Aman'muso, Warlord's Vengeance
 		i(268211),	-- Baleful Hexblade
 		i(268255),	-- Cackling Soultreads
+		i(268225),	-- Coiled Hex Legguards
 		i(268237),	-- Cuisses of the Uncoiled Union
 		i(268259),	-- Girdle of Toxic Regret
 		i(268243),	-- Grasps of the Eternal Shadow

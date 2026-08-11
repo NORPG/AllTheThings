@@ -29,6 +29,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		},
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
+				n(ACHIEVEMENTS, {
+					ach(63679),	-- In Case Of Emergency
+				}),
 				BossOnly(RAVI, {
 					i(273795),	-- Coiled Fangstone
 					i(273775),	-- Hydra Scale Wristguards

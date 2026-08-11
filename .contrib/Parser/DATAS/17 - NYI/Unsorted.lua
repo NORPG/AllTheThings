@@ -52,19 +52,6 @@ root(ROOTS.Unsorted, {
 			i(268095),	-- Fresh Poultice
 			i(268113),	-- Jan'alai's Breath
 			-- WB
-			i(268199),	-- Tidepiercer's Bubble Popper
-			i(268262),	-- Bubblefin Splash Guard
-			i(268263),	-- Frostscale's Mystic Frond
-			i(268226),	-- Swelling Sea Spaulders
-			i(268221),	-- Tidebound Sorcereress's Robes
-			i(268217),	-- Rising Tide Wristguards
-			i(268238),	-- Grips of Swirling Fury
-			i(268232),	-- Cincture of the Abyssal Grotto
-			i(268244),	-- Forgotten Grotto Girdle
-			i(268225),	-- Spelunker's Drenched Legguards
-			i(268247),	-- Breakwater Boots
-			i(268266),	-- Alluring Bubbleband
-			i(270167),	-- Wavecaller's Seastone
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
 			i(268585),	-- Pup Treat
@@ -252,7 +239,6 @@ root(ROOTS.Unsorted, {
 			i(274595),	-- Pristine Polygon
 			i(274680),	-- Loa-Blessed Orb
 			i(274707),	-- Crystallized Venomblight Manaflux
-			i(274708),	-- Nebulous Voidcache: Nymrissa Wavecaller
 			i(274713),	-- Cache of Amani Treasures
 			i(274763),	-- Fleeting Liquid Luster
 			i(274764),	-- Fleeting Liquid Luster
@@ -739,7 +725,6 @@ root(ROOTS.Unsorted, {
 			i(279109),	-- [ph] SpiceWitch Waist - Pink
 			i(279110),	-- [ph] SpiceWitch Gloves- Pink
 			i(279111),	-- [ph] SpiceWitch Legs - Pink
-			i(279112),	-- Clumped Asteroidea
 			i(279114),	-- [ph] SpiceWitch Head - Pink
 			i(279133),	-- [ph] SpiceWitch Head - Pink (Hair Vis)
 			i(279134),	-- [ph] SpiceWitch Shoulders - Pink

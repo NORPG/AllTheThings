@@ -11,6 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 		inst(1314),	-- The Dreamrift
 		inst(1307),	-- The Voidspire
 		inst(1305),	-- Sporefall
+		inst(1317),	-- The Tidebound Grotto
 		inst(1320),	-- The Venomous Abyss
 		n(MYTHIC_PLUS),
 		n(COMMON_DUNGEON_DROPS),
