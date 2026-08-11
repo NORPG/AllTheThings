@@ -967,7 +967,11 @@ fieldConverters.symselector = function(group, value)
 	CacheField(group, "symselector", value);
 end
 end
-
+do	-- PvP Rank Key Cache
+fieldConverters.pvprankID = function(group, value)
+	CacheField(group, "pvprankID", value);
+end
+end
 --[[
 do	-- Chopping Block
 fieldConverters.achievementCategoryID = function(group, value)
@@ -975,9 +979,6 @@ fieldConverters.achievementCategoryID = function(group, value)
 end
 fieldConverters.heirloomUnlockID = function(group, value)
 	CacheField(group, "heirloomUnlockID", value);
-end
-fieldConverters.pvprankID = function(group, value)
-	CacheField(group, "pvprankID", value);
 end
 fieldConverters.raceID = function(group, value)
 	CacheField(group, "raceID", value);
