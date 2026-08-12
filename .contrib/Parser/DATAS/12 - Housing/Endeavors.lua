@@ -392,6 +392,11 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(94452),	-- Seventy Five Percent Completed
 				q(94453),	-- One Hundred Percent Completed
 				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
+
+				-- Unsorted
+				q(95584),	-- "Aromatic Bottle" hand-in
+				q(95593),	-- "Torga Statue" hand-in
+				q(95590),	-- "Amani Construction Hammer" hand-in
 			}),
 		}),
 	})),
