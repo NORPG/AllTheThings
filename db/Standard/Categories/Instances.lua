@@ -46665,7 +46665,7 @@ i(155881,{b=1,f=53,modID=23,spellID=274835}),
 i(168132,{b=1,modID=23})}})}}),
 d(24,{sym={{"sub","tw_instance",1001}}})}}),
 inst(1041,{awp=80001,coords={
-[862]={{37.6,39.4}}},maps={1004},savedInstanceID=1762,g={
+[862]={{37.6,39.4}}},InRetailSeason={104,23},maps={1004},savedInstanceID=1762,g={
 h(-62,{
 q(51502,{isWorldQuest=1}),
 q(51501,{isWorldQuest=1}),
@@ -47220,7 +47220,7 @@ crit(41386,{achID=12812,id=24})}),
 ach(12847),
 gach(13007)}})}})}}),
 inst(1030,{awp=80001,coords={
-[864]={{51.9,25.4}}},maps={1038,1043},savedInstanceID=1877,g={
+[864]={{51.9,25.4}}},InRetailSeason={104,23},maps={1038,1043},savedInstanceID=1877,g={
 h(-62,{
 q(51378,{isWorldQuest=1}),
 q(51377,{isWorldQuest=1}),
@@ -57714,7 +57714,7 @@ crit(55098,{achID=16339,id=4})}),
 gach(17099)}})}),
 d(24,{sym={{"sub","tw_instance",1199}}})}}),
 inst(1202,{awp=100002,coords={
-[2022]={{60.1,75.7}}},maps={2094,2095},savedInstanceID=2521,g={
+[2022]={{60.1,75.7}}},InRetailSeason={104,23},maps={2094,2095},savedInstanceID=2521,g={
 h(-45,{
 q(66119,{coords={
 [2022]={{60,76}}},lvl=10,qgs={187145},sourceQuests={66118}})}),
@@ -65491,7 +65491,7 @@ r(1246894,{crs={231636,231865,237415,241546,246404,247676,248015,248605},descrip
 r(1230472,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256720,requireSkill=755,skillID=2914}),
 r(1230471,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256708,requireSkill=755,skillID=2914})}}),
 inst(1322,{awp=120100,coords={
-[2509]={{47.2,68.5}}},maps={2588,2589,2590},g={
+[2509]={{47.2,68.5}}},InRetailSeason={101,104,23},maps={2588,2589,2590},g={
 d(101,{difficulties={1,2,23},g={
 h(-12,{
 ach(63679)}),
@@ -65533,7 +65533,7 @@ d(23,{
 e(2880,{npcID=259447,g={
 ach(62284)}})})}}),
 inst(1311,{awp=120001,coords={
-[2437]={{30,84.5}}},maps={2513,2514,2564},g={
+[2437]={{30,84.5}}},InRetailSeason={101,104,23},maps={2513,2514,2564},g={
 d(101,{difficulties={1,2,23},g={
 e(2776,{npcID=241812,g={
 s(298144,251144,{b=1,f=7,loc=45,lvl=78}),
@@ -65664,7 +65664,7 @@ ach(61645,{
 crit(110546,{achID=61568,id=3})}),
 gach(61616)}})}})}}),
 inst(1304,{awp=120001,coords={
-[2393]={{56.8,61.1}}},maps={2433,2434,2435},g={
+[2393]={{56.8,61.1}}},InRetailSeason={101,104,23},maps={2433,2434,2435},g={
 h(-45,{
 q(90822,{coords={
 [2393]={{32.2,26}}},lvl=80,qgs={245297},sourceQuests={90821}})}),
@@ -65789,7 +65789,7 @@ ach(61647,{
 crit(110547,{achID=61568,id=5})}),
 gach(61618)}})}})}}),
 inst(1309,{awp=120001,coords={
-[2413]={{27.2,78}}},maps={2500},g={
+[2413]={{27.2,78}}},InRetailSeason={101,104,23},maps={2500},g={
 d(101,{difficulties={1,2,23},g={
 h(-55,{
 n(251885,{description="Left of the path towards the last boss, target and use Hexed Potatoad Mucus to receive a toy.",questID=92518,g={
@@ -65839,7 +65839,7 @@ crit(110548,{achID=61568,id=6})}),
 gach(61619),
 toy(268728)}})}})}}),
 inst(1313,{awp=120001,coords={
-[2405]={{53.7,34.8}}},maps={2572,2573,2574},g={
+[2405]={{53.7,34.8}}},InRetailSeason={101,104,23},maps={2572,2573,2574},g={
 d(101,{difficulties={1,2,23},g={
 e(2791,{npcID=238887,g={
 s(298217,251221,{b=1,f=7,loc=44,lvl=78}),

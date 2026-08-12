@@ -199,7 +199,7 @@ namespace ATT
             AddHandlerAction(ParseStage.Validation, Handler.AlwaysHandle, Validate_Parallel);
 
             AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignFilterID);
-			AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignLocFilterID);
+            AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignLocFilterID);
 
             AddHandlerAction(ParseStage.Incorporation, data => data.ContainsKey("speciesID"), Incorporate_Species);
             AddHandlerAction(ParseStage.Incorporation, data => HasSpell(data) && !data.ContainsKey("_unsorted"), Incorporate_Spell);
@@ -1231,10 +1231,13 @@ namespace ATT
             if (!data.TryGetValue(out Coords coords))
                 return;
 
+            const float TOO_CLOSE = 0.1F;
+
             // Check for identical coords on the same data
             if (coords.Count > 1)
             {
-                var result = new List<(Coord, Coord)>();
+                var identical = new List<(Coord, Coord)>();
+                var close = new List<(Coord, Coord)>();
                 for (int i = 0; i < coords.Count; i++)
                 {
                     Coord icoord = coords[i];
@@ -1242,16 +1245,29 @@ namespace ATT
                     {
                         Coord jcoord = coords[j];
                         // do we need to concern with map-based minimum coord distances?
-                        if (icoord.MapID == jcoord.MapID && icoord.DistanceTo(jcoord) <= 0)
+                        if (icoord.MapID == jcoord.MapID)
                         {
-                            result.Add((icoord, jcoord));
+                            float distance = icoord.DistanceTo(jcoord);
+                            if (distance <= 0)
+                            {
+                                identical.Add((icoord, jcoord));
+                            }
+                            else if (distance <= TOO_CLOSE)
+                            {
+                                close.Add((icoord, jcoord));
+                            }
                         }
                     }
                 }
 
-                if (result.Count > 0)
+                if (identical.Count > 0)
                 {
-                    LogWarn($"Multiple Coords are identical: {ToJSON(result)}", data);
+                    LogWarn($"Multiple Coords are identical: {ToJSON(identical)}", data);
+                }
+                if (close.Count > 0)
+                {
+                    // TODO: convert to LogWarn once cleaned
+                    LogDebugWarn($"Multiple Coords are very close (< {TOO_CLOSE}): {ToJSON(close)}", data);
                 }
             }
         }
@@ -3567,11 +3583,17 @@ namespace ATT
                     if (!data.TryGetValue("_spellQuests", out List<object> existingSpellQuests)
                         || !existingSpellQuests.TrySmartContains(questID, out _))
                     {
-                        FieldValueReuse.GetOrAdd("_spellQuests", NewConcurrentDictionary_long_int)
-                            .AddOrUpdate(questID, 1, (long key, int existing) => existing + 1);
+                        // if the data already has questID assigned, then don't consider this a field value reuse on _spellQuests
+                        // since it can still allow this data as a provider for the questID Source
+                        if (!data.TryGetValue("questID", out long questIDExisting))
+                        {
+                            FieldValueReuse.GetOrAdd("_spellQuests", NewConcurrentDictionary_long_int)
+                                .AddOrUpdate(questID, 1, (long key, int existing) => existing + 1);
+                        }
+
+                        IncorporateDataField(data, "_spellQuests", questID);
+                        LogDebug($"INFO: Assigned data '_spellQuests' {questID} due to overlapping {multipleItemsForSpellEffect} x ItemEffect, {multipleSpellEffectsForQuestID} x SpellEffect {multipleQuests} x Quest sequences", data);
                     }
-                    IncorporateDataField(data, "_spellQuests", questID);
-                    LogDebug($"INFO: Assigned data '_spellQuests' {questID} due to overlapping {multipleItemsForSpellEffect} x ItemEffect, {multipleSpellEffectsForQuestID} x SpellEffect {multipleQuests} x Quest sequences", data);
                 }
             }
 
@@ -3644,7 +3666,7 @@ namespace ATT
             }
 
             // if this QuestID was assigned multiple times in _spellQuests, then it should not be assigned to one specific place
-            if (FieldValueReuse.TryGetValue("_spellQuests", out var spellQuestReuse)
+            if (allowMergeQuestID && FieldValueReuse.TryGetValue("_spellQuests", out var spellQuestReuse)
                 && spellQuestReuse.TryGetValue(questID, out int spellQuestCount)
                 && spellQuestCount > 1)
             {
@@ -3655,7 +3677,7 @@ namespace ATT
                 }
                 else
                 {
-                    LogWarn($"INFO: Ignoring Quest {questID} assignment to data since it is used in {spellQuestCount} data objects. Source it directly instead in a way that makes sense, i.e. hqt({questID})", data);
+                    LogWarn($"Ignoring Quest {questID} assignment to data since it is used in {spellQuestCount} data objects. Source it directly instead in a way that makes sense, i.e. hqt({questID})", data);
                 }
                 allowMergeQuestID = false;
             }
