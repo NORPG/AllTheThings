@@ -1010,6 +1010,7 @@ _.HeaderConstants = {
 	COMMUNITY_CLUES_HEADER = -506,
 	CONDUITS = -155,
 	CRAFTED_ITEMS = -23,
+	CURRENT_SEASON = -763,
 	DARKMOON_FAIRE_HEADER = -37,
 	DARKSPEAR_DASH = -755,
 	DAY_OF_THE_DEAD_HEADER = -566,
@@ -1745,6 +1746,7 @@ localize(L.HEADER_NAMES, {
 	[-760] = "Lunar New Year Adventure",
 	[-761] = "Portal Bridges",
 	[-762] = "Amani Endeavor",
+	[-763] = "Current Season",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2486,6 +2488,7 @@ localize(L.HEADER_ICONS, {
 	[-760] = 7360957,
 	[-761] = 6994475,
 	[-762] = 7672957,
+	[-763] = 236508,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
