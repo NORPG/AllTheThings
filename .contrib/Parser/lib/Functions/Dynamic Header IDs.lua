@@ -147,6 +147,7 @@ HeaderAssignments = {
 	["Crimson Gladiator: Dragonflight Season 1"] = -284,
 	["Cruel Gladiator: Legion Season 3"] = -271,
 	["Curio"] = -382,
+	["Current Season"] = -763,
 	["D.R.I.V.E. Racing"] = -54,
 	["Daggerspine Point"] = -757,
 	["Daily Dreamway Event Roll"] = -437,
@@ -742,4 +743,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -763
+NextHeaderID = -764

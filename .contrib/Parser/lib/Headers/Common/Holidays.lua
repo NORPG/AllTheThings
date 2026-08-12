@@ -61,10 +61,10 @@ DARKMOON_FAIRE_HEADER = createHeader({
 		-- Setup Phase: Starts the first Friday of the month (3 days of assembly with no vendors).
 		-- Open Phase: Opens on Monday following setup and stays active until Sunday evening.
 		5,
-		2026, 7	-- Aug 2026 in Mulgore (active 08/07 at 00:00, end 08/17 at 00:00)
+		2026, 7,	-- Aug 2026 in Mulgore (active 08/07 at 00:00, end 08/17 at 00:00)
 		-- #else
 		2,    -- Active First Sunday of Every Month until following Saturday at Midnight(DMF)
-		2023, 5    -- May 2022 in Terrokar Forest (TBC) (active 05/07 at 00:00, end 05/14 at 00:00)
+		2023, 5,    -- May 2022 in Terrokar Forest (TBC) (active 05/07 at 00:00, end 05/14 at 00:00)
 		-- #endif
 	},
 	-- #endif

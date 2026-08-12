@@ -19,8 +19,18 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
+local InRetailSeason
+-- #IF AFTER 12.1
+InRetailSeason = {	-- MID S2
+	DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS,
+	DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS,
+	DIFFICULTY.DUNGEON.MYTHIC,
+}
+-- #ENDIF
+
 root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 	inst(1322, {	-- Altar of Fangs
+		InRetailSeason=InRetailSeason,
 		["coord"] = { 47.2, 68.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 		["maps"] = {
 			2588,	-- Sacrificial Approach / The Carnage Pit

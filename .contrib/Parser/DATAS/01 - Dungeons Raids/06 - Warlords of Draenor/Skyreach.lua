@@ -52,11 +52,21 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, BossWithHeader =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
 
+local InRetailSeason
+-- #IF AFTER 12.1
+InRetailSeason = nil
+-- #ELSEIF AFTER 12.0
+InRetailSeason = {DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE}	-- MID S1
+-- #ELSE
+InRetailSeason = nil
+-- #ENDIF
+
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(476, {	-- Skyreach
 		["coord"] = { 35.5, 33.6, SPIRES_OF_ARAK },
 		["maps"] = { 601, 602 },
 		["lvl"] = 96,
+		InRetailSeason=InRetailSeason,
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(RANJIT),

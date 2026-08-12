@@ -24,8 +24,18 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
+local InRetailSeason
+-- #IF AFTER 12.1
+InRetailSeason = {	-- MID S2
+	DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS,
+	DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS,
+	DIFFICULTY.DUNGEON.MYTHIC,
+}
+-- #ENDIF
+
 root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	inst(1304, {	-- Murder Row
+		InRetailSeason=InRetailSeason,
 		["coord"] = { 56.8, 61.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 		["maps"] = {
 			2433,	-- Murder Row

@@ -2,8 +2,17 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+local InRetailSeason
+-- #IF AFTER 12.1
+InRetailSeason = {	-- MID S2
+	DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS,
+	DIFFICULTY.DUNGEON.MYTHIC,
+}
+-- #ENDIF
+
 root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	inst(1030, {	-- Temple of Sethraliss
+		InRetailSeason=InRetailSeason,
 		["coord"] = { 51.9, 25.4, VOLDUN },
 		["maps"] = {
 			1038,	-- Temple of Sethraliss
