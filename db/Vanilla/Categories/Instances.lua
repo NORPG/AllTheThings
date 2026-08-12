@@ -795,7 +795,8 @@ i(17063,{b=1,f=52,lvl=60,q=4}),
 i(19138,{b=1,f=52,lvl=60,q=4}),
 i(18815,{b=1,f=53,lvl=60,q=4}),
 i(17082,{b=1,f=53,lvl=60,q=4}),
-i(17982,{awp=10100,b=1,f=52,lvl=60,q=3,rwp=10400,u=2})}})}}),
+i(17982,{awp=10100,b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
+i(21110,{awp=10900,b=1,q=4,rwp=40003,u=15})}})}}),
 inst(760,{coords={
 [1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},["zone-text-areaID"]=2159,g={
 h(-45,{
@@ -867,7 +868,8 @@ s(163148,16900,{b=1,c={11},f=5,loc=40,lvl=60,q=4}),
 i(18205,{awp=10001,b=1,f=51,lvl=60,q=4,rwp=100000}),
 s(163271,17078,{awp=10001,b=1,f=3,lvl=60,q=4,rwp=100000}),
 i(18813,{awp=10001,b=1,f=52,lvl=60,q=4,rwp=100000}),
-i(17064,{awp=10001,b=1,f=53,lvl=60,q=4,rwp=100000})})}}),
+i(17064,{awp=10001,b=1,f=53,lvl=60,q=4,rwp=100000}),
+i(21108,{awp=10900,b=1,q=4,rwp=40003,u=15})})}}),
 inst(742,{awp=10600,coords={
 [33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},u=13,["zone-text-areaID"]=2677,g={
 h(-45,{u=13,g={
@@ -883,6 +885,10 @@ q(7784,{coords={
 i(19383,{b=1,f=51,lvl=60,q=4,u=13}),
 s(163881,19366,{b=1,f=1,lvl=60,q=4,u=13}),
 i(19384,{b=1,f=52,lvl=60,q=4,u=13})}})}}),
+h(-56,{u=13,g={
+o(180667,{awp=10900,coords={
+[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",rwp=40003,u=15,g={
+i(21109,{awp=10600,b=1,q=4,u=15})}})}}),
 h(-63,{u=13,g={
 i(18562,{crs={13996,14401},q=4,u=13}),
 i(19434,{b=1,crs={12457,12459,12461},f=52,lvl=60,q=4,u=13}),

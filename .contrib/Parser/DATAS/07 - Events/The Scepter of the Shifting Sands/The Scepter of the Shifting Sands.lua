@@ -25,7 +25,8 @@ THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
 });
 
 root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
-	applyclassicphase(PHASE_FIVE, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {
+	applyclassicphase(PHASE_FIVE, {
+		["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
 		["maps"] = {
 			CAVERNS_OF_TIME,
 			TANARIS,
@@ -68,14 +69,12 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["groups"] = {
 						ach(416, {	-- Scarab Lord (Achievement)
 							["sourceQuest"] = 8743,	-- Bang a Gong!
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
 						}),
 						title(33, {	-- Scarab Lord Crieve
 							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },	-- Added in Burning Crusade Prepatch
 						}),
-						i(21176, {	-- Black Qiraji Battle Tank (MOUNT!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21176),	-- Black Qiraji Battle Tank (MOUNT!)
 						mount(239770, {	-- Black Qiraji War Tank (MOUNT!)  (This a high resolution version given to players in the end of Legion)
 							["timeline"] = { ADDED_7_3_5, REMOVED_7_3_5 },	-- when it's added, it's already removed because it's only given to players who already have the original removed
 						}),
@@ -371,8 +370,9 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["groups"] = {
 						objective(1, {	-- 0/1 Draconic For Dummies: Volume II
 							["provider"] = { "i", 21111 },	-- Draconic For Dummies: Volume II
+						}),
+						i(21112, {	-- Magical Book Binding
 							["cost"] = {
-								{ "i", 21112, 1 },	-- Magical Book Binding
 								{ "i", 21103, 1 },	-- Draconic for Dummies [Chapter I] (Doctor Weavil)
 								{ "i", 21104, 1 },	-- Draconic for Dummies [Chapter II] (Blasted Lands Demons)
 								{ "i", 21105, 1 },	-- Draconic for Dummies [Chapter III] (Winterspring Demons)
@@ -382,67 +382,10 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								{ "i", 21109, 1 },	-- Draconic for Dummies [Chapter VII] (Blackwing Lair)
 								{ "i", 21110, 1 },	-- Draconic for Dummies [Chapter VIII] (Ragnaros)
 							},
+							["groups"] = {
+								i(21111),	-- Draconic For Dummies: Volume II
+							},
 						}),
-						{
-							["itemID"] = 21103,	-- Draconic for Dummies [Chapter I]
-							["coord"] = { 77.8, 17.0, DUSTWALLOW_MARSH },
-							["cr"] = 15552,	-- Doctor Weavil
-						},
-						{
-							["itemID"] = 21104,	-- Draconic for Dummies [Chapter II]
-							["coord"] = { 44.6, 56.0, BLASTED_LANDS },
-							["crs"] = {
-								12396,	-- Doomguard Commander
-								8716,	-- Dreadlord
-								8717,	-- Felguard Elite
-							},
-						},
-						{
-							["itemID"] = 21105,	-- Draconic for Dummies [Chapter III]
-							["coords"] = {
-								{ 65.0, 80.2, WINTERSPRING },
-								{ 51.6, 84.4, WINTERSPRING },
-								{ 54.6, 87.4, WINTERSPRING },
-							},
-							["crs"] = {
-								10201,	-- Lady Hederine
-								7461,	-- Hederine Initiate
-								7463,	-- Hederine Slayer
-							},
-						},
-						{
-							["itemID"] = 21106,	-- Draconic for Dummies [Chapter IV]
-							["_allowObjectProvider"] = true,
-							["provider"] = { "o", 180666 },	-- Draconic for Dummies
-							["coord"] = { 77.0, 38.0, UNDERCITY },
-						},
-						{
-							["itemID"] = 21107,	-- Draconic for Dummies [Chapter V]
-							["_allowObjectProvider"] = true,
-							["provider"] = { "o", 180665 },	-- Draconic for Dummies
-							["coords"] = {
-								-- #if AFTER WRATH
-								{ 75.35, 29.73, STORMWIND_CITY },
-								-- #else
-								{ 72.0, 6.0, STORMWIND_CITY },
-								-- #endif
-							},
-						},
-						{
-							["itemID"] = 21108,	-- Draconic for Dummies [Chapter VI]
-							["cr"] = 10184,	-- Onyxia
-						},
-						{
-							["itemID"] = 21109,	-- Draconic for Dummies [Chapter VII]
-							["_allowObjectProvider"] = true,
-							["provider"] = { "o", 180667 },	-- Draconic for Dummies
-							["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-							["coord"] = { 32.0, 42.9, BLACKWING_LAIR },
-						},
-						{
-							["itemID"] = 21110,	-- Draconic for Dummies [Chapter VIII]
-							["cr"] = 11502,	-- Ragnaros
-						},
 						i(21517),	-- Gnomish Turban of Psychic Might
 					},
 				}),
@@ -523,5 +466,5 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 			}),
 		},
-	}))
+	})
 ));

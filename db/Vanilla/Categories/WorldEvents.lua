@@ -407,7 +407,7 @@ i(21510,{b=1,description="Contains a random assortment of common, uncommon, and 
 i(21511,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 30-32.",q=1,u=1501}),
 i(21512,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",q=1,u=1501}),
 i(21513,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",q=1,u=1501})}})}}),
-h(-483,{lvl=60,maps={75,1446},rwp=40003,u=15,g={
+h(-483,{awp=10900,lvl=60,maps={75,1446},rwp=40003,u=15,g={
 h(-45,{u=15,g={
 q(8519,{coords={
 [1451]={{28.7,89.1}}},lvl=60,minReputation={910,0},providers={{"o",180633}},sourceQuests={8305},u=15}),
@@ -489,21 +489,9 @@ qo(4,{coords={
 [1425]={{61.6,27.7}}},crs={12477,12478,12479},providers={{"i",21146}},u=15})}}),
 q(8620,{coords={
 [1446]={{65.2,18.6}}},lvl=60,maps={232,248,287,1419,1445,1452,1453,1458},qgs={11811},sourceQuests={8606},u=15,g={
-qo(1,{cost={{"i",21110,1},{"i",21109,1},{"i",21108,1},{"i",21107,1},{"i",21106,1},{"i",21105,1},{"i",21104,1},{"i",21103,1},{"i",21112,1}},providers={{"i",21111}},u=15}),
-i(21103,{b=1,coords={
-[1445]={{77.8,17}}},crs={15552},q=4,u=15}),
-i(21104,{b=1,coords={
-[1419]={{44.6,56}}},crs={8716,8717,12396},q=4,u=15}),
-i(21105,{b=1,coords={
-[1452]={{51.6,84.4},{54.6,87.4},{65,80.2}}},crs={7461,7463,10201},q=4,u=15}),
-i(21106,{b=1,coords={
-[1458]={{77,38}}},providers={{"o",180666}},q=4,u=15}),
-i(21107,{b=1,coords={
-[1453]={{72,6}}},providers={{"o",180665}},q=4,u=15}),
-i(21108,{b=1,crs={10184},q=4,u=15}),
-i(21109,{b=1,coords={
-[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",providers={{"o",180667}},q=4,u=15}),
-i(21110,{b=1,crs={11502},q=4,u=15}),
+qo(1,{providers={{"i",21111}},u=15}),
+i(21112,{b=1,cost={{"i",21110,1},{"i",21109,1},{"i",21108,1},{"i",21107,1},{"i",21106,1},{"i",21105,1},{"i",21104,1},{"i",21103,1}},q=1,u=15,g={
+i(21111,{b=1,q=1,u=15})}}),
 s(164642,21517,{b=1,f=4,loc=40,lvl=60,q=4,u=15})}}),
 q(8301,{coords={
 [1451]={{49.5,36.4}}},cost={{"i",20384,200}},lvl=60,qgs={15180},sourceQuests={8288},u=15,g={

@@ -2668,6 +2668,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7447,	-- Fledgling Chillwind
 					},
 				}),
+				applyclassicphase(PHASE_FIVE, i(21105, {	-- Draconic for Dummies [Chapter III]
+					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+					["coords"] = {
+						{ 65.0, 80.2, WINTERSPRING },
+						{ 51.6, 84.4, WINTERSPRING },
+						{ 54.6, 87.4, WINTERSPRING },
+					},
+					["crs"] = {
+						10201,	-- Lady Hederine
+						7461,	-- Hederine Initiate
+						7463,	-- Hederine Slayer
+					},
+				})),
 				i(12771, {	-- Empty Firewater Flask
 					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {

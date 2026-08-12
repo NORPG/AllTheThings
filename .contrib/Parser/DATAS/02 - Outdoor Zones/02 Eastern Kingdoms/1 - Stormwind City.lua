@@ -4572,8 +4572,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(PHASE_FIVE, o(180665, {	-- Draconic for Dummies
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 75.35, 29.73, STORMWIND_CITY },
+						-- #else
+						{ 72.0, 6.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+					["groups"] = {
+						i(21107),	-- Draconic for Dummies [Chapter V]
+					},
+				})),
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(205864, {	-- Charred Note
 					["questID"] = 75940,	-- Charred Note HQT
 					["sourceQuest"] = 75939,	-- Brother Romulus HQT
@@ -4606,8 +4619,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
 					},
 				})),
+				-- #endif
 			}),
-			-- #endif
 			n(VENDORS, {
 				n(69334, {	-- Adherent Hanjun <Tushui Quartermaster>
 					["coord"] = { 68.0, 17.0, STORMWIND_CITY },

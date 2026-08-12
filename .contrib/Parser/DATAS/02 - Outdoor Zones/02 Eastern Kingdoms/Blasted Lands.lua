@@ -1917,6 +1917,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 57182, 2 },	-- Screecher Brain Paste
 					},
 				}),
+				applyclassicphase(PHASE_FIVE, i(21104, {	-- Draconic for Dummies [Chapter II]
+					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+					["coord"] = { 44.6, 56.0, BLASTED_LANDS },
+					["crs"] = {
+						12396,	-- Doomguard Commander
+						8716,	-- Dreadlord
+						8717,	-- Felguard Elite
+					},
+				})),
 				i(8244, {	-- Flawless Draenethyst Sphere
 					["description"] = "A very rare zone drop. It has a higher chance to drop from Rare Creatures.",
 					["crs"] = {

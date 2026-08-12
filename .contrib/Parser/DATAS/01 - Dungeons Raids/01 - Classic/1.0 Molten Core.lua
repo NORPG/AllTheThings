@@ -831,6 +831,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(17982, {	-- Ragnaros Core
 						["timeline"] = { ADDED_1_1_0, REMOVED_1_4_0 },
 					}),
+					applyclassicphase(PHASE_FIVE, i(21110, {	-- Draconic for Dummies [Chapter VIII]
+						["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+					})),
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY

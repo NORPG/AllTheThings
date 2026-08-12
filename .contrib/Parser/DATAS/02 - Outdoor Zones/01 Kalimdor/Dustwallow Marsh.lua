@@ -39,12 +39,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = 236758,
 		["maps"] = { 416 },	-- Dustwallow Marsh
 		["groups"] = {
+			-- #if BEFORE 7.1.0
+			n(WORLD_BOSSES, {
+				["isRaid"] = true,
+				["lvl"] = 60,
+				["groups"] = {
+					n(15552, {	-- Dr. Weavil
+						["coord"] = { 77.6, 17.0, DUSTWALLOW_MARSH },
+						["groups"] = {
+							applyclassicphase(PHASE_FIVE, i(21103, {	-- Draconic for Dummies [Chapter I]
+								["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+							})),
+							i(21130),	-- Diary of Weavil
+						},
+					}),
+				},
+			}),
+			-- #endif
 			n(ALCAZ_ISLAND, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
 				["lvl"] = lvlsquish(110, 45, 45),
 				["groups"] = {
 					n(15552, {	-- Dr. Weavil
 						["coord"] = { 77.6, 17.2, DUSTWALLOW_MARSH },
 						["groups"] = {
+							applyclassicphase(PHASE_FIVE, i(21103, {	-- Draconic for Dummies [Chapter I]
+								["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+								["coord"] = { 77.8, 17.0, DUSTWALLOW_MARSH },
+							})),
 							i(142265),	-- Big Red Raygun (TOY!)
 							i(142262),	-- Electrified Key
 						},

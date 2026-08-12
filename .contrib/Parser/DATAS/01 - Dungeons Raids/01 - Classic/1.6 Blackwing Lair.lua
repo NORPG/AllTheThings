@@ -148,6 +148,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
 			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
 			-- #endif
+			n(TREASURES, {
+				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
+					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+					["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+					["coord"] = { 32.0, 42.9, BLACKWING_LAIR },
+					["groups"] = {
+						i(21109),	-- Draconic for Dummies [Chapter VII]
+					},
+				})),
+			}),
 			n(ZONE_DROPS, {
 				i(18562, {	-- Elementium Ingot
 					["crs"] = {

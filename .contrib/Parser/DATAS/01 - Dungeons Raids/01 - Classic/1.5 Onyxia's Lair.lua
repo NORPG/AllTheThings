@@ -838,6 +838,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { REMOVED_1_15_3 },
 							-- #endif
 						}),
+						applyclassicphase(PHASE_FIVE, i(21108, {	-- Draconic for Dummies [Chapter VI]
+							["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+						})),
 					})),
 			-- #if AFTER WRATH
 				},
