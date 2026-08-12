@@ -80,7 +80,7 @@ end
 -- So instead of individually adding a bazillion OnReady event registrations, let's just have one method do that all for us
 local OnReadyEventRegistrations = {}
 local function CheckDuplicateRootEventRegistration(event)
-	if rawget(app.events, event) or OnReadyEventRegistrations[event] then
+	if rawget(app.events, event) or (OnReadyEventRegistrations and OnReadyEventRegistrations[event]) then
 		app.report("Duplicate Root Event Registration!",event)
 	end
 end

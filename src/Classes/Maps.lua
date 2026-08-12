@@ -687,7 +687,11 @@ app.AddEventRegistration("UI_INFO_MESSAGE", function(messageID, ...)
 		CheckExplorationForPlayerPosition()
 	end
 end)
+local RealtimeExploration
 app.ChatCommands.Add("realtime-exploration-check", function(args)
+	if RealtimeExploration then return end
+
+	RealtimeExploration = true
 	app.AddEventRegistration("FOG_OF_WAR_UPDATED", CheckExplorationForPlayerPosition)
 	app.print("Enabled: realtime-exploration-check")
 	return true
