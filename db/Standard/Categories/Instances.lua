@@ -773,7 +773,8 @@ i(17063,{b=1,f=52,lvl=25}),
 i(19138,{b=1,f=52,lvl=25}),
 i(18815,{b=1,f=53,lvl=25,spellID=23266}),
 i(17082,{b=1,f=53,lvl=25}),
-i(17982,{awp=10100,b=1,f=52,lvl=25,rwp=10400,u=2})}})}}),
+i(17982,{awp=10100,b=1,f=52,lvl=25,rwp=10400,u=2}),
+i(21110,{awp=10900,b=1,rwp=40003,u=2})}})}}),
 inst(760,{coords={
 [70]={{52.3,76.2}}},isLockoutShared=1,isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",mapID=248,savedInstanceID=249,["zone-text-areaID"]=2159,g={
 h(-45,{
@@ -940,7 +941,8 @@ s(6964,16900,{b=1,c={11},f=5,loc=40,lvl=25,u=2}),
 i(18205,{b=1,f=51,lvl=25,u=2}),
 s(7087,17078,{b=1,f=3,lvl=25,u=2}),
 i(18813,{b=1,f=52,lvl=25,u=2}),
-i(17064,{b=1,f=53,lvl=25,u=2})}})}})}}),
+i(17064,{b=1,f=53,lvl=25,u=2}),
+i(21108,{awp=10900,b=1,rwp=40003,u=2})}})}})}}),
 inst(742,{awp=10600,coords={
 [33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",mapID=287,maps={288,289,290},providers={{"o",179879}},savedInstanceID=469,g={
 h(-12,{
@@ -959,6 +961,10 @@ q(7784,{coords={
 i(19383,{b=1,f=51,lvl=25}),
 s(7676,19366,{b=1,f=1,lvl=25}),
 i(19384,{b=1,f=52,lvl=25})}})}),
+h(-56,{
+o(180667,{awp=10900,coords={
+[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",rwp=40003,u=2,g={
+i(21109,{awp=10600,b=1})}})}),
 h(-63,{
 i(18562,{crs={13996,14401}}),
 i(19434,{b=1,crs={12457,12459,12461},f=52,lvl=25}),
@@ -46659,7 +46665,7 @@ i(155881,{b=1,f=53,modID=23,spellID=274835}),
 i(168132,{b=1,modID=23})}})}}),
 d(24,{sym={{"sub","tw_instance",1001}}})}}),
 inst(1041,{awp=80001,coords={
-[862]={{37.6,39.4}}},InRetailSeason={104,23},maps={1004},savedInstanceID=1762,g={
+[862]={{37.6,39.4}}},maps={1004},savedInstanceID=1762,g={
 h(-62,{
 q(51502,{isWorldQuest=1}),
 q(51501,{isWorldQuest=1}),
@@ -47214,7 +47220,7 @@ crit(41386,{achID=12812,id=24})}),
 ach(12847),
 gach(13007)}})}})}}),
 inst(1030,{awp=80001,coords={
-[864]={{51.9,25.4}}},InRetailSeason={104,23},maps={1038,1043},savedInstanceID=1877,g={
+[864]={{51.9,25.4}}},maps={1038,1043},savedInstanceID=1877,g={
 h(-62,{
 q(51378,{isWorldQuest=1}),
 q(51377,{isWorldQuest=1}),
@@ -57708,7 +57714,7 @@ crit(55098,{achID=16339,id=4})}),
 gach(17099)}})}),
 d(24,{sym={{"sub","tw_instance",1199}}})}}),
 inst(1202,{awp=100002,coords={
-[2022]={{60.1,75.7}}},InRetailSeason={104,23},maps={2094,2095},savedInstanceID=2521,g={
+[2022]={{60.1,75.7}}},maps={2094,2095},savedInstanceID=2521,g={
 h(-45,{
 q(66119,{coords={
 [2022]={{60,76}}},lvl=10,qgs={187145},sourceQuests={66118}})}),
@@ -65413,9 +65419,9 @@ ach(61244,{u=2}),
 ach(61245,{u=2}),
 ach(61246,{u=2}),
 ach(61247,{u=2}),
-ach(61248,{u=2}),
-ach(61249,{u=2}),
-ach(61250,{u=2}),
+ach(61248,{collectible=false,u=2}),
+ach(61249,{collectible=false,u=2}),
+ach(61250,{collectible=false,u=2}),
 ach(61251,{collectible=false,u=2}),
 ach(61252,{collectible=false,u=2}),
 ach(61253,{collectible=false,u=2})}}),
@@ -65445,20 +65451,20 @@ crit(116038,{achID=63473,id=3})}),
 ach(62449,{
 mnt(1301074,{itemID=276882})}),
 ach(62436),
-ach(62417,{collectible=false}),
-ach(62418,{collectible=false}),
-ach(62419,{collectible=false}),
-ach(62420,{collectible=false}),
-ach(62421,{collectible=false}),
-ach(62422,{collectible=false}),
-ach(62423,{collectible=false}),
-ach(62424,{collectible=false}),
-ach(62425,{collectible=false}),
-ach(62426,{collectible=false}),
-ach(62427,{collectible=false}),
-ach(62428,{collectible=false}),
-ach(62429,{collectible=false}),
-ach(62430,{collectible=false}),
+ach(62417),
+ach(62418),
+ach(62419),
+ach(62420),
+ach(62421),
+ach(62422),
+ach(62423),
+ach(62424),
+ach(62425),
+ach(62426),
+ach(62427),
+ach(62428),
+ach(62429),
+ach(62430),
 ach(62431,{collectible=false}),
 ach(62432,{collectible=false}),
 ach(62433,{collectible=false}),
@@ -65485,7 +65491,7 @@ r(1246894,{crs={231636,231865,237415,241546,246404,247676,248015,248605},descrip
 r(1230472,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256720,requireSkill=755,skillID=2914}),
 r(1230471,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256708,requireSkill=755,skillID=2914})}}),
 inst(1322,{awp=120100,coords={
-[2509]={{47.2,68.5}}},InRetailSeason={101,104,23},maps={2588,2589,2590},g={
+[2509]={{47.2,68.5}}},maps={2588,2589,2590},g={
 d(101,{difficulties={1,2,23},g={
 h(-12,{
 ach(63679)}),
@@ -65527,7 +65533,7 @@ d(23,{
 e(2880,{npcID=259447,g={
 ach(62284)}})})}}),
 inst(1311,{awp=120001,coords={
-[2437]={{30,84.5}}},InRetailSeason={101,104,23},maps={2513,2514,2564},g={
+[2437]={{30,84.5}}},maps={2513,2514,2564},g={
 d(101,{difficulties={1,2,23},g={
 e(2776,{npcID=241812,g={
 s(298144,251144,{b=1,f=7,loc=45,lvl=78}),
@@ -65658,7 +65664,7 @@ ach(61645,{
 crit(110546,{achID=61568,id=3})}),
 gach(61616)}})}})}}),
 inst(1304,{awp=120001,coords={
-[2393]={{56.8,61.1}}},InRetailSeason={101,104,23},maps={2433,2434,2435},g={
+[2393]={{56.8,61.1}}},maps={2433,2434,2435},g={
 h(-45,{
 q(90822,{coords={
 [2393]={{32.2,26}}},lvl=80,qgs={245297},sourceQuests={90821}})}),
@@ -65783,7 +65789,7 @@ ach(61647,{
 crit(110547,{achID=61568,id=5})}),
 gach(61618)}})}})}}),
 inst(1309,{awp=120001,coords={
-[2413]={{27.2,78}}},InRetailSeason={101,104,23},maps={2500},g={
+[2413]={{27.2,78}}},maps={2500},g={
 d(101,{difficulties={1,2,23},g={
 h(-55,{
 n(251885,{description="Left of the path towards the last boss, target and use Hexed Potatoad Mucus to receive a toy.",questID=92518,g={
@@ -65833,7 +65839,7 @@ crit(110548,{achID=61568,id=6})}),
 gach(61619),
 toy(268728)}})}})}}),
 inst(1313,{awp=120001,coords={
-[2405]={{53.7,34.8}}},InRetailSeason={101,104,23},maps={2572,2573,2574},g={
+[2405]={{53.7,34.8}}},maps={2572,2573,2574},g={
 d(101,{difficulties={1,2,23},g={
 e(2791,{npcID=238887,g={
 s(298217,251221,{b=1,f=7,loc=44,lvl=78}),

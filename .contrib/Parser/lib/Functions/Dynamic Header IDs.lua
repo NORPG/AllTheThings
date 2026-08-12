@@ -662,6 +662,7 @@ HeaderAssignments = {
 	["Valdrakken Accord"] = -196,
 	["Vendors"] = -58,
 	["Vengeful Gladiator"] = -249,
+	["Venomous Gladiator: Midnight Season 2"] = -764,
 	["Venthyr"] = -183,
 	["Verdant Gladiator: Dragonflight Season 3"] = -286,
 	["Vicious Gladiator"] = -256,
@@ -743,4 +744,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -764
+NextHeaderID = -765

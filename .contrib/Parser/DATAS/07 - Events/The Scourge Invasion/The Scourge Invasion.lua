@@ -141,7 +141,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 
+				["sourceQuest"] =
 					-- #if SEASON_OF_DISCOVERY
 					88744,	-- Under the Shadow
 					-- #else
@@ -202,7 +202,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 
+				["sourceQuest"] =
 					-- #if SEASON_OF_DISCOVERY
 					88744,	-- Under the Shadow
 					-- #else
@@ -247,7 +247,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 
+				["sourceQuest"] =
 					-- #if SEASON_OF_DISCOVERY
 					88744,	-- Under the Shadow
 					-- #else
@@ -281,7 +281,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 
+				["sourceQuest"] =
 					-- #if SEASON_OF_DISCOVERY
 					88744,	-- Under the Shadow
 					-- #else
@@ -599,7 +599,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 
+				["sourceQuest"] =
 					-- #if SEASON_OF_DISCOVERY
 					88744,	-- Under the Shadow
 					-- #else
@@ -632,7 +632,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 
+				["sourceQuest"] =
 					-- #if SEASON_OF_DISCOVERY
 					88744,	-- Under the Shadow
 					-- #else
@@ -743,7 +743,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 
+				["sourceQuest"] =
 					-- #if SEASON_OF_DISCOVERY
 					88744,	-- Under the Shadow
 					-- #else
@@ -854,7 +854,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				i(238353),	-- Mantle of Lady Falther'ess
 				i(238354),	-- Lady Falther'ess' Finger
 				-- #else
-				i(23177),	-- Lady Falther'ess' Finger		
+				i(23177),	-- Lady Falther'ess' Finger
 				i(23178),	-- Mantle of Lady Falther'ess
 				-- #endif
 			},
@@ -1115,7 +1115,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236716)),	-- Bracers of Undead Cleansing
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236725)),	-- Wristwraps of Undead Slaying
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236710)),	-- Wristguards of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236712)),	-- Bracers of Undead Slaying				
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236712)),	-- Bracers of Undead Slaying
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236740)),	-- Wristguards of Undead Purification
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236737)),	-- Wristguards of Undead Warding
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236743)),	-- Bracers of Undead Purification

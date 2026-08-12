@@ -394,9 +394,9 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
 
 				-- Unsorted
-				q(95584),	-- "Aromatic Bottle" hand-in
-				q(95593),	-- "Torga Statue" hand-in
-				q(95590),	-- "Amani Construction Hammer" hand-in
+				q(95584, {["timeline"] = { ADDED_12_1_0 }}),	-- "Aromatic Bottle" hand-in
+				q(95593, {["timeline"] = { ADDED_12_1_0 }}),	-- "Torga Statue" hand-in
+				q(95590, {["timeline"] = { ADDED_12_1_0 }}),	-- "Amani Construction Hammer" hand-in
 			}),
 		}),
 	})),

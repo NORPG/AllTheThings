@@ -147,12 +147,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 			ach(61248, {	-- Midnight Season 1: Resilient Keystone 25
 				["_noautomation"] = true,
+				["collectible"] = false,
 			}),
 			ach(61249, {	-- Midnight Season 1: Resilient Keystone 26
 				["_noautomation"] = true,
+				["collectible"] = false,
 			}),
 			ach(61250, {	-- Midnight Season 1: Resilient Keystone 27
 				["_noautomation"] = true,
+				["collectible"] = false,
 			}),
 			ach(61251, {	-- Midnight Season 1: Resilient Keystone 28
 				["_noautomation"] = true,
@@ -167,7 +170,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				["collectible"] = false,
 			}),
 		})),
-		header(HEADERS.Achievement, SEASON_VENOMOUSPVE, bubbleDownSelf({
+		header(HEADERS.Achievement, SEASON_VENOMOUS_PVE, bubbleDownSelf({
 			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}, {
 			ach(62441),	-- Keystone Hero: Altar of Fangs
