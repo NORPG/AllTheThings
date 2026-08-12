@@ -165,7 +165,7 @@ root(ROOTS.Zones, {
 					visit_exploration(3611,{coord={62.9,65.0,NAGRAND}}),	-- Clan Watch
 					exploration(3636),	-- Elemental Plateau
 					exploration(3624),	-- Forge Camp: Fear
-					exploration(3625),	-- Forge Camp: Hate
+					exploration(3625,{coord={24.7,38.4,NAGRAND}}),	-- Forge Camp: Hate
 					exploration(3613),	-- Garadar
 					exploration(3628),	-- Halaa
 					exploration(3666),	-- Halaani Basin

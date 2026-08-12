@@ -118,7 +118,7 @@ root(ROOTS.Zones, {
 					visit_exploration(5866,{coord={31.2,17.2,THE_JADE_FOREST}}),	-- Ascent of Swirling Winds
 					visit_exploration(5863,{coord={43.2,23.6,THE_JADE_FOREST}}),	-- Banquet Grounds
 					visit_exploration(5857,{coord={40.0,75.3,THE_JADE_FOREST}}),	-- Camp Gormal
-					exploration(5905),	-- Camp Nooka Nooka
+					exploration(5905,{coord={25.6,38.2,THE_JADE_FOREST}}),	-- Camp Nooka Nooka
 					visit_exploration(5901,{coord={27.3,32.0,THE_JADE_FOREST}}),	-- Cave of Words
 					visit_exploration(6867,{coord={30.9,37.0,THE_JADE_FOREST}}),	-- Circle of Blood
 					visit_exploration(5910,{coord={30.7,33.9,THE_JADE_FOREST}}),	-- Circle of Bone
@@ -144,7 +144,7 @@ root(ROOTS.Zones, {
 					visit_exploration(5953,{coord={26.7,56.0,THE_JADE_FOREST}}),	-- Murky Bank
 					exploration(5854),	-- Nectarbreeze Orchard
 					exploration(5878),	-- Orchid Hollow
-					exploration(5899),	-- Path of Enlightenment
+					exploration(5899,{coord={31.7,36.4,THE_JADE_FOREST}}),	-- Path of Enlightenment
 					exploration(5851),	-- Paw'don Glade
 					exploration(5934),	-- Pearl Lake
 					visit_exploration(5935,{coord={57.7,81.7,THE_JADE_FOREST}}),	-- Pearlfin Village

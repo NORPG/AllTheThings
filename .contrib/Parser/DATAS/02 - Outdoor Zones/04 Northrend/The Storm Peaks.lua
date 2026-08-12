@@ -254,9 +254,9 @@ root(ROOTS.Zones, {
 					visit_exploration(4487,{coord={62.4,41.4,THE_STORM_PEAKS}}),	-- Frostfloe Deep
 					visit_exploration(4472,{coord={26.7,66.7,THE_STORM_PEAKS}}),	-- Frostgrip's Hollow
 					exploration(4428),	-- Frosthold
-					exploration(4421),	-- Garm
-					exploration(4460),	-- Garm's Bane
-					exploration(4461),	-- Garm's Rise
+					exploration(4421,{coord={48.0,81.5,THE_STORM_PEAKS}}),	-- Garm
+					exploration(4460,{coord={44.4,81.0,THE_STORM_PEAKS}}),	-- Garm's Bane
+					exploration(4461,{coord={49.0,82.9,THE_STORM_PEAKS}}),	-- Garm's Rise
 					visit_exploration(4592,{coord={47.3,55.0,THE_STORM_PEAKS}}),	-- Gimorak's Den
 					exploration(4429),	-- Grom'arsh Crash-Site
 					visit_exploration(4542,{coord={57.2,44.9,THE_STORM_PEAKS}}),	-- Hall of the Shaper

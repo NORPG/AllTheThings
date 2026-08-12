@@ -114,7 +114,7 @@ root(ROOTS.Zones, {
 					visit_exploration(4023,{coord={47.2,33.9,BOREAN_TUNDRA}}),	-- Amber Ledge
 					visit_exploration(4105,{coord={42.3,36.4,BOREAN_TUNDRA}}),	-- Beryl Point
 					visit_exploration(4134,{coord={47.2,12.7,BOREAN_TUNDRA}}),	-- Blistering Pool
-					exploration(4021),	-- Bloodspore Plains
+					exploration(4021,{coord={53.0,51.6,BOREAN_TUNDRA}}),	-- Bloodspore Plains
 					exploration(4122),	-- Bor'gorok Outpost
 					exploration(4133),	-- Charred Rise
 					exploration(4027),	-- Coast of Echoes
@@ -136,7 +136,7 @@ root(ROOTS.Zones, {
 					visit_exploration(4150,{coord={53.6,24.0,BOREAN_TUNDRA}}),	-- Kaw's Roost
 					exploration(4109),	-- Lake Kum'uya
 					exploration(4123),	-- Magmoth
-					exploration(4020),	-- Mightstone Quarry
+					exploration(4020,{coord={45.4,56.3,BOREAN_TUNDRA}}),	-- Mightstone Quarry
 					visit_exploration(4103,{coord={40.1,76.4,BOREAN_TUNDRA}}),	-- Nasam's Talon
 					visit_exploration(4128,{coord={86.9,31.0,BOREAN_TUNDRA}}),	-- Naxxanar
 					visit_exploration(4040,{coord={67.0,51.6,BOREAN_TUNDRA}}),	-- Njord's Breath Bay
@@ -175,7 +175,7 @@ root(ROOTS.Zones, {
 					exploration(4032),	-- Valiance Keep
 					exploration(4144),	-- Warsong Farms / Warsong Farms Outpost
 					exploration(4142),	-- Warsong Granary
-					exploration(4129),	-- Warsong Hold
+					exploration(4129,{coord={42.7,55.7,BOREAN_TUNDRA}}),	-- Warsong Hold
 					visit_exploration(4107,{coord={27.2,54.2,BOREAN_TUNDRA}}),	-- Warsong Jetty
 					visit_exploration(4145,{coord={60.2,20.1,BOREAN_TUNDRA}}),	-- West Point Station
 					visit_exploration(4097,{coord={40.0,19.9,BOREAN_TUNDRA}}),	-- Winterfin Caverns

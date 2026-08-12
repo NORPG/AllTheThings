@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			exploration(9500),	-- Bleak Hills Mine
 			exploration(9482),	-- Brackish Coast
 			exploration(9026),	-- Carver's Harbor
-			exploration(9614),	-- Chandlery Wharf
+			exploration(9614,{coord={28.2,14.0,DRUSTVAR}}),	-- Chandlery Wharf
 			exploration(9509),	-- Corlain
 			exploration(9510),	-- Corlain Armory
 			visit_exploration(9547,{coord={32.9,22.6,DRUSTVAR}}),	-- Corlain Aviary
@@ -63,15 +63,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			exploration(9170),	-- Timbered Strand
 			visit_exploration(9223,{coord={63.3,24.3,DRUSTVAR}}),	-- Trader's Camp
 			visit_exploration(9965,{coord={46.8,44.8,DRUSTVAR}}),	-- Ulfar's Den
-			exploration(9560),	-- Upper Corlain
+			exploration(9560,{coord={31.0,20.6,DRUSTVAR}}),	-- Upper Corlain
 			visit_exploration(9701,{coord={41.6,81.5,DRUSTVAR}}),	-- Vadekius's Rest
 			exploration(9131),	-- Watcher's Wood
 			visit_exploration(9432,{coord={30.4,28.7,DRUSTVAR}}),	-- Watchman's Rise
 			visit_exploration(9677,{coord={31.1,30.0,DRUSTVAR}}),	-- Watchman's Tower
-			exploration(9561),	-- Waycrest Manor
+			exploration(9561,{coord={33.7,12.8,DRUSTVAR}}),	-- Waycrest Manor
 			exploration(9176),	-- Wayward Thicket
 			exploration(9774),	-- Western Watch
-			exploration(9587),	-- Whitegrove Chapel
+			exploration(9587,{coord={24.0,15.7,DRUSTVAR}}),	-- Whitegrove Chapel
 		}),
 	}),
 })));

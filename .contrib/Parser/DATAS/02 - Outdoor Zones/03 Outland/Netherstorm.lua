@@ -55,8 +55,8 @@ root(ROOTS.Zones, {
 					exploration(3724),	-- Cosmowrench
 					exploration(3874),	-- Eco-Dome Farfield
 					exploration(3877),	-- Eco-Dome Midrealm
-					exploration(3875),	-- Eco-Dome Skyperch
-					exploration(3876),	-- Eco-Dome Sutheron
+					exploration(3875,{coord={39.1,36.9,NETHERSTORM}}),	-- Eco-Dome Skyperch
+					exploration(3876,{coord={45.6,29.3,NETHERSTORM}}),	-- Eco-Dome Sutheron
 					visit_exploration(3878,{coord={54.4,40.0,NETHERSTORM}}),	-- Ethereum Staging Grounds
 					exploration(3740),	-- Forge Base: Gehenna
 					exploration(3739),	-- Forge Base: Oblivion
@@ -81,7 +81,7 @@ root(ROOTS.Zones, {
 					visit_exploration(3729,{coord={28.8,77.8,NETHERSTORM}}),	-- The Heap
 					visit_exploration(3873,{coord={37.4,63.6,NETHERSTORM}}),	-- The Proving Grounds
 					exploration(3727),	-- The Scrap Field
-					exploration(3738),	-- The Stormspire
+					exploration(3738,{coord={44.5,35.6,NETHERSTORM}}),	-- The Stormspire
 					exploration(3731),	-- The Tempest Rift
 					visit_exploration(3728,{coord={56.0,64.1,NETHERSTORM}}),	-- The Vortex Fields
 					visit_exploration(3934,{coord={60.7,88.2,NETHERSTORM}}),	-- Town Square

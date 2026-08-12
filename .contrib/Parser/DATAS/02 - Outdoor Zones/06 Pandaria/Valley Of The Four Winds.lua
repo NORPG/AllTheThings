@@ -66,7 +66,7 @@ root(ROOTS.Zones, {
 					exploration(6387),	-- Rumbling Terrace
 					visit_exploration(5949,{coord={75.2,36.2,VALLEY_OF_THE_FOUR_WINDS}}),	-- Shang's Stead
 					exploration(5986),	-- Silken Fields
-					exploration(5970),	-- Singing Marshes
+					exploration(5970,{coord={25.6,44.0,VALLEY_OF_THE_FOUR_WINDS}}),	-- Singing Marshes
 					exploration(6064),	-- Skyrange
 					exploration(5968),	-- Stoneplow
 					exploration(5969),	-- Stoneplow Fields
