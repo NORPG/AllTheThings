@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
-	n(SEASON_VENOMOUS, {
+	n(SEASON_VENOMOUSPVP, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
 			ach(62497, {	-- Venomous Weapons of Conquest
 				i(270560),	-- Venomous Gladiator's Weapon Token

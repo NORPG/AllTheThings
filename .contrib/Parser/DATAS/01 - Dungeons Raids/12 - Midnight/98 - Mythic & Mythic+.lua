@@ -167,7 +167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				["collectible"] = false,
 			}),
 		})),
-		header(HEADERS.Achievement, SEASON_VENOMOUS, bubbleDownSelf({
+		header(HEADERS.Achievement, SEASON_VENOMOUSPVE, bubbleDownSelf({
 			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}, {
 			ach(62441),	-- Keystone Hero: Altar of Fangs
@@ -199,59 +199,45 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			-- Check the comment on previous season
 			ach(62417, {	-- Midnight Season 2: Resilient Keystone 12
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62418, {	-- Midnight Season 2: Resilient Keystone 13
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62419, {	-- Midnight Season 2: Resilient Keystone 14
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62420, {	-- Midnight Season 2: Resilient Keystone 15
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62421, {	-- Midnight Season 2: Resilient Keystone 16
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62422, {	-- Midnight Season 2: Resilient Keystone 17
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62423, {	-- Midnight Season 2: Resilient Keystone 18
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62424, {	-- Midnight Season 2: Resilient Keystone 19
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62425, {	-- Midnight Season 2: Resilient Keystone 20
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62426, {	-- Midnight Season 2: Resilient Keystone 21
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62427, {	-- Midnight Season 2: Resilient Keystone 22
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62428, {	-- Midnight Season 2: Resilient Keystone 23
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62429, {	-- Midnight Season 2: Resilient Keystone 24
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62430, {	-- Midnight Season 2: Resilient Keystone 25
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(62431, {	-- Midnight Season 2: Resilient Keystone 26
 				["_noautomation"] = true,
