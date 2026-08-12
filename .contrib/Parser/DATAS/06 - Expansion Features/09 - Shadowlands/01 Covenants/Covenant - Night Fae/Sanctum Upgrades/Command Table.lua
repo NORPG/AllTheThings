@@ -115,7 +115,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 							}),
 							n(REWARDS, {
-								currency(1828),	-- Soul Ash
+								currency(1828, {["customCollect"] = IGNORED_VALUE}),	-- Soul Ash
 								i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
 									["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 								}),

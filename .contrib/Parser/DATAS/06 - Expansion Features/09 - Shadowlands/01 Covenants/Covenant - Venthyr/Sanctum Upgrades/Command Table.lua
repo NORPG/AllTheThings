@@ -108,7 +108,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 							}),
 							n(REWARDS, {
-								currency(1828),	-- Soul Ash
+								currency(1828, {["customCollect"] = IGNORED_VALUE}),	-- Soul Ash
 							}),
 						},
 					}),
