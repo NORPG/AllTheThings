@@ -143,8 +143,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			ach(62173, {	-- Prey: Ethereal Assassins (Nightmare)
 				i(265683),	-- Preyseeker's Ethereal Effigy (DECOR!)
 			}),
-			ach(61389),	-- Prey: Hard Mode I
-			ach(61388),	-- Prey: Hard Mode II
+			achpart(61389, 42702),	-- Prey: Hard Mode I
+			achpart(61388, 42702),	-- Prey: Hard Mode II
 			ach(42702),	-- Prey: Hard Mode III
 			ach(62153, {	-- Prey: Insane Inventors (Hard)
 				i(265697),	-- Preyseeker's Tinker Bust (DECOR!)
@@ -158,8 +158,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			ach(62167, {	-- Prey: Mad Magisters (Nightmare)
 				i(265681),	-- Preyseeker's Magister Effigy (DECOR!)
 			}),
-			ach(61392),	-- Prey: Nightmare Mode I
-			ach(61391),	-- Prey: Nightmare Mode II
+			achpart(61392, 42703),	-- Prey: Nightmare Mode I
+			achpart(61391, 42703),	-- Prey: Nightmare Mode II
 			ach(42703, {	-- Prey: Nightmare Mode III
 				i(257193),	-- Preyseeker's Nightmare (MOUNT!)
 			}),
@@ -169,8 +169,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			ach(62182, {	-- Prey: No Rest for the Wretched (Nightmare)
 				i(265691),	-- Preyseeker's Wretched Effigy (DECOR!)
 			}),
-			ach(61387),	-- Prey: Normal Mode I
-			ach(61386),	-- Prey: Normal Mode II
+			achpart(61387, 42701),	-- Prey: Normal Mode I
+			achpart(61386, 42701),	-- Prey: Normal Mode II
 			ach(42701),	-- Prey: Normal Mode III
 			ach(62161, {	-- Prey: Outsmarting the Schemers (Hard)
 				i(265703),	-- Preyseeker's Consul Bust (DECOR!)

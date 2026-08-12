@@ -38,10 +38,16 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.UpgradeMapping = {
-	[DIFFICULTY.RAID.LFR] = 0,
+	-- #IF AFTER 12.2
+	[DIFFICULTY.RAID.WORLD] = 0,
 	[DIFFICULTY.RAID.NORMAL] = 0,
 	[DIFFICULTY.RAID.HEROIC] = 0,
-};
+	-- #ELSE
+	[DIFFICULTY.RAID.WORLD] = 3,
+	[DIFFICULTY.RAID.NORMAL] = 5,
+	[DIFFICULTY.RAID.HEROIC] = 6,
+	-- #ENDIF
+}
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1317, {	-- The Tidebound Grotto
