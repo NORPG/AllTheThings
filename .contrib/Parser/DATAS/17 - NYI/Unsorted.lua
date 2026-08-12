@@ -2463,9 +2463,7 @@ root(ROOTS.Unsorted, {
 				i(163086),	-- Crimsonwood Dentures
 				i(163088),	-- Perfectly Ordinary Broomstick
 				i(163090),	-- Cured Billow-Weed
-				i(163093),	-- Witch's Ritual Chalk
 				i(163095),	-- Golden Troll Berserker \\ Finely Crafted Tin Soldier
-				i(163097),	-- Carved Rabbit Effigy
 				i(163111),	-- Blackstone Cat Statue
 				i(163112),	-- Imp's Tongue Charm
 				i(163113),	-- Corroded Copper Kettle \\ Copper Tea Kettle
@@ -2655,8 +2653,6 @@ root(ROOTS.Unsorted, {
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
 				i(158727),	-- Decayed Equipment
-				i(161209),	-- Coven Dream Catcher
-				i(161210),	-- Homemade Child's Doll
 				i(161212),	-- Wavespeaker's Star Chart
 				i(158797),	-- Jar of Truffles
 				i(163847),	-- Silver Monkey Torso

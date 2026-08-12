@@ -5,13 +5,16 @@
 root(ROOTS.Zones, {
 	m(KUL_TIRAS, {
 		n(TREASURES, {
-			o_repeated(sharedData({	-- Small Treasure Chest
+			o_repeated(bubbleDownFiltered({	-- Small Treasure Chest
 				["isDaily"] = true,
-			},{
+			},FILTERFUNC_questID,{
 				-- Items
 				i(161207),	-- Admiral's Black Rum
+				i(163097),	-- Carved Rabbit Effigy
+				i(161209),	-- Coven Dream Catcher
 				i(163092),	-- Embroidered Falconry Hood
 				i(163091),	-- Jeweled Spyglass
+				i(161210),	-- Homemade Child's Doll
 				i(163096),	-- Lead-Glass Hand Mirror
 				i(161201),	-- Mermaid's Looking Glass
 				i(161204),	-- Oily Glass Eyeball
@@ -20,6 +23,7 @@ root(ROOTS.Zones, {
 				i(161203),	-- Shanty Sheet Music
 				i(161211),	-- Ship-in-a-Bottle
 				i(161199),	-- Silver-Plated Tankard
+				i(163093),	-- Witch's Ritual Chalk
 				-- Objects
 				o(291225, {	-- Small Treasure Chest
 					["questID"] = 51907,
@@ -32,6 +36,7 @@ root(ROOTS.Zones, {
 					["questID"] = 51911,
 					["coords"] = {
 						{ 25.5, 40.5, DRUSTVAR },
+						{ 25.6, 36.6, DRUSTVAR },
 					},
 				}),
 				o(291217, {	-- Small Treasure Chest
@@ -45,7 +50,29 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(291224, {	-- Small Treasure Chest
-					["coord"] = { 31.0, 17.1, DRUSTVAR },
+					["questID"] = 51902,
+					["coords"] = {
+						{ 31.0, 17.1, DRUSTVAR },
+						{ 33.3, 16.7, DRUSTVAR },
+					},
+				}),
+				o(291228, {	-- Small Treasure Chest
+					["questID"] = 51912,
+					["coords"] = {
+						{ 18.5, 54.3, DRUSTVAR },
+					},
+				}),
+				o(291229, {	-- Small Treasure Chest
+					["questID"] = 51913,
+					["coords"] = {
+						{ 32.0, 57.6, DRUSTVAR },
+					},
+				}),
+				o(291230, {	-- Small Treasure Chest
+					["questID"] = 51914,
+					["coords"] = {
+						{ 38.1, 63.5, DRUSTVAR },
+					},
 				}),
 				o(291204, {	-- Small Treasure Chest
 					["coord"] = { 55.3, 27.1, DRUSTVAR },

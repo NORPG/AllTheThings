@@ -136,11 +136,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(51885),	-- Drustvar repeatable random chest
 				q(51896),	-- Drustvar repeatable random chest
 				q(51899),	-- Drustvar repeatable random chest
-				q(51902),	-- Drustvar repeatable random chest
 				q(51910),	-- Drustvar repeatable random chest
-				q(51912),	-- Drustvar repeatable random chest
-				q(51913),	-- Drustvar repeatable random chest
-				q(51914),	-- Drustvar repeatable random chest
 			}),
 		}),
 	}),
