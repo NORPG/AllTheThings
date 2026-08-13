@@ -1073,10 +1073,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	prof(FISHING, {
 		container(278329, {	-- Thalassian Recipe in a Bottle
 			["timeline"] = { ADDED_12_1_0 },
-			["sym"] = {{"select","itemID",
+			--["sym"] = {{"select","itemID",
 				-- Available from the Bottle but has another Source
 				-- TODO
-			}},
+			--}},
 			["groups"] = {
 				-- Only known source is the Bottle
 				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
