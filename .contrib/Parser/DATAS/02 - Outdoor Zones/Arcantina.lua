@@ -83,6 +83,21 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					i(253544),	-- Weathered History of the Warchiefs (DECOR!)
 				},
 			}),
+			q(95779, {	-- Moments in a Mug
+				["qg"] = 259343,	-- Chen Stormstout
+				["coord"] = { 43.2, 61.5, ARCANTINA },
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = {
+					o_repeated({
+						i(275038),	-- Stormstout Ingredients (QI!)
+						o(667558),	-- Ingredients
+						o(654975),	-- Ingredients
+						o(667556),	-- Grain
+					}),
+					--
+					i(278694),	-- Stormstout Hanging Lantern (DECOR!)
+				},
+			}),
 			q(92320, {	-- Still Behind Enemy Portals
 				["provider"] = { "n", 250401 },	-- Marius Felbane
 				["coord"] = { 59.0, 78.0, ARCANTINA },
@@ -174,7 +189,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			o(572030, {	-- Ebon Banner
 				["sourceQuest"] = 92321,	-- A Frostbitten Tally
 				["description"] = "On the left side of Lady Deathwhisper's room.",
-				["maps"] = { 186 },
+				["maps"] = { 186 },	-- Icecrown Citadel
 				["groups"] = { i(250873) },	-- Ebon Banner
 			}),
 			o(572033, {	-- Evergreen Vine
@@ -203,6 +218,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["description"] = "Located to the left of the path towards Omar the Unscarred.",
 				["maps"] = { HELLFIRE_CITADEL_RAMPARTS },
 				["groups"] = { i(250872) },	-- Scarred Spear
+			}),
+			o(654977, {	-- Stormstout Brewery Lantern
+				["sourceQuest"] = 95779,	-- Moments in a Mug
+				["maps"] = { 441 },	-- Stormstout Brewery, Stormstout Brewhall
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = { i(275047) },	-- Stormstout Brewery Lantern
 			}),
 		}),
 		n(TREASURES, {	-- Highly Decorated placement Objects
@@ -250,6 +271,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["questID"] = 92375,
 				["cost"] = { { "i", 250872, 1 } },	-- Scarred Spear
 				["coord"] = { 67.0, 52.8, ARCANTINA },
+			}),
+			o(654980, {	-- Stormstout Brewery Lantern
+				["questID"] = 95782,
+				["cost"] = { { "i", 275047, 1 } },	-- Stormstout Brewery Lantern
+				["coord"] = { 63.6, 45.0, ARCANTINA },
+				["timeline"] = { ADDED_12_1_0 },
 			}),
 			o(572454, {	-- Weathered Tome
 				["questID"] = 92381,
@@ -437,6 +464,10 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					}),
 					i(253542, {	-- Scarred Orcish Spear (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
+					i(278694, {	-- Stormstout Hanging Lantern (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+						["timeline"] = { ADDED_12_1_0 },
 					}),
 					i(253544, {	-- Weathered History of the Warchiefs (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },

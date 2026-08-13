@@ -273,8 +273,6 @@ root(ROOTS.Unsorted, {
 			i(274991),	-- Seaside Fire Pit
 			i(275013),	-- Tokka's Multi-Ward
 			i(275030),	-- Slugg's Favorite Fishing Rod
-			i(275038),	-- Stormstout Ingredients
-			i(275047),	-- Stormstout Brewery Lantern
 			i(275048),	-- Decrepit Key
 			i(275053),	-- Kobold Candle Collection
 			i(275054),	-- Wooden Toy Sword
@@ -613,7 +611,6 @@ root(ROOTS.Unsorted, {
 			i(278652),	-- Ensemble: Elite Venomous Gladiator's Warlock Armor
 			i(278653),	-- Ensemble: Elite Venomous Gladiator's Warrior Armor
 			i(278654),	-- Arsenal: Elite Venomous Gladiator's Weapons
-			i(278694),	-- Stormstout Hanging Lantern
 			i(278776),	-- Brown Mogu Mask
 			i(278777),	-- Blue Mogu Mask
 			i(278778),	-- Green Mogu Mask
