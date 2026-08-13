@@ -123273,7 +123273,7 @@ n(176066,{coords={
 [1670]={{46.6,77.2}}},sym={{"select","npcID",156822},{"isnt","repeatable"},{"pop"}}}),
 n(156690,{coords={
 [1670]={{47,23.6}}},g={
-s(112899,180136,{b=1,f=57,requireSkill=356,spellID=310674})}}),
+s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
 n(176197,{awp=90105,coords={
 [1670]={{51,43.4}}},g={
 i(188226,{b=1}),
@@ -125854,7 +125854,7 @@ r(331007,{b=1,itemID=183097,minReputation={2407,42000},requireSkill=202,skillID=
 s(111637,178991,{b=1,f=9,minReputation={2407,42000}})}}),
 n(175574,{coords={
 [1533]={{49.6,63.2}}},g={
-s(112899,180136,{b=1,f=57,requireSkill=356,spellID=310674})}}),
+s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
 n(171526,{coords={
 [1533]={{52.6,47.4}}},g={
 i(180788,{b=1,f=55,spellID=11009})}}),
@@ -169763,8 +169763,9 @@ fp(3168,{coords={
 h(-45,{
 ah(62297,{type="a",g={
 ah(62297.02,{type="crit",g={
+q(98218,{description="Pops-up on first log-in. Can be accepted from Adventure Guide.",isBreadcrumb=1,nextQuests={92916}}),
 q(92916,{coords={
-[2437]={{43.7,68.3}}},lvl=83,qgs={263331},sourceQuests={93012}}),
+[2437]={{43.7,68.3}}},lvl=83,qgs={263331},sourceQuests={98218}}),
 q(92917,{coords={
 [2437]={{37,23.2}}},lvl=83,qgs={253476},sourceQuests={92916}}),
 q(92919,{coords={
@@ -173890,12 +173891,11 @@ i(264274,{awp=120001,b=1,f=55,lvl=80,rwp=120001,sym={{"select","mapID",2537},{"p
 i(260193,{awp=120001,b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2})})}}),
 m(2541,{awp=120001,icon=_.asset("Arcantina"),g={
 h(-12,{
-ach(61083,{
-crit(108607,{achID=61083,id=1,questID=95783})}),
+ach(61083),
 ach(63619,{awp=120100,g={
+crit(117457,{achID=63619,id=1,questID=95779}),
 crit(108598,{achID=63619,id=2,questID=95780})}}),
-ach(61082,{
-crit(108598,{achID=61082,id=2,questID=95780})}),
+ach(61082),
 ach(61081,{cost={{"i",251039,26}},description="NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",g={
 crit(108571,{achID=61081,id=1,races_disp={1}}),
 crit(108572,{achID=61081,id=2,races_disp={3}}),
@@ -173924,20 +173924,21 @@ crit(108594,{achID=61081,id=24,races_disp={52,70}}),
 crit(108595,{achID=61081,id=25,races_disp={84,85}}),
 crit(108596,{achID=61081,id=26,races_disp={86,91}})}}),
 ach(63620,{awp=120100,g={
-crit(108607,{achID=63620,id=2,questID=95783})}})}),
+crit(108607,{achID=63620,id=2,questID=95783}),
+crit(117458,{achID=63620,id=1,questID=95782})}})}),
 h(-45,{
 q(92319,{coords={
 [2541]={{46.3,56.7}}},lvl=83,qgs={250415},g={
 o(579193,{
 i(254283)}),
 de(9439,{itemID=253542,spellID=1256610}),
-crit(108597,{achID=61082,id=1}),
-crit(108597,{achID=63619,awp=120100,id=1})}}),
+crit(108597,{achID=61082,id=1})}}),
 q(92321,{coords={
 [2541]={{37.7,53.6},{39,55.1},{43.1,64.3}}},lvl=83,qgs={250402},g={
 o(614636,{
 i(260227)}),
-de(9475,{itemID=253598,spellID=1256817})}}),
+de(9475,{itemID=253598,spellID=1256817}),
+crit(117460,{achID=61082,id=2})}}),
 q(92327,{coords={
 [2541]={{48.5,71.4},{52.1,53.8}}},lvl=83,qgs={250413},g={
 o(572039,{coords={
@@ -174026,8 +174027,7 @@ o(572457,{coords={
 crit(108616,{achID=61083,id=10})}}),
 o(572448,{coords={
 [2541]={{39.8,49.7}}},cost={{"i",250873,1}},questID=92376,g={
-crit(108608,{achID=61083,id=2}),
-crit(108608,{achID=63620,awp=120100,id=1})}}),
+crit(108608,{achID=61083,id=2})}}),
 o(572451,{coords={
 [2541]={{37.2,29.5}}},cost={{"i",250876,1}},questID=92379,g={
 crit(108611,{achID=61083,id=5})}}),
@@ -174041,7 +174041,8 @@ o(572456,{coords={
 [2541]={{45.9,82.4}}},cost={{"i",250880,1}},questID=92383,g={
 crit(108615,{achID=61083,id=9})}}),
 o(572446,{coords={
-[2541]={{67,52.8}}},cost={{"i",250872,1}},questID=92375}),
+[2541]={{67,52.8}}},cost={{"i",250872,1}},questID=92375,g={
+crit(117459,{achID=61083,id=1})}}),
 o(572454,{coords={
 [2541]={{62.1,42.6}}},cost={{"i",250878,1}},questID=92381,g={
 crit(108613,{achID=61083,id=7})}}),
