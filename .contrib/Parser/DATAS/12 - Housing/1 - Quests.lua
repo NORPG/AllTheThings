@@ -210,9 +210,24 @@ root(ROOTS.Housing, {
 			},
 			["isWeekly"] = true,
 			["groups"] = {	-- All quests given by Vaeli offer 'Essence of Lumber' as a reward
-				i(274070),	-- Warbound Pack of Champion Dawncrests
-				i(274069),	-- Warbound Pack of Hero Dawncrests
-				i(274071),	-- Warbound Pack of Veteran Dawncrests
+				i(280734, {	-- Warbound Pack of Champion Mistcrests
+					["timeline"] = { ADDED_12_1_0 },
+				}),
+				i(280732, {	-- Warbound Pack of Hero Mistcrests
+					["timeline"] = { ADDED_12_1_0 },
+				}),
+				i(280737, {	-- Warbound Pack of Veteran Mistcrests
+					["timeline"] = { ADDED_12_1_0 },
+				}),
+				i(274070, {	-- Warbound Pack of Champion Dawncrests
+					["timeline"] = { REMOVED_12_1_0 },
+				}),
+				i(274069, {	-- Warbound Pack of Hero Dawncrests
+					["timeline"] = { REMOVED_12_1_0 },
+				}),
+				i(274071, {	-- Warbound Pack of Veteran Dawncrests
+					["timeline"] = { REMOVED_12_1_0 },
+				}),
 				-- Maybe do this better somehow. Technically this item should be a 'cost' on a symlink group attached to the respective Housing Lumberjack NPCs in both neighborhoods...  then could have proper coords on the NPC and cost indicator
 				i(269010, {	-- Essence of Lumber
 					["description"] = "Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",

@@ -996,9 +996,6 @@ root(ROOTS.Unsorted, {
 			i(280709),	-- Triple Threat Pauldrons
 			i(280713),	-- Big Mon's Buckle
 			i(280718),	-- Unflappable Flapping Cape
-			i(280732),	-- Warbound Pack of Hero Mistcrests
-			i(280734),	-- Warbound Pack of Champion Mistcrests
-			i(280737),	-- Warbound Pack of Veteran Mistcrests
 			i(280752),	-- "Cursed Gaze of Ula'tek" Mural
 			i(280757),	-- Chiseled Amani Tablet
 			i(280762),	-- Roaring Amani Garnet
