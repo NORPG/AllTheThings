@@ -46,6 +46,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
+				i(279525, {	-- Avid Learner's Supply Pack (Season 2)
+					["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+				}),
 			}),
 			n(QUESTS, {	-- Legends Never Die
 				header(HEADERS.AchCriteria, 61574.01, {	-- Wey'nan's Ward

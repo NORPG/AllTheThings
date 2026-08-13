@@ -32,7 +32,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(256631, {	-- Big Mon <Ancient Amani Warband>
 					["coord"] = { 69.8, 63.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 93829,
-					["groups"] = { i(280689) },	-- Big Mon's Big Spear
+					["groups"] = {
+						i(280689),	-- Big Mon's Big Spear
+						i(280713),	-- Big Mon's Buckle
+					},
 				}),
 				n(257906, {	-- Coin-Eye Skully
 					["coord"] = { 58.0, 66.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -74,7 +77,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(265237, {	-- Lockjaw <The Snapper>
 					["coord"] = { 31.7, 56.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 96456,
-					["groups"] = { i(280708) },	-- Venom-Shelled Sash
+					["groups"] = {
+						i(280690),	-- Bow of the Snapper
+						i(280708),	-- Venom-Shelled Sash
+					},
 				}),
 				n(258920, {	-- Nar'zira <The Omnilegent>
 					["coord"] = { 63.2, 62.4, 2642 },	-- Tomb of the Lost Priest
@@ -87,7 +93,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(268049, {	-- Siltmouth <The Unflappable>
 					["coord"] = { 50.2, 69.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 97112,
-					["groups"] = { i(280704) },	-- Siltmouth's Venom Waders
+					["groups"] = {
+						i(280704),	-- Siltmouth's Venom Waders
+						i(280718),	-- Unflappable Flapping Cape
+					},
 				}),
 				n(261109, {	-- Sss'alik <The Rotten Claw>
 					["coord"] = { 58.1, 40.1, MAP.MIDNIGHT.THE_COILED_ISLE },

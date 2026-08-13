@@ -403,7 +403,6 @@ root(ROOTS.Unsorted, {
 			i(276418),	-- [PH] Rainbow Mace- 2h - Green
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
 			i(276421),	-- [PH] Rainbow Mace- 2h - Red
-			i(276536),	-- Corrosive Reticule
 			i(276547),	-- Afflicted Soul
 			i(276548),	-- Tormented Soul
 			i(276550),	-- Wind Serpent - White
@@ -740,7 +739,6 @@ root(ROOTS.Unsorted, {
 			i(279154),	-- Large Leaf
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
 			i(279156),	-- [ph] SpiceWitch Head 02 - Grey
-			i(279157),	-- Frayed Nomad's Cord
 			i(279158),	-- [ph] SpiceWitch Head 02 - Grey (Hair Vis)
 			i(279159),	-- [ph] SpiceWitch Head 02 - Hallow
 			i(279161),	-- [ph] SpiceWitch Head 02 - Hallow (Hair Vis)
@@ -808,7 +806,6 @@ root(ROOTS.Unsorted, {
 			i(279522),	-- Surplus Bag of Party Favors
 			i(279523),	-- Overflowing Abundant Satchel
 			i(279524),	-- Brewer's Purple Kilt
-			i(279525),	-- Avid Learner's Supply Pack
 			i(279526),	-- Victorious Stormarion Pinnacle Cache
 			i(279528),	-- Mag'har Laborer's Tunic
 			i(279529),	-- Brewer's Purple Shoulder Cape
@@ -951,7 +948,6 @@ root(ROOTS.Unsorted, {
 			i(253703),	-- Purified Crude Hammer
 			i(255652),	-- Purified Troll Loop
 			i(255712),	-- Purified Ancient Urn
-			i(256361),	-- Purified Troll Pendant
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
 			i(278701),	-- Purified Goblin Cup
@@ -980,7 +976,6 @@ root(ROOTS.Unsorted, {
 			i(280513),	-- Color-Curious Candle
 			i(280540),	-- Lil' Mon
 			i(280581),	-- Wintry Witchwick's Rider
-			i(280690),	-- Bow of the Snapper
 			i(280691),	-- Dagger of the Slithering Ritual
 			i(280692),	-- Plunderer's Pummeler
 			i(280695),	-- Skully's Skullcleaver
@@ -988,8 +983,6 @@ root(ROOTS.Unsorted, {
 			i(280700),	-- Armbands of the Rotten Claw
 			i(280701),	-- Waistwrap of the Fanged
 			i(280709),	-- Triple Threat Pauldrons
-			i(280713),	-- Big Mon's Buckle
-			i(280718),	-- Unflappable Flapping Cape
 			i(280752),	-- "Cursed Gaze of Ula'tek" Mural
 			i(280757),	-- Chiseled Amani Tablet
 			i(280762),	-- Roaring Amani Garnet
@@ -1011,7 +1004,6 @@ root(ROOTS.Unsorted, {
 			i(279332),	-- Keen Hex Mask
 			i(280846),	-- Beguiling Memories of the Sea
 			i(281569),	-- Quiver of the Drowned Marksman
-			i(281570),	-- Amani Incense Stick
 			i(281571),	-- Focus of Fangs
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans

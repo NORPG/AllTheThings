@@ -1024,6 +1024,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				}),
 				-- #endif
 				filter(MISC, {
+					i(276536, {	-- Corrosive Reticule
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
 					i(275936, {	-- Delve-O-Bot 7001: Midnight Software Update Chip (CI!)
 						["timeline"] = { ADDED_12_1_0 },
 						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },

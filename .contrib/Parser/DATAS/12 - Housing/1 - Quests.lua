@@ -165,6 +165,7 @@ root(ROOTS.Housing, {
 					i(267355),	-- Purified Elven Mirror (DECOR!)
 					i(272129),	-- Purified Tauren Pot (DECOR!)
 					i(256684),	-- Purified Troll Amulet (DECOR!)
+					i(256361),	-- Purified Troll Pendant (DECOR!)
 				},
 			}),
 		},

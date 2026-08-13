@@ -1470,7 +1470,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				-- #endif
 					q(92897, {	-- The Preparations Are Complete
 						["description"] = "You can get this Breadcrumb Quest from your Adventure Journal.",
-						["sourceQuest"] = 90867,	-- From Darkness, Light (Exo Note: This should be correct as the story picks up after the main campaign)
+						--["sourceQuest"] = 90867,	-- From Darkness, Light (Exo Note: This should be correct as the story picks up after the main campaign)
 						["isBreadcrumb"] = true,
 					}),
 					q(92895, {	-- Hagar's Invitation

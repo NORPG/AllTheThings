@@ -195,6 +195,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(644813, {	-- Smoldering Incense
 					["coord"] = { 29.5, 67.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95855,
+					["groups"] = { i(281570) },	-- Amani Incense Stick (COSMETIC!)
 				}),
 				o(644681, {	-- Stinking Vessel (Intact Vase)
 					["coord"] = { 53.1, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },

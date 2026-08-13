@@ -31,6 +31,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
 						q(93931, {	-- An Abundance of Wealth
+							["timeline"] = { REMOVED_12_1_0 },
+							["groups"] = {
+								i(265739),	-- Amani Heartstring Pendant
+								i(265740),	-- Amani Totemstring
+							},
+						}),
+						q(97625, {	-- Glorious Abundance
+							["timeline"] = { ADDED_12_1_0 },
 							["groups"] = {
 								i(265739),	-- Amani Heartstring Pendant
 								i(265740),	-- Amani Totemstring

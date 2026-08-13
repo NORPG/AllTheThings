@@ -167703,7 +167703,8 @@ ach(42278,{description="Currently requires completing all 7 Legends on ONE chara
 h(-29,{
 i(269703,{f=55,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}}),
 i(268487,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2}),
-i(263467,{b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2})}),
+i(263467,{b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2}),
+i(279525,{awp=120100,f=55,rwp=120200,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}})}),
 h(-45,{
 ah(61574.01,{type="crit",g={
 q(88993,{coords={
@@ -170214,6 +170215,7 @@ mnt(1299961,{itemID=276549})}}),
 n(256631,{coords={
 [2512]={{69.8,63.5}}},isDaily=1,questID=93829,g={
 s(311561,280689,{f=29}),
+s(311581,280713,{f=7,loc=45}),
 crit(115286,{achID=63358,id=10})}}),
 n(257906,{coords={
 [2512]={{58,66.5}}},isDaily=1,questID=94619,g={
@@ -170242,6 +170244,7 @@ s(311579,280711,{f=6,loc=43}),
 crit(115784,{achID=63358,id=3})}}),
 n(265237,{coords={
 [2512]={{31.7,56.7}}},isDaily=1,questID=96456,g={
+s(311562,280690,{f=32}),
 s(311576,280708,{f=5,loc=45}),
 crit(115284,{achID=63358,id=4})}}),
 n(258920,{coords={
@@ -170252,6 +170255,7 @@ crit(115283,{achID=63358,id=8})}}),
 n(268049,{coords={
 [2512]={{50.2,69}}},isDaily=1,questID=97112,g={
 s(311573,280704,{f=5,loc=46}),
+s(311583,280718,{f=3}),
 crit(115280,{achID=63358,id=2})}}),
 n(261109,{coords={
 [2512]={{58.1,40.1}}},isDaily=1,questID=95447,g={
@@ -170386,6 +170390,7 @@ s(311942,281567,{f=28}),
 crit(115292,{achID=63359,id=5})}}),
 o(644813,{coords={
 [2512]={{29.5,67.2}}},questID=95855,g={
+s(311945,281570,{f=28}),
 crit(115302,{achID=63359,id=18})}}),
 o(644681,{coords={
 [2512]={{53.1,43.1}}},questID=95841,g={
@@ -172300,7 +172305,11 @@ h(-45,{
 q(92386,{coords={
 [2437]={{45.9,65.9}}},lvl=80,minReputation={2696,5},qgs={240279}}),
 q(93931,{coords={
-[2437]={{45.9,65.9}}},lvl=90,minReputation={2696,9},qgs={240279},g={
+[2437]={{45.9,65.9}}},lvl=90,minReputation={2696,9},qgs={240279},rwp=120100,u=2,g={
+i(265739,{b=1,f=51,lvl=90,minReputation={2696,9},u=2}),
+i(265740,{b=1,f=51,lvl=90,minReputation={2696,9},u=2})}}),
+q(97625,{awp=120100,coords={
+[2437]={{45.9,65.9}}},minReputation={2696,9},qgs={240279},g={
 i(265739,{b=1,f=51,lvl=90,minReputation={2696,9}}),
 i(265740,{b=1,f=51,lvl=90,minReputation={2696,9}})}}),
 q(94813,{coords={
@@ -173019,7 +173028,7 @@ s(303978,265775,{b=1,f=28})}}),
 crit(111865,{achID=61452,id=17})}})}})}}),
 ah(62297,{awp=120100,type="a",g={
 ah(62297.01,{type="crit",g={
-q(92897,{description="You can get this Breadcrumb Quest from your Adventure Journal.",isBreadcrumb=1,nextQuests={92895},sourceQuests={90867}}),
+q(92897,{description="You can get this Breadcrumb Quest from your Adventure Journal.",isBreadcrumb=1,nextQuests={92895}}),
 q(92895,{coords={
 [2393]={{45.4,70.1}}},qgs={253640},sourceQuests={92897}}),
 q(92899,{coords={
