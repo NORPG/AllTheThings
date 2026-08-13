@@ -386,7 +386,6 @@ root(ROOTS.Unsorted, {
 			i(276205),	-- Legitimate Shipment of Swivel Guns
 			i(276206),	-- Leagally Sourced Cannon Shot
 			i(276207),	-- Preyhunter's Masquerade
-			i(276230),	-- Pepe
 			i(276234),	-- Vibrant Venomfang
 			i(276297),	-- Rustbolt Jetpack
 			i(276312),	-- Griftah's Torch of Rotation
