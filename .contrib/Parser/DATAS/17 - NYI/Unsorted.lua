@@ -918,13 +918,11 @@ root(ROOTS.Unsorted, {
 			i(275547),	-- Preyhunter's Lantern
 			i(275548),	-- Preyhunter's Tower Shield
 			i(244347),	-- Purified Troll Urn
-			i(245991),	-- Purified Sin'dorei Candle \\ Purified Sindorei Candle
 			i(248101),	-- Traditional Brewfest Stein
 			i(252042),	-- Purified Troll Pitcher
 			i(253396),	-- Purified Crude Axe
 			i(253703),	-- Purified Crude Hammer
 			i(255652),	-- Purified Troll Loop
-			i(255712),	-- Purified Ancient Urn
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
 			i(278701),	-- Purified Goblin Cup
