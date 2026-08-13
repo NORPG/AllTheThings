@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["crs"] = { 262226 },	-- Cursed Spawn
 				["coords"] = {
 					{ 44.1, 46.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 46.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
 			}),
 			i(270253, {	-- Jaundiced Slitherer (PET!)

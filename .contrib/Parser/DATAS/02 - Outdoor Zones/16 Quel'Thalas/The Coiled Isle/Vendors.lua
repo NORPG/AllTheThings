@@ -45,7 +45,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(281580, {	-- Pungent Atal-Utek Shroom (DECOR!)
-						["sourceQuest"] = 95841,	-- Stinking Vessel
 						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(280218, {	-- Tortollan Scholar Satchel (DECOR!)
@@ -65,6 +64,53 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(280425),	-- Afterlife Ale
 					i(266435, {	-- Ki'clak Snack
 						["cost"] = { { "i", 267085, 10 } },	-- Swirling Ectoplasm
+					}),
+				},
+			}),
+			n(253843, {	-- Navigator Otoola <Watcher of Sea Stars>
+				["coord"] = { 57.2, 48.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["groups"] = {
+					i(274597, {	-- Bulbous Benthos
+						["cost"] = { { "i", 274596, 25 } },	-- 25x Beached Asteroid
+					}),
+					i(275697, {	-- Design: Roaring Amani Garnet (RECIPE!)
+						["cost"] = {
+							{ "i", 274597, 50 },	-- 50x Bulbous Benthos
+							{ "c", VOIDLIGHT_MARL, 750 },
+						},
+					}),
+					i(275314, {	-- Formula: Enchanted Eversong Trout (RECIPE!)
+						["cost"] = {
+							{ "i", 274597, 50 },	-- 50x Bulbous Benthos
+							{ "c", VOIDLIGHT_MARL, 750 },
+						},
+					}),
+					i(274817, {	-- Gold Starfish (TOY!)
+						["cost"] = {
+							{ "i", 274595, 10 },	-- 10x Pristine Polygon
+							{ "c", VOIDLIGHT_MARL, 750 },
+						},
+					}),
+					i(278557, {	-- Otoola's Recognition (TOY!)
+						["cost"] = {
+							{ "i", 274595, 10 },	-- 10x Pristine Polygon
+							{ "c", VOIDLIGHT_MARL, 750 },
+						},
+					}),
+					i(275342, {	-- Pattern: Tortollan Slingsack (RECIPE!)
+						["cost"] = {
+							{ "i", 274597, 50 },	-- 50x Bulbous Benthos
+							{ "c", VOIDLIGHT_MARL, 750 },
+						},
+					}),
+					i(274595, {	-- Pristine Polygon
+						["cost"] = { { "i", 274597, 5 } },	-- 5x Bulbous Benthos
+					}),
+					i(275271, {	-- Recipe: Venom-Spiced Cutlets (RECIPE!)
+						["cost"] = {
+							{ "i", 274596, 250 },	-- 250x Beached Asteroid
+							{ "c", VOIDLIGHT_MARL, 750 },
+						},
 					}),
 				},
 			}),

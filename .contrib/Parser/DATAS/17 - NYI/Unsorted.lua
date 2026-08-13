@@ -101,7 +101,6 @@ root(ROOTS.Unsorted, {
 			i(271866),	-- Well-Worn Hatchet
 			i(271867),	-- Venom-Etched Sword
 			i(271868),	-- Splintering Spear
-			i(271881),	-- Dropped Key
 			i(271991),	-- Venomous Equipment Chest
 			i(271996),	-- Crumpled Scroll
 			i(271997),	-- Abused Relic
@@ -250,7 +249,6 @@ root(ROOTS.Unsorted, {
 			i(274813),	-- Envenomed Hammer
 			i(274815),	-- Envenomed Pages
 			i(274816),	-- Envenomed False Promise
-			i(274817),	-- Gold Starfish
 			i(274897),	-- Seaside Charcoal Grill
 			i(274899),	-- Seaside Tiki Market Stand
 			i(274901),	-- Seaside Cushioned Chair
@@ -298,7 +296,6 @@ root(ROOTS.Unsorted, {
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
 			i(275288),	-- Photosynthesized Scrap
-			i(275314),	-- Formula: Enchanted Eversong Trout
 			i(275320),	-- Schematic: Aetherlume Field Lamp
 			i(275322),	-- Technique: Ferocious Feline Trinket
 			i(275324),	-- Technique: Inscribed Amani Mural
@@ -306,7 +303,6 @@ root(ROOTS.Unsorted, {
 			i(275328),	-- Technique: Turquoise Amani Tapestry
 			i(275334),	-- Pattern: Stretched Snakeskin Rack
 			i(275338),	-- Pattern: Rolled Bed Linens
-			i(275342),	-- Pattern: Tortollan Slingsack
 			i(275526),	-- Preyhunter's Band
 			i(275527),	-- Preyhunter's Signet
 			i(275528),	-- Preyhunter's Ring
@@ -332,7 +328,6 @@ root(ROOTS.Unsorted, {
 			i(275683),	-- G-00
 			i(275684),	-- Schematic: DU5TY, Lazy Looter
 			i(275695),	-- Design: Piercing Amani Lapis
-			i(275697),	-- Design: Roaring Amani Garnet
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(275855),	-- Zul'Aman Swamp Palm Sprout
@@ -363,7 +358,6 @@ root(ROOTS.Unsorted, {
 			i(276172),	-- Headdress of Mutagenesis
 			i(276173),	-- Clutchguard Sandals
 			i(276174),	-- Leviathan's Oozing Scalemail
-			i(276175),	-- Broodmother's Embrace
 			i(276178),	-- Venom Lancer's Gauntlets
 			i(276186),	-- Totally Not Stolen Powder
 			i(276198),	-- Shellman's 195
@@ -523,7 +517,6 @@ root(ROOTS.Unsorted, {
 			i(278523),	-- Feather of Tok'jara
 			i(278534),	-- Eye of Szarith
 			i(278536),	-- Mummified Lynx's Paw
-			i(278557),	-- Otoola's Recognition
 			i(278572),	-- Pale Hexscale
 			i(278573),	-- Crested Burnished Leafmimic
 			i(278574),	-- Crested Aqua Leafmimic
@@ -961,7 +954,6 @@ root(ROOTS.Unsorted, {
 			i(280581),	-- Wintry Witchwick's Rider
 			i(280691),	-- Dagger of the Slithering Ritual
 			i(280692),	-- Plunderer's Pummeler
-			i(280695),	-- Skully's Skullcleaver
 			i(280698),	-- Szarith's Underbelly Slicer
 			i(280700),	-- Armbands of the Rotten Claw
 			i(280701),	-- Waistwrap of the Fanged
@@ -986,8 +978,6 @@ root(ROOTS.Unsorted, {
 			i(278397),	-- Ephemeral Star Ooze
 			i(279332),	-- Keen Hex Mask
 			i(280846),	-- Beguiling Memories of the Sea
-			i(281569),	-- Quiver of the Drowned Marksman
-			i(281571),	-- Focus of Fangs
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
 			i(268970),	-- Majestic Eagle Statue
@@ -1002,7 +992,6 @@ root(ROOTS.Unsorted, {
 			i(269020),	-- Scrimshaw Ward
 			i(269021),	-- Jan'alai Bibelot
 			i(269937),	-- Neighborhood Knick Knack
-			i(275271),	-- Recipe: Venom-Spiced Cutlets
 			i(279356),	-- Opalescent Amani Peridot
 			i(280503),	-- Ulantu's Notes
 

@@ -49,7 +49,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["cr"] = 263347,	-- Nacretta <the Pearl Hoarder>
 					["groups"] = {	-- Progress order
 						o(648981, {	-- Bubbling Clam
-							["coord"] = { 69.6, 82.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["coord"] = {
+								{ 67.3, 79.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+								{ 68.0, 80.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+								{ 69.6, 82.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+								{ 71.0, 81.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+								{ 71.3, 83.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+								{ 71.9, 82.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+							},
 							["groups"] = { i(271815) },	-- Luminescent Pearl
 						}),
 						hqt(96001, { ["name"] = "Nacretta has taken the Luminescent Pearl.", }),	-- Triggered after Nacretta spots the Luminescent Pearl
@@ -93,6 +100,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(645410, {	-- Fangbound Sack
 					["coord"] = { 45.9, 66.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95938,
+					["groups"] = { i(281571) },	-- Focus of Fangs (COSMETIC!)
 				}),
 				o(642307, {	-- Forgotten Mask
 					["coord"] = { 64.9, 78.9, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -100,13 +108,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(278003) },	-- Forgotten Mask
 				}),
 				header(HEADERS.Object, 645549, {	-- Grave of Someone Forgotten
-					-- https://www.youtube.com/watch?v=kOQRZnsootw
-					-- Found this video but it does not work for me, Forgotten Soldier did not disappear. It's like a step is missing...
-					["description"] = "***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go to Ata'leki <Spectral Foods Vendor>, ask about spectral food and then buy Spirit Sprouts.\n6. Go back to the Forgotten Soldier and commit sudoku (*wink, wink*) in his vicinity (Easiest way is to switch the Flight Style, fly high in the air and drop off the mount).\n7. Release your spirit and eat Spirit Sprouts. Remain seating, at least 10 seconds, until you get a buff.\n8. Talk to Spirit Healer and accept the Resurrection.\n9. Go back to the Nameless Grave.",
+					["description"] = "***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go back to the Nameless Grave.",
 					["providers"] = {
 						{ "n", 263244 },	-- Forgotten Soldier
 						{ "o", 645553 },	-- Nameless Grave
 					},
+					["coord"] = { 67.3, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["groups"] = {
 						n(263241, {	-- Zuzan
 							["coord"] = { 69.0, 52.7, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -158,7 +165,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				o(629421, {	-- Malfunctioning Staff
-					["coord"] = { 75.4, 57.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["coord"] = { 75.4, 68.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95164,
 					["groups"] = { i(268504) },	-- Malfunctioning Staff (TOY!)
 				}),
@@ -200,6 +207,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(644681, {	-- Stinking Vessel (Intact Vase)
 					["coord"] = { 53.1, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95841,
+					["groups"] = { i(281580) },	-- Pungent Atal'Utek Shroom (DECOR!)
 				}),
 				header(HEADERS.Object, 645208, {	-- Sunken Diver's Chest
 					["description"] = "You need to kill |cFFFFD700Ss'akrithos|r during 3 separate 'Mlurkrr Massacre' Curse Surges and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
@@ -259,6 +267,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(644791, {	-- Waterlogged Basket
 					["coord"] = { 49.5, 32.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95854,
+					["groups"] = { i(281569) },	-- Quiver of the Drowned Marksman (COSMETIC!)
 				}),
 				o(642786, {	-- Zul'Jan's Stash
 					["coord"] = { 44.0, 26.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -271,7 +280,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			header(HEADERS.Achievement, 63662, {	-- Student of Hissstory
 				o(669308, {	-- Abandoned Tablet
-					["coord"] = { 50.7, 68.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["coord"] = { 50.7, 68.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 98302,
 				}),
 				o(653579, {	-- Amani Exile's Words

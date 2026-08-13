@@ -169533,7 +169533,7 @@ de(21653,{cost={{"c",3448,1000}},itemID=271358,spellID=1288966}),
 de(26204,{cost={{"c",3448,2500}},itemID=281620,spellID=1311944}),
 p(5071,{cost={{"c",3448,5000}},itemID=275631,npcID=266464,spellID=1297094}),
 de(21720,{cost={{"c",3448,750}},itemID=271604,spellID=1289113}),
-i(271888,{cost={{"c",3256,150},{"c",3448,5000}},f=200,spellID=1289745}),
+r(1289745,{cost={{"c",3256,150},{"c",3448,5000}},itemID=271888,requireSkill=171,skillID=2906}),
 de(21102,{cost={{"c",3448,1000}},itemID=269637,spellID=1285876}),
 de(17799,{cost={{"c",3448,1000}},itemID=266169,spellID=1277817}),
 de(24519,{cost={{"c",3448,2500}},itemID=279919,spellID=1307313}),
@@ -169630,7 +169630,7 @@ p(5035,{coords={
 [2512]={{67.9,81.5},{70.6,78.7}}},crs={262248},itemID=270248,npcID=262248,spellID=1287603,g={
 crit(113420,{achID=62492,id=8})}}),
 p(5029,{coords={
-[2512]={{44.1,46.6}}},crs={262226},itemID=270249,npcID=262226,spellID=1287600,g={
+[2512]={{44.1,46.6},{46.2,48.6}}},crs={262226},itemID=270249,npcID=262226,spellID=1287600,g={
 crit(113426,{achID=62492,id=2})}}),
 p(5030,{coords={
 [2512]={{49.9,55.8},{53.8,34.1}}},crs={262246},itemID=270253,npcID=262246,spellID=1287593,g={
@@ -169722,7 +169722,7 @@ de(25336,{cost={{"c",3316,250}},itemID=277927,minReputation={2773,2},spellID=130
 i(275693,{cost={{"c",3262,150}},f=200,minReputation={2773,3},spellID=1297679}),
 de(26197,{cost={{"c",3316,250}},itemID=277931,minReputation={2773,3},spellID=1302909}),
 i(275336,{cost={{"c",3263,150}},f=200,minReputation={2773,3},spellID=1296511}),
-i(271891,{cost={{"c",3261,150}},f=200,minReputation={2773,3},spellID=1289746}),
+r(1289746,{cost={{"c",3261,150}},itemID=271891,minReputation={2773,3},requireSkill=171,skillID=2906}),
 i(275018,{cost={{"c",3316,1500}},f=200,minReputation={2773,3}}),
 i(275318,{cost={{"c",3259,150}},f=200,minReputation={2773,3},spellID=1296502}),
 de(25300,{cost={{"c",3316,250}},itemID=277925,minReputation={2773,4},spellID=1302903}),
@@ -170220,6 +170220,7 @@ crit(115286,{achID=63358,id=10})}}),
 n(257906,{coords={
 [2512]={{58,66.5}}},isDaily=1,questID=94619,g={
 i(280715,{f=52}),
+s(311567,280695,{f=21}),
 crit(115285,{achID=63358,id=9})}}),
 n(261142,{coords={
 [2512]={{52.1,32.3}}},isDaily=1,questID=95452,g={
@@ -170282,6 +170283,7 @@ s(309577,276060,{f=27}),
 i(276171,{f=52}),
 crit(115370,{achID=63390,id=3})}}),
 n(257863,{isWeekly=1,g={
+s(309601,276175,{f=3}),
 crit(115369,{achID=63390,id=2})}}),
 n(255927,{isWeekly=1,g={
 crit(115371,{achID=63390,id=4})}})}})}),
@@ -170307,7 +170309,7 @@ crit(115289,{achID=63359,id=1})}})}}),
 ah(649085,{coords={
 [2512]={{70.2,77}}},crs={263347},description="1. Find a 'Bubbling Clam' under water to the south of the Cave and obtain a 'Luminescent Pearl'.\n2. Go to the cave and present the Pearl to 'Nacretta'. It will give you the Key in exchange.\n3. Loot the 'Dropped Key' and open the treasure.",type="o",g={
 o(648981,{coords={
-[2512]={{69.6,82.5}}},g={
+[2512]={{67.3,79.2},{68,80.3},{69.6,82.5},{71,81.7},{71.3,83.3},{71.9,82.9}}},g={
 i(271815)}}),
 hqt(96001),
 hqt(96002),
@@ -170335,12 +170337,14 @@ i(278032),
 crit(115296,{achID=63359,id=13})}}),
 o(645410,{coords={
 [2512]={{45.9,66.3}}},questID=95938,g={
+s(311946,281571,{f=1}),
 crit(115313,{achID=63359,id=2})}}),
 o(642307,{coords={
 [2512]={{64.9,78.9}}},questID=95591,g={
 i(278003),
 crit(115314,{achID=63359,id=20})}}),
-ah(645549,{description="***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go to Ata'leki <Spectral Foods Vendor>, ask about spectral food and then buy Spirit Sprouts.\n6. Go back to the Forgotten Soldier and commit sudoku (*wink, wink*) in his vicinity (Easiest way is to switch the Flight Style, fly high in the air and drop off the mount).\n7. Release your spirit and eat Spirit Sprouts. Remain seating, at least 10 seconds, until you get a buff.\n8. Talk to Spirit Healer and accept the Resurrection.\n9. Go back to the Nameless Grave.",providers={{"n",263244},{"o",645553}},type="o",g={
+ah(645549,{coords={
+[2512]={{67.3,48.5}}},description="***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go back to the Nameless Grave.",providers={{"n",263244},{"o",645553}},type="o",g={
 n(263241,{coords={
 [2512]={{69,52.7}}}}),
 n(263242,{coords={
@@ -170369,7 +170373,7 @@ i(274493,{f=53,spellID=1294329}),
 i(251783,{b=1,f=53,lvl=78,spellID=1253111}),
 crit(115310,{achID=63359,id=11})}})}}),
 o(629421,{coords={
-[2512]={{75.4,57.3}}},questID=95164,g={
+[2512]={{75.4,68.3}}},questID=95164,g={
 toy(268504),
 crit(115306,{achID=63359,id=8})}}),
 o(644665,{coords={
@@ -170394,6 +170398,7 @@ s(311945,281570,{f=28}),
 crit(115302,{achID=63359,id=18})}}),
 o(644681,{coords={
 [2512]={{53.1,43.1}}},questID=95841,g={
+de(26375,{itemID=281580,spellID=1311831}),
 crit(115300,{achID=63359,id=16})}}),
 ah(645208,{description="You need to kill |cFFFFD700Ss'akrithos|r during 3 separate 'Mlurkrr Massacre' Curse Surges and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",type="o",g={
 i(271423,{cost={{"i",271424,3}}}),
@@ -170427,6 +170432,7 @@ s(311943,281568,{f=29}),
 crit(115293,{achID=63359,id=21})}})}}),
 o(644791,{coords={
 [2512]={{49.5,32}}},questID=95854,g={
+s(311944,281569,{f=3}),
 crit(115301,{achID=63359,id=17})}}),
 o(642786,{coords={
 [2512]={{44,26.5}}},questID=95727,g={
@@ -170435,7 +170441,7 @@ i(270268),
 crit(115297,{achID=63359,id=22})}})}}),
 ah(63662,{type="a",g={
 o(669308,{coords={
-[2512]={{50.7,68.2}}},questID=98302,g={
+[2512]={{50.7,68.4}}},questID=98302,g={
 crit(116705,{achID=63662,id=4})}}),
 o(653579,{coords={
 [2512]={{57.3,80.4}}},questID=96947,g={
@@ -170483,7 +170489,7 @@ de(1428,{cost={{"c",3316,150}},itemID=244345,spellID=1237024}),
 de(26484,{cost={{"c",3316,150}},itemID=279285,spellID=1306457}),
 de(5130,{cost={{"c",3316,150}},itemID=248962,spellID=1248177}),
 de(21833,{cost={{"c",3316,250}},itemID=271851,spellID=1289635}),
-de(26375,{cost={{"c",3316,250}},itemID=281580,sourceQuests={95841},spellID=1311831}),
+de(26375,{cost={{"c",3316,250}},itemID=281580,spellID=1311831}),
 de(26481,{cost={{"c",3316,150}},itemID=280218,spellID=1307950}),
 de(21615,{cost={{"c",3316,150}},itemID=271175,spellID=1288742}),
 de(26377,{cost={{"c",3316,250}},itemID=279292,spellID=1306493})}}),
@@ -170491,6 +170497,16 @@ n(256686,{coords={
 [2512]={{69.3,52.2}}},g={
 i(280425,{f=55,spellID=1308734}),
 i(266435,{cost={{"i",267085,10}},f=37,spellID=1278220})}}),
+n(253843,{coords={
+[2512]={{57.2,48.3}}},g={
+i(274597,{cost={{"i",274596,25}},spellID=1225292}),
+i(275697,{cost={{"c",3316,750},{"i",274597,50}},f=200,spellID=1297681}),
+i(275314,{cost={{"c",3316,750},{"i",274597,50}},f=200,spellID=1296500}),
+toy(274817,{cost={{"c",3316,750},{"i",274595,10}}}),
+toy(278557,{cost={{"c",3316,750},{"i",274595,10}}}),
+i(275342,{cost={{"c",3316,750},{"i",274597,50}},f=200,spellID=1296514}),
+i(274595,{cost={{"i",274597,5}},spellID=1225292}),
+i(275271,{cost={{"c",3316,750},{"i",274596,250}},f=200,spellID=1295783})}}),
 n(258904,{coords={
 [2512]={{69.8,52.2}}},g={
 i(280409,{f=55,spellID=1308593})}})}),
@@ -170656,8 +170672,8 @@ de(15569,{cost={{"c",3316,150}},itemID=264331,minReputation={2772,3},spellID=127
 i(275310,{cost={{"c",3258,150}},f=200,minReputation={2772,5},spellID=1296498}),
 i(273073,{cost={{"c",3258,150}},f=200,minReputation={2772,5},spellID=1291694}),
 i(275332,{cost={{"c",3263,150}},f=200,minReputation={2772,5},spellID=1296509}),
-i(275304,{cost={{"c",3257,150}},f=200,minReputation={2772,5},spellID=1296495}),
-i(271885,{cost={{"c",3256,150}},f=200,minReputation={2772,5},spellID=1289744}),
+r(1296495,{cost={{"c",3257,150}},itemID=275304,minReputation={2772,5},requireSkill=164,skillID=2907}),
+r(1289744,{cost={{"c",3256,150}},itemID=271885,minReputation={2772,5},requireSkill=171,skillID=2906}),
 i(275300,{cost={{"c",3316,1500}},f=200,minReputation={2772,5},spellID=1295776}),
 i(277820,{cost={{"c",3316,1500}},f=200,minReputation={2772,5},spellID=1302819}),
 i(275316,{cost={{"c",3259,150}},f=200,minReputation={2772,5},spellID=1296501}),

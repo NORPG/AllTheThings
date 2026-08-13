@@ -40,7 +40,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(257906, {	-- Coin-Eye Skully
 					["coord"] = { 58.0, 66.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 94619,
-					["groups"] = { i(280715) },	-- Eye of Skully
+					["groups"] = {
+						i(280715),	-- Eye of Skully
+						i(280695),	-- Skully's Skullcleaver
+					},
 				}),
 				n(261142, {	-- Destra
 					["coord"] = { 52.1, 32.3, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -136,6 +139,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(257863, {	-- Vassti, the Exalted Broodmother
 					--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
 					--["questID"] = XXXXX,
+					["groups"] = { i(276175) },	-- Broodmother's Embrace
 				}),
 				n(255927, {	-- Venom Lancer Ori'kassi
 					--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -152,6 +156,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(RARES, {
 				q(98353, {	-- Weekly reputation: Big Mon
 					["name"] = "Big Mon weekly reputation obtained.",
+				}),
+				q(98352, {	-- Weekly reputation: Coin-Eye Skully
+					["name"] = "Coin-Eye Skully weekly reputation obtained.",
 				}),
 				q(98344, {	-- Weekly reputation: Farthik the Plunderer
 					["name"] = "Farthik the Plunderer weekly reputation obtained.",

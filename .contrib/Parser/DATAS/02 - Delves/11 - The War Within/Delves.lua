@@ -1102,9 +1102,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 				["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			}),
 		}),
-		-- #if BEFORE MID
 		n(BOUNTIFUL, bubbleDownFiltered({
+			-- #if BEFORE MID
 			["cost"] = { { "c", RESTORED_COFFER_KEY, 1 } },
+			-- #endif
 		},FILTERFUNC_itemID,{
 			["provider"] = { "o", 413590 },	-- Bountiful Coffer
 			["groups"] = {
@@ -1362,7 +1363,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 				}),
 			},
 		})),
-		-- #endif
 		filter(CONSUMABLES, {
 			i(227668),	-- Delver's Bounty [Tier 1]
 			i(227778),	-- Delver's Bounty [Tier 2]

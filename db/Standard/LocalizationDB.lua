@@ -11445,6 +11445,7 @@ local ObjectNames = {
 	[412995] = "Small Box of Vials",
 	[413126] = "Box of Artisanal Goods",
 	[413246] = "Elemental Silt Mound",
+	[413590] = "Bountiful Coffer",
 	[413694] = "Suspicious Vent",
 	[413774] = "The Legend of Elun'Ahir",
 	[413780] = "On the Nature of the Dream",
@@ -26483,6 +26484,7 @@ L.QUEST_NAMES = {
 	[98349] = "Szarith The Fanged weekly reputation obtained.",
 	[98350] = "Garsecg weekly reputation obtained.",
 	[98351] = "Nar'zira weekly reputation obtained.",
+	[98352] = "Coin-Eye Skully weekly reputation obtained.",
 	[98353] = "Big Mon weekly reputation obtained.",
 	[98354] = "Sss'alik weekly reputation obtained.",
 }
