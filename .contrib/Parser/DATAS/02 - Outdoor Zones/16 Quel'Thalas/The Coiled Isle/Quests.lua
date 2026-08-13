@@ -9,8 +9,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				-- Exo Note: AchCriteria, 62297.01, 'Legacy of the Amani' (First Chapter of 'The Coiled Isle' campaign) happens in Zul'Aman (almost) in its entirety and was made available (timegated) 3 weeks after the launch of 12.0.7
 				-- Everything else related to 'The Coiled Isle' is 12.1.0. A personal decision has been made to separate the first chapter from everything else and place it in Zul'Aman.
 				header(HEADERS.AchCriteria, 62297.02, {	-- An Island of Fangs
+					q(98218, {	-- Return to Amani'Zar
+						["description"] = "Pops-up on first log-in. Can be accepted from Adventure Guide.",
+						["isBreadcrumb"] = true,
+					}),
 					q(92916, {	-- A Call for Aid
-						["sourceQuest"] = 93012,	-- Dead End
+						["sourceQuest"] = 98218,	-- Return to Amani'Zar
 						["qg"] = 263331,	-- Lady Liadrin
 						["coord"] = { 43.7, 68.3, MAP.MIDNIGHT.ZULAMAN },
 					}),
