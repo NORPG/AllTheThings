@@ -18,7 +18,6 @@ call :download ItemEffect
 call :download ItemModifiedAppearance
 call :download ItemXItemEffect
 call :download ItemSearchName
-call :download ItemSparse
 call :download ModifierTree
 call :download SkillLineAbility
 call :downloadcleaned SpellEffect
@@ -31,7 +30,7 @@ call :download WorldMapOverlay
 
 @REM Run the locale update script from its own folder
 pushd "%~dp0localized"
-call "Update Wago Build Files.bat"
+call "Update Wago Build Files.bat" %BUILD%
 popd
 
 exit /b
