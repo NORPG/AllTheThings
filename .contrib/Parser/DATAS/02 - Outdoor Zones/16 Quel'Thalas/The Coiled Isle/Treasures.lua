@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["cr"] = 263347,	-- Nacretta <the Pearl Hoarder>
 					["groups"] = {	-- Progress order
 						o(648981, {	-- Bubbling Clam
-							["coord"] = {
+							["coords"] = {
 								{ 67.3, 79.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 								{ 68.0, 80.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 								{ 69.6, 82.5, MAP.MIDNIGHT.THE_COILED_ISLE },

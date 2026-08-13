@@ -673,6 +673,26 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		hqt(92807, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 58
 		hqt(92808, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 59
 		hqt(92809, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 60
+		hqt(95856, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 61
+		hqt(95857, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 62
+		hqt(95858, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 63
+		hqt(95859, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 64
+		hqt(95860, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 65
+		hqt(95861, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 66
+		hqt(95862, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 67
+		hqt(95863, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 68
+		hqt(95864, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 69
+		hqt(95865, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 70
+		hqt(95866, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 71
+		hqt(95867, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 72
+		hqt(95868, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 73
+		hqt(95869, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 74
+		hqt(95870, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 75
+		hqt(95871, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 76
+		hqt(95872, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 77
+		hqt(95873, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 78
+		hqt(95874, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 79
+		hqt(95875, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 80
 	}),
 	n(MAILBOX, {
 		i(258738, {	-- A Cordial Invitation (QS!)

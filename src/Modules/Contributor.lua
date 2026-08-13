@@ -3466,6 +3466,7 @@ MobileDB.GameObject = {
 	[653485] = true,	-- Cynosure of Twilight (q:96052)
 	[654240] = true,	-- Mound of Dirt (q:96543)
 	[654422] = true,	-- Energized Crystal Conductor (q:96569)
+	[654991] = true,	-- Cracked Canopic Jar
 	[655270] = true,	-- Dominaar Storage Vessel [Ritual Site: Val]
 	[655271] = true,	-- Hal'hadar Pocket-Storage [Ritual Site: Naigtal]
 	[656001] = true,	-- Cursed Refulgent Copper
