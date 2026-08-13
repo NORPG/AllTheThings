@@ -325,6 +325,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(1230881),	-- [DNT] Midnight Vicious Flask of Manifested Fury
 					r(1230880),	-- [DNT] Midnight Vicious Flask of the Wrecking Ball
 				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					r(1296431),	-- Amani Alchemist's Incense
+					r(1296430),	-- Bubbling Acid Cauldron
+				})),
 			}),
 		}),
 	}),

@@ -783,6 +783,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					itemsource(287085),	-- Spellbreaker's Resolve
 					itemsource(287078),	-- Spellbreaker's Shelter
 				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					i(273056),	-- Odious Alloy+
+					i(273057),	-- Odious Alloy++
+				})),
 			}),
 		}),
 		filter(RECIPES, {
@@ -1254,6 +1260,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(265538),	-- Plans: Ornate Crafter's Tongs
 					-- Without SpellID attached
 					i(258520),	-- Plans: Farstrider's Strike
+				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					r(1291682),	-- Odious Alloy
+					r(1288608),	--
+					r(1288712),	--
 				})),
 			}),
 		}),

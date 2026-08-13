@@ -102,12 +102,6 @@ root(ROOTS.Unsorted, {
 			i(271867),	-- Venom-Etched Sword
 			i(271868),	-- Splintering Spear
 			i(271881),	-- Dropped Key
-			i(271883),	-- Concentrated Silvermoon Health Potion
-			i(271884),	-- Concentrated Silvermoon Health Potion
-			i(271886),	-- Liquid Luster
-			i(271887),	-- Liquid Luster
-			i(271889),	-- Alluring Nostrum
-			i(271890),	-- Alluring Nostrum
 			i(271991),	-- Venomous Equipment Chest
 			i(271996),	-- Crumpled Scroll
 			i(271997),	-- Abused Relic
@@ -175,10 +169,6 @@ root(ROOTS.Unsorted, {
 			i(272283),	-- Swordsman's Emanation
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
-			i(273056),	-- Odious Alloy
-			i(273057),	-- Odious Alloy
-			i(273059),	-- Hunter's Ritual Stone
-			i(273060),	-- Hunter's Ritual Stone
 			i(273062),	-- Coiled Snake-Eye
 			i(273063),	-- Coiled Snake-Eye
 			i(273064),	-- Schematic: Coiled Snake-Eye
@@ -308,10 +298,6 @@ root(ROOTS.Unsorted, {
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
 			i(275288),	-- Photosynthesized Scrap
-			i(275303),	-- Amani Forgemaster's Workbench
-			i(275305),	-- Amani Forgemaster's Glaive
-			i(275306),	-- Plans: Amani Forgemaster's Glaive
-			i(275308),	-- Plans: Amani Forgemaster's Rack
 			i(275314),	-- Formula: Enchanted Eversong Trout
 			i(275320),	-- Schematic: Aetherlume Field Lamp
 			i(275322),	-- Technique: Ferocious Feline Trinket
@@ -523,7 +509,6 @@ root(ROOTS.Unsorted, {
 			i(278288),	-- Nebulous Voidcache: Sszorak
 			i(278289),	-- Nebulous Voidcache: The Twin Fangs
 			i(278290),	-- Nebulous Voidcache: The Bargained Crown
-			i(278329),	-- Thalassian Recipe in a Bottle
 			i(278330),	-- Schematic: R0CKY
 			i(278331),	-- Recipe: Sweet-And-Sour Skewers
 			i(278333),	-- Schematic: R0CKY-To-Go
@@ -756,7 +741,6 @@ root(ROOTS.Unsorted, {
 			i(279288),	-- Corroded Satchel
 			i(279290),	-- Fang Lover's
 			i(279345),	-- Corroded Satchel
-			i(279359),	-- Concocted Poisonous Residue
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279361),	-- Keen Hex Mask
 			i(279362),	-- Furious Tiki Mask
@@ -951,7 +935,6 @@ root(ROOTS.Unsorted, {
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
 			i(278701),	-- Purified Goblin Cup
-			i(279329),	-- Amani Forgemaster's Rack
 			i(280305),	-- Soulcoil Remnant
 			i(280333),	-- Pirate's Eyepatch
 			i(280335),	-- Brewfest Crate

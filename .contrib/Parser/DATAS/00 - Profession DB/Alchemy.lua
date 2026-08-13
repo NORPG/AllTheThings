@@ -1385,3 +1385,15 @@ i(0, 1230884);		-- [DNT] Midnight Vicious Flask of Classical Spirits
 i(0, 1230882);		-- [DNT] Midnight Vicious Flask of Determination
 i(0, 1230881);		-- [DNT] Midnight Vicious Flask of Manifested Fury
 i(0, 1230880);		-- [DNT] Midnight Vicious Flask of the Wrecking Ball
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+--- ITEM ---
+i(271891, 1289746);	-- Alluring Nostrum
+i(271885, 1289744);	-- Concentrated Silvermoon Health Potion
+i(275275, 1296429);	-- Ersatz Venom Splatter
+i(271888, 1289745);	-- Liquid Luster
+--- NYI ---
+i(0, 1296431);	-- Amani Alchemist's Incense
+i(0, 1296430);	-- Bubbling Acid Cauldron

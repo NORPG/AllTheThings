@@ -2615,3 +2615,16 @@ i(0, 1230765);		-- Thalassian Master Repair Hammer
 i(0, 1230770);		-- [DNT] 12.0 Engineering Recipe Spell Template
 i(265538, 1276113);	-- Plans: Ornate Crafter's Tongs
 i(258520, 0);		-- Murder Row Fleet Feet
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+--- ITEM ---
+i(275306, 1296496);	-- Amani Forgemaster's Decorative Spear
+i(275308, 1296497);	-- Amani Forgemaster's Rack
+i(275304, 1296495);	-- Amani Forgemaster's Workbench
+i(273061, 1291683);	-- Hunter's Ritual Stone
+--- NYI ---
+i(0, 1291682);	-- Odious Alloy
+i(0, 1288608);	--
+i(0, 1288712);	--

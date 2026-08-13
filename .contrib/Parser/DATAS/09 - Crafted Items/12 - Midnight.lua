@@ -27,6 +27,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
+			i(271889, {["timeline"] = { ADDED_12_1_0 }}),	-- Alluring Nostrum+
+			i(271890, {["timeline"] = { ADDED_12_1_0 }}),	-- Alluring Nostrum++
 			i(241299),	-- Amani Extract+
 			i(241298),	-- Amani Extract++
 			i(241319, {	-- Cauldron of Sin'dorei Flasks+
@@ -41,6 +43,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				i(245933),	-- Fleeting Flask of the Magisters++
 				i(245929),	-- Fleeting Flask of the Shattered Sun++
 			}),
+			i(271883, {["timeline"] = { ADDED_12_1_0 }}),	-- Concentrated Silvermoon Health Potion+
+			i(271884, {["timeline"] = { ADDED_12_1_0 }}),	-- Concentrated Silvermoon Health Potion++
 			i(241293),	-- Draught of Rampant Abandon+
 			i(241292),	-- Draught of Rampant Abandon++
 			i(241339),	-- Enlightenment Tonic+
@@ -67,6 +71,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(241286),	-- Light's Preservation++
 			i(241301),	-- Lightfused Mana Potion+
 			i(241300),	-- Lightfused Mana Potion++
+			i(271886, {["timeline"] = { ADDED_12_1_0 }}),	-- Liquid Luster+
+			i(271887, {["timeline"] = { ADDED_12_1_0 }}),	-- Liquid Luster++
 			i(241295),	-- Potion of Devoured Dreams+
 			i(241294),	-- Potion of Devoured Dreams++
 			i(241289),	-- Potion of Recklessness+
@@ -99,6 +105,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 		n(DECOR, {
 			i(262355),	-- Entropic Illuminant (DECOR!)
+			i(279359, {["timeline"] = { ADDED_12_1_0 }}),	-- Ersatz Venom Splatter (DECOR!)
 			i(262356),	-- Haranir Preserving Agents (DECOR!)
 			i(262354),	-- Riftstone (DECOR!)
 			i(253506),	-- Rootbound Vat (DECOR!)
@@ -217,6 +224,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(260232),	-- Thalassian Skeleton Key
 		}),
 		n(DECOR, {
+			i(275305, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Forgemaster's Decorative Spear (DECOR!)
+			i(279329, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Forgemaster's Rack (DECOR!)
+			i(275303, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Forgemaster's Workbench (DECOR!)
 			i(262451),	-- Gilded Silvermoon Anvil (DECOR!)
 			i(262457),	-- Gilded Silvermoon Hanger (DECOR!)
 			i(262452),	-- Masterwork Crafting Hammer (DECOR!)
@@ -361,6 +371,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		filter(REAGENTS, {
 			i(238202),	-- Gloaming Alloy+
 			i(238203),	-- Gloaming Alloy++
+			i(273059, {["timeline"] = { ADDED_12_1_0 }}),	-- Hunter's Ritual Stone+
+			i(273060, {["timeline"] = { ADDED_12_1_0 }}),	-- Hunter's Ritual Stone++
 			i(238197),	-- Refulgent Copper Ingot+
 			i(238198),	-- Refulgent Copper Ingot++
 			i(238204),	-- Sterling Alloy+
@@ -1059,6 +1071,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(FISHING, {
+		container(278329, {	-- Thalassian Recipe in a Bottle
+			["timeline"] = { ADDED_12_1_0 },
+			["sym"] = {{"select","itemID",
+				-- Available from the Bottle but has another Source
+				-- TODO
+			}},
+			["groups"] = {
+				-- Only known source is the Bottle
+				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
+				i(275308),	-- Plans: Amani Forgemaster's Rack (RECIPE!)
+			},
+		}),
 		filter(BATTLE_PETS, {
 			i(260942),	-- Bubbly Snapling (PET!)
 		}),
