@@ -11445,7 +11445,6 @@ local ObjectNames = {
 	[412995] = "Small Box of Vials",
 	[413126] = "Box of Artisanal Goods",
 	[413246] = "Elemental Silt Mound",
-	[413590] = "Bountiful Coffer",
 	[413694] = "Suspicious Vent",
 	[413774] = "The Legend of Elun'Ahir",
 	[413780] = "On the Nature of the Dream",

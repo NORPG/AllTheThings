@@ -173893,7 +173893,6 @@ m(2541,{awp=120001,icon=_.asset("Arcantina"),g={
 h(-12,{
 ach(61083),
 ach(63619,{awp=120100,g={
-crit(117457,{achID=63619,id=1,questID=95779}),
 crit(108598,{achID=63619,id=2,questID=95780})}}),
 ach(61082),
 ach(61081,{cost={{"i",251039,26}},description="NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",g={
@@ -173924,8 +173923,7 @@ crit(108594,{achID=61081,id=24,races_disp={52,70}}),
 crit(108595,{achID=61081,id=25,races_disp={84,85}}),
 crit(108596,{achID=61081,id=26,races_disp={86,91}})}}),
 ach(63620,{awp=120100,g={
-crit(108607,{achID=63620,id=2,questID=95783}),
-crit(117458,{achID=63620,id=1,questID=95782})}})}),
+crit(108607,{achID=63620,id=2,questID=95783})}})}),
 h(-45,{
 q(92319,{coords={
 [2541]={{46.3,56.7}}},lvl=83,qgs={250415},g={
@@ -173960,6 +173958,15 @@ o(572035,{coords={
 i(250878,{b=1})}}),
 de(9441,{itemID=253544,spellID=1256612}),
 crit(108603,{achID=61082,id=7})}}),
+q(95779,{awp=120100,coords={
+[2541]={{43.2,61.5}}},qgs={259343},g={
+o(667558,{type="AsGenericObjectContainer",g={
+i(275038),
+o(667558,{type="AsSubGenericObject"}),
+o(654975,{type="AsSubGenericObject"}),
+o(667556,{type="AsSubGenericObject"})}}),
+de(26651,{itemID=278694,spellID=1305414}),
+crit(117457,{achID=63619,id=1})}}),
 q(92320,{coords={
 [2541]={{59,78}}},lvl=83,maps={2558},qgs={250401},g={
 o(613535,{coords={
@@ -174016,6 +174023,8 @@ o(572037,{coords={
 i(250880,{b=1})}}),
 o(572029,{description="Located to the left of the path towards Omar the Unscarred.",maps={347},sourceQuests={92319},g={
 i(250872,{b=1})}}),
+o(654977,{awp=120100,maps={441},sourceQuests={95779},g={
+i(275047)}}),
 o(572450,{coords={
 [2541]={{25.8,43.4}}},cost={{"i",250875,1}},questID=92378,g={
 crit(108610,{achID=61083,id=4})}}),
@@ -174043,6 +174052,9 @@ crit(108615,{achID=61083,id=9})}}),
 o(572446,{coords={
 [2541]={{67,52.8}}},cost={{"i",250872,1}},questID=92375,g={
 crit(117459,{achID=61083,id=1})}}),
+o(654980,{awp=120100,coords={
+[2541]={{63.6,45}}},cost={{"i",275047,1}},questID=95782,g={
+crit(117458,{achID=63620,id=1})}}),
 o(572454,{coords={
 [2541]={{62.1,42.6}}},cost={{"i",250878,1}},questID=92381,g={
 crit(108613,{achID=61083,id=7})}}),
@@ -174132,6 +174144,7 @@ de(9253,{cost={{"c",3316,250}},itemID=253179,spellID=1255731}),
 de(9251,{cost={{"c",3316,250}},itemID=253177,spellID=1255729}),
 de(9624,{cost={{"c",3316,250}},itemID=253700,spellID=1257070}),
 de(9439,{cost={{"c",3316,150}},itemID=253542,spellID=1256610}),
+de(26651,{awp=120100,cost={{"c",3316,250}},itemID=278694,spellID=1305414}),
 de(9441,{cost={{"c",3316,150}},itemID=253544,spellID=1256612})}})})}}),
 m(1409,{awp=90001,customCollect={"NPE"},icon=3567434,maps={1726,1727},g={
 h(-12,{customCollect={"NPE"},g={
