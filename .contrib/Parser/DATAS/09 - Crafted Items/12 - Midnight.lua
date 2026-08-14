@@ -1623,8 +1623,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(DECOR, {
 			i(262471),	-- Bejeweled Sin'dorei Lyre (DECOR!)
 			i(262469),	-- Brilliant Phoenix Harp (DECOR!)
+			i(279356, {["timeline"] = { ADDED_12_1_0 }}),	-- Opalescent Amani Peridot (DECOR!)
 			i(262613),	-- Replica Haranir Mural (DECOR!)
 			i(248965),	-- Resplendent Highborne Statue (DECOR!)
+			i(280762, {["timeline"] = { ADDED_12_1_0 }}),	-- Roaring Amani Garnet (DECOR!)
 			i(262454),	-- Shining Sin'dorei Hourglass (DECOR!)
 			i(262461),	-- Tenebrous Ren'dorei Armillary (DECOR!)
 		}),

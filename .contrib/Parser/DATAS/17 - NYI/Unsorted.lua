@@ -153,9 +153,6 @@ root(ROOTS.Unsorted, {
 			i(272283),	-- Swordsman's Emanation
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
-			i(273065),	-- Polished Ammolite
-			i(273066),	-- Polished Ammolite
-			i(273067),	-- Design: Polished Ammolite
 			i(273068),	-- Adorned Fang
 			i(273069),	-- Adorned Fang
 			i(273070),	-- Pattern: Adorned Fang
@@ -283,7 +280,6 @@ root(ROOTS.Unsorted, {
 			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
 			i(275659),	-- Hexflame Reaver
-			i(275695),	-- Design: Piercing Amani Lapis
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(275855),	-- Zul'Aman Swamp Palm Sprout
@@ -688,15 +684,12 @@ root(ROOTS.Unsorted, {
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot
 			i(279365),	-- Fine Captain's Bottle
-			i(279367),	-- Piercing Amani Lapis
 			i(279368),	-- Inscribed Amani Mural
-			i(279370),	-- Roaring Amani Garnet
 			i(279371),	-- Flat Snakeskin Canopy
 			i(279372),	-- Stretched Snakeskin Rack
 			i(279373),	-- Mounted Moby
 			i(279374),	-- Rolled Bed Linens
 			i(279375),	-- Tortollan Slingsack
-			i(279376),	-- Opalescent Amani Peridot
 			i(279384),	-- Bonemail Gauntlet
 			i(279428),	-- Midnight Gloomcap
 			i(279429),	-- Azure Gloomcap
@@ -883,7 +876,6 @@ root(ROOTS.Unsorted, {
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
 			i(274422),	-- Ossified Relic
-			i(279343),	-- Piercing Amani Lapis
 			i(279346),	-- Stretched Snakeskin Rack
 			i(279348),	-- Mounted Moby
 			i(279353),	-- Tortollan Slingsack
@@ -896,7 +888,6 @@ root(ROOTS.Unsorted, {
 			i(280700),	-- Armbands of the Rotten Claw
 			i(280701),	-- Waistwrap of the Fanged
 			i(280709),	-- Triple Threat Pauldrons
-			i(280762),	-- Roaring Amani Garnet
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
@@ -919,13 +910,20 @@ root(ROOTS.Unsorted, {
 			i(269020),	-- Scrimshaw Ward
 			i(269021),	-- Jan'alai Bibelot
 			i(269937),	-- Neighborhood Knick Knack
-			i(279356),	-- Opalescent Amani Peridot
 			i(280503),	-- Ulantu's Notes
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)
 					i(273062),	-- Coiled Snake-Eye+
 					i(273063),	-- Coiled Snake-Eye++
+				}),
+				prof(JEWELCRAFTING, {
+					i(275695),	-- Design: Piercing Amani Lapis (RECIPE!)
+					i(279343),	-- Piercing Amani Lapis (DECOR!)
+					--
+					i(273067),	-- Design: Polished Ammolite (RECIPE!)
+					i(273065),	-- Polished Ammolite+
+					i(273066),	-- Polished Ammolite++
 				}),
 			}),
 
