@@ -219,6 +219,7 @@ namespace ATT
                             {
                                 if (localeString == TODO_NAME)
                                 {
+                                    locales[locale] = null;
                                     builder.Append(extraIndent).Append("\t\t\t-- TODO: ").Append(locale).Append(" = ")
                                         .Append(FormatStringForExport(string.Empty)).AppendLine(",");
                                 }
