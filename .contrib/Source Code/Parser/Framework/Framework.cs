@@ -703,7 +703,7 @@ namespace ATT
         /// <summary>
         /// All of the objects that have been loaded into the database.
         /// </summary>
-        internal static Dictionary<long, Dictionary<string, object>> ObjectDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
+        internal static IDictionary<long, IDictionary<string, object>> ObjectDB { get; private set; } = new Dictionary<long, IDictionary<string, object>>();
 
         /// <summary>
         /// The Phases table from main.lua that is used to generate custom headers.
@@ -2416,7 +2416,7 @@ namespace ATT
                             foreach (var key in keys)
                             {
                                 // We export dynamic object data to a different file.
-                                Dictionary<string, object> objectData = ObjectDB[key];
+                                IDictionary<string, object> objectData = ObjectDB[key];
                                 var builder = objectData.TryGetValue("dynamic", out bool isDynamic) && isDynamic ? dynamicbuilder : dbbuilder;
                                 builder.Append("\t[").Append(key).AppendLine("] = {");
 
@@ -3299,7 +3299,7 @@ namespace ATT
                     foreach (var key in keys)
                     {
                         // Check to see if ObjectDB has any information on our object.
-                        if (!ObjectDB.TryGetValue(key, out Dictionary<string, object> objectData))
+                        if (!ObjectDB.TryGetValue(key, out IDictionary<string, object> objectData))
                         {
                             // If not, get new object information from WoWHead.
                             objectData = new Dictionary<string, object>();
@@ -4215,8 +4215,19 @@ setmetatable(_.HeaderConstants, {
 
                 CurrentParseStage = ParseStage.ExportAutoSources;
 
-                // Attempt to find some dirty objects and write them to a dynamic file.
-                ObjectHarvester.ExportDirtyObjectsToFilePath($"./DATAS/00 - DB/Dynamic/DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
+                // sometimes we can parse with this config set and all ObjectDB will be re-generated based on cumulative object information in Retail
+                if (Config["DoConsolidateObjectDB"] && !PreProcessorTags.Contains("ANYCLASSIC"))
+                {
+                    ObjectHarvester.ExportObjectsToFilePath(ObjectDB, "./DATAS/00 - DB/ObjectDB.lua",
+@"-----------------------------------------------------
+--   O B J E C T   D A T A B A S E   M O D U L E   --
+-----------------------------------------------------");
+                }
+                else
+                {
+                    // Attempt to find some dirty objects and write them to a dynamic file.
+                    ObjectHarvester.ExportDirtyObjectsToFilePath($"./DATAS/00 - DB/Dynamic/DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
+                }
             }
         }
 

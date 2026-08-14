@@ -513,7 +513,7 @@ namespace ATT
                                 {
                                     if (keyValuePair.Value is Dictionary<string, object> data)
                                     {
-                                        if (!ObjectDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+                                        if (!ObjectDB.TryGetValue(keyValuePair.Key, out IDictionary<string, object> dataEntry))
                                         {
                                             ObjectDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
                                         }

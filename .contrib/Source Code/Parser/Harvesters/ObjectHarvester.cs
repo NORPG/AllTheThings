@@ -171,72 +171,79 @@ namespace ATT
         }
 
         /// <summary>
-        /// Export the dirty objects.
+        /// Export the provided objectDB
         /// </summary>
         /// <param name="extraIndent">The initial extra indent. (excluding the first line with the parenthesis)</param>
         /// <returns>The exported string in a builder or null if there are no dirty objects.</returns>
-        public static StringBuilder ExportDirtyObjects(string extraIndent = "")
+        public static StringBuilder ExportObjects(IDictionary<long, IDictionary<string, object>> db, string extraIndent = "")
         {
-            if (DIRTY_OBJECT_FIELDS.Any())
+            if (!db.Any())
+                return null;
+
+            var builder = new StringBuilder();
+            var keys = db.Keys.ToList();
+            Trace.Write("Found ");
+            Trace.Write(keys.Count());
+            Trace.WriteLine("Dirty objects. Exporting now...");
+            keys.Sort();
+            builder.AppendLine("{");
+            foreach (var key in keys)
             {
-                var builder = new StringBuilder();
-                var keys = DIRTY_OBJECT_FIELDS.Keys.ToList();
-                Trace.Write("Found ");
-                Trace.Write(keys.Count());
-                Trace.WriteLine("Dirty objects. Exporting now...");
-                keys.Sort();
-                builder.AppendLine("{");
-                foreach (var key in keys)
+                var objectData = db[key];
+                builder.Append(extraIndent).Append("\t[").Append(key).AppendLine("] = {");
+                if (objectData.TryGetValue("readable", out string readable))
                 {
-                    var objectData = DIRTY_OBJECT_FIELDS[key];
-                    builder.Append(extraIndent).Append("\t[").Append(key).AppendLine("] = {");
-                    if (objectData.TryGetValue("readable", out string readable))
+                    builder.Append(extraIndent).Append("\t\treadable = ").Append(FormatStringForExport(readable)).AppendLine(",");
+                }
+                if (objectData.TryGetValue("icon", out string icon))
+                {
+                    if (icon.Contains("\""))
                     {
-                        builder.Append(extraIndent).Append("\t\treadable = ")
-                            .Append(FormatStringForExport(readable)).AppendLine(",");
+                        builder.Append(extraIndent).Append("\t\ticon = ").Append(FormatStringForExport(icon)).AppendLine(",");
                     }
-                    if (objectData.TryGetValue("icon", out string icon))
+                    else
                     {
-                        builder.Append(extraIndent).Append("\t\ticon = ")
-                            .Append(FormatStringForExport(icon)).AppendLine(",");
+                        builder.Append(extraIndent).Append("\t\ticon = ").Append(icon).AppendLine(",");
                     }
-                    if (objectData.TryGetValue("model", out object model))
+                }
+                if (objectData.TryGetValue("model", out object model))
+                {
+                    builder.Append(extraIndent).Append("\t\tmodel = ").Append(model).AppendLine(",");
+                }
+                if (objectData.TryGetValue("text", out object localeObj) && localeObj is Dictionary<string, object> locales)
+                {
+                    builder.Append(extraIndent).AppendLine("\t\ttext = {");
+                    if (locales.TryGetValue("en", out string localeString))
                     {
-                        builder.Append(extraIndent).Append("\t\tmodel = ")
-                            .Append(model).AppendLine(",");
+                        builder.Append(extraIndent).Append("\t\t\ten = ").Append(FormatStringForExport(localeString)).AppendLine(",");
                     }
-                    if (objectData.TryGetValue("text", out object localeObj) && localeObj is Dictionary<string, object> locales)
+                    foreach (var locale in SupportedLocales)
                     {
-                        builder.Append(extraIndent).AppendLine("\t\ttext = {");
-                        if (locales.TryGetValue("en", out string localeString))
+                        if (locales.TryGetValue(locale, out localeString))
                         {
-                            builder.Append(extraIndent).Append("\t\t\ten = ")
-                                .Append(FormatStringForExport(localeString)).AppendLine(",");
-                        }
-                        foreach (var locale in SupportedLocales)
-                        {
-                            if (locales.TryGetValue(locale, out localeString))
+                            if (localeString == TODO_NAME)
                             {
-                                if (localeString == TODO_NAME)
-                                {
-                                    locales[locale] = null;
-                                    builder.Append(extraIndent).Append("\t\t\t-- TODO: ").Append(locale).Append(" = ")
-                                        .Append(FormatStringForExport(string.Empty)).AppendLine(",");
-                                }
-                                else
-                                {
-                                    builder.Append(extraIndent).Append("\t\t\t").Append(locale).Append(" = ")
-                                        .Append(FormatStringForExport(localeString)).AppendLine(",");
-                                }
+                                locales[locale] = null;
+                                builder.Append(extraIndent).Append("\t\t\t-- TODO: ").Append(locale).Append(" = ")
+                                    .Append(FormatStringForExport(string.Empty)).AppendLine(",");
+                            }
+                            else
+                            {
+                                builder.Append(extraIndent).Append("\t\t\t").Append(locale).Append(" = ")
+                                    .Append(FormatStringForExport(localeString)).AppendLine(",");
                             }
                         }
-                        builder.Append(extraIndent).AppendLine("\t\t},");
+                        else
+                        {
+                            builder.Append(extraIndent).Append("\t\t\t-- TODO: ").Append(locale).Append(" = ")
+                                .Append(FormatStringForExport(string.Empty)).AppendLine(",");
+                        }
                     }
-                    builder.Append(extraIndent).Append("\t").AppendLine("},");
+                    builder.Append(extraIndent).AppendLine("\t\t},");
                 }
-                return builder.Append(extraIndent).Append("}");
+                builder.Append(extraIndent).Append("\t").AppendLine("},");
             }
-            return null;
+            return builder.Append(extraIndent).Append("}");
         }
 
         /// <summary>
@@ -244,14 +251,21 @@ namespace ATT
         /// If there are no dirty objects, this function does nothing.
         /// </summary>
         /// <param name="filePath">The file path.</param>
-        public static void ExportDirtyObjectsToFilePath(string filePath)
+        public static void ExportDirtyObjectsToFilePath(string filePath) => ExportObjectsToFilePath(DIRTY_OBJECT_FIELDS, filePath);
+
+        /// <summary>
+        /// Exports the provided objectDB to a given file path.
+        /// </summary>
+        /// <param name="db"></param>
+        /// <param name="filePath"></param>
+        public static void ExportObjectsToFilePath(IDictionary<long, IDictionary<string, object>> db, string filePath, string filePrefix = null)
         {
-            var finalDirtyObjectStringBuilder = ExportDirtyObjects();
-            if (finalDirtyObjectStringBuilder != null)
+            var sb = ExportObjects(db);
+            if (sb != null)
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-                File.WriteAllText(filePath, finalDirtyObjectStringBuilder
-                    .Insert(0, "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
+                File.WriteAllText(filePath, sb
+                    .Insert(0, (filePrefix ?? string.Empty) + Environment.NewLine + "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
                     .Append($")\ndo ObjectDB[objectID] = objectData; end{Environment.NewLine}").ToString(), Encoding.UTF8);
             }
         }
@@ -295,7 +309,7 @@ namespace ATT
         /// <param name="objectID">The object ID.</param>
         /// <param name="objectData">The object data.</param>
         /// <returns>Whether or not the object is dirty.</returns>
-        public static bool UpdateInformationFromWoWHead(long objectID, Dictionary<string, object> objectData)
+        public static bool UpdateInformationFromWoWHead(long objectID, IDictionary<string, object> objectData)
         {
             // Don't look at "custom" objects... Yeesh. Why do these even exist?!
             if (objectID >= 9000000) return false;

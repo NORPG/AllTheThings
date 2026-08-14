@@ -1091,7 +1091,6 @@ _.CategoryIcons = {
 -- Custom Header Database Module
 _.HeaderConstants = {
 	ACHIEVEMENTS = -12,
-	ARTIFACTS = -214,
 	BLACK_MARKET_AUCTION_HOUSE = -554,
 	BREWFEST_HEADER = -557,
 	CHARACTER = -731,
@@ -1227,7 +1226,6 @@ localize(L.HEADER_NAMES, {
 	[-211] = FACTION_HORDE,
 	[-212] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,
 	[-213] = BATTLE_PET_SOURCE_10,
-	[-214] = ITEM_QUALITY6_DESC,
 	[-215] = ITEM_QUALITY1_DESC,
 	[-216] = ELITE,
 	[-217] = ITEM_QUALITY4_DESC,
@@ -1390,7 +1388,6 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Twilight Assist",
 	[-660] = "Twilight Duo",
 	[-661] = "Twilight Zone",
-	[-679] = CATALOG_SHOP_TYPE_DECOR,
 	[-691] = "Treasures of Azeroth",
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
@@ -1536,7 +1533,6 @@ localize(L.HEADER_ICONS, {
 	[-211] = 374221,
 	[-212] = 374222,
 	[-213] = _.asset("category_ingameshop"),
-	[-214] = _.asset("weapon_type_artifact"),
 	[-215] = 135030,
 	[-216] = 237273,
 	[-217] = 135028,
@@ -1698,7 +1694,6 @@ localize(L.HEADER_ICONS, {
 	[-659] = 236469,
 	[-660] = 236473,
 	[-661] = 236471,
-	[-679] = _.asset("interface_decor"),
 	[-691] = 7259806,
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
@@ -9520,7 +9515,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753956000,
+		release = 1753984800,
 		state = 2,
 	},
 	[5002] = {
@@ -9529,7 +9524,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1754992800,
+		release = 1755021600,
 		state = 2,
 	},
 	[5003] = {
@@ -9538,7 +9533,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755770400,
+		release = 1755799200,
 		state = 2,
 	},
 	[5004] = {
@@ -9547,7 +9542,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756202400,
+		release = 1756231200,
 		state = 2,
 	},
 	[5005] = {
@@ -9556,7 +9551,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756807200,
+		release = 1756836000,
 		state = 2,
 	},
 	[5006] = {
@@ -9565,7 +9560,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756980000,
+		release = 1757008800,
 		state = 2,
 	},
 	[5007] = {
@@ -9574,7 +9569,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758016800,
+		release = 1758045600,
 		state = 2,
 	},
 	[51] = {
@@ -9599,7 +9594,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765969200,
+		release = 1765998000,
 		state = 2,
 	},
 	[53] = {
@@ -9624,7 +9619,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781604000,
+		release = 1781632800,
 		state = 2,
 	},
 } L.PHASES = phases
@@ -33673,7 +33668,6 @@ localize(ObjectNames, {
 	[179703] = "炎魔之王的宝箱",
 	[179827] = "通缉/寻物/招领",
 	[179828] = "黑铁枕头",
-	[179832] = "[Pillamaster's Ornate Pillow]",
 	[179879] = "命令宝珠",
 	[179880] = "达基萨斯的烙印",
 	[179913] = "作战公告！",

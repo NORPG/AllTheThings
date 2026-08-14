@@ -192,7 +192,6 @@ namespace ATT
                 AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("objectiveID"), Validate_objectiveID);
             }
 
-            AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("headerID"), Validate_headerID);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("questID"), Validate_Quest);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("sym"), Validate_sym);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("factionID"), Validate_Faction);
@@ -1789,19 +1788,26 @@ namespace ATT
                 OBJECTS_WITH_REFERENCES[tempId] = true;
 
             // raw 'type' field on a 'header' are referenced
-            if (data.TryGetValue("headerID", out long headerID) && data.TryGetValue("type", out string type))
+            if (data.TryGetValue("headerID", out long headerID))
             {
-                switch (type)
+                if (data.TryGetValue("type", out string type))
                 {
-                    case "i":
-                        Items.MarkItemAsReferenced(headerID);
-                        break;
-                    case "n":
-                        NPCS_WITH_REFERENCES[headerID] = true;
-                        break;
-                    case "o":
-                        OBJECTS_WITH_REFERENCES[headerID] = true;
-                        break;
+                    switch (type)
+                    {
+                        case "i":
+                            Items.MarkItemAsReferenced(headerID);
+                            break;
+                        case "n":
+                            NPCS_WITH_REFERENCES[headerID] = true;
+                            break;
+                        case "o":
+                            OBJECTS_WITH_REFERENCES[headerID] = true;
+                            break;
+                    }
+                }
+                else
+                {
+                    CUSTOM_HEADERS_WITH_REFERENCES[headerID] = true;
                 }
             }
 

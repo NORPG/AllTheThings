@@ -1059,7 +1059,6 @@ _.CategoryIcons = {
 -- Custom Header Database Module
 _.HeaderConstants = {
 	ACHIEVEMENTS = -12,
-	ARTIFACTS = -214,
 	BREWFEST_HEADER = -557,
 	CHARACTER = -731,
 	CHEST = -90,
@@ -1189,7 +1188,6 @@ localize(L.HEADER_NAMES, {
 	[-211] = FACTION_HORDE,
 	[-212] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,
 	[-213] = BATTLE_PET_SOURCE_10,
-	[-214] = ITEM_QUALITY6_DESC,
 	[-215] = ITEM_QUALITY1_DESC,
 	[-217] = ITEM_QUALITY4_DESC,
 	[-219] = HEIRLOOMS,
@@ -1443,7 +1441,6 @@ localize(L.HEADER_ICONS, {
 	[-211] = 374221,
 	[-212] = 374222,
 	[-213] = _.asset("category_ingameshop"),
-	[-214] = _.asset("weapon_type_artifact"),
 	[-215] = 135030,
 	[-217] = 135028,
 	[-219] = _.asset("weapon_type_heirloom"),
@@ -27731,7 +27728,6 @@ localize(ObjectNames, {
 	[179703] = "炎魔之王的宝箱",
 	[179827] = "通缉/寻物/招领",
 	[179828] = "黑铁枕头",
-	[179832] = "[Pillamaster's Ornate Pillow]",
 	[179879] = "命令宝珠",
 	[179880] = "达基萨斯的烙印",
 	[179913] = "作战公告！",
