@@ -144,7 +144,6 @@ root(ROOTS.Unsorted, {
 			i(272273),	-- Unshrined Ceremonial Scepter
 			i(272274),	-- Realm Splitter
 			i(272275),	-- Soulsinger's Horn
-			i(272276),	-- Wailing Bulwark
 			i(272277),	-- Spirit-Reaver
 			i(272278),	-- Recurve Wisp-Shooter
 			i(272280),	-- Exhumed Soul-Cleaver
