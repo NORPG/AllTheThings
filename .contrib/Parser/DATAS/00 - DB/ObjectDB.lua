@@ -2447,6 +2447,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Coffre en morceaux",
 			pt = "Baú Gasto",
 			ru = "Побитый сундук",
+			ko = "낡은 궤짝",
 		},
 	},
 	[2848] = {
@@ -6263,6 +6264,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 219553,
 		text = {
 			en = "Ooze Covered Silver Vein",
+			es = "Filón de plata cubierto de moco",
 			de = "Brühschlammbedecktes Silbervorkommen",
 			fr = "Filon d'argent couvert de limon",
 			pt = "Veio de Prata Coberto de Gosma",
@@ -6292,8 +6294,11 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			es = "Caja fuerte de Vetaferro",
 			de = "Eisenbands Geldkassette",
 			fr = "Coffre de Baguefer",
+			it = "Forziere di Ferrocollo",
+			pt = "Cofre de Bandaferro",
 			ru = "Сейф Сталекрута",
 			ko = "아이언밴드의 금고",
+			cn = "铁环的保险箱",
 		},
 	},
 	[85563] = {
@@ -7387,6 +7392,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Gahz'ridian",
 			es = "Gahz'rilo",
+			de = "Gahz'ridian",
 			fr = "Gahz'ridienne",
 			ru = "Газ'рилльское украшение",
 			ko = "가즈리디안",
@@ -19987,6 +19993,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 191177,
 		text = {
 			en = "Frozen Rune",
+			ru = "Frozen Rune",
 		},
 	},
 	[181288] = {

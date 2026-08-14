@@ -326,6 +326,13 @@ namespace ATT
         /// <returns>Whether or not the object is dirty.</returns>
         public static bool UpdateInformationFromWoWHead(long objectID, IDictionary<string, object> objectData)
         {
+            // If the Object is flagged to skip wowhead
+            if (objectData.ContainsKey("ignorewowhead"))
+            {
+                objectData["ignorewowhead"] = null;
+                return false;
+            }
+
             // Wowhead Cloudflare CDN shadowbans your IP after about 30 requests within a minute or so
             if (WowheadShadowban) return false;
 
@@ -438,7 +445,7 @@ namespace ATT
             {
                 if (!textLocalizations.TryGetValue(locale, out string oldValue) || oldValue.Contains(englishText))
                 {
-                    string name = oldValue ?? TODO_NAME;
+                    string name = oldValue;
                     string document = GetDocumentFromWoWHead(objectID, locale, gameFlavor);
                     if (!string.IsNullOrEmpty(document))
                     {
@@ -449,7 +456,7 @@ namespace ATT
                             // don't store the English default for other locales
                             if (name.StartsWith("[") && name.EndsWith("]"))
                             {
-                                name = TODO_NAME;
+                                name = oldValue;
                             }
 
                             Trace.Write(" text.");
