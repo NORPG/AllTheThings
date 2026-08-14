@@ -476,7 +476,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(1296426),	--
 					r(1296427),	--
 					-- Without SpellID attached
-					i(275273),	-- Recipe: Sweet-And-Sour Skewer
+					i(278331),	-- Recipe: Sweet-And-Sour Skewer
 				})),
 			}),
 		}),

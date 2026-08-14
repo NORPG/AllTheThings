@@ -1015,11 +1015,11 @@ i(251630, 1295534);	-- Amani Cornucopia
 i(275301, 1295777);	-- Feast of Knowledge
 i(275300, 1295776);	-- Loa's Gathering
 i(278332, 1296418);	-- Puffer Plate
-i(278331, 1296419);	-- Sweet-And-Sour Skewers
+i(275273, 1296419);	-- Sweet-And-Sour Skewers
 i(275271, 1295783);	-- Venom-Spiced Cutlets
 --- NYI ---
 i(0, 1296257);		--
 i(0, 1296280);		--
 i(0, 1296426);		--
 i(0, 1296427);		--
-i(275273, 0);		-- Recipe: Sweet-And-Sour Skewer
+i(278331, 0);		-- Recipe: Sweet-And-Sour Skewer

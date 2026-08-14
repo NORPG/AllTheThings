@@ -1094,7 +1094,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				-- Only known source is the Bottle
 				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
 				i(275308),	-- Plans: Amani Forgemaster's Rack (RECIPE!)
-				i(278331),	-- Recipe: Sweet-And-Sour Skewers (RECIPE!)
+				i(275273),	-- Recipe: Sweet-And-Sour Skewers (RECIPE!)
 			},
 		}),
 		filter(BATTLE_PETS, {
