@@ -948,13 +948,6 @@ root(ROOTS.Unsorted, {
 			i(281021),	-- Eerie Lure
 			i(281227),	-- Soulcoiler's Rush'kah
 			i(281244),	-- Amani Scout's Quiver
-			i(281245),	-- Amani Scout's Shield
-			i(281247),	-- Amani Scout's Axe
-			i(281248),	-- Amani Scout's Bow
-			i(281249),	-- Amani Scout's Mojo
-			i(281311),	-- Amani Scout's Spear
-			i(281325),	-- Amani Scout's Quarterstaff
-			i(281326),	-- Amani Scout's Staff
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(278397),	-- Ephemeral Star Ooze
 			i(279332),	-- Keen Hex Mask

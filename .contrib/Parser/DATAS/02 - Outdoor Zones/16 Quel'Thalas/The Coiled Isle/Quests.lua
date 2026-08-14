@@ -898,7 +898,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 263674,	-- Scrollmaster Ruma
 						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
-							i(281226),	-- Arsenal: Scout Team Seven Weapons
+							iensemble(281226),	-- Arsenal: Scout Team Seven Weapons
 						},
 					}),
 					q(96098, {	-- The Final Reagents
