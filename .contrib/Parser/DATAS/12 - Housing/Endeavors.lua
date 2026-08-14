@@ -108,6 +108,18 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(274523, 15),	-- Woven Forest Troll Rug (DECOR!)
 				},
 			}),
+			n(267870, {	-- Unquestionably Griftah <Not Actually Griftah>
+				["coords"] = {
+					{ 62.4, 79.2, FOUNDERS_POINT },
+					{ 40.2, 73.0, RAZORWIND_SHORES },
+				},
+				["groups"] = {
+					i_DecorCoupons(244344, 10),	-- Griftah's Mystical Polter-Urn
+					i_DecorCoupons(263875, 10),	-- Griftah's Resizing Hex-Skull
+					i_DecorCoupons(276312, 10),	-- Griftah's Torch of Rotation
+					q(97075),	-- Quality Goods
+				},
+			}),
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
 			}, {
