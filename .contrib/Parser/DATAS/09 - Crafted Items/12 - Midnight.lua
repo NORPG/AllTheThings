@@ -413,6 +413,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(COOKING, {
+		i(275264, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Cornucopia
 		i(242287),	-- Arcano Cutlets
 		i(242298),	-- Argentleaf Tea
 		i(242301),	-- Azeroot Tea
@@ -425,6 +426,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(242277),	-- Crimson Calamari
 		i(242292),	-- Eversong Pudding
 		i(242309),	-- Farstrider Rations
+		i(275266, {["timeline"] = { ADDED_12_1_0 }}),	-- Feast of Knowledge
 		i(242286),	-- Fel-Kissed Filet
 		i(242294),	-- Felberry Figs
 		i(255848),	-- Flora Frenzy
@@ -433,6 +435,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(242281),	-- Glitter Skewers
 		i(255846),	-- Harandar Celebration
 		i(242295),	-- Hearthflame Supper
+		i(275267, {["timeline"] = { ADDED_12_1_0 }}),	-- Hearty Amani Cornucopia
 		i(242759),	-- Hearty Arcano Cutlets
 		i(242768),	-- Hearty Bloodthistle-Wrapped Cutlets
 		i(242769),	-- Hearty Bloom Skewers
@@ -444,6 +447,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(242764),	-- Hearty Eversong Pudding
 		i(242776),	-- Hearty Farstrider Rations
 		i(228721),	-- Hearty Feast
+		i(275269, {["timeline"] = { ADDED_12_1_0 }}),	-- Hearty Feast of Knowledge
 		i(242758),	-- Hearty Fel-Kissed Filet
 		i(242766),	-- Hearty Felberry Figs
 		i(268680),	-- Hearty Flora Frenzy
@@ -454,9 +458,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(266996),	-- Hearty Harandar Celebration
 		i(242767),	-- Hearty Hearthflame Supper
 		i(268679),	-- Hearty Impossibly Royal Roast
+		i(275268, {["timeline"] = { ADDED_12_1_0 }}),	-- Hearty Loa's Gathering
 		i(242770),	-- Hearty Mana-Infused Stew
 		i(242754),	-- Hearty Null and Void Plate
 		i(242775),	-- Hearty Portable Snack
+		i(275262, {["timeline"] = { ADDED_12_1_0 }}),	-- Hearty Puffer Plate
 		i(242744),	-- Hearty Quel'dorei Medley
 		i(242774),	-- Hearty Quick Sandwich
 		i(242747),	-- Hearty Royal Roast
@@ -466,16 +472,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(242771),	-- Hearty Spiced Biscuits
 		i(242755),	-- Hearty Sun-Seared Lumifin
 		i(242765),	-- Hearty Sunwell Delight
+		i(275263, {["timeline"] = { ADDED_12_1_0 }}),	-- Hearty Sweet-And-Sour Skewers
 		i(242750),	-- Hearty Tasty Smoked Tetra
 		i(242760),	-- Hearty Twilight Angler's Medley
+		i(275259, {["timeline"] = { ADDED_12_1_0 }}),	-- Hearty Venom-Spiced Cutlets
 		i(242756),	-- Hearty Void-Kissed Fish Rolls
 		i(242757),	-- Hearty Warped Wise Wings
 		i(242762),	-- Hearty Wise Tails
 		i(255847),	-- Impossibly Royal Roast
+		i(275265, {["timeline"] = { ADDED_12_1_0 }}),	-- Loa's Gathering
 		i(242297),	-- Mana Lily Tea
 		i(242303),	-- Mana-Infused Stew
 		i(242282),	-- Null and Void Plate
 		i(242308),	-- Portable Snack
+		i(275260, {["timeline"] = { ADDED_12_1_0 }}),	-- Puffer Plate
 		i(242272),	-- Quel'dorei Medley
 		i(242307),	-- Quick Sandwich
 		i(242275),	-- Royal Roast
@@ -486,10 +496,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(242304),	-- Spiced Biscuits
 		i(242283),	-- Sun-Seared Lumifin
 		i(242293),	-- Sunwell Delight
+		i(275261, {["timeline"] = { ADDED_12_1_0 }}),	-- Sweet-And-Sour Skewers
 		i(242278),	-- Tasty Smoked Tetra
 		i(253403),	-- Thalassian Fillet
 		i(242300),	-- Tranquility Bloom Tea
 		i(242288),	-- Twilight Angler's Medley
+		i(275258, {["timeline"] = { ADDED_12_1_0 }}),	-- Venom-Spiced Cutlets
 		i(242284),	-- Void-Kissed Fish Rolls
 		i(242285),	-- Warped Wise Wings
 		i(242290),	-- Wise Tails
@@ -1082,6 +1094,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				-- Only known source is the Bottle
 				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
 				i(275308),	-- Plans: Amani Forgemaster's Rack (RECIPE!)
+				i(278331),	-- Recipe: Sweet-And-Sour Skewers (RECIPE!)
 			},
 		}),
 		filter(BATTLE_PETS, {

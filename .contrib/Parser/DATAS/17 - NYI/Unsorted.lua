@@ -18,7 +18,6 @@ root(ROOTS.Unsorted, {
 			i(249223),	-- Corrosive Bilespear
 			i(249227),	-- Dundun's Favor
 			i(249228),	-- Soul-Cracking Dreamcatcher
-			i(251630),	-- Recipe: Amani Cornucopia
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
@@ -265,19 +264,6 @@ root(ROOTS.Unsorted, {
 			i(275235),	-- Ruby Bracelet of Friendship
 			i(275236),	-- Silver Bracelet of Friendship
 			i(275237),	-- Crystal Bracelet of Friendship
-			i(275258),	-- Venom-Spiced Cutlets
-			i(275259),	-- Hearty Venom-Spiced Cutlets
-			i(275260),	-- Puffer Plate
-			i(275261),	-- Sweet-And-Sour Skewers
-			i(275262),	-- Hearty Puffer Plate
-			i(275263),	-- Hearty Sweet-And-Sour Skewers
-			i(275264),	-- Amani Cornucopia
-			i(275265),	-- Loa's Gathering
-			i(275266),	-- Feast of Knowledge
-			i(275267),	-- Hearty Amani Cornucopia
-			i(275268),	-- Hearty Loa's Gathering
-			i(275269),	-- Hearty Feast of Knowledge
-			i(275273),	-- Recipe: Sweet-And-Sour Skewer
 			i(275274),	-- Alchemy
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
@@ -490,7 +476,6 @@ root(ROOTS.Unsorted, {
 			i(278289),	-- Nebulous Voidcache: The Twin Fangs
 			i(278290),	-- Nebulous Voidcache: The Bargained Crown
 			i(278330),	-- Schematic: R0CKY
-			i(278331),	-- Recipe: Sweet-And-Sour Skewers
 			i(278333),	-- Schematic: R0CKY-To-Go
 			i(278335),	-- Cerulean Pearl
 			i(278337),	-- Amber Pearl
