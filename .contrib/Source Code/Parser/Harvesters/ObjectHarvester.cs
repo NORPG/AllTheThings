@@ -327,7 +327,7 @@ namespace ATT
             }
             else
             {
-                objectData["text"] = textLocalizations = new Dictionary<string, object>();
+                textLocalizations = new Dictionary<string, object>();
                 dirty = true;
             }
 
@@ -410,6 +410,8 @@ namespace ATT
                 }
             }
 
+            // Only update the object data if we have obtained the en locale (Wowhead likes to shadow ban repeated url requests)
+            objectData["text"] = textLocalizations;
             // The english text, which acts as the default.
             string englishText = textLocalizations["en"].ToString();
 
