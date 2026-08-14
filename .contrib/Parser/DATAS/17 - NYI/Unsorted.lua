@@ -98,10 +98,6 @@ root(ROOTS.Unsorted, {
 			i(272148),	-- Anguine Gyre
 			i(272149),	-- Hex Loop
 			i(272150),	-- Ouroboric Signet
-			i(272191),	-- [PH] 12.1 Darkmoon Sigil
-			i(272192),	-- [PH] 12.1 Darkmoon Sigil
-			i(272194),	-- Vantus Rune: Tides
-			i(272195),	-- Vantus Rune: Tides
 			i(272225),	-- Galerider's Mantle
 			i(272226),	-- Miststalker's Shroud
 			i(272227),	-- Pyrewalker's Veil
@@ -264,10 +260,6 @@ root(ROOTS.Unsorted, {
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
-			i(275322),	-- Technique: Ferocious Feline Trinket
-			i(275324),	-- Technique: Inscribed Amani Mural
-			i(275326),	-- Technique: Chiseled Amani Tablet
-			i(275328),	-- Technique: Turquoise Amani Tapestry
 			i(275334),	-- Pattern: Stretched Snakeskin Rack
 			i(275338),	-- Pattern: Rolled Bed Linens
 			i(275526),	-- Preyhunter's Band
@@ -425,8 +417,6 @@ root(ROOTS.Unsorted, {
 			i(277945),	-- Melancholic Offering
 			i(277946),	-- Choleric Offering
 			i(277955),	-- Ethereal Bead Strand
-			i(277968),	-- Contract: Zul'jarra's Forces
-			i(277969),	-- Contract: Zul'jarra's Forces
 			i(277985),	-- Mysterious Offering
 			i(277989),	-- Ghostcaller's Bell
 			i(277990),	-- Cursemail Gauntlets
@@ -700,7 +690,6 @@ root(ROOTS.Unsorted, {
 			i(279365),	-- Fine Captain's Bottle
 			i(279367),	-- Piercing Amani Lapis
 			i(279368),	-- Inscribed Amani Mural
-			i(279369),	-- Chiseled Amani Tablet
 			i(279370),	-- Roaring Amani Garnet
 			i(279371),	-- Flat Snakeskin Canopy
 			i(279372),	-- Stretched Snakeskin Rack
@@ -907,8 +896,6 @@ root(ROOTS.Unsorted, {
 			i(280700),	-- Armbands of the Rotten Claw
 			i(280701),	-- Waistwrap of the Fanged
 			i(280709),	-- Triple Threat Pauldrons
-			i(280752),	-- "Cursed Gaze of Ula'tek" Mural
-			i(280757),	-- Chiseled Amani Tablet
 			i(280762),	-- Roaring Amani Garnet
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case

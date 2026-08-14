@@ -1109,6 +1109,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				i(275684),	-- Schematic: DU5TY, Lazy Looter (RECIPE!)
 				i(278330),	-- Schematic: R0CKY (RECIPE!)
 				i(278333),	-- Schematic: R0CKY-To-Go (RECIPE!)
+				i(275326),	-- Technique: Chiseled Amani Tablet (RECIPE!)
+				i(275324),	-- Technique: Inscribed Amani Mural (RECIPE!)
 			},
 		}),
 		filter(BATTLE_PETS, {
@@ -1311,6 +1313,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			}),
 		}),
 		n(DECOR, {
+			i(280757, {["timeline"] = { ADDED_12_1_0 }}),	-- Chiseled Amani Tablet (DECOR!)
 			i(262464),	-- Floating Void-Touched Tome (DECOR!)
 			i(262597),	-- Gilded Eversong Book (DECOR!)
 			i(253508),	-- Harandar Signpost (DECOR!)
@@ -1323,6 +1326,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(262615),	-- Sin'dorei Phoenix Quill (DECOR!)
 			i(262612),	-- Sturdy Ren'dorei Cask (DECOR!)
 			i(262601),	-- Wild Hanging Scroll (DECOR!)
+			i(280752, {["timeline"] = { ADDED_12_1_0 }}),	-- "Cursed Gaze of Ula'tek" Mural (DECOR!)
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = INSCRIPTION,
@@ -1423,6 +1427,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245800),	-- Contract: The Silvermoon Court++
 			i(245793),	-- Contract: The Singularity+
 			i(245794),	-- Contract: The Singularity++
+			i(277968, {["timeline"] = { ADDED_12_1_0 }}),	-- Contract: Zul'jarra's Forces+
+			i(277969, {["timeline"] = { ADDED_12_1_0 }}),	-- Contract: Zul'jarra's Forces++
 			i(245755, {	-- Thalassian Treatise on Alchemy
 				["questID"] = 95127,
 				["isWeekly"] = true,
@@ -1480,6 +1486,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			}),
 			i(245879),	-- Vantus Rune: Radiant+
 			i(245880),	-- Vantus Rune: Radiant++
+			i(272194, {["timeline"] = { ADDED_12_1_0 }}),	-- Vantus Rune: Tides+
+			i(272195, {["timeline"] = { ADDED_12_1_0 }}),	-- Vantus Rune: Tides++
 			i(245856),	-- Ace of Blood
 			i(245857),	-- Two of Blood
 			i(245858),	-- Three of Blood
