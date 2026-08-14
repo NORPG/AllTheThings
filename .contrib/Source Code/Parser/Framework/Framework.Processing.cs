@@ -220,6 +220,7 @@ namespace ATT
             AddHandlerAction(ParseStage.Consolidation, data => data.ContainsKey("_objectiveItems"), Consolidate__objectiveItems);
             AddHandlerAction(ParseStage.Consolidation, data => data.ContainsKey("questID"), Consolidate_questID);
             AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_Parallel);
+            AddHandlerAction(ParseStage.Consolidation, data => data.ContainsKey("_unsorted"), Consolidate_CheckUnsortedDuplicates);
             // the last operation since it involves deletion of many fields from data which may otherwise be needed in prior steps
             AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_Cleaning);
             // special case for Classic -- any 'spell' object with a 'Recipe' filter can convert to a Recipe
@@ -1133,6 +1134,35 @@ namespace ATT
             Consolidate_TrackUsage(data);
         }
 
+        private static void Consolidate_CheckUnsortedDuplicates(Data data)
+        {
+            foreach (var sourcedListByKey in GetAllMatchingSOURCED(data))
+            {
+                switch (sourcedListByKey.Item1)
+                {
+                    // itemID's need extra checking to verify the same data is being referenced since mod/bonus can modify the data
+                    case "itemID":
+                        decimal modItemID = Items.GetSpecificItemID(data, false);
+                        // check for all _unsorted records in the SOURCED groups
+                        if (sourcedListByKey.Item2.Any(d => d != data && !d.ContainsKey("_unsorted") && Items.GetSpecificItemID(d, false) == modItemID))
+                        {
+                            LogDebugWarn($"Unsorted Item data has also been Sourced", data);
+                            break;
+                        }
+                        break;
+
+                    default:
+                        // check for all _unsorted records in the SOURCED groups
+                        if (sourcedListByKey.Item2.Any(d => d != data && !d.ContainsKey("_unsorted")))
+                        {
+                            LogDebugWarn($"Unsorted data has also been Sourced", data);
+                            break;
+                        }
+                        break;
+                }
+            }
+        }
+
         private static void Consolidate_Cleaning(IDictionary<string, object> data)
         {
             // convert the 'name' into an auto-localized type
@@ -1160,19 +1190,6 @@ namespace ATT
             if (data.TryGetValue("type", out string type) && type == "TODO")
             {
                 data.Remove("type");
-            }
-
-            if (data.ContainsKey("_unsorted"))
-            {
-                foreach (var sourcedListByKey in GetAllMatchingSOURCED(data))
-                {
-                    // check for all _unsorted records in the SOURCED groups
-                    if (sourcedListByKey.Any(d => !d.ContainsKey("_unsorted")))
-                    {
-                        LogDebugWarn($"Unsorted data has also been Sourced", data);
-                        break;
-                    }
-                }
             }
 
             foreach (KeyValuePair<string, object> dataKvp in data)
@@ -1630,27 +1647,61 @@ namespace ATT
 
         internal static bool TryGetSOURCED(string field, object idObj, out ConcurrentHashSet<IDictionary<string, object>> sources)
         {
-            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
-                && idObj.TryConvert(out long id)
-                && id > 0
-                && fieldSources.TryGetValue(id, out sources))
+            switch (field)
             {
-                return true;
+                case "modItemID":
+                    {
+                        field = "itemID";
+                        if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
+                            && idObj.TryConvert(out long id)
+                            && id > 0
+                            && fieldSources.TryGetValue(id, out sources))
+                        {
+                            idObj.TryConvert(out decimal modItemID);
+                            // verify the items in the sources are all the exact itemID as requested
+                            if (sources.All(s => Items.GetSpecificItemID(s) == modItemID))
+                            {
+                                return true;
+                            }
+
+                            var matchingItems = new ConcurrentHashSet<Data>();
+                            foreach (var source in sources)
+                            {
+                                if (Items.GetSpecificItemID(source) == modItemID)
+                                {
+                                    matchingItems.Add(source);
+                                }
+                            }
+                            sources = matchingItems;
+                            return matchingItems.Count > 0;
+                        }
+                    }
+                    break;
+
+                default:
+                    {
+                        if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
+                            && idObj.TryConvert(out long id)
+                            && id > 0
+                            && fieldSources.TryGetValue(id, out sources))
+                        {
+                            return true;
+                        }
+                    }
+                    break;
             }
 
             sources = default;
             return false;
         }
 
-        private static IEnumerable<IEnumerable<IDictionary<string, object>>> GetAllMatchingSOURCED(IDictionary<string, object> data)
+        private static IEnumerable<(string, IEnumerable<IDictionary<string, object>>)> GetAllMatchingSOURCED(IDictionary<string, object> data)
         {
             foreach (KeyValuePair<string, object> field in data)
             {
-                if (SOURCED.TryGetValue(field.Key, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
-                    && field.Value.TryConvert(out long id) && id > 0
-                    && fieldSources.TryGetValue(id, out ConcurrentHashSet<IDictionary<string, object>> objectSources))
+                foreach (var set in GetAllMatchingSOURCED(field.Key, field.Value))
                 {
-                    yield return objectSources;
+                    yield return (field.Key, set);
                 }
             }
         }

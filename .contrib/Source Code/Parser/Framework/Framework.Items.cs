@@ -1185,7 +1185,7 @@ namespace ATT
             /// </summary>
             /// <param name="data"></param>
             /// <returns></returns>
-            public static decimal GetSpecificItemID(IDictionary<string, object> data)
+            public static decimal GetSpecificItemID(IDictionary<string, object> data, bool doCache = true)
             {
                 if (data.TryGetValue("_modItemID", out decimal modItemID))
                 {
@@ -1200,7 +1200,10 @@ namespace ATT
                 data.TryGetValue("bonusID", out long bonusID);
 
                 modItemID = GetSpecificItemID(itemID, modID, bonusID);
-                data["_modItemID"] = modItemID;
+                if (doCache)
+                {
+                    data["_modItemID"] = modItemID;
+                }
                 return modItemID;
             }
             #endregion
