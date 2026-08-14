@@ -166,8 +166,6 @@ root(ROOTS.Unsorted, {
 			i(273068),	-- Adorned Fang
 			i(273069),	-- Adorned Fang
 			i(273070),	-- Pattern: Adorned Fang
-			i(273071),	-- Enchant Weapon - Rite of the Hash'ey
-			i(273072),	-- Enchant Weapon - Rite of the Hash'ey
 			i(273303),	-- Ritual Gem
 			i(273311),	-- Kobold Candle Collection
 			i(273312),	-- Large Exodar Crystal
@@ -706,8 +704,6 @@ root(ROOTS.Unsorted, {
 			i(279290),	-- Fang Lover's
 			i(279345),	-- Corroded Satchel
 			i(279360),	-- Amani Forgemaster's Rack
-			i(279361),	-- Keen Hex Mask
-			i(279362),	-- Furious Tiki Mask
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot
 			i(279365),	-- Fine Captain's Bottle
@@ -908,7 +904,6 @@ root(ROOTS.Unsorted, {
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
 			i(274422),	-- Ossified Relic
-			i(279335),	-- Enchanted Voidwell Fish
 			i(279337),	-- Coiled Amani Hookshot
 			i(279339),	-- Proudmoore Ship-in-a-Bottle
 			i(279341),	-- Aetherlume Field Lamp
@@ -935,7 +930,6 @@ root(ROOTS.Unsorted, {
 			i(281244),	-- Amani Scout's Quiver
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(278397),	-- Ephemeral Star Ooze
-			i(279332),	-- Keen Hex Mask
 			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans

@@ -579,11 +579,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(DECOR, {
 			i(262459),	-- Animated Sin'dorei Hammer (DECOR!)
 			i(262458),	-- Animated Sin'dorei Pick (DECOR!)
+			i(279335, {["timeline"] = { ADDED_12_1_0 }}),	-- Enchanted Voidwell Fish (DECOR!)
 			i(268038),	-- Endless Codex of Blooming Light (DECOR!)
 			i(268039),	-- Endless Codex of Nature's Grace (DECOR!)
 			i(268041),	-- Endless Codex of the Voidtouched (DECOR!)
 			i(262450),	-- Ensorcelled Broom (DECOR!)
 			i(262455),	-- Font of Gleaming Water (DECOR!)
+			i(279362, {["timeline"] = { ADDED_12_1_0 }}),	-- Furious Tiki Mask (DECOR!)
+			i(279332, {["timeline"] = { ADDED_12_1_0 }}),	-- Keen Hex Mask (DECOR!)
 			i(262468),	-- Ren'dorei Postal Repository (DECOR!)
 			i(262590),	-- Rootflame Campfire (DECOR!)
 			i(246693),	-- Self-Pouring Thalassian Sunwine (DECOR!)
@@ -787,6 +790,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244027),	-- Enchant Weapon - Flames of the Sin'dorei++
 			i(243970),	-- Enchant Weapon - Jan'alai's Precision+
 			i(243971),	-- Enchant Weapon - Jan'alai's Precision++
+			i(273071, {["timeline"] = { ADDED_12_1_0 }}),	-- Enchant Weapon - Rite of the Hash'ey+
+			i(273072, {["timeline"] = { ADDED_12_1_0 }}),	-- Enchant Weapon - Rite of the Hash'ey++
 			i(243968),	-- Enchant Weapon - Strength of Halazzi+
 			i(243969),	-- Enchant Weapon - Strength of Halazzi++
 			i(243998),	-- Enchant Weapon - Worldsoul Aegis+
