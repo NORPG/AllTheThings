@@ -157,9 +157,6 @@ root(ROOTS.Unsorted, {
 			i(272283),	-- Swordsman's Emanation
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
-			i(273062),	-- Coiled Snake-Eye
-			i(273063),	-- Coiled Snake-Eye
-			i(273064),	-- Schematic: Coiled Snake-Eye
 			i(273065),	-- Polished Ammolite
 			i(273066),	-- Polished Ammolite
 			i(273067),	-- Design: Polished Ammolite
@@ -267,7 +264,6 @@ root(ROOTS.Unsorted, {
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
-			i(275320),	-- Schematic: Aetherlume Field Lamp
 			i(275322),	-- Technique: Ferocious Feline Trinket
 			i(275324),	-- Technique: Inscribed Amani Mural
 			i(275326),	-- Technique: Chiseled Amani Tablet
@@ -295,9 +291,6 @@ root(ROOTS.Unsorted, {
 			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
 			i(275659),	-- Hexflame Reaver
-			i(275676),	-- R0CKY-To-Go
-			i(275683),	-- G-00
-			i(275684),	-- Schematic: DU5TY, Lazy Looter
 			i(275695),	-- Design: Piercing Amani Lapis
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
@@ -473,8 +466,6 @@ root(ROOTS.Unsorted, {
 			i(278288),	-- Nebulous Voidcache: Sszorak
 			i(278289),	-- Nebulous Voidcache: The Twin Fangs
 			i(278290),	-- Nebulous Voidcache: The Bargained Crown
-			i(278330),	-- Schematic: R0CKY
-			i(278333),	-- Schematic: R0CKY-To-Go
 			i(278335),	-- Cerulean Pearl
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
@@ -707,7 +698,6 @@ root(ROOTS.Unsorted, {
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot
 			i(279365),	-- Fine Captain's Bottle
-			i(279366),	-- Aetherlume Field Lamp
 			i(279367),	-- Piercing Amani Lapis
 			i(279368),	-- Inscribed Amani Mural
 			i(279369),	-- Chiseled Amani Tablet
@@ -904,9 +894,6 @@ root(ROOTS.Unsorted, {
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
 			i(274422),	-- Ossified Relic
-			i(279337),	-- Coiled Amani Hookshot
-			i(279339),	-- Proudmoore Ship-in-a-Bottle
-			i(279341),	-- Aetherlume Field Lamp
 			i(279343),	-- Piercing Amani Lapis
 			i(279346),	-- Stretched Snakeskin Rack
 			i(279348),	-- Mounted Moby
@@ -947,7 +934,13 @@ root(ROOTS.Unsorted, {
 			i(269937),	-- Neighborhood Knick Knack
 			i(279356),	-- Opalescent Amani Peridot
 			i(280503),	-- Ulantu's Notes
-
+			n(PROFESSIONS, {
+				prof(ENGINEERING, {
+					i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)
+					i(273062),	-- Coiled Snake-Eye+
+					i(273063),	-- Coiled Snake-Eye++
+				}),
+			}),
 
 			--[[ If Darkal Needs
 			n(CLASS, {

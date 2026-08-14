@@ -1601,7 +1601,7 @@ i(0, 1236487);		-- Runed Brilliant Silver Rod
 i(0, 1235731);		-- Shatter Essence
 
 ------------------
--- PATCH 12.0.1 --
+-- PATCH 12.1.0 --
 ------------------
 --- ITEM ---
 i(273073, 1291694);	-- Enchant Weapon - Rite of the Hash'ey

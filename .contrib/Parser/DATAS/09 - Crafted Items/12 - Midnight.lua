@@ -862,7 +862,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(257750),	-- Laced Zoomshots++
 		}),
 		n(DECOR, {
+			i(279341, {["timeline"] = { ADDED_12_1_0 }}),	-- Aetherlume Field Lamp (DECOR!)
 			i(246460),	-- Ambient Aethercharged Crystal (DECOR!)
+			i(279337, {["timeline"] = { ADDED_12_1_0 }}),	-- Coiled Amani Hookshot (DECOR!)
+			i(279339, {["timeline"] = { ADDED_12_1_0 }}),	-- Proudmoore Ship-in-a-Bottle (DECOR!)
 			i(262617),	-- Ren'dorei Crafting Framework (DECOR!)
 			i(263049),	-- Ren'dorei Lightpost (DECOR!)
 			i(262465),	-- Ren'dorei Stargazer (DECOR!)
@@ -984,6 +987,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(248486),	-- Emergency Soul Link+
 			i(269586),	-- Emergency Soul Link++
 			i(248137),	-- M3DDY
+			i(275676, {["timeline"] = { ADDED_12_1_0 }}),	-- R0CKY-To-Go
 			i(248409),	-- W-47CH D0G
 			i(257751),	-- Weighted Boomshots+
 			i(257752),	-- Weighted Boomshots++
@@ -1074,6 +1078,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r(1229928),	-- Wormhole Generator: Quel'Thalas
 		}),
 		filter(TOYS, {
+			i(275683, {["timeline"] = { ADDED_12_1_0 }}),	-- G-00 (TOY!)
 			i(248485),	-- Wormhole Generator: Quel'Thalas (TOY!)
 		}),
 		n(WEAPONS, {
@@ -1100,6 +1105,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
 				i(275308),	-- Plans: Amani Forgemaster's Rack (RECIPE!)
 				i(275273),	-- Recipe: Sweet-And-Sour Skewers (RECIPE!)
+				i(275320),	-- Schematic: Aetherlume Field Lamp (RECIPE!)
+				i(275684),	-- Schematic: DU5TY, Lazy Looter (RECIPE!)
+				i(278330),	-- Schematic: R0CKY (RECIPE!)
+				i(278333),	-- Schematic: R0CKY-To-Go (RECIPE!)
 			},
 		}),
 		filter(BATTLE_PETS, {
