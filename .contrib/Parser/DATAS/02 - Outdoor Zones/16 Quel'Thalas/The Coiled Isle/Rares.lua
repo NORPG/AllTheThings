@@ -54,7 +54,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 53.8, 72.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["provider"] = { "o", 653176 },	-- Unguarded Chest
 					["questID"] = 96491,
-					["groups"] = { i(280717) },	-- Farthik's Precious Pendant
+					["groups"] = {
+						i(280717),	-- Farthik's Precious Pendant
+						i(280692),	-- Plunderer's Pummeler
+					},
 				}),
 				n(258916, {	-- Garsecg <The Hull Render>
 					["coord"] = { 69.7, 44.9, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -137,12 +140,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				n(257863, {	-- Vassti, the Exalted Broodmother
-					--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["coord"] = { 45.2, 28.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					--["questID"] = XXXXX,
 					["groups"] = { i(276175) },	-- Broodmother's Embrace
 				}),
 				n(255927, {	-- Venom Lancer Ori'kassi
-					--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["coord"] = { 67.6, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 					--["questID"] = XXXXX,
 				}),
 			})),

@@ -944,14 +944,12 @@ root(ROOTS.Unsorted, {
 			i(279343),	-- Piercing Amani Lapis
 			i(279346),	-- Stretched Snakeskin Rack
 			i(279348),	-- Mounted Moby
-			i(279350),	-- Rolled Bed Linens \\ Twilight's Blade Bedroll
 			i(279353),	-- Tortollan Slingsack
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
 			i(280540),	-- Lil' Mon
 			i(280581),	-- Wintry Witchwick's Rider
 			i(280691),	-- Dagger of the Slithering Ritual
-			i(280692),	-- Plunderer's Pummeler
 			i(280698),	-- Szarith's Underbelly Slicer
 			i(280700),	-- Armbands of the Rotten Claw
 			i(280701),	-- Waistwrap of the Fanged
@@ -962,7 +960,6 @@ root(ROOTS.Unsorted, {
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
-			i(281226),	-- Arsenal: Scout Team Seven Weapons
 			i(281227),	-- Soulcoiler's Rush'kah
 			i(281244),	-- Amani Scout's Quiver
 			i(281245),	-- Amani Scout's Shield

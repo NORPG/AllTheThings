@@ -88,6 +88,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
+			q(96649, {	-- Mistcrest Capstone
+				["sourceQuests"] = { 96637 },	-- Veteran Symposium
+				["provider"] = { "n", 239676 },	-- Vaskarn
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
 			-- Sparks
 			q(93942, {	-- Spark of Radiance
 				["provider"] = { "i", 232875 },	-- Spark of Radiance
