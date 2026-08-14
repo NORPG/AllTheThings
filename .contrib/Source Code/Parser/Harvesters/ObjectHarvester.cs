@@ -51,6 +51,11 @@ namespace ATT
         /// </summary>
         private const string NOT_FOUND_MESSAGE = "\"database-detail-page-not-found-message\"";
 
+        /// <summary>
+        /// Represents that a specific name should render as a commented TODO rather than directly exported
+        /// </summary>
+        public const string TODO_NAME = "-- TODO";
+
         private static List<string> _gameFlavors;
         /// <summary>
         /// The game flavors of WoWHead to try querying.
@@ -170,7 +175,7 @@ namespace ATT
         /// </summary>
         /// <param name="extraIndent">The initial extra indent. (excluding the first line with the parenthesis)</param>
         /// <returns>The exported string in a builder or null if there are no dirty objects.</returns>
-        public static StringBuilder ExportDirtyObjects(string extraIndent="")
+        public static StringBuilder ExportDirtyObjects(string extraIndent = "")
         {
             if (DIRTY_OBJECT_FIELDS.Any())
             {
@@ -212,8 +217,16 @@ namespace ATT
                         {
                             if (locales.TryGetValue(locale, out localeString))
                             {
-                                builder.Append(extraIndent).Append("\t\t\t").Append(locale).Append(" = ")
-                                    .Append(FormatStringForExport(localeString)).AppendLine(",");
+                                if (localeString == TODO_NAME)
+                                {
+                                    builder.Append(extraIndent).Append("\t\t\t-- TODO: ").Append(locale).Append(" = ")
+                                        .Append(FormatStringForExport(string.Empty)).AppendLine(",");
+                                }
+                                else
+                                {
+                                    builder.Append(extraIndent).Append("\t\t\t").Append(locale).Append(" = ")
+                                        .Append(FormatStringForExport(localeString)).AppendLine(",");
+                                }
                             }
                         }
                         builder.Append(extraIndent).AppendLine("\t\t},");
@@ -268,7 +281,7 @@ namespace ATT
         /// <returns>The name or an empty string.</returns>
         private static string ParseNameFromDocument(string document)
         {
-            if(document.Contains(NOT_FOUND_MESSAGE)) return string.Empty;
+            if (document.Contains(NOT_FOUND_MESSAGE)) return string.Empty;
             int index = document.IndexOf(NAME_START);
             if (index == -1) return string.Empty;
             index += NAME_START.Length;
@@ -397,6 +410,12 @@ namespace ATT
                         string name = ParseNameFromDocument(document);
                         if (!string.IsNullOrEmpty(name))
                         {
+                            // don't store the English default for other locales
+                            if (name.StartsWith("[") && name.EndsWith("]"))
+                            {
+                                name = TODO_NAME;
+                            }
+
                             Trace.Write(" text.");
                             Trace.Write(locale);
                             Trace.Write(" = ");
@@ -409,7 +428,7 @@ namespace ATT
                     }
                 }
             }
-            if(dirty && dirtyFields.Any()) DIRTY_OBJECT_FIELDS[objectID] = dirtyFields;
+            if (dirty && dirtyFields.Any()) DIRTY_OBJECT_FIELDS[objectID] = dirtyFields;
             return dirty;
         }
     }
