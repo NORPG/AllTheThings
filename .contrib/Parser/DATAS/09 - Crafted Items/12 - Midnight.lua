@@ -1234,7 +1234,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1223137, 87741),	-- Azeroot
 			r_withQuest(1301647, 97233, ADDED_12_1_0),	-- Cursed Argentleaf
 			r_withQuest(1301649, 97232, ADDED_12_1_0),	-- Cursed Azeroot
-			--r_withQuest(1301651, XXXXX, ADDED_12_1_0),	-- Cursed Mana Lily
+			r_withQuest(1301651, 97230, ADDED_12_1_0),	-- Cursed Mana Lily
 			r_withQuest(1301654, 97231, ADDED_12_1_0),	-- Cursed Sanguithorn
 			r_withQuest(1301655, 97229, ADDED_12_1_0),	-- Cursed Tranquility Bloom
 			r_withQuest(1224882, 87749),	-- Lightfused Argentleaf
