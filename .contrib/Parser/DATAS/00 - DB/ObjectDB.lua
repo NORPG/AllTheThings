@@ -314537,12 +314537,6 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Axe",
 		},
 	},
-	[553966] = {
-		readable = "Pygmy Oil",
-		text = {
-			en = "Pygmy Oil",
-		},
-	},
 	[554501] = {
 		readable = "Dropped Shield",
 		model = 192182,
@@ -321027,18 +321021,6 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 5389582,
 		text = {
 			en = "Frostbitten Tabard",
-		},
-	},
-	[614767] = {
-		readable = "Giant Growth Potion",
-		text = {
-			en = "Giant Growth Potion",
-		},
-	},
-	[614789] = {
-		readable = "Inky Black Potion",
-		text = {
-			en = "Inky Black Potion",
 		},
 	},
 	[614803] = {

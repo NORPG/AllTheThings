@@ -301,9 +301,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					["coord"] = { 18.4, 44.1, ARCANTINA },
 					["questID"] = 92351,
 				}),
-				-- o(614767, {	-- Giant Growth Potion
-				-- 	["coord"] = { 46.7, 61.5, ARCANTINA },
-				-- }),
 			}),
 			o_repeated({	-- Inky Black Potion
 				i(124640),	-- Inky Black Potion
@@ -319,9 +316,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					["coord"] = { 36.7, 54.8, ARCANTINA },
 					["questID"] = 92354,
 				}),
-				-- o(614789, {	-- Inky Black Potion [Likely wrong ObjectID]
-				-- 	["coord"] = { 59.8, 60.1, ARCANTINA },
-				-- }),
 			}),
 			o_repeated({	-- Pygmy Oil
 				i(40195),	-- Pygmy Oil
@@ -337,9 +331,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					["coord"] = { 74.8, 61.9, ARCANTINA },
 					["questID"] = 92357,
 				}),
-				-- o(553966, {	-- Pygmy Oil
-				-- 	["coord"] = { 33.7, 15.2, ARCANTINA },
-				-- }),
 			}),
 			o_repeated({	-- Reflecting Prism
 				i(112384),	-- Reflecting Prism
