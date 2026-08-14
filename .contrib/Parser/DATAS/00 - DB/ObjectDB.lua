@@ -406435,6 +406435,23 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			-- TODO: tw = "",
 		},
 	},
+	[654250] = {
+		readable = "Mound of Dirt",
+		model = 84580,
+		text = {
+			en = "Mound of Dirt",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: de = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			-- TODO: ko = "",
+			-- TODO: cn = "",
+			-- TODO: tw = "",
+		},
+	},
 	[654497] = {
 		readable = "Energized Crystal Conductor",
 		model = 5916222,

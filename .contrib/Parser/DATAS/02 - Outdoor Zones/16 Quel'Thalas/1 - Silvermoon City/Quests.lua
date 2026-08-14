@@ -97,7 +97,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			-- Sparks
 			q(93942, {	-- Spark of Radiance
 				["provider"] = { "i", 232875 },	-- Spark of Radiance
-				["timeline"] = { ADDED_12_0_1_SEASONSTART },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			q(96446, {	-- Spark of Tides
+				["provider"] = { "i", 274476 },	-- Spark of Tides
+				["timeline"] = { ADDED_12_1_0 },
 				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			--
@@ -251,7 +256,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 			n(QUESTS, {
 				q(93067),	-- "Stay a while and listen" objectID 551501 (In Memoriam) @ 35.2, 70.3
-				q(93275, name(HEADERS.Item,232875,{["isWeekly"]=true})),	-- Weekly lockout for Spark of Radiance
+				q(93275, name(HEADERS.Item,232875,{["isWeekly"]=true,["timeline"]={ADDED_12_0_1_SEASONSTART,REMOVED_12_1_0}})),	-- Weekly lockout for Spark of Radiance
+				--q(96446, name(HEADERS.Item,274476,{["isWeekly"]=true,["timeline"]={ADDED_12_1_0}})),	-- Weekly lockout for Spark of Tides
 				q(93789),	-- Apex Cache (season 1) was opened / bonus roll for something?
 				q(94419, {["timeline"]={ADDED_12_0_1_SEASONSTART,REMOVED_12_1_0}}),	-- player receive 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 				q(94410),	-- After turning in Unity Against the Void? Spark lockout?

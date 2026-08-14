@@ -59,6 +59,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 44.1, 54.5, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					q(92920, {	-- Down with the Skies
+						-- Turning in this quest unlocks literally everything on The Coiled Isle (Renown, FPs, Vendors, Treasures)
 						["sourceQuests"] = {
 							93266,	-- Drumming up the Tropps
 							93263,	-- It Just Had to Be...
@@ -73,7 +74,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 					q(92924, {	-- What Lies Beyond the Fog
-						-- Turning in this quest unlocks literally everything on The Coiled Isle (Renown, FPs, Vendors, Treasures)
 						["sourceQuest"] = 92920,	-- Down with the Skies
 						["qg"] = 255327,	-- Zul'jarra
 						["coord"] = { 51.1, 54.5, MAP.MIDNIGHT.ZULAMAN },
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			header(HEADERS.Achievement, 63641, {	-- Snake Charmed, I'm Sure (Sojourner)
 				header(HEADERS.AchCriteria, 63641.01, {	-- Strange Friends in Odd Places
 					q(93387, {	-- Dealing with Pests
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 92920,	-- Down with the Skies
 						["qg"] = 263327,	-- Ofi the Sly (mobileNPC)
 						["coord"] = { 61.1, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the camp
 					}),
@@ -612,7 +612,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.04, {	-- Bone Deep
 					q(94031, {	-- Bones of My Soul
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 92920,	-- Down with the Skies
 						["qg"] = 257298,	-- Loa Speaker Yl'mul
 						["coord"] = { 59.1, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
@@ -631,13 +631,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 					q(94035, {	-- Meat for the Bones
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 92920,	-- Down with the Skies
 						["qg"] = 257298,	-- Loa Speaker Yl'mul
 						["coord"] = { 59.1, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = { i(264704) },	-- Sea Creature Meat (QI!)
 					}),
 					q(94036, {	-- One Final Prisoner
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 92920,	-- Down with the Skies
 						["qg"] = 257298,	-- Loa Speaker Yl'mul
 						["coord"] = { 59.1, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -923,7 +923,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.10, {	-- Living Legend
 					q(96523, {	-- Living Legend
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 92920,	-- Down with the Skies
 						["qg"] = 265476,	-- Kehiah
 						["coord"] = { 59.4, 50.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -948,7 +948,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 45.6, 48.3, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
 							i(279995),	-- Critter Meat (QI!)
-							o(654240, {	-- Mound of Dirt
+							o(654250, {	-- Mound of Dirt
 								i(279994),	-- Withered Root (QI!)
 							}),
 						},

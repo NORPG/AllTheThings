@@ -11,8 +11,6 @@ root(ROOTS.Unsorted, {
 			i(238534),	-- Vial of Harandar Oddities
 			i(241151),	-- Coiled Stargorger Lure
 			i(244344),	-- Griftah's Mystical Polter-Urn
-			i(245539),	-- Elegant Enchanted Vanity
-			i(246958),	-- Mastercrafted Fungal Row Planter
 			i(247776),	-- Glowing Zangarshroom Cup
 			i(248404),	-- Stack of Kafa Mugs
 			i(248963),	-- Spirit-Touched Amani Mask
@@ -20,11 +18,7 @@ root(ROOTS.Unsorted, {
 			i(249223),	-- Corrosive Bilespear
 			i(249227),	-- Dundun's Favor
 			i(249228),	-- Soul-Cracking Dreamcatcher
-			i(249923),	-- Sin'dorei Golden Welcome
 			i(251630),	-- Recipe: Amani Cornucopia
-			i(253397),	-- Revered Deepstone Table
-			i(253481),	-- Masterful Sin'dorei Gravestone
-			i(254561),	-- Ogre Champion's Prized Skull
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
@@ -76,7 +70,6 @@ root(ROOTS.Unsorted, {
 			i(270898),	-- Snakeskin Lining
 			i(270899),	-- Snakeskin Lining
 			i(271053),	-- Cleansing Water
-			i(271130),	-- Venom Infusion
 			i(271131),	-- Test Weapon
 			i(271132),	-- Essence Trap
 			i(271133),	-- Marked Serpent Rune PH
@@ -102,9 +95,6 @@ root(ROOTS.Unsorted, {
 			i(271867),	-- Venom-Etched Sword
 			i(271868),	-- Splintering Spear
 			i(271991),	-- Venomous Equipment Chest
-			i(271996),	-- Crumpled Scroll
-			i(271997),	-- Abused Relic
-			i(271998),	-- Discarded Potion
 			i(272147),	-- Colubrine Band
 			i(272148),	-- Anguine Gyre
 			i(272149),	-- Hex Loop
@@ -213,7 +203,6 @@ root(ROOTS.Unsorted, {
 			i(274471),	-- Orange Housing Dye
 			i(274474),	-- White Housing Dye
 			i(274475),	-- Yellow Housing Dye
-			i(274476),	-- Spark of Tides
 			i(274494),	-- Chiral Marrowgrafter
 			i(274499),	-- Toxiferous Transfusion
 			i(274579),	-- Undamaged Trap Needle
@@ -261,7 +250,6 @@ root(ROOTS.Unsorted, {
 			i(274991),	-- Seaside Fire Pit
 			i(275013),	-- Tokka's Multi-Ward
 			i(275030),	-- Slugg's Favorite Fishing Rod
-			i(275048),	-- Decrepit Key
 			i(275053),	-- Kobold Candle Collection
 			i(275054),	-- Wooden Toy Sword
 			i(275062),	-- Illusion: Venomcoil
@@ -295,7 +283,6 @@ root(ROOTS.Unsorted, {
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
-			i(275288),	-- Photosynthesized Scrap
 			i(275320),	-- Schematic: Aetherlume Field Lamp
 			i(275322),	-- Technique: Ferocious Feline Trinket
 			i(275324),	-- Technique: Inscribed Amani Mural
@@ -463,7 +450,6 @@ root(ROOTS.Unsorted, {
 			i(277955),	-- Ethereal Bead Strand
 			i(277968),	-- Contract: Zul'jarra's Forces
 			i(277969),	-- Contract: Zul'jarra's Forces
-			i(277975),	-- Arcanostorage Sphere
 			i(277985),	-- Mysterious Offering
 			i(277989),	-- Ghostcaller's Bell
 			i(277990),	-- Cursemail Gauntlets

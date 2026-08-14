@@ -351,8 +351,8 @@ q(98204,{awp=120100,coords={
 i(274481),
 de(1909,{itemID=245993,spellID=1240278}),
 de(10896,{itemID=255712,spellID=1259323}),
-de(15286,{itemID=263876,spellID=1270751}),
 de(18796,{itemID=267205,spellID=1279664}),
+de(15286,{itemID=263876,spellID=1270751}),
 de(18960,{itemID=267435,spellID=1280494}),
 de(20332,{itemID=268943,spellID=1284117}),
 de(1907,{itemID=245991,spellID=1240276}),
@@ -361,6 +361,16 @@ de(11285,{itemID=256684,spellID=1260664}),
 de(18880,{itemID=267355,spellID=1280260}),
 de(21873,{itemID=272129,spellID=1290284}),
 de(26492,{itemID=278696,spellID=1305431})}}),
+q(98406,{awp=120100,coords={
+[2351]={{53.7,57.4}},
+[2352]={{52.7,37.5}}},description="Unlocks when your house reaches Level 8.",isWeekly=1,qgs={248854,253596},g={
+i(277975,{f=55,g={
+de(1730,{itemID=245539,spellID=1238757}),
+de(2587,{itemID=246958,spellID=1244426}),
+de(1154,{itemID=253481,spellID=1256475}),
+de(10368,{itemID=254561,spellID=1258213}),
+de(9290,{itemID=253397,spellID=1256291}),
+de(5796,{itemID=249923,spellID=1250092})}})}}),
 q(92578,{coords={
 [84]={{56.1,77.1}},
 [85]={{52.9,89}},
@@ -933,6 +943,13 @@ de(22925,{cost={{"c",3363,30}},itemID=274535,spellID=1294396}),
 de(22919,{cost={{"c",3363,10}},itemID=274525,spellID=1294371}),
 de(22924,{cost={{"c",3363,15}},itemID=274533,spellID=1294388}),
 de(22918,{cost={{"c",3363,15}},itemID=274523,spellID=1294369})}}),
+n(267870,{coords={
+[2351]={{40.2,73}},
+[2352]={{62.4,79.2}}},g={
+de(1427,{cost={{"c",3363,10}},itemID=244344,spellID=1237023}),
+de(15285,{cost={{"c",3363,10}},itemID=263875,spellID=1270749}),
+de(25128,{cost={{"c",3363,10}},itemID=276312,spellID=1299420}),
+q(97075)}}),
 h(-45,{
 q(95336,{coords={
 [2351]={{54.2,56.8}},

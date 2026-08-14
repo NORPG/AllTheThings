@@ -109,20 +109,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					-- TITLE!
 				}),
 			}),
-		--[[	n(CURIO, {
+			n(CURIO, {
 				--Combat
-				i(257755),	-- Holy Bounding Hand Grenade
-				i(249220),	-- Mantle of Stars
-				i(249222),	-- Nether Entropic Kris
-				i(257683),	-- Porcelain Blade Tip
-				i(249221),	-- Sanctum's Edict
 				--Utility
-				i(249226),	-- Ebon Crown of Subjugation
-				i(249225),	-- Mandate of Sacred Death
-				i(249224),	-- Motionless Nulltide
-				i(257866),	-- Overflowing Voidspire
-				i(257768),	-- Time Lost Edict
-			}),--]]
+				i(271130),	-- Venom Infusion
+			}),
 			mapped(n(DELVE_COMPLETION, {
 				i(274970),	-- Ancient Curio (Utility) (QI!/QS!)
 				i(277506),	-- Codex of the Soul Coilers (QS!)

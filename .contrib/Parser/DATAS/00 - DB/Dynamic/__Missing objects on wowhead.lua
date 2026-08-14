@@ -103,21 +103,5 @@
 			en = "Belanise Cluster",
 		},
 	},
-	[654240] = {
-		readable = "Mound of Dirt",
-		text = {
-			en = "Mound of Dirt",
-			-- TODO: es = "",
-			-- TODO: mx = "",
-			-- TODO: de = "",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
-			-- TODO: ko = "",
-			-- TODO: cn = "",
-			-- TODO: tw = "",
-		},
-	},
 })
 do ObjectDB[objectID] = objectData; end

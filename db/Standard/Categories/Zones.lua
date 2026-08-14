@@ -123290,7 +123290,7 @@ n(176066,{coords={
 [1670]={{46.6,77.2}}},sym={{"select","npcID",156822},{"isnt","repeatable"},{"pop"}}}),
 n(156690,{coords={
 [1670]={{47,23.6}}},g={
-s(112899,180136,{b=1,f=57,requireSkill=356,spellID=310674})}}),
+s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
 n(176197,{awp=90105,coords={
 [1670]={{51,43.4}}},g={
 i(188226,{b=1}),
@@ -125871,7 +125871,7 @@ r(331007,{b=1,itemID=183097,minReputation={2407,42000},requireSkill=202,skillID=
 s(111637,178991,{b=1,f=9,minReputation={2407,42000}})}}),
 n(175574,{coords={
 [1533]={{49.6,63.2}}},g={
-s(112899,180136,{b=1,f=57,requireSkill=356,spellID=310674})}}),
+s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
 n(171526,{coords={
 [1533]={{52.6,47.4}}},g={
 i(180788,{b=1,f=55,spellID=11009})}}),
@@ -165551,8 +165551,12 @@ q(96635,{awp=120100,coords={
 [2393]={{48.6,62}}},qgs={239676},rwp=120200,sourceQuests={96633}}),
 q(96637,{awp=120100,coords={
 [2393]={{48.6,62}}},qgs={239676},rwp=120200,sourceQuests={96635}}),
+q(96649,{awp=120100,coords={
+[2393]={{48.6,62}}},qgs={239676},rwp=120200,sourceQuests={96637}}),
 q(93942,{coords={
-[2393]={{40.2,64.8}}},lvl=78,providers={{"i",232875}}}),
+[2393]={{40.2,64.8}}},lvl=78,providers={{"i",232875}},rwp=120100,u=2}),
+q(96446,{awp=120100,coords={
+[2393]={{40.2,64.8}}},providers={{"i",274476}}}),
 q(94474,{coords={
 [2393]={{50.4,64.9}}},lvl=90,qgs={239670},g={
 i(265039)}}),
@@ -169352,7 +169356,7 @@ o(518640,{
 i(237140,{b=1,spellID=1221748})}),
 o(523752,{
 i(237899,{f=55,spellID=1223190})})})}}),
-m(2512,{awp=120100,icon=7578560,lore="The Coiled Isle is an island located east of Zul'Aman, connected via the ruined Strait of Hexx'alor and surrounded by Zul'Aman Depths. It is shrouded in a mist.\n\nThe temple here, Atal'Utek, was built to commemorate the Amani tribes' victory over the faceless general Kith'ix. The strait dividing Atal'Utek from Zul'Aman is protected by the loa Pahk.",maps={2639,2640,2641,2642,2644},lvl=90,g={
+m(2512,{awp=120100,icon=7578560,lore="The Coiled Isle is an island located east of Zul'Aman, connected via the ruined Strait of Hexx'alor and surrounded by Zul'Aman Depths. It is shrouded in a mist.\n\nThe temple here, Atal'Utek, was built to commemorate the Amani tribes' victory over the faceless general Kith'ix. The strait dividing Atal'Utek from Zul'Aman is protected by the loa Pahk.",maps={2639,2640,2641,2642,2643,2644},lvl=90,g={
 m(2509,{icon=136070,lore="The Vaults of Atal’Utek are an ancient, venom-corrupted Amani troll prison complex on the Coiled Isle. Built by the Amani empire long ago as a massive containment facility and designed to imprison Ula'tek, a horrific and ancient serpent goddess of venom and hatred whom the trolls came to view as a catastrophic threat.",maps={2613,2636,2637,2638},g={
 h(-12,{
 ach(62649,{providers={{"n",264091}},g={
@@ -169567,7 +169571,8 @@ de(25137,{cost={{"c",3448,750}},itemID=281573,spellID=1311824}),
 p(5072,{cost={{"c",3448,5000}},itemID=275632,npcID=266469,spellID=1297098})}})}),
 h(-63,{
 i(280005,{coords={
-[2636]={{74.9,72.6}}},crs={263253},spellID=1307536})}),
+[2636]={{74.9,72.6}}},crs={263253},spellID=1307536}),
+i(275048,{description="Can be obtained from creatures with 'Corrosive' Aura after unlocking 'Slithering Secrets' trait at |cFFFFD700Altar of Corrosion|r.",spellID=1308284})}),
 h(-64,{
 cu(3448)})}}),
 h(-12,{
@@ -169656,7 +169661,7 @@ p(5032,{coords={
 [2512]={{62,81.9}}},crs={262245},itemID=270252,npcID=262245,spellID=1287594,g={
 crit(113423,{achID=62492,id=5})}}),
 p(5028,{coords={
-[2512]={{58.2,38.6},{67.9,42.1}}},crs={262222},itemID=270214,npcID=262222,spellID=1287537,g={
+[2512]={{58.2,38.6},{62.2,41},{67.9,42.1}}},crs={262222},itemID=270214,npcID=262222,spellID=1287537,g={
 crit(113418,{achID=62492,id=1})}}),
 p(5034,{coords={
 [2512]={{66.1,56.1},{67,58.5},{72.4,55.1}}},crs={262243},itemID=270250,npcID=262243,spellID=1287599,g={
@@ -169969,7 +169974,7 @@ hqt(95958,{coords={
 ah(63641,{type="a",g={
 ah(63641.01,{type="crit",g={
 q(93387,{coords={
-[2512]={{61.1,32.9}}},qgs={263327}}),
+[2512]={{61.1,32.9}}},qgs={263327},sourceQuests={92920}}),
 q(93388,{coords={
 [2512]={{61.1,32.9}}},qgs={263327},sourceQuests={93387},g={
 i(268584),
@@ -170029,7 +170034,7 @@ i(280105),
 crit(116545,{achID=63641,id=3})}})}}),
 ah(63641.04,{type="crit",g={
 q(94031,{coords={
-[2512]={{59.1,68}}},qgs={257298},g={
+[2512]={{59.1,68}}},qgs={257298},sourceQuests={92920},g={
 o(618320,{coords={
 [2512]={{57,67.3}}},g={
 i(264697)}}),
@@ -170040,10 +170045,10 @@ o(618321,{coords={
 [2512]={{58.2,66.6}}},g={
 i(264696)}})}}),
 q(94035,{coords={
-[2512]={{59.1,68}}},qgs={257298},g={
+[2512]={{59.1,68}}},qgs={257298},sourceQuests={92920},g={
 i(264704)}}),
 q(94036,{coords={
-[2512]={{59.1,68}}},qgs={257298}}),
+[2512]={{59.1,68}}},qgs={257298},sourceQuests={92920}}),
 q(94040,{coords={
 [2512]={{59.1,68}}},qgs={257298},sourceQuests={94031,94035,94036},g={
 s(310757,278909,{f=3}),
@@ -170152,7 +170157,8 @@ q(96096,{coords={
 i(274574),
 i(274575)}}),
 q(96097,{coords={
-[2512]={{23.8,64.5}}},qgs={263674},sourceQuests={96095,96096}}),
+[2512]={{23.8,64.5}}},qgs={263674},sourceQuests={96095,96096},g={
+i(281226,{f=55,spellID=1310620,tmogSetID=5927})}}),
 q(96098,{coords={
 [2512]={{23.8,64.5}}},qgs={263675},sourceQuests={96097},g={
 i(274682),
@@ -170164,7 +170170,7 @@ de(26481,{itemID=280218,spellID=1307950}),
 crit(116551,{achID=63641,id=9})}})}}),
 ah(63641.1,{type="crit",g={
 q(96523,{coords={
-[2512]={{59.4,50.9}}},qgs={265476}}),
+[2512]={{59.4,50.9}}},qgs={265476},sourceQuests={92920}}),
 q(96539,{coords={
 [2437]={{45.6,48.3}}},qgs={265660},sourceQuests={96523}}),
 q(96540,{coords={
@@ -170174,7 +170180,7 @@ q(96541,{coords={
 q(96543,{coords={
 [2437]={{45.6,48.3}}},qgs={265660},sourceQuests={96541},g={
 i(279995),
-o(654240,{
+o(654250,{
 i(279994)})}}),
 q(96544,{coords={
 [2437]={{45.6,48.3}}},qgs={265660},sourceQuests={96543}}),
@@ -170246,6 +170252,7 @@ crit(115288,{achID=63358,id=12})}}),
 n(264854,{coords={
 [2512]={{53.8,72}}},isDaily=1,providers={{"o",653176}},questID=96491,g={
 i(280717,{f=51}),
+s(311564,280692,{f=23}),
 crit(115279,{achID=63358,id=1})}}),
 n(258916,{coords={
 [2512]={{69.7,44.9}}},isDaily=1,g={
@@ -170299,10 +170306,12 @@ i(271424,{spellID=1289036}),
 s(309577,276060,{f=27}),
 i(276171,{f=52}),
 crit(115370,{achID=63390,id=3})}}),
-n(257863,{isWeekly=1,g={
+n(257863,{coords={
+[2512]={{45.2,28.6}}},isWeekly=1,g={
 s(309601,276175,{f=3}),
 crit(115369,{achID=63390,id=2})}}),
-n(255927,{isWeekly=1,g={
+n(255927,{coords={
+[2512]={{67.6,77.8}}},isWeekly=1,g={
 crit(115371,{achID=63390,id=4})}})}})}),
 h(-56,{
 ah(63359,{type="a",g={
@@ -170487,6 +170496,14 @@ crit(116704,{achID=63662,id=3})}}),
 o(669314,{coords={
 [2512]={{71.9,44.9}}},questID=98307,g={
 crit(116710,{achID=63662,id=9})}})}}),
+o(654986,{coords={
+[2512]={{27.3,70.4},{31.1,84.1},{44.6,47.6},{57.1,65.9},{60,82.4},{66.7,31.3},{67,48.1},{67.8,40.5},{69.3,55.1},{72,43.6}},
+[2639]={{53.8,16.9}},
+[2640]={{17.3,59.6}},
+[2641]={{40.1,53.6},{51.5,72.3},{52.9,18.9},{75.7,60.6},{79.7,70.9}},
+[2642]={{38.1,43.6}},
+[2643]={{61,89.5},{62.6,52.7}},
+[2644]={{32.2,45.8}}},cost={{"i",275048,1}}}),
 o(654991,{description="Spawns randomly around the temples."}),
 o(656044,{description="Spawns randomly around coastal regions."}),
 o(656039,{description="Spawns randomly around the poisoned areas."})}),
@@ -170595,6 +170612,7 @@ i(274781),
 i(275280),
 i(275286),
 i(274777),
+i(275288),
 i(275284),
 i(275282),
 i(275289)})}),

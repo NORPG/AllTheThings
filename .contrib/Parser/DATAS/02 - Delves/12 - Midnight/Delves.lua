@@ -1163,6 +1163,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			filter(MISC, {
 				i(276286),	-- Gnarled Heart
+				-- Story Variant: Olds and Ends
+				i(271997),	-- Abused Relic
+				i(271996),	-- Crumpled Scroll
+				i(271998),	-- Discarded Potion
 			}),
 			n(TREASURES, {
 				o(655978, {	-- Sturdy Chest
