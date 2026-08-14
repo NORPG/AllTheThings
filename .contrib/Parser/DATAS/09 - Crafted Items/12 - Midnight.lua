@@ -2218,10 +2218,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(262591),	-- Luxurious Silvermoon Lounge Cushion (DECOR!)
 			i(262592),	-- Plush Silvermoon Bed (DECOR!)
 			i(262599),	-- Silvermoon Curtains (DECOR!)
+			i(279350, {["timeline"] = { ADDED_12_1_0 }}),	-- Twilight's Blade Bedroll (DECOR!)
 			i(262611),	-- Voidstrider Saddlebag (DECOR!)
-			i(26495, {	-- Twilight's Blade Bedroll (DECOR!)
-				["timeline"] = { ADDED_12_1_0 },
-			}),
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
