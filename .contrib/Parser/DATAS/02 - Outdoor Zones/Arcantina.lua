@@ -361,18 +361,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					["coord"] = { 68.0, 52.2, ARCANTINA },
 					["questID"] = 92363,
 				}),
-				-- o(614803, {	-- Savory Deviate Delight
-				-- 	["coord"] = { 34.0, 28.3, ARCANTINA },
-				-- }),
-				-- o(614821, {	-- Savory Deviate Delight
-				-- 	["coord"] = { 69.4, 52.2, ARCANTINA },
-				-- }),
-				-- o(614822, {	-- Savory Deviate Delight
-				-- 	["coord"] = { 68.0, 52.2, ARCANTINA },
-				-- }),
-				-- o(627107, {	-- Savory Deviate Delight
-				-- 	["coord"] = { 68.0, 52.2, ARCANTINA },
-				-- }),
 			}),
 		})),
 		n(VENDORS, {
