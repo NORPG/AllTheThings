@@ -22,7 +22,7 @@
 		text = {
 			en = "Slain Beast",
 			es = "Bestia muerta",
-			mx = "[Slain Beast]",
+			-- TODO: mx = "",
 			de = "Getötete Bestie",
 			fr = "Bête morte",
 			it = "Bestia Uccisa",

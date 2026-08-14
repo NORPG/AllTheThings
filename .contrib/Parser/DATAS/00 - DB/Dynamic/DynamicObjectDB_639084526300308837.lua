@@ -13,7 +13,7 @@
 			ru = "Чародейский кристалл маны",
 			ko = "비전 마나 결정",
 			cn = "奥术法力水晶",
-			tw = "[Arcane Mana Crystal]",
+			-- TODO: tw = "",
 		},
 	},
 	[572475] = {
@@ -47,7 +47,7 @@
 			ru = "Стойка с оружием",
 			ko = "무기 선반",
 			cn = "武器架",
-			tw = "[Weapons Rack]",
+			-- TODO: tw = "",
 		},
 	},
 	[572766] = {
@@ -98,7 +98,7 @@
 			ru = "Баррикада",
 			ko = "방벽",
 			cn = "路障",
-			tw = "[Barricade]",
+			-- TODO: tw = "",
 		},
 	},
 	[578273] = {
@@ -158,15 +158,15 @@
 		text = {
 			en = "Void Zeal",
 			es = "Celo del Vacío",
-			mx = "[Void Zeal]",
+			-- TODO: mx = "",
 			de = "Leereneifer",
 			fr = "Zèle du Vide",
-			it = "[Void Zeal]",
+			-- TODO: it = "",
 			pt = "Fervor do Caos",
 			ru = "Рвение Бездны",
 			ko = "공허의 열정",
 			cn = "虚空狂热",
-			tw = "[Void Zeal]",
+			-- TODO: tw = "",
 		},
 	},
 	[584540] = {

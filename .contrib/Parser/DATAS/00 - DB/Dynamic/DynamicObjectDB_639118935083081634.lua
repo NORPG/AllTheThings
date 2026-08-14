@@ -30,7 +30,7 @@
 			ru = "Плод восстановления корней",
 			ko = "뿌리의 복원 과일",
 			cn = "愈根之果",
-			tw = "[Root Restoration Fruit]",
+			-- TODO: tw = "",
 		},
 	},
 	[408130] = {
@@ -90,7 +90,7 @@
 		text = {
 			en = "Stormarion Supplies",
 			es = "Suministros de Tormentarion",
-			mx = "[Stormarion Supplies]",
+			-- TODO: mx = "",
 			de = "Sturmarionvorräte",
 			fr = "Fournitures de Fulgarion",
 			it = "Rifornimenti di Buferion",

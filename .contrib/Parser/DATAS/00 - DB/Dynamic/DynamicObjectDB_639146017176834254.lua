@@ -11,9 +11,9 @@
 			it = "Cespuglio Frusciante",
 			pt = "Arbusto Farfalhante",
 			ru = "Шуршащий куст",
-			ko = "[Rustling Bush]",
-			cn = "[Rustling Bush]",
-			tw = "[Rustling Bush]",
+			-- TODO: ko = "",
+			-- TODO: cn = "",
+			-- TODO: tw = "",
 		},
 	},
 })

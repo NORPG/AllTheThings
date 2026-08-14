@@ -5,7 +5,7 @@
 		text = {
 			en = "Stormarion Supplies",
 			es = "Suministros de Tormentarion",
-			mx = "[Stormarion Supplies]",
+			-- TODO: mx = "",
 			de = "Sturmarionvorräte",
 			fr = "Fournitures de Fulgarion",
 			it = "Rifornimenti di Buferion",
