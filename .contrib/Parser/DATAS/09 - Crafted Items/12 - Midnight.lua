@@ -1103,6 +1103,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			["groups"] = {
 				-- Only known source is the Bottle
 				i(275334),	-- Pattern: Stretched Snakeskin Rack (RECIPE!)
+				i(275338),	-- Pattern: Twilight's Blade Bedroll (RECIPE!)
 				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
 				i(275308),	-- Plans: Amani Forgemaster's Rack (RECIPE!)
 				i(275273),	-- Recipe: Sweet-And-Sour Skewers (RECIPE!)
@@ -2259,6 +2260,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(262591),	-- Luxurious Silvermoon Lounge Cushion (DECOR!)
 			i(262592),	-- Plush Silvermoon Bed (DECOR!)
 			i(262599),	-- Silvermoon Curtains (DECOR!)
+			i(279353, {["timeline"] = { ADDED_12_1_0 }}),	-- Tortollan Slingsack (DECOR!)
 			i(279350, {["timeline"] = { ADDED_12_1_0 }}),	-- Twilight's Blade Bedroll (DECOR!)
 			i(262611),	-- Voidstrider Saddlebag (DECOR!)
 		}),
@@ -2380,6 +2382,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(239701),	-- Bright Linen Bolt++
 			i(239702),	-- Imbued Bright Linen Bolt+
 			i(239703),	-- Imbued Bright Linen Bolt++
+			i(270898, {["timeline"] = { ADDED_12_1_0 }}),	-- Snakeskin Lining+
+			i(270899, {["timeline"] = { ADDED_12_1_0 }}),	-- Snakeskin Lining++
 			i(239201),	-- Sunfire Silk Bolt+
 			i(239202),	-- Sunfire Silk Bolt++
 			i(240164),	-- Sunfire Silk Lining+

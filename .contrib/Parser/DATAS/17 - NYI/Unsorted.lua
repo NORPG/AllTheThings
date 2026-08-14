@@ -66,8 +66,6 @@ root(ROOTS.Unsorted, {
 			i(270335),	-- Mostly Smooth Seastone
 			i(270346),	-- Big Meaty Claw
 			i(270871),	-- Jan'alai's Breath
-			i(270898),	-- Snakeskin Lining
-			i(270899),	-- Snakeskin Lining
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
 			i(271132),	-- Essence Trap
@@ -254,7 +252,6 @@ root(ROOTS.Unsorted, {
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
-			i(275338),	-- Pattern: Rolled Bed Linens
 			i(275526),	-- Preyhunter's Band
 			i(275527),	-- Preyhunter's Signet
 			i(275528),	-- Preyhunter's Ring
@@ -681,8 +678,6 @@ root(ROOTS.Unsorted, {
 			i(279364),	-- Coiled Hookshot
 			i(279365),	-- Fine Captain's Bottle
 			i(279368),	-- Inscribed Amani Mural
-			i(279374),	-- Rolled Bed Linens
-			i(279375),	-- Tortollan Slingsack
 			i(279384),	-- Bonemail Gauntlet
 			i(279428),	-- Midnight Gloomcap
 			i(279429),	-- Azure Gloomcap
@@ -869,7 +864,6 @@ root(ROOTS.Unsorted, {
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
 			i(274422),	-- Ossified Relic
-			i(279353),	-- Tortollan Slingsack
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
 			i(280540),	-- Lil' Mon
@@ -920,7 +914,6 @@ root(ROOTS.Unsorted, {
 					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
 					i(273068),	-- Adorned Fang+
 					i(273069),	-- Adorned Fang++
-					--
 				}),
 			}),
 
