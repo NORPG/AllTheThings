@@ -1276,11 +1276,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				n(QUESTS, {
 					q(44057, {	-- A "Noble" Event
 						["provider"] = { "i", 140495 },	-- Torn Invitation
-						["cost"] = {
-							{ "i", 140562, 1 },	-- First Half of the Map
-							{ "i", 140496, 1 },	-- Fox Hunt Invitation
-							{ "i", 140561, 1 },	-- List of Invited Nobles
-							{ "i", 140563, 1 },	-- Second Half of the Map
+						["groups"] = {
+							objective(1, {	-- List of Invited Nobles
+								["provider"] = { "i", 140561 },	-- List of Invited Nobles
+							}),
+							objective(2, {	-- Fox Hunt Invitation
+								["provider"] = { "i", 140496 },	-- Fox Hunt Invitation
+							}),
+							objective(3, {	-- First Half of the Map
+								["provider"] = { "i", 140562 },	-- First Half of the Map
+							}),
+							objective(4, {	-- Second Half of the Map
+								["provider"] = { "i", 140563 },	-- Second Half of the Map
+							}),
 						},
 					}),
 					un(REMOVED_FROM_GAME, q(43557, {	-- Assault on Violet Hold: Into the Violet Hold (Normal)

@@ -34,6 +34,13 @@ local COIN_BY_LURE = function(index, itemID, ...)
 	if itemID then rawset(coin, "itemID", itemID); end
 	return crit(index, coin);
 end
+local ALL_LURE_ITEMS = {}
+local function GenerateLureItems()
+	for _,itemID in ipairs(ALL_LURES) do
+		ALL_LURE_ITEMS[#ALL_LURE_ITEMS + 1] = i(itemID)
+	end
+end
+GenerateLureItems()
 
 -- NOT CATABLE FOR EACH LURE
 -- ALCHEMICAL_BONDING_AGENT
@@ -579,6 +586,7 @@ root(ROOTS.Zones, {
 							["requireSkill"] = FISHING,
 							["groups"] = THE_WISH_REMOVER,
 						}),
+						unpack(ALL_LURE_ITEMS),
 					}),
 				}),
 				prof(INSCRIPTION, {

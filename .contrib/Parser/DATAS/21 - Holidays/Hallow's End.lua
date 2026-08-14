@@ -3511,7 +3511,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 23904,	-- Sir Thomas
 			["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
 			["maps"] = { SCARLET_MONASTERY },
-			["cost"] = { { "i", 33277, 1 } },	-- Tome of Thomas Thomson
+			["provider"] = { "i", 33277 },	-- Tome of Thomas Thomson
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(60, 60, 25),
 		}),
@@ -3519,7 +3519,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 23904,	-- Sir Thomas
 			["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
 			["maps"] = { SCARLET_MONASTERY },
-			["cost"] = { { "i", 33277, 1 } },	-- Tome of Thomas Thomson
+			["provider"] = { "i", 33277 },	-- Tome of Thomas Thomson
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(60, 60, 25),
 		}),
@@ -3854,14 +3854,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(12133, {	-- Smash the Pumpkin (Alliance)
-			["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
+			["providers"] = {
+				{ "o", 186887 },	-- Large Jack-o'-Lantern
+				{ "i", 36876 },	-- Scorched Holy Symbol
+			},
 			["coords"] = {
 				{ 60.8, 53.6, AZUREMYST_ISLE },
 				{ 53.4, 51.5, DUN_MOROGH },
 				{ 42.6, 64.6, ELWYNN_FOREST },
 			},
 			["timeline"] = { ADDED_2_0_1 },
-			["cost"] = { { "i", 36876, 1 } },	-- Scorched Holy Symbol
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3870,14 +3872,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(12155, {	-- Smash the Pumpkin (Horde)
-			["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
+			["providers"] = {
+				{ "o", 186887 },	-- Large Jack-o'-Lantern
+				{ "i", 36876 },	-- Scorched Holy Symbol
+			},
 			["coords"] = {
 				{ 52.6, 41.5, DUROTAR },
 				{ 47.2, 46.4, EVERSONG_WOODS },
 				{ 60.8, 53.6, TIRISFAL_GLADES },
 			},
 			["timeline"] = { ADDED_2_0_1 },
-			["cost"] = { { "i", 36876, 1 } },	-- Scorched Holy Symbol
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -4172,21 +4176,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29411, {	-- What Now? (Alliance)
 			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["sourceQuest"] = 29403,	-- The Collector's Agent (Alliance)
-			["provider"] = { "o", 209072 },	-- Stolen Crate
+			["providers"] = {
+				{ "o", 209072 },	-- Stolen Crate
+				{ "i", 71057 },	-- Recovered Crate
+			},
 			["coord"] = { 55.3, 43.5, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
-			["cost"] = { { "i", 71057, 1 } },	-- Recovered Crate
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
 		q(29428, {	-- What Now? (Horde)
 			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["sourceQuest"] = 29427,	-- The Collector's Agent (Horde)
-			["provider"] = { "o", 209094 },	-- Stolen Crate
+			["providers"] = {
+				{ "o", 209094 },	-- Stolen Crate
+				{ "i", 71057 },	-- Recovered Crate
+			},
 			["coord"] = { 65.8, 74.8, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
-			["cost"] = { { "i", 71057, 1 } },	-- Recovered Crate
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),

@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+		m(ARGUS, {
 			n(ZONE_DROPS, {
 				i(153191, {-- Cracked Fel-Spotted Egg
 					["provider"] = { "i", 153190 },	-- Fel-Spotted Egg
@@ -181,7 +181,8 @@ root(ROOTS.Zones, {
 					i(151004),	-- Voidbent Isolon Effigy
 					i(150999),	-- Wakener's Demonic Focus
 				}),
+				i(151568),	-- Primal Sargerite
 			}),
-		})),
+		}),
 	}),
 });

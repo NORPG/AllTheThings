@@ -2241,8 +2241,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["lvl"] = lvlsquish(90, 90, 40),
 			["groups"] = {
 				objective(1, {	-- 0/5 Unusual gifts destroyed
-					["provider"] = { "n", 96487 },	-- Unusual Gift
-					["cost"] = { { "i", 128675, 1 } },	-- Spirit Bomb
+					["providers"] = {
+						{ "n", 96487 },	-- Unusual Gift
+						{ "i", 128675 },	-- Spirit Bomb
+					},
 				}),
 				i(128659, {	-- Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },

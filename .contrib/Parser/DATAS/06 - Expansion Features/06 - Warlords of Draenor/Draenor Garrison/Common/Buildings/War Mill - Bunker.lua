@@ -37,6 +37,12 @@ root(ROOTS.ExpansionFeatures,
 							["groups"] = { i(118372) },	-- Orgrimmar Tabard
 						}),
 					}),
+					n(REWARDS, {
+						i(113681),	-- Iron Horde Scraps
+						i(113821),	-- Battered Iron Horde Helmet
+						i(113822),	-- Ravaged Iron Horde Belt
+						i(113823),	-- Crusted Iron Horde Pauldrons
+					}),
 					n(VENDORS, {
 						n(77377, {	-- Kristen Stoneforge <Quartermaster>
 							["races"] = ALLIANCE_ONLY,

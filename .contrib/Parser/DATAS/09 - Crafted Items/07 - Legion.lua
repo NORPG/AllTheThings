@@ -931,5 +931,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		filter(REAGENTS, {
 			i(127004),	-- Imbued Silkweave
 		}),
+		n(COMMON_VENDOR_ITEMS, {
+			i(127037),	-- Runic Catgut
+		}),
 	}),
 }))));

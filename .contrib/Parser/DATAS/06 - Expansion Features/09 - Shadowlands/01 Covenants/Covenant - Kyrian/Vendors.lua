@@ -48,7 +48,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					i(174315, {	-- Chyrus's Crest of Hope
 						["cost"] = {
 							{ "i", modItemId(183895,04), 1 },	-- LFR Apogee Anima Bead - 194
-							{ "i", modItemId(183894,04), 1 },	-- LFR Thaumaturgic Anima Bead - 194
+							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
@@ -204,7 +204,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					i(177870, {	-- Thenios's Beacon of Foresight
 						["cost"] = {
 							{ "i", modItemId(183895,04), 1 },	-- LFR Apogee Anima Bead - 194
-							{ "i", modItemId(183894,04), 1 },	-- LFR Thaumaturgic Anima Bead - 194
+							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow

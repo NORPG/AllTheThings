@@ -1257,7 +1257,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_1 },
-					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
+					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -1277,7 +1277,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_1 },
-					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
+					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -1300,7 +1300,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
+					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
 
 					["groups"] = {
@@ -1323,7 +1323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
+					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
 					-- #if AFTER CATA
 					["isYearly"] = true,
@@ -1949,7 +1949,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
-					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
+					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
@@ -1970,7 +1970,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
-					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
+					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
@@ -2206,7 +2206,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
-					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
+					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
@@ -2224,7 +2224,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
-					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
+					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein

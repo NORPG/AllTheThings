@@ -647,6 +647,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							{ "n", 116285 },	-- Test Subject <Crown Chemical Co.>
 						},
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24658, {	-- Crushing the Crown (A) [Elwynn Forest]
@@ -666,6 +667,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Lackey slain
 						["provider"] = { "n", 37214 },	-- Crown Lackey
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24659, {	-- Crushing the Crown (A) [Darkshore]
@@ -685,6 +687,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Thug slain
 						["provider"] = { "n", 37917 },	-- Crown Thug
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24660, {	-- Crushing the Crown (A) [Duskwood]
@@ -704,6 +707,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Duster slain
 						["provider"] = { "n", 37984 },	-- Crown Duster
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24662, {	-- Crushing the Crown (A) [Dustwallow Marsh]
@@ -723,6 +727,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Hoodlum slain
 						["provider"] = { "n", 38006 },	-- Crown Hoodlum
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24663, {	-- Crushing the Crown (A) [The Hinterlands]
@@ -742,6 +747,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Agent slain
 						["provider"] = { "n", 38016 },	-- Crown Agent
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24664, {	-- Crushing the Crown (A) [Winterspring]
@@ -761,6 +767,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Sprinkler slain
 						["provider"] = { "n", 38023 },	-- Crown Sprinkler
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24665, {	-- Crushing the Crown (A) [Terokkar Forest]
@@ -780,6 +787,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Underling slain
 						["provider"] = { "n", 38030 },	-- Crown Underling
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24666, {	-- Crushing the Crown (A) [Crystalsong Forest]
@@ -799,6 +807,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Sprayer slain
 						["provider"] = { "n", 38032 },	-- Crown Sprayer
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(28934, {	-- Crushing the Crown (A) [Uldum]
@@ -818,6 +827,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Technician slain
 						["provider"] = { "n", 51613 },	-- Crown Technician
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(44546, {	-- Crushing the Crown (H) [Legion+]
@@ -841,6 +851,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							{ "n", 116285 },	-- Test Subject <Crown Chemical Co.>
 						},
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24638, {	-- Crushing the Crown (H) [Durotar]
@@ -860,6 +871,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Lackey slain
 						["provider"] = { "n", 37214 },	-- Crown Lackey
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24645, {	-- Crushing the Crown (H) [Silverpine Forest]
@@ -879,6 +891,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Thug slain
 						["provider"] = { "n", 37917 },	-- Crown Thug
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24647, {	-- Crushing the Crown (H) [Hillsbrad Foothills]
@@ -898,6 +911,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Duster slain
 						["provider"] = { "n", 37984 },	-- Crown Duster
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24648, {	-- Crushing the Crown (H) [Dustwallow Marsh]
@@ -917,6 +931,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Hoodlum slain
 						["provider"] = { "n", 38006 },	-- Crown Hoodlum
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24649, {	-- Crushing the Crown (H) [The Hinterlands]
@@ -936,6 +951,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Agent slain
 						["provider"] = { "n", 38016 },	-- Crown Agent
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24650, {	-- Crushing the Crown (H) [Winterspring]
@@ -955,6 +971,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Sprinkler slain
 						["provider"] = { "n", 38023 },	-- Crown Sprinkler
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24651, {	-- Crushing the Crown (H) [Terokkar Forest]
@@ -974,6 +991,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Underling slain
 						["provider"] = { "n", 38030 },	-- Crown Underling
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(24652, {	-- Crushing the Crown (H) [Crystalsong Forest]
@@ -993,6 +1011,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Sprayer slain
 						["provider"] = { "n", 38032 },	-- Crown Sprayer
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(28935, {	-- Crushing the Crown (H) [Uldum]
@@ -1012,6 +1031,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					objective(2, {	-- 0/5 Crown Technician slain
 						["provider"] = { "n", 51613 },	-- Crown Technician
 					}),
+					i(50130),	-- Snagglebolt's Khorium Bomb
 				},
 			}),
 			q(8903, {	-- Dangerous Love (A)

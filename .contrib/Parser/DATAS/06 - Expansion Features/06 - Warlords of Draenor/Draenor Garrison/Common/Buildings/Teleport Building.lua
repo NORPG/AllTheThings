@@ -35,6 +35,9 @@ root(ROOTS.ExpansionFeatures,
 								["races"] = HORDE_ONLY,
 							}),
 						}),
+						n(REWARDS, {
+							i(117491),	-- Ogre Waystone
+						}),
 					},
 				}),
 			}),

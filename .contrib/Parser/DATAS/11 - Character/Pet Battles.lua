@@ -20,7 +20,7 @@ PET_BATTLE_DUNGEONS = createHeader({
 });
 -- Content that requires Pet Battling
 root(ROOTS.Character, petbattle(n(PET_BATTLES, {
-	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+	n(ACHIEVEMENTS, timelineSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		pvp(n(PVP, {
 			ach(12290, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Family Brawler
 				-- Meta Achievement should symlink the contained Achievements from Source
@@ -318,8 +318,9 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			-- #endif
 		}),
 	}),
-	n(PET_BATTLE_DUNGEONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
-		ach(14021, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- The Shadows Revealed
+	n(PET_BATTLE_DUNGEONS, timelineSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+		ach(14021, {	-- The Shadows Revealed
+			["timeline"] = { ADDED_8_3_0 },
 			["sym"] = {{ "meta_achievement",
 				11765,	-- Pet Battle Challenge: Wailing Caverns
 				11856,	-- Pet Battle Challenge: Deadmines
@@ -330,15 +331,15 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			["groups"] = {
 				i(174871),	-- Mayhem Mind Melder (TOY!)
 			},
-		})),
-		q(58458, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- Pet Battle Challenge: Blackrock Depths
+		}),
+		header(HEADERS.Quest, 58458, {	-- Pet Battle Challenge: Blackrock Depths
 			["sourceQuest"] = 58457,	-- Shadows of Blackrock
 			["provider"] = { "n", 161782 },	-- Burt Macklyn
 			["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
 			["maps"] = {
 				1578,	-- Pet Dungeon
 			},
-			["isWeekly"] = true,
+			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				ach(14020, {	-- Pet Battle Challenge: Blackrock Depths
 					i(174830),	-- Shadowy Disguise (TOY!)
@@ -369,6 +370,13 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 						spell(314215),	-- Manapoof Link: Blackrock Depths
 					},
 				}),
+				q(58458, {	-- Pet Battle Challenge: Blackrock Depths
+					["sourceQuest"] = 58457,	-- Shadows of Blackrock
+					["provider"] = { "n", 161782 },	-- Burt Macklyn
+					["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["isWeekly"] = true,
+					["groups"] = { i(174360) },	-- Shadowy Gem
+				}),
 				n(160210, {	-- Tasha Riley
 					["coord"] = { 41.1, 49.1, 1578 },
 					["description"] = "Speak with Tasha after you finish the last fight and join the COUNCIL OF CHAOS to get title.",
@@ -394,16 +402,15 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					},
 				}),
 			},
-		})),
-		q(46292, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Pet Battle Challenge: Deadmines
-			["sourceQuest"] = 46291,	-- The Deadmines Strike Back
+		}),
+		header(HEADERS.Quest, 46292, {	-- Pet Battle Challenge: Deadmines
 			["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 			["coord"] = { 41.6, 71.2, WESTFALL },
 			["maps"] = {
 				835,	-- Pet Dungeon 1
 				836,	-- Pet Dungeon 2
 			},
-			["isWeekly"] = true,
+			["timeline"] = { ADDED_7_2_5 },
 			["groups"] = {
 				ach(11856, {	-- Pet Battle Challenge: Deadmines
 					i(151632),	-- Mining Monkey (PET!)
@@ -420,6 +427,13 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					["groups"] = {
 						spell(244502),	-- Manapoof Link: Westfall
 					},
+				}),
+				q(46292, {	-- Pet Battle Challenge: Deadmines
+					["sourceQuest"] = 46291,	-- The Deadmines Strike Back
+					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
+					["coord"] = { 41.6, 71.2, WESTFALL },
+					["isWeekly"] = true,
+					["groups"] = { i(151191) },	-- Old Bottle Cap
 				}),
 				n(119390, {	-- Marcus "Bagman" Brown
 					["coord"] = { 41.6, 71.2, WESTFALL },
@@ -439,9 +453,8 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					},
 				}),
 			},
-		})),
-		q(54186, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Pet Battle Challenge: Gnomeregan
-			["sourceQuest"] = 54185,	-- Gnomeregan's New Guardians
+		}),
+		header(HEADERS.Quest, 54186, {	-- Pet Battle Challenge: Gnomeregan
 			["provider"] = { "n", 147070 },	-- Micro Zoox
 			["coord"] = { 31.2, 37.4, NEW_TINKERTOWN_LOWER },
 			["maps"] = {
@@ -450,7 +463,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				841,	-- Pet Dungeon
 				842,	-- Pet Dungeon
 			},
-			["isWeekly"] = true,
+			["timeline"] = { ADDED_8_1_0 },
 			["groups"] = {
 				ach(13269, {	-- Pet Battle Challenge: Gnomeregan
 					i(165894),	-- Mini Spider Tank (PET!)
@@ -479,6 +492,13 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 						spell(286079),	-- Manapoof Link: Gnomeregan
 					},
 				}),
+				q(54186, {	-- Pet Battle Challenge: Gnomeregan
+					["sourceQuest"] = 54185,	-- Gnomeregan's New Guardians
+					["provider"] = { "n", 147070 },	-- Micro Zoox
+					["coord"] = { 31.2, 37.4, NEW_TINKERTOWN_LOWER },
+					["isWeekly"] = true,
+					["groups"] = { i(165835) },-- Pristine Gizmo
+				}),
 				n(147070, {	-- Micro Zoox
 					["coord"] = { 31.8, 71.6, NEW_TINKERTOWN_LOWER },
 					["groups"] = {
@@ -500,15 +520,14 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					},
 				}),
 			},
-		})),
-		q(56492, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Pet Battle Challenge: Stratholme
-			["sourceQuest"] = 56491,	-- Tiny Terrors of Stratholme
+		}),
+		header(HEADERS.Quest, 56492, {	-- Pet Battle Challenge: Stratholme
 			["provider"] = { "n", 150987 },	-- Sean Wilkers
 			["coord"] = { 43.1, 19.9, EASTERN_PLAGUELANDS },
 			["maps"] = {
 				1505,	-- Pet Dungeon
 			},
-			["isWeekly"] = true,
+			["timeline"] = { ADDED_8_2_0 },
 			["groups"] = {
 				ach(13627, {	-- Pet Battle Challenge: Stratholme
 					i(169670),	-- Minimancer (PET!)
@@ -549,11 +568,16 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 						spell(301941),	-- Manapoof Link: Stratholme
 					},
 				}),
+				q(56492, {	-- Pet Battle Challenge: Stratholme
+					["sourceQuest"] = 56491,	-- Tiny Terrors of Stratholme
+					["provider"] = { "n", 150987 },	-- Sean Wilkers
+					["coord"] = { 43.1, 19.9, EASTERN_PLAGUELANDS },
+					["isWeekly"] = true,
+					["groups"] = { i(169665) },	-- Cleansed Remains
+				}),
 				q(56914, {	-- Angry Residents
 					["isWeekly"] = true,
-					["groups"] = {
-						i(169665),	-- Cleansed Remains
-					},
+					["groups"] = { i(169665) },	-- Cleansed Remains
 				}),
 				n(150987, {	-- Sean Wilkers
 					["coord"] = { 43.1, 20.0, EASTERN_PLAGUELANDS },
@@ -576,9 +600,8 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					},
 				}),
 			},
-		})),
-		q(45539, {	-- Pet Battle Challenge: Wailing Caverns
-			["sourceQuest"] = 45423,	-- Wailing Critters
+		}),
+		header(HEADERS.Quest, 45539, {	-- Pet Battle Challenge: Wailing Caverns
 			["provider"] = { "n", 116781 },	-- Muyani
 			["coords"] = {
 				{ 38.8, 68.2, NORTHERN_BARRENS },
@@ -587,7 +610,6 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			["maps"] = {
 				825,	-- Pet Dungeon
 			},
-			["isWeekly"] = true,
 			["groups"] = {
 				ach(11765, {	-- Pet Battle Challenge: Wailing Caverns
 					i(147543),	-- Son of Skum (PET!)
@@ -611,10 +633,21 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 						spell(244506),	-- Manapoof Link: Wailing Caverns
 					},
 				}),
-				i(143753, {	-- Damp Pet Supplies
-					i(143754),	-- Cavern Moccasin (PET!)
-					i(143756),	-- Everliving Spore (PET!)
-					i(143755),	-- Young Venomfang (PET!)
+				q(45539, {	-- Pet Battle Challenge: Wailing Caverns
+					["sourceQuest"] = 45423,	-- Wailing Critters
+					["provider"] = { "n", 116781 },	-- Muyani
+					["coords"] = {
+						{ 38.8, 68.2, NORTHERN_BARRENS },
+						{ 23.2, 81.8, 11 },	-- Wailing Caverns
+					},
+					["isWeekly"] = true,
+					["groups"] = {
+						i(143753, {	-- Damp Pet Supplies
+							i(143754),	-- Cavern Moccasin (PET!)
+							i(143756),	-- Everliving Spore (PET!)
+							i(143755),	-- Young Venomfang (PET!)
+						}),
+					},
 				}),
 			},
 		}),

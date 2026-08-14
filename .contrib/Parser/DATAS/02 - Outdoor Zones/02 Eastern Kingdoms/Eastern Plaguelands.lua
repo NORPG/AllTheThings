@@ -3694,7 +3694,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 22529, 30 } },	-- Savage Frond
 					-- #endif
 					["lvl"] = 55,
-					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22524, {	-- Insignia of the Crusade
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3703,7 +3702,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
-					-- #endif
 				})),
 				applyclassicphase(PHASE_SIX, q(9137, {	-- Savage Fronds
 					["sourceQuest"] = 9136,	-- Savage Flora
@@ -4698,10 +4696,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Coagulated Rot
 							["providers"] = {
 								{ "i", 15448 },	-- Coagulated Rot
-								{ "i", 15454 },	-- Mortar and Pestle
 							},
-							["cost"] = { { "i", 15447, 7 } },	-- Living Rot
-							["description"] = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
 							["crs"] = {
 								8526,	-- Dark Caster
 								8531,	-- Gibbering Ghoul
@@ -4711,6 +4706,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8538,	-- Unseen Servant
 								12262,	-- Ziggurat Protector
 							},
+						}),
+						i(15448, {	-- Coagulated Rot
+							["provider"] = { "i", 15454 },	-- Mortar and Pestle
+							["cost"] = { { "i", 15447, 7 } },	-- Living Rot
+						}),
+						i(15454),	-- Mortar and Pestle
+						i(15447, {	-- Living Rot
+							["description"] = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
 						}),
 					},
 				}),
@@ -4722,9 +4725,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Coagulated Rot
 							["providers"] = {
 								{ "i", 15448 },	-- Coagulated Rot
-								{ "i", 15454 },	-- Mortar and Pestle
 							},
-							["cost"] = { { "i", 15447, 7 } },	-- Living Rot
 							["crs"] = {
 								8526,	-- Dark Caster
 								8531,	-- Gibbering Ghoul
@@ -4732,8 +4733,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8525,	-- Scourge Warder
 								8543,	-- Stitched Horror
 								8538,	-- Unseen Servant
-								45851,	-- Overstuffed Golem
+								12262,	-- Ziggurat Protector
 							},
+						}),
+						i(15448, {	-- Coagulated Rot
+							["provider"] = { "i", 15454 },	-- Mortar and Pestle
+							["cost"] = { { "i", 15447, 7 } },	-- Living Rot
+						}),
+						i(15454),	-- Mortar and Pestle
+						i(15447, {	-- Living Rot
+							["description"] = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
 						}),
 					},
 				}),
