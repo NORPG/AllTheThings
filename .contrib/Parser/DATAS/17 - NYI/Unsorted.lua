@@ -178,13 +178,8 @@ root(ROOTS.Unsorted, {
 			i(274457),	-- Emperor Crab
 			i(274458),	-- Kun-Lai Runt
 			i(274459),	-- Squirky
-			i(274464),	-- Black Housing Dye
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274469),	-- Brown Housing Dye
-			i(274471),	-- Orange Housing Dye
-			i(274474),	-- White Housing Dye
-			i(274475),	-- Yellow Housing Dye
 			i(274494),	-- Chiral Marrowgrafter
 			i(274499),	-- Toxiferous Transfusion
 			i(274579),	-- Undamaged Trap Needle

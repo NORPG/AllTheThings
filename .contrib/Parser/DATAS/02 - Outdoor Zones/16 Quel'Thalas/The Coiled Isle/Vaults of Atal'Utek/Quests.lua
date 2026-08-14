@@ -55,27 +55,29 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Warleader Abdumati
 						{ 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },		-- Talon Commander Zela
 					},
-					["isWeekly"] = true,	-- Assumption
+					["isDaily"] = true,
 				}),
 				q(98419, {	-- Shoulder to Shoulder
 					["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
 					["qg"] = 262798,	-- Warleader Abdumati
 					["coord"] = { 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					["isWeekly"] = true,	-- Assumption
+					["isDaily"] = true,
 				}),
 				q(96639, {	-- Patrolling the Temple
 					["qg"] = 272109,	-- Hawkeye Socho (mobileNPC)
 					["coord"] = { 47.2, 65.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Moves to the troops left and right of this point
+					["isDaily"] = true,
 				}),
 				q(96642, {	-- Decisive Incursions
 					["qg"] = 272109,	-- Hawkeye Socho (mobileNPC)
 					["coord"] = { 47.2, 65.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Moves to the troops left and right of this point
+					["isDaily"] = true,
 				}),
-				n(REWARDS, {
-					i(273000),	-- Corrosive Soul
-					i(274374),	-- Trovehunter's Bounty
-					i(279382),	-- Venom-Cursed Fragment
-				}),
+			}),
+			n(REWARDS, {
+				i(273000),	-- Corrosive Soul
+				i(274374),	-- Trovehunter's Bounty
+				i(279382),	-- Venom-Cursed Fragment
 			}),
 		}),
 	}),
