@@ -68,10 +68,10 @@ q(12191,{awp=20202,coords={
 qo(1,{crs={24108},e=7,providers={{"i",33096}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(11321,{awp=20001,coords={
-[1426]={{46.4,40.3}}},cost={{"i",33955,1}},description="This quest was only available during the 2007 Brewfest.",e=7,qgs={24468},r=2,rwp=20403,u=2,g={
+[1426]={{46.4,40.3}}},description="This quest was only available during the 2007 Brewfest.",e=7,providers={{"i",33955}},qgs={24468},r=2,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(11413,{awp=20001,coords={
-[1411]={{46.3,14.8}}},cost={{"i",33955,1}},description="This quest was only available during the 2007 Brewfest.",e=7,qgs={24497},r=1,rwp=20403,u=2,g={
+[1411]={{46.3,14.8}}},description="This quest was only available during the 2007 Brewfest.",e=7,providers={{"i",33955}},qgs={24497},r=1,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(12491,{awp=20202,e=7,isYearly=1,lvl=65,providers={{"i",38280}},r=2,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
@@ -98,10 +98,10 @@ q(12318,{awp=20403,coords={
 [1411]={{47.9,26.9}},
 [1426]={{46.2,52.8}}},e=7,isBreadcrumb=1,lvl=65,nextQuests={12062},qgs={27584,28329},rwp=30303,sourceQuests={11441,11442,11446,11447}}),
 q(12193,{awp=20001,coords={
-[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,qgs={24468},r=2,rwp=30002,g={
+[1426]={{46.4,40.3}}},e=7,providers={{"i",33955}},qgs={24468},r=2,rwp=30002,g={
 s(143353,33016,{b=1,e=7,f=2,filterForRWP=2,q=3})}}),
 q(12194,{awp=20001,coords={
-[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,qgs={24497},r=1,rwp=30002,g={
+[1411]={{46.3,14.8}}},e=7,providers={{"i",33955}},qgs={24497},r=1,rwp=30002,g={
 s(143353,33016,{b=1,e=7,f=2,filterForRWP=2,q=3})}}),
 q(11454,{awp=20001,coords={
 [1411]={{44.3,17.5}},
@@ -1205,8 +1205,8 @@ q(11449,{awp=20001,coords={
 [1420]={{60.9,53}}},e=16,lvl=10,qgs={23973},r=1,sourceQuests={11357},g={
 qo(1,{e=16,providers={{"i",32971}}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
-q(11242,{awp=20001,cost={{"i",33277,1}},e=16,lvl=60,maps={435},qgs={23904},r=2,rwp=40001}),
-q(11403,{awp=20001,cost={{"i",33277,1}},e=16,lvl=60,maps={435},qgs={23904},r=1,rwp=40001}),
+q(11242,{awp=20001,e=16,lvl=60,maps={435},providers={{"i",33277}},qgs={23904},r=2,rwp=40001}),
+q(11403,{awp=20001,e=16,lvl=60,maps={435},providers={{"i",33277}},qgs={23904},r=1,rwp=40001}),
 q(8311,{coords={
 [1453]={{47.6,35.4}}},e=16,isYearly=1,lvl=10,maxReputation={469,42000},qgs={15310},r=2,g={
 q(8356,{coords={
@@ -1252,12 +1252,12 @@ i(20557,{b=1,e=16,f=55,q=1})}}),
 q(12133,{awp=20001,coords={
 [1426]={{53.4,51.5}},
 [1429]={{42.6,64.6}},
-[1943]={{60.8,53.6}}},cost={{"i",36876,1}},e=16,isDaily=1,lvl=10,providers={{"o",186887}},r=2,g={
+[1943]={{60.8,53.6}}},e=16,isDaily=1,lvl=10,providers={{"i",36876},{"o",186887}},r=2,g={
 i(34077,{b=1,e=16,f=55,q=1})}}),
 q(12155,{awp=20001,coords={
 [1411]={{52.6,41.5}},
 [1420]={{60.8,53.6}},
-[1941]={{47.2,46.4}}},cost={{"i",36876,1}},e=16,isDaily=1,lvl=10,providers={{"o",186887}},r=1,g={
+[1941]={{47.2,46.4}}},e=16,isDaily=1,lvl=10,providers={{"i",36876},{"o",186887}},r=1,g={
 i(34077,{b=1,e=16,f=55,q=1})}}),
 q(11131,{awp=20001,coords={
 [1426]={{53.4,51.5}},
@@ -1863,7 +1863,7 @@ q(11955,{awp=20400,coords={
 [1954]={{68.8,42.6}},
 [1955]={{60.4,30.8}}},e=11,isBreadcrumb=1,lvl=65,nextQuests={11696},qgs={26221},rwp=40001,sourceQuests={11891}}),
 q(11891,{awp=20400,coords={
-[1440]={{10.2,15.3}}},cost={{"i",35828,1}},description="Use your Totemic Beacon to summon the quest giver.",e=11,lvl=16,qgs={25324},sourceQuests={11886},g={
+[1440]={{10.2,15.3}}},description="Use your Totemic Beacon to summon the quest giver.",e=11,lvl=16,providers={{"i",35828}},qgs={25324},sourceQuests={11886},g={
 qo(1,{coords={
 [1440]={{9.1,12.5}}},e=11,providers={{"i",35237}}}),
 i(23247,{b=1,e=11,q=1})}}),
@@ -1886,7 +1886,7 @@ q(11966,{awp=20400,coords={
 i(23247,{b=1,e=11,q=1}),
 i(35725,{e=11,q=1})}}),
 q(12012,{awp=20400,coords={
-[1440]={{16,20.8}}},cost={{"i",35828,1}},description="Use your Totemic Beacon to summon the quest giver.",e=11,lvl=16,qgs={25324},sourceQuests={11891}}),
+[1440]={{16,20.8}}},description="Use your Totemic Beacon to summon the quest giver.",e=11,lvl=16,providers={{"i",35828}},qgs={25324},sourceQuests={11891}}),
 q(11924,{awp=20400,coords={
 [1438]={{56.6,92}},
 [1453]={{50.1,72.6}},
@@ -2101,7 +2101,7 @@ q(11886,{awp=20400,coords={
 [1458]={{67,13}},
 [1947]={{43.2,25.8}},
 [1954]={{68.8,42.6}},
-[1955]={{60.4,30.8}}},cost={{"i",35828,1}},e=11,lvl=16,maps={1440},qgs={26221},g={
+[1955]={{60.4,30.8}}},e=11,lvl=16,maps={1440},providers={{"i",35828}},qgs={26221},g={
 qo(1,{coords={
 [1440]={{16,20.8}}},crs={25863,25866,25924},e=11,providers={{"i",35277}}})}}),
 q(9322,{e=11,isYearly=1,qgs={16788},rwp=20400,u=2,g={

@@ -12518,7 +12518,10 @@ q(9141,{coords={
 i(22568,{b=1,q=1,u=16})}}),
 q(6022,{coords={
 [1423]={{26.6,74.8}}},lvl=54,qgs={11878},r=1,rwp=40003,g={
-qo(1,{cost={{"i",15447,7}},crs={8525,8526,8531,8538,8541,8543,12262},description="PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",providers={{"i",15448},{"i",15454}}})}}),
+qo(1,{crs={8525,8526,8531,8538,8541,8543,12262},providers={{"i",15448}}}),
+i(15448,{cost={{"i",15447,7}},providers={{"i",15454}},q=1}),
+i(15454,{q=1}),
+i(15447,{description="PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",q=1})}}),
 q(5248,{coords={
 [1423]={{53.4,22}}},lvl=53,providers={{"i",13347}},qgs={10304},r=2,rwp=40003,sourceQuests={5247}}),
 q(6042,{coords={

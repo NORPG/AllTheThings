@@ -10028,6 +10028,11 @@ mnt(16084,{b=1,itemID=8586,lvl=40,q=4,rwp=10400,u=2})}}))}),
 h(-63,{
 i(5466,{crs={3125,3126,3127,5823},description="Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",maps={1},q=1})})}}),
 m(70,{icon=236758,lore="A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",maps={416},petBattleLvl=12,g={
+h(-61,{isRaid=1,lvl=60,g={
+n(15552,{coords={
+[70]={{77.6,17}}},g={
+i(21103,{awp=10900,b=1,q=4,rwp=40003,u=2}),
+i(21130,{b=1,q=1})}})}}),
 h(-12,{
 ach(4929,{awp=40003,r=2,sourceQuests={27186,27190,27191,27213,27222,27241,27245,27247,27291,27411},g={
 crit(69984,{achID=1678,id=1})}}),
@@ -21586,6 +21591,8 @@ r(23486,{learnedAt=285,requireSkill=20222})}})}),
 h(-63,{
 p(57,{awp=20300,itemID=34535,npcID=7547,q=1,spellID=10696}),
 i(12434,{crs={7447,7448,7449},providers={{"i",12384}},q=1,rwp=40003,u=2}),
+i(21105,{awp=10900,b=1,coords={
+[83]={{51.6,84.4},{54.6,87.4},{65,80.2}}},crs={7461,7463,10201},q=4,rwp=40003,u=2}),
 i(12771,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},lvl=52,q=1,rwp=40003,u=2}),
 i(12558,{b=1,crs={7452,7453,7454},lvl=52,q=1,rwp=40003,u=2}),
 r(20029,{crs={7524},itemID=16223,learnedAt=285,q=2,requireSkill=333}),
@@ -24619,6 +24626,10 @@ s(118858,3556,{b=1,c={9},f=4,loc=40,q=2,u=2})}})}),
 h(-46,{
 n(3581,{coords={
 [84]={{48.4,61.8},{54.6,65.6},{56,72.8},{58.4,42},{58.4,79.2},{62.8,51.8},{66,61.2},{67,55},{68.8,64.2},{70.6,68},{71,48.8}}}})}),
+h(-56,{awp=10900,g={
+o(180665,{coords={
+[84]={{75.35,29.73}}},rwp=40003,u=2,g={
+i(21107,{b=1,q=4,u=2})}})}}),
 h(-58,{
 n(69334,{awp=50200,coords={
 [84]={{68,17}}},r=2,g={
@@ -26600,6 +26611,10 @@ q(29360,{awp=40100,coords={
 [998]={{62.2,44.6}}},isDaily=1,qgs={4552},r=1,requireSkill=185,g={
 cu(81,{u=40}),
 crit(17742,{achID=5844,awp=40200,id=6,r=1,u=40})}})}),
+h(-56,{awp=10900,g={
+o(180666,{coords={
+[998]={{77,38}}},rwp=40003,u=2,g={
+i(21106,{b=1,q=4,u=2})}})}}),
 h(-58,{
 n(4604,{coords={
 [998]={{54.8,38}}},r=1,sym={{"select","itemID",3027,3026}},g={
@@ -28548,6 +28563,8 @@ i(8394,{crs={5990,5991,8302},q=1,rwp=40003,u=2}),
 i(8392,{crs={5992,5993,8303},q=1,rwp=40003,u=2}),
 i(57181,{awp=40003,cost={{"i",57178,1}},q=1}),
 i(57183,{awp=40003,cost={{"i",57182,2},{"i",57181,20}},q=1}),
+i(21104,{awp=10900,b=1,coords={
+[17]={{44.6,56}}},crs={8716,8717,12396},q=4,rwp=40003,u=2}),
 i(8244,{crs={7664,7668,7846},description="A very rare zone drop. It has a higher chance to drop from Rare Creatures.",lvl=54,q=3}),
 r(18540,{b=1,c={9},crs={8716,12396},itemID=4213,lvl=60,rwp=40003,u=2}),
 i(10593,{description="A rare zone drop from any creature in the zone.",lvl=54,q=2}),
@@ -31423,7 +31440,9 @@ s(208436,62946,{b=1,f=6,loc=43,q=2}),
 s(208435,62945,{b=1,f=5,loc=42,q=2}),
 s(208434,62944,{b=1,f=4,loc=47,q=2})}}),
 q(9136,{coords={
-[23]={{75.6,53.2}}},lvl=55,qgs={16135},rwp=40003,u=2}),
+[23]={{75.6,53.2}}},lvl=55,qgs={16135},rwp=40003,u=2,g={
+i(22524,{b=1,q=2,u=2}),
+i(22523,{b=1,q=2,u=2})}}),
 q(9137,{coords={
 [23]={{75.6,53.2}}},lvl=55,qgs={16135},repeatable=1,rwp=40003,sourceQuests={9136},u=2}),
 q(27614,{awp=40003,coords={
@@ -31591,10 +31610,16 @@ q(9141,{coords={
 i(22568,{b=1,q=1,u=2})}}),
 q(6022,{coords={
 [23]={{23,68.2}}},lvl=54,qgs={11878},r=1,rwp=40003,u=2,g={
-qo(1,{cost={{"i",15447,7}},crs={8525,8526,8531,8538,8541,8543,12262},description="PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",providers={{"i",15448},{"i",15454}},u=2})}}),
+qo(1,{crs={8525,8526,8531,8538,8541,8543,12262},providers={{"i",15448}},u=2}),
+i(15448,{cost={{"i",15447,7}},providers={{"i",15454}},q=1,u=2}),
+i(15454,{q=1,u=2}),
+i(15447,{description="PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",q=1,u=2})}}),
 q(27451,{awp=40003,coords={
 [23]={{53.2,54.6}}},qgs={11035},g={
-qo(1,{cost={{"i",15447,7}},crs={8525,8526,8531,8538,8541,8543,45851},providers={{"i",15448},{"i",15454}}})}}),
+qo(1,{crs={8525,8526,8531,8538,8541,8543,12262},providers={{"i",15448}}}),
+i(15448,{cost={{"i",15447,7}},providers={{"i",15454}},q=1}),
+i(15454,{q=1}),
+i(15447,{description="PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",q=1})}}),
 q(27461,{awp=40003,coords={
 [23]={{77.6,79.4}}},providers={{"o",205875}},sourceQuests={27460}}),
 q(27462,{awp=40003,coords={
@@ -48937,7 +48962,8 @@ crit(1721,{achID=866,id=14,u=17})}}),
 exp(3636,{u=17}),
 exp(3624,{u=17,g={
 crit(1622,{achID=866,id=2,u=17})}}),
-exp(3625,{u=17,g={
+exp(3625,{coords={
+[107]={{24.7,38.4}}},u=17,g={
 crit(1722,{achID=866,id=15,u=17})}}),
 exp(3613,{u=17,g={
 crit(1623,{achID=866,id=3,u=17})}}),
@@ -49677,8 +49703,10 @@ exp(3874,{u=17,g={
 crit(1777,{achID=843,id=19,u=17})}}),
 exp(3877,{u=17,g={
 crit(1781,{achID=843,id=23,u=17})}}),
-exp(3875,{u=17}),
-exp(3876,{u=17}),
+exp(3875,{coords={
+[109]={{39.1,36.9}}},u=17}),
+exp(3876,{coords={
+[109]={{45.6,29.3}}},u=17}),
 exp(3878,{collectible=false,u=17,g={
 crit(1778,{achID=843,id=20,u=17})}}),
 exp(3740,{u=17}),
@@ -49717,7 +49745,8 @@ exp(3729,{collectible=false,u=17,g={
 crit(1766,{achID=843,id=10,u=17})}}),
 exp(3873,{collectible=false,u=17}),
 exp(3727,{u=17}),
-exp(3738,{u=17,g={
+exp(3738,{coords={
+[109]={{44.5,35.6}}},u=17,g={
 crit(1775,{achID=843,id=17,u=17})}}),
 exp(3731,{u=17}),
 exp(3728,{collectible=false,u=17}),
@@ -56906,7 +56935,8 @@ exp(4023,{collectible=false,u=30,g={
 crit(4130,{achID=1264,id=10,u=30})}}),
 exp(4105,{collectible=false,u=30}),
 exp(4134,{collectible=false,u=30}),
-exp(4021,{u=30}),
+exp(4021,{coords={
+[114]={{53,51.6}}},u=30}),
 exp(4122,{u=30,g={
 crit(4129,{achID=1264,id=9,u=30})}}),
 exp(4133,{u=30}),
@@ -56933,7 +56963,8 @@ crit(4125,{achID=1264,id=5,u=30})}}),
 exp(4150,{collectible=false,u=30}),
 exp(4109,{u=30}),
 exp(4123,{u=30}),
-exp(4020,{u=30}),
+exp(4020,{coords={
+[114]={{45.4,56.3}}},u=30}),
 exp(4103,{collectible=false,u=30}),
 exp(4128,{collectible=false,u=30}),
 exp(4040,{collectible=false,u=30}),
@@ -56978,7 +57009,8 @@ exp(4032,{u=30,g={
 crit(4132,{achID=1264,id=12,u=30})}}),
 exp(4144,{u=30}),
 exp(4142,{u=30}),
-exp(4129,{u=30,g={
+exp(4129,{coords={
+[114]={{42.7,55.7}}},u=30,g={
 crit(4131,{achID=1264,id=11,u=30})}}),
 exp(4107,{collectible=false,u=30}),
 exp(4145,{collectible=false,u=30}),
@@ -62483,10 +62515,13 @@ exp(4487,{collectible=false,u=30}),
 exp(4472,{collectible=false,u=30}),
 exp(4428,{u=30,g={
 crit(5857,{achID=1269,id=16,u=30})}}),
-exp(4421,{u=30}),
-exp(4460,{u=30,g={
+exp(4421,{coords={
+[120]={{48,81.5}}},u=30}),
+exp(4460,{coords={
+[120]={{44.4,81}}},u=30,g={
 crit(5856,{achID=1269,id=15,u=30})}}),
-exp(4461,{u=30}),
+exp(4461,{coords={
+[120]={{49,82.9}}},u=30}),
 exp(4592,{collectible=false,u=30}),
 exp(4429,{u=30}),
 exp(4542,{collectible=false,u=30}),
@@ -68793,7 +68828,8 @@ exp(5943,{u=50}),
 exp(5866,{collectible=false,u=50}),
 exp(5863,{collectible=false,u=50}),
 exp(5857,{collectible=false,u=50}),
-exp(5905,{u=50,g={
+exp(5905,{coords={
+[371]={{25.6,38.2}}},u=50,g={
 crit(20096,{achID=6351,id=9,u=50})}}),
 exp(5901,{collectible=false,u=50}),
 exp(6867,{collectible=false,u=50}),
@@ -68828,7 +68864,8 @@ exp(5953,{collectible=false,u=50}),
 exp(5854,{u=50,g={
 crit(20095,{achID=6351,id=8,u=50})}}),
 exp(5878,{u=50}),
-exp(5899,{u=50}),
+exp(5899,{coords={
+[371]={{31.7,36.4}}},u=50}),
 exp(5851,{u=50}),
 exp(5934,{u=50,g={
 crit(20091,{achID=6351,id=5,u=50})}}),
@@ -74466,8 +74503,9 @@ crit(20116,{achID=6969,id=12})}),
 exp(5949,{collectible=false}),
 exp(5986,{
 crit(20117,{achID=6969,id=13})}),
-exp(5970,{
-crit(20118,{achID=6969,id=14})}),
+exp(5970,{coords={
+[376]={{25.6,44}}},g={
+crit(20118,{achID=6969,id=14})}}),
 exp(6064),
 exp(5968,{
 crit(20110,{achID=6969,id=6})}),

@@ -3547,6 +3547,11 @@ i(203752,{b=1,c={8},coords={
 i(203753,{b=1,c={8},coords={
 [1411]={{67.6,87.8}}},crs={3205},description="This can also drop from any of the rare mobs in the zone.",q=2,u=1605})})}}),
 m(1445,{icon=236758,lore="A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",maps={416},g={
+h(-61,{isRaid=1,lvl=60,g={
+n(15552,{coords={
+[1445]={{77.6,17}}},g={
+i(21103,{awp=10900,b=1,q=4,rwp=40003,u=1610}),
+i(21130,{b=1,q=1})}})}}),
 h(-12,{
 ach(850,{
 crit(1495,{achID=43,id=1})})}),
@@ -9173,6 +9178,8 @@ n(14742,{coords={
 r(23486,{learnedAt=285,requireSkill=20222})}})}),
 h(-63,{
 i(12434,{crs={7447,7448,7449},providers={{"i",12384}},q=1,rwp=40003}),
+i(21105,{awp=10900,b=1,coords={
+[1452]={{51.6,84.4},{54.6,87.4},{65,80.2}}},crs={7461,7463,10201},q=4,rwp=40003,u=1610}),
 i(12771,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},lvl=52,q=1,rwp=40003}),
 i(12558,{b=1,crs={7452,7453,7454},lvl=52,q=1,rwp=40003}),
 r(20029,{crs={7524},itemID=16223,learnedAt=285,q=2,requireSkill=333}),
@@ -10499,6 +10506,9 @@ n(204070,{coords={
 i(204912,{b=1,c={9},f=55,q=2,u=1605,g={
 r(425477,{u=1605})}})}})}),
 h(-56,{
+o(180665,{awp=10900,coords={
+[1453]={{72,6}}},rwp=40003,u=1610,g={
+i(21107,{b=1,q=4,u=1610})}}),
 i(205864,{b=1,c={2},coords={
 [1453]={{33,24.75}}},maps={1431},providers={{"o",402215}},q=1,questID=75940,r=2,rwp=20001,sourceQuests={75939},u=1605}),
 i(205897,{b=1,c={2},coords={
@@ -11094,6 +11104,10 @@ n(204070,{coords={
 [1458]={{24.1,41.6}}},cost={{"i",207973,1},{"i",204906,1},{"i",207974,1}},r=1,u=1605,g={
 i(204912,{b=1,c={9},f=55,q=2,u=1605,g={
 r(425477,{u=1605})}})}})}),
+h(-56,{awp=10900,g={
+o(180666,{coords={
+[1458]={{77,38}}},rwp=40003,u=1610,g={
+i(21106,{b=1,q=4,u=1610})}})}}),
 h(-58,{
 n(4604,{coords={
 [1458]={{54.8,38}}},r=1,sym={{"select","itemID",3027,3026}},g={
@@ -12367,6 +12381,8 @@ r(11477,{isLimited=1,itemID=9300,learnedAt=250,q=1,requireSkill=171})}})}),
 h(-63,{
 i(8394,{crs={5990,5991,8302},q=1,rwp=40003}),
 i(8392,{crs={5992,5993,8303},q=1,rwp=40003}),
+i(21104,{awp=10900,b=1,coords={
+[1419]={{44.6,56}}},crs={8716,8717,12396},q=4,rwp=40003,u=1610}),
 i(8244,{crs={7664,7668,7846},description="A very rare zone drop. It has a higher chance to drop from Rare Creatures.",q=3}),
 r(18540,{b=1,c={9},crs={8716,12396},itemID=4213,lvl=60,q=2,rwp=40003}),
 i(10593,{description="A rare zone drop from any creature in the zone.",q=2}),
@@ -13945,7 +13961,10 @@ q(9141,{coords={
 i(22568,{b=1,q=1,u=1611})}}),
 q(6022,{coords={
 [1423]={{26.6,74.8}}},lvl=54,qgs={11878},r=1,rwp=40003,g={
-qo(1,{cost={{"i",15447,7}},crs={8525,8526,8531,8538,8541,8543,12262},description="PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",providers={{"i",15448},{"i",15454}}})}}),
+qo(1,{crs={8525,8526,8531,8538,8541,8543,12262},providers={{"i",15448}}}),
+i(15448,{cost={{"i",15447,7}},providers={{"i",15454}},q=1}),
+i(15454,{q=1}),
+i(15447,{description="PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",q=1})}}),
 q(5248,{coords={
 [1423]={{53.4,22}}},lvl=53,providers={{"i",13347}},qgs={10304},r=2,rwp=40003,sourceQuests={5247}}),
 q(6042,{coords={

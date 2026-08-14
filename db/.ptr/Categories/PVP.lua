@@ -44456,7 +44456,7 @@ h(-47,{pvp=1,g={
 i(257194,{b=1,description="Rewarded within the first few wins in queued PvP Content.",pvp=1,rwp=120100,u=2}),
 i(271341,{awp=120005,f=55,pvp=1,rwp=120007,spellID=1288884,u=2,g={
 i(271342,{awp=120001,f=55,pvp=1,spellID=1288889})}})}})}}),
-n(62436,{awp=120100,pvp=1,g={
+h(-764,{awp=120100,pvp=1,g={
 h(-12,{pvp=1,rwp=120200,g={
 ach(62497,{pvp=1,g={
 i(270560,{pvp=1})}}),

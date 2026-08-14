@@ -18832,7 +18832,7 @@ i(21510,{b=1,description="Contains a random assortment of common, uncommon, and 
 i(21511,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 30-32.",u=2}),
 i(21512,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",u=2}),
 i(21513,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",u=2})}})}}),
-h(-483,{maps={71,75},rwp=40003,u=2,g={
+h(-483,{awp=10900,maps={71,75},rwp=40003,u=2,g={
 h(-45,{u=2,g={
 q(8519,{coords={
 [81]={{28.7,89.1}}},minReputation={910,0},providers={{"o",180633}},sourceQuests={8305},u=2}),
@@ -18900,21 +18900,9 @@ s(8513,21532,{b=1,f=5,loc=47,lvl=25,u=2})}}),
 q(8735,{coords={
 [80]={{36.18,41.79}}},crs={5317,5319,5320,12474,12475,12476,12477,12478,12479,15625},maps={26,47,63,69},minReputation={910,0},qgs={11832},qis={21146,21147,21148,21149},sourceQuests={8734},u=2}),
 q(8620,{coords={
-[71]={{65.2,18.6}}},cost={{"i",21110,1},{"i",21109,1},{"i",21108,1},{"i",21107,1},{"i",21106,1},{"i",21105,1},{"i",21104,1},{"i",21103,1},{"i",21112,1}},maps={17,70,83,84,90,232,248,287},qgs={11811},qis={21111},sourceQuests={8606},u=2,g={
-i(21103,{b=1,coords={
-[70]={{77.8,17}}},crs={15552},u=2}),
-i(21104,{b=1,coords={
-[17]={{44.6,56}}},crs={8716,8717,12396},u=2}),
-i(21105,{b=1,coords={
-[83]={{51.6,84.4},{54.6,87.4},{65,80.2}}},crs={7461,7463,10201},u=2}),
-i(21106,{b=1,coords={
-[90]={{77,38}}},providers={{"o",180666}},u=2}),
-i(21107,{b=1,coords={
-[84]={{75.35,29.73}}},providers={{"o",180665}},u=2}),
-i(21108,{b=1,crs={10184},u=2}),
-i(21109,{b=1,coords={
-[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",providers={{"o",180667}},u=2}),
-i(21110,{b=1,crs={11502},u=2}),
+[71]={{65.2,18.6}}},maps={17,70,83,84,90,232,248,287},qgs={11811},qis={21111},sourceQuests={8606},u=2,g={
+i(21112,{b=1,cost={{"i",21110,1},{"i",21109,1},{"i",21108,1},{"i",21107,1},{"i",21106,1},{"i",21105,1},{"i",21104,1},{"i",21103,1}},spellID=25719,u=2,g={
+i(21111,{b=1,u=2})}}),
 s(8504,21517,{b=1,f=4,loc=40,lvl=25,spellID=35126,u=2})}}),
 q(8301,{coords={
 [81]={{49.5,36.4}}},cost={{"i",20384,200}},qgs={15180},sourceQuests={8288},u=2,g={

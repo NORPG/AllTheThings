@@ -816,7 +816,8 @@ i(17063,{b=1,f=52,lvl=60,q=4}),
 i(19138,{b=1,f=52,lvl=60,q=4}),
 i(18815,{b=1,f=53,lvl=60,q=4}),
 i(17082,{b=1,f=53,lvl=60,q=4}),
-i(17982,{awp=10100,b=1,f=52,lvl=60,q=3,rwp=10400,u=2})}})}}),
+i(17982,{awp=10100,b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
+i(21110,{awp=10900,b=1,q=4,rwp=40003,u=2})}})}}),
 inst(760,{coords={
 [1445]={{52.3,76.2}}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,["zone-text-areaID"]=2159,g={
 h(-45,{
@@ -991,7 +992,8 @@ s(128575,16900,{b=1,c={11},f=5,loc=40,lvl=60,q=4}),
 i(18205,{b=1,f=51,lvl=60,q=4}),
 s(128752,17078,{b=1,f=3,lvl=60,q=4}),
 i(18813,{b=1,f=52,lvl=60,q=4}),
-i(17064,{b=1,f=53,lvl=60,q=4})})}})}}),
+i(17064,{b=1,f=53,lvl=60,q=4}),
+i(21108,{awp=10900,b=1,q=4,rwp=40003,u=2})})}})}}),
 inst(742,{awp=10600,coords={
 [33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},u=13,g={
 h(-45,{u=13,g={
@@ -1007,6 +1009,10 @@ q(7784,{coords={
 i(19383,{b=1,f=51,lvl=60,q=4,u=13}),
 s(130147,19366,{b=1,f=1,lvl=60,q=4,u=13}),
 i(19384,{b=1,f=52,lvl=60,q=4,u=13})}})}}),
+h(-56,{u=13,g={
+o(180667,{awp=10900,coords={
+[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",rwp=40003,u=2,g={
+i(21109,{awp=10600,b=1,q=4,u=15})}})}}),
 h(-63,{u=13,g={
 i(18562,{crs={13996,14401},q=4,u=13}),
 i(19434,{b=1,crs={12457,12459,12461},f=52,lvl=60,q=4,u=13}),
@@ -15131,7 +15137,7 @@ s(178477,50449,{f=4,loc=41,lvl=80,q=4,u=33}),
 i(50452,{f=51,lvl=80,q=4,u=33})}}),
 h(-19,{crs={36597,36612,36626,36627,36678,36789,36853,36855,36939,36948,37813,37955,37970},u=33,g={
 i(49908,{description="Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty.",q=3,u=33})}}),
-d(115,{difficulties={1,2,3,4,5,6},u=33,g={
+d(116,{difficulties={1,2,3,4,5,6},u=33,g={
 h(-368,{u=33,g={
 e(1624,{npcID=36612,u=33}),
 e(1628,{npcID=37813,u=33}),
@@ -19070,7 +19076,7 @@ s(208707,63538,{f=34,lvl=85,q=4,u=40}),
 s(211973,68601,{f=20,lvl=85,q=4,u=40}),
 s(206524,59460,{f=27,lvl=85,q=4,u=40}),
 i(59461,{f=53,lvl=85,q=4,u=40})}}),
-d(115,{difficulties={1,2,3,4,5,6},u=40,g={
+d(116,{difficulties={1,2,3,4,5,6},u=40,g={
 e(170,{npcID=41570,u=40,g={
 ach(5306,{u=40,g={
 crit(15265,{achID=4853,id=1,u=40})}}),
@@ -19303,7 +19309,7 @@ s(206812,60201,{f=6,loc=46,lvl=85,q=4,u=40}),
 s(206563,59521,{f=25,lvl=85,q=4,u=40}),
 s(206813,60202,{f=5,loc=40,lvl=85,q=4,u=40}),
 i(59520,{f=53,lvl=85,q=4,u=40})}}),
-d(115,{difficulties={1,2,3,4,5,6},u=40,g={
+d(116,{difficulties={1,2,3,4,5,6},u=40,g={
 e(156,{npcID=44600,u=40,g={
 ach(5300,{u=40,g={
 crit(15271,{achID=4853,id=1,u=40})}}),
@@ -19473,7 +19479,7 @@ h(-12,{u=40,g={
 ach(4851,{u=40,g={
 crit(16060,{achID=5506,id=1,u=40})}}),
 gach(4987,{u=40})}}),
-d(115,{difficulties={1,2,3,4,5,6},u=40,g={
+d(116,{difficulties={1,2,3,4,5,6},u=40,g={
 e(154,{npcID=45871,u=40,g={
 ach(5304,{u=40,g={
 crit(15276,{achID=4853,id=1,u=40})}}),
@@ -19695,7 +19701,7 @@ s(213664,71640,{f=5,loc=45,lvl=85,q=4,u=41}),
 s(213455,71360,{f=28,lvl=85,q=4,u=41}),
 i(68915,{f=53,lvl=85,q=4,u=41}),
 i(71367,{f=52,lvl=85,q=4,u=41})}}),
-d(115,{difficulties={1,2,3,4,5,6},u=41,g={
+d(116,{difficulties={1,2,3,4,5,6},u=41,g={
 h(-19,{u=41,g={
 i(71141,{b=1,crs={52409,52498,52530,52558,52571,53494,53691},q=4,u=41}),
 i(69815,{b=1,crs={52409,52498,52530,52558,52571,53494,53691},q=5,u=41})}}),
@@ -20096,7 +20102,7 @@ i(71806,{q=4,u=42}),
 i(71805,{q=4,u=42}),
 i(71809,{q=4,u=42})}}),
 i(78891,{b=1,cost={{"c",615,1}},q=4,u=42})}})}}),
-d(114,{difficulties={7,1,2,3,4,5,6},u=42,g={
+d(115,{difficulties={7,1,2,3,4,5,6},u=42,g={
 e(311,{npcID=55265,u=42,g={
 crit(18445,{achID=6106,id=1,u=42})}}),
 e(324,{npcID=55308,u=42,g={
@@ -20113,7 +20119,7 @@ e(318,{npcID=53879,u=42,g={
 crit(18451,{achID=6107,id=1,u=42})}}),
 e(333,{npcID=56173,u=42,g={
 crit(18452,{achID=6107,id=1,u=42})}})}}),
-d(115,{difficulties={1,2,3,4,5,6},u=42,g={
+d(116,{difficulties={1,2,3,4,5,6},u=42,g={
 h(-19,{crs={55265,55294,55308,55312,55689,56427},u=42,g={
 i(71998,{description="Drops commonly from Dragon Soul bosses.",q=4,u=42}),
 i(77952,{b=1,c={4},q=5,u=42,g={

@@ -995,7 +995,8 @@ i(17063,{b=1,f=52,lvl=60,q=4,u=2}),
 i(19138,{b=1,f=52,lvl=60,q=4,u=2}),
 i(18815,{b=1,f=53,lvl=60,q=4,u=2}),
 i(17082,{b=1,f=53,lvl=60,q=4,u=2}),
-i(17982,{awp=10100,b=1,f=52,lvl=60,q=3,rwp=10400,u=2})}})}}),
+i(17982,{awp=10100,b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
+i(21110,{awp=10900,b=1,q=4,rwp=40003,u=1610})}})}}),
 d(201,{awp=11503,u=1608,g={
 n(13278,{coords={
 [1447]={{79.2,73.6}}},u=1608,g={
@@ -1806,7 +1807,8 @@ i(18813,{awp=10001,b=1,f=52,lvl=60,q=4,rwp=100000}),
 i(228163,{awp=11503,b=1,f=53,q=4,u=1608}),
 i(228188,{awp=11503,b=1,f=53,lvl=60,q=4,u=1608}),
 i(228298,{awp=11503,b=1,f=53,lvl=60,q=4,u=1608}),
-i(17064,{b=1,f=53,lvl=60,q=4,rwp=11503,u=2})})}}),
+i(17064,{b=1,f=53,lvl=60,q=4,rwp=11503,u=2}),
+i(21108,{awp=10900,b=1,q=4,rwp=40003,u=1610})})}}),
 inst(2791,{awp=11503,coords={
 [1447]={{43.5,83.6}}},isRaid=1,lore="The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",lvl=60,savedInstanceID=2791,u=1608,["zone-text-areaID"]=15532,g={
 n(6109,{modelScale=6,rwp=11503,u=2,g={
@@ -1875,6 +1877,10 @@ i(19383,{b=1,f=51,lvl=60,q=4,u=2}),
 s(163881,19366,{b=1,f=1,lvl=60,q=4,u=2}),
 i(19384,{b=1,f=52,lvl=60,q=4,u=2})}})}}),
 d(9,{rwp=11504,u=2,g={
+h(-56,{awp=10900,u=2,g={
+o(180667,{coords={
+[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",rwp=40003,u=1610,g={
+i(21109,{b=1,q=4,rwp=11504,u=2})}})}}),
 h(-63,{u=2,g={
 i(18562,{crs={13996,14401},q=4,u=2}),
 i(19434,{b=1,crs={12457,12459,12461},f=52,lvl=60,q=4,u=2}),
