@@ -153,9 +153,6 @@ root(ROOTS.Unsorted, {
 			i(272283),	-- Swordsman's Emanation
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
-			i(273068),	-- Adorned Fang
-			i(273069),	-- Adorned Fang
-			i(273070),	-- Pattern: Adorned Fang
 			i(273303),	-- Ritual Gem
 			i(273311),	-- Kobold Candle Collection
 			i(273312),	-- Large Exodar Crystal
@@ -257,7 +254,6 @@ root(ROOTS.Unsorted, {
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
-			i(275334),	-- Pattern: Stretched Snakeskin Rack
 			i(275338),	-- Pattern: Rolled Bed Linens
 			i(275526),	-- Preyhunter's Band
 			i(275527),	-- Preyhunter's Signet
@@ -685,9 +681,6 @@ root(ROOTS.Unsorted, {
 			i(279364),	-- Coiled Hookshot
 			i(279365),	-- Fine Captain's Bottle
 			i(279368),	-- Inscribed Amani Mural
-			i(279371),	-- Flat Snakeskin Canopy
-			i(279372),	-- Stretched Snakeskin Rack
-			i(279373),	-- Mounted Moby
 			i(279374),	-- Rolled Bed Linens
 			i(279375),	-- Tortollan Slingsack
 			i(279384),	-- Bonemail Gauntlet
@@ -876,8 +869,6 @@ root(ROOTS.Unsorted, {
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
 			i(274422),	-- Ossified Relic
-			i(279346),	-- Stretched Snakeskin Rack
-			i(279348),	-- Mounted Moby
 			i(279353),	-- Tortollan Slingsack
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
@@ -924,6 +915,12 @@ root(ROOTS.Unsorted, {
 					i(273067),	-- Design: Polished Ammolite (RECIPE!)
 					i(273065),	-- Polished Ammolite+
 					i(273066),	-- Polished Ammolite++
+				}),
+				prof(LEATHERWORKING, {
+					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
+					i(273068),	-- Adorned Fang+
+					i(273069),	-- Adorned Fang++
+					--
 				}),
 			}),
 

@@ -1102,6 +1102,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			--}},
 			["groups"] = {
 				-- Only known source is the Bottle
+				i(275334),	-- Pattern: Stretched Snakeskin Rack (RECIPE!)
 				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
 				i(275308),	-- Plans: Amani Forgemaster's Rack (RECIPE!)
 				i(275273),	-- Recipe: Sweet-And-Sour Skewers (RECIPE!)
@@ -1948,11 +1949,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 		n(DECOR, {
 			i(262449),	-- Embossed Sin'dorei Fur Rug (DECOR!)
+			i(279371, {["timeline"] = { ADDED_12_1_0 }}),	-- Flat Snakeskin Canopy (DECOR!)
 			i(265791),	-- Haranir Canopy Bed (DECOR!)
 			i(253457),	-- Leather-Bound Haranir Wall Shelf (DECOR!)
+			i(279348, {["timeline"] = { ADDED_12_1_0 }}),	-- Mounted Moby (DECOR!)
 			i(264244),	-- Plush Haranir Leather Pillow (DECOR!)
 			i(262589),	-- Simple Haranir Table (DECOR!)
 			i(262600),	-- Stitched Haranir Rug (DECOR!)
+			i(279346, {["timeline"] = { ADDED_12_1_0 }}),	-- Stretched Snakeskin Rack (DECOR!)
 			i(243090),	-- Sturdy Haranir Chair (DECOR!)
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
