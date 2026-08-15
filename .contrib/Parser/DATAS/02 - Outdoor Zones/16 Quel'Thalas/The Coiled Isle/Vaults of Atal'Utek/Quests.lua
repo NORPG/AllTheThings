@@ -8,8 +8,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(QUESTS, {
 				header(HEADERS.NPC, 269485, {	-- Altar of Corrosion
 					q(97640, {	-- Vaults of Atal'Utek: One Coin Too Many
-						["qg"] = 272024,	-- Sack of Coins
-						["coord"] = { 42.3, 14.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["qgs"] = {
+							272024,	-- Sack of Coins
+							262798,	-- Warleader Abdumati
+						},
+						["coords"] = {
+							{ 42.3, 14.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Sack of Coins
+							{ 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Warleader Abdumati @ Amani Foothold
+							-- { 53.9, 39.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Mok'sa the Stone @ Eastern Amani Outpost
+						},
 					}),
 					q(98428, {	-- Vaults of Atal'Utek: The Altar of Corrosion
 						["sourceQuest"] = 97640,	-- Vaults of Atal'Utek: One Coin Too Many
@@ -17,7 +24,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					}),
 					q(96644, {	-- Essence of Malice
-						["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
+						["sourceQuest"] = 98388,	-- Into the Vaults of Atal'Utek
 						["qg"] = 262880,	-- Er'inye
 						["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["isWeekly"] = true,	-- Assumption
@@ -30,7 +37,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = { i(275060) },	-- Forgotten Relic (QI!)
 					}),
 				}),
-				q(98388, {	-- Vaults of Atal'Utek: Certain Doom
+				q(98388, {	-- Into the Vaults of Atal'Utek
 					["qgs"] = {
 						262798,	-- Warleader Abdumati
 						271885,	-- Mok'sa the Stone
@@ -39,9 +46,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Warleader Abdumati @ Amani Foothold
 						{ 53.9, 39.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Mok'sa the Stone @ Eastern Amani Outpost
 					},
+					["groups"] = {
+						o(675629, {	-- Broken Urn
+							i(278472),	-- Noxious Corrosive Coin
+						}),
+					},
 				}),
 				q(98515, {	-- Vaults of Atal'Utek: A Toxic Tour
-					["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
+					["sourceQuest"] = 98388,	-- Into the Vaults of Atal'Utek
 					["qg"] = 262798,	-- Warleader Abdumati
 					["coord"] = { 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				}),
@@ -58,7 +70,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["isDaily"] = true,
 				}),
 				q(98419, {	-- Shoulder to Shoulder
-					["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
+					["sourceQuest"] = 98388,	-- Into the Vaults of Atal'Utek
 					["qg"] = 262798,	-- Warleader Abdumati
 					["coord"] = { 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["isDaily"] = true,

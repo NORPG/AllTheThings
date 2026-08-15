@@ -14,7 +14,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["isBreadcrumb"] = true,
 					}),
 					q(92916, {	-- A Call for Aid
-						["sourceQuest"] = 98218,	-- Return to Amani'Zar
+						["sourceQuests"] = {
+							98218,	-- Return to Amani'Zar
+							93012,	-- Dead End
+						},
 						["qg"] = 263331,	-- Lady Liadrin
 						["coord"] = { 43.7, 68.3, MAP.MIDNIGHT.ZULAMAN },
 					}),
@@ -119,6 +122,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["qg"] = 259218,	-- Tak'lejo
 						["coord"] = { 47.0, 31.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(280377),	-- Breath of Jan'alai
+						},
 					}),
 					q(93023, {	-- Deaths of Furies
 						["sourceQuests"] = {

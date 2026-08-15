@@ -127,7 +127,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(255088, {	-- Looming Mutagenitor
 					["coord"] = { 26.6, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 93718,
-					["groups"] = { i(276046) },	-- Superclutch Smasher
+					["groups"] = {
+						i(276046),	-- Superclutch Smasher
+						i(276166),	-- Twin-Headed Twinblade
+					},
 				}),
 				n(255087, {	-- Malformed Leviathan
 					["coord"] = { 47.0, 62.2, MAP.MIDNIGHT.THE_COILED_ISLE },

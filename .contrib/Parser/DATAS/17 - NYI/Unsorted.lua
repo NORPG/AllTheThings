@@ -282,7 +282,6 @@ root(ROOTS.Unsorted, {
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276164),	-- Corroded Patagia
-			i(276166),	-- Twin-Headed Twinblade
 			i(276168),	-- Fang of Ss'akrithos
 			i(276169),	-- Malformed Barrier
 			i(276172),	-- Headdress of Mutagenesis
@@ -435,7 +434,6 @@ root(ROOTS.Unsorted, {
 			i(278340),	-- Blighted Pearl
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(278378),	-- Preyhunter's Scaled Bust
-			i(278472),	-- Noxious Corrosive Coin
 			i(278517),	-- Lost Med'jai Amulet
 			i(278523),	-- Feather of Tok'jara
 			i(278534),	-- Eye of Szarith
@@ -652,10 +650,7 @@ root(ROOTS.Unsorted, {
 			i(279209),	-- Plainsrunner's Sun Tunic
 			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
-			i(279287),	-- Corroded Pouch
-			i(279288),	-- Corroded Satchel
 			i(279290),	-- Fang Lover's
-			i(279345),	-- Corroded Satchel
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot
@@ -737,9 +732,6 @@ root(ROOTS.Unsorted, {
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
-			i(280003),	-- Excising Knife
-			i(280004),	-- Corroded Key
-			i(280006),	-- Spirit Loupe
 			i(280007),	-- Mask Fragment
 			i(280047),	-- Feathered Bell
 			i(280089),	-- Mask Fragment
@@ -842,7 +834,6 @@ root(ROOTS.Unsorted, {
 			i(280339),	-- Brewfest Fence
 			i(280341),	-- Brewfest Fencepost
 			i(280343),	-- Hanging Brewfest Wreath
-			i(280377),	-- Breath of Jan'alai
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
 			i(274422),	-- Ossified Relic
