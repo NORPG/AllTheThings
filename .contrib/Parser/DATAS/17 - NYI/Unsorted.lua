@@ -12,7 +12,6 @@ root(ROOTS.Unsorted, {
 			i(244344),	-- Griftah's Mystical Polter-Urn
 			i(247776),	-- Glowing Zangarshroom Cup
 			i(248404),	-- Stack of Kafa Mugs
-			i(248963),	-- Spirit-Touched Amani Mask
 			i(249219),	-- Ouroboric Curse
 			i(249223),	-- Corrosive Bilespear
 			i(249227),	-- Dundun's Favor
@@ -39,7 +38,6 @@ root(ROOTS.Unsorted, {
 			i(265790),	-- Cache of Mistcrests
 			i(266327),	-- Pristine Spinal Barb
 			i(267045),	-- Quivering Egg
-			i(267080),	-- Amani Blueflame Chandelier
 			i(267233),	-- Dehydrated Troll Eye Necklace
 			i(268095),	-- Fresh Poultice
 			i(268113),	-- Jan'alai's Breath
@@ -91,62 +89,6 @@ root(ROOTS.Unsorted, {
 			i(271867),	-- Venom-Etched Sword
 			i(271868),	-- Splintering Spear
 			i(271991),	-- Venomous Equipment Chest
-			i(272147),	-- Colubrine Band
-			i(272148),	-- Anguine Gyre
-			i(272149),	-- Hex Loop
-			i(272150),	-- Ouroboric Signet
-			i(272225),	-- Galerider's Mantle
-			i(272226),	-- Miststalker's Shroud
-			i(272227),	-- Pyrewalker's Veil
-			i(272228),	-- Whispering Periapt
-			i(272229),	-- Serpentine Talisman
-			i(272230),	-- Pledgebearer's Pall
-			i(272231),	-- Galerider's Doublet
-			i(272232),	-- Galerider's Buskins
-			i(272233),	-- Galerider's Gloves
-			i(272234),	-- Galerider's Miter
-			i(272235),	-- Galerider's Treads
-			i(272236),	-- Galerider's Mantlet
-			i(272237),	-- Galerider's Obi
-			i(272238),	-- Galerider's Wraps
-			i(272239),	-- Miststalker's Brigandine
-			i(272240),	-- Miststalker's Striders
-			i(272241),	-- Miststalker's Grips
-			i(272242),	-- Miststalker's Cowl
-			i(272243),	-- Miststalker's Cuisses
-			i(272244),	-- Miststalker's Spaulders
-			i(272245),	-- Miststalker's Cinch
-			i(272246),	-- Miststalker's Wristbands
-			i(272247),	-- Pyrewalker's Byrnie
-			i(272248),	-- Pyrewalker's Chausses
-			i(272249),	-- Pyrewalker's Chain Clasps
-			i(272250),	-- Pyrewalker's Gaze
-			i(272251),	-- Pyrewalker's Chausses
-			i(272252),	-- Pyrewalker's Mantle
-			i(272253),	-- Pyrewalker's Mail Skirt
-			i(272254),	-- Pyrewalker's Mesh Wraps
-			i(272255),	-- Pledgebearer's Cuirass
-			i(272256),	-- Pledgebearer's Sabatons
-			i(272257),	-- Pledgebearer's Gauntlets
-			i(272258),	-- Pledgebearer's Mask
-			i(272259),	-- Pledgebearer's Poleyns
-			i(272260),	-- Pledgebearer's Pauldrons
-			i(272261),	-- Pledgebearer's Girdle
-			i(272262),	-- Pledgebearer's Splints
-			i(272266),	-- Forgotten Eidolon's Dagger
-			i(272267),	-- Uncoffined Labrys
-			i(272268),	-- Mask-Etcher
-			i(272269),	-- Soulsealer's Headstone
-			i(272270),	-- Bonedust Pestle
-			i(272271),	-- Spiritbound Focus
-			i(272272),	-- Harrowed Partisan
-			i(272273),	-- Unshrined Ceremonial Scepter
-			i(272274),	-- Realm Splitter
-			i(272275),	-- Soulsinger's Horn
-			i(272277),	-- Spirit-Reaver
-			i(272278),	-- Recurve Wisp-Shooter
-			i(272280),	-- Exhumed Soul-Cleaver
-			i(272283),	-- Swordsman's Emanation
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
 			i(273303),	-- Ritual Gem
@@ -249,7 +191,6 @@ root(ROOTS.Unsorted, {
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
-			i(275855),	-- Zul'Aman Swamp Palm Sprout
 			i(276117),	-- Clouded Blood-Pearl
 			i(276124),	-- Ancient Knucklebone
 			i(276126),	-- Serpent's Feather
