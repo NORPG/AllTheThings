@@ -72523,6 +72523,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "Punto de Espinadaga",
 	[-758] = "Sombras Persistentes",
 	[-759] = "Confrontación",
+	[-760] = "Aventura del Año Nuevo Lunar",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -72564,6 +72565,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-443] = "Esta misión indica si has activado la Piedra buhogato de las Tierras del Interior.",
 	[-474] = "La Inestabilidad elemental fue un evento mundial que anunció el Cataclismo. El evento culminó con el ataque de los elementales a Ventormenta, Orgrimmar, Forjaz y Cima del Trueno. Los jugadores que derrotaran a estos elementales y liberaran a los ciudadanos atrapados en toda su ciudad obtenían acceso a dos encuentros especiales con jefes.",
 	[-479] = "Estos objetos fueron obtenidos por personajes creados durante el evento Remix y se transfirieron automáticamente a Retail cuando finalizó el evento.",
+	[-483] = "Además de que todos los jugadores de un reino trabajaran para completar el Esfuerzo de Guerra, un jugador tenía que crear el El cetro del Mar de Dunas, una tarea muy difícil que solo podía ser resuelta por la mejor hermandad de un servidor cuando se añadió la cadena de misiones. Una vez finalizado el esfuerzo de guerra y llegados los ejércitos de la Alianza y la Horda a Silithus, el El cetro del Mar de Dunas podía usarse en el Gong del Escarabajo. Al hacerlo, se abría Ahn'Qiraj. El primer jugador en golpear el Gong del Escarabajo en cada servidor era recompensado con el título de Señor del Escarabajo (en Burning Crusade, ¡el título no estará disponible en Classic!) y la montura Cristal resonador negro Qiraji. Cualquiera que lo siguiera en las siguientes 10 horas también era recompensado con el título.\n\nAunque todavía es posible completar la cadena de misiones del El cetro del Mar de Dunas después de que se hayan abierto las puertas en tu servidor, hacerlo no otorgará ni el Cristal resonador negro Qiraji ni el título de Señor del Escarabajo.",
 	[-516] = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe enumeran en el orden de su primera aparición.",
 	[-517] = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
 	[-518] = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
@@ -80086,6 +80088,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-442] = "Esta misión muestra si has activado la Piedra buhogato de Feralas.",
 	[-443] = "Esta misión muestra si has activado la Piedra buhogato de las Tierras del Interior.",
 	[-474] = "La Inestabilidad elemental fue un evento mundial que anunció el Cataclismo. El evento termino con el ataque de los elementales a Ventormenta, Orgrimmar, Forjaz y Cima del Trueno. Los jugadores que derrotaran a estos elementales y liberaran a los ciudadanos atrapados en toda su ciudad ganaban acceso a dos peleas especiales con jefes.",
+	[-483] = "Además de que todos los jugadores de un reino trabajaran para completar el Esfuerzo de Guerra, un jugador tenía que crear el El cetro del Mar de Dunas, una tarea muy difícil que solo podía ser completada por la mejor hermandad de un servidor cuando se añadió la cadena de misiones. Una vez finalizado el esfuerzo de guerra y llegaran los ejércitos de la Alianza y la Horda a Silithus, el El cetro del Mar de Dunas podía usarse en el Gong del Escarabajo. Al hacerlo, se abría Ahn'Qiraj. El primer jugador en golpear el Gong del Escarabajo en cada servidor era recompensado con el título de Señor del Escarabajo (en Burning Crusade, ¡el título no estará disponible en Classic!) y la montura Cristal resonador negro Qiraji. Cualquiera que lo siguiera en las siguientes 10 horas también era recompensado con el título.\n\nAunque todavía es posible completar la cadena de misiones del El cetro del Mar de Dunas después de que se hayan abierto las puertas en tu servidor, hacerlo no otorgará ni el Cristal resonador negro Qiraji ni el título de Señor del Escarabajo.",
 	[-516] = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe listan en el orden de su primera aparición.",
 	[-529] = "Estas recompensas eran para todos aquellos que compraron una Edición de Coleccionista del 15.º Aniversario de World of Warcraft.",
 	[-530] = "Estas recompensas eran para todos aquellos que compraron una Edición de Coleccionista de Diablo III.",

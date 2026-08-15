@@ -17295,7 +17295,7 @@ q(25622,{awp=40003,coords={
 s(28321,57426,{b=1,f=4,loc=42}),
 s(28322,57427,{b=1,f=7,loc=43}),
 s(28320,57425,{b=1,f=21}),
-o(40957,{coords={
+n(40957,{coords={
 [65]={{73.6,50.2}}}})}}),
 q(5881,{coords={
 [65]={{47.17,61.08}}},maps={64},qgs={11860},qis={16189},r=1,rwp=40003,u=2}),
@@ -17585,7 +17585,7 @@ s(28345,57453,{b=1,f=5,loc=41}),
 s(28344,57452,{b=1,f=8}),
 s(28343,57451,{b=1,f=4,loc=46}),
 s(75735,131454,{awp=70003,b=1,f=6,loc=41}),
-o(41475,{coords={
+n(41475,{coords={
 [65]={{50.6,48.8}}}})}}),
 q(26009,{altQuests={26115},awp=40003,coords={
 [65]={{66.1,63.7}}},crs={35150,35151,35152,35153,35154,35203,35334,41865,41935,42016},isDaily=1,lvl=10,maxReputation={76,42000},qgs={41023},r=1,sourceQuests={26004}}),
@@ -123290,7 +123290,7 @@ n(176066,{coords={
 [1670]={{46.6,77.2}}},sym={{"select","npcID",156822},{"isnt","repeatable"},{"pop"}}}),
 n(156690,{coords={
 [1670]={{47,23.6}}},g={
-s(112899,180136,{b=1,f=57,requireSkill=356,spellID=310674})}}),
+s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
 n(176197,{awp=90105,coords={
 [1670]={{51,43.4}}},g={
 i(188226,{b=1}),
@@ -125871,7 +125871,7 @@ r(331007,{b=1,itemID=183097,minReputation={2407,42000},requireSkill=202,skillID=
 s(111637,178991,{b=1,f=9,minReputation={2407,42000}})}}),
 n(175574,{coords={
 [1533]={{49.6,63.2}}},g={
-s(112899,180136,{b=1,f=57,requireSkill=356,spellID=310674})}}),
+s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
 n(171526,{coords={
 [1533]={{52.6,47.4}}},g={
 i(180788,{b=1,f=55,spellID=11009})}}),
@@ -165700,6 +165700,12 @@ i(268490,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerI
 i(254677,{b=1,f=55,lvl=90,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2}),
 i(279527,{awp=120100,f=55,rwp=120200,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}}),
 i(279575,{awp=120100,spellID=1306929})}}),
+q(98232,{awp=120100,coords={
+[2393]={{49,64.6}}},isWeekly=1,g={
+i(268490,{awp=120001,f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2}),
+i(254677,{awp=120001,b=1,f=55,lvl=90,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2}),
+i(279527,{f=55,rwp=120200,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}}),
+i(279575,{spellID=1306929})}}),
 q(93766,{coords={
 [2393]={{49,64.6}}},isWeekly=1,lvl=80,g={
 i(268490,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2}),
@@ -167144,7 +167150,13 @@ h(-45,{
 q(93200,{coords={
 [2395]={{43.5,47.4}}},lvl=80,minReputation={2710,6},qgs={240838}}),
 q(93930,{coords={
-[2395]={{43.5,47.4}}},lvl=90,minReputation={2710,9},qgs={240838},g={
+[2395]={{43.5,47.4}}},lvl=90,minReputation={2710,9},qgs={240838},rwp=120100,u=2,g={
+s(304219,266432,{b=1,f=7,loc=40,lvl=90,minReputation={2710,9},u=2}),
+s(304217,266430,{b=1,f=5,loc=40,lvl=90,minReputation={2710,9},u=2}),
+s(304216,266429,{b=1,f=4,loc=40,lvl=90,minReputation={2710,9},u=2}),
+s(304218,266431,{b=1,f=6,loc=40,lvl=90,minReputation={2710,9},u=2})}}),
+q(97622,{awp=120100,coords={
+[2395]={{43.5,47.4}}},minReputation={2710,9},qgs={240838},g={
 s(304219,266432,{b=1,f=7,loc=40,lvl=90,minReputation={2710,9}}),
 s(304217,266430,{b=1,f=5,loc=40,lvl=90,minReputation={2710,9}}),
 s(304216,266429,{b=1,f=4,loc=40,lvl=90,minReputation={2710,9}}),
@@ -169425,7 +169437,7 @@ fp(3286,{collectible=false,coords={
 h(-45,{
 ah(269485,{type="n",g={
 q(97640,{coords={
-[2509]={{42.3,14.5}}},qgs={272024}}),
+[2509]={{42.3,14.5},{47.2,60.8}}},qgs={262798,272024}}),
 q(98428,{coords={
 [2509]={{51.2,62.8}}},qgs={262880},sourceQuests={97640}}),
 q(96644,{coords={
@@ -169435,7 +169447,9 @@ q(96640,{coords={
 [2509]={{51.2,62.8}}},isWeekly=1,qgs={262880},g={
 i(275060)}})}}),
 q(98388,{coords={
-[2509]={{47.2,60.8},{53.9,39.5}}},qgs={262798,271885}}),
+[2509]={{47.2,60.8},{53.9,39.5}}},qgs={262798,271885},g={
+o(675629,{
+i(278472)})}}),
 q(98515,{coords={
 [2509]={{47.2,60.8}}},qgs={262798},sourceQuests={98388}}),
 q(95520,{coords={
@@ -169578,7 +169592,13 @@ i(280005,{coords={
 [2636]={{74.9,72.6}}},crs={263253},spellID=1307536}),
 i(275048,{description="Can be obtained from creatures with 'Corrosive' Aura after unlocking 'Slithering Secrets' trait at |cFFFFD700Altar of Corrosion|r.",spellID=1308284})}),
 h(-64,{
-cu(3448)})}}),
+cu(3448),
+i(279287,{f=55}),
+i(279288,{f=55}),
+i(279345,{f=55}),
+i(280004,{spellID=1307536}),
+i(280003,{spellID=1307536}),
+i(280006,{spellID=1307536})})}}),
 h(-12,{
 ach(63633,{coords={
 [2512]={{69.3,52.3}}},crs={256872},sourceQuests={94967},g={
@@ -169725,6 +169745,8 @@ i(278094)}}),
 q(94803,{coords={
 [2512]={{51.6,49.8}}},isDaily=1,qgs={257598},g={
 i(277920)}}),
+q(94798,{coords={
+[2512]={{51.6,49.8}}},isDaily=1,qgs={257598}}),
 q(94805,{coords={
 [2512]={{51.6,49.8}}},isDaily=1,qgs={257598}}),
 q(94806,{coords={
@@ -169751,6 +169773,7 @@ r(1296511,{cost={{"c",3263,150}},itemID=275336,minReputation={2773,3},requireSki
 r(1289746,{cost={{"c",3261,150}},itemID=271891,minReputation={2773,3},requireSkill=171,skillID=2906}),
 i(275018,{cost={{"c",3316,1500}},f=200,minReputation={2773,3}}),
 r(1296502,{cost={{"c",3259,150}},itemID=275318,minReputation={2773,3},requireSkill=202,skillID=2910}),
+r(1296504,{cost={{"c",3261,150}},itemID=275322,minReputation={2773,3},requireSkill=773}),
 de(25300,{cost={{"c",3316,250}},itemID=277925,minReputation={2773,4},spellID=1302903}),
 i(278391,{cost={{"c",3316,250}},minReputation={2773,4},spellID=1304752}),
 r(1295777,{cost={{"c",3316,1500}},itemID=275301,minReputation={2773,4},requireSkill=185,skillID=2908}),
@@ -169792,7 +169815,7 @@ ah(62297,{type="a",g={
 ah(62297.02,{type="crit",g={
 q(98218,{description="Pops-up on first log-in. Can be accepted from Adventure Guide.",isBreadcrumb=1,nextQuests={92916}}),
 q(92916,{coords={
-[2437]={{43.7,68.3}}},lvl=83,qgs={263331},sourceQuests={98218}}),
+[2437]={{43.7,68.3}}},lvl=83,qgs={263331},sourceQuests={93012,98218}}),
 q(92917,{coords={
 [2437]={{37,23.2}}},lvl=83,qgs={253476},sourceQuests={92916}}),
 q(92919,{coords={
@@ -169833,7 +169856,8 @@ de(21833,{itemID=271851,spellID=1289635})}}),
 q(93018,{coords={
 [2512]={{47,31.3}}},qgs={253528},sourceQuests={93019,95564}}),
 q(93022,{coords={
-[2512]={{47,31.3}}},qgs={259218},sourceQuests={93019,95564}}),
+[2512]={{47,31.3}}},qgs={259218},sourceQuests={93019,95564},g={
+i(280377,{f=53,spellID=1308728})}}),
 q(93023,{coords={
 [2512]={{45.9,29.4}}},qgs={253528},sourceQuests={93018,93022},g={
 i(279196,{f=51}),
@@ -170259,6 +170283,7 @@ crit(115285,{achID=63358,id=9})}}),
 n(261142,{coords={
 [2512]={{52.1,32.3}}},isDaily=1,questID=95452,g={
 s(311580,280712,{f=7,loc=43}),
+s(311577,280709,{f=6,loc=41}),
 crit(115288,{achID=63358,id=12})}}),
 n(264854,{coords={
 [2512]={{53.8,72}}},isDaily=1,providers={{"o",653176}},questID=96491,g={
@@ -170295,6 +170320,7 @@ s(311583,280718,{f=3}),
 crit(115280,{achID=63358,id=2})}}),
 n(261109,{coords={
 [2512]={{58.1,40.1}}},isDaily=1,questID=95447,g={
+s(311570,280700,{f=4,loc=43}),
 s(311575,280706,{f=5,loc=44}),
 s(309569,276052,{f=32}),
 crit(115287,{achID=63358,id=11})}}),
@@ -170306,6 +170332,7 @@ ah(63390,{type="a",g={
 n(255088,{coords={
 [2512]={{26.6,64.9}}},isWeekly=1,questID=93718,g={
 s(309563,276046,{f=23}),
+s(309594,276166,{f=35}),
 crit(115368,{achID=63390,id=1})}}),
 n(255087,{coords={
 [2512]={{47,62.2}}},isWeekly=1,questID=93673,g={
@@ -170323,6 +170350,7 @@ s(309601,276175,{f=3}),
 crit(115369,{achID=63390,id=2})}}),
 n(255927,{coords={
 [2512]={{67.6,77.8}}},isWeekly=1,g={
+s(309595,276167,{f=29}),
 crit(115371,{achID=63390,id=4})}})}})}),
 h(-56,{
 ah(63359,{type="a",g={
@@ -170591,8 +170619,12 @@ q(95990,{coords={
 [2512]={{38.7,47.4}}},isWorldQuest=1}),
 q(96066,{coords={
 [2512]={{56.9,49.4}}},isWorldQuest=1}),
+q(96625,{coords={
+[2512]={{68.4,57.1}}},isWorldQuest=1}),
 q(95529,{coords={
 [2512]={{48.8,64.7}}},isWorldQuest=1}),
+q(96029,{coords={
+[2512]={{71.2,15.4}}},isWorldQuest=1}),
 q(95918,{coords={
 [2512]={{44,47.2}}},isWorldQuest=1}),
 q(95429,{coords={
@@ -170707,7 +170739,20 @@ s(309744,276643,{f=5,loc=43,minReputation={2772,2}})}}),
 q(97670,{coords={
 [2512]={{58.8,45}}},minReputation={2772,6},qgs={268228}}),
 q(97383,{coords={
-[2512]={{58.8,45}}},minReputation={2772,8},qgs={268228}})}),
+[2512]={{58.8,45}}},minReputation={2772,8},qgs={268228}}),
+q(96267,{coords={
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228}}),
+q(96276,{coords={
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96267}}),
+q(96273,{coords={
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96276}}),
+q(96275,{coords={
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96273}}),
+q(96271,{coords={
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96275}}),
+q(96305,{coords={
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96271},g={
+mnt(1292668,{itemID=273838,minReputation={2772,10}})}})}),
 h(-58,{
 n(268228,{coords={
 [2512]={{58.8,45}}},g={
@@ -171790,7 +171835,10 @@ h(-45,{
 q(94469,{coords={
 [2405]={{52.6,72.9}}},lvl=80,minReputation={2699,4},qgs={248328}}),
 q(93933,{coords={
-[2405]={{52.6,72.9}}},lvl=90,minReputation={2699,7},qgs={248328},g={
+[2405]={{52.6,72.9}}},lvl=90,minReputation={2699,7},qgs={248328},rwp=120100,u=2,g={
+i(264507,{b=1,f=53,lvl=90,minReputation={2699,7},spellID=1272091,u=2})}}),
+q(97621,{awp=120100,coords={
+[2405]={{52.6,72.9}}},minReputation={2699,7},qgs={248328},g={
 i(264507,{b=1,f=53,lvl=90,minReputation={2699,7},spellID=1272091})}}),
 q(94671,{coords={
 [2405]={{52.6,72.9}}},lvl=80,minReputation={2699,9},qgs={248328},g={

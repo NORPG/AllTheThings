@@ -377,6 +377,8 @@ n(243247,{coords={
 [2393]={{51.84,48.53}}},sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(219055,{coords={
 [2339]={{64.8,52.7}}},sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=9}),
+n(189676,{coords={
+[2112]={{20.2,49.1}}},sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(100986,{coords={
 [628]={{71.37,17.93}}},sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(94829,_.ResolveQuestData({aqd=
