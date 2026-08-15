@@ -250,20 +250,6 @@ root(ROOTS.Unsorted, {
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(275855),	-- Zul'Aman Swamp Palm Sprout
-			i(276033),	-- Loa Watcher's Pendant
-			i(276034),	-- Entangling Brood Ring
-			i(276035),	-- Soulcoiler's Signet
-			i(276042),	-- Templetusk Shield
-			i(276043),	-- Vilefang Censer
-			i(276047),	-- Swamp Whomper
-			i(276049),	-- Snakeslayer's Claymore
-			i(276050),	-- Victorious Spiritstaff
-			i(276053),	-- Snakehunter's Warglaive
-			i(276054),	-- Serpentvine Machete
-			i(276055),	-- Soulweaver's Curseblade
-			i(276058),	-- Ruinous Slitherslicer
-			i(276061),	-- Witch Doctor's Bloodletter
-			i(276062),	-- Hydra Neckchopper
 			i(276117),	-- Clouded Blood-Pearl
 			i(276124),	-- Ancient Knucklebone
 			i(276126),	-- Serpent's Feather
