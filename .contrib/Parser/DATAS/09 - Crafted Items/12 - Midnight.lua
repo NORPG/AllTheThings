@@ -1136,25 +1136,42 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(266387),	-- Sanctum Magister's Pylon (COSMETIC!)
 		}),
 		n(DISCOVERY, {
+			r(1295411, {["timeline"] = { ADDED_12_1_0 }}),	-- Blightswarmer
 			r_withQuest(1225274, 88614),	-- Blood Hunter
 			r_withQuest(1225266, 88606),	-- Bloomtail Minnow
+			r(1295408, {["timeline"] = { ADDED_12_1_0 }}),	-- Coiled Stargorger
+			r(1295409, {["timeline"] = { ADDED_12_1_0 }}),	-- Dirty Darter
 			r_withQuest(1225283, 88620),	-- Eversong Trout
 			r_withQuest(1225276, 88612),	-- Fungalskin Pike
+			r(1305973, {["timeline"] = { ADDED_12_1_0 }}),	-- Giggling Skull
 			r_withQuest(1225275, 88619),	-- Gore Guppy
+			r(1305975, {["timeline"] = { ADDED_12_1_0 }}),	-- Grotesque Sturgeon
 			r(1225337, {["learnedAt"]=150}),	-- Harandar
 			r_withQuest(1225267, 88618),	-- Hollow Grouper
+			r(1305979, {["timeline"] = { ADDED_12_1_0 }}),	-- Loathsome Anglerfish
 			r_withQuest(1225284, 88613),	-- Lucky Loa
 			r_withQuest(1225270, 88603),	-- Lynxfish
+			r(1305976, {["timeline"] = { ADDED_12_1_0 }}),	-- Many-Eyed Flounder
 			r_withQuest(1225268, 88617),	-- Null Voidfish
 			r_withQuest(1225273, 88610),	-- Ominous Octopus
+			r(1305972, {["timeline"] = { ADDED_12_1_0 }}),	-- Oozing Goby
+			r(1295410, {["timeline"] = { ADDED_12_1_0 }}),	-- Polluted Puffer
 			r_withQuest(1225277, 88609),	-- Restored Songfish
 			r_withQuest(1225269, 88604),	-- Root Crab
 			r_withQuest(1225271, 88615),	-- Shimmersiren
 			r_withQuest(1225272, 88607),	-- Shimmer Spinefish
 			r_withQuest(1225245, 88602),	-- Sin'dorei Swarmer
+			r(1295404, {["timeline"] = { ADDED_12_1_0 }}),	-- Spotted Killifish
+			r(1295407, {["timeline"] = { ADDED_12_1_0 }}),	-- Sulfurous Sludgefish
 			r_withQuest(1225278, 88621),	-- Sunwell Fish
 			r_withQuest(1225281, 88611),	-- Tender Lumifin
+			r(1295422, {["timeline"] = { ADDED_12_1_0 }}),	-- Temple Fishing
+			r(1295420, {["learnedAt"]=75}),	-- The Coiled Isle
+			r(1295405, {["timeline"] = { ADDED_12_1_0 }}),	-- Toxic Tlhapi
+			r(1305978, {["timeline"] = { ADDED_12_1_0 }}),	-- Twin-Headed Snipefish
 			r_withQuest(1225280, 88605),	-- Twisted Tetra
+			r(1295406, {["timeline"] = { ADDED_12_1_0 }}),	-- Ula'tek Snakehead
+			r(1295421, {["timeline"] = { ADDED_12_1_0 }}),	-- Venom Fishing
 			r(1225336, {["learnedAt"]=225}),	-- Voidstorm
 			r_withQuest(1225279, 88616),	-- Warping Wise
 			r_withQuest(1225282, 88608),	-- Wyrmfish
@@ -1204,42 +1221,51 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238494),	-- Another's Treasure
 		i(238371),	-- Arcane Wyrmfish
 		i(243302),	-- Aquarius Bloom
-		i(274593, {["timeline"] = {ADDED_12_1_0}}),	-- Blightswarmer
+		i(274593, {["timeline"] = { ADDED_12_1_0 }}),	-- Blightswarmer
 		i(238377),	-- Blood Hunter
 		i(241147),	-- Blood Hunter Lure
 		i(243342),	-- Bloom Bauble
 		i(238369),	-- Bloomtail Minnow
-		i(274591, {["timeline"] = {ADDED_12_1_0}}),	-- Coiled Stargorger
+		i(274591, {["timeline"] = { ADDED_12_1_0 }}),	-- Coiled Stargorger
+		i(241151, {["timeline"] = { ADDED_12_1_0 }}),	-- Coiled Stargorger Lure
 		i(238489),	-- Definitely Not a Rock
-		i(274592, {["timeline"] = {ADDED_12_1_0}}),	-- Dirty Darter
+		i(274592, {["timeline"] = { ADDED_12_1_0 }}),	-- Dirty Darter
 		i(262787),	-- Dredged Journal Entry
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
+		i(279093, {["timeline"] = { ADDED_12_1_0 }}),	-- Giggling Skull
 		i(238382),	-- Gore Guppy
+		i(279094, {["timeline"] = { ADDED_12_1_0 }}),	-- Grotesque Sturgeon
 		i(238381),	-- Hollow Grouper
 		i(263938),	-- Idol of Peril (QS!)
+		i(279106, {["timeline"] = { ADDED_12_1_0 }}),	-- Loathsome Anglerfish
 		i(238376),	-- Lucky Loa
 		i(238366),	-- Lynxfish
+		i(279100, {["timeline"] = { ADDED_12_1_0 }}),	-- Many-Eyed Flounder
 		i(238380),	-- Null Voidfish
 		i(238373),	-- Ominous Octopus
 		i(241149),	-- Ominous Octopus Lure
-		i(262651, {["timeline"] = {ADDED_12_0_5}}),	-- Pointed Spikesnail
-		i(274594, {["timeline"] = {ADDED_12_1_0}}),	-- Polluted Puffer
+		i(279091, {["timeline"] = { ADDED_12_1_0 }}),	-- Oozing Goby
+		i(262651, {["timeline"] = { ADDED_12_0_5 }}),	-- Pointed Spikesnail
+		i(274594, {["timeline"] = { ADDED_12_1_0 }}),	-- Polluted Puffer
+		i(278848, {["timeline"] = { ADDED_12_1_0 }}),	-- Pustulent Blightswarmer
 		i(238372),	-- Restored Songfish
 		i(238367),	-- Root Crab
 		i(238378),	-- Shimmersiren
 		i(238370),	-- Shimmer Spinefish
 		i(238365),	-- Sin'dorei Swarmer
-		i(274587, {["timeline"] = {ADDED_12_1_0}}),	-- Spotted Killifish
-		i(274590, {["timeline"] = {ADDED_12_1_0}}),	-- Sulfurous Sludgefish
+		i(274587, {["timeline"] = { ADDED_12_1_0 }}),	-- Spotted Killifish
+		i(274590, {["timeline"] = { ADDED_12_1_0 }}),	-- Sulfurous Sludgefish
 		i(238384),	-- Sunwell Fish
 		i(238374),	-- Tender Lumifin
-		i(274588, {["timeline"] = {ADDED_12_1_0}}),	-- Toxic Tlhapi
+		i(275013, {["timeline"] = { ADDED_12_1_0 }}),	-- Tokka's Multi-Ward
+		i(274588, {["timeline"] = { ADDED_12_1_0 }}),	-- Toxic Tlhapi
+		i(279105, {["timeline"] = { ADDED_12_1_0 }}),	-- Twin-Headed Snipefish
 		i(238368),	-- Twisted Tetra
-		i(274589, {["timeline"] = {ADDED_12_1_0}}),	-- Ula'tek Snakehead
-		i(277821, {["timeline"] = {ADDED_12_1_0}}),	-- Ula'tek Snakehead Lure
+		i(274589, {["timeline"] = { ADDED_12_1_0 }}),	-- Ula'tek Snakehead
+		i(277821, {["timeline"] = { ADDED_12_1_0 }}),	-- Ula'tek Snakehead Lure
 		i(238379),	-- Warping Wise
-		i(262650, {["timeline"] = {ADDED_12_0_5}}),	-- Writhing Wiggleworm
+		i(262650, {["timeline"] = { ADDED_12_0_5 }}),	-- Writhing Wiggleworm
 	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {
@@ -1261,7 +1287,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1223151, 87736),	-- Lush Sanguithorn
 			r_withQuest(1223148, 87730),	-- Lush Tranquility Bloom
 			r_withQuest(1223139, 87753),	-- Mana Lily
-			r(1301657, {["timeline"] = {ADDED_12_1_0}}),	-- Overload Cursed Herb
+			r(1301657, {["timeline"] = { ADDED_12_1_0 }}),	-- Overload Cursed Herb
 			r(1225128),	-- Overload Lightfused Herb
 			r(1225137),	-- Overload Primal Herb
 			r(1225144),	-- Overload Voidbound Herb
@@ -2135,7 +2161,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1225359, 88484),	-- Lightfused Brilliant Silver
 			r_withQuest(1225351, 88487),	-- Lightfused Refulgent Copper
 			r_withQuest(1225367, 88488),	-- Lightfused Umbral Tin
-			r(1301495, {["timeline"] = {ADDED_12_1_0}}),	-- Overload Cursed Deposits
+			r(1301495, {["timeline"] = { ADDED_12_1_0 }}),	-- Overload Cursed Deposits
 			r(1225818),	-- Overload Lightfused Deposits
 			r(1225817),	-- Overload Primal Deposits
 			r(1225820),	-- Overload Voidbound Deposits

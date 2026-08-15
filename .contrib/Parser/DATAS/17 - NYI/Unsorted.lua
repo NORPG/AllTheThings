@@ -9,7 +9,6 @@ root(ROOTS.Unsorted, {
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
-			i(241151),	-- Coiled Stargorger Lure
 			i(244344),	-- Griftah's Mystical Polter-Urn
 			i(247776),	-- Glowing Zangarshroom Cup
 			i(248404),	-- Stack of Kafa Mugs
@@ -215,7 +214,6 @@ root(ROOTS.Unsorted, {
 			i(274965),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
 			i(274991),	-- Seaside Fire Pit
-			i(275013),	-- Tokka's Multi-Ward
 			i(275030),	-- Slugg's Favorite Fishing Rod
 			i(275053),	-- Kobold Candle Collection
 			i(275054),	-- Wooden Toy Sword
@@ -534,7 +532,6 @@ root(ROOTS.Unsorted, {
 			i(278843),	-- Ensemble: Pyrewalker's Battlegear
 			i(278844),	-- Ensemble: Pledgebearer's Warplate
 			i(278845),	-- Arsenal: Amani Weaponry
-			i(278848),	-- Pustulent Blightswarmer
 			i(278869),	-- Lil' Blue Perdition
 			i(278870),	-- Lil' Green Perdition
 			i(278871),	-- Lil' Purple Perdition
@@ -585,21 +582,15 @@ root(ROOTS.Unsorted, {
 			i(279088),	-- [ph] SpiceWitch Head - Hallow (Hair Vis)
 			i(279089),	-- [ph] SpiceWitch Shoulders - Hallow
 			i(279090),	-- [ph] Ensemble: SpiceWitch Hallow Attire
-			i(279091),	-- Oozing Goby
-			i(279093),	-- Giggling Skull
-			i(279094),	-- Grotesque Sturgeon
 			i(279095),	-- [ph] SpiceWitch Chest - Orange
 			i(279096),	-- [ph] SpiceWitch Feet - Orange
 			i(279097),	-- [ph] SpiceWitch Waist - Orange
 			i(279098),	-- [ph] SpiceWitch Gloves- Orange
 			i(279099),	-- [ph] SpiceWitch Legs - Orange
-			i(279100),	-- Many-Eyed Flounder
 			i(279101),	-- [ph] SpiceWitch Head - Orange
 			i(279102),	-- [ph] SpiceWitch Head - Orange (Hair Vis)
 			i(279103),	-- [ph] SpiceWitch Shoulders - Orange
 			i(279104),	-- [ph] Ensemble: SpiceWitch Orange Attire
-			i(279105),	-- Twin-Headed Snipefish
-			i(279106),	-- Loathsome Anglerfish
 			i(279107),	-- [ph] SpiceWitch Chest - Pink
 			i(279108),	-- [ph] SpiceWitch Feet - Pink
 			i(279109),	-- [ph] SpiceWitch Waist - Pink
