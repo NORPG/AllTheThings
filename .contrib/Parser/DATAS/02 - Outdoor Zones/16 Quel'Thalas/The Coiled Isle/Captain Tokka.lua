@@ -56,6 +56,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(97557),	-- Tailing the Tlhapi
 				})),
 				n(QUESTS, {
+					q(97464, {	-- A Dash of Poison
+						["provider"] = { "i", 278000 } -- Sealed Vial of Mysterious Green Liquid
+					}),
 					q(97457, {	-- Bonemail Gauntlet
 						["provider"] = { "i", 279384 } -- Bonemail Gauntlet
 					}),
@@ -65,26 +68,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(97461, {	-- Cursed Fishing 101
 						["provider"] = { "i", 277997 } -- Malevolent Fishing Codex
 					}),
-					q(97465, {	-- The Intended Way to Fish
-						["provider"] = { "i", 278001 } -- Forgotten Amani Fishing Rod
+					q(97463, {	-- Just a Normal Knife
+						["provider"] = { "i", 277999 } -- Ritual Dagger
+					}),
+					q(97460, {	-- Lightly Salted
+						["provider"] = { "i", 277996 } -- Summoning Salt
 					}),
 					q(97462, {	-- Rocky Shores
 						["provider"] = { "i", 277998 } -- Lump of Crystalline Malachite
 					}),
-					q(97463, {	-- Just a Normal Knife
-						["provider"] = { "i", 277999 } -- Ritual Dagger
-					}),
-					q(97464, {	-- A Dash of Poison
-						["provider"] = { "i", 278000 } -- Sealed Vial of Mysterious Green Liquid
+					q(97459, {	-- Something Smelly
+						["provider"] = { "i", 277993 } -- Spiritsurge Incense
 					}),
 					q(97458, {	-- Tackled and Boxed
 						["provider"] = { "i", 277991 } -- Shrieking Tacklebox
 					}),
-					q(97459, {	-- Something Smelly
-						["provider"] = { "i", 277993 } -- Spiritsurge Incense
-					}),
-					q(97460, {	-- Lightly Salted
-						["provider"] = { "i", 277996 } -- Summoning Salt
+					q(97465, {	-- The Intended Way to Fish
+						["provider"] = { "i", 278001 } -- Forgotten Amani Fishing Rod
 					}),
 				}),
 				n(VENDORS, {
