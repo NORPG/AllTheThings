@@ -238,18 +238,10 @@ root(ROOTS.Unsorted, {
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
-			i(275526),	-- Preyhunter's Band
-			i(275527),	-- Preyhunter's Signet
-			i(275528),	-- Preyhunter's Ring
-			i(275529),	-- Preyhunter's Circle
-			i(275530),	-- Preyhunter's Clasp
-			i(275531),	-- Preyhunter's Choker
-			i(275534),	-- Preyhunter's Shiv
-			i(275535),	-- Preyhunter's Cudgel
-			i(275536),	-- Preyseeker's Scepter
-			i(275538),	-- Preyhunter's Scimitar
-			i(275540),	-- Preyhunter's Longsword
-			i(275545),	-- Preyhunter's Spire
+			i(278374),	-- Preyhunter's Fanged Bust
+			i(279574),	-- Preyhunter's Hero Chest
+			i(276207),	-- Preyhunter's Masquerade
+			i(278378),	-- Preyhunter's Scaled Bust
 			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
 			i(275571),	-- [PH] Broomstick Spice - Grey
@@ -292,7 +284,6 @@ root(ROOTS.Unsorted, {
 			i(276198),	-- Shellman's 195
 			i(276205),	-- Legitimate Shipment of Swivel Guns
 			i(276206),	-- Leagally Sourced Cannon Shot
-			i(276207),	-- Preyhunter's Masquerade
 			i(276234),	-- Vibrant Venomfang
 			i(276297),	-- Rustbolt Jetpack
 			i(276312),	-- Griftah's Torch of Rotation
@@ -432,6 +423,7 @@ root(ROOTS.Unsorted, {
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
+			i(278472),	-- Noxious Corrosive Coin
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(278378),	-- Preyhunter's Scaled Bust
 			i(278517),	-- Lost Med'jai Amulet
@@ -711,7 +703,6 @@ root(ROOTS.Unsorted, {
 			i(279549),	-- Witch-Hunter's Undercoat
 			i(279550),	-- Potion of Venomous Return
 			i(279551),	-- Radical's Gilded Vestment
-			i(279574),	-- Preyhunter's Hero Chest
 			i(279579),	-- Cruel Warrior's Blade
 			i(279590),	-- Venomous Champion's Illustrious Banner
 			i(279610),	-- Bundle of Adventurer Dawncrests
@@ -770,54 +761,6 @@ root(ROOTS.Unsorted, {
 			i(280271),	-- Longwick Rope
 			i(280273),	-- Droopy Longwick Rope
 			i(280275),	-- Hanging Longwick Rope
-
-			i(275488),	-- Preyhunter's Polished Brigandine
-			i(275489),	-- Preyhunter's Polished Greatbelt
-			i(275490),	-- Preyhunter's Polished Greatboots
-			i(275491),	-- Preyhunter's Polished Handguards
-			i(275492),	-- Preyhunter's Polished Helmet
-			i(275493),	-- Preyhunter's Polished Pauldrons
-			i(275494),	-- Preyhunter's Polished Tassets
-			i(275495),	-- Preyhunter's Polished Vambraces
-			i(275496),	-- Preyhunter's Refined Cord
-			i(275497),	-- Preyhunter's Refined Crown
-			i(275498),	-- Preyhunter's Refined Cuffs
-			i(275499),	-- Preyhunter's Refined Epaulet
-			i(275500),	-- Preyhunter's Refined Gloves
-			i(275501),	-- Preyhunter's Refined Slippers
-			i(275502),	-- Preyhunter's Refined Tights
-			i(275503),	-- Preyhunter's Refined Vestments
-			i(275504),	-- Preyhunter's Rugged Bindings
-			i(275505),	-- Preyhunter's Rugged Clasp
-			i(275506),	-- Preyhunter's Rugged Grips
-			i(275507),	-- Preyhunter's Rugged Haubergeon
-			i(275508),	-- Preyhunter's Rugged Legguards
-			i(275509),	-- Preyhunter's Rugged Plume
-			i(275510),	-- Preyhunter's Rugged Sabatons
-			i(275511),	-- Preyhunter's Rugged Shoulderguards
-			i(275512),	-- Preyhunter's Sleek Armlets
-			i(275513),	-- Preyhunter's Sleek Belt
-			i(275514),	-- Preyhunter's Sleek Boots
-			i(275515),	-- Preyhunter's Sleek Gauntlets
-			i(275516),	-- Preyhunter's Sleek Jerkin
-			i(275517),	-- Preyhunter's Sleek Mask
-			i(275518),	-- Preyhunter's Sleek Shoulderpads
-			i(275519),	-- Preyhunter's Sleek Trousers
-			i(275522),	-- Preyhunter's Refined Shawl
-			i(275523),	-- Preyhunter's Sleek Capelet
-			i(275524),	-- Preyhunter's Rugged Stole
-			i(275525),	-- Preyhunter's Polished Cloak
-			i(275532),	-- Preyhunter's Hatchet
-			i(275533),	-- Preyhunter's Kukri
-			i(275537),	-- Preyhunter's Hammer
-			i(275539),	-- Preyhunter's Ritual Blade
-			i(275541),	-- Preyhunter's Warglaive
-			i(275542),	-- Preyhunter's Longbow
-			i(275543),	-- Preyhunter's Spear
-			i(275544),	-- Preyhunter's Staff
-			i(275546),	-- Preyhunter's Falchion
-			i(275547),	-- Preyhunter's Lantern
-			i(275548),	-- Preyhunter's Tower Shield
 			i(244347),	-- Purified Troll Urn
 			i(248101),	-- Traditional Brewfest Stein
 			i(252042),	-- Purified Troll Pitcher

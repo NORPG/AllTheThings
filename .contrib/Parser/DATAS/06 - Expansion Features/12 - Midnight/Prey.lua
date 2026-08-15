@@ -217,11 +217,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			-- Gear
 			n(ARMOR, {
 				filter(BACK_F, {
+					-- Season 1
 					i(259909),	-- Preyseeker's Refined Shawl
 					i(258532),	-- Preyseeker's Rugged Stole
 					i(259910),	-- Preyseeker's Sleek Capelet
+					-- Season 2
+					i(275522,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Shawl
+					i(275524,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Stole
+					i(275523,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Capelet
 				}),
 				filter(CLOTH, {
+					-- Season 1
 					i(259923),	-- Preyseeker's Refined Cord
 					i(259920),	-- Preyseeker's Refined Crown
 					i(259924),	-- Preyseeker's Refined Cuffs
@@ -230,14 +236,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					i(259918),	-- Preyseeker's Refined Slippers
 					i(259921),	-- Preyseeker's Refined Tights
 					i(259917),	-- Preyseeker's Refined Vestments
+					-- Season 2
+					i(275496,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Cord
+					i(275497,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Crown
+					i(275498,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Cuffs
+					i(275499,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Epaulet
+					i(275500,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Gloves
+					i(275501,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Slippers
+					i(275502,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Tights
+					i(275503,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Refined Vestments
 				}),
 				filter(FINGER_F, {
+					-- Season 1
 					i(259911),	-- Preyseeker's Band
 					i(259914),	-- Preyseeker's Circle
 					i(259913),	-- Preyseeker's Ring
 					i(259912),	-- Preyseeker's Signet
+					-- Season 2
+					i(275526,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Band
+					i(275529,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Circle
+					i(275528,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Ring
+					i(275527,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Signet
+
 				}),
 				filter(LEATHER, {
+					-- Season 1
 					i(259932),	-- Preyseeker's Sleek Armlets
 					i(259931),	-- Preyseeker's Sleek Belt
 					i(259926),	-- Preyseeker's Sleek Boots
@@ -246,8 +269,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					i(259928),	-- Preyseeker's Sleek Mask
 					i(259930),	-- Preyseeker's Sleek Shoulderpads
 					i(259929),	-- Preyseeker's Sleek Trousers
+					-- Season 2
+					i(275512,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Armlets
+					i(275513,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Belt
+					i(275514,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Boots
+					i(275515,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Gauntlets
+					i(275516,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Jerkin
+					i(275517,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Mask
+					i(275518,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Shoulderpads
+					i(275519,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Sleek Trousers
 				}),
 				filter(MAIL, {
+					-- Season 1
 					i(259940),	-- Preyseeker's Rugged Bindings
 					i(259939),	-- Preyseeker's Rugged Clasp
 					i(259935),	-- Preyseeker's Rugged Grips
@@ -256,12 +289,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					i(259936),	-- Preyseeker's Rugged Plume
 					i(259934),	-- Preyseeker's Rugged Sabatons
 					i(259938),	-- Preyseeker's Rugged Shoulderguards
+					-- Season 2
+					i(275504,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Bindings
+					i(275505,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Clasp
+					i(275506,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Grips
+					i(275507,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Haubergeon
+					i(275508,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Legguards
+					i(275509,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Plume
+					i(275510,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Sabatons
+					i(275511,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Rugged Shoulderguards
 				}),
 				filter(NECK_F, {
+					-- Season 1
 					i(259916),	-- Preyseeker's Choker
 					i(259915),	-- Preyseeker's Clasp
+					-- Season 2
+					i(275531,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Choker
+					i(275530,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Clasp
 				}),
 				filter(PLATE, {
+					-- Season 1
 					i(259941),	-- Preyseeker's Polished Brigandine
 					i(259947),	-- Preyseeker's Polished Greatbelt
 					i(259942),	-- Preyseeker's Polished Greatboots
@@ -270,9 +317,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					i(259946),	-- Preyseeker's Polished Pauldrons
 					i(259945),	-- Preyseeker's Polished Tassets
 					i(259948),	-- Preyseeker's Polished Vambraces
+					-- Season 2
+					i(275488,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Brigandine
+					i(275525,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Cloak
+					i(275489,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Greatbelt
+					i(275490,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Greatboots
+					i(275491,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Handguards
+					i(275492,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Helmet
+					i(275493,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Pauldrons
+					i(275494,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Tassets
+					i(275495,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Polished Vambraces
 				}),
 			}),
 			n(WEAPONS, {
+				-- Season 1
 				i(259952),	-- Preyseeker's Cudgel
 				i(259964),	-- Preyseeker's Falchion
 				i(259955),	-- Preyseeker's Hammer
@@ -290,6 +348,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				i(259962),	-- Preyseeker's Staff
 				i(259966),	-- Preyseeker's Tower Shield
 				i(259959),	-- Preyseeker's Warglaive
+				-- Season 2
+				i(275535,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Cudgel
+				i(275546,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Falchion
+				i(275537,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Hammer
+				i(275532,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Hatchet
+				i(275533,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Kukri
+				i(275547,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Lantern
+				i(275542,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Longbow
+				i(275540,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Longsword
+				i(275539,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Ritual Blade
+				i(275536,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Scepter
+				i(275538,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Scimitar
+				i(275534,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Shiv
+				i(275543,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Spear
+				i(275545,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Spire
+				i(275544,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Staff
+				i(275548,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Tower Shield
+				i(275541,{["timeline"]={ADDED_12_1_0}}),	-- Preyhunter's Warglaive
 			}),
 			filter(MISC, {
 				-- Season 1
