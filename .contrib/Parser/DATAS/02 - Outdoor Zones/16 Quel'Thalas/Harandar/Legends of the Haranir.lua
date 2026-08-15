@@ -94,17 +94,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 61574.06, {	-- Root of the World
 					q(88998, {	-- Root of the World
-						["sourceQuest"] = 90740,	-- A Legend to Know
+						["sourceQuest"] = 89268,	-- Lost Legends
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(263041) },	-- Replica Root of the World (DECOR!)
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
 					q(88999, {	-- Sky's Hope
-						-- not 100% sure on this but it wasn't available with 'Root of the World'
 						["sourceQuest"] = 90743,	-- Ritual Reinforcement
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(253443) },	-- Replica Sky's Hope (DECOR!)
 					}),
 				}),
 			}),
