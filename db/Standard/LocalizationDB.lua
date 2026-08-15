@@ -1748,6 +1748,8 @@ localize(L.HEADER_NAMES, {
 	[-762] = "Amani Endeavor",
 	[-763] = "Current Season",
 	[-764] = select(2,GetAchievementInfo(62922)),
+	[-765] = "Prey MID S1",
+	[-766] = "Prey MID S2",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2491,6 +2493,8 @@ localize(L.HEADER_ICONS, {
 	[-762] = 7672957,
 	[-763] = 236508,
 	[-764] = 6124221,
+	[-765] = _.asset("category_prey"),
+	[-766] = _.asset("category_prey"),
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
