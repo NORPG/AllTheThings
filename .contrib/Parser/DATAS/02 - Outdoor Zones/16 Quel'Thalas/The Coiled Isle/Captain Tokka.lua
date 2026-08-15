@@ -40,6 +40,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94803, {	-- Going for the Crown
 						i(277920),	-- Vibrant Crownfeather (QI!)
 					}),
+					q(94798),	-- Ssak'mozek's Desire
 					q(94805),	-- The New Hoard, Poached
 					q(94806, {	-- Wriggling and Wet
 						i(277935),	-- Pungent Leech Leg (QI!)

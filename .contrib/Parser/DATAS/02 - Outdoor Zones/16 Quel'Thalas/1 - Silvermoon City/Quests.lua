@@ -237,6 +237,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(95843, { ["timeline"] = { ADDED_12_0_5 } }),	-- Midnight: Ritual Sites
 			q(93889),	-- Midnight: Saltheril's Soiree
 			q(93892),	-- Midnight: Stormarion Assault
+			q(98232, { ["timeline"] = { ADDED_12_1_0 } }),	-- Midnight: Vaults of Atal'Utek
 			q(93766),	-- Midnight: World Quests
 			q(95842, { ["timeline"] = { ADDED_12_0_5 } }),	-- Midnight: Void Assaults
 		})),

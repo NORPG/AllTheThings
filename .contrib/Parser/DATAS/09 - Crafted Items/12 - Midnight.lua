@@ -1204,11 +1204,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238494),	-- Another's Treasure
 		i(238371),	-- Arcane Wyrmfish
 		i(243302),	-- Aquarius Bloom
+		i(274593, {["timeline"] = {ADDED_12_1_0}}),	-- Blightswarmer
 		i(238377),	-- Blood Hunter
 		i(241147),	-- Blood Hunter Lure
 		i(243342),	-- Bloom Bauble
 		i(238369),	-- Bloomtail Minnow
+		i(274591, {["timeline"] = {ADDED_12_1_0}}),	-- Coiled Stargorger
 		i(238489),	-- Definitely Not a Rock
+		i(274592, {["timeline"] = {ADDED_12_1_0}}),	-- Dirty Darter
 		i(262787),	-- Dredged Journal Entry
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
@@ -1221,14 +1224,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238373),	-- Ominous Octopus
 		i(241149),	-- Ominous Octopus Lure
 		i(262651, {["timeline"] = {ADDED_12_0_5}}),	-- Pointed Spikesnail
+		i(274594, {["timeline"] = {ADDED_12_1_0}}),	-- Polluted Puffer
 		i(238372),	-- Restored Songfish
 		i(238367),	-- Root Crab
 		i(238378),	-- Shimmersiren
 		i(238370),	-- Shimmer Spinefish
 		i(238365),	-- Sin'dorei Swarmer
+		i(274587, {["timeline"] = {ADDED_12_1_0}}),	-- Spotted Killifish
+		i(274590, {["timeline"] = {ADDED_12_1_0}}),	-- Sulfurous Sludgefish
 		i(238384),	-- Sunwell Fish
 		i(238374),	-- Tender Lumifin
+		i(274588, {["timeline"] = {ADDED_12_1_0}}),	-- Toxic Tlhapi
 		i(238368),	-- Twisted Tetra
+		i(274589, {["timeline"] = {ADDED_12_1_0}}),	-- Ula'tek Snakehead
+		i(277821, {["timeline"] = {ADDED_12_1_0}}),	-- Ula'tek Snakehead Lure
 		i(238379),	-- Warping Wise
 		i(262650, {["timeline"] = {ADDED_12_0_5}}),	-- Writhing Wiggleworm
 	}),

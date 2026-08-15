@@ -182,14 +182,6 @@ root(ROOTS.Unsorted, {
 			i(274494),	-- Chiral Marrowgrafter
 			i(274499),	-- Toxiferous Transfusion
 			i(274579),	-- Undamaged Trap Needle
-			i(274587),	-- Spotted Killifish
-			i(274588),	-- Toxic Tlhapi
-			i(274589),	-- Ula-tek Snakehead
-			i(274590),	-- Sulfurous Sludgefish
-			i(274591),	-- Coiled Stargorger
-			i(274592),	-- Dirty Darter
-			i(274593),	-- Blightswarmer
-			i(274594),	-- Polluted Puffer
 			i(274595),	-- Pristine Polygon
 			i(274680),	-- Loa-Blessed Orb
 			i(274707),	-- Crystallized Venomblight Manaflux
@@ -291,7 +283,6 @@ root(ROOTS.Unsorted, {
 			i(276142),	-- Corrosive Palimpsest
 			i(276164),	-- Corroded Patagia
 			i(276166),	-- Twin-Headed Twinblade
-			i(276167),	-- Ori'kassi's Lance
 			i(276168),	-- Fang of Ss'akrithos
 			i(276169),	-- Malformed Barrier
 			i(276172),	-- Headdress of Mutagenesis
@@ -385,7 +376,6 @@ root(ROOTS.Unsorted, {
 			i(277482),	-- Ouroboric Cycle
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
-			i(277821),	-- Ula'tek Snakehead Lure
 			i(277847),	-- Unbroken Trap Hinge
 			i(277848),	-- Untouched Crab Lure
 			i(277849),	-- Mushed Crab
@@ -658,7 +648,6 @@ root(ROOTS.Unsorted, {
 			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
-			i(279197),	-- Slitherfang
 			i(279207),	-- Blackened Sludgefish
 			i(279209),	-- Plainsrunner's Sun Tunic
 			i(279210),	-- Explosive Tlhapi
@@ -702,7 +691,6 @@ root(ROOTS.Unsorted, {
 			i(279483),	-- Three-Eyed Fish
 			i(279520),	-- Fabled Veteran's Cache
 			i(279522),	-- Surplus Bag of Party Favors
-			i(279523),	-- Overflowing Abundant Satchel
 			i(279524),	-- Brewer's Purple Kilt
 			i(279526),	-- Victorious Stormarion Pinnacle Cache
 			i(279528),	-- Mag'har Laborer's Tunic
@@ -864,9 +852,7 @@ root(ROOTS.Unsorted, {
 			i(280581),	-- Wintry Witchwick's Rider
 			i(280691),	-- Dagger of the Slithering Ritual
 			i(280698),	-- Szarith's Underbelly Slicer
-			i(280700),	-- Armbands of the Rotten Claw
 			i(280701),	-- Waistwrap of the Fanged
-			i(280709),	-- Triple Threat Pauldrons
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
@@ -877,18 +863,6 @@ root(ROOTS.Unsorted, {
 			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
-			i(268970),	-- Majestic Eagle Statue
-			i(268972),	-- Pressed Sanguithorn
-			i(268973),	-- Bone Pen
-			i(268974),	-- Deactivated Amani Hex Ward
-			i(268975),	-- Amani War Axe
-			i(268976),	-- "Aromatic" Bottle
-			i(268977),	-- Ossein Fish Trinket
-			i(268978),	-- Torga Statue
-			i(269019),	-- Amani Construction Hammer
-			i(269020),	-- Scrimshaw Ward
-			i(269021),	-- Jan'alai Bibelot
-			i(269937),	-- Neighborhood Knick Knack
 			i(280503),	-- Ulantu's Notes
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
