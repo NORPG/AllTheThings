@@ -43,7 +43,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 				n(EVENT_COMPLETION, {symselector=SymSelector.MIDNIGHT_PREY_EVENT_COMPLETION_SEASON_TWO}),
 				n(EVENT_COMPLETION, {
-					-- Gear
 					n(ARMOR, {
 						filter(BACK_F, {
 							i(275525),	-- Preyhunter's Polished Cloak
@@ -126,19 +125,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(275919),	-- Preyhunter's Adventurer Sack
 						i(275728),	-- Preyhunter's Champion Sack
 						i(275917),	-- Preyhunter's Veteran Sack
-					}),
-					-- Boxes, Season 2
-					i(275918, {	-- Preyhunter's Adventurer Chest
-						["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
-					}),
-					i(275822, {	-- Preyhunter's Veteran Chest
-						["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
-					}),
-					i(275726, {	-- Preyhunter's Champion Chest
-						["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
-					}),
-					i(276104, {	-- Aspiring Preyhunter's Chest
-						["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+						-- Boxes, Season 2
+						i(275918, {	-- Preyhunter's Adventurer Chest
+							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+						}),
+						i(275822, {	-- Preyhunter's Veteran Chest
+							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+						}),
+						i(275726, {	-- Preyhunter's Champion Chest
+							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+						}),
+						i(276104, {	-- Aspiring Preyhunter's Chest
+							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+						}),
 					}),
 				}),
 				n(FACTIONS, {

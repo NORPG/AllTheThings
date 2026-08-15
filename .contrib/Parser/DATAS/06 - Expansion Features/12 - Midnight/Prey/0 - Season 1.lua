@@ -45,7 +45,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 				n(EVENT_COMPLETION, {symselector=SymSelector.MIDNIGHT_PREY_EVENT_COMPLETION_SEASON_ONE}),
 				n(EVENT_COMPLETION, {
-					-- Gear
 					n(ARMOR, {
 						filter(BACK_F, {
 							i(258533),	-- Preyseeker's Polished Cloak
@@ -127,21 +126,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(262928),	-- Preyseeker's Adventurer Sack
 						i(262938),	-- Preyseeker's Champion Sack
 						i(262936),	-- Preyseeker's Veteran Sack
+						-- Boxes, Season 1
+						i(257023, {	-- Preyseeker's Adventurer Chest
+							["sym"] = PREYSEEKER_BOX_SYM_SEASON_ONE,
+						}),
+						i(257026, {	-- Preyseeker's Veteran Chest
+							["sym"] = PREYSEEKER_BOX_SYM_SEASON_ONE,
+						}),
+						i(262346, {	-- Preyseeker's Champion Chest
+							["sym"] = PREYSEEKER_BOX_SYM_SEASON_ONE,
+						}),
+						i(268545, {	-- Aspiring Preyseeker's Chest
+							["sym"] = PREYSEEKER_BOX_SYM_SEASON_ONE,
+						}),
 						-- Bonus roll
 						i(269768, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Prey
-					}),
-					-- Boxes, Season 1
-					i(257023, {	-- Preyseeker's Adventurer Chest
-						["sym"] = PREYSEEKER_BOX_SYM_SEASON_ONE,
-					}),
-					i(257026, {	-- Preyseeker's Veteran Chest
-						["sym"] = PREYSEEKER_BOX_SYM_SEASON_ONE,
-					}),
-					i(262346, {	-- Preyseeker's Champion Chest
-						["sym"] = PREYSEEKER_BOX_SYM_SEASON_ONE,
-					}),
-					i(268545, {	-- Aspiring Preyseeker's Chest
-						["sym"] = PREYSEEKER_BOX_SYM_SEASON_ONE,
 					}),
 				}),
 				n(FACTIONS, {
