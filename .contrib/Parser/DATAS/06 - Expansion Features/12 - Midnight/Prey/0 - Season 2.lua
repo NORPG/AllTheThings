@@ -33,23 +33,6 @@ local PREYSEEKER_BOX_SYM_SEASON_TWO = {
 	{"where","filterID",TRINKET_F},
 }
 
-local TrapNPCs = {	-- probably a ton of these, it seems unique per target & difficulty
-	247053,	-- Electrified Trap
-	247070,	-- Gloomy Trap
-	247071,	-- Shimmering Trap
-	247072,	-- Vicious Trap
-	247073,	-- Loa-Blessed Trap
-	247074,	-- Ranger's Trap
-	247075,	-- Entangled Trap
-	247076,	-- Anointed Trap
-	247077,	-- Void-Cursed Trap
-	247078,	-- Void-Warped Trap
-	247079,	-- Icy Trap
-	247080,	-- Mana-Laden Trap
-	247081,	-- Thorny Trap
-	247082,	-- Twilight Trap
-}
-
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(PREY, {
 		n(PREY_MID_S2, {
