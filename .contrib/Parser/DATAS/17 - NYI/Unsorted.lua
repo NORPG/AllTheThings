@@ -156,7 +156,6 @@ root(ROOTS.Unsorted, {
 			i(273313),	-- Stormstout Brewery Lantern
 			i(273649),	-- Stormbound Emblem of Dazar
 			i(273818),	-- [DNT] Knowledge Tome: Midnight Herbalism
-			i(273838),	-- Spirit of Tok'jara
 			i(273848),	-- Snake Scales
 			i(273881),	-- Anti-Venom Shell
 			i(274272),	-- Amani Equipment Chest
@@ -250,7 +249,6 @@ root(ROOTS.Unsorted, {
 			i(275574),	-- [PH] Broomstick Spice - Red
 			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
-			i(275659),	-- Hexflame Reaver
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(275855),	-- Zul'Aman Swamp Palm Sprout
@@ -791,7 +789,6 @@ root(ROOTS.Unsorted, {
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
 			i(281227),	-- Soulcoiler's Rush'kah
-			i(281244),	-- Amani Scout's Quiver
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(278397),	-- Ephemeral Star Ooze
 			i(280846),	-- Beguiling Memories of the Sea

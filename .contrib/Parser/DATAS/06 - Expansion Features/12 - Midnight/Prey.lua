@@ -644,8 +644,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			["description"] = "Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",
 			-- https://www.wowhead.com/npc=258928/ralkala#comments
 			["g"] = {
-				i(278572), -- Pale Hexscale (pet)
-				i(275659), -- Hexflame Reaver (mount)
+				i(278572), -- Pale Hexscale (PET!)
+				i(275659), -- Hexflame Reaver (MOUNT!)
 				i(276207), -- Preyhunter's Masquerade
 			},
 		}),

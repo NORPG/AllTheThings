@@ -905,6 +905,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
 							iensemble(281226),	-- Arsenal: Scout Team Seven Weapons
+							i(281244),	-- Amani Scout's Quiver
 						},
 					}),
 					q(96098, {	-- The Final Reagents

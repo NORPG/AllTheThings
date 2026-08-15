@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["qg"] = 264611,	-- Du'gal
 							["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["g"] = {
-								i(273838),	-- Spirit of Tok'jara
+								i(273838),	-- Spirit of Tok'jara (MOUNT!)
 							},
 						}),
 					}, {	-- RENOWN 11 --
@@ -298,7 +298,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(QUESTS, {
-				hqt(96363),	-- Hidden Tracking for Renown 10 Mount Questline
+				q(96363),	-- Hidden Tracking for Renown 10 Mount Questline
 			}),
 		})),
 	}),
