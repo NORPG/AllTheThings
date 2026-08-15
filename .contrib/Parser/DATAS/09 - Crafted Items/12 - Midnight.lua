@@ -1210,6 +1210,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				i(260916),	-- Nether-Swept Drake (MOUNT!)
 			}),
 		}),
+		filter(QUEST_ITEMS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+			i(279384),	-- Bonemail Gauntlet (QS!)
+			i(278001),	-- Forgotten Amani Fishing Rod (QS!)
+			i(277989),	-- Ghostcaller's Bell (QS!)
+			i(277998),	-- Lump of Crystalline Malachite (QS!)
+			i(277997),	-- Malevolent Fishing Codex (QS!)
+			i(277999),	-- Ritual Dagger (QS!)
+			i(278000),	-- Sealed Vial of Mysterious Green Liquid (QS!)
+			i(277991),	-- Shrieking Tacklebox (QS!)
+			i(277993),	-- Spiritsurge Incense (QS!)
+			i(277996),	-- Summoning Salt (QS!)
+		})),
 		i(238490, {	-- Ambiguous Rock
 			i(266102),	-- Ambiguous Rock
 		}),

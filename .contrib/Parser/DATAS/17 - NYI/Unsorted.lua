@@ -377,16 +377,7 @@ root(ROOTS.Unsorted, {
 			i(277946),	-- Choleric Offering
 			i(277955),	-- Ethereal Bead Strand
 			i(277985),	-- Mysterious Offering
-			i(277989),	-- Ghostcaller's Bell
 			i(277990),	-- Cursemail Gauntlets
-			i(277991),	-- Shrieking Tacklebox
-			i(277993),	-- Spiritsurge Incense
-			i(277996),	-- Summoning Salt
-			i(277997),	-- Malevolent Fishing Codex
-			i(277998),	-- Lump of Crystalline Malachite
-			i(277999),	-- Ritual Dagger
-			i(278000),	-- Sealed Vial of Mysterious Green Liquid
-			i(278001),	-- Forgotten Amani Fishing Rod
 			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
 			i(278048),	-- Corrosive Relic
@@ -637,7 +628,6 @@ root(ROOTS.Unsorted, {
 			i(279364),	-- Coiled Hookshot
 			i(279365),	-- Fine Captain's Bottle
 			i(279368),	-- Inscribed Amani Mural
-			i(279384),	-- Bonemail Gauntlet
 			i(279428),	-- Midnight Gloomcap
 			i(279429),	-- Azure Gloomcap
 			i(279430),	-- Sepia Gloomcap
