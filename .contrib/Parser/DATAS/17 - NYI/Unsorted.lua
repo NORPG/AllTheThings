@@ -179,7 +179,6 @@ root(ROOTS.Unsorted, {
 			i(275287),	-- Cellular Slab
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(279574),	-- Preyhunter's Hero Chest
-			i(276207),	-- Preyhunter's Masquerade
 			i(278378),	-- Preyhunter's Scaled Bust
 			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
@@ -344,7 +343,6 @@ root(ROOTS.Unsorted, {
 			i(278523),	-- Feather of Tok'jara
 			i(278534),	-- Eye of Szarith
 			i(278536),	-- Mummified Lynx's Paw
-			i(278572),	-- Pale Hexscale
 			i(278573),	-- Crested Burnished Leafmimic
 			i(278574),	-- Crested Aqua Leafmimic
 			i(278575),	-- Crested Verdant Leafmimic
