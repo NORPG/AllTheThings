@@ -107,10 +107,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
 								["cost"] = { { "c", ARTISAN_MOXIE.ENGINEERING, 150 } },
 							}),
-							i(275322, {	-- Technique: Ferocious Feline Trinket
-								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },	-- Cursed Angler
-								["cost"] = { { "c", ARTISAN_MOXIE.INSCRIPTION, 150 } },
-							}),
 							-- Rank 4: Venom Trawler
 							i(277925, {	-- Blue Tortollan Signpost (DECOR!)
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
