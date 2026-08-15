@@ -204,8 +204,8 @@ i(244816, 1226157);	-- Lucky Loa Lure
 i(244815, 1226161);	-- Ominous Octopus Lure
 --- NYI ---
 i(0, 1265721);		-- Finesse
+i(244818, 0);		-- Rootland Crab Lure
 i(258511, 1226158);	-- Sunwell Fish Lure
-i(244818, 1231090);	-- Rootland Crab Lure
 
 ------------------
 -- PATCH 12.1.0 --
@@ -230,5 +230,6 @@ i(0, 1305978);		-- Twin-Headed Snipefish
 i(0, 1295406);		-- Ula'tek Snakehead
 i(0, 1295421);		-- Venom Fishing
 --- ITEM ---
-i(275012, 1295922);		-- Tokka's Multi-Ward
-i(277820, 1302819);		-- Ula'tek Snakehead Lure
+i(275018, 1231090);	-- Coiled Stargorger Lure
+i(275012, 1295922);	-- Tokka's Multi-Ward
+i(277820, 1302819);	-- Ula'tek Snakehead Lure
