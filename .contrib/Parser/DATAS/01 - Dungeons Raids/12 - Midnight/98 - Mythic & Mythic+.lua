@@ -174,28 +174,28 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}, {
 			ach(62441, {	-- Keystone Hero: Altar of Fangs
-			--	--	spell(),	-- Path of ??? (name/ID not confirmed)
+				spell(1286812),	-- Path of Venomous Evolution
 			}),
 			ach(62439, {	-- Keystone Hero: Den of Nalorakk
-				--	spell(),	-- Path of ??? (name/ID not confirmed)
+				spell(1286807),	-- Path of Worthy Aspirant
 			}),
 			ach(62444, {	-- Keystone Hero: Kings' Rest
-				--	spell(),	-- Path of the Slumbering Conqueror
+				spell(1286831),	-- Path of the Slumbering Conqueror
 			}),
 			ach(62440, {	-- Keystone Hero: Murder Row
-				--	spell(),	-- Path of ??? (name/ID not confirmed)
+				spell(1286809),	-- Path of Devious Smuggler
 			}),
 			ach(62442, {	-- Keystone Hero: Ruby Life Pools (Midnight Season 2)
-				--	spell(),	-- Path of ??? (name/ID not confirmed)
+				spell(393256),	-- Path of the Clutch Defender
 			}),
 			ach(62443, {	-- Keystone Hero: Temple of Sethraliss
-				--	spell(),	-- Path of ??? (name/ID not confirmed)
+				spell(1286828),	-- Path of Sacret Temple
 			}),
 			ach(62437, {	-- Keystone Hero: The Blinding Vale
-				--	spell(),	-- Path of ??? (name/ID not confirmed)
+				spell(1286801),	-- Path of Blooming Verdure
 			}),
 			ach(62438, {	-- Keystone Hero: Voidscar Arena
-				--	spell(),	-- Path of ??? (name/ID not confirmed)
+				spell(1286804),	-- Path of Brutal Combatant
 			}),
 			ach(63621, {	-- Keystone Victor: Altar of Fangs
 				title(781, {	-- <Name>, Voice of the Fangs
