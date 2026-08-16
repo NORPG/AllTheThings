@@ -4,162 +4,156 @@
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
-		n(RARES, {
-			header(HEADERS.Achievement, 63358, sharedData({	-- Coiled to Strike
-				["isDaily"] = true,
-			}, {
-				n(COMMON_BOSS_DROPS, {
-					["isDaily"] = IGNORED_VALUE,
-					["crs"] = {
-						256631,	-- Big Mon
-						257906,	-- Coin-Eye Skully
-						261142,	-- Destra
-						264854,	-- Farthik the Plunderer
-						258916,	-- Garsecg
-						265262,	-- Hisstara
-						268090,	-- Kari'zah the Forgotten
-						265237,	-- Lockjaw
-						258920,	-- Nar'zira
-						268049,	-- Siltmouth
-						261109,	-- Sss'alik
-						263456,	-- Szarith The Fanged
-					},
-					["groups"] = {
-						i(276803),	-- Ruby Writhe (MOUNT!)
-						i(276549),	-- Topaz Skyfang (MOUNT!)
-					},
-				}),
-				n(256631, {	-- Big Mon <Ancient Amani Warband>
-					["coord"] = { 69.8, 63.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 93829,
-					["groups"] = {
-						i(280689),	-- Big Mon's Big Spear
-						i(280713),	-- Big Mon's Buckle
-					},
-				}),
-				n(257906, {	-- Coin-Eye Skully
-					["coord"] = { 58.0, 66.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 94619,
-					["groups"] = {
-						i(280715),	-- Eye of Skully
-						i(280695),	-- Skully's Skullcleaver
-					},
-				}),
-				n(261142, {	-- Destra
-					["coord"] = { 52.1, 32.3, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 95452,
-					["groups"] = {
-						i(280712),	-- Bracers of the Sleeping Hydra
-						i(280709),	-- Triple Threat Pauldrons
-					},
-				}),
-				n(264854, {	-- Farthik the Plunderer
-					["coord"] = { 53.8, 72.0, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["provider"] = { "o", 653176 },	-- Unguarded Chest
-					["questID"] = 96491,
-					["groups"] = {
-						i(280717),	-- Farthik's Precious Pendant
-						i(280692),	-- Plunderer's Pummeler
-					},
-				}),
-				n(258916, {	-- Garsecg <The Hull Render>
-					["coord"] = { 69.7, 44.9, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["questID"] = 94856,	-- Shared with Lady Liminus from Eversong Woods? 01.08.2026.
-					["groups"] = {
-						i(280710),	-- Garsecg's Barnacled Girdle
-						i(280714),	-- Hull Render Hauberk
-					},
-				}),
-				n(265262, {	-- Hisstara <The Raiser>
-					["coord"] = { 43.9, 50.8, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 96464,
-					["groups"] = { i(280702) },	-- Mantle of the Riser
-				}),
-				n(268090, {	-- Kari'zah the Forgotten
-					["coord"] = { 24.9, 73.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 97122,
-					["groups"] = {
-						i(280694),	-- Blade of the Forgotten
-						i(280711),	-- Pitted Specter Shackles
-					},
-				}),
-				n(265237, {	-- Lockjaw <The Snapper>
-					["coord"] = { 31.7, 56.7, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 96456,
-					["groups"] = {
-						i(280690),	-- Bow of the Snapper
-						i(280708),	-- Venom-Shelled Sash
-					},
-				}),
-				n(258920, {	-- Nar'zira <The Omnilegent>
-					["coord"] = { 63.2, 62.4, 2642 },	-- Tomb of the Lost Priest
-					["questID"] = 94860,
-					["groups"] = {
-						i(280716),	-- Locket of the Omnilegent
-						i(280693),	-- Staff of All-Knowing
-					},
-				}),
-				n(268049, {	-- Siltmouth <The Unflappable>
-					["coord"] = { 50.2, 69.0, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 97112,
-					["groups"] = {
-						i(280704),	-- Siltmouth's Venom Waders
-						i(280718),	-- Unflappable Flapping Cape
-					},
-				}),
-				n(261109, {	-- Sss'alik <The Rotten Claw>
-					["coord"] = { 58.1, 40.1, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 95447,
-					["groups"] = {
-						i(280700),	-- Armbands of the Rotten Claw
-						i(280706),	-- Sss'alik's Rotting Claws
-						i(276052),	-- Venomshot Greatbow
-					},
-				}),
-				n(263456, {	-- Szarith The Fanged
-					["coord"] = { 38.0, 17.5, 2613 },	-- The Underbelly, Vaults of Atal'Utek
-					["questID"] = 96030,
-				}),
-			})),
-			header(HEADERS.Achievement, 63390, sharedData({	-- Turn the Surge
-				["isWeekly"] = true,	-- Assumption, Could be daily. Curse Surge events between 30 minutes and 1 hour
-			}, {
-				n(255088, {	-- Looming Mutagenitor
-					["coord"] = { 26.6, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 93718,
-					["groups"] = {
-						i(276046),	-- Superclutch Smasher
-						i(276166),	-- Twin-Headed Twinblade
-					},
-				}),
-				n(255087, {	-- Malformed Leviathan
-					["coord"] = { 47.0, 62.2, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 93673,
-					["groups"] = { i(280091) },	-- Latent Purifier
-				}),
-				n(258254, {	-- Ss'akrithos <The Boundless Ophidian>
-					["coord"] = { 71.3, 31.4, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 93715,
-					["groups"] = {
-						i(271424),	-- Diver's Key Fragment
-						i(276060),	-- Hexxer's Blastin' Rod
-						i(276171),	-- Ophidian Circle
-					},
-				}),
-				n(257863, {	-- Vassti, the Exalted Broodmother
-					["coord"] = { 45.2, 28.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["questID"] = 93676,
-					["groups"] = { i(276175) },	-- Broodmother's Embrace
-				}),
-				n(255927, {	-- Venom Lancer Ori'kassi
-					["coord"] = { 67.6, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["questID"] = XXXXX,
-					["groups"] = {
-						i(276167),	-- Ori'kassi's Lance
-					},
-				}),
-			})),
-		}),
+		n(RARES, sharedData({ ["isDaily"] = true }, {
+			n(COMMON_BOSS_DROPS, {
+				["isDaily"] = IGNORED_VALUE,
+				["crs"] = {
+					256631,	-- Big Mon
+					257906,	-- Coin-Eye Skully
+					261142,	-- Destra
+					264854,	-- Farthik the Plunderer
+					258916,	-- Garsecg
+					265262,	-- Hisstara
+					268090,	-- Kari'zah the Forgotten
+					265237,	-- Lockjaw
+					258920,	-- Nar'zira
+					268049,	-- Siltmouth
+					261109,	-- Sss'alik
+					263456,	-- Szarith The Fanged
+				},
+				["groups"] = {
+					i(276803),	-- Ruby Writhe (MOUNT!)
+					i(276549),	-- Topaz Skyfang (MOUNT!)
+				},
+			}),
+			n(256631, {	-- Big Mon <Ancient Amani Warband>
+				["coord"] = { 69.8, 63.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 93829,
+				["groups"] = {
+					i(280689),	-- Big Mon's Big Spear
+					i(280713),	-- Big Mon's Buckle
+				},
+			}),
+			n(257906, {	-- Coin-Eye Skully
+				["coord"] = { 58.0, 66.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 94619,
+				["groups"] = {
+					i(280715),	-- Eye of Skully
+					i(280695),	-- Skully's Skullcleaver
+				},
+			}),
+			n(261142, {	-- Destra
+				["coord"] = { 52.1, 32.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 95452,
+				["groups"] = {
+					i(280712),	-- Bracers of the Sleeping Hydra
+					i(280709),	-- Triple Threat Pauldrons
+				},
+			}),
+			n(264854, {	-- Farthik the Plunderer
+				["coord"] = { 53.8, 72.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["provider"] = { "o", 653176 },	-- Unguarded Chest
+				["questID"] = 96491,
+				["groups"] = {
+					i(280717),	-- Farthik's Precious Pendant
+					i(280692),	-- Plunderer's Pummeler
+				},
+			}),
+			n(258916, {	-- Garsecg <The Hull Render>
+				["coord"] = { 69.7, 44.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+				--["questID"] = 94856,	-- Shared with Lady Liminus from Eversong Woods? 01.08.2026.
+				["groups"] = {
+					i(280710),	-- Garsecg's Barnacled Girdle
+					i(280714),	-- Hull Render Hauberk
+				},
+			}),
+			n(265262, {	-- Hisstara <The Raiser>
+				["coord"] = { 43.9, 50.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 96464,
+				["groups"] = { i(280702) },	-- Mantle of the Riser
+			}),
+			n(268090, {	-- Kari'zah the Forgotten
+				["coord"] = { 24.9, 73.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 97122,
+				["groups"] = {
+					i(280694),	-- Blade of the Forgotten
+					i(280711),	-- Pitted Specter Shackles
+				},
+			}),
+			n(265237, {	-- Lockjaw <The Snapper>
+				["coord"] = { 31.7, 56.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 96456,
+				["groups"] = {
+					i(280690),	-- Bow of the Snapper
+					i(280708),	-- Venom-Shelled Sash
+				},
+			}),
+			n(258920, {	-- Nar'zira <The Omnilegent>
+				["coord"] = { 63.2, 62.4, 2642 },	-- Tomb of the Lost Priest
+				["questID"] = 94860,
+				["groups"] = {
+					i(280716),	-- Locket of the Omnilegent
+					i(280693),	-- Staff of All-Knowing
+				},
+			}),
+			n(268049, {	-- Siltmouth <The Unflappable>
+				["coord"] = { 50.2, 69.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 97112,
+				["groups"] = {
+					i(280704),	-- Siltmouth's Venom Waders
+					i(280718),	-- Unflappable Flapping Cape
+				},
+			}),
+			n(261109, {	-- Sss'alik <The Rotten Claw>
+				["coord"] = { 58.1, 40.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 95447,
+				["groups"] = {
+					i(280700),	-- Armbands of the Rotten Claw
+					i(280706),	-- Sss'alik's Rotting Claws
+					i(276052),	-- Venomshot Greatbow
+				},
+			}),
+			n(263456, {	-- Szarith The Fanged
+				["coord"] = { 38.0, 17.5, 2613 },	-- The Underbelly, Vaults of Atal'Utek
+				["questID"] = 96030,
+			}),
+		})),
+		header(HEADERS.Achievement, 63390, sharedData({	["isWeekly"] = true }, {	-- Assumption, Could be daily. Curse Surge events between 30 minutes and 1 hour
+			n(255088, {	-- Looming Mutagenitor
+				["coord"] = { 26.6, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 93718,
+				["groups"] = {
+					i(276046),	-- Superclutch Smasher
+					i(276166),	-- Twin-Headed Twinblade
+				},
+			}),
+			n(255087, {	-- Malformed Leviathan
+				["coord"] = { 47.0, 62.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 93673,
+				["groups"] = { i(280091) },	-- Latent Purifier
+			}),
+			n(258254, {	-- Ss'akrithos <The Boundless Ophidian>
+				["coord"] = { 71.3, 31.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 93715,
+				["groups"] = {
+					i(271424),	-- Diver's Key Fragment
+					i(276060),	-- Hexxer's Blastin' Rod
+					i(276171),	-- Ophidian Circle
+				},
+			}),
+			n(257863, {	-- Vassti, the Exalted Broodmother
+				["coord"] = { 45.2, 28.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["questID"] = 93676,
+				["groups"] = { i(276175) },	-- Broodmother's Embrace
+			}),
+			n(255927, {	-- Venom Lancer Ori'kassi
+				["coord"] = { 67.6, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+				--["questID"] = XXXXX,
+				["groups"] = {
+					i(276167),	-- Ori'kassi's Lance
+				},
+			}),
+		})),
 	}),
 }));
 
