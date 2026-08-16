@@ -30,6 +30,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 69.8, 63.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 93829,
 				["groups"] = {
+					i(280540),	-- Lil' Mon (PET!)
 					i(280689),	-- Big Mon's Big Spear
 					i(280713),	-- Big Mon's Buckle
 				},
@@ -70,7 +71,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(265262, {	-- Hisstara <The Raiser>
 				["coord"] = { 43.9, 50.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 96464,
-				["groups"] = { i(280702) },	-- Mantle of the Riser
+				["groups"] = {
+					i(280691),	-- Dagger of the Slithering Ritual
+					i(280702),	-- Mantle of the Riser
+				},
 			}),
 			n(268090, {	-- Kari'zah the Forgotten
 				["coord"] = { 24.9, 73.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -110,12 +114,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280700),	-- Armbands of the Rotten Claw
 					i(280706),	-- Sss'alik's Rotting Claws
-					i(276052),	-- Venomshot Greatbow
 				},
 			}),
 			n(263456, {	-- Szarith The Fanged
 				["coord"] = { 38.0, 17.5, 2613 },	-- The Underbelly, Vaults of Atal'Utek
 				["questID"] = 96030,
+				["groups"] = {
+					i(280698),	-- Szarith's Underbelly Slicer
+					i(280701),	-- Waistwrap of the Fanged
+				},
 			}),
 		})),
 		header(HEADERS.Achievement, 63390, sharedData({	["isWeekly"] = true }, {	-- Assumption, Could be daily. Curse Surge events between 30 minutes and 1 hour
@@ -123,34 +130,40 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 26.6, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 93718,
 				["groups"] = {
-					i(276046),	-- Superclutch Smasher
+					i(276172),	-- Headdress of Mutagenesis
 					i(276166),	-- Twin-Headed Twinblade
 				},
 			}),
 			n(255087, {	-- Malformed Leviathan
 				["coord"] = { 47.0, 62.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 93673,
-				["groups"] = { i(280091) },	-- Latent Purifier
+				["groups"] = {
+					i(276174),	-- Leviathan's Oozing Scalemail
+					i(276169),	-- Malformed Barrier
+				},
 			}),
 			n(258254, {	-- Ss'akrithos <The Boundless Ophidian>
 				["coord"] = { 71.3, 31.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 93715,
 				["groups"] = {
-					i(271424),	-- Diver's Key Fragment
-					i(276060),	-- Hexxer's Blastin' Rod
+					i(276168),	-- Fang of Ss'akrithos
 					i(276171),	-- Ophidian Circle
 				},
 			}),
 			n(257863, {	-- Vassti, the Exalted Broodmother
 				["coord"] = { 45.2, 28.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 93676,
-				["groups"] = { i(276175) },	-- Broodmother's Embrace
+				["groups"] = {
+					i(276175),	-- Broodmother's Embrace
+					i(276173),	-- Clutchguard Sandals
+				},
 			}),
 			n(255927, {	-- Venom Lancer Ori'kassi
 				["coord"] = { 67.6, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				--["questID"] = XXXXX,
 				["groups"] = {
 					i(276167),	-- Ori'kassi's Lance
+					i(276178),	-- Venom Lancer's Gauntlets
 				},
 			}),
 		})),

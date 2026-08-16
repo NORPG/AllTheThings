@@ -200,12 +200,6 @@ root(ROOTS.Unsorted, {
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276164),	-- Corroded Patagia
-			i(276168),	-- Fang of Ss'akrithos
-			i(276169),	-- Malformed Barrier
-			i(276172),	-- Headdress of Mutagenesis
-			i(276173),	-- Clutchguard Sandals
-			i(276174),	-- Leviathan's Oozing Scalemail
-			i(276178),	-- Venom Lancer's Gauntlets
 			i(276186),	-- Totally Not Stolen Powder
 			i(276198),	-- Shellman's 195
 			i(276205),	-- Legitimate Shipment of Swivel Guns
@@ -681,11 +675,7 @@ root(ROOTS.Unsorted, {
 			i(274422),	-- Ossified Relic
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
-			i(280540),	-- Lil' Mon
 			i(280581),	-- Wintry Witchwick's Rider
-			i(280691),	-- Dagger of the Slithering Ritual
-			i(280698),	-- Szarith's Underbelly Slicer
-			i(280701),	-- Waistwrap of the Fanged
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
