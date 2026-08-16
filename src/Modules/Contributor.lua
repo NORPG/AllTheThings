@@ -3471,6 +3471,7 @@ MobileDB.GameObject = {
 	[655270] = true,	-- Dominaar Storage Vessel [Ritual Site: Val]
 	[655271] = true,	-- Hal'hadar Pocket-Storage [Ritual Site: Naigtal]
 	[656001] = true,	-- Cursed Refulgent Copper
+	[656039] = true,	-- Venom-Clotted Bauble [The Coiled Isle]
 	[656044] = true,	-- Singing Shell [The Coiled Isle]
 	[656135] = true,	-- Slumbering Starfish [The Coiled Isle]
 	[657959] = true,	-- Crate of Pilfered Tributes

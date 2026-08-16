@@ -758,7 +758,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.07, {	-- A Band of Brothers
 					q(94936, {	-- A Bond of Brothers
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 258717,	-- Aol'ggin
 						["coord"] = { 56.5, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
 					q(96089, {	-- Somethin's Not Right
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 263618,	-- Scout Oma'ema
 						["coord"] = { 57.0, 48.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),

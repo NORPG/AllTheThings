@@ -180,6 +180,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(98352, {	-- Weekly reputation: Coin-Eye Skully
 					["name"] = "Coin-Eye Skully weekly reputation obtained.",
 				}),
+				q(98355, {	-- Weekly reputation: Destra
+					["name"] = "Destra weekly reputation obtained.",
+				}),
 				q(98344, {	-- Weekly reputation: Farthik the Plunderer
 					["name"] = "Farthik the Plunderer weekly reputation obtained.",
 				}),
