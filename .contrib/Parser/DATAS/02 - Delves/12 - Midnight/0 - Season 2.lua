@@ -106,7 +106,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(550),	-- High Explorer <Name>
 				})),
 				ach(63433, {	-- Midnight: Journey's End (Season 2)
-					-- TITLE!
+					title(774),	-- Snake Eater %s
 				}),
 			}),
 			n(CURIO, {
