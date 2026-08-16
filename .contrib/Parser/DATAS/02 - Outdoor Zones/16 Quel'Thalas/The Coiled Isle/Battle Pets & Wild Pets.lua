@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coords"] = {
 					{ 44.1, 46.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 46.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 53.6, 20.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				},
 			}),
 			i(270253, {	-- Jaundiced Slitherer (PET!)
