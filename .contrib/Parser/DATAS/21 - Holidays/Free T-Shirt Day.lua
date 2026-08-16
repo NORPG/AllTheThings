@@ -50,22 +50,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEAD
 				i(167181),	-- Golden Filigreed Doublet
 				i(167189),	-- Golden Filigreed Shirt
 				i(167191),	-- Green Martial Shirt
+				i(279539, {["timeline"] = { ADDED_12_1_0 }}),	-- Junior Artificer's Work Vest
+				i(279528, {["timeline"] = { ADDED_12_1_0 }}),	-- Mag'har Laborer's Tunic
+				i(279536, {["timeline"] = { ADDED_12_1_0 }}),	-- Painted Raptor-Tooth Shirt
+				i(279209, {["timeline"] = { ADDED_12_1_0 }}),	-- Plainsrunner's Sun Tunic
+				i(279541, {["timeline"] = { ADDED_12_1_0 }}),	-- Priestess' Moon Tunic
 				i(167194),	-- Purple Martial Shirt
 				i(167195),	-- Red Martial Shirt
+				i(279542, {["timeline"] = { ADDED_12_1_0 }}),	-- Runecloth Clergy Coat
 				i(167184),	-- Scarlet Filigreed Doublet
 				i(167188),	-- Scarlet Filigreed Shirt
+				i(279538, {["timeline"] = { ADDED_12_1_0 }}),	-- Spore-Pocked Lab Coat
 				i(167082),	-- Stylish Black Shirt
+				i(279540, {["timeline"] = { ADDED_12_1_0 }}),	-- Tinker's Padded Vest
 				i(167196),	-- Wound Dressing
 				i(167193),	-- Yellow Martial Shirt
-				-- 12.1
-				i(279540),	-- Tinker's Padded Vest
-				i(279209),	-- Plainsrunner's Sun Tunic
-				i(279528),	-- Mag'har Laborer's Tunic
-				i(279536),	-- Painted Raptor-Tooth Shirt
-				i(279538),	-- Spore-Pocked Lab Coat
-				i(279539),	-- Junior Artificer's Work Vest
-				i(279541),	-- Priestess' Moon Tunic
-				i(279542),	-- Runecloth Clergy Coat
 			},
 		}),
 		n(150942, {	-- Stormwind Entertainer
@@ -94,22 +93,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEAD
 				i(167181),	-- Golden Filigreed Doublet
 				i(167189),	-- Golden Filigreed Shirt
 				i(167191),	-- Green Martial Shirt
+				i(279539, {["timeline"] = { ADDED_12_1_0 }}),	-- Junior Artificer's Work Vest
+				i(279528, {["timeline"] = { ADDED_12_1_0 }}),	-- Mag'har Laborer's Tunic
+				i(279536, {["timeline"] = { ADDED_12_1_0 }}),	-- Painted Raptor-Tooth Shirt
+				i(279209, {["timeline"] = { ADDED_12_1_0 }}),	-- Plainsrunner's Sun Tunic
+				i(279541, {["timeline"] = { ADDED_12_1_0 }}),	-- Priestess' Moon Tunic
 				i(167194),	-- Purple Martial Shirt
 				i(167195),	-- Red Martial Shirt
+				i(279542, {["timeline"] = { ADDED_12_1_0 }}),	-- Runecloth Clergy Coat
 				i(167184),	-- Scarlet Filigreed Doublet
 				i(167188),	-- Scarlet Filigreed Shirt
+				i(279538, {["timeline"] = { ADDED_12_1_0 }}),	-- Spore-Pocked Lab Coat
 				i(167082),	-- Stylish Black Shirt
+				i(279540, {["timeline"] = { ADDED_12_1_0 }}),	-- Tinker's Padded Vest
 				i(167196),	-- Wound Dressing
 				i(167193),	-- Yellow Martial Shirt
-				-- 12.1
-				i(279540),	-- Tinker's Padded Vest
-				i(279209),	-- Plainsrunner's Sun Tunic
-				i(279528),	-- Mag'har Laborer's Tunic
-				i(279536),	-- Painted Raptor-Tooth Shirt
-				i(279538),	-- Spore-Pocked Lab Coat
-				i(279539),	-- Junior Artificer's Work Vest
-				i(279541),	-- Priestess' Moon Tunic
-				i(279542),	-- Runecloth Clergy Coat
 			},
 		}),
 	}),
