@@ -340,7 +340,6 @@ root(ROOTS.Unsorted, {
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
-			i(278472),	-- Noxious Corrosive Coin
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(278378),	-- Preyhunter's Scaled Bust
 			i(278517),	-- Lost Med'jai Amulet
