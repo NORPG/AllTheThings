@@ -198,28 +198,44 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				--	spell(),	-- Path of ??? (name/ID not confirmed)
 			}),
 			ach(63621, {	-- Keystone Victor: Altar of Fangs
-				--	title(),	-- <Name> ??? (name/ID not confirmed)
+				title(781, {	-- <Name>, Voice of the Fangs
+					["collectible"] = false,	-- Only for 1 week
+				}),
 			}),
 			ach(63622, {	-- Keystone Victor: Den of Nalorakk
-				--	title(),	-- <Name> ??? (name/ID not confirmed)
+				title(782, {	-- <Name>, Nalorakk's Favored
+					["collectible"] = false,	-- Only for 1 week
+				}),
 			}),
 			ach(63626, {	-- Keystone Victor: Kings' Rest
-				--	title(),	-- <Name> ??? (name/ID not confirmed)
+				title(786, {	-- <Name>, the Uncrowned Conqueror
+					["collectible"] = false,	-- Only for 1 week
+				}),
 			}),
 			ach(63623, {	-- Keystone Victor: Murder Row
-				--	title(),	-- <Name> ??? (name/ID not confirmed)
+				title(783, {	-- Street Sovereign <Name>
+					["collectible"] = false,	-- Only for 1 week
+				}),
 			}),
 			ach(63627, {	-- Keystone Victor: Ruby Life Pools (Midnight Season 2)
-				--	title(),	-- <Name> ??? (name/ID not confirmed)
+				title(787, {	-- <Name>, Flame of Life
+					["collectible"] = false,	-- Only for 1 week
+				}),
 			}),
 			ach(63628, {	-- Keystone Victor: Temple of Sethraliss
-				--	title(),	-- <Name> ??? (name/ID not confirmed)
+				title(788, {	-- <Name>, Wrath of Sethraliss
+					["collectible"] = false,	-- Only for 1 week
+				}),
 			}),
 			ach(63624, {	-- Keystone Victor: The Blinding Vale
-				--	title(),	-- <Name> ??? (name/ID not confirmed)
+				title(784, {	-- <Name>, Eyes of the Vale
+					["collectible"] = false,	-- Only for 1 week
+				}),
 			}),
 			ach(63625, {	-- Keystone Victor: Voidscar Arena
-				--	title(),	-- <Name> ??? (name/ID not confirmed)
+				title(785, {	-- Voidscar Champion <Name>
+					["collectible"] = false,	-- Only for 1 week
+				}),
 			}),
 			ach(62445),	-- Midnight Keystone Explorer: Season 2
 			ach(62446),	-- Midnight Keystone Conqueror: Season 2
