@@ -544,7 +544,6 @@ root(ROOTS.Unsorted, {
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
 			i(279207),	-- Blackened Sludgefish
-			i(279209),	-- Plainsrunner's Sun Tunic
 			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
 			i(279290),	-- Fang Lover's
@@ -584,7 +583,6 @@ root(ROOTS.Unsorted, {
 			i(279522),	-- Surplus Bag of Party Favors
 			i(279524),	-- Brewer's Purple Kilt
 			i(279526),	-- Victorious Stormarion Pinnacle Cache
-			i(279528),	-- Mag'har Laborer's Tunic
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
 			i(279531),	-- Brewer's Purple Beret
@@ -592,12 +590,6 @@ root(ROOTS.Unsorted, {
 			i(279533),	-- Brewer's Red Shoulder Cape
 			i(279534),	-- Brewer's Red Kilt
 			i(279535),	-- Brewer's Red Belt
-			i(279536),	-- Painted Raptor-Tooth Shirt
-			i(279538),	-- Spore-Pocked Lab Coat
-			i(279539),	-- Junior Artificer's Work Vest
-			i(279540),	-- Tinker's Padded Vest
-			i(279541),	-- Priestess' Moon Tunic
-			i(279542),	-- Runecloth Clergy Coat
 			i(279543),	-- Sky Shaman's Tunic
 			i(279544),	-- Witch Doctor's Undervest
 			i(279545),	-- Wild Seer's Mantle
