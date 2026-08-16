@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				n(257863, {	-- Vassti, the Exalted Broodmother
 					["coord"] = { 45.2, 28.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["questID"] = XXXXX,
+					["questID"] = 93676,
 					["groups"] = { i(276175) },	-- Broodmother's Embrace
 				}),
 				n(255927, {	-- Venom Lancer Ori'kassi
@@ -208,6 +208,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				}),
 				q(98349, {	-- Weekly reputation: Szarith The Fanged
 					["name"] = "Szarith The Fanged weekly reputation obtained.",
+				}),
+				q(96967, {	-- Weekly reputation: Vassti, the Exalted Broodmother
+					["name"] = "Vassti, the Exalted Broodmother weekly reputation obtained.",
 				}),
 			}),
 		})),

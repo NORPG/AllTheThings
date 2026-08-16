@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
-	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+	m(MAP.MIDNIGHT.THE_COILED_ISLE, n(FACTIONS, {
 		header(HEADERS.Faction, FACTION_ZULJARRAS_FORCES, {
 			["icon"] = 7903180,
 			["groups"] = {
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			},
 		}),
-	}),
+	})),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {

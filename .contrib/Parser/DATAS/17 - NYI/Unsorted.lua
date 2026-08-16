@@ -40,7 +40,6 @@ root(ROOTS.Unsorted, {
 			i(267045),	-- Quivering Egg
 			i(267233),	-- Dehydrated Troll Eye Necklace
 			i(268095),	-- Fresh Poultice
-			i(268113),	-- Jan'alai's Breath
 			-- WB
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
@@ -177,6 +176,11 @@ root(ROOTS.Unsorted, {
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
+			i(276883),	-- A Message From Kul'amara
+			i(276905),	-- Beginning Fragment of Ulantu's Log
+			i(276912),	-- Middle Fragment of Ulantu's Log
+			i(276914),	-- End Fragment of Ulantu's Log
+			i(277525),	-- Ulantu's Belongings
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(279574),	-- Preyhunter's Hero Chest
 			i(278378),	-- Preyhunter's Scaled Bust
@@ -692,7 +696,6 @@ root(ROOTS.Unsorted, {
 			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
-			i(280503),	-- Ulantu's Notes
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)

@@ -5,7 +5,7 @@
 local COILED_FILAMENT = 3546;
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
-	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+	m(MAP.MIDNIGHT.THE_COILED_ISLE, n(FACTIONS, {
 		header(HEADERS.Faction, FACTION_CAPTAIN_TOKKA, {
 			["lore"] = "Captain Tokka's ship was devoured by the Great White Serpent and his crew corrupted by Ula'tek's Curse. He'll share the secrets of venom fishing, if you help him get his revenge.",
 			["icon"] = 2065576,
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			},
 		}),
-	}),
+	})),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
