@@ -563,7 +563,6 @@ root(ROOTS.Unsorted, {
 			i(279478),	-- Ori'kassi's Barbed Tail
 			i(279479),	-- Leviathan's Eye
 			i(279483),	-- Three-Eyed Fish
-			i(279520),	-- Fabled Veteran's Cache
 			i(279524),	-- Brewer's Purple Kilt
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
