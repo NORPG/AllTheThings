@@ -107,10 +107,18 @@ local Ignored = setmetatable({
 		[259922] = true,	-- Void Researcher Aemely [Decor Specialist]
 		[267795] = true,	-- Perry Winkles [Decor Specialist]
 		[268228] = true,	-- Jan'sari the Watchful [Renown Quartermaster - Zul'jarra's Forces]
+		-- Vaults of Atal'Utek
 		[269485] = true,	-- Altar of Corrosion
 		[269806] = true,	-- Spiritwing Gust
 		[270399] = true,	-- Firetender Zab'ni [Decor Specialist]
 		[272175] = true,	-- <DNT> Players are active in this area.
+		[263346] = true,	-- Temple Patrol
+		[263472] = true,	-- Temple Patrol
+		[261973] = true,	-- Temple Patrol
+		[263339] = true,	-- Temple Patrol
+		[263336] = true,	-- Temple Patrol
+		[261751] = true,	-- Spirit Pyre
+		[261697] = true,	-- Supply Wagon
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]
