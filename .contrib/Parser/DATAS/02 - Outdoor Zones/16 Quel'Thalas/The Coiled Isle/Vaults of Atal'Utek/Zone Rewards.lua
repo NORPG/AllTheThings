@@ -9,7 +9,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				currency(3448),	-- Corrosive Coin
 				i(279287),	-- Corroded Pouch
 				i(279288),	-- Corroded Satchel
-				i(279345),	-- Venom-Drenched Sack
 				i(280004),	-- Corroded Key
 				i(280003),	-- Excising Knife
 				i(280006),	-- Spirit Loupe

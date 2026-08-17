@@ -1036,6 +1036,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,	-- Assumption
 				["groups"] = { i(275911) },	-- Venom-Covered Chest
 			}),
+			q(97026, {	-- Esoteric Ingredients
+				["provider"] = { "i", 278070 },	-- Handful of Esoteric Ingredients
+				["groups"] = {
+					i(278084),	-- Handful of Esoteric Ingredients
+				},
+			}),
+			q(97016, {	-- Mixing Mysteries
+				["sourceQuest"] = 97026,	-- Esoteric Ingredients
+				["qg"] = 254599,	-- Ofi the Sly
+				["coord"] = { 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["groups"] = {
+					i(277985),	-- Mysterious Offering
+					i(276124),	-- Ancient Knucklebone
+					i(276117),	-- Clouded Blood-Pearl
+					i(276126),	-- Serpent's Feather
+				},
+			}),
 		}),
 	}),
 }));
@@ -1045,6 +1062,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(QUESTS, {
 				hqt(96935, { ["isWeekly"] = true }),	-- Curse Surge
+				hqt(93676, { ["isWeekly"] = true }),	-- Curse Surge 2/3
+				hqt(96967, { ["isWeekly"] = true }),	-- Curse Surge 2/3
+				hqt(97160, { ["isWeekly"] = true }),	-- triggered with 'Turn Back the Surge' 96995
 			}),
 		})),
 	}),

@@ -13,9 +13,6 @@ root(ROOTS.Unsorted, {
 			i(247776),	-- Glowing Zangarshroom Cup
 			i(248404),	-- Stack of Kafa Mugs
 			i(249219),	-- Ouroboric Curse
-			i(249223),	-- Corrosive Bilespear
-			i(249227),	-- Dundun's Favor
-			i(249228),	-- Soul-Cracking Dreamcatcher
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
@@ -118,7 +115,6 @@ root(ROOTS.Unsorted, {
 			i(274459),	-- Squirky
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274494),	-- Chiral Marrowgrafter
 			i(274499),	-- Toxiferous Transfusion
 			i(274579),	-- Undamaged Trap Needle
 			i(274595),	-- Pristine Polygon
@@ -152,7 +148,6 @@ root(ROOTS.Unsorted, {
 			i(274905),	-- Seaside Straw Umbrella
 			i(274907),	-- Seaside Painted Surfboard
 			i(274909),	-- Seaside Murloc Tiki Totem
-			i(274965),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
 			i(274991),	-- Seaside Fire Pit
 			i(275030),	-- Slugg's Favorite Fishing Rod
@@ -194,9 +189,6 @@ root(ROOTS.Unsorted, {
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
-			i(276117),	-- Clouded Blood-Pearl
-			i(276124),	-- Ancient Knucklebone
-			i(276126),	-- Serpent's Feather
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276164),	-- Corroded Patagia
@@ -300,14 +292,11 @@ root(ROOTS.Unsorted, {
 			i(277945),	-- Melancholic Offering
 			i(277946),	-- Choleric Offering
 			i(277955),	-- Ethereal Bead Strand
-			i(277985),	-- Mysterious Offering
 			i(277990),	-- Cursemail Gauntlets
 			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
 			i(278048),	-- Corrosive Relic
 			i(278050),	-- Corrosive Bijou
-			i(278070),	-- Handful of Esoteric Ingredients
-			i(278084),	-- Handful of Esoteric Ingredients
 			i(278095),	-- Liver Pulp
 			i(278099),	-- Malt
 			i(278100),	-- Grain
@@ -320,7 +309,6 @@ root(ROOTS.Unsorted, {
 			i(278115),	-- DNT Ula'tek Pole Dummy F
 			i(278154),	-- Hooked Net Trap
 			i(278193),	-- Aqiri Mandible
-			i(278245),	-- Royal Attendant's Coffin
 			i(278276),	-- Spoils of Azta'rec
 			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
 			i(278284),	-- Nebulous Voidcache: Ula'tek
