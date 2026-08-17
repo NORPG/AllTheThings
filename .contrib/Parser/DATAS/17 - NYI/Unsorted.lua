@@ -564,9 +564,7 @@ root(ROOTS.Unsorted, {
 			i(279479),	-- Leviathan's Eye
 			i(279483),	-- Three-Eyed Fish
 			i(279520),	-- Fabled Veteran's Cache
-			i(279522),	-- Surplus Bag of Party Favors
 			i(279524),	-- Brewer's Purple Kilt
-			i(279526),	-- Victorious Stormarion Pinnacle Cache
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
 			i(279531),	-- Brewer's Purple Beret
