@@ -180,7 +180,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						-- 	["providers"] = {
 						-- 	},
 						-- },{
-							i(274494),	-- Chiral Marrowgrafter
+
 						-- }),
 					}),
 				}),

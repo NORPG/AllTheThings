@@ -115,7 +115,6 @@ root(ROOTS.Unsorted, {
 			i(274459),	-- Squirky
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274499),	-- Toxiferous Transfusion
 			i(274579),	-- Undamaged Trap Needle
 			i(274595),	-- Pristine Polygon
 			i(274680),	-- Loa-Blessed Orb
@@ -605,12 +604,10 @@ root(ROOTS.Unsorted, {
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
 			i(280007),	-- Mask Fragment
-			i(280047),	-- Feathered Bell
 			i(280089),	-- Mask Fragment
 			i(280090),	-- Mask Fragment
 			i(280097),	-- Venomous Aspirant's Insignia of Alacrity
 			i(280118),	-- Venomous Aspirant's Medallion
-			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey
 			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent

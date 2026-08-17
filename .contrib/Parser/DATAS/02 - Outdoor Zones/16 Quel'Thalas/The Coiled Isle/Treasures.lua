@@ -157,9 +157,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["questID"] = 95571,
 							["groups"] = {
 								i(244345),	-- Forgotten Amani Urn (DECOR!)
-								-- Exo Note: I think trinket reward is based on Class
-								i(274493),	-- Effigy of Ula'tek's Faithful
-								i(251783),	-- Lost Idol of the Hash'ey
 							},
 						}),
 					},
