@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(63611, {	-- Big Prey Hunter (Season 2)
-						title(792),	-- %s, Servant of Astalor
+						title(792),	-- <Name>, Servant of Astalor
 					}),
 				}),
 				n(EVENT_COMPLETION, {symselector=SymSelector.MIDNIGHT_PREY_EVENT_COMPLETION_SEASON_TWO}),
