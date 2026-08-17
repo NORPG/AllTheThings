@@ -124,6 +124,7 @@ local Ignored = setmetatable({
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]
 		[516991] = true,	-- Phase Conduit [K'aresh Teleport Node]
 		[527623] = true,	-- Phase Conduit [K'aresh Teleport Node]
+		[648564] = true,	-- Vul'zahn's Smuggled Treasure
 	},
 },{ __index = function() return app.EmptyTable end })
 local function AlertForVignetteInfo(info)
