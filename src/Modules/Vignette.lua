@@ -97,6 +97,9 @@ local Ignored = setmetatable({
 		[255216] = true,	-- Balen the Starfinder [Decor Specialist]
 		[255218] = true,	-- Argan Hammerfist [Decor Specialist]
 		[255221] = true,	-- Trevor Grenner [Decor Specialist]
+		[255222] = true,	-- "High Tides" Ren [Decor Specialist]
+		[255228] = true,	-- "Len" Splinthoof [Decor Specialist]
+		[255230] = true,	-- "Yen" Malone [Decor Specialist]
 		[256750] = true,	-- Klasa [Decor Specialist]
 		[256828] = true,	-- Dennia Silvertongue [Decor Specialist]
 		[257042] = true,	-- Research Console
@@ -106,6 +109,7 @@ local Ignored = setmetatable({
 		[259864] = true,	-- Sathren Azuredawn [Decor Specialist]
 		[259922] = true,	-- Void Researcher Aemely [Decor Specialist]
 		[267795] = true,	-- Perry Winkles [Decor Specialist]
+		[267870] = true,	-- Unquestionably Griftah [Decor Specialist]
 		[268228] = true,	-- Jan'sari the Watchful [Renown Quartermaster - Zul'jarra's Forces]
 		-- Vaults of Atal'Utek
 		[269485] = true,	-- Altar of Corrosion
