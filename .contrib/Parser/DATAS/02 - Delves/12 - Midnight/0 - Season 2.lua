@@ -79,6 +79,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						--["questID"] = XXXXX,	-- triggered ?? difficulty
 						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
 								["timeline"] = { ADDED_12_1_0 },
 								["groups"] = {
 									title(776),	-- <Name>, Fabled Vanquisher of Azta'rec
