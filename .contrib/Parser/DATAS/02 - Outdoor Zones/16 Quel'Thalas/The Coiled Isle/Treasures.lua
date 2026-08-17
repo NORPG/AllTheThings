@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 				["description"] = "Spawns randomly edges and ledges around the area after reaching Renown 9.",
 				["groups"] = {
-					i(280178),	-- Poison Dart Frog
+					i(280178),	-- Poison Dart Frog (PET!)
 				},
 			}),
 		}),

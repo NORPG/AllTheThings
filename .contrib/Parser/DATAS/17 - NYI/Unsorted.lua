@@ -612,7 +612,6 @@ root(ROOTS.Unsorted, {
 			i(280118),	-- Venomous Aspirant's Medallion
 			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280178),	-- Poison Dart Frog
 			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent
 			i(280221),	-- Sealeather Sack
