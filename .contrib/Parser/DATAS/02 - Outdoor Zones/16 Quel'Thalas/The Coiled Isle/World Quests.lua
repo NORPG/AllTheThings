@@ -80,6 +80,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(95529, {	-- Spearin' Sky Snakes
 					["coord"] = { 48.8, 64.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
+				q(96492, {	-- Special Assignment: Demand and Supply
+					["coord"] = { 57.9, 49.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(96029, {	-- Special Assignment: Face the Swarm
 					["coord"] = { 71.2, 15.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),

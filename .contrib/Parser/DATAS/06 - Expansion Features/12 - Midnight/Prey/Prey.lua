@@ -42,7 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			ach(62383),	-- Gotta Hunt Them All
 			ach(62142),	-- I Didn't Hear No Bell
-			ach(62136),	-- I'm Good At What I Do
+			pvp(ach(62136)),	-- I'm Good At What I Do
 			ach(62137),	-- I'm Not Trapped In Here With You
 			ach(63644, {	-- Kill Me Now
 				["timeline"] = { ADDED_12_1_0 },

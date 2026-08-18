@@ -116,7 +116,6 @@ root(ROOTS.Unsorted, {
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
 			i(274579),	-- Undamaged Trap Needle
-			i(274595),	-- Pristine Polygon
 			i(274680),	-- Loa-Blessed Orb
 			i(274707),	-- Crystallized Venomblight Manaflux
 			i(274713),	-- Cache of Amani Treasures
@@ -639,11 +638,9 @@ root(ROOTS.Unsorted, {
 			i(248101),	-- Traditional Brewfest Stein
 			i(252042),	-- Purified Troll Pitcher
 			i(253396),	-- Purified Crude Axe
-			i(253703),	-- Purified Crude Hammer
 			i(255652),	-- Purified Troll Loop
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
-			i(278701),	-- Purified Goblin Cup
 			i(280305),	-- Soulcoil Remnant
 			i(280333),	-- Pirate's Eyepatch
 			i(280335),	-- Brewfest Crate

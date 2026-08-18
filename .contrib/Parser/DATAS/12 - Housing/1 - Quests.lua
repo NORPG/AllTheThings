@@ -155,19 +155,21 @@ root(ROOTS.Housing, {
 				["groups"] = {
 					i(274481),	-- Keepsake Corruption (QI!)
 					-- Decor offered if turning quest in Founder's Point
-					i(245993),	-- Purified Floating Lantern (DECOR!)
 					i(255712),	-- Purified Ancient Urn (DECOR!)
+					i(253703),	-- Purified Crude Hammer
+					i(268943),	-- Purified Elven Glowlamp (DECOR!)
+					i(245993),	-- Purified Floating Lantern (DECOR!)
 					i(267205),	-- Purified Folk Candle (DECOR!)
 					i(263876),	-- Purified Folk Mirror (DECOR!)
+					i(278701),	-- Purified Goblin Cup (DECOR!)
 					i(267435),	-- Purified Kaldorei Candle (DECOR!)
-					i(268943),	-- Purified Elven Glowlamp (DECOR!)
 					-- Decor offered if turning quest in Razorwind Shores
+					i(278696),	-- Purified Dracthyr Stein (DECOR!)
+					i(267355),	-- Purified Elven Mirror (DECOR!)
 					i(245991),	-- Purified Sin'dorei Candle (DECOR!)
+					i(272129),	-- Purified Tauren Pot (DECOR!)
 					i(256361),	-- Purified Troll Pendant (DECOR!)
 					i(256684),	-- Purified Troll Amulet (DECOR!)
-					i(267355),	-- Purified Elven Mirror (DECOR!)
-					i(272129),	-- Purified Tauren Pot (DECOR!)
-					i(278696),	-- Purified Dracthyr Stein (DECOR!)
 				},
 			}),
 			q(98406, {	-- A Curated Gift
