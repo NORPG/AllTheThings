@@ -356,11 +356,11 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
 	local total = CostTotals.c[currencyID] or 0
-	-- temporary until currency costs are accurate?
-	-- local owned = CurrencyAmounts[currencyID]
-	local isCost = total > 0 -- owned
+	local owned = CurrencyAmounts[currencyID]
+	local isCost = total > owned
+	local isOwnedCost = (not isCost and total > 0) or nil
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
-	SetCostTotals(costs, isCost, refresh, currencyID)
+	SetCostTotals(costs, isCost, refresh, currencyID, isOwnedCost)
 end
 local function PlayerIsMissingProviderSpell(spellID)
 	return not IsSpellKnownHelper(spellID)
