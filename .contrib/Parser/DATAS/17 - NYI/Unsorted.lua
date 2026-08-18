@@ -291,7 +291,6 @@ root(ROOTS.Unsorted, {
 			i(277990),	-- Cursemail Gauntlets
 			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
-			i(278048),	-- Corrosive Relic
 			i(278050),	-- Corrosive Bijou
 			i(278095),	-- Liver Pulp
 			i(278099),	-- Malt
@@ -305,7 +304,6 @@ root(ROOTS.Unsorted, {
 			i(278115),	-- DNT Ula'tek Pole Dummy F
 			i(278154),	-- Hooked Net Trap
 			i(278193),	-- Aqiri Mandible
-			i(278276),	-- Spoils of Azta'rec
 			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
 			i(278284),	-- Nebulous Voidcache: Ula'tek
 			i(278285),	-- Nebulous Voidcache: Soulcoiler Nek'zali
@@ -437,7 +435,6 @@ root(ROOTS.Unsorted, {
 			i(278874),	-- Lil' Dark Armageddon
 			i(278875),	-- Lil' Green Armageddon
 			i(278876),	-- Lil' Red Armageddon
-			i(278982),	-- Hatchery of Hissing Eggs
 			i(278993),	-- Big Blue Armageddon
 			i(278994),	-- Big Green Armageddon
 			i(279001),	-- Big Dark Armageddon

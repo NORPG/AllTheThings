@@ -113,9 +113,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(274148),	-- Packet of Fishing Lures (QI!)
 						}),
 						o_repeated({
-							i(274145),	-- Sheaf of Papers (QI!)
-							o(639624),	-- Tortollan Scroll
-							o(639625),	-- Tortollan Scroll Case
+							["coords"] = {
+								{ 59.7, 80.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+								{ 60.1, 82.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+								{ 61.2, 81.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+								{ 61.3, 79.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+							},
+							["groups"] = {
+								i(274145),	-- Sheaf of Papers (QI!)
+								o(639624),	-- Tortollan Scroll
+								o(639625),	-- Tortollan Scroll Case
+							},
 						}),
 					},
 				}),

@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(255927, {	-- Venom Lancer Ori'kassi
 				["coord"] = { 67.6, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
-				--["questID"] = XXXXX,
+				["questID"] = 93722,
 				["groups"] = {
 					i(276167),	-- Ori'kassi's Lance
 					i(276178),	-- Venom Lancer's Gauntlets

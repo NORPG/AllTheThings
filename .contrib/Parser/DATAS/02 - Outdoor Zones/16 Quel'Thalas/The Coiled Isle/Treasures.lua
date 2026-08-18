@@ -152,7 +152,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["coord"] = { 70.2, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(269935) },	-- Forgotten Trinket
 						}),
-						hqt(95574, { ["name"] = "Lost Spirit freed.", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
+						hqt(95574, { -- Triggered when Forgotten Trinket is given to the Lost Spirit
+							["name"] = "Lost Spirit freed.",
+							["cost"] = { { "i", 269935, 1 } },	-- 1x Forgotten Trinket
+						}),
 						o(642205, {	-- Forgotten Treasure
 							["questID"] = 95571,
 							["groups"] = {

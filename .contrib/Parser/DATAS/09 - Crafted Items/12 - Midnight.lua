@@ -2491,6 +2491,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(95471, name(HEADERS.NPC, 242035)),	-- Skinning The Devouring Invader
 			q(93636, name(HEADERS.NPC, 242024)),	-- Skinning The Snapping Scourge
 			q(88532, name(HEADERS.NPC, 247096)),	-- Skinning Umbrafang
+			q(97419, name(HEADERS.NPC, 265237), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Lockjaw <The Snapper>
 		})),
 		prof(TAILORING, {
 			q(89422),	-- 0/20 Arcanoweave Expertise

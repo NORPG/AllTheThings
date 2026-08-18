@@ -31,7 +31,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							q(97670),	-- A Handful of Voidlight Marl
 						}, {	-- RENOWN 7 --
 						}, {	-- RENOWN 8 --
-							q(97383),	-- Spirit Corrosion
+							q(97383, {	-- Spirit Corrosion
+								i(278048),	-- Corrosive Relic (QI!)
+							}),
 						}, {	-- RENOWN 9 --
 							q(97141, {	-- Spoils of the Vaults
 								i(276532),	-- Cursebreaker's Bracers
