@@ -12,8 +12,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(95662, {	-- A Suspicious Stew
 					["coord"] = { 58.0, 48.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
-				q(95381, {	-- Fire in the Sky
-					["coord"] = { 54.2, 43.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				q(95794, {	-- De-cryption Process
+					["coord"] = { 77.0, 41.9, 2645 },	-- Kin's Rest
 				}),
 				q(94574, {	-- Egg Thief
 					["coord"] = { 63.2, 38.8, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -22,6 +22,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(265403),	-- Speckled Seabird Egg (QI!)
 						}),
 					},
+				}),
+				q(95381, {	-- Fire in the Sky
+					["coord"] = { 54.2, 43.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(93648, {	-- Gnarly Skullduggery
 					["coord"] = { 57.3, 76.6, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -51,6 +54,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(94611, {	-- Predators and Prey
 					["coord"] = { 64.7, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(93664, {	-- Rotten Fish
+					["coord"] = { 61.0, 38.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95923, {	-- Ruin Runner Rush
 					["coord"] = { 74.9, 62.7, MAP.MIDNIGHT.THE_COILED_ISLE },

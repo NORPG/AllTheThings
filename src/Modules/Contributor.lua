@@ -3454,6 +3454,7 @@ MobileDB.GameObject = {
 	[630870] = true,	-- Portal to Astalor's Sanctum
 	[638873] = true,	-- Orb of Translocation
 	[639875] = true,	-- Feather of Jan'alai (q:94870)
+	[639625] = true,	-- Tortollan Scroll Case (q:95453)
 	[641533] = true,	-- Corrupted Lantern (q:92320)
 	[642704] = true,	-- Seagull Feather (q:95673)
 	[649481] = true,	-- Wood Debris (q:96111)
