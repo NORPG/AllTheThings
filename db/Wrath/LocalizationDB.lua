@@ -11227,7 +11227,6 @@ for key,value in pairs({
 })
 do phases[key].description = value; end
 for key,value in pairs({
-	[17023] = "Exalted with the Shen'dralar.",
 })
 do achievementCriterias[key].name = value; end
 end

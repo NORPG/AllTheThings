@@ -3462,7 +3462,8 @@ namespace ATT
                                 localeBuilder.AppendLine("for key,value in pairs({");
                                 foreach (var key in keys)
                                 {
-                                    if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                    if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name)
+                                        && (!localizationForTextByKey.TryGetValue(key, out string enName) || name != enName))
                                     {
                                         ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                     }
