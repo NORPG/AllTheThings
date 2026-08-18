@@ -63,10 +63,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["qg"] = 262798,	-- Warleader Abdumati
 					["coord"] = { 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				}),
-				-- Unlocks
+				-- Altar Unlocks
 				q(97662, {	-- The Winds of Tok'jara
 					["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["provider"] = { "i", 278523 },	-- Feather of Tok'jara
+				}),
+				q(97669, {	-- The Luck of the Bound Spirit
+					["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["provider"] = { "i", 278536 },	-- Mummified Lynx's Paw
 				}),
 				-- Zone Repeatables
 				q(95520, {	-- Purging the Vaults
@@ -105,39 +109,48 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				header(HEADERS.Achievement, 63598, sharedData({	-- Roll the Patrol
 					["repeatable"] = true,
 				},{
-					q(95972, {	-- Ash to Ash
-						["coord"] = { 43.9, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						["qg"] = 263346,	-- Er'inye
-					}),
-					q(95952, {	-- Breath and Bile
-						["coord"] = { 44.4, 53.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						["qg"] = 263472,	-- Er'inye
-						["groups"] = {
-							i(271864),	-- Rotten Pneuma
-							i(271863),	-- Ophidian Bile
-						},
-					}),
-					q(95573, {	-- Broken Bonds
-						["coord"] = { 49.4, 56.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						-- ["qg"] = ??,
-					}),
-					q(95985, {	-- Calming the Dead
-						["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						-- ["qg"] = ??,
-					}),
-					q(95987, {	-- Laid to Rest
-						["coord"] = { 52.6, 45.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						["qg"] = 263339,	-- Tortured Spirit
-					}),
-					q(95598, {	-- Slay Children of Ula'tek
-						["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						["qg"] = 261973,	-- Fading Spirit
-					}),
-					q(95962, {	-- Vengeance for the Dead
-						["coord"] = { 52.1, 32.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						["qg"] = 263336,	-- Vengeful Spirit
-					}),
-					-- TODO: add more
+					-- ["description"] = "These appear to be able to spawn any Patrol in any of the listed coords.",
+					-- ["coords"] = {
+
+					-- },
+					["groups"] = {
+						q(95972, {	-- Ash to Ash
+							["coord"] = { 43.9, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["qg"] = 263346,	-- Er'inye
+						}),
+						q(95952, {	-- Breath and Bile
+							["coord"] = { 44.4, 53.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["qg"] = 263472,	-- Er'inye
+							["groups"] = {
+								i(271864),	-- Rotten Pneuma
+								i(271863),	-- Ophidian Bile
+							},
+						}),
+						q(95573, {	-- Broken Bonds
+							["coord"] = { 49.4, 56.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							-- ["qg"] = ??,
+						}),
+						q(95985, {	-- Calming the Dead
+							["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							-- ["qg"] = ??,
+						}),
+						q(95987, {	-- Laid to Rest
+							["coords"] = {
+								{ 50.1, 38.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								{ 52.6, 45.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							},
+							["qg"] = 263339,	-- Tortured Spirit
+						}),
+						q(95598, {	-- Slay Children of Ula'tek
+							["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["qg"] = 261973,	-- Fading Spirit
+						}),
+						q(95962, {	-- Vengeance for the Dead
+							["coord"] = { 52.1, 32.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["qg"] = 263336,	-- Vengeful Spirit
+						}),
+						-- TODO: add more
+					},
 				})),
 				n(REWARDS, {
 					i(273000),	-- Corrosive Soul

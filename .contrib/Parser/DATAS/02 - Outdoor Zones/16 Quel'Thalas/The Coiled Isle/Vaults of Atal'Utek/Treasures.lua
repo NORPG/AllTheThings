@@ -63,21 +63,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["cost"] = {{ "i", 280006, 1}},	-- Spirit Loupe
 					["groups"] = { i(278523) },	-- Feather of Tok'jara
 				}),
-				-- o(OBJ, {	-- OBJ
-					-- ["coords"] = {
-					-- 	{ 41.8, 10.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- 	{ 40.1, 18.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- 	{ 52.6, 10.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- 	{ 53.7, 18.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- 	{ 52.2, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- 	{ 53.0, 53.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- 	{ 41.5, 53.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- 	{ 42.5, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- 	{ 47.5, 38.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					-- },
-				-- 	["cost"] = {{ "i", 280004, 1}},	-- Corroded Key
-				-- 	["groups"] = { i(ITEM) },	-- ITEM
-				-- }),
+				o(671498, {	--
+					["description"] = "Spawn location seems to vary.",
+					["coords"] = {
+						{ 41.8, 10.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 40.1, 18.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 52.6, 10.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 53.7, 18.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 52.2, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 53.0, 53.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 41.5, 53.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 42.5, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 47.5, 38.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					},
+					["cost"] = {{ "i", 280004, 1}},	-- Corroded Key
+					["groups"] = { i(278536) },	-- Mummified Lynx's Paw
+				}),
 				-- o(OBJ, {	-- OBJ
 				-- 	["coord"] = { X, Y, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				-- 	["cost"] = {{ "i", 280003, 1}},	-- Excising Knife

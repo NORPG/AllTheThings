@@ -9,6 +9,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				currency(3448),	-- Corrosive Coin
 				i(279287),	-- Corroded Pouch
 				i(279288),	-- Corroded Satchel
+				-- Pouch and Satchel can give the same loot as Venom-Soaked Sack
 				i(280004),	-- Corroded Key
 				i(280003),	-- Excising Knife
 				i(280006),	-- Spirit Loupe
