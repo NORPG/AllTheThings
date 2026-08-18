@@ -708,7 +708,11 @@ app.AddEventHandler("OnLoad", function()
 			local id = reference[reference.key]
 			local currencyCount = CalculateTotalCosts(reference, id)
 			if currencyCount > 0 then
-				tooltipInfo[#tooltipInfo + 1] = { left = L.CURRENCY_NEEDED_TO_BUY, right = app.formatNumericWithCommas(currencyCount) }
+				local needed = app.formatNumericWithCommas(currencyCount)
+				if reference.isOwnedCost then
+					needed = app.Modules.Color.Colorize(needed, app.Colors.Time).." |T"..app.asset("known_green")..":0|t"
+				end
+				tooltipInfo[#tooltipInfo + 1] = { left = L.CURRENCY_NEEDED_TO_BUY, right = needed }
 			end
 		end
 	})
