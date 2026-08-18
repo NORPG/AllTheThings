@@ -13,9 +13,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(63358, {	-- Coiled to Strike
 				i(263873),	-- Amani Forge (DECOR!)
 			}),
-			ach(63381, {	-- Cursebreaker
-				title(777),	-- <Name> the Cursebreaker
-			}),
 			ach(63640),	-- Explore the Coiled Isle
 			ach(63382),	-- It's Definitely Something
 			ach(63432, {	-- Mysterious Mix Master
@@ -82,7 +79,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(63359, {	-- Treasures of the Coiled Isle
 				i(275656),	-- Auriferous Venomfang (MOUNT!)
 			}),
-			ach(63390),	-- Turn the Surge
 			ach(63639),	-- Ula'tek Uncoiled
 		}),
 	}),
