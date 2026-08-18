@@ -167,8 +167,6 @@ root(ROOTS.Unsorted, {
 			i(275274),	-- Alchemy
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
-			i(275285),	-- Malleable Root
-			i(275287),	-- Cellular Slab
 			i(276883),	-- A Message From Kul'amara
 			i(276905),	-- Beginning Fragment of Ulantu's Log
 			i(276912),	-- Middle Fragment of Ulantu's Log

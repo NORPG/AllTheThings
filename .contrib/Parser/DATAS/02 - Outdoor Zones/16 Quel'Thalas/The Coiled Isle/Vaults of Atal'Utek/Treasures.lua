@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98035,	-- To failure.
 					}),
 					o(668598, {	-- Funerary Inscription
-						["coord"] = { 46.4, 24.0, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["coord"] = { 47.3, 28.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["questID"] = 98036,	-- To a father.
 					}),
 					o(668599, {	-- Funerary Inscription
@@ -57,6 +57,37 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98040,	-- To a shield-bearer.
 					}),
 				}),
+				-- Unlocks
+				o(671500, {	-- Feather of Tok'jara
+					["coord"] = { 48.4, 25.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["cost"] = {{ "i", 280006, 1}},	-- Spirit Loupe
+					["groups"] = { i(278523) },	-- Feather of Tok'jara
+				}),
+				-- o(OBJ, {	-- OBJ
+					-- ["coords"] = {
+					-- 	{ 41.8, 10.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- 	{ 40.1, 18.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- 	{ 52.6, 10.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- 	{ 53.7, 18.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- 	{ 52.2, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- 	{ 53.0, 53.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- 	{ 41.5, 53.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- 	{ 42.5, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- 	{ 47.5, 38.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					-- },
+				-- 	["cost"] = {{ "i", 280004, 1}},	-- Corroded Key
+				-- 	["groups"] = { i(ITEM) },	-- ITEM
+				-- }),
+				-- o(OBJ, {	-- OBJ
+				-- 	["coord"] = { X, Y, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+				-- 	["cost"] = {{ "i", 280003, 1}},	-- Excising Knife
+				-- 	["groups"] = { i(ITEM) },	-- ITEM
+				-- }),
+				-- o(OBJ, {	-- OBJ
+				-- 	["coord"] = { X, Y, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+				-- 	["cost"] = {{ "i", ITEM, 1}},	-- ITEM
+				-- 	["groups"] = { i(ITEM) },	-- ITEM
+				-- }),
 				-- Repeatables
 				o(649640, {	-- Soulcoiler's Cache
 					["description"] = "Can be found randomly throughout the Vaults.",

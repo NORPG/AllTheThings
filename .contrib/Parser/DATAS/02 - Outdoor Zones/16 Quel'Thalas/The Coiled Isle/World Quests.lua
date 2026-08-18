@@ -74,11 +74,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(96066, {	-- Slithering Surveyor
 					["coord"] = { 56.9, 49.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
-				q(96625, {	-- Spectral Gladiators
-					["coord"] = { 68.4, 57.1, MAP.MIDNIGHT.THE_COILED_ISLE },
-				}),
-				q(95529, {	-- Spearin' Sky Snakes
-					["coord"] = { 48.8, 64.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				q(95921, {	-- Special Assignment: Demand and Supply
+					["coord"] = { 59.2, 51.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(96492, {	-- Special Assignment: Demand and Supply
 					["coord"] = { 57.9, 49.0, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -88,6 +85,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(95918, {	-- Special Assignment: Wraith Wrath
 					["coord"] = { 44.0, 47.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(96625, {	-- Spectral Gladiators
+					["coord"] = { 68.4, 57.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(95529, {	-- Spearin' Sky Snakes
+					["coord"] = { 48.8, 64.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95429, {	-- Swift of Foot
 					["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -132,6 +135,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(WORLD_QUESTS, {
 				hqt(96307),	-- Special Assignment: Wraith Wrath was unlocked
+				hqt(96492),	-- Special Assignment: Demand and Supply was unlocked
 			}),
 		})),
 	}),

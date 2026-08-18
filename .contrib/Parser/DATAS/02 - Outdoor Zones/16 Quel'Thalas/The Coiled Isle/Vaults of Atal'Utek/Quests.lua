@@ -63,6 +63,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["qg"] = 262798,	-- Warleader Abdumati
 					["coord"] = { 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				}),
+				-- Unlocks
+				q(97662, {	-- The Winds of Tok'jara
+					["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["provider"] = { "i", 278523 },	-- Feather of Tok'jara
+				}),
 				-- Zone Repeatables
 				q(95520, {	-- Purging the Vaults
 					["qgs"] = {
@@ -100,6 +105,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				header(HEADERS.Achievement, 63598, sharedData({	-- Roll the Patrol
 					["repeatable"] = true,
 				},{
+					q(95972, {	-- Ash to Ash
+						["coord"] = { 43.9, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["qg"] = 263346,	-- Er'inye
+					}),
 					q(95952, {	-- Breath and Bile
 						["coord"] = { 44.4, 53.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["qg"] = 263472,	-- Er'inye
@@ -122,7 +131,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					q(95598, {	-- Slay Children of Ula'tek
 						["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						-- ["qg"] = ??,
+						["qg"] = 261973,	-- Fading Spirit
 					}),
 					q(95962, {	-- Vengeance for the Dead
 						["coord"] = { 52.1, 32.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
@@ -146,6 +155,7 @@ root(ROOTS.HiddenQuestTriggers, m(MAP.MIDNIGHT.QUELTHALAS, {
 			header(HEADERS.Achievement, 63598, sharedData({
 				["repeatable"] = true
 			},{
+				q(96041),	-- completion of 95972 -- Ash to Ash
 				q(96037),	-- completion of 95952 -- Breath and Bile
 				q(96032),	-- completion of 95573 -- Broken Bonds
 				q(96042),	-- completion of 95985 -- Calming the Dead
