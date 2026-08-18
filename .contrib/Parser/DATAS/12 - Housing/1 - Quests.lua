@@ -150,6 +150,7 @@ root(ROOTS.Housing, {
 					{ 52.7, 37.6, FOUNDERS_POINT },
 					{ 53.7, 57.4, RAZORWIND_SHORES },
 				},
+				["maps"] = { 0 },	-- Not kidding.
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_12_1_0 },
 				["groups"] = {
@@ -163,6 +164,7 @@ root(ROOTS.Housing, {
 					i(263876),	-- Purified Folk Mirror (DECOR!)
 					i(278701),	-- Purified Goblin Cup (DECOR!)
 					i(267435),	-- Purified Kaldorei Candle (DECOR!)
+					i(252042),	-- Purified Troll Pitcher (DECOR!)
 					-- Decor offered if turning quest in Razorwind Shores
 					i(278696),	-- Purified Dracthyr Stein (DECOR!)
 					i(267355),	-- Purified Elven Mirror (DECOR!)
@@ -195,6 +197,11 @@ root(ROOTS.Housing, {
 					}),
 				},
 			}),
+			q(96780, {	-- Local Kafa Shop
+				["qg"] = 263258, -- Cousin Shortkaf <Kafa Trader>
+				["coord"] =  { 55.1, 43.6, FOUNDERS_POINT },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			q(95387, {	-- One Neighbor's Junk is Another Troll's Treasure
 				["qgs"] = {
 					260485,	-- Griftah
@@ -204,6 +211,11 @@ root(ROOTS.Housing, {
 					{ 54.2, 56.0, RAZORWIND_SHORES }
 				},
 				["isRepeatable"] = true,
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(97073, {	-- Rustbolt Retailer
+				["qg"] = 267856, -- J-3T 3000
+				["coord"] =  { 55.2, 43.6, FOUNDERS_POINT },
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 		},

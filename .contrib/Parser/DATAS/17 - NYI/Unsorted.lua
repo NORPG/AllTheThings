@@ -9,9 +9,7 @@ root(ROOTS.Unsorted, {
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
-			i(244344),	-- Griftah's Mystical Polter-Urn
 			i(247776),	-- Glowing Zangarshroom Cup
-			i(248404),	-- Stack of Kafa Mugs
 			i(249219),	-- Ouroboric Curse
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
@@ -24,7 +22,6 @@ root(ROOTS.Unsorted, {
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
 			i(263874),	-- Emerald-Encrusted Amani Ritual Skull
-			i(263875),	-- Griftah's Resizing Hex-Skull
 			i(264162),	-- Enchanted Snowflake
 			i(265399),	-- Ritually-Charred Bones
 			i(265400),	-- Calcified Turtle Heart
@@ -77,7 +74,6 @@ root(ROOTS.Unsorted, {
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
 			i(271693),	-- Congealed Venom
-			i(271717),	-- Cup of Kafa
 			i(271863),	-- Ophidian Bile
 			i(271864),	-- Rotten Pneuma
 			i(271865),	-- Scavenged Weapon
@@ -193,8 +189,6 @@ root(ROOTS.Unsorted, {
 			i(276205),	-- Legitimate Shipment of Swivel Guns
 			i(276206),	-- Leagally Sourced Cannon Shot
 			i(276234),	-- Vibrant Venomfang
-			i(276297),	-- Rustbolt Jetpack
-			i(276312),	-- Griftah's Torch of Rotation
 			i(276405),	-- [PH] Rainbow Axe - 1h - Blue
 			i(276406),	-- [PH] Rainbow Axe - 1h - Green
 			i(276407),	-- [PH] Rainbow Axe - 1h - Purple
@@ -597,8 +591,6 @@ root(ROOTS.Unsorted, {
 			i(280007),	-- Mask Fragment
 			i(280089),	-- Mask Fragment
 			i(280090),	-- Mask Fragment
-			i(280097),	-- Venomous Aspirant's Insignia of Alacrity
-			i(280118),	-- Venomous Aspirant's Medallion
 			i(280131),	-- Nebulous Voidcache: Prey
 			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent
@@ -631,7 +623,6 @@ root(ROOTS.Unsorted, {
 			i(280275),	-- Hanging Longwick Rope
 			i(244347),	-- Purified Troll Urn
 			i(248101),	-- Traditional Brewfest Stein
-			i(252042),	-- Purified Troll Pitcher
 			i(253396),	-- Purified Crude Axe
 			i(255652),	-- Purified Troll Loop
 			i(258540),	-- Purified Troll Ring

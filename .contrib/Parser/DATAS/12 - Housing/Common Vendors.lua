@@ -641,6 +641,23 @@ root(ROOTS.Housing, {
 			i(277142),	-- Westfall Pet Cage (DECOR!)
 		}),
 	}),
+	n_CommonVendorItems({
+		["crs"] = {
+			263258, -- Cousin Shortkaf <Kafa Trader> [Founder's Point]
+		},
+		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+			i(271717),	-- Cup of Kafa
+			i(248404),	-- Stack of Kafa Mugs (DECOR!)
+		}),
+	}),
+	n_CommonVendorItems({
+		["crs"] = {
+			267856, -- J-3T 3000 [Founder's Point]
+		},
+		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+			i(276297),	-- Rustbolt Jetpack
+		}),
+	}),
 	n(VENDORS, {
 		n(255654, {	-- Lorisin
 			["coord"] = { 41.6, 61.8, FOUNDERS_POINT },

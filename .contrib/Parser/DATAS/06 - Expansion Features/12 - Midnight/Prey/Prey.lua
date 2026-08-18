@@ -293,6 +293,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["timeline"] = { ADDED_12_1_0 },
 			}),
+			q(96466, {	-- Prey: Anguish Island
+				["sourceQuests"] = { 96004 },	-- Prey: A Slithering Threat
+				["qg"] = 246231,	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 245824 },	-- Hunt Table
