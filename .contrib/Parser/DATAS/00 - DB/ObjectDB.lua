@@ -8574,6 +8574,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[148503] = {
 		readable = "Fire Plume Ridge Hot Spot",
 		icon = 135805,
+		ignorewowhead = true,
 		text = {
 			en = "Fire Plume Ridge Hot Spot",
 		},
@@ -11130,6 +11131,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[174792] = {
 		readable = "Gorishi Silithid Crystal",
+		ignorewowhead = true,
 		text = {
 			en = "Gorishi Silithid Crystal",
 		},
@@ -11197,6 +11199,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[175124] = {
 		readable = "Rookery Egg",
+		ignorewowhead = true,
 		text = {
 			en = "Rookery Egg",
 		},
@@ -11610,6 +11613,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[175564] = {
 		readable = "Brazier of the Herald",
 		icon = 134804,
+		ignorewowhead = true,
 		text = {
 			en = "Brazier of the Herald",
 		},
@@ -13686,6 +13690,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[176210] = {
 		readable = "Command Tent",
+		ignorewowhead = true,
 		text = {
 			en = "Command Tent",
 		},
@@ -14531,6 +14536,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[176693] = {
 		readable = "Dreamfoil",
+		ignorewowhead = true,
 		text = {
 			en = "Dreamfoil",
 		},
@@ -15118,6 +15124,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[177673] = {
 		readable = "Serpent Statue",
 		icon = 133738,
+		ignorewowhead = true,
 		text = {
 			en = "Serpent Statue",
 		},
@@ -15732,6 +15739,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[178224] = {
 		readable = "Dire Pool",
 		icon = 134805,
+		ignorewowhead = true,
 		text = {
 			en = "Dire Pool",
 		},
@@ -15798,6 +15806,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[178247] = {
 		readable = "Naga Brazier",
+		ignorewowhead = true,
 		text = {
 			en = "Naga Brazier",
 		},
@@ -16736,6 +16745,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[179644] = {
 		readable = "Imprisoned Doomguard",
 		model = 202443,
+		ignorewowhead = true,
 		text = {
 			en = "Imprisoned Doomguard",
 			ru = "Плененный страж ужаса",
@@ -17087,6 +17097,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[180024] = {
 		readable = "Mysterious Deadmines Chest",
 		model = 199748,
+		ignorewowhead = true,
 		text = {
 			en = "Mysterious Deadmines Chest",
 			ru = "Таинственный сундук с Мертвых копей",
@@ -19991,9 +20002,9 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[181287] = {
 		readable = "Frozen Rune",
 		model = 191177,
+		ignorewowhead = true,
 		text = {
 			en = "Frozen Rune",
-			ru = "Frozen Rune",
 		},
 	},
 	[181288] = {
@@ -20761,6 +20772,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[181616] = {
 		readable = "School of Red Snapper",
 		model = 219405,
+		ignorewowhead = true,
 		text = {
 			en = "School of Red Snapper",
 		},
@@ -20842,6 +20854,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[181636] = {
 		readable = "Altar of Naias",
+		ignorewowhead = true,
 		text = {
 			en = "Altar of Naias",
 		},
@@ -21312,6 +21325,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[181714] = {
 		readable = "Bristlelimb Cage",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Bristlelimb Cage",
 		},
@@ -21475,6 +21489,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[181779] = {
 		readable = "Impact Site Crystal",
 		model = 201845,
+		ignorewowhead = true,
 		text = {
 			en = "Impact Site Crystal",
 		},
@@ -21482,6 +21497,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[181780] = {
 		readable = "Altered Bloodmyst Crystal",
 		model = 201845,
+		ignorewowhead = true,
 		text = {
 			en = "Altered Bloodmyst Crystal",
 		},
@@ -23141,6 +23157,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182349] = {
 		readable = "Corki's Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Corki's Prison",
 		},
@@ -23148,6 +23165,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182350] = {
 		readable = "Corki's Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Corki's Prison",
 		},
@@ -23237,6 +23255,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182484] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23252,6 +23271,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182486] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23259,6 +23279,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182487] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23266,6 +23287,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182488] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23273,6 +23295,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182489] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23280,6 +23303,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182490] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23287,6 +23311,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182491] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23294,6 +23319,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182492] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23301,6 +23327,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182493] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23308,6 +23335,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182494] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23315,6 +23343,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182495] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
@@ -23322,6 +23351,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[182496] = {
 		readable = "Warmaul Prison",
 		model = 200938,
+		ignorewowhead = true,
 		text = {
 			en = "Warmaul Prison",
 		},
