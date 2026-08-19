@@ -1021,14 +1021,14 @@ local i = function(itemID, speciesID, altSpeciesID)
 		local spellID = CompanionPetSpeciesIDToSpellID[speciesID];
 		if spellID then item.spellID = spellID; end
 		if altSpeciesID then item.altSpeciesID = altSpeciesID; end
+		SpeciesDB[speciesID] = item
 	elseif item.speciesID then
 		item.speciesID = nil;
 	end
-	SpeciesDB[speciesID] = Items[itemID]
 	return item;
 end
 local n = function(creatureID, speciesID)
-	if creatureID < 1 then return end
+	if creatureID < 1 or speciesID < 1 then return end
 	local pet = { ["speciesID"] = speciesID, ["npcID"] = creatureID, ["ignoreBonus"] = true };
 	Pets[creatureID] = pet;
 	SpeciesDB[speciesID] = Pets[creatureID]

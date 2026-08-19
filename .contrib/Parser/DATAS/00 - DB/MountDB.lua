@@ -2,8 +2,12 @@ local Items = ItemDBConditional;
 local MountDB = MountDB;
 local i = function(itemID, spellID)
 	local item = { ["mountID"] = spellID, ["ignoreBonus"] = true, ["_wipe"] = { "spellID" } }
-	Items[itemID] = item
-	MountDB[spellID] = itemID == 0 and item or Items[itemID]
+	if itemID > 0 then
+		Items[itemID] = item
+	end
+	if spellID > 0 then
+		MountDB[spellID] = itemID == 0 and item or Items[itemID]
+	end
 end
 -- If the mount is obtained from an item, use i(itemID, mountID);
 -- Otherwise use i(0, mountID); example if the mount is obtained from store.
