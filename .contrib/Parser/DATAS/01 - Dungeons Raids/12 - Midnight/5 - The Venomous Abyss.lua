@@ -13,12 +13,12 @@ local ULATEK = 2895;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
-	[NEKZALI] = { 253547 },	-- Nek'zali the Soulcoiler
-	--[[
+	[NEKZALI] = { 259927 },	-- Nek'zali the Soulcoiler
 	[ENTOMBED] = {
-		1,
-		1,
+		258557,
+		258558,
 	},
+	--[[
 	[VASHNIK] = { 1 },
 	[EXPLORERS] = {
 		1,
@@ -261,12 +261,18 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1320, {	-- The Venomous Abyss
 		["coord"] = { 47.2, 22.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-		--["maps"] = {
-		--},
+		["maps"] = {
+			2606,	-- The Soulcoil Well
+			2607,	-- The Pit of Fangs
+			2608,	-- The Vile Crypt
+			2609,	-- Crypt of the Soulcoilers
+			2610,	-- The Coiled Altar
+		},
 		["isRaid"] = true,
+		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(63530, {	-- The Venomous Abyss: Essence of Ula'tek
@@ -475,6 +481,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				n(QUESTS, {
+					-- q(, {	-- The Venomous Abyss: Deception Unmasked [N]
+					-- 	["qg"] = 262667,	-- Zul'jarra
+					-- }),
 				}),
 				ZoneDrops({}),
 				Boss(NEKZALI),
@@ -513,6 +522,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				n(QUESTS, {
+					q(98228, {	-- The Venomous Abyss: Deception Unmasked [H]
+						["qg"] = 262667,	-- Zul'jarra
+					}),
 				}),
 				ZoneDrops({}),
 				Boss(NEKZALI),
@@ -538,6 +550,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				n(QUESTS, {
+					-- q(, {	-- The Venomous Abyss: Deception Unmasked [M]
+					-- 	["qg"] = 262667,	-- Zul'jarra
+					-- }),
 				}),
 				ZoneDrops({}),
 				Boss(NEKZALI, {
@@ -582,7 +597,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-}));
+	inst(1320, {	-- The Venomous Abyss
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+
+		},
+	}),
+}))
