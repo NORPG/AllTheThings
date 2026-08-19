@@ -84,11 +84,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["cost"] = { { "i", 280005, 1} },	-- Dispelling Charm
 					["groups"] = { i(278517) },	-- Lost Med'jai Amulet (QS!/QI!)
 				}),
-				-- o(OBJ, {	-- OBJ
-				-- 	["coord"] = { X, Y, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-				-- 	["cost"] = { { "i", ITEM, 1} },	-- ITEM
-				-- 	["groups"] = { i(ITEM) },	-- ITEM
-				-- }),
+				o(649651, {	-- Eye of Szarith
+					["coord"] = { 68.6, 15.7, 2613 },	-- The Underbelly
+					["cost"] = { { "i", 280003, 1} },	-- Excising Knife
+					["groups"] = { i(278534) },	-- Eye of Szarith (QS!/QI!)
+				}),
 				-- Repeatables
 				o(649640, {	-- Soulcoiler's Cache
 					["description"] = "Can be found randomly throughout the Vaults.",

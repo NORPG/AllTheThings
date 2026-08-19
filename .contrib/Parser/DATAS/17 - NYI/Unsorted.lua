@@ -14,7 +14,6 @@ root(ROOTS.Unsorted, {
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
-			i(260419),	-- Cursed Zandalari Coin
 			i(260420),	-- Swamp Apple
 			i(260425),	-- Morsel of Crab Meat
 			i(260426),	-- Bloodied Whetstone
@@ -107,7 +106,6 @@ root(ROOTS.Unsorted, {
 			i(274459),	-- Squirky
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274579),	-- Undamaged Trap Needle
 			i(274680),	-- Loa-Blessed Orb
 			i(274707),	-- Crystallized Venomblight Manaflux
 			i(274713),	-- Cache of Amani Treasures
@@ -262,9 +260,6 @@ root(ROOTS.Unsorted, {
 			i(277482),	-- Ouroboric Cycle
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
-			i(277847),	-- Unbroken Trap Hinge
-			i(277848),	-- Untouched Crab Lure
-			i(277849),	-- Mushed Crab
 			i(277937),	-- Balanced Offering
 			i(277938),	-- Virulent Offering
 			i(277939),	-- Volatile Offering
@@ -274,7 +269,6 @@ root(ROOTS.Unsorted, {
 			i(277943),	-- Pestilent Offering
 			i(277944),	-- Phlegmatic Offering
 			i(277945),	-- Melancholic Offering
-			i(277946),	-- Choleric Offering
 			i(277955),	-- Ethereal Bead Strand
 			i(277990),	-- Cursemail Gauntlets
 			i(278044),	-- Hanging Candles
@@ -305,7 +299,6 @@ root(ROOTS.Unsorted, {
 			i(278340),	-- Blighted Pearl
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(278378),	-- Preyhunter's Scaled Bust
-			i(278534),	-- Eye of Szarith
 			i(278573),	-- Crested Burnished Leafmimic
 			i(278574),	-- Crested Aqua Leafmimic
 			i(278575),	-- Crested Verdant Leafmimic
@@ -624,7 +617,6 @@ root(ROOTS.Unsorted, {
 			i(280343),	-- Hanging Brewfest Wreath
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
-			i(274422),	-- Ossified Relic
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
 			i(280581),	-- Wintry Witchwick's Rider

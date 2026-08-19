@@ -352,6 +352,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(654991, {	-- Cracked Canopic Jar
 				["description"] = "Spawns randomly around the temples.",
 			}),
+			o(653064, {	-- Ossified Relic
+				["description"] = "Spawns randomly around the whole area once opted in to the Curse of the Isle.",
+					--["sourceQuests"] = {  }
+				["groups"] = { i(274422) },	-- Ossified Relic
+			}),
 			o(656044, {	-- Singing Shell
 				["description"] = "Spawns randomly around coastal regions.",
 			}),

@@ -324,6 +324,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["timeline"] = { ADDED_12_1_0 },
 			}),
+			q(96528, {	-- Prey: Anguish from Beyond
+				["sourceQuests"] = { 96532 },	-- Prey: Attending the Attendant
+				["qg"] = 265529, -- Sanctum Attendant Ethrandil
+				["coord"] = { 57.0, 33.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 245824 },	-- Hunt Table
@@ -439,9 +445,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			["maps"] = {
 				MAP.MIDNIGHT.THE_COILED_ISLE
 			},
-			["g"] = {
-				i(278572), -- Pale Hexscale (PET!)
+			["cost"] = { { "i", 274422, 1 } },	-- Ossified Relic
+			["groups"] = {
 				i(275659), -- Hexflame Reaver (MOUNT!)
+				i(278572), -- Pale Hexscale (PET!)
 				i(276207), -- Preyhunter's Masquerade
 			},
 		}),

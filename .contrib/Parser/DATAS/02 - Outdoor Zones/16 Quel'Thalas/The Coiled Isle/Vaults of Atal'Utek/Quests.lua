@@ -76,6 +76,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 36.8, 23.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["provider"] = { "i", 278517 },	-- Lost Med'jai Amulet
 				}),
+				q(97668, {	-- The Watchful Gaze of Szarith
+					["coord"] = { 68.4, 15.8, 2613 },	-- The Underbelly
+					["provider"] = { "i", 278534 },	-- Eye of Szarith
+				}),
 				-- Zone Repeatables
 				q(95520, {	-- Purging the Vaults
 					["qgs"] = {

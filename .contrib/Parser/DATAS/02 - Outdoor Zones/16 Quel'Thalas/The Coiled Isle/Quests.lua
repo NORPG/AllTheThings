@@ -1047,9 +1047,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["qg"] = 254599,	-- Ofi the Sly
 				["coord"] = { 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["groups"] = {
-					i(277985),	-- Mysterious Offering
 					i(276124),	-- Ancient Knucklebone
+					i(277946),	-- Choleric Offering
 					i(276117),	-- Clouded Blood-Pearl
+					i(277985),	-- Mysterious Offering
 					i(276126),	-- Serpent's Feather
 				},
 			}),
