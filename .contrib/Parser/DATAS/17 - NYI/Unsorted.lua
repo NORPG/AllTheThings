@@ -58,7 +58,6 @@ root(ROOTS.Unsorted, {
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
-			i(271132),	-- Essence Trap
 			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2

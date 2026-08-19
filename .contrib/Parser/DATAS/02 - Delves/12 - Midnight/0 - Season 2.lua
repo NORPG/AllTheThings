@@ -113,6 +113,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			n(CURIO, {
 				--Combat
 				i(249223),	-- Corrosive Bilespear
+				i(271132),	-- Essence Trap
 				--Utility
 				i(249227),	-- Dundun's Favor
 				i(249228),	-- Soul-Cracking Dreamcatcher

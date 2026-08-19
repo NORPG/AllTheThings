@@ -24440,6 +24440,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[183266] = {
 		readable = "Footlocker",
 		model = 198238,
+		ignorewowhead = true,
 		text = {
 			en = "Footlocker",
 		},
@@ -24447,6 +24448,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[183267] = {
 		readable = "Dresser",
 		model = 198634,
+		ignorewowhead = true,
 		text = {
 			en = "Dresser",
 		},
@@ -24454,6 +24456,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[183268] = {
 		readable = "Bookshelf",
 		model = 198053,
+		ignorewowhead = true,
 		text = {
 			en = "Bookshelf",
 		},
@@ -24461,6 +24464,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[183269] = {
 		readable = "Weapon Rack",
 		model = 198636,
+		ignorewowhead = true,
 		text = {
 			en = "Weapon Rack",
 		},
@@ -24628,12 +24632,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[183350] = {
 		readable = "Gateway Murketh",
+		ignorewowhead = true,
 		text = {
 			en = "Gateway Murketh",
 		},
 	},
 	[183351] = {
 		readable = "Gateway Shaadraz",
+		ignorewowhead = true,
 		text = {
 			en = "Gateway Shaadraz",
 		},
@@ -25493,6 +25499,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[184418] = {
 		readable = "Ethereum Prison",
 		icon = 134335,
+		ignorewowhead = true,
 		text = {
 			en = "Ethereum Prison",
 		},
@@ -25739,6 +25746,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[184588] = {
 		readable = "Captain Tyralius's Prison",
 		model = 192559,
+		ignorewowhead = true,
 		text = {
 			en = "Captain Tyralius's Prison",
 		},
