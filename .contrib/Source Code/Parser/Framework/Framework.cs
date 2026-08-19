@@ -2738,7 +2738,11 @@ namespace ATT
                     var keys = OBJECTS_WITH_REFERENCES.Keys.ToList();
                     keys.Sort();
                     int localeCount = SUPPORTED_LOCALES.Count();
-                    int retryLocaleThreshold = Config["DoRetryObjectDBMissingThreshold"] ?? localeCount;
+                    int retryLocaleThreshold = Config["DoRetryObjectDBMissingThreshold"];
+                    if (retryLocaleThreshold == 0)
+                    {
+                        retryLocaleThreshold = 999;
+                    }
                     retryLocaleThreshold = localeCount - retryLocaleThreshold;
                     bool objectIsOk = false;
                     foreach (var key in keys)
@@ -2751,7 +2755,7 @@ namespace ATT
                             if (objectData.TryGetValue("text", out var textObj) && textObj is Dictionary<string, object> textLocales)
                             {
                                 if (textLocales.TryGetValue("en", out string enText)
-                                && (IsExportStringRawAPI(enText) || IsExportStringVerbatim(enText)))
+                                    && (IsExportStringRawAPI(enText) || IsExportStringVerbatim(enText)))
                                 {
                                     objectIsOk = true;
                                     // clear out other locale keys since 'en' default is automatic for all locales
@@ -2760,7 +2764,7 @@ namespace ATT
                                         textLocales.Remove(locale);
                                     }
                                 }
-                                else if (!string.IsNullOrWhiteSpace(enText) && (retryLocaleThreshold <= 0 || textLocales.Count > retryLocaleThreshold))
+                                else if (!string.IsNullOrWhiteSpace(enText) && (retryLocaleThreshold <= 0 || textLocales.Count >= retryLocaleThreshold))
                                 {
                                     objectIsOk = true;
                                 }
