@@ -17,6 +17,7 @@ local PREYSEEKER_BOX_SYM = {
 
 local TrapNPCs = {	-- probably a ton of these, it seems unique per target & difficulty
 	247053,	-- Electrified Trap
+	268072,	-- Envenomed Trap
 	247070,	-- Gloomy Trap
 	247071,	-- Shimmering Trap
 	247072,	-- Vicious Trap
@@ -774,6 +775,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(93863),	-- Prey Complete - Nightmare #3
 			q(93864),	-- Prey Complete - Nightmare #4
 			q(97115),	-- First Preference Killing of the week
+
+			-- 12.1
+			-- q(98337),	-- Prey completed, Nightmare #1 / 1st per week
+			-- q(98547),	-- Prey completed, Nightmare #1 / 1st per week
+			-- q(98548),	-- Prey completed, Nightmare #2 / 2nd per week
+			-- q(98549),	-- Prey completed, Nightmare #3 / 3rd per week
 		})),
 		-- One-Time
 		n(QUESTS, {

@@ -202,6 +202,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					i(274965),	-- Ancient Curio (Combat) (QI!/QS!)
 					i(274970),	-- Ancient Curio (Utility) (QI!/QS!)
 					i(277506),	-- Codex of the Soul Coilers (QS!)
+					i(279012),	-- Cracked Keystone (QI!/QS!/CI!)
 				}),
 				n(WEAPONS, {
 					i(272270),	-- Bonedust Pestle
@@ -252,6 +253,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				q(97616, {	-- Corrosive Gifts: Corrosive Power
 					["provider"] = { "i", 277506 },	-- Codex of the Soul Coilers (QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				}),
+				q(97910, {	-- Cracked Keystone
+					["provider"] = { "i", 279012 },	-- Cracked Keystone (QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
 				}),
 			}),

@@ -423,7 +423,6 @@ root(ROOTS.Unsorted, {
 			i(278994),	-- Big Green Armageddon
 			i(279001),	-- Big Dark Armageddon
 			i(279002),	-- Big Red Armageddon
-			i(279012),	-- Cracked Keystone
 			i(279013),	-- [ph] SpiceWitch Chest - Blue
 			i(279014),	-- [ph] SpiceWitch Feet - Blue
 			i(279015),	-- [ph] SpiceWitch Waist - Blue

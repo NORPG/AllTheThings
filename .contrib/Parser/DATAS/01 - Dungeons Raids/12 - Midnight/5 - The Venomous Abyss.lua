@@ -242,6 +242,7 @@ local EncounterToLoot = {
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {
+	i(271440),	-- Greaves of the Noxious Depths
 };
 
 ------ Boss Functions ------
@@ -259,6 +260,10 @@ InstanceHelper.UpgradeMapping = {
 	[DIFFICULTY.RAID.NORMAL] = 5,
 	[DIFFICULTY.RAID.HEROIC] = 6,
 	-- #ENDIF
+}
+
+InstanceHelper.BossObjects = {
+	[EXPLORERS] = { 673637 },
 }
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
@@ -603,7 +608,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1320, {	-- The Venomous Abyss
 		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
-
+			-- LFR
+			-- N
+			-- H
+			hqt(98078, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil
+			hqt(98074, name(HEADERS.NPC, 261503)),	-- Frightmaw
+			-- M
 		},
 	}),
 }))
