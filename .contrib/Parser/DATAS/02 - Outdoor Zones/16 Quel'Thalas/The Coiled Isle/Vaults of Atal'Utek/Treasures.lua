@@ -60,10 +60,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				-- Unlocks
 				o(671500, {	-- Feather of Tok'jara
 					["coord"] = { 48.4, 25.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					["cost"] = {{ "i", 280006, 1}},	-- Spirit Loupe
+					["cost"] = { { "i", 280006, 1} },	-- Spirit Loupe
 					["groups"] = { i(278523) },	-- Feather of Tok'jara
 				}),
-				o(671498, {	--
+				o(671498, {	-- Venom-Worn Coffer
 					["description"] = "Spawn location seems to vary.",
 					["coords"] = {
 						{ 41.8, 10.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
@@ -76,17 +76,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 42.5, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						{ 47.5, 38.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					},
-					["cost"] = {{ "i", 280004, 1}},	-- Corroded Key
-					["groups"] = { i(278536) },	-- Mummified Lynx's Paw
+					["cost"] = { { "i", 280004, 1} },	-- Corroded Key
+					["groups"] = { i(278536) },	-- Mummified Lynx's Paw (QS!/QI!)
+				}),
+				o(671508, {	-- Jin'tal's Reliquary
+					["coord"] = {  36.8, 23.7, 2638 },	-- Profaned Mausoleum
+					["cost"] = { { "i", 280005, 1} },	-- Dispelling Charm
+					["groups"] = { i(278517) },	-- Lost Med'jai Amulet (QS!/QI!)
 				}),
 				-- o(OBJ, {	-- OBJ
 				-- 	["coord"] = { X, Y, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-				-- 	["cost"] = {{ "i", 280003, 1}},	-- Excising Knife
-				-- 	["groups"] = { i(ITEM) },	-- ITEM
-				-- }),
-				-- o(OBJ, {	-- OBJ
-				-- 	["coord"] = { X, Y, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-				-- 	["cost"] = {{ "i", ITEM, 1}},	-- ITEM
+				-- 	["cost"] = { { "i", ITEM, 1} },	-- ITEM
 				-- 	["groups"] = { i(ITEM) },	-- ITEM
 				-- }),
 				-- Repeatables

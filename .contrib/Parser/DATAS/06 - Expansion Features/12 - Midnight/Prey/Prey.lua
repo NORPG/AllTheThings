@@ -299,6 +299,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["timeline"] = { ADDED_12_1_0 },
 			}),
+			q(96474, {	-- Prey: Something for Astalor
+				["sourceQuests"] = { 96466 },	-- Prey: Anguish Island
+				["qg"] = 265267, -- Sanctum Attendant Ethrandil
+				["coord"] = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96525, {	-- Prey: Out of Our Depth
+				["sourceQuests"] = { 96474 },	-- Prey: Something for Astalor
+				["qg"] = 265267, -- Sanctum Attendant Ethrandil
+				["coord"] = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96503, {	-- Prey: A Ghostly Nightmare
+				["sourceQuests"] = { 96525 },	-- Prey: Out of Our Depth
+				["qg"] = 246231,	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96532, {	-- Prey: Attending the Attendant
+				["sourceQuests"] = { 96525 },	-- Prey: Out of Our Depth
+				["qg"] = 246231,	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 245824 },	-- Hunt Table

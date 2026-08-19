@@ -72,8 +72,6 @@ root(ROOTS.Unsorted, {
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
 			i(271693),	-- Congealed Venom
-			i(271863),	-- Ophidian Bile
-			i(271864),	-- Rotten Pneuma
 			i(271865),	-- Scavenged Weapon
 			i(271866),	-- Well-Worn Hatchet
 			i(271867),	-- Venom-Etched Sword
@@ -307,10 +305,7 @@ root(ROOTS.Unsorted, {
 			i(278340),	-- Blighted Pearl
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(278378),	-- Preyhunter's Scaled Bust
-			i(278517),	-- Lost Med'jai Amulet
-			i(278523),	-- Feather of Tok'jara
 			i(278534),	-- Eye of Szarith
-			i(278536),	-- Mummified Lynx's Paw
 			i(278573),	-- Crested Burnished Leafmimic
 			i(278574),	-- Crested Aqua Leafmimic
 			i(278575),	-- Crested Verdant Leafmimic

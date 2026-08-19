@@ -72,6 +72,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["provider"] = { "i", 278536 },	-- Mummified Lynx's Paw
 				}),
+				q(97669, {	-- The Protection of the Med'jai
+					["coord"] = { 36.8, 23.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["provider"] = { "i", 278517 },	-- Lost Med'jai Amulet
+				}),
 				-- Zone Repeatables
 				q(95520, {	-- Purging the Vaults
 					["qgs"] = {
