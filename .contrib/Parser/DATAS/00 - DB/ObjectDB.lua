@@ -32192,6 +32192,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[186278] = {
 		readable = "Burning Wreckage",
 		icon = 132594,
+		ignorewowhead = true,
 		text = {
 			en = "Burning Wreckage",
 			de = "Brennendes Wrack",
@@ -33641,6 +33642,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		readable = "Dark Iron Sabotage Plans",
 		icon = 134269,
 		model = 198457,
+		ignorewowhead = true,
 		text = {
 			en = "Dark Iron Sabotage Plans",
 		},
@@ -34059,6 +34061,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		readable = "Crystal Ward",
 		icon = 132787,
 		model = 191588,
+		ignorewowhead = true,
 		text = {
 			en = "Crystal Ward",
 		},
@@ -42573,6 +42576,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[191136] = {
 		readable = "Soaked Fertile Dirt",
 		icon = 134227,
+		ignorewowhead = true,
 		text = {
 			en = "Soaked Fertile Dirt",
 			de = "Durchtränkter Mutterboden",
@@ -49430,6 +49434,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[194103] = {
 		readable = "Shatterspear Armaments",
+		ignorewowhead = true,
 		text = {
 			en = "Shatterspear Armaments",
 		},
@@ -49452,6 +49457,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[194106] = {
 		readable = "Ancient Bear Statue",
+		ignorewowhead = true,
 		text = {
 			en = "Ancient Bear Statue",
 		},
@@ -50360,6 +50366,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[194461] = {
 		readable = "Stone Block",
 		icon = 135239,
+		ignorewowhead = true,
 		text = {
 			en = "Stone Block",
 			cn = "石块",
@@ -50965,6 +50972,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[195001] = {
 		readable = "Wolf Chains",
 		model = 199210,
+		ignorewowhead = true,
 		text = {
 			en = "Wolf Chains",
 		},
@@ -50987,6 +50995,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[195003] = {
 		readable = "Wolf Chains",
 		model = 199210,
+		ignorewowhead = true,
 		text = {
 			en = "Wolf Chains",
 		},
@@ -50994,6 +51003,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[195004] = {
 		readable = "Wolf Chains",
 		model = 199210,
+		ignorewowhead = true,
 		text = {
 			en = "Wolf Chains",
 		},
@@ -51144,6 +51154,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[195043] = {
 		readable = "Greymist Murloc Build Site",
+		ignorewowhead = true,
 		text = {
 			en = "Greymist Murloc Build Site",
 		},
@@ -51235,6 +51246,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[195057] = {
 		readable = "Devouring Artifact",
+		ignorewowhead = true,
 		text = {
 			en = "Devouring Artifact",
 		},
@@ -51824,6 +51836,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[195308] = {
 		readable = "Mysterious Snow Mound",
 		icon = 132387,
+		ignorewowhead = true,
 		text = {
 			en = "Mysterious Snow Mound",
 			cn = "神秘的雪堆",
@@ -55269,6 +55282,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[201964] = {
 		readable = "Aderic's Tomb",
+		ignorewowhead = true,
 		text = {
 			en = "Aderic's Tomb",
 		},
@@ -56895,6 +56909,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[202596] = {
 		readable = "Frazzlecraz Explosives",
 		model = 201156,
+		ignorewowhead = true,
 		text = {
 			en = "Frazzlecraz Explosives",
 		},
@@ -57988,6 +58003,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[202902] = {
 		readable = "Flameward",
 		icon = 135814,
+		ignorewowhead = true,
 		text = {
 			en = "Flameward",
 		},
@@ -58091,6 +58107,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[202954] = {
 		readable = "Rod of Subjugation",
 		model = 326711,
+		ignorewowhead = true,
 		text = {
 			en = "Rod of Subjugation",
 		},
@@ -58098,6 +58115,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[202955] = {
 		readable = "Rod of Subjugation",
 		model = 326711,
+		ignorewowhead = true,
 		text = {
 			en = "Rod of Subjugation",
 		},
@@ -58716,6 +58734,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[203091] = {
 		readable = "Ogre Outhouse",
 		icon = 236695,
+		ignorewowhead = true,
 		text = {
 			en = "Ogre Outhouse",
 		},
@@ -59045,12 +59064,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[203147] = {
 		readable = "Aviana's Burial Circle",
 		icon = 134814,
+		ignorewowhead = true,
 		text = {
 			en = "Aviana's Burial Circle",
 		},
 	},
 	[203148] = {
 		readable = "Horde Cage",
+		ignorewowhead = true,
 		text = {
 			en = "Horde Cage",
 		},
@@ -59103,6 +59124,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[203169] = {
 		readable = "Blaithe's Roost",
 		icon = 132914,
+		ignorewowhead = true,
 		text = {
 			en = "Blaithe's Roost",
 		},
@@ -59124,6 +59146,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[203171] = {
 		readable = "Huntress Illiona's Cage",
+		ignorewowhead = true,
 		text = {
 			en = "Huntress Illiona's Cage",
 		},
@@ -59311,6 +59334,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[203187] = {
 		readable = "Harpy Signal Fire",
 		model = 200932,
+		ignorewowhead = true,
 		text = {
 			en = "Harpy Signal Fire",
 		},
@@ -59604,6 +59628,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[203221] = {
 		readable = "The Ancient Brazier",
 		model = 200930,
+		ignorewowhead = true,
 		text = {
 			en = "The Ancient Brazier",
 		},
@@ -60190,6 +60215,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[203375] = {
 		readable = "Nemesis Crystal",
 		model = 202449,
+		ignorewowhead = true,
 		text = {
 			en = "Nemesis Crystal",
 		},
@@ -60445,6 +60471,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[203414] = {
 		readable = "Krom'gar \"Elf Killer\"",
+		ignorewowhead = true,
 		text = {
 			en = "Krom'gar \"Elf Killer\"",
 		},
@@ -61116,6 +61143,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[204019] = {
 		readable = "Makeshift Cage",
+		ignorewowhead = true,
 		text = {
 			en = "Makeshift Cage",
 		},
@@ -61291,6 +61319,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[204228] = {
 		readable = "Horn of the Ancients",
+		ignorewowhead = true,
 		text = {
 			en = "Horn of the Ancients",
 		},
@@ -61926,6 +61955,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[204403] = {
 		readable = "Chain Lever",
+		ignorewowhead = true,
 		text = {
 			en = "Chain Lever",
 		},
@@ -62059,6 +62089,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[204435] = {
 		readable = "Blackrock Holding Pen",
+		ignorewowhead = true,
 		text = {
 			en = "Blackrock Holding Pen",
 		},
@@ -62080,12 +62111,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[204441] = {
 		readable = "Blackrock Holding Pen",
+		ignorewowhead = true,
 		text = {
 			en = "Blackrock Holding Pen",
 		},
 	},
 	[204442] = {
 		readable = "Blackrock Holding Pen",
+		ignorewowhead = true,
 		text = {
 			en = "Blackrock Holding Pen",
 		},
@@ -62490,6 +62523,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[204966] = {
 		readable = "Scourge Bone Animus",
+		ignorewowhead = true,
 		text = {
 			en = "Scourge Bone Animus",
 		},
@@ -62947,6 +62981,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[205158] = {
 		readable = "Cultist Cage",
+		ignorewowhead = true,
 		text = {
 			en = "Cultist Cage",
 		},
@@ -66377,6 +66412,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[207103] = {
 		readable = "Elemental Gate",
+		ignorewowhead = true,
 		text = {
 			en = "Elemental Gate",
 		},
@@ -70836,6 +70872,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[208321] = {
 		readable = "Shrine of the Soulflayer",
 		icon = 237272,
+		ignorewowhead = true,
 		text = {
 			en = "Shrine of the Soulflayer",
 		},
@@ -71944,6 +71981,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[208860] = {
 		readable = "Empty Plaque",
 		icon = 133917,
+		ignorewowhead = true,
 		text = {
 			en = "Empty Plaque",
 		},
@@ -74231,6 +74269,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[209672] = {
 		readable = "Firework Launcher",
 		model = 532563,
+		ignorewowhead = true,
 		text = {
 			en = "Firework Launcher",
 		},
@@ -77487,6 +77526,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[210961] = {
 		readable = "Boat Planks",
 		model = 574915,
+		ignorewowhead = true,
 		text = {
 			en = "Boat Planks",
 		},
@@ -77500,12 +77540,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[210964] = {
 		readable = "Pei-Wu Forest Gate",
+		ignorewowhead = true,
 		text = {
 			en = "Pei-Wu Forest Gate",
 		},
 	},
 	[210965] = {
 		readable = "Mandori Village Gate",
+		ignorewowhead = true,
 		text = {
 			en = "Mandori Village Gate",
 		},
@@ -77842,6 +77884,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[211129] = {
 		readable = "Signal Flame",
+		ignorewowhead = true,
 		text = {
 			en = "Signal Flame",
 		},
@@ -83425,6 +83468,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[213652] = {
 		readable = "Cho Family Shrine",
+		ignorewowhead = true,
 		text = {
 			en = "Cho Family Shrine",
 		},
@@ -86234,6 +86278,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[214379] = {
 		readable = "Broken Incense Burner",
+		ignorewowhead = true,
 		text = {
 			en = "Broken Incense Burner",
 		},
@@ -87811,6 +87856,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[215195] = {
 		readable = "Twinspire munitions",
+		ignorewowhead = true,
 		text = {
 			en = "Twinspire munitions",
 		},
@@ -88435,6 +88481,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[215649] = {
 		readable = "Thunder Hold Munitions",
+		ignorewowhead = true,
 		text = {
 			en = "Thunder Hold Munitions",
 		},
@@ -95981,6 +96028,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[221022] = {
 		readable = "Timeless Chest",
 		model = 219372,
+		ignorewowhead = true,
 		text = {
 			en = "Timeless Chest",
 		},
@@ -109576,8 +109624,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[233157] = {
 		readable = "Abu'gar's Vitality",
+		model = 984261,
 		text = {
 			en = "Abu'gar's Vitality",
+			es = "Vitalidad de Abu'gar",
+			de = "Abu'gars Lebenskraft",
+			fr = "Vitalité d’Abu’gar",
+			it = "Vitalità di Abu'gar",
+			pt = "Vitalidade de Abu'gar",
+			ru = "Стойкость Абу'гара",
+			ko = "아부가르의 생명",
+			cn = "阿布加尔的活力",
+			tw = "阿布加爾的活力",
 		},
 	},
 	[233179] = {
@@ -110469,6 +110527,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 984264,
 		text = {
 			en = "Abu'gar's Missing Reel",
+			es = "Sedal desaparecido de Abu'gar",
+			mx = "Carrete perdido de Abu'gar",
+			de = "Abu'gars vermisste Angelspule",
+			fr = "Moulinet perdu d’Abu’Gar",
+			it = "Mulinello Perduto di Abu'gar",
+			pt = "Molinete Perdido de Abu'Gar",
+			ru = "Пропавшая катушка Абу'гара",
+			ko = "아부가르의 잃어버린 얼레",
+			cn = "阿布加尔丢失的线轮",
+			tw = "阿布加爾遺失的捲線器",
 		},
 	},
 	[233507] = {
@@ -111238,6 +111306,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 251883,
 		text = {
 			en = "Abu'Gar's Favorite Lure",
+			es = "Cebo favorito de Abu'Gar",
+			de = "Abu'gars Lieblingsköder",
+			fr = "Appât favori d’Abu’Gar",
+			it = "Esca Preferita di Abu'gar",
+			pt = "Isca Preferida de Abu'Gar",
+			ru = "Любимая приманка Абу'гара",
+			ko = "아부가르의 특제 미끼",
+			cn = "阿布加尔最爱的鱼饵",
 		},
 	},
 	[233645] = {
@@ -121634,6 +121710,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 1108690,
 		text = {
 			en = "Exposed Ley Crystal",
+			es = "Cristal Ley expuesto",
+			mx = "Cristal ley expuesto",
+			de = "Freigelegter Leykristall",
+			fr = "Cristal tellurique à nu",
+			it = "Cristallo di Faglia Esposto",
+			pt = "Cristal do Meridiano Exposto",
+			ru = "Открытый силовой кристалл",
+			ko = "지맥 수정",
+			cn = "暴露的魔网水晶",
+			tw = "顯露的脈能水晶",
 		},
 	},
 	[239910] = {
@@ -126174,6 +126260,12 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 1108688,
 		text = {
 			en = "Exposed Ley Crystal",
+			es = "Cristal Ley expuesto",
+			mx = "Cristal ley expuesto",
+			de = "Freigelegter Leykristall",
+			fr = "Cristal tellurique à nu",
+			it = "Cristallo di Faglia Esposto",
+			pt = "Cristal do Meridiano Exposto",
 		},
 	},
 	[241913] = {
@@ -126181,6 +126273,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 1108689,
 		text = {
 			en = "Exposed Ley Crystal",
+			es = "Cristal Ley expuesto",
+			mx = "Cristal ley expuesto",
+			de = "Freigelegter Leykristall",
+			fr = "Cristal tellurique à nu",
+			it = "Cristallo di Faglia Esposto",
+			pt = "Cristal do Meridiano Exposto",
+			ru = "Открытый силовой кристалл",
+			ko = "지맥 수정",
+			cn = "暴露的魔网水晶",
+			tw = "顯露的脈能水晶",
 		},
 	},
 	[241943] = {
@@ -133402,6 +133504,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[245661] = {
 		readable = "Can of Overheated Oil",
+		ignorewowhead = true,
 		text = {
 			en = "Can of Overheated Oil",
 		},
@@ -142204,7 +142307,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 1346354,
 		text = {
 			en = "Aluneth",
+			es = "Aluneth",
+			de = "Aluneth",
+			fr = "Aluneth",
+			it = "Aluneth",
+			pt = "Aluneth",
 			ru = "Алунет",
+			ko = "알루네스",
+			cn = "艾露尼斯",
+			tw = "亞魯涅斯",
 		},
 	},
 	[249818] = {
@@ -155143,8 +155254,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[253157] = {
 		readable = "Spirit Berries",
+		model = 840751,
 		text = {
 			en = "Spirit Berries",
+			es = "Bayas espirituales",
+			de = "Geisterbeeren",
+			fr = "Baies d’esprit",
+			it = "Bacche dello Spirito",
+			pt = "Frutinhas Espirituais",
+			ru = "Ягоды духов",
+			ko = "영혼 열매",
+			cn = "灵体果",
+			tw = "靈魂莓果",
 		},
 	},
 	[253161] = {
@@ -156080,6 +156201,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 353152,
 		text = {
 			en = "The Dreadblades",
+			es = "Hojas Pérfidas",
+			de = "Die Schreckensklingen",
+			fr = "Les lames d’effroi",
+			it = "Le Lame dell'Oscurità",
+			pt = "Os Alfanjes do Terror",
+			ru = "Клинки Ужаса",
+			ko = "공포의 검",
+			cn = "恐惧之刃",
+			tw = "驚懼雙刀",
 		},
 	},
 	[254125] = {
@@ -156884,42 +157014,49 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[254446] = {
 		readable = "Bottle of Arcwine",
+		ignorewowhead = true,
 		text = {
 			en = "Bottle of Arcwine",
 		},
 	},
 	[254491] = {
 		readable = "Nightborne Arms Cache",
+		ignorewowhead = true,
 		text = {
 			en = "Nightborne Arms Cache",
 		},
 	},
 	[254643] = {
 		readable = "Bottle of Arcwine",
+		ignorewowhead = true,
 		text = {
 			en = "Bottle of Arcwine",
 		},
 	},
 	[254645] = {
 		readable = "Bottle of Arcwine",
+		ignorewowhead = true,
 		text = {
 			en = "Bottle of Arcwine",
 		},
 	},
 	[254648] = {
 		readable = "Bottle of Arcwine",
+		ignorewowhead = true,
 		text = {
 			en = "Bottle of Arcwine",
 		},
 	},
 	[254650] = {
 		readable = "Bottle of Arcwine",
+		ignorewowhead = true,
 		text = {
 			en = "Bottle of Arcwine",
 		},
 	},
 	[254654] = {
 		readable = "Bottle of Arcwine",
+		ignorewowhead = true,
 		text = {
 			en = "Bottle of Arcwine",
 		},
@@ -195009,6 +195146,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[293211] = {
 		readable = "Stolen Idol of Krag'wa",
 		model = 1141734,
+		ignorewowhead = true,
 		text = {
 			en = "Stolen Idol of Krag'wa",
 		},
@@ -269121,6 +269259,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 1282673,
 		text = {
 			en = "Dislodged Dragoneye",
+			es = "Ojo de dragón desprendido",
+			mx = "Ojo de dragón removido",
+			de = "Ausgelöstes Drachenauge",
+			fr = "Œil de dragon délogé",
+			it = "Occhio del Drago Rimosso",
+			pt = "Olho-de-dragão removido",
+			ru = "Выбитый глаз дракона",
+			ko = "분리된 용의 눈",
+			tw = "脫落的龍眼",
 		},
 	},
 	[380532] = {
@@ -278293,6 +278440,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 5064153,
 		text = {
 			en = "Warcraft Rumble Machine",
+			es = "Máquina de Warcraft Rumble",
+			de = "Warcraft Rumble-Automat",
+			fr = "Borne Warcraft Rumble",
+			it = "Macchina di Warcraft Rumble",
+			pt = "Máquina de Warcraft Rumble",
+			ru = "Игровой автомат Rumble",
+			ko = "워크래프트 럼블 기계",
+			cn = "魔兽游戏机",
+			tw = "《魔獸兵團》遊戲機",
 		},
 	},
 	[384747] = {
@@ -281315,6 +281471,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 3936818,
 		text = {
 			en = "Rumble Coin Bag",
+			es = "Bolsa de monedas de Warcraft Rumble",
+			mx = "Bolsa de monedas Rumble",
+			de = "Rumble-Münzenbeutel",
+			fr = "Sac de pièces Rumble",
+			it = "Borsa di Monete di Rumble",
+			pt = "Bolsa de Moedas de Rumble",
+			ru = "Мешочек с монетами Rumble",
+			ko = "럼블 코인 가방",
+			cn = "魔兽游戏币袋",
+			tw = "兵團零錢袋",
 		},
 	},
 	[385959] = {
@@ -281964,6 +282130,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 4070769,
 		text = {
 			en = "Rumble Foil Bag",
+			es = "Caja de brillos de Warcraft Rumble",
+			mx = "Bolsa de láminas de Rumble",
+			de = "Rumble-Folientasche",
+			fr = "Sac de Rumble métallisés",
+			it = "Borsa di Fogli di Rumble",
+			pt = "Bolsa de Metalizados de Rumble",
+			ru = "Мешочек с оберткой Rumble",
+			ko = "럼블 박지 가방",
+			cn = "魔兽游戏箔纸袋",
+			tw = "兵團錫箔包裝袋",
 		},
 	},
 	[386154] = {
@@ -281983,6 +282159,9 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 4070769,
 		text = {
 			en = "Rumble Foil Bag",
+			es = "Caja de brillos de Warcraft Rumble",
+			mx = "Bolsa de láminas de Rumble",
+			de = "Rumble-Folientasche",
 		},
 	},
 	[386158] = {
