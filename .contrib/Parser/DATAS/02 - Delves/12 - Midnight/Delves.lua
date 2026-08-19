@@ -128,6 +128,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					{"o",584508}, -- Nemesis Strongbox
 					{"o",584509}, -- Nemesis Strongbox
 					{"o",584511}, -- Nemesis Strongbox
+					{"o",584519}, -- Heavy Trunk
 				},
 			}),
 			i(262392, {	-- Nibblesworth (PET!)
