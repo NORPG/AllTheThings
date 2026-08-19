@@ -2133,7 +2133,6 @@ root(ROOTS.Unsorted, {
 				i(163773),	-- Dark Mirror
 				i(163774),	-- Blackrock Plating
 				i(163830),	-- Gale Rider
-				i(163929),	-- Aether of the Abyss
 				i(164253),	-- Steel Strongbox
 				i(164254),	-- Steel Strongbox
 				i(164263),	-- Steel Strongbox
@@ -2161,7 +2160,6 @@ root(ROOTS.Unsorted, {
 				i(161017),	-- Secott's Storm Silver Bucket
 				i(161084),	-- Recovered Stormsong Produce
 				i(161324),	-- Zeth'jir Tidespear
-				i(161345),	-- Abhorrent Essence of the Abyss
 				i(161878),	-- Tiny Coin Purse
 			}),
 			filter(MISC, {	-- Grey
