@@ -45384,10 +45384,11 @@ q(10917,{coords={
 i(31800,{b=1})}}),
 q(10883,{coords={
 [111]={{54.7,44.3}}},lvl=30,qgs={18166},sourceQuests={10588}}),
-q(11096,{coords={
-[111]={{64,42}}},lvl=15,qgs={23449}}),
-q(11098,{coords={
-[111]={{64,42}}},lvl=15,qgs={23449},sourceQuests={11096}}),
+q(11096,{awp=20100,coords={
+[111]={{64,42}}},crs={22143,22144,22148,23022},lvl=15,qgs={23449}}),
+q(11098,{awp=20100,coords={
+[111]={{64,42}}},lvl=15,qgs={23449},sourceQuests={11096},g={
+i(32848,{awp=20001,f=55})}}),
 q(10553,{coords={
 [111]={{54.7,44.3}}},lvl=15,minReputation={934,0},qgs={18166},sourceQuests={10552}}),
 q(10024,{coords={
@@ -52614,7 +52615,7 @@ n(17901,{coords={
 q(9814,{coords={
 [102]={{32.9,48.9}}},lvl=10,qgs={18014},qis={24468},r=1,g={
 o(182095,{coords={
-[102]={{28.5,52.5}}}})}}),
+[102]={{28.5,52.5},{30.8,44.7}}}})}}),
 q(10994,{c={11},coords={
 [102]={{80.2,65.2}}},maps={76},qgs={22832},qis={32364},rwp=40001,sourceQuests={10993},u=2,g={
 o(185566,{coords={
@@ -111244,9 +111245,6 @@ crit(42434,{achID=13144,id=164})}}),
 q(52352,{isWorldQuest=1,lvl=50,g={
 crit(42643,{achID=13144,id=373})}})}),
 h(-63,{
-i(161344,{description="These are a World Drop in any zone and can be bought from the Auction House. Once you collect 20, combine them and use them on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley.",spellID=275121,g={
-mnt(275623,{b=1,coords={
-[942]={{73.5,23.6}}},crs={140474},itemID=161479,lvl=45,questID=53429})}}),
 i(163699,{b=1,coords={
 [942]={{69.2,68.8}}},crs={131663,133429,134147,134155,141901},lvl=45,r=2}),
 i(155838,{b=1}),
@@ -123299,7 +123297,7 @@ n(176066,{coords={
 [1670]={{46.6,77.2}}},sym={{"select","npcID",156822},{"isnt","repeatable"},{"pop"}}}),
 n(156690,{coords={
 [1670]={{47,23.6}}},g={
-s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
+s(112899,180136,{b=1,f=57,requireSkill=356,spellID=310674})}}),
 n(176197,{awp=90105,coords={
 [1670]={{51,43.4}}},g={
 i(188226,{b=1}),
@@ -125880,7 +125878,7 @@ r(331007,{b=1,itemID=183097,minReputation={2407,42000},requireSkill=202,skillID=
 s(111637,178991,{b=1,f=9,minReputation={2407,42000}})}}),
 n(175574,{coords={
 [1533]={{49.6,63.2}}},g={
-s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
+s(112899,180136,{b=1,f=57,requireSkill=356,spellID=310674})}}),
 n(171526,{coords={
 [1533]={{52.6,47.4}}},g={
 i(180788,{b=1,f=55,spellID=11009})}}),
@@ -164955,6 +164953,7 @@ n(257913,{coords={
 [2393]={{56.4,69.8}}},g={
 r(471005,{requireSkill=185}),
 r(818,{requireSkill=185}),
+r(1295534,{awp=120100,learnedAt=100,requireSkill=185,skillID=2908}),
 r(1226183,{learnedAt=60,requireSkill=185,skillID=2908}),
 r(1226194,{learnedAt=35,requireSkill=185,skillID=2908}),
 r(1226197,{learnedAt=35,requireSkill=185,skillID=2908}),
@@ -165437,6 +165436,9 @@ i(219934,{pvp=1})}}),
 q(96726,{awp=120007,coords={
 [2393]={{36.3,81.1}}},isWeekly=1,pvp=1,qgs={254971},g={
 i(275134,{pvp=1})}}),
+q(96808,{awp=120100,coords={
+[2393]={{36.3,81.1}}},isWeekly=1,pvp=1,qgs={254971},g={
+i(219934,{pvp=1})}}),
 q(96725,{awp=120007,coords={
 [2393]={{36.3,81.1}}},isWeekly=1,pvp=1,qgs={254971},g={
 i(275134,{pvp=1})}}),
@@ -165602,7 +165604,9 @@ q(94838,{coords={
 i(266314,{b=1,f=51,lvl=90,u=2}),
 i(266317,{b=1,f=52,lvl=90,u=2})}}),
 q(98234,{awp=120100,coords={
-[2393]={{48.9,64.6}}},qgs={256212},rwp=120200}),
+[2393]={{48.9,64.6}}},qgs={256212},rwp=120200,g={
+i(280097,{f=53,spellID=345229}),
+i(280118,{f=53,spellID=336126})}}),
 q(93755,{coords={
 [2393]={{49.1,64.6}}},isWeekly=1,lvl=90,qgs={256210}}),
 q(93753,{coords={
@@ -169473,7 +169477,9 @@ q(98515,{coords={
 q(97662,{coords={
 [2509]={{51.2,62.8}}},providers={{"i",278523}}}),
 q(97669,{coords={
-[2509]={{51.2,62.8}}},providers={{"i",278536}}}),
+[2509]={{36.8,23.7},{51.2,62.8}}},providers={{"i",278536}},qis={278517}}),
+q(97668,{coords={
+[2613]={{68.4,15.8}}},providers={{"i",278534}}}),
 q(95520,{coords={
 [2509]={{47.2,60.8}},
 [2512]={{58.7,45.8}}},isDaily=1,qgs={262798,267635}}),
@@ -169617,6 +169623,12 @@ i(278523)}}),
 o(671498,{coords={
 [2509]={{40.1,18.3},{41.5,53.4},{41.8,10.8},{42.5,54.6},{47.5,38.3},{52.2,54.6},{52.6,10.7},{53,53.4},{53.7,18.1}}},cost={{"i",280004,1}},description="Spawn location seems to vary.",g={
 i(278536)}}),
+o(671508,{coords={
+[2638]={{36.8,23.7}}},cost={{"i",280005,1}},g={
+i(278517)}}),
+o(649651,{coords={
+[2613]={{68.6,15.7}}},cost={{"i",280003,1}},g={
+i(278534)}}),
 o(649640,{description="Can be found randomly throughout the Vaults."}),
 o(649687,{description="Can be found randomly throughout the Vaults."})}),
 h(-58,{
@@ -169671,8 +169683,6 @@ ach(63358,{
 de(15283,{itemID=263873,spellID=1270747}),
 crit(110172,{achID=63358,id=7,questID=94856}),
 crit(116541,{achID=63639,id=2})}),
-ach(63381,{
-title(777)}),
 ach(63640,{
 crit(116542,{achID=63639,id=4})}),
 ach(63382,{questID=97138}),
@@ -169733,8 +169743,10 @@ ach(63167,{pvp=1}),
 ach(63359,{
 mnt(1297224,{itemID=275656}),
 crit(116540,{achID=63639,id=3})}),
-ach(63390),
-ach(63639)}),
+ach(63639),
+ach(63381,{
+title(777)}),
+ach(63390)}),
 flt(101,{
 p(5035,{coords={
 [2512]={{67.9,81.5},{70.6,78.7}}},crs={262248},itemID=270248,npcID=262248,spellID=1287603,g={
@@ -169794,7 +169806,11 @@ q(94804,{coords={
 [2512]={{51.6,49.8}}},isDaily=1,qgs={257598}}),
 q(94800,{coords={
 [2512]={{51.6,49.8}}},isDaily=1,qgs={257598},g={
-i(277992)}}),
+i(277992),
+i(277849),
+i(277847),
+i(274579),
+i(277848)}}),
 q(94796,{coords={
 [2512]={{51.6,49.8}}},isDaily=1,qgs={257598},g={
 i(278094)}}),
@@ -169997,7 +170013,7 @@ s(309709,276577,{f=3})}}),
 mnt(1299963,{cost={{"c",3316,8000}},itemID=276551,minReputation={2772,19}}),
 s(309942,277326,{cost={{"c",3316,5000}},f=22,minReputation={2772,20}}),
 s(309943,277327,{cost={{"c",3316,5000}},f=2,loc=41,minReputation={2772,20}})}})})}})}),
-ah(63390,{type="a",g={
+ah(63381,{type="a",g={
 n(255088,{coords={
 [2512]={{26.6,64.9}}},isDaily=1,questID=93718,g={
 s(309598,276172,{f=4,loc=40}),
@@ -170496,9 +170512,10 @@ q(97026,{providers={{"i",278070}},g={
 i(278084,{f=55})}}),
 q(97016,{coords={
 [2512]={{57.4,48.7}}},qgs={254599},sourceQuests={97026},g={
-i(277985,{f=55}),
 i(276124),
+i(277946,{f=55}),
 i(276117),
+i(277985,{f=55}),
 i(276126)}})}),
 h(-46,{
 h(-19,{crs={256631,257906,258916,258920,261109,261142,263456,264854,265237,265262,268049,268090},g={
@@ -170755,6 +170772,8 @@ o(654986,{coords={
 [2643]={{61,89.5},{62.6,52.7}},
 [2644]={{32.2,45.8}}},cost={{"i",275048,1}}}),
 o(654991,{description="Spawns randomly around the temples."}),
+o(653064,{description="Spawns randomly around the whole area once opted in to the Curse of the Isle.",g={
+i(274422)}}),
 o(656044,{description="Spawns randomly around coastal regions."}),
 o(656039,{description="Spawns randomly around the poisoned areas."}),
 o(656046,{coords={
@@ -170800,6 +170819,9 @@ i(280409,{f=55,spellID=1308593})}})}),
 h(-62,{
 q(95662,{coords={
 [2512]={{58,48.8}}},isWorldQuest=1}),
+q(93669,{coords={
+[2512]={{34.4,85.3}}},isWorldQuest=1,g={
+i(260419)}}),
 q(95794,{coords={
 [2645]={{77,41.9}}},isWorldQuest=1}),
 q(94574,{coords={
@@ -170874,16 +170896,8 @@ q(95451,{coords={
 [2512]={{58.1,47.7}}},isWorldQuest=1})}),
 h(-63,{
 flt(56,{
-i(275287),
 i(274781),
 i(275280),
-i(275286),
-i(275285),
-i(274777),
-i(275288),
-i(275284),
-i(275282),
-i(275289),
 i(278070)})}),
 h(-64,{
 flt(56,{
@@ -172564,7 +172578,6 @@ r(1236065,{b=1,cost={{"c",3316,1500},{"c",3258,150}},itemID=256741,minReputation
 r(1281348,{cost={{"c",3316,1500},{"c",3258,150}},itemID=268043,minReputation={2696,5},requireSkill=333,skillID=2909}),
 r(1237544,{b=1,cost={{"c",3316,1500},{"c",3263,150}},itemID=256647,minReputation={2696,5},requireSkill=165,skillID=2915}),
 r(1230864,{b=1,cost={{"c",3316,1500},{"c",3256,150}},itemID=258305,minReputation={2696,5},requireSkill=171,skillID=2906}),
-r(1295534,{cost={{"c",3316,1500}},itemID=251630,minReputation={2696,5},requireSkill=185,skillID=2908}),
 r(1230052,{b=1,cost={{"c",3316,1500},{"c",3261,150}},itemID=251629,minReputation={2696,5},requireSkill=773,skillID=2913}),
 i(250922,{b=1,cost={{"c",3316,750},{"c",3263,75}},minReputation={2696,6},questID=92371,requireSkill=165,spellID=1251672,type="ihqt"}),
 i(250924,{b=1,cost={{"c",3316,750},{"c",3264,75}},minReputation={2696,6},questID=92372,requireSkill=186,spellID=1251674,type="ihqt"}),
@@ -174130,8 +174143,7 @@ i(279520,{awp=120100,f=55,rwp=120200,sym={{"select","mapID",2537},{"pop"},{"wher
 m(2541,{awp=120001,icon=_.asset("Arcantina"),g={
 h(-12,{
 ach(61083),
-ach(63619,{awp=120100,g={
-crit(108598,{achID=63619,id=2,questID=95780})}}),
+ach(63619,{awp=120100}),
 ach(61082),
 ach(61081,{cost={{"i",251039,26}},description="NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",g={
 crit(108571,{achID=61081,id=1,races_disp={1}}),
@@ -174196,6 +174208,10 @@ o(572035,{coords={
 i(250878,{b=1})}}),
 de(9441,{itemID=253544,spellID=1256612}),
 crit(108603,{achID=61082,id=7})}}),
+q(95780,{awp=120100,coords={
+[2541]={{60.2,50.1}}},qgs={259335},g={
+de(26202,{itemID=278038,spellID=1303363}),
+crit(108598,{achID=63619,id=2})}}),
 q(95779,{awp=120100,coords={
 [2541]={{43.2,61.5}}},qgs={259343},g={
 o(667558,{type="AsGenericObjectContainer",g={
@@ -174263,6 +174279,9 @@ o(572029,{description="Located to the left of the path towards Omar the Unscarre
 i(250872,{b=1})}}),
 o(654977,{awp=120100,maps={441},sourceQuests={95779},g={
 i(275047)}}),
+o(655007,{awp=120100,coords={
+[111]={{74.2,53}}},sourceQuests={95780},g={
+i(275054)}}),
 o(572450,{coords={
 [2541]={{25.8,43.4}}},cost={{"i",250875,1}},questID=92378,g={
 crit(108610,{achID=61083,id=4})}}),
@@ -174372,6 +174391,7 @@ i(268116,{f=55,spellID=1281709})}),
 n(252873,{coords={
 [2541]={{42,50.1}}},g={
 de(9250,{cost={{"c",3316,150}},itemID=253176,spellID=1255728}),
+de(26202,{awp=120100,cost={{"c",3316,150}},itemID=278038,spellID=1303363}),
 de(9475,{cost={{"c",3316,500}},itemID=253598,spellID=1256817}),
 de(20679,{awp=120007,itemID=269316,sourceAchievements={61083},spellID=1285118}),
 de(9440,{cost={{"c",3316,150}},itemID=253543,spellID=1256611}),

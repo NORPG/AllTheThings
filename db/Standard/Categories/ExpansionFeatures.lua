@@ -39964,7 +39964,7 @@ mm(238837,{awp=110105,b=1,questID=86198}),
 mm(235695,{awp=110200,b=1,questID=82189}),
 mm(224769,{b=1,questID=82183}),
 mm(235687,{awp=110100,b=1,questID=82180}),
-mm(235692,{awp=110200,b=1,questID=82177}),
+mm(235692,{awp=110200,b=1,providers={{"i",223510}},questID=82177}),
 mm(235683,{awp=110100,b=1,questID=82173}),
 mm(225542,{b=1,questID=83308}),
 mm(224768,{b=1,questID=82171}),
@@ -42411,7 +42411,7 @@ crit(115706,{achID=63451,id=1,providers={{"n",268645}}}),
 crit(115707,{achID=63451,id=2,providers={{"n",268646}}})}}),
 ach(63416,{awp=120100,providers={{"n",268647}}}),
 ach(62134),
-ach(62143,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082},providers={{"s",1242005}},g={
+ach(62143,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082,268072},providers={{"s",1242005}},g={
 crit(112616,{achID=62351,id=3})}}),
 ach(62138,{providers={{"n",260848}},g={
 crit(112620,{achID=62351,id=7})}}),
@@ -42419,7 +42419,7 @@ ach(63643,{awp=120100,providers={{"n",270900}}})}),
 h(-29,{symselector=15,g={
 flt(50,{
 i(269005,{f=55}),
-i(255825,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082},f=55,spellID=1259472})}),
+i(255825,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082,268072},f=55,spellID=1259472})}),
 flt(56,{
 i(251283)}),
 i(269006,{f=55}),
@@ -42457,6 +42457,18 @@ q(91277,{coords={
 [2393]={{56.7,65.4}}},isWeekly=1,lvl=90,minReputation={2764,10},qgs={246231}}),
 q(96004,{awp=120100,coords={
 [2393]={{56.7,65.4}}},qgs={246231}}),
+q(96466,{awp=120100,coords={
+[2393]={{56.7,65.4}}},qgs={246231},sourceQuests={96004}}),
+q(96474,{awp=120100,coords={
+[2512]={{58.2,48.7}}},qgs={265267},sourceQuests={96466}}),
+q(96525,{awp=120100,coords={
+[2512]={{58.2,48.7}}},qgs={265267},sourceQuests={96474}}),
+q(96503,{awp=120100,coords={
+[2393]={{56.7,65.4}}},qgs={246231},sourceQuests={96525}}),
+q(96532,{awp=120100,coords={
+[2393]={{56.7,65.4}}},qgs={246231},sourceQuests={96525}}),
+q(96528,{awp=120100,coords={
+[2512]={{57,33.3}}},qgs={265529},sourceQuests={96532}}),
 q(95023,{awp=120100,coords={
 [2393]={{56.8,65.3}}},isWeekly=1,maxReputation={2808,10},qgs={245824}}),
 q(91114,{coords={
@@ -42645,9 +42657,9 @@ q(91228,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,maxReputation={2808,10},qgs={245824}}),
 q(91229,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,maxReputation={2808,10},qgs={245824}})}),
-n(258928,{awp=120100,description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",maps={2512},g={
-p(5126,{awp=120001,itemID=278572,npcID=269712,spellID=1305199}),
+n(258928,{awp=120100,cost={{"i",274422,1}},description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",maps={2512},g={
 mnt(1297407,{awp=120001,itemID=275659}),
+p(5126,{awp=120001,itemID=278572,npcID=269712,spellID=1305199}),
 toy(276207,{awp=120001})}}),
 h(-47,{
 cu(3392)}),

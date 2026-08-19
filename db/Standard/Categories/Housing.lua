@@ -365,7 +365,7 @@ hqt(95389,{awp=120007,isWeekly=1,g={
 i(269010)}}),
 q(98204,{awp=120100,coords={
 [2351]={{53.7,57.4}},
-[2352]={{52.7,37.6}}},description="Decor offered by the quest is on a rotation and is different per character on your account.\nYou can complete and obtain only 1 of 2 offered Decor Scenarios per Housing Area, per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",isWeekly=1,qgs={262726},g={
+[2352]={{52.7,37.6}}},description="Decor offered by the quest is on a rotation and is different per character on your account.\nYou can complete and obtain only 1 of 2 offered Decor Scenarios per Housing Area, per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",isWeekly=1,maps={0},qgs={262726},g={
 i(274481),
 de(10896,{itemID=255712,spellID=1259323}),
 de(9627,{itemID=253703,spellID=1257073}),
@@ -375,6 +375,7 @@ de(18796,{itemID=267205,spellID=1279664}),
 de(15286,{itemID=263876,spellID=1270751}),
 de(26494,{itemID=278701,spellID=1305436}),
 de(18960,{itemID=267435,spellID=1280494}),
+de(8990,{itemID=252042,spellID=1254107}),
 de(26492,{itemID=278696,spellID=1305431}),
 de(18880,{itemID=267355,spellID=1280260}),
 de(1907,{itemID=245991,spellID=1240276}),
@@ -391,9 +392,13 @@ de(1154,{itemID=253481,spellID=1256475}),
 de(10368,{itemID=254561,spellID=1258213}),
 de(9290,{itemID=253397,spellID=1256291}),
 de(5796,{itemID=249923,spellID=1250092})}})}}),
+q(96780,{awp=120100,coords={
+[2352]={{55.1,43.6}}},qgs={263258}}),
 q(95387,{awp=120100,coords={
 [2351]={{54.2,56}},
 [2352]={{53.1,38.1}}},qgs={260485},repeatable=1}),
+q(97073,{awp=120100,coords={
+[2352]={{55.2,43.6}}},qgs={267856}}),
 q(92578,{coords={
 [84]={{56.1,77.1}},
 [85]={{52.9,89}},
@@ -979,7 +984,10 @@ de(25103,{awp=120100,crs={267794,267795},itemID=277149,spellID=1301704}),
 de(25122,{awp=120100,crs={267794,267795},itemID=277163,spellID=1301730}),
 i(276246,{awp=120100,cost={{"c",3363,10}},crs={267794,267795},spellID=1299046}),
 de(25105,{awp=120100,crs={267794,267795},itemID=277138,spellID=1301691}),
-de(25101,{awp=120100,crs={267794,267795},itemID=277142,spellID=1301698})}}),
+de(25101,{awp=120100,crs={267794,267795},itemID=277142,spellID=1301698}),
+i(271717,{awp=120100,crs={263258},f=55,spellID=1289374}),
+de(4426,{awp=120100,crs={263258},itemID=248404,spellID=1247072}),
+i(276297,{awp=120100,crs={267856},spellID=1299345})}}),
 h(-58,{awp=110207,g={
 n(255654,{coords={
 [2352]={{41.6,61.8}}},g={
@@ -1412,10 +1420,14 @@ n(255218,{coords={
 [2352]={{52.2,37.8}}}}),
 n(255216,{coords={
 [2352]={{52.2,37.8}}}}),
+n(263258,{awp=120100,coords={
+[2352]={{55.1,43.6}}}}),
 n(255213,{coords={
 [2352]={{52,38.4}}}}),
 n(257321,{coords={
 [2352]={{52,38.5}}}}),
+n(267856,{awp=120100,coords={
+[2352]={{55.2,43.6}}}}),
 n(255942,{
 i(260588,{f=55,lvl=37,spellID=225737})}),
 n(255104,{coords={
@@ -1424,10 +1436,10 @@ n(256750,{coords={
 [2352]={{58.3,61.7}}}}),
 n(255519,{coords={
 [2352]={{51.9,38.7}}}}),
-n(255221,{coords={
-[2352]={{53.5,40.9}}}}),
 n(267795,{awp=120100,coords={
 [2352]={{53.8,41.7}}}}),
+n(255221,{coords={
+[2352]={{53.5,40.9}}}}),
 n(255203,{coords={
 [2352]={{52,38.2}}}})})}}),
 m(2351,{awp=110207,g={
