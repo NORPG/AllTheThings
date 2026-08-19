@@ -92,6 +92,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				-- Repeatables
 				o(649640, {	-- Soulcoiler's Cache
 					["description"] = "Can be found randomly throughout the Vaults.",
+					["groups"] = {
+						i(279550),	-- Potion of Venomous Return
+					},
 				}),
 				o(649687, {	-- Soulcoiler's Trove
 					["description"] = "Can be found randomly throughout the Vaults.",

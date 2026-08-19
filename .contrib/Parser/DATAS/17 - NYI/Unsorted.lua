@@ -115,10 +115,8 @@ root(ROOTS.Unsorted, {
 			i(274784),	-- Seaside Tiki Frondtree
 			i(274786),	-- Seaside Waterfall Basin
 			i(274788),	-- Seaside Depths Porthole
-			i(274801),	-- Envenomed Snakefang
 			i(274803),	-- Envenomed Trollsplitter
 			i(274804),	-- Envenomed Elfcleaver
-			i(274805),	-- Envenomed Chopper
 			i(274806),	-- Envenomed Gut-Puncher
 			i(274807),	-- Envenomed Ritualizer
 			i(274808),	-- Envenomed Umbral Claymore
@@ -161,9 +159,7 @@ root(ROOTS.Unsorted, {
 			i(276912),	-- Middle Fragment of Ulantu's Log
 			i(276914),	-- End Fragment of Ulantu's Log
 			i(277525),	-- Ulantu's Belongings
-			i(278374),	-- Preyhunter's Fanged Bust
 			i(279574),	-- Preyhunter's Hero Chest
-			i(278378),	-- Preyhunter's Scaled Bust
 			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
 			i(275571),	-- [PH] Broomstick Spice - Grey
@@ -260,20 +256,10 @@ root(ROOTS.Unsorted, {
 			i(277482),	-- Ouroboric Cycle
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
-			i(277937),	-- Balanced Offering
-			i(277938),	-- Virulent Offering
-			i(277939),	-- Volatile Offering
-			i(277940),	-- Fragile Offering
-			i(277941),	-- Eerie Offering
-			i(277942),	-- Odious Offering
-			i(277943),	-- Pestilent Offering
-			i(277944),	-- Phlegmatic Offering
-			i(277945),	-- Melancholic Offering
 			i(277955),	-- Ethereal Bead Strand
 			i(277990),	-- Cursemail Gauntlets
 			i(278044),	-- Hanging Candles
 			i(278050),	-- Corrosive Bijou
-			i(278095),	-- Liver Pulp
 			i(278099),	-- Malt
 			i(278100),	-- Grain
 			i(278106),	-- DNT Coiled Color Changer
@@ -283,7 +269,6 @@ root(ROOTS.Unsorted, {
 			i(278113),	-- DNT Ula'tek Pole Dummy D
 			i(278114),	-- DNT Ula'tek Pole Dummy E
 			i(278115),	-- DNT Ula'tek Pole Dummy F
-			i(278154),	-- Hooked Net Trap
 			i(278193),	-- Aqiri Mandible
 			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
 			i(278284),	-- Nebulous Voidcache: Ula'tek
@@ -297,8 +282,6 @@ root(ROOTS.Unsorted, {
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
-			i(278374),	-- Preyhunter's Fanged Bust
-			i(278378),	-- Preyhunter's Scaled Bust
 			i(278573),	-- Crested Burnished Leafmimic
 			i(278574),	-- Crested Aqua Leafmimic
 			i(278575),	-- Crested Verdant Leafmimic
@@ -496,7 +479,6 @@ root(ROOTS.Unsorted, {
 			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
-			i(279207),	-- Blackened Sludgefish
 			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
 			i(279290),	-- Fang Lover's
@@ -523,7 +505,6 @@ root(ROOTS.Unsorted, {
 			i(279443),	-- Aquatic Gloomcap
 			i(279444),	-- Snowy Gloomcap
 			i(279445),	-- Sunny Gloomcap
-			i(279449),	-- Hex Troll Mask Fragment
 			i(279455),	-- K'areshi Tea Cup
 			i(279458),	-- Rock Goblet
 			i(279475),	-- Mutagenitor's Feather
@@ -547,7 +528,6 @@ root(ROOTS.Unsorted, {
 			i(279547),	-- Junkyard Crafter's Vest
 			i(279548),	-- Villager's Labor Vest
 			i(279549),	-- Witch-Hunter's Undercoat
-			i(279550),	-- Potion of Venomous Return
 			i(279551),	-- Radical's Gilded Vestment
 			i(279579),	-- Cruel Warrior's Blade
 			i(279590),	-- Venomous Champion's Illustrious Banner
@@ -1094,7 +1074,6 @@ root(ROOTS.Unsorted, {
 				i(272893),	-- Icy Harness
 				i(259472),	-- Lost Revantusk Possessions
 				i(267381),	-- Official G.G.R. Rehydration Container
-				i(273013),	-- Void-Permeated Hide Scrap
 				i(267380),	-- Volatile Pink Brightbursts
 				i(260892),	-- "Arcane Ranger" Kit
 				i(262757),	-- "Greater Metamorph" Enhancement

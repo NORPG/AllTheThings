@@ -2885,6 +2885,7 @@ i(272892);	-- Shattered Gem
 i(272110);	-- Singed Propaganda Leaflet
 i(272051);	-- Sticky Propaganda Scroll
 i(272115);	-- Smashed Shield Emitter
+i(273013);	-- Void-Permeated Hide Scrap
 i(272116);	-- Water-Logged Transaction Scroll
 
 ------------------

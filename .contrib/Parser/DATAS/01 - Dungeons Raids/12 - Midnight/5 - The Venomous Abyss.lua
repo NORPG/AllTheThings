@@ -411,8 +411,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				BossOnly(COILED_ALTAR, {
 					i(279131),	-- Pillar of the Coiled Isle (DECOR!)
-					i(275937),	-- Hex Lord's Visage (COSMETIC!)
 					i(275938),	-- Hex Lord's Gaze (COSMETIC!)
+					i(279449, {	-- Hex Troll Mask Fragment
+						i(275937),	-- Hex Lord's Visage (COSMETIC!)
+					}),
 				}),
 				BossOnly(ULATEK, {
 					i(279500),	-- "Rage of the Shackled" Mural (DECOR!)
@@ -486,9 +488,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					}),
 				}),
 				n(QUESTS, {
-					-- q(, {	-- The Venomous Abyss: Deception Unmasked [N]
-					-- 	["qg"] = 262667,	-- Zul'jarra
-					-- }),
+					q(98226, {	-- The Venomous Abyss: Deception Unmasked [N]
+						["qg"] = 262667,	-- Zul'jarra
+					}),
 				}),
 				ZoneDrops({}),
 				Boss(NEKZALI),
@@ -555,9 +557,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					}),
 				}),
 				n(QUESTS, {
-					-- q(, {	-- The Venomous Abyss: Deception Unmasked [M]
-					-- 	["qg"] = 262667,	-- Zul'jarra
-					-- }),
+					q(98229, {	-- The Venomous Abyss: Deception Unmasked [H]
+						["qg"] = 262667,	-- Zul'jarra
+					}),
 				}),
 				ZoneDrops({}),
 				Boss(NEKZALI, {
@@ -610,6 +612,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["groups"] = {
 			-- LFR
 			-- N
+			--98083 Noxiss Venomcrest normal?
+			--98087 venomweaver normal?
+			--98097 coiled alter
+			--97980 Ula'Tek normal?
+			hqt(98079, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			hqt(98091, name(HEADERS.NPC, 266538)),	-- Shriekcoil
+			hqt(98075, name(HEADERS.NPC, 261503)),	-- Frightmaw
 			-- H
 			hqt(98078, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil

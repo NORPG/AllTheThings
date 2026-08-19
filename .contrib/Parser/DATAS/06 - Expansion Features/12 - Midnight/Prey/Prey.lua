@@ -447,9 +447,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			},
 			["cost"] = { { "i", 274422, 1 } },	-- Ossified Relic
 			["groups"] = {
-				i(275659), -- Hexflame Reaver (MOUNT!)
-				i(278572), -- Pale Hexscale (PET!)
-				i(276207), -- Preyhunter's Masquerade
+				i(275659),	-- Hexflame Reaver (MOUNT!)
+				i(278154),	-- Hooked Net Trap (DECOR!)
+				i(278572),	-- Pale Hexscale (PET!)
+				i(278374),	-- Preyhunter's Fanged Bust (DECOR!)
+				i(276207),	-- Preyhunter's Masquerade
+				i(278378),	-- Preyhunter's Scaled Bust (DECOR!)
 			},
 		}),
 		n(REWARDS, {

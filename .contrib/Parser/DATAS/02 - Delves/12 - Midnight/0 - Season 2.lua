@@ -187,6 +187,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 
 						-- }),
 					}),
+					filter(SHIELDS, {
+						i(272276),	-- Wailing Bulwark
+					}),
 				}),
 				filter(COSMETIC, {
 					i(276164),	-- Corroded Patagia (COSMETIC!)
@@ -246,6 +249,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["maps"] = { VENOMFALL_DEEPS },
 					["groups"] = { i(275988) },	-- Corrosive Victory (TOY!)
+				}),
+				q(96612, {	-- Ancient Curiosity: Combat
+					["provider"] = { "i", 274965 },	-- Ancient Curio (QI!/QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
 				}),
 				q(96615, {	-- Ancient Curiosity: Utility
 					["provider"] = { "i", 274970 },	-- Ancient Curio (QI!/QS!)

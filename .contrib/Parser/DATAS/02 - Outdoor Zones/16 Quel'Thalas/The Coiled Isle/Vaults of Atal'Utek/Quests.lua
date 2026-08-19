@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["provider"] = { "i", 278536 },	-- Mummified Lynx's Paw
 				}),
-				q(97669, {	-- The Protection of the Med'jai
+				q(97661, {	-- The Protection of the Med'jai
 					["coord"] = { 36.8, 23.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["provider"] = { "i", 278517 },	-- Lost Med'jai Amulet
 				}),
@@ -91,6 +91,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },		-- Talon Commander Zela
 					},
 					["isDaily"] = true,
+				}),
+				q(96641, {	-- Relentless Strikes
+					["qg"] = 272109, -- Hawkeye Socho
+					["isWeekly"] = true,
+					["coord"] = { 46.5, 65.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				}),
 				q(98419, {	-- Shoulder to Shoulder
 					["sourceQuest"] = 98388,	-- Into the Vaults of Atal'Utek
@@ -122,11 +127,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 
 					-- },
 					["groups"] = {
-						q(95972, {	-- Ash to Ash
+						q(95972, {	-- Temple Patrol: Ash to Ash
 							["coord"] = { 43.9, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["qg"] = 263346,	-- Er'inye
 						}),
-						q(95952, {	-- Breath and Bile
+						q(95952, {	-- Temple Patrol: Breath and Bile
 							["coord"] = { 44.4, 53.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["qg"] = 263472,	-- Er'inye
 							["groups"] = {
@@ -134,32 +139,40 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								i(271863),	-- Ophidian Bile
 							},
 						}),
-						q(95573, {	-- Broken Bonds
+						q(95573, {	-- Temple Patrol: Broken Bonds
 							["coord"] = { 49.4, 56.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							-- ["qg"] = ??,
 						}),
-						q(95985, {	-- Calming the Dead
+						q(95985, {	-- Temple Patrol: Calming the Dead
 							["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							-- ["qg"] = ??,
 						}),
-						q(95987, {	-- Laid to Rest
+						q(95987, {	-- Temple Patrol: Laid to Rest
 							["coords"] = {
 								{ 50.1, 38.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 								{ 52.6, 45.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							},
 							["qg"] = 263339,	-- Tortured Spirit
 						}),
-						q(95598, {	-- Slay Children of Ula'tek
+						q(95598, {	-- Temple Patrol: Slay Children of Ula'tek
 							["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["qg"] = 261973,	-- Fading Spirit
 						}),
-						q(95962, {	-- Vengeance for the Dead
+						q(95580, {	-- Temple Patrol: Slay the Restless
+							["coord"] = { 53.0, 50.66, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						}),
+						q(95962, {	-- Temple Patrol: Vengeance for the Dead
 							["coord"] = { 52.1, 32.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["qg"] = 263336,	-- Vengeful Spirit
 						}),
 						-- TODO: add more
 					},
 				})),
+				filter(MISC, {
+					o(642203, {	-- Repair Supplies
+						i(269938),	-- Repair Supplies
+					}),
+				}),
 				n(REWARDS, {
 					i(273000),	-- Corrosive Soul
 					i(274374),	-- Trovehunter's Bounty
