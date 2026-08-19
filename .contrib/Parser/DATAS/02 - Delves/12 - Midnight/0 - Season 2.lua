@@ -114,6 +114,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				--Combat
 				i(249223),	-- Corrosive Bilespear
 				i(271132),	-- Essence Trap
+				i(249219),	-- Ouroboric Curse
 				--Utility
 				i(249227),	-- Dundun's Favor
 				i(249228),	-- Soul-Cracking Dreamcatcher
@@ -178,6 +179,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(272262),	-- Pledgebearer's Splints
 					}),
 					filter(TRINKET_F, {
+						i(251785),	-- Void-Reaper's Libram
 						-- ["groups"] = sharedData({
 						-- 	["providers"] = {
 						-- 	},
@@ -185,6 +187,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 
 						-- }),
 					}),
+				}),
+				filter(COSMETIC, {
+					i(276164),	-- Corroded Patagia (COSMETIC!)
 				}),
 				filter(MISC, {
 					i(273000),	-- Corrosive Soul

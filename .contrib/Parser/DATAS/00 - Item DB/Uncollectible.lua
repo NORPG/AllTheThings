@@ -2912,6 +2912,7 @@ i(280182);	-- Coiled Curry
 i(274951);	-- Corroded Scale
 i(279157);	-- Frayed Nomad's Cord
 i(280183);	-- Harrier Hotcakes
+i(279152);	-- Intact Snake Head
 i(279153);	-- Large Trophy
 i(279160);	-- Mud-Caked Footwraps
 i(274954);	-- Pristine Fang

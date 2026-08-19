@@ -10,7 +10,6 @@ root(ROOTS.Unsorted, {
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
 			i(247776),	-- Glowing Zangarshroom Cup
-			i(249219),	-- Ouroboric Curse
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
@@ -145,7 +144,6 @@ root(ROOTS.Unsorted, {
 			i(274991),	-- Seaside Fire Pit
 			i(275030),	-- Slugg's Favorite Fishing Rod
 			i(275053),	-- Kobold Candle Collection
-			i(275054),	-- Wooden Toy Sword
 			i(275062),	-- Illusion: Venomcoil
 			i(275063),	-- [PH] Taretha Axe - Black
 			i(275064),	-- [PH] Taretha Axe - Blue
@@ -182,7 +180,6 @@ root(ROOTS.Unsorted, {
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
-			i(276164),	-- Corroded Patagia
 			i(276186),	-- Totally Not Stolen Powder
 			i(276198),	-- Shellman's 195
 			i(276205),	-- Legitimate Shipment of Swivel Guns
@@ -282,7 +279,6 @@ root(ROOTS.Unsorted, {
 			i(277946),	-- Choleric Offering
 			i(277955),	-- Ethereal Bead Strand
 			i(277990),	-- Cursemail Gauntlets
-			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
 			i(278050),	-- Corrosive Bijou
 			i(278095),	-- Liver Pulp
@@ -502,7 +498,6 @@ root(ROOTS.Unsorted, {
 			i(279149),	-- [ph] SpiceWitch Head 02 - Blue
 			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
-			i(279152),	-- Intact Snake Head
 			i(279154),	-- Large Leaf
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
 			i(279156),	-- [ph] SpiceWitch Head 02 - Grey
