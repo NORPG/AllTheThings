@@ -153,6 +153,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",584511}, -- Nemesis Strongbox
@@ -179,6 +180,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584503}, -- Grand Sanctified Spoils
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",618495}, -- Nullaeus Cache
@@ -196,6 +198,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",584511}, -- Nemesis Strongbox
@@ -222,6 +225,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",584511}, -- Nemesis Strongbox
@@ -263,6 +267,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",584511}, -- Nemesis Strongbox
