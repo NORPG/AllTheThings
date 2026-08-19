@@ -3926,10 +3926,23 @@ local function OnLOOT_READY()
 			end
 		end
 
+		-- make sure all the missing loot is actually Sourced somewhere before reporting it
+		if next(missingLootItems) then
+			local o
+			for itemID in pairs(missingLootItems) do
+				o = SearchForObject("itemID", itemID)
+				-- don't report missing items when verifying loot, we probably don't care about sourcing them
+				if o._missing then
+					missingLootItems[itemID] = nil
+					app.PrintDebug("removed missing scanned loot",app:SearchLink(o))
+				end
+			end
+		end
+
 		-- report loot not linked to this object
 		if next(missingLootItems) then
 			reportData = reportData or BuildGenericReportData(objRef, id)
-			reportData.MissingLoot = "Lootable Object missing confirmed Loot!"
+			reportData.MissingLoot = "Lootable Object missing confirmed Sourced Loot!"
 			reportData.objectID = id
 			reportData.MissingLootItems = app.StringifyTable(missingLootItems)
 			reportData.LootCurrencies = app.StringifyTable(loots.currency)
