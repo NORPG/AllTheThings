@@ -15,20 +15,17 @@ local ULATEK = 2895;
 local EncounterToCRS = {
 	[NEKZALI] = { 259927 },	-- Nek'zali the Soulcoiler
 	[ENTOMBED] = {
-		258557,
-		258558,
+		258557,	-- Breath of Ula'tek
+		258558,	-- Blood of Ula'tek
 	},
+	[EXPLORERS] = {
+		261835, -- First Mate Nama
+		261843, -- Scrollsage Iku
+		261848, -- Trader Gebbo
+	},
+	[SSZORAK] = { 257347 },
 	--[[
 	[VASHNIK] = { 1 },
-	[EXPLORERS] = {
-		1,
-		1,
-		1,
-		1,
-	},
-	[SSZORAK] = {
-		1,
-	},
 	[TWIN_FANGS] = { 1 },
 	[COILED_ALTAR] = { 1 },
 	[ULATEK] = { 1 },
@@ -264,6 +261,8 @@ InstanceHelper.UpgradeMapping = {
 
 InstanceHelper.BossObjects = {
 	[EXPLORERS] = { 673637 },
+	[TWIN_FANGS] = { 673657 },
+	[ULATEK] = { 673428 },
 }
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
@@ -399,7 +398,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(ENTOMBED, {
 					i(264716),	-- Hexed Tomb Brazier (DECOR!) [NYI??]
 				}),
-				BossOnly(VASHNIK),
+				BossOnly(VASHNIK, {
+					i(272361),	-- Venomous Pyre (DECOR!)
+				}),
 				BossOnly(EXPLORERS, {
 					i(279118),	-- Lost Explorers Mailbox (DECOR!)
 				}),
@@ -612,13 +613,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["groups"] = {
 			-- LFR
 			-- N
-			--98083 Noxiss Venomcrest normal?
-			--98087 venomweaver normal?
-			--98097 coiled alter
-			--97980 Ula'Tek normal?
+			hqt(98083, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98079, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98091, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			hqt(98075, name(HEADERS.NPC, 261503)),	-- Frightmaw
+			hqt(98087, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
+			hqt(98097, name(HEADERS.Encounter, COILED_ALTAR)),	-- Coiled Altar
+			hqt(97980, name(HEADERS.Encounter, ULATEK)),	-- Ula'tek
 			-- H
 			hqt(98078, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil
