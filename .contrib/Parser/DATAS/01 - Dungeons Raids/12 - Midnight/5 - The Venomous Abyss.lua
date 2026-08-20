@@ -557,7 +557,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					}),
 				}),
 				n(QUESTS, {
-					q(98229, {	-- The Venomous Abyss: Deception Unmasked [H]
+					q(98229, {	-- The Venomous Abyss: Deception Unmasked [M]
 						["qg"] = 262667,	-- Zul'jarra
 					}),
 				}),

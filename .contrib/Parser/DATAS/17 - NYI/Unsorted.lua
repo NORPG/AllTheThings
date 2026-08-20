@@ -172,10 +172,6 @@ root(ROOTS.Unsorted, {
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
-			i(276186),	-- Totally Not Stolen Powder
-			i(276198),	-- Shellman's 195
-			i(276205),	-- Legitimate Shipment of Swivel Guns
-			i(276206),	-- Leagally Sourced Cannon Shot
 			i(276234),	-- Vibrant Venomfang
 			i(276405),	-- [PH] Rainbow Axe - 1h - Blue
 			i(276406),	-- [PH] Rainbow Axe - 1h - Green
@@ -468,7 +464,6 @@ root(ROOTS.Unsorted, {
 			i(279149),	-- [ph] SpiceWitch Head 02 - Blue
 			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
-			i(279154),	-- Large Leaf
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
 			i(279156),	-- [ph] SpiceWitch Head 02 - Grey
 			i(279158),	-- [ph] SpiceWitch Head 02 - Grey (Hair Vis)

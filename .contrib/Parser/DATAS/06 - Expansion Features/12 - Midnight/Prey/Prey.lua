@@ -184,6 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			ach(62143, {["crs"]=TrapNPCs}),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me
 			ach(63643, {	-- You Guys, Again?
+				["cr"] = 261796,	-- Pack Scout
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 		}),
@@ -328,7 +329,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["sourceQuests"] = { 96532 },	-- Prey: Attending the Attendant
 				["qg"] = 265529, -- Sanctum Attendant Ethrandil
 				["coord"] = { 57.0, 33.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["isDaily"] = true,
 				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = { i(274422) },	-- 100x Ossified Relic
 			}),
 		}),
 		n(QUESTS, sharedData({
@@ -451,7 +454,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				i(278154),	-- Hooked Net Trap (DECOR!)
 				i(278572),	-- Pale Hexscale (PET!)
 				i(278374),	-- Preyhunter's Fanged Bust (DECOR!)
-				i(276207),	-- Preyhunter's Masquerade
+				i(276207),	-- Preyhunter's Masquerade (TOY!)
 				i(278378),	-- Preyhunter's Scaled Bust (DECOR!)
 			},
 		}),

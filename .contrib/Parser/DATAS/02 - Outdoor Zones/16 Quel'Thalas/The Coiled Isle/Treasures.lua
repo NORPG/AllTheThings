@@ -9,14 +9,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				header(HEADERS.Object, 619906, {	-- Abandoned Amani Privateer's Cache
 					["description"] = "1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
 					["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- General area where everything related to the treasure happens
-					["crs"] = {
-						258076,	-- Hungry Dolphin
-						258255,	-- Helpful Dolphin
-					},
+					["cr"] = 258255,	-- Helpful Dolphin
 					["groups"] = {
 						o(619768, {	-- Grisly Cod Pool
 							["coord"] = { 73.4, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(265525) },	-- Grisly Morsel
+						}),
+						n(258076, {	-- Hungry Dolphin
+							["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["cost"] = { { "i", 265525, 1 } },	-- 1x Grisly Morsel
 						}),
 						o(619921, {	-- Waterlogged Crate
 							["coord"] = { 73.1, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -59,9 +60,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 							["groups"] = { i(271815) },	-- Luminescent Pearl
 						}),
-						hqt(96001, { ["name"] = "Nacretta has taken the Luminescent Pearl.", }),	-- Triggered after Nacretta spots the Luminescent Pearl
-						hqt(96002, { ["name"] = "Nacretta has Dropped the Key.", }),	-- Triggered after the Dropped Key spawns
+						hqt(96001, {	-- Triggered after Nacretta spots the Luminescent Pearl
+							["name"] = "Nacretta has taken the Luminescent Pearl",
+							["cost"] = { { "i", 271815, 1 } },	-- 1x Luminescent Pearl
+						}),
+						hqt(96002, { 	-- Triggered after the Dropped Key spawns
+							["name"] = "Nacretta has Dropped the Key",
+							["sourceQuest"] = 96001,	-- Nacretta has taken the Luminescent Pearl
+						}),
 						o(649082, {	-- Dropped Key
+							["sourceQuest"] = 96002,	-- Nacretta has Dropped the Key
 							["coord"] = { 70.6, 77.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(271881) },	-- Dropped Key
 						}),
