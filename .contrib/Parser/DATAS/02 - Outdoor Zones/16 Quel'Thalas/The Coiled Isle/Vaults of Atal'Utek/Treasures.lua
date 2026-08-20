@@ -57,37 +57,33 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98040,	-- To a shield-bearer.
 					}),
 				}),
-				-- Unlocks
-				o(671500, {	-- Feather of Tok'jara
-					["coord"] = { 48.4, 25.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					["cost"] = { { "i", 280006, 1} },	-- Spirit Loupe
-					["groups"] = { i(278523) },	-- Feather of Tok'jara
+				-- Altar of Corrosion unlocks
+				o(649651, {	-- Eye of Szarith
+					["coord"] = { 68.60, 15.66, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+					["cost"] = { { "i", 280003, 1 } },	-- 1x Excising Knife
+					["groups"] = { i(278534) },	-- Eye of Szarith (QS!/QI!)
 				}),
-				o(671498, {	-- Venom-Worn Coffer
-					["description"] = "Spawn location seems to vary.",
-					["coords"] = {
-						{ 41.8, 10.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						{ 40.1, 18.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						{ 52.6, 10.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						{ 53.7, 18.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						{ 52.2, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						{ 53.0, 53.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						{ 41.5, 53.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						{ 42.5, 54.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-						{ 47.5, 38.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					},
-					["cost"] = { { "i", 280004, 1} },	-- Corroded Key
-					["groups"] = { i(278536) },	-- Mummified Lynx's Paw (QS!/QI!)
+				o(671500, {	-- Feather of Tok'jara
+					["coord"] = { 48.50, 25.76, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["cost"] = { { "i", 280006, 1 } },	-- 1x Spirit Loupe
+					["groups"] = { i(278523) },	-- Feather of Tok'jara (QS!/QI!)
 				}),
 				o(671508, {	-- Jin'tal's Reliquary
-					["coord"] = {  36.8, 23.7, 2638 },	-- Profaned Mausoleum
-					["cost"] = { { "i", 280005, 1} },	-- Dispelling Charm
+					["coord"] = { 36.26, 23.70, 2638 }, -- Profaned Mausoleum
+					["cost"] = { { "i", 280005, 1 } },	-- 1x Dispelling Charm
 					["groups"] = { i(278517) },	-- Lost Med'jai Amulet (QS!/QI!)
 				}),
-				o(649651, {	-- Eye of Szarith
-					["coord"] = { 68.6, 15.7, 2613 },	-- The Underbelly
-					["cost"] = { { "i", 280003, 1} },	-- Excising Knife
-					["groups"] = { i(278534) },	-- Eye of Szarith (QS!/QI!)
+				o(671498, {	-- Venom-Worn Coffer
+					["description"] = "Will only show up once you have looted the Corroded Key, in one of 5 random locations",
+					["coords"] = {
+						{ 41.7, 53.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 52.5, 53.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 47.5, 38.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 53.5, 18.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 42.7, 12.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					},
+					["cost"] = { { "i", 280004, 1 } },	-- 1x Corroded Key
+					["groups"] = { i(278536) },	-- Mummified Lynx's Paw (QS!/QI!)
 				}),
 				-- Repeatables
 				o(649640, {	-- Soulcoiler's Cache
