@@ -42415,7 +42415,7 @@ ach(62143,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,2
 crit(112616,{achID=62351,id=3})}}),
 ach(62138,{providers={{"n",260848}},g={
 crit(112620,{achID=62351,id=7})}}),
-ach(63643,{awp=120100,providers={{"n",270900}}})}),
+ach(63643,{awp=120100,crs={261796},providers={{"n",270900}}})}),
 h(-29,{symselector=15,g={
 flt(50,{
 i(269005,{f=55}),
@@ -42468,7 +42468,8 @@ q(96503,{awp=120100,coords={
 q(96532,{awp=120100,coords={
 [2393]={{56.7,65.4}}},qgs={246231},sourceQuests={96525}}),
 q(96528,{awp=120100,coords={
-[2512]={{57,33.3}}},qgs={265529},sourceQuests={96532}}),
+[2512]={{57,33.3}}},isDaily=1,qgs={265529},sourceQuests={96532},g={
+i(274422,{awp=120001})}}),
 q(95023,{awp=120100,coords={
 [2393]={{56.8,65.3}}},isWeekly=1,maxReputation={2808,10},qgs={245824}}),
 q(91114,{coords={
@@ -42658,9 +42659,13 @@ q(91228,{coords={
 q(91229,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,maxReputation={2808,10},qgs={245824}})}),
 n(258928,{awp=120100,cost={{"i",274422,1}},description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",maps={2512},g={
+de(15284,{awp=120001,itemID=263874,spellID=1270748}),
 mnt(1297407,{awp=120001,itemID=275659}),
+de(25337,{awp=120001,itemID=278154,spellID=1303663}),
 p(5126,{awp=120001,itemID=278572,npcID=269712,spellID=1305199}),
-toy(276207,{awp=120001})}}),
+de(22147,{awp=120001,itemID=278374,spellID=1304708}),
+toy(276207,{awp=120001}),
+de(24890,{awp=120001,itemID=278378,spellID=1304713})}}),
 h(-47,{
 cu(3392)}),
 h(-58,{
