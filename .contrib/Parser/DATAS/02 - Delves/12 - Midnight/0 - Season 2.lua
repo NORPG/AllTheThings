@@ -179,6 +179,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(272262),	-- Pledgebearer's Splints
 					}),
 					filter(TRINKET_F, {
+						i(251792),	-- Glorious Crusader's Keepsake
 						i(251785),	-- Void-Reaper's Libram
 						-- ["groups"] = sharedData({
 						-- 	["providers"] = {
@@ -191,13 +192,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(272276),	-- Wailing Bulwark
 					}),
 				}),
-				filter(COSMETIC, {
-					i(276164),	-- Corroded Patagia (COSMETIC!)
-				}),
 				filter(MISC, {
 					i(273000),	-- Corrosive Soul
+					i(279290),	-- Fang Lover's (CI!)
 					i(274374, {	-- Trovehunter's Bounty
-						["providers"] = {{"o",584518}}, -- Bountiful Heavy Trunk (verified)
+						["providers"] = { { "o",584518 } }, -- Bountiful Heavy Trunk (verified)
 					}),
 				}),
 				filter(QUEST_ITEMS, {
@@ -267,7 +266,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["maps"] = ALL_REGULAR_DELVES_MID,
 				}),
 			}),
-			--[[mapped(n(TREASURES, {
+			mapped(n(TREASURES, {
 				o(656489, {	-- Azta'rec Cache
 					["questID"] = 92887,
 					["isWeekly"] = true,
@@ -285,7 +284,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
 					},
 				}),
-			})),--]]
+			})),
 			n(VENDORS, {
 				n(242398, {	-- Naleidea Rivergleam
 					["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },

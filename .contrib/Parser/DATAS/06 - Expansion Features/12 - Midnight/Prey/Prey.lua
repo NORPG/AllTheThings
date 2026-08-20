@@ -450,6 +450,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			},
 			["cost"] = { { "i", 274422, 1 } },	-- Ossified Relic
 			["groups"] = {
+				i(263874),	-- Emerald-Encrusted Amani Ritual Skull (DECOR!)
 				i(275659),	-- Hexflame Reaver (MOUNT!)
 				i(278154),	-- Hooked Net Trap (DECOR!)
 				i(278572),	-- Pale Hexscale (PET!)
@@ -794,6 +795,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			-- q(98547),	-- Prey completed, Nightmare #1 / 1st per week
 			-- q(98548),	-- Prey completed, Nightmare #2 / 2nd per week
 			-- q(98549),	-- Prey completed, Nightmare #3 / 3rd per week
+			-- I got different HQTs for my first/week and I see reports of different prey targets killed for the same reported HQT
 		})),
 		-- One-Time
 		n(QUESTS, {

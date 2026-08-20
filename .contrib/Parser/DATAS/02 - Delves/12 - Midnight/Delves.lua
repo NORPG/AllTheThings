@@ -237,19 +237,20 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		}),
 		filter(COSMETIC, {
 			["providers"] = {
-				{"o",623259}, -- Pilfered Trunk
-				{"o",623258}, -- Pilfered Trunk
-				{"o",584518}, -- Bountiful Heavy Trunk
-				{"o",584515}, -- Bountiful Heavy Trunk
-				{"o",584519}, -- Heavy Trunk
-				{"o",584512}, -- Nemesis Strongbox
-				{"o",584511}, -- Nemesis Strongbox
-				{"o",584508}, -- Nemesis Strongbox
-				{"o",584509}, -- Nemesis Strongbox
+				{ "o", 623259 }, -- Pilfered Trunk
+				{ "o", 623258 }, -- Pilfered Trunk
+				{ "o", 584518 }, -- Bountiful Heavy Trunk
+				{ "o", 584515 }, -- Bountiful Heavy Trunk
+				{ "o", 584519 }, -- Heavy Trunk
+				{ "o", 584512 }, -- Nemesis Strongbox
+				{ "o", 584511 }, -- Nemesis Strongbox
+				{ "o", 584508 }, -- Nemesis Strongbox
+				{ "o", 584509 }, -- Nemesis Strongbox
 			},
 			["groups"] = {
 				i(262983),	-- Archival Magnimace (COSMETIC!)
 				i(264852),	-- Bladed Twilight Spaulder (COSMETIC!)
+				i(276164, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corroded Patagia (COSMETIC!)
 				i(264847),	-- Dozing Vinepouch (COSMETIC!)
 				i(262992),	-- Myth Maker's Brush (COSMETIC!)
 				i(262970),	-- Ominous Tome (COSMETIC!)
@@ -359,6 +360,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["groups"] = {
 					i(254869),	-- Chunk of Companion Experience (Epic)
+					i(265366),	-- Twilight Executioner (COSMETIC!)
 				},
 			}),
 			o(581922, {	-- Hidden Trove

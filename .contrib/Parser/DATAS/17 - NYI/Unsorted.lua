@@ -19,7 +19,6 @@ root(ROOTS.Unsorted, {
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
-			i(263874),	-- Emerald-Encrusted Amani Ritual Skull
 			i(264162),	-- Enchanted Snowflake
 			i(265399),	-- Ritually-Charred Bones
 			i(265400),	-- Calcified Turtle Heart
@@ -60,9 +59,7 @@ root(ROOTS.Unsorted, {
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
 			i(271434),	-- Venom Rite Mantle
-			i(271435),	-- Slippers of the Hissing Cult
 			i(271436),	-- Slitherscale Girdle
-			i(271438),	-- Temple Delver's Mystic Helm
 			i(271440),	-- Greaves of the Noxious Depths
 			i(271441),	-- Crushing Coiler Coif
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
@@ -460,7 +457,6 @@ root(ROOTS.Unsorted, {
 			i(279145),	-- Vial of Venom
 			i(279146),	-- Lopped Rattle
 			i(279147),	-- Unrecognizable bone
-			i(279148),	-- Strip of Snake Hide
 			i(279149),	-- [ph] SpiceWitch Head 02 - Blue
 			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
@@ -476,7 +472,6 @@ root(ROOTS.Unsorted, {
 			i(279166),	-- Pumice Hand Chalk
 			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
-			i(279290),	-- Fang Lover's
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot
@@ -598,7 +593,6 @@ root(ROOTS.Unsorted, {
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
-			i(281227),	-- Soulcoiler's Rush'kah
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(278397),	-- Ephemeral Star Ooze
 			i(280846),	-- Beguiling Memories of the Sea

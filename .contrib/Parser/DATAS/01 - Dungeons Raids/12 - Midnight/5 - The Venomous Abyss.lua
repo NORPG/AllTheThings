@@ -240,6 +240,8 @@ local EncounterToLoot = {
 ------ Zone Drops ----------
 local ZoneDropLoot = {
 	i(271440),	-- Greaves of the Noxious Depths
+	i(271435),	-- Slippers of the Hissing Cult
+	i(271438),	-- Temple Delver's Mystic Helm
 };
 
 ------ Boss Functions ------
@@ -394,6 +396,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				BossOnly(NEKZALI, {
 					i(279115),	-- Soulcoiler's Ritual Candle (DECOR!)
+					i(281227),	-- Soulcoiler's Rush'kah (COSMETIC!)
 				}),
 				BossOnly(ENTOMBED, {
 					i(264716),	-- Hexed Tomb Brazier (DECOR!) [NYI??]
@@ -612,6 +615,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
 			-- LFR
+			hqt(98080, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			-- N
 			hqt(98083, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98079, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
@@ -621,6 +625,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			hqt(98097, name(HEADERS.Encounter, COILED_ALTAR)),	-- Coiled Altar
 			hqt(97980, name(HEADERS.Encounter, ULATEK)),	-- Ula'tek
 			-- H
+			hqt(98082, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98078, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			hqt(98074, name(HEADERS.NPC, 261503)),	-- Frightmaw

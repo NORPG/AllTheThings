@@ -580,8 +580,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Following is WoWhead data
 					q(96112, {	-- Maddening Concoction
 						["sourceQuest"] = 96111,	-- Shell of Yourself
-						--["qg"] = 258755,	-- Captain Tokka
-						--["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["qg"] = 258755,	-- Captain Tokka
+						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
 							i(274103),	-- Leathertongue's Backup Stewpot (QI!)
 							i(274090),	-- Resplendent Ectobarb (QI!)
