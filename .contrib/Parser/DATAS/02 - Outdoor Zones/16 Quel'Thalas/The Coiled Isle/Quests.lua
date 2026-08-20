@@ -1069,6 +1069,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(277938),	-- Virulent Offering
 					i(277939),	-- Volatile Offering
 				},
+				["description"] =
+					"Balanced = 1x Ancient Knucklebone, 1x Serpent's Feather, 1x Clouded Blood-Pearl\n" ..
+					"Choleric = 3x Clouded Blood-Pearl\n" ..
+					"Eerie = 2x Ancient Knucklebone, 1x Serpent's Feather\n" ..
+					"Fragile = 2x Ancient Knucklebone, 1x Clouded Blood-Pearl\n" ..
+					"Odious = 2x Serpent's Feather, 1x Clouded Blood-Pearl\n" ..
+					"Melancholic = 3x Ancient Knucklebone\n" ..
+					"Pestilent = 1x Ancient Knucklebone, 2x Serpent's Feather\n" ..
+					"Phlegmatic = 3x Serpent's Feather\n" ..
+					"Virulent = 1x Serpent's Feather, 2x Clouded Blood-Pearl\n" ..
+					"Volatile = 1x Ancient Knucklebone, 2x Clouded Blood-Pearl",
 			}),
 		}),
 	}),
