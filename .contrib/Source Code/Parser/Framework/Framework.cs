@@ -2046,15 +2046,6 @@ namespace ATT
                     }
                     sublocale[key] = englishValue;
 
-                    // Clean up inherited values. (mx inherits from es and tw inherits from cn
-                    if (localeData.TryGetValue("mx", out string mxValue) && localeData.TryGetValue("es", out string esValue) && mxValue == esValue)
-                    {
-                        localeData.Remove("mx");
-                    }
-                    if (localeData.TryGetValue("tw", out string twValue) && localeData.TryGetValue("cn", out string cnValue) && twValue == cnValue)
-                    {
-                        localeData.Remove("tw");
-                    }
                     foreach (var locale in localeData)
                     {
                         if (locale.Key == "en") continue;
@@ -2066,7 +2057,25 @@ namespace ATT
                             {
                                 localizationData[locale.Key] = sublocale = new Dictionary<T, string>();
                             }
-                            sublocale[key] = localizedValue;
+                            // Clean up inherited values. (mx inherits from es and tw inherits from cn so don't include in the export data
+                            switch (locale.Key)
+                            {
+                                case "mx":
+                                    if (!localeData.TryGetValue("es", out string esValue) || localizedValue != esValue)
+                                    {
+                                        sublocale[key] = localizedValue;
+                                    }
+                                    break;
+                                case "tw":
+                                    if (!localeData.TryGetValue("cn", out string cnValue) || localizedValue != cnValue)
+                                    {
+                                        sublocale[key] = localizedValue;
+                                    }
+                                    break;
+                                default:
+                                    sublocale[key] = localizedValue;
+                                    break;
+                            }
                         }
                     }
                 }

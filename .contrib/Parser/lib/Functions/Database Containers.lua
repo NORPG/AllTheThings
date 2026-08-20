@@ -25,7 +25,9 @@ local function RecursivelyMergeData(t, c, path, options)
 		else
 			cval = rawget(c, key)
 		end
-		-- print("Merge DB table - ",path,"@",key,"exists",cval,"assign",tval)
+		-- if cval then
+		-- 	print("Merge DB table - ",path,"@",key,"exists",cval,"assign",tval)
+		-- end
         local currentPath = path .. tostring(key)
 
         if cval == nil then
