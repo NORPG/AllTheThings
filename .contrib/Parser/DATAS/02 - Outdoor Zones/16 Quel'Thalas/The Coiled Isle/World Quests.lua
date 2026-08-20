@@ -54,7 +54,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(94967, {	-- Ki'clak Snack Attack
 					--["sourceQuest"] = 93906,	-- Untethering the Two
 					["coord"] = { 69.6, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["groups"] = { i(267085) },	-- Swirling Ectoplasm
+					["groups"] = {
+						i(267085),	-- Swirling Ectoplasm
+						ach(63633, {	-- A Stack of Snacks
+							["coord"] = { 69.3, 52.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["cr"] = 256872,	-- Ki'clak <The Snip Shapper>
+							["groups"] = { i(279921) },	-- Ki'clak (PET!)
+						}),
+					 },
 				}),
 				q(94611, {	-- Predators and Prey
 					["coord"] = { 64.7, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
