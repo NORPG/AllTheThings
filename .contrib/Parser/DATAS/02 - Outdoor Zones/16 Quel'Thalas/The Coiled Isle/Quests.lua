@@ -1049,6 +1049,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["isDaily"] = true,
 				["groups"] = {
+					ach(63432, {	-- Mysterious Mix Master
+						i(248962),	-- Mysterious Voodoo Mask (DECOR!)
+					}),
+					-- Ingredients
 					i(276124),	-- Ancient Knucklebone
 					i(276117),	-- Clouded Blood-Pearl
 					i(276126),	-- Serpent's Feather
