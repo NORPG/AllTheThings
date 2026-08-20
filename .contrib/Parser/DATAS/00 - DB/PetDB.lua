@@ -4669,15 +4669,21 @@ i(280138, 5132);	-- Zesty
 --- UNSORTED ---
 i(277322, 5119);	-- Amewbis
 i(275703, 5077);	-- ArcaneGolem2 Pet - Red
+i(278231, 5124);	-- Aquatic Clockwork Quacker
 i(277318, 5116);	-- Catsramas
 i(277319, 5117);	-- Cat'Thuzad
 i(280189, 5134);	-- Cauldron Concoction
+i(278230, 5123);	-- Classic Clockwork Quacker
 i(0, 5061);		-- Crabbers
+i(274925, 5067);	-- Delta
+i(251038, 4893);	-- Emerrrgl
 i(270211, 5027);	-- Furiostraza
+i(282417, 5164);	-- J'imothy
 i(277282, 5115);	-- Kirin Tor Cat
 i(277270, 5114);	-- Kirin Tor Kitty
 i(270191, 5026);	-- Lil'Kruul
 i(277321, 5118);	-- Mewkahen
+i(278688, 5127);	-- Skipper
 i(280305, 5125);	-- Soulcoil Remnant
 i(279197, 5129);	-- Slitherfang
 i(276234, 5092);	-- Vibrant Venomfang

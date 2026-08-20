@@ -2534,10 +2534,12 @@ i(278574, 1305206);	-- Crested Aqua Leafmimic		(SHOP OR TRADING POST)
 i(278573, 1305204);	-- Crested Ember Leafmimic		(SHOP OR TRADING POST)
 i(278575, 1305207);	-- Crested Verdant Leafmimic	(SHOP OR TRADING POST)
 i(278576, 1305209);	-- Crested Violet Leafmimic		(SHOP OR TRADING POST)
+i(274164, 142515);	-- Hearthkeeper's Wandering Caravan
 i(275571, 1296986);	-- Moonlit Witchwick's Rider	(SHOP OR TRADING POST)
 i(275570, 1296985);	-- Mossy Witchwick's Rider		(SHOP OR TRADING POST)
 i(275572, 1296987);	-- Scarlet Witchwick's Rider	(SHOP OR TRADING POST)
 i(0, 1295958);	-- Swift Spectral Eagle
+i(0, 1293028);	-- Tuskarr Hermit Crab
 i(280599, 1309376);	-- Veteran Adventurer's Loyal Companion
 i(277261, 1301817);	-- Whoofle Bramblewing			(SHOP OR TRADING POST)
 i(280581, 1309340);	-- Wintry Witchwick's Rider		(SHOP OR TRADING POST)
