@@ -8,6 +8,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(ZONE_REWARDS, {
 				currency(3448),	-- Corrosive Coin
 				i(279345, {	-- Venom-Drenched Sack
+					["providers"] = {
+						{ "n", 263015 },	-- Khu'tulak <Blade of Nek'zali>
+						{ "n", 263016 },	-- Susarikk <Spawn of the First Clutch>
+					},
 					["groups"] = {
 						n(ARMOR, {
 							n(BACK, {
@@ -75,12 +79,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				i(279287, {	-- Corroded Pouch
-					["sym"] = {{"select","itemID",279345},{"pop"}}
+					["sym"] = {{"select","itemID",279345},{"pop"}},
+				}),
+				i(279288, {	-- Corroded Satchel
+					["sym"] = {{"select","itemID",279345},{"pop"}},
 				}),
 				i(280004, {	-- Corroded Key
 					["description"] = "Received as a reward for doing a Temple Strike."
 				}),
-				i(279288),	-- Corroded Satchel
 				i(280003, {	-- Excising Knife
 					["description"] = "Received as a reward for doing a Temple Incursion."
 				}),
