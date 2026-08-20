@@ -303,7 +303,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 		}),
 		n(TREASURES, bubbleDownFiltered({
-			["isDaily"] = true
+			["isDaily"] = true,
 			["timeline"] = { REMOVED_12_1_0 },
 		},FILTERFUNC_questID,{
 			o_repeated({	-- Giant Growth Potion
