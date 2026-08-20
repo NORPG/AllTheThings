@@ -295,9 +295,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["cost"] = { { "i", 250878, 1 } },	-- Weathered Tome
 				["coord"] = { 62.1, 42.6, ARCANTINA },
 			}),
-			-- Wooden Toy Sword Object
-				--["cost"] = { { "i", 275054, 1 } },	-- Wooden Toy Sword
-				--["coord"] = { 56.4, 60.2, ARCANTINA },
+			o(655006, {	-- Wooden Toy Sword
+				["questID"] = 95783,
+				["cost"] = { { "i", 275054, 1 } },	-- Wooden Toy Sword
+				["coord"] = { 56.5, 60.2, ARCANTINA },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 		}),
 		n(TREASURES, bubbleDownFiltered({
 			["isDaily"] = true
