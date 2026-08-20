@@ -1020,7 +1020,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(252713),	-- Grassy Winter Toque
 				i(250291),	-- Hot and Fresh Portable Bakery
 				i(252747),	-- Plum Winter Toque
-				i(250293),	-- Red Hot Portable Bakery
 				i(251669),	-- Sturdy Wearable Pot Lid
 				i(251985),	-- Trapper's Black Quiver
 				i(251986),	-- Trapper's Blue Quiver

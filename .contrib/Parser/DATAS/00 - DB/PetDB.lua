@@ -4579,7 +4579,7 @@ i(266076, 4881);	-- Nether Siphoner
 i(262392, 4961);	-- Nibblesworth
 i(240840, 4803);	-- Niblet
 i(264892, 4981);	-- Nova
-i(262391, 4958);	-- Ominous Domanus
+i(262391, 4958);	-- Ominous Dominus
 i(250145, 4884);	-- Pangolil
 i(258903, 4927);	-- Percival
 i(260730, 4948);	-- Perturbed Sporebat

@@ -74,7 +74,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(61797, {	-- My Shady Nemesis
 								i(263413),	-- Nullaeus Domaneye (COSMETIC!)
 							}),
-							i(262391),	-- Ominous Domanus (PET!)
+							i(262391),	-- Ominous Dominus (PET!)
 							hqt(95155, name(HEADERS.NPC, 252892)),	-- Nullaeus ? (first time)
 						},
 					}),
@@ -94,7 +94,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(61798, {	-- Lighting the Dark
 								title(688),	-- <Name> the Ominous
 							}),
-							i(262391),	-- Ominous Domanus (PET!)
+							i(262391),	-- Ominous Dominus (PET!)
 							hqt(95154, name(HEADERS.NPC, 252892)),	-- Nullaeus ?? (first time)
 						},
 					}),
@@ -447,7 +447,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						265367,	-- Twilight Fang (COSMETIC!)
 					}},
 					["groups"] = {
-						i(262391),	-- Ominous Domanus (PET!)
+						i(262391),	-- Ominous Dominus (PET!)
 						i(264971),	-- Annihilation Rod (COSMETIC!)
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
 					},

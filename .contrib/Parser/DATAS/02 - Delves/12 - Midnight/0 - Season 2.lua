@@ -279,7 +279,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						265367,	-- Twilight Fang (COSMETIC!)
 					}},
 					["groups"] = {
-						i(262391),	-- Ominous Domanus (PET!)
+						i(262391),	-- Ominous Dominus (PET!)
 						i(264971),	-- Annihilation Rod (COSMETIC!)
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
 					},

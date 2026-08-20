@@ -341,6 +341,10 @@ root(ROOTS.Promotions, {
 				},
 			}));
 			-- Season 2
+			i(250293, {	-- Red Hot Portable Bakery
+				["description"] = "McDonald's UK exclusive promotion. Available from 25th August 2026.",
+				["timeline"] = { "added 12.1.0.99998", "removed 12.1.0.99999" },	-- Removed sometime in the future
+			}),
 
 			-- Season 3
 
