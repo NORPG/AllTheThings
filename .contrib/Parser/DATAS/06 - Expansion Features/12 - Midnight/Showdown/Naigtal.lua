@@ -534,7 +534,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							},
 							["description"] = "Feed the Sleepy Mandrake 5 different Redcap Mushrooms from Naigtal to wake it up and become your pet.",
 							["coord"] = { 68.2, 51.6, NAIGTAL },
-							["groups"] = { i(262768) }, 	-- Sleepy Mandrake (PET!)
+							["groups"] = { i(262768) },	-- Sleepy Mandrake (PET!)
 						}),
 						hqt(97091, {	-- Feed the Sleepy Mandrake a Highland Redcap
 							["name"] = "Feed the Sleepy Mandrake a Highland Redcap",

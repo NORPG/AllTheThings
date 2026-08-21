@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(170530),	-- Honorbound Artificer's Guise	\
-				i(170529),	-- Honorbound Artificer's Amice	 > when i completed the alliance version of the quest on my priest, it also awarded these.
+				i(170529),	-- Honorbound Artificer's Amice	> when i completed the alliance version of the quest on my priest, it also awarded these.
 				i(170516),	-- Honorbound Artificer's Robes	/
 				i(170536),	-- Honorbound Centurion's Greathelm
 				i(170535),	-- Honorbound Centurion's Shoulderplates

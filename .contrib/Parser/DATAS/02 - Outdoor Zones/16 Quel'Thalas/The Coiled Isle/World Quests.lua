@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["cr"] = 256872,	-- Ki'clak <The Snip Shapper>
 							["groups"] = { i(279921) },	-- Ki'clak (PET!)
 						}),
-					 },
+					},
 				}),
 				q(94611, {	-- Predators and Prey
 					["coord"] = { 64.7, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -84,6 +84,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(96066, {	-- Slithering Surveyor
 					["coord"] = { 56.9, 49.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(95449, {	-- Snakes in the Grass
+					["coord"] = { 58.0, 35.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95921, {	-- Special Assignment: Demand and Supply
 					["coord"] = { 59.2, 51.0, MAP.MIDNIGHT.THE_COILED_ISLE },

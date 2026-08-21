@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["name"] = "Nacretta has taken the Luminescent Pearl",
 							["cost"] = { { "i", 271815, 1 } },	-- 1x Luminescent Pearl
 						}),
-						hqt(96002, { 	-- Triggered after the Dropped Key spawns
+						hqt(96002, {	-- Triggered after the Dropped Key spawns
 							["name"] = "Nacretta has Dropped the Key",
 							["sourceQuest"] = 96001,	-- Nacretta has taken the Luminescent Pearl
 						}),

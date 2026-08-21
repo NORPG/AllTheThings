@@ -133,13 +133,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				n(ARMOR, {
 					filter(BACK_F, {
 						["providers"] = {
-							{"o",584514},	-- Bountiful Coffer
-							{"o",584518},	-- Bountiful Heavy Trunk
-							{"o",584503},	-- Grand Sanctified Spoils
-							{"o",584519},	-- Heavy Trunk
-							{"o",581922},	-- Hidden Trove
-							{"o",618495},	-- Nullaeus Cache
-							{"o",623259},	-- Pilfered Trunk
+							{ "o", 584514 },	-- Bountiful Coffer
+							{ "o", 584518 },	-- Bountiful Heavy Trunk
+							{ "o", 584503 },	-- Grand Sanctified Spoils
+							{ "o", 584519 },	-- Heavy Trunk
+							{ "o", 581922 },	-- Hidden Trove
+							{ "o", 618495 },	-- Nullaeus Cache
+							{ "o", 623259 },	-- Pilfered Trunk
 						},
 						["groups"] = {
 							i(249625),	-- Elder Mossveil
@@ -150,19 +150,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					filter(CLOTH, {
 						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584517}, -- Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
+							{ "o", 584514 }, -- Bountiful Coffer
+							{ "o", 584518 }, -- Bountiful Heavy Trunk
+							{ "o", 584515 }, -- Bountiful Heavy Trunk
+							{ "o", 584517 }, -- Heavy Trunk
+							{ "o", 584519 }, -- Heavy Trunk
+							{ "o", 581922 }, -- Hidden Trove
+							{ "o", 584511 }, -- Nemesis Strongbox
+							{ "o", 584509 }, -- Nemesis Strongbox
+							{ "o", 584508 }, -- Nemesis Strongbox
+							{ "o", 584512 }, -- Nemesis Strongbox
+							{ "o", 618495 }, -- Nullaeus Cache
+							{ "o", 623259 }, -- Pilfered Trunk
+							{ "o", 623258 }, -- Pilfered Trunk
 						},
 						["groups"] = {
 							i(249634),	-- Sprawling Fibershells
@@ -177,14 +177,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					filter(FINGER_F, {
 						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584503}, -- Grand Sanctified Spoils
-							{"o",584517}, -- Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
+							{ "o", 584514 }, -- Bountiful Coffer
+							{ "o", 584518 }, -- Bountiful Heavy Trunk
+							{ "o", 584503 }, -- Grand Sanctified Spoils
+							{ "o", 584517 }, -- Heavy Trunk
+							{ "o", 584519 }, -- Heavy Trunk
+							{ "o", 581922 }, -- Hidden Trove
+							{ "o", 618495 }, -- Nullaeus Cache
+							{ "o", 623259 }, -- Pilfered Trunk
 						},
 						["groups"] = {
 							i(249623),	-- Blooming Leafcoil
@@ -195,19 +195,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					filter(LEATHER, {
 						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584517}, -- Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
+							{ "o", 584514 }, -- Bountiful Coffer
+							{ "o", 584518 }, -- Bountiful Heavy Trunk
+							{ "o", 584515 }, -- Bountiful Heavy Trunk
+							{ "o", 584517 }, -- Heavy Trunk
+							{ "o", 584519 }, -- Heavy Trunk
+							{ "o", 581922 }, -- Hidden Trove
+							{ "o", 584511 }, -- Nemesis Strongbox
+							{ "o", 584509 }, -- Nemesis Strongbox
+							{ "o", 584508 }, -- Nemesis Strongbox
+							{ "o", 584512 }, -- Nemesis Strongbox
+							{ "o", 618495 }, -- Nullaeus Cache
+							{ "o", 623259 }, -- Pilfered Trunk
+							{ "o", 623258 }, -- Pilfered Trunk
 						},
 						["groups"] = {
 							i(249638),	-- Osseoclad Bonecrushers
@@ -222,19 +222,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					filter(MAIL, {
 						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584517}, -- Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
+							{ "o", 584514 }, -- Bountiful Coffer
+							{ "o", 584518 }, -- Bountiful Heavy Trunk
+							{ "o", 584515 }, -- Bountiful Heavy Trunk
+							{ "o", 584517 }, -- Heavy Trunk
+							{ "o", 584519 }, -- Heavy Trunk
+							{ "o", 581922 }, -- Hidden Trove
+							{ "o", 584511 }, -- Nemesis Strongbox
+							{ "o", 584509 }, -- Nemesis Strongbox
+							{ "o", 584508 }, -- Nemesis Strongbox
+							{ "o", 584512 }, -- Nemesis Strongbox
+							{ "o", 618495 }, -- Nullaeus Cache
+							{ "o", 623259 }, -- Pilfered Trunk
+							{ "o", 623258 }, -- Pilfered Trunk
 						},
 						["groups"] = {
 							i(249652),	-- Elder Mossbands
@@ -249,13 +249,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					filter(NECK_F, {
 						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584503}, -- Grand Sanctified Spoils
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
+							{ "o", 584514 }, -- Bountiful Coffer
+							{ "o", 584518 }, -- Bountiful Heavy Trunk
+							{ "o", 584503 }, -- Grand Sanctified Spoils
+							{ "o", 584519 }, -- Heavy Trunk
+							{ "o", 581922 }, -- Hidden Trove
+							{ "o", 618495 }, -- Nullaeus Cache
+							{ "o", 623259 }, -- Pilfered Trunk
 						},
 						["groups"] = {
 							i(249627),	-- Arboreal Vine Collar
@@ -264,19 +264,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					filter(PLATE, {
 						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584517}, -- Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
+							{ "o", 584514 }, -- Bountiful Coffer
+							{ "o", 584518 }, -- Bountiful Heavy Trunk
+							{ "o", 584515 }, -- Bountiful Heavy Trunk
+							{ "o", 584517 }, -- Heavy Trunk
+							{ "o", 584519 }, -- Heavy Trunk
+							{ "o", 581922 }, -- Hidden Trove
+							{ "o", 584511 }, -- Nemesis Strongbox
+							{ "o", 584509 }, -- Nemesis Strongbox
+							{ "o", 584508 }, -- Nemesis Strongbox
+							{ "o", 584512 }, -- Nemesis Strongbox
+							{ "o", 618495 }, -- Nullaeus Cache
+							{ "o", 623259 }, -- Pilfered Trunk
+							{ "o", 623258 }, -- Pilfered Trunk
 						},
 						["groups"] = {
 							i(249657),	-- Rampant Bramblegreaves
@@ -336,19 +336,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				n(WEAPONS, {
 					["groups"] = sharedData({
 						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584503}, -- Grand Sanctified Spoils
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
+							{ "o", 584514 }, -- Bountiful Coffer
+							{ "o", 584518 }, -- Bountiful Heavy Trunk
+							{ "o", 584515 }, -- Bountiful Heavy Trunk
+							{ "o", 584503 }, -- Grand Sanctified Spoils
+							{ "o", 584519 }, -- Heavy Trunk
+							{ "o", 581922 }, -- Hidden Trove
+							{ "o", 584512 }, -- Nemesis Strongbox
+							{ "o", 584509 }, -- Nemesis Strongbox
+							{ "o", 584508 }, -- Nemesis Strongbox
+							{ "o", 584511 }, -- Nemesis Strongbox
+							{ "o", 618495 }, -- Nullaeus Cache
+							{ "o", 623259 }, -- Pilfered Trunk
+							{ "o", 623258 }, -- Pilfered Trunk
 						},
 					},{
 						-- Set

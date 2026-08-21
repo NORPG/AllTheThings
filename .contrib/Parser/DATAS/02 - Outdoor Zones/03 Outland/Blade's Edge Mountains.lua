@@ -341,7 +341,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
-							objective(1, {	-- 	Apexis Vibrations attained
+							objective(1, {	--	Apexis Vibrations attained
 								["provider"] = { "o", 185890 },	-- Apexis Relic
 							}),
 						},
@@ -1904,7 +1904,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
-							objective(1, {	-- 	Apexis Vibrations attained
+							objective(1, {	--	Apexis Vibrations attained
 								["provider"] = { "o", 185890 },	-- Apexis Relic
 							}),
 						},

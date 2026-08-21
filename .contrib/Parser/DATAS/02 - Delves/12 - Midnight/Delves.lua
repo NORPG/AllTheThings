@@ -115,51 +115,51 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		filter(BATTLE_PETS, {
 			i(262395, {	-- Hexed Bunny (PET!)
 				["providers"] = {
-					{"o",584518}, -- Bountiful Heavy Trunk
-					{"o",584515}, -- Bountiful Heavy Trunk
-					{"o",584508}, -- Nemesis Strongbox
-					{"o",623258}, -- Pilfered Trunk
+					{ "o", 584518 }, -- Bountiful Heavy Trunk
+					{ "o", 584515 }, -- Bountiful Heavy Trunk
+					{ "o", 584508 }, -- Nemesis Strongbox
+					{ "o", 623258 }, -- Pilfered Trunk
 				},
 			}),
 			i(262396, {	-- Lost Star (PET!)
 				["providers"] = {
-					{"o",584518}, -- Bountiful Heavy Trunk
-					{"o",584515}, -- Bountiful Heavy Trunk
-					{"o",584508}, -- Nemesis Strongbox
-					{"o",584509}, -- Nemesis Strongbox
-					{"o",584511}, -- Nemesis Strongbox
-					{"o",584519}, -- Heavy Trunk
+					{ "o", 584518 }, -- Bountiful Heavy Trunk
+					{ "o", 584515 }, -- Bountiful Heavy Trunk
+					{ "o", 584508 }, -- Nemesis Strongbox
+					{ "o", 584509 }, -- Nemesis Strongbox
+					{ "o", 584511 }, -- Nemesis Strongbox
+					{ "o", 584519 }, -- Heavy Trunk
 				},
 			}),
 			i(262392, {	-- Nibblesworth (PET!)
 				["providers"] = {
-					{"o",584518}, -- Bountiful Heavy Trunk
-					{"o",584515}, -- Bountiful Heavy Trunk
-					{"o",584508}, -- Nemesis Strongbox
-					{"o",584509}, -- Nemesis Strongbox
-					{"o",584511}, -- Nemesis Strongbox
-					{"o",623259}, -- Pilfered Trunk
+					{ "o", 584518 }, -- Bountiful Heavy Trunk
+					{ "o", 584515 }, -- Bountiful Heavy Trunk
+					{ "o", 584508 }, -- Nemesis Strongbox
+					{ "o", 584509 }, -- Nemesis Strongbox
+					{ "o", 584511 }, -- Nemesis Strongbox
+					{ "o", 623259 }, -- Pilfered Trunk
 				},
 			}),
 			i(262343, {	-- Treja'saka (PET!)
 				["providers"] = {
-					{"o",584514}, -- Bountiful Coffer
-					{"o",581922}, -- Hidden Trove
+					{ "o", 584514 }, -- Bountiful Coffer
+					{ "o", 581922 }, -- Hidden Trove
 				},
 			}),
 			i(262342, {	-- Spormilian (PET!)
 				["providers"] = {
-					{"o",584515}, -- Bountiful Heavy Trunk
-					{"o",584508}, -- Nemesis Strongbox
+					{ "o", 584515 }, -- Bountiful Heavy Trunk
+					{ "o", 584508 }, -- Nemesis Strongbox
 				},
 			}),
 			i(262394, {	-- Ziorg'pharon (PET!)
 				["providers"] = {
-					{"o",584518}, -- Bountiful Heavy Trunk
-					{"o",584515}, -- Bountiful Heavy Trunk
-					{"o",584512}, -- Nemesis Strongbox
-					{"o",584509}, -- Nemesis Strongbox
-					{"o",584508}, -- Nemesis Strongbox
+					{ "o", 584518 }, -- Bountiful Heavy Trunk
+					{ "o", 584515 }, -- Bountiful Heavy Trunk
+					{ "o", 584512 }, -- Nemesis Strongbox
+					{ "o", 584509 }, -- Nemesis Strongbox
+					{ "o", 584508 }, -- Nemesis Strongbox
 				},
 			}),
 		}),
@@ -267,16 +267,16 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		}),
 		n(DECOR, {
 			["providers"] = {
-				{"o",584518}, -- Bountiful Heavy Trunk
-				{"o",584515}, -- Bountiful Heavy Trunk
-				{"o",584517}, -- Heavy Trunk
-				{"o",584519}, -- Heavy Trunk
-				{"o",584512}, -- Nemesis Strongbox
-				{"o",584511}, -- Nemesis Strongbox
-				{"o",584508}, -- Nemesis Strongbox
-				{"o",584509}, -- Nemesis Strongbox
-				{"o",623259}, -- Pilfered Trunk
-				{"o",623258}, -- Pilfered Trunk
+				{ "o", 584518 }, -- Bountiful Heavy Trunk
+				{ "o", 584515 }, -- Bountiful Heavy Trunk
+				{ "o", 584517 }, -- Heavy Trunk
+				{ "o", 584519 }, -- Heavy Trunk
+				{ "o", 584512 }, -- Nemesis Strongbox
+				{ "o", 584511 }, -- Nemesis Strongbox
+				{ "o", 584508 }, -- Nemesis Strongbox
+				{ "o", 584509 }, -- Nemesis Strongbox
+				{ "o", 623259 }, -- Pilfered Trunk
+				{ "o", 623258 }, -- Pilfered Trunk
 			},
 			["groups"] = {
 				i(267080, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Blueflame Chandelier (DECOR!)
@@ -366,8 +366,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			o(581922, {	-- Hidden Trove
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["providers"] = {
-					{"i",252415},	-- Trovehunter's Bounty
-					{"i",265714},	-- Trovehunter's Bounty (Delve UI)
+					{ "i", 252415 },	-- Trovehunter's Bounty
+					{ "i", 265714 },	-- Trovehunter's Bounty (Delve UI)
 				},
 			}),
 			o(506498, {	-- Gilded Stash
@@ -423,41 +423,41 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		hqt(92791),	-- Level 43
 		hqt(92792),	-- Level 44
 		hqt(92793),	-- Level 45
-		hqt(92794, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 46
-		hqt(92795, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 47
-		hqt(92796, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 48
-		hqt(92797, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 49
-		hqt(92798, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 50
-		hqt(92799, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 51
-		hqt(92800, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 52
-		hqt(92801, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 53
-		hqt(92803, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 54
-		hqt(92804, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 55
-		hqt(92805, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 56
-		hqt(92806, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 57
-		hqt(92807, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 58
-		hqt(92808, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 59
-		hqt(92809, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Level 60
-		hqt(95856, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 61
-		hqt(95857, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 62
-		hqt(95858, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 63
-		hqt(95859, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 64
-		hqt(95860, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 65
-		hqt(95861, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 66
-		hqt(95862, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 67
-		hqt(95863, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 68
-		hqt(95864, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 69
-		hqt(95865, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 70
-		hqt(95866, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 71
-		hqt(95867, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 72
-		hqt(95868, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 73
-		hqt(95869, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 74
-		hqt(95870, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 75
-		hqt(95871, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 76
-		hqt(95872, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 77
-		hqt(95873, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 78
-		hqt(95874, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 79
-		hqt(95875, {["timeline"] = { ADDED_12_1_0 }}),	-- Level 80
+		hqt(92794, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 46
+		hqt(92795, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 47
+		hqt(92796, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 48
+		hqt(92797, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 49
+		hqt(92798, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 50
+		hqt(92799, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 51
+		hqt(92800, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 52
+		hqt(92801, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 53
+		hqt(92803, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 54
+		hqt(92804, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 55
+		hqt(92805, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 56
+		hqt(92806, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 57
+		hqt(92807, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 58
+		hqt(92808, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 59
+		hqt(92809, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 60
+		hqt(95856, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 61
+		hqt(95857, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 62
+		hqt(95858, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 63
+		hqt(95859, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 64
+		hqt(95860, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 65
+		hqt(95861, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 66
+		hqt(95862, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 67
+		hqt(95863, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 68
+		hqt(95864, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 69
+		hqt(95865, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 70
+		hqt(95866, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 71
+		hqt(95867, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 72
+		hqt(95868, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 73
+		hqt(95869, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 74
+		hqt(95870, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 75
+		hqt(95871, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 76
+		hqt(95872, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 77
+		hqt(95873, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 78
+		hqt(95874, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 79
+		hqt(95875, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 80
 	}),
 	n(MAILBOX, {
 		i(258738, {	-- A Cordial Invitation (QS!)
@@ -490,44 +490,44 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		n(256593, {	-- Sanctified Banner
 			["coords"] = {
 				-- Atal'Aman
-				{40.57, 57.84, ATAL_AMAN},
-				{57.38, 83.09, ATAL_AMAN},
-				{43.12, 65.28, ATAL_AMAN},
-				{44.41, 46.27, ATAL_AMAN},
+				{ 40.57, 57.84, ATAL_AMAN },
+				{ 57.38, 83.09, ATAL_AMAN },
+				{ 43.12, 65.28, ATAL_AMAN },
+				{ 44.41, 46.27, ATAL_AMAN },
 				-- Collegiate Calamity
-				{81.36, 39.86, COLLEGIATE_CALAMITY},
-				{46.60, 84.29, COLLEGIATE_CALAMITY},
-				{30.00, 22.00, COLLEGIATE_CALAMITY},
+				{ 81.36, 39.86, COLLEGIATE_CALAMITY },
+				{ 46.60, 84.29, COLLEGIATE_CALAMITY },
+				{ 30.00, 22.00, COLLEGIATE_CALAMITY },
 				-- Parhelion Plaza
-				{24.13, 88.14, PARHELION_PLAZA},
-				{64.70, 63.50, PARHELION_PLAZA},
-				{23.03, 15.09, PARHELION_PLAZA},
+				{ 24.13, 88.14, PARHELION_PLAZA },
+				{ 64.70, 63.50, PARHELION_PLAZA },
+				{ 23.03, 15.09, PARHELION_PLAZA },
 				-- Shadowguard Point
-				{49.47, 55.11, SHADOWGUARD_POINT},
-				{57.17, 33.16, SHADOWGUARD_POINT},
-				{37.98, 44.75, SHADOWGUARD_POINT},
+				{ 49.47, 55.11, SHADOWGUARD_POINT },
+				{ 57.17, 33.16, SHADOWGUARD_POINT },
+				{ 37.98, 44.75, SHADOWGUARD_POINT },
 				-- Sunkiller Sanctum
-				{65.58, 38.55, SUNKILLER_SANCTUM},
-				{43.23, 46.23, SUNKILLER_SANCTUM},
-				{53.35, 37.61, SUNKILLER_SANCTUM},
+				{ 65.58, 38.55, SUNKILLER_SANCTUM },
+				{ 43.23, 46.23, SUNKILLER_SANCTUM },
+				{ 53.35, 37.61, SUNKILLER_SANCTUM },
 				-- The Darkway
-				{43.4, 49.3, THE_DARKWAY},
-				{49.61, 37.52, THE_DARKWAY},
-				{53.66, 49.89, THE_DARKWAY},
+				{ 43.4, 49.3, THE_DARKWAY },
+				{ 49.61, 37.52, THE_DARKWAY },
+				{ 53.66, 49.89, THE_DARKWAY },
 				-- The Gulf of Memory
-				{56.51, 46.52, THE_GULF_OF_MEMORY},
-				{42.00, 23.90, THE_GULF_OF_MEMORY},
+				{ 56.51, 46.52, THE_GULF_OF_MEMORY },
+				{ 42.00, 23.90, THE_GULF_OF_MEMORY },
 				-- The Grudge Pit
-				{55.22, 64.39, THE_GRUDGE_PIT},
-				{43.30, 22.68, THE_GRUDGE_PIT},
+				{ 55.22, 64.39, THE_GRUDGE_PIT },
+				{ 43.30, 22.68, THE_GRUDGE_PIT },
 				-- The Shadow Enclave
-				{46.00, 22.00, THE_SHADOW_ENCLAVE},
-				{47.94, 57.33, THE_SHADOW_ENCLAVE},
+				{ 46.00, 22.00, THE_SHADOW_ENCLAVE },
+				{ 47.94, 57.33, THE_SHADOW_ENCLAVE },
 				-- Twilight Crypts
-				{45.1, 54.8, 2504},
-				{39.1, 84.1, 2504},
-				{39.45, 84.72, TWILIGHT_CRYPTS},
-				{20.85, 62.86, TWILIGHT_CRYPTS},
+				{ 45.1, 54.8, 2504 },
+				{ 39.1, 84.1, 2504 },
+				{ 39.45, 84.72, TWILIGHT_CRYPTS },
+				{ 20.85, 62.86, TWILIGHT_CRYPTS },
 			},
 		}),
 	})),

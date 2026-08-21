@@ -200,7 +200,6 @@ root(ROOTS.Unsorted, {
 			i(276626),	-- Long Centaur Wall
 			i(276628),	-- Scroll of Deep Breath
 			i(276629),	-- Scroll of the Sailfish
-			i(276645),	-- Soggy Shipping Manifest
 			i(276650),	-- Short Centaur Wall
 			i(276652),	-- Tapered Centaur Wall
 			i(276654),	-- Ball

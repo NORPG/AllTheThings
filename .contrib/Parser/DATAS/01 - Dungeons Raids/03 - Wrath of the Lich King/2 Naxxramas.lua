@@ -448,7 +448,7 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			i(39255),	-- Staff of the Plague Beast
 			i(39246),	-- Amulet of Autopsy
 			i(39249),	-- Shoulderplates of Bloodshed
-			i(39248), 	-- Tunic of the Lost Pack
+			i(39248),	-- Tunic of the Lost Pack
 			i(39247),	-- Cuffs of Dark Shadows
 			i(39252),	-- Preceptor's Bindings
 			i(39251),	-- Necrogenic Belt

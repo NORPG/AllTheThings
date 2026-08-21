@@ -218,7 +218,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					
+
 					-- #if SEASON_OF_DISCOVERY
 					-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
 					d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_6, {
@@ -2684,7 +2684,7 @@ applyclassicphase(PHASE_SIX,
 								}),
 							}),
 							cl(ROGUE, {
-								q(9079, { 	-- Bonescythe Helmet
+								q(9079, {	-- Bonescythe Helmet
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16131,	-- Rohan the Assassin
 									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
@@ -2703,7 +2703,7 @@ applyclassicphase(PHASE_SIX,
 									},
 								}),
 
-								q(9080, { 	-- Bonescythe Pauldrons
+								q(9080, {	-- Bonescythe Pauldrons
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16131,	-- Rohan the Assassin
 									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
@@ -2722,7 +2722,7 @@ applyclassicphase(PHASE_SIX,
 									},
 								}),
 
-								q(9077, { 	-- Bonescythe Breastplate
+								q(9077, {	-- Bonescythe Breastplate
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16131,	-- Rohan the Assassin
 									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
@@ -2740,7 +2740,7 @@ applyclassicphase(PHASE_SIX,
 									},
 								}),
 
-								q(9084, { 	-- Bonescythe Bracers
+								q(9084, {	-- Bonescythe Bracers
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16131,	-- Rohan the Assassin
 									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
@@ -2759,7 +2759,7 @@ applyclassicphase(PHASE_SIX,
 									},
 								}),
 
-								q(9082, { 	-- Bonescythe Gauntlets
+								q(9082, {	-- Bonescythe Gauntlets
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16131,	-- Rohan the Assassin
 									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
@@ -2777,7 +2777,7 @@ applyclassicphase(PHASE_SIX,
 									},
 								}),
 
-								q(9083, { 	-- Bonescythe Waistguard
+								q(9083, {	-- Bonescythe Waistguard
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16131,	-- Rohan the Assassin
 									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
@@ -2796,7 +2796,7 @@ applyclassicphase(PHASE_SIX,
 									},
 								}),
 
-								q(9078, { 	-- Bonescythe Legplates
+								q(9078, {	-- Bonescythe Legplates
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16131,	-- Rohan the Assassin
 									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
@@ -2815,7 +2815,7 @@ applyclassicphase(PHASE_SIX,
 									},
 								}),
 
-								q(9081, { 	-- Bonescythe Sabatons
+								q(9081, {	-- Bonescythe Sabatons
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16131,	-- Rohan the Assassin
 									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
@@ -4100,7 +4100,7 @@ applyclassicphase(PHASE_SIX,
 						n(16133, {	-- Mataus the Wrathcaster (WARLOCK)
 							["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
 							["groups"] = {
-								i(236067, {	-- Ring of the Plagueheart  	-- Update IDs if needed
+								i(236067, {	-- Ring of the Plagueheart	-- Update IDs if needed
 									["cost"] = {
 										{ "i", 12938, 1 },	-- Blood of Heroes
 										{ "i", 12363, 3 },	-- Arcane Crystal

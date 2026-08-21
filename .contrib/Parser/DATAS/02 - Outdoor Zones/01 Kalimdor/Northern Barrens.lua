@@ -4311,10 +4311,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["groups"] = {
-						i(5111, { 	-- Rathorian's Cape
+						i(5111, {	-- Rathorian's Cape
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
-						i(5112, { 	-- Ritual Blade
+						i(5112, {	-- Ritual Blade
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},

@@ -2919,6 +2919,7 @@ i(279153);	-- Large Trophy
 i(279160);	-- Mud-Caked Footwraps
 i(274954);	-- Pristine Fang
 i(274953);	-- Serpentine Iris
+i(276645);	-- Soggy Shipping Manifest
 i(273288);	-- Sou'jin Soup
 i(278276);	-- Spoils of Azta'rec
 i(279148);	-- Strip of Snake Hide

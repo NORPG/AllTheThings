@@ -2472,6 +2472,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(93631, name(HEADERS.NPC, 250582)),	-- Skinning Bloated Snapdragon
 			q(95459, name(HEADERS.NPC, 256770)),	-- Skinning Bilemaw the Gluttonous
 			q(93638, name(HEADERS.NPC, 249844)),	-- Skinning Chironex
+			q(97385, name(HEADERS.NPC, 257906), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Coin-Eye Skully
 			q(93633, name(HEADERS.NPC, 255348)),	-- Skinning Dame Bloodshed
 			q(97415, name(HEADERS.NPC, 261142), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Destra
 			q(88545, name(HEADERS.NPC, 245688)),	-- Skinning Gloomclaw
@@ -2492,6 +2493,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(97437, name(HEADERS.NPC, 268049), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Siltmouth
 			q(88526, name(HEADERS.NPC, 245699)),	-- Skinning Silverscale
 			q(95470, name(HEADERS.NPC, 242031)),	-- Skinning Spinefrill
+			q(98368, name(HEADERS.NPC, 258254), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Ss'akrithos <The Boundless Ophidian>
 			q(97416, name(HEADERS.NPC, 261109), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Sss'alik
 			q(95446, name(HEADERS.NPC, 250876)),	-- Skinning Terrinor
 			q(93637, name(HEADERS.NPC, 242033)),	-- Skinning Tiny Vermin

@@ -316,7 +316,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 92937,	-- Awakened Evil
 						["qg"] = 253827,	-- Lady Liadrin
 						["coord"] = { 57.5, 49.1, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {	-- Rewards items that drop inside the dungeon (Still left in unsorted until they are sourced inside the dungeon)
+						["groups"] = {
 							i(273787),	-- Aged Interwoven Scaleplate
 							i(273789),	-- Chestguard of Corroded Scales
 							i(273785),	-- Primordial Robe of Rites
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 62297.06, {	-- The Call of the Void
 					q(95973, {	-- Echoes of the Darkwell
-						--["sourceQuest"] = 93420,	-- Lor'themar's Judgement	-- Exo Note: Available from the get-go on PTR, this may change when Patch goes live. 93420 should be a proper sourceQuest as the story continuation fits nicely.
+						--["sourceQuest"] = 93420,	-- Lor'themar's Judgement
 						["qg"] = 235787,	-- Lor'themar Theron
 						["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),

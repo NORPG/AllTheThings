@@ -968,7 +968,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						853,	-- Hatchet
 						12249,	-- Merciless Axe
 						1196,	-- Tabar
-						37, 	-- Worn Axe
+						37,	-- Worn Axe
 					}},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
@@ -1233,10 +1233,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 39.0, 64.4, THUNDER_BLUFF },	-- Wayfarer's Rest
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "select","itemID",
-						4498, 	-- Brown Leather Satchel
-						4497, 	-- Heavy Brown Bag
-						4499, 	-- Huge Brown Sack
-						4496, 	-- Small Brown Pouch
+						4498,	-- Brown Leather Satchel
+						4497,	-- Heavy Brown Bag
+						4499,	-- Huge Brown Sack
+						4496,	-- Small Brown Pouch
 					}},
 				}),
 				n(3005, {	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
@@ -1476,9 +1476,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.1, 34.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "select","itemID",
-						4498, 	-- Brown Leather Satchel
-						4497, 	-- Heavy Brown Bag
-						4496, 	-- Small Brown Pouch
+						4498,	-- Brown Leather Satchel
+						4497,	-- Heavy Brown Bag
+						4496,	-- Small Brown Pouch
 					}},
 				}),
 				n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>

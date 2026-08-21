@@ -230,7 +230,7 @@ root(ROOTS.Zones, {
 							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
-					q(11665, { 	-- Crocolisks in the City
+					q(11665, {	-- Crocolisks in the City
 						["qg"] = 25580,	-- Old Man Barlo
 						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 						["maps"] = { IRONFORGE, ORGRIMMAR, STORMWIND_CITY },
