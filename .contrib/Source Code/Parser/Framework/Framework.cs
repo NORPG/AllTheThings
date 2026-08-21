@@ -2051,7 +2051,7 @@ namespace ATT
                         if (locale.Key == "en") continue;
 
                         string localizedValue = locale.Value.ToString();
-                        if (!localizedValue.Contains(englishValue))
+                        if (localizedValue != englishValue)
                         {
                             if (!localizationData.TryGetValue(locale.Key, out sublocale))
                             {
