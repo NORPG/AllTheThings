@@ -318,12 +318,50 @@ namespace ATT
         /// <returns>The name or an empty string.</returns>
         private static string ParseNameFromDocument(string document)
         {
-            if (document.Contains(NOT_FOUND_MESSAGE)) return string.Empty;
+            if (document.Contains(NOT_FOUND_MESSAGE))
+                return string.Empty;
+
             int index = document.IndexOf(NAME_START);
-            if (index == -1) return string.Empty;
+            if (index == -1)
+                return string.Empty;
+
             index += NAME_START.Length;
-            return document.Substring(index, document.IndexOf(NAME_END, index) - index).Replace("&quot;", "\"").Trim();
+
+            string raw = document.Substring(index, document.IndexOf(NAME_END, index) - index)
+                                 .Replace("&quot;", "\"")
+                                 .Trim();
+
+            return StripHtmlTags(raw);
         }
+
+        private static string StripHtmlTags(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            var sb = new StringBuilder(input.Length);
+            bool insideTag = false;
+
+            foreach (char c in input)
+            {
+                if (c == '<')
+                {
+                    insideTag = true;
+                    continue;
+                }
+                if (c == '>')
+                {
+                    insideTag = false;
+                    continue;
+                }
+
+                if (!insideTag)
+                    sb.Append(c);
+            }
+
+            return sb.ToString();
+        }
+
 
         /// <summary>
         /// Attempt to update the object data from WoWHead.
