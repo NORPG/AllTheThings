@@ -137,44 +137,65 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- },
 					["groups"] = {
 						q(95972, {	-- Temple Patrol: Ash to Ash
-							["coord"] = { 43.9, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["qg"] = 263346,	-- Er'inye
+							["coord"] = { 43.9, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95952, {	-- Temple Patrol: Breath and Bile
-							["coord"] = { 44.4, 53.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["qg"] = 263472,	-- Er'inye
+							["coord"] = { 44.4, 53.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["groups"] = {
-								i(271864),	-- Rotten Pneuma
-								i(271863),	-- Ophidian Bile
+								i(271864),	-- Rotten Pneuma (QI!)
+								i(271863),	-- Ophidian Bile (QI!)
 							},
 						}),
 						q(95573, {	-- Temple Patrol: Broken Bonds
-							["coord"] = { 49.4, 56.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							-- ["qg"] = ??,
+							["coord"] = { 49.4, 56.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95985, {	-- Temple Patrol: Calming the Dead
-							["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							-- ["qg"] = ??,
+							["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						}),
+						q(95953, {	-- Temple Patrol: Congealed Venom
+							-- ["qg"] = ??,
+							--["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["groups"] = { i(271693) },	-- Congealed Venom (QO!)
+						}),
+						q(96017, {	-- Temple Patrol: Dragged Below
+							["qg"] = 263411,	-- Desperate Warrior
+							["coord"] = { 54.3, 42.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95987, {	-- Temple Patrol: Laid to Rest
+							["qg"] = 263339,	-- Tortured Spirit
 							["coords"] = {
 								{ 50.1, 38.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 								{ 52.6, 45.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							},
-							["qg"] = 263339,	-- Tortured Spirit
+						}),
+						q(95906, {	-- Temple Patrol: Scavenged Weapons
+							-- ["qg"] = ??,
+							["coord"] = { 56.5, 32.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["groups"] = {
+								i(271865),	-- Scavenged Weapon (QI!)
+								i(271868),	-- Splintering Spear (QI!)
+								i(271867),	-- Venom-Etched Sword (QI!)
+							},
+						}),
+						q(95614, {	-- Temple Patrol: Siphon Venom
+							--["qg"] = 261973,	-- Fading Spirit
+							--["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95598, {	-- Temple Patrol: Slay Children of Ula'tek
-							["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["qg"] = 261973,	-- Fading Spirit
+							["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95580, {	-- Temple Patrol: Slay the Restless
 							["coord"] = { 53.0, 50.66, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95962, {	-- Temple Patrol: Vengeance for the Dead
-							["coord"] = { 52.1, 32.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["qg"] = 263336,	-- Vengeful Spirit
+							["coord"] = { 52.1, 32.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
-						-- TODO: add more
 					},
 				})),
 				filter(MISC, {

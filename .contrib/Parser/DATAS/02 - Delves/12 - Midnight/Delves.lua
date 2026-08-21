@@ -187,10 +187,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257379),	-- Player Experience (Epic)
 			i(268297, {	-- Rattling Bag o' Gold
 				["providers"] = {
-					{"o",584512}, -- Nemesis Strongbox
-					{"o",584509}, -- Nemesis Strongbox
-					{"o",584508}, -- Nemesis Strongbox
-					{"o",584511}, -- Nemesis Strongbox
+					{ "o", 584512 }, -- Nemesis Strongbox
+					{ "o", 584509 }, -- Nemesis Strongbox
+					{ "o", 584508 }, -- Nemesis Strongbox
+					{ "o", 584511 }, -- Nemesis Strongbox
 				},
 			}),
 			i(265714),	-- Trovehunter's Bounty

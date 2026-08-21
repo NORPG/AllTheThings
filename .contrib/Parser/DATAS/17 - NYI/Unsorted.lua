@@ -67,11 +67,7 @@ root(ROOTS.Unsorted, {
 			i(271638),	-- Bound Serpent's Jade Eye
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
-			i(271693),	-- Congealed Venom
-			i(271865),	-- Scavenged Weapon
 			i(271866),	-- Well-Worn Hatchet
-			i(271867),	-- Venom-Etched Sword
-			i(271868),	-- Splintering Spear
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
@@ -119,7 +115,6 @@ root(ROOTS.Unsorted, {
 			i(274808),	-- Envenomed Umbral Claymore
 			i(274809),	-- Envenomed Soul Collector
 			i(274810),	-- Envenomed Spring's Frenzy
-			i(274811),	-- Envenomed Sacrificial Dagger
 			i(274812),	-- Envenomed Hunter's Spear
 			i(274813),	-- Envenomed Hammer
 			i(274815),	-- Envenomed Pages
@@ -249,7 +244,6 @@ root(ROOTS.Unsorted, {
 			i(277482),	-- Ouroboric Cycle
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
-			i(277955),	-- Ethereal Bead Strand
 			i(277990),	-- Cursemail Gauntlets
 			i(278044),	-- Hanging Candles
 			i(278050),	-- Corrosive Bijou
@@ -1080,9 +1074,6 @@ root(ROOTS.Unsorted, {
 				i(259473),	-- Charred Amani Trinket
 				i(259474),	-- Lost Amani Toy
 				i(259475),	-- Misplaced Loa Statue
-			}),
-			filter(TOYS, {
-				i(267472),	-- Gnomatic Projector (TOY!)
 			}),
 			i(274427),	-- Sha Loot Box
 		})),

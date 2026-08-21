@@ -1120,6 +1120,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 		filter(COSMETIC, {
 			i(274805, { ["timeline"] = { ADDED_12_1_0 } }),	-- Envenomed Chopper (COSMETIC!)
+			i(274811, { ["timeline"] = { ADDED_12_1_0 } }),	-- Envenomed Sacrificial Dagger (COSMETIC!)
 			i(274801, { ["timeline"] = { ADDED_12_1_0 } }),	-- Envenomed Snakefang (COSMETIC!)
 			i(266393),	-- Farstrider's Gilded Bow (COSMETIC!)
 			i(266396),	-- Farstrider's Solemn Bow (COSMETIC!)
