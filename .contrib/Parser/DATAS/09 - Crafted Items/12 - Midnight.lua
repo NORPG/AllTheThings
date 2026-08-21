@@ -1107,6 +1107,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
 				i(275308),	-- Plans: Amani Forgemaster's Rack (RECIPE!)
 				i(275273),	-- Recipe: Sweet-And-Sour Skewers (RECIPE!)
+				i(278331),	-- Recipe: Sweet-And-Sour Skewers (RECIPE!)
 				i(275320),	-- Schematic: Aetherlume Field Lamp (RECIPE!)
 				i(275684),	-- Schematic: DU5TY, Lazy Looter (RECIPE!)
 				i(278330),	-- Schematic: R0CKY (RECIPE!)
