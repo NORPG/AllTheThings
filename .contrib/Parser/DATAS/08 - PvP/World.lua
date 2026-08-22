@@ -67,24 +67,26 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				["description"] = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
 			}),
 			n(QUESTS, {
-				q(58274, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
+				q(58274, {	-- Servant of N'Zoth
 					["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1, ADDED_12_1_0 },
 					["groups"] = {
 						title(414),	-- <Name>, Servant of N'Zoth
 						i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 						i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 					},
-				})),
-				q(58273, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
+				}),
+				q(58273, {	-- Servant of N'Zoth
 					["description"] = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1, ADDED_12_1_0 },
 					["groups"] = {
 						title(414),	-- <Name>, Servant of N'Zoth
 						i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 						i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 					},
-				})),
+				}),
 				q(52786, bubbleDownSelf({	-- The Alliance Slayer
 					["timeline"] = { REMOVED_10_0_2 },
 					["races"] = HORDE_ONLY,
