@@ -313,7 +313,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_4_0_3 },
 		})),
 		header(HEADERS.Achievement, 62461, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {	-- Family Battler of Cataclysm
-			petbattle(ach(62461, {	-- Family Battler of Cataclysm
+			petbattle(ach(62461, {	-- Family Battler of Cataclysm (automated)
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
 					62476,	-- Aquatic Battler of Cataclysm
@@ -330,27 +330,16 @@ root(ROOTS.Zones, {
 				["timeline"] = { ADDED_12_1_0 },
 				["groups"] = { i(270211) },	-- Furiostraza's Filter (PET!)
 			})),
-			-- TODO: Needs criteria, crs, coords
-			petbattle(ach(62476, {	-- Aquatic Battler of Cataclysm
-			})),
-			petbattle(ach(62477, {	-- Beast Battler of Cataclysm
-			})),
-			petbattle(ach(62478, {	-- Critter Battler of Cataclysm
-			})),
-			petbattle(ach(62479, {	-- Dragonkin Battler of Cataclysm
-			})),
-			petbattle(ach(62480, {	-- Elemental Battler of Cataclysm
-			})),
-			petbattle(ach(62481, {	-- Flying Battler of Cataclysm
-			})),
-			petbattle(ach(62482, {	-- Humanoid Battler of Cataclysm
-			})),
-			petbattle(ach(62483, {	-- Magic Battler of Cataclysm
-			})),
-			petbattle(ach(62487, {	-- Mechanical Battler of Cataclysm
-			})),
-			petbattle(ach(62488, {	-- Undead Battler of Cataclysm
-			})),
+			petbattle(ach(62476)),	-- Aquatic Battler of Cataclysm
+			petbattle(ach(62477)),	-- Beast Battler of Cataclysm
+			petbattle(ach(62478)),	-- Critter Battler of Cataclysm
+			petbattle(ach(62479)),	-- Dragonkin Battler of Cataclysm
+			petbattle(ach(62480)),	-- Elemental Battler of Cataclysm
+			petbattle(ach(62481)),	-- Flying Battler of Cataclysm
+			petbattle(ach(62482)),	-- Humanoid Battler of Cataclysm
+			petbattle(ach(62483)),	-- Magic Battler of Cataclysm
+			petbattle(ach(62487)),	-- Mechanical Battler of Cataclysm
+			petbattle(ach(62488)),	-- Undead Battler of Cataclysm
 		})),
 		header(HEADERS.Achievement, 13279, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 }, }, {	-- Family Battler
 			petbattle(ach(13279, {	-- Family Battler

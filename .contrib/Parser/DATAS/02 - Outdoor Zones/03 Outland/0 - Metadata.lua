@@ -14,7 +14,7 @@ root(ROOTS.Zones, {
 					["timeline"] = { ADDED_3_0_2 },
 				}),
 				header(HEADERS.Achievement, 62460, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {	-- Family Battler of Outland
-					petbattle(ach(62460, {	-- Family Battler of Outland
+					petbattle(ach(62460, {	-- Family Battler of Outland (automated)
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							62466,	-- Aquatic Battler of Outland
@@ -31,27 +31,16 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_12_1_0 },
 						["groups"] = { i(270191) },	-- Lil'Kruul's Hilt (PET!)
 					})),
-					-- TODO: Needs criteria, crs, coords
-					petbattle(ach(62466, {	-- Aquatic Battler of Outland
-					})),
-					petbattle(ach(62467, {	-- Beast Battler of Outland
-					})),
-					petbattle(ach(62468, {	-- Critter Battler of Outland
-					})),
-					petbattle(ach(62469, {	-- Dragonkin Battler of Outland
-					})),
-					petbattle(ach(62470, {	-- Elemental Battler of Outland
-					})),
-					petbattle(ach(62471, {	-- Flying Battler of Outland
-					})),
-					petbattle(ach(62472, {	-- Humanoid Battler of Outland
-					})),
-					petbattle(ach(62473, {	-- Magic Battler of Outland
-					})),
-					petbattle(ach(62474, {	-- Mechanical Battler of Outland
-					})),
-					petbattle(ach(62475, {	-- Undead Battler of Outland
-					})),
+					petbattle(ach(62466)),	-- Aquatic Battler of Outland
+					petbattle(ach(62467)),	-- Beast Battler of Outland
+					petbattle(ach(62468)),	-- Critter Battler of Outland
+					petbattle(ach(62469)),	-- Dragonkin Battler of Outland
+					petbattle(ach(62470)),	-- Elemental Battler of Outland
+					petbattle(ach(62471)),	-- Flying Battler of Outland
+					petbattle(ach(62472)),	-- Humanoid Battler of Outland
+					petbattle(ach(62473)),	-- Magic Battler of Outland
+					petbattle(ach(62474)),	-- Mechanical Battler of Outland
+					petbattle(ach(62475)),	-- Undead Battler of Outland
 				})),
 				ach(1262, {	-- Loremaster of Outland (A) (automated)
 					-- #if BEFORE 5.0.4
