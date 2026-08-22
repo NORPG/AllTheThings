@@ -124,73 +124,94 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			mapped(n(DELVE_COMPLETION, {
 				n(ARMOR, {
 					filter(BACK_F, {
-						i(272227),	-- Galerider's Veil
-						i(272226),	-- Miststalker's Shroud
-						i(272230),	-- Pledgebearer's Pall
-						i(272225),	-- Pyrewalker's Mantle
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272227),	-- Galerider's Veil
+							i(272226),	-- Miststalker's Shroud
+							i(272230),	-- Pledgebearer's Pall
+							i(272225),	-- Pyrewalker's Mantle
+						},
 					}),
 					filter(CLOTH, {
-						i(272232),	-- Pyrewalker's Buskins
-						i(272231),	-- Pyrewalker's Doublet
-						i(272233),	-- Pyrewalker's Gloves
-						i(272236),	-- Pyrewalker's Mantlet
-						i(272234),	-- Pyrewalker's Miter
-						i(272237),	-- Pyrewalker's Obi
-						i(272235),	-- Pyrewalker's Treads
-						i(272238),	-- Pyrewalker's Wraps
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272232),	-- Pyrewalker's Buskins
+							i(272231),	-- Pyrewalker's Doublet
+							i(272233),	-- Pyrewalker's Gloves
+							i(272236),	-- Pyrewalker's Mantlet
+							i(272234),	-- Pyrewalker's Miter
+							i(272237),	-- Pyrewalker's Obi
+							i(272235),	-- Pyrewalker's Treads
+							i(272238),	-- Pyrewalker's Wraps
+						},
 					}),
 					filter(FINGER_F, {
-						i(272148),	-- Anguine Gyre
-						i(272147),	-- Colubrine Band
-						i(272149),	-- Hex Loop
-						i(272150),	-- Ouroboric Signet
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272148),	-- Anguine Gyre
+							i(272147),	-- Colubrine Band
+							i(272149),	-- Hex Loop
+							i(272150),	-- Ouroboric Signet
+						},
 					}),
 					filter(LEATHER, {
-						i(272239),	-- Miststalker's Brigandine
-						i(272245),	-- Miststalker's Cinch
-						i(272242),	-- Miststalker's Cowl
-						i(272243),	-- Miststalker's Cuisses
-						i(272241),	-- Miststalker's Grips
-						i(272244),	-- Miststalker's Spaulders
-						i(272240),	-- Miststalker's Striders
-						i(272246),	-- Miststalker's Wristbands
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272239),	-- Miststalker's Brigandine
+							i(272245),	-- Miststalker's Cinch
+							i(272242),	-- Miststalker's Cowl
+							i(272243),	-- Miststalker's Cuisses
+							i(272241),	-- Miststalker's Grips
+							i(272244),	-- Miststalker's Spaulders
+							i(272240),	-- Miststalker's Striders
+							i(272246),	-- Miststalker's Wristbands
+						},
 					}),
 					filter(MAIL, {
-						i(272247),	-- Galerider's Byrnie
-						i(272249),	-- Galerider's Chain Clasps
-						i(272248),	-- Galerider's Chausses
-						i(272251),	-- Galerider's Chausses
-						i(272250),	-- Galerider's Gaze
-						i(272253),	-- Galerider's Mail Skirt
-						i(272252),	-- Galerider's Mantle
-						i(272254),	-- Galerider's Mesh Wraps
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272247),	-- Galerider's Byrnie
+							i(272249),	-- Galerider's Chain Clasps
+							i(272248),	-- Galerider's Chausses
+							i(272251),	-- Galerider's Chausses
+							i(272250),	-- Galerider's Gaze
+							i(272253),	-- Galerider's Mail Skirt
+							i(272252),	-- Galerider's Mantle
+							i(272254),	-- Galerider's Mesh Wraps
+						},
 					}),
 					filter(NECK_F, {
-						i(272229),	-- Serpentine Talisman
-						i(272228),	-- Whispering Periapt
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272229),	-- Serpentine Talisman
+							i(272228),	-- Whispering Periapt
+						},
 					}),
 					filter(PLATE, {
-						i(272255),	-- Pledgebearer's Cuirass
-						i(272257),	-- Pledgebearer's Gauntlets
-						i(272261),	-- Pledgebearer's Girdle
-						i(272258),	-- Pledgebearer's Mask
-						i(272260),	-- Pledgebearer's Pauldrons
-						i(272259),	-- Pledgebearer's Poleyns
-						i(272256),	-- Pledgebearer's Sabatons
-						i(272262),	-- Pledgebearer's Splints
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272255),	-- Pledgebearer's Cuirass
+							i(272257),	-- Pledgebearer's Gauntlets
+							i(272261),	-- Pledgebearer's Girdle
+							i(272258),	-- Pledgebearer's Mask
+							i(272260),	-- Pledgebearer's Pauldrons
+							i(272259),	-- Pledgebearer's Poleyns
+							i(272256),	-- Pledgebearer's Sabatons
+							i(272262),	-- Pledgebearer's Splints
+						},
 					}),
 					filter(TRINKET_F, {
-						i(251792),	-- Glorious Crusader's Keepsake
-						i(251785),	-- Void-Reaper's Libram
-						-- ["groups"] = sharedData({
-						-- 	["providers"] = {
-						-- 	},
-						-- },{
-
-						-- }),
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(251792),	-- Glorious Crusader's Keepsake
+							i(251785),	-- Void-Reaper's Libram
+						},
 					}),
 					filter(SHIELDS, {
-						i(272276),	-- Wailing Bulwark
+						["providers"] = DATAGROUP.MID.DELVES.WEAPON_PROVIDERS,
+						["groups"] = {
+							i(272276),	-- Wailing Bulwark
+						},
 					}),
 				}),
 				filter(MISC, {
@@ -207,20 +228,23 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					i(279012),	-- Cracked Keystone (QI!/QS!/CI!)
 				}),
 				n(WEAPONS, {
-					i(272270),	-- Bonedust Pestle
-					i(272280),	-- Exhumed Soul-Cleaver
-					i(272266),	-- Forgotten Eidolon's Dagger
-					i(272272),	-- Harrowed Partisan
-					i(272268),	-- Mask-Etcher
-					i(272274),	-- Realm Splitter
-					i(272278),	-- Recurve Wisp-Shooter
-					i(272269),	-- Soulsealer's Headstone
-					i(272275),	-- Soulsinger's Horn
-					i(272271),	-- Spiritbound Focus
-					i(272277),	-- Spirit-Reaver
-					i(272283),	-- Swordsman's Emanation
-					i(272267),	-- Uncoffined Labrys
-					i(272273),	-- Unshrined Ceremonial Scepter
+					["providers"] = DATAGROUP.MID.DELVES.WEAPON_PROVIDERS,
+					["groups"] = {
+						i(272270),	-- Bonedust Pestle
+						i(272280),	-- Exhumed Soul-Cleaver
+						i(272266),	-- Forgotten Eidolon's Dagger
+						i(272272),	-- Harrowed Partisan
+						i(272268),	-- Mask-Etcher
+						i(272274),	-- Realm Splitter
+						i(272278),	-- Recurve Wisp-Shooter
+						i(272269),	-- Soulsealer's Headstone
+						i(272275),	-- Soulsinger's Horn
+						i(272271),	-- Spiritbound Focus
+						i(272277),	-- Spirit-Reaver
+						i(272283),	-- Swordsman's Emanation
+						i(272267),	-- Uncoffined Labrys
+						i(272273),	-- Unshrined Ceremonial Scepter
+					},
 				}),
 			})),
 			n(FACTIONS, {
