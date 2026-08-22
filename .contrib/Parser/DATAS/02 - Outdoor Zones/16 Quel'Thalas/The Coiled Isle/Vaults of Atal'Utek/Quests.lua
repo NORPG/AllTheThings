@@ -188,11 +188,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						q(95906, {	-- Temple Patrol: Scavenged Weapons
 							["qg"] = 263507,
-							["providers"] = {
-								{ "i", 271865 },	-- Scavenged Weapon (QI!)
-								{ "i", 271866 },	-- Well-Worn Hatchet (QI!)
-								{ "i", 271868 },	-- Splintering Spear (QI!)
-								{ "i", 271867 },	-- Venom-Etched Sword (QI!)
+							["qis"] = {
+								271865,	-- Scavenged Weapon (QI!)
+								271866,	-- Well-Worn Hatchet (QI!)
+								271868,	-- Splintering Spear (QI!)
+								271867,	-- Venom-Etched Sword (QI!)
 							},
 							["coords"] = {
 								{ 42.7, 31.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
