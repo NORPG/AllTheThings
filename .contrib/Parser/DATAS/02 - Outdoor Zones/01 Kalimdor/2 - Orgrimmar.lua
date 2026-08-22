@@ -2105,13 +2105,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
-					-- #if BEFORE 4.0.3
-					["coord"] = { 57.4, 53.6, ORGRIMMAR },
-					-- #elseif AFTER 8.0.1
-					["coord"] = { 32.2, 69.4, ORGRIMMAR },
-					-- #else
-					["coord"] = { 32.2, 69.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 32.2, 69.4, ORGRIMMAR },
+						-- #else
+						{ 57.4, 53.6, ORGRIMMAR },
+						-- #endif
+					},
 					["qg"] = 3399,	-- Zamja
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 225,
@@ -3452,11 +3452,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8122, {	-- Kizzak Sparks
 					["coord"] = { 57.8, 56.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					-- #if BEFORE 10.1
-					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
-					-- #else
-					["description"] = "This NPC is only available on July 4th.",
-					-- #endif
+					["description"] =
+						-- #if AFTER 10.1
+						"This NPC is only available on July 4th.",
+						-- #else
+						"This NPC is only available on July 4th (US) or September 30th (EU).",
+						-- #endif
 					["groups"] = {
 						i(8626),	-- Blue Sparkler
 						i(8625),	-- White Sparkler

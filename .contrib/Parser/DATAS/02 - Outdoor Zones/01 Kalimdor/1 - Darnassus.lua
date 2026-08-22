@@ -124,12 +124,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				{	-- A Donation of Silk
 					["qg"] = 14725,	-- Raedon Duskstriker
-					-- #if AFTER TBC
 					-- Blizzard did a dumb and moved the other quest over to the Exodar.
-					["questID"] = 10354,	-- A Donation of Silk [DARN (TBC)]
-					-- #else
-					["questID"] = 7798,		-- A Donation of Silk [DARN (Classic)]
-					-- #endif
+					["questID"] =
+						-- #if AFTER TBC
+						10354,	-- A Donation of Silk [DARN (TBC)]
+						-- #else
+						7798,	-- A Donation of Silk [DARN (Classic)]
+						-- #endif
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -138,12 +139,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 				{	-- A Donation of Wool
 					["qg"] = 14725,	-- Raedon Duskstriker
-					-- #if AFTER TBC
 					-- Blizzard did a dumb and moved the other quest over to the Exodar.
-					["questID"] = 10352,	-- A Donation of Wool [DARN (TBC)]
-					-- #else
-					["questID"] = 7792,		-- A Donation of Wool [DARN (Classic)]
-					-- #endif
+					["questID"] =
+						-- #if AFTER TBC
+						10352,	-- A Donation of Wool [DARN (TBC)]
+						-- #else
+						7792,	-- A Donation of Wool [DARN (Classic)]
+						-- #endif
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -462,11 +464,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(32664, {	-- Learn to Ride
 					-- #if BEFORE 10.1.5
-					-- #if AFTER SL
-					["description"] = "This quest is available to Night Elves upon reaching level 10.",
-					-- #else
-					["description"] = "This quest is available to Night Elves upon reaching level 20.",
-					-- #endif
+					["description"] =
+						-- #if AFTER SL
+						"This quest is available to Night Elves upon reaching level 10.",
+						-- #else
+						"This quest is available to Night Elves upon reaching level 20.",
+						-- #endif
 					-- #endif
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { NIGHTELF },
