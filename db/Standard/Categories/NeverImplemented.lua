@@ -11456,6 +11456,8 @@ crit(14096,{achID=845,awp=30002,id=5}),
 crit(14096,{achID=4827,awp=40003,id=7})}),
 exp(4644,{awp=30002,g={
 crit(14094,{achID=845,id=3})}})}),
+x(2,{
+exp(3957)}),
 x(8,{
 x(8.0001,{awp=80001,g={
 exp(8846),
@@ -18125,8 +18127,7 @@ x(12.01,{awp=120100,g={
 r(1296257,{learnedAt=100,requireSkill=185,skillID=2908}),
 r(1296280,{learnedAt=100,requireSkill=185,skillID=2908}),
 r(1296426,{learnedAt=85,requireSkill=185,skillID=2908}),
-r(1296427,{requireSkill=185}),
-i(278331,{f=200,requireSkill=185})}})})})}),
+r(1296427,{requireSkill=185})}})})})}),
 prof(2984,{awp=110207,g={
 flt(200,{
 x(11,{
@@ -53578,13 +53579,13 @@ flt(50,{
 s(110328,176888,{f=57,requireSkill=393,spellID=124181}),
 s(108542,174280,{f=57,spellID=395392}),
 s(113742,181763,{f=57}),
-s(113741,181760,{f=57,requireSkill=186,spellID=124349}),
+s(113741,181760,{f=57,requireSkill=186,spellID=394872}),
 s(104100,167740,{f=2}),
-s(113743,181764,{f=57,requireSkill=393,spellID=124181}),
+s(113743,181764,{f=57,requireSkill=393,spellID=395335}),
 s(110460,177032,{f=57,requireSkill=393,spellID=124181}),
 s(110462,177038,{f=57,requireSkill=182,spellID=124353}),
 s(111183,178263,{f=57,requireSkill=182,spellID=124353}),
-s(113740,181758,{f=57,requireSkill=182,spellID=124353}),
+s(113740,181758,{f=57,requireSkill=182,spellID=395185}),
 s(104311,168110,{f=2,lvl=2}),
 s(110327,176851,{f=57,requireSkill=186,spellID=124349}),
 s(104274,168064,{f=2,spellID=292237}),

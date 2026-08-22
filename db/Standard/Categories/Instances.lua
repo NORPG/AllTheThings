@@ -3074,8 +3074,7 @@ q(28401,{awp=40003,c={7},coords={
 s(33096,65640,{b=1,f=6,loc=40,r=2}),
 s(33078,65622,{b=1,f=6,loc=40,r=2})}}),
 q(28465,{awp=40003,c={7},coords={
-[85]={{73.6,43.3}}},lvl=20,qgs={168628},r=1,sourceQuests={28301},g={
-i(64312,{spellID=90292}),
+[85]={{73.6,43.3}}},lvl=20,qgs={168628},qis={64312},r=1,sourceQuests={28301},g={
 s(33099,65643,{b=1,f=6,loc=40,r=1}),
 s(33086,65630,{b=1,f=6,loc=40,r=1})}}),
 q(28399,{awp=40003,c={9},coords={
@@ -36482,8 +36481,7 @@ s(82042,140996,{b=1,f=5,loc=44,lvl=45,modID=3}),
 i(141696,{b=1,f=51,lvl=45,modID=3}),
 s(82939,141695,{f=7,loc=44,lvl=45,modID=3})}),
 h(-45,{
-q(44283,{altQuests={44284,44285},description="Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={106482},g={
-i(141303)}})}),
+q(44283,{altQuests={44284,44285},description="Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={106482},qis={141303}})}),
 e(1703,{npcID=102672,g={
 s(80492,139191,{b=1,f=4,loc=41,lvl=45,modID=3}),
 s(80513,139212,{b=1,f=6,loc=45,lvl=45,modID=3}),
@@ -36609,8 +36607,7 @@ s(82043,140996,{b=1,f=5,loc=44,lvl=45,modID=5}),
 i(141696,{b=1,f=51,lvl=45,modID=5}),
 s(82940,141695,{f=7,loc=44,lvl=45,modID=5})}),
 h(-45,{
-q(44284,{altQuests={44285},description="Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={106482},g={
-i(141304)}})}),
+q(44284,{altQuests={44285},description="Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={106482},qis={141304}})}),
 e(1703,{npcID=102672,g={
 s(81128,139191,{b=1,f=4,loc=41,lvl=45,modID=5}),
 s(81240,139212,{b=1,f=6,loc=45,lvl=45,modID=5}),
@@ -36734,8 +36731,7 @@ s(82044,140996,{b=1,f=5,loc=44,lvl=45,modID=6}),
 i(141696,{b=1,f=51,lvl=45,modID=6}),
 s(82941,141695,{f=7,loc=44,lvl=45,modID=6})}),
 h(-45,{
-q(44285,{description="Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",lvl=45,qgs={106482},g={
-i(141305)}})}),
+q(44285,{description="Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",lvl=45,qgs={106482},qis={141305}})}),
 e(1703,{npcID=102672,g={
 ach(10821),
 s(81129,139191,{b=1,f=4,loc=41,lvl=45,modID=6}),
@@ -36873,8 +36869,7 @@ gach(11403)}),
 h(-45,{
 q(44868,{lvl=45,qgs={114263},sourceQuests={44729},g={
 i(142534,{b=1,f=55})}}),
-q(45088,{lvl=45,qgs={114263},g={
-i(142487),
+q(45088,{lvl=45,qgs={114263},qis={142487},g={
 en(143506,{b=1,c={5,8,9},lvl=45,questID=45208,spellID=231638,tmogSetID=171,g={
 s(83993,143362,{f=4,loc=43,lvl={45}}),
 s(294642,247567,{b=1,f=4,loc=45,lvl={45}}),
@@ -37741,8 +37736,7 @@ s(84560,144404,{f=4,loc=45,lvl=45,modID=3}),
 s(84568,144406,{f=6,loc=45,lvl=45,modID=3}),
 s(84564,144405,{f=5,loc=45,lvl=45,modID=3})}),
 h(-45,{
-q(45381,{altQuests={45382,45383},description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={110791},g={
-i(143656),
+q(45381,{altQuests={45382,45383},description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={110791},qis={143656},g={
 i(141324,{b=1,f=51,lvl=45})}})}),
 e(1706,{npcID=102263,g={
 i(140789,{b=1,f=53,lvl=45,modID=3,spellID=225033}),
@@ -37978,8 +37972,7 @@ s(84561,144404,{f=4,loc=45,lvl=45,modID=5}),
 s(84569,144406,{f=6,loc=45,lvl=45,modID=5}),
 s(84565,144405,{f=5,loc=45,lvl=45,modID=5})}),
 h(-45,{
-q(45382,{altQuests={45383},description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={110791},g={
-i(143657),
+q(45382,{altQuests={45383},description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={110791},qis={143657},g={
 i(141325,{b=1,f=51,lvl=45})}})}),
 e(1706,{npcID=102263,g={
 i(140789,{b=1,f=53,lvl=45,modID=5,spellID=225033}),
@@ -38212,8 +38205,7 @@ s(84562,144404,{f=4,loc=45,lvl=45,modID=6}),
 s(84570,144406,{f=6,loc=45,lvl=45,modID=6}),
 s(84566,144405,{f=5,loc=45,lvl=45,modID=6})}),
 h(-45,{
-q(45383,{description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",lvl=45,qgs={110791},g={
-i(143658),
+q(45383,{description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",lvl=45,qgs={110791},qis={143658},g={
 i(141326,{b=1,f=51,lvl=45})}})}),
 e(1706,{npcID=102263,g={
 ach(10840),
@@ -41863,7 +41855,7 @@ s(78972,134465,{b=1,f=6,loc=47,lvl=40,modID=1}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=1}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=1}),
 s(78973,134508,{b=1,f=7,loc=44,lvl=40,modID=1}),
-i(137373,{b=1,f=53,lvl=40,modID=1,spellID=215745}),
+i(137373,{b=1,f=53,lvl=40,modID=1,spellID=358933}),
 s(78971,134438,{b=1,f=5,loc=42,lvl=40,modID=1}),
 s(78970,137372,{b=1,f=4,loc=43,lvl=40,modID=1}),
 i(137375,{b=1,f=54,lvl=40,modID=1}),
@@ -41926,7 +41918,7 @@ s(80125,134465,{b=1,f=6,loc=47,lvl=40,modID=2}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=2}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=2}),
 s(79950,134508,{b=1,f=7,loc=44,lvl=40,modID=2}),
-i(137373,{b=1,f=53,lvl=40,modID=2,spellID=215745}),
+i(137373,{b=1,f=53,lvl=40,modID=2,spellID=358933}),
 s(80063,134438,{b=1,f=5,loc=42,lvl=40,modID=2}),
 s(80036,137372,{b=1,f=4,loc=43,lvl=40,modID=2}),
 i(137375,{b=1,f=54,lvl=40,modID=2}),
@@ -41995,7 +41987,7 @@ s(78972,134465,{b=1,f=6,loc=47,lvl=40,modID=23}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=23}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=23}),
 s(78973,134508,{b=1,f=7,loc=44,lvl=40,modID=23}),
-i(137373,{b=1,f=53,lvl=40,modID=23,spellID=215745}),
+i(137373,{b=1,f=53,lvl=40,modID=23,spellID=358933}),
 s(78971,134438,{b=1,f=5,loc=42,lvl=40,modID=23}),
 s(78970,137372,{b=1,f=4,loc=43,lvl=40,modID=23}),
 i(137375,{b=1,f=54,lvl=40,modID=23}),
@@ -46711,6 +46703,7 @@ s(98390,158355,{b=1,f=6,loc=42,lvl=50}),
 s(95593,159303,{b=1,f=5,loc=42,lvl=50}),
 s(95591,159301,{b=1,f=5,loc=45}),
 i(168129,{b=1}),
+i(273649,{awp=120100,f=53,spellID=1295275}),
 de(26208,{awp=120100,itemID=278245,spellID=1304312})}})}}),
 d(23,{difficulties={8,23},g={
 ach(12722,{
@@ -64573,6 +64566,7 @@ de(1426,{itemID=244343,spellID=1237022}),
 crit(116123,{achID=63521}),
 crit(116123,{achID=63531})}}),
 e(2887,{
+r(1291691,{itemID=273070,requireSkill=165,skillID=2915}),
 de(25813,{itemID=279122,spellID=1306036}),
 crit(116124,{achID=63521}),
 crit(116124,{achID=63531})}),
@@ -64595,7 +64589,7 @@ s(306609,271435,{f=4,loc=47,modID=4,up=3}),
 s(306618,271438,{f=5,loc=40,modID=4,up=3})}),
 h(-19,{crs={257347,258557,258558,259927,261835,261843,261848},g={
 cu(3443,{rwp=120200})}}),
-ah(3317,{type="d",g={
+ah(3316,{type="d",g={
 e(2888,{npcID=259927,g={
 s(304478,268248,{f=3,modID=4,up=3}),
 s(304350,268216,{f=6,loc=45,modID=4,up=3}),
@@ -64610,6 +64604,33 @@ s(304410,268231,{f=6,loc=41,modID=4,up=3}),
 s(306535,268208,{f=21,modID=4,up=3}),
 s(306541,270930,{f=34,modID=4,up=3}),
 s(304426,268235,{f=5,loc=42,modID=4,up=3})}}),
+e(2887,{providers={{"o",673657}},g={
+i(270916,{c={3,7,13},modID=4,spellID=1289284,g={
+s(307045,271501,{c={13},f=6,loc=40,modID=4,up=3}),
+s(306973,271492,{c={3},f=6,loc=40,modID=4,up=3}),
+s(306901,271483,{c={7},f=6,loc=40,modID=4,up=3})}}),
+i(270915,{c={4,10,11,12},modID=4,spellID=1289284,g={
+s(307333,271537,{c={12},f=5,loc=40,modID=4,up=3}),
+s(307261,271528,{c={11},f=5,loc=40,modID=4,up=3}),
+s(307189,271519,{c={10},f=5,loc=40,modID=4,up=3}),
+s(307117,271510,{c={4},f=5,loc=40,modID=4,up=3})}}),
+i(270917,{c={1,2,6},modID=4,spellID=1289284,g={
+s(306829,271474,{c={6},f=7,loc=40,modID=4,up=3}),
+s(306757,271465,{c={2},f=7,loc=40,modID=4,up=3}),
+s(306685,271456,{c={1},f=7,loc=40,modID=4,up=3})}}),
+i(270914,{c={5,8,9},modID=4,spellID=1289284,g={
+s(307549,271564,{c={8},f=4,loc=40,modID=4,up=3}),
+s(307477,271555,{c={5},f=4,loc=40,modID=4,up=3}),
+s(307405,271546,{c={9},f=4,loc=40,modID=4,up=3})}}),
+i(268251,{f=51,modID=4,spellID=1305838,up=3}),
+s(304514,268261,{f=5,loc=47,modID=4,up=3}),
+s(304378,268223,{f=6,loc=42,modID=4,up=3}),
+s(304450,268241,{f=4,loc=41,modID=4,up=3}),
+i(270171,{f=53,modID=4,spellID=1295775,up=3}),
+s(306577,268264,{f=20,modID=4,up=3}),
+s(304366,268220,{f=7,loc=44,modID=4,up=3}),
+i(270170,{f=53,modID=4,spellID=1295833,up=3})}})}}),
+ah(3317,{type="d",g={
 e(2874,{crs={258557,258558},g={
 i(270912,{c={3,7,13},modID=4,spellID=1289285,g={
 s(307069,271504,{c={13},f=6,loc=42,modID=4,up=3}),
@@ -64663,7 +64684,7 @@ s(304486,268254,{f=6,loc=45,modID=4,up=3}),
 i(270166,{f=53,modID=4,spellID=1295553,up=3}),
 s(306568,268205,{f=28,modID=4,up=3}),
 i(268249,{f=52,modID=4,spellID=1305830,up=3})})}}),
-ah(3319,{type="d",g={
+ah(3318,{type="d",g={
 e(2894,{crs={261835,261843,261848},providers={{"o",673637}},g={
 i(270924,{c={3,7,13},modID=4,spellID=1289281,g={
 s(307029,271499,{c={13},f=6,loc=41,modID=4,up=3}),
@@ -64716,34 +64737,8 @@ i(270174,{f=53,modID=4,spellID=1295643,up=3}),
 s(304422,268234,{f=5,loc=44,modID=4,up=3}),
 s(306571,268206,{f=23,modID=4,up=3}),
 i(270163,{f=53,modID=4,spellID=1295617,up=3}),
-s(306574,268201,{f=35,modID=4,up=3})}}),
-e(2887,{providers={{"o",673657}},g={
-i(270916,{c={3,7,13},modID=4,spellID=1289284,g={
-s(307045,271501,{c={13},f=6,loc=40,modID=4,up=3}),
-s(306973,271492,{c={3},f=6,loc=40,modID=4,up=3}),
-s(306901,271483,{c={7},f=6,loc=40,modID=4,up=3})}}),
-i(270915,{c={4,10,11,12},modID=4,spellID=1289284,g={
-s(307333,271537,{c={12},f=5,loc=40,modID=4,up=3}),
-s(307261,271528,{c={11},f=5,loc=40,modID=4,up=3}),
-s(307189,271519,{c={10},f=5,loc=40,modID=4,up=3}),
-s(307117,271510,{c={4},f=5,loc=40,modID=4,up=3})}}),
-i(270917,{c={1,2,6},modID=4,spellID=1289284,g={
-s(306829,271474,{c={6},f=7,loc=40,modID=4,up=3}),
-s(306757,271465,{c={2},f=7,loc=40,modID=4,up=3}),
-s(306685,271456,{c={1},f=7,loc=40,modID=4,up=3})}}),
-i(270914,{c={5,8,9},modID=4,spellID=1289284,g={
-s(307549,271564,{c={8},f=4,loc=40,modID=4,up=3}),
-s(307477,271555,{c={5},f=4,loc=40,modID=4,up=3}),
-s(307405,271546,{c={9},f=4,loc=40,modID=4,up=3})}}),
-i(268251,{f=51,modID=4,spellID=1305838,up=3}),
-s(304514,268261,{f=5,loc=47,modID=4,up=3}),
-s(304378,268223,{f=6,loc=42,modID=4,up=3}),
-s(304450,268241,{f=4,loc=41,modID=4,up=3}),
-i(270171,{f=53,modID=4,spellID=1295775,up=3}),
-s(306577,268264,{f=20,modID=4,up=3}),
-s(304366,268220,{f=7,loc=44,modID=4,up=3}),
-i(270170,{f=53,modID=4,spellID=1295833,up=3})}})}}),
-ah(3320,{type="d",g={
+s(306574,268201,{f=35,modID=4,up=3})}})}}),
+ah(3319,{type="d",g={
 e(2883,{
 s(306595,268209,{f=21,modID=4,spellID=1291718,up=3}),
 s(306586,268211,{f=25,modID=4,up=3}),
@@ -64804,7 +64799,7 @@ d(14,{
 h(-19,{crs={257347,258557,258558,259927,261835,261843,261848},g={
 cu(3444,{rwp=120200})}}),
 h(-45,{
-q(98226,{qgs={262667}})}),
+q(98226,{qgs={262667},qis={280007}})}),
 h(-63,{
 s(306622,271440,{f=6,loc=47,modID=3,up=5}),
 s(306608,271435,{f=4,loc=47,modID=3,up=5}),
@@ -65006,7 +65001,7 @@ d(15,{
 h(-19,{crs={257347,258557,258558,259927,261835,261843,261848},g={
 cu(3445,{rwp=120200})}}),
 h(-45,{
-q(98228,{qgs={262667}})}),
+q(98228,{qgs={262667},qis={280089}})}),
 h(-63,{
 s(306624,271440,{f=6,loc=47,modID=5,up=6}),
 s(306610,271435,{f=4,loc=47,modID=5,up=6}),
@@ -65189,7 +65184,7 @@ d(16,{
 h(-19,{crs={257347,258557,258558,259927,261835,261843,261848},g={
 cu(3446,{rwp=120200})}}),
 h(-45,{
-q(98229,{qgs={262667}})}),
+q(98229,{qgs={262667},qis={280090}})}),
 h(-63,{
 s(306625,271440,{f=6,loc=47,modID=6}),
 s(306611,271435,{f=4,loc=47,modID=6}),

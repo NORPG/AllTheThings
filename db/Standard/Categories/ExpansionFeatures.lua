@@ -6025,7 +6025,7 @@ ach(9110),
 ach(9111),
 ach(9129,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
 gb(10,{b=1,itemID=111967,lvl=10,r=2}),
-gb(10,{b=1,itemID=116186,lvl=10,r=1})}}),
+gb(10,{b=1,itemID=116186,lvl=10,r=1,sourceAchievements={9129}})}}),
 ach(9828,{r=2,sym={{"partial_achievement",10015}}}),
 ach(9912,{r=2,sym={{"partial_achievement",10015}},g={
 toy(122700,{b=1})}}),
@@ -6039,7 +6039,7 @@ title(260)}),
 ach(9210,{r=2}),
 ach(9132,{r=1}),
 ach(9487,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(143,{b=1,itemID=111983,lvl=10})}}),
+gb(143,{b=1,itemID=111983,lvl=10,sourceAchievements={9487}})}}),
 ach(9125,{
 crit(25260,{achID=9094,id=1})}),
 ach(9126,{
@@ -6118,14 +6118,14 @@ ach(9491,{r=2}),
 ach(9492,{r=1}),
 ach(9405),
 ach(9406,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(120,{b=1,itemID=111930,lvl=10}),
-gb(126,{b=1,itemID=111973,lvl=10}),
-gb(124,{b=1,itemID=109257,lvl=10}),
-gb(132,{b=1,itemID=111975,lvl=10}),
-gb(130,{b=1,itemID=111979,lvl=10}),
-gb(128,{b=1,itemID=111993,lvl=10}),
-gb(118,{b=1,itemID=111991,lvl=10}),
-gb(122,{b=1,itemID=111989,lvl=10})}}),
+gb(120,{b=1,itemID=111930,lvl=10,sourceAchievements={9406}}),
+gb(126,{b=1,itemID=111973,lvl=10,sourceAchievements={9406}}),
+gb(124,{b=1,itemID=109257,lvl=10,sourceAchievements={9406}}),
+gb(132,{b=1,itemID=111975,lvl=10,sourceAchievements={9406}}),
+gb(130,{b=1,itemID=111979,lvl=10,sourceAchievements={9406}}),
+gb(128,{b=1,itemID=111993,lvl=10,sourceAchievements={9406}}),
+gb(118,{b=1,itemID=111991,lvl=10,sourceAchievements={9406}}),
+gb(122,{b=1,itemID=111989,lvl=10,sourceAchievements={9406}})}}),
 ach(9407)}}),
 flt(101,{maps={582,590},pb=1,sym={{"select","speciesID",560}},g={
 h(-45,{pb=1,g={
@@ -6217,7 +6217,7 @@ gb(133,{
 h(-12,{
 ach(9450),
 ach(9565,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(133,{b=1,itemID=111969,lvl=10})}}),
+gb(133,{b=1,itemID=111969,lvl=10,sourceAchievements={9565}})}}),
 ach(9451),
 ach(9452)}),
 h(-45,{
@@ -6493,7 +6493,7 @@ r(170832,{requireSkill=755,u=5})}})})}),
 gb(161,{pvp=1,g={
 h(-12,{pvp=1,g={
 ach(9495,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",pvp=1,g={
-gb(161,{b=1,itemID=111981,lvl=10,pvp=1})}}),
+gb(161,{b=1,itemID=111981,lvl=10,pvp=1,sourceAchievements={9495}})}}),
 ach(9725,{pvp=1,questID=37282,g={
 title(302,{gender=2,pvp=1}),
 title(303,{gender=3,pvp=1})}}),
@@ -6795,7 +6795,7 @@ i(126732,{b=1,f=53,lvl=40,pvp=1,r=1})}})}})}})}})}})}}),
 gb(137,{
 h(-12,{
 ach(9454,{cost={{"i",116053,500}},description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(137,{b=1,itemID=111997,lvl=10})}})}),
+gb(137,{b=1,itemID=111997,lvl=10,sourceAchievements={9454}})}})}),
 h(-58,{
 n(85344,{r=2,g={
 p(1396,{b=1,cost={{"i",116053,1000}},itemID=110721,npcID=79039,spellID=159581}),
@@ -6817,7 +6817,7 @@ gb(36,{
 h(-12,{
 ach(9703,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
 gb(36,{b=1,itemID=109065,lvl=10,r=2}),
-gb(36,{b=1,itemID=116432,lvl=10,r=1})}})}),
+gb(36,{b=1,itemID=116432,lvl=10,r=1,sourceAchievements={9703}})}})}),
 h(-33,{crs={84947,87305},sort=1,SortType="name",g={
 follower(342),
 follower(227),
@@ -7313,7 +7313,7 @@ title(257)}}),
 ach(9076,{providers={{"s",168507}}}),
 ach(9429,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
 crit(25174,{achID=9429,id=1,providers={{"s",168507}}}),
-gb(138,{b=1,itemID=109255,lvl=10})}})}),
+gb(138,{b=1,itemID=109255,lvl=10,sourceAchievements={9429}})}})}),
 h(-45,{
 q(36189,{lvl=10,qgs={84248},r=2}),
 q(36137,{lvl=10,qgs={84247},r=1}),
@@ -7363,7 +7363,7 @@ toy(127695,{cost={{"i",163036,100}}})}})})}),
 gb(63,{
 h(-12,{
 ach(9453,{cost={{"i",115508,500}},description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(63,{b=1,itemID=116249,lvl=10,r=1}),
+gb(63,{b=1,itemID=116249,lvl=10,r=1,sourceAchievements={9453}}),
 gb(63,{b=1,itemID=111996,lvl=10,r=2})}})}),
 h(-56,{
 o(232541,{
@@ -7372,7 +7372,7 @@ i(118903,{b=1,f=55,spellID=176061})})})}),
 gb(141,{
 h(-12,{
 ach(9468,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(141,{b=1,itemID=111977,lvl=10})}})}),
+gb(141,{b=1,itemID=111977,lvl=10,sourceAchievements={9468}})}})}),
 h(-45,{
 q(37086,{coords={
 [582]={{46.4,59.4},{50.4,57.4},{51.4,63.2}}},lvl=10,qgs={77378},r=2,g={
@@ -7915,7 +7915,7 @@ crit(26078,{achID=9705,id=6,providers={{"i",118469}},r=1}),
 crit(26079,{achID=9705,id=6,providers={{"i",118469}},r=1})}}),
 ach(9538),
 ach(9526,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(67,{b=1,itemID=112003,lvl=10})}}),
+gb(67,{b=1,itemID=112003,lvl=10,sourceAchievements={9526}})}}),
 ach(9540,{r=2,g={
 mnt(171838,{b=1,itemID=116781,lvl=10}),
 title(277),
@@ -8189,7 +8189,7 @@ gb(39,{r=1,g={
 h(-12,{
 ach(9497,{cost={{"i",117491,500}},description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
 gb(39,{b=1,itemID=109063,lvl=10,r=2}),
-gb(39,{b=1,itemID=116197,lvl=10,r=1})}})}),
+gb(39,{b=1,itemID=116197,lvl=10,r=1,sourceAchievements={9497}})}})}),
 h(-45,{
 q(36848,{cost={{"i",117491,25}},lvl=10,qgs={77367,79836}}),
 q(38354,{lvl=10,qgs={77367},r=2}),
@@ -8269,8 +8269,10 @@ title(287,{r=1})}}),
 ach(9476,{r=2,g={
 title(288,{r=2})}})}),
 h(-31,{
-faction(1710,{r=2}),
-faction(1708,{r=1})}),
+faction(1710,{r=2,g={
+crit(25831,{achID=9478,id=6,r=2})}}),
+faction(1708,{r=1,g={
+crit(25830,{achID=9477,id=6,r=1})}})}),
 h(-45,{
 q(36948,{cost={{"i",118378,1},{"i",118379,1},{"i",118376,1},{"i",118375,1}},description="Completing this quest grants you the ability to access the Auction House from your Garrison.",lvl=30,qgs={87206},r=2}),
 q(37014,{cost={{"i",118378,1},{"i",118379,1},{"i",118376,1},{"i",118375,1}},description="Completing this quest grants you the ability to access the Auction House from your Garrison.",lvl=30,qgs={86806},r=1}),
@@ -8426,7 +8428,7 @@ gb(164,{
 h(-12,{
 ach(9527,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
 gb(164,{b=1,itemID=111985,lvl=10,r=2}),
-gb(164,{b=1,itemID=116201,lvl=10,r=1}),
+gb(164,{b=1,itemID=116201,lvl=10,r=1,sourceAchievements={9527}}),
 crit(26627,{achID=9527,id=1,providers={{"s",168407}}}),
 crit(26628,{achID=9527,id=2,providers={{"s",168655}}}),
 crit(26629,{achID=9527,providers={{"s",168653}}}),
@@ -8592,7 +8594,7 @@ ach(9139),
 ach(9140),
 ach(9146),
 ach(9523,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(28,{b=1,itemID=111971,lvl=10}),
+gb(28,{b=1,itemID=111971,lvl=10,sourceAchievements={9523}}),
 crit(27798,{achID=9147,id=1})}}),
 ach(9141),
 ach(9142),
@@ -10407,48 +10409,30 @@ gb(117,{b=1,itemID=111990,lvl=10}),
 gb(121,{b=1,itemID=111988,lvl=10}),
 gb(144,{b=1,itemID=111986,lvl=10}),
 gb(9,{b=1,itemID=116185,lvl=10,r=1}),
-ach(9406,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(120,{b=1,itemID=111930,lvl=10}),
-gb(126,{b=1,itemID=111973,lvl=10}),
-gb(124,{b=1,itemID=109257,lvl=10}),
-gb(132,{b=1,itemID=111975,lvl=10}),
-gb(130,{b=1,itemID=111979,lvl=10}),
-gb(128,{b=1,itemID=111993,lvl=10}),
-gb(118,{b=1,itemID=111991,lvl=10}),
-gb(122,{b=1,itemID=111989,lvl=10})}}),
-ach(9565,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(133,{b=1,itemID=111969,lvl=10})}}),
-ach(9523,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(28,{b=1,itemID=111971,lvl=10}),
-crit(27798,{achID=9147,id=1})}}),
-ach(9462,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",sym={{"meta_achievement",9461,9460,9459,9458,9457,9456,9455}},g={
-gb(135,{b=1,itemID=111928,lvl=10})}}),
-ach(9453,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(63,{b=1,itemID=116249,lvl=10,r=1})}}),
-ach(9703,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(36,{b=1,itemID=116432,lvl=10,r=1})}}),
-ach(9495,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(161,{b=1,itemID=111981,lvl=10})}}),
-ach(9527,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(164,{b=1,itemID=116201,lvl=10,r=1})}}),
-ach(9454,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(137,{b=1,itemID=111997,lvl=10})}}),
-ach(9429,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(138,{b=1,itemID=109255,lvl=10})}}),
-ach(9463,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(168,{b=1,itemID=111999,lvl=10})}}),
-ach(9468,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(141,{b=1,itemID=111977,lvl=10})}}),
-ach(9497,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(39,{b=1,itemID=116197,lvl=10,r=1})}}),
-ach(9526,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(67,{b=1,itemID=112003,lvl=10})}}),
-ach(9487,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(143,{b=1,itemID=111983,lvl=10})}}),
-ach(9477,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",r=1,g={
-gb(145,{b=1,itemID=111987,lvl=10})}}),
-ach(9129,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(10,{b=1,itemID=116186,lvl=10,r=1})}})}}),
+gb(120,{b=1,itemID=111930,lvl=10,sourceAchievements={9406}}),
+gb(126,{b=1,itemID=111973,lvl=10,sourceAchievements={9406}}),
+gb(124,{b=1,itemID=109257,lvl=10,sourceAchievements={9406}}),
+gb(132,{b=1,itemID=111975,lvl=10,sourceAchievements={9406}}),
+gb(130,{b=1,itemID=111979,lvl=10,sourceAchievements={9406}}),
+gb(128,{b=1,itemID=111993,lvl=10,sourceAchievements={9406}}),
+gb(118,{b=1,itemID=111991,lvl=10,sourceAchievements={9406}}),
+gb(122,{b=1,itemID=111989,lvl=10,sourceAchievements={9406}}),
+gb(133,{b=1,itemID=111969,lvl=10,sourceAchievements={9565}}),
+gb(28,{b=1,itemID=111971,lvl=10,sourceAchievements={9523}}),
+gb(135,{b=1,itemID=111928,lvl=10,sourceAchievements={9462}}),
+gb(63,{b=1,itemID=116249,lvl=10,r=1,sourceAchievements={9453}}),
+gb(36,{b=1,itemID=116432,lvl=10,r=1,sourceAchievements={9703}}),
+gb(161,{b=1,itemID=111981,lvl=10,sourceAchievements={9495}}),
+gb(164,{b=1,itemID=116201,lvl=10,r=1,sourceAchievements={9527}}),
+gb(137,{b=1,itemID=111997,lvl=10,sourceAchievements={9454}}),
+gb(138,{b=1,itemID=109255,lvl=10,sourceAchievements={9429}}),
+gb(168,{b=1,itemID=111999,lvl=10,sourceAchievements={9463}}),
+gb(141,{b=1,itemID=111977,lvl=10,sourceAchievements={9468}}),
+gb(39,{b=1,itemID=116197,lvl=10,r=1,sourceAchievements={9497}}),
+gb(67,{b=1,itemID=112003,lvl=10,sourceAchievements={9526}}),
+gb(143,{b=1,itemID=111983,lvl=10,sourceAchievements={9487}}),
+gb(145,{b=1,itemID=111987,lvl=10,sourceAchievements={9477,9478}}),
+gb(10,{b=1,itemID=116186,lvl=10,r=1,sourceAchievements={9129}})}}),
 n(91404,{awp=60100,r=2,g={
 i(120945,{b=1,cost={{"i",111557,5},{"i",110609,5},{"i",109125,5},{"i",109693,5},{"i",109118,5}}}),
 r(188676,{awp=60200,collectible=false,cost={{"i",108996,10}},itemID=128161,requireSkill=171,u=5}),
@@ -10603,48 +10587,30 @@ gb(127,{b=1,itemID=111992,lvl=10}),
 gb(117,{b=1,itemID=111990,lvl=10}),
 gb(121,{b=1,itemID=111988,lvl=10}),
 gb(144,{b=1,itemID=111986,lvl=10}),
-ach(9406,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(120,{b=1,itemID=111930,lvl=10}),
-gb(126,{b=1,itemID=111973,lvl=10}),
-gb(124,{b=1,itemID=109257,lvl=10}),
-gb(132,{b=1,itemID=111975,lvl=10}),
-gb(130,{b=1,itemID=111979,lvl=10}),
-gb(128,{b=1,itemID=111993,lvl=10}),
-gb(118,{b=1,itemID=111991,lvl=10}),
-gb(122,{b=1,itemID=111989,lvl=10})}}),
-ach(9565,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(133,{b=1,itemID=111969,lvl=10})}}),
-ach(9523,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(28,{b=1,itemID=111971,lvl=10}),
-crit(27798,{achID=9147,id=1})}}),
-ach(9129,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(10,{b=1,itemID=111967,lvl=10,r=2})}}),
-ach(9462,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",sym={{"meta_achievement",9461,9460,9459,9458,9457,9456,9455}},g={
-gb(135,{b=1,itemID=111928,lvl=10})}}),
-ach(9495,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(161,{b=1,itemID=111981,lvl=10})}}),
-ach(9527,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(164,{b=1,itemID=111985,lvl=10,r=2})}}),
-ach(9454,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(137,{b=1,itemID=111997,lvl=10})}}),
-ach(9429,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(138,{b=1,itemID=109255,lvl=10})}}),
-ach(9453,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(63,{b=1,itemID=111996,lvl=10,r=2})}}),
-ach(9703,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(36,{b=1,itemID=109065,lvl=10,r=2})}}),
-ach(9497,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(39,{b=1,itemID=109063,lvl=10,r=2})}}),
-ach(9463,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(168,{b=1,itemID=111999,lvl=10})}}),
-ach(9468,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(141,{b=1,itemID=111977,lvl=10})}}),
-ach(9526,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(67,{b=1,itemID=112003,lvl=10})}}),
-ach(9487,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",g={
-gb(143,{b=1,itemID=111983,lvl=10})}}),
-ach(9478,{description="Unlocks the ability to purchase the blueprint from Blueprints Vendors.",r=2,g={
-gb(145,{b=1,itemID=111987,lvl=10})}})}}),
+gb(120,{b=1,itemID=111930,lvl=10,sourceAchievements={9406}}),
+gb(126,{b=1,itemID=111973,lvl=10,sourceAchievements={9406}}),
+gb(124,{b=1,itemID=109257,lvl=10,sourceAchievements={9406}}),
+gb(132,{b=1,itemID=111975,lvl=10,sourceAchievements={9406}}),
+gb(130,{b=1,itemID=111979,lvl=10,sourceAchievements={9406}}),
+gb(128,{b=1,itemID=111993,lvl=10,sourceAchievements={9406}}),
+gb(118,{b=1,itemID=111991,lvl=10,sourceAchievements={9406}}),
+gb(122,{b=1,itemID=111989,lvl=10,sourceAchievements={9406}}),
+gb(133,{b=1,itemID=111969,lvl=10,sourceAchievements={9565}}),
+gb(28,{b=1,itemID=111971,lvl=10,sourceAchievements={9523}}),
+gb(135,{b=1,itemID=111928,lvl=10,sourceAchievements={9462}}),
+gb(63,{b=1,itemID=116249,lvl=10,r=1,sourceAchievements={9453}}),
+gb(36,{b=1,itemID=116432,lvl=10,r=1,sourceAchievements={9703}}),
+gb(161,{b=1,itemID=111981,lvl=10,sourceAchievements={9495}}),
+gb(164,{b=1,itemID=116201,lvl=10,r=1,sourceAchievements={9527}}),
+gb(137,{b=1,itemID=111997,lvl=10,sourceAchievements={9454}}),
+gb(138,{b=1,itemID=109255,lvl=10,sourceAchievements={9429}}),
+gb(168,{b=1,itemID=111999,lvl=10,sourceAchievements={9463}}),
+gb(141,{b=1,itemID=111977,lvl=10,sourceAchievements={9468}}),
+gb(39,{b=1,itemID=116197,lvl=10,r=1,sourceAchievements={9497}}),
+gb(67,{b=1,itemID=112003,lvl=10,sourceAchievements={9526}}),
+gb(143,{b=1,itemID=111983,lvl=10,sourceAchievements={9487}}),
+gb(145,{b=1,itemID=111987,lvl=10,sourceAchievements={9477,9478}}),
+gb(10,{b=1,itemID=116186,lvl=10,r=1,sourceAchievements={9129}})}}),
 n(76872,{r=1,g={
 de(1416,{awp=110207,cost={{"c",824,150}},itemID=244324,spellID=1236865})}}),
 n(95470,{r=2,g={
@@ -42667,7 +42633,8 @@ de(22147,{awp=120001,itemID=278374,spellID=1304708}),
 toy(276207,{awp=120001}),
 de(24890,{awp=120001,itemID=278378,spellID=1304713})}}),
 h(-47,{
-cu(3392)}),
+cu(3392),
+i(273000,{awp=120100})}),
 h(-58,{
 n(258181,{coords={
 [2393]={{55.8,66}}},g={

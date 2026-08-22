@@ -45890,11 +45890,13 @@ crit(25790,{achID=9105,id=3,providers={{"s",173446}},pvp=1}),
 crit(25791,{achID=9105,id=4,providers={{"s",173445}},pvp=1})}})}}),
 h(-31,{pvp=1,g={
 ah(1681,{pvp=1,r=1,type="fa",g={
-faction(1681,{pvp=1}),
+faction(1681,{pvp=1,g={
+crit(25342,{achID=9477,id=5,r=1})}}),
 ach(9473,{pvp=1,g={
 title(285,{pvp=1,u=2})}})}}),
 ah(1682,{pvp=1,r=2,type="fa",g={
-faction(1682,{pvp=1}),
+faction(1682,{pvp=1,g={
+crit(25341,{achID=9478,id=5,r=2})}}),
 ach(9474,{pvp=1,g={
 title(286,{pvp=1,u=2})}})}})}}),
 h(-45,{pvp=1,g={

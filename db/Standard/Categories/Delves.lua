@@ -2567,10 +2567,11 @@ mnt(1268924,{cost={{"c",3316,10}},itemID=262500,lvl=10})})}})}})}}),
 h(-675,{awp=120100,rwp=120200,g={
 m(2634,{coords={
 [2512]={{51.2,30.3}}},icon=7876113,g={
-n(262455,{
+n(262455,{questID=96434,g={
 ach(63326,{
 s(309591,276163,{f=3}),
-crit(115861,{achID=61906,id=4})})}),
+crit(115861,{achID=61906,id=4})}),
+p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687})}}),
 n(265500,{
 ach(63334,{description="Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",g={
 title(776)}}),
@@ -2654,7 +2655,6 @@ i(251785,{b=1,f=53,lvl=78,spellID=1253113})}),
 flt(8,{
 s(307905,272276,{f=8})})}),
 flt(50,{
-i(273000),
 i(279290,{questID=98043,spellID=1306485}),
 i(274374,{f=55,providers={{"o",584518}},questID=86371,spellID=1293799})}),
 flt(104,{
@@ -2692,7 +2692,8 @@ q(97482,{coords={
 toy(275988)}}),
 q(96612,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},providers={{"i",274965}}}),
 q(96615,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},providers={{"i",274970}}}),
-q(97616,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},providers={{"i",277506}}}),
+q(97616,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},providers={{"i",277506}},g={
+i(273000)}}),
 q(97910,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},providers={{"i",279012}}})}),
 h(-56,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},g={
 o(656489,{cost={{"i",253342,1}},isWeekly=1,questID=92887,sym={{"select","itemID",265368,265366,265367}},g={
@@ -2826,7 +2827,8 @@ de(15064,{itemID=263233,spellID=1270134}),
 de(5131,{awp=120100,itemID=248963,spellID=1248178}),
 de(24889,{awp=120100,itemID=275855,spellID=1298014})}}),
 h(-56,{
-o(584514,{providers={{"i",254250}},VerifyLoot={"armor","weapon","miscellaneous"}}),
+o(584514,{providers={{"i",254250}},VerifyLoot={"armor","weapon","miscellaneous"},g={
+i(273000)}}),
 o(623258,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584517,{providers={{"i",257386}},VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584515,{providers={{"i",257387}},VerifyLoot={"armor","weapon","miscellaneous"}}),
@@ -3040,7 +3042,8 @@ de(7780,{cost={{"c",2803,500}},itemID=250770,spellID=1251353}),
 de(25296,{awp=120100,cost={{"c",2803,500}},itemID=275853,spellID=1298012}),
 de(24765,{awp=120100,cost={{"c",2803,500}},itemID=275857,spellID=1298016})}),
 flt(50,{
-i(280458,{awp=120100,cost={{"i",273000,1}},spellID=1308957}),
+i(280458,{awp=120100,cost={{"i",273000,1}},spellID=1308957,g={
+cu(2803)}}),
 i(264652,{b=1,cost={{"c",2803,2000}},spellID=1272164}),
 i(244193,{cost={{"c",2803,1000}},f=55,lvl=70,spellID=1236623}),
 i(263188,{b=1,cost={{"c",2803,2000}},lvl=90,questID=93882,spellID=1269905}),
