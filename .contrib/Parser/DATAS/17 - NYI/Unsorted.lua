@@ -23,7 +23,6 @@ root(ROOTS.Unsorted, {
 			i(265400),	-- Calcified Turtle Heart
 			i(265402),	-- Fistful of Gnat Wings
 			i(265620),	-- Rehydrated Zandalari Peppers
-			i(265622),	-- Knotted Swamp Stick
 			i(265626),	-- Shattered Teapot
 			i(265790),	-- Cache of Mistcrests
 			i(266327),	-- Pristine Spinal Barb
@@ -45,8 +44,6 @@ root(ROOTS.Unsorted, {
 			i(268965),	-- Familiar Threshadon Tooth Necklace
 			i(268968),	-- Hastily Written Note
 			i(269720),	-- Corrosive Hekte
-			i(270191),	-- Lil'Kruul's Hilt
-			i(270211),	-- Furiostraza's Filter
 			i(270267),	-- Twilight Missive
 			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
@@ -913,16 +910,8 @@ root(ROOTS.Unsorted, {
 				mount(1294677),	-- [PH] Horse with Hat
 			}),
 			filter(QUEST_ITEMS, {
-				i(274580),	-- Primessence of Fel
 				i(274913),	-- Brazier Pieces
 				i(274924),	-- Spore-Infused Lungs
-				i(274581),	-- Primessence of Shadow
-				i(274582),	-- Primessence of Life
-				i(274583),	-- Primessence of Arcane
-				i(274584),	-- Primessence of Light
-				i(274585),	-- Primessence of Death
-				i(274620),	-- Singularian Cryocore
-				i(274640),	-- Arcfluxion Hydrospore
 				i(274783),	-- Fel Embers
 				i(274798),	-- Remote Detonator
 			}),

@@ -759,9 +759,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { CREATED_9_0_2, ADDED_10_0_2 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
-					["groups"] = {
-						i(183188),	-- Chromie's Scroll (H) (QI!)
-					},
+					["qi"] = 183188,	-- Chromie's Scroll (H) (QI!)
 				}),
 				warchiefscommand(q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 					["qg"] = 45244,	-- Farseer Krogar
@@ -1120,8 +1118,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "toyID", 122674 },	-- S.E.L.F.I.E. Camera MkII
+					["qi"] = 155832,	-- Pristine Crystal Shard (QI!)
 					["groups"] = {
-						i(155832),	-- Pristine Crystal Shard (QI!)
 						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
 							["timeline"] = { ADDED_6_1_0 },
 							["groups"] = {
@@ -1396,14 +1394,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(66323, {	-- Idling Pie
 					["sourceQuest"] = 66253,	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
+					["qi"] = 191682,	-- Explosive Pie (QI!)
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(191682, {	-- Explosive Pie (QI!)
-							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
-						}),
-					},
 				}),
 				q(2754, {	-- Horns of Frenzy
 					-- #if BEFORE 4.0.3
@@ -2100,6 +2094,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(50769, {	-- The Stormwind Extraction
 					["sourceQuest"] = 51443,	-- Mission Statement
 					["qg"] = 135205,	-- Nathanos Blightcaller
+					["qi"] = 160251,	-- Blightcaller's Easy Death (QI!)
 					["coord"] = { 54.4, 78.4, ORGRIMMAR },
 					["timeline"] = { ADDED_8_0_1 },
 					["maps"] = {
@@ -2108,9 +2103,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1013,	-- The Stockade (Scenario)
 					},
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(160251),	-- Blightcaller's Easy Death (QI!)
-					},
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
 					-- #if BEFORE 4.0.3
@@ -2507,7 +2499,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(166805, {	-- Blood-Soaked Invitation (QI!)
+						i(166805, {	-- Blood-Soaked Invitation (QS!)
 							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},

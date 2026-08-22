@@ -271,7 +271,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				o(656489, {	-- Azta'rec Cache
 					["questID"] = 92887,
 					["isWeekly"] = true,
-					["cost"] = { { "i", 253342, 1 } },	-- Beacon of Hope
+					["cost"] = { { "i", 275910, 1 } },	-- Scalebound Herald's Flute
 					["sym"] = {{"select","itemID",
 					--	264971,	-- Annihilation Rod (COSMETIC!)
 					--	264970,	-- Oblivion's Edge (COSMETIC!)

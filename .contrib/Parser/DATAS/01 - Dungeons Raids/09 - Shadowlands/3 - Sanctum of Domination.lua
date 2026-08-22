@@ -706,10 +706,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
-						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
-						["groups"] = {
-							i(187529),	-- Phylactery Shard (QI!)
-						},
+						["qg"] = 178592,	-- Highlord Bolvar Fordragon
+						["qi"] = 187529,	-- Phylactery Shard (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -752,10 +750,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
-						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
-						["groups"] = {
-							i(187530),	-- Phylactery Shard (QI!)
-						},
+						["qg"] = 178592,	-- Highlord Bolvar Fordragon
+						["qi"] = 187530,	-- Phylactery Shard (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -784,10 +780,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(64599, {	-- Sanctum of Domination - Damned If You Don't [M]
-						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
-						["groups"] = {
-							i(187531),	-- Phylactery Shard (QI!)
-						},
+						["qg"] = 178592,	-- Highlord Bolvar Fordragon
+						["qi"] = 187531,	-- Phylactery Shard (QI!)
 					}),
 				}),
 				ZoneDrops(),

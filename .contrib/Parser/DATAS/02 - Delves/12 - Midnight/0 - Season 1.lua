@@ -461,6 +461,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(253342, {	-- Beacon of Hope
 							["cost"] = { { "c", UNDERCOIN, 5000 } },
 							--["questID"] = ???,
+							["timeline"] = { REMOVED_12_1_0 },
 						}),
 						i(263178, {	-- Delver's Starter Kit (CI!)
 							--["cost"] = { { "c", UNDERCOIN, 0 } },

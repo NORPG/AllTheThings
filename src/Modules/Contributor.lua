@@ -3472,6 +3472,7 @@ MobileDB.GameObject = {
 	[642080] = true,	-- Challenger's Cache [Ruby Life Pools]
 	[642083] = true,	-- Challenger's Cache [King's Rest]
 	[642087] = true,	-- Challenger's Cache [Temple of Sethraliss]
+	[642113] = true,	-- Challenger's Cache [Den of Nalorakk]
 	[642203] = true,	-- Repair Supplies
 	[642704] = true,	-- Seagull Feather (q:95673)
 	[649481] = true,	-- Wood Debris (q:96111)

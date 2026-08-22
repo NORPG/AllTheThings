@@ -1044,8 +1044,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			q(97016, {	-- Mixing Mysteries
 				["sourceQuest"] = 97026,	-- Esoteric Ingredients
-				["qg"] = 254599,	-- Ofi the Sly
-				["coord"] = { 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["qgs"] = {
+					254599,	-- Ofi the Sly
+					263327,	-- Ofi the Sly
+				},
+				["coords"] = {
+					{ 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 61.0, 32.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+				},
 				["isRepeatable"] = true,
 				["groups"] = {
 					ach(63432, {	-- Mysterious Mix Master

@@ -53,9 +53,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						44683,	-- Holding the Lines
 					},
 					["qg"] = 114310,	-- Archmage Khadgar
+					["qi"] = 142213,	-- Empowered Arcane Ward (QI!)
 					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 					["lvl"] = 110,
-					["groups"] = { i(142213) },	-- Empowered Arcane Ward (QI!)
 				}),
 				q(44556, {	-- Return to Karazhan
 					["qg"] = 90417,	-- Archmage Khadgar

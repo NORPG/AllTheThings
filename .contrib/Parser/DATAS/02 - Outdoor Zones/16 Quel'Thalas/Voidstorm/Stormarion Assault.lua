@@ -73,7 +73,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(QUESTS, {
 				q(92365, {	-- Creating Defenses
 					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
-					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+					["coords"] = {
+						{ 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+						{ 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					},
 					["groups"] = {
 						o(571718, {	-- Selune's Stormarion Cores
 							["coord"] = { 25.8, 68.7, MAP.MIDNIGHT.VOIDSTORM },
@@ -102,7 +105,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--["sourceQuests"] = { 86810 },	-- Harvesting the Void (TODO: ???)
 					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
 					["isWeekly"] = true,
-					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+					["coords"] = {
+						{ 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+						{ 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					},
 					["groups"] = {
 						i(251284),	-- Anomaly Inverter (QI!)
 					},

@@ -1072,7 +1072,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					["sourceQuest"] = 8801,	-- C'Thun's Legacy
 					["providers"] = {
 						{ "n", 15379 },	-- Caelestrasz (QG!)
-						{ "i", 21221 },	-- Eye of C'Thun (QI!)
+						{ "i", 21221 },	-- Eye of C'Thun (QS!)
 					},
 					["groups"] = {
 						i(21712),	-- Amulet of the Fallen God

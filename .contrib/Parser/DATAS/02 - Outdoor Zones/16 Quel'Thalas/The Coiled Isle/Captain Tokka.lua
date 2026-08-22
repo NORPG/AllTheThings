@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						ach(63632),	-- Toxic Trophies
 						ach(63512),	-- Treasures of the Damned
 						ach(63634, {	-- Where Did You Get That?
-							["cost"] = { { "i", 244790, 1 } },	-- The Coiled Huntress [Fishing Tool]
+							["provider"] = { "i", 244790 },	-- The Coiled Huntress [Fishing Tool]
 						}),
 					}),
 					n(QUESTS, sharedDataSelf({	-- Second Mate Sluggs
@@ -96,6 +96,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						q(97465, {	-- The Intended Way to Fish
 							["provider"] = { "i", 278001 } -- Forgotten Amani Fishing Rod
+						}),
+					}),
+					n(RARES, {
+						n(270024, {	-- Cook Leathertongue
+							["description"] = "Provides 50 Captain Tokka Reputation on kill",
+							["provider"] = { "i", 279207 },	-- Blackened Sludgefish
+						}),
+						n(270222, {	-- Master Grenadier Birdie
+							["description"] = "Provides 50 Captain Tokka Reputation on kill",
+							["provider"] = { "i", 279210 },	-- Explosive Tlhapi
+						}),
+						n(269765, {	-- Quartermaster Inktail
+							["description"] = "Provides 50 Captain Tokka Reputation on kill",
+							["provider"] = { "i", 278848 },	-- Pustulent Blightswarmer
 						}),
 					}),
 					n(VENDORS, {
@@ -214,6 +228,33 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			header(HEADERS.Faction, FACTION_CAPTAIN_TOKKA, {
 				q(97537),	-- Triggered after turning in 'A Collection of Rot' (94804)
+				q(98484, {	-- First Captain Tokka rare fished up (Daily)
+					["name"] = "First Captain Tokka rare fished up (Daily)",
+					["providers"] = {
+						{ "n", 270024 },	-- Cook Leathertongue
+						{ "n", 270222 },	-- Master Grenadier Birdie
+						{ "n", 269765 },	-- Quartermaster Inktail
+					},
+					["isDaily"] = true,
+				}),
+				q(98485, {	-- Second Captain Tokka rare fished up (Daily)
+					["name"] = "Second Captain Tokka rare fished up (Daily)",
+					["providers"] = {
+						{ "n", 270024 },	-- Cook Leathertongue
+						{ "n", 270222 },	-- Master Grenadier Birdie
+						{ "n", 269765 },	-- Quartermaster Inktail
+					},
+					["isDaily"] = true,
+				}),
+				q(98486, {	-- Third Captain Tokka rare fished up (Daily)
+					["name"] = "Third Captain Tokka rare fished up (Daily)",
+					["providers"] = {
+						{ "n", 270024 },	-- Cook Leathertongue
+						{ "n", 270222 },	-- Master Grenadier Birdie
+						{ "n", 269765 },	-- Quartermaster Inktail
+					},
+					["isDaily"] = true,
+				}),
 			}),
 		})),
 	}),
