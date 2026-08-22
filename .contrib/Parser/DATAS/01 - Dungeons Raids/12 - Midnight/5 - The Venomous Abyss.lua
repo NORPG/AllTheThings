@@ -433,23 +433,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 				}),
-				header(HEADERS.LFGDungeon, 3317, {	-- The Essence of Ula'tek
+				header(HEADERS.LFGDungeon, 3316, {	-- The Soulcoilers
 					Boss(NEKZALI),
+					Boss(TWIN_FANGS),
+				}),
+				-- TODO: verify when available, changed from PTR
+				header(HEADERS.LFGDungeon, 3317, {	-- The Essence of Venom
 					Boss(ENTOMBED),
 					Boss(VASHNIK),
 				}),
-				header(HEADERS.LFGDungeon, 3319, {	-- Beasts of Ula'tek
+				header(HEADERS.LFGDungeon, 3318, {	-- The Serpent Warren
 					Boss(EXPLORERS),
 					Boss(SSZORAK),
-					Boss(TWIN_FANGS),
 				}),
-				header(HEADERS.LFGDungeon, 3320, {	-- The Heart of Ula'tek
+				header(HEADERS.LFGDungeon, 3319, {	-- The Heart of Ula'tek
 					Boss(COILED_ALTAR),
 					Boss(ULATEK, {
 						i(270909, {	-- Slumbering Coil Curio
-							["sym"] = {
-								{"sub", "instance_tier",1320,DIFFICULTY.RAID.LFR},
-								},
+							["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
 					}),
@@ -510,9 +511,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				Boss(COILED_ALTAR),
 				Boss(ULATEK, {
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {
-							{"sub", "instance_tier",1320,DIFFICULTY.RAID.NORMAL},
-						},
+						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
 				}),
@@ -551,9 +550,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				Boss(COILED_ALTAR),
 				Boss(ULATEK, {
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {
-							{"sub", "instance_tier",1320,DIFFICULTY.RAID.HEROIC},
-						},
+						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 					}),
 				}),
@@ -603,9 +600,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(275658),	-- Primeval Skyfriend (MOUNT!)
 					i(279129, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- The Venomous Abyss Gleaming Trophy (DECOR!)
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {
-							{"sub", "instance_tier",1320,DIFFICULTY.RAID.MYTHIC},
-						},
+						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 					}),
 				}),
