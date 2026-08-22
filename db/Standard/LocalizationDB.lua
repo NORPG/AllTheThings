@@ -1750,6 +1750,7 @@ localize(L.HEADER_NAMES, {
 	[-764] = select(2,GetAchievementInfo(62922)),
 	[-765] = "Prey MID S1",
 	[-766] = "Prey MID S2",
+	[-768] = WEEKLY,
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2495,6 +2496,7 @@ localize(L.HEADER_ICONS, {
 	[-764] = 6124221,
 	[-765] = _.asset("category_prey"),
 	[-766] = _.asset("category_prey"),
+	[-768] = _.asset("interface_questw"),
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

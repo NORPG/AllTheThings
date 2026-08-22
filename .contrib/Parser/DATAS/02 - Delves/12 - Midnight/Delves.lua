@@ -299,6 +299,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			o(584514, {	-- Bountiful Coffer
 				["provider"] = { "i", 254250 },	-- Bountiful Coffer
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["groups"] = {
+					i(273000),	-- Corrosive Soul
+				},
 			}),
 			o(623258, {	-- Pilfered Trunk
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
@@ -645,6 +648,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(280458, {	-- Delver's Corroded Pouch of Undercoin
 						["timeline"] = { ADDED_12_1_0 },
 						["cost"] = { { "i", 273000, 1 } },	-- 1x Corrosive Soul
+						["groups"] = { currency(UNDERCOIN) },
 					}),
 					i(264652, {	-- Delver's Pouch of Voidlight Marl
 						["cost"] = { { "c", UNDERCOIN, 2000 } },

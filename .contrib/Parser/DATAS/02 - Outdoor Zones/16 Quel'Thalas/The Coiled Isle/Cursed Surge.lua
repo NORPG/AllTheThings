@@ -6,7 +6,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			ach(63390),	-- Turn the Surge
 		}),
-		header(HEADERS.Achievement, 63381, sharedData({	["isDaily"] = true }, {
+		header(HEADERS.Achievement, 63381,	-- Cursebreaker
+		bubbleDownFiltered({["isDaily"] = true },FILTERFUNC_questID,{
 			n(255088, {	-- Looming Mutagenitor
 				["coord"] = { 26.6, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 93718,
@@ -46,6 +47,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(276167),	-- Ori'kassi's Lance
 					i(276178),	-- Venom Lancer's Gauntlets
 				},
+			}),
+			n(REWARDS, {
+				i(273000),	-- Corrosive Soul
 			}),
 		})),
 	}),

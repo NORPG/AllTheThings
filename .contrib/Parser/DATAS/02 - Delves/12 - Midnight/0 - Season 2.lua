@@ -67,12 +67,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				["coord"] = { 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["groups"] = {
 					n(262455, {	-- Azta'rec ?
-						--["questID"] = XXXXX,	-- triggers on ? and ?? difficulties
+						["questID"] = 96434,
 						--["isDaily"] = true,
 						["groups"] = {
 							ach(63326, {	-- My Venomous Nemesis
 								i(276163),	-- Apophic Patagia (COSMETIC!)
 							}),
+							i(262391, {timeline={ADDED_12_1_0}}),	-- Ominous Dominus
 						},
 					}),
 					n(265500, {	-- Azta'rec ??
@@ -193,7 +194,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 				}),
 				filter(MISC, {
-					i(273000),	-- Corrosive Soul
 					i(279290),	-- Fang Lover's (CI!)
 					i(274374, {	-- Trovehunter's Bounty
 						["providers"] = { { "o",584518 } }, -- Bountiful Heavy Trunk (verified)
@@ -260,6 +260,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				q(97616, {	-- Corrosive Gifts: Corrosive Power
 					["provider"] = { "i", 277506 },	-- Codex of the Soul Coilers (QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
+					["groups"] = { i(273000) },	-- Corrosive Soul
 				}),
 				q(97910, {	-- Cracked Keystone
 					["provider"] = { "i", 279012 },	-- Cracked Keystone (QS!)
@@ -299,12 +300,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 	}),
 }))
 
---[[root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, {
-		["timeline"] = { ADDED_12_1_0 },
-		["groups"] = {
-			n(DELVES_MID_S2, {
-			}),
-		},
+		n(DELVES_MID_S2, {
+			["timeline"] = { ADDED_12_1_0 },
+			["groups"] = {
+				q(95039),	-- triggered when buying Delver's Cosmetic Surprise Bag [275986]
+				q(98787),	-- triggered with completion of Slithering Spoils [97321]
+			},
+		}),
 	}),
-}))--]]
+}))

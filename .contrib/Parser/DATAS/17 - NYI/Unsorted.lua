@@ -67,7 +67,6 @@ root(ROOTS.Unsorted, {
 			i(271638),	-- Bound Serpent's Jade Eye
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
-			i(271866),	-- Well-Worn Hatchet
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
@@ -606,7 +605,6 @@ root(ROOTS.Unsorted, {
 					i(273066),	-- Polished Ammolite++
 				}),
 				prof(LEATHERWORKING, {
-					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
 					i(273068),	-- Adorned Fang+
 					i(273069),	-- Adorned Fang++
 				}),

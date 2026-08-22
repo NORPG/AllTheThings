@@ -412,6 +412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				BossOnly(TWIN_FANGS, {
 					i(279122),	-- Venom-Fanged Font (DECOR)
+					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
 				}),
 				BossOnly(COILED_ALTAR, {
 					i(279131),	-- Pillar of the Coiled Isle (DECOR!)
@@ -493,7 +494,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				n(QUESTS, {
 					q(98226, {	-- The Venomous Abyss: Deception Unmasked [N]
-						["qg"] = 262667,	-- Zul'jarra
+						["providers"] = {
+							{ "n", 262667 },	-- Zul'jarra
+							{ "i", 280007 },	-- Mask Fragment
+						},
 					}),
 				}),
 				ZoneDrops({}),

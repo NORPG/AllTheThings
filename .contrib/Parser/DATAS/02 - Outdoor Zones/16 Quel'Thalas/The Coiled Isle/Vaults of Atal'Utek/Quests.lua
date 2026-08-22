@@ -2,6 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+SYM.MIDNIGHT.COILED_ISLE.VAULTS.VENOM_ITEMS = {{"select","itemID",279345},{"pop"}}
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
@@ -88,6 +90,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["sourceQuest"] = 98388,	-- Into the Vaults of Atal'Utek
 					["qg"] = 262798,	-- Warleader Abdumati
 					["coord"] = { 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["groups"] = {
+						i(273000),	-- Corrosive Soul
+						i(279382, {sym=SYM.MIDNIGHT.COILED_ISLE.VAULTS.VENOM_ITEMS}),	-- Venom-Cursed Fragment
+					},
 				}),
 				-- Zone Repeatables
 				q(95520, {	-- Purging the Vaults
@@ -100,6 +106,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },		-- Talon Commander Zela
 					},
 					["isDaily"] = true,
+					["groups"] = {
+						i(273000),	-- Corrosive Soul
+						i(279382, {sym=SYM.MIDNIGHT.COILED_ISLE.VAULTS.VENOM_ITEMS}),	-- Venom-Cursed Fragment
+					},
 				}),
 				q(96641, {	-- Relentless Strikes
 					["qg"] = 272109, -- Hawkeye Socho
@@ -163,7 +173,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						q(96017, {	-- Temple Patrol: Dragged Below
 							["qg"] = 263411,	-- Desperate Warrior
-							["coord"] = { 54.3, 42.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["coords"] = {
+								{ 41.0, 39.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								{ 45.0, 10.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								{ 54.3, 42.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							},
 						}),
 						q(95987, {	-- Temple Patrol: Laid to Rest
 							["qg"] = 263339,	-- Tortured Spirit
@@ -173,17 +187,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 						}),
 						q(95906, {	-- Temple Patrol: Scavenged Weapons
-							-- ["qg"] = ??,
-							["coord"] = { 56.5, 32.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-							["groups"] = {
-								i(271865),	-- Scavenged Weapon (QI!)
-								i(271868),	-- Splintering Spear (QI!)
-								i(271867),	-- Venom-Etched Sword (QI!)
+							["qg"] = 263507,
+							["providers"] = {
+								{ "i", 271865 },	-- Scavenged Weapon (QI!)
+								{ "i", 271866 },	-- Well-Worn Hatchet (QI!)
+								{ "i", 271868 },	-- Splintering Spear (QI!)
+								{ "i", 271867 },	-- Venom-Etched Sword (QI!)
+							},
+							["coords"] = {
+								{ 42.7, 31.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								{ 56.5, 32.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							},
 						}),
 						q(95614, {	-- Temple Patrol: Siphon Venom
-							--["qg"] = 261973,	-- Fading Spirit
-							--["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["qg"] = 262061,	-- Fading Spirit
+							["coords"] = {
+								{ 40.2, 17.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								{ 46.1, 35.3, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							},
 						}),
 						q(95598, {	-- Temple Patrol: Slay Children of Ula'tek
 							["qg"] = 261973,	-- Fading Spirit
@@ -205,11 +226,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			n(REWARDS, {
-				i(273000),	-- Corrosive Soul
 				i(274374),	-- Trovehunter's Bounty
-				i(279382, {	-- Venom-Cursed Fragment
-					["sym"] = {{"select","itemID",279345},{"pop"}}
-				}),
 			}),
 		}),
 	}),
@@ -225,9 +242,20 @@ root(ROOTS.HiddenQuestTriggers, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(96037),	-- completion of 95952 -- Breath and Bile
 				q(96032),	-- completion of 95573 -- Broken Bonds
 				q(96042),	-- completion of 95985 -- Calming the Dead
+				q(96039),	-- completion of 96017 -- Dragged Below
 				q(96043),	-- completion of 95987 -- Laid to Rest
 				q(96034),	-- completion of 95598 -- Slay Children of Ula'tek
+				q(96036),	-- completion of 95906 -- Scavenged Weapons
+				q(96035),	-- completion of 95614 -- Siphon Venom
 				q(96040),	-- completion of 95962 -- Vengeance for the Dead
+				-- not sure if these need to be real quests or not
+				q(95639),	-- Clear the Clutch
+				q(95640),	-- Clear the Clutch
+				q(95641),	-- Clear the Clutch
+				q(95881),	-- completed when 95641 accepted
+				q(95616),	-- Barrier A (accepted with 95639)
+				q(95617),	-- Barrier B (accepted with 95639)
+				q(95619),	-- Barrier C (accepted with 95639)
 			})),
 		}),
 	}),
