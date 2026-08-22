@@ -186,6 +186,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		ach(9070, {	-- Overstuffed
 			["timeline"] = { ADDED_6_0_3_LAUNCH },
 		}),
+		ach(9463, {["timeline"] = { ADDED_6_0_3_LAUNCH }}),	-- Draenic Pet Battler
 		ach(7936, {	-- Pandaren Spirit Tamer
 			["timeline"] = { ADDED_5_1_0 },
 		}),
