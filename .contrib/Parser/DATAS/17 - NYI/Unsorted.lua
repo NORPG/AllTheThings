@@ -5,7 +5,6 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
 		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
-			i(158368),	-- Sethraliss' Defiled Relic
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
@@ -73,7 +72,6 @@ root(ROOTS.Unsorted, {
 			i(273311),	-- Kobold Candle Collection
 			i(273312),	-- Large Exodar Crystal
 			i(273313),	-- Stormstout Brewery Lantern
-			i(273649),	-- Stormbound Emblem of Dazar
 			i(273818),	-- [DNT] Knowledge Tome: Midnight Herbalism
 			i(273848),	-- Snake Scales
 			i(273881),	-- Anti-Venom Shell

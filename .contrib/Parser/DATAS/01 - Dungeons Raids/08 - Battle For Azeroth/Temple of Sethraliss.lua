@@ -95,7 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(159424),	-- Desert Guardian's Breastplate
 						i(159257),	-- Robes of the Reborn Serpent
 						i(159337),	-- Grips of Electrified Defense
-						i(158368),	-- Fangs of Intertwined Essence
+						i(158368),	-- Sethraliss' Defiled Relic
 						i(168131),	-- Essence of the Sands
 					},
 				}),
@@ -161,7 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(159424),	-- Desert Guardian's Breastplate
 						i(159257),	-- Robes of the Reborn Serpent
 						i(159337),	-- Grips of Electrified Defense
-						i(158368),	-- Fangs of Intertwined Essence
+						i(158368),	-- Sethraliss' Defiled Relic
 						i(168131),	-- Essence of the Sands
 					},
 				}),

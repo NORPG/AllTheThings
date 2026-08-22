@@ -7392,7 +7392,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["sym"] = {{"select", "modItemID",
 					modItemId(158373,1),	-- Resonating Crystal Scimitar
 					modItemId(159337,1),	-- Grips of Electrified Defense
-					modItemId(158368,1),	-- Fangs of Intertwined Essence
+					modItemId(158368,1),	-- Sethraliss' Defiled Relic
 					modItemId(168131,1),	-- Essence of the Sands
 				}},
 				["groups"] = {
