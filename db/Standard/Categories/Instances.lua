@@ -33627,10 +33627,8 @@ ach(9680,{rwp=70003,u=2}),
 i(127785,{b=1,lvl=40,spellID=187958,u=2})}})}}),
 d(14,{
 h(-45,{
-q(39502,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39504,"questID",39505},lvl=40,qgs={95659},sourceQuests={39499},g={
-i(128419)}}),
-q(39499,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39500,"questID",39501},lvl=40,qgs={95659},g={
-i(128416)}})}),
+q(39502,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39504,"questID",39505},lvl=40,qgs={95659},qis={128419},sourceQuests={39499}}),
+q(39499,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39500,"questID",39501},lvl=40,qgs={95659},qis={128416}})}),
 h(-63,{
 s(69671,124182,{f=4,loc=45,lvl=40,modID=3}),
 s(69984,124323,{f=7,loc=47,lvl=40,modID=3}),
@@ -33947,10 +33945,8 @@ q(40962,{coords={
 [80]={{36.4,41.6}}},lvl=40,qgs={102432},rwp=70003,sourceQuests={40904},u=2,g={
 mnt(189999,{b=1,itemID=128422,u=2})}}),
 q(40904,{lvl=40,maps={80},providers={{"i",133762}},rwp=70003,u=2}),
-q(39504,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39505},lvl=40,qgs={95659},sourceQuests={39500},g={
-i(128420)}}),
-q(39500,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39501},lvl=40,qgs={95659},g={
-i(128417)}})}),
+q(39504,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39505},lvl=40,qgs={95659},qis={128420},sourceQuests={39500}}),
+q(39500,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39501},lvl=40,qgs={95659},qis={128417}})}),
 h(-63,{
 s(69672,124182,{f=4,loc=45,lvl=40,modID=5}),
 s(69986,124323,{f=7,loc=47,lvl=40,modID=5}),
@@ -34265,10 +34261,8 @@ i(124514,{b=1,c={11},f=53,lvl=40,modID=5,spellID=184876}),
 i(124516,{b=1,c={8},f=53,lvl=40,modID=5,spellID=184903})}})}),
 d(16,{
 h(-45,{
-q(39505,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",lvl=40,qgs={95659},sourceQuests={39501},g={
-i(128421)}}),
-q(39501,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",lvl=40,qgs={95659},g={
-i(128418)}})}),
+q(39505,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",lvl=40,qgs={95659},qis={128421},sourceQuests={39501}}),
+q(39501,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",lvl=40,qgs={95659},qis={128418}})}),
 h(-63,{
 s(69673,124182,{f=4,loc=45,lvl=40,modID=6}),
 s(69987,124323,{f=7,loc=47,lvl=40,modID=6}),
@@ -38758,8 +38752,7 @@ ach(11770,{crs={121193},g={
 crit(36544,{achID=11763,id=8})}})}})}}),
 d(14,{
 h(-45,{
-q(47725,{altQuests={47726,47727},description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={119723},g={
-i(151248)}})}),
+q(47725,{altQuests={47726,47727},description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={119723},qis={151248}})}),
 h(-63,{
 s(86596,147422,{f=4,loc=47,lvl=45,modID=3}),
 s(86616,147425,{f=5,loc=45,lvl=45,modID=3}),
@@ -38983,8 +38976,7 @@ e(1898,{npcID=117269,g={
 ach(11874,{rwp=70300,u=2})}})}}),
 d(15,{
 h(-45,{
-q(47726,{altQuests={47727},description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={119723},g={
-i(151249)}})}),
+q(47726,{altQuests={47727},description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={119723},qis={151249}})}),
 h(-63,{
 s(86597,147422,{f=4,loc=47,lvl=45,modID=5}),
 s(86617,147425,{f=5,loc=45,lvl=45,modID=5}),
@@ -39205,8 +39197,7 @@ s(86713,147048,{b=1,f=6,loc=44,lvl=45,modID=5}),
 s(86529,147347,{b=1,f=5,loc=45,lvl=45,modID=5})}})}),
 d(16,{
 h(-45,{
-q(47727,{description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",lvl=45,qgs={119723},g={
-i(151250)}})}),
+q(47727,{description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",lvl=45,qgs={119723},qis={151250}})}),
 h(-63,{
 s(86598,147422,{f=4,loc=47,lvl=45,modID=6}),
 s(86618,147425,{f=5,loc=45,lvl=45,modID=6}),
@@ -39459,8 +39450,7 @@ gach(12112)}),
 h(-45,{
 q(48954,{awp=110205,lvl=45,providers={{"i",152900}},rwp=110207,u=2,g={
 mnt(253639,{b=1,itemID=152901,u=2})}}),
-q(49077,{lvl=45,qgs={129429},g={
-i(153555)}})}),
+q(49077,{lvl=45,qgs={129429},qis={153555}})}),
 d(109,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={121975,122104,122135,122333,122366,122367,122369,122450,122467,122468,122469,122477,122500,122578,124158,124445,124828},g={
@@ -39820,10 +39810,8 @@ s(89987,152087,{f=5,loc=43,lvl=45,modID=3}),
 s(89995,152089,{f=6,loc=43,lvl=45,modID=3}),
 s(90003,152091,{f=7,loc=43,lvl=45,modID=3})}),
 h(-45,{
-q(49032,{altQuests={49075,49076},description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={125512},g={
-i(152902)}}),
-q(49133,{altQuests={49134,49135},description="Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={125682},sourceQuests={49032},g={
-i(152908)}})}),
+q(49032,{altQuests={49075,49076},description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={125512},qis={152902}}),
+q(49133,{altQuests={49134,49135},description="Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={125682},qis={152908},sourceQuests={49032}})}),
 e(1992,{npcID=122450,g={
 s(89882,152002,{b=1,f=6,loc=46,lvl=45,modID=3}),
 s(89822,151987,{b=1,f=5,loc=46,lvl=45,modID=3}),
@@ -40085,10 +40073,8 @@ s(89988,152087,{f=5,loc=43,lvl=45,modID=5}),
 s(89996,152089,{f=6,loc=43,lvl=45,modID=5}),
 s(90004,152091,{f=7,loc=43,lvl=45,modID=5})}),
 h(-45,{
-q(49075,{altQuests={49076},description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={125512},g={
-i(152906)}}),
-q(49134,{altQuests={49135},description="Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={125682},sourceQuests={49075},g={
-i(152909)}})}),
+q(49075,{altQuests={49076},description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={125512},qis={152906}}),
+q(49134,{altQuests={49135},description="Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={125682},qis={152909},sourceQuests={49075}})}),
 e(1992,{npcID=122450,g={
 s(89883,152002,{b=1,f=6,loc=46,lvl=45,modID=5}),
 s(89823,151987,{b=1,f=5,loc=46,lvl=45,modID=5}),
@@ -40346,10 +40332,8 @@ s(89989,152087,{f=5,loc=43,lvl=45,modID=6}),
 s(89997,152089,{f=6,loc=43,lvl=45,modID=6}),
 s(90005,152091,{f=7,loc=43,lvl=45,modID=6})}),
 h(-45,{
-q(49076,{description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",lvl=45,qgs={125512},g={
-i(152907)}}),
-q(49135,{description="Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",lvl=45,qgs={125682},sourceQuests={49076},g={
-i(152910)}})}),
+q(49076,{description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",lvl=45,qgs={125512},qis={152907}}),
+q(49135,{description="Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",lvl=45,qgs={125682},qis={152910},sourceQuests={49076}})}),
 e(1992,{npcID=122450,g={
 ach(11992),
 s(89884,152002,{b=1,f=6,loc=46,lvl=45,modID=6}),
@@ -41787,11 +41771,10 @@ r(209645,{b=1,itemID=137726,lvl=10,requireSkill=202,skillID=2500}),
 prof(773,{
 r(225543,{b=1,description="Drops from Naga in any Broken Isles zone. Recommended to farm the Naga before the first Boss in the Eye of Azshara Dungeon.",itemID=141051,lvl=10,requireSkill=773,skillID=2508})})}),
 h(-45,{
-q(42213,{lvl=10,modelScale=3,qgs={106780},sourceQuests={38286},g={
-i(137206),
-s(81639,140622,{b=1,f=7,loc=45}),
-s(81640,140623,{b=1,f=6,loc=45}),
+q(42213,{lvl=10,modelScale=3,qgs={106780},qis={137206},sourceQuests={38286},g={
 s(81641,140624,{b=1,f=5,loc=45}),
+s(81640,140623,{b=1,f=6,loc=45}),
+s(81639,140622,{b=1,f=7,loc=45}),
 s(81642,140625,{b=1,f=4,loc=45}),
 crit(31589,{achID=10461,id=1}),
 crit(31589,{achID=10877,id=2}),
@@ -41855,7 +41838,7 @@ s(78972,134465,{b=1,f=6,loc=47,lvl=40,modID=1}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=1}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=1}),
 s(78973,134508,{b=1,f=7,loc=44,lvl=40,modID=1}),
-i(137373,{b=1,f=53,lvl=40,modID=1,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=1,spellID=215745}),
 s(78971,134438,{b=1,f=5,loc=42,lvl=40,modID=1}),
 s(78970,137372,{b=1,f=4,loc=43,lvl=40,modID=1}),
 i(137375,{b=1,f=54,lvl=40,modID=1}),
@@ -41918,7 +41901,7 @@ s(80125,134465,{b=1,f=6,loc=47,lvl=40,modID=2}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=2}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=2}),
 s(79950,134508,{b=1,f=7,loc=44,lvl=40,modID=2}),
-i(137373,{b=1,f=53,lvl=40,modID=2,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=2,spellID=215745}),
 s(80063,134438,{b=1,f=5,loc=42,lvl=40,modID=2}),
 s(80036,137372,{b=1,f=4,loc=43,lvl=40,modID=2}),
 i(137375,{b=1,f=54,lvl=40,modID=2}),
@@ -41987,7 +41970,7 @@ s(78972,134465,{b=1,f=6,loc=47,lvl=40,modID=23}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=23}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=23}),
 s(78973,134508,{b=1,f=7,loc=44,lvl=40,modID=23}),
-i(137373,{b=1,f=53,lvl=40,modID=23,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=23,spellID=215745}),
 s(78971,134438,{b=1,f=5,loc=42,lvl=40,modID=23}),
 s(78970,137372,{b=1,f=4,loc=43,lvl=40,modID=23}),
 i(137375,{b=1,f=54,lvl=40,modID=23}),
@@ -42431,12 +42414,11 @@ crit(32888,{achID=10996,description="After first boss Rokmora, before entering a
 de(11315,{awp=110207,itemID=256913,spellID=1260911}),
 crit(32126,{achID=11163,id=6})}})}),
 h(-45,{
-q(42454,{lvl=10,providers={{"o",250548}},sourceQuests={39781},g={
-i(137649),
+q(42454,{lvl=10,providers={{"o",250548}},qis={137649},sourceQuests={39781},g={
 s(82069,141007,{b=1,f=4,loc=44}),
-s(82070,141008,{b=1,f=5,loc=44}),
-s(82071,141009,{b=1,f=6,loc=44}),
 s(82072,141010,{b=1,f=7,loc=44}),
+s(82071,141009,{b=1,f=6,loc=44}),
+s(82070,141008,{b=1,f=5,loc=44}),
 crit(31590,{achID=10461,id=1}),
 crit(31590,{achID=10877,id=4}),
 crit(106028,{achID=42593,awp=110205,e=447,id=4,rwp=110207,u=2})}})}),
@@ -42665,8 +42647,7 @@ i(142450,{b=1,f=55})}}),
 q(45296,{description="You must complete the full quest chain before the quest item will drop from the boss.",lvl=45,providers={{"i",143556}},sourceQuests={45295},g={
 i(142469,{b=1,f=52,lvl=45,spellID=231054})}}),
 q(44685,{coords={
-[42]={{47,75.2}}},lvl=45,qgs={114310},sourceQuests={44557,44683,44684},g={
-i(142213,{spellID=229170}),
+[42]={{47,75.2}}},lvl=45,qgs={114310},qis={142213},sourceQuests={44557,44683,44684},g={
 i(142451,{b=1,f=55})}}),
 q(44556,{coords={
 [627]={{28.8,48.6}}},qgs={90417},rwp=70300,u=2}),
@@ -43297,8 +43278,7 @@ i(146678,{requireSkill=197,spellID=239181})}})})}}),
 inst(707,{awp=70003,coords={
 [630]={{48,82.1}}},maps={710,711,712},savedInstanceID=1493,g={
 h(-45,{
-q(44486,{lvl=45,providers={{"o",258979}},g={
-i(141360,{b=4}),
+q(44486,{lvl=45,providers={{"o",258979}},qis={141360},g={
 crit(33146,{achID=11240,id=2})}})}),
 h(-62,{
 q(42924,{isWorldQuest=1,g={
@@ -44977,7 +44957,6 @@ d(109,{coords={
 [1161]={{74,13.4}},
 [1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={150653,150859,151881,152128,152236,152364,152852,152853,152910},g={
-i(169329,{b=1}),
 r(298625,{b=1,itemID=168625,requireSkill=773,skillID=2507}),
 r(298647,{b=1,itemID=168626,requireSkill=773,skillID=2507}),
 r(298648,{b=1,itemID=168627,requireSkill=773,skillID=2507})}}),
@@ -45831,10 +45810,7 @@ crit(47194,{achID=14146,id=12})}),
 i(175062,{b=1,spellID=307026})}})}}),
 d(14,{
 h(-45,{
-q(58373,{lc={1,"questID",58374,"questID",58375},lvl=50,qgs={160177},g={
-i(174910),
-i(174913),
-i(174063)}})}),
+q(58373,{lc={1,"questID",58374,"questID",58375},lvl=50,qgs={160177},qis={174063,174910,174913}})}),
 h(-63,{
 s(108801,175005,{f=6,loc=45,lvl=50,modID=3}),
 s(108809,175007,{f=5,loc=47,lvl=50,modID=3}),
@@ -45965,10 +45941,7 @@ ach(14068,{rwp=90001,u=2}),
 i(174863,{b=1,rwp=90001,u=2})}})}}),
 d(15,{
 h(-45,{
-q(58374,{lc={1,"questID",58375},lvl=50,qgs={160177},g={
-i(174909),
-i(174911),
-i(174064)}})}),
+q(58374,{lc={1,"questID",58375},lvl=50,qgs={160177},qis={174064,174909,174911}})}),
 h(-63,{
 s(108802,175005,{f=6,loc=45,lvl=50,modID=5}),
 s(108811,175007,{f=5,loc=47,lvl=50,modID=5}),
@@ -46095,10 +46068,7 @@ i(174533,{b=1,f=52,lvl=50,modID=5}),
 s(108062,174118,{b=1,f=4,loc=40,lvl=50,modID=5})}})}),
 d(16,{
 h(-45,{
-q(58375,{lvl=50,qgs={160177},g={
-i(174908),
-i(174912),
-i(174065)}})}),
+q(58375,{lvl=50,qgs={160177},qis={174065,174908,174912}})}),
 h(-63,{
 s(108803,175005,{f=6,loc=45,lvl=50,modID=6}),
 s(108812,175007,{f=5,loc=47,lvl=50,modID=6}),
@@ -47140,10 +47110,8 @@ inst(1023,{awp=80001,coords={
 [895]={{88.2,50.9}},
 [1161]={{72.2,15.5}}},maps={1162},savedInstanceID=1822,g={
 h(-45,{
-q(53128,{lvl=50,providers={{"o",296479}},r=2,g={
-i(163336)}}),
-q(53127,{lvl=50,providers={{"o",296479}},r=1,g={
-i(163336)}})}),
+q(53128,{lvl=50,providers={{"o",296479}},qis={163336},r=2}),
+q(53127,{lvl=50,providers={{"o",296479}},qis={163336},r=1})}),
 h(-62,{
 q(52761,{isWorldQuest=1,r=2}),
 q(52771,{isWorldQuest=1,r=2}),
@@ -47643,11 +47611,9 @@ i(159625,{b=1,f=53,modID=23,spellID=268828})}})}})}}),
 inst(1002,{awp=80001,coords={
 [1169]={{38.8,70.1}}},maps={974,975,976,977,978,979,980},savedInstanceID=1771,g={
 h(-62,{
-q(51287,{isWorldQuest=1,g={
-i(159831)}}),
+q(51287,{isWorldQuest=1,qis={159831}}),
 q(51297,{isWorldQuest=1}),
-q(51296,{isWorldQuest=1,g={
-i(159834)}})}),
+q(51296,{isWorldQuest=1,qis={159834}})}),
 d(1,{
 e(2097,{npcID=127479,g={
 s(95443,159656,{b=1,f=29,modID=1}),
@@ -48546,8 +48512,7 @@ ach(14610,{
 crit(49673,{achID=14355,id=10})})}})}}),
 d(14,{
 h(-45,{
-q(62054,{lvl=60,qgs={172653},g={
-i(182601)}})}),
+q(62054,{lvl=60,qgs={172653},qis={182601}})}),
 h(-63,{
 s(114530,183017,{f=4,loc=43,lvl=60,modID=3}),
 i(183035,{f=52,lvl=60,modID=3}),
@@ -48690,8 +48655,7 @@ i(182169,{b=1,lvl=50}),
 crit(53533,{achID=15664,awp=90205,rwp=100002,u=2})}})}}),
 d(15,{
 h(-45,{
-q(62055,{lvl=60,qgs={172653},g={
-i(182602)}})}),
+q(62055,{lvl=60,qgs={172653},qis={182602}})}),
 h(-63,{
 s(115118,183017,{f=4,loc=43,lvl=60,modID=5}),
 i(183035,{f=52,lvl=60,modID=5}),
@@ -48821,8 +48785,7 @@ s(115120,183020,{b=1,f=4,loc=41,lvl=60,modID=5}),
 crit(48979,{achID=14717})}})}),
 d(16,{
 h(-45,{
-q(62056,{lvl=60,qgs={172653},g={
-i(182603)}})}),
+q(62056,{lvl=60,qgs={172653},qis={182603}})}),
 h(-63,{
 s(115137,183017,{f=4,loc=43,lvl=60,modID=6}),
 i(183035,{f=52,lvl=60,modID=6}),
@@ -49345,8 +49308,7 @@ crit(52373,{achID=15130,id=10})}),
 s(145985,186414,{b=1,c={3},f=32,lvl=60,spellID=353511})}})}}),
 d(14,{
 h(-45,{
-q(64597,{lvl=60,qgs={178592},g={
-i(187529)}})}),
+q(64597,{lvl=60,qgs={178592},qis={187529}})}),
 h(-63,{
 s(145928,186371,{f=7,loc=43,lvl=60,modID=3}),
 s(145892,186362,{f=5,loc=43,lvl=60,modID=3}),
@@ -49515,8 +49477,7 @@ i(182177,{b=1,lvl=50}),
 crit(53567,{achID=15668,awp=90205,rwp=100002,u=2})}})}}),
 d(15,{
 h(-45,{
-q(64598,{lvl=60,qgs={178592},g={
-i(187530)}})}),
+q(64598,{lvl=60,qgs={178592},qis={187530}})}),
 h(-63,{
 s(145930,186371,{f=7,loc=43,lvl=60,modID=5}),
 s(145894,186362,{f=5,loc=43,lvl=60,modID=5}),
@@ -49673,8 +49634,7 @@ s(145782,186334,{b=1,f=5,loc=42,lvl=60,modID=5}),
 crit(52353,{achID=15127})}})}),
 d(16,{
 h(-45,{
-q(64599,{lvl=60,qgs={178592},g={
-i(187531)}})}),
+q(64599,{lvl=60,qgs={178592},qis={187531}})}),
 h(-63,{
 s(145931,186371,{f=7,loc=43,lvl=60,modID=6}),
 s(145895,186362,{f=5,loc=43,lvl=60,modID=6}),
@@ -50603,8 +50563,7 @@ ach(15494,{
 crit(53256,{achID=15491,id=10})})}})}}),
 d(14,{
 h(-45,{
-q(65764,{lvl=60,qgs={184601},g={
-i(190967)}})}),
+q(65764,{lvl=60,qgs={184601},qis={190967}})}),
 h(-63,{
 s(168905,190629,{f=6,loc=47,lvl=60,modID=3}),
 s(168909,190630,{f=4,loc=41,lvl=60,modID=3}),
@@ -50849,8 +50808,7 @@ i(189982,{b=1,lvl=50}),
 crit(53600,{achID=15682,awp=90205,rwp=100002,u=2})}})}}),
 d(15,{
 h(-45,{
-q(65763,{lvl=60,qgs={184601},g={
-i(190966)}})}),
+q(65763,{lvl=60,qgs={184601},qis={190966}})}),
 h(-63,{
 s(168907,190629,{f=6,loc=47,lvl=60,modID=5}),
 s(168911,190630,{f=4,loc=41,lvl=60,modID=5}),
@@ -51075,8 +51033,7 @@ s(168046,189861,{b=1,f=29,lvl=60,modID=5}),
 crit(53202,{achID=15478})}})}),
 d(16,{
 h(-45,{
-q(65762,{lvl=60,qgs={184601,188683},g={
-i(190959)}})}),
+q(65762,{lvl=60,qgs={184601,188683},qis={190959}})}),
 h(-63,{
 s(168908,190629,{f=6,loc=47,lvl=60,modID=6}),
 s(168912,190630,{f=4,loc=41,lvl=60,modID=6}),
@@ -51694,9 +51651,7 @@ inst(1183,{awp=90002,coords={
 [1536]={{59.3,64.8}}},maps={1674,1697},savedInstanceID=2289,g={
 h(-45,{
 q(59520,{coords={
-[1536]={{59.4,72.9}}},lvl=10,qgs={165052},sourceQuests={59223},g={
-i(176057),
-i(183724),
+[1536]={{59.4,72.9}}},lvl=10,qgs={165052},qis={176057,183724},sourceQuests={59223},g={
 s(109176,175533,{b=1,f=4,loc=41,lvl=48}),
 s(109175,175532,{b=1,f=7,loc=41,lvl=48}),
 s(109174,175531,{b=1,f=5,loc=41,lvl=48}),
@@ -51983,8 +51938,7 @@ q(63976,{coords={
 q(63977,{coords={
 [1672]={{57.1,31.1}}},lvl=60,qgs={178908},sourceQuests={63976}}),
 q(63979,{coords={
-[1672]={{57.1,31.1}}},lvl=60,qgs={178908},sourceQuests={63976},g={
-i(186182)}}),
+[1672]={{57.1,31.1}}},lvl=60,qgs={178908},qis={186182},sourceQuests={63976}}),
 q(63980,{coords={
 [1672]={{57.1,31.1}}},lvl=60,qgs={178908},sourceQuests={63977,63979}}),
 q(63982,{coords={
@@ -53642,11 +53596,8 @@ q(74923,{c={13},coords={
 [2112]={{60.8,39.2}}},cost={{"i",204832,1},{"i",204856,1},{"i",204854,1}},lvl=10,qgs={187669},races={52,70},sourceQuests={74913},g={
 i(204274,{b=1,c={13},lvl=70,races={52,70},spellID=409218,g={
 i(206163,{b=1,c={13},races={52,70}})}})}}),
-q(76158,{c={13},lvl=70,providers={{"i",206163}},races={52,70},rwp=100207,sourceQuests={74913},u=2,g={
-i(204808,{b=1,c={13},lvl=70,races={52,70},spellID=412350,u=2}),
-i(206165,{c={13},races={52,70},u=2}),
-i(206166,{c={13},races={52,70},u=2}),
-i(206164,{c={13},races={52,70},u=2})}}),
+q(76158,{c={13},lvl=70,providers={{"i",206163}},qis={206164,206165,206166},races={52,70},rwp=100207,sourceQuests={74913},u=2,g={
+i(204808,{b=1,c={13},lvl=70,races={52,70},spellID=412350,u=2})}}),
 q(74924,{c={13},coords={
 [2112]={{60.8,39.2}}},lvl=10,maps={2176},qgs={187669},races={52,70},sourceQuests={74923},g={
 s(185459,204177,{b=1,c={13},f=34,lvl=70,races={52,70},spellID=405061}),

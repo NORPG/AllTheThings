@@ -41846,17 +41846,15 @@ q(96410,{coords={
 q(96831,{coords={
 [2393]={{38.6,59.6},{40.2,72.2},{47.8,51.4},{50.8,73.4}}},description="You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",isBreadcrumb=1,isWeekly=1,nextQuests={96441,96442,96443,96444},qgs={265903},sourceQuests={96410}}),
 q(96441,{coords={
-[2649]={{60.4,10.4}}},qgs={264069},sourceQuests={96410,96831},g={
-i(274576)}}),
+[2649]={{60.4,10.4}}},qgs={264069},qis={274576},sourceQuests={96410,96831}}),
 hqt(97139,{coords={
 [2649]={{59.7,10.9}}},description="Dialogue becomes available after completing 'Seeking Knowledge Week 2 of 5: Ritualized Arcana' (96441).",qgs={264070},sourceQuests={96441}}),
 q(96442,{coords={
-[2649]={{59.7,10.9}}},qgs={264070},sourceQuests={96441,96831},g={
-i(274577)}}),
+[2649]={{59.7,10.9}}},qgs={264070},qis={274577},sourceQuests={96441,96831}}),
 q(96443,{coords={
-[2649]={{59.7,10.9}}},qgs={264070},sourceQuests={96442,96831}}),
+[2649]={{59.7,10.9}}},qgs={264070},qis={274580,274581,274582,274583,274584,274585},sourceQuests={96442,96831}}),
 q(96444,{coords={
-[2649]={{50.4,10.5}}},qgs={264096},sourceQuests={96443,96831}})}})})}})}}),
+[2649]={{60.5,11.4}}},qgs={264069},qis={274620,274640},sourceQuests={96443,96831}})}})})}})}}),
 h(-671,{awp=120001,g={
 h(-765,{rwp=120100,u=2,g={
 h(-12,{u=2,g={
