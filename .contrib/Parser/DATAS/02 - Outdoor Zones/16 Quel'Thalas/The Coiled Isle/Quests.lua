@@ -1046,7 +1046,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["sourceQuest"] = 97026,	-- Esoteric Ingredients
 				["qg"] = 254599,	-- Ofi the Sly
 				["coord"] = { 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["isDaily"] = true,
+				["isRepeatable"] = true,
 				["groups"] = {
 					ach(63432, {	-- Mysterious Mix Master
 						i(248962),	-- Mysterious Voodoo Mask (DECOR!)
@@ -1056,7 +1056,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(276117),	-- Clouded Blood-Pearl
 					i(276126),	-- Serpent's Feather
 					-- Offerings
-					i(277937),	-- Balanced Offering
+					i(277937, {	-- Balanced Offering
+						i(280189, {	-- Cauldron Concoction (PET!)
+							["description"] = "If you get this pet from any other offering, please let us know",
+						}),
+					}),
 					i(277946),	-- Choleric Offering
 					i(277941),	-- Eerie Offering
 					i(277940),	-- Fragile Offering

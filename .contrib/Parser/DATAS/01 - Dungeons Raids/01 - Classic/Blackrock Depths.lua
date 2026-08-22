@@ -1117,6 +1117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						72939,	-- Terga Earthbreaker
 						-- #endif
 					},
+					["qi"] = 64312,	-- Totem of Freedom (QI!)
 					["coords"] = {
 						-- #if AFTER SL
 						{ 73.6, 43.3, ORGRIMMAR },
@@ -1128,7 +1129,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(64312),	-- Totem of Freedom (QI!)
 						i(65643, {	-- Mask of the Speaker
 							["timeline"] = { ADDED_4_0_3 },
 						}),

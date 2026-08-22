@@ -3469,6 +3469,7 @@ MobileDB.GameObject = {
 	[639875] = true,	-- Feather of Jan'alai (q:94870)
 	[639625] = true,	-- Tortollan Scroll Case (q:95453)
 	[641533] = true,	-- Corrupted Lantern (q:92320)
+	[642080] = true,	-- Challenger's Cache [Ruby Life Pools]
 	[642083] = true,	-- Challenger's Cache [King's Rest]
 	[642087] = true,	-- Challenger's Cache [Temple of Sethraliss]
 	[642203] = true,	-- Repair Supplies

@@ -60,7 +60,6 @@ root(ROOTS.Unsorted, {
 			i(271155),	-- Test Weapon 2
 			i(271434),	-- Venom Rite Mantle
 			i(271436),	-- Slitherscale Girdle
-			i(271440),	-- Greaves of the Noxious Depths
 			i(271441),	-- Crushing Coiler Coif
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
 			i(271445),	-- Fanged Brute's Greatbelt
@@ -462,7 +461,6 @@ root(ROOTS.Unsorted, {
 			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
-			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279363),	-- Enchanted Eversong Trout
@@ -531,11 +529,7 @@ root(ROOTS.Unsorted, {
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
-			i(280007),	-- Mask Fragment
-			i(280089),	-- Mask Fragment
-			i(280090),	-- Mask Fragment
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent
 			i(280221),	-- Sealeather Sack
 			i(280223),	-- Collector's Tortollan Display Rack

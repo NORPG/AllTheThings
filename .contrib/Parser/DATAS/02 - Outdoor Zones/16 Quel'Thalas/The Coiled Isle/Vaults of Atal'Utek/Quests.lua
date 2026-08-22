@@ -190,9 +190,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["qg"] = 263507,
 							["qis"] = {
 								271865,	-- Scavenged Weapon (QI!)
-								271866,	-- Well-Worn Hatchet (QI!)
 								271868,	-- Splintering Spear (QI!)
 								271867,	-- Venom-Etched Sword (QI!)
+								271866,	-- Well-Worn Hatchet (QI!)
 							},
 							["coords"] = {
 								{ 42.7, 31.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },

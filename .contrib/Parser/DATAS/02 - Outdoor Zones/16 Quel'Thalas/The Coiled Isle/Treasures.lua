@@ -367,9 +367,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Drops
 					i(274422),	-- Ossified Relic
 					-- Objects
-					o(653064),
-					o(652482),
-					o(673863),
+					o(653064),	-- Ossified Relic
+					o(652482),	-- Ossified Relic
+					o(673863),	-- Ossified Relic
 				},
 			}),
 			o(656044, {	-- Singing Shell

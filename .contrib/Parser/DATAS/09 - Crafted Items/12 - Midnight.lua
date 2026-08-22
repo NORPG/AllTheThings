@@ -1258,6 +1258,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(274592, { ["timeline"] = { ADDED_12_1_0 } }),	-- Dirty Darter
 		i(262787),	-- Dredged Journal Entry
 		i(238383),	-- Eversong Trout
+		i(279210, { ["timeline"] = { ADDED_12_1_0 } }),	-- Explosive Tlhapi
 		i(238375),	-- Fungalskin Pike
 		i(279093, { ["timeline"] = { ADDED_12_1_0 } }),	-- Giggling Skull
 		i(238382),	-- Gore Guppy

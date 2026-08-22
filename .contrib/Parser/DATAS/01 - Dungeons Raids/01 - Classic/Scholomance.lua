@@ -212,18 +212,16 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["sourceQuest"] = 5522,	-- Leonid Barthalomew
 			["providers"] = {
 				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
-				{ "i", 13761 },	-- Frozen Eggs
+				{ "i", 13761 },	-- Frozen Eggs (QI!)
 			},
 			["coord"] = { 81.73, 57.83, EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(76257, {	-- Darkmaster's Scourgestone
-			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QI!)
+			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QS!)
 			["timeline"] = { ADDED_10_1_5 },
-			["groups"] = {
-				i(12844),	-- Argent Dawn Valor Token
-			},
+			["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 		}),
 		q(4771, {	-- Dawn's Gambit
 			-- #if BEFORE 4.0.3
