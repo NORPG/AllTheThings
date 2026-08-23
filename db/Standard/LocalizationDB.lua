@@ -2712,7 +2712,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=23,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=23,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=30,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=30,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026}),
@@ -2764,7 +2763,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -26701,9 +26701,9 @@ L.QUEST_NAMES = {
 	[98353] = "Big Mon weekly reputation obtained.",
 	[98354] = "Sss'alik weekly reputation obtained.",
 	[98355] = "Destra weekly reputation obtained.",
-	[98484] = "First Captain Tokka rare fished up (Daily)",
-	[98485] = "Second Captain Tokka rare fished up (Daily)",
-	[98486] = "Third Captain Tokka rare fished up (Daily)",
+	[98484] = "First Captain Tokka rare fished up (Weekly)",
+	[98485] = "Second Captain Tokka rare fished up (Weekly)",
+	[98486] = "Third Captain Tokka rare fished up (Weekly)",
 }
 L.SOURCE_NAMES = {
 	[90628] = "Monel-Hardened Breastplate",

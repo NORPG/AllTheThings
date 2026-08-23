@@ -29025,8 +29025,7 @@ q(60399,{coords={
 [1700]={{62.2,76.3}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={165302},repeatable=1,sourceQuests={59324,62921},g={
 i(181556,{b=1,f=55,lvl=60})}}),
 q(60460,{coords={
-[1699]={{45.4,28.5}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={164738},repeatable=1,sourceQuests={59324,62921},g={
-i(184561),
+[1699]={{45.4,28.5}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={164738},qis={184561},repeatable=1,sourceQuests={59324,62921},g={
 i(181556,{b=1,f=55,lvl=60})}}),
 q(60441,{coords={
 [1700]={{55.6,76.6}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={165291},repeatable=1,sourceQuests={59324,62921},g={
@@ -29041,8 +29040,7 @@ q(60448,{coords={
 [1700]={{55.6,76.6}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={165291},repeatable=1,sourceQuests={59324,62921},g={
 i(181557,{b=1,f=55,lvl=60})}}),
 q(60417,{coords={
-[1700]={{61.3,66.7}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={158713},repeatable=1,sourceQuests={59324,62921},g={
-i(179327),
+[1700]={{61.3,66.7}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={158713},qis={179327},repeatable=1,sourceQuests={59324,62921},g={
 i(181556,{b=1,f=55,lvl=60})}}),
 q(60456,{coords={
 [1699]={{45.4,28.5}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={164738},repeatable=1,sourceQuests={59324,62921},g={
