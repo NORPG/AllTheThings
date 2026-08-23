@@ -3360,7 +3360,7 @@ q(28717,{awp=40003,coords={
 [90]={{44,35.4},{61.8,75.6},{66.5,49.8}},
 [110]={{62.5,60.5}},
 [125]={{48.7,39.6},{59.2,27.4}}},isBreadcrumb=1,lvl=30,nextQuests={26293},providers={{"o",206109},{"o",206116},{"o",207279},{"o",207323},{"o",207324},{"o",207325},{"o",208317}},r=1,g={
-n(14720,{description="Saurfang will not give you any quests after turning in 'Warchied's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'."})}}),
+n(14720,{description="Saurfang will not give you any quests after turning in 'Warchief's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'."})}}),
 q(60968,{awp=90001,coords={
 [85]={{40.8,79.9}}},lc={1,"lvl",60},lvl=10,qgs={167032},r=1,repeatable=1}),
 q(1944,{c={8},coords={

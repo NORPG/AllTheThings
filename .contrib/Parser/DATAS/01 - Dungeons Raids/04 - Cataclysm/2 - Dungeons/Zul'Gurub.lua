@@ -19,13 +19,18 @@ CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache
 		-- TODO: tw = "",
 	},
 	description = {
-		-- #if AFTER 10.0.7
-		en = "Requires Archaeology to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
-		cn = "需要考古学来激活。激活全部 4 件神器以召唤出首领。如果你想要的首领没有出现，请勿击杀已出现的首领。相反，离开该区域并等待 30 分钟。一旦你返回，有时会有新的首领等着你",
-		-- #else
-		en = "Requires Archaeology (225+) to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
-		cn = "需要考古学技能（225+）来激活。激活全部 4 件神器以召唤出首领。若你期望的首领未出现，不要击杀已出现的首领。而是离开该区域，等待 30 分钟。再次进入后，有时会有新首领等着你",
-		-- #endif
+		en =
+			-- #if AFTER 10.0.7
+			"Requires Archaeology to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
+			-- #else
+			"Requires Archaeology (225+) to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
+			-- #endif
+		cn =
+			-- #if AFTER 10.0.7
+			"需要考古学来激活。激活全部 4 件神器以召唤出首领。如果你想要的首领没有出现，请勿击杀已出现的首领。相反，离开该区域并等待 30 分钟。一旦你返回，有时会有新的首领等着你",
+			-- #else
+			"需要考古学技能（225+）来激活。激活全部 4 件神器以召唤出首领。若你期望的首领未出现，不要击杀已出现的首领。而是离开该区域，等待 30 分钟。再次进入后，有时会有新首领等着你",
+			-- #endif
 	},
 });
 

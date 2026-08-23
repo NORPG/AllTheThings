@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["cost"] = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 60 } },	-- 60x Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #else
 						7798,	-- A Donation of Silk [DARN (Classic)]
 						-- #endif
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["cost"] = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #else
 						7792,	-- A Donation of Wool [DARN (Classic)]
 						-- #endif
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["cost"] = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["maxReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- 20x Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
-					["cost"] = { { "i", 12302, 1 } },	-- Ancient Frostsaber (MOUNT!)
+					["cost"] = { { "i", 12302, 1 } },	-- 1x Ancient Frostsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
@@ -531,9 +531,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["cost"] = {
-						{ "i", 2309, 5 },	-- Embossed Leather Boots
-						{ "i", 2310, 5 },	-- Embossed Leather Cloak
-						{ "i", 4239, 1 },	-- Embossed Leather Gloves
+						{ "i", 2309, 5 },	-- 5x Embossed Leather Boots
+						{ "i", 2310, 5 },	-- 5x Embossed Leather Cloak
+						{ "i", 4239, 1 },	-- 1x Embossed Leather Gloves
 					},
 					["requireSkill"] = LEATHERWORKING,
 					["races"] = ALLIANCE_ONLY,
@@ -561,7 +561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
+					["cost"] = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
+					["cost"] = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 47,
@@ -602,7 +602,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
-					["cost"] = { { "i", 12303, 1 } },	-- Nightsaber (MOUNT!)
+					["cost"] = { { "i", 12303, 1 } },	-- 1x Nightsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
@@ -1007,7 +1007,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.2, 9.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
-					["cost"] = { { "i", 11018, 20 } },	-- Un'Goro Soil
+					["cost"] = { { "i", 11018, 20 } },	-- 20x Un'Goro Soil
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -1763,7 +1763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
 					["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
 					["coord"] = { 39.8, 9.2, DARNASSUS },
-					["cost"] = { { "i", 208607, 1 } },	-- Deer Musk
+					["cost"] = { { "i", 208607, 1 } },	-- 1x Deer Musk
 					["maps"] = { TELDRASSIL },
 					["crs"] = { 883 },	-- Deer
 					["races"] = ALLIANCE_ONLY,

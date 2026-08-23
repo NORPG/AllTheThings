@@ -7755,7 +7755,7 @@ s(12567,28587,{b=1,f=22,lvl=27}),
 s(12568,28588,{b=1,f=27,lvl=27}),
 s(12566,28586,{b=1,f=4,loc=40,lvl=27}),
 s(12565,28585,{b=1,f=4,loc=47,lvl=27,spellID=39937})}})}}),
-n(17225,{description="Nightbane is summoned by interacting with the object Blackened Urn, found 2/3rd through the Master's Terrace (from a clockwise direction).",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"o",194092}},g={
+n(17225,{description="Once you have completed the quest chain, you can summon him on the Master's Terrace by clicking on the Urn on the ground.",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"o",194092}},g={
 s(12579,28604,{b=1,f=28,lvl=27}),
 s(12584,28611,{b=1,f=8,lvl=27}),
 s(12581,28606,{b=1,f=8,lvl=27}),

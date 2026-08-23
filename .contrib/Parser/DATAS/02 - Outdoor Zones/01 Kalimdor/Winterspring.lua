@@ -1138,11 +1138,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(9266, {	-- Making Amends
 					["qg"] = 16416,	-- Bronn Fitzwrench
-					-- #if AFTER CATA
-					["coord"] = { 58.0, 52.2, WINTERSPRING },
-					-- #else
-					["coord"] = { 59.8, 39.7, WINTERSPRING },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 58.0, 52.2, WINTERSPRING },
+						-- #else
+						{ 59.8, 39.7, WINTERSPRING },
+						-- #endif
+					},
 					["maxReputation"] = { FACTION_EVERLOOK, NEUTRAL },	-- Everlook, must be less than Neutral
 					["cost"] = {
 						{ "i", 14047, 40 },	-- Runecloth
