@@ -396,14 +396,14 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				n(QUESTS, {
 					q(58373, {	-- Ny'alotha: MOTHER's Guidance [N]
 						["qg"] = 160177,	-- Wrathion
+						["lockCriteria"] = { 1,
+							"questID", 58374,	-- Ny'alotha: MOTHER's Guidance [H]
+							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
+						},
 						["qis"] = {
 							174910,	-- Dragon Heart (QI!)
 							174913,	-- Prophetic Eye (QI!)
 							174063,	-- Titan Core (QI!)
-						},
-						["lockCriteria"] = { 1,
-							"questID", 58374,	-- Ny'alotha: MOTHER's Guidance [H]
-							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
 						},
 					}),
 				}),
@@ -435,13 +435,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				n(QUESTS, {
 					q(58374, {	-- Ny'alotha: MOTHER's Guidance [H]
 						["qg"] = 160177,	-- Wrathion
+						["lockCriteria"] = { 1,
+							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
+						},
 						["qis"] = {
 							174909,	-- Dragon Heart (QI!)
 							174911,	-- Prophetic Eye (QI!)
 							174064,	-- Titan Core (QI!)
-						},
-						["lockCriteria"] = { 1,
-							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
 						},
 					}),
 				}),

@@ -20,8 +20,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
 					["sourceQuest"] = 38286,	-- Eye of Azshara: Wrath of Azshara
 					["qg"] = 106780,	-- Tidestone of Golganneth
-					["qi"] = 137206,	-- Tidestone of Golganneth (QI!)
 					["modelScale"] = 3,
+					["qi"] = 137206,	-- Tidestone of Golganneth (QI!)
 					["groups"] = {
 						i(140624),	-- Bitterbrine Binding
 						i(140623),	-- Brightscale Waistguard

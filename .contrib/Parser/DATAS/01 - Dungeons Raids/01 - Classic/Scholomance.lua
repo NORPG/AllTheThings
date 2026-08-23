@@ -210,13 +210,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		}),
 		q(5531, {	-- Betina Bigglezink
 			["sourceQuest"] = 5522,	-- Leonid Barthalomew
-			["providers"] = {
-				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
-				{ "i", 13761 },	-- Frozen Eggs (QI!)
-			},
+			["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 			["coord"] = { 81.73, 57.83, EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
+			["qi"] = 13761,	-- Frozen Eggs (QI!)
 		}),
 		q(76257, {	-- Darkmaster's Scourgestone
 			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QS!)

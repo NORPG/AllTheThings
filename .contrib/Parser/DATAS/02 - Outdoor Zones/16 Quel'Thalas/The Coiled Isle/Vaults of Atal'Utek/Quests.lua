@@ -188,15 +188,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						q(95906, {	-- Temple Patrol: Scavenged Weapons
 							["qg"] = 263507,
+							["coords"] = {
+								{ 42.7, 31.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								{ 56.5, 32.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							},
 							["qis"] = {
 								271865,	-- Scavenged Weapon (QI!)
 								271868,	-- Splintering Spear (QI!)
 								271867,	-- Venom-Etched Sword (QI!)
 								271866,	-- Well-Worn Hatchet (QI!)
-							},
-							["coords"] = {
-								{ 42.7, 31.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-								{ 56.5, 32.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							},
 						}),
 						q(95614, {	-- Temple Patrol: Siphon Venom
@@ -211,6 +211,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["coord"] = { 42.8, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95580, {	-- Temple Patrol: Slay the Restless
+							["qg"] = 261967,	-- Dying Warrior
 							["coord"] = { 53.0, 50.66, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95962, {	-- Temple Patrol: Vengeance for the Dead

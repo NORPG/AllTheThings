@@ -54,10 +54,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["provider"] = { "o", 250548 },	-- Hammer of Khaz'goroth
 					["qi"] = 137649,	-- The Hammer of Khaz'goroth (QI!)
 					["groups"] = {
-						i(141007),	-- Earthguard Handwraps
 						i(141010),	-- Earthguard Gauntlets
 						i(141009),	-- Earthguard Gloves
 						i(141008),	-- Earthguard Grips
+						i(141007),	-- Earthguard Handwraps
 					},
 				}),
 			}),

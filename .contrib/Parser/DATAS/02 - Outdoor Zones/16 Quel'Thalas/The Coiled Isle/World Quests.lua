@@ -13,12 +13,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 58.0, 48.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(93671, {	-- A Tight Squeeze
-					["qi"] = 265622,	-- Knotted Swamp Stick
 					["coord"] = { 64.7, 60.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["qi"] = 265622,	-- Knotted Swamp Stick
 				}),
 				q(93669, {	-- Curse of Greed
-					["qi"] = 260419,	-- Cursed Zandalari Coin (QI!)
 					["coord"] = { 34.4, 85.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["qi"] = 260419,	-- Cursed Zandalari Coin (QI!)
 				}),
 				q(95794, {	-- De-cryption Process
 					["coord"] = { 77.0, 41.9, 2645 },	-- Kin's Rest
@@ -43,11 +43,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				q(93649, {	-- Got the Gall
+					["coord"] = { 29.4, 50.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["qis"] = {
 						260424,	-- Lumpy Gallstone (QI!)
 						269918,	-- Venom-Corroded Gallstone (QI!)
 					},
-					["coord"] = { 29.4, 50.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(96329, {	-- Hexes and Hoaxes
 					["coords"] = {
@@ -121,8 +121,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 69.5, 47.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95453, {	-- Tortollan Repatriation
-					["qi"] = 274146,	-- Tortollan Belongings (QI!)
 					["coord"] = { 60.5, 80.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["qi"] = 274146,	-- Tortollan Belongings (QI!)
 					["groups"] = {
 						o(639617, {	-- Tortollan Bottle
 							i(274147),	-- Bottle of Sand (QI!)

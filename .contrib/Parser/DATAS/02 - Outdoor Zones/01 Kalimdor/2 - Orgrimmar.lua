@@ -1394,10 +1394,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(66323, {	-- Idling Pie
 					["sourceQuest"] = 66253,	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
-					["qi"] = 191682,	-- Explosive Pie (QI!)
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
+					["qi"] = 191682,	-- Explosive Pie (QI!)
 				}),
 				q(2754, {	-- Horns of Frenzy
 					-- #if BEFORE 4.0.3
@@ -2094,7 +2094,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(50769, {	-- The Stormwind Extraction
 					["sourceQuest"] = 51443,	-- Mission Statement
 					["qg"] = 135205,	-- Nathanos Blightcaller
-					["qi"] = 160251,	-- Blightcaller's Easy Death (QI!)
 					["coord"] = { 54.4, 78.4, ORGRIMMAR },
 					["timeline"] = { ADDED_8_0_1 },
 					["maps"] = {
@@ -2103,6 +2102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1013,	-- The Stockade (Scenario)
 					},
 					["races"] = HORDE_ONLY,
+					["qi"] = 160251,	-- Blightcaller's Easy Death (QI!)
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
 					["coords"] = {

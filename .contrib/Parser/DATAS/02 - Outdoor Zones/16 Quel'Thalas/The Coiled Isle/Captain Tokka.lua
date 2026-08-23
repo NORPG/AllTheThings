@@ -228,32 +228,32 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			header(HEADERS.Faction, FACTION_CAPTAIN_TOKKA, {
 				q(97537),	-- Triggered after turning in 'A Collection of Rot' (94804)
-				q(98484, {	-- First Captain Tokka rare fished up (Daily)
-					["name"] = "First Captain Tokka rare fished up (Daily)",
+				q(98484, {	-- First Captain Tokka rare fished up (Weekly)
+					["name"] = "First Captain Tokka rare fished up (Weekly)",
 					["providers"] = {
 						{ "n", 270024 },	-- Cook Leathertongue
 						{ "n", 270222 },	-- Master Grenadier Birdie
 						{ "n", 269765 },	-- Quartermaster Inktail
 					},
-					["isDaily"] = true,
+					["isWeekly"] = true,
 				}),
-				q(98485, {	-- Second Captain Tokka rare fished up (Daily)
-					["name"] = "Second Captain Tokka rare fished up (Daily)",
+				q(98485, {	-- Second Captain Tokka rare fished up (Weekly)
+					["name"] = "Second Captain Tokka rare fished up (Weekly)",
 					["providers"] = {
 						{ "n", 270024 },	-- Cook Leathertongue
 						{ "n", 270222 },	-- Master Grenadier Birdie
 						{ "n", 269765 },	-- Quartermaster Inktail
 					},
-					["isDaily"] = true,
+					["isWeekly"] = true,
 				}),
-				q(98486, {	-- Third Captain Tokka rare fished up (Daily)
-					["name"] = "Third Captain Tokka rare fished up (Daily)",
+				q(98486, {	-- Third Captain Tokka rare fished up (Weekly)
+					["name"] = "Third Captain Tokka rare fished up (Weekly)",
 					["providers"] = {
 						{ "n", 270024 },	-- Cook Leathertongue
 						{ "n", 270222 },	-- Master Grenadier Birdie
 						{ "n", 269765 },	-- Quartermaster Inktail
 					},
-					["isDaily"] = true,
+					["isWeekly"] = true,
 				}),
 			}),
 		})),

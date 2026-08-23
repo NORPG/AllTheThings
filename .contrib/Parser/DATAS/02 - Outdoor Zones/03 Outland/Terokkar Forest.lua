@@ -1324,9 +1324,9 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11098, {	-- To Skettis!
 						["sourceQuest"] = 11096,	-- Threat From Above
 						["qg"] = 23449,	-- Yuula
-						["qi"] = 32848,	-- Explosives Package (QI!)
 						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
 						["timeline"] = { ADDED_2_1_0 },
+						["qi"] = 32848,	-- Explosives Package (QI!)
 					})),
 					q(10035, {	-- Torgos! (A)
 						["sourceQuest"] = 10033,	-- WANTED: Bonelashers Dead!
