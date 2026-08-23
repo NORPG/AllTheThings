@@ -4663,7 +4663,9 @@ i(275702, 5076);	-- Preyhunter's Prismguard
 i(275704, 5078);	-- Preyhunter's Riftbreaker
 i(270251, 5033);	-- Sleek Snakebiter
 i(276248, 5093);	-- Snek'zali
+i(280305, 5125);	-- Soulcoil Remnant
 i(270250, 5034);	-- Steady Croakfrog
+i(279483, 3526);	-- Three-Eyed Fish
 i(279387, 5130);	-- Ul'ava'took
 i(275020, 5070);	-- Venom Elemental
 i(275632, 5072);	-- Volatile Venomfang
@@ -4684,6 +4686,5 @@ i(277282, 5115);	-- Kirin Tor Cat
 i(277270, 5114);	-- Kirin Tor Kitty
 i(277321, 5118);	-- Mewkahen
 i(278688, 5127);	-- Skipper
-i(280305, 5125);	-- Soulcoil Remnant
 i(279197, 5129);	-- Slitherfang
 i(276234, 5092);	-- Vibrant Venomfang

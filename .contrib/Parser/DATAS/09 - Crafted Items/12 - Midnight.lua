@@ -228,6 +228,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(275305, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Forgemaster's Decorative Spear (DECOR!)
 			i(279329, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Forgemaster's Rack (DECOR!)
 			i(275303, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Forgemaster's Workbench (DECOR!)
+			i(263709, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Forgemaster's Workbench (DECOR!)
 			i(262451),	-- Gilded Silvermoon Anvil (DECOR!)
 			i(262457),	-- Gilded Silvermoon Hanger (DECOR!)
 			i(262452),	-- Masterwork Crafting Hammer (DECOR!)
@@ -1102,6 +1103,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			--}},
 			["groups"] = {
 				-- Only known source is the Bottle
+				i(275695),	-- Design: Piercing Amani Lapis (RECIPE!)
 				i(275334),	-- Pattern: Stretched Snakeskin Rack (RECIPE!)
 				i(275338),	-- Pattern: Twilight's Blade Bedroll (RECIPE!)
 				i(275306),	-- Plans: Amani Forgemaster's Decorative Spear (RECIPE!)
@@ -1688,6 +1690,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(262471),	-- Bejeweled Sin'dorei Lyre (DECOR!)
 			i(262469),	-- Brilliant Phoenix Harp (DECOR!)
 			i(279356, {["timeline"] = { ADDED_12_1_0 }}),	-- Opalescent Amani Peridot (DECOR!)
+			i(279343, {["timeline"] = { ADDED_12_1_0 }}),	-- Piercing Amani Lapis (DECOR!)
 			i(262613),	-- Replica Haranir Mural (DECOR!)
 			i(248965),	-- Resplendent Highborne Statue (DECOR!)
 			i(280762, {["timeline"] = { ADDED_12_1_0 }}),	-- Roaring Amani Garnet (DECOR!)
@@ -2012,6 +2015,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 		n(DECOR, {
 			i(262449),	-- Embossed Sin'dorei Fur Rug (DECOR!)
+			i(266170, {["timeline"] = { ADDED_12_1_0 }}),	-- Flat Snakeskin Canopy (DECOR!)
 			i(279371, {["timeline"] = { ADDED_12_1_0 }}),	-- Flat Snakeskin Canopy (DECOR!)
 			i(265791),	-- Haranir Canopy Bed (DECOR!)
 			i(253457),	-- Leather-Bound Haranir Wall Shelf (DECOR!)

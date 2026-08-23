@@ -36,13 +36,6 @@ root(ROOTS.Unsorted, {
 			i(268823),	-- Scroll of Seeking
 			i(268826),	-- Ballast Stone
 			i(268871),	-- Specifically Sized Rock
-			i(268929),	-- Hastily Written Note
-			i(268951),	-- Familiar Threshadon Tooth Necklace
-			i(268952),	-- Hastily Written Note
-			i(268953),	-- Familiar Amani Headdress
-			i(268964),	-- Familiar Amani Headdress
-			i(268965),	-- Familiar Threshadon Tooth Necklace
-			i(268968),	-- Hastily Written Note
 			i(269720),	-- Corrosive Hekte
 			i(270267),	-- Twilight Missive
 			i(270274),	-- Home-Grown Wax
@@ -248,7 +241,6 @@ root(ROOTS.Unsorted, {
 			i(278113),	-- DNT Ula'tek Pole Dummy D
 			i(278114),	-- DNT Ula'tek Pole Dummy E
 			i(278115),	-- DNT Ula'tek Pole Dummy F
-			i(278193),	-- Aqiri Mandible
 			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
 			i(278284),	-- Nebulous Voidcache: Ula'tek
 			i(278285),	-- Nebulous Voidcache: Soulcoiler Nek'zali
@@ -482,12 +474,6 @@ root(ROOTS.Unsorted, {
 			i(279445),	-- Sunny Gloomcap
 			i(279455),	-- K'areshi Tea Cup
 			i(279458),	-- Rock Goblet
-			i(279475),	-- Mutagenitor's Feather
-			i(279476),	-- Vassti's Claw
-			i(279477),	-- Ss'akrithos's Forked Tongue
-			i(279478),	-- Ori'kassi's Barbed Tail
-			i(279479),	-- Leviathan's Eye
-			i(279483),	-- Three-Eyed Fish
 			i(279524),	-- Brewer's Purple Kilt
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
@@ -559,14 +545,12 @@ root(ROOTS.Unsorted, {
 			i(255652),	-- Purified Troll Loop
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
-			i(280305),	-- Soulcoil Remnant
 			i(280333),	-- Pirate's Eyepatch
 			i(280335),	-- Brewfest Crate
 			i(280337),	-- Traditional Brewfest Banner
 			i(280339),	-- Brewfest Fence
 			i(280341),	-- Brewfest Fencepost
 			i(280343),	-- Hanging Brewfest Wreath
-			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
@@ -575,7 +559,6 @@ root(ROOTS.Unsorted, {
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum
-			i(278397),	-- Ephemeral Star Ooze
 			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
@@ -586,9 +569,6 @@ root(ROOTS.Unsorted, {
 					i(273063),	-- Coiled Snake-Eye++
 				}),
 				prof(JEWELCRAFTING, {
-					i(275695),	-- Design: Piercing Amani Lapis (RECIPE!)
-					i(279343),	-- Piercing Amani Lapis (DECOR!)
-					--
 					i(273067),	-- Design: Polished Ammolite (RECIPE!)
 					i(273065),	-- Polished Ammolite+
 					i(273066),	-- Polished Ammolite++

@@ -573,6 +573,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}),
 						},
 					}),
+					q(98415, {	-- A Favor to the Captain
+						["qg"] = 257598,	-- Second Mate Sluggs
+						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+					}),
 					q(96112, {	-- Venom Fishing: Maddening Concoction
 						["sourceQuest"] = 96111,	-- Shell of Yourself
 						["qg"] = 258755,	-- Captain Tokka
@@ -1035,9 +1040,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			q(97026, {	-- Esoteric Ingredients
-				["provider"] = { "i", 278070 },	-- Handful of Esoteric Ingredients
+				["provider"] = { "i", 278070 },	-- Handful of Esoteric Ingredients (QS!)
 				["groups"] = {
 					i(278084),	-- Handful of Esoteric Ingredients
+				},
+			}),
+			q(95355, {	-- The Messenger
+				["providers"] = {
+					{ "i", 268953 },	-- Familiar Amani Headdress (QS!)
+					{ "i", 268951 }, 	-- Familiar Threshadon Tooth Necklace (QS!)
+				},
+				["maps"] = { MAP.MIDNIGHT.ZULAMAN },
+				["qis"] = {
+					268964,	-- Familiar Amani Headdress (QI!)
+					268965,	-- Familiar Threshadon Tooth Necklace (QI!)
+					268929,	-- Hastily Written Note (QI!)
+					268952,	-- Hastily Written Note (QI!)
+					268968,	-- Hastily Written Note (QI!)
 				},
 			}),
 			q(97016, {	-- Mixing Mysteries

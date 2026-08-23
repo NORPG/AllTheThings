@@ -825,6 +825,7 @@ MobileDB.Creature = {
 	[263327] = true,	-- Ofi the Sly
 	[265166] = true,	-- Baraat the Longshot
 	[256674] = true,	-- Ja'bonu
+	[269313] = true,	-- Three-Eyed Fish
 	[272109] = true,	-- Hawkeye Socho
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
@@ -3486,6 +3487,7 @@ MobileDB.GameObject = {
 	[651342] = true,	-- Omnial Anomaly
 	[651783] = true,	-- Pulsing Void Magicule (q:96229) [Ritual Site: Naigtal]
 	[652051] = true,	-- Belo'vir's Arcane Vault (q:96231)
+	[652482] = true,	-- Ossified Relic
 	[653064] = true,	-- Ossified Relic
 	[653416] = true,	-- Cynosure of Twilight (q:96051)
 	[653485] = true,	-- Cynosure of Twilight (q:96052)
@@ -3513,6 +3515,7 @@ MobileDB.GameObject = {
 	[660768] = true,	-- Zul'jan's Strongbox [Altar of Fangs]
 	[667734] = true,	-- Venom Fountain
 	[668269] = true,	-- Amani Skelton
+	[673863] = true,	-- Ossified Relic
 }
 
 -- Represents content which will trigger the 'not in game' contrib check, but only because it is available from a 'not in game' source (i.e. an NPC spawned from a removed Item used by a Player; an Object which spawns during a Quest which is removed but accessible if a Player still has it, etc.) Or perhaps an object/npc which is actually in the game but whose entire use has been made obsolete and is thus marked in ATT

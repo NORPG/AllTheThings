@@ -67,7 +67,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				["coord"] = { 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["groups"] = {
 					n(262455, {	-- Azta'rec ?
-						["questID"] = 96434,
+						["questID"] = 97041,
 						--["isDaily"] = true,
 						["groups"] = {
 							ach(63326, {	-- My Venomous Nemesis
@@ -77,7 +77,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 					}),
 					n(265500, {	-- Azta'rec ??
-						--["questID"] = XXXXX,	-- triggered ?? difficulty
+						["questID"] = 97913,
 						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
 								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
@@ -235,6 +235,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(272266),	-- Forgotten Eidolon's Dagger
 						i(272272),	-- Harrowed Partisan
 						i(272268),	-- Mask-Etcher
+						i(251885),	-- Radiant Foil
 						i(272274),	-- Realm Splitter
 						i(272278),	-- Recurve Wisp-Shooter
 						i(272269),	-- Soulsealer's Headstone
@@ -331,6 +332,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			["groups"] = {
 				q(95039),	-- triggered when buying Delver's Cosmetic Surprise Bag [275986]
 				q(98787),	-- triggered with completion of Slithering Spoils [97321]
+				--q(92888),	-- Azta'rec crests??
 			},
 		}),
 	}),

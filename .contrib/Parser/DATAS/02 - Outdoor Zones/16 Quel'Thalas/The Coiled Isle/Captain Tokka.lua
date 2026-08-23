@@ -67,6 +67,31 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						q(97557),	-- Tailing the Tlhapi
 					})),
 					n(QUESTS, {
+						q(97535, {	-- A Bargain You Won't Refuse
+							["qg"] = 269313,	-- Three-Eyed Fish
+							["provider"] = { "i", 278391 },	-- Eerie Bauble
+							["qi"] = 278193,	-- Aqiri Mandible (QI!)
+						}),
+						q(97559, {	-- The Familiar Taste of Poison
+							["sourceQuest"] = 97535,	-- A Bargain You Won't Refuse
+							["qg"] = 269313,	-- Three-Eyed Fish
+							["provider"] = { "i", 278391 },	-- Eerie Bauble
+							["qis"] = {
+								279479,	-- Leviathan's Eye (QI!)
+								279475,	-- Mutagenitor's Feather (QI!)
+								279478,	-- Ori'kassi's Barbed Tail (QI!)
+								279477,	-- Ss'akrithos's Forked Tongue (QI!)
+								279476,	-- Vassti's Claw (QI!)
+							},
+						}),
+						q(97565, {	-- Tipping the Scaled
+							["sourceQuest"] = 97559,	-- The Familiar Taste of Poison
+							["qg"] = 269313,	-- Three-Eyed Fish
+							["provider"] = { "i", 278391 },	-- Eerie Bauble
+							["maps"] = { MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["qi"] = 280446,	-- Unnerving Bait (QI!)
+							["groups"] = { i(279483) },	-- Three-Eyed Fish (PET!)
+						}),
 						q(97464, {	-- A Dash of Poison
 							["provider"] = { "i", 278000 } -- Sealed Vial of Mysterious Green Liquid
 						}),
@@ -170,6 +195,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(278391, {	-- Eerie Bauble
+									["description"] = "Throw at a pool of fish to summor an eldritch fishy questgiver",
 									["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),

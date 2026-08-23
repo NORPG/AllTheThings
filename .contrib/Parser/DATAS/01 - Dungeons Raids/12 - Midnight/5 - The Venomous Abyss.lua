@@ -395,6 +395,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				n(QUESTS, {
 				}),
 				BossOnly(NEKZALI, {
+					i(280305),	-- Soulcoil Remnant (PET!)
 					i(279115),	-- Soulcoiler's Ritual Candle (DECOR!)
 					i(281227),	-- Soulcoiler's Rush'kah (COSMETIC!)
 				}),

@@ -26,9 +26,12 @@ DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS = {
 	{ "o", 581922 }, 	-- Hidden Trove
 	-- { "o", 584511 }, 	-- Nemesis Strongbox
 	-- { "o", 584509 }, 	-- Nemesis Strongbox
-	-- { "o", 584508 }, 	-- Nemesis Strongbox
+	{ "o", 584508 }, 	-- Nemesis Strongbox
 	-- { "o", 584512 }, 	-- Nemesis Strongbox
 	{ "o", 618495 }, 	-- Nullaeus Cache
 	{ "o", 623259 }, 	-- Pilfered Trunk
 	{ "o", 623258 }, 	-- Pilfered Trunk
+
 }
+
+-- { "o", 658088 },	-- Abundantly Bountiful Heavy Trunk

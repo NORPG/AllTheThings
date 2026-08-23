@@ -55,6 +55,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 65.9, 23.5, 2642 },	-- Tomb of the Lost Priest
 					},
 				}),
+				q(93670, {	-- How 'Bout Them Apples?
+					["coord"] = { 66.0, 38.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(94967, {	-- Ki'clak Snack Attack
 					--["sourceQuest"] = 93906,	-- Untethering the Two
 					["coord"] = { 69.6, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -66,6 +69,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["groups"] = { i(279921) },	-- Ki'clak (PET!)
 						}),
 					},
+				}),
+				q(95931, {	-- Open Sea Fishing
+					["coord"] = { 66.8, 32.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 				}),
 				q(94611, {	-- Predators and Prey
 					["coord"] = { 64.7, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
