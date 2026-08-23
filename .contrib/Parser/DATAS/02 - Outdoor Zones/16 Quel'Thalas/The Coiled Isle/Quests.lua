@@ -1028,7 +1028,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["qg"] = 267635,	-- Talon Commander Zela
 				["coord"] = { 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["isWeekly"] = true,	-- Assumption
-				["groups"] = { i(275911) },	-- Venom-Covered Chest
+				["groups"] = {
+					i(275911, {	-- Venom-Covered Chest
+						i(273000),	-- Corrosive Soul
+					}),
+				},
 			}),
 			q(97026, {	-- Esoteric Ingredients
 				["provider"] = { "i", 278070 },	-- Handful of Esoteric Ingredients
@@ -1057,32 +1061,76 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(276126),	-- Serpent's Feather
 					-- Offerings
 					i(277937, {	-- Balanced Offering
-						i(280189, {	-- Cauldron Concoction (PET!)
-							["description"] = "If you get this pet from any other offering, please let us know",
-						}),
+						["cost"] = {
+							{ "i", 276124, 1 },	-- Ancient Knucklebone
+							{ "i", 276117, 1 },	-- Clouded Blood-Pearl
+							{ "i", 276126, 1 },	-- Serpent's Feather
+						},
+						["groups"] = {
+							i(280189, {	-- Cauldron Concoction (PET!)
+								["description"] = "If you get this pet from any other offering, please let us know",
+							}),
+						},
 					}),
-					i(277946),	-- Choleric Offering
-					i(277941),	-- Eerie Offering
-					i(277940),	-- Fragile Offering
-					i(277942),	-- Odious Offering
-					i(277945),	-- Melancholic Offering
-					i(277985),	-- Mysterious Offering
-					i(277943),	-- Pestilent Offering
-					i(277944),	-- Phlegmatic Offering
-					i(277938),	-- Virulent Offering
-					i(277939),	-- Volatile Offering
+					i(277946, {	-- Choleric Offering
+						["cost"] = {
+							{ "i", 276117, 3 },	-- Clouded Blood-Pearl
+						},
+					}),
+					i(277941, {	-- Eerie Offering
+						["cost"] = {
+							{ "i", 276124, 2 },	-- Ancient Knucklebone
+							{ "i", 276126, 1 },	-- Serpent's Feather
+						},
+					}),
+					i(277940, {	-- Fragile Offering
+						["cost"] = {
+							{ "i", 276124, 2 },	-- Ancient Knucklebone
+							{ "i", 276117, 1 },	-- Clouded Blood-Pearl
+						},
+					}),
+					i(277942, {	-- Odious Offering
+						["cost"] = {
+							{ "i", 276117, 1 },	-- Clouded Blood-Pearl
+							{ "i", 276126, 2 },	-- Serpent's Feather
+						},
+					}),
+					i(277945, {	-- Melancholic Offering
+						["cost"] = {
+							{ "i", 276124, 3 },	-- Ancient Knucklebone
+						},
+					}),
+					i(277943, {	-- Pestilent Offering
+						["cost"] = {
+							{ "i", 276124, 1 },	-- Ancient Knucklebone
+							{ "i", 276126, 2 },	-- Serpent's Feather
+						},
+					}),
+					i(277944, {	-- Phlegmatic Offering
+						["cost"] = {
+							{ "i", 276126, 3 },	-- Serpent's Feather
+						},
+					}),
+					i(277938, {	-- Virulent Offering
+						["cost"] = {
+							{ "i", 276117, 2 },	-- Clouded Blood-Pearl
+							{ "i", 276126, 1 },	-- Serpent's Feather
+						},
+					}),
+					i(277939, {	-- Volatile Offering
+						["cost"] = {
+							{ "i", 276124, 1 },	-- Ancient Knucklebone
+							{ "i", 276117, 2 },	-- Clouded Blood-Pearl
+						},
+					}),
+					i(277985, {	-- Mysterious Offering
+						-- ["cost"] = {
+						-- 	{ "i", 276124, 1 },	-- Ancient Knucklebone
+						-- 	{ "i", 276117, 1 },	-- Clouded Blood-Pearl
+						-- 	{ "i", 276126, 1 },	-- Serpent's Feather
+						-- },
+					}),
 				},
-				["description"] =
-					"Balanced = 1x Ancient Knucklebone, 1x Serpent's Feather, 1x Clouded Blood-Pearl\n" ..
-					"Choleric = 3x Clouded Blood-Pearl\n" ..
-					"Eerie = 2x Ancient Knucklebone, 1x Serpent's Feather\n" ..
-					"Fragile = 2x Ancient Knucklebone, 1x Clouded Blood-Pearl\n" ..
-					"Odious = 2x Serpent's Feather, 1x Clouded Blood-Pearl\n" ..
-					"Melancholic = 3x Ancient Knucklebone\n" ..
-					"Pestilent = 1x Ancient Knucklebone, 2x Serpent's Feather\n" ..
-					"Phlegmatic = 3x Serpent's Feather\n" ..
-					"Virulent = 1x Serpent's Feather, 2x Clouded Blood-Pearl\n" ..
-					"Volatile = 1x Ancient Knucklebone, 2x Clouded Blood-Pearl",
 			}),
 		}),
 	}),
