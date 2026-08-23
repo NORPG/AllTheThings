@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						i(9653, {	-- Speedy Racer Googles
+						i(9653, {	-- Speedy Racer Goggles
 							["timeline"] = { REMOVED_1_9_3 },
 						}),
 					},

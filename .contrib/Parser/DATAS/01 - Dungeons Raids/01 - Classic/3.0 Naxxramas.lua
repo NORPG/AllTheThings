@@ -73,7 +73,7 @@ applyclassicphase(PHASE_SIX,
 			-- #endif
 					header(HEADERS.Item, 22631, {	-- Atiesh, Greatstaff of the Guardian (Priest)
 						-- #if BEFORE WRATH
-						["lore"] = "Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",
+						["lore"] = "Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Buff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",
 						-- #endif
 						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 						["maps"] = { CAVERNS_OF_TIME },
@@ -229,7 +229,7 @@ applyclassicphase(PHASE_SIX,
 							["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 						})),
 						applyclassicphase(SOM_PHASE_ONE, i(191481, {	-- Tabard of Mastery
-							["description"] = "This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",
+							["description"] = "This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",
 							["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Not be available in SOD.
 						})),
 					}),
