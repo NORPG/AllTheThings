@@ -173,6 +173,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						q(96017, {	-- Temple Patrol: Dragged Below
 							["qg"] = 263411,	-- Desperate Warrior
+							["crs"] = { 263412 },	-- vignette
 							["coords"] = {
 								{ 41.0, 39.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 								{ 45.0, 10.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
