@@ -577,9 +577,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 257598,	-- Second Mate Sluggs
 						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+						["isBreadcrumb"] = true,
 					}),
 					q(96112, {	-- Venom Fishing: Maddening Concoction
-						["sourceQuest"] = 96111,	-- Shell of Yourself
+						["sourceQuests"] = {
+							98415,-- A Favor to the Captain
+							96111,	-- Shell of Yourself
+						},
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },

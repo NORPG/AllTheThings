@@ -67,7 +67,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}},
 			})),
 			ach(62297),	-- The Curse of Ula'tek
-			pvp(ach(63167)),	-- Tour of Duty: The Coiled Isle
+			pvp(ach(63167, {	-- Tour of Duty: The Coiled Isle
+				i(275825),	-- Ula'tek's Sssacrificial Rain (TOY!)
+			})),
 			ach(63359, {	-- Treasures of the Coiled Isle
 				i(275656),	-- Auriferous Venomfang (MOUNT!)
 			}),

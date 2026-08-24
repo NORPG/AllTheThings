@@ -1217,25 +1217,43 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			}),
 		}),
 		filter(QUEST_ITEMS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
-			i(279384),	-- Bonemail Gauntlet (QS!)
-			i(278001),	-- Forgotten Amani Fishing Rod (QS!)
-			i(277989),	-- Ghostcaller's Bell (QS!)
-			i(277998),	-- Lump of Crystalline Malachite (QS!)
+			i(279384, {	-- Bonemail Gauntlet (QS!)
+				["description"] = "Can be fished in open waters",
+				["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
+			}),
+			i(278001, {	-- Forgotten Amani Fishing Rod (QS!)
+				["description"] = "Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",
+				["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
+			}),
+			i(277989, {	-- Ghostcaller's Bell (QS!)
+				["description"] = "Can be fished from Bubbling Beryl pools.",
+				["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
+			}),
+			i(277998, {	-- Lump of Crystalline Malachite (QS!)
+				["description"] = "Can be fished from Willow Sea pools.",
+				["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
+			}),
 			i(277997),	-- Malevolent Fishing Codex (QS!)
-			i(277999),	-- Ritual Dagger (QS!)
+			i(277999, {	-- Ritual Dagger (QS!)
+				["description"] = "Can be fished in open waters",
+				["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
+			}),
 			i(278000, {	-- Sealed Vial of Mysterious Green Liquid (QS!)
-				["description"] = "Can be fished in any poison water after unlocking Venom Fishing (Rank3 Captain Tokka Questline).",
-				["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+				["description"] = "Can be fished in venomous waters surrounding the Temple.",
+				["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
 			}),
 			i(277991, {	-- Shrieking Tacklebox (QS!)
-				["description"] = "Can be fished in any poison water after unlocking Venom Fishing (Rank3 Captain Tokka Questline).",
-				["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+				["description"] = "Can be fished in venomous waters surrounding the Temple.",
+				["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
 			}),
 			i(277993, {	-- Spiritsurge Incense (QS!)
-				["description"] = "Can be fished in any poison water after unlocking Venom Fishing (Rank3 Captain Tokka Questline).",
-				["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+				["description"] = "Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",
+				["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
 			}),
-			i(277996),	-- Summoning Salt (QS!)
+			i(277996, {	-- Summoning Salt (QS!)
+				["description"] = "Can be fished in open waters",
+				["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
+			}),
 		})),
 		i(238490, {	-- Ambiguous Rock
 			i(266102),	-- Ambiguous Rock

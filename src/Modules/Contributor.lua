@@ -484,6 +484,7 @@ MobileDB.Creature = {
 	 [34359] = true,	-- Captain Goggath
 	 [34653] = true,	-- Bountiful Table Hostess [A]
 	 [34654] = true,	-- Bountiful Table Hostess [H]
+	 [35591] = true,	-- Fishing Bobber
 	 [37087] = true,	-- Jona Ironstock
 	 [37172] = true,	-- Detective Snap Snagglebolt
 	 [38066] = true,	-- Inspector Snip Snagglebolt

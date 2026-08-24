@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Warleader Abdumati
 						{ 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },		-- Talon Commander Zela
 					},
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["groups"] = {
 						i(273000),	-- Corrosive Soul
 						i(279382, {sym=SYM.MIDNIGHT.COILED_ISLE.VAULTS.VENOM_ITEMS}),	-- Venom-Cursed Fragment
@@ -141,10 +141,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				header(HEADERS.Achievement, 63598, sharedData({	-- Roll the Patrol
 					["repeatable"] = true,
 				},{
-					-- ["description"] = "These appear to be able to spawn any Patrol in any of the listed coords.",
-					-- ["coords"] = {
-
-					-- },
 					["groups"] = {
 						q(95972, {	-- Temple Patrol: Ash to Ash
 							["qg"] = 263346,	-- Er'inye

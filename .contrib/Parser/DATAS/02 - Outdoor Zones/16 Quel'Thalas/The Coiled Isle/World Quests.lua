@@ -16,6 +16,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 64.7, 60.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["qi"] = 265622,	-- Knotted Swamp Stick
 				}),
+				q(93672, {	-- Blade to Res
+					["coord"] = { 45.7, 12.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(93669, {	-- Curse of Greed
 					["coord"] = { 34.4, 85.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["qi"] = 260419,	-- Cursed Zandalari Coin (QI!)
@@ -57,6 +60,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(93670, {	-- How 'Bout Them Apples?
 					["coord"] = { 66.0, 38.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["groups"] = { i(260420) },	-- Swamp Apple
 				}),
 				q(94967, {	-- Ki'clak Snack Attack
 					--["sourceQuest"] = 93906,	-- Untethering the Two

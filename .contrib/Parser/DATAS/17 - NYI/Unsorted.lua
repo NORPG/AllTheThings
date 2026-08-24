@@ -13,7 +13,6 @@ root(ROOTS.Unsorted, {
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
-			i(260420),	-- Swamp Apple
 			i(260425),	-- Morsel of Crab Meat
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
@@ -147,7 +146,6 @@ root(ROOTS.Unsorted, {
 			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
-			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276234),	-- Vibrant Venomfang
