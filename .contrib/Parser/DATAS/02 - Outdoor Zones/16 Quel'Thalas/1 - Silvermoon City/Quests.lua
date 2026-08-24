@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		})),
 		n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			campsite(155, {	-- Silvermoon City (CAMPSITE!)
-				["cost"] = { { "i", 279575, 4 } },	-- 4x Silvermoon Citizen's Emblem
+				["cost"] = { { "i", 279575, 1 } },	-- 1x Silvermoon Citizen's Emblem
 			}),
 			campsite(158, {	-- Silvermoon in Void (CAMPSITE!)
 				["cost"] = { { "i", 279576, 4 } },	-- 4x Void Vestige
