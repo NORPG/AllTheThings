@@ -197,6 +197,16 @@ local ABBREVIATIONS = {
 	["Mug'Zee, Heads of Security"] = "Mug'Zee",
 	["Sikran, Captain of the Sureki"] = "Sikran",
 	["Vexie and the Geargrinders"] = "Vexie & the Geargrinders",
+	-- MID
+	["The Voidspire"] = "Voidspire",
+	["The Tidebound Grotto"] = "Tidebound Grotto",
+	["Nymrissa Wavecaller"] = "Nymrissa",
+	["The Venomous Abyss"] = "Venomous Abyss",
+    ["Nek'zali the Soulcoiler"] = "Nek'zali",
+    ["Vashnik the Malignant"] = "Vashnik",
+    ["The Lost Explorers"] = "Lost Explorers",
+    ["The Twin Fangs"] = "Twin Fangs",
+    ["The Coiled Altar"] = "Coiled Altar",
 	-- Outdoor Zones
 	["One Does Not Simply Walk Into Harandar"] = "One Does Not Simply...",
 	["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
@@ -218,7 +228,9 @@ local ABBREVIATIONS = {
 	["Forbidden Reach Racing Completionist: Gold > "] = "",
 	["Zaralek Cavern Racing Completionist: Gold > "] = "",
 	["Vaults of Atal'Utek"] = "Vaults",
+	["The Coiled Isle"] = "Coiled Isle",
 
+	["Vendors"] = "Vendor",
 	["WoW's Anniversary %> "] = "",
 	[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
 	["Emissary Quests"] = "Emissary",
