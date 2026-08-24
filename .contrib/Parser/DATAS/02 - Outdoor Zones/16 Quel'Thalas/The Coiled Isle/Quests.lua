@@ -1050,9 +1050,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			q(95355, {	-- The Messenger
-				["providers"] = {
-					{ "i", 268953 },	-- Familiar Amani Headdress (QS!)
-					{ "i", 268951 }, 	-- Familiar Threshadon Tooth Necklace (QS!)
+				["qss"] = {
+					268953,	-- Familiar Amani Headdress (QS!)
+					268951,	-- Familiar Threshadon Tooth Necklace (QS!)
 				},
 				["maps"] = { MAP.MIDNIGHT.ZULAMAN },
 				["qis"] = {
