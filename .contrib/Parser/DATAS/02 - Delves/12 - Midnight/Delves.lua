@@ -489,6 +489,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		--n(253304),	-- Paingolin
 		--n(253267),	-- Wailing Spirit
 	}),
+	n(SPECIAL, {
+		o(609862, {	-- Lordaeron's Loss (Gravestone)
+			["sourceAchievement"] = 61456,	-- Die in Lordaeron or Undercity (Hidden Achievement Trigger)
+			["description"] = "Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nAlliance Players Warning: Releasing your spirit will spawn you in Westfall forcing you to Resurrect at the Spirit Healer. Unequip your gear.",
+		}),
+	}),
 	mapped(n(SPECIAL, {
 		n(256593, {	-- Sanctified Banner
 			["coords"] = {
