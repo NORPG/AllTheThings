@@ -492,7 +492,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							q(96831, {	-- Magister's Summons
 								["sourceQuest"] = 96410,	-- Seeking Knowledge: The Omnium Folio
 								["description"] = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",	-- Or will it pop-up on first log-in when eligible?
-								["qg"] = 265903, -- Magister's Missive
+								["qg"] = 265903,	-- Magister's Missive
 								["coords"] = {
 									{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 									{ 40.2, 72.2, MAP.MIDNIGHT.SILVERMOON_CITY },

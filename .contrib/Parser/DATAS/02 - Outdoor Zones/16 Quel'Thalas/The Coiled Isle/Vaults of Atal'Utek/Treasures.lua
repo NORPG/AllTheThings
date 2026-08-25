@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98039,	-- To a stranger.
 					}),
 					o(668602, {	-- Funerary Inscription
-						["coord"] = { 56.1, 28.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["coord"] = { 56.5, 23.0, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["questID"] = 98040,	-- To a shield-bearer.
 					}),
 				}),
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(278523) },	-- Feather of Tok'jara (QS!/QI!)
 				}),
 				o(671508, {	-- Jin'tal's Reliquary
-					["coord"] = { 36.26, 23.70, 2638 }, -- Profaned Mausoleum
+					["coord"] = { 36.26, 23.70, 2638 },	-- Profaned Mausoleum
 					["cost"] = { { "i", 280005, 1 } },	-- 1x Dispelling Charm
 					["groups"] = { i(278517) },	-- Lost Med'jai Amulet (QS!/QI!)
 				}),

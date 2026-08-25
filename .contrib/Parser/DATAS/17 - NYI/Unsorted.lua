@@ -703,42 +703,6 @@ root(ROOTS.Unsorted, {
 				i(269753),	-- Artisan Katana
 				i(269754),	-- Offhand Artisan Nunchuck
 				i(269755),	-- Large Artisan Katana
-				i(271054),	-- Sunlit Petalweave Crown
-				i(271055),	-- Sunlit Petalweave Mantle
-				i(271056),	-- Sunlit Petalweave Halter
-				i(271057),	-- Sunlit Petalweave Belt
-				i(271058),	-- Sunlit Petalweave Skirt
-				i(271059),	-- Sunlit Petalweave Boots
-				i(271060),	-- Sunlit Petalweave Gloves
-				i(271061),	-- Sunlit Petalweave Cloak
-				i(271062),	-- Ensemble: Sunlit Petalweave
-				i(271063),	-- Scarlet Petalweave Crown
-				i(271064),	-- Scarlet Petalweave Mantle
-				i(271065),	-- Scarlet Petalweave Halter
-				i(271066),	-- Scarlet Petalweave Belt
-				i(271067),	-- Scarlet Petalweave Skirt
-				i(271068),	-- Scarlet Petalweave Boots
-				i(271069),	-- Scarlet Petalweave Gloves
-				i(271070),	-- Scarlet Petalweave Cloak
-				i(271071),	-- Ensemble: Scarlet Petalweave
-				i(271072),	-- Blush Petalweave Crown
-				i(271073),	-- Blush Petalweave Mantle
-				i(271074),	-- Blush Petalweave Halter
-				i(271075),	-- Blush Petalweave Belt
-				i(271076),	-- Blush Petalweave Skirt
-				i(271077),	-- Blush Petalweave Boots
-				i(271078),	-- Blush Petalweave Gloves
-				i(271079),	-- Blush Petalweave Cloak
-				i(271080),	-- Ensemble: Blush Petalweave
-				i(271081),	-- Azure Petalweave Crown
-				i(271082),	-- Azure Petalweave Mantle
-				i(271083),	-- Azure Petalweave Halter
-				i(271084),	-- Azure Petalweave Belt
-				i(271085),	-- Azure Petalweave Skirt
-				i(271086),	-- Azure Petalweave Boots
-				i(271087),	-- Azure Petalweave Gloves
-				i(271088),	-- Azure Petalweave Cloak
-				i(271089),	-- Ensemble: Azure Petalweave
 				i(271568),	-- Bloodwatch Outlaw's Headgear
 				i(271569),	-- Bloodwatch Outlaw's Tunic
 				i(271570),	-- Bloodwatch Outlaw's Buckle

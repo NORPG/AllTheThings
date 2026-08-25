@@ -115,51 +115,52 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		filter(BATTLE_PETS, {
 			i(262395, {	-- Hexed Bunny (PET!)
 				["providers"] = {
-					{ "o", 584518 }, -- Bountiful Heavy Trunk
-					{ "o", 584515 }, -- Bountiful Heavy Trunk
-					{ "o", 584508 }, -- Nemesis Strongbox
-					{ "o", 623258 }, -- Pilfered Trunk
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 623258 },	-- Pilfered Trunk
 				},
 			}),
 			i(262396, {	-- Lost Star (PET!)
 				["providers"] = {
-					{ "o", 584518 }, -- Bountiful Heavy Trunk
-					{ "o", 584515 }, -- Bountiful Heavy Trunk
-					{ "o", 584508 }, -- Nemesis Strongbox
-					{ "o", 584509 }, -- Nemesis Strongbox
-					{ "o", 584511 }, -- Nemesis Strongbox
-					{ "o", 584519 }, -- Heavy Trunk
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 584511 },	-- Nemesis Strongbox
+					{ "o", 584519 },	-- Heavy Trunk
 				},
 			}),
 			i(262392, {	-- Nibblesworth (PET!)
 				["providers"] = {
-					{ "o", 584518 }, -- Bountiful Heavy Trunk
-					{ "o", 584515 }, -- Bountiful Heavy Trunk
-					{ "o", 584508 }, -- Nemesis Strongbox
-					{ "o", 584509 }, -- Nemesis Strongbox
-					{ "o", 584511 }, -- Nemesis Strongbox
-					{ "o", 623259 }, -- Pilfered Trunk
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 584511 },	-- Nemesis Strongbox
+					{ "o", 623259 },	-- Pilfered Trunk
 				},
 			}),
 			i(262343, {	-- Treja'saka (PET!)
 				["providers"] = {
-					{ "o", 584514 }, -- Bountiful Coffer
-					{ "o", 581922 }, -- Hidden Trove
+					{ "o", 584514 },	-- Bountiful Coffer
+					{ "o", 581922 },	-- Hidden Trove
 				},
 			}),
 			i(262342, {	-- Spormilian (PET!)
 				["providers"] = {
-					{ "o", 584515 }, -- Bountiful Heavy Trunk
-					{ "o", 584508 }, -- Nemesis Strongbox
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
 				},
 			}),
 			i(262394, {	-- Ziorg'pharon (PET!)
 				["providers"] = {
-					{ "o", 584518 }, -- Bountiful Heavy Trunk
-					{ "o", 584515 }, -- Bountiful Heavy Trunk
-					{ "o", 584512 }, -- Nemesis Strongbox
-					{ "o", 584509 }, -- Nemesis Strongbox
-					{ "o", 584508 }, -- Nemesis Strongbox
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584512 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 584508 },	-- Nemesis Strongbox
 				},
 			}),
 		}),
@@ -187,10 +188,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257379),	-- Player Experience (Epic)
 			i(268297, {	-- Rattling Bag o' Gold
 				["providers"] = {
-					{ "o", 584512 }, -- Nemesis Strongbox
-					{ "o", 584509 }, -- Nemesis Strongbox
-					{ "o", 584508 }, -- Nemesis Strongbox
-					{ "o", 584511 }, -- Nemesis Strongbox
+					{ "o", 584512 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 584508 },	-- Nemesis Strongbox
+					{ "o", 584511 },	-- Nemesis Strongbox
 				},
 			}),
 			i(265714),	-- Trovehunter's Bounty
@@ -210,10 +211,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			["providers"] = {
 				-- no Wowhead data to confirm these in Delves, only a few confirmed drops by word of mouth
 				-- added based on respective Item tooltips of what can contain Recipes in Delve UI
-				{"o",584518}, -- Bountiful Heavy Trunk
-				{"o",584515}, -- Bountiful Heavy Trunk
-				{"o",584517}, -- Heavy Trunk
-				{"o",584519}, -- Heavy Trunk
+				{"o",584518},	-- Bountiful Heavy Trunk
+				{"o",584515},	-- Bountiful Heavy Trunk
+				{"o",584517},	-- Heavy Trunk
+				{"o",584519},	-- Heavy Trunk
 			},
 			["groups"] = {
 				i(259366),	-- Design: Replica Haranir Mural (RECIPE!)
@@ -237,15 +238,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		}),
 		filter(COSMETIC, {
 			["providers"] = {
-				{ "o", 623259 }, -- Pilfered Trunk
-				{ "o", 623258 }, -- Pilfered Trunk
-				{ "o", 584518 }, -- Bountiful Heavy Trunk
-				{ "o", 584515 }, -- Bountiful Heavy Trunk
-				{ "o", 584519 }, -- Heavy Trunk
-				{ "o", 584512 }, -- Nemesis Strongbox
-				{ "o", 584511 }, -- Nemesis Strongbox
-				{ "o", 584508 }, -- Nemesis Strongbox
-				{ "o", 584509 }, -- Nemesis Strongbox
+				{ "o", 623259 },	-- Pilfered Trunk
+				{ "o", 623258 },	-- Pilfered Trunk
+				{ "o", 584518 },	-- Bountiful Heavy Trunk
+				{ "o", 584515 },	-- Bountiful Heavy Trunk
+				{ "o", 584519 },	-- Heavy Trunk
+				{ "o", 584512 },	-- Nemesis Strongbox
+				{ "o", 584511 },	-- Nemesis Strongbox
+				{ "o", 584508 },	-- Nemesis Strongbox
+				{ "o", 584509 },	-- Nemesis Strongbox
 			},
 			["groups"] = {
 				i(262983),	-- Archival Magnimace (COSMETIC!)
@@ -267,16 +268,16 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		}),
 		n(DECOR, {
 			["providers"] = {
-				{ "o", 584518 }, -- Bountiful Heavy Trunk
-				{ "o", 584515 }, -- Bountiful Heavy Trunk
-				{ "o", 584517 }, -- Heavy Trunk
-				{ "o", 584519 }, -- Heavy Trunk
-				{ "o", 584512 }, -- Nemesis Strongbox
-				{ "o", 584511 }, -- Nemesis Strongbox
-				{ "o", 584508 }, -- Nemesis Strongbox
-				{ "o", 584509 }, -- Nemesis Strongbox
-				{ "o", 623259 }, -- Pilfered Trunk
-				{ "o", 623258 }, -- Pilfered Trunk
+				{ "o", 584518 },	-- Bountiful Heavy Trunk
+				{ "o", 584515 },	-- Bountiful Heavy Trunk
+				{ "o", 584517 },	-- Heavy Trunk
+				{ "o", 584519 },	-- Heavy Trunk
+				{ "o", 584512 },	-- Nemesis Strongbox
+				{ "o", 584511 },	-- Nemesis Strongbox
+				{ "o", 584508 },	-- Nemesis Strongbox
+				{ "o", 584509 },	-- Nemesis Strongbox
+				{ "o", 623259 },	-- Pilfered Trunk
+				{ "o", 623258 },	-- Pilfered Trunk
 			},
 			["groups"] = {
 				i(267080, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Blueflame Chandelier (DECOR!)

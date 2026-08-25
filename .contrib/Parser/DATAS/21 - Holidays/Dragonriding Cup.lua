@@ -2857,7 +2857,12 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(79132, {	-- The Northrend Cup Begins
-					["provider"] = { "n", 214031 },	-- Racing Enthusiast
+					["qgs"] = {
+						214031,	-- -- Racing Enthusiast
+						-- #if AFTER TWW
+						220307,	-- Holiday Enthusiast
+						-- #endif
+					},
 					["coord"] = { 61.8, 75.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,

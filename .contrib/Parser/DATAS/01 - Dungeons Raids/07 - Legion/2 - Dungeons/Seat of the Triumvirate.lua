@@ -22,7 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				q(48230, {	-- Fragment of the Past
 					["description"] = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
 					["sourceQuest"] = 47654,	-- Seat of the Triumvirate: The Crest of Knowledge
-					["provider"] = { "i", 152204 },	-- Glowing Key Fragment
+					["qs"] = 152204,	-- Glowing Key Fragment (QS!)
 					["maps"] = { EREDATH },
 					["crs"] = {
 						122316,	-- Saprish

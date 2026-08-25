@@ -2514,6 +2514,7 @@ i(278575, 1305207);	-- Crested Verdant Leafmimic
 i(275652, 1297220);	-- Crimson Venomfang
 i(262496, 1268919);	-- Delver's Arcane Golem
 i(276553, 1299965);	-- Emerald Skyfang
+i(274164, 142515);	-- Hearthkeeper's Wandering Caravan
 i(275659, 1297407);	-- Hexflame Reaver
 i(276802, 1300778);	-- Indigo Coiled Horror
 i(275660, 1297408);	-- Preyhunter's Fury
@@ -2534,7 +2535,6 @@ i(275551, 1296724);	-- Autumnal Witchwick's Rider	(SHOP OR TRADING POST)
 i(275573, 1296988);	-- Blushing Witchwick's Rider	(SHOP OR TRADING POST)
 i(275574, 1296989);	-- Carmine Witchwick's Rider	(SHOP OR TRADING POST)
 i(278576, 1305209);	-- Crested Violet Leafmimic		(SHOP OR TRADING POST)
-i(274164, 142515);	-- Hearthkeeper's Wandering Caravan
 i(275571, 1296986);	-- Moonlit Witchwick's Rider	(SHOP OR TRADING POST)
 i(275570, 1296985);	-- Mossy Witchwick's Rider		(SHOP OR TRADING POST)
 i(275572, 1296987);	-- Scarlet Witchwick's Rider	(SHOP OR TRADING POST)

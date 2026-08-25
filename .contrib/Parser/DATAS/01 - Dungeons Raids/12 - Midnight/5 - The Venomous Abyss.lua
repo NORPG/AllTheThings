@@ -19,9 +19,9 @@ local EncounterToCRS = {
 		258558,	-- Blood of Ula'tek
 	},
 	[EXPLORERS] = {
-		261835, -- First Mate Nama
-		261843, -- Scrollsage Iku
-		261848, -- Trader Gebbo
+		261835,	-- First Mate Nama
+		261843,	-- Scrollsage Iku
+		261848,	-- Trader Gebbo
 	},
 	[SSZORAK] = { 257347 },
 	--[[

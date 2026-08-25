@@ -405,7 +405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				}, {
 					q(77093, {	-- The Shadowflame Axe
-						["provider"] = { "i", 207729 },	-- Fyr'alath the Dreamrender
+						["qs"] = 207729,	-- Fyr'alath the Dreamrender (QS!)
 					}),
 					q(77191, {	-- Handling It
 						["sourceQuests"] = { 77093 },	-- The Shadowflame Axe
@@ -471,6 +471,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							77791,	-- Handling It: Symbiotic Glowspore Grip
 						},
 						["sourceQuestNumRequired"] = 1,
+						["qs"] = 211927,	-- Tattered Dreamleaf (QS!)
 						["provider"] = { "i", 210199 },	-- Tattered Dreamleaf
 						["classes"] = IGNORED_VALUE,	-- prevent bubbleDown... this was given to my Hunter
 						["qis"] = {
@@ -479,7 +480,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							208846,	-- Restored Dreamleaf (QI!)
 							208576,	-- Thriving Restoration Mote (QI!)
 						},
-						["groups"] = { i(211927) },	-- Tattered Dreamleaf (QS!)
 					}),
 					q(78156, {	-- Handling It: Radiant Vellum
 						["sourceQuests"] = { 78155 },	-- Handling It: Radiant Fleck of Ash
@@ -1450,7 +1450,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				n(QUESTS, {
 					q(78355,{	-- Essence of a Broken Dream
-						["provider"] = { "i", 210430 },	-- Twisted Dreaming Essence (QS!)
+						["qs"] = 210430,	-- Twisted Dreaming Essence (QS!)
 					}),
 					q(78421, {	-- The Power of Dreams
 						["sourceQuest"] = 78355,	-- Essence of a Broken Dream
@@ -1634,10 +1634,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
 					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_TWW_LAUNCH } }, {	-- A Glowing Memento
-						["provider"] = { "i", 211375 },	-- Everglowing Ember
-						["groups"] = {
-							i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (MM!)
-						},
+						["qs"] = 211375,	-- Everglowing Ember (QS!)
+						["groups"] = { i(210537) },	-- Renewed Proto-Drake: Embodiment of Shadowflame (MM!)
 					})),
 				}),
 				BossOnly(GNARLROOT),

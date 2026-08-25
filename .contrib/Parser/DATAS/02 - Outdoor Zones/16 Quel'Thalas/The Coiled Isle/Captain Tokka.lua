@@ -93,59 +93,58 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["groups"] = { i(279483) },	-- Three-Eyed Fish (PET!)
 						}),
 						q(97464, {	-- A Dash of Poison
-							["provider"] = { "i", 278000 } -- Sealed Vial of Mysterious Green Liquid
+							["qs"] = 278000	-- Sealed Vial of Mysterious Green Liquid (QS!)
 						}),
 						q(97457, {	-- Bonemail Gauntlet
-							["provider"] = { "i", 279384 } -- Bonemail Gauntlet
+							["qs"] = 279384,	-- Bonemail Gauntlet (QS!)
 						}),
 						q(97455, {	-- Call of the Bell
-							["provider"] = { "i", 277989 } -- Ghostcaller's Bell
+							["qs"] = 277989,	-- Ghostcaller's Bell (QS!)
 						}),
 						q(97461, {	-- Cursed Fishing 101
-							["provider"] = { "i", 277997 } -- Malevolent Fishing Codex
+							["qs"] = 277997,	-- Malevolent Fishing Codex (QS!)
 						}),
 						q(97463, {	-- Just a Normal Knife
-							["provider"] = { "i", 277999 } -- Ritual Dagger
+							["qs"] = 277999,	-- Ritual Dagger (QS!)
 						}),
 						q(97460, {	-- Lightly Salted
-							["provider"] = { "i", 277996 } -- Summoning Salt
+							["qs"] = 277996,	-- Summoning Salt (QS!)
 						}),
 						q(97462, {	-- Rocky Shores
-							["provider"] = { "i", 277998 } -- Lump of Crystalline Malachite
+							["qs"] = 277998,	-- Lump of Crystalline Malachite (QS!)
 						}),
 						q(97459, {	-- Something Smelly
-							["provider"] = { "i", 277993 } -- Spiritsurge Incense
+							["qs"] = 277993,	-- Spiritsurge Incense (QS!)
 						}),
 						q(97458, {	-- Tackled and Boxed
-							["provider"] = { "i", 277991 } -- Shrieking Tacklebox
+							["qs"] = 277991,	-- Shrieking Tacklebox (QS!)
 						}),
 						q(97465, {	-- The Intended Way to Fish
-							["provider"] = { "i", 278001 } -- Forgotten Amani Fishing Rod
+							["qs"] = 278001,	-- Forgotten Amani Fishing Rod (QS!)
 						}),
 					}),
 					prof(FISHING, {
 						spell(1306775, { -- Venom Fishing
 							["description"] = "Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",
-							["sourceQuests"] = { 96112 }, -- Venom Fishing: Maddening Concoction
-							["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+							["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
 							["groups"] = {
-								i(274805), -- Envenomed Chopper
-							--	i(274796), -- Envenomed Deathblade (needs confirmation)
-								i(274804), -- Envenomed Elfcleaver
-								i(274816), -- Envenomed False Promise
-								i(274814), -- Envenomed Game Ripper (can be 100% fished, even when its on vendor for currency)
-								i(274802), -- Envenomed Gavel (can be 100% fished, even when its on vendor for currency)
-								i(274806), -- Envenomed Gut-Puncher
-								i(274813), -- Envenomed Hammer
-								i(274812), -- Envenomed Hunter's Spear
-								i(274815), -- Envenomed Pages
-								i(274807), -- Envenomed Ritualizer
-								i(274811), -- Envenomed Sacrificial Dagger
-								i(274801), -- Envenomed Snakefang
-								i(274809), -- Envenomed Soul Collector
-								i(274810), -- Envenomed Spring's Frenzy
-								i(274803), -- Envenomed Trollsplitter
-								i(274808), -- Envenomed Umbral Claymore
+								i(274805),	-- Envenomed Chopper (COSMETIC!)
+							--	i(274796),	-- Envenomed Deathblade (COSMETIC!) (needs confirmation)
+								i(274804),	-- Envenomed Elfcleaver (COSMETIC!)
+								i(274816),	-- Envenomed False Promise (COSMETIC!)
+								i(274814),	-- Envenomed Game Ripper (COSMETIC!) (can be 100% fished, even when its on vendor for currency)
+								i(274802),	-- Envenomed Gavel (COSMETIC!) (can be 100% fished, even when its on vendor for currency)
+								i(274806),	-- Envenomed Gut-Puncher (COSMETIC!)
+								i(274813),	-- Envenomed Hammer (COSMETIC!)
+								i(274812),	-- Envenomed Hunter's Spear (COSMETIC!)
+								i(274815),	-- Envenomed Pages (COSMETIC!)
+								i(274807),	-- Envenomed Ritualizer (COSMETIC!)
+								i(274811),	-- Envenomed Sacrificial Dagger (COSMETIC!)
+								i(274801),	-- Envenomed Snakefang (COSMETIC!)
+								i(274809),	-- Envenomed Soul Collector (COSMETIC!)
+								i(274810),	-- Envenomed Spring's Frenzy (COSMETIC!)
+								i(274803),	-- Envenomed Trollsplitter (COSMETIC!)
+								i(274808),	-- Envenomed Umbral Claymore (COSMETIC!)
 							},
 						}),
 						filter(QUEST_ITEMS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {

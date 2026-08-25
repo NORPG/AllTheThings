@@ -299,13 +299,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			q(96474, {	-- Prey: Something for Astalor
 				["sourceQuests"] = { 96466 },	-- Prey: Anguish Island
-				["qg"] = 265267, -- Sanctum Attendant Ethrandil
+				["qg"] = 265267,	-- Sanctum Attendant Ethrandil
 				["coord"] = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 			q(96525, {	-- Prey: Out of Our Depth
 				["sourceQuests"] = { 96474 },	-- Prey: Something for Astalor
-				["qg"] = 265267, -- Sanctum Attendant Ethrandil
+				["qg"] = 265267,	-- Sanctum Attendant Ethrandil
 				["coord"] = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["timeline"] = { ADDED_12_1_0 },
 			}),
@@ -323,7 +323,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			q(96528, {	-- Prey: Anguish from Beyond
 				["sourceQuests"] = { 96532 },	-- Prey: Attending the Attendant
-				["qg"] = 265529, -- Sanctum Attendant Ethrandil
+				["qg"] = 265529,	-- Sanctum Attendant Ethrandil
 				["coord"] = { 57.0, 33.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["isDaily"] = true,
 				["timeline"] = { ADDED_12_1_0 },

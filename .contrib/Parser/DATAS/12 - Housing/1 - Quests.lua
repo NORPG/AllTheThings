@@ -198,7 +198,7 @@ root(ROOTS.Housing, {
 				},
 			}),
 			q(96780, {	-- Local Kafa Shop
-				["qg"] = 263258, -- Cousin Shortkaf <Kafa Trader>
+				["qg"] = 263258,	-- Cousin Shortkaf <Kafa Trader>
 				["coord"] =  { 55.1, 43.6, FOUNDERS_POINT },
 				["timeline"] = { ADDED_12_1_0 },
 			}),
@@ -214,7 +214,7 @@ root(ROOTS.Housing, {
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 			q(97073, {	-- Rustbolt Retailer
-				["qg"] = 267856, -- J-3T 3000
+				["qg"] = 267856,	-- J-3T 3000
 				["coord"] =  { 55.2, 43.6, FOUNDERS_POINT },
 				["timeline"] = { ADDED_12_1_0 },
 			}),

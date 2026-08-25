@@ -1492,7 +1492,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(5142, {	-- Little Pamela
-					["altQuests"] = { 5601 }, -- Sister Pamela
+					["altQuests"] = { 5601 },	-- Sister Pamela
 					["qg"] = 10927,	-- Marlene Redpath
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },

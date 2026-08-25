@@ -359,7 +359,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					["coords"] = {
 						{ 44.6, 85.3, 2213 },	-- Azj-Kahet (City of Threads)
 						{ 38.5, 35.0, HALLOWFALL },
-						{ 66.7, 48.8, THE_RINGING_DEEPS }, -- (pre-11.1 shift)
+						{ 66.7, 48.8, THE_RINGING_DEEPS },	-- (pre-11.1 shift)
 						{ 62.3, 20.3, ISLE_OF_DORN },
 					},
 					["crs"] = { 233446 },	-- Generic Bunny [Pre-Spawn Vignette]

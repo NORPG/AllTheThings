@@ -420,7 +420,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							94522,	-- They Always Write It Down
 							94523,	-- My Poor Beautiful Self
 						},
-						["qg"] = 258024, -- Pathetic Voidling
+						["qg"] = 258024,	-- Pathetic Voidling
 						["coord"] = { 43.0, 85.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
 					q(94526, {	-- Verifiably Untrustworthy
@@ -1044,10 +1044,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			q(97026, {	-- Esoteric Ingredients
-				["provider"] = { "i", 278070 },	-- Handful of Esoteric Ingredients (QS!)
-				["groups"] = {
-					i(278084),	-- Handful of Esoteric Ingredients
-				},
+				["qs"] = 278070,	-- Handful of Esoteric Ingredients (QS!)
+				["groups"] = { i(278084) },	-- Handful of Esoteric Ingredients
 			}),
 			q(95355, {	-- The Messenger
 				["qss"] = {

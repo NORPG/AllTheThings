@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				q(96641, {	-- Relentless Strikes
-					["qg"] = 272109, -- Hawkeye Socho
+					["qg"] = 272109,	-- Hawkeye Socho
 					["isWeekly"] = true,
 					["coord"] = { 46.5, 65.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				}),

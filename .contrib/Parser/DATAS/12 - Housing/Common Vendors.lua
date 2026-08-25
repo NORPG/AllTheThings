@@ -650,7 +650,7 @@ root(ROOTS.Housing, {
 	n_CommonVendorItems({
 		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
-			263258, -- Cousin Shortkaf <Kafa Trader> [Founder's Point]
+			263258,	-- Cousin Shortkaf <Kafa Trader> [Founder's Point]
 		},
 		["groups"] = {
 			i(271717),	-- Cup of Kafa
@@ -660,7 +660,7 @@ root(ROOTS.Housing, {
 	n_CommonVendorItems({
 		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
-			267856, -- J-3T 3000 [Founder's Point]
+			267856,	-- J-3T 3000 [Founder's Point]
 		},
 		["groups"] = {
 			i(276297),	-- Rustbolt Jetpack

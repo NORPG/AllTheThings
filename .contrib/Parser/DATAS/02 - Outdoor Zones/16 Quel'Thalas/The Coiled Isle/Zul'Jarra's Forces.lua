@@ -47,27 +47,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							}),
 							q(96276, { -- Dark Charms (Day 2)
-								["sourceQuest"] = 96267, -- Ancestral Gems (Day 1)
+								["sourceQuest"] = 96267,	-- Ancestral Gems (Day 1)
 								["qg"] = 264611,	-- Du'gal
 								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							}),
 							q(96273, { -- A Balance Paid in Blood (Day 3)
-								["sourceQuest"] = 96276, -- Dark Charms (Day 2)
+								["sourceQuest"] = 96276,	-- Dark Charms (Day 2)
 								["qg"] = 264611,	-- Du'gal
 								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							}),
 							q(96275, { -- Wading In (Day 4)
-								["sourceQuest"] = 96273, -- A Balance Paid in Blood (Day 3)
+								["sourceQuest"] = 96273,	-- A Balance Paid in Blood (Day 3)
 								["qg"] = 264611,	-- Du'gal
 								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							}),
 							q(96271, { -- Cursed Existence (Day 5)
-								["sourceQuest"] = 96275, -- Wading In (Day 4)
+								["sourceQuest"] = 96275,	-- Wading In (Day 4)
 								["qg"] = 264611,	-- Du'gal
 								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							}),
 							q(96305, { -- The Innocent Essence (Day 6)
-								["sourceQuest"] = 96271, -- Cursed Existence (Day 5)
+								["sourceQuest"] = 96271,	-- Cursed Existence (Day 5)
 								["qg"] = 264611,	-- Du'gal
 								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 								["g"] = {

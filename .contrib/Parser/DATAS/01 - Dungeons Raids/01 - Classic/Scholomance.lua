@@ -217,7 +217,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["qi"] = 13761,	-- Frozen Eggs (QI!)
 		}),
 		q(76257, {	-- Darkmaster's Scourgestone
-			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QS!)
+			["qs"] = 206373,	-- Darkmaster's Scourgestone (QS!)
 			["timeline"] = { ADDED_10_1_5 },
 			["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 		}),

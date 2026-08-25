@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1305, {	-- Sporefall
 		["coord"] = { 73.5, 66.4, MAP.MIDNIGHT.HARANDAR },
 		["maps"] = {
-			2427, -- Sporefall
+			2427,	-- Sporefall
 		},
 		["isRaid"] = true,
 		["timeline"] = { ADDED_12_0_7 },

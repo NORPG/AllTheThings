@@ -1455,7 +1455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5601, {	-- Sister Pamela
-					["altQuests"] = { 5142 }, -- Little Pamela
+					["altQuests"] = { 5142 },	-- Little Pamela
 					["qg"] = 11629,	-- Jessica Redpath
 					["coord"] = { 61.2, 39.0, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },

@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 64.7, 60.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["qi"] = 265622,	-- Knotted Swamp Stick
 				}),
-				q(93672, {	-- Blade to Res
+				q(93672, {	-- Blade to Rest
 					["coord"] = { 45.7, 12.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(93669, {	-- Curse of Greed

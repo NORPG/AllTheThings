@@ -174,6 +174,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(94837, {	-- Midnight Training: Week 2 of 3
 				["sourceQuests"] = { 94836 },	-- Late Night Training: Week 1 of 3
 				["timeline"] = { ADDED_12_0_1, REMOVED_12_1_0 },
+				["groups"] = { i(267491) },	-- Novice Combatant's Cloak
 			}),
 			q(94838, {	-- Final Training: Week 3 of 3
 				["sourceQuests"] = { 94837 },	-- Midnight: Week 2 of 3
@@ -186,6 +187,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(280097),	-- Venomous Aspirant's Insignia of Alacrity
 					i(280118),	-- Venomous Aspirant's Medallion
 				},
+			}),
+			q(98295, {	-- Week 1 of 3: Crowd Control
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["groups"] = { i(267491) },	-- Novice Combatant's Cloak
 			}),
 		})),
 		-- Dungeons

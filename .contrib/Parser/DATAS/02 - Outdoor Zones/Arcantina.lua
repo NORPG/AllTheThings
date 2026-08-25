@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				},
 			}),
 			q(95780, {	-- Hope for the Orhpans
-				["qg"] = 259335, -- Vanessa VanCleef
+				["qg"] = 259335,	-- Vanessa VanCleef
 				["coord"] = { 60.2, 50.1, ARCANTINA },
 				["timeline"] = { ADDED_12_1_0 },
 				["groups"] = { i(278038) },	-- Arathor Toy Sword (DECOR!)
@@ -183,8 +183,8 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 			h(q(90718, {	-- Request of the Arcantina
 				["sourceQuests"] = {
-					92520, -- Wake of the Darkwell
-					92319, -- A Favor to Axe
+					92520,	-- Wake of the Darkwell
+					92319,	-- A Favor to Axe
 				},
 				["qg"] = 240265,	-- Chief Telemancer Oculeth
 				["coord"] = { 47.4, 69.6, MAP.MIDNIGHT.SILVERMOON_CITY },
