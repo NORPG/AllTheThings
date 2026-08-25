@@ -195,6 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				})),
 				n(REWARDS, {
+					i(205964),	-- Small Loammian Supply Pack
 					i(204460),	-- Zaralek Glowspores
 				}),
 			},
