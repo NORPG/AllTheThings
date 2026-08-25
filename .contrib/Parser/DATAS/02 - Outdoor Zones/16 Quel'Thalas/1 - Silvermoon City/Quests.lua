@@ -262,7 +262,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				q(93067),	-- "Stay a while and listen" objectID 551501 (In Memoriam) @ 35.2, 70.3
 				q(93275, name(HEADERS.Item,232875,{["isWeekly"]=true,["timeline"]={ADDED_12_0_1_SEASONSTART,REMOVED_12_1_0}})),	-- Weekly lockout for Spark of Radiance
-				--q(96446, name(HEADERS.Item,274476,{["isWeekly"]=true,["timeline"]={ADDED_12_1_0}})),	-- Weekly lockout for Spark of Tides
+				q(96447, name(HEADERS.Item,274476,{["isWeekly"]=true,["timeline"]={ADDED_12_1_0}})),	-- Weekly lockout for Spark of Tides
 				q(93789),	-- Apex Cache (season 1) was opened / bonus roll for something?
 				q(94419, {["timeline"]={ADDED_12_0_1_SEASONSTART,REMOVED_12_1_0}}),	-- player receive 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 				q(94410),	-- After turning in Unity Against the Void? Spark lockout?
