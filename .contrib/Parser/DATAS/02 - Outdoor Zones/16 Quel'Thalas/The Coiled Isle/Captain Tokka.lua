@@ -123,6 +123,71 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["provider"] = { "i", 278001 } -- Forgotten Amani Fishing Rod
 						}),
 					}),
+					prof(FISHING, {
+						spell(1306775, { -- Venom Fishing
+							["description"] = "Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",
+							["sourceQuests"] = { 96112 }, -- Venom Fishing: Maddening Concoction
+							["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+							["groups"] = {
+								i(274805), -- Envenomed Chopper
+							--	i(274796), -- Envenomed Deathblade (needs confirmation)
+								i(274804), -- Envenomed Elfcleaver
+								i(274816), -- Envenomed False Promise
+								i(274814), -- Envenomed Game Ripper (can be 100% fished, even when its on vendor for currency)
+								i(274802), -- Envenomed Gavel (can be 100% fished, even when its on vendor for currency)
+								i(274806), -- Envenomed Gut-Puncher
+								i(274813), -- Envenomed Hammer
+								i(274812), -- Envenomed Hunter's Spear
+								i(274815), -- Envenomed Pages
+								i(274807), -- Envenomed Ritualizer
+								i(274811), -- Envenomed Sacrificial Dagger
+								i(274801), -- Envenomed Snakefang
+								i(274809), -- Envenomed Soul Collector
+								i(274810), -- Envenomed Spring's Frenzy
+								i(274803), -- Envenomed Trollsplitter
+								i(274808), -- Envenomed Umbral Claymore
+							},
+						}),
+						filter(QUEST_ITEMS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+							i(279384, {	-- Bonemail Gauntlet (QS!)
+								["description"] = "Can be fished in open waters",
+								["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
+							}),
+							i(278001, {	-- Forgotten Amani Fishing Rod (QS!)
+								["description"] = "Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",
+								["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
+							}),
+							i(277989, {	-- Ghostcaller's Bell (QS!)
+								["description"] = "Can be fished from Bubbling Beryl pools.",
+								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
+							}),
+							i(277998, {	-- Lump of Crystalline Malachite (QS!)
+								["description"] = "Can be fished from Willow Sea pools.",
+								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
+							}),
+							i(277997),	-- Malevolent Fishing Codex (QS!)
+							i(277999, {	-- Ritual Dagger (QS!)
+								["description"] = "Can be fished in open waters",
+								["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
+							}),
+							i(278000, {	-- Sealed Vial of Mysterious Green Liquid (QS!)
+								["description"] = "Can be fished in venomous waters surrounding the Temple.",
+								["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
+							}),
+							i(277991, {	-- Shrieking Tacklebox (QS!)
+								["description"] = "Can be fished in venomous waters surrounding the Temple.",
+								["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
+							}),
+							i(277993, {	-- Spiritsurge Incense (QS!)
+								["description"] = "Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",
+								["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
+							}),
+							i(277996, {	-- Summoning Salt (QS!)
+								["description"] = "Can be fished in open waters",
+								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
+							}),
+						})),
+					}),
 					n(RARES, {
 						n(270024, {	-- Cook Leathertongue
 							["description"] = "Provides 50 Captain Tokka Reputation on kill",
