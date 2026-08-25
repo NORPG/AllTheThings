@@ -64216,7 +64216,7 @@ crit(39090,{achID=36,id=8})}}),
 q(12653,{coords={
 [121]={{53.4,39}}},lvl=20,qgs={28561},sourceQuests={12647}}),
 q(12713,{coords={
-[121]={{14,73.8},{27.6,53.8},{28.4,44.9}}},description="WARNING: Once you complete this quest, the quest |cFFFFD700Feedin' Da Goolz|r will become unavailable forever!",lvl=20,qgs={28518},sourceQuests={12652,12676},g={
+[121]={{14.1,73.8}}},description="WARNING: Once you complete this quest, the quest |cFFFFD700Feedin' Da Goolz|r will become unavailable forever!",lvl=20,qgs={28518},qis={39664,40425},sourceQuests={12652,12676},g={
 i(39655,{b=1,f=51}),
 i(39653,{b=1,f=51}),
 i(39652,{b=1,f=51}),
@@ -64252,7 +64252,7 @@ s(19178,39867,{b=1,f=5,loc=44}),
 s(19165,39854,{b=1,f=6,loc=42}),
 s(19166,39855,{b=1,f=7,loc=44})}}),
 q(12638,{altQuests={12637},coords={
-[121]={{14,73.8}}},lvl=20,qgs={28518},sourceQuests={12633}}),
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},qis={38678},sourceQuests={12633}}),
 q(12606,{coords={
 [121]={{58,72.4}}},lvl=20,qgs={28044},sourceQuests={12598}}),
 q(12604,{coords={
@@ -64292,15 +64292,15 @@ q(12552,{coords={
 q(12503,{coords={
 [121]={{39.4,66.9}}},lvl=20,qgs={28059},sourceQuests={12795}}),
 q(12710,{coords={
-[121]={{27,46.1}}},lvl=20,qgs={28503},sourceQuests={12690}}),
+[121]={{27,46.1}}},lvl=20,qgs={28503},qis={39319},sourceQuests={12690}}),
 q(12648,{altQuests={12649},coords={
-[121]={{14,73.8}}},lvl=20,qgs={28518},sourceQuests={12629}}),
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},qis={38699},sourceQuests={12629}}),
 q(13556,{coords={
 [121]={{69.9,20.9}}},lvl=20,qgs={33025}}),
 q(12708,{coords={
 [121]={{59.3,56.4}}},lvl=20,qgs={28480},sourceQuests={12685}}),
 q(12652,{altQuests={12713},coords={
-[121]={{19.8,75.4}}},description="Must be on |cFFFFD700Suit Up!|r or |cFFFFD700Dressing Down|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",lvl=20,qgs={28589},sourceQuests={12649},g={
+[121]={{19.8,75.4}}},description="Must be on |cFFFFD700Suit Up!|r or |cFFFFD700Dressing Down|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",lvl=20,qgs={28589},qis={38701},sourceQuests={12649},g={
 s(19128,39812,{b=1,f=4,loc=46}),
 s(19187,39876,{b=1,f=5,loc=45}),
 s(19190,39880,{b=1,f=6,loc=43}),
@@ -64311,13 +64311,13 @@ q(12792,{coords={
 q(12668,{coords={
 [121]={{75.3,58.6}}},lvl=20,qgs={28030},sourceQuests={12672}}),
 q(12690,{coords={
-[121]={{27,46.1}}},description="Must be on |cFFFFD700Sabotage|r to see this quest.",lvl=20,qgs={28503},sourceQuests={12677}}),
+[121]={{27,46.1}}},description="Must be on |cFFFFD700Sabotage|r to see this quest.",lvl=20,qgs={28503},qis={39238},sourceQuests={12677}}),
 q(12527,{coords={
 [121]={{41.3,65.1}}},lvl=20,qgs={28204},sourceQuests={12510}}),
 q(12914,{coords={
 [121]={{25.2,63.8}}},lvl=20,qgs={29688},sourceQuests={12912}}),
 q(12677,{coords={
-[121]={{14,73.8},{27.6,53.8},{28.4,44.9}}},lvl=20,qgs={28518},sourceQuests={12669}}),
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},qis={39159},sourceQuests={12669}}),
 q(12674,{coords={
 [121]={{75.3,58.6}}},lvl=20,qgs={28030},sourceQuests={12668},g={
 s(19111,39791,{b=1,f=4,loc=43}),
@@ -64341,19 +64341,19 @@ q(12665,{coords={
 q(12902,{coords={
 [121]={{32.1,75.7}}},lvl=20,qgs={29687},sourceQuests={49534,49552}}),
 q(12661,{coords={
-[121]={{14,73.7}}},lvl=20,qgs={28518},sourceQuests={12648,12649},g={
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},qis={41390},sourceQuests={12648,12649},g={
 s(19126,39809,{b=1,f=4,loc=47}),
 s(19180,39869,{b=1,f=5,loc=43}),
 s(19177,39866,{b=1,f=6,loc=44}),
 s(19181,39870,{b=1,f=3}),
 s(19144,39830,{b=1,f=34})}}),
 q(12673,{coords={
-[121]={{27,46.1}}},description="Must be on |cFFFFD700So Far, So Bad|r to see this quest.",lvl=20,qgs={28503},sourceQuests={12661}}),
+[121]={{27,46.1}}},description="Must be on |cFFFFD700So Far, So Bad|r to see this quest.",lvl=20,qgs={28503},qis={39157},sourceQuests={12661}}),
 q(13099,{awp=30300,isBreadcrumb=1,nextQuests={13098,13111},qgs={28527},rwp=40300,u=2}),
 q(29836,{awp=40300,coords={
 [121]={{59.9,57.9}}},lvl=20,qgs={28527}}),
 q(12630,{coords={
-[121]={{14,73.8}}},lvl=20,qgs={28518},sourceQuests={12884}}),
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},sourceQuests={12884}}),
 q(12557,{coords={
 [121]={{35,52.1}}},description="Must be on |cFFFFD700Pa'Troll|r to see this quest.",lvl=20,qgs={28205},sourceQuests={12740},g={
 o(190478,{coords={
@@ -64388,7 +64388,7 @@ q(12646,{coords={
 [121]={{53.4,39}}},lvl=20,qgs={28561},sourceQuests={12642},g={
 i(38695)}}),
 q(12637,{altQuests={12638},coords={
-[121]={{14,73.8}}},lvl=20,qgs={28518},sourceQuests={12631}}),
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},sourceQuests={12631}}),
 q(12505,{coords={
 [121]={{40.2,66.6}}},lvl=20,qgs={28039},sourceQuests={12740}}),
 q(12675,{coords={
@@ -64445,7 +64445,7 @@ q(12635,{coords={
 q(12663,{altQuests={12664},coords={
 [121]={{27,46.1}}},description="Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",lvl=20,qgs={28503},sourceQuests={12649}}),
 q(12676,{coords={
-[121]={{14,73.8},{27.6,53.8},{28.4,44.9}}},lvl=20,qgs={28518},sourceQuests={12677},g={
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},qis={39165},sourceQuests={12677},g={
 i(39811,{b=1,f=53,spellID=62088}),
 s(19184,39873,{b=1,f=5,loc=46}),
 s(19186,39875,{b=1,f=6,loc=41}),
@@ -64459,14 +64459,14 @@ q(12667,{coords={
 q(12672,{coords={
 [121]={{75.3,58.6}}},lvl=20,qgs={28030},sourceQuests={12667}}),
 q(12643,{altQuests={12629},coords={
-[121]={{14,73.7}}},lvl=20,qgs={28518},sourceQuests={12638}}),
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},sourceQuests={12638}}),
 q(12799,{coords={
 [121]={{35.6,52.2}}},lvl=20,qgs={28045}}),
 q(12553,{coords={
 [121]={{58.2,72}}},lvl=20,qgs={28284},sourceQuests={12598}}),
 q(12793,{lvl=20}),
 q(12669,{coords={
-[121]={{14,73.8},{27.6,53.8},{28.4,44.9}}},lvl=20,qgs={28518},sourceQuests={12661},g={
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},qis={39154},sourceQuests={12661},g={
 s(19127,39810,{b=1,f=4,loc=45}),
 s(19182,39871,{b=1,f=5,loc=47}),
 s(19183,39872,{b=1,f=6,loc=40}),
@@ -64486,7 +64486,7 @@ s(19119,39802,{b=1,f=26}),
 s(19143,39829,{b=1,f=32})}}),
 q(12507,{crs={28034,28035,28036},lvl=20,providers={{"i",38321}}}),
 q(12649,{altQuests={12648},coords={
-[121]={{14,73.7}}},lvl=20,qgs={28518},sourceQuests={12643}}),
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},sourceQuests={12643}}),
 q(13549,{coords={
 [121]={{59.9,57.9}}},lvl=20,qgs={28527},sourceQuests={12635}}),
 q(12795,{coords={
@@ -64643,7 +64643,7 @@ s(19098,39776,{b=1,f=6,loc=41}),
 s(19099,39778,{b=1,f=7,loc=46}),
 s(19134,39818,{b=1,f=33})}}),
 q(12629,{altQuests={12643},coords={
-[121]={{14,73.8}}},lvl=20,qgs={28518},sourceQuests={12637}}),
+[121]={{14.1,73.8}}},lvl=20,qgs={28518},qis={38686,38687},sourceQuests={12637}}),
 q(12685,{coords={
 [121]={{63.6,70.3}}},lvl=20,qgs={28401},sourceQuests={12684},g={
 s(19156,39844,{b=1,f=8}),
@@ -64653,7 +64653,7 @@ s(19157,39845,{b=1,f=7,loc=44}),
 s(19140,39826,{b=1,f=25}),
 crit(39099,{achID=36,id=2})}}),
 q(12686,{coords={
-[121]={{27,46.1}}},description="Must be on |cFFFFD700Hazardous Materials|r to see this quest.",lvl=20,qgs={28503},sourceQuests={12669}}),
+[121]={{27,46.1}}},description="Must be on |cFFFFD700Hazardous Materials|r to see this quest.",lvl=20,qgs={28503},qis={39206},sourceQuests={12669}}),
 q(39208,{awp=60200,isBreadcrumb=1,lvl=20,rwp=70305,u=2})}),
 h(-46,{
 n(33776,{coords={
@@ -64672,6 +64672,7 @@ n(32447,{coords={
 s(21558,44677,{f=7,loc=46,lvl=28}),
 crit(8115,{achID=2257,id=16})}})}),
 h(-63,{
+i(38551,{b=1}),
 p(234,{awp=30200,coords={
 [121]={{72.6,27.8},{75.2,38.6},{78.2,16.6},{81.6,31.6},{87,26.6}}},crs={29334},itemID=48116,npcID=35400,spellID=67415}),
 r(54980,{b=1,coords={
@@ -148861,6 +148862,7 @@ i(204365,{spellID=404841})}}),
 q(74989,{coords={
 [2133]={{31.4,52}}},isWorldQuest=1})}),
 h(-47,{
+i(205964,{b=1}),
 i(204460)})}}),
 h(-64,{
 r(406418,{b=1,itemID=205340,requireSkill=333,skillID=2825}),
@@ -165584,7 +165586,7 @@ i(254677,{awp=120001,b=1,f=55,lvl=90,rwp=120100,sym={{"select","mapID",2537},{"p
 i(279527,{awp=120100,f=55,rwp=120200,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}}),
 i(279575,{awp=120100,spellID=1306929})}})}),
 h(-55,{awp=120100,g={
-campsite(155,{cost={{"i",279575,4}}}),
+campsite(155,{cost={{"i",279575,1}}}),
 campsite(158,{cost={{"i",279576,4}}})}}),
 o(549189,{coords={
 [2393]={{50.3,65.1}}},g={
@@ -169338,7 +169340,7 @@ i(273000),
 i(279382,{spellID=1306630,sym={{"select","itemID",279345},{"pop"}}})}}),
 q(95520,{coords={
 [2509]={{47.2,60.8}},
-[2512]={{58.7,45.8}}},isDaily=1,qgs={262798,267635},g={
+[2512]={{58.7,45.8}}},isWeekly=1,qgs={262798,267635},g={
 i(273000),
 i(279382,{spellID=1306630,sym={{"select","itemID",279345},{"pop"}}})}}),
 q(96641,{coords={
@@ -169370,7 +169372,7 @@ q(95953,{repeatable=1,g={
 i(271693),
 crit(116186,{achID=63598,id=7})}}),
 q(96017,{coords={
-[2509]={{41,39.7},{45,10.8},{54.3,42.5}}},qgs={263411},repeatable=1,g={
+[2509]={{41,39.7},{45,10.8},{54.3,42.5}}},crs={263412},qgs={263411},repeatable=1,g={
 crit(116187,{achID=63598,id=8})}}),
 q(95987,{coords={
 [2509]={{50.1,38.8},{52.6,45.5}}},qgs={263339},repeatable=1,g={
@@ -169611,7 +169613,8 @@ p(5132,{itemID=280138,npcID=271086,spellID=1307843})}),
 ach(63395,{sr=1}),
 ach(62297,{
 crit(116539,{achID=63639,id=1})}),
-ach(63167,{pvp=1}),
+ach(63167,{pvp=1,g={
+toy(275825,{pvp=1})}}),
 ach(63359,{
 mnt(1297224,{itemID=275656}),
 crit(116540,{achID=63639,id=3})}),
@@ -169706,6 +169709,10 @@ q(97571,{coords={
 [2512]={{51.7,50.2}}},isDaily=1,qgs={268394}}),
 q(97557,{coords={
 [2512]={{51.7,50.2}}},isDaily=1,qgs={268394}}),
+q(97535,{qgs={269313},qis={278193,278391}}),
+q(97559,{qgs={269313},qis={278391,279475,279476,279477,279478,279479},sourceQuests={97535}}),
+q(97565,{maps={2509},qgs={269313},qis={278391,280446},sourceQuests={97559},g={
+p(3526,{itemID=279483,npcID=269295,spellID=1303722})}}),
 q(97464,{providers={{"i",278000}},g={
 crit(116091,{achID=63512,id=7})}}),
 q(97457,{providers={{"i",279384}},g={
@@ -169726,6 +169733,35 @@ q(97458,{providers={{"i",277991}},g={
 crit(116092,{achID=63512,id=8})}}),
 q(97465,{providers={{"i",278001}},g={
 crit(116086,{achID=63512,id=2})}})}}),
+prof(356,{
+sp(1306775,{description="Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",minReputation={2773,3},sourceQuests={96112},g={
+s(308990,274805,{f=21}),
+s(308989,274804,{f=22}),
+s(309001,274816,{f=20}),
+s(308999,274814,{f=29}),
+s(308987,274802,{f=23}),
+s(308991,274806,{f=34}),
+s(308998,274813,{f=23}),
+s(308997,274812,{f=29}),
+s(309000,274815,{f=1}),
+s(308992,274807,{f=28}),
+s(308996,274811,{f=20}),
+s(308986,274801,{f=25}),
+s(308994,274809,{f=24}),
+s(308995,274810,{f=26}),
+s(308988,274803,{f=22}),
+s(308993,274808,{f=26})}}),
+flt(104,{
+i(279384,{description="Can be fished in open waters",sourceQuests={98343}}),
+i(278001,{description="Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",sourceQuests={96111}}),
+i(277989,{description="Can be fished from Bubbling Beryl pools.",sourceQuests={96113}}),
+i(277998,{description="Can be fished from Willow Sea pools.",sourceQuests={96113}}),
+i(277997),
+i(277999,{description="Can be fished in open waters",sourceQuests={98343}}),
+i(278000,{description="Can be fished in venomous waters surrounding the Temple.",sourceQuests={96112}}),
+i(277991,{description="Can be fished in venomous waters surrounding the Temple.",sourceQuests={96112}}),
+i(277993,{description="Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",sourceQuests={96111}}),
+i(277996,{description="Can be fished in open waters",sourceQuests={96113}})})}),
 h(-46,{
 n(270024,{description="Provides 50 Captain Tokka Reputation on kill",providers={{"i",279207}}}),
 n(270222,{description="Provides 50 Captain Tokka Reputation on kill",providers={{"i",279210}}}),
@@ -169746,7 +169782,7 @@ r(1289746,{cost={{"c",3261,150}},itemID=271891,minReputation={2773,3},requireSki
 r(1231090,{cost={{"c",3316,1500}},itemID=275018,minReputation={2773,3},requireSkill=356,skillID=2911}),
 r(1296502,{cost={{"c",3259,150}},itemID=275318,minReputation={2773,3},requireSkill=202,skillID=2910}),
 de(25300,{cost={{"c",3316,250}},itemID=277925,minReputation={2773,4},spellID=1302903}),
-i(278391,{cost={{"c",3316,250}},minReputation={2773,4},spellID=1304752}),
+i(278391,{cost={{"c",3316,250}},description="Throw at a pool of fish to summor an eldritch fishy questgiver",minReputation={2773,4},spellID=1304752}),
 r(1295777,{cost={{"c",3316,1500}},itemID=275301,minReputation={2773,4},requireSkill=185,skillID=2908}),
 r(1295922,{cost={{"c",3316,1500}},itemID=275012,minReputation={2773,4},requireSkill=356,skillID=2911}),
 de(26196,{cost={{"c",3316,500}},itemID=277929,minReputation={2773,4},spellID=1302907}),
@@ -170169,8 +170205,10 @@ q(96111,{coords={
 [2512]={{57.2,48.6}}},qgs={258755},qis={274083},sourceQuests={98414},g={
 o(649481,{
 i(274033)})}}),
+q(98415,{coords={
+[2512]={{51.6,49.8}}},isBreadcrumb=1,minReputation={2773,3},nextQuests={96112},qgs={257598}}),
 q(96112,{coords={
-[2512]={{57.2,48.6}}},minReputation={2773,3},qgs={258755},qis={274089,274090,274091,274103},sourceQuests={96111}}),
+[2512]={{57.2,48.6}}},minReputation={2773,3},qgs={258755},qis={274089,274090,274091,274103},sourceQuests={96111,98415}}),
 q(96113,{coords={
 [2512]={{57.2,48.6}}},minReputation={2773,4},qgs={258755},qis={274281,274282},sourceQuests={96112},g={
 crit(116544,{achID=63641,id=2})}}),
@@ -170362,6 +170400,7 @@ i(275911,{f=55,g={
 i(273000)}})}}),
 q(97026,{providers={{"i",278070}},g={
 i(278084,{f=55})}}),
+q(95355,{maps={2437},qis={268929,268952,268964,268965,268968},qss={268951,268953}}),
 q(97016,{coords={
 [2512]={{57.4,48.7},{61,32.6}}},qgs={254599,263327},repeatable=1,sourceQuests={97026},g={
 ach(63432,{
@@ -170690,6 +170729,8 @@ q(95662,{coords={
 [2512]={{58,48.8}}},isWorldQuest=1}),
 q(93671,{coords={
 [2512]={{64.7,60.6}}},isWorldQuest=1,qis={265622}}),
+q(93672,{coords={
+[2512]={{45.7,12.8}}},isWorldQuest=1}),
 q(93669,{coords={
 [2512]={{34.4,85.3}}},isWorldQuest=1,qis={260419}}),
 q(95794,{coords={
@@ -170709,12 +170750,17 @@ q(93649,{coords={
 q(96329,{coords={
 [2512]={{52.2,43.4}},
 [2642]={{65.9,23.5}}},isWorldQuest=1}),
+q(93670,{coords={
+[2512]={{66,38}}},isWorldQuest=1,g={
+i(260420)}}),
 q(94967,{coords={
 [2512]={{69.6,56.5}}},isWorldQuest=1,g={
 i(267085),
 ach(63633,{coords={
 [2512]={{69.3,52.3}}},crs={256872},g={
 p(5131,{itemID=279921,npcID=270857,spellID=1307328})}})}}),
+q(95931,{coords={
+[2512]={{66.8,32.6}}},isWorldQuest=1,minReputation={2773,4}}),
 q(94611,{coords={
 [2512]={{64.7,66.1}}},isWorldQuest=1}),
 q(93664,{coords={
@@ -170770,6 +170816,10 @@ h(-63,{
 flt(56,{
 i(274781),
 i(275280),
+i(268953,{coords={
+[2512]={{53,44.2},{53.8,42.3},{53.8,42.7},{53.9,43.9},{54,40.7}}},crs={260724}}),
+i(268951,{coords={
+[2512]={{53,44.2},{53.8,42.3},{53.8,42.7},{53.9,43.9},{54,40.7}}},crs={260724}}),
 i(278070)})}),
 h(-64,{
 flt(56,{
@@ -171615,11 +171665,11 @@ q(93999,{coords={
 q(93997,{coords={
 [2444]={{34.8,80.6}}},lvl=90,qgs={257132},r=1}),
 q(94623,{coords={
-[2405]={{51.2,68.4}}},lvl=90,qgs={243907},rwp=120100,u=2,g={
-i(265695,{u=2})}}),
+[2405]={{51.2,68.4}}},lvl=90,qgs={243907},g={
+i(265695)}}),
 q(94625,{coords={
-[2405]={{51.2,68.4}}},lvl=90,qgs={243907,248583},repeatable=1,rwp=120100,sourceQuests={94623},u=2,g={
-i(265695,{u=2})}}),
+[2405]={{51.2,68.4}}},lvl=90,qgs={243907,248583},repeatable=1,sourceQuests={94623},g={
+i(265695)}}),
 q(94675,{coords={
 [2405]={{51.2,68.4}}},lvl=90,qgs={243907},rwp=120100,sourceQuests={94625},u=2}),
 q(95268,{awp=120005,coords={
