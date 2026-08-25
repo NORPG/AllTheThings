@@ -629,6 +629,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			hqt(98078, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			hqt(98074, name(HEADERS.NPC, 261503)),	-- Frightmaw
+			hqt(98086, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
 			-- M
 		},
 	}),

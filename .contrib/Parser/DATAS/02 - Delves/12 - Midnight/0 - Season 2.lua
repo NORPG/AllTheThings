@@ -67,7 +67,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				["coord"] = { 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["groups"] = {
 					n(262455, {	-- Azta'rec ?
-						["questID"] = 97041,
+						["questID"] = 92888,
 						--["isDaily"] = true,
 						["groups"] = {
 							ach(63326, {	-- My Venomous Nemesis
@@ -203,6 +203,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					filter(TRINKET_F, {
 						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
 						["groups"] = {
+							i(274494),	-- Chiral Marrowgrafter
+							i(274493),	-- Effigy of Ula'Tek's Faithful
+							i(251786),	-- Ever-Collapsing Void Fissure
 							i(251792),	-- Glorious Crusader's Keepsake
 							i(251785),	-- Void-Reaper's Libram
 						},
@@ -332,7 +335,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			["groups"] = {
 				q(95039),	-- triggered when buying Delver's Cosmetic Surprise Bag [275986]
 				q(98787),	-- triggered with completion of Slithering Spoils [97321]
-				--q(92888),	-- Azta'rec crests??
+				--q(97041),	-- Azta'rec crests??
 			},
 		}),
 	}),

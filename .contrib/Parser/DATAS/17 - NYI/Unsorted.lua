@@ -85,7 +85,6 @@ root(ROOTS.Unsorted, {
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
 			i(274680),	-- Loa-Blessed Orb
-			i(274707),	-- Crystallized Venomblight Manaflux
 			i(274713),	-- Cache of Amani Treasures
 			i(274763),	-- Fleeting Liquid Luster
 			i(274764),	-- Fleeting Liquid Luster
@@ -116,18 +115,11 @@ root(ROOTS.Unsorted, {
 			i(275030),	-- Slugg's Favorite Fishing Rod
 			i(275053),	-- Kobold Candle Collection
 			i(275062),	-- Illusion: Venomcoil
-			i(275063),	-- [PH] Taretha Axe - Black
 			i(275064),	-- [PH] Taretha Axe - Blue
 			i(275065),	-- [PH] Taretha Axe - Purple
-			i(275066),	-- [PH] Taretha Axe - White
-			i(275230),	-- Azure Bracelet of Friendship
-			i(275231),	-- Obsidian Bracelet of Friendship
-			i(275232),	-- Leafy Bracelet of Friendship
 			i(275233),	-- Rosy Bracelet of Friendship
 			i(275234),	-- Violet Bracelet of Friendship
-			i(275235),	-- Ruby Bracelet of Friendship
 			i(275236),	-- Silver Bracelet of Friendship
-			i(275237),	-- Crystal Bracelet of Friendship
 			i(275274),	-- Alchemy
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
@@ -149,22 +141,10 @@ root(ROOTS.Unsorted, {
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276234),	-- Vibrant Venomfang
-			i(276405),	-- [PH] Rainbow Axe - 1h - Blue
-			i(276406),	-- [PH] Rainbow Axe - 1h - Green
 			i(276407),	-- [PH] Rainbow Axe - 1h - Purple
-			i(276408),	-- [PH] Rainbow Axe - 1h - Red
-			i(276409),	-- [PH] Rainbow Axe - 2h - Blue
-			i(276410),	-- [PH] Rainbow Axe - 2h - Green
 			i(276411),	-- [PH] Rainbow Axe - 2h - Purple
-			i(276412),	-- [PH] Rainbow Axe - 2h - Red
-			i(276413),	-- [PH] Rainbow Mace- 1h - Blue
-			i(276414),	-- [PH] Rainbow Mace- 1h - Green
 			i(276415),	-- [PH] Rainbow Mace- 1h - Purple
-			i(276416),	-- [PH] Rainbow Mace- 1h - Red
-			i(276417),	-- [PH] Rainbow Mace- 2h - Blue
-			i(276418),	-- [PH] Rainbow Mace- 2h - Green
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
-			i(276421),	-- [PH] Rainbow Mace- 2h - Red
 			i(276547),	-- Afflicted Soul
 			i(276548),	-- Tormented Soul
 			i(276550),	-- Wind Serpent - White
@@ -251,9 +231,6 @@ root(ROOTS.Unsorted, {
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
-			i(278573),	-- Crested Burnished Leafmimic
-			i(278574),	-- Crested Aqua Leafmimic
-			i(278575),	-- Crested Verdant Leafmimic
 			i(278576),	-- Crested Violet Leafmimic
 			i(278577),	-- Nightfall Assassin's Tunic
 			i(278578),	-- Nightfall Assassin's Mask
@@ -459,7 +436,6 @@ root(ROOTS.Unsorted, {
 			i(279432),	-- Cloudy Gloomcap
 			i(279433),	-- Deep Gloomcap
 			i(279434),	-- Camo Gloomcap
-			i(279435),	-- Brick Gloomcap
 			i(279436),	-- Lively Gloomcap
 			i(279437),	-- Faded Gloomcap
 			i(279438),	-- Carrot Gloomcap
@@ -467,7 +443,6 @@ root(ROOTS.Unsorted, {
 			i(279440),	-- Plum Gloomcap
 			i(279441),	-- Crimson Gloomcap
 			i(279442),	-- Violet Gloomcap
-			i(279443),	-- Aquatic Gloomcap
 			i(279444),	-- Snowy Gloomcap
 			i(279445),	-- Sunny Gloomcap
 			i(279455),	-- K'areshi Tea Cup
@@ -810,7 +785,6 @@ root(ROOTS.Unsorted, {
 				i(274053),	-- Bandit's Grassy Highboot
 				i(274055),	-- Bandit's Deep Highboot
 				i(274056),	-- Bandit's Camo Highboot
-				i(274057),	-- Bandit's Brick Highboot
 				i(274058),	-- Bandit's Lively Highboot
 				i(274059),	-- Bandit's Faded Highboot
 				i(274060),	-- Bandit's Carrot Highboot
@@ -818,7 +792,6 @@ root(ROOTS.Unsorted, {
 				i(274062),	-- Bandit's Plum Highboot
 				i(274063),	-- Bandit's Crimson Highboot
 				i(274064),	-- Bandit's Violet Highboot
-				i(274065),	-- Bandit's Aquatic Highboot
 				i(274067),	-- Bandit's Sunny Highboot
 				i(274073),	-- Lively Extravaganza Rocketstaff
 				i(274074),	-- Suntouched Extravaganza Rocketstaff
@@ -836,14 +809,12 @@ root(ROOTS.Unsorted, {
 				i(274623),	-- Gunslinger's Grassy Lid
 				i(274625),	-- Gunslinger's Deep Lid
 				i(274626),	-- Gunslinger's Camo Lid
-				i(274627),	-- Gunslinger's Brick Lid
 				i(274628),	-- Gunslinger's Lively Lid
 				i(274629),	-- Gunslinger's Faded Lid
 				i(274631),	-- Gunslinger's Rosy Lid
 				i(274632),	-- Gunslinger's Plum Lid
 				i(274633),	-- Gunslinger's Crimson Lid
 				i(274634),	-- Gunslinger's Violet Lid
-				i(274635),	-- Gunslinger's Aquatic Lid
 				i(274637),	-- Gunslinger's Sunny Lid
 				i(274715),	-- Duskwatch Outlaw's Hand Cannon
 				i(275999),	-- Flowering Mantle
@@ -902,9 +873,7 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
 			filter(COSMETIC, {
 				n(ARMOR, {
-					i(270295),	-- Crown of Aquatic Springflowers
 					i(270280),	-- Crown of Azure Springflowers
-					i(270287),	-- Crown of Brick Springflowers
 					i(270286),	-- Crown of Camo Springflowers
 					i(270290),	-- Crown of Carrot Springflowers
 					i(270293),	-- Crown of Crimson Springflowers

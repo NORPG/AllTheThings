@@ -2508,6 +2508,9 @@ i(276881, 1301070);	-- Breath of Blight
 i(276882, 1301074);	-- Breath of Ruin
 i(275654, 1297217);	-- Caustic Venomfang
 i(276162, 1298808);	-- Corroded Soul Crusher
+i(278574, 1305206);	-- Crested Aqua Leafmimic
+i(278573, 1305204);	-- Crested Ember Leafmimic
+i(278575, 1305207);	-- Crested Verdant Leafmimic
 i(275652, 1297220);	-- Crimson Venomfang
 i(262496, 1268919);	-- Delver's Arcane Golem
 i(276553, 1299965);	-- Emerald Skyfang
@@ -2530,9 +2533,6 @@ i(276551, 1299963);	-- Violet-Backed Skyfang
 i(275551, 1296724);	-- Autumnal Witchwick's Rider	(SHOP OR TRADING POST)
 i(275573, 1296988);	-- Blushing Witchwick's Rider	(SHOP OR TRADING POST)
 i(275574, 1296989);	-- Carmine Witchwick's Rider	(SHOP OR TRADING POST)
-i(278574, 1305206);	-- Crested Aqua Leafmimic		(SHOP OR TRADING POST)
-i(278573, 1305204);	-- Crested Ember Leafmimic		(SHOP OR TRADING POST)
-i(278575, 1305207);	-- Crested Verdant Leafmimic	(SHOP OR TRADING POST)
 i(278576, 1305209);	-- Crested Violet Leafmimic		(SHOP OR TRADING POST)
 i(274164, 142515);	-- Hearthkeeper's Wandering Caravan
 i(275571, 1296986);	-- Moonlit Witchwick's Rider	(SHOP OR TRADING POST)
