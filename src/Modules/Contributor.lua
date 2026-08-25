@@ -3670,7 +3670,7 @@ local function OnQUEST_DETAIL(...)
 	app.PrintDebug(guidtype,providerid,app.GetNameFromProvider(providerType, providerid)," => Quest #", questID)
 
 	local questData = BuildGenericReportData(objRef, questID)
-	questData.provider = providerid..", -- "..(app.GetNameFromProvider(providerType, providerid)
+	questData.provider = providerid..",\t-- "..(app.GetNameFromProvider(providerType, providerid)
 		or (GameTooltipTextLeft1 and GameTooltipTextLeft1:GetText()) or UNKNOWN)
 	questData.providerType = providerType
 
