@@ -92,17 +92,6 @@ root(ROOTS.Unsorted, {
 			i(274784),	-- Seaside Tiki Frondtree
 			i(274786),	-- Seaside Waterfall Basin
 			i(274788),	-- Seaside Depths Porthole
-			i(274803),	-- Envenomed Trollsplitter
-			i(274804),	-- Envenomed Elfcleaver
-			i(274806),	-- Envenomed Gut-Puncher
-			i(274807),	-- Envenomed Ritualizer
-			i(274808),	-- Envenomed Umbral Claymore
-			i(274809),	-- Envenomed Soul Collector
-			i(274810),	-- Envenomed Spring's Frenzy
-			i(274812),	-- Envenomed Hunter's Spear
-			i(274813),	-- Envenomed Hammer
-			i(274815),	-- Envenomed Pages
-			i(274816),	-- Envenomed False Promise
 			i(274897),	-- Seaside Charcoal Grill
 			i(274899),	-- Seaside Tiki Market Stand
 			i(274901),	-- Seaside Cushioned Chair
