@@ -36,7 +36,6 @@ root(ROOTS.Unsorted, {
 			i(268826),	-- Ballast Stone
 			i(268871),	-- Specifically Sized Rock
 			i(269720),	-- Corrosive Hekte
-			i(270267),	-- Twilight Missive
 			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
 			i(270346),	-- Big Meaty Claw

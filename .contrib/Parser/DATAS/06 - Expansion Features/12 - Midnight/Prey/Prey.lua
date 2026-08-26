@@ -276,7 +276,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
-				["groups"] = { i(253342, { ["timeline"] = { REMOVED_12_1_0 } }) },	-- Beacon of Hope
+				["groups"] = {
+					i(253342, { ["timeline"] = { REMOVED_12_1_0 } }),	-- Beacon of Hope
+					i(275910, { ["timeline"] = { ADDED_12_1_0 } }),	-- Scalebound Herald's Flute
+				},
 			}),
 			q(91277, {	-- Preferential Killing
 				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn

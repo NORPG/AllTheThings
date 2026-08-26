@@ -104,7 +104,6 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 							i(268974),	-- Deactivated Amani Hex Ward
 							i(269021),	-- Jan'alai Bibelot
 							i(268970),	-- Majestic Eagle Statue
-							i(269937),	-- Neighborhood Knick Knack
 							i(268977),	-- Ossein Fish Trinket
 							i(268972),	-- Pressed Sanguithorn
 							i(269020),	-- Scrimshaw Ward

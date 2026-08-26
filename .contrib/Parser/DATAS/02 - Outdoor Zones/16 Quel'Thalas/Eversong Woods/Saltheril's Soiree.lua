@@ -140,8 +140,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91983, {	-- Lovely Plumage
-					i(249439),	-- Bright Feather (QI!)
-					i(249440),	-- Bright Feather (QI!)
+					o(568241, {	-- Bright Feather
+						["coord"] = { 56.7, 35.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(249439),	-- Bright Feather (QI!)
+							i(249440),	-- Bright Feather (QI!)
+						},
+					}),
 				}),
 				q(91987, {	-- Potted Lashers
 					i(249418),	-- Lightblooming Bulb (QI!)

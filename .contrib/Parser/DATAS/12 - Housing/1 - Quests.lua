@@ -211,6 +211,7 @@ root(ROOTS.Housing, {
 					{ 54.2, 56.0, RAZORWIND_SHORES }
 				},
 				["isRepeatable"] = true,
+				["cost"] = { { "i", 269937, 3 } },	-- 3x Amani Construction Hammer
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 			q(97073, {	-- Rustbolt Retailer
@@ -322,6 +323,7 @@ root(ROOTS.Housing, {
 				{ 62.4, 80.1, FOUNDERS_POINT },
 				{ 39.8, 72.8, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 268976, 1 } },	-- 1x "Aromatic" Bottle
 		}),
 		q(95590, {	-- Amani Construction Hammer
 			["qgs"] = {
@@ -332,6 +334,7 @@ root(ROOTS.Housing, {
 				{ 54.0, 39.6, FOUNDERS_POINT },
 				{ 53.6, 56.6, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 269019, 1 } },	-- 1x Amani Construction Hammer
 		}),
 		q(95589, {	-- Amani Waraxe
 			["qgs"] = {
@@ -342,6 +345,7 @@ root(ROOTS.Housing, {
 				{ 54.0, 39.5, FOUNDERS_POINT },
 				{ 53.6, 56.6, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 268975, 1 } },	-- 1x Amani War Axe
 		}),
 		q(95585, {	-- Bone Pen
 			["qgs"] = {
@@ -352,6 +356,7 @@ root(ROOTS.Housing, {
 				{ 53.1, 40.0, FOUNDERS_POINT },
 				{ 55.2, 57.6, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 268973, 1 } },	-- 1x Bone Pen
 		}),
 		q(95587, {	-- Deactivated Amani Hex Ward
 			["qgs"] = {
@@ -362,6 +367,7 @@ root(ROOTS.Housing, {
 				{ 52.7, 37.5, FOUNDERS_POINT },
 				{ 53.6, 57.4, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 268970, 1 } },	-- 1x Majestic Eagle Statue
 		}),
 		q(95597, {	-- Jan'alai Bibelot
 			["qgs"] = {
@@ -372,6 +378,7 @@ root(ROOTS.Housing, {
 				{ 38.4, 32.2, FOUNDERS_POINT },
 				{ 47.2, 62.0, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 269021, 1 } },	-- 1x Jan'alai Bibelot
 		}),
 		q(95576, {	-- Majestic Eagle Statue
 			["qgs"] = {
@@ -382,6 +389,7 @@ root(ROOTS.Housing, {
 				{ 52.0, 38.4, FOUNDERS_POINT },
 				{ 54.0, 59.0, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 268974, 1 } },	-- 1x Deactivated Amani Hex Ward
 		}),
 		q(95592, {	-- Ossein Fish Trinket
 			["qgs"] = {
@@ -392,6 +400,7 @@ root(ROOTS.Housing, {
 				{ 29.0, 46.7, FOUNDERS_POINT },
 				{ 53.6, 82.0, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 268977, 1 } },	-- 1x Ossein Fish Trinket
 		}),
 		q(95583, {	-- Pressed Sanguithorn
 			["qgs"] = {
@@ -402,6 +411,7 @@ root(ROOTS.Housing, {
 				{ 53.4, 40.8, FOUNDERS_POINT },
 				{ 53.6, 57.6, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 268972, 1 } },	-- 1x Pressed Sanguithorn
 		}),
 		q(95595, {	-- Scrimshaw Ward
 			["qgs"] = {
@@ -412,6 +422,7 @@ root(ROOTS.Housing, {
 				{ 58.3, 61.7, FOUNDERS_POINT },
 				{ 68.2, 75.4, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 269020, 1 } },	-- 1x Scrimshaw Ward
 		}),
 		q(95593, {	-- Torga Statue
 			["qgs"] = {
@@ -421,6 +432,7 @@ root(ROOTS.Housing, {
 				{ 62.1, 82.2, FOUNDERS_POINT },
 				{ 39.0, 74.0, RAZORWIND_SHORES },
 			},
+			["cost"] = { { "i", 268978, 1 } },	-- 1x Torga Statue
 		}),
 	})),
 	n(MAIL_DELIVERY_RACES, {	-- Founder's Point Mail Delivery

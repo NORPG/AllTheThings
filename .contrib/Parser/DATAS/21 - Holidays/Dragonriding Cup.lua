@@ -2877,7 +2877,12 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 				q(79130, {	-- The Northrend Cup Circuit
 					["sourceQuests"] = { 79131, 79132, 79133 },	-- The Outland Cup Begins
-					["provider"] = { "n", 206737 },	-- Lord Andestrasz
+					["qgs"] = {
+						206737,	-- Lord Andestrasz
+						-- #if AFTER 10.1.7
+						214111,	-- Lord Andestrasz
+						-- #endif
+					},
 					["coord"] = { 26.9, 47.4, VALDRAKKEN },
 					["repeatable"] = true,
 				}),

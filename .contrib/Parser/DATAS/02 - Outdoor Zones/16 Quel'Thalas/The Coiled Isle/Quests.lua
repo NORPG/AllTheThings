@@ -365,11 +365,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 95973,	-- Echoes of the Darkwell
 						["qg"] = 258019,	-- Magister Umbric
 						["coord"] = { 46.2, 47.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+						["maps"] = { MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 					}),
 					q(94520, {	-- Resurgence in Deatholme
 						["sourceQuest"] = 94519,	-- What Hope in the Light?
 						["qg"] = 262269,	-- Magister Umbric
 						["coord"] = { 52.3, 48.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+						["maps"] = { MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
 					q(94521, {	-- The Direct Method
 						["sourceQuest"] = 94520,	-- Resurgence in Deatholme
@@ -380,6 +382,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							266893,	-- Twilight Clues (QI!)
 							266894,	-- Twilight Journal (QI!)
 							266896,	-- Twilight Letter (QI!)
+							270267,	-- Twilight Missive (QI!)
 						},
 					}),
 					q(94522, {	-- They Always Write It Down

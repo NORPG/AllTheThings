@@ -495,6 +495,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			["lore"] = "Died in Lordaeron or Undercity.",	-- This is visible only AFTER the acquisition.
 			["coord"] = { 52.6, 77.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["maps"] = { TIRISFAL_GLADES },
+			["timeline"] = { ADDED_12_1_0 },
 			["groups"] = {
 				ach(61456, {	-- Die in Lordaeron or Undercity (Hidden Achievement Trigger)
 					["description"] = "Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone.",
