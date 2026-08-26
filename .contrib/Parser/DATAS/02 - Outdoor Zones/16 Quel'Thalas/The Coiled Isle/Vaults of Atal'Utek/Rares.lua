@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				n(263253, {	-- Spirit of Jin'tal
-					["description"] = "Only available during the specific Strike in this area of the Vaults.",
+					["crs"] = { 263210 },	-- High Priest Jin'tal
 					["coord"] = { 74.9, 72.6, 2636 },	-- Vault of Restless Bones
 					["groups"] = { i(280005), },	-- Dispelling Charm
 				}),
