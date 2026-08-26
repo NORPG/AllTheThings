@@ -3637,7 +3637,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12792, {	-- Lady Palanseer <Armor Quartermaster>
 					["description"] = "Found within the Hall of Legends.",
 					["timeline"] = { REMOVED_3_0_2 },
-					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(22860, {	-- Blood Guard's Silk Walkers (60)
 							["classes"] = { MAGE },
