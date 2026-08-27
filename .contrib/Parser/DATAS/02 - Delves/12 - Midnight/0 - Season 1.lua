@@ -81,7 +81,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(61799, {	-- Let Me Solo Him: Nullaeus
 								i(263222),	-- Arcanovoid Construct (MOUNT!)
 							}),
-							ach(61798, {	-- Lighting the Darkd
+							ach(61798, {	-- Lighting the Dark
 								title(688),	-- <Name> the Ominous
 							}),
 							i(262391),	-- Ominous Dominus (PET!)
