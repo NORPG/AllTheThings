@@ -144,6 +144,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 				-- #if AFTER 11.2.7
 				252687,	-- Collector Ta'steld <Timewalking Vendor>
 				-- #endif
+				-- #if AFTER 12.0.7
+				255019,	-- Xydan <Timewalking Vendor>
+				-- #endif
 			},
 			["maps"] = {
 				-- #if AFTER 6.2.2.20395
@@ -170,6 +173,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 				-- #endif
 				-- #if AFTER 11.1.7
 				ORIBOS,
+				-- #endif
+				-- #if AFTER 12.0.7
+				VALDRAKKEN,
 				-- #endif
 			},
 			["groups"] = {
@@ -230,6 +236,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 				i(205208, {	-- Sandy Shalewing (MOUNT!)
 					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 					["timeline"] = { ADDED_11_0_7 },
+				}),
+				i(258884, {	-- Spawn of Vyranoth (MOUNT!)
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_12_1_0 },
 				}),
 				i(232624, {	-- Timely Buzzbee (MOUNT!)
 					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },

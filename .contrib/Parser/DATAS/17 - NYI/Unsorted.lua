@@ -45,7 +45,6 @@ root(ROOTS.Unsorted, {
 			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
-			i(271434),	-- Venom Rite Mantle
 			i(271436),	-- Slitherscale Girdle
 			i(271441),	-- Crushing Coiler Coif
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice

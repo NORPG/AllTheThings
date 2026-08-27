@@ -164,7 +164,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["description"] = "Can be fished from Willow Sea pools.",
 								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
 							}),
-							i(277997),	-- Malevolent Fishing Codex (QS!)
+							i(277997, {	-- Malevolent Fishing Codex (QS!)
+								["description"] = "Can be fished from Abyssal Swirl pools created with the Eerie Bauble",
+								["provider"] = { "i", 278391 },	-- Eerie Bauble
+								["sourceQuest"] = 97565,	-- Tipping the Scaled
+							}),
 							i(277999, {	-- Ritual Dagger (QS!)
 								["description"] = "Can be fished in open waters",
 								["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
@@ -243,7 +247,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 								i(271891, {	-- Recipe: Alluring Nostrum (RECIPE!)
 									["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
-									["cost"] = { { "c", ARTISAN_MOXIE.INSCRIPTION, 150 } },
+									["cost"] = { { "c", ARTISAN_MOXIE.ALCHEMY, 150 } },
 								}),
 								i(275018, {	-- Recipe: Coiled Stargorger Lure (RECIPE!)
 									["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
