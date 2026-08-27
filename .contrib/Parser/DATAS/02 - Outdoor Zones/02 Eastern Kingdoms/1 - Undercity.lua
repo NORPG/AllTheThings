@@ -2245,8 +2245,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13897),	-- White Traditional Hanbok
 					},
 				}),
-				n(4570, {	-- Sydney Upton
+				n(4570, {	-- Sydney Upton <Staff Merchant>
 					["coord"] = { 69.8, 27.4, UNDERCITY },
+					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2527,	-- Battle Staff
 						2535,	-- War Staff
