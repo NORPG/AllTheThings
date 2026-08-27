@@ -938,7 +938,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(GNARLDOR_ISLE, {
-		--["icon"] = 132291,
+		["icon"] = 2065590,
 		["coord"] = { 64.4, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
@@ -1219,7 +1219,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(THE_RING_OF_GLORY, {
-		--["icon"] = 132291,
+		["icon"] = 7876617,
 		["coord"] = { 71.2, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {

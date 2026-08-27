@@ -12,8 +12,6 @@ i(235464),	-- Sha-Touched Tea Set
 i(72159),	-- cal Ogre Idol \\ Magical Ogre Idol
 i(247893),	-- Fandral's Eternal Seed
 i(248263),	-- Azure Sea Boat \\ Fishing Boat Toy
-3.80.0.64393
-i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
 3.80.0.65301
 i(46779),	-- of Cenarius \\ Path of Cenarius
 i(69227),	-- 's Gold \\ Fool's Gold
@@ -51,8 +49,6 @@ Missing in ToyDB.lua
 3.4.5.61815
 i(247893),	-- Fandral's Eternal Seed
 i(248263),	-- Azure Sea Boat \\ Fishing Boat Toy
-3.80.0.64393
-i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
 3.80.0.65301
 i(46779),	-- of Cenarius \\ Path of Cenarius
 3.80.0.65990

@@ -58,6 +58,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(550),	-- Engineering - Goblin
 			faction(40),	-- Escortee
 			faction(62),	-- Forlorn Spirit
+			faction(1041),	-- Frenzy
 			faction(31),	-- Friendly
 			faction(65),	-- Furbolg
 			faction(575),	-- Furbolg, Uncorrupted

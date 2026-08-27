@@ -285,7 +285,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- ToDo: Update for S2 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 2 to be a Mistborne.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
 				["groups"] = {
 					title(736),	-- <Name>, the Mistborne
-				--	i(xx),	-- Reins of the Black Kor'kron Proto-Drake (MOUNT!)
+					i(275928),	-- Reins of the Fire Drake (MOUNT!)
 				},
 			})),
 			ach(62060, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_4, REMOVED_5_5_5 } }, {	-- Heir to the Mist (Season 3)
