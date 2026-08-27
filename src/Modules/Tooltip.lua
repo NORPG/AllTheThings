@@ -992,6 +992,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 			or owner.Caster			-- Retail Death recap spell tooltips
 			or owner.numericValue	-- character 'Mastery' tooltip
 			or owner.spendTextShadows	-- Retail Talents UI tooltips
+			or owner.IsEditing	-- Retail Cooldown Manager tooltips (maybe anything else in EditMode UI as well)
 			then
 				return true;
 			end
