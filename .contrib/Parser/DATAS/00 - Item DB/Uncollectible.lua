@@ -299,6 +299,7 @@ i(162684);	-- Etched Dock Cleat
 i(162976);	-- Exile's Abandoned Memoirs
 i(161206);	-- Faded Treasure Map
 i(158210);	-- Fearsome Claw
+i(159920);	-- Fermented Greatshark
 i(158838);	-- Fibrous Sludge
 i(158760);	-- Fin Ray
 i(158801);	-- Finely Serrated Tooth
@@ -320,6 +321,7 @@ i(158855);	-- Grim Skull Fetish
 i(152698);	-- Grimestone Stew
 i(158860);	-- Grindstone Molar
 i(158765);	-- Hardshell Mollusk
+i(162559);	-- Hearty Swamp Gumbo
 i(158806);	-- Hooked Talon
 i(155600);	-- How to Make Money and Influence Subordinates
 i(155605);	-- Huge Femur
@@ -330,6 +332,7 @@ i(155631);	-- Inert Stone
 i(158749);	-- Intricate Ossicles
 i(157844);	-- Iridescent Speck
 i(158794);	-- Ivory Tusk
+i(161383);	-- Jancunda Nigiri
 i(158830);	-- Jade Sigilstone
 i(158859);	-- Jagged Fang
 i(163321);	-- Jason's Rusty Blade
@@ -373,12 +376,15 @@ i(158756);	-- Rotary Gasket
 i(158758);	-- Royal Jelly
 i(163030);	-- Rusted Mining Pick
 i(157842);	-- Rusty Gear
+i(159919);	-- Salted Tideway Cod
 i(161053);	-- Salty Dog Crackers
 i(162630);	-- Sandy Ornate Relic
 i(163087);	-- Satchel of Blood Oranges
 i(158849);	-- Sawtooth Jawbone
 i(163695);	-- Scroll of Inner Truth
 i(163707);	-- Scroll of Torga's Swiftness
+i(163784);	-- Seafoam Coconut Water
+i(161373);	-- Seared Simmerfin
 i(163106);	-- Seasoned Stag Jerky
 i(162025);	-- Sermon of the High Exarch
 i(158752);	-- Severed Foot
@@ -466,6 +472,7 @@ i(166859);	-- Zinj'alor Blue Diamond
 -----------------
 -- PATCH 8.2.0 --
 -----------------
+i(169949);	-- Bioluminescent Ocean Punch
 i(168793);	-- Bottle of Homemade Wine
 i(169146);	-- Brittle Thrust Booster
 i(169130);	-- Bent Cogwheel
@@ -514,6 +521,7 @@ i(168786);	-- Rotten Food
 i(170098);	-- Rusted Girandole Earring
 i(169145);	-- Rusted Precision Gripper
 i(169661);	-- Scrap Heap
+i(169952);	-- Sea Salt Java
 i(170001);	-- Seized Engine
 i(169143);	-- Seized Sparksaw
 i(168791);	-- Shiny Rocks

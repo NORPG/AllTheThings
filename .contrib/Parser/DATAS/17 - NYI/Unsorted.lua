@@ -1679,8 +1679,6 @@ root(ROOTS.Unsorted, {
 				i(159898),	-- Sour Stormberries
 				i(159899),	-- Cinnamon Raisin Pretzel
 				i(159900),	-- Caraway Rye Loaf
-				i(159919),	-- Salted Tideway Cod
-				i(159920),	-- Fermented Greatshark
 				i(160483),	-- Steamed Clams
 				i(160518),	-- Great Turtle Soup
 				i(160554),	-- Stormsong Sourdough
@@ -1694,8 +1692,6 @@ root(ROOTS.Unsorted, {
 				i(161346),	-- Saurid Sticks
 				i(161347),	-- Riverbeast Stew
 				i(161348),	-- Carnivorous Chili Poppers \\ Carniverous Chili Poppers
-				i(161373),	-- Seared Simmerfin
-				i(161383),	-- Jancunda Nigiri
 				i(161384),	-- Farraki Fritters
 				i(162117),	-- Marie's Famous Cookies
 				i(159750),	-- Tangy Haw'liday Cider
@@ -1705,7 +1701,6 @@ root(ROOTS.Unsorted, {
 				i(162555),	-- Zocalo Cheddar
 				i(162556),	-- Zeb'ahari Kiwi \\ Zeb'Ahri Kiwi
 				i(162557),	-- Salted Frog Legs
-				i(162559),	-- Hearty Swamp Gumbo
 				i(162561),	-- Glowfly Wedge Salad
 				i(162562),	-- Crunchy Direbat Skewer
 				i(162563),	-- Succulent Dunemelon
@@ -2181,7 +2176,6 @@ root(ROOTS.Unsorted, {
 				i(162386),	-- Design: Honorable Combatant's Staff of Intuition
 				i(162387),	-- Design: Honorable Combatant's Staff of Intuition
 				i(163783),	-- Mount Mugamba Spring Water \\ Mount Mugaba Spring Water
-				i(163784),	-- Seafoam Coconut Water
 				i(163785),	-- Canteen of Rivermarsh Rainwater
 				i(163786),	-- Filtered Gloomwater
 				i(163834),	-- Forgotten Techniques of Kul Tiras
@@ -2876,10 +2870,8 @@ root(ROOTS.Unsorted, {
 			i(169946),	-- Saltwater Taffy
 			i(169947),	-- Candied Zin-Azshari Sea Grapes
 			i(169948),	-- Filtered Zanj'ir Water
-			i(169949),	-- Bioluminescent Ocean Punch
 			i(169950),	-- Shattered Timequartz
 			i(169951),	-- Broken Hourglass
-			i(169952),	-- Sea Salt Java
 			i(169953),	-- Bent Timedial
 			i(169954),	-- Steeped Kelp Tea
 			i(169955),	-- Stopped Watch

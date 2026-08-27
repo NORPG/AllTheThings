@@ -1986,6 +1986,7 @@ MobileDB.GameObject = {
 	[269026] = true,	-- Ancient Gong
 	[269075] = true,	-- Small Treasure Chest (Stormheim)
 	[269080] = true,	-- Small Treasure Chest (Stormheim)
+	[269278] = true,	-- Fel-Encrusted Herb
 	[269843] = true,	-- Challenger's Cache (Cathedral of Eternal Night)
 	[269852] = true,	-- Challenger's Cache (Return to Karazhan: Upper)
 	[269871] = true,	-- Challenger's Cache (Return to Karazhan: Upper)
