@@ -57,16 +57,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				["icon"] = 7452103,
 				["coord"] = { 61.2, 71.4, MAP.MIDNIGHT.VOIDSTORM },
 				["groups"] = {
-					-- n(DELVE_COMPLETION, {	-- TODO: check if still available in 12.1
-					-- 	n(TREASURES, {
-					-- 		filter(COSMETIC, {
-					-- 		}),
-					-- 		n(WEAPONS, {
-					-- 		}),
-					-- 	}),
-					-- }),
-					-- n(EXPLORATION, {
-					-- }),
 					n(252101, {	-- Nullaeus ?
 						["questID"] = 96417,
 						["isWeekly"] = true,
@@ -91,11 +81,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(61799, {	-- Let Me Solo Him: Nullaeus
 								i(263222),	-- Arcanovoid Construct (MOUNT!)
 							}),
-							ach(61798, {	-- Lighting the Dark
+							ach(61798, {	-- Lighting the Darkd
 								title(688),	-- <Name> the Ominous
 							}),
 							i(262391),	-- Ominous Dominus (PET!)
 							hqt(95154, name(HEADERS.NPC, 252892)),	-- Nullaeus ?? (first time)
+							i(264413, { ["timeline"] = { ADDED_12_1_0 } }),	-- Dominating Victory (TOY!)
 						},
 					}),
 				},
@@ -302,9 +293,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["provider"] = { "n", 242381 },	-- Valeera Sanguinar
 					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["maps"] = { TORMENTS_RISE },
-					["groups"] = {
-						i(264413),	-- Dominating Victory (TOY!)
-					},
+					["groups"] = { i(264413) },	-- Dominating Victory (TOY!)
 				}),
 				q(93943, {	-- Ancient Curiosity: Combat
 					["provider"] = { "i", 254675 },	-- Ancient Curio (QI!/QS!)

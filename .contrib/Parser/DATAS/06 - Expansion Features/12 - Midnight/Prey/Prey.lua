@@ -791,10 +791,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 
 			-- 12.1
 			-- q(98337),	-- Prey completed, Nightmare #1 / 1st per week
-			-- q(98547),	-- Prey completed, Nightmare #1 / 1st per week
-			-- q(98548),	-- Prey completed, Nightmare #2 / 2nd per week
-			-- q(98549),	-- Prey completed, Nightmare #3 / 3rd per week
-			-- I got different HQTs for my first/week and I see reports of different prey targets killed for the same reported HQT
+			q(98547, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 1st per week
+			q(98548, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 2nd per week
+			q(98549, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 3rd per week
+			q(98550, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 4th per week
 		})),
 		-- One-Time
 		n(QUESTS, {

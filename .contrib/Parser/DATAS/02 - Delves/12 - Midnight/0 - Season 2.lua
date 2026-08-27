@@ -204,6 +204,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
 						["groups"] = {
 							i(274494),	-- Chiral Marrowgrafter
+							i(251790),	-- Desecrated Chalice
 							i(274493),	-- Effigy of Ula'Tek's Faithful
 							i(251786),	-- Ever-Collapsing Void Fissure
 							i(251792),	-- Glorious Crusader's Keepsake
@@ -233,6 +234,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				n(WEAPONS, {
 					["providers"] = DATAGROUP.MID.DELVES.WEAPON_PROVIDERS,
 					["groups"] = {
+						i(251884),	-- Abyss Sabre
 						i(272270),	-- Bonedust Pestle
 						i(272280),	-- Exhumed Soul-Cleaver
 						i(272266),	-- Forgotten Eidolon's Dagger

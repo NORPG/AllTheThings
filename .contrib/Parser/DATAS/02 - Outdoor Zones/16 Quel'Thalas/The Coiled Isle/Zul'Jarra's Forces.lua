@@ -45,6 +45,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							q(96267, { -- Ancestral Gems (Day 1)
 								["qg"] = 264611,	-- Du'gal
 								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								["qi"] = 274416,	-- Warded Key
+								["groups"] = {
+									o(652477, {	-- Warded Lockbox
+										["questID"] = 96436,
+										["coord"] = { 78.4, 72.9, 2638 },	-- Profaned Mausoleum
+										["cost"] = { { "i", 274416, 1 } },	-- 1x Warded Key (QI!)
+										["groups"] = { i(273303) },	-- Ritual Gem
+									}),
+									o_repeated({
+										i(273303),	-- Ritual Gem
+										o(651045),	-- Reliquary Stash
+										o(651047),	-- Reliquary Stash
+										o(651085),	-- Ritual Gem
+									}),
+								},
 							}),
 							q(96276, { -- Dark Charms (Day 2)
 								["sourceQuest"] = 96267,	-- Ancestral Gems (Day 1)

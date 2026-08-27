@@ -2883,7 +2883,12 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						214111,	-- Lord Andestrasz
 						-- #endif
 					},
-					["coord"] = { 26.9, 47.4, VALDRAKKEN },
+					["coords"] = {
+						{ 26.9, 47.4, VALDRAKKEN },
+						-- #if AFTER 10.1.7
+						{ 60.0, 66.3, STORMWIND_CITY },
+						-- #endif
+					},
 					["repeatable"] = true,
 				}),
 				dragonridingrace(78334, {	-- Blackriver Burble

@@ -506,10 +506,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				["coord"] = { 57.1, 61.6, DORNOGAL },
 				["groups"] = {
 					i(234450, {	-- Pirate's Booty
-						["cost"] = { {"i", 234423, 1} },	-- 1x Keg-Leg's Silver Spoils
+						["cost"] = { { "i", 234423, 1 } },	-- 1x Keg-Leg's Silver Spoils
 					}),
 					i(234453, {	-- Swabbie's Lockbox
-						["cost"] = { {"i", 234424, 1} },	-- 1x Keg-Leg's Bronze Spoils
+						["cost"] = { { "i", 234424, 1 } },	-- 1x Keg-Leg's Bronze Spoils
 					}),
 				},
 			}),

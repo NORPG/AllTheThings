@@ -56,7 +56,6 @@ root(ROOTS.Unsorted, {
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
-			i(273303),	-- Ritual Gem
 			i(273311),	-- Kobold Candle Collection
 			i(273312),	-- Large Exodar Crystal
 			i(273313),	-- Stormstout Brewery Lantern
@@ -65,7 +64,6 @@ root(ROOTS.Unsorted, {
 			i(273881),	-- Anti-Venom Shell
 			i(274272),	-- Amani Equipment Chest
 			i(274372),	-- Big ol' Bag of Polished Pet Charms
-			i(274416),	-- Warded Key
 			i(274421),	-- Crate of Community Coupons
 			i(274423),	-- Unborn Val'kyr
 			i(274437),	-- Venom Ward
@@ -512,7 +510,6 @@ root(ROOTS.Unsorted, {
 			i(280339),	-- Brewfest Fence
 			i(280341),	-- Brewfest Fencepost
 			i(280343),	-- Hanging Brewfest Wreath
-			i(263709),	-- Amani Forgemaster's Workbench
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
 			i(280581),	-- Wintry Witchwick's Rider
@@ -820,7 +817,6 @@ root(ROOTS.Unsorted, {
 				i(264368),	-- ??
 			}),
 			i(276245),	-- Shadow Spirehawk
-			i(282426),	-- Draenic Drive Chain
 		})),
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
 			filter(COSMETIC, {

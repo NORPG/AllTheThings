@@ -110,6 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					filter(NECK_F, {
 						i(274826),	-- Coiling Smoke Chain
 						i(274827),	-- Draenic Drive Chain
+						i(282426),	-- Draenic Drive Chain
 					}),
 					filter(PLATE, {
 						i(274857),	-- Chitonous Broodmother's Spaulders

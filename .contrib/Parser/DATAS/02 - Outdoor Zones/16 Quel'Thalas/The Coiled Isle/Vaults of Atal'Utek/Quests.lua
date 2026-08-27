@@ -155,16 +155,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 						}),
 						q(95573, {	-- Temple Patrol: Broken Bonds
-							-- ["qg"] = ??,
+							["qg"] = 261995 ,	-- Terrified Scout
 							["coord"] = { 49.4, 56.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
 						q(95985, {	-- Temple Patrol: Calming the Dead
-							-- ["qg"] = ??,
-							["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["qg"] = 263309,	-- Er'inye
+							["coords"] = {
+								{ 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								{ 54.7, 38.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							},
 						}),
 						q(95953, {	-- Temple Patrol: Congealed Venom
-							-- ["qg"] = ??,
-							--["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["qg"] = 263333,	-- Er'inye
+							["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 							["groups"] = { i(271693) },	-- Congealed Venom (QO!)
 						}),
 						q(96017, {	-- Temple Patrol: Dragged Below
