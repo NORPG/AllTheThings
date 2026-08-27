@@ -1407,6 +1407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(3022, {	-- Sunn Ragetotem <Staff Merchant>
 					["coord"] = { 49.6, 49.8, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2527,	-- Battle Staff
 						2535,	-- War Staff
