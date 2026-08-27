@@ -1240,6 +1240,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				q(31312, {	-- The Old Map
 					["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
 					["provider"] = { "i", 86404 },	-- Old Map
+					["coord"] = { 43.4, 29.1, VALLEY_OF_THE_FOUR_WINDS },
 					["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
 					["crs"] = { 59639 },	-- Enormous Cattail Grouper
 				}),

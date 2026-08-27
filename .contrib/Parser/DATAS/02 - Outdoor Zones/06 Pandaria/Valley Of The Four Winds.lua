@@ -624,6 +624,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(29873, {	-- Ken-Ken
+						["description"] = "This quest is not obtainable while having Hero's Call:-/Warchief's Command: Karasang Wilds! in the quest log. However, it can be picked up after completing said quest.",
 						["qg"] = 56110,	-- Xiao
 						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 						["isBreadcrumb"] = true,
@@ -1059,6 +1060,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30086, {	-- The Search for the Hidden Master
+						["sourceQuests"] = {
+							29877,	-- A Poor Grasp of the Basics
+							29908,	-- A Seemingly Endless Nuisance
+						},
 						["qg"] = 56110,	-- Xiao
 						["coord"] = { 84.0, 21.2, VALLEY_OF_THE_FOUR_WINDS },
 						["isBreadcrumb"] = true,
@@ -1117,6 +1122,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29990, {	-- Training and Discipline
+						["description"] = "This quest ends your adventure in this zone for now, and you are required to complete the Karasang Wilds storyline in order to unlock the last part of the story.",
 						["sourceQuest"] = 29989,	-- Unyielding Fists: Trial of Stone
 						["qg"] = 56111,	-- Lin Tenderpaw
 						["coord"] = { 18.1, 31.0, VALLEY_OF_THE_FOUR_WINDS },

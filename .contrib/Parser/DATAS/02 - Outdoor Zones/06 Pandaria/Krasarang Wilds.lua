@@ -408,6 +408,9 @@ root(ROOTS.Zones, {
 						["lvl"] = 81,
 					})),
 					q(30376, {	-- Hope Springs Eternal
+						-- #if AFTER TWW
+						["description"] = "This quest is reportedly bugged and is not always offered. However, turning in either version of 'Warn Stoneplow' also completes this quest.",
+						-- #endif
 						["sourceQuests"] = {
 							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
