@@ -332,6 +332,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			o(584504, {	-- Sanctified Spoils
 				["provider"] = { "n", 256593 },	-- Sanctified Banner
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },	-- Was limited to a S1 Rank3 Delve Bonus
 				["groups"] = {
 					i(254983),	-- Assassin's Subtle Tea
 				},
@@ -340,6 +341,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				["description"] = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
 				["provider"] = { "n", 256593 },	-- Sanctified Banner
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },	-- Was limited to a S1 Rank3 Delve Bonus
 				["sym"] = {{"select","itemID",
 					264971,	-- Annihilation Rod (COSMETIC!)
 					264970,	-- Oblivion's Edge (COSMETIC!)
