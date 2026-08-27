@@ -28,6 +28,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 			n(FACTIONS, {
 				faction(FACTION_THE_SCALE_OF_THE_SANDS, {	-- The Scale of the Sands
 					["maps"] = { CAVERNS_OF_TIME },
+					-- #if AFTER CATA
+					["description"] = "Reputation is obtained from killing mobs in Mount Hyjal raid.\n\nProtip: Remain in the Alliance base when it becomes abandoned as an addtional wave of mobs will spawn. Addtional waves of mobs can be triggered by moving past the boundry of the base. This also applies for the Horde base.",
+					-- #endif
 				}),
 			}),
 			header(HEADERS.Spell, 2575, {	-- Mining
