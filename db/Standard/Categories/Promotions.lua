@@ -168,7 +168,7 @@ de(9281,{itemID=253297,spellID=1255998,u=2})),(function(t)if GetCVar("portal")~=
 de(9271,{itemID=253255,spellID=1255905,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 toy(258840,{u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 s(298858,253402,{f=29,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-i(254735,{f=100,spellID=1258573,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(1258573,{itemID=254735,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 toy(258136,{u=2}))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 i(269743,{b=1,spellID=1286271,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 i(251542,{f=55,spellID=1252638,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
@@ -212,7 +212,8 @@ de(16813,{awp=120007,description="Obtained through watching Twitch Streamers wit
 mnt(1292356,{awp=120007,description="Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",itemID=273655,u=3}),
 en(257974,{awp=120100,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=93324,rwp=120100,spellID=1262585,tmogSetID=5340,g={
 s(301329,257782,{f=3}),
-s(301311,257762,{f=2,loc=40})}})}}),
+s(301311,257762,{f=2,loc=40})}}),
+s(297815,250293,{awp=120100,description="McDonald's UK exclusive promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",f=3,rwp=120100,u=3})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),

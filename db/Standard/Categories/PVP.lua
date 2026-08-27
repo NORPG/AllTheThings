@@ -47651,7 +47651,16 @@ ach(61954,{pvp=1}),
 ach(61955,{pvp=1}),
 ach(61956,{pvp=1}),
 ach(62108,{pvp=1}),
-ach(62109,{pvp=1})}}),
+ach(62109,{pvp=1}),
+ach(63695,{awp=120100,providers={{"s",1313428}},pvp=1}),
+ach(63696,{awp=120100,providers={{"s",1313428}},pvp=1}),
+ach(63697,{awp=120100,providers={{"s",1313428}},pvp=1}),
+ach(63698,{awp=120100,providers={{"s",1313428}},pvp=1}),
+ach(63699,{awp=120100,pvp=1,g={
+crit(117047,{achID=63699,id=1,providers={{"s",1313432}},pvp=1}),
+crit(117048,{achID=63699,id=2,providers={{"s",1313432}},pvp=1}),
+crit(117049,{achID=63699,id=3,providers={{"s",1313432}},pvp=1}),
+crit(117051,{achID=63699,id=4,providers={{"s",1313432}},pvp=1})}})}}),
 m(93,{icon=236385,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(1169,{pvp=1,g={

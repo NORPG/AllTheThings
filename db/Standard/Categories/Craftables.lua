@@ -17857,9 +17857,6 @@ r(1296505,{awp=120001,itemID=275324,requireSkill=773,skillID=2913})}}),
 flt(101,{
 p(4951,{b=1,itemID=260942,npcID=256201,spellID=1267090})}),
 flt(2,{
-s(308990,274805,{awp=120100,f=21}),
-s(308996,274811,{awp=120100,f=20}),
-s(308986,274801,{awp=120100,f=25}),
 s(304188,266393,{f=32,lvl=80}),
 s(304191,266396,{f=32,lvl=80}),
 s(302293,260905,{f=25,lvl=80}),
@@ -18764,9 +18761,9 @@ prof(186,{awp=120001,g={
 h(-26,{
 r(1225348,{learnedAt=60,questID=88471,requireSkill=186,skillID=2916}),
 r(1225357,{learnedAt=90,questID=88466,requireSkill=186,skillID=2916}),
-r(1301486,{awp=120100,learnedAt=100,questID=97228,requireSkill=186,skillID=2916}),
-r(1301492,{awp=120100,learnedAt=80,questID=97226,requireSkill=186,skillID=2916}),
-r(1301494,{awp=120100,learnedAt=100,questID=97227,requireSkill=186,skillID=2916}),
+r(1301486,{awp=120100,learnedAt=60,questID=97228,requireSkill=186,skillID=2916}),
+r(1301492,{awp=120100,learnedAt=60,questID=97226,requireSkill=186,skillID=2916}),
+r(1301494,{awp=120100,learnedAt=60,questID=97227,requireSkill=186,skillID=2916}),
 r(1225359,{learnedAt=100,questID=88484,requireSkill=186,skillID=2916}),
 r(1225351,{learnedAt=80,questID=88487,requireSkill=186,skillID=2916}),
 r(1225367,{learnedAt=100,questID=88488,requireSkill=186,skillID=2916}),

@@ -1751,6 +1751,7 @@ localize(L.HEADER_NAMES, {
 	[-765] = "Prey MID S1",
 	[-766] = "Prey MID S2",
 	[-768] = WEEKLY,
+	[-770] = "Curse Surges",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1873,6 +1874,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-754] = "Manaforge Translocators are teleporters used to instantly move around Naigtal.",
 	[-760] = "Lunar New Year Adventure is a China-exclusive promotional event for World of Warcraft, taking place from 5 February to 13 March 2026. The main event functioned similar to the Treasures of Azeroth event.",
 	[-761] = "Portal Bridges are teleporters used to instantly move around Val.",
+	[-770] = "Curse Surges are outdoor events that require players to complete an activity in order to summon a Rare Elite enemy.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2497,6 +2499,7 @@ localize(L.HEADER_ICONS, {
 	[-765] = _.asset("category_prey"),
 	[-766] = _.asset("category_prey"),
 	[-768] = _.asset("interface_questw"),
+	[-770] = 5764921,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -27379,6 +27382,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "Säbelflossenspitze",
 	[-758] = "Verweilende Schatten",
 	[-759] = "Konfrontationen",
+	[-770] = "Fluchwellen",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -35593,6 +35597,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "Pointe des Daguéchines",
 	[-758] = "Ombres Persistantes",
 	[-759] = "Épreuve de force",
+	[-770] = "Vagues de Malédiction",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -43431,6 +43436,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "Promontorio dei Liscaguzza",
 	[-758] = "Ombre Persistenti",
 	[-759] = "Scontro Decisivo",
+	[-770] = "Scariche di Maledizione",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -50577,6 +50583,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "Ponto de Espinhadaga",
 	[-758] = "Sombras Duradouras",
 	[-759] = "Confronto Final",
+	[-770] = "Surtos Malditos",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -58888,6 +58895,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "Высота Пронзающего Гребня",
 	[-758] = "Последние тени",
 	[-759] = "Решающая схватка",
+	[-770] = "Проклятых Натисков",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -66786,6 +66794,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "비수가시 지점",
 	[-758] = "남겨진 그림자",
 	[-759] = "최후의 대결",
+	[-770] = "저주받은 쇄도",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -74652,6 +74661,7 @@ localize(L.HEADER_NAMES, {
 	[-758] = "Sombras Persistentes",
 	[-759] = "Confrontación",
 	[-760] = "Aventura del Año Nuevo Lunar",
+	[-770] = "Oleadas Malditas",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -82529,6 +82539,7 @@ localize(L.HEADER_NAMES, {
 	[-749] = "Duelo de decoraciones",
 	[-756] = "Trono Quebrado",
 	[-758] = "Sombras Tenaces",
+	[-770] = "Oleadas de Maldición",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-29] = "Contiene cosas que se otorgan como recompensa al completar este evento.",
@@ -84436,6 +84447,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "刺脊营",
 	[-758] = "萦绕暗影",
 	[-759] = "摊牌",
+	[-770] = "次诅咒狂潮",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -92075,6 +92087,7 @@ localize(L.HEADER_NAMES, {
 	[-757] = "刺脊崗哨",
 	[-758] = "不散暗影",
 	[-759] = "攤牌",
+	[-770] = "波詛咒狂湧",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成探究時獎勵的東西。",

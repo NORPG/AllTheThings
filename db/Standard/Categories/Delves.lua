@@ -2417,7 +2417,8 @@ mnt(1268949,{itemID=263222,lvl=10,u=2})}}),
 ach(61798,{u=2,g={
 title(688,{u=2})}}),
 p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687,u=2}),
-hqt(95154,{an="n:252892",u=2})}})}}),
+hqt(95154,{an="n:252892",u=2}),
+toy(264413,{awp=120100,b=1})}})}}),
 h(-12,{u=2,g={
 ach(61800,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},u=2}),
 ach(61801,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},u=2}),
@@ -2650,6 +2651,7 @@ s(307888,272256,{f=7,loc=47}),
 s(307894,272262,{f=7,loc=43})}}),
 flt(53,{providers={{"o",581922},{"o",584503},{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584514},{"o",584515},{"o",584517},{"o",584518},{"o",584519},{"o",618495},{"o",623258},{"o",623259}},g={
 i(274494,{f=53,spellID=1294323}),
+i(251790,{b=1,f=53,lvl=78,spellID=1253118}),
 i(274493,{f=53,spellID=1294329}),
 i(251786,{b=1,f=53,lvl=78,spellID=1253114}),
 i(251792,{b=1,f=53,lvl=78,spellID=1253120}),
@@ -2665,6 +2667,7 @@ i(274970),
 i(277506),
 i(279012,{questID=97911,spellID=1305952})}),
 h(-101,{providers={{"o",581922},{"o",584503},{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584514},{"o",584515},{"o",584517},{"o",584518},{"o",584519},{"o",618495},{"o",623258},{"o",623259}},g={
+s(302099,251884,{b=1,f=25,lvl=78,spellID=1253357}),
 s(307899,272270,{f=23}),
 s(307909,272280,{f=22}),
 s(307895,272266,{f=20}),
@@ -2689,7 +2692,7 @@ q(97321,{coords={
 [2393]={{52.5,78.3}}},qgs={242381},sourceQuests={97454},g={
 i(277949),
 o(661347,{
-i(277934,{spellID=1303287})})}}),
+i(277934)})}}),
 q(97482,{coords={
 [2393]={{52.5,78.3}}},maps={2634},qgs={242381},sourceQuests={97321},g={
 toy(275988)}}),
@@ -2753,7 +2756,7 @@ title(691),
 crit(111291,{achID=61906,id=2})})}}),
 h(-24,{awp=120001,maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},symselector=3,g={
 flt(101,{
-p(4959,{b=1,itemID=262395,npcID=256278,providers={{"o",584508},{"o",584515},{"o",584518},{"o",623258}},spellID=1268704}),
+p(4959,{b=1,itemID=262395,npcID=256278,providers={{"o",584508},{"o",584509},{"o",584515},{"o",584518},{"o",623258}},spellID=1268704}),
 p(4957,{b=1,itemID=262396,npcID=256282,providers={{"o",584508},{"o",584509},{"o",584511},{"o",584515},{"o",584518},{"o",584519}},spellID=1268718}),
 p(4961,{b=1,itemID=262392,npcID=256269,providers={{"o",584508},{"o",584509},{"o",584511},{"o",584515},{"o",584518},{"o",623259}},spellID=1268690}),
 p(4960,{b=1,itemID=262343,npcID=256238,providers={{"o",581922},{"o",584514}},spellID=1267222}),
@@ -2839,13 +2842,13 @@ o(623259,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584519,{providers={{"i",257386}},VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584518,{providers={{"i",257387}},VerifyLoot={"armor","weapon","miscellaneous"},g={
 p(4953,{b=1,itemID=262390,npcID=256264,spellID=1268686})}}),
-o(584504,{providers={{"n",256593}},VerifyLoot={"armor","weapon","miscellaneous"},g={
-i(254983,{b=1,f=55,spellID=1258939})}}),
-o(584503,{description="Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",providers={{"n",256593}},sym={{"select","itemID",264971,264970}},VerifyLoot={"armor","weapon","miscellaneous"},g={
-s(303846,265368,{f=25}),
-s(303844,265366,{f=21}),
-s(303845,265367,{f=20}),
-i(254983,{b=1,f=55,spellID=1258939})}}),
+o(584504,{providers={{"n",256593}},rwp=120100,u=2,VerifyLoot={"armor","weapon","miscellaneous"},g={
+i(254983,{b=1,f=55,spellID=1258939,u=2})}}),
+o(584503,{description="Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",providers={{"n",256593}},rwp=120100,sym={{"select","itemID",264971,264970}},u=2,VerifyLoot={"armor","weapon","miscellaneous"},g={
+s(303846,265368,{f=25,u=2}),
+s(303844,265366,{f=21,u=2}),
+s(303845,265367,{f=20,u=2}),
+i(254983,{b=1,f=55,spellID=1258939,u=2})}}),
 o(584512,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584511,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584509,{VerifyLoot={"armor","weapon","miscellaneous"}}),
@@ -2951,7 +2954,7 @@ q(93453,{coords={
 [2393]={{52.7,77.6}}},lvl=78,providers={{"i",258738},{"n",254616}},g={
 cq(93866,{b=1,itemID=262966,spellID=1269622})}})}}),
 h(-55,{awp=120001,maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},g={
-o(609862,{coords={
+o(609862,{awp=120100,coords={
 [2393]={{52.6,77.3}}},lore="Died in Lordaeron or Undercity.",maps={18},g={
 ach(61456,{description="Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone."})}}),
 n(256593,{coords={
@@ -3138,7 +3141,7 @@ o(618286,{coords={
 [2547]={{29.3,54.7}}},questID=94030,g={
 crit(111258,{achID=61894,id=3})}})})}}),
 m(2635,{awp=120100,coords={
-[2512]={{64.4,77.8}}},g={
+[2512]={{64.4,77.8}}},icon=2065590,g={
 h(-12,{
 ach(63170,{
 crit(114797,{achID=61901,id=11})}),
@@ -3312,7 +3315,7 @@ crit(111268,{achID=61897,id=1})}})}),
 h(-63,{
 i(255826,{sourceQuests={90474}})})}}),
 m(2633,{awp=120100,coords={
-[2512]={{71.2,56.5}}},g={
+[2512]={{71.2,56.5}}},icon=7876617,g={
 h(-12,{
 ach(63171,{
 crit(114801,{achID=61901,id=12})}),

@@ -149,6 +149,7 @@ HeaderAssignments = {
 	["Cruel Gladiator: Legion Season 3"] = -271,
 	["Curio"] = -382,
 	["Current Season"] = -763,
+	["Curse Surges"] = -770,
 	["D.R.I.V.E. Racing"] = -54,
 	["Daggerspine Point"] = -757,
 	["Daily"] = -769,
@@ -749,4 +750,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -770
+NextHeaderID = -771

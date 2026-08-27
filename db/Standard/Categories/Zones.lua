@@ -15408,7 +15408,7 @@ q(56167,{awp=80200,coords={
 [1473]={{53.1,70.9}}},description="Your Heart of Azeroth needs to be 60 to start the questline.",lvl=50,qgs={152365},sourceQuests={55398}}),
 q(56536,{awp=80300,coords={
 [1473]={{50.1,59.1}}},lvl=50,qgs={152206},sourceQuests={56377}}),
-q(58876,{awp=80300,lvl=50,providers={{"i",174863}},rwp=90002,u=2,g={
+q(58876,{awp=80300,lvl=50,qss={174863},rwp=90002,u=2,g={
 mnt(302143,{b=1,itemID=174862,u=2})}}),
 q(58737,{awp=80300,coords={
 [1473]={{50.1,59.1}}},lvl=50,qgs={152206},sourceQuests={56542}}),
@@ -107985,7 +107985,7 @@ s(94117,158024,{b=1,f=7,loc=44}),
 s(94122,158029,{b=1,f=7,loc=45}),
 s(94120,158027,{b=1,f=7,loc=46}),
 s(94116,158023,{b=1,f=7,loc=47})})}}),
-m(1462,{icon=237387,lore="A mystery awaits that is of particular interest to the gnomes and goblins. A previously closed vault in Kul Tiras has opened and within it a radio transmitter sends a signal for help and points to a new land to explore, Mechagon. This is an ancient lost city of the gnomes. The beginning of the adventure is within the Junker Wastes where heroes will be beset by death robots, but there are potential allies nearby. Hunted by robots themselves, the mechagnomes introduce you to a whole new society and take you to where higher cast gnomes live who have dedicated themselves to their king and have embraced robotics. King Mechangon has a vision to return anyone of flesh into more pure robotic parts and it's up to you to put a stop to him.",maps={1522},petBattleLvl=25,lvl=10,g={
+m(1462,{icon=2902390,lore="A mystery awaits that is of particular interest to the gnomes and goblins. A previously closed vault in Kul Tiras has opened and within it a radio transmitter sends a signal for help and points to a new land to explore, Mechagon. This is an ancient lost city of the gnomes. The beginning of the adventure is within the Junker Wastes where heroes will be beset by death robots, but there are potential allies nearby. Hunted by robots themselves, the mechagnomes introduce you to a whole new society and take you to where higher cast gnomes live who have dedicated themselves to their king and have embraced robotics. King Mechangon has a vision to return anyone of flesh into more pure robotic parts and it's up to you to put a stop to him.",maps={1522},petBattleLvl=25,lvl=10,g={
 m(1573,{awp=80200,icon=986486,isRaid=1,lore="A mystery awaits that is of particular interest to the gnomes and goblins. A previously closed vault in Kul Tiras has opened and within it a radio transmitter sends a signal for help and points to a new land to explore, Mechagon. This is an ancient lost city of the gnomes. The beginning of the adventure is within the Junker Wastes where heroes will be beset by death robots, but there are potential allies nearby. Hunted by robots themselves, the mechagnomes introduce you to a whole new society and take you to where higher cast gnomes live who have dedicated themselves to their king and have embraced robotics. King Mechangon has a vision to return anyone of flesh into more pure robotic parts and it's up to you to put a stop to him.",maps={1574},races={37}}),
 h(-12,{awp=80200,g={
 ach(13790,{description="Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",g={
@@ -112603,7 +112603,7 @@ s(94085,157992,{b=1,f=7,loc=44}),
 s(94090,157997,{b=1,f=7,loc=45}),
 s(94088,157995,{b=1,f=7,loc=46}),
 s(94084,157991,{b=1,f=7,loc=47})})}}),
-m(1169,{icon=1380368,lore="A prison located on an island east of Tiragarde Sound. Before the Ashvane Trading Company bought it, Tol Dagor used to be a real prison — now it is Priscilla Ashvane's own fortress, with scumbags on both sides of the bar.",petBattleLvl=25,petBattleLvl=25,lvl=10,g={
+m(1169,{icon=2011149,lore="A prison located on an island east of Tiragarde Sound. Before the Ashvane Trading Company bought it, Tol Dagor used to be a real prison — now it is Priscilla Ashvane's own fortress, with scumbags on both sides of the bar.",petBattleLvl=25,petBattleLvl=25,lvl=10,g={
 h(-32,{
 fp(2096,{coords={
 [1169]={{37.8,92.4}}},r=2}),
@@ -119123,7 +119123,7 @@ s(94021,157928,{b=1,f=7,loc=44}),
 s(94026,157933,{b=1,f=7,loc=45}),
 s(94024,157931,{b=1,f=7,loc=46}),
 s(94020,157927,{b=1,f=7,loc=47})})}})}}),
-m(1355,{awp=80200,icon=237381,lore="Nazjatar is a dangerous and beautiful place, filled with coral forests and unfathomable deep-sea creatures skittering through passageways and clinging to rockfaces. Secrets that have remained submerged for millennia are now exposed to the surface world, including the ancient ruins of Zin-Azshari, the once-glorious capital of the kaldorei. Further in the depths, the beautiful and terrible city of the naga — and the palace of the Queen of Tides herself — awaits.",maps={1499,1500,1524,1528},petBattleLvl=25,lvl=50,g={
+m(1355,{awp=80200,icon=2909045,lore="Nazjatar is a dangerous and beautiful place, filled with coral forests and unfathomable deep-sea creatures skittering through passageways and clinging to rockfaces. Secrets that have remained submerged for millennia are now exposed to the surface world, including the ancient ruins of Zin-Azshari, the once-glorious capital of the kaldorei. Further in the depths, the beautiful and terrible city of the naga — and the palace of the Queen of Tides herself — awaits.",maps={1499,1500,1524,1528},petBattleLvl=25,lvl=50,g={
 h(-12,{
 ach(13711,{
 crit(45840,{achID=13638,id=5})}),
@@ -129552,7 +129552,7 @@ i(179002)})}}),
 q(61432,{lvl=10,providers={{"i",180834}},repeatable=1}),
 q(62189,{coords={
 [1525]={{31.1,55.1}}},lvl=10,providers={{"i",182738}}}),
-q(60501,{description="Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",lvl=60,providers={{"i",179358}},g={
+q(60501,{description="Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",lvl=60,qss={179358},g={
 i(181552,{b=1,spellID=336456})}}),
 q(58725,{coords={
 [1525]={{73.2,34}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={161418},sourceQuests={58717},g={
@@ -165461,6 +165461,9 @@ q(98234,{awp=120100,coords={
 [2393]={{48.9,64.6}}},qgs={256212},rwp=120200,g={
 i(280097,{f=53,spellID=345229}),
 i(280118,{f=53,spellID=336126})}}),
+q(98295,{awp=120100,coords={
+[2393]={{48.9,64.6}}},qgs={256212},rwp=120200,g={
+s(304279,267491,{b=1,f=3,lvl=90})}}),
 q(93755,{coords={
 [2393]={{49.1,64.6}}},isWeekly=1,lvl=90,qgs={256210}}),
 q(93753,{coords={
@@ -165860,6 +165863,10 @@ q(93614,{awp=120007,coords={
 [2393]={{48.9,64.6}}},isWeekly=1,lvl=90,qgs={256212},g={
 i(250116,{awp=120001,b=1,lvl=90,rwp=120100,u=2}),
 i(274714,{awp=120100,rwp=120200})}}),
+q(93610,{awp=120100,coords={
+[2393]={{48.9,64.6}}},isWeekly=1,lvl=90,qgs={256212},g={
+i(250116,{awp=120001,b=1,lvl=90,rwp=120100,u=2}),
+i(274714,{rwp=120200})}}),
 q(93613,{awp=120005,coords={
 [2393]={{48.9,64.6}}},isWeekly=1,lvl=90,qgs={256212},g={
 i(250116,{awp=120001,b=1,lvl=90,rwp=120100,u=2}),
@@ -166808,8 +166815,10 @@ o(568477,{
 i(249497)})}}),
 q(91983,{coords={
 [2395]={{42.9,46.4}}},isDaily=1,isWeekly=1,lvl=80,maxReputation={2713,6},qgs={240836},g={
+o(568241,{coords={
+[2395]={{56.7,35.2}}},g={
 i(249439),
-i(249440)}}),
+i(249440)}})}}),
 q(91987,{coords={
 [2395]={{42.9,46.4}}},isDaily=1,isWeekly=1,lvl=80,maxReputation={2713,6},qgs={240836},g={
 i(249418)}}),
@@ -169297,6 +169306,70 @@ flt(101,{
 p(5031,{coords={
 [2509]={{38.1,30.7}}},crs={262247},itemID=270254,npcID=262247,spellID=1287592,g={
 crit(113421,{achID=62492,id=7})}})}),
+h(-29,{
+cu(3448),
+i(279345,{f=55,providers={{"n",263015},{"n",263016}},g={
+h(-88,{
+h(-89,{
+s(311029,279217,{f=3}),
+s(311030,279220,{f=3}),
+s(311031,279222,{f=3}),
+s(311032,279223,{f=3})}),
+flt(4,{
+s(310108,277792,{f=4,loc=40}),
+s(310106,277790,{f=4,loc=41}),
+s(310111,277795,{f=4,loc=42}),
+s(310105,277789,{f=4,loc=45}),
+s(310107,277791,{f=4,loc=46}),
+s(310110,277794,{f=4,loc=47}),
+s(310104,277788,{f=4,loc=43}),
+s(310109,277793,{f=4,loc=44})}),
+flt(5,{
+s(310100,277784,{f=5,loc=40}),
+s(310098,277782,{f=5,loc=41}),
+s(310103,277787,{f=5,loc=42}),
+s(310097,277781,{f=5,loc=45}),
+s(310099,277783,{f=5,loc=46}),
+s(310102,277786,{f=5,loc=47}),
+s(310096,277780,{f=5,loc=43}),
+s(310101,277785,{f=5,loc=44})}),
+flt(6,{
+s(310092,277776,{f=6,loc=40}),
+s(310090,277774,{f=6,loc=41}),
+s(310095,277779,{f=6,loc=42}),
+s(310089,277773,{f=6,loc=45}),
+s(310091,277775,{f=6,loc=46}),
+s(310094,277778,{f=6,loc=47}),
+s(310088,277772,{f=6,loc=43}),
+s(310093,277777,{f=6,loc=44})}),
+flt(7,{
+s(310084,277768,{f=7,loc=40}),
+s(310082,277766,{f=7,loc=41}),
+s(310087,277771,{f=7,loc=42}),
+s(310081,277765,{f=7,loc=45}),
+s(310083,277767,{f=7,loc=46}),
+s(310086,277770,{f=7,loc=47}),
+s(310080,277764,{f=7,loc=43}),
+s(310085,277769,{f=7,loc=44})})}),
+h(-101,{
+s(310113,277798,{f=1}),
+s(310114,277799,{f=23}),
+s(310115,277800,{f=27}),
+s(310116,277801,{f=35}),
+s(310117,277802,{f=22}),
+s(310118,277803,{f=21}),
+s(310119,277804,{f=32}),
+s(310120,277805,{f=20}),
+s(310121,277806,{f=29}),
+s(310122,277807,{f=28}),
+s(310123,277808,{f=25}),
+s(310124,277809,{f=26}),
+s(310125,277810,{f=8})})}}),
+i(279287,{f=55,sym={{"select","itemID",279345},{"pop"}}}),
+i(279288,{f=55,sym={{"select","itemID",279345},{"pop"}}}),
+i(280004,{description="Received as a reward for doing a Temple Strike.",spellID=1307536}),
+i(280003,{description="Received as a reward for doing a Temple Incursion.",spellID=1307536}),
+i(280006,{spellID=1307536})}),
 h(-32,{
 fp(3288,{coords={
 [2509]={{44.4,62.2}}},crs={270762}}),
@@ -169363,12 +169436,13 @@ i(271864),
 i(271863),
 crit(116184,{achID=63598,id=6})}}),
 q(95573,{coords={
-[2509]={{49.4,56.9}}},repeatable=1,g={
+[2509]={{49.4,56.9}}},qgs={261995},repeatable=1,g={
 crit(116176,{achID=63598,id=1})}}),
 q(95985,{coords={
-[2509]={{44.1,30.1}}},repeatable=1,g={
+[2509]={{44.1,30.1},{54.7,38.2}}},qgs={263309},repeatable=1,g={
 crit(116190,{achID=63598,id=11})}}),
-q(95953,{repeatable=1,g={
+q(95953,{coords={
+[2509]={{44.1,30.1}}},qgs={263333},repeatable=1,g={
 i(271693),
 crit(116186,{achID=63598,id=7})}}),
 q(96017,{coords={
@@ -169409,7 +169483,7 @@ i(273000),
 h(-768,{isWeekly=1,questID=97770,g={
 i(279382,{spellID=1306630,sym={{"select","itemID",279345},{"pop"}}})}})}}),
 n(263253,{coords={
-[2636]={{74.9,72.6}}},description="Only available during the specific Strike in this area of the Vaults.",g={
+[2636]={{74.9,72.6}}},crs={263210},g={
 i(280005,{spellID=1307536})}})}),
 h(-56,{
 ah(63610,{type="a",g={
@@ -169447,7 +169521,7 @@ o(668601,{coords={
 [2509]={{42.6,33.1}}},questID=98039,g={
 crit(116417,{achID=63610,id=11})}}),
 o(668602,{coords={
-[2509]={{56.1,28.4}}},questID=98040,g={
+[2509]={{56.5,23}}},questID=98040,g={
 crit(116418,{achID=63610,id=12})}})}}),
 o(649651,{coords={
 [2613]={{68.6,15.66}}},cost={{"i",280003,1}},g={
@@ -169499,71 +169573,8 @@ de(21832,{cost={{"c",3448,750}},itemID=271850,spellID=1289634}),
 de(25137,{cost={{"c",3448,750}},itemID=281573,spellID=1311824}),
 p(5072,{cost={{"c",3448,5000}},itemID=275632,npcID=266469,spellID=1297098})}})}),
 h(-63,{
-i(275048,{description="Can be obtained from creatures with 'Corrosive' Aura after unlocking 'Slithering Secrets' trait at |cFFFFD700Altar of Corrosion|r.",spellID=1308284})}),
-h(-64,{
 cu(3448),
-i(279345,{f=55,providers={{"n",263015},{"n",263016}},g={
-h(-88,{
-h(-89,{
-s(311029,279217,{f=3}),
-s(311030,279220,{f=3}),
-s(311031,279222,{f=3}),
-s(311032,279223,{f=3})}),
-flt(4,{
-s(310108,277792,{f=4,loc=40}),
-s(310106,277790,{f=4,loc=41}),
-s(310111,277795,{f=4,loc=42}),
-s(310105,277789,{f=4,loc=45}),
-s(310107,277791,{f=4,loc=46}),
-s(310110,277794,{f=4,loc=47}),
-s(310104,277788,{f=4,loc=43}),
-s(310109,277793,{f=4,loc=44})}),
-flt(5,{
-s(310100,277784,{f=5,loc=40}),
-s(310098,277782,{f=5,loc=41}),
-s(310103,277787,{f=5,loc=42}),
-s(310097,277781,{f=5,loc=45}),
-s(310099,277783,{f=5,loc=46}),
-s(310102,277786,{f=5,loc=47}),
-s(310096,277780,{f=5,loc=43}),
-s(310101,277785,{f=5,loc=44})}),
-flt(6,{
-s(310092,277776,{f=6,loc=40}),
-s(310090,277774,{f=6,loc=41}),
-s(310095,277779,{f=6,loc=42}),
-s(310089,277773,{f=6,loc=45}),
-s(310091,277775,{f=6,loc=46}),
-s(310094,277778,{f=6,loc=47}),
-s(310088,277772,{f=6,loc=43}),
-s(310093,277777,{f=6,loc=44})}),
-flt(7,{
-s(310084,277768,{f=7,loc=40}),
-s(310082,277766,{f=7,loc=41}),
-s(310087,277771,{f=7,loc=42}),
-s(310081,277765,{f=7,loc=45}),
-s(310083,277767,{f=7,loc=46}),
-s(310086,277770,{f=7,loc=47}),
-s(310080,277764,{f=7,loc=43}),
-s(310085,277769,{f=7,loc=44})})}),
-h(-101,{
-s(310113,277798,{f=1}),
-s(310114,277799,{f=23}),
-s(310115,277800,{f=27}),
-s(310116,277801,{f=35}),
-s(310117,277802,{f=22}),
-s(310118,277803,{f=21}),
-s(310119,277804,{f=32}),
-s(310120,277805,{f=20}),
-s(310121,277806,{f=29}),
-s(310122,277807,{f=28}),
-s(310123,277808,{f=25}),
-s(310124,277809,{f=26}),
-s(310125,277810,{f=8})})}}),
-i(279287,{f=55,sym={{"select","itemID",279345},{"pop"}}}),
-i(279288,{f=55,sym={{"select","itemID",279345},{"pop"}}}),
-i(280004,{description="Received as a reward for doing a Temple Strike.",spellID=1307536}),
-i(280003,{description="Received as a reward for doing a Temple Incursion.",spellID=1307536}),
-i(280006,{spellID=1307536})})}}),
+i(275048,{description="Can be obtained from creatures with 'Corrosive' Aura after unlocking 'Slithering Secrets' trait at |cFFFFD700Altar of Corrosion|r.",spellID=1308284})})}}),
 h(-12,{
 ach(63358,{
 de(15283,{itemID=263873,spellID=1270747}),
@@ -169618,10 +169629,7 @@ toy(275825,{pvp=1})}}),
 ach(63359,{
 mnt(1297224,{itemID=275656}),
 crit(116540,{achID=63639,id=3})}),
-ach(63639),
-ach(63381,{
-title(777)}),
-ach(63390)}),
+ach(63639)}),
 flt(101,{
 p(5035,{coords={
 [2512]={{67.9,81.5},{70.6,78.7}}},crs={262248},itemID=270248,npcID=262248,spellID=1287603,g={
@@ -169713,28 +169721,28 @@ q(97535,{qgs={269313},qis={278193,278391}}),
 q(97559,{qgs={269313},qis={278391,279475,279476,279477,279478,279479},sourceQuests={97535}}),
 q(97565,{maps={2509},qgs={269313},qis={278391,280446},sourceQuests={97559},g={
 p(3526,{itemID=279483,npcID=269295,spellID=1303722})}}),
-q(97464,{providers={{"i",278000}},g={
+q(97464,{qss={278000},g={
 crit(116091,{achID=63512,id=7})}}),
-q(97457,{providers={{"i",279384}},g={
+q(97457,{qss={279384},g={
 crit(116085,{achID=63512,id=1})}}),
-q(97455,{providers={{"i",277989}},g={
+q(97455,{qss={277989},g={
 crit(116087,{achID=63512,id=3})}}),
-q(97461,{providers={{"i",277997}},g={
+q(97461,{qss={277997},g={
 crit(116088,{achID=63512,id=4})}}),
-q(97463,{providers={{"i",277999}},g={
+q(97463,{qss={277999},g={
 crit(116090,{achID=63512,id=6})}}),
-q(97460,{providers={{"i",277996}},g={
+q(97460,{qss={277996},g={
 crit(116094,{achID=63512,id=10})}}),
-q(97462,{providers={{"i",277998}},g={
+q(97462,{qss={277998},g={
 crit(116089,{achID=63512,id=5})}}),
-q(97459,{providers={{"i",277993}},g={
+q(97459,{qss={277993},g={
 crit(116093,{achID=63512,id=9})}}),
-q(97458,{providers={{"i",277991}},g={
+q(97458,{qss={277991},g={
 crit(116092,{achID=63512,id=8})}}),
-q(97465,{providers={{"i",278001}},g={
+q(97465,{qss={278001},g={
 crit(116086,{achID=63512,id=2})}})}}),
 prof(356,{
-sp(1306775,{description="Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",minReputation={2773,3},sourceQuests={96112},g={
+sp(1306775,{description="Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",sourceQuests={96112},g={
 s(308990,274805,{f=21}),
 s(308989,274804,{f=22}),
 s(309001,274816,{f=20}),
@@ -169756,7 +169764,7 @@ i(279384,{description="Can be fished in open waters",sourceQuests={98343}}),
 i(278001,{description="Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",sourceQuests={96111}}),
 i(277989,{description="Can be fished from Bubbling Beryl pools.",sourceQuests={96113}}),
 i(277998,{description="Can be fished from Willow Sea pools.",sourceQuests={96113}}),
-i(277997),
+i(277997,{description="Can be fished from Abyssal Swirl pools created with the Eerie Bauble",providers={{"i",278391}},sourceQuests={97565}}),
 i(277999,{description="Can be fished in open waters",sourceQuests={98343}}),
 i(278000,{description="Can be fished in venomous waters surrounding the Temple.",sourceQuests={96112}}),
 i(277991,{description="Can be fished in venomous waters surrounding the Temple.",sourceQuests={96112}}),
@@ -169778,7 +169786,7 @@ de(25336,{cost={{"c",3316,250}},itemID=277927,minReputation={2773,2},spellID=130
 r(1297679,{cost={{"c",3262,150}},itemID=275693,minReputation={2773,3},requireSkill=755,skillID=2914}),
 de(26197,{cost={{"c",3316,250}},itemID=277931,minReputation={2773,3},spellID=1302909}),
 r(1296511,{cost={{"c",3263,150}},itemID=275336,minReputation={2773,3},requireSkill=165,skillID=2915}),
-r(1289746,{cost={{"c",3261,150}},itemID=271891,minReputation={2773,3},requireSkill=171,skillID=2906}),
+r(1289746,{cost={{"c",3256,150}},itemID=271891,minReputation={2773,3},requireSkill=171,skillID=2906}),
 r(1231090,{cost={{"c",3316,1500}},itemID=275018,minReputation={2773,3},requireSkill=356,skillID=2911}),
 r(1296502,{cost={{"c",3259,150}},itemID=275318,minReputation={2773,3},requireSkill=202,skillID=2910}),
 de(25300,{cost={{"c",3316,250}},itemID=277925,minReputation={2773,4},spellID=1302903}),
@@ -169815,7 +169823,15 @@ s(309701,276534,{f=4,loc=43,minReputation={2772,9}}),
 s(309698,276531,{f=7,loc=43,minReputation={2772,9}}),
 s(309700,276533,{f=5,loc=43,minReputation={2772,9}})}}),
 q(96267,{coords={
-[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228}}),
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},qis={274416},g={
+o(652477,{coords={
+[2638]={{78.4,72.9}}},cost={{"i",274416,1}},minReputation={2772,10},questID=96436,g={
+i(273303,{minReputation={2772,10}})}}),
+o(651045,{minReputation={2772,10},type="AsGenericObjectContainer",g={
+i(273303,{minReputation={2772,10}}),
+o(651045,{minReputation={2772,10},type="AsSubGenericObject"}),
+o(651047,{minReputation={2772,10},type="AsSubGenericObject"}),
+o(651085,{minReputation={2772,10},type="AsSubGenericObject"})}})}}),
 q(96276,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96267}}),
 q(96273,{coords={
@@ -169931,6 +169947,11 @@ s(309709,276577,{f=3})}}),
 mnt(1299963,{cost={{"c",3316,8000}},itemID=276551,minReputation={2772,19}}),
 s(309942,277326,{cost={{"c",3316,5000}},f=22,minReputation={2772,20}}),
 s(309943,277327,{cost={{"c",3316,5000}},f=2,loc=41,minReputation={2772,20}})}})})}})}),
+h(-770,{
+h(-12,{
+ach(63381,{
+title(777)}),
+ach(63390)}),
 ah(63381,{type="a",g={
 n(255088,{coords={
 [2512]={{26.6,64.9}}},isDaily=1,questID=93718,g={
@@ -169958,7 +169979,7 @@ s(309595,276167,{f=29}),
 s(309602,276178,{f=5,loc=44}),
 crit(115371,{achID=63390,id=4})}}),
 h(-47,{
-i(273000)})}}),
+i(273000)})}})}),
 h(-30,{
 exp(16793,{
 crit(116554,{achID=63640,id=1})}),
@@ -170133,11 +170154,11 @@ ah(62297.06,{type="crit",g={
 q(95973,{coords={
 [2393]={{45.4,70.3}}},qgs={235787}}),
 q(94519,{coords={
-[2393]={{46.2,47.2}}},qgs={258019},sourceQuests={95973}}),
+[2393]={{46.2,47.2}}},maps={2424},qgs={258019},sourceQuests={95973}}),
 q(94520,{coords={
-[2424]={{52.3,48.7}}},qgs={262269},sourceQuests={94519}}),
+[2424]={{52.3,48.7}}},maps={2395},qgs={262269},sourceQuests={94519}}),
 q(94521,{coords={
-[2395]={{43.8,82.4}}},qgs={258022},qis={266893,266894,266896,270266},sourceQuests={94520}}),
+[2395]={{43.8,82.4}}},qgs={258022},qis={266893,266894,266896,270266,270267},sourceQuests={94520}}),
 q(94522,{coords={
 [2395]={{43.7,82.4}}},qgs={258021},sourceQuests={94520}}),
 q(94523,{coords={
@@ -170398,7 +170419,7 @@ q(96995,{coords={
 [2512]={{58.7,45.8}}},isWeekly=1,qgs={267635},g={
 i(275911,{f=55,g={
 i(273000)}})}}),
-q(97026,{providers={{"i",278070}},g={
+q(97026,{qss={278070},g={
 i(278084,{f=55})}}),
 q(95355,{maps={2437},qis={268929,268952,268964,268965,268968},qss={268951,268953}}),
 q(97016,{coords={
