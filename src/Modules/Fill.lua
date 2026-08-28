@@ -471,7 +471,7 @@ local function FillGroupDirect(group, FillData, doDGU)
 	-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
 	if not ignoreSkip then
 		local groupHash = group.hash;
-		if groupHash then
+		if groupHash and not FillStopTypes[group.__type] then
 			-- app.PrintDebug("FGA-Included",groupHash,#groups)
 			FillData.Included[groupHash] = true;
 		end
