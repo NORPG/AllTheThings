@@ -399,12 +399,14 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	-- TODO: Rings from raid showing all difficulties, need fallback matching for items... modItemID, modID, itemID
 	-- using a second return, directSources, to indicate the SourceSearcher has returned the Sources rather than the Things
 	local allReferences, directSources = SourceSearcher[paramA](paramA,paramB)
-	-- app.PrintDebug(directSources and "Source count" or "Search count",#allReferences,paramA,paramB,GetItemIDAndModID(paramB))
-	for _,j in ipairs(allReferences or app.EmptyTable) do
+	allReferences = allReferences or app.EmptyTable
+	local j
+	-- app.PrintDebug(directSources and "Source count" or "Search count",#allReferences,paramA,paramB,app.GetItemIDAndModID(paramB))
+	for i=1,#allReferences do
+		j = allReferences[i]
 		parent = directSources and j or j.parent
 		-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j))
-		if parent and parent.parent
-			and (showCompleted or not app.IsComplete(j))
+		if parent and parent.parent and (showCompleted or not app.IsComplete(j))
 		then
 			text = GenerateSourcePath(parent, parent.objectiveID and 0 or 1);
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
