@@ -6,7 +6,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 			n(EVENT_COMPLETION, {
-				currency(3448),	-- Corrosive Coin
 				i(279345, {	-- Venom-Drenched Sack
 					["providers"] = {
 						{ "n", 263015 },	-- Khu'tulak <Blade of Nek'zali>
