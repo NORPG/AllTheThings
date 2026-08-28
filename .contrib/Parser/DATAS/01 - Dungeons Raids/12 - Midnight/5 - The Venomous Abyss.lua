@@ -239,6 +239,7 @@ local EncounterToLoot = {
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {
+	i(271445),	-- Fanged Brute's Greatbelt
 	i(271440),	-- Greaves of the Noxious Depths
 	i(271435),	-- Slippers of the Hissing Cult
 	i(271438),	-- Temple Delver's Mystic Helm
@@ -633,6 +634,21 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			hqt(98086, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
 			hqt(97983, name(HEADERS.Encounter, ULATEK)),	-- Ula'tek
 			-- M
+			hqt(98081, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
+			hqt(98077, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 		},
 	}),
 }))
+
+--[[ This is not quite accurate. Only certain Zone Drops were given random NYI versions, or maybe they really do come from some other situation...
+root(ROOTS.NeverImplemented, expansion(EXPANSION.MID, {
+	inst(1320, {	-- The Venomous Abyss
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
+				ZoneDrops(sharedData({["bonusID"] = 6895},clone(ZoneDropLoot))),
+			}),
+		},
+	}),
+}))
+--]]
