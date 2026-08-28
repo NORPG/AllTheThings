@@ -6,6 +6,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 			n(RARES, {
+				n(263014, {	-- Congealed Malice
+					["coord"] = { 40.5, 20.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["groups"] = {
+						i(273000),	-- Corrosive Soul
+						weeklyReward(97768, {
+							i(279382, {sym=SYM.MIDNIGHT.COILED_ISLE.VAULTS.VENOM_ITEMS}),	-- Venom-Cursed Fragment
+						}),
+					},
+				}),
 				n(263015, {	-- Khu'tulak <Blade of Nek'zali>
 					["coord"] = { 53.0, 22.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["groups"] = {

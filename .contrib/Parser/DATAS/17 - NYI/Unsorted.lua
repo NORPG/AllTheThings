@@ -48,7 +48,6 @@ root(ROOTS.Unsorted, {
 			i(271436),	-- Slitherscale Girdle
 			i(271441),	-- Crushing Coiler Coif
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
-			i(271638),	-- Bound Serpent's Jade Eye
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
 			i(271991),	-- Venomous Equipment Chest

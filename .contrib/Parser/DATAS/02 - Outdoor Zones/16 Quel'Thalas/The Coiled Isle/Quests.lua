@@ -1164,7 +1164,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(QUESTS, {
-				hqt(96935, { ["isWeekly"] = true }),	-- Curse Surge
+				hqt(96935, { ["isWeekly"] = true }),	-- Curse Surge [Blue Box]
 				hqt(93676, { ["isWeekly"] = true }),	-- Curse Surge 2/3
 				hqt(96967, { ["isWeekly"] = true }),	-- Curse Surge 2/3
 				hqt(97160, { ["isWeekly"] = true }),	-- triggered with 'Turn Back the Surge' 96995

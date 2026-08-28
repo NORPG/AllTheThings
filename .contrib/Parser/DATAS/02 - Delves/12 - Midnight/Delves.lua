@@ -192,6 +192,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					{ "o", 584509 },	-- Nemesis Strongbox
 					{ "o", 584508 },	-- Nemesis Strongbox
 					{ "o", 584511 },	-- Nemesis Strongbox
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
 				},
 			}),
 			i(265714),	-- Trovehunter's Bounty

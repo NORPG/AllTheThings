@@ -24,9 +24,12 @@ local EncounterToCRS = {
 		261848,	-- Trader Gebbo
 	},
 	[SSZORAK] = { 257347 },
+	[TWIN_FANGS] = {
+		257368,	-- Ithraz
+		257361,	-- Vexhul
+	 },
 	--[[
 	[VASHNIK] = { 1 },
-	[TWIN_FANGS] = { 1 },
 	[COILED_ALTAR] = { 1 },
 	[ULATEK] = { 1 },
 	--]]
@@ -244,6 +247,7 @@ local ZoneDropLoot = {
 	i(271435),	-- Slippers of the Hissing Cult
 	i(271438),	-- Temple Delver's Mystic Helm
 	i(271434),	-- Venom Rite Mantle
+	i(271638),	-- Bound Serpent's Jade Eye
 };
 
 ------ Boss Functions ------
@@ -627,6 +631,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			hqt(98097, name(HEADERS.Encounter, COILED_ALTAR)),	-- Coiled Altar
 			hqt(97980, name(HEADERS.Encounter, ULATEK)),	-- Ula'tek
 			-- H
+			hqt(96496, name(HEADERS.Encounter, NEKZALI)),	-- second week this triggered on boss kill... weird it's likely something else
 			hqt(98082, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98078, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil

@@ -156,66 +156,77 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									}),
 								}, {	-- RENOWN 6 --
 									i(274500, {	-- Demystifyin': Alchemy (CI!)
+										["requireSkill"] = ALCHEMY,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.ALCHEMY, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274515, {	-- Demystifyin': Blacksmithing (CI!)
+										["requireSkill"] = BLACKSMITHING,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.BLACKSMITHING, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274511, {	-- Demystifyin': Enchanting (CI!)
+										["requireSkill"] = ENCHANTING,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.ENCHANTING, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274516, {	-- Demystifyin': Engineering (CI!)
+										["requireSkill"] = ENGINEERING,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.ENGINEERING, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274513, {	-- Demystifyin': Herbalism (CI!)
+										["requireSkill"] = HERBALISM,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.HERBALISM, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274514, {	-- Demystifyin': Inscription (CI!)
+										["requireSkill"] = INSCRIPTION,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.INSCRIPTION, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274510, {	-- Demystifyin': Jewelcrafting (CI!)
+										["requireSkill"] = JEWELCRAFTING,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.JEWELCRAFTING, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274507, {	-- Demystifyin': Leatherworking (CI!)
+										["requireSkill"] = LEATHERWORKING,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.LEATHERWORKING, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274509, {	-- Demystifyin': Mining (CI!)
+										["requireSkill"] = MINING,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.MINING, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274508, {	-- Demystifyin': Skinning (CI!)
+										["requireSkill"] = SKINNING,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.SKINNING, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },
 										},
 									}),
 									i(274512, {	-- Demystifyin': Tailoring (CI!)
+										["requireSkill"] = TAILORING,
 										["cost"] = {
 											{ "c", ARTISAN_MOXIE.TAILORING, 75 },
 											{ "c", VOIDLIGHT_MARL, 750 },

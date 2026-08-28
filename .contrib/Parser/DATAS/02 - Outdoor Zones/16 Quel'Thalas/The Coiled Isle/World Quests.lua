@@ -171,8 +171,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(WORLD_QUESTS, {
-				hqt(96307),	-- Special Assignment: Wraith Wrath was unlocked
-				hqt(96492),	-- Special Assignment: Demand and Supply was unlocked
+				q(96307),	-- Special Assignment: Wraith Wrath was unlocked
+				q(96492),	-- Special Assignment: Demand and Supply was unlocked
+				q(95922),	-- Special Assignment: Face the Swarm was unlocked
 			}),
 		})),
 	}),

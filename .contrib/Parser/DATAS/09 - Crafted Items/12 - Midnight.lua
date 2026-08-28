@@ -94,6 +94,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				i(245905),	-- Fleeting Potion of Devoured Dreams+
 				i(245903),	-- Fleeting Potion of Recklessness+
 				i(245919),	-- Fleeting Silvermoon Health Potion+
+				i(274763, {["timeline"] = {ADDED_12_1_0}}),	-- Fleeting Liquid Luster+
 			}),
 			i(241284, {	-- Voidlight Potion Cauldron++
 				i(245910),	-- Fleeting Draught of Rampant Abandon++
@@ -102,6 +103,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				i(245904),	-- Fleeting Potion of Devoured Dreams++
 				i(245902),	-- Fleeting Potion of Recklessness++
 				i(245918),	-- Fleeting Silvermoon Health Potion++
+				i(274764, {["timeline"] = {ADDED_12_1_0}}),	-- Fleeting Liquid Luster++
 			}),
 		}),
 		n(DECOR, {
@@ -2462,6 +2464,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(93632, name(HEADERS.NPC, 246633)),	-- Skinning Harried Hawkstrider
 			q(97417, name(HEADERS.NPC, 265262), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Hisstara <The Raiser>
 			q(97419, name(HEADERS.NPC, 265237), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Lockjaw <The Snapper>
+			q(98365, name(HEADERS.NPC, 255088), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Looming Mutagenitor
 			q(88531, name(HEADERS.NPC, 245690)),	-- Skinning Lumenfin
 			q(88524, name(HEADERS.NPC, 247101)),	-- Skinning Netherscythe
 			q(93634, name(HEADERS.NPC, 242032)),	-- Skinning Oophaga
@@ -2477,6 +2480,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(95470, name(HEADERS.NPC, 242031)),	-- Skinning Spinefrill
 			q(98368, name(HEADERS.NPC, 258254), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Ss'akrithos <The Boundless Ophidian>
 			q(97416, name(HEADERS.NPC, 261109), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Sss'alik
+			q(98363, name(HEADERS.NPC, 263456), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Szarith The Fanged
 			q(95446, name(HEADERS.NPC, 250876)),	-- Skinning Terrinor
 			q(93637, name(HEADERS.NPC, 242033)),	-- Skinning Tiny Vermin
 			q(93639, name(HEADERS.NPC, 238498)),	-- Skinning Territorial Voidscythe
@@ -2484,7 +2488,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(95471, name(HEADERS.NPC, 242035)),	-- Skinning The Devouring Invader
 			q(93636, name(HEADERS.NPC, 242024)),	-- Skinning The Snapping Scourge
 			q(88532, name(HEADERS.NPC, 247096)),	-- Skinning Umbrafang
-			q(98364, name(HEADERS.NPC, 255927), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Venom Lancer Ori'kassi
+			q(98364, name(HEADERS.NPC, 255927), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Venom Lancer Ori'kassi / (triggered from Malformed Leviathan for me)
 		})),
 		prof(TAILORING, {
 			q(89422),	-- 0/20 Arcanoweave Expertise

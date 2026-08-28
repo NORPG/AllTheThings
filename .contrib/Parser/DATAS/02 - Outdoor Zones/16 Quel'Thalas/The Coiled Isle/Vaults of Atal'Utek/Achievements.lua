@@ -17,7 +17,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["cr"] = 269485,	-- Altar of Corrosion
 					["groups"] = { title(794) },	-- <Name> the Snake
 				}),
-				ach(63601),	-- Oppose the Foes
+				ach(63601, {	-- Oppose the Foes
+					-- automation doesn't work because the criteria require completion of 'scenarios' rather than kills of the mob
+					crit(116325, {
+						["_npcs"] = {263014},	-- Congealed Malice
+					}),
+					crit(116326, {
+						["_npcs"] = {263015},	-- Khu'tulak
+					}),
+					crit(116327, {
+						["_npcs"] = {263016},	-- Susarikk
+					}),
+				}),
 				ach(63653, {	-- Pro Poison Patroller
 					i(276553),	-- Emerald Skyfang (MOUNT!)
 				}),
