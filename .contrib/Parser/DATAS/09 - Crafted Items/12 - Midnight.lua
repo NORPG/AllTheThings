@@ -91,19 +91,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 				i(245911),	-- Fleeting Draught of Rampant Abandon+
 				i(245897),	-- Fleeting Light's Potential+
 				i(245917),	-- Fleeting Lightfused Mana Potion+
+				i(274763, {["timeline"] = {ADDED_12_1_0}}),	-- Fleeting Liquid Luster+
 				i(245905),	-- Fleeting Potion of Devoured Dreams+
 				i(245903),	-- Fleeting Potion of Recklessness+
 				i(245919),	-- Fleeting Silvermoon Health Potion+
-				i(274763, {["timeline"] = {ADDED_12_1_0}}),	-- Fleeting Liquid Luster+
 			}),
 			i(241284, {	-- Voidlight Potion Cauldron++
 				i(245910),	-- Fleeting Draught of Rampant Abandon++
 				i(245898),	-- Fleeting Light's Potential++
 				i(245916),	-- Fleeting Lightfused Mana Potion++
+				i(274764, {["timeline"] = {ADDED_12_1_0}}),	-- Fleeting Liquid Luster++
 				i(245904),	-- Fleeting Potion of Devoured Dreams++
 				i(245902),	-- Fleeting Potion of Recklessness++
 				i(245918),	-- Fleeting Silvermoon Health Potion++
-				i(274764, {["timeline"] = {ADDED_12_1_0}}),	-- Fleeting Liquid Luster++
 			}),
 		}),
 		n(DECOR, {

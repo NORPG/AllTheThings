@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(273760, {	-- Ensorcelled Cryptid
-				["description"] = "Interact with to remove stacks of Barrier Integrity while dodging arcane swirls, after 100 removed stacks, interact with to get the pet. Despawns and reappears elsewhere after a minute, multiple people can participate.",
+				["description"] = "Interact with to remove stacks of Barrier Integrity while dodging arcane swirls, after 100 removed stacks, interact with J'imothy to get the pet. Despawns and reappears elsewhere after a minute, multiple people can participate.",
 				["coords"] = {
 					{ 28.8, 46.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					{ 51.3, 53.8, MAP.MIDNIGHT.SILVERMOON_CITY },

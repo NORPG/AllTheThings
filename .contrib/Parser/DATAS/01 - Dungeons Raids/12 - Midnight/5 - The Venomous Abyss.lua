@@ -242,12 +242,12 @@ local EncounterToLoot = {
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {
+	i(271638),	-- Bound Serpent's Jade Eye
 	i(271445),	-- Fanged Brute's Greatbelt
 	i(271440),	-- Greaves of the Noxious Depths
 	i(271435),	-- Slippers of the Hissing Cult
 	i(271438),	-- Temple Delver's Mystic Helm
 	i(271434),	-- Venom Rite Mantle
-	i(271638),	-- Bound Serpent's Jade Eye
 };
 
 ------ Boss Functions ------

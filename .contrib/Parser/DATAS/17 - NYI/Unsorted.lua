@@ -26,7 +26,6 @@ root(ROOTS.Unsorted, {
 			i(265790),	-- Cache of Mistcrests
 			i(266327),	-- Pristine Spinal Barb
 			i(267045),	-- Quivering Egg
-			i(267233),	-- Dehydrated Troll Eye Necklace
 			i(268095),	-- Fresh Poultice
 			-- WB
 			i(268281),	-- Ula'guts
@@ -80,7 +79,6 @@ root(ROOTS.Unsorted, {
 			i(274467),	-- Crazy Carrot
 			i(274680),	-- Loa-Blessed Orb
 			i(274713),	-- Cache of Amani Treasures
-			i(274763),	-- Fleeting Liquid Luster
 			i(274764),	-- Fleeting Liquid Luster
 			i(274767),	-- Seaside Lounge Chair
 			i(274784),	-- Seaside Tiki Frondtree

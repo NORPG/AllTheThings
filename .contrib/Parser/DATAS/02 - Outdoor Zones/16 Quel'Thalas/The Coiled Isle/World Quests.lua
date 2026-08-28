@@ -37,6 +37,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(95381, {	-- Fire in the Sky
 					["coord"] = { 54.2, 43.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
+				q(94996, {
+					["coord"] = { 46.9, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["qi"] = 267233,	-- Dehydrated Troll Eye Necklace (QI!)
+				}),
 				q(93648, {	-- Gnarly Skullduggery
 					["coord"] = { 57.3, 76.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["groups"] = {

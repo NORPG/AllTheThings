@@ -153,8 +153,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
 							}),
 							i(278001, {	-- Forgotten Amani Fishing Rod (QS!)
-								["description"] = "Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",
+								["description"] = "Can be fished in Torrential Gorgerswarm pools created by a Coiled Stargorger Lure.",
 								["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
+								["cost"] = { { "i", 241151, 1 } },	-- 1x Coiled Stargorger Lure
 							}),
 							i(277989, {	-- Ghostcaller's Bell (QS!)
 								["description"] = "Can be fished from Bubbling Beryl pools.",

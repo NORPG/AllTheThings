@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(278523) },	-- Feather of Tok'jara (QS!/QI!)
 				}),
 				o(671508, {	-- Jin'tal's Reliquary
-					["coord"] = { 36.26, 23.70, 2638 },	-- Profaned Mausoleum
+					["coord"] = { 36.6, 25.3, 2638 },	-- Profaned Mausoleum
 					["cost"] = { { "i", 280005, 1 } },	-- 1x Dispelling Charm
 					["groups"] = { i(278517) },	-- Lost Med'jai Amulet (QS!/QI!)
 				}),
