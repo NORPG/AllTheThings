@@ -19,7 +19,6 @@ local AccountWideQuestsDB = {
 	------------------------------------------------------------------------------
 	-- PUT NEW QUESTIDS HERE vv IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
 	------------------------------------------------------------------------------
-
 	------------------------------------------------------------------------------
 	-- PUT NEW QUESTIDS HERE ^^ IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
 	------------------------------------------------------------------------------
@@ -977,6 +976,7 @@ local AccountWideQuestsDB = {
 	65298,	-- Quest #65298*
 	65539,	-- Zereth Mortis Flying
 	65716,	-- Ensemble: Barkbinds of the Archdruid's Nightmare
+	66579,	-- Sounds of Healing
 	66858,	-- Tour the Trading Post
 	66959,	-- Tour the Trading Post
 	67030,	-- Quest #67030*
@@ -2815,6 +2815,7 @@ local AccountWideQuestsDB = {
 	95001,	-- Quest #95001*
 	95002,	-- Quest #95002*
 	95003,	-- Quest #95003*
+	95039,	-- Quest #95039*
 	95044,	-- Quest #95044*
 	95166,	-- Pet the Dog (245551)
 	95268,	-- New Tools, New Heights
@@ -2845,6 +2846,27 @@ local AccountWideQuestsDB = {
 	95552,	-- Dark Obelisk Investigation
 	95553,	-- Manifested Destiny
 	95554,	-- Questionable Power
+	95856,	-- Level 61
+	95857,	-- Level 62
+	95858,	-- Level 63
+	95859,	-- Level 64
+	95860,	-- Level 65
+	95861,	-- Level 66
+	95862,	-- Level 67
+	95863,	-- Level 68
+	95864,	-- Level 69
+	95865,	-- Level 70
+	95866,	-- Level 71
+	95867,	-- Level 72
+	95868,	-- Level 73
+	95869,	-- Level 74
+	95870,	-- Level 75
+	95871,	-- Level 76
+	95872,	-- Level 77
+	95873,	-- Level 78
+	95874,	-- Level 79
+	95875,	-- Level 80
+	96004,	-- Prey: A Slithering Threat
 	96100,	-- Quest #96100*
 	96114,	-- A Small Pouch of Crystals
 	96115,	-- A Small Pouch of Crystals
@@ -2857,23 +2879,68 @@ local AccountWideQuestsDB = {
 	96124,	-- A Small Bundle of Goods
 	96214,	-- Tracking Quest
 	96215,	-- Tracking Quest
+	96466,	-- Prey: Anguish Island
+	96474,	-- Prey: Something for Astalor
 	96496,	-- The Road Not Taken Twice
 	96497,	-- Spatial Reasoning
+	96525,	-- Prey: Out of Our Depth
+	96532,	-- Prey: Attending the Attendant
 	96534,	-- Preparing for Threats
+	96612,	-- Ancient Curiosity: Combat
+	96614,	-- Forged Through Fire
+	96615,	-- Ancient Curiosity: Utility
 	96744,	-- Bouncy Mushrooms
 	96745,	-- Aerospores
 	96787,	-- Quest #96787*
 	96788,	-- Quest #96788*
 	96790,	-- ??
 	96791,	-- Quest #96791*
+	96803,	-- Sturdy Chest
+	96806,	-- Sturdy Chest
+	96807,	-- Sturdy Chest
+	96809,	-- Exterior Manaforge Translocator
 	96845,	-- The Grappler
 	96936,	-- Accolades for the Umbral Contender
+	96966,	-- Looming Mutagenitor weekly reputation obtained.
+	96967,	-- Vassti, the Exalted Broodmother weekly reputation obtained.
+	96968,	-- Ss'akrithos weekly reputation obtained.
+	96970,	-- Malformed Leviathan weekly reputation obtained.
+	96975,	-- Delver's Starter Kit
+	97041,	-- Quest #97041*
 	97111,	-- ??
 	97115,	-- First Preference Killing of the week
 	97116,	-- Has rolled for Ahune Special Loot (Daily Accountwide)
+	97383,	-- Spirit Corrosion
+	97616,	-- Corrosive Gifts: Corrosive Power
 	97640,	-- Vaults of Atal'Utek: One Coin Too Many
+	97661,	-- The Protection of the Med'jai
+	97662,	-- The Winds of Tok'jara
+	97668,	-- The Watchful Gaze of Szarith
+	97669,	-- The Luck of the Bound Spirit
+	97670,	-- A Handful of Voidlight Marl
+	97945,	-- In the Catalyst's Shadow
+	97978,	-- Prismatic Potential
+	97980,	-- Ula'tek
+	97983,	-- Ula'tek
+	98097,	-- The Coiled Altar
+	98337,	-- Quest #98337*
+	98344,	-- Farthik the Plunderer weekly reputation obtained.
+	98345,	-- Siltmouth weekly reputation obtained.
+	98346,	-- Kari'zah the Forgotten weekly reputation obtained.
+	98347,	-- Lockjaw weekly reputation obtained.
+	98348,	-- Hisstara weekly reputation obtained.
+	98349,	-- Szarith The Fanged weekly reputation obtained.
+	98350,	-- Garsecg weekly reputation obtained.
+	98351,	-- Nar'zira weekly reputation obtained.
+	98352,	-- Coin-Eye Skully weekly reputation obtained.
+	98353,	-- Big Mon weekly reputation obtained.
+	98354,	-- Sss'alik weekly reputation obtained.
+	98355,	-- Destra weekly reputation obtained.
 	98388,	-- Into the Vaults of Atal'Utek
 	98428,	-- Vaults of Atal'Utek: The Altar of Corrosion
+	98515,	-- Vaults of Atal'Utek: A Toxic Tour
+	98787,	-- Quest #98787*
+	98848,	-- Delver's Cosmetic Surprise Bag
 
 	-- Weird partial cases... ??
 	-- 45237,	-- Ensemble: Funerary Plate of the Chosen Dead (Only flags complete for Plate characters)
