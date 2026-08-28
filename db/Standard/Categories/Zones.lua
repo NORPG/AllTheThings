@@ -164525,7 +164525,7 @@ flt(101,{
 p(4912,{b=1,coords={
 [2393]={{28.7,75.6},{29,81.4},{31.8,81.2},{32.4,75.4}}},crs={254885},itemID=258660,npcID=254885,spellID=1263739}),
 n(273760,{awp=120100,coords={
-[2393]={{28.8,46.7},{51.3,53.8},{58.3,41.9}}},description="Interact with to remove stacks of Barrier Integrity while dodging arcane swirls, after 100 removed stacks, interact with to get the pet. Despawns and reappears elsewhere after a minute, multiple people can participate.",g={
+[2393]={{28.8,46.7},{51.3,53.8},{58.3,41.9}}},description="Interact with to remove stacks of Barrier Integrity while dodging arcane swirls, after 100 removed stacks, interact with J'imothy to get the pet. Despawns and reappears elsewhere after a minute, multiple people can participate.",g={
 n(273762,{
 p(5164,{itemID=282417,npcID=273775,spellID=1313813})})}})}),
 h(-30,{
@@ -169478,16 +169478,24 @@ i(269938,{spellID=93425})})})}),
 h(-47,{
 i(274374,{f=55,questID=86371,spellID=1293799})}),
 h(-46,{
+n(263014,{coords={
+[2509]={{40.5,20.6}}},g={
+i(273000),
+h(-768,{isWeekly=1,questID=97768,g={
+i(279382,{spellID=1306630,sym={{"select","itemID",279345},{"pop"}}})}}),
+crit(116325,{achID=63601})}}),
 n(263015,{coords={
 [2509]={{53,22.7}}},g={
 i(273000),
 h(-768,{isWeekly=1,questID=97769,g={
-i(279382,{spellID=1306630,sym={{"select","itemID",279345},{"pop"}}})}})}}),
+i(279382,{spellID=1306630,sym={{"select","itemID",279345},{"pop"}}})}}),
+crit(116326,{achID=63601})}}),
 n(263016,{coords={
 [2509]={{47.8,32}}},crs={263016},g={
 i(273000),
 h(-768,{isWeekly=1,questID=97770,g={
-i(279382,{spellID=1306630,sym={{"select","itemID",279345},{"pop"}}})}})}}),
+i(279382,{spellID=1306630,sym={{"select","itemID",279345},{"pop"}}})}}),
+crit(116327,{achID=63601})}}),
 n(263253,{coords={
 [2636]={{74.9,72.6}}},crs={263210},g={
 i(280005,{spellID=1307536})}})}),
@@ -169536,7 +169544,7 @@ o(671500,{coords={
 [2509]={{48.5,25.76}}},cost={{"i",280006,1}},g={
 i(278523)}}),
 o(671508,{coords={
-[2638]={{36.26,23.7}}},cost={{"i",280005,1}},g={
+[2638]={{36.6,25.3}}},cost={{"i",280005,1}},g={
 i(278517)}}),
 o(671498,{coords={
 [2509]={{41.7,53.6},{42.7,12.5},{47.5,38.5},{52.5,53.9},{53.5,18.5}}},cost={{"i",280004,1}},description="Will only show up once you have looted the Corroded Key, in one of 5 random locations",g={
@@ -169767,7 +169775,7 @@ s(308988,274803,{f=22}),
 s(308993,274808,{f=26})}}),
 flt(104,{
 i(279384,{description="Can be fished in open waters",sourceQuests={98343}}),
-i(278001,{description="Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",sourceQuests={96111}}),
+i(278001,{cost={{"i",241151,1}},description="Can be fished in Torrential Gorgerswarm pools created by a Coiled Stargorger Lure.",sourceQuests={96111}}),
 i(277989,{description="Can be fished from Bubbling Beryl pools.",sourceQuests={96113}}),
 i(277998,{description="Can be fished from Willow Sea pools.",sourceQuests={96113}}),
 i(277997,{description="Can be fished from Abyssal Swirl pools created with the Eerie Bauble",providers={{"i",278391}},sourceQuests={97565}}),
@@ -169868,17 +169876,17 @@ r(1302819,{cost={{"c",3316,1500}},itemID=277820,minReputation={2772,5},requireSk
 r(1296501,{cost={{"c",3259,150}},itemID=275316,minReputation={2772,5},requireSkill=202,skillID=2910}),
 r(1303151,{cost={{"c",3261,150}},itemID=277967,minReputation={2772,5},requireSkill=773,skillID=2913}),
 r(1290561,{cost={{"c",3261,150}},itemID=272196,minReputation={2772,5},requireSkill=773,skillID=2913}),
-i(274500,{cost={{"c",3316,750},{"c",3256,75}},minReputation={2772,6},questID=96459,spellID=1294335,type="ihqt"}),
-i(274515,{cost={{"c",3316,750},{"c",3257,75}},minReputation={2772,6},questID=96511,spellID=1309202,type="ihqt"}),
-i(274511,{cost={{"c",3316,750},{"c",3258,75}},minReputation={2772,6},questID=96512,spellID=1294806,type="ihqt"}),
-i(274516,{cost={{"c",3316,750},{"c",3259,75}},minReputation={2772,6},questID=96513,spellID=1294808,type="ihqt"}),
-i(274513,{cost={{"c",3316,750},{"c",3260,75}},minReputation={2772,6},questID=96514,spellID=1294809,type="ihqt"}),
-i(274514,{cost={{"c",3316,750},{"c",3261,75}},minReputation={2772,6},questID=96515,spellID=1294810,type="ihqt"}),
-i(274510,{cost={{"c",3316,750},{"c",3262,75}},minReputation={2772,6},questID=96516,spellID=1294812,type="ihqt"}),
-i(274507,{cost={{"c",3316,750},{"c",3263,75}},minReputation={2772,6},questID=96517,spellID=1294813,type="ihqt"}),
-i(274509,{cost={{"c",3316,750},{"c",3264,75}},minReputation={2772,6},questID=96518,spellID=1309200,type="ihqt"}),
-i(274508,{cost={{"c",3316,750},{"c",3265,75}},minReputation={2772,6},questID=96519,spellID=1294818,type="ihqt"}),
-i(274512,{cost={{"c",3316,750},{"c",3266,75}},minReputation={2772,6},questID=96520,spellID=1294819,type="ihqt"}),
+i(274500,{cost={{"c",3316,750},{"c",3256,75}},minReputation={2772,6},questID=96459,requireSkill=171,spellID=1294335,type="ihqt"}),
+i(274515,{cost={{"c",3316,750},{"c",3257,75}},minReputation={2772,6},questID=96511,requireSkill=164,spellID=1309202,type="ihqt"}),
+i(274511,{cost={{"c",3316,750},{"c",3258,75}},minReputation={2772,6},questID=96512,requireSkill=333,spellID=1294806,type="ihqt"}),
+i(274516,{cost={{"c",3316,750},{"c",3259,75}},minReputation={2772,6},questID=96513,requireSkill=202,spellID=1294808,type="ihqt"}),
+i(274513,{cost={{"c",3316,750},{"c",3260,75}},minReputation={2772,6},questID=96514,requireSkill=182,spellID=1294809,type="ihqt"}),
+i(274514,{cost={{"c",3316,750},{"c",3261,75}},minReputation={2772,6},questID=96515,requireSkill=773,spellID=1294810,type="ihqt"}),
+i(274510,{cost={{"c",3316,750},{"c",3262,75}},minReputation={2772,6},questID=96516,requireSkill=755,spellID=1294812,type="ihqt"}),
+i(274507,{cost={{"c",3316,750},{"c",3263,75}},minReputation={2772,6},questID=96517,requireSkill=165,spellID=1294813,type="ihqt"}),
+i(274509,{cost={{"c",3316,750},{"c",3264,75}},minReputation={2772,6},questID=96518,requireSkill=186,spellID=1309200,type="ihqt"}),
+i(274508,{cost={{"c",3316,750},{"c",3265,75}},minReputation={2772,6},questID=96519,requireSkill=393,spellID=1294818,type="ihqt"}),
+i(274512,{cost={{"c",3316,750},{"c",3266,75}},minReputation={2772,6},questID=96520,requireSkill=197,spellID=1294819,type="ihqt"}),
 de(21325,{cost={{"c",3316,150}},itemID=269779,minReputation={2772,7},spellID=1286527}),
 de(21324,{cost={{"c",3316,150}},itemID=269778,minReputation={2772,7},spellID=1286526}),
 de(26097,{cost={{"c",3316,250}},itemID=277280,minReputation={2772,7},spellID=1302004}),
@@ -170768,6 +170776,8 @@ o(619683,{
 i(265403)})}}),
 q(95381,{coords={
 [2512]={{54.2,43.3}}},isWorldQuest=1}),
+q(94996,{coords={
+[2512]={{46.9,64.9}}},isWorldQuest=1,qis={267233}}),
 q(93648,{coords={
 [2512]={{57.3,76.6}}},isWorldQuest=1,g={
 o(615902,{

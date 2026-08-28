@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local ah,cl,cu,faction,gb,h,hqt,i,inst,m,n,o,prof,x=_.CreateHeader,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateExpansion;
+local ah,cl,crit,cu,faction,gb,h,hqt,i,inst,m,n,o,prof,x=_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateExpansion;
 categories.HiddenQuestTriggers={
 x(1,{
 m(13,{awp=11101,g={
@@ -7394,11 +7394,16 @@ hqt(98075,{an="n:261503"}),
 hqt(98087,{an="n:263594"}),
 hqt(98097,{an="en:2883"}),
 hqt(97980,{an="en:2895"}),
+hqt(96496,{an="en:2888",sourceQuests={96053},g={
+crit(115419,{achID=63384,id=1})}}),
 hqt(98082,{an="n:261491"}),
 hqt(98078,{an="n:261492"}),
 hqt(98090,{an="n:266538"}),
 hqt(98074,{an="n:261503"}),
-hqt(98086,{an="n:263594"})}}),
+hqt(98086,{an="n:263594"}),
+hqt(97983,{an="en:2895"}),
+hqt(98081,{an="n:261491"}),
+hqt(98077,{an="n:261492"})}}),
 h(-68,{awp=120001,g={
 ah(61259,{rwp=120100,type="a",u=2,g={
 hqt(92491,{isWeekly=1,u=2}),
@@ -7576,7 +7581,8 @@ h(-46,{
 hqt(96966),
 hqt(96970),
 hqt(96968),
-hqt(96967)})}),
+hqt(96967),
+hqt(97333,{u=1})})}),
 h(-45,{
 hqt(96935,{isWeekly=1}),
 hqt(93676,{isWeekly=1}),
@@ -7598,7 +7604,8 @@ hqt(98354),
 hqt(98349)}),
 h(-62,{
 hqt(96307),
-hqt(96492)})}}),
+hqt(96492),
+hqt(95922)})}}),
 m(2437,{maps={2536,2583,2584},lvl=83,g={
 h(-45,{
 hqt(91965,{repeatable=1}),
@@ -7831,6 +7838,7 @@ hqt(95517,{an="n:249849",isDaily=1}),
 hqt(93632,{an="n:246633",isDaily=1}),
 hqt(97417,{an="n:265262",isDaily=1}),
 hqt(97419,{an="n:265237",isDaily=1}),
+hqt(98365,{an="n:255088",isDaily=1}),
 hqt(88531,{an="n:245690",isDaily=1}),
 hqt(88524,{an="n:247101",isDaily=1}),
 hqt(93634,{an="n:242032",isDaily=1}),
@@ -7846,6 +7854,7 @@ hqt(88526,{an="n:245699",isDaily=1}),
 hqt(95470,{an="n:242031",isDaily=1}),
 hqt(98368,{an="n:258254",isDaily=1}),
 hqt(97416,{an="n:261109",isDaily=1}),
+hqt(98363,{an="n:263456",isDaily=1}),
 hqt(95446,{an="n:250876",isDaily=1}),
 hqt(93637,{an="n:242033",isDaily=1}),
 hqt(93639,{an="n:238498",isDaily=1}),
@@ -7897,7 +7906,8 @@ hqt(95641,{repeatable=1}),
 hqt(95881,{repeatable=1}),
 hqt(95616,{repeatable=1}),
 hqt(95617,{repeatable=1}),
-hqt(95619,{repeatable=1})}})}})}})}}),
+hqt(95619,{repeatable=1}),
+hqt(97503,{repeatable=1})}})}})}})}}),
 prof(171,{awp=70003,g={
 x(7,{
 hqt(42083)})}}),
