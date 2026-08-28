@@ -631,6 +631,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			hqt(98074, name(HEADERS.NPC, 261503)),	-- Frightmaw
 			hqt(98086, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
+			hqt(97983, name(HEADERS.Encounter, ULATEK)),	-- Ula'tek
 			-- M
 		},
 	}),
