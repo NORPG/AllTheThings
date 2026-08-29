@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
 							}),
 							i(277998, {	-- Lump of Crystalline Malachite (QS!)
-								["description"] = "Can be fished from Willow Sea pools.",
+								["description"] = "Can be fished from Willow Sea and Bubbling Beryl pools.",
 								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
 							}),
 							i(277997, {	-- Malevolent Fishing Codex (QS!)

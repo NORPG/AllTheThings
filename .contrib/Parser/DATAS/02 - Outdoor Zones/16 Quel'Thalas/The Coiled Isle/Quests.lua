@@ -556,17 +556,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qi"] = 274076,	-- Venom-Cursed Killifish (QI!)
 					}),
 					q(98343, {	-- Venom Fishing: My Second-Best
-						["sourceQuest"] = 96110,	-- Proof is in the Ooze
+						["sourceQuest"] = 96110,	-- Venom Fishing: Proof is in the Ooze
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
 					q(98414, {	-- A Request from the Captain
-						["sourceQuest"] = 98343,	-- My Second-Best
+						["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
 						["qg"] = 257598,	-- Second Mate Sluggs
 						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["isBreadcrumb"] = true,
 					}),
 					q(96111, {	-- Venom Fishing: Shell of Yourself
-						["sourceQuest"] = 98414,	-- A Request from the Captain
+						["sourceQuests"] = {
+							98414,	-- A Request from the Captain
+							98343,	-- Venom Fishing: My Second-Best
+						},
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["qi"] = 274083,	-- Birdie's Bombardment Pack (QI!)
@@ -577,6 +581,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 					q(98415, {	-- A Favor to the Captain
+						["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
 						["qg"] = 257598,	-- Second Mate Sluggs
 						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
@@ -585,7 +590,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(96112, {	-- Venom Fishing: Maddening Concoction
 						["sourceQuests"] = {
 							98415,-- A Favor to the Captain
-							96111,	-- Shell of Yourself
+							96111,	-- Venom Fishing: Shell of Yourself
 						},
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -597,8 +602,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							274091,	-- Tough Crab Meat (QI!)
 						},
 					}),
+					q(98416, {	-- A Plea from the Captain
+						["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
+						["qg"] = 257598,	-- Second Mate Sluggs
+						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
+						["isBreadcrumb"] = true,
+					}),
 					q(96113, {	-- Venom Fishing: Maximum Potency
-						["sourceQuest"] = 96112,	-- Maddening Concoction
+						["sourceQuests"] = {
+							98416,	-- A Plea from the Captain
+							96112,	-- Venom Fishing: Maddening Concoction
+						},
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
@@ -606,9 +621,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							274281,	-- Black-Venom Grouper (QI!)
 							274282,	-- Venom-Charged Dubloon (QI!)
 						},
-					}),
-					q(98416, {	-- A Plea from the Captain
-						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 					}),
 				}),
 				header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology

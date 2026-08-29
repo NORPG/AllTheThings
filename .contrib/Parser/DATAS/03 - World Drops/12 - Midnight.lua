@@ -138,13 +138,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(236965),	-- Bright Linen++
 		i(275287, { ["timeline"] = { ADDED_12_1_0 } }),	-- Cellular Slab
 		i(275281, { ["timeline"] = { ADDED_12_1_0 } }),	-- Folded Wing
+		i(275280, { ["timeline"] = { ADDED_12_1_0 } }),	-- Gamey Flank
 		i(275286, { ["timeline"] = { ADDED_12_1_0 } }),	-- Leafy Appendage
 		i(275285, { ["timeline"] = { ADDED_12_1_0 } }),	-- Malleable Root
 		i(236949),	-- Mote of Light
 		i(236950),	-- Mote of Primal Energy
 		i(236952),	-- Mote of Pure Void
 		i(236951),	-- Mote of Wild Magic
-		i(274777, { ["timeline"] = { ADDED_12_1_0 } }),	-- Neutralized Venom Clot
 		i(251285),	-- Petrified Root (TODO: probably delves only)
 		i(275288, { ["timeline"] = { ADDED_12_1_0 } }),	-- Photosynthesized Scrap
 		i(242640),	-- Plant Protein

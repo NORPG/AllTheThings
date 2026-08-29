@@ -5,17 +5,16 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 	n(QUESTS, {
 		q(81930, {	-- The War Within [A]
+			["qg"] = 221967,	-- Lady Jaina Proudmoore
+			["coord"] = { 62.6, 72.6, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
-				i(227669),	-- Teleportation Scroll (QI!)
-			},
+			["qi"] = 227669,	-- Teleportation Scroll (QI!)
 		}),
 		q(78713, {	-- The War Within [H]
-			["races"] = HORDE_ONLY,
 			["qg"] = 221949,	-- Thrall
-			["groups"] = {
-				i(227669),	-- Teleportation Scroll (QI!)
-			},
+			["coord"] = { 49.7, 77.4, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+			["qi"] = 227669,	-- Teleportation Scroll (QI!)
 		}),
 		q(78714, {	-- A Poor Reception
 			["sourceQuests"] = {

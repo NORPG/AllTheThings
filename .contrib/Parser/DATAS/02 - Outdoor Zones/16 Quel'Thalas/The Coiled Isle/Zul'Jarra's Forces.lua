@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["qi"] = 274416,	-- Warded Key
 								["groups"] = {
 									o(652477, {	-- Warded Lockbox
-										["questID"] = 96436,
+										--["questID"] = 96436,
 										["coord"] = { 78.4, 72.9, 2638 },	-- Profaned Mausoleum
 										["cost"] = { { "i", 274416, 1 } },	-- 1x Warded Key (QI!)
 										["groups"] = { i(273303) },	-- Ritual Gem

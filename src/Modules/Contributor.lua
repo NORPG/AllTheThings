@@ -3103,6 +3103,7 @@ MobileDB.GameObject = {
 	[523286] = true,	-- Wild Refulgent Copper
 	[523287] = true,	-- Voidbound Refulgent Copper
 	[523288] = true,	-- Umbral Tin
+	[523293] = true,	-- Voidbound Umbral Tin
 	[523295] = true,	-- Brilliant Silver
 	[523299] = true,	-- Primal Brilliant Silver
 	[523378] = true,	-- Portal to Nagrand
