@@ -89,6 +89,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									i(273838),	-- Spirit of Tok'jara (MOUNT!)
 								},
 							}),
+							q(96360, {	-- Wading In (Daily)
+								["sourceQuest"] = 96305,	-- The Innocent Essence (Day 6)
+								["qg"] = 264611,	-- Du'gal
+								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								["isDaily"] = true,
+							}),
 						}, {	-- RENOWN 11 --
 						}, {	-- RENOWN 12 --
 							q(97672),	-- A Cluster of Voidlight Marl

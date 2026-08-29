@@ -683,5 +683,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				},
 			}),
 		})),
+		n(REWARDS, {
+			i(275634, {	-- Artisan's Consortium Flyer (QS!)
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["description"] = "Rewarded from the first Arena win, including training grounds.",
+			}),
+		}),
 	}),
 }))));

@@ -27,12 +27,13 @@ local EncounterToCRS = {
 	[TWIN_FANGS] = {
 		257368,	-- Ithraz
 		257361,	-- Vexhul
-	 },
-	--[[
-	[VASHNIK] = { 1 },
-	[COILED_ALTAR] = { 1 },
-	[ULATEK] = { 1 },
-	--]]
+	},
+	[VASHNIK] = { 259181 },
+	[COILED_ALTAR] = {
+		259447,	-- Zul'jan
+		259854,	-- Hex Lord Malacrass
+	},
+	[ULATEK] = { 268956 },
 };
 
 ------ EncounterToLoot ------

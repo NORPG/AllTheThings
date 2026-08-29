@@ -113,7 +113,6 @@ root(ROOTS.Unsorted, {
 			i(275572),	-- [PH] Broomstick Spice - Hallow
 			i(275573),	-- [PH] Broomstick Spice - Pink
 			i(275574),	-- [PH] Broomstick Spice - Red
-			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(276138),	-- Any Ingredient [DNT

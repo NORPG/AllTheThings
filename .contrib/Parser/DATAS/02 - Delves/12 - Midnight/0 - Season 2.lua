@@ -204,6 +204,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
 						["groups"] = {
 							i(274494),	-- Chiral Marrowgrafter
+							i(251789),	-- Consecrated Chalice
 							i(251790),	-- Desecrated Chalice
 							i(274493),	-- Effigy of Ula'Tek's Faithful
 							i(251786),	-- Ever-Collapsing Void Fissure
