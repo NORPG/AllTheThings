@@ -173,10 +173,14 @@ local DefaultFields = {
 	end,
 	-- some calculated properties can let fall-through to the merge source of a group instead of needing to re-calculate in every copy
 	isCost = function(t)
-		if t.isOwnedCost then return true end
 		local merge = t.__merge
 		if not merge then return end
 		return merge.isCost
+	end,
+	isOwnedCost = function(t)
+		local merge = t.__merge
+		if not merge then return end
+		return merge.isOwnedCost
 	end,
 	["nmc"] = function(t)
 		local c = t.c;
