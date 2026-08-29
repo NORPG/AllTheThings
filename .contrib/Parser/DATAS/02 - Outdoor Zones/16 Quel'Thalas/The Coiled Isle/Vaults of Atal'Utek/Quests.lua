@@ -249,7 +249,8 @@ root(ROOTS.HiddenQuestTriggers, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(96036),	-- completion of 95906 -- Scavenged Weapons
 				q(96035),	-- completion of 95614 -- Siphon Venom
 				q(96040),	-- completion of 95962 -- Vengeance for the Dead
-				-- q(96033),	-- unknown, but probably a temple patrol HQT
+				q(96033),	-- completion of 95580 -- Slay the Restless
+				q(96038),	-- completion of 95953 -- Congealed Venom
 				-- not sure if these need to be real quests or not
 				q(95639),	-- Clear the Clutch
 				q(95640),	-- Clear the Clutch

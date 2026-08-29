@@ -1369,7 +1369,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			["isDaily"] = true,
 		}, {
 			q(97064, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory
-			--98501, Looted first Bountiful Chest of the week
+			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
 		})),
 	})),
 }));

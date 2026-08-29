@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(EVENT_COMPLETION, {
 				i(279345, {	-- Venom-Drenched Sack
 					["providers"] = {
+						{ "n", 263014 },	-- Congealed Malice
 						{ "n", 263015 },	-- Khu'tulak <Blade of Nek'zali>
 						{ "n", 263016 },	-- Susarikk <Spawn of the First Clutch>
 					},
