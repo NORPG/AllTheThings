@@ -799,6 +799,24 @@ local RawFilters
 local function SetRawFilters()
 	RawFilters = RawSettings.Filters
 end
+settings.SetProfileFilters = function()
+	local profileFilters = settings:Get("Profile:FiltersTable")
+	if (settings:Get("Profile:DefaultFilters") and app.MODE_ACCOUNT) or app.MODE_DEBUG then
+		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+			settings:SetFilter(filterID, true)
+		end
+	elseif settings:Get("Profile:DefaultFilters") then
+		settings:ResetFilters()	-- Class Defaults
+	elseif profileFilters and next(profileFilters) ~= nil then
+		for filterID, setting in pairs(profileFilters) do	-- 113 = Bags, highest filterID in our Settings
+			settings:SetFilter(filterID, setting)
+		end
+	else
+		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+			settings:SetFilter(filterID, true)
+		end
+	end
+end
 -- TODO: maybe later we can use OnSettingChanged to trigger UpdateMode when needed by the setting
 -- instead of having UpdateMode tacked into a thousand individual checkboxes and buttons
 -- app.AddEventHandler("OnSettingChanged", SetRawFilters);
@@ -1601,17 +1619,12 @@ settings.ToggleAccountMode = function(self)
 end
 settings.ToggleFilters = function(self)
 	self:ForceRefreshFromToggle()
-	if (settings:GetFilter(4) and not (app.ClassIndex == 5 or app.ClassIndex == 8 or app.ClassIndex == 9)) -- Cloth
-	or (settings:GetFilter(5) and not (app.ClassIndex == 4 or app.ClassIndex == 10 or app.ClassIndex == 11 or app.ClassIndex == 12)) -- Leather
-	or (settings:GetFilter(6) and not (app.ClassIndex == 3 or app.ClassIndex == 7 or app.ClassIndex == 13)) -- Mail
-	or (settings:GetFilter(7) and not (app.ClassIndex == 1 or app.ClassIndex == 2 or app.ClassIndex == 6)) then -- Plate
-		settings:ResetFilters()	-- Class Defaults
-		app.print(L.FILTERS_PAGE.." "..L.CLASS_DEFAULTS_BUTTON.."|R "..L.ENABLED..".")
+	if settings:Get("Profile:DefaultFilters") then
+		settings:Set("Profile:DefaultFilters", false)
+		app.print(L.FILTERS_DEFAULT .. " " .. L.FILTERS_PAGE .. " " .. L.DISABLED)
 	else
-		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-			settings:SetFilter(filterID, true)
-		end
-		app.print(L.FILTERS_PAGE.." "..L.ALL_BUTTON.."|R "..L.ENABLED..".")
+		settings:Set("Profile:DefaultFilters", true)
+		app.print(L.FILTERS_DEFAULT .. " " .. L.FILTERS_PAGE .. " " .. L.ENABLED)
 	end
 end
 settings.ActivateNextProfile = function(self)
