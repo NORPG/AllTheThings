@@ -4669,6 +4669,7 @@ i(270250, 5034);	-- Steady Croakfrog
 i(279483, 3526);	-- Three-Eyed Fish
 i(279387, 5130);	-- Ul'ava'took
 i(275020, 5070);	-- Venom Elemental
+i(276234, 5092);	-- Vibrant Venomfang
 i(275632, 5072);	-- Volatile Venomfang
 i(268644, 5011);	-- Zan
 i(280138, 5132);	-- Zesty
@@ -4687,4 +4688,3 @@ i(277270, 5114);	-- Kirin Tor Kitty
 i(277321, 5118);	-- Mewkahen
 i(278688, 5127);	-- Skipper
 i(279197, 5129);	-- Slitherfang
-i(276234, 5092);	-- Vibrant Venomfang

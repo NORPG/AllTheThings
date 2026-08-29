@@ -120,7 +120,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_1_0 },
 				--["sym"] = SYM.MIDNIGHT.THE_COILED_ISLE_ZONE_REWARDS,
 			}),
-			i(275899),	-- Venom-Soaked Satchel (Rewarded for completing the Curse Surge by killing the "boss" of the event)
 		}),
 	}),
 }));

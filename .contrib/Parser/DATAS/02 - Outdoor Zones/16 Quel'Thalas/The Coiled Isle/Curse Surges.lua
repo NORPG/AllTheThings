@@ -74,8 +74,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(276178),	-- Venom Lancer's Gauntlets
 					},
 				}),
-				n(REWARDS, {
+				n(EVENT_COMPLETION, {
 					i(273000),	-- Corrosive Soul
+					i(275899),	-- Venom-Soaked Satchel
+					i(277137, {	-- Wriggling Venom-Soaked Satchel
+						i(276234),	-- Vibrant Venomfang (PET!)
+					}),
 				}),
 			})),
 		}),

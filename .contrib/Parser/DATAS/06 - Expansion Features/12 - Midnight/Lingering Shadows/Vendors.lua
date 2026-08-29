@@ -9,6 +9,10 @@ local function sym_cachevoidtouched_invtype(...)
 	return { { "select", "itemID", 263928 },{"pop"},
 			{"extract","itemID"},{"invtype",...} }
 end
+local function sym_cachevoidtouched_invtype_s02(...)
+	return { { "select", "itemID", 281429 },{"pop"},
+			{"extract","itemID"},{"invtype",...} }
+end
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(LINGERING_SHADOWS, {
@@ -19,108 +23,325 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["description"] = "|cffFF0000Items purchased from this Vendor will block you|r from completing the neighboring Cosmetic Vendor in ATT Completionist Mode.\nThis is a |cff00CCFFBlizzard|r restriction.",
 					["coord"] = { 48.0, 49.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						-- Midnight Season 2, All Caches are Warbound from the start! Hurray!
-						-- Exo Note: Not sure about the symlinks so, I didn't add those. Remove the note once they are figured out.
 						i(281407, {	-- Cache of Void-Touched Armaments: Belts (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_WAIST"),
 						}),
 						i(281405, {	-- Cache of Void-Touched Armaments: Boots (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_FEET"),
 						}),
 						i(281409, {	-- Cache of Void-Touched Armaments: Bracers (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_WRIST"),
 						}),
 						i(281410, {	-- Cache of Void-Touched Armaments: Chest (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_BODY","INVTYPE_CHEST","INVTYPE_ROBE"),
 						}),
 						i(281411, {	-- Cache of Void-Touched Armaments: Cloak (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_CLOAK"),
 						}),
 						i(281408, {	-- Cache of Void-Touched Armaments: Gloves (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_HAND"),
 						}),
 						i(281413, {	-- Cache of Void-Touched Armaments: Head (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_HEAD"),
 						}),
 						i(281406, {	-- Cache of Void-Touched Armaments: Legs (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_LEGS"),
 						}),
 						i(281415, {	-- Cache of Void-Touched Armaments: Necklaces (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_NECK"),
 						}),
 						i(281416, {	-- Cache of Void-Touched Armaments: Rings (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_FINGER"),
 						}),
 						i(281412, {	-- Cache of Void-Touched Armaments: Shoulder (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_SHOULDER"),
 						}),
 						i(281414, {	-- Cache of Void-Touched Armaments: Weapons (Adventurer)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"),
 						}),
 						i(281429, {	-- Cache of Void-Touched Armaments (Veteran)
-							-- Exo Note: My best guess is that this one will serve as a base for the symlink, just like i263928 was for Season 1
 							["cost"] = { { "c", FIELD_ACCOLADE, 500 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["groups"] = {
+								n(ARMOR, {
+									clWithoutLock(DEATHKNIGHT, {
+										i(263734),	-- Void Rider's Breastplate
+										i(263742),	-- Void Rider's Cloak
+										i(263741),	-- Void Rider's Girdle
+										i(263736),	-- Void Rider's Gloves
+										i(263737),	-- Void Rider's Helm
+										i(263738),	-- Void Rider's Leggings
+										i(263739),	-- Void Rider's Pauldrons
+										i(263735),	-- Void Rider's Sabatons
+										i(263743),	-- Void Rider's Vambraces
+									}),
+									clWithoutLock(DEMONHUNTER, {
+										i(263752),	-- Voidwalker's Bracers
+										i(263751),	-- Voidwalker's Cloak
+										i(263750),	-- Voidwalker's Cord
+										i(263746),	-- Voidwalker's Gloves
+										i(263744),	-- Voidwalker's Harness
+										i(263748),	-- Voidwalker's Leggings
+										i(263745),	-- Voidwalker's Sandals
+										i(263749),	-- Voidwalker's Shoulderblades
+										i(263747),	-- Voidwalker's Skullcap
+									}),
+									clWithoutLock(DRUID, {
+										i(263759),	-- Voidrage Belt
+										i(263754),	-- Voidrage Boots
+										i(263761),	-- Voidrage Bracers
+										i(263762),	-- Voidrage Chestguard
+										i(263760),	-- Voidrage Cloak
+										i(263756),	-- Voidrage Cover
+										i(263755),	-- Voidrage Handguards
+										i(263757),	-- Voidrage Legguards
+										i(263758),	-- Voidrage Pauldrons
+										i(263753),	-- Voidrage Robe
+									}),
+									clWithoutLock(EVOKER, {
+										i(263763),	-- Void-Warder's Breastplate
+										i(263765),	-- Void-Warder's Claws
+										i(263770),	-- Void-Warder's Cloak
+										i(263766),	-- Void-Warder's Crown
+										i(263769),	-- Void-Warder's Girdle
+										i(263767),	-- Void-Warder's Legplates
+										i(263768),	-- Void-Warder's Pauldrons
+										i(263764),	-- Void-Warder's Talons
+										i(263771),	-- Void-Warder's Vambraces
+									}),
+									clWithoutLock(HUNTER, {
+										i(263779),	-- Voidstalker's Belt
+										i(263781),	-- Voidstalker's Bracers
+										i(263772),	-- Voidstalker's Breastplate
+										i(263780),	-- Voidstalker's Cloak
+										i(263774),	-- Voidstalker's Gauntlets
+										i(263773),	-- Voidstalker's Greaves
+										i(263775),	-- Voidstalker's Helm
+										i(263777),	-- Voidstalker's Legguards
+										i(263778),	-- Voidstalker's Spaulders
+									}),
+									clWithoutLock(MAGE, {
+										i(263788),	-- Voidwind Belt
+										i(263790),	-- Voidwind Bindings
+										i(263791),	-- Voidwind Blouse
+										i(263783),	-- Voidwind Boots
+										i(263789),	-- Voidwind Cloak
+										i(263785),	-- Voidwind Crown
+										i(263784),	-- Voidwind Gloves
+										i(263787),	-- Voidwind Mantle
+										i(263786),	-- Voidwind Pants
+										i(263782),	-- Voidwind Robes
+									}),
+									clWithoutLock(MONK, {
+										i(263800),	-- Bindings of the Void Acolyte
+										i(263799),	-- Cloak of the Void Acolyte
+										i(263798),	-- Cord of the Void Acolyte
+										i(263794),	-- Grips of the Void Acolyte
+										i(263795),	-- Helm of the Void Acolyte
+										i(263796),	-- Pants of the Void Acolyte
+										i(263797),	-- Spaulders of the Void Acolyte
+										i(263793),	-- Talons of the Void Acolyte
+										i(263792),	-- Vest of the Void Acolyte
+									}),
+									clWithoutLock(PALADIN, {
+										i(263807),	-- Void's Judgment Belt
+										i(263809),	-- Void's Judgment Bindings
+										i(263801),	-- Void's Judgment Breastplate
+										i(263808),	-- Void's Judgment Cloak
+										i(263804),	-- Void's Judgment Crown
+										i(263803),	-- Void's Judgment Gauntlets
+										i(263810),	-- Void's Judgment Greaves
+										i(263805),	-- Void's Judgment Legplates
+										i(263802),	-- Void's Judgment Sabatons
+										i(263806),	-- Void's Judgment Spaulders
+									}),
+									clWithoutLock(PRIEST, {
+										i(263817),	-- Belt of Voidcendence
+										i(263819),	-- Bindings of Voidcendence
+										i(263820),	-- Blouse of Voidcendence
+										i(263812),	-- Boots of Voidcendence
+										i(263818),	-- Cloak of Voidcendence
+										i(263814),	-- Halo of Voidcendence
+										i(263813),	-- Handguards of Voidcendence
+										i(263815),	-- Leggings of Voidcendence
+										i(263816),	-- Pauldrons of Voidcendence
+										i(263811),	-- Robes of Voidcendence
+									}),
+									clWithoutLock(ROGUE, {
+										i(263828),	-- Voidfang Belt
+										i(263823),	-- Voidfang Boots
+										i(263830),	-- Voidfang Bracers
+										i(263821),	-- Voidfang Chestpiece
+										i(263829),	-- Voidfang Cloak
+										i(263824),	-- Voidfang Gloves
+										i(263825),	-- Voidfang Hood
+										i(263826),	-- Voidfang Pants
+										i(263827),	-- Voidfang Spaulders
+									}),
+									clWithoutLock(SHAMAN, {
+										i(263837),	-- Belt of Void Storms
+										i(263839),	-- Bracers of Void Storms
+										i(263831),	-- Breastplate of Void Storms
+										i(263838),	-- Cloak of Void Storms
+										i(263836),	-- Epaulets of Void Storms
+										i(263833),	-- Gauntlets of Void Storms
+										i(263840),	-- Greaves of Void Storms
+										i(263834),	-- Helmet of Void Storms
+										i(263835),	-- Kilt of Void Storms
+										i(263832),	-- Sabatons of Void Storms
+									}),
+									clWithoutLock(WARLOCK, {
+										i(263847),	-- Void Nemesis' Belt
+										i(263850),	-- Void Nemesis' Blouse
+										i(263842),	-- Void Nemesis' Boots
+										i(263849),	-- Void Nemesis' Bracers
+										i(263848),	-- Void Nemesis' Cloak
+										i(263843),	-- Void Nemesis' Gloves
+										i(263845),	-- Void Nemesis' Leggings
+										i(263841),	-- Void Nemesis' Robes
+										i(263844),	-- Void Nemesis' Skullcap
+										i(263846),	-- Void Nemesis' Spaulders
+									}),
+									clWithoutLock(WARRIOR, {
+										i(263860),	-- Bracelets of Voidwrath
+										i(263851),	-- Breastplate of Voidwrath
+										i(263858),	-- Cloak of Voidwrath
+										i(263853),	-- Gauntlets of Voidwrath
+										i(263854),	-- Helm of Voidwrath
+										i(263855),	-- Legplates of Voidwrath
+										i(263856),	-- Pauldrons of Voidwrath
+										i(263852),	-- Sabatons of Voidwrath
+										i(263857),	-- Waistband of Voidwrath
+									}),
+									filter(FINGER_F, {
+										i(263888),	-- Void-Laced Band
+										i(263890),	-- Void-Laced Ring
+										i(263889),	-- Void-Laced Signet
+									}),
+									filter(NECK_F, {
+										i(263893),	-- Void-Laced Necklace
+										i(263891),	-- Void-Laced Pendant
+										i(263892),	-- Void-Laced Torc
+									}),
+								}),
+								n(WEAPONS, {
+									i(263905),	-- Void-Touched Apprentice's Gavel
+									i(263903),	-- Void-Touched Basher
+									i(263911),	-- Void-Touched Battle Baton
+									i(263910),	-- Void-Touched Beacon Staff
+									i(263906),	-- Void-Touched Bulwark
+									i(263920),	-- Void-Touched Dueling Blade
+									i(263898),	-- Void-Touched Fang
+									i(263917),	-- Void-Touched Flaredblade
+									i(263925),	-- Void-Touched Foci
+									i(263904),	-- Void-Touched Gavel
+									i(263927),	-- Void-Touched Glaiveblade
+									i(263923),	-- Void-Touched Greatblade
+									i(263924),	-- Void-Touched Greatbow
+									i(263926),	-- Void-Touched Greatwand
+									i(263918),	-- Void-Touched Guard's Blade
+									i(263900),	-- Void-Touched Gutter
+									i(263914),	-- Void-Touched Hammer
+									i(263922),	-- Void-Touched Mageblade
+									i(263912),	-- Void-Touched Magister's Baton
+									i(263919),	-- Void-Touched Magister's Sword
+									i(263908),	-- Void-Touched Poleaxe
+									i(263894),	-- Void-Touched Rifle
+									i(263901),	-- Void-Touched Sacrificial Knife
+									i(263913),	-- Void-Touched Smasher
+									i(263907),	-- Void-Touched Spade
+									i(263921),	-- Void-Touched Sunfury Blade
+									i(273873),	-- Void-Touched Sunfury Poleaxe
+									i(263909),	-- Void-Touched Sunfury Stave
+									i(263916),	-- Void-Touched Tome
+									i(263915),	-- Void-Touched Torch
+									i(263902),	-- Void-Touched Twinblade
+								}),
+							},
 						}),
 						i(281419, {	-- Cache of Void-Touched Armaments: Belts (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_WAIST"),
 						}),
 						i(281417, {	-- Cache of Void-Touched Armaments: Boots (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_FEET"),
 						}),
 						i(281421, {	-- Cache of Void-Touched Armaments: Bracers (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_WRIST"),
 						}),
 						i(281422, {	-- Cache of Void-Touched Armaments: Chest (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_BODY","INVTYPE_CHEST","INVTYPE_ROBE"),
 						}),
 						i(281423, {	-- Cache of Void-Touched Armaments: Cloak (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_CLOAK"),
 						}),
 						i(281420, {	-- Cache of Void-Touched Armaments: Gloves (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_HAND"),
 						}),
 						i(281425, {	-- Cache of Void-Touched Armaments: Head (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_HEAD"),
 						}),
 						i(281418, {	-- Cache of Void-Touched Armaments: Legs (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_LEGS"),
 						}),
 						i(281427, {	-- Cache of Void-Touched Armaments: Necklaces (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_NECK"),
 						}),
 						i(281428, {	-- Cache of Void-Touched Armaments: Rings (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_FINGER"),
 						}),
 						i(281424, {	-- Cache of Void-Touched Armaments: Shoulder (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_SHOULDER"),
 						}),
 						i(281426, {	-- Cache of Void-Touched Armaments: Weapons (Veteran)
 							["cost"] = { { "c", FIELD_ACCOLADE, 750 } },
 							["timeline"] = { ADDED_12_1_0 },
+							["sym"] = sym_cachevoidtouched_invtype_s02("INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"),
 						}),
 
 						-- Midnight Season 1 (Removed at the launch of Season 2)

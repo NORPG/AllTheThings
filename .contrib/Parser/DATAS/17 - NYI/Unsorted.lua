@@ -44,8 +44,6 @@ root(ROOTS.Unsorted, {
 			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
-			i(271436),	-- Slitherscale Girdle
-			i(271441),	-- Crushing Coiler Coif
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
@@ -120,7 +118,6 @@ root(ROOTS.Unsorted, {
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
-			i(276234),	-- Vibrant Venomfang
 			i(276407),	-- [PH] Rainbow Axe - 1h - Purple
 			i(276411),	-- [PH] Rainbow Axe - 2h - Purple
 			i(276415),	-- [PH] Rainbow Mace- 1h - Purple
@@ -162,7 +159,6 @@ root(ROOTS.Unsorted, {
 			i(276748),	-- Scroll of the Salty Souvenir: West
 			i(276749),	-- Scroll of the Salty Souvenir: South
 			i(276800),	-- [PH]Writhes Mount - Yellow
-			i(277137),	-- Wriggling Venom-Soaked Satchel
 			i(277157),	-- Barnacle-Encrusted Chest
 			i(277192),	-- Umbral Ashes
 			i(277261),	-- [PH] Pygmy Owl
