@@ -68,7 +68,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				["groups"] = {
 					n(262455, {	-- Azta'rec ?
 						["questID"] = 92888,
-						--["isDaily"] = true,
+						["isWeekly"] = true,
 						["groups"] = {
 							ach(63326, {	-- My Venomous Nemesis
 								i(276163),	-- Apophic Patagia (COSMETIC!)
@@ -78,6 +78,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					n(265500, {	-- Azta'rec ??
 						["questID"] = 97913,
+						["isWeekly"] = true,
 						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
 								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
