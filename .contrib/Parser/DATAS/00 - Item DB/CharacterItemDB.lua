@@ -1047,6 +1047,10 @@ iq(262742, 93805);					-- "Swift" Kit
 ------------------
 -- PATCH 12.1.0 --
 ------------------
+ihqt(278337, 97589);				-- Amber Pearl
+ihqt(278340, 97591);				-- Blighted Pearl
+ihqt(278335, 97587);				-- Cerulean Pearl
+ihqt(278339, 97590);				-- Cursebound Pearl
 ihqt(275986);						-- Delver's Cosmetic Surprise Bag
 ihqt(275978, 96975);				-- Delver's Starter Kit
 ihqt(274500, 96459);				-- Demystifyin': Alchemy
@@ -1068,6 +1072,8 @@ is(0, 1286828);						-- Path of Sacret Temple
 is(0, 1286831);						-- Path of the Slumbering Conqueror
 is(0, 1286812);						-- Path of Venomous Evolution
 is(0, 1286807);						-- Path of Worthy Aspirant
+ihqt(278336, 97588);				-- Sinful Pearl
+
 ------------
 -- UNUSED --
 ------------

@@ -152,6 +152,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["description"] = "Can be fished in open waters",
 								["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
 							}),
+							i(278339, {	-- Cursebound Pearl (CI!)
+								["description"] = "Can be fished from Abyssal Swirl pools created with the Eerie Bauble",
+								["provider"] = { "i", 278391 },	-- Eerie Bauble
+							}),
 							i(278001, {	-- Forgotten Amani Fishing Rod (QS!)
 								["description"] = "Can be fished in Torrential Gorgerswarm pools created by a Coiled Stargorger Lure.",
 								["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
@@ -285,6 +289,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								-- Rank 5: Bloodsworn Crew
+								i(278337, {	-- Amber Pearl (CI!)
+									["sourceAchievement"] = 63634,	-- Where Did You Get That?
+									["minReputation"] = { FACTION_CAPTAIN_TOKKA, 5 },
+									["cost"] = { { "c", COILED_FILAMENT, 50 } },
+								}),
 								i(274796, {	-- Envenomed Deathblade (COSMETIC!)
 									["minReputation"] = { FACTION_CAPTAIN_TOKKA, 5 },
 									["cost"] = { { "c", COILED_FILAMENT, 500 } },

@@ -203,9 +203,6 @@ root(ROOTS.Unsorted, {
 			i(278289),	-- Nebulous Voidcache: The Twin Fangs
 			i(278290),	-- Nebulous Voidcache: The Bargained Crown
 			i(278335),	-- Cerulean Pearl
-			i(278337),	-- Amber Pearl
-			i(278339),	-- Cursebound Pearl
-			i(278340),	-- Blighted Pearl
 			i(278576),	-- Crested Violet Leafmimic
 			i(278577),	-- Nightfall Assassin's Tunic
 			i(278578),	-- Nightfall Assassin's Mask

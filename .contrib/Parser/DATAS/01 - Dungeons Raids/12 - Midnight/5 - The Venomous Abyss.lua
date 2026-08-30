@@ -433,6 +433,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				BossOnly(ULATEK, {
 					i(279500),	-- "Rage of the Shackled" Mural (DECOR!)
+					i(278340),	-- Blighted Pearl (CI!)
 					i(279127, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Argent Trophy (DECOR!)
 				}),
 			}),
