@@ -1,4 +1,3 @@
-do
 -- App locals
 local _,app = ...;
 local L, contains, containsValue, GetRelativeValue = app.L, app.contains, app.containsValue, app.GetRelativeValue;
