@@ -27,6 +27,14 @@ app.AddEventHandler = function(eventName, handler, forceStart)
 	end
 	-- app.PrintDebug("Added Handler",handler,"@",#handlers,"in Event",eventName)
 end
+-- Wraps the provided raw handler in wrapper which then removes said handler from the event once it runs
+app.AddEventHandlerOnce = function(eventName, handler, forceStart)
+	local function wrapper(...)
+		handler(...)
+		app.RemoveEventHandler(wrapper)
+	end
+	app.AddEventHandler(eventName, wrapper, forceStart)
+end
 -- Runs immediately and wipes the set of Handlers assigned for a specific Event
 app.RemoveAllEventHandlers = function(eventName)
 	EventHandlers[eventName] = nil

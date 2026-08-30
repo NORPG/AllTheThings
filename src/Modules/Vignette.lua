@@ -293,9 +293,8 @@ end
 local function InitialVignetteScan()
 	CacheVignetteSettings()
 	DelayedCallback(Event_VIGNETTES_UPDATED, 0.1)
-	app.RemoveEventHandler(InitialVignetteScan)
 end
-app.AddEventHandler("OnRefreshCollectionsDone", InitialVignetteScan)
+app.AddEventHandlerOnce("OnRefreshCollectionsDone", InitialVignetteScan)
 app.AddEventHandler("Settings.OnSet", function(containerKey, key, value)
 	if containerKey ~= "Tooltips" then return end
 

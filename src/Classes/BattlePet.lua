@@ -184,10 +184,9 @@ local function SyncPetIDSpeciesIDHelper()
 		i = i + 1
 		petID, speciesID = C_PetJournal_GetPetInfoByIndex(i)
 	end
-	app.RemoveEventHandler(SyncPetIDSpeciesIDHelper)
 	-- app.PrintDebug("RCBP.SyncPetIDs.Done",i-1)
 end
-app.AddEventHandler("OnRefreshCollectionsDone", SyncPetIDSpeciesIDHelper)
+app.AddEventHandlerOnce("OnRefreshCollectionsDone", SyncPetIDSpeciesIDHelper)
 end
 -- at some point speciesID began to be included in the Event payload, huzzah!
 app.AddEventRegistration("NEW_PET_ADDED", function(petID, speciesID)
