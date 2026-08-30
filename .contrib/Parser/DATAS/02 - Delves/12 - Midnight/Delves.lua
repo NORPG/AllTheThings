@@ -482,7 +482,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{ "n", 254616 },	-- Nelthius Shadestone <Master Engraver>
 			},
 			["coord"] = { 52.7, 77.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-			["groups"] = { i(262966), },	-- Budget Friendly (CI!)
+			["groups"] = {
+				i(263575, {	-- Budget Friendly (CI!)
+					["timeline"] = { REMOVED_12_1_0 },	-- The cosmetic remains, but the item was removed and its HQT can no longer be completed
+				}),
+			},
 		}),
 	}),
 	n(RARES, {
