@@ -33,8 +33,9 @@ app.AddEventHandler("Settings.UpdateFilters", function()
 	end
 end)
 app.AddEventHandler("Settings.OnApplyProfile", function()
-	ProfileFilters = settings:Get("Profile:FiltersTable") or {}
-	settings:Set("Profile:FiltersTable", ProfileFilters)
+	ProfileFilters = settings:Get("Profile:Filters") or {}
+	settings:Set("Profile:Filters", ProfileFilters)
+	app.HandleEvent("Settings.UpdateFilters")
 end)
 
 -- Stuff to automatically generate the armor & weapon checkboxes
