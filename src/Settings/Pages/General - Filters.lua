@@ -19,23 +19,31 @@ headerWeaponsAndArmor.OnRefresh = function(self)
 	end
 end
 
-local function writeProfileFilters()
-	local profileFilters = {}
-	for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-		local setting = settings:GetFilter(filterID)
-		if app.EquipmentFilters[filterID] and setting ~= nil then
-			profileFilters[filterID] = setting
-		end
+local AllFilters = {}
+local ProfileFilters
+for i=1,113 do AllFilters[i] = true end
+app.DesignateImmediateEvent("Settings.UpdateFilters")
+app.AddEventHandler("Settings.UpdateFilters", function()
+	if settings:Get("DebugMode") then
+		settings:ResetFilters(AllFilters)
+	elseif settings:Get("AccountMode") and settings:Get("Profile:DefaultFilters") then
+		settings:ResetFilters(AllFilters)
+	else
+		settings:ResetFilters(ProfileFilters)
 	end
-	settings:Set("Profile:FiltersTable", profileFilters)
-end
+end)
+app.AddEventHandler("Settings.OnApplyProfile", function()
+	ProfileFilters = settings:Get("Profile:FiltersTable") or {}
+	settings:Set("Profile:FiltersTable", ProfileFilters)
+end)
 
 -- Stuff to automatically generate the armor & weapon checkboxes
 local last = headerWeaponsAndArmor
 local itemFilterNames = L.FILTER_ID_TYPES
 local ItemFilterOnClick = function(self)
-	settings:SetFilter(self.filterID, self:GetChecked())
-	writeProfileFilters()
+	local checked = self:GetChecked()
+	settings:SetFilter(self.filterID, checked)
+	ProfileFilters[self.filterID] = checked
 end
 local ItemFilterOnRefresh = function(self)
 	if settings:GetDefaultFilter(self.filterID) then
@@ -154,7 +162,9 @@ local buttonClassDefaults = child:CreateButton(
 { text = L.CLASS_DEFAULTS_BUTTON, tooltip = L.CLASS_DEFAULTS_BUTTON_TOOLTIP, },
 {
 	OnClick = function(self)
+		wipe(ProfileFilters)
 		settings:ResetFilters()
+		settings:UpdateMode(1)
 	end,
 })
 buttonClassDefaults:SetPoint("LEFT", headerWeaponsAndArmor, 0, 0)
@@ -173,6 +183,7 @@ local buttonAll = child:CreateButton(
 	OnClick = function(self)
 		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
 			settings:SetFilter(filterID, true)
+			ProfileFilters[filterID] = true
 		end
 		settings:UpdateMode(1)
 	end,
@@ -192,6 +203,7 @@ local buttonNone = child:CreateButton(
 	OnClick = function(self)
 		for filterID in pairs(app.EquipmentFilters) do
 			settings:SetFilter(filterID, false)
+			ProfileFilters[filterID] = false
 		end
 		settings:UpdateMode(1)
 	end,
@@ -207,13 +219,19 @@ end
 
 local checkboxDefaultFilters = child:CreateCheckBox(L.FILTERS_DEFAULT,
 function(self)
-	self:SetChecked(settings:Get("Profile:DefaultFilters"))
+	if app.MODE_DEBUG then
+		self:SetChecked(true)
+		self:Disable()
+	else
+		self:SetChecked(settings:Get("Profile:DefaultFilters"))
+		self:Enable()
+	end
 end,
 function(self)
-	if self:GetChecked() and not settings:Get("Profile:FiltersTable") then writeProfileFilters() end
-	settings:Set("Profile:DefaultFilters", self:GetChecked())
-	app.HandleEvent("OnSettingChanged", "Profile:DefaultFilters");
-	settings:SetProfileFilters()	-- This needs to refresh on account/debug mode change too but I can't get that to happen without it erroring >:
+	local checked = self:GetChecked()
+	settings:Set("Profile:DefaultFilters", checked)
+	app.HandleEvent("OnSettingChanged", "Profile:DefaultFilters", checked)
+	app.HandleEvent("Settings.UpdateFilters")
 	settings:UpdateMode(1)
 end)
 checkboxDefaultFilters:SetATTTooltip(L.FILTERS_DEFAULT_TOOLTIP)

@@ -552,6 +552,9 @@ settings.Initialize = function(self)
 	-- Remove obsolete Settings keys
 	settings:Set("ExpansionFilter:Enabled", nil)
 
+	-- Update Filters when initializing
+	app.HandleEvent("Settings.UpdateFilters")
+
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
 	-- app.PrintDebug("settings.Initialize:Done")
@@ -799,32 +802,18 @@ local RawFilters
 local function SetRawFilters()
 	RawFilters = RawSettings.Filters
 end
-settings.SetProfileFilters = function()
-	local profileFilters = settings:Get("Profile:FiltersTable")
-	if (settings:Get("Profile:DefaultFilters") and app.MODE_ACCOUNT) or app.MODE_DEBUG then
-		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-			settings:SetFilter(filterID, true)
-		end
-	elseif settings:Get("Profile:DefaultFilters") then
-		settings:ResetFilters()	-- Class Defaults
-	elseif profileFilters and next(profileFilters) ~= nil then
-		for filterID, setting in pairs(profileFilters) do	-- 113 = Bags, highest filterID in our Settings
-			settings:SetFilter(filterID, setting)
-		end
-	else
-		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-			settings:SetFilter(filterID, true)
-		end
-	end
-end
 -- TODO: maybe later we can use OnSettingChanged to trigger UpdateMode when needed by the setting
 -- instead of having UpdateMode tacked into a thousand individual checkboxes and buttons
 -- app.AddEventHandler("OnSettingChanged", SetRawFilters);
 -- app.AddEventHandler("OnSettingsNeedsRefresh", SetRawFilters);
-app.AddEventHandler("OnLoad", SetRawFilters)
-settings.ResetFilters = function(self)
+app.AddEventHandler("Settings.OnApplyProfile", SetRawFilters)
+settings.ResetFilters = function(self, expected)
 	wipe(RawFilters)
-	settings:UpdateMode(1)
+	if expected and type(expected) == "table" then
+		for k,v in next,expected do
+			RawFilters[k] = v
+		end
+	end
 end
 settings.GetFilter = function(self, filterID)
 	return RawFilters[filterID];
@@ -1603,6 +1592,7 @@ end
 
 settings.SetAccountMode = function(self, accountMode)
 	self:Set("AccountMode", accountMode);
+	app.HandleEvent("Settings.UpdateFilters")
 	self:UpdateMode(1);
 end
 settings.ToggleAccountMode = function(self)
@@ -1671,6 +1661,7 @@ settings.ToggleCompletionistMode = function(self)
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
+	app.HandleEvent("Settings.UpdateFilters")
 	if debugMode then
 		-- cache the current settings to re-apply after
 		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"))
