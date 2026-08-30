@@ -839,9 +839,6 @@ settings.SetFilter = function(self, filterID, value)
 	RawFilters[filterID] = value;
 	settings:UpdateMode(1);
 end
-settings.GetRawFilters = function(self)
-	return RawFilters;
-end
 settings.GetRawSettings = function(self, name)
 	return RawSettings[name];
 end
