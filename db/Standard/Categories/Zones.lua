@@ -20585,7 +20585,8 @@ fp(674,{coords={
 [249]={{22.2,64.8}}},crs={48273}})}),
 h(-43,{awp=50004,pb=1,g={
 n(66824,{coords={
-[249]={{56.6,41.8}}},pb=1,petBattleLvl=25,g={
+[249]={{56.6,41.8}},
+[1527]={{54.4,37.6}}},pb=1,petBattleLvl=25,g={
 q(31971,{isDaily=1,pb=1,sourceAchievements={7525},g={
 i(89125,{b=1,f=55,pb=1}),
 crit(23486,{achID=8348,awp=50300,id=5,pb=1})}}),
@@ -46964,24 +46965,24 @@ i(32601,{awp=20100,coords={
 h(-58,{
 n(23245,{awp=20100,coords={
 [105]={{54.4,10.8}}},description="The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",g={
-i(32759,{awp=20001,b=1,cost={{"i",32569,35}}}),
-i(32641,{awp=20001,b=1,cost={{"i",32569,160}}}),
-i(32640,{awp=20001,b=1,cost={{"i",32569,160}}}),
-i(32626,{awp=20001,b=1,c={3,7,13},cost={{"i",32572,4}},g={
+i(32759,{b=1,cost={{"i",32569,35}}}),
+i(32641,{b=1,cost={{"i",32569,160}}}),
+i(32640,{b=1,cost={{"i",32569,160}}}),
+i(32626,{b=1,c={3,7,13},cost={{"i",32572,4}},g={
 s(14479,31568,{b=1,f=6,loc=40,lvl=27})}}),
-i(32629,{awp=20001,b=1,c={5,8,9},cost={{"i",32572,4}},g={
+i(32629,{b=1,c={5,8,9},cost={{"i",32572,4}},g={
 s(14463,31552,{b=1,f=4,loc=40,lvl=27})}}),
-i(32624,{awp=20001,b=1,c={1,2,6},cost={{"i",32572,4}},g={
+i(32624,{b=1,c={1,2,6},cost={{"i",32572,4}},g={
 s(14487,31576,{b=1,f=7,loc=40,lvl=27})}}),
-i(32628,{awp=20001,b=1,c={4,10,11},cost={{"i",32572,4}},g={
+i(32628,{b=1,c={4,10,11},cost={{"i",32572,4}},g={
 s(14471,31560,{b=1,f=5,loc=40,lvl=27})}}),
-i(32627,{awp=20001,b=1,c={3,7,13},cost={{"i",32572,3}},g={
+i(32627,{b=1,c={3,7,13},cost={{"i",32572,3}},g={
 s(14486,31575,{b=1,f=6,loc=44,lvl=27})}}),
-i(32630,{awp=20001,b=1,c={5,8,9},cost={{"i",32572,3}},g={
+i(32630,{b=1,c={5,8,9},cost={{"i",32572,3}},g={
 s(14470,31559,{b=1,f=4,loc=44,lvl=27})}}),
-i(32625,{awp=20001,b=1,c={1,2,6},cost={{"i",32572,3}},g={
+i(32625,{b=1,c={1,2,6},cost={{"i",32572,3}},g={
 s(14494,31583,{b=1,f=7,loc=44,lvl=27})}}),
-i(32631,{awp=20001,b=1,c={4,10,11},cost={{"i",32572,3}},g={
+i(32631,{b=1,c={4,10,11},cost={{"i",32572,3}},g={
 s(14478,31567,{b=1,f=5,loc=44,lvl=27})}})}}),
 n(19499,{coords={
 [105]={{37.6,63.8}}},r=2,sym={{"select","itemID",30754,30749,30750,30752,30755,30751,11308,30753}},g={
@@ -46999,32 +47000,32 @@ r(28562,{isLimited=1,itemID=22911,requireSkill=171,skillID=2484}),
 r(28555,{isLimited=1,itemID=22907,requireSkill=171,skillID=2484})}}),
 n(23428,{awp=20100,coords={
 [105]={{28,58.6}}},g={
-i(33934,{awp=20001,b=1,f=55,lvl=23,minReputation={1038,0},spellID=28495}),
-i(33935,{awp=20001,b=1,f=55,lvl=23,minReputation={1038,0},spellID=28499}),
-i(32783,{awp=20001,b=1,f=55,lvl=27,minReputation={1038,9000},spellID=41304}),
-i(32784,{awp=20001,b=1,f=55,lvl=27,minReputation={1038,9000},spellID=41306}),
-s(15069,32653,{awp=20001,b=1,cost={{"i",32569,50},{"i",32572,1}},f=3,lvl=27,minReputation={1038,21000}}),
-s(15066,32650,{awp=20001,b=1,cost={{"i",32569,50},{"i",32572,1}},f=27,lvl=27,minReputation={1038,21000}}),
-i(32654,{awp=20001,b=1,cost={{"i",32569,50},{"i",32572,1}},f=53,lvl=27,minReputation={1038,21000},spellID=40724}),
-s(15068,32652,{awp=20001,b=1,cost={{"i",32569,50},{"i",32572,1}},f=8,lvl=27,minReputation={1038,21000}}),
-s(15067,32651,{awp=20001,b=1,cost={{"i",32569,100},{"i",32572,4}},f=1,lvl=27,minReputation={1038,42000}}),
-s(15063,32645,{awp=20001,b=1,cost={{"i",32569,100},{"i",32572,4}},f=33,lvl=27,minReputation={1038,42000}}),
-s(15131,32828,{awp=20001,b=1,cost={{"i",32569,10}},f=9,minReputation={1038,42000}}),
-s(15064,32647,{awp=20001,b=1,cost={{"i",32569,100},{"i",32572,4}},f=5,loc=43,lvl=27,minReputation={1038,42000}}),
-s(15065,32648,{awp=20001,b=1,cost={{"i",32569,100},{"i",32572,4}},f=7,loc=47,lvl=27,minReputation={1038,42000}})}}),
+i(33934,{b=1,f=55,lvl=23,minReputation={1038,0},spellID=28495}),
+i(33935,{b=1,f=55,lvl=23,minReputation={1038,0},spellID=28499}),
+i(32783,{b=1,f=55,lvl=27,minReputation={1038,9000},spellID=41304}),
+i(32784,{b=1,f=55,lvl=27,minReputation={1038,9000},spellID=41306}),
+s(15069,32653,{b=1,cost={{"i",32569,50},{"i",32572,1}},f=3,lvl=27,minReputation={1038,21000}}),
+s(15066,32650,{b=1,cost={{"i",32569,50},{"i",32572,1}},f=27,lvl=27,minReputation={1038,21000}}),
+i(32654,{b=1,cost={{"i",32569,50},{"i",32572,1}},f=53,lvl=27,minReputation={1038,21000},spellID=40724}),
+s(15068,32652,{b=1,cost={{"i",32569,50},{"i",32572,1}},f=8,lvl=27,minReputation={1038,21000}}),
+s(15067,32651,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=1,lvl=27,minReputation={1038,42000}}),
+s(15063,32645,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=33,lvl=27,minReputation={1038,42000}}),
+s(15131,32828,{b=1,cost={{"i",32569,10}},f=9,minReputation={1038,42000}}),
+s(15064,32647,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=5,loc=43,lvl=27,minReputation={1038,42000}}),
+s(15065,32648,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=7,loc=47,lvl=27,minReputation={1038,42000}})}}),
 n(22266,{awp=20100,coords={
 [105]={{27.8,58.2}}},minReputation={1038,0},g={
-i(32686,{awp=20001,f=55,lvl=26,spellID=40768}),
-i(32685,{awp=20001,f=55,lvl=27,spellID=35270}),
-i(29453,{awp=20001,f=55,lvl=27,spellID=35270}),
-i(27859,{awp=20001,f=55,lvl=10,spellID=27094})}}),
+i(32686,{f=55,lvl=26,spellID=40768}),
+i(32685,{f=55,lvl=27,spellID=35270}),
+i(29453,{f=55,lvl=27,spellID=35270}),
+i(27859,{f=55,lvl=10,spellID=27094})}}),
 n(23110,{awp=20100,coords={
 [105]={{27.9,57.6}}},minReputation={1038,0},g={
-i(32667,{awp=20001,f=55,lvl=26,spellID=11009}),
-i(32668,{awp=20001,f=55,lvl=27,spellID=27089})}}),
+i(32667,{f=55,lvl=26,spellID=11009}),
+i(32668,{f=55,lvl=27,spellID=27089})}}),
 n(22270,{awp=20100,coords={
 [105]={{27.8,58.5}}},minReputation={1038,0},g={
-i(32758,{awp=20001,spellID=41233})}}),
+i(32758,{spellID=41233})}}),
 n(19473,{coords={
 [105]={{53,59}}},r=1,g={
 s(13893,30758,{f=31,lvl=25}),
@@ -52211,19 +52212,19 @@ i(29394,{f=55,lvl=27,spellID=35270}),
 i(29454,{f=55,lvl=25,spellID=34291})}}),
 n(23367,{awp=20100,coords={
 [108]={{64.3,66.2}}},g={
-i(32722,{awp=20001,f=55,lvl=26,minReputation={1031,3000},spellID=41031}),
-i(32721,{awp=20001,b=1,f=55,lvl=23,minReputation={1031,9000},spellID=41030}),
-s(15022,32539,{awp=20001,b=1,f=3,lvl=27,minReputation={1031,21000},spellID=12438}),
-s(15021,32538,{awp=20001,b=1,f=3,lvl=27,minReputation={1031,21000},spellID=12438}),
-i(32771,{awp=20001,b=1,f=53,lvl=27,minReputation={1031,42000},spellID=41262}),
-mnt(39803,{awp=20001,b=1,itemID=32319,lvl=10,minReputation={1031,42000}}),
-mnt(39798,{awp=20001,b=1,itemID=32314,lvl=10,minReputation={1031,42000}}),
-p(186,{awp=20402,b=1,itemID=38628,minReputation={1031,42000},npcID=28470,spellID=51716}),
-mnt(39801,{awp=20001,b=1,itemID=32316,lvl=10,minReputation={1031,42000}}),
-mnt(39800,{awp=20001,b=1,itemID=32317,lvl=10,minReputation={1031,42000}}),
-mnt(39802,{awp=20001,b=1,itemID=32318,lvl=10,minReputation={1031,42000}}),
-i(32770,{awp=20001,b=1,f=53,lvl=27,minReputation={1031,42000},spellID=41260}),
-s(14975,32445,{awp=20001,b=1,f=9,lvl=27,minReputation={1031,42000}})}}),
+i(32722,{f=55,lvl=26,minReputation={1031,3000},spellID=41031}),
+i(32721,{b=1,f=55,lvl=23,minReputation={1031,9000},spellID=41030}),
+s(15022,32539,{b=1,f=3,lvl=27,minReputation={1031,21000},spellID=12438}),
+s(15021,32538,{b=1,f=3,lvl=27,minReputation={1031,21000},spellID=12438}),
+i(32771,{b=1,f=53,lvl=27,minReputation={1031,42000},spellID=41262}),
+mnt(39803,{b=1,itemID=32319,lvl=10,minReputation={1031,42000}}),
+mnt(39798,{b=1,itemID=32314,lvl=10,minReputation={1031,42000}}),
+p(186,{awp=20403,b=1,itemID=38628,minReputation={1031,42000},npcID=28470,spellID=51716}),
+mnt(39801,{b=1,itemID=32316,lvl=10,minReputation={1031,42000}}),
+mnt(39800,{b=1,itemID=32317,lvl=10,minReputation={1031,42000}}),
+mnt(39802,{b=1,itemID=32318,lvl=10,minReputation={1031,42000}}),
+i(32770,{b=1,f=53,lvl=27,minReputation={1031,42000},spellID=41260}),
+s(14975,32445,{b=1,f=9,lvl=27,minReputation={1031,42000}})}}),
 n(19296,{coords={
 [108]={{56.6,53.2}}},r=2,g={
 r(33295,{itemID=27699,requireSkill=185,skillID=2547}),
@@ -164013,10 +164014,10 @@ ach(40231,{
 crit(109695,{achID=61451,awp=110207,id=6})}),
 ach(42299,{awp=110207})}),
 h(-45,{
-q(81930,{lvl=70,r=2,g={
-i(227669,{spellID=460271})}}),
-q(78713,{lvl=70,qgs={221949},r=1,g={
-i(227669,{spellID=460271})}}),
+q(81930,{coords={
+[84]={{62.6,72.6}}},lvl=70,qgs={221967},qis={227669},r=2}),
+q(78713,{coords={
+[85]={{49.7,77.4}}},lvl=70,qgs={221949},qis={227669},r=1}),
 q(78714,{coords={
 [81]={{41.9,45}}},lvl=70,maps={2321},qgs={213620},sourceQuests={78713,81930},sqreq=1}),
 q(78715,{coords={
@@ -165272,8 +165273,9 @@ i(251691),
 i(251665)}})})}),
 h(-303,{pvp=1,g={
 h(-45,{pvp=1,g={
-q(93171,{lvl=90,providers={{"i",257194}},pvp=1,rwp=120100,u=2,g={
-i(256608,{b=1,pvp=1,u=2})}}),
+q(93171,{lvl=90,pvp=1,qss={257194},rwp=120100,u=2,g={
+i(256608,{b=1,u=2})}}),
+q(96801,{awp=120100,pvp=1,qss={275634},rwp=120200}),
 q(93899,{lvl=90,pvp=1}),
 q(93499,{coords={
 [2393]={{36.3,81.1}}},isWeekly=1,lvl=90,pvp=1,qgs={254971}}),
@@ -169313,8 +169315,7 @@ p(5031,{coords={
 [2509]={{38.1,30.7}}},crs={262247},itemID=270254,npcID=262247,spellID=1287592,g={
 crit(113421,{achID=62492,id=7})}})}),
 h(-29,{
-cu(3448),
-i(279345,{f=55,providers={{"n",263015},{"n",263016}},g={
+i(279345,{f=55,providers={{"n",263014},{"n",263015},{"n",263016}},g={
 h(-88,{
 h(-89,{
 s(311029,279217,{f=3}),
@@ -169672,7 +169673,7 @@ ah(2773,{icon=2065576,lore="Captain Tokka's ship was devoured by the Great White
 faction(2773),
 h(-12,{
 ach(63629,{
-i(278336,{f=55,questID=97588,spellID=1304663}),
+i(278336,{questID=97588,spellID=1304663,type="ihqt"}),
 crit(116447,{achID=63629,id=1,questID=88623}),
 crit(116448,{achID=63629,id=2,questID=88624}),
 crit(116449,{achID=63629,id=3,questID=88625}),
@@ -169775,9 +169776,10 @@ s(308988,274803,{f=22}),
 s(308993,274808,{f=26})}}),
 flt(104,{
 i(279384,{description="Can be fished in open waters",sourceQuests={98343}}),
+i(278339,{description="Can be fished from Abyssal Swirl pools created with the Eerie Bauble",providers={{"i",278391}},questID=97590,spellID=1304667,type="ihqt"}),
 i(278001,{cost={{"i",241151,1}},description="Can be fished in Torrential Gorgerswarm pools created by a Coiled Stargorger Lure.",sourceQuests={96111}}),
 i(277989,{description="Can be fished from Bubbling Beryl pools.",sourceQuests={96113}}),
-i(277998,{description="Can be fished from Willow Sea pools.",sourceQuests={96113}}),
+i(277998,{description="Can be fished from Willow Sea and Bubbling Beryl pools.",sourceQuests={96113}}),
 i(277997,{description="Can be fished from Abyssal Swirl pools created with the Eerie Bauble",providers={{"i",278391}},sourceQuests={97565}}),
 i(277999,{description="Can be fished in open waters",sourceQuests={98343}}),
 i(278000,{description="Can be fished in venomous waters surrounding the Temple.",sourceQuests={96112}}),
@@ -169809,6 +169811,7 @@ r(1295777,{cost={{"c",3316,1500}},itemID=275301,minReputation={2773,4},requireSk
 r(1295922,{cost={{"c",3316,1500}},itemID=275012,minReputation={2773,4},requireSkill=356,skillID=2911}),
 de(26196,{cost={{"c",3316,500}},itemID=277929,minReputation={2773,4},spellID=1302907}),
 p(5070,{cost=1000000,itemID=275020,minReputation={2773,4},npcID=265786,spellID=1295938}),
+i(278337,{cost={{"c",3546,50}},minReputation={2773,5},questID=97589,sourceAchievements={63634},spellID=1304665,type="ihqt"}),
 s(308966,274796,{cost={{"c",3546,500}},f=26,minReputation={2773,5}}),
 s(308999,274814,{cost={{"c",3546,1000}},f=29,minReputation={2773,5}}),
 s(308987,274802,{cost={{"c",3546,500}},f=23,minReputation={2773,5}}),
@@ -169839,7 +169842,7 @@ s(309700,276533,{f=5,loc=43,minReputation={2772,9}})}}),
 q(96267,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},qis={274416},g={
 o(652477,{coords={
-[2638]={{78.4,72.9}}},cost={{"i",274416,1}},minReputation={2772,10},questID=96436,g={
+[2638]={{78.4,72.9}}},cost={{"i",274416,1}},minReputation={2772,10},g={
 i(273303,{minReputation={2772,10}})}}),
 o(651045,{minReputation={2772,10},type="AsGenericObjectContainer",g={
 i(273303,{minReputation={2772,10}}),
@@ -169857,6 +169860,10 @@ q(96271,{coords={
 q(96305,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96271},g={
 mnt(1292668,{itemID=273838,minReputation={2772,10}})}}),
+q(96360,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
+q(96361,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(97672,{coords={
 [2512]={{58.8,45}}},minReputation={2772,12},qgs={268228}})}),
 h(-58,{
@@ -169992,8 +169999,11 @@ n(255927,{coords={
 s(309595,276167,{f=29}),
 s(309602,276178,{f=5,loc=44}),
 crit(115371,{achID=63390,id=4})}}),
-h(-47,{
-i(273000)})}})}),
+h(-29,{
+i(273000),
+i(275899,{f=55}),
+i(277137,{f=55,g={
+p(5092,{itemID=276234,npcID=267689,spellID=1299089})}})})}})}),
 h(-30,{
 exp(16793,{
 crit(116554,{achID=63640,id=1})}),
@@ -170235,19 +170245,20 @@ q(96110,{coords={
 q(98343,{coords={
 [2512]={{57.2,48.6}}},qgs={258755},sourceQuests={96110}}),
 q(98414,{coords={
-[2512]={{51.6,49.8}}},qgs={257598},sourceQuests={98343}}),
+[2512]={{51.6,49.8}}},isBreadcrumb=1,nextQuests={96111},qgs={257598},sourceQuests={98343}}),
 q(96111,{coords={
-[2512]={{57.2,48.6}}},qgs={258755},qis={274083},sourceQuests={98414},g={
+[2512]={{57.2,48.6}}},qgs={258755},qis={274083},sourceQuests={98343,98414},g={
 o(649481,{
 i(274033)})}}),
 q(98415,{coords={
-[2512]={{51.6,49.8}}},isBreadcrumb=1,minReputation={2773,3},nextQuests={96112},qgs={257598}}),
+[2512]={{51.6,49.8}}},isBreadcrumb=1,minReputation={2773,3},nextQuests={96112},qgs={257598},sourceQuests={96111}}),
 q(96112,{coords={
 [2512]={{57.2,48.6}}},minReputation={2773,3},qgs={258755},qis={274089,274090,274091,274103},sourceQuests={96111,98415}}),
+q(98416,{coords={
+[2512]={{51.6,49.8}}},isBreadcrumb=1,minReputation={2773,4},nextQuests={96113},qgs={257598},sourceQuests={96112}}),
 q(96113,{coords={
-[2512]={{57.2,48.6}}},minReputation={2773,4},qgs={258755},qis={274281,274282},sourceQuests={96112},g={
-crit(116544,{achID=63641,id=2})}}),
-q(98416,{minReputation={2773,4}})}}),
+[2512]={{57.2,48.6}}},minReputation={2773,4},qgs={258755},qis={274281,274282},sourceQuests={96112,98416},g={
+crit(116544,{achID=63641,id=2})}})}}),
 ah(63641.03,{type="crit",g={
 q(96467,{coords={
 [2512]={{57.9,46.7}}},isBreadcrumb=1,nextQuests={96469},qgs={265173},sourceQuests={93024}}),
@@ -170852,12 +170863,12 @@ q(95451,{coords={
 h(-63,{
 flt(56,{
 i(274781),
-i(275280),
+i(274777)}),
 i(268953,{coords={
 [2512]={{53,44.2},{53.8,42.3},{53.8,42.7},{53.9,43.9},{54,40.7}}},crs={260724}}),
 i(268951,{coords={
 [2512]={{53,44.2},{53.8,42.3},{53.8,42.7},{53.9,43.9},{54,40.7}}},crs={260724}}),
-i(278070)})}),
+i(278070)}),
 h(-64,{
 flt(56,{
 o(656135,{description="Can be found in waters, and around coastal areas of The Coiled Isle.",g={
@@ -170947,8 +170958,7 @@ s(309565,276048,{f=20}),
 s(309578,276061,{f=20})}),
 i(271424,{coords={
 [2512]={{61.2,14},{63.6,13.2},{65.4,5.6},{67.2,5}}},crs={263081},spellID=1289036}),
-i(282183,{f=55}),
-i(275899,{f=55})})}}),
+i(282183,{f=55})})}}),
 m(2405,{awp=120001,icon=5927657,lore="It is a world shaped by the Void where predation reigns supreme, and serves as Xal'atath's launching point for her attack on the Sunwell.",maps={2444,2526,2527},lvl=88,g={
 h(-12,{
 ach(41806,{

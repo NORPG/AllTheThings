@@ -2567,12 +2567,12 @@ mnt(1268924,{cost={{"c",3316,10}},itemID=262500,lvl=10})})}})}})}}),
 h(-675,{awp=120100,rwp=120200,g={
 m(2634,{coords={
 [2512]={{51.2,30.3}}},icon=7876113,g={
-n(262455,{questID=92888,g={
+n(262455,{isWeekly=1,questID=92888,g={
 ach(63326,{
 s(309591,276163,{f=3}),
 crit(115861,{achID=61906,id=4})}),
 p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687})}}),
-n(265500,{questID=97913,g={
+n(265500,{isWeekly=1,questID=97913,g={
 ach(63334,{description="Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",rwp=120100,u=2,g={
 title(776,{u=2})}}),
 ach(63333,{
@@ -2651,6 +2651,7 @@ s(307888,272256,{f=7,loc=47}),
 s(307894,272262,{f=7,loc=43})}}),
 flt(53,{providers={{"o",581922},{"o",584503},{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584514},{"o",584515},{"o",584517},{"o",584518},{"o",584519},{"o",618495},{"o",623258},{"o",623259}},g={
 i(274494,{f=53,spellID=1294323}),
+i(251789,{b=1,f=53,lvl=78,spellID=1259988}),
 i(251790,{b=1,f=53,lvl=78,spellID=1253118}),
 i(274493,{f=53,spellID=1294329}),
 i(251786,{b=1,f=53,lvl=78,spellID=1253114}),
@@ -2952,7 +2953,14 @@ h(-45,{awp=120001,g={
 q(93784,{isWeekly=1,lvl=80,providers={{"i",262586}}}),
 q(93453,{coords={
 [2393]={{52.7,77.6}}},lvl=78,providers={{"i",258738},{"n",254616}},g={
-cq(93866,{b=1,itemID=262966,spellID=1269622})}})}}),
+en(263575,{questID=93960,rwp=120100,spellID=1270669,sym={{"select","sourceID",300833,300829}},tmogSetID=5548,u=2,g={
+s(300835,249652,{b=1,f=6,loc=43,lvl={78}}),
+s(300834,249651,{b=1,f=6,loc=45,lvl={78}}),
+s(300830,249647,{b=1,f=6,loc=44,lvl={78}}),
+s(300831,249648,{b=1,f=6,loc=40,lvl={78}}),
+s(300828,249645,{b=1,f=6,loc=42,lvl={78}}),
+s(300853,249625,{b=1,f=3,lvl={78}}),
+s(300832,249649,{b=1,f=6,loc=46,lvl={78}})}})}})}}),
 h(-55,{awp=120001,maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},g={
 o(609862,{awp=120100,coords={
 [2393]={{52.6,77.3}}},lore="Died in Lordaeron or Undercity.",maps={18},g={
