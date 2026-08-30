@@ -24,10 +24,10 @@ local ProfileFilters
 for i=1,113 do AllFilters[i] = true end
 app.DesignateImmediateEvent("Settings.UpdateFilters")
 app.AddEventHandler("Settings.UpdateFilters", function()
-	if settings:Get("DebugMode") then
+	if settings:Get("DebugMode") or (settings:Get("AccountMode") and settings:Get("Profile:DefaultFilters")) then
 		settings:ResetFilters(AllFilters)
-	elseif settings:Get("AccountMode") and settings:Get("Profile:DefaultFilters") then
-		settings:ResetFilters(AllFilters)
+	elseif settings:Get("Profile:DefaultFilters") then
+		settings:ResetFilters()	-- Class defaults
 	else
 		settings:ResetFilters(ProfileFilters)
 	end
