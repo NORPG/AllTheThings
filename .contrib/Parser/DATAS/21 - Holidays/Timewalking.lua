@@ -112,6 +112,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			})),
 		}),
 		n(COMMON_BOSS_DROPS, {
+			currency(TIMEWARPED_BADGE),
 			i(133543, {	-- Infinite Timereaver (MOUNT!)
 				["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
 			}),
