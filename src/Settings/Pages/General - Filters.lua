@@ -43,11 +43,11 @@ local ItemFilterOnRefresh = function(self)
 	else
 		self.Text:SetTextColor(1, 1, 1);
 	end
+	self:SetChecked(settings:GetFilter(self.filterID))
 	if app.MODE_DEBUG or settings:Get("Profile:DefaultFilters") then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
-		self:SetChecked(settings:GetFilter(self.filterID))
 		self:Enable()
 		self:SetAlpha(1)
 	end
