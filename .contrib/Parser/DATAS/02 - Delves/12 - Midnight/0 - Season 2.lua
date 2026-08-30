@@ -292,7 +292,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				q(97616, {	-- Corrosive Gifts: Corrosive Power
 					["provider"] = { "i", 277506 },	-- Codex of the Soul Coilers (QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
-					["groups"] = { i(273000) },	-- Corrosive Soul
+				--	While the reward is correct, its a 1time quest reward and you need like 500+ of them if you all trade them in for corrosive coins. ~Gold Aug 2026	
+				--	["groups"] = { i(273000) },	-- Corrosive Soul
 				}),
 				q(97910, {	-- Cracked Keystone
 					["provider"] = { "i", 279012 },	-- Cracked Keystone (QS!)
