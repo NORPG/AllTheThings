@@ -197,6 +197,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			filter(REAGENTS, {
 				i(251283),	-- Tormented Tantalum
 			}),
+			i(273000, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corrosive Soul
 			i(269006),	-- Preyseeker's Gleaming Coin Pouch
 			i(269007),	-- Preyseeker's Glittering Coin Pouch
 		}),
@@ -460,7 +461,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		}),
 		n(REWARDS, {
 			currency(3392),	-- Remnant of Anguish
-			i(273000, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corrosive Soul
 		}),
 		n(VENDORS, {
 			n(258181, {	-- Construct Ali'a <Decor Specialist>
