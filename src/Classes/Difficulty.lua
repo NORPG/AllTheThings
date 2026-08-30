@@ -369,8 +369,7 @@ if app.IsClassic then
 end
 --[[
 app.AddEventHandler("OnCurrentDifficultiesChanged", function(diff)
-	print("OnCurrentDifficultiesChanged", diff);
-end);
-]]--
-GetCurrentDifficulties();
-end
+	app.PrintDebug("OnCurrentDifficultiesChanged", app.StringifyTable(diff))
+end)
+--]]
+app.AddEventHandlerOnce("OnStartup", GetCurrentDifficulties)
