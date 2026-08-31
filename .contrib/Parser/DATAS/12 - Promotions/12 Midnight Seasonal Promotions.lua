@@ -73,6 +73,26 @@ LUNARNEWYEAR = createHeader({
 		mx = "La Aventura del Año Nuevo Lunar es un evento promocional exclusivo para China de World of Warcraft, que se llevó a cabo del 5 de febrero al 13 de marzo de 2026. El evento principal funcionó de manera similar al evento Tesoros de Azeroth.",
 	},
 });
+CRIMSONTIDE_TREASURETROVE = createHeader({
+	readable = "Crimson Tide Treasure Trove",
+	icon = 7360957,
+	text = {
+		en = "Crimson Tide Treasure Trove",
+		-- TODO: de = "",
+	--	es = "Tesoro Escondido de las Tierras Azures",
+	--	mx = "Tesoro escondido del Trecho Azur",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+	description = {
+		en = "Crimson Tide Treasure is a China-exclusive promotional campaign for World of Warcraft, available through 23 April to 23 May 2026, where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards.",
+	},
+});
 AZURESPAN_TREASURETROVE = createHeader({
 	readable = "Azure Span Treasure Trove",
 	icon = 7360957,
@@ -90,7 +110,27 @@ AZURESPAN_TREASURETROVE = createHeader({
 		-- TODO: tw = "",
 	},
 	description = {
-		en = "Azure Span Treasure Trove is a China-exclusive promotional campaign for World of Warcraft, available through 14 August to 11 September 2026 (as part of the 21st Anniversary celebration), where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards",
+		en = "Azure Span Treasure Trove is a China-exclusive promotional campaign for World of Warcraft, available through 14 August to 11 September 2026 (as part of the 21st Anniversary celebration), where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards.",
+	},
+});
+LUCKY_BAMBOO_TILES = createHeader({
+	readable = "Lucky Bamboo Tiles",
+	icon = 7360957,
+	text = {
+		en = "Lucky Bamboo Tiles",
+		-- TODO: de = "",
+	--	es = "Tesoro Escondido de las Tierras Azures",
+	--	mx = "Tesoro escondido del Trecho Azur",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+	description = {
+		en = "Lucky Bamboo Tiles is a China-exclusive promotional campaign for World of Warcraft, available through 18 June to 8 July 2026, where players use 'Fortune Points' to flip tiles which provide rewards.",
 	},
 });
 TOP_TIER_CNONLY = createHeader({
@@ -275,6 +315,85 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "added 12.0.1.66838", "removed 12.0.5.67451" },
 				["u"] = REAL_MONEY,
 			}),
+			cnONLY(n(CRIMSONTIDE_TREASURETROVE, sharedDataSelf({
+				["timeline"] = { ADDED_12_0_1, REMOVED_12_0_7 }, -- April 23 - May 23 2026 window
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					-- ===== RETAIL — Special Rewards =====
+					i(269659), -- The Sire's Palanquin (MOUNT!)
+					i(262344), -- Scarlet Lady (MOUNT!)
+
+					-- ===== RETAIL — Regular Rewards =====
+					i(262661), -- Ghastropod (MOUNT!)
+					iensemble(270222), -- Ensemble: Sire's Ornate Attire (COSMETIC!)
+					i(262881), -- Lil' Staropod (PET!)
+					i(272355), -- Orchestrion of Echoing Atonement (DECOR!)
+					i(272356), -- Throne of Subjugated Souls (DECOR!)
+					i(273640), -- Condensed Anima Orb (DECOR!)
+					i(274427, { -- Sha Loot Box (CONSUMABLE!)
+						["description"] = "1.25% chance for any of the following:",
+						["groups"] = {
+							i(269640),	-- Sha-Warped Owl
+							i(269012),	-- Sha-Warped Riding Wolf
+							i(273021),	-- Sha-Warped Hippogryph Hatchling
+							i(54860),	-- X-53 Touring Rocket
+						},
+					}),
+					i(271631, { -- Light Guardian's Reward (ITEM!)
+						["description"] = "Contains a Quantum Token & if you are lucky the Quantum Courser.",
+					}),	
+					--i(ITEMID_TODO), -- Treasure Shard (CURRENCY!)
+					n(TOP_TIER_CNONLY, {
+						["groups"] = {
+							i(269659), -- The Sire's Palanquin (MOUNT!)
+							i(262344), -- Scarlet Lady (MOUNT!)
+							iensemble(270222), -- Ensemble: Sire's Ornate Attire (COSMETIC!)
+							i(246732), -- Void-Forged Overseer (MOUNT!)
+							i(210008), -- Smoldering Rune of Binding (MOUNT!)
+						},
+					}),
+					n(FIRST_TIER_CNONLY, {
+						["groups"] = {
+							i(228751), -- Gigantic Grrloc (MOUNT!)
+							i(225250), -- Startouched Furline (MOUNT!)
+							i(243194), -- Grandiose Grrloc (MOUNT!)
+							i(203727), -- Gleaming Moonbeast's Reins (MOUNT!)
+							i(223471), -- Kaldorei War Wolf (MOUNT!)
+							i(223459), -- Blackrock Warsaber (MOUNT!)
+							i(262661), -- Ghastropod (MOUNT!)
+						},
+					}),
+					n(SECOND_TIER_CNONLY, {
+						["groups"] = {
+							i(229368), -- Gill'el (PET!)
+							i(71726), -- Murky's Little Soulstone (PET!)
+							i(258482), -- Ysergle (PET!)
+							i(206268), -- Ethereal Transmogrifier (TOY!)
+							i(49704), -- Carved Ogre Idol (TOY!)
+							i(79769), -- Demon Hunter's Aspect (TOY!)
+							i(262881), -- Lil' Staropod (PET!)
+							i(272355), -- Orchestrion of Echoing Atonement (DECOR!)
+							i(272356), -- Throne of Subjugated Souls (DECOR!)
+						},
+					}),
+					n(THIRD_TIER_CNONLY, {
+						["groups"] = {
+							i(273640), -- Condensed Anima Orb (DECOR!)
+							i(213556), -- Hoplet (PET!)
+							i(212722), -- Buggsy (PET!)
+							i(223145), -- Marrlok (PET!)
+							i(193429), -- Time-Lost Salamanther (PET!)
+							i(223474), -- Worgli the Apprehensive (PET!)
+							i(211432), -- Teele (PET!)
+							i(223339), -- Trishi (PET!)
+							i(206174), -- Blub (PET!)
+							i(220692), -- X-treme Water Blaster Display (DECOR!)
+							i(33223), -- Fishing Chair (DECOR!)
+						},
+					}),
+				},
+			})));
 			i(265394, {	-- Cuddly Pearl Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_5, "removed 12.0.5.67602" },
@@ -287,6 +406,30 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between June 16th, 10:00 a.m. & July 14th, 10:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_7, "removed 12.0.7.68453" },	-- Removed July 15th
 			}),
+			cnONLY(n(LUCKY_BAMBOO_TILES, sharedDataSelf({
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					-- ===== RETAIL — Base Pool =====
+					i(272920), -- Spring Panda (MOUNT!)
+					i(275999), -- Flowering Mantle (COSMETIC!)
+					i(275818), -- Pinky (PET!)
+				--	Trader's Tender x200 (CURRENCY!)
+					i(269604), -- Auspicious Picnic Basket (DECOR!)
+					i(269605), -- Auspicious Meal Case (DECOR!)
+					i(272353), -- Auspicious Verdant Basin (DECOR!)
+					i(274427, { -- Sha Loot Box (CONSUMABLE!)
+						["description"] = "1.25% chance for any of the following:",
+						["groups"] = {
+							i(269640),	-- Sha-Warped Owl
+							i(269012),	-- Sha-Warped Riding Wolf
+							i(273021),	-- Sha-Warped Hippogryph Hatchling
+							i(54860),	-- X-53 Touring Rocket
+						},
+					}),			
+				},
+			})));
 			i(273655, {	-- Sunflare Driftmoth (MOUNT!)
 			["timeline"] = { ADDED_12_0_7 },
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",
