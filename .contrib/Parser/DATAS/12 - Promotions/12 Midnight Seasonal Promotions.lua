@@ -90,9 +90,35 @@ AZURESPAN_TREASURETROVE = createHeader({
 		-- TODO: tw = "",
 	},
 	description = {
-		en = "Azure Span Treasure Trove is a China-exclusive promotional event for World of Warcraft, taking place from Aug 14 - Sep 11 2026.",
-		es = "Tesoro Escondido de las Tierras Azures es un evento promocional exclusivo para China de World of Warcraft, que tendrá lugar del 14 de agosto al 11 de septiembre de 2026.",
-		mx = "Tesoro escondido del Trecho Azur es un evento promocional exclusivo para China de World of Warcraft, que tendrá lugar del 14 de agosto al 11 de septiembre de 2026.",
+		en = "Azure Span Treasure Trove is a China-exclusive promotional campaign for World of Warcraft, available through 14 August to 11 September 2026 (as part of the 21st Anniversary celebration), where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards",
+	},
+});
+TOP_TIER_CNONLY = createHeader({
+	readable = "Top-Tier",
+	icon = 4672182,
+	text = {
+		en = "Top-Tier",
+	},
+});
+FIRST_TIER_CNONLY = createHeader({
+	readable = "First-Tier",
+	icon = 133785,
+	text = {
+		en = "First-Tier",
+	},
+});
+SECOND_TIER_CNONLY = createHeader({
+	readable = "Second-Tier",
+	icon = 237282,
+	text = {
+		en = "Second-Tier",
+	},
+});
+THIRD_TIER_CNONLY = createHeader({
+	readable = "Third-Tier",
+	icon = 237283,
+	text = {
+		en = "Third-Tier",
 	},
 });
 
@@ -275,71 +301,88 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
 			}),
-			n(AZURESPAN_TREASURETROVE, sharedDataSelf({
+			cnONLY(n(AZURESPAN_TREASURETROVE, sharedDataSelf({
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
 				["u"] = REAL_MONEY,
 			}, {
 				["groups"] = {
-					--[[
-					Azure Span Treasure Trove (CN-exclusive promo, Aug 14 - Sep 11 2026)
-					=====================================================================
-					Chinese-region-only gacha/mystery-box promotion by Thunderfire Games/NetEase,
-					Tuskarr/Iskaara themed.
-					https://www.wowhead.com/news/azure-span-treasure-trove-chinese-exclusive-tuskaar-themed-promotion-382411
-					https://www.wowhead.com/news/chinese-exclusive-azure-span-treasure-trove-models-datamined-382436
-
-					-- Frostshell Walker (Midnight and Classic mount)
-					-- Ground-only, 100% increased swim speed. Retail version carries a Tuskarr NPC
-					-- granting 10x Tide-Oath Augment Rune per day. Classic version's NPC instead
-					-- teleports the owner to a capital city every 30 min (independent CD, works
-					-- like a second Hearthstone) -- Shrine of Seven Stars/Two Moons on MoP Classic,
-					-- Dalaran on Titan Reforged Time.
-					i(ITEMID_TODO, { -- Frostshell Walker
+					-- ===== RETAIL — Base Pool =====
+					i(274037), -- Tuskarr Hermit Crab (MOUNT!)
+					i(280457), -- Shark Attack Pack (COSMETIC!)
+					i(276625), -- Puffin Pack (COSMETIC!)
+					i(279006), -- Fisher's Pack (COSMETIC!)
+					i(252194), -- Fishmonger May (PET!)
+					i(274925), -- Delta (PET!)
+					i(274730), -- Tuskarr Ice Fishing Tent (TOY!)
+					i(280523), -- Tuskarr Fire Pit (DECOR!)
+					i(280525), -- Tuskarr Hanging Grill (DECOR!)
+					i(280527), -- Tuskarr Fishing Gear Rack (DECOR!)
+					i(274427, { -- Sha Loot Box (CONSUMABLE!)
+						["description"] = "1.25% chance for any of the following:",
+						["groups"] = {
+							i(269640),	-- Sha-Warped Owl
+							i(269012),	-- Sha-Warped Riding Wolf
+							i(273021),	-- Sha-Warped Hippogryph Hatchling
+							i(54860),	-- X-53 Touring Rocket
+						},
 					}),
-					-- Little Mei, Lover of Fish (Midnight and Classic pet)
-					i(ITEMID_TODO, { -- Little Mei, Lover of Fish
+					i(271631, { -- Light Guardian's Reward (ITEM!)
+						["description"] = "Contains a Quantum Token & if you are lucky the Quantum Courser.",
+					}),				
+					--i(ITEMID_TODO), -- Treasure Shard (CURRENCY!)
+					n(TOP_TIER_CNONLY, {
+						["groups"] = {
+							i(246732), -- Void-Forged Overseer (MOUNT!)
+							i(210008), -- Smoldering Rune of Binding (MOUNT!)
+							i(274037), -- Tuskarr Hermit Crab (MOUNT!)
+							i(280457), -- Shark Attack Pack (COSMETIC!)
+							i(276625), -- Puffin Pack (COSMETIC!)
+							i(279006), -- Fisher's Pack (COSMETIC!)
+						},
 					}),
-					-- Yaya, the Fish-Basket Beaver (Midnight and Classic pet)
-					i(ITEMID_TODO, { -- Yaya, the Fish-Basket Beaver
+					n(FIRST_TIER_CNONLY, {
+						["groups"] = {
+							-- ===== RETAIL — Bonus: First-Tier =====
+							i(258427), -- Bound Blizzard (MOUNT!)
+							i(258423), -- Gargantuan Grrloc (MOUNT!)
+							i(225250), -- Startouched Furline (MOUNT!)
+							i(203727), -- Gleaming Moonbeast's Reins (MOUNT!)
+							i(223471), -- Kaldorei War Wolf (MOUNT!)
+							i(223459), -- Blackrock Warsaber (MOUNT!)
+							i(258477), -- Telix the Stormhorn (MOUNT!)
+						},
 					}),
-					-- Backstroke Timbertooth (Midnight and Classic pet)
-					i(ITEMID_TODO, { -- Backstroke Timbertooth
+					n(SECOND_TIER_CNONLY, {
+						["groups"] = {
+							-- ===== RETAIL — Bonus: Second-Tier =====
+							i(229368), -- Gill'el (PET!)
+							i(71726), -- Murky's Little Soulstone (PET!)
+							i(258482), -- Ysergle (PET!)
+							i(206268), -- Ethereal Transmogrifier (TOY!)
+							i(49704), -- Carved Ogre Idol (TOY!)
+							i(79769), -- Demon Hunter's Aspect (TOY!)
+							i(252194), -- Fishmonger May (PET!)
+							i(274730), -- Tuskarr Ice Fishing Tent (TOY!)
+							i(274925), -- Delta (PET!)
+						},
 					}),
-					-- Tuskarr Ice-Fishing Tent (Midnight and Classic toy)
-					-- Summons a tent, lasts 15 min, usable with up to 2 other players, 1hr CD.
-					i(ITEMID_TODO, { -- Tuskarr Ice-Fishing Tent
+					n(THIRD_TIER_CNONLY, {
+						["groups"] = {
+							i(280523), -- Tuskarr Fire Pit (DECOR!)
+							i(213556), -- Hoplet (PET!)
+							i(212722), -- Buggsy (PET!)
+							i(223145), -- Marrlok (PET!)
+							i(193429), -- Time-Lost Salamanther (PET!)
+							i(223474), -- Worgli the Apprehensive (PET!)
+							i(211432), -- Teele (PET!)
+							i(223339), -- Trishi (PET!)
+							i(220692), -- X-treme Water Blaster Display (DECOR!)
+							i(206174), -- Blub (PET!)
+							i(33223), -- Fishing Chair (DECOR!)
+						},
 					}),
-					-- Visage of the Cursed (Classic toy, Death Knight only)
-					-- Changes undead minion appearances on a 1 min CD: Army of the Dead -> Undead
-					-- Vrykul, Gargoyles -> Val'kyr, Ghouls -> Abominations. Multiple color variants each.
-					i(ITEMID_TODO, { -- Visage of the Cursed
-					}),
-					-- Tuskarr Boat (Midnight and Classic toy)
-					-- Sail across water and fish, similar to Anglers Fishing Raft (item 85500).
-					i(ITEMID_TODO, { -- Tuskarr Boat
-					}),
-					-- Kalu'ak Fisher's Collection (Midnight transmog, 3-piece backpack set)
-					i(ITEMID_TODO, { -- Shark Backpack
-					}),
-					i(ITEMID_TODO, { -- Walrus Fisher's Backpack (carried item, exact name TBD)
-					}),
-					i(ITEMID_TODO, { -- Penguin Backpack
-					}),
-					-- Big Kinook's Spare Long-Handled Ladle (Midnight and Classic weapon transmog)
-					i(ITEMID_TODO, { -- Big Kinook's Spare Long-Handled Ladle
-					}),
-					-- Iskaara Fishing Rack (Midnight decor)
-					i(ITEMID_TODO, { -- Iskaara Fishing Rack
-					}),
-					-- Iskaara Whale-Bone Hanging Rack (Midnight decor)
-					i(ITEMID_TODO, { -- Iskaara Whale-Bone Hanging Rack
-					}),
-					-- Iskaara Hearth (Midnight decor)
-					i(ITEMID_TODO, { -- Iskaara Hearth
-					}),
-					--]]
 				},
-			}));
+			})));
 			-- Season 2
 			i(250293, {	-- Red Hot Portable Bakery
 				["description"] = "McDonald's UK exclusive promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",

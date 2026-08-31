@@ -1750,8 +1750,14 @@ localize(L.HEADER_NAMES, {
 	[-764] = select(2,GetAchievementInfo(62922)),
 	[-765] = "Prey MID S1",
 	[-766] = "Prey MID S2",
+	[-767] = "Azure Span Treasure Trove",
 	[-768] = WEEKLY,
 	[-770] = "Curse Surges",
+	[-771] = "Top-Tier",
+	[-772] = "First-Tier",
+	[-773] = "Second-Tier",
+	[-774] = "Third-Tier",
+	[-775] = "Titanforged Promotions",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1874,7 +1880,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-754] = "Manaforge Translocators are teleporters used to instantly move around Naigtal.",
 	[-760] = "Lunar New Year Adventure is a China-exclusive promotional event for World of Warcraft, taking place from 5 February to 13 March 2026. The main event functioned similar to the Treasures of Azeroth event.",
 	[-761] = "Portal Bridges are teleporters used to instantly move around Val.",
+	[-767] = "Azure Span Treasure Trove is a China-exclusive promotional campaign for World of Warcraft, available through 14 August to 11 September 2026 (as part of the 21st Anniversary celebration), where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards",
 	[-770] = "Curse Surges are outdoor events that require players to complete an activity in order to summon a Rare Elite enemy.",
+	[-775] = "These promotions happened during the time Midnight was the most recent expansion.\n\nThey are listed in the order of their first appearance.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2498,8 +2506,14 @@ localize(L.HEADER_ICONS, {
 	[-764] = 6124221,
 	[-765] = _.asset("category_prey"),
 	[-766] = _.asset("category_prey"),
+	[-767] = 7360957,
 	[-768] = _.asset("interface_questw"),
 	[-770] = 5764921,
+	[-771] = 4672182,
+	[-772] = 133785,
+	[-773] = 237282,
+	[-774] = 237283,
+	[-775] = _.asset("expansion_mn"),
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -76658,6 +76672,7 @@ localize(L.HEADER_NAMES, {
 	[-758] = "Sombras Persistentes",
 	[-759] = "Confrontación",
 	[-760] = "Aventura del Año Nuevo Lunar",
+	[-767] = "Tesoro Escondido de las Tierras Azures",
 	[-770] = "Oleadas Malditas",
 })
 localize(L.HEADER_DESCRIPTIONS, {
@@ -84869,6 +84884,7 @@ localize(L.HEADER_NAMES, {
 	[-749] = "Duelo de decoraciones",
 	[-756] = "Trono Quebrado",
 	[-758] = "Sombras Tenaces",
+	[-767] = "Tesoro escondido del Trecho Azur",
 	[-770] = "Oleadas de Maldición",
 })
 localize(L.HEADER_DESCRIPTIONS, {

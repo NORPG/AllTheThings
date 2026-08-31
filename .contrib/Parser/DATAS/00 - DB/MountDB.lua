@@ -83,6 +83,11 @@ i(232614, 471440);	-- Skybound Spectral Tiger		(CN Only)
 i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
 -- #endif
 
+-- Wrath Titanforged
+i(0, 1280400);		-- Reforged Invincible
+i(269659, 1266982);	-- The Sire's Palanquin
+
+
 -- Cata Classic --
 i(0, 463045);		-- Lava Drake
 i(0, 473487);		-- Sha-Touched Cloud Serpent
