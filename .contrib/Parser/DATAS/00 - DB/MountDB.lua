@@ -63,24 +63,13 @@ i(273150, 1291813); -- Voidfeather Dragonhawk
 -- Wrath Classic --
 i(0, 440915);		-- Auspicious Arborwyrm
 i(0, 423869);		-- Avatar of Flame
-i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
 i(201699, 394209);	-- Festering Emerald Drake
--- #if AFTER 5.5.2
-i(226805, 459486);	-- Golden Ashes of Al'ar		(CN Only)
--- #else
-i(0, 459486);		-- Golden Ashes of Al'ar		(CN Only)
--- #endif
 i(192455, 372677);	-- Kalu'ak Whalebone Glider
 i(207097, 416158);	-- Nightmarish Emerald Drake
 -- #if AFTER 5.5.3
 i(265937, 446902);	-- Polly Roger
 -- #else
 i(0, 446902);		-- Polly Roger
--- #endif
--- #if AFTER 5.5.2
-i(232614, 471440);	-- Skybound Spectral Tiger		(CN Only)
--- #else
-i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
 -- #endif
 
 -- Wrath Titanforged
@@ -99,14 +88,11 @@ i(0, 466977);		-- Chaos-Born Wind Rider
 
 --- MOP CLASSIC ---
 i(0, 1229672);		-- Archmage's Great Crow
-i(265944, 1250045);	-- Ashened Cataclysm (CN ONLY)
 i(248741, 1247591);	-- Celestial Riding Crane
 i(248744, 1247597);	-- Celestial Riding Ox
 i(248743, 1247596);	-- Celestial Riding Serpent
 i(248742, 1247598);	-- Celestial Riding Tiger
 i(0, 1257674);		-- Embertuft Groveglider
-i(268706, 1283471);	-- Golden Ashened Cataclysm (CN ONLY)
-i(226812, 459538);	-- Harmonius Greetings Bear (CN ONLY)
 i(277652, 1302506);	-- Juvenile Frostwyrm
 i(0, 1257516);		-- Lana'thel's Sanguine Cascade
 i(0, 1224647);		-- Meeksi Brewrobber
@@ -118,16 +104,34 @@ i(0, 1257676);		-- Petalbranch Groveglider
 i(0, 1229670);		-- Prophet's Great Crow
 i(275928, 1298510);	-- Reins of the Fire Drake
 i(267300, 1280068);	-- Scorching Courage
-i(268924, 1284044);	-- Scorching Imperial Quilen (CN ONLY)
 i(258883, 1249659);	-- Sha-scarred Drake
 i(0, 1257677);		-- Shadowbough Groveglider
 i(0, 1257673);		-- Snowfall Groveglider
 i(276082, 1298515);	-- Spectral Gryphon
 i(276081, 1298516);	-- Spectral Wind Rider
-i(272920, 1291315);	-- Spring Panda (CN ONLY)
 i(276075, 1298512);	-- Stormcrow
 i(0, 1301737);		-- Sunflash Driftmoth
+
+
+--- MOP CLASSIC CN ONLY ---
+i(265944, 1250045);	-- Ashened Cataclysm (CN ONLY)
+i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+-- #if AFTER 5.5.2
+i(226805, 459486);	-- Golden Ashes of Al'ar		(CN Only)
+-- #else
+i(0, 459486);		-- Golden Ashes of Al'ar		(CN Only)
+-- #endif
+i(268706, 1283471);	-- Golden Ashened Cataclysm (CN ONLY)
+i(226812, 459538);	-- Harmonius Greetings Bear (CN ONLY)
+-- #if AFTER 5.5.2
+i(232614, 471440);	-- Skybound Spectral Tiger		(CN Only)
+-- #else
+i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
+-- #endif
+i(272920, 1291315);	-- Spring Panda (CN ONLY)
+i(268924, 1284044);	-- Scorching Imperial Quilen (CN ONLY)
 i(254735, 1285725);	-- Thunderhoof Celestial (CN ONLY)
+
 
 --- NYI ---
 i(198632, 387319);	-- Big Battle Bear
