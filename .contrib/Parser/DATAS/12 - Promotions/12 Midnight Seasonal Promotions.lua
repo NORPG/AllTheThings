@@ -332,53 +332,53 @@ root(ROOTS.Promotions, {
 					--i(ITEMID_TODO), -- Treasure Shard (CURRENCY!)
 					n(TOP_TIER_CNONLY, {
 						["groups"] = {
-							i(246732), -- Void-Forged Overseer (MOUNT!)
+							i(279006), -- Fisher's Pack (COSMETIC!)
+							i(276625), -- Puffin Pack (COSMETIC!)
+							i(280457), -- Shark Attack Pack (COSMETIC!)
 							i(210008), -- Smoldering Rune of Binding (MOUNT!)
 							i(274037), -- Tuskarr Hermit Crab (MOUNT!)
-							i(280457), -- Shark Attack Pack (COSMETIC!)
-							i(276625), -- Puffin Pack (COSMETIC!)
-							i(279006), -- Fisher's Pack (COSMETIC!)
+							i(246732), -- Void-Forged Overseer (MOUNT!)
 						},
 					}),
 					n(FIRST_TIER_CNONLY, {
 						["groups"] = {
 							-- ===== RETAIL — Bonus: First-Tier =====
+							i(223459), -- Blackrock Warsaber (MOUNT!)
 							i(258427), -- Bound Blizzard (MOUNT!)
 							i(258423), -- Gargantuan Grrloc (MOUNT!)
-							i(225250), -- Startouched Furline (MOUNT!)
 							i(203727), -- Gleaming Moonbeast's Reins (MOUNT!)
 							i(223471), -- Kaldorei War Wolf (MOUNT!)
-							i(223459), -- Blackrock Warsaber (MOUNT!)
+							i(225250), -- Startouched Furline (MOUNT!)
 							i(258477), -- Telix the Stormhorn (MOUNT!)
 						},
 					}),
 					n(SECOND_TIER_CNONLY, {
 						["groups"] = {
 							-- ===== RETAIL — Bonus: Second-Tier =====
-							i(229368), -- Gill'el (PET!)
-							i(71726), -- Murky's Little Soulstone (PET!)
-							i(258482), -- Ysergle (PET!)
-							i(206268), -- Ethereal Transmogrifier (TOY!)
-							i(49704), -- Carved Ogre Idol (TOY!)
-							i(79769), -- Demon Hunter's Aspect (TOY!)
-							i(252194), -- Fishmonger May (PET!)
-							i(274730), -- Tuskarr Ice Fishing Tent (TOY!)
-							i(274925), -- Delta (PET!)
+							i(49704), 	-- Carved Ogre Idol (TOY!)
+							i(274925), 	-- Delta (PET!)
+							i(79769), 	-- Demon Hunter's Aspect (TOY!)
+							i(206268), 	-- Ethereal Transmogrifier (TOY!)
+							i(252194), 	-- Fishmonger May (PET!)
+							i(229368), 	-- Gill'el (PET!)
+							i(71726), 	-- Murky's Little Soulstone (PET!)
+							i(274730), 	-- Tuskarr Ice Fishing Tent (TOY!)
+							i(258482), 	-- Ysergle (PET!)
 						},
 					}),
 					n(THIRD_TIER_CNONLY, {
 						["groups"] = {
-							i(280523), -- Tuskarr Fire Pit (DECOR!)
-							i(213556), -- Hoplet (PET!)
-							i(212722), -- Buggsy (PET!)
-							i(223145), -- Marrlok (PET!)
-							i(193429), -- Time-Lost Salamanther (PET!)
-							i(223474), -- Worgli the Apprehensive (PET!)
-							i(211432), -- Teele (PET!)
-							i(223339), -- Trishi (PET!)
-							i(220692), -- X-treme Water Blaster Display (DECOR!)
-							i(206174), -- Blub (PET!)
-							i(33223), -- Fishing Chair (DECOR!)
+							i(206174), 	-- Blub (PET!)
+							i(212722), 	-- Buggsy (PET!)
+							i(33223), 	-- Fishing Chair (DECOR!)
+							i(213556), 	-- Hoplet (PET!)
+							i(223145), 	-- Marrlok (PET!)
+							i(211432), 	-- Teele (PET!)
+							i(193429), 	-- Time-Lost Salamanther (PET!)
+							i(223339), 	-- Trishi (PET!)
+							i(280523), 	-- Tuskarr Fire Pit (DECOR!)
+							i(223474), 	-- Worgli the Apprehensive (PET!)
+							i(220692), 	-- X-treme Water Blaster Display (DECOR!)
 						},
 					}),
 				},
