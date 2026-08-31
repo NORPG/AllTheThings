@@ -390,17 +390,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9164, {	-- Captives at Deatholme
-					-- #if AFTER LEGION
+					["qgs"] = {
+						-- #if AFTER LEGION
+						16240,	-- Arcanist Janeda
+						-- #else
+						16198,	-- Apothecary Renzithen
+						-- #endif
+					},
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					-- Complete The Twin Ziggurats first and then you'll be able to pick this quest.
-					["qg"] = 16240,	-- Arcanist Janeda
-					["sourceQuest"] = 9176,	-- The Twin Ziggurats	[TODO: Confirm this!]
-					["coord"] = { 54.8, 48.3, GHOSTLANDS },
-					-- #else
-					["qg"] = 16198,	-- Apothecary Renzithen
-					["sourceQuest"] = 9877,	-- A Restorative Draught [TODO: Determine if removed earlier than this.]
-					["coord"] = { 47.6, 34.8, GHOSTLANDS },
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER LEGION
+						9176,	-- The Twin Ziggurats	[TODO: Confirm this!]
+						-- #else
+						9877,	-- A Restorative Draught [TODO: Determine if removed earlier than this.]
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER LEGION
+						{ 54.8, 48.3, GHOSTLANDS },	-- Arcanist Janeda
+						-- #else
+						{ 47.6, 34.8, GHOSTLANDS },	-- Apothecary Renzithen
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 17, 1),
 					["groups"] = {
@@ -488,10 +500,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9170, {	-- Dar'Khan's Lieutenants
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
+					-- Complete The Twin Ziggurats first and then you'll be able to pick this quest.
 					["sourceQuests"] = {
 						-- #if AFTER LEGION
-						-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
-						-- Complete The Twin Ziggurats first and then you'll be able to pick this quest.
 						9176,	-- The Twin Ziggurats	[TODO: Confirm this!]
 						-- #else
 						9220,	-- War on Deatholme
@@ -744,7 +756,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9161,	-- The Traitor's Shadow
 					["providers"] = {
 						{ "o", 181150 },	-- Dusty Journal
-						{ "i", 22706 },	-- Dar'Khan's Journal
+						{ "i",  22706 },	-- Dar'Khan's Journal
 					},
 					["coord"] = { 79.6, 17.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
@@ -784,16 +796,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9193, {	-- Investigate the Amani Catacombs
-					-- #if AFTER LEGION
+					["qgs"] = {
+						-- #if AFTER LEGION
+						16203,	-- Ranger Vynna
+						-- #else
+						16289,	-- Advisor Valwyn
+						-- #endif
+					},
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
-					["qg"] = 16203,	-- Ranger Vynna
-					["sourceQuest"] = 9146,	-- Report to Captain Helios
-					["coord"] = { 71.9, 32.6, GHOSTLANDS },
-					-- #else
-					["qg"] = 16289,	-- Advisor Valwyn
-					-- ["sourceQuest"] = ,	-- TODO: Figure out if there was a source quest prior.
-					["coord"] = { 44.8, 32.8, GHOSTLANDS },
+					-- #if AFTER LEGION
+					-- TODO: Figure out if there was a sourceQuest prior to Legion. Check on TBC Classic.
+					["sourceQuests"] = {
+						9146,	-- Report to Captain Helios
+					},
 					-- #endif
+					["coords"] = {
+						-- #if AFTER LEGION
+						{ 71.9, 32.6, GHOSTLANDS },
+						-- #else
+						{ 44.8, 32.8, GHOSTLANDS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
@@ -1091,16 +1114,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9149, {	-- The Plagued Coast
-					-- #if AFTER LEGION
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
-					["sourceQuest"] = 9138,	-- Suncrown Village	[TODO: Confirm this!]
-					-- #else
-					-- TBC Beta, this became available after turning in The Forsaken.
 					["sourceQuests"] = {
+						-- #if AFTER LEGION
+						9138,	-- Suncrown Village	[TODO: Confirm this!]
+						-- #else
+						-- TBC Beta, this became available after turning in The Forsaken.
 						9327,	-- The Forsaken [Blood Elf Only]
 						9329,	-- The Forsaken [Non-Blood Elf Only]
+						-- #endif
 					},
-					-- #endif
 					["qg"] = 16198,	-- Apothecary Renzithen
 					["coord"] = { 47.6, 34.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
@@ -1207,16 +1230,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9152, {	-- Tomber's Supplies
-					-- #if AFTER LEGION
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
-					["sourceQuest"] = 9138,	-- Suncrown Village	[TODO: Confirm this!]
-					-- #else
-					-- TBC Beta, this became available after turning in The Forsaken.
 					["sourceQuests"] = {
+						-- #if AFTER LEGION
+						9138,	-- Suncrown Village	[TODO: Confirm this!]
+						-- #else
+						-- TBC Beta, this became available after turning in The Forsaken.
 						9327,	-- The Forsaken [Blood Elf Only]
 						9329,	-- The Forsaken [Non-Blood Elf Only]
+						-- #endif
 					},
-					-- #endif
 					["qg"] = 16224,	-- Rathis Tomber
 					["coord"] = { 47.2, 28.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
@@ -1232,16 +1255,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9199, {	-- Troll Juju
-					-- #if AFTER LEGION
+					["qgs"] = {
+						-- #if AFTER LEGION
+						16464,	-- Apothecary Venustus
+						-- #else
+						16251,	-- Deathstalker Maltendis
+						-- #endif
+					},
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
-					["qg"] = 16464,	-- Apothecary Venustus
-					["sourceQuest"] = 9146,	-- Report to Captain Helios
-					["coord"] = { 72.6, 31.5, GHOSTLANDS },
-					-- #else
-					["qg"] = 16251,	-- Deathstalker Maltendis
-					-- ["sourceQuest"] = ,	-- TODO: Not sure if there was one before, check this in TBC
-					["coord"] = { 44.8, 32.4, GHOSTLANDS },
+					-- #if AFTER LEGION
+					-- TODO: Figure out if there was a sourceQuest prior to Legion. Check on TBC Classic.
+					["sourceQuests"] = {
+						9146,	-- Report to Captain Helios
+					},
 					-- #endif
+					["coords"] = {
+						-- #if AFTER LEGION
+						{ 72.6, 31.5, GHOSTLANDS },
+						-- #else
+						{ 44.8, 32.4, GHOSTLANDS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {

@@ -1906,11 +1906,12 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					i(25719, {	-- Arakkoa Feather
-						-- #if BEFORE 8.2.5
-						["description"] = "Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City up to Honored. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
-						-- #else
-						["description"] = "Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City up to Honored, and again when at Exalted. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
-						-- #endif
+						["description"] =
+							-- #if AFTER 8.2.5
+							"Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City up to Honored, and again when at Exalted. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
+							-- #else
+							"Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City up to Honored. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
+							-- #endif
 						["coords"] = {
 							{ 24.7, 72.6, TEROKKAR_FOREST },	-- Veil Lithic
 							{ 50.0, 16.7, TEROKKAR_FOREST },	-- Veil Reskk

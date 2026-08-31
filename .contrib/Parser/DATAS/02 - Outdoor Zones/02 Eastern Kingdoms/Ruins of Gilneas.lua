@@ -4,11 +4,12 @@
 
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(RUINS_OF_GILNEAS, {
-		-- #if AFTER 8.3.0
-		["icon"] = 462338,
-		-- #else
-		["icon"] = 462671,
-		-- #endif
+		["icon"] =
+			-- #if AFTER 8.3.0
+			462338,
+			-- #else
+			462671,
+			-- #endif
 		["maps"] = { 218 },	-- Ruins of Gilneas City
 		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {

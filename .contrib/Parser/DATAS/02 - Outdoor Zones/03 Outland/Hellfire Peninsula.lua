@@ -1215,11 +1215,12 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10919, {	-- Fei Fei's Treat
-						-- #if BEFORE WRATH
-						["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for:\nSparkling Zircon: Gem vendor in the Inn\nMaiden's Anguish: Grand Master Alchemist or Reagent vendor in the tower.\nSilken Thread: Upstairs in the inn from the Grand Master Tailor",
-						-- #else
-						["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for a Silken Thread.\n\nSilken Thread can be found upstairs in the inn from the Grand Master Tailor.",
-						-- #endif
+						["description"] =
+							-- #if AFTER WRATH
+							"In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for a Silken Thread.\n\nSilken Thread can be found upstairs in the inn from the Grand Master Tailor.",
+							-- #else
+							"In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for:\nSparkling Zircon: Gem vendor in the Inn\nMaiden's Anguish: Grand Master Alchemist or Reagent vendor in the tower.\nSilken Thread: Upstairs in the inn from the Grand Master Tailor",
+							-- #endif
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
 						["providers"] = {
 							{ "n",  20206 },	-- Fei Fei
@@ -1414,11 +1415,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
-						-- #if AFTER WRATH
-						["lvl"] = lvlsquish(55, 55, 10),
-						-- #else
-						["lvl"] = lvlsquish(58, 58, 10),
-						-- #endif
+						["lvl"] =
+							-- #if AFTER WRATH
+							lvlsquish(55, 55, 10),
+							-- #else
+							lvlsquish(58, 58, 10),
+							-- #endif
 						["groups"] = {
 							objective(1, {	-- Capture The Overlook
 								["coord"] = { 39.9, 48.4, HELLFIRE_PENINSULA },
@@ -1487,11 +1489,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
-						-- #if AFTER WRATH
-						["lvl"] = lvlsquish(55, 55, 10),
-						-- #else
-						["lvl"] = lvlsquish(58, 58, 10),
-						-- #endif
+						["lvl"] =
+							-- #if AFTER WRATH
+							lvlsquish(55, 55, 10),
+							-- #else
+							lvlsquish(58, 58, 10),
+							-- #endif
 						["groups"] = {
 							objective(1, {	-- Capture The Overlook
 								["coord"] = { 39.9, 48.4, HELLFIRE_PENINSULA },

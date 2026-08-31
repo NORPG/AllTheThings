@@ -769,7 +769,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.7, 78.8, ZULDRAK },
 						["groups"] = {
 							o(190534, {	-- Mature Water-Poppy
-								["groups"] = {
+								["coords"] = {
 									{ 40.8, 78.8, ZULDRAK },
 									{ 41.2, 77.4, ZULDRAK },
 									{ 41.4, 78.0, ZULDRAK },
@@ -1075,7 +1075,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["groups"] = {
 							o(190534, {	-- Mature Water-Poppy
-								["groups"] = {
+								["coords"] = {
 									{ 40.8, 78.8, ZULDRAK },
 									{ 41.2, 77.4, ZULDRAK },
 									{ 41.4, 78.0, ZULDRAK },
