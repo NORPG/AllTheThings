@@ -210,6 +210,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							i(274493),	-- Effigy of Ula'Tek's Faithful
 							i(251786),	-- Ever-Collapsing Void Fissure
 							i(251792),	-- Glorious Crusader's Keepsake
+							i(264694),	-- Ultradon Cuirass
 							i(251785),	-- Void-Reaper's Libram
 						},
 					}),
@@ -221,7 +222,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 				}),
 				filter(MISC, {
+					i(276547),	-- Afflicted Soul
 					i(279290),	-- Fang Lover's (CI!)
+					i(276548),	-- Tormented Soul
 					i(274374, {	-- Trovehunter's Bounty
 						["providers"] = { { "o",584518 } },	-- Bountiful Heavy Trunk (verified)
 					}),
@@ -292,7 +295,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				q(97616, {	-- Corrosive Gifts: Corrosive Power
 					["provider"] = { "i", 277506 },	-- Codex of the Soul Coilers (QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
-				--	While the reward is correct, its a 1time quest reward and you need like 500+ of them if you all trade them in for corrosive coins. ~Gold Aug 2026	
+				--	While the reward is correct, its a 1time quest reward and you need like 500+ of them if you all trade them in for corrosive coins. ~Gold Aug 2026
 				--	["groups"] = { i(273000) },	-- Corrosive Soul
 				}),
 				q(97910, {	-- Cracked Keystone

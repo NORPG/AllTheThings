@@ -4623,7 +4623,6 @@ i(270330, 5036);	-- Void-Touched Dragonhawk Egg
 i(270063, 5023);	-- Void-Touched Lynx Kitten
 i(270988, 5038);	-- Wriggling Capybara
 --- UNSORTED ---
-i(273021, 5060);	-- Sha-Warped Hippogryph Hatchling
 i(271652, 5042);	-- The Sire's Ghastly Screecher
 
 ------------------
@@ -4662,6 +4661,7 @@ i(280178, 5133);	-- Poison Dart Frog
 i(270214, 5028);	-- Poisoned Parasite
 i(275702, 5076);	-- Preyhunter's Prismguard
 i(275704, 5078);	-- Preyhunter's Riftbreaker
+i(273021, 5060);	-- Sha-Warped Hippogryph Hatchling
 i(270251, 5033);	-- Sleek Snakebiter
 i(276248, 5093);	-- Snek'zali
 i(280305, 5125);	-- Soulcoil Remnant

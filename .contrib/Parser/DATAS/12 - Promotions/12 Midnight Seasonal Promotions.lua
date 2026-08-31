@@ -316,80 +316,80 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}),
 			cnONLY(n(CRIMSONTIDE_TREASURETROVE, sharedDataSelf({
-				["timeline"] = { ADDED_12_0_1, REMOVED_12_0_7 }, -- April 23 - May 23 2026 window
+				["timeline"] = { ADDED_12_0_1, REMOVED_12_0_7 },	-- April 23rd through May 23rd 2026
 				["u"] = REAL_MONEY,
 			}, {
 				["groups"] = {
 					-- ===== RETAIL — Special Rewards =====
-					i(269659), -- The Sire's Palanquin (MOUNT!)
-					i(262344), -- Scarlet Lady (MOUNT!)
+					i(262344),	-- Scarlet Lady (MOUNT!)
+					i(269659),	-- The Sire's Palanquin (MOUNT!)
 
 					-- ===== RETAIL — Regular Rewards =====
-					i(262661), -- Ghastropod (MOUNT!)
-					iensemble(270222), -- Ensemble: Sire's Ornate Attire (COSMETIC!)
-					i(262881), -- Lil' Staropod (PET!)
-					i(272355), -- Orchestrion of Echoing Atonement (DECOR!)
-					i(272356), -- Throne of Subjugated Souls (DECOR!)
-					i(273640), -- Condensed Anima Orb (DECOR!)
-					i(274427, { -- Sha Loot Box (CONSUMABLE!)
-						["description"] = "1.25% chance for any of the following:",
-						["groups"] = {
-							i(269640),	-- Sha-Warped Owl
-							i(269012),	-- Sha-Warped Riding Wolf
-							i(273021),	-- Sha-Warped Hippogryph Hatchling
-							i(54860),	-- X-53 Touring Rocket
-						},
-					}),
+					i(273640),	-- Condensed Anima Orb (DECOR!)
+					iensemble(270222),	-- Ensemble: Sire's Ornate Attire (COSMETIC!)
+					i(262661),	-- Ghastropod (MOUNT!)
 					i(271631, { -- Light Guardian's Reward (ITEM!)
 						["description"] = "Contains a Quantum Token & if you are lucky the Quantum Courser.",
-					}),	
-					--i(ITEMID_TODO), -- Treasure Shard (CURRENCY!)
+					}),
+					i(262881),	-- Lil' Staropod (PET!)
+					i(272355),	-- Orchestrion of Echoing Atonement (DECOR!)
+					i(274427, { -- Sha Loot Box
+						["description"] = "1.25% chance for any of the following:",
+						["groups"] = {
+							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
+							i(269640),	-- Sha-Warped Owl (MOUNT!)
+							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
+							i(54860),	-- X-53 Touring Rocket (MOUNT!)
+						},
+					}),
+					i(272356),	-- Throne of Subjugated Souls (DECOR!)
+					--i(ITEMID_TODO),	-- Treasure Shard (CURRENCY!)
 					n(TOP_TIER_CNONLY, {
 						["groups"] = {
-							i(269659), -- The Sire's Palanquin (MOUNT!)
-							i(262344), -- Scarlet Lady (MOUNT!)
-							iensemble(270222), -- Ensemble: Sire's Ornate Attire (COSMETIC!)
-							i(246732), -- Void-Forged Overseer (MOUNT!)
-							i(210008), -- Smoldering Rune of Binding (MOUNT!)
+							iensemble(270222),	-- Ensemble: Sire's Ornate Attire (COSMETIC!)
+							i(262344),	-- Scarlet Lady (MOUNT!)
+							i(210008),	-- Smoldering Rune of Binding (MOUNT!)
+							i(269659),	-- The Sire's Palanquin (MOUNT!)
+							i(246732),	-- Void-Forged Overseer (MOUNT!)
 						},
 					}),
 					n(FIRST_TIER_CNONLY, {
 						["groups"] = {
-							i(228751), -- Gigantic Grrloc (MOUNT!)
-							i(225250), -- Startouched Furline (MOUNT!)
-							i(243194), -- Grandiose Grrloc (MOUNT!)
-							i(203727), -- Gleaming Moonbeast's Reins (MOUNT!)
-							i(223471), -- Kaldorei War Wolf (MOUNT!)
-							i(223459), -- Blackrock Warsaber (MOUNT!)
-							i(262661), -- Ghastropod (MOUNT!)
+							i(223459),	-- Blackrock Warsaber (MOUNT!)
+							i(262661),	-- Ghastropod (MOUNT!)
+							i(228751),	-- Gigantic Grrloc (MOUNT!)
+							i(203727),	-- Gleaming Moonbeast's Reins (MOUNT!)
+							i(243194),	-- Grandiose Grrloc (MOUNT!)
+							i(223471),	-- Kaldorei War Wolf (MOUNT!)
+							i(225250),	-- Startouched Furline (MOUNT!)
 						},
 					}),
 					n(SECOND_TIER_CNONLY, {
 						["groups"] = {
-							i(229368), -- Gill'el (PET!)
-							i(71726), -- Murky's Little Soulstone (PET!)
-							i(258482), -- Ysergle (PET!)
-							i(206268), -- Ethereal Transmogrifier (TOY!)
-							i(49704), -- Carved Ogre Idol (TOY!)
-							i(79769), -- Demon Hunter's Aspect (TOY!)
-							i(262881), -- Lil' Staropod (PET!)
-							i(272355), -- Orchestrion of Echoing Atonement (DECOR!)
-							i(272356), -- Throne of Subjugated Souls (DECOR!)
+							i(49704),	-- Carved Ogre Idol (TOY!)
+							i(79769),	-- Demon Hunter's Aspect (TOY!)
+							i(206268),	-- Ethereal Transmogrifier (TOY!)
+							i(229368),	-- Gill'el (PET!)
+							i(262881),	-- Lil' Staropod (PET!)
+							i(71726),	-- Murky's Little Soulstone (PET!)
+							i(272355),	-- Orchestrion of Echoing Atonement (DECOR!)
+							i(272356),	-- Throne of Subjugated Souls (DECOR!)
+							i(258482),	-- Ysergle (PET!)
 						},
 					}),
 					n(THIRD_TIER_CNONLY, {
 						["groups"] = {
-							i(273640), -- Condensed Anima Orb (DECOR!)
-							i(213556), -- Hoplet (PET!)
-							i(212722), -- Buggsy (PET!)
-							i(223145), -- Marrlok (PET!)
-							i(193429), -- Time-Lost Salamanther (PET!)
-							i(223474), -- Worgli the Apprehensive (PET!)
-							i(211432), -- Teele (PET!)
-							i(223339), -- Trishi (PET!)
-							i(206174), -- Blub (PET!)
-							i(220692), -- X-treme Water Blaster Display (DECOR!)
-							i(33223), -- Fishing Chair (DECOR!)
+							i(206174),	-- Blub (PET!)
+							i(212722),	-- Buggsy (PET!)
+							i(273640),	-- Condensed Anima Orb (DECOR!)
+							i(33223),	-- Fishing Chair (DECOR!)
+							i(213556),	-- Hoplet (PET!)
+							i(223145),	-- Marrlok (PET!)
+							i(211432),	-- Teele (PET!)
+							i(193429),	-- Time-Lost Salamanther (PET!)
+							i(223339),	-- Trishi (PET!)
+							i(223474),	-- Worgli the Apprehensive (PET!)
+							i(220692),	-- X-treme Water Blaster Display (DECOR!)
 						},
 					}),
 				},
@@ -412,22 +412,22 @@ root(ROOTS.Promotions, {
 			}, {
 				["groups"] = {
 					-- ===== RETAIL — Base Pool =====
-					i(272920), -- Spring Panda (MOUNT!)
-					i(275999), -- Flowering Mantle (COSMETIC!)
-					i(275818), -- Pinky (PET!)
-				--	Trader's Tender x200 (CURRENCY!)
-					i(269604), -- Auspicious Picnic Basket (DECOR!)
-					i(269605), -- Auspicious Meal Case (DECOR!)
-					i(272353), -- Auspicious Verdant Basin (DECOR!)
-					i(274427, { -- Sha Loot Box (CONSUMABLE!)
+					i(269604),	-- Auspicious Picnic Basket (DECOR!)
+					i(269605),	-- Auspicious Meal Case (DECOR!)
+					i(272353),	-- Auspicious Verdant Basin (DECOR!)
+					i(275999),	-- Flowering Mantle (COSMETIC!)
+					i(275818),	-- Pinky (PET!)
+					i(274427, { -- Sha Loot Box
 						["description"] = "1.25% chance for any of the following:",
 						["groups"] = {
-							i(269640),	-- Sha-Warped Owl
-							i(269012),	-- Sha-Warped Riding Wolf
-							i(273021),	-- Sha-Warped Hippogryph Hatchling
-							i(54860),	-- X-53 Touring Rocket
+							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
+							i(269640),	-- Sha-Warped Owl (MOUNT!)
+							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
+							i(54860),	-- X-53 Touring Rocket (MOUNT!)
 						},
-					}),			
+					}),
+					i(272920),	-- Spring Panda (MOUNT!)
+					--	Trader's Tender x200 (CURRENCY!)
 				},
 			})));
 			i(273655, {	-- Sunflare Driftmoth (MOUNT!)
@@ -450,49 +450,49 @@ root(ROOTS.Promotions, {
 			}, {
 				["groups"] = {
 					-- ===== RETAIL — Base Pool =====
-					i(274037), -- Tuskarr Hermit Crab (MOUNT!)
-					i(280457), -- Shark Attack Pack (COSMETIC!)
-					i(276625), -- Puffin Pack (COSMETIC!)
-					i(279006), -- Fisher's Pack (COSMETIC!)
-					i(252194), -- Fishmonger May (PET!)
-					i(274925), -- Delta (PET!)
-					i(274730), -- Tuskarr Ice Fishing Tent (TOY!)
-					i(280523), -- Tuskarr Fire Pit (DECOR!)
-					i(280525), -- Tuskarr Hanging Grill (DECOR!)
-					i(280527), -- Tuskarr Fishing Gear Rack (DECOR!)
-					i(274427, { -- Sha Loot Box (CONSUMABLE!)
-						["description"] = "1.25% chance for any of the following:",
-						["groups"] = {
-							i(269640),	-- Sha-Warped Owl
-							i(269012),	-- Sha-Warped Riding Wolf
-							i(273021),	-- Sha-Warped Hippogryph Hatchling
-							i(54860),	-- X-53 Touring Rocket
-						},
-					}),
+					i(274925),	-- Delta (PET!)
+					i(279006),	-- Fisher's Pack (COSMETIC!)
+					i(252194),	-- Fishmonger May (PET!)
 					i(271631, { -- Light Guardian's Reward (ITEM!)
 						["description"] = "Contains a Quantum Token & if you are lucky the Quantum Courser.",
-					}),				
-					--i(ITEMID_TODO), -- Treasure Shard (CURRENCY!)
+					}),
+					i(276625),	-- Puffin Pack (COSMETIC!)
+					i(274427, { -- Sha Loot Box
+						["description"] = "1.25% chance for any of the following:",
+						["groups"] = {
+							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
+							i(269640),	-- Sha-Warped Owl (MOUNT!)
+							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
+							i(54860),	-- X-53 Touring Rocket (MOUNT!)
+						},
+					}),
+					i(280457),	-- Shark Attack Pack (COSMETIC!)
+					i(280523),	-- Tuskarr Fire Pit (DECOR!)
+					i(280527),	-- Tuskarr Fishing Gear Rack (DECOR!)
+					i(280525),	-- Tuskarr Hanging Grill (DECOR!)
+					i(274037),	-- Tuskarr Hermit Crab (MOUNT!)
+					i(274730),	-- Tuskarr Ice Fishing Tent (TOY!)
+					--i(ITEMID_TODO),	-- Treasure Shard (CURRENCY!)
 					n(TOP_TIER_CNONLY, {
 						["groups"] = {
-							i(279006), -- Fisher's Pack (COSMETIC!)
-							i(276625), -- Puffin Pack (COSMETIC!)
-							i(280457), -- Shark Attack Pack (COSMETIC!)
-							i(210008), -- Smoldering Rune of Binding (MOUNT!)
-							i(274037), -- Tuskarr Hermit Crab (MOUNT!)
-							i(246732), -- Void-Forged Overseer (MOUNT!)
+							i(279006),	-- Fisher's Pack (COSMETIC!)
+							i(276625),	-- Puffin Pack (COSMETIC!)
+							i(280457),	-- Shark Attack Pack (COSMETIC!)
+							i(210008),	-- Smoldering Rune of Binding (MOUNT!)
+							i(274037),	-- Tuskarr Hermit Crab (MOUNT!)
+							i(246732),	-- Void-Forged Overseer (MOUNT!)
 						},
 					}),
 					n(FIRST_TIER_CNONLY, {
 						["groups"] = {
 							-- ===== RETAIL — Bonus: First-Tier =====
-							i(223459), -- Blackrock Warsaber (MOUNT!)
-							i(258427), -- Bound Blizzard (MOUNT!)
-							i(258423), -- Gargantuan Grrloc (MOUNT!)
-							i(203727), -- Gleaming Moonbeast's Reins (MOUNT!)
-							i(223471), -- Kaldorei War Wolf (MOUNT!)
-							i(225250), -- Startouched Furline (MOUNT!)
-							i(258477), -- Telix the Stormhorn (MOUNT!)
+							i(223459),	-- Blackrock Warsaber (MOUNT!)
+							i(258427),	-- Bound Blizzard (MOUNT!)
+							i(258423),	-- Gargantuan Grrloc (MOUNT!)
+							i(203727),	-- Gleaming Moonbeast's Reins (MOUNT!)
+							i(223471),	-- Kaldorei War Wolf (MOUNT!)
+							i(225250),	-- Startouched Furline (MOUNT!)
+							i(258477),	-- Telix the Stormhorn (MOUNT!)
 						},
 					}),
 					n(SECOND_TIER_CNONLY, {

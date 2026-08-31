@@ -2907,6 +2907,7 @@ local AccountWideQuestsDB = {
 	96970,	-- Malformed Leviathan weekly reputation obtained.
 	96975,	-- Delver's Starter Kit
 	97041,	-- Quest #97041*
+	97075,	-- Quality Goods
 	97111,	-- ??
 	97115,	-- First Preference Killing of the week
 	97116,	-- Has rolled for Ahune Special Loot (Daily Accountwide)

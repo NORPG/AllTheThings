@@ -245,7 +245,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						["coord"] = { 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
 					q(95933, {	-- Traces in the Dark
-						["sourceAchievement"] = 62569,	-- Traces in the Dark
+						["sourceQuests"] = {
+							95069,	-- Torn Twilight Missive
+							94920,	-- Hal'hadar Battery Core
+							95071,	-- Enchanted Naga Scroll
+							95070,	-- Permafrosted Keystone
+						},
 						["qg"] = 263121,	-- Mayven Ombrewing
 						["coord"] = { 47.9, 49.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),

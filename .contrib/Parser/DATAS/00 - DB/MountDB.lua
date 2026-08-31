@@ -74,7 +74,11 @@ i(0, 446902);		-- Polly Roger
 
 --- Wrath/CATA/MOP CLASSIC CN ONLY ---
 i(265944, 1250045);	-- Ashened Cataclysm (CN ONLY)
+-- #if AFTER 5.5.2
+i(235562, 1217476);	-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+-- #else
 i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+-- #endif
 -- #if AFTER 5.5.2
 i(226805, 459486);	-- Golden Ashes of Al'ar		(CN Only)
 -- #else
@@ -94,7 +98,6 @@ i(254735, 1285725);	-- Thunderhoof Celestial (CN ONLY)
 -- Wrath Titanforged
 i(0, 1280400);		-- Reforged Invincible
 i(269659, 1266982);	-- The Sire's Palanquin
-
 
 -- Cata Classic --
 i(0, 463045);		-- Lava Drake
@@ -122,8 +125,11 @@ i(0, 1224646);		-- Meeksi Wanderpaw
 i(0, 1257676);		-- Petalbranch Groveglider
 i(0, 1229670);		-- Prophet's Great Crow
 i(275928, 1298510);	-- Reins of the Fire Drake
+i(262344, 1267077);	-- Scarlet Lady
 i(267300, 1280068);	-- Scorching Courage
 i(258883, 1249659);	-- Sha-scarred Drake
+i(269640, 1285897);	-- Sha-Warped Owl
+i(269012, 1284679);	-- Sha-Warped Riding Wolf
 i(0, 1257677);		-- Shadowbough Groveglider
 i(0, 1257673);		-- Snowfall Groveglider
 i(276082, 1298515);	-- Spectral Gryphon
@@ -2461,7 +2467,11 @@ i(268364, 1282276);	-- Gilneas Loyalist's Rouncey
 i(275446, 1296759);	-- High-Yield Shreddertank
 i(275445, 1296758);	-- Profit-Green Shreddertank
 i(268363, 1282275);	-- Pyrewood Rebel's Rouncey
+i(262344, 1267077);	-- Scarlet Lady
+i(269640, 1285897);	-- Sha-Warped Owl
+i(269012, 1284679);	-- Sha-Warped Riding Wolf
 i(275447, 1296760);	-- Speculative Shreddertank
+i(269659, 1266982);	-- The Sire's Palanquin
 i(264348, 1271698);	-- Unbound Manawyrm
 i(268578, 1282936);	-- Void-Touched Hawkstrider
 i(270041, 1287357);	-- Void-Touched Snapdragon
@@ -2473,10 +2483,6 @@ i(268878, 1283906);	-- [PH] Giant Eagle Sunwalker Mount Blue
 i(268875, 1283911);	-- [PH] Giant Eagle Sunwalker Mount White
 i(268362, 1282274);	-- Gilnean Copper Charger
 i(268360, 1282268);	-- Gilnean Iron Charger
-i(262344, 1267077);	-- Scarlet Lady
-i(269640, 1285897);	-- Sha-Warped Owl
-i(269012, 1284679);	-- Sha-Warped Riding Wolf
-i(269659, 1266982);	-- The Sire's Palanquin
 i(260421, 1266285);	-- Void-Corrupted Amani Warbear Kit
 i(268833, 1283837);	-- Zothwing Darkseeker
 i(268834, 1283838);	-- Zothwing Deepseeker
@@ -2532,6 +2538,7 @@ i(275653, 1297216);	-- Sea-Dwelling Isle Serpent
 i(273838, 1292668);	-- Spirit of Tok'jara
 i(276804, 1300776);	-- The Writhing Brood
 i(276549, 1299961);	-- Topaz Skyfang
+i(274037, 1293028);	-- Tuskarr Hermit Crab
 i(277192, 1301775);	-- Umbral Ashes
 i(276801, 1300777);	-- Venomous Coiler
 i(275302, 1266211);	-- Venomous Gladiator's Goredrake
@@ -2548,7 +2555,6 @@ i(275571, 1296986);	-- Moonlit Witchwick's Rider	(SHOP OR TRADING POST)
 i(275570, 1296985);	-- Mossy Witchwick's Rider		(SHOP OR TRADING POST)
 i(275572, 1296987);	-- Scarlet Witchwick's Rider	(SHOP OR TRADING POST)
 i(0, 1295958);	-- Swift Spectral Eagle
-i(274037, 1293028);	-- Tuskarr Hermit Crab
 i(275655, 1297223);	-- Venom Serpent - White
 i(280599, 1309376);	-- Veteran Adventurer's Loyal Companion
 i(277261, 1301817);	-- Whoofle Bramblewing			(SHOP OR TRADING POST)

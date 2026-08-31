@@ -13,7 +13,6 @@ root(ROOTS.Unsorted, {
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
-			i(260425),	-- Morsel of Crab Meat
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
@@ -37,7 +36,7 @@ root(ROOTS.Unsorted, {
 			i(269720),	-- Corrosive Hekte
 			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
-			i(270346),	-- Big Meaty Claw
+
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
@@ -121,8 +120,6 @@ root(ROOTS.Unsorted, {
 			i(276411),	-- [PH] Rainbow Axe - 2h - Purple
 			i(276415),	-- [PH] Rainbow Mace- 1h - Purple
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
-			i(276547),	-- Afflicted Soul
-			i(276548),	-- Tormented Soul
 			i(276550),	-- Wind Serpent - White
 			i(276552),	-- Wind Serpent - Pink
 			i(276611),	-- Clam Stuffed Crab
@@ -902,10 +899,7 @@ root(ROOTS.Unsorted, {
 				}),
 			}),
 			n(DECOR, {
-				i(273640),	-- Condensed Anima Orb (DECOR!)
-				i(272355),	-- Orchestrion of Echoing Atonement (DECOR!)
 				i(263883),	-- Small Sturdy Wooden Trellis (DECOR!)
-				i(272356),	-- Throne of Subjugated Souls (DECOR!)
 			}),
 			filter(MISC, {
 				i(267278),	-- Angler Pearls
@@ -926,15 +920,11 @@ root(ROOTS.Unsorted, {
 				i(268362),	-- Gilnean Copper Charger (MOUNT!)
 				i(268360),	-- Gilnean Iron Charger (MOUNT!)
 			}),
-			filter(BATTLE_PETS, {
-				i(273021),	-- Sha-Warped Hippogryph Hatchling
-			}),
 			filter(QUEST_ITEMS, {
 				i(259473),	-- Charred Amani Trinket
 				i(259474),	-- Lost Amani Toy
 				i(259475),	-- Misplaced Loa Statue
 			}),
-			i(274427),	-- Sha Loot Box
 		})),
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
 			n(WEAPONS, {

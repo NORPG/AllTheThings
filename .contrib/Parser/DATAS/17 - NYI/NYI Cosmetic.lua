@@ -1388,18 +1388,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 12.0.5
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
 			n(SETS, {
-				------ Sire's Ornate Attire Set ------
-				i(270222),	-- Ensemble: Sire's Ornate Attire
-				q(95681),	-- Ensemble: Sire's Ornate Attire
-				i(270212),	-- Sire's Ornate Collar
-				i(270213),	-- Sire's Ornate Treads
-				i(270215),	-- Sire's Ornate Vestments
-				i(270216),	-- Sire's Ornate Gloves
-				i(270217),	-- Sire's Ornate Leggings
-				i(270218),	-- Sire's Ornate Mantle
-				i(270219),	-- Sire's Ornate Cloak
-				i(270220),	-- Sire's Ornate Bracers
-				i(270221),	-- Sire's Ornate Belt
 
 				------ Azshara's Darkscale Set ------
 				i(269797),	-- Ensemble: Azshara's Darkscale Raiment
