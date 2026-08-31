@@ -72,6 +72,25 @@ i(265937, 446902);	-- Polly Roger
 i(0, 446902);		-- Polly Roger
 -- #endif
 
+--- Wrath/CATA/MOP CLASSIC CN ONLY ---
+i(265944, 1250045);	-- Ashened Cataclysm (CN ONLY)
+i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+-- #if AFTER 5.5.2
+i(226805, 459486);	-- Golden Ashes of Al'ar		(CN Only)
+-- #else
+i(0, 459486);		-- Golden Ashes of Al'ar		(CN Only)
+-- #endif
+i(268706, 1283471);	-- Golden Ashened Cataclysm (CN ONLY)
+i(226812, 459538);	-- Harmonius Greetings Bear (CN ONLY)
+-- #if AFTER 5.5.2
+i(232614, 471440);	-- Skybound Spectral Tiger		(CN Only)
+-- #else
+i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
+-- #endif
+i(272920, 1291315);	-- Spring Panda (CN ONLY)
+i(268924, 1284044);	-- Scorching Imperial Quilen (CN ONLY)
+i(254735, 1285725);	-- Thunderhoof Celestial (CN ONLY)
+
 -- Wrath Titanforged
 i(0, 1280400);		-- Reforged Invincible
 i(269659, 1266982);	-- The Sire's Palanquin
@@ -111,26 +130,6 @@ i(276082, 1298515);	-- Spectral Gryphon
 i(276081, 1298516);	-- Spectral Wind Rider
 i(276075, 1298512);	-- Stormcrow
 i(0, 1301737);		-- Sunflash Driftmoth
-
-
---- MOP CLASSIC CN ONLY ---
-i(265944, 1250045);	-- Ashened Cataclysm (CN ONLY)
-i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
--- #if AFTER 5.5.2
-i(226805, 459486);	-- Golden Ashes of Al'ar		(CN Only)
--- #else
-i(0, 459486);		-- Golden Ashes of Al'ar		(CN Only)
--- #endif
-i(268706, 1283471);	-- Golden Ashened Cataclysm (CN ONLY)
-i(226812, 459538);	-- Harmonius Greetings Bear (CN ONLY)
--- #if AFTER 5.5.2
-i(232614, 471440);	-- Skybound Spectral Tiger		(CN Only)
--- #else
-i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
--- #endif
-i(272920, 1291315);	-- Spring Panda (CN ONLY)
-i(268924, 1284044);	-- Scorching Imperial Quilen (CN ONLY)
-i(254735, 1285725);	-- Thunderhoof Celestial (CN ONLY)
 
 
 --- NYI ---
