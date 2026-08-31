@@ -36,7 +36,6 @@ root(ROOTS.Unsorted, {
 			i(269720),	-- Corrosive Hekte
 			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
-
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon

@@ -527,12 +527,16 @@ root(ROOTS.Promotions, {
 				},
 			})));
 			-- Season 2
-			i(250293, {	-- Red Hot Portable Bakery
+			i(250293, {	-- Red Hot Portable Bakery (COSMETIC!)
 				["description"] = "McDonald's UK exclusive promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",
 				["timeline"] = { "added 12.1.0.69465", "removed 12.1.0.99999" },	-- Removed 28th September 2026
 				["u"] = REAL_MONEY,
 			}),
-
+			i(251038, {	-- Emerrrgl (PET!)
+				["description"] = "Available with the purchase of an Emrrrgl Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",
+				["timeline"] = { ADDED_12_1_0 },
+				["u"] = REAL_MONEY,
+			}),
 			-- Season 3
 
 		--	i(500001, {	-- The PVE/PVP Banner temporary item	-- TEMPLATE

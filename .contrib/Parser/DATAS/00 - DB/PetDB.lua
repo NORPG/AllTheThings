@@ -4649,6 +4649,7 @@ i(280189, 5134);	-- Cauldron Concoction
 i(270254, 5031);	-- Caustic Writhling
 i(275631, 5071);	-- Corrosive Writhling
 i(270249, 5029);	-- Cursed Spawn
+i(251038, 4893);	-- Emerrrgl
 i(270211, 5027);	-- Furiostraza
 i(270253, 5030);	-- Jaundiced Slitherer
 i(282417, 5164);	-- J'imothy
@@ -4682,7 +4683,6 @@ i(277319, 5117);	-- Cat'Thuzad
 i(278230, 5123);	-- Classic Clockwork Quacker
 i(0, 5061);		-- Crabbers
 i(274925, 5067);	-- Delta
-i(251038, 4893);	-- Emerrrgl
 i(277282, 5115);	-- Kirin Tor Cat
 i(277270, 5114);	-- Kirin Tor Kitty
 i(277321, 5118);	-- Mewkahen
