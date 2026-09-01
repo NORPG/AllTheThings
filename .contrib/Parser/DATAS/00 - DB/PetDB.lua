@@ -4638,7 +4638,6 @@ i(275663, 5074);	-- Silento
 i(262768, 4965);	-- Sleepy Mandrake
 i(272956, 5052);	-- Sunflicker Driftmoth
 i(246723, 4860);	-- Unfazed Diver
---- UNSORTED ---
 i(266912, 5080);	-- Pinky
 
 ------------------
