@@ -132,11 +132,9 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}, {
 				["groups"] = {
-					-- Board game rewards
 					i(257515),	-- Lil' Coalee (PET!)
 					i(38311),	-- Tabard of the Void
 					i(235343),	-- Topsy Turvy Joker's Mask (COSMETIC!)
-					-- Shop rewards TODO: missing cost and the currency used
 					i(253404),	-- Auspicious Pixiu (PET!)
 					iensemble(257547),	-- Ensemble: Scorching Conqueror (COSMETIC!)
 					i(253244),	-- Lunar Celebrant's Aquarium (DECOR!)
