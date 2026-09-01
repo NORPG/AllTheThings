@@ -4633,12 +4633,12 @@ i(271185, 5041);	-- Emberlyn
 i(252195, 4898);	-- Fishstick Keith
 i(275662, 5073);	-- Frosticus Maximus
 i(274150, 5064);	-- Murk'atath
+i(266912, 5080);	-- Pinky
 i(260885, 4949);	-- Shadowflame Remnant
 i(275663, 5074);	-- Silento
 i(262768, 4965);	-- Sleepy Mandrake
 i(272956, 5052);	-- Sunflicker Driftmoth
 i(246723, 4860);	-- Unfazed Diver
-i(266912, 5080);	-- Pinky
 
 ------------------
 -- PATCH 12.1.0 --
