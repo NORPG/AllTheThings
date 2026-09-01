@@ -56,6 +56,23 @@ root(ROOTS.Promotions, {
 				i(226812), -- Harmonious Greetings Bear (PET!)
 			},
 		}));
+		n(DELUXEBUNDLE2025CLASSIC, sharedDataSelf({
+			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			["u"] = REAL_MONEY,
+		}, {
+			["groups"] = {
+				i(248263), -- Azure Sea Boat (TOY!)(Classic)
+			--	i(247848), -- "Quietwater Angler" Title (Classic)
+				i(109013),	-- Reins of the Dread Raven (MOUNT!)(Classic)				
+				-- 12-Month Subscription Bundle
+				mount(463045), -- Lava Drake (MOUNT!)(Classic and Titan)
+				i(258883), -- Sha-scarred Drake (MOUNT!)(Classic and Titan)				
+				-- 6-Month Subscription Bundle
+				i(231312), -- Timbered Air Snakelet (PET!)(Classic and Titan)
+				i(267301), -- Smoldering Courage (PET!)(Classic)(Only Classic?)
+				i(266129), -- Sa'bak's Favored (PET!)(Classic)(Only Classic?)
+			},
+		})),
 		n(LUCKY_BAMBOO_TILES, sharedDataSelf({
 			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
 		}, {
@@ -85,6 +102,21 @@ root(ROOTS.Promotions, {
 				-- #endif
 			},
 		}));
+		n(DELUXEBUNDLE2026, sharedDataSelf({
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
+			["u"] = REAL_MONEY,
+		}, {
+			["groups"] = {				
+				i(274967), -- Varian's Dragon Spirit (TOY!)
+				i(274967), -- Varian's Dragon Throne (TOY!)
+				i(258883), -- Sha-scarred Drake (MOUNT!)
+				i(277193), -- Sunflutter Driftmoth (PET!)
+				i(267301), -- Smoldering Courage (PET!)
+				-- Duplicate Reward Program (6 August to 31 October 2026)
+				i(85870),  -- Reins of the Guardian Quilen (MOUNT!) [Classic/Titan]
+				i(85872),  -- Lashtail Hatchling (PET!) [Classic/Titan]
+			},
+		})),
 		-- TODO: This Event + Treasure of Azeroth, Lunar New Year, and Crimson Tide Treasure
 		--[[n(AZURESPAN_TREASURETROVE, sharedDataSelf({
 			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },

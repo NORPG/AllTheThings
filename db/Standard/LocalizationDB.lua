@@ -1764,6 +1764,9 @@ localize(L.HEADER_NAMES, {
 	[-780] = "CN Promotions (Retail)",
 	[-781] = "CN WoW's 21st Anniversary",
 	[-782] = "CN Promotions (Classic)",
+	[-783] = "20th Anniversary Bundle",
+	[-784] = "20th Anniversary Bundle Classic",
+	[-785] = "21st Anniversary Bundle",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1895,6 +1898,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-780] = "These promotions are limited to the Chinese Realms.",
 	[-781] = "Exclusive to China, celebrating the 21st Anniversary starting 6 August 2026,",
 	[-782] = "These promotions are limited to the Classic & Titanforged Chinese Realms.",
+	[-783] = "The 2025 bundle was available from 16 July to 15 October 2025",
+	[-784] = "The 2025 bundle was available from 16 July to 15 October 2025",
+	[-785] = "The 2026 bundle was available from 6 August to 31 October 2026.\n\nPlayers who already owned a reward from the bundle can exchange it for alternate rewards or Trader's Tender.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2532,6 +2538,9 @@ localize(L.HEADER_ICONS, {
 	[-780] = _.asset("expansion_tww"),
 	[-781] = 133783,
 	[-782] = _.asset("expansion_wotlk"),
+	[-783] = 133783,
+	[-784] = 133783,
+	[-785] = 133783,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

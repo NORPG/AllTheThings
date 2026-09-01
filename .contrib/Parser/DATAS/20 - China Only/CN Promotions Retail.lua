@@ -108,6 +108,25 @@ root(ROOTS.Promotions, {
 					i(89783, {["timeline"] = { ADDED_12_1_0 }}),	-- Son of Galleon's Saddle (MOUNT!) (August 2026)
 				},
 			})),
+			n(DELUXEBUNDLE2025, sharedDataSelf({
+				["timeline"] = { "added 11.2.5", "removed 11.2.7" }, -- 16 July to 15 October 2025.
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					i(242534), -- Azure Sea Skiff (TOY)
+					iensemble(244231), -- Ensemble: Stillwater Fisher Attire
+					-- 12-Month Subscription Bundle
+					i(247848), -- Astral Aurochs (MOUNT!)
+					i(225250), -- Startouched Furline (MOUNT!)
+					i(243194), -- Grandiose Grrloc (MOUNT!)
+					i(228751), -- Gigantic Grrloc (MOUNT!)
+					
+					-- 6-Month Subscription Bundle
+					i(231297), -- Timbered Sky Snake (MOUNT!)
+					i(248681), -- Scorching Valor (MOUNT!)
+					i(239076), -- Herald of Sa'bak (MOUNT!)
+				},
+			})),
 			n(LUNARNEWYEAR, sharedDataSelf({
 				["timeline"] = { ADDED_12_0_0, REMOVED_12_0_1_LAUNCH },
 				["u"] = REAL_MONEY,
@@ -263,6 +282,23 @@ root(ROOTS.Promotions, {
 					}),
 					i(272920),	-- Spring Panda (MOUNT!)
 					--	Trader's Tender x200 (CURRENCY!)
+				},
+			})),
+			n(DELUXEBUNDLE2026, sharedDataSelf({
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					iensemble(272335), -- Ensemble: Varian's Azure Dragon Attire (TRANSMOG!)
+					i(274967), -- Varian's Dragon Throne (TOY!)
+					i(273655), -- Sunflare Driftmoth (MOUNT!)
+					i(247848), -- Astral Aurochs (MOUNT!)
+					i(243194), -- Grandiose Grrloc (MOUNT!)
+					i(248681), -- Scorching Valor (MOUNT!)
+					-- Duplicate Reward Program (6 August to 31 October 2026)
+					i(208385), -- Bound Blizzard (MOUNT!) [retail]
+					i(199659), -- Gargantuan Grrloc (MOUNT!) [retail]
+					i(199661), -- Telix the Stormhorn (MOUNT!) [retail]
 				},
 			})),
 			n(AZURESPAN_TREASURETROVE, sharedDataSelf({

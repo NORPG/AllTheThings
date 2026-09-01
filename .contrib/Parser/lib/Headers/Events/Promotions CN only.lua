@@ -18,25 +18,54 @@ AZEROTH_ADVENTURE_HANDBOOK = createHeader({
 		en = "Azeroth Adventure Handbook is a China-exclusive promotional event for retail only. Players can complete tasks to earn the listed rewards below. The 'Murloc Black Market' is also permanently available and rotates a drop pool irregularly, featuring rewards from WoW Remix: Mists of Pandaria. It was brought back for WoW's 21st Anniversary celebration, running from 13 August to 2 December 2026.",
 	},
 });
-
-QUICKSAND_SECRET_TREASURE_VAULT = createHeader({
-	readable = "Quicksand Secret Treasure Vault",
-	icon = 7360957,
+CN_WOW_ANNIVERSARY_TWENTYONE = createHeader({
+	readable = "CN WoW's 21st Anniversary",
+	icon = 133783,
 	text = {
-		en = "Quicksand Secret Treasure Vault",
-		-- TODO: de = "",
-	--	es = "Tesoro Escondido de las Tierras Azures",
-	--	mx = "Tesoro escondido del Trecho Azur",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		en = "CN WoW's 21st Anniversary",
 	},
 	description = {
-		en = "Quicksand Secret Treasure Vault is a China-exclusive promotional event for World of Warcraft, first launched on 18 November 2025 along with the Titan Reforged servers and lasting to 31 December 2025. Players were able to complete tasks to obtain 'Sands of Time' that can be traded in for one of the rewards.\n\nThis campaign came back with the Lunar New Year Adventure event, running from 5 February to 13 March 2026. It came back once again as part of the 21st Anniversary celebration, running from 13 August to 11 September 2026.",
+		en = "Exclusive to China, celebrating the 21st Anniversary starting 6 August 2026,",
+	},
+});
+DELUXEBUNDLE2025 = createHeader({
+	readable = "20th Anniversary Bundle",
+	icon = 133783,
+	text = {
+		en = "20th Anniversary Bundle",
+	},
+	description = {
+		en = "The 2025 bundle was available from 16 July to 15 October 2025",
+	},
+});
+DELUXEBUNDLE2025CLASSIC = createHeader({
+	readable = "20th Anniversary Bundle Classic",
+	icon = 133783,
+	text = {
+		en = "20th Anniversary Bundle Classic",
+	},
+	description = {
+		en = "The 2025 bundle was available from 16 July to 15 October 2025",
+	},
+});
+DELUXEBUNDLE2026 = createHeader({
+	readable = "21st Anniversary Bundle",
+	icon = 133783,
+	text = {
+		en = "21st Anniversary Bundle",
+	},
+	description = {
+		en = "The 2026 bundle was available from 6 August to 31 October 2026.\n\nPlayers who already owned a reward from the bundle can exchange it for alternate rewards or Trader's Tender.",
+	},
+});
+DELUXEBUNDLE2026CLASSIC = createHeader({
+	readable = "21st Anniversary Bundle Classic",
+	icon = 133783,
+	text = {
+		en = "21st Anniversary Bundle Classic",
+	},
+	description = {
+		en = "The 2026 bundle was available from 6 August to 31 October 2026.\n\nPlayers who already owned a reward from the bundle can exchange it for alternate rewards or Trader's Tender.",
 	},
 });
 LUNARNEWYEAR = createHeader({
@@ -150,6 +179,27 @@ THIRD_TIER_CNONLY = createHeader({
 	},
 });
 
+QUICKSAND_SECRET_TREASURE_VAULT = createHeader({
+	readable = "Quicksand Secret Treasure Vault",
+	icon = 7360957,
+	text = {
+		en = "Quicksand Secret Treasure Vault",
+		-- TODO: de = "",
+	--	es = "Tesoro Escondido de las Tierras Azures",
+	--	mx = "Tesoro escondido del Trecho Azur",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+	description = {
+		en = "Quicksand Secret Treasure Vault is a China-exclusive promotional event for World of Warcraft, first launched on 18 November 2025 along with the Titan Reforged servers and lasting to 31 December 2025. Players were able to complete tasks to obtain 'Sands of Time' that can be traded in for one of the rewards.\n\nThis campaign came back with the Lunar New Year Adventure event, running from 5 February to 13 March 2026. It came back once again as part of the 21st Anniversary celebration, running from 13 August to 11 September 2026.",
+	},
+});
+
 TREASURE_OF_AZEROTH = createHeader({
 	readable = "Treasures of Azeroth",
 	icon = 7259806,
@@ -164,16 +214,5 @@ TREASURE_OF_AZEROTH = createHeader({
 		es = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
 		mx = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
 		cn = "为庆祝泰坦重铸服务器上线，中国玩家可参与艾泽拉斯宝藏活动，赢取全新奖励。奖励不跨游戏类型共享，需在各自版本中分别获取",
-	},
-});
-
-CN_WOW_ANNIVERSARY_TWENTYONE = createHeader({
-	readable = "CN WoW's 21st Anniversary",
-	icon = 133783,
-	text = {
-		en = "CN WoW's 21st Anniversary",
-	},
-	description = {
-		en = "Exclusive to China, celebrating the 21st Anniversary starting 6 August 2026,",
 	},
 });

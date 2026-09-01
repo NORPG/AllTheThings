@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cl,crit,cs,d,de,en,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.NeverImplemented={
 h(-12,{
 x(1,{
@@ -10039,7 +10039,7 @@ s(293233,246977,{f=2,loc=42}),
 s(293231,246975,{f=2,loc=46}),
 s(293234,246978,{f=2,loc=41}),
 s(293236,246980,{f=2,loc=47}),
-i(244231,{f=55,spellID=1236676}),
+en(244231,{spellID=1236676}),
 q(90930),
 s(292049,244229,{f=2,loc=41}),
 s(292133,244352,{f=3}),

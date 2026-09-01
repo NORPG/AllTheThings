@@ -1,6 +1,10 @@
 -------------------------------------
 --     I N - G A M E   S H O P     --
 -------------------------------------
+
+-- Content of this folder will automatically merge into the IngameShop File in the Game.
+-- Listing China Only Things here for easier accessibility
+
 -- #if AFTER 2.0.1
 root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 	filter(BATTLE_PETS, {	-- AVAILABLE --
