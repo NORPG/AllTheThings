@@ -125,10 +125,6 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					}),
 				},
 			}),
-			cnONLY(i(33225, {	-- Reins of the Swift Spectral Tiger
-				["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
-				["u"] = REMOVED_FROM_GAME,
-			})),
 			-- #if CLASSIC_ANNIVERSARY
 			-- 2026 March 17 through May 15
 			q(96254, {	-- An Unexpected Delivery
@@ -351,28 +347,6 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["description"] = "Obtained if you set up a 3 Month WoW Subscription between 8th January 2024 until 8th April 2024.",
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			cnONLY(mount(471440, {	-- Skybound Spectral Tiger
-				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
-				["description"] = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original for a limited time in the Ingame Shop.",
-			})),
-			cnONLY(mount(1217476, {	-- Blazing Royal Fire Hawk (CN Only)
-				["description"] = "Rewarded from the Treasure Workshop.",
-				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
-			})),
-			cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
-				["description"] = "Can be bought for ¥200 RMB (~$27 USD) for a limited time in the Ingame Shop.",
-				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
-				["groups"] = {
-					cnONLY(i(227362)),	-- Golden Ashes of Al'ar (CN Only)
-					cnONLY(i(49284)),	-- Reins of the Swift Spectral Tiger
-					cnONLY(i(49283)),	-- Reins of the Spectral Tiger
-					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME
-					cnONLY(i(49285)),	-- X-51 Nether-Rocket
-					cnONLY(i(45047)),	-- Sandbox Tiger
-					cnONLY(i(35223)),	-- Papa Hummel's Old-Fashioned Pet Biscuit
-					cnONLY(i(46779)),	-- Path of Cenarius
-				},
-			})),
 		},
 	}),
 	expansion(EXPANSION.CATA, {
@@ -398,38 +372,6 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 			pet(4850, {	-- Sa'bak's Blessed
 				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 15th July 2025.",
 			}),
-			-- Note: Also available in WoW Classic: Titan Reforged
-			n(TREASURE_OF_AZEROTH, sharedDataSelf({
-				["timeline"] = { ADDED_5_5_2 },
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-					-- cnONLY(i(, {	-- Titan Reforged Treasure Coin TODO: Its currency to buy all the items
-						-- TODO: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251958.jpg
-						-- cnONLY(i()),	-- Emberbringer
-						cnONLY(i(76755)),	-- Tyrael's Charger
-						cnONLY(i(246264)),	-- Inarius' Charger 
-						cnONLY(i(76889)),	-- Spectral Gryphon 
-						cnONLY(i(76902)),	-- Spectral Wind Rider 
-						cnONLY(i(71726)),	-- Murkablo
-						cnONLY(i(72134)),	-- Gregarious Grell
-						cnONLY(i(72159)),	-- Magical Ogre Idol
-						cnONLY(i(79769)),	-- Demon Hunter's Aspect
-						-- cnONLY(i()),	-- A mysterious exotic item pack for Mists of Pandaria Classic
-						-- cnONLY(i()),	-- 10 Sands of Time (Different game?)
-						-- cnONLY(i()),	-- Shard of Titan Treasure Fragment	
-					-- })),
-				},
-			}));
-			-- Note: Also available in WoW Classic: Titan Reforged
-			cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
-				--["description"] = "todo: add price",
-				["timeline"] = {  ADDED_5_5_2, ADDED_5_5_4 },	-- 2nd April 2026
-				["groups"] = {
-				--	cnONLY(i()),	-- Blazing Quilen mount (MOUNT!)
-					cnONLY(i(267279)),	-- Embers of Al'ar (TOY!)
-				},
-			})),
 		},
 	}),
 	-- #endif

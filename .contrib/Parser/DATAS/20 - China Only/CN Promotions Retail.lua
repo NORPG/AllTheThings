@@ -177,9 +177,9 @@ root(ROOTS.Promotions, {
 							i(49283),	-- Reins of the Spectral Tiger (MOUNT!)
 							i(49286),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
 							i(49285),	-- X-51 Nether-Rocket (MOUNT!)
-							},
-						}),
-					},
+						},
+					}),
+				},
 			})),
 			n(CRIMSONTIDE_TREASURETROVE, sharedDataSelf({
 				["timeline"] = { ADDED_12_0_1, REMOVED_12_0_7 },	-- April 23rd through May 23rd 2026

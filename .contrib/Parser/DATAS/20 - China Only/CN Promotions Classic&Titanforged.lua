@@ -42,6 +42,45 @@ CN_PROMOTIONS_CLASSIC = createHeader({
 });
 root(ROOTS.Promotions, {
 	cnONLY(n(CN_PROMOTIONS_CLASSIC, {
+		cnONLY(i(33225, {	-- Reins of the Swift Spectral Tiger
+			["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
+			["u"] = REMOVED_FROM_GAME,
+		})),
+		cnONLY(mount(471440, {	-- Skybound Spectral Tiger
+			["timeline"] = { ADDED_3_4_3, "removed 3.4.5", "added 5.5.2", "removed 5.5.10" },
+			["description"] = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original from October 2024 to 7 January 2025 in the Ingame Shop. The bundle returned for 2026.",
+		})),
+		n(TREASURE_OF_AZEROTH, sharedDataSelf({
+			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.2", "removed 5.5.10" },
+			["u"] = REAL_MONEY,
+		}, {
+			["groups"] = {
+				-- cnONLY(i(, {	-- Titan Reforged Treasure Coin TODO: Its currency to buy all the items
+					-- TODO: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251958.jpg
+					-- cnONLY(i()),	-- Emberbringer
+					cnONLY(i(76755)),	-- Tyrael's Charger
+					cnONLY(i(246264)),	-- Inarius' Charger 
+					cnONLY(i(76889)),	-- Spectral Gryphon 
+					cnONLY(i(76902)),	-- Spectral Wind Rider 
+					cnONLY(i(71726)),	-- Murkablo
+					cnONLY(i(72134)),	-- Gregarious Grell
+					cnONLY(i(72159)),	-- Magical Ogre Idol
+					cnONLY(i(79769)),	-- Demon Hunter's Aspect
+					-- cnONLY(i()),	-- A mysterious exotic item pack for Mists of Pandaria Classic
+					-- cnONLY(i()),	-- 10 Sands of Time (Different game?)
+					-- cnONLY(i()),	-- Shard of Titan Treasure Fragment	
+				-- })),
+			},
+			-- Note: Also available in WoW Classic: Titan Reforged
+			cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
+				--["description"] = "todo: add price",
+				["timeline"] = {  ADDED_5_5_2, ADDED_5_5_4 },	-- 2nd April 2026
+				["groups"] = {
+				--	cnONLY(i()),	-- Blazing Quilen mount (MOUNT!)
+					cnONLY(i(267279)),	-- Embers of Al'ar (TOY!)
+				},
+			})),
+		})),
 		n(QUICKSAND_SECRET_TREASURE_VAULT, sharedDataSelf({
 			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
 		}, {
