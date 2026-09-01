@@ -5000,16 +5000,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					-- #endif
 					["timeline"] = { REMOVED_3_0_2 },
-					["sym"] = {
-						-- #if BEFORE TBC
-						-- Grand Marshal Armor
+					-- #if BEFORE TBC
+					["sym"] = {	-- Grand Marshal Armor
 						{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE },
 						{ "pop" },
 						{ "exclude", "headerID", WEAPONS },
 						-- #if BEFORE WRATH
 						{ "exclude", "f", TRINKET_F, NECK_F },
 						-- #endif
-						-- #elseif BEFORE 3.0.2.8970
+					},
+					-- #elseif BEFORE 3.0.2.8970
+					["sym"] = {
 						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR }, { "finalize" },	-- Vengeful Gladiator's Set
 						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
 						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
@@ -5018,8 +5019,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"pop"},
 						{ "exclude", "headerID", WEAPONS, BACK },
 						{ "exclude", "filterID", NECK_F, FINGER_F, RELICS_F, TRINKET_F },
-						-- #endif
 					},
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(49877, {	-- Captain Lancy Revshon <Stormwind Quartermaster>

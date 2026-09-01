@@ -164,7 +164,6 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_12_0_7, "removed 12.0.7.68453" },	-- Removed July 15th
 			}),
 			i(273655, {	-- Sunflare Driftmoth (MOUNT!)
-			["timeline"] = { ADDED_12_0_7 },
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",
 				["timeline"] = { ADDED_12_0_7 },
 				["u"] = REAL_MONEY,

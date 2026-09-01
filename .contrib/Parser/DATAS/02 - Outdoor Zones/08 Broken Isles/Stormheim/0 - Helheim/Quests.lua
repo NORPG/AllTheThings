@@ -98,12 +98,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(BONUS_OBJECTIVES, sharedData({
-						-- #if BEFORE DF
-						["lockCriteria"] = { 1, "lvl", 45 },
-						-- #else
-						["lockCriteria"] = { 1, "lvl", 60 },
-						-- #endif
-					},{
+						["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
+						["lockCriteria"] = {
+							-- #if AFTER DF
+							1, "lvl", 60,
+							-- #else
+							1, "lvl", 45,
+							-- #endif
+						},
+					}, {
 						q(38343),	-- Raze Hel
 					})),
 				}),

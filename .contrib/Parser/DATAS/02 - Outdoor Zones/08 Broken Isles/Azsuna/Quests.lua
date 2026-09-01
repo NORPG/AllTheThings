@@ -924,13 +924,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 53.7, 16.7, AZSUNA },
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
-				-- #if BEFORE DF
-				["lockCriteria"] = { 1, "lvl", 45 },
-				-- #else
-				["lockCriteria"] = { 1, "lvl", 60 },
-				-- #endif
+				["lockCriteria"] = {
+					-- #if AFTER DF
+					1, "lvl", 60,
+					-- #else
+					1, "lvl", 45,
+					-- #endif
+				},
 				["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
-			},{
+			}, {
 				-- TODO: Check SQ, also probably can't do after a certain level
 				q(37965),	-- A Tainted Vintage
 				q(42020),	-- Bonus Objective: Hatecoil Warcamp

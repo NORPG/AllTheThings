@@ -1152,6 +1152,20 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					["description"] = "Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",
 				}),
 				i(21881, {	-- Netherweb Spider Silk
+					["description"] =
+						-- #if AFTER CATA
+						"Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Karazhan and Terokkar Forest.",
+						-- #else
+						"Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Terokkar Forest.",
+						-- #endif
+					["coords"] = {
+						{ 52.3, 78.5, TEROKKAR_FOREST },	-- Netherweb Ridge
+						{ 54.8, 59.8, TEROKKAR_FOREST },	-- Allerian Stronghold, west of
+						{ 44.6, 34.3, TEROKKAR_FOREST },	-- Cenarion Thicket, south of
+					},
+					-- #if AFTER CATA
+					["maps"] = { KARAZHAN },
+					-- #endif
 					["crs"] = {
 						-- #if AFTER CATA
 						15170,	-- Coldmist Stalker
@@ -1160,17 +1174,6 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 						18466,	-- Dreadfang Lurker
 						18467,	-- Dreadfang Widow
 					},
-					["coords"] = {
-						{ 52.3, 78.5, TEROKKAR_FOREST },	-- Netherweb Ridge
-						{ 54.8, 59.8, TEROKKAR_FOREST },	-- Allerian Stronghold, west of
-						{ 44.6, 34.3, TEROKKAR_FOREST },	-- Cenarion Thicket, south of
-					},
-					-- #if AFTER CATA
-					["description"] = "Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Karazhan and Terokkar Forest.",
-					["maps"] = { KARAZHAN },
-					-- #else
-					["description"] = "Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Terokkar Forest.",
-					-- #endif
 				}),
 			},
 			-- _________________________________

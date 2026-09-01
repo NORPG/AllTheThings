@@ -3625,11 +3625,14 @@ root(ROOTS.Zones, {
 					applyclassicphase(MOP_PHASE_ESCALATION, i(97980, {	-- Hozen-Fur Fuse (QI!)
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 						-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
-						-- #if BEFORE 5.5.3
-						["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
-						-- #elseif BEFORE LEGION
-						["description"] = "Best farmed by doing The Burlap Grind quest. This can take more than a few hundred kills to drop.",
-						-- #endif
+						["description"] =
+							-- #if BEFORE 5.5.3
+							"This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+							-- #elseif BEFORE LEGION
+							"Best farmed by doing The Burlap Grind quest. This can take more than a few hundred kills to drop.",
+							-- #else
+							nil,
+							-- #endif
 						["crs"] = {
 							60742,	-- Broketooth Leaper
 							60743,	-- Broketooth Ravager

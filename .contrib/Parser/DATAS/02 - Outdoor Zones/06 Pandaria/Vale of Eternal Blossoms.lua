@@ -696,11 +696,13 @@ root(ROOTS.Zones, {
 						["description"] = "This is a rare Tameable Hunter Pet of 4 varying colors.",
 					}),
 					n(50780, {	-- Sahn Tidehunter
-						-- #if MOP_BEFORE_SOO
-						["coord"] = { 61.7, 55.4, VALE_OF_ETERNAL_BLOSSOMS },
-						-- #else
-						["coord"] = { 69.4, 30.5, VALE_OF_ETERNAL_BLOSSOMS },
-						-- #endif
+						["coords"] = {
+							-- #if MOP_BEFORE_SOO
+							{ 61.7, 55.4, VALE_OF_ETERNAL_BLOSSOMS },
+							-- #else
+							{ 69.4, 30.5, VALE_OF_ETERNAL_BLOSSOMS },
+							-- #endif
+						},
 						["groups"] = {
 							i(86582),	-- Aqua Jewel (TOY!)
 						},
