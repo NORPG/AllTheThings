@@ -623,7 +623,17 @@ de(15141,{awp=120005,itemID=263291,spellID=1270359,u=3}),
 de(12172,{itemID=258568,spellID=1263500,u=3}),
 de(9444,{itemID=253547,spellID=1256615,u=3}),
 i(272146,{awp=120005,spellID=1290352,u=3}),
-i(272992,{awp=120005,spellID=1291534,u=3})}}),
+i(272992,{awp=120005,spellID=1291534,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16098,{awp=120005,itemID=264721,spellID=1272517,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16101,{awp=120005,itemID=264724,spellID=1272520,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16102,{awp=120005,itemID=264725,spellID=1272521,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16099,{awp=120005,itemID=264722,spellID=1272518,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(21061,{awp=120005,itemID=269605,spellID=1285735,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(21060,{awp=120005,itemID=269604,spellID=1285734,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(21946,{awp=120005,itemID=272354,spellID=1291007,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16100,{awp=120005,itemID=264723,spellID=1272519,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(21945,{awp=120005,itemID=272353,spellID=1291006,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(17750,{awp=120005,itemID=266071,spellID=1277672,u=3}))}}),
 flt(100,{u=3,g={
 mnt(417888,{awp=110207,b=1,itemID=258479,lvl=10,u=3}),
 mnt(1282453,{awp=120005,itemID=268474,u=3}),

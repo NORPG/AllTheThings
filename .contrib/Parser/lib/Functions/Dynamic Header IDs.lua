@@ -118,7 +118,9 @@ HeaderAssignments = {
 	["Class Trial"] = -17,
 	["Classes"] = -18,
 	["Climbing"] = -461,
+	["CN Promotions (Classic)"] = -782,
 	["CN Promotions (Retail)"] = -780,
+	["CN WoW's 21st Anniversary"] = -781,
 	["Coca-Cola Giveaway"] = -747,
 	["Collector's Edition"] = -521,
 	["Combatant Gear"] = -294,
@@ -760,4 +762,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -781
+NextHeaderID = -783
