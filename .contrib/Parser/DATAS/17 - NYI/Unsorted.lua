@@ -672,9 +672,6 @@ root(ROOTS.Unsorted, {
 				-- Misc
 				i(274780),	-- Fungal Spore Vapor [NYI]
 			}),
-			filter(BATTLE_PETS, {
-				i(275818),	-- Pinky
-			}),
 			filter(COSMETIC, {
 				i(269751),	-- Artisan Sai
 				i(269752),	-- Nunchuck of the Artisan
