@@ -108,18 +108,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["provider"] = { "n", 250401 },	-- Marius Felbane
 				["coord"] = { 59.0, 78.0, ARCANTINA },
 				["maps"] = { 2558 },	-- Derelict Legion Vessel
-				["groups"] = {
-					o(613535, {	-- Dark Evil Corrupted Chest of Tormented Darkness
-						["coords"] = {
-							{ 49.9, 53.7, 2557 },	-- Derelict Legion Vessel
-							{ 50.1, 53.8, BROKEN_SHORE },
-						},
-						["questID"] = 92377,
-						["groups"] = { i(250874) },	-- Corrupted Lantern (QI!)
-					}),
-					--
-					i(253178),	-- Inactive Filigree Moon Lamp (DECOR!)
-				},
+				["groups"] = { i(253178) },	-- Inactive Filigree Moon Lamp (DECOR!)
 			}),
 			q(92326, {	-- The Fragrance of the Dunes
 				["provider"] = { "n", 250411 },	-- Nisha
@@ -191,7 +180,15 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["groups"] = { i(260165) },	-- Request for Reagents (PQI!)
 			})),
 		}),
-		n(TREASURES, {	-- "optional" Objects to loot while on or after completing Quests to get the Cost items for 'Highly Decorated'
+		n(TREASURES, {	-- "Optional" Objects to loot while on or after completing Quests to get the Cost items for 'Highly Decorated'
+			o(613535, {	-- Dark Evil Corrupted Chest of Tormented Darkness
+				["sourceQuest"] = 92320,	-- Still Behind Enemy Portals
+				["coords"] = {
+					{ 49.9, 53.7, 2557 },	-- Derelict Legion Vessel
+					{ 50.1, 53.8, BROKEN_SHORE },
+				},
+				["groups"] = { i(250874) },	-- Corrupted Lantern
+			}),
 			o(572030, {	-- Ebon Banner
 				["sourceQuest"] = 92321,	-- A Frostbitten Tally
 				["description"] = "On the left side of Lady Deathwhisper's room.",
@@ -248,6 +245,11 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["questID"] = 92385,
 				["cost"] = { { "i", 250882, 1 } },	-- Clefthoof Hide
 				["coord"] = { 37.0, 53.0, ARCANTINA },
+			}),
+			o(572449, {	-- Corrupted Lantern
+				["questID"] = 92377,
+				["cost"] = { { "i", 250874, 1 } },	-- Corrupted Lantern
+				["coord"] = { 75.3, 38.9, ARCANTINA },
 			}),
 			o(572457, {	-- Dried Roses
 				["questID"] = 92384,
@@ -384,7 +386,8 @@ root(ROOTS.Zones, m(ARCANTINA, {
 		})),
 		n(VENDORS, {
 			n(229333, {	-- Ari
-				--["coord"] = { 42.0, 50.1, ARCANTINA },
+				["coord"] = { 36.1, 21.6, ARCANTINA },
+				["timeline"] = { REMOVED_12_1_0 },
 				["groups"] = {
 					i(234526),	-- Archivist's Codex
 					i(267650),	-- Blood Knight Training Manual
@@ -414,7 +417,8 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				},
 			}),
 			n(259849, {	-- Janky <Candle Merchant>
-				--["coord"] = { 42.0, 50.1, ARCANTINA },
+				["coord"] = { 19.7, 48.2, ARCANTINA },
+				["timeline"] = { REMOVED_12_1_0 },
 				["groups"] = {
 					i(268112),	-- Argunite Beacon
 					i(268111),	-- Arkonite Beacon
