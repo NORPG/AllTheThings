@@ -432,7 +432,6 @@ root(ROOTS.Unsorted, {
 			i(279549),	-- Witch-Hunter's Undercoat
 			i(279551),	-- Radical's Gilded Vestment
 			i(279579),	-- Cruel Warrior's Blade
-			i(279590),	-- Venomous Champion's Illustrious Banner
 			i(279610),	-- Bundle of Adventurer Dawncrests
 			i(279611),	-- Satchel of Champion Dawncrests
 			i(279612),	-- Pack of Hero Dawncrests

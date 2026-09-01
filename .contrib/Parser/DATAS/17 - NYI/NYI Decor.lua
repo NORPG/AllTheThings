@@ -243,7 +243,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
 			i(250869),	-- Crimson Crystal Core (DECOR!)
 			i(265544),	-- Cuddly Basil Grrgle (DECOR!)
-			i(263303),	-- Cuddly Blue Grrgle (DECOR!)
 			i(265397),	-- Cuddly Bright Grrgle (DECOR!)
 			i(264681),	-- Cuddly Brown Grrgle (DECOR!)
 			i(263297),	-- Cuddly Cerulean Grrgle (DECOR!)

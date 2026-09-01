@@ -1097,17 +1097,8 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(260894, {	-- Cabbage Pseudoshell (MOUNT!)
 				["displayID"] = 139485,
 			}),
-			i(264273, {	-- Fel Spirehawk (MOUNT!)
-				["displayID"] = 140095,
-			}),
 			i(262706, {	-- Ferocious Snapvine (MOUNT!)
 				["displayID"] = 139691,
-			}),
-			i(263449, {	-- Fluffy Comfy Flying Quilt (MOUNT!)
-				["displayID"] = 139896,
-			}),
-			i(262661, {	-- Ghastropod (MOUNT!)
-				["displayID"] = 139670,
 			}),
 			i(263450, {	-- Gruffy Comfy Flying Quilt (MOUNT!)
 				["displayID"] = 139897,
