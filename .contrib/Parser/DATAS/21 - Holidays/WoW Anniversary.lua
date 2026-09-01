@@ -4614,6 +4614,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	}),
+	--[[cnONLY(n(CN_WOW_ANNIVERSARY_TWENTYONE, {	-- Yes CN is 1year Behind and celebrates 21st Bday 2026
+		["timeline"] = { ADDED_12_1_0 },
+	})),--]] -- todo
 })));
 --[[
 Quiz Answers:

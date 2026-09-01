@@ -1760,6 +1760,8 @@ localize(L.HEADER_NAMES, {
 	[-775] = "Titanforged Promotions",
 	[-776] = "Crimson Tide Treasure Trove",
 	[-777] = "Lucky Bamboo Tiles",
+	[-778] = "Quicksand Secret Treasure Vault",
+	[-780] = "CN Promotions (Retail)",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1887,6 +1889,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-775] = "System.Collections.Generic.List`1[System.Object]",
 	[-776] = "Crimson Tide Treasure is a China-exclusive promotional campaign for World of Warcraft, available through 23 April to 23 May 2026, where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards.",
 	[-777] = "Lucky Bamboo Tiles is a China-exclusive promotional campaign for World of Warcraft, available through 18 June to 8 July 2026, where players use 'Fortune Points' to flip tiles which provide rewards.",
+	[-778] = "Quicksand Secret Treasure Vault is a China-exclusive promotional event for World of Warcraft, first launched on 18 November 2025 along with the Titan Reforged servers and lasting to 31 December 2025. Players were able to complete tasks to obtain 'Sands of Time' that can be traded in for one of the rewards.\n\nThis campaign came back with the Lunar New Year Adventure event, running from 5 February to 13 March 2026. It came back once again as part of the 21st Anniversary celebration, running from 13 August to 11 September 2026.",
+	[-780] = "These promotions are limited to the Chinese Realms.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2520,6 +2524,8 @@ localize(L.HEADER_ICONS, {
 	[-775] = _.asset("expansion_mn"),
 	[-776] = 7360957,
 	[-777] = 7360957,
+	[-778] = 7360957,
+	[-780] = _.asset("expansion_tww"),
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

@@ -77,60 +77,6 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "removed 12.0.1.66198" },
 				["groups"] = { i(260785) },	-- The Dark Portal (DECOR!)
 			}),
-			n(LUNARNEWYEAR, sharedDataSelf({
-				["timeline"] = { ADDED_12_0_0, REMOVED_12_0_1_LAUNCH },
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-					-- Board game rewards
-					cnONLY(i(257515)),	-- Lil' Coalee (PET!)
-					cnONLY(i(38311)),	-- Tabard of the Void
-					cnONLY(i(235343)),	-- Topsy Turvy Joker's Mask (COSMETIC!)
-					-- Shop rewards TODO: missing cost and the currency used
-					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
-					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror (COSMETIC!)
-					cnONLY(i(253244)),	-- Lunar Celebrant's Aquarium (DECOR!)
-					cnONLY(i(253292)),	-- Lunar Celebrant's Bamboo Canister (DECOR!)
-					cnONLY(i(253291)),	-- Lunar Celebrant's Compact (DECOR!)
-					cnONLY(i(253254)),	-- Lunar Celebrant's Cradle (DECOR!)
-					cnONLY(i(253290)),	-- Lunar Celebrant's Ornate Vanity (DECOR!)
-					cnONLY(i(253256)),	-- Lunar Celebrant's Pillow Roll (DECOR!)
-					cnONLY(i(253257)),	-- Lunar Celebrant's Privacy Screen (DECOR!)
-					cnONLY(i(253293)),	-- Lunar Celebrant's Tea Tray (DECOR!)
-					cnONLY(i(253294)),	-- Lunar Celebrant's Teacup (DECOR!)
-					cnONLY(i(253295)),	-- Lunar Celebrant's Teapot (DECOR!)
-					cnONLY(i(253296)),	-- Lunar Celebrant's Tea Set (DECOR!)
-					cnONLY(i(253297)),	-- Lunar Celebrant's Vase with Maple Branch (DECOR!)
-					cnONLY(i(253255)),	-- Lunar Celebrant's Wide Pillow Roll (DECOR!)
-					cnONLY(i(258840)),	-- Gilded Fountain (TOY!)
-					cnONLY(i(253402)),	-- Scorching Polearm (COSMETIC!)
-					cnONLY(i(254735, {	-- Thunderhoof Celestial (MOUNT!)
-						["groups"] = {
-							cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
-							},
-						})),
-					-- Piramid Gacha Golden Landro box
-					cnONLY(i(269743, {	-- Landro's Golden Loot Box
-						-- #if AFTER 12.0.0
-						-- #if BEFORE 12.0.1
-						["description"] = "The loot box from 2025 was brought back with new rewards. The 2026 variant works similar where players can obtain up to 8 boxes for ¥1000 RMB (~$135 USD), while teaming up with other players and collectively spend at least ¥3000 RMB (~$405 USD), each member will receive an additional 4 boxes as a bonus.",
-						-- #endif
-						-- #endif
-						["groups"] = {
-							cnONLY(i(251542)),	-- Azure Drakefire
-							cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!) [BoE]
-							cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!) [BoE]
-							cnONLY(i(254736)),	-- Stormgilded Celestial (MOUNT!) [BoE]
-							cnONLY(i(255973)),	-- Sandbox Horse
-							-- Old Loot
-							cnONLY(i(46779)),	-- Path of Cenarius
-							cnONLY(i(49283)),	-- Reins of the Spectral Tiger (MOUNT!)
-							cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
-							cnONLY(i(49285)),	-- X-51 Nether-Rocket (MOUNT!)
-							},
-						})),
-					},
-			}));
 			i(264396, {	-- Naturally Elegant Doormat (DECOR!)
 				["description"] = "Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' and authorize the Account connection.",
 				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.99999" },	-- TODO: Timeline out. Available through September 30, 2026.
@@ -205,85 +151,6 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "added 12.0.1.66838", "removed 12.0.5.67451" },
 				["u"] = REAL_MONEY,
 			}),
-			cnONLY(n(CRIMSONTIDE_TREASURETROVE, sharedDataSelf({
-				["timeline"] = { ADDED_12_0_1, REMOVED_12_0_7 },	-- April 23rd through May 23rd 2026
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-					-- ===== RETAIL — Special Rewards =====
-					i(262344),	-- Scarlet Lady (MOUNT!)
-					i(269659),	-- The Sire's Palanquin (MOUNT!)
-
-					-- ===== RETAIL — Regular Rewards =====
-					i(273640),	-- Condensed Anima Orb (DECOR!)
-					iensemble(270222),	-- Ensemble: Sire's Ornate Attire (COSMETIC!)
-					i(262661),	-- Ghastropod (MOUNT!)
-					i(271631, { -- Light Guardian's Reward (ITEM!)
-						["description"] = "Contains a Quantum Token & if you are lucky the Quantum Courser.",
-					}),
-					i(262881),	-- Lil' Staropod (PET!)
-					i(272355),	-- Orchestrion of Echoing Atonement (DECOR!)
-					i(274427, { -- Sha Loot Box
-						["description"] = "1.25% chance for any of the following:",
-						["groups"] = {
-							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
-							i(269640),	-- Sha-Warped Owl (MOUNT!)
-							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
-							i(54860),	-- X-53 Touring Rocket (MOUNT!)
-						},
-					}),
-					i(272356),	-- Throne of Subjugated Souls (DECOR!)
-					--i(ITEMID_TODO),	-- Treasure Shard (CURRENCY!)
-					n(TOP_TIER_CNONLY, {
-						["groups"] = {
-							iensemble(270222),	-- Ensemble: Sire's Ornate Attire (COSMETIC!)
-							i(262344),	-- Scarlet Lady (MOUNT!)
-							i(210008),	-- Smoldering Rune of Binding (MOUNT!)
-							i(269659),	-- The Sire's Palanquin (MOUNT!)
-							i(246732),	-- Void-Forged Overseer (MOUNT!)
-						},
-					}),
-					n(FIRST_TIER_CNONLY, {
-						["groups"] = {
-							i(223459),	-- Blackrock Warsaber (MOUNT!)
-							i(262661),	-- Ghastropod (MOUNT!)
-							i(228751),	-- Gigantic Grrloc (MOUNT!)
-							i(203727),	-- Gleaming Moonbeast's Reins (MOUNT!)
-							i(243194),	-- Grandiose Grrloc (MOUNT!)
-							i(223471),	-- Kaldorei War Wolf (MOUNT!)
-							i(225250),	-- Startouched Furline (MOUNT!)
-						},
-					}),
-					n(SECOND_TIER_CNONLY, {
-						["groups"] = {
-							i(49704),	-- Carved Ogre Idol (TOY!)
-							i(79769),	-- Demon Hunter's Aspect (TOY!)
-							i(206268),	-- Ethereal Transmogrifier (TOY!)
-							i(229368),	-- Gill'el (PET!)
-							i(262881),	-- Lil' Staropod (PET!)
-							i(71726),	-- Murky's Little Soulstone (PET!)
-							i(272355),	-- Orchestrion of Echoing Atonement (DECOR!)
-							i(272356),	-- Throne of Subjugated Souls (DECOR!)
-							i(258482),	-- Ysergle (PET!)
-						},
-					}),
-					n(THIRD_TIER_CNONLY, {
-						["groups"] = {
-							i(206174),	-- Blub (PET!)
-							i(212722),	-- Buggsy (PET!)
-							i(273640),	-- Condensed Anima Orb (DECOR!)
-							i(33223),	-- Fishing Chair (DECOR!)
-							i(213556),	-- Hoplet (PET!)
-							i(223145),	-- Marrlok (PET!)
-							i(211432),	-- Teele (PET!)
-							i(193429),	-- Time-Lost Salamanther (PET!)
-							i(223339),	-- Trishi (PET!)
-							i(223474),	-- Worgli the Apprehensive (PET!)
-							i(220692),	-- X-treme Water Blaster Display (DECOR!)
-						},
-					}),
-				},
-			})));
 			i(265394, {	-- Cuddly Pearl Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_5, "removed 12.0.5.67602" },
@@ -296,30 +163,6 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between June 16th, 10:00 a.m. & July 14th, 10:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_7, "removed 12.0.7.68453" },	-- Removed July 15th
 			}),
-			cnONLY(n(LUCKY_BAMBOO_TILES, sharedDataSelf({
-				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-					-- ===== RETAIL — Base Pool =====
-					i(269604),	-- Auspicious Picnic Basket (DECOR!)
-					i(269605),	-- Auspicious Meal Case (DECOR!)
-					i(272353),	-- Auspicious Verdant Basin (DECOR!)
-					i(275999),	-- Flowering Mantle (COSMETIC!)
-					i(275818),	-- Pinky (PET!)
-					i(274427, { -- Sha Loot Box
-						["description"] = "1.25% chance for any of the following:",
-						["groups"] = {
-							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
-							i(269640),	-- Sha-Warped Owl (MOUNT!)
-							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
-							i(54860),	-- X-53 Touring Rocket (MOUNT!)
-						},
-					}),
-					i(272920),	-- Spring Panda (MOUNT!)
-					--	Trader's Tender x200 (CURRENCY!)
-				},
-			})));
 			i(273655, {	-- Sunflare Driftmoth (MOUNT!)
 			["timeline"] = { ADDED_12_0_7 },
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",
@@ -334,101 +177,7 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
 			}),
-			cnONLY(n(AZURESPAN_TREASURETROVE, sharedDataSelf({
-				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-					-- ===== RETAIL — Base Pool =====
-					i(274925),	-- Delta (PET!)
-					i(279006),	-- Fisher's Pack (COSMETIC!)
-					i(252194),	-- Fishmonger May (PET!)
-					i(271631, { -- Light Guardian's Reward (ITEM!)
-						["description"] = "Contains a Quantum Token & if you are lucky the Quantum Courser.",
-					}),
-					i(276625),	-- Puffin Pack (COSMETIC!)
-					i(274427, { -- Sha Loot Box
-						["description"] = "1.25% chance for any of the following:",
-						["groups"] = {
-							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
-							i(269640),	-- Sha-Warped Owl (MOUNT!)
-							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
-							i(54860),	-- X-53 Touring Rocket (MOUNT!)
-						},
-					}),
-					i(280457),	-- Shark Attack Pack (COSMETIC!)
-					i(280523),	-- Tuskarr Fire Pit (DECOR!)
-					i(280527),	-- Tuskarr Fishing Gear Rack (DECOR!)
-					i(280525),	-- Tuskarr Hanging Grill (DECOR!)
-					i(274037),	-- Tuskarr Hermit Crab (MOUNT!)
-					i(274730),	-- Tuskarr Ice Fishing Tent (TOY!)
-					--i(ITEMID_TODO),	-- Treasure Shard (CURRENCY!)
-					n(TOP_TIER_CNONLY, {
-						["groups"] = {
-							i(279006),	-- Fisher's Pack (COSMETIC!)
-							i(276625),	-- Puffin Pack (COSMETIC!)
-							i(280457),	-- Shark Attack Pack (COSMETIC!)
-							i(210008),	-- Smoldering Rune of Binding (MOUNT!)
-							i(274037),	-- Tuskarr Hermit Crab (MOUNT!)
-							i(246732),	-- Void-Forged Overseer (MOUNT!)
-						},
-					}),
-					n(FIRST_TIER_CNONLY, {
-						["groups"] = {
-							-- ===== RETAIL — Bonus: First-Tier =====
-							i(223459),	-- Blackrock Warsaber (MOUNT!)
-							i(258427),	-- Bound Blizzard (MOUNT!)
-							i(258423),	-- Gargantuan Grrloc (MOUNT!)
-							i(203727),	-- Gleaming Moonbeast's Reins (MOUNT!)
-							i(223471),	-- Kaldorei War Wolf (MOUNT!)
-							i(225250),	-- Startouched Furline (MOUNT!)
-							i(258477),	-- Telix the Stormhorn (MOUNT!)
-						},
-					}),
-					n(SECOND_TIER_CNONLY, {
-						["groups"] = {
-							-- ===== RETAIL — Bonus: Second-Tier =====
-							i(49704), 	-- Carved Ogre Idol (TOY!)
-							i(274925), 	-- Delta (PET!)
-							i(79769), 	-- Demon Hunter's Aspect (TOY!)
-							i(206268), 	-- Ethereal Transmogrifier (TOY!)
-							i(252194), 	-- Fishmonger May (PET!)
-							i(229368), 	-- Gill'el (PET!)
-							i(71726), 	-- Murky's Little Soulstone (PET!)
-							i(274730), 	-- Tuskarr Ice Fishing Tent (TOY!)
-							i(258482), 	-- Ysergle (PET!)
-						},
-					}),
-					n(THIRD_TIER_CNONLY, {
-						["groups"] = {
-							i(206174), 	-- Blub (PET!)
-							i(212722), 	-- Buggsy (PET!)
-							i(33223), 	-- Fishing Chair (DECOR!)
-							i(213556), 	-- Hoplet (PET!)
-							i(223145), 	-- Marrlok (PET!)
-							i(211432), 	-- Teele (PET!)
-							i(193429), 	-- Time-Lost Salamanther (PET!)
-							i(223339), 	-- Trishi (PET!)
-							i(280523), 	-- Tuskarr Fire Pit (DECOR!)
-							i(223474), 	-- Worgli the Apprehensive (PET!)
-							i(220692), 	-- X-treme Water Blaster Display (DECOR!)
-						},
-					}),
-				},
-			})));
 			-- Season 2
-			cnONLY(n(AZEROTH_ADVENTURE_HANDBOOK, sharedDataSelf({
-				["timeline"] = { "added 12.1.5" }, -- Aug 13 - Dec 2 2026 (21st Anniversary run)
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-					i(210061), -- Anu'relos, Flame's Guidance (MOUNT!)
-					i(205876), -- Highland Drake: Embodiment of the Hellforged (MANUSCRIPT!)
-					i(201790), -- Renewed Proto-Drake: Embodiment of the Storm-Eater (MANUSCRIPT!)
-					i(210536), -- Renewed Proto-Drake: Embodiment of the Blazing (MANUSCRIPT!)
-					i(276245), -- Shadow Spirehawk (MOUNT!)
-				},
-			})));
 			i(250293, {	-- Red Hot Portable Bakery (COSMETIC!)
 				["description"] = "McDonald's UK exclusive promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",
 				["timeline"] = { "added 12.1.0.69465", "removed 12.1.0.99999" },	-- Removed 28th September 2026

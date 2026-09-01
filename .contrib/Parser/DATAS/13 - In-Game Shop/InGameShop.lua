@@ -1079,6 +1079,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(273655, {	-- Sunflare Driftmoth (MOUNT!)
 			["timeline"] = { ADDED_12_0_7 },
 		}),
+		cnONLY(i(272920, {	-- Spring Panda (MOUNT!)
+			["timeline"] = { ADDED_12_0_7 },
+		})),
 		-- #if AFTER 11.2.0
 		i(246698, {	-- Sunwarmed Furline (MOUNT!)
 			["timeline"] = { ADDED_9_1_0 },

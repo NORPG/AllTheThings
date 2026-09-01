@@ -107,33 +107,6 @@ root(ROOTS.Promotions, {
 				}),
 			}));
 			-- "Pre Season"
-			cnONLY(ach(40910, {	-- Successfully Stress Test CN Realms
-				["description"] = "Rewarded for the Aid in the stress testing of the realms in China.",
-				["timeline"] = { ADDED_11_0_0, REMOVED_11_0_5 },
-			})),
-			cnONLY(i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
-				-- #if AFTER 11.0.2
-				-- #if BEFORE 12.0.0
-				["description"] = "Rewarded for returning to World of Warcraft in 2024. China Only.",
-				-- #endif
-				-- #endif
-				["timeline"] = { ADDED_11_0_0 },
-				["u"] = REMOVED_FROM_GAME,	-- Probably removed in 2025
-			})),
-			cnONLY(i(210409, {	-- Aura (PET!)
-				-- #if AFTER 11.0.2
-				-- #if BEFORE 12.0.0
-				["description"] = "Rewarded for returning to World of Warcraft in 2024. China Only.",
-				-- #endif
-				-- #endif
-				["timeline"] = { ADDED_11_0_0 },
-				["u"] = REMOVED_FROM_GAME,	-- Probably removed in 2025
-			})),
-			cnONLY(i(229128, {	-- Harmonious Salutations Bear (MOUNT!)
-				["description"] = "Rewarded for returning to World of Warcraft in 2024. China Only.",
-				["timeline"] = { ADDED_11_0_0 },
-				["u"] = REMOVED_FROM_GAME,	-- Probably removed in 2025
-			})),
 			i(93671, {	-- Ghastly Charger's Skull (MOUNT!)
 				-- #if AFTER 11.0.2
 				-- #if BEFORE 12.0.0
@@ -299,28 +272,6 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 14th, 10:00 a.m. & February 4th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_0_7, "removed 11.0.7.58911" },
 			}),
-			cnONLY(i(235344, {	-- Blazing Royal Fire Hawk (MOUNT!) (CN Only)
-				["description"] = "Rewarded from the Treasure Workshop.",
-				["timeline"] = { ADDED_11_0_7, "removed 11.1.0.59425" },	-- Removed February 27th, 2025
-			})),
-			cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
-				-- #if AFTER 11.0.2
-				-- #if BEFORE 12.0.0
-				["description"] = "Can bought for ¥200 RMB (~$27 USD) in the Ingame Shop for a limited time.",
-				-- #endif
-				-- #endif
-				["timeline"] = { ADDED_11_0_7,  "removed 11.1.0.59425" },	-- Removed February 27th, 2025
-				["groups"] = {
-					cnONLY(i(227362)),	-- Golden Ashes of Al'ar (MOUNT!) (CN Only)
-					cnONLY(i(49284)),	-- Reins of the Swift Spectral Tiger (MOUNT!)
-					cnONLY(i(49283)),	-- Reins of the Spectral Tiger (MOUNT!)
-					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
-					cnONLY(i(49285)),	-- X-51 Nether-Rocket (MOUNT!)
-					cnONLY(i(45047)),	-- Sandbox Tiger
-					cnONLY(i(35223)),	-- Papa Hummel's Old-Fashioned Pet Biscuit
-					cnONLY(i(46779)),	-- Path of Cenarius
-				},
-			})),
 			i(238261, {	-- Tock the Clocker Spaniel (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 25th, 10:00 a.m. & March 25th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_1_0, "removed 11.1.0.59679" },
@@ -365,11 +316,6 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.0.63163" },	-- Removed September 16, 2025
 			}),
 			-- Season 3
-			cnONLY(i(246732, {	-- Void-Forged Overseer (MOUNT!) (CN Only)
-				["description"] = "Rewarded from the Season 3 Shop Bundle.",
-				["timeline"] = { ADDED_11_2_0, REMOVED_11_2_5 },
-				["u"] = REAL_MONEY,
-			})),
 			i(232307, {	-- Astral Champion's Prestigious Banner (TOY!) (PVP)
 				["description"] = "Arena World Championship: TWW Season 3\n\nSign up on Raider.io for any of the 3 Cups, available until October 22nd 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.5.64154" },	-- Removed AFTER 11.2.5 Release
@@ -399,40 +345,6 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_5 },
 				["u"] = REAL_MONEY,
 			}),
-			cnONLY(n(TREASURE_OF_AZEROTH, sharedDataSelf({
-				["timeline"] = { "added 11.2.5.64395", "removed 11.2.7" },	-- Dec 31st
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-					i(223459), -- Blackrock Warsaber (MOUNT!)
-					i(79769), -- Demon Hunter's Aspect (TOY!)
-					i(72134), -- Gregarious Grell (PET!)
-					i(223471), -- Kaldorei War Wolf (MOUNT!)
-					i(252656, { -- K'areshi Scientific Expedition Supply (ITEM!)
-						["description"] = "Contains a Quantum Token & if you are lucky the Quantum Courser.",
-					}),
-					i(72159), -- Magical Ogre Idol (TOY!)
-					i(252679), -- Mechanical Prototype Panther MK-0 (MOUNT!)
-					i(71726), -- Murkablo (PET!)
-					i(252681), -- Steel Prototype Panther MK-0 (MOUNT!)
-					--	i(),	-- Sands of Time x10 ('Quicksand Secret Treasure Vault' event) https://warcraft.wiki.gg/wiki/Quicksand_Secret_Treasure_Vault
-				},
-			})));
-			cnONLY(n(QUICKSAND_SECRET_TREASURE_VAULT, sharedDataSelf({
-				["timeline"] = { "added 11.2.5", "removed 11.2.7", "added 12.0.1", "removed 12.0.5", "added 12.1.0", "removed 12.1.5",  }, -- Nov 18 2025 - Sep 11 2026 (three separate runs)
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-					i(220766, {["timeline"] = { ADDED_12_1_0 }}),	-- August Phoenix (MOUNT!) (August 2026)
-					i(220768, {["timeline"] = { ADDED_12_1_0 }}),	-- Astral Emperor's Serpent (MOUNT!) (August 2026)
-					i(38576), -- Big Battle Bear (MOUNT!)
-					i(93671), -- Ghastly Charger's Skull (MOUNT!)
-					i(229128), -- Harmonious Salutations Bear (PET!)
-					i(211087), -- Hateforged Blazecycle (MOUNT!)
-					i(204091), -- Rocket Shredder 9001 (MOUNT!)
-					i(89783, {["timeline"] = { ADDED_12_1_0 }}),	-- Son of Galleon's Saddle (MOUNT!) (August 2026)
-				},
-			})));
 			iensemble(242480, {	-- Ensemble: Violet Sweatsuit (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_5, REMOVED_11_2_7 },	-- Removed December 2nd, 2025
