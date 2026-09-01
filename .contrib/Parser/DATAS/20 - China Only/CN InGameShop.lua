@@ -43,7 +43,5 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 	filter(TOYS, {
 	}),
 	-- #endif
-	i(122284, { ["timeline"] = { ADDED_6_1_2 } }),	-- WoW Token (Use)
-	i(122270, { ["timeline"] = { ADDED_6_1_2 } }),	-- Wow Token (Sell)
 }));
 -- #endif
