@@ -162,7 +162,6 @@ root(ROOTS.Promotions, {
 						}),
 					},
 			})),
-
 			n(CRIMSONTIDE_TREASURETROVE, sharedDataSelf({
 				["timeline"] = { ADDED_12_0_1, REMOVED_12_0_7 },	-- April 23rd through May 23rd 2026
 				["u"] = REAL_MONEY,
@@ -242,7 +241,6 @@ root(ROOTS.Promotions, {
 					}),
 				},
 			})),
-
 			n(LUCKY_BAMBOO_TILES, sharedDataSelf({
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
 				["u"] = REAL_MONEY,

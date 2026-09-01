@@ -750,16 +750,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(DECOR, {
 				i(248961),	-- Large Amani Tiki Mask
-				i(264721),	-- Auspicious Curio Display
-				i(264722),	-- Auspicious Inkmaster's Desk
-				i(264723),	-- Auspicious Tree of Fortune
-				i(264724),	-- Auspicious Golden Carp Lantern
-				i(264725),	-- Auspicious Imperial Lion
-				i(266071),	-- Auspicious Wooden Chair
-				i(269604),	-- Auspicious Picnic Basket
-				i(269605),	-- Auspicious Meal Case
-				i(272353),	-- Auspicious Verdant Basin
-				i(272354),	-- Auspicious Stone Lion
 			}),
 			filter(MISC, {
 				i(270273),	-- Viny Lasso
