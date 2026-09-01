@@ -230,7 +230,10 @@ s(309898,276866,{f=3}),
 s(309900,276870,{f=3})}}),
 p(5064,{awp=120007,description="Received after buying the Blizzcon 2026 Ultimate Bundle.",itemID=274150,npcID=264863,rwp=120100,spellID=1293301,u=3}),
 de(25936,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=276873,rwp=120100,spellID=1300983,u=3}),
-mnt(1293456,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=274260,rwp=120100,u=3})}),
+mnt(1293456,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=274260,rwp=120100,u=3}),
+de(15153,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12 at 9:30 am PDT to September 27 at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12 at 9:30 am PDT until September 13 at 7:00 pm PDT for 4 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263303,rwp=120105,spellID=1270372,u=2}),
+mnt(1270520,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12 at 9:30 am PDT to September 27 at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12 at 9:30 am PDT until September 13 at 7:00 pm PDT for 8 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263449,lvl=10,rwp=120105,u=2}),
+toy(279590,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12 at 9:30 am PDT to September 27 at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12 at 9:30 am PDT until September 13 at 7:00 pm PDT for 12 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",rwp=120105,u=2})}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=40006,u=2,g={
@@ -1637,7 +1640,20 @@ o(405584,{coords={
 [2025]={{49.2,58.3}}},questID=75038,type="AsSubGenericObject"}),
 o(387722,{coords={
 [2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-h(-782,{
+h(-782,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(471440,{awp=50502,description="Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original from October 2024 to 7 January 2025 in the Ingame Shop. The bundle returned for 2026.",rwp=50510,u=2})),
+h(-691,{awp=50500,rwp=50510,u=2,g={
+i(265944,{u=2}),
+mnt(107203,{b=1,itemID=76755,lvl=10,u=2}),
+i(264986,{u=2}),
+mnt(107516,{b=1,itemID=76889,lvl=10,r=2,u=2}),
+mnt(107517,{b=1,itemID=76902,lvl=10,r=1,u=2}),
+p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=2,g={
+crit(34643,{achID=6185,id=3,u=2})}}),
+toy(72159,{b=1,u=2}),
+p(333,{b=1,itemID=72134,npcID=54730,spellID=102317,u=2}),
+toy(79769,{b=1,u=2})}}),
 h(-778,{awp=50500,rwp=50510,u=2,g={
 mnt(88990,{b=1,itemID=63125,lvl=10,sourceAchievements={4988},u=2}),
 s(18370,38312,{b=1,f=9,u=2}),
@@ -1655,6 +1671,66 @@ i(258883,{u=2}),
 i(231312,{u=2}),
 i(267301,{u=2}),
 i(266129,{u=2})}}),
+h(-760,{awp=50500,rwp=50510,u=2,g={
+mnt(1258573,{itemID=254735,u=2,g={
+toy(258136,{u=2})}}),
+i(268924,{u=2}),
+i(267279,{u=2})}}),
+h(-776,{awp=50500,rwp=50510,u=2,g={
+i(272312,{u=2}),
+s(21629,45037,{b=1,f=10,spellID=63604,u=2}),
+mnt(457485,{u=2}),
+i(273849,{description="1.25% chance for any of the following:",u=2,g={
+p(5060,{itemID=273021,npcID=264163,spellID=1291667,u=2}),
+mnt(1285897,{itemID=269640,u=2}),
+mnt(1284679,{itemID=269012,u=2}),
+mnt(75973,{b=1,itemID=54860,lvl=10,u=2})}}),
+p(131,{itemID=25535,npcID=18381,spellID=32298,u=2,g={
+crit(34633,{achID=665,id=3,u=3})}}),
+p(3024,{b=1,customCollect={"SL_COV_VEN"},itemID=183107,npcID=173842,spellID=340710,u=2}),
+mnt(1267077,{itemID=262344,u=2}),
+mnt(1266982,{itemID=269659,u=2}),
+p(5042,{itemID=271652,npcID=263232,spellID=1289296,u=2}),
+i(269590,{u=2}),
+h(-771,{u=2,g={
+mnt(423869,{u=2}),
+mnt(121820,{b=1,itemID=83086,lvl=10,u=2}),
+mnt(457485,{u=2}),
+mnt(1267077,{itemID=262344,u=2}),
+mnt(1266982,{itemID=269659,u=2})}}),
+h(-772,{u=2,g={
+mnt(463045,{u=2}),
+i(201699,{u=2}),
+mnt(74856,{itemID=54069,lvl=10,u=2}),
+i(207097,{u=2}),
+mnt(107516,{b=1,itemID=76889,lvl=10,r=2,u=2}),
+mnt(107517,{b=1,itemID=76902,lvl=10,r=1,u=2}),
+i(272312,{u=2})}}),
+h(-773,{u=2,g={
+toy(49704,{b=1,u=2}),
+s(21629,45037,{b=1,f=10,spellID=63604,u=2}),
+toy(33223,{b=1,u=2}),
+i(209945,{u=2}),
+p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=2,g={
+crit(34643,{achID=6185,id=3,u=2})}}),
+p(131,{itemID=25535,npcID=18381,spellID=32298,u=2,g={
+crit(34633,{achID=665,id=3,u=3})}}),
+toy(34499,{b=1,u=2}),
+p(242,{b=1,itemID=49343,npcID=36511,pb=1,spellID=68810,u=2,g={
+crit(23598,{achID=8397,id=23,pb=1})}}),
+p(5042,{itemID=271652,npcID=263232,spellID=1289296,u=2})}}),
+h(-774,{u=2,g={
+toy(38301,{b=1,u=2}),
+p(247,{b=1,itemID=49664,npcID=36910,spellID=69539,u=2}),
+toy(33219,{b=1,u=2}),
+toy(67097,{b=1,u=2}),
+p(130,{b=1,itemID=23713,npcID=17255,spellID=30156,u=2}),
+toy(32542,{b=1,u=2}),
+toy(54212,{b=1,u=2}),
+i(23714,{b=1,f=53,spellID=69773,u=2}),
+toy(32566,{b=1,u=2}),
+p(171,{b=1,itemID=34519,npcID=25147,spellID=45175,u=2}),
+toy(72161,{b=1,u=2})}})}}),
 h(-777,{awp=50500,rwp=50510,u=2,g={
 mnt(1291315,{itemID=272920,u=2}),
 s(105400,170206,{f=2,loc=40,u=2}),
@@ -1672,6 +1748,56 @@ i(277193,{u=3}),
 i(267301,{u=3}),
 mnt(124659,{b=1,itemID=85870,lvl=10,u=3}),
 i(85872,{u=3})}}),
+h(-767,{awp=50500,rwp=50510,u=2,g={
+mnt(1293028,{itemID=274037,u=2}),
+p(4897,{itemID=252194,npcID=251819,spellID=1254207,u=2}),
+toy(198428,{b=1,u=2}),
+p(3326,{b=1,itemID=193837,npcID=189655,spellID=375473,u=2}),
+p(5067,{itemID=274925,npcID=265748,spellID=1295658,u=2}),
+toy(274730,{u=2}),
+s(183067,200882,{f=28,lvl=10,u=2}),
+i(273849,{description="1.25% chance for any of the following:",u=2,g={
+p(5060,{itemID=273021,npcID=264163,spellID=1291667,u=2}),
+mnt(1285897,{itemID=269640,u=2}),
+mnt(1284679,{itemID=269012,u=2}),
+mnt(75973,{b=1,itemID=54860,lvl=10,u=2})}}),
+i(269590,{u=2}),
+h(-771,{u=2,g={
+mnt(423869,{u=2}),
+mnt(121820,{b=1,itemID=83086,lvl=10,u=2}),
+mnt(1293028,{itemID=274037,u=2})}}),
+h(-772,{u=2,g={
+mnt(463045,{u=2}),
+i(201699,{u=2}),
+mnt(74856,{itemID=54069,lvl=10,u=2}),
+i(207097,{u=2}),
+mnt(107516,{b=1,itemID=76889,lvl=10,r=2,u=2}),
+mnt(107517,{b=1,itemID=76902,lvl=10,r=1,u=2}),
+toy(198428,{b=1,u=2})}}),
+h(-773,{u=2,g={
+p(242,{b=1,itemID=49343,npcID=36511,pb=1,spellID=68810,u=2,g={
+crit(23598,{achID=8397,id=23,pb=1})}}),
+p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=2,g={
+crit(34643,{achID=6185,id=3,u=2})}}),
+i(209945,{u=2}),
+toy(33223,{b=1,u=2}),
+toy(49704,{b=1,u=2}),
+p(5067,{itemID=274925,npcID=265748,spellID=1295658,u=2}),
+toy(274730,{u=2}),
+p(3326,{b=1,itemID=193837,npcID=189655,spellID=375473,u=2}),
+p(4897,{itemID=252194,npcID=251819,spellID=1254207,u=2})}}),
+h(-774,{u=2,g={
+i(23714,{b=1,f=53,spellID=69773,u=2}),
+toy(32542,{b=1,u=2}),
+toy(67097,{b=1,u=2}),
+toy(72161,{b=1,u=2}),
+toy(33219,{b=1,u=2}),
+toy(38301,{b=1,u=2}),
+toy(54212,{b=1,u=2}),
+p(171,{b=1,itemID=34519,npcID=25147,spellID=45175,u=2}),
+p(247,{b=1,itemID=49664,npcID=36910,spellID=69539,u=2}),
+toy(32566,{b=1,u=2}),
+p(130,{b=1,itemID=23713,npcID=17255,spellID=30156,u=2})}})}}),
 h(-781,{awp=50500,rwp=50510,u=2,g={
 mnt(139448,{b=1,itemID=95059,lvl=10,u=2}),
 i(273150,{u=2}),

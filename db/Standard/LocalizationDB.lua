@@ -26817,6 +26817,7 @@ L.QUEST_NAMES = {
 	[96966] = "Looming Mutagenitor weekly reputation obtained.",
 	[96967] = "Vassti, the Exalted Broodmother weekly reputation obtained.",
 	[96968] = "Ss'akrithos weekly reputation obtained.",
+	[96969] = "Venom Lancer Ori'kassi weekly reputation obtained.",
 	[96970] = "Malformed Leviathan weekly reputation obtained.",
 	[97091] = "Feed the Sleepy Mandrake a Highland Redcap",
 	[97092] = "Feed the Sleepy Mandrake a Dusty Redcap",
