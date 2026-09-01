@@ -16,9 +16,6 @@ title(147),	-- %s, Slayer of Stupid, Incompetent and Disappointing Minions \\ Th
 title(148),	-- Assistant Professor %s \\ Dream Chaser, %s
 3.80.0.64393
 title(672),	-- Dream Chaser, %s
-title(673),	-- The Overlord of Dawn, %s
-title(674),	-- Dawn's Vanguard, %s
-title(675),	-- Northbound Rush, %s
 title(692),	-- Ember Lord %s
 title(693),	-- %s, Brand of Flame
 title(694),	-- %s, the Phoenix Fall

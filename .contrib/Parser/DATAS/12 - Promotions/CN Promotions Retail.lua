@@ -138,8 +138,8 @@ root(ROOTS.Promotions, {
 					i(254735, {	-- Thunderhoof Celestial (MOUNT!)
 						["groups"] = {
 							i(258136),	-- Azure Thunder Coil Pillar (TOY!)
-							},
-						}),
+						},
+					}),
 					-- Piramid Gacha Golden Landro box
 					i(269743, {	-- Landro's Golden Loot Box
 						-- #if AFTER 12.0.0

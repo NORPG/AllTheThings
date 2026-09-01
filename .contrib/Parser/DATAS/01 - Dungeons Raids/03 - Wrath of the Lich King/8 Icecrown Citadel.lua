@@ -822,6 +822,23 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				},
 			}),
 			-- #endif
+			-- #if AFTER 3.4.5
+			-- #if BEFORE 3.80.0
+			cnONLY(n(SPECIAL, {
+				["groups"] = {
+					title(673, {	-- Northbound Rush, %s
+						["description"] = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ will grant you this title."
+					}),
+					title(673, {	-- Dawn's Vanguard, %s
+						["description"] = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 16 will grant you this title."
+					}),
+					title(673, {	-- The Overlord of Dawn, %s
+						["description"] = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 3 will grant you this title."
+					}),
+				},
+			})),
+			-- #endif
+			-- #endif
 			n(VENDORS, {
 				cl(DEATHKNIGHT, {
 					["cr"] = 38316,	-- Ormus the Penitent <Death Knight Armor>
