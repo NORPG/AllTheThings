@@ -355,8 +355,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(1904),	-- [DNT] 12BE_BloodElf_Lighting_LanternFloating01_Off.m2 - DO NOT USE - no off lights \\ [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternFloating01_Off.m2
 			rawdecor(1905),	-- [DNT] [AUTOGEN] 11WE_WildElves_Navigation_RootPortal01.m2
 			rawdecor(1906),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Chandelier02.m2
-			rawdecor(1907),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Candle02.m2
-			rawdecor(1909),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternFloating02.m2
 			rawdecor(1926),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging03.m2
 			rawdecor(1927),	-- [DNT] 12BE_BloodElf_Lighting_LanternHanging01_Off.m2 - DO NOT USE - no off lights \\ [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging01_Off.m2
 			rawdecor(1928),	-- [DNT] 12BE_BloodElf_Lighting_LanternHanging02_Off.m2 - DO NOT USE - no off lights \\ [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging02_Off.m2
@@ -434,7 +432,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(8913),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Furniture_Table01.m2
 			rawdecor(8914),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_HangingLight01.m2
 			rawdecor(8915),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_HangingLight02.m2
-			rawdecor(8990),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Pitcher01.m2
 			rawdecor(8991),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug01.m2
 			rawdecor(8992),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug02.m2
 			rawdecor(9256),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_HangingLight01_Unlit.m2
@@ -450,7 +447,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(9442),	-- Sandy Vulpera Tapestry
 			rawdecor(9625),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Crafting_WeaponRack01.m2
 			rawdecor(9626),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Crafting_WeaponRack01_Empty.m2
-			rawdecor(9627),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_Hammer01.m2
 			rawdecor(10325),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Furniture_Table02.m2
 			rawdecor(10326),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Cage01.m2
 			rawdecor(10353),	-- [DNT] Gnomeregan Recyli-Kiln - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 8GN_Gnome_Recycler01.m2
@@ -471,10 +467,8 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(10865),	-- [DNT] [AUTOGEN] 12PM_Primitive_Lighting_Candle03.m2
 			rawdecor(10894),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_Banner01.m2
 			rawdecor(10895),	-- [DNT] [AUTOGEN] 12PM_Primitive_Storage_Urn01.m2
-			rawdecor(10896),	-- [DNT] [AUTOGEN] 12PM_Primitive_Storage_Urn02.m2
 			rawdecor(10897),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_Banner02.m2
 			rawdecor(10898),	-- [DNT] [AUTOGEN] 12PM_Primitive_Furniture_Table02.m2
-			rawdecor(11140),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack08.m2
 			rawdecor(11141),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_RopeKnot01.m2
 			rawdecor(11329),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Incense01.m2
 			rawdecor(11330),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_SmallTent01.m2
@@ -676,10 +670,8 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(17888),	-- [DNT] [AUTOGEN] 12PH_Opulent_Rug03.M2
 			rawdecor(18795),	-- [DNT] [AUTOGEN] 12PH_Folk_Candelabra01.m2
 			rawdecor(18797),	-- [DNT] [AUTOGEN] 12PH_Opulent_Chair_Dining_Small01.M2
-			rawdecor(18880),	-- [DNT] [AUTOGEN] 12PH_Opulent_Mirror_Wall01.M2
 			rawdecor(18881),	-- [DNT] [AUTOGEN] 12PH_Opulent_Bed_Small01.M2
 			rawdecor(18899),	-- [DNT] [AUTOGEN] 12PH_Folk_Chandelier02.m2
-			rawdecor(18960),	-- [DNT] [AUTOGEN] 12PH_Opulent_Candelabra02.M2
 			rawdecor(19203),	-- [DNT] [AUTOGEN] 12PH_Folk_Path_SteppingStones01.M2
 			rawdecor(19204),	-- [DNT] [AUTOGEN] 12PH_Folk_Path_SteppingStones02.M2
 			rawdecor(19205),	-- [DNT] [AUTOGEN] 12PH_Folk_Path_SteppingStones03.M2
@@ -705,7 +697,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(20329),	-- [DNT] [AUTOGEN] 12PH_Opulent_Path_SteppingStones03.M2
 			rawdecor(20330),	-- [DNT] [AUTOGEN] 12PH_Opulent_Path_SteppingStones04.M2
 			rawdecor(20331),	-- [DNT] [AUTOGEN] 12PH_Opulent_WallLamp01.M2
-			rawdecor(20332),	-- [DNT] [AUTOGEN] 12PH_Opulent_TableLight02.M2
 			rawdecor(20633),	-- [DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentShrub_A01.m2
 			rawdecor(20634),	-- [DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentShrub_B02.m2
 			rawdecor(20635),	-- [DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentShrub_B01.m2
@@ -908,7 +899,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(21599),	-- [DNT] [AUTOGEN] 12PH_Opulent_Window_Interior02.M2
 			rawdecor(21600),	-- [DNT] [AUTOGEN] 12PH_Opulent_Chandelier02.M2
 			rawdecor(21601),	-- [DNT] [AUTOGEN] 12PH_BloodElf_Decor_Chair_Porchswing01.M2
-			rawdecor(21873),	-- [DNT] [AUTOGEN] 7TR_Tauren_Pot01.m2
 			rawdecor(21874),	-- [DNT] [AUTOGEN] 7TR_Tauren_Pot02.m2
 			rawdecor(21875),	-- [DNT] [AUTOGEN] 8HU_KULTIRAS_HONEYPOT01.m2
 			rawdecor(21876),	-- [DNT] [AUTOGEN] 8HU_KULTIRAS_HONEYPOT02.m2
