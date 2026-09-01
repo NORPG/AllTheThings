@@ -166,3 +166,14 @@ TREASURE_OF_AZEROTH = createHeader({
 		cn = "为庆祝泰坦重铸服务器上线，中国玩家可参与艾泽拉斯宝藏活动，赢取全新奖励。奖励不跨游戏类型共享，需在各自版本中分别获取",
 	},
 });
+
+CN_WOW_ANNIVERSARY_TWENTYONE = createHeader({
+	readable = "CN WoW's 21st Anniversary",
+	icon = 133783,
+	text = {
+		en = "CN WoW's 21st Anniversary",
+	},
+	description = {
+		en = "Exclusive to China, celebrating the 21st Anniversary starting 6 August 2026,",
+	},
+});

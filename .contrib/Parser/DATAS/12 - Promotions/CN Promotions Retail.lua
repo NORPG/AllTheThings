@@ -361,6 +361,24 @@ root(ROOTS.Promotions, {
 					i(276245), -- Shadow Spirehawk (MOUNT!)
 				},
 			})),
+			n(CN_WOW_ANNIVERSARY_TWENTYONE, {	-- Yes CN is 1year Behind and celebrates 21st Bday 2026
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_7 },	-- Ends Dec 2 2026
+				["groups"] = {
+					-- Login giveaway
+					i(264273), -- Fel Spirehawk (MOUNT!) (retail)
+					i(87771), -- Heavenly Onyx Cloud Serpent (MOUNT!) (retail)
+					i(246917, { -- Thunder-Ridged Elekk (MOUNT!)
+						-- #if BEFORE 12.2.0
+						-- #if AFTER 12.1.0
+						["description"] = "Rewarded from completing the quiz.",
+						-- #endif
+						-- #endif
+					}),
+					-- Deluxe Collector's Annual Pass Bundle
+					iensemble(272335), -- Ensemble: Varian's Azure Dragon Attire (COSMETIC!)
+					i(274967), -- Varian's Dragon Throne (TOY!)
+				},
+			}),
 		},
 	})),
 });
