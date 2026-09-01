@@ -480,6 +480,7 @@ HeaderAssignments = {
 	["PvP"] = -303,
 	["Queen's Conservatory"] = -168,
 	["Quests"] = -45,
+	["Quicksand Secret Treasure Vault"] = -778,
 	["Raid Finder Vendor"] = -344,
 	["Raid Gear Conversion"] = -687,
 	["Raids"] = -77,
@@ -757,4 +758,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -778
+NextHeaderID = -779

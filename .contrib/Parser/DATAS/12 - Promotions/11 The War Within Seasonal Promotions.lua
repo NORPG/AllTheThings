@@ -71,22 +71,6 @@ RAZER = createHeader({
 		cn = "雷蛇《魔兽世界》系列游戏外设促销：购买任意一件，即可获赠全部三个促销兑换码",
 	},
 });
-TREASURE_OF_AZEROTH = createHeader({
-	readable = "Treasures of Azeroth",
-	icon = 7259806,
-	text = {
-		en = "Treasures of Azeroth",
-		es = "Tesoros de Azeroth",
-		mx = "Tesoros de Azeroth",
-		cn = "艾泽拉斯的宝藏",
-	},
-	description = {
-		en = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",
-		es = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
-		mx = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
-		cn = "为庆祝泰坦重铸服务器上线，中国玩家可参与艾泽拉斯宝藏活动，赢取全新奖励。奖励不跨游戏类型共享，需在各自版本中分别获取",
-	},
-});
 
 root(ROOTS.Promotions, {
 	n(THE_WAR_WITHIN_SEASONAL_PROMOTIONS, {
@@ -121,25 +105,6 @@ root(ROOTS.Promotions, {
 				i(224574, {	-- Savage Ebony Battle Turtle (MOUNT!)
 					["description"] = "Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",
 				}),
-			}));
-			n(TREASURE_OF_AZEROTH, sharedDataSelf({
-				["timeline"] = { "added 11.2.5.64395" },
-				["u"] = REAL_MONEY,
-			}, {
-				["groups"] = {
-				--	cnONLY(i(, {	-- Azerothian Treasure Coins ToDo: Its currency to buy all the items
-				--	ToDo: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251957.jpg
-						cnONLY(i(252679)),	-- Mechanical Prototype Panther MK-0 (MOUNT!)
-						cnONLY(i(252681)),	-- Steel Prototype Panther MK-0 (MOUNT!)
-						cnONLY(i(223471)),	-- Kaldorei War Wolf (MOUNT!)
-						cnONLY(i(223459)),	-- Blackrock Warsaber (MOUNT!)
-						cnONLY(i(71726)),	-- Murkablo (PET!)
-						cnONLY(i(72134)),	-- Gregarious Grell (PET!)
-					--	cnONLY(i()),	-- Sands of Time ('Quicksand Secret Treasure Vault' event) https://warcraft.wiki.gg/wiki/Quicksand_Secret_Treasure_Vault
-					--	cnONLY(i()),	-- Karesh expedition resupply
-					--	cnONLY(i()),	-- Shard of Azeroth Fragment
-				--	})),
-				},
 			}));
 			-- "Pre Season"
 			cnONLY(ach(40910, {	-- Successfully Stress Test CN Realms
@@ -434,6 +399,40 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_5 },
 				["u"] = REAL_MONEY,
 			}),
+			cnONLY(n(TREASURE_OF_AZEROTH, sharedDataSelf({
+				["timeline"] = { "added 11.2.5.64395", "removed 11.2.7" },	-- Dec 31st
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					i(223459), -- Blackrock Warsaber (MOUNT!)
+					i(79769), -- Demon Hunter's Aspect (TOY!)
+					i(72134), -- Gregarious Grell (PET!)
+					i(223471), -- Kaldorei War Wolf (MOUNT!)
+					i(252656, { -- K'areshi Scientific Expedition Supply (ITEM!)
+						["description"] = "Contains a Quantum Token & if you are lucky the Quantum Courser.",
+					}),
+					i(72159), -- Magical Ogre Idol (TOY!)
+					i(252679), -- Mechanical Prototype Panther MK-0 (MOUNT!)
+					i(71726), -- Murkablo (PET!)
+					i(252681), -- Steel Prototype Panther MK-0 (MOUNT!)
+					--	i(),	-- Sands of Time x10 ('Quicksand Secret Treasure Vault' event) https://warcraft.wiki.gg/wiki/Quicksand_Secret_Treasure_Vault
+				},
+			})));
+			cnONLY(n(QUICKSAND_SECRET_TREASURE_VAULT, sharedDataSelf({
+				["timeline"] = { "added 11.2.5", "removed 11.2.7", "added 12.0.1", "removed 12.0.5", "added 12.1.0", "removed 12.1.5",  }, -- Nov 18 2025 - Sep 11 2026 (three separate runs)
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					i(220766, {["timeline"] = { ADDED_12_1_0 }}),	-- August Phoenix (MOUNT!) (August 2026)
+					i(220768, {["timeline"] = { ADDED_12_1_0 }}),	-- Astral Emperor's Serpent (MOUNT!) (August 2026)
+					i(38576), -- Big Battle Bear (MOUNT!)
+					i(93671), -- Ghastly Charger's Skull (MOUNT!)
+					i(229128), -- Harmonious Salutations Bear (PET!)
+					i(211087), -- Hateforged Blazecycle (MOUNT!)
+					i(204091), -- Rocket Shredder 9001 (MOUNT!)
+					i(89783, {["timeline"] = { ADDED_12_1_0 }}),	-- Son of Galleon's Saddle (MOUNT!) (August 2026)
+				},
+			}));
 			iensemble(242480, {	-- Ensemble: Violet Sweatsuit (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_5, REMOVED_11_2_7 },	-- Removed December 2nd, 2025
