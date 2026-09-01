@@ -637,12 +637,13 @@ root(ROOTS.Zones, {
 					q(9729, {	-- Fhwoor Smash!
 						["qg"] = 17877,	-- Fhwoor
 						["coord"] = { 19.8, 50.8, ZANGARMARSH },
-						-- #if BEFORE CATA
-						-- Not really sure when this changed. It's only available after Exalted in TBC Classic.
-						["minReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
-						-- #else
-						["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
-						-- #endif
+						["minReputation"] = {	-- Not really sure when this changed. It's only available after Exalted in TBC Classic.
+							-- #if AFTER CATA
+							FACTION_SPOREGGAR, FRIENDLY,	-- Sporeggar, Friendly.
+							-- #else
+							FACTION_SPOREGGAR,  EXALTED,	-- Sporeggar, Exalted.
+							-- #endif
+						},
 						["lvl"] = lvlsquish(63, 63, 10),
 						["groups"] = {
 							i(25537),	-- Hewing Axe of the Marsh

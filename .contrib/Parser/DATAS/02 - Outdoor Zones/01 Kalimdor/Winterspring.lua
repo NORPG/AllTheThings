@@ -2763,103 +2763,76 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
-					-- #if BEFORE 4.0.3
 					["coords"] = {
-						{ 41.6, 42.8, WINTERSPRING },
-						{ 33.0, 36.8, WINTERSPRING },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 35.4, 57.0, WINTERSPRING },
 						{ 24.4, 47.6, WINTERSPRING },
+						-- #else
+						{ 41.6, 42.8, WINTERSPRING },
+						{ 33.0, 36.8, WINTERSPRING },
+						-- #endif
 					},
-					-- #endif
 					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 7441,	-- Winterfall Totemic
 				}),
 				i(15747, {	-- Pattern: Frostsaber Leggings (RECIPE!)
-					-- #if BEFORE 4.0.3
 					["coords"] = {
-						{ 68.0, 35.6, WINTERSPRING },
-						{ 41.6, 42.8, WINTERSPRING },
-						{ 33.6, 36.8, WINTERSPRING },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 35.4, 57.0, WINTERSPRING },
 						{ 27.6, 48.6, WINTERSPRING },
 						{ 23.6, 50.8, WINTERSPRING },
+						-- #else
+						{ 68.0, 35.6, WINTERSPRING },
+						{ 41.6, 42.8, WINTERSPRING },
+						{ 33.6, 36.8, WINTERSPRING },
+						-- #endif
 					},
-					-- #endif
 					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 7440,	-- Winterfall Den Watcher
 				}),
 				i(15779, {	-- Pattern: Frostsaber Tunic (RECIPE!)
-					-- #if BEFORE 4.0.3
 					["coords"] = {
-						{ 69.6, 38.2, WINTERSPRING },
-						{ 65.6, 37.6, WINTERSPRING },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 68.2, 46.8, WINTERSPRING },
 						{ 66.2, 49.4, WINTERSPRING },
+						-- #else
+						{ 69.6, 38.2, WINTERSPRING },
+						{ 65.6, 37.6, WINTERSPRING },
+						-- #endif
 					},
-					-- #endif
 					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 7438,	-- Winterfall Ursa
 				}),
 				i(14493, {	-- Pattern: Robe of Winter Night (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_4_0_3 },	-- Won't return, it's on a Timewalking Vendor
 					["cr"] = 7437,	-- Cobalt Mageweaver
-					-- Wont return, its on timewalking vendor
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_4_0_3 },	-- Won't return, it's on a Timewalking Vendor
 					["cr"] = 7437,	-- Cobalt Mageweaver
-					-- Wont return, its on timewalking vendor
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
-					-- #if BEFORE 4.0.3
-					["cr"] = 7428,	-- Frostmaul Giant
 					["coords"] = {
-						{ 64.2, 69.0, WINTERSPRING },
-						{ 61.8, 68.6, WINTERSPRING },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						7428,	-- Frostmaul Giant
-						7429,	-- Frostmaul Preserver
-						50258,	-- Frostmaul Tumbler
-					},
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 63.2, 89.8, WINTERSPRING },
 						{ 57.8, 86.6, WINTERSPRING },
 						{ 56.2, 83.4, WINTERSPRING },
+						-- #else
+						{ 64.2, 69.0, WINTERSPRING },
+						{ 61.8, 68.6, WINTERSPRING },
+						-- #endif
 					},
-					-- #endif
+					["crs"] = {
+						7428,	-- Frostmaul Giant
+						-- #if AFTER 10.1.7
+						7429,	-- Frostmaul Preserver
+						50258,	-- Frostmaul Tumbler
+						-- #endif
+					},
 					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
-				i(16054, {	-- Schematic: Arcanite Dragonling
-					-- [[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, WINTERSPRING },
-						{ 25.4, 35.4, WINTERSPRING },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WINTERSPRING },
-						{ 17.8, 33.4, WINTERSPRING },
-						{ 19.8, 46.8, WINTERSPRING },
-					},
-					-- #endif
-					--]]
+				i(16054, {	-- Schematic: Arcanite Dragonling (RECIPE!)
+					["coord"] = { 59.6, 49.0, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),
@@ -2918,11 +2891,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(21383, {	-- Winterfall Spirit Beads
-					-- #if BEFORE 4.0.3
-					["description"] = "Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
-					-- #else
-					["description"] = "Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The inital turn in requires 10 Winterfall Spirit Beads, and all following requires 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
-					-- #endif
+					["description"] =
+						-- #if AFTER CATA
+						"Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The inital turn in requires 10 Winterfall Spirit Beads, and all following requires 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
+						-- #else
+						"Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
+						-- #endif
 					["crs"] = {
 						10738,	-- High Chief Winterfall
 						7440,	-- Winterfall Den Watcher

@@ -3,8 +3,10 @@
 ---------------------------------------------------
 -- CRIEVE NOTE: Don't touch this file without asking.
 -- Burden of Truth: Classic & TBC.
+
 local SENSE_UNDEAD = recipe(5502);	-- Sense Undead
 local ENCHANTING_VENDOR_GROUPS = {};
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 	m(EVERSONG_WOODS, {
 		["lore"] = "Eversong Woods is the starter zone for the Blood Elf race. It is a golden forest with typical high elf buildings. In the center of the map is a blighted strip known as the Dead Scar, a remnant from Arthas' battle against the High Elves. Quests involve learning about the blood elves' rich history, decadent lifestyle, and their struggles to keep the Dead Scar from growing.",
@@ -51,7 +53,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(37440, {	-- A Fistful of Slivers
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
-							["altQuests"] = { 8336 },	-- A Fistful of Slivers (original)
+							["altQuests"] = { 8336 },	-- A Fistful of Slivers (Original)
 							["qg"] = 15296,	-- Arcanist Ithanas
 							["coords"] = {
 								-- #if AFTER MOP
@@ -268,9 +270,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
-								{ 65.6, 43.8, SUNSTRIDER_ISLE },	-- Matron Arena <Priest Trainer>
+								{ 65.6, 43.8, SUNSTRIDER_ISLE },
 								-- #else
-								{ 39.4, 20.4, EVERSONG_WOODS },	-- Matron Arena <Priest Trainer>
+								{ 39.4, 20.4, EVERSONG_WOODS },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -336,9 +338,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
-								{ 65.6, 43.8, SUNSTRIDER_ISLE },	-- Matron Arena <Priest Trainer>
+								{ 65.6, 43.8, SUNSTRIDER_ISLE },
 								-- #else
-								{ 39.4, 20.4, EVERSONG_WOODS },	-- Matron Arena <Priest Trainer>
+								{ 39.4, 20.4, EVERSONG_WOODS },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -543,7 +545,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(37443, {	-- Solanian's Belongings
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
-							["altQuests"] = { 8330 },	-- Solanian's Belongings (original)
+							["altQuests"] = { 8330 },	-- Solanian's Belongings (Original)
 							["qg"] = 15295,	-- Well Watcher Solanian
 							["coords"] = {
 								-- #if AFTER LEGION
@@ -708,7 +710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(37439, {	-- Thirst Unending
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
-							["altQuests"] = { 8346 },	-- Thirst Unending (original)
+							["altQuests"] = { 8346 },	-- Thirst Unending (Original)
 							["qg"] = 15297,	-- Arcanist Helion
 							["coords"] = {
 								-- #if AFTER LEGION

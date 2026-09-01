@@ -940,14 +940,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						i(2754, {	-- Tarnished Bastard Sword
 							["coords"] = {
-								-- #if AFTER CATA
+								-- #if AFTER 10.1.7
 								{ 72.2, 66.4, DEATHKNELL },
 								-- #else
 								{ 36.8, 68.0, TIRISFAL_GLADES },
 								-- #endif
 							},
 							["crs"] = {
-								-- #if AFTER CATA
+								-- #if AFTER 10.1.7
 								49422,	-- Rotbrain Berserker
 								-- #else
 								1506,	-- Scarlet Convert
