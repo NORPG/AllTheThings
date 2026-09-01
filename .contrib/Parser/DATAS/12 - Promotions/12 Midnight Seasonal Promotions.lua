@@ -417,6 +417,18 @@ root(ROOTS.Promotions, {
 				},
 			})));
 			-- Season 2
+			cnONLY(n(AZEROTH_ADVENTURE_HANDBOOK, sharedDataSelf({
+				["timeline"] = { "added 12.1.5" }, -- Aug 13 - Dec 2 2026 (21st Anniversary run)
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					i(210061), -- Anu'relos, Flame's Guidance (MOUNT!)
+					i(205876), -- Highland Drake: Embodiment of the Hellforged (MANUSCRIPT!)
+					i(201790), -- Renewed Proto-Drake: Embodiment of the Storm-Eater (MANUSCRIPT!)
+					i(210536), -- Renewed Proto-Drake: Embodiment of the Blazing (MANUSCRIPT!)
+					i(276245), -- Shadow Spirehawk (MOUNT!)
+				},
+			})));
 			i(250293, {	-- Red Hot Portable Bakery (COSMETIC!)
 				["description"] = "McDonald's UK exclusive promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",
 				["timeline"] = { "added 12.1.0.69465", "removed 12.1.0.99999" },	-- Removed 28th September 2026

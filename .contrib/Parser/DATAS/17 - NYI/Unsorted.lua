@@ -798,7 +798,6 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				i(264368),	-- ??
 			}),
-			i(276245),	-- Shadow Spirehawk
 		})),
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
 			filter(COSMETIC, {

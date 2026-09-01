@@ -1,3 +1,24 @@
+AZEROTH_ADVENTURE_HANDBOOK = createHeader({
+	readable = "Azeroth Adventure Handbook",
+	icon = 7360957,
+	text = {
+		en = "Azeroth Adventure Handbook",
+		-- TODO: de = "",
+	--	es = "Tesoro Escondido de las Tierras Azures",
+	--	mx = "Tesoro escondido del Trecho Azur",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+	description = {
+		en = "Azeroth Adventure Handbook is a China-exclusive promotional event for retail only. Players can complete tasks to earn the listed rewards below. The 'Murloc Black Market' is also permanently available and rotates a drop pool irregularly, featuring rewards from WoW Remix: Mists of Pandaria. It was brought back for WoW's 21st Anniversary celebration, running from 13 August to 2 December 2026.",
+	},
+});
+
 QUICKSAND_SECRET_TREASURE_VAULT = createHeader({
 	readable = "Quicksand Secret Treasure Vault",
 	icon = 7360957,

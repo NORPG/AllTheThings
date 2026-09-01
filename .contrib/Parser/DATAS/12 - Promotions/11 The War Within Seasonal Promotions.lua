@@ -432,7 +432,7 @@ root(ROOTS.Promotions, {
 					i(204091), -- Rocket Shredder 9001 (MOUNT!)
 					i(89783, {["timeline"] = { ADDED_12_1_0 }}),	-- Son of Galleon's Saddle (MOUNT!) (August 2026)
 				},
-			}));
+			})));
 			iensemble(242480, {	-- Ensemble: Violet Sweatsuit (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_5, REMOVED_11_2_7 },	-- Removed December 2nd, 2025
