@@ -4543,10 +4543,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				7100,	-- Warpwood Moss Flayer
 				7149,	-- Withered Protector
 				-- #if BEFORE 4.0.3
-				1813, 	-- Decaying Horror
+				1813,	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
-				1812, 	-- Rottin Behemoth
+				1812,	-- Rottin Behemoth
 				-- #else
 				45119,	-- Corrupted Darkwood Treant
 				45118,	-- Darkwood Treant
@@ -4588,10 +4588,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				7100,	-- Warpwood Moss Flayer
 				7149,	-- Withered Protector
 				-- #if BEFORE 4.0.3
-				1813, 	-- Decaying Horror
+				1813,	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
-				1812, 	-- Rottin Behemoth
+				1812,	-- Rottin Behemoth
 				-- #else
 				6510,	-- Bloodpetal Flayer
 				6509,	-- Bloodpetal Lasher
@@ -5467,7 +5467,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["crs"] = {
 				-- #if BEFORE 4.0.3
 				154,	-- Greater Fleshripper
-				199, 	-- Young Fleshripper
+				199,	-- Young Fleshripper
 				428,	-- Dire Condor
 				1109,	-- Fleshripper
 				1194,	-- Mountain Buzzard

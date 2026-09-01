@@ -2368,10 +2368,7 @@ i(260896, 1267004);	-- Accented Pseudoshell
 i(250921, 1251665);	-- Amani Blessed Bear
 i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
-i(264273, 1271549);	-- Fel Spirehawk
 i(262706, 1269277);	-- Ferocious Snapvine
-i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
-i(262661, 1269181);	-- Ghastropod
 i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
 i(262909, 1269556);	-- Hypo-Speed X6000
 i(260895, 1267002);	-- Lavender Pseudoshell
@@ -2412,6 +2409,7 @@ i(222988, 447173);	-- Elder Glowmite
 i(262502, 1268926);	-- Elven Arcane Guardian
 i(260233, 1265785);	-- Emerald Hawkstrider
 i(262438, 1268809);	-- Fantastical Goblin Waveshredder
+i(264273, 1271549);	-- Fel Spirehawk
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257142, 1261291);	-- Fiery Dragonhawk
 i(257448, 1261585);	-- Frenzied Shredclaw
@@ -2463,6 +2461,7 @@ i(268481, 1282471);	-- Breaker Bee
 i(275440, 1296731);	-- Cerulean Deathwalker
 i(268877, 1283908);	-- Dusk-Painted Sun Roc
 i(268876, 1283910);	-- Flame-Painted Sun Roc
+i(262661, 1269181);	-- Ghastropod
 i(268364, 1282276);	-- Gilneas Loyalist's Rouncey
 i(275446, 1296759);	-- High-Yield Shreddertank
 i(275445, 1296758);	-- Profit-Green Shreddertank
@@ -2528,6 +2527,7 @@ i(278575, 1305207);	-- Crested Verdant Leafmimic
 i(275652, 1297220);	-- Crimson Venomfang
 i(262496, 1268919);	-- Delver's Arcane Golem
 i(276553, 1299965);	-- Emerald Skyfang
+i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
 i(274164, 142515);	-- Hearthkeeper's Wandering Caravan
 i(275659, 1297407);	-- Hexflame Reaver
 i(276802, 1300778);	-- Indigo Coiled Horror

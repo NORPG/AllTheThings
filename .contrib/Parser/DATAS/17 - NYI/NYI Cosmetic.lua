@@ -911,14 +911,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(246978),	-- Felreaver's Hellfire Shoulderguards
 				i(246980),	-- Felreaver's Hellfire Treads
 
-				------ Stillwater Fisher Set ------
-				i(244231),	-- Ensemble: Stillwater Fisher Attire
-				q(90930),	-- Ensemble: Stillwater Fisher Attire
-				i(244229),	-- Angler's Mantle
-				i(244352),	-- Cloak of the Veiled Paws
-				i(244228),	-- Sash of the Tipsy Sage
-				i(244230),	-- Strawhat of Frosted Currents
-
 				------ The Horseman's Burning Set ------
 				i(247982),	-- Ensemble: The Horseman's Burning Collection
 				q(91773),	-- Ensemble: The Horseman's Burning Collection

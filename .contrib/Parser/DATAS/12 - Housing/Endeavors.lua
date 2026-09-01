@@ -226,9 +226,11 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 						{ 52.1, 38.1, FOUNDERS_POINT },
 						-- { X, Y, RAZORWIND_SHORES },
 					},
+					["qi"] = 251492,	-- Slightly Magical Crystal Locator (QI!)
 					["groups"] = {
-						i(251273),	-- Slightly Magical Crystal (QI!)
-						i(251492),	-- Slightly Magical Crystal Locator (QI!)
+						o(572561, {	-- Crystal
+							i(251273),	-- Slightly Magical Crystal (QI!)
+						}),
 					},
 				}),
 				q(92443, {	-- Reverse Herb Farming

@@ -3310,6 +3310,7 @@ MobileDB.GameObject = {
 	[572474] = true,	-- Arcane Mana Crystal (q:92397)
 	[572475] = true,	-- Weapons Rack (q:92397)
 	[572477] = true,	-- Weapons Rack (q:92397)
+	[572561] = true,	-- Crystal (q:92402)
 	[572766] = true,	-- Trash Heap (Delves)
 	[572785] = true,	-- Olemba Lumber
 	[572869] = true,	-- Olemba Lumber

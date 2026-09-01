@@ -4615,6 +4615,7 @@ i(269836, 5019);	-- Chubs
 i(270990, 5040);	-- Curious Lynx Kitten
 i(274266, 5065);	-- Ka'bubb
 i(269999, 5020);	-- Overloaded Manaling
+i(271652, 5042);	-- The Sire's Ghastly Screecher
 i(270061, 5021);	-- Void-Bathed Snapdragon
 i(270331, 5037);	-- Void-Infused Mindbreaker Fry
 i(269829, 5017);	-- Void-Scarred Eaglet
@@ -4622,8 +4623,6 @@ i(270062, 5022);	-- Void-Touched Chick
 i(270330, 5036);	-- Void-Touched Dragonhawk Egg
 i(270063, 5023);	-- Void-Touched Lynx Kitten
 i(270988, 5038);	-- Wriggling Capybara
---- UNSORTED ---
-i(271652, 5042);	-- The Sire's Ghastly Screecher
 
 ------------------
 -- PATCH 12.0.7 --
