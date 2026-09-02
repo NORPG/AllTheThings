@@ -1484,6 +1484,7 @@ MobileDB.GameObject = {
 	[236261] = true,	-- Finalize Garrison Plot
 	[236262] = true,	-- Finalize Garrison Plot
 	[236263] = true,	-- Finalize Garrison Plot
+	[236645] = true,	-- Engineering Work Order
 	[237017] = true,	-- Soul Gem (q:37660)
 	[237027] = true,	-- Trading Post Work Order
 	[237039] = true,	-- Crate of Surplus Materials (q:37087, 37060)

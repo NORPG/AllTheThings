@@ -85,9 +85,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["sourceQuest"] = 96271,	-- Cursed Existence (Day 5)
 								["qg"] = 264611,	-- Du'gal
 								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-								["g"] = {
-									i(273838),	-- Spirit of Tok'jara (MOUNT!)
-								},
+								["g"] = { i(273838) },	-- Spirit of Tok'jara (MOUNT!)
+							}),
+							q(96273, { -- A Balance Paid in Blood (Daily)
+								["sourceQuest"] = 96305,	-- The Innocent Essence (Day 6)
+								["qg"] = 264611,	-- Du'gal
+								["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+								["isDaily"] = true,
 							}),
 							q(96360, {	-- Wading In (Daily)
 								["sourceQuest"] = 96305,	-- The Innocent Essence (Day 6)
@@ -106,6 +110,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							q(97672),	-- A Cluster of Voidlight Marl
 						}, {	-- RENOWN 13 --
 						}, {	-- RENOWN 14 --
+							q(97384, {	-- More Spirit Corrosion
+								["qi"] = 278050,	-- Corrosive Bijou (QI!)
+							}),
 						}, {	-- RENOWN 15 --
 						}, {	-- RENOWN 16 --
 						}, {	-- RENOWN 17 --

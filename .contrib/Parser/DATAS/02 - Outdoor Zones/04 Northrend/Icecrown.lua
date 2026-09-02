@@ -2138,6 +2138,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12951,	-- Let the Baron Know
 						["qg"] = 29343,	-- Baron Sliver
 						["coord"] = { 42.8, 25.0, ICECROWN },
+						["isBreadcrumb"] = true,
 					}),
 					q(13084, {	-- Vandalizing Jotunheim
 						["sourceQuest"] = 12951,	-- Let the Baron Know

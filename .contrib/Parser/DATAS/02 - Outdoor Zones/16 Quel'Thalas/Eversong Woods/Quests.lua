@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94871, {	-- Eversong
 						["description"] = "Adventure Mode Exclusive Quest from the Scouting Map as you pick to quest in Eversong Woods.",
 						["sourceQuests"] = { 86735 },	-- Paved in Ash
+						["isBreadcrumb"] = true,
 					}),
 					------ Stay awhile and listen ------
 					--hqt(XXXXX, {	-- Stay awhile and listen: Lady Liadrin
@@ -26,7 +27,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--}),
 					--
 					q(86740, {	-- Displaced Denizens
-						["sourceQuests"] = { 86737 },	-- Fair Breeze, Light Bloom
+						["sourceQuests"] = {
+							94871,	-- Eversong
+							86737,	-- Fair Breeze, Light Bloom
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 236743 },	-- Orweyna
 						["coord"] = { 46.7, 45.7, MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),

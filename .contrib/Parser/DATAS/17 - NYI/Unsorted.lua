@@ -43,7 +43,6 @@ root(ROOTS.Unsorted, {
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
-			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
@@ -179,7 +178,6 @@ root(ROOTS.Unsorted, {
 			i(277530),	-- Balm of Flies
 			i(277990),	-- Cursemail Gauntlets
 			i(278044),	-- Hanging Candles
-			i(278050),	-- Corrosive Bijou
 			i(278099),	-- Malt
 			i(278100),	-- Grain
 			i(278106),	-- DNT Coiled Color Changer
