@@ -3225,19 +3225,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				n(206744, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["groups"] = {
-						-- Manuscripts (repeated from Outland Cup)
-						i(197017, {	-- Cliffside Wylderdrake: Large Tail Spikes (MM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(197113, {	-- Highland Drake: Swept Spiked Head (MM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(197366, {	-- Renewed Proto-Drake: Dual Horned Crest (MM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(197605, {	-- Windborne Velocidrake: Curled Horns (MM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
 						-- Toy (repeated from Outland Cup)
 						i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
@@ -3288,6 +3275,51 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						}),
 						i(203348, {	-- Winding Slitherdrake: Pointed Nose (MM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						-- Confirmed as sold by Maya's fresh bnet account 2026-09-02
+						i(263503, {	-- Skymaster's Blood Circlet
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263501, {	-- Skymaster's Blood Cloak
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263500, {	-- Skymaster's Blood Mantle
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263504, {	-- Skymaster's Blood Pauldrons
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263502, {	-- Skymaster's Blood Tabard
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(249560, {	-- Skymaster's Silver Mantle
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249561, {	-- Skymaster's Silver Cloak
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249562, {	-- Skymaster's Silver Tabard
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(249563, {	-- Skymaster's Sapphire Crown
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249564, {	-- Skymaster's Sapphire Shoulderguards
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249565, {	-- Skymaster's Sapphire Epaulets
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 					},
 				})),
