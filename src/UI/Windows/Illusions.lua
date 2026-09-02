@@ -1,4 +1,4 @@
-if C_TransmogCollection and C_TransmogCollection.GetIllusions then
+if C_TransmogCollection and C_TransmogCollection.GetIllusions and app.GameBuildVersion >= 60000 then
 -- App locals
 local _, app = ...;
 
