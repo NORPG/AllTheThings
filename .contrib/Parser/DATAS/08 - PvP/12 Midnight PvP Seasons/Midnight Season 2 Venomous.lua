@@ -38,7 +38,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			ach(62955),	-- Venomous Gladiator's Goredrake
 			ach(62928),	-- Rival I: Midnight Season 2
 			ach(62911, {	-- Rival II: Midnight Season 2
-				ill(8697),	-- Venomcoil
+				i(275062),	-- Illusion: Venomcoil (ILLUSION!)
 			}),
 			-- RBG
 			ach(62924, {	-- Venomous Marshal: Midnight Season 2

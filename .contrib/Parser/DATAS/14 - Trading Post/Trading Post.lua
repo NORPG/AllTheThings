@@ -2747,7 +2747,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				n(268193, {	-- Supplier Toro <Trading Post Outlet Collections>
 					["coord"] = { 50.5, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						traderstender(175, i(212369)),	-- Battlefield Lover's Bow
+						traderstender(150, i(212369)),	-- Battlefield Lover's Bow
 						traderstender(30, i(223233)),	-- Copper Diver's Belt
 						traderstender(30, i(223235)),	-- Copper Divers Boots
 						traderstender(100, i(223230)),	-- Copper Diver's Bonnet
@@ -2835,7 +2835,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 						traderstender(175, i(231017)),	-- Wings of the Onyx Monarch
 						traderstender(175, i(230940)),	-- Wings of the Sapphire Monarch
 						traderstender(175, i(212611)),	-- Wings of the Tourmaline Monarch
-
 					},
 				}),
 			}),

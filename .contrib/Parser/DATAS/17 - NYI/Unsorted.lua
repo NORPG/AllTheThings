@@ -90,7 +90,6 @@ root(ROOTS.Unsorted, {
 			i(274991),	-- Seaside Fire Pit
 			i(275030),	-- Slugg's Favorite Fishing Rod
 			i(275053),	-- Kobold Candle Collection
-			i(275062),	-- Illusion: Venomcoil
 			i(275064),	-- [PH] Taretha Axe - Blue
 			i(275065),	-- [PH] Taretha Axe - Purple
 			i(275233),	-- Rosy Bracelet of Friendship

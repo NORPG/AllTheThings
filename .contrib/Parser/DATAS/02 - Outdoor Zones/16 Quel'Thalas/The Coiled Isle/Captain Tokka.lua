@@ -24,6 +24,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						ach(63512),	-- Treasures of the Damned
 						ach(63634, {	-- Where Did You Get That?
 							["provider"] = { "i", 244790 },	-- The Coiled Huntress [Fishing Tool]
+							["cr"] = 258755,	-- Captain Tokka
 						}),
 					}),
 					n(QUESTS, sharedDataSelf({	-- Second Mate Sluggs
