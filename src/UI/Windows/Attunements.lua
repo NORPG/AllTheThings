@@ -58,6 +58,7 @@ end
 
 -- Implementation
 app:CreateWindow("Attunements", {
+	IsDynamicCategory = true,
 	Commands = {
 		"attuned",
 		"attattuned",
