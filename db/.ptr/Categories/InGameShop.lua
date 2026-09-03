@@ -37,7 +37,7 @@ p(4894,{awp=110207,itemID=252650,npcID=251511,spellID=1254822,u=3})),
 p(297,{awp=40003,b=1,itemID=68385,npcID=51600,spellID=95787,u=3}),
 p(3249,{awp=90205,b=1,itemID=190586,npcID=185586,spellID=367702,u=3}),
 p(671,{awp=80300,itemID=85871,npcID=63832,spellID=124660,u=3,g={
-crit(34637,{achID=6848,id=3,rwp=50407,u=2})}}),
+crit(34637,{achID=6848,id=3,u=2})}}),
 p(3175,{awp=100200,npcID=181535,u=3}),
 p(4855,{awp=110205,itemID=246342,npcID=246662,rwp=110207,spellID=1241760,u=2}),
 p(4969,{awp=120001,description="Part of the charity Roofus Pack.",itemID=262982,npcID=256698,rwp=120005,spellID=1269627,u=2}),
@@ -74,12 +74,12 @@ i(68384,{awp=40003,b=1,f=101,rwp=80300,u=2}),
 p(296,{awp=40003,b=1,itemID=68618,npcID=51601,r=2,rwp=80300,spellID=95786,u=2}),
 p(298,{awp=40003,b=1,itemID=68619,npcID=51649,r=1,rwp=80300,spellID=95909,u=2}),
 p(1691,{awp=60202,itemID=128426,npcID=95841,rwp=100107,spellID=190020,u=2,g={
-crit(28787,{achID=10321,id=1,rwp=70305,u=2})}}),
+crit(28787,{achID=10321,id=1,u=2})}}),
 p(248,{awp=30202,b=1,itemID=49665,npcID=36911,rwp=100002,spellID=69541,u=2}),
 p(4682,{awp=110005,b=1,itemID=231294,npcID=232502,rwp=110007,spellID=468186,u=2}),
 p(2890,{awp=100105,b=1,itemID=190601,npcID=171025,rwp=100107,spellID=333570,u=2}),
 p(2143,{awp=70305,itemID=153541,npcID=129049,rwp=100107,spellID=255702,u=2,g={
-crit(38154,{achID=12232,id=1,rwp=80307,u=2})}}),
+crit(38154,{achID=12232,id=1,u=2})}}),
 p(246,{awp=30302,b=1,description="This item is available only if you purchase the Plush Toy and redeem the code.",itemID=49663,npcID=36909,rwp=80300,spellID=69536,u=2})}}),
 flt(55,{awp=50400,u=3,g={
 i(103557,{f=55,rwp=60002,spellID=146939,u=2}),
@@ -623,7 +623,17 @@ de(15141,{awp=120005,itemID=263291,spellID=1270359,u=3}),
 de(12172,{itemID=258568,spellID=1263500,u=3}),
 de(9444,{itemID=253547,spellID=1256615,u=3}),
 i(272146,{awp=120005,spellID=1290352,u=3}),
-i(272992,{awp=120005,spellID=1291534,u=3})}}),
+i(272992,{awp=120005,spellID=1291534,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16098,{awp=120005,itemID=264721,spellID=1272517,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16101,{awp=120005,itemID=264724,spellID=1272520,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16102,{awp=120005,itemID=264725,spellID=1272521,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16099,{awp=120005,itemID=264722,spellID=1272518,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(21061,{awp=120005,itemID=269605,spellID=1285735,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(21060,{awp=120005,itemID=269604,spellID=1285734,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(21946,{awp=120005,itemID=272354,spellID=1291007,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(16100,{awp=120005,itemID=264723,spellID=1272519,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(21945,{awp=120005,itemID=272353,spellID=1291006,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+de(17750,{awp=120005,itemID=266071,spellID=1277672,u=3}))}}),
 flt(100,{u=3,g={
 mnt(417888,{awp=110207,b=1,itemID=258479,lvl=10,u=3}),
 mnt(1282453,{awp=120005,itemID=268474,u=3}),
@@ -663,7 +673,8 @@ mnt(259395,{awp=80001,b=1,itemID=156564,lvl=10,u=3}),
 mnt(308078,{awp=80300,u=3}),
 mnt(326390,{awp=80307,u=3}),
 mnt(1279352,{awp=120007,itemID=267078,u=3}),
-mnt(1292356,{awp=120007,itemID=273655,u=3}),
+mnt(1292356,{awp=120007,itemID=273655,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(1291315,{awp=120007,itemID=272920,u=3})),
 mnt(317177,{awp=90100,b=1,itemID=246698,lvl=10,u=3}),
 mnt(290132,{awp=80200,b=1,itemID=166776,lvl=10,u=3}),
 mnt(359843,{awp=100200,b=1,itemID=248089,lvl=10,u=3}),
@@ -709,5 +720,16 @@ toy(166777,{awp=80105,b=1,rwp=100100,u=2}),
 toy(210467,{awp=100205,b=1,u=3}),
 toy(208883,{awp=110207,b=1,u=3}),
 toy(193588,{awp=100200,b=1,u=3}),
-toy(166779,{awp=80105,b=1,u=3})}})}})
+toy(166779,{awp=80105,b=1,u=3})}}),
+i(122284,{awp=60102,b=1,u=3}),
+i(122270,{awp=60102,b=1,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(235378,{awp=40003,b=1,description="Can be bought for ¥200 RMB (~$27 USD) in the Ingame Shop.\n\nYou can only purchase 12 boxes per year.",spellID=1216746,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(459784,{itemID=227362,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(35223,{b=1,f=55,spellID=46168,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(46779,{b=1,f=55,spellID=65745,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(42777,{itemID=49284,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(42776,{itemID=49283,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(45047,{b=1,f=55,spellID=62857,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(46197,{itemID=49285,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(46199,{itemID=49286,lvl=10,u=3}))}}))}})
 end)

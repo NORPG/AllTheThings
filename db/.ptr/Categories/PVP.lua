@@ -44478,7 +44478,7 @@ mnt(1266211,{itemID=275302,pvp=1})}}),
 ach(62955,{providers={{"s",1266211}},pvp=1}),
 ach(62928,{pvp=1}),
 ach(62911,{pvp=1,g={
-ill(8697,{pvp=1})}}),
+ill(8697,{itemID=275062,pvp=1})}}),
 ach(62924,{pvp=1,r=2,g={
 title(769,{pvp=1})}}),
 ach(62925,{pvp=1,r=1,g={
@@ -45019,7 +45019,9 @@ s(309924,277292,{bonusID=7532,f=20,pvp=1}),
 s(309931,277299,{bonusID=7532,f=8,pvp=1}),
 s(309936,277304,{bonusID=7532,f=24,pvp=1}),
 s(309937,277305,{bonusID=7532,f=25,pvp=1}),
-s(309925,277293,{bonusID=7532,f=35,pvp=1})}})}})}})}}),
+s(309925,277293,{bonusID=7532,f=35,pvp=1})}})}}),
+h(-47,{pvp=1,g={
+i(275634,{description="Rewarded from the first Arena win, including training grounds.",pvp=1,rwp=120200})}})}})}}),
 h(-291,{awp=30002,pvp=1,g={
 h(-12,{pvp=1,g={
 ach(397,{pvp=1}),
