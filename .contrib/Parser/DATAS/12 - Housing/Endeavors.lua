@@ -65,6 +65,20 @@ AMANI_ENDEAVOR = createHeader({
 		en = "Amani Endeavor",
 	},
 });
+MARUUKAI_ENDEAVOR = createHeader({
+	readable = "Maruukai Endeavor",
+	icon = 4578413,
+	text = {
+		en = "Maruukai Endeavor",
+	},
+});
+TORTOLLAN_ENDEAVOR = createHeader({
+	readable = "Tortollan Endeavor",
+	icon = 2065576,
+	text = {
+		en = "Tortollan Endeavor",
+	},
+});
 
 local EndeavorVendorCoords = {
 	{ 53.1, 38.3, FOUNDERS_POINT },
@@ -322,6 +336,32 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				},
 			}),
 		}),
+		n(MARUUKAI_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+			n(265551, {	-- Roshai Lightstep <Endeavor Trader>
+				["coords"] = EndeavorVendorCoords,
+				["groups"] = {
+					i_DecorCoupons(276663, 10),	-- Bakar's Napping Rug (DECOR!)
+					i_DecorCoupons(276675, 5),	-- Bakar's Dinner (DECOR!)
+					i_DecorCoupons(276654, 5),	-- Bakar's Favorite Ball (DECOR!)
+					i_DecorCoupons(276673, 5),	-- Bakar's Snack (DECOR!)
+					i_DecorCoupons(276667, 10),	-- Large Ornate Khanam's Rug (DECOR!)
+					i_DecorCoupons(276650, 10),	-- Maruukai Barricade (DECOR!)
+					i_DecorCoupons(276661, 15),	-- Maruukai Chef's Stove (DECOR!)
+					i_DecorCoupons(276658, 10),	-- Maruukai Feast Table (DECOR!)
+					i_DecorCoupons(276669, 5),	-- Maruukai Storage Basket (DECOR!)
+					i_DecorCoupons(276656, 10),	-- Maruukai Wooden Table (DECOR!)
+					i_DecorCoupons(276671, 5),	-- Open Maruukai Storage Basket (DECOR!)
+					i_DecorCoupons(276677, 10),	-- Pet Food and Water Tray (DECOR!)
+					i_DecorCoupons(276665, 10),	-- Ornate Khanam's Rug (DECOR!)
+					i_DecorCoupons(276652, 10),	-- Tapered Maruukai Barricade (DECOR!)
+					i_DecorCoupons(276626, 10),	-- Wide Maruukai Barricade (DECOR!)
+				},
+			}),
+			--n(QUESTS, sharedData({
+			--	["isWeekly"] = true,
+			--}, {
+			--})),
+		})),
 		n(MECHAGNOME_ENDEAVOR, {
 			n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
 				["coords"] = EndeavorVendorCoords,
@@ -407,6 +447,19 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				}),
 			})),
 		}),
+		n(TORTOLLAN_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+			n(QUESTS, sharedData({
+				["isWeekly"] = true,
+			}, {
+				q(97521, {	-- A A Turtle Bade It to the Water
+					["qg"] = 268107,	-- Roga
+					["coords"] = {
+						{ 52.9, 39.0, FOUNDERS_POINT },
+						{ 54.4, 56.0, RAZORWIND_SHORES },
+					},
+				}),
+			})),
+		})),
 	},
 }));
 

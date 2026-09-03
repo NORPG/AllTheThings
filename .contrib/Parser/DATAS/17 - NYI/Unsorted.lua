@@ -131,23 +131,8 @@ root(ROOTS.Unsorted, {
 			i(276621),	-- Antique Shield
 			i(276622),	-- De-cryption Amulet
 			i(276624),	-- Overflowing Hash'ura Trove
-			i(276626),	-- Long Centaur Wall
 			i(276628),	-- Scroll of Deep Breath
 			i(276629),	-- Scroll of the Sailfish
-			i(276650),	-- Short Centaur Wall
-			i(276652),	-- Tapered Centaur Wall
-			i(276654),	-- Ball
-			i(276656),	-- Centaur Table
-			i(276658),	-- Centaur Bench
-			i(276661),	-- Centaur Stove
-			i(276663),	-- Round Centaur Carpet
-			i(276665),	-- Wide Centaur Carpet
-			i(276667),	-- Narrow Centaur Carpet
-			i(276669),	-- Closed Centaur Basket
-			i(276671),	-- Open Centaur Basket
-			i(276673),	-- Cooked Leg of Meat
-			i(276675),	-- Cooked Rack of Meat
-			i(276677),	-- Pet Food and Water Tray
 			i(276747),	-- Scroll of the Salty Souvenir: East
 			i(276748),	-- Scroll of the Salty Souvenir: West
 			i(276749),	-- Scroll of the Salty Souvenir: South
@@ -495,7 +480,6 @@ root(ROOTS.Unsorted, {
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum
-			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
 			n(PROFESSIONS, {

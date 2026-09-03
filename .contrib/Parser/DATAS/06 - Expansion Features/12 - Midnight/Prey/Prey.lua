@@ -273,7 +273,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			-- Weekly, up after r4 chain
 			q(94446, {	-- A Nightmarish Task
-				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf	 // TODO: need some way to ignore on alts
+				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf
+				-- #if AFTER 12.0.5
+				["sourceQuestNumRequired"] = 0,
+				-- #endif
 				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,

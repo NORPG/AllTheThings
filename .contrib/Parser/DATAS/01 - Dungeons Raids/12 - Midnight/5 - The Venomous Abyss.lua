@@ -448,7 +448,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					Boss(NEKZALI),
 					Boss(TWIN_FANGS),
 				}),
-				-- TODO: verify when available, changed from PTR
 				header(HEADERS.LFGDungeon, 3317, {	-- The Essence of Venom
 					Boss(ENTOMBED),
 					Boss(VASHNIK),
@@ -626,6 +625,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["groups"] = {
 			-- LFR
 			hqt(98080, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			hqt(98092, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			-- N
 			hqt(98083, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98079, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver

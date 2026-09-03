@@ -25,6 +25,7 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, {
 		ach(63605, {	-- Souvenir Seeker, Founder's Point
 			["maps"] = { FOUNDERS_POINT },
 			["timeline"] = { ADDED_12_1_0 },
+			["groups"] = { i(280846) },	-- Beguiling Memories of the Sea (DECOR!)
 		}),
 		ach(63441, {	-- Souvenir Seeker, Razorwind Shores
 			["maps"] = { RAZORWIND_SHORES },
