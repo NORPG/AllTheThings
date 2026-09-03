@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98030,	-- To a lover.
 					}),
 					o(668591, {	-- Funerary Inscription
-						["coord"] = { 13.6, 65.6, 2638 },	-- Profaned Mausoleum
+						["coord"] = { 13.0, 64.2, 2638 },	-- Profaned Mausoleum
 						["questID"] = 98031,	-- To parents.
 					}),
 					o(668593, {	-- Funerary Inscription
@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98033,	-- To a captain.
 					}),
 					o(668596, {	-- Funerary Inscription
-						["coord"] = { 42.9, 41.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["coord"] = { 42.9, 39.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["questID"] = 98034,	-- To sons.
 					}),
 					o(668597, {	-- Funerary Inscription
@@ -49,11 +49,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98038,	-- To comrades.
 					}),
 					o(668601, {	-- Funerary Inscription
-						["coord"] = { 42.6, 33.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["coord"] = { 42.5, 33.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["questID"] = 98039,	-- To a stranger.
 					}),
 					o(668602, {	-- Funerary Inscription
-						["coord"] = { 56.5, 23.0, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["coord"] = { 56.5, 22.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["questID"] = 98040,	-- To a shield-bearer.
 					}),
 				}),
