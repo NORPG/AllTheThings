@@ -645,6 +645,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			-- M
 			hqt(98081, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98077, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			hqt(98089, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 		},
 	}),
 }))
