@@ -23,7 +23,6 @@ root(ROOTS.Unsorted, {
 			i(265620),	-- Rehydrated Zandalari Peppers
 			i(265626),	-- Shattered Teapot
 			i(265790),	-- Cache of Mistcrests
-			i(266327),	-- Pristine Spinal Barb
 			i(267045),	-- Quivering Egg
 			i(268095),	-- Fresh Poultice
 			-- WB
@@ -57,7 +56,6 @@ root(ROOTS.Unsorted, {
 			i(274372),	-- Big ol' Bag of Polished Pet Charms
 			i(274421),	-- Crate of Community Coupons
 			i(274423),	-- Unborn Val'kyr
-			i(274437),	-- Venom Ward
 			i(274438),	-- Nexus Whelpling
 			i(274439),	-- Chitterspine Skitterling
 			i(274447),	-- Emerald Proto-Whelp
@@ -395,8 +393,6 @@ root(ROOTS.Unsorted, {
 			i(279442),	-- Violet Gloomcap
 			i(279444),	-- Snowy Gloomcap
 			i(279445),	-- Sunny Gloomcap
-			i(279455),	-- K'areshi Tea Cup
-			i(279458),	-- Rock Goblet
 			i(279524),	-- Brewer's Purple Kilt
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt

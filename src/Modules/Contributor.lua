@@ -3510,6 +3510,7 @@ MobileDB.GameObject = {
 	[652482] = true,	-- Ossified Relic
 	[653064] = true,	-- Ossified Relic
 	[653416] = true,	-- Cynosure of Twilight (q:96051)
+	[653456] = true,	-- Venom Ward
 	[653485] = true,	-- Cynosure of Twilight (q:96052)
 	[654250] = true,	-- Mound of Dirt (q:96543)
 	[654422] = true,	-- Energized Crystal Conductor (q:96569)

@@ -196,7 +196,10 @@ root(ROOTS.Housing, {
 			}),
 			q(96780, {	-- Local Kafa Shop
 				["qg"] = 263258,	-- Cousin Shortkaf <Kafa Trader>
-				["coord"] =  { 55.1, 43.6, FOUNDERS_POINT },
+				["coords"] =  {
+					{ 55.1, 43.6, FOUNDERS_POINT },
+					{ 55.2, 61.9, RAZORWIND_SHORES },
+				},
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 			q(95387, {	-- One Neighbor's Junk is Another Troll's Treasure

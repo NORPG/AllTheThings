@@ -95,6 +95,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(649687, {	-- Soulcoiler's Trove
 					["description"] = "Can be found randomly throughout the Vaults.",
 				}),
+				o(653456, {	-- Venom Ward
+					i(274437),	-- Venom Ward
+				}),
 			}),
 		}),
 	}),

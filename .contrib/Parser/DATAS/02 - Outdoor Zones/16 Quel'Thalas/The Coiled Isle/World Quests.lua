@@ -105,6 +105,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 61.3, 65.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["groups"] = { i(268628) },	-- Zapgut Gland (QI!)
 				}),
+				q(94876, {	-- Show Some Backbone
+					["qi"] = 266327,	-- Pristine Spinal Barb (QI!)
+					["coord"] = { 31.0, 75.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(95990, {	-- Slithering Heights
 					["coord"] = { 38.7, 47.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
