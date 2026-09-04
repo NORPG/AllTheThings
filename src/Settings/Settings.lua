@@ -929,10 +929,22 @@ settings.GetModeString = function(self)
 			end
 		end
 		local hasAllInsaneFilters = true
-		for filterID in pairs(app.EquipmentFilters) do
-			if not settings:GetFilter(filterID) then
-				hasAllInsaneFilters = false
-				break
+		if not settings:Get("Profile:DefaultFilters") then
+			if settings:Get("AccountMode") then
+				for filterID, v in pairs(app.EquipmentFilters) do
+					print("equipfilters", filterID, v)
+					if not settings:GetFilter(filterID) then
+						hasAllInsaneFilters = false
+						break
+					end
+				end
+			else
+				for filterID in pairs(app.Presets[app.Class]) do
+					if not settings:GetFilter(filterID) then
+						hasAllInsaneFilters = false
+						break
+					end
+				end
 			end
 		end
 		if thingCount == 0 then
@@ -1033,10 +1045,22 @@ settings.GetShortModeString = function(self)
 			end
 		end
 		local hasAllInsaneFilters = true
-		for filterID in pairs(app.EquipmentFilters) do
-			if not settings:GetFilter(filterID) then
-				hasAllInsaneFilters = false
-				break
+		if not settings:Get("Profile:DefaultFilters") then
+			if settings:Get("AccountMode") then
+				for filterID, v in pairs(app.EquipmentFilters) do
+					print("equipfilters", filterID, v)
+					if not settings:GetFilter(filterID) then
+						hasAllInsaneFilters = false
+						break
+					end
+				end
+			else
+				for filterID in pairs(app.Presets[app.Class]) do
+					if not settings:GetFilter(filterID) then
+						hasAllInsaneFilters = false
+						break
+					end
+				end
 			end
 		end
 		local style = ""
