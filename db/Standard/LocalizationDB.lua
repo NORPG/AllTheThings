@@ -1774,6 +1774,7 @@ localize(L.HEADER_NAMES, {
 	[-785] = "21st Anniversary Bundle",
 	[-787] = "Maruukai Endeavor",
 	[-788] = "Tortollan Endeavor",
+	[-789] = "Kobold Endeavor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2550,6 +2551,7 @@ localize(L.HEADER_ICONS, {
 	[-785] = 133783,
 	[-787] = 4578413,
 	[-788] = 2065576,
+	[-789] = 2061718,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

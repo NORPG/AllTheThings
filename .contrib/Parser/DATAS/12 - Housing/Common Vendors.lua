@@ -685,6 +685,7 @@ root(ROOTS.Housing, {
 			["timeline"] = { ADDED_11_2_7 },
 			["groups"] = {
 				i(279458, { ["timeline"] = { ADDED_12_1_0 } }),	-- Draenei Rock Goblet (DECOR!)
+				i(247776, { ["timeline"] = { ADDED_12_1_0 } }),	-- Glowing Zangarshroom Cup (DECOR!)
 				i(279455, { ["timeline"] = { ADDED_12_1_0 } }),	-- K'areshi Tea Cup (DECOR!)
 			},
 		}),
