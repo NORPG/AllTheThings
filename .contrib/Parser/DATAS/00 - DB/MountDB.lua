@@ -2565,5 +2565,5 @@ i(280581, 1309340);	-- Wintry Witchwick's Rider		(SHOP OR TRADING POST)
 ------------------
 -- PATCH 12.1.5 --
 ------------------
-
+i(276926, 1301331);	-- Corrupted Swarmer
 --- Unsorted ---

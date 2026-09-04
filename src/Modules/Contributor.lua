@@ -3108,6 +3108,7 @@ MobileDB.GameObject = {
 	[523288] = true,	-- Umbral Tin
 	[523293] = true,	-- Voidbound Umbral Tin
 	[523295] = true,	-- Brilliant Silver
+	[523297] = true,	-- Rich Brilliant Silver
 	[523299] = true,	-- Primal Brilliant Silver
 	[523378] = true,	-- Portal to Nagrand
 	[523409] = true,	-- Shiny Trash Can

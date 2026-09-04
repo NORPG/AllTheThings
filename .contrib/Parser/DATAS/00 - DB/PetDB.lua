@@ -4690,5 +4690,7 @@ i(279197, 5129);	-- Slitherfang
 ------------------
 -- PATCH 12.1.5 --
 ------------------
-
+i(276927, 5100);	-- Aqir Razorwing
+i(274923, 5066);	-- Aqir Scuttler
+i(274927, 5068);	-- Aqir Wingreaver
 --- Unsorted ---

@@ -156801,7 +156801,7 @@ crit(68209,{achID=40434,id=12})}})}),
 h(-58,{
 n(226205,{coords={
 [2248]={{74.4,45.2}}},g={
-de(2470,{awp=110207,cost={{"i",225557,75}},itemID=246707,spellID=1243427}),
+de(2470,{awp=110207,cost={{"i",225557,30}},itemID=246707,spellID=1243427}),
 r(445479,{itemID=228424,lvl=68,requireSkill=185,skillID=2873}),
 mnt(447151,{b=1,cost={{"i",225557,900}},itemID=223153,lvl=10})}}),
 n(252901,{awp=110207,coords={
@@ -164525,6 +164525,25 @@ i(244883,{awp=110200,b=1,f=55,lvl=80,sym={{"select","itemID",235639},{"pop"}}}),
 cu(2815)})}}),
 m(2537,{awp=120000,icon=7488399,lore="Quel'Thalas is a forested area in northern Lordaeron. It is ruled by the blood elves, descendants of the kingdom's Highborne founders, and is known as the Land of Eternal Spring. Its capital is Silvermoon City.",lvl=80,g={
 m(2393,{awp=120001,icon=135761,isRaid=1,lore="Silvermoon City is the crown jewel of the blood elves and their capital city. It is nestled in the northern reaches of the Eversong Woods (at the northernmost tip of the Eastern Kingdoms) in their ancestral homeland of Quel'Thalas",maps={2443},g={
+ah(2838,{awp=120105,icon=463478,lore="Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",type="fa",g={
+faction(2838),
+h(-12,{
+ach(63657,{minReputation={2838,20}})}),
+h(-58,{
+n(266188,{coords={
+[2393]={{39.3,80.3}}},g={
+p(5068,{cost={{"c",3316,1000}},itemID=274927,minReputation={2838,2}}),
+i(275873,{cost={{"c",3316,250}},minReputation={2838,2}}),
+i(275869,{cost={{"c",3316,250}},minReputation={2838,2}}),
+p(5066,{cost={{"c",3316,1000}},itemID=274923,minReputation={2838,3}}),
+i(275879,{cost={{"c",3316,250}},minReputation={2838,3}}),
+i(275867,{cost={{"c",3316,250}},minReputation={2838,3}}),
+p(5100,{cost={{"c",3316,2000}},itemID=276927,minReputation={2838,4}}),
+i(275871,{cost={{"c",3316,500}},minReputation={2838,4}}),
+i(275865,{cost={{"c",3316,500}},minReputation={2838,4}}),
+i(280050,{cost={{"c",3316,1000}},minReputation={2838,5}}),
+mnt(1301331,{cost={{"c",3316,2500}},itemID=276926,minReputation={2838,5}}),
+toy(275039,{cost={{"c",3316,2500}},minReputation={2838,5}})}})})}}),
 flt(101,{
 p(4912,{b=1,coords={
 [2393]={{28.7,75.6},{29,81.4},{31.8,81.2},{32.4,75.4}}},crs={254885},itemID=258660,npcID=254885,spellID=1263739}),
@@ -169516,7 +169535,7 @@ o(668590,{coords={
 [2509]={{52.2,45.2}}},questID=98030,g={
 crit(116408,{achID=63610,id=2})}}),
 o(668591,{coords={
-[2638]={{13.6,65.6}}},questID=98031,g={
+[2638]={{13,64.2}}},questID=98031,g={
 crit(116409,{achID=63610,id=3})}}),
 o(668593,{coords={
 [2509]={{55.6,40.6}}},questID=98032,g={
@@ -169525,7 +169544,7 @@ o(668594,{coords={
 [2509]={{52.9,33.9}}},questID=98033,g={
 crit(116411,{achID=63610,id=5})}}),
 o(668596,{coords={
-[2509]={{42.9,41.2}}},questID=98034,g={
+[2509]={{42.9,39.9}}},questID=98034,g={
 crit(116412,{achID=63610,id=6})}}),
 o(668597,{coords={
 [2509]={{45.8,61.8}}},questID=98035,g={
@@ -169540,10 +169559,10 @@ o(668600,{coords={
 [2636]={{76.7,35.1}}},questID=98038,g={
 crit(116416,{achID=63610,id=10})}}),
 o(668601,{coords={
-[2509]={{42.6,33.1}}},questID=98039,g={
+[2509]={{42.5,33.1}}},questID=98039,g={
 crit(116417,{achID=63610,id=11})}}),
 o(668602,{coords={
-[2509]={{56.5,23}}},questID=98040,g={
+[2509]={{56.5,22.9}}},questID=98040,g={
 crit(116418,{achID=63610,id=12})}})}}),
 o(649651,{coords={
 [2613]={{68.6,15.66}}},cost={{"i",280003,1}},g={

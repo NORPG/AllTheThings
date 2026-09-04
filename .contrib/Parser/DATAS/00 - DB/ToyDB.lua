@@ -1634,5 +1634,5 @@ i(276207);	-- Preyhunter's Masquerade
 ------------------
 -- PATCH 12.1.5 --
 ------------------
-
+i(275039);	-- Curse of the Aqir
 --- Unsorted ---
