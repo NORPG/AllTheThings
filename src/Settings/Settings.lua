@@ -932,7 +932,6 @@ settings.GetModeString = function(self)
 		if not settings:Get("Profile:DefaultFilters") then
 			if settings:Get("AccountMode") then
 				for filterID, v in pairs(app.EquipmentFilters) do
-					print("equipfilters", filterID, v)
 					if not settings:GetFilter(filterID) then
 						hasAllInsaneFilters = false
 						break
@@ -1048,7 +1047,6 @@ settings.GetShortModeString = function(self)
 		if not settings:Get("Profile:DefaultFilters") then
 			if settings:Get("AccountMode") then
 				for filterID, v in pairs(app.EquipmentFilters) do
-					print("equipfilters", filterID, v)
 					if not settings:GetFilter(filterID) then
 						hasAllInsaneFilters = false
 						break
