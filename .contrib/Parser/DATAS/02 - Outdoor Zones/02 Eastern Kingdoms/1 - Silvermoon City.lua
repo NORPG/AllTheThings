@@ -137,6 +137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9678,	-- The First Trial
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 				}),
@@ -201,6 +202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 64319,	-- A Study in Power
 					["qg"] = 17718,	-- Magister Astalor Bloodsworn
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["groups"] = {
