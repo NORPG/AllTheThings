@@ -444,6 +444,7 @@ else
 	end
 end
 local function SyncDirtyQuests()
+	-- app.PrintDebug("SyncDirtyQuests",#DirtyQuests)
 	if #DirtyQuests > 0 then
 		app.UpdateRawIDs("questID", DirtyQuests)
 		app.wipearray(DirtyQuests)
@@ -937,12 +938,12 @@ local RefreshQuestInfo = function(questID)
 		RefreshAllQuestInfo();
 	end
 end
+local FirstRefresh = true
 if C_QuestLog_GetAllCompletedQuestIDs then
 	local MAX = 999999;
 	local UnflaggedQuests = {}
 	local FlaggedQuests = {}
 	local CompleteQuestSequence = {};
-	local FirstRefresh = true
 	local IgnoredUnflagTypes = {
 		ItemWithQuest = true,
 	}
@@ -953,7 +954,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		if not freshCompletes or #freshCompletes == 0 then
 			return;
 		end
-		-- app.PrintDebug("QCQ",#freshCompletes,#CompleteQuestSequence)
+		-- app.PrintDebug("QCQ",#freshCompletes,#CompleteQuestSequence,FirstRefresh)
 		local oldReportSetting = DoQuestPrints
 		-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 		local questDiff = #freshCompletes - #CompleteQuestSequence;
@@ -1006,6 +1007,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 
 		if FirstRefresh then
 			CacheQuestsByScope(RawQuests,1)
+			app.wipearray(DirtyQuests)
 		end
 		if next(FlaggedQuests) then
 			CacheQuestsByScope(FlaggedQuests,1)
@@ -1081,7 +1083,12 @@ else	-- no C_QuestLog_GetAllCompletedQuestIDs
 			CacheQuestsByScope(UpdateQuestIDs, 1);
 		end
 		BatchRefresh = nil
-		app.CallbackHandlers.DelayedCallback(SyncDirtyQuests, 0.5)
+		if FirstRefresh then
+			FirstRefresh = nil
+			app.wipearray(DirtyQuests)
+		else
+			app.CallbackHandlers.DelayedCallback(SyncDirtyQuests, 0.5)
+		end
 	end
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 		-- convert cached quests into the current RawQuests so they don't all appear 'dirty' on first refresh
