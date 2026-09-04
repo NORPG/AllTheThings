@@ -244,6 +244,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(272280),	-- Exhumed Soul-Cleaver
 						i(272266),	-- Forgotten Eidolon's Dagger
 						i(272272),	-- Harrowed Partisan
+						i(251935),	-- Lightgrasp Worldroot
 						i(272268),	-- Mask-Etcher
 						i(251885),	-- Radiant Foil
 						i(272274),	-- Realm Splitter
@@ -308,17 +309,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["questID"] = 92887,
 					["isWeekly"] = true,
 					["cost"] = { { "i", 275910, 1 } },	-- Scalebound Herald's Flute
-					["sym"] = {{"select","itemID",
-					--	264971,	-- Annihilation Rod (COSMETIC!)
-					--	264970,	-- Oblivion's Edge (COSMETIC!)
-						265368,	-- Twilight Destroyer (COSMETIC!)
-						265366,	-- Twilight Executioner (COSMETIC!)
-						265367,	-- Twilight Fang (COSMETIC!)
-					}},
 					["groups"] = {
 						i(262391),	-- Ominous Dominus (PET!)
 						i(264971),	-- Annihilation Rod (COSMETIC!)
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
+						i(265368),	-- Twilight Destroyer (COSMETIC!)
+						i(265366),	-- Twilight Executioner (COSMETIC!)
+						i(265367),	-- Twilight Fang (COSMETIC!)
 					},
 				}),
 			})),

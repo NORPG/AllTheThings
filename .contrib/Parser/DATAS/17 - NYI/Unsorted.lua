@@ -27,7 +27,6 @@ root(ROOTS.Unsorted, {
 			-- WB
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
-			i(268585),	-- Pup Treat
 			i(268823),	-- Scroll of Seeking
 			i(268826),	-- Ballast Stone
 			i(268871),	-- Specifically Sized Rock

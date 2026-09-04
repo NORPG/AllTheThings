@@ -350,22 +350,22 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					{ 54.9, 57.3, RAZORWIND_SHORES },
 				},
 				["groups"] = {
-					i_DecorCoupons(280251, 10),	-- Kobold Sit-Thing (DECOR!)
-					i_DecorCoupons(280249, 10),	-- Kobold Dig-Thing (DECOR!)
-					i_DecorCoupons(280269, 10),	-- Cozy Kobold Crate (DECOR!)
-					i_DecorCoupons(280255, 10),	-- Small Warrens Candle (DECOR!)
-					i_DecorCoupons(280273, 10),	-- Droopy Longwick Rope (DECOR!)
-					i_DecorCoupons(280271, 10),	-- Longwick Rope (DECOR!)
-					i_DecorCoupons(280275, 10),	-- Hanging Longwick Rope (DECOR!)
-					i_DecorCoupons(280257, 15),	-- Medium Warrens Candle (DECOR!)
-					i_DecorCoupons(280263, 20),	-- Candle Cage (DECOR!)
 					i_DecorCoupons(280267, 30),	-- Bold Kobold Kabin (DECOR!)
-					i_DecorCoupons(280265, 25),	-- Hot Kobold Treasure (DECOR!)
-					i_DecorCoupons(280259, 20),	-- Large Warrens Candle (DECOR!)
-					i_DecorCoupons(280261, 25),	-- Large Threedium Warrens Candle (DECOR!)
-					i_DecorCoupons(280253, 20),	-- Highlighting High Light (DECOR!)
-					i_DecorCoupons(280246, 30),	-- Warrens Candlecooker (DECOR!)
+					i_DecorCoupons(280263, 20),	-- Candle Cage (DECOR!)
 					i_DecorCoupons(280513, 20),	-- Color-Curious Candle (DECOR!)
+					i_DecorCoupons(280269, 10),	-- Cozy Kobold Crate (DECOR!)
+					i_DecorCoupons(280273, 10),	-- Droopy Longwick Rope (DECOR!)
+					i_DecorCoupons(280275, 10),	-- Hanging Longwick Rope (DECOR!)
+					i_DecorCoupons(280253, 20),	-- Highlighting High Light (DECOR!)
+					i_DecorCoupons(280265, 25),	-- Hot Kobold Treasure (DECOR!)
+					i_DecorCoupons(280249, 10),	-- Kobold Dig-Thing (DECOR!)
+					i_DecorCoupons(280251, 10),	-- Kobold Sit-Thing (DECOR!)
+					i_DecorCoupons(280261, 25),	-- Large Threedium Warrens Candle (DECOR!)
+					i_DecorCoupons(280259, 20),	-- Large Warrens Candle (DECOR!)
+					i_DecorCoupons(280271, 10),	-- Longwick Rope (DECOR!)
+					i_DecorCoupons(280257, 15),	-- Medium Warrens Candle (DECOR!)
+					i_DecorCoupons(280255, 10),	-- Small Warrens Candle (DECOR!)
+					i_DecorCoupons(280246, 30),	-- Warrens Candlecooker (DECOR!)
 				},
 			}),
 			n(REWARDS, {
@@ -398,6 +398,9 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			--	["isWeekly"] = true,
 			--}, {
 			--})),
+			filter(MISC, {
+				i(268585),	-- Pup Treat
+			}),
 		})),
 		n(MECHAGNOME_ENDEAVOR, {
 			n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
@@ -772,8 +775,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 						i_DecorCoupons(280238, 10),	-- Half-Shell Hot Pot (DECOR!)
 						i_DecorCoupons(280225, 25),	-- Mason's Tortollan Display Rack (DECOR!)
 						i_DecorCoupons(280873, 5),	-- Protected Tortollan Scroll Case (DECOR!)
-						i_DecorCoupons(280232, 15),	-- Sea Glass Lamp Post (DECOR!)
 						i_DecorCoupons(280234, 15),	-- Sea Glass Bauble (DECOR!)
+						i_DecorCoupons(280232, 15),	-- Sea Glass Lamp Post (DECOR!)
 						i_DecorCoupons(280221, 10),	-- Sealeather Sack (DECOR!)
 						i_DecorCoupons(280215, 20),	-- Tortollan Tarp Tent (DECOR!)
 						i_DecorCoupons(280242, 15),	-- Tortollan Traveler's Chest (DECOR!)
