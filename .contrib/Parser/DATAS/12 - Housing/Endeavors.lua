@@ -730,7 +730,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 						i(276618),	-- Weathered Stone Tablet
 					},
 				}),
-				n(268107, {	-- Rada <Scroll Vendor>
+				n(268110, {	-- Rada <Scroll Vendor>
 					["coords"] = {
 						{ 52.9, 39.0, FOUNDERS_POINT },
 						--{ 52.8, 37.5, RAZORWIND_SHORES },
