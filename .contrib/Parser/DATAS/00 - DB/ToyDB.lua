@@ -1636,3 +1636,9 @@ i(276207);	-- Preyhunter's Masquerade
 ------------------
 i(275039);	-- Curse of the Aqir
 --- Unsorted ---
+i(280823);	-- Feathers of Akil'zon
+i(280820);	-- Loa Blessed Victory
+i(280822);	-- Nalorakk's Strength Charm
+i(280825);	-- Rite of Jan'alai's Flame
+i(281615);	-- Shadeweaver's Hearthstone
+i(280821);	-- Trail of Halazzi

@@ -2567,3 +2567,10 @@ i(280581, 1309340);	-- Wintry Witchwick's Rider		(SHOP OR TRADING POST)
 ------------------
 i(276926, 1301331);	-- Corrupted Swarmer
 --- Unsorted ---
+i(282646, 1314165);	-- Hot Motocross Bunmover 4000
+i(282647, 1314166);	-- Hot Motocross Bunmover 4200
+i(282648, 1314168);	-- Hot Motocross Bunmover 4400
+i(282649, 1314169);	-- Hot Motocross Bunmover 4600
+i(275756, 1297808);	-- Living Heartsbane Cauldron
+i(283363, 1314715);	-- Loa-Blessed Wayfarer
+i(282414, 1313788);	-- Sporebearer Fungal Strider
