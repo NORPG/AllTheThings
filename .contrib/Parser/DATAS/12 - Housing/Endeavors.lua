@@ -700,7 +700,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["cost"] = { { "i", 276748, 1 } },	-- Scroll of the Salty Souvenir: West
 					["coord"] = { 19.6, 42.6, FOUNDERS_POINT },
 				}),
-				n(266733, {	-- Secret Souvenir (60)
+				n(266734, {	-- Secret Souvenir (60)
 					["description"] = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
 					["cost"] = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
 					["coords"] = { 55.8, 85.1, FOUNDERS_POINT },

@@ -1148,7 +1148,6 @@ h(-788,{awp=120100,g={
 h(-12,{
 ach(63605,{coords={
 [2352]={{52,38.2}}},crs={272031},description="There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",g={
-crit(116391,{achID=63605,id=60,providers={{"n",266734}}}),
 crit(116395,{achID=63606,id=2})}}),
 ach(63441,{maps={2351},g={
 crit(115868,{achID=63441,id=1,providers={{"n",266613}}}),
@@ -1389,8 +1388,9 @@ crit(116389,{achID=63605,id=58})}}),
 n(266732,{coords={
 [2352]={{19.6,42.6}}},cost={{"i",276748,1}},description="Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",g={
 crit(116390,{achID=63605,id=59})}}),
-n(266733,{coords={
-[2352]={{55.8,85.1}}},cost={{"i",276749,1}},description="Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood."})}}),
+n(266734,{coords={
+[2352]={{55.8,85.1}}},cost={{"i",276749,1}},description="Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",g={
+crit(116391,{achID=63605,id=60})}})}}),
 h(-58,{
 n(268115,{coords={
 [2352]={{52.8,37.5}}},g={
