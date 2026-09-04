@@ -9,8 +9,8 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local Search = app.SearchForObject
 
 -- Global locals
-local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber,type,unpack,tostring
-	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, select, tonumber,type,unpack,tostring
+local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber,type,unpack,tostring,next
+	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, select, tonumber,type,unpack,tostring,next
 local C_QuestLog_GetAllCompletedQuestIDs, C_QuestLog_GetQuestObjectives = C_QuestLog.GetAllCompletedQuestIDs, C_QuestLog.GetQuestObjectives;
 ---@diagnostic disable-next-line: undefined-global
 local GetQuestLogIndexByID = C_QuestLog.GetLogIndexForQuestID or GetQuestLogIndexByID;
@@ -443,6 +443,12 @@ else
 		app.SetThingCollected("questID",questID,false,flag)
 	end
 end
+local function SyncDirtyQuests()
+	if #DirtyQuests > 0 then
+		app.UpdateRawIDs("questID", DirtyQuests)
+		app.wipearray(DirtyQuests)
+	end
+end
 local BatchRefresh
 -- We can't track unflagged quests with a single meta-table unless we double-assign keys... that's a bit silly
 -- when we can have the original method of using 'CompletedQuests' as a pass-thru to the Raw data
@@ -471,6 +477,7 @@ local CompletedQuests = setmetatable({}, {
 		-- Way too much overhead to assume this should be done every time a key is changed
 		if not BatchRefresh then
 			CacheQuestByScope(questID, state)
+			app.CallbackHandlers.DelayedCallback(SyncDirtyQuests, 0.5)
 		end
 	end
 });
@@ -912,9 +919,6 @@ local function RefreshQuestCompletionState(questID)
 		-- Batch processing will ignore all the per-instance collection etc. built into CompletedQuests
 		-- because that is a huge overhead. Instead capture the values and assign them all at once
 		QueryCompletedQuests();
-		if #DirtyQuests > 0 then
-			app.UpdateRawIDs("questID", DirtyQuests);
-		end
 	end
 
 	Register_CRITERIA_UPDATE()
@@ -967,7 +971,6 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		if manyQuests then
 			DoQuestPrints = nil
 		end
-		wipe(DirtyQuests)
 		wipe(UnflaggedQuests)
 		wipe(FlaggedQuests)
 
@@ -1004,8 +1007,10 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		if FirstRefresh then
 			CacheQuestsByScope(RawQuests,1)
 		end
-		if #DirtyQuests > 0 then
+		if next(FlaggedQuests) then
 			CacheQuestsByScope(FlaggedQuests,1)
+		end
+		if next(UnflaggedQuests) then
 			CacheQuestsByScope(UnflaggedQuests)
 		end
 
@@ -1044,6 +1049,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		end
 
 		BatchRefresh = nil
+		app.CallbackHandlers.DelayedCallback(SyncDirtyQuests, 0.5)
 	end
 
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
@@ -1065,7 +1071,6 @@ else	-- no C_QuestLog_GetAllCompletedQuestIDs
 	QueryCompletedQuests = function()
 		-- Mark all previously completed quests.
 		BatchRefresh = true
-		wipe(DirtyQuests);
 		wipe(UpdateQuestIDs)
 		GetQuestsCompleted(CompletedQuests);
 		if #DirtyQuests > 0 then
@@ -1076,6 +1081,7 @@ else	-- no C_QuestLog_GetAllCompletedQuestIDs
 			CacheQuestsByScope(UpdateQuestIDs, 1);
 		end
 		BatchRefresh = nil
+		app.CallbackHandlers.DelayedCallback(SyncDirtyQuests, 0.5)
 	end
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 		-- convert cached quests into the current RawQuests so they don't all appear 'dirty' on first refresh
