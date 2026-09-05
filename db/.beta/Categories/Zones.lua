@@ -65402,7 +65402,7 @@ s(25920,52934,{b=1,f=3}),
 s(25899,52910,{b=1,f=5,loc=42}),
 s(76042,131831,{b=1,f=6,loc=42})}}),
 q(25243,{coords={
-[174]={{43.6,25.3}}},description="This quest is a character gender-specific quest only available for male/\nbody type 1 characters. Female/body type 2 characters will in this place get\nthe quest 'What Kind of Name is Candy, Anyway?'.\n\nThe quest rewards are also rewarded from the female/body type 2 version of\nthis quest named 'The Fastest Way to His Heart', which is given in place of\nthe male/body type 1 quest 'What Kind of Name is Chip, Anyway?'.",qgs={38387},races={9},sourceQuests={25213},g={
+[174]={{43.6,25.3}}},description="This quest is only available when choosing Candy during 'It's All in the Image'. Cross-completes with 'The Fastest Way to His Heart' after relogging.",qgs={38387},races={9},sourceQuests={25213},g={
 s(25909,52920,{b=1,f=5,loc=44}),
 s(76046,131835,{awp=70003,b=1,f=6,loc=44}),
 s(25923,52937,{b=1,f=3,races={9}}),
@@ -65429,7 +65429,7 @@ s(25934,52948,{b=1,f=5,loc=46}),
 s(76051,131840,{awp=70003,b=1,f=6,loc=46}),
 s(25891,52902,{b=1,f=4,loc=43})}}),
 q(25202,{coords={
-[174]={{54,17}}},description="This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place get\nthe quest 'What Kind of Name is Chip, Anyway?'.\n\nThe quest rewards are also rewarded from the male/body type 1 version of\nthis quest named 'She Loves Me, She Loves Me NOT!', which is given in place of\nthe female/body type 2 quest 'What Kind of Name is Candy, Anyway?'.",qgs={38647},races={9},sourceQuests={25200,25201},g={
+[174]={{54,17}}},description="This quest is only available when choosing Chip during 'It's All in the Image'. Cross-completes with 'She Loves Me, She Loves Me NOT!' after relogging.",qgs={38647},races={9},sourceQuests={25200,25201},g={
 s(25909,52920,{b=1,f=5,loc=44}),
 s(76046,131835,{awp=70003,b=1,f=6,loc=44}),
 s(25923,52937,{b=1,f=3,races={9}}),
@@ -65515,13 +65515,13 @@ s(25888,52899,{b=1,f=4,loc=46}),
 s(25931,52945,{b=1,f=5,loc=47}),
 s(76050,131839,{awp=70003,b=1,f=6,loc=47})}}),
 q(25244,{coords={
-[174]={{43.6,25.3}}},description="This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place\nget the quest 'She Loves Me, She Loves Me NOT!'.\n\nThe quest rewards have shared apperances with the rewards from the male/\nbody type 1 version of this quest named 'What Kind of Name is Chip, Anyway?',\nwhich too will be collected after logging out from the game.",qgs={38387},races={9},sourceQuests={25213},g={
+[174]={{43.6,25.3}}},description="This quest is only available when choosing Chip during 'It's All in the Image'. Cross-completes with 'What Kind of Name is Chip, Anyway?' after relogging.",qgs={38387},races={9},sourceQuests={25213},g={
 s(25958,52972,{b=1,f=4,loc=44}),
 s(25956,52970,{b=1,f=5,loc=45}),
 s(76057,131846,{b=1,f=6,loc=45}),
 s(25927,52941,{b=1,f=22})}}),
 q(25203,{coords={
-[174]={{54.1,17.2}}},description="This quest is a character gender-specific quest only available for male/\nbody type 1 characters. Female/body type 2 characters will in this place\nget the quest 'The Fastest Way to His Heart'.\n\nThe quest rewards have shared apperances with the rewards from the female/\nbody type 2 version of this quest named 'What Kind of Name is Candy, Anyway?',\nwhich too will be collected after logging out from the game.",qgs={38441},races={9},sourceQuests={25200,25201},g={
+[174]={{54.1,17.2}}},description="This quest is only available when choosing Candy during 'It's All in the Image'. Cross-completes with 'What Kind of Name is Candy, Anyway?' after relogging.",qgs={38441},races={9},sourceQuests={25200,25201},g={
 s(76055,131844,{b=1,f=6,loc=45}),
 s(25910,52921,{b=1,f=4,loc=44}),
 s(25952,52966,{b=1,f=5,loc=45}),
