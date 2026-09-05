@@ -494,8 +494,10 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["cr"] = 272031,	-- Taggi <Chief Hider>
 					["coord"] = { 52.0, 38.2, FOUNDERS_POINT },
 				}),
-				ach(63441, {	-- Souvenir Seeker, Razorwind Shores
-					["maps"] = { RAZORWIND_SHORES },
+				ach(63441, {	-- Souvenir Seeker, Razorwind Shores (Automated)
+					["description"] = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
+					["cr"] = 272031,	-- Taggi <Chief Hider>
+					["coord"] = { 54.6, 57.7, RAZORWIND_SHORES },
 				}),
 				ach(63606, {	-- Superlative Souvenir Seeker
 					["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
@@ -669,7 +671,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(266725, {	-- Secret Souvenir (52)
-					["description"] = "This Souvenir requires usage of an AoE healing spell, such as Druid's Efflorescence or Shaman's Surging Totem, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
+					["description"] = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
 					["cr"] = 272966,	-- Suspiciously Dry Soil
 					["coord"] = { 39.1, 31.3, FOUNDERS_POINT },
 				}),
@@ -709,11 +711,222 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coords"] = { 55.8, 85.1, FOUNDERS_POINT },
 				}),
 			}),
+			header(HEADERS.Achievement, 63441, {	-- Souvenir Seeker, Razorwind Shores
+				-- NOTE: This ties achCriteria to the coordinates. The Number next to the NPC Name is the number of the criterion. Automation works.
+				n(266613, {	-- Secret Souvenir (1)
+					["coord"] = { 54.2, 56.9, RAZORWIND_SHORES },
+				}),
+				n(266614, {	-- Secret Souvenir (2)
+					["coord"] = { 54.8, 57.5, RAZORWIND_SHORES },
+				}),
+				n(266615, {	-- Secret Souvenir (3)
+					["coord"] = { 53.3, 56.6, RAZORWIND_SHORES },
+				}),
+				n(266616, {	-- Secret Souvenir (4)
+					["coord"] = { 52.7, 52.7, RAZORWIND_SHORES },
+				}),
+				n(266617, {	-- Secret Souvenir (5)
+					["coord"] = { 53.8, 49.0, RAZORWIND_SHORES },
+				}),
+				n(266618, {	-- Secret Souvenir (6)
+					["coord"] = { 58.5, 49.5, RAZORWIND_SHORES },
+				}),
+				n(266619, {	-- Secret Souvenir (7)
+					["coord"] = { 51.5, 58.7, RAZORWIND_SHORES },
+				}),
+				n(266620, {	-- Secret Souvenir (8)
+					["coord"] = { 63.6, 44.2, RAZORWIND_SHORES },
+				}),
+				n(266621, {	-- Secret Souvenir (9)
+					["coord"] = { 62.4, 52.1, RAZORWIND_SHORES },
+				}),
+				n(266622, {	-- Secret Souvenir (10)
+					["coord"] = { 64.3, 58.3, RAZORWIND_SHORES },
+				}),
+				n(266623, {	-- Secret Souvenir (11)
+					["coord"] = { 69.0, 76.0, RAZORWIND_SHORES },
+				}),
+				n(266624, {	-- Secret Souvenir (12)
+					["description"] = "Read the scroll to learn how operate the ladders. When you approach the ladders, you will get an 'Extra Action Button'. Use it.",
+					["provider"] = { "o", 656134 },	-- No Wrong Rung: A Quick Start Guide to Laddering
+					["coord"] = { 62.2, 90.2, RAZORWIND_SHORES },
+				}),
+				n(266625, {	-- Secret Souvenir (13)
+					["coord"] = { 61.5, 89.9, RAZORWIND_SHORES },
+				}),
+				n(266626, {	-- Secret Souvenir (14)
+					["description"] = "Souvenir is hidden inside Shark's mount.",
+					["coord"] = { 54.5, 81.6, RAZORWIND_SHORES },
+				}),
+				n(266627, {	-- Secret Souvenir (15)
+					["coord"] = { 52.1, 72.4, RAZORWIND_SHORES },
+				}),
+				n(266628, {	-- Secret Souvenir (16)
+					["coord"] = { 51.1, 69.5, RAZORWIND_SHORES },
+				}),
+				n(266629, {	-- Secret Souvenir (17)
+					["coord"] = { 52.6, 64.4, RAZORWIND_SHORES },
+				}),
+				n(266630, {	-- Secret Souvenir (18)
+					["coord"] = { 44.6, 54.5, RAZORWIND_SHORES },
+				}),
+				n(266631, {	-- Secret Souvenir (19)
+					["coord"] = { 43.7, 50.7, RAZORWIND_SHORES },
+				}),
+				n(266632, {	-- Secret Souvenir (20)
+					["description"] = "Inside the cave, behind the waterfall.",
+					["coords"] = {
+						{ 39.9, 57.9, RAZORWIND_SHORES },	-- Cave Entrance
+						{ 39.3, 57.8, RAZORWIND_SHORES },	-- Secret Souvenir
+					},
+				}),
+				n(266633, {	-- Secret Souvenir (21)
+					["coord"] = { 41.6, 66.9, RAZORWIND_SHORES },
+				}),
+				n(266634, {	-- Secret Souvenir (22)
+					["coord"] = { 42.7, 69.9, RAZORWIND_SHORES },
+				}),
+				n(266635, {	-- Secret Souvenir (23)
+					["coord"] = { 48.8, 66.0, RAZORWIND_SHORES },
+				}),
+				n(266636, {	-- Secret Souvenir (24)
+					["coord"] = { 46.7, 75.3, RAZORWIND_SHORES },
+				}),
+				n(266637, {	-- Secret Souvenir (25)
+					["coord"] = { 40.8, 78.6, RAZORWIND_SHORES },
+				}),
+				n(266638, {	-- Secret Souvenir (26)
+					["coord"] = { 38.7, 80.3, RAZORWIND_SHORES },
+				}),
+				n(266639, {	-- Secret Souvenir (27)
+					["coord"] = { 44.0, 87.3, RAZORWIND_SHORES },
+				}),
+				n(266640, {	-- Secret Souvenir (28)
+					["coord"] = { 51.1, 89.9, RAZORWIND_SHORES },
+				}),
+				n(266641, {	-- Secret Souvenir (29)
+					["description"] = "Inside the house, op top of the shelf left of the entrance.",
+					["coord"] = { 64.1, 69.5, RAZORWIND_SHORES },
+				}),
+				n(266642, {	-- Secret Souvenir (30)
+					["coord"] = { 62.1, 63.3, RAZORWIND_SHORES },
+				}),
+				n(266643, {	-- Secret Souvenir (31)
+					["coord"] = { 59.7, 64.7, RAZORWIND_SHORES },
+				}),
+				n(266644, {	-- Secret Souvenir (32)
+					["coord"] = { 58.0, 63.6, RAZORWIND_SHORES },
+				}),
+				n(266645, {	-- Secret Souvenir (33)
+					["coord"] = { 57.9, 69.8, RAZORWIND_SHORES },
+				}),
+				n(266646, {	-- Secret Souvenir (34)
+					["coord"] = { 50.5, 62.6, RAZORWIND_SHORES },
+				}),
+				n(266647, {	-- Secret Souvenir (35)
+					["coord"] = { 51.0, 65.0, RAZORWIND_SHORES },
+				}),
+				n(266648, {	-- Secret Souvenir (36)
+					["coord"] = { 47.6, 62.2, RAZORWIND_SHORES },
+				}),
+				n(266649, {	-- Secret Souvenir (37)
+					["coord"] = { 48.4, 61.8, RAZORWIND_SHORES },
+				}),
+				n(266650, {	-- Secret Souvenir (38)
+					["coord"] = { 48.2, 58.5, RAZORWIND_SHORES },
+				}),
+				n(266651, {	-- Secret Souvenir (39)
+					["coord"] = { 48.7, 54.1, RAZORWIND_SHORES },
+				}),
+				n(266652, {	-- Secret Souvenir (40)
+					["coord"] = { 55.9, 50.5, RAZORWIND_SHORES },
+				}),
+				n(266653, {	-- Secret Souvenir (41)
+					["coord"] = { 56.4, 48.4, RAZORWIND_SHORES },
+				}),
+				n(266654, {	-- Secret Souvenir (42)
+					["coord"] = { 55.5, 60.8, RAZORWIND_SHORES },
+				}),
+				n(266655, {	-- Secret Souvenir (43)
+					["coord"] = { 57.2, 58.1, RAZORWIND_SHORES },
+				}),
+				n(266656, {	-- Secret Souvenir (44)
+					["coord"] = { 79.9, 40.5, RAZORWIND_SHORES },
+				}),
+				n(266657, {	-- Secret Souvenir (45)
+					["coord"] = { 41.9, 24.5, RAZORWIND_SHORES },
+				}),
+				n(266658, {	-- Secret Souvenir (46)
+					["coord"] = { 22.9, 42.6, RAZORWIND_SHORES },
+				}),
+				n(266659, {	-- Secret Souvenir (47)
+					["coord"] = { 75.5, 88.7, RAZORWIND_SHORES },
+				}),
+				n(266660, {	-- Secret Souvenir (48)
+					["coord"] = { 58.8, 55.4, RAZORWIND_SHORES },
+				}),
+				n(266661, {	-- Secret Souvenir (49)
+					["coord"] = { 51.5, 54.0, RAZORWIND_SHORES },
+				}),
+				n(266662, {	-- Secret Souvenir (50)
+					["coord"] = { 53.5, 54.5, RAZORWIND_SHORES },
+				}),
+				n(266663, {	-- Secret Souvenir (51)
+					["description"] = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
+					["coords"] = {
+						{ 54.9, 42.8, RAZORWIND_SHORES },	-- Waterfall, Start point
+						{ 56.0, 51.1, RAZORWIND_SHORES },	-- Waterfall, 2/4 point
+						{ 62.4, 57.5, RAZORWIND_SHORES },	-- Bridge, 3/4 point
+						{ 63.9, 63.3, RAZORWIND_SHORES },	-- Shore, End point
+					},
+				}),
+				n(266664, {	-- Secret Souvenir (52)
+					["description"] = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
+					["cr"] = 272966,	-- Suspiciously Dry Soil
+					["coord"] = { 47.2, 59.7, RAZORWIND_SHORES },
+				}),
+				n(266665, {	-- Secret Souvenir (53)
+					["description"] = "This Souvenir can be found in the back of Communal Cart.",
+					["cr"] = 256645,	-- Communal Cart
+					["maps"] = { RAZORWIND_SHORES },
+				}),
+				n(266666, {	-- Secret Souvenir (54)
+					["coord"] = { 62.6, 47.9, RAZORWIND_SHORES },
+				}),
+				n(266667, {	-- Secret Souvenir (55)
+					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geysir will spit out the Souvenir... Eventually...",
+					["coord"] = { 52.6, 73.1, RAZORWIND_SHORES },
+				}),
+				n(266668, {	-- Secret Souvenir (56)
+					["description"] = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
+					["cr"] = 267939,	-- Seeker's Kite
+					["maps"] = { RAZORWIND_SHORES },
+				}),
+				n(266669, {	-- Secret Souvenir (57)
+					["description"] = "Under the bartender, in the body of the ship.",
+					["coord"] = { 39.2, 73.8, RAZORWIND_SHORES },
+				}),
+				n(266670, {	-- Secret Souvenir (58)
+					["description"] = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["cost"] = { { "i", 276747, 1 } },	-- Scroll of the Salty Souvenir: East
+					["coords"] = { 75.2, 48.4, RAZORWIND_SHORES },
+				}),
+				n(266671, {	-- Secret Souvenir (59)
+					["description"] = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["cost"] = { { "i", 276748, 1 } },	-- Scroll of the Salty Souvenir: West
+					["coord"] = { 26.3, 33.3, RAZORWIND_SHORES },
+				}),
+				n(266672, {	-- Secret Souvenir (60)
+					["description"] = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["cost"] = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
+					["coords"] = { 56.1, 95.0, RAZORWIND_SHORES },
+				}),
+			}),
 			n(VENDORS, {
 				n(268115, {	-- Ataru <Inspirational Scroll Merchant>
 					["coords"] = {
 						{ 52.8, 37.5, FOUNDERS_POINT },
-						--{ 52.8, 37.5, RAZORWIND_SHORES },
+						{ 54.0, 56.0, RAZORWIND_SHORES },
 					},
 					["groups"] = {
 						i_DecorCoupons(276628, 1),	-- Scroll of Deep Breath
@@ -723,7 +936,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				n(268116, {	-- Mota <Unique Antiques>
 					["coords"] = {
 						{ 53.0, 37.5, FOUNDERS_POINT },
-						--{ 52.8, 37.5, RAZORWIND_SHORES },
+						{ 54.2, 55.9, RAZORWIND_SHORES },
 					},
 					["groups"] = {	-- Exo Note: Junk items. I don't know whether or not these have any use. If not, probably better to just move to Uncollectible
 						i(276621),	-- Antique Shield
@@ -736,7 +949,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				n(268110, {	-- Rada <Scroll Vendor>
 					["coords"] = {
 						{ 52.9, 39.0, FOUNDERS_POINT },
-						--{ 52.8, 37.5, RAZORWIND_SHORES },
+						{ 54.2, 57.9, RAZORWIND_SHORES },
 					},
 					["groups"] = {
 						i(245606),	-- Blank Scroll
@@ -751,7 +964,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				n(268107, {	-- Roga <Travel Guide>
 					["coords"] = {
 						{ 52.9, 39.0, FOUNDERS_POINT },
-						--{ 52.8, 37.5, RAZORWIND_SHORES },
+						{ 54.4, 56.0, RAZORWIND_SHORES },
 					},
 					["groups"] = {	-- Exo Note: Alcohol. Probably move to Uncollectible?
 						i(276615),	-- Half-shell Highball
@@ -798,7 +1011,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["qg"] = 257168,	-- Throska
 					["coords"] = {
 						{ 62.2, 82.2, FOUNDERS_POINT },
-						--{ 54.4, 56.0, RAZORWIND_SHORES },
+						{ 39.1, 74.1, RAZORWIND_SHORES },
 					},
 				}),
 			})),
