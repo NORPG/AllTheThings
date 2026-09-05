@@ -144,7 +144,6 @@ root(ROOTS.Housing, {
 			}),
 			q(98204, {	-- Cursed Keepsake
 				["description"] = "Decor offered by the quest is on a rotation and is different per character on your account.\nYou can complete and obtain only 1 of 2 offered Decor Scenarios per Housing Area, per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",
-				-- Exo Note: Not sure if this is the Amani Endeavor related or not. Placing here for now.
 				["qg"] = 262726,	-- Cursed Keepsake
 				["coords"] = {
 					{ 52.7, 37.6, FOUNDERS_POINT },
@@ -153,32 +152,30 @@ root(ROOTS.Housing, {
 				["maps"] = { 0 },	-- Not kidding.
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_12_1_0 },
+				["qi"] = 274481,	-- Keepsake Corruption (QI!)
 				["groups"] = {
-					i(274481),	-- Keepsake Corruption (QI!)
-					-- Decor offered if turning quest in Founder's Point
 					i(255712),	-- Purified Ancient Urn (DECOR!)
 					i(253703),	-- Purified Crude Hammer
-					i(268943),	-- Purified Elven Glowlamp (DECOR!)
-					i(245993),	-- Purified Floating Lantern (DECOR!)
-					i(267205),	-- Purified Folk Candle (DECOR!)
-					i(263876),	-- Purified Folk Mirror (DECOR!)
-					i(278701),	-- Purified Goblin Cup (DECOR!)
-					i(267435),	-- Purified Kaldorei Candle (DECOR!)
-					i(252042),	-- Purified Troll Pitcher (DECOR!)
-					-- Decor offered if turning quest in Razorwind Shores
 					i(278696),	-- Purified Dracthyr Stein (DECOR!)
 					i(267355),	-- Purified Elven Mirror (DECOR!)
+					i(268943),	-- Purified Elven Glowlamp (DECOR!)
+					i(245993),	-- Purified Floating Lantern (DECOR!)
+					i(263876),	-- Purified Folk Mirror (DECOR!)
+					i(267205),	-- Purified Folk Candle (DECOR!)
+					i(278701),	-- Purified Goblin Cup (DECOR!)
+					i(267435),	-- Purified Kaldorei Candle (DECOR!)
 					i(245991),	-- Purified Sin'dorei Candle (DECOR!)
 					i(272129),	-- Purified Tauren Pot (DECOR!)
-					i(256361),	-- Purified Troll Pendant (DECOR!)
 					i(256684),	-- Purified Troll Amulet (DECOR!)
+					i(256361),	-- Purified Troll Pendant (DECOR!)
+					i(252042),	-- Purified Troll Pitcher (DECOR!)
 				},
 			}),
 			q(98406, {	-- A Curated Gift
 				["description"] = "Unlocks when your house reaches Level 8.",
 				["qgs"] = {
-					248854,	-- The Last Architect @ Founder's Point
-					253596,	-- The Last Architect @ Razorwind Shores
+					248854,	-- The Last Architect [Founder's Point]
+					253596,	-- The Last Architect [Razorwind Shores]
 				},
 				["coords"] = {
 					{ 52.7, 37.5, FOUNDERS_POINT },
@@ -199,16 +196,17 @@ root(ROOTS.Housing, {
 			}),
 			q(96780, {	-- Local Kafa Shop
 				["qg"] = 263258,	-- Cousin Shortkaf <Kafa Trader>
-				["coord"] =  { 55.1, 43.6, FOUNDERS_POINT },
+				["coords"] =  {
+					{ 55.1, 43.6, FOUNDERS_POINT },
+					{ 55.2, 61.9, RAZORWIND_SHORES },
+				},
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 			q(95387, {	-- One Neighbor's Junk is Another Troll's Treasure
-				["qgs"] = {
-					260485,	-- Griftah
-				},
+				["qg"] = 260485,	-- Griftah
 				["coords"] = {
 					{ 53.1, 38.1, FOUNDERS_POINT },
-					{ 54.2, 56.0, RAZORWIND_SHORES }
+					{ 54.2, 56.0, RAZORWIND_SHORES },
 				},
 				["isRepeatable"] = true,
 				["cost"] = { { "i", 269937, 3 } },	-- 3x Amani Construction Hammer
@@ -216,7 +214,10 @@ root(ROOTS.Housing, {
 			}),
 			q(97073, {	-- Rustbolt Retailer
 				["qg"] = 267856,	-- J-3T 3000
-				["coord"] =  { 55.2, 43.6, FOUNDERS_POINT },
+				["coords"] =  {
+					{ 55.2, 43.6, FOUNDERS_POINT },
+					{ 53.1, 54.5, RAZORWIND_SHORES },
+				},
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 		},

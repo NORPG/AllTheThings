@@ -58,6 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(250243),	-- Manaheart's Binding Flame
 					i(251123),	-- Nibbles' Training Rod
 					i(251127),	-- Nibbling Armbands
+					i(271680),	-- Sinseared Repeater
 				}),
 				BossOnly(ZAEN, {
 					ach(62388, {	-- Illicit Rain: Five Stars

@@ -44,7 +44,7 @@ end]];
 
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
+		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
 			["lore"] = "Zangarmarsh is a leveling zone intended to be completed after Hellfire Peninsula. It is a surreal swamp, with neon giant mushrooms and hostile naga. The Cenarion Circle is investigating why wildlife has been dying, discovering that Lady Vashj is draining Coilfang Reservoir for her nefarious purposes. Players can also gain reputation with Sporeggar, a group of sporelings at war with ogres. Alliance players also further learn about lost ones--Draenei heavily corrupted by shadow magic--and begin gaining reputation with the Kurenai.",
 			["icon"] = 236855,
 			["groups"] = {
@@ -127,12 +127,15 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(515, {	-- Sporeling Sprout (PET!)
+							["description"] =
+								-- #if AFTER 5.3.0
+								"Found only in Sporeggar.",	-- The reputation requirement got removed in a late MoP patch, but can't find any confirmation on which one. Working assumption is 5.3.0 which brough battle pets to TBC raids.
+								-- #else
+								"Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
+								-- #endif
 							["coord"] = { 20.0, 51.6, ZANGARMARSH },
 							-- #if BEFORE 5.3.0
-							["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
 							["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly
-							-- #else
-							["description"] = "Found only in Sporeggar.",	-- The reputation requirement got removed in a late MoP patch, but can't find any confirmation on which one. Working assumption is 5.3.0 which brough battle pets to TBC raids.
 							-- #endif
 						}),
 					},
@@ -634,12 +637,13 @@ root(ROOTS.Zones, {
 					q(9729, {	-- Fhwoor Smash!
 						["qg"] = 17877,	-- Fhwoor
 						["coord"] = { 19.8, 50.8, ZANGARMARSH },
-						-- #if BEFORE CATA
-						-- Not really sure when this changed. It's only available after Exalted in TBC Classic.
-						["minReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
-						-- #else
-						["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
-						-- #endif
+						["minReputation"] = {	-- Not really sure when this changed. It's only available after Exalted in TBC Classic.
+							-- #if AFTER CATA
+							FACTION_SPOREGGAR, FRIENDLY,	-- Sporeggar, Friendly.
+							-- #else
+							FACTION_SPOREGGAR,  EXALTED,	-- Sporeggar, Exalted.
+							-- #endif
+						},
 						["lvl"] = lvlsquish(63, 63, 10),
 						["groups"] = {
 							i(25537),	-- Hewing Axe of the Marsh

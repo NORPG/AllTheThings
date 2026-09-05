@@ -3726,8 +3726,8 @@ root(ROOTS.Zones, {
 					n(66937, {	-- Akkalar <Shield of Kril'mandar>
 						["coord"] = { 59.6, 96.0, THE_JADE_FOREST },
 						["groups"] = {
-							i(90167), 	-- Akkalar's Clamshell
-							i(90174), 	-- Troubles From Without
+							i(90167),	-- Akkalar's Clamshell
+							i(90174),	-- Troubles From Without
 						},
 					}),
 					n(66932, {	-- Akkalou <Spawn of Kril'mandar>

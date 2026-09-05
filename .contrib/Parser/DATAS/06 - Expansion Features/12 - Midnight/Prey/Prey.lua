@@ -197,6 +197,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			filter(REAGENTS, {
 				i(251283),	-- Tormented Tantalum
 			}),
+			i(273000, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corrosive Soul
 			i(269006),	-- Preyseeker's Gleaming Coin Pouch
 			i(269007),	-- Preyseeker's Glittering Coin Pouch
 		}),
@@ -272,7 +273,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			-- Weekly, up after r4 chain
 			q(94446, {	-- A Nightmarish Task
-				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf	 // TODO: need some way to ignore on alts
+				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf
+				-- #if AFTER 12.0.5
+				["sourceQuestNumRequired"] = 0,
+				-- #endif
 				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
@@ -460,7 +464,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		}),
 		n(REWARDS, {
 			currency(3392),	-- Remnant of Anguish
-			i(273000, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corrosive Soul
 		}),
 		n(VENDORS, {
 			n(258181, {	-- Construct Ali'a <Decor Specialist>

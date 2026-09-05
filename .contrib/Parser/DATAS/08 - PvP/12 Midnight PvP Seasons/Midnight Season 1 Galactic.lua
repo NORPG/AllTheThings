@@ -810,7 +810,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			}),
 		})),
 		n(REWARDS, {
-			i(257194, {	-- Artisan's Consortium Flyer (QS!/QI!)
+			i(257194, {	-- Artisan's Consortium Flyer (QS!)
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				["description"] = "Rewarded within the first few wins in queued PvP Content.",
 			}),

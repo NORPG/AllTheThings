@@ -550,7 +550,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.02, {	-- Tokka's Crew
 					q(96110, {	-- Venom Fishing: Proof is in the Ooze
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 92936,	-- The Summoning of Ula'tek
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["qi"] = 274076,	-- Venom-Cursed Killifish (QI!)

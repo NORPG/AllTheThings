@@ -171,48 +171,316 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 	["timeline"] = { ADDED_10_1_5 },
 	["groups"] = {
 		--[[
-		-- 11.2 - EK Cup
+		-- EK Cup
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
-			["timeline"] = { ADDED_11_2_0 },
+			["timeline"] = { ADDED_10_1_7 },
 			["crs"] = {
 				VENDOR.MAZTHA,
 				VENDOR.DATHENDRASH,
 			},
 		},{
+			-- Repeated rewards from Kalimdor Cup
+			i(203322, {	-- Winding Slitherdrake: Blonde Hair (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197615, {	-- Windborne Velocidrake: Teal Scales (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+			}),
+			-- Previous Racing World Quest Drops
+			i(196979, {	-- Cliffside Wylderdrake: Curled Head Horns (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197128, {	-- Highland Drake: Curled Back Horns (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(202280, {	-- Renewed Proto-Drake: Pronged Tail (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197619, {	-- Windborne Velocidrake: Hooked Snout (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			-- New for Eastern Kingdoms Cup
+			i(203306, {	-- Winding Slitherdrake: Horned Brow (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(203336, {	-- Winding Slitherdrake: Paired Horns (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(203355, {	-- Winding Slitherdrake: Yellow Scales (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+			}),
+			i(203359, {	-- Winding Slitherdrake: Shark Finned Tail (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			-- Transmogs
+			i(206592, {	-- Drake Racer's Belt
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206594, {	-- Drake Racer's Boots
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206591, {	-- Drake Racer's Handwraps
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206588, {	-- Drake Racer's Helmet
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206590, {	-- Drake Racer's Jersey
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206593, {	-- Drake Racer's Leggings
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206589, {	-- Drake Racer's Shoulderpads
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			-- 2025 edition new cosmetics
 			i(249560, {	-- Skymaster's Silver Mantle
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 			}),
 			i(249561, {	-- Skymaster's Silver Cloak
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 			}),
 			i(249562, {	-- Skymaster's Silver Tabard
+				["timeline"] = { ADDED_11_2_0 },
 				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 			}),
 			i(249563, {	-- Skymaster's Sapphire Crown
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 			}),
 			i(249564, {	-- Skymaster's Sapphire Shoulderguards
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 			}),
 			i(249565, {	-- Skymaster's Sapphire Epaulets
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 			}),
 		})),
-		-- 12.0.1 - Outland Cup
+		-- Kalimdor Cup
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
-			["timeline"] = { ADDED_12_0_1 },
+			["timeline"] = { CREATED_10_1_5 },
 			["crs"] = {
 				VENDOR.MAZTHA,
 				VENDOR.DATHENDRASH,
 			},
 		},{
+			-- Manuscripts
+			i(203322, {	-- Winding Slitherdrake: Blonde Hair (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197615, {	-- Windborne Velocidrake: Teal Scales (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+			}),
+			-- Transmogs
+			i(206592, {	-- Drake Racer's Belt
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206594, {	-- Drake Racer's Boots
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206591, {	-- Drake Racer's Handwraps
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206588, {	-- Drake Racer's Helmet
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206590, {	-- Drake Racer's Jersey
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206593, {	-- Drake Racer's Leggings
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+			i(206589, {	-- Drake Racer's Shoulderpads
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+			}),
+		})),
+		-- Outland Cup
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["timeline"] = { ADDED_10_2_5 },
+			["crs"] = {
+				VENDOR.MAZTHA,
+				VENDOR.DATHENDRASH,
+			},
+		},{
+			-- Manuscripts
+			i(197017, {	-- Cliffside Wylderdrake: Large Tail Spikes (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197113, {	-- Highland Drake: Swept Spiked Head (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197366, {	-- Renewed Proto-Drake: Dual Horned Crest (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197605, {	-- Windborne Velocidrake: Curled Horns (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			-- Toy
+			i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+			}),
+			-- Transmogs
+			i(211877, {	-- Drake Racer's Scarf
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
+			}),
+			i(211885, {	-- Outlandish Drake Racer's Belt
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(211887, {	-- Outlandish Drake Racer's Boots
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(211884, {	-- Outlandish Drake Racer's Handwraps
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(211881, {	-- Outlandish Drake Racer's Helmet
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(211883, {	-- Outlandish Drake Racer's Jersey
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(211886, {	-- Outlandish Drake Racer's Leggings
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(211888, {	-- Outlandish  Drake Racer's Scarf
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
+			}),
+			i(211882, {	-- Outlandish Drake Racer's Shoulderpads
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
 			i(263503, {	-- Skymaster's Blood Circlet
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+				["timeline"] = { ADDED_12_0_1 },
 			}),
 			i(263501, {	-- Skymaster's Blood Cloak
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+				["timeline"] = { ADDED_12_0_1 },
 			}),
 			i(263500, {	-- Skymaster's Blood Mantle
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+				["timeline"] = { ADDED_12_0_1 },
 			}),
 			i(263504, {	-- Skymaster's Blood Pauldrons
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+				["timeline"] = { ADDED_12_0_1 },
 			}),
 			i(263502, {	-- Skymaster's Blood Tabard
 				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+				["timeline"] = { ADDED_12_0_1 },
+			}),
+		})),
+		-- Northrend Cup
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["timeline"] = { ADDED_10_2_6 },
+			["crs"] = {
+				VENDOR.MAZTHA,
+				VENDOR.DATHENDRASH,
+			},
+		},{
+			-- Toy (repeated from Outland Cup)
+			i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+			}),
+			-- Transmogs
+			i(213635, {	-- Checkered Pennant
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(213585, {	-- Icy Drake Racer's Scarf
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
+			}),
+			i(213586, {	-- Icy Drake Racer's Boots
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(213587, {	-- Icy Drake Racer's Leggings
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(213588, {	-- Icy Drake Racer's Belt
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(213589, {	-- Icy Drake Racer's Handwraps
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(213590, {	-- Icy Drake Racer's Jersey
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(213591, {	-- Icy Drake Racer's Shoulderpads
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(213592, {	-- Icy Drake Racer's Helmet
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			-- These were never mentioned in the Blizzard articles but also exist on the vendor (Zaralek Cavern, Forbidden Reach and Emerald Dream pouch rewards)
+			i(197002, {	-- Cliffside Wylderdrake: Flared Cheek (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(207768, {	-- Grotto Netherwing Drake: Volatile Pattern (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197124, {	-- Highland Drake: Swept Horns (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(202274, {	-- Renewed Proto-Drake: Plated Brow (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(197594, {	-- Windborne Velocidrake: Small Ears (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(203348, {	-- Winding Slitherdrake: Pointed Nose (MM!)
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			-- Confirmed as sold by Maya's fresh bnet account 2026-09-02
+			i(263503, {	-- Skymaster's Blood Circlet
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+				["timeline"] = { ADDED_12_0_1 },
+			}),
+			i(263501, {	-- Skymaster's Blood Cloak
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+				["timeline"] = { ADDED_12_0_1 },
+			}),
+			i(263500, {	-- Skymaster's Blood Mantle
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+				["timeline"] = { ADDED_12_0_1 },
+			}),
+			i(263504, {	-- Skymaster's Blood Pauldrons
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+				["timeline"] = { ADDED_12_0_1 },
+			}),
+			i(263502, {	-- Skymaster's Blood Tabard
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+				["timeline"] = { ADDED_12_0_1 },
+			}),
+			i(249560, {	-- Skymaster's Silver Mantle
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(249561, {	-- Skymaster's Silver Cloak
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(249562, {	-- Skymaster's Silver Tabard
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(249563, {	-- Skymaster's Sapphire Crown
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(249564, {	-- Skymaster's Sapphire Shoulderguards
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			}),
+			i(249565, {	-- Skymaster's Sapphire Epaulets
+				["timeline"] = { ADDED_11_2_0 },
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 			}),
 		})),
 		--]]
@@ -2872,7 +3140,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["qgs"] = {
 						213769,	-- Racing Enthusiast
 						-- #if AFTER MID
-						220307,    -- Holiday Enthusiast
+						220307,	-- Holiday Enthusiast
 						-- #endif
 					},
 					["coords"] = { 52.8, 79.5, ORGRIMMAR },
@@ -3225,19 +3493,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				n(206744, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["groups"] = {
-						-- Manuscripts (repeated from Outland Cup)
-						i(197017, {	-- Cliffside Wylderdrake: Large Tail Spikes (MM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(197113, {	-- Highland Drake: Swept Spiked Head (MM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(197366, {	-- Renewed Proto-Drake: Dual Horned Crest (MM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(197605, {	-- Windborne Velocidrake: Curled Horns (MM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
 						-- Toy (repeated from Outland Cup)
 						i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
@@ -3289,6 +3544,51 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						i(203348, {	-- Winding Slitherdrake: Pointed Nose (MM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
+						-- Confirmed as sold by Maya's fresh bnet account 2026-09-02
+						i(263503, {	-- Skymaster's Blood Circlet
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263501, {	-- Skymaster's Blood Cloak
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263500, {	-- Skymaster's Blood Mantle
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263504, {	-- Skymaster's Blood Pauldrons
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263502, {	-- Skymaster's Blood Tabard
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(249560, {	-- Skymaster's Silver Mantle
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249561, {	-- Skymaster's Silver Cloak
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249562, {	-- Skymaster's Silver Tabard
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(249563, {	-- Skymaster's Sapphire Crown
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249564, {	-- Skymaster's Sapphire Shoulderguards
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249565, {	-- Skymaster's Sapphire Epaulets
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
 					},
 				})),
 			}),
@@ -3299,6 +3599,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 			}),
 		}),
 		n(VENDORS, {
+			-- TODO: Dathendrash has the same items on sale per cup as Maztha. Currently this gives the impression he is a vendor that has the complete vendor selection of all cups, and that is wrong. The inventory rotating per cup, while the npcid is always the same, was confirmed with a fresh bnet account by Maya.
 			n(212027, {	-- Dathendrash  <Riders of Azeroth>
 				["coords"] = {
 					{ 59.8, 66.2, STORMWIND_CITY },

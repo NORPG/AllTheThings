@@ -4,11 +4,12 @@
 
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(HILLSBRAD_FOOTHILLS, {
-		-- #if AFTER CATA
-		["lore"] = "Hillsbrad Foothills was radically changed in Cataclysm. Formerly a grassy zone with World PvP between the Alliance town of Southshore and the Horde town of Tarren Mill, the Forsaken have taken over the zone after the Shattering. Southshore is destroyed due to plague experiments, and toxic waste covers much of the zone. This zone has also been merged with Alterac Mountains, a snowy plateau populated by ogres and surrounded by the Syndicate.",
-		-- #else
-		["lore"] = "Hillsbrad Foothills is a mid-level zone most suitable for players around level 25. The hills are home to the towns of Southshore and Hillsbrad Fields (Alliance), and Tarren Mill (Horde). Some notable locations, such as Durnholde Keep and Azurelode Mine can also be found here. Since this area lies outside of Thoradin's Wall, it is considered as a crossroads between Alliance and Horde players, which makes combat between the two factions likely.\n\nHillsbrad is relatively safe and stable. Its hills are green and pastoral, its meadows fertile and its soil rich. Humans loyal to the Alliance control Hillsbrad from the town of Southshore, though the Syndicate, murlocs and Forsaken threaten their serenity.",
-		-- #endif
+		["lore"] =
+			-- #if AFTER CATA
+			"Hillsbrad Foothills was radically changed in Cataclysm. Formerly a grassy zone with World PvP between the Alliance town of Southshore and the Horde town of Tarren Mill, the Forsaken have taken over the zone after the Shattering. Southshore is destroyed due to plague experiments, and toxic waste covers much of the zone. This zone has also been merged with Alterac Mountains, a snowy plateau populated by ogres and surrounded by the Syndicate.",
+			-- #else
+			"Hillsbrad Foothills is a mid-level zone most suitable for players around level 25. The hills are home to the towns of Southshore and Hillsbrad Fields (Alliance), and Tarren Mill (Horde). Some notable locations, such as Durnholde Keep and Azurelode Mine can also be found here. Since this area lies outside of Thoradin's Wall, it is considered as a crossroads between Alliance and Horde players, which makes combat between the two factions likely.\n\nHillsbrad is relatively safe and stable. Its hills are green and pastoral, its meadows fertile and its soil rich. Humans loyal to the Alliance control Hillsbrad from the town of Southshore, though the Syndicate, murlocs and Forsaken threaten their serenity.",
+			-- #endif
 		["icon"] = 236779,
 		-- #if NOT ANYCLASSIC
 		["maps"] = { 623 },	-- Tarren Mill vs Southshore [TODO: Move this somewhere else]
@@ -1814,13 +1815,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER CATA
 				q(8249, {	-- Junkboxes Needed (Alterac Mountains)
-					-- #if AFTER 4.3.0
-					["qg"] = 7323,	-- Winstone Wolfe <The Wolf>
-					["coord"] = { 71.4, 45.0, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
-					["coord"] = { 84.4, 80.3, ALTERAC_MOUNTAINS },
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER 4.3.0
+						7323,	-- Winstone Wolfe <The Wolf>
+						-- #else
+						6707,	-- Fahrad <Grand Master Rogue>
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER 4.3.0
+						{ 71.4, 45.0, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 84.4, 80.3, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["maxReputation"] = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
 					["cost"] = { { "i", 16885, 5 } },	-- Heavy Junkbox
 					["repeatable"] = true,
@@ -1884,7 +1892,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 Game should start with a 0/7 wave counter below and u have no plant quest in log.
 Click orbs till zombies spawn 6-8. Then plant NOTHING. (Part of the achievement is to not plant certain types.)
 3 zombies walk to end trigger lawn mower and die. You should now be +1 on your FoS tracker.
-Now a Dk ghoul spawns randomly if it lands in a lane with lawnmower wait and u will get another +1 to FoS tracker.
+Now a DK ghoul spawns randomly if it lands in a lane with lawnmower wait and u will get another +1 to FoS tracker.
 Click Leave vehicle and repeat steps 3-8"]],
 					-- #endif
 					["sourceQuest"] = 28747,	-- Someone Setup the Pumpkin Bomb
@@ -3305,11 +3313,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #endif
 				n(2393, {	-- Christoph Jeffcoat <Tradesman>
-					-- #if AFTER CATA
-					["coord"] = { 57.5, 47.8, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.2, 19.0, HILLSBRAD_FOOTHILLS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.5, 47.8, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.2, 19.0, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, i(20971, {	-- Design: Heavy Iron Knuckles (RECIPE!)
@@ -3325,11 +3335,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				n(2397, {	-- Derak Nightfall <Cook>
-					-- #if AFTER CATA
-					["coord"] = { 57.6, 45.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 63.0, 19.6, HILLSBRAD_FOOTHILLS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.6, 45.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 63.0, 19.6, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
@@ -3338,11 +3350,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 76.6, 58.6, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 92.0, 38.6, HILLSBRAD_FOOTHILLS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 76.6, 58.6, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 92.0, 38.6, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
@@ -3364,22 +3378,26 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				n(2388, {	-- Innkeeper Shay <Innkeeper>
-					-- #if AFTER CATA
-					["coord"] = { 57.8, 47.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.6, 19.0, HILLSBRAD_FOOTHILLS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.8, 47.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.6, 19.0, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(3703),	-- Southshore Stout
 					},
 				}),
 				n(3536, {	-- Kris Legace <Freewheeling Tradeswoman>
-					-- #if AFTER CATA
-					["coord"] = { 68.8, 58.8, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 80.0, 39.0, HILLSBRAD_FOOTHILLS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.8, 58.8, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 80.0, 39.0, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(210330, {	-- Hot Tip
@@ -3428,11 +3446,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #endif
 				n(2394, {	-- Mallen Swain <Tailoring Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 58.0, 47.8, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.0, 21.0, HILLSBRAD_FOOTHILLS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 58.0, 47.8, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.0, 21.0, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
@@ -3502,21 +3522,24 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
-							-- #if BEFORE 4.0.3
-							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
-							-- #else
-							["description"] = "WARNING: This item will be made unavailable, but still learnable, by Alliance players. If you are Alliance, you may want to buy this now.",
-							-- #endif
+							["description"] =
+								-- #if AFTER CATA
+								"WARNING: This item will be made unavailable, but still learnable, by Alliance players. If you are Alliance, you may want to buy this now.",
+								-- #else
+								"This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
+								-- #endif
 							["isLimited"] = true,
 						}),
 					},
 				}),
 				n(3539, {	-- Ott <Weaponsmith>
-					-- #if AFTER CATA
-					["coord"] = { 57.6, 47.6, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 60.4, 26.0, HILLSBRAD_FOOTHILLS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.6, 47.6, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 60.4, 26.0, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4817, {	-- Blessed Claymore
@@ -3602,19 +3625,17 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #endif
 				n(3537, {	-- Zixil <Merchant Supreme>
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 49.4, 66.6, HILLSBRAD_FOOTHILLS },
 						{ 56.0, 46.4, HILLSBRAD_FOOTHILLS },
 						{ 51.8, 55.6, HILLSBRAD_FOOTHILLS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 60.8, 19.8, HILLSBRAD_FOOTHILLS },
 						{ 55.6, 34.6, HILLSBRAD_FOOTHILLS },
 						{ 50.4, 50.8, HILLSBRAD_FOOTHILLS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211487, {	-- Demolition Explosives
@@ -3725,15 +3746,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["timeline"] = { ADDED_1_11_1 },
 				}),
 				i(1280, {	-- Cloaked Hood
-					-- #if BEFORE 4.0.3
-					["cr"] = 2246,	-- Syndicate Assassin
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
 						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
 						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
@@ -3742,8 +3756,18 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
 						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
 						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						-- #endif
 					},
-					-- #endif
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						2242,	-- Syndicate Spy (Alterac Mountains)
+						-- #else
+						2246,	-- Syndicate Assassin
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				-- #endif
@@ -3792,62 +3816,64 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				i(3429, {	-- Guardsman Belt
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_4_0_3 },	-- Added to vendors in 10.1.7
 					["crs"] = {
 						2427,	-- Jailor Eston
 						2428,	-- Jailor Marlgen
 					},
-					-- added to vendor in 10.1.7
 				}),
-				-- #if BEFORE CATA
 				i(3053, {	-- Humbert's Chestpiece
 					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },	-- Maybe was never removed. Not sure. Current retail source is Tamra Stormpike (Rare).
 					["crs"] = {
-						2344,	-- Dun Garok Mountaineer
+						-- #if AFTER CATA
 						14275,	-- Tamra Stormpike
+						-- #else
+						2344,	-- Dun Garok Mountaineer
+						-- #endif
 					},
 				}),
-				-- #endif
 				i(4724, {	-- Humbert's Helm
-					-- #if BEFORE 4.0.3
-					["cr"] = 2345,	-- Dun Garok Rifleman
 					["coords"] = {
-						{ 71.2, 74.2, HILLSBRAD_FOOTHILLS },
-						{ 72.0, 81.0, HILLSBRAD_FOOTHILLS },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						14275,	-- Tamra Stormpike
-						49269,	-- Dun Garok Spirit
-					},
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 63.2, 82.0, HILLSBRAD_FOOTHILLS },
 						{ 64.2, 87.0, HILLSBRAD_FOOTHILLS },
 						{ 60.6, 84.2, HILLSBRAD_FOOTHILLS },
 						{ 62.8, 85.0, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 71.2, 74.2, HILLSBRAD_FOOTHILLS },
+						{ 72.0, 81.0, HILLSBRAD_FOOTHILLS },
+						-- #endif
 					},
-					-- #endif
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						14275,	-- Tamra Stormpike
+						49269,	-- Dun Garok Spirit
+						-- #else
+						2345,	-- Dun Garok Rifleman
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				i(4723, {	-- Humbert's Pants
-					-- #if BEFORE 4.0.3
-					["cr"] = 2346,	-- Dun Garok Priest
 					["coords"] = {
-						{ 70.6, 75.6, HILLSBRAD_FOOTHILLS },
-						{ 71.4, 81.4, HILLSBRAD_FOOTHILLS },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						14275,	-- Tamra Stormpike
-						49269,	-- Dun Garok Spirit
-					},
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 63.2, 82.0, HILLSBRAD_FOOTHILLS },
 						{ 64.2, 87.0, HILLSBRAD_FOOTHILLS },
 						{ 60.6, 84.2, HILLSBRAD_FOOTHILLS },
 						{ 62.8, 85.0, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 70.6, 75.6, HILLSBRAD_FOOTHILLS },
+						{ 71.4, 81.4, HILLSBRAD_FOOTHILLS },
+						-- #endif
 					},
-					-- #endif
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						14275,	-- Tamra Stormpike
+						49269,	-- Dun Garok Spirit
+						-- #else
+						2346,	-- Dun Garok Priest
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -3885,26 +3911,29 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #endif
 				i(1485, {	-- Pitchfork
-					-- #if BEFORE 4.0.3
+					-- #if AFTER 10.1.7
+					["description"] = "This items only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that haven't reached the quest progress trigger for this phasing, or using an Alliance alt.",
+					-- #endif
+					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 37.4, 64.2, HILLSBRAD_FOOTHILLS },
+						{ 39.6, 64.0, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 31.8, 35.2, HILLSBRAD_FOOTHILLS },
+						{ 36.6, 40.0, HILLSBRAD_FOOTHILLS },
+						{ 34.2, 48.2, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["crs"] = {
+						-- #if AFTER 10.1.7
+						47859,	-- Risen Hillsbrad Farmer
+						-- #else
 						2403,	-- Farmer Getz
 						2451,	-- Farmer Kalaba
 						232,	-- Farmer Ray
 						2266,	-- Hillsbrad Farmer
+						-- #endif
 					},
-					["coords"] = {
-						{ 31.8, 35.2, HILLSBRAD_FOOTHILLS },
-						{ 36.6, 40.0, HILLSBRAD_FOOTHILLS },
-						{ 34.2, 48.2, HILLSBRAD_FOOTHILLS },
-					},
-					-- #elseif AFTER 10.1.7
-					["description"] = "This items only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that haven't reached the quest progress trigger for this phasing, or using an Alliance alt.",
-					["cr"] = 47859,	-- Risen Hillsbrad Farmer
-					["coords"] = {
-						{ 37.4, 64.2, HILLSBRAD_FOOTHILLS },
-						{ 39.6, 64.0, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 09.09.2023
 				}),
 				-- #if BEFORE CATA
@@ -3918,15 +3947,24 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["cr"] = 2358,	-- Dalaran Summoner
 				}),
 				i(1602, {	-- Sickle Axe
-					-- #if AFTER 10.1.7
-					["cr"] = 2254,	-- Crushridge Mauler
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 44.6, 22.6, HILLSBRAD_FOOTHILLS },
 						{ 45.8, 26.8, HILLSBRAD_FOOTHILLS },
 						{ 47.2, 28.6, HILLSBRAD_FOOTHILLS },
 						{ 50.2, 26.0, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 37.0, 49.6, HILLSBRAD_FOOTHILLS },
+						{ 38.2, 55.8, HILLSBRAD_FOOTHILLS },
+						-- #endif
 					},
-					-- #endif
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						2254,	-- Crushridge Mauler
+						-- #else
+						2287,	-- Crushridge Warmonger
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 				}),
 				i(5245, {	-- Summoner's Wand

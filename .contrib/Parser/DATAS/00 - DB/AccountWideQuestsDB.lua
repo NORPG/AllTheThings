@@ -2891,6 +2891,7 @@ local AccountWideQuestsDB = {
 	96615,	-- Ancient Curiosity: Utility
 	96744,	-- Bouncy Mushrooms
 	96745,	-- Aerospores
+	96780,	-- Local Kafa Shop
 	96787,	-- Quest #96787*
 	96788,	-- Quest #96788*
 	96790,	-- ??
@@ -2907,6 +2908,8 @@ local AccountWideQuestsDB = {
 	96970,	-- Malformed Leviathan weekly reputation obtained.
 	96975,	-- Delver's Starter Kit
 	97041,	-- Quest #97041*
+	97073,	-- Rustbolt Retailer
+	97075,	-- Quality Goods
 	97111,	-- ??
 	97115,	-- First Preference Killing of the week
 	97116,	-- Has rolled for Ahune Special Loot (Daily Accountwide)
@@ -2937,6 +2940,7 @@ local AccountWideQuestsDB = {
 	98354,	-- Sss'alik weekly reputation obtained.
 	98355,	-- Destra weekly reputation obtained.
 	98388,	-- Into the Vaults of Atal'Utek
+	98406,	-- A Curated Gift
 	98428,	-- Vaults of Atal'Utek: The Altar of Corrosion
 	98515,	-- Vaults of Atal'Utek: A Toxic Tour
 	98787,	-- Quest #98787*

@@ -1594,7 +1594,7 @@ inst(743,{awp=10900,coords={
 [327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,savedInstanceID=509,u=15,["zone-text-areaID"]=3429,g={
 h(-31,{u=15,g={
 faction(609,{icon=132136,maps={1451},u=15,g={
-crit(2045,{achID=953,awp=20001,id=1,u=17})}})}}),
+crit(2045,{achID=953,awp=20003,id=1,u=17})}})}}),
 h(-45,{u=15,g={
 cl(11,{u=15,g={
 q(8700,{c={11},coords={
@@ -6503,7 +6503,7 @@ s(139156,28810,{b=1,f=6,loc=47,lvl=70,q=4,u=17}),
 i(28830,{b=1,f=53,lvl=70,q=4,u=17}),
 i(28823,{b=1,f=53,lvl=70,q=4,u=17}),
 i(31750,{q=1,u=17})}})}}),
-inst(747,{awp=20001,coords={
+inst(747,{awp=20003,coords={
 [1944]={{47.51,52.08}}},isLockoutShared=1,isRaid=1,lore="After the Legion came to Outland, Magtheridon controlled all but small pockets of Outland. Even so, he was taken largely by surprise when Illidan and his allies conquered the Black Temple. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on orcs, the beaten pit lord was dragged to Hellfire Citadel.\n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric fel orcs.",lvl=68,mapID=331,savedInstanceID=544,u=17,["zone-text-areaID"]=3836,g={
 h(-45,{u=17,g={
 q(11002,{maps={1944},providers={{"i",32385}},r=2,u=17,g={
@@ -6518,9 +6518,9 @@ i(28790,{b=1,f=52,q=4,u=17}),
 i(28791,{b=1,f=52,q=4,u=17})}}),
 q(10888,{coords={
 [1955]={{54.2,44.4}}},qgs={18481},rwp=30002,sourceQuests={10884,10885,10886},u=17,g={
-qo(1,{awp=20001,providers={{"n",17257}},u=17}),
-i(31746,{awp=20001,b=1,f=52,q=4,u=17}),
-i(31704,{awp=20001,b=1,q=1,u=17}),
+qo(1,{awp=20003,providers={{"n",17257}},u=17}),
+i(31746,{awp=20003,b=1,f=52,q=4,u=17}),
+i(31704,{awp=20003,b=1,q=1,u=17}),
 ach(432,{sourceQuests={10888},u=17}),
 title(36,{u=17})}})}}),
 e(1566,{npcID=17257,u=17,g={
@@ -6544,19 +6544,19 @@ s(139125,28779,{b=1,f=7,loc=45,lvl=70,q=4,u=17}),
 s(139124,28778,{b=1,f=6,loc=45,lvl=70,q=4,u=17}),
 i(28789,{b=1,f=53,lvl=70,q=4,u=17}),
 i(34846,{awp=20400,description="The epic gems may not be available until Black Temple is released, however, some users have reported getting one out of this bag already.",q=2,u=17,g={
-i(32227,{awp=20001,q=4,u=17}),
-i(32228,{awp=20001,q=4,u=17}),
-i(32229,{awp=20001,q=4,u=17}),
-i(32231,{awp=20001,q=4,u=17}),
-i(32230,{awp=20001,q=4,u=17}),
-i(32249,{awp=20001,q=4,u=17}),
-i(23440,{awp=20001,q=3,u=17}),
-i(23436,{awp=20001,q=3,u=17}),
-i(23441,{awp=20001,q=3,u=17}),
-i(23439,{awp=20001,q=3,u=17}),
-i(23438,{awp=20001,q=3,u=17}),
-i(23437,{awp=20001,q=3,u=17})}})}})}}),
-inst(748,{awp=20001,coords={
+i(32227,{awp=20003,q=4,u=17}),
+i(32228,{awp=20003,q=4,u=17}),
+i(32229,{awp=20003,q=4,u=17}),
+i(32231,{awp=20003,q=4,u=17}),
+i(32230,{awp=20003,q=4,u=17}),
+i(32249,{awp=20003,q=4,u=17}),
+i(23440,{awp=20003,q=3,u=17}),
+i(23436,{awp=20003,q=3,u=17}),
+i(23441,{awp=20003,q=3,u=17}),
+i(23439,{awp=20003,q=3,u=17}),
+i(23438,{awp=20003,q=3,u=17}),
+i(23437,{awp=20003,q=3,u=17})}})}})}}),
+inst(748,{awp=20003,coords={
 [1946]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",lvl=68,mapID=332,savedInstanceID=548,sourceQuests={10901},u=18,["zone-text-areaID"]=3607,g={
 h(-45,{u=18,g={
 q(10944,{coords={
@@ -7087,7 +7087,7 @@ s(141250,30904,{b=1,f=7,loc=42,lvl=70,q=4,u=19}),
 s(141258,30912,{b=1,f=4,loc=46,lvl=70,q=4,u=19}),
 s(141249,30903,{b=1,f=7,loc=46,lvl=70,q=4,u=19})}})}}),
 inst(751,{awp=20100,coords={
-[1948]={{71,46.5}}},isRaid=1,lore="When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",lvl=70,mapID=340,maps={339,341,342,343,344,345,346,759},savedInstanceID=564,sourceQuests={10985},u=19,g={
+[1948]={{71,46.5}}},isRaid=1,lore="When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",lvl=70,mapID=339,maps={340,341,342,343,344,345,346,759},savedInstanceID=564,sourceQuests={10985},u=19,g={
 h(-12,{u=19,g={
 ach(958,{minReputation={1012,42000},u=19})}}),
 h(-31,{u=19,g={
@@ -7101,12 +7101,12 @@ i(32649,{awp=20100,b=1,f=51,q=4,u=19})}}),
 q(10949,{coords={
 [1955]={{54.3,44.3}}},lvl=70,qgs={18481},sourceQuests={10948},u=19}),
 q(10957,{coords={
-[340]={{62,50.2}}},lvl=70,qgs={23158},sourceQuests={10958},u=19,g={
+[339]={{62,50.2}}},lvl=70,qgs={23158},sourceQuests={10958},u=19,g={
 qo(1,{providers={{"n",22841}},u=19})}}),
 q(10958,{coords={
 [1948]={{65.2,44}}},lvl=70,qgs={18528},sourceQuests={10985},u=19}),
 q(10959,{coords={
-[340]={{62,50.2}}},lvl=70,qgs={23158},sourceQuests={10957},u=19,g={
+[339]={{62,50.2}}},lvl=70,qgs={23158},sourceQuests={10957},u=19,g={
 qo(1,{providers={{"n",22917}},u=19}),
 i(32757,{b=1,f=51,q=4,u=19})}}),
 q(10948,{coords={

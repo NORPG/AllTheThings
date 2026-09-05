@@ -1623,10 +1623,22 @@ i(268504);	-- Malfunctioning Staff
 i(278557);	-- Otoola's Recognition
 i(274921);	-- Pearl of Jubilation
 i(276229);	-- Preyhunter's Trophy Stand
+i(274730);	-- Tuskarr Ice Fishing Tent
 i(275825);	-- Ula'tek's Sssacrificial Rain
+i(274967);	-- Varian's Dragon Throne
+i(279590);	-- Venomous Champion's Illustrious Banner
 --- Unsorted ---
 i(279052);	-- Ancient Amani Mask
 i(276207);	-- Preyhunter's Masquerade
-i(274730);	-- Tuskarr Ice Fishing Tent
-i(274967);	-- Varian's Dragon Throne
-i(279590);	-- Venomous Champion's Illustrious Banner
+
+------------------
+-- PATCH 12.1.5 --
+------------------
+i(275039);	-- Curse of the Aqir
+--- Unsorted ---
+i(280823);	-- Feathers of Akil'zon
+i(280820);	-- Loa Blessed Victory
+i(280822);	-- Nalorakk's Strength Charm
+i(280825);	-- Rite of Jan'alai's Flame
+i(281615);	-- Shadeweaver's Hearthstone
+i(280821);	-- Trail of Halazzi

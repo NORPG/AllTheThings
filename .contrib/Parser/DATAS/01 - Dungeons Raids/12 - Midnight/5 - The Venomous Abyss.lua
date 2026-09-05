@@ -27,12 +27,13 @@ local EncounterToCRS = {
 	[TWIN_FANGS] = {
 		257368,	-- Ithraz
 		257361,	-- Vexhul
-	 },
-	--[[
-	[VASHNIK] = { 1 },
-	[COILED_ALTAR] = { 1 },
-	[ULATEK] = { 1 },
-	--]]
+	},
+	[VASHNIK] = { 259181 },
+	[COILED_ALTAR] = {
+		259447,	-- Zul'jan
+		259854,	-- Hex Lord Malacrass
+	},
+	[ULATEK] = { 268956 },
 };
 
 ------ EncounterToLoot ------
@@ -432,6 +433,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				BossOnly(ULATEK, {
 					i(279500),	-- "Rage of the Shackled" Mural (DECOR!)
+					i(278340),	-- Blighted Pearl (CI!)
 					i(279127, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Argent Trophy (DECOR!)
 				}),
 			}),
@@ -446,7 +448,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					Boss(NEKZALI),
 					Boss(TWIN_FANGS),
 				}),
-				-- TODO: verify when available, changed from PTR
 				header(HEADERS.LFGDungeon, 3317, {	-- The Essence of Venom
 					Boss(ENTOMBED),
 					Boss(VASHNIK),
@@ -624,6 +625,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["groups"] = {
 			-- LFR
 			hqt(98080, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			hqt(98092, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			-- N
 			hqt(98083, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98079, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
@@ -643,6 +645,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			-- M
 			hqt(98081, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98077, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			hqt(98089, name(HEADERS.NPC, 266538)),	-- Shriekcoil
+			hqt(98073, name(HEADERS.NPC, 261503)),	-- Frightmaw
 		},
 	}),
 }))

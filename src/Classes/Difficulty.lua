@@ -1,7 +1,6 @@
-do
 -- App locals
 local _,app = ...;
-local L, contains, containsValue, GetRelativeValue = app.L, app.contains, app.containsValue, app.GetRelativeValue;
+local L, GetRelativeValue = app.L, app.GetRelativeValue;
 
 -- Global locals
 local date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo, UNKNOWN
@@ -299,7 +298,6 @@ end
 local GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID
 	= GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
 local CurrentDifficulties, BuildCurrentDifficulties;
-local CacheCooldownCurrentDifficulties, time = 0, time;
 if app.GameBuildVersion >= 20000 then
 	if app.GameBuildVersion >= 30000 then
 		BuildCurrentDifficulties = function()
@@ -346,14 +344,6 @@ else
 	end
 end
 local function GetCurrentDifficulties()
-	-- Check to see if at least 1 second has passed
-	local now = time();
-	if CacheCooldownCurrentDifficulties > now then
-		-- Return the cached value instead of building the cache again.
-		return CurrentDifficulties;
-	end
-	CacheCooldownCurrentDifficulties = now + 1;
-
 	-- Compare and Cache the Current Difficulties
 	local difficulties = BuildCurrentDifficulties()
 	if not CurrentDifficulties or app.TableKeyDiff(CurrentDifficulties, difficulties) then
@@ -362,15 +352,18 @@ local function GetCurrentDifficulties()
 	end
 	return difficulties;
 end
+-- Event driven check includes 1-sec/combat delay
+local function CallbackGetCurrentDifficulties()
+	app.CallbackHandlers.AfterCombatOrDelayedCallback(GetCurrentDifficulties, 1)
+end
 app.GetCurrentDifficulties = GetCurrentDifficulties;
-app.AddEventRegistration("CHAT_MSG_SYSTEM", GetCurrentDifficulties);
+app.AddEventRegistration("CHAT_MSG_SYSTEM", CallbackGetCurrentDifficulties)
 if app.IsClassic then
-	app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", GetCurrentDifficulties);
+	app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", CallbackGetCurrentDifficulties)
 end
 --[[
 app.AddEventHandler("OnCurrentDifficultiesChanged", function(diff)
-	print("OnCurrentDifficultiesChanged", diff);
-end);
-]]--
-GetCurrentDifficulties();
-end
+	app.PrintDebug("OnCurrentDifficultiesChanged", app.StringifyTable(diff))
+end)
+--]]
+app.AddEventHandlerOnce("OnStartup", GetCurrentDifficulties)

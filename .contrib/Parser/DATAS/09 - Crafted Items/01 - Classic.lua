@@ -2377,15 +2377,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 				["providers"] = {
-					{ "n", 5494 }, 	-- Catherine Leland <Fishing Supplier>
+					{ "n", 5494 },	-- Catherine Leland <Fishing Supplier>
 					{ "n", 4574 },	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
 					{ "n", 3029 },	-- Sewa Mistrunner <Fishing Supplies>
-					{ "n", 3333 }, 	-- Shankys <Fishing Supplies>
-					{ "n", 5162 }, 	-- Tansy Puddlefizz <Fishing Supplier>
-					{ "n", 4222 }, 	-- Voloren <Fishing Supplies>
+					{ "n", 3333 },	-- Shankys <Fishing Supplies>
+					{ "n", 5162 },	-- Tansy Puddlefizz <Fishing Supplier>
+					{ "n", 4222 },	-- Voloren <Fishing Supplies>
 					-- #if AFTER TBC
-					{ "n", 20121 }, 	-- Dekin <Fishing Supplies>
-					{ "n", 18347 }, 	-- Olirea <Fishing Supplies>
+					{ "n", 20121 },	-- Dekin <Fishing Supplies>
+					{ "n", 18347 },	-- Olirea <Fishing Supplies>
 					-- #endif
 				},]]
 			}, {

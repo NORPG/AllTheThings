@@ -911,14 +911,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(246978),	-- Felreaver's Hellfire Shoulderguards
 				i(246980),	-- Felreaver's Hellfire Treads
 
-				------ Stillwater Fisher Set ------
-				i(244231),	-- Ensemble: Stillwater Fisher Attire
-				q(90930),	-- Ensemble: Stillwater Fisher Attire
-				i(244229),	-- Angler's Mantle
-				i(244352),	-- Cloak of the Veiled Paws
-				i(244228),	-- Sash of the Tipsy Sage
-				i(244230),	-- Strawhat of Frosted Currents
-
 				------ The Horseman's Burning Set ------
 				i(247982),	-- Ensemble: The Horseman's Burning Collection
 				q(91773),	-- Ensemble: The Horseman's Burning Collection
@@ -1388,18 +1380,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 12.0.5
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
 			n(SETS, {
-				------ Sire's Ornate Attire Set ------
-				i(270222),	-- Ensemble: Sire's Ornate Attire
-				q(95681),	-- Ensemble: Sire's Ornate Attire
-				i(270212),	-- Sire's Ornate Collar
-				i(270213),	-- Sire's Ornate Treads
-				i(270215),	-- Sire's Ornate Vestments
-				i(270216),	-- Sire's Ornate Gloves
-				i(270217),	-- Sire's Ornate Leggings
-				i(270218),	-- Sire's Ornate Mantle
-				i(270219),	-- Sire's Ornate Cloak
-				i(270220),	-- Sire's Ornate Bracers
-				i(270221),	-- Sire's Ornate Belt
 
 				------ Azshara's Darkscale Set ------
 				i(269797),	-- Ensemble: Azshara's Darkscale Raiment

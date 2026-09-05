@@ -62,6 +62,7 @@ L.AH_SEARCH_NO_ITEMS_FOUND = "No cached items found in search. Expand the group 
 L.ALIVE = "Alive"
 L.ALL_BUTTON = ALL
 L.ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once."
+L.ALL_HIDDEN = "All-Hidden"
 L.ALL_RECIPES = "All Recipes"
 L.ALL_THE_APPEARANCES_DESC = "All appearances that you need are displayed here."
 L.ALL_THE_BATTLEPETS_DESC = "All pets that you have not collected yet are displayed here."
@@ -84,6 +85,8 @@ L.ARTIFACT_ID = "Artifact ID"
 L.ARTIFACT_INTRO_REWARD = "Awarded for completing the introductory quest for this Artifact."
 L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not."
 L.ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion"
+L.ATTUNEMENTS = "Attunements"
+L.ATTUNEMENTS_TOOLTIP = "This window shows you your current character's attunement progress."
 L.AUCTION_TAB_CHECKBOX = "Show the Auction House Module Tab"
 L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys."
 L.AUCTIONATOR_GROUPS = "Group-based searches are only supported using Auctionator."
@@ -373,6 +376,8 @@ L.HEIRLOOMS_CHECKBOX_TOOLTIP = "Enable this option to track whether you have unl
 L.HEIRLOOMS_UPGRADES_CHECKBOX = "+Upgrades"
 L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle."
 L.HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve"
+L.HELP_TEXT = "Provides a single command to open all Hidden content in a single window"
+L.HELP_TEXT_TOOLTIP = "All Hidden ATT Content"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes"
 L.HIDDEN_CURRENCY_TRIGGERS = "Hidden Currency Triggers"
@@ -553,6 +558,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse\nRight Click
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n" .. SHIFT_KEY_TEXT .. " Click to Search the Auction House|r"
 L.OWNED_BY = "Owned by %s"
 L.OWNED_PETS = "Owned Pets"
+L.PATCH = "Patch: "
+L.PATCH_EDIT_BOX = "Please enter a new patch"
+L.PATCH_TOOLTIP = "Press this button to change the patch.\n\nChanging this value will filter to items that get added during the given patch or range."
 L.PATREON_BUTTON_LABEL = "Patreon"
 L.PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!"
 L.PERCENTAGES_CHECKBOX = "Show Percentage Completion"
@@ -1181,6 +1189,7 @@ localize(L.HEADER_NAMES, {
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-736] = BATTLE_PET_SOURCE_8,
+	[-782] = "CN Promotions (Classic)",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1212,6 +1221,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
 	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
+	[-782] = "These promotions are limited to the Classic & Titanforged Chinese Realms.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1340,6 +1350,7 @@ localize(L.HEADER_ICONS, {
 	[-734] = _.asset("category_event"),
 	[-735] = _.asset("category_expansionfeatures"),
 	[-736] = _.asset("category_promo"),
+	[-782] = _.asset("expansion_wotlk"),
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1419,7 +1430,6 @@ _.Modules.Events.SetEventInformation(7, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=20,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=4,["weekday"]=2,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026},{["remappedID"]=376}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=4,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=11,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
@@ -1429,7 +1439,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["remappedID"]=376}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=4,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=2,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027},{["remappedID"]=376})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=2,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027},{["remappedID"]=376}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=6,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=13,["weekday"]=1,["year"]=2027},{["remappedID"]=374})
 })
 -- Filter Database Module
 _.FilterConstants = {
@@ -2076,6 +2087,7 @@ local ObjectNames = {
 	[68865] = "Snufflenose Command Sticks",
 	[73940] = "Ooze Covered Silver Vein",
 	[73941] = "Ooze Covered Gold Vein",
+	[83763] = "Stolen Books",
 	[85562] = "Ironband's Strongbox",
 	[85563] = "Dead-tooth's Strongbox",
 	[86492] = "Crate of Elunite",
@@ -17775,6 +17787,7 @@ localize(ObjectNames, {
 	[68865] = "Schnüffelnasenleitstecken",
 	[73940] = "Brühschlammbedecktes Silbervorkommen",
 	[73941] = "Schlammbedecktes Goldvorkommen",
+	[83763] = "Gestohlene Bücher",
 	[85562] = "Eisenbands Geldkassette",
 	[85563] = "Stumpfzahns Geldkassette",
 	[86492] = "Kiste mit Elunit",
@@ -21497,6 +21510,7 @@ localize(ObjectNames, {
 	[68865] = "Bâtons de commandement de Sniffetarin",
 	[73940] = "Filon d'argent couvert de limon",
 	[73941] = "Filon d'or couvert de limon",
+	[83763] = "Livres dérobés",
 	[85562] = "Coffre de Baguefer",
 	[85563] = "Coffre de Dent-Morte",
 	[86492] = "Caisse d'élunite",
@@ -25855,6 +25869,7 @@ localize(ObjectNames, {
 	[68865] = "Bastões de Comando do Fungafuça",
 	[73940] = "Veio de Prata Coberto de Gosma",
 	[73941] = "Veio de Ouro Coberto de Gosma",
+	[83763] = "Livros Roubados",
 	[85562] = "Cofre de Bandaferro",
 	[85563] = "Caixa-forte do Dente-podre",
 	[86492] = "Cratera de Elunita",
@@ -29874,6 +29889,7 @@ localize(ObjectNames, {
 	[68865] = "Палочка-погонялочка для шмыгуносов",
 	[73940] = "Покрытая слизью серебряная жила",
 	[73941] = "Покрытая слизью золотая жила",
+	[83763] = "Краденые книги",
 	[85562] = "Сейф Сталекрута",
 	[85563] = "Сейф Мертвозуба",
 	[86492] = "Ящик с элунитом",
@@ -33492,6 +33508,7 @@ localize(ObjectNames, {
 	[68865] = "땅다람쥐 지휘봉",
 	[73940] = "진흙으로 덮인 은 광맥",
 	[73941] = "진흙으로 덮인 금 광맥",
+	[83763] = "도난당한 책",
 	[85562] = "아이언밴드의 금고",
 	[85563] = "썩은니의 금고",
 	[86492] = "엘루니트 상자",
@@ -36656,6 +36673,7 @@ L.AH_SEARCH_BOE_ONLY = "Solo se buscaran objetos ligados al equipar con esta bú
 L.AH_SEARCH_NO_ITEMS_FOUND = "No se encontraron objetos en caché en la búsqueda. Expande el grupo, visualiza los objetos para guardar los nombres en caché e inténtalo de nuevo. Solo se encontrarán objetos ligados al equipar con esta búsqueda."
 L.ALIVE = "Vivo"
 L.ALL_BUTTON_TOOLTIP = "Haz clic en este botón para activar todas las opciones a la vez."
+L.ALL_HIDDEN = "Todo lo oculto"
 L.ALL_THE_APPEARANCES_DESC = "Todas las apariencias que te faltan se muestran aquí."
 L.ALL_THE_BATTLEPETS_DESC = "Todas las mascotas que aún no has coleccionado se muestran aquí."
 L.ALL_THE_ILLUSIONS_DESC = "Ilusiones, juguetes, y otros objetos que pueden ser usados para conseguir objetos coleccionables se muestran aquí."
@@ -36676,6 +36694,8 @@ L.ARTIFACT_ID = "Artefacto ID"
 L.ARTIFACT_INTRO_REWARD = "Se otorga por completar la misión introductoria de este artefacto."
 L.ARTIFACT_RELIC_CACHE = "Abre la interfaz de Armas de Artefacto para cargar si esto es una mejora o no. Es útil para determinar si puedes comerciar este objeto a un Twink o no."
 L.ARTIFACT_RELIC_COMPLETION = "Completado de reliquias de Artefacto"
+L.ATTUNEMENTS = "Armonizaciones"
+L.ATTUNEMENTS_TOOLTIP = "Esta ventana muestra el progreso de armonización de tu personaje actual."
 L.AUCTION_TAB_CHECKBOX = "Muestra la pestaña del módulo de Casa de Subastas"
 L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el módulo de la Casa de Subastas que viene con ATT.\n\nAlgunos addons son traviesos y modifican esta ventana extensamente. ATT no funciona muy bien con algunos de estos juguetitos."
 L.AUCTIONATOR_GROUPS = "Las búsquedas basadas en grupos solo se admiten mediante Auctionator."
@@ -36916,6 +36936,8 @@ L.HEIRLOOMS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear si has desbloq
 L.HEIRLOOMS_UPGRADES_CHECKBOX = "+Mejoras"
 L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear específicamente la colección de cada mejora individual de Reliquias.\n\nTodos sabemos que a Blizzard le encanta drenar tu oro y tu alma, así que lleva la cuenta con este interruptor."
 L.HEIRLOOMS_UPGRADES_DESC = "Esto indica si has mejorado o no la reliquia a un cierto nivel.\n\nD.E.P. Oro.\n - Crieve"
+L.HELP_TEXT = "Proporciona un único comando para abrir todo el contenido oculto en una sola ventana"
+L.HELP_TEXT_TOOLTIP = "Todo el contenido oculto de ATT"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS = "Disparador de logros ocultos"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "Estos son logros que se han determinado manualmente para que se activen según criterios específicos y que el juego utiliza principalmente de forma interna con fines de seguimiento."
 L.HIDDEN_CURRENCY_TRIGGERS = "Desencadenantes ocultos de monedas"
@@ -37075,6 +37097,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffClic izquierdo para Expandir/Contraer\nCli
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic izquierdo para Expandir/Contraer\nClic derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + clic para buscar en la Casa de Subastas|r"
 L.OWNED_BY = "Poseído por %s"
 L.OWNED_PETS = "Mascotas poseídas"
+L.PATCH = "Parche: "
+L.PATCH_EDIT_BOX = "Por favor, introduzca un nuevo parche"
+L.PATCH_TOOLTIP = "Pulse este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se agregaron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERCENTAGES_CHECKBOX = "Muestra el porcentaje de completado"
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el porcentaje de completado de cada línea.\n\nEl coloreado de grupos por completado no se ve afectado."
@@ -37801,6 +37826,7 @@ localize(ObjectNames, {
 	[68865] = "Varas de mando de husmeador",
 	[73940] = "Filón de plata cubierto de moco",
 	[73941] = "Filón de oro cubierto de moco",
+	[83763] = "Libros robados",
 	[85562] = "Caja fuerte de Vetaferro",
 	[85563] = "Caja fuerte de Dentomuerto",
 	[86492] = "Cajón de Elunite",
@@ -41119,6 +41145,8 @@ L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser 
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para actualizar las Colecciones\n" .. CTRL_KEY_TEXT .. " + click para Expandir/Contraer recursivamente\n" .. SHIFT_KEY_TEXT .. " + click derecho para ordenar grupos o listas emergentes\n" .. ALT_KEY_TEXT .. " + click derecho para marcar puntos de referencia|r"
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para buscar en la Casa de Subastas|r"
 L.OWNED_PETS = "Mascotas obtenidas"
+L.PATCH_EDIT_BOX = "Por favor, escriba un nuevo parche"
+L.PATCH_TOOLTIP = "Click a este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se añadieron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERSONAL_LOOT_DESC = "Cada jugador tiene una probabilidad independiente de despojar un objeto útil para su clase ...\n\n ... O inútil como los anillos.\n\nHaz click dos veces para crear un grupo automáticamente si estás sólo."
 L.PET_DESC = "Haz click en este botón para seleccionar una mascota aleatoria basado en lo que te falta."
@@ -44173,6 +44201,7 @@ localize(ObjectNames, {
 	[61936] = "燃油控制阀",
 	[68865] = "地鼠指挥棒",
 	[73941] = "软泥覆盖的金矿脉",
+	[83763] = "被偷走的书",
 	[85562] = "铁环的保险箱",
 	[85563] = "蛀牙杰克的箱子",
 	[86492] = "月神矿石",
@@ -48112,6 +48141,7 @@ localize(ObjectNames, {
 	[1609] = "龍喉投石車",
 	[1617] = "銀葉草",
 	[1618] = "寧神花",
+	[83763] = "被偷走的書",
 	[103815] = "安伯米爾保險箱",
 	[105176] = "風險投資公司保險箱",
 	[105570] = "聯盟保險箱",

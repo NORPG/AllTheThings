@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 					}),
 				})),
-				petbattle(ach(17918, {	-- Undead Battler of Zaralek Caverm
+				petbattle(ach(17918, {	-- Undead Battler of Zaralek Cavern
 					crit(59391, {	-- Explorer Bezzert
 						["crs"] = { 201004 },
 						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
@@ -388,17 +388,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 52.04, 75.21, ZARALEK_CAVERN },
 				}),
 				crit(60006,	{	-- Aimless Snail
-					-- #if BEFORE 10.0.7
-					["description"] = "Requires the quest The Slowest Fan Club from Briggul to be active and accepted. Hitting maximum reputation with Glimmerogg Racer means you will need party sync to get this quest to be able to see the critters.",
-					["_npcs"] = { 201875 },	-- Aimless Snail	(Using _npcs so the criteria shows inside of the ONLY daily quest which allows it to be completed)
-					["coord"] = { 44.91, 77.71, ZARALEK_CAVERN },
-					-- #else
-					["description"] = "Can also be found during the quest The Slowest Fan Club from Briggul.",
+					["description"] =
+						-- #if AFTER 10.0.7
+						"Can also be found during the quest The Slowest Fan Club from Briggul.",	
+						-- #else
+						"Requires the quest The Slowest Fan Club from Briggul to be active and accepted. Hitting maximum reputation with Glimmerogg Racer means you will need party sync to get this quest to be able to see the critters.",
+						-- #endif
+					["coords"] = {
+						-- #if AFTER 10.0.7
+						{ 44.6, 73.4, ZARALEK_CAVERN },
+						-- #else
+						{ 44.9, 77.7, ZARALEK_CAVERN },
+						-- #endif
+					},
+					-- #if AFTER 10.0.7
 					["crs"] = {
 						201875,	-- Aimless Snail (World Quest Version)
 						211267,	-- Aimless Snail (Permanent)
 					},
-					["coord"] = { 44.6, 73.4, ZARALEK_CAVERN },
+					-- #else
+					["_npcs"] = { 201875 },	-- Aimless Snail	(Using _npcs so the criteria shows inside of the ONLY daily quest which allows it to be completed)
 					-- #endif
 				}),
 				crit(60005, {	-- Incense Cinder

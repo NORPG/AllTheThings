@@ -8,12 +8,10 @@ root(ROOTS.Unsorted, {
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
-			i(247776),	-- Glowing Zangarshroom Cup
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
-			i(260425),	-- Morsel of Crab Meat
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
@@ -24,20 +22,16 @@ root(ROOTS.Unsorted, {
 			i(265620),	-- Rehydrated Zandalari Peppers
 			i(265626),	-- Shattered Teapot
 			i(265790),	-- Cache of Mistcrests
-			i(266327),	-- Pristine Spinal Barb
 			i(267045),	-- Quivering Egg
 			i(268095),	-- Fresh Poultice
 			-- WB
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
-			i(268585),	-- Pup Treat
 			i(268823),	-- Scroll of Seeking
 			i(268826),	-- Ballast Stone
 			i(268871),	-- Specifically Sized Rock
 			i(269720),	-- Corrosive Hekte
-			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
-			i(270346),	-- Big Meaty Claw
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
@@ -45,7 +39,6 @@ root(ROOTS.Unsorted, {
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
-			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
@@ -60,7 +53,6 @@ root(ROOTS.Unsorted, {
 			i(274372),	-- Big ol' Bag of Polished Pet Charms
 			i(274421),	-- Crate of Community Coupons
 			i(274423),	-- Unborn Val'kyr
-			i(274437),	-- Venom Ward
 			i(274438),	-- Nexus Whelpling
 			i(274439),	-- Chitterspine Skitterling
 			i(274447),	-- Emerald Proto-Whelp
@@ -92,7 +84,6 @@ root(ROOTS.Unsorted, {
 			i(274991),	-- Seaside Fire Pit
 			i(275030),	-- Slugg's Favorite Fishing Rod
 			i(275053),	-- Kobold Candle Collection
-			i(275062),	-- Illusion: Venomcoil
 			i(275064),	-- [PH] Taretha Axe - Blue
 			i(275065),	-- [PH] Taretha Axe - Purple
 			i(275233),	-- Rosy Bracelet of Friendship
@@ -113,7 +104,6 @@ root(ROOTS.Unsorted, {
 			i(275572),	-- [PH] Broomstick Spice - Hallow
 			i(275573),	-- [PH] Broomstick Spice - Pink
 			i(275574),	-- [PH] Broomstick Spice - Red
-			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(276138),	-- Any Ingredient [DNT
@@ -122,42 +112,10 @@ root(ROOTS.Unsorted, {
 			i(276411),	-- [PH] Rainbow Axe - 2h - Purple
 			i(276415),	-- [PH] Rainbow Mace- 1h - Purple
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
-			i(276547),	-- Afflicted Soul
-			i(276548),	-- Tormented Soul
 			i(276550),	-- Wind Serpent - White
 			i(276552),	-- Wind Serpent - Pink
-			i(276611),	-- Clam Stuffed Crab
-			i(276612),	-- The Shell-Shocker
-			i(276613),	-- Sparkling LaKoi
-			i(276615),	-- Half-shell Highball
-			i(276616),	-- Pineapple Sundown
-			i(276617),	-- Fancy Oar
-			i(276618),	-- Weathered Stone Tablet
-			i(276619),	-- Mysterious Corked Bottle
-			i(276620),	-- Patinaed Bottle
-			i(276621),	-- Antique Shield
 			i(276622),	-- De-cryption Amulet
 			i(276624),	-- Overflowing Hash'ura Trove
-			i(276626),	-- Long Centaur Wall
-			i(276628),	-- Scroll of Deep Breath
-			i(276629),	-- Scroll of the Sailfish
-			i(276650),	-- Short Centaur Wall
-			i(276652),	-- Tapered Centaur Wall
-			i(276654),	-- Ball
-			i(276656),	-- Centaur Table
-			i(276658),	-- Centaur Bench
-			i(276661),	-- Centaur Stove
-			i(276663),	-- Round Centaur Carpet
-			i(276665),	-- Wide Centaur Carpet
-			i(276667),	-- Narrow Centaur Carpet
-			i(276669),	-- Closed Centaur Basket
-			i(276671),	-- Open Centaur Basket
-			i(276673),	-- Cooked Leg of Meat
-			i(276675),	-- Cooked Rack of Meat
-			i(276677),	-- Pet Food and Water Tray
-			i(276747),	-- Scroll of the Salty Souvenir: East
-			i(276748),	-- Scroll of the Salty Souvenir: West
-			i(276749),	-- Scroll of the Salty Souvenir: South
 			i(276800),	-- [PH]Writhes Mount - Yellow
 			i(277157),	-- Barnacle-Encrusted Chest
 			i(277192),	-- Umbral Ashes
@@ -185,7 +143,6 @@ root(ROOTS.Unsorted, {
 			i(277530),	-- Balm of Flies
 			i(277990),	-- Cursemail Gauntlets
 			i(278044),	-- Hanging Candles
-			i(278050),	-- Corrosive Bijou
 			i(278099),	-- Malt
 			i(278100),	-- Grain
 			i(278106),	-- DNT Coiled Color Changer
@@ -204,9 +161,6 @@ root(ROOTS.Unsorted, {
 			i(278289),	-- Nebulous Voidcache: The Twin Fangs
 			i(278290),	-- Nebulous Voidcache: The Bargained Crown
 			i(278335),	-- Cerulean Pearl
-			i(278337),	-- Amber Pearl
-			i(278339),	-- Cursebound Pearl
-			i(278340),	-- Blighted Pearl
 			i(278576),	-- Crested Violet Leafmimic
 			i(278577),	-- Nightfall Assassin's Tunic
 			i(278578),	-- Nightfall Assassin's Mask
@@ -421,8 +375,6 @@ root(ROOTS.Unsorted, {
 			i(279442),	-- Violet Gloomcap
 			i(279444),	-- Snowy Gloomcap
 			i(279445),	-- Sunny Gloomcap
-			i(279455),	-- K'areshi Tea Cup
-			i(279458),	-- Rock Goblet
 			i(279524),	-- Brewer's Purple Kilt
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
@@ -440,7 +392,6 @@ root(ROOTS.Unsorted, {
 			i(279549),	-- Witch-Hunter's Undercoat
 			i(279551),	-- Radical's Gilded Vestment
 			i(279579),	-- Cruel Warrior's Blade
-			i(279590),	-- Venomous Champion's Illustrious Banner
 			i(279610),	-- Bundle of Adventurer Dawncrests
 			i(279611),	-- Satchel of Champion Dawncrests
 			i(279612),	-- Pack of Hero Dawncrests
@@ -460,34 +411,6 @@ root(ROOTS.Unsorted, {
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280215),	-- Tortollan Tarp Tent
-			i(280221),	-- Sealeather Sack
-			i(280223),	-- Collector's Tortollan Display Rack
-			i(280225),	-- Mason's Tortollan Display Rack
-			i(280227),	-- Apothecary's Tortollan Display Rack
-			i(280230),	-- Empty Tortollan Display Rack
-			i(280232),	-- Sea Glass Lamp Post
-			i(280234),	-- Sea Glass Bauble
-			i(280236),	-- Ancient Memories of the Sea
-			i(280238),	-- Half-Shell Hot Pot
-			i(280240),	-- Compact Cookfire
-			i(280242),	-- Tortollan Traveler's Chest
-			i(280244),	-- Tortollan Traveler's Tincture
-			i(280246),	-- Warrens Candlecooker
-			i(280249),	-- Kobold Dig-Thing
-			i(280251),	-- Kobold Sit-Thing
-			i(280253),	-- Highlighting High Light
-			i(280255),	-- Small Warrens Candle
-			i(280257),	-- Medium Warrens Candle
-			i(280259),	-- Large Warrens Candle
-			i(280261),	-- Large Threedium Warrens Candle
-			i(280263),	-- Candle Cage
-			i(280265),	-- Hot Kobold Treasure
-			i(280267),	-- Bold Kobold Kabin
-			i(280269),	-- Cozy Kobold Crate
-			i(280271),	-- Longwick Rope
-			i(280273),	-- Droopy Longwick Rope
-			i(280275),	-- Hanging Longwick Rope
 			i(244347),	-- Purified Troll Urn
 			i(248101),	-- Traditional Brewfest Stein
 			i(253396),	-- Purified Crude Axe
@@ -501,13 +424,10 @@ root(ROOTS.Unsorted, {
 			i(280341),	-- Brewfest Fencepost
 			i(280343),	-- Hanging Brewfest Wreath
 			i(280102),	-- Handful of Corrosive Coins
-			i(280513),	-- Color-Curious Candle
 			i(280581),	-- Wintry Witchwick's Rider
 			i(280842),	-- Shadowhunters' Hexblade
-			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum
-			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
 			n(PROFESSIONS, {
@@ -680,9 +600,6 @@ root(ROOTS.Unsorted, {
 				-- Misc
 				i(274780),	-- Fungal Spore Vapor [NYI]
 			}),
-			filter(BATTLE_PETS, {
-				i(275818),	-- Pinky
-			}),
 			filter(COSMETIC, {
 				i(269751),	-- Artisan Sai
 				i(269752),	-- Nunchuck of the Artisan
@@ -761,16 +678,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(DECOR, {
 				i(248961),	-- Large Amani Tiki Mask
-				i(264721),	-- Auspicious Curio Display
-				i(264722),	-- Auspicious Inkmaster's Desk
-				i(264723),	-- Auspicious Tree of Fortune
-				i(264724),	-- Auspicious Golden Carp Lantern
-				i(264725),	-- Auspicious Imperial Lion
-				i(266071),	-- Auspicious Wooden Chair
-				i(269604),	-- Auspicious Picnic Basket
-				i(269605),	-- Auspicious Meal Case
-				i(272353),	-- Auspicious Verdant Basin
-				i(272354),	-- Auspicious Stone Lion
 			}),
 			filter(MISC, {
 				i(270273),	-- Viny Lasso
@@ -806,7 +713,6 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				i(264368),	-- ??
 			}),
-			i(276245),	-- Shadow Spirehawk
 		})),
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
 			filter(COSMETIC, {
@@ -906,10 +812,7 @@ root(ROOTS.Unsorted, {
 				}),
 			}),
 			n(DECOR, {
-				i(273640),	-- Condensed Anima Orb (DECOR!)
-				i(272355),	-- Orchestrion of Echoing Atonement (DECOR!)
 				i(263883),	-- Small Sturdy Wooden Trellis (DECOR!)
-				i(272356),	-- Throne of Subjugated Souls (DECOR!)
 			}),
 			filter(MISC, {
 				i(267278),	-- Angler Pearls
@@ -930,15 +833,11 @@ root(ROOTS.Unsorted, {
 				i(268362),	-- Gilnean Copper Charger (MOUNT!)
 				i(268360),	-- Gilnean Iron Charger (MOUNT!)
 			}),
-			filter(BATTLE_PETS, {
-				i(273021),	-- Sha-Warped Hippogryph Hatchling
-			}),
 			filter(QUEST_ITEMS, {
 				i(259473),	-- Charred Amani Trinket
 				i(259474),	-- Lost Amani Toy
 				i(259475),	-- Misplaced Loa Statue
 			}),
-			i(274427),	-- Sha Loot Box
 		})),
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
 			n(WEAPONS, {

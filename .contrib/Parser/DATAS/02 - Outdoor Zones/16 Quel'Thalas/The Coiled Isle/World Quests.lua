@@ -19,6 +19,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93672, {	-- Blade to Rest
 					["coord"] = { 45.7, 12.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
+				q(94612, {	-- Claws for Celebration
+					["qis"] = {
+						270346,	-- Big Meaty Claw (QI!)
+						260425,	-- Morsel of Crab Meat (QI!)
+					},
+					["coord"] = { 68.2, 78.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(93669, {	-- Curse of Greed
 					["coord"] = { 34.4, 85.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["qi"] = 260419,	-- Cursed Zandalari Coin (QI!)
@@ -97,6 +104,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(95253, {	-- Shocking Appetites
 					["coord"] = { 61.3, 65.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["groups"] = { i(268628) },	-- Zapgut Gland (QI!)
+				}),
+				q(94876, {	-- Show Some Backbone
+					["qi"] = 266327,	-- Pristine Spinal Barb (QI!)
+					["coord"] = { 31.0, 75.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95990, {	-- Slithering Heights
 					["coord"] = { 38.7, 47.4, MAP.MIDNIGHT.THE_COILED_ISLE },

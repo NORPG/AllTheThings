@@ -1,6 +1,6 @@
-if C_TransmogCollection and C_TransmogCollection.GetIllusions then
 -- App locals
 local _, app = ...;
+if C_TransmogCollection and C_TransmogCollection.GetIllusions and app.GameBuildVersion >= 60000 then
 
 -- Private Variables
 local Flat;

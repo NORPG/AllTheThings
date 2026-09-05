@@ -3311,11 +3311,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32663, {	-- Learn To Ride
 					-- #if BEFORE 10.1.5
-					-- #if AFTER SL
-					["description"] = "This quest is available to Gnomes upon reaching level 10.",
-					-- #else
-					["description"] = "This quest is available to Gnomes upon reaching level 20.",
-					-- #endif
+					["description"] =
+						-- #if AFTER SL
+						"This quest is available to Gnomes upon reaching level 10.",
+						-- #else
+						"This quest is available to Gnomes upon reaching level 20.",
+						-- #endif
 					-- #endif
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { GNOME },
@@ -3332,11 +3333,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32662, {	-- Learn To Ride
 					-- #if BEFORE 10.1.5
-					-- #if AFTER SL
-					["description"] = "This quest is available to Dwarves upon reaching level 10.",
-					-- #else
-					["description"] = "This quest is available to Dwarves upon reaching level 20.",
-					-- #endif
+					["description"] =
+						-- #if AFTER SL
+						"This quest is available to Dwarves upon reaching level 10.",
+						-- #else
+						"This quest is available to Dwarves upon reaching level 20.",
+						-- #endif
 					-- #endif
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { DWARF },

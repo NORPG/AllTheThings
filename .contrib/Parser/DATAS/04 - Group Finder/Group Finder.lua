@@ -24,7 +24,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.CLASSIC, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
-			["description"] = "Rewarded for completing a random classic dungeon.",
+			["description"] = "Rewarded for completing a random 'Classic' dungeon.",
 			["timeline"] = { ADDED_7_3_5 },
 			["groups"] = {
 				i(51982),			-- Earthbound Boots				— 01/14/22
@@ -134,11 +134,12 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(52001, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
-			-- #if AFTER CATA
-			["description"] = "Rewarded for completing a random dungeon in the level 40-45 range.",
-			-- #else
-			["description"] = "Rewarded for completing a random dungeon in the level 36-45 range.",
-			-- #endif
+			["description"] =
+				-- #if AFTER CATA
+				"Rewarded for completing a random dungeon in the level 40-45 range.",
+				-- #else
+				"Rewarded for completing a random dungeon in the level 36-45 range.",
+				-- #endif
 			["groups"] = {
 				i(51976),	-- Earthbound Shoulderguards
 				i(51974),	-- Enumerated Shoulderpads
@@ -173,11 +174,12 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.TBC, {
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
-			-- #if BEFORE 10.1.5
-			["description"] = "Rewarded for completing a random burning crusade dungeon during leveling.",
-			-- #else
-			["description"] = "Rewarded for completing a random bc dungeon during leveling or completing a random bc timewalking dungeon.",
-			-- #endif
+			["description"] =
+				-- #if AFTER 10.1.5
+				"Rewarded for completing a random 'The Burning Crusade' dungeon during leveling or respective Timewalking event.",
+				-- #else
+				"Rewarded for completing a random 'The Burning Crusade' dungeon during leveling.",
+				-- #endif
 			["timeline"] = { ADDED_7_3_5 },
 			["groups"] = {
 				i(51982),	-- Earthbound Boots
@@ -247,11 +249,12 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	-- #if AFTER 6.0.1.18500
 	expansion(EXPANSION.WRATH, {
 		i(156688, {	-- Icy Satchel of Helpful Goods
-			-- #if BEFORE 10.1.5
-			["description"] = "Rewarded for completing a random wrath of the lich king dungeon during leveling.",
-			-- #else
-			["description"] = "Rewarded for completing a random wotlk dungeon during leveling or completing a random wotlk timewalking dungeon.",
-			-- #endif
+			["description"] =
+				-- #if AFTER 10.1.5
+				"Rewarded for completing a random 'Wrath of the Lich King' dungeon during leveling or respective Timewalking event.",
+				-- #else
+				"Rewarded for completing a random 'Wrath of the Lich King' dungeon during leveling.",
+				-- #endif
 			["timeline"] = { ADDED_7_3_5 },
 			["groups"] = {
 				i(113687),	-- Dark Rune Lavalliere*
@@ -279,7 +282,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		}),
 		i(114634, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 70-74
-			["description"] = "Rewarded for completing a random Wrath of the Lich King dungeon in the level 70-74 range.",
+			["description"] = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 70-74 range.",
 			["groups"] = {
 				i(112361),	-- Ice-Encrusted Plate Belt
 				i(112362),	-- Ice-Encrusted Plate Girdle
@@ -305,7 +308,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(114641, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 75-80
-			["description"] = "Rewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.",
+			["description"] = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 75-80 range.",
 			["groups"] = {
 				i(113687),	-- Dark Rune Lavalliere
 				i(113686),	-- Nerubian Prince's Pendant
@@ -325,11 +328,12 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.CATA, {
 		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
-			-- #if BEFORE 10.1.5
-			["description"] = "Rewarded for completing a random cataclysm dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
-			-- #else
-			["description"] = "Rewarded for completing a random cata dungeon during leveling or completing a random cata timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
-			-- #endif
+			["description"] =
+				-- #if AFTER 10.1.5
+				"Rewarded for completing a random 'Cataclysm' dungeon during leveling or respective Timewalking event.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
+				-- #else
+				"Rewarded for completing a random 'Cataclysm' dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
+				-- #endif
 			["timeline"] = { ADDED_7_3_5 },
 			["groups"] = {
 				i(113725),	-- Molten Slagstone Ring
@@ -414,7 +418,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		}),
 		i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "Rewarded for completing a random Cataclysm dungeon in the level 80-84 range.",
+			["description"] = "Rewarded for completing a random 'Cataclysm' dungeon in the level 80-84 range.",
 			["groups"] = {
 				i(113760),	-- Smoldercloth Bracers
 				i(113759),	-- Smoldercloth Cap
@@ -441,7 +445,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		}),
 		i(114655, {	-- Scorched Satchel of Helpful Goods 84-85
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "Rewarded for completing a random Cataclysm dungeon in the level 84-85 range.",
+			["description"] = "Rewarded for completing a random 'Cataclysm' dungeon in the level 84-85 range.",
 			["groups"] = {
 				i(113763),	-- Smoldercloth Gloves
 				i(113761),	-- Smoldercloth Leggings
@@ -464,11 +468,12 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	-- #endif
 	expansion(EXPANSION.MOP, {
 		i(156698, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods
-			-- #if BEFORE 10.1.5
-			["description"] = "Rewarded for completing a random mists of pandaria dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
-			-- #else
-			["description"] = "Rewarded for completing a random mop dungeon during leveling or completing a random mop timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
-			-- #endif
+			["description"] =
+				-- #if AFTER 10.1.5
+				"Rewarded for completing a random 'Mists of Pandaria' dungeon during leveling or respective Timewalking event.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
+				-- #else
+				"Rewarded for completing a random 'Mists of Pandaria' dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
+				-- #endif
 			["groups"] = {
 				i(113757),	-- Band of Directed Fury
 				i(113788),	-- Blossoming Belt*
@@ -511,7 +516,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(114662, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
-			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
+			["description"] = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
 			["groups"] = {
 				i(113788),	-- Blossoming Belt
 				i(113764),	-- Blossoming Cap
@@ -538,7 +543,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(114669, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 88-90
-			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
+			["description"] = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
 			["groups"] = {
 				i(113757),	-- Band of Directed Fury
 				i(113766),	-- Blossoming Gloves

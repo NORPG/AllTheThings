@@ -415,6 +415,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(LEGENDS_OF_THE_HARANIR, {
 				-- weekly account-wide lockout
 				q(89284, name(HEADERS.Quest,89268,{isWeekly=true})),	-- Lost Legends (weekly AW lockout)
+				q(97163, name(HEADERS.Quest,89268,{isWeekly=true})),	-- After turning in the weekly -- TODO: Confirm accountwide
 				-- weekly per character choice
 				q(89266, name(HEADERS.NPC,241213,{isWeekly=true})),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
 				q(91049, name(HEADERS.NPC,243491,{isWeekly=true})),	-- Triggered after chosing 'Cauldron of Echoes' during 'Lost Legends' (89268)

@@ -188,9 +188,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(280118),	-- Venomous Aspirant's Medallion
 				},
 			}),
-			q(98295, {	-- Week 1 of 3: Crowd Control
+			q(98295, {	-- Week 2 of 3: Crowd Control
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 				["groups"] = { i(267491) },	-- Novice Combatant's Cloak
+			}),
+			q(98311, {	-- Week 3 of 3: Interrupts and Dispels
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["groups"] = {
+					i(266314),	-- Novice Combatant's Necklace
+					i(266317),	-- Novice Combatant's Ring
+				},
 			}),
 		})),
 		-- Dungeons

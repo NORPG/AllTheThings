@@ -10,7 +10,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(246707, {	-- Decorative Cinder Honeypot (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "i", 225557, 75 } },	-- 100x Sizzling Cinderpollen
+						["cost"] = {
+							-- #if AFTER MID
+							-- Changed at some point after the launch of Midnight
+							{ "i", 225557, 30 },	-- 30x Sizzling Cinderpollen
+							-- #else
+							{ "i", 225557, 75 },	-- 75x Sizzling Cinderpollen
+							-- #endif
+						},
 					}),
 					i(228424),	-- Recipe: Cinder Nectar (RECIPE!)
 					i(223153, {	-- Soaring Meaderbee (MOUNT!)

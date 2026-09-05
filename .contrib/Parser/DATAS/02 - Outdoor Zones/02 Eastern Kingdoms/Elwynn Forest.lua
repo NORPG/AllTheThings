@@ -1785,7 +1785,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if BEFORE 3.3.0
 							["groups"] = {
 								objective(1, {	-- 0/1 Powers of the Void
-									["provider"] = { "i", 6785 },	-- Powers of the Void (QI!)
+									["providers"] = {
+										{ "i",  6785 },	-- Powers of the Void (QI!)
+										{ "o", 83763 },	-- Stolen Books
+									},
 									["coord"] = { 56.7, 44.0, ELWYNN_FOREST },
 								}),
 								recipe(688),	-- Summon Imp
@@ -2729,11 +2732,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32618, {	-- Learn To Ride
 					-- #if BEFORE 10.1.5
-					-- #if AFTER SL
-					["description"] = "This quest is available to Humans upon reaching level 10.",
-					-- #else
-					["description"] = "This quest is available to Humans upon reaching level 20.",
-					-- #endif
+					["description"] =
+						-- #if AFTER SL
+						"This quest is available to Humans upon reaching level 10.",
+						-- #else
+						"This quest is available to Humans upon reaching level 20.",
+						-- #endif
 					-- #endif
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { HUMAN },

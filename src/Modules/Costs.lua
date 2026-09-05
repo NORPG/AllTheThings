@@ -18,7 +18,6 @@ local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
 -- App locals
 local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, IsComplete
 	= app.GetRawField, app.GetRelativeByFunc, app.GetRelativeRawWithField, app.SearchForObject, app.IsComplete
-local OneTimeQuests = app.EmptyTable
 local GetItemCount = app.WOWAPI.GetItemCount
 local IsSpellKnownHelper, CreateObject, FillGroups
 
@@ -55,6 +54,7 @@ local CostDebugIDs = {
 	-- [24368] = true,	-- Coilfang Armaments
 	-- [9766] = true,	-- Coilfang Armaments (quest)
 	-- [3160] = true,	-- MID Tailoring Knowledge
+	-- [273000] = true,	-- Corrosive Soul
 }
 local function PrintDebug(id, ...)
 	if CostDebugIDs.ALL then
@@ -76,7 +76,7 @@ end
 -- 2 - Available to collect based on only Unobtainable Filtering
 -- 3 - Available to collect without Filtering
 local function CheckCollectible(ref, costid)
-	-- local RefSearch = app:RawSearchLink(ref.key,ref.keyval)
+	-- local RefSearch = CostDebugIDs[costid] and app:RawSearchLink(ref.key,ref.keyval)
 	-- Depth = Depth + 1
 	-- Only track Costs through Things which are Available
 	if not IsAvailable(ref) then
@@ -148,9 +148,9 @@ local function CacheFilters()
 end
 app.AddEventHandler("OnLoad", CacheFilters)
 local function BlockedParent(group)
-	if group.questID and (group.saved or group.locked or OneTimeQuests[group.questID]) then
-		return group
-	end
+	if not group.questID or app.IsQuestAvailable(group) then return end
+
+	return group
 end
 local CurrencyAmounts = setmetatable({}, { __index = function(t, key)
 	local currencyInfo = GetCurrencyInfo(key)
@@ -201,32 +201,34 @@ do
 	end
 end
 local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost)
-	-- Iterate on the search result of the entry key
+	-- Intent:
+	-- isCost 		= you should see this Thing as a Cost because it's needed for Purchases
+	-- isOwnedCost 	= you own enough to complete all Purchases (according to ATT)
+
 	local parent, blockedBy
 	-- PrintDebug(costID, "SetCostTotals",#costs,isCost)
 	local c
 	for i=1,#costs do
 		c = costs[i]
 		-- Mark the group with a costTotal
-		-- PrintDebug(costID, "Force Cost",app:SearchLink(c),isCost,c.hash,c.modItemID or c.currencyID)
-		c._SettingsRefresh = refresh;
-		c.isOwnedCost = isOwnedCost
+		-- PrintDebug(costID,"Force Cost",app:SearchLink(c),c.hash,c.modItemID or c.currencyID)
+		c._SettingsRefresh = refresh
 		-- only mark cost on visible content
 		if isCost and RecursiveGroupRequirementsFilter(c, ExtraFilters) then
 			parent = c.parent
 			blockedBy = GetRelativeByFunc(parent, BlockedParent)
-			if not blockedBy then
-				c.isCost = isCost
-				-- PrintDebug(costID, "Unblocked Cost",app:SearchLink(c))
-			else
-				c.isCost = nil;
-				-- PrintDebug(costID, "Skipped cost under locked/saved parent"
-				-- 	,app:SearchLink(c)
-				-- 	,app:SearchLink(blockedBy))
-			end
+			-- PrintDebug(costID, "Cost"
+			-- 	,app:SearchLink(c)
+			-- 	,"Parent"
+			-- 	,app:SearchLink(parent)
+			-- 	,"BlockedBy"
+			-- 	,app:SearchLink(blockedBy))
+			c.isCost = not blockedBy and isCost or nil
+			c.isOwnedCost = isOwnedCost
 		else
 			-- PrintDebug(costID, "Not a cost",app:SearchLink(c))
-			c.isCost = nil;
+			c.isCost = nil
+			c.isOwnedCost = nil
 		end
 		-- regardless of the Cost state, make sure to update this specific cost group for visibility
 		DGU(c)
@@ -347,6 +349,9 @@ local function DoCollectibleCheckForSpellRef(ref, spellID, itemUnbound)
 		end
 	end
 end
+local function PlayerIsMissingProviderSpell(spellID)
+	return not IsSpellKnownHelper(spellID)
+end
 local function PlayerIsMissingProviderItem(itemID)
 	return not PlayerHasToy(itemID) and GetItemCount(itemID, true, nil, true, true) == 0
 end
@@ -356,26 +361,33 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 	local owned = 0
 	local isCost
 	if total > 0 or not isProv then
-		owned = total > 0 and GetItemCount(itemID, true, nil, true, true) or 0
-		isCost = total > owned
+		isCost = total > 0
+		owned = isCost and GetItemCount(itemID, true, nil, true, true) or 0
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
 	else
-		isProv = PlayerIsMissingProviderItem(itemID)
-		-- PrintDebug(itemID, app:SearchLink(costs[1]),isProv and "IS PROV" or "NOT PROV")
+		owned = PlayerIsMissingProviderItem(itemID) and 0 or 1
+		if owned == 0 then
+			-- if this provider Item is also a spell, check if the player knows that spell
+			local item = SearchForObject("itemID", itemID, "field")
+			local spellID = item and item.spellID
+			if spellID then
+				owned = item.saved and 1 or 0
+				-- PrintDebug(itemID, owned == 1 and "PROV IS KNOWN SPELL" or "PROV IS UNKNOWN SPELL")
+			end
+		end
+		-- PrintDebug(itemID, app:SearchLink(costs[1]),owned == 1 and "PROV OWNED" or "PROV MISSING")
 	end
-	local isOwnedCost = (not isCost and owned > 0) or nil
-	SetCostTotals(costs, isCost or isProv, refresh, itemID, isOwnedCost)
+	isCost = isCost or isProv
+	local isOwnedCost = (isCost and owned >= total) or nil
+	SetCostTotals(costs, isCost, refresh, itemID, isOwnedCost)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
 	local total = CostTotals.c[currencyID] or 0
 	local owned = CurrencyAmounts[currencyID]
-	local isCost = total > owned
-	local isOwnedCost = (not isCost and total > 0) or nil
+	local isCost = total > 0
+	local isOwnedCost = (isCost and owned >= total) or nil
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
 	SetCostTotals(costs, isCost, refresh, currencyID, isOwnedCost)
-end
-local function PlayerIsMissingProviderSpell(spellID)
-	return not IsSpellKnownHelper(spellID)
 end
 local function FinishCostAssignmentsForSpell(spellID, costs, refresh)
 	local isProv = CostTotals.sp[spellID]
@@ -704,7 +716,6 @@ app.AddEventHandler("OnLoad", function()
 end)
 app.AddEventHandler("OnAfterSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ExtraFilters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
-	OneTimeQuests = accountWideData.OneTimeQuests
 end)
 app.AddEventHandler("OnRecalculate_NewSettings", UpdateCosts)
 -- Information Types
@@ -1172,10 +1183,15 @@ app.AddEventHandler("OnLoad", function()
 		-- do not fill purchases on certain items, can skip the skip though based on a level
 		if not ShouldFillPurchases(group, FillData) then return end
 
-		-- Certain Collected Types which are NOT the Root of the Fill should not be filled
-		if SkipPurchases.LearnedTypes[group.__type] and group ~= FillData.Root and app.IsComplete(group) then
-			-- app.PrintDebug("Don't Fill purchases for non-Root collected Toy",app:SearchLink(group))
-			return
+		if group ~= FillData.Root then
+			-- Certain Collected Types which are NOT the Root of the Fill should not be filled
+			if SkipPurchases.LearnedTypes[group.__type] and app.IsComplete(group) then
+				-- app.PrintDebug("Don't Fill purchases for non-Root collected Toy",app:SearchLink(group))
+				return
+			end
+
+			-- don't fill Costs if they're owned and not the root of the Fill
+			if group.isOwnedCost then return end
 		end
 
 		local collectibles = group.costCollectibles;

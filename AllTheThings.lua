@@ -1351,10 +1351,9 @@ local function PrePopulateAchievementSymlinks()
 		end
 		app.FillRunner.SetPerFrame(25)
 	end
-	app.RemoveEventHandler(PrePopulateAchievementSymlinks)
 	-- app.PrintDebug("Done:FillAchSym")
 end
-app.AddEventHandler("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)
+app.AddEventHandlerOnce("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)
 
 app.AddEventHandler("OnReady", function()
 	-- warning about debug logging in case it sneaks in we can realize quicker

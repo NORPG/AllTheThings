@@ -7,13 +7,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		pvp(n(PVP, {
 			n(QUESTS, {
 				q(93171, {	-- Calling All Combatants!
-					["provider"] = { "i", 257194 },	-- Artisan's Consortium Flyer
+					["qs"] = 257194,	-- Artisan's Consortium Flyer (QS!)
 					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-					["groups"] = {
-						i(256608, {	-- Galactic Gladiator's Heraldry x9
-							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-						}),
-					},
+				}),
+				q(96801, {	-- Calling All Combatants!
+					["qs"] = 275634,	-- Artisan's Consortium Flyer  (QS!)
+					["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 				}),
 				q(93899),	-- Slayer's Rise (TODO: Picked up from adventure journal, diidn't find proper source for it)
 			}),
