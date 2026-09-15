@@ -1372,15 +1372,5 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(263009),	-- Valeera's Wicked Knife
 			}),
 		})),
-
-		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
-			n(SETS, {
-				------ Azshara's Darkscale Set ------
-				q(95545),	-- Ensemble: Azshara's Darkscale Raiment
-				------ Azshara's Deepscale Set ------
-				q(95546),	-- Ensemble: Azshara's Deepscale Raiment
-			}),
-		})),
 	}),
 }));
