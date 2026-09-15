@@ -795,7 +795,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14127),	-- Ritual Shroud
 		i(14133),	-- Ritual Tunic
 		i(1716),	-- Robe of the Magi
-		i(940),		-- Robes of Insight
+		i(940),	-- Robes of Insight
 		i(9912),	-- Royal Amice
 		i(9909),	-- Royal Bands
 		i(9905),	-- Royal Blouse
@@ -991,7 +991,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(6553),	-- Bard's Trousers
 		i(6552),	-- Bard's Tunic
 		i(1718),	-- Basilisk Hide Pants
-		i(720),		-- Brawler Gloves
+		i(720),	-- Brawler Gloves
 		i(14573),	-- Bristlebark Amice
 		i(14567),	-- Bristlebark Belt
 		i(14569),	-- Bristlebark Bindings
@@ -1090,7 +1090,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15151),	-- Ghostwalker Legguards
 		i(15150),	-- Ghostwalker Pads
 		i(15144),	-- Ghostwalker Rags
-		i(867),		-- Gloves of Holy Might
+		i(867),	-- Gloves of Holy Might
 		i(6421),	-- Glyphed Belt
 		i(6420),	-- Glyphed Boots
 		i(4059),	-- Glyphed Bracers
@@ -2476,7 +2476,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	category(227, {	-- Weapons
 		filter(ONE_HANDED_AXES, {
 			i(13014),	-- Axe of Rin'ji
-			i(811),		-- Axe of the Deep Woods
+			i(811),	-- Axe of the Deep Woods
 			i(2878),	-- Bearded Boneaxe
 			i(15237),	-- Corpse Harvester
 			i(15235),	-- Crescent Edge
@@ -2485,9 +2485,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2073),	-- Dwarven Hatchet
 			i(1994),	-- Ebonclaw Reaver
 			i(15239),	-- Felstone Reaver
-			i(871),		-- Flurry Axe
-			i(790),		-- Forester's Axe
-			i(863),		-- Gloom Reaper
+			i(871),	-- Flurry Axe
+			i(790),	-- Forester's Axe
+			i(863),	-- Gloom Reaper
 			-- #if BEFORE DF
 			i(1819),	-- Gouging Pick
 			-- #endif
@@ -2498,7 +2498,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2080),	-- Hillborne Axe
 			i(13818),	-- Jagged Axe
 			i(3785),	-- Keen Axe
-			i(768),		-- Lumberjack Axe
+			i(768),	-- Lumberjack Axe
 			i(1827),	-- Meat Cleaver
 			i(15236),	-- Moon Cleaver
 			i(12990),	-- Razor's Edge
@@ -2508,7 +2508,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4561),	-- Scalping Tomahawk
 			i(13015),	-- Serathil
 			i(15231),	-- Splitting Hatchet
-			i(934),		-- Stalvan's Reaper
+			i(934),	-- Stalvan's Reaper
 			i(1816),	-- Unbalanced Axe
 			i(15238),	-- Warlord's Axe
 			i(1516),	-- Worn Hatchet
@@ -2526,7 +2526,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(1512),	-- Crude Battle Axe
 			i(15273),	-- Death Striker
 			i(13018),	-- Executioner's Cleaver
-			i(870),		-- Fiery War Axe
+			i(870),	-- Fiery War Axe
 			i(15270),	-- Gigantic War Axe
 			i(1639),	-- Grinning Axe
 			i(3779),	-- Hefty War Axe
@@ -2547,7 +2547,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(3189),	-- Wood Chopper
 		}),
 		filter(ONE_HANDED_MACES, {
-			i(868),		-- Ardent Custodian
+			i(868),	-- Ardent Custodian
 			i(15222),	-- Barbed Club
 			i(15224),	-- Battlesmasher
 			i(13024),	-- Beazel's Basher
@@ -2563,10 +2563,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(13025),	-- Deadwood Sledge
 			i(15227),	-- Diamond-Tip Bludgeon
 			i(2194),	-- Diamond Hammer
-			i(766),		-- Flanged Mace
+			i(766),	-- Flanged Mace
 			i(15226),	-- Giant Club
 			i(8194),	-- Goblin Nutcracker
-			i(810),		-- Hammer of the Northern Wind
+			i(810),	-- Hammer of the Northern Wind
 			i(2243),	-- Hand of Edward the Odd
 			i(13026),	-- Heaven's Light
 			i(1510),	-- Heavy Hammer
@@ -2575,10 +2575,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(15223),	-- Jagged Star
 			i(11411),	-- Large Bear Bone
-			i(865),		-- Leaden Mace
+			i(865),	-- Leaden Mace
 			i(13048),	-- Looming Gavel
 			i(13006),	-- Mass of McGowan
-			i(936),		-- Midnight Mace
+			i(936),	-- Midnight Mace
 			i(4090),	-- Mug O' Hurt
 			i(1207),	-- Murphstar
 			i(1815),	-- Ornamental Mace
@@ -2592,7 +2592,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15228),	-- Smashing Star
 			i(4569),	-- Staunch Hammer
 			i(3787),	-- Stone Club
-			i(789),		-- Stout Battlehammer
+			i(789),	-- Stout Battlehammer
 			i(1721),	-- Viking Warhammer
 		}),
 		filter(TWO_HANDED_MACES, {
@@ -2631,11 +2631,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		filter(ONE_HANDED_SWORDS, {
 			i(13036),	-- Assassination Blade
 			i(15220),	-- Battlefell Sabre
-			i(809),		-- Bloodrazor
+			i(809),	-- Bloodrazor
 			i(9719),	-- Broken Blade of Heroes
 			i(1511),	-- Commoner's Sword
 			i(15218),	-- Crystal Sword
-			i(869),		-- Dazzling Longsword
+			i(869),	-- Dazzling Longsword
 			i(3740),	-- Decapitating Sword
 			i(15219),	-- Dimensional Blade
 			i(8196),	-- Ebon Scimitar
@@ -2647,15 +2647,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(8190),	-- Hanzo Sword
 			i(15221),	-- Holy War Sword
 			i(12976),	-- Ironpatch Blade
-			i(864),		-- Knightly Longsword
+			i(864),	-- Knightly Longsword
 			i(2244),	-- Krol Blade
 			i(3783),	-- Light Scimitar
 			i(15213),	-- Mercenary Blade
 			i(15211),	-- Militant Shortsword
-			i(935),		-- Night Watch Shortsword
+			i(935),	-- Night Watch Shortsword
 			i(15214),	-- Nobles Brand
 			i(2078),	-- Northern Shortsword
-			i(727),		-- Notched Shortsword
+			i(727),	-- Notched Shortsword
 			i(15210),	-- Raider Shortsword
 			i(9718, {	-- Reforged Blade of Heroes
 				["cost"] = {
@@ -2671,7 +2671,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(13035),	-- Serpent Slicer
 			i(4017),	-- Sharp Shortsword
 			i(1829),	-- Short Cutlass
-			i(754),		-- Shortsword of Vengeance
+			i(754),	-- Shortsword of Vengeance
 			i(13034),	-- Speedsteel Rapier
 			i(1817),	-- Stock Shortsword
 			i(13032),	-- Sword of Corruption
@@ -2703,7 +2703,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15254),	-- Dark Espadon
 			i(13049),	-- Deanship Claymore
 			i(13044),	-- Demonslayer
-			i(647),		-- Destiny
+			i(647),	-- Destiny
 			i(15258),	-- Divine Warblade
 			i(13053),	-- Doombringer
 			i(3196),	-- Edged Bastard Sword
@@ -2856,34 +2856,34 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		filter(STAVES, {
 			i(3185),	-- Acrobatic Staff
-			i(937),		-- Black Duskwood Staff
+			i(937),	-- Black Duskwood Staff
 			i(1822),	-- Cedar Walking Stick
 			i(1813),	-- Chipped Quarterstaff
 			i(15274),	-- Diviner Long Staff
 			i(2072),	-- Dwarven Magestaff
-			i(944),		-- Elemental Mage Staff
-			i(812),		-- Glowing Brightwood Staff
-			i(791),		-- Gnarled Ash Staff
+			i(944),	-- Elemental Mage Staff
+			i(812),	-- Glowing Brightwood Staff
+			i(791),	-- Gnarled Ash Staff
 			i(4024),	-- Heavy War Staff
-			i(767),		-- Long Bo Staff
+			i(767),	-- Long Bo Staff
 			i(2077),	-- Magician Staff
 			i(15276),	-- Magus Long Staff
 			i(4575),	-- Medicine Staff
 			i(3784),	-- Metal Stave
-			i(866),		-- Monk's Staff
+			i(866),	-- Monk's Staff
 			i(1831),	-- Oaken War Staff
 			i(1515),	-- Rough Wooden Staff
 			i(15278),	-- Solstice Staff
 			i(1607),	-- Soulkeeper
 			i(1613),	-- Spiritchaser Staff
 			i(13000),	-- Staff of Hale Magefire
-			i(873),		-- Staff of Jordan
+			i(873),	-- Staff of Jordan
 			i(13823),	-- Stout War Staff
 			i(4566),	-- Sturdy Quarterstaff
 			i(1720),	-- Tanglewood Staff
 			i(15275),	-- Thaumaturgist Staff
-			i(890),		-- Twisted Chanter's Staff
-			i(943),		-- Warden Staff
+			i(890),	-- Twisted Chanter's Staff
+			i(943),	-- Warden Staff
 			i(1411),	-- Withered Staff
 		}),
 		filter(WANDS, {
@@ -3233,7 +3233,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7552),	-- Falcon's Hook
 		i(12010),	-- Fen Ring
 		i(12011),	-- Forest Hoop
-		i(942),		-- Freezing Band
+		i(942),	-- Freezing Band
 		i(12005),	-- Granite Ring
 		i(11997),	-- Greenstone Circle
 		i(5001),	-- Heart Ring
@@ -3289,7 +3289,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	filter(TRINKET_F, {
 		i(1713),	-- Ankh of Life
 		i(2802),	-- Blazing Emblem
-		i(833),		-- Lifestone
+		i(833),	-- Lifestone
 		i(7734),	-- Six Demon Bag
 		i(14557, {	-- The Lion Horn of Stormwind
 			-- #if WOD
@@ -3301,7 +3301,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	}),
 	filter(BAGS, {
 		i(5765),	-- Black Silk Pack
-		i(856),		-- Blue Leather Bag
+		i(856),	-- Blue Leather Bag
 		i(4498),	-- Brown Leather Satchel
 		i(5573),	-- Green Leather Bag
 		i(3914),	-- Journeyman's Backpack
@@ -3930,7 +3930,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		cl(DRUID, {
 			{
-				["itemID"] = 17682,		-- Book: Gift of the Wild
+				["itemID"] = 17682,	-- Book: Gift of the Wild
 				["spellID"] = 21849,	-- Gift of the Wild
 				["rank"] = 1,
 				-- #if AFTER CATA
@@ -3938,7 +3938,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			{
-				["itemID"] = 17683,		-- Book: Gift of the Wild II
+				["itemID"] = 17683,	-- Book: Gift of the Wild II
 				["spellID"] = 21850,	-- Gift of the Wild II
 				["rank"] = 2,
 				-- #if AFTER CATA
@@ -3948,7 +3948,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		cl(MAGE, {
 			{
-				["itemID"] = 18600,		-- Tome of Arcane Brilliance
+				["itemID"] = 18600,	-- Tome of Arcane Brilliance
 				["spellID"] = 23028,	-- Arcane Brilliance
 				["rank"] = 1,
 				-- #if AFTER CATA
@@ -3956,7 +3956,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
-				["itemID"] = 22890,		-- Tome of Frost Ward V [Phase 6]
+				["itemID"] = 22890,	-- Tome of Frost Ward V [Phase 6]
 				["spellID"] = 28609,	-- Frost Ward V
 				["rank"] = 5,
 				-- #if AFTER CATA
@@ -3966,7 +3966,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		cl(PRIEST, {
 			{
-				["itemID"] = 17413,		-- Codex: Prayer of Fortitude
+				["itemID"] = 17413,	-- Codex: Prayer of Fortitude
 				["spellID"] = 21562,	-- Prayer of Fortitude
 				["rank"] = 1,
 				-- #if AFTER CATA
@@ -3974,7 +3974,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			{
-				["itemID"] = 17414,		-- Codex: Prayer of Fortitude II
+				["itemID"] = 17414,	-- Codex: Prayer of Fortitude II
 				["spellID"] = 21564,	-- Prayer of Fortitude II
 				["rank"] = 2,
 				-- #if AFTER CATA
@@ -3982,7 +3982,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			applyclassicphase(PHASE_FIVE_RECIPES, {
-				["itemID"] = 22393,		-- Codex: Prayer of Shadow Protection [Phase 5]
+				["itemID"] = 22393,	-- Codex: Prayer of Shadow Protection [Phase 5]
 				["spellID"] = 27683,	-- Prayer of Shadow Protection
 				["rank"] = 1,
 				-- #if AFTER CATA
@@ -3992,7 +3992,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		cl(WARLOCK, {
 			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
-				["itemID"] = 22891,		-- Grimoire of Shadow Ward IV [Phase 6]
+				["itemID"] = 22891,	-- Grimoire of Shadow Ward IV [Phase 6]
 				["spellID"] = 28610,	-- Shadow Ward IV
 				["rank"] = 4,
 				-- #if AFTER CATA

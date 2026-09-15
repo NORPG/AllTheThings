@@ -544,9 +544,9 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			["sym"] = {
 				{"select","instanceID",754},{"pop"},	-- Naxx
 				-- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
-				{"where","difficultyID",3},		-- 10 Difficulty
+				{"where","difficultyID",3},	-- 10 Difficulty
 				-- #endif
-				{"extract","encounterID"},		-- Extract Encounters
+				{"extract","encounterID"},	-- Extract Encounters
 				{"not","encounterID",
 					1612,	-- Not Gluth
 					1614,	-- Not Sapphiron
@@ -1262,9 +1262,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 				["sym"] = {
 					{"select","instanceID",754},{"pop"},	-- Naxx
 					-- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
-					{"where","difficultyID",4},		-- 25 Difficulty
+					{"where","difficultyID",4},	-- 25 Difficulty
 					-- #endif
-					{"extract","encounterID"},		-- Extract Encounters
+					{"extract","encounterID"},	-- Extract Encounters
 					{"not","encounterID",
 						1612,	-- Not Gluth
 						1614,	-- Not Sapphiron
@@ -1670,10 +1670,10 @@ inst(754, {	-- Naxxramas
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 									["cost"] = {
 										{ "i", 206374, 20 },	-- 20x Invader's Scourgestone
-										{ "i", 206375, 5 },		-- 5x Corruptor's Scourgestone
-										{ "i", 20520, 3 },		-- 3x Dark Rune
-										{ "i", 33042, 1 },		-- 1x Black Coffee
-										{ "i", 13180, 2 },		-- 2x Stratholme Holy Water
+										{ "i", 206375, 5 },	-- 5x Corruptor's Scourgestone
+										{ "i", 20520, 3 },	-- 3x Dark Rune
+										{ "i", 33042, 1 },	-- 1x Black Coffee
+										{ "i", 13180, 2 },	-- 2x Stratholme Holy Water
 									},
 									["groups"] = {
 										i(206615),	-- Desecrated Cloth Bracers
@@ -2077,57 +2077,57 @@ inst(754, {	-- Naxxramas
 						cl(DRUID, {
 							i(22490, {	-- Dreamwalker Headpiece
 								["cost"] = {
-									{ "i", 206620, 1 },		-- 1x Desecrated Leather Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206620, 1 },	-- 1x Desecrated Leather Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22491, {	-- Dreamwalker Spaulders
 								["cost"] = {
-									{ "i", 206621, 1 },		-- 1x Desecrated Leather Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206621, 1 },	-- 1x Desecrated Leather Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22488, {	-- Dreamwalker Tunic
 								["cost"] = {
-									{ "i", 206622, 1 },		-- 1x Desecrated Leather Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206622, 1 },	-- 1x Desecrated Leather Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22495, {	-- Dreamwalker Wristguards
 								["cost"] = {
-									{ "i", 206623, 1 },		-- 1x Desecrated Leather Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206623, 1 },	-- 1x Desecrated Leather Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22493, {	-- Dreamwalker Handguards
 								["cost"] = {
-									{ "i", 206624, 1 },		-- 1x Desecrated Leather Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206624, 1 },	-- 1x Desecrated Leather Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22494, {	-- Dreamwalker Girdle
 								["cost"] = {
-									{ "i", 206625, 1 },		-- 1x Desecrated Leather Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206625, 1 },	-- 1x Desecrated Leather Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22489, {	-- Dreamwalker Legguards
 								["cost"] = {
-									{ "i", 206626, 1 },		-- 1x Desecrated Leather Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206626, 1 },	-- 1x Desecrated Leather Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22492, {	-- Dreamwalker Boots
 								["cost"] = {
-									{ "i", 206627, 1 },		-- 1x Desecrated Leather Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206627, 1 },	-- 1x Desecrated Leather Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
@@ -2135,57 +2135,57 @@ inst(754, {	-- Naxxramas
 						cl(MAGE, {
 							i(22498, {	-- Frostfire Circlet
 								["cost"] = {
-									{ "i", 206612, 1 },		-- 1x Desecrated Cloth Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206612, 1 },	-- 1x Desecrated Cloth Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22499, {	-- Frostfire Shoulderpads
 								["cost"] = {
-									{ "i", 206613, 1 },		-- 1x Desecrated Cloth Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206613, 1 },	-- 1x Desecrated Cloth Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22496, {	-- Frostfire Robe
 								["cost"] = {
-									{ "i", 206614, 1 },		-- 1x Desecrated Cloth Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206614, 1 },	-- 1x Desecrated Cloth Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22503, {	-- Frostfire Bindings
 								["cost"] = {
-									{ "i", 206615, 1 },		-- 1x Desecrated Cloth Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206615, 1 },	-- 1x Desecrated Cloth Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22501, {	-- Frostfire Gloves
 								["cost"] = {
-									{ "i", 206616, 1 },		-- 1x Desecrated Cloth Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206616, 1 },	-- 1x Desecrated Cloth Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22502, {	-- Frostfire Belt
 								["cost"] = {
-									{ "i", 206617, 1 },		-- 1x Desecrated Cloth Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206617, 1 },	-- 1x Desecrated Cloth Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22497, {	-- Frostfire Leggings
 								["cost"] = {
-									{ "i", 206618, 1 },		-- 1x Desecrated Cloth Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206618, 1 },	-- 1x Desecrated Cloth Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22500, {	-- Frostfire Sandals
 								["cost"] = {
-									{ "i", 206619, 1 },		-- 1x Desecrated Cloth Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206619, 1 },	-- 1x Desecrated Cloth Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
@@ -2193,57 +2193,57 @@ inst(754, {	-- Naxxramas
 						cl(HUNTER, {
 							i(22438, {	-- Cryptstalker Headpiece
 								["cost"] = {
-									{ "i", 206628, 1 },		-- 1x Desecrated Mail Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206628, 1 },	-- 1x Desecrated Mail Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22439, {	-- Cryptstalker Spaulders
 								["cost"] = {
-									{ "i", 206629, 1 },		-- 1x Desecrated Mail Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206629, 1 },	-- 1x Desecrated Mail Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22436, {	-- Cryptstalker Tunic
 								["cost"] = {
-									{ "i", 206630, 1 },		-- 1x Desecrated Mail Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206630, 1 },	-- 1x Desecrated Mail Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22443, {	-- Cryptstalker Wristguards
 								["cost"] = {
-									{ "i", 206631, 1 },		-- 1x Desecrated Mail Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206631, 1 },	-- 1x Desecrated Mail Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22441, {	-- Cryptstalker Handguards
 								["cost"] = {
-									{ "i", 206632, 1 },		-- 1x Desecrated Mail Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206632, 1 },	-- 1x Desecrated Mail Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22442, {	-- Cryptstalker Girdle
 								["cost"] = {
-									{ "i", 206633, 1 },		-- 1x Desecrated Mail Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206633, 1 },	-- 1x Desecrated Mail Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22437, {	-- Cryptstalker Legguards
 								["cost"] = {
-									{ "i", 206634, 1 },		-- 1x Desecrated Mail Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206634, 1 },	-- 1x Desecrated Mail Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22440, {	-- Cryptstalker Boots
 								["cost"] = {
-									{ "i", 206635, 1 },		-- 1x Desecrated Mail Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206635, 1 },	-- 1x Desecrated Mail Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
@@ -2251,57 +2251,57 @@ inst(754, {	-- Naxxramas
 						cl(PALADIN, {
 							i(22428, {	-- Redemption Headpiece
 								["cost"] = {
-									{ "i", 206636, 1 },		-- 1x Desecrated Plate Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206636, 1 },	-- 1x Desecrated Plate Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22429, {	-- Redemption Spaulders
 								["cost"] = {
-									{ "i", 206637, 1 },		-- 1x Desecrated Plate Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206637, 1 },	-- 1x Desecrated Plate Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22425, {	-- Redemption Tunic
 								["cost"] = {
-									{ "i", 206639, 1 },		-- 1x Desecrated Plate Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206639, 1 },	-- 1x Desecrated Plate Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22424, {	-- Redemption Wristguards
 								["cost"] = {
-									{ "i", 206640, 1 },		-- 1x Desecrated Plate Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206640, 1 },	-- 1x Desecrated Plate Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22426, {	-- Redemption Handguards
 								["cost"] = {
-									{ "i", 206641, 1 },		-- 1x Desecrated Plate Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206641, 1 },	-- 1x Desecrated Plate Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22431, {	-- Redemption Girdle
 								["cost"] = {
-									{ "i", 206642, 1 },		-- 1x Desecrated Plate Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206642, 1 },	-- 1x Desecrated Plate Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22427, {	-- Redemption Legguards
 								["cost"] = {
-									{ "i", 206643, 1 },		-- 1x Desecrated Plate Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206643, 1 },	-- 1x Desecrated Plate Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22430, {	-- Redemption Boots
 								["cost"] = {
-									{ "i", 206644, 1 },		-- 1x Desecrated Plate Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206644, 1 },	-- 1x Desecrated Plate Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
@@ -2309,57 +2309,57 @@ inst(754, {	-- Naxxramas
 						cl(PRIEST, {
 							i(22514, {	-- Circlet of Faith
 								["cost"] = {
-									{ "i", 206612, 1 },		-- 1x Desecrated Cloth Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206612, 1 },	-- 1x Desecrated Cloth Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22515, {	-- Shoulderpads of Faith
 								["cost"] = {
-									{ "i", 206613, 1 },		-- 1x Desecrated Cloth Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206613, 1 },	-- 1x Desecrated Cloth Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22512, {	-- Robe of Faith
 								["cost"] = {
-									{ "i", 206614, 1 },		-- 1x Desecrated Cloth Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206614, 1 },	-- 1x Desecrated Cloth Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22519, {	-- Bindings of Faith
 								["cost"] = {
-									{ "i", 206615, 1 },		-- 1x Desecrated Cloth Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206615, 1 },	-- 1x Desecrated Cloth Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22517, {	-- Gloves of Faith
 								["cost"] = {
-									{ "i", 206616, 1 },		-- 1x Desecrated Cloth Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206616, 1 },	-- 1x Desecrated Cloth Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22518, {	-- Belt of Faith
 								["cost"] = {
-									{ "i", 206617, 1 },		-- 1x Desecrated Cloth Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206617, 1 },	-- 1x Desecrated Cloth Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22513, {	-- Leggings of Faith
 								["cost"] = {
-									{ "i", 206618, 1 },		-- 1x Desecrated Cloth Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206618, 1 },	-- 1x Desecrated Cloth Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22516, {	-- Sandals of Faith
 								["cost"] = {
-									{ "i", 206619, 1 },		-- 1x Desecrated Cloth Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206619, 1 },	-- 1x Desecrated Cloth Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
@@ -2367,57 +2367,57 @@ inst(754, {	-- Naxxramas
 						cl(ROGUE, {
 							i(22478, {	-- Bonescythe Helmet
 								["cost"] = {
-									{ "i", 206620, 1 },		-- 1x Desecrated Leather Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206620, 1 },	-- 1x Desecrated Leather Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22479, {	-- Bonescythe Pauldrons
 								["cost"] = {
-									{ "i", 206621, 1 },		-- 1x Desecrated Leather Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206621, 1 },	-- 1x Desecrated Leather Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22476, {	-- Bonescythe Breastplate
 								["cost"] = {
-									{ "i", 206622, 1 },		-- 1x Desecrated Leather Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206622, 1 },	-- 1x Desecrated Leather Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22483, {	-- Bonescythe Bracers
 								["cost"] = {
-									{ "i", 206623, 1 },		-- 1x Desecrated Leather Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206623, 1 },	-- 1x Desecrated Leather Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22481, {	-- Bonescythe Gauntlets
 								["cost"] = {
-									{ "i", 206624, 1 },		-- 1x Desecrated Leather Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206624, 1 },	-- 1x Desecrated Leather Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22482, {	-- Bonescythe Waistguard
 								["cost"] = {
-									{ "i", 206625, 1 },		-- 1x Desecrated Leather Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206625, 1 },	-- 1x Desecrated Leather Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22477, {	-- Bonescythe Legplates
 								["cost"] = {
-									{ "i", 206626, 1 },		-- 1x Desecrated Leather Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206626, 1 },	-- 1x Desecrated Leather Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22480, {	-- Bonescythe Sabatons
 								["cost"] = {
-									{ "i", 206627, 1 },		-- 1x Desecrated Leather Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206627, 1 },	-- 1x Desecrated Leather Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
@@ -2425,57 +2425,57 @@ inst(754, {	-- Naxxramas
 						cl(SHAMAN, {
 							i(22466, {	-- Earthshatter Headpiece
 								["cost"] = {
-									{ "i", 206628, 1 },		-- 1x Desecrated Mail Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206628, 1 },	-- 1x Desecrated Mail Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22467, {	-- Earthshatter Spaulders
 								["cost"] = {
-									{ "i", 206629, 1 },		-- 1x Desecrated Mail Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206629, 1 },	-- 1x Desecrated Mail Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22464, {	-- Earthshatter Tunic
 								["cost"] = {
-									{ "i", 206630, 1 },		-- 1x Desecrated Mail Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206630, 1 },	-- 1x Desecrated Mail Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22471, {	-- Earthshatter Wristguards
 								["cost"] = {
-									{ "i", 206631, 1 },		-- 1x Desecrated Mail Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206631, 1 },	-- 1x Desecrated Mail Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22469, {	-- Earthshatter Handguards
 								["cost"] = {
-									{ "i", 206632, 1 },		-- 1x Desecrated Mail Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206632, 1 },	-- 1x Desecrated Mail Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22470, {	-- Earthshatter Girdle
 								["cost"] = {
-									{ "i", 206633, 1 },		-- 1x Desecrated Mail Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206633, 1 },	-- 1x Desecrated Mail Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22465, {	-- Earthshatter Legguards
 								["cost"] = {
-									{ "i", 206634, 1 },		-- 1x Desecrated Mail Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206634, 1 },	-- 1x Desecrated Mail Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22468, {	-- Earthshatter Boots
 								["cost"] = {
-									{ "i", 206635, 1 },		-- 1x Desecrated Mail Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206635, 1 },	-- 1x Desecrated Mail Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
@@ -2483,57 +2483,57 @@ inst(754, {	-- Naxxramas
 						cl(WARLOCK, {
 							i(22506, {	-- Plagueheart Circlet
 								["cost"] = {
-									{ "i", 206612, 1 },		-- 1x Desecrated Cloth Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206612, 1 },	-- 1x Desecrated Cloth Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22507, {	-- Plagueheart Shoulderpads
 								["cost"] = {
-									{ "i", 206613, 1 },		-- 1x Desecrated Cloth Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206613, 1 },	-- 1x Desecrated Cloth Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22504, {	-- Plagueheart Robe
 								["cost"] = {
-									{ "i", 206614, 1 },		-- 1x Desecrated Cloth Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206614, 1 },	-- 1x Desecrated Cloth Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22511, {	-- Plagueheart Bindings
 								["cost"] = {
-									{ "i", 206615, 1 },		-- 1x Desecrated Cloth Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206615, 1 },	-- 1x Desecrated Cloth Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22509, {	-- Plagueheart Gloves
 								["cost"] = {
-									{ "i", 206616, 1 },		-- 1x Desecrated Cloth Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206616, 1 },	-- 1x Desecrated Cloth Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22510, {	-- Plagueheart Belt
 								["cost"] = {
-									{ "i", 206617, 1 },		-- 1x Desecrated Cloth Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206617, 1 },	-- 1x Desecrated Cloth Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22505, {	-- Plagueheart Leggings
 								["cost"] = {
-									{ "i", 206618, 1 },		-- 1x Desecrated Cloth Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206618, 1 },	-- 1x Desecrated Cloth Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22508, {	-- Plagueheart Sandals
 								["cost"] = {
-									{ "i", 206619, 1 },		-- 1x Desecrated Cloth Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206619, 1 },	-- 1x Desecrated Cloth Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
@@ -2541,57 +2541,57 @@ inst(754, {	-- Naxxramas
 						cl(WARRIOR, {
 							i(22418, {	-- Dreadnaught Helmet
 								["cost"] = {
-									{ "i", 206636, 1 },		-- 1x Desecrated Plate Helmet
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206636, 1 },	-- 1x Desecrated Plate Helmet
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22419, {	-- Dreadnaught Pauldrons
 								["cost"] = {
-									{ "i", 206637, 1 },		-- 1x Desecrated Plate Spaulders
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206637, 1 },	-- 1x Desecrated Plate Spaulders
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22416, {	-- Dreadnaught Breastplate
 								["cost"] = {
-									{ "i", 206639, 1 },		-- 1x Desecrated Plate Chestpiece
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206639, 1 },	-- 1x Desecrated Plate Chestpiece
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22423, {	-- Dreadnaught Bracers
 								["cost"] = {
-									{ "i", 206640, 1 },		-- 1x Desecrated Plate Bracers
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206640, 1 },	-- 1x Desecrated Plate Bracers
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22421, {	-- Dreadnaught Gauntlets
 								["cost"] = {
-									{ "i", 206641, 1 },		-- 1x Desecrated Plate Gauntlets
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206641, 1 },	-- 1x Desecrated Plate Gauntlets
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22422, {	-- Dreadnaught Waistguard
 								["cost"] = {
-									{ "i", 206642, 1 },		-- 1x Desecrated Plate Belt
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206642, 1 },	-- 1x Desecrated Plate Belt
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22417, {	-- Dreadnaught Legplates
 								["cost"] = {
-									{ "i", 206643, 1 },		-- 1x Desecrated Plate Leggings
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206643, 1 },	-- 1x Desecrated Plate Leggings
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22420, {	-- Dreadnaught Sabatons
 								["cost"] = {
-									{ "i", 206644, 1 },		-- 1x Desecrated Plate Boots
-									{ "i", 12811, 10 },		-- 10x Righteous Orb
+									{ "i", 206644, 1 },	-- 1x Desecrated Plate Boots
+									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),

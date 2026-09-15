@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(55250, {	-- A Growing Appetite
 				["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
-				["provider"] = { "n", 151286 },		-- Child of Torcali
+				["provider"] = { "n", 151286 },	-- Child of Torcali
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					47204,	-- The New Frontline
 					47205,	-- Warmother
 				},
-				["provider"] = { "n", 121601 },		-- Rokhan
+				["provider"] = { "n", 121601 },	-- Rokhan
 				["coord"] = { 56.9, 19.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1523,7 +1523,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47204, {	-- The New Frontline
 				["sourceQuests"] = { 47201 },	-- Rokhan
-				["provider"] = { "n", 121601 },		-- Rokhan
+				["provider"] = { "n", 121601 },	-- Rokhan
 				["coord"] = { 56.9, 19.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1666,7 +1666,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47198, {	-- They Want Us Alive
 				["sourceQuests"] = { 47199 },	-- The Blood Gate
-				["provider"] = { "n", 121599 },		-- King Rastakhan
+				["provider"] = { "n", 121599 },	-- King Rastakhan
 				["coord"] = { 60.39, 22.03, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -1685,7 +1685,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47200, {	-- Ticks
 				["sourceQuests"] = { 47199 },	-- The Blood Gate
-				["provider"] = { "n", 121599 },		-- King Rastakhan
+				["provider"] = { "n", 121599 },	-- King Rastakhan
 				["coord"] = { 60.39, 22.03, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1765,7 +1765,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47205, {	-- Warmother
 				["sourceQuests"] = { 47201 },	-- Rokhan
-				["provider"] = { "n", 121601 },		-- Rokhan
+				["provider"] = { "n", 121601 },	-- Rokhan
 				["coord"] = { 56.9, 19.10, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -2074,7 +2074,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					50702,	-- Defeat Jakra'zet
 					49426,	-- The King's Gambit
 				},
-				["provider"] = { "n", 135890 },		-- King Rastakhan
+				["provider"] = { "n", 135890 },	-- King Rastakhan
 				["coord"] = { 60.0, 22.2, ZULDAZAR },
 				["maps"] = { 1181 },	-- Zandalar Scenario
 				["races"] = HORDE_ONLY,

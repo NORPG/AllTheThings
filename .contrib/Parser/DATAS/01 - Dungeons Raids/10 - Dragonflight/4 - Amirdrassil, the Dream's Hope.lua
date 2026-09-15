@@ -491,7 +491,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 									{ "i", 190316, 100 },	-- Awakened Earth
 									{ "i", 190321, 150 },	-- Awakened Fire
 									{ "i", 190324, 50 },	-- Awakened Order
-									{ "i", 210001, 1 },		-- Prototype Order Vellum
+									{ "i", 210001, 1 },	-- Prototype Order Vellum
 									{ "i", 200113, 200 },	-- Resonant Crystal
 								},
 							}),
@@ -511,7 +511,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							i(209998, {	-- Lydiara's Binding Rune (QI!)
 								["cost"] = {
 									{ "i", 194754, 250 },	-- Cosmic Ink
-									{ "i", 209352, 1 },		-- Prototype Binding Rune
+									{ "i", 209352, 1 },	-- Prototype Binding Rune
 									{ "i", 194862, 50 },	-- Runed Writhebark
 									{ "i", 204464, 10 },	-- Shadowflame Essence
 								},
@@ -532,7 +532,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							i(209351, {	-- Erden's Dreamleaf Grip (QI!)
 								["cost"] = {
 									{ "i", 208212, 5 },	-- Dreaming Essence
-									{ "i", 193229, 50 },		-- Mireslush Hide
+									{ "i", 193229, 50 },	-- Mireslush Hide
 									{ "i", 205413, 3 },	-- Obsidian Cobraskin
 									{ "i", 210009, 1 },	-- Prototype Dreamleaf Grip
 									{ "i", 204460, 400 },	-- Zaralek Glowspores
@@ -577,8 +577,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["provider"] = { "n", 194842 },	-- Erden
 						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
 						["cost"] = {
-							{ "i", 190329, 5 },		-- Awakened Frost
-							{ "i", 208212, 1 },		-- Dreaming Essence
+							{ "i", 190329, 5 },	-- Awakened Frost
+							{ "i", 208212, 1 },	-- Dreaming Essence
 							{ "i", 204460, 100 },	-- Zaralek Glowspores
 						},
 						["isDaily"] = true,

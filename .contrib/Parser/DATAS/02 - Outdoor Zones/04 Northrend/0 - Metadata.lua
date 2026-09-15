@@ -74,9 +74,9 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						["crs"] = {
-							31889,		-- Grizzly Squirrel
+							31889,	-- Grizzly Squirrel
 							-- #if AFTER CATA
-							62818,		-- Grizzly Squirrel
+							62818,	-- Grizzly Squirrel
 							-- #endif
 						},
 					}),
@@ -89,9 +89,9 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						["providers"] = {
-							{ "n", 31889 },		-- Grizzly Squirrel
+							{ "n", 31889 },	-- Grizzly Squirrel
 							-- #if AFTER CATA
-							{ "n", 62818 },		-- Grizzly Squirrel
+							{ "n", 62818 },	-- Grizzly Squirrel
 							-- #endif
 						},
 					}),

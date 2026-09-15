@@ -70,7 +70,7 @@ root(ROOTS.Zones, {
 				q(41703),	-- DANGER: Ormagrogg
 				q(41816),	-- DANGER: Oubdob da Smasher
 				q(41013, {	-- Darkbrul Arena
-					ach(11478),		-- The Darkbrul-oh
+					ach(11478),	-- The Darkbrul-oh
 				}),
 				q(41835),	-- Deworming
 				q(41024),	-- Dirge of the Dead

@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236849,
 		-- #if NOT ANYCLASSIC
 		["maps"] = {
-			20,		-- Keeper's Rest (part of Priest artifact questline) [CRIEVE NOTE: This shouldn't be here.]
+			20,	-- Keeper's Rest (part of Priest artifact questline) [CRIEVE NOTE: This shouldn't be here.]
 			908,	-- Ruins of Lordaeron (Battle for Lordaeron scenario) [CRIEVE NOTE: This shouldn't be here.]
 			-- #if AFTER 9.2.5
 			2070	-- Tirisfal Glades (Present)
@@ -3097,7 +3097,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
 						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						3,	-- Flesh Eater
 					},
 					["coords"] = {
 						{ 23.4, 35.4, TIRISFAL_GLADES },

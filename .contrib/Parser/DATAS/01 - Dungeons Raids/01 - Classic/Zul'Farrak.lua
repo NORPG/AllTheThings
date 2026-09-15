@@ -343,7 +343,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9480),	-- Eyegouger
 					i(9483),	-- Flaming Incinerator
 					i(5616),	-- Gutwrencher
-					i(862),		-- Runed Ring
+					i(862),	-- Runed Ring
 					i(9484),	-- Spellshock Leggings
 					i(9481),	-- The Minotaur
 					i(2040),	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)

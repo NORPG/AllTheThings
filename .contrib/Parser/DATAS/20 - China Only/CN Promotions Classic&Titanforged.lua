@@ -144,7 +144,7 @@ root(ROOTS.Promotions, {
 					["groups"] = {
 						mount(423869),	-- Avatar of Flame (MOUNT!)
 						mount(457485), 	-- Grizzly Hills Packmaster (MOUNT!)
-						i(83086),		-- Heart of the Nightwing (MOUNT!)
+						i(83086),	-- Heart of the Nightwing (MOUNT!)
 						i(262344), 		-- Scarlet Lady (MOUNT!)
 						i(269659), 		-- The Sire's Palanquin (MOUNT!)
 					},

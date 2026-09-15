@@ -7,15 +7,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
-			ach(14968),		-- Combatant I: Shadowlands Season 2
+			ach(14968),	-- Combatant I: Shadowlands Season 2
 			ach(15232, {	-- Combatant II: Shadowlands Season 2
 				["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 			}),
-			ach(14969),		-- Challenger I: Shadowlands Season 2
+			ach(14969),	-- Challenger I: Shadowlands Season 2
 			ach(15233, {	-- Challenger II: Shadowlands Season 2
 				["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 			}),
-			ach(14970),		-- Rival I: Shadowlands Season 2
+			ach(14970),	-- Rival I: Shadowlands Season 2
 			ach(15234, {	-- Rival II: Shadowlands Season 2
 				["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 			}),
@@ -29,7 +29,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			ach(14972, {	-- Gladiator: Shadowlands Season 2
 				i(186177),	-- Unchained Gladiator's Soul Eater (MOUNT!)
 			}),
-			ach(14999),		-- Unchained Gladiator's Soul Eater
+			ach(14999),	-- Unchained Gladiator's Soul Eater
 			ach(14973, {	-- Unchained Gladiator: Shadowlands Season 2
 				title(441),	-- Unchained Gladiator <Name>
 			}),

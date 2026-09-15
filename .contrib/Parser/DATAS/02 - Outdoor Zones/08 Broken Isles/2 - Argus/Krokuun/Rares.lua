@@ -12,7 +12,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 45.0, 58.8, KROKUUN },
 						["sym"] = {
-							{"select","mapID",KROKUUN},		-- get Krokuun
+							{"select","mapID",KROKUUN},	-- get Krokuun
 							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",PLATE},{"pop"},	-- get Plate
 						},
@@ -33,7 +33,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 39.2, 59.4, KROKUUN },
 						["sym"] = {
-							{"select","mapID",KROKUUN},		-- get Krokuun
+							{"select","mapID",KROKUUN},	-- get Krokuun
 							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",PLATE},{"pop"},	-- get Plate
 						},
@@ -51,7 +51,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 38.6, 39.4, 833 },	-- Nath'raxas Spire
 						["sym"] = {
-							{"select","mapID",KROKUUN},		-- get Krokuun
+							{"select","mapID",KROKUUN},	-- get Krokuun
 							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",PLATE},{"pop"},	-- get Plate
 						},
@@ -87,7 +87,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 55.4, 80.4, KROKUUN },
 						["sym"] = {
-							{"select","mapID",KROKUUN},		-- get Krokuun
+							{"select","mapID",KROKUUN},	-- get Krokuun
 							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",PLATE},{"pop"},	-- get Plate
 						},
@@ -105,7 +105,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 69.6, 56.8, KROKUUN },
 						["sym"] = {
-							{"select","mapID",KROKUUN},		-- get Krokuun
+							{"select","mapID",KROKUUN},	-- get Krokuun
 							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",PLATE},{"pop"},	-- get Plate
 						},

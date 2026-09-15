@@ -2282,7 +2282,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.1, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
 						["sym"] = {
-							{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" },		-- Deadly Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" },	-- Deadly Gladiator's Set
 							-- #if ANYCLASSIC
 							{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
 							-- #endif

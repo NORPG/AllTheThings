@@ -34,12 +34,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(247668, {["timeline"] = { ADDED_11_2_7 }}),	-- N'Zoth's Captured Eye (DECOR!)
 			},
 		})),
-		ach(13036),		-- A Loa of a Tale (automated)
+		ach(13036),	-- A Loa of a Tale (automated)
 		pvp(ach(12573, {	-- Band of Brothers
-			crit(41008),		-- Honorable Kill
-			crit(41009),		-- Loot Player Bounty
-			crit(41010),		-- Complete Rare Elite World Quest
-			crit(41011),		-- Loot War Supply Chest
+			crit(41008),	-- Honorable Kill
+			crit(41009),	-- Loot Player Bounty
+			crit(41010),	-- Complete Rare Elite World Quest
+			crit(41011),	-- Loot War Supply Chest
 		})),
 		ach(12989, {	-- Battle for Azeroth Pathfinder, Part One
 			-- Meta Achievement

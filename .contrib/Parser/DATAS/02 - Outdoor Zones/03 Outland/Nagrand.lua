@@ -1999,7 +1999,7 @@ root(ROOTS.Zones, {
 							i(29228, {	-- Dark War Talbuk (MOUNT!)
 								["cost"] = {
 									{ "i", 26045, 100 },	-- 100x Halaa Battle Token
-									{ "i", 26044, 20 },		-- 20x Halaa Research Token
+									{ "i", 26044, 20 },	-- 20x Halaa Research Token
 								},
 							}),
 							i(30569),	-- Proximo's Rudius
@@ -2060,7 +2060,7 @@ root(ROOTS.Zones, {
 							i(29228, {	-- Dark War Talbuk (MOUNT!)
 								["cost"] = {
 									{ "i", 26045, 100 },	-- 100x Halaa Battle Token
-									{ "i", 26044, 20 },		-- 20x Halaa Research Token
+									{ "i", 26044, 20 },	-- 20x Halaa Research Token
 								},
 							}),
 							i(30569),	-- Proximo's Rudius

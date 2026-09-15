@@ -5,8 +5,8 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(ACHIEVEMENTS, {
-			ach(40435),		-- Adventurer of the Isle of Dorn (automated)
-			ach(40831),		-- Explore the Isle of Dorn (automated)
+			ach(40435),	-- Adventurer of the Isle of Dorn (automated)
+			ach(40831),	-- Explore the Isle of Dorn (automated)
 			skyriding(ach(40166, {	-- Isle of Dorn Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -74,9 +74,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["timeline"] = { ADDED_11_2_7 },
 				}),
 			}),
-			ach(20118),		-- The Isle of Dorn (automated)
+			ach(20118),	-- The Isle of Dorn (automated)
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
-			ach(40434),		-- Treasures of the Isle of Dorn (automated)
+			ach(40434),	-- Treasures of the Isle of Dorn (automated)
 		}),
 	}),
 }));

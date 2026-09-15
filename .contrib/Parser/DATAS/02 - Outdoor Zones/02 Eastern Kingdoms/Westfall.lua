@@ -12,9 +12,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 		-- #if AFTER CATA
 		["maps"] = {
-			53,		-- Gold Coast Quarry
-			54,		-- Jangolode Mine
-			55,		-- The Deadmines
+			53,	-- Gold Coast Quarry
+			54,	-- Jangolode Mine
+			55,	-- The Deadmines
 		},
 		-- #endif
 		["icon"] = 236852,
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
-						i(724),		-- Goretusk Liver Pie
+						i(724),	-- Goretusk Liver Pie
 						i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
 					},
 				}),
@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								125,	-- Riverpaw Overseer
 								500,	-- Riverpaw Scout
 								1065,	-- Riverpaw Shaman
-								98,		-- Riverpaw Taskmaster
+								98,	-- Riverpaw Taskmaster
 								506,	-- Sergeant Brashclaw
 							},
 						}),
@@ -1033,7 +1033,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								589,	-- Defias Pillager
 								6180,	-- Defias Raider
 								450,	-- Defias Renegade Mage
-								95,		-- Defias Smuggler
+								95,	-- Defias Smuggler
 								504,	-- Defias Trapper
 								594,	-- Defias Henchman
 							},
@@ -2224,7 +2224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						125,	-- Riverpaw Overseer
 						500,	-- Riverpaw Scout
 						1065,	-- Riverpaw Shaman
-						98,		-- Riverpaw Taskmaster
+						98,	-- Riverpaw Taskmaster
 					},
 					["groups"] = {
 						recipe(410023),	-- Engrave Pants - Savage Roar
@@ -2361,7 +2361,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(732, {	-- Okra
 					["crs"] = {
 						573,	-- Foe Reaper 4000
-						36,		-- Harvest Golem
+						36,	-- Harvest Golem
 						115,	-- Harvest Reaper
 						114,	-- Harvest Watcher
 						480,	-- Rusty Harvest Golem

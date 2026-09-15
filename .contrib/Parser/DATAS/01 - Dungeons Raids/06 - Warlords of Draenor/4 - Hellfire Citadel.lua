@@ -878,7 +878,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "not", "itemID", 127969 },		-- don't include itself
+							{ "not", "itemID", 127969 },	-- don't include itself
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -887,7 +887,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "not", "itemID", 127970 },		-- don't include itself
+							{ "not", "itemID", 127970 },	-- don't include itself
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -896,7 +896,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "not", "itemID", 127968 },		-- don't include itself
+							{ "not", "itemID", 127968 },	-- don't include itself
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1393,7 +1393,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "not", "itemID", 127969 },		-- don't include itself
+							{ "not", "itemID", 127969 },	-- don't include itself
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1402,7 +1402,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "not", "itemID", 127970 },		-- don't include itself
+							{ "not", "itemID", 127970 },	-- don't include itself
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1411,7 +1411,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "not", "itemID", 127968 },		-- don't include itself
+							{ "not", "itemID", 127968 },	-- don't include itself
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1894,7 +1894,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					un(REMOVED_FROM_GAME, ach(10045)),	-- Cutting Edge: The Black Gate
 					un(REMOVED_FROM_GAME, ach(10380)),	-- Realm First! Archimonde
 					ach(10043, {	-- Mythic: Archimonde
-						title(319),		-- , Defiler's End
+						title(319),	-- , Defiler's End
 					}),
 					ach(10176),	-- Mythic: Archimonde Guild Run
 					ig(123890),	-- Felsteel Annihilator (MOUNT!)
@@ -1906,7 +1906,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "not", "itemID", 127969 },		-- don't include itself
+							{ "not", "itemID", 127969 },	-- don't include itself
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1915,7 +1915,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "not", "itemID", 127970 },		-- don't include itself
+							{ "not", "itemID", 127970 },	-- don't include itself
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1924,7 +1924,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							{ "select", "encounterID", 1438 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "not", "itemID", 127968 },		-- don't include itself
+							{ "not", "itemID", 127968 },	-- don't include itself
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),

@@ -5,8 +5,8 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(ACHIEVEMENTS, {
-			ach(40837),		-- Adventurer of The Ringing Deeps (automated)
-			ach(40825),		-- Explore The Ringing Deeps (automated)
+			ach(40837),	-- Adventurer of The Ringing Deeps (automated)
+			ach(40825),	-- Explore The Ringing Deeps (automated)
 			ach(40614, {	-- Gobblin' with Glublurp
 				["coord"] = { 44.4, 50.2, THE_RINGING_DEEPS },
 				["groups"] = {
@@ -18,8 +18,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				},
 			}),
-			ach(40628),		-- Notable Machines (automated)
-			ach(40473),		-- Not So Quick Fix (automated)
+			ach(40628),	-- Notable Machines (automated)
+			ach(40473),	-- Not So Quick Fix (automated)
 			ach(40731, {	-- Panhandled
 				["description"] = "Kill Overworked Cooks, click Frying Pans, quickly hit other nearby creatures.",
 				["_nocoordshift"] = true,
@@ -87,9 +87,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			skyriding(ach(40680, {	-- Skyriding Glyphs: The Waterworks
 				["coord"] = { 46.5, 51.8, THE_RINGING_DEEPS },
 			})),
-			ach(40799),		-- Sojourner of The Ringing Deeps (automated)
-			ach(40585),		-- Super Size Snuffling
-			ach(19560),		-- The Ringing Deeps (automated)
+			ach(40799),	-- Sojourner of The Ringing Deeps (automated)
+			ach(40585),	-- Super Size Snuffling
+			ach(19560),	-- The Ringing Deeps (automated)
 			skyriding(ach(40703, {	-- The Ringing Deeps Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 			}),
 			pvp(ach(40084)),	-- Tour of Duty: The Ringing Deeps
-			ach(40724),		-- Treasures of The Ringing Deeps (automated)
+			ach(40724),	-- Treasures of The Ringing Deeps (automated)
 		}),
 	}),
 }));

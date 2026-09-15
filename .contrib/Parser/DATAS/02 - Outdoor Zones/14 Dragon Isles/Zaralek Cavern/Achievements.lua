@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 75417 },	-- Symbol of Hope
 				}),
 			}),
-			ach(17766),		-- Explore Zaralek Cavern
+			ach(17766),	-- Explore Zaralek Cavern
 			header(HEADERS.Achievement, 17934, {	-- Family Battler of Zaralek Cavern
 				petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 					-- Meta Achievement
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				},
 			}),
-			ach(17781),		-- The Smell of Money
+			ach(17781),	-- The Smell of Money
 			ach(18361, {	-- To All the Squirrels Burrowed Beneath
 				crit(60010, {	-- Hissing Dustmoth
 					["crs"] = { 201124 },	-- Hissing Dustmoth
@@ -390,7 +390,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(60006,	{	-- Aimless Snail
 					["description"] =
 						-- #if AFTER 10.0.7
-						"Can also be found during the quest The Slowest Fan Club from Briggul.",	
+						"Can also be found during the quest The Slowest Fan Club from Briggul.",
 						-- #else
 						"Requires the quest The Slowest Fan Club from Briggul to be active and accepted. Hitting maximum reputation with Glimmerogg Racer means you will need party sync to get this quest to be able to see the critters.",
 						-- #endif

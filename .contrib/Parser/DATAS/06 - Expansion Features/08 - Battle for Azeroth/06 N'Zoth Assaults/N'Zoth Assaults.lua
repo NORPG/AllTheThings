@@ -376,9 +376,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["cr"] = 150829,	-- Corrupted Watcher
 					}),
 				}),
-				ach(14161),		-- Get In My Belly!	-- TODO:  update with map-specific criteria when they get added
-				ach(14158),		-- It's Not A Tumor!
-				ach(14160),		-- Rare to Well Done	-- TODO:  update criteria when they get added
+				ach(14161),	-- Get In My Belly!	-- TODO:  update with map-specific criteria when they get added
+				ach(14158),	-- It's Not A Tumor!
+				ach(14160),	-- Rare to Well Done	-- TODO:  update criteria when they get added
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168574, {	-- Petrified Living Bark (Rank 2)

@@ -318,7 +318,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 							}),
 							ach(14726),	-- It's Certainly Never Boring (automated)
-							ach(14727),		-- Master of Ceremonies
+							ach(14727),	-- Master of Ceremonies
 							ach(14679, {	-- Party Palace
 								crit(49613, {	-- Building: Dredger Pool
 									["_quests"] = { 61493 },
@@ -491,7 +491,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									title(433),	-- <Name> the Party Herald
 								},
 							}),
-							ach(14725),		-- We Happy Few
+							ach(14725),	-- We Happy Few
 						}),
 						n(FACTIONS, {
 							-- Tier 1
@@ -1274,8 +1274,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
-										{ "i", 172230, 5 },		-- 5x Soul Dust
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 172230, 5 },	-- 5x Soul Dust
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1295,7 +1295,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 171263, 10 },	-- 10x Potion of Soul Purity
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1315,8 +1315,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 173060, 20 },	-- 20x Aerated Water
-										{ "i", 171274, 1 },		-- 1x Potion of Spectral Stamina
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 171274, 1 },	-- 1x Potion of Spectral Stamina
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1325,8 +1325,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
-										{ "i", 173141, 1 },		-- 1x Masterful Laestrite Choker
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 173141, 1 },	-- 1x Masterful Laestrite Choker
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1346,7 +1346,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 173202, 10 },	-- 20x Shrouded Cloth
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1355,8 +1355,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
-										{ "i", 170554, 1 },		-- 1x Vigil's Torch
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 170554, 1 },	-- 1x Vigil's Torch
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1365,9 +1365,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
-										{ "i", 173059, 1 },		-- 1x Luminous Ink
+										{ "i", 173059, 1 },	-- 1x Luminous Ink
 										{ "i", 175886, 10 },	-- 10x Dark Parchment
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1401,8 +1401,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 173192, 10 },	-- 10x Shrouded Cloth Bandage
-										{ "i", 171267, 1 },		-- 1x Spiritual Healing Potion
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 171267, 1 },	-- 1x Spiritual Healing Potion
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1412,7 +1412,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 171301, 10 },	-- 10x Spiritual Anti-Venom
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1422,7 +1422,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 177061, 10 },	-- 10x Twilight Bark
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1431,10 +1431,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
-										{ "i", 172069, 1 },		-- 1x Banana Beef Pudding
-										{ "i", 172068, 1 },		-- 1x Pickled Meat Smoothie
-										{ "i", 172051, 1 },		-- 1x Steak a la Mode
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 172069, 1 },	-- 1x Banana Beef Pudding
+										{ "i", 172068, 1 },	-- 1x Pickled Meat Smoothie
+										{ "i", 172051, 1 },	-- 1x Steak a la Mode
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 									-- showed up after Week 4 Ember Court
@@ -1456,8 +1456,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 172089, 20 },	-- 20x Desolate Leather
-										{ "i", 171832, 1 },		-- 1x Sinvyr Ore
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 171832, 1 },	-- 1x Sinvyr Ore
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1467,7 +1467,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 171840, 60 },	-- 60x Porous Stone
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1478,7 +1478,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["cost"] = {
 										{ "i", 171840, 20 },	-- 20x Porous Stone
 										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1488,7 +1488,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 171841, 10 },	-- 10x Shaded Stone
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1497,8 +1497,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
-										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 184090, 1 },	-- 1x Potion of the Psychopomp's Speed
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1507,9 +1507,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
-										{ "i", 171266, 5 },		-- 5x Potion of the Hidden Spirit
-										{ "i", 171264, 5 },		-- 5x Potion of Shaded Sight
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 171266, 5 },	-- 5x Potion of the Hidden Spirit
+										{ "i", 171264, 5 },	-- 5x Potion of Shaded Sight
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),
@@ -1518,9 +1518,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
-										{ "i", 172903, 1 },		-- 1x Nutcracker Grenade
-										{ "i", 172904, 1 },		-- 1x Shadow Land Mine
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
+										{ "i", 172903, 1 },	-- 1x Nutcracker Grenade
+										{ "i", 172904, 1 },	-- 1x Shadow Land Mine
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
 								}),

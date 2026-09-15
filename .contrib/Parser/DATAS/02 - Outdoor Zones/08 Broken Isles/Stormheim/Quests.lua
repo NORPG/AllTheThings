@@ -100,7 +100,7 @@ root(ROOTS.Zones, {
 						39793,	-- Only the Finest
 						39787,	-- Rigging the Wager
 					},
-					["provider"] = { "n", 107675 },		-- Rax Sixtrigger
+					["provider"] = { "n", 107675 },	-- Rax Sixtrigger
 					["coord"] = { 51.3, 57.2, STORMHEIM },
 					["groups"] = { i(138020) },	-- Meaty Rack of Musken Ribs (QI!)
 				}),
@@ -109,7 +109,7 @@ root(ROOTS.Zones, {
 						39793,	-- Only the Finest
 						39787,	-- Rigging the Wager
 					},
-					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
+					["provider"] = { "n", 107674 },	-- Snaggle Sixtrigger
 					["coord"] = { 51.3, 56.9, STORMHEIM },
 					["groups"] = { i(138023) },	-- Stonefang's Jaw (QI!)
 				}),
@@ -543,7 +543,7 @@ root(ROOTS.Zones, {
 				}),
 				q(39793, {	-- Only the Finest
 					["sourceQuests"] = { 39789 },	-- Eating Into Our Business
-					["provider"] = { "n", 107675 },		-- Rax Sixtrigger
+					["provider"] = { "n", 107675 },	-- Rax Sixtrigger
 					["coord"] = { 51.4, 57.0, STORMHEIM },
 					["groups"] = { i(138021) },	-- Patch of Fine Goat Hair (QI!)
 				}),
@@ -632,7 +632,7 @@ root(ROOTS.Zones, {
 				}),
 				q(39787, {	-- Rigging the Wager
 					["sourceQuests"] = { 39793 },	-- Only the Finest
-					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
+					["provider"] = { "n", 107674 },	-- Snaggle Sixtrigger
 					["coord"] = { 51.2, 57.1, STORMHEIM },
 					["groups"] = { i(138022) },	-- Spitefeather's Beak (QI!)
 				}),

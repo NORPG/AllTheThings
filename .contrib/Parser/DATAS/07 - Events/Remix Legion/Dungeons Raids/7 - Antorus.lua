@@ -27,7 +27,7 @@ local EncounterToCRS = {
 		122369,	-- Chief Engineer Ishkar
 		122333,	-- General Erodus
 	},
-	[HASABEL] = { 122104 },		-- Portal Keeper Hasabel
+	[HASABEL] = { 122104 },	-- Portal Keeper Hasabel
 	[EONAR] = {	-- Eonar the Life-Bender
 		122500,	-- Essence of Eonar
 		124445,	-- The Paraxis
@@ -225,7 +225,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							["_encounter"] = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
-					ach(60875),		-- Antorus the Burning Throne (automated)
+					ach(60875),	-- Antorus the Burning Throne (automated)
 					ach(60871, {	-- Light's Breach
 						crit(107182, {	-- Garothi Worldbreaker
 							["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },

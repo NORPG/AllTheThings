@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(1976),	-- Slaghammer
 				i(2549),	-- Staff of the Shade
 				i(1727),	-- Sword of Decay
-				i(776),		-- Vendetta
+				i(776),	-- Vendetta
 				i(3569, {	-- Vicar's Robe
 					["timeline"] = { REMOVED_6_0_2, ADDED_10_1_7 },
 					-- #if BEFORE 6.0.2
@@ -481,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(13127),	-- Frostreaver Crown
 					i(9405),	-- Girdle of Golem Strength
 					i(9395),	-- Gloves of Old
-					i(791),		-- Gnarled Ash Staff
+					i(791),	-- Gnarled Ash Staff
 					i(13019),	-- Harpyclaw Short Bow
 					i(12974),	-- The Black Knight
 					i(13108),	-- Tigerstrike Mantle

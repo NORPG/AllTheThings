@@ -919,7 +919,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							43365,	-- The Cycle Continues
 							42129,	-- The Pendant of Starlight
 						},
-						["provider"] = { "n", 98008 },		-- Brightwing
+						["provider"] = { "n", 98008 },	-- Brightwing
 						["coord"] = { 39.6, 45.5, 715 },
 						["groups"] = { follower(645) },	-- Brightwing
 					}),

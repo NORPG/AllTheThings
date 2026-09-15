@@ -547,10 +547,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						}),
 					},
 				}),
-				ach(16395),		-- Vaulternative Fashion
+				ach(16395),	-- Vaulternative Fashion
 				-- Guild Achievements
-				ach(16356),		-- Vault of the Incarnates Guild Run
-				ach(16357),		-- Heroic: Vault of the Incarnates Guild Run
+				ach(16356),	-- Vault of the Incarnates Guild Run
+				ach(16357),	-- Heroic: Vault of the Incarnates Guild Run
 			}),
 			o(382621, {	-- Revival Catalyst Console
 				["description"] = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
@@ -787,7 +787,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					ach(16353, {	-- Mythic: Raszageth the Storm-Eater
 						title(488),	-- <Name> the Storm-Eater
 					}),
-					ach(16358),		-- Mythic: Raszageth the Storm-Eater Guild Run
+					ach(16358),	-- Mythic: Raszageth the Storm-Eater Guild Run
 					ach(17108, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
 					ach(17116, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
 						["races"] = ALLIANCE_ONLY,

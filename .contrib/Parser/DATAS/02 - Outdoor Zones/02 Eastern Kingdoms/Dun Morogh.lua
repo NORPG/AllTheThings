@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 						}),
 						q(26904, {	-- Harnessing the Flames
-							["sourceQuest"] = 3115,		-- Tainted Memorandum
+							["sourceQuest"] = 3115,	-- Tainted Memorandum
 							["qg"] = 43455,				-- Saripal Smolderbrew <Warlock Trainer>
 							["coords"] = {
 								-- #if AFTER MOP

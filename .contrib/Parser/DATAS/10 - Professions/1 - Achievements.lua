@@ -70,13 +70,13 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 				-- #endif
 			},
 		})),
-		ach(18721, { ["timeline"] = { ADDED_10_1_7 } }),		-- Outland Master of All
+		ach(18721, { ["timeline"] = { ADDED_10_1_7 } }),	-- Outland Master of All
 		ach(18729, {	-- Working in Hellfire
 			["timeline"] = { ADDED_10_1_7 },
 		}),
 	}),
 	expansion(EXPANSION.WRATH, {
-		ach(18722, { ["timeline"] = { ADDED_10_1_7 } }),		-- Northrend Master of All
+		ach(18722, { ["timeline"] = { ADDED_10_1_7 } }),	-- Northrend Master of All
 		ach(734, {	-- Professional Grand Master / Professional Northrend Master [BFA]	-- 1 Primary Profession at Max
 			["timeline"] = { ADDED_3_0_3 },
 		}),
@@ -108,7 +108,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 		}),
 	}),
 	expansion(EXPANSION.CATA, {
-		ach(18719, { ["timeline"] = { ADDED_10_1_7 } }),		-- Cataclysmic Master of All
+		ach(18719, { ["timeline"] = { ADDED_10_1_7 } }),	-- Cataclysmic Master of All
 		ach(4924, {	-- Professional Illustrious Grand Master / Professional Cataclysmic Master
 			["timeline"] = { ADDED_4_0_3_LAUNCH },
 		}),

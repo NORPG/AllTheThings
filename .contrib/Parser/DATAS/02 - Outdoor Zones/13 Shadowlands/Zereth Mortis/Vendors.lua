@@ -6,7 +6,7 @@ local SANDWORN_RELIC = 190189;
 local function Sym_BrokerItem(...)
 	return {
 		{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-		{"find", "headerID", ZONE_DROPS },		-- Select Zone Drops
+		{"find", "headerID", ZONE_DROPS },	-- Select Zone Drops
 		{"pop"},								-- Discard the Header and acquire all of their children.
 		{"extract", "itemID"},					-- Only Items!
 		{"invtype", ... },
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
 					{"find", "difficultyID", DIFFICULTY.RAID.MULTI.ALL},	-- Legendaries are listed under All Difficulties
-					{"extract","runeforgepowerID"},		-- Get all Legendaries
+					{"extract","runeforgepowerID"},	-- Get all Legendaries
 				},
 			}),
 			n(185092, {	-- Shade of Irik-tu

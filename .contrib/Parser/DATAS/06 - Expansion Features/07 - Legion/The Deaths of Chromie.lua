@@ -21,7 +21,7 @@ root(ROOTS.ExpansionFeatures,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(11941, {	-- Chromie Homie
-						title(361),		-- Title: Timelord
+						title(361),	-- Title: Timelord
 					}),
 				}),
 				n(FACTIONS, {
@@ -96,20 +96,20 @@ root(ROOTS.ExpansionFeatures,
 					["groups"] = {
 						i(151493, {	-- Sands of Time
 							i(151482, {	-- Time-Lost Wallet
-								i(151829),		-- Bronze Proto-Whelp (PET!)
-								i(151828),		-- Ageless Bronze Drake (PET!)
+								i(151829),	-- Bronze Proto-Whelp (PET!)
+								i(151828),	-- Ageless Bronze Drake (PET!)
 							}),
 							i(151551, {	-- Time-Lost Keepsake Box
-								i(151547),		-- Brimstone Beacon - When you use this, last rare will instantly spawn
+								i(151547),	-- Brimstone Beacon - When you use this, last rare will instantly spawn
 							}),
 							i(151552, {	-- Time-Lost Keepsake Box
-								i(151548),		-- Tyrande's Moonstone - Use it after you teleported into portal. Hippogryph will fly you to end.
+								i(151548),	-- Tyrande's Moonstone - Use it after you teleported into portal. Hippogryph will fly you to end.
 							}),
 							i(151553, {	-- Time-Lost Keepsake Box
-								i(151549),		-- Cenarion Circle Documents - Speaking with Adrine Towhide will instantly finish that one.
+								i(151549),	-- Cenarion Circle Documents - Speaking with Adrine Towhide will instantly finish that one.
 							}),
 							i(151554, {	-- Time-Lost Keepsake Box
-								i(151546),		-- Stratholme Gate Key
+								i(151546),	-- Stratholme Gate Key
 							}),
 						}),
 					},

@@ -1064,9 +1064,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["sourceQuests"] = { 84246 },	-- Witnessing Brilliance
 					["provider"] = { "n", 218171 },	-- Shalba
 					["coord"] = { 45.4, 13.5, NERUBAR },
-					["groups"] = {
-						i(224150),	-- Siesbarg (MOUNT!)
-					},
+					["groups"] = { i(224150) },	-- Siesbarg (MOUNT!)
 				}),
 			}),
 			------ Legendary Legerdemain ------

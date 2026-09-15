@@ -8,14 +8,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(12940, {	-- Adventurer of Stormsong Valley
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(13047),		-- Clever Use of Mechanical Explosives
+			ach(13047),	-- Clever Use of Mechanical Explosives
 			ach(13053, {	-- Deadliest Cache
 				["sourceQuests"] = { 52130 },	-- Deadliest Cache: Carpe Diem
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(12558),	-- Explore Stormsong Valley
-			ach(13045),		-- Every Day I'm Truffling
-			ach(13051),		-- Legends of the Tidesages (automated)
+			ach(13045),	-- Every Day I'm Truffling
+			ach(13051),	-- Legends of the Tidesages (automated)
 			ach(13054, {	-- Sabertron Assemble
 				crit(41420, {	-- Red Sabertron slain
 					["_quests"] = { 51947, 51956 },	-- Sabertron (RED) / Default Sabertron
@@ -84,8 +84,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
-			ach(13046),		-- These Hills Sing
-			ach(12956),		-- Tortollan Seekers
+			ach(13046),	-- These Hills Sing
+			ach(12956),	-- Tortollan Seekers
 			pvp(ach(12578)),	-- Tour of Duty: Stormsong Valley
 			ach(12853),	-- Treasures of Stormsong Valley
 		}),

@@ -32,8 +32,8 @@ root(ROOTS.Zones, {
 				ach(10617, {	-- Nightfallen But Not Forgotten
 					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(11125),		-- Now You're Thinking With Portals
-				ach(11260),		-- Treasures of Suramar
+				ach(11125),	-- Now You're Thinking With Portals
+				ach(11260),	-- Treasures of Suramar
 				ach(11133, {	-- Why Can't I Hold All This Mana
 					-- TODO: Put sourceQuests on the actual objects in Treasure Chests file
 					["sourceQuests"] = {

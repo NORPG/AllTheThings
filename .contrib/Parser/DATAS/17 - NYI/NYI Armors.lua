@@ -61,7 +61,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(21587),	-- Wristguards of Castigation
 			}),
 			filter(TABARDS, {
-				i(746),		-- Lord Brandon's Tabard (Test)
+				i(746),	-- Lord Brandon's Tabard (Test)
 				i(11364),	-- Tabard of Stormwind
 				i(7725),	-- Tabard of the Scarlet Crusade DEPRECATED
 				i(3557),	-- Unused Tabard of Chow

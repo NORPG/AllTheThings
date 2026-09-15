@@ -1297,7 +1297,7 @@ root(ROOTS.NeverImplemented, {
 				-- 1.x.x
 				n(P1xx, {
 					i(13262),	-- Ashbringer
-					i(913),		-- Huge Ogre Sword
+					i(913),	-- Huge Ogre Sword
 					i(12469),	-- Mutilator
 					i(21553),	-- Monster - Sword2H, Alliance PvP
 					i(21794),	-- Monster - Sword2H, Ahn'Qiraj

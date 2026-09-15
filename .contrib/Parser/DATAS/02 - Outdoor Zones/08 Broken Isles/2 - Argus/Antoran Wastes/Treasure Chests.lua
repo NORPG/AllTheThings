@@ -69,7 +69,7 @@ root(ROOTS.Zones, {
 					o_repeated({	-- Legion War Supplies
 						["sym"] = {
 							{"select","mapID",ANTORAN_WASTES},	-- get Antoran Wastes
-							{"find","headerID",SPECIAL},		-- get Special
+							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 						},
 						["groups"] = appendAllGroups({	-- Shared Rewards

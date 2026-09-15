@@ -812,7 +812,7 @@ root(ROOTS.Zones, {
 							i(116114),	-- Prestige Card: The Turn
 							i(111815),	-- Scribe's Quarters, Level 1
 							i(111923, {	-- Secret of Draenor Inscription
-								i(120136),		-- Recipe: Secrets of Draenor Inscription
+								i(120136),	-- Recipe: Secrets of Draenor Inscription
 								recipe(169081),	-- War Paints
 								recipe(167950),	-- Research: Warbinder's Ink
 								recipe(175390),	-- Laughing Tarot

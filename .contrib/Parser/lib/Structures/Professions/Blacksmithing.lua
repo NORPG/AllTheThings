@@ -112,7 +112,7 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		r(2737),	-- Copper Mace
 		r(2739),	-- Copper Shortsword
 		r(15972),	-- Glinting Steel Dagger
-		applyclassicphase(TBC_PHASE_ONE, r(34982, {["timeline"] = {ADDED_2_0_5,REMOVED_5_0_4}})),		-- Enchanted Thorium Blades
+		applyclassicphase(TBC_PHASE_ONE, r(34982, {["timeline"] = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Enchanted Thorium Blades
 		r(3296),	-- Heavy Bronze Mace
 		r(3292),	-- Heavy Copper Broadsword
 		r(7408),	-- Heavy Copper Maul
@@ -425,7 +425,7 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(55371),	-- Titansteel Guardian
 		r(56234),	-- Titansteel Shanker
 		r(56400),	-- Titansteel Shield Wall
-		r(63182, {["timeline"] = {ADDED_3_1_0}}),		-- Titansteel Spellblade
+		r(63182, {["timeline"] = {ADDED_3_1_0}}),	-- Titansteel Spellblade
 		-- #if AFTER CATA
 		r(55185),	-- Saronite Mindcrusher
 		-- #endif

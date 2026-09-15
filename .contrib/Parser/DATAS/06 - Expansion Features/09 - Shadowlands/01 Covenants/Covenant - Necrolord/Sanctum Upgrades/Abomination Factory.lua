@@ -43,55 +43,55 @@ local ATTICUS_GROUP = {
 	}),
 };
 local ASCENDED_CHEST_OF_ARMS = {
-	i(181225),		-- Crossbow of Contemplative Calm
-	i(181226),		-- Bronze Dual-Bladed Glaive
-	i(181232),		-- Cupbearer's Claymore
-	i(181234),		-- Dutybound Spellblade
-	i(181228),		-- Temple Guard's Partisan
-	i(181229),		-- Tranquil's Censer
-	i(181230),		-- Pugilist's Chakram
-	i(181233),		-- Bellringer's Hammer
-	i(181227),		-- Bronze Ceremonial Targe
-	i(181231),		-- Broadbladed Severer
-	i(181235),		-- Final Arbiter's Gavel
+	i(181225),	-- Crossbow of Contemplative Calm
+	i(181226),	-- Bronze Dual-Bladed Glaive
+	i(181232),	-- Cupbearer's Claymore
+	i(181234),	-- Dutybound Spellblade
+	i(181228),	-- Temple Guard's Partisan
+	i(181229),	-- Tranquil's Censer
+	i(181230),	-- Pugilist's Chakram
+	i(181233),	-- Bellringer's Hammer
+	i(181227),	-- Bronze Ceremonial Targe
+	i(181231),	-- Broadbladed Severer
+	i(181235),	-- Final Arbiter's Gavel
 };
 local MARTIAL_TITHE_OF_THE_COURT_OF_HARVESTERS = {
-	i(180955),		-- Stonewing Halberd
-	i(180956),		-- Axeblade Blunderbuss
-	i(180957),		-- Batwing Glaive
-	i(180963),		-- Crypt Keeper's Vessel
-	i(180954),		-- Crypt Watcher's Spire
-	i(180959),		-- Dredger Anklebiter
-	i(180960),		-- Shiny-Metal Topped Basher
-	i(180954),		-- Ember Court Barrier
-	i(180958),		-- Redelev House Foil
-	i(180961),		-- Silver-Bladed Ritual Dagger
-	i(180962),		-- Sterling-Silver Cudgel
+	i(180955),	-- Stonewing Halberd
+	i(180956),	-- Axeblade Blunderbuss
+	i(180957),	-- Batwing Glaive
+	i(180963),	-- Crypt Keeper's Vessel
+	i(180954),	-- Crypt Watcher's Spire
+	i(180959),	-- Dredger Anklebiter
+	i(180960),	-- Shiny-Metal Topped Basher
+	i(180954),	-- Ember Court Barrier
+	i(180958),	-- Redelev House Foil
+	i(180961),	-- Silver-Bladed Ritual Dagger
+	i(180962),	-- Sterling-Silver Cudgel
 };
 local UNDYING_ARMOY_WEAPON_CACHE = {
-	i(181329),		-- Marrowfused Claymore
-	i(181321),		-- Gem-Crowned Wand
-	i(181327),		-- Spineforged Tenderizer
-	i(181330),		-- Marrowfused Warglaive
-	i(181325),		-- Marrowfused Dagger
-	i(181328),		-- Marrowfused Sword
-	i(181331),		-- Marrowfused Shield
-	i(181326),		-- Bloodstained Hacksaw
-	i(181323),		-- Blightclutched Greatstaff
-	i(181320),		-- Bonejowl Ballista
-	i(181322),		-- Bonebound Tome
+	i(181329),	-- Marrowfused Claymore
+	i(181321),	-- Gem-Crowned Wand
+	i(181327),	-- Spineforged Tenderizer
+	i(181330),	-- Marrowfused Warglaive
+	i(181325),	-- Marrowfused Dagger
+	i(181328),	-- Marrowfused Sword
+	i(181331),	-- Marrowfused Shield
+	i(181326),	-- Bloodstained Hacksaw
+	i(181323),	-- Blightclutched Greatstaff
+	i(181320),	-- Bonejowl Ballista
+	i(181322),	-- Bonebound Tome
 };
 local WEAPON_SATCHEL_OF_THE_WILD_HUNT = {
-	i(179548),		-- Elderwood Gavel
-	i(179563),		-- Heartwood Stem
-	i(179499),		-- Nightwillow Barb
-	i(179538),		-- Grove Warden's Maul
-	i(179605),		-- Elderwood Barrier
-	i(179514),		-- Ripvine Saber
-	i(179585),		-- Nightwillow Shortbow
-	i(179509),		-- Grove Warden's Edge
-	i(179516),		-- Songwood Staff
-	i(179533),		-- Grove Warden's Harvester
+	i(179548),	-- Elderwood Gavel
+	i(179563),	-- Heartwood Stem
+	i(179499),	-- Nightwillow Barb
+	i(179538),	-- Grove Warden's Maul
+	i(179605),	-- Elderwood Barrier
+	i(179514),	-- Ripvine Saber
+	i(179585),	-- Nightwillow Shortbow
+	i(179509),	-- Grove Warden's Edge
+	i(179516),	-- Songwood Staff
+	i(179533),	-- Grove Warden's Harvester
 };
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
@@ -417,7 +417,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							ach(14751, {	-- The Gang's All Here
 								["sym"] = {{ "achievement_criteria" }},
 								["groups"] = {
-									i(182074),		-- Chosen Tauralus (MOUNT!)
+									i(182074),	-- Chosen Tauralus (MOUNT!)
 								},
 							}),
 							ach(14764, {	-- The Great Luckydo
@@ -469,14 +469,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["name"] = "Construct Body: Flytrap",
 											["cost"] = {
 												{ "i", 178061, 10 },	-- 10x Malleable Flesh
-												{ "i", 183744, 2 },		-- 2x Superior Parts
+												{ "i", 183744, 2 },	-- 2x Superior Parts
 											},
 										}),
 										q(57611, {
 											["name"] = "Construct Body: Marz",
 											["cost"] = {
 												{ "i", 178061, 10 },	-- 10x Malleable Flesh
-												{ "i", 183744, 1 },		-- 1x Superior Parts
+												{ "i", 183744, 1 },	-- 1x Superior Parts
 											},
 										}),
 										q(58415, {
@@ -488,7 +488,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["name"] = "Construct Body: Roseboil",
 											["cost"] = {
 												{ "i", 178061, 10 },	-- 10x Malleable Flesh
-												{ "i", 183744, 1 },		-- 1x Superior Parts
+												{ "i", 183744, 1 },	-- 1x Superior Parts
 											},
 										}),
 									},
@@ -898,8 +898,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["groups"] = {
 										i(181268, {	-- Backbone (PET!)
 											["cost"] = {
-												{ "i", 178061, 5 },		-- 5x Malleable Flesh
-												{ "i", 172092, 1 },		-- 1x Pallid Bone
+												{ "i", 178061, 5 },	-- 5x Malleable Flesh
+												{ "i", 172092, 1 },	-- 1x Pallid Bone
 												{ "c", ANIMA, 750 },
 											},
 										}),
@@ -913,7 +913,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["sourceQuests"] = { 60230 },	-- More the Merrier
 											["cost"] = {
 												{ "i", 178061, 15 },	-- 15x Malleable Flesh
-												{ "i", 183744, 3 },		-- 3x Superior Parts
+												{ "i", 183744, 3 },	-- 3x Superior Parts
 											},
 										}),
 										q(57600, {
@@ -921,7 +921,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["sourceQuests"] = { 60230 },	-- More the Merrier
 											["cost"] = {
 												{ "i", 178061, 15 },	-- 15x Malleable Flesh
-												{ "i", 183744, 4 },		-- 4x Superior Parts
+												{ "i", 183744, 4 },	-- 4x Superior Parts
 											},
 										}),
 										q(58414, {
@@ -929,7 +929,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["sourceQuests"] = { 60230 },	-- More the Merrier
 											["cost"] = {
 												{ "i", 178061, 15 },	-- 15x Malleable Flesh
-												{ "i", 183744, 4 },		-- 4x Superior Parts
+												{ "i", 183744, 4 },	-- 4x Superior Parts
 											},
 										}),
 									},
@@ -1163,7 +1163,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["sourceQuests"] = { 61635 },	-- Troubled Souls
 											["cost"] = {
 												{ "i", 178061, 20 },	-- 20x Malleable Flesh
-												{ "i", 183744, 5 },		-- 5x Superior Parts
+												{ "i", 183744, 5 },	-- 5x Superior Parts
 											},
 										}),
 										q(58416, {
@@ -1171,7 +1171,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["sourceQuests"] = { 61635 },	-- Troubled Souls
 											["cost"] = {
 												{ "i", 178061, 20 },	-- 20x Malleable Flesh
-												{ "i", 183744, 7 },		-- 7x Superior Parts
+												{ "i", 183744, 7 },	-- 7x Superior Parts
 											},
 										}),
 										q(60216, {
@@ -1179,11 +1179,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["sourceQuests"] = { 61635 },	-- Troubled Souls
 											["cost"] = {
 												{ "i", 178061, 10 },	-- 10x Malleable Flesh
-												{ "i", 183744, 1 },		-- 1x Superior Parts
-												{ "i", 172052, 5 },		-- 5x Aethereal Meat
-												{ "i", 172053, 5 },		-- 5x Tenebrous Ribs
-												{ "i", 172055, 5 },		-- 5x Phantasmal Haunch
-												{ "i", 179315, 5 },		-- 5x Shadowy Shank
+												{ "i", 183744, 1 },	-- 1x Superior Parts
+												{ "i", 172052, 5 },	-- 5x Aethereal Meat
+												{ "i", 172053, 5 },	-- 5x Tenebrous Ribs
+												{ "i", 172055, 5 },	-- 5x Phantasmal Haunch
+												{ "i", 179315, 5 },	-- 5x Shadowy Shank
 											},
 										}),
 									},
@@ -1364,7 +1364,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										i(181282, {	-- Mu'dud (PET!)
 											["cost"] = {
 												{ "i", 178061, 10 },	-- 10x Malleable Flesh
-												{ "i", 183744, 5 },		-- 5x Superior Parts
+												{ "i", 183744, 5 },	-- 5x Superior Parts
 												{ "c", ANIMA, 1250 },
 											},
 										}),
@@ -1375,7 +1375,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												{ "i", 178061, 20 },	-- 20x Malleable Flesh
 												{ "i", 171828, 20 },	-- 20x Laestrite Ore
 												{ "i", 183744, 10 },	-- 10x Superior Parts
-												{ "i", 183475, 1 },		-- 1x Indomitable Hide
+												{ "i", 183475, 1 },	-- 1x Indomitable Hide
 											},
 										}),
 										q(58413, {
@@ -1385,7 +1385,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												{ "i", 178061, 20 },	-- 20x Malleable Flesh
 												{ "i", 173202, 12 },	-- 12x Shrouded Cloth
 												{ "i", 183744, 10 },	-- 10x Superior Parts
-												{ "i", 183519, 1 },		-- 1x Necromantic Oil
+												{ "i", 183519, 1 },	-- 1x Necromantic Oil
 											},
 										}),
 									},
@@ -1447,14 +1447,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										i(182078, {	-- Bonesewn Fleshroc (MOUNT!)
 											["cost"] = {
 												{ "i", 178061, 50 },	-- 50x Malleable Flesh
-												{ "i", 183744, 5 },		-- 5x Superior Parts
+												{ "i", 183744, 5 },	-- 5x Superior Parts
 												{ "c", ANIMA, 3500 },
 											},
 										}),
 										i(183717, {	-- Bindings of Wellbeing (QI!)
 											["cost"] = {
 												{ "i", 178061, 30 },	-- 30x Malleable Flesh
-												{ "i", 183744, 5 },		-- 5x Superior Parts
+												{ "i", 183744, 5 },	-- 5x Superior Parts
 												{ "c", ANIMA, 1750 },
 											},
 										}),

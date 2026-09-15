@@ -178,6 +178,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(86695, name(HEADERS.Item, 235054, {isDaily=true})),	-- Always triggers after getting Pristine Mysterious Satchel
 		q(90134),	-- Always triggers after getting Pristine Mysterious Satchel
 		q(90752),	-- Sometimes triggers after getting Pristine Mysterious Satchel
+		q(90899),	-- Get a Large Green Bag from your Mysterious Satchel
+		q(90900),	-- Related somehow
 		q(99114, { ["timeline"] = { ADDED_12_1_0 } }),	-- Daily Trigger for ach(64140)
 	}),
 })));

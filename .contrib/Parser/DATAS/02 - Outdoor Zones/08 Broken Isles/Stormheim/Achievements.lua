@@ -12,7 +12,7 @@ root(ROOTS.Zones, {
 				ach(10668),	-- Explore Stormheim
 				ach(10627),	-- Going Up (Stormheim)
 				ach(11232, {	-- Lock, Stock and Two Smoking Goblins
-					title(343),		-- the Gullible
+					title(343),	-- the Gullible
 					crit(33089, {	-- Time to Collect
 						["_quests"] = { 43331 },
 					}),

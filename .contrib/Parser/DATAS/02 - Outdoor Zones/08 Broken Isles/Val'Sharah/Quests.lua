@@ -571,14 +571,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["groups"] = { i(127863) },	-- Prison Keys (QI!)
 				}),
 				q(38724, {	-- Brotherly Love
-					["sourceQuests"] = { 38717 },		-- Black Rook Prison
-					["provider"] = { "n", 92850 },		-- Commander Jarod Shadowsong
+					["sourceQuests"] = { 38717 },	-- Black Rook Prison
+					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 				}),
 				q(44457, {	-- Brotherly Love (Demon Hunter)
-					["sourceQuests"] = { 38717 },		-- Black Rook Prison
-					["provider"] = { "n", 92850 },		-- Commander Jarod Shadowsong
+					["sourceQuests"] = { 38717 },	-- Black Rook Prison
+					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["classes"] = { DEMONHUNTER },
 				}),

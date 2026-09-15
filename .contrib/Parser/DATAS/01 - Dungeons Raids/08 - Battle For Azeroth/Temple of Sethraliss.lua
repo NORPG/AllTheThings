@@ -306,9 +306,9 @@ if InRetailSeason then
 
 	appendAllGroups(InstanceGroups,
 	{
-		GROUPS.NORMAL_PLUS_8_0,		-- Non-Appearances
+		GROUPS.NORMAL_PLUS_8_0,	-- Non-Appearances
 		GROUPS.NORMAL_PLUS_12_1,	-- All NORMAL_8_0 appearances + Azewrong
-		GROUPS.HEROIC_PLUS_8_0,		-- Non-Appearances
+		GROUPS.HEROIC_PLUS_8_0,	-- Non-Appearances
 		GROUPS.NORMAL_AZERITE_12_1,	-- Only Removed Azerite
 		GROUPS.HEROIC_AZERITE_12_1,	-- Only Removed Azerite
 		GROUPS.MYTHIC_12_1,			-- Non-Appearances

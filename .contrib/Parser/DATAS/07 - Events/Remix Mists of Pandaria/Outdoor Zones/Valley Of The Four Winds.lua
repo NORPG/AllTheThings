@@ -7,8 +7,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = 618317,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(19884),		-- Campaign: Valley of the Four Winds
-				ach(19994),		-- Elusive Foes: Valley of the Four Winds
+				ach(19884),	-- Campaign: Valley of the Four Winds
+				ach(19994),	-- Elusive Foes: Valley of the Four Winds
 				ach(20027),	-- Explore Valley of the Four Winds (automated)
 				ach(19978, {	-- Hidden Treasures: Valley of the Four Winds
 					crit(65495, {	-- Virmen Treasure Cache

@@ -63,14 +63,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			ach(16801, {	-- Realm First! Dragonflight Keystone Hero
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			ach(16647),		-- Dragonflight Keystone Explorer: Season One
+			ach(16647),	-- Dragonflight Keystone Explorer: Season One
 			ach(16648, {	-- Dragonflight Keystone Conqueror: Season One
 				title(477),	-- <Name> the Thundering
 			}),
 			ach(16649, {	-- Dragonflight Keystone Master: Season One
 				i(199412),	-- Hailstorm Armoredon (MOUNT!)
 			}),
-			ach(16650),		-- Dragonflight Keystone Hero: Season One
+			ach(16650),	-- Dragonflight Keystone Hero: Season One
 			ach(16429, {	-- Thundering Hero: Dragonflight Season 1
 				title(470),	-- <Name> the Thundering Hero
 			}),
@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		header(HEADERS.Achievement, SEASON_SMOLDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		},{
-			ach(17842),		-- Dragonflight Keystone Explorer: Season Two
+			ach(17842),	-- Dragonflight Keystone Explorer: Season Two
 			ach(17843, {	-- Dragonflight Keystone Conqueror: Season Two
 				title(503),	-- <Name> the Smoldering
 			}),
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				i(204798),	-- Inferno Armoredon (MOUNT!)
 			}),
 			ach(18542),	-- Dragonflight Keystone Master: Season Two	-- this version is also rewarded
-			ach(17845),		-- Dragonflight Keystone Hero: Season Two
+			ach(17845),	-- Dragonflight Keystone Hero: Season Two
 			ach(17846, {	-- Smoldering Hero: Dragonflight Season 2
 				title(504),	-- <Name> the Smoldering Hero
 			}),
@@ -148,14 +148,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		header(HEADERS.Achievement, SEASON_DREAMING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		},{
-			ach(19009),		-- Dragonflight Keystone Explorer: Season Three
+			ach(19009),	-- Dragonflight Keystone Explorer: Season Three
 			ach(19010, {	-- Dragonflight Keystone Conqueror: Season Three
 				title(517),	-- <Name> the Dreaming
 			}),
 			ach(19011, {	-- Dragonflight Keystone Master: Season Three
 				i(209060),	-- Verdant Armoredon (MOUNT!)
 			}),
-			ach(19012),		-- Dragonflight Keystone Hero: Season Three
+			ach(19012),	-- Dragonflight Keystone Hero: Season Three
 			ach(19449, {	-- Dreaming Hero: Dragonflight Season 3
 				title(531),	-- <Name> the Dreaming Hero
 			}),
@@ -190,14 +190,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 		},{
-			ach(19780),		-- Dragonflight Keystone Explorer: Season Four
+			ach(19780),	-- Dragonflight Keystone Explorer: Season Four
 			ach(19781, {	-- Dragonflight Keystone Conqueror: Season Four
 				title(537),	-- <Name> the Draconic
 			}),
 			ach(19782, {	-- Dragonflight Keystone Master: Season Four
 				i(213438),	-- Infinite Armoredon (MOUNT!)
 			}),
-			ach(19783),		-- Dragonflight Keystone Hero: Season Four
+			ach(19783),	-- Dragonflight Keystone Hero: Season Four
 			ach(19785, bubbleDownSelf({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Draconic Hero: Dragonflight Season 4
 				title(538),	-- <Name> the Draconic Hero
 			})),

@@ -26,7 +26,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["groups"] = {
 								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
-									i(120136),		-- Recipe: Secrets of Draenor Inscription
+									i(120136),	-- Recipe: Secrets of Draenor Inscription
 									recipe(166669),	-- Card of Omens
 									recipe(175390),	-- Laughing Tarot
 									recipe(175389),	-- Ocean Tarot
@@ -45,7 +45,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["groups"] = {
 								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
-									i(120136),		-- Recipe: Secrets of Draenor Inscription
+									i(120136),	-- Recipe: Secrets of Draenor Inscription
 									recipe(166669),	-- Card of Omens
 									recipe(175390),	-- Laughing Tarot
 									recipe(175389),	-- Ocean Tarot

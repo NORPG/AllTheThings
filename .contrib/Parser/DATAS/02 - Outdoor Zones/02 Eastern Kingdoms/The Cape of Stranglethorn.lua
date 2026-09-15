@@ -3133,10 +3133,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["
 	m(EASTERN_KINGDOMS, {
 		m(THE_CAPE_OF_STRANGLETHORN, {
 			q(7908, {["timeline"] = { ADDED_1_12_1 }}),	-- Arena Master [Old] - completed with quest 7810
-			q(618),		-- Facing Negolash [Old] - completed with quest 8554
-			q(614),		-- The Captain's Chest [Old] - completed with quest 8551
-			q(615, {["timeline"] = { ADDED_1_12_1 }}),		-- The Captain's Cutlass [Old] - completed with quest 8553
-			q(620, {["timeline"] = { ADDED_1_12_1 }}),		-- The Monogrammed Sash [Old] - completed with quest 8552
+			q(618),	-- Facing Negolash [Old] - completed with quest 8554
+			q(614),	-- The Captain's Chest [Old] - completed with quest 8551
+			q(615, {["timeline"] = { ADDED_1_12_1 }}),	-- The Captain's Cutlass [Old] - completed with quest 8553
+			q(620, {["timeline"] = { ADDED_1_12_1 }}),	-- The Monogrammed Sash [Old] - completed with quest 8552
 		}),
 	}),
 })));

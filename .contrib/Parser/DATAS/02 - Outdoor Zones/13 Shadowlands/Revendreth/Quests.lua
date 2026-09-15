@@ -636,14 +636,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(57471, {	-- It's a Dirty Job
 					["sourceQuests"] = { 60509 },	-- Not My Job
-					["altQuests"] = { 62190 },		-- It's a Dirty Job
+					["altQuests"] = { 62190 },	-- It's a Dirty Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, REVENDRETH },
 				}),
 				q(62190, {	-- It's a Dirty Job
 					["description"] = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
 					["sourceQuests"] = { 60509 },	-- Not My Job
-					["altQuests"] = { 57471 },		-- It's a Dirty Job
+					["altQuests"] = { 57471 },	-- It's a Dirty Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, REVENDRETH },
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr

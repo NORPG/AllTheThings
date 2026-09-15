@@ -353,7 +353,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						title(362, {	-- <Name> the Tomb Raider
 							["style"] = 3,
 						}),
-						i(101426),		-- Micronax (PET!)
+						i(101426),	-- Micronax (PET!)
 					},
 				}),
 				ach(11760, {["timeline"] = {ADDED_7_2_0}}),	-- Retro Trend (Tomb of Sargeras)

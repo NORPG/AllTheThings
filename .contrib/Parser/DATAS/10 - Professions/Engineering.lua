@@ -896,7 +896,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		}),
 		n(TREASURES, {
-			o(398133,		-- Bolts and Brass/Handful of Khaz'gorite Bolts
+			o(398133,	-- Bolts and Brass/Handful of Khaz'gorite Bolts
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 				["coord"] = { 57.7, 73.9, ZARALEK_CAVERN },
 				["questID"] = 75430,
@@ -974,7 +974,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					i(204480),	-- Inconspicuous Data Miner
 				},
 			})),
-			o(410458,		-- Insomniotron
+			o(410458,	-- Insomniotron
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				["description"] = "In cavern.",
 				["coord"] = { 49.0, 70.9, 2254 },
@@ -999,7 +999,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					i(204855),	-- Overclocked Determination Core
 				},
 			})),
-			o(410469,		-- Unhatched Battery
+			o(410469,	-- Unhatched Battery
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				["coord"] = { 62.6, 36.2, EMERALD_DREAM },
 				["questID"] = 78281,
@@ -1033,14 +1033,14 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			q(70517, {	-- DF Weekly Engineering Knowledgepoint #3
 				["name"] = "DF Engineering Drop #1: Dragon-esque",
 				["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
+				["provider"] = { "i", 198970 },	-- Infinitely Attachable Pair o' Docks
 				["coord"] = { 49.4, 62.6, THALDRASZUS },
 				["crs"] = { 196632 },	-- Reservoir Dapple
 			}),
 			q(70516, {	-- DF Weekly Engineering Knowledgepoint #4
 				["name"] = "DF Engineering Drop #2: Tyrhold Ancient",
 				["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
-				["provider"] = { "i", 198969 },		-- Keeper's Mark
+				["provider"] = { "i", 198969 },	-- Keeper's Mark
 				["coord"] = { 57.2, 60.4, THALDRASZUS },
 				["crs"] = { 193244 },	-- Titan Defense Matrix
 			}),

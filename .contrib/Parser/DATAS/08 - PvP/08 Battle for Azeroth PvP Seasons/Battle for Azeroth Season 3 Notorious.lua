@@ -7,9 +7,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 		["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0, ADDED_9_0_2_LAUNCH },
 	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
-			ach(13639),		-- Combatant: Battle for Azeroth Season 3
-			ach(13634),		-- Challenger: Battle for Azeroth Season 3
-			ach(13641),		-- Rival: Battle for Azeroth Season 3
+			ach(13639),	-- Combatant: Battle for Azeroth Season 3
+			ach(13634),	-- Challenger: Battle for Azeroth Season 3
+			ach(13641),	-- Rival: Battle for Azeroth Season 3
 			ach(13642, {	-- Duelist: Battle for Azeroth Season 3
 				ill(6096),	-- Dreadflame (ILLUSION!)
 				i(167382, {	-- Notorious Gladiator's Cloak [A]

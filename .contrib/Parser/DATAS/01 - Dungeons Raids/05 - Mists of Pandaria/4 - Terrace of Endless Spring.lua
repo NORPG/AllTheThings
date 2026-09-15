@@ -5,43 +5,43 @@
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 89274,		-- Helm of the Shadowy Conqueror
+			HELM = 89274,	-- Helm of the Shadowy Conqueror
 			SHOULDERS = 89277,	-- Shoulders of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
-			HELM = 89275,		-- Helm of the Shadowy Protector
+			HELM = 89275,	-- Helm of the Shadowy Protector
 			SHOULDERS = 89278,	-- Shoulders of the Shadowy Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
-			HELM = 89273,		-- Helm of the Shadowy Vanquisher
+			HELM = 89273,	-- Helm of the Shadowy Vanquisher
 			SHOULDERS = 89276,	-- Shoulders of the Shadowy Vanquisher
 		},
 	},
 	NORMAL = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 89235,		-- Helm of the Shadowy Conqueror
+			HELM = 89235,	-- Helm of the Shadowy Conqueror
 			SHOULDERS = 89246,	-- Shoulders of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
-			HELM = 89236,		-- Helm of the Shadowy Protector
+			HELM = 89236,	-- Helm of the Shadowy Protector
 			SHOULDERS = 89247,	-- Shoulders of the Shadowy Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
-			HELM = 89234,		-- Helm of the Shadowy Vanquisher
+			HELM = 89234,	-- Helm of the Shadowy Vanquisher
 			SHOULDERS = 89248,	-- Shoulders of the Shadowy Vanquisher
 		},
 	},
 	HEROIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 89259,		-- Helm of the Shadowy Conqueror
+			HELM = 89259,	-- Helm of the Shadowy Conqueror
 			SHOULDERS = 89262,	-- Shoulders of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
-			HELM = 89260,		-- Helm of the Shadowy Protector
+			HELM = 89260,	-- Helm of the Shadowy Protector
 			SHOULDERS = 89263,	-- Shoulders of the Shadowy Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
-			HELM = 89258,		-- Helm of the Shadowy Vanquisher
+			HELM = 89258,	-- Helm of the Shadowy Vanquisher
 			SHOULDERS = 89261,	-- Shoulders of the Shadowy Vanquisher
 		},
 	},
@@ -99,24 +99,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86673)),		-- Helmet of Resounding Rings
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86673)),	-- Helmet of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86669)),	-- Pauldrons of Resounding Rings
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86666)),		-- Faceguard of Resounding Rings
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86666)),	-- Faceguard of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86664)),	-- Shoulderguards of Resounding Rings
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86681)),		-- White Tiger Helmet
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86681)),	-- White Tiger Helmet
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86679)),	-- White Tiger Pauldrons
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86686)),		-- White Tiger Headguard
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86686)),	-- White Tiger Headguard
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86684)),	-- White Tiger Mantle
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86661)),		-- White Tiger Faceguard
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86661)),	-- White Tiger Faceguard
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86659)),	-- White Tiger Shoulderguards
 						}),
 						cl(DEATHKNIGHT, {
@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86654)),	-- Shoulderguards of the Lost Catacomb
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86636)),		-- Yaungol Slayer's Headguard
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86636)),	-- Yaungol Slayer's Headguard
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86634)),	-- Yaungol Slayer's Spaulders
 						}),
 						cl(ROGUE, {
@@ -138,24 +138,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86705)),		-- Guardian Serpent Hood
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86705)),	-- Guardian Serpent Hood
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86708)),	-- Guardian Serpent Shoulderguards
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86702)),		-- Guardian Serpent Cowl
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86702)),	-- Guardian Serpent Cowl
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86699)),	-- Guardian Serpent Mantle
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86626)),		-- Firebird's Helmet
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86626)),	-- Firebird's Helmet
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86624)),	-- Firebird's Spaulders
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86631)),		-- Firebird's Headpiece
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86631)),	-- Firebird's Headpiece
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86633)),	-- Firebird's Shoulderwraps
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86691)),		-- Firebird's Faceguard
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86691)),	-- Firebird's Faceguard
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86689)),	-- Firebird's Mantle
 						}),
 						cl(MAGE, {
@@ -164,19 +164,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86736)),		-- Red Crane Headpiece
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86736)),	-- Red Crane Headpiece
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86738)),	-- Red Crane Spaulders
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86730)),		-- Red Crane Helm
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86730)),	-- Red Crane Helm
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86733)),	-- Red Crane Mantle
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86726)),		-- Red Crane Crown
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86726)),	-- Red Crane Crown
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86724)),	-- Red Crane Shoulderguards
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86710)),		-- Sha-Skin Hood
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86710)),	-- Sha-Skin Hood
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86713)),	-- Sha-Skin Mantle
 						}),
 						cl(DRUID, {
@@ -205,24 +205,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85333)),		-- Helmet of Resounding Rings
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85333)),	-- Helmet of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85329)),	-- Pauldrons of Resounding Rings
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85326)),		-- Faceguard of Resounding Rings
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85326)),	-- Faceguard of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85324)),	-- Shoulderguards of Resounding Rings
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85341)),		-- White Tiger Helmet
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85341)),	-- White Tiger Helmet
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85339)),	-- White Tiger Pauldrons
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85346)),		-- White Tiger Headguard
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85346)),	-- White Tiger Headguard
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85344)),	-- White Tiger Mantle
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85321)),		-- White Tiger Faceguard
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85321)),	-- White Tiger Faceguard
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85319)),	-- White Tiger Shoulderguards
 						}),
 						cl(DEATHKNIGHT, {
@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85314)),	-- Shoulderguards of the Lost Catacomb
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85296)),		-- Yaungol Slayer's Headguard
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85296)),	-- Yaungol Slayer's Headguard
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85294)),	-- Yaungol Slayer's Spaulders
 						}),
 						cl(ROGUE, {
@@ -244,24 +244,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85365)),		-- Guardian Serpent Hood
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85365)),	-- Guardian Serpent Hood
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85368)),	-- Guardian Serpent Shoulderguards
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85362)),		-- Guardian Serpent Cowl
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85362)),	-- Guardian Serpent Cowl
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85359)),	-- Guardian Serpent Mantle
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85286)),		-- Firebird's Helmet
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85286)),	-- Firebird's Helmet
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85284)),	-- Firebird's Spaulders
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85291)),		-- Firebird's Headpiece
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85291)),	-- Firebird's Headpiece
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85293)),	-- Firebird's Shoulderwraps
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85351)),		-- Firebird's Faceguard
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85351)),	-- Firebird's Faceguard
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85349)),	-- Firebird's Mantle
 						}),
 						cl(MAGE, {
@@ -270,19 +270,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85396)),		-- Red Crane Headpiece
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85396)),	-- Red Crane Headpiece
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85398)),	-- Red Crane Spaulders
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85390)),		-- Red Crane Helm
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85390)),	-- Red Crane Helm
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85393)),	-- Red Crane Mantle
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85386)),		-- Red Crane Crown
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85386)),	-- Red Crane Crown
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85384)),	-- Red Crane Shoulderguards
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85370)),		-- Sha-Skin Hood
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85370)),	-- Sha-Skin Hood
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85373)),	-- Sha-Skin Mantle
 						}),
 						cl(DRUID, {
@@ -310,24 +310,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87192)),		-- Helmet of Resounding Rings
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87192)),	-- Helmet of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87196)),	-- Pauldrons of Resounding Rings
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87199)),		-- Faceguard of Resounding Rings
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87199)),	-- Faceguard of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87201)),	-- Shoulderguards of Resounding Rings
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87101)),		-- White Tiger Helmet
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87101)),	-- White Tiger Helmet
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87108)),	-- White Tiger Pauldrons
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87106)),		-- White Tiger Headguard
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87106)),	-- White Tiger Headguard
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87113)),	-- White Tiger Mantle
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87111)),		-- White Tiger Faceguard
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87111)),	-- White Tiger Faceguard
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87103)),	-- White Tiger Shoulderguards
 						}),
 						cl(DEATHKNIGHT, {
@@ -340,7 +340,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86922)),	-- Shoulderguards of the Lost Catacomb
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87004)),		-- Yaungol Slayer's Headguard
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87004)),	-- Yaungol Slayer's Headguard
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87006)),	-- Yaungol Slayer's Spaulders
 						}),
 						cl(ROGUE, {
@@ -349,24 +349,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87120)),		-- Guardian Serpent Hood
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87120)),	-- Guardian Serpent Hood
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87123)),	-- Guardian Serpent Shoulderguards
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87115)),		-- Guardian Serpent Cowl
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87115)),	-- Guardian Serpent Cowl
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87118)),	-- Guardian Serpent Mantle
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87136)),		-- Firebird's Helmet
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87136)),	-- Firebird's Helmet
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87138)),	-- Firebird's Spaulders
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87141)),		-- Firebird's Headpiece
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87141)),	-- Firebird's Headpiece
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87143)),	-- Firebird's Shoulderwraps
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87131)),		-- Firebird's Faceguard
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87131)),	-- Firebird's Faceguard
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87133)),	-- Firebird's Mantle
 						}),
 						cl(MAGE, {
@@ -375,19 +375,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87086)),		-- Red Crane Headpiece
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87086)),	-- Red Crane Headpiece
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87088)),	-- Red Crane Spaulders
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87090)),		-- Red Crane Helm
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87090)),	-- Red Crane Helm
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87093)),	-- Red Crane Mantle
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87096)),		-- Red Crane Crown
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87096)),	-- Red Crane Crown
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87098)),	-- Red Crane Shoulderguards
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87188)),		-- Sha-Skin Hood
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87188)),	-- Sha-Skin Hood
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87191)),	-- Sha-Skin Mantle
 						}),
 						cl(DRUID, {

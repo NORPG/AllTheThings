@@ -5599,16 +5599,16 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			q(66375, {	-- DF Weekly Inscription Knowledgepoint #1
 				["name"] = "DF Inscription Treasure #1",
-				["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
+				["provider"] = { "i", 193904 },	-- Phoenix Feather Quill
 			}),
 			q(66376, {	-- DF Weekly Inscription Knowledgepoint #2
 				["name"] = "DF Inscription Treasure #2",
-				["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
+				["provider"] = { "i", 193905 },	-- Iskaaran Trading Ledger
 			}),
 			q(70518, {	-- DF Weekly Inscription Knowledgepoint #3
 				["name"] = "DF Inscription Drop #1: Qalashi Djaradin",
 				["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
+				["provider"] = { "i", 198971 },	-- Curious Djaradin Rune
 				["coords"] = {
 					{ 39.6, 51.4, THE_WAKING_SHORES },
 					{ 34.8, 68.6, THE_WAKING_SHORES },
@@ -5622,7 +5622,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(70519, {	-- DF Weekly Inscription Knowledgepoint #4
 				["name"] = "DF Inscription Drop #2: Dragon-kin/Proto Drakes",
 				["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198972 },		-- Draconic Glamour
+				["provider"] = { "i", 198972 },	-- Draconic Glamour
 				["coord"] = { 44.0, 81.8, THALDRASZUS },
 				["crs"] = {
 					193973,	-- Mistyvale Splashcaster

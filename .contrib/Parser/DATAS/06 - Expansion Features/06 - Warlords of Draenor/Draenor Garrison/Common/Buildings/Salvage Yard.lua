@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9468, {		-- Salvaging Pays Off
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111977) },		-- Salvage Yard, Level 3 [Blueprints]
+							["groups"] = { i(111977) },	-- Salvage Yard, Level 3 [Blueprints]
 						}),
 					}),
 					n(QUESTS, {

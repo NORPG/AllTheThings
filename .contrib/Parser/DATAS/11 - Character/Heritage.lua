@@ -30,7 +30,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 			q(53736, {	-- Lament of the Highborne
 				["sourceQuest"] = 53735,	-- The First to Fall
-				["provider"] = { "n", 145005 },		-- Lor'themar Theron
+				["provider"] = { "n", 145005 },	-- Lor'themar Theron
 				["coord"] = { 37.2, 66.4, GHOSTLANDS },	-- Pickup Quest
 			}),
 			q(53737, {	-- The Day Hope Died
@@ -1769,8 +1769,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 			q(54983, {	-- Waking a Dreamer
 				["sourceQuests"] = {
-					54981,		-- Cry to the Moon
-					54982,		-- The Spirit of the Hunter
+					54981,	-- Cry to the Moon
+					54982,	-- The Spirit of the Hunter
 				},
 				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
 				["coord"] = { 46.4, 36.9, DUSKWOOD },

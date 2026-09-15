@@ -28,9 +28,9 @@ root(ROOTS.ExpansionFeatures,
 						crit(36549),	-- Battle for Val'sharah
 					}),
 					ach(11240, {	-- Harbinger
-						crit(33145),		-- Waterlogged Tome (Deadwind Pass - near Karazhan - Master's Cellar)
-						crit(33146),		-- Fel-Ravaged Tome (Vault of the Wardens)
-						crit(33147),		-- Cursed Tome (Shadowmoon Valley - D)
+						crit(33145),	-- Waterlogged Tome (Deadwind Pass - near Karazhan - Master's Cellar)
+						crit(33146),	-- Fel-Ravaged Tome (Vault of the Wardens)
+						crit(33147),	-- Cursed Tome (Shadowmoon Valley - D)
 					}),
 				}),
 				n(QUESTS, {

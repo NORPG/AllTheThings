@@ -104,9 +104,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{  27.5, 57.8, ARDENWEALD },	-- 6
 				},
 				["questID"] = 61192,
-				["groups"] = {
-					i(180727),		-- Shimmermist Runner (MOUNT!)
-				},
+				["groups"] = { i(180727) },	-- Shimmermist Runner (MOUNT!)
 			}),
 			n(181694, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Lost Soul (Cat)
 				["description"] = "This soul is found in the crotch of one of the six super trees in Ardenweald. Target and use /soothe on the Lost Soul to receive the quest.",

@@ -535,7 +535,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(11121),	-- Darkwater Talwar
 					i(3078),	-- Naga Heartpiercer
-					i(888),		-- Naga Battle Gloves
+					i(888),	-- Naga Battle Gloves
 				},
 				-- #endif
 			}),
@@ -631,7 +631,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(132554, {	-- Deadly Serpentine Grips
 						["timeline"] = { ADDED_7_0_3 },
 					}),
-					i(888),		-- Naga Battle Gloves
+					i(888),	-- Naga Battle Gloves
 					i(151435, {	-- Domina's Deathmaw Greaves
 						["timeline"] = { ADDED_7_3_0 },
 					}),

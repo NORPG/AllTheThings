@@ -296,7 +296,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					["sourceQuests"] = { 77203 },	-- Preserving Rarities
 					["qg"] = 206864,	-- Preservationist Kathos
 					["coords"] = {
-						{ 47.4, 48.1, VALDRAKKEN },		-- Preservationist Kathos
+						{ 47.4, 48.1, VALDRAKKEN },	-- Preservationist Kathos
 						{ 12.4, 49.2, THE_AZURE_SPAN },	-- Elder Poa
 						{ 48.0, 74.8, DRAGONBLIGHT },	-- Elder Ko'nani
 						{ 33.6, 58.5, BOREAN_TUNDRA },	-- Statue

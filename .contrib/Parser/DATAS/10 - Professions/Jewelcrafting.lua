@@ -421,7 +421,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		------ 7.3.0 ------
 		q(48075, {	-- A Colorful Key
 			["sourceQuests"] = { 46941 },	-- The Path Forward
-			["provider"] = { "n", 125343 },		-- Vorel
+			["provider"] = { "n", 125343 },	-- Vorel
 			["coord"] = { 44.5, 73.4, THE_VINDICAAR_KROKUUN_UPPER },
 			["timeline"] = { ADDED_7_3_0 },
 			["groups"] = {
@@ -434,7 +434,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 		q(48076, {	-- A Crowning Achievment
 			["sourceQuests"] = { 48075 },	-- A Colorful Key
-			["provider"] = { "n", 125343 },		-- Vorel
+			["provider"] = { "n", 125343 },	-- Vorel
 			["coord"] = { 44.5, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
 			["timeline"] = { ADDED_7_3_0 },
 			["groups"] = {
@@ -450,7 +450,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				i(151878),	-- Empyrial Crown (QI!)
 				i(151933),	-- Empyrial Florid Malachite Setting (QI!)
 				i(151932),	-- Empyrial Hesselian Setting (QI!)
-				
+
 			},
 		}),
 	})),
@@ -1053,11 +1053,11 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			q(66388, {	-- DF Weekly Jewelcrafting Knowledgepoint #1
 				["name"] = "DF Jewelcrafting Treasure #1",
-				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
+				["provider"] = { "i", 193909 },	-- Ancient Gem Fragments
 			}),
 			q(66389, {	-- DF Weekly Jewelcrafting Knowledgepoint #2
 				["name"] = "DF Jewelcrafting Treasure #2",
-				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
+				["provider"] = { "i", 193907 },	-- Chipped Tyrstone
 			}),
 			q(70521, {	-- DF Weekly Jewelcrafting Knowledgepoint #3
 				["name"] = "DF Jewelcrafting Drop #1: Well Dressed",

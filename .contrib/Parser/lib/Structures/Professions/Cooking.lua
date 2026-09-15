@@ -38,7 +38,7 @@ CLASSIC_COOKING = {
 		["rank"] = 4,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264632, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Classic Cooking
-	r(818),		-- Cooking Fire
+	r(818),	-- Cooking Fire
 	r(6499),	-- Boiled Clams
 	r(46684, {["timeline"] = {ADDED_4_1_0}}),	-- Charred Bear Kabobs
 	r(2538),	-- Charred Wolf Meat
@@ -73,7 +73,7 @@ TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		["rank"] = 5,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264634, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Cooking
-	r(818),		-- Cooking Fire
+	r(818),	-- Cooking Fire
 	r(42302, {["timeline"] = {ADDED_4_0_1}}),	-- Fisherman's Feast
 	r(42305, {["timeline"] = {ADDED_4_0_1}}),	-- Hot Buttered Trout
 	r(42296, {["timeline"] = {ADDED_4_0_1}}),	-- Stewed Trout
@@ -89,7 +89,7 @@ WRATH_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		["rank"] = 6,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264636, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Cooking
-	r(818),		-- Cooking Fire
+	r(818),	-- Cooking Fire
 	r(45569),	-- Baked Manta Ray
 	r(64358, {["timeline"] = {ADDED_3_1_0}}),	-- Black Jelly
 	r(58065),	-- Dalaran Clam Chowder
@@ -266,7 +266,7 @@ DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ ["
 	},
 })));
 BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-	r(818),		-- Cooking Fire
+	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260337),	-- Boralus-Style Lobster Platter
 	})),
@@ -316,7 +316,7 @@ NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] 
 }));
 SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309830),	-- Shadowlands Cooking
-	r(818),		-- Cooking Fire
+	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260334),	-- Caramel Mint Noodle Dish
 	})),
@@ -339,7 +339,7 @@ SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 }));
 DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366256),	-- Dragon Isles Cooking
-	r(818),		-- Cooking Fire
+	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260333),	-- Bruffalon Rib Platter
 		r(1266555),	-- Drake Kebab Platter
@@ -361,7 +361,7 @@ DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 }));
 TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423333),	-- Khaz Algar Cooking
-	r(818),		-- Cooking Fire
+	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1245995),	-- Dornic Sliced Mineloaf
 		r(1245994),	-- Earthen Hospitality Cheese-Like Brick
@@ -404,7 +404,7 @@ TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 });
 MID_COOKING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471005),	-- Midnight Cooking
-	r(818),		-- Cooking Fire
+	r(818),	-- Cooking Fire
 	r(1295534, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Cornucopia
 	r(1226183),	-- Arcano Cutlets
 	r(1226194),	-- Argentleaf Tea

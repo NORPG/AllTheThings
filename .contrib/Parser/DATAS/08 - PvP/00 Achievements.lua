@@ -24,7 +24,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	applyclassicphase(CATA_PHASE_ONE, ach(5363, {	-- 250000 Honorable Kills
 		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
-			title(184),		-- <Name> the Bloodthirsty
+			title(184),	-- <Name> the Bloodthirsty
 		},
 	})),
 	applyclassicphase(TBC_PHASE_ONE, ach(230, {	-- Battlemaster (Alliance)
@@ -51,7 +51,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 				["timeline"] = { ADDED_3_0_2 }
 			}),
 			-- #else
-			title(41),		-- Battlemaster <Name>
+			title(41),	-- Battlemaster <Name>
 			-- #endif
 		},
 	})),
@@ -85,7 +85,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 				["timeline"] = { ADDED_3_0_2 }
 			}),
 			-- #else
-			title(41),		-- Battlemaster <Name>
+			title(41),	-- Battlemaster <Name>
 			-- #endif
 		},
 	})),
@@ -951,10 +951,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #if NOT ANYCLASSIC
 		["groups"] = {
 			-- TODO: Maybe make this appear in the mini list?
-			crit(6633),		-- Thunder Bluff
-			crit(6634),		-- Silvermoon City
-			crit(6635),		-- Orgrimmar
-			crit(6636),		-- Undercity
+			crit(6633),	-- Thunder Bluff
+			crit(6634),	-- Silvermoon City
+			crit(6635),	-- Orgrimmar
+			crit(6636),	-- Undercity
 		},
 		-- #endif
 	}),
@@ -964,10 +964,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #if NOT ANYCLASSIC
 		["groups"] = {
 			-- TODO: Maybe make this appear in the mini list?
-			crit(6637),		-- Ironforge
-			crit(6638),		-- Darnassus
-			crit(6639),		-- The Exodar
-			crit(6640),		-- Stormwind City
+			crit(6637),	-- Ironforge
+			crit(6638),	-- Darnassus
+			crit(6639),	-- The Exodar
+			crit(6640),	-- Stormwind City
 		},
 		-- #endif
 	}),

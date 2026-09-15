@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(82584, {	-- Light's Gambit
 					["coord"] = { 48.6, 39.4, HALLOWFALL },
 					["groups"] = {
-						ach(40729),		-- Light's Gambit Champion
+						ach(40729),	-- Light's Gambit Champion
 					},
 				}),
 				q(82582, {	-- Mired in Shadow
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(82288, {	-- Work Hard, Play Hard
 					["coord"] = { 41.8, 55.3, HALLOWFALL },
 					["groups"] = {
-						ach(40150),		-- Children's Entertainer
+						ach(40150),	-- Children's Entertainer
 					},
 				}),
 				n(SPECIAL, {

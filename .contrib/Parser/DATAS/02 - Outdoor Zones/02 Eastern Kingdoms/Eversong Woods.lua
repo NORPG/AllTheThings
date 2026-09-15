@@ -1211,8 +1211,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE CATA
-						recipe(6991),		-- Feed Pet
-						recipe(982),		-- Revive Pet
+						recipe(6991),	-- Feed Pet
+						recipe(982),	-- Revive Pet
 						-- #endif
 					},
 				}),
@@ -2163,9 +2163,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(8932),	-- Alterac Swiss
-						i(414),		-- Dalaran Sharp
+						i(414),	-- Dalaran Sharp
 						i(2070),	-- Darnassian Bleu
-						i(422),		-- Dwarven Mild
+						i(422),	-- Dwarven Mild
 						i(3927),	-- Fine Aged Cheddar
 						i(1707),	-- Stormwind Brie
 					},

@@ -1381,7 +1381,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-			i(36),		-- Worn Mace
+			i(36),	-- Worn Mace
 			i(2362),	-- Worn Wooden Shield
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
@@ -1680,7 +1680,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(20978, {	-- Apprentice's Staff
 				["timeline"] = { ADDED_3_0_2 },
 			}),
-			i(35),		-- Bent Staff
+			i(35),	-- Bent Staff
 			i(232038, {	-- Creche-Binder's Rod
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },

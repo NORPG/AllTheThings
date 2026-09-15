@@ -13,22 +13,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(17799),		-- Combatant I: Dragonflight Season 2
-			ach(17800),		-- Combatant II: Dragonflight Season 2
-			ach(17797),		-- Challenger I: Dragonflight Season 2
-			ach(17798),		-- Challenger II: Dragonflight Season 2
-			ach(17795),		-- Rival I: Dragonflight Season 2
-			ach(17796),		-- Rival II: Dragonflight Season 2
+			ach(17799),	-- Combatant I: Dragonflight Season 2
+			ach(17800),	-- Combatant II: Dragonflight Season 2
+			ach(17797),	-- Challenger I: Dragonflight Season 2
+			ach(17798),	-- Challenger II: Dragonflight Season 2
+			ach(17795),	-- Rival I: Dragonflight Season 2
+			ach(17796),	-- Rival II: Dragonflight Season 2
 			ach(17794, {	-- Duelist: Dragonflight Season 2
 				ill(6836),	-- Shadow Flame (ILLUSION!)
 				i(205361),	-- Obsidian Gladiator's Prestigious Cloak
 			}),
-			ach(17831),		-- Elite: Dragonflight Season 2
+			ach(17831),	-- Elite: Dragonflight Season 2
 			ach(17740, {	-- Gladiator: Dragonflight Season 2
 				i(205233),	-- Obsidian Gladiator's Slitherdrake (MOUNT!)
 				i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (MM!)
 			}),
-			ach(17778),		-- Obsidian Gladiator's Drake
+			ach(17778),	-- Obsidian Gladiator's Drake
 			ach(17764, {	-- Obsidian Gladiator: Dragonflight Season 2
 				title(499),	-- Obsidian Gladiator <Name>
 			}),
@@ -47,7 +47,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(500),	-- Obsidian Legend <Name>
 			}),
 			-- Fashion
-			ach(18249, { ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_11_0_5 } }),		-- Obsidian Tie Event
+			ach(18249, { ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_11_0_5 } }),	-- Obsidian Tie Event
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 			i(205246, {	-- Vicious War Snail [A] (MOUNT!)
@@ -164,19 +164,19 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["groups"] = {
 					-- #if BEFORE TWW
-					bloody(500, iensemble(211172)),		-- Arsenal: Scalewarden's Axe
-					bloody(500, iensemble(211176)),		-- Arsenal: Scalewarden's Club
-					bloody(500, iensemble(211175)),		-- Arsenal: Scalewarden's Mace
-					bloody(500, iensemble(211177)),		-- Arsenal: Scalewarden's Shortsword
-					bloody(800, iensemble(211169)),		-- Arsenal: Scalewarden's Greatsword
-					bloody(500, iensemble(211165)),		-- Arsenal: Scalewarden's Gun
-					bloody(500, iensemble(211174)),		-- Arsenal: Scalewarden's Dagger
-					bloody(300, iensemble(211167)),		-- Arsenal: Scalewarden's Offhand
-					bloody(800, iensemble(211170)),		-- Arsenal: Scalewarden's Polearm
-					bloody(300, iensemble(211171)),		-- Arsenal: Scalewarden's Shield
-					bloody(800, iensemble(211168)),		-- Arsenal: Scalewarden's Stave
-					bloody(500, iensemble(211166)),		-- Arsenal: Scalewarden's Wand
-					bloody(500, iensemble(211173)),		-- Arsenal: Scalewarden's Warglaive
+					bloody(500, iensemble(211172)),	-- Arsenal: Scalewarden's Axe
+					bloody(500, iensemble(211176)),	-- Arsenal: Scalewarden's Club
+					bloody(500, iensemble(211175)),	-- Arsenal: Scalewarden's Mace
+					bloody(500, iensemble(211177)),	-- Arsenal: Scalewarden's Shortsword
+					bloody(800, iensemble(211169)),	-- Arsenal: Scalewarden's Greatsword
+					bloody(500, iensemble(211165)),	-- Arsenal: Scalewarden's Gun
+					bloody(500, iensemble(211174)),	-- Arsenal: Scalewarden's Dagger
+					bloody(300, iensemble(211167)),	-- Arsenal: Scalewarden's Offhand
+					bloody(800, iensemble(211170)),	-- Arsenal: Scalewarden's Polearm
+					bloody(300, iensemble(211171)),	-- Arsenal: Scalewarden's Shield
+					bloody(800, iensemble(211168)),	-- Arsenal: Scalewarden's Stave
+					bloody(500, iensemble(211166)),	-- Arsenal: Scalewarden's Wand
+					bloody(500, iensemble(211173)),	-- Arsenal: Scalewarden's Warglaive
 					bloody(3000, iensemble(211141)),	-- Ensemble: Scalewarden's Cloth Armor
 					bloody(3000, iensemble(211139)),	-- Ensemble: Scalewarden's Leather Armor
 					bloody(3000, iensemble(211136)),	-- Ensemble: Scalewarden's Mail Armor

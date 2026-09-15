@@ -208,11 +208,11 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245576) },	-- Bel'ameth Round Interior Pillar (DECOR!)
 			}),
 			q(92994, {	-- Decor Treasure Hunt
-				["coord"] = { 36.9, 32.9, FOUNDERS_POINT },		-- Treasure
+				["coord"] = { 36.9, 32.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245575) },	-- Bel'ameth Interior Wall (DECOR!)
 			}),
 			q(92995, {	-- Decor Treasure Hunt
-				["coord"] = { 30.9, 31.1, FOUNDERS_POINT },		-- Treasure
+				["coord"] = { 30.9, 31.1, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(255650) },	-- Elegant Table Lamp (DECOR!)
 			}),
 			q(92996, {	-- Decor Treasure Hunt

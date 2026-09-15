@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(42080),	-- Bastion of Bradensbrook
 			q(41961),	-- Black Rook Holdings
 			q(42023, {	-- Black Rook Rumble
-				ach(11477),		-- Off the Top Rook
+				ach(11477),	-- Off the Top Rook
 			}),
 			q(41955),	-- Bloodline of Stone
 			q(42075),	-- Botanical Backlash

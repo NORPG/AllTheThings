@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(70123, {	-- Primal Pests [A]
-					["sourceQuests"] = { 67700 },		-- To The Dragon Isles! [A]
+					["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
 					["provider"] = { "n", 189035 },	-- Scalecommander Azurathel
 					["coord"] = { 82.2, 31.8, THE_WAKING_SHORES },
 					["races"] = ALLIANCE_ONLY,

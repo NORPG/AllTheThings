@@ -2171,10 +2171,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(235712, {["timeline"] = {ADDED_11_1_5}}),	-- Void-Crystal Panther (MOUNT!)
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(215125, {["requireSkill"] = ENCHANTING}),		-- Enchanter's Crystal
+			i(215125, {["requireSkill"] = ENCHANTING}),	-- Enchanter's Crystal
 			i(215124, {["requireSkill"] = JEWELCRAFTING}),	-- Extravagant Loupes
 			i(215123, {["requireSkill"] = INSCRIPTION}),	-- Forger's Font Inspector
-			i(215121, {["requireSkill"] = ENCHANTING}),		-- Incanter's Shard
+			i(215121, {["requireSkill"] = ENCHANTING}),	-- Incanter's Shard
 			i(215122, {["requireSkill"] = INSCRIPTION}),	-- Novelist's Specs
 			i(215120, {["requireSkill"] = JEWELCRAFTING}),	-- Radiant Loupes
 			i(215119, {["requireSkill"] = INSCRIPTION}),	-- Right-Handed Magnifying Glass

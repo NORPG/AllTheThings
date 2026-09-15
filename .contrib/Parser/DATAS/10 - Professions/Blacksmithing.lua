@@ -670,7 +670,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["coord"] = { 40.6, 65.6, THE_VINDICAAR_KROKUUN_LOWER },
 			["cost"] = {
 				{ "i", 151564, 42 },	-- 42x Empyrium
-				{ "i", 151568, 2 },		-- 2x Primal Sargerite
+				{ "i", 151568, 2 },	-- 2x Primal Sargerite
 			},
 			["groups"] = {
 				r(247710),	-- Empyrial Breastplate [Rank 1] (RECIPE!)
@@ -1190,7 +1190,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			q(70512, {	-- DF Weekly Blacksmithing Knowledgepoint #4
 				["name"] = "DF Blacksmithing Drop #2: Earth Elemental",
 				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
+				["provider"] = { "i", 198965 },	-- Primeval Earth Fragment
 				["coords"] = {
 					{ 50.6, 57.6, THALDRASZUS },
 					{ 48.8, 60.6, THALDRASZUS },

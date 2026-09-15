@@ -19,8 +19,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(220765),	-- Sha Corruption (ILLUSION!)
 					},
 				}),
-				ach(19998),		-- Elusive Foes: Dread Wastes
-				ach(20031),		-- Explore Dread Wastes (automated)
+				ach(19998),	-- Elusive Foes: Dread Wastes
+				ach(20031),	-- Explore Dread Wastes (automated)
 				ach(19967, {	-- Tour Dread Wastes
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -32,7 +32,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(FACTIONS, {
 				faction(FACTION_THE_KLAXXI, {	-- The Klaxxi
 					n(ACHIEVEMENTS, {
-						ach(19915),		-- The Klaxxi
+						ach(19915),	-- The Klaxxi
 					}),
 				}),
 			}),

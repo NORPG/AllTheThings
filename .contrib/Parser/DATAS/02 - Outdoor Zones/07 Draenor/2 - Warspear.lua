@@ -1436,7 +1436,7 @@ root(ROOTS.Zones, {
 								}, {	-- Revered
 								}, {	-- Exalted
 									moh(100, i(116775, {	-- Breezestrider Stallion (MOUNT!)
-										["cost"] = { { "g", 50000000 } },		-- 5,000g
+										["cost"] = { { "g", 50000000 } },	-- 5,000g
 									})),
 									i(115518),	-- Vol'jin's Spear Tabard
 								},
@@ -1905,7 +1905,7 @@ root(ROOTS.Zones, {
 									recipe(175392),	-- Savage Tarot
 									recipe(166669),	-- Card of Omens
 									recipe(178497),	-- Warbinder's Ink
-									i(120136),		-- Recipe: Secrets of Draenor Inscription
+									i(120136),	-- Recipe: Secrets of Draenor Inscription
 								}),
 								i(118605, {	-- Technique: Crystalfire Spellstaff (RECIPE!)
 									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription

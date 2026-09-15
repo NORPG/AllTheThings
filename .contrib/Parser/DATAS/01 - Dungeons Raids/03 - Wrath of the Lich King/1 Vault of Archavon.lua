@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				applyclassicphase(WRATH_PHASE_THREE, e(1599, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_0 } }, {	-- Koralon the Flame Watcher
 					["creatureID"] = 35013,
 					["groups"] = {
-						ach(3836),		-- Koralon the Flame Watcher (10 player)
+						ach(3836),	-- Koralon the Flame Watcher (10 player)
 						i(42037),	-- Furious Gladiator's Pendant of Ascendancy
 						i(42039),	-- Furious Gladiator's Pendant of Deliverance
 						i(42036),	-- Furious Gladiator's Pendant of Dominance
@@ -211,7 +211,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				applyclassicphase(WRATH_PHASE_TWO, e(1598, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {	-- Emalon the Storm Watcher
 					["creatureID"] = 33993,
 					["groups"] = {
-						ach(3136),		-- Emalon the Storm Watcher (10 player)
+						ach(3136),	-- Emalon the Storm Watcher (10 player)
 						i(42030),	-- Deadly Gladiator's Pendant of Ascendancy
 						i(42032),	-- Deadly Gladiator's Pendant of Deliverance
 						i(42029),	-- Deadly Gladiator's Pendant of Dominance
@@ -333,7 +333,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				applyclassicphase(WRATH_PHASE_FOUR, e(1600, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_2 } }, {	-- Toravon the Ice Watcher
 					["creatureID"] = 38433,
 					["groups"] = {
-						ach(4585),		-- Toravon the Ice Watcher (10 player)
+						ach(4585),	-- Toravon the Ice Watcher (10 player)
 						i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
 						i(42046),	-- Relentless Gladiator's Pendant of Deliverance
 						i(42043),	-- Relentless Gladiator's Pendant of Dominance
@@ -456,7 +456,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				e(1597, {	-- Archavon the Stone Watcher
 					["creatureID"] = 31125,
 					["groups"] = {
-						ach(1722),		-- Archavon the Stone Watcher (10 player)
+						ach(1722),	-- Archavon the Stone Watcher (10 player)
 						i(41085),	-- Hateful Gladiator's Chain Armor
 						i(41659),	-- Hateful Gladiator's Dragonhide Robes
 						i(40781),	-- Hateful Gladiator's Dreadplate Chestpiece
@@ -577,7 +577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				applyclassicphase(WRATH_PHASE_THREE, e(1599, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_0 } }, {	-- Koralon the Flame Watcher
 					["creatureID"] = 35013,
 					["groups"] = {
-						ach(3837),		-- Koralon the Flame Watcher (25 player)
+						ach(3837),	-- Koralon the Flame Watcher (25 player)
 						i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
 						i(42046),	-- Relentless Gladiator's Pendant of Deliverance
 						i(42043),	-- Relentless Gladiator's Pendant of Dominance
@@ -750,7 +750,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				applyclassicphase(WRATH_PHASE_TWO, e(1598, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {	-- Emalon the Storm Watcher
 					["creatureID"] = 33993,
 					["groups"] = {
-						ach(3137),		-- Emalon the Storm Watcher (25 player)
+						ach(3137),	-- Emalon the Storm Watcher (25 player)
 						i(42037),	-- Furious Gladiator's Pendant of Ascendancy
 						i(42039),	-- Furious Gladiator's Pendant of Deliverance
 						i(42036),	-- Furious Gladiator's Pendant of Dominance
@@ -873,7 +873,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				applyclassicphase(WRATH_PHASE_FOUR, e(1600, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_2 } }, {	-- Toravon the Ice Watcher
 					["creatureID"] = 38433,
 					["groups"] = {
-						ach(4586),		-- Toravon the Ice Watcher (25 player)
+						ach(4586),	-- Toravon the Ice Watcher (25 player)
 						i(51335),	-- Wrathful Gladiator's Pendant of Ascendancy
 						i(51349),	-- Wrathful Gladiator's Pendant of Deliverance
 						i(51331),	-- Wrathful Gladiator's Pendant of Dominance
@@ -996,7 +996,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				e(1597, {	-- Archavon the Stone Watcher
 					["creatureID"] = 31125,
 					["groups"] = {
-						ach(1721),		-- Archavon the Stone Watcher (25 player)
+						ach(1721),	-- Archavon the Stone Watcher (25 player)
 						i(41086),	-- Deadly Gladiator's Chain Armor
 						i(41660),	-- Deadly Gladiator's Dragonhide Robes
 						i(40784),	-- Deadly Gladiator's Dreadplate Chestpiece

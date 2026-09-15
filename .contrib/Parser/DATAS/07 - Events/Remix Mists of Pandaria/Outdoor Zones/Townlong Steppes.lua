@@ -7,9 +7,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = 618796,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(19889),		-- Campaign: Townlong Steppes
-				ach(19997),		-- Elusive Foes: Townlong Steppes
-				ach(20030),		-- Explore Townlong Steppes (automated)
+				ach(19889),	-- Campaign: Townlong Steppes
+				ach(19997),	-- Elusive Foes: Townlong Steppes
+				ach(20030),	-- Explore Townlong Steppes (automated)
 				ach(19981, {	-- Hidden Treasures: Townlong Steppes
 					crit(65491, {	-- Fragment of Dread
 						["_quests"] = { 31423 },
@@ -31,7 +31,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19900,	-- Siege of Niuzao Temple
 					}},
 				}),
-				ach(19914),		-- Shado-Pan
+				ach(19914),	-- Shado-Pan
 				ach(19966, {	-- Tour Townlong Steppes
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

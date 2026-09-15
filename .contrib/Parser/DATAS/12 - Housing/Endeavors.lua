@@ -1000,7 +1000,10 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(268106, {	-- Taifa <Endeavor Trader>
-					["coords"] = EndeavorVendorCoords,
+					["coords"] = {
+						{ 52.9, 39.0, FOUNDERS_POINT },
+						{ 54.4, 56.0, RAZORWIND_SHORES },
+					},
 					["groups"] = {
 						i_DecorCoupons(280236, 30),	-- Ancient Memories of the Sea (DECOR!)
 						i_DecorCoupons(280227, 25),	-- Apothecary's Tortollan Display Rack (DECOR!)

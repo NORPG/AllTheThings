@@ -624,8 +624,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				})),
 				-- Guild Achievements
-				ach(15472),		-- Sepulcher of the First Ones Guild Run
-				ach(15473),		-- Heroic Sepulcher of the First Ones Guild Run
+				ach(15472),	-- Sepulcher of the First Ones Guild Run
+				ach(15473),	-- Heroic Sepulcher of the First Ones Guild Run
 			}),
 			CommonBossDrops({
 				i(187806),	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
@@ -1065,7 +1065,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					ach(15489, {	-- Mythic: The Jailer
 						title(455),	-- <Name>, Guardian of the Pattern
 					}),
-					ach(15474),		-- Mythic The Jailer Guild Run
+					ach(15474),	-- Mythic The Jailer Guild Run
 					ig(190768),	-- Zereth Overseer (MOUNT!)
 				}),
 				Boss(THE_JAILER, bubbleDown({["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {

@@ -76,13 +76,13 @@ root(ROOTS.Zones, {
 						}, {	-- Honored
 							i(142333, {	-- Manual: Feathered Luffa (RECIPE!)
 								["timeline"] = { ADDED_7_1_0 },
-								["cost"] = 6000000,		-- 600g
+								["cost"] = 6000000,	-- 600g
 							}),
 							i(137713, {	-- Schematic: Bolt-Action Headgun [Rank 3] (RECIPE!)
-								["cost"] = 5500000,		-- 550g
+								["cost"] = 5500000,	-- 550g
 							}),
 							i(137714, {	-- Schematic: Reinforced Headgun [Rank 3] (RECIPE!)
-								["cost"] = 5500000,		-- 550g
+								["cost"] = 5500000,	-- 550g
 							}),
 							i(130191),	-- Trapped Treasure Chest Kit (TOY!)
 						}, {	-- Revered
@@ -93,14 +93,14 @@ root(ROOTS.Zones, {
 								},
 							}),
 							i(136898, {	-- Fledgling Warden Owl (PET!)
-								["cost"] = 5000000,		-- 500g
+								["cost"] = 5000000,	-- 500g
 							}),
 							i(142331, {	-- Recipe: Spiced Falcosaur Omelet (RECIPE!)
 								["timeline"] = { ADDED_7_1_0 },
 								["cost"] = 10000000,	-- 1,000g
 							}),
 							i(130157, {	-- Syxsehnz Rod (TOY!)
-								["cost"] = 5000000,		-- 500g
+								["cost"] = 5000000,	-- 500g
 							}),
 							i(137773, {	-- Vantus Rune Technique: Cenarius [Rank 3] (RECIPE!)
 								["cost"] = 20000000,	-- 2,000g
@@ -151,14 +151,14 @@ root(ROOTS.Zones, {
 								["cost"] = 5000000,	-- 500g
 								["groups"] = {
 									ach(11175, {	-- Higher Dimensional Learning (Azsuna)
-										i(140493),		-- Adept's Guide to Dimensional Rifting
-										crit(32196),		-- Beginner's Guide to Dimensional Rifting Ch. 1 - Navigating Through Time
-										crit(32197),		-- Beginner's Guide to Dimensional Rifting Ch. 2 - Holy Places to Many
-										crit(32198),		-- Beginner's Guide to Dimensional Rifting Ch. 3 - Water, Just Water
-										crit(32199),		-- Beginner's Guide to Dimensional Rifting Ch. 4 - Risks and Rewards
-										crit(32200),		-- Beginner's Guide to Dimensional Rifting Ch. 5 - Finding Others Along the Way
-										crit(32201),		-- Beginner's Guide to Dimensional Rifting Ch. 6 - Pent up Energy
-										crit(32202),		-- Beginner's Guide to Dimensional Rifting Ch. 7 - Our Legacy
+										i(140493),	-- Adept's Guide to Dimensional Rifting
+										crit(32196),	-- Beginner's Guide to Dimensional Rifting Ch. 1 - Navigating Through Time
+										crit(32197),	-- Beginner's Guide to Dimensional Rifting Ch. 2 - Holy Places to Many
+										crit(32198),	-- Beginner's Guide to Dimensional Rifting Ch. 3 - Water, Just Water
+										crit(32199),	-- Beginner's Guide to Dimensional Rifting Ch. 4 - Risks and Rewards
+										crit(32200),	-- Beginner's Guide to Dimensional Rifting Ch. 5 - Finding Others Along the Way
+										crit(32201),	-- Beginner's Guide to Dimensional Rifting Ch. 6 - Pent up Energy
+										crit(32202),	-- Beginner's Guide to Dimensional Rifting Ch. 7 - Our Legacy
 									}),
 								},
 							}),

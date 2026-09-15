@@ -7,9 +7,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH },
 	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
-			ach(14685),		-- Combatant: Shadowlands Season 1
-			ach(14686),		-- Challenger: Shadowlands Season 1
-			ach(14687),		-- Rival: Shadowlands Season 1
+			ach(14685),	-- Combatant: Shadowlands Season 1
+			ach(14686),	-- Challenger: Shadowlands Season 1
+			ach(14687),	-- Rival: Shadowlands Season 1
 			ach(14688, {	-- Duelist: Shadowlands Season 1
 				ill(6266),	-- Sinful Flame (ILLUSION!)
 				i(180424),	-- Sinful Gladiator's Prestigious Cloak
@@ -20,7 +20,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			ach(14689, {	-- Gladiator: Shadowlands Season 1
 				i(183937),	-- Sinful Gladiator's Soul Eater (MOUNT!)
 			}),
-			ach(14816),		-- Sinful Gladiator's Soul Eater
+			ach(14816),	-- Sinful Gladiator's Soul Eater
 			ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
 				title(434),	-- Sinful Gladiator <Name>
 			}),

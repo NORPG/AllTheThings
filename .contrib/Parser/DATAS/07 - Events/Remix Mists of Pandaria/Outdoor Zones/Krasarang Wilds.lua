@@ -13,9 +13,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19918, {	-- Dominance Offensive [H]
 					["races"] = HORDE_ONLY,
 				}),
-				ach(19995),		-- Elusive Foes: Krasarang Wilds
-				ach(19999),		-- Elusive Foes: Landfall
-				ach(20028),		-- Explore Krasarang Wilds (automated)
+				ach(19995),	-- Elusive Foes: Krasarang Wilds
+				ach(19999),	-- Elusive Foes: Landfall
+				ach(20028),	-- Explore Krasarang Wilds (automated)
 				ach(19979, {		-- Hidden Treasures: Krasarang Wilds
 					crit(65483, {	-- Saurok Stone Tablet
 						["_quests"] = { 31408 },

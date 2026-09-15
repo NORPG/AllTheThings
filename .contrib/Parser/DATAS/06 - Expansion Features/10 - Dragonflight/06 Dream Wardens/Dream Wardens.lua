@@ -335,7 +335,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 208143 },	-- Keeper Amrymn
 						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78388 },		-- Gigantic Dreamseeds
+						["lockCriteria"] = { 1, "questID", 78388 },	-- Gigantic Dreamseeds
 						["DisablePartySync"] = true,
 					}),
 				}, {	-- RENOWN 17 --
@@ -347,7 +347,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 208143 },	-- Keeper Amrymn
 						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78388 },		-- Gigantic Dreamseeds
+						["lockCriteria"] = { 1, "questID", 78388 },	-- Gigantic Dreamseeds
 						["DisablePartySync"] = true,
 					}),
 				}, {	-- RENOWN 18 --

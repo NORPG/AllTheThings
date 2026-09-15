@@ -19,9 +19,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
-			ach(11028),		-- Challenger: Legion Season 2
-			ach(11027),		-- Rival: Legion Season 2
-			ach(11026),		-- Duelist: Legion Season 2
+			ach(11028),	-- Challenger: Legion Season 2
+			ach(11027),	-- Rival: Legion Season 2
+			ach(11026),	-- Duelist: Legion Season 2
 			ach(11579, {	-- Fearless Elite
 				["timeline"] = { ADDED_7_2_0, REMOVED_7_2_0 },
 			}),

@@ -89,8 +89,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["coord"] = { 59.2, 58.8, EMERALD_DREAM },
 					}),
 				}),
-				ach(19196),		-- Sowing the Seeds
-				ach(19194),		-- The Emerald Bounty
+				ach(19196),	-- Sowing the Seeds
+				ach(19194),	-- The Emerald Bounty
 				ach(19198, {	-- The Seeds I Sow
 					title(527),	-- Blossom Bringer
 				}),

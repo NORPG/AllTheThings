@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(ACHIEVEMENTS, {
-			ach(40840),		-- Adventurer of Azj-Kahet (automated)
+			ach(40840),	-- Adventurer of Azj-Kahet (automated)
 			ach(41189, {	-- Azj the World Turns
 				["timeline"] = { ADDED_11_0_7 },
 				-- Meta Achievement
@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					40634,	-- You Can't Hang With Us
 				}},
 			}),
-			ach(19559),		-- Azj-Kahet (automated)
+			ach(19559),	-- Azj-Kahet (automated)
 			skyriding(ach(40705, {	-- Azj-Kahet Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -37,9 +37,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					40701,	-- Skyriding Glyphs: Untamed Valley
 				}},
 			})),
-			ach(40620),		-- Back to the Wall
-			ach(40629),		-- Bookworm (automated)
-			ach(40822),		-- Explore Azj-Kahet (automated)
+			ach(40620),	-- Back to the Wall
+			ach(40629),	-- Bookworm (automated)
+			ach(40822),	-- Explore Azj-Kahet (automated)
 			ach(40624, {	-- Itsy Bitsy Spider
 				crit(68972, {	-- Webster
 					["coord"] = { 39.4, 65.4, NERUBAR },
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 56.4, 43.2, AZJ_KAHET },
 				}),
 			}),
-			ach(40843),		-- Mine Poppin'
+			ach(40843),	-- Mine Poppin'
 			header(HEADERS.Achievement, 40632, {	-- No Harm Ever Came From Reading A Book
 				q(83741, {	-- Step 1: Interact with the Fleshy Grimoire
 					["name"] = "|cFFFFFFFFStep 1|r: Interact with the Fleshy Grimoire",
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						{ 66.77, 56.26, NERUBAR_LOWER },	-- Void Hole
 					},
 					["groups"] = {
-						ach(40632),		-- No Harm Ever Came From Reading A Book
+						ach(40632),	-- No Harm Ever Came From Reading A Book
 					},
 				}),
 			}),
@@ -176,17 +176,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["timeline"] = { ADDED_11_2_7 },
 				}),
 			}),
-			ach(40636),		-- Sojourner of Azj-Kahet (automated)
+			ach(40636),	-- Sojourner of Azj-Kahet (automated)
 			ach(40633, {	-- The Unseeming
 				["description"] = "Stand in the pool and acquire 100 stacks of 'Unseeming Shift' debuff.",
 				["coord"] = { 67.2, 28.4, AZJ_KAHET },
 			}),
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet
-			ach(40828),		-- Treasures of Azj-Kahet (automated)
+			ach(40828),	-- Treasures of Azj-Kahet (automated)
 			ach(40869, {	-- Worm Theory (automated)
 				i(225934),	-- Lil' Bonechewer (PET!)
 			}),
-			ach(40634),		-- You Can't Hang With Us
+			ach(40634),	-- You Can't Hang With Us
 		}),
 	}),
 }));

@@ -104,7 +104,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					ach(9483),	-- I Was Framed! (Darktide Roost)
-					ach(9434),		-- One of Us! One of Us! (Shadowmoon Enclave)
+					ach(9434),	-- One of Us! One of Us! (Shadowmoon Enclave)
 					ach(9528, {	-- On the Shadow's Trail [A]
 						["sourceQuests"] = { 33116 },	-- To Catch a Shadow
 						["races"] = ALLIANCE_ONLY,
@@ -1098,7 +1098,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(111815),	-- Scribe's Quarters, Level 1
 							i(111923, {	-- Secret of Draenor Inscription
-								i(120136),		-- Recipe: Secrets of Draenor Inscription
+								i(120136),	-- Recipe: Secrets of Draenor Inscription
 								recipe(169081),	-- War Paints
 								recipe(167950),	-- Research: Warbinder's Ink
 								recipe(175390),	-- Laughing Tarot

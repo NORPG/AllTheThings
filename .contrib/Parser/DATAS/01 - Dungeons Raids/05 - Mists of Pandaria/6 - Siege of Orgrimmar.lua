@@ -6,105 +6,105 @@ local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
 			ESSENCE = 105861,	-- Essence of the Cursed Conqueror
-			HELM = 99672,		-- Helm of the Cursed Conqueror
+			HELM = 99672,	-- Helm of the Cursed Conqueror
 			SHOULDERS = 99669,	-- Shoulders of the Cursed Conqueror
-			CHEST = 99678,		-- Chest of the Cursed Conqueror
+			CHEST = 99678,	-- Chest of the Cursed Conqueror
 			GAUNTLETS = 99681,	-- Gauntlets of the Cursed Conqueror
-			LEGS = 99675,		-- Leggings of the Cursed Conqueror
+			LEGS = 99675,	-- Leggings of the Cursed Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			ESSENCE = 105860,	-- Essence of the Cursed Protector
-			HELM = 99673,		-- Helm of the Cursed Protector
+			HELM = 99673,	-- Helm of the Cursed Protector
 			SHOULDERS = 99670,	-- Shoulders of the Cursed Protector
-			CHEST = 99679,		-- Chest of the Cursed Protector
+			CHEST = 99679,	-- Chest of the Cursed Protector
 			GAUNTLETS = 99667,	-- Gauntlets of the Cursed Protector
-			LEGS = 99676,		-- Leggings of the Cursed Protector
+			LEGS = 99676,	-- Leggings of the Cursed Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
 			ESSENCE = 105862,	-- Essence of the Cursed Vanquisher
-			HELM = 99671,		-- Helm of the Cursed Vanquisher
+			HELM = 99671,	-- Helm of the Cursed Vanquisher
 			SHOULDERS = 99668,	-- Shoulders of the Cursed Vanquisher
-			CHEST = 99677,		-- Chest of the Cursed Vanquisher
+			CHEST = 99677,	-- Chest of the Cursed Vanquisher
 			GAUNTLETS = 99680,	-- Gauntlets of the Cursed Vanquisher
-			LEGS = 99674,		-- Leggings of the Cursed Vanquisher
+			LEGS = 99674,	-- Leggings of the Cursed Vanquisher
 		},
 	},
 	NORMAL = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
 			ESSENCE = 105864,	-- Essence of the Cursed Conqueror
-			HELM = 99749,		-- Helm of the Cursed Conqueror
+			HELM = 99749,	-- Helm of the Cursed Conqueror
 			SHOULDERS = 99755,	-- Shoulders of the Cursed Conqueror
-			CHEST = 99743,		-- Chest of the Cursed Conqueror
+			CHEST = 99743,	-- Chest of the Cursed Conqueror
 			GAUNTLETS = 99746,	-- Gauntlets of the Cursed Conqueror
-			LEGS = 99752,		-- Leggings of the Cursed Conqueror
+			LEGS = 99752,	-- Leggings of the Cursed Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			ESSENCE = 105863,	-- Essence of the Cursed Protector
-			HELM = 99750,		-- Helm of the Cursed Protector
+			HELM = 99750,	-- Helm of the Cursed Protector
 			SHOULDERS = 99756,	-- Shoulders of the Cursed Protector
-			CHEST = 99744,		-- Chest of the Cursed Protector
+			CHEST = 99744,	-- Chest of the Cursed Protector
 			GAUNTLETS = 99747,	-- Gauntlets of the Cursed Protector
-			LEGS = 99753,		-- Leggings of the Cursed Protector
+			LEGS = 99753,	-- Leggings of the Cursed Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
 			ESSENCE = 105865,	-- Essence of the Cursed Vanquisher
-			HELM = 99748,		-- Helm of the Cursed Vanquisher
+			HELM = 99748,	-- Helm of the Cursed Vanquisher
 			SHOULDERS = 99754,	-- Shoulders of the Cursed Vanquisher
-			CHEST = 99742,		-- Chest of the Cursed Vanquisher
+			CHEST = 99742,	-- Chest of the Cursed Vanquisher
 			GAUNTLETS = 99745,	-- Gauntlets of the Cursed Vanquisher
-			LEGS = 99751,		-- Leggings of the Cursed Vanquisher
+			LEGS = 99751,	-- Leggings of the Cursed Vanquisher
 		},
 	},
 	HEROIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
 			ESSENCE = 105858,	-- Essence of the Cursed Conqueror
-			HELM = 99689,		-- Helm of the Cursed Conqueror
+			HELM = 99689,	-- Helm of the Cursed Conqueror
 			SHOULDERS = 99690,	-- Shoulders of the Cursed Conqueror
-			CHEST = 99686,		-- Chest of the Cursed Conqueror
+			CHEST = 99686,	-- Chest of the Cursed Conqueror
 			GAUNTLETS = 99687,	-- Gauntlets of the Cursed Conqueror
-			LEGS = 99688,		-- Leggings of the Cursed Conqueror
+			LEGS = 99688,	-- Leggings of the Cursed Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			ESSENCE = 105857,	-- Essence of the Cursed Protector
-			HELM = 99694,		-- Helm of the Cursed Protector
+			HELM = 99694,	-- Helm of the Cursed Protector
 			SHOULDERS = 99695,	-- Shoulders of the Cursed Protector
-			CHEST = 99691,		-- Chest of the Cursed Protector
+			CHEST = 99691,	-- Chest of the Cursed Protector
 			GAUNTLETS = 99692,	-- Gauntlets of the Cursed Protector
-			LEGS = 99693,		-- Leggings of the Cursed Protector
+			LEGS = 99693,	-- Leggings of the Cursed Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
 			ESSENCE = 105859,	-- Essence of the Cursed Vanquisher
-			HELM = 99683,		-- Helm of the Cursed Vanquisher
+			HELM = 99683,	-- Helm of the Cursed Vanquisher
 			SHOULDERS = 99685,	-- Shoulders of the Cursed Vanquisher
-			CHEST = 99696,		-- Chest of the Cursed Vanquisher
+			CHEST = 99696,	-- Chest of the Cursed Vanquisher
 			GAUNTLETS = 99682,	-- Gauntlets of the Cursed Vanquisher
-			LEGS = 99684,		-- Leggings of the Cursed Vanquisher
+			LEGS = 99684,	-- Leggings of the Cursed Vanquisher
 		},
 	},
 	MYTHIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
 			ESSENCE = 105867,	-- Essence of the Cursed Conqueror
-			HELM = 99724,		-- Helm of the Cursed Conqueror
+			HELM = 99724,	-- Helm of the Cursed Conqueror
 			SHOULDERS = 99718,	-- Shoulders of the Cursed Conqueror
-			CHEST = 99715,		-- Chest of the Cursed Conqueror
+			CHEST = 99715,	-- Chest of the Cursed Conqueror
 			GAUNTLETS = 99721,	-- Gauntlets of the Cursed Conqueror
-			LEGS = 99712,		-- Leggings of the Cursed Conqueror
+			LEGS = 99712,	-- Leggings of the Cursed Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			ESSENCE = 105866,	-- Essence of the Cursed Protector
-			HELM = 99725,		-- Helm of the Cursed Protector
+			HELM = 99725,	-- Helm of the Cursed Protector
 			SHOULDERS = 99719,	-- Shoulders of the Cursed Protector
-			CHEST = 99716,		-- Chest of the Cursed Protector
+			CHEST = 99716,	-- Chest of the Cursed Protector
 			GAUNTLETS = 99722,	-- Gauntlets of the Cursed Protector
-			LEGS = 99713,		-- Leggings of the Cursed Protector
+			LEGS = 99713,	-- Leggings of the Cursed Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
 			ESSENCE = 105868,	-- Essence of the Cursed Vanquisher
-			HELM = 99723,		-- Helm of the Cursed Vanquisher
+			HELM = 99723,	-- Helm of the Cursed Vanquisher
 			SHOULDERS = 99717,	-- Shoulders of the Cursed Vanquisher
-			CHEST = 99714,		-- Chest of the Cursed Vanquisher
+			CHEST = 99714,	-- Chest of the Cursed Vanquisher
 			GAUNTLETS = 99720,	-- Gauntlets of the Cursed Vanquisher
-			LEGS = 99726,		-- Leggings of the Cursed Vanquisher
+			LEGS = 99726,	-- Leggings of the Cursed Vanquisher
 		},
 	},
 };
@@ -386,169 +386,169 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99046)),		-- Helmet of the Prehistoric Marauder
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99046)),	-- Helmet of the Prehistoric Marauder
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99036)),	-- Pauldrons of the Prehistoric Marauder
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99047)),		-- Battleplate of the Prehistoric Marauder
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99047)),	-- Battleplate of the Prehistoric Marauder
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99034)),	-- Gauntlets of the Prehistoric Marauder
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99035)),		-- Legplates of the Prehistoric Marauder
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99035)),	-- Legplates of the Prehistoric Marauder
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99032)),		-- Faceguard of the Prehistoric Marauder
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99032)),	-- Faceguard of the Prehistoric Marauder
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99030)),	-- Shoulderguards of the Prehistoric Marauder
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99037)),		-- Chestguard of the Prehistoric Marauder
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99037)),	-- Chestguard of the Prehistoric Marauder
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99038)),	-- Handguards of the Prehistoric Marauder
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99033)),		-- Legguards of the Prehistoric Marauder
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99033)),	-- Legguards of the Prehistoric Marauder
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(98985)),		-- Helmet of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(98985)),	-- Helmet of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(98987)),	-- Pauldrons of Winged Triumph
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99052)),		-- Battleplate of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99052)),	-- Battleplate of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(99002)),	-- Gauntlets of Winged Triumph
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(98986)),		-- Legplates of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(98986)),	-- Legplates of Winged Triumph
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(98979)),		-- Headguard of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(98979)),	-- Headguard of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(99076)),	-- Mantle of Winged Triumph
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99003)),		-- Breastplate of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99003)),	-- Breastplate of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(98982)),	-- Gloves of Winged Triumph
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(98980)),		-- Greaves of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(98980)),	-- Greaves of Winged Triumph
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99029)),		-- Faceguard of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99029)),	-- Faceguard of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(99027)),	-- Shoulderguards of Winged Triumph
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99031)),		-- Chestguard of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99031)),	-- Chestguard of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(99028)),	-- Handguards of Winged Triumph
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99026)),		-- Legguards of Winged Triumph
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99026)),	-- Legguards of Winged Triumph
 						}),
 						cl(DEATHKNIGHT, {
 							-- DPS
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99057)),			-- Helmet of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99059)),	-- Pauldrons of Cyclopean Dread
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99066)),		-- Breastplate of Cyclopean Dread
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99066)),	-- Breastplate of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99067)),	-- Gauntlets of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99058)),			-- Greaves of Cyclopean Dread
 
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99049)),			-- Faceguard of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99040)),	-- Shoulderguards of Cyclopean Dread
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99060)),		-- Chestguard of Cyclopean Dread
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99060)),	-- Chestguard of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99048)),	-- Handguards of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99039)),			-- Legguards of Cyclopean Dread
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99080)),		-- Headguard of the Unblinking Vigil
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99080)),	-- Headguard of the Unblinking Vigil
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99082)),	-- Spaulders of the Unblinking Vigil
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99085)),		-- Tunic of the Unblinking Vigil
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99085)),	-- Tunic of the Unblinking Vigil
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99086)),	-- Gloves of the Unblinking Vigil
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99081)),		-- Legguards of the Unblinking Vigil
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99081)),	-- Legguards of the Unblinking Vigil
 						}),
 						cl(ROGUE, {
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99008)),			-- Helmet of the Barbed Assassin
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99010)),	-- Spaulders of the Barbed Assassin
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99006)),		-- Tunic of the Barbed Assassin
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99006)),	-- Tunic of the Barbed Assassin
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99007)),	-- Gloves of the Barbed Assassin
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99009)),			-- Legguards of the Barbed Assassin
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99020)),		-- Hood of the Ternion Glory
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99020)),	-- Hood of the Ternion Glory
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(99005)),	-- Shoulderguards of the Ternion Glory
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99004)),		-- Raiment of the Ternion Glory
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99004)),	-- Raiment of the Ternion Glory
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(99019)),	-- Gloves of the Ternion Glory
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99021)),		-- Leggings of Ternion Glory
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99021)),	-- Leggings of Ternion Glory
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99024)),		-- Cowl of the Ternion Glory
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99024)),	-- Cowl of the Ternion Glory
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(99018)),	-- Mantle of the Ternion Glory
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99017)),		-- Robes of the Ternion Glory
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99017)),	-- Robes of the Ternion Glory
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(99023)),	-- Handwraps of the Ternion Glory
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99025)),		-- Legwraps of Ternion Glory
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99025)),	-- Legwraps of Ternion Glory
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(98983)),		-- Helmet of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(98983)),	-- Helmet of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(98977)),	-- Spaulders of Celestial Harmony
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(98992)),		-- Cuirass of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(98992)),	-- Cuirass of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(98993)),	-- Grips of Celestial Harmony
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(98984)),		-- Legguards of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(98984)),	-- Legguards of Celestial Harmony
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99089)),		-- Headpiece of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99089)),	-- Headpiece of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99091)),	-- Shoulderwraps of Celestial Harmony
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99087)),		-- Hauberk of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99087)),	-- Hauberk of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99088)),	-- Gloves of Celestial Harmony
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99090)),		-- Leggings of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99090)),	-- Leggings of Celestial Harmony
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(98989)),		-- Faceguard of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(98989)),	-- Faceguard of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(98991)),	-- Mantle of Celestial Harmony
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99011)),		-- Tunic of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99011)),	-- Tunic of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(98988)),	-- Handwraps of Celestial Harmony
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(98990)),		-- Legwraps of Celestial Harmony
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(98990)),	-- Legwraps of Celestial Harmony
 						}),
 						cl(MAGE, {
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99084)),			-- Chronomancer Hood
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99079)),	-- Chronomancer Mantle
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99078)),		-- Chronomancer Robes
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99078)),	-- Chronomancer Robes
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99083)),	-- Chronomancer Gloves
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99077)),			-- Chronomancer Leggings
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99073)),		-- Headpiece of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99073)),	-- Headpiece of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99075)),	-- Spaulders of Seven Sacred Seals
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99071)),		-- Tunic of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99071)),	-- Tunic of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99072)),	-- Grips of Seven Sacred Seals
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99074)),		-- Leggings of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99074)),	-- Leggings of Seven Sacred Seals
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99069)),		-- Helm of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99069)),	-- Helm of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99062)),	-- Mantle of Seven Sacred Seals
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99061)),		-- Vest of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99061)),	-- Vest of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99068)),	-- Handwraps of Seven Sacred Seals
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99070)),		-- Legwraps of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99070)),	-- Legwraps of Seven Sacred Seals
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99065)),		-- Crown of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99065)),	-- Crown of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99051)),	-- Shoulderguards of Seven Sacred Seals
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99063)),		-- Chestguard of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99063)),	-- Chestguard of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99064)),	-- Gauntlets of Seven Sacred Seals
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99050)),		-- Legguards of Seven Sacred Seals
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99050)),	-- Legguards of Seven Sacred Seals
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99054)),		-- Hood of the Horned Nightmare
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99054)),	-- Hood of the Horned Nightmare
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(99045)),	-- Mantle of the Horned Nightmare
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99056)),		-- Robes of the Horned Nightmare
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99056)),	-- Robes of the Horned Nightmare
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(99053)),	-- Gloves of the Horned Nightmare
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99055)),		-- Leggings of the Horned Nightmare
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99055)),	-- Leggings of the Horned Nightmare
 						}),
 						cl(DRUID, {
 							-- DPS (Boomkin)
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(98995)),			-- Cover of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(98998)),	-- Shoulderwraps of the Shattered Vale
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(98997)),		-- Vestment of the Shattered Vale
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(98997)),	-- Vestment of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(98994)),	-- Gloves of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(98996)),			-- Leggings of the Shattered Vale
 
 							-- DPS (Feral)
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99043)),			-- Headpiece of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99022)),	-- Spaulders of the Shattered Vale
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99041)),		-- Raiment of the Shattered Vale
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99041)),	-- Raiment of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99042)),	-- Grips of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99044)),			-- Legguards of the Shattered Vale
 
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99013)),			-- Helm of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99016)),	-- Mantle of the Shattered Vale
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99015)),		-- Robes of the Shattered Vale
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99015)),	-- Robes of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99012)),	-- Handwraps of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99014)),			-- Legwraps of the Shattered Vale
 
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99001)),			-- Headguard of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(98978)),	-- Shoulderguards of the Shattered Vale
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(98999)),		-- Tunic of the Shattered Vale
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(98999)),	-- Tunic of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99000)),	-- Handguards of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(98981)),			-- Breeches of the Shattered Vale
 						}),
@@ -584,169 +584,169 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99602)),		-- Helmet of the Prehistoric Marauder
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99602)),	-- Helmet of the Prehistoric Marauder
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99561)),	-- Pauldrons of the Prehistoric Marauder
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99603)),		-- Battleplate of the Prehistoric Marauder
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99603)),	-- Battleplate of the Prehistoric Marauder
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99559)),	-- Gauntlets of the Prehistoric Marauder
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99560)),		-- Legplates of the Prehistoric Marauder
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99560)),	-- Legplates of the Prehistoric Marauder
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99557)),		-- Faceguard of the Prehistoric Marauder
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99557)),	-- Faceguard of the Prehistoric Marauder
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99597)),	-- Shoulderguards of the Prehistoric Marauder
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99562)),		-- Chestguard of the Prehistoric Marauder
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99562)),	-- Chestguard of the Prehistoric Marauder
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99563)),	-- Handguards of the Prehistoric Marauder
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99558)),		-- Legguards of the Prehistoric Marauder
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99558)),	-- Legguards of the Prehistoric Marauder
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99651)),		-- Helmet of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99651)),	-- Helmet of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99662)),	-- Pauldrons of Winged Triumph
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99566)),		-- Battleplate of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99566)),	-- Battleplate of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99625)),	-- Gauntlets of Winged Triumph
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99661)),		-- Legplates of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99661)),	-- Legplates of Winged Triumph
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99665)),		-- Headguard of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99665)),	-- Headguard of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99656)),	-- Mantle of Winged Triumph
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99626)),		-- Breastplate of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99626)),	-- Breastplate of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99648)),	-- Gloves of Winged Triumph
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99666)),		-- Greaves of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99666)),	-- Greaves of Winged Triumph
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99596)),		-- Faceguard of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99596)),	-- Faceguard of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99594)),	-- Shoulderguards of Winged Triumph
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99598)),		-- Chestguard of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99598)),	-- Chestguard of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99595)),	-- Handguards of Winged Triumph
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99593)),		-- Legguards of Winged Triumph
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99593)),	-- Legguards of Winged Triumph
 						}),
 						cl(DEATHKNIGHT, {
 							-- DPS
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99571)),			-- Helmet of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99639)),	-- Pauldrons of Cyclopean Dread
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99608)),		-- Breastplate of Cyclopean Dread
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99608)),	-- Breastplate of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99609)),	-- Gauntlets of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99572)),			-- Greaves of Cyclopean Dread
 
 							-- Tank
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99605)),			-- Faceguard of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99652)),	-- Shoulderguards of Cyclopean Dread
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99640)),		-- Chestguard of Cyclopean Dread
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99640)),	-- Chestguard of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99604)),	-- Handguards of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99564)),			-- Legguards of Cyclopean Dread
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99660)),		-- Headguard of the Unblinking Vigil
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99660)),	-- Headguard of the Unblinking Vigil
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99574)),	-- Spaulders of the Unblinking Vigil
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99577)),		-- Tunic of the Unblinking Vigil
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99577)),	-- Tunic of the Unblinking Vigil
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99578)),	-- Gloves of the Unblinking Vigil
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99573)),		-- Legguards of the Unblinking Vigil
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99573)),	-- Legguards of the Unblinking Vigil
 						}),
 						cl(ROGUE, {
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99631)),			-- Helmet of the Barbed Assassin
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99635)),	-- Spaulders of the Barbed Assassin
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99629)),		-- Tunic of the Barbed Assassin
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99629)),	-- Tunic of the Barbed Assassin
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99630)),	-- Gloves of the Barbed Assassin
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99634)),			-- Legguards of the Barbed Assassin
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99587)),		-- Hood of the Ternion Glory
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99587)),	-- Hood of the Ternion Glory
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99628)),	-- Shoulderguards of the Ternion Glory
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99627)),		-- Raiment of the Ternion Glory
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99627)),	-- Raiment of the Ternion Glory
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99586)),	-- Gloves of the Ternion Glory
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99588)),		-- Leggings of Ternion Glory
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99588)),	-- Leggings of Ternion Glory
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99591)),		-- Cowl of the Ternion Glory
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99591)),	-- Cowl of the Ternion Glory
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99585)),	-- Mantle of the Ternion Glory
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99584)),		-- Robes of the Ternion Glory
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99584)),	-- Robes of the Ternion Glory
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99590)),	-- Handwraps of the Ternion Glory
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99592)),		-- Legwraps of Ternion Glory
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99592)),	-- Legwraps of Ternion Glory
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99649)),		-- Helmet of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99649)),	-- Helmet of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99663)),	-- Spaulders of Celestial Harmony
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99615)),		-- Cuirass of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99615)),	-- Cuirass of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99616)),	-- Grips of Celestial Harmony
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99650)),		-- Legguards of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99650)),	-- Legguards of Celestial Harmony
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99645)),		-- Headpiece of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99645)),	-- Headpiece of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99647)),	-- Shoulderwraps of Celestial Harmony
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99579)),		-- Hauberk of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99579)),	-- Hauberk of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99580)),	-- Gloves of Celestial Harmony
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99646)),		-- Leggings of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99646)),	-- Leggings of Celestial Harmony
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99612)),		-- Faceguard of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99612)),	-- Faceguard of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99614)),	-- Mantle of Celestial Harmony
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99636)),		-- Tunic of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99636)),	-- Tunic of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99611)),	-- Handwraps of Celestial Harmony
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99613)),		-- Legwraps of Celestial Harmony
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99613)),	-- Legwraps of Celestial Harmony
 						}),
 						cl(MAGE, {
-							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99576)),		-- Chronomancer Hood
+							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99576)),	-- Chronomancer Hood
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99659)),	-- Chronomancer Mantle
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99658)),		-- Chronomancer Robes
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99658)),	-- Chronomancer Robes
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99575)),	-- Chronomancer Gloves
-							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99657)),		-- Chronomancer Leggings
+							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99657)),	-- Chronomancer Leggings
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99653)),		-- Headpiece of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99653)),	-- Headpiece of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99655)),	-- Spaulders of Seven Sacred Seals
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99555)),		-- Tunic of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99555)),	-- Tunic of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99556)),	-- Grips of Seven Sacred Seals
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99654)),		-- Leggings of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99654)),	-- Leggings of Seven Sacred Seals
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99553)),		-- Helm of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99553)),	-- Helm of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99642)),	-- Mantle of Seven Sacred Seals
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99641)),		-- Vest of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99641)),	-- Vest of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99552)),	-- Handwraps of Seven Sacred Seals
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99554)),		-- Legwraps of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99554)),	-- Legwraps of Seven Sacred Seals
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99607)),		-- Crown of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99607)),	-- Crown of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99565)),	-- Shoulderguards of Seven Sacred Seals
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99643)),		-- Chestguard of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99643)),	-- Chestguard of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99644)),	-- Gauntlets of Seven Sacred Seals
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99606)),		-- Legguards of Seven Sacred Seals
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99606)),	-- Legguards of Seven Sacred Seals
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99568)),		-- Hood of the Horned Nightmare
+							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99568)),	-- Hood of the Horned Nightmare
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99601)),	-- Mantle of the Horned Nightmare
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99570)),		-- Robes of the Horned Nightmare
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99570)),	-- Robes of the Horned Nightmare
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99567)),	-- Gloves of the Horned Nightmare
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99569)),		-- Leggings of the Horned Nightmare
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99569)),	-- Leggings of the Horned Nightmare
 						}),
 						cl(DRUID, {
 							-- DPS (Boomkin)
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99618)),			-- Cover of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99621)),	-- Shoulderwraps of the Shattered Vale
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99620)),		-- Vestment of the Shattered Vale
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99620)),	-- Vestment of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99617)),	-- Gloves of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99619)),			-- Leggings of the Shattered Vale
 
 							-- DPS (Feral)
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99599)),			-- Headpiece of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99589)),	-- Spaulders of the Shattered Vale
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99632)),		-- Raiment of the Shattered Vale
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99632)),	-- Raiment of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99633)),	-- Grips of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99600)),			-- Legguards of the Shattered Vale
 
 							-- Healer
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99638)),			-- Helm of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99583)),	-- Mantle of the Shattered Vale
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99582)),		-- Robes of the Shattered Vale
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99582)),	-- Robes of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99637)),	-- Handwraps of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99581)),			-- Legwraps of the Shattered Vale
 
 							-- Tank
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99624)),			-- Headguard of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99664)),	-- Shoulderguards of the Shattered Vale
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99622)),		-- Tunic of the Shattered Vale
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99622)),	-- Tunic of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99623)),	-- Handguards of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99610)),			-- Breeches of the Shattered Vale
 						}),
@@ -779,67 +779,67 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99206)),		-- Helmet of the Prehistoric Marauder
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99206)),	-- Helmet of the Prehistoric Marauder
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99200)),	-- Pauldrons of the Prehistoric Marauder
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99197)),		-- Battleplate of the Prehistoric Marauder
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99197)),	-- Battleplate of the Prehistoric Marauder
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99198)),	-- Gauntlets of the Prehistoric Marauder
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99199)),		-- Legplates of the Prehistoric Marauder
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99199)),	-- Legplates of the Prehistoric Marauder
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99203)),		-- Faceguard of the Prehistoric Marauder
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99203)),	-- Faceguard of the Prehistoric Marauder
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99196)),	-- Shoulderguards of the Prehistoric Marauder
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99201)),		-- Chestguard of the Prehistoric Marauder
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99201)),	-- Chestguard of the Prehistoric Marauder
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99202)),	-- Handguards of the Prehistoric Marauder
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99195)),		-- Legguards of the Prehistoric Marauder
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99195)),	-- Legguards of the Prehistoric Marauder
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99138)),		-- Helmet of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99138)),	-- Helmet of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(99132)),	-- Pauldrons of Winged Triumph
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99136)),		-- Battleplate of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99136)),	-- Battleplate of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(99137)),	-- Gauntlets of Winged Triumph
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99139)),		-- Legplates of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99139)),	-- Legplates of Winged Triumph
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99135)),		-- Headguard of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99135)),	-- Headguard of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(99125)),	-- Mantle of Winged Triumph
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99133)),		-- Breastplate of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99133)),	-- Breastplate of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(99134)),	-- Gloves of Winged Triumph
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99124)),		-- Greaves of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99124)),	-- Greaves of Winged Triumph
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99128)),		-- Faceguard of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99128)),	-- Faceguard of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(99130)),	-- Shoulderguards of Winged Triumph
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99126)),		-- Chestguard of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99126)),	-- Chestguard of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(99127)),	-- Handguards of Winged Triumph
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99129)),		-- Legguards of Winged Triumph
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99129)),	-- Legguards of Winged Triumph
 						}),
 						cl(DEATHKNIGHT, {
 							-- DPS
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99194)),			-- Helmet of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99187)),	-- Pauldrons of Cyclopean Dread
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99192)),		-- Breastplate of Cyclopean Dread
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99192)),	-- Breastplate of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99193)),	-- Gauntlets of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99186)),			-- Greaves of Cyclopean Dread
 
 							-- Tank
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99190)),			-- Faceguard of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99179)),	-- Shoulderguards of Cyclopean Dread
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99188)),		-- Chestguard of Cyclopean Dread
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99188)),	-- Chestguard of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99189)),	-- Handguards of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99191)),			-- Legguards of Cyclopean Dread
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99157)),		-- Headguard of the Unblinking Vigil
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99157)),	-- Headguard of the Unblinking Vigil
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99159)),	-- Spaulders of the Unblinking Vigil
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99167)),		-- Tunic of the Unblinking Vigil
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99167)),	-- Tunic of the Unblinking Vigil
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99168)),	-- Gloves of the Unblinking Vigil
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99158)),		-- Legguards of the Unblinking Vigil
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99158)),	-- Legguards of the Unblinking Vigil
 						}),
 						cl(ROGUE, {
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99114)),			-- Helmet of the Barbed Assassin
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99116)),	-- Spaulders of the Barbed Assassin
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99112)),		-- Tunic of the Barbed Assassin
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99112)),	-- Tunic of the Barbed Assassin
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99113)),	-- Gloves of the Barbed Assassin
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99115)),			-- Legguards of the Barbed Assassin
 						}),
@@ -860,88 +860,88 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99103)),		-- Helmet of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99103)),	-- Helmet of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99105)),	-- Spaulders of Celestial Harmony
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99101)),		-- Cuirass of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99101)),	-- Cuirass of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99102)),	-- Grips of Celestial Harmony
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99104)),		-- Legguards of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99104)),	-- Legguards of Celestial Harmony
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99093)),		-- Headpiece of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99093)),	-- Headpiece of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99095)),	-- Shoulderwraps of Celestial Harmony
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99106)),		-- Hauberk of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99106)),	-- Hauberk of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99092)),	-- Gloves of Celestial Harmony
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99094)),		-- Leggings of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99094)),	-- Leggings of Celestial Harmony
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99109)),		-- Faceguard of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99109)),	-- Faceguard of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99100)),	-- Mantle of Celestial Harmony
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99107)),		-- Tunic of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99107)),	-- Tunic of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99108)),	-- Handwraps of Celestial Harmony
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99099)),		-- Legwraps of Celestial Harmony
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99099)),	-- Legwraps of Celestial Harmony
 						}),
 						cl(MAGE, {
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99161)),			-- Chronomancer Hood
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99153)),	-- Chronomancer Mantle
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99152)),		-- Chronomancer Robes
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99152)),	-- Chronomancer Robes
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99160)),	-- Chronomancer Gloves
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99162)),			-- Chronomancer Leggings
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99156)),		-- Headpiece of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99156)),	-- Headpiece of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99146)),	-- Spaulders of Seven Sacred Seals
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99154)),		-- Tunic of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99154)),	-- Tunic of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99155)),	-- Grips of Seven Sacred Seals
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99145)),		-- Leggings of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99145)),	-- Leggings of Seven Sacred Seals
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99148)),		-- Helm of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99148)),	-- Helm of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99151)),	-- Mantle of Seven Sacred Seals
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99150)),		-- Vest of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99150)),	-- Vest of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99147)),	-- Handwraps of Seven Sacred Seals
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99149)),		-- Legwraps of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99149)),	-- Legwraps of Seven Sacred Seals
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99142)),		-- Crown of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99142)),	-- Crown of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99144)),	-- Shoulderguards of Seven Sacred Seals
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99140)),		-- Chestguard of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99140)),	-- Chestguard of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99141)),	-- Gauntlets of Seven Sacred Seals
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99143)),		-- Legguards of Seven Sacred Seals
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99143)),	-- Legguards of Seven Sacred Seals
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99097)),		-- Hood of the Horned Nightmare
+							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99097)),	-- Hood of the Horned Nightmare
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(99205)),	-- Mantle of the Horned Nightmare
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99204)),		-- Robes of the Horned Nightmare
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99204)),	-- Robes of the Horned Nightmare
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(99096)),	-- Gloves of the Horned Nightmare
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99098)),		-- Leggings of the Horned Nightmare
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99098)),	-- Leggings of the Horned Nightmare
 						}),
 						cl(DRUID, {
 							-- DPS (Boomkin)
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99175)),			-- Cover of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99169)),	-- Shoulderwraps of the Shattered Vale
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99177)),		-- Vestment of the Shattered Vale
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99177)),	-- Vestment of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99174)),	-- Gloves of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99176)),			-- Leggings of the Shattered Vale
 
 							-- DPS (Feral)
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99182)),			-- Headpiece of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99184)),	-- Spaulders of the Shattered Vale
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99180)),		-- Raiment of the Shattered Vale
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99180)),	-- Raiment of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99181)),	-- Grips of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99183)),			-- Legguards of the Shattered Vale
 
 							-- Healer
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99178)),			-- Helm of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99173)),	-- Mantle of the Shattered Vale
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99172)),		-- Robes of the Shattered Vale
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99172)),	-- Robes of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99185)),	-- Handwraps of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99171)),			-- Legwraps of the Shattered Vale
 
 							-- Tank
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99164)),			-- Headguard of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99166)),	-- Shoulderguards of the Shattered Vale
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99170)),		-- Tunic of the Shattered Vale
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99170)),	-- Tunic of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99163)),	-- Handguards of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99165)),			-- Breeches of the Shattered Vale
 						}),
@@ -974,169 +974,169 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99418)),		-- Helmet of the Prehistoric Marauder
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99418)),	-- Helmet of the Prehistoric Marauder
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99414)),	-- Pauldrons of the Prehistoric Marauder
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99411)),		-- Battleplate of the Prehistoric Marauder
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99411)),	-- Battleplate of the Prehistoric Marauder
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99412)),	-- Gauntlets of the Prehistoric Marauder
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99413)),		-- Legplates of the Prehistoric Marauder
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99413)),	-- Legplates of the Prehistoric Marauder
 
 							-- Tank
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99409)),		-- Faceguard of the Prehistoric Marauder
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99409)),	-- Faceguard of the Prehistoric Marauder
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99407)),	-- Shoulderguards of the Prehistoric Marauder
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99415)),		-- Chestguard of the Prehistoric Marauder
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99415)),	-- Chestguard of the Prehistoric Marauder
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99408)),	-- Handguards of the Prehistoric Marauder
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99410)),		-- Legguards of the Prehistoric Marauder
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99410)),	-- Legguards of the Prehistoric Marauder
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99379)),		-- Helmet of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99379)),	-- Helmet of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99373)),	-- Pauldrons of Winged Triumph
-							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99387)),		-- Battleplate of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99387)),	-- Battleplate of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99380)),	-- Gauntlets of Winged Triumph
-							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99372)),		-- Legplates of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99372)),	-- Legplates of Winged Triumph
 
 							-- Healer
-							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99376)),		-- Headguard of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99376)),	-- Headguard of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99378)),	-- Mantle of Winged Triumph
-							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99374)),		-- Breastplate of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99374)),	-- Breastplate of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99375)),	-- Gloves of Winged Triumph
-							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99377)),		-- Greaves of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99377)),	-- Greaves of Winged Triumph
 
 							-- Tank
-							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99370)),		-- Faceguard of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99370)),	-- Faceguard of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99364)),	-- Shoulderguards of Winged Triumph
-							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99368)),		-- Chestguard of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99368)),	-- Chestguard of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99369)),	-- Handguards of Winged Triumph
-							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99371)),		-- Legguards of Winged Triumph
+							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99371)),	-- Legguards of Winged Triumph
 						}),
 						cl(DEATHKNIGHT, {
 							-- DPS
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99337)),			-- Helmet of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99339)),	-- Pauldrons of Cyclopean Dread
-							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99335)),		-- Breastplate of Cyclopean Dread
+							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99335)),	-- Breastplate of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99336)),	-- Gauntlets of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99338)),			-- Greaves of Cyclopean Dread
 
 							-- Tank
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99323)),			-- Faceguard of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99325)),	-- Shoulderguards of Cyclopean Dread
-							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99330)),		-- Chestguard of Cyclopean Dread
+							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99330)),	-- Chestguard of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99331)),	-- Handguards of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99324)),			-- Legguards of Cyclopean Dread
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99402)),		-- Headguard of the Unblinking Vigil
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99402)),	-- Headguard of the Unblinking Vigil
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99404)),	-- Spaulders of the Unblinking Vigil
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99405)),		-- Tunic of the Unblinking Vigil
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99405)),	-- Tunic of the Unblinking Vigil
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99406)),	-- Gloves of the Unblinking Vigil
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99403)),		-- Legguards of the Unblinking Vigil
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99403)),	-- Legguards of the Unblinking Vigil
 						}),
 						cl(ROGUE, {
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99348)),			-- Helmet of the Barbed Assassin
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99350)),	-- Spaulders of the Barbed Assassin
-							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99356)),		-- Tunic of the Barbed Assassin
+							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99356)),	-- Tunic of the Barbed Assassin
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99355)),	-- Gloves of the Barbed Assassin
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99349)),			-- Legguards of the Barbed Assassin
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99360)),		-- Hood of the Ternion Glory
+							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99360)),	-- Hood of the Ternion Glory
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99363)),	-- Shoulderguards of the Ternion Glory
-							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99362)),		-- Raiment of the Ternion Glory
+							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99362)),	-- Raiment of the Ternion Glory
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99359)),	-- Gloves of the Ternion Glory
-							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99361)),		-- Leggings of Ternion Glory
+							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99361)),	-- Leggings of Ternion Glory
 
 							-- Healer
-							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99366)),		-- Cowl of the Ternion Glory
+							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99366)),	-- Cowl of the Ternion Glory
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99358)),	-- Mantle of the Ternion Glory
-							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99357)),		-- Robes of the Ternion Glory
+							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99357)),	-- Robes of the Ternion Glory
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99365)),	-- Handwraps of the Ternion Glory
-							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99367)),		-- Legwraps of Ternion Glory
+							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99367)),	-- Legwraps of Ternion Glory
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99341)),		-- Helmet of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99341)),	-- Helmet of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99343)),	-- Spaulders of Celestial Harmony
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99347)),		-- Cuirass of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99347)),	-- Cuirass of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99340)),	-- Grips of Celestial Harmony
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99342)),		-- Legguards of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99342)),	-- Legguards of Celestial Harmony
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99332)),		-- Headpiece of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99332)),	-- Headpiece of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99334)),	-- Shoulderwraps of Celestial Harmony
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99344)),		-- Hauberk of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99344)),	-- Hauberk of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99345)),	-- Gloves of Celestial Harmony
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99333)),		-- Leggings of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99333)),	-- Leggings of Celestial Harmony
 
 							-- Healer
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99353)),		-- Faceguard of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99353)),	-- Faceguard of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99346)),	-- Mantle of Celestial Harmony
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99351)),		-- Tunic of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99351)),	-- Tunic of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99352)),	-- Handwraps of Celestial Harmony
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99354)),		-- Legwraps of Celestial Harmony
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99354)),	-- Legwraps of Celestial Harmony
 						}),
 						cl(MAGE, {
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99398)),			-- Chronomancer Hood
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99401)),	-- Chronomancer Mantle
-							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99400)),		-- Chronomancer Robes
+							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99400)),	-- Chronomancer Robes
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99397)),	-- Chronomancer Gloves
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99399)),			-- Chronomancer Leggings
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99393)),		-- Headpiece of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99393)),	-- Headpiece of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99395)),	-- Spaulders of Seven Sacred Seals
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99396)),		-- Tunic of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99396)),	-- Tunic of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99392)),	-- Grips of Seven Sacred Seals
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99394)),		-- Leggings of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99394)),	-- Leggings of Seven Sacred Seals
 
 							-- Healer
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99389)),		-- Helm of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99389)),	-- Helm of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99381)),	-- Mantle of Seven Sacred Seals
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99391)),		-- Vest of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99391)),	-- Vest of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99388)),	-- Handwraps of Seven Sacred Seals
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99390)),		-- Legwraps of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99390)),	-- Legwraps of Seven Sacred Seals
 
 							-- Tank
-							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99384)),		-- Crown of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99384)),	-- Crown of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99386)),	-- Shoulderguards of Seven Sacred Seals
-							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99382)),		-- Chestguard of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99382)),	-- Chestguard of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99383)),	-- Gauntlets of Seven Sacred Seals
-							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99385)),		-- Legguards of Seven Sacred Seals
+							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99385)),	-- Legguards of Seven Sacred Seals
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99425)),		-- Hood of the Horned Nightmare
+							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99425)),	-- Hood of the Horned Nightmare
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99417)),	-- Mantle of the Horned Nightmare
-							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99416)),		-- Robes of the Horned Nightmare
+							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99416)),	-- Robes of the Horned Nightmare
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99424)),	-- Gloves of the Horned Nightmare
-							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99426)),		-- Leggings of the Horned Nightmare
+							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99426)),	-- Leggings of the Horned Nightmare
 						}),
 						cl(DRUID, {
 							-- DPS (Boomkin)
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99433)),			-- Cover of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99428)),	-- Shoulderwraps of the Shattered Vale
-							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99427)),		-- Vestment of the Shattered Vale
+							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99427)),	-- Vestment of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99432)),	-- Gloves of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99434)),			-- Leggings of the Shattered Vale
 
 							-- DPS (Feral)
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99328)),			-- Headpiece of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99322)),	-- Spaulders of the Shattered Vale
-							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99326)),		-- Raiment of the Shattered Vale
+							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99326)),	-- Raiment of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99327)),	-- Grips of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99329)),			-- Legguards of the Shattered Vale
 
 							-- Healer
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99436)),			-- Helm of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99431)),	-- Mantle of the Shattered Vale
-							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99430)),		-- Robes of the Shattered Vale
+							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99430)),	-- Robes of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99435)),	-- Handwraps of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99429)),			-- Legwraps of the Shattered Vale
 
 							-- Tank
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99421)),			-- Headguard of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99423)),	-- Shoulderguards of the Shattered Vale
-							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99419)),		-- Tunic of the Shattered Vale
+							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99419)),	-- Tunic of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99420)),	-- Handguards of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99422)),			-- Breeches of the Shattered Vale
 						}),

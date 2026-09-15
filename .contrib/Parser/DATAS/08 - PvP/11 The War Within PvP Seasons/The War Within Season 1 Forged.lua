@@ -13,10 +13,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(40385),		-- Combatant I: The War Within Season 1
-			ach(40386),		-- Combatant II: The War Within Season 1
-			ach(40387),		-- Challenger I: The War Within Season 1
-			ach(40388),		-- Challenger II: The War Within Season 1
+			ach(40385),	-- Combatant I: The War Within Season 1
+			ach(40386),	-- Combatant II: The War Within Season 1
+			ach(40387),	-- Challenger I: The War Within Season 1
+			ach(40388),	-- Challenger II: The War Within Season 1
 			ach(41044, {	-- Forged Weapons of Conquest
 				i(232602, {	-- Forged Gladiator's Coin Pouch
 					i(232603, {	-- Forged Gladiator's Weapon Token
@@ -30,18 +30,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 				}),
 			}),
-			ach(40389),		-- Rival I: The War Within Season 1
+			ach(40389),	-- Rival I: The War Within Season 1
 			ach(40390, {	-- Rival II: The War Within Season 1
 				ill(7521),	-- Holy Fire (ILLUSION!)
 			}),
 			ach(40391, {	-- Duelist: The War Within Season 1
 				i(223617),	-- Forged Gladiator's Prestigious Cloak
 			}),
-			ach(40392),		-- Elite: The War Within Season 1
+			ach(40392),	-- Elite: The War Within Season 1
 			ach(40393, {	-- Gladiator: The War Within Season 1
 				i(223586),	-- Forged Gladiator's Fel Bat (MOUNT!)
 			}),
-			ach(40398),		-- Forged Gladiator's Fel Bat
+			ach(40398),	-- Forged Gladiator's Fel Bat
 			ach(40380, {	-- Forged Gladiator: The War Within Season 1
 				title(558),	-- Forged Gladiator <Name>
 			}),
@@ -146,27 +146,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(223828)),	-- Forged Warmonger's Spaulders
 					})),
 					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
-						bloody(525, i(223859)),		-- Forged Warmonger's Aegis
-						bloody(875, i(223844)),		-- Forged Warmonger's Battleaxe
+						bloody(525, i(223859)),	-- Forged Warmonger's Aegis
+						bloody(875, i(223844)),	-- Forged Warmonger's Battleaxe
 						bloody(1750, i(223853)),	-- Forged Warmonger's Battlestaff
-						bloody(525, i(223851)),		-- Forged Warmonger's Branch
+						bloody(525, i(223851)),	-- Forged Warmonger's Branch
 						bloody(1750, i(223855)),	-- Forged Warmonger's Broadsword
-						bloody(875, i(223846)),		-- Forged Warmonger's Carver
+						bloody(875, i(223846)),	-- Forged Warmonger's Carver
 						bloody(1225, i(223856)),	-- Forged Warmonger's Club
-						bloody(875, i(223864)),		-- Forged Warmonger's Crusher
-						bloody(875, i(223858)),		-- Forged Warmonger's Cudgel
+						bloody(875, i(223864)),	-- Forged Warmonger's Crusher
+						bloody(875, i(223858)),	-- Forged Warmonger's Cudgel
 						bloody(1225, i(223867)),	-- Forged Warmonger's Dagger
-						bloody(875, i(223868)),		-- Forged Warmonger's Dirk
+						bloody(875, i(223868)),	-- Forged Warmonger's Dirk
 						bloody(1750, i(223847)),	-- Forged Warmonger's Flameshot
 						bloody(1750, i(223854)),	-- Forged Warmonger's Greatsword
-						bloody(875, i(223857)),		-- Forged Warmonger's Hammer
+						bloody(875, i(223857)),	-- Forged Warmonger's Hammer
 						bloody(1225, i(223845)),	-- Forged Warmonger's Hatchet
 						bloody(1750, i(223860)),	-- Forged Warmonger's Impaler
-						bloody(875, i(223863)),		-- Forged Warmonger's Mace
+						bloody(875, i(223863)),	-- Forged Warmonger's Mace
 						bloody(1225, i(223865)),	-- Forged Warmonger's Scepter
 						bloody(1750, i(223861)),	-- Forged Warmonger's Spear
 						bloody(1750, i(223852)),	-- Forged Warmonger's Spire
-						bloody(875, i(223848)),		-- Forged Warmonger's Twinblade
+						bloody(875, i(223848)),	-- Forged Warmonger's Twinblade
 						bloody(1225, i(223862)),	-- Forged Warmonger's Wand
 					})),
 				}),

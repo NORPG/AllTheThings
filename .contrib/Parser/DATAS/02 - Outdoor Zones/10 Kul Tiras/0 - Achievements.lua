@@ -17,12 +17,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			},
 		}),
 		ach(12947, {	-- Azerothian Diplomat
-			crit(42229, {["races"] = ALLIANCE_ONLY }),		-- Proudmoore (A) / Zandalari Empire (H)
-			crit(42231, {["races"] = ALLIANCE_ONLY }),		-- Order of Embers (A)
-			crit(42230, {["races"] = ALLIANCE_ONLY }),		-- Storm's Wake (A)
-			crit(41654, {["races"] = ALLIANCE_ONLY }),		-- 7th Legion (A)
-			crit(43121),		-- Champions of Azeroth
-			crit(43122),		-- Tortollan Seekers
+			crit(42229, {["races"] = ALLIANCE_ONLY }),	-- Proudmoore (A) / Zandalari Empire (H)
+			crit(42231, {["races"] = ALLIANCE_ONLY }),	-- Order of Embers (A)
+			crit(42230, {["races"] = ALLIANCE_ONLY }),	-- Storm's Wake (A)
+			crit(41654, {["races"] = ALLIANCE_ONLY }),	-- 7th Legion (A)
+			crit(43121),	-- Champions of Azeroth
+			crit(43122),	-- Tortollan Seekers
 		}),
 		ach(12936, {	-- Battle on Zandalar and Kul Tiras
 			i(163697),	-- Laser Pointer (TOY!)

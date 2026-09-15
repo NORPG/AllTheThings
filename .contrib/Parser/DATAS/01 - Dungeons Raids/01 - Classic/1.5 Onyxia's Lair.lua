@@ -506,7 +506,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						24429,	-- A Most Puzzling Circumstance (H)
 						-- #endif
 					},
-					["qg"] = 14392,		-- Overlord Runthak / Overlord Natoj
+					["qg"] = 14392,	-- Overlord Runthak / Overlord Natoj
 					["coords"] = {
 						-- #if BEFORE CATA
 						{ 52.2, 75.8, ORGRIMMAR },

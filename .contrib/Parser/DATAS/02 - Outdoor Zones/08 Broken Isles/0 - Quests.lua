@@ -496,7 +496,7 @@ root(ROOTS.Zones, {
 							["description"] = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
 							["sourceQuest"] = 44466,	-- An Unclear Path
 							["provider"] = { "n", 113857 },	-- Light's Heart
-							["maps"] = { 793 },		-- Scenario: Black Rook Hold
+							["maps"] = { 793 },	-- Scenario: Black Rook Hold
 							["groups"] = {
 								q(44414, {	-- Felspawns of Lothros
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",

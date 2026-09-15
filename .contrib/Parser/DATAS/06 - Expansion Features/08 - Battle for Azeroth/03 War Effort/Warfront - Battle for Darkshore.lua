@@ -271,7 +271,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(148787, {	-- Alash'anir
 							["allianceQuestID"] = 54695,	-- Alash'anir [Alliance]
-							["hordeQuestID"] = 54696,		-- Alash'anir [Horde]
+							["hordeQuestID"] = 54696,	-- Alash'anir [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 56.48, 30.73, DARKSHORE },
 							["groups"] = {
@@ -280,13 +280,13 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147966, {	-- Aman
 							["allianceQuestID"] = 54405,	-- Aman [Alliance]
-							["hordeQuestID"] = 54406,		-- Aman [Horde]
+							["hordeQuestID"] = 54406,	-- Aman [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 37.85, 84.74, DARKSHORE },
 						}),
 						n(147744, {	-- Amberclaw
 							["allianceQuestID"] = 54285,	-- Amberclaw [Alliance]
-							["hordeQuestID"] = 54286,		-- Amberclaw [Horde]
+							["hordeQuestID"] = 54286,	-- Amberclaw [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 57.38, 15.67, DARKSHORE },
 							["cr"] = 147746,	-- Glrglrr
@@ -304,7 +304,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147708, {	-- Athrikus Narassin
 							["allianceQuestID"] = 54278,	-- Athrikus Narassin [Alliance]
-							["hordeQuestID"] = 54279,		-- Athrikus Narassin [Horde]
+							["hordeQuestID"] = 54279,	-- Athrikus Narassin [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 58.5, 24.2, DARKSHORE },
 							["groups"] = {
@@ -346,7 +346,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(148025, {	-- Commander Ralesh
 							["allianceQuestID"] = 54426,	-- Commander Ralesh [Alliance]
-							["hordeQuestID"] = 54427,		-- Commander Ralesh [Horde]
+							["hordeQuestID"] = 54427,	-- Commander Ralesh [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 37.96, 76.23, DARKSHORE },
 							["groups"] = {
@@ -355,7 +355,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147260, {	-- Conflagros
 							["allianceQuestID"] = 54232,	-- Conflagros [Alliance]
-							["hordeQuestID"] = 54233,		-- Conflagros [Horde]
+							["hordeQuestID"] = 54233,	-- Conflagros [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 39.07, 61.98, DARKSHORE },
 							["groups"] = {
@@ -378,7 +378,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147241, {	-- Cyclarus
 							["allianceQuestID"] = 54229,	-- Cyclarus [Alliance]
-							["hordeQuestID"] = 54230,		-- Cyclarus [Horde]
+							["hordeQuestID"] = 54230,	-- Cyclarus [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 43.79, 53.75, DARKSHORE },
 							["groups"] = {
@@ -405,19 +405,19 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(149654, {	-- Glimmerspine
 							["allianceQuestID"] = 54884,	-- Glimmerspine [Alliance]
-							["hordeQuestID"] = 54885,		-- Glimmerspine [Horde]
+							["hordeQuestID"] = 54885,	-- Glimmerspine [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 43.51, 19.63, DARKSHORE },
 						}),
 						n(147261, {	-- Granokk
 							["allianceQuestID"] = 54234,	-- Granokk [Alliance]
-							["hordeQuestID"] = 54235,		-- Granokk [Horde]
+							["hordeQuestID"] = 54235,	-- Granokk [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 48.35, 55.56, DARKSHORE },
 						}),
 						n(148031, {	-- Gren Tornfur
 							["allianceQuestID"] = 54428,	-- Gren Tornfur [Alliance]
-							["hordeQuestID"] = 54429,		-- Gren Tornfur [Horde]
+							["hordeQuestID"] = 54429,	-- Gren Tornfur [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 40.92, 56.43, DARKSHORE },
 							["groups"] = {
@@ -438,7 +438,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147240, {	-- Hydrath
 							["allianceQuestID"] = 54227,	-- Hydrath [Alliance]
-							["hordeQuestID"] = 54228,		-- Hydrath [Horde]
+							["hordeQuestID"] = 54228,	-- Hydrath [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 52.51, 32.11, DARKSHORE },
 							["groups"] = {
@@ -447,7 +447,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(149657, {	-- Madfeather
 							["allianceQuestID"] = 54887,	-- Madfeather [Alliance]
-							["hordeQuestID"] = 54888,		-- Madfeather [Horde]
+							["hordeQuestID"] = 54888,	-- Madfeather [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 44.03, 48.21, DARKSHORE },
 						}),
@@ -469,7 +469,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147970, {	-- Mrggrmarr
 							["allianceQuestID"] = 54408,	-- Mrggrmarr [Alliance]
-							["hordeQuestID"] = 54409,		-- Mrggrmarr [Horde]
+							["hordeQuestID"] = 54409,	-- Mrggrmarr [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 35.85, 81.75, DARKSHORE },
 						}),
@@ -508,7 +508,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(149665, {	-- Scalefiend
 							["allianceQuestID"] = 54893,	-- Scalefiend [Alliance]
-							["hordeQuestID"] = 54894,		-- Scalefiend [Horde]
+							["hordeQuestID"] = 54894,	-- Scalefiend [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 47.64, 44.55, DARKSHORE },
 						}),
@@ -525,13 +525,13 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147751, {	-- Shattershard
 							["allianceQuestID"] = 54289,	-- Shattershard [Alliance] 54884
-							["hordeQuestID"] = 54290,		-- Shattershard [Horde]
+							["hordeQuestID"] = 54290,	-- Shattershard [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 43.48, 29.38, DARKSHORE },
 						}),
 						n(147897, {	-- Soggoth The Slitherer
 							["allianceQuestID"] = 54320,	-- Soggoth The Slitherer [Alliance]
-							["hordeQuestID"] = 54321,		-- Soggoth The Slitherer [Horde]
+							["hordeQuestID"] = 54321,	-- Soggoth The Slitherer [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 40.57, 85.09, DARKSHORE },
 							["groups"] = {
@@ -540,7 +540,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147332, {	-- Stonebinder Ssravess
 							["allianceQuestID"] = 54247,	-- Stonebinder Ssravess [Alliance]
-							["hordeQuestID"] = 54248,		-- Stonebinder Ssravess [Horde]
+							["hordeQuestID"] = 54248,	-- Stonebinder Ssravess [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 45.51, 58.96, DARKSHORE },
 						}),
@@ -556,7 +556,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(147942, {	-- Twilight Prophet Graeme
 							["allianceQuestID"] = 54397,	-- Twilight Prophet Graeme [Alliance]
-							["hordeQuestID"] = 54398,		-- Twilight Prophet Graeme [Horde]
+							["hordeQuestID"] = 54398,	-- Twilight Prophet Graeme [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 40.62, 82.72, DARKSHORE },
 							["groups"] = {

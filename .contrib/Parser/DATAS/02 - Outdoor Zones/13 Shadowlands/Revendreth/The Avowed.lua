@@ -63,9 +63,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								14273,	-- Crypt Kicker
 								14276,	-- It's Always Sinny in Revendreth
 							}},
-							["groups"] = {
-								title(423),		-- Cryptkeeper
-							},
+							["groups"] = { title(423) },	-- Cryptkeeper
 						}),
 					}),
 					n(QUESTS, sharedData({

@@ -1397,7 +1397,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["groups"] = {
-						ach(3996),		-- Three Sixty Pain Spike (10 player)
+						ach(3996),	-- Three Sixty Pain Spike (10 player)
 						a(i(47676)),	-- Dirk of the Night Watch
 						h(i(47871)),	-- Orcish Deathblade
 						h(i(47619)),	-- Amulet of Binding Elements
@@ -1496,7 +1496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34497,	-- Fjola Lightbane
 					},
 					["groups"] = {
-						ach(3799),		-- Salt and Pepper (10 player)
+						ach(3799),	-- Salt and Pepper (10 player)
 						h(i(47884)),	-- Edge of Agony
 						a(i(47743)),	-- Enlightenment
 						h(i(47892)),	-- Illumination
@@ -1617,7 +1617,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["groups"] = {
-						ach(3996),		-- Three Sixty Pain Spike (10 player)
+						ach(3996),	-- Three Sixty Pain Spike (10 player)
 						a(i(47938)),	-- Dirk of the Night Watch
 						h(i(48010)),	-- Orcish Deathblade
 						a(i(47930)),	-- Amulet of Binding Elements
@@ -1716,7 +1716,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34497,	-- Fjola Lightbane
 					},
 					["groups"] = {
-						ach(3799),		-- Salt and Pepper (10 player)
+						ach(3799),	-- Salt and Pepper (10 player)
 						h(i(48023)),	-- Edge of Agony
 						a(i(47960)),	-- Enlightenment
 						h(i(48036)),	-- Illumination
@@ -1823,35 +1823,35 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							title(136),	-- the Argent Defender
 						}),
 						ach(3810, {	-- A Tribute to Insanity (10 Player)
-							a(i(49044)),		-- Swift Alliance Steed (MOUNT!)
-							h(i(49046)),		-- Swift Horde Wolf (MOUNT!)
-							h(ig(48668)),		-- Cloak of Serrated Blades
-							a(ig(48673)),		-- Cloak of the Silver Covenant
-							h(ig(48669)),		-- Cloak of the Triumphant Combatant
-							h(ig(48670)),		-- Cloak of the Unflinching Guardian
-							a(ig(48675)),		-- Cloak of the Unmoving Guardian
-							a(ig(48674)),		-- Cloak of the Victorous Combatant
-							a(ig(48671)),		-- Drape of Bitter Incantation
-							h(ig(48666)),		-- Drape of the Sunreavers
-							a(ig(48672)),		-- Shawl of Fervent Crusader
-							h(ig(48667)),		-- Shawl of the Devout Crusader
+							a(i(49044)),	-- Swift Alliance Steed (MOUNT!)
+							h(i(49046)),	-- Swift Horde Wolf (MOUNT!)
+							h(ig(48668)),	-- Cloak of Serrated Blades
+							a(ig(48673)),	-- Cloak of the Silver Covenant
+							h(ig(48669)),	-- Cloak of the Triumphant Combatant
+							h(ig(48670)),	-- Cloak of the Unflinching Guardian
+							a(ig(48675)),	-- Cloak of the Unmoving Guardian
+							a(ig(48674)),	-- Cloak of the Victorous Combatant
+							a(ig(48671)),	-- Drape of Bitter Incantation
+							h(ig(48666)),	-- Drape of the Sunreavers
+							a(ig(48672)),	-- Shawl of Fervent Crusader
+							h(ig(48667)),	-- Shawl of the Devout Crusader
 						}),
 						ach(3809),	-- A Tribute to Mad Skill (10 Player)
 						ach(3808, {	-- A Tribute to Skill (10 Player)
-							h(ig(48705)),		-- Attrition
-							h(ig(48699)),		-- Blood and Glory
-							h(ig(48697)),		-- Frenzystrike Longbow
-							a(ig(48709)),		-- Heartcrusher
-							h(ig(48693)),		-- Heartsmasher
-							a(ig(48714)),		-- Honor of the Fallen
-							a(ig(48713)),		-- Lothar's Edge
-							h(ig(48695)),		-- Mor'kosh, the Bloodreaver
-							a(ig(48710)),		-- Paragon's Breadth
-							a(ig(48711)),		-- Rhok'shalla, the Shadow's Bane
-							h(ig(48701)),		-- Spellharvest
-							a(ig(48708)),		-- Spellstorm Blade
-							h(ig(48703)),		-- The Facebreaker
-							a(ig(48712)),		-- The Spinebreaker
+							h(ig(48705)),	-- Attrition
+							h(ig(48699)),	-- Blood and Glory
+							h(ig(48697)),	-- Frenzystrike Longbow
+							a(ig(48709)),	-- Heartcrusher
+							h(ig(48693)),	-- Heartsmasher
+							a(ig(48714)),	-- Honor of the Fallen
+							a(ig(48713)),	-- Lothar's Edge
+							h(ig(48695)),	-- Mor'kosh, the Bloodreaver
+							a(ig(48710)),	-- Paragon's Breadth
+							a(ig(48711)),	-- Rhok'shalla, the Shadow's Bane
+							h(ig(48701)),	-- Spellharvest
+							a(ig(48708)),	-- Spellstorm Blade
+							h(ig(48703)),	-- The Facebreaker
+							a(ig(48712)),	-- The Spinebreaker
 
 						}),
 						i(47242),	-- Trophy of the Crusade
@@ -1870,8 +1870,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34799,	-- Dreadscale
 					},
 					["groups"] = {
-						ach(3937),		-- Not One, But Two Jormungars (25 player)
-						ach(3813),		-- Upper Back Pain (25 player)
+						ach(3937),	-- Not One, But Two Jormungars (25 player)
+						ach(3813),	-- Upper Back Pain (25 player)
 						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { ADDED_7_1_0 },
 						}),
@@ -1913,7 +1913,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["groups"] = {
-						ach(3997),		-- Three Sixty Pain Spike (25 player)
+						ach(3997),	-- Three Sixty Pain Spike (25 player)
 						h(i(47266)),	-- Blood Fury
 						a(i(46996)),	-- Lionhead Slasher
 						h(i(47267)),	-- Death's Head Crossbow
@@ -2030,7 +2030,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34497,	-- Fjola Lightbane
 					},
 					["groups"] = {
-						ach(3815),		-- Salt and Pepper (25 player)
+						ach(3815),	-- Salt and Pepper (25 player)
 						a(i(47114)),	-- Lupine Longstaff
 						h(i(47302)),	-- Twin's Pact
 						h(i(47300)),	-- Gouge of the Frigid Heart
@@ -2125,8 +2125,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34799,	-- Dreadscale
 					},
 					["groups"] = {
-						ach(3937),		-- Not One, But Two Jormungars (25 player)
-						ach(3813),		-- Upper Back Pain (25 player)
+						ach(3937),	-- Not One, But Two Jormungars (25 player)
+						ach(3813),	-- Upper Back Pain (25 player)
 						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { ADDED_7_1_0 },
 						}),
@@ -2168,7 +2168,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["groups"] = {
-						ach(3997),		-- Three Sixty Pain Spike (25 player)
+						ach(3997),	-- Three Sixty Pain Spike (25 player)
 						h(i(47427)),	-- Blood Fury
 						a(i(47001)),	-- Lionhead Slasher
 						h(i(47428)),	-- Death's Head Crossbow
@@ -2279,7 +2279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34497,	-- Fjola Lightbane
 					},
 					["groups"] = {
-						ach(3815),		-- Salt and Pepper (25 player)
+						ach(3815),	-- Salt and Pepper (25 player)
 						h(i(47463)),	-- Twin's Pact
 						a(i(47130)),	-- Lupine Longstaff
 						h(i(47461)),	-- Gouge of the Frigid Heart
@@ -2398,33 +2398,33 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							h(i(49098)),	-- Crusader's Black Warhorse (MOUNT!)
 						})),
 						ach(3819, {	-- A Tribute to Insanity (25 Player)
-							h(ig(47551)),		-- Aethas' Intensity
-							a(ig(47553)),		-- Bolvar's Devotion
-							h(ig(47550)),		-- Cairne's Endurance
-							h(ig(47548)),		-- Garrosh's Rage
-							a(ig(47552)),		-- Jaina's Radiance
-							h(ig(47554)),		-- Lady Liadrin's Conviction
-							a(ig(47549)),		-- Magni's Resolution
-							h(ig(47546)),		-- Sylvanas' Cunning
-							a(ig(47547)),		-- Varian's Furor
-							a(ig(47545)),		-- Vereesa's Dexterity
+							h(ig(47551)),	-- Aethas' Intensity
+							a(ig(47553)),	-- Bolvar's Devotion
+							h(ig(47550)),	-- Cairne's Endurance
+							h(ig(47548)),	-- Garrosh's Rage
+							a(ig(47552)),	-- Jaina's Radiance
+							h(ig(47554)),	-- Lady Liadrin's Conviction
+							a(ig(47549)),	-- Magni's Resolution
+							h(ig(47546)),	-- Sylvanas' Cunning
+							a(ig(47547)),	-- Varian's Furor
+							a(ig(47545)),	-- Vereesa's Dexterity
 						}),
 						ach(3818),	-- A Tribute to Mad Skill (25 Player)
 						ach(3817, {	-- A Tribute to Skill (25 Player)
-							a(ig(47517)),		-- Blade of the Unbroken Covenant
-							a(ig(47521)),		-- BRK-1000
-							a(ig(47519)),		-- Catastrophe
-							a(ig(47524)),		-- Clemency
-							h(ig(47528)),		-- Cudgel of the Damned
-							a(ig(47515)),		-- Decimation
-							h(ig(47523)),		-- Fezzik's Autocannon
-							h(ig(47516)),		-- Fleshrender
-							h(ig(47520)),		-- Grievance
-							h(ig(47518)),		-- Mortalis
-							h(ig(47513)),		-- Orgrim's Deflector
-							a(ig(47526)),		-- Remorseless
-							a(ig(47506)),		-- Silverwing Defender
-							h(ig(47525)),		-- Sufferance
+							a(ig(47517)),	-- Blade of the Unbroken Covenant
+							a(ig(47521)),	-- BRK-1000
+							a(ig(47519)),	-- Catastrophe
+							a(ig(47524)),	-- Clemency
+							h(ig(47528)),	-- Cudgel of the Damned
+							a(ig(47515)),	-- Decimation
+							h(ig(47523)),	-- Fezzik's Autocannon
+							h(ig(47516)),	-- Fleshrender
+							h(ig(47520)),	-- Grievance
+							h(ig(47518)),	-- Mortalis
+							h(ig(47513)),	-- Orgrim's Deflector
+							a(ig(47526)),	-- Remorseless
+							a(ig(47506)),	-- Silverwing Defender
+							h(ig(47525)),	-- Sufferance
 						}),
 					},
 				})),

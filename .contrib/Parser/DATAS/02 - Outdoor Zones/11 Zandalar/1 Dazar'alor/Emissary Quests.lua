@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["lvl"] = 120,
-				["sym"] = { { "select", "itemID", 165871, 163857 } },		-- Honorbound Equipment Cache & Azerite Armor Cache
+				["sym"] = { { "select", "itemID", 165871, 163857 } },	-- Honorbound Equipment Cache & Azerite Armor Cache
 			}),
 			q(54455, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_THE_HONORBOUND, EXALTED } }, {	-- Supplies from the Honorbound
 				["provider"] = { "n", 135447 },	-- Ransa Greyfeather

@@ -1036,18 +1036,18 @@ root(ROOTS.Zones, {
 							platinum(15, i(265789)),	-- Eye of the Legion
 
 							-- Toys
-							platinum(50, i(49704)),		-- Carved Ogre Idol
+							platinum(50, i(49704)),	-- Carved Ogre Idol
 							platinum(15, i(265786)),	-- Demon Hunter's Aspect
-							platinum(15, i(54212)),		-- Instant Statue Pedestal
+							platinum(15, i(54212)),	-- Instant Statue Pedestal
 							platinum(30, i(266999)),	-- Swift Yak Pelt
 
 							-- Mounts
 							platinum(70, i(265787)),	-- Magic Rooster Egg
-							platinum(50, i(90710)),		-- Reins of the Ashen Pandaren Phoenix
-							platinum(50, i(89154)),		-- Reins of the Crimson Pandaren Phoenix
-							platinum(50, i(90711)),		-- Reins of the Emerald Pandaren Phoenix
+							platinum(50, i(90710)),	-- Reins of the Ashen Pandaren Phoenix
+							platinum(50, i(89154)),	-- Reins of the Crimson Pandaren Phoenix
+							platinum(50, i(90711)),	-- Reins of the Emerald Pandaren Phoenix
 							platinum(300, i(277652)),	-- Reins of the Juvenile Frostwyrm
-							platinum(50, i(90712)),		-- Reins of the Violet Pandaren Phoenix
+							platinum(50, i(90712)),	-- Reins of the Violet Pandaren Phoenix
 							platinum(150, i(276081)),	-- Spectral Wind Rider
 							platinum(300, i(276075)),	-- Stormcrow
 							platinum(40, i(265788)),	-- Wooly White Rhino
@@ -1255,18 +1255,18 @@ root(ROOTS.Zones, {
 							platinum(15, i(265789)),	-- Eye of the Legion
 
 							-- Toys
-							platinum(50, i(49704)),		-- Carved Ogre Idol
+							platinum(50, i(49704)),	-- Carved Ogre Idol
 							platinum(15, i(265786)),	-- Demon Hunter's Aspect
-							platinum(15, i(54212)),		-- Instant Statue Pedestal
+							platinum(15, i(54212)),	-- Instant Statue Pedestal
 							platinum(30, i(266999)),	-- Swift Yak Pelt
 
 							-- Mounts
 							platinum(70, i(265787)),	-- Magic Rooster Egg
-							platinum(50, i(90710)),		-- Reins of the Ashen Pandaren Phoenix
-							platinum(50, i(89154)),		-- Reins of the Crimson Pandaren Phoenix
-							platinum(50, i(90711)),		-- Reins of the Emerald Pandaren Phoenix
+							platinum(50, i(90710)),	-- Reins of the Ashen Pandaren Phoenix
+							platinum(50, i(89154)),	-- Reins of the Crimson Pandaren Phoenix
+							platinum(50, i(90711)),	-- Reins of the Emerald Pandaren Phoenix
 							platinum(300, i(277652)),	-- Reins of the Juvenile Frostwyrm
-							platinum(50, i(90712)),		-- Reins of the Violet Pandaren Phoenix
+							platinum(50, i(90712)),	-- Reins of the Violet Pandaren Phoenix
 							platinum(150, i(276081)),	-- Spectral Wind Rider
 							platinum(300, i(276075)),	-- Stormcrow
 							platinum(40, i(265788)),	-- Wooly White Rhino
@@ -1505,7 +1505,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.8, 30.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["groups"] = sharedData({
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "g", 20000000 } },		-- 2,000g
+							["cost"] = { { "g", 20000000 } },	-- 2,000g
 						}, {
 							i(257354),	-- Scroll of K'aresh's Fall (DECOR!)
 							i(257351),	-- Tale of the Penultimate Lich King (DECOR!)

@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				n(ACHIEVEMENTS, {
 					ach(9495, {		-- The Bone Collector
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-						["groups"] = { i(111981) },		-- Gladiator's Sanctum, Level 3 [Blueprints]
+						["groups"] = { i(111981) },	-- Gladiator's Sanctum, Level 3 [Blueprints]
 					}),
 					ach(9725, {	-- The Last of Us
 						-- title_gendered(302, 303),	-- Lord of War / Lady of War

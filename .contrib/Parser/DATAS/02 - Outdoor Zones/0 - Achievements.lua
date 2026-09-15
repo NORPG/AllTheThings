@@ -59,7 +59,7 @@ root(ROOTS.Zones, {
 		applyclassicphase(WRATH_PHASE_ONE, ach(978, {		-- 3000 Quests Completed
 			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
-				title(42),		-- <Name> the Seeker
+				title(42),	-- <Name> the Seeker
 			},
 		})),
 		ach(11126, {	-- 50 World Quests Completed
@@ -87,7 +87,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		applyclassicphase(PHASE_ONE, achWithReps(948, {	-- Ambassador of the Alliance
-		FACTION_DARNASSUS, FACTION_GNOMEREGAN, FACTION_IRONFORGE, FACTION_STORMWIND,		-- Exalted Darnassus, Gnomeregan, Ironforge, Stormwind City
+		FACTION_DARNASSUS, FACTION_GNOMEREGAN, FACTION_IRONFORGE, FACTION_STORMWIND,	-- Exalted Darnassus, Gnomeregan, Ironforge, Stormwind City
 			-- #if AFTER TBC
 			FACTION_EXODAR,	-- Exalted Exodar
 			-- #endif
@@ -271,34 +271,34 @@ root(ROOTS.Zones, {
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
 			["timeline"] = { ADDED_8_0_1 },
 			["groups"] = {
-				i(163634),		-- Dreadtick Leecher (PET!)
-				crit(41273),		-- Shadowback Crawler
-				crit(41274),		-- River Frog
-				crit(41275),		-- Freshwater Crawler
-				crit(41276),		-- Vale Marmot
-				crit(41277),		-- Valley Chicken
-				crit(41278),		-- Sandyback Crawler
-				crit(41279),		-- River Otter
-				crit(41281),		-- Parasitic Boarfly
-				crit(41282),		-- Shack Crab
-				crit(41283),		-- Inland Croaker
-				crit(41284),		-- Giant Woodworm
-				crit(41285),		-- Shore Butterfly
-				crit(41286),		-- Barrier Hermit
-				crit(41287),		-- Coastal Scuttler
-				crit(41289),		-- Golden Beetle
-				crit(41288),		-- Bloodfever Tarantula
-				crit(41290),		-- Elusive Skimmer
-				crit(41291),		-- Leafy Flutterwing
-				crit(41292),		-- Young Sand Sifter
-				crit(41293),		-- Sticky Oozeling
-				crit(41294),		-- Returned Hatchling
-				crit(41295),		-- Glutted Bleeder
-				crit(41296),		-- Spectral Raven
-				crit(41297),		-- Boghopper
-				crit(41298),		-- Hermit Crab
-				crit(41299),		-- Coastal Bounder
-				crit(41280),		-- Honey Bee
+				i(163634),	-- Dreadtick Leecher (PET!)
+				crit(41273),	-- Shadowback Crawler
+				crit(41274),	-- River Frog
+				crit(41275),	-- Freshwater Crawler
+				crit(41276),	-- Vale Marmot
+				crit(41277),	-- Valley Chicken
+				crit(41278),	-- Sandyback Crawler
+				crit(41279),	-- River Otter
+				crit(41281),	-- Parasitic Boarfly
+				crit(41282),	-- Shack Crab
+				crit(41283),	-- Inland Croaker
+				crit(41284),	-- Giant Woodworm
+				crit(41285),	-- Shore Butterfly
+				crit(41286),	-- Barrier Hermit
+				crit(41287),	-- Coastal Scuttler
+				crit(41289),	-- Golden Beetle
+				crit(41288),	-- Bloodfever Tarantula
+				crit(41290),	-- Elusive Skimmer
+				crit(41291),	-- Leafy Flutterwing
+				crit(41292),	-- Young Sand Sifter
+				crit(41293),	-- Sticky Oozeling
+				crit(41294),	-- Returned Hatchling
+				crit(41295),	-- Glutted Bleeder
+				crit(41296),	-- Spectral Raven
+				crit(41297),	-- Boghopper
+				crit(41298),	-- Hermit Crab
+				crit(41299),	-- Coastal Bounder
+				crit(41280),	-- Honey Bee
 			},
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(4868, {	-- Cataclysm Explorer [7.0.3] / Explore Cataclysm
@@ -1402,11 +1402,11 @@ root(ROOTS.Zones, {
 		})),
 		petbattle(ach(6601, {	-- Taming the Wild [1)
 			["timeline"] = { ADDED_5_0_4 },
-			["_noautomation"] = true,		-- Taming the World does this already
+			["_noautomation"] = true,	-- Taming the World does this already
 		})),
 		petbattle(ach(7498, {	-- Taming the Great Outdoors [15)
 			["timeline"] = { ADDED_5_0_4 },
-			["_noautomation"] = true,		-- Taming the World does this already
+			["_noautomation"] = true,	-- Taming the World does this already
 		})),
 		petbattle(ach(7499, {	-- Taming the World (40)
 			["timeline"] = { ADDED_5_0_4 },
@@ -1472,7 +1472,7 @@ root(ROOTS.Zones, {
 				1678,	-- Loremaster of Kalimdor (A)
 				1676,	-- Loremaster of Eastern Kingdoms (A)
 				1262,	-- Loremaster of Outland (A)
-				41,		-- Loremaster of Northrend (A)
+				41,	-- Loremaster of Northrend (A)
 				-- #if AFTER CATA
 				4875,	-- Loremaster of Cataclysm (A)
 				-- #endif
@@ -1507,7 +1507,7 @@ root(ROOTS.Zones, {
 				1676,	-- Loremaster of Eastern Kingdoms
 				1678,	-- Loremaster of Kalimdor
 				1262,	-- Loremaster of Outland
-				41,		-- Loremaster of Northrend
+				41,	-- Loremaster of Northrend
 				4875,	-- Loremaster of Cataclysm
 				6541,	-- Loremaster of Pandaria
 				-- #if AFTER WOD
@@ -1527,8 +1527,8 @@ root(ROOTS.Zones, {
 			}},
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
-				title(93),		-- Loremaster <Name>
-				i(43300),		-- Loremaster's Colors
+				title(93),	-- Loremaster <Name>
+				i(43300),	-- Loremaster's Colors
 			},
 		}),
 		ach(1206, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- To All The Squirrels I've Loved Before
@@ -2001,7 +2001,7 @@ root(ROOTS.Zones, {
 			}},
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
-				title(199),		-- Zookeeper <Name>
+				title(199),	-- Zookeeper <Name>
 			},
 		})),
 	}),

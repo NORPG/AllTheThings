@@ -390,9 +390,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 62448 },	-- Securing the House
 				["provider"] = { "n", 161907 },	-- Baroness Draka
 				["coord"] = { 49.6, 50.7, SEAT_OF_THE_PRIMUS },
-				["groups"] = {
-					i(182077),		-- War-Bred Tauralus (MOUNT!)
-				},
+				["groups"] = { i(182077) },	-- War-Bred Tauralus (MOUNT!)
 			}),
 			q(61747, {	-- Errant Enchantments
 				["sourceQuests"] = { 61745 },	-- Mistress of Tomes

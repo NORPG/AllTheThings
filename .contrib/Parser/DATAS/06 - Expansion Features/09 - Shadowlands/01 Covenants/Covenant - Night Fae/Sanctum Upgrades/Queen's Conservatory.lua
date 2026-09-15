@@ -40,83 +40,83 @@ for _,g in ipairs({DUTIFUL_COST_GROUP,MARTIAL_COST_GROUP,UNTAMED_COST_GROUP,PRID
 	end
 end
 local T2_DUTIFUL_GROUP = {
-	i(181225),		-- Crossbow of Contemplative Calm
-	i(181226),		-- Bronze Dual-Bladed Glaive
-	i(181232),		-- Cupbearer's Claymore
-	i(181234),		-- Dutybound Spellblade
+	i(181225),	-- Crossbow of Contemplative Calm
+	i(181226),	-- Bronze Dual-Bladed Glaive
+	i(181232),	-- Cupbearer's Claymore
+	i(181234),	-- Dutybound Spellblade
 };
 local T3_DUTIFUL_GROUP = {
-	i(181228),		-- Temple Guard's Partisan
-	i(181229),		-- Tranquil's Censer
-	i(181230),		-- Pugilist's Chakram
-	i(181233),		-- Bellringer's Hammer
-	i(180814),		-- Sable (PET!)
-	i(180815),		-- Brightscale Hatchling (PET!)
+	i(181228),	-- Temple Guard's Partisan
+	i(181229),	-- Tranquil's Censer
+	i(181230),	-- Pugilist's Chakram
+	i(181233),	-- Bellringer's Hammer
+	i(180814),	-- Sable (PET!)
+	i(180815),	-- Brightscale Hatchling (PET!)
 };
 local T5_DUTIFUL_GROUP = {
-	i(181227),		-- Bronze Ceremonial Targe
-	i(181231),		-- Broadbladed Severer
-	i(181235),		-- Final Arbiter's Gavel
-	i(181317),		-- Dauntless Duskrunner (MOUNT!)
+	i(181227),	-- Bronze Ceremonial Targe
+	i(181231),	-- Broadbladed Severer
+	i(181235),	-- Final Arbiter's Gavel
+	i(181317),	-- Dauntless Duskrunner (MOUNT!)
 };
 local T2_MARTIAL_GROUP = {
-	i(181329),		-- Marrowfused Claymore
-	i(181321),		-- Gem-Crowned Wand
-	i(181327),		-- Spineforged Tenderizer
+	i(181329),	-- Marrowfused Claymore
+	i(181321),	-- Gem-Crowned Wand
+	i(181327),	-- Spineforged Tenderizer
 };
 local T3_MARTIAL_GROUP = {
-	i(181330),		-- Marrowfused Warglaive
-	i(181325),		-- Marrowfused Dagger
-	i(181328),		-- Marrowfused Sword
-	i(181331),		-- Marrowfused Shield
-	i(181326),		-- Bloodstained Hacksaw
-	i(181323),		-- Blightclutched Greatstaff
-	i(181264),		-- Plaguelouse Larva (PET!)
-	i(181168),		-- Corpulent Bonetusk (PET!)
+	i(181330),	-- Marrowfused Warglaive
+	i(181325),	-- Marrowfused Dagger
+	i(181328),	-- Marrowfused Sword
+	i(181331),	-- Marrowfused Shield
+	i(181326),	-- Bloodstained Hacksaw
+	i(181323),	-- Blightclutched Greatstaff
+	i(181264),	-- Plaguelouse Larva (PET!)
+	i(181168),	-- Corpulent Bonetusk (PET!)
 };
 local T5_MARTIAL_GROUP = {
-	i(181320),		-- Bonejowl Ballista
-	i(181322),		-- Bonebound Tome
-	i(181300),		-- Gruesome Flayedwing (MOUNT!)
+	i(181320),	-- Bonejowl Ballista
+	i(181322),	-- Bonebound Tome
+	i(181300),	-- Gruesome Flayedwing (MOUNT!)
 };
 local T2_UNTAMED_GROUP = {
-	i(179548),		-- Elderwood Gavel
-	i(179563),		-- Heartwood Stem
+	i(179548),	-- Elderwood Gavel
+	i(179563),	-- Heartwood Stem
 };
 local T3_UNTAMED_GROUP = {
-	i(179499),		-- Nightwillow Barb
-	i(179538),		-- Grove Warden's Maul
-	i(179605),		-- Elderwood Barrier
-	i(179514),		-- Ripvine Saber
-	i(179585),		-- Nightwillow Shortbow
-	i(180628),		-- Pearlwing Heron (PET!)
-	i(180639),		-- Dusty Sporeflutterer (PET!)
+	i(179499),	-- Nightwillow Barb
+	i(179538),	-- Grove Warden's Maul
+	i(179605),	-- Elderwood Barrier
+	i(179514),	-- Ripvine Saber
+	i(179585),	-- Nightwillow Shortbow
+	i(180628),	-- Pearlwing Heron (PET!)
+	i(180639),	-- Dusty Sporeflutterer (PET!)
 };
 local T5_UNTAMED_GROUP = {
-	i(179509),		-- Grove Warden's Edge
-	i(179516),		-- Songwood Staff
-	i(179533),		-- Grove Warden's Harvester
-	i(180726),		-- Pale Acidmaw (MOUNT!)
+	i(179509),	-- Grove Warden's Edge
+	i(179516),	-- Songwood Staff
+	i(179533),	-- Grove Warden's Harvester
+	i(180726),	-- Pale Acidmaw (MOUNT!)
 };
 local T2_PRIDEFUL_GROUP = {
-	i(180955),		-- Stonewing Halberd
-	i(180956),		-- Axeblade Blunderbuss
-	i(180957),		-- Batwing Glaive
-	i(180963),		-- Crypt Keeper's Vessel
+	i(180955),	-- Stonewing Halberd
+	i(180956),	-- Axeblade Blunderbuss
+	i(180957),	-- Batwing Glaive
+	i(180963),	-- Crypt Keeper's Vessel
 };
 local T3_PRIDEFUL_GROUP = {
-	i(180954),		-- Crypt Watcher's Spire
-	i(180959),		-- Dredger Anklebiter
-	i(180960),		-- Shiny-Metal Topped Basher
-	i(180964),		-- Ember Court Barrier
-	i(180603),		-- Violet Dredwing Pup (PET!)
-	i(181315),		-- Bloodfeaster Spiderling (PET!)
+	i(180954),	-- Crypt Watcher's Spire
+	i(180959),	-- Dredger Anklebiter
+	i(180960),	-- Shiny-Metal Topped Basher
+	i(180964),	-- Ember Court Barrier
+	i(180603),	-- Violet Dredwing Pup (PET!)
+	i(181315),	-- Bloodfeaster Spiderling (PET!)
 };
 local T5_PRIDEFUL_GROUP = {
-	i(180958),		-- Redelev House Foil
-	i(180961),		-- Silver-Bladed Ritual Dagger
-	i(180962),		-- Sterling-Silver Cudgel
-	i(181316),		-- Silvertip Dredwing (MOUNT!)
+	i(180958),	-- Redelev House Foil
+	i(180961),	-- Silver-Bladed Ritual Dagger
+	i(180962),	-- Sterling-Silver Cudgel
+	i(181316),	-- Silvertip Dredwing (MOUNT!)
 };
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
@@ -334,9 +334,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									header(HEADERS.Item, 177698, {	-- Untamed Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[7] },appendGroups(T2_UNTAMED_GROUP, {
-											i(181313),		-- Snapper Soul
-											i(181314),		-- Gulper Soul
-											i(181302),		-- Spirit Tender's Branches
+											i(181313),	-- Snapper Soul
+											i(181314),	-- Gulper Soul
+											i(181302),	-- Spirit Tender's Branches
 										})),
 									}),
 									header(HEADERS.Item, 178882, {	-- Prideful Spirit

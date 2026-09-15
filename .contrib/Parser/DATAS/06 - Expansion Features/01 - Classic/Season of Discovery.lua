@@ -3543,12 +3543,12 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 					},
 				})),
 				applyclassicphase(SOD_PHASE_SEVEN, q(87361, {	-- Laid to Rest
-					["provider"] = { "i", 236750},		-- Heart of Doom
+					["provider"] = { "i", 236750},	-- Heart of Doom
 					["sourceQuest"] = 88745,	-- Shadows of Doom
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
-							["provider"] = { "n", 238376 },		-- Brother Luctus <Soul Seer>
+							["provider"] = { "n", 238376 },	-- Brother Luctus <Soul Seer>
 							["coord"] = { 80.6, 65.4 , EASTERN_PLAGUELANDS },
 						}),
 					},

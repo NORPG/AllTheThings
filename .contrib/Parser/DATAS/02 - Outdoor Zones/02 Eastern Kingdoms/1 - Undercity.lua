@@ -1990,11 +1990,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 					["groups"] = {
 						i(1835),	-- Dirty Leather Belt
-						i(210),		-- Dirty Leather Boots
+						i(210),	-- Dirty Leather Boots
 						i(1836),	-- Dirty Leather Bracers
-						i(714),		-- Dirty Leather Gloves
-						i(209),		-- Dirty Leather Pants
-						i(85),		-- Dirty Leather Vest
+						i(714),	-- Dirty Leather Gloves
+						i(209),	-- Dirty Leather Pants
+						i(85),	-- Dirty Leather Vest
 						i(3595),	-- Tattered Cloth Belt
 						i(195),	-- Tattered Cloth Boots
 						i(3596),	-- Tattered Cloth Bracers

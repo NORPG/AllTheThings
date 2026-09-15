@@ -7,9 +7,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 		["description"] = "These rewards are shared across Covenants.",
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(14835),		-- A Resolute Bond
-				ach(14636),		-- Adventurer in Chief
-				ach(14843),		-- Adventures: Harmony of Purpose
+				ach(14835),	-- A Resolute Bond
+				ach(14636),	-- Adventurer in Chief
+				ach(14843),	-- Adventures: Harmony of Purpose
 				ach(14844, {	-- Adventures: Into the Breach
 					["sym"] = {{ "achievement_criteria" }},
 				}),
@@ -61,11 +61,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				ach(15646, {	-- Re-Re-Re-Renowned
 					["timeline"] = { ADDED_9_2_5 },
 				}),
-				ach(14632),		-- Conducting Anima
-				ach(14639),		-- Dedication to the Restoration
-				ach(14633),		-- Master Navigator
-				ach(14837),		-- Nexus of Bonds
-				ach(14777),		-- Restoration Expert
+				ach(14632),	-- Conducting Anima
+				ach(14639),	-- Dedication to the Restoration
+				ach(14633),	-- Master Navigator
+				ach(14837),	-- Nexus of Bonds
+				ach(14777),	-- Restoration Expert
 				ach(15023),	-- We Can Rebuild
 				ach(15024),	-- Denying the Drought
 				ach(15025),	-- Sanctum Superior
@@ -81,9 +81,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						},
 					},
 				}),
-				ach(14638),		-- The Anima Must Flow
-				ach(14836),		-- Unwavering Bond
-				ach(14637),		-- Your Covenant's Flavor
+				ach(14638),	-- The Anima Must Flow
+				ach(14836),	-- Unwavering Bond
+				ach(14637),	-- Your Covenant's Flavor
 			}),
 			n(ADVENTURES, {
 				["crs"] = {

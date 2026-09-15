@@ -74,10 +74,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(52330, {	-- Beehemoth
-				["cr"] = 134147,		-- Beehemoth
+				["cr"] = 134147,	-- Beehemoth
 				["groups"] = {
 					i(160459, {	-- Apiarist's Stingproof Belt
-						["bonusID"] = 4803,		-- WQ Bonus ID
+						["bonusID"] = 4803,	-- WQ Bonus ID
 					}),
 				},
 			}),

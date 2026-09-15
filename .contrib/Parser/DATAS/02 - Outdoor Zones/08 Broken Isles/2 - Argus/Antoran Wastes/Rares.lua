@@ -13,7 +13,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 73.6, 71.8, ANTORAN_WASTES },
 						["sym"] = {
 							{"select","mapID",ANTORAN_WASTES},	-- get Antoran Wastes
-							{"find","headerID",SPECIAL},		-- get Special
+							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 						},
 						["groups"] = {
@@ -120,7 +120,7 @@ root(ROOTS.Zones, {
 						},
 						["cost"] = {
 							{ "i", 152999, 100 },	-- 100x Imp Meat
-							{ "i", 153013, 1 },		-- Disgusting Feast
+							{ "i", 153013, 1 },	-- Disgusting Feast
 						},
 						["crs"] = { 126073 },	-- Felspawn Imp
 						["groups"] = {
@@ -200,7 +200,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.6, 21.8, ANTORAN_WASTES },
 						["sym"] = {
 							{"select","mapID",ANTORAN_WASTES},	-- get Antoran Wastes
-							{"find","headerID",SPECIAL},		-- get Special
+							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 						},
 						["groups"] = {
@@ -229,7 +229,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.6, 54.6, ANTORAN_WASTES },
 						["sym"] = {
 							{"select","mapID",ANTORAN_WASTES},	-- get Antoran Wastes
-							{"find","headerID",SPECIAL},		-- get Special
+							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 						},
 						["groups"] = {

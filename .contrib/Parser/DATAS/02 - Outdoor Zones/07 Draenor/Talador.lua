@@ -81,17 +81,17 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(9635),		-- Bobbing for Orcs
-					ach(9634),		-- Charged Up
+					ach(9635),	-- Bobbing for Orcs
+					ach(9634),	-- Charged Up
 					ach(9633, {		-- Cut off the Head (Shattrath City)
-						crit(26465),		-- Bombardier Gu'gok
-						crit(26466),		-- Gug'tol
-						crit(26467),		-- Haakun the All-Consuming
-						crit(26468),		-- Felfire Consort
-						crit(26469),		-- Avatar of Socrethar
-						crit(26470),		-- Sargerei War Council
-						crit(26579),		-- Legion Vanguard
-						crit(26580),		-- Xothear, the Destroyer
+						crit(26465),	-- Bombardier Gu'gok
+						crit(26466),	-- Gug'tol
+						crit(26467),	-- Haakun the All-Consuming
+						crit(26468),	-- Felfire Consort
+						crit(26469),	-- Avatar of Socrethar
+						crit(26470),	-- Sargerei War Council
+						crit(26579),	-- Legion Vanguard
+						crit(26580),	-- Xothear, the Destroyer
 					}),
 					ach(8920, {	-- Don't Let the Tala-door Hit You on the Way Out (A)
 						["description"] = "Completing the Achievement will allow you to buy 'Talador Treasure Map' from Grakis in Stormshield.",
@@ -103,17 +103,17 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(8940),		-- Explore Talador
-					ach(9486),		-- Goodness Gracious
+					ach(8940),	-- Explore Talador
+					ach(9486),	-- Goodness Gracious
 					ach(9638, {		-- Heralds of the Legion (Shattrath City)
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9674, {	-- I Want More Talador
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(9637),		-- Poor Communication
-					ach(9632),		-- The Power Is Yours
-					ach(9636),		-- United We Stand
+					ach(9637),	-- Poor Communication
+					ach(9632),	-- The Power Is Yours
+					ach(9636),	-- United We Stand
 				}),
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",

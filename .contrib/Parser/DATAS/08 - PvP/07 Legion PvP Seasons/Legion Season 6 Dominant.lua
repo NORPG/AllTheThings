@@ -20,10 +20,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
-			ach(12169),		-- Challenger: Legion Season 6
-			ach(12170),		-- Rival: Legion Season 6
-			ach(12171),		-- Duelist: Legion Season 6
-			ach(12135),		-- Dominant Elite
+			ach(12169),	-- Challenger: Legion Season 6
+			ach(12170),	-- Rival: Legion Season 6
+			ach(12171),	-- Duelist: Legion Season 6
+			ach(12135),	-- Dominant Elite
 			ach(12167, {	-- Gladiator: Legion Season 6
 				i(141848),	-- Dominant Gladiator's Storm Dragon (MOUNT!)
 			}),

@@ -390,7 +390,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["provider"] = { "i", 186414 },
 					["classes"] = { HUNTER },
 				}),
-				ach(15110),		-- Dominating the Catwalk
+				ach(15110),	-- Dominating the Catwalk
 				-- Fated
 				ach(15667,	-- Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
@@ -492,9 +492,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				})),
 					-- Guild Achievements
-				ach(15182),		-- Sanctum of Domination Guild Run
-				ach(15183),		-- Heroic: Sanctum of Domination Guild Run
-				ach(15184),		-- Mythic: Sylvanas Windrunner Guild Run
+				ach(15182),	-- Sanctum of Domination Guild Run
+				ach(15183),	-- Heroic: Sanctum of Domination Guild Run
+				ach(15184),	-- Mythic: Sylvanas Windrunner Guild Run
 			}),
 			CommonBossDrops({
 				i(186671),	-- Vantus Rune Technique: Sanctum of Domination (RECIPE!)

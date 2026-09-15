@@ -43,9 +43,9 @@ root(ROOTS.Zones, {
 					}),
 					o_repeated({	-- Eredar War Supplies
 						["sym"] = {
-							{"select","mapID",KROKUUN},		-- get Krokuun
+							{"select","mapID",KROKUUN},	-- get Krokuun
 							{"find","headerID",SPECIAL},	-- get Special
-							{"find","filterID",PLATE},{"pop"},		-- get Plate
+							{"find","filterID",PLATE},{"pop"},	-- get Plate
 						},
 						["groups"] = appendAllGroups({	-- Shared Rewards
 							i(152857),	-- Chipped Man'ari Blade

@@ -13,12 +13,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(19157),		-- Combatant I: Dragonflight Season 3
-			ach(19158),		-- Combatant II: Dragonflight Season 3
-			ach(19159),		-- Challenger I: Dragonflight Season 3
-			ach(19160),		-- Challenger II: Dragonflight Season 3
-			ach(19133),		-- Rival I: Dragonflight Season 3
-			ach(19155),		-- Rival II: Dragonflight Season 3
+			ach(19157),	-- Combatant I: Dragonflight Season 3
+			ach(19158),	-- Combatant II: Dragonflight Season 3
+			ach(19159),	-- Challenger I: Dragonflight Season 3
+			ach(19160),	-- Challenger II: Dragonflight Season 3
+			ach(19133),	-- Rival I: Dragonflight Season 3
+			ach(19155),	-- Rival II: Dragonflight Season 3
 			ach(19156, {	-- Duelist: Dragonflight Season 3
 				ill(7032),	-- Verdant Crush (ILLUSION!)
 				i(209609),	-- Verdant Gladiator's Prestigious Cloak
@@ -28,7 +28,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				i(210345),	-- Verdant Gladiator's Slitherdrake (MOUNT!)
 				i(210064),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (MM!)
 			}),
-			ach(19295),		-- Verdant Gladiator's Drake
+			ach(19295),	-- Verdant Gladiator's Drake
 			ach(19132, {	-- Verdant Gladiator: Dragonflight Season 3
 				title(526),	-- Verdant Gladiator <Name>
 			}),

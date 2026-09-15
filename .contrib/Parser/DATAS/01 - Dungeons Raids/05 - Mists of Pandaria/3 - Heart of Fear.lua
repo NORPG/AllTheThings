@@ -5,53 +5,53 @@
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			CHEST = 89265,		-- Chest of the Shadowy Conqueror
+			CHEST = 89265,	-- Chest of the Shadowy Conqueror
 			GAUNTLETS = 89271,	-- Gauntlets of the Shadowy Conqueror
-			LEGS = 89268,		-- Leggings of the Shadowy Conqueror
+			LEGS = 89268,	-- Leggings of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
-			CHEST = 89266,		-- Chest of the Shadowy Protector
+			CHEST = 89266,	-- Chest of the Shadowy Protector
 			GAUNTLETS = 89272,	-- Gauntlets of the Shadowy Protector
-			LEGS = 89269,		-- Leggings of the Shadowy Protector
+			LEGS = 89269,	-- Leggings of the Shadowy Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
-			CHEST = 89264,		-- Chest of the Shadowy Vanquisher
+			CHEST = 89264,	-- Chest of the Shadowy Vanquisher
 			GAUNTLETS = 89270,	-- Gauntlets of the Shadowy Vanquisher
-			LEGS = 89267,		-- Leggings of the Shadowy Vanquisher
+			LEGS = 89267,	-- Leggings of the Shadowy Vanquisher
 		},
 	},
 	NORMAL = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			CHEST = 89237,		-- Chest of the Shadowy Conqueror
+			CHEST = 89237,	-- Chest of the Shadowy Conqueror
 			GAUNTLETS = 89240,	-- Gauntlets of the Shadowy Conqueror
-			LEGS = 89243,		-- Leggings of the Shadowy Conqueror
+			LEGS = 89243,	-- Leggings of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
-			CHEST = 89238,		-- Chest of the Shadowy Protector
+			CHEST = 89238,	-- Chest of the Shadowy Protector
 			GAUNTLETS = 89241,	-- Gauntlets of the Shadowy Protector
-			LEGS = 89244,		-- Leggings of the Shadowy Protector
+			LEGS = 89244,	-- Leggings of the Shadowy Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
-			CHEST = 89239,		-- Chest of the Shadowy Vanquisher
+			CHEST = 89239,	-- Chest of the Shadowy Vanquisher
 			GAUNTLETS = 89242,	-- Gauntlets of the Shadowy Vanquisher
-			LEGS = 89245,		-- Leggings of the Shadowy Vanquisher
+			LEGS = 89245,	-- Leggings of the Shadowy Vanquisher
 		},
 	},
 	HEROIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			CHEST = 89250,		-- Chest of the Shadowy Conqueror
+			CHEST = 89250,	-- Chest of the Shadowy Conqueror
 			GAUNTLETS = 89256,	-- Gauntlets of the Shadowy Conqueror
-			LEGS = 89253,		-- Leggings of the Shadowy Conqueror
+			LEGS = 89253,	-- Leggings of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
-			CHEST = 89251,		-- Chest of the Shadowy Protector
+			CHEST = 89251,	-- Chest of the Shadowy Protector
 			GAUNTLETS = 89257,	-- Gauntlets of the Shadowy Protector
-			LEGS = 89254,		-- Leggings of the Shadowy Protector
+			LEGS = 89254,	-- Leggings of the Shadowy Protector
 		},
 		VANQUISHER = {	-- Rogue, Death Knight, Mage, Druid
-			CHEST = 89249,		-- Chest of the Shadowy Vanquisher
+			CHEST = 89249,	-- Chest of the Shadowy Vanquisher
 			GAUNTLETS = 89255,	-- Gauntlets of the Shadowy Vanquisher
-			LEGS = 89252,		-- Leggings of the Shadowy Vanquisher
+			LEGS = 89252,	-- Leggings of the Shadowy Vanquisher
 		},
 	},
 };
@@ -111,123 +111,123 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86672)),		-- Battleplate of Resounding Rings
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86672)),	-- Battleplate of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86671)),	-- Gauntlets of Resounding Rings
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86670)),		-- Legplates of Resounding Rings
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86670)),	-- Legplates of Resounding Rings
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86668)),		-- Chestguard of Resounding Rings
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86668)),	-- Chestguard of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86667)),	-- Handguards of Resounding Rings
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86665)),		-- Legguards of Resounding Rings
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86665)),	-- Legguards of Resounding Rings
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86683)),		-- White Tiger Battleplate
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86683)),	-- White Tiger Battleplate
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86682)),	-- White Tiger Gauntlets
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86680)),		-- White Tiger Legplates
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86680)),	-- White Tiger Legplates
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86688)),		-- White Tiger Breastplate
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86688)),	-- White Tiger Breastplate
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86687)),	-- White Tiger Gloves
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86685)),		-- White Tiger Greaves
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86685)),	-- White Tiger Greaves
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86663)),		-- White Tiger Chestguard
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86663)),	-- White Tiger Chestguard
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86662)),	-- White Tiger Handguards
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86660)),		-- White Tiger Legguards
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86660)),	-- White Tiger Legguards
 						}),
 						cl(DEATHKNIGHT, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86678)),		-- Breastplate of the Lost Catacomb
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86678)),	-- Breastplate of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86677)),	-- Gauntlets of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86675)),			-- Greaves of the Lost Catacomb
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86658)),		-- Chestguard of the Lost Catacomb
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86658)),	-- Chestguard of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86657)),	-- Handguards of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86655)),			-- Legguards of the Lost Catacomb
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86638)),		-- Yaungol Slayer's Tunic
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86638)),	-- Yaungol Slayer's Tunic
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86637)),	-- Yaungol Slayer's Gloves
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86635)),		-- Yaungol Slayer's Legguards
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86635)),	-- Yaungol Slayer's Legguards
 						}),
 						cl(ROGUE, {
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86643)),		-- Tunic of the Thousandfold Blades
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86643)),	-- Tunic of the Thousandfold Blades
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86642)),	-- Gloves of the Thousandfold Blades
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86640)),			-- Legguards of the Thousandfold Blades
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86707)),		-- Guardian Serpent Raiment
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86707)),	-- Guardian Serpent Raiment
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86704)),	-- Guardian Serpent Gloves
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86706)),		-- Guardian Serpent Leggings
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86706)),	-- Guardian Serpent Leggings
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86700)),		-- Guardian Serpent Robes
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86700)),	-- Guardian Serpent Robes
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86703)),	-- Guardian Serpent Handwraps
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86701)),		-- Guardian Serpent Legwraps
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86701)),	-- Guardian Serpent Legwraps
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86628)),		-- Firebird's Cuirass
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86628)),	-- Firebird's Cuirass
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86627)),	-- Firebird's Grips
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86625)),		-- Firebird's Legguards
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86625)),	-- Firebird's Legguards
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86629)),		-- Firebird's Hauberk
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86629)),	-- Firebird's Hauberk
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86630)),	-- Firebird's Gloves
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86632)),		-- Firebird's Kilt
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86632)),	-- Firebird's Kilt
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86693)),		-- Firebird's Tunic
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86693)),	-- Firebird's Tunic
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86692)),	-- Firebird's Handwraps
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86690)),		-- Firebird's Legwraps
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86690)),	-- Firebird's Legwraps
 						}),
 						cl(MAGE, {
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86715)),		-- Robes of the Burning Scroll
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86715)),	-- Robes of the Burning Scroll
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86718)),	-- Gloves of the Burning Scroll
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86716)),			-- Leggings of the Burning Scroll
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86734)),		-- Red Crane Tunic
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86734)),	-- Red Crane Tunic
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86735)),	-- Red Crane Grips
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86737)),		-- Red Crane Leggings
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86737)),	-- Red Crane Leggings
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86732)),		-- Red Crane Vest
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86732)),	-- Red Crane Vest
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86729)),	-- Red Crane Handwraps
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86731)),		-- Red Crane Legwraps
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86731)),	-- Red Crane Legwraps
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86728)),		-- Red Crane Chestguard
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86728)),	-- Red Crane Chestguard
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86727)),	-- Red Crane Gauntlets
-							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86725)),		-- Red Crane Legguards
+							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86725)),	-- Red Crane Legguards
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86712)),		-- Sha-Skin Robes
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86712)),	-- Sha-Skin Robes
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86709)),	-- Sha-Skin Gloves
-							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86711)),		-- Sha-Skin Leggings
+							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86711)),	-- Sha-Skin Leggings
 						}),
 						cl(DRUID, {
 							-- DPS (Boomkin)
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86645)),		-- Eternal Blossom Vestment
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86645)),	-- Eternal Blossom Vestment
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86648)),	-- Eternal Blossom Gloves
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86646)),			-- Eternal Blossom Leggings
 
 							-- DPS (Feral)
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86653)),		-- Eternal Blossom Raiment
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86653)),	-- Eternal Blossom Raiment
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86652)),	-- Eternal Blossom Grips
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86650)),			-- Eternal Blossom Legguards
 
 							-- Healer
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86695)),		-- Eternal Blossom Robes
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86695)),	-- Eternal Blossom Robes
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86698)),	-- Eternal Blossom Handwraps
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86696)),			-- Eternal Blossom Legwraps
 
 							-- Tank
-							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86719)),		-- Eternal Blossom Tunic
+							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86719)),	-- Eternal Blossom Tunic
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86720)),	-- Eternal Blossom Handguards
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86722)),			-- Eternal Blossom Breeches
 						}),
@@ -240,123 +240,123 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85332)),		-- Battleplate of Resounding Rings
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85332)),	-- Battleplate of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85331)),	-- Gauntlets of Resounding Rings
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85330)),		-- Legplates of Resounding Rings
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85330)),	-- Legplates of Resounding Rings
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85328)),		-- Chestguard of Resounding Rings
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85328)),	-- Chestguard of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85327)),	-- Handguards of Resounding Rings
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85325)),		-- Legguards of Resounding Rings
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85325)),	-- Legguards of Resounding Rings
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85343)),		-- White Tiger Battleplate
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85343)),	-- White Tiger Battleplate
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85342)),	-- White Tiger Gauntlets
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85340)),		-- White Tiger Legplates
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85340)),	-- White Tiger Legplates
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85348)),		-- White Tiger Breastplate
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85348)),	-- White Tiger Breastplate
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85347)),	-- White Tiger Gloves
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85345)),		-- White Tiger Greaves
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85345)),	-- White Tiger Greaves
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85323)),		-- White Tiger Chestguard
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85323)),	-- White Tiger Chestguard
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85322)),	-- White Tiger Handguards
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85320)),		-- White Tiger Legguards
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85320)),	-- White Tiger Legguards
 						}),
 						cl(DEATHKNIGHT, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85338)),		-- Breastplate of the Lost Catacomb
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85338)),	-- Breastplate of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85337)),	-- Gauntlets of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85335)),			-- Greaves of the Lost Catacomb
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85318)),		-- Chestguard of the Lost Catacomb
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85318)),	-- Chestguard of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85317)),	-- Handguards of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85315)),			-- Legguards of the Lost Catacomb
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85298)),		-- Yaungol Slayer's Tunic
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85298)),	-- Yaungol Slayer's Tunic
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85297)),	-- Yaungol Slayer's Gloves
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85295)),		-- Yaungol Slayer's Legguards
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85295)),	-- Yaungol Slayer's Legguards
 						}),
 						cl(ROGUE, {
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85303)),		-- Tunic of the Thousandfold Blades
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85303)),	-- Tunic of the Thousandfold Blades
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85302)),	-- Gloves of the Thousandfold Blades
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85300)),			-- Legguards of the Thousandfold Blades
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85367)),		-- Guardian Serpent Raiment
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85367)),	-- Guardian Serpent Raiment
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85364)),	-- Guardian Serpent Gloves
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85366)),		-- Guardian Serpent Leggings
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85366)),	-- Guardian Serpent Leggings
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85360)),		-- Guardian Serpent Robes
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85360)),	-- Guardian Serpent Robes
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85363)),	-- Guardian Serpent Handwraps
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85361)),		-- Guardian Serpent Legwraps
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85361)),	-- Guardian Serpent Legwraps
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85288)),		-- Firebird's Cuirass
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85288)),	-- Firebird's Cuirass
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85287)),	-- Firebird's Grips
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85285)),		-- Firebird's Legguards
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85285)),	-- Firebird's Legguards
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85289)),		-- Firebird's Hauberk
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85289)),	-- Firebird's Hauberk
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85290)),	-- Firebird's Gloves
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85292)),		-- Firebird's Kilt
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85292)),	-- Firebird's Kilt
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85353)),		-- Firebird's Tunic
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85353)),	-- Firebird's Tunic
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85352)),	-- Firebird's Handwraps
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85350)),		-- Firebird's Legwraps
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85350)),	-- Firebird's Legwraps
 						}),
 						cl(MAGE, {
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85375)),		-- Robes of the Burning Scroll
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85375)),	-- Robes of the Burning Scroll
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85378)),	-- Gloves of the Burning Scroll
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85376)),			-- Leggings of the Burning Scroll
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85394)),		-- Red Crane Tunic
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85394)),	-- Red Crane Tunic
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85395)),	-- Red Crane Grips
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85397)),		-- Red Crane Leggings
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85397)),	-- Red Crane Leggings
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85392)),		-- Red Crane Vest
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85392)),	-- Red Crane Vest
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85389)),	-- Red Crane Handwraps
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85391)),		-- Red Crane Legwraps
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85391)),	-- Red Crane Legwraps
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85388)),		-- Red Crane Chestguard
+							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85388)),	-- Red Crane Chestguard
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85387)),	-- Red Crane Gauntlets
-							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85385)),		-- Red Crane Legguards
+							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85385)),	-- Red Crane Legguards
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85372)),		-- Sha-Skin Robes
+							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85372)),	-- Sha-Skin Robes
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85369)),	-- Sha-Skin Gloves
-							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85371)),		-- Sha-Skin Leggings
+							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85371)),	-- Sha-Skin Leggings
 						}),
 						cl(DRUID, {
 							-- DPS (Boomkin)
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85305)),		-- Eternal Blossom Vestment
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85305)),	-- Eternal Blossom Vestment
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85308)),	-- Eternal Blossom Gloves
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85306)),			-- Eternal Blossom Leggings
 
 							-- DPS (Feral)
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85313)),		-- Eternal Blossom Raiment
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85313)),	-- Eternal Blossom Raiment
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85312)),	-- Eternal Blossom Grips
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85310)),			-- Eternal Blossom Legguards
 
 							-- Healer
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85355)),		-- Eternal Blossom Robes
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85355)),	-- Eternal Blossom Robes
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85358)),	-- Eternal Blossom Handwraps
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85356)),			-- Eternal Blossom Legwraps
 
 							-- Tank
-							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85379)),		-- Eternal Blossom Tunic
+							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85379)),	-- Eternal Blossom Tunic
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85380)),	-- Eternal Blossom Handguards
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85382)),			-- Eternal Blossom Breeches
 						}),
@@ -368,123 +368,123 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87193)),		-- Battleplate of Resounding Rings
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87193)),	-- Battleplate of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87194)),	-- Gauntlets of Resounding Rings
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87195)),		-- Legplates of Resounding Rings
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87195)),	-- Legplates of Resounding Rings
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87197)),		-- Chestguard of Resounding Rings
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87197)),	-- Chestguard of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87198)),	-- Handguards of Resounding Rings
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87200)),		-- Legguards of Resounding Rings
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87200)),	-- Legguards of Resounding Rings
 						}),
 						cl(PALADIN, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87099)),		-- White Tiger Battleplate
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87099)),	-- White Tiger Battleplate
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87105)),	-- White Tiger Gauntlets
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87107)),		-- White Tiger Legplates
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87107)),	-- White Tiger Legplates
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87104)),		-- White Tiger Breastplate
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87104)),	-- White Tiger Breastplate
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87110)),	-- White Tiger Gloves
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87112)),		-- White Tiger Greaves
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87112)),	-- White Tiger Greaves
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87109)),		-- White Tiger Chestguard
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87109)),	-- White Tiger Chestguard
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87100)),	-- White Tiger Handguards
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87102)),		-- White Tiger Legguards
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87102)),	-- White Tiger Legguards
 						}),
 						cl(DEATHKNIGHT, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86913)),		-- Breastplate of the Lost Catacomb
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86913)),	-- Breastplate of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86914)),	-- Gauntlets of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86916)),			-- Greaves of the Lost Catacomb
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86918)),		-- Chestguard of the Lost Catacomb
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86918)),	-- Chestguard of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86919)),	-- Handguards of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86921)),			-- Legguards of the Lost Catacomb
 						}),
 						cl(HUNTER, {
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87002)),		-- Yaungol Slayer's Tunic
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87002)),	-- Yaungol Slayer's Tunic
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87003)),	-- Yaungol Slayer's Gloves
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87005)),		-- Yaungol Slayer's Legguards
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87005)),	-- Yaungol Slayer's Legguards
 						}),
 						cl(ROGUE, {
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(87124)),		-- Tunic of the Thousandfold Blades
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(87124)),	-- Tunic of the Thousandfold Blades
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(87125)),	-- Gloves of the Thousandfold Blades
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(87127)),			-- Legguards of the Thousandfold Blades
 						}),
 						cl(PRIEST, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87122)),		-- Guardian Serpent Raiment
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87122)),	-- Guardian Serpent Raiment
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87119)),	-- Guardian Serpent Gloves
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87121)),		-- Guardian Serpent Leggings
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87121)),	-- Guardian Serpent Leggings
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87117)),		-- Guardian Serpent Robes
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87117)),	-- Guardian Serpent Robes
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87114)),	-- Guardian Serpent Handwraps
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87116)),		-- Guardian Serpent Legwraps
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87116)),	-- Guardian Serpent Legwraps
 						}),
 						cl(SHAMAN, {
 							-- DPS (Enhance)
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87134)),		-- Firebird's Cuirass
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87134)),	-- Firebird's Cuirass
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87135)),	-- Firebird's Grips
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87137)),		-- Firebird's Legguards
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87137)),	-- Firebird's Legguards
 
 							-- DPS (Elemental)
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87139)),		-- Firebird's Hauberk
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87139)),	-- Firebird's Hauberk
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87140)),	-- Firebird's Gloves
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87142)),		-- Firebird's Kilt
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87142)),	-- Firebird's Kilt
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87129)),		-- Firebird's Tunic
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87129)),	-- Firebird's Tunic
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87130)),	-- Firebird's Handwraps
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87132)),		-- Firebird's Legwraps
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87132)),	-- Firebird's Legwraps
 						}),
 						cl(MAGE, {
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(87010)),		-- Robes of the Burning Scroll
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(87010)),	-- Robes of the Burning Scroll
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(87007)),	-- Gloves of the Burning Scroll
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(87009)),			-- Leggings of the Burning Scroll
 						}),
 						cl(MONK, {
 							-- DPS
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87084)),		-- Red Crane Tunic
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87084)),	-- Red Crane Tunic
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87085)),	-- Red Crane Grips
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87087)),		-- Red Crane Leggings
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87087)),	-- Red Crane Leggings
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87092)),		-- Red Crane Vest
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87092)),	-- Red Crane Vest
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87089)),	-- Red Crane Handwraps
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87091)),		-- Red Crane Legwraps
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87091)),	-- Red Crane Legwraps
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87094)),		-- Red Crane Chestguard
+							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87094)),	-- Red Crane Chestguard
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87095)),	-- Red Crane Gauntlets
-							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87097)),		-- Red Crane Legguards
+							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87097)),	-- Red Crane Legguards
 						}),
 						cl(WARLOCK, {
-							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87190)),		-- Sha-Skin Robes
+							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87190)),	-- Sha-Skin Robes
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87187)),	-- Sha-Skin Gloves
-							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87189)),		-- Sha-Skin Leggings
+							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87189)),	-- Sha-Skin Leggings
 						}),
 						cl(DRUID, {
 							-- DPS (Boomkin)
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86936)),		-- Eternal Blossom Vestment
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86936)),	-- Eternal Blossom Vestment
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86933)),	-- Eternal Blossom Gloves
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86935)),			-- Eternal Blossom Leggings
 
 							-- DPS (Feral)
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86923)),		-- Eternal Blossom Raiment
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86923)),	-- Eternal Blossom Raiment
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86924)),	-- Eternal Blossom Grips
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86926)),			-- Eternal Blossom Legguards
 
 							-- Healer
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86931)),		-- Eternal Blossom Robes
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86931)),	-- Eternal Blossom Robes
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86928)),	-- Eternal Blossom Handwraps
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86930)),			-- Eternal Blossom Legwraps
 
 							-- Tank
-							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86938)),		-- Eternal Blossom Tunic
+							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86938)),	-- Eternal Blossom Tunic
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86939)),	-- Eternal Blossom Handguards
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86941)),			-- Eternal Blossom Breeches
 						}),

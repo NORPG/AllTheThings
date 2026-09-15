@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						5866,	-- The Molten Front Offensive
 					}},
 					["groups"] = {
-						title(189),		-- the Flamebreaker
+						title(189),	-- the Flamebreaker
 					},
 				}),
 				ach(5868, {	-- And the Meek Shall Inherit Kalimdor

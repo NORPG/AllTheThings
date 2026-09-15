@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["lvl"] = 120,
-				["sym"] = { { "select", "itemID", 165872, 163857 } },		-- 7th Legion Equipment Cache & Azerite Armor Cache
+				["sym"] = { { "select", "itemID", 165872, 163857 } },	-- 7th Legion Equipment Cache & Azerite Armor Cache
 			}),
 			q(54454, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_7TH_LEGION, EXALTED } }, {	-- Supplies from the 7th Legion
 				["provider"] = { "n", 135446 },	-- Vindicator Jaelaana

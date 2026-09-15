@@ -198,7 +198,7 @@ root(ROOTS.NeverImplemented, {
 					i(2107),	-- Deprecated Travel-worn Boots
 				}),
 				filter(SHIRTS, {
-					i(17),		-- Martin Fury
+					i(17),	-- Martin Fury
 				}),
 				filter(TRINKET_F, {
 					i(8688),	-- Bind On Acquire Test Item

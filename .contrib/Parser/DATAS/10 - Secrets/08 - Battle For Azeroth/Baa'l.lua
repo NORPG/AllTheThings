@@ -75,7 +75,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 				["modelScale"] = 0.5,
 				["sourceQuests"] = { 52815 },	-- Step 7: Sixth Ordinary Pebble
 				["coords"] = {
-					{ 39.8, 4.0, NAZMIR },		-- Starting location
+					{ 39.8, 4.0, NAZMIR },	-- Starting location
 					{ 54.5, 7.3, ZANDALAR },	-- Ordinary Pebble
 				},
 				["questID"] = 52814,

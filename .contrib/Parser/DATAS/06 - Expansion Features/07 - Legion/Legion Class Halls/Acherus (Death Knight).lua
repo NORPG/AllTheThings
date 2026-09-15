@@ -521,7 +521,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108975 },	-- Rottgut
 						["coord"] = { 64.1, 69.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["groups"] = {
-							i(139680),		-- Deathlord's Bracers
+							i(139680),	-- Deathlord's Bracers
 							follower(853),	-- Rottgut
 						},
 					}),
@@ -691,7 +691,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(46050, {	-- Champion: Minerva Ravensorrow
 						["sourceQuest"] = 45103,	-- We Ride!
-						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
+						["provider"] = { "n", 95900 },	-- Minerva Ravensorrow
 						["coord"] = { 25.6, 34.2, 647 },
 						["groups"] = {
 							follower(1003),	-- Minerva Ravensorrow

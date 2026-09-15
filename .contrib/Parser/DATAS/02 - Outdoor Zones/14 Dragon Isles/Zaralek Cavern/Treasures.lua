@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sym"] = {
 					{"select","mapID",ZARALEK_CAVERN},
 					{"find","headerID",COMMON_BOSS_DROPS},
-					{"find","headerID",BACK},{"pop"},		-- Only Cloak/Ring drop from these it appears
+					{"find","headerID",BACK},{"pop"},	-- Only Cloak/Ring drop from these it appears
 					{"select","itemID", 202275},	-- Renewed Proto-Drake: Plated Jaw (MM!)
 				},
 				["groups"] = {

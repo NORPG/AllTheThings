@@ -58,9 +58,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					crit(23427),	-- Capture 1 mine cart
 					crit(23428),	-- Return 1 mine cart
 				})),
-				ach(8333),		-- Deepwind Gorge Perfection
-				ach(8332),		-- Deepwind Gorge Veteran
-				ach(8331),		-- Deepwind Gorge Victory
+				ach(8333),	-- Deepwind Gorge Perfection
+				ach(8332),	-- Deepwind Gorge Veteran
+				ach(8331),	-- Deepwind Gorge Victory
 				ach(14186, {	-- Market Dominance
 					["timeline"] = { ADDED_8_3_0 },
 				}),

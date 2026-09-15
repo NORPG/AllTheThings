@@ -1274,9 +1274,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.2, 35.8, VALDRAKKEN },
 						["groups"] = {
-							i(197921),		-- Primal Infusion
+							i(197921),	-- Primal Infusion
 							spell(388978),	-- Ally of Dragons
-							title(474),		-- <Name>, Ally of Dragons
+							title(474),	-- <Name>, Ally of Dragons
 						},
 					}),
 					q(72704, {	-- Renown Supplies

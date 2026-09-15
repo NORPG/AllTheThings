@@ -411,7 +411,7 @@ root(ROOTS.Zones, {
 						i(140640, {	-- Pattern: Dreadleather Mask [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
-								{ "i", 130180, 5 },		-- 5x  Dawnlight
+								{ "i", 130180, 5 },	-- 5x  Dawnlight
 							},
 						}),
 						i(140639, {	-- Pattern: Dreadleather Pants [Rank 1] (RECIPE!)
@@ -465,7 +465,7 @@ root(ROOTS.Zones, {
 						i(140648, {	-- Pattern: Gravenscale Warhelm [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
-								{ "i", 130182, 5 },		-- 5x  Maelstrom Sapphire
+								{ "i", 130182, 5 },	-- 5x  Maelstrom Sapphire
 							},
 						}),
 					},
@@ -547,7 +547,7 @@ root(ROOTS.Zones, {
 						i(123924, {	-- Plans: Demonsteel Helm [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
-								{ "i", 130179, 5 },		-- 5x Eye of Prophecy
+								{ "i", 130179, 5 },	-- 5x Eye of Prophecy
 							},
 						}),
 						i(123922, {	-- Plans: Demonsteel Pauldrons [Rank 1] (RECIPE!)

@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 50954 },	-- Zandalar Forever!
 				["races"] = HORDE_ONLY,
 			}),
-			ach(12956),		-- Tortollan Seekers
+			ach(12956),	-- Tortollan Seekers
 			pvp(ach(12575)),	-- Tour of Duty: Zuldazar
 			ach(12851),	-- Treasures of Zuldazar
 		}),

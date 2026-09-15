@@ -246,7 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(2014, {	-- Sotanathor
-				["creatureID"] = 124555,		-- Sotanathor
+				["creatureID"] = 124555,	-- Sotanathor
 				["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
 				["questID"] = 49171,
 				["modelScale"] = 0.75,

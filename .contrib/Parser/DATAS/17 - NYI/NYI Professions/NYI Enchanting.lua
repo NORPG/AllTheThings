@@ -203,45 +203,45 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
-					r(178241),		-- Temporal Crystal
-					r(158144),		-- Unknown
-					r(158882),		-- Unknown
-					r(158890),		-- Unknown
-					r(158891),		-- Unknown
-					r(158897),		-- Unknown
-					r(158904),		-- Unknown
-					r(158905),		-- Unknown
-					r(158912),		-- Unknown
-					r(158919),		-- Unknown
+					r(178241),	-- Temporal Crystal
+					r(158144),	-- Unknown
+					r(158882),	-- Unknown
+					r(158890),	-- Unknown
+					r(158891),	-- Unknown
+					r(158897),	-- Unknown
+					r(158904),	-- Unknown
+					r(158905),	-- Unknown
+					r(158912),	-- Unknown
+					r(158919),	-- Unknown
 				})),
 
 				-- 6.1.0
 				expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_6_1_0 } }, {
-					r(181870),		-- Illusion: Holy Infusion
+					r(181870),	-- Illusion: Holy Infusion
 				})),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
 				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 					-- Without SpellID attached
-					i(128566),		-- Formula: Binding of Critical Strike [Rank 1]
-					i(128567),		-- Formula: Binding of Haste [Rank 1]
-					i(128568),		-- Formula: Binding of Mastery [Rank 1]
-					i(128569),		-- Formula: Binding of Versatility [Rank 1]
-					i(128623),		-- Formula: Enchanted Pen
-					i(141913),		-- Formula: Mark of the Ancient Priestess [Rank 1]
-					i(128576),		-- Formula: Mark of the Claw [Rank 1]
-					i(128577),		-- Formula: Mark of the Distant Army [Rank 1]
-					i(141911),		-- Formula: Mark of the Heavy Hide [Rank 1]
-					i(128578),		-- Formula: Mark of the Hidden Satyr [Rank 1]
-					i(141912),		-- Formula: Mark of the Trained Soldier [Rank 1]
-					i(128571),		-- Formula: Word of Agility [Rank 1]
-					i(128562),		-- Formula: Word of Critical Strike [Rank 1]
-					i(128563),		-- Formula: Word of Haste [Rank 1]
-					i(128572),		-- Formula: Word of Intellect [Rank 1]
-					i(128564),		-- Formula: Word of Mastery [Rank 1]
-					i(128570),		-- Formula: Word of Strength [Rank 1]
-					i(128565),		-- Formula: Word of Versatility [Rank 1]
+					i(128566),	-- Formula: Binding of Critical Strike [Rank 1]
+					i(128567),	-- Formula: Binding of Haste [Rank 1]
+					i(128568),	-- Formula: Binding of Mastery [Rank 1]
+					i(128569),	-- Formula: Binding of Versatility [Rank 1]
+					i(128623),	-- Formula: Enchanted Pen
+					i(141913),	-- Formula: Mark of the Ancient Priestess [Rank 1]
+					i(128576),	-- Formula: Mark of the Claw [Rank 1]
+					i(128577),	-- Formula: Mark of the Distant Army [Rank 1]
+					i(141911),	-- Formula: Mark of the Heavy Hide [Rank 1]
+					i(128578),	-- Formula: Mark of the Hidden Satyr [Rank 1]
+					i(141912),	-- Formula: Mark of the Trained Soldier [Rank 1]
+					i(128571),	-- Formula: Word of Agility [Rank 1]
+					i(128562),	-- Formula: Word of Critical Strike [Rank 1]
+					i(128563),	-- Formula: Word of Haste [Rank 1]
+					i(128572),	-- Formula: Word of Intellect [Rank 1]
+					i(128564),	-- Formula: Word of Mastery [Rank 1]
+					i(128570),	-- Formula: Word of Strength [Rank 1]
+					i(128565),	-- Formula: Word of Versatility [Rank 1]
 				})),
 			}),
 			expansion(EXPANSION.BFA, {

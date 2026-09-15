@@ -14,7 +14,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- QUESTING / LEVELING
 		q(6842),	-- <UNUSED> - completes with 'Umber, Archivist' (questID 6844)
 		q(9611),	-- Azuremyst: aa - A - Quest Flag 000 — triggered after healing the NPC/killing the mob before you can pick up "A Hearty Thanks!" on Azuremyst Isle
-		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
+		q(236),	-- Fueling the Demolishers (auto-completed removed quest)
 	}),
 
 	-------------------
@@ -776,7 +776,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- TEMPORARY SOLUTION AS HQT FOR NOW
 	-- SORTED BY ID
 	n(SPECIAL, {
-		q(909),		-- Baron Aquanis - completed with quest 6922
+		q(909),	-- Baron Aquanis - completed with quest 6922
 		q(3366),	-- The Glowing Shard - completed with quest 6981
 		q(3911),	-- The Last Element - completed with quest 4641
 		q(9030),	-- Anthion's Parting Words - completed with quest 8951, 8952, 8953, 8954, 8955, 8956, 8957, 8958, 8959, 9016, 9017, 9018, 9019, 9020, 9021, 9022, 10496, 10497

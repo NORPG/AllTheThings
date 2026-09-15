@@ -5,12 +5,12 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	n(ACHIEVEMENTS, {
 		ach(12947, {	-- Azerothian Diplomat
-			crit(42226, {["races"] = HORDE_ONLY }),		-- Zandalari Empire (H)
-			crit(42228, {["races"] = HORDE_ONLY }),		-- Talanji's Expedition (H)
-			crit(42227, {["races"] = HORDE_ONLY }),		-- Voldunai (H)
-			crit(41655, {["races"] = HORDE_ONLY }),		-- The Honorbound (H)
-			crit(43121),		-- Champions of Azeroth
-			crit(43122),		-- Tortollan Seekers
+			crit(42226, {["races"] = HORDE_ONLY }),	-- Zandalari Empire (H)
+			crit(42228, {["races"] = HORDE_ONLY }),	-- Talanji's Expedition (H)
+			crit(42227, {["races"] = HORDE_ONLY }),	-- Voldunai (H)
+			crit(41655, {["races"] = HORDE_ONLY }),	-- The Honorbound (H)
+			crit(43121),	-- Champions of Azeroth
+			crit(43122),	-- Tortollan Seekers
 		}),
 		ach(12936, {	-- Battle on Zandalar and Kul Tiras
 			i(163697),	-- Laser Pointer (TOY!)

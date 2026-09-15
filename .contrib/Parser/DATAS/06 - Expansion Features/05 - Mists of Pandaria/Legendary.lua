@@ -73,8 +73,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
 					["maps"] = {
 						471, 472, 473,	-- Mogu'shan Vaults
-						474, 475,		-- Heart of Fear
-						456,			-- Terrace of Endless Spring
+						474, 475,	-- Heart of Fear
+						456,	-- Terrace of Endless Spring
 					},
 					["groups"] = {
 						objective(1, {	-- 0/10 Sigil of Power

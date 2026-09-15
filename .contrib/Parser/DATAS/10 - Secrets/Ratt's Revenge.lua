@@ -176,7 +176,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						header(HEADERS.Quest, 84786, {	-- Acquire the Piece of Hate from the Lucky slot machine consoles
 							["description"] = "In the felcycle room is over a dozen slot machine consoles around the walls, any of them work for this coin. Variations of 777, 888 and 168 are correct answers but the machines only pay out a coin if you are deemed lucky.\nYour luck can be increased by obtaining at least 5 unique lucky things. It's not clear what counts but Blizzard states there are 13 possible lucky sources, some have been listed as a provider for this step. If you see the 'You feel lucky' emote in chat, you should be good, but try at least once anyway, the machine will pay out on first attempt if you're lucky enough, it is not random.\nNo chest will spawn, you will be given the Piece of Hate directly.",
 							["providers"] = {
-								{ "i", 5373 },		-- Lucky Charm
+								{ "i", 5373 },	-- Lucky Charm
 								{ "i", 200265 },	-- Lucky Dragon's Claw
 								{ "i", 198857 },	-- Lucky Duck
 								{ "i", 198400 },	-- Lucky Horseshoe
@@ -423,7 +423,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 					["questID"] = 84854,	-- Fully lights the 9 O'clock basin
 					["groups"] = {
 						i(229348),	-- Incognitro, the Indecipherable Felcycle (MOUNT!)
-						ach(40967),		-- Ratts' Revenge
+						ach(40967),	-- Ratts' Revenge
 					},
 				}),
 				-- 10 O'clock Basin

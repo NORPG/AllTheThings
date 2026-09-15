@@ -26,45 +26,45 @@ root(ROOTS.ExpansionFeatures,
 					ach(9165),	-- Golden Defender
 					achpart(9826, 9827),	-- Platinum Defender / Impervious Defender
 					ach(9209, {		-- Master Defender
-						crit(27294),		-- Botani
-						crit(27295),		-- Goren
-						crit(27296),		-- Iron Horde
-						crit(27297),		-- Ogres
-						crit(27298),		-- Shadow Council
-						crit(27299),		-- Shadowmoon
+						crit(27294),	-- Botani
+						crit(27295),	-- Goren
+						crit(27296),	-- Iron Horde
+						crit(27297),	-- Ogres
+						crit(27298),	-- Shadow Council
+						crit(27299),	-- Shadowmoon
 					}),
 					ach(9827, {		-- Impervious Defender
-						crit(27586),		-- Botani
-						crit(27587),		-- Goren
-						crit(27588),		-- Iron Horde
-						crit(27589),		-- Ogres
-						crit(27590),		-- Shadow Council
-						crit(27591),		-- Shadowmoon
+						crit(27586),	-- Botani
+						crit(27587),	-- Goren
+						crit(27588),	-- Iron Horde
+						crit(27589),	-- Ogres
+						crit(27590),	-- Shadow Council
+						crit(27591),	-- Shadowmoon
 					}),
-					ach(9152),		-- It's an Invasion! (1)
-					ach(9167),		-- Invasion Specialist (10)
+					ach(9152),	-- It's an Invasion! (1)
+					ach(9167),	-- Invasion Specialist (10)
 					ach(9543),	-- Invasion? What Invasion? (50)
-					ach(9244),		-- Invasions Are Better with Friends
-					ach(9205),		-- Iron Horde Invasion
+					ach(9244),	-- Invasions Are Better with Friends
+					ach(9205),	-- Iron Horde Invasion
 					ach(9858, {		-- Master and Commander
-						crit(27704),		-- Teluur
-						crit(27705),		-- Gaur
-						crit(27706),		-- Commander Dro'gan
-						crit(27707),		-- Mage Lord Gogg'nathog
-						crit(27708),		-- Lady Fleshsear
-						crit(27709),		-- Annihilon
+						crit(27704),	-- Teluur
+						crit(27705),	-- Gaur
+						crit(27706),	-- Commander Dro'gan
+						crit(27707),	-- Mage Lord Gogg'nathog
+						crit(27708),	-- Lady Fleshsear
+						crit(27709),	-- Annihilon
 					}),
-					ach(9204),		-- Ogre Invasion
+					ach(9204),	-- Ogre Invasion
 					ach(9181, {		-- Save Those Buildings!
-						crit(25290),		-- Goren
-						crit(25292),		-- Iron Horde
-						crit(25295),		-- Botani
-						crit(25293),		-- Shadow Council
-						crit(25291),		-- Shadowmoon
-						crit(25294),		-- Ogres
+						crit(25290),	-- Goren
+						crit(25292),	-- Iron Horde
+						crit(25295),	-- Botani
+						crit(25293),	-- Shadow Council
+						crit(25291),	-- Shadowmoon
+						crit(25294),	-- Ogres
 					}),
-					ach(9203),		-- Shadow Council Invasion
-					ach(9206),		-- Shadowmoon Clan Invasion
+					ach(9203),	-- Shadow Council Invasion
+					ach(9206),	-- Shadowmoon Clan Invasion
 				}),
 				n(BOSSES, {
 					n(90802, {	-- Annihilon

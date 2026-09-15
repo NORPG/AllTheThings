@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- Blizzard did a dumb and moved the other quest from Darnassus.
 					["questID"] =
 						-- #if AFTER TBC
-						7798,		-- A Donation of Silk [DARN (TBC)]
+						7798,	-- A Donation of Silk [DARN (TBC)]
 						-- #else
 						10354,	-- A Donation of Silk [DARN (Classic)]
 						-- #endif
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- Blizzard did a dumb and moved the other quest from Darnassus.
 					["questID"] =
 						-- #if AFTER TBC
-						7792,		-- A Donation of Wool [DARN (TBC)]
+						7792,	-- A Donation of Wool [DARN (TBC)]
 						-- #else
 						10352,	-- A Donation of Wool [DARN (Classic)]
 						-- #endif
@@ -457,15 +457,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { ADDED_10_2_7 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						208684,		-- Anchorite's Sorrow
-						208755,		-- Ancient Soulpriest's Staff
-						208683,		-- Arinor Ritual Baton
-						208677,		-- Eredath Crystal Hammer
-						208662,		-- Lightforged Seeker
-						206195,		-- Path of the Naaru (TOY!)
-						208685,		-- Recovered Kaarinos Blade
-						208688,		-- Telaasti Mining Pick
-						208686,		-- Velenite Claymore
+						208684,	-- Anchorite's Sorrow
+						208755,	-- Ancient Soulpriest's Staff
+						208683,	-- Arinor Ritual Baton
+						208677,	-- Eredath Crystal Hammer
+						208662,	-- Lightforged Seeker
+						206195,	-- Path of the Naaru (TOY!)
+						208685,	-- Recovered Kaarinos Blade
+						208688,	-- Telaasti Mining Pick
+						208686,	-- Velenite Claymore
 					}},
 				}),
 				n(16716, {	-- Gornii <Cloth Armor Merchant>

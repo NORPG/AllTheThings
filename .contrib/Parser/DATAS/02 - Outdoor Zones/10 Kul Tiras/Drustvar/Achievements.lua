@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					crit(40177),	-- Stick It To 'Em!
 				},
 			}),
-			ach(13064),		-- Drust the Facts, Ma'am (automated)
+			ach(13064),	-- Drust the Facts, Ma'am (automated)
 			ach(12557),	-- Explore Drustvar
 			ach(13082, {	-- Everything Old Is New Again
 				["races"] = ALLIANCE_ONLY,

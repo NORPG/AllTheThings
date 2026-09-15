@@ -118,7 +118,7 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					ach(8023, {		-- Wakener
-						title(218),		-- <Name> the Wakener
+						title(218),	-- <Name> the Wakener
 					}),
 				}),
 				battlepets({

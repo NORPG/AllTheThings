@@ -136,7 +136,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							["_encounter"] = { 831, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 					}),
-					ach(19921),		-- Shado-Pan Assault
+					ach(19921),	-- Shado-Pan Assault
 				}),
 				d(DIFFICULTY.LEGACY_RAID.FINDER, {
 					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {

@@ -2432,7 +2432,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(38934, {	-- Sila's Secret Stash
 				["providers"] = {
 					{ "i", 126930 },	-- Faded Treasure Map
-					{ "n", 55103 },		-- Galissa Sundew
+					{ "n", 55103 },	-- Galissa Sundew
 				},
 				["coord"] = { 52.5, 88.7, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_2_0 },

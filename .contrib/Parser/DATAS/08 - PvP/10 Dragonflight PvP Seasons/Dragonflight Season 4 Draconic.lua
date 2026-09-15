@@ -13,22 +13,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(19494),		-- Combatant I: Dragonflight Season 4
-			ach(19495),		-- Combatant II: Dragonflight Season 4
-			ach(19497),		-- Challenger I: Dragonflight Season 4
-			ach(19499),		-- Challenger II: Dragonflight Season 4
-			ach(19493),		-- Rival I: Dragonflight Season 4
-			ach(19498),		-- Rival II: Dragonflight Season 4
+			ach(19494),	-- Combatant I: Dragonflight Season 4
+			ach(19495),	-- Combatant II: Dragonflight Season 4
+			ach(19497),	-- Challenger I: Dragonflight Season 4
+			ach(19499),	-- Challenger II: Dragonflight Season 4
+			ach(19493),	-- Rival I: Dragonflight Season 4
+			ach(19498),	-- Rival II: Dragonflight Season 4
 			ach(19492, {	-- Duelist: Dragonflight Season 4
 				ill(7100),	-- Bronze Infinite (ILLUSION!)
 				i(216668),	-- Draconic Gladiator's Prestigious Cloak
 			}),
-			ach(19509),		-- Elite: Dragonflight Season 4
+			ach(19509),	-- Elite: Dragonflight Season 4
 			ach(19490, {	-- Gladiator: Dragonflight Season 4
 				mount(424539),	-- Draconic Gladiator's Drake (MOUNT!)
 				i(216710),	-- Highland Drake: Embodiment of the Draconic Gladiator (MM!)
 			}),
-			ach(19503),		-- Draconic Gladiator's Drake
+			ach(19503),	-- Draconic Gladiator's Drake
 			ach(19454, {	-- Draconic Gladiator: Dragonflight Season 4
 				title(534),	-- Draconic Gladiator <Name>
 			}),

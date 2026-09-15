@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									q(54239, {	-- Mission Report: Zul'jan Ruins
-										["provider"] = { "n", 138704 },		-- Mission Command Table
+										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 									}),
@@ -246,8 +246,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								},
 							}),
 							q(53101, {	-- Nettin' Ettin (Per Character)
-								["sourceQuests"] = { 53100 },		-- Mission Report: Giant Slaying
-								["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+								["sourceQuests"] = { 53100 },	-- Mission Report: Giant Slaying
+								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 								["coord"] = { 58.4, 62.6, ZULDAZAR },
 								["races"] = HORDE_ONLY,
 							}),
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									q(52005, {	-- Mission Report: Wolf's Den
-										["provider"] = { "n", 138704 },		-- Mission Command Table
+										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {

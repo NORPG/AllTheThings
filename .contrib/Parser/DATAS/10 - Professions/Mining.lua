@@ -717,7 +717,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				}),
 				q(52050, {	-- A More Challenging Career
 					["sourceQuests"] = { 52049 },	-- X Marks the Plat!
-					["provider"] = { "n", 139746 },		-- First Mate Cinderfuse
+					["provider"] = { "n", 139746 },	-- First Mate Cinderfuse
 					["coord"] = { 19.76, 44.54, DRUSTVAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

@@ -56,9 +56,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(75288, {	-- Enchanted Tales with Topuiz
 					["altQuests"] = { 75286, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
 					["cost"] = {
-						{ "i", 200034, 5 },		-- 5x Enchant Cloak - Writ of Avoidance+++
-						{ "i", 200035, 5 },		-- 5x Enchant Cloak - Writ of Leech+++
-						{ "i", 200036, 5 },		-- 5x Enchant Cloak - Writ of Speed+++
+						{ "i", 200034, 5 },	-- 5x Enchant Cloak - Writ of Avoidance+++
+						{ "i", 200035, 5 },	-- 5x Enchant Cloak - Writ of Leech+++
+						{ "i", 200036, 5 },	-- 5x Enchant Cloak - Writ of Speed+++
 					},
 				}),
 				q(75304, {	-- I Need... a Tailor
@@ -75,9 +75,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(75309, {	-- If a Gem Isn't Pretty
 					["altQuests"] = { 75286, 75288, 75304, 75289, 75351, 75301, 75307, 75308 },
 					["cost"] = {
-						{ "i", 192855, 5 },		-- 5x Alexstraszite+++
+						{ "i", 192855, 5 },	-- 5x Alexstraszite+++
 						{ "i", 193370, 50 },	-- 50x Silken Gemdust+++
-						{ "i", 192861, 5 },		-- 5x Ysemerald+++
+						{ "i", 192861, 5 },	-- 5x Ysemerald+++
 					},
 				}),
 				q(75351, {	-- Keep a Leather Eye Open
@@ -95,12 +95,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75308 },
 					["cost"] = {
 						{ "i", 197793, 40 },	-- 40x Yusa's Hearty Stew
-						{ "i", 197794, 5 },		-- 5x Grand Banquet of the Kalu'ak
+						{ "i", 197794, 5 },	-- 5x Grand Banquet of the Kalu'ak
 					},
 				}),
 				q(75308, {	-- Scrybbil Engineering
 					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75307 },
-					["cost"] = { { "i", 198225, 2 } },		-- 2x Draconium Fisherfriend
+					["cost"] = { { "i", 198225, 2 } },	-- 2x Draconium Fisherfriend
 				}),
 			})),
 			n(REWARDS, {

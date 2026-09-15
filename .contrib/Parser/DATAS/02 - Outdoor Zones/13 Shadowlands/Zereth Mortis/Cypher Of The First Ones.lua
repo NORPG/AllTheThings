@@ -555,10 +555,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							}),
 							i(187792, {	-- Kismetric Disc
 								["cost"] = {
-									{ "i", 187791, 1 },		-- 1x Kismetric Circlet
+									{ "i", 187791, 1 },	-- 1x Kismetric Circlet
 									{ "i", 187790, 100 },	-- 100x Trace Enigmet
 									{ "i", 187728, 10 },	-- 10x Ephemera Strand
-									{ "i", 187789, 5 },		-- 5x Eidolic Particles
+									{ "i", 187789, 5 },	-- 5x Eidolic Particles
 								},
 							}),
 							i(187789, {	-- Eidolic Particles

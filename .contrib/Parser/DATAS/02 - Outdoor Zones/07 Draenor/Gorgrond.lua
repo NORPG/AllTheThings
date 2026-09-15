@@ -89,8 +89,8 @@ root(ROOTS.Zones, {
 					ach(9678, {	-- Ancient No More
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
-					ach(8939),		-- Explore Gorgrond
+					ach(9667),	-- Burn It to the Ground (Everbloom Wilds)
+					ach(8939),	-- Explore Gorgrond
 					ach(9655, {		-- Fight the Power (The Pit)
 						["sym"] = {{ "achievement_criteria" }},
 					}),
@@ -102,7 +102,7 @@ root(ROOTS.Zones, {
 							{ 49.0, 24.0, GORGROND },
 						},
 					}),
-					ach(9659),		-- Iron Wings (The Pit)
+					ach(9659),	-- Iron Wings (The Pit)
 					ach(9400, {		-- Gorgrond Monster Hunter
 						crit(25568, {	-- Biolante
 							["cr"] = 75207,	-- Biolante
@@ -144,7 +144,7 @@ root(ROOTS.Zones, {
 					ach(9607, {	-- Make It a Bonus
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(9654),		-- Mean and Green (Everbloom Wilds)
+					ach(9654),	-- Mean and Green (Everbloom Wilds)
 					ach(9663, {	-- Picky Palate (Everbloom Wilds)
 						["coords"] = {
 							{ 70.90, 42.20, GORGROND },	-- Coconut
@@ -172,7 +172,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(9401),		-- Shredder Maniac
+					ach(9401),	-- Shredder Maniac
 				}),
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",

@@ -172,7 +172,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 		m(480, {	-- Arena of Annihilation
 			n(ACHIEVEMENTS, {
-				ach(19927),		-- Arena of Annihilation
+				ach(19927),	-- Arena of Annihilation
 			}),
 		}),
 		m(451, {	-- Assault on Zan'vess
@@ -198,7 +198,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 		m(452, {	-- Brewmoon Festival
 			n(ACHIEVEMENTS, {
-				ach(19926),		-- Brewmoon Festival
+				ach(19926),	-- Brewmoon Festival
 			}),
 		}),
 		m(523, {	-- Blood in the Snow

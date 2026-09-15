@@ -35,7 +35,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(19804),	-- Pale Ghoulfish
 			i(3895),	-- TEST Legendary
 			i(22316),	-- Test Relic
-			i(994),		-- Tome of Ice Armor
+			i(994),	-- Tome of Ice Armor
 			i(8802),	-- Tome of Arcane Intellect
 			i(8868),	-- Tome of Conjure Water VI
 		}),

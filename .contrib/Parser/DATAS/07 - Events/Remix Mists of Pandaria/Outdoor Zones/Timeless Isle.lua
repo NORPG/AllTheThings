@@ -7,8 +7,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = 294481,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(20001),		-- Elusive Foes: Timeless Isle (automated)
-				ach(19922),		-- Emperor Shaohao
+				ach(20001),	-- Elusive Foes: Timeless Isle (automated)
+				ach(19922),	-- Emperor Shaohao
 				ach(19982, {	-- Hidden Treasures: Timeless Isle
 					crit(65819, {	-- Flameheart Shawl
 						["provider"] = { "o", 223537 },
@@ -51,7 +51,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20025,	-- Ordos
 					}},
 				}),
-				ach(20002),		-- Powerful Enemies: Timeless Isle (automated)
+				ach(20002),	-- Powerful Enemies: Timeless Isle (automated)
 				ach(20003, {	-- Timeless Isle
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

@@ -1204,7 +1204,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2287),	-- Haunch of Meat
 						i(3770),	-- Mutton Chop
 						i(8952),	-- Roasted Quail
-						i(117),		-- Tough Jerky
+						i(117),	-- Tough Jerky
 						i(3771),	-- Wild Hog Shank
 					},
 				}),

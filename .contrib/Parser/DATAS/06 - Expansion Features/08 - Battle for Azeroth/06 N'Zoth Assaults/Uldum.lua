@@ -1144,7 +1144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			}),
 			n(NZOTH_ASSAULTS, {
 				n(ACHIEVEMENTS, {
-					ach(14155),		-- Uldum Accord
+					ach(14155),	-- Uldum Accord
 					ach(14153, {	-- Uldum Under Assault
 						crit(47201, {	-- Assault: Amathet Advance
 							["_quests"] = { 55350 },
@@ -1605,7 +1605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							i(174995, {	-- Void Tendril Pet Leash (TOY!)
 								["cost"] = {
 									{ "i", POLISHED_PET_CHARM, 20 },
-									{ "c", 1719, 100 },		-- 100x Corrupted Memento
+									{ "c", 1719, 100 },	-- 100x Corrupted Memento
 								},
 							}),
 							i(172011, {	-- Technique: Contract: Uldum Accord (RECIPE!)

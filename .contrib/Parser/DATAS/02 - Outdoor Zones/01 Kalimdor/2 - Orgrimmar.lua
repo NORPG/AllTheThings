@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["lore"] = "Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs' new homeland. Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world. Behind Orgrimmar's immense walls, elderly shaman pass their knowledge on to the Horde's newest generation of leaders, while warriors spar in the gladiatorial arena, honing their skills in preparation for the trials that await them in this dangerous land.",
 		["icon"] = 255142,
 		-- #if AFTER CATA
-		["maps"] = { 86 },		-- The Drag
+		["maps"] = { 86 },	-- The Drag
 		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
@@ -2541,7 +2541,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(1205),	-- Melon Juice
 						-- i(1645),	-- Moonberry Juice
 						i(8766),	-- Morning Glory Dew
-						i(159),		-- Refreshing Spring Water
+						i(159),	-- Refreshing Spring Water
 						i(1708),	-- Sweet Nectar
 						-- #if AFTER CATA
 						i(44571),	-- Bottle of Silvermoon Port
@@ -3516,7 +3516,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						854,	-- Quarter Staff
 					}},
 					["groups"] = {
-						i(925),		-- Flail
+						i(925),	-- Flail
 						i(2028),	-- Hammer
 						i(924),	-- Maul
 						i(20981, {	-- Neophyte's Mace
@@ -4222,12 +4222,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2375),	-- Battered Leather Gloves
 						i(2370),	-- Battered Leather Harness
 						i(2372),	-- Battered Leather Pants
-						i(236),		-- Cured Leather Armor
+						i(236),	-- Cured Leather Armor
 						i(1849),	-- Cured Leather Belt
-						i(238),		-- Cured Leather Boots
+						i(238),	-- Cured Leather Boots
 						i(1850),	-- Cured Leather Bracers
-						i(239),		-- Cured Leather Gloves
-						i(237),		-- Cured Leather Pants
+						i(239),	-- Cured Leather Gloves
+						i(237),	-- Cured Leather Pants
 						-- #if AFTER 10.0.5
 						i(20896, {	-- Lookouts Pants
 							["timeline"] = { ADDED_10_0_5 },
@@ -4252,11 +4252,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(1843),	-- Tanned Leather Belt
-						i(843),		-- Tanned Leather Boots
+						i(843),	-- Tanned Leather Boots
 						i(1844),	-- Tanned Leather Bracers
-						i(844),		-- Tanned Leather Gloves
-						i(846),		-- Tanned Leather Jerkin
-						i(845),		-- Tanned Leather Pants
+						i(844),	-- Tanned Leather Gloves
+						i(846),	-- Tanned Leather Jerkin
+						i(845),	-- Tanned Leather Pants
 						-- #if AFTER 10.0.5
 						i(121, {	-- Thug Boots
 							["timeline"] = { ADDED_10_0_5 },
@@ -4733,8 +4733,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						-- Now any class and race can buy this
 						-- HUNTER --
-						i(129),		-- Rugged Trapper's Boots
-						i(147),		-- Rugged Trapper's Pants
+						i(129),	-- Rugged Trapper's Boots
+						i(147),	-- Rugged Trapper's Pants
 						i(58232),	-- Rugged Trapper's Vest
 						i(6137),	-- Thug Pants
 						i(6138),	-- Trapper's Boots
@@ -4934,8 +4934,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15905),	-- Brass Knuckles
 						i(2520),	-- Broadsword
 						i(1198),	-- Claymore
-						i(851),		-- Cutlass
-						i(922),		-- Dacian Falx
+						i(851),	-- Cutlass
+						i(922),	-- Dacian Falx
 						i(15904),	-- Deadly Fist Blades
 						i(2024),	-- Espadon
 						i(2528),	-- Falchion
@@ -4950,7 +4950,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15907, {	-- Left-Handed Claw
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
-						i(923),		-- Longsword
+						i(923),	-- Longsword
 						i(2526),	-- Main Gauche
 						i(2208),	-- Poniad
 						i(20977, {	-- Recruit's Shortsword
@@ -5311,11 +5311,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(1197),	-- Giant Mace
 						i(2134),	-- Hand Axe
 						i(2488),	-- Gladius
-						i(853),		-- Hatched
+						i(853),	-- Hatched
 						i(2491),	-- Large Axe
 						i(2480),	-- Large Club
-						i(852),		-- Mace
-						i(854),		-- Quarter Staff
+						i(852),	-- Mace
+						i(854),	-- Quarter Staff
 						i(2131),	-- Shortsword
 						i(2132),	-- Short Staff
 						i(2494),	-- Stiletto
@@ -5392,13 +5392,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2495,	-- Walking Stick
 					}},
 					["groups"] = {
-						i(926),		-- Battle Axe
+						i(926),	-- Battle Axe
 						i(2025),	-- Bearded Axe
 						i(2029),	-- Cleaver
-						i(927),		-- Double Axe
+						i(927),	-- Double Axe
 						i(2030),	-- Gnarled Staff
 						i(2507),	-- Laminated Recurve Bow
-						i(928),		-- Long Staff
+						i(928),	-- Long Staff
 						i(37, {	-- Worn Axe
 							["timeline"] = { ADDED_10_1_7 },
 						}),

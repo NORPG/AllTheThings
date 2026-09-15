@@ -83,8 +83,8 @@ root(ROOTS.Zones, {
 					ach(9605, {	-- Arak Star
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(9433),		-- A-VOID-ance
-					ach(9469),		-- Arakkoa Outcasts
+					ach(9433),	-- A-VOID-ance
+					ach(9469),	-- Arakkoa Outcasts
 					ach(8925, {	-- Between Arak and a Hard Place (Alliance)
 						["description"] = "Completing the Achievement will allow you to buy 'Spires of Arak Treasure Map' from Grakis in Stormshield.",
 						["races"] = ALLIANCE_ONLY,
@@ -97,9 +97,9 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 						["groups"] = { follower(218) },	-- Talonpriest Ishaal
 					}),
-					ach(9612),		-- Eggs in One Basket
-					ach(8941),		-- Explore Spires of Arak
-					ach(9613),		-- Fish Gotta Swim, Birds Gotta Eat
+					ach(9612),	-- Eggs in One Basket
+					ach(8941),	-- Explore Spires of Arak
+					ach(9613),	-- Fish Gotta Swim, Birds Gotta Eat
 					ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
 						["sym"] = {{ "achievement_criteria" }},
 					}),

@@ -64,10 +64,10 @@ root(ROOTS.Zones, {
 								["groups"] = { i(140224) },	-- Butchered Meat
 							}),
 							i(137839, {	-- Design: Skystone Loop [Rank 3] (RECIPE!)
-								["cost"] = 5500000,		-- 550g
+								["cost"] = 5500000,	-- 550g
 							}),
 							i(136697, {	-- Plans: Gleaming Iron Spike (RECIPE!)
-								["cost"] = 5500000,		-- 550g
+								["cost"] = 5500000,	-- 550g
 							}),
 							i(245452, {	-- Stonebull Canoe (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
@@ -88,17 +88,17 @@ root(ROOTS.Zones, {
 							}),
 						}, {	-- Revered
 							i(136919, {	-- Baby Elderhorn (PET!)
-								["cost"] = 5000000,		-- 500g
+								["cost"] = 5000000,	-- 500g
 							}),
 							i(131812, {	-- Darkshard Fragment (TOY!)
-								["cost"] = 5000000,		-- 500g
+								["cost"] = 5000000,	-- 500g
 							}),
 							i(139601, {	-- Harpy-Hunter's Gloves
 								["cost"] = 10000000,	-- 1,000g
 							}),
 							i(142408, {	-- Pattern: Drums of the Mountain [Rank 2] (RECIPE!)
 								["timeline"] = { ADDED_7_1_0 },
-								["cost"] = 5500000,		-- 550g
+								["cost"] = 5500000,	-- 550g
 							}),
 							i(243359, {	-- Tauren Windmill (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },

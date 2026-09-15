@@ -63,97 +63,97 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 			["groups"] = {
 				title(340),	-- Field Medic <Name>
 				i(139534, {	-- Bloody Letter
-					["criteriaID"] = 34872,		-- Bloody Letter
+					["criteriaID"] = 34872,	-- Bloody Letter
 					["maps"] = { SURAMAR },
 					["crs"] = {101783},
 					["description"] = "Northwest Suramar."
 				}),
 				i(139522, {	-- Bloody Note
-					["criteriaID"] = 34873,		-- Bloody Note
+					["criteriaID"] = 34873,	-- Bloody Note
 					["maps"] = { AZSHARA },
 					["crs"] = {108133, 108139, 108153, 108146},
 					["description"] = "Pirates in southern-east Azsuna."
 				}),
 				i(139527, {	-- Bloody Plea
-					["criteriaID"] = 34874,		-- Bloody Plea
+					["criteriaID"] = 34874,	-- Bloody Plea
 					["maps"] = { VALSHARAH },
 					["crs"] = {93577, 91288},
 					["description"] = "Furbolgs in southern Val'sharah"
 				}),
 				i(139535, {	-- Bloody Prayer
-					["criteriaID"] = 34875,		-- Bloody Prayer
+					["criteriaID"] = 34875,	-- Bloody Prayer
 					["maps"] = { SURAMAR },
 					["crs"] = {114470},
 					["description"] = "Southwest Suramar City."
 				}),
 				i(139528, {	-- Bloody Request
-					["criteriaID"] = 34876,		-- Bloody Request
+					["criteriaID"] = 34876,	-- Bloody Request
 					["maps"] = { VALSHARAH },
 					["crs"] = { 109045 },
 					["description"] = "Grizzleweald (68, 73) in Val'sharah"
 				}),
 				i(139524, {	-- Crumpled Letter
-					["criteriaID"] = 34877,		-- Crumpled Letter
+					["criteriaID"] = 34877,	-- Crumpled Letter
 					["maps"] = { HIGHMOUNTAIN },
 					["crs"] = {96774},
 					["description"] = "Western Highmountain next to Skyhorn.",
 				}),
 				i(139525, {	-- Crumpled Note
-					["criteriaID"] = 34878,		-- Crumpled Note
+					["criteriaID"] = 34878,	-- Crumpled Note
 					["maps"] = { HIGHMOUNTAIN },
 					["crs"] = {104323},
 					["description"] = "Northern Highmountain."
 				}),
 				i(139531, {	-- Crumpled Request
-					["criteriaID"] = 34879,		-- Crumpled Request
+					["criteriaID"] = 34879,	-- Crumpled Request
 					["maps"] = { STORMHEIM },
 					["crs"] = {108030},
 					["description"] = "Vampirates. (Stormheim)"
 				}),
 				i(139523, {	-- Fevered Letter
-					["criteriaID"] = 34880,		-- Fevered Letter
+					["criteriaID"] = 34880,	-- Fevered Letter
 					["maps"] = { HIGHMOUNTAIN },
 					["crs"] = {103177},
 					["description"] = "Southern Highmountain."
 				}),
 				i(139526, {	-- Fevered Note
-					["criteriaID"] = 34881,		-- Fevered Note
+					["criteriaID"] = 34881,	-- Fevered Note
 					["maps"] = { VALSHARAH },
 					["crs"] = { 108675 },
 					["description"] = "Southern Val'sharah"
 				}),
 				i(139520, {	-- Fevered Plea
-					["criteriaID"] = 34882,		-- Fevered Plea
+					["criteriaID"] = 34882,	-- Fevered Plea
 					["maps"] = { AZSHARA },
 					["crs"] = {111598, 111630, 111586 },
 					["description"] = "Murlocs at the southern tip in Azsuna."
 				}),
 				i(139532, {	-- Fevered Prayer
-					["criteriaID"] = 34883,		-- Fevered Prayer
+					["criteriaID"] = 34883,	-- Fevered Prayer
 					["maps"] = { SURAMAR },
 					["crs"] = {101784},
 					["description"] = "Northwest Suramar."
 				}),
 				i(139529, {	-- Fevered Request
-					["criteriaID"] = 34884,		-- Fevered Request
+					["criteriaID"] = 34884,	-- Fevered Request
 					["maps"] = { STORMHEIM },
 					["crs"] = {98498, 98500, 98501, 98502, 110258},
 					["description"] = "Murlocs at Morheim (eastern Stormheim)."
 				}),
 				i(139530, {	-- Singed Letter
-					["criteriaID"] = 34885,		-- Singed Letter
+					["criteriaID"] = 34885,	-- Singed Letter
 					["maps"] = { STORMHEIM },
 					["crs"] = {116600},
 					["description"] = "Southern Stormheim."
 				}),
 				i(139521, {	-- Singed Note
-					["criteriaID"] = 34886,		-- Singed Note
+					["criteriaID"] = 34886,	-- Singed Note
 					["maps"] = { AZSHARA },
 					["crs"] = {88101, 88099, 108146},
 					["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy."
 				}),
 				i(139533, {	-- Singed Plea
-					["criteriaID"] = 34887,		-- Singed Plea
+					["criteriaID"] = 34887,	-- Singed Plea
 					["maps"] = { SURAMAR },
 					["crs"] = {105753, 105625, 113162},
 					["description"] = "Fal'dorei Tunnels."

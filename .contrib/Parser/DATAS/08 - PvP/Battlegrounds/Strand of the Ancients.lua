@@ -72,8 +72,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(2193),	-- Explosives Expert
 				a(ach(1762)),	-- Not Even a Scratch (Alliance)
 				h(ach(2192)),	-- Not Even a Scratch (Horde)
-				ach(1765),		-- Steady Hands
-				ach(1761),		-- The Dapper Sapper
+				ach(1765),	-- Steady Hands
+				ach(1761),	-- The Dapper Sapper
 			}),
 		},
 	}))),

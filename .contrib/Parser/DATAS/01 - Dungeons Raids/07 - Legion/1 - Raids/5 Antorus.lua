@@ -27,7 +27,7 @@ local EncounterToCRS = {
 		122369,	-- Chief Engineer Ishkar
 		122333,	-- General Erodus
 	},
-	[HASABEL] = { 122104 },		-- Portal Keeper Hasabel
+	[HASABEL] = { 122104 },	-- Portal Keeper Hasabel
 	[EONAR] = {	-- Eonar the Life-Bender
 	122500,	-- Essence of Eonar
 	124445,	-- The Paraxis
@@ -408,7 +408,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						12046,	-- Remember the Titans
 						12257,	-- Stardust Crusaders
 					}},
-					["groups"] = { i(152815) },		-- Antoran Gloomhound (MOUNT!)
+					["groups"] = { i(152815) },	-- Antoran Gloomhound (MOUNT!)
 				}),
 				ach(12112),	-- Antorus, the Burning Throne Guild Run
 			}),
@@ -664,7 +664,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1 },
 					}),
 					ach(12002, {	-- Mythic: Argus the Unmaker
-						title(364),		-- Titanslayer
+						title(364),	-- Titanslayer
 					}),
 					ach(12113),	-- Mythic: Argus the Unmaker Guild Run
 					ach(12258, {	-- Realm First! Argus the Unmaker

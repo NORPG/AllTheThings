@@ -164,12 +164,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 									["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
 								}),
 								i(119159, {	-- Happy Fun Skull
-									["cost"] = 5000000,		-- 500g
+									["cost"] = 5000000,	-- 500g
 								}),
 								i(118668),	-- Laughing Skull Elixir
 							}, {	-- Honored
 								i(118684, {	-- Maniacal Grimace
-									["cost"] = 5000000,		-- 500g
+									["cost"] = 5000000,	-- 500g
 								}),
 								i(119160, {	-- Tickle Totem (TOY!)
 									["cost"] = 12500000,	-- 1,250g
@@ -242,7 +242,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 								}),
 							}, {	-- Honored
 								i(118685, {	-- Sha'tari Protector
-									["cost"] = 5000000,		-- 500g
+									["cost"] = 5000000,	-- 500g
 								}),
 								i(119182),	-- Soul Evacuation Crystal (TOY!)
 							}, {	-- Revered

@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				}),
 				i(168853, {	-- Glinting Battlefield Memento (Rank 4)
 					["description"] = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
-					["cost"] = { { "i", 168802, 5 } },		-- 5x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 5 } },	-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(169275, {	-- Alliance War Banner (TOY!)
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					},
 				}),
 				i(168853, {	-- Glinting Battlefield Memento (Rank 4)
-					["cost"] = { { "i", 168802, 5 } },		-- 5x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 5 } },	-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(169357, {	-- Chitterspine Devourer (PET!)

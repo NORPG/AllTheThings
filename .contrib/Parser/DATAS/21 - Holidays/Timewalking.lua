@@ -994,7 +994,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
 AddInstancesToRotation(EXPANSION.CLASSIC, {
 	-- Dungeons
-	63,		-- Deadmines
+	63,	-- Deadmines
 	{230,236},	-- Dire Maul - Capital Gardens
 	{230,239,1276},	-- Dire Maul - Warpwood Quarter
 	{236,STRATHOLME},	-- Stratholme - Main Gate
@@ -3796,10 +3796,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
 						["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Cho'gall or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
 						["sym"] = {{"select","itemID",
-							152978,		-- Infernal Pyreclaw (PET!)
-							152966,		-- Tinytron (PET!)
-							152969,		-- Twilight Clutch-Sister (PET!)
-							152973,		-- Zephyrian Prince (PET!)
+							152978,	-- Infernal Pyreclaw (PET!)
+							152966,	-- Tinytron (PET!)
+							152969,	-- Twilight Clutch-Sister (PET!)
+							152973,	-- Zephyrian Prince (PET!)
 						}},
 						["groups"] = {
 						-- Can also contain any item from Firelands
@@ -5480,13 +5480,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(55498, {	-- The Shimmering Crystal (A)
-				["provider"] = { "i", 167921 },		-- Shimmering Timewarped Crystal (A)
+				["provider"] = { "i", 167921 },	-- Shimmering Timewarped Crystal (A)
 				["races"] = ALLIANCE_ONLY,
 				["isWeekly"] = true,
 				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 			q(55499, {	-- The Shimmering Crystal (H)
-				["provider"] = { "i", 167922 },		-- Shimmering Timewarped Crystal (H)
+				["provider"] = { "i", 167922 },	-- Shimmering Timewarped Crystal (H)
 				["races"] = HORDE_ONLY,
 				["isWeekly"] = true,
 				["groups"] = { currency(TIMEWARPED_BADGE) },
@@ -6856,7 +6856,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["isWeekly"] = true,
 			}),
 			q(89222, {	-- Remnant of Azeroth (A)
-				["provider"] = { "i", 238790 },		-- Remnant of Azeroth (A)
+				["provider"] = { "i", 238790 },	-- Remnant of Azeroth (A)
 				["races"] = ALLIANCE_ONLY,
 				["isWeekly"] = true,
 				["groups"] = {
@@ -6864,7 +6864,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				},
 			}),
 			q(89223, {	-- Remnant of Azeroth (H)
-				["provider"] = { "i", 238791 },		-- Remnant of Azeroth (H)
+				["provider"] = { "i", 238791 },	-- Remnant of Azeroth (H)
 				["races"] = HORDE_ONLY,
 				["isWeekly"] = true,
 				["groups"] = {
@@ -7534,7 +7534,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(92650, {	-- The Flickering Anima
-				["provider"] = { "i", 253517 },		-- The Flickering Anima
+				["provider"] = { "i", 253517 },	-- The Flickering Anima
 				["isWeekly"] = true,
 				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),

@@ -112,15 +112,15 @@ root(ROOTS.Zones, {
 							i(208684, {	-- Anchorite's Sorrow
 								["cost"] = {
 									{ "i", 151565, 40 },	-- 40x Astral Glory
-									{ "i", 151579, 5 },		-- 5x Labradorite
-									{ "c", 1508, 90 },		-- 90x Veiled Argunite
+									{ "i", 151579, 5 },	-- 5x Labradorite
+									{ "c", 1508, 90 },	-- 90x Veiled Argunite
 								},
 							}),
 							i(208755, {	-- Ancient Soulpriest's Staff
 								["cost"] = {
 									{ "i", 151567, 75 },	-- 75x Lightweave Cloth
 									{ "i", 151718, 15 },	-- 15x Argulite
-									{ "c", 1508, 90 },		-- 90x Veiled Argunite
+									{ "c", 1508, 90 },	-- 90x Veiled Argunite
 								},
 							}),
 							i(208683, {	-- Arinor Ritual Baton
@@ -128,7 +128,7 @@ root(ROOTS.Zones, {
 								["cost"] = {
 									{ "i", 151565, 50 },	-- 50x Astral Glory
 									{ "i", 151566, 40 },	-- 40x Fiendish Leather
-									{ "c", 1508, 90 },		-- 90x Veiled Argunite
+									{ "c", 1508, 90 },	-- 90x Veiled Argunite
 								},
 							}),
 							i(208677, {	-- Eredath Crystal Hammer
@@ -136,42 +136,42 @@ root(ROOTS.Zones, {
 								["cost"] = {
 									{ "i", 151567, 75 },	-- 75x Lightweave Cloth
 									{ "i", 151718, 15 },	-- 15x Argulite
-									{ "c", 1508, 90 },		-- 90x Veiled Argunite
+									{ "c", 1508, 90 },	-- 90x Veiled Argunite
 								},
 							}),
 							i(208662, {	-- Lightforged Seeker
 								["cost"] = {
 									{ "i", 151564, 50 },	-- 50x Empyrium
 									{ "i", 151566, 30 },	-- 30x Fiendish Leather
-									{ "c", 1508, 90 },		-- 90x Veiled Argunite
+									{ "c", 1508, 90 },	-- 90x Veiled Argunite
 								},
 							}),
 							i(206195, {	-- Path of the Naaru (TOY!)
 								["cost"] = {
 									{ "i", 151567, 90 },	-- 90x Lightweave Cloth
 									{ "i", 151564, 90 },	-- 90x Empyrium
-									{ "c", 1508, 900 },		-- 900x Veiled Argunite
+									{ "c", 1508, 900 },	-- 900x Veiled Argunite
 								},
 							}),
 							i(208685, {	-- Recovered Kaarinos Blade
 								["cost"] = {
 									{ "i", 151564, 50 },	-- 50x Empyrium
 									{ "i", 151579, 15 },	-- 15x Labradorite
-									{ "c", 1508, 90 },		-- 90x Veiled Argunite
+									{ "c", 1508, 90 },	-- 90x Veiled Argunite
 								},
 							}),
 							i(208688, {	-- Telaasti Mining Pick
 								["cost"] = {
 									{ "i", 151564, 75 },	-- 75x Empyrium
-									{ "i", 151722, 5 },		-- 5x Florid Malachite
-									{ "c", 1508, 90 },		-- 90x Veiled Argunite
+									{ "i", 151722, 5 },	-- 5x Florid Malachite
+									{ "c", 1508, 90 },	-- 90x Veiled Argunite
 								},
 							}),
 							i(208686, {	-- Velenite Claymore
 								["cost"] = {
 									{ "i", 151564, 100 },	-- 100x Empyrium
-									{ "i", 151718, 5 },		-- 5x Argulite
-									{ "c", 1508, 90 },		-- 90x Veiled Argunite
+									{ "i", 151718, 5 },	-- 5x Argulite
+									{ "c", 1508, 90 },	-- 90x Veiled Argunite
 								},
 							}),
 						},

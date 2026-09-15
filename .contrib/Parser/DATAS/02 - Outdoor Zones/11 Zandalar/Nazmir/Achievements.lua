@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					12771,	-- Treasures of Nazmir
 				}},
 			}),
-			ach(13024),		-- Carved in Stone, Written in Blood (automated)
+			ach(13024),	-- Carved in Stone, Written in Blood (automated)
 			ach(12588, {	-- Eat Your Greens
 				crit(40542, {	-- Saurolisk Tail
 					["provider"] = {"o",291233},	-- Saurolisk Tail

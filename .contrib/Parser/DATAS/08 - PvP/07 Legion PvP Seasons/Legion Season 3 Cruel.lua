@@ -19,10 +19,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
-			ach(11039),		-- Challenger: Legion Season 3
-			ach(11040),		-- Rival: Legion Season 3
-			ach(11041),		-- Duelist: Legion Season 3
-			ach(11697),		-- Cruel Elite
+			ach(11039),	-- Challenger: Legion Season 3
+			ach(11040),	-- Rival: Legion Season 3
+			ach(11041),	-- Duelist: Legion Season 3
+			ach(11697),	-- Cruel Elite
 			ach(11038, {	-- Gladiator: Legion Season 3
 				i(141845),	-- Cruel Gladiator's Storm Dragon (MOUNT!)
 			}),

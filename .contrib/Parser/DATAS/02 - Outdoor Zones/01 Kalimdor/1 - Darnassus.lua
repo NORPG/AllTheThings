@@ -1060,7 +1060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 6128,	-- Vorlus Vilehoof
 						}),
 						-- #if BEFORE CATA
-						recipe(71),		-- Defensive Stance
+						recipe(71),	-- Defensive Stance
 						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif

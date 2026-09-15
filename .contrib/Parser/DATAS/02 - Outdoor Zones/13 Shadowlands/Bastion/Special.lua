@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 43.0, 27.3, BASTION },	-- Angeliki
 					{ 44.8, 59.3, BASTION },	-- Burnsios
 					{ 57.0, 77.4, BASTION },	-- Chaddius
-					{ 53.6, 9.6, BASTION },		-- Covinkles
+					{ 53.6, 9.6, BASTION },	-- Covinkles
 					{ 70.9, 37.5, BASTION },	-- Giannakis
 					{ 25.9, 33.6, BASTION },	-- Ioanna
 					{ 45.6, 64.6, BASTION },	-- Pagius

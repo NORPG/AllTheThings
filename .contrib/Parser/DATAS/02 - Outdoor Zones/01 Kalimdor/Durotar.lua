@@ -1392,7 +1392,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {
 									["providers"] = {
-										{ "i", 11583 },		-- Cactus Apple
+										{ "i", 11583 },	-- Cactus Apple
 										{ "o", 171938 },	-- Cactus Apple
 									},
 								}),
@@ -3807,8 +3807,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					-- #if BEFORE CATA
 					["groups"] = {
-						recipe(6991),		-- Feed Pet
-						recipe(982),		-- Revive Pet
+						recipe(6991),	-- Feed Pet
+						recipe(982),	-- Revive Pet
 					},
 					-- #endif
 				}),

@@ -5,8 +5,8 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(ACHIEVEMENTS, {
-			ach(40851),		-- Adventurer of Hallowfall (automated)
-			ach(40622),		-- Biblo Archivist (automated)
+			ach(40851),	-- Adventurer of Hallowfall (automated)
+			ach(40622),	-- Biblo Archivist (automated)
 			ach(41188, {	-- Crystal Chronicled
 				["timeline"] = { ADDED_11_0_7 },
 				-- Meta Achievement
@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					40848,	-- Treasures of Hallowfall
 				}},
 			}),
-			ach(40826),		-- Explore Hallowfall (automated)
+			ach(40826),	-- Explore Hallowfall (automated)
 			ach(20594, {	-- Flamegard's Hope
 				["description"] = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients over 20 days. This does not have to be done on consecutive days.",
 				["coord"] = { 43.2, 51.8, HALLOWFALL },
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					220225,	-- Injured Soldier
 				},
 			}),
-			ach(20598),		-- Hallowfall (automated)
+			ach(20598),	-- Hallowfall (automated)
 			skyriding(ach(40704, {	-- Hallowfall Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			skyriding(ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
 				["coord"] = { 45.7, 12.4, HALLOWFALL },
 			})),
-			ach(40844),		-- Sojourner of Hallowfall (automated)
+			ach(40844),	-- Sojourner of Hallowfall (automated)
 			ach(40625, {	-- The Missing Lynx
 				crit(68975, {	-- Magpie
 					["coord"] = { 60.4, 60.2, HALLOWFALL },
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 			}),
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall
-			ach(40848),		-- Treasures of Hallowfall (automated)
+			ach(40848),	-- Treasures of Hallowfall (automated)
 		}),
 	}),
 }));

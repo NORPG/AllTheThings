@@ -329,7 +329,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["_noautomation"] = true,
 		-- #if AFTER 3.0.1
 		["groups"] = {
-			title(46),		-- <Name> the Exalted
+			title(46),	-- <Name> the Exalted
 		},
 		-- #endif
 	})),
@@ -358,7 +358,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	applyclassicphase(BFA_PHASE_ONE, ach(12864, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 80 Exalted Reputations
 		["_noautomation"] = true,
 		["groups"] = {
-			title(380),		-- <Name> the Admired
+			title(380),	-- <Name> the Admired
 		},
 	}))),
 	applyclassicphase(BFA_PHASE_ONE, ach(12865, {	-- 90 Exalted Reputations
@@ -368,8 +368,8 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	applyclassicphase(BFA_PHASE_ONE, ach(12866, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 100 Exalted Reputations
 		["_noautomation"] = true,
 		["groups"] = {
-			i(163982),		-- Pureheart Courser (MOUNT!)
-			title(379),		-- Esteemed <Name>
+			i(163982),	-- Pureheart Courser (MOUNT!)
+			title(379),	-- Esteemed <Name>
 		},
 	}))),
 	ach(18471, {	-- 110 Exalted Reputations
@@ -959,7 +959,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			-- #endif
 		}),
 		ach(9713, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Awake the Drakes (automated)
-			i(118676),		-- Emerald Drake (MOUNT!)
+			i(118676),	-- Emerald Drake (MOUNT!)
 		})),
 	}),
 	-- #if AFTER 6.0.2
@@ -968,20 +968,20 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			i(197986),	-- Murglasses (TOY!)
 		})),
 		ach(12996, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- Toybox Tycoon (400)
-			i(163244),		-- Brutus (PET!)
+			i(163244),	-- Brutus (PET!)
 		})),
 		ach(11176, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- Remember to Share (300)
-			i(140500),		-- Mechanized Lumber Extractor (MOUNT!)
+			i(140500),	-- Mechanized Lumber Extractor (MOUNT!)
 		})),
 		ach(10354, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {	-- Crashin' Thrashin' Commander(200)
-			title(53),		-- Crashin' Thrashin'
+			title(53),	-- Crashin' Thrashin'
 		})),
 		ach(9673, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- The Toymaster (150)
-			i(119215),		-- Robo-Gnomebulator (TOY!)
+			i(119215),	-- Robo-Gnomebulator (TOY!)
 		})),
-		ach(9672, {["timeline"] = { ADDED_6_0_2 }}),		-- Tons of Toys (100)
-		ach(9671, {["timeline"] = { ADDED_6_0_2 }}),		-- Having a Ball (50)
-		ach(9670, {["timeline"] = { ADDED_6_0_2 }}),		-- Toying Around (25)
+		ach(9672, {["timeline"] = { ADDED_6_0_2 }}),	-- Tons of Toys (100)
+		ach(9671, {["timeline"] = { ADDED_6_0_2 }}),	-- Having a Ball (50)
+		ach(9670, {["timeline"] = { ADDED_6_0_2 }}),	-- Toying Around (25)
 	}),
 	-- #endif
 }))

@@ -161,7 +161,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["description"] = "This item can drop from any Draenor mob.",
 				["providers"] = {
 					{ "i", 114877 },	-- Dirty Note
-					{ "n", 75043 },		-- Karnoth
+					{ "n", 75043 },	-- Karnoth
 				},
 				["timeline"] = { ADDED_6_0_2 },
 				["maps"] = {
@@ -199,7 +199,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["cost"] = {
 					{ "i", 124113, 20 },	-- 20x Stonehide Leather
-					{ "i", 124115, 5 },		-- 5x Stormscale
+					{ "i", 124115, 5 },	-- 5x Stormscale
 				},
 				["_drop"] = { "g" },
 				["groups"] = {
@@ -1317,16 +1317,16 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			q(66384, {	-- DF Weekly Leatherworking Knowledgepoint #1
 				["name"] = "DF Leatherworking Treasure #1",
-				["provider"] = { "i", 193910 },		-- Molten Dragon Scales
+				["provider"] = { "i", 193910 },	-- Molten Dragon Scales
 			}),
 			q(66385, {	-- DF Weekly Leatherworking Knowledgepoint #2
 				["name"] = "DF Leatherworking Treasure #2",
-				["provider"] = { "i", 193913 },		-- Preserved Animal Parts
+				["provider"] = { "i", 193913 },	-- Preserved Animal Parts
 			}),
 			q(70522, {	-- DF Weekly Leatherworking Knowledgepoint #3
 				["name"] = "DF Leatherworking Drop #1: Proto Drake",
 				["description"] = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198975 },		-- Ossified Hide
+				["provider"] = { "i", 198975 },	-- Ossified Hide
 				["coords"] = {
 					{ 80.6, 33.8, THE_WAKING_SHORES },
 					{ 79.4, 32.5, THE_WAKING_SHORES },
@@ -1342,7 +1342,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			q(70523, {	-- DF Weekly Leatherworking Knowledgepoint #4
 				["name"] = "DF Leatherworking Drop #2: Sylvern&Vorquin",
 				["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
+				["provider"] = { "i", 198976 },	-- Exceedingly Soft Skin
 				["coords"] = {
 					{ 36.6, 72.8, THALDRASZUS },
 					{ 35.4, 72.8, THALDRASZUS },
@@ -1502,11 +1502,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
 				["name"] = "TWW Weekly Leatherworking Treasure #1",
-				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace
+				["provider"] = { "i", 225223 },	-- Sturdy Nerubian Carapace
 			}),
 			q(83268, {	-- TWW Weekly Leatherworking Knowledgepoint #2
 				["name"] = "TWW Weekly Leatherworking Treasure #2",
-				["provider"] = { "i", 225222 },		-- Studded Leather Band
+				["provider"] = { "i", 225222 },	-- Studded Leather Band
 			}),
 		})),
 	})),
@@ -1675,11 +1675,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			q(93540, {	-- MID Weekly Leatherworking Knowledgepoint #1
 				["name"] = "MID Weekly Leatherworking Treasure #1",
-				["provider"] = { "i", 259200 },		-- Amani Tanning Oil
+				["provider"] = { "i", 259200 },	-- Amani Tanning Oil
 			}),
 			q(93541, {	-- MID Weekly Leatherworking Knowledgepoint #2
 				["name"] = "MID Weekly Leatherworking Treasure #2",
-				["provider"] = { "i", 259201 },		-- Thalassian Mana Oil
+				["provider"] = { "i", 259201 },	-- Thalassian Mana Oil
 			}),
 		})),
 	})),

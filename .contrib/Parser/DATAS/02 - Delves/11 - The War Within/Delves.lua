@@ -866,8 +866,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 		ach(40732, {	-- Heavy-Handed
 			["maps"] = ALL_THE_DELVES_TWW,
 		}),
-		ach(40459),		-- I've Got a Flying Machine!
-		ach(40789),		-- I've Got More Flying Machine?! (automated)
+		ach(40459),	-- I've Got a Flying Machine!
+		ach(40789),	-- I've Got More Flying Machine?! (automated)
 		ach(40452, {	-- Just Keep Swimming
 			["maps"] = KOBYSS_DELVES_TWW,
 		}),

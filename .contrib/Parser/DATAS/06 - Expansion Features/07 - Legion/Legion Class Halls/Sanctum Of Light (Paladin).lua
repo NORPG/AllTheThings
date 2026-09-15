@@ -363,7 +363,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(42881, {	-- Champion: Lady Liadrin
 						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
-						["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
+						["provider"] = { "n", 92346 },	-- Lady Liadrin <Blood Knight Matriarch>
 						["coord"] = { 38.8, 63.6, SANCTUM_OF_LIGHT },
 						["groups"] = { follower(478) },	-- Lady Liadrin
 					}),
@@ -476,7 +476,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(42851, {	-- Champion: Vindicator Boros
 						["sourceQuests"] = { 42890 },	-- The Codex of Command
-						["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
+						["provider"] = { "n", 94175 },	-- Vindicator Boros <Triumvirate of the Hand>
 						["coord"] = { 49.3, 71.5, LIGHTS_HOPE_CHAPEL },
 						["groups"] = {
 							follower(479),	-- Vindicator Boros
@@ -566,7 +566,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(43492, {	-- Champion: Aponi Brightmane
 						["sourceQuests"] = { 43541 },	-- United As One
-						["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
+						["provider"] = { "n", 90251 },	-- Aponi Brightmane <Sunwalker Chieftain>
 						["coord"] = { 48.3, 72.4, LIGHTS_HOPE_CHAPEL },
 						["groups"] = { follower(757) },	-- Aponi Brightmane
 					}),
@@ -639,7 +639,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(43785, {	-- Champion: Arator the Redeemer
 						["sourceQuests"] = { 43697 },	-- Warriors of Light
-						["provider"] = { "n", 99997 },		-- Arator the Redeemer
+						["provider"] = { "n", 99997 },	-- Arator the Redeemer
 						["coord"] = { 71.6, 23.7, LIGHTS_HOPE_CHAPEL },
 						["groups"] = { follower(758) },	-- Arator the Redeemer
 					}),
@@ -768,7 +768,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 						["cost"] = {
 							{ "i", 123918, 25 },	-- 25x Leystone Ore
-							{ "i", 147768, 1 },		-- 1x Suramarian Sapphire
+							{ "i", 147768, 1 },	-- 1x Suramarian Sapphire
 						},
 					}),
 					q(91618, {	-- A Few Things First (Remix)

@@ -1113,9 +1113,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sym"] = {
 						{"select", "npcID", 196516 },	-- Select Mythressa
 						{"pop"},
-						{"not", "itemID", 192775 },		-- Not Stormhide Salamanther (MOUNT!)
-						{"not", "itemID", 200173 },		-- Not Ghostflame (PET!)
-						{"not", "itemID", 200114 },		-- Not Stormie (PET!)
+						{"not", "itemID", 192775 },	-- Not Stormhide Salamanther (MOUNT!)
+						{"not", "itemID", 200173 },	-- Not Ghostflame (PET!)
+						{"not", "itemID", 200114 },	-- Not Stormie (PET!)
 						{"modID", 14}
 					},
 				}),

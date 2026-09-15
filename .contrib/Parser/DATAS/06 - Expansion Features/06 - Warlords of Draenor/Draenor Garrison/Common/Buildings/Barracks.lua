@@ -13,10 +13,10 @@ root(ROOTS.ExpansionFeatures,
 							crit(25890),	-- Leorajh
 							crit(25894),	-- Talonpriest Ishaal
 							crit(25895),	-- Tormmok
-							crit(25891, {["races"] = HORDE_ONLY}),		-- Aeda Brightdawn
-							crit(25893, {["races"] = ALLIANCE_ONLY}),		-- Defender Illona
-							crit(25889, {["races"] = ALLIANCE_ONLY}),		-- Delvar Ironfirst
-							crit(25892, {["races"] = HORDE_ONLY}),		-- Vivianne
+							crit(25891, {["races"] = HORDE_ONLY}),	-- Aeda Brightdawn
+							crit(25893, {["races"] = ALLIANCE_ONLY}),	-- Defender Illona
+							crit(25889, {["races"] = ALLIANCE_ONLY}),	-- Delvar Ironfirst
+							crit(25892, {["races"] = HORDE_ONLY}),	-- Vivianne
 						}),
 					}),
 					n(FACTIONS, {

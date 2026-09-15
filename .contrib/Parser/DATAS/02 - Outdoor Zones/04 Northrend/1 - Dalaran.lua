@@ -998,7 +998,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE CATA
 								["sym"] = {
-									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR }, { "pop" },		-- Deadly Gladiator's Set
+									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR }, { "pop" },	-- Deadly Gladiator's Set
 									-- #if ANYCLASSIC
 									{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
 									-- #endif
@@ -1098,7 +1098,7 @@ root(ROOTS.Zones, {
 								-- #elseif ANYCLASSIC
 								["sym"] = {
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR }, { "merge" },	-- Relentless Gladiator's Set
-									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE }, { "merge" }, { "pop" },		-- Relentless Gladiator's Elite Set
+									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE }, { "merge" }, { "pop" },	-- Relentless Gladiator's Elite Set
 									{ "not", "headerID", BACK, WAIST, WRIST, FEET },				-- Exclude off-piece headers
 									{ "not", "filterID", NECK_F, FINGER_F, RELICS_F, TRINKET_F },	-- Exclude off-piece filters
 									{ "exclude", "itemID", 49086 },									-- Exclude Relentless Gladiator's Tabard
@@ -1353,9 +1353,7 @@ root(ROOTS.Zones, {
 							1957,	-- There's Gold In That There Fountain
 						}},
 						["requireSkill"] = FISHING,
-						["groups"] = {
-							i(44430),		-- Titanium Seal of Dalaran (TOY!)
-						},
+						["groups"] = { i(44430) },	-- Titanium Seal of Dalaran (TOY!)
 					}),
 					achWithRep(1008, FACTION_KIRIN_TOR),	-- The Kirin Tor
 					ach(1957, {	-- There's Gold In That There Fountain
@@ -1635,7 +1633,7 @@ root(ROOTS.Zones, {
 							["groups"] = appendGroups(WRATH_TAILORING, {
 								r(56017, {	-- Deathchill Cloak
 									["sourceAchievements"] = {
-										41,		-- Loremaster of Northrend (A)
+										41,	-- Loremaster of Northrend (A)
 										-- #if BEFORE 5.0.4
 										1360,	-- Loremaster of Northrend (H)
 										-- #endif

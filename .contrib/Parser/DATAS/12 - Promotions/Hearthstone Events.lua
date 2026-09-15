@@ -105,7 +105,7 @@ root(ROOTS.Promotions, {
 						i(212924),	-- Stolen Hearthstone Card
 					}),
 				}),
-				ach(19724),		-- Hearthstone Card Collection
+				ach(19724),	-- Hearthstone Card Collection
 			}),
 			n(MAILBOX, bubbleDown({ ["timeline"] = { REMOVED_10_2_6 } }, {
 				i(212154),	-- Hearthstone Invitation Letter (QS!)

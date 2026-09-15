@@ -13,22 +13,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(15960),		-- Combatant I: Dragonflight Season 1
-			ach(15961),		-- Combatant II: Dragonflight Season 1
-			ach(15955),		-- Challenger I: Dragonflight Season 1
-			ach(15956),		-- Challenger II: Dragonflight Season 1
-			ach(15952),		-- Rival I: Dragonflight Season 1
-			ach(15953),		-- Rival II: Dragonflight Season 1
+			ach(15960),	-- Combatant I: Dragonflight Season 1
+			ach(15961),	-- Combatant II: Dragonflight Season 1
+			ach(15955),	-- Challenger I: Dragonflight Season 1
+			ach(15956),	-- Challenger II: Dragonflight Season 1
+			ach(15952),	-- Rival I: Dragonflight Season 1
+			ach(15953),	-- Rival II: Dragonflight Season 1
 			ach(15954, {	-- Duelist: Dragonflight Season 1
 				ill(6786, {["timeline"] = { ADDED_10_0_7, REMOVED_10_1_0 }}),	-- Primal Storm (ILLUSION!)
 				i(202089, {["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 }}),	-- Crimson Gladiator's Prestigious Cloak
 			}),
-			ach(15984),		-- Elite: Dragonflight Season 1
+			ach(15984),	-- Elite: Dragonflight Season 1
 			ach(15957, {	-- Gladiator: Dragonflight Season 1
 				i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
 				i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (MM!)
 			}),
-			ach(16730),		-- Crimson Gladiator's Drake
+			ach(16730),	-- Crimson Gladiator's Drake
 			ach(15951, {	-- Crimson Gladiator: Dragonflight Season 1
 				title(468),	-- Crimson Gladiator <Name>
 			}),
@@ -157,18 +157,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["groups"] = {
 					-- #if BEFORE TWW
-					bloody(500, iensemble(211148)),		-- Arsenal: Drakebreaker's Axe
-					bloody(500, iensemble(211144)),		-- Arsenal: Drakebreaker's Club
-					bloody(800, iensemble(211153)),		-- Arsenal: Drakebreaker's Greatsword
-					bloody(500, iensemble(211157)),		-- Arsenal: Drakebreaker's Gun
-					bloody(500, iensemble(211146)),		-- Arsenal: Drakebreaker's Knife
-					bloody(300, iensemble(211155)),		-- Arsenal: Drakebreaker's Offhand
-					bloody(800, iensemble(211152)),		-- Arsenal: Drakebreaker's Polearm
-					bloody(300, iensemble(211150)),		-- Arsenal: Drakebreaker's Shield
-					bloody(500, iensemble(211143)),		-- Arsenal: Drakebreaker's Spiked Hammer
-					bloody(800, iensemble(211154)),		-- Arsenal: Drakebreaker's Stave
-					bloody(500, iensemble(211156)),		-- Arsenal: Drakebreaker's Wand
-					bloody(500, iensemble(211147)),		-- Arsenal: Drakebreaker's Warglaive
+					bloody(500, iensemble(211148)),	-- Arsenal: Drakebreaker's Axe
+					bloody(500, iensemble(211144)),	-- Arsenal: Drakebreaker's Club
+					bloody(800, iensemble(211153)),	-- Arsenal: Drakebreaker's Greatsword
+					bloody(500, iensemble(211157)),	-- Arsenal: Drakebreaker's Gun
+					bloody(500, iensemble(211146)),	-- Arsenal: Drakebreaker's Knife
+					bloody(300, iensemble(211155)),	-- Arsenal: Drakebreaker's Offhand
+					bloody(800, iensemble(211152)),	-- Arsenal: Drakebreaker's Polearm
+					bloody(300, iensemble(211150)),	-- Arsenal: Drakebreaker's Shield
+					bloody(500, iensemble(211143)),	-- Arsenal: Drakebreaker's Spiked Hammer
+					bloody(800, iensemble(211154)),	-- Arsenal: Drakebreaker's Stave
+					bloody(500, iensemble(211156)),	-- Arsenal: Drakebreaker's Wand
+					bloody(500, iensemble(211147)),	-- Arsenal: Drakebreaker's Warglaive
 					bloody(3000, iensemble(211140)),	-- Ensemble: Drakebreaker's Cloth Armor
 					bloody(3000, iensemble(211138)),	-- Ensemble: Drakebreaker's Leather Armor
 					bloody(3000, iensemble(211135)),	-- Ensemble: Drakebreaker's Mail Armor

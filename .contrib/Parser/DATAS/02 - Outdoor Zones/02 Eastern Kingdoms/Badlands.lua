@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(342),	-- Camp Boff
 				-- #endif
 				exploration(344),	-- Camp Cagg
-				exploration(341),		-- Camp Kosh
+				exploration(341),	-- Camp Kosh
 				-- #if AFTER CATA
 				exploration(5564),	-- Dragon's Mouth
 				-- #endif

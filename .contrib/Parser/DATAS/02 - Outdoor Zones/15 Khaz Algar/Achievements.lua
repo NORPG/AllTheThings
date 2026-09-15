@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				40825,	-- Explore The Ringing Deeps
 			}},
 		}),
-		ach(40430),		-- Khaz Algar Flight Master (automated)
+		ach(40430),	-- Khaz Algar Flight Master (automated)
 		ach(40702, {	-- Khaz Algar Glyph Hunter
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["timeline"] = { ADDED_11_2_7 },
 			["groups"] = { title(669) },	-- <Name>, Azeroth's Vanguard
 		}),
-		ach(20597),		-- The War Within (automated)
+		ach(20597),	-- The War Within (automated)
 		ach(40231, {	-- The War Within Pathfinder
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

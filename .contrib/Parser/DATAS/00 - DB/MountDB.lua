@@ -2483,8 +2483,6 @@ i(268875, 1283911);	-- [PH] Giant Eagle Sunwalker Mount White
 i(268362, 1282274);	-- Gilnean Copper Charger
 i(268360, 1282268);	-- Gilnean Iron Charger
 i(260421, 1266285);	-- Void-Corrupted Amani Warbear Kit
-i(268833, 1283837);	-- Zothwing Darkseeker
-i(268834, 1283838);	-- Zothwing Deepseeker
 
 ------------------
 -- PATCH 12.0.7 --
@@ -2545,6 +2543,8 @@ i(275302, 1266211);	-- Venomous Gladiator's Goredrake
 i(275433, 1296670);	-- Vicious Lightbloom Boar [A]
 i(275432, 1296672);	-- Vicious Lightbloom Boar [H]
 i(276551, 1299963);	-- Violet-Backed Skyfang
+i(268833, 1283837);	-- Zothwing Darkseeker
+i(268834, 1283838);	-- Zothwing Deepseeker
 --- NYI ---
 i(276800, 1300780);	-- [PH]Writhes Mount - Yellow
 i(275551, 1296724);	-- Autumnal Witchwick's Rider	(SHOP OR TRADING POST)

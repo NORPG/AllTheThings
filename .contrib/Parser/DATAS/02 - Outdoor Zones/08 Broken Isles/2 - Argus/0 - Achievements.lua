@@ -1031,7 +1031,7 @@ root(ROOTS.Zones, {
 						}),
 					})),
 				}),
-				ach(12084),		-- Infused and Abused
+				ach(12084),	-- Infused and Abused
 				ach(12073, {	-- Locked and Loaded
 					crit(38089, {	-- Light's Judgement
 						["sourceQuests"] = { 47287 },	-- The Vindicaar Matrix Core

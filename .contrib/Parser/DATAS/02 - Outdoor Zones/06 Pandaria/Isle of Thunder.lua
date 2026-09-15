@@ -35,9 +35,7 @@ root(ROOTS.Zones, {
 							8108,	-- When in Ihgaluk, Do as the Skumblade Do
 							8116,	-- You Made Me Bleed My Own Blood
 						}},
-						["groups"] = {
-							title(221),		-- the Stormbreaker
-						},
+						["groups"] = { title(221) },	-- the Stormbreaker
 					}),
 					ach(8112),	-- Blue Response
 					ach(8118),	-- Boop

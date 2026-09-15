@@ -438,6 +438,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(39842),	-- One Mage's Trash
 				q(39843),	-- The Muck Stops Here
 				q(42480),	-- Assn Rogue - Flavor Event 02 (Alliance)
+				q(42482, { ["name"] = "Assn Rogue - Flavor Event 03", }),	-- Assn Rogue - Flavor Event 03 [Obtained in Stormheim]
 			})),
 
 			-- 7.1.0

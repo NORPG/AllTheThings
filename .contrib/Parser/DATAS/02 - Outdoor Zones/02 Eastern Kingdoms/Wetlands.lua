@@ -1381,7 +1381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1250, {	-- The Missing Diplomat (12/17)
-					["sourceQuest"] = 1249,		-- The Missing Diplomat (11/17)
+					["sourceQuest"] = 1249,	-- The Missing Diplomat (11/17)
 					["qg"] = 4962,	-- Tapoke "Slim" Jahn
 					["coord"] = { 10.6, 60.3, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },

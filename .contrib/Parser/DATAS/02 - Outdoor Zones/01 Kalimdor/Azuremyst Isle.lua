@@ -10,8 +10,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		["icon"] = 236715,
 		["timeline"] = { ADDED_2_0_3 },
 		["maps"] = {
-			98,		-- Tides' Hollow
-			99,		-- Stillpine Hold
+			98,	-- Tides' Hollow
+			99,	-- Stillpine Hold
 		},
 		["groups"] = {
 			m(AMMEN_VALE, {
@@ -922,8 +922,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE CATA
-						recipe(6991),		-- Feed Pet
-						recipe(982),		-- Revive Pet
+						recipe(6991),	-- Feed Pet
+						recipe(982),	-- Revive Pet
 						-- #endif
 					},
 				}),
@@ -956,7 +956,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(23431),	-- Mercenary Stiletto
 						i(23430),	-- Mercenary Sword
 						-- #if BEFORE CATA
-						recipe(71),		-- Defensive Stance
+						recipe(71),	-- Defensive Stance
 						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
@@ -1398,7 +1398,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 17199,	-- Ravager Specimen
 						}),
 						-- #if BEFORE CATA
-						recipe(71),		-- Defensive Stance
+						recipe(71),	-- Defensive Stance
 						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif

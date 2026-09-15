@@ -9,28 +9,28 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(138, {	-- Lumber Mill (rank 1: 40, rank 2: 41, rank 3: 138)
 					n(ACHIEVEMENTS, {
 						a(ach(9078, {	-- Choppin' Even More Logs (Alliance) (100)
-							a(title(259)),		-- the Commandojack
+							a(title(259)),	-- the Commandojack
 						})),
 						h(ach(9080, {	-- Choppin' Even More Logs (Horde) (100)
-							h(title(258)),		-- Timber Lord
+							h(title(258)),	-- Timber Lord
 						})),
 						ach(9077, {		-- Choppin' Some More Logs (50)
-							title(257),		-- Lumberjack
+							title(257),	-- Lumberjack
 						}),
 						-- not nesting these since they are neutral achievements within horde/alliance achievements... ugh
-						ach(9076),		-- Choppin' Some Logs (10)
+						ach(9076),	-- Choppin' Some Logs (10)
 						ach(9429, {		-- Upgrading the Mill
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["groups"] = {
-								crit(25174),		-- Place 75 Work Order at the Lumber Mill
-								crit(25733),		-- Legacy of the Ancients
+								crit(25174),	-- Place 75 Work Order at the Lumber Mill
+								crit(25733),	-- Legacy of the Ancients
 								crit(25731, {		-- Reduction in Force
 									["sourceQuests"] = {
 										36448,
 										36449,
 									}
 								}),
-								i(109255),		-- Lumber Mill, Level 3 [Blueprints]
+								i(109255),	-- Lumber Mill, Level 3 [Blueprints]
 							},
 						}),
 					}),

@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 					["coords"] = {
 						{ 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Warleader Abdumati
-						{ 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },		-- Talon Commander Zela
+						{ 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Talon Commander Zela
 					},
 					["isWeekly"] = true,
 					["groups"] = {

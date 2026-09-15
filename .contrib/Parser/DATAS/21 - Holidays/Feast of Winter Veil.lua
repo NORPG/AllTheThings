@@ -88,7 +88,7 @@ local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
 	i(2996),	-- Bolt of Linen Cloth
 	i(2840),	-- Copper Bar
 	i(2318),	-- Light Leather
-	i(785),		-- Mageroyal
+	i(785),	-- Mageroyal
 	-- #else
 	i(128647, {	-- Fizzy Apple Cider
 		["timeline"] = { ADDED_6_2_2 },
@@ -325,17 +325,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		ach(277, {	-- 'Tis the Season
 			["providers"] = {
-				{ "i", 21215 },		-- Graccu's Mince Meat Fruitcake
-				{ "i", 21525 },		-- Green Winter Hat
-				{ "i", 21524 },		-- Red Winter Hat
+				{ "i", 21215 },	-- Graccu's Mince Meat Fruitcake
+				{ "i", 21525 },	-- Green Winter Hat
+				{ "i", 21524 },	-- Red Winter Hat
 				-- #if AFTER 7.2.5.24163
 				{ "i", 151792 },	-- Green Winter Clothes
 				{ "i", 151790 },	-- Red Winter Clothes
 				{ "i", 151791 },	-- Winter Boots
 				-- #else
-				{ "i", 34087 },		-- Green Winter Clothes
-				{ "i", 34085 },		-- Red Winter Clothes
-				{ "i", 34086 },		-- Winter Boots
+				{ "i", 34087 },	-- Green Winter Clothes
+				{ "i", 34085 },	-- Red Winter Clothes
+				{ "i", 34086 },	-- Winter Boots
 				-- #endif
 			},
 			["timeline"] = { ADDED_3_0_2 },

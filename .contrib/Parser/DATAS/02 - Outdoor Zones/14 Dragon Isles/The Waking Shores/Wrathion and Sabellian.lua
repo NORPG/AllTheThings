@@ -563,14 +563,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197738),	-- Flameslinger Rum
 						i(198356),	-- Honey Snack
 						i(201418, {	-- Orb of the Obsidian Scale
-							["cost"] = { { "i", 202173, 5 } },		-- 5x Magmote
+							["cost"] = { { "i", 202173, 5 } },	-- 5x Magmote
 						}),
 						i(192786, {	-- Scrappy Worldsnail (MOUNT!)
-							["cost"] = { { "i", 202173, 1000 } },		-- 1000x Magmote
+							["cost"] = { { "i", 202173, 1000 } },	-- 1000x Magmote
 						}),
 						i(199215, {	-- Worldbreaker Membership
 							["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twilight Cache before.",
-							["cost"] = { { "i", 202173, 20 } },		-- 20x Magmote
+							["cost"] = { { "i", 202173, 20 } },	-- 20x Magmote
 							["groups"] = {
 								title(469, {	-- <Name> the Worldbreaker
 									["collectible"] = false,

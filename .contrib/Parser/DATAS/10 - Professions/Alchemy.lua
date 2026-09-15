@@ -1051,23 +1051,23 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 			q(66373, {	-- DF Weekly Alchemy Knowledgepoint #1
 				["name"] = "DF Alchemy Treasure #1",
-				["provider"] = { "i", 193891 },		-- Experimental Substance
+				["provider"] = { "i", 193891 },	-- Experimental Substance
 			}),
 			q(66374, {	-- DF Weekly Alchemy Knowledgepoint #2
 				["name"] = "DF Alchemy Treasure #2",
-				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
+				["provider"] = { "i", 193897 },	-- Reawakened Catalyst
 			}),
 			q(70504, {	-- DF Weekly Alchemy Knowledgepoint #3
 				["name"] = "DF Alchemy Drop #1: Decayed",
 				["description"] = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198963 },		-- Decaying Phlegm
+				["provider"] = { "i", 198963 },	-- Decaying Phlegm
 				["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
 				["crs"] = { 186361 },	-- Rotting Treant
 			}),
 			q(70511, {	-- DF Weekly Alchemy Knowledgepoint #4
 				["name"] = "DF Alchemy Drop #2: Elemental",
 				["description"] = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198964 },		-- Elementious Splinter
+				["provider"] = { "i", 198964 },	-- Elementious Splinter
 				["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
 				["crs"] = { 191712 },	-- Hissing Springsoul
 			}),
@@ -1201,7 +1201,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 			q(83255, {	-- TWW Weekly Alchemy Knowledgepoint #2
 				["name"] = "TWW Weekly Alchemy Treasure #2",
-				["provider"] = { "i", 225235 },		-- Deepstone Crucible
+				["provider"] = { "i", 225235 },	-- Deepstone Crucible
 			}),
 		})),
 	})),

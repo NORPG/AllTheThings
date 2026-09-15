@@ -14,12 +14,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(15348),		-- Combatant I: Shadowlands Season 3
-			ach(15380),		-- Combatant II: Shadowlands Season 3
-			ach(15349),		-- Challenger I: Shadowlands Season 3
-			ach(15379),		-- Challenger II: Shadowlands Season 3
-			ach(15350),		-- Rival I: Shadowlands Season 3
-			ach(15378),		-- Rival II: Shadowlands Season 3
+			ach(15348),	-- Combatant I: Shadowlands Season 3
+			ach(15380),	-- Combatant II: Shadowlands Season 3
+			ach(15349),	-- Challenger I: Shadowlands Season 3
+			ach(15379),	-- Challenger II: Shadowlands Season 3
+			ach(15350),	-- Rival I: Shadowlands Season 3
+			ach(15378),	-- Rival II: Shadowlands Season 3
 			ach(15351, {	-- Duelist: Shadowlands Season 3
 				ill(6351),	-- Cosmic Flow (ILLUSION!)
 				i(186776),	-- Cosmic Gladiator's Prestigious Cloak
@@ -30,7 +30,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			ach(15352, {	-- Gladiator: Shadowlands Season 3
 				i(189507),	-- Cosmic Gladiator's Soul Eater (MOUNT!)
 			}),
-			ach(15384),		-- Cosmic Gladiator's Soul Eater
+			ach(15384),	-- Cosmic Gladiator's Soul Eater
 			ach(15353, {	-- Cosmic Gladiator: Shadowlands Season 3
 				title(452),	-- Cosmic Gladiator <Name>
 			}),

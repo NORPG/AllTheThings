@@ -304,7 +304,7 @@ root(ROOTS.Zones, {
 							{ 66.0, 32.5, BROKEN_SHORE },
 							{ 74.0, 30.6, BROKEN_SHORE },
 						},
-						["cost"] = { { "i", 147775, 1 } },		-- 1x Nether Portal Disruptor
+						["cost"] = { { "i", 147775, 1 } },	-- 1x Nether Portal Disruptor
 						["crs"] = {
 							121092,	-- Anomalous Observer
 							121049,	-- Baleful Knight-Captain
@@ -1477,7 +1477,7 @@ root(ROOTS.Zones, {
 									["cost"] = { { "c", 1226, 1000 } },	-- 1,000x Nethershard
 								}),
 								i(139879, {	-- Crate of Champion Equipment
-									["cost"] = { { "c", 1226, 250 } },		-- 250x Nethershard
+									["cost"] = { { "c", 1226, 250 } },	-- 250x Nethershard
 								}),
 								i(147212, {	-- Dauntless Bracers
 									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
@@ -1582,13 +1582,13 @@ root(ROOTS.Zones, {
 								}),
 								i(147775, {	-- Nether Portal Disruptor
 									["description"] = "Can be used to summon rare elite mobs from Unstable Nether Portals while the Nether Disruptor is up. You can only kill 50 elites per day. It is consumed on use.\n\nCan be bought or sold on the Auction House.",
-									["cost"] = { { "c", 1226, 250 } },		-- 250x Nethershard
+									["cost"] = { { "c", 1226, 250 } },	-- 250x Nethershard
 								}),
 								i(146659, {	-- Nethershard Essence
 									["cost"] = { { "c", 1226, 8000 } },	-- 8,000x Nethershard
 								}),
 								i(156630, {	-- Relinquished Armor Set
-									["cost"] = { { "c", 1226, 400 } },		-- 1,000x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 1,000x Nethershard
 								}),
 								i(151541, {	-- Technique: Glyph of Floating Shards (RECIPE!)
 									["timeline"] = { ADDED_7_2_5 },

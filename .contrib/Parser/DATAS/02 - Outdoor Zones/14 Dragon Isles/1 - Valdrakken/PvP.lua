@@ -346,7 +346,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						bloody(100, i(206143, {		-- Energized Temporal Spores
 							["timeline"] = { ADDED_10_2_0, REMOVED_11_0_0 },
 						})),
-						bloody(750, i(201464)),		-- Flesh Parachute
+						bloody(750, i(201464)),	-- Flesh Parachute
 						bloody(100, i(206142, {		-- Gritty Stone Potion
 							["timeline"] = { ADDED_10_2_0, REMOVED_11_0_0 },
 						})),

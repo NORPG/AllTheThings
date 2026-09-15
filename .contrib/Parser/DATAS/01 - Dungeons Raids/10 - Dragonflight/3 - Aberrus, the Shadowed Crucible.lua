@@ -42,8 +42,8 @@ local EncounterToCRS = {
 	[MAGMORAX] = { 201579 },	-- Magmorax
 	[NELTHARION] = { 203133, 201668 },	-- Echo of Neltharion
 	[SARKARETH] = {
-		203284,		-- Scalecommander Sarkareth
-		201754,		-- Scalecommander Sarkareth
+		203284,	-- Scalecommander Sarkareth
+		201754,	-- Scalecommander Sarkareth
 	},
 };
 

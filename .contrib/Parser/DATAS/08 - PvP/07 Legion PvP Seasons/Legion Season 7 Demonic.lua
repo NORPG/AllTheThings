@@ -20,10 +20,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
-			ach(12187),		-- Challenger: Legion Season 7
-			ach(12188),		-- Rival: Legion Season 7
-			ach(12186),		-- Duelist: Legion Season 7
-			ach(12198),		-- Demonic Elite
+			ach(12187),	-- Challenger: Legion Season 7
+			ach(12188),	-- Rival: Legion Season 7
+			ach(12186),	-- Duelist: Legion Season 7
+			ach(12198),	-- Demonic Elite
 			ach(12168, {	-- Gladiator: Legion Season 7
 				i(153493),	-- Demonic Gladiator's Storm Dragon (MOUNT!)
 			}),

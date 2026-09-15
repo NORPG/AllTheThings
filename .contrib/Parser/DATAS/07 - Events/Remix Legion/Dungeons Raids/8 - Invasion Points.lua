@@ -118,7 +118,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				["groups"] = { ach(42616) },	-- Pit Lord Vilemus
 			}),
 			e(2014, {	-- Sotanathor
-				["creatureID"] = 124555,		-- Sotanathor
+				["creatureID"] = 124555,	-- Sotanathor
 				["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
 				["questID"] = 49171,
 				["modelScale"] = 0.75,

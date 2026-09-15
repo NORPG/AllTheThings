@@ -69,7 +69,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, {
 					{ 20.2, 67.0, THE_MAW },	-- Soulsteel Anvil
 				},
 				["questID"] = 63707,
-				["cost"] = { { "i", 185474, 1 }, },		-- Armored Husk
+				["cost"] = { { "i", 185474, 1 }, },	-- Armored Husk
 				["groups"] = {
 					i(185630, {	-- Stygia Bar
 						["cost"] = {
@@ -79,7 +79,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, {
 					}),
 					i(185474, {	-- Armored Husk
 						["cost"] = {
-							{ "i", 185473, 1 },		-- Soulforger's Tools
+							{ "i", 185473, 1 },	-- Soulforger's Tools
 							{ "i", 185630, 20 },	-- 20x Stygia Bar
 						},
 					}),

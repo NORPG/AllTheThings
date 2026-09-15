@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50617, {	-- Atul'Aman
 				["sourceQuests"] = { 50751 },	-- Sanctuary Under Siege
-				["provider"] = { "n", 129588 },		-- Vorrik
+				["provider"] = { "n", 129588 },	-- Vorrik
 				["coord"] = { 27.09, 52.56, VOLDUN },	-- Sanctuary of the Devoted
 				["races"] = HORDE_ONLY,
 			}),
@@ -1223,7 +1223,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50751, {	-- Sanctuary Under Siege
 				["sourceQuests"] = { 50550 },	-- The Fall of Emperor Korthek
-				["provider"] = { "n", 138519 },		-- Vorrik
+				["provider"] = { "n", 138519 },	-- Vorrik
 				["coord"] = { 51.98, 27.71, VOLDUN },	-- Skycallers' Spire
 				["races"] = HORDE_ONLY,
 			}),

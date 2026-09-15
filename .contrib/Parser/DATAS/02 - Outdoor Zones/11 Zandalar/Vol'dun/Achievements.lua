@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["_quests"] = { 53145 },
 				}),
 			}),
-			ach(13011),		-- Scourge of Zem'lan
+			ach(13011),	-- Scourge of Zem'lan
 			ach(12478, {	-- Secrets in the Sands
 				["races"] = HORDE_ONLY,
 				["groups"] = {

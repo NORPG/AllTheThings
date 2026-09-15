@@ -280,13 +280,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(13458),	-- Greater Nature Protection Potion
 			i(13459, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Greater Shadow Protection Potion
 			i(13455),	-- Greater Stoneshield Potion
-			i(929),		-- Healing Potion
+			i(929),	-- Healing Potion
 			i(6051),	-- Holy Protection Potion
 			i(9172),	-- Invisibility Potion
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(217398, {["timeline"] = { ADDED_1_15_1 }})),	-- Lesser Arcane Elixir
 			-- #endif
-			i(858),		-- Lesser Healing Potion
+			i(858),	-- Lesser Healing Potion
 			i(3823),	-- Lesser Invisibility Potion
 			i(3385),	-- Lesser Mana Potion
 			i(4623, {["timeline"] = { REMOVED_4_0_3 }}),	-- Lesser Stoneshield Potion
@@ -307,7 +307,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(215162, {["timeline"] = { ADDED_1_15_1 }})),	-- Mildly Irradiated Rejuvenation Potion
 			-- #endif
-			i(118),		-- Minor Healing Potion
+			i(118),	-- Minor Healing Potion
 			i(3384, {["timeline"] = { REMOVED_5_0_4 }}),	-- Minor Magic Resistance Potion
 			i(2455),	-- Minor Mana Potion
 			i(2456),	-- Minor Rejuvenation Potion
@@ -1284,7 +1284,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				sharedData({	-- Vanilla cooking reagents
 					["description"] = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
 				}, {
-					i(159),		-- Refreshing Spring Water
+					i(159),	-- Refreshing Spring Water
 					i(30817, {["timeline"] = { ADDED_2_0_1 }}),	-- Simple Flour
 					i(2678),	-- Mild Spices
 					i(2692, {["timeline"] = { REMOVED_3_0_2 }}),	-- Hot Spices
@@ -1363,7 +1363,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(5527),	-- Goblin Deviled Clams
 		i(10841, {["timeline"] = { REMOVED_6_0_2, ADDED_10_0_0 }}),	-- Goldthorn Tea
 		i(3666),	-- Gooey Spider Cake
-		i(724),		-- Goretusk Liver Pie
+		i(724),	-- Goretusk Liver Pie
 		i(13928),	-- Grilled Squid
 		i(20074),	-- Heavy Crocolisk Stew
 		i(12215),	-- Heavy Kodo Stew
@@ -1402,7 +1402,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(6657),	-- Savory Deviate Delight
 		i(5473),	-- Scorpid Surprise
 		i(1017),	-- Seasoned Wolf Kabob
-		i(787),		-- Slitherskin Mackerel
+		i(787),	-- Slitherskin Mackerel
 		applyclassicphase(WRATH_PHASE_ONE, i(44838, {["timeline"] = { ADDED_3_2_2 }})),	-- Slow-Roasted Turkey [Pilgrim's Bounty]
 		i(6890),	-- Smoked Bear Meat
 		applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20452)),	-- Smoked Desert Dumplings
@@ -1422,7 +1422,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(7676, {["timeline"] = {REMOVED_6_0_2, ADDED_7_1_0}}),	-- Thistle Tea
 		i(16766),	-- Undermine Clam Chowder
 		applyclassicphase(CATA_PHASE_ONE, i(67230, {["timeline"] = { ADDED_4_0_3 }})),	-- Venison Jerky
-		i(733),		-- Westfall Stew
+		i(733),	-- Westfall Stew
 		-- #if AFTER 5.4.1
 		i(17198),	-- Winter Veil Egg Nog[5.4.1+] / Egg Nog
 		-- #endif
@@ -4446,7 +4446,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
-						i(785),		-- Mageroyal
+						i(785),	-- Mageroyal
 					},
 				}),
 				i(13465, {	-- Mountain Silversage

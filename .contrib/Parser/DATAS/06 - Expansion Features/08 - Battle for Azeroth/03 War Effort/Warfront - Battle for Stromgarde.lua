@@ -1136,7 +1136,7 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(53194, {	-- To The Front
 									["sourceQuest"] = 53175,	-- The Warfront Looms
-									["provider"] = { "n", 142721 },		-- Ralston Karn
+									["provider"] = { "n", 142721 },	-- Ralston Karn
 									["coord"] = { 65.89, 26.03, BORALUS },
 									["races"] = ALLIANCE_ONLY,
 									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
@@ -1484,7 +1484,7 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(53197, {	-- Touring the Front (A)
 									["sourceQuest"] = 53194,	-- To The Front
-									["provider"] = { "n", 143018 },		-- Captain Roderick Brewston
+									["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
 									["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
 									["races"] = ALLIANCE_ONLY,
 									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)

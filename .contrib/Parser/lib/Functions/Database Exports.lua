@@ -204,8 +204,8 @@ for i,mapID in ipairs({
 	KALIMDOR,
 	EASTERN_KINGDOMS,
 		-- #if AFTER TBC
-		EVERSONG_WOODS,		-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
-		AZUREMYST_ISLE,		-- Azuremyst Isle (and Bloodmyst)
+		EVERSONG_WOODS,	-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
+		AZUREMYST_ISLE,	-- Azuremyst Isle (and Bloodmyst)
 		HELLFIRE_PENINSULA,	-- Hellfire Peninsula (All of Outland)
 		-- #endif
 		-- #if AFTER WRATH

@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			}),
 		}),
 		ach(13691),	-- I Thought You Said They'd Be Rare?
-		ach(13707),		-- Mrrl's Secret Stash
+		ach(13707),	-- Mrrl's Secret Stash
 		petbattle(ach(13626, {	-- Nautical Nuisances of Nazjatar
 			crit(45467, {	-- Prince Wiggletail
 				["crs"] = { 154910 },	-- Prince Wiggletail
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob. Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
 		}),
 		ach(13764),	-- Puzzle Performer
-		ach(13765),		-- Subaquatic Support
+		ach(13765),	-- Subaquatic Support
 		ach(13710, {	-- Sunken Ambitions
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -479,8 +479,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				13558,	-- Waveblade Ankoan (A)
 			}},
 			["groups"] = {
-				i(169194),		-- Snapback Scuttler (MOUNT!)
-				title(405),		-- of the Deeps
+				i(169194),	-- Snapback Scuttler (MOUNT!)
+				title(405),	-- of the Deeps
 			},
 		}),
 		ach(13709, {	-- Unfathomable

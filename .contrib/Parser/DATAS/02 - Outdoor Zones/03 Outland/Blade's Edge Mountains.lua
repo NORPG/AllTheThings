@@ -2639,13 +2639,13 @@ root(ROOTS.Zones, {
 							}, {	-- Exalted
 								i(32651, {	-- Crystal Orb of Enlightenment
 									["cost"] = {
-										{ "i", 32572, 4 },		-- 4x Apexis Crystal
+										{ "i", 32572, 4 },	-- 4x Apexis Crystal
 										{ "i", 32569, 100 },	-- 100x Apexis Shard
 									},
 								}),
 								i(32645, {	-- Crystalline Crossbow
 									["cost"] = {
-										{ "i", 32572, 4 },		-- 4x Apexis Crystal
+										{ "i", 32572, 4 },	-- 4x Apexis Crystal
 										{ "i", 32569, 100 },	-- 100x Apexis Shard
 									},
 								}),
@@ -2654,13 +2654,13 @@ root(ROOTS.Zones, {
 								}),
 								i(32647, {	-- Shard-Bound Bracers
 									["cost"] = {
-										{ "i", 32572, 4 },		-- 4x Apexis Crystal
+										{ "i", 32572, 4 },	-- 4x Apexis Crystal
 										{ "i", 32569, 100 },	-- 100x Apexis Shard
 									},
 								}),
 								i(32648, {	-- Vortex Walking Boots
 									["cost"] = {
-										{ "i", 32572, 4 },		-- 4x Apexis Crystal
+										{ "i", 32572, 4 },	-- 4x Apexis Crystal
 										{ "i", 32569, 100 },	-- 100x Apexis Shard
 									},
 								}),

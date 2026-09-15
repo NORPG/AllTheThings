@@ -29,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		header(HEADERS.Achievement, SEASON_TORMENTED, bubbleDownSelf({
 			["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 		}, {
-			ach(15073),		-- Shadowlands Keystone Explorer: Season Two
+			ach(15073),	-- Shadowlands Keystone Explorer: Season Two
 			ach(15077, {	-- Shadowlands Keystone Conqueror: Season Two
 				title(446),	-- <Name> the Tormented
 			}),
@@ -68,14 +68,14 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		header(HEADERS.Achievement, SEASON_CRYPTIC, bubbleDownSelf({
 			["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 		}, {
-			ach(15496),		-- Shadowlands Keystone Explorer: Season Three
+			ach(15496),	-- Shadowlands Keystone Explorer: Season Three
 			ach(15498, {	-- Shadowlands Keystone Conqueror: Season Three
 				title(457),	-- <Name> the Cryptic
 			}),
 			ach(15499, {	-- Shadowlands Keystone Master: Season Three
 				i(187682),	-- Wastewarped Deathwalker (MOUNT!)
 			}),
-			ach(15506),		-- Shadowlands Keystone Hero: Season Three
+			ach(15506),	-- Shadowlands Keystone Hero: Season Three
 			ach(15691, {	-- Cryptic Hero: Shadowlands Season 3
 				title(458),	-- <Name> the Cryptic Hero
 			}),
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		header(HEADERS.Achievement, SEASON_SHROUDED, bubbleDownSelf({
 			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
 		}, {
-			ach(15688),		-- Shadowlands Keystone Explorer: Season Four
+			ach(15688),	-- Shadowlands Keystone Explorer: Season Four
 			ach(15689, {	-- Shadowlands Keystone Conqueror: Season Four
 				title(465),	-- <Name> the Shrouded
 			}),

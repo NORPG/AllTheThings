@@ -13,10 +13,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(41020),		-- Combatant I: The War Within Season 2
-			ach(41021),		-- Combatant II: The War Within Season 2
-			ach(41022),		-- Challenger I: The War Within Season 2
-			ach(41023),		-- Challenger II: The War Within Season 2
+			ach(41020),	-- Combatant I: The War Within Season 2
+			ach(41021),	-- Combatant II: The War Within Season 2
+			ach(41022),	-- Challenger I: The War Within Season 2
+			ach(41023),	-- Challenger II: The War Within Season 2
 			ach(41047, {	-- Prized Weapons of Conquest
 				i(232615, {	-- Prized Gladiator's Coin Pouch
 					i(230852, {	-- Prized Gladiator's Weapon Token
@@ -31,18 +31,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 				}),
 			}),
-			ach(41016),		-- Rival I: The War Within Season 2
+			ach(41016),	-- Rival I: The War Within Season 2
 			ach(41017, {	-- Rival II: The War Within Season 2
 				ill(7640),	-- Jackpot (ILLUSION!)
 			}),
 			ach(41018, {	-- Duelist: The War Within Season 2
 				i(231638),	-- Prized Gladiator's Prestigious Cloak
 			}),
-			ach(41019),		-- Elite: The War Within Season 2
+			ach(41019),	-- Elite: The War Within Season 2
 			ach(41032, {	-- Gladiator: The War Within Season 2
 				i(229987),	-- Prized Gladiator's Fel Bat (MOUNT!)
 			}),
-			ach(41362),		-- Prized Gladiator's Fel Bat
+			ach(41362),	-- Prized Gladiator's Fel Bat
 			ach(41354, {	-- Prized Gladiator: The War Within Season 2
 				title(608),	-- Prized Gladiator <Name>
 			}),
@@ -147,27 +147,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(230127)),	-- Prized Warmonger's Spaulders
 					})),
 					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
-						bloody(525, i(230156)),		-- Prized Warmonger's Aegis
-						bloody(875, i(230142)),		-- Prized Warmonger's Battleaxe
+						bloody(525, i(230156)),	-- Prized Warmonger's Aegis
+						bloody(875, i(230142)),	-- Prized Warmonger's Battleaxe
 						bloody(1750, i(230149)),	-- Prized Warmonger's Battlestaff
 						bloody(1750, i(230151)),	-- Prized Warmonger's Broadsword
-						bloody(875, i(230144)),		-- Prized Warmonger's Carver
+						bloody(875, i(230144)),	-- Prized Warmonger's Carver
 						bloody(1225, i(230153)),	-- Prized Warmonger's Club
-						bloody(875, i(230161)),		-- Prized Warmonger's Crusher
+						bloody(875, i(230161)),	-- Prized Warmonger's Crusher
 						bloody(1225, i(230163)),	-- Prized Warmonger's Dagger
-						bloody(875, i(230164)),		-- Prized Warmonger's Dirk
-						bloody(525, i(230147)),		-- Prized Warmonger's Firebomb
+						bloody(875, i(230164)),	-- Prized Warmonger's Dirk
+						bloody(525, i(230147)),	-- Prized Warmonger's Firebomb
 						bloody(1750, i(230145)),	-- Prized Warmonger's Flameshot
-						bloody(875, i(230155)),		-- Prized Warmonger's Gavel
+						bloody(875, i(230155)),	-- Prized Warmonger's Gavel
 						bloody(1750, i(230150)),	-- Prized Warmonger's Greatsword
-						bloody(875, i(230154)),		-- Prized Warmonger's Hammer
+						bloody(875, i(230154)),	-- Prized Warmonger's Hammer
 						bloody(1225, i(230143)),	-- Prized Warmonger's Hatchet
 						bloody(1750, i(230157)),	-- Prized Warmonger's Impaler
-						bloody(875, i(230160)),		-- Prized Warmonger's Mace
+						bloody(875, i(230160)),	-- Prized Warmonger's Mace
 						bloody(1225, i(230162)),	-- Prized Warmonger's Scepter
 						bloody(1750, i(230158)),	-- Prized Warmonger's Spear
 						bloody(1750, i(230148)),	-- Prized Warmonger's Spire
-						bloody(875, i(230146)),		-- Prized Warmonger's Twinblade
+						bloody(875, i(230146)),	-- Prized Warmonger's Twinblade
 						bloody(1225, i(230159)),	-- Prized Warmonger's Wand
 					})),
 				}),

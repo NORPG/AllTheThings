@@ -409,10 +409,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		ach(40591, {	-- Khaz Algar Diplomat
 			-- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
 			-- Unfun fact the second: They never fixed the achievement, they just remade it.
-			-- crit(68907),		-- Council of Dornogal
-			-- crit(68908),		-- The Assembly of the Deeps
-			-- crit(68909),		-- Hallowfall Arathi
-			-- crit(68910),		-- The Severed Threads
+			-- crit(68907),	-- Council of Dornogal
+			-- crit(68908),	-- The Assembly of the Deeps
+			-- crit(68909),	-- Hallowfall Arathi
+			-- crit(68910),	-- The Severed Threads
             ["timeline"] = { REMOVED_11_0_7 },
             ["groups"] = {
                 iensemble(219110),	-- Vermillion Patron's Elegance

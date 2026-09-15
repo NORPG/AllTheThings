@@ -37,8 +37,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
 								["coord"] = { 40.8, 80.8, STORMHEIM },
 								["cost"] = {
-									{ "i", 139466, 1 },		-- Bindings of the Windlord (Left)
-									{ "i", 139468, 1 },		-- Bindings of the Windlord (Right)
+									{ "i", 139466, 1 },	-- Bindings of the Windlord (Left)
+									{ "i", 139468, 1 },	-- Bindings of the Windlord (Right)
 									{ "i", 124444, 10 },	-- 10x Infernal Brimstone
 								},
 							}),
@@ -49,8 +49,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["coord"] = { 40.8, 80.8, STORMHEIM },
 								["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
 								["cost"] = {
-									{ "i", 139466, 1 },		-- Bindings of the Windlord (Left)
-									{ "i", 139468, 1 },		-- Bindings of the Windlord (Right)
+									{ "i", 139466, 1 },	-- Bindings of the Windlord (Left)
+									{ "i", 139468, 1 },	-- Bindings of the Windlord (Right)
 								},
 							}),
 							q(43560, {	-- Audience with the Windlord
@@ -1186,7 +1186,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 54.3, 41.0, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(130329, {	-- Gloves of Artful Dodging
-								["cost"] = 746,		-- 7s 46c
+								["cost"] = 746,	-- 7s 46c
 							}),
 							i(130325, {	-- Shoulder of Artful Dodging
 								["cost"] = 1093,	-- 10s 93c
@@ -1195,7 +1195,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 1450,	-- 14s 50c
 							}),
 							i(7676, {	-- Thistle Tea
-								["cost"] = 120,		-- 1s 20c
+								["cost"] = 120,	-- 1s 20c
 							}),
 						},
 					}),

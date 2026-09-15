@@ -302,7 +302,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					["_npcs"] = { 155583 },
 				}),
 			}),
-			ach(13557),		-- Rustbolt Rebellion
+			ach(13557),	-- Rustbolt Rebellion
 			ach(13553, {	-- The Mechagonian Threat (A)
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 				["races"] = ALLIANCE_ONLY,

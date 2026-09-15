@@ -200,15 +200,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
 									q(54306, {	-- Mission Report: Arom's Stand
-										["provider"] = { "n", 138704 },		-- Mission Command Table
+										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 									}),
 								},
 							}),
 							q(54307, {	-- Outpost Upgrade: Arom's Stand
-								["sourceQuests"] = { 54306 },		-- Mission Report: Arom's Stand
-								["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+								["sourceQuests"] = { 54306 },	-- Mission Report: Arom's Stand
+								["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 								["coord"] = { 69.4, 27.0, BORALUS },
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
 									q(52962, {	-- Mission Report: Mistvine Ledge
-										["provider"] = { "n", 138704 },		-- Mission Command Table
+										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
 									q(53306, {	-- Mission Report: Jungle Escort
-										["provider"] = { "n", 138704 },		-- Mission Command Table
+										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
 									q(52801, {	-- Mission Report: Veiled Grotto
-										["provider"] = { "n", 138704 },		-- Mission Command Table
+										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
@@ -424,8 +424,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								},
 							}),
 							q(52802, {	-- Veiled Grotto
-								["sourceQuests"] = { 52801 },		-- Mission Report: Veiled Grotto
-								["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+								["sourceQuests"] = { 52801 },	-- Mission Report: Veiled Grotto
+								["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 								["coord"] = { 69.4, 27.0, BORALUS },
 								["races"] = ALLIANCE_ONLY,
 							}),

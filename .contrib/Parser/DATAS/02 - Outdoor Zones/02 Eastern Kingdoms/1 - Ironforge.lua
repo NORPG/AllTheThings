@@ -1490,7 +1490,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 6113,	-- Vejrek
 						}),
 						-- #if BEFORE CATA
-						recipe(71),		-- Defensive Stance
+						recipe(71),	-- Defensive Stance
 						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
@@ -1857,7 +1857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1205),	-- Melon Juice
 						-- i(1645),	-- Moonberry Juice
 						i(8766),	-- Morning Glory Dew
-						i(159),		-- Refreshing Spring Water
+						i(159),	-- Refreshing Spring Water
 						i(1708),	-- Sweet Nectar
 						i(2723),	-- Bottle of Dalaran Noir
 						i(2594),	-- Flagon of Dwarven Honeymead/Mead
@@ -2343,7 +2343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2287),	-- Haunch of Meat
 						i(3770),	-- Mutton Chop
 						i(8952),	-- Roasted Quail
-						i(117),		-- Tough Jerky
+						i(117),	-- Tough Jerky
 						i(3771),	-- Wild Hog Shank
 					},
 				}),

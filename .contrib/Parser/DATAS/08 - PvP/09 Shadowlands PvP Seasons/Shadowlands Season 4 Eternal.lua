@@ -15,12 +15,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(15609),		-- Combatant I: Shadowlands Season 4
-			ach(15610),		-- Combatant II: Shadowlands Season 4
-			ach(15600),		-- Challenger I: Shadowlands Season 4
-			ach(15601),		-- Challenger II: Shadowlands Season 4
-			ach(15602),		-- Rival I: Shadowlands Season 4
-			ach(15603),		-- Rival II: Shadowlands Season 4
+			ach(15609),	-- Combatant I: Shadowlands Season 4
+			ach(15610),	-- Combatant II: Shadowlands Season 4
+			ach(15600),	-- Challenger I: Shadowlands Season 4
+			ach(15601),	-- Challenger II: Shadowlands Season 4
+			ach(15602),	-- Rival I: Shadowlands Season 4
+			ach(15603),	-- Rival II: Shadowlands Season 4
 			ach(15604, {	-- Duelist: Shadowlands Season 4
 				ill(6378),	-- Eternal Flux (ILLUSION!)
 				i(192205),	-- Eternal Gladiator's Prestigious Cloak
@@ -31,7 +31,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			ach(15605, {	-- Gladiator: Shadowlands Season 4
 				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
 			}),
-			ach(15612),		-- Eternal Gladiator's Soul Eater
+			ach(15612),	-- Eternal Gladiator's Soul Eater
 			ach(15606, {	-- Eternal Gladiator: Shadowlands Season 4
 				title(461),	-- Eternal Gladiator <Name>
 			}),

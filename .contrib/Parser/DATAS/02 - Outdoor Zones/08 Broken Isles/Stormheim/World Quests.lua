@@ -20,7 +20,7 @@ root(ROOTS.Zones, {
 				q(41451),	-- Assault on Hrydshal
 				q(46008),	-- Balnazoth (Invasion WQ)
 				q(42025, {	-- Bareback Brawl
-					ach(11476),		-- Saddle Sore
+					ach(11476),	-- Saddle Sore
 				}),
 				q(45072),	-- Barrels o' Fun
 				petbattle(q(41935)),	-- Beasts of Burden
