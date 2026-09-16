@@ -171,6 +171,8 @@ ExportDB.OPAQDB = {
 	49928,	-- Heritage of the Void
 	58435,	-- Heritage of the Vulpera
 	53721,	-- Heritage of the Zandalari
+	82771,	-- Heritage of the Earthen
+	94464,	-- Heritage of the Haranir
 	-- etc.
 
 	-- Account Unlocks

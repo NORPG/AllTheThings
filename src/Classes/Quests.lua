@@ -548,6 +548,7 @@ local CollectibleAsQuest = function(t)
 end
 
 local function CollectibleAsLocked(t, locked)
+	local questID = t.questID
 	return
 	-- Collecting Locked Quests
 	app.Settings.Collectibles.QuestsLocked
@@ -556,8 +557,23 @@ local function CollectibleAsLocked(t, locked)
 	-- not a repeatable quest
 	and not t.repeatable
 	and
-	-- Not Locked by a OPA/AW Quest
-	not AccountWideLockedQuestsCache[t.questID]
+	(
+		-- Not Locked by a OPA/AW Quest
+		not AccountWideLockedQuestsCache[questID]
+		or
+		(
+			-- one-time and collected on any character
+			OneTimeQuests[questID] ~= false
+			and
+			(
+				-- collectible by any character
+				app.Settings.AccountWide.Quests
+				or
+				-- one-time quest collected as this character
+				OneTimeQuests[questID] == app.GUID
+			)
+		)
+	)
 	and
 	(
 		-- debug/account mode
@@ -627,7 +643,7 @@ local function GetQuestIndicator(t)
 		-- they're any other type of Quest sub-class, but with an additional constraint
 		-- I really don't want to duplicate every Quest class with a OTQ indicator variant.
 		-- I don't see anyway to utilize the current base Class functionality to handle this requirement
-		elseif OneTimeQuests[questID] then
+		elseif OneTimeQuests[questID] ~= nil then
 			return app.asset("Interface_Quest_Arrow");
 		end
 		local timeRemaining = t.timeRemaining
