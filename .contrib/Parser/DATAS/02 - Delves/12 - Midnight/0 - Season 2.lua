@@ -240,7 +240,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 				}),
 				filter(MISC, {
-					i(276547),	-- Afflicted Soul
+					i(276547, {	-- Afflicted Soul
+						["description"] = "Use before starting your Prey quest to work properly.",
+					}),
 					i(279290, {	-- Fang Lover's (CI!)
 						["providers"] = {
 							{ "o",584518 },	-- Bountiful Heavy Trunk (verified)

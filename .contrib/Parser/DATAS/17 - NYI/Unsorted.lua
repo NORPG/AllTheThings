@@ -573,7 +573,6 @@ root(ROOTS.Unsorted, {
 			i(276624),	-- Overflowing Hash'ura Trove
 			i(276800),	-- [PH]Writhes Mount - Yellow
 			i(277157),	-- Barnacle-Encrusted Chest
-			i(277192),	-- Umbral Ashes
 			i(277261),	-- [PH] Pygmy Owl
 			i(277266),	-- The First Troll Legend
 			i(277270),	-- Kirin Tor Kitty

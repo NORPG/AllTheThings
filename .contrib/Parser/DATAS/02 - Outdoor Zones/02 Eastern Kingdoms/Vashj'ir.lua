@@ -1299,8 +1299,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qs"] = 55186,	-- Lady La-La's Necklace (QS!)
 							["cr"] = 41017,	-- Gilblin Collector
 							["qis"] = {
-								55187,	-- Lady La-La's Medallion
-								55188,	-- Medallion Fragment
+								55187,	-- Lady La-La's Medallion (QI!)
+								55188,	-- Medallion Fragment (QI!)
 							},
 							["groups"] = {
 								i(59783),	-- Damselfish Shoulderguards
