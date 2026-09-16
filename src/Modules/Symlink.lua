@@ -511,11 +511,11 @@ local ResolveFunctions = {
 	end,
 };
 
+--[[ TODO: not used anymore, likely can be removed soon
 -- Replace achievementy_criteria function if criteria API doesn't exist
 if GetAchievementNumCriteria then
 	local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo;
 	-- Instruction to query all criteria of an Achievement via the in-game APIs and generate Criteria data into the most-accurate Sources
-	-- TODO: not used anymore, likely can be removed soon
 	ResolveFunctions.achievement_criteria = function(finalized, searchResults, o)
 		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
 		local achievementID = o.achievementID;
@@ -606,7 +606,7 @@ if GetAchievementNumCriteria then
 			end
 		end
 	end
-end
+end--]]
 
 -- Subroutine Logic Cache
 local SubroutineCache = {
@@ -815,7 +815,7 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 end;
 local NonSelectCommands = {
 	finalize = true,
-	achievement_criteria = true,
+	-- achievement_criteria = true,
 	sub = true,
 	myModID = true,
 	modID = true,
@@ -942,7 +942,7 @@ app.ResolveSymbolicLink = ResolveSymbolicLink
 if app.__perf then
 	app.__perf.AutoCaptureTable(ResolveFunctions, "Symlink.ResolveFunctions");
 end
-
+--[[ -- achievment_criteria symlink is obsolete
 local function ResolveSymlinkGroupAsync(group)
 	-- app.PrintDebug("RSGa",group.hash)
 	local groups = ResolveSymbolicLink(group);
@@ -970,7 +970,7 @@ app.FillAchievementCriteriaAsync = function(o)
 
 	-- app.PrintDebug("resolve achievement_criteria",o.hash)
 	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
-end
+end--]]
 
 local function GetRelativeFieldInSet(group, field, set)
 	if group then

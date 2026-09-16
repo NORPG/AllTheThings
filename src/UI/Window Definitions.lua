@@ -1572,8 +1572,7 @@ app.AddEventHandler("OnInit", function()
 		windowSettings.CurrentInstance = nil;
 		windowSettings.MiniList = oldMiniListData;
 	end
-end)
-app.AddEventHandler("OnInit", function()
+	
 	-- Clean out non-visible dynamic windows and cache the rest
 	local dynamicWindows = {};
 	for name, settings in pairs(AllWindowSettings) do

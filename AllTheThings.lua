@@ -1331,7 +1331,7 @@ function app:GetDatabaseRoot()
 end
 
 end	-- Dynamic/Main Data
-
+--[[ -- achievement_criteria symlink is obsolete
 local function PrePopulateAchievementSymlinks()
 	local achCache = app.GetRawFieldContainer("achievementID")
 	-- app.PrintDebug("FillAchSym")
@@ -1353,7 +1353,7 @@ local function PrePopulateAchievementSymlinks()
 	end
 	-- app.PrintDebug("Done:FillAchSym")
 end
-app.AddEventHandlerOnce("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)
+app.AddEventHandlerOnce("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)--]]
 
 app.AddEventHandler("OnReady", function()
 	-- warning about debug logging in case it sneaks in we can realize quicker
