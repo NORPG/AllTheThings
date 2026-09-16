@@ -51,12 +51,6 @@ local EncounterToCRS = {
 	},
 };
 
------- All Bosses crs ------
-local ALL_BOSSES = {};
-for k,v in pairs(EncounterToCRS) do
-	ALL_BOSSES = appendGroups(v, ALL_BOSSES);
-end
-
 ------ EncounterToLoot ------
 local EncounterToLoot = {
 	[TARRAGRUE] = {

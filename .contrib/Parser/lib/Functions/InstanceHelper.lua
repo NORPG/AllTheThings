@@ -18,7 +18,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		if not t and type(id) ~= "number" then
 			error("Missing id for boss. Got instead: ",id)
 		end
-		local encounter = e(id, t)
+		local encounter = (helper.TreatBossesAsNpcOnly and n or e)(id, t)
 		encounter.crs = crs[id]
 		return encounter
 	end
@@ -169,7 +169,6 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	helper.ZoneDrops = ZoneDrops
 	helper.RawAllBosses = RawAllBosses
 	helper.WithUpgrades = WithUpgrades
-	helper.ALL_BOSSES = ALL_BOSSES
 	return helper
 end
 
