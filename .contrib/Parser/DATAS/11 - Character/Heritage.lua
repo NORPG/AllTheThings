@@ -80,6 +80,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 144152 },	-- Moira Thaurissan
 				["coord"] = { 56.6, 31.8, 1186 },
 				["lvl"] = 50,
+				["sourceAchievements"] = { 12510, 12509 },	-- Ready for War [A/H]
+				["lockCriteria"] = { 1, "achID", 13076 },	-- Heritage of the Dark Iron
 				["groups"] = {
 					ach(13076),	-- Heritage of the Dark Iron
 					i(161008),	-- Dark Iron Helm
@@ -356,6 +358,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 224790 },	-- Dawn <The Awakened>
 				["coord"] = { 29.0, 59.6, DORNOGAL },
 				["lvl"] = 50,
+				["lockCriteria"] = { 1, "achID", 40309 },	-- Heritage of the Earthen
 				["groups"] = {
 					ach(40309),	-- Heritage of the Earthen
 					------ Dornogal Set ------
@@ -582,6 +585,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["groups"] = {
 			q(94464, {	-- Heritage of the Haranir
 				["description"] = "Pops up when you hit level 50.",
+				["lockCriteria"] = { 1, "achID", 61942 },	-- Heritage of the Haranir
 				["groups"] = {
 					ach(61942),	-- Heritage of the Haranir
 					-- Heritage of Harandar: Har'alnor
@@ -777,6 +781,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 150941 },	-- Katherine Proudmoore
 				["coord"] = { 67.8, 21.8, BORALUS },
 				["lvl"] = 50,
+				["sourceAchievements"] = {
+					12891,	-- A Nation United
+					13467,	-- Tides of Vengeance (A)
+					13466,	-- Tides of Vengeance (H)
+				},
+				["lockCriteria"] = { 1, "achID", 13504 },	-- Heritage of the Kul Tirans
 				["groups"] = {
 					ach(13504),	-- Heritage of the Kul Tirans
 					i(165002),	-- Kul'Tiran Bicorne
@@ -798,6 +808,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 130993 },	-- Captain Fareeya
 				["coord"] = { 42.96, 24.16, 940 },
 				["lvl"] = 50,
+				["sourceAchievements"] = { 12066 },	-- You Are Now Prepared!
+				["lockCriteria"] = { 1, "achID", 12414 },	-- Heritage of the Lightforged
 				["groups"] = {
 					ach(12414),	-- Heritage of the Lightforged
 					i(156699),	-- Lightforged Gorget
@@ -819,6 +831,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 143845 },	-- Overlord Geya'rah
 				["coord"] = { 70.6, 44.6, ORGRIMMAR },
 				["lvl"] = 50,
+				["sourceAchievements"] = { 12510, 12509 },	-- Ready for War [A/H]
+				["lockCriteria"] = { 1, "achID", 13077 },	-- Heritage of the Mag'har
 				["groups"] = {
 					ach(13077),	-- Heritage of the Mag'har
 					i(161050),	-- Blackrock Clan Helm
@@ -857,6 +871,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 73.0, 33.4, MECHAGON },
 				["maps"] = { MECHAGON_CITY },
 				["lvl"] = 50,
+				["sourceAchievements"] = { 13553, 13700 },	-- The Mechagonian Threat [A/H]
+				["lockCriteria"] = { 1, "achID", 14014 },	-- Heritage of the Mechagnome
 				["groups"] = {
 					ach(14014),	-- Heritage of the Mechagnome
 					i(173961),	-- Mechagnome Heritage Helmet
@@ -960,6 +976,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 131326 },	-- First Arcanist Thalyssra
 				["coord"] = { 59.4, 85.4, SURAMAR },
 				["lvl"] = 50,
+				["sourceAchievements"] = { 11340 },	-- Insurrection
+				["lockCriteria"] = { 1, "achID", 12413 },	-- Heritage of the Nightborne
 				["groups"] = {
 					ach(12413),	-- Heritage of the Nightborne
 					i(156675),	-- Shal'dorei Crown
@@ -1687,6 +1705,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 131345 },	-- Alleria Windrunner
 				["coord"] = { 28.6, 22.3, TELOGRUS_RIFT },
 				["lvl"] = 50,
+				["sourceAchievements"] = { 12066 },	-- You Are Now Prepared!
+				["lockCriteria"] = { 1, "achID", 12291 },	-- Heritage of the Void
 				["groups"] = {
 					ach(12291),	-- Heritage of the Void
 					i(156690),	-- Ren'dorei Helm
@@ -1709,6 +1729,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 124108 },	-- Hagashi <Innkeeper>
 				["coord"] = { 56.8,	49.8, VOLDUN },
 				["lvl"] = 50,
+				["sourceAchievements"] = { 12066 },	-- Secrets in the Sands
+				["lockCriteria"] = { 1, "achID", 14002 },	-- Heritage of the Vulpera
 				["groups"] = {
 					ach(14002),	-- Heritage of the Vulpera
 					i(173968),	-- Vulpera Heritage Shawl
@@ -1807,6 +1829,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 146335 },	-- Queen Talanji
 				["coord"] = { 42.2, 9.4, DAZARALOR },
 				["lvl"] = 50,
+				["sourceAchievements"] = {
+					12479,	-- Zandalar Forever!
+					13467,	-- Tides of Vengeance (A)
+					13466,	-- Tides of Vengeance (H)
+				},
+				["lockCriteria"] = { 1, "achID", 13503 },	-- Heritage of the Zandalari
 				["groups"] = {
 					ach(13503),	-- Heritage of the Zandalari
 					i(164993),	-- Zandalari Mask
