@@ -1,10 +1,11 @@
 -- See Reference: https://www.wow-petopia.com/classic_bc/abilities.php
 -- #if BEFORE 3.0.2
-profession(261, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Beast Training
+profession(261, {	-- Beast Training
 	["description"] = "Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",
+	["timeline"] = { REMOVED_3_0_2 },
 	["classes"] = { HUNTER },
 	["lvl"] = 10,
-	["groups"] = {
+	["groups"] = bubbleDown({ ["_drop"] = { "requireSkill" } }, {
 		{
 			["recipeID"] = 24493,	-- Arcane Resistance [Rank 1]
 			["rank"] = 1,
@@ -1405,6 +1406,6 @@ profession(261, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Beast Trai
 			},
 			["lvl"] = 60,
 		}),
-	},
-}));
+	}),
+});
 -- #endif
