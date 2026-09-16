@@ -1532,6 +1532,7 @@ local function ApplySettingsForWindow(self, windowSettings)
 		self.data.progress = windowSettings.Progress;
 		self.data.total = windowSettings.Total;
 	end
+	self:SetVisible(windowSettings.visible)
 	self.RecordSettings = oldRecordSettings;
 end
 local Backdrops = {
@@ -1614,17 +1615,6 @@ local function ReclaimSettingsForWindow(self)
 	if windowSettings then
 		AllWindowSettings[self.Suffix] = windowSettings;
 	end
-end
-local function RecordSettingsForWindow(self)
-	local windowSettings = self.Settings;
-	if windowSettings then
-		BuildSettingsForWindow(self, windowSettings);
-		if self.OnRecordSettings then
-			self:OnRecordSettings(windowSettings)
-		end
-		app.Settings.SetWindowSettingsToProfile(self.Suffix, windowSettings)
-	end
-	return windowSettings;
 end
 local function LoadSettingsForWindow(self)
 	if not AllWindowSettings then return; end
@@ -1930,7 +1920,17 @@ local FieldDefaults = {
 			end
 		end
 	end,
-	RecordSettings = RecordSettingsForWindow,
+	RecordSettings = function(self)
+		local windowSettings = self.Settings;
+		if windowSettings then
+			BuildSettingsForWindow(self, windowSettings);
+			if self.OnRecordSettings then
+				self:OnRecordSettings(windowSettings)
+			end
+			app.Settings.SetWindowSettingsToProfile(self.Suffix, windowSettings)
+		end
+		return windowSettings;
+	end,
 	SetVisible = function(self, show)
 		if show then
 			self:Show();
