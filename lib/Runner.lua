@@ -100,19 +100,25 @@ local CoroutineCache = setmetatable({}, {
 		return co;
 	end
 });
+local InUse = {} -- co -> name, while checked out
 local function GetCoroutine(func, name)
-	local co = CoroutineCache[func];
+	local co = CoroutineCache[func]
+	if InUse[co] then
+		-- pooled co already checked out elsewhere; make a one-off instead of colliding
+		co = c_create(function() while true do func() c_yield(false) end end)
+		app.report("Pooled coroutine re-use warning!",func,name)
+	end
 	-- Mark this name/coroutine until the coroutine is returned
-	CoroutineCache[name] = true;
-	CoroutineCache[co] = name;
-	return co;
+	CoroutineCache[name] = true
+	InUse[co] = name
+	return co
 end
 -- Allows freeing a coroutine and the respective name used to create it initially
 local function ReturnCoroutine(co)
-	local name = CoroutineCache[co];
+	local name = InUse[co]
 	-- app.PrintDebug("CO:Return",name,co)
-	CoroutineCache[name] = nil;
-	CoroutineCache[co] = nil;
+	CoroutineCache[name] = nil
+	InUse[co] = nil
 end
 -- We will make this a weak-value cache, such that the Push methods can be cleaned up/recreated if needed
 local _PushQueue = setmetatable({}, {__mode = "v",})
