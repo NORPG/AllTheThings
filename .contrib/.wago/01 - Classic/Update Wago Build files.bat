@@ -13,7 +13,6 @@ call :download ItemEffect
 call :download ItemModifiedAppearance
 call :download ItemSearchName
 call :download ModifierTree
-call :download SkillLineAbility
 call :downloadcleaned SpellEffect
 call :download TaxiNodes
 call :download UiMap
