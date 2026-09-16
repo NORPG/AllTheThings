@@ -1572,7 +1572,7 @@ app.AddEventHandler("OnInit", function()
 		windowSettings.CurrentInstance = nil;
 		windowSettings.MiniList = oldMiniListData;
 	end
-	
+
 	-- Clean out non-visible dynamic windows and cache the rest
 	local dynamicWindows = {};
 	for name, settings in pairs(AllWindowSettings) do
@@ -2395,7 +2395,6 @@ local function BuildWindow(suffix)
 			window:Save()
 		end,
 	};
-	window:RegisterEvent("PLAYER_LOGOUT");
 	if definition.Debugging then window:SetScript("OnEvent", OnEventDebugging); end
 	local onEvent = window.OnEvent;
 	window:HookScript("OnEvent", function(o, e, ...)
@@ -2768,9 +2767,6 @@ local function BuildWindow(suffix)
 		handlers.BAG_UPDATE_DELAYED = delayedRefresh;
 		handlers.QUEST_WATCH_UPDATE = delayedRefresh;
 		handlers.QUEST_ITEM_UPDATE = delayedRefresh;
-		window:RegisterEvent("QUEST_WATCH_UPDATE");
-		window:RegisterEvent("QUEST_ITEM_UPDATE");
-		window:RegisterEvent("BAG_UPDATE_DELAYED");
 
 		-- this is horrid, essentially ANY interaction with the quest log (clicking a quest, etc.) causes a
 		-- spam of coroutine creation across many ATT windows
@@ -2780,7 +2776,6 @@ local function BuildWindow(suffix)
 			window:DelayedUpdate();
 		end;
 		handlers.QUEST_LOG_UPDATE = delayedUpdate;
-		window:RegisterEvent("QUEST_LOG_UPDATE");
 	end
 	if not definition.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
 		-- Pet Battles were added with MOP and we want all of our windows to hide when participating.
@@ -2799,8 +2794,6 @@ local function BuildWindow(suffix)
 				window:Show();
 			end
 		end
-		window:RegisterEvent("PET_BATTLE_OPENING_START");
-		window:RegisterEvent("PET_BATTLE_CLOSE");
 	end
 
 	-- Add command processing
@@ -2816,6 +2809,11 @@ local function BuildWindow(suffix)
 	end
 	if definition.OnInit then
 		definition.OnInit(window, handlers);
+	end
+	-- register the handlers for the window now that all handlers should exist in the table
+	local registerEvent = window.RegisterEvent
+	for event in pairs(handlers) do
+		pcall(registerEvent, window, event)
 	end
 	if not window.SettingsName then
 		window.SettingsName = definition.SettingsName
