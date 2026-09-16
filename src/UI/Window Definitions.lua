@@ -2807,13 +2807,13 @@ local function BuildWindow(suffix)
 	else
 		window.ProcessCommand = window.Toggle;
 	end
-	if definition.OnInit then
-		definition.OnInit(window, handlers);
-	end
-	-- register the handlers for the window now that all handlers should exist in the table
+	-- register the default handlers for the window
 	local registerEvent = window.RegisterEvent
 	for event in pairs(handlers) do
 		pcall(registerEvent, window, event)
+	end
+	if definition.OnInit then
+		definition.OnInit(window, handlers);
 	end
 	if not window.SettingsName then
 		window.SettingsName = definition.SettingsName

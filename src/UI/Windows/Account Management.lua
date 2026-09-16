@@ -2480,6 +2480,8 @@ app:CreateWindow("Account Management", {
 
 		-- Register for Addon Messaging
 		C_ChatInfo.RegisterAddonMessagePrefix(AddonMessagePrefix);
+		pcall(self.RegisterEvent, self, "BN_CHAT_MSG_ADDON");
+		self:RegisterEvent("CHAT_MSG_ADDON");
 		if settings.AutoSync then
 			BroadcastMessage("AutoSync", "check," .. GetSyncIdentityToken());
 		else
