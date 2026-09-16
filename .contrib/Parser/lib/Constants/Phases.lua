@@ -3564,9 +3564,9 @@ CurrentClassicExpansion = {
 };
 FOREVER_PHASE_ONE = createClassicPhase({
 	readable = "Forever beta - Phase 1",
-	originalTimelines = { "1.60.0" },
-	minimumBuildVersion = 16000,
-	buildVersion = 16000,
+	originalTimelines = { "1.60.1" },
+	minimumBuildVersion = 16001,
+	buildVersion = 16001,
 	phaseID = 600,
 	text = {
 		en = "beta - Phase 1",
@@ -3597,9 +3597,9 @@ FOREVER_PHASE_ONE = createClassicPhase({
 });
 FOREVER_PHASE_TWO = createClassicPhase({
 	readable = "Forever beta - Phase 2",
-	originalTimelines = { "1.60.0" },
-	minimumBuildVersion = 16000,
-	buildVersion = 16000,
+	originalTimelines = { "1.60.1" },
+	minimumBuildVersion = 16001,
+	buildVersion = 16001,
 	phaseID = 601,
 	text = {
 		en = "beta - Phase 2",
