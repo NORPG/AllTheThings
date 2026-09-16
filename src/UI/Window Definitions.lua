@@ -1494,46 +1494,6 @@ end
 
 -- Window Creation
 local AllWindowSettings, AllSettingsApplied;
-local function ApplySettingsForWindow(self, windowSettings)
-	local oldRecordSettings = self.RecordSettings;
-	self.RecordSettings = app.EmptyFunction;
-	self:SetMovable(windowSettings.movable);
-	self:SetResizable(windowSettings.resizable);
-	self.isLocked = windowSettings.isLocked;
-	if windowSettings.scale then self:SetScale(windowSettings.scale); end
-	if windowSettings.movable then
-		self:ClearAllPoints();
-		if windowSettings.x then
-			local relativeTo = windowSettings.relativeTo;
-			if relativeTo and not _G[relativeTo] then relativeTo = UIParent; end
-			self:SetPoint(windowSettings.point or "CENTER", relativeTo or UIParent, windowSettings.relativePoint or "CENTER", windowSettings.x, windowSettings.y);
-		else
-			self:SetPoint("CENTER", UIParent, "CENTER");
-		end
-	end
-	if windowSettings.width then
-		self:SetSize(windowSettings.width, windowSettings.height);
-	end
-	if windowSettings.alpha then
-		self:SetAlpha(windowSettings.alpha);
-	end
-	if windowSettings.backdrop then
-		self:SetBackdrop(windowSettings.backdrop);
-	end
-	if windowSettings.backdropColor then
-		local r, g, b, a = unpack(windowSettings.backdropColor);
-		self:SetBackdropColor(r or 0, g or 0, b or 0, a or 0);
-	end
-	if windowSettings.borderColor then
-		local r, g, b, a = unpack(windowSettings.borderColor);
-		self:SetBackdropBorderColor(r or 0, g or 0, b or 0, a or 0);
-	end
-	if windowSettings.Progress and self.data then
-		self.data.progress = windowSettings.Progress;
-		self.data.total = windowSettings.Total;
-	end
-	self.RecordSettings = oldRecordSettings;
-end
 local Backdrops = {
 	default = {
 		bgFile = 137056,
@@ -1547,37 +1507,20 @@ local Backdrops = {
 		insets = { left = 0, right = 0, top = 0, bottom = 0 }
 	},
 }
-local function BuildDefaultsForWindow(self, fromSettings)
-	local defaults = {
-		backdrop = app.CloneDictionary(Backdrops.default),
-		resizable = true,
-		visible = false,
-		movable = true,
-		alpha = 1,
-		x = 0,
-		y = 0,
-		width = 300,
-		height = 300,
-	};
-	if app.Settings and app.Settings._Initialize then
-		defaults.scale = app.Settings:GetTooltipSetting(self.Suffix == "Prime" and "MainListScale" or "MiniListScale") or 1;
-		local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = app.Settings.GetWindowColors()
-		defaults.backdropColor = { rBg, gBg, bBg, aBg };
-		defaults.borderColor = { rBd, gBd, bBd, aBd };
-	else
-		-- TODO: this shouldn't be possible or allowed!
-		app.PrintDebug(self.Suffix, "window is being created before Settings are initialized!! Using hardcoded defaults.");
-		defaults.scale = 1;
-		defaults.backdropColor = { 0, 0, 0, 1 };
-		defaults.borderColor = { 1, 1, 1, 1 };
-	end
-	if fromSettings then
-		for key,value in pairs(fromSettings) do
-			defaults[key] = value;
-		end
-	end
-	return defaults;
-end
+local DefaultWindowSettings = {
+	backdrop = Backdrops.default,
+	resizable = true,
+	visible = false,
+	movable = true,
+	alpha = 1,
+	x = 0,
+	y = 0,
+	width = 300,
+	height = 300,
+	scale = 1,
+	backdropColor = { 0, 0, 0, 1 },
+	borderColor = { 1, 1, 1, 1 },
+}
 local function BuildSettingsForWindow(self, windowSettings)
 	local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
 	if xOfs then
@@ -1629,18 +1572,10 @@ local function LoadSettingsForWindow(self)
 	-- - Profiles control settings as they currently do
 	app.Settings.GetWindowSettingsFromProfile(name, settings)
 	self.Settings = settings;
-	self:Load(settings);
-	local hideBorders = app.Settings:GetTooltipSetting("Window:HideBorders")
-	self:SetContainerPoints(hideBorders)
-	self:SetCloseButtonPoints(hideBorders)
-	self:SetScrollBarPoints(hideBorders)
-	self:SetGripPoints(hideBorders)
-	self:SetBackgroundColor()
+	self:Load();
 end
-app.AddEventHandler("OnSavedVariablesAvailable", function()
-	if AllWindowSettings then
-		return;
-	end
+app.AddEventHandler("OnInit", function()
+	if AllWindowSettings then return end
 
 	-- Setup the Saved Variables if they aren't already.
 	local savedVariables = AllTheThingsSavedVariables;
@@ -1686,7 +1621,7 @@ app.AddEventHandler("OnInit", function()
 		dynamicWindows[name] = nil;
 	end
 
-	-- Okay, now load Prime settings last.
+	-- Okay, now load Prime settings last since Prime Load triggers Classic Dynamic window stuff
 	app.Windows.Prime = primeWindow;
 	LoadSettingsForWindow(primeWindow);
 	AllSettingsApplied = true;
@@ -1929,6 +1864,85 @@ local FieldDefaults = {
 			app.Settings.SetWindowSettingsToProfile(self.Suffix, windowSettings)
 		end
 		return windowSettings;
+	end,
+	ApplyWindowSettings = function(self, windowSettings)
+		local oldRecordSettings = self.RecordSettings
+		self.RecordSettings = app.EmptyFunction
+
+		windowSettings = windowSettings or self.Settings
+		self:SetMovable(windowSettings.movable);
+		self:SetResizable(windowSettings.resizable);
+		self.isLocked = windowSettings.isLocked;
+		if windowSettings.scale then self:SetScale(windowSettings.scale); end
+		if windowSettings.movable then
+			self:ClearAllPoints();
+			if windowSettings.x then
+				local relativeTo = windowSettings.relativeTo;
+				if relativeTo and not _G[relativeTo] then relativeTo = UIParent; end
+				self:SetPoint(windowSettings.point or "CENTER", relativeTo or UIParent, windowSettings.relativePoint or "CENTER", windowSettings.x, windowSettings.y);
+			else
+				self:SetPoint("CENTER", UIParent, "CENTER");
+			end
+		end
+		if windowSettings.width then
+			self:SetSize(windowSettings.width, windowSettings.height);
+		end
+		if windowSettings.alpha then
+			self:SetAlpha(windowSettings.alpha);
+		end
+		if windowSettings.backdrop then
+			self:SetBackdrop(windowSettings.backdrop);
+		end
+		if windowSettings.backdropColor then
+			local r, g, b, a = unpack(windowSettings.backdropColor);
+			self:SetBackdropColor(r or 0, g or 0, b or 0, a or 0);
+		end
+		if windowSettings.borderColor then
+			local r, g, b, a = unpack(windowSettings.borderColor);
+			self:SetBackdropBorderColor(r or 0, g or 0, b or 0, a or 0);
+		end
+		if windowSettings.Progress and self.data then
+			self.data.progress = windowSettings.Progress;
+			self.data.total = windowSettings.Total;
+		end
+
+		self.RecordSettings = oldRecordSettings;
+	end,
+	ApplyGlobalSettings = function(self)
+		-- ideally the window sequence would never try to pre-call settings before they exist...
+		local appsettings = app.Settings
+		if not appsettings then return end
+
+		local oldRecordSettings = self.RecordSettings
+		self.RecordSettings = app.EmptyFunction
+
+		local hideBorders = appsettings:GetTooltipSetting("Window:HideBorders")
+		self:SetContainerPoints(hideBorders)
+		self:SetCloseButtonPoints(hideBorders)
+		self:SetScrollBarPoints(hideBorders)
+		self:SetGripPoints(hideBorders)
+		self:SetBackgroundColor()
+
+		self.RecordSettings = oldRecordSettings
+	end,
+	Load = function(self)
+		local windowSettings = self.Settings
+		if not windowSettings then
+			app.report("Window Loaded without Settings!",self.Suffix)
+			windowSettings = {}
+			self.Settings = windowSettings
+		end
+		setmetatable(windowSettings, { __index = DefaultWindowSettings })
+		if self.OnLoad then self:OnLoad(windowSettings) end
+		self:ApplyWindowSettings()
+		self:ApplyGlobalSettings()
+	end,
+	Save = function(self)
+		-- Save Settings on Logout
+		local windowSettings = self:RecordSettings()
+		if windowSettings and self.OnSave then
+			self:OnSave(windowSettings)
+		end
 	end,
 	SetVisible = function(self, show)
 		if show then
@@ -2287,8 +2301,8 @@ local ReservedFields = {
 	Defaults = true,
 	OnInit = true,
 	OnCommand = true,
-	OnLoad = true,
-	OnSave = true,
+	Load = true,
+	Save = true,
 	OnRebuild = true,
 	OnRefresh = true,
 	OnUpdate = true,
@@ -2308,7 +2322,7 @@ local function ShowPrecallShowWindows()
 		app.Windows[k]:Show()
 	end
 end
-app.AddEventHandlerOnce("OnRefreshCollectionsDone", ShowPrecallShowWindows)
+app.AddEventHandlerOnce("OnLoad", ShowPrecallShowWindows)
 local function SetupCommandsForDefinition(definition)
 	if not definition or definition.BuiltCommands then return end
 	definition.BuiltCommands = true
@@ -2378,24 +2392,11 @@ local function BuildWindow(suffix)
 		end
 	end
 
-	-- Load / Save, which allows windows to keep track of key pieces of information.
-	local defaults = BuildDefaultsForWindow(window, definition.Defaults);
-	local onLoad, onSave = definition.OnLoad, definition.OnSave;
-	ApplySettingsForWindow(window, defaults);
-	function window:Load(windowSettings)
-		setmetatable(windowSettings, { __index = defaults });
-		if onLoad then onLoad(self, windowSettings); end
-		ApplySettingsForWindow(self, windowSettings);
-	end
-
 	-- Setup the Event Handlers
 	local handlers = {
 		PLAYER_LOGOUT = function()
 			-- Save Settings on Logout
-			local windowSettings = window:RecordSettings();
-			if windowSettings and onSave then
-				onSave(window, windowSettings);
-			end
+			window:Save()
 		end,
 	};
 	window:RegisterEvent("PLAYER_LOGOUT");
