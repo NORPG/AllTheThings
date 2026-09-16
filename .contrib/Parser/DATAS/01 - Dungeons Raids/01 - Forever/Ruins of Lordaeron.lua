@@ -5,7 +5,7 @@
 -- #if FOREVER
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 applyclassicphase(FOREVER_PHASE_ONE, inst(2999, bubbleDownSelf({	-- Ruins of Lordaeron
-	["timeline"] = { ADDED_1_16_1 },
+	["timeline"] = { ADDED_1_60_1 },
 }, {
 	-- ["lore"] = "",
 	["zone-text-areaID"] = 16611,	-- Ruins of Lordaeron

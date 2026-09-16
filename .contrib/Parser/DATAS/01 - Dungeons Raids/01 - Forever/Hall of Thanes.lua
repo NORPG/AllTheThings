@@ -5,7 +5,7 @@
 -- #if FOREVER
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 applyclassicphase(FOREVER_PHASE_ONE, inst(3065, bubbleDownSelf({	-- The Hall of Thanes
-	["timeline"] = { ADDED_1_16_1 },
+	["timeline"] = { ADDED_1_60_1 },
 }, {
 	-- ["lore"] = "",
 	["zone-text-areaID"] = 16919,	-- The Hall of Thanes
