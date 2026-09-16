@@ -6,7 +6,7 @@
 --[[
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 applyclassicphase(FOREVER_PHASE_ONE, inst(HALL_OF_THANES, bubbleDownSelf({
-	["timeline"] = { ADDED_1_16_0 },
+	["timeline"] = { ADDED_1_16_1 },
 }, {
 	["lore"] = "",
 	["zone-text-areaID"] = ,

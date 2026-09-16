@@ -6,7 +6,7 @@
 --[[
 root(ROOTS.Zones, m(ZEPHRAS_ISLE, bubbleDownSelf({
 	["races"] = {SKYBORNE_NEUTRAL, SKYBORNE_ALLIANCE, SKYBORNE_HORDE},
-	["timeline"] = {ADDED_1_60_0},
+	["timeline"] = {ADDED_1_16_1},
 }, {
 	["icon"] = nil,
 	["maps"] = {},
