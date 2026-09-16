@@ -739,6 +739,7 @@ settings.GetWindowSettingsFromProfile = function(suffix, windowSettings)
 				windowSettings.y = point.Y
 				windowSettings.width = points.Width
 				windowSettings.height = points.Height
+				windowSettings.visible = points.visible
 			end
 			windowSettings.isLocked = points.Locked
 			-- app.PrintTable(windowSettings)
@@ -781,6 +782,7 @@ settings.SetWindowSettingsToProfile = function(suffix, windowSettings)
 	points.Width      = windowSettings.width
 	points.Height     = windowSettings.height
 	points.Locked     = windowSettings.isLocked
+	points.visible    = windowSettings.visible
 end
 settings.Get = function(self, setting)
 	return RawSettings.General[setting];

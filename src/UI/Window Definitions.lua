@@ -1532,7 +1532,6 @@ local function ApplySettingsForWindow(self, windowSettings)
 		self.data.progress = windowSettings.Progress;
 		self.data.total = windowSettings.Total;
 	end
-	self:SetVisible(windowSettings.visible)
 	self.RecordSettings = oldRecordSettings;
 end
 local Backdrops = {
