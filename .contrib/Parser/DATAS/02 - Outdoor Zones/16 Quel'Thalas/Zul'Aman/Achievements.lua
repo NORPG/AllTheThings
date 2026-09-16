@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(264335),	-- Colossal Amani Stone Visage (DECOR!)
 			}),
 			ach(62413, {	-- The Curse of Ula'tek
-				["description"] = "This achievement will be replaced with Achievement '62297' at the release of Patch 12.1.0",
+				["description"] = "This achievement will be replaced with Achievement '62297' at the release of Patch 12.1.0.",
 				["timeline"] = { ADDED_12_0_7, DELETED_12_1_0 },	-- Blizzard created a new achievement rather than updating the existing one for 12.1.0
 			}),
 			ach(62297, { ["timeline"] = { ADDED_12_1_0 } }),	-- The Curse of Ula'tek

@@ -26,12 +26,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(63659, {	-- Bane of the Swarm
-					--title(XXX),	-- <Name>, Bane of the Swarm
+					title(793),	-- <Name>, Bane of the Swarm
 				}),
 				ach(63680),	-- Driving Back the Swarm
 				ach(63658),	-- No Hives Left Standing
 				ach(63519, {	-- The Promise of Tomorrow
-					--title(XXX),	-- <Name>, Light's Faithful
+					title(780),	-- <Name>, Light's Faithful
 				}),
 			}),
 			n(EVENT_COMPLETION, {
@@ -219,6 +219,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						-- Exo Note: Quest chain ends here. Quest log shows that this quest completes the 1/3 Campaign Chapters. None of the friendly NPCs despawn and no new quest is offered. It's incomplete, probably because next quest leads into the Raid (I think).
 						-- Entrance to "The Unbinding of Kith'ix" is in The Underbelly at 73.3, 8.6
+						-- Actual "Sins of the Past" start. TODO: Fix header when the achCriteria gets updated!
+						q(95211, {	-- The Unbinding of Kith'ix
+							["sourceQuest"] = 96707,	-- In the Belly of the Beast
+							["qg"] = 275672,	-- Lady Liadrin
+							["coord"] = { 71.6, 7.7, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+							["groups"] = {
+								i(277897),	-- Bloodmark Signet
+								i(281136),	-- Hiveborne Hearthstone (TOY!)
+								i(277886),	-- Pendant of Venomous Vigil
+							},
+						}),
+						------ Stay awhile and listen ------
+						--hqt(??, {	-- Stay awhile and listen: Lady Liadrin
+						--	["name"] = "Stay awhile and listen: Lady Liadrin",
+						--	["description"] = "Dialogue becomes available after accepting 'The Unbinding of Kith'ix' (95211).",
+						--	["sourceQuest"] = 96707,	-- In the Belly of the Beast
+						--	["qg"] = 275672,	-- Lady Liadrin
+						--	["coord"] = { 71.6, 7.7, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+						--}),
+						--
 					}),
 					--header(HEADERS.AchCriteria, 63519.02, {	-- To the Faithful
 					--}),

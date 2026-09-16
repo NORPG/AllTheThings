@@ -31,7 +31,6 @@ root(ROOTS.Unsorted, {
 			i(277882),	-- Feral Gloombranch
 			i(277883),	-- Duskmantle Spiteglass
 			i(277885),	-- Veilweaver Trousers
-			i(277886),	-- Pendant of Venomous Vigil
 			i(277888),	-- Veil of the Feral Rite
 			i(277889),	-- Fanged Riftrazor
 			i(277890),	-- Wildwarden's Guise
@@ -39,7 +38,6 @@ root(ROOTS.Unsorted, {
 			i(277893),	-- Emberveil Ritual Knife
 			i(277895),	-- Veilweaver's Shadowgown
 			i(277896),	-- Bloodtide Hauberk
-			i(277897),	-- Bloodmark Signet
 			i(277898),	-- Duskhallow Vanguard Greaves
 			i(277899),	-- Fangwarden's Shardspine Bow
 			i(279396),	-- Timelost Saddle
@@ -56,7 +54,6 @@ root(ROOTS.Unsorted, {
 			i(280835),	-- Sigil of the Impending Eclipse
 			i(281029),	-- Band of the Swarmcaller
 			i(281056),	-- Sanctified Knight's Phoenixblade
-			i(281136),	-- Hiveborne Hearthstone
 			i(281169),	-- Executive Chef's Jacket
 			i(281170),	-- Executive Chef's Hat
 			i(281171),	-- Executive Chef's Gloves
@@ -492,7 +489,6 @@ root(ROOTS.Unsorted, {
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
-			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
 			i(271681),	-- Perennial Frostbound Charm
@@ -799,7 +795,6 @@ root(ROOTS.Unsorted, {
 			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
-			i(279284),	-- Nebulous Voidcache: Delver's Trove
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot

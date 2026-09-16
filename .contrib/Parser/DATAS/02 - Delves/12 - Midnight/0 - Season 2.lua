@@ -135,6 +135,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(249223),	-- Corrosive Bilespear
 				i(271132),	-- Essence Trap
 				i(249219),	-- Ouroboric Curse
+				i(271133, { ["timeline"] = { ADDED_12_1_5 } }),	-- Viperwind Idol
 				--Utility
 				i(249227),	-- Dundun's Favor
 				i(249228),	-- Soul-Cracking Dreamcatcher

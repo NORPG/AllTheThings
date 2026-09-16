@@ -75,6 +75,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			n(DELVE_COMPLETION, {
 				i(285807),	-- Heroic Soul Fragment
 				i(285875),	-- Kindo'jan
+				i(279284),	-- Nebulous Voidcache: Delver's Trove (It is doubtful that this has appeared only here. This may belong in S2 Delve file)
 			}),
 			n(FACTIONS, {
 				faction(2836),	-- Kindo'Jan's Labyrinth
@@ -128,8 +129,33 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				fp(3318, { ["collectible"] = false } ),	-- Entrance to Nalorakk's Den
 				fp(3329, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
 			}),
-			--n(QUESTS, {
-			--}),
+			n(QUESTS, {
+				q(98831, {	-- The Labyrinth
+					["qg"] = 265173,	-- Kul'amara the Fierce
+					["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(98832, {	-- Dangers Untold and Hardships Unnumbered
+					["sourceQuest"] = 98831,	-- The Labyrinth
+					["qg"] = 274915,	-- Valeera Sanguinar
+					["coord"] = { 62.8, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				q(98833, {	-- You Remind Me of the Bird
+					["sourceQuest"] = 98832,	-- Dangers Untold and Hardships Unnumbered
+					["qg"] = 273203,	-- Kinduru
+					["coord"] = { 38.3, 64.7, LABYRINTH_KINDOJAN },
+				}),
+				q(98834, {	-- The Way Forward...
+					["sourceQuest"] = 98833,	-- You Remind Me of the Bird
+					["qg"] = 248567,	-- Valeera Sanguinar
+					["coord"] = { 35.6, 64.8, LABYRINTH_KINDOJAN },
+				}),
+				q(98836, {	-- ...Is Sometimes the Way Back
+					["sourceQuest"] = 98834,	-- The Way Forward...
+					["qg"] = 248567,	-- Valeera Sanguinar
+					["coord"] = { 44.4, 84.6, LABYRINTH_KINDOJAN },
+					["groups"] = { i(286643) },	-- Kinduru's Spiriting Quill (TOY!)
+				}),
+			}),
 			n(TREASURES, {
 				header(HEADERS.Achievement, 63717, {	-- Kindo'jan's Labyrinth Discoveries
 					o(659517, {	-- Ancient Chest
@@ -228,12 +254,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 	}),
 }))
 
---[[root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, {
 		m(LABYRINTH_KINDOJAN, {
 			["timeline"] = { ADDED_12_1_5 },
 			["groups"] = {
+				q(98044),	-- Triggered on 'Nebulous Voidcache: Delver's Trove' roll
 			},
 		}),
 	}),
-}))--]]
+}))

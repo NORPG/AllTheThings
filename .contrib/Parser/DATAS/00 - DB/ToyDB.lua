@@ -1536,7 +1536,6 @@ i(258135);	-- Gilded Coil Spire
 i(258840);	-- Gilded Fountain
 i(251491);	-- Magical Pet Clicker
 i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
-
 --- NYI ---
 i(258129);	-- Jade Monument
 i(250320);	-- Lightgraft
@@ -1601,7 +1600,7 @@ i(264367);	-- Mycomancer's Hearthspore
 i(260170);	-- Oathstone Fragment
 i(259335);	-- Photo Finisher
 i(267323);	-- Troll Scroll of Rainbow Roll
---- Unsorted ---
+--- UNSORTED ---
 i(276370);	-- Lightveil Hearth Beacon
 i(264368);	-- ??
 
@@ -1635,10 +1634,10 @@ i(279590);	-- Venomous Champion's Illustrious Banner
 -- PATCH 12.1.5 --
 ------------------
 i(275039);	-- Curse of the Aqir
---- Unsorted ---
-i(280823);	-- Feathers of Akil'zon
 i(281136);	-- Hiveborne Hearthstone
 i(286643);	-- Kinduru's Spiriting Quill
+--- UNSORTED ---
+i(280823);	-- Feathers of Akil'zon
 i(284159);	-- Libram of the Matriarch
 i(280820);	-- Loa Blessed Victory
 i(280822);	-- Nalorakk's Strength Charm

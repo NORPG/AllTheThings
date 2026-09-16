@@ -2127,10 +2127,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
-			i(249219),	-- 12.0 Delves - Season 1 - Curio - Combat 1
-			i(249223),	-- 12.0 Delves - Season 1 - Curio - Combat 5
-			i(249227),	-- 12.0 Delves - Season 1 - Curio - Utility 4
-			i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
 			i(257347),	-- [DNT] [PH] 12.0 Armor Box
 			i(258279),	-- [DNT] Big Pouch of Supplies
 			i(258280),	-- [DNT] Huge Pouch of Supplies
