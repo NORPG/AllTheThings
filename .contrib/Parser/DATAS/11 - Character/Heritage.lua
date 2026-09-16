@@ -619,6 +619,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 93826 },	-- Mayla Highmountain
 				["coord"] = { 46.6, 61.0, HIGHMOUNTAIN },
 				["lvl"] = 50,
+				["sourceAchievements"] = { 10059 },	-- Ain't No Mountain High Enough
+				["lockCriteria"] = { 1, "achID", 12415 },	-- Heritage of Highmountain
 				["groups"] = {
 					ach(12415),	-- Heritage of Highmountain
 					i(156668),	-- Highmountain Headdress
