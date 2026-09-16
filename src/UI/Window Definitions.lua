@@ -1521,33 +1521,6 @@ local DefaultWindowSettings = {
 	backdropColor = { 0, 0, 0, 1 },
 	borderColor = { 1, 1, 1, 1 },
 }
-local function BuildSettingsForWindow(self, windowSettings)
-	local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
-	if xOfs then
-		windowSettings.width = self:GetWidth();
-		windowSettings.height = self:GetHeight();
-		windowSettings.x = xOfs;
-		windowSettings.y = yOfs;
-		windowSettings.point = point;
-		windowSettings.relativePoint = relativePoint;
-		windowSettings.relativeTo = relativeTo and relativeTo:GetName();
-	end
-	windowSettings.isLocked = self.isLocked;
-	windowSettings.scale = self:GetScale();
-	windowSettings.visible = not not self:IsVisible();
-	windowSettings.movable = not not self:IsMovable();
-	windowSettings.resizable = not not self:IsResizable();
-	windowSettings.alpha = self:GetAlpha();
-	windowSettings.backdrop = self:GetBackdrop();
-	local r, g, b, a = self:GetBackdropColor();
-	windowSettings.backdropColor = { r or 0, g or 0, b or 0, a or 1 };
-	r, g, b, a = self:GetBackdropBorderColor();
-	windowSettings.borderColor = { r or 0, g or 0, b or 0, a or 1 };
-	if self.data then
-		windowSettings.Progress = self.data.progress;
-		windowSettings.Total = self.data.total;
-	end
-end
 local function ClearSettingsForWindow(self)
 	if not AllWindowSettings then return; end
 	AllWindowSettings[self.Suffix] = nil;
@@ -1857,7 +1830,31 @@ local FieldDefaults = {
 	RecordSettings = function(self)
 		local windowSettings = self.Settings;
 		if windowSettings then
-			BuildSettingsForWindow(self, windowSettings);
+			local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
+			if xOfs then
+				windowSettings.width = self:GetWidth();
+				windowSettings.height = self:GetHeight();
+				windowSettings.x = xOfs;
+				windowSettings.y = yOfs;
+				windowSettings.point = point;
+				windowSettings.relativePoint = relativePoint;
+				windowSettings.relativeTo = relativeTo and relativeTo:GetName();
+			end
+			windowSettings.isLocked = self.isLocked;
+			windowSettings.scale = self:GetScale();
+			windowSettings.visible = not not self:IsVisible();
+			windowSettings.movable = not not self:IsMovable();
+			windowSettings.resizable = not not self:IsResizable();
+			windowSettings.alpha = self:GetAlpha();
+			windowSettings.backdrop = self:GetBackdrop();
+			local r, g, b, a = self:GetBackdropColor();
+			windowSettings.backdropColor = { r or 0, g or 0, b or 0, a or 1 };
+			r, g, b, a = self:GetBackdropBorderColor();
+			windowSettings.borderColor = { r or 0, g or 0, b or 0, a or 1 };
+			if self.data then
+				windowSettings.Progress = self.data.progress;
+				windowSettings.Total = self.data.total;
+			end
 			if self.OnRecordSettings then
 				self:OnRecordSettings(windowSettings)
 			end
@@ -1928,11 +1925,12 @@ local FieldDefaults = {
 	Load = function(self)
 		local windowSettings = self.Settings
 		if not windowSettings then
-			app.report("Window Loaded without Settings!",self.Suffix)
 			windowSettings = {}
 			self.Settings = windowSettings
 		end
-		setmetatable(windowSettings, { __index = DefaultWindowSettings })
+		-- Hierarchy: self.Settings -> self.Defaults -> DefaultWindowSettings
+		if self.Defaults then setmetatable(self.Defaults, { __index = DefaultWindowSettings }) end
+		setmetatable(windowSettings, { __index = self.Defaults or DefaultWindowSettings })
 		if self.OnLoad then self:OnLoad(windowSettings) end
 		self:ApplyWindowSettings()
 		self:ApplyGlobalSettings()
@@ -2298,7 +2296,6 @@ local DefaultEventHandlers = {
 	end,
 }
 local ReservedFields = {
-	Defaults = true,
 	OnInit = true,
 	OnCommand = true,
 	Load = true,
