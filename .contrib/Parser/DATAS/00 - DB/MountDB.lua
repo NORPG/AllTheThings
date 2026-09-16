@@ -2518,6 +2518,7 @@ i(275656, 1297224);	-- Auriferous Venomfang
 i(276881, 1301070);	-- Breath of Blight
 i(276882, 1301074);	-- Breath of Ruin
 i(275654, 1297217);	-- Caustic Venomfang
+i(280519, 1309109);	-- Cerulean Prideclaw
 i(276162, 1298808);	-- Corroded Soul Crusher
 i(278574, 1305206);	-- Crested Aqua Leafmimic
 i(278573, 1305204);	-- Crested Ember Leafmimic
@@ -2540,6 +2541,7 @@ i(274037, 1293028);	-- Tuskarr Hermit Crab
 i(277192, 1301775);	-- Umbral Ashes
 i(276801, 1300777);	-- Venomous Coiler
 i(275302, 1266211);	-- Venomous Gladiator's Goredrake
+i(280599, 1309376);	-- Veteran Adventurer's Loyal Companion
 i(275433, 1296670);	-- Vicious Lightbloom Boar [A]
 i(275432, 1296672);	-- Vicious Lightbloom Boar [H]
 i(276551, 1299963);	-- Violet-Backed Skyfang
@@ -2569,6 +2571,9 @@ i(276926, 1301331);	-- Corrupted Swarmer
 i(283363, 1314715);	-- Loa-Blessed Wayfarer
 i(282414, 1313788);	-- Sporebearer Fungal Strider
 --- Unsorted ---
+i(280521, 1309112);	-- [PH] Brown Cat Mount
+i(280520, 1309110);	-- [PH] Purple Cat Mount
+i(280522, 1309114);	-- [PH] White Blue Cat Mount
 i(282646, 1314165);	-- Hot Motocross Bunmover 4000
 i(282647, 1314166);	-- Hot Motocross Bunmover 4200
 i(282648, 1314168);	-- Hot Motocross Bunmover 4400

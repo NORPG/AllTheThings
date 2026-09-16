@@ -403,6 +403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(QUESTS, {
+					q(96794),	-- Fury of the Dead
 				}),
 				BossOnly(NEKZALI, {
 					i(278285, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Soulcoiler Nek'zali

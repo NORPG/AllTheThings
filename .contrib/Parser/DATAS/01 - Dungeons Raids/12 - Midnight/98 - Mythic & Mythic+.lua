@@ -31,10 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			})),
 			ach(63104,{	-- Umbral Champion: Midnight Season 1
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },
-				["groups"] = {
-					i(277192),	-- Umbral Ashes (MOUNT!)
-					--title(),	-- <Name> the Umbral Champion
-				},
+				["groups"] = { i(277192) },	-- Umbral Ashes (MOUNT!)
 			}),
 			ach(61259, {	-- Umbral Hero: Midnight Season One
 				title(656),	-- <Name> the Umbral Hero
