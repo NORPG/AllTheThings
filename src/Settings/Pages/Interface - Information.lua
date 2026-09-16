@@ -18,6 +18,7 @@ local GetItemCount = app.WOWAPI.GetItemCount;
 local GetItemSpecInfo = app.WOWAPI.GetItemSpecInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
+local GetTradeSkillDisplayName = app.WOWAPI.GetTradeSkillDisplayName;
 local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAccount;
 
 -- Settings: Interface Page
@@ -121,7 +122,7 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	professionName = function(skillID, reference)
-		local skillName = app.WOWAPI.GetTradeSkillDisplayName(skillID)
+		local skillName = GetTradeSkillDisplayName(skillID)
 		if skillName then
 			return skillName
 		end
