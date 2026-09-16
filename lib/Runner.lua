@@ -28,6 +28,7 @@ local QueueStack;
 -- passing the corresponding Stack param to each called Function.
 -- Any Functions which do not return a status will be removed
 local StackCo
+local StackIndex = 1
 local function SetStackCo()
 	-- app.PrintDebug("SetStackCo")
 	StackCo = c_create(function()
@@ -44,6 +45,7 @@ local function SetStackCo()
 					-- app.PrintDebug("StackCo:Remove",i)
 					tremove(Stack, i);
 					tremove(StackParams, i);
+					StackIndex = StackIndex - 1
 				end
 			end
 			-- app.PrintDebug("StackCo:Done",f,p)
@@ -75,8 +77,9 @@ QueueStack = function()
 end
 -- Accepts a param and Function which will execute on the following frame using the provided param
 local function Push(param, name, func)
-	Stack[#Stack + 1] = func;
-	StackParams[#StackParams + 1] = param or 1;
+	Stack[StackIndex] = func;
+	StackParams[StackIndex] = param or 1;
+	StackIndex = StackIndex + 1
 	-- app.PrintDebug("Push @",#StackParams,name,func,param)
 	QueueStack();
 end
