@@ -72,9 +72,10 @@ local SkipTableFields = {
 	__merge = 1,
 	window = 1,
 }
-app.PrintTable = function(t,depth)
+app.PrintTable = function(t,depth,preface)
 	-- only allowing table prints when Debug print is active
 	if not app.Debugging then return; end
+	if preface then app.PrintDebug(preface) end
 	if t == nil then print("nil"); return; end
 	local secret = issecretvalue(t) and "<secret>" or ""
 	depth = depth or 0;

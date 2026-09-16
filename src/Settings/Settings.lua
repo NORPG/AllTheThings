@@ -706,6 +706,7 @@ settings.ApplyProfile = function(self)
 	end
 
 	-- Ensure the window settings of this Profile are loaded
+	-- TODO: use Settings.OnApplyProfile event
 	if app.LoadSettingsForAllWindows then
 		app.LoadSettingsForAllWindows()
 	end
@@ -737,12 +738,11 @@ settings.GetWindowSettingsFromProfile = function(suffix, windowSettings)
 				windowSettings.relativePoint = point.PointRef
 				windowSettings.x = point.X
 				windowSettings.y = point.Y
-				windowSettings.width = points.Width
-				windowSettings.height = points.Height
-				windowSettings.visible = points.visible
 			end
+			windowSettings.width = points.Width
+			windowSettings.height = points.Height
+			windowSettings.visible = points.visible
 			windowSettings.isLocked = points.Locked
-			-- app.PrintTable(windowSettings)
 		end
 		local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
 		windowSettings.backdropColor = { rBg, gBg, bBg, aBg }
