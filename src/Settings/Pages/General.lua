@@ -1157,7 +1157,7 @@ app.AddEventHandler("OnPlayerLevelUp", function()
 end);
 
 local checkboxNoSkillLevelFilter;
-if app.GameBuildVersion < 20000 then
+if app.MaximumSkillLevel then
 checkboxNoSkillLevelFilter = child:CreateCheckBox("|T1530081:0|t |c" .. app.DefaultColors.Insane .. L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX,
 function(self)
 	self:SetChecked(not settings:Get("Filter:BySkillLevel"))	-- Inversed, so enabled = show

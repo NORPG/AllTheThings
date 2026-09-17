@@ -164,6 +164,7 @@ local ImmediateEvents = {
 	OnReady = true,
 	OnRefreshSettings = true,
 	OnNewPopoutGroup = true,
+	OnUpdateModeFilters = true,
 	["OnAddExtraMainCategories"] = true,
 	["Fill.OnAddFiller"] = true,
 	["Fill.DefinedSettings"] = true,

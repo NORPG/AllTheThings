@@ -1,6 +1,9 @@
 local appName, app = ...
 local L = app.L;
 
+-- Module locals
+local filterSet = app.Modules.Filter.Set;
+
 -- Create the settings container.
 -- TODO: Investigate if this needs to be a frame or if it can be something else.
 local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer)
@@ -474,9 +477,26 @@ if season > 0 then
 		UnobtainableSettingsBase.__index[1604] = true;
 	end
 	if season == 2 then	-- SOD
-		if app.GameBuildVersion >= 11502 then app.MaximumSkillLevel = 300;
-		elseif app.GameBuildVersion >= 11501 then app.MaximumSkillLevel = 225;
-		else app.MaximumSkillLevel = 150; end
+		-- SkillLevel
+		local maximumSkillLevel = 300;
+		if app.GameBuildVersion == 11501 then maximumSkillLevel = 225;
+		elseif app.GameBuildVersion <= 11500 then maximumSkillLevel = 150; end
+		if maximumSkillLevel < 300 then
+			-- Tell the General Page that we need a max skill level checkbox.
+			app.MaximumSkillLevel = maximumSkillLevel;
+			app.Modules.Filter.DefineToggleFilter("SkillLevel", false,
+			function(group)
+				return maximumSkillLevel >= (group.learnedAt or 0);
+			end);
+			
+			app.AddEventHandler("OnUpdateModeFilters", function(self)
+				if self:Get("Filter:BySkillLevel") and not self:Get("DebugMode") then
+					filterSet.SkillLevel(true)
+				else
+					filterSet.SkillLevel()
+				end
+			end)
+		end
 	end
 end
 
@@ -1794,7 +1814,6 @@ settings.SetThingTracking = function(self, force)
 end
 -- Updates various application settings and values based on toggled Settings, as well as the Mode name and Refreshes the Settings
 settings.UpdateMode = function(self, doRefresh)
-	local filterSet = app.Modules.Filter.Set;
 	if self:Get("Completionist") then
 		filterSet.ItemSource()
 	else
@@ -1889,6 +1908,7 @@ settings.UpdateMode = function(self, doRefresh)
 		self.OnlyNotTrash = app.IsClassic and self:Get("Only:NotTrash");
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
+	app.HandleEvent("OnUpdateModeFilters", self)
 
 	if self:Get("Show:CompletedGroups") then
 		filterSet.CompletedGroups()
@@ -1945,12 +1965,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.Level()
 	end
-
-	if self:Get("Filter:BySkillLevel") and not self:Get("DebugMode") then
-		filterSet.SkillLevel(true)
-	else
-		filterSet.SkillLevel()
-	end
+	
 	app:UnregisterEvent("TAXIMAP_OPENED")
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
 		app:RegisterEvent("TAXIMAP_OPENED")
