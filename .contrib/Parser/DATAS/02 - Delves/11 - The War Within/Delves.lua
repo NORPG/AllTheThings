@@ -240,6 +240,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 					-- #if AFTER 11.2.0
 					["groups"] = {
 						i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
+						i(230727),	-- Explosive Victory (TOY!)
 						i(235614),	-- Golden-Gob Propulsion Rig
 					},
 					-- #endif
@@ -1928,14 +1929,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			-- ["sourceQuests"] = { xx },	-- ??
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.6, 44.3, DORNOGAL },
-			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 			["isBreadcrumb"] = true,
 		}),
 		q(85242, {	-- Seasonal Refresher
 			["sourceQuests"] = { 88947 },	-- Undermined Delves
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 			["groups"] = {
 				i(233281),	-- Delver's Cosmetic Surprise Bag (CI!) [cointains any unlearned cosmetic from delves]
 				i(233276),	-- Delver's Starter Kit (CI!)
@@ -1945,7 +1946,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			["sourceQuests"] = { 85242 },	-- Seasonal Refresher
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 			["groups"] = {
 				o(500694, {	-- Nerubian Lord
 					i(233025),	-- Giant Pile of Gold (QI!)
@@ -1960,7 +1961,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			["sourceQuests"] = { 85243 },	-- I Want My Hat Back
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 			["groups"] = {
 				i(212170),	-- Brann's Spare Hat (COSMETIC!)
 				i(230727),	-- Explosive Victory (TOY!)
