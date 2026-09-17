@@ -191,14 +191,14 @@ prof(333),
 prof(202,{awp=10100,g={
 x(1,{requireSkill=202,g={
 h(-47,{requireSkill=202,g={
-i(11423,{description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},requireSkill=202,rwp=40003,g={
-r(12607,{itemID=10603,learnedAt=220,requireSkill=202}),
-r(15633,{itemID=11827,learnedAt=205,requireSkill=202}),
-r(12616,{itemID=10606,learnedAt=225,requireSkill=202})}}),
-i(11422,{description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},requireSkill=202,rwp=40003,g={
-r(3968,{itemID=4416,learnedAt=195,requireSkill=202}),
-r(3972,{itemID=4417,learnedAt=200,requireSkill=202}),
-r(15628,{itemID=11828,learnedAt=205,requireSkill=202})}})}})}})}}),
+i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,rwp=40003,g={
+r(12607,{itemID=10603,learnedAt=220,q=2,requireSkill=202,skillID=2941}),
+r(15633,{b=1,itemID=11827,learnedAt=205,q=2,requireSkill=202,skillID=2941}),
+r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202,skillID=2941})}}),
+i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,rwp=40003,g={
+r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202,skillID=2941}),
+r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202,skillID=2941}),
+r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=202,skillID=2941})}})}})}})}}),
 prof(129,{rwp=80001,g={
 x(1,{requireSkill=129,g={
 ach(131,{requireSkill=129}),
@@ -337,32 +337,32 @@ q(5143,{altQuests={5141,5144},coords={
 q(5148,{altQuests={5145,5146},coords={
 [224]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}})}}),
 prof(633,{c={4},description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",DontEnforceSkillRequirements=1,g={
-r(1804,{c={4}}),
-r(921,{c={4}})}}),
+r(1804,{c={4},requireSkill=633}),
+r(921,{c={4},requireSkill=39})}}),
 prof(186,{awp=10100,g={
 x(1,{requireSkill=186})}}),
 prof(40,{c={4},rwp=30002,g={
 cat(2,{
-r(3420,{lvl=20}),
-r(3421,{lvl=50}),
-r(2835,{lvl=30}),
-r(2837,{lvl=38}),
-r(11357,{lvl=46}),
-r(11358,{lvl=54}),
-r(25347,{lvl=60,u=15}),
-r(8681),
-r(8687,{lvl=28}),
-r(8691,{lvl=36}),
-r(11341,{lvl=44}),
-r(11342,{lvl=52}),
-r(11343,{lvl=60}),
-r(5763,{lvl=24}),
-r(8694,{lvl=38}),
-r(11400,{lvl=52}),
-r(13220,{lvl=32}),
-r(13228,{lvl=40}),
-r(13229,{lvl=48}),
-r(13230,{lvl=56})})}}),
+r(3420,{learnedAt=125,lvl=20,skillID=2988}),
+r(3421,{learnedAt=275,lvl=50,skillID=2988}),
+r(2835,{learnedAt=175,lvl=30,skillID=2988}),
+r(2837,{learnedAt=215,lvl=38,skillID=2988}),
+r(11357,{learnedAt=255,lvl=46,skillID=2988}),
+r(11358,{learnedAt=295,lvl=54,skillID=2988}),
+r(25347,{learnedAt=300,lvl=60,skillID=2988,u=15}),
+r(8681,{learnedAt=125,skillID=2988}),
+r(8687,{learnedAt=165,lvl=28,skillID=2988}),
+r(8691,{learnedAt=205,lvl=36,skillID=2988}),
+r(11341,{learnedAt=245,lvl=44,skillID=2988}),
+r(11342,{learnedAt=285,lvl=52,skillID=2988}),
+r(11343,{learnedAt=325,lvl=60,skillID=2988}),
+r(5763,{learnedAt=150,lvl=24,skillID=2988}),
+r(8694,{learnedAt=215,lvl=38,skillID=2988}),
+r(11400,{learnedAt=285,lvl=52,skillID=2988}),
+r(13220,{learnedAt=185,lvl=32,skillID=2988}),
+r(13228,{learnedAt=225,lvl=40,skillID=2988}),
+r(13229,{learnedAt=265,lvl=48,skillID=2988}),
+r(13230,{learnedAt=305,lvl=56,skillID=2988})})}}),
 prof(393),
 prof(197)}})
 end)

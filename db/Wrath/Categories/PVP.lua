@@ -24,10 +24,10 @@ ach(611,{awp=30002,maps={1456},providers={{"n",3057}},pvp=1,r=2,rwp=90001}),
 ach(449,{awp=10400,pvp=1,r=1,rwp=20001,u=2,g={
 title(21,{pvp=1,r=1,u=2})}}),
 ach(727,{awp=30002,pvp=1,u=12,g={
-crit(6213,{achID=727,id=1,providers={{"i",18243},{"i",29465}},pvp=1,u=12}),
-crit(6217,{achID=727,id=1,providers={{"i",18245},{"i",29469}},pvp=1,u=12}),
 crit(6221,{achID=727,id=1,providers={{"i",34129}},pvp=1,u=12}),
 crit(6218,{achID=727,id=1,providers={{"i",35906}},pvp=1,u=12}),
+crit(6213,{achID=727,id=1,providers={{"i",18243},{"i",29465}},pvp=1,u=12}),
+crit(6217,{achID=727,id=1,providers={{"i",18245},{"i",29469}},pvp=1,u=12}),
 crit(6219,{achID=727,id=1,providers={{"i",18242},{"i",29471}},pvp=1,u=12}),
 crit(6220,{achID=727,id=1,providers={{"i",18246},{"i",29472}},pvp=1,u=12}),
 crit(6215,{achID=727,id=1,providers={{"i",18244},{"i",29467}},pvp=1,u=12}),

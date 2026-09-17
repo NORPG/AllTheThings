@@ -75,6 +75,7 @@ exp(15991,{collectible=false,coords={
 hqt(86407,{isWeekly=1,providers={{"n",234168},{"n",236626}}}),
 n(236626,{crs={234168},g={
 mm(233196,{b=1,questID=86296}),
+toy(230727,{b=1}),
 s(267033,235614,{f=3,lvl=60}),
 crit(102780,{achID=41530,id=2,rwp=110200,u=2}),
 crit(112577,{achID=40438,id=6})}})}})}}),
@@ -980,22 +981,22 @@ toy(225547,{b=1,u=2})}}),
 q(86461,{awp=110100,lvl=70,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452},providers={{"i",234330}}}),
 q(86462,{awp=110100,lvl=70,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452},providers={{"i",234329}}}),
 q(88947,{awp=110100,coords={
-[2339]={{47.6,44.3}}},isBreadcrumb=1,lvl=80,nextQuests={85242},qgs={206017}}),
+[2339]={{47.6,44.3}}},isBreadcrumb=1,lvl=80,nextQuests={85242},qgs={206017},rwp=110200,u=2}),
 q(85242,{awp=110100,coords={
-[2339]={{47.4,44.4}}},lvl=70,qgs={206017},sourceQuests={88947},g={
-i(233281,{b=1,lvl=80,questID=86329,spellID=1213632,type="ihqt"}),
-i(233276,{b=1,lvl=80,questID=86328,spellID=1213630,type="ihqt"})}}),
+[2339]={{47.4,44.4}}},lvl=70,qgs={206017},rwp=110200,sourceQuests={88947},u=2,g={
+i(233281,{b=1,lvl=80,questID=86329,spellID=1213632,type="ihqt",u=2}),
+i(233276,{b=1,lvl=80,questID=86328,spellID=1213630,type="ihqt",u=2})}}),
 q(85243,{awp=110100,coords={
-[2339]={{47.4,44.4}}},lvl=70,qgs={206017},sourceQuests={85242},g={
-o(500694,{
-i(233025,{spellID=472971}),
-i(233026,{spellID=472972})}),
-ach(41532),
-mnt(466133,{itemID=229974,lvl=10})}}),
+[2339]={{47.4,44.4}}},lvl=70,qgs={206017},rwp=110200,sourceQuests={85242},u=2,g={
+o(500694,{u=2,g={
+i(233025,{spellID=472971,u=2}),
+i(233026,{spellID=472972,u=2})}}),
+ach(41532,{u=2}),
+mnt(466133,{itemID=229974,lvl=10,u=2})}}),
 q(85244,{awp=110100,coords={
-[2339]={{47.4,44.4}}},lvl=70,qgs={206017},sourceQuests={85243},g={
-s(194664,212170,{f=2,loc=40,lvl=60}),
-toy(230727,{b=1})}}),
+[2339]={{47.4,44.4}}},lvl=70,qgs={206017},rwp=110200,sourceQuests={85243},u=2,g={
+s(194664,212170,{f=2,loc=40,lvl=60,u=2}),
+toy(230727,{b=1,u=2})}}),
 q(90779,{awp=110105,description="Can be completed once per TWW Season.\n\nNOTE: This will allow over-capping crests if you are already capped, otherwise the rewarded crests will be considered part of the current cap.",isMonthly=1,lvl=70,providers={{"i",251543}}}),
 q(90968,{awp=110107,isBreadcrumb=1,lvl=70,nextQuests={90969},rwp=110200,u=2}),
 q(90969,{awp=110107,coords={
@@ -2732,7 +2733,7 @@ i(251785,{b=1,f=53,lvl=78,spellID=1253113})}}),
 flt(8,{providers={{"o",581922},{"o",584503},{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584514},{"o",584515},{"o",584517},{"o",584518},{"o",584519},{"o",618495},{"o",623258},{"o",623259},{"o",656489},{"o",658087},{"o",658088}},g={
 s(307905,272276,{f=8})}})}),
 flt(50,{
-i(276547,{f=55,spellID=1306913}),
+i(276547,{description="Use before starting your Prey quest to work properly.",f=55,spellID=1306913}),
 i(279290,{providers={{"o",584518}},questID=98043,spellID=1306485}),
 i(276548,{f=55,spellID=1306916}),
 i(274374,{f=55,providers={{"o",584518},{"o",656489}},questID=86371,spellID=1293799})}),

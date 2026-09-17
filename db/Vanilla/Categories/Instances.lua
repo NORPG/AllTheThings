@@ -2215,7 +2215,7 @@ s(165014,22632,{b=1,f=28,lvl=60,q=5,u=16}),
 crit(747,{achID=425,id=1,u=16})}}),
 q(9250,{c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,providers={{"i",22727}},u=16})}}),
 h(-12,{u=16,g={
-ach(15637,{awp=11403,rwp=11500,u=2}),
+ach(15637,{awp=11403,providers={{"n",15990}},rwp=11500,u=2}),
 s(169660,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
 h(-45,{u=16,g={
 cl(1,{u=16,g={

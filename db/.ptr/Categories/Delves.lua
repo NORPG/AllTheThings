@@ -3748,8 +3748,7 @@ ach(63722,{providers={{"s",1314979}},g={
 title(799)}})}),
 h(-24,{
 i(285807),
-i(285875),
-i(279284)}),
+i(285875)}),
 h(-31,{
 faction(2836)}),
 h(-32,{
@@ -3793,6 +3792,9 @@ q(98834,{coords={
 q(98836,{coords={
 [2647]={{44.4,84.6}}},qgs={248567},sourceQuests={98834},g={
 toy(286643)}})}),
+h(-47,{
+i(285801,{spellID=1318437}),
+i(279284)}),
 h(-56,{
 ah(63717,{type="a",g={
 o(659517,{coords={
@@ -3847,6 +3849,8 @@ o(676760,{coords={
 crit(117199,{achID=63717,id=37})}})}}),
 o(676583,{crs={273788},description="Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",g={
 i(282402,{spellID=1313734})}}),
+o(696116,{coords={
+[2647]={{44.3,73.3}}},description="Spawns after finishing 'Dundun' event."}),
 o(676747,{description="Spawns randomly throughout the Labyrinth."}),
 o(677411,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
 h(-64,{

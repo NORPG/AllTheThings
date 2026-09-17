@@ -1593,8 +1593,8 @@ q(55138,{coords={
 flt(50,{
 i(157787,{b=1,f=113})})}}),
 h(-17,{
-x(5,{awp=50407,g={
-ah(6193,{description="These were obtained by creating a Level 90 Class Trial for each class and specialization.",rwp=60002,type="a",u=2,g={
+x(5,{awp=50004,g={
+ah(6193,{awp=50407,description="These were obtained by creating a Level 90 Class Trial for each class and specialization.",rwp=60002,type="a",u=2,g={
 cl(6,{u=2,g={
 cl(6.252,{u=2,g={
 s(53882,101006,{b=1,c={6},f=24,lvl=35,u=2}),
@@ -1961,7 +1961,7 @@ i(101304,{b=1,c={1},f=52,lvl=35,u=2}),
 i(101305,{b=1,c={1},f=52,lvl=35,u=2}),
 i(101303,{b=1,c={1},f=53,lvl=35,spellID=126237,u=2}),
 i(101306,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}}),
-x(6,{
+x(6,{awp=70003,g={
 ah(9060,{awp=60200,description="These were obtained by boosting a character to Level 100 for each class and specialization.",rwp=70305,type="a",u=2,g={
 cl(6,{u=2,g={
 i(142023,{b=1,f=55,u=2,g={
@@ -2730,8 +2730,8 @@ s(65942,117341,{b=1,c={1},f=7,loc=47,lvl=35,u=2}),
 i(117347,{b=1,c={1},f=52,lvl=35,u=2}),
 i(117348,{b=1,c={1},f=52,lvl=35,u=2}),
 i(117346,{b=1,c={1},f=53,lvl=35,spellID=126237,u=2}),
-i(117349,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}),
-x(7,{
+i(117349,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}}),
+x(7,{awp=80001,g={
 ah(9060,{awp=70003,description="These were obtained by creating a Level 100 Class Trial for each class and specialization.",rwp=80001,type="a",u=2,g={
 cl(6,{u=2,g={
 i(142023,{b=1,f=55,u=2,g={
@@ -3439,9 +3439,9 @@ s(91230,154027,{b=1,c={1},f=7,loc=47,lvl=45,u=2}),
 i(154115,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154114,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154116,{b=1,c={1},f=53,lvl=45,u=2}),
-i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}),
-x(8,{
-ah(10671,{awp=80001,description="These are gained by boosting a character to Level 100. Each class has one default spec except Shamans, Druids and Hunters.",rwp=90001,type="a",u=2,g={
+i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}}),
+x(8,{awp=80001,g={
+ah(10671,{description="These are gained by boosting a character to Level 100. Each class has one default spec except Shamans, Druids and Hunters.",rwp=90001,type="a",u=2,g={
 h(-97,{u=2,g={
 i(156805,{b=1,f=54,lvl=40,u=2}),
 i(156804,{b=1,f=54,lvl=40,u=2}),
@@ -4093,8 +4093,8 @@ s(105849,170912,{b=1,c={1},f=7,loc=47,lvl=50,u=2}),
 i(170754,{b=1,c={1},f=52,lvl=50,u=2}),
 i(170753,{b=1,c={1},f=52,lvl=50,u=2}),
 i(170755,{b=1,c={1},f=53,lvl=50,u=2}),
-i(170756,{b=1,c={1},f=53,lvl=50,u=2})}})}})}})}),
-x(9,{
+i(170756,{b=1,c={1},f=53,lvl=50,u=2})}})}})}})}}),
+x(9,{awp=90002,g={
 h(-7,{awp=80001,description="These are gained by creating a Level 48 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",rwp=90001,u=2,g={
 cl(6,{u=2,g={
 i(160439,{b=1,f=55,u=2,g={
@@ -5228,8 +5228,8 @@ s(91230,154027,{b=1,c={1},f=7,loc=47,lvl=45,u=2}),
 i(154115,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154114,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154116,{b=1,c={1},f=53,lvl=45,u=2}),
-i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}),
-x(10,{
+i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}}),
+x(10,{awp=100002,g={
 ah(14783,{awp=100000,description="These are gained by creating a Level 60 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",type="a",g={
 i(185940,{b=1,spellID=351857}),
 cl(6,{
@@ -5803,8 +5803,8 @@ s(91230,154027,{b=1,c={1},f=7,loc=47,lvl=45,u=2}),
 i(154115,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154114,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154116,{b=1,c={1},f=53,lvl=45,u=2}),
-i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}),
-x(11,{
+i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}}),
+x(11,{awp=110002,g={
 i(243235,{awp=110200,b=1,f=55}),
 ah(15805,{awp=110000,description="These are gained by using a Level 70 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",type="a",g={
 i(185940,{b=1,spellID=351857}),
@@ -6092,7 +6092,7 @@ s(91230,154027,{b=1,c={1},f=7,loc=47,lvl=45}),
 i(154115,{b=1,c={1},f=52,lvl=45}),
 i(154114,{b=1,c={1},f=52,lvl=45}),
 i(154116,{b=1,c={1},f=53,lvl=45}),
-i(154117,{b=1,c={1},f=53,lvl=45})})})}})})}),
+i(154117,{b=1,c={1},f=53,lvl=45})})})}})}})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(67,{icon=374221,r=1}),
@@ -7079,7 +7079,7 @@ s(102664,166353,{f=2,loc=46,races={10}}),
 s(102665,166354,{f=2,loc=47,races={10}})}})}}),
 ra(34,{awp=80001,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",races={34},g={
 q(51483,{coords={
-[1186]={{56.6,31.8}}},lvl=50,qgs={144152},races={34},g={
+[1186]={{56.6,31.8}}},lc={1,"achID",13076},lvl=50,qgs={144152},races={34},sourceAchievements={12509,12510},g={
 ach(13076,{races={34}}),
 s(96942,161008,{f=2,loc=40,races={34}}),
 s(96943,161009,{f=2,loc=41,races={34}}),
@@ -7215,7 +7215,7 @@ s(102307,165936,{f=2,loc=46,races={3}}),
 s(102308,165937,{f=2,loc=47,races={3}})}})}}),
 ah(85,{awp=110002,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Earthen|r.",races={84,85},type="r",g={
 q(82771,{coords={
-[2339]={{29,59.6}}},lvl=50,qgs={224790},races={84,85},g={
+[2339]={{29,59.6}}},lc={1,"achID",40309},lvl=50,qgs={224790},races={84,85},g={
 ach(40309,{races={84,85}}),
 s(220628,224863,{f=2,loc=42,races={84,85}}),
 s(220626,224861,{f=2,loc=40,races={84,85}}),
@@ -7321,7 +7321,7 @@ s(107810,173980,{f=2,loc=41,races={9}}),
 s(107812,173982,{f=2,loc=43,races={9}}),
 s(107807,173977,{f=2,loc=44,races={9}})}})}}),
 ah(86,{awp=120001,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Haranir|r.",races={86,91},type="r",g={
-q(94464,{description="Pops up when you hit level 50.",lvl=50,races={86,91},g={
+q(94464,{description="Pops up when you hit level 50.",lc={1,"achID",61942},lvl=50,races={86,91},g={
 ach(61942,{races={86,91}}),
 s(301671,258817,{b=1,f=2,loc=43,races={86,91}}),
 s(301675,258824,{b=1,f=3,races={86,91}}),
@@ -7343,7 +7343,7 @@ s(301678,258827,{b=1,f=2,loc=46,races={86,91}}),
 s(301676,258825,{b=1,f=2,loc=42,races={86,91}})}})}}),
 ra(28,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",races={28},g={
 q(49783,{coords={
-[650]={{46.6,61}}},lvl=50,qgs={93826},races={28},g={
+[650]={{46.6,61}}},lc={1,"achID",12415},lvl=50,qgs={93826},races={28},sourceAchievements={10059},g={
 ach(12415,{races={28}}),
 s(93070,156668,{f=2,loc=40,races={28}}),
 s(93071,156669,{f=2,loc=41,races={28}}),
@@ -7438,7 +7438,7 @@ s(184624,203178,{f=2,loc=42,races={1}}),
 s(184615,203169,{f=2,loc=47,races={1}})}})}})}}),
 ra(32,{awp=80105,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",races={32},g={
 q(53722,{coords={
-[1161]={{67.8,21.8}}},lvl=50,qgs={150941},races={32},g={
+[1161]={{67.8,21.8}}},lc={1,"achID",13504},lvl=50,qgs={150941},races={32},sourceAchievements={12891,13466,13467},g={
 ach(13504,{races={32}}),
 s(101198,165002,{f=2,loc=40,races={32}}),
 s(101199,165003,{f=2,loc=41,races={32}}),
@@ -7450,7 +7450,7 @@ s(101203,165007,{f=2,loc=46,races={32}}),
 s(101204,165008,{f=2,loc=47,races={32}})}})}}),
 ra(30,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",races={30},g={
 q(49782,{coords={
-[940]={{42.96,24.16}}},lvl=50,qgs={130993},races={30},g={
+[940]={{42.96,24.16}}},lc={1,"achID",12414},lvl=50,qgs={130993},races={30},sourceAchievements={12066},g={
 ach(12414,{races={30}}),
 s(93094,156699,{f=2,loc=40,races={30}}),
 s(93095,156700,{f=2,loc=41,races={30}}),
@@ -7462,7 +7462,7 @@ s(93099,156704,{f=2,loc=46,races={30}}),
 s(93100,156705,{f=2,loc=47,races={30}})}})}}),
 ra(36,{awp=80001,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",races={36},g={
 q(51484,{coords={
-[85]={{70.6,44.6}}},lvl=50,qgs={143845},races={36},g={
+[85]={{70.6,44.6}}},lc={1,"achID",13077},lvl=50,qgs={143845},races={36},sourceAchievements={12509,12510},g={
 ach(13077,{races={36}}),
 s(96982,161050,{f=2,loc=40,races={36}}),
 s(96983,161051,{f=2,loc=41,races={36}}),
@@ -7490,7 +7490,7 @@ s(96935,161001,{f=2,loc=46,races={36}}),
 s(96936,161002,{f=2,loc=47,races={36}})}})}}),
 ra(37,{awp=80300,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",races={37},g={
 q(58436,{coords={
-[1462]={{73,33.4}}},lvl=50,maps={1573},qgs={158145},races={37},g={
+[1462]={{73,33.4}}},lc={1,"achID",14014},lvl=50,maps={1573},qgs={158145},races={37},sourceAchievements={13553,13700},g={
 ach(14014,{races={37}}),
 s(107794,173961,{f=2,loc=40,races={37}}),
 s(107796,173963,{f=2,loc=41,races={37}}),
@@ -7542,7 +7542,7 @@ s(190115,208762,{f=25})}}),
 de(4423,{awp=110207,itemID=248401,races={4},spellID=1247069})}})}}),
 ra(27,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",races={27},g={
 q(49784,{coords={
-[680]={{59.4,85.4}}},lvl=50,qgs={131326},races={27},g={
+[680]={{59.4,85.4}}},lc={1,"achID",12413},lvl=50,qgs={131326},races={27},sourceAchievements={11340},g={
 ach(12413,{races={27}}),
 s(93077,156675,{f=2,loc=40,races={27}}),
 s(93078,156676,{f=2,loc=41,races={27}}),
@@ -7906,7 +7906,7 @@ s(189766,208474,{f=2,loc=41}),
 s(190178,209065,{f=9})}})}})}}),
 ra(29,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",maps={971},races={29},g={
 q(49928,{coords={
-[971]={{28.6,22.3}}},lvl=50,qgs={131345},races={29},g={
+[971]={{28.6,22.3}}},lc={1,"achID",12291},lvl=50,qgs={131345},races={29},sourceAchievements={12066},g={
 ach(12291,{races={29}}),
 s(93086,156690,{f=2,loc=40,races={29}}),
 s(93087,156691,{f=2,loc=41,races={29}}),
@@ -7919,7 +7919,7 @@ s(93091,156695,{f=2,loc=46,races={29}}),
 s(93092,156696,{f=2,loc=47,races={29}})}})}}),
 ra(35,{awp=80300,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",races={35},g={
 q(58435,{coords={
-[864]={{56.8,49.8}}},lvl=50,qgs={124108},races={35},g={
+[864]={{56.8,49.8}}},lc={1,"achID",14002},lvl=50,qgs={124108},races={35},sourceAchievements={12066},g={
 ach(14002,{races={35}}),
 s(107800,173968,{f=2,loc=40,races={35}}),
 s(107803,173971,{f=2,loc=41,races={35}}),
@@ -7960,7 +7960,7 @@ s(107817,174002,{f=2,loc=40,races={22}}),
 s(107813,173998,{f=2,loc=43,races={22}})}})}}),
 ra(31,{awp=80105,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",races={31},g={
 q(53721,{coords={
-[1165]={{42.2,9.4}}},lvl=50,qgs={146335},races={31},g={
+[1165]={{42.2,9.4}}},lc={1,"achID",13503},lvl=50,qgs={146335},races={31},sourceAchievements={12479,13466,13467},g={
 ach(13503,{races={31}}),
 s(101189,164993,{f=2,loc=40,races={31}}),
 s(101190,164994,{f=2,loc=41,races={31}}),

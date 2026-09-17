@@ -12103,7 +12103,7 @@ q(25466,{awp=40003,coords={
 [69]={{48.7,44.8}}},crs={5461,5462},lvl=15,qgs={14637},qis={18958},g={
 s(7551,19039,{b=1,f=5,loc=40})}}),
 q(27133,{awp=40003,coords={
-[69]={{46,49.1}}},isBreadcrumb=1,lvl=15,qgs={3936},r=2}),
+[69]={{46,49.1}}},isBreadcrumb=1,lvl=15,nextQuests={27125},qgs={3936},r=2}),
 q(25345,{awp=40003,coords={
 [69]={{74.4,43.3}}},lvl=15,qgs={8115},r=1,sourceQuests={25338},g={
 i(9596),
@@ -68402,27 +68402,28 @@ crit(19380,{achID=6541,id=6})}}),
 ach(6538,{r=1,g={
 crit(19385,{achID=6541,id=6})}})}),
 flt(101,{pb=1,g={
-p(724,{npcID=63550,pb=1,g={
+p(724,{description="Can be found spread through the zone around the snowline, and as secondary pets.",npcID=63550,pb=1,g={
 crit(21823,{achID=6589,id=1})}}),
-p(725,{npcID=63551,pb=1,g={
+p(725,{coords={
+[379]={{39.2,82.1},{40,68.2},{47.2,60.2}}},description="Respawns after some minutes as long as their Alpine Foxling parent is still alive. Can be found spread through the zone around the snowline, and common as secondary pets.",npcID=63551,pb=1,g={
 crit(21824,{achID=6589,id=2})}}),
-p(747,{coords={
-[379]={{55,89.2}}},npcID=63850,pb=1}),
-p(1166,{awp=50100,description="This is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",npcID=68846,pb=1}),
-p(726,{npcID=63547,pb=1,g={
+p(1166,{awp=50100,description="Can be found through the snowy valleys of Kun-Lai Summit.\n\nThis is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",npcID=68846,pb=1}),
+p(726,{description="Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",npcID=63547,pb=1,g={
 crit(21825,{achID=6589,id=32})}}),
-p(727,{npcID=59702,pb=1,g={
+p(727,{description="Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",npcID=59702,pb=1,g={
 crit(21826,{achID=6589,id=33})}}),
-p(679,{npcID=64248,pb=1,g={
+p(679,{coords={
+[379]={{35.5,56.6}}},description="Can be found through the snowy valleys of Kun-Lai Summit.",npcID=64248,pb=1,g={
 crit(21827,{achID=6589,id=49})}}),
 p(728,{coords={
-[379]={{60,86.6}}},description="Can sometimes be easier to find as a secondary pet. Can accompany almost any other pet in Kun-Lai.",npcID=63585,pb=1,g={
+[379]={{60,86.6}}},description="Can sometimes be found as a primary pet at the given coords. Otherwise common as a secondary pet through the zone.",npcID=63585,pb=1,g={
 crit(21828,{achID=6589,id=50})}}),
-p(729,{npcID=63557,pb=1,g={
+p(729,{description="Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63557,pb=1,g={
 crit(21829,{achID=6589,id=52})}}),
-p(730,{npcID=63558,pb=1,g={
+p(730,{coords={
+[379]={{44,70.4},{44.2,79.9},{64.2,25.4},{75.3,15.6}}},description="Respawns after some minutes as long as their Tolai Hare parent is still alive. Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63558,pb=1,g={
 crit(21830,{achID=6589,id=53})}}),
-p(731,{npcID=63555,pb=1,g={
+p(731,{description="Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63555,pb=1,g={
 crit(21831,{achID=6589,id=55})}})}}),
 h(-30,{
 exp(6076),
@@ -68739,7 +68740,7 @@ i(80245)}}),
 q(31847,{coords={
 [379]={{34.6,59}}},isBreadcrumb=1,lvl=30,nextQuests={31001},qgs={61512}}),
 q(31695,{altQuests={31386,31388},coords={
-[379]={{54.1,83.4},{62.3,79.6}}},isBreadcrumb=1,lvl=25,nextQuests={30814},qgs={63535,63542},sourceQuests={30660,30661,30662,30663}}),
+[379]={{54.1,83.4},{62.3,79.6}}},description="Might not be obtainable until you complete Hero's Call-/Warchief's Commands: Townlong Steppes.",isBreadcrumb=1,lvl=25,nextQuests={30814},qgs={63535,63542},sourceQuests={30660,30661,30662,30663}}),
 q(30583,{coords={
 [379]={{54.1,83.2}}},lvl=20,qgs={59450},r=2,sourceQuests={30514}}),
 q(30604,{coords={
@@ -75577,21 +75578,20 @@ ach(6979,{
 crit(20128,{achID=6974,id=7})})}),
 flt(101,{pb=1,g={
 p(751,{coords={
-[390]={{30.2,77.6},{71.2,40.2},{76.2,60}}},npcID=63847,pb=1,g={
+[390]={{30.2,77.6},{71.2,40.2},{76.2,60}}},description="also common as a secondary pet.",npcID=63847,pb=1,g={
 crit(20827,{achID=6350,id=5})}}),
 p(747,{coords={
-[390]={{21.6,60.8},{23.2,27.2},{85,48.4}}},npcID=63850,pb=1}),
+[379]={{53.7,89.2},{56,89}}},description="Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",npcID=63850,pb=1}),
 p(383,{coords={
-[390]={{34,78.6},{72.6,27.6},{87,46.2}}},npcID=61088,pb=1}),
-p(748,{npcID=63838,pb=1,g={
+[390]={{34,78.6},{72.6,27.6},{87,46.2}}},description="In commonly found by the riverbed.",npcID=61088,pb=1}),
+p(748,{description="Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",npcID=63838,pb=1,g={
 crit(20826,{achID=6350,id=7})}}),
 p(749,{coords={
-[390]={{11.2,70},{48.2,30.8}}},npcID=63841,pb=1,g={
+[390]={{11.2,70}}},description="also common as a secondary pet.",npcID=63841,pb=1,g={
 crit(20828,{achID=6350,id=8})}}),
 p(750,{coords={
-[390]={{11.2,70.6},{38.6,64.8}}},npcID=63842,pb=1}),
-p(752,{coords={
-[390]={{24.6,30.8},{69,44.8}}},npcID=63849,pb=1})}}),
+[390]={{11.2,70},{38.6,64.8}}},description="also common as a secondary pet.",npcID=63842,pb=1}),
+p(752,{description="Can sometimes be found by the riverbed, also common as a secondary pet.",npcID=63849,pb=1})}}),
 h(-30,{
 exp(6149,{collectible=false,coords={
 [390]={{18.8,22}}}}),
@@ -76223,7 +76223,7 @@ s(42369,83189,{b=1,f=4,loc=46,lvl=34}),
 s(42424,83269,{b=1,f=23,lvl=34})}})}),
 h(-63,{
 i(87779,{b=1,description="Can randomly drop from any Mogu related mob in the zone.",spellID=127173}),
-i(85582,{b=1,crs={63610,63611,63641},spellID=124178}),
+i(85582,{b=1,crs={63610,63611,63641},description="Not techically removed with 5.4.0, cages can still be opened and you can get an assistant in battle for a short duration. Other than that, it is useless.",rwp=50400,spellID=124178,u=2}),
 i(86547,{spellID=126180}),
 i(86546,{b=1,cost={{"i",86547,10}},spellID=126182})})}}),
 m(376,{icon=618317,lore="Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",maps={377},petBattleLvl=23,lvl=15,g={
@@ -106053,6 +106053,15 @@ n(133536,{coords={
 [1161]={{73.5,8.57}}},r=2,g={
 i(160298),
 r(253145,{awp=80105,b=1,itemID=168022,lvl=10,requireSkill=164,skillID=2437,sourceQuests={50275,50279}})}}),
+n(142095,{coords={
+[1161]={{73.2,11.3}}},r=2,g={
+i(160398),
+i(160400),
+i(160709),
+i(160705,{f=55,spellID=177784}),
+i(160712),
+i(160710),
+i(160399)}}),
 n(246721,{awp=110207,coords={
 [1161]={{56.3,45.8}}},r=2,g={
 de(9039,{cost={{"c",1560,450}},itemID=252390,spellID=1254606}),
@@ -114100,6 +114109,15 @@ i(156642,{b=1,spellID=260486}),
 i(156643,{b=1,spellID=260487}),
 i(156640,{b=1,spellID=260482}),
 i(156641,{b=1,spellID=260485})}}),
+n(141936,{coords={
+[1165]={{44.2,32.2}}},r=1,g={
+i(160398),
+i(160400),
+i(160709),
+i(160705,{f=55,spellID=177784}),
+i(160712),
+i(160710),
+i(160399)}}),
 n(132097,{coords={
 [1165]={{56,32.2}}},g={
 p(2422,{b=1,cost={{"i",163036,100}},itemID=163508,npcID=143203,spellID=279226}),
@@ -117923,11 +117941,12 @@ i(156860),
 i(160752)}}),
 q(48400,{coords={
 [862]={{40,76.5}}},lvl=10,qgs={131580},r=1,sourceQuests={48317},g={
-s(92185,155310,{b=1,f=3,r=1}),
+s(94434,158422,{b=1,f=5,loc=47,r=1}),
 s(94431,158419,{b=1,f=7,loc=47,r=1}),
-s(94432,158420,{b=1,f=4,loc=47,r=1}),
+s(92185,155310,{b=1,f=3,r=1}),
 s(94433,158421,{b=1,f=6,loc=47,r=1}),
-s(94434,158422,{b=1,f=5,loc=47,r=1})}}),
+s(94432,158420,{b=1,f=4,loc=47,r=1}),
+s(91984,155091,{b=1,f=3,r=2})}}),
 q(55248,{coords={
 [862]={{68.1,41.7}}},isDaily=1,lvl=50,qgs={151319},r=1,sourceQuests={55258}}),
 q(47418,{coords={
@@ -173735,19 +173754,16 @@ o(612282,{coords={
 [2437]={{26,37.6},{27.4,36},{27.4,37.4},{27.4,39.4},{27.5,35.9},{27.6,34.8},{28.1,37},{28.1,39},{28.4,34.2},{28.5,38.5},{28.6,38.2}}},g={
 i(258324)}})}}),
 q(91810,{coords={
-[2437]={{45.3,28.5}}},isWorldQuest=1,g={
-i(260890)}}),
+[2437]={{45.3,28.5}}},isWorldQuest=1,qis={260890}}),
 q(91805,{coords={
 [2437]={{42.2,47.8}}},isWorldQuest=1,g={
 o(574830,{coords={
 [2437]={{37.8,49.6},{38.3,48.9},{38.8,49.1},{38.9,44.6},{39.1,50.1},{39.2,50.5},{39.4,45.6},{39.6,45.6},{39.8,44.4},{40.2,48.4},{40.3,45.2},{40.4,49},{40.7,47},{40.7,47.8},{41.1,48.9},{41.3,49.5},{41.5,48.5},{41.6,47.5},{41.6,49.5}}},g={
 i(252370)}})}}),
 q(91804,{coords={
-[2437]={{49.4,51.4}}},isWorldQuest=1,g={
-i(257241,{spellID=1261428})}}),
+[2437]={{49.4,51.4}}},isWorldQuest=1,qis={257241}}),
 q(91798,{coords={
-[2437]={{40.2,77.1}}},isWorldQuest=1,g={
-i(252003)}}),
+[2437]={{40.2,77.1}}},isWorldQuest=1,qis={252003}}),
 q(91800,{coords={
 [2437]={{25.8,65.2}}},isWorldQuest=1,g={
 o(612932,{coords={
@@ -173761,8 +173777,7 @@ o(574750,{coords={
 [2437]={{48.6,64.9},{48.7,66.1},{49.5,66.2},{49.8,63.4},{50.5,64.5},{51.4,63.9},{51.4,65.7},{51.9,64.7},{52,65.5},{52.7,63.4},{53.1,64.8},{53.9,66.3}}},g={
 i(249498)}})}}),
 q(91808,{coords={
-[2437]={{30,30}}},isWorldQuest=1,g={
-i(238962,{spellID=1226825}),
+[2437]={{30,30}}},isWorldQuest=1,qis={238962},g={
 o(525374,{coords={
 [2437]={{28.9,29.7},{29.2,30.5},{29.3,28.3},{29.3,29},{29.5,29.6},{29.9,31},{30.3,28.4},{30.4,27.3},{30.5,27.3},{30.5,29.8},{30.6,30.8},{30.7,27.6},{30.7,29.1},{31.7,29.8}}},g={
 i(238964)}})}}),
@@ -173770,17 +173785,13 @@ q(91796,{coords={
 [2536]={{73.6,35.6}}},isWorldQuest=1}),
 q(91390,{isWorldQuest=1}),
 q(91399,{coords={
-[2437]={{22.6,73.2}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246878},sourceQuests={91390},g={
-i(246439)}}),
+[2437]={{22.6,73.2}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246878},qis={246439},sourceQuests={91390}}),
 q(91400,{coords={
 [2437]={{22.5,79.7}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246879},sourceQuests={91390}}),
 q(91401,{coords={
-[2437]={{28.4,76.8}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246880},sourceQuests={91390},g={
-i(246440)}}),
+[2437]={{28.4,76.8}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246880},qis={246440},sourceQuests={91390}}),
 q(91398,{coords={
-[2437]={{27.3,72.6}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246877},sourceQuests={91390},g={
-i(246436),
-i(246437)}}),
+[2437]={{27.3,72.6}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246877},qis={246436,246437},sourceQuests={91390}}),
 q(91402,{coords={
 [2437]={{25.5,74.6}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246881},sourceQuests={91390}}),
 q(91801,{coords={

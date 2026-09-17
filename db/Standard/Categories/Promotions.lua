@@ -235,7 +235,10 @@ de(15153,{awp=120100,description="Watch any eligible World of Warcraft stream on
 mnt(1270520,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 8 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263449,lvl=10,rwp=120100}),
 toy(279590,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 12 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",rwp=120100}),
 ach(63685,{awp=120100,rwp=120100,g={
-de(28350,{itemID=281107,spellID=1310204})}})}),
+de(28350,{itemID=281107,spellID=1310204})}}),
+p(5124,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278231,npcID=269374,rwp=120100,spellID=1304106,u=3}),
+p(5123,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278230,npcID=269373,rwp=120100,spellID=1304105,u=3}),
+p(5127,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278688,npcID=269780,rwp=120100,spellID=1305392,u=3})}),
 h(-521,{u=3,g={
 x(1,{awp=10100,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=40006,u=2,g={
@@ -595,7 +598,24 @@ p(1255,{b=1,itemID=128423,npcID=71655,spellID=143637,u=3,g={
 crit(34641,{achID=10309,id=2,u=3})}})}}),
 h(-537,{awp=80100,description="These rewards are available to anyone who purchases Warcraft 3: Refogred, Spoils of War Edition.",u=3,g={
 ach(13196,{u=3}),
-mnt(281554,{b=1,itemID=164571,lvl=10,u=3})}})}}),
+mnt(281554,{b=1,itemID=164571,lvl=10,u=3})}}),
+h(-794,{awp=120100,description="These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",u=3,g={
+h(-522,{u=3,g={
+mnt(1309109,{itemID=280519,u=3}),
+en(271755,{u=3}),
+toy(280541,{u=3}),
+i(280623,{u=3}),
+i(268722,{u=3}),
+i(268339,{u=3}),
+i(268338,{u=3}),
+i(268337,{u=3}),
+i(268340,{u=3})}}),
+h(-523,{u=3,g={
+en(279182,{u=3}),
+mnt(1309376,{itemID=280599,u=3})}}),
+h(-795,{u=3,g={
+i(280554,{u=3}),
+i(280556,{u=3})}})}})}}),
 h(-538,{
 h(-539,{awp=70100,maps={47},u=2,g={
 h(-63,{u=2,g={

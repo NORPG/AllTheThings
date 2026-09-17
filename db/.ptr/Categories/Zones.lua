@@ -68402,27 +68402,28 @@ crit(19380,{achID=6541,id=6})}}),
 ach(6538,{r=1,g={
 crit(19385,{achID=6541,id=6})}})}),
 flt(101,{pb=1,g={
-p(724,{npcID=63550,pb=1,g={
+p(724,{description="Can be found spread through the zone around the snowline, and as secondary pets.",npcID=63550,pb=1,g={
 crit(21823,{achID=6589,id=1})}}),
-p(725,{npcID=63551,pb=1,g={
+p(725,{coords={
+[379]={{39.2,82.1},{40,68.2},{47.2,60.2}}},description="Respawns after some minutes as long as their Alpine Foxling parent is still alive. Can be found spread through the zone around the snowline, and common as secondary pets.",npcID=63551,pb=1,g={
 crit(21824,{achID=6589,id=2})}}),
-p(747,{coords={
-[379]={{55,89.2}}},npcID=63850,pb=1}),
-p(1166,{awp=50100,description="This is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",npcID=68846,pb=1}),
-p(726,{npcID=63547,pb=1,g={
+p(1166,{awp=50100,description="Can be found through the snowy valleys of Kun-Lai Summit.\n\nThis is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",npcID=68846,pb=1}),
+p(726,{description="Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",npcID=63547,pb=1,g={
 crit(21825,{achID=6589,id=32})}}),
-p(727,{npcID=59702,pb=1,g={
+p(727,{description="Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",npcID=59702,pb=1,g={
 crit(21826,{achID=6589,id=33})}}),
-p(679,{npcID=64248,pb=1,g={
+p(679,{coords={
+[379]={{35.5,56.6}}},description="Can be found through the snowy valleys of Kun-Lai Summit.",npcID=64248,pb=1,g={
 crit(21827,{achID=6589,id=49})}}),
 p(728,{coords={
-[379]={{60,86.6}}},description="Can sometimes be easier to find as a secondary pet. Can accompany almost any other pet in Kun-Lai.",npcID=63585,pb=1,g={
+[379]={{60,86.6}}},description="Can sometimes be found as a primary pet at the given coords. Otherwise common as a secondary pet through the zone.",npcID=63585,pb=1,g={
 crit(21828,{achID=6589,id=50})}}),
-p(729,{npcID=63557,pb=1,g={
+p(729,{description="Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63557,pb=1,g={
 crit(21829,{achID=6589,id=52})}}),
-p(730,{npcID=63558,pb=1,g={
+p(730,{coords={
+[379]={{44,70.4},{44.2,79.9},{64.2,25.4},{75.3,15.6}}},description="Respawns after some minutes as long as their Tolai Hare parent is still alive. Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63558,pb=1,g={
 crit(21830,{achID=6589,id=53})}}),
-p(731,{npcID=63555,pb=1,g={
+p(731,{description="Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63555,pb=1,g={
 crit(21831,{achID=6589,id=55})}})}}),
 h(-30,{
 exp(6076),
@@ -68739,7 +68740,7 @@ i(80245)}}),
 q(31847,{coords={
 [379]={{34.6,59}}},isBreadcrumb=1,lvl=30,nextQuests={31001},qgs={61512}}),
 q(31695,{altQuests={31386,31388},coords={
-[379]={{54.1,83.4},{62.3,79.6}}},isBreadcrumb=1,lvl=25,nextQuests={30814},qgs={63535,63542},sourceQuests={30660,30661,30662,30663}}),
+[379]={{54.1,83.4},{62.3,79.6}}},description="Might not be obtainable until you complete Hero's Call-/Warchief's Commands: Townlong Steppes.",isBreadcrumb=1,lvl=25,nextQuests={30814},qgs={63535,63542},sourceQuests={30660,30661,30662,30663}}),
 q(30583,{coords={
 [379]={{54.1,83.2}}},lvl=20,qgs={59450},r=2,sourceQuests={30514}}),
 q(30604,{coords={
@@ -75577,21 +75578,20 @@ ach(6979,{
 crit(20128,{achID=6974,id=7})})}),
 flt(101,{pb=1,g={
 p(751,{coords={
-[390]={{30.2,77.6},{71.2,40.2},{76.2,60}}},npcID=63847,pb=1,g={
+[390]={{30.2,77.6},{71.2,40.2},{76.2,60}}},description="also common as a secondary pet.",npcID=63847,pb=1,g={
 crit(20827,{achID=6350,id=5})}}),
 p(747,{coords={
-[390]={{21.6,60.8},{23.2,27.2},{85,48.4}}},npcID=63850,pb=1}),
+[379]={{53.7,89.2},{56,89}}},description="Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",npcID=63850,pb=1}),
 p(383,{coords={
-[390]={{34,78.6},{72.6,27.6},{87,46.2}}},npcID=61088,pb=1}),
-p(748,{npcID=63838,pb=1,g={
+[390]={{34,78.6},{72.6,27.6},{87,46.2}}},description="In commonly found by the riverbed.",npcID=61088,pb=1}),
+p(748,{description="Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",npcID=63838,pb=1,g={
 crit(20826,{achID=6350,id=7})}}),
 p(749,{coords={
-[390]={{11.2,70},{48.2,30.8}}},npcID=63841,pb=1,g={
+[390]={{11.2,70}}},description="also common as a secondary pet.",npcID=63841,pb=1,g={
 crit(20828,{achID=6350,id=8})}}),
 p(750,{coords={
-[390]={{11.2,70.6},{38.6,64.8}}},npcID=63842,pb=1}),
-p(752,{coords={
-[390]={{24.6,30.8},{69,44.8}}},npcID=63849,pb=1})}}),
+[390]={{11.2,70},{38.6,64.8}}},description="also common as a secondary pet.",npcID=63842,pb=1}),
+p(752,{description="Can sometimes be found by the riverbed, also common as a secondary pet.",npcID=63849,pb=1})}}),
 h(-30,{
 exp(6149,{collectible=false,coords={
 [390]={{18.8,22}}}}),
@@ -76223,7 +76223,7 @@ s(42369,83189,{b=1,f=4,loc=46,lvl=34}),
 s(42424,83269,{b=1,f=23,lvl=34})}})}),
 h(-63,{
 i(87779,{b=1,description="Can randomly drop from any Mogu related mob in the zone.",spellID=127173}),
-i(85582,{b=1,crs={63610,63611,63641},spellID=124178}),
+i(85582,{b=1,crs={63610,63611,63641},description="Not techically removed with 5.4.0, cages can still be opened and you can get an assistant in battle for a short duration. Other than that, it is useless.",rwp=50400,spellID=124178,u=2}),
 i(86547,{spellID=126180}),
 i(86546,{b=1,cost={{"i",86547,10}},spellID=126182})})}}),
 m(376,{icon=618317,lore="Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",maps={377},petBattleLvl=23,lvl=15,g={

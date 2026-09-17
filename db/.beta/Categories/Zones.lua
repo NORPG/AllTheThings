@@ -1113,8 +1113,8 @@ ach(6585,{awp=50004,pb=1,g={
 crit(19410,{achID=6590,id=2,pb=1})}}),
 ach(6612,{awp=50004,pb=1,g={
 crit(19430,{achID=6611,id=2,pb=1})}}),
-ach(1678,{awp=50004,g={
-crit(6144,{achID=7520,id=1})}}),
+ach(1678,{awp=30002,g={
+crit(6144,{achID=7520,awp=50004,id=1})}}),
 ach(6602,{awp=50004,pb=1,r=1,g={
 crit(19419,{achID=6607,id=5,pb=1})}}),
 ah(61051,{awp=120000,pb=1,type="a",g={
@@ -1477,7 +1477,7 @@ crit(17772,{achID=5851,id=3})}}),
 ach(5475,{awp=40200,r=1,requireSkill=185,g={
 crit(16244,{achID=5475,id=6,providers={{"s",99249}},r=1}),
 crit(17746,{achID=5845,id=2})}}),
-ach(1836,{providers={{"i",34486}},requireSkill=356}),
+ach(1836,{awp=30002,providers={{"i",34486}},requireSkill=356}),
 crit(6635,{achID=604,awp=30002,pvp=1})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",467,471,466,420,418}}}),
 h(-30,{
@@ -12080,7 +12080,7 @@ q(25466,{awp=40003,coords={
 [69]={{48.7,44.8}}},crs={5461,5462},lvl=15,qgs={14637},qis={18958},g={
 s(7551,19039,{b=1,f=5,loc=40})}}),
 q(27133,{awp=40003,coords={
-[69]={{46,49.1}}},isBreadcrumb=1,lvl=15,qgs={3936},r=2}),
+[69]={{46,49.1}}},isBreadcrumb=1,lvl=15,nextQuests={27125},qgs={3936},r=2}),
 q(25345,{awp=40003,coords={
 [69]={{74.4,43.3}}},lvl=15,qgs={8115},r=1,sourceQuests={25338},g={
 i(9596),
@@ -20331,8 +20331,8 @@ s(312,1493,{awp=100107,coords={
 [64]={{86.4,49},{87.6,52},{88.6,46.8},{90.2,54.4}}},crs={40062},f=25,lvl=10}),
 r(6692,{crs={10760},itemID=5773,requireSkill=197,rwp=40003,skillID=2540,u=2})})}}),
 h(-388,{maps={77,83},["zone-text-areaID"]=1769,g={
-h(-12,{
-ach(944,{minReputation={576,42000}})}),
+h(-12,{awp=30002,g={
+ach(944,{minReputation={576,42000}})}}),
 h(-31,{awp=30002,g={
 faction(576,{icon=236696,OnTooltip=_.OnTooltipDB.ForTimbermawHold,g={
 crit(2011,{achID=942,id=2,r=2}),
@@ -21511,7 +21511,7 @@ crit(16182,{achID=5443,coords={
 [83]={{67.6,54.2}}},crs={7457,7458,7459,7460,49235},id=8,providers={{"s",93165}}})}}),
 ach(857,{awp=30002,g={
 crit(1503,{achID=43,id=7})}}),
-ach(3356,{providers={{"i",13086}},r=2}),
+ach(3356,{awp=30002,providers={{"i",13086}},r=2}),
 ach(4940,{awp=40003,g={
 crit(15243,{achID=1678,id=1})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",441,633,472,471}},g={
@@ -22142,8 +22142,8 @@ ach(6613,{awp=50004,pb=1,g={
 crit(19429,{achID=6611,id=4,pb=1})}}),
 ach(12456,{awp=70305,r=2,g={
 crit(39733,{achID=1676,id=1})}}),
-ach(1676,{awp=50004,g={
-crit(6143,{achID=7520,id=1})}}),
+ach(1676,{awp=30002,g={
+crit(6143,{achID=7520,awp=50004,id=1})}}),
 ach(6603,{awp=50004,pb=1,r=2,g={
 crit(19418,{achID=6607,id=5,pb=1})}}),
 ach(12455,{awp=70305,r=2,g={
@@ -31561,7 +31561,7 @@ i(206377,{awp=100105,b=1,crs={10411},f=55,maps={317},spellID=413328}),
 n(206148,{cost={{"i",206377,1},{"i",13180,1},{"i",12846,1}},description="When you have both the ward and holy water, head to the entrance of the Crusader's Cathedral, but don't enter there - Instead, use your Ward of Naxxramas and turn to the left. If done correctly, you will see a Dread Ward of Naxxramas right next to the gates there, Once you find the Dread Ward, toss your  Stratholme Holy Water in it.\n\nIf done correctly, you will receive a zone-wide yell, and a debuff called  Sleight of Hand. Once you get this debuff, you have 5 minutes to run all the way to the Undead side of Stratholme, to the gate to the left of the Necropolis where Lord Aurius Rivendare is located. You MUST kill Lord Aurius Rivendare to open the gate. If you arrive in time, a Hand of Naxxramas NPC will be there, and you will be able to use your Argent Dawn Commission to burn it to a crisp.",maps={318},questID=76261,sourceQuests={76257}}),
 n(16116,{coords={
 [23]={{75.5,52.8}}},description="Talk to Archmage after defeating Hand of Naxxramas",questID=76262,sourceQuests={76261}}),
-h(-45,{
+h(-45,{awp=30002,g={
 q(76263,{altQuests={76264,76265},coords={
 [23]={{75.5,52.8}}},cost={{"i",12811,1},{"i",14344,6},{"i",12363,5}},maxReputation={529,21000},minReputation={529,9000},qgs={16116},sourceQuests={76262},g={
 ach(18372)}}),
@@ -31570,7 +31570,7 @@ q(76264,{altQuests={76263,76265},coords={
 ach(18372)}}),
 q(76265,{altQuests={76263,76264},coords={
 [23]={{75.5,52.8}}},minReputation={529,42000},qgs={16116},sourceQuests={76262},g={
-ach(18372)}})})}}),
+ach(18372)}})}})}}),
 ah(413594,{awp=100105,description="See Stage 6 'Forgotten Knowledge' in Naxxramas.",type="s",g={
 n(16365,{coords={
 [23]={{75.6,52}}},description="To unlock this vendor you are required to complete the 'Wards of the Dread Citadel' stage 6 named 'Forgotten Knowledge in Naxxramas.",sourceQuests={76290},g={
@@ -31654,7 +31654,7 @@ ach(771,{awp=30002,g={
 crit(1286,{achID=42,id=25})}}),
 ach(5442,{awp=40003,g={
 de(4813,{awp=110207,itemID=248796,spellID=1247782})}}),
-ach(946,{maps={22},minReputation={529,42000}})}),
+ach(946,{awp=30002,maps={22},minReputation={529,42000}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",398}},g={
 p(626,{npcID=61829,pb=1,g={
 crit(21635,{achID=6585,id=6,pb=1}),
@@ -36474,9 +36474,9 @@ ach(781,{awp=30002,g={
 crit(1293,{achID=42,id=17})}}),
 ach(4906,{awp=40003,g={
 crit(15213,{achID=1676,id=1})}}),
-ach(940,{sourceQuests={208},g={
+ach(940,{awp=30002,sourceQuests={208},g={
 de(4841,{awp=110207,itemID=248808,spellID=1247794}),
-crit(2008,{achID=941,awp=30002,id=2})}})}),
+crit(2008,{achID=941,id=2})}})}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",404,424,401}},g={
 p(406,{npcID=61319,pb=1,g={
 crit(21615,{achID=6585,id=8,pb=1}),
@@ -39397,7 +39397,7 @@ q(603,{coords={
 [1416]={{18.8,78.5}}},qgs={2543},r=2,rwp=40003,sourceQuests={602},u=2}),
 q(7838,{coords={
 [210]={{45,25.4}}},cost={{"i",18706,12}},lvl=10,pvp=1,qgs={14508},repeatable=1,sourceQuests={7810},g={
-ach(396,{providers={{"i",19024}},pvp=1}),
+ach(396,{awp=30002,providers={{"i",19024}},pvp=1}),
 i(19024,{b=1,f=53,pvp=1,spellID=23506})}}),
 q(7810,{coords={
 [210]={{46.6,26.1}}},lvl=10,providers={{"i",18706}},pvp=1}),
@@ -39908,7 +39908,7 @@ n(14492,{coords={
 h(-56,{
 o(179697,{coords={
 [210]={{46.6,26.1}}},description="WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",pvp=1,g={
-ach(389,{pvp=1}),
+ach(389,{awp=30002,pvp=1}),
 i(18706,{b=1,f=53,lvl=10,pvp=1}),
 s(7446,18711,{f=6,loc=43,lvl=13,pvp=1}),
 s(7445,18710,{f=5,loc=43,lvl=13,pvp=1}),
@@ -68258,27 +68258,28 @@ crit(19380,{achID=6541,id=6})}}),
 ach(6538,{r=1,g={
 crit(19385,{achID=6541,id=6})}})}),
 flt(101,{pb=1,g={
-p(724,{npcID=63550,pb=1,g={
+p(724,{description="Can be found spread through the zone around the snowline, and as secondary pets.",npcID=63550,pb=1,g={
 crit(21823,{achID=6589,id=1})}}),
-p(725,{npcID=63551,pb=1,g={
+p(725,{coords={
+[379]={{39.2,82.1},{40,68.2},{47.2,60.2}}},description="Respawns after some minutes as long as their Alpine Foxling parent is still alive. Can be found spread through the zone around the snowline, and common as secondary pets.",npcID=63551,pb=1,g={
 crit(21824,{achID=6589,id=2})}}),
-p(747,{coords={
-[379]={{55,89.2}}},npcID=63850,pb=1}),
-p(1166,{awp=50100,description="This is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",npcID=68846,pb=1}),
-p(726,{npcID=63547,pb=1,g={
+p(1166,{awp=50100,description="Can be found through the snowy valleys of Kun-Lai Summit.\n\nThis is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",npcID=68846,pb=1}),
+p(726,{description="Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",npcID=63547,pb=1,g={
 crit(21825,{achID=6589,id=32})}}),
-p(727,{npcID=59702,pb=1,g={
+p(727,{description="Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",npcID=59702,pb=1,g={
 crit(21826,{achID=6589,id=33})}}),
-p(679,{npcID=64248,pb=1,g={
+p(679,{coords={
+[379]={{35.5,56.6}}},description="Can be found through the snowy valleys of Kun-Lai Summit.",npcID=64248,pb=1,g={
 crit(21827,{achID=6589,id=49})}}),
 p(728,{coords={
-[379]={{60,86.6}}},description="Can sometimes be easier to find as a secondary pet. Can accompany almost any other pet in Kun-Lai.",npcID=63585,pb=1,g={
+[379]={{60,86.6}}},description="Can sometimes be found as a primary pet at the given coords. Otherwise common as a secondary pet through the zone.",npcID=63585,pb=1,g={
 crit(21828,{achID=6589,id=50})}}),
-p(729,{npcID=63557,pb=1,g={
+p(729,{description="Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63557,pb=1,g={
 crit(21829,{achID=6589,id=52})}}),
-p(730,{npcID=63558,pb=1,g={
+p(730,{coords={
+[379]={{44,70.4},{44.2,79.9},{64.2,25.4},{75.3,15.6}}},description="Respawns after some minutes as long as their Tolai Hare parent is still alive. Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63558,pb=1,g={
 crit(21830,{achID=6589,id=53})}}),
-p(731,{npcID=63555,pb=1,g={
+p(731,{description="Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",npcID=63555,pb=1,g={
 crit(21831,{achID=6589,id=55})}})}}),
 h(-30,{
 exp(6076),
@@ -68595,7 +68596,7 @@ i(80245)}}),
 q(31847,{coords={
 [379]={{34.6,59}}},isBreadcrumb=1,lvl=30,nextQuests={31001},qgs={61512}}),
 q(31695,{altQuests={31386,31388},coords={
-[379]={{54.1,83.4},{62.3,79.6}}},isBreadcrumb=1,lvl=25,nextQuests={30814},qgs={63535,63542},sourceQuests={30660,30661,30662,30663}}),
+[379]={{54.1,83.4},{62.3,79.6}}},description="Might not be obtainable until you complete Hero's Call-/Warchief's Commands: Townlong Steppes.",isBreadcrumb=1,lvl=25,nextQuests={30814},qgs={63535,63542},sourceQuests={30660,30661,30662,30663}}),
 q(30583,{coords={
 [379]={{54.1,83.2}}},lvl=20,qgs={59450},r=2,sourceQuests={30514}}),
 q(30604,{coords={
@@ -75433,21 +75434,20 @@ ach(6979,{
 crit(20128,{achID=6974,id=7})})}),
 flt(101,{pb=1,g={
 p(751,{coords={
-[390]={{30.2,77.6},{71.2,40.2},{76.2,60}}},npcID=63847,pb=1,g={
+[390]={{30.2,77.6},{71.2,40.2},{76.2,60}}},description="also common as a secondary pet.",npcID=63847,pb=1,g={
 crit(20827,{achID=6350,id=5})}}),
 p(747,{coords={
-[390]={{21.6,60.8},{23.2,27.2},{85,48.4}}},npcID=63850,pb=1}),
+[379]={{53.7,89.2},{56,89}}},description="Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",npcID=63850,pb=1}),
 p(383,{coords={
-[390]={{34,78.6},{72.6,27.6},{87,46.2}}},npcID=61088,pb=1}),
-p(748,{npcID=63838,pb=1,g={
+[390]={{34,78.6},{72.6,27.6},{87,46.2}}},description="In commonly found by the riverbed.",npcID=61088,pb=1}),
+p(748,{description="Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",npcID=63838,pb=1,g={
 crit(20826,{achID=6350,id=7})}}),
 p(749,{coords={
-[390]={{11.2,70},{48.2,30.8}}},npcID=63841,pb=1,g={
+[390]={{11.2,70}}},description="also common as a secondary pet.",npcID=63841,pb=1,g={
 crit(20828,{achID=6350,id=8})}}),
 p(750,{coords={
-[390]={{11.2,70.6},{38.6,64.8}}},npcID=63842,pb=1}),
-p(752,{coords={
-[390]={{24.6,30.8},{69,44.8}}},npcID=63849,pb=1})}}),
+[390]={{11.2,70},{38.6,64.8}}},description="also common as a secondary pet.",npcID=63842,pb=1}),
+p(752,{description="Can sometimes be found by the riverbed, also common as a secondary pet.",npcID=63849,pb=1})}}),
 h(-30,{
 exp(6149,{collectible=false,coords={
 [390]={{18.8,22}}}}),
@@ -76078,7 +76078,7 @@ s(42369,83189,{b=1,f=4,loc=46,lvl=34}),
 s(42424,83269,{b=1,f=23,lvl=34})}})}),
 h(-63,{
 i(87779,{b=1,description="Can randomly drop from any Mogu related mob in the zone.",spellID=127173}),
-i(85582,{b=1,crs={63610,63611,63641},spellID=124178}),
+i(85582,{b=1,crs={63610,63611,63641},description="Not techically removed with 5.4.0, cages can still be opened and you can get an assistant in battle for a short duration. Other than that, it is useless.",rwp=50400,spellID=124178,u=2}),
 i(86547,{spellID=126180}),
 i(86546,{b=1,cost={{"i",86547,10}},spellID=126182})})}}),
 m(376,{icon=618317,lore="Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",maps={377},petBattleLvl=23,lvl=15,g={
@@ -86595,7 +86595,7 @@ i(113130,{b=1,spellID=162367})}}),
 q(44488,{coords={
 [539]={{37.6,59.3}}},lvl=45,providers={{"o",258980}},g={
 i(141361,{b=4}),
-crit(33147,{achID=11240,awp=70000,id=3})}}),
+crit(33147,{achID=11240,awp=80001,id=3})}}),
 q(33765,{coords={
 [539]={{45.9,38.9}}},lvl=10,qgs={75005},r=2,sourceQuests={33075},g={
 i(113145,{b=1,f=51}),
@@ -91810,23 +91810,23 @@ r(225549,{b=1,cost={{"c",1149,100}},itemID=141057,lvl=10,requireSkill=773,skillI
 i(139426,{cost={{"c",1149,250}},f=55,spellID=220266})}}),
 n(105333,{coords={
 [628]={{67.4,63.1}}},g={
-de(7690,{awp=120000,cost={{"c",1508,50},{"c",1220,18000}},itemID=250693,sourceAchievements={42674},spellID=1251181}),
-de(7624,{awp=120000,cost={{"c",1508,50},{"c",1220,18000}},itemID=250406,sourceAchievements={42321},spellID=1250861}),
-de(9165,{awp=120000,cost={{"c",1508,50},{"c",1220,3000}},itemID=252753,sourceAchievements={42655},spellID=1255212}),
-de(7687,{awp=120000,cost={{"c",1508,50},{"c",1220,3000}},itemID=250690,sourceAchievements={42627},spellID=1251178}),
-de(8811,{awp=120000,cost={{"c",1508,50},{"c",1220,18000}},itemID=251779,sourceAchievements={42689},spellID=1253096}),
-de(11942,{awp=120000,cost={{"c",1508,50},{"c",1220,12000}},itemID=258299,sourceAchievements={42547},spellID=1263123}),
+de(7690,{awp=120000,cost={{"c",1508,50},{"c",1220,6000}},itemID=250693,sourceAchievements={42674},spellID=1251181}),
+de(7624,{awp=120000,cost={{"c",1508,50},{"c",1220,6000}},itemID=250406,sourceAchievements={42321},spellID=1250861}),
+de(9165,{awp=120000,cost={{"c",1508,50},{"c",1220,1000}},itemID=252753,sourceAchievements={42655},spellID=1255212}),
+de(7687,{awp=120000,cost={{"c",1508,50},{"c",1220,1000}},itemID=250690,sourceAchievements={42627},spellID=1251178}),
+de(8811,{awp=120000,cost={{"c",1508,50},{"c",1220,6000}},itemID=251779,sourceAchievements={42689},spellID=1253096}),
+de(11942,{awp=120000,cost={{"c",1508,50},{"c",1220,4000}},itemID=258299,sourceAchievements={42547},spellID=1263123}),
 de(7622,{awp=120000,cost={{"c",1508,50},{"c",1220,3000}},itemID=250404,sourceAchievements={42675},spellID=1250859}),
-de(11278,{awp=120000,cost={{"c",1508,50},{"c",1220,3000}},itemID=256677,sourceAchievements={42628},spellID=1260655}),
-de(7625,{awp=120000,cost={{"c",1508,50},{"c",1220,3000}},itemID=250407,sourceAchievements={42619},spellID=1250862}),
-de(7623,{awp=120000,cost={{"c",1508,50},{"c",1220,3000}},itemID=250405,sourceAchievements={61060},spellID=1250860}),
-de(7621,{awp=120000,cost={{"c",1508,50},{"c",1220,18000}},itemID=250403,sourceAchievements={42692},spellID=1250858}),
-de(7686,{awp=120000,cost={{"c",1508,50},{"c",1220,6000}},itemID=250689,sourceAchievements={61054},spellID=1251177}),
-de(8810,{awp=120000,cost={{"c",1508,50},{"c",1220,18000}},itemID=251778,sourceAchievements={61218},spellID=1253095}),
-de(11279,{awp=120000,cost={{"c",1508,50},{"c",1220,1500}},itemID=256678,sourceAchievements={42628},spellID=1260656}),
-de(7610,{awp=120000,cost={{"c",1508,50},{"c",1220,6000}},itemID=250307,sourceAchievements={42318},spellID=1250681}),
-de(7658,{awp=120000,cost={{"c",1508,50},{"c",1220,3000}},itemID=250622,sourceAchievements={42675},spellID=1251031}),
-de(7620,{awp=120000,cost={{"c",1508,50},{"c",1220,12000}},itemID=250402,sourceAchievements={42658},spellID=1250856})}})}),
+de(11278,{awp=120000,cost={{"c",1508,50},{"c",1220,1000}},itemID=256677,sourceAchievements={42628},spellID=1260655}),
+de(7625,{awp=120000,cost={{"c",1508,50},{"c",1220,1000}},itemID=250407,sourceAchievements={42619},spellID=1250862}),
+de(7623,{awp=120000,cost={{"c",1508,50},{"c",1220,1000}},itemID=250405,sourceAchievements={61060},spellID=1250860}),
+de(7621,{awp=120000,cost={{"c",1508,50},{"c",1220,6000}},itemID=250403,sourceAchievements={42692},spellID=1250858}),
+de(7686,{awp=120000,cost={{"c",1508,50},{"c",1220,2000}},itemID=250689,sourceAchievements={61054},spellID=1251177}),
+de(8810,{awp=120000,cost={{"c",1508,50},{"c",1220,6000}},itemID=251778,sourceAchievements={61218},spellID=1253095}),
+de(11279,{awp=120000,cost={{"c",1508,50},{"c",1220,500}},itemID=256678,sourceAchievements={42628},spellID=1260656}),
+de(7610,{awp=120000,cost={{"c",1508,50},{"c",1220,2000}},itemID=250307,sourceAchievements={42318},spellID=1250681}),
+de(7658,{awp=120000,cost={{"c",1508,50},{"c",1220,1000}},itemID=250622,sourceAchievements={42675},spellID=1251031}),
+de(7620,{awp=120000,cost={{"c",1508,50},{"c",1220,4000}},itemID=250402,sourceAchievements={42658},spellID=1250856})}})}),
 h(-63,{
 i(139572,{b=1,c={7},crs={97380,97381,97384,97387,97388,97390,97587},f=55,spellID=220710}),
 i(139570,{b=1,c={4},crs={97380,97381,97384,97387,97388,97390,97587},f=55,spellID=220708})})}}),
@@ -105908,6 +105908,15 @@ n(133536,{coords={
 [1161]={{73.5,8.57}}},r=2,g={
 i(160298),
 r(253145,{awp=80105,b=1,itemID=168022,lvl=10,requireSkill=164,skillID=2437,sourceQuests={50275,50279}})}}),
+n(142095,{coords={
+[1161]={{73.2,11.3}}},r=2,g={
+i(160398),
+i(160400),
+i(160709),
+i(160705,{f=55,spellID=177784}),
+i(160712),
+i(160710),
+i(160399)}}),
 n(246721,{awp=110207,coords={
 [1161]={{56.3,45.8}}},r=2,g={
 de(9039,{cost={{"c",1560,450}},itemID=252390,spellID=1254606}),
@@ -113955,6 +113964,15 @@ i(156642,{b=1,spellID=260486}),
 i(156643,{b=1,spellID=260487}),
 i(156640,{b=1,spellID=260482}),
 i(156641,{b=1,spellID=260485})}}),
+n(141936,{coords={
+[1165]={{44.2,32.2}}},r=1,g={
+i(160398),
+i(160400),
+i(160709),
+i(160705,{f=55,spellID=177784}),
+i(160712),
+i(160710),
+i(160399)}}),
 n(132097,{coords={
 [1165]={{56,32.2}}},g={
 p(2422,{b=1,cost={{"i",163036,100}},itemID=163508,npcID=143203,spellID=279226}),
@@ -117778,11 +117796,12 @@ i(156860),
 i(160752)}}),
 q(48400,{coords={
 [862]={{40,76.5}}},lvl=10,qgs={131580},r=1,sourceQuests={48317},g={
-s(92185,155310,{b=1,f=3,r=1}),
+s(94434,158422,{b=1,f=5,loc=47,r=1}),
 s(94431,158419,{b=1,f=7,loc=47,r=1}),
-s(94432,158420,{b=1,f=4,loc=47,r=1}),
+s(92185,155310,{b=1,f=3,r=1}),
 s(94433,158421,{b=1,f=6,loc=47,r=1}),
-s(94434,158422,{b=1,f=5,loc=47,r=1})}}),
+s(94432,158420,{b=1,f=4,loc=47,r=1}),
+s(91984,155091,{b=1,f=3,r=2})}}),
 q(55248,{coords={
 [862]={{68.1,41.7}}},isDaily=1,lvl=50,qgs={151319},r=1,sourceQuests={55258}}),
 q(47418,{coords={
@@ -124643,15 +124662,15 @@ crit(48581,{achID=15388,awp=90105,id=4})}),
 ach(14735),
 ach(14734,{
 crit(49815,{achID=14734,coords={
-[1533]={{33.3,59.7}}}}),
+[1533]={{33.3,59.7}}},id=1}),
 crit(49819,{achID=14734,coords={
-[1533]={{39.1,20.4}}}}),
+[1533]={{39.1,20.4}}},id=2}),
 crit(49816,{achID=14734,coords={
-[1533]={{71.8,38.8}}}}),
+[1533]={{71.8,38.8}}},id=3}),
 crit(49817,{achID=14734,coords={
-[1533]={{32.1,17.8}}}}),
+[1533]={{32.1,17.8}}},id=4}),
 crit(49818,{achID=14734,coords={
-[1533]={{64.3,69.8}}}})}),
+[1533]={{64.3,69.8}}},id=5})}),
 ach(14339,{description="'Collect all trackable things' must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide. There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.",g={
 q(61295,{coords={
 [1533]={{24.3,18.2}}},description="On a bookshelf inside the room behind Rector Kalliope.",icon=3528288,g={
@@ -150038,7 +150057,7 @@ r(445344,{learnedAt=25,requireSkill=333,skillID=2874}),
 r(445348,{learnedAt=45,requireSkill=333,skillID=2874}),
 r(445373,{learnedAt=60,requireSkill=333,skillID=2874})}),
 h(-679,{awp=110207,g={
-r(1259715,{learnedAt=75,requireSkill=333,skillID=2874}),
+r(1259715,{learnedAt=85,requireSkill=333,skillID=2874}),
 r(1259690,{learnedAt=85,requireSkill=333,skillID=2874})}}),
 flt(50,{
 r(445338,{learnedAt=30,requireSkill=333,skillID=2874}),
@@ -171379,19 +171398,16 @@ o(612282,{coords={
 [2437]={{26,37.6},{27.4,36},{27.4,37.4},{27.4,39.4},{27.5,35.9},{27.6,34.8},{28.1,37},{28.1,39},{28.4,34.2},{28.5,38.5},{28.6,38.2}}},g={
 i(258324)}})}}),
 q(91810,{coords={
-[2437]={{45.3,28.5}}},isWorldQuest=1,g={
-i(260890)}}),
+[2437]={{45.3,28.5}}},isWorldQuest=1,qis={260890}}),
 q(91805,{coords={
 [2437]={{42.2,47.8}}},isWorldQuest=1,g={
 o(574830,{coords={
 [2437]={{37.8,49.6},{38.3,48.9},{38.8,49.1},{38.9,44.6},{39.1,50.1},{39.2,50.5},{39.4,45.6},{39.6,45.6},{39.8,44.4},{40.2,48.4},{40.3,45.2},{40.4,49},{40.7,47},{40.7,47.8},{41.1,48.9},{41.3,49.5},{41.5,48.5},{41.6,47.5},{41.6,49.5}}},g={
 i(252370)}})}}),
 q(91804,{coords={
-[2437]={{49.4,51.4}}},isWorldQuest=1,g={
-i(257241,{spellID=1261428})}}),
+[2437]={{49.4,51.4}}},isWorldQuest=1,qis={257241}}),
 q(91798,{coords={
-[2437]={{40.2,77.1}}},isWorldQuest=1,g={
-i(252003)}}),
+[2437]={{40.2,77.1}}},isWorldQuest=1,qis={252003}}),
 q(91800,{coords={
 [2437]={{25.8,65.2}}},isWorldQuest=1,g={
 o(612932,{coords={
@@ -171405,8 +171421,7 @@ o(574750,{coords={
 [2437]={{48.6,64.9},{48.7,66.1},{49.5,66.2},{49.8,63.4},{50.5,64.5},{51.4,63.9},{51.4,65.7},{51.9,64.7},{52,65.5},{52.7,63.4},{53.1,64.8},{53.9,66.3}}},g={
 i(249498)}})}}),
 q(91808,{coords={
-[2437]={{30,30}}},isWorldQuest=1,g={
-i(238962,{spellID=1226825}),
+[2437]={{30,30}}},isWorldQuest=1,qis={238962},g={
 o(525374,{coords={
 [2437]={{28.9,29.7},{29.2,30.5},{29.3,28.3},{29.3,29},{29.5,29.6},{29.9,31},{30.3,28.4},{30.4,27.3},{30.5,27.3},{30.5,29.8},{30.6,30.8},{30.7,27.6},{30.7,29.1},{31.7,29.8}}},g={
 i(238964)}})}}),
@@ -171414,17 +171429,13 @@ q(91796,{coords={
 [2536]={{73.6,35.6}}},isWorldQuest=1}),
 q(91390,{isWorldQuest=1}),
 q(91399,{coords={
-[2437]={{22.6,73.2}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246878},sourceQuests={91390},g={
-i(246439)}}),
+[2437]={{22.6,73.2}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246878},qis={246439},sourceQuests={91390}}),
 q(91400,{coords={
 [2437]={{22.5,79.7}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246879},sourceQuests={91390}}),
 q(91401,{coords={
-[2437]={{28.4,76.8}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246880},sourceQuests={91390},g={
-i(246440)}}),
+[2437]={{28.4,76.8}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246880},qis={246440},sourceQuests={91390}}),
 q(91398,{coords={
-[2437]={{27.3,72.6}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246877},sourceQuests={91390},g={
-i(246436),
-i(246437)}}),
+[2437]={{27.3,72.6}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246877},qis={246436,246437},sourceQuests={91390}}),
 q(91402,{coords={
 [2437]={{25.5,74.6}}},isDaily=1,isWorldQuest=1,lvl=90,qgs={246881},sourceQuests={91390}}),
 q(91801,{coords={

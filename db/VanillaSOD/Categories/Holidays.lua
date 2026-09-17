@@ -7,13 +7,13 @@ categories.Holidays=
 h(-36,{difficultyID=19,SortPriority=30,SortType="EventStart",g={
 h(-559,{e=13,g={
 h(-45,{e=13,g={
-q(171,{coords={
+q(171,{awp=10400,coords={
 [1453]={{47.2,38.4}}},e=13,isYearly=1,lvl=10,maxReputation={469,42000},providers={{"i",18598},{"n",14305}},r=2,sourceQuests={558,4822},g={
 p(126,{awp=11101,b=1,e=13,itemID=23007,petTypeID=5,q=1,spellID=28739}),
 p(127,{awp=11101,b=1,e=13,itemID=23015,petTypeID=5,q=1,spellID=28740}),
 p(125,{awp=11101,b=1,e=13,itemID=23002,petTypeID=9,q=1,spellID=28738}),
 i(23022,{e=13,q=1})}}),
-q(5502,{coords={
+q(5502,{awp=10400,coords={
 [1454]={{70.8,25.6}}},e=13,isYearly=1,lvl=10,maxReputation={67,42000},providers={{"i",18597},{"n",14444}},r=1,sourceQuests={915,925},g={
 p(126,{awp=11101,b=1,e=13,itemID=23007,petTypeID=5,q=1,spellID=28739}),
 p(127,{awp=11101,b=1,e=13,itemID=23015,petTypeID=5,q=1,spellID=28740}),
@@ -372,26 +372,26 @@ h(-39,{description="These recipes are mailed to characters with the correspondin
 r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
 toy(17712,{b=1,description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,q=1,sourceQuests={6984,7045}})}}),
 h(-45,{e=14,g={
-q(8744,{coords={
+q(8744,{awp=10200,coords={
 [1454]={{49.5,78.5}},
 [1455]={{33.5,66.5}}},e=14,isYearly=1,providers={{"i",21191},{"o",180743}},g={
 i(21254,{b=1,e=14,f=55,q=1})}}),
-q(8803,{coords={
+q(8803,{awp=10200,coords={
 [1454]={{49.6,77.7}},
 [1455]={{33.6,66.1}}},e=14,isYearly=1,lvl=10,providers={{"i",21363},{"o",180793}},g={
 i(21328,{b=1,e=14,q=1})}}),
-q(8768,{awp=11101,coords={
+q(8768,{awp=10200,coords={
 [1454]={{49.6,78.2}},
 [1455]={{33.6,66.3}}},e=14,isYearly=1,lvl=20,providers={{"i",21310},{"o",180747}},g={
-p(119,{e=14,itemID=21301,petTypeID=1,q=1,spellID=26533}),
-p(118,{e=14,itemID=21308,petTypeID=5,q=1,spellID=26529}),
-p(120,{e=14,itemID=21305,petTypeID=1,q=1,spellID=26541}),
-p(117,{e=14,itemID=21309,petTypeID=7,q=1,spellID=26045})}}),
-q(8767,{c={1,2,3,4},description="Given prior to 2015 exclusively to non-spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21270},{"o",180746}},rwp=60203,g={
+p(119,{awp=10804,e=14,itemID=21301,petTypeID=1,q=1,spellID=26533}),
+p(118,{awp=10804,e=14,itemID=21308,petTypeID=5,q=1,spellID=26529}),
+p(120,{awp=10804,e=14,itemID=21305,petTypeID=1,q=1,spellID=26541}),
+p(117,{awp=10804,e=14,itemID=21309,petTypeID=7,q=1,spellID=26045})}}),
+q(8767,{awp=10804,c={1,2,3,4},description="Given prior to 2015 exclusively to non-spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21270},{"o",180746}},rwp=60203,g={
 i(21235,{b=1,e=14,f=55,q=1})}}),
-q(8788,{c={5,7,8,9,11},description="Given prior to 2015 exclusively to spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21271},{"o",180746}},rwp=60203,g={
+q(8788,{awp=10804,c={5,7,8,9,11},description="Given prior to 2015 exclusively to spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21271},{"o",180746}},rwp=60203,g={
 i(21241,{b=1,e=14,f=55,q=1})}}),
-q(8769,{coords={
+q(8769,{awp=10804,coords={
 [1454]={{49.5,78.7}},
 [1455]={{33.6,66.5}}},e=14,isYearly=1,lvl=40,providers={{"i",21327},{"o",180748}},g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
@@ -402,7 +402,7 @@ r(21923,{e=14,itemID=17709,learnedAt=190,q=1,requireSkill=171}),
 r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202}),
 i(21325,{b=1,e=14,f=55,q=2}),
 i(21213,{e=14,f=55,lvl=40,q=2})}}),
-q(7045,{coords={
+q(7045,{awp=10200,coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=30,qgs={13433},r=2,sourceQuests={7043},g={
 i(17726,{b=1,e=14,q=1,g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
@@ -411,7 +411,7 @@ r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
 r(21913,{e=14,itemID=17706,learnedAt=190,q=2,requireSkill=164}),
 r(21923,{e=14,itemID=17709,learnedAt=190,q=1,requireSkill=171}),
 r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202})}})}}),
-q(6984,{coords={
+q(6984,{awp=10200,coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,qgs={13418},r=1,sourceQuests={6983},g={
 i(17726,{b=1,e=14,q=1,g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
@@ -420,18 +420,18 @@ r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
 r(21913,{e=14,itemID=17706,learnedAt=190,q=2,requireSkill=164}),
 r(21923,{e=14,itemID=17709,learnedAt=190,q=1,requireSkill=171}),
 r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202})}})}}),
-q(7022,{coords={
+q(7022,{awp=10200,coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=10,qgs={13433},r=2}),
-q(7023,{coords={
+q(7023,{awp=10200,coords={
 [1453]={{55,59.2}}},e=14,isYearly=1,lvl=10,qgs={13435},r=2}),
-q(6961,{coords={
+q(6961,{awp=10200,coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=10,qgs={13418},r=1}),
-q(7021,{coords={
+q(7021,{awp=10200,coords={
 [1456]={{43.8,58.6}}},e=14,isYearly=1,lvl=10,qgs={13431},r=1}),
-q(7024,{coords={
+q(7024,{awp=10200,coords={
 [1458]={{68,39}}},e=14,isYearly=1,lvl=10,qgs={13429},r=1}),
-q(8762,{coords={
-[1455]={{33.4,67}}},e=14,isYearly=1,lvl=40,maps={1427,1446},qgs={13433},r=2,rwp=40300,g={
+q(8762,{awp=10804,coords={
+[1455]={{33.4,67}}},e=14,isYearly=1,lvl=40,maps={1427,1446},qgs={13433},r=2,g={
 qo(1,{coords={
 [1427]={{68.6,34.4}},
 [1446]={{73.2,48}}},e=14,providers={{"n",15664}}}),
@@ -440,8 +440,8 @@ i(21315,{b=1,e=14,q=1,g={
 i(21314,{b=1,e=14,q=1}),
 i(21211,{e=14,q=1})}}),
 i(21213,{e=14,f=55,lvl=40,q=2})}}),
-q(8746,{coords={
-[1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=40,maps={1427,1446},qgs={13418},r=1,rwp=40300,g={
+q(8746,{awp=10804,coords={
+[1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=40,maps={1427,1446},qgs={13418},r=1,g={
 qo(1,{coords={
 [1427]={{68.6,34.4}},
 [1446]={{73.2,48}}},e=14,providers={{"n",15664}}}),
@@ -450,31 +450,31 @@ i(21315,{b=1,e=14,q=1,g={
 i(21314,{b=1,e=14,q=1}),
 i(21211,{e=14,q=1})}}),
 i(21213,{e=14,f=55,lvl=40,q=2})}}),
-q(8860,{description="This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=2,g={
+q(8860,{awp=10804,description="This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=2,g={
 qo(1,{e=14,providers={{"i",21545}}})}}),
-q(8861,{description="This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1,g={
+q(8861,{awp=10804,description="This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1,g={
 qo(1,{e=14,providers={{"i",21545}}})}}),
-q(7042,{coords={
+q(7042,{awp=10200,coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13433},r=2,rwp=40003}),
-q(6963,{coords={
+q(6963,{awp=10200,coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13418},r=1,rwp=40003}),
-q(7063,{coords={
+q(7063,{awp=10200,coords={
 [1455]={{77.2,11.8}}},e=14,isYearly=1,lvl=10,providers={{"i",17735}},qgs={2916},r=2,sourceQuests={7062}}),
-q(7061,{coords={
+q(7061,{awp=10200,coords={
 [1454]={{38.6,36.2}}},e=14,isYearly=1,lvl=10,providers={{"i",17735}},qgs={13417},r=1,sourceQuests={6964}}),
-q(8763,{coords={
+q(8763,{awp=10804,coords={
 [1455]={{33.4,67}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13433},r=2,requireSkill=185,rwp=40300,sourceQuests={8762},g={
 i(21213,{e=14,f=55,lvl=40,q=2,requireSkill=185})}}),
-q(8799,{coords={
+q(8799,{awp=10804,coords={
 [1454]={{53.2,66.6}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13418},r=1,requireSkill=185,rwp=40300,sourceQuests={8746},g={
 i(21213,{e=14,f=55,lvl=40,q=2,requireSkill=185})}}),
-q(7062,{coords={
+q(7062,{awp=10200,coords={
 [1455]={{30.2,59.8}}},e=14,isYearly=1,lvl=10,qgs={1365},r=2,g={
 i(17735,{e=14,q=1})}}),
-q(6964,{coords={
+q(6964,{awp=10200,coords={
 [1454]={{51,71.1}}},e=14,isYearly=1,lvl=10,qgs={9550},r=1,g={
 i(17735,{e=14,q=1})}}),
-q(7025,{coords={
+q(7025,{awp=10200,coords={
 [1455]={{33.2,65.8}}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13444},r=2,g={
 i(17727,{b=1,e=14,q=1,g={
 i(2996,{e=14,q=1}),
@@ -487,7 +487,7 @@ i(17344,{e=14,f=55,q=1,rwp=60202}),
 i(17407,{e=14,f=55,lvl=25,q=1}),
 i(21215,{b=1,e=14,f=55,lvl=40,q=1}),
 i(17406,{e=14,f=55,lvl=5,q=1})}})}}),
-q(6962,{coords={
+q(6962,{awp=10200,coords={
 [1454]={{49.9,78.4}}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13445},r=1,g={
 i(17727,{b=1,e=14,q=1,g={
 i(2996,{e=14,q=1}),
@@ -500,12 +500,12 @@ i(17344,{e=14,f=55,q=1,rwp=60202}),
 i(17407,{e=14,f=55,lvl=25,q=1}),
 i(21215,{b=1,e=14,f=55,lvl=40,q=1}),
 i(17406,{e=14,f=55,lvl=5,q=1})}})}}),
-q(8827,{description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=2}),
-q(8828,{description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1}),
-q(7043,{coords={
+q(8827,{awp=10200,description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=2}),
+q(8828,{awp=10200,description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1}),
+q(7043,{awp=10200,coords={
 [1416]={{35.4,72.6}}},e=14,isYearly=1,lvl=30,maps={1455},qgs={13636},r=2,sourceQuests={7042},g={
 qo(1,{crs={13602},e=14,providers={{"i",17662}}})}}),
-q(6983,{coords={
+q(6983,{awp=10200,coords={
 [1416]={{35.4,72.6}}},e=14,isYearly=1,lvl=30,maps={1454},qgs={13636},r=1,sourceQuests={6963},g={
 qo(1,{crs={13602},e=14,providers={{"i",17662}}})}})}}),
 h(-58,{e=14,g={
@@ -529,8 +529,8 @@ n(13432,{coords={
 n(13433,{coords={
 [1455]={{33.4,67}}},e=14})}}),
 n(15760,{crs={15780,15781,15782,15783,15784,15785,15786,15787,15788,15789,15790,15791,15792,15793,15794,15795},description="Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",e=14,g={
-i(21212,{b=1,e=14,f=55,lvl=40,q=1}),
-i(21519,{b=1,e=14,q=1})}}),
+i(21212,{awp=10804,b=1,e=14,f=55,lvl=40,q=1}),
+i(21519,{awp=10200,b=1,e=14,q=1})}}),
 h(-63,{e=14,g={
 o(178609,{e=14,g={
 i(17202,{e=14,f=55,q=1})}})}})}}),
@@ -541,7 +541,7 @@ q(1658,{coords={
 qo(1,{coords={
 [1420]={{56,69}}},e=16,providers={{"o",181672}}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
-q(8311,{coords={
+q(8311,{awp=10800,coords={
 [1453]={{47.6,35.4}}},e=16,isYearly=1,lvl=10,maxReputation={469,42000},qgs={15310},r=2,g={
 q(8356,{coords={
 [1453]={{52.6,65.6}}},e=16,qgs={6740},r=2,repeatable=1,g={
@@ -556,7 +556,7 @@ q(8357,{coords={
 [1457]={{67.2,15.8}}},e=16,qgs={6735},r=2,repeatable=1,g={
 qo(4,{e=16,providers={{"i",20496}},questID=8311})}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
-q(8312,{coords={
+q(8312,{awp=10800,coords={
 [1454]={{71.2,22.8}}},e=16,isYearly=1,lvl=10,maxReputation={67,42000},qgs={15309},r=1,g={
 q(8359,{coords={
 [1454]={{54.2,68.4}}},e=16,qgs={6929},r=1,repeatable=1,g={
@@ -571,10 +571,10 @@ q(8360,{coords={
 [1456]={{45.8,64.4}}},e=16,qgs={6746},r=1,repeatable=1,g={
 qo(4,{e=16,providers={{"i",20497}},questID=8312})}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
-q(8322,{coords={
+q(8322,{awp=10800,coords={
 [1420]={{55.6,69.9}},
 [1424]={{51.4,59}}},cost={{"i",20605,1}},e=16,isYearly=1,lvl=30,qgs={15197},r=1,rwp=40003}),
-q(8409,{coords={
+q(8409,{awp=10800,coords={
 [1424]={{51.4,59}}},e=16,isYearly=1,lvl=30,providers={{"o",180570}},r=1,rwp=40003,sourceQuests={8322},g={
 i(20557,{b=1,e=16,f=55,q=1})}}),
 q(1657,{coords={
@@ -582,7 +582,7 @@ q(1657,{coords={
 qo(1,{coords={
 [1424]={{49.8,57.9}}},e=16,providers={{"i",20387}}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
-q(8373,{coords={
+q(8373,{awp=10800,coords={
 [1424]={{50,57.2}}},e=16,isYearly=1,lvl=25,qgs={15199},r=2,rwp=40003,g={
 qo(1,{e=16,providers={{"i",20604}}}),
 i(20557,{b=1,e=16,f=55,q=1})}})}}),
@@ -617,7 +617,7 @@ i(20574,{b=1,e=16,f=55,loc=40,q=1}),
 i(20573,{b=1,e=16,f=55,loc=40,q=1})}}),
 h(-63,{e=16,g={
 i(20400,{b=1,e=16,f=113,q=2})}})}}),
-h(-577,{e=17,g={
+h(-577,{awp=11201,e=17,g={
 h(-39,{e=17,g={
 i(19697,{b=1,e=17,q=1})}}),
 h(-45,{e=17,g={
@@ -643,7 +643,7 @@ i(9313,{e=17,f=55,q=1}),
 i(9318,{e=17,f=55,q=1}),
 i(9314,{e=17,f=55,q=1}),
 i(9315,{e=17,f=55,q=1})}})}}),
-h(-579,{awp=11101,e=9,g={
+h(-579,{awp=10903,e=9,g={
 h(-19,{e=9,g={
 s(164851,22206,{b=1,crs={8929,10811,10901,11488},e=9,f=1,maps={234,242,317,476},q=2})}}),
 h(-45,{e=9,g={
@@ -879,7 +879,7 @@ q(8883,{coords={
 [1456]={{71.1,28.2}},
 [1457]={{38.6,30.3}},
 [1458]={{65.6,36}}},description="Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",e=18,isBreadcrumb=1,isYearly=1,nextQuests={8868},qgs={15895},sourceQuests={8867}}),
-h(-726,{awp=11201,e=18,g={
+h(-726,{awp=10900,e=18,g={
 q(8718,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1457]={{33.5,14.3}}},e=18,hqd=
@@ -892,7 +892,7 @@ q(8646,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1453]={{21.6,54}}},e=18,hqd=
 {maxReputation={67,42000}},isYearly=1,qgs={15562}}))}}),
-h(-728,{awp=11201,e=18,g={
+h(-728,{awp=10900,e=18,g={
 q(8648,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1458]={{66.6,38.2}}},e=18,hqd=
@@ -905,7 +905,7 @@ q(8678,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1456]={{73,23.4}}},e=18,hqd=
 {maxReputation={67,42000}},isYearly=1,qgs={15580}}))}}),
-h(-724,{awp=11201,e=18,g={
+h(-724,{awp=10900,e=18,g={
 q(8647,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1419]={{58.8,51.6}}},e=18,hqd=
@@ -974,7 +974,7 @@ q(8674,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1434]={{27.6,74.2}}},e=18,hqd=
 {maxReputation={67,42000}},isYearly=1,qgs={15576}}))}}),
-h(-725,{awp=11201,e=18,g={
+h(-725,{awp=10900,e=18,g={
 q(8715,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1438]={{56.9,60.5}}},e=18,hqd=
@@ -1059,7 +1059,7 @@ q(8680,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1413]={{62.7,36.7}}},e=18,hqd=
 {maxReputation={67,42000}},isYearly=1,qgs={15582}}))}}),
-h(-727,{awp=11201,e=18,g={
+h(-727,{awp=10900,e=18,g={
 q(8727,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
 [1423]={{48.1,21.9}}},description="Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",e=18,hqd=
@@ -1087,7 +1087,7 @@ h(-47,{e=18,g={
 i(21100,{b=1,e=18,q=1})}})}}),
 h(-582,{e=11,g={
 h(-45,{e=11,g={
-q(9319,{coords={
+q(9319,{awp=11100,coords={
 [1420]={{62.1,66.8}},
 [1438]={{56.5,92}},
 [1453]={{38.5,61.1}},
@@ -1100,7 +1100,7 @@ qo(3,{e=11}),
 qo(4,{e=11}),
 p(128,{awp=11101,b=1,e=11,itemID=23083,petTypeID=7,q=1,spellID=28871}),
 i(23247,{e=11,q=1})}}),
-q(9386,{coords={
+q(9386,{awp=11100,coords={
 [1420]={{62.1,66.8}},
 [1438]={{56.5,92}},
 [1453]={{38.5,61.1}},
@@ -1122,7 +1122,7 @@ q(9339,{coords={
 [1456]={{21.3,26.4}},
 [1458]={{67.6,8.3}}},e=11,isYearly=1,lvl=50,qgs={16818},r=1,sourceQuests={9330,9331,9332},g={
 s(165275,23323,{b=1,e=11,f=4,filterForRWP=2,loc=40,q=1})}}),
-q(9389,{coords={
+q(9389,{awp=11100,coords={
 [1438]={{56.6,92.3}},
 [1453]={{38.5,61.1}},
 [1454]={{46.8,38}},
@@ -1141,7 +1141,7 @@ i(23211,{b=1,e=11,f=55,q=1}),
 i(23326,{b=1,e=11,f=55,q=1}),
 i(23327,{b=1,e=11,f=55,q=1}),
 i(23435,{b=1,e=11,f=55,q=1})}}),
-q(9388,{coords={
+q(9388,{awp=11100,coords={
 [1438]={{56.6,92.3}},
 [1453]={{38.5,61.1}},
 [1454]={{46.8,38}},
@@ -1202,7 +1202,7 @@ i(23211,{b=1,e=11,f=55,q=1}),
 i(23326,{b=1,e=11,f=55,q=1}),
 i(23327,{b=1,e=11,f=55,q=1}),
 i(23435,{b=1,e=11,f=55,q=1})}}),
-q(9367,{coords={
+q(9367,{awp=11100,coords={
 [1438]={{56.6,92.3}},
 [1453]={{38.5,61.1}},
 [1455]={{63.6,24.7}}},e=11,icon=134467,isYearly=1,qgs={16817},r=2,rwp=20400,g={
@@ -1214,7 +1214,7 @@ qo(3,{coords={
 [1438]={{56.6,92.3}}},e=11}),
 i(23246,{b=1,e=11,f=55,q=1}),
 i(23247,{e=11,q=1})}}),
-q(9368,{coords={
+q(9368,{awp=11100,coords={
 [1454]={{46.8,38}},
 [1456]={{21.3,26.4}},
 [1458]={{67.6,8.3}}},e=11,icon=134467,isYearly=1,qgs={16818},r=2,rwp=20400,g={
@@ -1226,7 +1226,7 @@ qo(3,{coords={
 [1458]={{62.6,66.9}}},e=11}),
 i(23246,{b=1,e=11,f=55,q=1}),
 i(23247,{e=11,q=1})}}),
-q(9322,{coords={
+q(9322,{awp=11100,coords={
 [1420]={{62.1,66.8}},
 [1438]={{56.5,92}},
 [1453]={{38.5,61.1}},
@@ -1243,7 +1243,7 @@ qo(4,{coords={
 [1452]={{30.6,43.2}}},e=11}),
 i(23379,{b=1,e=11,f=55,q=2}),
 i(23247,{e=11,q=1})}}),
-q(9323,{coords={
+q(9323,{awp=11100,coords={
 [1420]={{62.1,66.8}},
 [1438]={{56.5,92}},
 [1453]={{38.5,61.1}},

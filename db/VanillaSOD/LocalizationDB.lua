@@ -5442,8 +5442,8 @@ local achievements = {
 		name = "Dual Talent Specialization",
 		description = "Visit your class trainer when you are at least level 40 and activate your Dual Talent Specialization.",
 		icon = 236544,
-		category = 92,
-		criteria = {-180,9619},
+		category = 81,
+		criteria = {-184,9619},
 	},
 	[3356] = {
 		name = "Winterspring Frostsaber",
@@ -5461,29 +5461,48 @@ local achievements = {
 		category = 81,
 		criteria = {17023},
 	},
+	[15329] = {
+		name = "Has Died",
+		icon = 136243,
+		category = 14821,
+		criteria = {52885},
+	},
 	[15333] = {
-		name = "Survivor of the Shadow Flame (Season of Mastery)",
+		name = "Survivor of the Shadow Flame",
 		description = "Defeat Nefarian without ever dying during the Season of Mastery.",
-		icon = 254649,
-		category = 81,
+		icon = 136243,
+		category = 14821,
+		amount = 1,
+		criteria = {52893},
 	},
 	[15334] = {
-		name = "Survivor of the Old God (Season of Mastery)",
+		name = "Survivor of the Old God",
 		description = "Defeat C'Thun without ever dying during the Season of Mastery.",
-		icon = 236407,
-		category = 81,
+		icon = 136243,
+		category = 14821,
+		amount = 1,
+		criteria = {52894},
 	},
 	[15335] = {
-		name = "Survivor of the Damned (Season of Mastery)",
+		name = "Survivor of the Damned",
 		description = "Defeat Kel'Thuzad without ever dying during the Season of Mastery.",
-		icon = 254094,
-		category = 81,
+		icon = 136243,
+		category = 14821,
+		amount = 1,
+		criteria = {52895},
+	},
+	[15578] = {
+		name = "<Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits",
+		icon = 136243,
+		category = 14821,
+		criteria = {-193},
 	},
 	[15637] = {
-		name = "The Immortal (Season of Mastery)",
+		name = "The Immortal",
 		description = "Within one raid lockout, defeat every boss in Naxxramas without allowing any raid member to die during any of the boss encounters during Season of Mastery.",
 		icon = 135922,
-		category = 81,
+		category = 14808,
+		criteria = {53412},
 	},
 	[16433] = {
 		name = "Soul of Iron (Season of Mastery)",
@@ -5491,8 +5510,149 @@ local achievements = {
 		icon = 134902,
 		category = 81,
 	},
+	[19563] = {
+		name = "Unbroken Self-Found Soul",
+		icon = 136243,
+		category = 14821,
+		criteria = {64808},
+	},
+	[20129] = {
+		name = "Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-177},
+	},
+	[20130] = {
+		name = "Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-178},
+	},
+	[20131] = {
+		name = "Discoverer's Delight - Reach Level 60 in Phase 4 (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-179},
+	},
+	[20132] = {
+		name = "Discoverer's Delight - Reach Level 60 in Phase 5 (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-180},
+	},
+	[20133] = {
+		name = "Self-Found Soul (Level 1)",
+		icon = 136243,
+		category = 81,
+	},
+	[20134] = {
+		name = "Self-Found Soul (Level 10)",
+		icon = 136243,
+		category = 81,
+	},
+	[20135] = {
+		name = "Self-Found Soul (Level 20)",
+		icon = 136243,
+		category = 81,
+	},
+	[20136] = {
+		name = "Self-Found Soul (Level 30)",
+		icon = 136243,
+		category = 81,
+	},
+	[20137] = {
+		name = "Self-Found Soul (Level 40)",
+		icon = 136243,
+		category = 81,
+	},
+	[20138] = {
+		name = "Self-Found Soul (Level 50)",
+		icon = 136243,
+		category = 81,
+	},
+	[20139] = {
+		name = "Self-Found Soul (Level 60)",
+		icon = 136243,
+		category = 81,
+	},
+	[20193] = {
+		name = "Self-Found Soul (Removed Self-Found)",
+		icon = 136243,
+		category = 81,
+		criteria = {66299},
+	},
+	[40131] = {
+		name = "Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-186},
+	},
+	[40132] = {
+		name = "Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-187},
+	},
+	[40133] = {
+		name = "Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-188},
+	},
+	[40135] = {
+		name = "Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-189},
+	},
+	[40137] = {
+		name = "Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)",
+		icon = 136243,
+		category = 81,
+		criteria = {-190},
+	},
+	[41008] = {
+		name = "Rune Learned - Shared Acquisition - Illari Duskfeather (40)",
+		icon = 236449,
+		category = 15538,
+		criteria = {70630},
+	},
+	[41009] = {
+		name = "Rune Learned - Shared Acquisition - Dark Riders (40)",
+		icon = 136243,
+		category = 15538,
+		criteria = {70631},
+	},
+	[41010] = {
+		name = "Rune Learned - Shared Acquisition - Ley Lines (50)",
+		icon = 136243,
+		category = 15538,
+		criteria = {70633},
+	},
+	[41011] = {
+		name = "Rune Learned - Shared Acquisition - Wild Gods (50)",
+		icon = 136243,
+		category = 15538,
+		criteria = {70632},
+	},
+	[42133] = {
+		name = "Balnazzar Defeated",
+		icon = 136243,
+		category = 81,
+		criteria = {104998},
+	},
+	[42186] = {
+		name = "Balnazzar Defeated (Backup Achievement)",
+		icon = 136243,
+		category = 81,
+		criteria = {104998},
+	},
 } L.ACHIEVEMENT_DATA = achievements
 local achievementCategories = {
+	[1] = {
+		name = "Statistics",
+		parent = -1,
+	},
 	[81] = {
 		name = "Feats of Strength",
 		parent = -1,
@@ -5557,9 +5717,17 @@ local achievementCategories = {
 		name = "Warsong Gulch",
 		parent = 95,
 	},
+	[14807] = {
+		name = "Dungeons & Raids",
+		parent = 1,
+	},
 	[14808] = {
 		name = "Classic",
 		parent = 168,
+	},
+	[14821] = {
+		name = "Classic",
+		parent = 14807,
 	},
 	[14861] = {
 		name = "Classic",
@@ -5571,9 +5739,59 @@ local achievementCategories = {
 	},
 } L.ACHIEVEMENT_CATEGORY_DATA = achievementCategories
 local achievementCriterias = {
-	[-180] = {
+	[-193] = {
+		name = nil,
+		amount = 60,
+		type = 5,
+	},
+	[-190] = {
+		name = nil,
+		amount = 50,
+		type = 5,
+	},
+	[-189] = {
+		name = nil,
+		amount = 50,
+		type = 5,
+	},
+	[-188] = {
+		name = nil,
+		amount = 40,
+		type = 5,
+	},
+	[-187] = {
+		name = nil,
+		amount = 50,
+		type = 5,
+	},
+	[-186] = {
+		name = nil,
+		amount = 40,
+		type = 5,
+	},
+	[-184] = {
 		name = "Level up to 40.",
 		amount = 40,
+		type = 5,
+	},
+	[-180] = {
+		name = nil,
+		amount = 60,
+		type = 5,
+	},
+	[-179] = {
+		name = nil,
+		amount = 60,
+		type = 5,
+	},
+	[-178] = {
+		name = nil,
+		amount = 40,
+		type = 5,
+	},
+	[-177] = {
+		name = nil,
+		amount = 25,
 		type = 5,
 	},
 	[-175] = {
@@ -11082,6 +11300,34 @@ local achievementCriterias = {
 		type = 46,
 		asset = 809,
 	},
+	[52885] = {
+		name = nil,
+		amount = 1,
+		type = 17,
+	},
+	[52893] = {
+		name = nil,
+		amount = 1,
+		type = 28,
+		asset = 364339,
+	},
+	[52894] = {
+		name = nil,
+		amount = 1,
+		type = 28,
+		asset = 364340,
+	},
+	[52895] = {
+		name = nil,
+		amount = 1,
+		type = 28,
+		asset = 364341,
+	},
+	[53412] = {
+		name = nil,
+		type = 0,
+		asset = 15990,
+	},
 	[54579] = {
 		name = "Onyxia",
 		type = 0,
@@ -11116,6 +11362,44 @@ local achievementCriterias = {
 		amount = 9000,
 		type = 46,
 		asset = 87,
+	},
+	[64808] = {
+		name = nil,
+		amount = 1,
+		type = 29,
+		asset = 431678,
+	},
+	[66299] = {
+		name = nil,
+		amount = 1,
+		type = 28,
+		asset = 432417,
+	},
+	[70630] = {
+		name = nil,
+		amount = 1,
+		type = 74,
+	},
+	[70631] = {
+		name = nil,
+		type = 27,
+		asset = 80120,
+	},
+	[70632] = {
+		name = nil,
+		type = 27,
+		asset = 82044,
+	},
+	[70633] = {
+		name = nil,
+		amount = 1,
+		type = 74,
+	},
+	[104998] = {
+		name = nil,
+		amount = 1,
+		type = 28,
+		asset = 1235143,
 	},
 } L.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias
 local worldMapOverlayData = {
@@ -11475,19 +11759,19 @@ local worldMapOverlayData = {
 	[727] = { 1959 },
 	[741] = { 414 },
 	[742] = { 441 },
-	[743] = { 413,411,412 },
+	[743] = { 413 },
 	[744] = { 2301 },
 	[745] = { 416 },
 	[746] = { 417 },
 	[747] = { 415 },
-	[748] = { 424,425 },
+	[748] = { 424 },
 	[749] = { 418 },
 	[750] = { 421,420,2359 },
 	[751] = { 419 },
 	[752] = { 426 },
-	[753] = { 422,432,2360 },
+	[753] = { 422,432 },
 	[754] = { 428,431 },
-	[755] = { 430,2358 },
+	[755] = { 430 },
 	[756] = { 438 },
 	[757] = { 437 },
 	[758] = { 434 },
@@ -13633,6 +13917,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "Statistiken",
 	[81] = "Heldentaten",
 	[92] = "Allgemein",
 	[95] = "Spieler gegen Spieler",
@@ -13649,13 +13934,15 @@ for key,value in pairs({
 	[14801] = "Alteractal",
 	[14802] = "Arathibecken",
 	[14804] = "Kriegshymnenschlucht",
+	[14807] = "Dungeon & Schlachtzug",
 	[14808] = "Classic",
+	[14821] = "Classic",
 	[14861] = "Classic",
 	[14864] = "Classic",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "Erreicht Stufe 40.",
+	[-184] = "Erreicht Stufe 40.",
 	[-175] = "Erhaltet 25 Reittiere",
 	[-174] = "Erhaltet 10 Reittiere",
 	[-153] = "Erhaltet 25 Haustiere",
@@ -16283,6 +16570,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "Statistiques",
 	[81] = "Tours de force",
 	[92] = "Général",
 	[95] = "Joueur contre Joueur",
@@ -16299,13 +16587,15 @@ for key,value in pairs({
 	[14801] = "Vallée d'Alterac",
 	[14802] = "Bassin Arathi",
 	[14804] = "Goulet des Chanteguerres",
+	[14807] = "Donjons & raids",
 	[14808] = "Classique",
+	[14821] = "Classique",
 	[14861] = "Classique",
 	[14864] = "Classique",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "Atteindre le niveau 40.",
+	[-184] = "Atteindre le niveau 40.",
 	[-175] = "Obtenir 25 montures",
 	[-174] = "Obtenir 10 montures",
 	[-153] = "Obtenir 25 mascottes",
@@ -17802,6 +18092,14 @@ for key,value in pairs({
 })
 do phases[key].description = value; end
 for key,value in pairs({
+	[15333] = "Survivor of the Shadow Flame (Season of Mastery)",
+	[15334] = "Survivor of the Old God (Season of Mastery)",
+	[15335] = "Survivor of the Damned (Season of Mastery)",
+	[15637] = "The Immortal (Season of Mastery)",
+})
+do achievements[key].name = value; end
+for key,value in pairs({
+	[1] = "Statistics",
 	[81] = "Feats of Strength",
 	[92] = "General",
 	[95] = "Player vs. Player",
@@ -17818,7 +18116,9 @@ for key,value in pairs({
 	[14801] = "Alterac Valley",
 	[14802] = "Arathi Basin",
 	[14804] = "Warsong Gulch",
+	[14807] = "Dungeons & Raids",
 	[14808] = "Classic",
+	[14821] = "Classic",
 	[14861] = "Classic",
 	[14864] = "Classic",
 })
@@ -19070,6 +19370,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "Estatísticas",
 	[81] = "Proezas Memoráveis",
 	[92] = "Geral",
 	[95] = "Jogador x Jogador",
@@ -19086,13 +19387,15 @@ for key,value in pairs({
 	[14801] = "Vale Alterac",
 	[14802] = "Bacia Arathi",
 	[14804] = "Ravina Brado Guerreiro",
+	[14807] = "Masmorras e Raides",
 	[14808] = "Clássico",
+	[14821] = "Clássico",
 	[14861] = "Clássico",
 	[14864] = "Clássico",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "Subir para o nível 40.",
+	[-184] = "Subir para o nível 40.",
 	[-175] = "Obter 25 montarias",
 	[-174] = "Obter 10 montarias",
 	[-153] = "Obter 25 mascotes companheiros",
@@ -22089,6 +22392,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "Статистика",
 	[81] = "Великие подвиги",
 	[92] = "Общее",
 	[95] = "PvP",
@@ -22105,13 +22409,15 @@ for key,value in pairs({
 	[14801] = "Альтеракская долина",
 	[14802] = "Низина Арати",
 	[14804] = "Ущелье Песни Войны",
+	[14807] = "Подземелья и рейды",
 	[14808] = "World of Warcraft",
+	[14821] = "World of Warcraft",
 	[14861] = "World of Warcraft",
 	[14864] = "World of Warcraft",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "Достигните 40-го уровня.",
+	[-184] = "Достигните 40-го уровня.",
 	[-175] = "Получить 25 средств передвижения",
 	[-174] = "Получить 10 средств передвижения",
 	[-153] = "Соберите 25 питомцев-спутников",
@@ -24431,6 +24737,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "통계",
 	[81] = "위업",
 	[92] = "일반",
 	[95] = "플레이어 대 플레이어",
@@ -24447,13 +24754,15 @@ for key,value in pairs({
 	[14801] = "알터랙 계곡",
 	[14802] = "아라시 분지",
 	[14804] = "전쟁노래 협곡",
+	[14807] = "던전 및 공격대",
 	[14808] = "오리지널",
+	[14821] = "오리지널",
 	[14861] = "오리지널",
 	[14864] = "오리지널",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "40 레벨 달성",
+	[-184] = "40 레벨 달성",
 	[-175] = "탈것 25개 획득",
 	[-174] = "탈것 10개 획득",
 	[-153] = "애완동물 25마리 모으기",
@@ -27682,6 +27991,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "Estadísticas",
 	[81] = "Proezas de fuerza",
 	[92] = "General",
 	[95] = "Jugador contra Jugador",
@@ -27698,13 +28008,15 @@ for key,value in pairs({
 	[14801] = "Valle de Alterac",
 	[14802] = "Cuenca de Arathi",
 	[14804] = "G. Grito de Guerra",
+	[14807] = "Mazmorras y bandas",
 	[14808] = "World of Warcraft",
+	[14821] = "World of Warcraft",
 	[14861] = "World of Warcraft",
 	[14864] = "World of Warcraft",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "Sube hasta el nivel 40.",
+	[-184] = "Sube hasta el nivel 40.",
 	[-175] = "Consigue 25 monturas",
 	[-174] = "Consigue 10 monturas",
 	[-153] = "Consigue 25 mascotas de compañía",
@@ -29017,6 +29329,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "Estadísticas",
 	[81] = "Proezas de fuerza",
 	[92] = "General",
 	[95] = "Jugador contra Jugador",
@@ -29033,13 +29346,15 @@ for key,value in pairs({
 	[14801] = "Valle de Alterac",
 	[14802] = "Cuenca de Arathi",
 	[14804] = "G. Grito de Guerra",
+	[14807] = "Calabozos y bandas",
 	[14808] = "World of Warcraft",
+	[14821] = "World of Warcraft",
 	[14861] = "World of Warcraft",
 	[14864] = "World of Warcraft",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "Sube hasta nivel 40.",
+	[-184] = "Sube hasta nivel 40.",
 	[-175] = "Consigue 25 monturas",
 	[-174] = "Consigue 10 monturas",
 	[-153] = "Consigue 25 mascotas de compañía",
@@ -30083,6 +30398,7 @@ L.ACHIEVEMENTS_MISSING_DESC = "点击此按钮以检查缺失的成就。\n\n警
 L.ACHIEVEMENTS_NO_SOURCE = "@CRIEVE：此成就尚未提供来源信息。"
 L.ACHIEVEMENTS_TOOLTIP = "此列表显示了所有你可以收集的成就。"
 L.ACHIEVEMENTS_WRATH_SECTION_DESC = "这个部分直到巫妖王之怒才会正式存在，但应大家的要求（以及我自己的执念），我还是加上了它，这样你至少可以追踪其中一个大型成就的进度——前提是你有这份耐心。"
+L.ACTIVATE_NEXT_PROFILE = "激活下一个配置文件"
 L.ADD_LINKED_CHARACTER_ACCOUNT = "添加关联角色/帐号"
 L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "单击此处将角色或帐号链接到您的帐号。"
 L.ADD_LINKED_POPUP = "请输入要链接的角色或暴雪战网帐号的名称。"
@@ -30100,7 +30416,7 @@ L.AFTER_REFRESH = "刷新后 "
 L.AH_SCAN_SUCCESSFUL_1 = "：成功扫描 "
 L.AH_SCAN_SUCCESSFUL_2 = " 物品。"
 L.AH_SEARCH_BOE_ONLY = "使用此搜索只能找到装备绑定物品。"
-L.AH_SEARCH_NO_ITEMS_FOUND = "搜索中找不到缓存的物品。展开组并查看物品缓存名称，然后重试。使用此搜索只能找到BOE物品。"
+L.AH_SEARCH_NO_ITEMS_FOUND = "搜索中找不到缓存的物品。展开组并查看物品缓存名称，然后重试。使用此搜索只能找到装备绑定物品。"
 L.ALIVE = "存活"
 L.ALL_BUTTON_TOOLTIP = "点击此按钮一键启用所有选项。"
 L.ALL_HIDDEN = "全部隐藏"
@@ -30113,11 +30429,11 @@ L.ALL_THE_MOUNTS_DESC = "所有你尚未收藏的坐骑都会显示在这里。"
 L.ALL_THE_QUESTS_DESC = "所有有目标或起始物品可以在拍卖行出售的任务都会在这里显示。"
 L.ALL_THE_REAGENTS_DESC = "所有你的战网上的专业制作的可以使用的物品。"
 L.ALL_THE_RECIPES_DESC = "所有你尚未收藏的食谱都会显示在这里。"
-L.AND_MORE = "和 %s 更多 ..."
-L.AND_OTHER_SOURCES = "和 %s 其他来源 ..."
+L.AND_MORE = "和 %s 更多…"
+L.AND_OTHER_SOURCES = "和 %s 其他来源…"
 L.APPEARANCES = "外观"
 L.APPEARANCES_CHECKBOX = "外观"
-L.APPEARANCES_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意: 禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。"
+L.APPEARANCES_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意：禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。"
 L.APPLY_SEARCH_FILTER = "应用搜索过滤"
 L.APPLY_SEARCH_FILTER_DESC = "请选择一个搜索过滤选项。"
 L.ART_ID = "美术 ID"
@@ -30187,7 +30503,7 @@ L.AZERITE_ESSENCES_CHECKBOX = "|T" .. _.asset("Expansion_BFA") .. ":0|t 艾泽�
 L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "启用此选项以追踪艾泽里特精华。\n\n默认情况下每个角色都会被追踪。"
 L.BACKGROUND_TOOLTIP = "设置所有 ATT 窗口的背景颜色和透明度。"
 L.BATTLE_PETS_CHECKBOX = "战斗宠物"
-L.BATTLE_PETS_CHECKBOX_TOOLTIP = "启用此选项可追踪战斗宠物和同伴。这些可以在开放的世界中找到，也可以通过各种地下城和团队中的boss掉落，以及从供应商和声望获取。"
+L.BATTLE_PETS_CHECKBOX_TOOLTIP = "启用此选项可追踪战斗宠物和同伴。这些可以在开放的世界中找到，也可以通过各种地下城和团队中的首领掉落，以及从供应商和声望获取。"
 L.BEHAVIOR_LABEL = "列表行为"
 L.BEST_BONUS_ROLL_CHANCE = "最佳额外投骰几率"
 L.BEST_PERSONAL_LOOT_CHANCE = "最佳个人拾取几率"
@@ -30204,7 +30520,7 @@ L.BREADCRUMB_PARTYSYNC_2 = "这可以通过与另一个没有完成这些任务�
 L.BREADCRUMB_PARTYSYNC_3 = "可能需要与能够接受此任务的角色进行小队同步。"
 L.BREADCRUMB_PARTYSYNC_4 = "如果尝试通过小队同步获得此任务，请在 Discord 上告诉我们结果！"
 L.BREADCRUMBS = "线索任务"
-L.BREADCRUMBS_TOOLTIP = "这个窗口显示了ATT跟踪的所有探索任务。去获取它们吧！"
+L.BREADCRUMBS_TOOLTIP = "这个窗口显示了 ATT 跟踪的所有探索任务。去获取它们吧！"
 L.BREADCRUMBS_WARNING = "完成此任务后，部分线索任务将无法再接取："
 L.CACHED_RECIPES_1 = "缓存 "
 L.CACHED_RECIPES_2 = " 已知配方！"
@@ -30212,7 +30528,7 @@ L.CAMPSITE_DESC = "点击此按钮以根据缺少的内容随机选择一个营�
 L.CAMPSITE_ID = "营地 ID"
 L.CAMPSITES_CHECKBOX_TOOLTIP = "启用此选项以追踪战团营地的完成情况。"
 L.CATALYST = "化生台"
-L.CATALYST_TEXT = "|T" .. _.asset("Interface_Catalyst") .. ":0|t |cffffd900催化剂|r"
+L.CATALYST_TEXT = "|T" .. _.asset("Interface_Catalyst") .. ":0|t |cffffd900化生台|r"
 L.CELEBRATE_COLLECTED_CHECKBOX = "收藏事物触发庆祝音效"
 L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项。\n\n这个功能可以极大地帮助你保持动力。"
 L.CELEBRATIONS_LABEL = "庆祝和音效"
@@ -30290,7 +30606,7 @@ L.CURRENT_SPEC = "当前专精"
 L.CURRENT_SPEC_DESC = "如果你改变你的专精，你的战利品就会随之改变。"
 L.CURSEFORGE_BUTTON_TOOLTIP = "单击按钮复制 URL 到 Curse 的 ALL THE THINGS 插件地址。\n\n您也可以将此链接发送给您的朋友，让他们也毁掉自己的生活！他们最终会原谅你……也许吧。"
 L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 |c" .. _.DefaultColors.Account .. "账号模式|r。|r"
-L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。"
+L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示 %s 内容，即使该内容对当前角色不可用。"
 L.CUSTOM_FILTERS_LABEL = "自动化内容"
 L.DAILIES = "日常"
 L.DAILIES_TOOLTIP = "你可以通过 ATT 数据库搜索所有日常任务。列出的所有任务都显示为“未完成”，尽管 ATT 有时会显示它们已完成。如果你在 ATT 中看到某个日常任务为“已完成”，那仅仅意味着，若该任务关联有声望，你已将其提升至崇拜。"
@@ -30316,7 +30632,7 @@ L.DIFFICULTY = "难度"
 L.DIFFICULTY_ID = "难度 ID"
 L.DISABLE_PARTYSYNC = "即使使用小队同步，这个角色也可能无法完成。如果您以其他方式管理，请在 Discord 上告诉我们！"
 L.DISABLED = "已禁用"
-L.DISCORD_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！"
+L.DISCORD_BUTTON_TOOLTIP = "点击按钮复制 URL 到 All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！"
 L.DISPLAY_ID = "显示 ID"
 L.DISPLAY_IN_COMBAT_CHECKBOX = "在战斗中"
 L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "如果要在战斗中呈现鼠标提示信息，请启用此选项。\n\n如果你正在同你的公会进行史诗/大秘境活动，你可能应该关闭这个设置以尽可能节省性能。\n\n当你在单刷时它可以很有用，可以立即知道你需要从首领那里得到什么。"
@@ -30343,12 +30659,12 @@ L.ENABLED = "已启用"
 L.ENCOUNTER = "战斗"
 L.ENCOUNTER_ID = "首领战斗 ID"
 L.ENSEMBLE_LEARNED = "这套服装已被你的某个角色使用过。"
-L.EVENT_ACTIVE = "激活:"
-L.EVENT_END = "结束:"
+L.EVENT_ACTIVE = "激活："
+L.EVENT_END = "结束："
 L.EVENT_ID = "事件 ID"
 L.EVENT_SCHEDULE = "事件时间表"
-L.EVENT_START = "开始:"
-L.EVENT_WHERE = "地点:"
+L.EVENT_START = "开始："
+L.EVENT_WHERE = "地点："
 L.EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度"
 L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "启用此选项后，在进入地下城或团队副本时，小列表中将仅自动展开与当前激活难度相匹配的难度标题。\n\n示例：当进入英雄难度地下城时，仅展开英雄难度标题。"
 L.EXPAND_MINILIST_CHECKBOX = "展开小列表"
@@ -30361,14 +30677,14 @@ L.EXPANSION_ENABLE_ALL = "启用全部"
 L.EXPANSION_ENABLE_ALL_TOOLTIP = "显示所有资料片的内容"
 L.EXPANSION_EXPLAIN_LABEL = "选择您想在收藏窗口中看到的资料片内容。"
 L.EXPANSION_FILTER_ENABLE = "启用资料片过滤"
-L.EXPANSION_FILTER_ENABLE_TOOLTIP = "|cffff0000警告：|r当前Classic/WoD/Legion/BfA数据库中的时间线信息不完整，可能非常不准确。请谨慎使用。"
+L.EXPANSION_FILTER_ENABLE_TOOLTIP = "|cffff0000警告：|r当前 Classic/WoD/Legion/BfA 数据库中的时间线信息不完整，可能非常不准确。请谨慎使用。"
 L.EXPANSION_FILTER_LABEL = "按资料片过滤"
 L.EXPANSION_FILTER_TOOLTIP = "切换%s内容的可见性"
 L.EXPANSION_FILTERS_PAGE = "资料片过滤器"
 L.EXPANSION_ID = "资料片 ID"
 L.EXPANSION_THINGS_LABEL = "资料片事物"
 L.EXPLORATION = "探索"
-L.EXPLORATION_CHECKBOX = "探索(不精准)"
+L.EXPLORATION_CHECKBOX = "探索（不精准）"
 L.EXPLORATION_CHECKBOX_TOOLTIP = "启用此选项可以跟踪户外地图的探索完成情况。\n\n目前这个选项所提供的资讯并不准确，需要加强，请谨慎使用。"
 L.EXPLORATION_HARVEST = "采集探索数据"
 L.EXPLORATION_HARVEST_DESC = "点击此处尝试采集并获取所有探索进度。\n\n注意：这可能需要一些时间，但可能修复你遇到的一些探索问题。"
@@ -30442,7 +30758,7 @@ L.GARRISON_BUILDINGS_REQUIRE_GARRISON = "由于暴雪 API 存在技术限制/接
 L.GENERAL_CONTENT = "通用内容"
 L.GENERAL_PAGE = "通用"
 L.GENERAL_THINGS_LABEL = "通用事物"
-L.GITHUB_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things GitHub 地址。\n\n您可以直接克隆软件源代码，而无需使用第三方插件管理器！"
+L.GITHUB_BUTTON_TOOLTIP = "点击按钮复制 URL 到 All The Things GitHub 地址。\n\n您可以直接克隆软件源代码，而无需使用第三方插件管理器！"
 L.GO_GO_RANDOM = "随机 - 去看看！"
 L.GO_GO_RANDOM_DESC = "此窗口允许随机选择要获取的地点或物品。去吧！"
 L.GUID = "全局 ID"
@@ -30458,7 +30774,7 @@ L.HEIRLOOMS_UPGRADES_CHECKBOX = "+升级"
 L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "启用此选项可专门追踪单个传家宝升级的收藏情况。\n\n我们都知道暴雪就是喜欢消耗你的金币和灵魂，所以用这个切换来追踪你的金币。"
 L.HEIRLOOMS_UPGRADES_DESC = "这表明你是否已经将传家宝升级到了一定的级别。\n\n安息吧…金币。\n - Crieve"
 L.HELP_TEXT = "提供一个命令来在单个窗口中打开所有隐藏内容"
-L.HELP_TEXT_TOOLTIP = "所有隐藏的ATT内容"
+L.HELP_TEXT_TOOLTIP = "所有隐藏的 ATT 内容"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS = "隐藏成就触发器"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "这些成就是根据特定条件手动判定触发的，主要由游戏内部用于追踪目的。"
 L.HIDDEN_CURRENCY_TRIGGERS = "隐藏货币触发器"
@@ -30540,6 +30856,7 @@ L.LIST_WINDOW = "列表"
 L.LOCAL_LIST = "本地列表"
 L.LOCAL_LIST_TOOLTIP = "此窗口显示了本地地图上的所有内容。\n\n与其说是功能，不如说是个调试工具。"
 L.LOCATIONS_SLIDER_TOOLTIP = "使用该功能可以自定义鼠标提示中显示的来源位置数量。\n\n注意：这也会根据其他来源的多少来显示“X”个数量，如果这个总数等于显示的元素总数，那么就会简单地显示最后一个来源。\n\n默认：5"
+L.LOCK_CRITERIA_DECOR_LABEL = "已知装饰"
 L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（当前：%s）"
 L.LOCK_CRITERIA_FACTION_LABEL = "阵营声望"
 L.LOCK_CRITERIA_LEVEL_LABEL = "玩家等级"
@@ -30671,7 +30988,7 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左键展开/折叠\n右键弹出小列表
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左键展开/折叠\n右键弹出小列表\n" .. SHIFT_KEY_TEXT .. "左键搜索拍卖行|r"
 L.OWNED_BY = "拥有者 %s"
 L.OWNED_PETS = "已拥有宠物"
-L.PATCH = "补丁: "
+L.PATCH = "补丁："
 L.PATCH_EDIT_BOX = "请输入新补丁"
 L.PATCH_TOOLTIP = "按下此按钮以更改补丁。\n\n更改此值将筛选在指定补丁或范围内添加的物品。"
 L.PATREON_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Patreon 页面。\n\n在这里您可以看到如何在经济上支持插件！"
@@ -30749,6 +31066,7 @@ L.QUEST_OBJECTIVE_INVALID = "无效的任务目标"
 L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务"
 L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任务「%s」%s 将阻止收藏任务「%s」%s"
 L.QUEST_ROW_INSTRUCTIONS = "右击查看任何任务链要求"
+L.QUEST_TOOLTIP = "这个窗口显示了你（根据过滤器）可以完成的所有任务。去获取它们吧！\n\n注意：这个窗口不会包含用于完成任务的任务物品，但会显示所有相关的任务奖励。"
 L.QUESTS = "任务"
 L.QUESTS_CHECKBOX_TOOLTIP = "启用此选项以追踪任务。\n\n你可以右键单击列表中的任何任务，弹出它们的完整任务链，以显示你的进度和任何先决条件或后续任务。\n\n注意：每日、每周、每年和世界任务的跟踪不包含在此选项中，因为它们会在暴雪数据库中定期重置。"
 L.QUESTS_DESC = "按数字升序显示游戏中所有可能的任务 ID。"
@@ -30890,7 +31208,7 @@ L.SESSION_HISTORY_RESTORE_DESC = "点击此按钮可还原你已清除的数据�
 L.SET_ID = "套装 ID"
 L.SHARED = "共享"
 L.SHARED_APPEARANCES_CHECKBOX = "共享外观"
-L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "启用该选项可以在鼠标提示中看到外观相似的物品。\n\n注意：不符合装备类型的物品会显示在列表中。这是为了帮助你判断收藏进度。\n\n如果你对此感到困惑，从 ATT v1.5.0 开始，你可以右键单击物品，打开物品和它的共享外观，进入它们自己的独立小列表。"
+L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "启用该选项可以在鼠标提示中看到外观相似的物品。\n\n注意：不符合装备类型的物品会显示在列表中。这是为了帮助你判断收藏进度。\n\n如果你对此感到困惑，从 ATT v1.5.0开始，你可以右键单击物品，打开物品和它的共享外观，进入它们自己的独立小列表。"
 L.SHOPPING_OP_MISSING_1 = "预设缺少'购物'操作分配。"
 L.SHOPPING_OP_MISSING_2 = "键入'/tsm operations'创建或者分配一个。"
 L.SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "所有可学的任务奖励"
@@ -30911,7 +31229,7 @@ L.SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中看到任
 L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "货币计算"
 L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "启用此选项以显示收集物品所需的物品/货币的估计数量。\n\n对于不一次奖励所有可用内容的容器，估计将因此低于实际需要。"
 L.SHOW_ICON_PORTRAIT_CHECKBOX = "图标头像"
-L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "如果你想看到生物图标头像而不是非任务对象类型的默认图标，请启用此选项。\n\n也就是说：当查看 Boss 时，此选项将显示 Boss 的脸而不是难度图标。\n\n默认：开启"
+L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "如果你想看到生物图标头像而不是非任务对象类型的默认图标，请启用此选项。\n\n也就是说：当查看首领时，此选项将显示首领的脸而不是难度图标。\n\n默认：开启"
 L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "对任务"
 L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "如果你想看到生物图标头像而不是任务对象类型的默认图标，请启用此选项。\n\n也就是说：查看任务时，此选项将显示任务给予者的脸，而不是任务类型图标。\n\n默认：开启"
 L.SHOW_INCOMPLETE_THINGS_CHECKBOX = "显示所有可追踪事物"
@@ -30959,6 +31277,7 @@ L.SPLIT = "按难度"
 L.STRANGER_THINGS_LABEL = "陌生事物"
 L.SUMMARIZE_CHECKBOX = "汇总事物"
 L.SUMMARIZE_CHECKBOX_TOOLTIP = "启用该选项可在鼠标提示中汇总事物。例如，如果一个事物可以变成另一个事物的商人，那么在鼠标提示中显示另一个事物，以提供其多种用途的可见性。如果一个事物作为许多其他事物的容器，这个选项将显示该容器所包含的所有其他事物。\n\n我们建议你保持此设置开启。"
+L.SWITCH_NO_NEXT_PROFILE = "没有可切换的下一个配置文件。"
 L.SYM_ROW_INFORMATION = "右键单击以查看来自其他位置的其它内容"
 L.SYM_ROW_SKIP_DESC = "关联内容仅显示在该对象的提示中。"
 L.SYMLINK = "符号链接"
@@ -31032,10 +31351,10 @@ L.TRADESKILLS = "专业技能"
 L.TRADESKILLS_HARVEST_REAGENTS_DESC = "供贡献者采集配方材料信息使用"
 L.TRADESKILLS_MISSING_RECIPES_TITLE = "缺失的配方"
 L.TSM_WARNING_1 = "运行此命令可能会通过将物品重新分配到 "
-L.TSM_WARNING_2 = " 预设。\n\n我们建议你在使用此功能时使用不同的配置文件。\n\n你还想继续吗?"
+L.TSM_WARNING_2 = " 预设。\n\n我们建议你在使用此功能时使用不同的配置文件。\n\n你还想继续吗？"
 L.TSM4_ERROR = "TSM4 尚未与 ATT 兼容。如果你知道如何像我们以前在 TSM3 中那样创建预设，请在 Discord 上告诉我！"
 L.TWITCH_BUTTON_TOOLTIP = "点击按钮复制 URL 到我的 Twitch 频道。\n\n可以在我直播的时候问问题，我会尽力回答！"
-L.UNAVAILABLE_WARNING_FORMAT = "如果满足以下%d项，则变为不可用："
+L.UNAVAILABLE_WARNING_FORMAT = "如果满足以下 %d 项，则变为不可用："
 L.UNCHECK_ALL_BUTTON_TOOLTIP = "点击此按钮一键禁用所有选项。"
 L.UNOBTAINABLE_LABEL = "无法获取的内容"
 L.UNOBTAINABLES_PAGE = "不可获得"
@@ -31097,7 +31416,7 @@ localize(L.HEADER_NAMES, {
 	[-69] = "安其拉神殿困难模式",
 	[-74] = "梦魇之龙",
 	[-97] = "圣物",
-	[-232] = "补丁 1.x.x",
+	[-232] = "补丁1.x.x",
 	[-243] = "护甲附魔",
 	[-245] = "武器附魔",
 	[-298] = HONOR .. PAPERDOLL_SIDEBAR_TITLES,
@@ -31133,6 +31452,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "时令鱼类：夏季鲈鱼",
 	[-587] = "时令鱼类：冬鱿鱼",
 	[-588] = "荆棘谷钓鱼大赛",
+	[-610] = "Crieve 的未实装清单",
 	[-611] = "安其拉三宝",
 	[-613] = "梦魇林地",
 	[-614] = "学徒",
@@ -31147,13 +31467,17 @@ localize(L.HEADER_NAMES, {
 	[-627] = "黑石大爆发",
 	[-632] = "探索赛季",
 	[-633] = "理解",
-	[-634] = "等级 1",
-	[-635] = "等级 2",
-	[-636] = "等级 3",
+	[-634] = "等级1",
+	[-635] = "等级2",
+	[-636] = "等级3",
 	[-637] = "怪物狩猎",
 	[-638] = "梦魇进犯",
 	[-639] = "铭刻",
 	[-640] = "灵魂掮客",
+	[-641] = "侍从训练",
+	[-642] = "启迪等级一",
+	[-643] = "启迪等级二",
+	[-644] = "套装肩部附魔",
 	[-645] = "遭劫货物",
 	[-646] = "制造",
 	[-647] = "采集",
@@ -31165,6 +31489,7 @@ localize(L.HEADER_NAMES, {
 	[-726] = "联盟的长者",
 	[-727] = "地下城中的长者",
 	[-728] = "部落的长者",
+	[-782] = "中国促销（经典）",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "术士可以教导他们的恶魔新技能，一些高等级的魔典只能从你阵营首都的恶魔训练师那里购买。",
@@ -31172,35 +31497,47 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-43] = "宠物对战相关任务和驯练师。",
 	[-44] = "此部分只会显示你当前角色的专业技能，除非处于账号模式或调试模式。",
 	[-47] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
-	[-59] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在 1 级进行训练，长柄武器除外，需要 20 级。\n\n在补丁 4.0.1 中，武器大师的训练已经过时，因为现在每个职业在创建时都会学习所有适合该职业的武器熟练度。不久之后，武器大师就被从游戏中删除了。",
+	[-59] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在1级进行训练，长柄武器除外，需要20级。\n\n在补丁4.0.1中，武器大师的训练已经过时，因为现在每个职业在创建时都会学习所有适合该职业的武器熟练度。不久之后，武器大师就被从游戏中删除了。",
 	[-316] = "无论谁先击中目标，只有最终击中醉汉的人才会获得荣誉。对此没有团体信用。",
-	[-317] = "对受到野生变形术影响的小动物施放变形术，将它们变回学徒。每个人都会给你一张纸条。收集 6 个笔记来学习符文。",
+	[-317] = "对受到野生变形术影响的小动物施放变形术，将它们变回学徒。每个人都会给你一张纸条。收集6个笔记来学习符文。",
 	[-341] = "此列表中的物品是以下物品的共享外观。在唯一外观模式下，此列表可帮助了解特定物品被标记为已收藏的原因。",
 	[-342] = "此列表中的物品是独特外观。你必须专门收藏这个物品以获得外观。",
 	[-343] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
-	[-353] = "又称黑石塔下层",
+	[-353] = "又称黑石塔下层。",
 	[-354] = "你的队伍中必须有一名成员完成 “升腾之印（Seal of Ascension）” 任务链，才能点燃火焰并打开通往副本这一部分的门，即黑石塔上层（Upper Blackrock Spire）",
 	[-355] = "该副本的此部分可从最东侧的入口进入。（右侧）",
 	[-356] = "该副本的此部分可从最北侧的入口进入。",
 	[-357] = "该副本的此部分可从最西侧的入口进入。（左侧）",
-	[-481] = "当第五阶段最终上线时，安其拉废墟和安其拉神庙不会即刻开放。相反，服务器上的全体玩家需开展一场大规模的备战行动，通过收集战备物资并完成一条史诗任务线，最终敲响铜锣，才能开启这些团队副本，让其中的恐怖之物降临世间。\n\n一旦两个阵营都完成各自的贡献，会有一个 5 天的宽限期。之后，一旦有人敲响铜锣，就会触发一个持续 10 小时、横跨卡利姆多多个区域的全服事件。\n\n安其拉开放的速度取决于服务器及其阵营平衡。\n\n我们建议尽可能推迟备战行动，以便让更多人获得 “甲虫之王” 坐骑，因为所有完成 “流沙节杖” 任务线的玩家都会获得相同奖励！",
-	[-483] = "除了服务器上所有玩家共同努力完成备战任务外，还需要一名玩家制作出流沙节杖 —— 这是一项极为艰巨的任务，在该任务线刚推出时，只有服务器上顶尖的公会才能完成。当备战任务结束，联盟与部落的军队抵达希利苏斯后，流沙节杖可用于敲响甲虫之锣。敲响铜锣后，安其拉之门就会开启。每个服务器上第一个敲响甲虫之锣的玩家将获得 “甲虫之王” 称号（在《燃烧的远征》中，经典旧世的这个称号不会再出现！）以及黑色其拉共鸣水晶坐骑。在随后 10 小时内敲响铜锣的其他玩家也能获得该称号。\n\n尽管在服务器上安其拉之门开启后，玩家仍可完成流沙节杖的任务线，但完成后既不会获得黑色其拉共鸣水晶坐骑，也不会获得 “甲虫之王” 称号。",
-	[-484] = "天灾入侵是1.11 补丁中的一项世界事件，并在巫妖王之怒前置补丁 3.0.1中再度开启，预示着令人闻风丧胆的克尔苏加德的要塞 ——纳克萨玛斯即将开放。\n\n艾泽拉斯的多个地区遭到了天灾军团部队的袭击。银色黎明的成员组织了一场对抗天灾入侵的全球反击，他们密切监视着任何浮空死灵城堡的动向，并将情报分享给所有愿意投身这场战斗的冒险者。\n\n每一次对天灾军团的胜利，都会让防线愈发坚固。随着越来越多的入侵企图被守军击退，银色黎明将为抗击入侵者的勇士们赋予越来越强大的祝福。\n\n如果凡人们齐心协力，清除散落在世界各地、每一座浮空死灵城堡下方出现的天灾营地，这场入侵或许就能被有效遏制，甚至彻底击退。\n\n凡有意拿起武器对抗亡灵入侵者的勇士，可与银色黎明的代表交谈，了解哪些地区需要支援，以及防线当前的状况",
-	[-547] = "本板块用于收录现实中开展的各类杂项促销活动，以及与账号管理相关的内容",
-	[-610] = "如果以下内容已在别处归类整理，请将它们从本清单中删除。谢谢",
+	[-365] = "斯坦索姆分为两侧。\n\n这一侧通常被称为“活人”侧或“血色”侧，现已被血色十字军占据。",
+	[-366] = "斯坦索姆分为两侧。\n\n这一侧通常被称为“亡灵”侧或“天灾”侧，现已被天灾军团占据。",
+	[-367] = "你必须击杀大厅周围的全部6名小首领，才能解锁通往预言者迦玛兰的道路。",
+	[-481] = "当第五阶段最终上线时，安其拉废墟和安其拉神庙不会即刻开放。相反，服务器上的全体玩家需开展一场大规模的备战行动，通过收集战备物资并完成一条史诗任务线，最终敲响铜锣，才能开启这些团队副本，让其中的恐怖之物降临世间。\n\n一旦两个阵营都完成各自的贡献，会有一个5天的宽限期。之后，一旦有人敲响铜锣，就会触发一个持续10小时、横跨卡利姆多多个区域的全服事件。\n\n安其拉开放的速度取决于服务器及其阵营平衡。\n\n我们建议尽可能推迟备战行动，以便让更多人获得 “甲虫之王” 坐骑，因为所有完成 “流沙节杖” 任务线的玩家都会获得相同奖励！",
+	[-483] = "除了服务器上所有玩家共同努力完成备战任务外，还需要一名玩家制作出流沙节杖 —— 这是一项极为艰巨的任务，在该任务线刚推出时，只有服务器上顶尖的公会才能完成。当备战任务结束，联盟与部落的军队抵达希利苏斯后，流沙节杖可用于敲响甲虫之锣。敲响铜锣后，安其拉之门就会开启。每个服务器上第一个敲响甲虫之锣的玩家将获得 “甲虫之王” 称号（在《燃烧的远征》中，经典旧世的这个称号不会再出现！）以及黑色其拉共鸣水晶坐骑。在随后10小时内敲响铜锣的其他玩家也能获得该称号。\n\n尽管在服务器上安其拉之门开启后，玩家仍可完成流沙节杖的任务线，但完成后既不会获得黑色其拉共鸣水晶坐骑，也不会获得 “甲虫之王” 称号。",
+	[-484] = "天灾入侵是1.11补丁中的一项世界事件，并在巫妖王之怒前置补丁3.0.1中再度开启，预示着令人闻风丧胆的克尔苏加德的要塞 ——纳克萨玛斯即将开放。\n\n艾泽拉斯的多个地区遭到了天灾军团部队的袭击。银色黎明的成员组织了一场对抗天灾入侵的全球反击，他们密切监视着任何浮空死灵城堡的动向，并将情报分享给所有愿意投身这场战斗的冒险者。\n\n每一次对天灾军团的胜利，都会让防线愈发坚固。随着越来越多的入侵企图被守军击退，银色黎明将为抗击入侵者的勇士们赋予越来越强大的祝福。\n\n如果凡人们齐心协力，清除散落在世界各地、每一座浮空死灵城堡下方出现的天灾营地，这场入侵或许就能被有效遏制，甚至彻底击退。\n\n凡有意拿起武器对抗亡灵入侵者的勇士，可与银色黎明的代表交谈，了解哪些地区需要支援，以及防线当前的状况。",
+	[-546] = "这些仅可通过2006年的 iCoke 促销活动获得（仅限中国）。",
+	[-547] = "本板块用于收录现实中开展的各类杂项促销活动，以及与账号管理相关的内容。",
+	[-610] = "如果以下内容已在别处归类整理，请将它们从本清单中删除。谢谢。",
 	[-613] = "梦魇林地可在通往翡翠梦境的传送门附近找到。",
-	[-632] = "本赛季带来了 25 级的初始等级上限和新的 25 级终局游戏，包括 10 名玩家的 Blackfathom Deeps 突袭，其中包含新的机制、新的和重新设计的 Boss 来挑战玩家的战术和策略，以及新鲜的奖励。",
+	[-614] = "3名学徒中只有1名可被选中挑战。",
+	[-615] = "每天会随机选取3场歌剧中的1场。",
+	[-616] = "你需要被梦魇融合体施加负面效果才能触发此任务。（不要与它交战，直接跑开即可）",
+	[-627] = "该事件从午夜起每2小时发生一次，持续60分钟。事件激活期间，灼热峡谷将为瑟银兄弟会提供日常任务。以往提升瑟银兄弟会的声望相当耗费时间，因此这个日常任务枢纽的加入非常受欢迎。\n事件激活时，会刷新新的 NPC，灼热峡谷的外围区域也会发生一些环境变化。",
+	[-632] = "本赛季带来了25级的初始等级上限和新的25级终局游戏，包括10名玩家的黑暗深渊突袭，其中包含新的机制、新的和重新设计的首领来挑战玩家的战术和策略，以及新鲜的奖励。",
+	[-638] = "该事件围绕遍布艾泽拉斯的传送门展开，通常会出现一个翡翠巨龙世界首领。这些新事件以 PvE 为核心，要求玩家在传送门周围及其内部完成任务。\n\n该事件旨在提供终局内容与变化，带来新阵营翡翠守望者以及新物品和套装，同时也补充升级体验。玩家最早在25级就可以开始进行梦魇进犯，以获取经验和声望。\n\n梦魇进犯也设计为组队进行，任务最多可分享给另外4名玩家。部分任务还会要求击杀首领类敌人，或要求你使用采集专业。这并不意味着你不能单人完成，只是效率很可能不高。",
 	[-639] = "铭刻是最近在发现季节宣布的一个新系统。它允许每个职业通过解锁新的独特能力来定制他们的游戏体验！",
-	[-645] = "'遭劫货物'任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将'遭劫货物'交付给组织代表，以换取一些银币、经验和声望。当然，货物中也有缺少的物品，你可以补充以获得更大的声望奖励。",
+	[-641] = "从50级开始，圣骑士可以在西瘟疫之地完成一条任务链，获得一件可以召唤专属侍从的遗物。该侍从可以通过参与战斗以及被圣骑士的法术治疗来升级。（进入战斗后，在他攻击怪物时不停刷1级圣光术即可。）",
+	[-642] = "获得侍从后，使用遗物将其召唤出来，然后通过进入战斗并保证他存活来为他升级。",
+	[-645] = "'遭劫货物'任务物品从艾泽拉斯6级及以上的小怪中掉落。这些任务要求将'遭劫货物'交付给组织代表，以换取一些银币、经验和声望。当然，货物中也有缺少的物品，你可以补充以获得更大的声望奖励。",
 	[-688] = "这是一个在荆棘谷举行的自由对战 PvP 活动，每3小时从服务器时间午夜开始持续30分钟。\n\n击杀玩家以获得可叠加的鲜血之月增益效果——献给血之洛阿的鲜血。该效果最多可叠加255次。\n每次击杀可获得5层鲜血。\n死亡会失去鲜血。\n前往鲜血祭坛 |cffffffff（地图上的红色旗帜）|r，将献给血之洛阿的鲜血兑换为铜质鲜血硬币、银质鲜血硬币和金质鲜血硬币。只需走到祭坛旁，硬币就会自动出现在你的背包中。\n\n你可以通过与赞达拉使者交谈来选择退出该活动。",
 	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
 	[-723] = "在卡利姆多的不同地区，元素入侵的报告正在增加。每隔几天，一股新的元素浪潮就会强行涌入希利苏斯、安戈洛环形山、艾萨拉和冬泉谷的区域——显然，只是为了看看它们能在这些领土上深入到什么程度，直到被部落或联盟的军队击退。调查这些地区并帮助你的盟友对抗这些神秘的入侵。",
-	[-736] = "此部分用于介绍现实世界的促销活动，这些活动在某些极稀有内容出现在游戏商店之前，就将其引入了游戏中",
+	[-736] = "此部分用于介绍现实世界的促销活动，这些活动在某些极稀有内容出现在游戏商店之前，就将其引入了游戏中。",
+	[-782] = "这些促销活动仅限于经典与泰坦重铸中国服务器。",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
-	[-318] = "地下城套装的第2套职业套装，通常称为T0.5，是通过完成一条漫长的任务链来获得的，该任务链将作为终极地下城掉落的第一个套装升级为更强大的版本。在当前的魔兽世界中，这些套装受到收藏家的追捧，因为随着大灾变，这条任务链已被完全从游戏中移除。在魔兽世界经典版中，你应该在所有角色上完成这条任务链！",
-	[-349] = "这些物品可以通过重置首领无限刷取",
+	[-318] = "地下城套装的第2套职业套装，通常称为 T0.5，是通过完成一条漫长的任务链来获得的，该任务链将作为终极地下城掉落的第一个套装升级为更强大的版本。在当前的魔兽世界中，这些套装受到收藏家的追捧，因为随着大灾变，这条任务链已被完全从游戏中移除。在魔兽世界经典版中，你应该在所有角色上完成这条任务链！",
+	[-349] = "这些物品可以通过重置首领无限刷取。",
 	[-388] = "木喉熊怪居住在两个区域：艾萨拉和费伍德森林。人们认为他们是唯一一支未被恶魔腐化的熊怪部族，不过由于存在克罗格（一只未被腐化、所属部族不明的熊怪）以及《燃烧的远征》中秘蓝岛上的深须部族，这一点或许并不属实。然而，现在许多其他种族不加分辨地就对熊怪痛下杀手，根本不去判断对方是敌是友。正因如此，木喉熊怪极少信任他人。\n\n那些前往费伍德森林北部的木喉要塞，并证明自己是木喉熊怪之友的冒险者会发现，熊怪们将朋友看得比什么都重要。尽管他们没有珍贵的珠宝或任何世俗财富，但木喉熊怪的萨满传统依然深厚。他们精通用兽皮制作护甲的技艺，而且非常乐意与他们部族的朋友分享治疗与复活的知识。此外，只要与他们的声望高于 “冷淡”，你就能畅通无阻地通过他们的隧道进入月光林地和冬泉谷。",
 })
 localize(L.FILTER_ID_TYPES, {
@@ -31972,28 +32309,28 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAA除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
 	[5] = "|cFFFFAAAA这不能永久收集、学习或用于幻化。|r",
 	[7] = "|cFFAAFFAA该物品可在商栈购买。|r",
-	[11] = "|cFFAAFFAA该功能直到 阶段1 的 WoW Classic 才可用。|r",
-	[1605] = "|cFFAAFFAA直到探索季第一阶段才推出此功能|r",
-	[1606] = "|cFFAAFFAA该功能直到 阶段2 的 Season of Discovery 才可用。|r",
-	[1607] = "|cFFAAFFAA该功能直到 阶段3 的 Season of Discovery 才可用。|r",
-	[1608] = "|cFFAAFFAA该功能直到 阶段4 的 Season of Discovery 才可用。|r",
-	[1609] = "|cFFAAFFAA该功能直到 阶段5 的 Season of Discovery 才可用。|r",
-	[1610] = "|cFFAAFFAA该功能直到 阶段6 的 Season of Discovery 才可用。|r",
-	[1611] = "|cFFAAFFAA该功能直到 阶段7 的 Season of Discovery 才可用。|r",
-	[1612] = "|cFFAAFFAA该功能直到 阶段8 的 Season of Discovery 才可用。|r",
+	[11] = "|cFFAAFFAA该功能直到 阶段1 的 经典旧世 才可用。|r",
+	[1605] = "|cFFAAFFAA直到探索季第一阶段才推出此功能。|r",
+	[1606] = "|cFFAAFFAA该功能直到 阶段2 的 探索赛季 才可用。|r",
+	[1607] = "|cFFAAFFAA该功能直到 阶段3 的 探索赛季 才可用。|r",
+	[1608] = "|cFFAAFFAA该功能直到 阶段4 的 探索赛季 才可用。|r",
+	[1609] = "|cFFAAFFAA该功能直到 阶段5 的 探索赛季 才可用。|r",
+	[1610] = "|cFFAAFFAA该功能直到 阶段6 的 探索赛季 才可用。|r",
+	[1611] = "|cFFAAFFAA该功能直到 阶段7 的 探索赛季 才可用。|r",
+	[1612] = "|cFFAAFFAA该功能直到 阶段8 的 探索赛季 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAA在游戏的任何版本中，鼓励使用真实货币的行为均不受认可。参与此类内容需自行承担风险。|r",
-	[11] = "|cFFFFAAAA包含熔火之心和奥妮克希亚的巢穴|r",
-	[1605] = "|cFFFFAAAA包含黑石深渊团队副本、灰谷世界PvP，等级上限为25级|r",
-	[1606] = "|cFFFFAAAA新增了诺莫瑞根团队副本、荆棘谷世界PvP，并将等级上限提升至40级|r",
-	[1607] = "|cFFFFAAAA新增了沉没的神庙副本，并将等级上限提升至50级|r",
-	[1608] = "|cFFFFAAAA新增了熔火之心、奥妮克希亚的巢穴、屠魔峡谷、风暴悬崖和腐烂之痕，并将等级上限提升至60级|r",
-	[1609] = "|cFFFFAAAA包括黑翼之巢、祖尔格拉布和新的水晶谷团队副本|r",
+	[11] = "|cFFFFAAAA包含熔火之心和奥妮克希亚的巢穴。|r",
+	[1605] = "|cFFFFAAAA包含黑石深渊团队副本、灰谷世界 PvP，等级上限为25级。|r",
+	[1606] = "|cFFFFAAAA新增了诺莫瑞根团队副本、荆棘谷世界 PvP，并将等级上限提升至40级。|r",
+	[1607] = "|cFFFFAAAA新增了沉没的神庙副本，并将等级上限提升至50级。|r",
+	[1608] = "|cFFFFAAAA新增了熔火之心、奥妮克希亚的巢穴、屠魔峡谷、风暴悬崖和腐烂之痕，并将等级上限提升至60级。|r",
+	[1609] = "|cFFFFAAAA包括黑翼之巢、祖尔格拉布和新的水晶谷团队副本。|r",
 	[1610] = "|cFFFFAAAA包括安其拉和新的梦魇林地团队副本|r",
 	[1611] = "|cFFFFAAAA包括纳克萨玛斯和新的卡拉赞地牢地下城|r",
-	[1612] = "|cFFFFAAAA包含经典+?|r",
+	[1612] = "|cFFFFAAAA包含经典+？|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -32313,6 +32650,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "统计",
 	[81] = "光辉事迹",
 	[92] = "综合",
 	[95] = "PvP",
@@ -32329,13 +32667,15 @@ for key,value in pairs({
 	[14801] = "奥特兰克山谷",
 	[14802] = "阿拉希盆地",
 	[14804] = "战歌峡谷",
+	[14807] = "地下城与团队",
 	[14808] = "经典旧世",
+	[14821] = "经典旧世",
 	[14861] = "经典旧世",
 	[14864] = "经典旧世",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "升到40级",
+	[-184] = "升到40级",
 	[-175] = "获得25种坐骑",
 	[-174] = "获得10种坐骑",
 	[-153] = "获得25个宠物小伙伴",
@@ -34522,6 +34862,7 @@ for key,value in pairs({
 })
 do achievements[key].description = value; end
 for key,value in pairs({
+	[1] = "統計",
 	[81] = "偉業",
 	[92] = "一般",
 	[95] = "玩家對玩家",
@@ -34538,13 +34879,15 @@ for key,value in pairs({
 	[14801] = "奧特蘭克山谷",
 	[14802] = "阿拉希盆地",
 	[14804] = "戰歌峽谷",
+	[14807] = "地城與團隊",
 	[14808] = "艾澤拉斯",
+	[14821] = "艾澤拉斯",
 	[14861] = "艾澤拉斯",
 	[14864] = "艾澤拉斯",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-180] = "升至40級。",
+	[-184] = "升至40級。",
 	[-175] = "獲得25隻坐騎",
 	[-174] = "獲得10隻坐騎",
 	[-153] = "獲得25隻寵物夥伴",
