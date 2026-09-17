@@ -36,9 +36,9 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.UpgradeMapping = {
-	[DIFFICULTY.RAID.LFR] = 4,
-	[DIFFICULTY.RAID.NORMAL] = 3,
-	[DIFFICULTY.RAID.HEROIC] = 5,
+	[DIFFICULTY.RAID.LFR] = 3,
+	[DIFFICULTY.RAID.NORMAL] = 5,
+	[DIFFICULTY.RAID.HEROIC] = 6,
 }
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
