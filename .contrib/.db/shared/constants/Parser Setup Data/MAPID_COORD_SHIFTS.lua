@@ -7,5 +7,4 @@
 -- such that any content with 'coords' on the MAPID with a 'timeline' when parsed which is prior to the MAX_TIMELINE_VALUE
 -- will receive the X/Y shift against its coords
 
--- In 11.1 The Ringing Deeps shifted due to a changed map
-MAPID_COORD_SHIFTS[THE_RINGING_DEEPS] = { -4.2, 0, ADDED_11_1_0 }
+MAPID_COORD_SHIFTS = {}

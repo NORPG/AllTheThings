@@ -76,10 +76,6 @@ namespace ATT
                                     }
                                 }
                             }
-                            else
-                            {
-                                ThrowBadFormatDB("ItemDB");
-                            }
                         }
                         break;
                     case "ItemDBConditional":
@@ -114,10 +110,6 @@ namespace ATT
                                     }
                                 }
                             }
-                            else
-                            {
-                                ThrowBadFormatDB("ItemDBConditional");
-                            }
                         }
                         break;
                     case "RecipeDB":
@@ -147,10 +139,6 @@ namespace ATT
                                         ThrowBadFormatDB("ItemSpeciesDB", itemValuePair);
                                     }
                                 }
-                            }
-                            else
-                            {
-                                ThrowBadFormatDB("ItemSpeciesDB");
                             }
                             break;
                         }
@@ -344,10 +332,6 @@ namespace ATT
                                     }
                                 }
                             }
-                            else
-                            {
-                                ThrowBadFormatDB("CategoryDB");
-                            }
                             break;
                         }
                     case "FilterDB":
@@ -406,10 +390,6 @@ namespace ATT
                                     }
                                 }
                             }
-                            else
-                            {
-                                ThrowBadFormatDB("FilterDB");
-                            }
                             break;
                         }
                     case "FlightPathDB":
@@ -461,10 +441,6 @@ namespace ATT
                                         ThrowBadFormatDB("FlightPathDB", keyValuePair);
                                     }
                                 }
-                            }
-                            else
-                            {
-                                ThrowBadFormatDB("FlightPathDB");
                             }
                             break;
                         }
@@ -553,10 +529,6 @@ namespace ATT
                                         ThrowBadFormatDB("ObjectDB", keyValuePair);
                                     }
                                 }
-                            }
-                            else
-                            {
-                                ThrowBadFormatDB("ObjectDB");
                             }
                             break;
                         }

@@ -1,4 +1,11 @@
--- Database Container! Super neat things that store persistent data so they don't get wiped out!
+local AllowedNilGlobals = {
+	CurrentSubFileName = 1,
+}
+_G = setmetatable(_G, { __index = function(t,key) if not AllowedNilGlobals[key] then error("NON-EXISTENT-GLOBAL:",key) end end})
+AllTheThings = {};
+_ = AllTheThings;
+
+do	-- Database Containers! Super neat things that store persistent data so they don't get wiped out!
 do
 -- The structure of the data is like so:
 -- 	readable = "human readable string",
@@ -142,3 +149,19 @@ for key,value in pairs(ObjectDB[31]) do
 	print(" " .. key .. ": " .. value);
 end
 --]]--
+end
+
+do	-- Database Exports
+local SetAutoTable
+local autotable__index = function(t, key)
+	if key == nil then return end
+	local val = SetAutoTable()
+	rawset(t, key, val)
+	return val
+ end
+SetAutoTable = function()
+	return setmetatable({}, {__index = autotable__index})
+end
+
+ExportDB = CreateDatabaseContainer("Exports", {__index = autotable__index})
+end

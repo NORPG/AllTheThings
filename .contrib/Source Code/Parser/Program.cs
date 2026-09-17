@@ -426,15 +426,38 @@ namespace ATT
 
                 // Step 4: Load the Lua data modules
                 // Link the Lua 'print' function to instead perform a Trace print
+                string content = "";
                 lua.State.Encoding = Encoding.UTF8;
                 lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
                 lua.RegisterFunction("error", typeof(Program).GetMethod(nameof(LuaErrorAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+
+                // Load the shared lua files first
+                string sharedRootFolder = Framework.Config["shared-data"] ?? "../.db/shared";
+                if (Directory.Exists(sharedRootFolder))
+                {
+                    var sharedFiles = Directory.GetFiles(sharedRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
+                    sharedFiles.Sort(StringComparer.InvariantCulture);
+                    try
+                    {
+                        foreach (var fileName in sharedFiles)
+                        {
+                            if (Errored) break;
+                            ParseLUAFile(lua, fileName);
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Framework.LogException(e);
+                        File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
+                        Framework.WaitForUser("Press any key to close...");
+                        throw;
+                    }
+                }
 
                 // Load the main lua header file and all associated lib files first.
                 string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
                 luaFiles.Sort(StringComparer.InvariantCulture);
-                string content = "";
                 try
                 {
                     foreach (var fileName in luaFiles)
