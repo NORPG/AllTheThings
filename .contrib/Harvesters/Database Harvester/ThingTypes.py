@@ -13,6 +13,7 @@ FLAVOR_RANGES: dict[str, tuple[Version, Optional[Version]]] = {
     "Classic": (version.parse("0.0.0.00000"), version.parse("1.14.1.00000")),
     "SoM":     (version.parse("1.14.1.00000"), version.parse("1.15.0.00000")),
     "SoD":     (version.parse("1.15.0.00000"), version.parse("1.16.0.00000")),
+    "Forever": (version.parse("1.60.0.00000"), version.parse("1.61.0.00000")),
     "TBC":     (version.parse("2.0.0.00000"), version.parse("3.0.0.00000")),
     "WotLK":   (version.parse("3.0.0.00000"), version.parse("4.0.0.00000")),
     "Cata":    (version.parse("4.0.0.00000"), version.parse("5.0.0.00000")),
@@ -204,6 +205,8 @@ class Explorations(Thing):
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Explorations have names in the same db
         title = "AreaName_lang" if "AreaName_lang" in row else "AreaName_lang[0]"
+        if build == "1.60.1.69876":  # Cursed build
+            title = "Field_1_60_1_69876_001_lang"
         return f"{row['ID']}{DELIMITER}{row[title]}"
 
     @staticmethod
@@ -234,9 +237,13 @@ class Factions(Thing):
         if build and version.parse(build) < version.parse("3.4.2.49658") and version.parse(build) > version.parse("3.4.1.46722"):
             name = "Field_3_4_1_46722_001_lang"
             id = "Field_3_4_1_46722_003"
+        elif build == "1.60.1.69876":  # Cursed build
+            name = "Field_1_60_1_69876_000_lang"
+            id = "ID"
         else:
             name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
             id = "ID"
+        
         return f"{row[id]}{DELIMITER}{row[name]}"
 
     @staticmethod
@@ -369,6 +376,8 @@ class Items(Thing):
         # Helps Toys and Transmog
         if build == "11.2.5.62554":
             return f"{row['ID']}{DELIMITER}{row['Field_11_2_5_62554_005_lang'].strip()}"
+        elif build == "1.60.1.69876":  # Cursed build
+            return f"{row['ID']}{DELIMITER}{row['Field_1_60_1_69876_004_lang'].strip()}"
         else:
             return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"
 
@@ -497,7 +506,10 @@ class Recipes(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Recipe names are in the SpellName db and Profession names are in SkillLine db
-        return f"{row['Spell']}{DELIMITER}{row['SkillLine']}"
+        if build == "1.60.1.69876":
+            return f"{row['Field_1_60_1_69876_004']}{DELIMITER}{row['Field_1_60_1_69876_003']}"
+        else:
+            return f"{row['Spell']}{DELIMITER}{row['SkillLine']}"
 
     @staticmethod
     def id_schema() -> list[str]:
