@@ -31,7 +31,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(797),	-- Treasure Hound <Name>
 				}),
 				ach(63724),	-- Knock Knock
-				ach(63715, {	-- Let Me Solo Him: Kindo'Jan
+				ach(63715, {	-- Let Me Solo Him: Kindo'jan
 					i(283363),	-- Loa-Blessed Wayfarer (MOUNT!)
 				}),
 				ach(63718, {	-- Lock and Key
@@ -72,13 +72,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(799),	-- Maze Runner <Name>
 				}),
 			}),
-			n(DELVE_COMPLETION, {
+			n(DELVE_COMPLETION, {	-- UI Elements
 				i(285807),	-- Heroic Soul Fragment
 				i(285875),	-- Kindo'jan
-				i(279284),	-- Nebulous Voidcache: Delver's Trove (It is doubtful that this has appeared only here. This may belong in S2 Delve file)
 			}),
 			n(FACTIONS, {
-				faction(2836),	-- Kindo'Jan's Labyrinth
+				faction(2836),	-- Kindo'jan's Labyrinth
 			}),
 			n(FLIGHT_PATHS, {
 				fp(3300, {	-- Chamber of Rites
@@ -155,6 +154,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 44.4, 84.6, LABYRINTH_KINDOJAN },
 					["groups"] = { i(286643) },	-- Kinduru's Spiriting Quill (TOY!)
 				}),
+			}),
+			n(REWARDS, {
+				i(285801),	-- Heroic Soul Fragment
+				i(279284),	-- Nebulous Voidcache: Delver's Trove (It is doubtful that this has appeared only here. This may belong in S2 Delve file)
 			}),
 			n(TREASURES, {
 				header(HEADERS.Achievement, 63717, {	-- Kindo'jan's Labyrinth Discoveries
@@ -233,6 +236,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["description"] = "Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",
 					["cr"] = 273788,	-- Keeper of the Key
 					["groups"] = { i(282402) },	-- Archaic Amani Key
+				}),
+				o(696116, {	-- Impressive Treasure Chest
+					["description"] = "Spawns after finishing 'Dundun' event.",
+					["coord"] = { 44.3, 73.3, LABYRINTH_KINDOJAN },	-- TODO: Does this happen only at the start in the Chamber of Rites?
 				}),
 				o(676747, {	-- Mislaid Treasure
 					["description"] = "Spawns randomly throughout the Labyrinth.",

@@ -3554,6 +3554,7 @@ MobileDB.GameObject = {
 	[661548] = true,	-- Shimmering Vase (q:94802)
 	[667734] = true,	-- Venom Fountain
 	[668269] = true,	-- Amani Skelton
+	[673112] = true,	-- Small Trunk [The Labyrinth of Kindo'jan]
 	[673863] = true,	-- Ossified Relic
 	[676747] = true,	-- Mislaid Treasure [The Labyrinth of Kindo'jan]
 	[677411] = true,	-- Mislaid Treasure [The Labyrinth of Kindo'jan]

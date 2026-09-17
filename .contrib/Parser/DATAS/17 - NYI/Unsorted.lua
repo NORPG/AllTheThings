@@ -436,7 +436,6 @@ root(ROOTS.Unsorted, {
 			i(285334),	-- Embered Reversed Pauldrons
 			i(285335),	-- Ice-Walker's Reversed Pauldrons
 			i(285336),	-- Wood Haunter's Reversed Pauldrons
-			i(285801),	-- Heroic Soul Fragment
 			i(285876),	-- Zah'ran
 			i(285877),	-- Zah'ran
 			i(285942),	-- Spirited Tidesage Manse
