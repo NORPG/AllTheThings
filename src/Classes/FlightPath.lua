@@ -168,6 +168,12 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 		end
 	end
 end)
+app.AddEventHandler("OnUpdateModeFilters", function(self)
+	app:UnregisterEvent("TAXIMAP_OPENED")
+	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
+		app:RegisterEvent("TAXIMAP_OPENED")
+	end
+end)
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end

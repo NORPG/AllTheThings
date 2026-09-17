@@ -1966,10 +1966,6 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.Level()
 	end
 	
-	app:UnregisterEvent("TAXIMAP_OPENED")
-	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
-		app:RegisterEvent("TAXIMAP_OPENED")
-	end
 	self.Collectibles.Loot = self:Get("LootMode");
 
 	-- refresh forced from toggle
