@@ -11,6 +11,7 @@ call :download Criteria
 call :download CriteriaTree
 @REM call :download GlyphProperties
 call :downloadrenamed Holiday Holidays
+call :downloadlocalized HolidayNames
 @REM call :download HouseDecor
 call :download Item
 call :downloadcleaned ItemBonus
@@ -28,11 +29,6 @@ call :download UiMap
 call :download UiMapAssignment
 call :download WorldMapOverlay
 
-@REM Run the locale update script from its own folder
-pushd "%~dp0localized"
-call "Update Wago Build Files.bat" %BUILD%
-popd
-
 exit /b
 
 :download
@@ -42,6 +38,40 @@ if not exist "%1.%BUILD%.csv" (
 		del /Q "%1*.csv"
 	)
 	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
+)
+exit /b
+
+:downloadlocalized
+call :downloadbaselocale %1
+call :downloadlocale %1 deDE
+call :downloadlocale %1 esES
+call :downloadlocale %1 esMX
+call :downloadlocale %1 frFR
+call :downloadlocale %1 itIT
+call :downloadlocale %1 koKR
+call :downloadlocale %1 ptBR
+call :downloadlocale %1 ruRU
+call :downloadlocale %1 zhCN
+call :downloadlocale %1 zhTW
+exit /b
+
+:downloadbaselocale
+echo Downloading %1...
+if not exist "%1.%BUILD%.csv" (
+	if exist "%1*.csv" (
+		del /Q "%1*.csv"
+	)
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
+)
+exit /b
+
+:downloadlocale
+echo Downloading %1 for locale %2...
+if not exist "%1.%2.%BUILD%.csv" (
+	if exist "%1.%2*.csv" (
+		del /Q "%1.%2*.csv"
+	)
+	curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&locale=%2"
 )
 exit /b
 
