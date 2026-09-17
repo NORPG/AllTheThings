@@ -484,18 +484,10 @@ local function CostCalcComplete()
 	if app.Debugging then
 		app.print("Cost Updates Done")
 	end
-	if app.IsClassic then
-		-- There isn't a lot of data, LET 'ER RIP!
-		for suffix,window in pairs(app.Windows) do
+	for suffix,window in pairs(app.Windows) do
+		if suffix ~= "Prime" then
+			-- app.PrintDebug("Refresh after Costs",window.Suffix)
 			app.UpdateRunner.Run(window.Update, window, true)
-		end
-	else
-		for suffix,window in pairs(app.Windows) do
-			if suffix ~= "Prime" then
-				-- TODO: I don't like this, find a way to make it not necessary when Cost updates are performed
-				-- app.PrintDebug("Refresh after Costs",window.Suffix)
-				app.UpdateRunner.Run(window.Update, window, true)
-			end
 		end
 	end
 end
