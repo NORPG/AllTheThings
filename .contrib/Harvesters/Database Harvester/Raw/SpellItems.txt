@@ -2842,6 +2842,112 @@
 7855@@@Benevolent Seer
 1.15.7.60663
 8057@@@Poultry Precision Scope (+3% Hit)
+1.60.1.69876
+15@@@Stamina +$k2 and Armor +$k1
+16@@@Armor +$k1
+17@@@Armor +$k1
+18@@@Armor +$k1
+24@@@Intellect +2
+41@@@Stamina +2
+44@@@Minor Absorption
+63@@@Lesser Absorption
+65@@@+2 All Resistances
+66@@@Stamina +3
+242@@@Stamina +3
+243@@@Spirit +3
+246@@@Intellect +3
+247@@@Agility +3
+248@@@Strength +3
+254@@@Stamina +4
+256@@@+10 Fire Resistance
+723@@@Intellect +$k1
+744@@@Armor +$k1
+783@@@Armor +$k1
+823@@@Strength +$k1
+843@@@Intellect +4
+847@@@All Stats +2
+848@@@Armor +$k1
+850@@@Stamina +6
+857@@@Intellect +6
+884@@@Armor +$k1
+908@@@Stamina +8
+913@@@Intellect +8
+923@@@Defense +7
+924@@@Defense +3
+925@@@Defense +5
+931@@@Haste +1%
+1843@@@Armor +$k1
+1889@@@Armor +$k1
+1892@@@+$k1 Stamina
+1893@@@Intellect +10
+2443@@@Frost Spell Damage +15
+2463@@@+$k1 Fire Resistance
+2504@@@Spell Power +30
+2567@@@Spirit +22
+2617@@@Healing Spells +35/Damage Spells +12
+7565@@@+$k1 HP
+7646@@@Holy Damage +$k1
+7647@@@Arcane Damage +$k1
+7655@@@+$k1 Spell Power
+7656@@@+$k1 Agility
+8059@@@Spellstone 1
+8060@@@Spellstone 2
+8061@@@Spellstone 3
+8203@@@Spirit +$k1
+8204@@@Agility +$k1
+8205@@@Weapon Damage +$k1
+8206@@@Agility +$k1
+8207@@@Strength +$k1
+8208@@@Healing Spells +$k1, Damage Spells +$k2
+8209@@@Healing Spells +$k1, Damage Spells +$k2
+8210@@@Skinning +$k1
+8211@@@Spell Power +$k1
+8212@@@Healing Spells +$k1, Damage Spells +$k2
+8213@@@Nature Damage +$k1
+8214@@@Defense +$k2
+8215@@@Strength +$k1
+8216@@@Insight
+8217@@@Revelation
+8218@@@+$k1 Spell Power
+8219@@@Healing Spells +$k1, Damage Spells +$k2
+8220@@@Absorption
+8293@@@Windwrath 1
+8481@@@Stamina +$k2 and Armor +$k1
+8482@@@Spell Power +$k2 and Armor +$k1
+8483@@@Attack Power +$k2 and Armor +$k1
+8484@@@Stamina +$k2 and Armor +$k1
+8485@@@Spell Power +$k2 and Armor +$k1
+8486@@@Attack Power +$k2 and Armor +$k1
+8487@@@Stamina +$k2 and Armor +$k1
+8488@@@Attack Power +$k2 and Armor +$k1
+8489@@@Spell Power +$k2 and Armor +$k1
+8490@@@Stamina +$k2 and Armor +$k1
+8491@@@Attack Power +$k2 and Armor +$k1
+8492@@@Spell Power +$k2 and Armor +$k1
+8691@@@+$k1 Attack Power
+8692@@@+$k1 Spell Power
+8693@@@+$k1 Stamina
+8694@@@+$k1 Healing Power & +$k2 Spell Damage
+8695@@@Lotus Claw
+8696@@@Tyler Test Imbue
+8698@@@Chillknife
+8700@@@Lesser Flame
+8706@@@Baleflame
+8707@@@Spark
+8708@@@Striking
+8709@@@Frost
+8710@@@Iceknife
+8711@@@Accuracy
+8712@@@Quickening
+8713@@@Flame
+8714@@@Balefrost
+8715@@@Manablade
+8716@@@Greater Flame
+8717@@@Greater Frost
+8718@@@Precision
+8719@@@Defense +$k1 and Stamina +$k2
+8720@@@+2% Crit
+8721@@@Recovery
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
@@ -7082,7 +7188,6 @@
 2413@@@+$21597s1 health every 5 sec.
 2434@@@+$21614s1 health every 5 sec.
 2443@@@+$21930s1 Frost Spell Damage
-2463@@@+$k1 Fire Resistance
 2483@@@+$k1 Fire Resistance
 2484@@@+$k1 Frost Resistance
 2485@@@+$k1 Arcane Resistance

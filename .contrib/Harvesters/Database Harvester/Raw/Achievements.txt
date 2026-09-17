@@ -47,6 +47,208 @@
 42133@@@[DNT] Balnazzar Defeated
 1.15.7.60277
 42186@@@[DNT] Balnazzar Defeated (Backup Achievement)
+1.60.1.69876
+627@@@Explore Dun Morogh
+684@@@Conqueror of the Lair
+728@@@Explore Durotar
+736@@@Explore Mulgore
+750@@@Explore The Barrens
+760@@@Explore Alterac Mountains
+761@@@Explore Arathi Highlands
+765@@@Explore Badlands
+766@@@Explore Blasted Lands
+768@@@Explore Tirisfal Glades
+769@@@Explore Silverpine Forest
+770@@@Explore Western Plaguelands
+771@@@Explore Eastern Plaguelands
+772@@@Explore Hillsbrad Foothills
+773@@@Explore The Hinterlands
+774@@@Explore Searing Gorge
+775@@@Explore Burning Steppes
+776@@@Explore Elwynn Forest
+777@@@Explore Deadwind Pass
+778@@@Explore Duskwood
+779@@@Explore Loch Modan
+780@@@Explore Redridge Mountains
+781@@@Explore Stranglethorn Vale
+782@@@Explore Swamp of Sorrows
+802@@@Explore Westfall
+841@@@Explore Wetlands
+842@@@Explore Teldrassil
+844@@@Explore Darkshore
+845@@@Explore Ashenvale
+846@@@Explore Thousand Needles
+847@@@Explore Stonetalon Mountains
+848@@@Explore Desolace
+849@@@Explore Feralas
+850@@@Explore Dustwallow Marsh
+851@@@Explore Tanaris
+852@@@Explore Azshara
+853@@@Explore Felwood
+854@@@Explore Un'Goro Crater
+855@@@Explore Moonglade
+856@@@Explore Silithus
+857@@@Explore Winterspring
+61499@@@Novice Warrior
+61500@@@Experienced Warrior
+61501@@@Master Warrior
+61502@@@Novice Druid
+61503@@@Experienced Druid
+61504@@@Master Druid
+61515@@@1.60.0 - Lost Ones Tracking Achievement <HIDDEN>
+61989@@@Novice Hunter
+61992@@@Experienced Hunter
+61993@@@Master Hunter
+61994@@@Novice Mage
+61995@@@Experienced Mage
+61996@@@Master Mage
+61997@@@Novice Paladin
+61998@@@Experienced Paladin
+61999@@@Master Paladin
+62000@@@Novice Priest
+62001@@@Experienced Priest
+62002@@@Master Priest
+62003@@@Novice Rogue
+62004@@@Experienced Rogue
+62005@@@Master Rogue
+62006@@@Novice Shaman
+62007@@@Experienced Shaman
+62008@@@Master Shaman
+62009@@@Novice Warlock
+62010@@@Experienced Warlock
+62011@@@Master Warlock
+62012@@@Journeyman Alchemist
+62013@@@Expert Alchemist
+62014@@@Artisan Alchemist
+62015@@@Journeyman Blacksmith
+62016@@@Expert Blacksmith
+62017@@@Artisan Blacksmith
+62018@@@Journeyman Enchanter
+62019@@@Expert Enchanter
+62020@@@Artisan Enchanter
+62021@@@Journeyman Engineer
+62022@@@Expert Engineer
+62023@@@Artisan Engineer
+62024@@@Journeyman Leatherworker
+62025@@@Expert Leatherworker
+62026@@@Artisan Leatherworker
+62028@@@Journeyman Tailor
+62029@@@Expert Tailor
+62030@@@Artisan Tailor
+62031@@@Novice Spelunker
+62032@@@Experienced Spelunker
+62033@@@Master Spelunker
+62034@@@Conquerer of the Wilds
+62035@@@Conquerer of the Deeps
+62041@@@Rank 3
+62042@@@Rank 7
+62043@@@Rank 10
+62044@@@Rank 13
+62045@@@Rank 14
+62046@@@Master of Alterac Valley
+62047@@@Master of Arathi Basin
+62048@@@Master of Warsong Gulch
+62049@@@Master of Darkspear Islands
+62053@@@Explore Azeroth
+62054@@@Lord Valthalak Laid to Rest
+62353@@@Explore Eastern Kingdoms
+62354@@@Explore Riverglades
+62355@@@Explore Kalimdor
+62356@@@Explore Mount Hyjal
+62382@@@Explorer
+63340@@@Field of Honor: Week 4
+63341@@@Field of Honor: Week 7
+63342@@@Field of Honor: Week 10
+63684@@@Explore Shen'dralas
+63969@@@Novice Warrior
+63970@@@Experienced Warrior
+63971@@@Master Warrior
+63972@@@Novice Druid
+63973@@@Experienced Druid
+63974@@@Master Druid
+63975@@@Novice Hunter
+63976@@@Experienced Hunter
+63977@@@Master Hunter
+63978@@@Novice Mage
+63979@@@Experienced Mage
+63980@@@Master Mage
+63981@@@Novice Paladin
+63982@@@Experienced Paladin
+63983@@@Master Paladin
+63984@@@Novice Priest
+63985@@@Experienced Priest
+63986@@@Master Priest
+63987@@@Novice Rogue
+63988@@@Experienced Rogue
+63989@@@Master Rogue
+63990@@@Novice Shaman
+63991@@@Experienced Shaman
+63992@@@Master Shaman
+63993@@@Novice Warlock
+63994@@@Experienced Warlock
+63995@@@Master Warlock
+63996@@@Journeyman Alchemist
+63997@@@Expert Alchemist
+63998@@@Artisan Alchemist
+63999@@@Journeyman Blacksmith
+64000@@@Expert Blacksmith
+64001@@@Artisan Blacksmith
+64002@@@Journeyman Enchanter
+64003@@@Expert Enchanter
+64004@@@Artisan Enchanter
+64005@@@Journeyman Engineer
+64006@@@Expert Engineer
+64007@@@Artisan Engineer
+64008@@@Journeyman Leatherworker
+64009@@@Expert Leatherworker
+64010@@@Artisan Leatherworker
+64011@@@Journeyman Tailor
+64012@@@Expert Tailor
+64013@@@Artisan Tailor
+64014@@@Lord Valthalak Laid to Rest
+64015@@@Explorer
+64016@@@Novice Spelunker
+64017@@@Experienced Spelunker
+64018@@@Master Spelunker
+64019@@@Conquerer of the Wilds
+64020@@@Conquerer of the Deeps
+64021@@@Rank 3
+64022@@@Rank 7
+64023@@@Rank 10
+64024@@@Rank 13
+64025@@@Rank 14
+64026@@@Master of Alterac Valley
+64027@@@Master of Arathi Basin
+64028@@@Master of Warsong Gulch
+64029@@@Master of Darkspear Islands
+64030@@@Conqueror of the Lair
+64031@@@Field of Honor: Week 4
+64032@@@Field of Honor: Week 7
+64033@@@Field of Honor: Week 10
+64048@@@Hidden: Rank 3
+64051@@@Hidden: Rank 7
+64052@@@Hidden: Rank 10
+64053@@@Hidden: Rank 1
+64054@@@Hidden: Rank 2
+64055@@@Hidden: Rank 4
+64056@@@Hidden: Rank 5
+64057@@@Hidden: Rank 6
+64058@@@Hidden: Rank 8
+64059@@@Hidden: Rank 9
+64060@@@Hidden: Rank 11
+64061@@@Hidden: Rank 12
+64062@@@Hidden: Rank 13
+64063@@@Hidden: Rank 14
+64120@@@Hidden: Well Equipped (Tier 1)
+64151@@@Hidden: BETA Survey - Level 30 - Druid
+64152@@@Hidden: BETA Survey - Level 30 - Warrior
+64153@@@Hidden: BETA Survey - Level 30 - Mage
+64154@@@Hidden: BETA Survey - Level 30 - Shaman
+64155@@@Hidden: BETA Survey - Level 30 - Hunter
+64156@@@Hidden: BETA Survey - Level 30 - Warlock
+64157@@@Hidden: BETA Survey - Level 30 - Rogue
+64158@@@Hidden: BETA Survey - Level 30 - Priest
+64159@@@Hidden: BETA Survey - Level 30 - Paladin
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1
@@ -610,7 +812,6 @@
 624@@@Defeat Sartharion the Onyx Guardian (10 person) <PH> <NYI>
 625@@@Defeat Sartharion the Onyx Guardian (25 person) <PH> <NYI>
 626@@@Lunar Festival Finery
-627@@@Explore Dun Morogh
 628@@@Deadmines
 629@@@Ragefire Chasm
 630@@@Wailing Caverns
@@ -698,7 +899,6 @@
 725@@@Thori'dal, the Stars' Fury
 726@@@Mr. Pinchy's Magical Crawdad Box
 727@@@Call in the Cavalry
-728@@@Explore Durotar
 729@@@Deathcharger's Reins
 730@@@Skills to Pay the Bills
 731@@@Professional Expert
@@ -706,36 +906,15 @@
 733@@@Professional Master
 734@@@Professional Grand Master
 735@@@Working Day and Night
-736@@@Explore Mulgore
-750@@@Explore The Barrens
 751@@@Deaths in Ulduar
 752@@@Deaths in Naxxramas
 753@@@Average gold earned per day
 754@@@Longest Arena winning streak
 755@@@Longest Battleground winning streak
 759@@@Average daily quests completed per day
-760@@@Explore Alterac Mountains
-761@@@Explore Arathi Highlands
 762@@@Town Crier
 763@@@The Burning Crusader
 764@@@The Burning Crusader
-765@@@Explore Badlands
-766@@@Explore Blasted Lands
-768@@@Explore Tirisfal Glades
-769@@@Explore Silverpine Forest
-770@@@Explore Western Plaguelands
-771@@@Explore Eastern Plaguelands
-772@@@Explore Hillsbrad Foothills
-773@@@Explore The Hinterlands
-774@@@Explore Searing Gorge
-775@@@Explore Burning Steppes
-776@@@Explore Elwynn Forest
-777@@@Explore Deadwind Pass
-778@@@Explore Duskwood
-779@@@Explore Loch Modan
-780@@@Explore Redridge Mountains
-781@@@Explore Stranglethorn Vale
-782@@@Explore Swamp of Sorrows
 783@@@The Perfect Storm
 784@@@Eye of the Storm Domination
 788@@@Number of groups formed
@@ -751,7 +930,6 @@
 799@@@Spirit returned to body by shamans
 800@@@Redeemed by paladins
 801@@@Resurrected by Soulstones
-802@@@Explore Westfall
 803@@@Most daily quests completed per day
 804@@@Total gold earned in one play session
 805@@@Highest attribute
@@ -778,23 +956,8 @@
 838@@@Arenas played
 839@@@Battlegrounds played
 840@@@Battlegrounds won
-841@@@Explore Wetlands
-842@@@Explore Teldrassil
 843@@@Explore Netherstorm
-844@@@Explore Darkshore
-845@@@Explore Ashenvale
-846@@@Explore Thousand Needles
-847@@@Explore Stonetalon Mountains
-848@@@Explore Desolace
-849@@@Explore Feralas
-850@@@Explore Dustwallow Marsh
 851@@@Explore Tanaris Desert
-852@@@Explore Azshara
-853@@@Explore Felwood
-854@@@Explore Un'Goro Crater
-855@@@Explore Moonglade
-856@@@Explore Silithus
-857@@@Explore Winterspring
 858@@@Explore Ghostlands
 859@@@Explore Eversong Woods
 860@@@Explore Azuremyst Isle
@@ -2950,7 +3113,6 @@
 774@@@Explore Searing Gorge NYI
 775@@@Explore Burning Steppes NYI
 781@@@Explore Northern Stranglethorn
-851@@@Explore Tanaris
 853@@@Explore Felwood NYI
 856@@@Explore Silithus NYI
 857@@@Explore Winterspring NYI

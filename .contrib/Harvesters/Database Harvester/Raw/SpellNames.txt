@@ -31584,16 +31584,5763 @@
 17548@@@Shadow Protection 
 1.15.9.69109
 1314333@@@Make Friendly
+1.60.1.69876
+87@@@Windwalk
+132@@@Detect Invisibility
+424@@@Earthquake
+603@@@Bane of Doom
+668@@@Common
+669@@@Orcish
+670@@@Taurahe
+671@@@Darnassian
+672@@@Dwarven
+673@@@Elixir of Minor Defense
+678@@@Holy Strike
+679@@@Holy Strike
+680@@@Holy Strike
+693@@@Create Soulstone
+758@@@Firestone
+814@@@Draconic (NYI)
+815@@@Demon Tongue
+980@@@Bane of Agony
+1014@@@Bane of Agony
+1029@@@Bane of Agony
+1413@@@ Inferno
+1630@@@Windwalk
+1866@@@Holy Strike
+2329@@@Elixir of Minor Strength
+2336@@@Draught of Tongues
+2365@@@Draught of Tongues
+2366@@@Herbalism
+2368@@@Herbalism
+2369@@@Herbalism
+2371@@@Herbalism
+2372@@@Apprentice Herbalism
+2373@@@Journeyman Herbalism
+2495@@@Holy Strike
+2581@@@Apprentice Mining
+2582@@@Journeyman Mining
+2826@@@DONOTREUSE
+2827@@@DONOTREUSE
+2831@@@Armor +8, Stamina +1
+2832@@@Armor +16, Stamina +2
+2833@@@Armor +24, Stamina +3
+2946@@@Dark Sacrifice
+3170@@@Minor Troll's Blood Elixir
+3174@@@Potion of Poison Cleansing
+3176@@@Lesser Troll's Blood Elixir
+3177@@@Elixir of Lesser Defense
+3188@@@Elixir of Ogre Strength
+3219@@@Minor Troll's Blood Elixir
+3450@@@Elixir of Lesser Fortitude
+3451@@@Troll's Blood Elixir
+3453@@@Draught of Detect Lesser Invisibility
+3456@@@Recipe: Mighty Troll's Blood Elixir
+3568@@@Expert Mining
+3570@@@Herbalism
+3571@@@Expert Herbalism
+3742@@@Gahz'rilla Fang
+3911@@@Apprentice Tailoring
+3912@@@Journeyman Tailoring
+3913@@@Expert Tailoring
+4508@@@Minor Discolored Healing Potion
+5569@@@Holy Strike
+6201@@@Create Healthstone
+6202@@@Create Healthstone
+6217@@@Bane of Agony
+6251@@@Summon Scarlet Cannon
+6366@@@Create Firestone
+6595@@@Shred
+7179@@@Draught of Water Breathing
+7340@@@Gnomish
+7341@@@Troll
+7418@@@Enchant Bracer - Inferior Stamina
+7419@@@Inferior Stamina
+7420@@@Enchant Chest - Inferior Stamina
+7442@@@Minor Intellect
+7443@@@Enchant Chest - Minor Intellect
+7533@@@Increased 2H Mace 01
+7549@@@Increased 2H Axe 01
+7747@@@Lesser Stamina
+7748@@@Enchant Chest - Lesser Stamina
+7773@@@Lesser Intellect
+7776@@@Enchant Chest - Lesser Intellect
+7845@@@Elixir of Fire Power
+7850@@@Stamina
+7857@@@Enchant Chest - Stamina
+8199@@@Stoneskin Totem
+8200@@@Searing Totem
+8201@@@Healing Stream Totem
+8213@@@Savory Deviate Delight
+8747@@@Swimming Speed 15
+9633@@@Bladestorm
+9931@@@Mithril Plate Pants
+9937@@@Mithril Plate Bracers
+9942@@@Mithril Plate Gloves
+9966@@@Mithril Plate Shoulders
+10249@@@Artisan Mining
+10332@@@Holy Strike
+10333@@@Holy Strike
+10344@@@Armor +32, Stamina +4
+10712@@@Summon Arctic Hare
+10843@@@ Heavy Mageweave Bandage
+11078@@@Wake of Fire
+11132@@@ Teach Orcish War Leggings
+11203@@@ Teach Ornate Mithril Helm
+11204@@@ Teach Ornate Mithril Boots
+11205@@@ Teach Ornate Mithril Breastplate
+11237@@@Improved Channeling
+11242@@@Arcane Impact
+11247@@@Arcane Geometry
+11252@@@Arcane Shielding
+11405@@@Greater Strength
+11406@@@Potion of Demonslaying
+11447@@@Draught of Water Walking
+11450@@@Elixir of Defense
+11459@@@Philosopher's Stone
+11460@@@Draught of Detect Undead
+11468@@@Draught of Dream Vision
+11472@@@Elixir of Greater Strength
+11477@@@Potion of Demonslaying
+11478@@@Draught of Detect Demon
+11522@@@ Restorative Potion
+11711@@@Bane of Agony
+11712@@@Bane of Agony
+11713@@@Bane of Agony
+11729@@@Create Healthstone
+11730@@@Create Healthstone
+11743@@@Detect Invisibility
+11993@@@Herbalism
+11994@@@Artisan Herbalism
+12181@@@Artisan Tailoring
+12281@@@Weaponmaster
+12284@@@Weaponmaster
+12295@@@Improved Tactical Mastery
+12418@@@Stealth Detection 15
+12609@@@Catseye Draught
+12700@@@Weaponmaster
+12737@@@Frostbolt Volley
+12766@@@Cloud of Chained Essence
+13029@@@ Goldthorn Tea
+13030@@@Mighty Troll's Blood Elixir
+13528@@@Decayed Power
+13606@@@Intellect
+13607@@@Enchant Chest - Intellect
+13639@@@Greater Stamina
+13640@@@Enchant Chest - Greater Stamina
+13663@@@Enchant Chest - Greater Intellect
+13664@@@Greater Intellect
+13706@@@Hack and Slash
+13709@@@Hack and Slash
+13858@@@Enchant Chest - Superior Stamina
+13862@@@Superior Stamina
+13917@@@Enchant Chest - Superior Intellect
+13918@@@Superior Intellect
+13960@@@Hack and Slash
+14084@@@Improved Distract
+14913@@@Twilight Focus
+15258@@@Shadow Weaving
+15464@@@Increased Hit Chance 01
+15465@@@Increased Hit Chance 02
+15466@@@Increased Hit Chance 03
+15467@@@Increased Hit Chance 04
+15468@@@Increased Hit Chance 05
+15985@@@ Two-Handed Axes
+16086@@@Improved Fire Nova
+16268@@@Spirit Weapons
+16459@@@Hack and Slash
+16538@@@Bastion
+16549@@@Fatal Wound
+16578@@@Elemental Alacrity
+16882@@@Detect Invisibility
+16953@@@Primal Fury
+16966@@@Shredding Attacks
+16979@@@Feral Charge (Bear)
+17002@@@Feral Swiftness
+17042@@@ Master Swordsmith
+17043@@@ Master Axesmith
+17044@@@ Master Hammersmith
+17069@@@Naturalist
+17245@@@Overgrowth
+17330@@@Hanging Thread
+17481@@@Rivendare's Deathcharger
+17505@@@Hand of Timmy
+17554@@@Elixir of Greater Defense
+17727@@@Create Spellstone
+17728@@@Create Spellstone
+17737@@@Gutterspeak
+17746@@@Stealth 06
+17804@@@Soul Siphon
+17927@@@Agonizing Flames
+17945@@@Firestone
+17947@@@Firestone
+17949@@@Firestone
+17952@@@Create Firestone
+17953@@@Create Firestone
+18065@@@Haste 10
+18096@@@Apocalypse
+18159@@@Curse of the Vengeful Centaur
+18166@@@Summon Undead Ravager
+18425@@@Silenced - Kick
+18459@@@Incineration
+18498@@@Silenced
+18632@@@ Heavy Runecloth Bandage
+18662@@@Bane of Doom Effect
+18731@@@Fel Vitality
+18789@@@Burning Shadow
+18791@@@Touch of Fire
+18827@@@Improved Bane of Agony
+18985@@@Resist Silence 05
+19057@@@Armor +40, Stamina +5
+19213@@@ Pattern: Onyxia Scale Cloak
+19337@@@Chastise
+19376@@@Survival Tactics
+19426@@@Lethal Attacks
+19552@@@Deadly Aspects
+19615@@@Frenzy
+19675@@@Feral Charge
+19786@@@Resist Silence 07
+19990@@@Major Stamina
+19991@@@Major Intellect
+20026@@@Enchant Chest - Major Stamina
+20028@@@Enchant Chest - Major Intellect
+20163@@@Seal of Fury
+20183@@@Judgement of Fury
+20224@@@Improved Seals
+20231@@@Seal of Fury
+20232@@@Judgement of Fury
+20411@@@Judgement of Fury
+20412@@@Judgement of Fury
+20413@@@Judgement of Fury
+20414@@@Judgement of Fury
+20415@@@Seal of Fury
+20416@@@Seal of Fury
+20417@@@Seal of Fury
+20418@@@Seal of Fury
+20419@@@Seal of Fury
+20421@@@Seal of Fury
+20422@@@Seal of Fury
+20423@@@Seal of Fury
+20752@@@Create Soulstone
+20756@@@Create Soulstone
+20757@@@Create Soulstone
+21009@@@Quickness Passive
+21010@@@Increase Spell Dam Undead 20
+21012@@@Increased Off Hand Damage 10
+21092@@@Increased Spell Critical
+21935@@@Snowmaster 9000
+21940@@@Snowmaster 9000
+21970@@@Mark of the Chosen
+22749@@@Enchant Weapon - Spell Power
+22750@@@Enchant Weapon - Healing Power
+22808@@@Draught of Greater Water Breathing
+22814@@@ Gordok Ogre Suit
+22816@@@ Gordok Ogre Suit
+22855@@@Pimgib's Collar
+23217@@@Stealth Detection 10
+23480@@@Increase Fire Dam
+23481@@@Increase Fire Dam
+23482@@@Increase Fire Dam
+23483@@@Increase Fire Dam
+23490@@@ Dimension Ripper - Everlook
+23491@@@ Ultrasafe Transporter: Gadgetzan
+23602@@@Master of Defense
+23621@@@ Wild Leather Boots
+23622@@@ Wild Leather Cloak
+23623@@@ Wild Leather Helmet
+23625@@@ Wild Leather Leggings
+23626@@@ Wild Leather Shoulders
+23627@@@ Wild Leather Vest
+23690@@@Improved Berserker Rage
+24118@@@Lacerate
+24119@@@Lacerate
+24120@@@Lacerate
+24293@@@Improved Tracking
+24347@@@Hook of the Master Angler
+24350@@@Safe Fall 10
+24352@@@Devilsaur Glare
+24353@@@Devilsaur Tooth
+24365@@@Mageblood Elixir
+24368@@@Major Troll's Blood Elixir
+24423@@@Demoralizing Screech
+24424@@@Demoralizing Screech
+24577@@@Demoralizing Screech
+24578@@@Demoralizing Screech
+24579@@@Demoralizing Screech
+24580@@@Demoralizing Screech
+24581@@@Demoralizing Screech
+24582@@@Demoralizing Screech
+24802@@@ Smoked Desert Dumplings
+24867@@@Feral Swiftness
+25067@@@Increase Healing 35
+25109@@@Increase Spell Dam 15
+25110@@@Increase Spell Dam 25
+25111@@@Increase Spell Dam 30
+25674@@@Lesser Draconic
+25975@@@Increased Spell Penetration 03
+26095@@@ Felcloth Bag
+26175@@@Increased Spell Penetration 10
+26208@@@Resist Silence 10
+26277@@@Elixir of Holy Power
+26283@@@Increased Spell Penetration 05
+26403@@@Festival Dress
+26407@@@Festival Suit
+27037@@@Stealth 08
+27516@@@Increased Spell Penetration 02
+27797@@@Reduced Riptide Cost
+27848@@@Seal Duration Increase
+27850@@@Purify and Cleanse Cost Reduced
+27853@@@Increased Regrowth Healing
+27997@@@
+28002@@@Ghost Visual
+28252@@@ Icebane Bracers
+28253@@@ Icebane Gauntlets
+28254@@@ Polar Tunic
+28255@@@ Polar Gloves
+28256@@@ Polar Bracers
+28257@@@ Icy Scale Breastplate
+28259@@@ Icy Scale Bracers
+28260@@@ Glacial Vest
+28261@@@ Glacial Gloves
+28262@@@ Glacial Wrists
+28263@@@ Glacial Cloak
+28285@@@ Polymorph: Pig
+28680@@@Increased Spell Penetration 06
+28799@@@Increased Spell Penetration 07
+28853@@@Libram of Divinity
+28856@@@Increased Water Shield Charges
+28869@@@Increased Spell Penetration 04
+28890@@@Increase Spell Dam Undead 58
+28893@@@Undead Slayer 99
+28999@@@Elemental Reach
+29069@@@Increased Undead Damage
+29187@@@Natural Grace
+30440@@@Increased Spell Hit Chance
+31688@@@Frost Breath
+32837@@@
+32980@@@
+32981@@@
+33388@@@Apprentice Riding
+33389@@@Apprentice Riding
+33391@@@Journeyman Riding
+33392@@@Journeyman Riding
+34320@@@
+34584@@@
+36936@@@Totemic Recall
+37214@@@
+37655@@@
+38334@@@
+39440@@@
+42596@@@Squashling
+42598@@@Pet Submerge
+42609@@@Sinister Squashling
+43308@@@Find Fish
+44950@@@Green Winter Clothes
+44953@@@Winter Boots
+44958@@@Red Winter Clothes
+45440@@@Steam Tonk Controller
+46598@@@Ride Vehicle Hardcoded
+55884@@@Learning
+57346@@@Ride Vehicle
+64659@@@Venomhide Ravasaur
+65183@@@Summon Venomhide Hatchling
+66842@@@Call of the Elements
+66843@@@Call of the Ancestors
+66844@@@Call of the Spirits
+77746@@@Totemic Wrath
+77747@@@Totemic Wrath
+78156@@@Tremor Totem
+78159@@@Windfury Totem
+79429@@@Elemental Resistance Totem
+79431@@@Flametongue Totem
+84996@@@Raid Marker 1
+84997@@@Raid Marker 2
+84998@@@Raid Marker 3
+84999@@@Raid Marker 4
+85000@@@Raid Marker 5
+86457@@@Mount Speed Mod: Standard Ground Mount
+86458@@@Mount Speed Mod: Epic Ground Mount
+104047@@@Lunar Lantern
+104049@@@Festival Lantern
+134735@@@PvP Rules Enabled (HARDCODED)
+150544@@@Summon Random Favorite Mount
+155059@@@Hologram-ify
+167152@@@Refreshment
+171555@@@Raid Marker 6
+171556@@@Raid Marker 7
+171557@@@Raid Marker 8
+183260@@@Lap Sits
+183261@@@Lap Sits
+240334@@@General Trigger 4 to Self
+240338@@@General Trigger 5 to Self
+243798@@@
+243809@@@
+243819@@@Summon Random Favorite Pet
+245186@@@
+258096@@@Submerged
+261490@@@General Trigger 6 to Self
+341545@@@Level Up
+363881@@@CHUG! CHUG! CHUG! CHUG!
+366567@@@Greater Mender's Potion
+384255@@@Changing Talents
+398604@@@ Runecarving
+402975@@@Victorious
+403511@@@Improved Drains
+405667@@@Create Test Ring Test
+408255@@@Eclipse
+408438@@@Lightning Overload
+410829@@@Ada Gelhardt - Give Rewards
+412718@@@Fish Fillet
+412751@@@Fire and Brimstone
+414673@@@Gift of the Earthmother
+414920@@@Feral Charge
+414921@@@Feral Charge
+414923@@@Feral Charge
+414924@@@Feral Charge (Cat)
+414925@@@Feral Charge
+415401@@@Sniper's Aim
+424250@@@ Secrets of the Light
+424251@@@ Secrets of Elune
+424252@@@ Secrets of the Loa
+424253@@@ Secrets of Undeath
+424941@@@ Teach Living Bomb
+425336@@@Rage of the Farseer
+425798@@@Arena Fatigue
+426311@@@Flame
+426366@@@ Icy Veins
+426754@@@Bloodletting
+431980@@@[DNT] Tauren Rogue Questgiver Invisibility
+431981@@@[DNT] Tauren Rogue Questgiver Grant Visibility
+432639@@@Increased Hit Chance 01
+433862@@@ Spell Power
+436443@@@Soul of Stromgarde
+440672@@@Righteous Judgement
+440675@@@Righteous Judgement
+440677@@@Righteous Judgement
+440892@@@Curse of the Elements
+441260@@@Eclipse
+442893@@@Spell Specialization
+442894@@@Spell Specialization
+442895@@@Spell Specialization
+442896@@@Spell Specialization
+442897@@@Spell Specialization
+442898@@@Spell Specialization
+446137@@@Green Snugglefin Murloc Romper
+446212@@@Improved Rip
+446244@@@ Teach Nightmare Armaments - Enchanting
+446851@@@Jar of Nightmarish Mojo
+447561@@@ [DNT] Deep Freeze
+447564@@@ [DNT] Temporal Anomaly
+449008@@@ DNT Teach EoV
+449933@@@Spell Crit
+460230@@@Increased Hit Chance 02
+460362@@@Protection of Kel'Thuzad
+460363@@@Destroy Kel'Thuzad's Protection
+461239@@@ [DNT] Arcane Barrage
+461953@@@Spell Crit
+462134@@@Demon Tongue
+462561@@@[DNT] Dummy Visual
+467830@@@Hybrid Healing/Spell Dam 15/5
+468277@@@Increased Spell  Hit Chance 2
+1213813@@@Thorns
+1213816@@@Thorns
+1213834@@@Thorns
+1215615@@@Combine Goo-Covered Gauntlet
+1215866@@@Enter Hyjal
+1215867@@@Exit Hyjal
+1215969@@@Capture Essence
+1215978@@@Enter Hyjal
+1215980@@@Exit Hyjal
+1215983@@@Demonic Essence Captured
+1216844@@@Void-Touched
+1217127@@@[DNT] Satyrweed Tincture Quest Dummy
+1217128@@@Satyr Corruption
+1217130@@@Satyrweed Tincture
+1217160@@@Timbermaw War Banner
+1217161@@@Summon Timbermaw Ally
+1217164@@@Summon Timbermaw Ally
+1217165@@@Despawn Allies
+1217424@@@Fel Pervasion
+1217485@@@Fel Pervasion Visual
+1217988@@@Satyr Corruption
+1218576@@@Satyr Corruption
+1219342@@@Unknown Phantasm
+1219487@@@Summon Halanox
+1219623@@@Despawn Allies Override
+1219670@@@Controller
+1220499@@@Complete Quest
+1220550@@@Summon Demons
+1220559@@@Complete Quest
+1220562@@@Human Form
+1220740@@@Summon Demons
+1220776@@@Summon Demons
+1220883@@@Complete Quest
+1221095@@@Water Walk
+1221379@@@Subjugated
+1221421@@@Mind Vision
+1221422@@@Mind Vision
+1222018@@@Place Suspicious Collection Equipment
+1222050@@@Place Suspicious Neutralizing Compound
+1222988@@@Earthbound
+1223030@@@Shamanistic Focus
+1223031@@@Improved Stormstrike
+1223033@@@Mindfulness
+1223081@@@Genesis
+1223082@@@Nature's Majesty
+1223083@@@Nature's Splendor
+1223095@@@Emerald Nightmare
+1223242@@@Predatory Instincts
+1223246@@@Rend and Tear
+1223687@@@Undead Slayer 198
+1223716@@@Subjugated
+1223755@@@Focused Fire
+1223758@@@The Beast Within
+1223761@@@ Glacial Vest
+1223763@@@ Glacial Cloak
+1223765@@@ Glacial Gloves
+1223767@@@ Glacial Wrists
+1223769@@@ Frosty Vest
+1223771@@@ Frosty Gloves
+1223773@@@ Frosty Wrists
+1223775@@@ Icy Scale Breastplate
+1223777@@@ Icy Scale Gauntlets
+1223779@@@ Icy Scale Bracers
+1223781@@@ Polar Tunic
+1223783@@@ Polar Gloves
+1223785@@@ Polar Bracers
+1223788@@@ Icebane Breastplate
+1223790@@@ Icebane Gauntlets
+1223792@@@ Icebane Bracers
+1223795@@@Increase Spell Dam Undead 61
+1223914@@@Suspicious Supplies
+1223974@@@Informed
+1223982@@@Freed!
+1223984@@@Careful Aim
+1223987@@@Rapid Recuperation
+1224067@@@Enter the Emerald Dream
+1224102@@@Ruins Near Xavian
+1224120@@@Awaken
+1224553@@@Sanctified Light
+1224609@@@Scarlet Augur's Vestments
+1224692@@@Divinity
+1224697@@@Sacred Duty
+1224716@@@Puncturing Wounds
+1224782@@@Dirty Tricks
+1225132@@@Twin Disciplines
+1225139@@@Improved Mind Flay
+1225143@@@[DNT] Power Stone I
+1225170@@@[DNT] Power Stone II
+1225171@@@[DNT] Power Stone III
+1225177@@@Malediction
+1225214@@@Demonic Energies
+1225217@@@Improved Felhunter
+1225220@@@Molten Skin
+1225228@@@Bane of Havoc
+1225285@@@[DNT] Nullify Power Stone
+1225286@@@[DNT] Nullify Power Stone
+1225287@@@[DNT] Nullify Power Stone
+1225291@@@Nullify
+1225295@@@Precision
+1225420@@@Summon Enraged Tempest
+1225435@@@Bountiful Harvest
+1225438@@@Air Elemental Core
+1225451@@@Working Overtime
+1225455@@@Luremaster
+1225456@@@Performance Bonus
+1225457@@@Master Chef
+1225459@@@Bartering
+1225460@@@Optimization - NYI
+1225461@@@Salvaging - NYI
+1225465@@@Meticulous
+1225468@@@Master Forager
+1225469@@@Dedicated Study
+1225470@@@Essence of Innovation
+1225472@@@Thrill of Adventure
+1225474@@@Talented
+1225475@@@Field Medicine
+1225477@@@High Alert
+1225478@@@Well Rested
+1225479@@@Field Guide
+1225481@@@Shoot
+1225485@@@Diplomat
+1225486@@@Wasp Nest
+1225487@@@Iron Stomach
+1225490@@@Frequent Flier
+1225491@@@Master Swimmer
+1225492@@@Play Dead
+1225493@@@Personal Banking
+1225494@@@Second Home
+1225497@@@Reinforce
+1225498@@@Mount Up
+1225499@@@Gourmand
+1225500@@@The Quick and the Dead
+1225501@@@For Great Honor
+1225502@@@Permanence
+1225503@@@Reagent Economy
+1225504@@@Better Living Through Chemistry
+1225505@@@Fast Recovery
+1225506@@@Conquering Hero
+1225508@@@Second Chance
+1225509@@@Adaptability
+1225700@@@Find Boomfizz Goblin
+1225719@@@1.50 Sound - Sound Squisher - Interior Zone Tone Obliterator
+1226310@@@Acidic Burn
+1226343@@@Corrupted Vine
+1226350@@@Agitate Corrupted Vine
+1227019@@@Combine Fel-Touched Flowers
+1227022@@@Demonic Shade Vision
+1227024@@@Fel-Touched Shade
+1227406@@@Shades of Darkness
+1227509@@@Kodo Bones
+1228332@@@Arsenal: Spirit-Touched Collection
+1229228@@@Pounce
+1229249@@@Demonic Transformation
+1229432@@@Camp Tent
+1229451@@@Boosted Rest
+1229487@@@Camp Tent
+1229504@@@Faction Banner
+1229506@@@Ritual of Summoning
+1229513@@@Boosted Intellect
+1229517@@@Camp Chair
+1229519@@@Boosted Critical Chance
+1229705@@@Incense Candle
+1229718@@@Boosted Spirit
+1229736@@@Campfire
+1229737@@@Basic Campfire
+1229739@@@Welcoming Campfire
+1229741@@@Camp Benefits
+1229745@@@Fish Bowl
+1229754@@@Fish
+1230098@@@Boosted Stats
+1230117@@@First Aid Kit
+1230124@@@Boosted Stamina
+1230161@@@Lodestone
+1230164@@@Boosted Attack Power
+1230171@@@Sharpening Wheel
+1230172@@@Extra Strength
+1230239@@@Deep Slumber
+1230288@@@Gol'gere Death
+1230314@@@Cat Form
+1230362@@@Gol'gere Despawn
+1230545@@@Deep Slumber
+1230552@@@Boosted Spell Power
+1230564@@@Mana Well
+1230587@@@Boosted Mana Regeneration
+1230643@@@Enchanted Lute
+1230653@@@Boosted Stats
+1230656@@@Reagent Bot
+1230711@@@Cat Form
+1230914@@@Flight Form
+1231164@@@Enchant Weapon - Grand Sorcerer
+1231602@@@Companion Incapacitated
+1234580@@@[DNT] Transform Precast Visual
+1235080@@@[DNT] Spawn Event
+1235230@@@Mining
+1235236@@@Herb Gathering
+1235244@@@Engineering
+1235316@@@Demonic Aegis
+1235826@@@Lacerate
+1235827@@@Lacerate
+1237152@@@Spellstone
+1237156@@@Spellstone
+1237159@@@Spellstone
+1237162@@@Increase Shadow Dam
+1237164@@@Increase Shadow Dam
+1237165@@@Increase Shadow Dam
+1237268@@@Holy Conduit
+1237312@@@Frostfire Bolt
+1237313@@@Frostfire Bolt
+1237948@@@Revive
+1237949@@@Revive
+1237950@@@Revive
+1237951@@@Revive
+1238069@@@Mangle
+1238070@@@Mangle
+1238073@@@Mangle
+1238122@@@Feral Charge
+1238124@@@Feral Charge
+1238181@@@Furor
+1238214@@@Wild Growth
+1238215@@@Wild Growth
+1238289@@@Earthbound
+1238299@@@Lava Burst
+1238300@@@Lava Burst
+1238373@@@Lava Burst
+1238376@@@Lava Burst
+1238640@@@Ghost Wolf
+1238931@@@Improved Stormstrike
+1239242@@@Riptide
+1239243@@@Riptide
+1239696@@@Arcane Blast
+1239697@@@Arcane Blast
+1239699@@@Arcane Blast
+1239700@@@Arcane Blast
+1239832@@@Impact
+1240044@@@Ice Lance
+1240045@@@Ice Lance
+1240046@@@Ice Lance
+1240047@@@Ice Lance
+1240062@@@Teleport Target to Self
+1240113@@@Prevent Time Freeze
+1240193@@@Slam
+1240287@@@Charge
+1240288@@@Charge
+1240289@@@Charge
+1240329@@@Scorned by the Light
+1240330@@@Rediscovering the Light
+1240331@@@(DNT) Cancel Aura
+1240334@@@Holy Light
+1240337@@@Test Profession
+1240345@@@Smelt Copper (Test)
+1240365@@@Test Profession
+1240366@@@Test Profession
+1240367@@@Test Profession
+1240368@@@Test Profession
+1240375@@@Test Profession
+1240682@@@Arcane Bolt
+1240686@@@Slow
+1240687@@@Trample
+1240688@@@Entangle
+1240692@@@Fel Timbers
+1240694@@@Fel Timbers
+1240706@@@Fel Timbers
+1240707@@@Fel Timbers
+1240710@@@Fel Flames
+1240720@@@Penance
+1240721@@@Penance
+1240723@@@Penance
+1240724@@@Penance
+1240727@@@Penance
+1240730@@@Penance
+1240732@@@Penance
+1240733@@@Penance
+1240734@@@Penance
+1240736@@@Penance
+1240738@@@Drain Vitality
+1240749@@@Debilitate
+1240750@@@Debilitate
+1240755@@@Blessed Recovery
+1240770@@@Binding Heal
+1240771@@@Binding Heal
+1240772@@@Binding Heal
+1240773@@@Binding Heal
+1240774@@@Binding Heal
+1240822@@@Channeling
+1240826@@@Prayer of Mending
+1240827@@@Prayer of Mending
+1240830@@@Disruption
+1240848@@@Prayer of Mending
+1240849@@@Prayer of Mending
+1240869@@@Manamorph
+1240918@@@Prayer of Mending
+1240919@@@Prayer of Mending
+1240921@@@Expelling Mana
+1240927@@@First Aid
+1240928@@@First Aid
+1240929@@@First Aid
+1240930@@@First Aid
+1240938@@@Expelling Mana
+1240943@@@Alchemy
+1240944@@@Blacksmithing
+1240945@@@Cooking
+1240946@@@Enchanting
+1240947@@@Engineering
+1240948@@@Fishing
+1240949@@@Herbalism
+1240950@@@Leatherworking
+1240951@@@Mining
+1240952@@@Skinning
+1240953@@@Tailoring
+1240954@@@Alchemy
+1240955@@@Blacksmithing
+1240956@@@Cooking
+1240957@@@Enchanting
+1240958@@@Engineering
+1240959@@@Fishing
+1240960@@@Herbalism
+1240961@@@Leatherworking
+1240962@@@Mining
+1240963@@@Skinning
+1240964@@@Tailoring
+1240965@@@Alchemy
+1240966@@@Blacksmithing
+1240967@@@Cooking
+1240968@@@Enchanting
+1240969@@@Engineering
+1240970@@@Fishing
+1240971@@@Herbalism
+1240972@@@Leatherworking
+1240973@@@Mining
+1240974@@@Skinning
+1240976@@@Tailoring
+1240977@@@Alchemy
+1240979@@@Blacksmithing
+1240980@@@Cooking
+1240981@@@Enchanting
+1240982@@@Engineering
+1240983@@@Fishing
+1240984@@@Herbalism
+1240985@@@Leatherworking
+1240986@@@Mining
+1240987@@@Skinning
+1240988@@@Tailoring
+1241057@@@Interrupted
+1241115@@@Sense Undead
+1241325@@@Arcane Explosion
+1241329@@@Malfunction
+1241359@@@Arcane Cascade
+1241501@@@Focal Blast
+1241506@@@Arcane Bolt
+1241514@@@Focal Blast
+1241515@@@Bounding Mana
+1241523@@@Bounding Mana
+1241524@@@Bounding Mana
+1241582@@@Mutilate
+1241584@@@Mutilate
+1241585@@@Mutilate
+1241586@@@Mutilate
+1241588@@@Mutilate
+1241590@@@Mutilate
+1241695@@@Arcane Ward
+1241797@@@Restless Blades
+1241810@@@Cutthroat
+1241821@@@Stock Ore
+1241930@@@[DNT] Test Sound
+1242069@@@Portal
+1242139@@@Focused Fire
+1242163@@@Transfusion
+1242252@@@Arcane Explosion
+1242393@@@Summon Eagle Companion
+1242436@@@Raise Dead
+1242440@@@Shadow Bolt Volley
+1242441@@@Raise Dead
+1242442@@@Raise Dead
+1242443@@@Raise Dead
+1242444@@@Raise Dead
+1242446@@@Death Pact
+1242512@@@Rapid Recuperation
+1242634@@@Counterattack
+1242688@@@Resourcefulness
+1242694@@@(DNT) Bloodmane Cosmetic Equipment
+1242853@@@Soul Harvest
+1242871@@@Solar Burst
+1242884@@@Intimidating Roar
+1242907@@@Maul
+1242913@@@Harvest Curse
+1242957@@@Siphon Life
+1242971@@@Unstable Affliction
+1242972@@@Unstable Affliction
+1242979@@@Rejuvenation
+1243028@@@Demonic Energies
+1243030@@@Demonic Tactics
+1243064@@@Improved Shadowbolt
+1243067@@@Improvised Shadowbolt
+1243068@@@Impressive Shadowbolt
+1243070@@@Impractical Shadowbolt
+1243071@@@Impossible Shadowbolt
+1243072@@@Imprecise Shadowbolt
+1243073@@@Impure Shadowbolt
+1243074@@@Important Shadowbolt
+1243076@@@Implausible Shadowbolt
+1243077@@@Imperfect Shadowbolt
+1243079@@@Impatient Shadowbolt
+1243080@@@Impeccable Shadowbolt
+1243081@@@Impalpable Shadowbolt
+1243082@@@Impotent Shadowbolt
+1243083@@@Impish Shadowbolt
+1243084@@@Impetuous Shadowbolt
+1243088@@@Impassioned Shadowbolt
+1243089@@@Improper Shadowbolt
+1243090@@@Imperiling Shadowbolt
+1243108@@@(DNT) Summon Implode Stalker
+1243120@@@Demonic Knowledge
+1243170@@@Slipped!
+1243229@@@Impair
+1243264@@@Impervious
+1243265@@@Impervious
+1243268@@@Impervious
+1243312@@@Imps!!
+1243318@@@Imps!
+1243319@@@(DNT) Imp Spawn Spell
+1243327@@@Open Book Visual
+1243338@@@Bane of Havoc
+1243339@@@Bane of Havoc
+1243356@@@Dig
+1243419@@@Flee
+1243433@@@[DNT] Spawn Event
+1243434@@@[DNT] Spawn Event
+1243461@@@Concerned
+1243562@@@(DNT) Bonesnout Charge Active
+1243564@@@(DNT) Bonesnout Charge Active
+1243805@@@Wild Charge
+1243823@@@Severe Weather
+1243845@@@Sated
+1243846@@@Soothed
+1243847@@@Quenched
+1243958@@@[DNT] Vek'zol Trigger
+1243960@@@Summon Vek'zol
+1243965@@@[DNT] Summon Noxious Slimes
+1243969@@@Well Fed XP Boost
+1243974@@@Smoldering Smash
+1244245@@@Test Crocolisk Gumbo
+1244396@@@Chain Lightning
+1244416@@@Stomp
+1244421@@@Distilled Firewater
+1244431@@@Minor Healing Potion
+1244432@@@Lesser Healing Potion
+1244433@@@Healing Potion
+1244434@@@Greater Healing Potion
+1244435@@@Superior Healing Potion
+1244436@@@Major Healing Potion
+1244447@@@[DNT] Leyline Rift Visual Aura
+1244482@@@Improvised Weapon
+1244484@@@Whirlwind
+1244493@@@Best Served Cold
+1244625@@@Siphon Ley Line
+1244645@@@Lesser Discolored Healing Potion
+1244646@@@Discolored Healing Potion
+1244647@@@Greater Discolored Healing Potion
+1244648@@@Superior Discolored Healing Potion
+1244671@@@Flaming Bolts
+1244674@@@Flaming Bolts
+1244863@@@Minor Discolored Healing Potion
+1244864@@@Lesser Discolored Healing Potion
+1244865@@@Discolored Healing Potion
+1244866@@@Greater Discolored Healing Potion
+1244867@@@Superior Discolored Healing Potion
+1244896@@@Flaming Bolts
+1244951@@@Restore
+1244960@@@Fireball
+1244967@@@Hallow's Curse
+1244970@@@Frostbolt
+1244981@@@Lightning Bolt
+1245010@@@Shadow Bolts
+1245011@@@Shadow Bolts
+1245086@@@Frost Bolts
+1245088@@@Frost Bolts
+1245095@@@Best Served Cold
+1245113@@@Lightning Bolts
+1245114@@@Lightning Bolts
+1245119@@@Bestial Roar
+1245130@@@Flame Roar
+1245154@@@Thunder Roar
+1245158@@@Item Script Test [DNT]
+1245164@@@Vicious Maul
+1245244@@@Minor Arcane Elixir
+1245246@@@Minor Arcane Elixir
+1245249@@@Elixir of Minor Force
+1245250@@@Elixir of Minor Force
+1245287@@@Copper Rod
+1245288@@@[DNT] Summon Large Noxious Slimes
+1245320@@@Dust to Motes
+1245321@@@Novice's Practice Wand
+1245324@@@Chain Lightning
+1245338@@@Feral Spirit
+1245340@@@Feral Spirit
+1245536@@@Instakill Self
+1245608@@@Mining Skill
+1245609@@@Herbalism Skill
+1245610@@@Skinning Skill
+1245683@@@Fel Pervasion Visual
+1245705@@@Summon Minimus Tentaculus
+1245713@@@Critter-Killer
+1245714@@@Find Target
+1245747@@@Shadow Channeling - Channel Cast Visual
+1245883@@@Purge
+1245940@@@Bloodlust
+1245956@@@Flame Shock
+1246026@@@Herbal Soil Poultice
+1246031@@@Hunting Kobolds
+1246059@@@Summon Rumbler
+1246092@@@Summon Rumblers
+1246362@@@Nightmare Detonation
+1246364@@@Nightmare Detonation
+1246365@@@Nightmare Detonation
+1246367@@@Nightmare Detonation
+1246453@@@Crimson Wrest
+1246455@@@Dig
+1246456@@@Crimson Wrest
+1246475@@@Urge to Kill
+1246989@@@DNT Quest visual
+1247087@@@Fear
+1247168@@@Read Label
+1247169@@@Devour
+1247183@@@Quenched
+1247224@@@Mark of the Satyr
+1247237@@@Profane Protection
+1247252@@@Purify
+1247426@@@Stock Crate
+1247427@@@Stock Crate
+1247428@@@Stock Crate
+1247429@@@Stock Crate
+1247430@@@Stock Crate
+1247431@@@Stock Crate
+1247432@@@Stock Crate
+1247433@@@Stock Crate
+1247434@@@Stock Crate
+1247435@@@Stock Crate
+1247436@@@Stock Crate
+1247437@@@Stock Crate
+1247438@@@Stock Crate
+1247439@@@Stock Crate
+1247440@@@Stock Crate
+1247441@@@Stock Crate
+1247442@@@Stock Crate
+1247443@@@Stock Crate
+1247446@@@Stock Crate
+1247447@@@Stock Crate
+1247448@@@Stock Crate
+1247449@@@Stock Crate
+1247450@@@Stock Crate
+1247451@@@Stock Crate
+1247452@@@Stock Crate
+1247453@@@Stock Crate
+1247454@@@Stock Crate
+1247455@@@Stock Crate
+1247456@@@Stock Crate
+1247457@@@Stock Crate
+1247526@@@Open Letter
+1247613@@@Equip Transmog Outfit
+1247741@@@Spinefin Halibut
+1247916@@@(DNT) Profane Totem Death Visuals
+1247917@@@Clear Current Transmogrifications
+1247998@@@Lightning Bolt
+1248000@@@Flame Shock
+1248001@@@Frost Shock
+1248008@@@Fire Nova
+1248071@@@(DNT) Summon Corrupted Spiders
+1248083@@@(DNT) Corrupted Add Spawn Visuals
+1248093@@@(DNT) Summon Corrupted Wolves
+1248095@@@(DNT) Summon Corrupted Bear
+1248131@@@Fireball
+1248147@@@Shadow Bolt
+1248148@@@Frostbolt
+1248152@@@Lightning Bolt
+1248187@@@DNT Kill Credit
+1248237@@@Lesser Spirit
+1248239@@@Resistance - Fire
+1248377@@@Nutritious Food
+1248378@@@Nutritious Food
+1248379@@@Nutritious Food
+1248380@@@Nutritious Food
+1248381@@@Nutritious Food
+1248382@@@Nutritious Food
+1248383@@@Nutritious Food
+1248384@@@Nutritious Food
+1248386@@@Nutritious Food
+1248387@@@Nutritious Food
+1248388@@@Nutritious Food
+1248389@@@Nutritious Food
+1248390@@@Nutritious Food
+1248391@@@Nutritious Food
+1248392@@@Nutritious Food
+1248393@@@Nutritious Food
+1248394@@@Nutritious Food
+1248395@@@Nutritious Food
+1248396@@@Nutritious Food
+1248397@@@Nutritious Food
+1248398@@@Nutritious Food
+1248399@@@Nutritious Food
+1248400@@@Nutritious Food
+1248401@@@Nutritious Food
+1248403@@@Lesser Agility
+1248406@@@Well Fed
+1248420@@@Well Fed
+1248421@@@Well Fed
+1248422@@@Well Fed
+1248437@@@Greater Agility
+1248444@@@Greater Strength
+1248458@@@Enchant Bracer - Minor Intellect
+1248459@@@Enchant Bracer - Minor Healing Power
+1248460@@@Enchant Bracer - Lesser Agility
+1248461@@@Twisted Nether Wand
+1248471@@@Glaive Thrower
+1248473@@@Fire Glaive
+1248497@@@Enchant Bracer - Agility
+1248498@@@Enchant Bracer - Lesser Healing Power
+1248500@@@Enchant Bracer - Greater Agility
+1248505@@@Lesser Eternal Wand
+1248509@@@Dreambough Wand
+1248510@@@Enchant 2H Weapon - Lesser Agility
+1248511@@@Enchant 2H Weapon - Lesser Strength
+1248515@@@Greater Eternal Wand
+1248528@@@Enchant Gloves - Advanced Skinning
+1248530@@@Skinning
+1248599@@@Enchant Bracer - Superior Agility
+1248606@@@Increase Spell Dam 55
+1248607@@@Enchant 2H Weapon - Mighty Spell Power
+1248633@@@FX Test Aura
+1248636@@@Enchant 2H Weapon - Mighty Healing Power
+1248637@@@Increase Healing 100
+1248640@@@Enchant Gloves - Superior Strength
+1248645@@@Enchant Gloves - Natural Power
+1248647@@@Increase Nature Dam 20
+1248650@@@Brilliant Wand
+1248661@@@Enchant Bracer - Superior Intellect
+1248664@@@Deflection
+1248665@@@Enchant Bracer - Superior Deflection
+1248668@@@Enchant 2H Weapon - Strength
+1248672@@@[DNT] Rimtori Ritual Trigger
+1248682@@@Destroy Seals
+1248687@@@Nutritious Food
+1248688@@@Well Fed
+1248703@@@Glimmering Staff
+1248739@@@Soulstaff
+1248745@@@Orb of Mystic Insight
+1248748@@@Orb of Souls
+1248751@@@Increased Spirit
+1248752@@@Mystic Mushroom
+1248754@@@Tenets of the Silver Hand
+1248755@@@Polished Driftwood Icon
+1248756@@@Meditation
+1248757@@@Enchant Weapon - Insight
+1248758@@@Insight
+1248759@@@Recovery
+1248760@@@Enchant Weapon - Recovery
+1248761@@@Recovery
+1248802@@@Wind Spike
+1248805@@@Enchant Weapon - Revelation
+1248806@@@Revelation
+1248808@@@Revelation
+1248947@@@Fel-Tainted Spittle
+1248956@@@Uber Invis
+1248974@@@Talons of Wrath
+1248996@@@Improved Wrath
+1249005@@@Seal Cost Reduction
+1249006@@@Libram of Invocation
+1249011@@@Totem of Ancestral Protection
+1249012@@@Fury of the Ancestors
+1249015@@@Totem of Ancestral Protection
+1249019@@@Enchant Necklace - Strength
+1249033@@@Lingering Fel Disease
+1249057@@@Enchant Necklace - Spell Power
+1249058@@@Enchant Necklace - Healing Power
+1249059@@@Enchant Necklace - Agility
+1249060@@@Enchant Necklace - Deflection
+1249061@@@Radiant Staff
+1249064@@@Dreamstaff
+1249069@@@Truesilver Conduit
+1249070@@@Twisting Essence Jar
+1249071@@@Enchant Chest - Absorption
+1249072@@@Absorption
+1249073@@@Absorption
+1249107@@@Frozen Heart of the Mountain
+1249110@@@Chthonic Power
+1249112@@@Molten Heart of the Mountain
+1249113@@@Molten Fury
+1249114@@@Dormant  Heart of the Mountain
+1249118@@@Eternal Power
+1249119@@@Eternal Power
+1249128@@@Idol of the Dream
+1249152@@@Libram of Holy Alacrity
+1249154@@@Totem of Thunder
+1249183@@@Fraxinus the Younger
+1249500@@@Nutritious Food
+1249501@@@Nutritious Food
+1249502@@@Nutritious Food
+1249503@@@Nutritious Food
+1249504@@@Nutritious Food
+1249505@@@Nutritious Food
+1249506@@@Nutritious Food
+1249507@@@Nutritious Food
+1249508@@@Nutritious Food
+1249509@@@Nutritious Food
+1249510@@@Nutritious Food
+1249511@@@Nutritious Food
+1249512@@@Nutritious Food
+1249513@@@Nutritious Food
+1249514@@@Nutritious Food
+1249515@@@Nutritious Food
+1249516@@@Nutritious Food
+1249517@@@Nutritious Food
+1249519@@@Well Fed
+1249520@@@Well Fed
+1249521@@@Well Fed
+1249522@@@Nutritious Food
+1249523@@@Well Fed
+1249630@@@Cerulean Dye
+1249631@@@Magenta Dye
+1249632@@@Viridian Dye
+1249633@@@Sulfuric Acid
+1249634@@@Sandpaper
+1249637@@@Smelt Azerothium
+1249725@@@Fatality
+1249731@@@Throw Axe
+1249755@@@Summoning Disorientation
+1249805@@@Roast Beast
+1249828@@@Credit Granter
+1249834@@@Scared
+1249845@@@Rift Portal
+1249906@@@Nutritious Drink
+1249907@@@Well Fed
+1249914@@@Nutritious Drink
+1249915@@@Nutritious Drink
+1249916@@@Nutritious Drink
+1249917@@@Nutritious Drink
+1249918@@@Nutritious Drink
+1249919@@@Nutritious Drink
+1249920@@@Nutritious Drink
+1249921@@@Nutritious Drink
+1249922@@@Nutritious Drink
+1249923@@@Nutritious Drink
+1249924@@@Nutritious Drink
+1249925@@@Nutritious Drink
+1249926@@@Well Fed
+1249927@@@Well Fed
+1249950@@@Nether Grip
+1249957@@@Peace Tea
+1249958@@@Royal Tea
+1249959@@@Root Tea
+1249960@@@Triage Tea
+1249961@@@Sunny Tea
+1249962@@@Sage's Tea
+1249963@@@Venomous Smoothie
+1249964@@@Slimy Smoothie
+1249965@@@Mrrggl Smrrthle
+1249966@@@Calcified Smoothie
+1249967@@@Spicy Smoothie
+1249968@@@Wicked Smoothie
+1249991@@@Quest
+1250013@@@Summon Lashling
+1250014@@@Summon Lashling
+1250015@@@Summon Lashling
+1250016@@@Summon Lashling
+1250053@@@Self Explosion
+1250056@@@[DNT] Spawn Event
+1250060@@@[DNT] Spawn Event
+1250142@@@Savory Stag Sliders
+1250143@@@Soaring Pamplona
+1250144@@@Bat Hachee
+1250145@@@Savory Turtle Stew
+1250146@@@Flank au Poivre
+1250147@@@Bear Bruscitti
+1250148@@@Steaming Stag Steak
+1250149@@@Swiftstrike Steak
+1250150@@@Raging Raptor Ribs
+1250151@@@Bear Brisket
+1250152@@@Prehistoric Pulled Raptor
+1250153@@@Raptor Rouladen
+1250154@@@Twice-Spiced Raptor Slice
+1250155@@@Giant Scrambled Eggs
+1250156@@@Tasty Raptor Bites
+1250157@@@Breakfast Omelette
+1250158@@@Clam Linguine
+1250201@@@Trigger
+1250207@@@Tracking [DNT]
+1250226@@@Quest
+1250228@@@[DNT] Stage Spawn
+1250266@@@Shoot
+1250313@@@(DNT) Frozen Treant Visuals
+1250418@@@Quest Invisibility
+1250419@@@Nether Grip
+1250421@@@Withering Link
+1250423@@@Demonic Frenzy
+1250425@@@Quest Invisibility
+1250426@@@Cripple
+1250535@@@Eclipse Landing
+1250617@@@The Allfur
+1250618@@@The Allfur
+1250775@@@Revealing Draught
+1250776@@@Draught of Predatory Senses
+1250777@@@Elixir of Cunning
+1250778@@@Elixir of the Phalanx
+1250779@@@Minor Cleric's Elixir
+1250780@@@Lesser Cleric's Elixir
+1250781@@@Cleric's Elixir
+1250782@@@Greater Cleric's Elixir
+1250783@@@Elixir of Fortitude
+1250784@@@Elixir of Greater Fortitude
+1250785@@@Elixir of Wicked Regeneration
+1250786@@@Elixir of the Owl
+1250787@@@Elixir of Sages
+1250788@@@Minor Mageblood Elixir
+1250789@@@Lesser Mageblood Elixir
+1250790@@@Greater Mageblood Elixir
+1250791@@@Lesser Arcane Elixir
+1250792@@@Elixir of Nature Power
+1250793@@@Elixir of Minor Spirit
+1250794@@@Elixir of Lesser Spirit
+1250795@@@Elixir of Spirit
+1250796@@@Elixir of Greater Spirit
+1250797@@@Elixir of the Whale
+1250798@@@Elixir of Strength
+1250799@@@Elixir of Ferocity
+1250800@@@Elixir of the Grizzly
+1250801@@@Elixir of Lesser Intellect
+1250802@@@Elixir of Intellect
+1250834@@@Upgrade the Well
+1250840@@@Upgrade the Tents
+1250887@@@Revealing Draught
+1250889@@@Draught of Predatory Senses
+1250900@@@Draught of Predatory Senses
+1250918@@@Elixir of Cunning
+1250920@@@Elixir of the Phalanx
+1250922@@@Minor Cleric's Elixir
+1250924@@@Lesser Cleric's Elixir
+1250925@@@Cleric's Elixir
+1250926@@@Greater Cleric's Elixir
+1250928@@@Elixir of Fortitude
+1250931@@@Elixir of Greater Fortitude
+1250932@@@Elixir of Wicked Regeneration
+1250940@@@Elixir of the Owl
+1250941@@@Elixir of Sages
+1250942@@@Minor Mageblood Elixir
+1250944@@@Lesser Mageblood Elixir
+1250948@@@Greater Mageblood Elixir
+1250971@@@Lesser Arcane Elixir
+1250972@@@Elixir of Nature Power
+1250974@@@Elixir of Minor Spirit
+1250976@@@Elixir of Lesser Spirit
+1250978@@@Elixir of Spirit
+1250979@@@Elixir of Greater Spirit
+1250981@@@Elixir of the Whale
+1250984@@@Elixir of Strength
+1250985@@@Elixir of Ferocity
+1250986@@@Elixir of the Grizzly
+1250988@@@Elixir of Lesser Intellect
+1250989@@@Elixir of Intellect
+1251214@@@Upgrade the Cloth
+1251231@@@Taxi
+1251232@@@Ride Vehicle
+1251286@@@Unstable Package
+1251362@@@Unstable Fuel Cell
+1251364@@@Misfire
+1251380@@@Increase Fire Dam 73
+1251381@@@Elemental Campfire area
+1251394@@@Parachute
+1251474@@@Paeonia's Melody
+1251535@@@(DNT) Far Sight Trap Aura
+1251536@@@(DNT) Far Sight Trap Cosmetic Equipment
+1251563@@@Paeonia's Melody
+1251657@@@Stoneskin
+1251684@@@(DNT) Far Sight Trap Cosmetic Equipment
+1251688@@@(DNT) Bloodmane's Sight Time Limit
+1251691@@@Dry
+1251692@@@Grounded
+1251693@@@Cooled
+1251705@@@(DNT) Bloodmane's Sight Time Limit
+1251729@@@Minor Spellblasting Potion
+1251730@@@Lesser Spellblasting Potion
+1251731@@@Spellblasting Potion
+1251732@@@Greater Spellblasting Potion
+1251733@@@Superior Spellblasting Potion
+1251734@@@Major Spellblasting Potion
+1251735@@@Minor Frenzy Potion
+1251736@@@Lesser Frenzy Potion
+1251737@@@Frenzy Potion
+1251738@@@Greater Frenzy Potion
+1251739@@@Superior Frenzy Potion
+1251740@@@Major Frenzy Potion
+1251741@@@Minor Mender's Potion
+1251742@@@Lesser Mender's Potion
+1251743@@@Mender's Potion
+1251744@@@Greater Mender's Potion
+1251745@@@Superior Mender's Potion
+1251747@@@Major Mender's Potion
+1251748@@@Potion of Venomous Blood
+1251749@@@Caustic Smog Potion
+1251750@@@Disorienting Smog Potion
+1251751@@@Dragonfire Potion
+1251752@@@Potion of Elemental Siphoning
+1251753@@@Potion of Beast Culling
+1251791@@@Drying Off
+1251890@@@Increase Spell Dam 94
+1251919@@@Minor Spellblasting Potion
+1251922@@@Lesser Spellblasting Potion
+1251923@@@Spellblasting Potion
+1251924@@@Greater Spellblasting Potion
+1251931@@@Superior Spellblasting Potion
+1251932@@@Major Spellblasting Potion
+1251933@@@Minor Frenzy Potion
+1251935@@@Lesser Frenzy Potion
+1251936@@@Frenzy Potion
+1251937@@@Greater Frenzy Potion
+1251938@@@Superior Frenzy Potion
+1251940@@@Major Frenzy Potion
+1251942@@@Minor Mender's Potion
+1251944@@@Lesser Mender's Potion
+1251945@@@Mender's Potion
+1251946@@@Greater Mender's Potion
+1251947@@@Superior Mender's Potion
+1251948@@@Major Mender's Potion
+1251984@@@Increase Strength 20 - Imperial Set
+1251986@@@Venomous Blood
+1251987@@@Increase Agility 18 - Imperial Set
+1251990@@@Increased Hit Chance 1 - Imperial Set
+1251991@@@Increased Critical 1 - All - Imperial Set
+1251993@@@Venomous Blood
+1251995@@@Venomous Blood
+1252000@@@Test Bleed
+1252009@@@Increase Strength 20 - Blessed Plate Set
+1252010@@@Increased Critical 1 - All - Blessed Plate Set
+1252012@@@Increase Spell Dam 21 - Blessed Plate Set
+1252013@@@Increased Hit Chance 2 - Blessed Plate Set
+1252017@@@Drying Off
+1252026@@@Fireworks
+1252030@@@Torrential Rain
+1252083@@@1d6
+1252100@@@(DNT) TEST Mini Visuals
+1252106@@@Cooling Down
+1252110@@@Frosty
+1252154@@@Activate
+1252180@@@Cable
+1252183@@@Cable
+1252188@@@(DNT) TEST Skeleton Mini Visuals
+1252189@@@Gears
+1252229@@@Gemmed Copper Boots
+1252230@@@Strange Copper Boots
+1252231@@@Glowing Copper Boots
+1252232@@@Sterling Silver Boots
+1252233@@@Sterling Silver Leggings
+1252234@@@Sterling Silver Gauntlet
+1252235@@@Sterling Silver Shoulders
+1252236@@@Sterling Silver Breastplate
+1252237@@@Veteran's Chain Shirt
+1252238@@@Guard's Chain Shirt
+1252239@@@Protector's Chain Shirt
+1252240@@@Acolyte's Chain Shirt
+1252241@@@Crusader's Chain Shirt
+1252242@@@Veteran's Chain Leggings
+1252243@@@Guard's Chain Leggings
+1252244@@@Protector's Chain Leggings
+1252245@@@Acolyte's Chain Leggings
+1252246@@@Crusader's Chain Leggings
+1252247@@@Veteran's Chain Helm
+1252248@@@Guard's Chain Helm
+1252249@@@Protector's Chain Helm
+1252250@@@Acolyte's Chain Helm
+1252251@@@Crusader's Chain Helm
+1252252@@@Veteran's Boots
+1252253@@@Guard's Boots
+1252254@@@Protector's Boots
+1252255@@@Acolyte's Boots
+1252256@@@Crusader's Boots
+1252257@@@Veteran's Gloves
+1252258@@@Guard's Gloves
+1252259@@@Protector's Gloves
+1252260@@@Acolyte's Gloves
+1252261@@@Crusader's Gloves
+1252262@@@Veteran's Chain Belt
+1252263@@@Guard's Chain Belt
+1252264@@@Protector's Chain Belt
+1252265@@@Acolyte's Chain Belt
+1252266@@@Crusader's Chain Belt
+1252267@@@Veteran's Silvered Chain Shirt
+1252268@@@Guard's Silvered Chain Shirt
+1252269@@@Protector's Silvered Chain Shirt
+1252270@@@Acolyte's Silvered Chain Shirt
+1252271@@@Crusader's Silvered Chain Shirt
+1252272@@@Veteran's Silvered Chain Leggings
+1252273@@@Guard's Silvered Chain Leggings
+1252274@@@Protector's Silvered Chain Leggings
+1252275@@@Acolyte's Silvered Chain Leggings
+1252276@@@Crusader's Silvered Chain Leggings
+1252277@@@Veteran's Silvered Chain Helm
+1252278@@@Guard's Silvered Chain Helm
+1252279@@@Protector's Silvered Chain Helm
+1252280@@@Acolyte's Silvered Chain Helm
+1252281@@@Crusader's Silvered Chain Helm
+1252282@@@Hard Gold Cuirass
+1252283@@@Hard Gold Boots
+1252284@@@Hard Gold Bracers
+1252285@@@Hard Gold Leggings
+1252286@@@Hard Gold Coif
+1252287@@@Hard Gold Gauntlet
+1252288@@@Hard Gold Pauldrons
+1252289@@@Shining Mithril Breastplate
+1252290@@@Shining Mithril Pauldrons
+1252291@@@Shining Mithril Boots
+1252292@@@Shining Mithril Helm
+1252293@@@Shining Mithril Pants
+1252294@@@Shining Mithril Gauntlet
+1252295@@@Officer's Boots
+1252296@@@Sentinel's Boots
+1252297@@@Warder's Boots
+1252298@@@Prefect's Boots
+1252299@@@Justicar's Boots
+1252300@@@Officer's Gloves
+1252301@@@Sentinel's Gloves
+1252302@@@Warder's Gloves
+1252303@@@Prefect's Gloves
+1252304@@@Justicar's Gloves
+1252305@@@Officer's Belt
+1252306@@@Sentinel's Belt
+1252307@@@Warder's Belt
+1252308@@@Prefect's Belt
+1252309@@@Justicar's Belt
+1252310@@@Officer's Sabatons
+1252311@@@Sentinel's Sabatons
+1252312@@@Warder's Sabatons
+1252313@@@Prefect's Sabatons
+1252314@@@Justicar's Sabatons
+1252315@@@Officer's Gauntlet
+1252316@@@Sentinel's Gauntlet
+1252317@@@Warder's Gauntlet
+1252318@@@Prefect's Gauntlet
+1252319@@@Justicar's Gauntlet
+1252320@@@Officer's Waistguard
+1252321@@@Sentinel's Waistguard
+1252322@@@Warder's Waistguard
+1252323@@@Prefect's Waistguard
+1252324@@@Justicar's Waistguard
+1252325@@@Officer's Pauldrons
+1252326@@@Sentinel's Pauldrons
+1252327@@@Warder's Pauldrons
+1252328@@@Prefect's Pauldrons
+1252329@@@Justicar's Pauldrons
+1252330@@@Officer's Wristguards
+1252331@@@Sentinel's Wristguards
+1252332@@@Warder's Wristguards
+1252333@@@Prefect's Wristguards
+1252334@@@Justicar's Wristguards
+1252335@@@Blessed Plate Pauldrons
+1252336@@@Blessed Plate Boots
+1252337@@@Blessed Plate Gauntlet
+1252338@@@Imperial Plate Gauntlets
+1252339@@@Blessed Plate Bracers
+1252340@@@Blessed Plate Leggings
+1252341@@@Blessed Plate Belt
+1252342@@@Blessed Plate Helm
+1252343@@@Blessed Plate Chest
+1252344@@@Enriched Thorium Breastplate
+1252345@@@Enriched Thorium Leggings
+1252346@@@Enriched Thorium Helm
+1252347@@@Champion's Legplates
+1252348@@@Stalwart Helm
+1252349@@@Martyr's Legplates
+1252350@@@Breastplate of Salvation
+1252351@@@Brass Knuckles
+1252352@@@Bronze Dory
+1252353@@@Iron Fists
+1252354@@@Steel Spear
+1252355@@@Iron Morningstar
+1252356@@@Mithril Shortsword
+1252357@@@Mithril Warhammer
+1252358@@@Mithril Claws
+1252359@@@Mithril Claymore
+1252360@@@Mithril Stiletto
+1252361@@@Charged Mithril Battleaxe
+1252362@@@Thorium Greatmace
+1252363@@@Thorium Cestus
+1252364@@@Thorium Poleaxe
+1252365@@@Bold Dirk
+1252366@@@Stormcarver
+1252367@@@Bagh Nakh
+1252368@@@Legionite Glaive
+1252460@@@Wind Rush
+1252482@@@Lower Lift
+1252512@@@Lower Lift
+1252525@@@Caustic Smog Potion
+1252526@@@Caustic Smog Potion
+1252543@@@Caustic Smog Potion
+1252544@@@Disorienting Smog Potion
+1252545@@@Disorienting Smog Potion
+1252546@@@Disorienting Smog Potion
+1252554@@@Dragonfire Potion
+1252558@@@Potion of Elemental Siphoning
+1252559@@@Potion of Beast Culling
+1252566@@@Savory Whimsyfin Delight
+1252576@@@Savory Whimsyfin Delight
+1252716@@@Soothed
+1252794@@@Flames
+1252807@@@[DNT] Spawn Event
+1252879@@@Cooking Shortcut
+1252890@@@[DNT] Spawn Event
+1252911@@@Contribute Reagent
+1252912@@@Contribute Reagent
+1252914@@@Contribute Reagent
+1252954@@@Boss Aura
+1252958@@@Gunked
+1252979@@@Slimeslayer's Adaptive Robes
+1252980@@@Slimeslayer's Adaptive Cuffs
+1252981@@@Slimeslayer's Adaptive Cord
+1252982@@@Beastculler's Adaptive Vest
+1252983@@@Beastculler's Adaptive Bracers
+1252984@@@Beastculler's Adaptive Wrap
+1252985@@@Dinodestroyer's Adaptive Chestguard
+1252986@@@Dinodestroyer's Adaptive Wrists
+1252987@@@Dinodestroyer's Adaptive Belt
+1252988@@@Earthcrusher's Adaptive Chestplate
+1252989@@@Earthcrusher's Adaptive Armguards
+1252990@@@Earthcrusher's Adaptive Girdle
+1252991@@@Slimetender's Adaptive Tunic
+1252992@@@Slimetender's Adaptive Bracers
+1252993@@@Slimetender's Adaptive Belt
+1252995@@@Beastmender's Adaptive Robe
+1252996@@@Beastmender's Adaptive Wristlinks
+1252997@@@Beastmender's Adaptive Girdle
+1252998@@@Dinomender's Adaptive Tunic
+1252999@@@Dinomender's Adaptive Wrists
+1253000@@@Dinomender's Adaptive Chain
+1253001@@@Earthweaver's Adaptive Plate
+1253002@@@Earthweaver's Adaptive Links
+1253003@@@Earthweaver's Adaptive Waistguard
+1253004@@@Sludge Suppressor
+1253005@@@Enormous Tranquilizer Dart
+1253006@@@G.R.R.-Nade
+1253106@@@Head Scratcher area
+1253108@@@Place Head Scratcher Lure
+1253123@@@Activate
+1253124@@@Activate
+1253125@@@Activate
+1253126@@@Activate
+1253127@@@Portal to Dalaran
+1253128@@@Timer
+1253151@@@Sanctuary of the Shen'dorei
+1253186@@@Boss Aura
+1253187@@@Boss Aura
+1253200@@@Fly Away!
+1253202@@@Contribute Reagent
+1253203@@@Contribute Reagent
+1253204@@@Contribute Reagent
+1253298@@@[DNT] Head Scratcher
+1253317@@@Slam
+1253321@@@Unicorn's Feast
+1253332@@@Poison Bolt Volley
+1253346@@@Corrupt Corpse
+1253348@@@You Smell Like Garbage
+1253349@@@Corrupted Creature
+1253351@@@Garbage Smell
+1253356@@@Timer
+1253365@@@Hard Pull
+1253366@@@Hard Pull
+1253371@@@Magnetic Pulse
+1253372@@@Timer
+1253375@@@Spectral Presence
+1253378@@@Adaptation
+1253379@@@Adaptation
+1253380@@@Adaptation
+1253381@@@Adaptation
+1253382@@@Adaptation
+1253383@@@Adaptation
+1253384@@@Adaptation
+1253385@@@Adaptation
+1253386@@@Adaptation
+1253387@@@Adaptation
+1253388@@@Adaptation
+1253389@@@Adaptation
+1253393@@@Slime Bubble
+1253404@@@Crushed Armor
+1253408@@@Raise Dead
+1253413@@@(DNT) Raise Dead Spawn Spell
+1253414@@@Dying Will
+1253427@@@Cosmetic Slime Aura
+1253456@@@Splat
+1253463@@@Slimecontrolled
+1253478@@@Coagulate
+1253480@@@Congeal
+1253487@@@Experimental Plague
+1253552@@@Foul Volley
+1253568@@@Tranquility
+1253636@@@Slimeletting
+1253661@@@Slime Size Aura [DNT]
+1253665@@@Slime Nova
+1253722@@@Foul Breath
+1253743@@@Fixate
+1253746@@@Fixate
+1253772@@@Digging
+1253774@@@Sonic Screech
+1253780@@@Devour
+1253789@@@Devour
+1253790@@@Devour
+1253815@@@Terrorizing Roar
+1253833@@@Devilsaur Hide
+1253843@@@Punctured Devilsaur Hide
+1253857@@@Spike Trap
+1253880@@@[DNT] Spawn Event
+1253882@@@[DNT] Spawn Event
+1253916@@@Bang a Drum
+1253931@@@Blue Beam
+1253946@@@Timer
+1253958@@@Bang a Drum
+1253961@@@Molten Fury
+1253966@@@Molten Fury
+1253999@@@Summon Undead
+1254002@@@Summon Undead
+1254017@@@Death Pact
+1254021@@@Lift
+1254026@@@Death Pact
+1254090@@@Sharpen the Tools
+1254114@@@[DNT] Spawn Event
+1254115@@@[DNT] Spawn Event
+1254164@@@[DNT] Spawn Event
+1254170@@@Roll the dice!
+1254215@@@Roll the dice!
+1254217@@@Roll the dice!
+1254220@@@Roll the dice!
+1254221@@@Roll the dice!
+1254233@@@Roll the dice!
+1254234@@@Earthquake
+1254237@@@Earthquake
+1254268@@@Eternal Reward
+1254269@@@Eternal Reward
+1254287@@@Eternal Reward
+1254290@@@Light
+1254344@@@(DNT) Coin Area Trigger
+1254348@@@(DNT) Coin Area Trigger
+1254358@@@(DNT) Coin Area Trigger
+1254360@@@(DNT) Coin Area Trigger
+1254362@@@(DNT) Coin Area Trigger
+1254364@@@(DNT) Coin Area Trigger
+1254365@@@(DNT) Coin Area Trigger
+1254368@@@(DNT) Coin Area Trigger
+1254369@@@(DNT) Coin Area Trigger
+1254372@@@(DNT) Coin Area Trigger
+1254375@@@(DNT) Coin Area Trigger
+1254442@@@Dread Bite
+1254443@@@Dread Bite
+1254444@@@Dread Bite
+1254446@@@Dread Bite
+1254480@@@Bloodfury
+1254492@@@Buzzing Insects
+1254516@@@Wild Detonation
+1254518@@@Wild Detonation
+1254523@@@Wild Detonation
+1254524@@@Wild Detonation
+1254546@@@Cleansed
+1254562@@@On Thin Ice
+1254565@@@On Thin Ice
+1254585@@@Pirates!
+1254586@@@Pirates!
+1254738@@@Armor +16, Stamina +2
+1254740@@@Armor +16, Attack Power +4
+1254742@@@Armor +16, Spell Power +2
+1254747@@@Armor +24, Stamina +3
+1254748@@@Armor +24, Attack Power +6
+1254750@@@Armor +24, Spell Power +4
+1254766@@@Armor +32, Stamina +4
+1254767@@@Armor +32, Spell Power +5
+1254768@@@Armor +32, Attack Power +8
+1254770@@@Armor +40, Spell Power +6
+1254771@@@Armor +40, Stamina +5
+1254772@@@Armor +40, Attack Power +10
+1254832@@@Mark of Akir
+1254837@@@[DNT] Complete Quest
+1254871@@@Eavesdropped
+1254874@@@(DNT) Cancel Aura
+1254892@@@Channel Winds
+1254902@@@Eruption
+1254903@@@Eruption
+1254918@@@Eruption
+1254945@@@Shen'dar Offering
+1254965@@@Forceful Rugged Armor Kit
+1254966@@@Mystic Rugged Armor Kit
+1254967@@@Pristine Scorpid Leggings
+1254968@@@Black Dragonscale Helm
+1254969@@@Blue Dragonscale Helm
+1254970@@@Red Dragonscale Leggings
+1254971@@@Charged Scorpid Boots
+1254972@@@Supple Scorpid Sabatons
+1254973@@@Charged Scorpid Leggings
+1254974@@@Supple Scorpid Vest
+1254975@@@Charged Scorpid Vest
+1254976@@@Supple Scorpid Helm
+1254977@@@Charged Scorpid Gauntlets
+1254978@@@Supple Scorpid Belt
+1254979@@@Heavy Scorpid Boots
+1254980@@@Charged Scorpid Bracers
+1254981@@@Supple Scorpid Shoulder
+1254982@@@Mender's Mail Belt
+1254983@@@Skirmisher's Mail Belt
+1254984@@@Skycaller's Mail Belt
+1254985@@@Stalker's Mail Belt
+1254986@@@Mender's Mail Gauntlets
+1254987@@@Skirmisher's Mail Gauntlets
+1254988@@@Skycaller's Mail Gauntlets
+1254989@@@Stalker's Mail Gauntlets
+1254990@@@Charged Scorpid Shoulder
+1254991@@@Supple Scorpid Bracers
+1254992@@@Charged Scorpid Helm
+1254993@@@Supple Scorpid Leggings
+1254994@@@Mender's Mail Sabatons
+1254995@@@Skirmisher's Mail Sabatons
+1254996@@@Skycaller's Mail Sabatons
+1254997@@@Stalker's Mail Sabatons
+1254998@@@Charged Scorpid Belt
+1254999@@@Supple Scorpid Boots
+1255000@@@Mender's Mail Bracers
+1255001@@@Skirmisher's Mail Bracers
+1255002@@@Skycaller's Mail Bracers
+1255003@@@Stalker's Mail Bracers
+1255004@@@Mender's Mail Shoulder
+1255005@@@Skirmisher's Mail Shoulder
+1255006@@@Skycaller's Mail Shoulder
+1255007@@@Stalker's Mail Shoulder
+1255008@@@Mender's Mail Boots
+1255009@@@Skirmisher's Mail Boots
+1255010@@@Skycaller's Mail Boots
+1255011@@@Stalker's Mail Boots
+1255012@@@Ironfeather Leggings
+1255013@@@Warbear Helm
+1255014@@@Timbermaw Tunic
+1255015@@@Dawn Armor
+1255016@@@Living Crown
+1255017@@@Blue Suede Hat
+1255018@@@Tooled Leather Pants
+1255019@@@Blue Suede Bracers
+1255020@@@Tooled Leather Epaulets
+1255021@@@Blue Suede Belt
+1255022@@@Tooled Leather Bracers
+1255023@@@Wicked Leather Shoulder
+1255024@@@Blue Suede Armor
+1255025@@@Tooled Leather Crown
+1255026@@@Blue Suede Shoulder
+1255027@@@Tooled Leather Gauntlets
+1255028@@@Wicked Leather Boots
+1255029@@@Blue Suede Pants
+1255030@@@Tooled Leather Armor
+1255031@@@Mender's Leather Waistguard
+1255032@@@Skycaller's Leather Waistguard
+1255033@@@Warden's Leather Waistguard
+1255034@@@Skulker's Leather Waistguard
+1255035@@@Prowler's Leather Waistguard
+1255036@@@Mender's Leather Gauntlets
+1255037@@@Skycaller's Leather Gauntlets
+1255038@@@Warden's Leather Gauntlets
+1255039@@@Skulker's Leather Gauntlets
+1255040@@@Prowler's Leather Gauntlets
+1255041@@@Blue Suede Gloves
+1255042@@@Tooled Leather Boots
+1255043@@@Mender's Leather Boots
+1255044@@@Skycaller's Leather Boots
+1255045@@@Warden's Leather Boots
+1255046@@@Skulker's Leather Boots
+1255047@@@Prowler's Leather Boots
+1255048@@@Blue Suede Shoes
+1255049@@@Tooled Leather Belt
+1255050@@@Mender's Leather Bracers
+1255051@@@Skycaller's Leather Bracers
+1255052@@@Warden's Leather Bracers
+1255053@@@Skulker's Leather Bracers
+1255054@@@Prowler's Leather Bracers
+1255055@@@Mender's Leather Shoulder
+1255056@@@Skycaller's Leather Shoulder
+1255057@@@Warden's Leather Shoulder
+1255058@@@Skulker's Leather Shoulder
+1255059@@@Prowler's Leather Shoulder
+1255060@@@Mender's Leather Shoes
+1255061@@@Skycaller's Leather Shoes
+1255062@@@Warden's Leather Shoes
+1255063@@@Skulker's Leather Shoes
+1255064@@@Prowler's Leather Shoes
+1255065@@@Mender's Leather Gloves
+1255066@@@Skycaller's Leather Gloves
+1255067@@@Skirmisher's Leather Gloves
+1255068@@@Warden's Leather Gloves
+1255069@@@Stalker's Leather Gloves
+1255070@@@Skulker's Leather Gloves
+1255071@@@Prowler's Leather Gloves
+1255073@@@Forceful Thick Armor Kit
+1255074@@@Mystic Thick Armor Kit
+1255075@@@Mender's Leather Belt
+1255076@@@Skycaller's Leather Belt
+1255077@@@Skirmisher's Leather Belt
+1255078@@@Warden's Leather Belt
+1255079@@@Stalker's Leather Belt
+1255080@@@Skulker's Leather Belt
+1255081@@@Prowler's Leather Belt
+1255082@@@Wisdom's Leather Leggings
+1255083@@@Stormrider's Leather Kilt
+1255084@@@Totemic Leather Leggings
+1255085@@@Defender's Leather Kilt
+1255086@@@Trapper's Leather Legguards
+1255087@@@Brawler's Leather Legguards
+1255088@@@Wisdom's Leather Helm
+1255089@@@Stormrider's Leather Helm
+1255090@@@Totemic Leather Helm
+1255091@@@Defender's Leather Helm
+1255092@@@Trapper's Leather Helm
+1255093@@@Brawler's Leather Helm
+1255095@@@Forceful Heavy Armor Kit
+1255096@@@Mystic Heavy Armor Kit
+1255097@@@Wisdom's Leather Tunic
+1255098@@@Stormrider's Leather Tunic
+1255099@@@Totemic Leather Tunic
+1255100@@@Defender's Leather Tunic
+1255101@@@Trapper's Leather Tunic
+1255102@@@Brawler's Leather Tunic
+1255103@@@Hillman's Leather Boots
+1255104@@@Wisdom's Leather Hood
+1255105@@@Stormrider's Leather Hood
+1255106@@@Totemic Leather Hood
+1255107@@@Defender's Leather Hood
+1255108@@@Trapper's Leather Hood
+1255109@@@Brawler's Leather Hood
+1255110@@@Wisdom's Leather Pants
+1255111@@@Stormrider's Leather Pants
+1255112@@@Totemic Leather Pants
+1255113@@@Defender's Leather Pants
+1255114@@@Trapper's Leather Pants
+1255115@@@Brawler's Leather Pants
+1255116@@@Wisdom's Leather Boots
+1255117@@@Stormrider's Leather Boots
+1255118@@@Totemic Leather Boots
+1255119@@@Defender's Leather Boots
+1255120@@@Trapper's Leather Boots
+1255121@@@Brawler's Leather Boots
+1255123@@@Forceful Medium Armor Kit
+1255124@@@Mystic Medium Armor Kit
+1255125@@@Wisdom's Leather Gloves
+1255126@@@Stormrider's Leather Gloves
+1255127@@@Totemic Leather Gloves
+1255128@@@Defender's Leather Gloves
+1255129@@@Trapper's Leather Gloves
+1255130@@@Brawler's Leather Gloves
+1255131@@@Wisdom's Leather Armor
+1255132@@@Stormrider's Leather Armor
+1255133@@@Totemic Leather Armor
+1255134@@@Defender's Leather Armor
+1255135@@@Trapper's Leather Armor
+1255136@@@Brawler's Leather Armor
+1255137@@@Wisdom's Leather Belt
+1255138@@@Stormrider's Leather Belt
+1255139@@@Totemic Leather Belt
+1255140@@@Defender's Leather Belt
+1255141@@@Trapper's Leather Belt
+1255142@@@Brawler's Leather Belt
+1255143@@@Moonglow Boots
+1255144@@@Murloc Scale Shoes
+1255145@@@Dark Leather Boots
+1255146@@@Black Whelp Slippers
+1255160@@@Awaken
+1255194@@@Furious Flame Shock
+1255210@@@TEST
+1255229@@@Recently Dropped Flag
+1255230@@@Mark of Honor
+1255231@@@Mark of Honor
+1255241@@@Cleansing Stew
+1255248@@@Camp Tent
+1255249@@@Faction Banner
+1255250@@@Camp Chair
+1255251@@@Incense Candle
+1255254@@@Fish Bowl
+1255255@@@ First Aid Kit
+1255256@@@Lodestone
+1255257@@@Sharpening Wheel
+1255259@@@Mana Well
+1255260@@@Enchanted Lute
+1255261@@@Reagent Bot
+1255415@@@Nutritious Food
+1255745@@@[DNT] Kill Credit
+1255746@@@[DNT] Kill Credit
+1255747@@@[DNT] Kill Credit
+1255770@@@[DNT] Vehicle Force Cast
+1255924@@@Ear Irritant
+1255935@@@Cool Heat
+1255936@@@Miniature Morphologic Mimic Encabulate
+1255937@@@Trigger
+1255938@@@Skunk Spray
+1255939@@@Trigger
+1255944@@@Spirit of Wind
+1255945@@@Wind Hollow
+1255946@@@Forest Gale
+1255949@@@Trigger Aura
+1255950@@@Sit A While..
+1255951@@@Sit A While..
+1256138@@@Allstrike
+1256139@@@Allstrike
+1256140@@@Allstrike
+1256141@@@Allstrike
+1256142@@@Allstrike
+1256143@@@Allstrike
+1256144@@@Allstrike
+1256145@@@Allstrike
+1256146@@@Allstrike
+1256147@@@Allstrike
+1256148@@@Allstrike
+1256151@@@Summon Wimdy
+1256158@@@Weightless
+1256161@@@Tow Beam
+1256168@@@Ride Caravan
+1256187@@@Priestess Levitation
+1256293@@@Quest Invisibility
+1256522@@@Pylon Protection Radius
+1256531@@@Mana Beam
+1256537@@@Wrangled
+1256690@@@Wrangled
+1256704@@@Wind Bridge
+1256717@@@Wind Bridge
+1256867@@@Stealth
+1256875@@@Sit A While..
+1256991@@@Sneak
+1257010@@@Smack Flutterfly
+1257013@@@Linen Reagent Bag
+1257014@@@Flutterfly Dust
+1257017@@@Woolen Reagent Bag
+1257019@@@Angry!
+1257049@@@Sword Specialization
+1257055@@@Fly Away!
+1257057@@@Despawn
+1257106@@@Chain Lightning
+1257129@@@Credit Granter
+1257130@@@Make Your Stand
+1257368@@@Novice Arcanist's Sash
+1257369@@@Novice Ardent's Sash
+1257370@@@Pristine Boots
+1257371@@@Silky Boots
+1257372@@@Flame Boots
+1257373@@@Shadow Boots
+1257374@@@Pearly Boots
+1257375@@@Shining Boots
+1257376@@@Filigreed Pristine Gown
+1257377@@@Filigreed Silky Gown
+1257378@@@Filigreed Flame Gown
+1257379@@@Filigreed Shadow Gown
+1257380@@@Filigreed Pearly Gown
+1257381@@@Filigreed Shining Gown
+1257382@@@Pristine Gloves
+1257383@@@Silky Gloves
+1257384@@@Flame Gloves
+1257385@@@Shadow Gloves
+1257386@@@Pearly Gloves
+1257387@@@Shining Gloves
+1257388@@@Pristine Sash
+1257389@@@Silky Sash
+1257390@@@Flame Sash
+1257391@@@Shadow Sash
+1257392@@@Pearly Sash
+1257393@@@Shining Sash
+1257394@@@Filigreed Pristine Leggings
+1257395@@@Filigreed Silky Leggings
+1257396@@@Filigreed Flame Leggings
+1257397@@@Filigreed Shadow Leggings
+1257398@@@Filigreed Pearly Leggings
+1257399@@@Filigreed Shining Leggings
+1257400@@@Pristine Circlet
+1257401@@@Silky Circlet
+1257402@@@Flame Circlet
+1257403@@@Shadow Circlet
+1257404@@@Pearly Circlet
+1257405@@@Shining Circlet
+1257406@@@Pristine Gown
+1257407@@@Silky Gown
+1257408@@@Flame Gown
+1257409@@@Shadow Gown
+1257410@@@Pearly Gown
+1257411@@@Shining Gown
+1257412@@@Silk Reagent Bag
+1257413@@@Filigreed Pristine Circlet
+1257414@@@Filigreed Silky Circlet
+1257415@@@Filigreed Flame Circlet
+1257416@@@Filigreed Shadow Circlet
+1257417@@@Filigreed Pearly Circlet
+1257418@@@Filigreed Shining Circlet
+1257419@@@Pristine Leggings
+1257420@@@Silky Leggings
+1257421@@@Flame Leggings
+1257422@@@Shadow Leggings
+1257423@@@Pearly Leggings
+1257424@@@Shining Leggings
+1257425@@@Earthen Leggings
+1257426@@@Gilded Slippers
+1257427@@@Frothing Slippers
+1257428@@@Fiery Slippers
+1257429@@@Black Slippers
+1257430@@@Golden Slippers
+1257431@@@Radiant Slippers
+1257432@@@Earthen Silk Slippers
+1257433@@@Earthen Silk Hood
+1257434@@@Earthen Silk Gloves
+1257435@@@Earthen Silk Cuffs
+1257436@@@Gilded Handwraps
+1257437@@@Frothing Handwraps
+1257438@@@Fiery Handwraps
+1257439@@@Black Handwraps
+1257440@@@Golden Handwraps
+1257441@@@Radiant Handwraps
+1257442@@@Earthen Silk Shoulders
+1257443@@@Mageweave Reagent Bag
+1257444@@@Gilded Cord
+1257445@@@Frothing Cord
+1257446@@@Fiery Cord
+1257447@@@Black Cord
+1257448@@@Golden Cord
+1257449@@@Radiant Cord
+1257450@@@Nethergeld Shoulders
+1257451@@@Netherfroth Shoulders
+1257452@@@Netherflame Shoulders
+1257453@@@Netherpearl Shoulders
+1257454@@@Nethershine Shoulders
+1257455@@@Netherlight Shoulders
+1257456@@@Nethergeld Cuffs
+1257457@@@Netherfroth Cuffs
+1257458@@@Netherflame Cuffs
+1257459@@@Netherpearl Cuffs
+1257460@@@Nethershine Cuffs
+1257461@@@Netherlight Cuffs
+1257462@@@Ghostweave Cord
+1257463@@@Earthenweave Gloves
+1257464@@@Earthenweave Cord
+1257465@@@Runecloth Reagent Bag
+1257466@@@Gilded Waistcord
+1257467@@@Frothing Waistcord
+1257468@@@Fiery Waistcord
+1257469@@@Black Waistcord
+1257470@@@Golden Waistcord
+1257471@@@Radiant Waistcord
+1257472@@@Earthenweave Boots
+1257473@@@Gilded Gloves
+1257474@@@Frothing Gloves
+1257475@@@Fiery Gloves
+1257476@@@Black Gloves
+1257477@@@Golden Gloves
+1257478@@@Radiant Gloves
+1257479@@@Gilded Sandals
+1257480@@@Frothing Sandals
+1257481@@@Fiery Sandals
+1257482@@@Black Sandals
+1257483@@@Golden Sandals
+1257484@@@Radiant Sandals
+1257485@@@Earthenweave Mantle
+1257486@@@Earthenweave Vest
+1257487@@@Runecloth Cuffs
+1257488@@@Earthenweave Leggings
+1257489@@@Ghostweave Mantle
+1257490@@@Ghostweave Boots
+1257491@@@Earthenweave Cuffs
+1257492@@@Mooncloth Reagent Bag
+1257493@@@Ghostweave Hood
+1257494@@@Earthenweave Crown
+1257495@@@Bottomless Reagent Bag
+1257860@@@Arcane-Infused Net
+1258367@@@Throw Bone
+1258381@@@(DNT) Mushrooms Visual Aura
+1258428@@@Saving Fillion Flamebreeze
+1258429@@@Saving Fillion Flamebreeze
+1258446@@@Saving Fillion Flamebreeze
+1258447@@@Standing Stone Study
+1258478@@@Data Gathered
+1258483@@@Summon Index Esoteria
+1258494@@@Increase Healing 22/ Dam 8
+1258496@@@Increased Spirit 10
+1258510@@@Blessing of Zephras
+1258518@@@Flee to Safety
+1258519@@@Taken Down
+1258520@@@Pounce
+1258764@@@Create Water Sample
+1258773@@@Take Water Sample
+1258777@@@Create Water Sample
+1258784@@@Create Staff
+1258812@@@Necromancy
+1258819@@@Skeleton Spawn Visual
+1258822@@@Place Explosives
+1258824@@@Kill Credit (DNT)
+1258832@@@Faladiel's Note
+1258969@@@Bone Burrow
+1259002@@@Rescue Gelkis Captive
+1259093@@@Raise Dead
+1259104@@@Raise Dead
+1259125@@@Stray Mana
+1259231@@@Infusion of Wind
+1259243@@@Mana Eruption
+1259246@@@Mana Coalescence
+1259284@@@Shen'dralas Ghost
+1259326@@@Potent Anti-Venom
+1259327@@@[DNT] Complete Quest
+1259330@@@Simple Poultice
+1259332@@@Clever Poultice
+1259333@@@Superior Poultice
+1259334@@@Powerful Poultice
+1259335@@@Woolen Tourniquet
+1259336@@@Leather Tourniquet
+1259337@@@Surgical Tourniquet
+1259338@@@Entangle
+1259341@@@Potent Anti-Venom
+1259342@@@Simple Poultice
+1259343@@@Clever Poultice
+1259344@@@Superior Poultice
+1259345@@@Powerful Poultice
+1259347@@@Woolen Tourniquet
+1259348@@@Leather Tourniquet
+1259349@@@Surgical Tourniquet
+1259410@@@Portal to Rohaashi Spires
+1259412@@@Open Portal
+1259416@@@Walk on Air
+1259417@@@Walking on Air
+1259487@@@(DNT) Cosmetic Kneel
+1259489@@@(DNT) Cosmetic Cry
+1259496@@@Kill Credit (DNT)
+1259630@@@Newborn Shriekling
+1259652@@@Shock
+1259686@@@Skysight
+1259688@@@Elemental Blessing
+1259691@@@Energized
+1259705@@@Read Ley Line
+1259707@@@Elemental Insight
+1259710@@@Wind Blessed
+1259718@@@Will to Survive
+1259719@@@Mace Specialization
+1259721@@@Big Game Hunter
+1259799@@@Elune's Light
+1259802@@@Expansive Mind
+1259803@@@Expansive Mind
+1259812@@@Eureka!
+1259813@@@Eureka!
+1259817@@@Eureka!
+1259821@@@Eureka!
+1259823@@@Eureka!
+1259892@@@Kill Credit (DNT)
+1259904@@@Create Draenethyst Staff
+1259907@@@Drums of War
+1259918@@@Plainsrunning
+1260001@@@Debilitated
+1260031@@@Dispel Curse
+1260041@@@Aggro Area
+1260167@@@RP Summon
+1260168@@@Gelkis Banner
+1260189@@@Touch of the Grave
+1260198@@@Touch of the Grave
+1260201@@@Touch of the Grave
+1260248@@@Mod Pet Spell Power Test
+1260270@@@Rapid Regeneration
+1260282@@@Stick Brain [DNT]
+1260283@@@Throw Stick
+1260287@@@Catch Stick
+1260424@@@Fireball
+1260464@@@Burn Stick
+1260566@@@Ritual
+1260576@@@Windblast
+1260586@@@Kill Credit (DNT)
+1260588@@@Kill Credit (DNT)
+1260590@@@Kill Credit (DNT)
+1260618@@@Burning Things
+1260624@@@Burning Tent
+1260626@@@Carry Stag
+1260639@@@Carry Stag
+1260645@@@Burn Tent
+1260650@@@Bash
+1260685@@@Bloody Explosion
+1260686@@@Carry Stag
+1260743@@@[DNT] Pet Run Away Test
+1260789@@@Tracked
+1261177@@@Eavesdrop
+1261190@@@(DNT) Jason's Melancholy
+1261191@@@(DNT) Jason's Melancholy
+1261221@@@Launch Glaive
+1261222@@@Launch Glaive
+1261251@@@DNT
+1261320@@@Fireball
+1261368@@@Dedicated Study
+1261373@@@Dedicated Study
+1261374@@@Dedicated Study
+1261375@@@Dedicated Study
+1261376@@@Dedicated Study
+1261377@@@Dedicated Study
+1261378@@@Dedicated Study
+1261379@@@Dedicated Study
+1261381@@@Dedicated Study
+1261382@@@Dedicated Study
+1261384@@@Dedicated Study
+1261385@@@Dedicated Study
+1261425@@@Repairing
+1261483@@@Thrill of Adventure
+1261692@@@Raise Khan
+1261698@@@Play Dead
+1261707@@@Play Dead
+1261770@@@Ley Line KC
+1261773@@@Character Title Unlock
+1261774@@@Character Title Unlock
+1261854@@@Personal Banking
+1261939@@@Tangled
+1261985@@@(DNT) Kathris Vehicle
+1262002@@@(DNT) Kathris Seat Spell
+1262023@@@Raise Dead
+1262044@@@Second Home
+1262050@@@Second Home
+1262139@@@Parcel of Mail
+1262149@@@Small Target
+1262207@@@Knockback
+1262229@@@The Quick and the Dead
+1262230@@@Bloodfeast
+1262239@@@Bloodfeast
+1262243@@@The Quick and the Dead
+1262307@@@The Quick and the Dead
+1262309@@@The Quick and the Dead
+1262310@@@The Quick and the Dead
+1262312@@@The Quick and the Dead
+1262315@@@The Quick and the Dead
+1262316@@@The Quick and the Dead
+1262317@@@The Quick and the Dead
+1262321@@@Pearl of Elune
+1262528@@@Rathiril's Water Waltz
+1262542@@@Scale Design Considerations
+1262574@@@Untrackable
+1262636@@@Reagent Economy
+1262638@@@Reagent Economy
+1262643@@@Reagent Economy
+1262647@@@Reagent Economy
+1262650@@@Reagent Economy
+1262654@@@Reagent Economy
+1262662@@@Reagent Economy
+1262670@@@Knockback
+1262775@@@Fast Recovery
+1262777@@@Second Chance
+1262779@@@Injured
+1262884@@@Ablaze
+1262920@@@Stompable
+1262926@@@Trample
+1262943@@@Fearful
+1262962@@@Vengeful
+1262975@@@Rock Garden
+1262978@@@Cookie's Feast
+1262980@@@Greenhouse
+1262982@@@Trapper's Workbench
+1262985@@@Field Guide
+1262990@@@Fishing Rack
+1262996@@@Toxin Study
+1262998@@@Fishing Hut
+1263001@@@Plague Doctor's Laboratory
+1263005@@@Fermenter
+1263031@@@Tanning Rack
+1263032@@@Spinning Wheel
+1263034@@@Repair Bot
+1263041@@@Anvil
+1263056@@@Arcane Salvager
+1263067@@@Iron Oven
+1263070@@@Seed Hybridizer
+1263071@@@Molten Foundry
+1263073@@@Master Forge
+1263078@@@Alchemy Laboratory
+1263079@@@Sewing Machine
+1263080@@@Loom
+1263082@@@Arcane Forge
+1263083@@@Anarchist's Workbench
+1263086@@@Abyssal Scream
+1263095@@@T1 Set Piece Test
+1263099@@@Faster Attack I
+1263100@@@Faster Attack II
+1263102@@@Faster Attack III
+1263104@@@Faster Attack IV
+1263107@@@Faster Attack V
+1263109@@@Faster Attack VI
+1263110@@@Faster Attack VII
+1263111@@@Slower Attack I
+1263113@@@Slower Attack II
+1263114@@@Slower Attack III
+1263129@@@Vicious Bite
+1263244@@@Rotting Spit
+1263260@@@Thornwhip
+1263261@@@Embedded Thorns
+1263284@@@Siphoned Mana
+1263296@@@Portal to the Violet Chamber
+1263333@@@Mana Burst
+1263335@@@T2 Set Piece Test
+1263337@@@Siphoned Mana
+1263343@@@Attempt to Summon Undead Ravager
+1263349@@@T3 Set Piece Test
+1263350@@@Shadow Mend
+1263352@@@T4 Set Piece Test
+1263356@@@Ball and Chain
+1263364@@@Break Chain
+1263372@@@Flag Tracking Quest
+1263377@@@Trigger Aura
+1263380@@@(DNT) Water Dunk Cosmetics
+1263388@@@Theater Lightning
+1263389@@@Theater Lightning
+1263390@@@Theater Lightning
+1263407@@@Theater Lightning
+1263425@@@Faction Banner
+1263443@@@Summon Snortsnout
+1263473@@@Fireball
+1263629@@@Battle Snort
+1263640@@@Entangling Roots
+1263704@@@Create Object
+1263726@@@Rotting Spit
+1263733@@@Rotting Spit
+1263738@@@Rotting Spit
+1263770@@@Dispel Failed Ritual
+1263806@@@Quest Invisibility
+1263807@@@Marked
+1263808@@@Detection
+1263809@@@Alliance
+1263886@@@Equip Transmog Outfit
+1263979@@@Wind Cleave
+1263980@@@Flag Tracking Quest
+1263985@@@Fel Timbers
+1263986@@@Portal Effect: Dalaran
+1263987@@@DNT High Order
+1263988@@@DNT Windshapers
+1263989@@@Poison Dart
+1263998@@@Burden of War
+1263999@@@Burden of War
+1264000@@@(DNT) Water Dunk Aura
+1264001@@@Quadcopter
+1264003@@@Summon
+1264118@@@Speak With Animals
+1264340@@@Forgotten Memories
+1264366@@@Creeping Darkness
+1264377@@@Blue Eyes
+1264400@@@Green Eyes
+1264401@@@Red Eyes
+1264413@@@Statue Shake
+1264419@@@Eyes Test [DNT]
+1264437@@@Extremely Loud Bark
+1264455@@@Thunderstomp
+1264456@@@Thunderstomp
+1264478@@@Sonic Blast
+1264479@@@Sonic Blast
+1264480@@@Sonic Blast
+1264481@@@Sonic Blast
+1264482@@@Sonic Blast
+1264483@@@Sonic Blast
+1264484@@@Sonic Blast
+1264486@@@Sonic Blast
+1264487@@@Sonic Blast
+1264488@@@Sonic Blast
+1264489@@@Prowl
+1264494@@@Swipe
+1264497@@@Swipe
+1264498@@@Swipe
+1264501@@@Swipe
+1264502@@@Swipe
+1264530@@@Apparition
+1264548@@@Pounce
+1264600@@@Soulburst
+1264628@@@Mod Scale 90-110%
+1264639@@@Mining
+1264694@@@Wake Splash
+1264727@@@Swipe
+1264729@@@Swipe
+1264730@@@Swipe
+1264731@@@Swipe
+1264732@@@Swipe
+1264735@@@Pinch
+1264736@@@Pinch
+1264739@@@Pinch
+1264741@@@Pinch
+1264742@@@Pinch
+1264745@@@Pinch
+1264747@@@Serpent Sting
+1264749@@@Pinch
+1264750@@@Pinch
+1264751@@@Pinch
+1264752@@@Pinch
+1264758@@@Dismember
+1264887@@@Dispel Barrier
+1264927@@@Dismember
+1264929@@@Dismember
+1264930@@@Dismember
+1264933@@@Dismember
+1264937@@@Dismember
+1264939@@@Dismember
+1264970@@@Dismember
+1264971@@@Dismember
+1264972@@@Dismember
+1265038@@@Tendon Rip
+1265039@@@Tendon Rip
+1265040@@@Tendon Rip
+1265041@@@Tendon Rip
+1265042@@@Tendon Rip
+1265043@@@Tendon Rip
+1265045@@@Tendon Rip
+1265046@@@Tendon Rip
+1265047@@@Tendon Rip
+1265048@@@Tendon Rip
+1265054@@@Mine!
+1265055@@@Mine!
+1265056@@@Mine!
+1265057@@@Mine!
+1265058@@@Mine!
+1265059@@@Mine!
+1265060@@@Mine!
+1265061@@@Mine!
+1265062@@@Mine!
+1265064@@@Mine!
+1265065@@@Savage Rend
+1265066@@@Savage Rend
+1265067@@@Savage Rend
+1265068@@@Savage Rend
+1265069@@@Savage Rend
+1265220@@@Fishing Hat Lure
+1265304@@@Deep-Sea Waders
+1265376@@@MRN Test Spell
+1265416@@@Badwind Slam
+1265472@@@Wake Splash
+1265484@@@Wake Splash
+1265497@@@Watchful Eye
+1265500@@@Watchful Eye
+1265557@@@Conqueror of Corpsefeeder
+1265634@@@Ancient Power
+1265771@@@Full Heal
+1265776@@@Extinguish Woodwyrd
+1265831@@@Savage Rend
+1265833@@@Savage Rend
+1265834@@@Savage Rend
+1265835@@@Savage Rend
+1265836@@@Savage Rend
+1265843@@@Web
+1265854@@@Summon Virulent Blood of Agamaggan
+1265878@@@Web
+1265880@@@Web
+1265881@@@Web
+1265883@@@Web
+1265886@@@Create Bouquet
+1265887@@@Web
+1265888@@@Web
+1265889@@@Wind Channeling
+1265890@@@Web
+1265891@@@Web
+1265892@@@Web
+1265896@@@Channel Winds
+1265899@@@Dust Cloud
+1265901@@@Dust Cloud
+1265902@@@Dust Cloud
+1265903@@@Dust Cloud
+1265904@@@Dust Cloud
+1265907@@@Dust Cloud
+1265908@@@Dust Cloud
+1265909@@@Dust Cloud
+1265911@@@Dust Cloud
+1265913@@@Dust Cloud
+1265945@@@Mining Skill
+1265947@@@Mining Skill
+1265953@@@Herbalism Skill
+1265955@@@Skinning Skill
+1265956@@@Herbalism Skill
+1265957@@@Skinning Skill
+1265981@@@Birth
+1265983@@@Ghost Light
+1266011@@@Life Drain
+1266050@@@Apparition
+1266084@@@Rohashi Spires
+1266240@@@Corroding Spit
+1266271@@@Bone Volley
+1266339@@@Restore Journal Page
+1266349@@@Zephras Finale Convo Trigger
+1266359@@@Collect Courier's Shipment
+1266369@@@Grow
+1266395@@@Zephras Finale Convo Trigger
+1266401@@@Elemental Smite
+1266453@@@Knockback
+1266456@@@Dummy Aura
+1266626@@@Suicide
+1266640@@@Injured
+1266641@@@Frost Breath
+1266642@@@Frostbolt Volley
+1266644@@@Zephras Alvarion Conversation
+1266680@@@Bone Armor
+1266681@@@Summon Skeletal Servant
+1266692@@@Safety Goggles
+1266742@@@(DNT) Pearl Death Dummy
+1266744@@@(DNT) Kill Pearls
+1266753@@@(DNT) Combat Pulse
+1266840@@@DNT Windshapers
+1266849@@@Contribute Reagent
+1266850@@@Contribute Reagent
+1266851@@@Contribute Reagent
+1266852@@@Contribute Reagent
+1266854@@@Contribute Reagent
+1266893@@@SAF-T Tabs
+1266905@@@SAF-T Dynamite
+1266906@@@SAF-T Copper Bomb
+1266907@@@EZ-Thro Wrap
+1266908@@@EZ-Thro Copper Bomb XL
+1266909@@@No Slip SAF-T Padding
+1266910@@@SAF-T Bronze Bomb
+1266911@@@SAF-T Jumbo Dynamite
+1266912@@@SAF-T Bell
+1266913@@@Shafety Sheep
+1266914@@@EZ-Thro Fireproof Fuse
+1266915@@@EZ-Thro Bronze Mortar
+1266916@@@EZ-Thro Grenade
+1266917@@@SAF-T Casing
+1266918@@@SAF-T Bomb
+1266919@@@Emergency Field Cloak
+1266920@@@Compact Critter Carrier
+1266921@@@EZ-Thro Tru-Trigger
+1266922@@@Tru-Trigger Frag Bomb
+1266923@@@SAF-T Disposable Parachute
+1266924@@@Gnomish Army Knife
+1266925@@@Loot-A-Rang
+1266926@@@SAF-T Tube
+1266927@@@SAF-T Clever Dynamite
+1266928@@@EZ-Thro Shell
+1266929@@@EZ-Thro Thorium Grenade
+1266930@@@EZ-Thro Dark Bomb
+1266931@@@EZ-Thro Mana Bomb
+1266932@@@EZ-Thro Field Transporter: Gadgetzan
+1266933@@@SAF-T Emergency Ripper: Everlook
+1266934@@@EZ and SAF Field Transporter: Mt. Hyjal
+1266935@@@Ultrasafe Rechargeable Battery
+1266936@@@Dimensional Transporter - Mt. Hyjal
+1266937@@@Gnomish Poultryizer
+1266938@@@Ultralight Goblin Glider
+1266939@@@Gnomish Weather Machine
+1266940@@@Stealthman 52
+1266941@@@SAF-T Nitro Boosts
+1266942@@@EZ-Thro Magnetic Displacer
+1266943@@@SAF-T Teleport
+1266970@@@(DNT) Summon Adds
+1267010@@@Ritual Complete
+1267046@@@DNT
+1267059@@@Instakill
+1267060@@@Scavenging
+1267113@@@Abyssal Shield
+1267143@@@Throw Rock
+1267193@@@Dismissal
+1267199@@@Arcane Transference
+1268650@@@Lightning Strike
+1268651@@@DNT
+1268652@@@DNT
+1268659@@@Skysight KC
+1268774@@@Dread Raven Form
+1268813@@@Arcane Animation
+1268815@@@Spider Form
+1268826@@@Thunder Lizard Form
+1268954@@@Zephras Shadowgale Forest
+1269045@@@Dreamfall
+1269047@@@Convoke the Spirits
+1269048@@@Assimilation
+1269135@@@Apparition
+1269140@@@Prototype Recalibrator
+1269150@@@Wild Form
+1269155@@@SAF-T Dynamite
+1269161@@@SAF-T Copper Bomb
+1269185@@@Dreamfall
+1269192@@@EZ-Thro Copper Bomb XL
+1269216@@@SAF-T Bronze Bomb
+1269264@@@SAF-T Jumbo Dynamite
+1269265@@@Shafety Sheep
+1269268@@@EZ-Thro Bronze Mortar
+1269270@@@EZ-Thro Grenade
+1269272@@@SAF-T Bomb
+1269278@@@Tru-Trigger Frag Bomb
+1269282@@@SAF-T Clever Dynamite
+1269323@@@Lightning Cloud
+1269330@@@EZ-Thro Thorium Grenade
+1269334@@@EZ-Thro Dark Bomb
+1269337@@@EZ-Thro Mana Bomb
+1269339@@@Mount Hyjal Transporter
+1269351@@@Mount Hyjal Transporter
+1269353@@@Mount Hyjal Transporter Failure
+1269354@@@Ketharas' Hyjal Stew
+1269404@@@Shrouding Bolt
+1269428@@@Swelled with Power
+1269433@@@Earthgrab
+1269434@@@Flame Crash
+1269436@@@Zephras Finale Convo Trigger
+1269456@@@Cyclone Teleport Spawn VFX
+1269457@@@Fireball Volley
+1269462@@@Zephras Finale Convo Trigger
+1269464@@@Portal to Valanaar
+1269465@@@Portal to Valanaar
+1269466@@@Portal: Valanaar
+1269471@@@DNT
+1269507@@@Detonate
+1269508@@@Detonate
+1269509@@@Convoke the Spirits
+1269510@@@Convoke the Spirits
+1269516@@@(DNT) Spawn Spell
+1269525@@@Assimilation
+1269526@@@Assimilation
+1269532@@@Assimilation
+1269546@@@Shriek
+1269554@@@Haunt
+1269555@@@Soul Rip
+1269557@@@Fractured Soul
+1269558@@@Assimilation
+1269572@@@[DNT] Tainted Vilethorn
+1269573@@@Assimilation
+1269574@@@[DNT] Kill Credit
+1269577@@@Store Quill
+1269580@@@Store Quill
+1269581@@@Store Quill
+1269582@@@Store Quill
+1269585@@@Dreadful Screech
+1269600@@@Forge Delivery Receipt
+1269603@@@Dire Laceration
+1269624@@@Malignancy
+1269632@@@Silken Tomb
+1269670@@@Open Letter
+1269671@@@Open Letter
+1269673@@@Open Letter
+1269675@@@Open Letter
+1269692@@@Water Sample
+1269707@@@Trigger Aura
+1269767@@@Silken Tomb
+1269770@@@Silken Tomb
+1269772@@@Silken Tomb
+1269864@@@Savage Charge
+1269865@@@Savage Charge
+1269868@@@Savage Slam
+1269872@@@Haunt
+1269874@@@Savage Charge
+1269877@@@Savage Slam
+1269904@@@Chain Lightning
+1269910@@@Convoke the Spirits
+1269929@@@Dust Storm
+1269930@@@Opening
+1269931@@@Dreamfall
+1269933@@@Assimilation
+1269934@@@Crown of the Heavens
+1269940@@@Soul Vigor
+1269945@@@Soul Vigor
+1269955@@@Fel Ash
+1269957@@@Sweltering Heat
+1269958@@@Torrential Rain
+1269960@@@Sleeting Snow
+1269962@@@Scorching Sun
+1269966@@@Galeforce Wind
+1270031@@@Flee
+1270035@@@Stealth
+1270060@@@Charged Stone
+1270099@@@Soul Sunder
+1270104@@@[DNT] Illusion
+1270105@@@[DNT] Illusion
+1270173@@@Alliance Standard
+1270178@@@Cosmic Wrath
+1270187@@@Soul Vigor
+1270195@@@Trigger
+1270197@@@Lightning Breath
+1270201@@@Chain Lightning
+1270257@@@Rootbound Agony
+1270260@@@Rootbound Agony
+1270262@@@Emerald Lightning
+1270400@@@Wind Strike
+1270422@@@Levitate
+1270427@@@Malady
+1270462@@@Lightning Shield
+1270470@@@Clever Shapeshifter
+1270478@@@Charged Lightning
+1270490@@@Thicker Hide
+1270492@@@Totem Affinity
+1270498@@@Soul Tether
+1270518@@@Read Note
+1270576@@@Soul Siphon
+1270585@@@Stun Self
+1270590@@@Pick Up Note
+1270593@@@Snare Limit
+1270602@@@Blue Beam
+1270623@@@(DNT) Mana Regen
+1270631@@@(DNT) Mana Regen
+1270632@@@Critter Cookie
+1270633@@@Skywall Souffle
+1270635@@@Pincer Bites
+1270643@@@Unstable Dream
+1270648@@@Dreamless Waking
+1270650@@@Lunar Fire
+1270651@@@Umbral Fire
+1270781@@@Enchanted
+1270782@@@Dispel Magic
+1270784@@@Dispel Magic
+1270802@@@Berserker Charge
+1270803@@@Lunar Decay
+1270810@@@Unstable Dream
+1270811@@@Intimidating Shout
+1270825@@@Furious Breach
+1270830@@@Lunar Expulsion
+1270842@@@Energized
+1270893@@@Elemental Blessing
+1270940@@@Ultrasafe Rechargeable Battery
+1270941@@@Poultryizer
+1270942@@@Poultryized!
+1270943@@@Poultryized!
+1270944@@@Poultryized!
+1270957@@@(DNT) Linken' Boots of Iron
+1270998@@@Crushing Brambles
+1271000@@@Crushing Brambles
+1271001@@@Crushing Brambles
+1271002@@@Crushing Brambles
+1271007@@@Umbral Decay
+1271008@@@Umbral Expulsion
+1271010@@@(DNT) Crushing Bramble Cosmetic Dummy
+1271019@@@Gliding on Air
+1271020@@@Gliding on Air
+1271044@@@Jammed Mechanism
+1271047@@@Umbral Venting
+1271049@@@Gliding on Air
+1271091@@@Anguished Outburst
+1271100@@@Lunar Venting
+1271102@@@Tame Vuldren
+1271103@@@Tame Vuldren
+1271266@@@Stealth Field
+1271280@@@Stealthman Tracker
+1271338@@@Ultrasafe Rechargeable Battery
+1271344@@@Ultrasafe Rechargeable Battery
+1271346@@@Ultrasafe Rechargeable Battery
+1271347@@@Ultrasafe Rechargeable Battery
+1271348@@@Ultrasafe Rechargeable Battery
+1271349@@@Ultrasafe Rechargeable Battery
+1271350@@@Ultrasafe Rechargeable Battery
+1271351@@@Lunar Mark
+1271352@@@Umbral Mark
+1271357@@@Collapsing Star
+1271393@@@Test Dissolve
+1271396@@@Portal to Rohaashi Spires
+1271412@@@Lunar Mark Protection
+1271414@@@Collapsing Star
+1271421@@@Forge Craftsman's Writ
+1271422@@@Forge Journeyman Writ
+1271423@@@Forge Expert Writ
+1271424@@@Forge Artisan Writ
+1271427@@@Lunar Mark Search Periodic
+1271430@@@(DNT) Ancient Wisp Test Spawn Visuals
+1271443@@@(DNT) Ancient Wisp Test Mount Vehicle
+1271485@@@Loot-A-Rang
+1271487@@@Loot-A-Rang
+1271513@@@Venom Spit
+1271514@@@Rupture
+1271520@@@Eviscerate
+1271521@@@Lightning Bolt
+1271522@@@Thundercrack
+1271565@@@Umbral Mark Protection
+1271567@@@Umbral Collapse
+1271573@@@Zephras Windshapers Conversation
+1271575@@@Zephras High Order Conversation
+1271593@@@Fear
+1271632@@@Astral Bulwark
+1271688@@@Copper Lode
+1271691@@@Mining Lode
+1271759@@@Starfall
+1271816@@@Unnerving Mist
+1271819@@@(DNT) Fog of War Visual
+1271844@@@Revolting Strike
+1271848@@@Gruesome Wail
+1271853@@@Beseech the Mists
+1271864@@@Renewing Fog
+1271865@@@Renewing Fog
+1271866@@@Writhing Agony
+1271867@@@Writhing Agony
+1271868@@@Writhing Agony
+1271898@@@Starfall
+1271952@@@Ley Line Convergence
+1271953@@@Elemental Convergence
+1272014@@@Halaan's Gift
+1272073@@@Mining
+1272112@@@Red Eyes
+1272212@@@Tin Lode
+1272213@@@Silver Lode
+1272214@@@Iron Lode
+1272215@@@Gold Lode
+1272216@@@Mithil Lode
+1272217@@@Truesilver Lode
+1272218@@@Dark Iron Lode
+1272219@@@Thorium Lode
+1272220@@@Rich Thorium Lode
+1272221@@@Heavy Thorium Lode
+1272222@@@Enormous Herb
+1272223@@@Collecting Herb
+1272224@@@Peacebloom
+1272274@@@Silverleaf
+1272275@@@Earthroot
+1272340@@@Mageroyal
+1272343@@@Briarthorn
+1272356@@@Stranglekelp
+1272366@@@Everlasting Bond
+1272367@@@Bruiseweed
+1272368@@@Wild Steelbloom
+1272369@@@Grave Moss
+1272370@@@Kingsblood
+1272371@@@Everlasting Bond
+1272417@@@Liferoot
+1272418@@@Fadeleaf
+1272419@@@Goldthorn
+1272420@@@Khadgar's Whisker
+1272436@@@Wintersbite
+1272441@@@Symbol of Life
+1272446@@@Everlasting Bond
+1272447@@@Everlasting Bond
+1272490@@@Firebloom
+1272492@@@Purple Lotus
+1272494@@@Sungrass
+1272495@@@Ghost Mushroom
+1272496@@@Golden Sansam
+1272529@@@Blindweed
+1272530@@@Dreamfoil
+1272531@@@Mountain Silversage
+1272532@@@Gromsblood
+1272591@@@Rain of Arrows
+1272594@@@Rain of Arrows
+1272606@@@Rain of Arrows
+1272615@@@Clear Transmog Outfit
+1272651@@@Black Lotus
+1272655@@@Plaguebloom
+1272660@@@Arthas' Tears
+1272665@@@Icecap
+1272737@@@Marefoil
+1272739@@@Demonsage
+1272758@@@Ricochet
+1272767@@@Ricochet
+1272771@@@Charged Shot
+1272794@@@Elune's Grace
+1272804@@@Elune's Grace
+1272829@@@Ride Hippogryph
+1272941@@@Shoot
+1272959@@@Storm Leap
+1272962@@@Storm Leap
+1272973@@@Ruination
+1272982@@@Rupture
+1273006@@@Portal to Valanaar
+1273007@@@Portal to Valanaar
+1273009@@@Portal to Valanaar
+1273010@@@Portal to Valanaar
+1273312@@@Hearty Stew
+1273316@@@Generic Ping
+1273320@@@Hearty Stew
+1273960@@@Gathering
+1275511@@@Wounded
+1275552@@@Growing Flames
+1275553@@@Growing Flames
+1275832@@@No Man's Land
+1275834@@@Teleport to Redridge
+1275865@@@No Man's Land
+1275867@@@Teleport to Darkwhisper Gorge
+1276042@@@Blood Puddle
+1276047@@@Apply Poultice
+1276061@@@Blood Puddle
+1276379@@@Deprave
+1276429@@@Spear Fish
+1276442@@@Resting
+1276443@@@Resting
+1276954@@@Water Sample
+1276963@@@(DNT) Burned Cosmetic
+1277018@@@Grow
+1277022@@@Growing Herb
+1277050@@@Water Sample
+1277093@@@Creature - No Health Regeneration
+1277095@@@Defeated
+1277112@@@Water Sample
+1277222@@@(DNT) Spawn Visuals
+1277246@@@Fishing Lure
+1277257@@@Wounded
+1277271@@@Unlocking
+1277324@@@Dark Sacrifice
+1277325@@@Dark Sacrifice
+1277326@@@Dark Sacrifice
+1277327@@@Dark Sacrifice
+1277328@@@Dark Sacrifice
+1277329@@@Green Skeletal Horse
+1277330@@@Dark Skeletal Horse
+1277331@@@Chastise
+1277332@@@Chastise
+1277333@@@Chastise
+1277334@@@Chastise
+1277335@@@Chastise
+1277336@@@Purple Skeletal Horse
+1277346@@@Call of Water
+1277347@@@Call of Water
+1277364@@@Desecration
+1277367@@@Desecration
+1277370@@@Divine Grace
+1277371@@@Divine Grace
+1277372@@@Divine Grace
+1277374@@@Divine Grace
+1277376@@@Divine Grace
+1277377@@@Divine Grace
+1277378@@@Divine Grace
+1277387@@@Divine Grace
+1277397@@@[DNT] Ping Scouts
+1277405@@@Profane Bulwark
+1277406@@@Profane Bulwark
+1277417@@@Desecration
+1277418@@@Desecration
+1277424@@@Shield Wall
+1277430@@@Desecration
+1277431@@@Desecration
+1277455@@@Confounding Flash
+1277456@@@Contingency Plan
+1277457@@@Contingency Plan
+1277458@@@Contingency Plan
+1277459@@@Contingency Plan
+1277460@@@Contingency Plan
+1277462@@@Contingency Plan
+1277463@@@Contingency Plan
+1277464@@@Contingency Plan
+1277465@@@Contingency Plan
+1277466@@@Contingency Plan
+1277467@@@Contingency Plan
+1277634@@@Contingency Plan
+1277636@@@Coral Visual Test
+1277638@@@Contingency Plan
+1277639@@@Contingency Plan
+1277640@@@Contingency Plan
+1277662@@@Confounding Flash
+1277663@@@Contingency Plan
+1277794@@@Tame Beast
+1277808@@@Plant Seed
+1277851@@@Tame Boar
+1277874@@@Burying
+1278028@@@Tame Beast
+1278029@@@Tame Beast
+1278060@@@Tame Wolf
+1278061@@@Tame Bear
+1278062@@@Gardening
+1278067@@@Bait and Tackle
+1278068@@@Tanning
+1278115@@@Mining Lode
+1278162@@@Ghost
+1278201@@@Sing
+1278759@@@Hurricane
+1278902@@@Skyborne Portal to Dalaran
+1278903@@@Skyborne Portal to Dalaran
+1278910@@@Always Injured
+1278934@@@Summoning
+1278940@@@Summoning
+1278951@@@Flight Path
+1278965@@@Hurricane
+1278968@@@Hurricane
+1278974@@@Filling
+1278991@@@1.60.0 ALPHA RIDING TEMP (DO NOT TRANSLATE)
+1279399@@@Summon Warhorse
+1279400@@@Summon Warhorse
+1279441@@@Growing Herb
+1279448@@@Growing Herb
+1279449@@@Growing Herb
+1279450@@@Growing Herb
+1279451@@@Growing Herb
+1279452@@@Growing Herb
+1279453@@@Growing Herb
+1279454@@@Growing Herb
+1279455@@@Rock Garden
+1279456@@@Rock Garden
+1279459@@@Rock Garden
+1279461@@@Growing Herb
+1279462@@@Growing Herb
+1279522@@@Color Test
+1279523@@@Sprinkle Concoction
+1279529@@@Growing Herb
+1279530@@@Growing Herb
+1279532@@@Growing Herb
+1279533@@@Growing Herb
+1279534@@@Growing Herb
+1279535@@@Growing Herb
+1279536@@@Growing Herb
+1279537@@@Rock Garden
+1279538@@@Rock Garden
+1279539@@@Rock Garden
+1279600@@@Concoction Cleanse
+1279601@@@[DNT] Concoction Enrage
+1279692@@@Flare
+1279715@@@Volley
+1279719@@@Volley
+1279721@@@Volley
+1279949@@@Blizzard
+1279970@@@Critically Injured
+1279976@@@Blizzard
+1279977@@@Blizzard
+1279978@@@Blizzard
+1279979@@@Blizzard
+1279980@@@Blizzard
+1279983@@@Flamestrike
+1279985@@@Flamestrike
+1279987@@@Flamestrike
+1279988@@@Flamestrike
+1279989@@@Flamestrike
+1279990@@@Flamestrike
+1280003@@@Tame Crawler
+1280004@@@Tame Crawler
+1280044@@@Tame Galestrider
+1280046@@@Tame Galestrider
+1280322@@@Carry Tool
+1280341@@@Uncommon Fishing
+1280342@@@Rare Fishing
+1280345@@@Consecration
+1280346@@@Consecration
+1280347@@@Consecration
+1280348@@@Consecration
+1280349@@@Consecration
+1280353@@@Consecration
+1280354@@@Holy Strike
+1280356@@@Shadow Bolt Volley
+1280445@@@DNT
+1280455@@@DNT
+1280468@@@Moonfire
+1280471@@@Arcane Wrath
+1280472@@@Starsurge
+1280481@@@Fox-Catching Net
+1280530@@@Lunar Call
+1280532@@@Ping Crowd
+1280533@@@Lunar Trace
+1280540@@@Lunar Strike
+1280553@@@Trevan's Weapon Notes
+1280564@@@Rejuvenation
+1280586@@@Take Tool from Fox
+1280634@@@Tranquility
+1280662@@@Boar's Delight
+1280669@@@Sunfire
+1280856@@@For Bolder'ok!
+1280857@@@Champion of the Bloodmaster's Ring
+1281378@@@Dispel Shadow
+1281431@@@Dream Visual (DNT)
+1281434@@@Nightmare Visual (DNT)
+1281437@@@Nightmare Visual (DNT)
+1281438@@@Nightmare Visual (DNT)
+1281439@@@Nightmare Visual (DNT)
+1281440@@@Nightmare Visual (DNT)
+1281530@@@[TEST] Mount Rental - Alliance
+1281639@@@Sing
+1281640@@@Sing
+1281641@@@Summon Musical Gustjumper
+1281645@@@Give loot
+1281744@@@Natural Guidance
+1281765@@@Force of Nature
+1281778@@@Force of Nature
+1281781@@@Entangling Roots
+1281782@@@Force of Nature
+1281887@@@Recently Entangled
+1281959@@@Teleport
+1281960@@@Teleport
+1281961@@@Teleport
+1282185@@@DNT Kill Credit
+1282189@@@Renalard's Tuft
+1282264@@@DNT
+1282380@@@Rain of Fire
+1282381@@@Rain of Fire
+1282383@@@Rain of Fire
+1282384@@@Rain of Fire
+1282385@@@Rain of Fire
+1282389@@@Plant Seeds
+1282398@@@Plant Seeds
+1282422@@@Set Health to 50%
+1282429@@@Kala'th's Velvet
+1282430@@@Shalla'kal's Whisker
+1282448@@@Sky
+1282482@@@Searing Wound
+1282495@@@Unnatural Resilience
+1282503@@@Blazewind Blast
+1282510@@@Ping Farholde Trainee
+1282571@@@Swim
+1282576@@@Plant Charge
+1282590@@@Immolate
+1282612@@@Legacy System - Create Trait Config
+1282617@@@Hybridize Seeds
+1282618@@@Hybridize Seeds
+1282619@@@Hybridize Seeds
+1282620@@@Hybridize Seeds
+1282621@@@Hybridize Seeds
+1282628@@@Hybridize Seeds
+1282634@@@Hybridize Seeds
+1282635@@@Hybridize Seeds
+1282636@@@Hybridize Seeds
+1282638@@@Hybridize Seeds
+1282662@@@Unlock Chest
+1282666@@@[DNT] Recruit Ogre Miner
+1282668@@@Growing Herb
+1282670@@@Growing Herb
+1282672@@@Growing Herb
+1282674@@@Growing Herb
+1282675@@@Growing Herb
+1282680@@@Growing Herb
+1282681@@@Growing Herb
+1282682@@@Growing Herb
+1282683@@@Growing Herb
+1282684@@@Growing Herb
+1282685@@@Growing Herb
+1282686@@@Growing Herb
+1282687@@@Growing Herb
+1282688@@@Growing Herb
+1282689@@@Growing Herb
+1282690@@@Growing Herb
+1282691@@@Growing Herb
+1282692@@@Growing Herb
+1282693@@@Flee
+1282694@@@MRN Test Spell 01
+1282695@@@Growing Herb
+1282697@@@Growing Herb
+1282698@@@Growing Herb
+1282699@@@Growing Herb
+1282700@@@Growing Herb
+1282701@@@Growing Herb
+1282702@@@Growing Herb
+1282703@@@Growing Herb
+1282704@@@Growing Herb
+1282706@@@Growing Herb
+1282707@@@Growing Herb
+1282708@@@Growing Herb
+1282709@@@Growing Herb
+1282711@@@Growing Herb
+1282713@@@Growing Herb
+1282715@@@Growing Herb
+1282717@@@Growing Herb
+1282718@@@Growing Herb
+1282731@@@Plant Seeds
+1282732@@@Plant Seeds
+1282733@@@Overpower
+1282734@@@Plant Seeds
+1282735@@@Offensive State (DND)
+1282736@@@Plant Seeds
+1282737@@@Plant Seeds
+1282738@@@Plant Seeds
+1282775@@@Serving Meat
+1282793@@@Retrieve Heirloom
+1282951@@@Placing
+1282953@@@Cleansing Ritual
+1283082@@@Well Fed
+1283098@@@Meat Tracking
+1283101@@@Scolded
+1283133@@@Capture Twilight Thrall
+1283137@@@Set Bait
+1283375@@@Clear Transmog Outfit
+1283376@@@Equip Transmog Outfit
+1283391@@@Campfire Nearby
+1283400@@@Journeyman Campfire
+1283523@@@Destroy
+1283583@@@Destroy
+1283593@@@Destroy
+1283601@@@Destroy
+1283620@@@DEBUG - Projected Texture
+1283701@@@Boosted Disenchanting
+1283792@@@Dark Binding
+1283793@@@Fel Smoke
+1283822@@@Chef's Hat
+1283825@@@Chef's Hat
+1283884@@@[DNT] Cooldown Always Secret Test Spell
+1283885@@@[DNT] Cooldown Never Secret Test Spell
+1283888@@@[DNT] Aura Never Secret Test Spell
+1283894@@@[DNT] Aura Always Secret Test Spell
+1283895@@@[DNT] Spell Cast Always Secret Test Spell
+1283896@@@[DNT] Spell Cast Never Secret Test Spell
+1283919@@@Totally A Warlock
+1283932@@@Summon Uber Diablo
+1284017@@@Track Beasts
+1284035@@@Sprinkle Concoction
+1284040@@@Portal to Stormwind
+1284041@@@Portal to Stormwind
+1284169@@@Summon Hippogryph
+1284191@@@Ride Hippogryph
+1284192@@@Force Summoner to Ride Vehicle
+1284193@@@Eject All Passengers
+1284194@@@Summon Hippogryph
+1284195@@@Summon Hippogryph
+1284376@@@Frost Aura
+1284377@@@Frost Aura
+1284381@@@Heavy Stomp
+1284382@@@Drain Soul
+1284384@@@Self Stun
+1284385@@@[DNT] Death of Jereman
+1284435@@@Enrage
+1284450@@@Stasis
+1284536@@@Holy Purpose
+1284560@@@Darkspear Islands Flag
+1284659@@@Collect Grovewalker Sap
+1284701@@@Sprinkle Concoction
+1284734@@@Mod Speed 05
+1284783@@@Increase Reputation
+1285372@@@Vanish
+1285699@@@Activate
+1285700@@@Activate
+1285701@@@Activate
+1285702@@@Activate
+1285704@@@Elbow Grease Applied
+1285824@@@Pushing the Button
+1285835@@@Channeling Crystal
+1285849@@@Galestrider Riding
+1285853@@@Galestrider Riding
+1285903@@@Being Hunted...
+1285919@@@Load Glaive
+1285922@@@Load Glaive
+1285982@@@Channeling Crystal
+1285983@@@Channeling Crystal
+1285990@@@Howling Wind
+1285992@@@Incendiary Shot
+1285994@@@Freezing Trap
+1285995@@@Attuned
+1285996@@@Attuned
+1285997@@@Attuned
+1286011@@@Swift Empyrean Galestrider
+1286021@@@Swift Regal Galestrider
+1286022@@@Swift Stormy Galestrider
+1286024@@@Empyrean Galestrider
+1286025@@@Regal Galestrider
+1286026@@@Stormy Galestrider
+1286040@@@Debilitate
+1286041@@@Faerie Fire
+1286042@@@Cyclone
+1286043@@@Prismatic Affliction
+1286044@@@Revitalization
+1286050@@@Crystallize
+1286052@@@Empowered Roar
+1286090@@@Resting
+1286114@@@Starfall
+1286115@@@Eclipse
+1286118@@@Ghost Visual
+1286121@@@Blue Light
+1286177@@@DNT
+1286183@@@Multi-Shot
+1286238@@@Improved Skinning
+1286240@@@Trigger Aura
+1286242@@@Portal Effect: Emerald Dream
+1286251@@@(DNT) Blessing of Salvation - TEST RAID SPELL
+1286252@@@(DNT) Blessing of Wisdom - TEST RAID SPELL
+1286253@@@(DNT) Blessing of Might - TEST RAID SPELL
+1286254@@@(DNT) Blessing of Kings - TEST RAID SPELL
+1286257@@@(DNT) Prayer of Spirit - TEST RAID SPELL
+1286298@@@Soul Rip
+1286299@@@Soul Rip
+1286301@@@Soul Siphon
+1286303@@@PvP Rune Berserking Visual
+1286304@@@Berserking
+1286338@@@Howling Wind
+1286342@@@PvP Rune Speed Visual
+1286343@@@PvP Rune Restoration Visual
+1286344@@@Restoration
+1286345@@@Speed
+1286358@@@Howling Wind
+1286462@@@Stealth
+1286504@@@[DNT] Dummy Gossip Spell
+1286513@@@Teleport
+1286514@@@Teleport
+1286580@@@Lots of Love
+1286582@@@Emote State - Dance
+1286599@@@Greeting Bark
+1286629@@@Summon Snowy Wolf Pup
+1286699@@@Twilight Ritual
+1286792@@@Centaur Banner Deployment Device
+1286796@@@Hoof-Shaped Foot Pedal
+1286800@@@Deploy Centaur Banner
+1286814@@@Hoof-Shaped Foot Pedal
+1286850@@@Shark Attack
+1286951@@@Weak Healing Touch
+1286953@@@Collect Hot Springs Water
+1287051@@@[DNT] Enraged Hyjal Owl
+1287080@@@Webbed!
+1287099@@@Toss Enchanted Seeds
+1287162@@@Stealth
+1287171@@@Reset Talents
+1287234@@@Stomping
+1287321@@@Placing Candle
+1287327@@@Place Sacred Stag Bundle
+1287329@@@[DNT] Spirit of the Stag
+1287455@@@Brimstone Flare
+1287496@@@Summon Poison Cloud
+1287541@@@[DNT] Give loot
+1287557@@@Channeling
+1287561@@@Stolen Power
+1287571@@@Monkey Business
+1287573@@@Tapped
+1287664@@@Unstable Possession
+1287669@@@Safe Fall
+1287672@@@On Break
+1287704@@@Authority
+1287735@@@Piercing Wail
+1287760@@@(DNT) Moonbeam Cosmetic
+1287768@@@Unholy Might
+1287773@@@Blessed Water
+1287801@@@Preternatural Evasion
+1287808@@@Blood of the Broodmother
+1287813@@@Burying
+1287839@@@Fury of Blackhand
+1287840@@@Eye of the Beast
+1287842@@@Bastion of Tyranny
+1287900@@@Create Sapta
+1287963@@@Beacon of Moonlight
+1287973@@@[DNT] Summon Forlorn Ghost
+1287976@@@Serpent Sting
+1288007@@@Phase Transition Primer
+1288008@@@Phase Transition Primer
+1288015@@@Royal Mandate
+1288016@@@Royal Mandate
+1288020@@@Royal Mandate
+1288021@@@Royal Mandate
+1288024@@@Royal Mandate
+1288047@@@[DNT] Summon Enraged Ghost
+1288099@@@Dreambound
+1288105@@@Test Sign
+1288136@@@[DNT] Quercus Nearby Aura
+1288142@@@[DNT] Quercus Nearby Focus
+1288184@@@DNT Kill Credit
+1288237@@@Orcish Tradeskill Signpost
+1288242@@@Orcish Tradeskill Signpost
+1288243@@@Orcish Tradeskill Signpost
+1288244@@@Orcish Tradeskill Signpost
+1288245@@@Orcish Tradeskill Signpost
+1288246@@@Orcish Tradeskill Signpost
+1288247@@@Orcish Tradeskill Signpost
+1288248@@@Orcish Tradeskill Signpost
+1288249@@@Dwarven Tradeskill Signpost
+1288250@@@Dwarven Tradeskill Signpost
+1288251@@@Dwarven Tradeskill Signpost
+1288252@@@Dwarven Tradeskill Signpost
+1288253@@@Dwarven Tradeskill Signpost
+1288254@@@Dwarven Tradeskill Signpost
+1288255@@@Dwarven Tradeskill Signpost
+1288261@@@Dwarven Tradeskill Signpost
+1288298@@@Add Sign
+1288322@@@Sign Form
+1288387@@@Umbral Bulwark
+1288388@@@Lunar Cascade
+1288389@@@Lunar Bombardment
+1288390@@@Starfall
+1288391@@@Lunar Bombardment
+1288392@@@Lunar Bombardment
+1288447@@@Debilitate
+1288462@@@Spectral Rend
+1288471@@@Glaive
+1288479@@@Strength of the Moon
+1288490@@@Lucent Beam
+1288524@@@Spinning Glaive
+1288525@@@Chakram
+1288536@@@Orbiting Chakram
+1288537@@@Chakram
+1288546@@@Permanent Feign Death
+1288548@@@Thorns Aura
+1288558@@@Enfeeble
+1288559@@@Bloom
+1288560@@@Wither
+1288561@@@Faerie Fire
+1288607@@@Prismatic Affliction
+1288700@@@[DNT] Anim Replacement Template
+1288702@@@[DNT] Anim Replacement Despawn -> Stand
+1288793@@@[DNT] Shadow Bolt Visual
+1288845@@@Freezing Arrow
+1288847@@@Freezing Arrow
+1288849@@@Freezing Trap
+1288850@@@Freezing Arrow
+1288851@@@Freezing Trap
+1288852@@@Freezing Trap
+1288899@@@RAF No AI Re-evaluate
+1288908@@@Pierce Armor
+1288961@@@Multi-Shot
+1288972@@@Enrage
+1289053@@@Multi-Shot
+1289055@@@Multi-Shot
+1289121@@@Emerald Communion
+1289122@@@Emerald Communion
+1289123@@@Emerald Communion
+1289124@@@Emerald Communion
+1289125@@@Berserk
+1289126@@@Emerald Weakness
+1289127@@@Emerald Influence
+1289128@@@Barkskin
+1289129@@@Hurricane
+1289130@@@Hurricane
+1289131@@@Astral Weakness
+1289132@@@Astral Influence
+1289133@@@Mass Insect Swarm
+1289134@@@Lunar Guidance
+1289135@@@Lunar Guidance
+1289136@@@Dire Cat Form
+1289137@@@Dire Bear Form
+1289138@@@Savage Guidance
+1289139@@@Savage Guidance
+1289140@@@Rake
+1289141@@@Rip
+1289142@@@Ferocious Bite
+1289143@@@Stun
+1289144@@@Maul
+1289145@@@Empowering Roar
+1289195@@@Redeem Certification
+1289196@@@Redeem Certification
+1289197@@@Redeem Certification
+1289198@@@Redeem Certification
+1289199@@@Redeem Certification
+1289200@@@Redeem Certification
+1289210@@@Fletching Wood Bundle
+1289220@@@Kill Credit (DNT)
+1289238@@@Tiger's Fury
+1289248@@@Makeshift Stickin' Spear
+1289249@@@Rooted
+1289250@@@Impaled
+1289255@@@Rock Throw
+1289256@@@Rock Throw
+1289277@@@Rock Throw
+1289292@@@Rock Throw
+1289305@@@Transmute: Red Power Crystal to Blue Power Crystal
+1289375@@@Biting Chill
+1289378@@@Warmth
+1289402@@@Ensemble: Shen'dorei Magister's Garb
+1289404@@@(DNT) Linken' Boots of Iron
+1289407@@@Ensemble: Shen'dorei Peacekeeper's Garb
+1289413@@@(DNT) Linken' Boots of Iron
+1289417@@@Ensemble: Shen'dorei Skyseer's Garb
+1289419@@@Ensemble: Al'Aketh Zealot's Garb
+1289422@@@Explorers' League Drawing Kit
+1289425@@@Interesting Landmark
+1289428@@@The Drunken Dwarf
+1289429@@@Set Health
+1289430@@@Soul Consumption
+1289431@@@Shadow Vent
+1289433@@@Shadow Vent
+1289434@@@Cause Insanity
+1289435@@@Tortured Mind
+1289447@@@Frost Nova
+1289448@@@Frostbolt Volley
+1289449@@@Glaive
+1289450@@@Renew
+1289451@@@Lightning Bolt
+1289452@@@Faerie Fire
+1289453@@@Shadowmeld
+1289484@@@Set 1% HP
+1289489@@@[DNT] Lion Summon Trigger
+1289490@@@Tallstrider Call
+1289530@@@Wrath
+1289531@@@Blooming Rot
+1289532@@@Blooming Rot
+1289537@@@Stormcrow
+1289546@@@Bear Form
+1289610@@@Roar
+1289654@@@Gift of Galloping
+1289655@@@Hold Dynamite
+1289681@@@Bloodthrill
+1289682@@@Bloodthrill
+1289695@@@Main Gauche
+1289714@@@Power Sap
+1289718@@@Swat Paletusk
+1289723@@@Welcoming Campfire
+1289727@@@Repair and Recharge Pylon
+1289849@@@Main Gauche
+1289866@@@Phantasmal Blade
+1289894@@@Ghostly Beast
+1289914@@@Cyclone
+1289916@@@Cyclone
+1289927@@@Renewing Fog
+1289931@@@Near Death
+1289941@@@Cyclonic Winds
+1289998@@@Healing Wave
+1289999@@@RAF No AI Re-evaluate
+1290013@@@Recuperating
+1290040@@@Enfeeble
+1290041@@@Bloom
+1290042@@@Revitalization
+1290043@@@Crystallize
+1290044@@@Crystallize
+1290045@@@Crystallize Trigger
+1290046@@@Revitalization Trigger
+1290047@@@Fire
+1290052@@@Spore Cloud
+1290054@@@Spore Cloud
+1290060@@@Infected Bite
+1290105@@@Loa Ghost Visual
+1290120@@@By'zaali's Favor
+1290130@@@Combat Pulse
+1290131@@@Summon Child of By'zaali
+1290186@@@[DNT] Can Have By'zaali's Favor
+1290188@@@[DNT] Emote State - Dance
+1290202@@@Break All Equipment
+1290211@@@Camping
+1290235@@@Illness
+1290240@@@Bleeding
+1290241@@@[DNT] Wounded Soldier Quest Dummy
+1290242@@@Apply Bandage
+1290261@@@Weaponmaster
+1290312@@@Hack and Slash
+1290355@@@[DNT] Diseased Visual State
+1290364@@@[DNT] Ombassa Trigger
+1290398@@@Faction Banner
+1290481@@@Call Guards
+1290708@@@Stealth
+1290709@@@Kill Credit (DNT)
+1290710@@@Kill Credit (DNT)
+1290732@@@Root Self
+1290782@@@Translocation
+1290800@@@Deft Digits
+1290859@@@Darkspear Islands Iron Ration
+1290860@@@Darkspear Islands Field Ration
+1290861@@@Darkspear Islands Enriched Ration
+1290863@@@First Aid
+1290865@@@First Aid
+1290867@@@First Aid
+1290875@@@Arcane Portal
+1290950@@@Brain Damage
+1290954@@@Flight Path
+1290955@@@Hippogryph
+1290959@@@Hippogryph
+1290966@@@[DNT] Kill Credit
+1290989@@@Kill Credit (DNT)
+1291059@@@Tiger's Fury Cooldown Reduction
+1291060@@@Increased Enrage Rage
+1291061@@@Increased Insect Swarm Duration
+1291075@@@Swiftmend Cooldown Reduction
+1291076@@@Reduced Healing Wave Cost
+1291077@@@Increased Flame Shock Duration
+1291078@@@Lightning Bolt Can Activate Maelstrom Weapon
+1291083@@@Swift Judgement Cooldown Reduction
+1291086@@@Judgement Increased Damage
+1291089@@@Holy Light Mana Cost Reduction
+1291097@@@Damage Sigmoid
+1291099@@@Sigmoid Revenge
+1291101@@@Analyzing Weaknesses
+1291103@@@Serenity
+1291105@@@Stabilized
+1291218@@@Summon Fiery Assistant
+1291225@@@Spawn Cosmetics
+1291335@@@Mark of the Wild
+1291338@@@Thorns
+1291340@@@Whirlwind
+1291341@@@Expert Campfire
+1291345@@@Scrap Item
+1291346@@@Seaforium Blasting Powder
+1291347@@@Flight Path
+1291434@@@Burning Tent
+1291435@@@Burning Tent
+1291436@@@Burning Tent
+1291437@@@Burning Tent
+1291542@@@Beast Slaying 06
+1291545@@@Reanimated!
+1291549@@@Gather Toxin
+1291551@@@Wound
+1291562@@@Create Toxin
+1291568@@@Sear
+1291570@@@Sear
+1291644@@@Unstable Mana Rift
+1291646@@@Unstable Mana Rift
+1291647@@@Unstable Mana Rift
+1291662@@@Firebelch
+1291663@@@Poison
+1291686@@@Firebelch
+1291698@@@Toxic Sporidium
+1291715@@@Herbalism 02
+1291748@@@-25% Movement Speed
+1291749@@@Swimming Speed 33%
+1291758@@@Escape Root
+1291782@@@Skum's Bucket
+1291796@@@Embrace of the Viper
+1291797@@@Embrace of the Viper
+1291806@@@Dream Venom
+1291807@@@Dream Venom
+1291816@@@Recently Embraced
+1291834@@@Roiling Wind
+1291896@@@Slicing
+1291901@@@Mining 02
+1291904@@@Elemental Slaying 09
+1291906@@@Gold-plated
+1291908@@@Gold-plated
+1291915@@@Improved Smelting 01
+1291920@@@Caught!
+1291928@@@Partially Digested
+1291932@@@Necrotic Poison
+1291979@@@Trigger
+1291987@@@Improved Pick Pocket and Distract 01
+1292008@@@Tenderized
+1292011@@@Staff of Westfall
+1292025@@@Humanoid Slaying 15
+1292028@@@Devious Strike
+1292029@@@Devious Strike
+1292039@@@Spikes
+1292052@@@Bag of Ashen Warlock Bones
+1292069@@@Increase Spell Dam Elemental 09
+1292121@@@Lord of Shadowfang Keep
+1292139@@@Slimy Pinecone
+1292142@@@Benevolence
+1292149@@@Stealth Detection 05
+1292150@@@Safe Fall 05
+1292152@@@Firebolt
+1292155@@@Shadow Bolt
+1292158@@@Shadow Bolt
+1292160@@@Gloomshroud
+1292213@@@Humanoid Slaying 12
+1292222@@@Resist Silence 04
+1292245@@@Prepare Fish
+1292246@@@Prepare Fish
+1292252@@@Worgenbane
+1292268@@@Resist Disorient 07
+1292332@@@Prepare Fish
+1292399@@@Aviana's Blessing of the Feather
+1292419@@@Shapeshift
+1292497@@@Summit Sentry
+1292532@@@Ancestry Warding
+1292546@@@Reduce Mechanic Duration - Snare/Root 10
+1292556@@@Undead Slayer 24
+1292560@@@Dig
+1292570@@@Dig
+1292573@@@Wound
+1292574@@@Resist Fear 04
+1292575@@@Nightskulker
+1292581@@@Lockpicking 04
+1292594@@@Debt Collection
+1292598@@@Debt Collection
+1292602@@@Anvilmar's Curse
+1292621@@@Teleport Self
+1292647@@@Pierce Heart
+1292648@@@Pierce Heart
+1292652@@@Resist Sleep 05
+1292657@@@Corrosive Poison
+1292670@@@Spiked Shell
+1292674@@@Cursed Murloc Eye
+1292675@@@Cursed Murloc Eye
+1292679@@@Lightning Bolt
+1292683@@@Increase Threat All 01
+1292684@@@Increase Threat All 02
+1292685@@@Increase Threat All 03
+1292686@@@Increase Threat All 04
+1292692@@@Spell Damage Reduction 05
+1292705@@@Increase Arcane and Shadow Dam 9
+1292706@@@Mana Drain
+1292707@@@Mana Drain
+1292738@@@Hydra Strike
+1292739@@@Hydra Strike
+1292746@@@Martyrdom
+1292749@@@Martyrdom
+1292765@@@Fade
+1292773@@@Kill Credit (DNT)
+1292775@@@Kill Credit (DNT)
+1292781@@@Short Out
+1292804@@@Memory of the Mist
+1292851@@@Lightning Bolt
+1292879@@@Lightning Bolt
+1292880@@@Electrostatic Charge
+1292920@@@Grovekeeper Trousers
+1292921@@@Grovekeeper Grips
+1292923@@@Grovekeeper Shoulderpads
+1292924@@@Grovekeeper Stompers
+1292925@@@Grovekeeper Kilt
+1292926@@@Grovekeeper Mitts
+1292927@@@Grovekeeper Mantle
+1292928@@@Grovekeeper Sandals
+1292929@@@Grovekeeper Legguards
+1292930@@@Grovekeeper Handguards
+1292931@@@Grovekeeper Pauldrons
+1292932@@@Grovekeeper Boots
+1292933@@@Grovekeeper Leggings
+1292934@@@Grovekeeper Gauntlets
+1292935@@@Grovekeeper Spaulders
+1292936@@@Grovekeeper Treads
+1292937@@@Wildstalker's Legguards
+1292938@@@Wildstalker's Gauntlets
+1292939@@@Wildstalker's Spaulders
+1292940@@@Wildstalker's Greaves
+1292941@@@Manaflare Pants
+1292942@@@Manaflare Gloves
+1292943@@@Manaflare Mantle
+1292944@@@Manaflare Boots
+1292945@@@Justice Leggings
+1292946@@@Justice Gauntlets
+1292947@@@Justice Spaulders
+1292948@@@Justice Greaves
+1292949@@@Justice Legplates
+1292950@@@Justice Gloves
+1292951@@@Justice Epaulets
+1292952@@@Justice Treads
+1292953@@@Justice Legguards
+1292954@@@Justice Handguards
+1292955@@@Justice Pauldrons
+1292956@@@Justice Sabatons
+1292957@@@Pants of Conviction
+1292958@@@Gloves of Conviction
+1292959@@@Mantle of Conviction
+1292960@@@Treads of Conviction
+1292961@@@Leggings of Conviction
+1292962@@@Handguards of Conviction
+1292963@@@Pauldrons of Conviction
+1292964@@@Boots of Conviction
+1292965@@@Grimstitch Pants
+1292966@@@Grimstitch Gloves
+1292967@@@Grimstitch Spaulders
+1292968@@@Grimstitch Boots
+1292969@@@Spiritcaller Kilt
+1292970@@@Spiritcaller Gloves
+1292971@@@Spiritcaller Mantle
+1292972@@@Spiritcaller Boots
+1292973@@@Spiritcaller Pants
+1292974@@@Spiritcaller Gauntlets
+1292975@@@Spiritcaller Epaulets
+1292976@@@Spiritcaller Greaves
+1292977@@@Demonheart Leggings
+1292978@@@Demonheart Gloves
+1292979@@@Demonheart Spaulders
+1292980@@@Demonheart Boots
+1292981@@@Legplates of Glory
+1292982@@@Gauntlets of Glory
+1292983@@@Shoulders of Glory
+1292984@@@Greaves of Glory
+1292985@@@Legguards of Glory
+1292986@@@Handguards of Glory
+1292987@@@Pauldrons of Glory
+1292988@@@Sabatons of Glory
+1292997@@@Archmagister's Wisdom
+1293003@@@Petrolspill
+1293005@@@Puncture Armor
+1293020@@@Hydra Shot
+1293068@@@Stealth 05
+1293069@@@Stealth 10
+1293070@@@Stealth 15
+1293071@@@Increase Nature Dam 14
+1293085@@@9-60 Battery Pack
+1293088@@@9-60 Battery Pack
+1293107@@@Legacy Reputation Reward
+1293168@@@Leggings
+1293183@@@Thornspike
+1293184@@@Gloves, Shoulders, or Boots
+1293185@@@Increase Shadow Dam 28
+1293189@@@[DNT] Ping Quest Credit
+1293190@@@Increase Spell Dam Undead 16
+1293199@@@Agamaggan's Clutch
+1293228@@@Combust
+1293241@@@Summon Hawk
+1293242@@@Scrap Item
+1293248@@@Summon Hawk
+1293306@@@Grim Fetish
+1293308@@@Grim Fetish
+1293327@@@Plague Nova
+1293329@@@Ghansurok Bait
+1293331@@@Thorncurse - Add Nature Dam - Weap 02
+1293333@@@Thorncurse
+1293342@@@Guardian's Durability
+1293345@@@Guardian's Durability
+1293354@@@Tailoring Skill +8
+1293358@@@Runecloth Soak
+1293359@@@Cleanse Heart
+1293361@@@Set Sentinel
+1293393@@@Specialize in Bracers
+1293394@@@Specialize in Gloves
+1293395@@@Specialize in Belts
+1293396@@@Specialize in Boots
+1293407@@@Shadow Bolt
+1293421@@@Shadow Bolt
+1293424@@@Humanoid Slaying 24
+1293429@@@Torture
+1293433@@@Torture
+1293451@@@Tortured
+1293455@@@Undead Slayer 27
+1293482@@@Tough Love
+1293483@@@Tough Love
+1293501@@@Summon Tracking Hound
+1293515@@@Cleanse Heart
+1293518@@@Grass Killer
+1293525@@@Summon Hawk
+1293526@@@Summon Hawk
+1293527@@@Summon Hawk
+1293539@@@Scarlet Retribution
+1293540@@@Improved Revival
+1293542@@@Flash Heal Cast Pushback Reduction
+1293544@@@Increased Flash of Light Crit Chance
+1293559@@@Flask of Natural Accuracy
+1293560@@@Flask of Natural Aggression
+1293561@@@Flask of Natural Precision
+1293562@@@Flask of Natural Swiftness
+1293568@@@Grass Killer
+1293571@@@Flag Tracking Quest
+1293576@@@Flag Tracking Quest
+1293577@@@Flag Tracking Quest
+1293578@@@Flag Tracking Quest
+1293586@@@Hunter Guardian Hawk Pet Scaling 01
+1293630@@@Improved Redemption
+1293631@@@Improved Resurrection
+1293635@@@Improved Ancestral Spirit
+1293639@@@Improved Revive Pet
+1293641@@@Improved Soulstone
+1293644@@@Improved Rebirth
+1293653@@@Frost Blast
+1293654@@@Silence
+1293657@@@Languages
+1293670@@@Scarlet Guardian
+1293671@@@Scarlet Guardian
+1293672@@@Scarlet Guardian
+1293673@@@Enraging Light
+1293674@@@Enraging Light
+1293675@@@Enraged Light
+1293681@@@Farsen's Farsight
+1293682@@@Shark Attack!
+1293689@@@Memory of the Mist
+1293693@@@Haunt
+1293694@@@Haunt
+1293695@@@Demonic Brand
+1293696@@@Demonic Brand
+1293697@@@Demonic Brand
+1293698@@@Demonic Brand
+1293699@@@Demonic Brand
+1293700@@@Painwalker Buckler
+1293701@@@Painwalker Buckler
+1293711@@@Beast Slaying 09
+1293712@@@Armor Proficiency
+1293714@@@Spellsever
+1293719@@@(DNT) Mist Cosmetic Visual Aura
+1293727@@@(DNT) Mist Cosmetic Visual Aura
+1293733@@@Scarlet Guardian
+1293734@@@Recently Guarded
+1293735@@@(DNT) Mist Cosmetic Visual Aura
+1293736@@@Archmagister's Perception
+1293740@@@Flask of Natural Accuracy
+1293741@@@Flask of Natural Aggression
+1293742@@@Flask of Natural Precision
+1293743@@@Flask of Natural Accuracy
+1293760@@@Shader
+1293782@@@Swine Fists
+1293783@@@Swine Fists
+1293787@@@Holy Cleaver
+1293790@@@Frostbolt
+1293800@@@Prickly Potion
+1293801@@@Emanating Mist
+1293802@@@Humanoid Slaying 27
+1293803@@@Pyroclasm
+1293804@@@(DNT) Mist Stealth
+1293805@@@Rousing Seed Pod
+1293806@@@Warden's Signet of Ferocity
+1293807@@@Warden's Signet of Brilliance
+1293808@@@Warden's Signet of Caution
+1293809@@@Warden's Signet of Recovery
+1293812@@@Incinerate
+1293813@@@Incinerate
+1293814@@@Echoes of the Enraged
+1293815@@@Echoes of the Enraged
+1293816@@@Shadow
+1293817@@@Conflagrate
+1293818@@@Conflagrate
+1293819@@@Reduce Mechanic Duration - Snare/Root 07
+1293820@@@Toy Soldier
+1293849@@@Swiftfeather Arrow
+1293850@@@Swiftstrike Shot
+1293857@@@Flag Tracking Quest
+1293858@@@Flag Tracking Quest
+1293866@@@(DNT) Hide Mist
+1293870@@@(DNT) Hide Mist
+1293871@@@(DNT) Hide Mist
+1293874@@@Debilitate
+1293875@@@Flag Tracking Quest
+1293876@@@Flag Tracking Quest
+1293877@@@Flag Tracking Quest
+1293878@@@Flag Tracking Quest
+1293881@@@Pendulum of Doom
+1293885@@@Pendulum of Doom
+1293886@@@Pendulum of Doom
+1293889@@@Crystallize
+1293928@@@Mistrot
+1293940@@@Ferocious Rush
+1293958@@@Multi-Shot
+1293966@@@Torch Toss
+1293973@@@TEST Heal Self - Daves 1
+1293978@@@(DNT) Water Ripples
+1293980@@@Firebolt
+1293986@@@Consuming Fel Energies
+1293987@@@Eternal Night
+1293988@@@Timer
+1293989@@@Singularity
+1293990@@@Black Hole
+1293991@@@Singularity
+1294006@@@Nutritious Food
+1294007@@@Well Fed
+1294014@@@Sweetpaw Jam
+1294021@@@Elemental Slaying 15
+1294025@@@Energize
+1294032@@@Mining 04
+1294034@@@Mining 03
+1294048@@@Kill Credit (DNT)
+1294053@@@Lotus Claw
+1294054@@@Enchant Gloves - Lotus Claw
+1294055@@@White Obsidian
+1294058@@@White Obsidian
+1294063@@@Defender of the Barkskin
+1294064@@@Rock Sentinel
+1294065@@@Rock Sentinel
+1294070@@@Wisdom of the Timbermaw
+1294071@@@Ferocity of the Barkskin
+1294072@@@Increase Nature Dam 64
+1294077@@@Increased 1H Axe 01
+1294078@@@Increased 1H Axe 02
+1294080@@@Increased 1H Axe 03
+1294081@@@Increased 1H Axe 04
+1294086@@@Teachings of the Furbolgs
+1294087@@@Teachings of the Furbolgs
+1294088@@@[DNT] Set Data
+1294092@@@Bear Form
+1294094@@@[DNT] Set Data
+1294095@@@[DNT] Set Data
+1294111@@@Nature's Grip
+1294112@@@Entangling Roots
+1294121@@@Time-Lost Arrow
+1294122@@@Time-Lost Arrow
+1294124@@@Aimed Shot
+1294135@@@Increased Dagger 01
+1294136@@@Increased Dagger 02
+1294146@@@Increased Dagger 03
+1294147@@@Increased Dagger 04
+1294148@@@Increased 1H Sword 01
+1294149@@@Increased 1H Sword 02
+1294150@@@Increased 1H Sword 03
+1294157@@@Increased 1H Sword 04
+1294171@@@Throw Rock
+1294189@@@Poison Spear
+1294194@@@Trigger
+1294199@@@Dire Bear Mastery
+1294200@@@[DNT] Set Data
+1294203@@@Timer
+1294204@@@Cat Mastery
+1294206@@@Tim's Test Dummy Aura
+1294207@@@Timer
+1294208@@@Slow Poison
+1294210@@@[DNT] Set Data
+1294212@@@Stormcrow
+1294213@@@Moon Glaive
+1294226@@@Wound
+1294234@@@Aspects of Doom
+1294243@@@Deflecting
+1294246@@@Rowboat
+1294248@@@Rowboat
+1294254@@@Ward of Zum'rah
+1294255@@@Ward of Zum'rah
+1294256@@@Ward of Zum'rah
+1294258@@@Ward of Zum'rah
+1294260@@@Throw Dynamite
+1294269@@@Burning Blade
+1294270@@@Fiery Armaments
+1294273@@@Chilling Blade
+1294274@@@Frosted Armaments
+1294277@@@Flag Tracking Quest
+1294281@@@Resurrection
+1294289@@@Centaur Hoofwarmers
+1294314@@@Torch Toss (land)
+1294331@@@Guard
+1294339@@@Farraki Enforcement
+1294340@@@Farraki Enforcement
+1294343@@@Farraki Enforcement
+1294351@@@Freezing Trap
+1294353@@@Freezing Trap
+1294426@@@Rend
+1294427@@@Increase Nature Dam 66
+1294430@@@Rage of Sul'thraze
+1294431@@@Shadow Lash
+1294442@@@Arcane Explosion
+1294444@@@Freezing Trap
+1294462@@@Shadowmeld
+1294477@@@Static Electricity
+1294482@@@Fiery Burst
+1294488@@@Biting Chill
+1294498@@@Biting Chill
+1294510@@@Kingly Conviction
+1294527@@@Kill Credit (DNT)
+1294530@@@Incinerator
+1294531@@@[DNT] Set Data
+1294533@@@[DNT] Set Data
+1294537@@@Incinerator
+1294601@@@Corrosive Breath
+1294613@@@Spotter
+1294617@@@Theka's Last Breath
+1294620@@@Aura of Fear
+1294626@@@Theka's Last Breath
+1294644@@@Blood Sacrifice
+1294645@@@Blood Sacrifice
+1294646@@@The Desert Rose
+1294660@@@Spawn
+1294666@@@Zealotry
+1294668@@@Proc Self Energize 88
+1294674@@@Aviation Survival Kit
+1294683@@@Lunar Suffusion
+1294684@@@Lunar Suffusion
+1294690@@@Umbral Suffusion
+1294692@@@Umbral Suffusion
+1294721@@@Starfall
+1294725@@@Starfall
+1294728@@@Starfall
+1294740@@@Repressurization
+1294769@@@Increased Hit Chance - Ranged - 01
+1294777@@@Reduce Dispel Type Duration - Poison 10
+1294786@@@Resist Charm 05
+1294788@@@QA Tabard of Weighted Dice
+1294794@@@Fist of Stone
+1294848@@@Lunar Cascade
+1294874@@@Umbral Mark
+1294877@@@Boosted
+1294888@@@Lunar Mark
+1294897@@@Striped Dawnsaber
+1294909@@@Boosted
+1294911@@@Boosted
+1294913@@@Boosted
+1294914@@@Umbral Collapse
+1294915@@@Umbral Collapse
+1294928@@@Gravity Well
+1294929@@@Umbral Collapse
+1294939@@@Dreadfrost Saber
+1294940@@@Dreadfrost Saber
+1294946@@@Critter-A-Way
+1295039@@@Serpentbane
+1295064@@@Maw of Min'loth
+1295065@@@Fatal Bite
+1295197@@@Tyler Test Imbue
+1295233@@@Heart of the Primeval
+1295267@@@Soggy Boots
+1295270@@@Prototype Pathcarver
+1295271@@@Everlook Delivery Bot
+1295272@@@Parachute-Priest Pager
+1295279@@@Feathered Fury
+1295286@@@Test Spell
+1295298@@@Battle Memories
+1295308@@@Summon Feast
+1295313@@@Booty Bay Bruiser Buckshot
+1295318@@@Reset Check
+1295387@@@Ochre Skeletal Warhorse
+1295392@@@Trigger
+1295570@@@Learn All Taxi Nodes
+1295571@@@Learn All Taxi Nodes
+1295572@@@Learn Taxi Nodes
+1295577@@@Learn Taxi Nodes
+1295579@@@Poison Trap
+1295580@@@Learn Taxi Nodes
+1295581@@@Learn Taxi Nodes
+1295608@@@Warding Candle
+1295609@@@Learn Taxi Nodes
+1295611@@@Learn Taxi Nodes
+1295612@@@Learn Taxi Nodes
+1295613@@@Learn Taxi Nodes
+1295622@@@BG Honor Gain Increase
+1295626@@@Anchor Here
+1295629@@@Darkspear Islands Reputation - Darkspear Raiders
+1295630@@@Darkspear Islands Reputation - Theramore Expeditionary Force
+1295633@@@Everlook Delivery Bot
+1295639@@@Riverglades Marsh Gas
+1295661@@@Parachute-Priest Pager
+1295678@@@Umber Galestrider
+1295682@@@Summon
+1295683@@@Swift Umber Galestrider
+1295688@@@Tessa's Tonic
+1295720@@@Imbue Lesser Flame
+1295736@@@Bolder'ok Boulder
+1295738@@@Summon Wild Chicken
+1295739@@@Summon Wild Chicken Egg
+1295744@@@Rot
+1295778@@@Refinance
+1295779@@@Flash Sale
+1295780@@@Power Word: Deal
+1295805@@@Briny Seafood Stew
+1295834@@@Plain Ol' Paletusk
+1295852@@@Trigger
+1295887@@@Kill Credit (DNT)
+1295888@@@Kill Credit (DNT)
+1295904@@@[DNT] Test Item Internal Only
+1296017@@@Comprehend Scroll
+1296059@@@Rope
+1296072@@@Caught Sheep
+1296076@@@Caught Sheep
+1296140@@@Sheep Caught!
+1296141@@@Kill Credit (DNT)
+1296174@@@Kill Credit (DNT)
+1296175@@@Kill Credit (DNT)_Bunny
+1296202@@@Rat Familiar
+1296223@@@Chilled
+1296225@@@Imbue Chillknife
+1296317@@@Emboldened Training
+1296330@@@Transplanar Dislocation
+1296339@@@Portal to Valanaar
+1296340@@@Test Dissolve Teleport
+1296344@@@Zephras Cosmetic Vortex
+1296347@@@Emboldened Training
+1296348@@@Emboldened Training
+1296349@@@Emboldened Training
+1296350@@@Emboldened Training
+1296351@@@Emboldened Training
+1296353@@@Emboldened Training
+1296354@@@Emboldened Training
+1296416@@@Emerald Lightning
+1296451@@@[DNT] Shen'dorei Windwell
+1296534@@@Summon Forsaken Charger
+1296537@@@Summon Forsaken Charger
+1296564@@@Lichbane
+1296596@@@Arcane Resistance
+1296597@@@Fire Resistance
+1296598@@@Frost Resistance
+1296599@@@Nature Resistance
+1296601@@@Shadow Resistance
+1296663@@@One-Handed Swords
+1296664@@@Irresistible Scent
+1296730@@@Blunderflame
+1296959@@@Lava Eruption
+1297001@@@Lava Eruption
+1297028@@@Skyship Arrival
+1297048@@@Create
+1297068@@@Comprehension Failure
+1297076@@@Spell Focus
+1297082@@@Eye of Influence
+1297085@@@Eye of Influence
+1297109@@@Foxtail Ward
+1297120@@@Venomspew Gloves
+1297121@@@Venomspew Cord
+1297122@@@Venomspew Footpads
+1297123@@@Swarmtender's Gloves
+1297124@@@Swarmtender's Cord
+1297125@@@Swarmtender's Footpads
+1297126@@@Bileblister Claws
+1297127@@@Bileblister Girdle
+1297128@@@Bileblister Boots
+1297129@@@Hivethrasher's Claws
+1297130@@@Hivethrasher's Girdle
+1297131@@@Hivethrasher's Boots
+1297132@@@Scalegut Clenchers
+1297133@@@Scalegut Belt
+1297134@@@Scalegut Treaders
+1297135@@@Broodwatcher's Clenchers
+1297136@@@Broodwatcher's Belt
+1297137@@@Broodwatcher's Treaders
+1297138@@@Goregasher Grips
+1297139@@@Goregasher Support
+1297140@@@Goregasher Stompers
+1297141@@@Clutchlord's Grips
+1297142@@@Clutchlord's Support
+1297143@@@Clutchlord's Stompers
+1297324@@@Kill Credit (DNT)
+1297328@@@Fade to Black
+1297356@@@Seaforium Blasting Powder
+1297357@@@Reforged Spear
+1297369@@@Ritual Cleansing
+1297370@@@Ritual Cleansing
+1297378@@@Brambles
+1297431@@@Lava Eruption
+1297442@@@Increased Fist Weapons 01
+1297448@@@Field Agent Beverage
+1297449@@@Dizzy
+1297455@@@Resist Charm 06
+1297517@@@Breath
+1297588@@@Breath
+1297589@@@Engulfing Flames
+1297594@@@[DNT] Emote State - Dance
+1297608@@@Summon Excitable Slime
+1297626@@@Decharge Other
+1297653@@@Foul Breath
+1297659@@@Teleport: Dalaran
+1297660@@@Teleport: Dalaran
+1297670@@@Test
+1297671@@@Recycled Power
+1297672@@@Recycled Power
+1297685@@@[DNT] TEST - DELETE - Increased Mana Regen
+1297705@@@Syndicate Uniform
+1297727@@@DNT
+1297729@@@Zephras Cult Plans Conversation
+1297748@@@Sleep
+1297762@@@Propellerstorm
+1297774@@@Magical Awareness
+1297791@@@Portal to the Violet Chamber
+1297803@@@Stolen Scroll
+1297813@@@Summon Imp
+1297817@@@Summon Imp
+1297872@@@Cooldown
+1297909@@@Test Spell
+1297910@@@Bristlecone
+1297921@@@Cremate
+1297938@@@Portal to the Violet Chamber
+1297958@@@Transform: Dock Worker w/ Bag
+1297967@@@Propellerstorm
+1297994@@@Spirit of Wind
+1298225@@@Undead Slayer 18
+1298230@@@Stoneform Shoulders
+1298231@@@Stoneform Shoulders
+1298325@@@Toss Enchanted Seeds
+1298392@@@Wave Fox Fur Tuft
+1298406@@@Undead Slayer 15
+1298407@@@Undead Slayer 30
+1298413@@@Iceblade Hacker
+1298414@@@Iceblade Hacker
+1298416@@@Frostbolt
+1298427@@@Summon Lair Guard
+1298428@@@Blast Nova
+1298437@@@Ignite Weapon
+1298438@@@Ignite Weapon
+1298445@@@Refilling Drinking Gourd
+1298450@@@White Kodo
+1298478@@@Humanoid Slaying 30
+1298494@@@Poisons
+1298496@@@Black Skeletal Horse
+1298497@@@Restore Essence
+1298498@@@Restore Essence
+1298499@@@Warblade of Caer Darrow
+1298500@@@Warblade of Caer Darrow
+1298501@@@Decrease Threat All 01
+1298502@@@Decrease Threat All 02
+1298503@@@Drain Blood
+1298504@@@Decrease Threat All 03
+1298505@@@Decrease Threat All 04
+1298506@@@Drain Blood
+1298508@@@Barov Peasant Caller
+1298517@@@Book of the Dead
+1298518@@@Increase Spell Dam Undead 32
+1298519@@@Undead Slayer 09
+1298520@@@Increase Shadow Dam 88
+1298533@@@Many
+1298546@@@Sprinkle Refined Concoction
+1298593@@@Delirious Whispers
+1298627@@@Reeking Miasma
+1298630@@@Reeking Miasma
+1298671@@@Reeking Miasma
+1298672@@@Reeking Miasma
+1298707@@@Explosive Runeshard
+1298722@@@Increase Spell Dam Undead 11
+1298750@@@Glowy (Undead Warhorse)
+1298757@@@(DNT) Inactive Cosmetic Aura
+1298774@@@Begin Ritual
+1298776@@@Craft From Bank
+1298802@@@Begin Ritual
+1298827@@@Ghost Visual
+1298841@@@Decaying Spirit
+1298845@@@Decaying Spirit
+1298847@@@Decaying Spirit
+1298856@@@Explosive Runeshard
+1298874@@@Royal Defiance
+1298896@@@Burning
+1298956@@@Quest Invisibility
+1299003@@@Energizing Winds
+1299005@@@Rustling Winds
+1299013@@@Explosive Runeshard
+1299026@@@Shatter Curse
+1299038@@@Plainsrunning
+1299048@@@Explosive Runeshard
+1299094@@@BB Shot
+1299095@@@Fair Game!
+1299098@@@Air Rifle Score
+1299099@@@Quitter
+1299171@@@Heavenly Collapse
+1299202@@@Test Mod Bonus Armor by Defense
+1299243@@@(DNT) Legendary Ritual Success
+1299246@@@(DNT) Summon Ghost
+1299248@@@Ghost Visual
+1299291@@@Snacking on Tastyfish
+1299292@@@(DNT) Spirit Shrink Cosmetic
+1299293@@@(DNT) Spirit Shrink Cosmetic
+1299303@@@Stormcharged
+1299306@@@Stormcharged
+1299323@@@Master Angler!
+1299329@@@(DNT) Fog Gate Hidden Aura
+1299332@@@Lacerate
+1299341@@@Summon Bitter Baitling
+1299346@@@Trueshot Aura
+1299348@@@Trueshot Aura
+1299351@@@Water Walking
+1299378@@@(DNT) Naga Pearl Hidden Aura
+1299381@@@(DNT) Pirate Pearl Hidden Aura
+1299382@@@Rank Points
+1299383@@@Rank Points
+1299437@@@Improved Aimed Shot
+1299440@@@Demonbane
+1299443@@@Ramstein's Lightning Bolts
+1299444@@@Electrocuted
+1299445@@@Aspect of the Beast
+1299446@@@Aspect of the Beast
+1299447@@@Aspect of the Beast
+1299448@@@Quick Strikes
+1299449@@@Find it!
+1299525@@@Elbow Grease Applied
+1299552@@@Herbalism 04
+1299586@@@Undead Slayer 21
+1299625@@@Undead Slayer 42
+1299631@@@Smite
+1299734@@@Increased Hit Chance 00.5
+1299735@@@Necrophile Drain
+1299737@@@Necrophile Drain
+1299738@@@Increased Critical 1.5 - All
+1299739@@@Bloodmail
+1299740@@@Bloodmail
+1299743@@@Deathbone Surge
+1299746@@@Deathbone Surge
+1299754@@@Increase Spell Dam Dragonkin 11
+1299796@@@Insight
+1299850@@@Fireball
+1299869@@@Corpse Eater
+1299914@@@Spiritcaller Leggings
+1299915@@@Spiritcaller Grips
+1299916@@@Spiritcaller Spaulders
+1299917@@@Spiritcaller Treads
+1299943@@@Blood Siphon
+1299948@@@Blood Siphon
+1300001@@@Resist Sleep 03
+1300087@@@Grow
+1300108@@@[DNT] Node Check
+1300128@@@Frostburn
+1300130@@@Frostburn
+1300140@@@Wit's End
+1300141@@@Wit's End
+1300151@@@[DNT] Node Check
+1300176@@@Arcane Blast
+1300177@@@Arcane Blast
+1300180@@@Stealth
+1300185@@@Fatal Wound
+1300209@@@Bludgeon
+1300211@@@Bludgeon
+1300240@@@Cloud of Chained Essence
+1300241@@@Essence Chained
+1300344@@@Dual Wield
+1300356@@@Lifeforce
+1300361@@@Starfall
+1300364@@@Guarded
+1300424@@@Dark Channeling
+1300435@@@Moonshadow
+1300437@@@Moonshadow
+1300438@@@Moonshadow
+1300441@@@DNT Grow Pine Tree Visual
+1300493@@@Devilsaur Glare
+1300496@@@Devilsaur Glare
+1300620@@@Rank Points
+1300621@@@Rank Points
+1300663@@@Safe Fall 08
+1300664@@@Heal Health 1.0 Coeffecient
+1300667@@@Mana Spring Totem
+1300668@@@Summon Scarlet Cannon
+1300678@@@Lunar Suffusion
+1300680@@@Razorsteel
+1300692@@@First Ward
+1300739@@@Signal Jurgens
+1300740@@@Signal Jurgens
+1300744@@@Liberating Soul
+1300752@@@Heart of the Mountain
+1300753@@@Firebolt
+1300754@@@Enthralled Sphere
+1300755@@@Resist Bleed 10
+1300763@@@Skinning
+1300764@@@Skinned to the Bone
+1300766@@@Skinning
+1300781@@@Ignition
+1300782@@@Ignition
+1300783@@@Slaughter
+1300784@@@Crippling Dread
+1300787@@@Rend
+1300821@@@Lucent Beam
+1300844@@@Lunar Effusion
+1300846@@@Lunar Effusion
+1300875@@@Lunar Saturation
+1300890@@@Grace of the Seven
+1300891@@@Grace of the Seven
+1300925@@@Resist Charm 10
+1300934@@@1.60.0 - Item - Tier 1 - Druid - Feral 2P Bonus - Haste
+1300940@@@1.60.0 - Item - Tier 1 - Druid - Balance 2P Bonus - Hit
+1300942@@@1.60.0 - Item - Tier 1 - Druid - Guardian 2P Bonus - Defense
+1300943@@@1.60.0 - Item - Tier 1 - Druid - Restoration 2P Bonus - Spirit
+1300945@@@1.60.0 - Item - Tier 1 - Hunter 2P Bonus - Haste
+1300947@@@1.60.0 - Item - Tier 1 - Mage 2P Bonus - Hit
+1300948@@@1.60.0 - Item - Tier 1 - Paladin - Holy 2P Bonus - Spirit
+1300949@@@1.60.0 - Item - Tier 1 - Paladin - Protection 2P Bonus - Defense
+1300951@@@1.60.0 - Item - Tier 1 - Paladin - Retribution 2P Bonus - Haste
+1300952@@@Heal Health 1.0 Coeffecient Over Time
+1300954@@@1.60.0 - Item - Tier 1 - Priest - Discipline/Holy 2P Bonus - Spirit
+1300955@@@1.60.0 - Item - Tier 1 - Priest - Shadow 2P Bonus - Hit
+1300956@@@1.60.0 - Item - Tier 1 - Rogue 2P Bonus - Hit
+1300957@@@1.60.0 - Item - Tier 1 - Shaman - Enhancement 2P Bonus - Haste
+1300959@@@1.60.0 - Item - Tier 1 - Shaman - Elemental 2P Bonus - Hit
+1300960@@@1.60.0 - Item - Tier 1 - Shaman - Restoration 2P Bonus - Spirit
+1300966@@@1.60.0 - Item - Tier 1 - Warlock 2P Bonus - Hit
+1300968@@@1.60.0 - Item - Tier 1 - Warrior - Arms/Fury 2P Bonus - Haste
+1300970@@@1.60.0 - Item - Tier 1 - Warrior - Protection 2P Bonus - Defense
+1300975@@@1.60.0 - Item - Tier 1 - Druid - Balance 3P Bonus - Nature's Grasp
+1300988@@@First Ward Successful
+1300999@@@1.60.0 - Item - Tier 1 - Druid - Feral 3P Bonus - Hibernate
+1301005@@@1.60.0 - Item - Tier 1 - Druid - Guardian 3P Bonus - Rebirth
+1301006@@@1.60.0 - Item - Tier 1 - Druid - Restoration 3P Bonus - Barkskin
+1301012@@@1.60.0 - Item - Tier 1 - Hunter 3P Bonus - Frost and Freezing Trap
+1301013@@@1.60.0 - Item - Tier 1 - Mage 3P Bonus - Counterspell
+1301014@@@1.60.0 - Item - Tier 1 - Paladin - Holy 3P Bonus - Blessing of Protection
+1301015@@@1.60.0 - Item - Tier 1 - Paladin - Protection 3P Bonus - Turn Undead
+1301036@@@1.60.0 - Item - Tier 1 - Paladin - Retribution 3P Bonus - Hammer of Justice
+1301041@@@1.60.0 - Item - Tier 1 - Priest - Discipline/Holy 3P Bonus - Fear Ward
+1301045@@@1.60.0 - Item - Tier 1 - Priest - Shadow 3P Bonus - Shackle Undead
+1301046@@@Fury of Forgewright
+1301047@@@1.60.0 - Item - Tier 1 - Rogue 3P Bonus - Kidney Shot
+1301051@@@1.60.0 - Item - Tier 1 - Shaman - Enhancement 3P Bonus - Earth and Wind Totems
+1301053@@@1.60.0 - Item - Tier 1 - Shaman - Elemental 3P Bonus - Earthbind Totem
+1301059@@@1.60.0 - Item - Tier 1 - Shaman - Restoration 3P Bonus - Fire and Water Totems
+1301068@@@1.60.0 - Item - Tier 1 - Warlock 3P Bonus - Banish
+1301069@@@1.60.0 - Item - Tier 1 - Warrior - Arms/Fury 3P Bonus - Intimidating Shout
+1301071@@@1.60.0 - Item - Tier 1 - Warrior - Protection 3P Bonus - Intervene
+1301073@@@1.60.0 - Item - Tier 1 - Druid - Balance 4P Bonus - SP vs. Demons
+1301075@@@1.60.0 - Item - Tier 1 - Druid - Feral 4P Bonus - AP vs. Demons
+1301076@@@1.60.0 - Item - Tier 1 - Druid - Guardian 4P Bonus - Expertise
+1301077@@@1.60.0 - Item - Tier 1 - Druid - Restoration 4P Bonus - Healing/Damage
+1301078@@@1.60.0 - Item - Tier 1 - Hunter 4P Bonus - AP vs. Beasts
+1301079@@@1.60.0 - Item - Tier 1 - Mage 4P Bonus - SP vs. Elementals
+1301080@@@1.60.0 - Item - Tier 1 - Paladin - Holy 4P Bonus - Healing/Damage
+1301083@@@1.60.0 - Item - Tier 1 - Paladin - Protection 4P Bonus - Expertise
+1301084@@@1.60.0 - Item - Tier 1 - Paladin - Retribution 4P Bonus - AP vs. Undead
+1301085@@@1.60.0 - Item - Tier 1 - Priest - Discipline/Holy 4P Bonus - Healing/Damage
+1301087@@@1.60.0 - Item - Tier 1 - Priest - Shadow 4P Bonus - SP vs. Undead
+1301088@@@1.60.0 - Item - Tier 1 - Rogue 4P Bonus - AP vs. Humanoids
+1301090@@@1.60.0 - Item - Tier 1 - Shaman - Enhancement 4P Bonus - AP vs. Elementals
+1301092@@@1.60.0 - Item - Tier 1 - Shaman - Elemental 4P Bonus - SP vs. Elementals
+1301093@@@1.60.0 - Item - Tier 1 - Shaman - Restoration 4P Bonus - Healing/Damage
+1301094@@@1.60.0 - Item - Tier 1 - Warlock 4P Bonus - SP vs. Demons
+1301095@@@1.60.0 - Item - Tier 1 - Warrior - Arms/Fury 4P Bonus - AP vs. Humanoids
+1301096@@@1.60.0 - Item - Tier 1 - Warrior - Protection 4P Bonus - Expertise
+1301106@@@Splatter
+1301121@@@Reduce Mechanic Duration - Snare/Root 20
+1301123@@@Roar of the Crowd
+1301124@@@Roar of the Crowd
+1301125@@@Increased Hit Chance - Ranged - 02
+1301126@@@Resist Fear 08
+1301127@@@Increased Hit Chance - Ranged - 03
+1301167@@@Transformative Cocoon
+1301168@@@Transformative Cocoon
+1301195@@@Everlasting Silvermoon Shimmerwine
+1301234@@@Corrupted Cat Figurine
+1301242@@@1.60.0 - Item - Tier 1 - Druid - Balance 5P Bonus - Insect Swarm
+1301247@@@1.60.0 - Item - Tier 1 - Druid - Feral 5P Bonus - Tiger's Fury
+1301249@@@1.60.0 - Item - Tier 1 - Druid - Guardian 5P Bonus - Berserk
+1301250@@@1.60.0 - Item - Tier 1 - Druid - Restoration 5P Bonus - Swiftmend
+1301252@@@1.60.0 - Item - Tier 1 - Hunter 5P Bonus - Aimed and Multi-Shot
+1301404@@@Lightning Cloud
+1301421@@@Cloudy Skyforged Chainmail
+1301422@@@Cloudy Skyforged Wristguards
+1301423@@@Cloudy Skyforged Gauntlets
+1301424@@@Cloudy Skyforged Chain
+1301425@@@Cloudy Skyforged Legguards
+1301426@@@Cloudy Skyforged Greaves
+1301427@@@Cloudy Gustwoven Harness
+1301428@@@Cloudy Gustwoven Bracers
+1301429@@@Cloudy Gustwoven Gloves
+1301430@@@Cloudy Gustwoven Belt
+1301431@@@Cloudy Gustwoven Trousers
+1301432@@@Cloudy Gustwoven Boots
+1301433@@@Cloudy Windraveled Jerkin
+1301434@@@Cloudy Windraveled Armguards
+1301435@@@Cloudy Windraveled Mitts
+1301436@@@Cloudy Windraveled Strap
+1301437@@@Cloudy Windraveled Pants
+1301438@@@Cloudy Windraveled Footwraps
+1301439@@@Cloudy Stormsewn Vest
+1301440@@@Cloudy Stormsewn Cuffs
+1301441@@@Cloudy Stormsewn Handwraps
+1301442@@@Cloudy Stormsewn Cord
+1301443@@@Cloudy Stormsewn Leggings
+1301444@@@Cloudy Stormsewn Shoes
+1301445@@@Azure Skyforged Chainmail
+1301446@@@Azure Skyforged Wristguards
+1301447@@@Azure Skyforged Gauntlets
+1301448@@@Azure Skyforged Chain
+1301449@@@Azure Skyforged Legguards
+1301450@@@Azure Skyforged Greaves
+1301451@@@Azure Gustwoven Harness
+1301452@@@Azure Gustwoven Bracers
+1301453@@@Azure Gustwoven Gloves
+1301454@@@Azure Gustwoven Belt
+1301455@@@Azure Gustwoven Trousers
+1301456@@@Azure Gustwoven Boots
+1301457@@@Azure Windraveled Jerkin
+1301458@@@Azure Windraveled Armguards
+1301459@@@Azure Windraveled Mitts
+1301460@@@Azure Windraveled Strap
+1301461@@@Azure Windraveled Pants
+1301462@@@Azure Windraveled Footwraps
+1301463@@@Azure Stormsewn Vest
+1301464@@@Azure Stormsewn Cuffs
+1301465@@@Azure Stormsewn Handwraps
+1301466@@@Azure Stormsewn Cord
+1301468@@@Azure Stormsewn Leggings
+1301469@@@Azure Stormsewn Shoes
+1301488@@@1.60.0 - Item - Tier 1 - Mage 5P Bonus - Frostfire Bolt
+1301526@@@Cloudy Skyforged Helm
+1301527@@@Cloudy Skyforged Pauldrons
+1301528@@@Cloudy Gustwoven Hood
+1301529@@@Cloudy Gustwoven Spaulders
+1301530@@@Cloudy Windraveled Cover
+1301531@@@Cloudy Windraveled Drapes
+1301532@@@Cloudy Stormsewn Cowl
+1301533@@@Cloudy Stormsewn Epaulets
+1301534@@@Azure Skyforged Helm
+1301535@@@Azure Skyforged Pauldrons
+1301536@@@Azure Gustwoven Hood
+1301537@@@Azure Gustwoven Spaulders
+1301538@@@Azure Windraveled Cover
+1301539@@@Azure Windraveled Drapes
+1301540@@@Azure Stormsewn Cowl
+1301541@@@Azure Stormsewn Epaulets
+1301544@@@[DNT] Play Sound - Open Trapdoor
+1301625@@@Flame Walker
+1301635@@@Anti-Magic Shield
+1301636@@@Pack Kodo
+1301659@@@Teleport
+1301683@@@Harvester Override Signalcaster
+1301694@@@1.60.0 - Item - Tier 1 - Paladin - Holy 5P Bonus - Holy Shock
+1301697@@@1.60.0 - Item - Tier 1 - Paladin - Protection 5P Bonus - Forbearance
+1301702@@@1.60.0 - Item - Tier 1 - Paladin - Retribution 5P Bonus - Judgement
+1301703@@@1.60.0 - Item - Tier 1 - Priest - Discipline/Holy 5P Bonus - Penance and Prayer of Mending
+1301706@@@1.60.0 - Item - Tier 1 - Priest - Shadow 5P Bonus - Devouring Plague
+1301707@@@Briarwood Reed
+1301708@@@1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Envenom and Eviscerate
+1301709@@@1.60.0 - Item - Tier 1 - Shaman - Enhancement 5P Bonus - Stormstrike
+1301711@@@1.60.0 - Item - Tier 1 - Shaman - Elemental 5P Bonus - Lava Burst
+1301713@@@1.60.0 - Item - Tier 1 - Shaman - Restoration 5P Bonus - Riptide
+1301715@@@1.60.0 - Item - Tier 1 - Warlock 5P Bonus - Life Tap
+1301721@@@1.60.0 - Item - Tier 1 - Warrior - Arms/Fury 5P Bonus - Recklessness
+1301722@@@1.60.0 - Item - Tier 1 - Warrior - Protection 5P Bonus - Shield Wall
+1301784@@@Gatehouse Shipment Placed
+1301805@@@Crafting Rings
+1301806@@@Enchanting Rings
+1301818@@@Carrying Smoldering Incense
+1301824@@@Call the North Wind
+1301833@@@Gather Power
+1301922@@@Fury of Blackhand
+1301928@@@Flammable
+1301947@@@Mischevious Zephyr
+1301967@@@Punt!
+1301968@@@Wind Spike
+1302064@@@Well Fed
+1302066@@@Nutritious Food
+1302108@@@Necromancy
+1302109@@@Necromancy
+1302112@@@Bearing the Flame
+1302113@@@Trail Snack
+1302127@@@Charged Winds
+1302161@@@Harvester Override Signalcaster
+1302166@@@Waveslicer
+1302189@@@Boss Kill Tracking [DNT]
+1302190@@@Demonic Energy
+1302191@@@Demonic Energy
+1302193@@@Razor Gauntlets
+1302196@@@Summon Prairie Wolf Pup
+1302205@@@Mindtap
+1302206@@@Tapped Mind
+1302207@@@DNT
+1302217@@@Imbue Striking
+1302219@@@Imbue Baleflame
+1302227@@@Imbue Spark
+1302229@@@Eat
+1302247@@@Force Imbued
+1302248@@@Add Arcane Dam - Weap 02
+1302264@@@Vigilant
+1302279@@@Stoneshatter
+1302283@@@Imbue Frost
+1302284@@@Imbue Iceknife
+1302285@@@Frog Familiar
+1302286@@@Imbue Blade
+1302293@@@Imbue Blade
+1302294@@@Imbue Blade
+1302297@@@Khadgar's Unlocking
+1302301@@@Rebuke Elemental
+1302303@@@Cat Familiar
+1302304@@@Imbue Flame
+1302305@@@Imbue Balefrost
+1302306@@@Imbue Accuracy
+1302307@@@Imbue Quickening
+1302308@@@Imbue Manablade
+1302309@@@Greater Cryoblast
+1302310@@@Imbue Precision
+1302311@@@Imbue Greater Flame
+1302312@@@Imbue Greater Frost
+1302341@@@Carve Mind
+1302342@@@Carved Mind
+1302343@@@Xorothian Fire
+1302344@@@Hedgecutter
+1302345@@@Improved Pick Pocket and Distract 02
+1302346@@@Resist Fear 10
+1302347@@@Channel the Flames
+1302348@@@Mana Channeling
+1302350@@@Mana Channeling
+1302351@@@Lava Spout Totem
+1302352@@@Lava Spout Totem
+1302353@@@Bearing the Flame
+1302354@@@Treant Slayer
+1302355@@@Flag Tracking Quest
+1302356@@@Magnetize
+1302357@@@Magnetize
+1302359@@@Forbidden Magic
+1302360@@@Forbidden Magic
+1302362@@@Eidolon Ward
+1302363@@@Pimgib's Collar
+1302372@@@Imperial March
+1302374@@@Ironweave Protection
+1302375@@@Blessed
+1302376@@@Run Speed +08%
+1302378@@@Return to Sender
+1302379@@@Recently Returned
+1302380@@@Return to Sender
+1302490@@@hh10
+1302497@@@Corpse Explosion
+1302500@@@Ravage
+1302502@@@Library Shelf
+1302508@@@Study
+1302510@@@Full Heal
+1302511@@@Devour Magic
+1302521@@@Improved Wrath
+1302540@@@Libram of Divinity
+1302545@@@Increased Damage Undead 01
+1302569@@@Water Geyser
+1302578@@@Water Geyser
+1302597@@@Water Geyser
+1302598@@@Rough Copper Chain Boots
+1302604@@@Light Leather Reagent Bag
+1302605@@@Mend
+1302606@@@Mend
+1302650@@@Summon Spectral Bear Cub
+1302661@@@Spectral Bear
+1302696@@@Study
+1302698@@@Crafted Shadows
+1302700@@@Crafted Shadows
+1302707@@@Wild Heart
+1302708@@@Wild Heart
+1302711@@@Beast Unleashed
+1302712@@@Beast Unleashed
+1302715@@@Rebuked
+1302716@@@Rebuke
+1302717@@@Electrocute
+1302718@@@Electrocute
+1302720@@@Moment of Valor
+1302721@@@Moment of Valor
+1302759@@@Conjure Swarm
+1302760@@@Conjure Swarm
+1302762@@@(DNT) Cosmetic Spawn Spell
+1302764@@@Conjure Swarm
+1302767@@@Dark Plague
+1302768@@@Shadow Bolt
+1302780@@@Writhing Mass
+1302783@@@Writhing Mass
+1302785@@@Writhing Mass
+1302787@@@Dying Throes
+1302833@@@Mirage Mirror
+1302834@@@Mirror's Mirage
+1302838@@@Maggot Slime
+1302852@@@Blight
+1302874@@@Mysticbloom Seed
+1302875@@@Photosynthesized
+1302929@@@Glance Tooltip Hint
+1302937@@@Consuming Fel Energies
+1302939@@@Two-Handed Swords
+1302968@@@Wastewanderer Rations
+1302994@@@One-Handed Axes
+1302995@@@Bows
+1302996@@@Guns
+1302997@@@One-Handed Maces
+1302999@@@Staves
+1303001@@@Two-Handed Maces
+1303002@@@Unarmed
+1303007@@@Two-Handed Axes
+1303008@@@Daggers
+1303009@@@Thrown
+1303010@@@Crossbows
+1303011@@@Wands
+1303013@@@Polearms
+1303015@@@Fist Weapons
+1303075@@@Lavender Kodo
+1303136@@@Net
+1303140@@@Print Threat Per Target Periodic
+1303209@@@Plague Mind
+1303215@@@Caravan Kodo
+1303218@@@Portal
+1303226@@@Frostbolt
+1303227@@@Heal
+1303228@@@Shadow Bolt
+1303264@@@Unholy Frenzy
+1303266@@@Raise Dead
+1303278@@@(DNT) Sabella Cosmetic Equipment
+1303286@@@Blind
+1303304@@@Ritual burn
+1303308@@@Entangling Roots
+1303309@@@Venom Spit
+1303315@@@Ritual Circle
+1303317@@@Plant Banner of Ironforge
+1303350@@@Slow
+1303351@@@[DNT] Dark Purple Berry
+1303457@@@Skilled
+1303458@@@Reflection Field
+1303459@@@Reflection Field
+1303495@@@Throw Incense
+1303498@@@Arcane Missiles
+1303499@@@Arcane Missiles
+1303503@@@Mana Leak
+1303505@@@Mana Leak
+1303509@@@Spread Incense
+1303520@@@Craft Incense
+1303543@@@Scarlet Banner
+1303551@@@Chain Lightning
+1303588@@@Kill Credit (DNT)
+1303589@@@Kill Credit (DNT)
+1303590@@@Kill Credit (DNT)
+1303591@@@Kill Credit (DNT)
+1303592@@@Kill Credit (DNT)
+1303598@@@Mass Polymorph
+1303599@@@Evocation
+1303603@@@Mana Surge
+1303634@@@Barkskin Blessing
+1303755@@@Toss Hearthstone
+1303762@@@Hearthstone
+1303853@@@Gnomish Garbage
+1303869@@@Toss Hearthstone
+1303872@@@Gadgetzan
+1303979@@@Enrage
+1304277@@@Destroy
+1304281@@@Tracking
+1304310@@@Visitor
+1304323@@@Camping
+1304398@@@Arcane Explosion
+1304401@@@Silence
+1304452@@@Rallying Cry of the Dragonslayer
+1304455@@@Summon Manaling
+1304472@@@Curse of Thorns
+1304473@@@Curse of Thorns
+1304594@@@Warchief's Blessing
+1304678@@@Might of Stormwind
+1304690@@@Songflower Serenade
+1304751@@@Slip'kik's Savvy
+1304753@@@Mol'dar's Moxie
+1304759@@@Fengus' Ferocity
+1304767@@@Sayge's Dark Fortune of Resistance
+1304769@@@Sayge's Dark Fortune of Damage
+1304771@@@Sayge's Dark Fortune of Armor
+1304772@@@Sayge's Dark Fortune of Intelligence
+1304775@@@Sayge's Dark Fortune of Spirit
+1304778@@@Sayge's Dark Fortune of Stamina
+1304780@@@Sayge's Dark Fortune of Agility
+1304782@@@Sayge's Dark Fortune of Strength
+1304806@@@Excavation Tools stowed
+1304941@@@Jorell's Lab
+1304982@@@Allistarj's Resolve
+1304986@@@Grol's Rage
+1304989@@@Defiled Soul
+1304998@@@Sevine's Tether
+1305047@@@Recently Bandaged
+1305116@@@Release Tomb Dust
+1305122@@@DNT
+1305136@@@Area
+1305137@@@DNT
+1305189@@@Soul of Stromgarde
+1305356@@@Mirage
+1305394@@@Fatal Wound
+1305398@@@Shadow Bolt
+1305400@@@Key to the Kingdom
+1305405@@@Ancient Cornerstone Grimoire
+1305416@@@Deceit
+1305418@@@Deceit
+1305419@@@Deceit Passive
+1305420@@@Deceit
+1305422@@@Deceived
+1305424@@@Shard of the Scale
+1305426@@@Shard of the Scale
+1305718@@@Matron's Call
+1305729@@@Trigger Aura
+1305732@@@Matron's Call
+1305748@@@Fireball
+1305819@@@Curse of Twilight
+1305855@@@Blind
+1305943@@@Carrying Unstable Potion
+1305964@@@Give Potion
+1305967@@@[DNT] Initialize Currency - Class Talent Reset Charges
+1305992@@@[DNT] Initialize Currency - Legacy Talent Reset Charges
+1306076@@@Grovewalker
+1306126@@@Smelt Heavy Thorium
+1306128@@@Ensemble: Veteran Adventurer's Outdoor Wear
+1306158@@@Moonwoven
+1306160@@@Moonweave
+1306224@@@Drowning Grasp
+1306225@@@Drowning Grasp
+1306267@@@Traveler's Mark
+1306284@@@Shoot
+1306362@@@Resist Snare/Root 15
+1306384@@@Restore Mathystral Amulet
+1306396@@@Mathystral Amulet
+1306410@@@Restore Mathystral Amulet
+1306411@@@Mathystral Amulet
+1306420@@@Start Quest
+1306429@@@Holy Shock Critical Chance Increase
+1306433@@@Holy Shield Block Value Increase
+1306437@@@(DNT) Hide Mist
+1306438@@@Mournful Blow
+1306448@@@Lesser Healing Wave Crit Chance
+1306455@@@Reduce Block, Dodge, and Parry Chance by 100%
+1306456@@@Reduce Block and Parry Chance by 100%
+1306459@@@Thick Hide
+1306478@@@(DNT) Teleport Corpse
+1306482@@@Regrowth
+1306483@@@Lacerate Mangle Reset Chance
+1306488@@@Swiftmend Cooldown Reduction
+1306515@@@Lesser Flame
+1306518@@@Frost
+1306520@@@Torch of Light
+1306521@@@Steadfast Libram
+1306522@@@Libram of Infusion
+1306523@@@Totem of Urgency
+1306524@@@Idol of Swiftness
+1306525@@@Idol of the Ursine Twins
+1306526@@@Elderwild Waistcord
+1306527@@@Outlaw's Collar
+1306528@@@Elderwild Pants
+1306529@@@Eternity Pauldrons
+1306530@@@Tranquil Wristguards
+1306531@@@Mourning Handguards
+1306532@@@Wild Leather Armor Kit
+1306533@@@Ironwood Blade
+1306534@@@Forest Defender's Axe
+1306535@@@Greenhammer
+1306536@@@Evergreen Shield
+1306537@@@Depleted Thorium Sabatons
+1306538@@@Heavy Thorium Gauntlets
+1306539@@@Azerothium Legplates
+1306540@@@Robes of Fiery Devastation
+1306541@@@Mana-infused Cord
+1306542@@@Rime-encrusted Boots
+1306543@@@Fel Cape
+1306544@@@Cloak of Earth and Sky
+1306545@@@Felblood Soul Bag
+1306546@@@SAF-T Ultra Precision Scope
+1306547@@@Hyper Deluxe Sniper Rifle Mk XVII
+1306572@@@Baleflame
+1306578@@@Accuracy
+1306579@@@Flame
+1306580@@@Balefrost
+1306581@@@Greater Flame
+1306582@@@Greater Frost
+1306583@@@Precision
+1306607@@@Reduce Dispel Type Duration - Disease 15
+1306608@@@Call Sentinel
+1306610@@@Spark
+1306613@@@Manablade
+1306620@@@Frozen
+1306622@@@Rotcleaver
+1306628@@@Scooping snow
+1306632@@@Fallen Grove Walker
+1306650@@@Efficiency - Mana 01
+1306660@@@Efficiency - Mana 02
+1306662@@@Efficiency - Mana 03
+1306665@@@Call Sentinel
+1306672@@@Sporebloom
+1306675@@@Bulwark of Lost Seasons
+1306676@@@Bulwark of Lost Seasons
+1306677@@@Bulwark of Lost Seasons
+1306678@@@Bulwark of Lost Seasons
+1306679@@@Bulwark of Lost Seasons
+1306680@@@Resist Fear 05
+1306681@@@Increased Off Hand Hit 02
+1306682@@@Rumination
+1306683@@@Rumination
+1306684@@@Rumination
+1306686@@@Greathelm of the Colossus
+1306687@@@Greathelm of the Colossus
+1306689@@@Astraea's Promise UNUSED
+1306690@@@Astraea's Promise UNUSED
+1306691@@@Astraea's Promise UNUSED
+1306693@@@Instructions
+1306695@@@Instructions
+1306696@@@Dun Garok
+1306699@@@Living Granite
+1306700@@@Place Vial
+1306742@@@Feral Combat
+1306749@@@Steadfast
+1306759@@@Skywarden Pedant
+1306762@@@Zephras Isle
+1306765@@@Storm Shot
+1306781@@@Dummy
+1306786@@@Libram of the Wild Sky
+1306794@@@Lunar Rage
+1306798@@@Feral Combat
+1306811@@@Lunar Rage
+1306860@@@Open Bottle
+1306891@@@Lunar Rage
+1306900@@@Mod Crit Chance At Target Health 06%
+1306905@@@Fang of the Forlorn
+1306907@@@Defense +4 and Stamina +10
+1306908@@@Froststrider
+1306933@@@Yjn'raathma, Sword of the Still Wind
+1306934@@@Yjn'raathma, Sword of the Still Wind
+1306944@@@Summon Druid of the Talon
+1306955@@@Add Summons Druid of the Talon
+1306956@@@Add Summons
+1306957@@@Add Summons Sentinel
+1306961@@@(DNT) Kathris Timer Dummy
+1306964@@@Summon Sentinel
+1306983@@@Banshee Curse
+1306989@@@Summon
+1307007@@@Lightning Aura
+1307008@@@Lightning Aura
+1307014@@@Old Gloomlurker Eye
+1307018@@@Lightning Aura
+1307019@@@Chilled
+1307050@@@SAF-T Ultra Precision Scope
+1307063@@@Empty Phial
+1307066@@@Bladestorm
+1307067@@@Bladestorm
+1307068@@@Terenas' Wisdom
+1307072@@@(DNT) Wild King Intro Theater
+1307075@@@Summon Druid of the Claw
+1307076@@@Summon Druid of the Talon
+1307103@@@Summon Sentinel
+1307105@@@Summon Druid of the Claw
+1307107@@@Summon Druid of the Claw
+1307132@@@Shadowmeld
+1307172@@@Alchemy Laboratory
+1307174@@@Anarchist's Workbench
+1307175@@@Anvil
+1307176@@@Arcane Forge
+1307178@@@Dark Channeling
+1307199@@@Loop of Lingering Echoes
+1307208@@@Totem of The Undergrove
+1307223@@@Arcane Salvager
+1307226@@@Iron Oven
+1307227@@@Basic Campfire
+1307229@@@Camp Chair
+1307230@@@Camp Tent
+1307234@@@Enchanted Lute
+1307237@@@Expert Campfire
+1307239@@@Faction Banner
+1307240@@@Faction Banner
+1307242@@@Fermenter
+1307243@@@Field Guide
+1307244@@@First Aid Kit
+1307245@@@Fish Bowl
+1307246@@@Fishing Hut
+1307247@@@Fishing Rack
+1307248@@@Greenhouse
+1307251@@@Incense Candle
+1307252@@@Journeyman Campfire
+1307254@@@Lodestone
+1307255@@@Loom
+1307257@@@Cookie's Feast
+1307259@@@Mana Well
+1307261@@@Master Forge
+1307264@@@Molten Foundry
+1307265@@@Plague Doctor's Laboratory
+1307266@@@Reagent Bot
+1307288@@@Soulrip
+1307315@@@Soulrip
+1307334@@@Phantomspeaker Mask
+1307370@@@Mark of Ala'ro
+1307385@@@Repair Bot
+1307386@@@Rock Garden
+1307387@@@Seed Hybridizer
+1307391@@@Sewing Machine
+1307392@@@Sharpening Wheel
+1307393@@@Spinning Wheel
+1307395@@@Tanning Rack
+1307396@@@Toxin Study
+1307397@@@Trapper's Workbench
+1307399@@@Shader
+1307400@@@Idol of the Wild Court
+1307411@@@Lightheaded
+1307423@@@Goaz Stone
+1307426@@@Goaz Stone
+1307433@@@Goaz Stone
+1307508@@@Bramble Root
+1307509@@@Blazing Star
+1307519@@@Rootbinder's Will
+1307520@@@Rootbinder's Will
+1307611@@@Reward
+1307644@@@Spark
+1307654@@@Timer
+1307660@@@DNT
+1307667@@@DNT
+1307694@@@[DNT] Pain
+1307696@@@Skyshatter
+1307760@@@Warplate of Burden
+1307762@@@Weight of Duty
+1307779@@@Timer
+1307791@@@Bark of the Scale
+1307792@@@Bark of the Scale
+1307848@@@Strength of the Moon
+1307882@@@Debilitate
+1307889@@@Timer
+1307940@@@Light in the Dark
+1307943@@@Improved Pick Pocket and Distract 03
+1307944@@@Improved Pick Pocket and Distract 04
+1307945@@@Improved Pick Pocket and Distract 05
+1308017@@@Summon
+1308018@@@DNT
+1308019@@@DNT
+1308020@@@Nightsaber Leggings
+1308021@@@Nightsaber Leggings
+1308022@@@Foreststalker
+1308023@@@Dawnbloom
+1308024@@@Dawnbloom
+1308027@@@Camping
+1308029@@@Timer
+1308030@@@Summon
+1308031@@@Summon
+1308032@@@Summon
+1308033@@@Summon
+1308034@@@Summon
+1308035@@@Controller Timer
+1308095@@@Invisible Dagger
+1308117@@@Stock Crate
+1308118@@@Seed of Eternity
+1308128@@@Prism of Duality
+1308131@@@Prism of Duality
+1308132@@@Prism of Duality
+1308177@@@Weakened
+1308178@@@Whimsical Waistwrap
+1308179@@@Gizmo Girdle
+1308180@@@Clanking Cord
+1308182@@@Serrated Strap
+1308183@@@Floppy Goggles
+1308184@@@Bent Goggles
+1308185@@@Stuckbutton Goggles
+1308186@@@Dented Goggles
+1308237@@@Increase Spell Dam Dragonkin 53
+1308246@@@Malignant Rotclaw Flesh
+1308247@@@Malignant Rotclaw Flesh
+1308250@@@Gift of Cenarius
+1308263@@@Create Arcane Censer
+1308283@@@Summon Shadowgale Squirrel
+1308302@@@Camping
+1308318@@@Dominate Will
+1308351@@@Snowrunners
+1308352@@@Snowrunners
+1308377@@@Create Tome of Dalaran
+1308379@@@Opening
+1308380@@@Push Loot
+1308458@@@Carved Stone Trinket stashed
+1308461@@@Rift Portal
+1308462@@@Quest Invisibility
+1308463@@@Split
+1308473@@@Poisoned Blades
+1308474@@@Poisoned Blades
+1308511@@@Bitter Cold
+1308516@@@Bitter Cold
+1308517@@@Teleport Just a Lil' Bit
+1308520@@@Guidance of Ursoc
+1308526@@@Goaz Stone
+1308527@@@Goaz Stone
+1308528@@@Goaz Stone
+1308531@@@Wisdom of Ursol
+1308568@@@Rejuvenation
+1308643@@@Timer
+1308646@@@Summon
+1308651@@@Chill
+1308652@@@Teleport: Dalaran
+1308660@@@Timer
+1308663@@@Walk on Air
+1308664@@@Timer
+1308665@@@Summon
+1308704@@@Curse of the Eye
+1308705@@@Curse of the Eye
+1308707@@@Curse of the Eye
+1308718@@@Fel Ash
+1308733@@@Overdrive
+1308764@@@Might of Bedrock
+1308769@@@Talusguard
+1308770@@@Talusguard
+1308772@@@Crafting
+1308777@@@Shield Spike
+1308816@@@Stillwater Striders
+1308817@@@Stillwater Striders
+1308836@@@Bloodsail Admiral Title
+1308843@@@Hexcalibur
+1308854@@@Timer
+1308861@@@Summon
+1308870@@@Summon Weevil K. Neevil
+1308883@@@Create
+1308884@@@Traveler's Sign
+1308885@@@Traveler's Sign
+1308886@@@Traveler's Sign
+1308887@@@Traveler's Sign
+1308888@@@Traveler's Sign
+1308889@@@Traveler's Sign
+1308890@@@Traveler's Sign
+1308891@@@Traveler's Sign
+1308892@@@Traveler's Sign
+1308893@@@Traveler's Sign
+1308894@@@Traveler's Sign
+1308895@@@Traveler's Sign
+1308896@@@Traveler's Sign
+1308910@@@Venomclasp Cleansing
+1308911@@@Venomclasp Cleansing
+1308913@@@Manablade
+1308914@@@Iceknife
+1308917@@@Mother's Watch
+1308935@@@Striking
+1308937@@@Arcane Missile
+1308939@@@Totem of Elders
+1309005@@@Buriza-Do Spike
+1309013@@@DNT
+1309050@@@Cat Form
+1309054@@@Feline Blessing of the Silent Shadow
+1309062@@@Idol of Primal Attraction
+1309069@@@Rend Flesh
+1309071@@@Intense Heat
+1309072@@@Intense Heat
+1309073@@@Heavy Leather Ball
+1309120@@@Destroy Sunscale Feathers
+1309143@@@Timer
+1309170@@@[DNT] Can't Be Healed
+1309191@@@Riftbite
+1309208@@@Cerulean Prideclaw
+1309214@@@(DNT) Death Warning
+1309230@@@Resist Snare/Root 10
+1309241@@@Legwraps of Suspended Time
+1309243@@@Legwraps of Suspended Time
+1309245@@@(DNT) Death Warning
+1309268@@@Black Warden Saber Mount
+1309270@@@Brown Warden Saber Mount
+1309271@@@Gray Warden Saber Mount
+1309272@@@White Warden Saber Mount
+1309283@@@!deepS
+1309310@@@Opening
+1309315@@@Poison
+1309318@@@Avatar of Vengeance
+1309320@@@Left Tusk of Umbrinoth
+1309321@@@Left Tusk of Umbrinoth
+1309322@@@Right Tusk of Umbrinoth
+1309323@@@Right Tusk of Umbrinoth
+1309346@@@Black Devilsaur Mount
+1309347@@@Blue Devilsaur Mount
+1309348@@@Green Devilsaur Mount
+1309349@@@Purple Devilsaur Mount
+1309350@@@White Devilsaur Mount
+1309369@@@Forsaken Weapons
+1309377@@@Black Druid Moose Mount
+1309379@@@White Druid Moose Mount
+1309380@@@Green Druid Moose Mount
+1309381@@@Gray Druid Moose Mount
+1309405@@@Veteran Adventurer's Loyal Companion
+1309410@@@Night Watchman's Torch
+1309420@@@Summon Pachimari
+1309422@@@Rage of Earth
+1309423@@@Galestrider Chick
+1309436@@@Summon Black Furbolg Pet
+1309437@@@Summon Brown Furbolg Pet
+1309438@@@Summon Gray Furbolg Pet
+1309439@@@Summon Tan Furbolg Pet
+1309440@@@Summon White Furbolg Pet
+1309442@@@Storm's Grasp
+1309501@@@Summon Purple Ent Pet
+1309503@@@Summon Red Ent Pet
+1309504@@@Summon Blue Ent Pet
+1309505@@@Summon Gray Ent Pet
+1309506@@@Summon Orange Ent Pet
+1309507@@@Summon Yellow Ent Pet
+1309513@@@Summon Greater Tarantula
+1309539@@@Tidebringer's Claw
+1309544@@@[DNT] Tarantula Egg Quest Credit
+1309545@@@Summon Plagued Cockroach
+1309546@@@Summon Undercity Cockroach
+1309547@@@Summon Jungle Boa
+1309549@@@Sad-Sack Sandals
+1309550@@@Claymore of Two Moons
+1309551@@@Scalding Flamehoof
+1309588@@@[DNT] Play Sound - Spawn Virtulent Blood
+1309595@@@Shadow Word: Death
+1309598@@@Shadow Word: Death
+1309618@@@Shen'dorei Windwell
+1309631@@@Living Spirit
+1309633@@@Shadow Word: Death
+1309635@@@Shadow Word: Death
+1309636@@@Shadow Word: Death
+1309678@@@Flamebreak Talisman
+1309685@@@Satchel of Potions
+1309702@@@Spawn Forsaken Adventurer
+1309718@@@Axe Pin
+1309719@@@Axe Pin
+1309725@@@Healing Potion
+1309726@@@Restore Mana
+1309728@@@Speed
+1309730@@@Summon Brown Ground Squirrel
+1309736@@@Summon Red Ground Squirrel
+1309752@@@Summon Brown Rabbit
+1309761@@@Quickening
+1309763@@@Sweeping Slam
+1309765@@@Quickening
+1309784@@@Fire
+1309788@@@Confuse Beast
+1309823@@@Deafening Shriek
+1309871@@@Flag Tracking Quest
+1309950@@@Devouring Contagion
+1309957@@@Holy Precision
+1309965@@@Comprehend Scroll
+1309969@@@Power in Light
+1309973@@@Comprehend Scroll
+1309978@@@Opening
+1310015@@@Krol'dok Speed
+1310023@@@Shadowmeld
+1310029@@@Comprehend Scroll
+1310030@@@Comprehend Scroll
+1310041@@@Research
+1310046@@@Shadow Channel
+1310076@@@Early Demise
+1310077@@@Greater Firepower
+1310087@@@Drain Life
+1310090@@@Camping
+1310132@@@Craft Incense
+1310133@@@Spread Incense
+1310155@@@Carrying Unstable Potion
+1310156@@@Opening
+1310161@@@Eating...
+1310162@@@Eating...
+1310163@@@Eating...
+1310164@@@Eating...
+1310165@@@Eating...
+1310166@@@Sit A While
+1310167@@@Loose Clearcutter Blade
+1310168@@@Loose Clearcutter Blade
+1310180@@@Wing Clip
+1310181@@@Conjure Rifle
+1310185@@@Tactical Mastery
+1310189@@@Ground Stomp
+1310193@@@Set Health % (Uses Override Points) (No Health Regen)
+1310195@@@Pierce Armor
+1310196@@@Slam
+1310197@@@Slam
+1310198@@@Slam
+1310199@@@Slam
+1310200@@@Slam
+1310222@@@Spearing Strike
+1310236@@@Boundless Rage
+1310243@@@Rend
+1310285@@@Curse of the Satyr
+1310296@@@Water Walking
+1310308@@@Ranged Crit Bonus +02
+1310315@@@Raging Blows
+1310316@@@Master of Defense
+1310317@@@Vanguard
+1310318@@@Shield Specialization
+1310329@@@Summon Diablo
+1310330@@@Summon Zergling
+1310331@@@Summon Panda
+1310338@@@[DNT] Greenhouse
+1310349@@@DNT
+1310377@@@[DNT] Greenhouse
+1310385@@@Lightning
+1310387@@@Smoking
+1310418@@@[DNT] Greenhouse
+1310424@@@(DNT) Flower Aura
+1310429@@@[DNT] Greenhouse
+1310430@@@[DNT] Greenhouse
+1310438@@@Stun
+1310491@@@Opening
+1310496@@@Survivalist's Discipline
+1310497@@@Pool of Fire
+1310499@@@Rejuvenation
+1310502@@@Rejuvenation
+1310503@@@Mark of the Wild
+1310532@@@Expose Prey
+1310533@@@Lacerating Strikes
+1310536@@@Lacerating Strikes
+1310594@@@Filling Phial
+1310595@@@Vigilant
+1310612@@@Trickster's Dance
+1310617@@@Trickster's Dance
+1310627@@@Predator's Edge
+1310655@@@Winterspring Shroud
+1310661@@@Improved Stings
+1310681@@@Hissing Serum
+1310684@@@Lone Wolf
+1310687@@@Sniper Shot
+1310697@@@Improved Expose Armor
+1310703@@@Venom
+1310705@@@Mutilate
+1310706@@@Mutilate
+1310707@@@Mutilate
+1310708@@@Vigor
+1310709@@@Coup de Grace
+1310710@@@Improved Backstab
+1310711@@@Flawless Execution
+1310721@@@Thousand Cuts
+1310723@@@Thousand Cuts
+1310725@@@Spirit Bond
+1310726@@@Expose Prey
+1310728@@@Quietus
+1310735@@@Twist of Light
+1310785@@@Sniper Shot
+1310786@@@Sniper Shot
+1310831@@@Bestial Wrath
+1310850@@@Dominate Will
+1310893@@@Combine Power
+1310897@@@Voice of Truth
+1310899@@@Reverence
+1310902@@@Improved Holy Strike
+1310904@@@Divine Precision
+1310905@@@Consecrated Ground
+1310908@@@Illumination
+1310909@@@Light's Vigil
+1310910@@@Light's Vigil
+1310911@@@Light's Vigil
+1310912@@@Light's Vigil
+1310914@@@Light's Vigil
+1310925@@@Shield Specialization
+1310927@@@Light's Fury
+1310949@@@Malevolence
+1310990@@@Wolfshead Helm
+1310993@@@Corrupted Healing
+1310994@@@Swift Judgement
+1311015@@@Templar's Bulwark
+1311022@@@[DNT] Test Offhand Hit
+1311033@@@Iron Creed
+1311034@@@Iron Creed
+1311074@@@Sanctified Judgement
+1311077@@@Sanctified Judgement
+1311083@@@Crusade
+1311084@@@Champion of the Light
+1311085@@@Instrument of Law
+1311087@@@Sacred Arbiter
+1311523@@@Apply Poultice
+1311590@@@Light's Vigil
+1311591@@@Light's Vigil
+1311592@@@Light's Vigil
+1311593@@@Light's Vigil
+1311594@@@Light's Vigil
+1311595@@@Light's Vigil
+1311596@@@Light's Vigil
+1311597@@@Light's Vigil
+1311598@@@Light's Vigil
+1311599@@@Light's Vigil
+1311601@@@Light's Vigil
+1311604@@@Holy Shock
+1311605@@@Holy Shock
+1311606@@@Holy Shock
+1311647@@@Seal of Fury
+1311649@@@Seal of Fury
+1311650@@@Judgement of Fury
+1311654@@@Seal of Fury
+1311655@@@Judgement of Fury
+1311656@@@Seal of Fury
+1311676@@@Curse of the Elements
+1311677@@@Curse of the Elements
+1311680@@@Curse of the Elements
+1311701@@@Echo of Fury
+1311703@@@Echo of Command
+1311704@@@Echo of Righteousness
+1311705@@@Echo of Justice
+1311806@@@Light's Vigil
+1311812@@@Timer
+1311815@@@Timer
+1311891@@@Shader
+1311895@@@Hyjal Speed
+1311947@@@Summon Arcane Companion
+1311984@@@Sleeping
+1312002@@@Ice Lance
+1312009@@@Eating...
+1312010@@@Eating...
+1312052@@@Infernal Lasso
+1312128@@@Ranshalla's Torch Trap
+1312152@@@Tiger's Fury
+1312176@@@Forge Blast
+1312233@@@Open Care Package
+1312330@@@Holy Smite
+1312340@@@Rooted
+1312364@@@Awakening
+1312416@@@Send Event
+1312438@@@Shadow Bolt
+1312637@@@Summon Hawk
+1312639@@@Summon Hawk
+1312643@@@Cultivation
+1312650@@@Cultivation
+1312670@@@Crumbling Hearthstone
+1312698@@@Restored Healing Potion
+1312702@@@Restored Mana Potion
+1312719@@@Restorative Bread
+1312745@@@BB Shot
+1312869@@@Leech Poison
+1312870@@@Poison Shock
+1312880@@@Summon Baby Crocolisk
+1312934@@@Wake of Fire
+1312955@@@Thorns
+1313252@@@Lava
+1313291@@@Dual Wield Specialization
+1313342@@@Flash of Light
+1313343@@@Flash of Light
+1313344@@@Flash of Light
+1313345@@@Flash of Light
+1313346@@@Flash of Light
+1313348@@@Holy Light
+1313349@@@Holy Light
+1313350@@@Holy Light
+1313351@@@Holy Light
+1313352@@@Holy Light
+1313374@@@Melt Key
+1313379@@@Prayer of Mending
+1313381@@@Prayer of Mending
+1313382@@@[DNT] Test Sound
+1313470@@@Generic Sound Squisher - Creature Crusher
+1313503@@@DNT
+1313618@@@Kill Credit (DNT)
+1314011@@@Wound
+1314040@@@Burning Shell
+1314065@@@Mount Speed
+1314069@@@Fire Blast
+1314102@@@Relentless Strikes Effect
+1314103@@@Improved Seal of Fury
+1314104@@@Improved Seal of Fury
+1314120@@@Summon Condor Hatchling
+1314143@@@Ancestor's Vengeance
+1314159@@@DNT
+1314174@@@[DNT] Herb Event
+1314192@@@[DNT] Spawn Herb
+1314197@@@[DNT] Spawn Herb
+1314202@@@[DNT] Spawn Herb
+1314205@@@[DNT] Spawn Herb
+1314274@@@Shadow Bolt Volley
+1314281@@@Flamestrike
+1314305@@@Puncture
+1314364@@@Summon Spider
+1314368@@@[DNT] Tim's Test Visual 3
+1314412@@@Renewing Flame
+1314415@@@Renewing Blaze
+1314784@@@Fingerbreaker Stamp
+1314795@@@Increased Critical 1 - All - Gladiator Set
+1314828@@@Spirit of Eskhandar
+1314829@@@Spirit of Eskhandar
+1314842@@@Blessed by the Great Cat Spirit
+1314888@@@Poison Sting
+1315077@@@Lash of the Dark Rider
+1315080@@@Mount Speed
+1315190@@@Zarla's Snack Pouch
+1315212@@@Hearthstone
+1315213@@@Create Scarlet Hearthstone
+1315216@@@Summon
+1315217@@@Holiday Cheer
+1315218@@@Holiday Cheer
+1315226@@@Update Interactions
+1315237@@@Breath of Decay
+1315267@@@Summon Tallstrider Hatchling
+1315283@@@Create Elemental Attractor
+1315286@@@Crystallize
+1315307@@@Beseech the Mists
+1315330@@@Moon's Touch
+1315339@@@Moon's Touch
+1315396@@@Frost
+1315408@@@Blessed by the Great Windborne Cat Spirit
+1315427@@@Nature's Blessing
+1315448@@@Fixate
+1315449@@@Putrefaction
+1315451@@@Summon Minfernal
+1315458@@@Spore Explosion
+1315527@@@Feline Blessing of the Silent Shadow
+1315538@@@[DNT] IsEffectivelyTank Aura - TEST
+1315552@@@(DNT) Dismiss Pet
+1315553@@@(DNT) Resummon Pet
+1315557@@@Charm
+1315767@@@Howler's Cry
+1315778@@@Mount Speed
+1315844@@@Lucky Shovelnose Snout
+1315849@@@Behemoth Bone
+1315854@@@Behemoth Bones
+1315859@@@Passive DoT
+1315878@@@Flamebreak Talisman
+1315969@@@Rune of Perfection
+1315971@@@Rune of Perfection
+1315972@@@Slammed
+1315989@@@Rune of Duty
+1315990@@@Rune of Duty
+1315996@@@Grounded Electroshock
+1316039@@@Fire Blast
+1316048@@@Transformative Cocoon
+1316049@@@Transformative Cocoon
+1316051@@@Raider's Seal
+1316052@@@Raider's Seal
+1316053@@@Enriched Seal
+1316054@@@Enriched Seal
+1316055@@@Darkspear Voodoo Seal
+1316056@@@Darkspear Voodoo Seal
+1316057@@@Volunteer's Lucky Seal
+1316058@@@Volunteer's Lucky Seal
+1316101@@@Repentance Duration Increase
+1316319@@@Hurricane
+1316346@@@Sliced Ankle
+1316379@@@Cosmetic - Sleep Zzz
+1316382@@@Dust Storm
+1316387@@@Muculent Rot
+1316388@@@Muculent Rot
+1316474@@@Moonfire
+1316480@@@Entangling Roots
+1316489@@@Highland Venom
+1316555@@@Slam
+1316579@@@Shoot
+1316591@@@Stock Crate
+1316595@@@Stock Crate
+1316596@@@Stock Crate
+1316597@@@Stock Crate
+1316598@@@Stock Crate
+1316601@@@Heal
+1316612@@@Hook Shove
+1316677@@@Wrath
+1316680@@@Forceful Wrath
+1316697@@@Wrack
+1316778@@@Summon Minimule
+1316794@@@Ultrasafe Rechargeable Battery
+1316847@@@Summon Wolf
+1316865@@@Immolate
+1316872@@@Unknown
+1316928@@@Underwater Breathing
+1316990@@@Legacy Reputation Reward (Hardcore placeholder)
+1316991@@@Penance
+1316992@@@Penance
+1316993@@@Penance
+1316994@@@Penance
+1316995@@@Penance
+1317006@@@Litany of Light
+1317007@@@Litany of Light
+1317038@@@Increase Strength 20
+1317039@@@Now you're making me angry
+1317040@@@Angry
+1317170@@@Summon Fire Elemental
+1317232@@@Timer
+1317233@@@Timer
+1317234@@@Timer
+1317235@@@Timer
+1317253@@@Spirit of Wind
+1317256@@@Unknown
+1317257@@@Strider Kick
+1317268@@@Holy Hand Grenade
+1317269@@@Bless Grenade
+1317270@@@Unsanctified Grenade
+1317271@@@Righteous Indignation
+1317272@@@Righteous Indignation
+1317279@@@Transmute: Legionite
+1317283@@@Mysticbloom Seed
+1317285@@@Arena Master
+1317286@@@Gnomish Shrink Ray
+1317288@@@Tidal Charm
+1317424@@@Heal
+1317432@@@Forging Strike
+1317441@@@Rune of Duty
+1317442@@@Rune of Duty
+1317443@@@Rune of Perfection
+1317444@@@Rune of Perfection
+1317446@@@Ooze Covered Miner
+1317450@@@Slammed
+1317472@@@Slammed
+1317478@@@Force Reaction
+1317479@@@Gnomish Battle Chicken
+1317480@@@Battle Squawk
+1317483@@@Goblin Bomb Dispenser
+1317486@@@Swamp Speed
+1317516@@@Rejuvenation
+1317579@@@DNT
+1317583@@@Poison
+1317591@@@Light Lamp
+1317604@@@Luffa
+1317605@@@Light Lamp
+1317675@@@Slow Fall
+1317692@@@Training Lesson
+1317695@@@Training Lesson
+1317740@@@Smotts' Compass
+1317755@@@Reading
+1317830@@@[DNT] Shadow Infusion
+1317849@@@Smotts' Compass
+1317958@@@Satchel of Copper Bombs
+1317959@@@Satchel of Bronze Bombs
+1317960@@@Satchel of Iron Bombs
+1317961@@@Satchel of Dark Iron Bombs
+1317962@@@Cracked Blacksmith Hammer
+1317963@@@Mithril Blacksmith Hammer
+1317964@@@Arcanite Blacksmith Hammer
+1317985@@@Mithril Mechanical Dragonling
+1317999@@@Authority
+1318000@@@Authority
+1318001@@@Authority
+1318002@@@Stolen Power
+1318003@@@Stolen Power
+1318004@@@Stolen Power
+1318022@@@[DNT] Cage
+1318024@@@Compact Critter Carrier
+1318031@@@Small Bomb
+1318034@@@Small Satchel of Bombs
+1318061@@@Bomb
+1318062@@@Satchel of Bombs
+1318068@@@Large Bomb
+1318069@@@Large Satchel of Bombs
+1318070@@@Diamond Flask
+1318073@@@Diamond Flask
+1318084@@@Fingerbreaker Stamp
+1318102@@@Volunteer's Lucky Seal
+1318103@@@Volunteer's Lucky Seal
+1318104@@@Zarla's Snack Pouch
+1318108@@@Dragon's Call
+1318110@@@Lydros' Inspection
+1318121@@@Huge Bomb
+1318123@@@Huge Bombs
+1318124@@@Darkspear Voodoo Seal
+1318125@@@Darkspear Voodoo Seal
+1318129@@@Relentless Raider's Seal
+1318130@@@Relentless Raider's Seal
+1318131@@@Enriched Seal
+1318132@@@Enriched Seal
+1318151@@@Stealth
+1318159@@@Ancient Power
+1318163@@@Concussed
+1318178@@@Cracked Skull
+1318182@@@Skull Crack
+1318185@@@Concussed
+1318217@@@Portal
+1318244@@@Kalimdor Speed
+1318250@@@Puncture
+1318270@@@Teleport to Purple Parlor
+1318287@@@Teleport to Violet Citadel
+1318301@@@[DNT] Create Item
+1318304@@@[DNT] Create Item
+1318317@@@Parachute-Priest Pager
+1318318@@@Arena Grand Master
+1318323@@@Scented Runewood Brooch
+1318324@@@Scented Runewood Brooch
+1318325@@@Arcanite Dragonling
+1318326@@@Briarwood Reed
+1318327@@@Briarwood Reed
+1318328@@@Loop of Lingering Echoes
+1318432@@@Fire Blast
+1318470@@@Defender of the Timbermaw
+1318476@@@Royal Seal of Eldre'Thalas
+1318477@@@Royal Seal of Eldre'Thalas
+1318478@@@Royal Seal of Eldre'Thalas
+1318479@@@Royal Seal of Eldre'Thalas
+1318480@@@Royal Seal of Eldre'Thalas
+1318514@@@Defender of the Barkskin
+1318780@@@Flag Tracking Quest
+1318807@@@Cloud of Chained Essence
+1318827@@@Mana Gems
+1318846@@@Eye of the Beast
+1318863@@@Flag Tracking Quest
+1318864@@@Flag Tracking Quest
+1318865@@@Flag Tracking Quest
+1318866@@@Flag Tracking Quest
+1318867@@@Flag Tracking Quest
+1318868@@@Flag Tracking Quest
+1318922@@@Crafting
+1318930@@@Draconic Infused Emblem
+1318931@@@Draconic Infused Emblem
+1318938@@@Counterattack Lodestone
+1318944@@@Blackhand's Breadth
+1318945@@@Blackhand's Breadth
+1318954@@@Increased Critical 1 - Melee and Ranged
+1318956@@@Increased Critical 1 - Spell
+1318987@@@Mod Creature Hit Chance
+1319047@@@Graverobber's Shovel
+1319092@@@Arrows
+1319114@@@DNT Green Glow
+1319154@@@Small Purple Rocket
+1319155@@@Small White Rocket
+1319156@@@Small Yellow Rocket
+1319157@@@Large Purple Rocket
+1319158@@@Large White Rocket
+1319159@@@Large Yellow Rocket
+1319160@@@Purple Rocket Cluster
+1319161@@@White Rocket Cluster
+1319162@@@Yellow Rocket Cluster
+1319163@@@Large Purple Rocket Cluster
+1319164@@@Large White Rocket Cluster
+1319165@@@Large Yellow Rocket Cluster
+1319201@@@Screen Shake
+1319202@@@DNT
+1319206@@@Mod Creature Spell Hit Chance
+1319256@@@Summon Ravenlock
+1319257@@@Holy Strike
+1319258@@@Holy Light
+1319259@@@Crusader Strike
+1319260@@@Aura of Zeal
+1319289@@@Druid Forms
+1319309@@@Druidic Auras
+1319310@@@Well Fed
+1319311@@@Nutritious Food
+1319313@@@Plated Armorfish
+1319355@@@Start Duel
+1319378@@@Waxing Moon
+1319382@@@Waning Moon
+1319421@@@Motivated
+1319423@@@Krol'dok Speed
+1319426@@@Krol'dok Speed
+1319427@@@Krol'dok Speed
+1319439@@@Gather Power
+1319446@@@Mod Creature Haste
+1319453@@@Festive Mystery Gift
+1319456@@@Festive Mystery Gift
+1319468@@@Create Item
+1319489@@@Create Item
+1319507@@@Stances
+1319508@@@Create Item
+1319539@@@Tomb Weed
+1319550@@@Force of Nature
+1319611@@@Emerald Stasis
+1319623@@@Emerald Stasis
+1319632@@@Holy Light
+1319652@@@Curses
+1319666@@@[DNT] Cosmetic Nature Channel
+1319669@@@Curses
+1319759@@@Banes
+1319792@@@Aura of Rot
+1320093@@@Blooming Heart
+1320095@@@Entangling Roots
+1320096@@@They love me...
+1320097@@@They love me not...
+1320105@@@They Love Me!
+1320107@@@They Love Me Not
+1320162@@@[DNT] Wriggle Away!
+1320183@@@Summon Imp
+1320227@@@[DNT] Tim's Test Visual 4
+1320269@@@Toofbreak
+1320330@@@Black Horn Necklace
+1320332@@@Black Horn Necklace
+1320379@@@Polymorph
+1320446@@@[DNT] Test Spell
+1320496@@@Carrying Unstable Potion
+1320498@@@Thunderstomp
+1320509@@@Shadow Shock
+1320512@@@Cosmetic Lightning
+1320579@@@Desert Winds
+1320580@@@Desert Winds
+1320643@@@Water Breathing
+1320658@@@Unleash Swarm
 2.5.1.38043
 11@@@Frostbolt of Ages
 50@@@Show Dot Variable
 66@@@Invisibility
 87@@@Automation Mechanic Immunity
-132@@@Detect Invisibility
 469@@@Commanding Shout
 483@@@Learning
 553@@@Wavestorm 2
-693@@@Create Soulstone
 813@@@Language Thalassian
 1206@@@REUSE
 1330@@@Garrote - Silence
@@ -31622,9 +37369,6 @@
 5739@@@Meteor Strike Infernal
 5940@@@Shiv
 6061@@@Wave Beam
-6201@@@Create Healthstone
-6202@@@Create Healthstone
-6366@@@Create Firestone
 6542@@@Enraged Defense
 6558@@@Evil Intellect
 6562@@@Heroic Presence
@@ -31647,11 +37391,7 @@
 10270@@@Fel Suppression
 10326@@@Turn Evil
 11094@@@Molten Shields
-11242@@@Arcane Impact
 11412@@@Nether Shell
-11459@@@Philosopher's Stone
-11729@@@Create Healthstone
-11730@@@Create Healthstone
 11958@@@Cold Snap
 12292@@@Death Wish
 12318@@@Commanding Presence
@@ -31699,7 +37439,6 @@
 15603@@@Healer Trinket
 15746@@@Hatch Rookery Egg
 15969@@@Tormenting Lash
-16268@@@Spirit Weapons
 16460@@@Festering Bite
 16807@@@Mass Teleport
 16814@@@Starlight Wrath
@@ -31717,10 +37456,7 @@
 16920@@@Control of Nature
 16923@@@Celestial Focus
 16924@@@Celestial Focus
-16966@@@Shredding Attacks
 16968@@@Shredding Attacks
-17002@@@Feral Swiftness
-17069@@@Naturalist
 17070@@@Naturalist
 17071@@@Naturalist
 17072@@@Naturalist
@@ -31731,18 +37467,12 @@
 17108@@@Intensity
 17619@@@Alchemist's Stone
 17713@@@Increased Critical 100
-17727@@@Create Spellstone
-17728@@@Create Spellstone
-17804@@@Soul Siphon
 17805@@@Soul Siphon
-17952@@@Create Firestone
-17953@@@Create Firestone
 18062@@@Increased Dodge 96
 18063@@@Increased Parry 100
 18064@@@Increased Block 100
 18066@@@Increased Hit Rating 100
 18371@@@Drain Soul
-18459@@@Incineration
 18460@@@Incineration
 18767@@@Master Conjuror
 18768@@@Master Conjuror
@@ -31764,9 +37494,6 @@
 20361@@@Sanctified Light
 20504@@@Weapon Mastery
 20505@@@Weapon Mastery
-20752@@@Create Soulstone
-20756@@@Create Soulstone
-20757@@@Create Soulstone
 21340@@@Berserk
 21399@@@Alchemist's Stone
 21400@@@Alchemist's Stone
@@ -31803,13 +37530,9 @@
 21497@@@Increased Block 37
 21498@@@Increased Block 38
 21808@@@Landslide
-21935@@@Snowmaster 9000
-21940@@@Snowmaster 9000
 22093@@@QAE 285 to spell damage
 22570@@@Maim
 22725@@@Defense Rating +5
-22749@@@Enchant Weapon - Spell Power
-22750@@@Enchant Weapon - Healing Power
 22780@@@Ranged Hit Bonus +30
 23047@@@Fear Cast Time Reduction
 23570@@@Increased Critical Spell
@@ -32028,7 +37751,6 @@
 26371@@@Lightning Shield
 26372@@@Lightning Shield
 26373@@@Lunar Invitation
-26403@@@Festival Dress
 26547@@@Green Glowing Owl
 26551@@@Jade Owl
 26562@@@Aquamarine Pendant of the Warrior
@@ -32472,7 +38194,6 @@
 27985@@@Floating
 27996@@@Spellsurge
 27997@@@Spellsurge Trigger
-28002@@@Ghost Visual
 28003@@@Enchant Weapon - Spellsurge
 28004@@@Enchant Weapon - Battlemaster
 28005@@@Battlemaster
@@ -34144,7 +39865,6 @@
 31685@@@Empowered Frostbolt
 31686@@@Empowered Frostbolt
 31687@@@Summon Water Elemental
-31688@@@Frost Breath
 31689@@@Spore Cloud
 31690@@@Putrid Mushroom
 31693@@@Putrid Mushroom Primer
@@ -35405,10 +41125,8 @@
 33386@@@Increased Dagger
 33387@@@Great Heal
 33388@@@Riding
-33389@@@Apprentice Riding
 33390@@@Arcane Torrent
 33391@@@Riding
-33392@@@Journeyman Riding
 33393@@@Summon Infernals
 33394@@@Replenish Mana
 33395@@@Freeze
@@ -42690,7 +48408,6 @@
 42592@@@Blood of Amber
 42593@@@Facet of Eternity
 42594@@@Shape of the Bear
-42596@@@Squashling
 42598@@@Squashling
 42603@@@Headless Horseman Climax, Head: Periodic
 42604@@@Cosmetic - Blue Fireball to Random Target
@@ -42945,7 +48662,6 @@
 43303@@@Flame Shock
 43305@@@Earth Shock
 43306@@@Headless Horseman Climax - Heal Body
-43308@@@Find Fish
 43309@@@Polymorph
 43310@@@Ram Level - Neutral
 43311@@@Halazzi Transform
@@ -43775,12 +49491,9 @@
 44947@@@Quest - Living Flare - Credit
 44948@@@Quest - Living Flare Detonator
 44949@@@Whirlwind
-44950@@@Green Winter Clothes
-44953@@@Winter Boots
 44955@@@Mangle
 44956@@@Drain Mana
 44957@@@Nether Shock
-44958@@@Red Winter Clothes
 44960@@@Surge
 44968@@@Heavy Knothide Armor Kit
 44969@@@Quest - Sunwell Daily - Crystal Ward Credit
@@ -44100,7 +49813,6 @@
 45432@@@Light's Ward
 45437@@@Stamp Out Bonfire
 45438@@@Ice Block
-45440@@@Steam Tonk Controller
 45442@@@Soul Flay
 45443@@@Stamp Out Bonfire, Event
 45444@@@Bonfire's Blessing
@@ -45836,7 +51548,6 @@
 11108@@@World in Flames
 11237@@@Arcane Stability
 11242@@@Spell Impact
-11252@@@Arcane Shielding
 11314@@@Fire Nova
 11315@@@Fire Nova
 11886@@@Capture Beast
@@ -45875,7 +51586,6 @@
 13807@@@Close Quarters Combat
 13819@@@Warhorse
 13921@@@Artisan Enchanter
-13960@@@Hack and Slash
 13961@@@Hack and Slash
 13962@@@Hack and Slash
 13963@@@Hack and Slash
@@ -45890,7 +51600,6 @@
 15048@@@Pet Bombling
 15049@@@Lil' Smoky
 15067@@@Sprite Darter Hatchling
-15258@@@Shadow Weaving
 15274@@@Veiled Shadows
 15311@@@Veiled Shadows
 15337@@@Improved Spirit Tap
@@ -45905,7 +51614,6 @@
 16056@@@Ancient Frostsaber
 16081@@@Winter Wolf
 16082@@@Palomino
-16086@@@Improved Fire Nova
 16180@@@Improved Water Shield
 16196@@@Improved Water Shield
 16198@@@Improved Water Shield
@@ -45918,7 +51626,6 @@
 16544@@@Improved Fire Nova
 16769@@@Arcane Stability
 16770@@@Arcane Stability
-16953@@@Primal Fury
 16979@@@Feral Charge - Bear
 17074@@@Nature's Bounty
 17075@@@Nature's Bounty
@@ -45927,7 +51634,6 @@
 17078@@@Nature's Bounty
 17456@@@Red and Blue Mechanostrider
 17459@@@Icy Blue Mechanostrider Mod A
-17481@@@Rivendare's Deathcharger
 17634@@@Potion of Petrification
 17707@@@Panda Cub
 17708@@@Mini Diablo
@@ -45947,7 +51653,6 @@
 18705@@@Demonic Brutality
 18706@@@Demonic Brutality
 18707@@@Demonic Brutality
-18731@@@Fel Vitality
 18743@@@Fel Vitality
 18744@@@Fel Vitality
 19286@@@Survival Tactics
@@ -45985,7 +51690,6 @@
 21183@@@Heart of the Crusader
 21745@@@Bone Gryphon
 21855@@@Challenge Flag
-21970@@@Mark of the Chosen
 22096@@@Ebon Blade Prisoners: Dummy from Player
 22097@@@Eliminate the Competition: Onu'zun's Frog Transform
 22428@@@Enrage
@@ -46029,16 +51733,7 @@
 24318@@@Frenzy
 24361@@@Mighty Troll's Blood Elixir
 24363@@@Mageblood Elixir
-24365@@@Mageblood Elixir
 24368@@@Mighty Troll's Blood Elixir
-24423@@@Demoralizing Screech
-24424@@@Demoralizing Screech
-24577@@@Demoralizing Screech
-24578@@@Demoralizing Screech
-24579@@@Demoralizing Screech
-24580@@@Demoralizing Screech
-24581@@@Demoralizing Screech
-24582@@@Demoralizing Screech
 24696@@@Murky
 24988@@@Lurky
 25018@@@Murki
@@ -46152,7 +51847,6 @@
 28896@@@Expert Jewelcrafter
 28899@@@Artisan Jewelcrafter
 28901@@@Master Jewelcrafter
-28999@@@Elemental Reach
 29000@@@Elemental Reach
 29059@@@Naxxramas Deathcharger
 29061@@@Bone Barrier
@@ -46264,8 +51958,6 @@
 33274@@@Block Value 57
 33280@@@Corporal
 33371@@@Mind Melt
-33388@@@Apprentice Riding
-33391@@@Journeyman Riding
 33425@@@Lights Out
 33486@@@Heart's Mystique
 33648@@@Reflection of Torment
@@ -46332,7 +52024,6 @@
 36444@@@Wintergrasp Water
 36747@@@Spawn Smoke (Druid)
 36851@@@Bethod's Sword Challenge
-36936@@@Totemic Recall
 36992@@@Frenzy
 37023@@@Frenzy
 37184@@@Increased Right./Venge./Corruption
@@ -46473,7 +52164,6 @@
 42563@@@Whirl
 42564@@@Ever-burning Torch
 42565@@@Flame Trench
-42609@@@Sinister Squashling
 42611@@@Shoot
 42616@@@Cannon Fire
 42617@@@Vertex Color Lt. Blue
@@ -47806,7 +53496,6 @@
 46582@@@Hulk
 46584@@@Raise Dead
 46585@@@Raise Dead
-46598@@@Ride Vehicle Hardcoded
 46599@@@Phoenix Hatchling
 46602@@@VehicleScriptTest
 46606@@@Tillinghast's Plague Canister Dummy
@@ -55213,7 +60902,6 @@
 55881@@@Hurricane
 55882@@@Orb of Storms
 55883@@@Vortex
-55884@@@Learning
 55885@@@Orb of Lightning
 55886@@@Boulder
 55887@@@Boulder
@@ -56575,7 +62263,6 @@
 57343@@@Refreshment
 57344@@@Refreshment
 57345@@@Darkmoon Card: Greatness
-57346@@@Ride Vehicle
 57347@@@Retrieving
 57348@@@Carrying an RP-GG
 57349@@@Drop RP-GG
@@ -62783,7 +68470,6 @@
 64656@@@Blue Skeletal Warhorse
 64657@@@White Kodo
 64658@@@Black Wolf
-64659@@@Venomhide Ravasaur
 64660@@@First Aid Kit
 64661@@@Borean Leather
 64662@@@Blink
@@ -63200,7 +68886,6 @@
 65166@@@Crusader Strike
 65177@@@[DND] Trigger End Combat
 65182@@@Increased Block
-65183@@@Summon Venomhide Hatchling
 65184@@@Kill Credit
 65185@@@Red Dragon Fireball Periodic
 65190@@@[DND] Defend Aura (09 seconds)
@@ -64117,9 +69802,6 @@
 66824@@@Paralytic Bite
 66829@@@Uber Spell Controller
 66830@@@Paralysis
-66842@@@Call of the Elements
-66843@@@Call of the Ancestors
-66844@@@Call of the Spirits
 66845@@@Submerge
 66846@@@Ochre Skeletal Warhorse
 66847@@@Striped Dawnsaber
@@ -67765,8 +73447,6 @@
 408119@@@[DNT] Despawn Self
 3.4.2.49311
 63487@@@Banana Slip
-86457@@@Mount Speed Mod: Standard Ground Mount
-86458@@@Mount Speed Mod: Epic Ground Mount
 86459@@@Mount Speed Mod: Standard Flying Mount
 86460@@@Mount Speed Mod: Epic Flying Mount
 86461@@@Mount Speed Mod: Legendary Flying Mount
@@ -69089,16 +74769,10 @@
 383279@@@Tuskarr Dinghy
 383299@@@Rafting Wake
 435115@@@Guardian Quilen
-1247613@@@Equip Transmog Outfit
-1247917@@@Clear Current Transmogrifications
 1254171@@@[DNT] Fish
 1254207@@@Fishmonger May
 1254319@@@[DNT] Seal
 1254334@@@[DNT] Seal!!
-1263886@@@Equip Transmog Outfit
-1272615@@@Clear Transmog Outfit
-1283375@@@Clear Transmog Outfit
-1283376@@@Equip Transmog Outfit
 1312621@@@Encapsulate
 1312640@@@Fire Wall
 1312777@@@Might of the Sunwell
@@ -69161,13 +74835,11 @@
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward
-603@@@Bane of Doom
 673@@@Minor Defense
 687@@@Demon Armor
 818@@@Cooking Fire
 822@@@Arcane Resistance
 883@@@Call Pet 1
-980@@@Bane of Agony
 1122@@@Summon Infernal
 1134@@@Inner Rage
 1459@@@Arcane Brilliance
@@ -69376,7 +75048,6 @@
 25956@@@Sanctity of Battle
 26298@@@Firework Launcher
 26299@@@Cluster Launcher
-26407@@@Festival Suit
 26443@@@Cluster Launcher
 27293@@@Anchor Visual
 27576@@@Mutilate Off-Hand
@@ -69599,7 +75270,6 @@
 42542@@@Spirit Drain - In Progress
 42567@@@Incinerate Blue Visual
 42577@@@Energy Storm
-42598@@@Pet Submerge
 42807@@@Detonate
 43120@@@Feather Cyclone
 43121@@@Storm
@@ -76149,8 +81819,6 @@
 77743@@@Glaive Throw
 77744@@@Blade Salvo
 77745@@@Blade Salvo
-77746@@@Totemic Wrath
-77747@@@Totemic Wrath
 77749@@@Glaive
 77750@@@Summon Idra'kess Ambusher - 50% Hit
 77751@@@Blade Salvo
@@ -76491,10 +82159,8 @@
 78153@@@Maelstrom Weapon
 78154@@@Bloodlust
 78155@@@Tremor Totem
-78156@@@Tremor Totem
 78157@@@Tremor Totem
 78158@@@Windfury Totem
-78159@@@Windfury Totem
 78160@@@Twilight Fissure
 78161@@@Windfury Totem
 78162@@@Void Blast
@@ -77504,9 +83170,7 @@
 79426@@@Frenetic Rush
 79427@@@From the Abyss
 79428@@@Parachute Holder
-79429@@@Elemental Resistance Totem
 79430@@@Rocket Boost
-79431@@@Flametongue Totem
 79432@@@[DND] Force Say 02
 79433@@@[DND] Force Say 01
 79434@@@Rocket Blast-off
@@ -81658,11 +87322,6 @@
 84993@@@Shield Specialization
 84994@@@Shield Specialization
 84995@@@Rayne Transform
-84996@@@Raid Marker 1
-84997@@@Raid Marker 2
-84998@@@Raid Marker 3
-84999@@@Raid Marker 4
-85000@@@Raid Marker 5
 85001@@@See Quest Invis 1
 85002@@@See Quest Invis 1
 85003@@@Wolfsbane Oil
@@ -94289,8 +99948,6 @@
 104038@@@Portal Beam: Green, Self
 104039@@@Portal Beam: Red, Connector
 104040@@@Portal Beam: Red, Self
-104047@@@Lunar Lantern
-104049@@@Festival Lantern
 104050@@@Torrent of Frost
 104055@@@Torrent of Frost
 104058@@@Torrent of Frost
@@ -96138,9 +101795,6 @@
 4.4.0.57244
 471759@@@[DNT] Is Brewfest Active?
 4.4.1.56464
-171555@@@Raid Marker 6
-171556@@@Raid Marker 7
-171557@@@Raid Marker 8
 455437@@@[DNT] MaxAlchemy
 465485@@@[DNT] Bwemba Summoned Dummy Aura
 465488@@@Mark Master as Summoned
@@ -96655,7 +102309,6 @@
 18212@@@Demon Slaying
 19057@@@Apply Armor Kit
 19581@@@Pet Health
-19615@@@Frenzy
 19881@@@Auto Wand
 20003@@@Versatility 15
 20008@@@Greater Intellect
@@ -115260,7 +120913,6 @@
 134732@@@Battle Fatigue
 134733@@@Kor'kron Disguise
 134734@@@Kor'kron Disguise
-134735@@@PvP Rules Enabled (HARDCODED)
 134736@@@Kor'kron Disguise
 134737@@@Pick Charge Target Summon Dest
 134740@@@Volatile Flames
@@ -127401,7 +133053,6 @@
 150540@@@Reshape
 150542@@@Teleport
 150543@@@Void Blast
-150544@@@Summon Random Favorite Mount
 150545@@@Random Powerup
 150546@@@Harnessed Stone
 150547@@@Powerup Visual - Random
@@ -130854,7 +136505,6 @@
 155055@@@Ancestors' Might
 155056@@@Engulfing Fire
 155057@@@Magma Pool
-155059@@@Hologram-ify
 155060@@@Rend and Tear
 155061@@@Rend and Tear
 155062@@@Nether Portal
@@ -140195,7 +145845,6 @@
 167149@@@Taxi: Frostfire Garrison to Darktide Roost, Shadowmoon Valley
 167150@@@Dummy
 167151@@@Rage
-167152@@@Refreshment
 167153@@@Aimed Shot
 167154@@@Summon Trixxy Weldblast
 167155@@@Firestorm
@@ -153722,8 +159371,6 @@
 183257@@@Choice Master
 183258@@@Scene: Aerial Diagnostic System
 183259@@@Scene: Aerial Diagnostic System
-183260@@@Lap Sits
-183261@@@Lap Sits
 183262@@@Divine Inspiration
 183263@@@Acid Spit
 183264@@@Mighty Weapon
@@ -202856,11 +208503,9 @@
 240331@@@Empowering
 240332@@@Empowering
 240333@@@Empowering
-240334@@@General Trigger 4 to Self
 240335@@@Empowering
 240336@@@Kill all Naga Brute Adds
 240337@@@Empowering
-240338@@@General Trigger 5 to Self
 240339@@@Empowering
 240340@@@Fel Spirits
 240341@@@Starter Area Trigger
@@ -218188,7 +223833,6 @@
 258091@@@Conversation: Healed
 258092@@@Fire Mojo
 258094@@@Breath of Vol'jamba
-258096@@@Submerged
 258097@@@Eyes of Vol'jamba
 258098@@@Lightning Bolt
 258099@@@Chain Heal
@@ -221014,7 +226658,6 @@
 261487@@@Ride Mine Cart
 261488@@@Charge
 261489@@@Cosmetic Resonance
-261490@@@General Trigger 6 to Self
 261491@@@Taunt
 261492@@@Blessing of Devotion
 261493@@@Conversation
@@ -297534,7 +303177,6 @@
 341542@@@Ambidexterity
 341543@@@Slight of Hand
 341544@@@Lurking Eruption
-341545@@@Level Up
 341546@@@Count the Odds
 341547@@@Lurking Eruption
 341548@@@Lurking Eruption
@@ -334612,7 +340254,6 @@
 384252@@@Arcane Detonation
 384253@@@Magma Toss
 384254@@@10.0 Sound Effect Aura 1 - Strangle - Vehicle Test
-384255@@@Changing Talents
 384256@@@Magma Pot
 384259@@@Grab Core Fragment
 384260@@@Impaled
@@ -354753,7 +360394,6 @@
 405659@@@Raging Inferno
 405661@@@Unleashed Darkness
 405665@@@Blazing Inferno
-405667@@@Create Test Ring Test
 405668@@@Battle Cry
 405677@@@On Fire!
 405686@@@Blazing Spear
@@ -379654,7 +385294,6 @@
 457308@@@Resurrection
 10.2.7.54847
 404018@@@[PH] Black-Furred Bakar
-446137@@@Green Snugglefin Murloc Romper
 446151@@@Purple Snugglefin Murloc Romper
 452591@@@Spool of Eternal Thread
 457632@@@[DNT] Check Remove Extra Tunic
@@ -403520,7 +409159,6 @@
 462554@@@Cosmic Rupture
 462556@@@Portal to Bastion
 462558@@@Cosmic Rupture
-462561@@@[DNT] Dummy Visual
 462562@@@Cosmic Rupture
 462564@@@Cosmic Fallout
 462565@@@Portal to Tiragarde Sound
@@ -404958,7 +410596,6 @@
 7276@@@Poison
 11089@@@Shadow Transformation
 12254@@@Virulent Poison
-12737@@@Frostbolt Volley
 13299@@@Poison
 15733@@@Immolation Aura
 15979@@@Arcane Bolt Volley
@@ -427239,7 +432876,6 @@
 1228320@@@Ensemble: Soulbringer Attire
 1228323@@@Ensemble: Spiritrune Attire
 1228326@@@Ensemble: Soulrune Attire
-1228332@@@Arsenal: Spirit-Touched Collection
 1228334@@@Arsenal: Soul-Touched Collection
 1263944@@@[DNT]Goods Tracker - Alchemy
 1263945@@@[DNT]Goods Tracker - Books
@@ -463241,12 +468877,6 @@
 1283876@@@Improvided Arcane Device
 1283877@@@Improvised Arcane Device
 1283880@@@[DNT] Travel Pack
-1283884@@@[DNT] Cooldown Always Secret Test Spell
-1283885@@@[DNT] Cooldown Never Secret Test Spell
-1283888@@@[DNT] Aura Never Secret Test Spell
-1283894@@@[DNT] Aura Always Secret Test Spell
-1283895@@@[DNT] Spell Cast Always Secret Test Spell
-1283896@@@[DNT] Spell Cast Never Secret Test Spell
 1283897@@@Light Shield [DNT]
 1283899@@@Improvised Arcane Device
 1283901@@@Shield Slam

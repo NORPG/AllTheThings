@@ -296,6 +296,68 @@
 387323@@@X-51 Nether-Rocket
 388516@@@Hao-Yue, River Foreseer
 394209@@@Festering Emerald Drake
+1.60.1.69876
+472@@@Pinto Horse
+580@@@Large Timber Wolf
+5784@@@Summon Felsteed
+10790@@@Tiger
+13819@@@Summon Warhorse
+15779@@@White Mechanostrider
+16055@@@Nightsaber
+16056@@@Frostsaber
+16081@@@Arctic Wolf
+16082@@@Palomino Stallion
+17459@@@Icy Blue Mechanostrider
+23161@@@Summon Dreadsteed
+23214@@@Summon Charger
+25863@@@Summon Black Qiraji Battle Tank
+25953@@@Summon Blue Qiraji Battle Tank
+26054@@@Summon Red Qiraji Battle Tank
+26055@@@Summon Yellow Qiraji Battle Tank
+26056@@@Summon Green Qiraji Battle Tank
+26655@@@Summon Black Qiraji Battle Tank
+436329@@@Golden Sabercat
+1277329@@@Green Skeletal Horse
+1277330@@@Dark Skeletal Horse
+1277336@@@Purple Skeletal Horse
+1279399@@@Summon Warhorse
+1286011@@@Swift Empyrean Galestrider
+1286021@@@Swift Regal Galestrider
+1286022@@@Swift Stormy Galestrider
+1286024@@@Empyrean Galestrider
+1286025@@@Regal Galestrider
+1286026@@@Stormy Galestrider
+1290805@@@Translocation
+1292482@@@Swift Hyjal Stag
+1294897@@@Striped Dawnsaber
+1295387@@@Orchre Skeletal Warhorse
+1295678@@@Umber Galestrider
+1295683@@@Swift Umber Galestrider
+1296534@@@Summon Forsaken Charger
+1298450@@@White Kodo
+1298496@@@Black Skeletal Horse
+1301636@@@Pack Kodo
+1302661@@@Spectral Bear
+1303075@@@Lavender Kodo
+1303215@@@Caravan Kodo
+1309208@@@Cerulean Prideclaw
+1309246@@@[PH] Purple Prideclaw
+1309248@@@[PH] Brown Prideclaw
+1309250@@@[PH] White Blue Prideclaw
+1309268@@@Black Warden Saber Mount
+1309270@@@Brown Warden Saber Mount
+1309271@@@Gray Warden Saber Mount
+1309272@@@White Warden Saber Mount
+1309346@@@Black Devilsaur Mount
+1309347@@@Blue Devilsaur Mount
+1309348@@@Green Devilsaur Mount
+1309349@@@Purple Devilsaur Mount
+1309350@@@White Devilsaur Mount
+1309377@@@Black Druid Moose Mount
+1309379@@@White Druid Moose Mount
+1309380@@@Green Druid Moose Mount
+1309381@@@Gray Druid Moose Mount
+1309405@@@Veteran Adventurer's Loyal Companion
 3.4.3.51126
 34767@@@Thalassian Charger
 34769@@@Thalassian Warhorse
@@ -381,9 +443,6 @@
 3.80.2.68943
 435115@@@Guardian Quilen
 4.4.0.53627
-10790@@@Tiger
-13819@@@Summon Warhorse
-23214@@@Summon Charger
 69820@@@Summon Sunwalker Kodo
 69826@@@Summon Great Sunwalker Kodo
 73629@@@Summon Exarch's Elekk
@@ -693,7 +752,6 @@
 150926@@@Draenor Chimera
 153489@@@Iron Chimaera
 7.3.0.24473
-16081@@@Arctic Wolf
 69820@@@Sunwalker Kodo
 69826@@@Great Sunwalker Kodo
 73629@@@Exarch's Elekk

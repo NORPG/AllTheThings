@@ -326,6 +326,52 @@
 1.15.7.59706
 2723@@@S03 - New Avalon - Scarlet Crusade - Disguise
 2724@@@S03 - New Avalon - Scarlet Crusade - Patrollers
+1.60.1.69876
+35@@@Villain
+2719@@@Cenarion Scouts
+2730@@@1.50.0 - Hyjal Attunement - Leyara
+2731@@@1.50.0 - Hyjal Attunement - Gol'gere
+2740@@@Kirin Tor
+2741@@@Kirin Tor - Broken
+2745@@@Timbermaw Hold - Unbound Spirit - Enemies
+2746@@@Timbermaw Hold - Unbound Spirit - Allies
+2747@@@Barkskin Burrow
+2748@@@Shen'dorei
+2749@@@Al'Aketh
+2753@@@Deadwood Furbolg
+2754@@@CTF - Flag - Neutral
+2756@@@Hyjal Skunk
+2757@@@Zephras Peackeepers
+2758@@@Nightclaw Druids
+2759@@@Neutral Can Attack
+2760@@@Neutral Both But Horde Can Attack
+2761@@@Fenwick
+2765@@@Guardians of Hyjal
+2768@@@The Blackthorne Pact
+2769@@@Gelkis Outcasts
+2777@@@Beast - Predatory Stag
+2778@@@Windshapers
+2779@@@High Order
+2782@@@Bolder'ok Clan
+2785@@@Cenarion Circle (Legendary Event)
+2786@@@Replace
+2787@@@Earthen Ring
+2788@@@Ashen Reign
+2789@@@Ashen Reign - Warlock Disguise
+2790@@@CTF - Flag - Neutral
+2794@@@PLAYER, Windshaper Skyborne
+2795@@@PLAYER, High Order Skyborne
+2797@@@OLD
+2798@@@Darkspear Raiders
+2799@@@Theramore Expeditionary Force
+2800@@@PvP Rank Points
+2801@@@Neutral Both But Alliance Can Attack
+2802@@@Legacy Track
+2807@@@DNT Test Reputation
+2813@@@Syndicate Disguise
+2819@@@The Watchers
+2826@@@Brotherhood of the Horse
+2827@@@Powderfuse
 2.0.0.6080
 911@@@Silvermoon City
 914@@@PLAYER, Blood Elf
