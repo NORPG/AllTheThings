@@ -70,7 +70,7 @@ local function CHAT_MSG_ADDON(prefix, text, channel, sender, target, ...)
 	if not target then target = sender; end
 	if prefix ~= "ATTC" then return end
 
-	app.PrintDebug(prefix, text, channel, sender, target, ...)
+	-- app.PrintDebug(prefix, text, channel, sender, target, ...)
 	local args = { ("\t"):split(text) };
 	local cmd = args[1];
 	if not cmd then return end
@@ -154,7 +154,7 @@ local function CHAT_MSG_ADDON(prefix, text, channel, sender, target, ...)
 		if a == "ATTC" then
 			local guid = args[6];
 			if guid then PlayerProgressCacheByGUID[guid] = { tonumber(args[3]), tonumber(args[4]), args[5] }; end
-			print(target .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
+			app.print(target .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
 		else
 			local response;
 			if a == "s" then
