@@ -160,9 +160,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91399, {	-- Ashes of the Void
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
 					["qg"] = 246878,	-- Nan'kejo
-					["qi"] = 246439,	-- Void Ashes (QI!)
 					["coord"] = { 22.6, 73.2, MAP.MIDNIGHT.ZULAMAN },
 					["isDaily"] = true,
+					["qi"] = 246439,	-- Void Ashes (QI!)
 				}),
 				q(91400, {	-- Blades of the Fallen
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
@@ -173,19 +173,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91401, {	-- Dead by Dusk
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
 					["qg"] = 246880,	-- Kul'kul
-					["qi"] = 246440,	-- Cultist Femur (QI!)
 					["coord"] = { 28.4, 76.8, MAP.MIDNIGHT.ZULAMAN },
 					["isDaily"] = true,
+					["qi"] = 246440,	-- Cultist Femur (QI!)
 				}),
 				q(91398, {	-- Tomes of Terror
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
 					["qg"] = 246877,	-- Tenak
+					["coord"] = { 27.3, 72.6, MAP.MIDNIGHT.ZULAMAN },
+					["isDaily"] = true,
 					["qis"] = {
 						246436,	-- Ogre Tome of Dark Magic (QI!)
 						246437,	-- Ogre Tome of Fighting Techniques (QI!)
 					},
-					["coord"] = { 27.3, 72.6, MAP.MIDNIGHT.ZULAMAN },
-					["isDaily"] = true,
 				}),
 				q(91402, {	-- Ultra Deadly Ultradon
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
