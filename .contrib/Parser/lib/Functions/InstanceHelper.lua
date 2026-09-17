@@ -1,65 +1,140 @@
 -- Provides an all-in-one builder object to help with consistently building Instance content
 
+-- ============================================================================
+-- LuaLS / DocGen type model
+-- ============================================================================
+-- Documentation-only parser types used by InstanceHelper. These names are
+-- intentionally InstanceHelper-prefixed so this file can be used independently
+-- without colliding with broader parser type definitions.
+
+---@alias JournalEncounterID integer
+---@alias DifficultyID integer
+---@alias QuestID integer
+---@alias NPCID integer
+---@alias ItemID integer
+---@alias ObjectID integer
+---@alias UpgradeValue integer
+---@alias Coord { [1]: number, [2]: number, [3]?: integer }
+---@alias Provider { [1]: string, [2]: integer }
+---@alias SymCommand table<integer, any>
+---@alias Sym SymCommand[]
+---@alias ATTObjectArray ATTObject[]
+---@alias InstanceHelperCRMap table<JournalEncounterID, NPCID[]>
+---@alias InstanceHelperLootMap table<JournalEncounterID, ATTObjectArray>
+---@alias InstanceHelperCoordMap table<JournalEncounterID, Coord>
+---@alias InstanceHelperBossObjectMap table<JournalEncounterID, ObjectID[]>
+---@alias InstanceHelperUpgradeMap table<DifficultyID, UpgradeValue>
+
+---@class ATTObject
+---@field groups? ATTObjectArray Nested parser groups.
+---@field g? ATTObjectArray Legacy/alternate groups field rejected by AddGroups.
+---@field cr? NPCID Single creature/NPC ID.
+---@field crs? NPCID[] Creature/NPC IDs associated with this object.
+---@field coord? Coord Single map coordinate.
+---@field coords? Coord[] Multiple map coordinates.
+---@field providers? Provider[] Providers attached to this object.
+---@field itemID? ItemID
+---@field npcID? NPCID
+---@field headerID? integer
+---@field encounterID? JournalEncounterID
+---@field questID? QuestID
+---@field difficultyID? DifficultyID
+---@field up? UpgradeValue Encoded upgrade value (`ModID.BonusID`).
+---@field sym? Sym Symbolic-processing instructions.
+---@field isWorldQuest? boolean
+---@field [string] any Additional ATT parser metadata.
+
+---@class JournalEncounterObject: ATTObject
+---@field encounterID? JournalEncounterID Encounter ID when created through `e`.
+
+---@class NPCObject: ATTObject
+---@field npcID? NPCID NPC/header identity when `TreatBossesAsNpcOnly` is enabled.
+
+---@class QuestObject: ATTObject
+---@field questID QuestID
+---@field isWorldQuest boolean
+
+---@class HeaderObject: ATTObject
+---@field headerID? integer
+
+---@class InstanceHelperExtraLootData
+---@field [integer] ATTObjectArray Boss/Encounter-ID keyed extra loot arrays.
+
 ---@class InstanceHelperExtraLoot
----@field Add fun(encounter: table, bossID: integer, difficultyID: integer|nil, data: table) Adds extra loot data to an encounter for the active difficulty.
----@field Data table<integer, table[]> BossID-keyed extra loot data consumed by `Add`.
+---@field Add fun(encounter: JournalEncounterObject|NPCObject, bossID: JournalEncounterID, difficultyID: DifficultyID|nil, data: InstanceHelperExtraLootData) Called by `Boss` after the base boss object is created and before normal configured loot is appended.
+---@field Data InstanceHelperExtraLootData Boss/Encounter-ID keyed data consumed by `Add`.
 
 ---@class InstanceHelperLFRQueueNPC
----@field cr? integer
----@field crs? integer[]
----@field coord? table
----@field coords? table[]
+---@field cr? NPCID Single queue NPC copied onto qualifying LFR difficulty groups.
+---@field crs? NPCID[] Queue NPC list copied onto qualifying LFR difficulty groups.
+---@field coord? Coord Single queue-NPC coordinate.
+---@field coords? Coord[] Queue-NPC coordinates.
 
----@class InstanceHelperDifficultyGroup
----@field groups? table[]
----@field AddGroups fun(groups: table[]): InstanceHelperDifficultyGroup Appends groups to this difficulty group.
----@field AddGroupsWithUpgrades fun(groups: table[]): InstanceHelperDifficultyGroup Appends groups and applies the configured upgrade mapping.
----@field WithUpgrades fun(): InstanceHelperDifficultyGroup Applies the configured upgrade mapping to the existing groups.
+---@class InstanceHelperDifficultyGroup: ATTObject
+---@field difficultyID? DifficultyID Difficulty stored by `d`; it may differ from the exact ID passed to `Difficulty`.
+---@field groups? ATTObjectArray
+---@field AddGroups fun(groups: ATTObjectArray): InstanceHelperDifficultyGroup Dynamically supplied by the difficulty metatable. Appends groups and returns the same difficulty object.
+---@field AddGroupsWithUpgrades fun(groups: ATTObjectArray): InstanceHelperDifficultyGroup Appends groups, applies upgrades recursively, and returns the same difficulty object.
+---@field WithUpgrades fun(): InstanceHelperDifficultyGroup Applies upgrades to existing groups and returns the same difficulty object.
+
+---@class InstanceHelperDifficultyMeta
+---@field __index fun(t: InstanceHelperDifficultyGroup, key: string): function|nil Lazily exposes `AddGroups`, `AddGroupsWithUpgrades`, and `WithUpgrades`.
 
 ---@class InstanceHelper
----@field BossOnly fun(id: integer, t?: table): table Creates an Encounter populated with the configured creature IDs only.
----@field Boss fun(id: integer, t?: table): table Creates an Encounter populated with creature IDs, configured loot, and optional helper metadata.
----@field BossWithHeader fun(id: integer, headerFunc: fun(groups: table[]): table, t?: table): table Creates an Encounter whose configured loot is wrapped by `headerFunc`.
----@field BossWorldQuest fun(id: integer, questID: integer, t?: table): table Creates a World Quest associated with an Encounter.
----@field Difficulty fun(difficultyID: integer, t?: table): InstanceHelperDifficultyGroup Creates a difficulty group and makes it the active difficulty for upgrade/extra-loot handling.
----@field CommonBossDrops fun(t?: table[]): table Creates a Common Boss Drops header shared by all configured bosses.
----@field ZoneDrops fun(groups?: table[]): table Creates a Zone Drops header from the configured zone drops, optionally appending more groups.
----@field RawAllBosses fun(groups?: table[]): table[]|nil Assigns all configured boss creature IDs to every group in the array.
----@field WithUpgrades fun(groups?: table[]) Applies the configured upgrade mapping recursively to item groups.
----@field ALL_BOSSES integer[] Flattened creature-ID list from all configured bosses.
----@field ExtraLoots? InstanceHelperExtraLoot[] Optional extra-loot processors executed by `Boss`.
----@field Coords? table<integer, table> Optional BossID-keyed coordinates applied when an Encounter/Quest has no coordinate.
----@field BossObjects? table<integer, integer[]> Optional BossID-keyed object IDs added as Encounter providers.
----@field UpgradeMapping? table<integer, integer> DifficultyID-keyed upgrade values (`ModID.BonusID`). A value of `0` disables applying upgrades for that difficulty.
----@field LFRQueueNPC? InstanceHelperLFRQueueNPC Optional queue NPC data copied onto LFR difficulty groups.
+---@field BossOnly fun(id: JournalEncounterID, t?: ATTObject): JournalEncounterObject|NPCObject Creates the base boss object and assigns configured creature IDs.
+---@field Boss fun(id: JournalEncounterID, t?: ATTObject): JournalEncounterObject|NPCObject Creates a boss and applies extra loot, coordinates, object providers, and configured loot.
+---@field BossWithHeader fun(id: JournalEncounterID, headerFunc: fun(groups: ATTObjectArray): ATTObject, t?: ATTObject): JournalEncounterObject|NPCObject Creates a boss whose configured loot is wrapped by `headerFunc`.
+---@field BossWorldQuest fun(id: JournalEncounterID, questID: QuestID, t?: ATTObject): QuestObject Creates a World Quest associated with a configured encounter.
+---@field Difficulty fun(difficultyID: DifficultyID, t?: ATTObject): InstanceHelperDifficultyGroup Creates a difficulty container and sets the helper's active difficulty context.
+---@field CommonBossDrops fun(t?: ATTObjectArray): HeaderObject Creates a Common Boss Drops header associated with all configured boss creature IDs.
+---@field ZoneDrops fun(groups?: ATTObjectArray): HeaderObject Creates a Zone Drops header using cloned configured zone-drop data.
+---@field RawAllBosses fun(groups?: ATTObjectArray): ATTObjectArray|nil Assigns all configured boss creature IDs directly to every supplied group.
+---@field WithUpgrades fun(groups?: ATTObjectArray) Applies the active difficulty's configured upgrade value recursively.
+---@field ExtraLoots? InstanceHelperExtraLoot[] Extra-loot processors executed in array order by `Boss`.
+---@field Coords? InstanceHelperCoordMap Boss/Encounter-ID keyed fallback coordinates.
+---@field BossObjects? InstanceHelperBossObjectMap Boss/Encounter-ID keyed world-object IDs appended as `"o"` providers.
+---@field UpgradeMapping? InstanceHelperUpgradeMap Difficulty-ID keyed encoded upgrade values. `0` explicitly disables upgrades for that difficulty.
+---@field LFRQueueNPC? InstanceHelperLFRQueueNPC Queue-NPC metadata copied onto LFR/multi-LFR difficulty groups.
+---@field TreatBossesAsNpcOnly? boolean When true, `BossOnly` constructs bosses with `n()` instead of `e()`.
 
---- Creates an InstanceHelper from BossID-keyed encounter metadata.
+--- Creates an all-in-one helper for consistently constructing dungeon/raid instance data.
 ---
---- `crs` maps Encounter/Boss IDs to creature IDs.
---- `loots` maps Encounter/Boss IDs to the groups appended by `Boss`/`BossWithHeader`.
---- `zonedrops` supplies the base data used by `ZoneDrops`.
+--- The helper captures three data sources:
+--- * `crs`: journal encounter ID -> creature IDs.
+--- * `loots`: journal encounter ID -> normal loot/groups consumed by `Boss` and `BossWithHeader`.
+--- * `zonedrops`: base Zone Drops data consumed by `ZoneDrops`.
 ---
---- Optional behavior can be configured on the returned helper through fields such as
---- `ExtraLoots`, `Coords`, `BossObjects`, `UpgradeMapping`, and `LFRQueueNPC`.
----@param crs table<integer, integer[]> BossID-keyed creature-ID arrays.
----@param loots? table<integer, table[]> BossID-keyed loot groups. May be omitted when only helpers that do not consume loot are used.
----@param zonedrops? table Base Zone Drops data. May be omitted when `ZoneDrops` is unused.
----@return InstanceHelper helper
+--- The returned object is also a configuration object. Callers may assign
+--- `ExtraLoots`, `Coords`, `BossObjects`, `UpgradeMapping`, `LFRQueueNPC`, or
+--- `TreatBossesAsNpcOnly` after construction.
+---
+--- `Difficulty()` establishes mutable helper state (`CurrentDifficultyID`). That
+--- state is subsequently consumed by `ExtraLoots` callbacks and `WithUpgrades`,
+--- so boss/group construction is expected to occur in the corresponding
+--- difficulty block.
+---@param crs InstanceHelperCRMap Boss/Encounter-ID keyed creature arrays.
+---@param loots? InstanceHelperLootMap Boss/Encounter-ID keyed normal loot/groups. May be omitted only when loot-consuming helpers are not used.
+---@param zonedrops? ATTObject|ATTObjectArray Base Zone Drops data. May be omitted when `ZoneDrops` is unused.
+---@return InstanceHelper helper Builder/configuration object bound to the supplied maps.
 CreateInstanceHelper = function(crs, loots, zonedrops)
 	---@type InstanceHelper
 	local helper = {}
-	---@type integer|nil
+	---@type DifficultyID|nil
 	local CurrentDifficultyID
-	---@type integer[]
+	---@type NPCID[]
 	local ALL_BOSSES = {}
 	for _,v in pairs(crs) do
 		appendAllGroups(ALL_BOSSES, v)
 	end
 
-	--- Creates an Encounter and assigns its configured creature IDs.
-	---@param id integer Encounter/Boss ID.
-	---@param t? table Additional Encounter data passed to `e`.
-	---@return table encounter
+	--- Creates the base object for a configured boss and assigns its creature IDs.
+	---
+	--- Normally this delegates to `e(id, t)`. When `TreatBossesAsNpcOnly` is true,
+	--- it delegates to `n(id, t)` instead. No configured loot, extra loot, boss
+	--- objects, or helper coordinates are added here; those belong to `Boss`.
+	---@param id JournalEncounterID Encounter/Boss ID used to look up `crs[id]`.
+	---@param t? ATTObject Additional object data passed directly to `e` or `n`.
+	---@return JournalEncounterObject|NPCObject encounter Base boss object.
 	local function BossOnly(id, t)
 		if not t and type(id) ~= "number" then
 			error("Missing id for boss. Got instead: ",id)
@@ -69,13 +144,20 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		return encounter
 	end
 
-	--- Creates a complete Encounter using the helper configuration.
+	--- Creates a complete boss object using all applicable helper configuration.
 	---
-	--- In addition to the creature IDs from `BossOnly`, this applies optional
-	--- `ExtraLoots`, coordinates, object providers, and the configured loot groups.
-	---@param id integer Encounter/Boss ID.
-	---@param t? table Additional Encounter data passed to `e`.
-	---@return table encounter
+	--- Processing order is significant:
+	--- 1. Build the base boss with `BossOnly`.
+	--- 2. Run each `ExtraLoots[].Add` callback with the current difficulty context.
+	--- 3. Apply a fallback coordinate from `Coords` when the object has none.
+	--- 4. Convert configured `BossObjects` into `{ "o", objectID }` providers.
+	--- 5. Clone and append the normal loot stored in `loots[id]`.
+	---
+	--- Loot is cloned before insertion so per-difficulty mutation (for example,
+	--- upgrade application) does not mutate the shared source tables.
+	---@param id JournalEncounterID Encounter/Boss ID.
+	---@param t? ATTObject Additional boss data.
+	---@return JournalEncounterObject|NPCObject encounter Fully configured boss object.
 	local function Boss(id, t)
 		local encounter = BossOnly(id, t)
 		if helper.ExtraLoots then
@@ -108,14 +190,16 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		return encounter
 	end
 
-	--- Creates a World Quest which requires defeating the specified Encounter.
+	--- Creates a World Quest tied to a configured boss/encounter.
 	---
-	--- Creature IDs and optional coordinates are inherited from this helper. If no
-	--- symbolic link is supplied, a default `encounterID` selection is generated.
-	---@param id integer Encounter/Boss ID.
-	---@param questID integer World Quest ID.
-	---@param t? table Additional quest data passed to `q`.
-	---@return table quest
+	--- The quest receives `crs[id]`, is forced to `isWorldQuest = true`, and gets
+	--- a fallback coordinate from `Coords[id]` when needed. If the caller did not
+	--- provide `sym`, a default symbolic selector is generated which selects the
+	--- original encounter by `encounterID` and then pops the symbolic context.
+	---@param id JournalEncounterID Encounter/Boss ID supplying creatures and optional coordinate.
+	---@param questID QuestID World Quest ID passed to `q`.
+	---@param t? ATTObject Additional quest data.
+	---@return QuestObject quest Configured World Quest.
 	local function BossWorldQuest(id, questID, t)
 		if not t and (type(id) ~= "number" or type(questID) ~= "number") then
 			error("Missing id/questID for BossWorldQuest",id,questID)
@@ -132,11 +216,16 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		return quest
 	end
 
-	--- Applies the upgrade value for the active difficulty to item groups recursively.
+	--- Applies the active difficulty's encoded upgrade value recursively.
 	---
-	--- Nested groups are traversed only for supported container/object types. Existing
-	--- `up` values are preserved. An upgrade mapping value of `0` skips application.
-	---@param groups? table[] Groups to process.
+	--- Requires `UpgradeMapping` and uses the exact ID last passed to `Difficulty`.
+	--- A mapping value of `0` is an intentional no-op. Existing `up` values are
+	--- preserved. Recursion enters nested groups only through recognized ATT
+	--- container/object types (`npcID`, `headerID`, `itemID`, or `encounterID`).
+	---
+	--- This function mutates the supplied objects in place and has no meaningful
+	--- return value.
+	---@param groups? ATTObjectArray Groups/items to mutate.
 	local function WithUpgrades(groups)
 		if not groups then return end
 		if not helper.UpgradeMapping then error("To use 'WithUpgrades', define InstanceHelper.UpgradeMapping = { [DifficultyID] = ModID.BonusID }") end
@@ -154,11 +243,16 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		end
 	end
 
-	--- Creates an Encounter and wraps its configured loot with a caller-provided header.
-	---@param id integer Encounter/Boss ID.
-	---@param headerFunc fun(groups: table[]): table Function which receives a cloned loot array and returns a header/group object.
-	---@param t? table Additional Encounter data passed to `e`.
-	---@return table encounter
+	--- Creates a boss whose normal configured loot is wrapped in one custom header/group.
+	---
+	--- Unlike `Boss`, this intentionally starts from `BossOnly`; therefore it does
+	--- not automatically run `ExtraLoots`, apply `Coords`, or add `BossObjects`.
+	--- The cloned `loots[id]` array is passed to `headerFunc`, and that single
+	--- returned wrapper object is appended to the boss.
+	---@param id JournalEncounterID Encounter/Boss ID.
+	---@param headerFunc fun(groups: ATTObjectArray): ATTObject Receives cloned normal loot and returns its wrapper/header.
+	---@param t? ATTObject Additional boss data.
+	---@return JournalEncounterObject|NPCObject encounter Boss with wrapped loot.
 	local function BossWithHeader(id, headerFunc, t)
 		if not t and (type(headerFunc) ~= "function" or type(id) ~= "number") then
 			error("Missing valid id/headerFunc for BossWithHeader",id,headerFunc)
@@ -168,9 +262,12 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		return encounter
 	end
 
-	--- Creates a Common Boss Drops header associated with every boss creature configured in this helper.
-	---@param t? table[] Groups placed under the Common Boss Drops header.
-	---@return table commonBossDrops
+	--- Creates the `COMMON_BOSS_DROPS` header for all creature IDs configured in `crs`.
+	---
+	--- `ALL_BOSSES` is the flattened internal creature list built when the helper
+	--- is created. The supplied child groups are not cloned by this function.
+	---@param t? ATTObjectArray Groups placed under the Common Boss Drops header.
+	---@return HeaderObject commonBossDrops Common Boss Drops header.
 	local function CommonBossDrops(t)
 		return n(COMMON_BOSS_DROPS, {
 					["crs"] = ALL_BOSSES,
@@ -178,9 +275,13 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 				})
 	end
 
-	--- Assigns all configured boss creature IDs directly to each supplied group.
-	---@param groups? table[] Array of group objects.
-	---@return table[]|nil groups The same array after mutation, or the original invalid value.
+	--- Assigns the flattened `ALL_BOSSES` creature list to every direct group.
+	---
+	--- This is deliberately "raw": it mutates only the supplied array's direct
+	--- entries and does not recurse. Invalid/non-array input is returned unchanged
+	--- after emitting a parser warning.
+	---@param groups? ATTObjectArray Array of objects to mutate.
+	---@return ATTObjectArray|nil groups The same array after mutation, or the original invalid value.
 	local function RawAllBosses(groups)
 		if not groups or not isarray(groups) then
 			print("Expecting array type for AddGroups for InstanceHelper")
@@ -192,9 +293,13 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		return groups
 	end
 
-	--- Creates a Zone Drops header from the configured zone-drop data.
-	---@param groups? table[] Additional groups appended to a clone of the configured zone drops.
-	---@return table zoneDrops
+	--- Creates the `ZONE_DROPS` header from the helper's configured zone-drop data.
+	---
+	--- The configured zone-drop data is cloned before use. When `groups` is
+	--- supplied, the clone and the additional groups are combined with
+	--- `appendGroups`; otherwise the cloned data is passed directly to `n`.
+	---@param groups? ATTObjectArray Additional groups to combine with configured zone drops.
+	---@return HeaderObject zoneDrops Zone Drops header.
 	local function ZoneDrops(groups)
 		if groups then
 			return n(ZONE_DROPS, { groups = appendGroups(clone(zonedrops), groups)})
@@ -202,14 +307,18 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		return n(ZONE_DROPS, clone(zonedrops))
 	end
 
+	--- Metatable used only by objects returned from `Difficulty`.
+	--- Methods are synthesized through `__index` instead of stored on each group.
+	---@type InstanceHelperDifficultyMeta
 	local helperMeta = {
-		---@param t InstanceHelperDifficultyGroup
-		---@param key string
-		---@return function|nil
+		--- Resolves fluent difficulty-group helper methods.
+		---@param t InstanceHelperDifficultyGroup Difficulty group receiving the synthetic method.
+		---@param key string Requested method name.
+		---@return function|nil method Bound method closure, or nil for unknown keys.
 		__index = function(t, key)
 			if key == "AddGroups" then
-				---@param groups table[]
-				---@return InstanceHelperDifficultyGroup
+				---@param groups ATTObjectArray Groups to append.
+				---@return InstanceHelperDifficultyGroup self Same difficulty group for fluent chaining.
 				return function(groups)
 					if not groups or not isarray(groups) or groups.g then
 						print("Expecting array type for AddGroups for InstanceHelper")
@@ -219,8 +328,8 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 					return t
 				end
 			elseif key == "AddGroupsWithUpgrades" then
-				---@param groups table[]
-				---@return InstanceHelperDifficultyGroup
+				---@param groups ATTObjectArray Groups to append before upgrade processing.
+				---@return InstanceHelperDifficultyGroup self Same difficulty group for fluent chaining.
 				return function(groups)
 					if not groups or not isarray(groups) or groups.g then
 						print("Expecting array type for AddGroups for InstanceHelper")
@@ -231,7 +340,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 					return t
 				end
 			elseif key == "WithUpgrades" then
-				---@return InstanceHelperDifficultyGroup
+				---@return InstanceHelperDifficultyGroup self Same difficulty group for fluent chaining.
 				return function()
 					WithUpgrades(t.groups)
 					return t
@@ -240,14 +349,20 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		end
 	}
 
-	--- Creates a difficulty group and records its exact requested difficulty ID.
+	--- Creates a fluent difficulty group and sets the helper's active difficulty context.
 	---
-	--- The explicit input ID is retained because `d()` may alter the difficulty stored
-	--- on the returned object. For LFR-related difficulties, configured queue-NPC
-	--- creature/coordinate data is copied to the difficulty group.
-	---@param difficultyID integer Difficulty ID passed to `d` and used by upgrade/extra-loot processing.
-	---@param t? table Additional difficulty data passed to `d`.
-	---@return InstanceHelperDifficultyGroup diff
+	--- `d()` can normalize/change the difficulty stored on the returned object, so
+	--- the helper separately retains the exact `difficultyID` argument in
+	--- `CurrentDifficultyID`. Extra-loot callbacks and upgrade mapping use that
+	--- exact requested ID.
+	---
+	--- For LFR and the two multi-LFR aggregate difficulties, `LFRQueueNPC` metadata
+	--- (`cr`, `crs`, `coord`, `coords`) is cloned onto the returned difficulty group.
+	--- The result receives `helperMeta`, enabling fluent calls such as
+	--- `Difficulty(...):AddGroups(...):WithUpgrades()`.
+	---@param difficultyID DifficultyID Exact difficulty ID requested by the caller.
+	---@param t? ATTObject Additional difficulty data passed to `d`.
+	---@return InstanceHelperDifficultyGroup diff Fluent difficulty group.
 	local function Difficulty(difficultyID, t)
 		local diff = d(difficultyID, t)
 		diff = togroups(diff)
@@ -264,6 +379,8 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		return setmetatable(diff, helperMeta)
 	end
 
+	-- Export the closures on the configuration object. They intentionally share
+	-- the same captured `CurrentDifficultyID`, `ALL_BOSSES`, and source maps.
 	helper.BossOnly = BossOnly
 	helper.Boss = Boss
 	helper.BossWithHeader = BossWithHeader
@@ -276,13 +393,18 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	return helper
 end
 
---- Returns the symbolic processing instructions for Dragonflight Season 4 tier-token item groups.
+--- Builds symbolic-processing instructions for Dragonflight Season 4 tier tokens.
 ---
---- When `modID` is supplied, the first instruction forces that mod ID; otherwise the
---- caller's current mod ID is used. The remaining instructions select the known
---- Season 4 tier-token items, fill their groups, then pop the symbolic context.
----@param modID? integer Optional mod ID to force via `usemodID`.
----@return table[] sym Symbolic-processing instruction array.
+--- Command order:
+--- 1. Use the explicit `modID`, or inherit the current item's ModID.
+--- 2. Select all known Season 4 token `modItemID` values.
+--- 3. `groupfill` the selected token groups.
+--- 4. `pop` the symbolic context.
+---
+--- The returned table is declarative parser data; this function does not resolve
+--- or mutate item groups itself.
+---@param modID? integer Optional item ModID. When nil, emits `usemyModID` instead.
+---@return Sym sym Ordered symbolic-processing instruction array.
 GET_SYM_DF_S4_TIER_TOKENS = function(modID)
 	return {
 		modID and {"usemodID",modID} or {"usemyModID"},
