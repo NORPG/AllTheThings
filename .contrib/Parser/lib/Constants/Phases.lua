@@ -3545,7 +3545,7 @@ CurrentClassicExpansion = {
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "永恒",
+		cn = "无限",
 		tw = "永恆",
 	},
 	lore = {
@@ -3558,7 +3558,7 @@ CurrentClassicExpansion = {
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "永恒是《魔兽世界》的一个新版本，发生在名为“Azeroth Forever”的新世界中。它包含了新的区域、地下城、团本和一个新的故事情节，延续了原版游戏的故事。",
+		cn = "无限是《魔兽世界》的一个新版本，发生在名为“Azeroth Forever”的新世界中。它包含了新的区域、地下城、团本和一个新的故事情节，延续了原版游戏的故事。",
 		tw = "永恆是《魔獸世界》的一個新版本，發生在名為“Azeroth Forever”的新世界中。它包含新的區域、地下城、團隊副本和一個新的故事情節，延續了原版遊戲的故事。",
 	},
 };
@@ -3591,7 +3591,7 @@ FOREVER_PHASE_ONE = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "《魔兽世界：永恒》Beta测试内容1，开放至20级。",
+		cn = "《魔兽世界：无限》Beta测试内容1，开放至20级。",
 		tw = "《魔獸世界：永恆》Beta測試內容1，開放至20級。",
 	},
 });
@@ -3624,7 +3624,7 @@ FOREVER_PHASE_TWO = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "《魔兽世界：永恒》Beta测试内容2，开放至30级。",
+		cn = "《魔兽世界：无限》Beta测试内容2，开放至30级。",
 		tw = "《魔獸世界：永恆》Beta測試內容2，開放至30級。",
 	},
 });
