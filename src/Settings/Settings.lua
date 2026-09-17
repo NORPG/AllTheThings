@@ -286,7 +286,7 @@ local GeneralSettingsBase = {
 		["Thing:AzeriteEssences"] = app.GameBuildVersion >= 80000,
 		["Thing:BattlePets"] = true,
 		["Thing:Campsites"] = app.GameBuildVersion >= 110100,
-		["Thing:CharacterUnlocks"] = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
+		["Thing:CharacterUnlocks"] = true,
 		["Thing:Conduits"] = app.GameBuildVersion >= 100000,
 		["Thing:Decor"] = app.GameBuildVersion >= 110207,
 		["Thing:MountMods"] = app.GameBuildVersion >= 100000,

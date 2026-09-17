@@ -121,7 +121,7 @@ checkboxAutomaticallySkipCutscenes:SetATTTooltip(L.SKIP_CUTSCENES_CHECKBOX_TOOLT
 checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEFT", -2, 0)
 
 local checkboxFilterMiniListTimerunning;
-if app.IsRetail then
+if app.IsRetail and app.GameBuildVersion > 70000 then
 	-- TODO: revise with Legion Remix so that Minilist can grab/assign extra filters without needing to be loaded immediately
 	-- in case someone isn't even using it
 	local function AddTimerunningToCurrentInstance()

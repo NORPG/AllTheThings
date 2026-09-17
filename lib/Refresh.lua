@@ -2,7 +2,7 @@
 local _, app = ...;
 
 local OneTimeFixFunctions = {}
-if app.IsRetail then
+if app.IsRetail and app.GameBuildVersion > 70000 then
 -- CRIEVE NOTE: At some point I want parser exporting this data,
 -- I don't want to be requesting these questIDs on environments
 -- where I know they don't exist. For now I'll just block them

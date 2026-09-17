@@ -592,7 +592,7 @@ if localeString == "zhCN" or localeString == "zhTW" then
 	end
 end
 
-if app.IsRetail then
+if app.IsRetail and app.GameBuildVersion > 70000 then
 	local CUSTOM_COLLECTS_REASONS = {
 		["NPE"] = {
 			color = "ff5bc41d",

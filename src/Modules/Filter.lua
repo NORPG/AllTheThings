@@ -404,7 +404,7 @@ api.Set.Trackable = function(active)
 end
 
 -- Expansion Filters (Retail Only)
-if app.IsRetail then
+if app.IsRetail and app.GameBuildVersion > 70000 then
 	-- Cache for expansion filter settings (indexed by expansion ID for fast lookup)
 	local ExpansionFilters = {}
 
