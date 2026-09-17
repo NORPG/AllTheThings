@@ -54,7 +54,7 @@ local IgnoredReputationsForAchievements = {
 	[169] = 1,	-- Steamweedle Cartel doesn't count toward reputation achievements
 };
 local function IsDualTalentSpecializationLearned()
-	return GetNumTalentGroups() > 1 and 1 or 0;
+	return (GetNumTalentGroups and GetNumTalentGroups() > 1) and 1 or 0;
 end
 local function GetQuestCompleted(questID)
 	return IsQuestFlaggedCompleted(questID) and 1 or 0;
