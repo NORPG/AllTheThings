@@ -903,7 +903,7 @@ local function TryShowUnitTooltipInfo(self, guid)
 end
 
 -- Tooltip API Differences between Modern and Legacy APIs.
-if TooltipDataProcessor and app.GameBuildVersion > 60000 then
+if TooltipDataProcessor and (app.GameBuildVersion > 60000 or app.GameBuildVersion >= 16000 and app.GameBuildVersion < 20000) then
 	-- 10.0.2
 	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
 	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
