@@ -43,17 +43,12 @@ root(ROOTS.Unsorted, {
 			i(279396),	-- Timelost Saddle
 			i(280562),	-- Ascendant Venomstone
 			i(280563),	-- Ancient Hash'ey Battle Art: Falco Strikes
-			i(280617),	-- Lightbearer's Shield Fragment
 			i(280678),	-- Primordial Venom Mote
-			i(280799),	-- Lu'selama, Light's Justice
 			i(280820),	-- Loa-Blessed Victory
 			i(280821),	-- Trail of Halazzi
 			i(280822),	-- Nalorakk's Strength Charm
 			i(280823),	-- Feathers of Akil'zon
 			i(280825),	-- Rite of Jan'alai's Flame
-			i(280835),	-- Sigil of the Impending Eclipse
-			i(281029),	-- Band of the Swarmcaller
-			i(281056),	-- Sanctified Knight's Phoenixblade
 			i(281169),	-- Executive Chef's Jacket
 			i(281170),	-- Executive Chef's Hat
 			i(281171),	-- Executive Chef's Gloves
@@ -91,18 +86,11 @@ root(ROOTS.Unsorted, {
 			i(281205),	-- Sous Chef's Pants
 			i(281206),	-- Sous Chef's Boots
 			i(281212),	-- Ensemble: Executive Chef's Uniform
-			i(281213),	-- Kith'ix's Seal
-			i(281215),	-- Twisted Horror's Tendril
 			i(281216),	-- Ensemble: Sous Chef's Uniform
 			i(281217),	-- Ensemble: Grill Chef's Uniform
 			i(281218),	-- Ensemble: Pastry Chef's Uniform
 			i(281219),	-- Ensemble: Sauce Chef's Uniform
 			i(281220),	-- Ensemble: Head Chef's Uniform
-			i(281235),	-- Voidweaver's Vestments
-			i(281236),	-- Leggings of Palpable Terror
-			i(281238),	-- Aberrant Commander's Gauntlets
-			i(281239),	-- Corroded Hulk's Skullcap
-			i(281615),	-- Shadeweaver's Hearthstone
 			i(281670),	-- Anima-Infused Dreamcatcher
 			i(282024),	-- Decorative Lightforged Holo-Screen
 			i(282051),	-- Simple Hallow's End Candle
@@ -339,8 +327,6 @@ root(ROOTS.Unsorted, {
 			i(284130),	-- Nagrand Heart Ivy
 			i(284132),	-- Skysong Sentinel Tree
 			i(284134),	-- Incineratus Grass Patch
-			i(284159),	-- Libram of the Matriarch
-			i(284160),	-- Glyph of the Matriarch's Wings
 			i(284180),	-- Loa-Touched Deltoid
 			i(284181),	-- Loa-Touched Spine
 			i(284182),	-- Loa-Touched Visage

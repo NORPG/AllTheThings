@@ -13,6 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 		inst(1305),	-- Sporefall
 		inst(1317),	-- The Tidebound Grotto
 		inst(1320),	-- The Venomous Abyss
+		inst(1324),	-- The Unbinding of Kith'ix
 		n(MYTHIC_PLUS),
 		n(COMMON_DUNGEON_DROPS),
 		inst(1322),	-- Altar of Fangs

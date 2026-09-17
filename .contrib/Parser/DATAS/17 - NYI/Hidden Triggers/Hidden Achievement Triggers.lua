@@ -4281,6 +4281,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(63689),	-- [DNT]Midnight Keystone Myth: Season 2 Personal Achievement
 			ach(63700),	-- [DNT] Hallow's End Pepe Decor
 			-- Raids
+			ach(64165),	-- [DNT] Kith'ix RTC Viewed (Account Wide Hidden Tracking)
 			ach(63839),	-- Kith'ix (Raid Finder The Unbinding of Kith'ix)
 			ach(63840),	-- Kith'ix (Normal The Unbinding of Kith'ix)
 			ach(63841),	-- Kith'ix (Heroic The Unbinding of Kith'ix)
