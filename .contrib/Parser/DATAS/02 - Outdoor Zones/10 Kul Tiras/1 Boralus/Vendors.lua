@@ -310,6 +310,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 					}),
 				},
 			}),
+			n(142095, {	-- Henrick Wyther <Trade Goods>
+				["coord"] = { 73.2, 11.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(160398),	-- Choral Honey
+					i(160400),	-- Foosaka
+					i(160709),	-- Fresh Potato
+					i(160705),	-- Major's Frothy Coffee
+					i(160712),	-- Powdered Sugar
+					i(160710),	-- Wild Berries
+					i(160399),	-- Wild Flour
+				},
+			}),
 			n(246721, {	-- Janey Forrest
 				["coord"] = { 56.3, 45.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,

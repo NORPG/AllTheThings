@@ -147,6 +147,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			q(40139, {	-- Halls of Valor: The Hide of Fenryr
 				["sourceQuest"] = 40137,	-- Leather for Ske'rit
 				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
+				["maps"] = { 703, 704, 705 },	-- Halls of Valor
 			}),
 			q(40140, {	-- Ske'rit's Leather Handbook
 				["sourceQuests"] = {

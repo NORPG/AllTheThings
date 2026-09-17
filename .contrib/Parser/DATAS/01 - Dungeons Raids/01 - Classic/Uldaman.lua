@@ -610,6 +610,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 34.0, 84.5, ULDAMAN_OUTDOORS },	-- North Common Hall
 						{ 32.4, 62.4, ULDAMAN_OUTDOORS },	-- South Common Hall
 					},
+					["maps"] = { BADLANDS },
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["groups"] = {

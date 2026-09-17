@@ -270,6 +270,19 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(156641),	-- Zul's Saurid Ward
 				},
 			}),
+			n(141936, {	-- Hanul Swiftgale <Trade Supplies>
+				["coord"] = { 44.2, 32.2, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(160398),	-- Choral Honey
+					i(160400),	-- Foosaka
+					i(160709),	-- Fresh Potato
+					i(160705),	-- Major's Frothy Coffee
+					i(160712),	-- Powdered Sugar
+					i(160710),	-- Wild Berries
+					i(160399),	-- Wild Flour
+				},
+			}),
 			n(132097, {	-- Happy Holaua <Pet Vendor>
 				["coord"] = { 56.0, 32.2, DAZARALOR },
 				["groups"] = {

@@ -2476,12 +2476,6 @@ root(ROOTS.Unsorted, {
 				i(156634),	-- Silas' Vial of Continuous Curing \\ Silas' Phial of Perpetual Potential \\ Silus' Phial of Perpetual Potential
 				i(158292),	-- PH Cooking Reward \\ Mostly Intact Shell - PH Turtle Rare
 				i(158383),	-- Tidespray Pet Bandage \\ Sun-Bleached Pet Bandage
-				i(160399),	-- Wild Flour
-				i(160400),	-- Foosaka
-				i(160705),	-- Major's Frothy Coffee
-				i(160709),	-- Fresh Potato
-				i(160710),	-- Wild Berries
-				i(160712),	-- Powdered Sugar
 				i(162113),	-- Potion of Herb Tracking
 				i(162115),	-- Magnetic Mining Pick
 				i(162116),	-- Tempest Hide Pouch

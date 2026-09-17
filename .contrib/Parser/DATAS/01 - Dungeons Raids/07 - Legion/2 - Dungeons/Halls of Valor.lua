@@ -94,6 +94,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						i(140660),	-- Haft of the God-King
 					},
 				}),
+				e(1489, {	-- Odyn
+					["creatureID"] = 95676,	-- Odyn
+					["groups"] = {
+						i(137911),	-- Pattern: Battlebound Grips [Rank 3] (RECIPE!)
+					},
+				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1485, {	-- Hymdall
@@ -368,7 +374,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 							ach(10543, {	-- Surge Protector
 								["crs"] = { 102019 },	-- Stormforged Obliterator
 							}),
-							i(137911),	-- Pattern: Battlebound Grips [Rank 3] (RECIPE!)
 							i(137607),	-- Plans: Leystone Helm [Rank 3] (RECIPE!)
 							i(134192),	-- Biornskin Bracer
 							i(136776),	-- Bjorn's Hunting Strap

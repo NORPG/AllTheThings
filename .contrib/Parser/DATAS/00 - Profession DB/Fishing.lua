@@ -222,14 +222,15 @@ i(0, 1305972);		-- Oozing Goby
 i(0, 1295410);		-- Polluted Puffer
 i(0, 1295404);		-- Spotted Killifish
 i(0, 1295407);		-- Sulfurous Sludgefish
-i(0, 1295422);		-- Temple Fishing
 i(0, 1303630);		-- The Briny Best of 'Em
 i(0, 1295420);		-- The Coiled Isle
 i(0, 1295405);		-- Toxic Tlhapi
 i(0, 1305978);		-- Twin-Headed Snipefish
 i(0, 1295406);		-- Ula'tek Snakehead
-i(0, 1295421);		-- Venom Fishing
 --- ITEM ---
 i(275018, 1231090);	-- Coiled Stargorger Lure
 i(275012, 1295922);	-- Tokka's Multi-Ward
 i(277820, 1302819);	-- Ula'tek Snakehead Lure
+--- NYI ---
+i(0, 1295422);		-- Temple Fishing
+i(0, 1295421);		-- Venom Fishing

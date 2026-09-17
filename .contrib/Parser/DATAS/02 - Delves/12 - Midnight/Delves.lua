@@ -1778,6 +1778,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(95715, name(HEADERS.Map, GNARLDOR_ISLE)),	-- Gnarldor Isle
 			q(95716, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory
 			q(97064, name(HEADERS.Object, 658087, {isWeekly=true})),	-- Abundantly Bountiful Heavy Trunk spwaned
+			q(97628),	-- Looted Afflicted Soul
 			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
 		})),
 		q(99222, name(HEADERS.Faction, FACTION_ZULJARRAS_FORCES, {isWeekly=true})),	-- Zul'Jarra's Forces Rep

@@ -635,6 +635,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(27125, {	-- King of the Gordok [Alliance]
+					["sourceQuest"] = 27133,	-- Eyes in the Sky
 					["qg"] = 45040,	-- Druid of the Talon
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,

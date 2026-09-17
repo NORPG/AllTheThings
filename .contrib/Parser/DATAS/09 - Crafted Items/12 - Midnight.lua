@@ -1170,13 +1170,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			r(1295407, {["timeline"] = { ADDED_12_1_0 }}),	-- Sulfurous Sludgefish
 			r_withQuest(1225278, 88621),	-- Sunwell Fish
 			r_withQuest(1225281, 88611),	-- Tender Lumifin
-			r(1295422, {["timeline"] = { ADDED_12_1_0 }}),	-- Temple Fishing
+			--r(1295422, {["timeline"] = { ADDED_12_1_0 }}),	-- Temple Fishing
 			r(1295420, {["learnedAt"]=75}),	-- The Coiled Isle
 			r(1295405, {["timeline"] = { ADDED_12_1_0 }}),	-- Toxic Tlhapi
 			r(1305978, {["timeline"] = { ADDED_12_1_0 }}),	-- Twin-Headed Snipefish
 			r_withQuest(1225280, 88605),	-- Twisted Tetra
 			r(1295406, {["timeline"] = { ADDED_12_1_0 }}),	-- Ula'tek Snakehead
-			r(1295421, {["timeline"] = { ADDED_12_1_0 }}),	-- Venom Fishing
+			--r(1295421, {["timeline"] = { ADDED_12_1_0 }}),	-- Venom Fishing
 			r(1225336, {["learnedAt"]=225}),	-- Voidstorm
 			r_withQuest(1225279, 88616),	-- Warping Wise
 			r_withQuest(1225282, 88608),	-- Wyrmfish

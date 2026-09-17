@@ -723,11 +723,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 40.0, 76.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(155310),	-- Reliquary Explorer's Drape
-					i(158419),	-- Rastari Treads
-					i(158420),	-- Zanchuli Footwraps
-					i(158421),	-- Torcalin Treads
 					i(158422),	-- Jambani Treads
+					i(158419),	-- Rastari Treads
+					i(155310),	-- Reliquary Explorer's Drape
+					i(158421),	-- Torcalin Treads
+					i(158420),	-- Zanchuli Footwraps
+					--
+					a(i(155091)),	-- Thovas-Explorer's Cape
 				},
 			}),
 			q(55248, {	-- Greener Pastures

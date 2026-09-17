@@ -38,9 +38,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkal
 			-- 8.0.1
 			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
-				n(BACK, {
-					i(155091),	-- Thovas-Explorer's Cape
-				}),
 
 				-- Drustvar items = Nazmir quest rewards
 				filter(CLOTH, {
@@ -659,7 +656,10 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		expansion(EXPANSION.TWW, {
 			-- 11.0.0
 			expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+				q(81466),	-- Obtained in Valdrakken
 				q(81696),	-- Report to the Trading Post (D)
+				q(83214),	-- Obtained in Hallowfall
+				q(83034),	-- Obtained in Hallowfall
 			})),
 
 			-- 11.0.2
@@ -693,10 +693,11 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 11.2.7
 			expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
 				q(84833),	-- Obtained in The Waking Shores
+				q(94780),	-- Obtained in Highmountain
 			})),
 		}),
 		expansion(EXPANSION.MID, {
-			-- 11.0.0
+			-- 12.0.0
 			expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 				q(94747),	--
 			})),
