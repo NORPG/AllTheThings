@@ -44,6 +44,7 @@ end)
 local BrokenTypeDescriptions = setmetatable({
 	[0] = "TYPE 0: You can't kill mobs and have it tracked and count later, we could probably hook into KillTrack or something, but I don't know how to do that and when Wrath Classic comes around you'd need to do it again since it isn't permanent.",
 	[11] = "TYPE 11: Loremaster requires more quests than are currently available in the game and I don't have time to fix this yet prior to MOP Classic, which is my current priority.",
+	[28] = "TYPE 28: Requires the ability to track immortality up to a specific event AND the death of a specific mob. Can't determine that.",
 }, {
 	__index = function(t, key)
 		return "TYPE " .. key .. ": So broken that even the broken description table doesn't have any information on this one!";
@@ -457,7 +458,7 @@ local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
 		return OnTooltipForCriteriaData;
 	end,
 },
-"ForBrokenTypes", ForBrokenTypesFields, function(t) return t.type == 11 or t.type == 0 or t.type == 74; end,	-- 74 appears to be if someone has a title, but no id is provided.
+"ForBrokenTypes", ForBrokenTypesFields, function(t) return t.type == 11 or t.type == 17 or t.type == 28 or t.type == 0 or t.type == 74; end,	-- 74 appears to be if someone has a title, but no id is provided.
 "ForBankSlots", DefaultCriteriaFields, function(t) return t.type == 45; end,
 "ForSkillLevel", ForSkillLevelFields, function(t) return t.type == 7; end,
 "ForSkillRank", ForSkillRankFields, function(t) return t.type == 40; end,
