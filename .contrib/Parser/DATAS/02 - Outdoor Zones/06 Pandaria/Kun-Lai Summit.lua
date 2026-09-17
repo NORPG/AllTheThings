@@ -57,25 +57,50 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				battlepets({
-					pet(724),	-- Alpine Foxling (PET!)
-					pet(725),	-- Alpine Foxling Kit (PET!)
-					pet(747, {	-- Effervescent Glowfly (PET!)
-						["coord"] = { 55.0, 89.2, KUN_LAI_SUMMIT },
+					pet(724, {	-- Alpine Foxling (PET!)
+						["description"] = "Can be found spread through the zone around the snowline, and as secondary pets.",
+					}),
+					pet(725, {	-- Alpine Foxling Kit (PET!)
+						["description"] = "Respawns after some minutes as long as their Alpine Foxling parent is still alive. Can be found spread through the zone around the snowline, and common as secondary pets.",
+						["coords"] = {
+							{ 40.0, 68.2, KUN_LAI_SUMMIT },	-- Shado Li Basin by Kota Basecamp
+							{ 39.2, 82.1, KUN_LAI_SUMMIT },	-- Kota Peak by Tallmug's Camp
+							{ 47.2, 60.2, KUN_LAI_SUMMIT },	-- The Dooker Dome, north of.
+						},
 					}),
 					pet(1166, {	-- Kun-Lai Runt (PET!)
-						["description"] = "This is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",
+						["description"] = "Can be found through the snowy valleys of Kun-Lai Summit.\n\nThis is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",
 						["timeline"] = { ADDED_5_1_0 },
 					}),
-					pet(726),	-- Plains Monitor (PET!)
-					pet(727),	-- Prairie Mouse (PET!)
-					pet(679),	-- Summit Kid (PET!)
+					pet(726, {	-- Plains Monitor (PET!)
+						["description"] = "Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",
+					}),
+					pet(727, {	-- Prairie Mouse (PET!)
+						["description"] = "Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",
+					}),
+					pet(679, {	-- Summit Kid (PET!)
+						["description"] = "Can be found through the snowy valleys of Kun-Lai Summit.",
+						["coord"] = { 35.5, 56.6, KUN_LAI_SUMMIT },	-- Winter's Blossom, north of
+					}),
 					pet(728, {	-- Szechuan Chicken (PET!)
-						["description"] = "Can sometimes be easier to find as a secondary pet. Can accompany almost any other pet in Kun-Lai.",
+						["description"] = "Can sometimes be found as a primary pet at the given coords. Otherwise common as a secondary pet through the zone.",
 						["coord"] = { 60.0, 86.6, KUN_LAI_SUMMIT },
 					}),
-					pet(729),	-- Tolai Hare (PET!)
-					pet(730),	-- Tolai Hare Pup (PET!)
-					pet(731),	-- Zooey Snake (PET)
+					pet(729, {	-- Tolai Hare (PET!)
+						["description"] = "Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+					}),
+					pet(730, {	-- Tolai Hare Pup (PET!)
+						["description"] = "Respawns after some minutes as long as their Tolai Hare parent is still alive. Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+						["coords"] = {
+							{ 44.2, 79.9, KUN_LAI_SUMMIT },	-- The Yaungol Advance 
+							{ 44.0, 70.4, KUN_LAI_SUMMIT },	-- Kota Basecamp, east of
+							{ 64.2, 25.4, KUN_LAI_SUMMIT },	-- Zouchin Village, south of
+							{ 75.3, 15.6, KUN_LAI_SUMMIT },	-- Isle of Reckonning
+						},
+					}),
+					pet(731, {	-- Zooey Snake (PET)
+						["description"] = "Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+					}),
 				}),
 				explorationHeader({
 					exploration(6076),	-- Auburn Bluffs
@@ -483,6 +508,9 @@ root(ROOTS.Zones, {
 						-- TODO: determine sourceQuest. exclusive with "The Threat in the South" from Townlong Steppes
 					}),
 					q(31695, {	-- Beyond the Wall
+						-- #if AFTER 7.3.5
+						["description"] = "Might not be obtainable until you complete Hero's Call-/Warchief's Commands: Townlong Steppes.",
+						-- #endif
 						["sourceQuests"] = {
 							30660,	-- The Ordo Warbringer (A)
 							30662,	-- The Ordo Warbringer (A)

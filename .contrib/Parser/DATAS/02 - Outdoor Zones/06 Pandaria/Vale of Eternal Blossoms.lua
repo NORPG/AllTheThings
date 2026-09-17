@@ -76,44 +76,46 @@ root(ROOTS.Zones, {
 				}),
 				battlepets({
 					pet(751, {	-- Dancing Water Skimmer (PET!)
+						["description"] = "also common as a secondary pet.",
 						["coords"] = {
-							{ 30.2, 77.6, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 71.2, 40.2, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 76.2, 60.0, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 30.2, 77.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Mistfall Village
+							{ 71.2, 40.2, VALE_OF_ETERNAL_BLOSSOMS },	-- By Mogu'shan Palace
+							{ 76.2, 60.0, VALE_OF_ETERNAL_BLOSSOMS },	-- The Summer Fields
 						},
 					}),
 					pet(747, {	-- Effervescent Glowfly (PET!)
+						["description"] = "Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",
 						["coords"] = {
-							{ 23.2, 27.2, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 21.6, 60.8, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 85.0, 48.4, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 56.0, 89.0, KUN_LAI_SUMMIT },	-- By Gate of the August Celestials
+							{ 53.7, 89.2, KUN_LAI_SUMMIT },	-- By Gate of the August Celestials
 						},
 					}),
 					pet(383, {	-- Eternal Strider (PET!)
+						["description"] = "In commonly found by the riverbed.",
 						["coords"] = {
-							{ 34.0, 78.6, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 72.6, 27.6, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 87.0, 46.2, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 34.0, 78.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Mistfall Village
+							{ 72.6, 27.6, VALE_OF_ETERNAL_BLOSSOMS },	-- By Mogu'shan Palace
+							{ 87.0, 46.2, VALE_OF_ETERNAL_BLOSSOMS },	-- By Mogu'shan Palace
 						},
 					}),
-					pet(748),	-- Gilded Moth (PET!)
+					pet(748, {	-- Gilded Moth (PET!)
+						["description"] = "Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",
+					}),
 					pet(749, {	-- Golden Civet (PET!)
+						["description"] = "also common as a secondary pet.",
 						["coords"] = {
-							{ 11.2, 70.0, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 48.2, 30.8, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 11.2, 70.0, VALE_OF_ETERNAL_BLOSSOMS },	-- Gate of the Setting Sun
 						},
 					}),
 					pet(750, {	-- Golden Civet Kitten (PET!)
+						["description"] = "also common as a secondary pet.",
 						["coords"] = {
-							{ 11.2, 70.6, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 38.6, 64.8, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 11.2, 70.0, VALE_OF_ETERNAL_BLOSSOMS },	-- Gate of the Setting Sun
+							{ 38.6, 64.8, VALE_OF_ETERNAL_BLOSSOMS },	-- Jin Yang Road
 						},
 					}),
 					pet(752, {	-- Yellow-Bellied Bullfrog (PET!)
-						["coords"] = {
-							{ 24.6, 30.8, VALE_OF_ETERNAL_BLOSSOMS },
-							{ 69.0, 44.8, VALE_OF_ETERNAL_BLOSSOMS },
-						},
+						["description"] = "Can sometimes be found by the riverbed, also common as a secondary pet.",
 					}),
 				}),
 				explorationHeader({
@@ -1635,11 +1637,15 @@ root(ROOTS.Zones, {
 						["description"] = "Can randomly drop from any Mogu related mob in the zone.",
 					}),
 					i(85582, {	-- Shao-Tien Cage Key
+						-- #if AFTER 5.4.0
+						["description"] = "Not techically removed with 5.4.0, cages can still be opened and you can get an assistant in battle for a short duration. Other than that, it is useless.",
+						-- #endif
 						["crs"] = {
 							63641,	-- Shao-Tien Torturer
 							63610,	-- Shao-Tien Dominator
 							63611,	-- Shao-Tien Soul-Caller
 						},
+						["timeline"] = { REMOVED_5_4_0 },
 					}),
 					i(86547),	-- Skyshard
 					i(86546, {	-- Sky Crystal
