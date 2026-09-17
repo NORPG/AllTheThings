@@ -1247,7 +1247,7 @@ local criteriaFuncs = {
 
 	-- spellID = app.IsSpellKnownHelper,	-- defined in OnLoad event
 	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL,
-	-- text_spellID = app.GetSpellName,	-- defined in OnLoad event
+	text_spellID = GetSpellName,
 
 	factionID = function(v)
 		-- v = factionID.standingRequiredToLock
@@ -1311,7 +1311,6 @@ local criteriaFuncs = {
 	end,
 };
 app.AddEventHandler("OnLoad", function()
-	criteriaFuncs.text_spellID = app.GetSpellName
 	criteriaFuncs.spellID = app.IsSpellKnownHelper
 end)
 local AWQuestLockers = setmetatable({

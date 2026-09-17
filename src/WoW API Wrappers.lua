@@ -199,16 +199,10 @@ C_Spell and C_Spell.GetSpellCooldown and
 	function(spellIdentifier) local t = C_Spell.GetSpellCooldown(spellIdentifier)
 	return t and t.startTime or 0 end,
 	GetSpellCooldown);
-
--- Warning: The API Wrapper for GetSpellName is not completely equivalent.
--- GetSpellInfo accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
--- Currently, only the first type is implemented in C_Spell.
--- GetSpellInfo accpet both of parameters for compatibility reasons.
-if app.AfterCata then
-	AssignAPIWrapper("GetSpellName", C_Spell and C_Spell.GetSpellName , GetSpellInfo);
-else
-	AssignAPIWrapper("GetSpellName", GetSpellInfo);
-end
+	
+AssignAPIWrapper("GetSpellName",
+	C_Spell and C_Spell.GetSpellName,
+	GetSpellInfo);
 
 -- GetSpellRank was removed in 11.0
 AssignAPIWrapper("GetSpellRank", GetSpellRank, app.EmptyFunction)

@@ -62,14 +62,18 @@ local ConversionMethods = setmetatable({
 	spellID = function(spellID, reference)
 		local name = tostring(spellID);
 		if app.Settings:GetTooltipSetting("spellName") then
-			name = name .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
+			name = name .. " (" .. (GetSpellName(spellID) or "??");
+			if reference.rank then name = name .. " (" .. RANK .. " " .. reference.rank .. ")"; end
+			name = name .. ")";
 		end
 		return name;
 	end,
 	spellIDAndIcon = function(spellID, reference)
 		local name = tostring(spellID);
 		if app.Settings:GetTooltipSetting("spellName") then
-			name = name .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
+			name = name .. " (" .. (GetSpellName(spellID) or "??");
+			if reference.rank then name = name .. " (" .. RANK .. " " .. reference.rank .. ")"; end
+			name = name .. ")";
 		end
 		local icon = GetSpellIcon(spellID);
 		if icon then

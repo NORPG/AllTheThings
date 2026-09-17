@@ -27,8 +27,6 @@ local function RefreshSkills()
 	-- Store Skill Data
 	local activeSkills = app.CurrentCharacter.ActiveSkills;
 	wipe(activeSkills);
-	rawset(app.SpellNameToSpellID, 0, nil);
-	app.GetSpellName(0);
 	if GetSkillLineInfo then
 		for index=GetNumSkillLines(),1,-1 do
 			local skillName, header, isExpanded, skillRank, numTempPoints, skillModifier,
@@ -140,8 +138,6 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				local learned, craftSkillID, tradeSkillID, shouldShowSpellRanks = 0, 0, 0, nil;
-				rawset(app.SpellNameToSpellID, 0, nil);
-				app.GetSpellName(0);
 
 				if CraftFrame and CraftFrame:IsVisible() then
 					-- Crafting Skills (Enchanting and Beast Training Only)

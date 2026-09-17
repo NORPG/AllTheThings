@@ -91,7 +91,6 @@ local function GetSpellName(spellID)
 		return spellName;
 	end
 end
-app.GetSpellName = GetSpellName;
 app.SpellNameToSpellID = SpellNameToSpellID;
 
 -- Represents a small lookup of a select set of Profession/Skill-related icons

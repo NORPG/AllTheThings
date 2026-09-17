@@ -319,7 +319,7 @@ app.GetNameFromProviders = function(group)
 				name = app.NPCNameFromID[id];
 				break
 			elseif pt == "s" then
-				name = app.GetSpellName(id)
+				name = app.WOWAPI.GetSpellName(id)
 				break
 			end
 		end
@@ -337,7 +337,7 @@ app.GetNameFromProvider = function(pt, id)
 	elseif pt == "n" then
 		return app.NPCNameFromID[id];
 	elseif pt == "s" then
-		return app.GetSpellName(id)
+		return app.WOWAPI.GetSpellName(id)
 	end
 end
 
