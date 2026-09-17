@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91806, {	-- Big Game Hunting
 					["coord"] = { 29.3, 37.7, MAP.MIDNIGHT.ZULAMAN },
+					["qi"] = 258324,	-- Stolen Game Meat (QI!)
 					["groups"] = {
 						o(612282, {	-- Stolen Meat
 							["coords"] = {
@@ -30,13 +31,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								{ 28.4, 34.2, MAP.MIDNIGHT.ZULAMAN },
 								{ 28.5, 38.5, MAP.MIDNIGHT.ZULAMAN },
 							},
-							["groups"] = { i(258324) },	-- Stolen Game Meat (QI!)
 						}),
 					},
 				}),
 				q(91810, {	-- Blistereel Boar Buffet
 					["coord"] = { 45.3, 28.5, MAP.MIDNIGHT.ZULAMAN },
-					["groups"] = { i(260890) },	-- Bag of Skewers (QI!)
+					["qi"] = 260890,	-- Bag of Skewers (QI!)
 				}),
 				q(91805, {	-- Boughs in the Burrows
 					["coord"] = { 42.2, 47.8, MAP.MIDNIGHT.ZULAMAN },
@@ -69,15 +69,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91804, {	-- Fish for the Fire
 					["coord"] = { 49.4, 51.4, MAP.MIDNIGHT.ZULAMAN },
-					["groups"] = {
-						i(257241),	-- Lumpy Fish Guts (QI!)
-					},
+					["qi"] = 257241,	-- Lumpy Fish Guts (QI!)
 				}),
 				q(91798, {	-- Fish Of The Day
 					["coord"] = { 40.2, 77.1, MAP.MIDNIGHT.ZULAMAN },
-					["groups"] = {
-						i(252003),	-- Slippery Snapper (QI!)
-					},
+					["qi"] = 252003,	-- Slippery Snapper (QI!)
 				}),
 				q(91800, {	-- Heirlooming Danger
 					["coord"] = { 25.8, 65.2, MAP.MIDNIGHT.ZULAMAN },
@@ -131,8 +127,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91808, {	-- Resource Recovery
 					["coord"] = { 30.0, 30.0, MAP.MIDNIGHT.ZULAMAN },
+					["qi"] = 238962,	-- Lightwood Splinters (QI!)
 					["groups"] = {
-						i(238962),	-- Lightwood Splinters (QI!)
 						o(525374, {	-- Stolen Equipment
 							["coords"] = {
 								{ 28.9, 29.7, MAP.MIDNIGHT.ZULAMAN },
@@ -164,9 +160,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91399, {	-- Ashes of the Void
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
 					["qg"] = 246878,	-- Nan'kejo
+					["qi"] = 246439,	-- Void Ashes (QI!)
 					["coord"] = { 22.6, 73.2, MAP.MIDNIGHT.ZULAMAN },
 					["isDaily"] = true,
-					["groups"] = { i(246439) },	-- Void Ashes (QI!)
 				}),
 				q(91400, {	-- Blades of the Fallen
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
@@ -177,19 +173,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91401, {	-- Dead by Dusk
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
 					["qg"] = 246880,	-- Kul'kul
+					["qi"] = 246440,	-- Cultist Femur (QI!)
 					["coord"] = { 28.4, 76.8, MAP.MIDNIGHT.ZULAMAN },
 					["isDaily"] = true,
-					["groups"] = { i(246440) },	-- Cultist Femur (QI!)
 				}),
 				q(91398, {	-- Tomes of Terror
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
 					["qg"] = 246877,	-- Tenak
+					["qis"] = {
+						246436,	-- Ogre Tome of Dark Magic (QI!)
+						246437,	-- Ogre Tome of Fighting Techniques (QI!)
+					},
 					["coord"] = { 27.3, 72.6, MAP.MIDNIGHT.ZULAMAN },
 					["isDaily"] = true,
-					["groups"] = {
-						i(246436),	-- Ogre Tome of Dark Magic (QI!)
-						i(246437),	-- Ogre Tome of Fighting Techniques (QI!)
-					},
 				}),
 				q(91402, {	-- Ultra Deadly Ultradon
 					["sourceQuest"] = 91390,	-- Special Assignment: What Remains of a Temple Broken
