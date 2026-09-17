@@ -8054,7 +8054,7 @@ ah(194163,{awp=70003,requireSkill=393,type="s",g={
 q(40136,{lvl=10,maps={630,634,641,650,680},providers={{"i",129866}},requireSkill=393,sourceQuests={40135}}),
 q(40137,{lvl=10,maps={680},qgs={93541},requireSkill=393,sourceQuests={40136}}),
 q(40138,{lvl=10,qgs={98720},requireSkill=393,sourceQuests={40137}}),
-q(40139,{lvl=10,qgs={98720},requireSkill=393,sourceQuests={40137}}),
+q(40139,{lvl=10,maps={703,704,705},qgs={98720},requireSkill=393,sourceQuests={40137}}),
 q(40140,{lvl=10,qgs={98720},requireSkill=393,sourceQuests={40138,40139},g={
 r(194163,{requireSkill=393}),
 crit(61489,{achID=18834,awp=100107,id=5,providers={{"s",194163}},requireSkill=393})}})}}),

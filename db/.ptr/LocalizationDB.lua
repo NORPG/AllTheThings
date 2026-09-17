@@ -4756,8 +4756,8 @@ _.FlightPathNames = {
 	[3315] = "Labyrinth, Jan'alai's Refuge",
 	[3316] = "Labyrinth, Entrance to Akil'zon's Roost",
 	[3317] = "Labyrinth, Akil'zon's Roost",
-	[3318] = "Labyrinth, Entrance to Nalorakk's Den",
-	[3319] = "Labyrinth, Nalorakk's Den",
+	[3318] = "Labyrinth, Entrance to Nalorakk's Rest",
+	[3319] = "Labyrinth, Nalorakk's Rest",
 	[3329] = "Labyrinth, Entrance to The Catacombs",
 }
 -- Glyphs Database Module
