@@ -15,7 +15,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91806, {	-- Big Game Hunting
 					["coord"] = { 29.3, 37.7, MAP.MIDNIGHT.ZULAMAN },
-					["qi"] = 258324,	-- Stolen Game Meat (QI!)
 					["groups"] = {
 						o(612282, {	-- Stolen Meat
 							["coords"] = {
@@ -31,6 +30,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								{ 28.4, 34.2, MAP.MIDNIGHT.ZULAMAN },
 								{ 28.5, 38.5, MAP.MIDNIGHT.ZULAMAN },
 							},
+							["groups"] = { i(258324) },	-- Stolen Game Meat (QI!)
 						}),
 					},
 				}),
