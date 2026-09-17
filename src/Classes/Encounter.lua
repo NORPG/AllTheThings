@@ -1,4 +1,3 @@
-do
 -- App locals
 local _,app = ...;
 
@@ -78,4 +77,4 @@ else
 		}, { __index = t });
 	end
 end
-end
+app.AddGenericFieldConverter("encounterID")

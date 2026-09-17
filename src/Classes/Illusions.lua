@@ -84,4 +84,5 @@ app.AddEventHandler("OnLoad", function()
 	end
 end);
 
+app.AddGenericFieldConverter(KEY)
 app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)

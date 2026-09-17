@@ -953,37 +953,9 @@ fieldConverters.qis = function(group, value)		-- Referenced in Modules/Search
 		CacheField(group, "qItemID", value[i])
 	end
 end
-
--- These are used to provide sourcePaths for the various types:
--- Also prevents these Things from thinking they are 'missing' since it allows searching for themselves
--- If some day we want sourcePath to be more dynamic, we can do that in the InformationType.
-fieldConverters.criteriaID = function(group, value)
-	CacheField(group, "criteriaID", value);
-end
-fieldConverters.decorID = function(group, value)
-	CacheField(group, "decorID", value);
-end
-fieldConverters.illusionID = function(group, value)
-	CacheField(group, "illusionID", value);
-end
-fieldConverters.titleID = function(group, value)
-	CacheField(group, "titleID", value);
-end
-
--- Used by tons of symlinks that I don't have time before expac to try and massage into using other search keys/symlinks
--- encounterID is primarily used by World Bosses, but searching by NPCID doesn't match a field on the encounter since they use 'crs'
--- and adjusting symlink logic to additionally do more checks would slow it down
-fieldConverters.encounterID = function(group, value)
-	CacheField(group, "encounterID", value);
-end
 -- symselector will make it easier to select specific headers when many share the same ID without having to traverse huge grouping selections
 fieldConverters.symselector = function(group, value)
 	CacheField(group, "symselector", value);
-end
-end
-do	-- PvP Rank Key Cache
-fieldConverters.pvprankID = function(group, value)
-	CacheField(group, "pvprankID", value);
 end
 end
 

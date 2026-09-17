@@ -81,6 +81,7 @@ local function AssignCollectibleFunction()
 		app.SwapClassDefinitionMethod(CLASSNAME,"collectible",app.ReturnFalse)
 	end
 end
+app.AddGenericFieldConverter(KEY)
 app.AddEventHandler("OnSettingsNeedsRefresh", AssignCollectibleFunction);
 app.AddEventHandler("OnStartup", AssignCollectibleFunction);
 app.AddEventHandler("OnRefreshCollections", function()

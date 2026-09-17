@@ -111,6 +111,7 @@ do
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end)
+	app.AddGenericFieldConverter(KEY)
 	app.AddEventHandler("OnRefreshCollections", RefreshDecorCollection)
 	app.AddEventRegistration("HOUSE_DECOR_ADDED_TO_CHEST", function(decorUid, decorID)
 		app.SetThingCollected(KEY, decorID, true, true)
@@ -164,7 +165,7 @@ do
 		-- Attach ATT info to Housing Catalog tooltips
 		app.ForceAttachTooltip(tooltip, {type="decor", id=decorID})
 	end)
-	
+
 	app.AddEventHandler("OnLoad", function()
 		app.AddDynamicCategoryHeader({ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") });
 		app.AddRandomSearchCategory("Decor", "decorID", app.L.DECOR, app.L.DECOR_DESC, app.asset("Category_Housing"));

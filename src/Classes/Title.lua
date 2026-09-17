@@ -126,6 +126,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 end)
+app.AddGenericFieldConverter(KEY)
 app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 
 -- Title Refresh

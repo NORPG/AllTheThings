@@ -549,5 +549,6 @@ do
 			app.UpdateRawID("achievementID", achievementID)
 		end);
 	end
+	app.AddGenericFieldConverter("criteriaID")
 	app.AddSimpleCollectibleSwap("AchievementCriteria", "Achievements")
 end

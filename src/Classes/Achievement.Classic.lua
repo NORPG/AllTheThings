@@ -17,7 +17,7 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetAchievementInfo = GetAchievementInfo;
 
 -- Cache Achievement Data if it exists.
--- CRIEVE NOTE: This file is a work in progress. 
+-- CRIEVE NOTE: This file is a work in progress.
 -- Gonna split up the "WithData" variants only if data is present in the addon and use the base logic if not
 local AchievementData = rawget(L, "ACHIEVEMENT_DATA") or {};
 local AchievementCriteriaData = rawget(L, "ACHIEVEMENT_CRITERIA_DATA") or {};
@@ -90,7 +90,7 @@ if GetAchievementCriteriaInfoByID then
 		if achievementID then
 			if app.CurrentCharacter.Achievements[achievementID] then return 1; end
 			if app.Settings.AccountWide.Achievements and ATTAccountWideData.Achievements[achievementID] then return 2; end
-			
+
 			local criteriaID = t.criteriaID;
 			if criteriaID then
 				local collected = false;
@@ -159,7 +159,7 @@ if GetAchievementCriteriaInfoByID then
 	criteriaFields.OnTooltip = function()
 		return onTooltipForAchievementCriteria;
 	end
-	
+
 	local achievementCacheByID = setmetatable({}, {
 		__index = function(t, id)
 			local searchResults = SearchForField("achievementID", id);
@@ -274,6 +274,7 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 		return data;
 	end
 end);
+app.AddGenericFieldConverter("criteriaID")
 
 
 -- Achievement Class Fields
@@ -420,7 +421,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	fields.OnTooltip = function()
 		return onTooltipForAchievement;
 	end
-	
+
 	-- Setup a handler that will manage completion checks to keep it optimized.
 	local function CheckAchievementCollectionStatus(achievementID)
 		achievementID = tonumber(achievementID) or achievementID;
