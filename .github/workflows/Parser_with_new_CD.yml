@@ -3,12 +3,12 @@ name: Parser with New CD
 on:
   push:
     branches:
-      - "**"
+      - "forever-beta"
     tags-ignore:
       - "*"
   pull_request:
     branches:
-      - "**"
+      - "forever-beta"
     paths:
       - ".contrib/Parser/**"
   workflow_dispatch:
