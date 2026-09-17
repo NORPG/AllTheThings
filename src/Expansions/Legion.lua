@@ -3,7 +3,7 @@ local _,app = ...;
 
 -- Check to see if Artifact APIs are available for Legion
 local C_ArtifactUI = C_ArtifactUI;
-if not C_ArtifactUI then
+if not C_ArtifactUI or app.GameBuildVersion < 70000 then
 	-- Artifacts are not supported by this version of the game client.
 	app.GetArtifactModItemID = app.EmptyFunction
 	app.CreateArtifact = app.CreateUnimplementedClass("Artifact", "artifactID");
