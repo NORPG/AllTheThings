@@ -3004,8 +3004,8 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 ,,5061,264280,0,2027906,4,1056,-1,6,7,0
 ,"|cFFFFD200Promotion:|r BlizzCon 2026",5064,264863,1293301,7845057,0,82,7,6,7,0
 "A true Abyss Angler, certified by Depthdiver Jeju himself.","|cFFFFD200Vendor: |rDepthdiver Tu'nakit|n|cFFFFD200Zone: |rZul'Aman|n|cFFFFD200Cost: |r2400|Hcurrency:3373|h|TInterface\ICONS\Item_enchantedpearl.blp:0|t|h|n|n",5065,264933,1293499,2205592,4,154,10,6,7,0
-"These Aqir Scuttlers are persistent and one of the most numerous of the many Aqir creatures.",TBD,5066,265740,1295644,134315,4,210,5,6,7,0
-"The winged aqir are very fast and agile, and their wings provide a nice breeze on a warm afternoon.",TBD,5068,265755,1295663,2103856,2,210,-1,6,7,0
+"These Aqir Scuttlers are persistent and one of the most numerous of the many Aqir creatures.","|cFFFFD200Vendor: |rEstelia Archtender|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r1000|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h",5066,265740,1295644,134315,4,210,5,6,7,0
+"The winged aqir are very fast and agile, and their wings provide a nice breeze on a warm afternoon.","|cFFFFD200Vendor: |rEstelia Archtender|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r1000|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h",5068,265755,1295663,2103856,2,210,2,6,7,0
 "As potent as he is dimunitive.","|cFFFFD200Vendor:|r Second Mate Sluggs",5070,265786,1295938,5041291,6,210,2,6,7,0
 "They're so cute when they're young! You still don't want to touch it...","|cFFFFD200Vendor: |rSkull of Er'inye|n|cFFFFD200Zone: |rVaults of Atal'Utek|n|cFFFFD200Cost: |r5000|Hcurrency:3448|h|TInterface\ICONS\INV_121_Ulatek_Currency.BLP:0|t|h",5071,266464,1297094,8032870,7,210,2,6,7,0
 "The youngest venomfangs have the deadliest bites.","|cFFFFD200Vendor: |rSkull of Er'inye|n|cFFFFD200Zone: |rVaults of Atal'Utek|n|cFFFFD200Cost: |r5000|Hcurrency:3448|h|TInterface\ICONS\INV_121_Ulatek_Currency.BLP:0|t|h",5072,266469,1297098,8125100,7,210,2,6,7,0
@@ -3016,7 +3016,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Each step hums with mana; each punch ends the chase.","|cFFFFD200Vendor: |rConstruct V'anore|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r1200|Hcurrency:3392|h|TInterface\ICONS\INV_10_ElementalCombinedFoozles_Blood.BLP:0|t|h",5078,266835,1297704,7881307,9,18,2,6,7,0
 "Ula'tek's venom gave rise to new color variants of wind serpents, like this little pink one.","|cFFFFD200Drop: |rWriggling Venom-Soaked Satchel|n|cFFFFD200Zone: |rThe Coiled Isle",5092,267689,1299089,8125117,7,210,0,6,7,0
 "Demands scritches and blood sacrifices.","|cFFFFD200Vendor: |rJan'sari the Watchful|n|cFFFFD200Zone: |rThe Coiled Isle|n|cFFFFD200Cost: |r2500|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h|n|n",5093,267805,1299255,8125118,7,210,2,6,7,0
-"The winged aqir are very fast and agile, and their wings provide a nice breeze on a warm afternoon.",TBD,5100,268483,1301393,2103895,2,82,-1,6,7,0
+"The winged aqir are very fast and agile, and their wings provide a nice breeze on a warm afternoon.","|cFFFFD200Vendor: |rEstelia Archtender|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r2000|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h",5100,268483,1301393,2103895,2,82,2,6,7,0
 "Don't be put off by this cat's icy demeanor.","|cFFFFD200Trading Post|r",5114,268609,1301935,8014864,7,16466,11,6,7,0
 "Knocks potions and reagents off shelves for ""research purposes.""","|cFFFFD200Trading Post|r",5115,268636,1302008,8014864,7,16466,11,6,7,0
 "Sometimes a good cat nap is all you need to stave off death.","|cFFFFD200Trading Post|r",5116,268671,1302084,7977787,7,16466,11,6,7,0

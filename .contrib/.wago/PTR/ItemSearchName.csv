@@ -99500,7 +99500,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 272245,"Miststalker's Cinch",4,11,0,0,-1,78,0,0,0,206,4096,8192,0,0,0,-1,-1
 272246,"Miststalker's Wristbands",4,11,0,0,-1,78,0,0,0,206,4096,8192,0,0,0,-1,-1
 272247,"Galerider's Byrnie",4,11,0,0,-1,78,0,0,0,206,4096,8192,0,0,0,-1,-1
-272248,"Galerider's Chausses",4,11,0,0,-1,78,0,0,0,206,0,8192,0,0,0,-1,-1
+272248,"Galerider's Footguards",4,11,0,0,-1,78,0,0,0,206,4096,8192,0,0,0,-1,-1
 272249,"Galerider's Chain Clasps",4,11,0,0,-1,78,0,0,0,206,4096,8192,0,0,0,-1,-1
 272250,"Galerider's Gaze",4,11,0,0,-1,78,0,0,0,206,4096,8192,0,0,0,-1,-1
 272251,"Galerider's Chausses",4,11,0,0,-1,78,0,0,0,206,4096,8192,0,0,0,-1,-1
@@ -100581,6 +100581,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 284055,"Hexbinder's Spaulders",4,11,0,0,-1,1,0,0,0,1,134320128,139264,0,65536,0,-1,-1
 284056,"Spirit Effigy",4,11,0,0,-1,1,0,0,0,1,134320128,139264,0,65536,0,-1,-1
 284057,"Effigy of Corrosion",4,11,0,0,-1,1,0,0,0,1,134316032,139264,0,65536,0,-1,-1
+284159,"Libram of the Matriarch",4,11,0,0,-1,0,0,0,0,1,1081408,8192,32768,0,0,-1,-1
 284180,"Loa-Touched Deltoid",4,11,0,0,-1,1,0,0,0,1,134316032,139264,0,65536,0,-1,-1
 284181,"Loa-Touched Spine",4,11,0,0,-1,1,0,0,0,1,134316032,139264,0,65536,0,-1,-1
 284182,"Loa-Touched Visage",4,11,0,0,-1,1,0,0,0,1,134316032,139264,0,65536,0,-1,-1
@@ -100638,8 +100639,56 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 272331,"Varian's Azure Dragon Pauldron",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 272332,"Varian's Azure Dragon Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 272333,"Varian's Azure Dragon Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+279173,"Veteran Adventurer's Chestpiece",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+279174,"Veteran Adventurer's Belt",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+279175,"Veteran Adventurer's Legguards",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+279176,"Veteran Adventurer's Boots",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+279177,"Veteran Adventurer's Bracer",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+279178,"Veteran Adventurer's Gloves",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+279179,"Veteran Adventurer's Cloak",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+279180,"Veteran Adventurer's Hood",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+279181,"Veteran Adventurer's Shoulderpads",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+271722,"Shen'dorei Magister's Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271723,"Shen'dorei Magister's Boots",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271724,"Shen'dorei Magister's Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271725,"Shen'dorei Magister's Robe",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271726,"Shen'dorei Magister's Gloves",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271727,"Shen'dorei Magister's Helm",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271728,"Shen'dorei Magister's Leggings",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271729,"Shen'dorei Magister's Vest",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271730,"Shen'dorei Magister's Pauldrons",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271733,"Shen'dorei Peacekeeper's Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271734,"Shen'dorei Peacekeeper's Boots",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271735,"Shen'dorei Peacekeeper's Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271736,"Shen'dorei Peacekeeper's Robe",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271737,"Shen'dorei Peacekeeper's Gloves",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271738,"Shen'dorei Peacekeeper's Helm",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271739,"Shen'dorei Peacekeeper's Leggings",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271742,"Shen'dorei Peacekeeper's Vest",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271743,"Shen'dorei Peacekeeper's Pauldrons",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271746,"Shen'dorei Skyseer's Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271747,"Shen'dorei Skyseer's Boots",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271748,"Shen'dorei Skyseer's Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271749,"Shen'dorei Skyseer's Robe",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271750,"Shen'dorei Skyseer's Gloves",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271751,"Shen'dorei Skyseer's Helm",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271752,"Shen'dorei Skyseer's Leggings",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271753,"Shen'dorei Skyseer's Vest",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271754,"Shen'dorei Skyseer's Pauldrons",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271756,"Al'Aketh Zealot's Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271757,"Al'Aketh Zealot's Boots",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271758,"Al'Aketh Zealot's Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271759,"Al'Aketh Zealot's Robe",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271760,"Al'Aketh Zealot's Gloves",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271761,"Al'Aketh Zealot's Helm",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271762,"Al'Aketh Zealot's Leggings",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271763,"Al'Aketh Zealot's Vest",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+271764,"Al'Aketh Zealot's Pauldrons",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
 276625,"Puffin Pack",4,-3,0,0,-1,0,0,0,0,1,134250496,8531968,8388608,0,0,-1,-1
+270272,"Lordaeron Forever",1,11,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 279006,"Fisher's Pack",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+280623,"Veteran Adventurer's Rucksack",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+280545,"Shen'dorei Tabard",1,11,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 6121,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
 20902,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
 23474,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
@@ -101797,7 +101846,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91646,"Malevolent Gladiator's Ornamented Legplates",4,4,0,0,2,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91626,"Malevolent Gladiator's Scaled Legguards",4,4,0,0,2,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91514,"Malevolent Gladiator's Dragonhide Legguards",4,4,0,0,1024,35,0,0,0,39,4096,8192,0,0,0,-1,-1
-87039,"Eye of the Ancient Spirit",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 91506,"Malevolent Gladiator's Dreadplate Legguards",4,4,0,0,32,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91614,"Malevolent Gladiator's Copperskin Legguards",4,4,0,6,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91581,"Malevolent Gladiator's Chain Leggings",4,4,0,0,4,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -101836,7 +101884,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91518,"Malevolent Gladiator's Dragonhide Spaulders",4,4,0,0,1024,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91593,"Malevolent Gladiator's Silk Amice",4,4,0,0,128,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91508,"Malevolent Gladiator's Dreadplate Shoulders",4,4,0,0,32,35,0,0,0,39,4096,8192,0,0,0,-1,-1
-87037,"Sandals of the Severed Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
 91606,"Malevolent Gladiator's Ironskin Spaulders",4,4,0,0,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91616,"Malevolent Gladiator's Copperskin Spaulders",4,4,0,0,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91583,"Malevolent Gladiator's Chain Spaulders",4,4,0,0,4,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -101915,6 +101962,8 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 87034,"Fetters of Death",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87032,"Gara'kal, Fist of the Spiritbinder",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
 87033,"Netherrealm Shoulderpads",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
+87039,"Eye of the Ancient Spirit",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
+87037,"Sandals of the Severed Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
 87043,"Bindings of Ancient Spirits",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87040,"Circuit of the Frail Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073766400,0,0,0,-1,-1
 87041,"Spaulders of the Divided Mind",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
@@ -101987,6 +102036,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 89266,"Chest of the Shadowy Protector",4,0,0,0,581,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89264,"Chest of the Shadowy Vanquisher",4,0,0,0,1192,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89271,"Gauntlets of the Shadowy Conqueror",4,0,0,0,274,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
+90896,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 89272,"Gauntlets of the Shadowy Protector",4,0,0,0,581,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89270,"Gauntlets of the Shadowy Vanquisher",4,0,0,0,1192,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89268,"Leggings of the Shadowy Conqueror",4,0,0,0,274,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
@@ -102028,7 +102078,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 90373,"Landfall Plate Boots",2,4,0,0,-1,0,0,0,0,37,65536,8192,0,0,0,-1,-1
 90894,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 90895,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
-90896,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 99767,"Tyrannical Gladiator's Bonegrinder",4,4,0,0,-1,35,0,0,0,39,4096,8194,8388608,0,0,-1321907123,1427461461
 99773,"Tyrannical Gladiator's Cape of Cruelty",4,4,0,0,1612,35,0,0,0,39,4096,8194,0,0,0,-1321907123,1427461461
 99774,"Tyrannical Gladiator's Cape of Prowess",4,4,0,0,1612,35,0,0,0,39,4096,8194,0,0,0,-1321907123,1427461461
@@ -103800,7 +103849,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 166955,"Dread Gladiator's Chain Sabatons",4,0,0,0,-1,50,0,0,0,58,65536,4206592,0,0,0,-1,-1
 166956,"Dread Gladiator's Chain Gauntlets",4,0,0,0,-1,50,0,0,0,58,65536,4206592,0,0,0,-1,-1
 166957,"Dread Gladiator's Chain Helm",4,0,0,0,-1,50,0,0,0,58,65536,4206592,0,0,0,-1,-1
-203192,"Kosh'aka Girdle",4,0,0,0,-1,0,0,0,0,1,134217728,8531968,8388608,128,0,2,0
 166958,"Dread Gladiator's Chain Leggings",4,0,0,0,-1,50,0,0,0,58,65536,4206592,0,0,0,-1,-1
 166959,"Dread Gladiator's Chain Spaulders",4,0,0,0,-1,50,0,0,0,58,65536,4206592,0,0,0,-1,-1
 166960,"Dread Gladiator's Chain Waistguard",4,0,0,0,-1,50,0,0,0,58,65536,4206592,0,0,0,-1,-1
@@ -103924,6 +103972,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 203187,"Kosh'aka Spaulders",4,0,0,0,-1,0,0,0,0,1,134217728,8531968,8388608,128,0,2,0
 203189,"Kosh'aka Cheststraps",4,0,0,0,-1,0,0,0,0,1,134217728,8531968,8388608,128,0,2,0
 203190,"Kosh'aka Cheststraps",4,0,0,0,-1,0,0,0,0,1,134217728,8531968,8388608,128,0,2,0
+203192,"Kosh'aka Girdle",4,0,0,0,-1,0,0,0,0,1,134217728,8531968,8388608,128,0,2,0
 203193,"Kosh'aka Girdle",4,0,0,0,-1,0,0,0,0,1,134217728,8531968,8388608,128,0,2,0
 203195,"Kosh'aka Legstraps",4,0,0,0,-1,0,0,0,0,1,134217728,8531968,8388608,128,0,2,0
 203196,"Kosh'aka Legstraps",4,0,0,0,-1,0,0,0,0,1,134217728,8531968,8388608,128,0,2,0
