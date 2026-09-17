@@ -432,24 +432,23 @@ namespace ATT
 
                 // Load the main lua header file and all associated lib files first.
                 string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
+                var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
+                luaFiles.Sort(StringComparer.InvariantCulture);
                 string content = "";
                 try
                 {
-                    var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
-                    if (!File.Exists(mainFileName))
+                    foreach (var fileName in luaFiles)
                     {
-                        Trace.WriteLine("Could not find the '_main.lua' header file.");
-                        Trace.WriteLine("Operation cannot continue without it.");
-                        Framework.WaitForUser("Press any key to close...");
-                        return ErrorCode;
+                        if (Errored) break;
+                        if (!fileName.Contains("\\.config\\")) continue;
+                        ParseLUAFile(lua, fileName);
                     }
-                    Framework.CurrentFileName = mainFileName;
-                    lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
-                    lua.DoString(content = ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
                 }
-                catch
+                catch(Exception e)
                 {
+                    Framework.LogException(e);
                     File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
+                    Framework.WaitForUser("Press any key to close...");
                     throw;
                 }
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
@@ -498,11 +497,10 @@ namespace ATT
                 }
 
                 Framework.CurrentParseStage = ParseStage.ContributorDataMerge;
-                var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
-                luaFiles.Sort(StringComparer.InvariantCulture);
                 foreach (var fileName in luaFiles)
                 {
                     if (Errored) break;
+                    if (fileName.Contains("\\.config\\")) continue;
                     ParseLUAFile(lua, fileName);
                 }
 
