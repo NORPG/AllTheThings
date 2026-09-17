@@ -8,6 +8,7 @@ end
 
 -- DF
 i(204255);	-- Cracked Titan Gem
+i(205188)	-- Barter Boulder
 
 -- MID
 i(279345)	-- Venom-Drenched Sack
