@@ -446,7 +446,8 @@ app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 		else
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
 			-- always report missing
-			app.report(L.ITEM_ID_ADDED_MISSING:format(
+			app.report("Missing Appearance Learned",
+					L.ITEM_ID_ADDED_MISSING:format(
 					sourceID,
 					sourceInfo and sourceInfo.itemID,
 					app.Version),
@@ -477,7 +478,8 @@ app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 			end
 		else
 			-- always report missing
-			app.report((newCollected and L.ITEM_ID_ADDED_SHARED_MISSING or L.ITEM_ID_ADDED_MISSING):format(
+			app.report("Missing Appearance Learned",
+					(newCollected and L.ITEM_ID_ADDED_SHARED_MISSING or L.ITEM_ID_ADDED_MISSING):format(
 					sourceID,
 					sourceInfo and sourceInfo.itemID,
 					newAppearancesLearned,
@@ -514,7 +516,8 @@ app.AddRemovalTypeHandler("ItemWithAppearance", function(t)
 		-- TODO eventual setting to control reporting of already collected Things
 		if uniqueRemoved > 0 then
 			if app.Settings:GetTooltipSetting("Report:Collected") then
-				app.report(L.ITEM_ID_REMOVED_SHARED:format(
+				app.report("Missing Appearance Removed",
+						L.ITEM_ID_REMOVED_SHARED:format(
 						GetSourceAppearanceLink(sourceID),
 						sourceInfo.itemID,
 						uniqueRemoved),
