@@ -84,7 +84,7 @@ settings.RequiredForInsaneMode = {
 	Conduits = app.GameBuildVersion >= 100000,
 	Decor = app.GameBuildVersion >= 110207,
 	MountMods = app.GameBuildVersion >= 100000,
-	Exploration = app.IsClassic,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
+	Exploration = app.GameBuildVersion < 100000,	-- CRIEVE NOTE: For now, until Blizzard adds an exploration API that doesn't suck
 	FirstCrafts = app.GameBuildVersion >= 100000,
 	FlightPaths = true,
 	Followers = app.GameBuildVersion >= 60000,
@@ -290,7 +290,7 @@ local GeneralSettingsBase = {
 		["Thing:Conduits"] = app.GameBuildVersion >= 100000,
 		["Thing:Decor"] = app.GameBuildVersion >= 110207,
 		["Thing:MountMods"] = app.GameBuildVersion >= 100000,
-		["Thing:Exploration"] = app.IsClassic,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
+		["Thing:Exploration"] = app.GameBuildVersion < 100000,	-- CRIEVE NOTE: For now, until Blizzard adds an exploration API that doesn't suck
 		["Thing:FirstCrafts"] = app.GameBuildVersion >= 100000,
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = app.GameBuildVersion >= 60000,
