@@ -49,32 +49,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit (PET!)
-					417,	-- Rat (PET!)
-					417,	-- Roach (PET!)
-					388,	-- Shore Crab (PET!)
-					397,	-- Skunk (PET!)
-					412,	-- Spider (PET!)
-					379,	-- Squirrel (PET!)
-					469,	-- Twilight Beetle (PET!)
-					470,	-- Twilight Spider (PET!)
-				}},
-				["groups"] = {
-					pet(472),	-- Rabid Nut Varmint 5000 (PET!)
-					pet(471, {	-- Robo-Chick (PET!)
-						["coords"] = {
-							{ 42.4, 76.8, MAP.AZSHARA },
-							{ 51.8, 74.8, MAP.AZSHARA },
-						},
-						["description"] = "Normally found close to these coords, as well as in Everlook.",
-					}),
-					pet(473, {	-- Turquoise Turtle (PET!)
-						["description"] = "Can commonly be found on the beaches of Azshara.",
-					}),
-				},
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(1224),	-- Bear's Head
@@ -2295,16 +2269,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28496, {	-- Warchief's Command: Azshara!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 9. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 18. (TODO: Test max level)
-					["lvl"] = { 9, 18 },
-					-- #endif
-				})),
 				q(9362, {	-- Warlord Krellian
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, MAP.AZSHARA },

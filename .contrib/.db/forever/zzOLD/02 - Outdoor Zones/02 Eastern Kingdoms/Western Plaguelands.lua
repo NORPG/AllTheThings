@@ -144,20 +144,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					398,	-- Black Rat (PET!)
-					648,	-- Huge Toad (PET!)
-					378,	-- Rabbit (PET!)
-					379,	-- Squirrel (PET!)
-					420,	-- Toad (PET!)
-				}},
-				["groups"] = {
-					pet(456, {	-- Blighthawk (PET!)
-						["coord"] = { 45.4, 70.0, MAP.WESTERN_PLAGUELANDS },
-					}),
-				},
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(193),	-- Andorhal
@@ -256,14 +242,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
-				q(10373, {	-- A Call to Arms: The Plaguelands! [The Exodar]
-					["qg"] = 20722,	-- Herald Bran'daan
-					["coord"] = { 55.4, 47.2, THE_EXODAR },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 50,
-				}),
 				q(5093, {	-- A Call to Arms: The Plaguelands! [Orgrimmar]
 					["qg"] = 10880,	-- Warcaller Gorlach
 					["coord"] = { 46.6, 64.6, MAP.ORGRIMMAR },
@@ -287,50 +265,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
-				}),
-				q(10374, {	-- A Call to Arms: The Plaguelands! [Silvermoon City]
-					["qg"] = 20724,	-- Herald Amorlin
-					["coord"] = { 59.3, 64.7, SILVERMOON_CITY },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 50,
-				}),
-				q(26954, {	-- A Different Approach
-					["sourceQuest"] = 26953,	-- Zen'kiki, the Druid
-					["qg"] = 44456,	-- Adrine Towhide
-					["coord"] = { 48.8, 54.7, MAP.WESTERN_PLAGUELANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
-						objective(1, {	-- 0/7 Diseased Hawk slain
-							["provider"] = { "n", 44481 },	-- Diseased Hawk
-						}),
-					},
-				}),
-				q(27012, {	-- A Gnoll's Resolve
-					["sourceQuest"] = 27013,	-- Too Close for Comfort
-					["qg"] = 44472,	-- Kelly Dumah
-					["coord"] = { 48.4, 31.9, MAP.WESTERN_PLAGUELANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
-						objective(1, {	-- 0/6 Redpine Club
-							["provider"] = { "i", 60748 },	-- Redpine Club
-							["cr"] = 44478,	-- Redpine Gnoll
-						}),
-						objective(2, {	-- 0/6 Redpine Stave
-							["provider"] = { "i", 60747 },	-- Redpine Stave
-							["cr"] = 44479,	-- Redpine Shaman
-						}),
-						i(62177, {	-- Kelly's Booties
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62176, {	-- Redpine Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62175, {	-- Lumberjack's Hatchet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-					},
 				}),
 				q(4971, {	-- A Matter of Time
 					["qg"] = 10667,	-- Chromie
@@ -1346,16 +1280,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
-				heroscall(q(28576, {	-- Hero's Call: Western Plaguelands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 38 (TODO: Test max level between 36 and 44)
-					["lvl"] = { 34, 38 },
-					-- #endif
-				})),
 				q(26956, {	-- I Ain't Sayin' You a Gourd-Digger...
 					["qg"] = 44457,	-- Selyria Groenveld
 					["coord"] = { 48.5, 54.9, MAP.WESTERN_PLAGUELANDS },
@@ -2124,71 +2048,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(27158, {	-- The Battle for Andorhal (A)
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
-					["coord"] = { 42.6, 84.0, MAP.WESTERN_PLAGUELANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
-				}),
-				q(28749, {	-- The Battle for Andorhal (A)
-					["qg"] = 49635,	-- War-Mage Erallier
-					["coord"] = { 41.5, 74.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
-				}),
-				q(28505, {	-- The Battle for Andorhal (A)
-					["qg"] = 5636,	-- Gryphon Master Talonaxe
-					["coord"] = { 9.9, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
-					["lvl"] = 35,
-				}),
-				q(28750, {	-- The Battle for Andorhal (H)
-					["qg"] = 49636,	-- Arcanist Arman
-					["coord"] = { 41.7, 74.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
-				}),
-				q(28508, {	-- The Battle for Andorhal (H)
-					["qg"] = 42898,	-- Darkcleric Marnal
-					["coord"] = { 31.8, 58.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
-					["lvl"] = 35,
-				}),
-				q(26920, {	-- The Battle for Andorhal (H)
-					["qg"] = 10837,	-- High Executor Derrington
-					["coord"] = { 83.2, 68.9, MAP.TIRISFAL_GLADES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
-					["lvl"] = 35,
-				}),
-				q(27197, {	-- The Battle Resumes! (A)
-					["sourceQuest"] = 27174,	-- Combat Training
-					["qg"] = 45012,	-- Durnt Brightfalcon
-					["coord"] = { 50.4, 52.5, MAP.WESTERN_PLAGUELANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27083, {	-- The Battle Resumes! (H)
-					["sourceQuest"] = 26938,	-- Combat Training
-					["qgs"] = {
-						45013,	-- Damion Steel
-						10837,	-- High Executor Derrington
-					},
-					["coords"] = {
-						{ 83.3, 69.0, MAP.TIRISFAL_GLADES },
-						{ 49.2, 53.1, MAP.WESTERN_PLAGUELANDS },
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(6186, {	-- The Blightcaller Cometh
 					["sourceQuest"] = 6185,	-- The Eastern Plagues
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
@@ -2526,55 +2385,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(9601, {	-- To The Bulwark
-					["qgs"] = {
-						16681,	-- Champion Bachi <Paladin Trainer>
-						20406,	-- Champion Cyssa Dawnrose <Paladin Trainer>
-					},
-					["coords"] = {
-						{ 92.0, 37.6, SILVERMOON_CITY },
-						{ 57.8, 90.8, MAP.UNDERCITY },
-					},
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
-					["classes"] = { PALADIN },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 50,
-				}),
-				q(9446, {	-- Tomb of the Lightbringer
-					["sourceQuest"] = 9474,	-- The Mark of the Lightbringer
-					["qg"] = 17238,	-- Anchorite Truuen
-					["coord"] = { 42.9, 84.5, MAP.WESTERN_PLAGUELANDS },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 55,
-				}),
-				q(27013, {	-- Too Close for Comfort
-					["qg"] = 44472,	-- Kelly Dumah
-					["coord"] = { 48.4, 31.9, MAP.WESTERN_PLAGUELANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
-						objective(1, {	-- 0/12 Rabid Fox slain
-							["provider"] = { "n", 44551 },	-- Rabid Fox
-						}),
-					},
-				}),
-				q(27155, {	-- Turning Yourself In
-					["sourceQuest"] = 27154,	-- Bagging Bisp
-					["qg"] = 45147,	-- Daria L'Rayne
-					["coord"] = { 42.1, 14.9, MAP.WESTERN_PLAGUELANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
-						i(62191, {	-- Highlord's Favor
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62190, {	-- Light-Imbued Lantern
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62189, {	-- Argent Medallion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-					},
-				}),
 				q(5051, {	-- Two Halves Become One
 					["sourceQuest"] = 5050,	-- Good Luck Charm
 					["qg"] = 10778,	-- Janice Felstone
@@ -2759,16 +2569,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28575, {	-- Warchief's Command: Western Plaguelands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 38. (TODO: Test max level)
-					["lvl"] = { 34, 38 },
-					-- #endif
-				})),
 				q(26937, {	-- When Death is Not Enough
 					["sourceQuest"] = 26979,	-- Strange New Faces
 					["qg"] = 44466,	-- Lindsay Ravensun

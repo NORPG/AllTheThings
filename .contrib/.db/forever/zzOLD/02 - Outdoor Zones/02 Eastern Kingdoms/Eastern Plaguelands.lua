@@ -1400,17 +1400,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["maps"] = { MAP.WESTERN_PLAGUELANDS },
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					398,	-- Black Rat (PET!)
-				}},
-				["groups"] = {
-					pet(626),	-- Bat (PET!)
-					pet(457),	-- Festering Maggot (PET!)
-					pet(628),	-- Infected Fawn (PET!)
-					pet(627),	-- Infected Squirrel (PET!)
-				},
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(4281),	-- Acherus: The Ebon Hold
@@ -1566,28 +1555,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
-			petbattles({
-				n(66512, {	-- Deiza Plaguehorn <Master Pet Tamer>
-					["coord"] = {
-						-- #if BEFORE MID
-						67.0, 52.4, MAP.EASTERN_PLAGUELANDS,
-						-- #else
-						66.5, 56.9, MAP.EASTERN_PLAGUELANDS,
-						-- #endif
-					},
-					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 14,
-					["groups"] = {
-						q(31911, {	-- Deiza Plaguehorn
-							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-			}),
 			n(QUESTS, {
 				q(27463, {	-- A Boyhood Dream
 					["sourceQuest"] = 27455,	-- Boys Will Be Boys
@@ -2968,16 +2935,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				heroscall(q(28578, {	-- Hero's Call: Eastern Plaguelands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 39. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 43. (TODO: Test max level between 42 and 52)
-					["lvl"] = { 39, 43 },
-					-- #endif
-				})),
 				q(5168, {	-- Heroes of Darrowshire
 					["sourceQuest"] = 5210,	-- Brother Carlin
 					["qg"] = 11063,	-- Carlin Redpath
@@ -4936,16 +4893,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
-				warchiefscommand(q(28577, {	-- Warchief's Command: Eastern Plaguelands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 39. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 43. (TODO: Test max level)
-					["lvl"] = { 39, 43 },
-					-- #endif
-				})),
 				q(27371, {	-- What I Do Best
 					["sourceQuest"] = 27370,	-- Tarenar Sunstrike
 					["qg"] = 45429,	-- Tarenar Sunstrike

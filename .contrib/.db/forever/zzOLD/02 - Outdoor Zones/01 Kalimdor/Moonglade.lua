@@ -10,21 +10,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(855),	-- Explore Moonglade
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					478,	-- Forest Moth (PET!)
-					378,	-- Rabbit (PET!)
-					503,	-- Silky Moth (PET!)
-					379,	-- Squirrel (PET!)
-				}},
-			}),
 			explorationHeader({
 				exploration(656),	-- Lake Elune'ara
 				exploration(2361),	-- Nighthaven
-				-- #if AFTER CATA
-				exploration(2362),	-- Shrine of Remulos
-				exploration(2363),	-- Stormrage Barrow Dens
-				-- #endif
 			}),
 			n(FLIGHT_PATHS, {
 				fp(49, {	-- Moonglade
@@ -48,22 +36,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 44.4, 45.6, MAP.MOONGLADE },
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
-				}),
-			}),
-			petbattles({
-				n(66412, {	-- Elena Flutterfly <Master Pet Tamer>
-					["coord"] = { 46.0, 60.6, MAP.MOONGLADE },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 17,
-					["groups"] = {
-						q(31908, {	-- Elena Flutterfly
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
 				}),
 			}),
 			n(QUESTS, {
@@ -318,40 +290,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
-				}),
-				q(28289, {	-- Moonglade Calls
-					["qgs"] = {
-						44395,	-- Celestine of the Harvest
-						44978,	-- Sesebi
-						16721,	-- Shalannius
-						4217,	-- Mathrengyl Bearwalker
-						3034,	-- Sheal Runetotem
-						52319,	-- Mala Skywatcher
-					},
-					["coords"] = {
-						{ 24.4, 54.5, AZUREMYST_ISLE },	-- Shalannius
-						{ 40.4, 27.6, MAP.DARNASSUS },	-- Mathrengyl Bearwalker
-						{ 35.0, 67.6, MAP.ORGRIMMAR },	-- Sesebi
-						{ 77.0, 27.4, MAP.THUNDER_BLUFF },	-- Sheal Runetotem
-						{ 57.6, 24.8, MAP.STORMWIND_CITY },	-- Celestine of the Harvest
-						{ 55.0, 50.4, MAP.UNDERCITY },	-- Mala Skywatcher
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["classes"] = { DRUID },
-					["isBreadcrumb"] = true,
-				}),
-				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
-					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
-					["qg"] = 122134,	-- Makkaw <Moonkin Festival>
-					["coord"] = { 45.4, 62.0, MAP.MOONGLADE },
-					["timeline"] = { ADDED_7_2_5 },
-					["isYearly"] = true,
-					["groups"] = {
-						title(358, {	-- <Name>, Adventuring Instructor
-							["timeline"] = { ADDED_7_2_5 },
-							["collectible"] = false,
-						}),
-					},
 				}),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10955, {	-- Morthis Whisperwing
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>

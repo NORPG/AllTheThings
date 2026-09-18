@@ -26,19 +26,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					403,	-- Parrot (PET!)
-					401,	-- Strand Crab (PET!)
-					420,	-- Toad (PET!)
-					418,	-- Water Snake (PET!)
-				}},
-				["groups"] = {
-					pet(648),	-- Huge Toad (PET!)
-					pet(422),	-- Moccasin (PET!)
-					pet(402),	-- Swamp Moth (PET!)
-				},
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(5458),	-- Bogpaddle
@@ -110,22 +97,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
-			petbattles({
-				n(66518, {	-- Everessa <Master Pet Tamer>
-					["coord"] = { 76.6, 41.6, MAP.SWAMP_OF_SORROWS },
-					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 16,
-					["groups"] = {
-						q(31913, {	-- Everessa
-							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(1386, {	-- Rogvar <Alchemy Trainer>
@@ -175,9 +146,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							{ 58.6, 35.6, MAP.DARNASSUS },
 							{ 70.6, 90.6, MAP.IRONFORGE },
 							{ 78.8, 45.6, MAP.STORMWIND_CITY },
-							-- #if AFTER TBC
-							{ 55.6, 82.3, THE_EXODAR },
-							-- #endif
 						},
 					},
 					["hordeQuestData"] = {
@@ -511,16 +479,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
 				}),
-				heroscall(q(28675, {	-- Hero's Call: Swamp of Sorrows!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 51. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 52. (TODO: Test max level between 51 and 60)
-					["lvl"] = { 51, 52 },
-					-- #endif
-				})),
 				q(2702, {	-- Heroes of Old (1/2)
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us
 					["qg"] = 7572,	-- Fallen Hero of the Horde
@@ -1528,16 +1486,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["provider"] = { "n", 6005 },	-- Shadowsworn Thug
 						}),
 					},
-				})),
-				warchiefscommand(q(28677, {	-- Warchief's Command: Swamp of Sorrows!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 51. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 53. (TODO: Test max level)
-					["lvl"] = { 51, 53 },
-					-- #endif
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8423, {	-- Warrior Kinship
 					["sourceQuest"] = 8417,	-- A Troubled Spirit

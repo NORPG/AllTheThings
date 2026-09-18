@@ -28,18 +28,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					646,	-- Chicken (PET!)
-					378,	-- Rabbit (PET!)
-				}},
-				["groups"] = {
-					pet(395),	-- Fledgling Buzzard (PET!)
-					pet(391),	-- Mountain Cottontail (PET!)
-					pet(392),	-- Redridge Rat (PET!)
-					pet(424),	-- Roach (PET!)
-				},
-			}),
 			explorationHeader({
 				exploration(97),	-- Alther's Mill
 				-- #if AFTER CATA
@@ -113,38 +101,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["learnedAt"] = 1,
 				}),
 				-- #endif
-			}),
-			petbattles({
-				n(65651, {	-- Lindsay <Master Pet Tamer>
-					["coord"] = { 33.3, 52.6, MAP.REDRIDGE_MOUNTAINS },
-					["description"] = "This pet tamer is Alliance only.\n\nLindsay's pets are level 5 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Critter - see above.",
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["petBattleLvl"] = 5,
-					["groups"] = {
-						q(31781, {	-- Lindsay
-							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				q(31726, {	-- Eric Davidson
-					["sourceQuest"] = 31725,	-- Lindsay
-					["qg"] = 65651,	-- Lindsay
-					["coord"] = { 33.2, 52.5, MAP.REDRIDGE_MOUNTAINS },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.DUSKWOOD },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Eric Davidson
-							["provider"] = { "n", 65655 },	-- Eric Davidson
-							["coord"] = { 19.8, 44.8, MAP.DUSKWOOD },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
 			}),
 			-- #if BEFORE CATA
 			n(PROFESSIONS, {
@@ -611,33 +567,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				heroscall(q(28563, {	-- Hero's Call: Redridge Mountains!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 14. (Confirmed by Hurieve, Crieve's Level 14 Hunter.)
-					-- Cataclysm: Maximum is level 18. (TODO: Test max level between 16 and 30)
-					["lvl"] = { 14, 18 },
-					-- #endif
-					["groups"] = {
-						i(60689, {	-- Belt of Unsolvable Problems
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60690, {	-- Doody Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131517, {	-- Doody Shoes
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(60688, {	-- Parker's Yardstick
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60691, {	-- Unfortunate Treads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-					},
-				})),
 				q(3741, {	-- Hilary's Necklace
 					["qg"] = 8965,	-- Shawn
 					["coord"] = { 29.3, 53.4, MAP.REDRIDGE_MOUNTAINS },
@@ -1756,15 +1685,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
-					["classes"] = { WARRIOR },
-					["isBreadcrumb"] = true,
-					["lvl"] = 20,
-				}),
-				q(10371, {	-- Yorus Barleybrew (Draenei)
-					["qg"] = 16771,	-- Ahonan
-					["coord"] = { 55.0, 83.4, THE_EXODAR },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
-					["races"] = { DRAENEI },
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,

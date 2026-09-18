@@ -8,37 +8,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 		["icon"] = 236712,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(4896, {	-- Arathi Highlands Quests
-					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER 7.3.5
-					["_doautomation"] = true,
-					-- #else
-					["sourceQuests"] = {
-						26628,	-- Death From Below
-						26117,	-- For Southshore
-						26038,	-- Attack on the Tower
-						26049,	-- The Princess Unleashed (A)
-						26081,	-- Alina's Reward
-						26029,	-- The Real Threat
-						26912,	-- The Princess Unleashed (H)
-						26108,	-- Guile of the Raptor
-					},
-					-- #endif
-				}),
 				ach(761),	-- Explore Arathi Highlands
-			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					386,	-- Prarie Dog (PET!)
-					417,	-- Rat (PET!)
-					419,	-- Small Frog (PET!)
-				}},
-				["groups"] = {
-					pet(443),	-- Grasslands Cottontail (PET!)
-					pet(445, {	-- Tiny Twister (PET!)
-						["coord"] = { 47.0, 53.0, MAP.ARATHI_HIGHLANDS },
-					}),
-				},
 			}),
 			explorationHeader({
 				exploration(1858),	-- Boulder'gor
@@ -788,16 +758,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				heroscall(q(28573, {	-- Hero's Call: Arathi Highlands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.IRONFORGE },	-- Only found in Ironforge in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 28. (TODO: Test max level between 28 and 35)
-					["lvl"] = { 24, 28 },
-					-- #endif
-				})),
 				q(659, {	-- Hints of a New Plague? (1/5)
 					["qg"] = 2711,	-- Phin Odelic
 					["coord"] = { 50.3, 59.0, MAP.HILLSBRAD_FOOTHILLS },
@@ -2097,27 +2057,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28572, {	-- Warchief's Command: Arathi Highlands! (Undercity, Silvermoon City)
-					["timeline"] = { ADDED_4_0_1 },
-					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 28. (TODO: Test max level between 26 and 35)
-					["lvl"] = { 24, 28 },
-					-- #endif
-				})),
-				warchiefscommand(q(28619, {	-- Warchief's Command: Arathi Highlands! (Hillsbrad)
-					["timeline"] = { ADDED_4_0_1 },
-					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
-					["races"] = HORDE_ONLY,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- This version apparently doesn't have a max level.
-					["lvl"] = 24,
-					-- #endif
-				})),
 				q(691, {	-- Worth Its Weight in Gold
 					["sourceQuest"] = 690,	-- Malin's Request (1/2)
 					["qg"] = 2788,	-- Apprentice Kryten

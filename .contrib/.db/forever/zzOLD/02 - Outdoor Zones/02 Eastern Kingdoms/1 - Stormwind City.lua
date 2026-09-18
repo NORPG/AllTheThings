@@ -31,25 +31,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 		["icon"] = 255130,
 		["isRaid"] = true,
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				applyclassicphase(CATA_PHASE_ONE, ach(5476, {	-- Fish or Cut Bait: Stormwind
-					["timeline"] = { ADDED_4_2_0 },
-					["requireSkill"] = FISHING,
-					["races"] = ALLIANCE_ONLY,
-				})),
-				applyclassicphase(CATA_PHASE_ONE, ach(5474, {	-- Let's Do Lunch: Stormwind
-					["timeline"] = { ADDED_4_2_0 },
-					["requireSkill"] = COOKING,
-					["races"] = ALLIANCE_ONLY,
-				})),
-			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit (PET!)
-					379,	-- Squirrel (PET!)
-					675,	-- Stormwind Rat (PET!)
-				}},
-			}),
 			explorationHeader({
 				visit_exploration(5150,{coord={64.5,28.4,MAP.STORMWIND_CITY}}),	-- Dwarven District
 				visit_exploration(6292,{coord={82.2,36.0,MAP.STORMWIND_CITY}}),	-- Stormwind Keep
@@ -59,17 +40,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_STORMWIND, {	-- Stormwind
-					-- #if AFTER CATA
-					["provider"] = { "i", 45574 },	-- Stormwind Tabard
-					-- #else
 					["icon"] = 236447,
-					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
-					["races"] = ALLIANCE_ONLY,
-				}),
-				faction(FACTION_TUSHUI_PANDAREN, {	-- Tushui Pandaren
-					["provider"] = { "i", 83079 },	-- Tushui Tabard
-					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -84,318 +56,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-				}),
-			}),
-			-- #if NOT ANYCLASSIC
-			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
-			o(206111, {	-- Hero's Call Board
-				["provider"] = { "o", 206294 },	-- Hero's Call Board
-				["coords"] = {
-					-- Locations for 206111
-					{ 26.1, 38.3, MAP.STORMWIND_CITY },
-					{ 43.1, 73.7, MAP.STORMWIND_CITY },
-					{ 63.1, 71.4, MAP.STORMWIND_CITY },
-					-- Locations for 206294
-					{ 62.5, 30.0, MAP.STORMWIND_CITY },
-					{ 43.0, 71.9, MAP.STORMWIND_CITY },
-				},
-				["timeline"] = { ADDED_4_0_1 },
-				["sym"] = HEROS_CALL_BOARD_SYMLINK,
-				["races"] = ALLIANCE_ONLY,
-				["skipFill"] = true,
-			}),
-			-- #endif
-			petbattles({
-				n(63596, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["description"] =
-						-- #if BEFORE 9.0.3
-						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quests might not be given until the daily reset.",
-						-- #else
-						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until the daily reset.",
-						-- #endif
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						-- #if ANYCLASSIC
-						r(119467),	-- Battle Pet Training
-						-- #else
-						spell(119467),	-- Battle Pet Training
-						-- #endif
-					},
-				}),
-				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
-				q(32008, {	-- Audrey Burnhep
-					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					["DisablePartySync"] = true,
-				}),
-				q(31878, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					["DisablePartySync"] = true,
-				}),
-				q(31879, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					["DisablePartySync"] = true,
-				}),
-				q(31880, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					["DisablePartySync"] = true,
-				}),
-				q(31881, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					["DisablePartySync"] = true,
-				}),
-				q(31966, {	-- Battle Pet Tamers: Cataclysm (A)
-					["sourceQuest"] = 31984,	-- A Brief Reprieve (A)
-					-- ["altQuests"] = { 31967 },
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Brok
-							["provider"] = { "n", 66819 },	-- Brok <Master Pet Tamer>
-							["coord"] = { 61.4, 32.8, MAP.MOUNT_HYJAL },
-						}),
-						objective(2, {	-- Defeat Bordin Steadyfist
-							["provider"] = { "n", 66815 },	-- Bordin Steadyfist <Master Pet Tamer>
-							["coord"] = { 49.8, 57.0, DEEPHOLM },
-						}),
-						objective(3, {	-- Defeat Goz Banefury
-							["provider"] = { "n", 66822 },	-- Goz Banefury <Master Pet Tamer>
-							["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms (A)
-					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
-					-- ["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["maps"] = { MAP.THE_HINTERLANDS, MAP.EASTERN_PLAGUELANDS, MAP.SEARING_GORGE, MAP.SWAMP_OF_SORROWS, MAP.BURNING_STEPPES },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat David Kosse
-							["provider"] = { "n", 66478 },	-- David Kosse <Master Pet Tamer>
-							["coord"] = { 62.8, 54.6, MAP.THE_HINTERLANDS },
-						}),
-						objective(2, {	-- Defeat Deiza Plaguehorn
-							["provider"] = { "n", 66512 },	-- Deiza Plaguehorn <Master Pet Tamer>
-							["coord"] = { 67.0, 52.4, MAP.EASTERN_PLAGUELANDS },
-						}),
-						objective(3, {	-- Defeat Kortas Darkhammer
-							["provider"] = { "n", 66515 },	-- Kortas Darkhammer <Master Pet Tamer>
-							["coord"] = { 35.4, 27.8, MAP.SEARING_GORGE },
-						}),
-						objective(4, {	-- Defeat Everessa
-							["provider"] = { "n", 66518 },	-- Everessa <Master Pet Tamer>
-							["coord"] = { 76.6, 41.6, MAP.SWAMP_OF_SORROWS },
-						}),
-						objective(5, {	-- Defeat Durin Darkhammer
-							["provider"] = { "n", 66520 },	-- Durin Darkhammer <Master Pet Tamer>
-							["coord"] = { 25.6, 47.6, MAP.BURNING_STEPPES },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31889, {	-- Battle Pet Tamers: Kalimdor (A)
-					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
-					-- ["altQuests"] = { 31891 },
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.FERALAS, MAP.DUSTWALLOW_MARSH, MAP.THOUSAND_NEEDLES, MAP.FELWOOD, MAP.MOONGLADE },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Traitor Gluk
-							["provider"] = { "n", 66352 },	-- Traitor Gluk <Master Pet Tamer>
-							["coord"] = { 59.6, 49.6, MAP.FERALAS },
-						}),
-						objective(2, {	-- Defeat Grazzle the Great
-							["provider"] = { "n", 66436 },	-- Grazzle the Great <Master Pet Tamer>
-							["coord"] = { 53.8, 74.8, MAP.DUSTWALLOW_MARSH },
-						}),
-						objective(3, {	-- Defeat Kela Grimtotem
-							["provider"] = { "n", 66452 },	-- Kela Grimtotem <Master Pet Tamer>
-							["coord"] = { 31.8, 32.8, MAP.THOUSAND_NEEDLES },
-						}),
-						objective(4, {	-- Defeat Zoltan
-							["provider"] = { "n", 66442 },	-- Zoltan <Master Pet Tamer>
-							["coord"] = { 40.0, 56.6, MAP.FELWOOD },
-						}),
-						objective(5, {	-- Defeat Elena Flutterfly
-							["provider"] = { "n", 66412 },	-- Elena Flutterfly <Master Pet Tamer>
-							["coord"] = { 46.0, 60.6, MAP.MOONGLADE },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31927, {	-- Battle Pet Tamers: Northrend (A)
-					["sourceQuest"] = 31981,	-- Exceeding Expectations (A)
-					-- ["altQuests"] = { 31929 },
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { HOWLING_FJORD, CRYSTALSONG_FOREST, DRAGONBLIGHT, ZULDRAK },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Beegle Blastfuse
-							["provider"] = { "n", 66635 },	-- Beegle Blastfuse <Master Pet Tamer>
-							["coord"] = { 28.6, 33.8, HOWLING_FJORD },
-						}),
-						objective(2, {	-- Defeat Nearly Headless Jacob
-							["provider"] = { "n", 66636 },	-- Nearly Headless Jacob <Master Pet Tamer>
-							["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
-						}),
-						objective(3, {	-- Defeat Okrut Dragonwaste
-							["provider"] = { "n", 66638 },	-- Okrut Dragonwaste <Master Pet Tamer>
-							["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
-						}),
-						objective(4, {	-- Defeat Gutretch
-							["provider"] = { "n", 66639 },	-- Gutretch <Master Pet Tamer>
-							["coord"] = { 13.2, 66.8, ZULDRAK },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31919, {	-- Battle Pet Tamers: Outland (A)
-					["sourceQuests"] = {
-						31975,	-- The Returning Champion (A)
-						31976,	-- The Returning Champion (A)
-					},
-					-- ["altQuests"] = { 31921 },
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { HELLFIRE_PENINSULA, ZANGARMARSH, NAGRAND, SHATTRATH_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Nicki Tinytech
-							["provider"] = { "n", 66550 },	-- Nicki Tinytech <Master Pet Tamer>
-							["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
-						}),
-						objective(2, {	-- Defeat Ras'an
-							["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
-							["coord"] = { 17.2, 50.6, ZANGARMARSH },
-						}),
-						objective(3, {	-- Defeat Narrok
-							["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
-							["coord"] = { 61.0, 49.4, NAGRAND },
-						}),
-						objective(4, {	-- Defeat Morulu The Elder
-							["provider"] = { "n", 66553 },	-- Morulu The Elder <Master Pet Tamer>
-							["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31930, {	-- Battle Pet Tamers: Pandaria (A)
-					["sourceQuest"] = 31985,	-- The Triumphant Return (A)
-					-- ["altQuests"] = { 31952 },
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { THE_JADE_FOREST, VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, KUN_LAI_SUMMIT, TOWNLONG_STEPPES, DREAD_WASTES },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Hyuna of the Shrines
-							["provider"] = { "n", 66730 },	-- Hyuna of the Shrines <Grand Master Pet Tamer>
-							["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
-						}),
-						objective(2, {	-- Defeat Farmer Nishi
-							["provider"] = { "n", 66734 },	-- Farmer Nishi <Grand Master Pet Tamer>
-							["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
-						}),
-						objective(3, {	-- Defeat Mo'ruk
-							["provider"] = { "n", 66733 },	-- Mo'ruk <Grand Master Pet Tamer>
-							["coord"] = { 65.0, 42.6, KRASARANG_WILDS },
-						}),
-						objective(4, {	-- Defeat Courageous Yon
-							["provider"] = { "n", 66738 },	-- Courageous Yon <Grand Master Pet Tamer>
-							["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
-						}),
-						objective(5, {	-- Defeat Seeker Zusshi
-							["provider"] = { "n", 66918 },	-- Seeker Zusshi <Grand Master Pet Tamer>
-							["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
-						}),
-						objective(6, {	-- Defeat Wastewalker Shu
-							["provider"] = { "n", 66739 },	-- Wastewalker Shu <Grand Master Pet Tamer>
-							["coord"] = { 55.0, 37.6, DREAD_WASTES },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31593, {	-- Got one! (Audrey)
-					["sourceQuest"] = 31821,	-- Level Up!
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31316, {	-- Julia, The Pet Tamer
-					["sourceQuests"] = { 32008, 31878, 31879, 31880, 31881 },	-- Audrey Burnhep (all breadcrumbs)
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.ELWYNN_FOREST },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Julia Stevens
-							["provider"] = { "n", 64330 },	-- Julia Stevens
-							["coord"] = { 41.6, 83.6, MAP.ELWYNN_FOREST },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31591, {	-- Learning the Ropes (Audrey)
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31821, {	-- Level Up! (Audrey)
-					["sourceQuest"] = 31592,	-- On The Mend
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31592, {	-- On The Mend (Audrey)
-					["sourceQuest"] = 31591,	-- Learning the Ropes
-					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Battle Pets Healed
-							["provider"] = { "n", 11069 },	-- Jenova Stoneshield <Stable Master>
-							["coord"] = { 67.0, 37.6, MAP.STORMWIND_CITY },
-						}),
-					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -873,13 +533,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_7_2_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				heroscall(q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
-					["qg"] = 45226,	-- Naraat the Earthspeaker
-					["coord"] = { 74.6, 18.8, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_1, REMOVED_8_3_0 },
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(80, 80, 30),
-				})),
 				q(25154, {	-- A Present for Lila
 					["qg"] = 50480,	-- Isabel Jones
 					["coord"] = { 63.8, 61.2, MAP.STORMWIND_CITY },
@@ -975,35 +628,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
-				}),
-				q(62567, {	-- Adventurers Wanted: Chromie's Call
-					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.6, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_9_0_1 },
-					["races"] = ALLIANCE_ONLY,
-					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
-					["isBreadcrumb"] = true,
-				}),
-				q(11451, {	-- Alicia's Poem
-					["providers"] = {
-						{ "n", 24729 },	-- Alicia
-						{ "i", 34089 },	-- Alicia's Poem
-					},
-					["coords"] = {
-						-- #if AFTER LEGION
-						{ 81.6, 28.2, MAP.STORMWIND_CITY },
-						-- #elseif AFTER CATA
-						{ 81.5, 28.6, MAP.STORMWIND_CITY },
-						-- #elseif AFTER WRATH
-						{ 70.9, 35.7, MAP.STORMWIND_CITY },
-						-- #else
-						{ 66.9, 13.8, MAP.STORMWIND_CITY },
-						-- #endif
-					},
-					["timeline"] = { ADDED_2_3_0 },
-					["maps"] = { SHATTRATH_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(60, 60, 15),
 				}),
 				q(396, {	-- An Audience with the King
 					["sourceQuest"] = 395,	-- Brotherhood's End
@@ -1833,25 +1457,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				-- #if AFTER SL
-				q(27271, {	-- Frazzle's Request [SL+] / Journey to the Wizard's Sanctum
-					["qgs"] = {
-						16749,	-- Edirah
-						50690,	-- Tarelvir
-						5146,	-- Nittlebur Sparkfizzle
-					},
-					["coords"] = {
-						{ 47.2, 61.8, THE_EXODAR },	-- Edirah
-						{ 37.6, 80.0, MAP.DARNASSUS },	-- Tarelvir
-						{ 26.2, 6.2, MAP.IRONFORGE },	-- Nittlebur Sparkfizzle
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MAGE },
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 20, 8),
-				}),
-				-- #endif
 				q(1782, {	-- Furen's Armor
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["qg"] = 5413,	-- Furen Longbeard
@@ -2345,25 +1950,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if BEFORE SL
-				q(27271, {	-- Journey to the Wizard's Sanctum / Frazzle's Request [SL+]
-					["qgs"] = {
-						16749,	-- Edirah
-						50690,	-- Tarelvir
-						5146,	-- Nittlebur Sparkfizzle
-					},
-					["coords"] = {
-						{ 47.2, 61.8, THE_EXODAR },	-- Edirah
-						{ 37.6, 80.0, MAP.DARNASSUS },	-- Tarelvir
-						{ 26.2, 6.2, MAP.IRONFORGE },	-- Nittlebur Sparkfizzle
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MAGE },
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 20, 8),
-				}),
-				-- #endif
 				q(1704, {	-- Klockmort Spannerspan
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["providers"] = {
@@ -3506,13 +3092,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
-				heroscall(q(40519, {	-- The Legion Returns (Alliance)
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.3, 17.3, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_7_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				})),
 				q(1274, {	-- The Missing Diplomat (1/17)
 					["qg"] = 4982,	-- Thomas <Altar Boy>
 					["coords"] = {

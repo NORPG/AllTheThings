@@ -43,31 +43,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					646,	-- Chicken (PET!)
-					648,	-- Huge Toad (PET!)
-					450,	-- Maggot (PET!)
-					378,	-- Rabbit (PET!)
-					417,	-- Rat (PET!)
-					412,	-- Spider (PET!)
-					379,	-- Squirrel (PET!)
-					420,	-- Toad (PET!)
-				}},
-				["groups"] = {
-					pet(453, {	-- Infested Bear Cub (PET!)
-						["coord"] = { 35.4, 69.6, MAP.HILLSBRAD_FOOTHILLS },
-					}),
-					pet(1159, {	-- Lofty Libram (PET!)
-						["description"] = "Found around the Dalaran Crater.",
-						["timeline"] = { ADDED_5_1_0 },
-					}),
-					pet(452),	-- Red-Tailed Chipmunk (PET!)
-					pet(640, {	-- Snowshoe Hare (PET!)
-						["description"] = "Found around the Ruins of Alterac.",
-					}),
-				},
-			}),
 			explorationHeader({
 				exploration(288),	-- Azurelode Mine
 				-- #if AFTER CATA
@@ -2994,16 +2969,6 @@ Click Leave vehicle and repeat steps 3-8"]],
 						}),
 					},
 				}),
-				warchiefscommand(q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 23. (TODO: Test max level)
-					["lvl"] = { 19, 23 },
-					-- #endif
-				})),
 				q(28089, {	-- Warchief's Command: Hillsbrad Foothills!
 					["altQuests"] = { 27746 },	-- Empire of Dirt
 					["qgs"] = {

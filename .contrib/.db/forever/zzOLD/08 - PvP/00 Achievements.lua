@@ -567,12 +567,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
-	ach(613, {		-- Killed in Quel'Thalas
-		["provider"] = { "n", 16802 },	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
-		["timeline"] = { ADDED_3_0_2 },
-		["maps"] = { SILVERMOON_CITY },
-		["races"] = ALLIANCE_ONLY,
-	}),
 	-- #if AFTER 3.0.1
 	ach(439, {		-- Knight
 		["races"] = ALLIANCE_ONLY,
@@ -730,35 +724,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(8451, {		-- Prideful Conquest (Alliance)
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-	}),
-	ach(8450, {		-- Prideful Conquest (Horde)
-		["races"] = HORDE_ONLY,
-		["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-	}),
-	ach(9234, {		-- Primal Conquest (Alliance)
-		["races"] = ALLIANCE_ONLY,
-		["timeline"] = { ADDED_6_0_2, REMOVED_6_2_0 },
-	}),
-	ach(9233, {		-- Primal Conquest (Horde)
-		["races"] = HORDE_ONLY,
-		["timeline"] = { ADDED_6_0_2, REMOVED_6_2_0 },
-	}),
-	ach(61685, {		-- Proficient in Battle
-		["timeline"] = { ADDED_11_2_7 },
-		["groups"] = { i(247769) },	-- Chaotic Empowerment (DECOR!)
-	}),
-	ach(61684, {		-- Progressing in Battle
-		["timeline"] = { ADDED_11_2_7 },
-		["groups"] = { i(247768) },	-- Guardian's Empowerment (DECOR!)
-	}),
-	ach(12181, {	-- Protocol 2.3
-		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
-	}),
-	ach(618, {		-- Putting Out the Light
-		["provider"] = { "n", 17468 },	-- Prophet Velen
-		["timeline"] = { ADDED_3_0_2 },
-		["maps"] = { THE_EXODAR },
-		["races"] = HORDE_ONLY,
 	}),
 	-- #if AFTER 3.0.1
 	ach(442, {		-- Private

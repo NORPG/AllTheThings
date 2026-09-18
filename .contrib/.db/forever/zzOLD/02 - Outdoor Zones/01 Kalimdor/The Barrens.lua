@@ -2,7 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
--- #if BEFORE 4.0.3
 ExportDB.OnTooltipDB.ForRatchet = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -60,29 +59,16 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				fp(77, {	-- Camp Taurajo, The Barrens
 					["cr"] = 10378,	-- Omusa Thunderhorn <Wind Rider Master>
 					["coord"] = { 44.4, 59.0, MAP.THE_BARRENS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(25, {	-- Crossroads, The Barrens
 					["cr"] = 3615,	-- Devrak <Wind Rider Master>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 48.6, 58.6, NORTHERN_BARRENS },
-						-- #else
-						{ 51.4, 30.2, MAP.THE_BARRENS },
-						-- #endif
-					},
+					["coord"] = { 51.4, 30.2, MAP.THE_BARRENS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(80, {	-- Ratchet, The Barrens
 					["cr"] = 16227,	-- Bragok <Flight Master>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 69.0, 70.6, NORTHERN_BARRENS },
-						-- #else
-						{ 63.0, 37.0, MAP.THE_BARRENS },
-						-- #endif
-					},
+					["coord"] = { 63.0, 37.0, MAP.THE_BARRENS },
 				}),
 			}),
 			prof(FISHING, {
@@ -90,7 +76,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["description"] = "Drops from fishing in the Sludge Fen.",
 				}),
 			}),
-			-- #if BEFORE CATA
 			lockpicking({
 				o(3714, {	-- Alliance Strongbox
 					["coord"] = { 49.6, 83.6, MAP.THE_BARRENS },
@@ -132,41 +117,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["learnedAt"] = 1,
 				}),
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			pickpocketing({
-				applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
-					["coord"] = { 63.6, 49.2, MAP.THE_BARRENS },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						3384,	-- Southsea Privateer
-						3383,	-- Southsea Cutthroat
-						3381,	-- Southsea Brigand
-						3382,	-- Southsea Cannoneer
-					},
-				})),
-			}),
-			-- #endif
 			n(QUESTS, {
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, q(79007, {	-- ...and that note you found (H)
-					["providers"] = {
-						{ "o", 415106 },	-- Burned-Out Remains
-						{ "o", 424010 },	-- Nailed Plank
-					},
-					["coords"] = {
-						{ 46.4, 73.9, MAP.THE_BARRENS },
-						{ 37.5, 50.8, MAP.WESTFALL },
-					},
-					["timeline"] = { ADDED_1_15_1 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 14,
-					["groups"] = {
-						i(2459),	-- Swiftness Potion
-						i(3388),	-- Strong Troll's Blood Potion
-					},
-				})),
-				-- #endif
 				q(1153, {	-- A New Ore Sample
 					["sourceQuest"] = 893,	-- Weapons of Choice
 					["qg"] = 3433,	-- Tatternack Steelforge
@@ -5135,72 +5086,30 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				})),
 				-- #endif
 				i(5093, {	-- Razormane Backstabber
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if AFTER 10.1.7
-						37560,	-- Razormane Pathfinder
-						-- #else
 						3457,	-- Razormane Stalker
 						3456,	-- Razormane Pathfinder
-						-- #endif
 					},
 					["coords"] = {
-						-- #if AFTER 10.1.7
-						{ 43.4, 82.0, SOUTHERN_BARRENS },
-						{ 41.6, 81.4, SOUTHERN_BARRENS },
-						{ 43.6, 86.2, SOUTHERN_BARRENS },
-						-- #else
 						{ 41.8, 79.6, MAP.THE_BARRENS },
 						{ 43.8, 83.2, MAP.THE_BARRENS },
-						-- #endif
 					},
 				}),
 				i(5094, {	-- Razormane War Shield
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if AFTER 10.1.7
-						37660,	-- Razormane Warfrenzy
-						-- #else
 						3459,	-- Razormane Warfrenzy
-						-- #endif
 					},
 					["coords"] = {
-						-- #if AFTER 10.1.7
-						{ 38.0, 81.8, SOUTHERN_BARRENS },
-						{ 43.6, 82.6, SOUTHERN_BARRENS },
-						{ 44.6, 87.8, SOUTHERN_BARRENS },
-						-- #else
 						{ 41.6, 79.0, MAP.THE_BARRENS },
 						{ 42.2, 81.6, MAP.THE_BARRENS },
-						-- #endif
 					},
 				}),
-				-- #if AFTER 4.2.0.10000
-				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
-					["timeline"] = { ADDED_3_1_0, DELETED_4_3_0 },
-					["crs"] = {
-						39153,	-- Excavation Raider
-						3376,	-- Bael'dun Soldier
-						3378,	-- Bael'dun Officer
-						3377,	-- Bael'dun Rifleman
-					},
-				}),
-				-- #endif
 				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, i(208743, {	-- Soul of Greed
-					["description"] = "Use Drain Soul on him.",
-					["coord"] = { 56.2, 8.6, MAP.THE_BARRENS },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { WARLOCK },
-					["cr"] = 3445,	-- Supervisor Lugwizzle
-				})),
-				-- #endif
 				i(5052, {	-- Unconscious Dig Rat
 					["cr"] = 3444,	-- Dig Rat
 				}),
@@ -5217,5 +5126,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 }));
--- #endif
 -- #endif

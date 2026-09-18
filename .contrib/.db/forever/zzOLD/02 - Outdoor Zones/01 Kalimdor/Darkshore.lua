@@ -43,21 +43,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit (PET!)
-					417,	-- Rat (PET!)
-					379,	-- Squirrel (PET!)
-				}},
-				["groups"] = {
-					pet(508, {	-- Darkshore Cub (PET!)
-						["description"] = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
-					}),
-					pet(493, {	-- Shimmershell Snail (PET!)
-						["description"] = "Can commonly be found on the beaches of Old Darkshore.",
-					}),
-				},
-			}),
 			explorationHeader({
 				exploration(447),	-- Ameth'Aran
 				-- #if BEFORE CATA
@@ -107,41 +92,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-				}),
-			}),
-			petbattles({
-				q(31584, {	-- Got one! (Will)
-					["sourceQuest"] = 31832,	-- Level Up!
-					["qg"] = 63083,	-- Will Larsons
-					["coord"] = { 50.1, 20.2, MAP.DARKSHORE },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31582, {	-- Learning the Ropes (Will)
-					["qg"] = 63083,	-- Will Larsons
-					["coord"] = { 50.1, 20.2, MAP.DARKSHORE },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31832, {	-- Level Up! (Will)
-					["sourceQuest"] = 31583,	-- On The Mend
-					["qg"] = 63083,	-- Will Larsons
-					["coord"] = { 50.1, 20.2, MAP.DARKSHORE },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31583, {	-- On The Mend (Will)
-					["sourceQuest"] = 31582,	-- Learning the Ropes
-					["qg"] = 63083,	-- Will Larsons
-					["coord"] = { 50.1, 20.2, MAP.DARKSHORE },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Battle Pets Healed
-							["provider"] = { "n", 10085 },	-- Jaelysia <Stable Master>
-							["coord"] = { 50.4, 19.2, MAP.DARKSHORE },
-						}),
-					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -1200,16 +1150,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						-- #endif
 					},
 				}),
-				heroscall(q(28490, {	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS },	-- Only found in Darnassus in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
-					-- Cataclysm: Maximum is level 18 (TODO: Test max level between 16 and 25)
-					["lvl"] = { 9, 18 },
-					-- #endif
-				})),
 				-- #if AFTER TBC
 				q(1135, {	-- Highperch Venom
 					["qg"] = 4456,	-- Fiora Longears

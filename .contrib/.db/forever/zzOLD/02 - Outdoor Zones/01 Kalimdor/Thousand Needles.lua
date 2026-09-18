@@ -32,22 +32,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					398,	-- Black Rat (PET!)
-					424,	-- Roach (PET!)
-					414,	-- Scorpid (PET!)
-				}},
-				["groups"] = {
-					pet(505, {	-- Twilight Iguana (PET!)
-						["description"] = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
-						["coords"] = {
-							{ 55.8, 61.6, MAP.THOUSAND_NEEDLES },
-							{ 33.8, 58.4, MAP.THOUSAND_NEEDLES },
-						},
-					}),
-				},
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(2097),	-- Darkcloud Pinnacle
@@ -102,22 +86,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-				}),
-			}),
-			petbattles({
-				n(66452, {	-- Kela Grimtotem <Master Pet Tamer>
-					["coord"] = { 31.8, 32.8, MAP.THOUSAND_NEEDLES },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nKela's pets are level 15 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 15,
-					["groups"] = {
-						q(31906, {	-- Kela Grimtotem
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
 				}),
 			}),
 			n(QUESTS, {
@@ -1353,21 +1321,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["maps"] = { MAP.STRANGLETHORN_VALE },
 					["lvl"] = 28,
 				}),
-				heroscall(q(28503, {	-- Hero's Call: Thousand Needles!
-					["altQuests"] = {
-						-- 28503,	-- Hero's Call: Thousand Needles!
-						25479,	-- To New Thalanaar [Dustwallow Marsh]
-						25481,	-- To New Thalanaar [Feralas]
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 39. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 43. (TODO: Test max level between 42 and 50)
-					["lvl"] = { 39, 43 },
-					-- #endif
-				})),
 				q(4770, {	-- Homeward Bound
 					["qg"] = 10427,	-- Pao'ka Swiftmountain
 					["coord"] = { 17.8, 40.6, MAP.THOUSAND_NEEDLES },
@@ -2745,16 +2698,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28504, {	-- Warchief's Command: Thousand Needles!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level . (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level . (TODO: Test max level)
-					["lvl"] = { 39, 43 },
-					-- #endif
-				})),
 				q(28051, {	-- We All Scream for Ice Cream... and then Die!
 					["sourceQuests"] = {
 						28031,	-- Special Delivery for Brivelthwerp [A]

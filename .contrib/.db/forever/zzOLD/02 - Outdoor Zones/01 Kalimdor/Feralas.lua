@@ -41,22 +41,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit (PET!)
-					379,	-- Squirrel (PET!)
-				}},
-				["groups"] = {
-					pet(557, {	-- Nether Faerie Dragon (PET!)
-						["description"] = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
-					}),
-					pet(387),	-- Snake (PET!)
-					pet(1158, {	-- Stunted Yeti (PET!)
-						["description"] = "Can be found near Feral Scar Yetis south of Dire Maul.",
-						["timeline"] = { ADDED_5_1_0 },
-					}),
-				},
-			}),
 			explorationHeader({
 				exploration(1099),	-- Camp Mojache
 				exploration(5036, {["timeline"] = { ADDED_4_0_1 }}),	-- Darkmist Ruins
@@ -155,22 +139,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 57.1, 53.9, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-			}),
-			petbattles({
-				n(66352, {	-- Traitor Gluk <Master Pet Tamer>
-					["coord"] = { 59.6, 49.6, MAP.FERALAS },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 13,
-					["groups"] = {
-						q(31871, {	-- Traitor Gluk
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -875,16 +843,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				heroscall(q(28511, {	-- Hero's Call: Feralas!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 38. (TODO: Test max level between 36 and 44)
-					["lvl"] = { 34, 38 },
-					-- #endif
-				})),
 				q(25337, {	-- Hippogryph Muisek
 					["sourceQuest"] = 25336,	-- Testing the Vessel
 					["qg"] = 39894,	-- Gombana
@@ -2565,16 +2523,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28510, {	-- Warchief's Command: Feralas!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 38. (TODO: Test max level)
-					["lvl"] = { 34, 38 },
-					-- #endif
-				})),
 				q(25391, {	-- Weapons of Spirit
 					["sourceQuest"] = 25346,	-- Mountain Giant Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i

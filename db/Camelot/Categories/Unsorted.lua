@@ -4,12 +4,9 @@ _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local h,q=_.CreateCustomHeader,_.CreateQuest;
 categories.Unsorted={
 h(-45,{
-q(1041,{nextQuests={1042}}),
-q(1116,{nextQuests={1117}}),
-q(2764,{nextQuests={2771,2772,2773}}),
-q(3626,{nextQuests={3627}}),
 q(3633,{nextQuests={3638}}),
-q(9582,{nextQuests={1639,1678,1683}}),
+q(3637,{nextQuests={3642}}),
+q(9582,{nextQuests={1683,1639,1678}}),
 q(9609,{nextQuests={1396}}),
 q(10371,{nextQuests={1699}}),
 q(10373,{nextQuests={5092}}),
@@ -37,9 +34,11 @@ q(24459,{nextQuests={749}}),
 q(24473,{nextQuests={3115}}),
 q(24487,{nextQuests={182,3361}}),
 q(24489,{nextQuests={218}}),
+q(25476,{nextQuests={3721}}),
 q(25667,{nextQuests={412}}),
 q(25724,{nextQuests={313}}),
 q(25932,{nextQuests={314}}),
+q(26340,{nextQuests={583}}),
 q(26449,{nextQuests={6441}}),
 q(26642,{nextQuests={871}}),
 q(26801,{nextQuests={3099,3095,3097,3098,3096}}),
@@ -50,9 +49,5 @@ q(28528,{nextQuests={8280}}),
 q(28714,{nextQuests={3120,3116,3119,3117,3118}}),
 q(28731,{nextQuests={929}}),
 q(28856,{nextQuests={8280}}),
-q(28859,{nextQuests={8280}}),
-q(29117,{nextQuests={171}}),
-q(29119,{nextQuests={171}}),
-q(29190,{nextQuests={5502}}),
-q(29191,{nextQuests={5502}})})}
+q(28859,{nextQuests={8280}})})}
 end)

@@ -327,14 +327,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										}),
 									},
 								}),
-								q(26983, {	-- Just Close Enough
-									["qg"] = 39084,	-- Mizzy Pistonhammer
-									["coord"] = { 49.4, 67.6, SOUTHERN_BARRENS },
-									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["races"] = ALLIANCE_ONLY,
-									["isBreadcrumb"] = true,
-									["lvl"] = 31,
-								}),
 								q(1050, {	-- Mythology of the Titans
 									["qg"] = 3979,	-- Librarian Mae Paledust <Explorers' League>
 									["coord"] = { 75.0, 12.5, MAP.IRONFORGE },
@@ -517,99 +509,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 						["lvl"] = 35,
 						["groups"] = {
-							-- #if AFTER 4.0.3
-							n(QUESTS, {
-								q(26984, {	-- An Old, Crazed Friend
-									["qg"] = 44019,	-- Livingston Marshal <Innkeeper>
-									["coord"] = { 53.2, 66.8, NORTHERN_STRANGLETHORN },
-									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["races"] = ALLIANCE_ONLY,
-									["isBreadcrumb"] = true,
-									["lvl"] = 34,
-								}),
-								q(26988, {	-- Moving Things Along
-									["qg"] = 14739,	-- Mystic Yayo'jin <Reagents>
-									["coord"] = { 78.8, 78.4, MAP.THE_HINTERLANDS },
-									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["races"] = HORDE_ONLY,
-									["isBreadcrumb"] = true,
-									["lvl"] = 34,
-								}),
-								q(26962, {	-- Stripping Their Offense
-									["sourceQuest"] = 26988,	-- Moving Things Along
-									["qg"] = 44690,	-- Dark Ranger Velonara
-									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["races"] = HORDE_ONLY,
-									["lvl"] = 32,
-									["groups"] = {
-										objective(1, {	-- 0/1 Herod slain
-											["provider"] = { "n", 3975 },	-- Herod <The Scarlet Champion>
-										}),
-										i(66034, {	-- Breastplate of the Scarlet Monastery
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-										i(66047, {	-- Herod's Medallion
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-										i(66016, {	-- Monk's Leggings
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-										i(66025, {	-- Spaulder of the Untrained
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-										i(66042, {	-- Velonara's Cloak
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-									},
-								}),
-								q(26974, {	-- The False Champion
-									["sourceQuest"] = 26984,	-- An Old, Crazed Friend
-									["qg"] = 44741,	-- Joseph the Crazed
-									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["races"] = ALLIANCE_ONLY,
-									["lvl"] = 32,
-									["groups"] = {
-										objective(1, {	-- 0/1 Herod slain
-											["provider"] = { "n", 3975 },	-- Herod <The Scarlet Champion>
-										}),
-										i(65967, {	-- Breastplate of the Scarlet Monastery
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-										i(65990, {	-- Cloak of the False Champion
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-										i(66006, {	-- Herod's Medallion
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-										i(65917, {	-- Monk's Leggings
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-										i(65943, {	-- Shrug of the Crazed
-											["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-										}),
-									},
-								}),
-								q(26994, {	-- Without Rhyme or Reason
-									["qg"] = 44804,	-- Dominic
-									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["lvl"] = 32,
-									["groups"] = {
-										objective(1, {	-- 0/3 Scarlet Myrmidon slain
-											["provider"] = { "n", 4295 },	-- Scarlet Myrmidon
-										}),
-										objective(2, {	-- 0/3 Scarlet Evoker slain
-											["provider"] = { "n", 4289 },	-- Scarlet Evoker
-										}),
-										objective(3, {	-- 0/3 Scarlet Guardsman slain
-											["provider"] = { "n", 4290 },	-- Scarlet Guardsman
-										}),
-										objective(4, {	-- 0/3 Scarlet Protector slain
-											["provider"] = { "n", 4292 },	-- Scarlet Protector
-										}),
-									},
-								}),
-							}),
-							-- #endif
 							n(3975, {	-- Herod
 								["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								["groups"] = {

@@ -1078,35 +1078,18 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 57.8, 34.6, MAP.DARNASSUS },
 					{ 69.8, 90.0, MAP.IRONFORGE },
 					{ 79.4, 18.0, MAP.STORMWIND_CITY },
-					-- #if AFTER TBC
-					{ 67.4, 33.9, SHATTRATH_CITY },
-					-- #else
 					{ 39.4, 82.2, MAP.ALTERAC_MOUNTAINS },
 					{ 45.6, 45.8, MAP.ARATHI_HIGHLANDS },
 					{ 61.8, 83.8, MAP.ASHENVALE },
-					-- #endif
 				},
 				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
 				["cost"] = {
-					-- #if AFTER TBC
-					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
-					{ "i", 20559, 1 },	-- Arathi Basin Mark of Honor
-					{ "i", 29024, 1 },	-- Eye of the Storm Mark of Honor
-					{ "i", 20558, 1 },	-- Warsong Gulch Mark of Honor
-					-- #else
 					{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
 					{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
-					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
-				-- #if AFTER WRATH
-				["lvl"] = 61,
-				-- #elseif AFTER TBC
-				["lvl"] = 60,
-				-- #else
 				["lvl"] = 51,
-				-- #endif
 			}),
 			q(8385, {	-- Concerted Efforts
 				["sourceQuest"] = 8371,	-- Concerted Efforts
@@ -1115,36 +1098,19 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 57.8, 34.6, MAP.DARNASSUS },
 					{ 69.8, 90.0, MAP.IRONFORGE },
 					{ 79.4, 18.0, MAP.STORMWIND_CITY },
-					-- #if AFTER TBC
-					{ 67.4, 33.9, SHATTRATH_CITY },
-					-- #else
 					{ 39.4, 82.2, MAP.ALTERAC_MOUNTAINS },
 					{ 45.6, 45.8, MAP.ARATHI_HIGHLANDS },
 					{ 61.8, 83.8, MAP.ASHENVALE },
-					-- #endif
 				},
 				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
 				["cost"] = {
-					-- #if AFTER TBC
-					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
-					{ "i", 20559, 1 },	-- Arathi Basin Mark of Honor
-					{ "i", 29024, 1 },	-- Eye of the Storm Mark of Honor
-					{ "i", 20558, 1 },	-- Warsong Gulch Mark of Honor
-					-- #else
 					{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
 					{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
-					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				-- #if AFTER WRATH
-				["lvl"] = 61,
-				-- #elseif AFTER TBC
-				["lvl"] = 60,
-				-- #else
 				["lvl"] = 51,
-				-- #endif
 			}),
 			q(8367, {	-- For Great Honor
 				["qg"] = 15350,	-- Horde Warbringer
@@ -1152,35 +1118,18 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 79.8, 30.4, MAP.ORGRIMMAR },
 					{ 56.0, 76.7, MAP.THUNDER_BLUFF },
 					{ 60.7, 87.7, MAP.UNDERCITY },
-					-- #if AFTER TBC
-					{ 67.0, 56.6, SHATTRATH_CITY },
-					-- #else
 					{ 62.6, 59.1, MAP.ALTERAC_MOUNTAINS },
 					{ 73.5, 29.7, MAP.ARATHI_HIGHLANDS },
 					{ 46.7, 8.4, MAP.THE_BARRENS },
-					-- #endif
 				},
 				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
 				["cost"] = {
-					-- #if AFTER TBC
-					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
-					{ "i", 20559, 1 },	-- Arathi Basin Mark of Honor
-					{ "i", 29024, 1 },	-- Eye of the Storm Mark of Honor
-					{ "i", 20558, 1 },	-- Warsong Gulch Mark of Honor
-					-- #else
 					{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
 					{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
-					-- #endif
 				},
 				["races"] = HORDE_ONLY,
-				-- #if AFTER WRATH
-				["lvl"] = 61,
-				-- #elseif AFTER TBC
-				["lvl"] = 60,
-				-- #else
 				["lvl"] = 51,
-				-- #endif
 			}),
 			q(8388, {	-- For Great Honor
 				["sourceQuest"] = 8367,	-- For Great Honor
@@ -1189,36 +1138,19 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 79.8, 30.4, MAP.ORGRIMMAR },
 					{ 56.0, 76.7, MAP.THUNDER_BLUFF },
 					{ 60.7, 87.7, MAP.UNDERCITY },
-					-- #if AFTER TBC
-					{ 67.0, 56.6, SHATTRATH_CITY },
-					-- #else
 					{ 62.6, 59.1, MAP.ALTERAC_MOUNTAINS },
 					{ 73.5, 29.7, MAP.ARATHI_HIGHLANDS },
 					{ 46.7, 8.4, MAP.THE_BARRENS },
-					-- #endif
 				},
 				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
 				["cost"] = {
-					-- #if AFTER TBC
-					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
-					{ "i", 20559, 1 },	-- Arathi Basin Mark of Honor
-					{ "i", 29024, 1 },	-- Eye of the Storm Mark of Honor
-					{ "i", 20558, 1 },	-- Warsong Gulch Mark of Honor
-					-- #else
 					{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
 					{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
-					-- #endif
 				},
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				-- #if AFTER WRATH
-				["lvl"] = 61,
-				-- #elseif AFTER TBC
-				["lvl"] = 60,
-				-- #else
 				["lvl"] = 51,
-				-- #endif
 			}),
 		}),
 	},

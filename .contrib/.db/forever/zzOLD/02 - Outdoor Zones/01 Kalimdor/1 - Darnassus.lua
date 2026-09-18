@@ -56,14 +56,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				})),
 			}),
 			-- #endif
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					479,	-- Elfin Rabbit (PET!)
-					478,	-- Forest Moth (PET!)
-					452,	-- Red-Tailed Chipmunk (PET!)
-					419,	-- Small Frog (PET!)
-				}},
-			}),
 			n(FACTIONS, {
 				faction(FACTION_DARNASSUS, {	-- Darnassus
 					-- #if AFTER CATA
@@ -271,14 +263,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 6740,	-- Innkeeper Allison
 					["coord"] = { 60.4, 75.3, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 47,
-				}),
-				q(10520, {	-- Assisting Arch Druid Staghelm [The Exodar]
-					["qg"] = 16739,	-- Caregiver Breel <Innkeeper>
-					["coord"] = { 59.6, 19.4, THE_EXODAR },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,

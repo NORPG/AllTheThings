@@ -2,11 +2,6 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(ACHIEVEMENTS, {
-	petbattles({
-		ach(8348, {	-- The Longest Day
-			["timeline"] = { ADDED_5_3_0 },
-		}),
-	}),
 	------ Epic ------
 	ach(61679, {	-- Midnight Epic
 		["timeline"] = { ADDED_12_0_1_LAUNCH },
@@ -179,10 +174,6 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		-- #if NOT ANYCLASSIC
 		["timeline"] = { ADDED_3_0_2 },
 		-- #endif
-	}),
-	ach(545, {	-- Shave and a Haircut
-		["timeline"] = { ADDED_3_0_2 },
-		["maps"] = { MAP.STORMWIND_CITY, MAP.ORGRIMMAR, NORTHREND_DALARAN },
 	}),
 	ach(1020, {	-- Ten Tabards [TODO]
 		["timeline"] = { ADDED_3_0_2 },

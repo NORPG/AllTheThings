@@ -6,40 +6,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 	m(MAP.BLASTED_LANDS, {
 		["lore"] = "The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",
 		["icon"] = 236720,
-		-- #if AFTER 6.0.1
-		["crs"] = { 88206 },	-- Zidormi
-		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(4909, {	-- Blasted Lands Quests
-					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER 7.3.5
-					["_doautomation"] = true,
-					-- #else
-					["sourceQuests"] = {
-						26171,	-- You Are Rakh'likh, Demon (alliance)
-						25701,	-- You Are Rakh'likh, Demon (horde)
-						26187,	-- The Downfall of Marl Wormthorn (alliance)
-						25720,	-- The Downfall of Marl Wormthorn (horde)
-						25705,	-- False Idols
-						25706,	-- Neptool's Revenge
-					},
-					-- #endif
-				}),
 				ach(766),	-- Explore Blasted Lands
-			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					635,	-- Adder (PET!)
-					415,	-- Fire Beetle (PET!)
-					414,	-- Scorpid (PET!)
-					412,	-- Spider (PET!)
-				}},
-				["groups"] = {
-					pet(416, {	-- Scorpling (PET!)
-						["coord"] = { 59.6, 60.8, MAP.BLASTED_LANDS },
-					}),
-				},
 			}),
 			explorationHeader({
 				exploration(1441),	-- Altar of Storms
@@ -449,16 +418,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				heroscall(q(28673, {	-- Hero's Call: Blasted Lands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 57. (TODO: Test max level between 58 and 65)
-					["lvl"] = { 54, 57 },
-					-- #endif
-				})),
 				q(25702, {	-- Home... Gone... Naga...
 					["qg"] = 41265,	-- Salt-Flop
 					["coord"] = { 73.1, 47.4, MAP.BLASTED_LANDS },
@@ -1473,16 +1432,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28671, {	-- Warchief's Command: Blasted Lands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.UNDERCITY },	-- Only found in Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 57. (TODO: Test max level)
-					["lvl"] = { 54, 57 },
-					-- #endif
-				})),
 				q(25714, {	-- Watcher Mahar Ba
 					["sourceQuests"] = {
 						25709,	-- Curtail the Darktail

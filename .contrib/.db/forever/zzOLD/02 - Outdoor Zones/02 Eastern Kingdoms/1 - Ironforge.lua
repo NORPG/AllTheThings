@@ -67,9 +67,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 				})),
 			}),
-			battlepets({
-				pet(404),	-- Long-tailed Mole (PET!)
-			}),
 			n(FACTIONS, {
 				faction(FACTION_GNOMEREGAN, {	-- Gnomeregan Exiles
 					-- #if AFTER CATA
@@ -1032,35 +1029,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-				}),
-				q(14111, {	-- Relic of the Earthen Ring
-					["qgs"] = {
-						35073,	-- Farseer Eannu <The Earthen Ring>
-						23127,	-- Farseer Javad <Shaman Trainer>
-						20407,	-- Farseer Umbrua <Shaman Trainer>
-						17219,	-- Sulaa <Shaman Trainer>
-					},
-					["coords"] = {
-						{ 55.6, 29.2, MAP.IRONFORGE },
-						{ 55.2, 29.5, MAP.IRONFORGE },
-						{ 67.6, 89.6, MAP.STORMWIND_CITY },
-						{ 32.3, 23.9, THE_EXODAR },
-					},
-					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 5178, 1 },	-- Air Totem
-						{ "i", 5175, 1 },	-- Earth Totem
-						{ "i", 5176, 1 },	-- Fire Totem
-						{ "i", 5177, 1 },	-- Water Totem
-					},
-					["classes"] = { SHAMAN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-					["groups"] = {
-						i(46978, {	-- Totem of the Earthen Ring
-							["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-						}),
-					},
 				}),
 				q(6392, {	-- Return to Brock / Return to Gremlock [CATA+]
 					["sourceQuest"] = 6388,	-- Gryth Thurden

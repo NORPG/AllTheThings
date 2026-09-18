@@ -49,20 +49,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					393,	-- Cockroach (PET!)
-					448,	-- Hare (PET!)
-					450,	-- Maggot (PET!)
-					417,	-- Rat (PET!)
-				}},
-				["groups"] = {
-					pet(449),	-- Brown Marmot (PET!)
-					pet(446, {	-- Jade Oozeling (PET!)
-						["coord"] = { 58.8, 43.0, MAP.THE_HINTERLANDS },
-					}),
-				},
-			}),
 			explorationHeader({
 				exploration(348),	-- Aerie Peak
 				exploration(1884),	-- Agol'watha
@@ -145,22 +131,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 65.6, 44.8, MAP.THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-			}),
-			petbattles({
-				n(66478, {	-- David Kosse <Master Pet Tamer>
-					["coord"] = { 62.8, 54.6, MAP.THE_HINTERLANDS },
-					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDavid's pets are level 13 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 13,
-					["groups"] = {
-						q(31910, {	-- David Kosse
-							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -693,18 +663,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				heroscall(q(26542, {	-- Hero's Call: The Hinterlands!
-					["qg"] = 2700,	-- Captain Nials
-					["coord"] = { 40.0, 48.8, MAP.ARATHI_HIGHLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.IRONFORGE },	-- Only found in Ironforge in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 33. (TODO: Test max level between 32 and 39)
-					["lvl"] = { 29, 33 },
-					-- #endif
-				})),
 				q(26526, {	-- Hunt the Keeper (A)
 					["sourceQuest"] = 26517,	-- Summit of Fate
 					["qg"] = 43156,	-- Fraggar Thundermantle
@@ -2037,16 +1995,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28574, {	-- Warchief's Command: The Hinterlands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 33. (TODO: Test max level)
-					["lvl"] = { 29, 33 },
-					-- #endif
-				})),
 				q(2988, {	-- Witherbark Cages
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, MAP.THE_HINTERLANDS },

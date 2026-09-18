@@ -31,33 +31,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					646,	-- Chicken (PET!)
-					385,	-- Mouse (PET!)
-					378,	-- Rabbit (PET!)
-					424,	-- Roach (PET!)
-					419,	-- Small Frog (PET!)
-					379,	-- Squirrel (PET!)
-				}},
-				["groups"] = {
-					pet(398),	-- Black Rat (PET!)
-					pet(396, {	-- Dusk Spiderling (PET!)
-						["description"] = "Found commonly in the area around the given coordinate.",
-						["coord"] = { 32.6, 51.6, MAP.DUSKWOOD },
-					}),
-					pet(399),	-- Rat Snake (PET!)
-					pet(397),	-- Skunk (PET!)
-					pet(400, {	-- Widow Spiderling (PET!)
-						["description"] =
-							-- #if BEFORE 5.1.0
-							"Spawns during the night between 6:30pm to 6:30am realm time, but can be found as a secondary pet all day long.",
-							-- #else
-							"Spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE), but can be found as a secondary pet all day long.",
-							-- #endif
-					}),
-				},
-			}),
 			explorationHeader({
 				exploration(536),	-- Addle's Stead
 				exploration(576),	-- Beggar's Haunt
@@ -88,51 +61,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			petbattles({
-				n(65655, {	-- Eric Davidson <Master Pet Tamer>
-					["coord"] = { 19.8, 44.8, MAP.DUSKWOOD },
-					["description"] = "This pet tamer is Alliance only.\n\nEric's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Beast - see above.",
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["petBattleLvl"] = 7,
-					["groups"] = {
-						q(31850, {	-- Eric Davidson
-							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				q(31729, {	-- Steven Lisbane
-					["sourceQuest"] = 31726,	-- Eric Davidson
-					["qg"] = 65655,	-- Eric Davidson
-					["coord"] = { 19.8, 44.8, MAP.DUSKWOOD },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { NORTHERN_STRANGLETHORN },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Steven Lisbane
-							["provider"] = { "n", 63194 },	-- Steven Lisbane
-							["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-			}),
-			-- #if SEASON_OF_DISCOVERY
-			pickpocketing({
-				applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
-					["coord"] = { 23.3, 72.8, MAP.DUSKWOOD },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						215,	-- Defias Night Runner
-						909,	-- Defias Night Blade
-					},
-				})),
-			}),
-			-- #endif
 			n(QUESTS, {
 				q(26720, {	-- A Curse We Cannot Lift
 					-- #if AFTER 7.0.3
@@ -643,16 +571,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				heroscall(q(28564, {	-- Hero's Call: Duskwood!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 23. (TODO: Test max level between 22 and 32)
-					["lvl"] = { 19, 23 },
-					-- #endif
-				})),
 				q(26728, {	-- Hero's Call: Duskwood!
 					["qg"] = 900,	-- Bailiff Conacher
 					["coord"] = { 28.7, 40.9, MAP.REDRIDGE_MOUNTAINS },

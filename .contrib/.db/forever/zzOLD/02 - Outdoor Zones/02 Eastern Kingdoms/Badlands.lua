@@ -33,19 +33,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["cr"] = 46393,	-- Billy Goat
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					406,	-- Beetle (PET!)
-					398,	-- Black Rat (PET!)
-					430,	-- Gold Beetle (PET!)
-					431,	-- Rattlesnake (PET!)
-					433,	-- Spiky Lizard (PET!)
-					432,	-- Stripe-Tailed Scorpid (PET!)
-				}},
-				["groups"] = {
-					pet(438),	-- King Snake (PET!)
-				},
-			}),
 			explorationHeader({
 				exploration(345),	-- Agmond's End
 				exploration(338),	-- Angor Fortress
@@ -751,16 +738,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				heroscall(q(28579, {	-- Hero's Call: Badlands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 46. (TODO: Test max level between 48 and 55)
-					["lvl"] = { 44, 46 },
-					-- #endif
-				})),
 				q(1108, {	-- Indurium
 					["sourceQuest"] = 1106,	-- Martek the Exiled
 					["qg"] = 4618,	-- Martek the Exiled
@@ -1953,16 +1930,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28580, {	-- Warchief's Command: Badlands!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 47. (TODO: Test max level)
-					["lvl"] = { 44, 47 },
-					-- #endif
-				})),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["qg"] = 46653,	-- Garyanne Fleezlebop
 					["coord"] = { 64.2, 38.1, MAP.BADLANDS },

@@ -35,14 +35,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				-- #endif
 				["maps"] = { 58 },	-- Shadowthread Cave
 				["groups"] = {
-					battlepets({
-						["sym"] = {{"select","speciesID",
-							447,	-- Fawn (PET!)
-						}},
-						["groups"] = {
-							pet(507),	-- Crested Owl (PET!)
-						},
-					}),
 					n(QUESTS, {
 						q(28734, {	-- A Favor for Melithar
 							["sourceQuest"] = 28714,	-- Fel Moss Corruption
@@ -997,16 +989,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(842),	-- Explore Teldrassil
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					507,	-- Crested Owl (PET!)
-					479,	-- Elfin Rabbit (PET!)
-					447,	-- Fawn (PET!)
-					478,	-- Forest Moth (PET!)
-					452,	-- Red-Tailed Chipmunk (PET!)
-					419,	-- Small Frog (PET!)
-				}},
-			}),
 			explorationHeader({
 				exploration(736),	-- Ban'ethil Hollow
 				exploration(1657),	-- Darnassus
@@ -1046,114 +1028,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			petbattles({
-				q(31555, {	-- Got one! (Valeena)
-					["sourceQuest"] = 31826,	-- Level Up!
-					["qg"] = 63070,	-- Valeena
-					["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31552, {	-- Learning the Ropes (Valeena)
-					["qg"] = 63070,	-- Valeena
-					["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31826, {	-- Level Up! (Valeena)
-					["sourceQuest"] = 31553,	-- On The Mend
-					["qg"] = 63070,	-- Valeena
-					["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31553, {	-- On The Mend (Valeena)
-					["sourceQuest"] = 31552,	-- Learning the Ropes
-					["qg"] = 63070,	-- Valeena
-					["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Battle Pets Healed
-							["provider"] = { "n", 10051 },	-- Seriadne <Stable Master>
-							["coord"] = { 56.2, 52.0, MAP.TELDRASSIL },
-						}),
-					},
-				}),
-			}),
-			-- #if SEASON_OF_DISCOVERY
-			pickpocketing({
-				applyclassicphase(SOD_PHASE_ONE, i(208749, {	-- Gnarlpine Stash Key
-					["coord"] = { 41.6, 77.6, MAP.TELDRASSIL },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						2011,	-- Gnarlpine Augur
-						2013,	-- Gnarlpine Avenger
-						2012,	-- Gnarlpine Pathfinder
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(208605, {	-- Teldrassil Treasure Map
-					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {
-						{ "i", 208604, 1 },	-- Bottom-Left Map Piece
-						{ "i", 208603, 1 },	-- Bottom-Right Map Piece
-						{ "i", 208602, 1 },	-- Top-Left Map Piece
-						{ "i", 208601, 1 },	-- Top-Right Map Piece
-					},
-					["classes"] = { ROGUE },
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(208604, {	-- Bottom-Left Map Piece
-					["coord"] = { 52.6, 49.6, MAP.TELDRASSIL },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						2005,	-- Vicious Grell
-						2002,	-- Rascal Sprite
-						2004,	-- Dark Sprite
-						2003,	-- Shadow Sprite
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(208603, {	-- Bottom-Right Map Piece
-					["coord"] = { 36.8, 37.6, MAP.TELDRASSIL },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						2019,	-- Bloodfeather Fury
-						2021,	-- Bloodfeather Matriarch
-						2015,	-- Bloodfeather Harpy
-						2020,	-- Bloodfeather Wind Witch
-						2018,	-- Bloodfeather Sorceress
-						2017,	-- Bloodfeather Rogue
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(208602, {	-- Top-Left Map Piece
-					["coord"] = { 46.6, 52.4, MAP.TELDRASSIL },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						2010,	-- Gnarlpine Defender
-						2152,	-- Gnarlpine Ambusher
-						2009,	-- Gnarlpine Shaman
-						2011,	-- Gnarlpine Augur
-						2013,	-- Gnarlpine Avenger
-						2012,	-- Gnarlpine Pathfinder
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(208601, {	-- Top-Right Map Piece
-					["coord"] = { 60.0, 64.4, MAP.TELDRASSIL },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						2022,	-- Timberling
-						2027,	-- Timberling Trampler
-						2029,	-- Timberling Mire Beast
-						2030,	-- Elder Timberling
-						2025,	-- Timberling Bark Ripper
-					},
-				})),
-			}),
-			-- #endif
 			n(QUESTS, {
 				q(475, {	-- A Troubling Breeze
 					["qg"] = 2078,	-- Athridas Bearmantle

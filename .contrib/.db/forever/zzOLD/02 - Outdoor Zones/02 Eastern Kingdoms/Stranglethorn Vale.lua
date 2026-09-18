@@ -2,7 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
--- #if BEFORE CATA
 local OnUpdateForBloodsail = [[function(t)
 	if t.collectible then
 		if not t.dressing then
@@ -91,61 +90,13 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 	end
 end]];
 
--- #if SEASON_OF_DISCOVERY
-local bloodicon = function(item)	-- Assign an Atal'ai Blood Icon cost to an item.
-	applycost(item, { "i", 220636, 1 });
-	return item;
-end
-local ritualicon = function(item)	-- Assign an Atal'ai Ritual Icon cost to an item.
-	applycost(item, { "i", 220637, 1 });
-	return item;
-end
-
-local bloodcoin_c = function(cost, item)	-- Assign a Copper Blood Coin cost to an item.
-	applycost(item, { "i", 213168, cost });
-	return item;
-end
-local bloodcoin_s = function(cost, item)	-- Assign a Silver Blood Coin cost to an item.
-	applycost(item, { "i", 213169, cost });
-	return item;
-end
-local bloodcoin_g = function(cost, item)	-- Assign a Gold Blood Coin cost to an item.
-	applycost(item, { "i", 213170, cost });
-	return item;
-end
-
-local massacrecoin_c = function(cost, item)	-- Assign a Copper Massacre Coin cost to an item.
-	applycost(item, { "i", 221364, cost });
-	return item;
-end
-local massacrecoin_s = function(cost, item)	-- Assign a Silver Massacre Coin cost to an item.
-	applycost(item, { "i", 221365, cost });
-	return item;
-end
-local massacrecoin_g = function(cost, item)	-- Assign a Gold Massacre Coin cost to an item.
-	applycost(item, { "i", 221366, cost });
-	return item;
-end
-
-local real = function(cost, item)	-- Assign a Tarnished Undermine Real cost to an item.
-	applycost(item, { "i", 226404, cost });
-	return item;
-end
--- #endif
-
 root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 	m(MAP.STRANGLETHORN_VALE, {
 		["lore"] = "The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",
 		["icon"] = 236844,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
-					title(111, {	-- Bloodsail Admiral <Name>
-						["timeline"] = { ADDED_3_0_2 },
-					}),
-				})),
 				ach(781),	-- Explore Stranglethorn Vale
-				ach(940),	-- The Green Hills of Stranglethorn
 			}),
 			explorationHeader({
 				exploration(123),	-- Bal'lal Ruins
@@ -180,12 +131,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			n(FACTIONS, {
 				faction(FACTION_BLOODSAIL_BUCCANEERS, {	-- Bloodsail Buccaneers
 					["icon"] = 133694,
-					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForBloodsail,
 					["OnUpdate"] = OnUpdateForBloodsail,
 					["maps"] = { MAP.BADLANDS },
 					["crs"] = { 9179 },	-- Jazzrik
-					-- #endif
 				}),
 				faction(FACTION_BOOTY_BAY, {	-- Booty Bay
 					["icon"] = 133784,
@@ -195,64 +144,22 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						MAP.THE_BARRENS,
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				pvp(applyclassicphase(SOD_PHASE_TWO, faction(2634, {	-- Blood Moon
-					["description"] = "This faction is probably not one that you can gain reputation with.",
-					["timeline"] = { CREATED_1_15_1 },
-				}))),
-				-- #endif
 			}),
 			n(FLIGHT_PATHS, {
 				fp(18, {	-- Booty Bay, Stranglethorn
 					["cr"] = 2858,	-- Gringer <Wind Rider Master>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 40.6, 73.2, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 26.8, 77.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 26.8, 77.0, MAP.STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(19, {	-- Booty Bay, Stranglethorn
 					["cr"] = 2859,	-- Gyll <Gryphon Master>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 41.6, 74.4, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 27.4, 77.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 27.4, 77.6, MAP.STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(20, {	-- Grom'gol, Stranglethorn
 					["cr"] = 1387,	-- Thysta <Wind Rider Master>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 39.0, 51.2, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 32.6, 29.2, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 32.6, 29.2, MAP.STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
-				}),
-				fp(195, {	-- Rebel Camp, Stranglethorn
-					["crs"] = {
-						-- #if AFTER CATA
-						43045,	-- James Stillair <Gryphon Master>
-						-- #else
-						24366,	-- Nizzle <Gryphon Master>
-						-- #endif
-					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 47.8, 11.8, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 38.2, 4.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
-					["timeline"] = { ADDED_2_3_0 },
-					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -332,53 +239,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["qg"] = 7406,	-- Oglethorpe Obnoticus
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.2, 76.2, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(30, 30, 10),
+					["coord"] = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
+					["lvl"] = 30,
 					["groups"] = {
 						i(10398, {	-- Mechanical Chicken (PET!)
 							["timeline"] = { ADDED_1_11_1 },
-						}),
-					},
-				}),
-				q(9457, {	-- An Unusual Patron
-					["sourceQuest"] = 9436,	-- Bloodscalp Insight
-					["qg"] = 17094,	-- Nemeth Hawkeye
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 32.0, 28.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
-					["timeline"] = { ADDED_2_0_1 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Heart of Naias
-							["providers"] = {
-								{ "i",  23681 },	-- Heart of Naias
-								{ "i",  23680 },	-- Gift of Naias
-								{ "o", 181636 },	-- Altar of Naias
-							},
-							["coord"] = { 19.8, 22.6, MAP.STRANGLETHORN_VALE },
-							["cr"] = 17207,	-- Naias
-						}),
-						i(61093, {	-- Junglewalker Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61092, {	-- Monnions of Raw Power
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61091, {	-- Blade of Exotic Magic
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131255, {	-- Shouldersguards of Raw Power
-							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -393,13 +258,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				pvp(q(7838, {	-- Arena Grandmaster
 					["sourceQuest"] = 7810,	-- Arena Master
 					["qg"] = 14508,	-- Short John Mithril
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 45.0, 25.4, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 29.6, 47.4, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 29.6, 47.4, MAP.STRANGLETHORN_VALE },
 					["cost"] = { { "i", 18706, 12 } },	-- Arena Master (trinket)
 					["repeatable"] = true,
 					["groups"] = {
@@ -415,43 +274,25 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				})),
 				pvp(q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 30.5, 47.8, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 30.5, 47.8, MAP.STRANGLETHORN_VALE },
 				})),
 				q(4621, {	-- Avast Ye, Admiral!
 					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
 					["qg"] = 2546,	-- Fleet Master Firallon
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 30.6, 90.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 30.6, 90.6, MAP.STRANGLETHORN_VALE },
 					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
-					["lvl"] = lvlsquish(55, 55, 10),
+					["lvl"] = 55,
 					["groups"] = {
 						i(12185),	-- Bloodsail Admiral's Hat
 					},
 				}),
 				q(1036, {	-- Avast Ye, Scallywag
 					["qg"] = 2545,	-- "Pretty Boy" Duncan
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 44.4, 92.6, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 27.4, 69.4, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 27.4, 69.4, MAP.STRANGLETHORN_VALE },
 					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(55, 55, 10),
+					["lvl"] = 55,
 				}),
 				q(204, {	-- Bad Medicine
 					["qg"] = 733,	-- Sergeant Yohwa
@@ -705,21 +546,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, q(79236, {	-- Cherry for Your Thoughts?
-					["sourceQuest"] = 79235,	-- On The Lam
-					["qg"] = 215643,	-- Tokal
-					["coord"] = { 27.0, 77.2, MAP.STRANGLETHORN_VALE },
-					["timeline"] = { ADDED_1_15_1 },
-					["lvl"] = 30,
-					["groups"] = {
-						objective(1, {	-- 0/1 Cherry Grog
-							["provider"] = { "i", 4600 },	-- Cherry Grog
-							["cr"] = 2832,	-- Nixxrax Fillamug <Food and Drink>
-						}),
-					},
-				})),
-				-- #endif
 				q(202, {	-- Colonel Kurzen
 					["sourceQuest"] = 574,	-- Special Forces
 					["qg"] = 469,	-- Lieutenant Doren
@@ -831,13 +657,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				q(9272, {	-- Dressing the Part
 					["qg"] = 2546,	-- Fleet Master Firallon
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 30.6, 90.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 30.6, 90.6, MAP.STRANGLETHORN_VALE },
 					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
 					["lvl"] = lvlsquish(49, 49, 10),
 					["groups"] = {
@@ -1564,19 +1384,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, q(83934, {	-- Show Me The Money!
-					["qg"] = 227853,	-- Pix Xizzix
-					["coord"] = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
-					["timeline"] = { ADDED_1_15_3 },
-					["lvl"] = 55,
-					["groups"] = {
-						objective(1, {	-- 0/1 Tarnished Undermine Real
-							["provider"] = { "i", 226404 },	-- Tarnished Undermine Real
-						}),
-					},
-				})),
-				-- #endif
 				q(3643, {	-- Show Your Work
 					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
@@ -2297,20 +2104,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				q(9259, {	-- Traitor to the Bloodsail
 					["qg"] = 16399,	-- Bloodsail Traitor
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 48.4, 63.2, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 31.8, 70.9, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 31.8, 70.9, MAP.STRANGLETHORN_VALE },
 					["maxReputation"] = { FACTION_BOOTY_BAY, NEUTRAL },	-- Booty Bay, must be less than Neutral
 					["cost"] = {
 						{ "i", 4306, 40 },	-- Silk Cloth
 						{ "i", 2604, 4 },	-- Red Dye
 					},
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(30, 30, 1),
+					["lvl"] = 30,
 				}),
 				q(205, {	-- Troll Witchery
 					["sourceQuest"] = 207,	-- Kurzen's Mystery
@@ -2489,216 +2290,74 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(14487, {	-- Gluggl [CATA+] / Gluggle
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.6, 43.4, NORTHERN_STRANGLETHORN },
-						{ 43.1, 41.7, NORTHERN_STRANGLETHORN },
-						{ 42.0, 41.2, NORTHERN_STRANGLETHORN },
-						{ 40.0, 38.8, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 34.4, 22.4, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 34.4, 22.4, MAP.STRANGLETHORN_VALE },
 				}),
 				n(11383, {	-- High Priestess Hai'watna
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 67.0, 34.0, NORTHERN_STRANGLETHORN },
-						{ 67.0, 31.6, NORTHERN_STRANGLETHORN },
-						-- #else
 						{ 51.4, 16.6, MAP.STRANGLETHORN_VALE },
 						{ 51.6, 18.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
 					},
 				}),
 				n(14491, {	-- Kurmokk
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 58.0, 47.8, THE_CAPE_OF_STRANGLETHORN },
-						{ 54.4, 52.2, THE_CAPE_OF_STRANGLETHORN },
-						{ 51.0, 54.4, THE_CAPE_OF_STRANGLETHORN },
-						{ 48.0, 58.0, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
 						{ 31.8, 68.2, MAP.STRANGLETHORN_VALE },
 						{ 35.8, 63.8, MAP.STRANGLETHORN_VALE },
-						-- #endif
 					},
 				}),
 				n(2541, {	-- Lord Sakrasis
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.8, 49.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.6, 62.2, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.6, 62.2, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
-						i(5028, {	-- Lord Sakrasis' Scepter
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
-						i(5029, {	-- Talisman of the Naga Lord
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
+						i(5028),	-- Lord Sakrasis' Scepter
+						i(5029),	-- Talisman of the Naga Lord
 					},
 				}),
-				-- #if BEFORE CATA
 				n(723, {	-- Mosh'Ogg Butcher
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 67.0, 54.0, NORTHERN_STRANGLETHORN },
-						{ 66.6, 53.4, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 51.0, 31.8, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 51.0, 31.8, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
-						i(1680, {	-- Headchopper
-							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
-						}),
+						i(1680),	-- Headchopper
 					},
 				}),
-				-- #endif
 				n(14490, {	-- Rippa
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 41.4, 71.4, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
 						{ 24.2, 58.0, MAP.STRANGLETHORN_VALE },
 						{ 25.4, 73.6, MAP.STRANGLETHORN_VALE },
 						{ 26.8, 85.0, MAP.STRANGLETHORN_VALE },
 						{ 30.4, 86.0, MAP.STRANGLETHORN_VALE },
 						{ 34.0, 83.6, MAP.STRANGLETHORN_VALE },
 						{ 35.6, 74.8, MAP.STRANGLETHORN_VALE },
-						-- #endif
 					},
 				}),
 				n(14488, {	-- Roloch
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.6, 45.4, NORTHERN_STRANGLETHORN },
-						{ 45.8, 51.0, NORTHERN_STRANGLETHORN },
-						{ 45.2, 54.4, NORTHERN_STRANGLETHORN },
-						{ 46.8, 55.8, NORTHERN_STRANGLETHORN },
-						-- #else
 						{ 38.0, 24.8, MAP.STRANGLETHORN_VALE },
 						{ 27.0, 31.8, MAP.STRANGLETHORN_VALE },
-						-- #endif
 					},
 				}),
 				n(1552, {	-- Scale Belly
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 67.8, 25.4, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 44.0, 48.2, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 44.0, 48.2, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
-						i(1604, {	-- Chromatic Sword
-							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
-						}),
-						i(4478, {	-- Iridescent Scale Leggings
-							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
-						}),
+						i(1604),	-- Chromatic Sword
+						i(4478),	-- Iridescent Scale Leggings
 					},
 				}),
 				n(14492, {	-- Verifonix <The Surveyor>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.2, 27.6, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 36.8, 56.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 36.8, 56.0, MAP.STRANGLETHORN_VALE },
 				}),
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	-- Blood Moon
-				readable = "Blood Moon",
-				icon = 237513,
-				text = {
-					en = "Blood Moon",
-					de = "Blutmond",
-					es = "Luna Sangrienta",
-					mx = "Luna de sangre",
-					fr = "Lune de sang",
-					it = "Blood Moon",
-					ko = "핏빛 달",
-					pt = "Lua Sangrenta",
-					ru = "Кровавая луна",
-					cn = "鲜血之月",
-					tw = "血月",
-				},
-				description = {
-					en = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
-					-- TODO: de = "",
-					es = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",
-					mx = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalar.",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这是一个在荆棘谷举行的自由对战 PvP 活动，每3小时从服务器时间午夜开始持续30分钟。\n\n击杀玩家以获得可叠加的鲜血之月增益效果——献给血之洛阿的鲜血。该效果最多可叠加255次。\n每次击杀可获得5层鲜血。\n死亡会失去鲜血。\n前往鲜血祭坛 |cffffffff（地图上的红色旗帜）|r，将献给血之洛阿的鲜血兑换为铜质鲜血硬币、银质鲜血硬币和金质鲜血硬币。只需走到祭坛旁，硬币就会自动出现在你的背包中。\n\n你可以通过与赞达拉使者交谈来选择退出该活动。",
-					-- TODO: tw = "",
-				},
-			}), {
-				i(213168, {	-- Copper Blood Coin
-					["description"] = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Blood Coin per 1 blood stack.",
-					["timeline"] = { REMOVED_1_15_2 },
-				}),
-				bloodcoin_c(100, i(213169)),	-- Silver Blood Coin
-				bloodcoin_s(100, i(213170)),	-- Gold Blood Coin
-				applyclassicphase(SOD_PHASE_THREE, i(221364, {	-- Copper Massacre Coin
-					["description"] = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Massacre Coin per 1 blood stack.",
-				})),
-				applyclassicphase(SOD_PHASE_THREE, massacrecoin_c(100, i(221365))),	-- Silver Massacre Coin
-				applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(100, i(221366))),	-- Gold Massacre Coin
-				i(216884, {	-- Bloodthirst Blade
-					["description"] = "This drops from the troll boss during the Blood Moon event. It sadly cannot be equipped.",
-					["cr"] = 218690,	-- Kha'damu <Chosen of the Blood Loa>
-				}),
-			}))),
-			-- #endif
 			n(TREASURES, {
 				pvp(o(179697, {	-- Arena Treasure Chest
 					["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 30.5, 47.8, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 30.5, 47.8, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
-						ach(389),	-- Gurubashi Arena Master
-						i(18706, {	-- Arena Master
-							-- #if BEFORE WRATH
-							["lore"] = "Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-							-- #endif
-						}),
+						i(18706),	-- Arena Master
 						i(18711),	-- Arena Bands
 						i(18710),	-- Arena Bracers
 						i(18712),	-- Arena Vambraces
 						i(18709),	-- Arena Wristguards
-						i(126948, {	-- Defending Champion
-							["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-							["timeline"] = { ADDED_6_2_0 },
-							["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
-						}),
-						i(122222, {	-- Music Roll: Angelic
-							["timeline"] = { ADDED_6_1_0 },
-						}),
 					},
 				})),
 				o(2744, {	-- Giant Clam
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 28.1, 45.9, NORTHERN_STRANGLETHORN },	-- The Vile Reef
-						-- #else
-						{ 25.8, 28.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 25.8, 28.0, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(4611),	-- Blue Pearl
 						i(4655),	-- Giant Clam Meat
@@ -2713,7 +2372,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ 32.8, 78.7, MAP.STRANGLETHORN_VALE },
 						{ 36.4, 78.5, MAP.STRANGLETHORN_VALE },
 					},
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(4098),	-- Carefully Folded Note
@@ -2722,26 +2380,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.2, 77.5, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.2, 77.5, MAP.STRANGLETHORN_VALE },
 					["sym"] = {{"select", "itemID",
 						2846,	-- Pattern: Thick Murloc Armor (RECIPE!)
 						5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					}},
 				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 47.2, 10.2, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 38.0, 3.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 38.0, 3.0, MAP.STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
@@ -2749,13 +2395,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 40.8, 82.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 27.0, 82.5, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 27.0, 82.5, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(10318, {	-- Pattern: Admiral's Hat (RECIPE!)
 							["isLimited"] = true,
@@ -2763,13 +2403,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2838, {	-- Crazk Sparks <Fireworks Merchant>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.0, 72.7, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.2, 76.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.2, 76.6, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(18648, {	-- Schematic: Green Firework (RECIPE!)
 							["isLimited"] = true,
@@ -2777,13 +2411,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2845, {	-- Fargon Mortalak <Superior Armorer>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 44.1, 70.0, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 29.0, 75.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 29.0, 75.0, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(12257, {	-- Heavy Notched Belt
 							["isLimited"] = true,
@@ -2791,13 +2419,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2848, {	-- Glyx Brewright <Alchemy Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.7, 75.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.0, 78.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.0, 78.0, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
@@ -2808,13 +2430,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2687, {	-- Gnaz Blunderflame <Engineering Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 67.5, 61.2, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 51.0, 35.2, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 51.0, 35.2, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(13311, {	-- Schematic: Mechanical Dragonling (RECIPE!)
 							["isLimited"] = true,
@@ -2822,13 +2438,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2839, {	-- Haren Kanmae <Superior Bowyer>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.9, 69.3, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.3, 74.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.3, 74.6, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(11305, {	-- Dense Shortbow
 							["isLimited"] = true,
@@ -2836,13 +2446,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.7, 23.2, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 35.8, 10.7, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 35.8, 10.7, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(12250, {	-- Midnight Axe
 							["isLimited"] = true,
@@ -2853,13 +2457,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2843, {	-- Jutak <Blade Trader>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 41.6, 74.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 27.5, 77.5, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 27.5, 77.5, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(12248, {	-- Daring Dirk
 							["isLimited"] = true,
@@ -2870,13 +2468,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2664, {	-- Kelsey Yance <Cook>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.2, 74.4, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.2, 74.4, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
 						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
@@ -2889,13 +2481,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.9, 70.4, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.3, 75.2, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.3, 75.2, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(4778, {	-- Heavy Spiked Mace
 							["isLimited"] = true,
@@ -2919,144 +2505,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, pvp(n(218115, {	-- Mai'zin <Gurubashi Bloodchanger>
-					["coord"] = { 31.2, 48.4, MAP.STRANGLETHORN_VALE },
-					["lvl"] = 40,
-					["groups"] = {
-						applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(213169))),	-- Silver Blood Coin
-						applyclassicphase(SOD_PHASE_THREE, massacrecoin_g(1, i(213170))),	-- Gold Blood Coin
-						bloodcoin_g(1, i(216972, {	-- Satchel of Silver Blood Coins
-							["sym"] = {{ "select","itemID", 213169 }},	-- Silver Blood Coin
-							-- TODO: Check if this is still there.
-						})),
-						bloodcoin_s(1, i(216971, {	-- Satchel of Copper Blood Coins
-							["sym"] = {{ "select","itemID", 213168 }},	-- Copper Blood Coin
-							-- TODO: Check if this is still there.
-						})),
-						applyclassicphase(SOD_PHASE_THREE, massacrecoin_g(1, i(221368, {	-- Satchel of Silver Massacre Coins
-							["sym"] = {{ "select","itemID", 221365 }},	-- Silver Massacre Coin
-						}))),
-						applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(221367, {	-- Satchel of Copper Massacre Coins
-							["sym"] = {{ "select","itemID", 221364 }},	-- Copper Massacre Coin
-						}))),
-						applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(223283))),	-- Bloodstained Commendation
-						bloodcoin_c(25, i(216914, {	-- Bloodstained Commendation / Tarnished Commendation
-							["timeline"] = { REMOVED_1_15_2 },
-						})),
-						bloodcoin_s(1, i(216491)),	-- Shipment of Stranglethorn Lumber
-						bloodcoin_g(1, i(216570)),	-- Reins of the Golden Sabercat
-						bloodcoin_g(1, i(216492)),	-- Whistle of the Mottled Blood Raptor
-
-						-- Phase 2
-						bloodcoin_s(2, i(216621)),	-- Blooddrenched Drape
-						bloodcoin_s(2, i(216620)),	-- Bloodrot Cloak
-						bloodcoin_s(2, i(216623)),	-- Cape of Hemostasis
-						bloodcoin_s(2, i(216622)),	-- Coagulated Cloak
-
-						-- Class Items (Blood Harvest)
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(220173, {	-- Parasomnia
-							["classes"] = { WARRIOR, PALADIN },
-							["lvl"] = 50,
-						}))),
-						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221446))),	-- Ritualist's Hammer
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221447))),	-- Ritualist's Bloodmoon Grimoire
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221448))),	-- Talisman of the Corrupted Grove
-							bloodcoin_s(15, i(216499)),	-- Bloodbark Crusher
-							bloodcoin_s(5, i(216498)),	-- Enchanted Sanguine Grimoire
-							bloodcoin_s(5, i(216500)),	-- Bloodbonded Grove Talisman
-						})),
-						cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221451))),	-- Bloodthirst Crossbow
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221450))),	-- Gurubashi Pit Fighter's Bow
-							bloodcoin_s(5, i(216516)),	-- Bloodlash Bow
-							bloodcoin_s(5, i(216513)),	-- Tigerblood Talisman
-							bloodcoin_s(3, i(216515)),	-- Sanguine Ammo Pouch
-							bloodcoin_s(3, i(216514)),	-- Sanguine Quiver
-						})),
-						cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221453))),	-- Band of Boiling Blood
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221452))),	-- Bloodfocused Arcane Band
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221454))),	-- Glacial Blood Band
-							bloodcoin_s(5, i(216510)),	-- Blood Resonance Circle
-							bloodcoin_s(5, i(216511)),	-- Emberblood Seal
-							bloodcoin_s(5, i(216512)),	-- Loop of Chilled Veins
-						})),
-						cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221456))),	-- Eclipsed Sanguine Saber
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221457))),	-- Libram of Draconic Destruction
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221455))),	-- Bloodlight Reverence
-							bloodcoin_s(15, i(216506)),	-- Bloodlight Avenger's Edge
-							bloodcoin_s(15, i(216504)),	-- Eclipsed Bloodlight Saber
-							bloodcoin_s(5, i(216505)),	-- Bloodlight Crusader's Radiance
-							bloodcoin_s(5, i(216607)),	-- Bloodlight Offering
-						})),
-						cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221459))),	-- Seal of the Sacrificed
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221458))),	-- Shadowy Band of Victory
-							bloodcoin_s(5, i(216518)),	-- Blood Covenant Seal
-							bloodcoin_s(5, i(216517)),	-- Sanguine Sanctuary
-							bloodcoin_s(5, i(216519)),	-- Sanguine Shadow Band
-						})),
-						cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221462))),	-- Bloodied Sword of Speed
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221460))),	-- Gurubashi Backstabber
-							bloodcoin_s(10, i(216520)),	-- Bloodharvest Blade
-							bloodcoin_s(5, i(216522)),	-- Blood Spattered Stiletto
-							bloodcoin_s(5, i(216521)),	-- Swift Sanguine Strikers
-						})),
-						cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221465))),	-- Corrupted Smashbringer
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221464))),	-- Totem of Fiery Precision
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221463))),	-- Ancestral Voodoo Doll
-							bloodcoin_s(15, i(216502)),	-- Bloodstorm War Totem
-							bloodcoin_s(5, i(216501)),	-- Bloodstorm Barrier
-							bloodcoin_s(5, i(216615)),	-- Ancestral Bloodstorm Beacon
-							bloodcoin_s(5, i(216503)),	-- Bloodstorm Jewel
-						})),
-						cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221467))),	-- Eye of the Bloodmoon
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221466))),	-- Loop of Burning Blood
-							bloodcoin_s(5, i(216508)),	-- Infernal Bloodcoil Band
-							bloodcoin_s(5, i(216507)),	-- Umbral Bloodseal
-							bloodcoin_s(5, i(216509)),	-- Infernal Pact Essence
-						})),
-						cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221469))),	-- Headhunter's Barbed Spear
-							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221468))),	-- Wall of Whispers
-							bloodcoin_s(15, i(216497)),	-- Exsanguinar
-							bloodcoin_s(15, i(216495)),	-- Sanguine Crusher
-							bloodcoin_s(10, i(216496)),	-- Sanguine Skullcrusher
-						})),
-					},
-				}))),
-				-- #endif
 				n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.2, 70.2, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.5, 75.1, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.5, 75.1, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
-						i(13310, {	-- Schematic: Accurate Scope (RECIPE!)
-							["timeline"] = { REMOVED_5_0_4 },	-- Now taught by trainer, recipe removed from the game.
-						}),
-						i(18651, {	-- Schematic: Truesilver Transformer (RECIPE!)
-							["timeline"] = { REMOVED_2_0_1 },	-- Now taught by trainer, recipe removed from the game.
-						}),
+						i(13310),	-- Schematic: Accurate Scope (RECIPE!)
+						i(18651),	-- Schematic: Truesilver Transformer (RECIPE!)
 					},
 				}),
 				n(2663, {	-- Narkk <Pirate Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.6, 69.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.1, 74.4, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.1, 74.4, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(8496),	-- Cockatiel (PET!)
 						i(8495),	-- Senegal (PET!)
@@ -3066,235 +2523,30 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1148, {	-- Nerrist <Trade Goods>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 39.3, 51.1, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 32.6, 29.2, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 32.6, 29.2, MAP.STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						applyclassicphase(TBC_PHASE_ONE, i(21943, {	-- Design: Truesilver Crab (RECIPE!)
-							["timeline"] = { ADDED_2_0_5 },
-							["isLimited"] = true,
-						})),
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
 						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2832, {	-- Nixxrax Fillamug <Food & Drink>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 40.8, 73.6, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 40.8, 73.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 40.8, 73.6, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(4595),	-- Junglevine Wine
 					},
 				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 41.6, 73.4, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 27.4, 77.1, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 27.4, 77.1, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(16083, {	-- Expert Fishing - The Bass and You
-							["timeline"] = { REMOVED_3_1_0 },
 							["rank"] = 3,
-							-- #if SEASON_OF_DISCOVERY
-							["OnUpdate"] = [[function(t)
-								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-									t.u = ]] .. SOD_PHASE_TWO .. [[;
-								end
-								t.OnUpdate = nil;
-							end]],
-							-- #endif
 						}),
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, n(227853, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_3 } }, {	-- Pix Xizzix <Undermine Trader>
-					["sourceQuest"] = 83934,	-- Show Me The Money!
-					["coord"] = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
-					["groups"] = {
-						cl(DRUID, {
-							real(50, i(226708)),	-- Wildheart Cowl
-							real(25, i(226710)),	-- Wildheart Spaulders
-							real(50, i(226715)),	-- Wildheart Vest
-							real(15, i(226714)),	-- Wildheart Bracers
-							real(25, i(226711)),	-- Wildheart Gloves
-							real(25, i(226712)),	-- Wildheart Belt
-							real(50, i(226709)),	-- Wildheart Kilt
-							real(25, i(226713)),	-- Wildheart Boots
-							real(25, i(232423)),	-- Idol of Nurture
-							real(25, i(232424)),	-- Idol of Cruelty
-							real(25, i(232390)),	-- Idol of Celestial Focus
-							real(25, i(232391)),	-- Idol of Feline Focus
-						}),
-						cl(HUNTER, {
-							real(50, i(226720)),	-- Beaststalker's Cap
-							real(25, i(226716)),	-- Beaststalker's Mantle
-							real(50, i(226723)),	-- Beaststalker's Tunic
-							real(15, i(226717)),	-- Beaststalker's Bindings
-							real(25, i(226721)),	-- Beaststalker's Gloves
-							real(25, i(226718)),	-- Beaststalker's Belt
-							real(50, i(226719)),	-- Beaststalker's Pants
-							real(25, i(226722)),	-- Beaststalker's Boots
-						}),
-						cl(MAGE, {
-							real(50, i(226728)),	-- Magister's Crown
-							real(25, i(226726)),	-- Magister's Mantle
-							real(50, i(226729)),	-- Magister's Robes
-							real(15, i(226725)),	-- Magister's Bindings
-							real(25, i(226731)),	-- Magister's Gloves
-							real(25, i(226724)),	-- Magister's Belt
-							real(50, i(226727)),	-- Magister's Leggings
-							real(25, i(226730)),	-- Magister's Boots
-						}),
-						cl(PALADIN, {
-							real(50, i(226733)),	-- Lightforge Helm
-							real(25, i(226735)),	-- Lightforge Spaulders
-							real(50, i(226734)),	-- Lightforge Breastplate
-							real(15, i(226739)),	-- Lightforge Bracers
-							real(25, i(226737)),	-- Lightforge Gauntlets
-							real(25, i(226732)),	-- Lightforge Belt
-							real(50, i(226736)),	-- Lightforge Legplates
-							real(25, i(226738)),	-- Lightforge Boots
-							real(25, i(232389)),	-- Libram of Plenty
-							real(25, i(232420)),	-- Libram of Wrath
-							real(25, i(232421)),	-- Libram of Avenging \\ Libram of Avengement
-						}),
-						cl(PRIEST, {
-							real(50, i(226746)),	-- Devout Crown
-							real(25, i(226741)),	-- Devout Mantle
-							real(50, i(226745)),	-- Devout Robe
-							real(15, i(226742)),	-- Devout Bracers
-							real(25, i(226740)),	-- Devout Gloves
-							real(25, i(226744)),	-- Devout Belt
-							real(50, i(226747)),	-- Devout Skirt
-							real(25, i(226743)),	-- Devout Sandals
-						}),
-						cl(ROGUE, {
-							real(50, i(226707)),	-- Shadowcraft Cap
-							real(25, i(226706)),	-- Shadowcraft Spaulders
-							real(50, i(226700)),	-- Shadowcraft Tunic
-							real(15, i(226704)),	-- Shadowcraft Bracers
-							real(25, i(226702)),	-- Shadowcraft Gloves
-							real(25, i(226701)),	-- Shadowcraft Belt
-							real(50, i(226705)),	-- Shadowcraft Pants
-							real(25, i(226703)),	-- Shadowcraft Boots
-						}),
-						cl(SHAMAN, {
-							real(50, i(226755)),	-- Coif of Elements
-							real(25, i(226753)),	-- Pauldrons of Elements
-							real(50, i(226749)),	-- Vest of Elements
-							real(15, i(226751)),	-- Bindings of Elements
-							real(25, i(226748)),	-- Gauntlets of Elements
-							real(25, i(226754)),	-- Cord of Elements
-							real(50, i(226750)),	-- Kilt of Elements
-							real(25, i(226752)),	-- Boots of Elements
-							real(25, i(232392)),	-- Totem of Relentless Thunder
-							real(25, i(232409)),	-- Totem of the Elements
-							real(25, i(232416)),	-- Totem of Astral Flow
-							real(25, i(232419)),	-- Totem of Conductive Currents
-						}),
-						cl(WARLOCK, {
-							real(50, i(226762)),	-- Dreadmist Mask
-							real(25, i(226756)),	-- Dreadmist Mantle
-							real(50, i(226757)),	-- Dreadmist Robe
-							real(15, i(226759)),	-- Dreadmist Bracers
-							real(25, i(226758)),	-- Dreadmist Wraps
-							real(25, i(226761)),	-- Dreadmist Belt
-							real(50, i(226760)),	-- Dreadmist Leggings
-							real(25, i(226763)),	-- Dreadmist Sandals
-						}),
-						cl(WARRIOR, {
-							real(50, i(226769)),	-- Helm of Valor
-							real(25, i(226768)),	-- Spaulders of Valor
-							real(50, i(226770)),	-- Breastplate of Valor
-							real(15, i(226766)),	-- Bracers of Valor
-							real(25, i(226771)),	-- Gauntlets of Valor
-							real(25, i(226765)),	-- Belt of Valor
-							real(50, i(226767)),	-- Legplates of Valor
-							real(25, i(226764)),	-- Boots of Valor
-						}),
-
-						-- Toys
-						real(25, i(228189)),	-- Gift of Gob (TOY!)
-
-						-- Weapons
-						real(50, i(228185)),	-- Broken Bottle of Goblino Noir
-						real(50, i(228168)),	-- Goblin Gear Grinder
-						real(50, i(228170)),	-- Makeshift South Sea Oar
-						real(50, i(228169)),	-- The Attitude Adjustor
-						real(50, i(220599)),	-- Drakestone of the Blood Prophet
-						real(50, i(220597)),	-- Drakestone of the Dream Harbinger
-						real(50, i(220598)),	-- Drakestone of the Nightmare Harbinger
-						real(50, i(228187)),	-- Stick of the South Sea
-
-						-- Armor
-						real(25, i(228184)),	-- Goblin Clothesline
-
-						-- Rings
-						real(25, i(228186)),	-- Abandoned Wedding Band
-						real(50, i(227284)),	-- Band of the Beast
-						real(50, i(227280)),	-- Craft of the Shadows
-						real(50, i(227279)),	-- Loop of the Magister
-						real(50, i(227282)),	-- Ring of the Dreaded Mist
-
-						-- Trinkets
-						real(50, i(227990)),	-- Hand of Injustice
-						real(50, i(228432)),	-- Whistle of the Beast
-
-						-- Librams
-						real(15, i(228182)),	-- Idol of Exsanguination (Bear)
-						real(15, i(228181)),	-- Idol of Exsanguination (Cat)
-						real(15, i(228183)),	-- Idol of the Grove
-						real(15, i(228180)),	-- Idol of the Swarm
-						real(15, i(228175)),	-- Libram of Holy Alacrity
-						real(15, i(228173)),	-- Libram of the Consecrated
-						real(15, i(228174)),	-- Libram of the Devoted
-						real(15, i(228178)),	-- Totem of Earthen Vitality
-						real(15, i(228177)),	-- Totem of Raging Fire
-						real(15, i(228179)),	-- Totem of the Plains
-						real(15, i(228176)),	-- Totem of Thunder
-
-						-- Bags
-						real(25, i(228171)),	-- Kezan Cash Carrier
-
-						-- Recipes
-						real(50, i(228121)),	-- Pattern: Leather-Reinforced Runecloth Bag (RECIPE!)
-						real(50, i(13522)),	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
-						real(50, i(13520)),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
-						real(50, i(13518)),	-- Recipe: Flask of Petrification (RECIPE!)
-						real(50, i(13521)),	-- Recipe: Flask of Supreme Power (RECIPE!)
-						real(50, i(13519)),	-- Recipe: Flask of the Titans (RECIPE!)
-
-						-- Reagents
-						real(5, i(226405, {	-- Damaged Undermine Supply Crate
-							["description"] = "Contains random max level crafting materials.",
-						})),
-						real(10, i(17012)),	-- Core Leather
-						real(15, i(17010)),	-- Fiery Core
-						real(15, i(17011)),	-- Lava Core
-					},
-				}))),
-				-- #endif
 				n(2849, {	-- Qixdi Goodstitch <Cloth Armor & Accessories>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.7, 74.2, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.2, 77.6, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.2, 77.6, MAP.STRANGLETHORN_VALE },
 					["sym"] = {{"select","itemID",
 						2435,	-- Embroidered Armor
 						3587,	-- Embroidered Belt
@@ -3325,16 +2577,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					}},
 					["groups"] = sharedData({
 						["collectible"] = false,
-						["providers"] = {
-							{ "n", 2849},	-- Qixdi Goodstitch <Cloth Armor & Accessories>
-							-- #if AFTER TBC
-							{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
-							{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
-							-- #endif
-							-- #if AFTER CATA
-							{ "n", 49887},	-- Gappy Silvertooth <Bling Merchant>
-							-- #endif
-						},
 					}, {
 						i(7341),	-- Cubic Zirconia Ring
 						i(7340),	-- Flawless Diamond Solitaire
@@ -3345,13 +2587,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					}),
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.4, 76.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coords"] = { 28.4, 76.0, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
 							["isLimited"] = true,
@@ -3361,96 +2597,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, n(214954, {	-- Rix Xizzix <Lost and Found>
-					["coord"] = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
-					["groups"] = {
-						applyclassicphase(SOD_PHASE_THREE, i(220688, {	-- Inert Mantle of Nightmares
-							["sourceQuest"] = 81986,	-- Waking the Nightmare
-							["cost"] = 100000,	-- 10g
-						})),
-						applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
-							["description"] = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
-							-- ["sourceQuest"] = ,	--
-							["cost"] = 10000,	-- 1g
-							["classes"] = { PALADIN },
-							["groups"] = {
-								recipe(429242),	-- Engrave Bracers - Light's Grace
-							},
-						})),
-						applyclassicphase(SOD_PHASE_THREE, i(19141, {	-- Luffa
-							["sourceQuest"] = 7727,	-- Incendosaurs? Whateverosaur is More Like It
-							["cost"] = 66451,	-- 6g 64s 51c
-						})),
-						applyclassicphase(SOD_PHASE_THREE, i(221418, {	-- Agamaggan's Roar
-							["sourceQuest"] = 82043,	-- The Wild Gods
-							["cost"] = 11500,	-- 1g 15s
-						})),
-						applyclassicphase(SOD_PHASE_THREE, i(11122, {	-- Carrot on a Stick
-							["sourceQuest"] = 2770,	-- Gahz'rilla
-							["cost"] = 28650,	-- 2g 86s 50c
-						})),
-						applyclassicphase(SOD_PHASE_THREE, i(10418, {	-- Glimmering Mithril Insignia
-							["sourceQuest"] = 3321,	-- Did You Lose This?
-							["cost"] = 65859,	-- 6g 58s 59c
-						})),
-						applyclassicphase(SOD_PHASE_TWO, i(2820, {	-- Nifty Stopwatch
-							["sourceQuest"] = 778,	-- This Is Going to Be Hard
-							["cost"] = 18650,	-- 1g 86s 50c
-						})),
-						applyclassicphase(SOD_PHASE_TWO, i(4984, {	-- Skull of Impending Doom
-							["sourceQuest"] = 737,	-- Forbidden Knowledge
-							["cost"] = 22520,	-- 2g 25s 20c
-						})),
-						i(211451, {	-- Acolyte's Void Pearl
-							["sourceQuests"] = {
-								78916,	-- The Heart of the Void (A)
-								78917,	-- The Heart of the Void (H)
-							},
-							["cost"] = 750000,	-- 75g
-						}),
-						i(211449, {	-- Avenger's Void Pearl
-							["sourceQuests"] = {
-								78916,	-- The Heart of the Void (A)
-								78917,	-- The Heart of the Void (H)
-							},
-							["cost"] = 750000,	-- 75g
-						}),
-						i(211450, {	-- Invoker's Void Pearl
-							["sourceQuests"] = {
-								78916,	-- The Heart of the Void (A)
-								78917,	-- The Heart of the Void (H)
-							},
-							["cost"] = 750000,	-- 75g
-						}),
-						i(211420, {	-- Shifting Scale Talisman
-							["sourceQuest"] = 78909,	-- Shifting Scale Talisman
-							["cost"] = 25000,	-- 2g 50s
-						}),
-					},
-				})),
-				-- #endif
 				n(1149, {	-- Uthok <General Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 37.5, 49.1, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 31.6, 28.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 31.6, 28.0, MAP.STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 38.7, 49.1, NORTHERN_STRANGLETHORN },
-						-- #else
-						{ 32.2, 28.0, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 32.2, 28.0, MAP.STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12250, {	-- Midnight Axe
@@ -3465,113 +2620,25 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2670, {	-- Xizk Goodstitch <Tailoring Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.6, 73.1, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.7, 76.9, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.7, 76.9, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(7087, {	-- Pattern: Crimson Silk Cloak (RECIPE!)
 							["isLimited"] = true,
 						}),
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_TWO, i(217258, {	-- Pattern: Enchanter's Cowl (RECIPE!)
-							["timeline"] = { ADDED_1_15_1 },
-							["isLimited"] = true,
-						})),
-						-- #endif
 						i(14630, {	-- Pattern: Enchanter's Cowl (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-							["timeline"] = { REMOVED_1_15_1 },
-							-- #endif
 							["isLimited"] = true,
 						}),
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_THREE, n(222413, {	-- Zalgo the Explorer <Purveyor of Lost Goods>
-					["coord"] = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
-					["groups"] = {
-						i(224409, {	-- Serpent's Striker (2.6 speed)
-							["cost"] = { { "i", 220589, 1 } },	-- Serpent's Striker (1.5 speed)
-						}),
-						--[[
-						-- CRIEVE NOTE: Yeah, this is on the vendor, but also causes a stack overflow. Let's not.
-						i(220589, {	-- Serpent's Striker (1.5 speed)
-							["cost"] = { { "i", 224409, 1 } },	-- Serpent's Striker (2.6 speed)
-						}),
-						]]
-						bloodicon(i(220642)),	-- Banished Martyr's Plate Armor
-						bloodicon(i(220643)),	-- Banished Martyr's Plate Legguards
-						bloodicon(i(220648)),	-- Banished Martyr's Plate Boots
-						ritualicon(i(220683)),	-- Benevolent Prophet's Vest
-						ritualicon(i(220684)),	-- Benevolent Prophet's Leggings
-						ritualicon(i(220685)),	-- Benevolent Prophet's Sandals
-						bloodicon(i(220676)),	-- Blood Corrupted Tunic
-						bloodicon(i(220678)),	-- Blood Corrupted Pants
-						bloodicon(i(220677)),	-- Blood Corrupted Boots
-						ritualicon(i(220779)),	-- Coagulated Bloodguard Tunic
-						ritualicon(i(220778)),	-- Coagulated Bloodguard Pants
-						ritualicon(i(220780)),	-- Coagulated Bloodguard Boots
-						bloodicon(i(220665)),	-- Corrupted Spiritweaver's Breastplate
-						bloodicon(i(220663)),	-- Corrupted Spiritweaver's Leggings
-						bloodicon(i(220664)),	-- Corrupted Spiritweaver's Sabatons
-						bloodicon(i(220666)),	-- Dread Hunter's Chainmail
-						bloodicon(i(220667)),	-- Dread Hunter's Chausses
-						bloodicon(i(220668)),	-- Dread Hunter's Greaves
-						ritualicon(i(220669)),	-- Exiled Prophet's Jerkin
-						ritualicon(i(220671)),	-- Exiled Prophet's Leather Pants
-						ritualicon(i(220670)),	-- Exiled Prophet's Slippers
-						ritualicon(i(220672)),	-- Lost Worshipper's Harness
-						ritualicon(i(220673)),	-- Lost Worshipper's Leggings
-						ritualicon(i(220675)),	-- Lost Worshipper's Treads
-						ritualicon(i(220680)),	-- Malevolent Prophet's Vest
-						ritualicon(i(220679)),	-- Malevolent Prophet's Leggings
-						ritualicon(i(220681)),	-- Malevolent Prophet's Sandals
-						ritualicon(i(220783)),	-- Nightmare Prophet's Vestments
-						ritualicon(i(220781)),	-- Nightmare Prophet's Leggings
-						ritualicon(i(220784)),	-- Nightmare Prophet's Sandals
-						bloodicon(i(220650)),	-- Obsessed Prophet's Chestplate
-						bloodicon(i(220651)),	-- Obsessed Prophet's Legguards
-						bloodicon(i(220652)),	-- Obsessed Prophet's Ornate Boots
-						bloodicon(i(220657)),	-- Ostracized Berserker's Hauberk
-						bloodicon(i(220658)),	-- Ostracized Berserker's Legplates
-						bloodicon(i(220659)),	-- Ostracized Berserker's Chain Greaves
-						bloodicon(i(220660)),	-- Shunned Devotee's Chainshirt
-						bloodicon(i(220661)),	-- Shunned Devotee's Legguards
-						bloodicon(i(220662)),	-- Shunned Devotee's Scale Boots
-						bloodicon(i(220653)),	-- Wailing Berserker's Chestplate
-						bloodicon(i(220654)),	-- Wailing Berserker's Legplates
-						bloodicon(i(220656)),	-- Wailing Berserker's Battleboots
-					},
-				})),
-				-- #endif
 				n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.0, 70.8, THE_CAPE_OF_STRANGLETHORN },
-						-- #else
-						{ 28.3, 75.5, MAP.STRANGLETHORN_VALE },
-						-- #endif
-					},
+					["coord"] = { 28.3, 75.5, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
 						i(12251, {	-- Big Stick
 							["isLimited"] = true,
 						}),
 						i(12163, {	-- Plans: Moonsteel Broadsword (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-							["timeline"] = { REMOVED_1_15_1 },
-							-- #endif
 							["isLimited"] = true,
 						}),
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_TWO, i(217282, {	-- Plans: Moonsteel Broadsword (RECIPE!)
-							["timeline"] = { ADDED_1_15_1 },
-							["isLimited"] = true,
-						})),
-						-- #endif
 						i(12252, {	-- Staff of Protection
 							["isLimited"] = true,
 						}),
@@ -3580,27 +2647,21 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(1998, {	-- Bloodscalp Channeling Staff
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 697,	-- Bloodscalp Shaman
 				}),
 				i(5079, {	-- Cold Basilisk Eye
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 690,	-- Cold Eye Basilisk
 				}),
 				i(1703, {	-- Crystal Basilisk Spine
-					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 689,	-- Crystal Spine Basilisk
 				}),
 				i(1677, {	-- Drake-scale Vest
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 680,	-- Mosh'Ogg Lord
 				}),
 				i(1659, {	-- Engineering Gloves
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 677,	-- Venture Co. Tinkerer
 				}),
 				i(2955, {	-- First Mate Hat
-					-- #if BEFORE CATA
 					["crs"] = {
 						2545,	-- "Pretty Boy" Duncan
 						4505,	-- Bloodsail Deckhand
@@ -3610,37 +2671,25 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						1563,	-- Bloodsail Swashbuckler
 						1564,	-- Bloodsail Warlock
 					},
-					-- #else
-					["description"] = "This item has a chance to drop from any killed creature in the zone.",
-					-- #endif
 				}),
 				i(11203, {	-- Formula: Enchant Gloves - Advanced Mining (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 674,	-- Venture Co. Strip Miner
 				}),
 				i(1991, {	-- Goblin Power Shovel
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["crs"] = {
 						1094,	-- Venture Co. Miner
-						-- #if AFTER 7.3.5
-						674,	-- Venture Co. Strip Miner
-						-- #endif
 					},
 				}),
 				i(2799),	-- Gorilla Fang
 				i(1986, {	-- Gutrender
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 709,	-- Mosh'Ogg Warmonger
 				}),
 				i(1522, {	-- Headhunting Spear
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 671,	-- Bloodscalp Headhunter
 				}),
 				i(1523, {	-- Huge Stone Club
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 597,	-- Bloodscalp Berserker
 				}),
-				-- #if BEFORE CATA
 				i(2633, {	-- Jungle Remedy
 					["crs"] = {
 						941,	-- Kurzen Headshrinker
@@ -3648,23 +2697,18 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						940,	-- Kurzen Medicine Man
 					},
 				}),
-				-- #endif
 				i(1679, {	-- Korg Bat
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 1142,	-- Mosh'Ogg Brute
 				}),
 				i(3985, {	-- Monogrammed Sash
 					["coord"] = { 23.0, 71.4, MAP.STRANGLETHORN_VALE },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 1493,	-- Mok'rash
 					["lvl"] = 35,
 				}),
 				i(5755, {	-- Onyx Shredder Plate
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 4260,	-- Venture Co. Shredder
 				}),
 				i(8494, {	-- Hyacinth Macaw (PET!)
-					-- #if BEFORE CATA
 					["crs"] = {
 						4505,	-- Bloodsail Deckhand
 						1653,	-- Bloodsail Elder Magus
@@ -3673,58 +2717,36 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						1564,	-- Bloodsail Warlock
 						2546,	-- Fleet Master Firallon
 					},
-					-- #else
-					["description"] = "This item has a chance to drop from any killed creature in the zone.",
-					-- #endif
 					["timeline"] = { ADDED_1_11_1 },
 				}),
 				i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					["cr"] = 1561,	-- Bloodsail Raider
 				}),
-				-- #if BEFORE CATA
 				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 938,	-- Kurzen Commando
 				}),
-				-- #endif
 				i(1997, {	-- Pressed Felt Robe
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 701,	-- Bloodscalp Mystic
 				}),
-				-- #if BEFORE 4.0.3
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
-				-- #endif
 				i(1624, {	-- Skullsplitter Helm
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["crs"] = {
 						783,	-- Skullsplitter Berserker
 						781,	-- Skullsplitter Headhunter
 					},
 				}),
 				i(1664, {	-- Spellforce Rod
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 676,	-- Venture Co. Surveyor
 				}),
 				i(1652, {	-- Sturdy Lunchbox
-					-- #if AFTER 10.1.7
-					["coords"] = {
-						{ 55.6, 35.6, NORTHERN_STRANGLETHORN },
-						{ 55.4, 34.4, NORTHERN_STRANGLETHORN },
-					},
-					-- #endif
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if AFTER 10.1.7
-						921,	-- Venture Co. Lumberjack
-						-- #else
 						675,	-- Venture Co. Foreman
 						14492,	-- Verifonix <The Surveyor>
-						-- #endif
 					},
 				}),
 				i(1996, {	-- Voodoo Band
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 660,	-- Bloodscalp Witch Doctor
 				}),
 				i(8153, {	-- Wildvine
@@ -3746,4 +2768,3 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["
 		}),
 	}),
 })));
--- #endif

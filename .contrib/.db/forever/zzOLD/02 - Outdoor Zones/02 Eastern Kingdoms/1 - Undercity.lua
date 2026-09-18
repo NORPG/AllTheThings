@@ -11,68 +11,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				applyclassicphase(CATA_PHASE_ONE, ach(5850, {	-- Fish or Cut Bait: Undercity
-					["timeline"] = { ADDED_4_2_0 },
-					["requireSkill"] = FISHING,
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(17764, {	-- Fish Head
-							["_quests"] = { 29317 },
-						}),
-						crit(17765, {	-- Tadpole Terror
-							["_quests"] = { 29319 },
-						}),
-						crit(17766, {	-- Like Pike?
-							["_quests"] = { 29320 },
-						}),
-						crit(17767, {	-- Time for Slime
-							["_quests"] = { 29322 },
-						}),
-						crit(17768, {	-- Moat Monster!
-							["_quests"] = { 29361 },
-						}),
-					},
-				})),
-				applyclassicphase(CATA_PHASE_ONE, ach(5844, {	-- Let's Do Lunch: Undercity
-					["timeline"] = { ADDED_4_2_0 },
-					["requireSkill"] = COOKING,
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(17738, {	-- Fungus Among Us
-							["_quests"] = { 29315 },
-						}),
-						crit(17739, {	-- Lily, Oh Lily
-							["_quests"] = { 29332 },
-						}),
-						crit(17740, {	-- Escargot A Go-Go
-							["_quests"] = { 29333 },
-						}),
-						crit(17741, {	-- Roach Coach
-							["_quests"] = { 29334 },
-						}),
-						crit(17742, {	-- Would You Like Some Flies With That?
-							["_quests"] = { 29360 },
-						}),
-					},
-				})),
-			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					450,	-- Maggot (PET!)
-					424,	-- Roach (PET!)
-				}},
-				["groups"] = {
-					pet(454),	-- Undercity Rat (PET!)
-				},
-			}),
 			n(FACTIONS, {
 				faction(FACTION_UNDERCITY, {	-- Undercity
-					-- #if AFTER CATA
-					["provider"] = { "i", 45583 },	-- Undercity Tabard
-					-- #else
 					["icon"] = 236458,
-					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = HORDE_ONLY,
 				}),
@@ -81,9 +22,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				fp(11, {	-- Undercity, Tirisfal
 					["cr"] = 4551,	-- Michael Garrett <Bat Handler>
 					["coord"] = { 63.6, 48.6, MAP.UNDERCITY },
-					-- #if AFTER BFA
-					["description"] = "Can be picked up only during Chromie time.",
-					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
 			}),

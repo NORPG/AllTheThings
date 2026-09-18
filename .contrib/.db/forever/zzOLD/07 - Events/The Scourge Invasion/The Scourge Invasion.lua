@@ -1,8 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-
-THE_SCOURGE_INVASION = createHeader({
+root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(createHeader({
 	readable = "The Scourge Invasion",
 	icon = 135228,
 	text = {
@@ -22,52 +21,8 @@ THE_SCOURGE_INVASION = createHeader({
 		en = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 		cn = "天灾入侵是1.11补丁中的一项世界事件，并在巫妖王之怒前置补丁3.0.1中再度开启，预示着令人闻风丧胆的克尔苏加德的要塞 ——纳克萨玛斯即将开放。\n\n艾泽拉斯的多个地区遭到了天灾军团部队的袭击。银色黎明的成员组织了一场对抗天灾入侵的全球反击，他们密切监视着任何浮空死灵城堡的动向，并将情报分享给所有愿意投身这场战斗的冒险者。\n\n每一次对天灾军团的胜利，都会让防线愈发坚固。随着越来越多的入侵企图被守军击退，银色黎明将为抗击入侵者的勇士们赋予越来越强大的祝福。\n\n如果凡人们齐心协力，清除散落在世界各地、每一座浮空死灵城堡下方出现的天灾营地，这场入侵或许就能被有效遏制，甚至彻底击退。\n\n凡有意拿起武器对抗亡灵入侵者的勇士，可与银色黎明的代表交谈，了解哪些地区需要支援，以及防线当前的状况。",
 	},
-});
-
--- Note: This is up here to prevent the unobtainable flag from getting put on the Major Healing and Mana Potions (for now)
-local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
-local MAJOR_MANA_POTION = i(13444);	-- Major Mana Potion
-local REMOVED_WITH_NAXX_RELEASE = REMOVED_2_0_1;
-local ADDED_WITH_WRATH_PREPATCH = ADDED_3_0_2;
-local REMOVED_WITH_NAXX_RELEASE_OR_SOD = REMOVED_WITH_NAXX_RELEASE;
--- #if ANYCLASSIC
-local REMOVED_AFTER_WRATH_PREPATCH = REMOVED_3_0_3;
-local BUBBLE_DOWN_FILTER = function(t)
-	-- Do not apply the bubble down data to things removed with the first invasion.
-	local timeline = t.timeline;
-	if timeline then
-		local phase = timeline[#timeline];
-		if phase == REMOVED_WITH_NAXX_RELEASE or phase == REMOVED_WITH_NAXX_RELEASE_OR_SOD then
-			return false;
-		end
-	end
-	return not t.u or t.u ~= PHASE_SIX_SCOURGE_INVASION;
-end;
--- So the idea here is that for Classic Wrath it would dynamically set the RWP down to 3.0.1 and mark everything removed from game if you have Wrath Phase 2 activated.
-local SCOURGE_INVASION_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_ONE .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. TBC_PHASE_FIVE_SCOURGE_INVASION .. [[;
-		t.rwp = 30001;
-	end
-end]];
--- #else
-local REMOVED_AFTER_WRATH_PREPATCH = REMOVED_3_0_2;
-local BUBBLE_DOWN_FILTER = function(t) return true; end;
--- #endif
-
-local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
-	["timeline"] = { REMOVED_AFTER_WRATH_PREPATCH },
-	-- #if ANYCLASSIC
-	-- #if BEFORE WRATH
-	-- #if AFTER TBC
-	["OnUpdate"] = SCOURGE_INVASION_ONUPDATE,
-	-- #endif
-	-- #endif
-	-- #endif
-}, BUBBLE_DOWN_FILTER, {
+}), {
+	["timeline"] = { REMOVED_2_0_1 },
 	["maps"] = {
 		MAP.AZSHARA,
 		MAP.BLASTED_LANDS,
@@ -75,54 +30,10 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 		MAP.EASTERN_PLAGUELANDS,
 		MAP.TANARIS,
 		MAP.WINTERSPRING,
-		-- #if AFTER TBC
-		SHATTRATH_CITY,
-		-- #endif
 	},
 	["groups"] = {
-		n(ACHIEVEMENTS, {
-			ach(2116, {	-- Tabard of the Argent Dawn
-				["provider"] = { "i", 22999 },	-- Tabard of the Argent Dawn
-				-- #if BEFORE WRATH
-				["timeline"] = { REMOVED_3_0_2 },
-				-- #endif
-			}),
-		}),
 		n(QUESTS, {
-			-- TODO: Find quest giver information for A Desperate Alliance / Desperate Research, all I have resource-wise is "Commoners in Major Cities".
-			q(12753, {	-- A Desperate Alliance [Dwarf]
-				["qg"] = 20102,	-- Goblin Commoner
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["races"] = { DWARF },
-				["lvl"] = 65,
-			}),
-			q(12772, {	-- A Desperate Alliance [Night Elf]
-				["qg"] = 19173,	-- Night Elf Commoner
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.DARNASSUS },
-				["races"] = { NIGHTELF },
-				["lvl"] = 65,
-			}),
-			q(12775, {	-- A Desperate Alliance [Human]
-				["qg"] = 18927,	-- Human Commoner
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["lvl"] = 65,
-			}),
-			q(12777, {	-- A Desperate Alliance [Draenei]
-				["qg"] = 18927,	-- Human Commoner
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.STORMWIND_CITY },
-				["races"] = { DRAENEI },
-				["lvl"] = 65,
-			}),
-			q(12808, {	-- A Desperate Alliance [Gnome]
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["races"] = { GNOME },
-				["lvl"] = 65,
-			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Argent Dawn Gloves
+			{	-- Argent Dawn Gloves
 				["allianceQuestData"] = q(9094, {	-- Argent Dawn Gloves [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
@@ -141,49 +52,18 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] =
-					-- #if SEASON_OF_DISCOVERY
-					88744,	-- Under the Shadow
-					-- #else
-					9153,	-- Under the Shadow
-					-- #endif
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
+				["sourceQuest"] = 9153,	-- Under the Shadow
 				["cost"] = { { "i", 22484, 30 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
-					-- #IF SEASON_OF_DISCOVERY
-					i(236713),	-- Handwraps of Undead Slaying
-					i(236714),	-- Gauntlets of Undead Slaying
-					i(236715),	-- Handguards of Undead Slaying
-					i(236717),	-- Gloves of Undead Cleansing
-					i(236726),	-- Handwraps of Undead Cleansing
-					i(236735),	-- Handguards of Undead Cleansing
-					i(236720),	-- Gloves of Undead Purification
-					i(236729),	-- Handwraps of Undead Purification
-					i(236741),	-- Handguards of Undead Purificatio
-					i(236744),	-- Gauntlets of Undead Purification
-					i(236723),	-- Gloves of Undead Warding
-					i(236732),	-- Handwraps of Undead Warding
-					i(236738),	-- Handguards of Undead Warding
-					i(236747),	-- Gauntlets of Undead Warding
-					-- #ELSE
-					i(23084, {	-- Gloves of Undead Cleansing
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-					}),
-					i(23081, {	-- Handwraps of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-					}),
-					i(23082, {	-- Handguards of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-					}),
-					i(23078, {	-- Gauntlets of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-					}),
-					-- #ENDIF
+					i(23084),	-- Gloves of Undead Cleansing
+					i(23081),	-- Handwraps of Undead Slaying
+					i(23082),	-- Handguards of Undead Slaying
+					i(23078),	-- Gauntlets of Undead Slaying
 				},
-			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Blessed Wizard Oil
+			},
+			{	-- Blessed Wizard Oil
 				["allianceQuestData"] = q(9318, {	-- Blessed Wizard Oil [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
@@ -202,67 +82,15 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] =
-					-- #if SEASON_OF_DISCOVERY
-					88744,	-- Under the Shadow
-					-- #else
-					9153,	-- Under the Shadow
-					-- #endif
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
+				["sourceQuest"] = 9153,	-- Under the Shadow
 				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
 					i(23123),	-- Blessed Wizard Oil
 				},
-			}),
-			q(12616, {	-- Chamber of Secrets
-				["qg"] = 16285,	-- Argent Emissary <The Argent Dawn>
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { KARAZHAN },
-				["lvl"] = 70,
-				["groups"] = {
-					i(40354, {	-- Monster Slayer's Kit
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-				},
-			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Consecrated Sharpening Stones
-				["allianceQuestData"] = q(88746, {	-- Consecrated Sharpening Stones [A]
-					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
-					["coords"] = {
-						{ 54.7, 62.2, MAP.STORMWIND_CITY },
-						{ 34.0, 66.4, MAP.IRONFORGE },
-						{ 64.3, 44.5, MAP.DARNASSUS },
-						{ 81.0, 59.8, MAP.EASTERN_PLAGUELANDS },
-					},
-				}),
-				["hordeQuestData"] = q(88747, {	-- Consecrated Sharpening Stones [H]
-					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
-					["coords"] = {
-						{ 43.7, 52.6, MAP.THUNDER_BLUFF },
-						{ 52.5, 73.7, MAP.ORGRIMMAR },
-						{ 49.9, 29.4, MAP.UNDERCITY },
-						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
-					},
-				}),
-				["sourceQuest"] =
-					-- #if SEASON_OF_DISCOVERY
-					88744,	-- Under the Shadow
-					-- #else
-					9153,	-- Under the Shadow
-					-- #endif
-				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
-				["repeatable"] = true,
-				["lvl"] = 50,
-				["groups"] = {
-					i(238241),	-- Consecrated Sharpening Stone
-					i(237810),	-- Weighted Consecrated Sharpening Stone
-				},
-			}),
-			-- #else
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Consecrated Sharpening Stones
+			},
+			{	-- Consecrated Sharpening Stones
 				["allianceQuestData"] = q(9317, {	-- Consecrated Sharpening Stones [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
@@ -281,39 +109,14 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] =
-					-- #if SEASON_OF_DISCOVERY
-					88744,	-- Under the Shadow
-					-- #else
-					9153,	-- Under the Shadow
-					-- #endif
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
+				["sourceQuest"] = 9153,	-- Under the Shadow
 				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
 					i(23122),	-- Consecrated Sharpening Stone
 				},
-			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			q(88748, {	-- Cracked Necrotic Crystal
-				["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
-				["providers"] = {
-					{ "n", 16431 },	-- Cracked Necrotic Crystal
-					{ "i", 22949 },	-- Cracked Necrotic Crystal
-				},
-				["maps"] = { MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["isYearly"] = true,
-				["lvl"] = 1,
-				["groups"] = {
-					i(238234),	-- Blessed Wizard Oil
-					i(238241),	-- Consecrated Sharpening Stone
-					i(237810),	-- Weighted Consecrated Sharpening Stone
-				},
-			}),
-			-- #else
+			},
 			q(9292, {	-- Cracked Necrotic Crystal
 				["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 				["providers"] = {
@@ -329,43 +132,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
-			-- #endif
-			q(12773, {	-- Darnassus
-				["sourceQuest"] = 12753,	-- A Desperate Alliance
-				["providers"] = {
-					{ "n", 29087 },	-- Bishop Lazaril
-					{ "i", 39698 },	-- Light-Infused Artifact
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.DARNASSUS },
-				["races"] = { NIGHTELF },
-				["lvl"] = 65,
-			}),
-			q(12783, {	-- Desperate Research [Troll]
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["races"] = { TROLL },
-				["lvl"] = 65,
-			}),
-			q(12752, {	-- Desperate Research [Undead]
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["races"] = { UNDEAD },
-				["lvl"] = 65,
-			}),
-			q(12782, {	-- Desperate Research [Blood Elf]
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["races"] = { BLOODELF },
-				["lvl"] = 65,
-			}),
-			q(12784, {	-- Desperate Research [Tauren]
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["races"] = { TAUREN },
-				["lvl"] = 65,
-			}),
-			q(12811, {	-- Desperate Research [Orc]
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["races"] = { ORC },
-				["lvl"] = 65,
-			}),
 			q(9304, {	-- Document from the Front
 				["providers"] = {
 					{ "i", 22975 },	-- A Smudged Document
@@ -380,24 +146,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				},
 				["lvl"] = 45,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			q(88749, {	-- Faint Necrotic Crystal
-				["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
-				["providers"] = {
-					{ "n", 16531 },	-- Faint Necrotic Crystal
-					{ "i", 22950 },	-- Faint Necrotic Crystal
-				},
-				["maps"] = { MAP.TIRISFAL_GLADES, MAP.UNDERCITY },
-				["races"] = HORDE_ONLY,
-				["isYearly"] = true,
-				["lvl"] = 1,
-				["groups"] = {
-					i(238234),	-- Blessed Wizard Oil
-					i(238241),	-- Consecrated Sharpening Stone
-					i(237810),	-- Weighted Consecrated Sharpening Stone
-				},
-			}),
-			-- #else
 			q(9310, {	-- Faint Necrotic Crystal
 				["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 				["providers"] = {
@@ -413,7 +161,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
-			-- #endif
 			q(9262, {	-- Investigate the Scourge of Darnassus
 				["qg"] = 16495,	-- Lieutenant Beitha <The Argent Dawn>
 				["coord"] = { 77.7, 42.7, MAP.DARNASSUS },
@@ -528,28 +275,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					}),
 				},
 			}),
-			q(12771, {	-- Ironforge (Dwarf)
-				["sourceQuest"] = 12753,	-- A Desperate Alliance
-				["providers"] = {
-					{ "n", 29087 },	-- Bishop Lazaril
-					{ "i", 39698 },	-- Light-Infused Artifact
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.IRONFORGE },
-				["races"] = { DWARF },
-				["lvl"] = 65,
-			}),
-			q(12809, {	-- Ironforge (Gnome)
-				["sourceQuest"] = 12808,	-- A Desperate Alliance
-				["providers"] = {
-					{ "n", 29087 },	-- Bishop Lazaril
-					{ "i", 39698 },	-- Light-Infused Artifact
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.IRONFORGE },
-				["races"] = { GNOME },
-				["lvl"] = 65,
-			}),
 			q(9295, {	-- Letter from the Front
 				["providers"] = {
 					{ "i", 22977 },	-- A Torn Letter
@@ -580,7 +305,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["isYearly"] = true,
 				["lvl"] = 50,
 			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Major Healing Potion
+			{	-- Major Healing Potion
 				["allianceQuestData"] = q(9321, {	-- Major Healing Potion [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
@@ -605,15 +330,14 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					-- #else
 					9153,	-- Under the Shadow
 					-- #endif
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
-					MAJOR_HEALING_POTION,	-- Major Healing Potion
+					i(13446),	-- Major Healing Potion
 				},
-			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Major Mana Potion
+			},
+			{	-- Major Mana Potion
 				["allianceQuestData"] = q(9337, {	-- Major Mana Potion [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
@@ -638,14 +362,13 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					-- #else
 					9153,	-- Under the Shadow
 					-- #endif
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
-					MAJOR_MANA_POTION,	-- Major Mana Potion
+					i(13444),	-- Major Mana Potion
 				},
-			}),
+			},
 			q(9302, {	-- Missive from the Front
 				["providers"] = {
 					{ "i", 22973 },	-- A Crumpled Missive
@@ -659,28 +382,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 22945 },	-- A Careworn Note
 				},
 				["lvl"] = 45,
-			}),
-			q(12785, {	-- Orgrimmar (Troll)
-				["sourceQuest"] = 12783,	-- Desperate Research
-				["providers"] = {
-					{ "n", 28318 },	-- Grand Apothecary Putress
-					{ "i", 40482 },	-- Dual-Plagued Brain
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.ORGRIMMAR },
-				["races"] = { TROLL },
-				["lvl"] = 65,
-			}),
-			q(12812, {	-- Orgrimmar (Orc)
-				["sourceQuest"] = 12811,	-- Desperate Research
-				["providers"] = {
-					{ "n", 28318 },	-- Grand Apothecary Putress
-					{ "i", 40482 },	-- Dual-Plagued Brain
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.ORGRIMMAR },
-				["races"] = { ORC },
-				["lvl"] = 65,
 			}),
 			q(9300, {	-- Page from the Front
 				["providers"] = {
@@ -702,29 +403,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
-			q(12788, {	-- Silvermoon
-				["sourceQuest"] = 12782,	-- Desperate Research
-				["providers"] = {
-					{ "n", 28318 },	-- Grand Apothecary Putress
-					{ "i", 40482 },	-- Dual-Plagued Brain
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { SILVERMOON_CITY },
-				["races"] = { BLOODELF },
-				["lvl"] = 65,
-			}),
-			q(12774, {	-- Stormwind
-				["sourceQuest"] = 12775,	-- A Desperate Alliance
-				["providers"] = {
-					{ "n", 29087 },	-- Bishop Lazaril
-					{ "i", 39698 },	-- Light-Infused Artifact
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["lvl"] = 65,
-			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Tabard of the Argent Dawn
+			{	-- Tabard of the Argent Dawn
 				["allianceQuestData"] = q(9341, {	-- Tabard of the Argent Dawn [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
@@ -749,25 +428,13 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					-- #else
 					9153,	-- Under the Shadow
 					-- #endif
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 10 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
 					i(22999),	-- Tabard of the Argent Dawn
 				},
-			}),
-			q(12776, {	-- The Exodar
-				["sourceQuest"] = 12777,	-- A Desperate Alliance
-				["providers"] = {
-					{ "n", 29087 },	-- Bishop Lazaril
-					{ "i", 39698 },	-- Light-Infused Artifact
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { THE_EXODAR },
-				["races"] = { DRAENEI },
-				["lvl"] = 65,
-			}),
+			},
 			q(9247, {	-- The Keeper's Call
 				["description"] = "You should receive this in the mail at level 60.",
 				["providers"] = {
@@ -782,42 +449,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
-			q(12787, {	-- The Undercity
-				["sourceQuest"] = 12752,	-- Desperate Research
-				["providers"] = {
-					{ "n", 28318 },	-- Grand Apothecary Putress
-					{ "i", 40482 },	-- Dual-Plagued Brain
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.UNDERCITY },
-				["races"] = { UNDEAD },
-				["lvl"] = 65,
-			}),
-			q(12786, {	-- Thunder Bluff
-				["sourceQuest"] = 12784,	-- Desperate Research
-				["providers"] = {
-					{ "n", 28318 },	-- Grand Apothecary Putress
-					{ "i", 40482 },	-- Dual-Plagued Brain
-				},
-				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { MAP.THUNDER_BLUFF },
-				["races"] = { TAUREN },
-				["lvl"] = 65,
-			}),
-			-- #if SEASON_OF_DISCOVERY
-			q(88744, {	-- Under the Shadow
-				["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
-				["coord"] = { 81.1, 60.6, MAP.EASTERN_PLAGUELANDS },
-				["cost"] = { { "i", 22484, 10 } },	-- Necrotic Rune
-				["isYearly"] = true,
-				["lvl"] = 50,
-				["groups"] = {
-					i(238234),	-- Blessed Wizard Oil
-					i(238241),	-- Consecrated Sharpening Stone
-					i(237810),	-- Weighted Consecrated Sharpening Stone
-				},
-			}),
-			-- #else
 			q(9153, {	-- Under the Shadow
 				["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
 				["coord"] = { 81.1, 60.6, MAP.EASTERN_PLAGUELANDS },
@@ -829,92 +460,57 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
-			-- #endif
 		}),
 		n(14684, {	-- Balzaphon
 			["description"] = "Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",
 			["maps"] = { MAP.STRATHOLME },
 			["groups"] = {
-				-- #if SEASON_OF_DISCOVERY
-				i(238355),	-- Chains of the Lich
-				i(238356),	-- Waistband of Balzaphon
-				i(238357),	-- Staff of Balzaphon
-				-- #ELSE
 				i(23124),	-- Staff of Balzaphon
 				i(23125),	-- Chains of the Lich
 				i(23126),	-- Waistband of Balzaphon
-				-- #endif
 			},
 		}),
 		n(14686, {	-- Lady Falther'ess
 			["description"] = "Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",
 			["maps"] = { MAP.RAZORFEN_DOWNS },
 			["groups"] = {
-				-- #if SEASON_OF_DISCOVERY
-				i(238353),	-- Mantle of Lady Falther'ess
-				i(238354),	-- Lady Falther'ess' Finger
-				-- #else
 				i(23177),	-- Lady Falther'ess' Finger
 				i(23178),	-- Mantle of Lady Falther'ess
-				-- #endif
 			},
 		}),
 		n(14695, {	-- Lord Blackwood
 			["description"] = "Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",
 			["maps"] = { MAP.SCHOLOMANCE },
 			["groups"] = {
-				-- #if SEASON_OF_DISCOVERY
-				i(238358),	-- Blackwood's Thigh
-				i(238360),	-- Lord Blackwood's Buckler
-				i(238361),	-- Lord Blackwood's Blade
-				-- #ELSE
 				i(23156),	-- Blackwood's Thigh
 				i(23132),	-- Lord Blackwood's Blade
 				i(23139),	-- Lord Blackwood's Buckler
-				-- #endif
 			},
 		}),
 		n(14690, {	-- Revanchion
 			["description"] = "Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",
 			["maps"] = { MAP.DIRE_MAUL },
 			["groups"] = {
-				-- #if SEASON_OF_DISCOVERY
-				i(238362),	-- Bracers of Mending
-				i(238363),	-- The Shadow's Grasp
-				i(238364),	-- Cloak of Revanchion
-				-- #ELSE
 				i(23127),	-- Cloak of Revanchion
 				i(23129),	-- Bracers of Mending
 				i(23128),	-- The Shadow's Grasp
-				-- #endif
 			},
 		}),
 		n(14693, {	-- Scorn
 			["description"] = "Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",
 			["maps"] = { MAP.SCARLET_MONASTERY },
 			["groups"] = {
-				-- #if SEASON_OF_DISCOVERY
-				i(238350),	-- Scorn's Focal Dagger
-				i(238351),	-- The Frozen Clutch
-				i(238352),	-- Scorn's Icy Choker
-				-- #ELSE
 				i(23168),	-- Scorn's Focal Dagger
 				i(23169),	-- Scorn's Icy Choker
 				i(23170),	-- The Frozen Clutch
-				-- #endif
 			},
 		}),
 		n(14682, {	-- Sever
 			["description"] = "Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
 			["maps"] = { MAP.SHADOWFANG_KEEP },
 			["groups"] = {
-				-- #if SEASON_OF_DISCOVERY
-				i(238348),	-- The Axe of Severing
-				i(238349),	-- Abomination Skin Leggings
-				-- #ELSE
 				i(23171),	-- The Axe of Severing
 				i(23173),	-- Abomination Skin Leggings
-				-- #endif
 			},
 		}),
 		n(16143, {	-- Shadow of Doom
@@ -922,155 +518,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 			["groups"] = {
 				i(22484),	-- Necrotic Rune
-				i(43069, {	-- Blessed Breastplate of Undead Slaying
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				i(43080, {	-- Blessed Hauberk of Undead Slaying
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				i(43072, {	-- Blessed Robe of Undead Cleansing
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				i(43076, {	-- Blessed Tunic of Undead Slaying
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				-- #IF SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236750)),	-- Heart of Doom
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236708)),	-- Breastplate of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236709)),	-- Chestguard of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236718)),	-- Robe of Undead Cleansing
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236736)),	-- Chestguard of Undead Cleansing
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236707)),	-- Tunic of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236727)),	-- Tunic of Undead Cleansing
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236721)),	-- Robe of Undead Purification
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236730)),	-- Tunic of Undead Purification
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236742)),	-- Chestguard of Undead Purification
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236745)),	-- Breastplate of Undead Purification
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236724)),	-- Robe of Undead Warding
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236733)),	-- Tunic of Undead Warding
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236739)),	-- Chestguard of Undead Warding
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236748)),	-- Breastplate of Undead Warding
-				-- #ELSE
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23087, {	-- Breastplate of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-				})),
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23088, {	-- Chestguard of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-				})),
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23085, {	-- Robe of Undead Cleansing
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-				})),
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23089, {	-- Tunic of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-				})),
-				-- #ENDIF
+				i(23087),	-- Breastplate of Undead Slaying
+				i(23088),	-- Chestguard of Undead Slaying
+				i(23085),	-- Robe of Undead Cleansing
+				i(23089),	-- Tunic of Undead Slaying
 			},
 		}),
-		n(28194, {	-- Prince Tenris Mirkblood
-			["description"] = "Located in Karazhan.\n\nCan be found in the Guardhouse, behind a Bloodstained Door above the stables where Attumen resides, which can be accessed through the stairs after Attumen, or through the ballroom where Moroes resides.",
-			["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-			["maps"] = { KARAZHAN },
-			["groups"] = {
-				ach(2456, {	-- Vampire Hunter
-					["provider"] = { "i", 38658 },	-- Vampiric Batling Pet
-					-- #if BEFORE WRATH
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_3_0_2 },
-					-- #else
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					-- #endif
-				}),
-				i(38658, {	-- Vampiric Batling (PET!)
-					-- #if ANYCLASSIC
-					["description"] = "Drops for everyone in the raid. Get one on all of your alts!",
-					-- #endif
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				i(39769, {	-- Arcanite Ripper
-					-- #if ANYCLASSIC
-					["description"] = "Only ONE of these drops per raid. Help your friends get one on their account by bringing your alts! Highly recommend 6-8 manning the boss for this item and hard reserving it for one person per raid group.",
-					-- #endif
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-			},
-		}),
-		-- #if AFTER WRATH
-		n(VENDORS, {
-			n(16786, {	-- Argent Quartermaster <The Argent Dawn>
-				["coords"] = {
-					{ 54.7, 62.2, MAP.STORMWIND_CITY },
-					{ 34.0, 66.4, MAP.IRONFORGE },
-					{ 43.7, 52.6, MAP.THUNDER_BLUFF },
-					{ 52.5, 73.7, MAP.ORGRIMMAR },
-					{ 49.9, 29.4, MAP.UNDERCITY },
-					{ 64.3, 44.5, MAP.DARNASSUS },
-					{ 80.9, 59.6, MAP.EASTERN_PLAGUELANDS },
-				},
-				["groups"] = {
-					i(22999, {	-- Tabard of the Argent Dawn
-						["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
-					}),
-					i(43074, {	-- Blessed Mantle of Undead Cleansing
-						["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(43073, {	-- Blessed Gloves of Undead Cleansing
-						["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(43077, {	-- Blessed Shoulderpads of Undead Slaying
-						["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(43078, {	-- Blessed Grips of Undead Slaying
-						["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(43081, {	-- Blessed Pauldrons of Undead Slaying
-						["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(43082, {	-- Blessed Handguards of Undead Slaying
-						["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(43068, {	-- Blessed Spaulders of Undead Slaying
-						["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(43070, {	-- Blessed Gauntlets of Undead Slaying
-						["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(40601, {	-- Argent Dawn Banner
-						["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(40593, {	-- Argent Tome
-						["cost"] = { { "i", 22484, 30 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(40492, {	-- Argent War Horn
-						["cost"] = { { "i", 22484, 40 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(23123, {	-- Blessed Wizard Oil
-						["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
-					}),
-					i(23122, {	-- Consecrated Sharpening Stone
-						["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
-					}),
-					i(43531, {	-- Argent Healing Potion
-						["cost"] = { { "i", 22484, 20 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-					i(43530, {	-- Argent Mana Potion
-						["cost"] = { { "i", 22484, 20 } },	-- Necrotic Rune
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
-				},
-			}),
-		}),
-		-- #endif
 		n(ZONE_DROPS, {
 			["crs"] = {
 				16383,	-- Flameshocker
@@ -1086,10 +539,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				i(22974),	-- A Ragged Page
 				i(22975),	-- A Smudged Document
 				i(22977),	-- A Torn Letter
-				i(40110, {	-- Haunted Memento
-					["description"] = "This is probably one of the coolest items in the game. DO NOT GET RID OF IT.",
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
 			},
 		}),
 		n(RARES, {
@@ -1099,49 +548,10 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				16379,	-- Spirit of the Damned
 			},
 			["groups"] = {
-				i(43083, {	-- Blessed Greaves of Undead Slaying
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				i(43079, {	-- Blessed Leggings of Undead Slaying
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				i(43071, {	-- Blessed Legplates of Undead Slaying
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				i(43075, {	-- Blessed Trousers of Undead Cleansing
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				}),
-				-- #IF SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236716)),	-- Bracers of Undead Cleansing
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236725)),	-- Wristwraps of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236710)),	-- Wristguards of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236712)),	-- Bracers of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236740)),	-- Wristguards of Undead Purification
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236737)),	-- Wristguards of Undead Warding
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236743)),	-- Bracers of Undead Purification
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236746)),	-- Bracers of Undead Warding
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236734)),	-- Wristguards of Undead Cleansing
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236731)),	-- Wristwraps of Undead Warding
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236728)),	-- Wristwraps of Undead Purification
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236722)),	-- Bracers of Undead Warding
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236711)),	-- Wristwraps of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236719)),	-- Bracers of Undead Purification
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236710)),	-- Wristguards of Undead Slaying
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236712)),	-- Bracers of Undead Slaying
-				-- #ELSE
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23091, {	-- Bracers of Undead Cleansing
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				})),
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23093, {	-- Wristwraps of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				})),
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23092, {	-- Wristguards of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				})),
-				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23090, {	-- Bracers of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				})),
-				-- #ENDIF
+				i(23091),	-- Bracers of Undead Cleansing
+				i(23093),	-- Wristwraps of Undead Slaying
+				i(23092),	-- Wristguards of Undead Slaying
+				i(23090),	-- Bracers of Undead Slaying
 			},
 		}),
 		n(REWARDS, {
@@ -1177,18 +587,4 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 	},
-}));
--- #if AFTER TBC
-applyclassicphase(TBC_PHASE_FIVE_SCOURGE_INVASION, invasion);
--- #else
-applyclassicphase(PHASE_SIX_SCOURGE_INVASION, invasion);
--- #endif
-root(ROOTS.WorldEvents, invasion);
-
--- Wipe out the unobtainable states.
-MAJOR_HEALING_POTION.OnUpdate = nil;
-MAJOR_HEALING_POTION.timeline = nil;
-MAJOR_HEALING_POTION.u = nil;
-MAJOR_MANA_POTION.OnUpdate = nil;
-MAJOR_MANA_POTION.timeline = nil;
-MAJOR_MANA_POTION.u = nil;
+})));

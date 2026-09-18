@@ -937,27 +937,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					484,	-- Desert Spider (PET!)
-					431,	-- Rattlesnake (PET!)
-					511,	-- Sidewinder (PET!)
-				}},
-				["groups"] = {
-					pet(430),	-- Gold Beetle (PET!)
-					pet(491, {	-- Sand Kitten (PET!)
-						["description"] = "This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",
-					}),
-					pet(560, {	-- Sea Gull (PET!)
-						["description"] = "Most commonly found on beaches or near the ocean.",
-					}),
-					pet(494, {	-- Silithid Hatchling (PET!)
-						["description"] = "This wild pet can be found in The Gaping Chasm and The Noxious Lair in Tanaris. It only spawns during sandstorms.",
-					}),
-					pet(492),	-- Stinkbug (PET!)
-					pet(432),	-- Stripe-Tailed Scorpid (PET!)
-				},
-			}),
 			explorationHeader({
 				exploration(1939),	-- Abyssal Sands
 				visit_exploration(5062,{coord={55.3,59.8,MAP.TANARIS}}),	-- Bootlegger Outpost
@@ -996,30 +975,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			n(FACTIONS, {
 				faction(FACTION_GADGETZAN, {	-- Gadgetzan
 					["icon"] = 133784,
-					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForGadgetzhan,
-					-- #endif
 					["maps"] = {
-						-- #if AFTER CATA
-						NORTHERN_BARRENS,
-						-- #else
 						MAP.THE_BARRENS,
-						-- #endif
 					},
 				}),
 			}),
 			n(FLIGHT_PATHS, {
-				fp(539, {	-- Bootlegger Outpost, Tanaris
-					["cr"] = 41214,	-- Slick Dropdip <Flight Master>
-					["coord"] = { 55.9, 60.6, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
-				}),
-				fp(531, {	-- Dawnrise Expedition, Tanaris
-					["cr"] = 41215,	-- Raina Sunglide <Flight Master>
-					["coord"] = { 33.2, 77.2, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = HORDE_ONLY,
-				}),
 				fp(39, {	-- Gadgetzan, Tanaris
 					["cr"] = 7823,	-- Bera Stonehammer <Gryphon Master>
 					["coord"] = { 51.0, 29.2, MAP.TANARIS },
@@ -1030,14 +992,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 51.6, 26.6, MAP.TANARIS },
 					["races"] = HORDE_ONLY,
 				}),
-				fp(532, {	-- Gunstan's Dig, Tanaris
-					["cr"] = 40827,	-- Thurda <Flight Master>
-					["coord"] = { 40.1, 77.5, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 			}),
-			-- #if BEFORE CATA
 			lockpicking({
 				o(179496, {	-- Dented Footlocker
 					["coord"] = { 72.6, 45.4, MAP.TANARIS },
@@ -1045,7 +1000,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["learnedAt"] = 225,
 				}),
 			}),
-			-- #endif
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					n(8736, {	-- Buzzek Bracketswing <Engineering Trainer>
@@ -1895,16 +1849,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				heroscall(q(28507, {	-- Hero's Call: Tanaris!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 48. (TODO: Test max level between 48 and 55)
-					["lvl"] = { 44, 48 },
-					-- #endif
-				})),
 				q(25521, {	-- I'm With Scorpid
 					["qg"] = 40580,	-- Gus Rustflutter
 					["coord"] = { 42.5, 24.3, MAP.TANARIS },

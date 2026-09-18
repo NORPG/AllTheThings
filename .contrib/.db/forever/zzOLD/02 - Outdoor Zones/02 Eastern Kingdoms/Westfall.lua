@@ -35,20 +35,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					385,	-- Mouse (PET!)
-					386,	-- Prarie Dog (PET!)
-					387,	-- Snake (PET!)
-					419,	-- Small Frog (PET!)
-					379,	-- Squirrel (PET!)
-				}},
-				["groups"] = {
-					pet(646),	-- Chicken (PET!)
-					pet(388),	-- Shore Crab (PET!)
-					pet(389),	-- Tiny Harvester (PET!)
-				},
-			}),
 			explorationHeader({
 				exploration(219),	-- Alexston Farmstead
 				exploration(921),	-- Demont's Place
@@ -105,38 +91,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["learnedAt"] = 70,
 					["groups"] = {
 						i(7908),	-- Klaven Mortwake's Journal (QI!)
-					},
-				}),
-			}),
-			petbattles({
-				n(65648, {	-- Old MacDonald <Master Pet Tamer>
-					["coord"] = { 60.8, 18.6, MAP.WESTFALL },
-					["description"] = "This pet tamer is Alliance only.\n\nMacDonald's pets are level 3 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = ALLIANCE_ONLY,
-					["petBattleLvl"] = 3,
-					["groups"] = {
-						q(31780, {	-- Old MacDonald
-							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				q(31725, {	-- Lindsay
-					["sourceQuest"] = 31724,	-- Old MacDonald
-					["qg"] = 65648,	-- Old MacDonald
-					["coord"] = { 80.6, 18.4, MAP.WESTFALL },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Lindsay
-							["provider"] = { "n", 65651 },	-- Lindsay
-							["coord"] = { 33.2, 52.5, MAP.REDRIDGE_MOUNTAINS },
-						}),
-						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 			}),
@@ -361,17 +315,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3861, {	-- CLUCK!
-					["description"] =
-						-- #if AFTER 3.1.0
-						"Simply target any Chicken then spam |cFFFFD700/chicken|r at it until it emotes at you. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
-						-- #else
-						"Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
-						-- #endif
+					["description"] = "Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
 					["qg"] = 620,	-- Chicken
 					["maps"] = {
-						-- #if AFTER TBC
-						AZUREMYST_ISLE,
-						-- #endif
 						MAP.DUSKWOOD,
 						MAP.DUSTWALLOW_MARSH,
 						MAP.ELWYNN_FOREST,
@@ -586,16 +532,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 9,
 				}),
-				heroscall(q(28562, {	-- Hero's Call: Westfall!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
-					-- Cataclysm: Maximum is level 18 (TODO: Test max level between 16 and 25)
-					["lvl"] = { 9, 18 },
-					-- #endif
-				})),
 				q(26266, {	-- Hope for the People
 					["sourceQuest"] = 26270,	-- You Have Our Thanks
 					["providers"] = {

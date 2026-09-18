@@ -44,17 +44,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				["description"] = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
 				["icon"] = 236829,
 				["groups"] = {
-					battlepets({
-						["sym"] = {{"select","speciesID",
-							513,	-- Qiraji Guardling (PET!)
-							511,	-- Sidewinder (PET!)
-						}},
-						["groups"] = {
-							pet(512, {	-- Scarab Hatchling (PET!)
-								["description"] = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
-							}),
-						},
-					}),
 					explorationHeader({
 						exploration(5695),	-- Ahn'Qiraj: The Fallen Kingdom
 					}),
@@ -92,22 +81,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					-- #endif
 				}),
-			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					406,	-- Beetle (PET!)
-					484,	-- Desert Spider (PET!)
-					482,	-- Rock Viper (PET!)
-					512,	-- Scarab Hatchling (PET!)
-					414,	-- Scorpid (PET!)
-					511,	-- Sidewinder (PET!)
-				}},
-				["groups"] = {
-					pet(513, {	-- Qiraji Guardling (PET!)
-						["description"] = "Starts spawning June 21st. Stops spawning September 23rd.",
-					}),
-					pet(433),	-- Spiky Lizard (PET!)
-				},
 			}),
 			explorationHeader({
 				-- #if AFTER CATA
@@ -1104,16 +1077,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				heroscall(q(28528, {	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 57. (TODO: Test max level between 57 and 65)
-					["lvl"] = { 54, 57 },
-					-- #endif
 				})),
 				q(1126, {	-- Hive in the Tower
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
@@ -2225,16 +2188,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
 					},
-				})),
-				warchiefscommand(q(28527, {	-- Warchief's Command: Silithus!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 57. (TODO: Test max level)
-					["lvl"] = { 54, 57 },
-					-- #endif
 				})),
 			}),
 			n(RARES, {

@@ -26,33 +26,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					406,	-- Beetle (PET!)
-					393,	-- Cockroach (PET!)
-					415,	-- Fire Beetle (PET!)
-					404,	-- Long-tailed Mole (PET!)
-					503,	-- Silky Moth (PET!)
-					405,	-- Tree Python (PET!)
-				}},
-				["groups"] = {
-					pet(632, {	-- Ash Lizard (PET!)
-						["description"] = "Found around Fire Plum Ridge in Un'goro Crater and around fiery and dry areas in lower Mount Hyjal.",
-						["coords"] = {
-							{ 50.0, 49.0, MAP.UNGORO_CRATER },	-- Fire Plum Ridge
-							{ 60.0, 70.0, MAP.MOUNT_HYJAL },	-- Fiery Mount Hyjal
-						},
-					}),
-					pet(504, {	-- Diemetradon Hatchling (PET!)
-						["description"] = "Can be found around Golakka Hot Springs, near Elder Diemetradons.",
-					}),
-					pet(631),	-- Emerald Boa (PET!)
-					pet(403),	-- Parrot (PET!)
-					pet(502, {	-- Spotted Bell Frog (PET!)
-						["description"] = "Only found around water in Un'goro.",
-					}),
-				},
-			}),
 			explorationHeader({
 				exploration(537),	-- Fire Plume Ridge
 				-- #if AFTER CATA
@@ -875,16 +848,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["cost"] = { { "i", 11315, 10 } },	-- Bloodpetal Sprout
 					["repeatable"] = true,
 				}),
-				heroscall(q(28525, {	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 53. (TODO: Test max level between 53 and 60)
-					["lvl"] = { 49, 53 },
-					-- #endif
-				})),
 				q(24697, {	-- How to Make Meat Fresh Again
 					["qg"] = 38270,	-- Nolen Tacker
 					["coord"] = { 55.0, 60.6, MAP.UNGORO_CRATER },
@@ -2074,16 +2037,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28526, {	-- Warchief's Command: Un'Goro Crater!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 53. (TODO: Test max level)
-					["lvl"] = { 49, 53 },
-					-- #endif
-				})),
 				q(45044, {	-- Weapon No More
 					["provider"] = { "i", 142377 },	-- Badly Broken Dark Spear
 					["timeline"] = { ADDED_7_2_0 },

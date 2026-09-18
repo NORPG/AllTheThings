@@ -1503,6 +1503,11 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
 })
+_.Modules.Events.SetEventInformation(14, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=5,["year"]=2027},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=1,["year"]=2028})
+})
 _.Modules.Events.SetEventInformation(15, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=5,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=6,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=7,["year"]=2026}),
@@ -1522,6 +1527,16 @@ _.Modules.Events.SetEventInformation(9, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=5,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=5,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=6,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=6,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=7,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=7,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(16, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=7,["year"]=2025},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=7,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=1,["year"]=2026},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=2,["year"]=2027},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=2,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(13, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 })
 -- Filter Database Module
 _.FilterConstants = {
@@ -1701,6 +1716,9 @@ _.FlightPathNames = {
 	[14] = "Southshore, Hillsbrad",
 	[16] = "Refuge Pointe, Arathi",
 	[17] = "Hammerfall, Arathi",
+	[18] = "Booty Bay, Stranglethorn",
+	[19] = "Booty Bay, Stranglethorn",
+	[20] = "Grom'gol, Stranglethorn",
 	[21] = "Kargath, Badlands",
 	[22] = "Thunder Bluff, Mulgore",
 	[23] = "Orgrimmar, Durotar",
@@ -1804,6 +1822,14 @@ local phases = {
 		name = TRANSMOG_SOURCE_7,
 		description = "|cFFAAFFAAThis Thing is available in the Trading Post.|r",
 		state = 3,
+	},
+	[11] = {
+		name = "Phase 1",
+		description = "|cFFAAFFAAThis was not available until Phase 1 of WoW Classic.|r",
+		lore = "|cFFFFAAAAIncluded Molten Core and Onyxia's Lair.|r",
+		minimumBuildVersion = 1130100,
+		buildVersion = 11301,
+		state = 2,
 	},
 	[1101] = {
 		name = "Dire Maul",
@@ -1935,13 +1961,6 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Zul'Aman.|r",
 		minimumBuildVersion = 20501,
 		buildVersion = 20508,
-		state = 2,
-	},
-	[2108] = {
-		name = "Scourge Invasion",
-		description = "|cFFAAFFAAThis was only available during the Scourge Invasion.|r",
-		lore = "|cFFFFAAAAIf the Scourge Invasion has ended on your server, simply turn this off.|r",
-		minimumBuildVersion = 20501,
 		state = 2,
 	},
 	[30] = {
@@ -2412,6 +2431,7 @@ for key,value in pairs({
 })
 do phases[key].name = value; end
 for key,value in pairs({
+	[11] = "|cFFAAFFAADies war erst Phase 1 von WoW Classic verfügbar.|r",
 	[12] = "|cFFAAFFAADies war erst Phase 2 von WoW Classic verfügbar.|r",
 	[13] = "|cFFAAFFAADies war erst Phase 3 von WoW Classic verfügbar.|r",
 	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
@@ -2807,6 +2827,7 @@ for key,value in pairs({
 })
 do phases[key].name = value; end
 for key,value in pairs({
+	[11] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du WoW Classic.|r",
 	[12] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du WoW Classic.|r",
 	[13] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du WoW Classic.|r",
 	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
@@ -2893,6 +2914,7 @@ for key,value in pairs({
 })
 do phases[key].name = value; end
 for key,value in pairs({
+	[11] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di WoW Classic.|r",
 	[12] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di WoW Classic.|r",
 	[13] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di WoW Classic.|r",
 	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
@@ -3047,6 +3069,7 @@ for key,value in pairs({
 })
 do phases[key].name = value; end
 for key,value in pairs({
+	[11] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de WoW Classic.|r",
 	[12] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de WoW Classic.|r",
 	[13] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de WoW Classic.|r",
 	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
@@ -3816,6 +3839,7 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAAЭто больше нельзя будет купить или получить в коллекцию, если у вас нет необходимого PvP титула или если вы не входили в топ % лучших в этом сезоне.|r",
 	[5] = "|cFFFFAAAAЭто нельзя собрать, выучить навсегда или использовать для трансмогрификации.|r",
 	[7] = "|cFFAAFFAAЭта Штучка доступна в Торговой лавке.|r",
+	[11] = "|cFFAAFFAAЭто было недоступно до Phase 1 из WoW Classic.|r",
 	[12] = "|cFFAAFFAAЭто было недоступно до Phase 2 из WoW Classic.|r",
 	[13] = "|cFFAAFFAAЭто было недоступно до Phase 3 из WoW Classic.|r",
 	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
@@ -3922,6 +3946,7 @@ for key,value in pairs({
 })
 do phases[key].name = value; end
 for key,value in pairs({
+	[11] = "|cFFAAFFAAPhase 1(WoW Classic)까지 사용할 수 없습니다.|r",
 	[12] = "|cFFAAFFAAPhase 2(WoW Classic)까지 사용할 수 없습니다.|r",
 	[13] = "|cFFAAFFAAPhase 3(WoW Classic)까지 사용할 수 없습니다.|r",
 	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
@@ -4820,6 +4845,7 @@ for key,value in pairs({
 	[3] = "Dinero Real",
 	[4] = "PvP Elite/Gladiador",
 	[5] = "No aprendible",
+	[11] = "Fase 1",
 	[1101] = "La masacre",
 	[12] = "Fase 2",
 	[13] = "Fase 3",
@@ -4837,7 +4863,6 @@ for key,value in pairs({
 	[18] = "Fase 2",
 	[19] = "Fase 3",
 	[20] = "Fase 4",
-	[2108] = "Invasión de la Plaga",
 	[30] = "Fase 1",
 	[31] = "Fase 2",
 	[32] = "Fase 3",
@@ -4854,6 +4879,7 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAAEsto ya no se puede comprar ni desbloquear como transfiguración a menos que tengas el título PvP requerido, la calificación PvP requerida o estés en el porcentaje superior de esa temporada.|r",
 	[5] = "|cFFFFAAAAEsto no se puede recolectar, aprender ni usar para transfiguración de forma permanente.|r",
 	[7] = "|cFFAAFFAAEste artículo está disponible en el puesto comercial.|r",
+	[11] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de WoW Classic.|r",
 	[1101] = "|cFFAAFFAAEsto estuvo disponible con el lanzamiento de la fase La masacre de WoW Classic.|r",
 	[12] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de WoW Classic.|r",
 	[13] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de WoW Classic.|r",
@@ -4871,7 +4897,6 @@ for key,value in pairs({
 	[18] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de TBC Classic.|r",
 	[19] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de TBC Classic.|r",
 	[20] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 4 de TBC Classic.|r",
-	[2108] = "|cFFAAFFAAEsto sólo estaba disponible durante la Invasión de la Plaga.|r",
 	[30] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de Wrath Classic.|r",
 	[31] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de Wrath Classic.|r",
 	[32] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de Wrath Classic.|r",
@@ -4883,6 +4908,7 @@ for key,value in pairs({
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAAFomentar el uso de dinero real en cualquier versión del juego está ampliamente mal visto. Participa en este contenido bajo tu propia responsabilidad.|r",
+	[11] = "|cFFFFAAAAIncluidos Núcleo de magma y La guarida de Onyxia.|r",
 	[1101] = "|cFFFFAAAAIncluye La masacre|r",
 	[12] = "|cFFFFAAAAIncluidos JvJ de mundo y titulos de honor JvJ.|r",
 	[13] = "|cFFFFAAAAIncluidos Guarida de Alanegra y la finalización de Trueno furioso|r",
@@ -4900,7 +4926,6 @@ for key,value in pairs({
 	[18] = "|cFFFFAAAAIncluye Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.|r",
 	[19] = "|cFFFFAAAAIncluye la Cima del Hyjal y el Templo Oscuro, además de la gran mayoría del contenido de maximo nivel diario/de facción del juego.|r",
 	[20] = "|cFFFFAAAAIncluye Zul'Aman.|r",
-	[2108] = "|cFFFFAAAASi la Invasión de la Plaga ha terminado en tu servidor, simplemente desactiva esta opción.|r",
 	[30] = "|cFFFFAAAAIncluye Naxxramas, Sagrario obsidiana, y El ojo de la eternidad.|r",
 	[31] = "|cFFFFAAAAIncluye Ulduar.|r",
 	[32] = "|cFFFFAAAAIncluye la Prueba del cruzado|r",
@@ -6368,6 +6393,7 @@ for key,value in pairs({
 	[3] = "战网点数",
 	[4] = "PvP 精良/角斗士",
 	[5] = "不可学",
+	[11] = "阶段1",
 	[1101] = "厄运之槌",
 	[12] = "阶段2",
 	[13] = "阶段3",
@@ -6385,7 +6411,6 @@ for key,value in pairs({
 	[18] = "阶段2",
 	[19] = "阶段3",
 	[20] = "阶段4",
-	[2108] = "天灾入侵",
 	[30] = "阶段1",
 	[31] = "阶段2",
 	[32] = "阶段3",
@@ -6402,6 +6427,7 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAA除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
 	[5] = "|cFFFFAAAA这不能永久收集、学习或用于幻化。|r",
 	[7] = "|cFFAAFFAA该物品可在商栈购买。|r",
+	[11] = "|cFFAAFFAA该功能直到 阶段1 的 经典旧世 才可用。|r",
 	[1101] = "|cFFAAFFAA这在 厄运之槌 的 经典旧世 阶段发布时可用了。|r",
 	[12] = "|cFFAAFFAA该功能直到 阶段2 的 经典旧世 才可用。|r",
 	[13] = "|cFFAAFFAA该功能直到 阶段3 的 经典旧世 才可用。|r",
@@ -6419,7 +6445,6 @@ for key,value in pairs({
 	[18] = "|cFFAAFFAA该功能直到 阶段2 的 燃烧的远征 才可用。|r",
 	[19] = "|cFFAAFFAA该功能直到 阶段3 的 燃烧的远征 才可用。|r",
 	[20] = "|cFFAAFFAA该功能直到 阶段4 的 燃烧的远征 才可用。|r",
-	[2108] = "|cFFAAFFAA只有在天灾入侵期间，此项才可用。|r",
 	[30] = "|cFFAAFFAA该功能直到 阶段1 的 巫妖王之怒 才可用。|r",
 	[31] = "|cFFAAFFAA该功能直到 阶段2 的 巫妖王之怒 才可用。|r",
 	[32] = "|cFFAAFFAA该功能直到 阶段3 的 巫妖王之怒 才可用。|r",
@@ -6431,6 +6456,7 @@ for key,value in pairs({
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAA在游戏的任何版本中，鼓励使用真实货币的行为均不受认可。参与此类内容需自行承担风险。|r",
+	[11] = "|cFFFFAAAA包含熔火之心和奥妮克希亚的巢穴。|r",
 	[1101] = "|cFFFFAAAA包含厄运之槌。|r",
 	[12] = "|cFFFFAAAA包含世界 PvP 和 PvP 荣誉称号。|r",
 	[13] = "|cFFFFAAAA包含黑翼之巢和完成的雷霆之怒。|r",
@@ -6448,7 +6474,6 @@ for key,value in pairs({
 	[18] = "|cFFFFAAAA包含毒蛇神殿洞穴、风暴要塞：眼睛和迅捷德鲁伊飞行形态。|r",
 	[19] = "|cFFFFAAAA除了绝大多数的终局日常/阵营内容外，还包括海加尔山峰和黑暗神殿。|r",
 	[20] = "|cFFFFAAAA包含祖阿曼。|r",
-	[2108] = "|cFFFFAAAA如果在你的服务器上天灾入侵已经结束，直接关闭此项。|r",
 	[30] = "|cFFFFAAAA包含纳克萨玛斯、黑曜石圣殿和永恒之眼。|r",
 	[31] = "|cFFFFAAAA包含奥杜尔。|r",
 	[32] = "|cFFFFAAAA包含十字军试炼。|r",
@@ -7215,6 +7240,7 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 頭銜、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。|r",
 	[5] = "|cFFFFAAAA這不能永久收集、學習或用於塑形。|r",
 	[7] = "|cFFAAFFAA該物品可以在貿易站購買|r",
+	[11] = "|cFFAAFFAA該功能直到 Phase 1 的 WoW Classic 才可用。|r",
 	[12] = "|cFFAAFFAA該功能直到 Phase 2 的 WoW Classic 才可用。|r",
 	[13] = "|cFFAAFFAA該功能直到 Phase 3 的 WoW Classic 才可用。|r",
 	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",

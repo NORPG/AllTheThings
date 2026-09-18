@@ -37,39 +37,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				ach(848),	-- Explore Desolace
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					838,	-- Amethyst Shale Hatchling (PET!)
-					479,	-- Elfin Rabbit (PET!)
-					478,	-- Forest Moth (PET!)
-					417,	-- Rat (PET!)
-					452,	-- Red-Tailed Chipmunk (PET!)
-					424,	-- Roach (PET!)
-					419,	-- Small Frog (PET!)
-				}},
-				["groups"] = {
-					pet(484),	-- Desert Spider (PET!)
-					pet(483),	-- Horny Toad (PET!)
-					pet(482),	-- Rock Viper (PET!)
-					pet(485, {	-- Stone Armadillo (PET!)
-						["description"] =
-							-- #if BEFORE 5.1.0
-							"Found in the southeastern area of Desolace. It only spawns during the night between 6:30pm to 6:30am realm time.",
-							-- #else
-							"Found in the southeastern area of Desolace. It only spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",
-							-- #endif
-					}),
-					pet(480, {	-- Topaz Shale Hatchling (PET!)
-						["description"] = "The biggest concentration can be found in Desolace, the orange section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, beneath Silvermarsh, as well as inside Fungal Deep.",
-						["coords"] = {
-							{ 26.8, 43.5, MAP.DESOLACE },	-- Maraudon entrance
-							{ 69.4, 68.2, DEEPHOLM },	-- Cavern beneath Silvermarsh
-							{ 68.6, 28.5, DEEPHOLM },	-- Fungal Deep cavern entrance
-							{ 57.0, 13.2, DEEPHOLM },	-- Therazane's Throne
-						},
-					}),
-				},
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(4804),	-- Cenarion Wildlands
@@ -188,45 +155,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
-			-- #if BEFORE CATA
 			lockpicking({
 				o(179491, {	-- Waterlogged Footlocker
 					["coord"] = { 36.9, 24.1, MAP.DESOLACE },
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 150,
-				}),
-			}),
-			-- #endif
-			petbattles({
-				n(66372, {	-- Merda Stronghoof <Master Pet Tamer>
-					["coord"] = { 57.2, 45.8, MAP.DESOLACE },
-					["description"] = "This pet tamer is Horde only.\n\nMerda's pets are level 9 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-					["petBattleLvl"] = 9,
-					["groups"] = {
-						q(31872, {	-- Merda Stronghoof
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				q(31870, {	-- Cassandra Kaboom
-					["sourceQuest"] = 31817,	-- Merda Stronghoof
-					["qg"] = 66372,	-- Merda Stronghoof
-					["coord"] = { 57.2, 45.8, MAP.DESOLACE },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { SOUTHERN_BARRENS },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Cassandra Kaboom
-							["provider"] = { "n", 66422 },	-- Cassandra Kaboom
-							["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
 				}),
 			}),
 			n(QUESTS, {
@@ -1142,17 +1075,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				heroscall(q(28531, {	-- Hero's Call: Desolace!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["lockCriteria"] = { 1, "questID", 25938 },	-- Help for Desolace
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 33. (TODO: Test max level between 32 and 37)
-					["lvl"] = { 29, 33 },
-					-- #endif
-				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79229, {	-- Highway Robbery
 					["provider"] = { "o", 417353 },	-- Extinguished Campfire
@@ -2501,16 +2423,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
-				warchiefscommand(q(28548, {	-- Warchief's Command: Desolace!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 33. (TODO: Test max level)
-					["lvl"] = { 29, 33 },
-					-- #endif
-				})),
 				q(14264, {	-- Wetter Than Wet
 					["sourceQuest"] = 14260,	-- Going Deep
 					["qg"] = 35827,	-- Valishj

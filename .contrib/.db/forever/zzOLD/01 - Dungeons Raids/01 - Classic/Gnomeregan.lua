@@ -461,20 +461,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(26944, {	-- Exploring Gnomeregan
-					["altQuests"] = { 26943 },	-- Home Sweet Gnome
-					["qg"] = 44018,	-- Wulfred Harrys
-					["coord"] = { 53.3, 66.2, NORTHERN_STRANGLETHORN },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(26, 26, 10),
-				}),
 				q(2926, {	-- Gnogaine
 					["sourceQuest"] = 2927,	-- The Day After
 					["qg"] = 1268,	-- Ozzie Togglevolt
 					["coord"] = { 45.8, 49.2, MAP.DUN_MOROGH },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {

@@ -27,18 +27,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					393,	-- Cockroach (PET!)
-					415,	-- Fire Beetle (PET!)
-					423,	-- Lava Crab (PET!)
-					414,	-- Scorpid (PET!)
-				}},
-				["groups"] = {
-					pet(425),	-- Ash Viper (PET!)
-					pet(429),	-- Lava Beetle (PET!)
-				},
-			}),
 			explorationHeader({
 				exploration(255),	-- Altar of Storms
 				-- #if AFTER CATA
@@ -100,22 +88,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-				}),
-			}),
-			petbattles({
-				n(66520, {	-- Durin Darkhammer <Master Pet Tamer>
-					["coord"] = { 25.6, 47.6, MAP.BURNING_STEPPES },
-					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 17,
-					["groups"] = {
-						q(31914, {	-- Durin Darkhammer
-							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
 				}),
 			}),
 			n(QUESTS, {
@@ -1152,16 +1124,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				},
-				heroscall(q(28666, {	-- Hero's Call: Burning Steppes!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 50. (TODO: Test max level between 53 and 60)
-					["lvl"] = { 49, 50 },
-					-- #endif
-				})),
 				{	-- I Am the Law and I Am the Lash
 					["allianceQuestData"] = q(28278, {	-- I Am the Law and I Am the Lash (A)
 						["sourceQuest"] = 28266,	-- Trial by Magma (A)
@@ -2030,16 +1992,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28667, {	-- Warchief's Command: Burning Steppes!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 51. (TODO: Test max level)
-					["lvl"] = { 49, 51 },
-					-- #endif
-				})),
 				{	-- Warlocks Have the Neatest Stuff
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["allianceQuestData"] = q(28181, {	-- Warlocks Have the Neatest Stuff (A)

@@ -158,27 +158,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					441,	-- Alpine Hare (PET!)
-					633,	-- Mountain Skunk (PET!)
-					472,	-- Rabid Nut Varmint 5000 (PET!)
-					471,	-- Robo-Chick (PET!)
-				}},
-				["groups"] = {
-					pet(487),	-- Alpine Chipmunk (PET!)
-					pet(1163, {	-- Anodized Robo Cub (PET!)
-						["description"] = "Found in Everlook.",
-						["timeline"] = { ADDED_5_1_0 },
-					}),
-					pet(634, {	-- Crystal Spider (PET!)
-						["description"] = "Can most commonly be found in Frostwhisper Gorge in southern Winterspring and Lake Kel'theril.",
-					}),
-					pet(69, {	-- Snowy Owl (PET!)
-						["description"] = "Starts spawning December 21st. Stops spawning March 20th",
-					}),
-				},
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(2248),	-- Dun Mandarr
@@ -234,66 +213,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-				}),
-			}),
-			petbattles({
-				n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
-					["coord"] = { 65.6, 64.6, MAP.WINTERSPRING },
-					["description"] = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Blighted Squarrel and Turkey.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 19,
-					["groups"] = {
-						q(31909, {	-- Grand Master Trixxy
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["isDaily"] = true,
-							["groups"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-					},
-				}),
-				q(31897, {	-- Grand Master Trixxy
-					["sourceQuests"] = {
-						31917,	-- A Tamer's Homecoming (A)
-						31918,	-- A Tamer's Homecoming (H)
-					},
-					["qg"] = 66466,	-- Grand Master Trixxy
-					["coord"] = { 65.6, 64.5, MAP.WINTERSPRING },
-					["timeline"] = { ADDED_5_0_4 },
-					["groups"] = {
-						objective(1, {	-- Defeat Grand Master Trixxy
-							["provider"] = { "n", 66466 },	-- Grand Master Trixxy
-							["coord"] = { 65.6, 64.5, MAP.WINTERSPRING },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31975, {	-- The Returning Champion (A)
-					["sourceQuests"] = {
-						31915,	-- Grand Master Lydia Accoste
-						31897,	-- Grand Master Trixxy
-					},
-					["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)
-					["qg"] = 66466,	-- Stone Cold Trixxy
-					["coord"] = { 65.6, 64.4, MAP.WINTERSPRING },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(31977, {	-- The Returning Champion (H)
-					["sourceQuests"] = {
-						31915,	-- Grand Master Lydia Accoste
-						31897,	-- Grand Master Trixxy
-					},
-					["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
-					["qg"] = 66466,	-- Stone Cold Trixxy
-					["coord"] = { 65.6, 64.4, MAP.WINTERSPRING },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 				}),
 			}),
 			n(QUESTS, {
@@ -956,16 +875,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 59.8, 49.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				heroscall(q(28544, {	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 53. (TODO: Test max level between 54 and 60)
-					["lvl"] = { 49, 53 },
-					-- #endif
-				})),
 				q(28470, {	-- High Chief Winterfall
 					["sourceQuest"] = 28469,	-- Winterfall Runners
 					["qg"] = 9298,	-- Donova Snowden
@@ -2021,16 +1930,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28545, {	-- Warchief's Command: Winterspring!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 53. (TODO: Test max level)
-					["lvl"] = { 49, 53 },
-					-- #endif
-				})),
 				q(28718, {	-- Where There's Smoke, There's Delicious Meat
 					["sourceQuest"] = 28710,	-- Spray it One More Time
 					["qg"] = 49402,	-- Sana Curtainfire

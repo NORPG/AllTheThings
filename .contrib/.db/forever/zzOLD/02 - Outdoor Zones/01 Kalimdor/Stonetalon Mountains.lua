@@ -44,25 +44,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					487,	-- Alpine Chipmunk (PET!)
-					633,	-- Mountain Skunk (PET!)
-					378,	-- Rabbit (PET!)
-					472,	-- Rabid Nut Varmint 5000 (PET!)
-					417,	-- Rat (PET!)
-					424,	-- Roach (PET!)
-				}},
-				["groups"] = {
-					pet(488),	-- Coral Snake (PET!)
-					pet(412, {	-- Spider (PET!)
-						["description"] = "The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",
-					}),
-					pet(506, {	-- Venomspitter Hatchling (PET!)
-						["description"] = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
-					}),
-				},
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(4938),	-- Battlescar Valley
@@ -168,7 +149,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			-- #if BEFORE CATA
 			lockpicking({
 				o(179486, {	-- Battered Footlocker
 					["coords"] = {
@@ -180,54 +160,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["learnedAt"] = 110,
 				}),
 			}),
-			-- #endif
-			petbattles({
-				n(66137, {	-- Zonya the Sadist <Master Pet Tamer>
-					["coord"] = { 59.6, 71.6, MAP.STONETALON_MOUNTAINS },
-					["description"] = "This pet tamer is Horde only.\n\nZonya's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-					["petBattleLvl"] = 7,
-					["groups"] = {
-						q(31862, {	-- Zonya the Sadist
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				q(31817, {	-- Merda Stronghoof
-					["sourceQuest"] = 31815,	-- Zonya the Sadist
-					["qg"] = 66137,	-- Zonya the Sadist
-					["coord"] = { 59.6, 71.6, MAP.STONETALON_MOUNTAINS },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.DESOLACE },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Merda Stronghoof
-							["provider"] = { "n", 66372 },	-- Merda Stronghoof
-							["coord"] = { 57.2, 45.8, MAP.DESOLACE },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-			}),
-			-- #if SEASON_OF_DISCOVERY
-			pickpocketing({
-				applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
-					["coord"] = { 67.2, 52.2, MAP.STONETALON_MOUNTAINS },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						3988,	-- Venture Co. Operator
-						4070,	-- Venture Co. Builder
-						3992,	-- Venture Co. Engineer
-						3993,	-- Venture Co. Machine Smith
-					},
-				})),
-			}),
-			-- #endif
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(180662),	-- Schooner Wreckage
@@ -1304,16 +1236,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				heroscall(q(28539, {	-- Hero's Call: Stonetalon Mountains!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 28. (TODO: Test max level between 27 and 35)
-					["lvl"] = { 24, 28 },
-					-- #endif
-				})),
 				q(25935, {	-- Hungry Pups
 					["description"] = "Houndmaster Jonathan walks his restless, hungry pups, around the tree.",
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance

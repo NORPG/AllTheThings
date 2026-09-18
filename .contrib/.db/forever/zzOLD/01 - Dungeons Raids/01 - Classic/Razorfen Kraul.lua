@@ -9,13 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["zone-text-areaID"] = 491,	-- Razorfen Kraul
 		["mapID"] = MAP.RAZORFEN_KRAUL,
-		["coords"] = {
-			-- #if AFTER CATA
-			{ 41.0, 94.6, SOUTHERN_BARRENS },
-			-- #else
-			{ 40.94, 94.55, MAP.THE_BARRENS },
-			-- #endif
-		},
+		["coord"] = { 40.94, 94.55, MAP.THE_BARRENS },
 		["lvl"] = lvlsquish(17, 25, 10),
 		["groups"] = {
 			n(QUESTS, {
@@ -138,12 +132,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(6756),	-- Jewelry Box
 						}),
 					},
-				}),
-				q(26908, {	-- Feeling Thorny
-					["qg"] = 37812,	-- Mahka
-					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
-					["timeline"] = { ADDED_4_0_3 },
-					["lvl"] = 30,
 				}),
 				q(1109, {	-- Going, Going, Guano!
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>

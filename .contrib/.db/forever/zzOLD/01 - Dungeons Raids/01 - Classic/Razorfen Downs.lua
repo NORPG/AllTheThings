@@ -312,15 +312,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(10578),	-- Thoughtcast Boots
 			}),
 			n(7895, {	-- Ambassador Bloodrage
-				-- #if BEFORE CATA
 				["coords"] = {
 					{ 46.2, 87.4, MAP.THE_BARRENS },
 					{ 48.0, 90.4, MAP.THE_BARRENS },
 					{ 48.6, 95.6, MAP.THE_BARRENS },
 				},
-				-- #else
-				["maps"] = { SOUTHERN_BARRENS },
-				-- #endif
 				["description"] = "This is a rare that is not always present.",
 				["timeline"] = { REMOVED_4_0_3 },
 			}),
@@ -328,14 +324,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(7355, {	-- Tuten'kash
 				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217293)),	-- Silky Spider Cape
-					i(10776, {	-- Silky Spider Cape
-						["timeline"] = { REMOVED_1_15_1 },
-					}),
-					-- #else
 					i(10776),	-- Silky Spider Cape
-					-- #endif
 					i(10775),	-- Carapace of Tuten'kash
 					i(10777),	-- Arachnid Gloves
 				},
@@ -343,9 +332,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(7356, {	-- Plaguemaw the Rotting
 				["sourceQuests"] = {
 					3525,	-- Extinguishing the Idol (Before Cataclysm)
-					-- #if AFTER CATA
-					27022,	-- Extinguishing the Idol (After Cataclysm)
-					-- #endif
 				},
 				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {

@@ -128,20 +128,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				ach(850),	-- Explore Dustwallow Marsh
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					398,	-- Black Rat (PET!)
-					387,	-- Snake (PET!)
-					412,	-- Spider (PET!)
-					420,	-- Toad (PET!)
-				}},
-				["groups"] = {
-					pet(385),	-- Mouse (PET!)
-					pet(489, {	-- Spawn of Onyxia (PET!)
-						["description"] = "Can be found in the area around Onyxia's Lair in Dustwallow Marsh.",
-					}),
-				},
-			}),
 			explorationHeader({
 				exploration(2079),	-- Alcaz Island
 				exploration(501, {["timeline"] = { ADDED_4_0_1 }}),	-- Beezil's Wreck
@@ -191,22 +177,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["cr"] = 4321,	-- Baldruc <Gryphon Master>
 					["coord"] = { 67.5, 51.3, MAP.DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-				}),
-			}),
-			petbattles({
-				n(66436, {	-- Grazzle the Great <Master Pet Tamer>
-					["coord"] = { 53.8, 74.8, MAP.DUSTWALLOW_MARSH },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGrazzle's pets are level 14 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 14,
-					["groups"] = {
-						q(31905, {	-- Grazzle the Great
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -1005,16 +975,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(38, 38, 15),
 				}),
-				heroscall(q(28552, {	-- Hero's Call: Dustwallow Marsh!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, MAP.STORMWIND_CITY, THE_EXODAR },	-- Only found in Darnassus & Stormwind City & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 38. (TODO: Test max level between 36 and 44)
-					["lvl"] = { 34, 38 },
-					-- #endif
-				})),
 				q(1949, {	-- Hidden Secrets
 					["sourceQuest"] = 1947,	-- Journey to the Marsh
 					["qg"] = 6546,	-- Tabetha
@@ -1737,9 +1697,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						6609,	-- I Got Nothin' Left!
 						6608,	-- You Too Good.
 					},
-					-- #if AFTER 3.1.0.9637
-					["altQuests"] = { 13826 },	-- Nat Pagle, Angler Extreme
-					-- #endif
 					["qg"] = 12919,	-- Nat Pagle
 					["coord"] = { 58.6, 60.0, MAP.DUSTWALLOW_MARSH },
 					["maps"] = {
@@ -1747,9 +1704,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						MAP.SWAMP_OF_SORROWS,
 						MAP.DESOLACE,
 						MAP.STRANGLETHORN_VALE,
-						-- #if AFTER CATA
-						THE_CAPE_OF_STRANGLETHORN,
-						-- #endif
 					},
 					["requireSkill"] = FISHING,
 					["learnedAt"] = 225,
@@ -1776,10 +1730,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						recipe(18248, {	-- Fishing (Artisan)
 							["rank"] = 4,
-							["timeline"] = { REMOVED_3_1_0 },
-						}),
-						i(45858, {	-- Nat's Lucky Fishing Pole
-							["timeline"] = { ADDED_3_1_0 },
 						}),
 					},
 				}),
@@ -3480,16 +3430,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28554, {	-- Warchief's Command: Dustwallow Marsh!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 38. (TODO: Test max level)
-					["lvl"] = { 34, 38 },
-					-- #endif
-				})),
 				-- #if BEFORE WRATH
 				q(11222, {	-- Warn Bolvar! / Proof of Treachery [WRATH+]
 					["sourceQuest"] = 11142,	-- Survey Alcaz Island

@@ -20,13 +20,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				},
 				-- #endif
 				["groups"] = {
-					battlepets({
-						["sym"] = {{"select","speciesID",
-							385,	-- Mouse (PET!)
-							386,	-- Prairie Dog (PET!)
-							378,	-- Rabbit (PET!)
-						}},
-					}),
 					n(QUESTS, {
 						q(752, {	-- A Humble Task (1/2)
 							["qg"] = 2981,	-- Chief Hawkwind
@@ -833,16 +826,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(736),	-- Explore Mulgore
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					385,	-- Mouse (PET!)
-					386,	-- Prairie Dog (PET!)
-					378,	-- Rabbit (PET!)
-				}},
-				["groups"] = {
-					pet(477),	-- Gazelle Fawn (PET!)
-				},
-			}),
 			explorationHeader({
 				exploration(404),	-- Bael'dun Digsite
 				exploration(222),	-- Bloodhoof Village
@@ -865,51 +848,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				exploration(398),	-- Wildmane Water Well
 				exploration(819),	-- Windfury Ridge
 				exploration(396),	-- Winterhoof Water Well
-			}),
-			-- #if AFTER CATA
-			n(FLIGHT_PATHS, {
-				fp(402, {	-- Bloodhoof Village, Mulgore
-					["cr"] = 40809,	-- Tak <Wind Rider Master>
-					["coord"] = { 47.4, 58.6, MAP.MULGORE },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			-- #endif
-			petbattles({
-				q(31575, {	-- Got one! (Naleen)
-					["sourceQuest"] = 31831,	-- Level Up!
-					["qg"] = 63067,	-- Naleen
-					["coord"] = { 49.2, 56.1, MAP.MULGORE },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31573, {	-- Learning the Ropes (Naleen)
-					["qg"] = 63067,	-- Naleen
-					["coord"] = { 49.2, 56.1, MAP.MULGORE },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31831, {	-- Level Up! (Naleen)
-					["sourceQuest"] = 31574,	-- On The Mend
-					["qg"] = 63067,	-- Naleen
-					["coord"] = { 49.2, 56.1, MAP.MULGORE },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31574, {	-- On The Mend (Naleen)
-					["sourceQuest"] = 31573,	-- Learning the Ropes
-					["qg"] = 63067,	-- Naleen
-					["coord"] = { 49.2, 56.1, MAP.MULGORE },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Battle Pets Healed
-							["provider"] = { "n", 10050 },	-- Seikwa <Stable Master>
-							["coord"] = { 47.0, 59.6, MAP.MULGORE },
-						}),
-					},
-				}),
 			}),
 			n(QUESTS, {
 				q(833, {	-- A Sacred Burial

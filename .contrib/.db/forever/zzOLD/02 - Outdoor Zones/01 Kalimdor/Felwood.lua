@@ -41,20 +41,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					406,	-- Beetle (PET!)
-					420,	-- Toad (PET!)
-				}},
-				["groups"] = {
-					pet(500, {	-- Minfernal (PET!)
-						["description"] = "Can be found around Shatter Scar Vale near Infernal Sentries.",
-					}),
-					pet(497),	-- Tainted Cockroach (PET!)
-					pet(498),	-- Tainted Moth (PET!)
-					pet(499),	-- Tainted Rat (PET!)
-				},
-			}),
 			explorationHeader({
 				exploration(1765),	-- Bloodvenom Falls
 				-- #if AFTER CATA
@@ -135,22 +121,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 			}),
 			-- #endif
-			petbattles({
-				n(66442, {	-- Zoltan <Master Pet Tamer>
-					["coord"] = { 40.0, 56.6, MAP.FELWOOD },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 16,
-					["groups"] = {
-						q(31907, {	-- Zoltan
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-			}),
 			n(QUESTS, {
 				q(28340, {	-- A Bomb Deal
 					["sourceQuest"] = 28380,	-- Pikwik in Peril
@@ -1280,16 +1250,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				heroscall(q(28543, {	-- Hero's Call: Felwood!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 48 (TODO: Test max level between 48 and 55)
-					["lvl"] = { 44, 48 },
-					-- #endif
-				})),
 				q(8420, {	-- Hot and Itchy
 					["altQuests"] = { 8419 },	-- An Imp's Request
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
@@ -2577,16 +2537,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28542, {	-- Warchief's Command: Felwood!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 48. (TODO: Test max level)
-					["lvl"] = { 44, 48 },
-					-- #endif
-				})),
 				q(28374, {	-- Weeding the Lawn
 					["sourceQuests"] = {
 						28360,	-- Running Their Course

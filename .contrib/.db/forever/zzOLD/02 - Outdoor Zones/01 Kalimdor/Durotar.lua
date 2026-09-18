@@ -2091,15 +2091,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(728),	-- Explore Durotar
 			}),
-			battlepets({
-				pet(635),	-- Adder (PET!)
-				pet(468),	-- Creepy Crawly (PET!)
-				pet(467),	-- Dung Beetle (PET!)
-				pet(448),	-- Hare (PET!)
-				pet(466),	-- Spiny Lizard (PET!)
-				pet(420),	-- Toad (PET!)
-				pet(418),	-- Water Snake (PET!)
-			}),
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(374),	-- Bladefist Bay
@@ -2160,138 +2151,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
-			}),
-			-- #endif
-			petbattles({
-				n(66126, {	-- Zunta <Aspiring Pet Tamer>
-					["coord"] = { 43.9, 28.9, MAP.DUROTAR },
-					["description"] = "This pet tamer is Horde only.\n\nZunta's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-					["petBattleLvl"] = 2,
-					["groups"] = {
-						q(31818, {	-- Zunta
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				q(31813, {	-- Dagra the Fierce
-					["sourceQuest"] = 31812,	-- Zunta, The Pet Tramer
-					["qg"] = 66126,	-- Zunta
-					["coord"] = { 43.9, 28.9, MAP.DUROTAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { NORTHERN_BARRENS },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Dagra the Fierce
-							["provider"] = { "n", 66135 },	-- Dagra the Fierce
-							["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31570, {	-- Got one! (Narzak)
-					["sourceQuest"] = 31830,	-- Level Up!
-					["qg"] = 63061,	-- Narzak
-					["coord"] = { 52.7, 41.3, MAP.DUROTAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31571, {	-- Learning the Ropes (Narzak)
-					["qg"] = 63061,	-- Narzak
-					["coord"] = { 52.7, 41.3, MAP.DUROTAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31830, {	-- Level Up! (Narzak)
-					["sourceQuest"] = 31572,	-- On The Mend
-					["qg"] = 63061,	-- Narzak
-					["coord"] = { 52.7, 41.3, MAP.DUROTAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31572, {	-- On The Mend (Narzak)
-					["sourceQuest"] = 31571,	-- Learning the Ropes
-					["qg"] = 63061,	-- Narzak
-					["coord"] = { 52.7, 41.3, MAP.DUROTAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Battle Pets Healed
-							["provider"] = { "n", 9987 },	-- Shoja'my <Stable Master>
-							["coord"] = { 52.0, 41.8, MAP.DUROTAR },
-						}),
-					},
-				}),
-			}),
-			-- #if SEASON_OF_DISCOVERY
-			pickpocketing({
-				applyclassicphase(SOD_PHASE_ONE, i(207110, {	-- Durotar Treasure Map
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["cost"] = {
-						{ "i", 207106, 1 },	-- Bottom-Left Map Piece
-						{ "i", 207107, 1 },	-- Bottom-Right Map Piece
-						{ "i", 207108, 1 },	-- Top-Left Map Piece
-						{ "i", 207109, 1 },	-- Top-Right Map Piece
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(207106, {	-- Bottom-Left Map Piece
-					["coord"] = { 67.2, 85.6, MAP.DUROTAR },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						3206,	-- Voodoo Troll
-						3207,	-- Hexed Troll
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(207107, {	-- Bottom-Right Map Piece
-					["coord"] = { 43.0, 39.8, MAP.DUROTAR },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						3111,	-- Razormane Quilboar
-						3114,	-- Razormane Battleguard
-						3113,	-- Razormane Dustrunner
-						3112,	-- Razormane Scout
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(207098, {	-- Note from Ba'so
-					["coord"] = { 53.0, 27.6, MAP.DUROTAR },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						3196,	-- Burning Blade Neophyte
-						3195,	-- Burning Blade Thug
-						3199,	-- Burning Blade Cultist
-						3197,	-- Burning Blade Fanatic
-						3198,	-- Burning Blade Apprentice
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(207108, {	-- Top-Left Map Piece
-					["coord"] = { 53.0, 27.6, MAP.DUROTAR },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						3196,	-- Burning Blade Neophyte
-						3195,	-- Burning Blade Thug
-						3199,	-- Burning Blade Cultist
-						3197,	-- Burning Blade Fanatic
-						3198,	-- Burning Blade Apprentice
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(207109, {	-- Top-Right Map Piece
-					["coord"] = { 58.8, 55.4, MAP.DUROTAR },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { ROGUE },
-					["crs"] = {
-						3129,	-- Kul Tiras Marine
-						3128,	-- Kul Tiras Sailor
-					},
-				})),
 			}),
 			-- #endif
 			n(QUESTS, {
@@ -3675,11 +3534,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
-				warchiefscommand(q(43926, {	-- The Legion Returns
-					["timeline"] = { ADDED_7_0_3 },
-					["isBreadcrumb"] = true,
-					["lvl"] = 98,
-				})),
 				q(39801, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Splintered Fleet
 					["sourceQuest"] = 39698,	-- Making the Rounds
 					["qg"] = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>

@@ -4426,7 +4426,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 					["providers"] = {
 						{ "o", 1620 },	-- Mageroyal
-						-- #if ANYCKASSIC
+						-- #if ANYCLASSIC
 						{ "o", 3727 },	-- Mageroyal (The Barrens)
 						-- #endif
 						-- #if AFTER CATA
@@ -4437,7 +4437,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(108318, {	-- Mageroyal Petal
 					["providers"] = {
 						{ "o", 1620 },	-- Mageroyal
-						-- #if ANYCKASSIC
+						-- #if ANYCLASSIC
 						{ "o", 3727 },	-- Mageroyal (The Barrens)
 						-- #endif
 						-- #if AFTER CATA
@@ -4496,7 +4496,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 					["providers"] = {
 						{ "o", 1618 },	-- Peacebloom
-						-- #if ANYCKASSIC
+						-- #if ANYCLASSIC
 						{ "o", 3724 },	-- Peacebloom (The Barrens)
 						-- #endif
 					},
@@ -4543,7 +4543,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 					["providers"] = {
 						{ "o", 1617 },	-- Silverleaf
-						-- #if ANYCKASSIC
+						-- #if ANYCLASSIC
 						{ "o", 3725 },	-- Silverleaf (The Barrens)
 						-- #endif
 					},

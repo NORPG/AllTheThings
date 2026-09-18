@@ -5308,7 +5308,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(12223, {	-- Meaty Bat Wing
 			["maps"] = {
+				-- #if AFTER TBC
 				GHOSTLANDS,
+				-- #endif
 				TIRISFAL_GLADES,
 			},
 			["crs"] = {

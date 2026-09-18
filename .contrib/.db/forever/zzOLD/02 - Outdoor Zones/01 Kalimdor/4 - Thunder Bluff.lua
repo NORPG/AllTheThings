@@ -8,69 +8,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 		["icon"] = 255144,
 		["isRaid"] = true,
 		["groups"] = {
-			-- #if AFTER 4.2.0
-			n(ACHIEVEMENTS, {
-				applyclassicphase(CATA_PHASE_ONE, ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
-					["timeline"] = { ADDED_4_2_0 },
-					["requireSkill"] = FISHING,
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(17759, {	-- Pond Predators
-							["_quests"] = { 29345 },
-						}),
-						crit(17760, {	-- The Ring's the Thing
-							["_quests"] = { 29346 },
-						}),
-						crit(17761, {	-- The Race to Restock
-							["_quests"] = { 29348 },
-						}),
-						crit(17762, {	-- Craving Crayfish
-							["_quests"] = { 29349 },
-						}),
-						crit(17763, {	-- Shiny Baubles
-							["_quests"] = { 29354 },
-						}),
-					},
-				})),
-				applyclassicphase(CATA_PHASE_ONE, ach(5843, {	-- Let's Do Lunch: Thunder Bluff
-					["timeline"] = { ADDED_4_2_0 },
-					["requireSkill"] = COOKING,
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(17734, {	-- "Magic" Mushrooms
-							["_quests"] = { 29362 },
-						}),
-						crit(17736, {	-- Corn Mash
-							["_quests"] = { 29364 },
-						}),
-						crit(17735, {	-- Mulgore Spice Bread
-							["_quests"] = { 29363 },
-						}),
-						crit(17737, {	-- Perfectly Picked Portions
-							["_quests"] = { 29365 },
-						}),
-						crit(17733, {	-- Pining for Nuts
-							["_quests"] = { 29358 },
-						}),
-					},
-				})),
-			}),
-			-- #endif
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					477,	-- Gazelle Fawn (PET!)
-					385,	-- Mouse  (PET!)
-					386,	-- Prarie Dog (PET!)
-					378,	-- Rabbit (PET!)
-				}},
-			}),
 			n(FACTIONS, {
 				faction(FACTION_THUNDER_BLUFF, {	-- Thunder Bluff
-					-- #if AFTER CATA
-					["provider"] = { "i", 45584 },	-- Thunder Bluff Tabard
-					-- #else
 					["icon"] = 236454,
-					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = HORDE_ONLY,
 				}),

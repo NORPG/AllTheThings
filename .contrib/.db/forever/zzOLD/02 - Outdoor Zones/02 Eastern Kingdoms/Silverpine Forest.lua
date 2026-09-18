@@ -26,20 +26,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					628,	-- Infected Fawn (PET!)
-					627,	-- Infected Squirrel (PET!)
-					378,	-- Rabbit (PET!)
-					417,	-- Rat (PET!)
-					387,	-- Snake (PET!)
-					379,	-- Squirrel (PET!)
-					420,	-- Toad (PET!)
-				}},
-				["groups"] = {
-					pet(455),	-- Blighted Squirrel (PET!)
-				},
-			}),
 			explorationHeader({
 				exploration(233),	-- Ambermill
 				exploration(231),	-- Beren's Peril
@@ -1571,16 +1557,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 9,
 				}),
-				warchiefscommand(q(28568, {	-- Warchief's Command: Silverpine Forest!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.UNDERCITY },	-- Only found in Undercity in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 9. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 18. (TODO: Test max level)
-					["lvl"] = { 9, 18 },
-					-- #endif
-				})),
 				q(429, {	-- Wild Hearts
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
 					["qg"] = 1950,	-- Rane Yorick

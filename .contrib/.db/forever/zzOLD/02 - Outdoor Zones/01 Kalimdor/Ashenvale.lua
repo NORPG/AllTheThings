@@ -56,22 +56,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				ach(845),	-- Explore Ashenvale
 			}),
-			battlepets({
-				["sym"] = {{"select","speciesID",
-					417,	-- Rat (PET!)
-					424,	-- Roach (PET!)
-					379,	-- Squirrel (PET!)
-					420,	-- Toad (PET!)
-				}},
-				["groups"] = {
-					pet(478),	-- Forest Moth (PET!)
-					pet(495),	-- Frog (PET!)
-					pet(450),	-- Maggot (PET!)
-					pet(496, {	-- Rusty Snail (PET!)
-						["description"] = "Can be found on the Blackfathom Deeps beach in Ashenvale.",
-					}),
-				},
-			}),
 			explorationHeader({
 				exploration(415),	-- Astranaar
 				-- #if AFTER WRATH
@@ -192,7 +176,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- #if BEFORE CATA
 			lockpicking({
 				o(179487, {	-- Waterlogged Footlocker
 					["coord"] = { 13.8, 24.7, MAP.ASHENVALE },
@@ -200,134 +183,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["learnedAt"] = 70,
 				}),
 			}),
-			-- #endif
-			petbattles({
-				n(66136, {	-- Analynn <Master Pet Tamer>
-					["coord"] = { 20.2, 29.6, MAP.ASHENVALE },
-					["description"] = "This pet tamer is Horde only.\n\nAnalynn's pets are level 5 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-					["petBattleLvl"] = 5,
-					["groups"] = {
-						q(31854, {	-- Analynn
-							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				q(31815, {	-- Zonya the Sadist
-					["sourceQuest"] = 31814,	-- Analynn
-					["qg"] = 66136,	-- Analynn
-					["coord"] = { 20.2, 29.5, MAP.ASHENVALE },
-					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MAP.STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Defeat Zonya the Sadist
-							["provider"] = { "n", 66137 },	-- Zonya the Sadist
-							["coord"] = { 59.6, 71.6, MAP.STONETALON_MOUNTAINS },
-						}),
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-			}),
-			-- #if SEASON_OF_DISCOVERY
-			pvp(n(PVP, {
-				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Defeat a Lieutenant
-					readable = "Defeat a Lieutenant",
-					icon = 131013,
-					text = {
-						en = "Defeat a Lieutenant",
-						de = "Besiege einen Leutnant",
-						es = "Derrota a un Teniente",
-						mx = "Derrota a un Teniente",
-						fr = "Battre un Lieutenant",
-						it = "Sconfiggi un Tenente",
-						ko = "중위를 처치하세요",
-						pt = "Derrote um Tenente",
-						ru = "Победить лейтенанта",
-						cn = "击败一名中尉",
-						-- TODO: tw = "",
-					},
-				}), {
-					["aqd"] = {
-						["crs"] = {
-							212730,	-- Tojara <Blademaster>
-							212801,	-- Jubei <Blademaster>
-							212802,	-- Moogul the Sly <Blademaster>
-						},
-						["coords"] = {
-							{ 54.8, 54.8, MAP.ASHENVALE },
-							{ 22.0, 38.6, MAP.ASHENVALE },
-							{ 69.6, 63.6, MAP.ASHENVALE },
-						},
-						["maxReputation"] = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
-					},
-					["hqd"] = {
-						["crs"] = {
-							212707,	-- Larodar <Keeper of the Grove>
-							212803,	-- Ceredwyn <Keeper of the Grove>
-							212804,	-- Centrius <Keeper of the Grove>
-						},
-						["coords"] = {
-							{ 51.6, 54.8, MAP.ASHENVALE },
-							{ 74.0, 74.0, MAP.ASHENVALE },
-							{ 28.6, 28.8, MAP.ASHENVALE },
-						},
-						["maxReputation"] = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
-					},
-					["timeline"] = { REMOVED_2_0_1 },
-					["repeatable"] = true,
-					["groups"] = {
-						i(211813, {	-- Silverwing Sentinel Charm
-							["races"] = HORDE_ONLY,
-						}),
-						i(211814, {	--
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Win the Battle
-					readable = "Win the Battle",
-					icon = [[~_.asset("Category_PvP")]],
-					text = {
-						en = "Win the Battle",
-						de = "Gewinne den Kampf",
-						es = "Gana la Batalla",
-						mx = "Gana la Batalla",
-						fr = "Gagnez la Bataille",
-						it = "Vinci la Battaglia",
-						ko = "전투에서 승리하세요",
-						pt = "Ganhe a Batalha",
-						ru = "Выиграй битву",
-						cn = "赢得战斗",
-						-- TODO: tw = "",
-					},
-				}), {
-					["aqd"] = {
-						["cr"] = 212969,	-- Kazragore <Far Seer>
-						["coord"] = { 42.0, 67.0, MAP.ASHENVALE },
-						["maxReputation"] = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
-					},
-					["hqd"] = {
-						["cr"] = 212970,	-- Felore Moonray <Priestess of the Moon>
-						["coord"] = { 50.5, 72.0, MAP.ASHENVALE },
-						["maxReputation"] = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
-					},
-					["timeline"] = { REMOVED_2_0_1 },
-					["repeatable"] = true,
-				})),
-			})),
-			-- #endif
-			-- #if AFTER CATA
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180662),	-- Schooner Wreckage
-				}),
-			}),
-			-- #endif
 			n(QUESTS, {
 				q(26453, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar
@@ -1465,16 +1320,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				heroscall(q(28492, {	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 23. (TODO: Test max level between 22 and 32)
-					["lvl"] = { 19, 23 },
-					-- #endif
-				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78575, {	-- Hirzek
 					["sourceQuest"] = 78561,	-- Elixir of Insight (2/2)
@@ -3738,16 +3583,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				warchiefscommand(q(28532, {	-- Warchief's Command: Stonetalon Mountains!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 28. (TODO: Test max level)
-					["lvl"] = { 24, 28 },
-					-- #endif
-				})),
 				q(6571, {	-- Warsong Supplies
 					["qg"] = 11820,	-- Locke Okarr
 					["coord"] = { 71.40, 67.64, MAP.ASHENVALE },
