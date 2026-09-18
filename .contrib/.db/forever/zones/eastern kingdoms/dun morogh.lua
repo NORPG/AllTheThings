@@ -14,7 +14,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 	},
 	["icon"] = 236755,
 	["groups"] = {
-		m(COLDRIDGE_VALLEY, {
+		m(MAP.COLDRIDGE_VALLEY, {
 			["lore"] = "Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",
 			["icon"] = 236444,
 			["zone-text-areas"] = {
@@ -1008,7 +1008,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
 				["coord"] = { 28.6, 66.4, DUN_MOROGH },
 				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { COLDRIDGE_VALLEY },
+				["maps"] = { MAP.COLDRIDGE_VALLEY },
 				["races"] = { DWARF },
 				["classes"] = { PRIEST },
 				["isBreadcrumb"] = true,

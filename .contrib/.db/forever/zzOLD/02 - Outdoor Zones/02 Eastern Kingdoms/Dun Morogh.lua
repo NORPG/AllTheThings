@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 		},
 		["icon"] = 236755,
 		["groups"] = {
-			m(COLDRIDGE_VALLEY, {
+			m(MAP.COLDRIDGE_VALLEY, {
 				["lore"] = "Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",
 				["icon"] = 236444,
 				-- #if BEFORE MOP
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 8416,	-- Felix Whindlebolt
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 41.9, 63.7, COLDRIDGE_VALLEY },
+								{ 41.9, 63.7, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 31.8, 74.4, MAP.DUN_MOROGH },
 								-- #else
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 21.4, 64.0, COLDRIDGE_VALLEY },
+										{ 21.4, 64.0, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 20.9, 76.1, MAP.DUN_MOROGH },
 										-- #endif
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 31.0, 84.1, COLDRIDGE_VALLEY },
+										{ 31.0, 84.1, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 22.8, 79.9, MAP.DUN_MOROGH },
 										-- #endif
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 49.1, 80.4, COLDRIDGE_VALLEY },
+										{ 49.1, 80.4, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 26.3, 79.3, MAP.DUN_MOROGH },
 										-- #endif
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 786,	-- Grelin Whitebeard
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 42.7, 62.2, COLDRIDGE_VALLEY },
+								{ 42.7, 62.2, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 32.1, 74.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 65.6, 42.7, COLDRIDGE_VALLEY },
+								{ 65.6, 42.7, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 36.6, 70.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37087,	-- Jona Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37121,	-- Teegli Merrowith <Mage Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.3, 14.5, COLDRIDGE_VALLEY },
+								{ 61.3, 14.5, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.7, 64.8, MAP.DUN_MOROGH },
 								-- #endif
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -304,7 +304,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37087,	-- Jona Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 1104,	-- Grundel Harkin
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.7, 22.1, COLDRIDGE_VALLEY },
+								{ 61.7, 22.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 53.8, 27.4, COLDRIDGE_VALLEY },
+										{ 53.8, 27.4, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 27.4, 68.0, MAP.DUN_MOROGH },
 										-- #endif
@@ -369,7 +369,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								{ "n", 37087 },	-- Jona Ironstock
 								{ "i", 85174 },	-- Elegant Rune (PQI!)
 							},
-							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							["coord"] = { 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -432,7 +432,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 63.7, 20.1, COLDRIDGE_VALLEY},
+								{ 63.7, 20.1, MAP.COLDRIDGE_VALLEY},
 								-- #else
 								{ 36.2, 65.9, MAP.DUN_MOROGH },
 								-- #endif
@@ -470,7 +470,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 59.5, 20.4, COLDRIDGE_VALLEY },
+								{ 59.5, 20.4, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.4, 65.9, MAP.DUN_MOROGH },
 								-- #endif
@@ -495,7 +495,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37087,	-- Jona Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 56.7, 27.8, COLDRIDGE_VALLEY },
+										{ 56.7, 27.8, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 34.8, 67.4, MAP.DUN_MOROGH },
 										-- #endif
@@ -523,7 +523,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 39.7, 29.1, COLDRIDGE_VALLEY },
+										{ 39.7, 29.1, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 31.5, 67.6, MAP.DUN_MOROGH },
 										-- #endif
@@ -536,7 +536,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 68.2, 27.9, COLDRIDGE_VALLEY },
+										{ 68.2, 27.9, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 37.1, 67.4, MAP.DUN_MOROGH },
 										-- #endif
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 6782,	-- Hands Springsprocket
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 87.5, 44.4, COLDRIDGE_VALLEY },
+								{ 87.5, 44.4, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 40.88, 70.68, MAP.DUN_MOROGH },
 								-- #endif
@@ -562,7 +562,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37081,	-- Joren Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 67.1, 41.3, COLDRIDGE_VALLEY },
+								{ 67.1, 41.3, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 36.9, 70.0, MAP.DUN_MOROGH },
 								-- #endif
@@ -599,7 +599,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -622,7 +622,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -637,7 +637,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37081,	-- Joren Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 67.1, 41.3, COLDRIDGE_VALLEY },
+								{ 67.1, 41.3, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 36.9, 70.0, MAP.DUN_MOROGH },
 								-- #endif
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 786,	-- Grelin Whitebeard
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 42.7, 62.2, COLDRIDGE_VALLEY },
+								{ 42.7, 62.2, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 32.06, 74.18, MAP.DUN_MOROGH },
 								-- #endif
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 						q(31151, {	-- Kick, Punch, It's All in the Mind
 							["qg"] = 63285,	-- Lo
-							["coord"] = { 63.2, 22.3, COLDRIDGE_VALLEY },
+							["coord"] = { 63.2, 22.3, MAP.COLDRIDGE_VALLEY },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37081,	-- Joren Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 67.1, 41.3, COLDRIDGE_VALLEY },
+								{ 67.1, 41.3, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 36.9, 70.0, MAP.DUN_MOROGH },
 								-- #endif
@@ -760,7 +760,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 1104,	-- Grundel Harkin
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.7, 22.1, COLDRIDGE_VALLEY },
+								{ 61.7, 22.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -813,7 +813,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37113,	-- Milo Geartwinge
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 69.8, 44.1, COLDRIDGE_VALLEY },
+								{ 69.8, 44.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 37.4, 70.6, MAP.DUN_MOROGH },
 								-- #endif
@@ -828,7 +828,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 62.5, 23.4, COLDRIDGE_VALLEY },
+										{ 62.5, 23.4, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 35.5, 65.1, MAP.DUN_MOROGH },
 										-- #endif
@@ -841,7 +841,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 62.2, 24.0, COLDRIDGE_VALLEY },
+										{ 62.2, 24.0, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 35.8, 64.6, MAP.DUN_MOROGH },
 										-- #endif
@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 62.1, 23.7, COLDRIDGE_VALLEY },
+										{ 62.1, 23.7, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 35.4, 66.0, MAP.DUN_MOROGH },
 										-- #endif
@@ -935,7 +935,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -958,7 +958,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -974,7 +974,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.9, 19.0, COLDRIDGE_VALLEY },
+								{ 61.9, 19.0, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 65.6, MAP.DUN_MOROGH },
 								-- #endif
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -1015,7 +1015,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37115,	-- Teo Hammerstorm <Shaman Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.8, 13.6, COLDRIDGE_VALLEY },
+								{ 61.8, 13.6, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 64.6, MAP.DUN_MOROGH },
 								-- #endif
@@ -1106,7 +1106,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
@@ -1128,7 +1128,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 43455,				-- Saripal Smolderbrew <Warlock Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.2, 17.5, COLDRIDGE_VALLEY},
+								{ 61.2, 17.5, MAP.COLDRIDGE_VALLEY},
 								-- #else
 								{ 35.7, 65.3, MAP.DUN_MOROGH },
 								-- #endif
@@ -1203,7 +1203,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.9, 24.6, COLDRIDGE_VALLEY },
+								{ 61.9, 24.6, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.7, MAP.DUN_MOROGH },
 								-- #endif
@@ -1248,7 +1248,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 786,	-- Grelin Whitebeard
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 42.7, 62.2, COLDRIDGE_VALLEY },
+								{ 42.7, 62.2, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 32.1, 74.2, MAP.DUN_MOROGH },
 								-- #else
@@ -1336,7 +1336,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 1354,	-- Apprentice Soren
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 43.2, 63.1, COLDRIDGE_VALLEY },
+								{ 43.2, 63.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 32.2, 74.4, MAP.DUN_MOROGH },
 								-- #endif
@@ -1348,7 +1348,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									["provider"] = { "n", 37108 },	-- Soothsayer Shi'kala
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 49.1, 81.6, COLDRIDGE_VALLEY },
+										{ 49.1, 81.6, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 33.2, 77.8, MAP.DUN_MOROGH },
 										-- #endif
@@ -1358,7 +1358,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									["provider"] = { "n", 37173 },	-- Soothsayer Rikkari
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 30.2, 85.4, COLDRIDGE_VALLEY },
+										{ 30.2, 85.4, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 29.6, 78.6, MAP.DUN_MOROGH },
 										-- #endif
@@ -1368,7 +1368,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									["provider"] = { "n", 37174 },	-- Soothsayer Mirim'koa
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 20.9, 67.4, COLDRIDGE_VALLEY },
+										{ 20.9, 67.4, MAP.COLDRIDGE_VALLEY },
 										-- #else
 										{ 27.8, 75.0, MAP.DUN_MOROGH },
 										-- #endif
@@ -1384,7 +1384,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 37087,	-- Jona Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 60.6, 21.1, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
@@ -1396,7 +1396,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.7, 14.6, COLDRIDGE_VALLEY },
+								{ 60.7, 14.6, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.6, 64.8, MAP.DUN_MOROGH },
 								-- #endif
@@ -1451,9 +1451,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["cr"] = 706,	-- Frostmane Troll Whelp
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 21.2, 66.2, COLDRIDGE_VALLEY },
-								{ 30.6, 84.8, COLDRIDGE_VALLEY },
-								{ 49.2, 80.2, COLDRIDGE_VALLEY },
+								{ 21.2, 66.2, MAP.COLDRIDGE_VALLEY },
+								{ 30.6, 84.8, MAP.COLDRIDGE_VALLEY },
+								{ 49.2, 80.2, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 37.4, 78.2, MAP.DUN_MOROGH },
 								{ 33.4, 77.6, MAP.DUN_MOROGH },
@@ -1467,9 +1467,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 21.2, 66.2, COLDRIDGE_VALLEY },
-								{ 30.6, 84.8, COLDRIDGE_VALLEY },
-								{ 49.2, 80.2, COLDRIDGE_VALLEY },
+								{ 21.2, 66.2, MAP.COLDRIDGE_VALLEY },
+								{ 30.6, 84.8, MAP.COLDRIDGE_VALLEY },
+								{ 49.2, 80.2, MAP.COLDRIDGE_VALLEY },
 								-- #else
 								{ 37.4, 78.2, MAP.DUN_MOROGH },
 								{ 33.4, 77.6, MAP.DUN_MOROGH },
@@ -1521,10 +1521,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 55.0, 44.6, COLDRIDGE_VALLEY },
-								{ 61.6, 59.2, COLDRIDGE_VALLEY },
-								{ 73.0, 56.6, COLDRIDGE_VALLEY },
-								{ 47.0, 43.4, COLDRIDGE_VALLEY },
+								{ 55.0, 44.6, MAP.COLDRIDGE_VALLEY },
+								{ 61.6, 59.2, MAP.COLDRIDGE_VALLEY },
+								{ 73.0, 56.6, MAP.COLDRIDGE_VALLEY },
+								{ 47.0, 43.4, MAP.COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 34.4, 71.0, MAP.DUN_MOROGH },
 								{ 34.8, 74.0, MAP.DUN_MOROGH },
@@ -2264,7 +2264,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
 					["coord"] = { 28.6, 66.4, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { COLDRIDGE_VALLEY },
+					["maps"] = { MAP.COLDRIDGE_VALLEY },
 					["races"] = { DWARF },
 					["classes"] = { PRIEST },
 					["isBreadcrumb"] = true,
