@@ -341,10 +341,10 @@ app:CreateWindow("Tradeskills", {
 		local criteria = {
 			SearchValueCriteria = {
 				-- Include if the field of the group matches the desired value (or via translated requireSkill value matches)
-				-- and if it filters for the current character
+				-- and is not a Quest Objective and if it filters for the current character
 				function(o, field, value)
 					local v = o[field]
-					return v and (v == value or app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)
+					return o.__type ~= "Objective" and v and (v == value or app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)
 						and app.CurrentCharacterFilters(o)
 				end
 			}
