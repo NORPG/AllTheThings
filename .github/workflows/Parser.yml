@@ -95,7 +95,7 @@ jobs:
           continue-on-error: true
           run: |
             cd .contrib/Parser
-            "Parser.exe" auto baseconfig=".config/retail/retail.config" config="../.db/forever/.config/forever.config"
+            "Parser.exe" auto baseconfig=.config/retail/retail.config config="../.db/forever/.config/forever.config"
           shell: cmd
 
       - name: Full Success Check
