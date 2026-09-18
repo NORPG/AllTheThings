@@ -1637,15 +1637,11 @@ root(ROOTS.Zones, {
 						["description"] = "Can randomly drop from any Mogu related mob in the zone.",
 					}),
 					i(85582, {	-- Shao-Tien Cage Key
-						-- #if AFTER 5.4.0
-						["description"] = "Not techically removed with 5.4.0, cages can still be opened and you can get an assistant in battle for a short duration. Other than that, it is useless.",
-						-- #endif
 						["crs"] = {
 							63641,	-- Shao-Tien Torturer
 							63610,	-- Shao-Tien Dominator
 							63611,	-- Shao-Tien Soul-Caller
 						},
-						["timeline"] = { REMOVED_5_4_0 },
 					}),
 					i(86547),	-- Skyshard
 					i(86546, {	-- Sky Crystal
