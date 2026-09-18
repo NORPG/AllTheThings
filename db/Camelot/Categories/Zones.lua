@@ -16275,5 +16275,13 @@ s(158411,6315,{awp=100107,coords={
 p(58,{coords={
 [56]={{67.3,47.2}}},crs={1016,1038,1111,4040,41132,41137,41145,41293,41342,41388,41389,41390,41391,41394,41400,41401,41419,41424,41425,42041,42042,42043,44116},description="Teaches you how to summon the pet Crimson Whelpling.\n\nThe best spot to farm this pet is near the border with The Twilight Highlands. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",itemID=8499,npcID=7544,petTypeID=2,q=1,spellID=10697}),
 s(156103,756,{awp=100107,coords={
-[56]={{48,18.6},{61.2,25.4}}},crs={1053},f=22,lvl=24,q=2,rwp=40003})})}})}})}})
+[56]={{48,18.6},{61.2,25.4}}},crs={1053},f=22,lvl=24,q=2,rwp=40003})})}})}}),
+m(2521,{awp=16001,g={
+h(-45,{
+q(92460,{coords={
+[2521]={{42.8,23.4}}},qgs={251362}}),
+q(92461,{coords={
+[2521]={{42.1,23.5}}},qgs={251361}}),
+q(92462,{coords={
+[2521]={{43.4,24.8}}},qgs={251368}})})}})}})
 end)

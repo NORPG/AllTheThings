@@ -1,6 +1,6 @@
 do
 local _, app = ...
-if app.GameBuildVersion > 40000 then
+if app.GameBuildVersion > 40000 or app.IsForever then
 	-- Not compatible post-Cata.
 	return;
 end

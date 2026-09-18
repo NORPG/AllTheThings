@@ -1,6 +1,7 @@
 local app = select(2, ...);
 app.GameBuildVersion = select(4, GetBuildInfo());
-app.IsRetail = app.GameBuildVersion >= 110000 or (app.GameBuildVersion >= 16001 and app.GameBuildVersion < 20000);
+app.IsForever = app.GameBuildVersion >= 16001 and app.GameBuildVersion < 20000;
+app.IsRetail = app.GameBuildVersion >= 110000 or app.IsForever;
 app.IsClassic = not app.IsRetail;
 
 app.EmptyFunction = function() end;
