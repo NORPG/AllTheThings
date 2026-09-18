@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
-	--lore = "",
+	lore = "A sprawling landscape in the Eastern Kingdom which shifts from lush hillsides to ruined keeps of old.",
 	icon = 1032150,
 	groups = {
 		n(ACHIEVEMENTS, {
