@@ -66,15 +66,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			"Workshop Entrance",
 		},
 		-- #endif
-		["mapID"] = GNOMEREGAN,
-		["coords"] = {
-			-- #if AFTER MOP
-			{ 30.1, 74.6, NEW_TINKERTOWN_LOWER },	-- Gnomeregan [Dun Morogh]
-			-- #else
-			{ 18.4, 38.6, MAP.DUN_MOROGH },	-- Gnomeregan [Dun Morogh]
-			-- #endif
-		},
-		["maps"] = { GNOMEREGAN_LEVEL2, GNOMEREGAN_LEVEL3, GNOMEREGAN_LEVEL4 },
+		["mapID"] = MAP.GNOMEREGAN,
+		["coord"] = { 18.4, 38.6, MAP.DUN_MOROGH },	-- Gnomeregan [Dun Morogh]
 		-- #if SEASON_OF_DISCOVERY
 		["sharedLockout"] = 1,
 		["isRaid"] = true,

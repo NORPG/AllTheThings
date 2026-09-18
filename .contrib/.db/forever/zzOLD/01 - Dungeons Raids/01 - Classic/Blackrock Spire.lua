@@ -50,24 +50,9 @@ UPPER_BLACKROCK_SPIRE = createHeader({
 });
 
 BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
-	-- #if BEFORE MOP
 	["lore"] = "The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",
-	-- #endif
-	-- #if BEFORE WOD
 	["zone-text-areaID"] = 1583,	-- Blackrock Spire
-	-- #endif
-	-- #if AFTER 6.0.1
-	["coord"] = { 80.46, 40.65, BLACKROCK_MOUNTAIN },
-	-- #endif
-	["maps"] = {
-		BLACKROCK_SPIRE,
-		LBRS_TAZZALOR,
-		LBRS_SKITTERWEB_TUNNELS,
-		LBRS_HORDEMAR_CITY,
-		LBRS_HALL_OF_BLACKHAND,
-		LBRS_HALYCONS_LAIR,
-		LBRS_CHAMBER_OF_BATTLE,
-	},
+	["mapID"] = MAP.BLACKROCK_SPIRE,
 	["lvl"] = 50,
 	["groups"] = {
 		n(QUESTS, {
@@ -180,7 +165,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10637,	-- Malyfous Darkhammer
 				["coord"] = { 61.0, 38.8, MAP.WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { SCHOLOMANCE, STRATHOLME },
+				["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 10 },	-- Frayed Abomination Stitching
@@ -201,7 +186,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
 				["coord"] = { 39.4, 66.7, MAP.WESTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { STRATHOLME, MAP.EASTERN_PLAGUELANDS },
+				["maps"] = { MAP.STRATHOLME, MAP.EASTERN_PLAGUELANDS },
 				["cost"] = {
 					{ "i", 12871, 1 },	-- Chromatic Carapace
 					{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -220,7 +205,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10637,	-- Malyfous Darkhammer
 				["coord"] = { 61.0, 38.8, MAP.WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { STRATHOLME },
+				["maps"] = { MAP.STRATHOLME },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 5 },	-- Frayed Abomination Stitching
@@ -614,7 +599,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10637,	-- Malyfous Darkhammer
 				["coord"] = { 61.0, 38.8, MAP.WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { SCHOLOMANCE, STRATHOLME },
+				["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 5 },	-- Frayed Abomination Stitching
@@ -635,7 +620,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
 				["coord"] = { 39.4, 66.7, MAP.WESTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { SCHOLOMANCE, STRATHOLME, MAP.EASTERN_PLAGUELANDS },
+				["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME, MAP.EASTERN_PLAGUELANDS },
 				["cost"] = {
 					{ "i", 12871, 1 },	-- Chromatic Carapace
 					{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -1574,7 +1559,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["provider"] = { "o", 175886 },	-- Roughshod Pike
 			}),
 			n(9218, {	-- Spirestone Battle Lord (Rare)
-				["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
 				["description"] =
 					-- #if AFTER 6.0.1
 					"This is a Rare Creature and, as such, is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
@@ -1596,7 +1580,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			n(9219, {	-- Spirestone Butcher (Rare)
-				["coord"] = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
 				["description"] =
 					-- #if AFTER 6.0.1
 					"This is a Rare Creature and, as such, is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
@@ -1618,7 +1601,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			n(9217, {	-- Spirestone Lord Magus (Rare)
-				["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
 				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
@@ -1911,10 +1893,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
-				["coords"] = {
-					{ 53.0, 67.0, LBRS_TAZZALOR },
-					{ 49.0, 55.0, LBRS_TAZZALOR },
-				},
 				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
 					i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
@@ -1942,7 +1920,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			n(10376, {	-- Crystal Fang (Rare)
-				["coord"] = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
 				["description"] =
 					-- #if AFTER 6.0.1
 					"This is a Rare Creature and, as such, is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
@@ -2153,10 +2130,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
-				["coords"] = {
-					{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
-					{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
-				},
 				["description"] =
 					-- #if AFTER 6.0.1
 					"This is a Rare Creature and, as such, is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",

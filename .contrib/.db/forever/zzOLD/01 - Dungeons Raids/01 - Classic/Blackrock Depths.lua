@@ -53,9 +53,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["zone-text-areaID"] = 1584,	-- Blackrock Depths
 		-- #endif
 		["description"] = "The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",
-		["mapID"] = BLACKROCK_DEPTHS,
+		["mapID"] = MAP.BLACKROCK_DEPTHS,
 		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
-		["maps"] = { BLACKROCK_DEPTHS_LEVEL2 },
 		["lvl"] = 42,
 		["groups"] = {
 			n(FACTIONS, {

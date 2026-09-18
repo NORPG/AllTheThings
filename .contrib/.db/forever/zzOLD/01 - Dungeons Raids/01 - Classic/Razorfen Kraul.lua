@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lore"] = "Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",
 		-- #endif
 		["zone-text-areaID"] = 491,	-- Razorfen Kraul
-		["mapID"] = RAZORFEN_KRAUL,
+		["mapID"] = MAP.RAZORFEN_KRAUL,
 		["coords"] = {
 			-- #if AFTER CATA
 			{ 41.0, 94.6, SOUTHERN_BARRENS },

@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84147, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84155, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -62,14 +62,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { DRUID },
 					["cost"] = {
@@ -116,15 +110,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { DRUID },
 					["cost"] = {
@@ -167,14 +155,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { DRUID },
 					["cost"] = {
@@ -211,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84148, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -223,7 +205,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84156, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -263,14 +245,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { HUNTER },
 					["cost"] = {
@@ -306,13 +282,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { HUNTER },
 					["cost"] = {
@@ -345,14 +315,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { HUNTER },
 					["cost"] = {
@@ -379,7 +343,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84149, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -391,7 +355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84157, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -429,7 +393,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
-					["maps"] = { SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 226730, 1 },	-- Magister's Boots
@@ -467,15 +431,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { MAGE },
 					["cost"] = {
@@ -500,14 +458,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { MAGE },
 					["cost"] = {
@@ -525,7 +477,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(84150, {	-- An Earnest Proposition [A]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-					["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
@@ -553,14 +505,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 226738, 1 },	-- Lightforge Boots
@@ -595,7 +541,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
+					["maps"] = { MAP.BLACKROCK_DEPTHS, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 226732, 1 },	-- Lightforge Belt
 						{ "i", 226737, 1 },	-- Lightforge Gauntlets
@@ -626,14 +572,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 226733, 1 },	-- Lightforge Helm
@@ -666,7 +606,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84151, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -678,7 +618,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84158, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -718,15 +658,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						SCHOLOMANCE,
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { PRIEST },
 					["cost"] = {
@@ -762,14 +696,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { PRIEST },
 					["cost"] = {
@@ -802,14 +730,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { PRIEST },
 					["cost"] = {
@@ -836,7 +758,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84152, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -848,7 +770,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84159, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -887,7 +809,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
-					["maps"] = { SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 226703, 1 },	-- Shadowcraft Boots
@@ -922,13 +844,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -961,14 +877,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -994,7 +904,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(84160, {	-- An Earnest Proposition [H]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-					["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 16671, 1 },	-- Bindings of Elements
 						{ "g", 200000 },	-- 20g
@@ -1030,14 +940,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 226752, 1 },	-- Boots of Elements
@@ -1079,13 +983,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					["maps"] = {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 226754, 1 },	-- Cord of Elements
@@ -1122,14 +1020,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 226755, 1 },	-- Coif of Elements
@@ -1167,7 +1059,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84153, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1179,7 +1071,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84161, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1218,7 +1110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
-					["maps"] = { SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 226763, 1 },	-- Dreadmist Sandals
@@ -1252,7 +1144,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
-					["maps"] = { SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 226761, 1 },	-- Dreadmist Belt
@@ -1284,14 +1176,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -1318,7 +1204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84154, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1330,7 +1216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84162, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1370,15 +1256,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						SCHOLOMANCE,
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { WARRIOR },
 					["cost"] = {
@@ -1414,14 +1294,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { WARRIOR },
 					["cost"] = {
@@ -1454,14 +1328,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 226769, 1 },	-- Helm of Valor
@@ -1489,7 +1357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8905, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1501,7 +1369,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8913, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1532,14 +1400,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { DRUID },
 					["cost"] = {
@@ -1566,15 +1428,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { DRUID },
 					["cost"] = {
@@ -1599,14 +1455,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { DRUID },
 					["cost"] = {
@@ -1625,7 +1475,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8906, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1637,7 +1487,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8914, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1668,14 +1518,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { HUNTER },
 					["cost"] = {
@@ -1702,13 +1546,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { HUNTER },
 					["cost"] = {
@@ -1733,14 +1571,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { HUNTER },
 					["cost"] = {
@@ -1759,7 +1591,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8907, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1771,7 +1603,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8915, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1801,7 +1633,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
-					["maps"] = { SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 16682, 1 },	-- Magister's Boots
@@ -1827,15 +1659,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { MAGE },
 					["cost"] = {
@@ -1860,14 +1686,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { MAGE },
 					["cost"] = {
@@ -1887,7 +1707,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8908, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1899,7 +1719,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(10493, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1930,14 +1750,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { PALADIN },
 					["cost"] = {
@@ -1963,7 +1777,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
+					["maps"] = { MAP.BLACKROCK_DEPTHS, MAP.STRATHOLME },
 					["classes"] = { PALADIN },
 					["cost"] = {
 						{ "i", 16723, 1 },	-- Lightforge Belt
@@ -1987,14 +1801,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { PALADIN },
 					["cost"] = {
@@ -2011,7 +1819,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8908, {	-- An Earnest Proposition [A]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-					["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
@@ -2031,14 +1839,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 16725, 1 },	-- Lightforge Boots
@@ -2058,7 +1860,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
+					["maps"] = { MAP.BLACKROCK_DEPTHS, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 16723, 1 },	-- Lightforge Belt
 						{ "i", 16724, 1 },	-- Lightforge Gauntlets
@@ -2076,14 +1878,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 16727, 1 },	-- Lightforge Helm
@@ -2104,7 +1900,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8909, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2116,7 +1912,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8916, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2147,15 +1943,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						SCHOLOMANCE,
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { PRIEST },
 					["cost"] = {
@@ -2182,14 +1972,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { PRIEST },
 					["cost"] = {
@@ -2214,14 +1998,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { PRIEST },
 					["cost"] = {
@@ -2240,7 +2018,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8910, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2252,7 +2030,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8917, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2282,7 +2060,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
-					["maps"] = { SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 16711, 1 },	-- Shadowcraft Boots
@@ -2308,13 +2086,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -2339,14 +2111,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -2366,7 +2132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(10492, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2378,7 +2144,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8918, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2409,14 +2175,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { SHAMAN },
 					["cost"] = {
@@ -2443,13 +2203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { SHAMAN },
 					["cost"] = {
@@ -2474,14 +2228,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { SHAMAN },
 					["cost"] = {
@@ -2498,7 +2246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8918, {	-- An Earnest Proposition [H]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-					["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 16671, 1 },	-- Bindings of Elements
 						{ "g", 200000 },	-- 20g
@@ -2525,14 +2273,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 16670, 1 },	-- Boots of Elements
@@ -2553,13 +2295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					["maps"] = {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 16673, 1 },	-- Cord of Elements
@@ -2578,14 +2314,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 16667, 1 },	-- Coif of Elements
@@ -2606,7 +2336,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8911, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2618,7 +2348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8919, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2648,7 +2378,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
-					["maps"] = { SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 16704, 1 },	-- Dreadmist Sandals
@@ -2673,7 +2403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
-					["maps"] = { SCHOLOMANCE, STRATHOLME },
+					["maps"] = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 16702, 1 },	-- Dreadmist Belt
@@ -2697,14 +2427,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -2723,7 +2447,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8912, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
-						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2735,7 +2459,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8920, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
-						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["maps"] = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2766,15 +2490,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						SCHOLOMANCE,
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { WARRIOR },
 					["cost"] = {
@@ -2801,14 +2519,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						STRATHOLME,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.STRATHOLME,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["classes"] = { WARRIOR },
 					["cost"] = {
@@ -2833,14 +2545,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						SCHOLOMANCE,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.SCHOLOMANCE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 16731, 1 },	-- Helm of Valor
@@ -2952,7 +2658,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
-						DIRE_MAUL,
+						MAP.DIRE_MAUL,
 						235,	-- Gordok Commons
 						236,	-- Capital Gardens
 						237,	-- Court of the Highborne
@@ -3042,13 +2748,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
@@ -3125,7 +2825,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.85, 16.75, MAP.EASTERN_PLAGUELANDS },
-					["maps"] = { STRATHOLME },
+					["maps"] = { MAP.STRATHOLME },
 					["lvl"] = 58,
 					["groups"] = { i(22137) },	-- Ysida's Satchel
 				}),
@@ -3133,18 +2833,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["maps"] = {
-						DIRE_MAUL,
+						MAP.DIRE_MAUL,
 						235,	-- Gordok Commons
 						236,	-- Capital Gardens
 						237,	-- Court of the Highborne
 						238,	-- Prison of Immol'Thar
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["lvl"] = 58,
 					["groups"] = {
@@ -3165,13 +2859,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
@@ -3313,7 +3001,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 34.95, 38.29, MAP.ORGRIMMAR },
 					}),
-					["maps"] = { MAP.EASTERN_PLAGUELANDS, STRATHOLME },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS, MAP.STRATHOLME },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
 				},
@@ -3322,13 +3010,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
@@ -3417,7 +3099,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8946, {	-- Proof of Life
 					["sourceQuest"] = 8945,	-- Dead Man's Plea
 					["qg"] = 16031,	-- Ysida Harmon
-					["maps"] = { MAP.EASTERN_PLAGUELANDS, STRATHOLME },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS, MAP.STRATHOLME },
 					["cost"] = { { "i", 22139, 1 } },	-- Ysida's Locket
 					["lvl"] = 58,
 				}),
@@ -3426,13 +3108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16073,	-- Spirit of Lord Valthalak
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = { { "i", 22056, 1 } },	-- Brazier of Beckoning [Lord Valthalak]
 					["lvl"] = 58,
@@ -3464,8 +3140,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["maps"] = {
-						BLACKROCK_DEPTHS,
-						DIRE_MAUL,
+						MAP.BLACKROCK_DEPTHS,
+						MAP.DIRE_MAUL,
 						235,	-- Gordok Commons
 						236,	-- Capital Gardens
 						237,	-- Court of the Highborne
@@ -3516,7 +3192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8949,	-- Falrin's Vendetta
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["maps"] = {
-						DIRE_MAUL,
+						MAP.DIRE_MAUL,
 						235,	-- Gordok Commons
 						236,	-- Capital Gardens
 						237,	-- Court of the Highborne
@@ -3538,13 +3214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -3566,7 +3236,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						DIRE_MAUL,
+						MAP.DIRE_MAUL,
 						239,	-- Warpwood Quarter
 					},
 					["cost"] = {
@@ -3587,7 +3257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8968, {	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
 					["sourceQuest"] = 8964,	-- Components of Importance [HUNTER, ROGUE]
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, STRATHOLME },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien and Sothos]
@@ -3609,7 +3279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8969, {	-- The Left Piece of Lord Valthalak's Amulet [PALADIN, PRIEST, SHAMAN]
 					["sourceQuest"] = 8965,	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
@@ -3630,7 +3300,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						DIRE_MAUL,
+						MAP.DIRE_MAUL,
 						239,	-- Warpwood Quarter
 					},
 					["cost"] = {
@@ -3658,13 +3328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -3689,7 +3353,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8991, {	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
 					["sourceQuest"] = 8987,	-- More Components of Importance [PRIEST, MAGE]
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, STRATHOLME },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
@@ -3716,7 +3380,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8992, {	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
 					["sourceQuest"] = 8988,	-- More Components of Importance [HUNTER, WARLOCK]
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
@@ -3745,14 +3409,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
-						BLACKROCK_DEPTHS,
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_DEPTHS,
+						MAP.BLACKROCK_SPIRE,
 						MAP.EASTERN_PLAGUELANDS,
 						MAP.SILITHUS,
 						MAP.WESTERN_PLAGUELANDS,

@@ -36,13 +36,10 @@ WICKED_GROTTO = createHeader({
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(232, {	-- Maraudon
-		-- #if BEFORE MOP
 		["lore"] = "Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",
-		-- #endif
 		["zone-text-areaID"] = 2100,	-- Maraudon
-		["mapID"] = MARAUDON,
+		["mapID"] = MAP.MARAUDON,
 		["coord"] = { 35.7, 55.5, MAP.DESOLACE },
-		["maps"] = { MARAUDON_LEVEL2, MARAUDON_OUTDOOR_LEVEL1, MARAUDON_OUTDOOR_LEVEL2 },
 		["lvl"] = lvlsquish(41, 30, 10),
 		["groups"] = {
 			n(QUESTS, {
@@ -313,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(17684),	-- Theradric Crystal Carving
 			}),
 			n(FOULSPORE_CAVERN, {
-				["coord"] = { 78.0, 55.7, MARAUDON_OUTDOOR_LEVEL1 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
+				--["coord"] = { 78.0, 55.7, MARAUDON_OUTDOOR_LEVEL1 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
 				["groups"] = {
 					e(423, {	-- Noxxion
 						["creatureID"] = 13282,
@@ -361,7 +358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(WICKED_GROTTO, {
-				["coord"] = { 51.7, 24.7, MARAUDON_OUTDOOR_LEVEL2 },	-- Maraudon [Purple], Foulspore Cavern [Desolace]
+				--["coord"] = { 51.7, 24.7, MARAUDON_OUTDOOR_LEVEL2 },	-- Maraudon [Purple], Foulspore Cavern [Desolace]
 				["groups"] = {
 					-- #if AFTER 4.0.3
 					e(425, {	-- Tinkerer Gizlock
@@ -393,7 +390,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(12237, {	-- Meshlok the Harvester
 						["description"] = "This is a Rare Creature and, as such, is not always present.",
-						["coord"] = { 24.0, 75.0, MARAUDON },
+						["coord"] = { 24.0, 75.0, MAP.MARAUDON },
 						["groups"] = {
 							i(17741),	-- Nature's Embrace
 							i(17742),	-- Fungus Shroud Armor
@@ -403,7 +400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(MARAUDON_PORTAL, {
-				["coord"] = { 44.5, 77.1, MARAUDON_OUTDOOR_LEVEL2 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
+				--["coord"] = { 44.5, 77.1, MARAUDON_OUTDOOR_LEVEL2 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 				-- #if BEFORE 3.0.8
 				["sourceQuest"] = 7046,	-- The Scepter of Celebras
 				["cost"] = { { "i", 17191, 1 } },	-- Scepter of Celebras

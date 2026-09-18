@@ -6,7 +6,7 @@ root(ROOTS.Instances, {
 	inst(2999, {	-- Ruins of Lordaeron
 		-- ["lore"] = "",
 		["zone-text-areaID"] = 16611,	-- Ruins of Lordaeron
-		["coord"] = { 50.0, 50.0, TIRISFAL_GLADES },
+		["coord"] = { 50.0, 50.0, MAP.TIRISFAL_GLADES },
 		["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		["lvl"] = 15,
 		["groups"] = {

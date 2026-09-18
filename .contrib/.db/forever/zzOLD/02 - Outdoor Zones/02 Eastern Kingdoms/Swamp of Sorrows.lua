@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						i(64596, {	-- Dream Pendant
 							["timeline"] = { ADDED_4_0_3 },
@@ -657,7 +657,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 				}),
 				q(9440, {	-- Little Morsels
 					["qg"] = 17109,	-- Cersei Dusksinger
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/ (10 [TBC] / 5 [WRATH]) Atal'ai Artifact
 							["providers"] = {
@@ -1071,7 +1071,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Priestess Udum'bra slain
 							["provider"] = { "n", 46424 },	-- Priestess Udum'bra
@@ -1084,7 +1084,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Jammal'an the Prophet slain
 							["provider"] = { "n", 46656 },	-- Jammal'an the Prophet
@@ -1097,7 +1097,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Gomora the Bloodletter slain
 							["provider"] = { "n", 46623 },	-- Gomora the Bloodletter
@@ -1210,7 +1210,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["isBreadcrumb"] = true,
 				}),
 				q(1421, {	-- The Lost Caravan
@@ -1471,7 +1471,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1480,7 +1480,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),

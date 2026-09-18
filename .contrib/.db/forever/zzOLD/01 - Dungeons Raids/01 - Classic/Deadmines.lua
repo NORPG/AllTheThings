@@ -3,25 +3,10 @@
 -----------------------------------------------------
 
 DEADMINES_INSTANCE = inst(63, {	-- Deadmines
-	-- #if BEFORE MOP
 	["lore"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
-	-- #endif
 	["zone-text-areaID"] = 1581,	-- "The Deadmines" now points to the Deadmines.
-	["mapID"] = DEADMINES,
-	["coords"] = {
-		-- #if AFTER CATA
-		{ 25.6, 51.0, DEADMINES_OUTDOORS },	-- Deadmines, The Deadmines [Westfall]
-		{ 42.6, 71.8, MAP.WESTFALL },	-- Building entrance
-		-- #else
-		{ 42.2, 82.6, MAP.WESTFALL },
-		-- #endif
-	},
-	["maps"] = {
-		DEADMINES_LEVEL2,
-		-- #if BEFORE CATA
-		DEADMINES_OUTDOORS,
-		-- #endif
-	},
+	["mapID"] = MAP.DEADMINES,
+	["coord"] = { 42.2, 82.6, MAP.WESTFALL },
 	["lvl"] = 10,
 	["groups"] = {
 		n(QUESTS, {
@@ -319,15 +304,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		n(RARES, {
 			n(596, {	-- Brainwashed Noble
 				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
-				["coords"] = {
-					-- #if BEFORE CATA
-					{ 44.0, 78.3, MAP.WESTFALL },
-					-- #else
-					{ 57.4, 42.9, DEADMINES_OUTDOORS },
-					{ 46.8, 47.8, DEADMINES_OUTDOORS },
-					{ 61.7, 65.8, DEADMINES_OUTDOORS },
-					-- #endif
-				},
+				["coord"] = { 44.0, 78.3, MAP.WESTFALL },
 				["groups"] = {
 					i(1933, {	-- Staff of Conjuring
 						["timeline"] = { ADDED_10_1_7 },
@@ -342,13 +319,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			n(626, {	-- Foreman Thistlenettle
 				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
-				["coords"] = {
-					-- #if BEFORE CATA
-					{ 42.2, 82.6, MAP.WESTFALL },
-					-- #else
-					{ 55.8, 91.2, DEADMINES_OUTDOORS },
-					-- #endif
-				},
+				["coord"] = { 42.2, 82.6, MAP.WESTFALL },
 				["groups"] = {
 					i(1875),	-- Thistlenettle's Badge
 					i(2167),	-- Foreman's Gloves
@@ -358,16 +329,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			n(599, {	-- Marisa du'Paige
 				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
-				["coords"] = {
-					-- #if BEFORE CATA
-					{ 42.2, 79.9, MAP.WESTFALL },
-					-- #else
-					{ 52.8, 54.6, DEADMINES_OUTDOORS },
-					{ 56.2, 67.8, DEADMINES_OUTDOORS },
-					{ 41.4, 56.6, DEADMINES_OUTDOORS },
-					{ 29.6, 61.4, DEADMINES_OUTDOORS },
-					-- #endif
-				},
+				["coord"] = { 42.2, 79.9, MAP.WESTFALL },
 				["groups"] = {
 					i(3019, {	-- Noble's Robe
 						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

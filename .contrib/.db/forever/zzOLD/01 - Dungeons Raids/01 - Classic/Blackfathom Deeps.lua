@@ -18,7 +18,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #else
 		["coord"] = { 14.0, 11.1, MAP.ASHENVALE },
 		-- #endif
-		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
+		["mapID"] = MAP.BLACKFATHOM_DEEPS,
 		-- #if SEASON_OF_DISCOVERY
 		["sharedLockout"] = 1,
 		["isRaid"] = true,

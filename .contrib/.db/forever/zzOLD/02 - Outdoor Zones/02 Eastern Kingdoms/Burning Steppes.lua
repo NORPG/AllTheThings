@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["provider"] = { "o", 207304 },	-- Adventure Board
 					["coord"] = { 72.9, 65.2, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] =
@@ -537,7 +537,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["provider"] = { "o", 207303 },	-- Adventure Board
 					["coord"] = { 17.0, 51.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] =
@@ -1198,7 +1198,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 12.4, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SCHOLOMANCE },
+					["maps"] = { MAP.SCHOLOMANCE },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),

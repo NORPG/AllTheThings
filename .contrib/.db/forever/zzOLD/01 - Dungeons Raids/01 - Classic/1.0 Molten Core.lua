@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #if BEFORE 5.4.0
 		["sourceQuest"] = 7848,	-- Attunement to the Core
 		-- #endif
-		["mapID"] = MOLTEN_CORE,
+		["mapID"] = MAP.MOLTEN_CORE,
 		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
@@ -270,7 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 14387,	-- Lothos Riftwaker
 					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
 					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Core Fragment
@@ -291,7 +291,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 14387,	-- Lothos Riftwaker
 					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["timeline"] = { ADDED_1_3_0 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Core Fragment
@@ -310,13 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
 					["maps"] = {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["lvl"] = 55,
 					["groups"] = {

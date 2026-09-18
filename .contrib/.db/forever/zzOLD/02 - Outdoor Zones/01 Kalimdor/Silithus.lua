@@ -1854,7 +1854,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(86674, {	-- The Perfect Poison
 					["qg"] = 16091,	-- Dirk Thunderwood
 					["coord"] = { 52.1, 39.1, MAP.SILITHUS },
-					["maps"] = { RUINS_OF_AHNQIRAJ, ZULGURUB },
+					["maps"] = { MAP.RUINS_OF_AHNQIRAJ, MAP.ZULGURUB },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Venoxis's Venom Sac
@@ -1876,7 +1876,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 16091,	-- Dirk Thunderwood
 					["coord"] = { 52.1, 39.1, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { RUINS_OF_AHNQIRAJ, ZULGURUB },
+					["maps"] = { MAP.RUINS_OF_AHNQIRAJ, MAP.ZULGURUB },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Venoxis's Venom Sac

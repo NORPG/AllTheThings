@@ -14,10 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 19,	-- Zul'Gurub
 		-- #endif
-		["maps"] = {
-			ZULGURUB,
-			ZULGURUB_OUTDOORS,
-		},
+		["mapsID"] = MAP.ZULGURUB,
 		["isRaid"] = true,
 		["lvl"] = 58,
 		["groups"] = {

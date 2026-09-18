@@ -1244,7 +1244,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 4086,	-- Veenix <Venture Co. Merchant>
 					["coord"] = { 58.2, 51.6, MAP.STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { MAP.SILVERPINE_FOREST, SHADOWFANG_KEEP },
+					["maps"] = { MAP.SILVERPINE_FOREST, MAP.SHADOWFANG_KEEP },
 					["classes"] = { ROGUE },
 					["lockCriteria"] = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
 					["lvl"] = 20,
@@ -2656,7 +2656,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
 					["coord"] = { 59.2, 62.4, MAP.STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { MAP.ASHENVALE, WAILING_CAVERNS },
+					["maps"] = { MAP.ASHENVALE, MAP.WAILING_CAVERNS },
 					["cost"] = {	-- You don't need to be on the quest to get these drops
 						{ "i", 209838, 1 },	-- Hypnotic Crystal
 						{ "i", 209840, 1 },	-- Gnarled Wand of Wild Magic

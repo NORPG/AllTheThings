@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 1344,	-- Prospector Ironband
 					["coord"] = { 65.9, 65.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { MAP.BADLANDS, ULDAMAN },
+					["maps"] = { MAP.BADLANDS, MAP.ULDAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1507,7 +1507,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 1470,	-- Ghak Healtouch
 					["coord"] = { 37.07, 49.38, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { MAP.BADLANDS, ULDAMAN },
+					["maps"] = { MAP.BADLANDS, MAP.ULDAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {

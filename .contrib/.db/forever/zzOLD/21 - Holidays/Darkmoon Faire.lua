@@ -2933,7 +2933,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180024 },	-- Mysterious Deadmines Chest
 				},
 				["timeline"] = { REMOVED_4_3_0 },
-				["maps"] = { DEADMINES },
+				["maps"] = { MAP.DEADMINES },
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -2978,7 +2978,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180055 },	-- Mysterious Wailing Caverns Chest
 				},
 				["timeline"] = { REMOVED_4_3_0 },
-				["maps"] = { WAILING_CAVERNS },
+				["maps"] = { MAP.WAILING_CAVERNS },
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {

@@ -1438,7 +1438,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				},
 				["qg"] = 15607,	-- Elder Farwhisper
-				["maps"] = { STRATHOLME },
+				["maps"] = { MAP.STRATHOLME },
 			}),
 			q(13021, {	-- Igasho the Elder
 				["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove. The Elder is just before you reach Ormorok's platform.",
@@ -1465,7 +1465,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["description"] = "Located inside Blackrock Depths at the Ring of Law, accessed through the Detention Block. From the entrance walk straight forward across the big central floor into the facing cave, and the Ring of Law can be accessed on the immediate left. \n\nWARNING: Approaching the Elder will also start the encounter, but you can escape the way you came before the gate closes.",
 				["qg"] = 15549,	-- Elder Morndeep
 				["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
-				["maps"] = { BLACKROCK_DEPTHS },
+				["maps"] = { MAP.BLACKROCK_DEPTHS },
 			}),
 			q(13022, {	-- Nurgen the Elder
 				["description"] = "After defeating Hadronox, jump to the lower level of the dungeon. The Elder is on the north side of the room where you land.",
@@ -1490,7 +1490,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				["qg"] = 15556,	-- Elder Splitrock
 				["coord"] = { 44.5, 77.1, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
-				["maps"] = { MARAUDON },
+				["maps"] = { MAP.MARAUDON },
 			}),
 			q(8713, {	-- Starsong the Elder
 				["description"] =
@@ -1507,7 +1507,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				},
 				["qg"] = 15593,	-- Elder Starsong
-				["maps"] = { TEMPLE_OF_ATALHAKKAR },
+				["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 			}),
 			q(8644, {	-- Stonefort the Elder
 				["description"] =
@@ -1520,15 +1520,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["coord"] = { 80.5, 40.7, BLACKROCK_MOUNTAIN },
 				-- #endif
 				["qg"] = 15560,	-- Elder Stonefort
-				["maps"] = {
-					BLACKROCK_SPIRE,
-					LBRS_TAZZALOR,
-					LBRS_SKITTERWEB_TUNNELS,
-					LBRS_HORDEMAR_CITY,
-					LBRS_HALL_OF_BLACKHAND,
-					LBRS_HALYCONS_LAIR,
-					LBRS_CHAMBER_OF_BATTLE,
-				},
+				["maps"] = { MAP.BLACKROCK_SPIRE },
 			}),
 			q(8676, {	-- Wildmane the Elder
 				["description"] = "Inside of Zul'Farrak. Located by the pool where Gahz'rilla is summoned.",
@@ -1540,7 +1532,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					{ 39.0, 19.0, MAP.TANARIS },
 					-- #endif
 				},
-				["maps"] = { ZULFARRAK },
+				["maps"] = { MAP.ZULFARRAK },
 			}),
 			q(13066, {	-- Yurauk the Elder
 				["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",

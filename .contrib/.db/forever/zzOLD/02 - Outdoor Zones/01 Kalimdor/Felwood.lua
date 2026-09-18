@@ -1413,7 +1413,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["sourceQuest"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
 					["qg"] =  221636,	-- Gregory <Truthbearer>
 					["coord"] = { 44.6, 52.0, MAP.FELWOOD },
-					["maps"] = { MARAUDON, MAP.HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
+					["maps"] = { MAP.MARAUDON, MAP.HILLSBRAD_FOOTHILLS, MAP.BLACKROCK_DEPTHS },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
@@ -2391,7 +2391,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 222408,	-- Shadowtooth Emissary
 					["coord"] = { 51.4, 82.0, MAP.FELWOOD },
 					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { MAP.THE_HINTERLANDS, RAZORFEN_DOWNS },
+					["maps"] = { MAP.THE_HINTERLANDS, MAP.RAZORFEN_DOWNS },
 					["cost"] = { { "i", 221261, 1 } },	-- Wildwhisper Draught
 					["lvl"] = 40,
 					["groups"] = {
@@ -2402,7 +2402,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["sourceQuest"] = 82043,	-- The Wild Gods (1/2)
 					["qg"] = 222522,	-- Spirit of Agamaggan
 					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { RAZORFEN_DOWNS, ZULFARRAK, MARAUDON, BLACKROCK_DEPTHS },
+					["maps"] = { MAP.RAZORFEN_DOWNS, MAP.ZULFARRAK, MAP.MARAUDON, MAP.BLACKROCK_DEPTHS },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/3 Wild Offering

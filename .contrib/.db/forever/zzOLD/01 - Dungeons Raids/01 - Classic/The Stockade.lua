@@ -13,7 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			"Stormwind Stockade",	-- enUS
 		},
 		-- #endif
-		["mapID"] = THE_STOCKADE,
+		["mapID"] = MAP.THE_STOCKADE,
 		["coords"] = {
 			-- #if AFTER CATA
 			{ 50.5, 66.5, MAP.STORMWIND_CITY },

@@ -833,7 +833,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 		}),
 		n(14684, {	-- Balzaphon
 			["description"] = "Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",
-			["maps"] = { STRATHOLME },
+			["maps"] = { MAP.STRATHOLME },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
 				i(238355),	-- Chains of the Lich
@@ -848,7 +848,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 		}),
 		n(14686, {	-- Lady Falther'ess
 			["description"] = "Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",
-			["maps"] = { RAZORFEN_DOWNS },
+			["maps"] = { MAP.RAZORFEN_DOWNS },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
 				i(238353),	-- Mantle of Lady Falther'ess
@@ -861,7 +861,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 		}),
 		n(14695, {	-- Lord Blackwood
 			["description"] = "Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",
-			["maps"] = { SCHOLOMANCE },
+			["maps"] = { MAP.SCHOLOMANCE },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
 				i(238358),	-- Blackwood's Thigh
@@ -876,7 +876,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 		}),
 		n(14690, {	-- Revanchion
 			["description"] = "Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",
-			["maps"] = { DIRE_MAUL },
+			["maps"] = { MAP.DIRE_MAUL },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
 				i(238362),	-- Bracers of Mending
@@ -891,7 +891,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 		}),
 		n(14693, {	-- Scorn
 			["description"] = "Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",
-			["maps"] = { SCARLET_MONASTERY },
+			["maps"] = { MAP.SCARLET_MONASTERY },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
 				i(238350),	-- Scorn's Focal Dagger
@@ -906,7 +906,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 		}),
 		n(14682, {	-- Sever
 			["description"] = "Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
-			["maps"] = { SHADOWFANG_KEEP },
+			["maps"] = { MAP.SHADOWFANG_KEEP },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
 				i(238348),	-- The Axe of Severing

@@ -3554,7 +3554,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 				-- #if AFTER 10.1.7
 				["description"] = "Can drop from any troll in zones such as Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
-				["maps"] = { MAP.ARATHI_HIGHLANDS, MAP.DUN_MOROGH, NORTHERN_STRANGLETHORN, MAP.SILITHUS, THE_CAPE_OF_STRANGLETHORN, MAP.THE_HINTERLANDS, ZULGURUB },
+				["maps"] = { MAP.ARATHI_HIGHLANDS, MAP.DUN_MOROGH, NORTHERN_STRANGLETHORN, MAP.SILITHUS, THE_CAPE_OF_STRANGLETHORN, MAP.THE_HINTERLANDS, MAP.ZULGURUB },
 				-- #endif
 				["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 			}),
@@ -4038,7 +4038,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			["description"] = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
 			["maps"] = {
-				DIRE_MAUL_WARPWOOD_QUARTER,
+				MAP.DIRE_MAUL_WARPWOOD_QUARTER,
 				-- #if BEFORE CATA
 				MAP.FELWOOD,
 				-- #endif
@@ -4052,7 +4052,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				MAP.ELWYNN_FOREST,
 				MAP.LOCH_MODAN,
 				MAP.MULGORE,
-				RAGEFIRE_CHASM,
+				MAP.RAGEFIRE_CHASM,
 				MAP.SILVERPINE_FOREST,
 				MAP.TIRISFAL_GLADES,
 				MAP.WESTFALL,
@@ -4063,23 +4063,23 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = {
 				MAP.BADLANDS,
 				MAP.BURNING_STEPPES,
-				DIRE_MAUL_GORDOK_COMMONS,
+				MAP.DIRE_MAUL_GORDOK_COMMONS,
 				MAP.FELWOOD,
 				MAP.SEARING_GORGE,
 				MAP.TANARIS,
-				ZULFARRAK,
+				MAP.ZULFARRAK,
 			},
 		}),
 		i(14047, {	-- Runecloth
 			["description"] = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
-				BLACKROCK_DEPTHS,
+				MAP.BLACKROCK_DEPTHS,
 				MAP.BLASTED_LANDS,
 				-- #if BEFORE 6.0.1
 				LOWER_BLACKROCK_SPIRE,
 				-- #endif
 				MAP.SILITHUS,
-				STRATHOLME,
+				MAP.STRATHOLME,
 				MAP.SWAMP_OF_SORROWS,
 				MAP.WINTERSPRING,
 			},
@@ -4089,53 +4089,37 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.DESOLACE,
-				DIRE_MAUL_GORDOK_COMMONS,
+				MAP.DIRE_MAUL_GORDOK_COMMONS,
 				MAP.FERALAS,
-				MARAUDON,
-				RAZORFEN_KRAUL,
+				MAP.MARAUDON,
+				MAP.RAZORFEN_KRAUL,
 				MAP.THE_HINTERLANDS,
-				ULDAMAN,
+				MAP.ULDAMAN,
 			},
 		}),
 		i(2592, {	-- Wool Cloth
 			["description"] = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
 				MAP.ASHENVALE,
-				BLACKFATHOM_DEEPS,
+				MAP.BLACKFATHOM_DEEPS,
 				MAP.DUSKWOOD,
-				THE_STOCKADE,
+				MAP.THE_STOCKADE,
 				MAP.WETLANDS,
 			},
 		}),
 		-- Silk:
 		i(14227, {	-- Ironweb Spider Silk
-			["description"] =
-				-- #if AFTER CATA
-				"Drops from spiders in Lower Blackrock Spire.",
-				-- #else
-				"Drops from spiders in the level bracket 45-60.",
-				-- #endif
+			["description"] = "Drops from spiders in the level bracket 45-60.",
 			["crs"] = {
-				-- #if AFTER CATA
-				10376,	-- Crystal Fang
-				10596,	-- Mother Smolderweb
-				10374,	-- Spire Spider
-				10375,	-- Spire Spiderling
-				-- #else
 				1821,	-- Carrion Lurker
 				5858,	-- Greater Lava Spider
 				1824,	-- Plague Lurker
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
-				-- #endif
 			},
 			["maps"] = {
-				-- #if AFTER CATA
-				LBRS_SKITTERWEB_TUNNELS,
-				-- #else
 				MAP.SEARING_GORGE,
 				MAP.WESTERN_PLAGUELANDS,
-				-- #endif
 			},
 		}),
 		i(10285, {	-- Shadow Silk
@@ -4369,7 +4353,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			["maps"] = {
-				MOLTEN_CORE,
+				MAP.MOLTEN_CORE,
 			},
 		}),
 		i(7075, {	-- Core of Earth
@@ -4404,7 +4388,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			["maps"] = {
-				MOLTEN_CORE,
+				MAP.MOLTEN_CORE,
 			},
 		}),
 		i(7076, {	-- Essence of Earth
@@ -4433,7 +4417,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			["maps"] = {
-				MOLTEN_CORE,
+				MAP.MOLTEN_CORE,
 			},
 			["providers"] = {
 				{ "o", 181069 },	-- Large Obsidian Chunk
@@ -4467,8 +4451,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			["maps"] = {
-				BLACKROCK_DEPTHS,
-				MOLTEN_CORE,
+				MAP.BLACKROCK_DEPTHS,
+				MAP.MOLTEN_CORE,
 				MAP.SEARING_GORGE,
 			},
 		}),
@@ -4488,8 +4472,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			["maps"] = {
-				BLACKROCK_DEPTHS,
-				MOLTEN_CORE,
+				MAP.BLACKROCK_DEPTHS,
+				MAP.MOLTEN_CORE,
 				MAP.SEARING_GORGE,
 			},
 		}),
@@ -4509,8 +4493,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			["maps"] = {
-				BLACKROCK_DEPTHS,
-				MOLTEN_CORE,
+				MAP.BLACKROCK_DEPTHS,
+				MAP.MOLTEN_CORE,
 			},
 		}),
 			-- Life:
@@ -4556,8 +4540,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			["maps"] = {
-				DIRE_MAUL,
-				MARAUDON,
+				MAP.DIRE_MAUL,
+				MAP.MARAUDON,
 				-- #if BEFORE 4.0.3
 				MAP.SWAMP_OF_SORROWS,
 				-- #endif
@@ -4605,7 +4589,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			["maps"] = {
-				DIRE_MAUL,
+				MAP.DIRE_MAUL,
 			},
 		}),
 			-- Undeath:
@@ -4642,10 +4626,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				MAP.WESTERN_PLAGUELANDS,
 				-- #endif
 				-- #if BEFORE MOP
-				SCHOLOMANCE,
+				MAP.SCHOLOMANCE,
 				-- #endif
-				DIRE_MAUL_CAPITAL_GARDENS,
-				STRATHOLME,
+				MAP.DIRE_MAUL_CAPITAL_GARDENS,
+				MAP.STRATHOLME,
 			},
 		}),
 		i(12808, {	-- Essence of Undeath
@@ -4666,15 +4650,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			["maps"] = {
 				-- #if BEFORE WRATH
-				NAXXRAMAS,
+				MAP.NAXXRAMAS,
 				-- #elseif AFTER 4.0.3
 				MAP.EASTERN_PLAGUELANDS,
 				-- #endif
 				-- #if BEFORE MOP
-				SCHOLOMANCE,
+				MAP.SCHOLOMANCE,
 				-- #endif
-				DIRE_MAUL,
-				STRATHOLME,
+				MAP.DIRE_MAUL,
+				MAP.STRATHOLME,
 			},
 		}),
 			-- Water:
@@ -4892,7 +4876,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				MAP.DARKSHORE,
 				NORTHERN_STRANGLETHORN,
 				-- #endif
-				BLACKFATHOM_DEEPS,
+				MAP.BLACKFATHOM_DEEPS,
 				MAP.HILLSBRAD_FOOTHILLS,
 				MAP.WETLANDS,
 			},
@@ -5778,7 +5762,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- ______________________________________
 		--
 		-- Other reagents:
-		i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
+		i(11754, {["maps"] = { MAP.BLACKROCK_DEPTHS }, }),	-- Black Diamond
 		-- #if AFTER MOP
 		-- Danny Donkey: Dark Rune was only obtainable from Scholomance prior to MoP. With it's revamp Dark Runes became a zone drop from given mobs in Eastern Plaguelands. With the return of old Scholomance in 10.1.5, that is again a source for Dark Runes.
 		i(20520, {	-- Dark Rune
@@ -5802,8 +5786,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			["maps"] = {
 				-- #if AFTER 4.0.3
-				NAXXRAMAS,
-				RUINS_OF_AHNQIRAJ,
+				MAP.NAXXRAMAS,
+				MAP.RUINS_OF_AHNQIRAJ,
 				-- #else
 				MAP.BURNING_STEPPES,
 				MAP.SILITHUS,
@@ -5842,8 +5826,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				MAP.DUSTWALLOW_MARSH,
 				MAP.HILLSBRAD_FOOTHILLS,
 				MAP.LOCH_MODAN,
-				RAZORFEN_DOWNS,
-				RAZORFEN_KRAUL,
+				MAP.RAZORFEN_DOWNS,
+				MAP.RAZORFEN_KRAUL,
 				MAP.STONETALON_MOUNTAINS,
 				MAP.STRANGLETHORN_VALE,
 				MAP.SWAMP_OF_SORROWS,
@@ -5950,8 +5934,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			["description"] = "Can drop from trolls.",
 			["maps"] = {
-				LBRS_TAZZALOR,
-				ZULGURUB,
+				MAP.BLACKROCK_SPIRE,
+				MAP.ZULGURUB,
 			},
 		}),
 		i(18335, {	-- Pristine Black Diamond
@@ -5980,14 +5964,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				MAP.DUSKWOOD,
 				MAP.HILLSBRAD_FOOTHILLS,
 				MAP.LOCH_MODAN,
-				RAZORFEN_KRAUL,
+				MAP.RAZORFEN_KRAUL,
 				MAP.REDRIDGE_MOUNTAINS,
-				SHADOWFANG_KEEP,
+				MAP.SHADOWFANG_KEEP,
 				MAP.SILVERPINE_FOREST,
 				MAP.STONETALON_MOUNTAINS,
 				MAP.THE_BARRENS,
 				MAP.THOUSAND_NEEDLES,
-				WAILING_CAVERNS,
+				MAP.WAILING_CAVERNS,
 				MAP.WESTFALL,
 				MAP.WETLANDS,
 				-- #if AFTER TBC
@@ -6012,7 +5996,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(5784, {	-- Slimy Murloc Scale
 			-- #if AFTER 4.0.3
 			["description"] = "Drops from murlocs Blackfathom Deeps.",
-			["maps"] = { BLACKFATHOM_DEEPS },
+			["maps"] = { MAP.BLACKFATHOM_DEEPS },
 			-- #else
 			["description"] = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
 			["coord"] = { 15.1, 39.3, MAP.WETLANDS },	-- Bluegill Marsh
@@ -6031,7 +6015,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 4.0.3
 			["cr"] = 14398,	-- Eldreth Darter
 			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
-			["maps"] = { DIRE_MAUL },
+			["maps"] = { MAP.DIRE_MAUL },
 			-- #else
 			["coords"] = {
 				{ 81.0, 48.0, MAP.BADLANDS },

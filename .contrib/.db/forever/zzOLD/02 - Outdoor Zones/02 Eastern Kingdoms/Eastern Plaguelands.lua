@@ -1039,7 +1039,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								}),
 								o(403533, {	-- Undelivered Shipment of Smokes
 									["description"] = "Located in live Stratholme, near Ezra Grimm's tobacco place (enter the instance, take a left and another left). By a cart next to where Ezra Grimm spawns.",
-									["maps"] = { STRATHOLME },
+									["maps"] = { MAP.STRATHOLME },
 									["sourceQuests"] = { 76250 },	-- Spectral Essence
 									["timeline"] = { ADDED_10_1_5 },
 									["groups"] = {
@@ -1083,7 +1083,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						["groups"] = {
 							i(206377, {	-- Ward of Naxxramas
 								["cr"] = 10411,	-- Eye of Naxxramas
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["timeline"] = { ADDED_10_1_5 },
 							}),
 							n(206148, {	-- Hand of Naxxramas
@@ -1263,7 +1263,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					n(COMMON_BOSS_DROPS, {
 						i(206374, {	-- Invader's Scourgestone
 							["description"] = "Although this is an explicit drop from bosses in Old Scholomance and Stratholme, it will not drop from indoor bosses in Stratholme living, AKA the Scarlet section of the dungeon.",
-							["maps"] = { STRATHOLME },
+							["maps"] = { MAP.STRATHOLME },
 							["timeline"] = { ADDED_10_1_5 },
 						}),
 					}),
@@ -1452,10 +1452,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["icon"] = 134501,
 					["maps"] = {
 						MAP.WESTERN_PLAGUELANDS,
-						SCHOLOMANCE,
-						STRATHOLME,
+						MAP.SCHOLOMANCE,
+						MAP.STRATHOLME,
 						-- #if BEFORE WRATH
-						NAXXRAMAS,
+						MAP.NAXXRAMAS,
 						-- #endif
 					},
 				}),
@@ -1700,7 +1700,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 33.8, 28.8, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
-					["maps"] = { STRATHOLME },
+					["maps"] = { MAP.STRATHOLME },
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2760,7 +2760,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL, MAP.FERALAS, MAP.UNGORO_CRATER },
+					["maps"] = { MAP.DIRE_MAUL, MAP.FERALAS, MAP.UNGORO_CRATER },
 					["cost"] = {
 						{ "i", 12655, 1 },	-- Enchanted Thorium Bar
 						{ "i", 11562, 5 },	-- Crystal Restore

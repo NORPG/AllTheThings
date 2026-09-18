@@ -101,7 +101,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			1477,	-- The Temple of Atal'hakkar
 		},
 		-- #endif
-		["mapID"] = TEMPLE_OF_ATALHAKKAR,
+		["mapID"] = MAP.TEMPLE_OF_ATALHAKKAR,
 		["coords"] = {
 			-- #if AFTER CATA
 			{ 76.0, 45.2, MAP.SWAMP_OF_SORROWS },

@@ -31,27 +31,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["sourceQuest"] = 89445,	-- Blades of Light
 									["qg"] = 16376,	-- Craftsman Wilhelm
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
-									["maps"] = { NAXXRAMAS },
+									["maps"] = { MAP.NAXXRAMAS },
 								}),
 								q(89447, {	-- Extravagant Tastes
 									["sourceQuest"] = 89446,	-- The Lost Craftsman
 									["qg"] = 16365,	-- Master Craftsman Omarion
 									["cost"] = { { "i", 21023, 10 } },	-- Dirge's Kickin' Chimaerok Chops
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
-									["maps"] = { NAXXRAMAS },
+									["maps"] = { MAP.NAXXRAMAS },
 								}),
 								q(89448, {	-- Gathering Light
 									["sourceQuest"] = 89447,	-- Extravagant Tastes
 									["qg"] = 16365,	-- Master Craftsman Omarion
 									["cost"] = { { "i", 239216, 12 } },	-- Lightforged Iron
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
-									["maps"] = { NAXXRAMAS },
+									["maps"] = { MAP.NAXXRAMAS },
 								}),
 								q(89449, {	-- The Radiant Forge
 									["sourceQuest"] = 89448,	-- Gathering Light
 									["qg"] = 16365,	-- Master Craftsman Omarion
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
-									["maps"] = { NAXXRAMAS },
+									["maps"] = { MAP.NAXXRAMAS },
 								}),
 								q(89237, {	-- This Could Get Expensive...
 									["sourceQuest"] = 89449,	-- The Radiant Forge
@@ -64,13 +64,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										{ "i", 12811, 20 },	-- Righteous Orb
 									},
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
-									["maps"] = { NAXXRAMAS },
+									["maps"] = { MAP.NAXXRAMAS },
 								}),
 								q(89304, {	-- The Perfect Metal
 									["sourceQuest"] = 89237,	-- This Could Get Expensive...
 									["qg"] = 16365,	-- Master Craftsman Omarion
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
-									["maps"] = { NAXXRAMAS },
+									["maps"] = { MAP.NAXXRAMAS },
 								}),
 							}),
 							header(HEADERS.Item, 239696, {	-- Hilt of the Ashbringer
@@ -190,14 +190,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["qg"] = 241334,	-- The Will of the Ashbringer
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
 									["lvl"] = 60,
-									["maps"] = { SCARLET_MONASTERY },
+									["maps"] = { MAP.SCARLET_MONASTERY },
 								}),
 								q(89475, {	-- The Lonely Path of the Damned
 									["sourceQuest"] = 89474,	-- Forgiveness
 									["qg"] = 242499,	-- Highlord Mograine
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
 									["lvl"] = 60,
-									["maps"] = { SCARLET_MONASTERY },
+									["maps"] = { MAP.SCARLET_MONASTERY },
 								}),
 								q(89488, {	-- A Kind of Peace
 									["sourceQuest"] = 89475,	-- The Lonely Path of the Damned

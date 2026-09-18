@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["zone-text-areaID"] = 2017,	-- Stratholme
 		-- #if BEFORE 4.0.3
-		["mapID"] = STRATHOLME,
+		["mapID"] = MAP.STRATHOLME,
 		["maps"] = { 318 },	-- Stratholme (OLD)
 		-- #endif
 		["lvl"] =
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 76.2, 50.9, MAP.EASTERN_PLAGUELANDS },
 					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { STRATHOLME },
+					["maps"] = { MAP.STRATHOLME },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Annals of the Silver Hand
@@ -811,7 +811,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(MAIN_GATE, {
 				-- #if AFTER 4.0.3
-				["mapID"] = STRATHOLME,	-- Main Gate
+				["mapID"] = MAP.STRATHOLME,	-- Main Gate
 				["sym"] = {
 					{"select","instanceID",236},{"pop"},	-- Select the overall Stratholme instance
 					{"contains","headerID",ACHIEVEMENTS,QUESTS,ZONE_DROPS},	-- Select the common Achievements/Quests/Zone Drops

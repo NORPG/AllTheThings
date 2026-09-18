@@ -24,7 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_15_4 },
-					["maps"] = { MOLTEN_CORE },
+					["maps"] = { MAP.MOLTEN_CORE },
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
@@ -35,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 					["qg"] = 232309,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
-					["maps"] = { MOLTEN_CORE },
+					["maps"] = { MAP.MOLTEN_CORE },
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 					["coord"] = { 21.7, 8.6, MAP.SILITHUS },
 					["timeline"] = { REMOVED_1_15_4 },
-					["maps"] = { MOLTEN_CORE },
+					["maps"] = { MAP.MOLTEN_CORE },
 					["classes"] = SWORD_CLASSES,
 					["groups"] = { i(19019) },	-- Thunderfury, Blessed Blade of the Windseeker
 				}),
@@ -56,7 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 85441,	-- Thunderaan the Windseeker
 					["qg"] = 232309,	-- Highlord Demitrian
 					["provider"] = { "i", 232018 },	-- Dormant Wind Kissed Blade
-					["maps"] = { MOLTEN_CORE },
+					["maps"] = { MAP.MOLTEN_CORE },
 					["classes"] = SWORD_CLASSES,
 					["groups"] = {
 						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_15_4 },
-					["maps"] = { MOLTEN_CORE },
+					["maps"] = { MAP.MOLTEN_CORE },
 					["classes"] = SWORD_CLASSES,
 					["lvl"] = 60,
 					["groups"] = {
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(85441, {	-- Thunderaan the Windseeker
 					["sourceQuest"] = 85442,	-- Examine the Vessel
 					["qg"] = 232309,	-- Highlord Demitrian
-					["maps"] = { MOLTEN_CORE },
+					["maps"] = { MAP.MOLTEN_CORE },
 					["classes"] = SWORD_CLASSES,
 					["groups"] = {
 						objective(1, {	-- 0/10 Elementium Bar

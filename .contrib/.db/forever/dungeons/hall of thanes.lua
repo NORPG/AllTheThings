@@ -6,7 +6,7 @@ root(ROOTS.Instances, {
 	inst(3065, {	-- The Hall of Thanes
 		-- ["lore"] = "",
 		["zone-text-areaID"] = 16919,	-- The Hall of Thanes
-		["coord"] = { 50.0, 50.0, IRONFORGE },
+		["coord"] = { 50.0, 50.0, MAP.IRONFORGE },
 		["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		["lvl"] = 13,
 		["groups"] = {

@@ -721,12 +721,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			["description"] = "You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",
 			-- #endif
 			["maps"] = {
-				BLACKROCK_DEPTHS,
+				MAP.BLACKROCK_DEPTHS,
 				243,	-- Blackrock Depths
 			},
 			-- #else
 			["questID"] = 12062,	-- Insult Coren Direbrew
-			["maps"] = { BLACKROCK_DEPTHS },
+			["maps"] = { MAP.BLACKROCK_DEPTHS },
 			-- #endif
 			["timeline"] = { ADDED_2_2_2 },
 			["isDaily"] = true,
@@ -2058,7 +2058,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["sourceQuest"] = 12318,	-- Save Brewfest!
 					["qg"] = 26719,	-- Brewfest Spy
 					["timeline"] = { ADDED_2_4_3, REMOVED_3_3_3 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(65, 65, 10),
 				}),
@@ -2239,14 +2239,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 48.1, 39.1, MAP.DUN_MOROGH },
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["lvl"] = lvlsquish(48, 48, 48),
 				}),
 				q(11486, {	-- The Best of Brews (A)
 					["sourceQuest"] = 11454,	-- Seek the Saboteurs
 					["qg"] = 23872,	-- Coren Direbrew
 					["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(48, 48, 48),
 					["groups"] = {
@@ -2259,7 +2259,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["sourceQuest"] = 11454,	-- Seek the Saboteurs
 					["qg"] = 23872,	-- Coren Direbrew
 					["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(48, 48, 48),
 					["groups"] = {

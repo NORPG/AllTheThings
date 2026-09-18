@@ -931,7 +931,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		-- #endif
 		["timeline"] = { ADDED_2_2_2 },
 		["maps"] = {
-			SCARLET_MONASTERY,
+			MAP.SCARLET_MONASTERY,
 			436,	-- Scarlet Monastery, Crusader's Chapel
 		},
 		-- #if AFTER 4.0.1
@@ -3231,7 +3231,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["provider"] = { "o", 186267 },	-- Pumpkin Shrine
 			["timeline"] = { ADDED_2_2_2, REMOVED_3_3_0 },
 			["maps"] = {
-				SCARLET_MONASTERY,
+				MAP.SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
 			},
 			-- #if AFTER WRATH
@@ -3511,7 +3511,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(11242, {	-- Free at Last! (Alliance)
 			["qg"] = 23904,	-- Sir Thomas
 			["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
-			["maps"] = { SCARLET_MONASTERY },
+			["maps"] = { MAP.SCARLET_MONASTERY },
 			["provider"] = { "i", 33277 },	-- Tome of Thomas Thomson
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(60, 60, 25),
@@ -3519,7 +3519,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(11403, {	-- Free at Last! (Horde)
 			["qg"] = 23904,	-- Sir Thomas
 			["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
-			["maps"] = { SCARLET_MONASTERY },
+			["maps"] = { MAP.SCARLET_MONASTERY },
 			["provider"] = { "i", 33277 },	-- Tome of Thomas Thomson
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(60, 60, 25),
@@ -4273,7 +4273,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(77779, {	-- The Tale of Sir Thomas
 			["sourceQuest"] = 76074,	-- The Headless Horseman, Returned
 			["provider"] = { "n", 209609 },	-- Sir Thomas
-			["coord"] = { 43.0, 53.0, SCARLET_MONASTERY },
+			["coord"] = { 43.0, 53.0, MAP.SCARLET_MONASTERY },
 			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(208769),	-- Tome of Thomas Thomson

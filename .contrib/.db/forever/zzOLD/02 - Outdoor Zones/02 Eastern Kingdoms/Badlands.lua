@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 2909,	-- Hammertoe Grez
 					["coord"] = { 37.94, 10.53, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ULDAMAN, MAP.LOCH_MODAN },
+					["maps"] = { MAP.ULDAMAN, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -996,7 +996,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ULDAMAN },
+					["maps"] = { MAP.ULDAMAN },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/8 Dentrium Power Stone
@@ -1918,7 +1918,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["coord"] = { 2.6, 46.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ULDAMAN },
+					["maps"] = { MAP.ULDAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {

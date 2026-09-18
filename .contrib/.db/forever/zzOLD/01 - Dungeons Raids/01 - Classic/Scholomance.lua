@@ -13,7 +13,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 } }, {
 		ach(18368, {	-- Memory of Scholomance
 			["sourceQuest"] = 76249,	-- Memory of Scholomance
-			["maps"] = { MAP.EASTERN_PLAGUELANDS, STRATHOLME, MAP.WESTERN_PLAGUELANDS },
+			["maps"] = { MAP.EASTERN_PLAGUELANDS, MAP.STRATHOLME, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		ach(18558, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Leaders of Scholomance
@@ -403,7 +403,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(76249, name(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
 			["description"] = "It's recommended to activate the Debug Mode to properly see every step and description.\n\nTo start unlocking old Scholomance, you must first do a clear of Heroic Scholomance. Once done, go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room). At the top left portion of the room, use the Krastinov's Bag of Horrors toy. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket and allowing you to loot Eva's Femur on the ground. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
 			["timeline"] = { ADDED_10_1_5 },
-			["maps"] = { MAP.EASTERN_PLAGUELANDS, STRATHOLME, MAP.WESTERN_PLAGUELANDS },
+			["maps"] = { MAP.EASTERN_PLAGUELANDS, MAP.STRATHOLME, MAP.WESTERN_PLAGUELANDS },
 			["cost"] = {
 				{ "i", 206357, 1 },	-- 1x Authentic Andorhal Candle
 				{ "i", 206364, 1 },	-- 1x Eva's Femur
@@ -423,7 +423,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			},
 			["coord"] = { 81.7, 57.8, MAP.EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
-			["maps"] = { STRATHOLME },
+			["maps"] = { MAP.STRATHOLME },
 			["lvl"] = 57,
 		}),
 		q(5464, {	-- Menethil's Gift (2/2)
@@ -433,7 +433,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "i", 13624 },	-- Soulbound Keepsake
 			},
 			["timeline"] = { REMOVED_4_0_3 },
-			["maps"] = { STRATHOLME },
+			["maps"] = { MAP.STRATHOLME },
 			["lvl"] = 57,
 		}),
 		{	-- Mold Rhymes With...
@@ -1215,7 +1215,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			},
 		}),
 	}),
-	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
+	-- The Re-release of Scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
 	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you cant.	-- Gold 02/08/2023 (EU)
 	n(14516, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Death Knight Darkreaver
 		["cost"] = { { "i", 18746, 1 } },	-- Divination Scryer
@@ -2614,16 +2614,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 		["cost"] = { { "i", 13704, 1 } },	-- Skeleton Key
 		-- #endif
-		["mapID"] = SCHOLOMANCE,
+		["mapID"] = MAP.SCHOLOMANCE,
 		["coord"] = { 69.07, 72.96, MAP.WESTERN_PLAGUELANDS },
-		["maps"] = {
-			-- #if AFTER MOP
-			SCHOLOMANCE_CHAMBER_OF_SUMMONING, SCHOLOMANCE_THE_UPPER_STUDY, SCHOLOMANCE_HEADMASTERS_STUDY,
-			-- #else
-			306, 307, 308, 309,
-			-- #endif
-		},
-		["lvl"] = lvlsquish(55, 33, 33),
+		["lvl"] = 55,
 		["groups"] = SCHOLOMANCE_GROUPS,
 	}),
 }));

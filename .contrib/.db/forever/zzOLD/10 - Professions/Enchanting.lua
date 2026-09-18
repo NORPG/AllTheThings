@@ -316,7 +316,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["maps"] = {
 				731,	-- Neltharion's Lair
 				324,	-- The Stonecore
-				477, 478, 479,	-- Scholomance
+				MAP.SCHOLOMANCE
 			},
 			["groups"] = {
 				i(136617),	-- Ancient Arkhana (QI!)

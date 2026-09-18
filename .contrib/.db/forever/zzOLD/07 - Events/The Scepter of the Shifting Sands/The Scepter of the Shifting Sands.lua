@@ -128,7 +128,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8733, {	-- Eranikus, Tyrant of the Dream
 					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 					["qg"] = 15362,	-- Malfurion Stormrage
-					["maps"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					["lvl"] = 60,
 				}),
 				q(8305, {	-- Long Forgotten Memories
@@ -153,7 +153,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8730, {	-- Nefarius's Corruption
 					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 					["qg"] = 13020,	-- Vaelastrasz the Corrupt
-					["maps"] = { BLACKWING_LAIR },
+					["maps"] = { MAP.BLACKWING_LAIR },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Red Scepter Shard
@@ -178,7 +178,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["sourceQuest"] = 8286,	-- What Tomorrow Brings
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, MAP.SILITHUS },
-					["maps"] = { BLACKWING_LAIR },
+					["maps"] = { MAP.BLACKWING_LAIR },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of the Broodlord Lashlayer
@@ -211,7 +211,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["provider"] = { "o", 180642 },	-- Inconspicuous Crate
 					["coord"] = { 46.2, 86.7, MAP.SILVERPINE_FOREST },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu
-					["maps"] = { MOLTEN_CORE },
+					["maps"] = { MAP.MOLTEN_CORE },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Narain's Scrying Goggles
@@ -359,9 +359,9 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, MAP.TANARIS },
 					["maps"] = {
-						BLACKWING_LAIR,
-						ONYXIAS_LAIR,
-						MOLTEN_CORE,
+						MAP.BLACKWING_LAIR,
+						MAP.ONYXIAS_LAIR,
+						MAP.MOLTEN_CORE,
 						MAP.BLASTED_LANDS,
 						MAP.DUSTWALLOW_MARSH,
 						MAP.WINTERSPRING,

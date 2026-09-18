@@ -935,86 +935,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		-- #endif
 		i(21525, {	-- Green Winter Hat
 			["maps"] = {
-				-- #if AFTER SL
-				-- Castle Nathria
-				1735,	-- The Grand Walk
-				1744,	-- The Purloined Stores
-				1745,	-- Halls of the Faithful
-				1746,	-- Pride's Prison
-				1747,	-- Nightcloak Sanctum
-				1748,	-- The Observatorium
-				1750,	-- Feast of Arrogance
-				-- #endif
-				-- #if AFTER WOD
-				593,	-- Auchindoun
-				595,	-- Iron Docks
-				610, 611, 612, 613, 614, 615,	-- Highmaul
-				596, 597, 598, 599, 600,	-- Blackrock Foundry
-				661, 662, 663, 664, 665, 666, 667, 668, 669, 670,	-- Hellfire Citadel
-				-- #endif
-				-- #if AFTER MOP
-				556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570,	-- Siege of Orgrimmar
-				-- #endif
-				-- #if AFTER CATA
-				293,	-- Grim Batol
-				SHADOWFANG_KEEP,
-				SHADOWFANG_KEEP_LEVEL2,
-				SHADOWFANG_KEEP_LEVEL3,
-				SHADOWFANG_KEEP_LEVEL4,
-				SHADOWFANG_KEEP_LEVEL5,
-				SHADOWFANG_KEEP_LEVEL6,
-				SHADOWFANG_KEEP_LEVEL7,
-				-- #endif
-				-- #if AFTER WRATH
-				THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5,
-				-- #else
-				BLACKROCK_SPIRE,
-				LBRS_TAZZALOR,
-				LBRS_SKITTERWEB_TUNNELS,
-				LBRS_HORDEMAR_CITY,
-				LBRS_HALL_OF_BLACKHAND,
-				LBRS_HALYCONS_LAIR,
-				LBRS_CHAMBER_OF_BATTLE,
-				DIRE_MAUL,
-				SCHOLOMANCE,
-				-- #if AFTER TBC
-				AUCHINDOUN_AUCHENAI_CRYPTS,
-				HELLFIRE_CITADEL_SHATTERED_HALLS,
-				AUCHINDOUN_SHADOW_LABYRINTH,
-				-- #endif
-				-- #endif
+				MAP.BLACKROCK_SPIRE,
+				MAP.DIRE_MAUL,
+				MAP.SCHOLOMANCE,
 			},
 			["crs"] = {
-				-- #if AFTER SL
-				166969,	-- Baroness Frieda
-				-- #endif
-				-- #if AFTER WOD
-				76177,	-- Soulbinder Nyami
-				79852,	-- Oshir
-				77404,	-- The Butcher
-				76865,	-- Beastlord Darmac
-				93439,	-- Tyrant Velhari
-				-- #endif
-				-- #if AFTER MOP
-				72249,	-- Galakras <The Last Brood of Galakrond>
-				-- #endif
-				-- #if AFTER CATA
-				40319,	-- Drahga Shadowburner
-				46964,	-- Lord Godfrey
-				-- #endif
-				-- #if AFTER WRATH
-				27655,	-- Mage-Lord Urom
-				-- #else
 				1853,	-- Darkmaster Gandling
 				10899,	-- Goraluk Anvilcrack <Blackhand Legion Armorsmith>
 				11486,	-- Prince Tortheldrin
-				-- #if AFTER TBC
-				10429,	-- Warchief Rend Blackhand (TBC only)
-				18373,	-- Exarch Maladaar
-				16807,	-- Grand Warlock Nethekurse
-				18732,	-- Grandmaster Vorpil
-				-- #endif
-				-- #endif
 			},
 		}),
 		i(21524, {	-- Red Winter Hat
@@ -1053,15 +981,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				129,	-- The Nexus
 				132,	-- Ahn'kahet: The Old Kingdom
 				-- #else
-				BLACKROCK_DEPTHS,
-				BLACKROCK_SPIRE,
-				LBRS_TAZZALOR,
-				LBRS_SKITTERWEB_TUNNELS,
-				LBRS_HORDEMAR_CITY,
-				LBRS_HALL_OF_BLACKHAND,
-				LBRS_HALYCONS_LAIR,
-				LBRS_CHAMBER_OF_BATTLE,
-				STRATHOLME,
+				MAP.BLACKROCK_DEPTHS,
+				MAP.BLACKROCK_SPIRE,
+				MAP.STRATHOLME,
 				-- #if AFTER TBC
 				CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
 				TEMPEST_KEEP_BOTANICA,

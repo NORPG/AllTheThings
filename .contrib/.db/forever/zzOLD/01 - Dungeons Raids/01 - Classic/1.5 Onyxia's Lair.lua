@@ -67,7 +67,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			{ "i", 16309, 1 },	-- Drakefire Amulet
 		},
 		-- #endif
-		["mapID"] = ONYXIAS_LAIR,
+		["mapID"] = MAP.ONYXIAS_LAIR,
 		["coord"] = { 52.3, 76.2, MAP.DUSTWALLOW_MARSH },
 		-- #if NOT ANYCLASSIC
 		-- TODO: Double check this in Retail.
@@ -237,7 +237,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["provider"] = { "i", 228680 },	-- Nostro's Compendium of Dragon Slaying
 					["timeline"] = { ADDED_1_15_3 },
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = { i(228695) },	-- A Dull and Flat Elven Blade
@@ -249,7 +249,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = { i(18513) },	-- A Dull and Flat Elven Blade
@@ -399,7 +399,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 228695 },	-- A Dull and Flat Elven Blade
 					},
 					["timeline"] = { ADDED_1_15_3 },
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
@@ -413,7 +413,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
@@ -422,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 84556,	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["timeline"] = { ADDED_1_15_3 },
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
@@ -452,7 +452,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {

@@ -3528,7 +3528,7 @@ i(7069,{coords={
 [1451]={{20,25},{29,25},{32,16}}},crs={2762,8667,9397,11576,11577,11578,11744,11745,14455}}),
 i(3182,{crs={3819,3820,3821},description="Drops from spiders in previously lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={1440}}),
 i(10285,{crs={5856,5857,5858},description="Drops from spiders in Searing Gorge.",maps={1427}}),
-i(14227,{crs={10374,10375,10376,10596},description="Drops from spiders in Lower Blackrock Spire.",maps={251}}),
+i(14227,{crs={1821,1822,1824,5857,5858},description="Drops from spiders in the level bracket 45-60.",maps={1422,1427}}),
 i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={221,225,1431,1437,1440}}),
 i(4306,{description="Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={230,235,280,301,1417,1425,1443,1444}}),
 i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={-353,242,317,1419,1435,1451,1452}}),

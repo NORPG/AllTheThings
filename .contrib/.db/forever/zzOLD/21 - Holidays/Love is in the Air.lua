@@ -56,10 +56,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(COMMON_BOSS_DROPS, {
 			i(22206, {	-- Bouquet of Red Roses
 				["maps"] = {
-					SCHOLOMANCE,
-					STRATHOLME,
-					DIRE_MAUL,
-					BLACKROCK_DEPTHS,
+					MAP.SCHOLOMANCE,
+					MAP.STRATHOLME,
+					MAP.DIRE_MAUL,
+					MAP.BLACKROCK_DEPTHS,
 				},
 				["crs"] = {
 					10901,	-- Lorekeeper Polkelt
@@ -231,7 +231,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", 22261, 5 } },	-- 5x Love Fool
 					["maps"] = {
 						MAP.ARATHI_BASIN,
-						NAXXRAMAS,
+						MAP.NAXXRAMAS,
 						WINTERGRASP,
 						-- #if AFTER CATA
 						THE_CAPE_OF_STRANGLETHORN,
@@ -1274,13 +1274,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24745, {	-- Something is in the Air (and it Ain't Love) (A)
 				["provider"] = { "i", 50320 },	-- Faded Lovely Greeting Card (A)
 				["timeline"] = { ADDED_3_3_2, REMOVED_10_2_5 },
-				["maps"] = { SHADOWFANG_KEEP },
+				["maps"] = { MAP.SHADOWFANG_KEEP },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(14483, {	-- Something is in the Air (and it Ain't Love) (H)
 				["provider"] = { "i", 49641 },	-- Faded Lovely Greeting Card (H)
 				["timeline"] = { ADDED_3_3_2, REMOVED_10_2_5 },
-				["maps"] = { SHADOWFANG_KEEP },
+				["maps"] = { MAP.SHADOWFANG_KEEP },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24655, {	-- Something Stinks (A)
@@ -1412,7 +1412,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(14488, {	-- You've Been Served
 				["qg"] = 38208,	-- Investigator Fezzen Brasstacks
 				["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-				["maps"] = { SHADOWFANG_KEEP },
+				["maps"] = { MAP.SHADOWFANG_KEEP },
 				["isDaily"] = true,
 			}),
 			q(8980, {	-- Zinge's Assessment
@@ -3193,15 +3193,7 @@ for i,o in ipairs({
 		["isDaily"] = true,
 		-- #endif
 		["timeline"] = { ADDED_3_3_0 },
-		["maps"] = {
-			SHADOWFANG_KEEP,
-			SHADOWFANG_KEEP_LEVEL2,
-			SHADOWFANG_KEEP_LEVEL3,
-			SHADOWFANG_KEEP_LEVEL4,
-			SHADOWFANG_KEEP_LEVEL5,
-			SHADOWFANG_KEEP_LEVEL6,
-			SHADOWFANG_KEEP_LEVEL7
-		},
+		["maps"] = { MAP.SHADOWFANG_KEEP },
 		-- #if AFTER MOP
 		["sym"] = {
 			{ "selectparent", 2 },	-- >Bosses>LITA
@@ -3571,15 +3563,7 @@ for i,o in ipairs({
 			},
 		})),
 		inst(64, {	-- Shadowfang Keep
-			["maps"] = {
-				SHADOWFANG_KEEP,
-				SHADOWFANG_KEEP_LEVEL2,
-				SHADOWFANG_KEEP_LEVEL3,
-				SHADOWFANG_KEEP_LEVEL4,
-				SHADOWFANG_KEEP_LEVEL5,
-				SHADOWFANG_KEEP_LEVEL6,
-				SHADOWFANG_KEEP_LEVEL7
-			},
+			["maps"] = { MAP.SHADOWFANG_KEEP },
 			["groups"] = {
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(46964, {	-- Lord Godfrey

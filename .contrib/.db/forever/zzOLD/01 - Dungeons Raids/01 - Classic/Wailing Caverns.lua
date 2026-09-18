@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			"Las Cuevas de los Lamentos",	-- To fix Es and Mx clients
 		},
 		-- #endif
-		["mapID"] = WAILING_CAVERNS,
+		["mapID"] = MAP.WAILING_CAVERNS,
 		["coords"] = {
 			-- #if AFTER CATA
 			{ 55.2, 66.1, 11 },	-- Wailing Caverns, Northern Barrens

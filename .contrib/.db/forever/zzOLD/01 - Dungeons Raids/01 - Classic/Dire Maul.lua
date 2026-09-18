@@ -82,22 +82,22 @@ local DIREMAUL_SUBMAP = function(mapID, headerID, t)
 	return m(mapID, t);
 end
 local WARPWOOD_QUARTER_MAPS = {
-	DIRE_MAUL_WARPWOOD_QUARTER,
+	MAP.DIRE_MAUL_WARPWOOD_QUARTER,
 };
 local GORDOK_COMMONS_MAPS = {
-	DIRE_MAUL_GORDOK_COMMONS,
+	MAP.DIRE_MAUL_GORDOK_COMMONS,
 };
 local CAPITAL_GARDENS_MAPS = {
-	DIRE_MAUL_CAPITAL_GARDENS,
-	DIRE_MAUL_COURT_OF_THE_HIGHBORNE,
-	DIRE_MAUL_PRISON_OF_IMMOLTHAR,
+	MAP.DIRE_MAUL_CAPITAL_GARDENS,
+	MAP.DIRE_MAUL_COURT_OF_THE_HIGHBORNE,
+	MAP.DIRE_MAUL_PRISON_OF_IMMOLTHAR,
 };
 local ALL_DIREMAUL_MAPS = {
-	DIRE_MAUL_WARPWOOD_QUARTER,
-	DIRE_MAUL_GORDOK_COMMONS,
-	DIRE_MAUL_CAPITAL_GARDENS,
-	DIRE_MAUL_COURT_OF_THE_HIGHBORNE,
-	DIRE_MAUL_PRISON_OF_IMMOLTHAR,
+	MAP.DIRE_MAUL_WARPWOOD_QUARTER,
+	MAP.DIRE_MAUL_GORDOK_COMMONS,
+	MAP.DIRE_MAUL_CAPITAL_GARDENS,
+	MAP.DIRE_MAUL_COURT_OF_THE_HIGHBORNE,
+	MAP.DIRE_MAUL_PRISON_OF_IMMOLTHAR,
 };
 -- #if BEFORE 4.0.3
 local OnTooltipForShendralar = [[function(t, tooltipInfo)
@@ -144,25 +144,14 @@ end]];
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_DIREMAUL, bubbleDown({ ["timeline"] = { ADDED_1_2_0 } }, {
 	inst(230, {	-- Dire Maul
-		-- #if BEFORE MOP
 		["lore"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
-		-- #endif
-		-- #if BEFORE MOP
 		["zone-text-areas"] = {
 			2557,	-- Dire Maul
 			2577,	-- Eldreth Row
 			3217,	-- "The Maul" now points to Dire Maul.
-			-- #if AFTER CATA
-			-- This areaID doesn't exist until Cataclysm!
-			4992,	-- "Broken Commons" now points to Dire Maul.
-			-- #endif
 		},
-		-- #endif
-		["maps"] = {
-			DIRE_MAUL,
-			DIRE_MAUL_SHRINE_OF_ELDRETHARR,
-		},
-		["lvl"] = lvlsquish(44, 44, 15),
+		["mapID"] = MAP.DIRE_MAUL,
+		["lvl"] = 44,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(5788, FACTION_SHENDRALAR, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
@@ -420,13 +409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = {
 						236,	-- Capital Gardens
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
+						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
 						{ "i", 18779, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume I
@@ -454,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = {
 						236,	-- Capital Gardens
-						STRATHOLME, SCHOLOMANCE
+						MAP.STRATHOLME, MAP.SCHOLOMANCE
 					},
 					["cost"] = {
 						{ "i", 18781, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume II
@@ -482,14 +465,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = merge(CAPITAL_GARDENS_MAPS, {
-						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
-						LBRS_SKITTERWEB_TUNNELS,
-						LBRS_HORDEMAR_CITY,
-						LBRS_HALL_OF_BLACKHAND,
-						LBRS_HALYCONS_LAIR,
-						LBRS_CHAMBER_OF_BATTLE,
-						STRATHOLME
+						MAP.BLACKROCK_SPIRE,
+						MAP.STRATHOLME
 					}),
 					["cost"] = {
 						{ "i", 18783, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume III

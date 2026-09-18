@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 12042,	-- Loganaar
 					["coord"] = { 52.4, 40.4, MAP.MOONGLADE },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { BLACKROCK_DEPTHS },
+					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["classes"] = { DRUID },
 					["lvl"] = 47,
 					["groups"] = {

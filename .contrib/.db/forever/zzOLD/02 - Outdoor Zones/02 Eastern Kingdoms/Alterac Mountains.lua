@@ -766,7 +766,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
 					["coord"] = { 84.4, 80.2, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { ZULFARRAK },
+					["maps"] = { MAP.ZULFARRAK },
 					["classes"] = { ROGUE },
 					["lvl"] = 45,
 					["groups"] = {

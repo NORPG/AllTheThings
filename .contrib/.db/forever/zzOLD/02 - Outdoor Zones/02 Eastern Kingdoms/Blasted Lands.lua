@@ -1363,7 +1363,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 14463,	-- Daio the Decrepit
 					["coord"] = { 34.0, 50.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["groups"] = {

@@ -37,11 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 		["zone-text-areaID"] = 3428,	-- Ahn'Qiraj
 		-- #endif
 		["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },
-		["maps"] = {
-			TEMPLE_OF_AHNQIRAJ,
-			TEMPLE_OF_AHNQIRAJ_LEVEL2,
-			TEMPLE_OF_AHNQIRAJ_LEVEL3,
-		},
+		["mapID"] = MAP.TEMPLE_OF_AHNQIRAJ,
 		["isRaid"] = true,
 		["lvl"] = 50,
 		["groups"] = {

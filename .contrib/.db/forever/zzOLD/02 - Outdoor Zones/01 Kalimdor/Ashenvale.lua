@@ -1150,7 +1150,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["coord"] = { 43.4, 70.4, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { SHADOWFANG_KEEP },
+					["maps"] = { MAP.SHADOWFANG_KEEP },
 					["classes"] = { WARRIOR },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78134, {	-- Dragonslayer's Lance

@@ -969,61 +969,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if AFTER MOP
-			m(SCARLET_MONASTERY_ENTRANCE, {
-				n(QUESTS, {
-					q(77644,{	-- The Scarlet Key
-						["coord"] = { 46.9, 57.6, SCARLET_MONASTERY_ENTRANCE },
-						["timeline"] = { ADDED_10_1_7 },
-						["cost"] = { { "i", 208485, 1 } },	-- The Scarlet Key
-					}),
-				}),
-				n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-					o(421151, {	-- Carved Eye
-						["coord"] = { 40.5, 53.6, SCARLET_MONASTERY_ENTRANCE },
-						["timeline"] = { ADDED_10_2_5 },
-						["groups"] = {
-							i(212984),	-- Grimoire of the Zealous Observer (CI!)
-						},
-					}),
-				})),
-				n(ZONE_DROPS, {
-					["icon"] = 133154,
-					["crs"] = {
-						4284,	-- Scarlet Augur
-						4285,	-- Scarlet Disciple
-						4282,	-- Scarlet Magician
-						4280,	-- Scarlet Preserver
-						4281,	-- Scarlet Scout
-						4283,	-- Scarlet Sentry
-					},
-					["groups"] = {
-						i(7753),	-- Bloodspiller
-						i(7729),	-- Chesterfall Musket
-						i(13049),	-- Deanship Claymore
-						i(3203),	-- Dense Triangle Mace
-						i(7786),	-- Headsplitter
-						i(7787),	-- Resplendent Guardian
-						i(8226),	-- The Butcher
-						i(15928),	-- Silver-Thread Rod
-						i(6395),	-- Silver-Thread Amice
-						i(4713),	-- Silver-Thread Cloak
-						i(4035),	-- Silver-Thread Robe
-						i(7110),	-- Silver-Thread Armor
-						i(4036),	-- Silver-Thread Cuffs
-						i(6393),	-- Silver-Thread Gloves
-						i(4714),	-- Silver-Thread Sash
-						i(4037),	-- Silver-Thread Pants
-						i(6394),	-- Silver-Thread Boots
-						i(7727),	-- Watchman Pauldrons
-						i(7754),	-- Harbinger Boots
-						i(13114),	-- Troll's Bane Leggings
-						i(6592),	-- Battleforge Armor
-						i(7728),	-- Beguiler Robes
-					},
-				}),
-			}),
-			-- #endif
 			n(ACHIEVEMENTS, {
 				ach(768),	-- Explore Tirisfal Glades
 			}),

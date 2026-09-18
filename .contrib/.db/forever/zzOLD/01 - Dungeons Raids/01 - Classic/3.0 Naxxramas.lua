@@ -41,26 +41,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC,
 applyclassicphase(PHASE_SIX,
 -- #endif
 {
-	inst(754, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_0, REMOVED_3_0_2 } }, {	-- Naxxramas
-		-- #if BEFORE MOP
+	inst(754, {	-- Naxxramas
 		["lore"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
-		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		["description"] = "[TBC] \nNAXX is the raid that opened in SoD Phase 7. \nThe Loot and Quest information is still unclear. It will be added after the wowhead guide is updated.",
-		-- #endif
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 3456,	-- Naxxramas
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 		-- #endif
-		["mapID"] = NAXXRAMAS,
-		["maps"] = { NAXXRAMAS_LEVEL2, NAXXRAMAS_LEVEL3, NAXXRAMAS_LEVEL4, NAXXRAMAS_LEVEL5, NAXXRAMAS_LEVEL6 },
-		-- #if AFTER CATA
-		["sharedLockout"] = 1,
-		-- #endif
+		["mapID"] = MAP.NAXXRAMAS,
 		["isRaid"] = true,
-		-- #if BEFORE WRATH
 		["lvl"] = 60,
-		-- #endif
 		["groups"] = {
 			-- #if AFTER WRATH
 			applyclassicphase(PHASE_SIX, d(9, {	-- 40 Player (Legacy)
@@ -98,7 +87,7 @@ applyclassicphase(PHASE_SIX,
 							q(9251, {	-- Atiesh, the Befouled Greatstaff
 								["sourceQuest"] = 9250,	-- Frame of Atiesh
 								["qg"] = 15192,	-- Anachronos
-								["maps"] = { TEMPLE_OF_AHNQIRAJ },
+								["maps"] = { MAP.TEMPLE_OF_AHNQIRAJ },
 								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 								["lvl"] = 60,
 								["groups"] = {
@@ -117,7 +106,7 @@ applyclassicphase(PHASE_SIX,
 									{ "n", 15192 },	-- Anachronos
 									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
 								},
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["classes"] = { PRIEST },
 								["groups"] = {
 									i(236399),	-- Atiesh, Greatstaff of the Guardian (Priest)
@@ -129,7 +118,7 @@ applyclassicphase(PHASE_SIX,
 									{ "n", 15192 },	-- Anachronos
 									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
 								},
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["classes"] = { MAGE },
 								["groups"] = {
 									i(236400),	-- Atiesh, Greatstaff of the Guardian (Mage)
@@ -141,7 +130,7 @@ applyclassicphase(PHASE_SIX,
 									{ "n", 15192 },	-- Anachronos
 									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
 								},
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["classes"] = { WARLOCK },
 								["groups"] = {
 									i(236398),	-- Atiesh, Greatstaff of the Guardian (Warlock)
@@ -153,7 +142,7 @@ applyclassicphase(PHASE_SIX,
 									{ "n", 15192 },	-- Anachronos
 									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
 								},
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["classes"] = { DRUID },
 								["groups"] = {
 									i(236401),	-- Atiesh, Greatstaff of the Guardian (Druid)
@@ -166,7 +155,7 @@ applyclassicphase(PHASE_SIX,
 									{ "n", 15192 },	-- Anachronos
 									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
 								},
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["classes"] = { PRIEST },
 								["groups"] = {
 									i(22631),	-- Atiesh, Greatstaff of the Guardian (Priest)
@@ -178,7 +167,7 @@ applyclassicphase(PHASE_SIX,
 									{ "n", 15192 },	-- Anachronos
 									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
 								},
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["classes"] = { MAGE },
 								["groups"] = {
 									i(22589),	-- Atiesh, Greatstaff of the Guardian (Mage)
@@ -190,7 +179,7 @@ applyclassicphase(PHASE_SIX,
 									{ "n", 15192 },	-- Anachronos
 									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
 								},
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["classes"] = { WARLOCK },
 								["groups"] = {
 									i(22630),	-- Atiesh, Greatstaff of the Guardian (Warlock)
@@ -202,7 +191,7 @@ applyclassicphase(PHASE_SIX,
 									{ "n", 15192 },	-- Anachronos
 									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
 								},
-								["maps"] = { STRATHOLME },
+								["maps"] = { MAP.STRATHOLME },
 								["classes"] = { DRUID },
 								["groups"] = {
 									i(22632),	-- Atiesh, Greatstaff of the Guardian (Druid)
@@ -4573,7 +4562,7 @@ applyclassicphase(PHASE_SIX,
 			})),
 			-- #endif
 		},
-	})),
+	}),
 }
 -- #if BEFORE WRATH
 )

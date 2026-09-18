@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 11193,	-- Seril Scourgebane
 					["coord"] = { 61.2, 37.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STRATHOLME },
+					["maps"] = { MAP.STRATHOLME },
 					["requireSkill"] =
 						-- #if AFTER TBC
 						BLACKSMITHING,
@@ -1478,7 +1478,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 11192,	-- Kilram
 					["coord"] = { 61.2, 37.0, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLACKROCK_SPIRE },
+					["maps"] = { MAP.BLACKROCK_SPIRE },
 					["requireSkill"] =
 						-- #if AFTER TBC
 						BLACKSMITHING,
@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 11191,	-- Lilith the Lithe
 					["coord"] = { 61.2, 37.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_1_15_3 },
-					["maps"] = { STRATHOLME },
+					["maps"] = { MAP.STRATHOLME },
 					["requireSkill"] =
 						-- #if AFTER TBC
 						BLACKSMITHING,
@@ -1639,7 +1639,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						REMOVED_4_0_3,
 						-- #endif
 					},
-					["maps"] = { STRATHOLME },
+					["maps"] = { MAP.STRATHOLME },
 					["requireSkill"] =
 						-- #if AFTER TBC
 						BLACKSMITHING,

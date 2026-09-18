@@ -15,15 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			{ 36.6, 65.6, MAP.SILVERPINE_FOREST },
 			-- #endif
 		},
-		["maps"] = {
-			SHADOWFANG_KEEP,
-			SHADOWFANG_KEEP_LEVEL2,
-			SHADOWFANG_KEEP_LEVEL3,
-			SHADOWFANG_KEEP_LEVEL4,
-			SHADOWFANG_KEEP_LEVEL5,
-			SHADOWFANG_KEEP_LEVEL6,
-			SHADOWFANG_KEEP_LEVEL7
-		},
+		["maps"] = { MAP.SHADOWFANG_KEEP },
 		["lvl"] = lvlsquish(14, 14, 8),
 		["groups"] = {
 			-- #if SEASON_OF_DISCOVERY
@@ -1685,7 +1677,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 6247,	-- Doan Karhan
 					["coord"] = { 49.2, 57.2, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLACKFATHOM_DEEPS },
+					["maps"] = { MAP.BLACKFATHOM_DEEPS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
 					["groups"] = {

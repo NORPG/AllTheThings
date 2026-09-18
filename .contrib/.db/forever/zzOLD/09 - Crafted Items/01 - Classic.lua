@@ -2961,8 +2961,8 @@ root(ROOTS.Craftables, {
 					-- #endif
 					["maps"] = {
 						MAP.EASTERN_PLAGUELANDS,
-						RAZORFEN_DOWNS,
-						STRATHOLME,
+						MAP.RAZORFEN_DOWNS,
+						MAP.STRATHOLME,
 						MAP.WESTERN_PLAGUELANDS,
 					},
 					["timeline"] = { REMOVED_4_0_3 }
@@ -3797,7 +3797,7 @@ root(ROOTS.Craftables, {
 						MAP.EASTERN_PLAGUELANDS,
 						MAP.UNGORO_CRATER,
 						MAP.WESTERN_PLAGUELANDS,
-						ZULGURUB,
+						MAP.ZULGURUB,
 						-- #endif
 					},
 					["providers"] = {
@@ -3926,7 +3926,7 @@ root(ROOTS.Craftables, {
 						MAP.EASTERN_PLAGUELANDS,
 						MAP.FERALAS,
 						MAP.THE_HINTERLANDS,
-						ZULGURUB,
+						MAP.ZULGURUB,
 						-- #endif
 					},
 					["providers"] = {
@@ -4169,7 +4169,7 @@ root(ROOTS.Craftables, {
 						MAP.AZSHARA,
 						MAP.BURNING_STEPPES,
 						MAP.EASTERN_PLAGUELANDS,
-						ZULGURUB,
+						MAP.ZULGURUB,
 						-- #endif
 						MAP.FELWOOD,
 						MAP.SILITHUS,
@@ -4223,7 +4223,7 @@ root(ROOTS.Craftables, {
 						MAP.STRANGLETHORN_VALE,
 						MAP.TANARIS,
 						MAP.THE_HINTERLANDS,
-						ZULGURUB,
+						MAP.ZULGURUB,
 						-- #endif
 					},
 					["providers"] = {
@@ -5343,8 +5343,8 @@ root(ROOTS.Craftables, {
 							["learnedAt"] = 230,
 							-- #endif
 							["maps"] = {
-								BLACKROCK_DEPTHS,
-								MOLTEN_CORE,
+								MAP.BLACKROCK_DEPTHS,
+								MAP.MOLTEN_CORE,
 								-- #if BEFORE CATA
 								MAP.BURNING_STEPPES,
 								MAP.SEARING_GORGE,
@@ -5494,8 +5494,8 @@ root(ROOTS.Craftables, {
 							["learnedAt"] = 305,
 							-- #endif
 							["maps"] = {
-								RUINS_OF_AHNQIRAJ,
-								TEMPLE_OF_AHNQIRAJ,
+								MAP.RUINS_OF_AHNQIRAJ,
+								MAP.TEMPLE_OF_AHNQIRAJ,
 								-- #if BEFORE CATA
 								MAP.SILITHUS,
 								-- #endif
@@ -5506,8 +5506,8 @@ root(ROOTS.Craftables, {
 							["learnedAt"] = 305,
 							-- #endif
 							["maps"] = {
-								RUINS_OF_AHNQIRAJ,
-								TEMPLE_OF_AHNQIRAJ,
+								MAP.RUINS_OF_AHNQIRAJ,
+								MAP.TEMPLE_OF_AHNQIRAJ,
 								-- #if BEFORE CATA
 								MAP.SILITHUS,
 								-- #endif
@@ -5573,7 +5573,7 @@ root(ROOTS.Craftables, {
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 275,
 							-- #endif
-							["maps"] = { ZULGURUB },
+							["maps"] = { MAP.ZULGURUB },
 							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						o(177388, {	-- Ooze Covered Rich Thorium Vein
@@ -5793,8 +5793,8 @@ root(ROOTS.Craftables, {
 						}),
 						i(11370, {	-- Dark Iron Ore
 							["maps_disp"] = {
-								BLACKROCK_DEPTHS,
-								MOLTEN_CORE,
+								MAP.BLACKROCK_DEPTHS,
+								MAP.MOLTEN_CORE,
 								-- #if BEFORE CATA
 								MAP.BURNING_STEPPES,
 								MAP.SEARING_GORGE,
@@ -5870,8 +5870,8 @@ root(ROOTS.Craftables, {
 						}),
 						applyclassicphase(PHASE_FIVE, i(22203, {	-- Large Obsidian Shard
 							["maps_disp"] = {
-								RUINS_OF_AHNQIRAJ,
-								TEMPLE_OF_AHNQIRAJ,
+								MAP.RUINS_OF_AHNQIRAJ,
+								MAP.TEMPLE_OF_AHNQIRAJ,
 								-- #if BEFORE CATA
 								MAP.SILITHUS,
 								-- #endif
@@ -5948,8 +5948,8 @@ root(ROOTS.Craftables, {
 						}),
 						applyclassicphase(PHASE_FIVE, i(22202, {	-- Small Obsidian Shard
 							["maps_disp"] = {
-								RUINS_OF_AHNQIRAJ,
-								TEMPLE_OF_AHNQIRAJ,
+								MAP.RUINS_OF_AHNQIRAJ,
+								MAP.TEMPLE_OF_AHNQIRAJ,
 								-- #if BEFORE CATA
 								MAP.SILITHUS,
 								-- #endif
@@ -5972,7 +5972,7 @@ root(ROOTS.Craftables, {
 								MAP.BURNING_STEPPES,
 								MAP.EASTERN_PLAGUELANDS,
 								MAP.FELWOOD,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							["providers"] = {
@@ -6089,7 +6089,7 @@ root(ROOTS.Craftables, {
 								MAP.BURNING_STEPPES,
 								MAP.EASTERN_PLAGUELANDS,
 								MAP.FELWOOD,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							["providers"] = {
@@ -6161,7 +6161,7 @@ root(ROOTS.Craftables, {
 								MAP.BURNING_STEPPES,
 								MAP.EASTERN_PLAGUELANDS,
 								MAP.FELWOOD,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							["provider"] = { "o", 2040 },	-- Mithril Deposit
@@ -6192,7 +6192,7 @@ root(ROOTS.Craftables, {
 								MAP.BURNING_STEPPES,
 								MAP.EASTERN_PLAGUELANDS,
 								MAP.FELWOOD,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							["providers"] = {
@@ -6215,8 +6215,8 @@ root(ROOTS.Craftables, {
 						}),
 						i(11382, {	-- Blood of the Mountain
 							["maps_disp"] = {
-								BLACKROCK_DEPTHS,
-								MOLTEN_CORE,
+								MAP.BLACKROCK_DEPTHS,
+								MAP.MOLTEN_CORE,
 								-- #if BEFORE CATA
 								MAP.BURNING_STEPPES,
 								MAP.SEARING_GORGE,
@@ -6227,9 +6227,9 @@ root(ROOTS.Craftables, {
 						i(8150, {	-- Deeprock Salt
 							["description"] = "Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",
 							["maps_disp"] = {
-								BLACKROCK_DEPTHS,
-								MARAUDON,
-								ULDAMAN,
+								MAP.BLACKROCK_DEPTHS,
+								MAP.MARAUDON,
+								MAP.ULDAMAN,
 							},
 						}),
 						applyclassicphase(PHASE_FOUR, i(19774, {	-- Souldarite
@@ -6282,7 +6282,7 @@ root(ROOTS.Craftables, {
 								MAP.BURNING_STEPPES,
 								MAP.EASTERN_PLAGUELANDS,
 								MAP.FELWOOD,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6308,7 +6308,7 @@ root(ROOTS.Craftables, {
 								MAP.BURNING_STEPPES,
 								MAP.EASTERN_PLAGUELANDS,
 								MAP.FELWOOD,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6366,7 +6366,7 @@ root(ROOTS.Craftables, {
 								MAP.BURNING_STEPPES,
 								MAP.EASTERN_PLAGUELANDS,
 								MAP.FELWOOD,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6417,7 +6417,7 @@ root(ROOTS.Craftables, {
 								MAP.BURNING_STEPPES,
 								MAP.EASTERN_PLAGUELANDS,
 								MAP.FELWOOD,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6554,7 +6554,7 @@ root(ROOTS.Craftables, {
 								MAP.UNGORO_CRATER,
 								MAP.WINTERSPRING,
 								MAP.EASTERN_PLAGUELANDS,
-								ZULGURUB,
+								MAP.ZULGURUB,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6844,7 +6844,7 @@ root(ROOTS.Craftables, {
 						-- #if AFTER CATA
 						FIRELANDS,
 						-- #endif
-						MOLTEN_CORE,
+						MAP.MOLTEN_CORE,
 					},
 				}),
 				applyclassicphase(PHASE_FOUR, i(19767, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Bat Leather (Sourced in Zul'gurub)
@@ -6896,9 +6896,9 @@ root(ROOTS.Craftables, {
 				i(15416, {	-- Black Dragonscale
 					["description"] = "Can be skinned from elite creatures of the Black Dragonflight.",
 					["maps_disp"] = {
-						BLACKWING_LAIR,
+						MAP.BLACKWING_LAIR,
 						-- #if BEFORE WOD
-						BLACKROCK_SPIRE,
+						MAP.BLACKROCK_SPIRE,
 						-- #endif
 						-- #if BEFORE CATA
 						MAP.BURNING_STEPPES,
@@ -6910,7 +6910,7 @@ root(ROOTS.Craftables, {
 					-- #if AFTER WOD
 					["cr"] = 14020,	-- Chromaggus
 					["description"] = "Blizzard being Blizzard, Blue Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",
-					["maps_disp"] = { BLACKWING_LAIR },
+					["maps_disp"] = { MAP.BLACKWING_LAIR },
 					-- #elseif AFTER CATA
 					["crs"] = {
 						14020,	-- Chromaggus
@@ -6919,7 +6919,7 @@ root(ROOTS.Craftables, {
 						10442,	-- Chromatic Whelp
 					},
 					["description"] = "Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",
-					["maps_disp"] = { BLACKROCK_SPIRE },
+					["maps_disp"] = { MAP.BLACKROCK_SPIRE },
 					-- #else
 					["description"] = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
 					["coords"] = {
@@ -6932,7 +6932,7 @@ root(ROOTS.Craftables, {
 				applyclassicphase(PHASE_FOUR, i(20381, {	-- Dreamscale
 					-- #if AFTER 10.1.5
 					["description"] = "Can be skinned from corrupted creatures of the Green Dragonflight in Temple of Atal'hakkar. Can also be skinned from the Dragons of Nightmare during the Anniversary event.",
-					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps_disp"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 					-- #elseif AFTER 7.2.5
 					["description"] = "Can be skinned from the Dragons of Nightmare during the Anniversary event.",
 					-- #elseif AFTER 4.0.3
@@ -6944,7 +6944,7 @@ root(ROOTS.Craftables, {
 				})),
 				i(15412, {	-- Green Dragonscale
 					["description"] = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
-					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps_disp"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 				}),
 				i(15408, {	-- Heavy Scorpid Scale
 					-- #if AFTER 4.0.3
@@ -6962,7 +6962,7 @@ root(ROOTS.Craftables, {
 					-- #if AFTER WOD
 					["cr"] = 14020,	-- Chromaggus
 					["description"] = "Blizzard being Blizzard, Red Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",
-					["maps_disp"] = { BLACKWING_LAIR },
+					["maps_disp"] = { MAP.BLACKWING_LAIR },
 					-- #elseif AFTER CATA
 					["crs"] = {
 						14020,	-- Chromaggus
@@ -6971,7 +6971,7 @@ root(ROOTS.Craftables, {
 						10442,	-- Chromatic Whelp
 					},
 					["description"] = "Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",
-					["maps_disp"] = { BLACKROCK_SPIRE },
+					["maps_disp"] = { MAP.BLACKROCK_SPIRE },
 					-- #else
 					["description"] = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
 					["coord"] = { 80.0, 48.0, MAP.WETLANDS },
@@ -7006,7 +7006,7 @@ root(ROOTS.Craftables, {
 				}),
 				i(8165, {	-- Worn Dragonscale
 					["description"] = "Can be skinned from elite creatures of any Dragonflights around the world.",
-					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },
+					["maps_disp"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 				}),
 			}),
 		},

@@ -1049,7 +1049,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL, MAP.HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.DIRE_MAUL, MAP.HILLSBRAD_FOOTHILLS },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -1297,7 +1297,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -1451,7 +1451,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STRATHOLME },
+					["maps"] = { MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 13180, 5 },	-- Stratholme Holy Water
 						{ "i", 8836, 10 },	-- Arthas' Tears
@@ -1782,7 +1782,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { RAZORFEN_KRAUL, MAP.WETLANDS, MAP.STONETALON_MOUNTAINS },
+					["maps"] = { MAP.RAZORFEN_KRAUL, MAP.WETLANDS, MAP.STONETALON_MOUNTAINS },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,

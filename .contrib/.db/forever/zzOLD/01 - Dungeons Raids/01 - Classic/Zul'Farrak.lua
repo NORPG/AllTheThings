@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lore"] = "Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",
 		-- #endif
 		["zone-text-areaID"] = 978,	-- Zul'Farrak
-		["mapID"] = ZULFARRAK,
+		["mapID"] = MAP.ZULFARRAK,
 		["coords"] = {
 			-- #if AFTER CATA
 			{ 39.2, 21.3, MAP.TANARIS },

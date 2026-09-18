@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2437,	-- Ragefire Chasm
 		-- #endif
-		["mapID"] = RAGEFIRE_CHASM,
+		["mapID"] = MAP.RAGEFIRE_CHASM,
 		["coords"] = {
 			-- #if AFTER CATA
 			{ 52.52, 57.83, 86 },	-- Ragefire Chasm, Orgrimmar [Cleft of Shadow]

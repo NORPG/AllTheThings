@@ -4093,7 +4093,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 52.6, 36.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLACKFATHOM_DEEPS, MAP.DARKSHORE, DEADMINES, MAP.LOCH_MODAN, SHADOWFANG_KEEP },
+					["maps"] = { MAP.BLACKFATHOM_DEEPS, MAP.DARKSHORE, MAP.DEADMINES, MAP.LOCH_MODAN, MAP.SHADOWFANG_KEEP },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,

@@ -52,9 +52,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 		["sourceQuest"] = 7761,	-- Blackhand's Command
 		-- #endif
 		["provider"] = { "o", 179879 },	-- Orb of Command
-		["mapID"] = BLACKWING_LAIR,
+		["mapID"] = MAP.BLACKWING_LAIR,
 		["coord"] = { 64.2, 71.0, BLACKROCK_MOUNTAIN },
-		["maps"] = { BLACKWING_LAIR_LEVEL2, BLACKWING_LAIR_LEVEL3, BLACKWING_LAIR_LEVEL4 },
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(50, 50, 25),
@@ -152,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
 					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
 					["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-					["coord"] = { 32.0, 42.9, BLACKWING_LAIR },
+					["coord"] = { 32.0, 42.9, MAP.BLACKWING_LAIR },
 					["groups"] = {
 						i(21109),	-- Draconic for Dummies [Chapter VII]
 					},

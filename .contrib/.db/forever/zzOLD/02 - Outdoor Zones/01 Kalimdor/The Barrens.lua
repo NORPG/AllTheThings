@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["coord"] = { 57.23, 30.34, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { MAP.HILLSBRAD_FOOTHILLS, RAZORFEN_KRAUL, MAP.STONETALON_MOUNTAINS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS, MAP.RAZORFEN_KRAUL, MAP.STONETALON_MOUNTAINS },
 					["cost"] = { { "i", 3575, 10 } },	-- Iron Bar
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -1268,7 +1268,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 211653,	-- Grizzby
 					["coord"] = { 61.8, 39.4, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { MAP.ARATHI_HIGHLANDS, BLACKFATHOM_DEEPS, MAP.DESOLACE, MAP.DUSTWALLOW_MARSH, MAP.FERALAS, MAP.HILLSBRAD_FOOTHILLS, MAP.STRANGLETHORN_VALE, MAP.SWAMP_OF_SORROWS, MAP.WETLANDS },
+					["maps"] = { MAP.ARATHI_HIGHLANDS, MAP.BLACKFATHOM_DEEPS, MAP.DESOLACE, MAP.DUSTWALLOW_MARSH, MAP.FERALAS, MAP.HILLSBRAD_FOOTHILLS, MAP.STRANGLETHORN_VALE, MAP.SWAMP_OF_SORROWS, MAP.WETLANDS },
 					["cost"] = { { "i", 17058, 24 } },	-- Fish Oil
 					["lvl"] = 20,
 				})),
@@ -3673,7 +3673,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 3665,	-- Crane Operator Bigglefuzz
 					["coord"] = { 63.1, 37.6, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WAILING_CAVERNS },
+					["maps"] = { MAP.WAILING_CAVERNS },
 					["lvl"] = 14,
 					["groups"] = {
 						objective(1, {	-- 0/1 99-Year-Old Port
