@@ -1813,6 +1813,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		if not idealParent then
 			t.questID = app.UniqueCounter.OrphanedQuestObjective
 			app.PrintDebug(t.__type,app:SearchLink(t),"lost its parent")
+			app.PrintTable(t)
 			return
 		end
 		return idealParent.questID
