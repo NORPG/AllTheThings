@@ -1809,7 +1809,12 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		return 1;
 	end,
 	questID = function(t)
-		return (t.sourceParent or t.parent).questID;
+		local idealParent = t.sourceParent or t.parent
+		if not idealParent then
+			app.PrintDebug(t.__type,app:SearchLink(t),"lost its parent")
+			return
+		end
+		return idealParent.questID
 	end,
 	RefreshCollectionOnly = true,
 	collectible = function(t)
