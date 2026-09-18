@@ -27,11 +27,7 @@ local OnTooltipForDarkmoonFaire = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
--- #if AFTER TBC
-		local repPerTierTurnIn = 250;
--- #else
 		local repPerTierTurnIn = 100;
--- #endif
 		local tierOneMaxRep = ]] .. TIER_ONE_MAX_REPUTATION[2] .. [[;
 		if reputation < tierOneMaxRep then
 			addRepInfo(tooltipInfo, reputation, "Complete Tier 1 Quests", repPerTierTurnIn, tierOneMaxRep);
@@ -56,11 +52,7 @@ local OnTooltipForDarkmoonFaire = [[function(t, tooltipInfo)
 				end
 			end
 		end
--- #if AFTER TBC
-		local repPerDeckTurnIn = 350;
--- #else
 		local repPerDeckTurnIn = 150;
--- #endif
 		addRepInfo(tooltipInfo, reputation, "Turn in Decks.", repPerDeckTurnIn, 42000);
 	end
 end]];

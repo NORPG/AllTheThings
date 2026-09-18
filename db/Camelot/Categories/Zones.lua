@@ -33,7 +33,7 @@ q(233,{coords={
 [1426]={{29.8,71.2}}},providers={{"i",2187}},qgs={658},r=2,rwp=40003,sourceQuests={179}}),
 q(234,{coords={
 [1426]={{22.6,71.4}}},providers={{"i",2188}},qgs={714},r=2,rwp=40003,sourceQuests={233},g={
-i(247940),
+i(247840,{f=55,spellID=1245608}),
 i(247841,{f=55,spellID=1245609}),
 i(247846,{f=55,spellID=1245610})}}),
 q(3107,{c={2},coords={
@@ -425,6 +425,8 @@ m(425,{icon=236447,lore="Northshire was the pride of Stormwind's vineyards until
 h(-45,{
 q(783,{coords={
 [1429]={{48.1,42.9}}},qgs={823},r=2}),
+q(92124,{coords={
+[1429]={{49.6,40.4}}},qgs={951},sourceQuests={91741}}),
 q(6,{coords={
 [1429]={{48.1,42.9}}},lvl=2,qgs={823},r=2,sourceQuests={18},g={
 qo(1,{coords={
@@ -469,6 +471,15 @@ q(3903,{coords={
 q(3904,{coords={
 [1429]={{50.7,39.3}}},lvl=2,qgs={9296},r=2,sourceQuests={3903},g={
 qo(1,{providers={{"i",11119},{"o",161557}}})}}),
+q(91745,{coords={
+[1429]={{49.6,40.4}}},qgs={951},sourceQuests={91743}}),
+q(91741,{qis={247857},qss={47834}}),
+q(91743,{coords={
+[1429]={{49.6,40.4}}},qgs={951},sourceQuests={92124},g={
+qo(1,{crs={6,257},providers={{"i",247839}}}),
+i(247840,{f=55,spellID=1245608}),
+i(247841,{f=55,spellID=1245609}),
+i(247846,{f=55,spellID=1245610})}}),
 q(54,{coords={
 [1429]={{48.9,41.6}}},providers={{"i",745}},qgs={197},r=2,sourceQuests={21},g={
 s(158304,6078,{f=8,q=1})}}),
@@ -487,6 +498,11 @@ s(156947,2691,{f=6,loc=47,q=1}),
 s(160227,11192,{f=4,loc=44,q=1})}}),
 q(3105,{c={9},coords={
 [1429]={{48.8,41.6}}},providers={{"i",9576}},qgs={197},races={1},sourceQuests={7}}),
+q(96627,{coords={
+[1429]={{48.9,41.6}}},qgs={197},sourceQuests={21}}),
+q(91752,{coords={
+[1429]={{47.2,32.17}}},qgs={247226},sourceQuests={91745},g={
+qo(1,{crs={248362},providers={{"i",247886}}})}}),
 q(1598,{altQuests={1599},c={9},coords={
 [1429]={{49.9,42.6}}},qgs={459},r=2,g={
 qo(1,{coords={
@@ -506,6 +522,7 @@ n(78,{coords={
 [1429]={{47.2,41.8}}},sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2131,2132}}})}),
 h(-63,{
 s(156595,2057,{crs={38},f=25,q=1}),
+i(247834,{crs={6}}),
 s(156593,2055,{coords={
 [1429]={{49,29},{50.2,26.6}}},crs={80},f=23,q=1})})}}),
 h(-12,{
@@ -524,11 +541,9 @@ crit(1150,{achID=776,id=1})}),
 exp(87,{
 crit(1147,{achID=776,id=1})}),
 exp(56,{collectible=false}),
-exp(5174,{collectible=false}),
 exp(54),
 exp(797,{
 crit(1151,{achID=776,id=1})}),
-exp(5637,{collectible=false}),
 exp(92,{collectible=false}),
 exp(89,{collectible=false}),
 exp(9,{
@@ -539,7 +554,6 @@ exp(86,{
 crit(1157,{achID=776,id=1})}),
 exp(1519,{
 crit(1149,{achID=776,id=1})}),
-exp(7486,{collectible=false}),
 exp(64),
 exp(63),
 exp(91,{

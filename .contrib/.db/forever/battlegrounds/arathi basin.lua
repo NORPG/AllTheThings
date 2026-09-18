@@ -6,9 +6,7 @@ ExportDB.OnTooltipDB.ForArathiBasin = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
--- #if BEFORE TBC
 		addRepInfo(tooltipInfo, reputation, "Concerted Efforts", 100, 42000);
--- #endif
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Resources", 10, 42000, 200);
 		addRepInfo(tooltipInfo, reputation, "Resource Ticks", 10, 42000);
 		tinsert(tooltipInfo, { left = " Every 200 or 150 Resources during AB Weekend.", r = 1, g = 1, b = 1 });

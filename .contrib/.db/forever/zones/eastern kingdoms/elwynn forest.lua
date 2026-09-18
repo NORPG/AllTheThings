@@ -22,6 +22,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.1, 42.9, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 					}),
+					q(92124, {	-- Book Inventory
+						sourceQuest = 91741,	-- Nibbled on Book
+						qg = 951,	-- Brother Paxton
+						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
+					}),
 					q(6, {	-- Bounty on Garrick Padfoot
 						sourceQuest = 18,	-- Brotherhood of Thieves
 						qg = 823,	-- Deputy Willem
@@ -82,6 +87,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { ROGUE },
+					}),
+					q(91758, {	-- Follow That Kobold!
+						sourceQuest = 91752,	-- The Big Picture
+						qg = 197,	-- Marshal McBride
+						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
+						groups = {
+							objective(1, {	-- 0/1 Sack of "Picture" Books
+								provider = { "i", 247886 },	-- Sack of "Picture" Books
+								cr = 248362,	-- Shinyfinder Narf
+							}),
+						},
 					}),
 					q(3104, {	-- Glyphic Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
@@ -175,6 +191,35 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							}),
 						},
 					}),
+					q(91745, {	-- Mining Consultant
+						sourceQuest = 91743,	-- Rascally Rodents
+						qg = 951,	-- Brother Paxton
+						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
+						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
+					}),
+					q(91741, {	-- Nibbled on Book
+						qs = 47834,	-- Nibbled on Book (QS!)
+						qis = {
+							247857,	-- Nibbled on Book
+						},
+					}),
+					q(91743, {	-- Rascally Rodents
+						sourceQuest = 92124,	-- Book Inventory
+						qg = 951,	-- Brother Paxton
+						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
+						groups = {
+							objective(1, {	-- 0/8 Stolen Book
+								provider = { "i", 247839 },	-- Stolen Book
+								crs = {
+									6,	-- Kobold Vermin
+									257,	-- Kobold Worker
+								},
+							}),
+							i(247840),	-- Mining for Dummies
+							i(247841),	-- Wild Harvest
+							i(247846),	-- Pelt Collecting for Beginners
+						},
+					}),
 					q(54, {	-- Report to Goldshire
 						sourceQuest = 21,		-- Skirmish at Echo Ridge
 						providers = {
@@ -204,6 +249,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						groups = {
 							i(6095),	-- Wandering Boots
 						},
+					}),
+					q(91772, {	-- Shhh! We're Hunting Kobolds
+						sourceQuest = 91758,	-- Follow That Kobold!
+						qg = 248415,	-- Tordrin Sternblade
+						qi = 247970,	-- Kobold Tracking Kit
+						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
+						--[[
+						groups = {
+							objective(1, {	-- 0/6 Followed Kobold Tracks
+								provider = { "o",  },	-- Kobold Tracks
+							}),
+						},
+						]]--
 					}),
 					q(3100, {	-- Simple Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
@@ -238,6 +296,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.8, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { WARLOCK },
+					}),
+					q(96627, {	-- The Adventurer [Elwynn Forest]
+						sourceQuest = 21,	-- Skirmish at Echo Ridge
+						qg = 197,	-- Marshal McBride
+						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
+						--[[
+						CRIEVE NOTE:
+						Also flagged 96659, 96630, 96652, 96638, 98289, 96656
+						Likely the same 'The Adventurer' quest, but from different zones?
+						]]--
+					}),
+					q(91752, {	-- The Big Picture
+						sourceQuest = 91745,	-- Mining Consultant
+						qg = 247226,	-- Kelsey Fargo
+						coord = { 47.2, 32.17, MAP.ELWYNN_FOREST },
+						groups = {
+							objective(1, {	-- 0/1 Sack of "Picture" Books
+								provider = { "i", 247886 },	-- Sack of "Picture" Books
+								cr = 248362,	-- Shinyfinder Narf
+							}),
+						},
 					}),
 					q(1598, {	-- The Stolen Tome
 						altQuests = { 1599 },	-- Beginnings
@@ -323,6 +402,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(2057, {	-- Pitted Defias Shortsword
 						cr = 38,	-- Defias Thug
 					}),
+					i(247834, {	-- Nibbled on Book
+						cr = 6,	-- Kobold Vermin
+					}),
 					i(2055, {	-- Small Wooden Hammer
 						cr = 80,	-- Kobold Laborer
 						coords = {
@@ -343,21 +425,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			exploration(57),	-- Fargodeep Mine
 			exploration(60),	-- Forest's Edge
 			exploration(87),	-- Goldshire
-			-- #if AFTER CATA
-			exploration(5176),	-- Goldtooth's Den
-			-- #endif
 			visit_exploration(56, {coord={74.5,54.0,MAP.ELWYNN_FOREST}}),	-- Heroes' Vigil
-			visit_exploration(5174,{coord={24.9,94.2,MAP.ELWYNN_FOREST}}),	-- Hogger Hill
 			exploration(54),	-- Jasperlode Mine
 			exploration(797),	-- Jerod's Landing
-			visit_exploration(5637,{coord={42.9,65.6,MAP.ELWYNN_FOREST}}),	-- Lion's Pride Inn
 			visit_exploration(92, {coord={32.1,58.2,MAP.ELWYNN_FOREST}}),	-- Mirror Lake
 			visit_exploration(89, {coord={31.6,64.8,MAP.ELWYNN_FOREST}}),	-- Mirror Lake Orchard
 			visit_exploration(9,   {coord={45.5,48.7,MAP.ELWYNN_FOREST}}),	-- Northshire Valley
 			exploration(798),	-- Ridgepoint Tower
 			exploration(86),	-- Stone Cairn Lake
 			exploration(1519),	-- Stormwind City
-			visit_exploration(7486,{coord={33.7,50.8,MAP.ELWYNN_FOREST}}),	-- Stormwind Gate
 			exploration(64),	-- The Maclure Vineyards
 			exploration(63),	-- The Stonefield Farm
 			exploration(91),	-- Tower of Azora
@@ -411,6 +487,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(4840),	-- Long Bayonet
 					i(1158),	-- Solid Metal Club
 					i(1008),	-- Well-used Sword
+				},
+			}),
+			q(96626, {	-- Camping 101: Cooking [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				--[[
+				CRIEVE NOTE:
+				Also flagged 
+				Likely the same 'The Great Outdoors' quest, but from different zones?
+				]]--
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+			}),
+			q(97923, {	-- Camping 101: Mining [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				--[[
+				CRIEVE NOTE:
+				Also flagged 
+				Likely the same 'The Great Outdoors' quest, but from different zones?
+				]]--
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				requireSkill = MINING,
+				groups = {
+					--recipe(),	-- Mining: Lodestone	-- CRIEVE NOTE: Couldn't find the spellID
 				},
 			}),
 			q(59, {	-- Cloth and Leather Armor
@@ -831,6 +931,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 42.1, 65.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+			}),
+			q(95998, {	-- The Great Outdoors [Elwynn Forest]
+				sourceQuest = 96627,	-- The Adventurer [Elwynn Forest]
+				--[[
+				CRIEVE NOTE:
+				Also flagged 96608, 96607, 96604, 96605, 99606, 96101
+				Likely the same 'The Great Outdoors' quest, but from different zones?
+				]]--
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 			}),
 			q(76, {	-- The Jasperlode Mine
 				sourceQuest = 62,	-- The Fargodeep Mine

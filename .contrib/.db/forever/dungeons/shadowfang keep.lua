@@ -88,50 +88,34 @@ root(ROOTS.Instances, {
 				i(3194),	-- Black Malice
 				i(2205, {	-- Duskbringer
 					["crs"] = {
-						-- #if AFTER 4.0.3
-						47132,	-- Dark Creeper
-						3870,	-- Stone Sleeper
-						47136,	-- Unstable Ravager
-						-- #else
 						3863,	-- Lupine Horror
 						3857,	-- Shadowfang Glutton
 						3859,	-- Shadowfang Ragetooth
 						2529,	-- Son of Arugal
 						3873,	-- Tormented Officer
 						3877,	-- Wailing Guardsman
-						-- #endif
 					},
 				}),
 				i(1483),	-- Face Smasher
 				i(1489, {	-- Gloomshroud Armor
 					["crs"] = {
-						-- #if AFTER 4.0.3
-						3875,	-- Haunted Servitor
-						47136,	-- Unstable Ravager
-						-- #else
 						3863,	-- Lupine Horror
 						3859,	-- Shadowfang Ragetooth
 						2529,	-- Son of Arugal
 						3873,	-- Tormented Officer
 						3866,	-- Vile Bat
 						3877,	-- Wailing Guardsman
-						-- #endif
 					},
 				}),
 				i(2807),	-- Guillotine Axe
 				i(1974),	-- Mindthrust Bracers
 				i(2292, {	-- Necrology Robes
 					["crs"] = {
-						-- #if AFTER 4.0.3
-						3870,	-- Stone Sleeper
-						47146,	-- Spitebone Flayer
-						-- #else
 						3863,	-- Lupine Horror
 						3859,	-- Shadowfang Ragetooth
 						2529,	-- Son of Arugal
 						3873,	-- Tormented Officer
 						3877,	-- Wailing Guardsman
-						-- #endif
 					},
 				}),
 				i(1318),	-- Night Reaver

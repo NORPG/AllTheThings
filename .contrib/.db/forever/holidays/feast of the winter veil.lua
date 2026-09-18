@@ -590,6 +590,4 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 })));
 
 -- Remove the holiday flag.
--- #if BEFORE 6.2.2.20395
 for i,o in ipairs(HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK) do o.u = nil; end
--- #endif

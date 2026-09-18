@@ -116,7 +116,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["coord"] = { 22.6, 71.4, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(247940),	-- Mining for Dummies
+							i(247840),	-- Mining for Dummies
 							i(247841),	-- Wild Harvest
 							i(247846),	-- Pelt Collecting for Beginners
 						},
@@ -237,7 +237,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["coord"] = { 25.0, 75.8, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(96628, {	-- The Adventurer
+					q(96628, {	-- The Adventurer [Dun Morogh]
 						["sourceQuest"] = 218,	-- The Stolen Journal
 						["providers"] = {
 							{ "n", 786 },	-- Grelin Whitebeard
