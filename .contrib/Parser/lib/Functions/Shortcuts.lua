@@ -2996,6 +2996,16 @@ root = function(category, g)							-- Create a ROOT CATEGORY Object
 	end
 	return o;
 end
+maproot = function(...)									-- Create a MAP ROOT in the Zones header.
+	-- Example: maproot(KALIMDOR, ELWYNN_FOREST, { });
+	local args = { ... };
+	local count = #args;
+	local data = args[count];
+	for i=count-1,1,-1 do
+		data = { m(args[i], data) };
+	end
+	root(ROOTS.Zones, data);
+end
 --- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.).
 ---@param skillID integer
 ---@param t? ATTParserObject|ATTObjectArray
