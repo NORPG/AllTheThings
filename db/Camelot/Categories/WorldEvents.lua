@@ -17,57 +17,57 @@ s(163622,18671,{f=23,u=12}),
 s(163623,18672,{f=1,u=12})}}),
 n(14457,{coords={
 [1452]={{54.6,42.6}}},description="This is only available during an Elemental Invasion.",u=12,g={
-r(26279,{itemID=21548,u=12}),
+i(21548,{f=200,u=12}),
 r(8782,{itemID=7091,u=12}),
 i(18678,{f=51,u=12}),
 i(18679,{f=52,u=12})}}),
 n(14454,{coords={
 [1451]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",u=12,g={
-r(26279,{itemID=21548,u=12}),
+i(21548,{f=200,u=12}),
 s(163625,18676,{f=6,loc=45,u=12}),
 s(163626,18677,{f=3,u=12})}})}}),
 h(-481,{maps={1454,1455},rwp=20001,u=1501,g={
 h(-210,{r=2,u=1501,g={
 q(8811,{coords={
 [1453]={{55.2,64.7}},
-[1455]={{59.3,64.1}}},cost={{"i",21436,1}},qgs={15735,15766},r=2,repeatable=1,u=1501}),
+[1455]={{59.3,64.1}}},cost={{"i",21436,1}},description="Grants 5 reputation with Stormwind",qgs={15735,15766},r=2,repeatable=1,u=1501}),
 q(8830,{coords={
 [1453]={{55.2,64.7}},
-[1455]={{59.3,64.1}}},cost={{"i",21436,1}},qgs={15735,15766},r=2,repeatable=1,sourceQuests={8811},u=1501}),
+[1455]={{59.3,64.1}}},cost={{"i",21436,1}},description="Grants 5 reputation with Stormwind",qgs={15735,15766},r=2,repeatable=1,sourceQuests={8811},u=1501}),
 q(8812,{coords={
-[1455]={{43.2,46.5},{61,77.1}}},cost={{"i",21436,1}},qgs={15734,15764},r=2,repeatable=1,u=1501}),
+[1455]={{43.2,46.5},{61,77.1}}},cost={{"i",21436,1}},description="Grants 5 reputation with Ironforge",qgs={15734,15764},r=2,repeatable=1,u=1501}),
 q(8834,{coords={
-[1455]={{43.2,46.5},{61,77.1}}},cost={{"i",21436,1}},qgs={15734,15764},r=2,repeatable=1,sourceQuests={8812},u=1501}),
+[1455]={{43.2,46.5},{61,77.1}}},cost={{"i",21436,1}},description="Grants 5 reputation with Ironforge",qgs={15734,15764},r=2,repeatable=1,sourceQuests={8812},u=1501}),
 q(8813,{coords={
 [1455]={{59.1,65.5}},
-[1457]={{38.2,38.7}}},cost={{"i",21436,1}},qgs={15731,15762},r=2,repeatable=1,u=1501}),
+[1457]={{38.2,38.7}}},cost={{"i",21436,1}},description="Grants 5 reputation with Darnassus",qgs={15731,15762},r=2,repeatable=1,u=1501}),
 q(8836,{coords={
 [1455]={{59.1,65.5}},
-[1457]={{38.2,38.7}}},cost={{"i",21436,1}},qgs={15731,15762},r=2,repeatable=1,sourceQuests={8813},u=1501}),
+[1457]={{38.2,38.7}}},cost={{"i",21436,1}},description="Grants 5 reputation with Darnassus",qgs={15731,15762},r=2,repeatable=1,sourceQuests={8813},u=1501}),
 q(8814,{coords={
-[1455]={{63.3,73.7},{69.7,46}}},cost={{"i",21436,1}},qgs={15733,15763},r=2,repeatable=1,u=1501}),
+[1455]={{63.3,73.7},{69.7,46}}},cost={{"i",21436,1}},description="Grants 5 reputation with Gnomeregan",qgs={15733,15763},r=2,repeatable=1,u=1501}),
 q(8838,{coords={
-[1455]={{63.3,73.7},{69.7,46}}},cost={{"i",21436,1}},qgs={15733,15763},r=2,repeatable=1,sourceQuests={8814},u=1501}),
+[1455]={{63.3,73.7},{69.7,46}}},cost={{"i",21436,1}},description="Grants 5 reputation with Gnomeregan",qgs={15733,15763},r=2,repeatable=1,sourceQuests={8814},u=1501}),
 q(8819,{coords={
 [1453]={{55.2,64.7}},
-[1455]={{59.3,64.1}}},cost={{"i",21436,10}},qgs={15735,15766},r=2,repeatable=1,u=1501}),
+[1455]={{59.3,64.1}}},cost={{"i",21436,10}},description="Grants 150 reputation with Stormwind",qgs={15735,15766},r=2,repeatable=1,u=1501}),
 q(8831,{coords={
 [1453]={{55.2,64.7}},
-[1455]={{59.3,64.1}}},cost={{"i",21436,10}},qgs={15735,15766},r=2,repeatable=1,sourceQuests={8819},u=1501}),
+[1455]={{59.3,64.1}}},cost={{"i",21436,10}},description="Grants 150 reputation with Stormwind",qgs={15735,15766},r=2,repeatable=1,sourceQuests={8819},u=1501}),
 q(8820,{coords={
-[1455]={{43.2,46.5},{61,77.1}}},cost={{"i",21436,10}},qgs={15734,15764},r=2,repeatable=1,u=1501}),
+[1455]={{43.2,46.5},{61,77.1}}},cost={{"i",21436,10}},description="Grants 150 reputation with Ironforge",qgs={15734,15764},r=2,repeatable=1,u=1501}),
 q(8835,{coords={
-[1455]={{43.2,46.5},{61,77.1}}},cost={{"i",21436,10}},qgs={15734,15764},r=2,repeatable=1,sourceQuests={8820},u=1501}),
+[1455]={{43.2,46.5},{61,77.1}}},cost={{"i",21436,10}},description="Grants 150 reputation with Ironforge",qgs={15734,15764},r=2,repeatable=1,sourceQuests={8820},u=1501}),
 q(8821,{coords={
 [1455]={{59.1,65.5}},
-[1457]={{38.2,38.7}}},cost={{"i",21436,10}},qgs={15731,15762},r=2,repeatable=1,u=1501}),
+[1457]={{38.2,38.7}}},cost={{"i",21436,10}},description="Grants 150 reputation with Darnassus",qgs={15731,15762},r=2,repeatable=1,u=1501}),
 q(8837,{coords={
 [1455]={{59.1,65.5}},
-[1457]={{38.2,38.7}}},cost={{"i",21436,10}},qgs={15731,15762},r=2,repeatable=1,sourceQuests={8821},u=1501}),
+[1457]={{38.2,38.7}}},cost={{"i",21436,10}},description="Grants 150 reputation with Darnassus",qgs={15731,15762},r=2,repeatable=1,sourceQuests={8821},u=1501}),
 q(8822,{coords={
-[1455]={{63.3,73.7},{69.7,46}}},cost={{"i",21436,10}},qgs={15733,15763},r=2,repeatable=1,u=1501}),
+[1455]={{63.3,73.7},{69.7,46}}},cost={{"i",21436,10}},description="Grants 150 reputation with Gnomeregan",qgs={15733,15763},r=2,repeatable=1,u=1501}),
 q(8839,{coords={
-[1455]={{63.3,73.7},{69.7,46}}},cost={{"i",21436,10}},qgs={15733,15763},r=2,repeatable=1,sourceQuests={8822},u=1501}),
+[1455]={{63.3,73.7},{69.7,46}}},cost={{"i",21436,10}},description="Grants 150 reputation with Gnomeregan",qgs={15733,15763},r=2,repeatable=1,sourceQuests={8822},u=1501}),
 q(8846,{coords={
 [1455]={{61.3,74.2}}},cost={{"i",21436,5}},lvl=10,qgs={15701},r=2,repeatable=1,u=1501,g={
 i(21509,{u=1501})}}),
@@ -208,49 +208,48 @@ q(8797,{coords={
 q(8795,{coords={
 [1455]={{27.5,73.3}}},lvl=10,qgs={15707},r=2,u=1501}),
 q(8796,{coords={
-[1453]={{54.1,59.6}}},lvl=10,qgs={15708},r=2,u=1501}),
-q(10501,{lvl=10,qgs={21156},r=2,u=1501})}}),
+[1453]={{54.1,59.6}}},lvl=10,qgs={15708},r=2,u=1501})}}),
 h(-211,{r=1,u=1501,g={
 q(8815,{coords={
-[1454]={{30,72.2},{42.5,38.7}}},cost={{"i",21438,1}},qgs={15736,15765},r=1,repeatable=1,u=1501}),
+[1454]={{30,72.2},{42.5,38.7}}},cost={{"i",21438,1}},description="Grants 5 reputation with Orgrimmar",qgs={15736,15765},r=1,repeatable=1,u=1501}),
 q(8840,{coords={
-[1454]={{30,72.2},{42.5,38.7}}},cost={{"i",21438,1}},qgs={15736,15765},r=1,repeatable=1,sourceQuests={8815},u=1501}),
+[1454]={{30,72.2},{42.5,38.7}}},cost={{"i",21438,1}},description="Grants 5 reputation with Orgrimmar",qgs={15736,15765},r=1,repeatable=1,sourceQuests={8815},u=1501}),
 q(8816,{coords={
 [1454]={{28.8,65.7}},
-[1458]={{61.9,45.3}}},cost={{"i",21438,1}},qgs={15734,15764},r=1,repeatable=1,u=1501}),
+[1458]={{61.9,45.3}}},cost={{"i",21438,1}},description="Grants 5 reputation with Undercity",qgs={15734,15764},r=1,repeatable=1,u=1501}),
 q(8832,{coords={
 [1454]={{28.8,65.7}},
-[1458]={{61.9,45.3}}},cost={{"i",21438,1}},qgs={15734,15764},r=1,repeatable=1,sourceQuests={8816},u=1501}),
+[1458]={{61.9,45.3}}},cost={{"i",21438,1}},description="Grants 5 reputation with Undercity",qgs={15734,15764},r=1,repeatable=1,sourceQuests={8816},u=1501}),
 q(8817,{coords={
 [1454]={{33.1,71.5}},
-[1456]={{42.4,57}}},cost={{"i",21438,1}},qgs={15739,15767},r=1,repeatable=1,u=1501}),
+[1456]={{42.4,57}}},cost={{"i",21438,1}},description="Grants 5 reputation with Thunder Bluff",qgs={15739,15767},r=1,repeatable=1,u=1501}),
 q(8842,{coords={
 [1454]={{33.1,71.5}},
-[1456]={{42.4,57}}},cost={{"i",21438,1}},qgs={15739,15767},r=1,repeatable=1,sourceQuests={8817},u=1501}),
+[1456]={{42.4,57}}},cost={{"i",21438,1}},description="Grants 5 reputation with Thunder Bluff",qgs={15739,15767},r=1,repeatable=1,sourceQuests={8817},u=1501}),
 q(8818,{coords={
-[1454]={{33.4,75.4},{46.3,35.1}}},cost={{"i",21438,1}},qgs={15733,15761},r=1,repeatable=1,u=1501}),
+[1454]={{33.4,75.4},{46.3,35.1}}},cost={{"i",21438,1}},description="Grants 5 reputation with Darkspear",qgs={15733,15761},r=1,repeatable=1,u=1501}),
 q(8844,{coords={
-[1454]={{33.4,75.4},{46.3,35.1}}},cost={{"i",21438,1}},qgs={15733,15761},r=1,repeatable=1,sourceQuests={8818},u=1501}),
+[1454]={{33.4,75.4},{46.3,35.1}}},cost={{"i",21438,1}},description="Grants 5 reputation with Darkspear",qgs={15733,15761},r=1,repeatable=1,sourceQuests={8818},u=1501}),
 q(8823,{coords={
-[1454]={{30,72.2},{42.5,38.7}}},cost={{"i",21438,10}},qgs={15736,15765},r=1,repeatable=1,u=1501}),
+[1454]={{30,72.2},{42.5,38.7}}},cost={{"i",21438,10}},description="Grants 150 reputation with Orgrimmar",qgs={15736,15765},r=1,repeatable=1,u=1501}),
 q(8841,{coords={
-[1454]={{30,72.2},{42.5,38.7}}},cost={{"i",21438,10}},qgs={15736,15765},r=1,repeatable=1,sourceQuests={8823},u=1501}),
+[1454]={{30,72.2},{42.5,38.7}}},cost={{"i",21438,10}},description="Grants 150 reputation with Orgrimmar",qgs={15736,15765},r=1,repeatable=1,sourceQuests={8823},u=1501}),
 q(8824,{coords={
 [1454]={{28.8,65.7}},
-[1458]={{61.9,45.3}}},cost={{"i",21438,10}},qgs={15734,15764},r=1,repeatable=1,u=1501}),
+[1458]={{61.9,45.3}}},cost={{"i",21438,10}},description="Grants 150 reputation with Undercity",qgs={15734,15764},r=1,repeatable=1,u=1501}),
 q(8833,{coords={
 [1454]={{28.8,65.7}},
-[1458]={{61.9,45.3}}},cost={{"i",21438,10}},qgs={15734,15764},r=1,repeatable=1,sourceQuests={8824},u=1501}),
+[1458]={{61.9,45.3}}},cost={{"i",21438,10}},description="Grants 150 reputation with Undercity",qgs={15734,15764},r=1,repeatable=1,sourceQuests={8824},u=1501}),
 q(8825,{coords={
 [1454]={{33.1,71.5}},
-[1456]={{42.4,57}}},cost={{"i",21438,10}},qgs={15739,15767},r=1,repeatable=1,u=1501}),
+[1456]={{42.4,57}}},cost={{"i",21438,10}},description="Grants 150 reputation with Thunder Bluff",qgs={15739,15767},r=1,repeatable=1,u=1501}),
 q(8843,{coords={
 [1454]={{33.1,71.5}},
-[1456]={{42.4,57}}},cost={{"i",21438,10}},qgs={15739,15767},r=1,repeatable=1,sourceQuests={8825},u=1501}),
+[1456]={{42.4,57}}},cost={{"i",21438,10}},description="Grants 150 reputation with Thunder Bluff",qgs={15739,15767},r=1,repeatable=1,sourceQuests={8825},u=1501}),
 q(8826,{coords={
-[1454]={{33.4,75.4},{46.3,35.1}}},cost={{"i",21438,10}},qgs={15733,15761},r=1,repeatable=1,u=1501}),
+[1454]={{33.4,75.4},{46.3,35.1}}},cost={{"i",21438,10}},description="Grants 150 reputation with Darkspear",qgs={15733,15761},r=1,repeatable=1,u=1501}),
 q(8845,{coords={
-[1454]={{33.4,75.4},{46.3,35.1}}},cost={{"i",21438,10}},qgs={15733,15761},r=1,repeatable=1,sourceQuests={8826},u=1501}),
+[1454]={{33.4,75.4},{46.3,35.1}}},cost={{"i",21438,10}},description="Grants 150 reputation with Darkspear",qgs={15733,15761},r=1,repeatable=1,sourceQuests={8826},u=1501}),
 q(8851,{coords={
 [1454]={{30.3,67.6}}},cost={{"i",21438,5}},lvl=10,qgs={15700},r=1,repeatable=1,u=1501,g={
 i(21509,{u=1501})}}),
@@ -391,8 +390,7 @@ q(8792,{coords={
 q(8793,{coords={
 [1458]={{62.8,49.2}}},lvl=10,qgs={15703},r=1,u=1501}),
 q(8794,{coords={
-[1454]={{30.3,67.6}}},lvl=10,qgs={15704},r=1,u=1501}),
-q(10500,{isBreadcrumb=1,lvl=10,qgs={21155},r=1,u=1501})}}),
+[1454]={{30.3,67.6}}},lvl=10,qgs={15704},r=1,u=1501})}}),
 h(-45,{u=1503,g={
 q(8857,{crs={15742},lvl=51,providers={{"i",21534}},u=1503,g={
 i(21528,{u=1503})}}),
@@ -438,7 +436,7 @@ q(8733,{lvl=60,maps={220},qgs={15362},sourceQuests={8555},u=15}),
 q(8305,{coords={
 [1446]={{65,50}}},lvl=60,minReputation={910,0},qgs={15192},sourceQuests={8303},u=15}),
 q(8599,{coords={
-[1446]={{59.4,96}}},lvl=60,providers={{"i",21032}},qgs={15526},sourceQuests={8576},u=15}),
+[1446]={{59.4,96}}},description="You must be on the quest 'Draconic for Dummies' for this quest to be available.",lvl=60,providers={{"i",21032}},qgs={15526},sourceQuests={8576},u=15}),
 q(8730,{lvl=60,maps={287},qgs={13020},sourceQuests={8555},u=15,g={
 qo(1,{crs={11583},providers={{"i",21138}},u=15}),
 i(21142,{crs={11583},description="You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",u=15}),
@@ -526,18 +524,18 @@ q(9094,{coords={
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,30}},lvl=50,qgs={16786},r=2,repeatable=1,sourceQuests={9153},u=1601,g={
 s(165181,23084,{f=4,loc=44,q=3,u=1601}),
-s(165179,23081,{c={1,2,3,4,5,6,7,8,9,11},f=5,loc=44,q=3,u=1601}),
+s(165179,23081,{f=5,loc=44,q=3,u=1601}),
 s(165180,23082,{f=6,loc=44,q=3,u=1601}),
-s(165178,23078,{c={1,2,3,4,5,6,7,8,9,11},f=7,loc=44,q=3,u=1601})}}),
+s(165178,23078,{f=7,loc=44,q=3,u=1601})}}),
 q(9333,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,30}},lvl=50,qgs={16787},r=1,repeatable=1,sourceQuests={9153},u=1601,g={
 s(165181,23084,{f=4,loc=44,q=3,u=1601}),
-s(165179,23081,{c={1,2,3,4,5,6,7,8,9,11},f=5,loc=44,q=3,u=1601}),
+s(165179,23081,{f=5,loc=44,q=3,u=1601}),
 s(165180,23082,{f=6,loc=44,q=3,u=1601}),
-s(165178,23078,{c={1,2,3,4,5,6,7,8,9,11},f=7,loc=44,q=3,u=1601})}}),
+s(165178,23078,{f=7,loc=44,q=3,u=1601})}}),
 q(9318,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},

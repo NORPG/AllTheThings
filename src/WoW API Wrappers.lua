@@ -116,6 +116,7 @@ local C_ItemSocketInfo = C_ItemSocketInfo;
 ---@diagnostic disable: deprecated
 AssignAPIWrapper("GetItemCount", C_Item and C_Item.GetItemCount, GetItemCount)
 AssignAPIWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, GetItemClassInfo)
+AssignAPIWrapper("GetItemSubClassInfo", C_Item and C_Item.GetItemSubClassInfo, GetItemSubClassInfo)
 AssignAPIWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, GetItemIcon)
 AssignAPIWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, GetItemInfoInstant)
 AssignAPIWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)

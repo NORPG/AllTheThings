@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local cl,exp,faction,h,i,m,n,pvprank,q,qo,s,x=_.CreateCharacterClass,_.CreateExploration,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
+local ach,cl,exp,faction,h,i,m,n,pvprank,q,qo,s,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateExploration,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
 categories.PVP=
 h(-303,{SortPriority=55,g={
 h(-292,{awp=16001,pvp=1,g={
@@ -813,6 +813,21 @@ i(21567,{f=53,pvp=1,spellID=1317441}),
 i(21568,{f=53,pvp=1,spellID=1315989}),
 i(21565,{f=53,pvp=1,spellID=1317443}),
 i(21566,{f=53,pvp=1,spellID=1315969})}})}})}})}}),
+h(-12,{pvp=1,g={
+ach(238,{pvp=1,u=12}),
+ach(513,{pvp=1,u=12}),
+ach(515,{pvp=1,u=12}),
+ach(516,{pvp=1,u=12}),
+ach(512,{pvp=1,u=12}),
+ach(509,{pvp=1,u=12}),
+ach(239,{pvp=1,u=12}),
+ach(869,{pvp=1,u=12}),
+ach(870,{pvp=1,u=12}),
+ach(727,{pvp=1,u=12}),
+ach(701,{pvp=1,r=2,u=12}),
+ach(700,{pvp=1,r=1,u=12}),
+ach(714,{pvp=1,r=1,u=12}),
+ach(907,{pvp=1,r=2,u=12})}}),
 x(1,{awp=10100,description="In order to collect these, you need to have the original title associated with the gear.",pvp=1,g={
 h(-298,{awp=10400,maps={1459,1460,1461},pvp=1,rwp=20001,g={
 pvprank(1,{pvp=1}),

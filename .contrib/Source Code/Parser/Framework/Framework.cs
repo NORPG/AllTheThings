@@ -77,7 +77,7 @@ namespace ATT
             { "TLT", 130 },     // TLT_PHASE_ONE
 
             // Forever
-            { "FOREVER", 600 }, // FOREVER_PHASE_ONE
+            { "FOREVER", 16 }, // FOREVER_PHASE_ONE
         };
 
         /// <summary>

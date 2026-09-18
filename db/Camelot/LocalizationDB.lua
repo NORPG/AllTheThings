@@ -926,7 +926,7 @@ L.REQUIRES_EVENT = "Requires Event"
 L.REQUIRES_LEVEL = "Requires Level"
 L.REQUIRES_PETBATTLES = "|cFF00FFDERequires Pet Battling|r"
 L.REQUIRES_PVP = "|cFF00FFDERequires PvP Activities or Currencies|r"
-L.REQUIRES_SKYRIDING = "|cFF00FFDE" .. SPELL_FAILED_CUSTOM_ERROR_1029 .. "|r"
+L.REQUIRES_SKYRIDING = "|cFF00FFDERequires Skyriding|r"
 L.REROLL = "Reroll"
 L.REROLL_2 = "Reroll: "
 L.REROLL_DESC = "Click this button to reroll using the active filter."
@@ -1004,7 +1004,7 @@ L.SHOW_RECIPES_CHECKBOX = "Show Recipes"
 L.SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip."
 L.SHOW_REMAINING_CHECKBOX = "Show Remaining Things"
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total."
-L.SHOW_SKYRIDING_CHECKBOX = ACCESSIBILITY_ADV_FLY_LABEL
+L.SHOW_SKYRIDING_CHECKBOX = "Dragonriding"
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Skyriding within the game."
 L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by " .. SHIFT_KEY_TEXT .. " clicking on an ATT window."
@@ -1044,7 +1044,7 @@ L.SYMLINK = "Sym-Link"
 L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account."
 L.SYNC_PAGE = "Sync"
 L.TELEPORT_TO_FROM_DUNGEON = "Teleport to/from Dungeon"
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way."
+L.TELEPORT_TO_FROM_DUNGEON_DESC = "Click here to teleport to/from your current instance when using Dungeon Group Finder."
 L.THING_UNTIL = " THING UNTIL "
 L.THINGS_UNTIL = " THINGS UNTIL "
 L.THIS_IS_BREADCRUMB = "This is a breadcrumb quest."
@@ -1172,27 +1172,35 @@ L.ZONE_DESC = "Click this button to select a random zone based on what you're mi
 -- Category Database Module
 _.CategoryNames = {
 	[2] = "Consumable",
+	[218] = "Helms",
+	[219] = "Shoulders",
 	[220] = "Chest",
+	[221] = "Gauntlets",
+	[222] = "Bracers",
+	[223] = "Belts",
 	[224] = "Legs",
+	[225] = "Boots",
 	[227] = "Weapons",
-	[932] = "Chest",
-	[933] = "Bracers",
-	[935] = "Belts",
+	[251] = "Helms",
+	[252] = "Shoulders",
+	[253] = "Chest",
+	[255] = "Gloves",
+	[256] = "Belts",
+	[257] = "Pants",
+	[258] = "Boots",
+	[259] = "Cloaks",
 }
 _.CategoryIcons = {
 }
 -- Custom Header Database Module
 _.HeaderConstants = {
 	ACHIEVEMENTS = -12,
-	ARTIFACTS = -214,
 	CHARACTER = -731,
 	CHILDRENS_WEEK_HEADER = -559,
 	COMMON_BOSS_DROPS = -19,
-	COMMON_DUNGEON_DROPS = -21,
 	COMMON_VENDOR_ITEMS = -22,
 	CRAFTED_ITEMS = -23,
 	DARKMOON_FAIRE_HEADER = -37,
-	DELVES = -204,
 	DROPS = -27,
 	DUNGEONS_AND_RAIDS = -75,
 	EXPLORATION = -30,
@@ -1223,7 +1231,6 @@ _.HeaderConstants = {
 	UNIQUE_APPEARANCE = -342,
 	UPGRADE = -57,
 	VENDORS = -58,
-	WAR_EFFORT = -148,
 	WEAPONS = -101,
 	WORLD_BOSSES = -61,
 	WORLD_DROPS = -698,
@@ -1238,7 +1245,6 @@ localize(L.HEADER_NAMES, {
 	[-11] = "New Character",
 	[-12] = ACHIEVEMENTS,
 	[-19] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,
-	[-21] = "Common Dungeon Drops",
 	[-22] = "Common Vendor Items",
 	[-23] = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,
 	[-25] = "Demon Trainer",
@@ -1252,7 +1258,7 @@ localize(L.HEADER_NAMES, {
 	[-43] = SHOW_PET_BATTLES_ON_MAP_TEXT,
 	[-44] = TRADE_SKILLS,
 	[-45] = TRACKER_HEADER_QUESTS,
-	[-46] = MAP_LEGEND_RARE,
+	[-46] = BATTLE_PET_BREED_QUALITY4,
 	[-47] = QUEST_REWARDS,
 	[-48] = "Riding Trainer",
 	[-55] = SPECIAL,
@@ -1272,11 +1278,8 @@ localize(L.HEADER_NAMES, {
 	[-88] = ARMOR,
 	[-89] = INVTYPE_CLOAK,
 	[-101] = AUCTION_CATEGORY_WEAPONS,
-	[-148] = select(1,GetCategoryInfo(15308)),
-	[-204] = DELVES_LABEL,
 	[-210] = FACTION_ALLIANCE,
 	[-211] = FACTION_HORDE,
-	[-214] = ITEM_QUALITY6_DESC,
 	[-243] = "Armor Enchantments",
 	[-245] = "Weapon Enchantments",
 	[-292] = BATTLEGROUNDS,
@@ -1295,7 +1298,7 @@ localize(L.HEADER_NAMES, {
 	[-355] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.EAST ..")",
 	[-356] = DUNGEON_FLOOR_DIREMAUL1.." (" .. L.NORTH ..")",
 	[-357] = DUNGEON_FLOOR_DIREMAUL2.." (" .. L.WEST ..")",
-	[-358] = C_Spell.GetSpellName(21127),
+	[-358] = _.WOWAPI.GetSpellName(21127),
 	[-359] = DUNGEON_FLOOR_DESOLACE22.." (Orange Path)",
 	[-360] = DUNGEON_FLOOR_DESOLACE21.." (Purple Path)",
 	[-361] = "Graveyard",
@@ -1351,7 +1354,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-365] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	[-366] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 	[-367] = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
-	[-481] = "The Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj were not be immediately available with the release of Phase 5. Instead, server communities had to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
+	[-481] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
 	[-483] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
 	[-484] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
@@ -1367,7 +1370,6 @@ localize(L.HEADER_ICONS, {
 	[-11] = 1530081,
 	[-12] = _.asset("category_achievements"),
 	[-19] = _.asset("category_commonbossdrop"),
-	[-21] = 3753263,
 	[-22] = 133785,
 	[-23] = _.asset("category_crafting"),
 	[-25] = 133738,
@@ -1384,7 +1386,7 @@ localize(L.HEADER_ICONS, {
 	[-46] = _.asset("interface_rare"),
 	[-47] = _.asset("interface_rewards"),
 	[-48] = 132261,
-	[-55] = _.asset("interface_special"),
+	[-55] = 135350,
 	[-56] = _.asset("interface_tchest"),
 	[-57] = _.asset("interface_upgrade"),
 	[-58] = _.asset("interface_vendor"),
@@ -1398,17 +1400,14 @@ localize(L.HEADER_ICONS, {
 	[-80] = 135771,
 	[-81] = 133781,
 	[-82] = 134155,
-	[-88] = 1030912,
+	[-88] = 132738,
 	[-89] = 133763,
 	[-101] = _.asset("weapon_type_epic"),
-	[-148] = 132349,
-	[-204] = _.asset("category_delves"),
 	[-210] = 374217,
 	[-211] = 374221,
-	[-214] = _.asset("weapon_type_artifact"),
 	[-243] = 237019,
 	[-245] = 237018,
-	[-292] = 132487,
+	[-292] = 132486,
 	[-298] = 135358,
 	[-303] = _.asset("category_pvp"),
 	[-318] = 132738,
@@ -1490,7 +1489,6 @@ localize(L.EVENT_REMAPPING, {
 	[341] = 11,
 	[374] = 1,
 	[375] = 1,
-	[376] = 1,
 })
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(133899, {
@@ -1502,6 +1500,11 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(17, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=7,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=2,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(14, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
@@ -1538,11 +1541,23 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 })
+_.Modules.Events.SetEventInformation(1, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=7,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=17,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=4,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=14,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=2,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=12,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=6,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=4,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=14,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=1,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=11,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=5,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=15,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=5,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=15,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=2,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=12,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=17,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=4,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=14,["weekday"]=2,["year"]=2027},{["remappedID"]=375})
+})
 -- Filter Database Module
 _.FilterConstants = {
 	ACHIEVEMENTS = 105,
 	AMMO = 37,
-	ARTIFACTS = 11,
 	BAGS = 113,
 	BATTLE_PETS = 101,
 	BOWS = 32,
@@ -1595,31 +1610,30 @@ _.FilterConstants = {
 }
 L.FILTER_ID_TYPES = {
 	[1] = INVTYPE_HOLDABLE,
-	[2] = C_Item.GetItemSubClassInfo(4,5),
-	[3] = C_Item.GetItemSubClassInfo(8,3),
-	[4] = C_Item.GetItemSubClassInfo(4,1),
-	[5] = C_Item.GetItemSubClassInfo(4,2),
-	[6] = C_Item.GetItemSubClassInfo(4,3),
-	[7] = C_Item.GetItemSubClassInfo(4,4),
-	[8] = C_Item.GetItemSubClassInfo(4,6),
+	[2] = "Cosmetic",
+	[3] = INVTYPE_CLOAK,
+	[4] = _.WOWAPI.GetItemSubClassInfo(4,1),
+	[5] = _.WOWAPI.GetItemSubClassInfo(4,2),
+	[6] = _.WOWAPI.GetItemSubClassInfo(4,3),
+	[7] = _.WOWAPI.GetItemSubClassInfo(4,4),
+	[8] = _.WOWAPI.GetItemSubClassInfo(4,6),
 	[9] = INVTYPE_TABARD,
 	[10] = INVTYPE_BODY,
-	[11] = "Artifacts",
-	[20] = C_Item.GetItemSubClassInfo(2,15),
-	[21] = C_Item.GetItemSubClassInfo(2,0),
-	[22] = C_Item.GetItemSubClassInfo(2,1),
-	[23] = C_Item.GetItemSubClassInfo(2,4),
-	[24] = C_Item.GetItemSubClassInfo(2,5),
-	[25] = C_Item.GetItemSubClassInfo(2,7),
-	[26] = C_Item.GetItemSubClassInfo(2,8),
-	[27] = C_Item.GetItemSubClassInfo(2,19),
-	[28] = C_Item.GetItemSubClassInfo(2,10),
-	[29] = C_Item.GetItemSubClassInfo(2,6),
-	[31] = C_Item.GetItemSubClassInfo(2,3),
-	[32] = C_Item.GetItemSubClassInfo(2,2),
-	[33] = C_Item.GetItemSubClassInfo(2,18),
-	[34] = C_Item.GetItemSubClassInfo(2,13),
-	[36] = INVTYPE_THROWN,
+	[20] = _.WOWAPI.GetItemSubClassInfo(2,15),
+	[21] = _.WOWAPI.GetItemSubClassInfo(2,0),
+	[22] = _.WOWAPI.GetItemSubClassInfo(2,1),
+	[23] = _.WOWAPI.GetItemSubClassInfo(2,4),
+	[24] = _.WOWAPI.GetItemSubClassInfo(2,5),
+	[25] = _.WOWAPI.GetItemSubClassInfo(2,7),
+	[26] = _.WOWAPI.GetItemSubClassInfo(2,8),
+	[27] = _.WOWAPI.GetItemSubClassInfo(2,19),
+	[28] = _.WOWAPI.GetItemSubClassInfo(2,10),
+	[29] = _.WOWAPI.GetItemSubClassInfo(2,6),
+	[31] = _.WOWAPI.GetItemSubClassInfo(2,3),
+	[32] = _.WOWAPI.GetItemSubClassInfo(2,2),
+	[33] = _.WOWAPI.GetItemSubClassInfo(2,18),
+	[34] = _.WOWAPI.GetItemSubClassInfo(2,13),
+	[36] = _.WOWAPI.GetItemSubClassInfo(2,16),
 	[37] = INVTYPE_AMMO,
 	[40] = INVTYPE_HEAD,
 	[41] = INVTYPE_SHOULDER,
@@ -1633,9 +1647,9 @@ L.FILTER_ID_TYPES = {
 	[51] = INVTYPE_NECK,
 	[52] = INVTYPE_FINGER,
 	[53] = INVTYPE_TRINKET,
-	[54] = C_Item.GetItemSubClassInfo(3,11),
+	[54] = INVTYPE_RELIC,
 	[55] = AUCTION_CATEGORY_CONSUMABLES,
-	[56] = C_Item.GetItemClassInfo(5),
+	[56] = _.WOWAPI.GetItemClassInfo(5),
 	[57] = "Profession Equipment",
 	[100] = MOUNTS,
 	[101] = AUCTION_CATEGORY_BATTLE_PETS,
@@ -1658,7 +1672,6 @@ L.FILTER_ID_ICONS = {
 	[8] = 134952,
 	[9] = 135026,
 	[10] = 135025,
-	[11] = 535594,
 	[20] = 135637,
 	[21] = 132408,
 	[22] = 132400,
@@ -1687,7 +1700,7 @@ L.FILTER_ID_ICONS = {
 	[51] = 133289,
 	[52] = 133346,
 	[53] = 135443,
-	[54] = 1109960,
+	[54] = 134916,
 	[55] = 132812,
 	[56] = _.asset("interface_zone_drop"),
 	[57] = 132932,
@@ -1819,17 +1832,9 @@ local phases = {
 		state = 2,
 	},
 	[7] = {
-		name = TRANSMOG_SOURCE_7,
+		name = "Trading Post",
 		description = "|cFFAAFFAAThis Thing is available in the Trading Post.|r",
 		state = 3,
-	},
-	[11] = {
-		name = "Phase 1",
-		description = "|cFFAAFFAAThis was not available until Phase 1 of WoW Classic.|r",
-		lore = "|cFFFFAAAAIncluded Molten Core and Onyxia's Lair.|r",
-		minimumBuildVersion = 1130100,
-		buildVersion = 11301,
-		state = 2,
 	},
 	[1101] = {
 		name = "Dire Maul",
@@ -1945,22 +1950,6 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.|r",
 		minimumBuildVersion = 20501,
 		buildVersion = 20505,
-		state = 2,
-	},
-	[19] = {
-		name = "Phase 3",
-		description = "|cFFAAFFAAThis was not available until Phase 3 of TBC Classic.|r",
-		lore = "|cFFFFAAAAIncluded Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content.|r",
-		minimumBuildVersion = 20501,
-		buildVersion = 20506,
-		state = 2,
-	},
-	[20] = {
-		name = "Phase 4",
-		description = "|cFFAAFFAAThis was not available until Phase 4 of TBC Classic.|r",
-		lore = "|cFFFFAAAAIncluded Zul'Aman.|r",
-		minimumBuildVersion = 20501,
-		buildVersion = 20508,
 		state = 2,
 	},
 	[30] = {
@@ -2319,7 +2308,6 @@ L.SPLIT = "Pro Schwierigkeitsgrad"
 L.STRANGER_THINGS_LABEL = "Fremde Dinge"
 L.SYNC_CHARACTERS_TOOLTIP = "Dies zeigt alle Charaktere auf diesem Account."
 L.TELEPORT_TO_FROM_DUNGEON = "Teleportiert zu/von Instanz"
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Klicke hier um Euch von/zu Eurer derzeitigen Instanz zu teleportieren.\n\nIhr könnt die Mists of Pandaria Szenarien nutzen, um Euch auf diese Weise schnell aus Eurer aktuellen Instanz zu teleportieren."
 L.THING_UNTIL = " DING BIS "
 L.THINGS_UNTIL = " DINGE BIS "
 L.THIS_IS_BREADCRUMB = "Dies ist eine Brotkrümelquest."
@@ -2420,18 +2408,15 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-342] = "Dieser Gegenstand hat eine einzigartige Vorlage. Ihr müsst diesen Gegenstand erhalten, um die Vorlage eurer Sammlung hinzuzufügen.",
 	[-343] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
 })
-localize(L.FILTER_ID_TYPES, {
-	[11] = "Artefakte",
-})
 localize(ObjectNames, {
 	[100000001] = "Nicht angezündete Fackel",
 })
 for key,value in pairs({
 	[3] = "Battle.net-Guthaben",
+	[7] = "Handelsposten",
 })
 do phases[key].name = value; end
 for key,value in pairs({
-	[11] = "|cFFAAFFAADies war erst Phase 1 von WoW Classic verfügbar.|r",
 	[12] = "|cFFAAFFAADies war erst Phase 2 von WoW Classic verfügbar.|r",
 	[13] = "|cFFAAFFAADies war erst Phase 3 von WoW Classic verfügbar.|r",
 	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
@@ -2439,8 +2424,6 @@ for key,value in pairs({
 	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
 	[17] = "|cFFAAFFAADies war erst Phase 1 von TBC Classic verfügbar.|r",
 	[18] = "|cFFAAFFAADies war erst Phase 2 von TBC Classic verfügbar.|r",
-	[19] = "|cFFAAFFAADies war erst Phase 3 von TBC Classic verfügbar.|r",
-	[20] = "|cFFAAFFAADies war erst Phase 4 von TBC Classic verfügbar.|r",
 	[30] = "|cFFAAFFAADies war erst Phase 1 von Wrath Classic verfügbar.|r",
 	[31] = "|cFFAAFFAADies war erst Phase 2 von Wrath Classic verfügbar.|r",
 	[32] = "|cFFAAFFAADies war erst Phase 3 von Wrath Classic verfügbar.|r",
@@ -2768,7 +2751,6 @@ L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !"
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque."
 localize(L.HEADER_NAMES, {
 	[-11] = "Nouveau personnage",
-	[-21] = "Objet commun de donjon",
 	[-22] = "Objets communs des vendeurs",
 	[-25] = "Maître des démons",
 	[-36] = "Évènements saisonniers",
@@ -2816,18 +2798,15 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-342] = "Cet article a une apparence unique. Vous devez collecter cet objet spécifiquement pour gagner l’apparence.",
 	[-343] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
 })
-localize(L.FILTER_ID_TYPES, {
-	[11] = "Artéfact",
-})
 localize(ObjectNames, {
 	[100000001] = "Torche éteinte",
 })
 for key,value in pairs({
 	[3] = "Porte-monnaie Battle.net",
+	[7] = "Comptoir",
 })
 do phases[key].name = value; end
 for key,value in pairs({
-	[11] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du WoW Classic.|r",
 	[12] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du WoW Classic.|r",
 	[13] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du WoW Classic.|r",
 	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
@@ -2835,8 +2814,6 @@ for key,value in pairs({
 	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
 	[17] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du TBC Classic.|r",
 	[18] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du TBC Classic.|r",
-	[19] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du TBC Classic.|r",
-	[20] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du TBC Classic.|r",
 	[30] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du Wrath Classic.|r",
 	[31] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du Wrath Classic.|r",
 	[32] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du Wrath Classic.|r",
@@ -2911,10 +2888,10 @@ localize(L.HEADER_DESCRIPTIONS, {
 })
 for key,value in pairs({
 	[3] = "Saldo Battle.net",
+	[7] = "Emporio",
 })
 do phases[key].name = value; end
 for key,value in pairs({
-	[11] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di WoW Classic.|r",
 	[12] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di WoW Classic.|r",
 	[13] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di WoW Classic.|r",
 	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
@@ -2922,8 +2899,6 @@ for key,value in pairs({
 	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
 	[17] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di TBC Classic.|r",
 	[18] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di TBC Classic.|r",
-	[19] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di TBC Classic.|r",
-	[20] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di TBC Classic.|r",
 	[30] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di Wrath Classic.|r",
 	[31] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di Wrath Classic.|r",
 	[32] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di Wrath Classic.|r",
@@ -3066,10 +3041,10 @@ localize(ObjectNames, {
 })
 for key,value in pairs({
 	[3] = "Saldo Battle.net",
+	[7] = "Posto Comercial",
 })
 do phases[key].name = value; end
 for key,value in pairs({
-	[11] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de WoW Classic.|r",
 	[12] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de WoW Classic.|r",
 	[13] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de WoW Classic.|r",
 	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
@@ -3077,8 +3052,6 @@ for key,value in pairs({
 	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
 	[17] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de TBC Classic.|r",
-	[19] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de TBC Classic.|r",
-	[20] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de TBC Classic.|r",
 	[30] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de Wrath Classic.|r",
 	[31] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de Wrath Classic.|r",
 	[32] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de Wrath Classic.|r",
@@ -3670,7 +3643,6 @@ L.SYMLINK = "Симлинк"
 L.SYNC_CHARACTERS_TOOLTIP = "Здесь отображаются все персонажи на Вашей учётной записи."
 L.SYNC_PAGE = "Синхронизация"
 L.TELEPORT_TO_FROM_DUNGEON = "Телепортировать в/из Подземелья"
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Нажмите здесь, чтобы телепортировать в/из Вашего текущего подземелья.\n\nВы можете использовать Сценарии Пандарии, чтобы таким образом быстро телепортироваться из текущего подземелья."
 L.THING_UNTIL = " ШТУЧКА ДО "
 L.THINGS_UNTIL = " ШТУЧЕК ДО "
 L.THIS_IS_BREADCRUMB = [[Это задание-"хлебная кроха".]]
@@ -3757,7 +3729,6 @@ L.ZONE_DESC = "Нажмите эту кнопку для выбора случа
 localize(L.HEADER_NAMES, {
 	[-11] = "Новый персонаж",
 	[-19] = "Общая добыча с боссов",
-	[-21] = "Обычная добыча с боссов",
 	[-22] = "Обычные предметы у Торговцев",
 	[-25] = "Наставник демонов",
 	[-27] = BATTLE_PET_SOURCE_1,
@@ -3818,9 +3789,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-343] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
 	[-721] = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.",
 })
-localize(L.FILTER_ID_TYPES, {
-	[11] = "Артефакты",
-})
 localize(ObjectNames, {
 	[100000001] = "Незажженный факел",
 })
@@ -3830,6 +3798,7 @@ for key,value in pairs({
 	[3] = "Кошелек Battle.net",
 	[4] = "ПвП Элита / Гладиатор",
 	[5] = "Неизучаемые",
+	[7] = "Торговая лавка",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -3839,7 +3808,6 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAAЭто больше нельзя будет купить или получить в коллекцию, если у вас нет необходимого PvP титула или если вы не входили в топ % лучших в этом сезоне.|r",
 	[5] = "|cFFFFAAAAЭто нельзя собрать, выучить навсегда или использовать для трансмогрификации.|r",
 	[7] = "|cFFAAFFAAЭта Штучка доступна в Торговой лавке.|r",
-	[11] = "|cFFAAFFAAЭто было недоступно до Phase 1 из WoW Classic.|r",
 	[12] = "|cFFAAFFAAЭто было недоступно до Phase 2 из WoW Classic.|r",
 	[13] = "|cFFAAFFAAЭто было недоступно до Phase 3 из WoW Classic.|r",
 	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
@@ -3847,8 +3815,6 @@ for key,value in pairs({
 	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
 	[17] = "|cFFAAFFAAЭто было недоступно до Phase 1 из TBC Classic.|r",
 	[18] = "|cFFAAFFAAЭто было недоступно до Phase 2 из TBC Classic.|r",
-	[19] = "|cFFAAFFAAЭто было недоступно до Phase 3 из TBC Classic.|r",
-	[20] = "|cFFAAFFAAЭто было недоступно до Phase 4 из TBC Classic.|r",
 	[30] = "|cFFAAFFAAЭто было недоступно до Phase 1 из Wrath Classic.|r",
 	[31] = "|cFFAAFFAAЭто было недоступно до Phase 2 из Wrath Classic.|r",
 	[32] = "|cFFAAFFAAЭто было недоступно до Phase 3 из Wrath Classic.|r",
@@ -3943,10 +3909,10 @@ localize(ObjectNames, {
 })
 for key,value in pairs({
 	[3] = "배틀코인",
+	[7] = "교역소",
 })
 do phases[key].name = value; end
 for key,value in pairs({
-	[11] = "|cFFAAFFAAPhase 1(WoW Classic)까지 사용할 수 없습니다.|r",
 	[12] = "|cFFAAFFAAPhase 2(WoW Classic)까지 사용할 수 없습니다.|r",
 	[13] = "|cFFAAFFAAPhase 3(WoW Classic)까지 사용할 수 없습니다.|r",
 	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
@@ -3954,8 +3920,6 @@ for key,value in pairs({
 	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
 	[17] = "|cFFAAFFAAPhase 1(TBC Classic)까지 사용할 수 없습니다.|r",
 	[18] = "|cFFAAFFAAPhase 2(TBC Classic)까지 사용할 수 없습니다.|r",
-	[19] = "|cFFAAFFAAPhase 3(TBC Classic)까지 사용할 수 없습니다.|r",
-	[20] = "|cFFAAFFAAPhase 4(TBC Classic)까지 사용할 수 없습니다.|r",
 	[30] = "|cFFAAFFAAPhase 1(Wrath Classic)까지 사용할 수 없습니다.|r",
 	[31] = "|cFFAAFFAAPhase 2(Wrath Classic)까지 사용할 수 없습니다.|r",
 	[32] = "|cFFAAFFAAPhase 3(Wrath Classic)까지 사용할 수 없습니다.|r",
@@ -4572,6 +4536,7 @@ L.REQUIRES_EVENT = "Requiere el evento"
 L.REQUIRES_LEVEL = "Necesitas ser nivel"
 L.REQUIRES_PETBATTLES = "|cFF00FFDEEsta cosa requiere duelos de mascota.|r"
 L.REQUIRES_PVP = "|cFF00FFDEEsta cosa requiere actividades Jugador contra Jugador o una divisa relacionada con esas actividades.|r"
+L.REQUIRES_SKYRIDING = "|cFF00FFDERequiere Surcacielos|r"
 L.REROLL = "Volver a tirar"
 L.REROLL_2 = "Volver a tirar: "
 L.REROLL_DESC = "Haz clic en este botón para volver a tirar usando el filtro activo."
@@ -4631,6 +4596,7 @@ L.SHOW_RECIPES_CHECKBOX = "Mostrar recetas"
 L.SHOW_RECIPES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver la lista de todas las recetas que se pueden fabricar por cualquiera de tus personajes para un ingrediente en su ventana emergente."
 L.SHOW_REMAINING_CHECKBOX = "Muestra cosas pendientes"
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el numero de objetos pendientes en vez del progreso sobre el total."
+L.SHOW_SKYRIDING_CHECKBOX = "Jinete de dragones"
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "Habilita esta configuración si deseas mostrar contenido que requiera Jinete de dragones dentro del juego."
 L.SKIP_AUTO_REFRESH = "Saltar Ajustes-Conmutador de los refrescos de datos!"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajustes que pueda afectar los datos visibles causará un refresco automático.\n\nActivando esta opción, los cambios de Ajustes no tendrán efecto hasta que el Usuario ejecute un Refresco Completo con " .. SHIFT_KEY_TEXT .. " + clic en una ventana de ATT."
@@ -4667,7 +4633,6 @@ L.SYMLINK = "Enlace simbólico"
 L.SYNC_CHARACTERS_TOOLTIP = "Muestra todos los personajes en tu cuenta."
 L.SYNC_PAGE = "Sincronización"
 L.TELEPORT_TO_FROM_DUNGEON = "Teletransporte a/desde la mazmorra"
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Haz clic aquí para teletransportarte a/desde tu instancia actual.\n\nPuedes utilizar los escenarios de Mist of Pandaria para teletransportarte fuera de la instancia en la que te encuentras."
 L.THING_UNTIL = " COSAS HASTA "
 L.THINGS_UNTIL = " COSAS HASTA "
 L.THIS_IS_BREADCRUMB = "Esto es una cadena de misiones."
@@ -4762,7 +4727,6 @@ L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basad
 localize(L.HEADER_NAMES, {
 	[-11] = "Nuevo personaje",
 	[-19] = "Botín común de jefe",
-	[-21] = "Botín común en toda la mazmorra",
 	[-22] = "Objetos comunes entre vendedores",
 	[-25] = "Instructor de demonios",
 	[-27] = "Botín",
@@ -4845,7 +4809,7 @@ for key,value in pairs({
 	[3] = "Dinero Real",
 	[4] = "PvP Elite/Gladiador",
 	[5] = "No aprendible",
-	[11] = "Fase 1",
+	[7] = "Puesto comercial",
 	[1101] = "La masacre",
 	[12] = "Fase 2",
 	[13] = "Fase 3",
@@ -4861,8 +4825,6 @@ for key,value in pairs({
 	[1603] = "Era Clásica",
 	[17] = "Fase 1",
 	[18] = "Fase 2",
-	[19] = "Fase 3",
-	[20] = "Fase 4",
 	[30] = "Fase 1",
 	[31] = "Fase 2",
 	[32] = "Fase 3",
@@ -4879,7 +4841,6 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAAEsto ya no se puede comprar ni desbloquear como transfiguración a menos que tengas el título PvP requerido, la calificación PvP requerida o estés en el porcentaje superior de esa temporada.|r",
 	[5] = "|cFFFFAAAAEsto no se puede recolectar, aprender ni usar para transfiguración de forma permanente.|r",
 	[7] = "|cFFAAFFAAEste artículo está disponible en el puesto comercial.|r",
-	[11] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de WoW Classic.|r",
 	[1101] = "|cFFAAFFAAEsto estuvo disponible con el lanzamiento de la fase La masacre de WoW Classic.|r",
 	[12] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de WoW Classic.|r",
 	[13] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de WoW Classic.|r",
@@ -4895,8 +4856,6 @@ for key,value in pairs({
 	[1603] = "|cFFAAFFAAEsto solo estuvo disponible después del inicio de la Era Clásica.|r",
 	[17] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de TBC Classic.|r",
-	[19] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de TBC Classic.|r",
-	[20] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 4 de TBC Classic.|r",
 	[30] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de Wrath Classic.|r",
 	[31] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de Wrath Classic.|r",
 	[32] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de Wrath Classic.|r",
@@ -4908,7 +4867,6 @@ for key,value in pairs({
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAAFomentar el uso de dinero real en cualquier versión del juego está ampliamente mal visto. Participa en este contenido bajo tu propia responsabilidad.|r",
-	[11] = "|cFFFFAAAAIncluidos Núcleo de magma y La guarida de Onyxia.|r",
 	[1101] = "|cFFFFAAAAIncluye La masacre|r",
 	[12] = "|cFFFFAAAAIncluidos JvJ de mundo y titulos de honor JvJ.|r",
 	[13] = "|cFFFFAAAAIncluidos Guarida de Alanegra y la finalización de Trueno furioso|r",
@@ -4924,8 +4882,6 @@ for key,value in pairs({
 	[1603] = "|cFFFFAAAASi la Era Clásica ha comenzado, simplemente active esto.|r",
 	[17] = "|cFFFFAAAAIncluye Karazhan, Guarida de Magtheridon y la Guarida de Gruul.|r",
 	[18] = "|cFFFFAAAAIncluye Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.|r",
-	[19] = "|cFFFFAAAAIncluye la Cima del Hyjal y el Templo Oscuro, además de la gran mayoría del contenido de maximo nivel diario/de facción del juego.|r",
-	[20] = "|cFFFFAAAAIncluye Zul'Aman.|r",
 	[30] = "|cFFFFAAAAIncluye Naxxramas, Sagrario obsidiana, y El ojo de la eternidad.|r",
 	[31] = "|cFFFFAAAAIncluye Ulduar.|r",
 	[32] = "|cFFFFAAAAIncluye la Prueba del cruzado|r",
@@ -5124,6 +5080,7 @@ L.REMOVED_WITH_PATCH_FORMAT = "Removido en el parche %s"
 L.REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el ID de misión para cualquier misión que aceptes o completes justo después de que pase. (Para notificar errores, propósitos de rastreo, etc)"
 L.REPORT_INACCURATE_QUEST = "Información de misión errónea! (click para Reportar)"
 L.REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Activa esta opción si sólo quieres ver los ID misiones si no se les han configurado una fuente."
+L.REQUIRES_SKYRIDING = "|cFF00FFDERequiere Cielonáutica|r"
 L.REROLL_DESC = "Haz click en este botón para volver a tirar usando el filtro activo."
 L.REROLL_RANDOM = "Repetir lanzamiento de dados de la selección aleatoria"
 L.RESET_INSTANCES_DESC = "Haz click aquí para reiniciar tus instancias.\n\n" .. ALT_KEY_TEXT .. " +`click para activar el reinicio automático de tus instancias cuando salgas de un calabozo.\n\n¡AVISO: TEN CUIDADO CON ESTO!"
@@ -5141,6 +5098,7 @@ L.SHOW_BOE_CHECKBOX = "Objetos LaE/LaC"
 L.SHOW_BOE_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ver los objetos Se liga al equipar/Cuenta.\n\nDesactivar este ajuste puede ser útil cuando quieres acabar un calabozo clásica con un personaje y no quieres conseguir específicamente esos objetos que pueden ser conseguidos con un personaje secundario o en la Casa de Subastas.\n\nPE: No pierdas la cabeza intentando conseguir el Péndulo de Fatalidad."
 L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Cálculo de monedas"
 L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Activa esta opción para mostrar el numero aproximado de Objetos/Monedas requeridas para coleccionar cosas.\n\nPara contenedores que no dan todas sus recompensas a la vez, el aproximado puede ser menor al requerido realmente."
+L.SHOW_SKYRIDING_CHECKBOX = "Dracoequitación"
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "Habilita esta configuración si deseas mostrar contenido que requiera Dracoequitación dentro del juego."
 L.SKIP_AUTO_REFRESH = "Saltar Ajustes-switch de las actualizaciones de datos!"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajustes que pueda afectar los datos visibles causará una actualización automática.\n\nActivando esta opción, los cambios de Ajustes no tendrán efecto hasta que el Usuario ejecute una actualización completa con " .. SHIFT_KEY_TEXT .. " + click en una ventana de ATT."
@@ -5155,7 +5113,6 @@ L.SPECIES_ID = "ID de las Especies"
 L.SPELL_ID = "ID del Hechizo"
 L.SYM_ROW_INFORMATION = "click derecho para ver contenido adicional que su fuente está en otra zona"
 L.TELEPORT_TO_FROM_DUNGEON = "Teletransporte a/desde el calabozo"
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Haz click aquí para teletransportarte a/desde tu instancia actual.\n\nPuedes utilizar los escenarios de Mist of Pandaria para teletransportarte fuera de la instancia en la que te encuentras."
 L.THIS_IS_BREADCRUMB = "Esta es una misión de exploración optativa."
 L.TITLE_CORE = "Tropa "
 L.TITLE_ID = "ID del Titulo"
@@ -5192,7 +5149,6 @@ L.WARN_REMOVED_CHECKBOX = "Cosas eliminadas activan un Aviso"
 L.ZONE_DESC = "Haz click en este botón para seleccionar una zona aleatoria basado en lo que te falta."
 localize(L.HEADER_NAMES, {
 	[-19] = "Botín compartido entre los jefes",
-	[-21] = "Botín común en toda el calabozo",
 	[-36] = "Fiestas",
 	[-59] = "Maestro de armas",
 	[-63] = "Botín de la zona",
@@ -5215,6 +5171,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 })
 for key,value in pairs({
 	[2] = "Removido del juego",
+	[7] = "Puesto de venta",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -6078,6 +6035,7 @@ L.REQUIRES_EVENT = "需要事件"
 L.REQUIRES_LEVEL = "需要等级"
 L.REQUIRES_PETBATTLES = "|cFF00FFDE需要宠物对战|r"
 L.REQUIRES_PVP = "|cFF00FFDE需要 PvP 活动或货币|r"
+L.REQUIRES_SKYRIDING = "|cFF00FFDE需要驭空术|r"
 L.REROLL = "重新刷新"
 L.REROLL_2 = "重新刷新："
 L.REROLL_DESC = "点击此按钮可使用活动过滤器重新刷新。"
@@ -6151,6 +6109,7 @@ L.SHOW_RECIPES_CHECKBOX = "显示配方"
 L.SHOW_RECIPES_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中看到任何角色可以用某种材料制作的所有配方列表，请启用此选项。"
 L.SHOW_REMAINING_CHECKBOX = "显示剩余事物"
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩余事物数量而不是总进度，请启用此选项。"
+L.SHOW_SKYRIDING_CHECKBOX = "驭空术"
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "如果想在游戏中显示需要驭空术的内容，请启用此设置。"
 L.SKIP_AUTO_REFRESH = "不自动刷新！"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 " .. SHIFT_KEY_TEXT .. "点击 ATT 窗口执行全部刷新。"
@@ -6189,7 +6148,7 @@ L.SYMLINK = "符号链接"
 L.SYNC_CHARACTERS_TOOLTIP = "这会显示您帐号中的所有角色。"
 L.SYNC_PAGE = "同步"
 L.TELEPORT_TO_FROM_DUNGEON = "传送到/从地下城传送"
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "点击此处传送到当前副本或从当前副本传送。\n\n潘达利亚之谜以这种方式快速传送到当前副本之外。"
+L.TELEPORT_TO_FROM_DUNGEON_DESC = "当使用地下城查找器时，点击此处传送到/从当前副本传送。"
 L.THING_UNTIL = " 事物到 "
 L.THINGS_UNTIL = " 事物到 "
 L.THIS_IS_BREADCRUMB = "这是个线索任务。"
@@ -6296,7 +6255,6 @@ L.ZONE_DESC = "点击此按钮可根据缺少的内容选择随机地区。"
 localize(L.HEADER_NAMES, {
 	[-11] = "新角色",
 	[-19] = "首领共同掉落",
-	[-21] = "地下城共同掉落",
 	[-22] = "商人共同物品",
 	[-25] = "恶魔训练师",
 	[-27] = "掉落",
@@ -6368,7 +6326,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-365] = "斯坦索姆分为两侧。\n\n这一侧通常被称为“活人”侧或“血色”侧，现已被血色十字军占据。",
 	[-366] = "斯坦索姆分为两侧。\n\n这一侧通常被称为“亡灵”侧或“天灾”侧，现已被天灾军团占据。",
 	[-367] = "你必须击杀大厅周围的全部6名小首领，才能解锁通往预言者迦玛兰的道路。",
-	[-481] = "安其拉废墟和安其拉神庙在第五阶段上线时并不会立即开放。相反，服务器上的玩家群体必须发起一场大规模的备战行动，通过收集战争物资以及完成一条史诗任务线，最终敲响铜锣，才能开启这些团队副本，将里面的恐怖之物释放到世间。\n\n一旦两个阵营都完成了各自的贡献，会有一个为期5天的缓冲期。在此之后，当有人敲响铜锣，服务器将触发一个持续10小时、横跨卡利姆多多个区域的全服事件。\n\n安其拉开放的速度取决于服务器及其阵营平衡状况。\n\n我们建议尽可能推迟备战行动，以便让更多人获得 “甲虫之王” 坐骑，因为所有完成 “流沙节杖” 任务线的玩家都将获得相同奖励！",
+	[-481] = "当第五阶段最终上线时，安其拉废墟和安其拉神庙不会即刻开放。相反，服务器上的全体玩家需开展一场大规模的备战行动，通过收集战备物资并完成一条史诗任务线，最终敲响铜锣，才能开启这些团队副本，让其中的恐怖之物降临世间。\n\n一旦两个阵营都完成各自的贡献，会有一个5天的宽限期。之后，一旦有人敲响铜锣，就会触发一个持续10小时、横跨卡利姆多多个区域的全服事件。\n\n安其拉开放的速度取决于服务器及其阵营平衡。\n\n我们建议尽可能推迟备战行动，以便让更多人获得 “甲虫之王” 坐骑，因为所有完成 “流沙节杖” 任务线的玩家都会获得相同奖励！",
 	[-483] = "除了服务器上所有玩家共同努力完成备战任务外，还需要一名玩家制作出流沙节杖 —— 这是一项极为艰巨的任务，在该任务线刚推出时，只有服务器上顶尖的公会才能完成。当备战任务结束，联盟与部落的军队抵达希利苏斯后，流沙节杖可用于敲响甲虫之锣。敲响铜锣后，安其拉之门就会开启。每个服务器上第一个敲响甲虫之锣的玩家将获得 “甲虫之王” 称号（在《燃烧的远征》中，经典旧世的这个称号不会再出现！）以及黑色其拉共鸣水晶坐骑。在随后10小时内敲响铜锣的其他玩家也能获得该称号。\n\n尽管在服务器上安其拉之门开启后，玩家仍可完成流沙节杖的任务线，但完成后既不会获得黑色其拉共鸣水晶坐骑，也不会获得 “甲虫之王” 称号。",
 	[-484] = "天灾入侵是1.11补丁中的一项世界事件，并在巫妖王之怒前置补丁3.0.1中再度开启，预示着令人闻风丧胆的克尔苏加德的要塞 ——纳克萨玛斯即将开放。\n\n艾泽拉斯的多个地区遭到了天灾军团部队的袭击。银色黎明的成员组织了一场对抗天灾入侵的全球反击，他们密切监视着任何浮空死灵城堡的动向，并将情报分享给所有愿意投身这场战斗的冒险者。\n\n每一次对天灾军团的胜利，都会让防线愈发坚固。随着越来越多的入侵企图被守军击退，银色黎明将为抗击入侵者的勇士们赋予越来越强大的祝福。\n\n如果凡人们齐心协力，清除散落在世界各地、每一座浮空死灵城堡下方出现的天灾营地，这场入侵或许就能被有效遏制，甚至彻底击退。\n\n凡有意拿起武器对抗亡灵入侵者的勇士，可与银色黎明的代表交谈，了解哪些地区需要支援，以及防线当前的状况。",
 	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
@@ -6380,9 +6338,6 @@ localize(L.HEADER_LORE, {
 	[-349] = "这些物品可以通过重置首领无限刷取。",
 	[-388] = "木喉熊怪居住在两个区域：艾萨拉和费伍德森林。人们认为他们是唯一一支未被恶魔腐化的熊怪部族，不过由于存在克罗格（一只未被腐化、所属部族不明的熊怪）以及《燃烧的远征》中秘蓝岛上的深须部族，这一点或许并不属实。然而，现在许多其他种族不加分辨地就对熊怪痛下杀手，根本不去判断对方是敌是友。正因如此，木喉熊怪极少信任他人。\n\n那些前往费伍德森林北部的木喉要塞，并证明自己是木喉熊怪之友的冒险者会发现，熊怪们将朋友看得比什么都重要。尽管他们没有珍贵的珠宝或任何世俗财富，但木喉熊怪的萨满传统依然深厚。他们精通用兽皮制作护甲的技艺，而且非常乐意与他们部族的朋友分享治疗与复活的知识。此外，只要与他们的声望高于 “冷淡”，你就能畅通无阻地通过他们的隧道进入月光林地和冬泉谷。",
 })
-localize(L.FILTER_ID_TYPES, {
-	[11] = "神器",
-})
 localize(ObjectNames, {
 	[100000000] = "考古学家的车",
 	[100000001] = "未点燃的火把",
@@ -6393,7 +6348,7 @@ for key,value in pairs({
 	[3] = "战网点数",
 	[4] = "PvP 精良/角斗士",
 	[5] = "不可学",
-	[11] = "阶段1",
+	[7] = "商栈",
 	[1101] = "厄运之槌",
 	[12] = "阶段2",
 	[13] = "阶段3",
@@ -6409,8 +6364,6 @@ for key,value in pairs({
 	[1603] = "经典时代",
 	[17] = "阶段1",
 	[18] = "阶段2",
-	[19] = "阶段3",
-	[20] = "阶段4",
 	[30] = "阶段1",
 	[31] = "阶段2",
 	[32] = "阶段3",
@@ -6427,7 +6380,6 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAA除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
 	[5] = "|cFFFFAAAA这不能永久收集、学习或用于幻化。|r",
 	[7] = "|cFFAAFFAA该物品可在商栈购买。|r",
-	[11] = "|cFFAAFFAA该功能直到 阶段1 的 经典旧世 才可用。|r",
 	[1101] = "|cFFAAFFAA这在 厄运之槌 的 经典旧世 阶段发布时可用了。|r",
 	[12] = "|cFFAAFFAA该功能直到 阶段2 的 经典旧世 才可用。|r",
 	[13] = "|cFFAAFFAA该功能直到 阶段3 的 经典旧世 才可用。|r",
@@ -6443,8 +6395,6 @@ for key,value in pairs({
 	[1603] = "|cFFAAFFAA这仅在经典时代开始后才可用。|r",
 	[17] = "|cFFAAFFAA该功能直到 阶段1 的 燃烧的远征 才可用。|r",
 	[18] = "|cFFAAFFAA该功能直到 阶段2 的 燃烧的远征 才可用。|r",
-	[19] = "|cFFAAFFAA该功能直到 阶段3 的 燃烧的远征 才可用。|r",
-	[20] = "|cFFAAFFAA该功能直到 阶段4 的 燃烧的远征 才可用。|r",
 	[30] = "|cFFAAFFAA该功能直到 阶段1 的 巫妖王之怒 才可用。|r",
 	[31] = "|cFFAAFFAA该功能直到 阶段2 的 巫妖王之怒 才可用。|r",
 	[32] = "|cFFAAFFAA该功能直到 阶段3 的 巫妖王之怒 才可用。|r",
@@ -6456,7 +6406,6 @@ for key,value in pairs({
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAA在游戏的任何版本中，鼓励使用真实货币的行为均不受认可。参与此类内容需自行承担风险。|r",
-	[11] = "|cFFFFAAAA包含熔火之心和奥妮克希亚的巢穴。|r",
 	[1101] = "|cFFFFAAAA包含厄运之槌。|r",
 	[12] = "|cFFFFAAAA包含世界 PvP 和 PvP 荣誉称号。|r",
 	[13] = "|cFFFFAAAA包含黑翼之巢和完成的雷霆之怒。|r",
@@ -6472,8 +6421,6 @@ for key,value in pairs({
 	[1603] = "|cFFFFAAAA如果经典时代已经开始，只需打开这个开关即可。|r",
 	[17] = "|cFFFFAAAA包括卡拉赞、玛瑟里顿巢穴和格鲁尔的巢穴。|r",
 	[18] = "|cFFFFAAAA包含毒蛇神殿洞穴、风暴要塞：眼睛和迅捷德鲁伊飞行形态。|r",
-	[19] = "|cFFFFAAAA除了绝大多数的终局日常/阵营内容外，还包括海加尔山峰和黑暗神殿。|r",
-	[20] = "|cFFFFAAAA包含祖阿曼。|r",
 	[30] = "|cFFFFAAAA包含纳克萨玛斯、黑曜石圣殿和永恒之眼。|r",
 	[31] = "|cFFFFAAAA包含奥杜尔。|r",
 	[32] = "|cFFFFAAAA包含十字军试炼。|r",
@@ -6991,6 +6938,7 @@ L.REPUTATIONS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤聲望。\n\n一旦你
 L.REQUIRES_LEVEL = "需要等級"
 L.REQUIRES_PETBATTLES = "|cFF00FFDE需要寵物對戰|r"
 L.REQUIRES_PVP = "|cFF00FFDE需要 PvP 活動或貨幣|r"
+L.REQUIRES_SKYRIDING = "|cFF00FFDE需要天空騎術|r"
 L.REROLL_DESC = "點擊此按鈕可使用活動篩選器重新刷新。"
 L.REROLL_RANDOM = "重新生成隨機列表"
 L.RESET_INSTANCES = "重置所有副本"
@@ -7040,6 +6988,7 @@ L.SHOW_RECIPES_CHECKBOX = "顯示配方"
 L.SHOW_RECIPES_CHECKBOX_TOOLTIP = "如果您想在指標提示中看到任何角色可以用某種材料製作的所有配方列表，請啟用此選項。"
 L.SHOW_REMAINING_CHECKBOX = "顯示剩餘事物"
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩餘事物數量而不是總進度，請啟用此選項。"
+L.SHOW_SKYRIDING_CHECKBOX = "天空騎術"
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "如果想在遊戲中顯示需要天空騎術的內容，請啟用此選項。"
 L.SKIP_AUTO_REFRESH = "不自動刷新！"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 " .. SHIFT_KEY_TEXT .. "點擊 ATT 視窗執行全部刷新。"
@@ -7071,7 +7020,6 @@ L.SYM_ROW_INFORMATION = "點擊右鍵以查看來自其他位置的其它內容"
 L.SYMLINK = "符號連結"
 L.SYNC_CHARACTERS_TOOLTIP = "這會顯示您帳號中的所有角色。"
 L.TELEPORT_TO_FROM_DUNGEON = "傳送至/出地城"
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "點擊此處傳送到當前地城或從當前地城傳送出去。\n\n潘達利亞之謎可以這種方式快速傳送到當前副本之外。"
 L.THIS_IS_BREADCRUMB = "這是個無關緊要的任務。"
 L.TITLE_ACCOUNT = "|c" .. _.DefaultColors.Account .. "帳號 |r"
 L.TITLE_COMPLETIONIST = "完美主義者 "
@@ -7155,7 +7103,6 @@ L.WRONG_FACTION = "可能需要在另一個陣營中查看此內容。"
 L.ZONE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機地區。"
 localize(L.HEADER_NAMES, {
 	[-19] = "首領共通掉落",
-	[-21] = "地城共通掉落",
 	[-22] = "商人共通物品",
 	[-25] = "惡魔訓練師",
 	[-32] = "飛行路線",
@@ -7222,10 +7169,9 @@ for key,value in pairs({
 	[3] = "Battle.net 點數",
 	[4] = "PvP 精良/鬥士",
 	[5] = "不可學",
+	[7] = "貿易站",
 	[17] = "第1階段",
 	[18] = "第2階段",
-	[19] = "第3階段",
-	[20] = "第4階段",
 	[30] = "第1階段",
 	[31] = "第2階段",
 	[32] = "第3階段",
@@ -7240,7 +7186,6 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 頭銜、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。|r",
 	[5] = "|cFFFFAAAA這不能永久收集、學習或用於塑形。|r",
 	[7] = "|cFFAAFFAA該物品可以在貿易站購買|r",
-	[11] = "|cFFAAFFAA該功能直到 Phase 1 的 WoW Classic 才可用。|r",
 	[12] = "|cFFAAFFAA該功能直到 Phase 2 的 WoW Classic 才可用。|r",
 	[13] = "|cFFAAFFAA該功能直到 Phase 3 的 WoW Classic 才可用。|r",
 	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",
@@ -7248,8 +7193,6 @@ for key,value in pairs({
 	[16] = "|cFFAAFFAA該功能直到 Phase 6 的 WoW Classic 才可用。|r",
 	[17] = "|cFFAAFFAA該功能直到 第1階段 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA該功能直到 第2階段 的 TBC Classic 才可用。|r",
-	[19] = "|cFFAAFFAA該功能直到 第3階段 的 TBC Classic 才可用。|r",
-	[20] = "|cFFAAFFAA該功能直到 第4階段 的 TBC Classic 才可用。|r",
 	[30] = "|cFFAAFFAA該功能直到 第1階段 的 Wrath Classic 才可用。|r",
 	[31] = "|cFFAAFFAA該功能直到 第2階段 的 Wrath Classic 才可用。|r",
 	[32] = "|cFFAAFFAA該功能直到 第3階段 的 Wrath Classic 才可用。|r",

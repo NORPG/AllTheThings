@@ -2,7 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
--- #if BEFORE CATA
 -- TODO: Fully implement this for Retail's faction tooltips, also look at cape of stranglethorn.
 local OnTooltipForGadgetzhan = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -14,7 +13,6 @@ local OnTooltipForGadgetzhan = [[function(t, tooltipInfo)
 		end
 	end
 end]];
--- #endif
 
 local BLOODTHIRSTY_GROUPS = {
 	cl(DEATHKNIGHT, {

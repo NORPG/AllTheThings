@@ -5,14 +5,28 @@ local ach,cl,faction,flt,h,i,mnt,r,s=_.CreateAchievement,_.CreateCharacterClass,
 categories.Character=
 h(-731,{SortPriority=40,g={
 h(-12,{
-ach(2358,{c={2},rwp=40003,sourceQuests={7647,9737}}),
+ach(891),
+ach(546),
+ach(523),
+ach(524),
+ach(521),
+ach(520),
+ach(2358,{c={2},rwp=40003,sourceQuests={7647}}),
 ach(16,{rwp=40001}),
 ach(2716,{rwp=70003}),
+ach(2336,{description="Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, Darkmoon Faire, and the Shen'dralar. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",u=13}),
+ach(6),
+ach(7),
+ach(8),
+ach(9),
 ach(10,{rwp=90001}),
 ach(11,{rwp=90001}),
 ach(879,{providers={{"i",8586},{"i",12302},{"i",12303},{"i",12330},{"i",12351},{"i",12353},{"i",12354},{"i",13317},{"i",13326},{"i",13327},{"i",13328},{"i",13329},{"i",15292},{"i",15293}},rwp=10400,u=2}),
-ach(16433,{awp=11403,rwp=11500,u=2}),
-flt(100)}),
+ach(522),
+ach(16433,{awp=11403,OnUpdate=function(t)if t.collectible and _.Level>=60 then	local i,spellID=1,select(10,UnitBuff("player",1))while spellID do	if spellID==364001 then	t:SetAchievementCollected(t.achievementID,true)return false end	i=i + 1 spellID=select(10,UnitBuff("player",i))end t:SetAchievementCollected(t.achievementID,false)end	end,rwp=11500,u=2}),
+flt(100,{
+ach(2142),
+ach(2141)})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(67,{icon=374221,r=1}),
@@ -120,7 +134,6 @@ h(-101,{
 s(156773,2361,{f=24,q=1,rwp=90001}),
 s(156042,37,{awp=11100,f=21,q=1,rwp=30002})}),
 i(6948,{spellID=8690})}),
-h(-43,{pb=1}),
 cl(9,{
 h(-25,{c={9},crs={5520,5749,5750,5753,5815,6027,6328,6373,6374,6376,6382,12776,12807},maps={1453,1454,1455,1458},rwp=30002,g={
 i(28071,{rank=1,spellID=33698,u=17}),
