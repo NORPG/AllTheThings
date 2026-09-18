@@ -2996,6 +2996,9 @@ root = function(category, g)							-- Create a ROOT CATEGORY Object
 	end
 	return o;
 end
+battleground = function(mapID, g)						-- Create a BATTLEGROUND in the PvP header.
+	root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, { m(mapID, g) })));
+end
 maproot = function(...)									-- Create a MAP ROOT in the Zones header.
 	-- Example: maproot(KALIMDOR, ELWYNN_FOREST, { });
 	local args = { ... };

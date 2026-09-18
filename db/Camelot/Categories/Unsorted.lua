@@ -6,10 +6,10 @@ categories.Unsorted={
 h(-45,{
 q(1041,{nextQuests={1042}}),
 q(1116,{nextQuests={1117}}),
-q(2764,{nextQuests={2773,2771,2772}}),
+q(2764,{nextQuests={2771,2772,2773}}),
 q(3626,{nextQuests={3627}}),
 q(3633,{nextQuests={3638}}),
-q(9582,{nextQuests={1683,1639,1678}}),
+q(9582,{nextQuests={1639,1683,1678}}),
 q(9609,{nextQuests={1396}}),
 q(10371,{nextQuests={1699}}),
 q(10373,{nextQuests={5092}}),

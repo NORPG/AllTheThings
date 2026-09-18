@@ -296,7 +296,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		pvp(ach(1786, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- School of Hard Knocks
 			crit(6643, {	-- Assault a flag in Arathi Basin
 				["maps"] = {
-					ARATHI_BASIN,
+					MAP.ARATHI_BASIN,
 					837,	-- Arathi Basin
 					844,	-- Arathi Basin
 					1383,	-- Arathi Basin
@@ -305,7 +305,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			}),
 			crit(6642, {	-- Assault a tower in Alterac Valley
 				["maps"] = {
-					ALTERAC_VALLEY,
+					MAP.ALTERAC_VALLEY,
 				},
 			}),
 			crit(6641, {	-- Capture the flag in Eye of the Storm
@@ -315,7 +315,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			}),
 			crit(6644, {	-- Return a fallen flag in Warsong Gulch
 				["maps"] = {
-					WARSONG_GULCH,
+					MAP.WARSONG_GULCH,
 					859,	-- Warsong Gulch
 					1339,	-- Warsong Gulch
 				},

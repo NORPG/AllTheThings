@@ -230,7 +230,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["sym"] = {{ "achievement_criteria" }},
 					["cost"] = { { "i", 22261, 5 } },	-- 5x Love Fool
 					["maps"] = {
-						ARATHI_BASIN,
+						MAP.ARATHI_BASIN,
 						NAXXRAMAS,
 						WINTERGRASP,
 						-- #if AFTER CATA

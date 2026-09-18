@@ -177,9 +177,9 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			["cost"] = {{"i", 43004, 10}},	-- 10x Critter Bites
 		}),
 		ach(1785, {	-- Dinner Impossible
-			crit(6626, { ["provider"] = { "i", 34753 }, ["maps"] = { ALTERAC_VALLEY, 1537 } }),	-- Alterac Valley
-			crit(6627, { ["provider"] = { "i", 34753 }, ["maps"] = ARATHI_BASIN }),	-- Arathi Basin
-			crit(6628, { ["provider"] = { "i", 34753 }, ["maps"] = { WARSONG_GULCH, 1339 } }),	-- Warsong Gulch
+			crit(6626, { ["provider"] = { "i", 34753 }, ["maps"] = { MAP.ALTERAC_VALLEY, 1537 } }),	-- Alterac Valley
+			crit(6627, { ["provider"] = { "i", 34753 }, ["maps"] = MAP.ARATHI_BASIN }),	-- Arathi Basin
+			crit(6628, { ["provider"] = { "i", 34753 }, ["maps"] = { MAP.WARSONG_GULCH, 1339 } }),	-- Warsong Gulch
 			crit(6630, { ["provider"] = { "i", 34753 }, ["maps"] = { EYE_OF_THE_STORM, 397 } }),	-- Eye of the Storm
 		}),
 		ach(1780, {	-- Second That Emotion

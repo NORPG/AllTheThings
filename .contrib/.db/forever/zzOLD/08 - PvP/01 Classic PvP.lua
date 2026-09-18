@@ -32,9 +32,9 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 			["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			-- #if BEFORE 2.0.1
 			["maps"] = {
-				ALTERAC_VALLEY,
-				ARATHI_BASIN,
-				WARSONG_GULCH
+				MAP.ALTERAC_VALLEY,
+				MAP.ARATHI_BASIN,
+				MAP.WARSONG_GULCH
 			},
 			-- #endif
 			["groups"] = {
