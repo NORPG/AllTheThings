@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(HILLSBRAD_FOOTHILLS, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.HILLSBRAD_FOOTHILLS, {
 		["lore"] =
 			-- #if AFTER CATA
 			"Hillsbrad Foothills was radically changed in Cataclysm. Formerly a grassy zone with World PvP between the Alliance town of Southshore and the Horde town of Tarren Mill, the Forsaken have taken over the zone after the Shattering. Southshore is destroyed due to plague experiments, and toxic waste covers much of the zone. This zone has also been merged with Alterac Mountains, a snowy plateau populated by ogres and surrounded by the Syndicate.",
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 				["groups"] = {
 					pet(453, {	-- Infested Bear Cub (PET!)
-						["coord"] = { 35.4, 69.6, HILLSBRAD_FOOTHILLS },
+						["coord"] = { 35.4, 69.6, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					pet(1159, {	-- Lofty Libram (PET!)
 						["description"] = "Found around the Dalaran Crater.",
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(289),	-- Nethander Stead
 				exploration(896),	-- Purgation Isle
-				visit_exploration(3486,{coord={70.3,45.6,HILLSBRAD_FOOTHILLS}}),	-- Ravenholdt Manor
+				visit_exploration(3486,{coord={70.3,45.6,MAP.HILLSBRAD_FOOTHILLS}}),	-- Ravenholdt Manor
 				-- #if AFTER CATA
 				exploration(281),	-- Ruins of Alterac
 				exploration(271),	-- Ruins of Southshore
@@ -158,31 +158,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(669, {	-- Eastpoint Tower, Hillsbrad
 					["cr"] = 47661,	-- Darren Longfellow <Bat Handler>
-					["coord"] = { 59.6, 63.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 59.6, 63.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(667, {	-- Ruins of Southshore, Hillsbrad
 					["cr"] = 47644,	-- Darla Harris <Bat Handler>
-					["coord"] = { 49.0, 66.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.0, 66.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(668, {	-- Southpoint Gate, Hillsbrad
 					["cr"] = 47655,	-- Pamela Stutzka <Bat Handler>
-					["coord"] = { 29.0, 64.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 29.0, 64.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(14, {	-- Southshore, Hillsbrad
 					["cr"] = 2432,	-- Darla Harris <Gryphon Master>
-					["coord"] = { 49.4, 52.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.4, 52.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(670, {	-- Strahnbrad, Alterac Mountains
 					["cr"] = 47665,	-- Phillip Harding <Bat Handler>
-					["coord"] = { 58.2, 26.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 58.2, 26.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -190,9 +190,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2389,	-- Zarise <Bat Handler>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.0, 46.0, HILLSBRAD_FOOTHILLS },
+						{ 56.0, 46.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 60.2, 18.6, HILLSBRAD_FOOTHILLS },
+						{ 60.2, 18.6, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -202,9 +202,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			lockpicking({
 				o(179486, {	-- Battered Footlocker
 					["coords"] = {
-						{ 75.5, 40.0, HILLSBRAD_FOOTHILLS },
-						{ 79.6, 46.6, HILLSBRAD_FOOTHILLS },
-						{ 83.0, 44.1, HILLSBRAD_FOOTHILLS },
+						{ 75.5, 40.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 79.6, 46.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 83.0, 44.1, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 110,
@@ -219,9 +219,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(2399, {	-- Daryl Stack <Master Tailor>
 						["coords"] = {
 							-- #if AFTER CATA
-							{ 58.0, 47.8, HILLSBRAD_FOOTHILLS },
+							{ 58.0, 47.8, MAP.HILLSBRAD_FOOTHILLS },
 							-- #else
-							{ 63.6, 20.8, HILLSBRAD_FOOTHILLS },
+							{ 63.6, 20.8, MAP.HILLSBRAD_FOOTHILLS },
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
@@ -238,20 +238,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28344,	-- Can You Smell What the Lok'tar is Cooking?
 					},
 					["qg"] = 48218,	-- Kingslayer Orkus <Red Like My Rage>
-					["coord"] = { 49.5, 74.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.5, 74.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28237, {	-- A Blight Upon the Land
 					["sourceQuest"] = 28235,	-- Burnside Must Fall
 					["qg"] = 48020,	-- Master Apothecary Lydon
-					["coord"] = { 36.5, 58.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 36.5, 58.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Warden Stillwater
 							["provider"] = { "i", 63330 },	-- Head of Warden Stillwater
-							["coord"] = { 36.6, 61.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 36.6, 61.0, MAP.HILLSBRAD_FOOTHILLS },
 							["cr"] = 48080,	-- Warden Stillwater
 						}),
 						i(65675, {	-- Stillwater's Dagger
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28495, {	-- A Fighting Chance
 					["qg"] = 17092,	-- Advisor Duskingdawn
-					["coord"] = { 56.7, 47.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 56.7, 47.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -281,13 +281,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28635, {	-- A Haunting in Hillsbrad
 					["qg"] = 49243,	-- Captain Jekyll
-					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 59.9, 63.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Search Dun Garok for Evidence of a Haunting.
 							["provider"] = { "n", 49240 },	-- Captain Ironhill's Ghost
-							["coord"] = { 61.8, 84.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 61.8, 84.6, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28196,	-- The Battle for Hillsbrad
 					},
 					["qg"] = 47781,	-- Warden Stillwater
-					["coord"] = { 36.1, 61.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 36.1, 61.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -313,9 +313,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							918,	-- Osborne the Night Man <Rogue Trainer>
 						},
 						["coords"] = {
-							{ 36.8, 21.8, DARNASSUS },	-- Syurna <Rogue Trainer>
-							{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard <Rogue Trainer>
-							{ 74.6, 52.8, STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
+							{ 36.8, 21.8, MAP.DARNASSUS },	-- Syurna <Rogue Trainer>
+							{ 51.6, 14.6, MAP.IRONFORGE },	-- Hulfdan Blackbeard <Rogue Trainer>
+							{ 74.6, 52.8, MAP.STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
 						},
 					},
 					["hordeQuestData"] = {
@@ -324,8 +324,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							4583,	-- Miles Dexter <Rogue Trainer>
 						},
 						["coords"] = {
-							{ 44.0, 54.6, ORGRIMMAR },	-- Ormok <Rogue Trainer>
-							{ 85.0, 75.2, UNDERCITY },	-- Miles Dexter <Rogue Trainer>
+							{ 44.0, 54.6, MAP.ORGRIMMAR },	-- Ormok <Rogue Trainer>
+							{ 85.0, 75.2, MAP.UNDERCITY },	-- Miles Dexter <Rogue Trainer>
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -337,13 +337,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28587, {	-- Aid of the Frostwolf
 					["sourceQuest"] = 28400,	-- Heroes of the Horde!
 					["qg"] = 48545,	-- High Warlord Cromush
-					["coord"] = { 57.0, 46.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.0, 46.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28329, {	-- Angry Scrubbing Bubbles
 					["qg"] = 48319,	-- Angry Blight Slime
-					["coord"] = { 48.8, 71.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.8, 71.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				q(522, {	-- Assassin's Contract (Alterac Mountains)
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
-					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.8, 58.8, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 2434,	-- Shadowy Assassin
@@ -364,14 +364,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(523, {	-- Baron's Demise (Alterac Mountains)
 					["sourceQuest"] = 522,	-- Assassin's Contract
 					["qg"] = 2276,	-- Magistrate Henry Maleb
-					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.2, 59.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Baron Vardus
 							["provider"] = { "i", 3626 },	-- Head of Baron Vardus
-							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
+							["coord"] = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2306,	-- Baron Vardus
 						}),
 					},
@@ -379,7 +379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(565, {	-- Bartolo's Yeti Fur Cloak
 					["qg"] = 2438,	-- Bartolo Ginsetti
-					["coord"] = { 49.4, 55.5, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.4, 55.5, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 2997, 1 },	-- Bolt of Woolen Cloth
@@ -407,12 +407,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28733, {	-- Basic Botany
 					["qg"] = 49687,	-- Brazie the Botanist
-					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.5, 49.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(527, {	-- Battle of Hillsbrad (1/7)
 					["qg"] = 2215,	-- High Executor Darthalia
-					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
@@ -434,7 +434,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(528, {	-- Battle of Hillsbrad (2/7)
 					["sourceQuest"] = 527,	-- Battle of Hillsbrad (1/7)
 					["qg"] = 2215,	-- High Executor Darthalia
-					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
@@ -447,7 +447,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(529, {	-- Battle of Hillsbrad (3/7)
 					["sourceQuest"] = 528,	-- Battle of Hillsbrad (2/7)
 					["qg"] = 2215,	-- High Executor Darthalia
-					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
@@ -463,49 +463,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3564 },	-- Shipment of Iron
 								{ "o", 1736 },	-- Shipment of Iron
 							},
-							["coord"] = { 32.1, 45.4, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 32.1, 45.4, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
 				q(532, {	-- Battle of Hillsbrad (4/7)
 					["sourceQuest"] = 529,	-- Battle of Hillsbrad (3/7)
 					["qg"] = 2215,	-- High Executor Darthalia
-					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
 						objective(1, {	-- 0/1 Magistrate Burnside slain
 							["provider"] = { "n", 2335 },	-- Magistrate Burnside
-							["coord"] = { 29.6, 41.8, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 29.6, 41.8, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/5 Hillsbrad Councilman slain
 							["provider"] = { "n", 2387 },	-- Hillsbrad Councilman
 						}),
 						objective(3, {	-- Hillsbrad Proclamation destroyed
 							["provider"] = { "o", 1761 },	-- Hillsbrad Proclamation
-							["coord"] = { 29.7, 41.8, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 29.7, 41.8, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(4, {	-- 0/1 Hillsbrad Town Registry
 							["providers"] = {
 								{ "i", 3657 },	-- Hillsbrad Town Registry
 								{ "o", 1759 },	-- Hillsbrad Town Registry
 							},
-							["coord"] = { 29.6, 41.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 29.6, 41.6, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
 				q(539, {	-- Battle of Hillsbrad (5/7)
 					["sourceQuest"] = 532,	-- Battle of Hillsbrad (4/7)
 					["qg"] = 2215,	-- High Executor Darthalia
-					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
 						objective(1, {	-- 0/1 Foreman Bonds slain
 							["provider"] = { "n", 2305 },	-- Foreman Bonds
-							["coord"] = { 31.0, 56.2, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 31.0, 56.2, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/10 Hillsbrad Miner slain
 							["provider"] = { "n", 2269 },	-- Hillsbrad Miner
@@ -515,7 +515,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(541, {	-- Battle of Hillsbrad (6/7)
 					["sourceQuest"] = 539,	-- Battle of Hillsbrad (5/7)
 					["qg"] = 2215,	-- High Executor Darthalia
-					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
@@ -531,7 +531,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(4, {	-- 0/1 Captain Ironhill slain
 							["provider"] = { "n", 2304 },	-- Captain Ironhill
-							["coord"] = { 72.6, 80.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 72.6, 80.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -546,9 +546,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2215 },	-- High Executor Darthalia
 						{ "i", 3701 },	-- Darthalia's Sealed Commendation
 					},
-					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
@@ -577,9 +577,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2215 },	-- High Executor Darthalia
 						{ "i", 3701 },	-- Darthalia's Sealed Commendation
 					},
-					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(506, {	-- Blackmoore's Legacy (Alterac Mountains)
 					["sourceQuest"] = 503,	-- Gol'dir
 					["qg"] = 2316,	-- Gol'dir
-					["coord"] = { 59.96, 43.74, ALTERAC_MOUNTAINS },
+					["coord"] = { 59.96, 43.74, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -610,7 +610,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1066, {	-- Blood of Innocents
 					["sourceQuest"] = 1065,	-- Journey to Tarren Mill
 					["qg"] = 2216,	-- Apothecary Lydon
-					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
@@ -624,15 +624,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(557, {	-- Bracers of Binding
 					["sourceQuest"] = 556,	-- Stone Tokens
 					["qg"] = 2437,	-- Keeper Bel'varil
-					["coord"] = { 61.50, 20.91, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.50, 20.91, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/4 Bracers of Earth Binding
 							["provider"] = { "i", 3715 },	-- Bracers of Earth Binding
-							["coord"] = { 16.4, 78.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 16.4, 78.8, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2359,	-- Elemental Slave
 						}),
 					},
@@ -640,25 +640,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28556, {	-- Breaking the Hand
 					["sourceQuest"] = 28506,	-- March of the Stormpike
 					["qg"] = 48545,	-- High Warlord Cromush
-					["coord"] = { 57.0, 46.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.0, 46.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Pocket-Nuke Armed at Sofera's Naze
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
-							["coord"] = { 55.0, 38.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 55.0, 38.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- Pocket-Nuke Armed at Corrahn's Dagger
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
-							["coord"] = { 49.0, 46.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 49.0, 46.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(3, {	-- Pocket-Nuke Armed at the Headland
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
-							["coord"] = { 43.0, 48.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 43.0, 48.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(4, {	-- Pocket-Nuke Armed at Gavin's Naze
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
-							["coord"] = { 39.0, 48.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 39.0, 48.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						i(65721, {	-- Corrahn's Cloak
 							["timeline"] = { ADDED_4_0_3 },
@@ -680,13 +680,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28230,	-- Protocol
 					},
 					["qg"] = 48020,	-- Master Apothecary Lydon
-					["coord"] = { 38.5, 57.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 38.5, 57.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Magistrate Burnside slain
 							["provider"] = { "n", 47790 },	-- Magistrate Burnside
-							["coord"] = { 36.6, 58.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 36.6, 58.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -697,14 +697,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28096,	-- Welcome to the Machine
 					},
 					["qg"] = 48129,	-- Helcular
-					["coord"] = { 49.1, 66.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.1, 66.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28146, {	-- Coastal Delicacies!
 					["qg"] = 47551,	-- Spider-Handler Sarus
-					["coord"] = { 33.2, 73.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.2, 73.6, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -721,7 +721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(564, {	-- Costly Menace
 					["qg"] = 2382,	-- Darren Malvew
-					["coord"] = { 52.4, 56.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 52.4, 56.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				q(500, {	-- Crushridge Bounty (Alterac Mountains)
 					["qg"] = 2263,	-- Marshal Redpath
-					["coord"] = { 49.6, 58.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.6, 58.6, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -769,7 +769,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(504, {	-- Crushridge Warmongers (Alterac Mountains)
 					["sourceQuest"] = 500,	-- Crushridge Bounty
 					["qg"] = 2263,	-- Marshal Redpath
-					["coord"] = { 49.6, 58.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.6, 58.6, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -789,7 +789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28538, {	-- Cry of the Banshee
 					["sourceQuest"] = 28506,	-- March of the Stormpike
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.2, 46.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -809,9 +809,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6176 },	-- Bath'rah the Windwatcher
 						{ "i", 6929 },	-- Bath'rah's Parchment
 					},
-					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ARATHI_HIGHLANDS, STRANGLETHORN_VALE },
+					["maps"] = { MAP.ARATHI_HIGHLANDS, MAP.STRANGLETHORN_VALE },
 					["cost"] = { { "i", 3357, 8 } },	-- Liferoot
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
@@ -835,7 +835,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1714, {	-- Essence of the Exile
 							["sourceQuest"] = 1791,	-- The Windwatcher
 							["qg"] = 6176,	-- Bath'rah the Windwatcher
-							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 4479, 8 },	-- Burning Charm
@@ -858,9 +858,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(545, {	-- Dalaran Patrols
 					["sourceQuest"] = 544,	-- Prison Break In
 					["qg"] = 2410,	-- Magus Wordeen Voidglare
-					["coord"] = { 61.60, 20.85, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -874,26 +874,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(567, {	-- Dangerous!
 					["provider"] = { "o", 2008 },	-- Dangerous!
-					["coord"] = { 62.56, 19.69, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.56, 19.69, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
 						objective(1, {	-- 0/1 Clerk Horrace Whitesteed slain
 							["provider"] = { "n", 2448 },	-- Clerk Horrace Whitesteed
-							["coord"] = { 30.0, 42.8, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 30.0, 42.8, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/1 Citizen Wilkes slain
 							["provider"] = { "n", 2449 },	-- Citizen Wilkes
-							["coord"] = { 32.8, 40.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 32.8, 40.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(3, {	-- 0/1 Miner Hackett slain
 							["provider"] = { "n", 2450 },	-- Miner Hackett
-							["coord"] = { 31.2, 53.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 31.2, 53.6, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(4, {	-- 0/1 Farmer Kalaba slain
 							["provider"] = { "n", 2451 },	-- Farmer Kalaba
-							["coord"] = { 35.8, 46.2, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 35.8, 46.2, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						i(3742, {	-- Bow of Plunder
 							["timeline"] = { REMOVED_4_0_3 },
@@ -913,7 +913,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(537, {	-- Dark Council (Alterac Mountains)
 					["sourceQuest"] = 525,	-- Further Mysteries
 					["qg"] = 2276,	-- Magistrate Henry Maleb
-					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.2, 59.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -923,7 +923,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- 0/1 Head of Nagaz
 							["provider"] = { "i", 3672 },	-- Head of Nagaz
-							["coord"] = { 39.6, 15.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.6, 15.8, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2320,	-- Nagaz
 						}),
 					},
@@ -964,13 +964,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28566, {	-- Decimation
 					["sourceQuest"] = 28538,	-- Cry of the Banshee
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.2, 46.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain Iceheart slain
 							["provider"] = { "n", 48880 },	-- Captain Iceheart
-							["coord"] = { 49.6, 46.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 49.6, 46.6, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/12 Stormpike Soldier slain
 							["provider"] = { "n", 48878 },	-- Stormpike Soldier
@@ -980,24 +980,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28156, {	-- Deep Mine Rescue
 					["sourceQuest"] = 28096,	-- Welcome to the Machine
 					["qg"] = 47681,	-- Dumass
-					["coord"] = { 36.6, 70.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 36.6, 70.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28197, {	-- Discretion is Key
 					["sourceQuest"] = 28192,	-- No One Here Gets Out Alive
 					["qg"] = 47781,	-- Warden Stillwater
-					["coord"] = { 36.1, 61.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 36.1, 61.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Citizen Wilkes slain
 							["provider"] = { "n", 47791 },	-- Citizen Wilkes
-							["coord"] = { 39.0, 64.4, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 39.0, 64.4, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/1 Clerk Horrace Whitesteed slain
 							["provider"] = { "n", 47789 },	-- Clerk Horrace Whitesteed
-							["coord"] = { 38.0, 63.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 38.0, 63.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						i(65694, {	-- Clerk Whitesteed's Cloak
 							["timeline"] = { ADDED_4_0_1 },
@@ -1013,13 +1013,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28231, {	-- Do it for Twinkles
 					["sourceQuest"] = 28209,	-- Freedom for Lydon
 					["qg"] = 48021,	-- Johnny Awesome
-					["coord"] = { 40.2, 59.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 40.2, 59.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blacksmith Verringtan slain
 							["provider"] = { "n", 47792 },	-- Blacksmith Verringtan
-							["coord"] = { 38.2, 56.4, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 38.2, 56.4, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						i(65714, {	-- "Jenny's" Gloves
 							["timeline"] = { ADDED_4_0_1 },
@@ -1038,7 +1038,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28189, {	-- Do the Right Thing
 					["sourceQuest"] = 28192,	-- No One Here Gets Out Alive
 					["provider"] = { "o", 206944 },	-- Shovel
-					["coord"] = { 39.7, 63.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 39.7, 63.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1062,7 +1062,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2278,	-- Melisara
 						49035,	-- Lilith
 					},
-					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.2, 46.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1073,7 +1073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(536, {	-- Down the Coast
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
-					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28620, {	-- Eastpoint Tower
 					["qg"] = 2229,	-- Krusk
-					["coord"] = { 57.6, 46.9, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.6, 46.9, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1102,8 +1102,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							20407,	-- Farseer Umbrua <Shaman Trainer>
 						},
 						["coords"] = {
-							{ 55.2, 29.6, IRONFORGE },	-- Farseer Javad
-							{ 61.8, 83.8, STORMWIND_CITY },	-- Farseer Umbrua
+							{ 55.2, 29.6, MAP.IRONFORGE },	-- Farseer Javad
+							{ 61.8, 83.8, MAP.STORMWIND_CITY },	-- Farseer Umbrua
 						},
 					},
 					["hordeQuestData"] = {
@@ -1112,8 +1112,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							3032,	-- Beram Skychaser <Shaman Trainer>
 						},
 						["coords"] = {
-							{ 38.0, 37.8, ORGRIMMAR },	-- Searn Firewarder
-							{ 22.8, 19.4, THUNDER_BLUFF },	-- Beram Skychaser
+							{ 38.0, 37.8, MAP.ORGRIMMAR },	-- Searn Firewarder
+							{ 22.8, 19.4, MAP.THUNDER_BLUFF },	-- Beram Skychaser
 						},
 					},
 					-- #else
@@ -1122,8 +1122,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3032,	-- Beram Skychaser <Shaman Trainer>
 					},
 					["coords"] = {
-						{ 38.0, 37.8, ORGRIMMAR },	-- Searn Firewarder
-						{ 22.8, 19.4, THUNDER_BLUFF },	-- Beram Skychaser
+						{ 38.0, 37.8, MAP.ORGRIMMAR },	-- Searn Firewarder
+						{ 22.8, 19.4, MAP.THUNDER_BLUFF },	-- Beram Skychaser
 					},
 					["races"] = HORDE_ONLY,
 					-- #endif
@@ -1143,7 +1143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 502,	-- Elixir of Pain (2/2)
 					-- #endif
 					["qg"] = 2216,	-- Apothecary Lydon
-					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
@@ -1153,7 +1153,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3502 },	-- Mudsnout Blossoms
 								{ "o", 1723 },	-- Mudsnout Blossom
 							},
-							["coord"] = { 64.2, 62.5, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 64.2, 62.5, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						-- #if BEFORE 4.0.3
 						i(2459),	-- Swiftness Potion
@@ -1166,9 +1166,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2216 },	-- Apothecary Lydon
 						{ "i", 3506 },	-- Mudsnout Composite
 					},
-					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 				}),
@@ -1178,7 +1178,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2055 },	-- Master Apothecary Faranell
 						{ "i", 3508 },	-- Mudsnout Mixture
 					},
-					["coord"] = { 48.89, 69.21, UNDERCITY },
+					["coord"] = { 48.89, 69.21, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3388, 1 } },	-- Strong Troll's Blood Potion
 					["races"] = HORDE_ONLY,
@@ -1215,7 +1215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(517, {	-- Elixir of Agony (4/5)
 					["sourceQuest"] = 515,	-- Elixir of Agony (3/5)
 					["qg"] = 2216,	-- Apothecary Lydon
-					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
@@ -1225,7 +1225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3517 },	-- Keg of Shindigger Stout
 								{ "o", 1727 },	-- Keg of Shindigger Stout
 							},
-							["coord"] = { 72.7, 80.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 72.7, 80.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -1236,7 +1236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 3520 },	-- Tainted Keg
 						{ "o", 1728 },	-- Dusty Rug
 					},
-					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 499,	-- Elixir of Suffering (2/2)
 					-- #endif
 					["qg"] = 2216,	-- Apothecary Lydon
-					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
@@ -1280,16 +1280,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2216 },	-- Apothecary Lydon
 						{ "i", 3497 },	-- Elixir of Pain
 					},
-					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 				}),
 				q(496, {	-- Elixir of Suffering (1/2)
 					["qg"] = 2216,	-- Apothecary Lydon
-					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
@@ -1319,7 +1319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2216 },	-- Apothecary Lydon
 						{ "i", 3495 },	-- Elixir of Suffering
 					},
-					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
@@ -1328,7 +1328,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8235, {	-- Encoded Fragments (Alterac Mountains)
 					["sourceQuest"] = 8234,	-- Sealed Azure Bag
 					["qg"] = 8379,	-- Archmage Xylem
-					["coord"] = { 29.6, 40.6, AZSHARA },
+					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["lvl"] = 50,
@@ -1346,7 +1346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1740 },	-- Syndicate Documents
 						{ "i", 3521 },	-- Cleverly Encrypted Letter
 					},
-					["coord"] = { 58.3, 68.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 58.3, 68.0, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1355,7 +1355,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28634, {	-- Extinction
 					["sourceQuest"] = 28620,	-- Eastpoint Tower
 					["qg"] = 49201,	-- Nils Beerot
-					["coord"] = { 60.0, 63.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 60.0, 63.6, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1367,7 +1367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(559, {	-- Farren's Proof (1/3)
 					["sourceQuest"] = 536,	-- Down the Coast
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
-					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -1391,7 +1391,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2228 },	-- Lieutenant Farren Orinelle
 						{ "i", 3717 },	-- Sack of Murloc Heads
 					},
-					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -1399,7 +1399,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(561, {	-- Farren's Proof (3/3)
 					["sourceQuest"] = 560,	-- Farren's Proof (2/3)
 					["qg"] = 2263,	-- Marshal Redpath
-					["coord"] = { 49.5, 58.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.5, 58.6, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -1407,13 +1407,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28617, {	-- Flower Power
 					["sourceQuest"] = 28733,	-- Basic Botany
 					["qg"] = 49687,	-- Brazie the Botanist
-					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.5, 49.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28199, {	-- For Science!
 					["sourceQuest"] = 28192,	-- No One Here Gets Out Alive
 					["qg"] = 47899,	-- Flesh-Shaper Arnauld
-					["coord"] = { 36.3, 60.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 36.3, 60.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1434,7 +1434,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1740 },	-- Syndicate Documents
 						{ "i", 3718 },	-- Foreboding Plans
 					},
-					["coord"] = { 58.3, 68.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 58.3, 68.0, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -1443,7 +1443,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28209, {	-- Freedom for Lydon
 					["sourceQuest"] = 28206,	-- Little Girl Lost
 					["qg"] = 47900,	-- Master Apothecary Lydon
-					["coord"] = { 40.3, 59.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 40.3, 59.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1474,7 +1474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1356 },	-- Prospector Stormpike
 						{ "i", 3518 },	-- Decrypted Letter
 					},
-					["coord"] = { 74.4, 12.0, IRONFORGE },
+					["coord"] = { 74.4, 12.0, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1483,13 +1483,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28744, {	-- Ghouls Hate My Grains
 					["sourceQuest"] = 28617,	-- Flower Power
 					["qg"] = 49687,	-- Brazie the Botanist
-					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.5, 49.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28114, {	-- Glorious Harvest
 					["sourceQuest"] = 28096,	-- Welcome to the Machine
 					["qg"] = 47432,	-- Apothecary Underhill
-					["coord"] = { 29.2, 64.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 29.2, 64.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1518,14 +1518,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(503, {	-- Gol'dir (Alterac Mountains)
 					["sourceQuest"] = 533,	-- Infiltration
 					["qg"] = 2229,	-- Krusk
-					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.24, 20.68, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rusted Iron Key
 							["provider"] = { "i", 3704 },	-- Rusted Iron Key
-							["coord"] = { 61.8, 40.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 61.8, 40.6, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2431,	-- Jailor Borhuin
 						}),
 					},
@@ -1533,7 +1533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(28325, {	-- Green Living
 					["qg"] = 2391,	-- Serge Hinott
-					["coord"] = { 49.0, 66.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.0, 66.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1543,13 +1543,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 207089 },	-- Used Blight Canister
 								{ "o", 207090 },	-- Used Blight Canister
 							},
-							["coord"] = { 50.1, 68.9, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 50.1, 68.9, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
 				q(28332, {	-- Helcular's Command
 					["qg"] = 48129,	-- Helcular
-					["coord"] = { 49.1, 66.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.1, 66.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1563,7 +1563,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(552, {	-- Helcular's Revenge (1/2)
 					["qg"] = 2429,	-- Novice Thaivand
-					["coord"] = { 63.87, 19.66, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.87, 19.66, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(553, {	-- Helcular's Revenge (2/2)
 					["sourceQuest"] = 552,	-- Helcular's Revenge (1/2)
 					["qg"] = 2429,	-- Novice Thaivand
-					["coord"] = { 63.87, 19.66, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.87, 19.66, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -1592,27 +1592,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3710 },	-- Rod of Helcular
 								{ "o", 1768 },	-- Flame of Azel
 							},
-							["coord"] = { 46.0, 32.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 46.0, 32.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- Flame of Veraz charged
 							["providers"] = {
 								{ "i", 3710 },	-- Rod of Helcular
 								{ "o", 1769 },	-- Flame of Veraz
 							},
-							["coord"] = { 46.0, 32.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 46.0, 32.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(3, {	-- Flame of Uzel charged
 							["providers"] = {
 								{ "i", 3710 },	-- Rod of Helcular
 								{ "o", 1770 },	-- Flame of Uzel
 							},
-							["coord"] = { 37.0, 68.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 37.0, 68.0, MAP.ALTERAC_MOUNTAINS },
 						}),
 					},
 				}),
 				q(28331, {	-- Helcular's Rod Giveth...
 					["qg"] = 48129,	-- Helcular
-					["coord"] = { 49.1, 66.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.1, 66.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1630,13 +1630,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28400, {	-- Heroes of the Horde!
 					["sourceQuest"] = 28397,	-- They Will Never Expect This...
 					["qg"] = 48503,	-- Kingslayer Orkus <Red Like My Rage>
-					["coord"] = { 25.4, 88.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 25.4, 88.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Alliance Battle Plans
 							["provider"] = { "i", 64307 },	-- Alliance Battle Plans
-							["coord"] = { 27.2, 86.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 27.2, 86.6, MAP.HILLSBRAD_FOOTHILLS },
 							["cr"] = 48515,	-- Stormpike Battle Master
 						}),
 						i(65728, {	-- Boots of the Hero
@@ -1662,7 +1662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2480, {	-- Hinott's Assistance (2/2)
 					["sourceQuest"] = 2479,	-- Hinott's Assistance (1/2)
 					["qg"] = 2391,	-- Serge Hinott
-					["coord"] = { 61.6, 19.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.6, 19.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
@@ -1682,7 +1682,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28138, {	-- Human Infestation
 					["sourceQuest"] = 28111,	-- Trouble at Azurelode
 					["qg"] = 47554,	-- Captain Keyton
-					["coord"] = { 33.2, 73.5, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.2, 73.5, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1710,7 +1710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28487, {	-- Humbert's Personal Problems
 					["qg"] = 2419,	-- Deathguard Humbert
-					["coord"] = { 57.1, 45.5, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.1, 45.5, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1719,27 +1719,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  64390 },	-- Humbert's Sword
 								{ "o", 207182 },	-- Humbert's Sword
 							},
-							["coord"] = { 45.1, 51.5, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 45.1, 51.5, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/1 Humbert's Helm
 							["providers"] = {
 								{ "i",  64391 },	-- Humbert's Helm
 								{ "o", 207184 },	-- Humbert's Helm
 							},
-							["coord"] = { 44.6, 50.9, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 44.6, 50.9, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(3, {	-- 0/1 Humbert's Pants
 							["providers"] = {
 								{ "i",  64393 },	-- Humbert's Pants
 								{ "o", 207183 },	-- Humbert's Pants
 							},
-							["coord"] = { 44.1, 53.3, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 44.1, 53.3, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
 				q(547, {	-- Humbert's Sword
 					["qg"] = 2419,	-- Deathguard Humbert
-					["coord"] = { 62.74, 20.21, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.74, 20.21, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
@@ -1765,7 +1765,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(533, {	-- Infiltration (Alterac Mountains)
 					["sourceQuest"] = 498,	-- The Rescue,
 					["qg"] = 2229,	-- Krusk
-					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.24, 20.68, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -1784,21 +1784,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28603, {	-- Infiltration
 					["sourceQuest"] = 28566,	-- Decimation
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.2, 46.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Instructor Rufus slain
 							["provider"] = { "n", 48922 },	-- Instructor Rufus
-							["coord"] = { 44.6, 49.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 44.6, 49.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/1 Drill Sergeant Magnus slain
 							["provider"] = { "n", 48923 },	-- Drill Sergeant Magnus
-							["coord"] = { 43.6, 49.8, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 43.6, 49.8, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						objective(3, {	-- 0/1 Captain Crudbeard slain
 							["provider"] = { "n", 48924 },	-- Captain Crudbeard
-							["coord"] = { 44.0, 50.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 44.0, 50.6, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -1808,7 +1808,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 3419 },	-- Apothecary Zamah
 						{ "i", 5628 },	-- Zamah's Note
 					},
-					["coord"] = { 22.85, 20.90, THUNDER_BLUFF },
+					["coord"] = { 22.85, 20.90, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
@@ -1824,9 +1824,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER 4.3.0
-						{ 71.4, 45.0, HILLSBRAD_FOOTHILLS },
+						{ 71.4, 45.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 84.4, 80.3, ALTERAC_MOUNTAINS },
+						{ 84.4, 80.3, MAP.ALTERAC_MOUNTAINS },
 						-- #endif
 					},
 					["maxReputation"] = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
@@ -1849,7 +1849,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28354, {	-- Kasha Will Fly Again
 					["sourceQuest"] = 28348,	-- Stormpike Rendezvous
 					["qg"] = 48218,	-- Kingslayer Orkus <Red Like My Rage>
-					["coord"] = { 50.0, 74.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.0, 74.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1858,7 +1858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3502 },	-- Mudsnout Blossoms
 								{ "o", 1723 },	-- Mudsnout Blossom
 							},
-							["coord"] = { 58.0, 74.8, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 58.0, 74.8, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						i(65717, {	-- Kingslayer's Breastplate
 							["timeline"] = { ADDED_4_0_3 },
@@ -1897,7 +1897,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 					-- #endif
 					["sourceQuest"] = 28747,	-- Someone Setup the Pumpkin Bomb
 					["qg"] = 49687,	-- Brazie the Botanist
-					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.5, 49.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						ach(5365, {	-- Bloom and Doom
@@ -1927,7 +1927,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3521 },	-- Cleverly Encrypted Letter
 					},
-					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1954,7 +1954,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						28196,	-- The Battle for Hillsbrad
 					},
 					["qg"] = 47781,	-- Warden Stillwater
-					["coord"] = { 36.1, 61.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 36.1, 61.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1963,14 +1963,14 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(507, {	-- Lord Aliden Perenolde (Alterac Mountains)
 					["sourceQuest"] = 506,	-- Blackmoore's Legacy
 					["qg"] = 2229,	-- Krusk
-					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.24, 20.68, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Aliden Perenolde slain
 							["provider"] = { "n", 2423 },	-- Lord Aliden Perenolde
-							["coord"] = { 39.2, 14.4, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.2, 14.4, MAP.ALTERAC_MOUNTAINS },
 						}),
 					},
 				}),
@@ -1978,20 +1978,20 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28506, {	-- March of the Stormpike
 					["sourceQuest"] = 28600,	-- Matters of Loyalty
 					["qg"] = 48545,	-- High Warlord Cromush
-					["coord"] = { 57.0, 46.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.0, 46.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28600, {	-- Matters of Loyalty
 					["sourceQuest"] = 28587,	-- Aid of the Frostwolf
 					["qg"] = 13817,	-- Voggah Deathgrip
-					["coord"] = { 58.6, 34.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 58.6, 34.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9435, {	-- Missing Crystals
 					["qg"] = 17218,	-- Huraan
-					["coord"] = { 51.0, 58.7, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 51.0, 58.7, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -2001,7 +2001,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 								{ "i",  23646 },	-- Shipment of Rare Crystals
 								{ "o", 181620 },	-- Unopened Crate
 							},
-							["coord"] = { 55.6, 35.2, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 55.6, 35.2, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -2028,7 +2028,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						28096,	-- Welcome to the Machine
 					},
 					["qg"] = 47781,	-- Warden Stillwater
-					["coord"] = { 36.1, 61.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 36.1, 61.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2036,7 +2036,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(512, {	-- Noble Deaths (Alterac Mountains)
 					["sourceQuest"] = 510,	-- Foreboding Plans
 					["qg"] = 2276,	-- Magistrate Henry Maleb
-					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.2, 59.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -2059,7 +2059,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28115, {	-- Past Their Prime
 					["sourceQuest"] = 28096,	-- Welcome to the Machine
 					["qg"] = 47432,	-- Apothecary Underhill
-					["coord"] = { 29.2, 64.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 29.2, 64.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2104,9 +2104,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(540, {	-- Preserving Knowledge
 					["sourceQuest"] = 538,	-- Southshore
 					["qg"] = 2277,	-- Loremaster Dibbs
-					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -2127,36 +2127,36 @@ Click Leave vehicle and repeat steps 3-8"]],
 								{ "i", 3659 },	-- Worn Leather Book
 								{ "o", 1760 },	-- Weathered Bookcase
 							},
-							["coord"] = { 38.5, 46.5, ALTERAC_MOUNTAINS },
+							["coord"] = { 38.5, 46.5, MAP.ALTERAC_MOUNTAINS },
 						}),
 					},
 				}),
 				q(544, {	-- Prison Break In
 					["qg"] = 2410,	-- Magus Wordeen Voidglare
-					["coord"] = { 61.60, 20.85, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodstone Wedge
 							["provider"] = { "i", 3691 },	-- Bloodstone Wedge
-							["coord"] = { 19.4, 86.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 19.4, 86.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2413,	-- Dermot
 						}),
 						objective(2, {	-- 0/1 Bloodstone Marble
 							["provider"] = { "i", 3689 },	-- Bloodstone Marble
-							["coord"] = { 20.8, 84.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 20.8, 84.6, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2411,	-- Ricter
 						}),
 						objective(3, {	-- 0/1 Bloodstone Shard
 							["provider"] = { "i", 3690 },	-- Bloodstone Shard
-							["coord"] = { 20.4, 86.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 20.4, 86.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2412,	-- Alina
 						}),
 						objective(4, {	-- 0/1 Bloodstone Oval
 							["provider"] = { "i", 3688 },	-- Bloodstone Oval
-							["coord"] = { 18.0, 83.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 18.0, 83.6, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2414,	-- Kegan Darkmar
 						}),
 					},
@@ -2167,13 +2167,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 						47900,	-- Master Apothecary Lydon
 						48020,	-- Master Apothecary Lydon
 					},
-					["coord"] = { 40.2, 59.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 40.2, 59.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 The Ray-Getz-Kalaba Monstrosity slain
 							["provider"] = { "n", 47793 },	-- The Ray-Getz-Kalaba Monstrosity
-							["coord"] = { 38.8, 57.4, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 38.8, 57.4, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -2183,14 +2183,14 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 2228 },	-- Lieutenant Farren Orinelle
 						{ "i", 3721 },	-- Farren's Report
 					},
-					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(9425, {	-- Report to Tarren Mill
 					["qg"] = 16287,	-- Ambassador Sunsorrow
-					["coord"] = { 57.6, 90.8, UNDERCITY },
+					["coord"] = { 57.6, 90.8, MAP.UNDERCITY },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
 				}),
@@ -2200,9 +2200,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3660 },	-- Tomes of Alterac
 					},
-					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -2212,9 +2212,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 						2216,	-- Apothecary Lydon
 						5588,	-- Lydon's Toxin
 					},
-					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -2222,15 +2222,15 @@ Click Leave vehicle and repeat steps 3-8"]],
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8234, {	-- Sealed Azure Bag	(Alterac Mountains)
 					["sourceQuest"] = 8233,	-- A Simple Request
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
-					["coord"] = { 86.0, 79.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 86.0, 79.0, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { AZSHARA },
+					["maps"] = { MAP.AZSHARA },
 					["classes"] = { ROGUE },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sealed Azure Bag
 							["provider"] = { "i", 19775 },	-- Sealed Azure Bag
-							["coord"] = { 43.5, 25.4, AZSHARA },
+							["coord"] = { 43.5, 25.4, MAP.AZSHARA },
 							["cr"] = 6188,	-- Timbermaw Shaman
 						}),
 					},
@@ -2239,7 +2239,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28636, {	-- Silence of the Dwarves
 					["sourceQuest"] = 28635,	-- A Haunting in Hillsbrad
 					["qg"] = 49240,	-- Captain Ironhill's Ghost
-					["coord"] = { 61.6, 84.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.6, 84.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2263,17 +2263,17 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28747, {	-- Someone Setup the Pumpkin Bomb
 					["sourceQuest"] = 28744,	-- Ghouls Hate My Grains
 					["qg"] = 49687,	-- Brazie the Botanist
-					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.5, 49.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				{	-- Soothing Turtle Bisque
 					["allianceQuestData"] = q(555, {	-- Soothing Turtle Bisque (A)
 						["qg"] = 2430,	-- Chef Jessen
-						["coord"] = { 51.8, 58.7, HILLSBRAD_FOOTHILLS },
+						["coord"] = { 51.8, 58.7, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					["hordeQuestData"] = q(7321, {	-- Soothing Turtle Bisque (H)
 						["qg"] = 2393,	-- Christoph Jeffcoat
-						["coord"] = { 62.30, 19.05, HILLSBRAD_FOOTHILLS },
+						["coord"] = { 62.30, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = COOKING,
@@ -2294,14 +2294,14 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(538, {	-- Southshore
 					["sourceQuest"] = 337,	-- An Old History Book
 					["qg"] = 1440,	-- Milton Sheaf <Librarian>
-					["coord"] = { 74.2, 7.5, STORMWIND_CITY },
+					["coord"] = { 74.2, 7.5, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(546, {	-- Souvenirs of Death
 					["sourceQuest"] = 527,	-- Battle of Hillsbrad (1/7)
 					["qg"] = 2418,	-- Deathguard Samsa
-					["coord"] = { 62.12, 19.72, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.12, 19.72, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -2344,9 +2344,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8412, {	-- Spirit Totem (Alterac Mountains)
 					["sourceQuest"] = 8410,	-- Elemental Mastery
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
-					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WESTERN_PLAGUELANDS },
+					["maps"] = { MAP.WESTERN_PLAGUELANDS },
 					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
 					-- #endif
@@ -2375,7 +2375,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				q(28489, {	-- Stagwiches
 					["qg"] = 2397,	-- Derak Nightfall
-					["coord"] = { 57.6, 45.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.6, 45.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2390,9 +2390,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				q(556, {	-- Stone Tokens
 					["qg"] = 2437,	-- Keeper Bel'varil
-					["coord"] = { 61.50, 20.91, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.50, 20.91, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -2414,7 +2414,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						28605,	-- Domination
 					},
 					["qg"] = 48545,	-- High Warlord Cromush
-					["coord"] = { 57.0, 46.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.0, 46.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2435,7 +2435,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28348, {	-- Stormpike Rendezvous
 					["sourceQuest"] = 28345,	-- *Gurgle* HELP! *Gurgle*
 					["qg"] = 48218,	-- Kingslayer Orkus <Red Like My Rage>
-					["coord"] = { 50.0, 74.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.0, 74.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2446,7 +2446,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3706 },	-- Ensorcelled Parchment
 					},
-					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -2455,7 +2455,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(562, {	-- Stormwind Ho!
 					["sourceQuest"] = 561,	-- Farren's Proof (3)
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
-					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -2474,7 +2474,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28324, {	-- Studies in Lethality
 					["sourceQuest"] = 28251,	-- Trouble at Southshore
 					["qg"] = 2391,	-- Serge Hinott
-					["coord"] = { 49.0, 66.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.0, 66.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2487,7 +2487,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #if AFTER CATA
 				q(505, {	-- Syndicate Assassins (Alterac Mountains)
 					["qg"] = 2276,	-- Magistrate Henry Maleb
-					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.2, 59.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -2509,7 +2509,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(6701, {	-- Syndicate Emblems (Alterac Mountains)
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 					["qg"] = 6766,	-- Ravenholdt Guard <Assassin's League>
-					["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
+					["coord"] = { 85.2, 79.4, MAP.ALTERAC_MOUNTAINS },
 					["maxReputation"] = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
@@ -2523,7 +2523,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 2317 },	-- Elysa
 						{ "i", 3498 },	-- Taretha's Necklace
 					},
-					["coord"] = { 39.30, 14.30, ALTERAC_MOUNTAINS },
+					["coord"] = { 39.30, 14.30, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -2540,7 +2540,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28751, {	-- Tending the Garden
 					["sourceQuest"] = 28748,	-- Lawn of the Dead
 					["qg"] = 49687,	-- Brazie the Botanist
-					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.5, 49.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3, ADDED_5_0_4 },
 					["isDaily"] = true,
 				}),
@@ -2549,7 +2549,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						2372,	-- Mudsnout Gnoll
 						2373,	-- Mudsnout Shaman
 					},
-					["coord"] = { 58.5, 73.9, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 58.5, 73.9, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2563,7 +2563,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				q(28196, {	-- The Battle for Hillsbrad
 					["provider"] = { "i", 63250 },	-- The Battle for Hillsbrad
-					["coord"] = { 37.6, 63.7, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 37.6, 63.7, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["cr"] = 47789,	-- Clerk Horrace Whitesteed
@@ -2572,9 +2572,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #if AFTER CATA
 				q(495, {	-- The Crown of Will (1/5) (Alterac Mountains)
 					["qg"] = 2227,	-- Sharlindra
-					["coord"] = { 57.60, 93.84, UNDERCITY },
+					["coord"] = { 57.60, 93.84, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_5_0_4 },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 34,
@@ -2582,9 +2582,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(518, {	-- The Crown of Will (2/5) (Alterac Mountains)
 					["sourceQuest"] = 495,	-- The Crown of Will (1/5)
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
@@ -2596,25 +2596,25 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(519, {	-- The Crown of Will (3/5) (Alterac Mountains)
 					["sourceQuest"] = 518,	-- The Crown of Will (2/5)
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
 						objective(1, {	-- 0/1 Targ's Head
 							["provider"] = { "i", 3550 },	-- Targ's Head
-							["coord"] = { 39.6, 53.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.6, 53.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2420,	-- Targ
 						}),
 						objective(2, {	-- 0/1 Muckrake's Head
 							["provider"] = { "i", 3551 },	-- Muckrake's Head
-							["coord"] = { 38.8, 47.2, ALTERAC_MOUNTAINS },
+							["coord"] = { 38.8, 47.2, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2421,	-- Muckrake
 						}),
 						objective(3, {	-- 0/1 Glommus's Head
 							["provider"] = { "i", 3552 },	-- Glommus's Head
-							["coord"] = { 39.4, 41.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.4, 41.8, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2422,	-- Glommus
 						}),
 					},
@@ -2622,20 +2622,20 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(520, {	-- The Crown of Will (4/5) (Alterac Mountains)
 					["sourceQuest"] = 519,	-- The Crown of Will (3/5)
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mug'thol's Head
 							["provider"] = { "i", 3553 },	-- Mug'thol's Head
-							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2257,	-- Mug'thol
 						}),
 						objective(2, {	-- 0/1 Crown of Will
 							["provider"] = { "i", 3554 },	-- Mug'thol's Head
-							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2257,	-- Mug'thol
 						}),
 					},
@@ -2646,9 +2646,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 2278 },	-- Melisara
 						{ "i", 3554 },	-- Crown of Will
 					},
-					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
@@ -2661,26 +2661,26 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28645, {	-- The Durnholde Challenge: Bloodvenom
 					["sourceQuest"] = 28644,	-- The Durnholde Challenge: Teracula
 					["qg"] = 49243,	-- Captain Jekyll
-					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 59.9, 63.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodvenom slain
 							["provider"] = { "n", 49264 },	-- Bloodvenom
-							["coord"] = { 66.6, 61.2, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 66.6, 61.2, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
 				q(28647, {	-- The Durnholde Challenge: D-1000
 					["sourceQuest"] = 28646,	-- The Durnholde Challenge: Infernus
 					["qg"] = 49243,	-- Captain Jekyll
-					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 59.9, 63.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 D-1000 slain
 							["provider"] = { "n", 49268 },	-- D-1000
-							["coord"] = { 70.2, 61.2, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 70.2, 61.2, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						i(65687, {	-- Axe of the Judgment Day
 							["timeline"] = { ADDED_4_0_3 },
@@ -2696,26 +2696,26 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28646, {	-- The Durnholde Challenge: Infernus
 					["sourceQuest"] = 28645,	-- The Durnholde Challenge: Bloodvenom
 					["qg"] = 49243,	-- Captain Jekyll
-					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 59.9, 63.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Infernus slain
 							["provider"] = { "n", 49266 },	-- Infernus
-							["coord"] = { 68.6, 63.0, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 68.6, 63.0, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
 				q(28644, {	-- The Durnholde Challenge: Teracula
 					["sourceQuest"] = 28643,	-- The Durnholde Challenge: Zephyrus
 					["qg"] = 49243,	-- Captain Jekyll
-					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 59.9, 63.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Teracula slain
 							["provider"] = { "n", 49265 },	-- Teracula
-							["coord"] = { 67.6, 60.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 67.6, 60.6, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -2724,13 +2724,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 49243 },	-- Captain Jekyll
 						{ "i", 64666 },	-- The Durnholde Challenge
 					},
-					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 59.9, 63.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Zephyrus slain
 							["provider"] = { "n", 49263 },	-- Zephyrus
-							["coord"] = { 68.6, 59.8, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 68.6, 59.8, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -2740,7 +2740,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "i", 3706 },	-- Ensorcelled Parchment
 						{ "o", 1765 },	-- Worn Wooden Chest
 					},
-					["coord"] = { 39.2, 14.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 39.2, 14.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -2748,7 +2748,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				q(28484, {	-- The Heart of the Matter
 					["qg"] = 2437,	-- Keeper Bel'varil
-					["coord"] = { 56.9, 45.7, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 56.9, 45.7, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2787,9 +2787,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				q(498, {	-- The Rescue
 					["qg"] = 2229,	-- Krusk
-					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.24, 20.68, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -2800,9 +2800,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 								{ "i", 3467 },	-- Dull Iron Key
 							},
 							["coords"] = {
-								{ 75.2, 41.6, HILLSBRAD_FOOTHILLS },
-								{ 75.6, 42.6, HILLSBRAD_FOOTHILLS },
-								{ 79.6, 42.0, HILLSBRAD_FOOTHILLS },
+								{ 75.2, 41.6, MAP.HILLSBRAD_FOOTHILLS },
+								{ 75.6, 42.6, MAP.HILLSBRAD_FOOTHILLS },
+								{ 79.6, 42.0, MAP.HILLSBRAD_FOOTHILLS },
 							},
 							["cr"] = 2427,	-- Jailor Eston
 						}),
@@ -2813,8 +2813,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 								{ "i", 3499 },	-- Burnished Gold Key
 							},
 							["coords"] = {
-								{ 79.6, 39.6, HILLSBRAD_FOOTHILLS },
-								{ 79.6, 40.6, HILLSBRAD_FOOTHILLS },
+								{ 79.6, 39.6, MAP.HILLSBRAD_FOOTHILLS },
+								{ 79.6, 40.6, MAP.HILLSBRAD_FOOTHILLS },
 							},
 							["cr"] = 2428,	-- Jailor Marlgen
 						}),
@@ -2832,7 +2832,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28375, {	-- The Road to Purgation
 					["sourceQuest"] = 28354,	-- Kasha Will Fly Again
 					["qg"] = 48218,	-- Kingslayer Orkus <Red Like My Rage>
-					["coord"] = { 50.0, 74.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.0, 74.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2840,14 +2840,14 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(1713, {	-- The Summoning (Alterac Mountains)
 					["sourceQuest"] = 1712,	-- Cyclonian
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
-					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Whirlwind Heart
 							["provider"] = { "i", 6894 },	-- Whirlwind Heart
-							["coord"] = { 80.6, 62.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 80.6, 62.6, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 6239,	-- Cyclonian
 						}),
 					},
@@ -2856,7 +2856,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28397, {	-- They Will Never Expect This...
 					["sourceQuest"] = 28375,	-- The Road to Purgation
 					["qg"] = 48470,	-- Kingslayer Orkus <Red Like My Rage>
-					["coord"] = { 29.2, 83.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 29.2, 83.8, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2873,7 +2873,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				q(28144, {	-- Thieving Little Monsters!
 					["qg"] = 47554,	-- Captain Keyton
-					["coord"] = { 33.2, 73.5, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.2, 73.5, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2882,26 +2882,26 @@ Click Leave vehicle and repeat steps 3-8"]],
 								{ "i",  63082 },	-- Forsaken Camp "Supplies"
 								{ "o", 206783 },	-- Forsaken Camp "Supplies"
 							},
-							["coord"] = { 32.3, 79.7, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 32.3, 79.7, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
 				q(494, {	-- Time To Strike
 					["qg"] = 2214,	-- Deathstalker Lesh
-					["coord"] = { 20.79, 47.41, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 20.79, 47.41, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 				}),
 				q(28330, {	-- Trail of Filth
 					["sourceQuest"] = 28329,	-- Angry Scrubbing Bubbles
-					["coord"] = { 48.8, 71.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.8, 71.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Chet the Slime-Breeder slain
 							["provider"] = { "n", 48322 },	-- Chet the Slime-Breeder
-							["coord"] = { 47.8, 72.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 47.8, 72.6, MAP.HILLSBRAD_FOOTHILLS },
 						}),
 						i(65718, {	-- Lethality Leggings
 							["timeline"] = { ADDED_4_0_3 },
@@ -2920,7 +2920,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28111, {	-- Trouble at Azurelode
 					["sourceQuest"] = 28096,	-- Welcome to the Machine
 					["qg"] = 2215,	-- High Executor Darthalia
-					["coord"] = { 29.2, 63.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 29.2, 63.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2928,7 +2928,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28251, {	-- Trouble at Southshore
 					["sourceQuest"] = 28237,	-- A Blight Upon the Land
 					["qg"] = 47900,	-- Master Apothecary Lydon
-					["coord"] = { 36.6, 61.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 36.6, 61.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2939,7 +2939,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						28144,	-- Thieving Little Monsters
 					},
 					["qg"] = 47554,	-- Captain Keyton
-					["coord"] = { 33.2, 73.5, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.2, 73.5, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2948,7 +2948,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(535, {	-- Valik (Alterac Mountains)
 					["altQuests"] = { 533 },	-- Infiltration (Can only be completed while on this quest)
 					["qg"] = 2333,	-- Henchman Valik
-					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
+					["coord"] = { 57.15, 69.50, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["races"] = HORDE_ONLY,
@@ -2962,15 +2962,15 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(566, {	-- WANTED: Baron Vardus (Alterac Mountains)
 					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel
 					["provider"] = { "o", 1763 },	-- WANTED
-					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.76, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Baron Vardus
 							["provider"] = { "i", 3626 },	-- Head of Baron Vardus
-							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
+							["coord"] = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2306,	-- Baron Vardus
 						}),
 						i(2231, {	-- Inferno Robe
@@ -2981,7 +2981,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				q(549, {	-- WANTED: Syndicate Personnel
 					["provider"] = { "o", 1763 },	-- WANTED
-					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.76, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
@@ -2996,7 +2996,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				warchiefscommand(q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
@@ -3015,10 +3015,10 @@ Click Leave vehicle and repeat steps 3-8"]],
 						-- #endif
 					},
 					["coords"] = {
-						{ 57.3, 10.1, SILVERPINE_FOREST },	-- Forsaken High Command
-						{ 44.8, 40.7, SILVERPINE_FOREST },	-- The Sepulcher
-						{ 52.2, 66.3, SILVERPINE_FOREST },	-- The Forsaken Front
-						{ 45.3, 84.3, SILVERPINE_FOREST },	-- The Battlefront
+						{ 57.3, 10.1, MAP.SILVERPINE_FOREST },	-- Forsaken High Command
+						{ 44.8, 40.7, MAP.SILVERPINE_FOREST },	-- The Sepulcher
+						{ 52.2, 66.3, MAP.SILVERPINE_FOREST },	-- The Forsaken Front
+						{ 45.3, 84.3, MAP.SILVERPINE_FOREST },	-- The Battlefront
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3034,7 +3034,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 2215 },	-- High Executor Darthalia
 						{ "i", 62932 },	-- Daily Report - Hillsbrad Foothills
 					},
-					["coord"] = { 29.2, 63.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 29.2, 63.3, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3065,7 +3065,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(1792, {	-- Whirlwind Weapon (Alterac Mountains)
 					["sourceQuest"] = 1713,	-- The Summoning
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
-					["coord"] = { 80.5, 66.9, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.5, 66.9, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
@@ -3084,7 +3084,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				q(28485, {	-- Yetimus the Yeti Lord
 					["qg"] = 2418,	-- Deathguard Samsa
-					["coord"] = { 57.1, 45.5, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 57.1, 45.5, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3106,84 +3106,84 @@ Click Leave vehicle and repeat steps 3-8"]],
 			}),
 			n(RARES, {
 				n(50335, {	-- Alitus
-					["coord"] = { 46.8, 66.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 46.8, 66.8, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if AFTER CATA
 				n(14222, {	-- Araga (Alterac Mountains)
-					["coord"] = { 44.2, 54.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 44.2, 54.0, MAP.HILLSBRAD_FOOTHILLS },
 				}),
 				-- #endif
 				n(14280, {	-- Big Samras
 					-- #if AFTER CATA
-					["coord"] = { 63.6, 52.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.6, 52.6, MAP.HILLSBRAD_FOOTHILLS },
 					-- #else
 					["coords"] = {
-						{ 72.6, 29.0, HILLSBRAD_FOOTHILLS },
-						{ 75.8, 31.6, HILLSBRAD_FOOTHILLS },
-						{ 86.6, 39.6, HILLSBRAD_FOOTHILLS },
-						{ 85.0, 47.6, HILLSBRAD_FOOTHILLS },
+						{ 72.6, 29.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 75.8, 31.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 86.6, 39.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 85.0, 47.6, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
 				}),
 				n(50955, {	-- Carcinak
-					["coord"] = { 46.8, 76.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 46.8, 76.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51022, {	-- Chordix
-					["coord"] = { 56.8, 54.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 56.8, 54.8, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if AFTER CATA
 				n(14223, {	-- Cranky Benj (Alterac Mountains)
 					["coords"] = {
-						{ 68.4, 30.6, HILLSBRAD_FOOTHILLS },
-						{ 65.8, 36.4, HILLSBRAD_FOOTHILLS },
-						{ 63.0, 40.8, HILLSBRAD_FOOTHILLS },
-						{ 61.6, 48.0, HILLSBRAD_FOOTHILLS },
-						{ 60.8, 54.0, HILLSBRAD_FOOTHILLS },
-						{ 58.4, 59.6, HILLSBRAD_FOOTHILLS },
-						{ 56.6, 61.6, HILLSBRAD_FOOTHILLS },
+						{ 68.4, 30.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 65.8, 36.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 63.0, 40.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 61.6, 48.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 60.8, 54.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 58.4, 59.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 56.6, 61.6, MAP.HILLSBRAD_FOOTHILLS },
 					},
 				}),
 				-- #endif
 				n(50967, {	-- Craw the Ravager
-					["coord"] = { 51.8, 87.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 51.8, 87.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14279, {	-- Creepthess
 					-- #if AFTER CATA
-					["coord"] = { 43.8, 74.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 43.8, 74.4, MAP.HILLSBRAD_FOOTHILLS },
 					-- #else
 					["coords"] = {
-						{ 25.8, 54.6, HILLSBRAD_FOOTHILLS },
-						{ 28.4, 63.4, HILLSBRAD_FOOTHILLS },
-						{ 35.2, 60.4, HILLSBRAD_FOOTHILLS },
-						{ 39.2, 51.6, HILLSBRAD_FOOTHILLS },
+						{ 25.8, 54.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 28.4, 63.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 35.2, 60.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 39.2, 51.6, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
 				}),
 				n(50858, {	-- Dustwing
-					["coord"] = { 28.6, 84.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 28.6, 84.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if AFTER CATA
 				n(14221, {	-- Gravis Slipknot (Alterac Mountains)
-					["coord"] = { 56.6, 23.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 56.6, 23.6, MAP.HILLSBRAD_FOOTHILLS },
 				}),
 				-- #endif
 				n(47010, {	-- Indigos
-					["coord"] = { 31.6, 40.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 31.6, 40.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				-- #if AFTER CATA
 				n(14281, {	-- Jimmy the Bleeder (Alterac Mountains)
-					["coord"] = { 49.8, 50.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.8, 50.6, MAP.HILLSBRAD_FOOTHILLS },
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211951, {	-- Koartul
-					["coord"] = { 61.0, 32.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 61.0, 32.8, MAP.HILLSBRAD_FOOTHILLS },
 					["cost"] = { { "i", 210410, 1 } },	-- Freshwater Snapper Bait
 					["groups"] = {
 						i(210596, {	-- Rune of Cobra Strikes
@@ -3197,24 +3197,24 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				n(14277, {	-- Lady Zephris
 					-- #if AFTER CATA
-					["coord"] = { 54.6, 76.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 54.6, 76.6, MAP.HILLSBRAD_FOOTHILLS },
 					-- #else
 					["coords"] = {
-						{ 58.2, 70.4, HILLSBRAD_FOOTHILLS },
-						{ 60.6, 75.2, HILLSBRAD_FOOTHILLS },
-						{ 65.6, 77.8, HILLSBRAD_FOOTHILLS },
-						{ 65.8, 80.2, HILLSBRAD_FOOTHILLS },
-						{ 67.8, 87.6, HILLSBRAD_FOOTHILLS },
+						{ 58.2, 70.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 60.6, 75.2, MAP.HILLSBRAD_FOOTHILLS },
+						{ 65.6, 77.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 65.8, 80.2, MAP.HILLSBRAD_FOOTHILLS },
+						{ 67.8, 87.6, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
 				}),
 				n(50929, {	-- Little Bjorn
-					["coord"] = { 35.0, 78.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 35.0, 78.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if AFTER CATA
 				n(2453, {	-- Lo'Grosh (Alterac Mountains)
-					["coord"] = { 49.4, 18.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.4, 18.4, MAP.HILLSBRAD_FOOTHILLS },
 					["groups"] = {
 						i(6327),	-- The Pacifier
 						i(4810),	-- Boulder Pads
@@ -3223,45 +3223,45 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #endif
 				n(51076, {	-- Lopex
-					["coord"] = { 68.8, 56.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 68.8, 56.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if AFTER CATA
 				n(2258, {	-- Maggarrak [CATA+] / Stone Fury (Alterac Mountains)
-					["coord"] = { 60.2, 28.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 60.2, 28.8, MAP.HILLSBRAD_FOOTHILLS },
 				}),
 				-- #endif
 				n(50765, {	-- Miasmiss
-					["coord"] = { 37.0, 68.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 37.0, 68.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14278, {	-- Ro'Bark
 					-- #if AFTER CATA
-					["coord"] = { 58.4, 75.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 58.4, 75.6, MAP.HILLSBRAD_FOOTHILLS },
 					-- #else
 					["coords"] = {
-						{ 61.8, 60.6, HILLSBRAD_FOOTHILLS },
-						{ 66.2, 58.8, HILLSBRAD_FOOTHILLS },
-						{ 66.2, 64.8, HILLSBRAD_FOOTHILLS },
-						{ 63.2, 63.4, HILLSBRAD_FOOTHILLS },
+						{ 61.8, 60.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 66.2, 58.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 66.2, 64.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 63.2, 63.4, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
 				}),
 				n(14276, {	-- Scargil
 					-- #if AFTER CATA
-					["coord"] = { 32.6, 79.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 32.6, 79.8, MAP.HILLSBRAD_FOOTHILLS },
 					-- #else
 					["coords"] = {
-						{ 23.6, 64.4, HILLSBRAD_FOOTHILLS },
-						{ 26.0, 65.4, HILLSBRAD_FOOTHILLS },
-						{ 26.2, 73.0, HILLSBRAD_FOOTHILLS },
-						{ 31.4, 72.2, HILLSBRAD_FOOTHILLS },
+						{ 23.6, 64.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 26.0, 65.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 26.2, 73.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 31.4, 72.2, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
 				}),
 				-- #if AFTER CATA
 				n(2452, {	-- Skhowl (Alterac Mountains)
-					["coord"] = { 43.6, 38.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 43.6, 38.8, MAP.HILLSBRAD_FOOTHILLS },
 					["groups"] = {
 						i(3011),	-- Feathered Headdress
 						i(6331),	-- Howling Blade
@@ -3270,13 +3270,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				n(14275, {	-- Tamra Stormpike
 					-- #if AFTER CATA
-					["coord"] = { 63.2, 85.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.2, 85.8, MAP.HILLSBRAD_FOOTHILLS },
 					-- #else
 					["coords"] = {
-						{ 65.0, 66.2, HILLSBRAD_FOOTHILLS },
-						{ 68.6, 77.8, HILLSBRAD_FOOTHILLS },
-						{ 71.2, 75.4, HILLSBRAD_FOOTHILLS },
-						{ 73.6, 81.0, HILLSBRAD_FOOTHILLS },
+						{ 65.0, 66.2, MAP.HILLSBRAD_FOOTHILLS },
+						{ 68.6, 77.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 71.2, 75.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 73.6, 81.0, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
 					["races"] = HORDE_ONLY,
@@ -3289,22 +3289,22 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				n(50818, {	-- The Dark Prowler
-					["coord"] = { 33.0, 55.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 33.0, 55.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51057, {	-- Weevil
-					["coord"] = { 45.6, 53.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 45.6, 53.8, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50770, {	-- Zorn
-					["coord"] = { 77.0, 60.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 77.0, 60.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
 			n(VENDORS, {
 				-- #if AFTER CATA
 				n(2480, {	-- Bro'kin <Alchemy Supplies> (Alterac Mountains)
-					["coord"] = { 44.0, 21.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 44.0, 21.8, MAP.HILLSBRAD_FOOTHILLS },
 					["groups"] = {
 						i(14634, {	-- Recipe: Frost Oil (RECIPE!)
 							["isLimited"] = true,
@@ -3315,9 +3315,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(2393, {	-- Christoph Jeffcoat <Tradesman>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.5, 47.8, HILLSBRAD_FOOTHILLS },
+						{ 57.5, 47.8, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 62.2, 19.0, HILLSBRAD_FOOTHILLS },
+						{ 62.2, 19.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3337,9 +3337,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(2397, {	-- Derak Nightfall <Cook>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.6, 45.2, HILLSBRAD_FOOTHILLS },
+						{ 57.6, 45.2, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 63.0, 19.6, HILLSBRAD_FOOTHILLS },
+						{ 63.0, 19.6, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3352,9 +3352,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.6, 58.6, HILLSBRAD_FOOTHILLS },
+						{ 76.6, 58.6, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 92.0, 38.6, HILLSBRAD_FOOTHILLS },
+						{ 92.0, 38.6, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3365,7 +3365,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				n(47712, {	-- Harland Waldek <Weaponsmith>
-					["coord"] = { 28.8, 64.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 28.8, 64.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3380,9 +3380,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(2388, {	-- Innkeeper Shay <Innkeeper>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.8, 47.2, HILLSBRAD_FOOTHILLS },
+						{ 57.8, 47.2, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 62.6, 19.0, HILLSBRAD_FOOTHILLS },
+						{ 62.6, 19.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3393,9 +3393,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(3536, {	-- Kris Legace <Freewheeling Tradeswoman>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.8, 58.8, HILLSBRAD_FOOTHILLS },
+						{ 68.8, 58.8, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 80.0, 39.0, HILLSBRAD_FOOTHILLS },
+						{ 80.0, 39.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["groups"] = {
@@ -3435,7 +3435,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #if BEFORE 4.0.3
 				n(2383, {	-- Lindea Rabonne <Tackle and Bait>
-					["coord"] = { 50.6, 61.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.6, 61.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3448,9 +3448,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(2394, {	-- Mallen Swain <Tailoring Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 58.0, 47.8, HILLSBRAD_FOOTHILLS },
+						{ 58.0, 47.8, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 62.0, 21.0, HILLSBRAD_FOOTHILLS },
+						{ 62.0, 21.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3465,7 +3465,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #if BEFORE 4.0.3
 				n(2357, {	-- Merideth Carlson <Horse Breeder>
-					["coord"] = { 52.2, 55.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 52.2, 55.4, MAP.HILLSBRAD_FOOTHILLS },
 
 					-- Available to Humans without faction requirements.
 					["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
@@ -3488,7 +3488,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #endif
 				n(2381, {	-- Micha Yance <Trade Goods>
-					["coord"] = { 49.0, 55.2, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.0, 55.2, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3517,7 +3517,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				n(2380, {	-- Nandar Branson <Alchemy Supplies>
-					["coord"] = { 50.9, 57.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.9, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3535,9 +3535,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(3539, {	-- Ott <Weaponsmith>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.6, 47.6, HILLSBRAD_FOOTHILLS },
+						{ 57.6, 47.6, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 60.4, 26.0, HILLSBRAD_FOOTHILLS },
+						{ 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3577,7 +3577,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				-- #if BEFORE CATA
 				n(3543, {	-- Robert Aebischer <Superior Armorsmith>
-					["coord"] = { 51.2, 57.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 51.2, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3607,7 +3607,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				-- #if AFTER CATA
 				n(6779, {	-- Smudge Thunderwood <Poison Supplies> (Alterac Mountains)
-					["coord"] = { 71.0, 45.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 71.0, 45.8, MAP.HILLSBRAD_FOOTHILLS },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
@@ -3616,7 +3616,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer> (Alterac Mountains)
-					["coord"] = { 71.2, 45.3, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 71.2, 45.3, MAP.HILLSBRAD_FOOTHILLS },
 					["groups"] = {
 						i(7742, {	-- Schematic: Gnomish Cloaking Device (RECIPE!)
 							["isLimited"] = true,
@@ -3627,13 +3627,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(3537, {	-- Zixil <Merchant Supreme>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.4, 66.6, HILLSBRAD_FOOTHILLS },
-						{ 56.0, 46.4, HILLSBRAD_FOOTHILLS },
-						{ 51.8, 55.6, HILLSBRAD_FOOTHILLS },
+						{ 49.4, 66.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 56.0, 46.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 51.8, 55.6, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 60.8, 19.8, HILLSBRAD_FOOTHILLS },
-						{ 55.6, 34.6, HILLSBRAD_FOOTHILLS },
-						{ 50.4, 50.8, HILLSBRAD_FOOTHILLS },
+						{ 60.8, 19.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 55.6, 34.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 50.4, 50.8, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["groups"] = {
@@ -3688,7 +3688,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, o(414658, {	-- Rubble
-					["coord"] = { 79.7, 40.9, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 79.7, 40.9, MAP.HILLSBRAD_FOOTHILLS },
 					["cost"] = { { "i", 211487, 1 } },	-- Demolition Explosives
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(211476, {	-- Rune of Fires Wake
@@ -3707,8 +3707,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "o", 409949 },	-- Twin Owl Statue (East)
 					},
 					["coords"] = {
-						{ 36.91, 76.14, HILLSBRAD_FOOTHILLS },
-						{ 54.43, 82.01, HILLSBRAD_FOOTHILLS },
+						{ 36.91, 76.14, MAP.HILLSBRAD_FOOTHILLS },
+						{ 54.43, 82.01, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
@@ -3719,8 +3719,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207279, {	-- Warchief's Command Board
 				["coords"] = {
-					{ 56.6, 47.0, HILLSBRAD_FOOTHILLS },
-					{ 59.9, 63.5, HILLSBRAD_FOOTHILLS },
+					{ 56.6, 47.0, MAP.HILLSBRAD_FOOTHILLS },
+					{ 59.9, 63.5, MAP.HILLSBRAD_FOOTHILLS },
 				},
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
@@ -3731,7 +3731,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 			n(ZONE_DROPS, {
 				i(3668, {	-- Assassin's Contract
 					["description"] = "The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",
-					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.8, 58.8, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 2434,	-- Shadowy Assassin
@@ -3748,17 +3748,17 @@ Click Leave vehicle and repeat steps 3-8"]],
 				i(1280, {	-- Cloaked Hood
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
-						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
-						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
-						{ 54.6, 26.6, HILLSBRAD_FOOTHILLS },
-						{ 55.2, 23.6, HILLSBRAD_FOOTHILLS },
-						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
-						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
-						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
+						{ 58.0, 23.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 49.6, 10.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 54.6, 26.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 55.2, 23.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 55.6, 17.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 52.6, 12.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 23.4, 35.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["crs"] = {
@@ -3775,11 +3775,11 @@ Click Leave vehicle and repeat steps 3-8"]],
 				i(4767, {	-- Coppercloth Gloves
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					["coords"] = {
-						{ 27.8, 42.6, HILLSBRAD_FOOTHILLS },
-						{ 31.0, 43.6, HILLSBRAD_FOOTHILLS },
-						{ 33.6, 41.0, HILLSBRAD_FOOTHILLS },
-						{ 35.0, 35.6, HILLSBRAD_FOOTHILLS },
-						{ 32.6, 32.0, HILLSBRAD_FOOTHILLS },
+						{ 27.8, 42.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 31.0, 43.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 33.6, 41.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 35.0, 35.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 32.6, 32.0, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 09.09.2023
 					["cr"] = 2628,	-- Dalaran Worker
@@ -3787,16 +3787,16 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				i(3204, {	-- Deepwood Bracers
 					["coords"] = {
-						{ 58.8, 74.6, HILLSBRAD_FOOTHILLS },
-						{ 57.8, 75.8, HILLSBRAD_FOOTHILLS },
+						{ 58.8, 74.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 57.8, 75.8, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 2372,	-- Mudsnout Gnoll
 				}),
 				i(3336, {	-- Flesh Piercer
 					["coords"] = {
-						{ 59.6, 89.4, HILLSBRAD_FOOTHILLS },
-						{ 57.2, 84.2, HILLSBRAD_FOOTHILLS },
+						{ 59.6, 89.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 57.2, 84.2, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["crs"] = {
@@ -3835,13 +3835,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 				i(4724, {	-- Humbert's Helm
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 63.2, 82.0, HILLSBRAD_FOOTHILLS },
-						{ 64.2, 87.0, HILLSBRAD_FOOTHILLS },
-						{ 60.6, 84.2, HILLSBRAD_FOOTHILLS },
-						{ 62.8, 85.0, HILLSBRAD_FOOTHILLS },
+						{ 63.2, 82.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 64.2, 87.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 60.6, 84.2, MAP.HILLSBRAD_FOOTHILLS },
+						{ 62.8, 85.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 71.2, 74.2, HILLSBRAD_FOOTHILLS },
-						{ 72.0, 81.0, HILLSBRAD_FOOTHILLS },
+						{ 71.2, 74.2, MAP.HILLSBRAD_FOOTHILLS },
+						{ 72.0, 81.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["crs"] = {
@@ -3857,13 +3857,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 				i(4723, {	-- Humbert's Pants
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 63.2, 82.0, HILLSBRAD_FOOTHILLS },
-						{ 64.2, 87.0, HILLSBRAD_FOOTHILLS },
-						{ 60.6, 84.2, HILLSBRAD_FOOTHILLS },
-						{ 62.8, 85.0, HILLSBRAD_FOOTHILLS },
+						{ 63.2, 82.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 64.2, 87.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 60.6, 84.2, MAP.HILLSBRAD_FOOTHILLS },
+						{ 62.8, 85.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 70.6, 75.6, HILLSBRAD_FOOTHILLS },
-						{ 71.4, 81.4, HILLSBRAD_FOOTHILLS },
+						{ 70.6, 75.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 71.4, 81.4, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["crs"] = {
@@ -3878,7 +3878,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(206387, {	-- Kajaric Icon
-					["coord"] = { 65.6, 60.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 65.6, 60.4, MAP.HILLSBRAD_FOOTHILLS },
 					["classes"] = { SHAMAN },
 					["cr"] = 2373,	-- Mudsnout Shaman
 					["groups"] = {
@@ -3892,14 +3892,14 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
 					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
 					["coords"] = {
-						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
-						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
-						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
-						{ 54.6, 26.6, HILLSBRAD_FOOTHILLS },
-						{ 55.2, 23.6, HILLSBRAD_FOOTHILLS },
-						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
-						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
-						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
+						{ 58.0, 23.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 49.6, 10.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 54.6, 26.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 55.2, 23.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 55.6, 17.4, MAP.HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 52.6, 12.0, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3916,12 +3916,12 @@ Click Leave vehicle and repeat steps 3-8"]],
 					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 37.4, 64.2, HILLSBRAD_FOOTHILLS },
-						{ 39.6, 64.0, HILLSBRAD_FOOTHILLS },
+						{ 37.4, 64.2, MAP.HILLSBRAD_FOOTHILLS },
+						{ 39.6, 64.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 31.8, 35.2, HILLSBRAD_FOOTHILLS },
-						{ 36.6, 40.0, HILLSBRAD_FOOTHILLS },
-						{ 34.2, 48.2, HILLSBRAD_FOOTHILLS },
+						{ 31.8, 35.2, MAP.HILLSBRAD_FOOTHILLS },
+						{ 36.6, 40.0, MAP.HILLSBRAD_FOOTHILLS },
+						{ 34.2, 48.2, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["crs"] = {
@@ -3949,13 +3949,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 				i(1602, {	-- Sickle Axe
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 44.6, 22.6, HILLSBRAD_FOOTHILLS },
-						{ 45.8, 26.8, HILLSBRAD_FOOTHILLS },
-						{ 47.2, 28.6, HILLSBRAD_FOOTHILLS },
-						{ 50.2, 26.0, HILLSBRAD_FOOTHILLS },
+						{ 44.6, 22.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 45.8, 26.8, MAP.HILLSBRAD_FOOTHILLS },
+						{ 47.2, 28.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 50.2, 26.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 37.0, 49.6, HILLSBRAD_FOOTHILLS },
-						{ 38.2, 55.8, HILLSBRAD_FOOTHILLS },
+						{ 37.0, 49.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 38.2, 55.8, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 					["crs"] = {
@@ -3969,9 +3969,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				i(5245, {	-- Summoner's Wand
 					["coords"] = {
-						{ 27.4, 39.6, HILLSBRAD_FOOTHILLS },
-						{ 33.6, 40.6, HILLSBRAD_FOOTHILLS },
-						{ 32.8, 32.4, HILLSBRAD_FOOTHILLS },
+						{ 27.4, 39.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 33.6, 40.6, MAP.HILLSBRAD_FOOTHILLS },
+						{ 32.8, 32.4, MAP.HILLSBRAD_FOOTHILLS },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					["races"] = HORDE_ONLY,

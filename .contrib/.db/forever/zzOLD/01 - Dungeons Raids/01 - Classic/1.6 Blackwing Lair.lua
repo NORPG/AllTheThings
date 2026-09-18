@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			{
 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
 					["provider"] = { "i", 19003 },	-- Head of Nefarian
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7782, {	-- The Lord of Blackrock [A] (2/2)
@@ -88,12 +88,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 					["coords"] = {
 						-- #if AFTER LEGION
-						{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
-						{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
+						{ 85.6, 31.8, MAP.STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
+						{ 85.8, 32.4, MAP.STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
 						-- #elseif AFTER WRATH
-						{ 85.6, 31.8, STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
+						{ 85.6, 31.8, MAP.STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
 						-- #else
-						{ 78.0, 18.0, STORMWIND_CITY },	-- Highlord Bolvar Fordragon
+						{ 78.0, 18.0, MAP.STORMWIND_CITY },	-- Highlord Bolvar Fordragon
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				}),
 				q(7783, {	-- The Lord of Blackrock [H] (1/2)
 					["provider"] = { "i", 19002 },	-- Head of Nefarian
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7784, {	-- The Lord of Blackrock [H] (2/2)
@@ -125,11 +125,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 					["coords"] = {
 						-- #if AFTER BFA
-						{ 49.0, 72.8, ORGRIMMAR },	-- Eitrigg
+						{ 49.0, 72.8, MAP.ORGRIMMAR },	-- Eitrigg
 						-- #elseif AFTER CATA
-						{ 48.6, 71.0, ORGRIMMAR },	-- Saurfang, Vol'jin, Garrosh
+						{ 48.6, 71.0, MAP.ORGRIMMAR },	-- Saurfang, Vol'jin, Garrosh
 						-- #else
-						{ 32.0, 37.8, ORGRIMMAR },	-- Thrall <Warchief>
+						{ 32.0, 37.8, MAP.ORGRIMMAR },	-- Thrall <Warchief>
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -504,16 +504,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						q(85505, {	-- Soul of Devouring
 							["sourceQuest"] = 85486,	-- Soul of Enthralling
 							["qg"] = 232802,	-- Doan Karhan
-							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							["coord"] = { 81.2, 59.0, MAP.EASTERN_PLAGUELANDS },
 							["groups"] = {
 								objective(1, {	-- Find Felhunter Area
 									["provider"] = { "i", 231837 },	-- Shadow Carving
-									["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
+									["coord"] = { 53.8, 51.6, MAP.EASTERN_PLAGUELANDS },
 									["cr"] = 232903,	-- Shadowmage <Cult of the Damned>
 								}),
 								i(231796, {	-- Depleted Scythe of Chaos (Devouring)
 									["description"] = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
-									["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
+									["coord"] = { 53.8, 51.6, MAP.EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231799, 1 },	-- Soul of Devouring
 										{ "i", 231795, 1 },	-- Depleted Scythe of Chaos (Enthralling)
@@ -525,16 +525,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						q(85486, {	-- Soul of Enthralling
 							["sourceQuest"] = 85485,	-- Soul of the Void
 							["qg"] = 232802,	-- Doan Karhan
-							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							["coord"] = { 81.2, 59.0, MAP.EASTERN_PLAGUELANDS },
 							["groups"] = {
 								objective(1, {	-- Use Glowing Scroll of Spatial Mending on Fel Portal
 									["provider"] = { "i", 231836 },	-- Glowing Scroll of Spatial Mending
-									["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
+									["coord"] = { 32.6, 30.9, MAP.EASTERN_PLAGUELANDS },
 									["cr"] = 232900,	-- Cursed Mage
 								}),
 								i(231795, {	-- Depleted Scythe of Chaos (Enthralling)
 									["description"] = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
-									["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
+									["coord"] = { 32.6, 30.9, MAP.EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231798, 1 },	-- Soul of Enthralling
 										{ "i", 231794, 1 },	-- Depleted Scythe of Chaos (Void)
@@ -546,15 +546,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						q(85468, {	-- Soul of Mischief
 							["sourceQuest"] = 85112,	-- The Depleted Scythe
 							["qg"] = 6247,	-- Doan Karhan
-							["coord"] = { 49.2, 57.2, THE_BARRENS },
-							["maps"] = { EASTERN_PLAGUELANDS },
+							["coord"] = { 49.2, 57.2, MAP.THE_BARRENS },
+							["maps"] = { MAP.EASTERN_PLAGUELANDS },
 							["groups"] = {
 								objective(1, {	-- 0/5 Suspicious Supplies placed
 									["provider"] = { "i", 231732 },	-- Suspicious Supplies
 								}),
 								i(231793, {	-- Depleted Scythe of Chaos (Mischief)
 									["description"] = "Use Drail Soul on Xirath once you've completed his task to receive this.",
-									["coord"] = { 69.6, 32.0, EASTERN_PLAGUELANDS },
+									["coord"] = { 69.6, 32.0, MAP.EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231792, 1 },	-- Soul of Mischief
 										{ "i", 231722, 1 },	-- Depleted Scythe of Chaos
@@ -566,11 +566,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						q(85485, {	-- Soul of the Void
 							["sourceQuest"] = 85468,	-- Soul of Mischief
 							["qg"] = 232802,	-- Doan Karhan
-							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							["coord"] = { 81.2, 59.0, MAP.EASTERN_PLAGUELANDS },
 							["groups"] = {
 								i(231794, {	-- Depleted Scythe of Chaos (Void)
 									["description"] = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
-									["coord"] = { 59.0, 67.0, EASTERN_PLAGUELANDS },
+									["coord"] = { 59.0, 67.0, MAP.EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231797, 1 },	-- Soul of the Void
 										{ "i", 231793, 1 },	-- Depleted Scythe of Chaos (Mischief)
@@ -584,17 +584,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 								{ "i", 231722 },	-- Depleted Scythe of Chaos
 								{ "n",   6247 },	-- Doan Karhan
 							},
-							["coord"] = { 49.2, 57.2, THE_BARRENS },
+							["coord"] = { 49.2, 57.2, MAP.THE_BARRENS },
 						}),
 						q(85506, {	-- The Final Test
 							["sourceQuest"] = 85505,	-- Soul of Devouring
 							["qg"] = 232802,	-- Doan Karhan
-							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-							["maps"] = { ASHENVALE },
+							["coord"] = { 81.2, 59.0, MAP.EASTERN_PLAGUELANDS },
+							["maps"] = { MAP.ASHENVALE },
 							["groups"] = {
 								objective(1, {	-- Speak to Doan Karhan
 									["provider"] = { "n", 232924 },	-- Doan Karhan
-									["coord"] = { 84.8, 70.6, ASHENVALE },
+									["coord"] = { 84.8, 70.6, MAP.ASHENVALE },
 								}),
 								n(232886, {	-- Des'Altek
 									["description"] = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
@@ -610,7 +610,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					cl(WARRIOR, {
 						q(85446, {	-- Scale of the Dragon Lord
 							["qg"] = 232596,	-- Riosus
-							["coord"] = { 74.2, 70.0, WETLANDS },
+							["coord"] = { 74.2, 70.0, MAP.WETLANDS },
 							["groups"] = {
 								objective(1, {	--	Bathe the Dragonscale in Shadowflame
 									["provider"] = { "i", 232414 },	-- Dragontooth Blade
@@ -621,13 +621,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					}),
 					q(7781, {	-- The Lord of Blackrock [A] (1/2)
 						["provider"] = { "i", 19003 },	-- Head of Nefarian
-						["maps"] = { STORMWIND_CITY },
+						["maps"] = { MAP.STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(85643, {	-- The Lord of Blackrock [A] (2/2)
 						["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
 						["qg"] = 1748,	-- Highlord Bolvar Fordragon
-						["coord"] = { 78.0, 18.0, STORMWIND_CITY },
+						["coord"] = { 78.0, 18.0, MAP.STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(230840),	-- Master Dragonslayer's Medallion
@@ -637,13 +637,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					}),
 					q(7783, {	-- The Lord of Blackrock [H] (1/2)
 						["provider"] = { "i", 19002 },	-- Head of Nefarian
-						["maps"] = { ORGRIMMAR },
+						["maps"] = { MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 					}),
 					q(85644, {	-- The Lord of Blackrock [H] (2/2)
 						["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
 						["qg"] = 4949,	-- Thrall <Warchief>
-						["coord"] = { 32.0, 37.8, ORGRIMMAR },
+						["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(230840),	-- Master Dragonslayer's Medallion

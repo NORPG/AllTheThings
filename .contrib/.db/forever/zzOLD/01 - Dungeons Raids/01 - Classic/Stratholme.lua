@@ -83,14 +83,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(27422, {	-- A City Under Siege
 					["qg"] = 45482,	-- Argent Officer Irizarry
-					["coord"] = { 51.6, 21.4, EASTERN_PLAGUELANDS },
+					["coord"] = { 51.6, 21.4, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(44, 44, 15),
 				}),
 				q(5263, {	-- Above and Beyond
 					["sourceQuest"] = 5262,	-- The Truth Comes Crashing Down
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
-					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -102,7 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(28755, {	-- Annals of the Silver Hand
 					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 					["qg"] = 49856,	-- Lord Raymond George
-					["coord"] = { 76.2, 50.9, EASTERN_PLAGUELANDS },
+					["coord"] = { 76.2, 50.9, MAP.EASTERN_PLAGUELANDS },
 					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STRATHOLME },
@@ -160,7 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 1855 },	-- Tirion Fordring
 						{ "i", 14872 },	-- Tirion's Gift
 					},
-					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
+					["coord"] = { 7.6, 43.6, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",
 					-- #endif
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-					["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.6, 57.8, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 13180, 5 } },	-- Stratholme Holy Water
 					["lvl"] = 55,
@@ -189,7 +189,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5944, {	-- In Dreams
 					["sourceQuest"] = 5862,	-- Scarlet Subterfuge
 					["qg"] = 1842,	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
-					["coord"] = { 42.0, 14.8, WESTERN_PLAGUELANDS },
+					["coord"] = { 42.0, 14.8, MAP.WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
@@ -233,7 +233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5264, {	-- Lord Maxwell Tyrosus
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
-					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 				}),
@@ -250,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5781, {	-- Of Forgotten Memories
 					["sourceQuest"] = 5742,	-- Redemption
 					["qg"] = 1855,	-- Tirion Fordring
-					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
+					["coord"] = { 7.4, 43.6, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
@@ -259,7 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i",  14613 },	-- Taelan's Hammer
 								{ "o", 177240 },	-- Loose Dirt Mound
 							},
-							["coord"] = { 29.8, 85.6, EASTERN_PLAGUELANDS },
+							["coord"] = { 29.8, 85.6, MAP.EASTERN_PLAGUELANDS },
 							["cr"] = 11886,	-- Mercutio Filthgorger
 						}),
 					},
@@ -267,7 +267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5845, {	-- Of Lost Honor
 					["sourceQuest"] = 5781,	-- Of Forgotten Memories
 					["qg"] = 1855,	-- Tirion Fordring
-					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
+					["coord"] = { 7.4, 43.6, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
@@ -276,7 +276,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i",  14625 },	-- Symbol of Lost Honor
 								{ "o", 177264 },	-- Symbol of Lost Honor
 							},
-							["coord"] = { 71.3, 33.9, EASTERN_PLAGUELANDS },
+							["coord"] = { 71.3, 33.9, MAP.EASTERN_PLAGUELANDS },
 						}),
 					},
 				}),
@@ -296,14 +296,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5846, {	-- Of Love and Family (1/2)
 					["sourceQuest"] = 5845,	-- Of Lost Honor
 					["qg"] = 1855,	-- Tirion Fordring
-					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
+					["coord"] = { 7.4, 43.6, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(5848, {	-- Of Love and Family (2/2)
 					["sourceQuest"] = 5846,	-- Of Love and Family (1/2)
 					["qg"] = 11936,	-- Artist Renfray
-					["coord"] = { 65.6, 75.4, WESTERN_PLAGUELANDS },
+					["coord"] = { 65.6, 75.4, MAP.WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
@@ -318,7 +318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6163, {	-- Ramstein
 					["sourceQuest"] = 6135,	-- Duskwing, Oh How I Hate Thee...
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
-					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 26.6, 74.8, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
@@ -342,7 +342,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						5542,	-- Demon Dogs
 					},
 					["qg"] = 1855,	-- Tirion Fordring
-					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
+					["coord"] = { 7.4, 43.6, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
@@ -365,14 +365,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 11872 },	-- Myranda the Hag
 						{ "i", 14872 },	-- Tirion's Gift
 					},
-					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
+					["coord"] = { 50.8, 77.8, MAP.WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(5213, {	-- The Active Agent
 					["sourceQuest"] = 5212,	-- The Flesh Does Not Lie
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
-					["coord"] = { 81.4, 59.6, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.4, 59.6, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -392,7 +392,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5251, {	-- The Archivist
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
-					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -410,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n",  11034 },	-- Lord Maxwell Tyrosus <The Argent Dawn>
 						{ "o", 176317 },	-- The Argent Hold
 					},
-					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.6, 58.0, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -449,7 +449,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5212, {	-- The Flesh Does Not Lie
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
-					["coord"] = { 81.4, 59.6, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.4, 59.6, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -474,7 +474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5214, {	-- The Great Ezra Grimm
 					["qg"] = 11033,	-- Smokey LaRue
-					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.6, 58.0, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -495,14 +495,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5281, {	-- The Restless Souls (1/2)
 					["qg"] = 11038,	-- Caretaker Alen <The Argent Dawn>
-					["coord"] = { 79.6, 63.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 79.6, 63.8, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 				}),
 				q(5282, {	-- The Restless Souls (2/2)
 					["sourceQuest"] = 5281,	-- The Restless Souls (1/2)
 					["qg"] = 11140,	-- Egan
-					["coord"] = { 14.4, 33.6, EASTERN_PLAGUELANDS },
+					["coord"] = { 14.4, 33.6, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -819,9 +819,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				["coords"] = {
 					-- #if AFTER 4.0.3
-					{ 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+					{ 27.66, 11.64, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 					-- #else
-					{ 30.9, 16.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+					{ 30.9, 16.6, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 					-- #endif
 				},
 				["groups"] = {
@@ -1456,9 +1456,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				["coords"] = {
 					-- #if AFTER 4.0.3
-					{ 43.76, 17.52, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
+					{ 43.76, 17.52, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
 					-- #else
-					{ 48.18, 21.90, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
+					{ 48.18, 21.90, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
 					-- #endif
 				},
 				-- #if BEFORE 4.0.3

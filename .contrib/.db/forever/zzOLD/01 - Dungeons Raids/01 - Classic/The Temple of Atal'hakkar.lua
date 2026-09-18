@@ -104,9 +104,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["mapID"] = TEMPLE_OF_ATALHAKKAR,
 		["coords"] = {
 			-- #if AFTER CATA
-			{ 76.0, 45.2, SWAMP_OF_SORROWS },
+			{ 76.0, 45.2, MAP.SWAMP_OF_SORROWS },
 			-- #else
-			{ 69.2, 54.8, SWAMP_OF_SORROWS },
+			{ 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 			-- #endif
 		},
 		-- #if SEASON_OF_DISCOVERY
@@ -123,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9053, {	-- A Better Ingredient
 					["sourceQuest"] = 9051,	-- Toxic Test
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 50,
@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(10593, {	-- An Ancient Evil
 					["sourceQuest"] = 10592,	-- Wisdom of the Banshee Queen
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
-					["coord"] = { 57.8, 92.0, UNDERCITY },
+					["coord"] = { 57.8, 92.0, MAP.UNDERCITY },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
@@ -171,7 +171,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8257, {	-- Blood of Morphaz
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
 					["qg"] = 8405,	-- Ogtinc
-					["coord"] = { 42.2, 42.6, AZSHARA },
+					["coord"] = { 42.2, 42.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
@@ -194,7 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8413, {	-- Da Voodoo
 					["sourceQuest"] = 8412,	-- Spirit Totem
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
-					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8253, {	-- Destroy Morphaz
 					["sourceQuest"] = 8252,	-- The Siren's Coral
 					["qg"] = 8379,	-- Archmage Xylem
-					["coord"] = { 29.6, 40.6, AZSHARA },
+					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 50,
@@ -262,7 +262,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8418, {	-- Forging the Mightstone
 					["sourceQuest"] = 8416,	-- Inert Scourgestones
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
-					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
+					["coord"] = { 42.8, 84.0, MAP.WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -294,9 +294,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4143, {	-- Haze of Evil
 					["sourceQuest"] = 4142,	-- A Visit to Gregan
 					["qg"] = 7775,	-- Gregan Brewspewer
-					["coord"] = { 45.1, 25.6, FERALAS },
+					["coord"] = { 45.1, 25.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNGORO_CRATER },
+					["maps"] = { MAP.UNGORO_CRATER },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
@@ -309,9 +309,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
 					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
 					["qg"] = 5353,	-- Itharius
-					["coord"] = { 13.7, 71.7, SWAMP_OF_SORROWS },
+					["coord"] = { 13.7, 71.7, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
+					["maps"] = { MAP.WINTERSPRING },
 					["lvl"] = 48,
 					-- #if BEFORE 4.0.3
 					["OnUpdate"] = ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate,
@@ -324,14 +324,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i",  10466 },	-- Atal'ai Stone Circle
 						{ "o", 148836 },	-- Altar of Hakkar
 					},
-					["coord"] = { 52.6, 45.8, TANARIS },
+					["coord"] = { 52.6, 45.8, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 46,
 				}),
 				q(1475, {	-- Into The Temple of Atal'Hakkar
 					["sourceQuest"] = 1469,	-- Rhapsody's Tale
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
-					["coord"] = { 64.2, 20.8, STORMWIND_CITY },
+					["coord"] = { 64.2, 20.8, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -350,7 +350,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1446, {	-- Jammal'an the Prophet
 					["qg"] = 5598,	-- Atal'ai Exile
-					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
+					["coord"] = { 33.6, 75.2, MAP.THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 38,
 					["groups"] = {
@@ -378,9 +378,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8236, {	-- The Azure Key
 					["sourceQuest"] = 8235,	-- Encoded Fragments
 					["qg"] = 8379,	-- Archmage Xylem
-					["coord"] = { 29.6, 40.6, AZSHARA },
+					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["classes"] = { ROGUE },
 					["lvl"] = 50,
 					["groups"] = {
@@ -432,7 +432,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 3373,	-- The Essence of Eranikus
 					["qg"] = 5353,	-- Itharius
 					["provider"] = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
-					["coord"] = { 13.7, 71.7, SWAMP_OF_SORROWS },
+					["coord"] = { 13.7, 71.7, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10455, 1 } },	-- Chained Essence of Eranikus
 					["lvl"] = 48,
@@ -443,7 +443,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3528, {	-- The God Hakkar
 					["sourceQuest"] = 4787,	-- The Ancient Egg
 					["qg"] = 8579,	-- Yeh'kinya
-					["coord"] = { 66.8, 22.4, TANARIS },
+					["coord"] = { 66.8, 22.4, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -469,7 +469,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8232, {	-- The Green Drake
 					["sourceQuest"] = 8231,	-- Wavethrashing
 					["qg"] = 8405,	-- Ogtinc
-					["coord"] = { 42.2, 42.6, AZSHARA },
+					["coord"] = { 42.2, 42.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
@@ -492,7 +492,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1445, {	-- The Temple of Atal'Hakkar
 					["sourceQuest"] = 1424,	-- Pool of Tears
 					["qg"] = 1443,	-- Fel'zerul
-					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
+					["coord"] = { 64.2, 20.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -508,7 +508,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8422, {	-- Trolls of a Feather
 					["sourceQuest"] = 8421,	-- The Wrong Stuff
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
-					["coord"] = { 41.6, 45.0, FELWOOD },
+					["coord"] = { 41.6, 45.0, MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 50,
@@ -536,7 +536,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8425, {	-- Voodoo Feathers
 					["sourceQuest"] = 8424,	-- War on the Shadowsworn
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
@@ -567,7 +567,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 8496 },	-- Liv Rizzlefix <Workshop Assistant>
 						{ "i", 11319 },	-- Unloaded Zapper
 					},
-					["coord"] = { 62.5, 38.7, THE_BARRENS },
+					["coord"] = { 62.5, 38.7, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
@@ -627,7 +627,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "n",   7771 },	-- Marvon Rivetseeker
 							{ "o", 148838 },	-- Idol of Hakkar
 						},
-						["coord"] = { 52.6, 45.8, TANARIS },
+						["coord"] = { 52.6, 45.8, MAP.TANARIS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 46,
 						["groups"] = {
@@ -811,7 +811,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82112, {	-- A Better Ingredient
 							-- ["sourceQuest"] = 9051,	-- Toxic Test
 							["qg"] = 9619,	-- Torwa Pathfinder
-							["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+							["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 							["classes"] = { DRUID },
 							["lvl"] = 50,
 							["groups"] = {
@@ -835,7 +835,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 221346 },	-- Scapula of the Fallen Avatar (A)
 								{ "n",  14875 },	-- Molthor <Hand of Rastakhan>
 							},
-							["coord"] = { 15.0, 15.2, STRANGLETHORN_VALE },
+							["coord"] = { 15.0, 15.2, MAP.STRANGLETHORN_VALE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 50,
 							["groups"] = {
@@ -851,7 +851,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 221363 },	-- Scapula of the Fallen Avatar (H)
 								{ "n",  14875 },	-- Molthor <Hand of Rastakhan>
 							},
-							["coord"] = { 15.0, 15.2, STRANGLETHORN_VALE },
+							["coord"] = { 15.0, 15.2, MAP.STRANGLETHORN_VALE },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 50,
 							["groups"] = {
@@ -865,19 +865,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82021, {	-- A Fortuitous Turn of Events
 							["sourceQuest"] = 82020,	-- Return to Moonglade
 							["qg"] = 222188,	-- Shadowy Figure
-							["coord"] = { 52.0, 40.6, MOONGLADE },
+							["coord"] = { 52.0, 40.6, MAP.MOONGLADE },
 							["lvl"] = 50,
 						}),
 						q(82017, {	-- An Amalagamation of Nightmares
 							["sourceQuest"] = 82015,	-- Emotional Damage HQT
 							["qg"] = 221477,	-- Field Captain Hannalah
-							["coord"] = { 89.6, 40.6, ASHENVALE },
-							["maps"] = { MOONGLADE },
+							["coord"] = { 89.6, 40.6, MAP.ASHENVALE },
+							["maps"] = { MAP.MOONGLADE },
 							["lvl"] = 40,
 							["groups"] = {
 								objective(1, {	-- Seek out Loganaar in Moonglade
 									["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
-									["coord"] = { 52.4, 40.4, MOONGLADE },
+									["coord"] = { 52.4, 40.4, MAP.MOONGLADE },
 								}),
 							},
 						}),
@@ -895,13 +895,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}), {
 							["qg"] = 222198,	-- Nightmare Amalgamation
 							["questID"] = 82014,	-- Aura of Paralyzing Dread HQT
-							["coord"] = { 88.6, 68.2, ASHENVALE },
+							["coord"] = { 88.6, 68.2, MAP.ASHENVALE },
 							["lvl"] = 40,
 						}),
 						q(82111, {	-- Blood of Morphaz
 							-- ["sourceQuest"] = 8256,	-- The Ichor of Undeath
 							["qg"] = 8405,	-- Ogtinc
-							["coord"] = { 42.2, 42.6, AZSHARA },
+							["coord"] = { 42.2, 42.6, MAP.AZSHARA },
 							["classes"] = { PRIEST },
 							["lvl"] = 50,
 							["groups"] = {
@@ -923,7 +923,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82113, {	-- Da Voodoo
 							-- ["sourceQuest"] = 8412,	-- Spirit Totem
 							["qg"] = 6176,	-- Bath'rah the Windwatcher
-							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 							-- #if BEFORE TBC
 							["races"] = HORDE_ONLY,
 							-- #endif
@@ -953,7 +953,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82114, {	-- Destroy Morphaz
 							-- ["sourceQuest"] = 8252,	-- The Siren's Coral
 							["qg"] = 8379,	-- Archmage Xylem
-							["coord"] = { 29.6, 40.6, AZSHARA },
+							["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 							["classes"] = { MAGE },
 							["lvl"] = 50,
 							["groups"] = {
@@ -983,13 +983,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 221477,	-- Field Captain Hannalah
 							["questID"] = 82015,	-- Emotional Damage HQT
 							["sourceQuest"] = 82014,	-- Aura of Paralyzing Dread HQT
-							["coord"] = { 89.6, 40.6, ASHENVALE },
+							["coord"] = { 89.6, 40.6, MAP.ASHENVALE },
 							["lvl"] = 40,
 						}),
 						q(82106, {	-- Forging the Mightstone
 							-- ["sourceQuest"] = 8416,	-- Inert Scourgestones
 							["qg"] = 10838,	-- Commander Ashlam Valorfist
-							["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
+							["coord"] = { 42.8, 84.0, MAP.WESTERN_PLAGUELANDS },
 							["classes"] = { PALADIN },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 50,
@@ -1020,14 +1020,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82019, {	-- Going Under
 							["sourceQuest"] = 82018,	-- Itharius
 							["qg"] = 5353,	-- Itharius
-							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
+							["coord"] = { 13.6, 71.6, MAP.SWAMP_OF_SORROWS },
 							["lvl"] = 40,
 						}),
 						q(82099, {	-- Haze of Evil
 							["sourceQuest"] = 4142,	-- A Visit to Gregan
 							["qg"] = 7775,	-- Gregan Brewspewer
-							["coord"] = { 45.1, 25.6, FERALAS },
-							["maps"] = { UNGORO_CRATER },
+							["coord"] = { 45.1, 25.6, MAP.FERALAS },
+							["maps"] = { MAP.UNGORO_CRATER },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 50,
 							["groups"] = {
@@ -1042,12 +1042,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i",  10466 },	-- Atal'ai Stone Circle
 								{ "o", 148836 },	-- Altar of Hakkar
 							},
-							["coord"] = { 52.6, 45.8, TANARIS },
+							["coord"] = { 52.6, 45.8, MAP.TANARIS },
 							["lvl"] = 50,
 						}),
 						q(82098, {	-- Into The Temple of Atal'Hakkar
 							["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
-							["coord"] = { 64.2, 20.8, STORMWIND_CITY },
+							["coord"] = { 64.2, 20.8, MAP.STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 50,
 							["groups"] = {
@@ -1066,19 +1066,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82018, {	-- Itharius
 							["sourceQuest"] = 82017,	-- An Amalagamation of Nightmares
 							["qg"] = 12042,	-- Loganaar <Druid Trainer>
-							["coord"] = { 52.4, 40.4, MOONGLADE },
-							["maps"] = { SWAMP_OF_SORROWS },
+							["coord"] = { 52.4, 40.4, MAP.MOONGLADE },
+							["maps"] = { MAP.SWAMP_OF_SORROWS },
 							["lvl"] = 40,
 							["groups"] = {
 								objective(1, {	-- Seek out Itharius in the Swamp of Sorrows
 									["provider"] = { "n", 5353 },	-- Itharius
-									["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
+									["coord"] = { 13.6, 71.6, MAP.SWAMP_OF_SORROWS },
 								}),
 							},
 						}),
 						q(82104, {	-- Jammal'an the Prophet
 							["qg"] = 5598,	-- Atal'ai Exile
-							["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
+							["coord"] = { 33.6, 75.2, MAP.THE_HINTERLANDS },
 							["lvl"] = 50,
 							["groups"] = {
 								objective(1, {	-- 0/1 Head of Jammal'an
@@ -1091,13 +1091,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82020, {	-- Return to Moonglade
 							["sourceQuest"] = 82019,	-- Going Under
 							["qg"] = 5353,	-- Itharius
-							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
-							["maps"] = { MOONGLADE },
+							["coord"] = { 13.6, 71.6, MAP.SWAMP_OF_SORROWS },
+							["maps"] = { MAP.MOONGLADE },
 							["lvl"] = 50,
 							["groups"] = {
 								objective(1, {	-- Seek out Loganaar in Moonglade
 									["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
-									["coord"] = { 52.4, 40.4, MOONGLADE },
+									["coord"] = { 52.4, 40.4, MAP.MOONGLADE },
 								}),
 							},
 						}),
@@ -1106,7 +1106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "n",   7771 },	-- Marvon Rivetseeker
 								{ "o", 148838 },	-- Idol of Hakkar
 							},
-							["coord"] = { 52.6, 45.8, TANARIS },
+							["coord"] = { 52.6, 45.8, MAP.TANARIS },
 							["lvl"] = 50,
 							["groups"] = {
 								i(10773, {	-- Hakkari Urn
@@ -1119,8 +1119,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82110, {	-- The Azure Key
 							-- ["sourceQuest"] = 8235,	-- Encoded Fragments
 							["qg"] = 8379,	-- Archmage Xylem
-							["coord"] = { 29.6, 40.6, AZSHARA },
-							["maps"] = { HILLSBRAD_FOOTHILLS },
+							["coord"] = { 29.6, 40.6, MAP.AZSHARA },
+							["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 							["classes"] = { ROGUE },
 							["lvl"] = 50,
 							["groups"] = {
@@ -1142,13 +1142,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82022, {	-- The Bad News...
 							["sourceQuest"] = 82021,	-- A Fortuitous Turn of Events
 							["qg"] = 222188,	-- Shadowy Figure
-							["coord"] = { 52.0, 40.6, MOONGLADE },
-							["maps"] = { STRANGLETHORN_VALE },
+							["coord"] = { 52.0, 40.6, MAP.MOONGLADE },
+							["maps"] = { MAP.STRANGLETHORN_VALE },
 							["lvl"] = 50,
 							["groups"] = {
 								q(82023, {	-- The Lost Vambraces
 									["qg"] = 222444,	-- Injured Gnome <Knight of Some Renown>
-									["coord"] = { 26.8, 77.2, STRANGLETHORN_VALE },
+									["coord"] = { 26.8, 77.2, MAP.STRANGLETHORN_VALE },
 									["repeatable"] = true,
 									["groups"] = {
 										objective(1, {	-- 0/1 Decharged Void-Powered Vambraces
@@ -1157,7 +1157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 												{ "i", 220964 },	-- Decharged Void-Powered Vambraces
 												{ "o", 441848 },	-- Small Burrow
 											},
-											["coord"] = { 40.8, 85.6, STRANGLETHORN_VALE },
+											["coord"] = { 40.8, 85.6, MAP.STRANGLETHORN_VALE },
 											["cr"] = 222451,	-- Itty Bitty Murloc
 										}),
 									},
@@ -1168,7 +1168,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82095, {	-- The God Hakkar
 							["sourceQuest"] = 4787,	-- The Ancient Egg
 							["qg"] = 8579,	-- Yeh'kinya
-							["coord"] = { 66.8, 22.4, TANARIS },
+							["coord"] = { 66.8, 22.4, MAP.TANARIS },
 							["lvl"] = 50,
 							["groups"] = {
 								objective(1, {	-- 0/1 Filled Egg of Hakkar
@@ -1187,7 +1187,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82108, {	-- The Green Drake
 							-- ["sourceQuest"] = 8231,	-- Wavethrashing
 							["qg"] = 8405,	-- Ogtinc
-							["coord"] = { 42.2, 42.6, AZSHARA },
+							["coord"] = { 42.2, 42.6, MAP.AZSHARA },
 							["classes"] = { HUNTER },
 							["lvl"] = 50,
 							["groups"] = {
@@ -1219,7 +1219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(82100, {	-- The Temple of Atal'Hakkar
 							["qg"] = 1443,	-- Fel'zerul
-							["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
+							["coord"] = { 64.2, 20.8, MAP.SWAMP_OF_SORROWS },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 50,
 							["groups"] = {
@@ -1234,7 +1234,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82115, {	-- Trolls of a Feather
 							-- ["sourceQuest"] = 8421,	-- The Wrong Stuff
 							["qg"] = 14470,	-- Impsy <Niby's Minion>
-							["coord"] = { 41.6, 45.0, FELWOOD },
+							["coord"] = { 41.6, 45.0, MAP.FELWOOD },
 							["classes"] = { WARLOCK },
 							["lvl"] = 50,
 							["groups"] = {
@@ -1261,7 +1261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(82107, {	-- Voodoo Feathers
 							-- ["sourceQuest"] = 8424,	-- War on the Shadowsworn
 							["qg"] = 7572,	-- Fallen Hero of the Horde
-							["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+							["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 							["classes"] = { WARRIOR },
 							["lvl"] = 50,
 							["groups"] = {
@@ -1288,13 +1288,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(81986, {	-- Waking the Nightmare
 							["sourceQuest"] = 82022,	-- The Bad News...
 							["qg"] = 222188,	-- Shadowy Figure
-							["coord"] = { 52.0, 40.6, MOONGLADE },
-							["maps"] = { ASHENVALE },
+							["coord"] = { 52.0, 40.6, MAP.MOONGLADE },
+							["maps"] = { MAP.ASHENVALE },
 							["lvl"] = 50,
 							["groups"] = {
 								objective(1, {	-- 0/1 Nightmare Amalgamation slain
 									["provider"] = { "n", 222198 },	-- Nightmare Amalgamation
-									["coord"] = { 88.6, 68.2, ASHENVALE },
+									["coord"] = { 88.6, 68.2, MAP.ASHENVALE },
 								}),
 								objective(2, {	-- 0/1 Mantle of Nightmares
 									["provider"] = { "i", 220570 },	-- Mantle of Nightmares

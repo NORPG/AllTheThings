@@ -111,19 +111,19 @@ end
 local EARTHEN_RING_ELDER_ID = 26221;	-- Earthen Ring Elder
 local EARTHEN_RING_ELDER_COORDS = {
 	-- #if BEFORE DF
-	{ 49.4, 72.0, STORMWIND_CITY },
+	{ 49.4, 72.0, MAP.STORMWIND_CITY },
 	-- #else
-	{ 47.8, 72.1, STORMWIND_CITY },	-- Trading post moved vendor
+	{ 47.8, 72.1, MAP.STORMWIND_CITY },	-- Trading post moved vendor
 	-- #endif
-	{ 47.2, 37.6, ORGRIMMAR },
-	{ 64.8, 27.4, IRONFORGE },
-	{ 21.4, 24.4, THUNDER_BLUFF },
+	{ 47.2, 37.6, MAP.ORGRIMMAR },
+	{ 64.8, 27.4, MAP.IRONFORGE },
+	{ 21.4, 24.4, MAP.THUNDER_BLUFF },
 	-- #if AFTER CATA
-	{ 62.2, 49.2, DARNASSUS },
+	{ 62.2, 49.2, MAP.DARNASSUS },
 	-- #else
-	{ 56.2, 92.2, TELDRASSIL },
+	{ 56.2, 92.2, MAP.TELDRASSIL },
 	-- #endif
-	{ 67.0, 13.0, UNDERCITY },
+	{ 67.0, 13.0, MAP.UNDERCITY },
 	{ 43.2, 25.8, THE_EXODAR },
 	{ 68.8, 42.6, SILVERMOON_CITY },
 	{ 60.4, 30.8, SHATTRATH_CITY },
@@ -131,49 +131,49 @@ local EARTHEN_RING_ELDER_COORDS = {
 
 local FESTIVAL_FLAMEKEEPER_ID = 16788;	-- Festival Flamekeeper
 local FESTIVAL_FLAMEKEEPER_COORDS = {
-	{ 38.5, 61.1, STORMWIND_CITY },
-	{ 63.6, 24.7, IRONFORGE },
-	{ 56.5, 92.0, TELDRASSIL },
-	{ 21.6, 26.2, THUNDER_BLUFF },
-	{ 62.1, 66.8, TIRISFAL_GLADES },
-	{ 46.2, 37.7, ORGRIMMAR },
+	{ 38.5, 61.1, MAP.STORMWIND_CITY },
+	{ 63.6, 24.7, MAP.IRONFORGE },
+	{ 56.5, 92.0, MAP.TELDRASSIL },
+	{ 21.6, 26.2, MAP.THUNDER_BLUFF },
+	{ 62.1, 66.8, MAP.TIRISFAL_GLADES },
+	{ 46.2, 37.7, MAP.ORGRIMMAR },
 };
 
 local FESTIVAL_MASTER_FIRE_EATER_ID = 25975;	-- Master Fire Eater
 local FESTIVAL_MASTER_FIRE_EATER_COORDS = {
 	-- #if AFTER CATA
-	{ 63.0, 47.6, DARNASSUS },
-	{ 49.8, 72.0, STORMWIND_CITY },
+	{ 63.0, 47.6, MAP.DARNASSUS },
+	{ 49.8, 72.0, MAP.STORMWIND_CITY },
 	-- #elseif AFTER WRATH
-	{ 50.1, 72.6, STORMWIND_CITY },
+	{ 50.1, 72.6, MAP.STORMWIND_CITY },
 	-- #else
-	{ 50.1, 72.6, STORMWIND_CITY },
+	{ 50.1, 72.6, MAP.STORMWIND_CITY },
 	-- #endif
-	{ 65.2, 25.4, IRONFORGE },
+	{ 65.2, 25.4, MAP.IRONFORGE },
 	-- #if BEFORE CATA
-	{ 56.6, 92.0, TELDRASSIL },
+	{ 56.6, 92.0, MAP.TELDRASSIL },
 	-- #endif
 	{ 41.2, 24.4, THE_EXODAR },
 };
 
 local FESTIVAL_MASTER_FLAME_EATER_ID = 26113;	-- Master Flame Eater
 local FESTIVAL_MASTER_FLAME_EATER_COORDS = {
-	{ 46.6, 37.2, ORGRIMMAR },
-	{ 21.2, 26.2, THUNDER_BLUFF },
-	{ 68.6, 8.00, UNDERCITY },
+	{ 46.6, 37.2, MAP.ORGRIMMAR },
+	{ 21.2, 26.2, MAP.THUNDER_BLUFF },
+	{ 68.6, 8.00, MAP.UNDERCITY },
 	{ 69.6, 42.4, SILVERMOON_CITY },
 };
 
 local FESTIVAL_LOREMASTER_ID = 16817;	-- Festival Loremaster
 local FESTIVAL_LOREMASTER_COORDS = {
 	-- #if AFTER CATA
-	{ 49.6, 72.0, STORMWIND_CITY },
-	{ 64.0, 25.8, IRONFORGE },
-	{ 62.2, 48.6, DARNASSUS },
+	{ 49.6, 72.0, MAP.STORMWIND_CITY },
+	{ 64.0, 25.8, MAP.IRONFORGE },
+	{ 62.2, 48.6, MAP.DARNASSUS },
 	-- #else
-	{ 38.5, 61.1, STORMWIND_CITY },
-	{ 63.6, 24.7, IRONFORGE },
-	{ 56.6, 92.3, TELDRASSIL },
+	{ 38.5, 61.1, MAP.STORMWIND_CITY },
+	{ 63.6, 24.7, MAP.IRONFORGE },
+	{ 56.6, 92.3, MAP.TELDRASSIL },
 	-- #endif
 	-- #if AFTER TBC
 	{ 61.4, 31.9, SHATTRATH_CITY },
@@ -184,13 +184,13 @@ local FESTIVAL_LOREMASTER_COORDS = {
 local FESTIVAL_TALESPINNER_ID = 16818;	-- Festival Talespinner
 local FESTIVAL_TALESPINNER_COORDS = {
 	-- #if AFTER CATA
-	{ 47.8, 38.4, ORGRIMMAR },
-	{ 21.4, 27.8, THUNDER_BLUFF },
+	{ 47.8, 38.4, MAP.ORGRIMMAR },
+	{ 21.4, 27.8, MAP.THUNDER_BLUFF },
 	-- #else
-	{ 46.8, 38.0, ORGRIMMAR },
-	{ 21.3, 26.4, THUNDER_BLUFF },
+	{ 46.8, 38.0, MAP.ORGRIMMAR },
+	{ 21.3, 26.4, MAP.THUNDER_BLUFF },
 	-- #endif
-	{ 67.6, 8.3, UNDERCITY },
+	{ 67.6, 8.3, MAP.UNDERCITY },
 	-- #if AFTER TBC
 	{ 62.2, 32.0, SHATTRATH_CITY },
 	{ 69.8, 43.0, SILVERMOON_CITY },
@@ -1182,14 +1182,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["sourceQuest"] = 11886,	-- Unusual Activity
 			["qg"] = 25324,	-- Earthen Ring Guide
-			["coord"] = { 10.2, 15.3, ASHENVALE },
+			["coord"] = { 10.2, 15.3, MAP.ASHENVALE },
 			["timeline"] = { ADDED_2_4_0 },
 			["provider"] = { "i", 35828 },	-- Totemic Beacon
 			["lvl"] = lvlsquish(16, 1, 1),
 			["groups"] = {
 				objective(1, {	-- Listen to the plan of the Twilight Cultists
 					["provider"] = { "i", 35237 },	-- Orb of the Crawler
-					["coord"] = { 9.1, 12.5, ASHENVALE },
+					["coord"] = { 9.1, 12.5, MAP.ASHENVALE },
 				}),
 				i(BURNING_BLOSSOM),
 			},
@@ -1198,10 +1198,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
 			["maps"] = {
-				HILLSBRAD_FOOTHILLS,
-				SILVERPINE_FOREST,
-				WESTFALL,
-				WETLANDS
+				MAP.HILLSBRAD_FOOTHILLS,
+				MAP.SILVERPINE_FOREST,
+				MAP.WESTFALL,
+				MAP.WETLANDS
 			},
 			["icon"] = 134467,
 			-- #endif
@@ -1214,16 +1214,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["groups"] = {
 				objective(1, {	-- Flame of Hillsbrad
-					["coord"] = { 54.2, 34.9, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 54.2, 34.9, MAP.HILLSBRAD_FOOTHILLS },
 				}),
 				objective(2, {	-- Flame of Silverpine
-					["coord"] = { 54.3, 69.6, SILVERPINE_FOREST },
+					["coord"] = { 54.3, 69.6, MAP.SILVERPINE_FOREST },
 				}),
 				objective(3, {	-- Flame of Westfall
-					["coord"] = { 33.2, 80.4, WESTFALL },
+					["coord"] = { 33.2, 80.4, MAP.WESTFALL },
 				}),
 				objective(4, {	-- Flame of the Wetlands
-					["coord"] = { 51.1, 17.2, WETLANDS },
+					["coord"] = { 51.1, 17.2, MAP.WETLANDS },
 				}),
 				i(23211),	-- Toasted Smorc
 				i(23326),	-- Midsummer Sausage
@@ -1236,10 +1236,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
 			["maps"] = {
-				ASHENVALE,
-				THE_BARRENS,
-				DARKSHORE,
-				STONETALON_MOUNTAINS,
+				MAP.ASHENVALE,
+				MAP.THE_BARRENS,
+				MAP.DARKSHORE,
+				MAP.STONETALON_MOUNTAINS,
 			},
 			["icon"] = 134467,
 			-- #endif
@@ -1252,16 +1252,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["groups"] = {
 				objective(1, {	-- Flame of Ashenvale
-					["coord"] = { 64.7, 71.7, ASHENVALE },
+					["coord"] = { 64.7, 71.7, MAP.ASHENVALE },
 				}),
 				objective(2, {	-- Flame of the Barrens
-					["coord"] = { 58.9, 37.4, THE_BARRENS },
+					["coord"] = { 58.9, 37.4, MAP.THE_BARRENS },
 				}),
 				objective(3, {	-- Flame of Darkshore
-					["coord"] = { 41.4, 90.9, DARKSHORE },
+					["coord"] = { 41.4, 90.9, MAP.DARKSHORE },
 				}),
 				objective(4, {	-- Flame of Stonetalon
-					["coord"] = { 59.6, 70.0, STONETALON_MOUNTAINS },
+					["coord"] = { 59.6, 70.0, MAP.STONETALON_MOUNTAINS },
 				}),
 				i(23211),	-- Toasted Smorc
 				i(23326),	-- Midsummer Sausage
@@ -1273,7 +1273,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(92503, {	-- Ignite the Skies: Northern Eastern Kingdoms
 			["sourceQuest"] = 92504,	-- Ignite the Skies: Southern Eastern Kingdoms
 			["qg"] = 252784,	-- Fiery Image of Aedh Firebeard
-			["coord"] = { 53.9, 69.3, LOCH_MODAN },
+			["coord"] = { 53.9, 69.3, MAP.LOCH_MODAN },
 			["timeline"] = { ADDED_12_0_7 },
 			["isYearly"] = true,
 		}),
@@ -1288,7 +1288,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				265658,	-- Fiery Image of Elder Sunhorn
 			},
 			["coords"] = {
-				{ 47.6, 37.9, ORGRIMMAR },
+				{ 47.6, 37.9, MAP.ORGRIMMAR },
 				{ 62.6, 11.6, NORTHERN_BARRENS },
 			},
 			["timeline"] = { ADDED_12_0_7 },
@@ -1296,7 +1296,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		}),
 		h(q(92435, {	-- Ignite the Skies: Orgrimmar
 			["qg"] = 250811,	-- Elder Sunhorn
-			["coord"] = { 47.6, 37.9, ORGRIMMAR },
+			["coord"] = { 47.6, 37.9, MAP.ORGRIMMAR },
 			["timeline"] = { ADDED_12_0_7 },
 			["isYearly"] = true,
 		})),
@@ -1317,8 +1317,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				266045,	-- Fiery Image of Aedh Firebeard
 			},
 			["coords"] = {
-				{ 48.0, 72.0, STORMWIND_CITY },
-				{ 74.8, 1.4, NORTHSHIRE_VALLEY },
+				{ 48.0, 72.0, MAP.STORMWIND_CITY },
+				{ 74.8, 1.4, MAP.NORTHSHIRE_VALLEY },
 			},
 			["timeline"] = { ADDED_12_0_7 },
 			["isYearly"] = true,
@@ -1332,7 +1332,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		}),
 		a(q(92711, {	-- Ignite the Skies: Stormwind
 			["qg"] = 252528,	-- Aedh Firebeard
-			["coord"] = { 48.0, 72.0, STORMWIND_CITY },
+			["coord"] = { 48.0, 72.0, MAP.STORMWIND_CITY },
 			["timeline"] = { ADDED_12_0_7 },
 			["isYearly"] = true,
 		})),
@@ -1360,7 +1360,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["qg"] = 25324,	-- Earthen Ring Guide
-			["coord"] = { 16.0, 20.8, ASHENVALE },
+			["coord"] = { 16.0, 20.8, MAP.ASHENVALE },
 			["timeline"] = { ADDED_4_0_1 },
 			["provider"] = { "i", 35828 },	-- Totemic Beacon
 			["races"] = ALLIANCE_ONLY,
@@ -1370,7 +1370,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["qg"] = 25324,	-- Earthen Ring Guide
-			["coord"] = { 16.0, 20.8, ASHENVALE },
+			["coord"] = { 16.0, 20.8, MAP.ASHENVALE },
 			["timeline"] = { ADDED_2_4_0 },
 			["provider"] = { "i", 35828 },	-- Totemic Beacon
 			-- #if AFTER CATA
@@ -1382,7 +1382,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		h(q(92634, {	-- Midsummer's Journey to Loch Modan
 			["sourceQuest"] = 92420,	-- Ignite the Skies: Southern Kalimdor
 			["qg"] = 251986,	-- Fiery Image of Elder Sunhorn
-			["coord"] = { 31.7, 63.6, TANARIS },
+			["coord"] = { 31.7, 63.6, MAP.TANARIS },
 			["timeline"] = { ADDED_12_0_7 },
 			["isYearly"] = true,
 			["isBreadcrumb"] = true,
@@ -1390,7 +1390,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		a(q(92635, {	-- Midsummer's Journey to the Barrens
 			["sourceQuest"] = 92503,	-- Ignite the Skies: Northern Eastern Kingdoms
 			["qg"] = 252784,	-- Fiery Image of Aedh Firebeard
-			["coord"] = { 19.2, 48.1, THE_HINTERLANDS },
+			["coord"] = { 19.2, 48.1, MAP.THE_HINTERLANDS },
 			["timeline"] = { ADDED_12_0_7 },
 			["isYearly"] = true,
 			["isBreadcrumb"] = true,
@@ -1473,8 +1473,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		},
 		q(9332, {	-- Stealing Darnassus's Flame
 			["provider"] = { "i", 23184 },	-- Flame of Darnassus (Provided)
-			["coord"] = { 56.6, 92.3, TELDRASSIL },
-			["maps"] = { DARNASSUS },
+			["coord"] = { 56.6, 92.3, MAP.TELDRASSIL },
+			["maps"] = { MAP.DARNASSUS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
@@ -1484,9 +1484,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["provider"] = { "i", 23183 },	-- Flame of Ironforge (Provided)
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 65.2, 24.7, IRONFORGE },
+				{ 65.2, 24.7, MAP.IRONFORGE },
 				-- #else
-				{ 64.6, 24.8, IRONFORGE },
+				{ 64.6, 24.8, MAP.IRONFORGE },
 				-- #endif
 			},
 			["races"] = HORDE_ONLY,
@@ -1498,9 +1498,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["provider"] = { "i", 23179 },	-- Flame of Orgrimmar (Provided)
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 46.5, 37.6, ORGRIMMAR },
+				{ 46.5, 37.6, MAP.ORGRIMMAR },
 				-- #else
-				{ 46.9, 38.7, ORGRIMMAR },
+				{ 46.9, 38.7, MAP.ORGRIMMAR },
 				-- #endif
 			},
 			["races"] = ALLIANCE_ONLY,
@@ -1521,9 +1521,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["provider"] = { "i", 23182 },	-- Flame of Stormwind (Provided)
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 49.8, 72.9, STORMWIND_CITY },
+				{ 49.8, 72.9, MAP.STORMWIND_CITY },
 				-- #else
-				{ 38.9, 62.3, STORMWIND_CITY },
+				{ 38.9, 62.3, MAP.STORMWIND_CITY },
 				-- #endif
 			},
 			["races"] = HORDE_ONLY,
@@ -1544,9 +1544,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["provider"] = { "i", 23181 },	-- Flame of the Undercity (Provided)
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 68.7, 8.50, UNDERCITY },
+				{ 68.7, 8.50, MAP.UNDERCITY },
 				-- #else
-				{ 62.6, 66.9, UNDERCITY },
+				{ 62.6, 66.9, MAP.UNDERCITY },
 				-- #endif
 			},
 			["races"] = ALLIANCE_ONLY,
@@ -1558,9 +1558,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["provider"] = { "i", 23180 },	-- Flame of Thunder Bluff (Provided)
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 21.9, 27.3, THUNDER_BLUFF },
+				{ 21.9, 27.3, MAP.THUNDER_BLUFF },
 				-- #else
-				{ 21.1, 25.6, THUNDER_BLUFF },
+				{ 21.1, 25.6, MAP.THUNDER_BLUFF },
 				-- #endif
 			},
 			["races"] = ALLIANCE_ONLY,
@@ -1578,7 +1578,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["maps"] = { ASHENVALE },
+			["maps"] = { MAP.ASHENVALE },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
 			["lvl"] = { 16, 25 },
@@ -1586,7 +1586,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = {
 				objective(1, {	-- Frostwave Lieutenant slain
 					["provider"] = { "n", 26116 },	-- Frostwave Lieutenant
-					["coord"] = { 9.6, 12.2, ASHENVALE },
+					["coord"] = { 9.6, 12.2, MAP.ASHENVALE },
 				}),
 				i(BURNING_BLOSSOM),
 			},
@@ -1601,7 +1601,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["maps"] = { DESOLACE },
+			["maps"] = { MAP.DESOLACE },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
 			["lvl"] = { 26, 38 },
@@ -1609,7 +1609,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = {
 				objective(1, {	-- Hailstone Lieutenant slain
 					["provider"] = { "n", 26178 },	-- Hailstone Lieutenant
-					["coord"] = { 39.2, 30.6, DESOLACE },
+					["coord"] = { 39.2, 30.6, MAP.DESOLACE },
 				}),
 				i(BURNING_BLOSSOM),
 			},
@@ -1626,7 +1626,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
 				-- #if BEFORE CATA
-				STRANGLETHORN_VALE,
+				MAP.STRANGLETHORN_VALE,
 				-- #else
 				NORTHERN_STRANGLETHORN,
 				-- #endif
@@ -1640,7 +1640,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26204 },	-- Chillwind Lieutenant
 					["coords"] = {
 						-- #if BEFORE CATA
-						{ 21.0, 22.0, STRANGLETHORN_VALE },
+						{ 21.0, 22.0, MAP.STRANGLETHORN_VALE },
 						-- #else
 						{ 21.6, 41.4, NORTHERN_STRANGLETHORN },
 						-- #endif
@@ -1659,7 +1659,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["maps"] = { BURNING_STEPPES },
+			["maps"] = { MAP.BURNING_STEPPES },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
 			["lvl"] = { 45, 53 },
@@ -1667,7 +1667,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = {
 				objective(1, {	-- Frigid Lieutenant slain
 					["provider"] = { "n", 26214 },	-- Frigid Lieutenant
-					["coord"] = { 15.6, 33.2, BURNING_STEPPES },
+					["coord"] = { 15.6, 33.2, MAP.BURNING_STEPPES },
 				}),
 				i(BURNING_BLOSSOM),
 			},
@@ -1682,7 +1682,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["maps"] = { SILITHUS },
+			["maps"] = { MAP.SILITHUS },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
 			["lvl"] = { 54, 60 },
@@ -1690,7 +1690,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = {
 				objective(1, {	-- Glacial Lieutenant slain
 					["provider"] = { "n", 26215 },	-- Glacial Lieutenant
-					["coord"] = { 69.0, 20.6, SILITHUS },
+					["coord"] = { 69.0, 20.6, MAP.SILITHUS },
 				}),
 				i(BURNING_BLOSSOM),
 			},
@@ -1726,13 +1726,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["icon"] = 134467,
 			["groups"] = {
 				objective(1, {	-- Flame of Stormwind
-					["coord"] = { 38.9, 62.3, STORMWIND_CITY },
+					["coord"] = { 38.9, 62.3, MAP.STORMWIND_CITY },
 				}),
 				objective(2, {	-- Flame of Ironforge
-					["coord"] = { 64.6, 24.8, IRONFORGE },
+					["coord"] = { 64.6, 24.8, MAP.IRONFORGE },
 				}),
 				objective(3, {	-- Flame of Darnassus
-					["coord"] = { 56.6, 92.3, TELDRASSIL },
+					["coord"] = { 56.6, 92.3, MAP.TELDRASSIL },
 				}),
 				i(23246),	-- Fiery Festival Brew
 				i(BURNING_BLOSSOM),
@@ -1752,13 +1752,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["icon"] = 134467,
 			["groups"] = {
 				objective(1, {	-- Flame of Orgrimmar
-					["coord"] = { 46.9, 38.7, ORGRIMMAR },
+					["coord"] = { 46.9, 38.7, MAP.ORGRIMMAR },
 				}),
 				objective(2, {	-- Flame of Thunder Bluff
-					["coord"] = { 21.1, 25.6, THUNDER_BLUFF },
+					["coord"] = { 21.1, 25.6, MAP.THUNDER_BLUFF },
 				}),
 				objective(3, {	-- Flame of the Undercity
-					["coord"] = { 62.6, 66.9, UNDERCITY },
+					["coord"] = { 62.6, 66.9, MAP.UNDERCITY },
 				}),
 				i(23246),	-- Fiery Festival Brew
 				i(BURNING_BLOSSOM),
@@ -1788,20 +1788,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
-				STORMWIND_CITY,
-				IRONFORGE,
+				MAP.STORMWIND_CITY,
+				MAP.IRONFORGE,
 				-- #if AFTER CATA
-				DARNASSUS,
+				MAP.DARNASSUS,
 				-- #else
-				TELDRASSIL,
+				MAP.TELDRASSIL,
 				-- #endif
 				THE_EXODAR,
-				TANARIS,
-				WINTERSPRING,
+				MAP.TANARIS,
+				MAP.WINTERSPRING,
 				NETHERSTORM,
 				-- #if BEFORE CATA
-				THE_BARRENS,
-				STRANGLETHORN_VALE,
+				MAP.THE_BARRENS,
+				MAP.STRANGLETHORN_VALE,
 				-- #else
 				NORTHERN_BARRENS,
 				THE_CAPE_OF_STRANGLETHORN,
@@ -1838,18 +1838,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
-				ORGRIMMAR,
-				THUNDER_BLUFF,
-				UNDERCITY,
+				MAP.ORGRIMMAR,
+				MAP.THUNDER_BLUFF,
+				MAP.UNDERCITY,
 				EVERSONG_WOODS,
 				SILVERMOON_CITY,
 				SHATTRATH_CITY,
-				TANARIS,
-				WINTERSPRING,
+				MAP.TANARIS,
+				MAP.WINTERSPRING,
 				NETHERSTORM,
 				-- #if BEFORE CATA
-				THE_BARRENS,
-				STRANGLETHORN_VALE,
+				MAP.THE_BARRENS,
+				MAP.STRANGLETHORN_VALE,
 				-- #else
 				NORTHERN_BARRENS,
 				THE_CAPE_OF_STRANGLETHORN,
@@ -1963,13 +1963,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["maps"] = { ASHENVALE },
+			["maps"] = { MAP.ASHENVALE },
 			["provider"] = { "i", 35828 },	-- Totemic Beacon
 			["lvl"] = lvlsquish(16, 1, 1),
 			["groups"] = {
 				objective(1, {	-- 0/1 Twilight Correspondence
 					["provider"] = { "i", 35277 },	-- Twilight Correspondence
-					["coord"] = { 16.0, 20.8, ASHENVALE },
+					["coord"] = { 16.0, 20.8, MAP.ASHENVALE },
 					["crs"] = {
 						25863,	-- Twilight Firesworn <Twilight's Hammer>
 						25866,	-- Twilight Flameguard <Twilight's Hammer>
@@ -1986,10 +1986,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
 			["maps"] = {
-				AZSHARA,
-				SILITHUS,
-				UNGORO_CRATER,
-				WINTERSPRING,
+				MAP.AZSHARA,
+				MAP.SILITHUS,
+				MAP.UNGORO_CRATER,
+				MAP.WINTERSPRING,
 			},
 			-- #endif
 			["timeline"] = { ADDED_1_11_0, REMOVED_2_4_0 },
@@ -1998,16 +1998,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = {
 				-- #if BEFORE TBC
 				objective(1, {	-- Flame of Azshara
-					["coord"] = { 41.5, 43.3, AZSHARA },
+					["coord"] = { 41.5, 43.3, MAP.AZSHARA },
 				}),
 				objective(2, {	-- Flame of Silithus
-					["coord"] = { 81.2, 18.4, SILITHUS },
+					["coord"] = { 81.2, 18.4, MAP.SILITHUS },
 				}),
 				objective(3, {	-- Flame of Un'Goro
-					["coord"] = { 70.1, 76.2, UNGORO_CRATER },
+					["coord"] = { 70.1, 76.2, MAP.UNGORO_CRATER },
 				}),
 				objective(4, {	-- Flame of Winterspring
-					["coord"] = { 30.6, 43.2, WINTERSPRING },
+					["coord"] = { 30.6, 43.2, MAP.WINTERSPRING },
 				}),
 				-- #endif
 				i(23379, {	-- Cinder Bracers
@@ -2023,16 +2023,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["icon"] = 134467,
 			["groups"] = {
 				objective(1, {	-- Flame of the Blasted Lands
-					["coord"] = { 54.4, 31.8, BLASTED_LANDS },
+					["coord"] = { 54.4, 31.8, MAP.BLASTED_LANDS },
 				}),
 				objective(2, {	-- Flame of the Plaguelands
-					["coord"] = { 57.6, 73.2, EASTERN_PLAGUELANDS },
+					["coord"] = { 57.6, 73.2, MAP.EASTERN_PLAGUELANDS },
 				}),
 				objective(3, {	-- Flame of the Hinterlands
-					["coord"] = { 62.2, 53.5, THE_HINTERLANDS },
+					["coord"] = { 62.2, 53.5, MAP.THE_HINTERLANDS },
 				}),
 				objective(4, {	-- Flame of Searing Gorge
-					["coord"] = { 33.0, 73.5, SEARING_GORGE },
+					["coord"] = { 33.0, 73.5, MAP.SEARING_GORGE },
 				}),
 				-- #if BEFORE 2.4.0.7994
 				i(23324),	-- Mantle of the Fire Festival
@@ -2044,10 +2044,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
 			["maps"] = {
-				BLASTED_LANDS,
-				EASTERN_PLAGUELANDS,
-				THE_HINTERLANDS,
-				SEARING_GORGE,
+				MAP.BLASTED_LANDS,
+				MAP.EASTERN_PLAGUELANDS,
+				MAP.THE_HINTERLANDS,
+				MAP.SEARING_GORGE,
 			},
 			-- #endif
 			["timeline"] = { ADDED_1_11_0, REMOVED_2_4_0 },
@@ -2064,9 +2064,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187947 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 69.0, 43.1, ARATHI_HIGHLANDS },
+						{ 69.0, 43.1, MAP.ARATHI_HIGHLANDS },
 						-- #else
-						{ 74.0, 41.7, ARATHI_HIGHLANDS },
+						{ 74.0, 41.7, MAP.ARATHI_HIGHLANDS },
 						-- #endif
 					},
 				}),
@@ -2074,24 +2074,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187948 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 51.6, 66.8, ASHENVALE },
+						{ 51.6, 66.8, MAP.ASHENVALE },
 						-- #else
-						{ 70.0, 69.2, ASHENVALE },
+						{ 70.0, 69.2, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				abonfire(28919, {	-- Desecrate this Fire! — Azshara
 					["provider"] = { "o", 207991 },	-- Horde Bonfire
-					["coord"] = { 60.4, 53.5, AZSHARA },
+					["coord"] = { 60.4, 53.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				abonfire(11766, {	-- Desecrate this Fire! — Badlands
 					["provider"] = { "o", 187954 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 24.1, 37.3, BADLANDS },
+						{ 24.1, 37.3, MAP.BADLANDS },
 						-- #else
-						{ 4.9, 49.1, BADLANDS },
+						{ 4.9, 49.1, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
@@ -2101,7 +2101,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				abonfire(28917, {	-- Desecrate this Fire! — Blasted Lands
 					["provider"] = { "o", 207989 },	-- Horde Bonfire
-					["coord"] = { 46.3, 14.4, BLASTED_LANDS },
+					["coord"] = { 46.3, 14.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				abonfire(13441, {	-- Desecrate this Fire! — Borean Tundra
@@ -2113,9 +2113,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187956 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 51.5, 29.3, BURNING_STEPPES },
+						{ 51.5, 29.3, MAP.BURNING_STEPPES },
 						-- #else
-						{ 62.1, 29.0, BURNING_STEPPES },
+						{ 62.1, 29.0, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
@@ -2126,7 +2126,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				abonfire(11769, {	-- Desecrate this Fire! — Desolace
 					["provider"] = { "o", 187957 },	-- Horde Bonfire
-					["coord"] = { 26.1, 77.4, DESOLACE },
+					["coord"] = { 26.1, 77.4, MAP.DESOLACE },
 				}),
 				abonfire(13451, {	-- Desecrate this Fire! — Dragonblight
 					["provider"] = { "o", 194037 },	-- Horde Bonfire
@@ -2135,11 +2135,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				abonfire(11770, {	-- Desecrate this Fire! — Durotar
 					["provider"] = { "o", 187958 },	-- Horde Bonfire
-					["coord"] = { 52.0, 47.0, DUROTAR },
+					["coord"] = { 52.0, 47.0, MAP.DUROTAR },
 				}),
 				abonfire(11771, {	-- Desecrate this Fire! — Dustwallow Marsh
 					["provider"] = { "o", 187959 },	-- Horde Bonfire
-					["coord"] = { 33.2, 30.8, DUSTWALLOW_MARSH },
+					["coord"] = { 33.2, 30.8, MAP.DUSTWALLOW_MARSH },
 				}),
 				abonfire(11772, {	-- Desecrate this Fire! — Eversong Woods
 					["provider"] = { "o", 187960 },	-- Horde Bonfire
@@ -2147,7 +2147,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				abonfire(11773, {	-- Desecrate this Fire! — Feralas
 					["provider"] = { "o", 187961 },	-- Horde Bonfire
-					["coord"] = { 72.5, 47.6, FERALAS },
+					["coord"] = { 72.5, 47.6, MAP.FERALAS },
 				}),
 				abonfire(44583, {	-- Desecrate this Fire! — Frostfire Ridge
 					["provider"] = { "o", 259870 },	-- Horde Bonfire
@@ -2171,9 +2171,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187964 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.5, 50.1, HILLSBRAD_FOOTHILLS },
+						{ 54.5, 50.1, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 58.4, 25.1, HILLSBRAD_FOOTHILLS },
+						{ 58.4, 25.1, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 				}),
@@ -2184,7 +2184,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				abonfire(11777, {	-- Desecrate this Fire! — Mulgore
 					["provider"] = { "o", 187965 },	-- Horde Bonfire
-					["coord"] = { 52.0, 59.3, MULGORE },
+					["coord"] = { 52.0, 59.3, MAP.MULGORE },
 				}),
 				abonfire(11778, {	-- Desecrate this Fire! — Nagrand (Outland)
 					["provider"] = { "o", 187966 },	-- Horde Bonfire
@@ -2205,7 +2205,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						-- #if AFTER CATA
 						{ 49.9, 54.2, NORTHERN_BARRENS },
 						-- #else
-						{ 52.2, 27.9, THE_BARRENS },
+						{ 52.2, 27.9, MAP.THE_BARRENS },
 						-- #endif
 					},
 				}),
@@ -2227,15 +2227,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187950 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.8, 41.8, SILITHUS },
+						{ 50.8, 41.8, MAP.SILITHUS },
 						-- #else
-						{ 46.5, 44.9, SILITHUS },
+						{ 46.5, 44.9, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				abonfire(11580, {	-- Desecrate this Fire! — Silverpine Forest
 					["provider"] = { "o", 187559 },	-- Horde Bonfire
-					["coord"] = { 49.6, 38.7, SILVERPINE_FOREST },
+					["coord"] = { 49.6, 38.7, MAP.SILVERPINE_FOREST },
 				}),
 				abonfire(28914, {	-- Desecrate this Fire! — Southern Barrens
 					["provider"] = { "o", 207986 },	-- Horde Bonfire
@@ -2246,9 +2246,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187968 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.0, 62.4, STONETALON_MOUNTAINS },
+						{ 53.0, 62.4, MAP.STONETALON_MOUNTAINS },
 						-- #else
-						{ 50.6, 60.3, STONETALON_MOUNTAINS },
+						{ 50.6, 60.3, MAP.STONETALON_MOUNTAINS },
 						-- #endif
 					},
 				}),
@@ -2266,9 +2266,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187969 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.7, 14.4, SWAMP_OF_SORROWS },
+						{ 76.7, 14.4, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 46.9, 46.5, SWAMP_OF_SORROWS },
+						{ 46.9, 46.5, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 				}),
@@ -2276,9 +2276,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187952 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.8, 28.2, TANARIS },
+						{ 49.8, 28.2, MAP.TANARIS },
 						-- #else
-						{ 49.8, 27.1, TANARIS },
+						{ 49.8, 27.1, MAP.TANARIS },
 						-- #endif
 					},
 				}),
@@ -2292,22 +2292,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						-- #if AFTER CATA
 						{ 50.6, 70.8, THE_CAPE_OF_STRANGLETHORN },
 						-- #else
-						{ 33.0, 75.4, STRANGLETHORN_VALE },
+						{ 33.0, 75.4, MAP.STRANGLETHORN_VALE },
 						-- #endif
 					},
 				}),
 				abonfire(11784, {	-- Desecrate this Fire! — The Hinterlands
 					["provider"] = { "o", 187972 },	-- Horde Bonfire
-					["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
+					["coord"] = { 76.4, 74.5, MAP.THE_HINTERLANDS },
 				}),
 				abonfire(11785, {	-- Desecrate this Fire! — Thousand Needles
 					["provider"] = { "o", 187973 },	-- Horde Bonfire
-					["coord"] = { 42.5, 52.9, THOUSAND_NEEDLES },
+					["coord"] = { 42.5, 52.9, MAP.THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_1 },	-- Freewind Post got destroyed with Cataclysm
 				}),
 				abonfire(11786, {	-- Desecrate this Fire! — Tirisfal Glades
 					["provider"] = { "o", 187974 },	-- Horde Bonfire
-					["coord"] = { 57.0, 51.9, TIRISFAL_GLADES },
+					["coord"] = { 57.0, 51.9, MAP.TIRISFAL_GLADES },
 				}),
 				abonfire(28944, {	-- Desecrate this Fire! — Twilight Highlands
 					["provider"] = { "o", 208090 },	-- Horde Bonfire
@@ -2321,7 +2321,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				abonfire(28920, {	-- Desecrate this Fire! — Un'Goro Crater
 					["provider"] = { "o", 207992 },	-- Horde Bonfire
-					["coord"] = { 56.3, 65.8, UNGORO_CRATER },
+					["coord"] = { 56.3, 65.8, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				abonfire(32496, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
@@ -2336,16 +2336,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				abonfire(28918, {	-- Desecrate this Fire! — Western Plaguelands
 					["provider"] = { "o", 207990 },	-- Horde Bonfire
-					["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
+					["coord"] = { 28.9, 56.8, MAP.WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				abonfire(11803, {	-- Desecrate this Fire! — Winterspring
 					["provider"] = { "o", 187953 },	-- Horde Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 58.2, 47.3, WINTERSPRING },
+						{ 58.2, 47.3, MAP.WINTERSPRING },
 						-- #else
-						{ 59.8, 35.4, WINTERSPRING },
+						{ 59.8, 35.4, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
@@ -2372,9 +2372,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187914 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 44.8, 46.1, ARATHI_HIGHLANDS },
+						{ 44.8, 46.1, MAP.ARATHI_HIGHLANDS },
 						-- #else
-						{ 50.3, 44.9, ARATHI_HIGHLANDS },
+						{ 50.3, 44.9, MAP.ARATHI_HIGHLANDS },
 						-- #endif
 					},
 				}),
@@ -2382,9 +2382,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187916 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 86.7, 41.4, ASHENVALE },
+						{ 86.7, 41.4, MAP.ASHENVALE },
 						-- #else
-						{ 37.8, 55.0, ASHENVALE },
+						{ 37.8, 55.0, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
@@ -2394,7 +2394,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				hbonfire(28912, {	-- Desecrate this Fire! — Badlands
 					["provider"] = { "o", 207984 },	-- Alliance Bonfire
-					["coord"] = { 18.5, 56.1, BADLANDS },
+					["coord"] = { 18.5, 56.1, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				hbonfire(11736, {	-- Desecrate this Fire! — Blade's Edge Mountains
@@ -2405,9 +2405,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187920 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.2, 15.3, BLASTED_LANDS },
+						{ 55.2, 15.3, MAP.BLASTED_LANDS },
 						-- #else
-						{ 59.0, 17.2, BLASTED_LANDS },
+						{ 59.0, 17.2, MAP.BLASTED_LANDS },
 						-- #endif
 					},
 				}),
@@ -2424,9 +2424,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187922 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.6, 59.9, BURNING_STEPPES },
+						{ 68.6, 59.9, MAP.BURNING_STEPPES },
 						-- #else
-						{ 80.5, 62.4, BURNING_STEPPES },
+						{ 80.5, 62.4, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
@@ -2439,15 +2439,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187923 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.0, 22.5, DARKSHORE },
+						{ 49.0, 22.5, MAP.DARKSHORE },
 						-- #else
-						{ 37.1, 45.9, DARKSHORE },
+						{ 37.1, 45.9, MAP.DARKSHORE },
 						-- #endif
 					},
 				}),
 				hbonfire(11741, {	-- Desecrate this Fire! — Desolace
 					["provider"] = { "o", 187924 },	-- Alliance Bonfire
-					["coord"] = { 65.8, 17.0, DESOLACE },
+					["coord"] = { 65.8, 17.0, MAP.DESOLACE },
 				}),
 				hbonfire(13443, {	-- Desecrate this Fire! — Dragonblight
 					["provider"] = { "o", 194036 },	-- Alliance Bonfire
@@ -2463,33 +2463,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187925 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.8, 44.7, DUN_MOROGH },
+						{ 53.8, 44.7, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.6, 46.5, DUN_MOROGH },
+						{ 46.6, 46.5, MAP.DUN_MOROGH },
 						-- #endif
 					},
 				}),
 				hbonfire(11743, {	-- Desecrate this Fire! — Duskwood
 					["provider"] = { "o", 187926 },	-- Alliance Bonfire
-					["coord"] = { 73.2, 54.9, DUSKWOOD },
+					["coord"] = { 73.2, 54.9, MAP.DUSKWOOD },
 				}),
 				hbonfire(11744, {	-- Desecrate this Fire! — Dustwallow Marsh
 					["provider"] = { "o", 187927 },	-- Alliance Bonfire
-					["coord"] = { 62.1, 40.3, DUSTWALLOW_MARSH },
+					["coord"] = { 62.1, 40.3, MAP.DUSTWALLOW_MARSH },
 				}),
 				hbonfire(11745, {	-- Desecrate this Fire! — Elwynn Forest
 					["provider"] = { "o", 187928 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 43.2, 63.0, ELWYNN_FOREST },
+						{ 43.2, 63.0, MAP.ELWYNN_FOREST },
 						-- #else
-						{ 43.2, 62.8, ELWYNN_FOREST },
+						{ 43.2, 62.8, MAP.ELWYNN_FOREST },
 						-- #endif
 					},
 				}),
 				hbonfire(11746, {	-- Desecrate this Fire! — Feralas
 					["provider"] = { "o", 187929 },	-- Alliance Bonfire
-					["coord"] = { 46.6, 43.8, FERALAS },
+					["coord"] = { 46.6, 43.8, MAP.FERALAS },
 				}),
 				hbonfire(13445, {	-- Desecrate this Fire! — Grizzly Hills
 					["provider"] = { "o", 194040 },	-- Alliance Bonfire
@@ -2502,7 +2502,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				hbonfire(11748, {	-- Desecrate this Fire! — Hillsbrad Foothills
 					["provider"] = { "o", 187931 },	-- Alliance Bonfire
-					["coord"] = { 50.4, 47.1, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 47.1, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_1 },	-- Southshore got destroyed with Cataclysm
 				}),
 				hbonfire(13444, {	-- Desecrate this Fire! — Howling Fjord
@@ -2514,9 +2514,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187932 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 32.3, 40.4, LOCH_MODAN },
+						{ 32.3, 40.4, MAP.LOCH_MODAN },
 						-- #else
-						{ 32.6, 40.5, LOCH_MODAN },
+						{ 32.6, 40.5, MAP.LOCH_MODAN },
 						-- #endif
 					},
 				}),
@@ -2537,9 +2537,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187934 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 24.4, 53.9, REDRIDGE_MOUNTAINS },
+						{ 24.4, 53.9, MAP.REDRIDGE_MOUNTAINS },
 						-- #else
-						{ 24.9, 59.3, REDRIDGE_MOUNTAINS },
+						{ 24.9, 59.3, MAP.REDRIDGE_MOUNTAINS },
 						-- #endif
 					},
 				}),
@@ -2561,9 +2561,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "o", 187943 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.5, 33.4, SILITHUS },
+						{ 60.5, 33.4, MAP.SILITHUS },
 						-- #else
-						{ 57.7, 34.9, SILITHUS },
+						{ 57.7, 34.9, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
@@ -2574,7 +2574,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				hbonfire(28915, {	-- Desecrate this Fire! — Stonetalon Mountains
 					["provider"] = { "o", 207987 },	-- Alliance Bonfire
-					["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
+					["coord"] = { 49.6, 51.1, MAP.STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				hbonfire(13446, {	-- Desecrate this Fire! — Storm Peaks
@@ -2594,20 +2594,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				hbonfire(28916, {	-- Desecrate this Fire! — Swamp of Sorrows
 					["provider"] = { "o", 207988 },	-- Alliance Bonfire
-					["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
+					["coord"] = { 70.1, 14.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				hbonfire(11762, {	-- Desecrate this Fire! — Tanaris
 					["provider"] = { "o", 187945 },	-- Alliance Bonfire
-					["coord"] = { 52.7, 30.0, TANARIS },
+					["coord"] = { 52.7, 30.0, MAP.TANARIS },
 				}),
 				hbonfire(11753, {	-- Desecrate this Fire! — Teldrassil
 					["provider"] = { "o", 187936 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.7, 52.7, TELDRASSIL },
+						{ 54.7, 52.7, MAP.TELDRASSIL },
 						-- #else
-						{ 54.9, 60.5, TELDRASSIL },
+						{ 54.9, 60.5, MAP.TELDRASSIL },
 						-- #endif
 					},
 				}),
@@ -2621,13 +2621,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						-- #if AFTER CATA
 						{ 51.7, 67.3, THE_CAPE_OF_STRANGLETHORN },
 						-- #else
-						{ 33.8, 73.3, STRANGLETHORN_VALE },
+						{ 33.8, 73.3, MAP.STRANGLETHORN_VALE },
 						-- #endif
 					},
 				}),
 				hbonfire(11755, {	-- Desecrate this Fire! — The Hinterlands
 					["provider"] = { "o", 187938 },	-- Alliance Bonfire
-					["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
+					["coord"] = { 14.5, 50.0, MAP.THE_HINTERLANDS },
 				}),
 				hbonfire(54736, {	-- Desecrate this Fire! — Tiragarde Sound
 					["provider"] = { "o", 316788 },	-- Alliance Bonfire
@@ -2646,7 +2646,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				hbonfire(28921, {	-- Desecrate this Fire! — Un'Goro Crater
 					["provider"] = { "o", 207993 },	-- Alliance Bonfire
-					["coord"] = { 60.0, 62.9, UNGORO_CRATER },
+					["coord"] = { 60.0, 62.9, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				hbonfire(32503, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
@@ -2656,29 +2656,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				hbonfire(11756, {	-- Desecrate this Fire! — Western Plaguelands
 					["provider"] = { "o", 187939 },	-- Alliance Bonfire
-					["coord"] = { 43.6, 82.5, WESTERN_PLAGUELANDS },
+					["coord"] = { 43.6, 82.5, MAP.WESTERN_PLAGUELANDS },
 				}),
 				hbonfire(11581, {	-- Desecrate this Fire! — Westfall
 					["provider"] = { "o", 187564 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 45.2, 62.3, WESTFALL },
+						{ 45.2, 62.3, MAP.WESTFALL },
 						-- #else
-						{ 56.1, 53.9, WESTFALL },
+						{ 56.1, 53.9, MAP.WESTFALL },
 						-- #endif
 					},
 				}),
 				hbonfire(11757, {	-- Desecrate this Fire! — Wetlands
 					["provider"] = { "o", 187940 },	-- Alliance Bonfire
-					["coord"] = { 13.3, 47.3, WETLANDS },
+					["coord"] = { 13.3, 47.3, MAP.WETLANDS },
 				}),
 				hbonfire(11763, {	-- Desecrate this Fire! — Winterspring
 					["provider"] = { "o", 187946 },	-- Alliance Bonfire
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.3, 47.1, WINTERSPRING },
+						{ 61.3, 47.1, MAP.WINTERSPRING },
 						-- #else
-						{ 62.7, 35.4, WINTERSPRING },
+						{ 62.7, 35.4, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
@@ -2703,9 +2703,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25887,	-- Arathi Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 44.3, 45.8, ARATHI_HIGHLANDS },
+						{ 44.3, 45.8, MAP.ARATHI_HIGHLANDS },
 						-- #else
-						{ 50.0, 44.8, ARATHI_HIGHLANDS },
+						{ 50.0, 44.8, MAP.ARATHI_HIGHLANDS },
 						-- #endif
 					},
 				}),
@@ -2713,9 +2713,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25883,	-- Ashenvale Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 87.0, 42.0, ASHENVALE },
+						{ 87.0, 42.0, MAP.ASHENVALE },
 						-- #else
-						{ 37.8, 54.7, ASHENVALE },
+						{ 37.8, 54.7, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
@@ -2725,7 +2725,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28925, {	-- Honor the Flame — Badlands
 					["qg"] = 51585,	-- Badlands Flame Warden
-					["coord"] = { 18.9, 56.1, BADLANDS },
+					["coord"] = { 18.9, 56.1, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(11807, {	-- Honor the Flame — Blade's Edge Mountains
@@ -2736,9 +2736,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25890,	-- Blasted Lands Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.5, 15.0, BLASTED_LANDS },
+						{ 55.5, 15.0, MAP.BLASTED_LANDS },
 						-- #else
-						{ 59.3, 17.0, BLASTED_LANDS },
+						{ 59.3, 17.0, MAP.BLASTED_LANDS },
 						-- #endif
 					},
 				}),
@@ -2757,9 +2757,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25892,	-- Burning Steppes Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.2, 60.6, BURNING_STEPPES },
+						{ 68.2, 60.6, MAP.BURNING_STEPPES },
 						-- #else
-						{ 80.3, 62.9, BURNING_STEPPES },
+						{ 80.3, 62.9, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
@@ -2772,17 +2772,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25893,	-- Darkshore Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.0, 23.0, DARKSHORE },
+						{ 49.0, 23.0, MAP.DARKSHORE },
 						-- #else
-						{ 37.0, 46.2, DARKSHORE },
+						{ 37.0, 46.2, MAP.DARKSHORE },
 						-- #endif
 					},
 				}),
 				honortheflame(11812, {	-- Honor the Flame — Desolace
 					["qg"] = 25894,	-- Desolace Flame Warden
 					["coords"] = {
-						{ 65.0, 17.0, DESOLACE },
-						{ 66.1, 17.1, DESOLACE },
+						{ 65.0, 17.0, MAP.DESOLACE },
+						{ 66.1, 17.1, MAP.DESOLACE },
 					},
 				}),
 				honortheflame(13487, {	-- Honor the Flame — Dragonblight
@@ -2799,37 +2799,37 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25895,	-- Dun Morogh Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.8, 45.2, DUN_MOROGH },
+						{ 53.8, 45.2, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.7, 46.9, DUN_MOROGH },
+						{ 46.7, 46.9, MAP.DUN_MOROGH },
 						-- #endif
 					},
 				}),
 				honortheflame(11814, {	-- Honor the Flame — Duskwood
 					["qg"] = 25896,	-- Duskwood Flame Warden
-					["coord"] = { 73.8, 54.7, DUSKWOOD },
+					["coord"] = { 73.8, 54.7, MAP.DUSKWOOD },
 				}),
 				honortheflame(11815, {	-- Honor the Flame — Dustwallow Marsh
 					["qg"] = 25897,	-- Dustwallow Marsh Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 62.0, 40.0, DUSTWALLOW_MARSH },
+						{ 62.0, 40.0, MAP.DUSTWALLOW_MARSH },
 						-- #else
-						{ 61.8, 40.5, DUSTWALLOW_MARSH },
+						{ 61.8, 40.5, MAP.DUSTWALLOW_MARSH },
 						-- #endif
 					},
 				}),
 				honortheflame(11816, {	-- Honor the Flame — Elwynn Forest
 					["qg"] = 25898,	-- Elwynn Forest Flame Warden
-					["coord"] = { 43.5, 62.7, ELWYNN_FOREST },
+					["coord"] = { 43.5, 62.7, MAP.ELWYNN_FOREST },
 				}),
 				honortheflame(11817, {	-- Honor the Flame — Feralas
 					["qg"] = 25899,	-- Feralas Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.0, 44.0, FERALAS },
+						{ 47.0, 44.0, MAP.FERALAS },
 						-- #else
-						{ 28.3, 43.9, FERALAS },
+						{ 28.3, 43.9, MAP.FERALAS },
 						-- #endif
 					},
 				}),
@@ -2844,7 +2844,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(11819, {	-- Honor the Flame — Hillsbrad Foothills
 					["qg"] = 25901,	-- Hillsbrad Flame Warden
-					["coord"] = { 50.4, 47.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 47.6, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_1 },	-- Southshore got destroyed with Cataclysm
 				}),
 				honortheflame(13488, {	-- Honor the Flame — Howling Fjord
@@ -2856,9 +2856,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25902,	-- Loch Modan Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 32.3, 41.0, LOCH_MODAN },
+						{ 32.3, 41.0, MAP.LOCH_MODAN },
 						-- #else
-						{ 32.6, 41.0, LOCH_MODAN },
+						{ 32.6, 41.0, MAP.LOCH_MODAN },
 						-- #endif
 					},
 				}),
@@ -2879,9 +2879,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25904,	-- Redridge Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 25.0, 53.5, REDRIDGE_MOUNTAINS },
+						{ 25.0, 53.5, MAP.REDRIDGE_MOUNTAINS },
 						-- #else
-						{ 25.2, 59.0, REDRIDGE_MOUNTAINS },
+						{ 25.2, 59.0, MAP.REDRIDGE_MOUNTAINS },
 						-- #endif
 					},
 				}),
@@ -2903,9 +2903,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25914,	-- Silithus Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.0, 33.0, SILITHUS },
+						{ 60.0, 33.0, MAP.SILITHUS },
 						-- #else
-						{ 57.5, 35.2, SILITHUS },
+						{ 57.5, 35.2, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
@@ -2916,7 +2916,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28928, {	-- Honor the Flame — Stonetalon Mountains
 					["qg"] = 51588,	-- Stonetalon Mountains Flame Warden
-					["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
+					["coord"] = { 49.0, 51.0, MAP.STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(13490, {	-- Honor the Flame — Storm Peaks
@@ -2936,16 +2936,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28929, {	-- Honor the Flame — Swamp of Sorrows
 					["qg"] = 51602,	-- Swamp of Sorrows Flame Warden
-					["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
+					["coord"] = { 70.1, 15.4, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(11833, {	-- Honor the Flame — Tanaris
 					["qg"] = 25916,	-- Tanaris Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.6, 30.3, TANARIS },
+						{ 52.6, 30.3, MAP.TANARIS },
 						-- #else
-						{ 52.8, 29.4, TANARIS },
+						{ 52.8, 29.4, MAP.TANARIS },
 						-- #endif
 					},
 				}),
@@ -2953,9 +2953,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25906,	-- The Teldrassil Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.8, 52.9, TELDRASSIL },
+						{ 54.8, 52.9, MAP.TELDRASSIL },
 						-- #else
-						{ 55.1, 60.4, TELDRASSIL },
+						{ 55.1, 60.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 				}),
@@ -2976,13 +2976,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						-- #if AFTER CATA
 						{ 51.9, 67.8, THE_CAPE_OF_STRANGLETHORN },
 						-- #else
-						{ 33.9, 73.5, STRANGLETHORN_VALE },
+						{ 33.9, 73.5, MAP.STRANGLETHORN_VALE },
 						-- #endif
 					},
 				}),
 				honortheflame(11826, {	-- Honor the Flame — The Hinterlands
 					["qg"] = 25908,	-- The Hinterlands Flame Warden
-					["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
+					["coord"] = { 14.4, 50.2, MAP.THE_HINTERLANDS },
 				}),
 				honortheflame(54737, {	-- Honor the Flame — Tiragarde Sound
 					["qg"] = 148917,	-- Tiragarde Sound Flame Warden
@@ -3001,7 +3001,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28932, {	-- Honor the Flame — Un'goro Crater
 					["qg"] = 51606,	-- Un'Goro Crater Flame Warden
-					["coord"] = { 60.0, 63.0, UNGORO_CRATER },
+					["coord"] = { 60.0, 63.0, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(32510, {	-- Honor the Flame — Vale of Eternal Blossoms
@@ -3011,29 +3011,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(11827, {	-- Honor the Flame — Western Plaguelands
 					["qg"] = 25909,	-- Western Plaguelands Flame Warden
-					["coord"] = { 43.5, 82.2, WESTERN_PLAGUELANDS },
+					["coord"] = { 43.5, 82.2, MAP.WESTERN_PLAGUELANDS },
 				}),
 				honortheflame(11583, {	-- Honor the Flame — Westfall
 					["qg"] = 25910,	-- Westfall Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 44.6, 62.1, WESTFALL },
+						{ 44.6, 62.1, MAP.WESTFALL },
 						-- #else
-						{ 55.9, 53.5, WESTFALL },
+						{ 55.9, 53.5, MAP.WESTFALL },
 						-- #endif
 					},
 				}),
 				honortheflame(11828, {	-- Honor the Flame — Wetlands
 					["qg"] = 25911,	-- Wetlands Flame Warden
-					["coord"] = { 13.5, 47.1, WETLANDS },
+					["coord"] = { 13.5, 47.1, MAP.WETLANDS },
 				}),
 				honortheflame(11834, {	-- Honor the Flame — Winterspring
 					["qg"] = 25917,	-- Winterspring Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.2, 47.2, WINTERSPRING },
+						{ 61.2, 47.2, MAP.WINTERSPRING },
 						-- #else
-						{ 62.6, 35.4, WINTERSPRING },
+						{ 62.6, 35.4, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
@@ -3056,9 +3056,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25923,	-- Arathi Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 69.4, 42.6, ARATHI_HIGHLANDS },
+						{ 69.4, 42.6, MAP.ARATHI_HIGHLANDS },
 						-- #else
-						{ 74.2, 41.5, ARATHI_HIGHLANDS },
+						{ 74.2, 41.5, MAP.ARATHI_HIGHLANDS },
 						-- #endif
 					},
 				}),
@@ -3066,24 +3066,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25884,	-- Ashenvale Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 51.4, 66.1, ASHENVALE },
+						{ 51.4, 66.1, MAP.ASHENVALE },
 						-- #else
-						{ 70.1, 69.3, ASHENVALE },
+						{ 70.1, 69.3, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				honortheflame(28923, {	-- Honor the Flame — Azshara
 					["qg"] = 51575,	-- Azshara Flame Keeper
-					["coord"] = { 60.8, 53.5, AZSHARA },
+					["coord"] = { 60.8, 53.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(11842, {	-- Honor the Flame — Badlands
 					["qg"] = 25925,	-- Badlands Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 23.1, 37.4, BADLANDS },
+						{ 23.1, 37.4, MAP.BADLANDS },
 						-- #else
-						{ 4.7, 48.6, BADLANDS },
+						{ 4.7, 48.6, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
@@ -3093,7 +3093,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28930, {	-- Honor the Flame — Blasted Lands
 					["qg"] = 51603,	-- Blasted Lands Flame Keeper
-					["coord"] = { 46.2, 13.8, BLASTED_LANDS },
+					["coord"] = { 46.2, 13.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(13493, {	-- Honor the Flame — Borean Tundra
@@ -3105,9 +3105,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25927,	-- Burning Steppes Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 51.1, 29.2, BURNING_STEPPES },
+						{ 51.1, 29.2, MAP.BURNING_STEPPES },
 						-- #else
-						{ 61.8, 29.1, BURNING_STEPPES },
+						{ 61.8, 29.1, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
@@ -3118,7 +3118,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(11845, {	-- Honor the Flame — Desolace
 					["qg"] = 25928,	-- Desolace Flame Keeper
-					["coord"] = { 26.1, 76.9, DESOLACE },
+					["coord"] = { 26.1, 76.9, MAP.DESOLACE },
 				}),
 				honortheflame(13495, {	-- Honor the Flame — Dragonblight
 					["qg"] = 32811,	-- Dragonblight Flame Keeper
@@ -3129,17 +3129,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25929,	-- Durotar Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.2, 47.3, DUROTAR },
+						{ 52.2, 47.3, MAP.DUROTAR },
 						-- #else
-						{ 52.0, 47.0, DUROTAR },
+						{ 52.0, 47.0, MAP.DUROTAR },
 						-- #endif
 					},
 				}),
 				honortheflame(11847, {	-- Honor the Flame — Dustwallow Marsh
 					["qg"] = 25930,	-- Dustwallow Marsh Flame Keeper
 					["coords"] = {
-						{ 33.0, 30.0, DUSTWALLOW_MARSH },
-						{ 33.4, 30.9, DUSTWALLOW_MARSH },
+						{ 33.0, 30.0, MAP.DUSTWALLOW_MARSH },
+						{ 33.4, 30.9, MAP.DUSTWALLOW_MARSH },
 					},
 				}),
 				honortheflame(11848, {	-- Honor the Flame — Eversong Woods
@@ -3148,7 +3148,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(11849, {	-- Honor the Flame — Feralas
 					["qg"] = 25932,	-- Feralas Flame Keeper
-					["coord"] = { 72.4, 47.8, FERALAS },
+					["coord"] = { 72.4, 47.8, MAP.FERALAS },
 				}),
 				honortheflame(44580, {	-- Honor the Flame — Frostfire Ridge
 					["qg"] = 114499,	-- Frostfire Ridge Flame Keeper
@@ -3175,9 +3175,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25935,	-- Hillsbrad Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.7, 50.1, HILLSBRAD_FOOTHILLS },
+						{ 54.7, 50.1, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 58.6, 25.4, HILLSBRAD_FOOTHILLS },
+						{ 58.6, 25.4, MAP.HILLSBRAD_FOOTHILLS },
 						-- #endif
 					},
 				}),
@@ -3188,7 +3188,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(11852, {	-- Honor the Flame — Mulgore
 					["qg"] = 25936,	-- Mulgore Flame Keeper
-					["coord"] = { 51.8, 59.3, MULGORE },
+					["coord"] = { 51.8, 59.3, MAP.MULGORE },
 				}),
 				honortheflame(11854, {	-- Honor the Flame — Nagrand (Outland)
 					["qg"] = 25937,	-- Nagrand Flame Keeper
@@ -3209,7 +3209,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						-- #if AFTER CATA
 						{ 50.0, 54.7, NORTHERN_BARRENS },
 						-- #else
-						{ 52.2, 28.0, THE_BARRENS },
+						{ 52.2, 28.0, MAP.THE_BARRENS },
 						-- #endif
 					},
 				}),
@@ -3231,15 +3231,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25919,	-- Silithus Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.9, 41.3, SILITHUS },
+						{ 50.9, 41.3, MAP.SILITHUS },
 						-- #else
-						{ 46.5, 44.4, SILITHUS },
+						{ 46.5, 44.4, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				honortheflame(11584, {	-- Honor the Flame — Silverpine Forest
 					["qg"] = 25939,	-- Silverpine Forest Flame Keeper
-					["coord"] = { 49.6, 38.2, SILVERPINE_FOREST },
+					["coord"] = { 49.6, 38.2, MAP.SILVERPINE_FOREST },
 				}),
 				honortheflame(28927, {	-- Honor the Flame — Southern Barrens
 					["qg"] = 51587,	-- The Southern Barrens Flame Keeper
@@ -3250,9 +3250,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25940,	-- Stonetalon Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.9, 62.5, STONETALON_MOUNTAINS },
+						{ 52.9, 62.5, MAP.STONETALON_MOUNTAINS },
 						-- #else
-						{ 50.5, 60.5, STONETALON_MOUNTAINS },
+						{ 50.5, 60.5, MAP.STONETALON_MOUNTAINS },
 						-- #endif
 					},
 				}),
@@ -3270,9 +3270,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25941,	-- Swamp of Sorrows Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.3, 13.8, SWAMP_OF_SORROWS },
+						{ 76.3, 13.8, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 46.7, 47.0, SWAMP_OF_SORROWS },
+						{ 46.7, 47.0, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 				}),
@@ -3280,9 +3280,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25921,	-- Tanaris Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.8, 27.9, TANARIS },
+						{ 49.8, 27.9, MAP.TANARIS },
 						-- #else
-						{ 49.8, 26.9, TANARIS },
+						{ 49.8, 26.9, MAP.TANARIS },
 						-- #endif
 					},
 				}),
@@ -3296,22 +3296,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						-- #if AFTER CATA
 						{ 50.4, 70.4, THE_CAPE_OF_STRANGLETHORN },
 						-- #else
-						{ 32.9, 75.2, STRANGLETHORN_VALE },
+						{ 32.9, 75.2, MAP.STRANGLETHORN_VALE },
 						-- #endif
 					},
 				}),
 				honortheflame(11860, {	-- Honor the Flame — The Hinterlands
 					["qg"] = 25944,	-- The Hinterlands Flame Keeper
-					["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
+					["coord"] = { 76.6, 75.0, MAP.THE_HINTERLANDS },
 				}),
 				honortheflame(11861, {	-- Honor the Flame — Thousand Needles
 					["qg"] = 25945,	-- Thousand Needles Flame Warden
-					["coord"] = { 42.3, 52.9, THOUSAND_NEEDLES },
+					["coord"] = { 42.3, 52.9, MAP.THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_1 },	-- Freewind Post got destroyed with Cataclysm
 				}),
 				honortheflame(11862, {	-- Honor the Flame — Tirisfal Glades
 					["qg"] = 25946,	-- Tirisfal Glades Flame Keeper
-					["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 57.2, 51.8, MAP.TIRISFAL_GLADES },
 				}),
 				honortheflame(28946, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51651,	-- Twilight Highlands Flame Keeper
@@ -3325,7 +3325,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28933, {	-- Honor the Flame — Un'goro Crater
 					["qg"] = 51607,	-- Un'Goro Flame Keeper
-					["coord"] = { 56.0, 66.0, UNGORO_CRATER },
+					["coord"] = { 56.0, 66.0, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(32509, {	-- Honor the Flame — Vale of Eternal Blossoms
@@ -3340,16 +3340,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28931, {	-- Honor the Flame — Western Plaguelands
 					["qg"] = 51604,	-- Western Plaguelands Flame Keeper
-					["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
+					["coord"] = { 29.2, 57.3, MAP.WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(11839, {	-- Honor the Flame — Winterspring
 					["qg"] = 25922,	-- Winterspring Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 58.1, 47.5, WINTERSPRING },
+						{ 58.1, 47.5, MAP.WINTERSPRING },
 						-- #else
-						{ 59.9, 35.6, WINTERSPRING },
+						{ 59.9, 35.6, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
@@ -3399,7 +3399,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(29030, {	-- Honor the Flame — Hyjal
 					["qg"] = 51682,	-- Hyjal Flame Guardian
-					["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
+					["coord"] = { 62.8, 22.6, MAP.MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(32498, {	-- Honor the Flame — Jade Forest

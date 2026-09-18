@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- ["description"] = "[TBC] \nThis is a new raid added in SoD Phase 8.\nThe current loot table is not accurate. If you get items not in the boss drop, please report it in Discord #classic-errors.",
 		["zone-text-areaID"] = 16236,	-- Scarlet Enclave
 		-- ["sourceQuest"] = 86970,
-		-- ["coord"] = { 39.8, 73.6, DEADWIND_PASS },
+		-- ["coord"] = { 39.8, 73.6, MAP.DEADWIND_PASS },
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
@@ -213,8 +213,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(11036, {	-- Leonid Barthalomew the Revered <The Argent Dawn>
 						["coords"] = {
-							{ 81.6, 57.8, EASTERN_PLAGUELANDS },	-- Leonid Barthalomew the Revered <The Argent Dawn>
-							{ 98.6, 84.0, EASTERN_PLAGUELANDS },	-- Bryon Steelblade, but he sells the exact same items
+							{ 81.6, 57.8, MAP.EASTERN_PLAGUELANDS },	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							{ 98.6, 84.0, MAP.EASTERN_PLAGUELANDS },	-- Bryon Steelblade, but he sells the exact same items
 						},
 						["groups"] = {
 							cl(DRUID, {

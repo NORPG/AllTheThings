@@ -294,7 +294,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 	n(QUESTS, {
 		q(8882, {	-- Cluster Launcher
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.8, 35.3, MOONGLADE },
+			["coord"] = { 53.8, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
@@ -310,7 +310,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8880, {	-- Cluster Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.8, 35.3, MOONGLADE },
+			["coord"] = { 53.8, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
@@ -330,7 +330,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
 			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["qg"] = 155759,	-- Myrael Lunarbloom
-			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["coord"] = { 53.1, 36.0, MAP.MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				objective(1, {	-- 0/3 Flower of Fortitude
@@ -345,14 +345,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 						{ "o", 332279 },	-- Flower of Sincerity
 						{ "i", 170279 },	-- Flower of Sincerity (QI!)
 					},
-					["coord"] = { 51.7, 31.9, MULGORE },
+					["coord"] = { 51.7, 31.9, MAP.MULGORE },
 				}),
 				objective(3, {	-- 0/3 Flower of Vigor
 					["providers"] = {
 						{ "o", 332280 },	-- Flower of Vigor
 						{ "i", 170280 },	-- Flower of Vigor (QI!)
 					},
-					["coord"] = { 61.7, 40.0, THE_HINTERLANDS },
+					["coord"] = { 61.7, 40.0, MAP.THE_HINTERLANDS },
 				}),
 				i(170205, {	-- Crown of Boundless Courage
 					["timeline"] = { ADDED_8_3_0 },
@@ -363,7 +363,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
 			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["qg"] = 155759,	-- Myrael Lunarbloom
-			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["coord"] = { 53.1, 36.0, MAP.MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				objective(1, {	-- 0/3 Flower of Compassion
@@ -371,21 +371,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 						{ "o", 332287 },	-- Flower of Compassion
 						{ "i", 170296 },	-- Flower of Compassion (QI!)
 					},
-					["coord"] = { 52.2, 48.0, DESOLACE },
+					["coord"] = { 52.2, 48.0, MAP.DESOLACE },
 				}),
 				objective(2, {	-- 0/3 Flower of Reflection
 					["providers"] = {
 						{ "o", 332288 },	-- Flower of Reflection
 						{ "i", 170298 },	-- Flower of Reflection (QI!)
 					},
-					["coord"] = { 64.6, 25.9, DUSKWOOD },
+					["coord"] = { 64.6, 25.9, MAP.DUSKWOOD },
 				}),
 				objective(3, {	-- 0/3 Flower of Solemnity
 					["providers"] = {
 						{ "o", 332289 },	-- Flower of Solemnity
 						{ "i", 170308 },	-- Flower of Solemnity (QI!)
 					},
-					["coord"] = { 56.7, 32.9, SILVERPINE_FOREST },
+					["coord"] = { 56.7, 32.9, MAP.SILVERPINE_FOREST },
 				}),
 				i(170207, {	-- Crown of Eternal Memorial
 					["timeline"] = { ADDED_8_3_0 },
@@ -396,7 +396,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
 			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["qg"] = 155759,	-- Myrael Lunarbloom
-			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["coord"] = { 53.1, 36.0, MAP.MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				objective(1, {	-- 0/3 Flower of Thoughtfulness
@@ -404,21 +404,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 						{ "o", 332292 },	-- Flower of Thoughtfulness
 						{ "i", 170319 },	-- Flower of Thoughtfulness (QI!)
 					},
-					["coord"] = { 49.0, 23.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.0, 23.0, MAP.HILLSBRAD_FOOTHILLS },
 				}),
 				objective(2, {	-- 0/3 Flower of Luck
 					["providers"] = {
 						{ "o", 332293 },	-- Flower of Luck
 						{ "i", 170321 },	-- Flower of Luck (QI!)
 					},
-					["coord"] = { 48.0, 55.0, DUN_MOROGH },
+					["coord"] = { 48.0, 55.0, MAP.DUN_MOROGH },
 				}),
 				objective(3, {	-- 0/3 Flower of Generosity
 					["providers"] = {
 						{ "o", 332294 },	-- Flower of Generosity
 						{ "i", 170322 },	-- Flower of Generosity (QI!)
 					},
-					["coord"] = { 57.5, 32.5, WINTERSPRING },
+					["coord"] = { 57.5, 32.5, MAP.WINTERSPRING },
 				}),
 				i(169208, {	-- Crown of Everlasting Fortune
 					["timeline"] = { ADDED_8_3_0 },
@@ -429,7 +429,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
 			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["qg"] = 155759,	-- Myrael Lunarbloom
-			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["coord"] = { 53.1, 36.0, MAP.MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				objective(1, {	-- 0/3 Flower of Wealth
@@ -451,7 +451,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 						{ "o", 332283 },	-- Flower of Felicity
 						{ "i", 170283 },	-- Flower of Felicity (QI!)
 					},
-					["coord"] = { 66.6, 28.6, UNGORO_CRATER },
+					["coord"] = { 66.6, 28.6, MAP.UNGORO_CRATER },
 				}),
 				i(170206, {	-- Crown of Infinite Prosperity
 					["timeline"] = { ADDED_8_3_0 },
@@ -462,7 +462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["description"] = "In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",
 			["sourceQuest"] = 8883,	-- Valadar Starsong
 			["qg"] = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.6, 35.3, MOONGLADE },
+			["coord"] = { 53.6, 35.3, MAP.MOONGLADE },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(40, 40, 1),
 			["_drop"] = { "g" },
@@ -476,7 +476,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8862, {	-- Elune's Candle
 			["qg"] = 15864,	-- Valadar Starsong
-			["coord"] = { 53.6, 35.3, MOONGLADE },
+			["coord"] = { 53.6, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["isYearly"] = true,
@@ -490,7 +490,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8863, {	-- Festival Dumplings
 			["qg"] = 15864,	-- Valadar Starsong
-			["coord"] = { 53.6, 35.3, MOONGLADE },
+			["coord"] = { 53.6, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 1 } },
 			["repeatable"] = true,
@@ -502,7 +502,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8864, {	-- Festive Lunar Dresses
 			["qg"] = 15864,	-- Valadar Starsong
-			["coord"] = { 53.6, 35.3, MOONGLADE },
+			["coord"] = { 53.6, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
@@ -517,7 +517,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8865, {	-- Festive Lunar Pant Suits
 			["qg"] = 15864,	-- Valadar Starsong
-			["coord"] = { 53.6, 35.3, MOONGLADE },
+			["coord"] = { 53.6, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["isYearly"] = true,
@@ -532,7 +532,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8878, {	-- Festive Recipes
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.8, 35.3, MOONGLADE },
+			["coord"] = { 53.8, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
@@ -551,7 +551,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8877, {	-- Firework Launcher
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.8, 35.3, MOONGLADE },
+			["coord"] = { 53.8, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
@@ -567,7 +567,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8881, {	-- Large Cluster Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.8, 35.3, MOONGLADE },
+			["coord"] = { 53.8, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
@@ -585,7 +585,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8879, {	-- Large Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.8, 35.3, MOONGLADE },
+			["coord"] = { 53.8, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
@@ -616,12 +616,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 			["qg"] = 15895,	-- Lunar Festival Harbinger
 			["coords"] = {
-				{ 32.5, 53.0, ELWYNN_FOREST },
-				{ 28.8, 16.2, IRONFORGE },
-				{ 65.6, 36.0, UNDERCITY },
-				{ 71.1, 28.2, THUNDER_BLUFF },
-				{ 49.1, 55.8, ORGRIMMAR },
-				{ 38.6, 30.3, DARNASSUS },
+				{ 32.5, 53.0, MAP.ELWYNN_FOREST },
+				{ 28.8, 16.2, MAP.IRONFORGE },
+				{ 65.6, 36.0, MAP.UNDERCITY },
+				{ 71.1, 28.2, MAP.THUNDER_BLUFF },
+				{ 49.1, 55.8, MAP.ORGRIMMAR },
+				{ 38.6, 30.3, MAP.DARNASSUS },
 				-- #if AFTER TBC
 				{ 74.0, 57.5, THE_EXODAR },
 				{ 73.0, 82.6, SILVERMOON_CITY },
@@ -644,7 +644,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(56842, {	-- Lunar Preservation
 			["description"] = "Only a very few moonwells in faction-neutral locations counts for this quest. If you happen to lose the 'Blessing of the Moon'-buff due to death, you can continue as you still have the buff and turn in the quest without having to revisit moonwells.",
 			["qg"] = 155759,	-- Myrael Lunarbloom
-			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["coord"] = { 53.1, 36.0, MAP.MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				i(170084),	-- Blessed Staff of Moonflowers (QI!)
@@ -653,7 +653,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8876, {	-- Small Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.8, 35.3, MOONGLADE },
+			["coord"] = { 53.8, 35.3, MAP.MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
@@ -671,42 +671,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8870, {	-- The Lunar Festival (A)
 			["qg"] = 15892,	-- Lunar Festival Emissary
-			["maps"] = { IRONFORGE },
+			["maps"] = { MAP.IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(8871, {	-- The Lunar Festival (A)
 			["qg"] = 15892,	-- Lunar Festival Emissary
-			["maps"] = { STORMWIND_CITY, ELWYNN_FOREST },
+			["maps"] = { MAP.STORMWIND_CITY, MAP.ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(8872, {	-- The Lunar Festival (A)
 			["qg"] = 15892,	-- Lunar Festival Emissary
-			["maps"] = { DARNASSUS },
+			["maps"] = { MAP.DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(8873, {	-- The Lunar Festival (H)
 			["qg"] = 15891,	-- Lunar Festival Herald
-			["maps"] = { ORGRIMMAR },
+			["maps"] = { MAP.ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(8874, {	-- The Lunar Festival (H)
 			["qg"] = 15891,	-- Lunar Festival Herald
-			["maps"] = { UNDERCITY },
+			["maps"] = { MAP.UNDERCITY },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(8875, {	-- The Lunar Festival (H)
 			["qg"] = 15891,	-- Lunar Festival Herald
-			["maps"] = { THUNDER_BLUFF },
+			["maps"] = { MAP.THUNDER_BLUFF },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
@@ -753,12 +753,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["sourceQuest"] = 8867,	-- Lunar Fireworks
 			["qg"] = 15895,	-- Lunar Festival Harbinger
 			["coords"] = {
-				{ 32.5, 53.0, ELWYNN_FOREST },
-				{ 28.8, 16.2, IRONFORGE },
-				{ 65.6, 36.0, UNDERCITY },
-				{ 71.1, 28.2, THUNDER_BLUFF },
-				{ 49.1, 55.8, ORGRIMMAR },
-				{ 38.6, 30.3, DARNASSUS },
+				{ 32.5, 53.0, MAP.ELWYNN_FOREST },
+				{ 28.8, 16.2, MAP.IRONFORGE },
+				{ 65.6, 36.0, MAP.UNDERCITY },
+				{ 71.1, 28.2, MAP.THUNDER_BLUFF },
+				{ 49.1, 55.8, MAP.ORGRIMMAR },
+				{ 38.6, 30.3, MAP.DARNASSUS },
 				-- #if AFTER TBC
 				{ 74.0, 57.5, THE_EXODAR },
 				{ 73.0, 82.6, SILVERMOON_CITY },
@@ -855,7 +855,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			}),
 			q(29740, {	-- Evershade the Elder
 				["qg"] = 55227,	-- Elder Evershade
-				["coord"] = { 62.5, 22.8, MOUNT_HYJAL },
+				["coord"] = { 62.5, 22.8, MAP.MOUNT_HYJAL },
 			}),
 			q(29737, {	-- Firebeard the Elder
 				["qg"] = 55219,	-- Elder Firebeard
@@ -879,7 +879,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			}),
 			q(29739, {	-- Windsong the Elder
 				["qg"] = 55224,	-- Elder Windsong
-				["coord"] = { 26.7, 62.0, MOUNT_HYJAL },
+				["coord"] = { 26.7, 62.0, MAP.MOUNT_HYJAL },
 			}),
 		}),
 		eldersHeader(1396, ADDED_3_0_8, {	-- Elders of Northrend
@@ -965,9 +965,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15598,	-- Elder Bladeswift
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 39.3, 31.8, DARNASSUS },
+					{ 39.3, 31.8, MAP.DARNASSUS },
 					-- #else
-					{ 33.5, 14.3, DARNASSUS },
+					{ 33.5, 14.3, MAP.DARNASSUS },
 					-- #endif
 				},
 			}),
@@ -977,9 +977,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #endif
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 29.4, 17.1, IRONFORGE },	-- The Mystic Ward
+					{ 29.4, 17.1, MAP.IRONFORGE },	-- The Mystic Ward
 					-- #else
-					{ 29.1, 17.0, IRONFORGE },	-- The Mystic Ward
+					{ 29.1, 17.0, MAP.IRONFORGE },	-- The Mystic Ward
 					-- #endif
 				},
 				["qg"] = 15871,	-- Elder Bronzebeard
@@ -988,13 +988,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15562,	-- Elder Hammershout
 				["coords"] = {
 					-- #if AFTER TWW
-					{ 32.1, 52.8, ELWYNN_FOREST },
+					{ 32.1, 52.8, MAP.ELWYNN_FOREST },
 					-- #elseif AFTER CATA
-					{ 34.5, 50.3, ELWYNN_FOREST },
+					{ 34.5, 50.3, MAP.ELWYNN_FOREST },
 					-- #elseif AFTER WRATH
-					{ 36.3, 66.1, STORMWIND_CITY },
+					{ 36.3, 66.1, MAP.STORMWIND_CITY },
 					-- #else
-					{ 21.6, 54.0, STORMWIND_CITY },
+					{ 21.6, 54.0, MAP.STORMWIND_CITY },
 					-- #endif
 				},
 			}),
@@ -1007,10 +1007,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15564,	-- Elder Darkcore
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 45.0, 38.7, EASTERN_KINGDOMS },
-					{ 66.5, 38.0, UNDERCITY },
+					{ 45.0, 38.7, MAP.EASTERN_KINGDOMS },
+					{ 66.5, 38.0, MAP.UNDERCITY },
 					-- #else
-					{ 66.6, 38.2, UNDERCITY },
+					{ 66.6, 38.2, MAP.UNDERCITY },
 					-- #endif
 				},
 			}),
@@ -1020,9 +1020,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #endif
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 52.1, 59.8, ORGRIMMAR },
+					{ 52.1, 59.8, MAP.ORGRIMMAR },
 					-- #else
-					{ 40.9, 33.9, ORGRIMMAR },
+					{ 40.9, 33.9, MAP.ORGRIMMAR },
 					-- #endif
 				},
 				["qg"] = 15579,	-- Elder Darkhorn
@@ -1033,9 +1033,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #endif
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 72.8, 22.8, THUNDER_BLUFF },	-- The Elder Rise
+					{ 72.8, 22.8, MAP.THUNDER_BLUFF },	-- The Elder Rise
 					-- #else
-					{ 73.0, 23.4, THUNDER_BLUFF },	-- The Elder Rise
+					{ 73.0, 23.4, MAP.THUNDER_BLUFF },	-- The Elder Rise
 					-- #endif
 				},
 				["qg"] = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
@@ -1049,11 +1049,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15563,	-- Elder Bellowrage
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 54.2, 49.4, BLASTED_LANDS },
+					{ 54.2, 49.4, MAP.BLASTED_LANDS },
 					-- #elseif AFTER TBC
-					{ 57.9, 54.9, BLASTED_LANDS },
+					{ 57.9, 54.9, MAP.BLASTED_LANDS },
 					-- #else
-					{ 58.8, 51.6, BLASTED_LANDS },
+					{ 58.8, 51.6, MAP.BLASTED_LANDS },
 					-- #endif
 				},
 			}),
@@ -1061,9 +1061,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15585,	-- Elder Dawnstrider
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 52.3, 23.9, BURNING_STEPPES },
+					{ 52.3, 23.9, MAP.BURNING_STEPPES },
 					-- #else
-					{ 64.5, 24.1, BURNING_STEPPES },
+					{ 64.5, 24.1, MAP.BURNING_STEPPES },
 					-- #endif
 				},
 			}),
@@ -1071,9 +1071,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15569,	-- Elder Goldwell
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 53.8, 49.9, DUN_MOROGH },
+					{ 53.8, 49.9, MAP.DUN_MOROGH },
 					-- #else
-					{ 46.8, 51.6, DUN_MOROGH },
+					{ 46.8, 51.6, MAP.DUN_MOROGH },
 					-- #endif
 				},
 			}),
@@ -1084,9 +1084,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15568,	-- Elder Graveborn
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 61.8, 53.9, TIRISFAL_GLADES },
+					{ 61.8, 53.9, MAP.TIRISFAL_GLADES },
 					-- #else
-					{ 61.9, 53.8, TIRISFAL_GLADES },
+					{ 61.9, 53.8, MAP.TIRISFAL_GLADES },
 					-- #endif
 				},
 			}),
@@ -1094,15 +1094,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15559,	-- Elder Highpeak
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 49.9, 47.9, THE_HINTERLANDS },
+					{ 49.9, 47.9, MAP.THE_HINTERLANDS },
 					-- #else
-					{ 50.0, 48.0, THE_HINTERLANDS },
+					{ 50.0, 48.0, MAP.THE_HINTERLANDS },
 					-- #endif
 				},
 			}),
 			q(8651, {	-- Ironband the Elder
 				["qg"] = 15567,	-- Elder Ironband
-				["coord"] = { 21.3, 79.0, SEARING_GORGE },
+				["coord"] = { 21.3, 79.0, MAP.SEARING_GORGE },
 			}),
 			q(8722, {	-- Meadowrun the Elder
 				-- #if AFTER CATA
@@ -1110,9 +1110,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #endif
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 63.5, 36.2, WESTERN_PLAGUELANDS },
+					{ 63.5, 36.2, MAP.WESTERN_PLAGUELANDS },
 					-- #else
-					{ 66.0, 47.8, WESTERN_PLAGUELANDS },
+					{ 66.0, 47.8, MAP.WESTERN_PLAGUELANDS },
 					-- #endif
 				},
 				["qg"] = 15602,	-- Elder Meadowrun
@@ -1121,9 +1121,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15594,	-- Elder Moonstrike
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 69.1, 73.3, WESTERN_PLAGUELANDS },
+					{ 69.1, 73.3, MAP.WESTERN_PLAGUELANDS },
 					-- #else
-					{ 69.0, 73.0, WESTERN_PLAGUELANDS },
+					{ 69.0, 73.0, MAP.WESTERN_PLAGUELANDS },
 					-- #endif
 				},
 			}),
@@ -1131,9 +1131,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15561,	-- Elder Obsidian
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 45.0, 41.1, SILVERPINE_FOREST },
+					{ 45.0, 41.1, MAP.SILVERPINE_FOREST },
 					-- #else
-					{ 44.9, 41.1, SILVERPINE_FOREST },
+					{ 44.9, 41.1, MAP.SILVERPINE_FOREST },
 					-- #endif
 				},
 			}),
@@ -1141,29 +1141,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15557,	-- Elder Rumblerock
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 70.1, 45.4, BURNING_STEPPES },
+					{ 70.1, 45.4, MAP.BURNING_STEPPES },
 					-- #else
-					{ 82.2, 46.5, BURNING_STEPPES },
+					{ 82.2, 46.5, MAP.BURNING_STEPPES },
 					-- #endif
 				},
 			}),
 			q(8642, {	-- Silvervein the Elder
 				["qg"] = 15558,	-- Elder Silvervein
-				["coord"] = { 33.3, 46.5, LOCH_MODAN },
+				["coord"] = { 33.3, 46.5, MAP.LOCH_MODAN },
 			}),
 			q(8675, {	-- Skychaser the Elder
 				["qg"] = 15577,	-- Elder Skychaser
-				["coord"] = { 56.7, 47.1, WESTFALL },
+				["coord"] = { 56.7, 47.1, MAP.WESTFALL },
 			}),
 			q(8650, {	-- Snowcrown the Elder
 				["qg"] = 15566,	-- Elder Snowcrown
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 75.7, 54.4, EASTERN_PLAGUELANDS },
+					{ 75.7, 54.4, MAP.EASTERN_PLAGUELANDS },
 					-- #elseif AFTER WRATH
-					{ 75.7, 54.6, EASTERN_PLAGUELANDS },
+					{ 75.7, 54.6, MAP.EASTERN_PLAGUELANDS },
 					-- #else
-					{ 81.5, 60.5, EASTERN_PLAGUELANDS },
+					{ 81.5, 60.5, MAP.EASTERN_PLAGUELANDS },
 					-- #endif
 				},
 			}),
@@ -1173,23 +1173,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #if AFTER CATA
 					{ 71.0, 34.2, NORTHERN_STRANGLETHORN },
 					-- #else
-					{ 53.11, 18.46, STRANGLETHORN_VALE },
+					{ 53.11, 18.46, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 			}),
 			q(8649, {	-- Stormbrow the Elder
 				["qg"] = 15565,	-- Elder Stormbrow
-				["coord"] = { 39.8, 63.8, ELWYNN_FOREST },
+				["coord"] = { 39.8, 63.8, MAP.ELWYNN_FOREST },
 			}),
 			q(8688, {	-- Windrun the Elder
 				["qg"] = 15592,	-- Elder Windrun
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 35.5, 68.8, EASTERN_PLAGUELANDS },
+					{ 35.5, 68.8, MAP.EASTERN_PLAGUELANDS },
 					-- #elseif AFTER WRATH
-					{ 35.6, 68.8, EASTERN_PLAGUELANDS },
+					{ 35.6, 68.8, MAP.EASTERN_PLAGUELANDS },
 					-- #else
-					{ 39.7, 75.4, EASTERN_PLAGUELANDS },
+					{ 39.7, 75.4, MAP.EASTERN_PLAGUELANDS },
 					-- #endif
 				},
 			}),
@@ -1199,9 +1199,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #if AFTER CATA
 					{ 40.0, 72.4, THE_CAPE_OF_STRANGLETHORN },
 					-- #elseif AFTER TBC
-					{ 26.4, 76.6, STRANGLETHORN_VALE },
+					{ 26.4, 76.6, MAP.STRANGLETHORN_VALE },
 					-- #else
-					{ 27.6, 74.2, STRANGLETHORN_VALE },
+					{ 27.6, 74.2, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 			}),
@@ -1214,9 +1214,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15595,	-- Elder Bladeleaf
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 56.8, 53.1, TELDRASSIL },
+					{ 56.8, 53.1, MAP.TELDRASSIL },
 					-- #else
-					{ 56.9, 60.5, TELDRASSIL },
+					{ 56.9, 60.5, MAP.TELDRASSIL },
 					-- #endif
 				},
 			}),
@@ -1227,23 +1227,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15599,	-- Elder Bladesing
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 53.0, 35.4, SILITHUS },
+					{ 53.0, 35.4, MAP.SILITHUS },
 					-- #else
-					{ 49.0, 37.7, SILITHUS },
+					{ 49.0, 37.7, MAP.SILITHUS },
 					-- #endif
 				},
 			}),
 			q(8673, {	-- Bloodhoof the Elder
 				["qg"] = 15575,	-- Elder Bloodhoof
-				["coord"] = { 48.4, 53.2, MULGORE },
+				["coord"] = { 48.4, 53.2, MAP.MULGORE },
 			}),
 			q(8726, {	-- Brightspear the Elder
 				["qg"] = 15606,	-- Elder Brightspear
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 53.2, 56.7, WINTERSPRING },
+					{ 53.2, 56.7, MAP.WINTERSPRING },
 					-- #else
-					{ 55.6, 43.7, WINTERSPRING },
+					{ 55.6, 43.7, MAP.WINTERSPRING },
 					-- #endif
 				},
 			}),
@@ -1251,9 +1251,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15586,	-- Elder Dreamseer
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 51.3, 28.8, TANARIS },
+					{ 51.3, 28.8, MAP.TANARIS },
 					-- #else
-					{ 51.5, 27.8, TANARIS },
+					{ 51.5, 27.8, MAP.TANARIS },
 					-- #endif
 				},
 			}),
@@ -1261,9 +1261,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15581,	-- Elder Grimtotem
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 76.7, 37.8, FERALAS },
+					{ 76.7, 37.8, MAP.FERALAS },
 					-- #else
-					{ 76.7, 37.9, FERALAS },
+					{ 76.7, 37.9, MAP.FERALAS },
 					-- #endif
 				},
 			}),
@@ -1273,7 +1273,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #if AFTER CATA
 					{ 41.6, 47.4, SOUTHERN_BARRENS },
 					-- #else
-					{ 45.0, 58.0, THE_BARRENS },
+					{ 45.0, 58.0, MAP.THE_BARRENS },
 					-- #endif
 				},
 			}),
@@ -1281,9 +1281,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15587,	-- Elder Mistwalker
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 62.5, 30.9, FERALAS },
+					{ 62.5, 30.9, MAP.FERALAS },
 					-- #else
-					{ 62.5, 31.0, FERALAS },
+					{ 62.5, 31.0, MAP.FERALAS },
 					-- #endif
 				},
 			}),
@@ -1293,7 +1293,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #if AFTER CATA
 					{ 48.5, 59.2, NORTHERN_BARRENS },
 					-- #else
-					{ 51.4, 30.7, THE_BARRENS },
+					{ 51.4, 30.7, MAP.THE_BARRENS },
 					-- #endif
 				},
 			}),
@@ -1301,9 +1301,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15604,	-- Elder Morningdew
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 77.1, 75.6, THOUSAND_NEEDLES },
+					{ 77.1, 75.6, MAP.THOUSAND_NEEDLES },
 					-- #else
-					{ 79.2, 77.1, THOUSAND_NEEDLES },
+					{ 79.2, 77.1, MAP.THOUSAND_NEEDLES },
 					-- #endif
 				},
 			}),
@@ -1311,10 +1311,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15603,	-- Elder Nightwind
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 38.4, 52.8, FELWOOD },
-					{ 47.8, 29.4, KALIMDOR },
+					{ 38.4, 52.8, MAP.FELWOOD },
+					{ 47.8, 29.4, MAP.KALIMDOR },
 					-- #else
-					{ 37.7, 53.0, FELWOOD },
+					{ 37.7, 53.0, MAP.FELWOOD },
 					-- #endif
 				},
 			}),
@@ -1325,9 +1325,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15570,	-- Elder Primestone
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 30.8, 13.3, SILITHUS },
+					{ 30.8, 13.3, MAP.SILITHUS },
 					-- #else
-					{ 23.1, 11.8, SILITHUS },
+					{ 23.1, 11.8, MAP.SILITHUS },
 					-- #endif
 				},
 			}),
@@ -1335,23 +1335,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15573,	-- Elder Ragetotem
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 37.2, 79.0, TANARIS },
+					{ 37.2, 79.0, MAP.TANARIS },
 					-- #else
-					{ 36.3, 80.5, TANARIS },
+					{ 36.3, 80.5, MAP.TANARIS },
 					-- #endif
 				},
 			}),
 			q(8725, {	-- Riversong the Elder
 				["qg"] = 15605,	-- Elder Riversong
-				["coord"] = { 35.5, 48.9, ASHENVALE },
+				["coord"] = { 35.5, 48.9, MAP.ASHENVALE },
 			}),
 			q(8670, {	-- Runetotem the Elder
 				["qg"] = 15572,	-- Elder Runetotem
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 53.1, 43.6, DUROTAR },
+					{ 53.1, 43.6, MAP.DUROTAR },
 					-- #else
-					{ 53.1, 44.2, DUROTAR },
+					{ 53.1, 44.2, MAP.DUROTAR },
 					-- #endif
 				},
 			}),
@@ -1359,9 +1359,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15600,	-- Elder Skygleam
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 64.7, 79.3, AZSHARA },
+					{ 64.7, 79.3, MAP.AZSHARA },
 					-- #else
-					{ 72.4, 85.4, AZSHARA },
+					{ 72.4, 85.4, MAP.AZSHARA },
 					-- #endif
 				},
 			}),
@@ -1369,9 +1369,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15584,	-- Elder Skyseer
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 46.3, 50.9, THOUSAND_NEEDLES },
+					{ 46.3, 50.9, MAP.THOUSAND_NEEDLES },
 					-- #else
-					{ 45.4, 50.1, THOUSAND_NEEDLES },
+					{ 45.4, 50.1, MAP.THOUSAND_NEEDLES },
 					-- #endif
 				},
 			}),
@@ -1382,9 +1382,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15601,	-- Elder Starweave
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 49.5, 18.9, DARKSHORE },
+					{ 49.5, 18.9, MAP.DARKSHORE },
 					-- #else
-					{ 36.8, 46.7, DARKSHORE },
+					{ 36.8, 46.7, MAP.DARKSHORE },
 					-- #endif
 				},
 			}),
@@ -1392,15 +1392,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15574,	-- Elder Stonespire
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 59.9, 49.9, WINTERSPRING },
+					{ 59.9, 49.9, MAP.WINTERSPRING },
 					-- #else
-					{ 61.4, 37.8, WINTERSPRING },
+					{ 61.4, 37.8, MAP.WINTERSPRING },
 					-- #endif
 				},
 			}),
 			q(8681, {	-- Thunderhorn the Elder
 				["qg"] = 15583,	-- Elder Thunderhorn
-				["coord"] = { 50.3, 76.2, UNGORO_CRATER },
+				["coord"] = { 50.3, 76.2, MAP.UNGORO_CRATER },
 			}),
 			q(8680, {	-- Windtotem the Elder
 				["qg"] = 15582,	-- Elder Windtotem
@@ -1408,7 +1408,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #if AFTER CATA
 					{ 68.4, 69.9, NORTHERN_BARRENS },
 					-- #else
-					{ 62.7, 36.7, THE_BARRENS },
+					{ 62.7, 36.7, MAP.THE_BARRENS },
 					-- #endif
 				},
 			}),
@@ -1430,11 +1430,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 27.7, 11.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+					{ 27.7, 11.6, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 					-- #elseif AFTER WRATH
-					{ 43.7, 17.5, EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
+					{ 43.7, 17.5, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
 					-- #else
-					{ 48.1, 21.9, EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
+					{ 48.1, 21.9, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
 					-- #endif
 				},
 				["qg"] = 15607,	-- Elder Farwhisper
@@ -1501,9 +1501,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 76.0, 45.2, SWAMP_OF_SORROWS },
+					{ 76.0, 45.2, MAP.SWAMP_OF_SORROWS },
 					-- #else
-					{ 69.2, 54.8, SWAMP_OF_SORROWS },
+					{ 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 					-- #endif
 				},
 				["qg"] = 15593,	-- Elder Starsong
@@ -1535,9 +1535,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15578,	-- Elder Wildmane
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 39.21, 21.29, TANARIS },
+					{ 39.21, 21.29, MAP.TANARIS },
 					-- #else
-					{ 39.0, 19.0, TANARIS },
+					{ 39.0, 19.0, MAP.TANARIS },
 					-- #endif
 				},
 				["maps"] = { ZULFARRAK },
@@ -1557,7 +1557,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 	-- #if AFTER 3.0.8.9464
 	n(VENDORS, {
 		n(15909, {	-- Fariel Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.8, 35.3, MOONGLADE },
+			["coord"] = { 53.8, 35.3, MAP.MOONGLADE },
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
 					["cost"] = { { "i", COIN_OF_ANCESTRY, 40 } },
@@ -1723,18 +1723,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		n(15898, {	-- Lunar Festival Vendor
 			["coords"] = {
-				{ 34.6, 12.6, DARNASSUS },
-				{ 29.6, 14.6, IRONFORGE },
-				{ 36.6, 58.6, MOONGLADE },
+				{ 34.6, 12.6, MAP.DARNASSUS },
+				{ 29.6, 14.6, MAP.IRONFORGE },
+				{ 36.6, 58.6, MAP.MOONGLADE },
 				-- #if AFTER 10.2.5
-				{ 48.6, 57.0, ORGRIMMAR },
+				{ 48.6, 57.0, MAP.ORGRIMMAR },
 				-- #elseif AFTER CATA
-				{ 52.8, 56.2, ORGRIMMAR },
+				{ 52.8, 56.2, MAP.ORGRIMMAR },
 				-- #else
-				{ 41.6, 32.6, ORGRIMMAR },
+				{ 41.6, 32.6, MAP.ORGRIMMAR },
 				-- #endif
-				{ 70.6, 28.0, THUNDER_BLUFF },
-				{ 66.2, 35.8, UNDERCITY },
+				{ 70.6, 28.0, MAP.THUNDER_BLUFF },
+				{ 66.2, 35.8, MAP.UNDERCITY },
 			},
 			-- #if AFTER 4.0.3.13329
 			["crs"] = { 47897 },	-- Lunar Festival Vendor
@@ -1787,7 +1787,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 		}),
 		n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>
-			["coord"] = { 53.6, 35.3, MOONGLADE },
+			["coord"] = { 53.6, 35.3, MAP.MOONGLADE },
 			-- #if AFTER 10.2.5
 			["sym"] = {{"select","itemID",
 				211868,	-- Winding Slitherdrake: Lunar Festival Armor

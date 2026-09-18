@@ -1428,7 +1428,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				q(65425, {	-- Whatever You Sayaad (A)
 					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
-					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
+					["coord"] = { 79.5, 69.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
@@ -1436,7 +1436,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				q(65424, {	-- Whatever You Sayaad (H)
 					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
-					["coord"] = { 74.6, 47.4, ORGRIMMAR },
+					["coord"] = { 74.6, 47.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
@@ -1450,7 +1450,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				}),
 				q(76430, {	-- Beingning Impositions (H)
 					["provider"] = { "n", 207051 },	-- Assistant Phineas
-					["coord"] = { 42.5, 51.8, ORGRIMMAR },
+					["coord"] = { 42.5, 51.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
@@ -1465,7 +1465,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				q(75538, {	-- Beginning Impositions (A)
 					["sourceQuests"] = { 76410 },	-- A Dark Summons (?)
 					["provider"] = { "n", 204198 },	-- Assistant Phineas
-					["coord"] = { 43.6, 79.3, STORMWIND_CITY },
+					["coord"] = { 43.6, 79.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
@@ -1530,7 +1530,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				q(75544, {	-- When Revenge Burns Green
 					["sourceQuests"] = { 75543 },	-- Last Rites By Accident
 					["provider"] = { "n", 205575 },	-- Initiate Oman
-					["coord"] = { 8.4, 36.0, BURNING_STEPPES },
+					["coord"] = { 8.4, 36.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
@@ -2127,8 +2127,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["sourceQuests"] = { 84424 },	-- Forward, to Adventure!
 			["provider"] = { "n", 167032 },	-- Chromie
 			["coords"] = {
-				{ 40.8, 80.1, ORGRIMMAR },
-				{ 56.2, 17.2, STORMWIND_CITY },
+				{ 40.8, 80.1, MAP.ORGRIMMAR },
+				{ 56.2, 17.2, MAP.STORMWIND_CITY },
 			},
 		}),
 	})),

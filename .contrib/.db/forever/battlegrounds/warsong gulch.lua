@@ -73,13 +73,13 @@ battleground(MAP.WARSONG_GULCH, {
 			faction(FACTION_SILVERWING_SENTINELS, {	-- Silverwing Sentinels
 				["icon"] = 132279,
 				["OnTooltip"] = [[_.OnTooltipDB.ForWarsongGulch]],
-				["maps"] = { ASHENVALE },
+				["maps"] = { MAP.ASHENVALE },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			faction(FACTION_WARSONG_OUTRIDERS, {	-- Warsong Outriders
 				["icon"] = 132366,
 				["OnTooltip"] = [[_.OnTooltipDB.ForWarsongGulch]],
-				["maps"] = { ASHENVALE },
+				["maps"] = { MAP.ASHENVALE },
 				["races"] = HORDE_ONLY,
 			}),
 		}),
@@ -183,7 +183,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(8372, {	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 10, 19 },
@@ -191,7 +191,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(8399, {	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 20, 29 },
@@ -199,7 +199,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(8400, {	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 30, 39 },
@@ -207,7 +207,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(8401, {	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 40, 49 },
@@ -215,7 +215,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(8402, {	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 50, 59 },
@@ -223,7 +223,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(8403, {	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 60, 69 },
@@ -232,7 +232,7 @@ battleground(MAP.WARSONG_GULCH, {
 				["sourceQuest"] = 8372,	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -242,7 +242,7 @@ battleground(MAP.WARSONG_GULCH, {
 				["sourceQuest"] = 8399,	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -252,7 +252,7 @@ battleground(MAP.WARSONG_GULCH, {
 				["sourceQuest"] = 8400,	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -262,7 +262,7 @@ battleground(MAP.WARSONG_GULCH, {
 				["sourceQuest"] = 8401,	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -272,7 +272,7 @@ battleground(MAP.WARSONG_GULCH, {
 				["sourceQuest"] = 8402,	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -282,7 +282,7 @@ battleground(MAP.WARSONG_GULCH, {
 				["sourceQuest"] = 8403,	-- Fight for Warsong Gulch
 				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, STORMWIND_CITY },
+				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
 				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -290,7 +290,7 @@ battleground(MAP.WARSONG_GULCH, {
 			}),
 			q(7868, {	-- Outrider Advanced Care Package
 				["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-				["coord"] = { 46.6, 8.4, THE_BARRENS },
+				["coord"] = { 46.6, 8.4, MAP.THE_BARRENS },
 				["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 				["races"] = HORDE_ONLY,
 				["lvl"] = 45,
@@ -300,7 +300,7 @@ battleground(MAP.WARSONG_GULCH, {
 			}),
 			q(7866, {	-- Outrider Basic Care Package
 				["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-				["coord"] = { 46.6, 8.4, THE_BARRENS },
+				["coord"] = { 46.6, 8.4, MAP.THE_BARRENS },
 				["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 				["races"] = HORDE_ONLY,
 				["lvl"] = { 25, 34 },
@@ -310,7 +310,7 @@ battleground(MAP.WARSONG_GULCH, {
 			}),
 			q(7867, {	-- Outrider Standard Care Package
 				["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-				["coord"] = { 46.6, 8.4, THE_BARRENS },
+				["coord"] = { 46.6, 8.4, MAP.THE_BARRENS },
 				["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 				["races"] = HORDE_ONLY,
 				["lvl"] = { 35, 44 },
@@ -320,7 +320,7 @@ battleground(MAP.WARSONG_GULCH, {
 			}),
 			q(7865, {	-- Sentinel Advanced Care Package
 				["qg"] = 14753,	-- Illiyana Moonblaze
-				["coord"] = { 61.6, 83.8, ASHENVALE },
+				["coord"] = { 61.6, 83.8, MAP.ASHENVALE },
 				["minReputation"] = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 45,
@@ -330,7 +330,7 @@ battleground(MAP.WARSONG_GULCH, {
 			}),
 			q(7863, {	-- Sentinel Basic Care Package
 				["qg"] = 14753,	-- Illiyana Moonblaze
-				["coord"] = { 61.6, 83.8, ASHENVALE },
+				["coord"] = { 61.6, 83.8, MAP.ASHENVALE },
 				["minReputation"] = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 25, 34 },
@@ -340,7 +340,7 @@ battleground(MAP.WARSONG_GULCH, {
 			}),
 			q(7864, {	-- Sentinel Standard Care Package
 				["qg"] = 14753,	-- Illiyana Moonblaze
-				["coord"] = { 61.6, 83.8, ASHENVALE },
+				["coord"] = { 61.6, 83.8, MAP.ASHENVALE },
 				["minReputation"] = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 35, 44 },
@@ -354,7 +354,7 @@ battleground(MAP.WARSONG_GULCH, {
 		}),
 		n(VENDORS, {
 			n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
-				["coord"] = { 46.6, 8.4, THE_BARRENS },
+				["coord"] = { 46.6, 8.4, MAP.THE_BARRENS },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(19505),	-- Warsong Battle Tabard
@@ -424,7 +424,7 @@ battleground(MAP.WARSONG_GULCH, {
 				},
 			}),
 			n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
-				["coord"] = { 61.6, 83.8, ASHENVALE },
+				["coord"] = { 61.6, 83.8, MAP.ASHENVALE },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(19506),	-- Silverwing Battle Tabard

@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(FERALAS, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.FERALAS, {
 		["lore"] = "Feralas is a rainforest surrounded by arid zones in southern Kalimdor. It is known for the mystery surrounding Dire Maul--a former city of the Highborne that remained hermetic and drew upon demonic energy to stay immortal. There is a strong Night Elf presence--both in Feathermoon Stronghold, the base of operations for the Sentinels, and in the numerous ruins scattered around the zones.",
 		["icon"] = 236764,
 		["groups"] = {
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(568, {	-- Camp Ataya, Feralas
 					["cr"] = 40473,	-- Tono <Wind Rider Master>
-					["coord"] = { 41.4, 15.4, FERALAS },
+					["coord"] = { 41.4, 15.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -101,12 +101,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						8020,	-- Shyn <Hippogryph Master>
 						-- #endif
 					},
-					["coord"] = { 75.4, 44.2, FERALAS },
+					["coord"] = { 75.4, 44.2, MAP.FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(565, {	-- Dreamer's Rest, Feralas
 					["cr"] = 40966,	-- Selor <Flight Master>
-					["coord"] = { 50.2, 16.6, FERALAS },
+					["coord"] = { 50.2, 16.6, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -120,9 +120,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.8, 45.3, FERALAS },
+						{ 46.8, 45.3, MAP.FERALAS },
 						-- #else
-						{ 30.2, 43.2, FERALAS },
+						{ 30.2, 43.2, MAP.FERALAS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -137,29 +137,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 77.3, 56.8, FERALAS },
+						{ 77.3, 56.8, MAP.FERALAS },
 						-- #else
-						{ 89.4, 45.8, FERALAS },
+						{ 89.4, 45.8, MAP.FERALAS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(569, {	-- Stonemaul Hold, Feralas
 					["cr"] = 41605,	-- Mergek <Wind Rider Master>
-					["coord"] = { 51.0, 48.4, FERALAS },
+					["coord"] = { 51.0, 48.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(567, {	-- Tower of Estulan, Feralas
 					["cr"] = 41580,	-- Aryenda <Flight Master>
-					["coord"] = { 57.1, 53.9, FERALAS },
+					["coord"] = { 57.1, 53.9, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			petbattles({
 				n(66352, {	-- Traitor Gluk <Master Pet Tamer>
-					["coord"] = { 59.6, 49.6, FERALAS },
+					["coord"] = { 59.6, 49.6, MAP.FERALAS },
 					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 13,
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(7948, {	-- Kylanna Windwhisper <Alchemy Trainer>
-						["coord"] = { 46.6, 42.8, FERALAS },
+						["coord"] = { 46.6, 42.8, MAP.FERALAS },
 						["races"] = ALLIANCE_ONLY,
 						-- #if BEFORE 2.1.0
 						["groups"] = EXPERT_ARTISAN_ALCHEMY,
@@ -188,22 +188,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Best fished at the given coords.",
 						["coords"] = {
 							-- #if BEFORE 4.0.3
-							{ 62.0, 52.0, FERALAS },	-- Verdantis River
+							{ 62.0, 52.0, MAP.FERALAS },	-- Verdantis River
 							-- #else
-							{ 62.9, 51.5, FERALAS },	-- Verdantis River
+							{ 62.9, 51.5, MAP.FERALAS },	-- Verdantis River
 							-- #endif
 						},
 					}),
 				}),
 				prof(LEATHERWORKING, {
 					n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
-						["coord"] = { 89.4, 46.4, FERALAS },
+						["coord"] = { 89.4, 46.4, MAP.FERALAS },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = CLASSIC_TBC_TRIBAL,
 					}),
 					n(11098, {	-- Hahrana Ironhide <Master Leatherworker>
-						["coord"] = { 74.4, 43.0, FERALAS },
+						["coord"] = { 74.4, 43.0, MAP.FERALAS },
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE 2.1.0
 						["groups"] = EXPERT_ARTISAN_LEATHERWORKING,
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				prof(SKINNING, {
 					i(7392, {	-- Green Whelp Scale
-						["coord"] = { 47.8, 8.1, FERALAS },
+						["coord"] = { 47.8, 8.1, MAP.FERALAS },
 						["cr"] = 39384,	-- Noxious Whelp
 					}),
 				}),
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25362, {	-- A Grim Discovery
 					["sourceQuest"] = 25361,	-- A New Cloak's Sheen
 					["qg"] = 4544,	-- Krueg Skullsplitter
-					["coord"] = { 74.8, 43.2, FERALAS },
+					["coord"] = { 74.8, 43.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2974, {	-- A Grim Discovery (1/2)
 					["sourceQuest"] = 2973,	-- A New Cloak's Sheen
 					["qg"] = 4544,	-- Krueg Skullsplitter
-					["coord"] = { 76.0, 42.8, FERALAS },
+					["coord"] = { 76.0, 42.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 4544 },	-- Krueg Skullsplitter
 						{ "i", 9462 },	-- Crate of Grimtotem Horns
 					},
-					["coord"] = { 76.0, 42.8, FERALAS },
+					["coord"] = { 76.0, 42.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4266, {	-- A Hero's Welcome
 					["sourceQuest"] = 4265,	-- Freed from the Hive
 					["qg"] = 7880,	-- Ginro Hearthkindle
-					["coord"] = { 31.8, 45.2, FERALAS },
+					["coord"] = { 31.8, 45.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25361, {	-- A New Cloak's Sheen (when does this pop up?)
 					["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
 					["qg"] = 4544,	-- Krueg Skullsplitter
-					["coord"] = { 74.8, 43.3, FERALAS },
+					["coord"] = { 74.8, 43.3, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2973, {	-- A New Cloak's Sheen
 					["qg"] = 4544,	-- Krueg Skullsplitter
-					["coord"] = { 76.0, 42.8, FERALAS },
+					["coord"] = { 76.0, 42.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -327,15 +327,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8115 },	-- Witch Doctor Uzer'i
 						{ "i", 9629 },	-- A Shrunken Head
 					},
-					["coord"] = { 74.4, 43.4, FERALAS },
+					["coord"] = { 74.4, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(2981, {	-- A Threat in Feralas
 					["qg"] = 4485,	-- Belgrom Rockmaul
-					["coord"] = { 75.0, 34.2, ORGRIMMAR },
+					["coord"] = { 75.0, 34.2, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26574, {	-- Adella's Covert Camp
 					["qg"] = 39653,	-- Silvia
-					["coord"] = { 56.9, 55.0, FERALAS },
+					["coord"] = { 56.9, 55.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -351,7 +351,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7725, {	-- Again With the Zapped Giants
 					["sourceQuest"] = 7003,	-- Zapped Giants
 					["qg"] = 14637,	-- Zorbin Fandazzle
-					["coord"] = { 44.8, 43.4, FERALAS },
+					["coord"] = { 44.8, 43.4, MAP.FERALAS },
 					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -373,14 +373,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2870, {	-- Against Lord Shalzaru
 					["sourceQuest"] = 2869,	-- Against the Hatecrest (2/2)
 					["qg"] = 7877,	-- Latronicus Moonspear
-					["coord"] = { 30.4, 46.2, FERALAS },
+					["coord"] = { 30.4, 46.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mysterious Relic
 							["provider"] = { "i", 9248 },	-- Mysterious Relic
-							["coord"] = { 28.4, 70.4, FERALAS },
+							["coord"] = { 28.4, 70.4, MAP.FERALAS },
 							["cr"] = 8136,	-- Lord Shalzaru
 						}),
 					},
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3130, {	-- Against the Hatecrest (1/2)
 					["sourceQuest"] = 2867,	-- Return to Feathermoon Stronghold
 					["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
-					["coord"] = { 30.3, 46.2, FERALAS },
+					["coord"] = { 30.3, 46.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -396,7 +396,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2869, {	-- Against the Hatecrest (2/2)
 					["sourceQuest"] = 3130,	-- Against the Hatecrest (1/2)
 					["qg"] = 7877,	-- Latronicus Moonspear
-					["coord"] = { 30.4, 46.2, FERALAS },
+					["coord"] = { 30.4, 46.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -420,7 +420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25427, {	-- Alpha Strike [A]
 					["sourceQuest"] = 25426,	-- War on the Woodpaw
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -432,7 +432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25364, {	-- Alpha Strike [H]
 					["sourceQuest"] = 25363,	-- War on the Woodpaw
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, FERALAS },
+					["coord"] = { 74.9, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -444,7 +444,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2863, {	-- Alpha Strike
 					["sourceQuest"] = 2862,	-- War on the Woodpaw
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.8, 42.6, FERALAS },
+					["coord"] = { 74.8, 42.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7956 },	-- Kindal Moonweaver
 						{ "i", 11102 },	-- Unhatched Sprite Darter Egg
 					},
-					["coord"] = { 65.8, 45.6, FERALAS },
+					["coord"] = { 65.8, 45.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -471,7 +471,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25350,	-- Lost Apprentice
 					},
 					["qg"] = 40131,	-- Sensiria
-					["coord"] = { 65.9, 62.8, FERALAS },
+					["coord"] = { 65.9, 62.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["lockCriteria"] = { 1, "questID", 25368 },	-- Verinias the Twisted
 					["groups"] = {
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 164909 },	-- Wrecked Row Boat
 						{ "i", 11462 },	-- Discarded Knife
 					},
-					["coord"] = { 45.4, 65.0, FERALAS },
+					["coord"] = { 45.4, 65.0, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -495,14 +495,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2979, {	-- Dark Ceremony
 					["sourceQuest"] = 2978,	-- The Gordunni Scroll
 					["qg"] = 7777,	-- Rok Orhan
-					["coord"] = { 74.2, 44.6, FERALAS },
+					["coord"] = { 74.2, 44.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gordunni Orb
 							["provider"] = { "i", 9371 },	-- Gordunni Orb
-							["coord"] = { 59.2, 70.2, FERALAS },
+							["coord"] = { 59.2, 70.2, MAP.FERALAS },
 							["cr"] = 5239,	-- Gordunni Mage-Lord
 						}),
 					},
@@ -510,18 +510,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				{	-- Dark Heart
 					["allianceQuestData"] = q(25654, {	-- Dark Heart [A]
 						["qg"] = 40035,	-- Erina Willowborn
-						["coord"] = { 51.2, 17.8, FERALAS },
+						["coord"] = { 51.2, 17.8, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(25340, {	-- Dark Heart [H]
 						["qg"] = 7776,	-- Talo Thornhoof
-						["coord"] = { 41.5, 15.2, FERALAS },
+						["coord"] = { 41.5, 15.2, MAP.FERALAS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Edana's Dark Heart
 							["provider"] = { "i", 9528 },	-- Edana's Dark Heart
 							["cost"] = { { "i", 9530, 1 } },	-- Horn of Hatetalon
-							["coord"] = { 40.6, 8.6, FERALAS },
+							["coord"] = { 40.6, 8.6, MAP.FERALAS },
 							["cr"] = 8075,	-- Edana Hatetalon
 						}),
 						-- #if AFTER 4.0.3
@@ -545,7 +545,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 				q(3062, {	-- Dark Heart
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76.0, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -553,7 +553,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Edana's Dark Heart
 							["provider"] = { "i", 9528 },	-- Edana's Dark Heart
 							["cost"] = { { "i", 9530, 1 } },	-- Horn of Hatetalon
-							["coord"] = { 40.6, 8.6, FERALAS },
+							["coord"] = { 40.6, 8.6, MAP.FERALAS },
 							["cr"] = 8075,	-- Edana Hatetalon
 						}),
 						-- #if BEFORE 4.0.3
@@ -580,7 +580,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7877 },	-- Latronicus Moonspear
 						{ "i", 9248 }	-- Mysterious Relic
 					},
-					["coord"] = { 30.4, 46.2, FERALAS },
+					["coord"] = { 30.4, 46.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -596,7 +596,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2970, {	-- Doling Justice (1/2)
 					["sourceQuest"] = 2969,	-- Freedom for All Creatures
 					["qg"] = 7957,	-- Jer'kai Moonweaver
-					["coord"] = { 65.8, 45.6, FERALAS },
+					["coord"] = { 65.8, 45.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -618,9 +618,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7957 },	-- Jer'kai Moonweaver
 						{ "i", 9368 },	-- Jer'kai's Signet Ring
 					},
-					["coord"] = { 65.8, 45.6, FERALAS },
+					["coord"] = { 65.8, 45.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -635,13 +635,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25402, {	-- Estulan's Examination
 					["sourceQuest"] = 25401,	-- The Gordunni Orb
 					["qg"] = 39653,	-- Silvia
-					["coord"] = { 56.9, 55.0, FERALAS },
+					["coord"] = { 56.9, 55.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25466, {	-- Even More Fuel for the Zapping
 					["qg"] = 14637,	-- Zorbin Fandazzle
-					["coord"] = { 48.7, 44.8, FERALAS },
+					["coord"] = { 48.7, 44.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Water Elemental Core
@@ -656,7 +656,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27133, {	-- Eyes in the Sky
 					["qg"] = 3936,	-- Shandris Feathermoon
-					["coord"] = { 46.0, 49.1, FERALAS },
+					["coord"] = { 46.0, 49.1, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25345, {	-- Faerie Dragon Muisek
 					["sourceQuest"] = 25338,	-- Treant Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.3, FERALAS },
+					["coord"] = { 74.4, 43.3, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -675,7 +675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3125, {	-- Faerie Dragon Muisek
 					["sourceQuest"] = 3124,	-- Hippogryph Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.4, FERALAS },
+					["coord"] = { 74.4, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -703,7 +703,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25468, {	-- Forces of Nature: Faerie Dragons
 					["sourceQuest"] = 26574,	-- Adella's Covert Camp
 					["qg"] = 40913,	-- Handler Jesana
-					["coord"] = { 77.0, 56.6, FERALAS },
+					["coord"] = { 77.0, 56.6, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -719,14 +719,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25409, {	-- Forces of Nature: Hippogryphs
 					["sourceQuest"] = 25407,	-- Forces of Nature: Wisps
 					["qg"] = 40078,	-- Handler Tessina
-					["coord"] = { 57.1, 53.8, FERALAS },
+					["coord"] = { 57.1, 53.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25469, {	-- Forces of Nature: Mountain Giants
 					["sourceQuest"] = 25410,	-- Forces of Nature: Treants
 					["qg"] = 40913,	-- Handler Jesana
-					["coord"] = { 77.0, 56.6, FERALAS },
+					["coord"] = { 77.0, 56.6, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -747,27 +747,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25410, {	-- Forces of Nature: Treants
 					["sourceQuest"] = 25409,	-- Forces of Nature: Hippogryphs
 					["qg"] = 40078,	-- Handler Tessina
-					["coord"] = { 57.1, 53.8, FERALAS },
+					["coord"] = { 57.1, 53.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25407, {	-- Forces of Nature: Wisps
 					["qg"] = 40078,	-- Handler Tessina
-					["coord"] = { 57.1, 53.8, FERALAS },
+					["coord"] = { 57.1, 53.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4265, {	-- Freed from the Hive
 					["sourceQuest"] = 4135,	-- The Writhing Deep
 					["provider"] = { "o", 164954 },	-- Zukk'ash Pod
-					["coord"] = { 72.1, 63.7, FERALAS },
+					["coord"] = { 72.1, 63.7, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(2969, {	-- Freedom for All Creatures
 					["qg"] = 7956,	-- Kindal Moonweaver
-					["coord"] = { 65.8, 45.6, FERALAS },
+					["coord"] = { 65.8, 45.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -783,7 +783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7721, {	-- Fuel for the Zapping
 					["qg"] = 14637,	-- Zorbin Fandazzle
-					["coord"] = { 44.8, 43.4, FERALAS },
+					["coord"] = { 44.8, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -801,7 +801,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If you completed or currently have active any quest at Feathermoon Stronghold, this quest stops being available",
 					["sourceQuest"] = 25398,	-- Sealing the Dream
 					["qg"] = 40032,	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -809,7 +809,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25458, {	-- General Skessesh
 					["qg"] = 39723,	-- Tambre
-					["coord"] = { 32.6, 45.7, FERALAS },
+					["coord"] = { 32.6, 45.7, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -822,7 +822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25406, {	-- Gordok Guards
 					["sourceQuest"] = 25400,	-- The Gordunni Threat
 					["qg"] = 39653,	-- Silvia
-					["coord"] = { 56.9, 55.0, FERALAS },
+					["coord"] = { 56.9, 55.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -836,7 +836,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2987, {	-- Gordunni Cobalt
 					["qg"] = 8021,	-- Orwin Gizzmick
-					["coord"] = { 75.6, 44.2, FERALAS },
+					["coord"] = { 75.6, 44.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -863,7 +863,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25399, {	-- Hatecrest Forces
 					["qg"] = 39723,	-- Tambre
-					["coord"] = { 32.6, 45.7, FERALAS },
+					["coord"] = { 32.6, 45.7, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -877,7 +877,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				heroscall(q(28511, {	-- Hero's Call: Feralas!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
@@ -888,7 +888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25337, {	-- Hippogryph Muisek
 					["sourceQuest"] = 25336,	-- Testing the Vessel
 					["qg"] = 39894,	-- Gombana
-					["coord"] = { 52.2, 48.0, FERALAS },
+					["coord"] = { 52.2, 48.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -899,7 +899,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3124, {	-- Hippogryph Muisek
 					["sourceQuest"] = 3123,	-- Testing the Vessel
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.4, FERALAS },
+					["coord"] = { 74.4, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -920,7 +920,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25450, {	-- Improved Quality [A]
 					["sourceQuest"] = 25449,	-- The Mark of Quality [A]
 					["qg"] = 40226,	-- Pratt McGrubben
-					["coord"] = { 45.4, 41.3, FERALAS },
+					["coord"] = { 45.4, 41.3, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -944,7 +944,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7733, {	-- Improved Quality [A]
 					["sourceQuest"] = 2821,	-- The Mark of Quality [A]
 					["qg"] = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
-					["coord"] = { 30.6, 42.7, FERALAS },
+					["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -966,7 +966,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25453, {	-- Improved Quality [H]
 					["sourceQuest"] = 25452,	-- The Mark of Quality [H]
 					["qg"] = 7854,	-- Hangdor Swiftstrider
-					["coord"] = { 52.8, 47.1, FERALAS },
+					["coord"] = { 52.8, 47.1, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -990,7 +990,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7734, {	-- Improved Quality [H]
 					["sourceQuest"] = 2822,	-- The Mark of Quality [H]
 					["qg"] = 7854,	-- Jangdor Swiftstrider
-					["coord"] = { 74.4, 42.8, FERALAS },
+					["coord"] = { 74.4, 42.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -1011,15 +1011,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2939, {	-- In Search of Knowledge
 					["qg"] = 7764,	-- Troyas Moonbreeze
-					["coord"] = { 31.8, 45.5, FERALAS },
+					["coord"] = { 31.8, 45.5, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { TELDRASSIL },
+					["maps"] = { MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
 				q(25432, {	-- It's not "Ogre" Yet
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1030,7 +1030,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3787, {	-- Jonespyre's Request
 					["qg"] = 5566,	-- Tannysa
-					["coord"] = { 44.8, 77.0, STORMWIND_CITY },
+					["coord"] = { 44.8, 77.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1038,7 +1038,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3788, {	-- Jonespyre's Request
 					["qg"] = 7736,	-- Innkeeper Shyria
-					["coord"] = { 31.0, 43.4, FERALAS },
+					["coord"] = { 31.0, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1057,7 +1057,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{ "n", 7852 },	-- Pratt McGrubben
 							{ "i", 9235 },	-- Pratt's Letter
 						},
-						["coord"] = { 30.6, 42.7, FERALAS },
+						["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(2860, {	-- Master of the Wild Leather [H]
 						["sourceQuests"] = {
@@ -1071,7 +1071,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{ "n", 7854 },	-- Jangdor Swiftstrider
 							{ "i", 9236 },	-- Jangdor's Letter
 						},
-						["coord"] = { 74.43, 42.91, FERALAS },
+						["coord"] = { 74.43, 42.91, MAP.FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
@@ -1089,7 +1089,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25208,	-- Tell Silvia
 					},
 					["qg"] = 39653,	-- Silvia
-					["coord"] = { 56.9, 55.0, FERALAS },
+					["coord"] = { 56.9, 55.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1110,7 +1110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25329, {	-- Might of the Stonemaul
 					["sourceQuest"] = 25344,	-- Ogre Abduction
 					["qg"] = 39656,	-- Orhan Ogreblade
-					["coord"] = { 51.9, 47.9, FERALAS },
+					["coord"] = { 51.9, 47.9, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1131,7 +1131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25394, {	-- More than Illness [A]
 					["sourceQuest"] = 25447,	-- Signs of Change
 					["qg"] = 40032,	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1161,7 +1161,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25230, {	-- More than Illness [H]
 					["sourceQuest"] = 25210,	-- Signs of Change
 					["qg"] = 39377,	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, FERALAS },
+					["coord"] = { 41.3, 15.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1191,7 +1191,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3792, {	-- Morrowgrain to Feathermoon Stronghold
 					["sourceQuest"] = 3791,	-- The Mystery of Morrowgrain
 					["qg"] = 7879,	-- Quintis Jonespyre
-					["coord"] = { 32.4, 43.8, FERALAS },
+					["coord"] = { 32.4, 43.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 5 } },	-- Morrowgrain
 					["races"] = ALLIANCE_ONLY,
@@ -1201,7 +1201,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25346, {	-- Mountain Giant Muisek
 					["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.3, FERALAS },
+					["coord"] = { 74.4, 43.3, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1212,7 +1212,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3127, {	-- Mountain Giant Muisek
 					["sourceQuest"] = 3126,	-- Treant Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.4, FERALAS },
+					["coord"] = { 74.4, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -1229,9 +1229,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3128, {	-- Natural Materials
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.4, FERALAS },
+					["coord"] = { 74.4, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1288,7 +1288,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["sourceQuest"] = 25402,	-- Estulan's Examination
 					["qg"] = 40052,	-- Estulan
-					["coord"] = { 57.0, 55.4, FERALAS },
+					["coord"] = { 57.0, 55.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1317,7 +1317,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["sourceQuest"] = 25342,	-- Talk to Swar'jan
 					["qg"] = 39840,	-- Swar'jan
-					["coord"] = { 51.9, 46.6, FERALAS },
+					["coord"] = { 51.9, 46.6, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1342,21 +1342,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27134, {	-- Ogre in the Field
 					["qg"] = 39656,	-- Orhan Ogreblade
-					["coord"] = { 51.9, 47.9, FERALAS },
+					["coord"] = { 51.9, 47.9, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25454, {	-- Perfect Yeti Hide
 					["sourceQuest"] = 25452,	-- The Mark of Quality
 					["provider"] = { "i", 55167 },	-- Perfect Yeti Hide
-					["coord"] = { 55.6, 56.2, FERALAS },
+					["coord"] = { 55.6, 56.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["crs"] = { 39896 },	-- Feral Scar Yeti
 				}),
 				q(7738, {	-- Perfect Yeti Hide
 					["provider"] = { "i", 18972 },	-- Perfect Yeti Hide
-					["coord"] = { 55.6, 56.2, FERALAS },
+					["coord"] = { 55.6, 56.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -1370,7 +1370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25451, {	-- Pristine Yeti Hide
 					["sourceQuest"] = 25449,	-- The Mark of Quality
 					["provider"] = { "i", 55166 },	-- Pristine Yeti Hide
-					["coord"] = { 55.4, 56.4, FERALAS },	-- General area where the Quest Starter can be looted
+					["coord"] = { 55.4, 56.4, MAP.FERALAS },	-- General area where the Quest Starter can be looted
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 39896 },	-- Feral Scar Yeti
@@ -1390,7 +1390,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4130, {	-- Psychometric Reading
 					["sourceQuest"] = 4129,	-- The Knife Revealed
 					["qg"] = 7879,	-- Quintis Jonespyre
-					["coord"] = { 32.5, 43.8, FERALAS },
+					["coord"] = { 32.5, 43.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1398,7 +1398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7726, {	-- Refuel for the Zapping
 					["sourceQuest"] = 7721,	-- Fuel for the Zapping
 					["qg"] = 14637,	-- Zorbin Fandazzle
-					["coord"] = { 44.8, 43.4, FERALAS },
+					["coord"] = { 44.8, 43.4, MAP.FERALAS },
 					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1416,7 +1416,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25463, {	-- Report to Silvia
 					["sourceQuest"] = 25458,	-- General Skessesh
 					["qg"] = 3936,	-- Shandris Feathermoon
-					["coord"] = { 46.0, 49.1, FERALAS },
+					["coord"] = { 46.0, 49.1, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1424,7 +1424,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25476, {	-- Rescue OOX-22/FE!
 					["sourceQuest"] = 25475,	-- Find OOX-22/FE!
 					["qg"] = 7807,	-- Homing Robot OOX-22/FE
-					["coord"] = { 53.3, 55.7, FERALAS },
+					["coord"] = { 53.3, 55.7, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(9647),	-- Failed Flying Experiment
@@ -1434,7 +1434,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2767, {	-- Rescue OOX-22/FE!
 					["sourceQuest"] = 2766,	-- Find OOX-22/FE!
 					["qg"] = 7807,	-- Homing Robot OOX-22\/FE
-					["coord"] = { 53.4, 55.6, FERALAS },
+					["coord"] = { 53.4, 55.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -1445,7 +1445,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2867, {	-- Return to Feathermoon Stronghold
 					["sourceQuest"] = 2866,	-- The Ruins of Solarsal
 					["provider"] = { "o", 142179 },	-- Solarsal Gazebo
-					["coord"] = { 26.3, 52.3, FERALAS },
+					["coord"] = { 26.3, 52.3, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1453,14 +1453,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25645, {	-- Return to Sage Palerunner
 					["sourceQuest"] = 25368,	-- Verinias the Twisted
 					["provider"] = { "o", 203134 },	-- Empty Pedestal
-					["coord"] = { 65.8, 62.8, FERALAS },
+					["coord"] = { 65.8, 62.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26401, {	-- Return to Vestia
 					["sourceQuest"] = 25368,	-- Verinias the Twisted
 					["provider"] = { "o", 203134 },	-- Empty Pedestal
-					["coord"] = { 65.9, 62.9, FERALAS },
+					["coord"] = { 65.9, 62.9, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1470,7 +1470,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3216 },	-- Neeru Fireblade
 						{ "i", 9628 },	-- Neeru's Herb Pouch
 					},
-					["coord"] = { 49.6, 50.6, ORGRIMMAR },
+					["coord"] = { 49.6, 50.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -1481,7 +1481,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3936 },	-- Shandris Feathermoon <General of the Sentinel Army>
 						{ "i", 11466 },	-- Raschal's Report
 					},
-					["coord"] = { 30.3, 46.2, FERALAS },
+					["coord"] = { 30.3, 46.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1497,7 +1497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25252, {	-- Rulers of Dire Maul
 					["sourceQuest"] = 25209,	-- The Gordunni Threat
 					["qg"] = 39656,	-- Orhan Ogreblade
-					["coord"] = { 51.9, 48.0, FERALAS },
+					["coord"] = { 51.9, 48.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1512,7 +1512,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25433, {	-- Sasquatch Sighting [A]
 					["sourceQuest"] = 25432,	-- It's Not "Ogre" Yet
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1536,7 +1536,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25374, {	-- Sasquatch Sighting [H]
 					["sourceQuest"] = 25373,	-- The Hilltop Threat
 					["qg"] = 39847,	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, FERALAS },
+					["coord"] = { 74.5, 42.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1566,7 +1566,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 40032 },	-- Telaron Windflight
 						{ "i", 52576 },	-- Ysondre's Tear (QI!) not prov
 					},
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1590,7 +1590,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 39377 },	-- Konu Runetotem
 						{ "i", 52576 },	-- Ysondre's Tear (QI!) not prov
 					},
-					["coord"] = { 41.3, 15.4, FERALAS },
+					["coord"] = { 41.3, 15.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1611,7 +1611,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14410,	-- The Wilds of Feralas
 					},
 					["qg"] = 40032,	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1627,7 +1627,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28510,	-- Warchief's Command: Feralas!
 					},
 					["qg"] = 39377,	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, FERALAS },
+					["coord"] = { 41.3, 15.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1645,7 +1645,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25429,	-- Zukk'ash Infestation [A]
 					},
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1659,7 +1659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 14637 },	-- Zorbin Fandazzle
 						{ "i", 18904 },	-- Zorbin's Ultra-Shrinker
 					},
-					["coord"] = { 48.7, 44.8, FERALAS },
+					["coord"] = { 48.7, 44.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Miniaturization Residue
@@ -1680,7 +1680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25431, {	-- Stinglasher [A]
 					["sourceQuest"] = 25427,	-- Alpha Strike
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1695,7 +1695,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25369, {	-- Stinglasher [H]
 					["sourceQuest"] = 25366,	-- The Battle Plans
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, FERALAS },
+					["coord"] = { 74.9, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1711,14 +1711,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7731, {	-- Stinglasher
 					["sourceQuest"] = 2903,	-- The Battle Plans
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.8, 42.6, FERALAS },
+					["coord"] = { 74.8, 42.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
 						objective(1, {	-- 0/1 Stinglasher's Glands
 							["provider"] = { "i", 18962 },	-- Stinglasher's Glands
-							["coord"] = { 75.4, 61.0, FERALAS },
+							["coord"] = { 75.4, 61.0, MAP.FERALAS },
 							["cr"] = 14661,	-- Stinglasher
 						}),
 					},
@@ -1729,20 +1729,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25437,	-- Ysondre's Call (alliance)
 					},
 					["qg"] = 39407,	-- Ysondre
-					["coord"] = { 81.5, 42.4, FERALAS },
+					["coord"] = { 81.5, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25342, {	-- Talk to Swar'jan
 					["sourceQuest"] = 25341,	-- The Gordunni Orb
 					["qg"] = 39656,	-- Orhan Ogreblade
-					["coord"] = { 51.9, 48.0, FERALAS },
+					["coord"] = { 51.9, 48.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25434, {	-- Taming the Tamers [A]
 					["sourceQuest"] = 25432,	-- It's Not "Ogre" Yet
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1754,7 +1754,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25375, {	-- Taming the Tamers [H]
 					["sourceQuest"] = 25373,	-- The Hilltop Threat
 					["qg"] = 39847,	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, FERALAS },
+					["coord"] = { 74.5, 42.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1766,7 +1766,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25396, {	-- Tears of Stone [A]
 					["sourceQuest"] = 25394,	-- More Than Illness
 					["qg"] = 40032,	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1781,7 +1781,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25237, {	-- Tears of Stone [H]
 					["sourceQuest"] = 25230,	-- More Than Illness
 					["qg"] = 39377,	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, FERALAS },
+					["coord"] = { 41.3, 15.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1796,13 +1796,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25208, {	-- Tell Silvia
 					["sourceQuest"] = 25403,	-- Ogre Abduction
 					["qg"] = 40052,	-- Estulan
-					["coord"] = { 57.0, 55.4, FERALAS },
+					["coord"] = { 57.0, 55.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25336, {	-- Testing the Vessel
 					["qg"] = 39894,	-- Gombana
-					["coord"] = { 52.2, 48.0, FERALAS },
+					["coord"] = { 52.2, 48.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1813,9 +1813,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3123, {	-- Testing the Vessel
 					["sourceQuest"] = 3122,	-- Return to Witch Doctor Uzer'i
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.4, FERALAS },
+					["coord"] = { 74.4, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1829,14 +1829,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4281, {	-- Thalanaar Delivery
 					["sourceQuest"] = 4135,	-- The Writhing Deep
 					["provider"] = { "i", 11463 },	-- Undelivered Parcel
-					["coord"] = { 73.3, 56.3, FERALAS },
+					["coord"] = { 73.3, 56.3, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(25304, {	-- The Battle of Sardor
 					["qg"] = 3936,	-- Shandris Feathermoon
-					["coord"] = { 46.0, 49.1, FERALAS },
+					["coord"] = { 46.0, 49.1, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1844,7 +1844,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25366, {	-- The Battle Plans
 					["sourceQuest"] = 25365,	-- Woodpaw Investigation
 					["provider"] = { "o", 142195 },	-- Woodpaw Battle Map
-					["coord"] = { 71.6, 55.9, FERALAS },
+					["coord"] = { 71.6, 55.9, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1864,7 +1864,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 142195 },	-- Woodpaw Battle Map
 						{ "i",   9266 },	-- Woodpaw Battle Plans
 					},
-					["coord"] = { 71.6, 55.9, FERALAS },
+					["coord"] = { 71.6, 55.9, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
@@ -1883,7 +1883,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25350,	-- Lost Apprentice
 					},
 					["qg"] = 40131,	-- Sensiria
-					["coord"] = { 65.9, 62.8, FERALAS },
+					["coord"] = { 65.9, 62.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["lockCriteria"] = { 1, "questID", 25368 },	-- Verinias the Twisted
 					["groups"] = {
@@ -1897,28 +1897,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25643, {	-- The Darkmist Ruins
 					["qg"] = 5390,	-- Sage Palerunner
-					["coord"] = { 75.0, 42.7, FERALAS },
+					["coord"] = { 75.0, 42.7, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25641, {	-- The Flow of Muisek
 					["sourceQuest"] = 25337,	-- Hippogryph Muisek
 					["qg"] = 39894,	-- Gombana
-					["coord"] = { 52.2, 48.0, FERALAS },
+					["coord"] = { 52.2, 48.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(55175) },	-- Hippogryph Muisek Vessel (QI!)
 				}),
 				q(2844, {	-- The Giant Guardian
 					["qg"] = 7765,	-- Rockbiter
-					["coord"] = { 42.4, 22.0, FERALAS },
+					["coord"] = { 42.4, 22.0, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
 				}),
 				q(25401, {	-- The Gordunni Orb [A]
 					["qg"] = 39653,	-- Silvia
-					["coord"] = { 56.9, 55.0, FERALAS },
+					["coord"] = { 56.9, 55.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1933,7 +1933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25341, {	-- The Gordunni Orb [H]
 					["qg"] = 39656,	-- Orhan Ogreblade
-					["coord"] = { 51.9, 47.9, FERALAS },
+					["coord"] = { 51.9, 47.9, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1952,9 +1952,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7777 },	-- Rok Orhan
 						{ "i", 9371 },	-- Gordunni Orb
 					},
-					["coord"] = { 74.2, 44.6, FERALAS },
+					["coord"] = { 74.2, 44.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
@@ -1964,8 +1964,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 143980 },	-- Gordunni Scroll
 					},
 					["coords"] = {
-						{ 75.2, 28.7, FERALAS },
-						{ 80.8, 35.0, FERALAS },
+						{ 75.2, 28.7, MAP.FERALAS },
+						{ 80.8, 35.0, MAP.FERALAS },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1973,7 +1973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25400, {	-- The Gordunni Threat [A]
 					["qg"] = 39653,	-- Silvia
-					["coord"] = { 56.9, 55.0, FERALAS },
+					["coord"] = { 56.9, 55.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1989,7 +1989,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25209, {	-- The Gordunni Threat [H]
 					["sourceQuest"] = 25386,	-- To Stonemaul Hold
 					["qg"] = 39656,	-- Orhan Ogreblade
-					["coord"] = { 51.9, 47.9, FERALAS },
+					["coord"] = { 51.9, 47.9, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2004,7 +2004,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2982, {	-- The High Wilderness
 					["qg"] = 7900,	-- Angelas Moonbreeze
-					["coord"] = { 31.8, 45.6, FERALAS },
+					["coord"] = { 31.8, 45.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 39,
@@ -2022,7 +2022,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25373, {	-- The Hilltop Threat
 					["qg"] = 39847,	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, FERALAS },
+					["coord"] = { 74.5, 42.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2037,7 +2037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7880 },	-- Ginro Hearthkindle
 						{ "i", 11462 },	-- Discarded Knife
 					},
-					["coord"] = { 31.9, 45.1, FERALAS },
+					["coord"] = { 31.9, 45.1, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -2045,7 +2045,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25397, {	-- The Land, Corrupted [A]
 					["sourceQuest"] = 25394,	-- More Than Illness
 					["qg"] = 40032,	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2057,7 +2057,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25241, {	-- The Land, Corrupted [H]
 					["sourceQuest"] = 25230,	-- More Than Illness
 					["qg"] = 39377,	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, FERALAS },
+					["coord"] = { 41.3, 15.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2068,13 +2068,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25350, {	-- The Lost Apprentice
 					["qg"] = 40132,	-- Vestia Moonspear
-					["coord"] = { 57.2, 55.0, FERALAS },
+					["coord"] = { 57.2, 55.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25449, {	-- The Mark of Quality [A]
 					["qg"] = 40226,	-- Pratt McGrubben
-					["coord"] = { 45.4, 41.3, FERALAS },
+					["coord"] = { 45.4, 41.3, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2101,7 +2101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2821, {	-- The Mark of Quality [A]
 					["qg"] = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
-					["coord"] = { 30.6, 42.7, FERALAS },
+					["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -2123,7 +2123,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25452, {	-- The Mark of Quality [H]
 					["qg"] = 7854,	-- Jangdor Swiftstrider
-					["coord"] = { 52.8, 47.1, FERALAS },
+					["coord"] = { 52.8, 47.1, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2150,7 +2150,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2822, {	-- The Mark of Quality [H]
 					["qg"] = 7854,	-- Jangdor Swiftstrider
-					["coord"] = { 74.4, 42.8, FERALAS },
+					["coord"] = { 74.4, 42.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -2172,7 +2172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4124, {	-- The Missing Courier (1/2)
 					["qg"] = 7877,	-- Latronicus Moonspear
-					["coord"] = { 30.4, 46.2, FERALAS },
+					["coord"] = { 30.4, 46.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -2180,7 +2180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4125, {	-- The Missing Courier (2/2)
 					["sourceQuest"] = 4124,	-- The Missing Courier (1/2)
 					["qg"] = 7880,	-- Ginro Hearthkindle
-					["coord"] = { 31.9, 45.1, FERALAS },
+					["coord"] = { 31.9, 45.1, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -2192,7 +2192,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 9306 },	-- Stave of Equinex
 						{ "i", 9307 },	-- A Sparkling Stone
 					},
-					["coord"] = { 38.9, 13.2, FERALAS },
+					["coord"] = { 38.9, 13.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
@@ -2211,7 +2211,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3788,	-- Jonespyre's Request
 					},
 					["qg"] = 7879,	-- Quintis Jonespyre
-					["coord"] = { 32.4, 43.8, FERALAS },
+					["coord"] = { 32.4, 43.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
 					["races"] = ALLIANCE_ONLY,
@@ -2227,7 +2227,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25448, {	-- The Northspring Menace
 					["qg"] = 40035,	-- Erina Willowborn
-					["coord"] = { 51.2, 17.8, FERALAS },
+					["coord"] = { 51.2, 17.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2242,7 +2242,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2975, {	-- The Ogres of Feralas (1/2)
 					["sourceQuest"] = 2981,	-- A Threat in Feralas
 					["qg"] = 7777,	-- Rok Orhan
-					["coord"] = { 74.2, 44.6, FERALAS },
+					["coord"] = { 74.2, 44.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -2261,7 +2261,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2980, {	-- The Ogres of Feralas (2/2)
 					["sourceQuest"] = 2975,	-- The Ogres of Feralas (1/2)
 					["qg"] = 7777,	-- Rok Orhan
-					["coord"] = { 74.2, 44.6, FERALAS },
+					["coord"] = { 74.2, 44.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -2279,7 +2279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2866, {	-- The Ruins of Solarsal
 					["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
-					["coord"] = { 30.2, 46.0, FERALAS },
+					["coord"] = { 30.2, 46.0, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -2287,7 +2287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2879, {	-- The Stave of Equinex
 					["sourceQuest"] = 2943,	-- Return to Troyas
 					["qg"] = 7764,	-- Troyas Moonbreeze
-					["coord"] = { 31.8, 45.4, FERALAS },
+					["coord"] = { 31.8, 45.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
@@ -2305,28 +2305,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 4.0.3
 						i(9258, {	-- Byltan Essence
 							["provider"] = { "o", 142185 },	-- Flame of Byltan
-							["coord"] = { 38.5, 15.8, FERALAS },
+							["coord"] = { 38.5, 15.8, MAP.FERALAS },
 						}),
 						i(9256, {	-- Imbel Essence
 							["provider"] = { "o", 142187 },	-- Flame of Imbel
-							["coord"] = { 39.9, 9.5, FERALAS },
+							["coord"] = { 39.9, 9.5, MAP.FERALAS },
 						}),
 						i(9255, {	-- Lahassa Essence
 							["provider"] = { "o", 142186 },	-- Flame of Lahassa
-							["coord"] = { 37.8, 12.1, FERALAS },
+							["coord"] = { 37.8, 12.1, MAP.FERALAS },
 						}),
 						i(9257, {	-- Samha Essence
 							["provider"] = { "o", 142188 },	-- Flame of Samha
-							["coord"] = { 40.6, 12.6, FERALAS },
+							["coord"] = { 40.6, 12.6, MAP.FERALAS },
 						}),
 						-- #endif
 					},
 				}),
 				q(4120, {	-- The Strength of Corruption
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76.0, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
@@ -2341,7 +2341,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4131, {	-- The Woodpaw Gnolls
 					["sourceQuest"] = 4129,	-- Psychometric Reading
 					["qg"] = 7880,	-- Ginro Hearthkindle
-					["coord"] = { 31.9, 45.1, FERALAS },
+					["coord"] = { 31.9, 45.1, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -2352,7 +2352,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 164953 },	-- Large Leather Backpacks
 						{ "i", 11463 },	-- Undelivered Parcel
 					},
-					["coord"] = { 73.3, 56.3, FERALAS },
+					["coord"] = { 73.3, 56.3, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -2360,21 +2360,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25387, {	-- To Camp Mojache
 					["sourceQuest"] = 25329,	-- Might of the Stonoemaul
 					["qg"] = 39656,	-- Orhan Ogreblade
-					["coord"] = { 51.9, 48.0, FERALAS },
+					["coord"] = { 51.9, 48.0, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25386, {	-- To Stonemaul Hold
 					["sourceQuest"] = 25250,	-- Sealing the Dream
 					["qg"] = 39377,	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, FERALAS },
+					["coord"] = { 41.3, 15.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(3567, {	-- To the Top
 					["qg"] = 7773,	-- Marli Wishrunner
-					["coord"] = { 45.8, 16.4, FERALAS },
+					["coord"] = { 45.8, 16.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 25,
@@ -2382,7 +2382,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25338, {	-- Treant Muisek
 					["sourceQuest"] = 25641,	-- The Flow of Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.3, FERALAS },
+					["coord"] = { 74.4, 43.3, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2393,7 +2393,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3126, {	-- Treant Muisek
 					["sourceQuest"] = 3125,	-- Faerie Dragon Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.4, FERALAS },
+					["coord"] = { 74.4, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -2407,7 +2407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25349, {	-- Twisted Sisters
 					["qg"] = 39847,	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, FERALAS },
+					["coord"] = { 74.5, 42.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2418,7 +2418,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25339, {	-- Vengeance on the Northspring
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 41.5, 15.2, FERALAS },
+					["coord"] = { 41.5, 15.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2432,7 +2432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3063, {	-- Vengeance on the Northspring
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76.0, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -2457,7 +2457,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25422,	-- The Darkmist Legacy
 					},
 					["qg"] = 40131,	-- Sensiria
-					["coord"] = { 65.9, 62.8, FERALAS },
+					["coord"] = { 65.9, 62.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Verinias the Twisted slain
@@ -2483,7 +2483,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2845, {	-- Wandering Shay
 					["sourceQuest"] = 2844,	-- The Giant Guardian
 					["qg"] = 7774,	-- Shay Leafrunner
-					["coord"] = { 38.2, 10.3, FERALAS },
+					["coord"] = { 38.2, 10.3, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
@@ -2496,7 +2496,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						objective(2, {	-- Take Shay Leafrunner to Rockbiter's camp
 							["provider"] = { "i", 9189 },	-- Shay's Bell
-							["coord"] = { 42.4, 22.0, FERALAS },
+							["coord"] = { 42.4, 22.0, MAP.FERALAS },
 							["cr"] = 7765,	-- Rockbiter
 						}),
 						i(9656, {	-- Granite Grips
@@ -2509,7 +2509,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25426, {	-- War on the Woodpaw [A]
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2528,7 +2528,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25363, {	-- War on the Woodpaw [H]
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, FERALAS },
+					["coord"] = { 74.9, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2547,7 +2547,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2862, {	-- War on the Woodpaw
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.8, 42.6, FERALAS },
+					["coord"] = { 74.8, 42.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
@@ -2567,7 +2567,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				warchiefscommand(q(28510, {	-- Warchief's Command: Feralas!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
@@ -2578,7 +2578,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25391, {	-- Weapons of Spirit
 					["sourceQuest"] = 25346,	-- Mountain Giant Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.3, FERALAS },
+					["coord"] = { 74.4, 43.3, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2605,7 +2605,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3128,	-- Natural Materials
 					},
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.4, FERALAS },
+					["coord"] = { 74.4, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -2627,11 +2627,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				{	-- Wild Leather Armor
 					["allianceQuestData"] = q(2847, {	-- Wild Leather Armor [A]
 						["qg"] = 7852,	-- Pratt McGrubben
-						["coord"] = { 30.6, 42.7, FERALAS },
+						["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(2854, {	-- Wild Leather Armor [H]
 						["qg"] = 7854,	-- Jangdor Swiftstrider
-						["coord"] = { 74.43, 42.91, FERALAS },
+						["coord"] = { 74.43, 42.91, MAP.FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4304, 10 } },	-- Thick Leather
@@ -2643,12 +2643,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["allianceQuestData"] = q(2851, {	-- Wild Leather Boots [A]
 						["sourceQuest"] = 2847,	-- Wild Leather Armor [A]
 						["qg"] = 7852,	-- Pratt McGrubben
-						["coord"] = { 30.6, 42.7, FERALAS },
+						["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(2858, {	-- Wild Leather Boots [H]
 						["sourceQuest"] = 2854,	-- Wild Leather Armor [H]
 						["qg"] = 7854,	-- Jangdor Swiftstrider
-						["coord"] = { 74.43, 42.91, FERALAS },
+						["coord"] = { 74.43, 42.91, MAP.FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
@@ -2669,12 +2669,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["allianceQuestData"] = q(2850, {	-- Wild Leather Helmet [A]
 						["sourceQuest"] = 2847,	-- Wild Leather Armor [A]
 						["qg"] = 7852,	-- Pratt McGrubben
-						["coord"] = { 30.6, 42.7, FERALAS },
+						["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(2857, {	-- Wild Leather Helmet [H]
 						["sourceQuest"] = 2854,	-- Wild Leather Armor [H]
 						["qg"] = 7854,	-- Jangdor Swiftstrider
-						["coord"] = { 74.43, 42.91, FERALAS },
+						["coord"] = { 74.43, 42.91, MAP.FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
@@ -2695,12 +2695,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["allianceQuestData"] = q(2852, {	-- Wild Leather Leggings [A]
 						["sourceQuest"] = 2847,	-- Wild Leather Armor [A]
 						["qg"] = 7852,	-- Pratt McGrubben
-						["coord"] = { 30.6, 42.7, FERALAS },
+						["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(2859, {	-- Wild Leather Leggings [H]
 						["sourceQuest"] = 2854,	-- Wild Leather Armor [H]
 						["qg"] = 7854,	-- Jangdor Swiftstrider
-						["coord"] = { 74.43, 42.91, FERALAS },
+						["coord"] = { 74.43, 42.91, MAP.FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
@@ -2721,12 +2721,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["allianceQuestData"] = q(2848, {	-- Wild Leather Shoulders [A]
 						["sourceQuest"] = 2847,	-- Wild Leather Armor [A]
 						["qg"] = 7852,	-- Pratt McGrubben
-						["coord"] = { 30.6, 42.7, FERALAS },
+						["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(2855, {	-- Wild Leather Shoulders [H]
 						["sourceQuest"] = 2854,	-- Wild Leather Armor [H]
 						["qg"] = 7854,	-- Jangdor Swiftstrider
-						["coord"] = { 74.43, 42.91, FERALAS },
+						["coord"] = { 74.43, 42.91, MAP.FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
@@ -2746,12 +2746,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["allianceQuestData"] = q(2849, {	-- Wild Leather Vest [A]
 						["sourceQuest"] = 2847,	-- Wild Leather Armor [A]
 						["qg"] = 7852,	-- Pratt McGrubben
-						["coord"] = { 30.6, 42.7, FERALAS },
+						["coord"] = { 30.6, 42.7, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(2856, {	-- Wild Leather Vest [H]
 						["sourceQuest"] = 2854,	-- Wild Leather Armor [H]
 						["qg"] = 7854,	-- Jangdor Swiftstrider
-						["coord"] = { 74.43, 42.91, FERALAS },
+						["coord"] = { 74.43, 42.91, MAP.FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
@@ -2771,9 +2771,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81924, {	-- Wisdom of the Guardians
 					["qg"] = 221985,	-- Tyrisius
-					["coord"] = { 57.2, 69.0, FERALAS },
+					["coord"] = { 57.2, 69.0, MAP.FERALAS },
 					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { THE_HINTERLANDS, AZSHARA },
+					["maps"] = { MAP.THE_HINTERLANDS, MAP.AZSHARA },
 					["classes"] = { DRUID },
 					["lvl"] = 45,
 					["groups"] = {
@@ -2783,7 +2783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 221935 },	-- Treant Avatar
 								{ "n", 222705 },	-- Blightbark <Guardian of Feralas>
 							},
-							["coord"] = { 58.6, 52.2, FERALAS },
+							["coord"] = { 58.6, 52.2, MAP.FERALAS },
 							["description"] = "Click the shrine to receive a buff called Duty of the Warden.\n\nFight a Gordunni Warlock until it casts Shrink on you. Cast Remove Curse to receive a buff that says 'You have cast out what corrupts the spirit.\n\nFight a Zukk'ash Wasp until it Poisons you. Cast Abolish Poison to receive a buff that says 'Your duty is fulfilled.'\n\nReturn to the Shrine and then defeat the Treant Avatar that spawns once you approach it.",
 						}),
 						objective(2, {	-- Guardian of the Hinterlands
@@ -2792,7 +2792,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 221933 },	-- Moonkin Avatar
 								{ "n", 222704 },	-- Sagefeather <Guardian of the Hinterlands>
 							},
-							["coord"] = { 66.2, 53.1, THE_HINTERLANDS },
+							["coord"] = { 66.2, 53.1, MAP.THE_HINTERLANDS },
 							["description"] = "Click on the shrine to see the message 'The calm comes before the storm.'\n\nCast Tranquility followed by Hurricane.\n\nDefeat the avatar and receive its blessing.",
 						}),
 						objective(3, {	-- Guardian of Azshara
@@ -2801,7 +2801,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 221928 },	-- Hippogryph Avatar
 								{ "n", 222703 },	-- Whisperwing <Guardian of Azshara>
 							},
-							["coord"] = { 34.6, 49.0, AZSHARA },
+							["coord"] = { 34.6, 49.0, MAP.AZSHARA },
 							["description"] = "Click on the shrine to see the message 'Hunt the white stag with tooth and claw.'\n\nFight a White Stag with only physical attacks while in feral form and then loo the Sacred Stag Heart.\n\nReturn to the shrine and use the heart. Defeat the avatar and receive its blessing.",
 						}),
 						i(220360, {	-- Rune of Efflorescence
@@ -2817,14 +2817,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25365, {	-- Woodpaw Investigation
 					["sourceQuest"] = 25363,	-- War on the Woodpaw
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, FERALAS },
+					["coord"] = { 74.9, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(2902, {	-- Woodpaw Investigation
 					["sourceQuest"] = 2863,	-- Alpha Strike
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.8, 42.6, FERALAS },
+					["coord"] = { 74.8, 42.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
@@ -2832,21 +2832,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25437, {	-- Ysondre's Call [A]
 					["sourceQuest"] = 25436,	-- Spiteful Sisters
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25378, {	-- Ysondre's Call [H]
 					["sourceQuest"] = 25349,	-- Twisted Sisters
 					["qg"] = 39847,	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, FERALAS },
+					["coord"] = { 74.5, 42.8, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25438, {	-- Ysondre's Farewell [A]
 					["sourceQuest"] = 25379,	-- Taerar's Fall
 					["qg"] = 39407,	-- Ysondre
-					["coord"] = { 81.5, 42.4, FERALAS },
+					["coord"] = { 81.5, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2864,7 +2864,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25383, {	-- Ysondre's Farewell [H]
 					["sourceQuest"] = 25379,	-- Taerar's Fall
 					["qg"] = 39407,	-- Ysondre
-					["coord"] = { 81.5, 42.4, FERALAS },
+					["coord"] = { 81.5, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2881,7 +2881,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7003, {	-- Zapped Giants
 					["qg"] = 14637,	-- Zorbin Fandazzle
-					["coord"] = { 44.8, 43.4, FERALAS },
+					["coord"] = { 44.8, 43.4, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -2904,7 +2904,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25429, {	-- Zukk'ash Infestation [A]
 					["sourceQuest"] = 25427,	-- Alpha Strike
 					["qg"] = 39725,	-- Adella
-					["coord"] = { 77.2, 56.5, FERALAS },
+					["coord"] = { 77.2, 56.5, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2923,7 +2923,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25367, {	-- Zukk'ash Infestation [H]
 					["sourceQuest"] = 25366,	-- The Battle Plans
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, FERALAS },
+					["coord"] = { 74.9, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2945,7 +2945,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["sourceQuest"] = 2903,	-- The Battle Plans
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.8, 42.6, FERALAS },
+					["coord"] = { 74.8, 42.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
@@ -2971,9 +2971,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7875 },	-- Hadoken Swiftstrider
 						{ "i", 19020 },	-- Camp Mojache Zukk'ash Report
 					},
-					["coord"] = { 74.8, 42.6, FERALAS },
+					["coord"] = { 74.8, 42.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
@@ -2990,97 +2990,97 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5347, {	-- Antilus the Soarer
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.0, 65.8, FERALAS },
-						{ 55.0, 69.0, FERALAS },
-						{ 55.2, 71.6, FERALAS },
-						{ 54.6, 73.6, FERALAS },
-						{ 53.6, 70.6, FERALAS },
-						{ 54.0, 66.4, FERALAS },
+						{ 55.0, 65.8, MAP.FERALAS },
+						{ 55.0, 69.0, MAP.FERALAS },
+						{ 55.2, 71.6, MAP.FERALAS },
+						{ 54.6, 73.6, MAP.FERALAS },
+						{ 53.6, 70.6, MAP.FERALAS },
+						{ 54.0, 66.4, MAP.FERALAS },
 						-- #else
-						{ 53.6, 69.2, FERALAS },
-						{ 54.2, 73.6, FERALAS },
-						{ 57.2, 74.6, FERALAS },
-						{ 59.8, 73.4, FERALAS },
+						{ 53.6, 69.2, MAP.FERALAS },
+						{ 54.2, 73.6, MAP.FERALAS },
+						{ 57.2, 74.6, MAP.FERALAS },
+						{ 59.8, 73.4, MAP.FERALAS },
 						-- #endif
 					},
 				}),
 				n(5349, {	-- Arash-ethis
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 39.6, 20.6, FERALAS },
-						{ 41.0, 22.6, FERALAS },
-						{ 41.4, 23.8, FERALAS },
-						{ 38.8, 24.6, FERALAS },
-						{ 38.0, 24.2, FERALAS },
-						{ 37.8, 23.4, FERALAS },
+						{ 39.6, 20.6, MAP.FERALAS },
+						{ 41.0, 22.6, MAP.FERALAS },
+						{ 41.4, 23.8, MAP.FERALAS },
+						{ 38.8, 24.6, MAP.FERALAS },
+						{ 38.0, 24.2, MAP.FERALAS },
+						{ 37.8, 23.4, MAP.FERALAS },
 						-- #else
-						{ 41.8, 24.8, FERALAS },
-						{ 46.0, 23.8, FERALAS },
-						{ 46.2, 25.4, FERALAS },
+						{ 41.8, 24.8, MAP.FERALAS },
+						{ 46.0, 23.8, MAP.FERALAS },
+						{ 46.2, 25.4, MAP.FERALAS },
 						-- #endif
 					},
 				}),
 				n(5346, {	-- Bloodroar the Stalker
-					["coord"] = { 52.6, 60.6, FERALAS },
+					["coord"] = { 52.6, 60.6, MAP.FERALAS },
 				}),
 				n(5345, {	-- Diamond Head
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.0, 20.8, FERALAS },
+						{ 49.0, 20.8, MAP.FERALAS },
 						-- #else
-						{ 21.6, 50.0, FERALAS },
-						{ 21.6, 55.2, FERALAS },
-						{ 22.4, 58.0, FERALAS },
-						{ 35.0, 58.0, FERALAS },
-						{ 36.0, 54.4, FERALAS },
+						{ 21.6, 50.0, MAP.FERALAS },
+						{ 21.6, 55.2, MAP.FERALAS },
+						{ 22.4, 58.0, MAP.FERALAS },
+						{ 35.0, 58.0, MAP.FERALAS },
+						{ 36.0, 54.4, MAP.FERALAS },
 						-- #endif
 					},
 				}),
 				n(5354, {	-- Gnarl Leafbrother
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 72.4, 39.6, FERALAS },
-						{ 72.0, 43.4, FERALAS },
-						{ 70.6, 46.0, FERALAS },
-						{ 69.4, 44.2, FERALAS },
-						{ 69.6, 41.8, FERALAS },
-						{ 70.6, 41.0, FERALAS },
+						{ 72.4, 39.6, MAP.FERALAS },
+						{ 72.0, 43.4, MAP.FERALAS },
+						{ 70.6, 46.0, MAP.FERALAS },
+						{ 69.4, 44.2, MAP.FERALAS },
+						{ 69.6, 41.8, MAP.FERALAS },
+						{ 70.6, 41.0, MAP.FERALAS },
 						-- #else
-						{ 68.6, 57.2, FERALAS },
-						{ 72.0, 58.0, FERALAS },
-						{ 75.6, 58.8, FERALAS },
+						{ 68.6, 57.2, MAP.FERALAS },
+						{ 72.0, 58.0, MAP.FERALAS },
+						{ 75.6, 58.8, MAP.FERALAS },
 						-- #endif
 					},
 				}),
 				n(5343, {	-- Lady Szallah
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 31.0, 42.6, FERALAS },
-						{ 32.4, 43.8, FERALAS },
-						{ 31.8, 45.2, FERALAS },
-						{ 30.4, 45.8, FERALAS },
+						{ 31.0, 42.6, MAP.FERALAS },
+						{ 32.4, 43.8, MAP.FERALAS },
+						{ 31.8, 45.2, MAP.FERALAS },
+						{ 30.4, 45.8, MAP.FERALAS },
 						-- #else
-						{ 26.6, 65.8, FERALAS },
-						{ 26.0, 67.2, FERALAS },
-						{ 28.2, 67.4, FERALAS },
-						{ 27.8, 68.6, FERALAS },
-						{ 24.8, 72.8, FERALAS },
+						{ 26.6, 65.8, MAP.FERALAS },
+						{ 26.0, 67.2, MAP.FERALAS },
+						{ 28.2, 67.4, MAP.FERALAS },
+						{ 27.8, 68.6, MAP.FERALAS },
+						{ 24.8, 72.8, MAP.FERALAS },
 						-- #endif
 					},
 				}),
 				n(43488, {	-- Mordei the Earthrender
-					["coord"] = { 49.6, 30.2, FERALAS },
+					["coord"] = { 49.6, 30.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(11447, {	-- Mushgog
 					-- #if AFTER CATA
 					["coords"] = {
-						{ 71.8, 58.6, FERALAS },
-						{ 72.0, 59.6, FERALAS },
-						{ 71.6, 63.0, FERALAS },
-						{ 70.4, 63.6, FERALAS },
-						{ 69.6, 62.2, FERALAS },
-						{ 69.6, 58.8, FERALAS },
+						{ 71.8, 58.6, MAP.FERALAS },
+						{ 72.0, 59.6, MAP.FERALAS },
+						{ 71.6, 63.0, MAP.FERALAS },
+						{ 70.4, 63.6, MAP.FERALAS },
+						{ 69.6, 62.2, MAP.FERALAS },
+						{ 69.6, 58.8, MAP.FERALAS },
 					},
 					-- #else
 					["description"] = "Spawns in the Dire Maul Arena.",
@@ -3089,20 +3089,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5352, {	-- Old Grizzlegut
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.4, 58.2, FERALAS },
-						{ 58.6, 58.4, FERALAS },
-						{ 60.0, 59.4, FERALAS },
-						{ 61.0, 62.6, FERALAS },
-						{ 59.0, 62.6, FERALAS },
-						{ 56.6, 62.6, FERALAS },
-						{ 55.4, 61.2, FERALAS },
+						{ 56.4, 58.2, MAP.FERALAS },
+						{ 58.6, 58.4, MAP.FERALAS },
+						{ 60.0, 59.4, MAP.FERALAS },
+						{ 61.0, 62.6, MAP.FERALAS },
+						{ 59.0, 62.6, MAP.FERALAS },
+						{ 56.6, 62.6, MAP.FERALAS },
+						{ 55.4, 61.2, MAP.FERALAS },
 						-- #else
-						{ 57.4, 56.8, FERALAS },
-						{ 58.6, 59.0, FERALAS },
-						{ 60.6, 60.6, FERALAS },
-						{ 66.2, 47.4, FERALAS },
-						{ 68.2, 48.6, FERALAS },
-						{ 69.4, 45.0, FERALAS },
+						{ 57.4, 56.8, MAP.FERALAS },
+						{ 58.6, 59.0, MAP.FERALAS },
+						{ 60.6, 60.6, MAP.FERALAS },
+						{ 66.2, 47.4, MAP.FERALAS },
+						{ 68.2, 48.6, MAP.FERALAS },
+						{ 69.4, 45.0, MAP.FERALAS },
 						-- #endif
 					},
 				}),
@@ -3111,9 +3111,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Prince Lakma drops Chimaerok Tenderloin, which is a cooking reagent for Dirge's Kickin' Chimaerok Chops. Eating this consumable is a criteria for the Leatherworking achievement named Always Be Camping. However, do not bother with Prince Lekma if you have not learned the required cooking recipe as it only was available for a short time during vanilla and now sells for gold cap. Dirge's Kickin' Chimaerok Chops can be found on the auction house, or you can ask around for a crafter.",
 					-- #endif
 					["coords"] = {
-						{ 47.6, 74.6, FERALAS },
-						{ 48.2, 78.8, FERALAS },
-						{ 48.6, 79.0, FERALAS },
+						{ 47.6, 74.6, MAP.FERALAS },
+						{ 48.2, 78.8, MAP.FERALAS },
+						{ 48.6, 79.0, MAP.FERALAS },
 					},
 					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
@@ -3123,21 +3123,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5350, {	-- Qirot
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.6, 61.4, FERALAS },
-						{ 73.6, 64.0, FERALAS },
+						{ 76.6, 61.4, MAP.FERALAS },
+						{ 73.6, 64.0, MAP.FERALAS },
 						-- #else
-						{ 71.8, 63.4, FERALAS },
-						{ 74.0, 64.6, FERALAS },
-						{ 74.2, 62.2, FERALAS },
-						{ 76.6, 61.4, FERALAS },
-						{ 78.6, 63.8, FERALAS },
-						{ 76.8, 65.4, FERALAS },
+						{ 71.8, 63.4, MAP.FERALAS },
+						{ 74.0, 64.6, MAP.FERALAS },
+						{ 74.2, 62.2, MAP.FERALAS },
+						{ 76.6, 61.4, MAP.FERALAS },
+						{ 78.6, 63.8, MAP.FERALAS },
+						{ 76.8, 65.4, MAP.FERALAS },
 						-- #endif
 					},
 				}),
 				n(11498, {	-- Skarr the Broken [CATA+] / Skarr the Unbreakable
 					-- #if AFTER CATA
-					["coord"] = { 84.2, 37.0, FERALAS },
+					["coord"] = { 84.2, 37.0, MAP.FERALAS },
 					-- #else
 					["description"] = "Spawns in the Dire Maul Arena.",
 					-- #endif
@@ -3145,25 +3145,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5356, {	-- Snarler
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 74.6, 35.4, FERALAS },
-						{ 75.8, 38.6, FERALAS },
-						{ 77.8, 37.8, FERALAS },
-						{ 80.2, 39.8, FERALAS },
-						{ 82.2, 39.8, FERALAS },
-						{ 85.0, 37.6, FERALAS },
+						{ 74.6, 35.4, MAP.FERALAS },
+						{ 75.8, 38.6, MAP.FERALAS },
+						{ 77.8, 37.8, MAP.FERALAS },
+						{ 80.2, 39.8, MAP.FERALAS },
+						{ 82.2, 39.8, MAP.FERALAS },
+						{ 85.0, 37.6, MAP.FERALAS },
 						-- #else
-						{ 75.0, 36.2, FERALAS },
-						{ 76.6, 39.8, FERALAS },
-						{ 77.6, 37.2, FERALAS },
-						{ 80.0, 39.2, FERALAS },
-						{ 81.6, 39.4, FERALAS },
-						{ 84.0, 39.2, FERALAS },
+						{ 75.0, 36.2, MAP.FERALAS },
+						{ 76.6, 39.8, MAP.FERALAS },
+						{ 77.6, 37.2, MAP.FERALAS },
+						{ 80.0, 39.2, MAP.FERALAS },
+						{ 81.6, 39.4, MAP.FERALAS },
+						{ 84.0, 39.2, MAP.FERALAS },
 						-- #endif
 					},
 				}),
 				n(11497, {	-- The Razza
 					-- #if AFTER CATA
-					["coord"] = { 84.5, 49.7, FERALAS },
+					["coord"] = { 84.5, 49.7, MAP.FERALAS },
 					-- #else
 					["description"] = "Spawns in the Dire Maul Arena.",
 					-- #endif
@@ -3171,7 +3171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(TREASURES, {
 				o(420954, {	-- Carved Eye
-					["coord"] = { 61.5, 30.7, FERALAS },
+					["coord"] = { 61.5, 30.7, MAP.FERALAS },
 					["description"] = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
 					["timeline"] = { ADDED_10_2_5 },
 					["groups"] = {
@@ -3179,14 +3179,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				o(141931, {	-- Hippogryph Egg
-					["coord"] = { 57.0, 78.2, FERALAS },
+					["coord"] = { 57.0, 78.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = { i(8564) },	-- Hippogryph Egg
 				}),
 			}),
 			n(VENDORS, {
 				n(44381, {	-- Apprentice of Estulan <Enchanting Supplies>
-					["coord"] = { 56.8, 54.4, FERALAS },
+					["coord"] = { 56.8, 54.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -3201,7 +3201,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE 4.0.3
 				-- NOTE: This NPC stopped being a vendor with Cata, still available as a quest giver though
 				n(6576, {	-- Brienna Starglow <Tailoring Supplies>
-					["coord"] = { 89.0, 45.8, FERALAS },
+					["coord"] = { 89.0, 45.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3212,7 +3212,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(8158, {	-- Bronk <Alchemy Supplies>
-					["coord"] = { 76.0, 43.4, FERALAS },
+					["coord"] = { 76.0, 43.4, MAP.FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(9302, {	-- Recipe: Ghost Dye (RECIPE!)
@@ -3224,7 +3224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(9548, {	-- Cawind Trueaim <Gunsmith & Bowyer>
-					["coord"] = { 74.8, 45.6, FERALAS },
+					["coord"] = { 74.8, 45.6, MAP.FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11308, {	-- Sylvan Shortbow
@@ -3235,9 +3235,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(7854, {	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.8, 47.0, FERALAS },
+						{ 52.8, 47.0, MAP.FERALAS },
 						-- #else
-						{ 74.4, 42.8, FERALAS },
+						{ 74.4, 42.8, MAP.FERALAS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3259,9 +3259,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8157, {	-- Logannas <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.6, 43.0, FERALAS },
+						{ 46.6, 43.0, MAP.FERALAS },
 						-- #else
-						{ 32.6, 44.0, FERALAS },
+						{ 32.6, 44.0, MAP.FERALAS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3275,7 +3275,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(40474, {	-- Moro Sungrain <Trade Supplies>
-					["coord"] = { 40.8, 15.2, FERALAS },
+					["coord"] = { 40.8, 15.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3284,7 +3284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(40226, {	-- Pratt McGrubben <Leatherworking Supplies>
-					["coord"] = { 45.4, 41.2, FERALAS },
+					["coord"] = { 45.4, 41.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3300,7 +3300,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(7852, {	-- Pratt McGrubben <Leatherworking Supplies>
-					["coord"] = { 30.6, 42.6, FERALAS },
+					["coord"] = { 30.6, 42.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3316,7 +3316,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(8145, {	-- Sheendra Tallgrass <Trade Supplies>
-					["coord"] = { 74.6, 42.8, FERALAS },
+					["coord"] = { 74.6, 42.8, MAP.FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(13949),	-- Recipe: Baked Salmon (RECIPE!)
@@ -3328,9 +3328,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(7947, {	-- Vivianna <Trade Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.3, 41.7, FERALAS },
+						{ 46.3, 41.7, MAP.FERALAS },
 						-- #else
-						{ 31.2, 43.4, FERALAS },
+						{ 31.2, 43.4, MAP.FERALAS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3342,7 +3342,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(8159, {	-- Worb Strongstitch <Light Armor Merchant>
-					["coord"] = { 74.6, 42.6, FERALAS },
+					["coord"] = { 74.6, 42.6, MAP.FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12253, {	-- Brilliant Red Cloak
@@ -3371,9 +3371,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.6, 44.8, FERALAS },
+						{ 48.6, 44.8, MAP.FERALAS },
 						-- #else
-						{ 44.8, 43.4, FERALAS },
+						{ 44.8, 43.4, MAP.FERALAS },
 						-- #endif
 					},
 					["groups"] = {
@@ -3442,8 +3442,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
-	m(KALIMDOR, {
-		m(FERALAS, {
+	m(MAP.KALIMDOR, {
+		m(MAP.FERALAS, {
 			q(42078),	-- Ysondre's Seal - if you are druid and done the "Sealing the Dream" (questID 25398) you can reopen the Feralas portal
 		}),
 	}),

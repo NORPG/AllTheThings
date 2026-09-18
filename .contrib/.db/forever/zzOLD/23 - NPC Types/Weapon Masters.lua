@@ -188,11 +188,11 @@ WEAPON_SKILL_WANDS = {
 };
 
 root(ROOTS.Zones, {
-	m(KALIMDOR, {
-		m(DARNASSUS, {
+	m(MAP.KALIMDOR, {
+		m(MAP.DARNASSUS, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11866, {	-- Ilyenia Moonfire <Weapon Master>
-					["coord"] = { 57.5, 46.8, DARNASSUS },
+					["coord"] = { 57.5, 46.8, MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						WEAPON_SKILL_BOWS,
@@ -204,10 +204,10 @@ root(ROOTS.Zones, {
 				}),
 			})),
 		}),
-		m(ORGRIMMAR, {
+		m(MAP.ORGRIMMAR, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(2704, {	-- Hanashi <Weapon Master>
-					["coord"] = { 81.6, 19.4, ORGRIMMAR },
+					["coord"] = { 81.6, 19.4, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						WEAPON_SKILL_BOWS,
@@ -218,7 +218,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(11868, {	-- Sayoc <Weapon Master>
-					["coord"] = { 81.6, 19.4, ORGRIMMAR },
+					["coord"] = { 81.6, 19.4, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						WEAPON_SKILL_BOWS,
@@ -249,10 +249,10 @@ root(ROOTS.Zones, {
 			})),
 		}),
 		-- #endif
-		m(THUNDER_BLUFF, {
+		m(MAP.THUNDER_BLUFF, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11869, {	-- Ansekhwa <Weapon Master>
-					["coord"] = { 41.2, 61.4, THUNDER_BLUFF },
+					["coord"] = { 41.2, 61.4, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						WEAPON_SKILL_GUNS,
@@ -264,11 +264,11 @@ root(ROOTS.Zones, {
 			})),
 		}),
 	}),
-	m(EASTERN_KINGDOMS, {
-		m(IRONFORGE, {
+	m(MAP.EASTERN_KINGDOMS, {
+		m(MAP.IRONFORGE, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(13084, {	-- Bixi Wobblebonk <Weapon Master>
-					["coord"] = { 62.2, 89.6, IRONFORGE },
+					["coord"] = { 62.2, 89.6, MAP.IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						WEAPON_SKILL_CROSSBOWS,
@@ -277,7 +277,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(11865, {	-- Buliwyf Stonehand <Weapon Master>
-					["coord"] = { 61.2, 89.5, IRONFORGE },
+					["coord"] = { 61.2, 89.5, MAP.IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						WEAPON_SKILL_FIST_WEAPONS,
@@ -308,14 +308,14 @@ root(ROOTS.Zones, {
 			})),
 		}),
 		-- #endif
-		m(STORMWIND_CITY, {
+		m(MAP.STORMWIND_CITY, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11867, {	-- Woo Ping <Weapon Master>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 63.8, 69.0, STORMWIND_CITY },
+						{ 63.8, 69.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 57.1, 57.7, STORMWIND_CITY },
+						{ 57.1, 57.7, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -330,10 +330,10 @@ root(ROOTS.Zones, {
 				}),
 			})),
 		}),
-		m(UNDERCITY, {
+		m(MAP.UNDERCITY, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11870, {	-- Archibald <Weapon Master>
-					["coord"] = { 57.2, 32.4, UNDERCITY },
+					["coord"] = { 57.2, 32.4, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						WEAPON_SKILL_CROSSBOWS,

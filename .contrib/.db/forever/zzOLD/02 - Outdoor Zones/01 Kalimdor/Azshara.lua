@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(AZSHARA, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.AZSHARA, {
 		["lore"] =
 			-- #if AFTER CATA
 			"Azshara was taken over by the goblins post-Shattering. It used to be the night elves' greatest center before the Sundering, but was destroyed due to the reckless magic of the Highborne. Known for being a beautiful and tranquil autumnal zone pre-Shattering, the Goblins have marred the landscape with their pollution and quarries, carving the land into the shape of a Horde symbol.",
@@ -65,8 +65,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(472),	-- Rabid Nut Varmint 5000 (PET!)
 					pet(471, {	-- Robo-Chick (PET!)
 						["coords"] = {
-							{ 42.4, 76.8, AZSHARA },
-							{ 51.8, 74.8, AZSHARA },
+							{ 42.4, 76.8, MAP.AZSHARA },
+							{ 51.8, 74.8, MAP.AZSHARA },
 						},
 						["description"] = "Normally found close to these coords, as well as in Everlook.",
 					}),
@@ -126,38 +126,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				fp(44, {	-- Bilgewater Harbor, Azshara [CATA+] / Valormok, Azshara
 					["cr"] = 8610,	-- Kroum <Wind Rider Master>
-					["coord"] = { 53.0, 49.8, AZSHARA },
+					["coord"] = { 53.0, 49.8, MAP.AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
 				fp(614, {	-- Northern Rocketway, Azshara
 					["cr"] = 43328,	-- Blitz Blastospazz <Flight Master>
-					["coord"] = { 66.4, 20.8, AZSHARA },
+					["coord"] = { 66.4, 20.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(613, {	-- Southern Rocketway, Azshara
 					["cr"] = 37005,	-- Friz Groundspin <Flight Master>
-					["coord"] = { 51.4, 74.2, AZSHARA },
+					["coord"] = { 51.4, 74.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(64, {	-- Talrendis Point, Azshara
 					["cr"] = 12577,	-- Jarrodenus <Hippogryph Master>
-					["coord"] = { 11.8, 77.6, AZSHARA },
+					["coord"] = { 11.8, 77.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(683, {	-- Valormok, Azshara
 					["cr"] = 36728,	-- Kroum <Wind Rider Captain>
-					["coord"] = { 14.2, 65.0, AZSHARA },
+					["coord"] = { 14.2, 65.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if BEFORE CATA
 				fp(44, {	-- Valormok, Azshara / Bilgewater Harbor, Azshara [CATA+]
 					["cr"] = 8610,	-- Kroum <Wind Rider Master>
-					["coord"] = { 22.0, 49.6, AZSHARA },
+					["coord"] = { 22.0, 49.6, MAP.AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
@@ -166,9 +166,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			lockpicking({
 				o(179497, {	-- Mossy Footlocker
 					["coords"] = {
-						{ 49.6, 37.2, AZSHARA },
-						{ 59.8, 73.5, AZSHARA },
-						{ 80.3, 36.3, AZSHARA },
+						{ 49.6, 37.2, MAP.AZSHARA },
+						{ 59.8, 73.5, MAP.AZSHARA },
+						{ 80.3, 36.3, MAP.AZSHARA },
 					},
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 225,
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>
-						["coord"] = { 37.6, 65.4, AZSHARA },
+						["coord"] = { 37.6, 65.4, MAP.AZSHARA },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = CLASSIC_TBC_DRAGONSCALE,
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				q(3382, {	-- A Crew Under Fire
 					["qg"] = 8380,	-- Captain Vanessa Beltis
-					["coord"] = { 53.0, 87.8, AZSHARA },
+					["coord"] = { 53.0, 87.8, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14371, {	-- A Gigantic Snack
 					["sourceQuest"] = 14310,	-- Segmentation Fault: Core Dumped
 					["qg"] = 36077,	-- Assistant Greely
-					["coord"] = { 50.4, 74.2, AZSHARA },
+					["coord"] = { 50.4, 74.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -210,14 +210,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24458, {	-- A Hello to Arms
 					["sourceQuest"] = 14388,	-- Azsharite Experiment Number Two
 					["qg"] = 36379,	-- Hobart Grapplehammer
-					["coord"] = { 50.3, 74.4, AZSHARA },
+					["coord"] = { 50.3, 74.4, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(49705)	},	-- Armed Azsharite Core (QI!)
 				}),
 				q(5536, {	-- A Land Filled with Hatred
 					["qg"] = 11548,	-- Loth'atu
-					["coord"] = { 11.4, 78.2, AZSHARA },
+					["coord"] = { 11.4, 78.2, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14131, {	-- A Little Pick-me-up
 					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 					["qg"] = 35142,	-- Ergll
-					["coord"] = { 70.3, 36.2, AZSHARA },
+					["coord"] = { 70.3, 36.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -249,14 +249,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3381, {	-- A Meeting with the Master
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
-					["coord"] = { 26.4, 46.2, AZSHARA },
+					["coord"] = { 26.4, 46.2, MAP.AZSHARA },
 					["timeline"] = { REMOVED_1_7_0 },
 					["lvl"] = 45,
 				}),
 				q(14432, {	-- A Pale Brew
 					["sourceQuest"] = 14431,	-- The Blackmaw Scar
 					["qg"] = 8586,	-- Haggrum Bloodfist
-					["coord"] = { 42.4, 23.6, AZSHARA },
+					["coord"] = { 42.4, 23.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -270,14 +270,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						o(196834, {	-- Briaroot Brew
 							["coords"] = {
-								{ 29.4, 39.5, AZSHARA },
-								{ 30.0, 38.6, AZSHARA },
-								{ 30.4, 37.4, AZSHARA },
-								{ 30.4, 39.8, AZSHARA },
-								{ 30.5, 39.9, AZSHARA },
-								{ 30.6, 38.1, AZSHARA },
-								{ 31.0, 34.0, AZSHARA },
-								{ 31.1, 35.1, AZSHARA },
+								{ 29.4, 39.5, MAP.AZSHARA },
+								{ 30.0, 38.6, MAP.AZSHARA },
+								{ 30.4, 37.4, MAP.AZSHARA },
+								{ 30.4, 39.8, MAP.AZSHARA },
+								{ 30.5, 39.9, MAP.AZSHARA },
+								{ 30.6, 38.1, MAP.AZSHARA },
+								{ 31.0, 34.0, MAP.AZSHARA },
+								{ 31.1, 35.1, MAP.AZSHARA },
 							},
 							["groups"] = { i(49365) },	-- Briaroot Brew (QI!)
 						}),
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(46177, {	-- A Portal Away
 					["sourceQuest"] = 44924,	-- The Archmage Accosted
 					["qg"] = 116048,	-- Joanna
-					["coord"] = { 25.2, 37.9, AZSHARA },
+					["coord"] = { 25.2, 37.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_7_2_0 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14197, {	-- A Quota to Meet
 					["qg"] = 35085,	-- Foreman Fisk
-					["coord"] = { 29.1, 66.3, AZSHARA },
+					["coord"] = { 29.1, 66.3, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14201, {	-- A Thousand Stories in the Sand
 					["sourceQuest"] = 24453,	-- Private Chat
 					["qg"] = 35087,	-- Malynea Skyreaver
-					["coord"] = { 29.6, 66.8, AZSHARA },
+					["coord"] = { 29.6, 66.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -329,7 +329,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14323, {	-- Absorbent
 					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 					["qg"] = 35142,	-- Ergll
-					["coord"] = { 70.3, 36.2, AZSHARA },
+					["coord"] = { 70.3, 36.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -340,14 +340,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24497, {	-- Airborne Again
 					["sourceQuest"] = 14392,	-- Farewell, Minnow
 					["qg"] = 37142,	-- Gurlorn
-					["coord"] = { 52.9, 49.8, AZSHARA },
+					["coord"] = { 52.9, 49.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(14428, {	-- Amberwind's Journal
 					["qg"] = 36596,	-- Andorel Sunsworn
-					["coord"] = { 42.6, 23.7, AZSHARA },
+					["coord"] = { 42.6, 23.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 6522 },	-- Andron Gant
 						{ "i", 10679 },	-- Andron's Note
 					},
-					["coord"] = { 54.6, 75.6, UNDERCITY },
+					["coord"] = { 54.6, 75.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -375,14 +375,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14194,	-- Refleshification
 					},
 					["qg"] = 36752,	-- Private Worcester
-					["coord"] = { 29.4, 66.8, AZSHARA },
+					["coord"] = { 29.4, 66.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14155, {	-- Arborcide
 					["sourceQuest"] = 14146,	-- Defend the Gates!
 					["qg"] = 35195,	-- Labor Captain Grabbit
-					["coord"] = { 27.0, 77.0, AZSHARA },
+					["coord"] = { 27.0, 77.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14429, {	-- Arcane De-Construction
 					["sourceQuest"] = 14428,	-- Amberwind's Journal
 					["provider"] = { "o", 196832 },	-- Upper Scrying Stone
-					["coord"] = { 49.5, 28.7, AZSHARA },
+					["coord"] = { 49.5, 28.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -418,14 +418,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14407, {	-- Azshara Blues
 					["qg"] = 36999,	-- Teemo
-					["coord"] = { 59.3, 50.7, AZSHARA },
+					["coord"] = { 59.3, 50.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3602, {	-- Azsharite
 					["sourceQuest"] = 3511,	-- The Name of the Beast (3/3)
 					["qg"] = 7783,	-- Loramus Thalipedes
-					["coord"] = { 60.8, 66.4, AZSHARA },
+					["coord"] = { 60.8, 66.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -441,7 +441,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14385, {	-- Azsharite Experiment Number One
 					["sourceQuest"] = 14377,	-- Befriending Giants
 					["qg"] = 36077,	-- Assistant Greely
-					["coord"] = { 50.3, 74.3, AZSHARA },
+					["coord"] = { 50.3, 74.3, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -450,7 +450,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 49230 },	-- Giant-Sized Laxative
 								{ "o", 196462 },	-- Giant-Sized Laxative
 							},
-							["coord"] = { 39.9, 84.7, AZSHARA },
+							["coord"] = { 39.9, 84.7, MAP.AZSHARA },
 						}),
 						i(49229),	-- Purchase Order Receipt
 					},
@@ -458,13 +458,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14388, {	-- Azsharite Experiment Number Two
 					["sourceQuest"] = 14385,	-- Azsharite Experiment Number One
 					["qg"] = 36077,	-- Assistant Greely
-					["coord"] = { 50.3, 74.3, AZSHARA },
+					["coord"] = { 50.3, 74.3, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14322, {	-- Bad Science! Bad!
 					["qg"] = 36146,	-- Twistex Happytongs
-					["coord"] = { 45.0, 75.5, AZSHARA },
+					["coord"] = { 45.0, 75.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -476,7 +476,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14161, {	-- Basilisk Bashin'
 					["sourceQuest"] = 14162,	-- Report to Horzak
 					["qg"] = 35091,	-- Horzak Zignibble
-					["coord"] = { 29.1, 66.2, AZSHARA },
+					["coord"] = { 29.1, 66.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -488,7 +488,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26337, {	-- Beating the Market
 					["sourceQuest"] = 26335,	-- Ready the Navy
 					["provider"] = { "o", 204050 },	-- Foebreaker Blueprints
-					["coord"] = { 53.5, 47.5, AZSHARA },
+					["coord"] = { 53.5, 47.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -498,7 +498,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14370,	-- Mysterious Azsharite
 					},
 					["qg"] = 36077,	-- Assistant Greely
-					["coord"] = { 50.4, 74.3, AZSHARA },
+					["coord"] = { 50.4, 74.3, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] ={ i(49211) },	-- Mound o' Meat (QI!)
@@ -508,7 +508,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 4485 },	-- Belgrom Rockmaul
 						{ "i", 10643 },	-- Sealed Letter to Ag'tor
 					},
-					["coord"] = { 75.0, 34.2, ORGRIMMAR },
+					["coord"] = { 75.0, 34.2, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
@@ -516,7 +516,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3505, {	-- Betrayed (2/4)
 					["sourceQuest"] = 3504,	-- Betrayed (1/4)
 					["qg"] = 8576,	-- Ag'tor Bloodfist
-					["coord"] = { 22.2, 51.4, AZSHARA },
+					["coord"] = { 22.2, 51.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
@@ -532,7 +532,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3506, {	-- Betrayed (3/4)
 					["sourceQuest"] = 3505,	-- Betrayed (2/4)
 					["provider"] = { "o", 151286 },	-- Kaldorei Tome of Summoning
-					["coord"] = { 59.5, 31.3, AZSHARA },
+					["coord"] = { 59.5, 31.3, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
@@ -542,7 +542,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  10597 },	-- Head of Magus Rimtori
 								{ "o", 150140 },	-- Arcane Focusing Crystal
 							},
-							["coord"] = { 59.6, 31.4, AZSHARA },
+							["coord"] = { 59.6, 31.4, MAP.AZSHARA },
 							["cr"] = 8578,	-- Magus Rimtori
 						}),
 					},
@@ -553,7 +553,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8576 },	-- Ag'tor Bloodfist
 						{ "i", 10597 },	-- Head of Magus Rimtori
 					},
-					["coord"] = { 22.2, 51.4, AZSHARA },
+					["coord"] = { 22.2, 51.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
@@ -571,7 +571,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14477,	-- Push the Button!
 					},
 					["qg"] = 36903,	-- Jr. Bombardier Hackel
-					["coord"] = { 14.4, 65.7, AZSHARA },
+					["coord"] = { 14.4, 65.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -583,18 +583,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3508, {	-- Breaking the Ward
 					["sourceQuest"] = 3141,	-- Loramus
 					["qg"] = 7783,	-- Loramus Thalipedes
-					["coord"] = { 60.8, 66.4, AZSHARA },
+					["coord"] = { 60.8, 66.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8254, {	-- Cenarion Aid
 					["allianceQuestData"] = {
 						["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
-						["coord"] = { 38.8, 26.4, STORMWIND_CITY },
+						["coord"] = { 38.8, 26.4, MAP.STORMWIND_CITY },
 					},
 					["hordeQuestData"] = {
 						["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
-						["coord"] = { 35.6, 87.6, ORGRIMMAR },
+						["coord"] = { 35.6, 87.6, MAP.ORGRIMMAR },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -602,14 +602,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(24434, {	-- Commando Drop
 					["qg"] = 36919,	-- Andorel Sunsworn
-					["coord"] = { 13.8, 64.4, AZSHARA },
+					["coord"] = { 13.8, 64.4, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8153, {	-- Courser Antlers
 					["sourceQuest"] = 8151,	-- The Hunter's Charm
 					["qg"] = 8405,	-- Ogtinc
-					["coord"] = { 42.2, 42.6, AZSHARA },
+					["coord"] = { 42.2, 42.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
@@ -624,14 +624,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_THREE, q(81697, {	-- Defanged
 					["sourceQuest"] = 81682,	-- The Old Champ
 					["qg"] = 221400,	-- Kajind
-					["coord"] = { 25.4, 66.2, AZSHARA },
+					["coord"] = { 25.4, 66.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_1_15_2 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Kajind's Blade
 							["provider"] = { "i", 219935 },	-- Kajind's Blade
-							["coord"] = { 39.6, 71.2, AZSHARA },
+							["coord"] = { 39.6, 71.2, MAP.AZSHARA },
 							["cr"] = 221651,	-- Ceruleos
 						}),
 					},
@@ -653,7 +653,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8587 },	-- Jediga
 						{ "i", 10540 },	-- Tablet of Markri
 					},
-					["coord"] = { 22.4, 51.4, AZSHARA },
+					["coord"] = { 22.4, 51.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8587 },	-- Jediga
 						{ "i", 10541 },	-- Tablet of Sael'hai
 					},
-					["coord"] = { 22.4, 51.4, AZSHARA },
+					["coord"] = { 22.4, 51.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -675,7 +675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8587 },	-- Jediga
 						{ "i", 10539 },	-- Tablet of Jin'yael
 					},
-					["coord"] = { 22.4, 51.4, AZSHARA },
+					["coord"] = { 22.4, 51.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -686,7 +686,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8587 },	-- Jediga
 						{ "i", 10538 },	-- Tablet of Beth'Amara
 					},
-					["coord"] = { 22.4, 51.4, AZSHARA },
+					["coord"] = { 22.4, 51.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -694,7 +694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14433, {	-- Diplomacy by Another Means
 					["sourceQuest"] = 14431,	-- The Blackmaw Scar
 					["qg"] = 8586,	-- Haggrum Bloodfist
-					["coord"] = { 42.4, 23.6, AZSHARA },
+					["coord"] = { 42.4, 23.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -703,7 +703,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 49367 },	-- Blackmaw Meeting Agenda
 								{ "o", 196835 },	-- Important Documents
 							},
-							["coord"] = { 29.8, 38.5, AZSHARA },
+							["coord"] = { 29.8, 38.5, MAP.AZSHARA },
 						}),
 						objective(2, {	-- 0/1 Ambassador's Robes
 							["provider"] = { "i", 49366 },	-- Ambassador's Robes
@@ -714,7 +714,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14423, {	-- Dozercism
 					["sourceQuest"] = 14209,	-- Gunk in the Trunk
 					["qg"] = 35088,	-- Custer Clubnik
-					["coord"] = { 29.5, 66.8, AZSHARA },
+					["coord"] = { 29.5, 66.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -738,21 +738,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14340, {	-- Dressed to Impress
 					["sourceQuest"] = 14345,	-- Wash Out
 					["qg"] = 36210,	-- Sorata Firespinner
-					["coord"] = { 42.6, 25.1, AZSHARA },
+					["coord"] = { 42.6, 25.1, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(49201) },	-- Dingy Wizard Hat (QI!)
 				}),
 				q(14390, {	-- Easy is Boring
 					["sourceQuest"] = 14389,	-- Wasn't it Obvious?
-					["coord"] = { 27.8, 41.0, AZSHARA },
+					["coord"] = { 27.8, 41.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14480, {	-- Extermination
 					["sourceQuest"] = 24448,	-- Field Promotion
 					["qg"] = 36895,	-- Sergeant Zelks
-					["coord"] = { 34.4, 44.7, AZSHARA },
+					["coord"] = { 34.4, 44.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -777,7 +777,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24467, {	-- Fade to Black
 					["sourceQuest"] = 14391,	-- Turning the Tables
 					["qg"] = 35867,	-- Kalec
-					["coord"] = { 66.5, 20.3, AZSHARA },
+					["coord"] = { 66.5, 20.3, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -805,7 +805,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14297,	-- Pro-liberation
 					},
 					["qg"] = 36676,	-- Azuregos
-					["coord"] = { 66.8, 20.5, AZSHARA },
+					["coord"] = { 66.8, 20.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -820,13 +820,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24435,	-- Mop Up
 					},
 					["qg"] = 36920,	-- Lieutenant Drex
-					["coord"] = { 41.4, 53.6, AZSHARA },
+					["coord"] = { 41.4, 53.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24437, {	-- First Come, First Served
 					["qg"] = 36795,	-- Ruckus
-					["coord"] = { 39.1, 51.7, AZSHARA },
+					["coord"] = { 39.1, 51.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(49685) },	-- Flag of Territorial Claim (QI!)
@@ -834,7 +834,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14471, {	-- First Degree Mortar
 					["sourceQuest"] = 14468,	-- Another Warm Body
 					["qg"] = 36746,	-- Xiz "The Eye" Salvoblast
-					["coord"] = { 29.1, 57.9, AZSHARA },
+					["coord"] = { 29.1, 57.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -864,7 +864,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8379 },	-- Archmage Xylem
 						{ "i", 23250 },	-- Prismatic Shell
 					},
-					["coord"] = { 29.6, 40.6, AZSHARA },
+					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 60,
@@ -890,7 +890,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14130, {	-- Friends Come In All Colors
 					["sourceQuest"] = 14407,	-- Azshara Blues
 					["qg"] = 35867,	-- Kalec
-					["coord"] = { 55.4, 52.1, AZSHARA },
+					["coord"] = { 55.4, 52.1, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -918,14 +918,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14475, {	-- Grounded!
 					["qg"] = 36728,	-- Kroum
-					["coord"] = { 14.3, 65.0, AZSHARA },
+					["coord"] = { 14.3, 65.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14209, {	-- Gunk in the Trunk
 					["sourceQuest"] = 14202,	-- Survey the Lakeshore
 					["qg"] = 35088,	-- Custer Clubnik
-					["coord"] = { 29.6, 66.8, AZSHARA },
+					["coord"] = { 29.6, 66.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14430, {	-- Hacking the Construct
 					["sourceQuest"] = 14429,	-- Arcane De-Construction
 					["provider"] = { "o", 196833 },	-- Lower Scrying Stone
-					["coord"] = { 52.9, 29.0, AZSHARA },
+					["coord"] = { 52.9, 29.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -956,7 +956,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24436, {	-- Halo Drops
 					["sourceQuest"] = 14479,	-- There are Many Like It
 					["qg"] = 36921,	-- Sergeant Hort
-					["coord"] = { 41.3, 53.9, AZSHARA },
+					["coord"] = { 41.3, 53.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -979,7 +979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14469, {	-- Hand-me-downs
 					["sourceQuest"] = 14468,	-- Another Warm Body
 					["qg"] = 36749,	-- Commander Molotov
-					["coord"] = { 29.4, 57.6, AZSHARA },
+					["coord"] = { 29.4, 57.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -992,7 +992,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14486, {	-- Handling the Goods
 					["sourceQuest"] = 24448,	-- Field Promotion
 					["qg"] = 36894,	-- Tora Halotrix
-					["coord"] = { 34.5, 44.6, AZSHARA },
+					["coord"] = { 34.5, 44.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1021,7 +1021,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14484, {	-- Head of the Snake
 					["sourceQuest"] = 24448,	-- Field Promotion
 					["qg"] = 36895,	-- Sergeant Zelks
-					["coord"] = { 34.4, 44.7, AZSHARA },
+					["coord"] = { 34.4, 44.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1034,7 +1034,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14261, {	-- Ice Cold
 					["sourceQuest"] = 14391,	-- Turning the Tables
 					["qg"] = 37064,	-- Feno Blastnoggin
-					["coord"] = { 66.5, 19.6, AZSHARA },
+					["coord"] = { 66.5, 19.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1047,7 +1047,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(45570, {	-- In Safer Hands
 					["sourceQuest"] = 44925,	-- Closing the Eye
 					["qg"] = 117252,	-- Archmage Xylem
-					["coord"] = { 25.2, 38.0, AZSHARA },
+					["coord"] = { 25.2, 38.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 					["groups"] = {
 						i(143779),	-- The Focusing Iris (QI!)
@@ -1060,7 +1060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14470,	-- Military Breakthrough
 					},
 					["qg"] = 36744,	-- Glix Grindlock
-					["coord"] = { 29.3, 57.6, AZSHARA },
+					["coord"] = { 29.3, 57.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1072,7 +1072,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14267, {	-- Investigating the Sea Shrine
 					["sourceQuest"] = 14258,	-- Mortar the Point
 					["qg"] = 35657,	-- Torg Twocrush
-					["coord"] = { 50.6, 75.2, AZSHARA },
+					["coord"] = { 50.6, 75.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1082,14 +1082,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8659 },	-- Jes'rimon
 						{ "i", 10680 },	-- Jes'rimon's Note
 					},
-					["coord"] = { 55.6, 34.0, ORGRIMMAR },
+					["coord"] = { 55.6, 34.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
 				q(3601, {	-- Kim'jael Indeed!
 					["qg"] = 8420,	-- Kim'jael
-					["coord"] = { 53.4, 21.8, AZSHARA },
+					["coord"] = { 53.4, 21.8, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
@@ -1125,7 +1125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5534, {	-- Kim'jael's "Missing" Equipment
 					["sourceQuest"] = 3601,	-- Kim'jael Indeed!
 					["qg"] = 8420,	-- Kim'jael
-					["coord"] = { 53.4, 21.8, AZSHARA },
+					["coord"] = { 53.4, 21.8, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
@@ -1142,7 +1142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24433, {	-- Let Them Feast on Fear
 					["qg"] = 36730,	-- Chawg
-					["coord"] = { 14.0, 64.8, AZSHARA },
+					["coord"] = { 14.0, 64.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1157,7 +1157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14464, {	-- Lightning Strike Assassination
 					["sourceQuest"] = 14462,	-- Where's My Head?
 					["qg"] = 36729,	-- Slinky Sharpshiv
-					["coord"] = { 12.5, 67.4, AZSHARA },
+					["coord"] = { 12.5, 67.4, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3141, {	-- Loramus
 					["sourceQuest"] = 2744,	-- The Demon Hunter
 					["qg"] = 7783,	-- Loramus Thalipedes
-					["coord"] = { 60.8, 66.4, AZSHARA },
+					["coord"] = { 60.8, 66.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
@@ -1189,7 +1189,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 4046 },	-- Magatha Grimtotem
 						{ "i", 10678 },	-- Magatha's Note
 					},
-					["coord"] = { 70.2, 30.8, THUNDER_BLUFF },
+					["coord"] = { 70.2, 30.8, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1197,28 +1197,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8250, {	-- Magecraft
 					["allianceQuestData"] = {
 						["qgs"] = {
-							7312,	-- Dink <Mage Trainer> [IRONFORGE]
-							331,	-- Maginor Dumas <Master Mage> [STORMWIND_CITY]
+							7312,	-- Dink <Mage Trainer> [MAP.IRONFORGE]
+							331,	-- Maginor Dumas <Master Mage> [MAP.STORMWIND_CITY]
 						},
 						["coords"] = {
-							{ 26.8, 8.6, IRONFORGE },
+							{ 26.8, 8.6, MAP.IRONFORGE },
 							-- #if AFTER WRATH
-							{ 49.2, 87.7, STORMWIND_CITY },
+							{ 49.2, 87.7, MAP.STORMWIND_CITY },
 							-- #else
-							{ 38.2, 81.4, STORMWIND_CITY },
+							{ 38.2, 81.4, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 					},
 					["hordeQuestData"] = {
 						["qgs"] = {
-							7311,	-- Uthel'nay <Mage Trainer> [ORGRIMMAR]
-							3047,	-- Archmage Shymm <Mage Trainer> [THUNDER_BLUFF]
-							4567,	-- Pierce Shackleton <Mage Trainer>	[UNDERCITY]
+							7311,	-- Uthel'nay <Mage Trainer> [MAP.ORGRIMMAR]
+							3047,	-- Archmage Shymm <Mage Trainer> [MAP.THUNDER_BLUFF]
+							4567,	-- Pierce Shackleton <Mage Trainer>	[MAP.UNDERCITY]
 						},
 						["coords"] = {
-							{ 39.0, 86.0, ORGRIMMAR },
-							{ 22.6, 14.8, THUNDER_BLUFF },
-							{ 85.6, 14.0, UNDERCITY },
+							{ 39.0, 86.0, MAP.ORGRIMMAR },
+							{ 22.6, 14.8, MAP.THUNDER_BLUFF },
+							{ 85.6, 14.0, MAP.UNDERCITY },
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1229,7 +1229,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8251, {	-- Magic Dust
 					["sourceQuest"] = 8250,	-- Magecraft
 					["qg"] = 8379,	-- Archmage Xylem
-					["coord"] = { 29.6, 40.6, AZSHARA },
+					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 50,
@@ -1250,7 +1250,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14263,	-- Waste of Thyme
 					},
 					["qg"] = 35756,	-- Teresa Spireleaf
-					["coord"] = { 47.2, 21.2, AZSHARA },
+					["coord"] = { 47.2, 21.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1264,7 +1264,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3503, {	-- Meeting with the Master
 					["qg"] = 8395,	-- Sanath Lim-yo
-					["coord"] = { 28.0, 50.0, AZSHARA },
+					["coord"] = { 28.0, 50.0, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -1272,14 +1272,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14215, {	-- Memories of the Dead
 					["sourceQuest"] = 14201,	-- A Thousand Stories in the Sand
 					["qg"] = 35087,	-- Malynea Skyreaver
-					["coord"] = { 29.6, 66.8, AZSHARA },
+					["coord"] = { 29.6, 66.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14470, {	-- Military Breakthrough
 					["sourceQuest"] = 14468,	-- Another Warm Body
 					["qg"] = 36744,	-- Glix Grindlock
-					["coord"] = { 29.3, 57.6, AZSHARA },
+					["coord"] = { 29.3, 57.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1291,14 +1291,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 49700 },	-- SFG
 								{ "o", 201572 },	-- SFG
 							},
-							["coord"] = { 27.7, 51.9, AZSHARA },
+							["coord"] = { 27.7, 51.9, MAP.AZSHARA },
 						}),
 					},
 				}),
 				q(24435, {	-- Mop Up
 					["sourceQuest"] = 14479,	-- There are Many Like It
 					["qg"] = 36920,	-- Lieutenant Drex
-					["coord"] = { 41.5, 53.6, AZSHARA },
+					["coord"] = { 41.5, 53.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1312,7 +1312,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14258, {	-- Mortar the Point
 					["qg"] = 35817,	-- Bombardier Captian Smooks
-					["coord"] = { 52.2, 74.2, AZSHARA },
+					["coord"] = { 52.2, 74.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1327,7 +1327,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14442, {	-- My Favorite Subject
 					["sourceQuest"] = 14322,	-- Bad Science!  Bad!
 					["qg"] = 36146,	-- Twistex Happytongs
-					["coord"] = { 45.0, 75.4, AZSHARA },
+					["coord"] = { 45.0, 75.4, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1335,7 +1335,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14370, {	-- Mysterious Azsharite
 					["sourceQuest"] = 14310,	-- Segmentation Fault: Core Dumped
 					["qg"] = 36077,	-- Assistant Greely
-					["coord"] = { 50.4, 74.2, AZSHARA },
+					["coord"] = { 50.4, 74.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1354,7 +1354,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14216, {	-- Mystery of the Sarcen Stone
 					["sourceQuest"] = 14215,	-- Memories of the Dead
-					["coord"] = { 37.5, 74.5, AZSHARA },
+					["coord"] = { 37.5, 74.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1378,7 +1378,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14424, {	-- Need More Science
 					["sourceQuest"] = 14423,	-- Dozercism
 					["qg"] = 35088,	-- Custer Clubnik
-					["coord"] = { 29.5, 66.8, AZSHARA },
+					["coord"] = { 29.5, 66.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1386,7 +1386,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14408, {	-- Nine's Plan
 					["sourceQuest"] = 14442,	-- My Favorite Subject
 					["qg"] = 36500,	-- Subject Nine
-					["coord"] = { 42.2, 76.0, AZSHARA },
+					["coord"] = { 42.2, 76.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(49204) },	-- Secret Rocket Plans (QI!)
@@ -1394,7 +1394,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8255, {	-- Of Coursers We Know
 					["sourceQuest"] = 8254,	-- Cenarion Aid
 					["qg"] = 8405,	-- Ogtinc
-					["coord"] = { 42.2, 42.6, AZSHARA },
+					["coord"] = { 42.2, 42.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
@@ -1416,8 +1416,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 203755 },	-- Wrenchman Recruitment Poster
 					},
 					["coords"] = {
-						{ 56.9, 50.1, AZSHARA },	-- object 201578
-						{ 52.3, 50.2, AZSHARA },	-- object 203755
+						{ 56.9, 50.1, MAP.AZSHARA },	-- object 201578
+						{ 52.3, 50.2, MAP.AZSHARA },	-- object 203755
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1426,7 +1426,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Puzzle order is Arcane, Frost, Fire, Shadow.",
 					["sourceQuest"] = 44915,	-- Professionally Good looking
 					["qg"] = 115791,	-- Joanna
-					["coord"] = { 25.0, 38.6, AZSHARA },
+					["coord"] = { 25.0, 38.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_7_2_0 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
@@ -1440,28 +1440,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26372, {	-- Pre-Flight Checklist
 					["sourceQuest"] = 26361,	-- Smoot's Samophlange
 					["qg"] = 42643,	-- Fleep
-					["coord"] = { 54.6, 51.0, AZSHARA },
+					["coord"] = { 54.6, 51.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14192, {	-- Prismbreak
 					["sourceQuest"] = 14190,	-- The Perfect Prism
 					["provider"] = { "o", 195431 },	-- Headquarters Radio
-					["coord"] = { 20.2, 70.3, AZSHARA },
+					["coord"] = { 20.2, 70.3, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24453, {	-- Private Chat
 					["sourceQuest"] = 24452,	-- Profitability Scouting
 					["qg"] = 36749,	-- Commander Molotov
-					["coord"] = { 29.4, 57.6, AZSHARA },
+					["coord"] = { 29.4, 57.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24463, {	-- Probing into Ashenvale
 					["sourceQuest"] = 24439,	-- The Conquest of Azshara
 					["qg"] = 36728,	-- Kroum
-					["coord"] = { 14.3, 65.0, AZSHARA },
+					["coord"] = { 14.3, 65.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1475,7 +1475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						47047,	-- Survival: The Thieving Apprentice
 					},
 					["qg"] = 115791,	-- Joanna
-					["coord"] = { 25.0, 38.6, AZSHARA },
+					["coord"] = { 25.0, 38.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_7_2_0 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
@@ -1493,7 +1493,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24452, {	-- Profitability Scouting
 					["sourceQuest"] = 14472,	-- In the Face!
 					["qg"] = 36749,	-- Commander Molotov
-					["coord"] = { 29.4, 57.6, AZSHARA },
+					["coord"] = { 29.4, 57.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1511,7 +1511,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14297, {	-- Pro-liberation
 					["sourceQuest"] = 14391,	-- Turning the Tables
 					["qg"] = 37061,	-- Jellix Fuselighter
-					["coord"] = { 66.3, 20.2, AZSHARA },
+					["coord"] = { 66.3, 20.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1524,7 +1524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14477, {	-- Push the Button!
 					["sourceQuest"] = 14476,	-- Rigged to Blow
 					["qg"] = 36785,	-- Bombardier Captain Smooks
-					["coord"] = { 14.4, 75.6, AZSHARA },
+					["coord"] = { 14.4, 75.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1542,28 +1542,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24455, {	-- Rapid Deployment
 					["sourceQuest"] = 14478,	-- Operation Fishgut
 					["qg"] = 36749,	-- Commander Molotov
-					["coord"] = { 60.6, 50.6, AZSHARA },
+					["coord"] = { 60.6, 50.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14422, {	-- Raptor Raptor Rocket
 					["sourceQuest"] = 14408,	-- Nine's Plan
 					["qg"] = 36500,	-- Subject Nine
-					["coord"] = { 42.2, 76.0, AZSHARA },
+					["coord"] = { 42.2, 76.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26358, {	-- Ready the Air Force
 					["sourceQuest"] = 26324,	-- Where is My Warfleet?
 					["qg"] = 42640,	-- Captain Krazz
-					["coord"] = { 60.0, 50.4, AZSHARA },
+					["coord"] = { 60.0, 50.4, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26374, {	-- Ready the Ground Troops
 					["sourceQuest"] = 26324,	-- Where is My Warfleet?
 					["qg"] = 42641,	-- Warlord Krogg
-					["coord"] = { 60.0, 50.4, AZSHARA },
+					["coord"] = { 60.0, 50.4, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1575,14 +1575,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26335, {	-- Ready the Navy
 					["sourceQuest"] = 26324,	-- Where is My Warfleet?
 					["qg"] = 42641,	-- Warlord Krogg
-					["coord"] = { 60.0, 50.4, AZSHARA },
+					["coord"] = { 60.0, 50.4, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14194, {	-- Refleshification
 					["sourceQuest"] = 14192,	-- Prismbreak
 					["provider"] = { "o", 195435 },	-- Weapons Cabinet
-					["coord"] = { 20.0, 69.9, AZSHARA },
+					["coord"] = { 20.0, 69.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14250, {	-- Renewable Resource
 					["sourceQuest"] = 14340,	-- Dressed to Impress
 					["qg"] = 35755,	-- Tharkul Ironskull
-					["coord"] = { 47.2, 21.1, AZSHARA },
+					["coord"] = { 47.2, 21.1, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1616,7 +1616,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14162, {	-- Report to Horzak
 					["sourceQuest"] = 14155,	-- Arborcide
 					["qg"] = 35086,	-- Labor Captain Grabbit
-					["coord"] = { 26.9, 77.0, AZSHARA },
+					["coord"] = { 26.9, 77.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1624,7 +1624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14271, {	-- Report to Twocrush
 					["sourceQuest"] = 14270,	-- The Keystone Shard
 					["provider"] = { "o", 195642 },	-- Naga Power Stone
-					["coord"] = { 58.9, 71.8, AZSHARA },
+					["coord"] = { 58.9, 71.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1637,7 +1637,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14128, {	-- Return of the Highborne?
 					["sourceQuest"] = 14127,	-- Return of the Highborne?
 					["qg"] = 8576,	-- Ag'tor Bloodfist
-					["coord"] = { 26.8, 76.9, AZSHARA },
+					["coord"] = { 26.8, 76.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1645,16 +1645,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_THREE, q(81801, {	-- Return to the Arena
 					["sourceQuest"] = 81697,	-- Defanged
 					["qg"] = 221400,	-- Kajind
-					["coord"] = { 25.4, 66.2, AZSHARA },
+					["coord"] = { 25.4, 66.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { TANARIS },
+					["maps"] = { MAP.TANARIS },
 					["classes"] = { WARRIOR },
 					["lvl"] = 45,
 				})),
 				-- #endif
 				q(3421, {	-- Return Trip
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
-					["coord"] = { 26.4, 46.2, AZSHARA },
+					["coord"] = { 26.4, 46.2, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -1662,14 +1662,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14476, {	-- Rigged to Blow
 					["sourceQuest"] = 14475,	-- Grounded!
 					["qg"] = 36785,	-- Bombardier Captain Smooks
-					["coord"] = { 14.4, 75.5, AZSHARA },
+					["coord"] = { 14.4, 75.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14129, {	-- Runaway Shredder!
 					["sourceQuest"] = 28496,	-- Warchief's Command: Azshara!
 					["qg"] = 35086,	-- Labor Captain Grabbit
-					["coord"] = { 27.0, 77.0, AZSHARA },
+					["coord"] = { 27.0, 77.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1681,14 +1681,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14310, {	-- Segmentation Fault: Core Dumped
 					["sourceQuest"] = 14308,	-- When Science Attacks
 					["provider"] = { "o", 195676 },	-- Secret Lab Squawkbox
-					["coord"] = { 43.8, 77.3, AZSHARA },
+					["coord"] = { 43.8, 77.3, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14249, {	-- Shear Will
 					["sourceQuest"] = 14340,	-- Dressed to Impress
 					["qg"] = 35648,	-- Will Robotronic
-					["coord"] = { 47.1, 21.0, AZSHARA },
+					["coord"] = { 47.1, 21.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1722,7 +1722,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14485,	-- Ticker Required
 					},
 					["qg"] = 36745,	-- Captain Tork
-					["coord"] = { 34.3, 44.8, AZSHARA },
+					["coord"] = { 34.3, 44.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1746,7 +1746,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14295, {	-- Sisters of the Sea
 					["sourceQuest"] = 14271,	-- Report to Twocrush
 					["qg"] = 35657,	-- Torg Twocrush
-					["coord"] = { 50.6, 75.2, AZSHARA },
+					["coord"] = { 50.6, 75.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1770,7 +1770,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26361, {	-- Smoot's Samophlange
 					["sourceQuest"] = 26358,	-- Ready the Air Force
 					["qg"] = 42643,	-- Fleep
-					["coord"] = { 54.6, 51.0, AZSHARA },
+					["coord"] = { 54.6, 51.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1796,7 +1796,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5535, {	-- Spiritual Unrest
 					["qg"] = 11548,	-- Loth'atu
-					["coord"] = { 11.4, 78.2, AZSHARA },
+					["coord"] = { 11.4, 78.2, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -1810,7 +1810,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3517, {	-- Stealing Knowledge
 					["qg"] = 8587,	-- Jediga
-					["coord"] = { 22.4, 51.4, AZSHARA },
+					["coord"] = { 22.4, 51.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1844,7 +1844,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14487, {	-- Still Beating Heart
 					["sourceQuest"] = 24448,	-- Field Promotion
 					["qg"] = 36745,	-- Captain Tork
-					["coord"] = { 34.3, 44.9, AZSHARA },
+					["coord"] = { 34.3, 44.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1859,14 +1859,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14165, {	-- Stone Cold
 					["qg"] = 35091,	-- Horzak Zignibble
-					["coord"] = { 29.1, 66.2, AZSHARA },
+					["coord"] = { 29.1, 66.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14202, {	-- Survey the Lakeshore
 					["sourceQuest"] = 24453,	-- Private Chat
 					["qg"] = 35088,	-- Custer Clubnik
-					["coord"] = { 29.5, 66.8, AZSHARA },
+					["coord"] = { 29.5, 66.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(48665) },	-- Surveyor's Beacon (QI!)
@@ -1874,7 +1874,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14132, {	-- That's Just Rude!
 					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 					["qg"] = 35142,	-- Ergll
-					["coord"] = { 70.3, 36.2, AZSHARA },
+					["coord"] = { 70.3, 36.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1885,7 +1885,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(44924, {	-- The Archmage Accosted
 					["sourceQuest"] = 44920,	-- Order of Incantations
-					["coord"] = { 25.1, 38.5, AZSHARA },
+					["coord"] = { 25.1, 38.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_7_2_0 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
@@ -1901,7 +1901,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14433,	-- Diplomacy by Another Means
 					},
 					["qg"] = 8586,	-- Haggrum Bloodfist
-					["coord"] = { 42.4, 23.6, AZSHARA },
+					["coord"] = { 42.4, 23.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14431, {	-- The Blackmaw Scar
 					["qg"] = 8586,	-- Haggrum Bloodfist
-					["coord"] = { 42.4, 23.5, AZSHARA },
+					["coord"] = { 42.4, 23.5, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1954,7 +1954,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24433,	-- Let Them Feast on Fear
 					},
 					["qg"] = 36730,	-- Chawg
-					["coord"] = { 14.0, 64.8, AZSHARA },
+					["coord"] = { 14.0, 64.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1975,7 +1975,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14117, {	-- The Eyes of Ashenvale
 					["qg"] = 8576,	-- Ag'tor Bloodfist
-					["coord"] = { 26.8, 76.9, AZSHARA },
+					["coord"] = { 26.8, 76.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1999,20 +1999,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7783 },	-- Loramus Thalipedes
 						{ "i", 10738 },	-- Shipment to Galvan
 					},
-					["coord"] = { 60.8, 66.4, AZSHARA },
+					["coord"] = { 60.8, 66.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STRANGLETHORN_VALE },
+					["maps"] = { MAP.STRANGLETHORN_VALE },
 					["lvl"] = 45,
 				}),
 				q(14270, {	-- The Keystone Shard
 					["sourceQuest"] = 14267,	-- Investigating the Sea Shrine
 					["provider"] = { "o", 195642 },	-- Naga Power Stone
-					["coord"] = { 58.9, 71.8, AZSHARA },
+					["coord"] = { 58.9, 71.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						o(201579, {	-- Keystone Shard
-							["coord"] = { 57.6, 71.0, AZSHARA },
+							["coord"] = { 57.6, 71.0, MAP.AZSHARA },
 							["groups"] = { i(49094) },	-- Keystone Shard (QI!)
 						}),
 					},
@@ -2025,12 +2025,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							5516,	-- Ulfir Ironbeard <Hunter Trainer>
 						},
 						["coords"] = {
-							{ 42.2, 7.6, DARNASSUS },
-							{ 70.6, 83.8, IRONFORGE },
+							{ 42.2, 7.6, MAP.DARNASSUS },
+							{ 70.6, 83.8, MAP.IRONFORGE },
 							-- #if AFTER WRATH
-							{ 67.6, 35.8, STORMWIND_CITY },
+							{ 67.6, 35.8, MAP.STORMWIND_CITY },
 							-- #else
-							{ 62.0, 15.0, STORMWIND_CITY },
+							{ 62.0, 15.0, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 					},
@@ -2040,8 +2040,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							3039,	-- Holt Thunderhorn <Hunter Trainer>
 						},
 						["coords"] = {
-							{ 66.2, 18.6, ORGRIMMAR },
-							{ 57.6, 88.6, THUNDER_BLUFF },
+							{ 66.2, 18.6, MAP.ORGRIMMAR },
+							{ 57.6, 88.6, MAP.THUNDER_BLUFF },
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2051,7 +2051,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8256, {	-- The Ichor of Undeath
 					["sourceQuest"] = 8255,	-- Of Coursers We Know
 					["qg"] = 8405,	-- Ogtinc
-					["coord"] = { 42.2, 42.6, AZSHARA },
+					["coord"] = { 42.2, 42.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 7972, 1 } },	-- Ichor of Undeath
 					["classes"] = { PRIEST },
@@ -2068,22 +2068,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3509, {	-- The Name of the Beast (1/3)
 					["sourceQuest"] = 3508,	-- Breaking the Ward
 					["qg"] = 7783,	-- Loramus Thalipedes
-					["coord"] = { 60.8, 66.4, AZSHARA },
+					["coord"] = { 60.8, 66.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(3510, {	-- The Name of the Beast (2/3)
 					["sourceQuest"] = 3509,	-- The Name of the Beast (1/3)
 					["qg"] = 6134,	-- Lord Arkkoroc
-					["coord"] = { 77.2, 42.8, AZSHARA },
+					["coord"] = { 77.2, 42.8, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hetaera's Beaten Head
 							["provider"] = { "i", 10599 },	-- Hetaera's Beaten Head
 							["coords"] = {
-								{ 56.6, 44.6, AZSHARA },
-								{ 59.4, 40.6, AZSHARA },
+								{ 56.6, 44.6, MAP.AZSHARA },
+								{ 59.4, 40.6, MAP.AZSHARA },
 							},
 							["cr"] = 6140,	-- Hetaera
 						}),
@@ -2103,14 +2103,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 6134 },	-- Lord Arkkoroc
 						{ "i", 10610 },	-- Hetaera's Blood
 					},
-					["coord"] = { 77.2, 42.8, AZSHARA },
+					["coord"] = { 77.2, 42.8, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(14190, {	-- The Perfect Prism
 					["sourceQuest"] = 14165,	-- Stone Cold
 					["qg"] = 35091,	-- Horzak Zignibble
-					["coord"] = { 29.1, 66.2, AZSHARA },
+					["coord"] = { 29.1, 66.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2126,14 +2126,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14226,	-- Trouble Under Foot
 					},
 					["qg"] = 35187,	-- Image of Archmage Xylem
-					["coord"] = { 47.2, 20.8, AZSHARA },
+					["coord"] = { 47.2, 20.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8252, {	-- The Siren's Coral
 					["sourceQuest"] = 8251,	-- Magic Dust
 					["qg"] = 8379,	-- Archmage Xylem
-					["coord"] = { 29.6, 40.6, AZSHARA },
+					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 50,
@@ -2147,7 +2147,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14383, {	-- The Terrible Tinkers of the Ruined Reaches
 					["sourceQuest"] = 14377,	-- Befriending Giants
 					["qg"] = 36379,	-- Hobart Grapplehammer
-					["coord"] = { 50.5, 74.7, AZSHARA },
+					["coord"] = { 50.5, 74.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2171,35 +2171,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14300, {	-- The Trial of Fire
 					["sourceQuest"] = 14296,	-- Watch Your Step
 					["qg"] = 36361,	-- Image of Archmage Xylem
-					["coord"] = { 55.9, 12.1, AZSHARA },
+					["coord"] = { 55.9, 12.1, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24478, {	-- The Trial of Frost
 					["sourceQuest"] = 14296,	-- Watch Your Step
 					["qg"] = 36361,	-- Image of Archmage Xylem
-					["coord"] = { 55.9, 12.1, AZSHARA },
+					["coord"] = { 55.9, 12.1, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24479, {	-- The Trial of Shadow
 					["sourceQuest"] = 14296,	-- Watch Your Step
 					["qg"] = 36361,	-- Image of Archmage Xylem
-					["coord"] = { 55.9, 12.1, AZSHARA },
+					["coord"] = { 55.9, 12.1, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14479, {	-- There Are Many Like It
 					["sourceQuest"] = 24455,	-- Rapid Deployment
 					["qg"] = 36956,	-- Captain Desoto
-					["coord"] = { 58.1, 52.3, AZSHARA },
+					["coord"] = { 58.1, 52.3, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14485, {	-- Ticker Required
 					["sourceQuest"] = 24448,	-- Field Promotion
 					["qg"] = 36895,	-- Sergeant Zelks
-					["coord"] = { 34.4, 44.7, AZSHARA },
+					["coord"] = { 34.4, 44.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(49629) },	-- Gob Squad Flare (QI!)
@@ -2207,7 +2207,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14262, {	-- To Gut a Fish
 					["sourceQuest"] = 14258,	-- Mortar the Point
 					["qg"] = 35657,	-- Torg Twocrush
-					["coord"] = { 50.6, 75.2, AZSHARA },
+					["coord"] = { 50.6, 75.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2226,7 +2226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14263,	-- Waste of Thyme
 					},
 					["qg"] = 35187,	-- Image of Archmage Xylem
-					["coord"] = { 47.2, 20.8, AZSHARA },
+					["coord"] = { 47.2, 20.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2238,7 +2238,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14391, {	-- Turning the Tables
 					["sourceQuest"] = 14390,	-- Easy is Boring
 					["qg"] = 36436,	-- Spirit of Azuregos
-					["coord"] = { 27.8, 40.2, AZSHARA },
+					["coord"] = { 27.8, 40.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2249,14 +2249,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						26374,	-- Ready the Ground Troops
 					},
 					["qg"] = 42640,	-- Captain Krazz
-					["coord"] = { 60.0, 50.4, AZSHARA },
+					["coord"] = { 60.0, 50.4, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26388, {	-- Twilight Skies (2/2)
 					["sourceQuest"] = 28849,	-- Twilight Skies (1/2)
 					["qg"] = 50367,	-- Friz Groundspin
-					["coord"] = { 50.6, 74.0, AZSHARA },
+					["coord"] = { 50.6, 74.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2274,7 +2274,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14135, {	-- Up a Tree
 					["sourceQuest"] = 14134,	-- The Captain's Logs
 					["qg"] = 35086,	-- Labor Captain Grabbit
-					["coord"] = { 27.0, 77.0, AZSHARA },
+					["coord"] = { 27.0, 77.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2285,7 +2285,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14118, {	-- Venison for the Troops
 					["qg"] = 8576,	-- Ag'tor Bloodfist
-					["coord"] = { 26.8, 76.9, AZSHARA },
+					["coord"] = { 26.8, 76.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2297,7 +2297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				warchiefscommand(q(28496, {	-- Warchief's Command: Azshara!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 9. (TODO: Confirm this.)
@@ -2307,14 +2307,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(9362, {	-- Warlord Krellian
 					["qg"] = 8379,	-- Archmage Xylem
-					["coord"] = { 29.6, 40.6, AZSHARA },
+					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Prismatic Shell
 							["provider"] = { "i", 23250 },	-- Prismatic Shell
-							["coord"] = { 41.6, 52.8, AZSHARA },
+							["coord"] = { 41.6, 52.8, MAP.AZSHARA },
 							["cr"] = 8408,	-- Warlord Krellian
 						}),
 					},
@@ -2326,21 +2326,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14132,	-- That's Just Rude!
 					},
 					["qg"] = 35142,	-- Ergll
-					["coord"] = { 70.3, 36.2, AZSHARA },
+					["coord"] = { 70.3, 36.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14389, {	-- Wasn't It Obvious?
 					["sourceQuest"] = 14299,	-- Xylem's Asylum
 					["qg"] = 36372,	-- Joanna
-					["coord"] = { 25.5, 37.9, AZSHARA },
+					["coord"] = { 25.5, 37.9, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14263, {	-- Waste of Thyme
 					["sourceQuest"] = 14340,	-- Dressed to Impress
 					["qg"] = 35754,	-- Quarla Whistlebreak
-					["coord"] = { 47.0, 21.0, AZSHARA },
+					["coord"] = { 47.0, 21.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2355,7 +2355,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14296, {	-- Watch Your Step
 					["sourceQuest"] = 14413,	-- The Pinnacle of Learning
 					["qg"] = 36334,	-- Image of Archmage Xylem
-					["coord"] = { 55.7, 14.7, AZSHARA },
+					["coord"] = { 55.7, 14.7, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2373,7 +2373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8231, {	-- Wavethrashing
 					["sourceQuest"] = 8153,	-- Courser Antlers
 					["qg"] = 8405,	-- Ogtinc
-					["coord"] = { 42.2, 42.6, AZSHARA },
+					["coord"] = { 42.2, 42.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
@@ -2391,14 +2391,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26294, {	-- Weapons of Mass Dysfunction
 					["sourceQuest"] = 26293,	-- Machines of War
 					["qg"] = 42672,	-- Foreman Glibbs
-					["coord"] = { 26.2, 78.8, AZSHARA },
+					["coord"] = { 26.2, 78.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14308, {	-- When Science Attacks
 					["sourceQuest"] = 14424,	-- Need More Science
 					["qg"] = 36077,	-- Assistant Greely
-					["coord"] = { 50.4, 74.2, AZSHARA },
+					["coord"] = { 50.4, 74.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(49132) },	-- Fireliminator X-21 (QI!)
@@ -2406,7 +2406,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14462, {	-- Where's My Head?
 					["sourceQuest"] = 24497,	-- Airborne Again
 					["qg"] = 36730,	-- Chawg
-					["coord"] = { 14.0, 64.8, AZSHARA },
+					["coord"] = { 14.0, 64.8, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2417,7 +2417,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24479,	-- The Trial of Shadow
 					},
 					["qg"] = 36361,	-- Image of Archmage Xylem
-					["coord"] = { 55.9, 12.1, AZSHARA },
+					["coord"] = { 55.9, 12.1, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2438,7 +2438,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8379 },	-- Archmage Xylem
 						{ "i", 10681 },	-- Xylem's Note
 					},
-					["coord"] = { 29.2, 40.2, AZSHARA },
+					["coord"] = { 29.2, 40.2, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -2448,17 +2448,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(6648, {	-- Antilos
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 45.2, 27.2, AZSHARA },
+						{ 45.2, 27.2, MAP.AZSHARA },
 						-- #else
-						{ 16.8, 51.8, AZSHARA },
-						{ 18.0, 56.6, AZSHARA },
-						{ 17.0, 64.0, AZSHARA },
-						{ 48.0, 19.2, AZSHARA },
-						{ 49.0, 26.0, AZSHARA },
-						{ 51.0, 29.6, AZSHARA },
-						{ 52.2, 36.8, AZSHARA },
-						{ 54.0, 25.8, AZSHARA },
-						{ 56.6, 19.4, AZSHARA },
+						{ 16.8, 51.8, MAP.AZSHARA },
+						{ 18.0, 56.6, MAP.AZSHARA },
+						{ 17.0, 64.0, MAP.AZSHARA },
+						{ 48.0, 19.2, MAP.AZSHARA },
+						{ 49.0, 26.0, MAP.AZSHARA },
+						{ 51.0, 29.6, MAP.AZSHARA },
+						{ 52.2, 36.8, MAP.AZSHARA },
+						{ 54.0, 25.8, MAP.AZSHARA },
+						{ 56.6, 19.4, MAP.AZSHARA },
 						-- #endif
 					},
 				}),
@@ -2468,9 +2468,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 33.0, 32.6, AZSHARA },
+						{ 33.0, 32.6, MAP.AZSHARA },
 						-- #else
-						{ 38.4, 32.6, AZSHARA },
+						{ 38.4, 32.6, MAP.AZSHARA },
 						-- #endif
 					},
 				}),
@@ -2480,13 +2480,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.4, 77.6, AZSHARA },
-						{ 60.6, 77.6, AZSHARA },
-						{ 62.6, 76.8, AZSHARA },
-						{ 63.2, 79.2, AZSHARA },
-						{ 63.6, 81.4, AZSHARA },
+						{ 59.4, 77.6, MAP.AZSHARA },
+						{ 60.6, 77.6, MAP.AZSHARA },
+						{ 62.6, 76.8, MAP.AZSHARA },
+						{ 63.2, 79.2, MAP.AZSHARA },
+						{ 63.6, 81.4, MAP.AZSHARA },
 						-- #else
-						{ 41.6, 51.8, AZSHARA },
+						{ 41.6, 51.8, MAP.AZSHARA },
 						-- #endif
 					},
 					["groups"] = {
@@ -2498,95 +2498,95 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(6649, {	-- Lady Sesspira
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 44.0, 59.8, AZSHARA },
+						{ 44.0, 59.8, MAP.AZSHARA },
 						-- #else
-						{ 40.6, 45.6, AZSHARA },
-						{ 37.2, 49.0, AZSHARA },
-						{ 37.6, 51.8, AZSHARA },
-						{ 34.0, 58.6, AZSHARA },
-						{ 39.6, 55.6, AZSHARA },
+						{ 40.6, 45.6, MAP.AZSHARA },
+						{ 37.2, 49.0, MAP.AZSHARA },
+						{ 37.6, 51.8, MAP.AZSHARA },
+						{ 34.0, 58.6, MAP.AZSHARA },
+						{ 39.6, 55.6, MAP.AZSHARA },
 						-- #endif
 					},
 				}),
 				n(6647, {	-- Magister Hawkhelm
 					["coords"] = {
-						{ 56.8, 28.6, AZSHARA },
-						{ 59.4, 31.4, AZSHARA },
+						{ 56.8, 28.6, MAP.AZSHARA },
+						{ 59.4, 31.4, MAP.AZSHARA },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(6652, {	-- Master Feardred
 					["coords"] = {
-						{ 61.8, 25.6, AZSHARA },
-						{ 65.8, 17.6, AZSHARA },
+						{ 61.8, 25.6, MAP.AZSHARA },
+						{ 65.8, 17.6, MAP.AZSHARA },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(6646, {	-- Monnos the Elder
 					["coords"] = {
-						{ 82.0, 18.6, AZSHARA },
-						{ 78.6, 17.4, AZSHARA },
-						{ 76.2, 18.0, AZSHARA },
-						{ 72.8, 19.2, AZSHARA },
-						{ 76.8, 23.4, AZSHARA },
-						{ 59.8, 78.4, AZSHARA },
-						{ 55.6, 80.2, AZSHARA },
-						{ 59.8, 80.6, AZSHARA },
-						{ 56.4, 87.8, AZSHARA },
-						{ 59.6, 89.0, AZSHARA },
+						{ 82.0, 18.6, MAP.AZSHARA },
+						{ 78.6, 17.4, MAP.AZSHARA },
+						{ 76.2, 18.0, MAP.AZSHARA },
+						{ 72.8, 19.2, MAP.AZSHARA },
+						{ 76.8, 23.4, MAP.AZSHARA },
+						{ 59.8, 78.4, MAP.AZSHARA },
+						{ 55.6, 80.2, MAP.AZSHARA },
+						{ 59.8, 80.6, MAP.AZSHARA },
+						{ 56.4, 87.8, MAP.AZSHARA },
+						{ 59.6, 89.0, MAP.AZSHARA },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(107477, {	-- N.U.T.Z
-					["coord"] = { 44.0, 75.6, AZSHARA },
+					["coord"] = { 44.0, 75.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(13896, {	-- Scalebeard
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 43.6, 52.6, AZSHARA },
-						{ 42.8, 50.6, AZSHARA },
-						{ 42.8, 47.2, AZSHARA },
-						{ 42.6, 46.4, AZSHARA },
+						{ 43.6, 52.6, MAP.AZSHARA },
+						{ 42.8, 50.6, MAP.AZSHARA },
+						{ 42.8, 47.2, MAP.AZSHARA },
+						{ 42.6, 46.4, MAP.AZSHARA },
 						-- #else
-						{ 55.0, 49.8, AZSHARA },
-						{ 52.0, 45.6, AZSHARA },
-						{ 52.2, 49.6, AZSHARA },
+						{ 55.0, 49.8, MAP.AZSHARA },
+						{ 52.0, 45.6, MAP.AZSHARA },
+						{ 52.2, 49.6, MAP.AZSHARA },
 						-- #endif
 					},
 				}),
 				n(8660, {	-- The Evalcharr
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 14.2, 50.6, AZSHARA },
-						{ 15.0, 58.2, AZSHARA },
+						{ 14.2, 50.6, MAP.AZSHARA },
+						{ 15.0, 58.2, MAP.AZSHARA },
 						-- #else
-						{ 17.6, 54.0, AZSHARA },
-						{ 18.8, 66.0, AZSHARA },
-						{ 23.4, 55.0, AZSHARA },
+						{ 17.6, 54.0, MAP.AZSHARA },
+						{ 18.8, 66.0, MAP.AZSHARA },
+						{ 23.4, 55.0, MAP.AZSHARA },
 						-- #endif
 					},
 				}),
 				n(6118, {	-- Varo'then's Ghost
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 34.4, 76.8, AZSHARA },
-						{ 33.0, 75.0, AZSHARA },
-						{ 34.6, 71.6, AZSHARA },
-						{ 36.4, 71.6, AZSHARA },
-						{ 37.4, 74.6, AZSHARA },
+						{ 34.4, 76.8, MAP.AZSHARA },
+						{ 33.0, 75.0, MAP.AZSHARA },
+						{ 34.6, 71.6, MAP.AZSHARA },
+						{ 36.4, 71.6, MAP.AZSHARA },
+						{ 37.4, 74.6, MAP.AZSHARA },
 						-- #else
-						{ 13.4, 74.8, AZSHARA },
-						{ 16.6, 72.8, AZSHARA },
-						{ 17.2, 66.2, AZSHARA },
-						{ 19.0, 68.0, AZSHARA },
+						{ 13.4, 74.8, MAP.AZSHARA },
+						{ 16.6, 72.8, MAP.AZSHARA },
+						{ 17.2, 66.2, MAP.AZSHARA },
+						{ 19.0, 68.0, MAP.AZSHARA },
 						-- #endif
 					},
 				}),
 			}),
 			n(TREASURES, {
 				o(152620, {	-- Azsharite Formation
-					["coord"] = { 50.0, 70.1, AZSHARA },
+					["coord"] = { 50.0, 70.1, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(10714),	-- Crystallized Azsharite
@@ -2594,7 +2594,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				o(152621, {	-- Azsharite Formation
-					["coord"] = { 52.6, 78.3, AZSHARA },
+					["coord"] = { 52.6, 78.3, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(10714),	-- Crystallized Azsharite
@@ -2602,7 +2602,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				o(152622, {	-- Azsharite Formation
-					["coord"] = { 60.7, 86.5, AZSHARA },
+					["coord"] = { 60.7, 86.5, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(10714),	-- Crystallized Azsharite
@@ -2611,7 +2611,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(226412, {	-- Rune of Pole Weapon Specialization
 					["provider"] = { "o", 457091 },	-- Chen's Training Manual
-					["coord"] = { 76.9, 44.2, AZSHARA },
+					["coord"] = { 76.9, 44.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 					["groups"] = {
@@ -2624,7 +2624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
-					["coord"] = { 45.2, 90.8, AZSHARA },
+					["coord"] = { 45.2, 90.8, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(15751, {	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
@@ -2636,7 +2636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14301, {	-- Brinna Valanaar <Bowyer>
-					["coord"] = { 12.0, 78.4, AZSHARA },
+					["coord"] = { 12.0, 78.4, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2644,7 +2644,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(49887, {	-- Gappy Silvertooth <Bling Merchant>
-					["coord"] = { 57.53, 48.7, AZSHARA },
+					["coord"] = { 57.53, 48.7, MAP.AZSHARA },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_4_0_3 },
 					["sym"] = {{"select","itemID",
@@ -2657,7 +2657,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}},
 				}),
 				n(8678, {	-- Jubie Gadgetspring <Engineering Supplier>
-					["coord"] = { 45.2, 90.8, AZSHARA },
+					["coord"] = { 45.2, 90.8, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(10607, {	-- Schematic: Deepdive Helmet (RECIPE!)
@@ -2666,7 +2666,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3621, {	-- Kurll
-					["coord"] = { 21.8, 52.0, AZSHARA },
+					["coord"] = { 21.8, 52.0, MAP.AZSHARA },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -2677,7 +2677,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(49885, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
-					["coord"] = { 57.0, 50.6, AZSHARA },
+					["coord"] = { 57.0, 50.6, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2686,7 +2686,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(49884, {	-- Sally "Salvager" Sandscrew <Armor Vendor>
-					["coord"] = { 60.8, 50.2, AZSHARA },
+					["coord"] = { 60.8, 50.2, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2711,7 +2711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(36375, {	-- Tex Vortacoil <Reagents>
-					["coord"] = { 25.6, 38.0, AZSHARA },
+					["coord"] = { 25.6, 38.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						i(68806, {	-- Kalytha's Haunted Locket Toy (TOY!)
@@ -2722,7 +2722,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if AFTER SL
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
-					["coord"] = { 29.4, 66.1, AZSHARA },
+					["coord"] = { 29.4, 66.1, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
@@ -2736,7 +2736,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #ENDIF
 				n(36365, {	-- Zoey Wizzlespark <Xylem's Apprentice>
-					["coord"] = { 55.8, 12.0, AZSHARA },
+					["coord"] = { 55.8, 12.0, MAP.AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["sym"] = {
 						{ "select","itemID",
@@ -2775,10 +2775,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 4.0.3
 					["cr"] = 6146,	-- Cliff Breaker
 					["coords"] = {
-						{ 64.6, 87.2, AZSHARA },
-						{ 50.4, 80.2, AZSHARA },
-						{ 80.6, 18.6, AZSHARA },
-						{ 70.4, 17.6, AZSHARA },
+						{ 64.6, 87.2, MAP.AZSHARA },
+						{ 50.4, 80.2, MAP.AZSHARA },
+						{ 80.6, 18.6, MAP.AZSHARA },
+						{ 70.4, 17.6, MAP.AZSHARA },
 					},
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
@@ -2812,8 +2812,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
 					["coords"] = {
-						{ 56.6, 23.6, AZSHARA },
-						{ 53.6, 23.8, AZSHARA },
+						{ 56.6, 23.6, MAP.AZSHARA },
+						{ 53.6, 23.8, MAP.AZSHARA },
 					},
 					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 6201,	-- Legashi Rogue

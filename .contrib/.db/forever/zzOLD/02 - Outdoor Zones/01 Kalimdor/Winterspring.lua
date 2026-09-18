@@ -40,8 +40,8 @@ local OnTooltipForWintersaberTrainers = [[function(t, tooltipInfo)
 end]];
 -- #endif
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(WINTERSPRING, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.WINTERSPRING, {
 		["lore"] = "Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",
 		["icon"] = 236854,
 		["groups"] = {
@@ -57,9 +57,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								7438,	-- Winterfall Ursa
 							},
 							["coords"] = {
-								{ 29.0, 49.0, WINTERSPRING },
-								{ 66.4, 52.2, WINTERSPRING },
-								{ 36.8, 55.6, WINTERSPRING },
+								{ 29.0, 49.0, MAP.WINTERSPRING },
+								{ 66.4, 52.2, MAP.WINTERSPRING },
+								{ 36.8, 55.6, MAP.WINTERSPRING },
 							},
 						}),
 						crit(16177, {	-- Wildkin
@@ -71,9 +71,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								7451,	-- Raging Owlbeast
 							},
 							["coords"] = {
-								{ 63.0, 30.4, WINTERSPRING },
-								{ 65.2, 76.6, WINTERSPRING },
-								{ 57.6, 75.6, WINTERSPRING },
+								{ 63.0, 30.4, MAP.WINTERSPRING },
+								{ 65.2, 76.6, MAP.WINTERSPRING },
+								{ 57.6, 75.6, MAP.WINTERSPRING },
 							},
 						}),
 						crit(16178, {	-- Shardtooth Bears
@@ -82,9 +82,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								7443,	-- Shardtooth Mauler
 							},
 							["coords"] = {
-								{ 30.6, 56.8, WINTERSPRING },
-								{ 55.2, 30.6, WINTERSPRING },
-								{ 55.8, 38.8, WINTERSPRING },
+								{ 30.6, 56.8, MAP.WINTERSPRING },
+								{ 55.2, 30.6, MAP.WINTERSPRING },
+								{ 55.8, 38.8, MAP.WINTERSPRING },
 							},
 						}),
 						crit(16179, {	-- Frostmaul Giants
@@ -92,8 +92,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								7428,	-- Frostmaul Giant
 							},
 							["coords"] = {
-								{ 56.6, 86.6, WINTERSPRING },
-								{ 63.2, 89.8, WINTERSPRING },
+								{ 56.6, 86.6, MAP.WINTERSPRING },
+								{ 63.2, 89.8, MAP.WINTERSPRING },
 							},
 						}),
 						crit(16180, {	-- Frostsabers
@@ -102,8 +102,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								10737,	-- Shy-Rotam
 							},
 							["coords"] = {
-								{ 46.2, 17.6, WINTERSPRING },
-								{ 51.4, 22.0, WINTERSPRING },
+								{ 46.2, 17.6, MAP.WINTERSPRING },
+								{ 51.4, 22.0, MAP.WINTERSPRING },
 							},
 						}),
 						crit(16181, {	-- Chillwind Chimaera
@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								7448,	-- Chillwind Chimera
 							},
 							["coords"] = {
-								{ 58.0, 23.8, WINTERSPRING },
+								{ 58.0, 23.8, MAP.WINTERSPRING },
 							},
 						}),
 						crit(16182, {	-- Ice Thistle Yeti
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								7457,	-- Rogue Ice Thistle
 							},
 							["coords"] = {
-								{ 67.6, 54.2, WINTERSPRING },
+								{ 67.6, 54.2, MAP.WINTERSPRING },
 							},
 						}),
 					},
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				faction(FACTION_EVERLOOK, {	-- Everlook
 					["icon"] = 133784,
 					["OnTooltip"] = [[_.OnTooltipDB.ForEverlook]],
-					["maps"] = { TANARIS, THE_BARRENS },
+					["maps"] = { MAP.TANARIS, MAP.THE_BARRENS },
 				}),
 				faction(FACTION_WINTERSABER_TRAINERS, {	-- Wintersaber Trainers
 					["icon"] = 132252,
@@ -217,9 +217,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 11138,	-- Maethrya <Hippogryph Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.0, 48.6, WINTERSPRING },
+						{ 61.0, 48.6, MAP.WINTERSPRING },
 						-- #else
-						{ 62.2, 36.6, WINTERSPRING },
+						{ 62.2, 36.6, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -228,9 +228,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 11139,	-- Yugrek <Wind Rider Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 58.8, 48.2, WINTERSPRING },
+						{ 58.8, 48.2, MAP.WINTERSPRING },
 						-- #else
-						{ 60.4, 36.4, WINTERSPRING },
+						{ 60.4, 36.4, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			petbattles({
 				n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
-					["coord"] = { 65.6, 64.6, WINTERSPRING },
+					["coord"] = { 65.6, 64.6, MAP.WINTERSPRING },
 					["description"] = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Blighted Squarrel and Turkey.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 19,
@@ -259,12 +259,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						31918,	-- A Tamer's Homecoming (H)
 					},
 					["qg"] = 66466,	-- Grand Master Trixxy
-					["coord"] = { 65.6, 64.5, WINTERSPRING },
+					["coord"] = { 65.6, 64.5, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_0_4 },
 					["groups"] = {
 						objective(1, {	-- Defeat Grand Master Trixxy
 							["provider"] = { "n", 66466 },	-- Grand Master Trixxy
-							["coord"] = { 65.6, 64.5, WINTERSPRING },
+							["coord"] = { 65.6, 64.5, MAP.WINTERSPRING },
 						}),
 						i(89125),	-- Sack of Pet Supplies
 					},
@@ -276,9 +276,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)
 					["qg"] = 66466,	-- Stone Cold Trixxy
-					["coord"] = { 65.6, 64.4, WINTERSPRING },
+					["coord"] = { 65.6, 64.4, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -289,9 +289,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
 					["qg"] = 66466,	-- Stone Cold Trixxy
-					["coord"] = { 65.6, 64.4, WINTERSPRING },
+					["coord"] = { 65.6, 64.4, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28782, {	-- A Bird of Legend
 					["sourceQuest"] = 28745,	-- Screechy Keen
 					["qg"] = 49537,	-- Jeb Guthrie (granted automatically. Coords are relative to player position)
-					["coord"] = { 56.0, 28.2, WINTERSPRING },
+					["coord"] = { 56.0, 28.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Hell-Hoot slain
@@ -367,7 +367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28719, {	-- A Little Gamy
 					["sourceQuest"] = 28637,	-- A Taste for Bear
 					["qg"] = 49436,	-- Francis Morcott
-					["coord"] = { 55.8, 28.2, WINTERSPRING },
+					["coord"] = { 55.8, 28.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Shardtooth Mauler slain
@@ -377,7 +377,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6605, {	-- A Strange One
 					["qg"] = 11755,	-- Harlo Wigglesworth
-					["coord"] = { 61.0, 38.4, WINTERSPRING },
+					["coord"] = { 61.0, 38.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -385,7 +385,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28637, {	-- A Taste for Bear
 					["qg"] = 49436,	-- Francis Morcott
-					["coord"] = { 55.8, 28.2, WINTERSPRING },
+					["coord"] = { 55.8, 28.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Shardtooth Bear slain
@@ -396,7 +396,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8798, {	-- A Yeti of Your Own
 					["sourceQuest"] = 5163,	-- Are We There, Yeti? (3/3)
 					["qg"] = 10305,	-- Umi Rumplesnicker
-					["coord"] = { 60.8, 37.6, WINTERSPRING },
+					["coord"] = { 60.8, 37.6, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ENGINEERING,
 					["lvl"] = 55,
@@ -410,7 +410,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28837, {	-- Altered Beasts
 					["sourceQuest"] = 28847,	-- The Pursuit of Umbranse
 					["qg"] = 10929,	-- Haleh
-					["coord"] = { 58.0, 63.7, WINTERSPRING },
+					["coord"] = { 58.0, 63.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Mana-Addled Brain
@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28629, {	-- Are We There, Yeti?
 					["sourceQuest"] = 28627,	-- Seril's Boast
 					["qg"] = 10305,	-- Umi Rumplesnicker
-					["coord"] = { 59.3, 49.7, WINTERSPRING },
+					["coord"] = { 59.3, 49.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Thick Yeti Fur
@@ -440,7 +440,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3783, {	-- Are We There, Yeti? (1/3)
 					["qg"] = 10305,	-- Umi Rumplesnicker
-					["coord"] = { 60.8, 37.6, WINTERSPRING },
+					["coord"] = { 60.8, 37.6, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
@@ -456,7 +456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(977, {	-- Are We There, Yeti? (2/3)
 					["sourceQuest"] = 3783,	-- Are We There, Yeti? (1/3)
 					["qg"] = 10305,	-- Umi Rumplesnicker
-					["coord"] = { 60.8, 37.6, WINTERSPRING },
+					["coord"] = { 60.8, 37.6, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
@@ -475,9 +475,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["sourceQuest"] = 977,	-- Are We There, Yeti? (2/3)
 					["qg"] = 10305,	-- Umi Rumplesnicker
-					["coord"] = { 60.8, 37.6, WINTERSPRING },
+					["coord"] = { 60.8, 37.6, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { TANARIS, UNGORO_CRATER },
+					["maps"] = { MAP.TANARIS, MAP.UNGORO_CRATER },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- Scare Legacki
@@ -485,28 +485,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 10978 },	-- Legacki
 								{ "i", 12928 },	-- Umi's Mechanical Yeti
 							},
-							["coord"] = { 61.6, 38.6, WINTERSPRING },
+							["coord"] = { 61.6, 38.6, MAP.WINTERSPRING },
 						}),
 						objective(2, {	-- Scare Sprinkle
 							["providers"] = {
 								{ "n", 7583 },	-- Sprinkle
 								{ "i", 12928 },	-- Umi's Mechanical Yeti
 							},
-							["coord"] = { 51.0, 26.8, TANARIS },
+							["coord"] = { 51.0, 26.8, MAP.TANARIS },
 						}),
 						objective(3, {	-- Scare Quixxil
 							["providers"] = {
 								{ "n", 10977 },	-- Quixxil
 								{ "i", 12928 },	-- Umi's Mechanical Yeti
 							},
-							["coord"] = { 43.6, 9.6, UNGORO_CRATER },
+							["coord"] = { 43.6, 9.6, MAP.UNGORO_CRATER },
 						}),
 						i(15778),	-- Mechanical Yeti
 					},
 				}),
 				q(28614, {	-- Bearzerker
 					["qg"] = 48722,	-- Burndl
-					["coord"] = { 65.3, 46.1, WINTERSPRING },
+					["coord"] = { 65.3, 46.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Grolnar the Berserk slain
@@ -528,7 +528,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(44952, {	-- Blackrock Depths: Jewel of the Depths
 					["qg"] = 11184,	-- Wixxrak
-					["coord"] = { 60.2, 50.2, WINTERSPRING },
+					["coord"] = { 60.2, 50.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = 2477,	-- Classic Blacksmithing
 					["groups"] = {
@@ -545,14 +545,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28618, {	-- Boulder Delivery
 					["sourceQuest"] = 28610,	-- Rubble Trouble
 					["qg"] = 48965,	-- Deez Rocksnitch
-					["coord"] = { 59.7, 49.6, WINTERSPRING },
+					["coord"] = { 59.7, 49.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = { i(64638) },	-- Boulder-in-a-Box (PQI!)
 				}),
 				q(5055, {	-- Brumeran of the Chillwind
 					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
 					["qg"] = 10303,	-- Storm Shadowhoof
-					["coord"] = { 61.8, 38.4, WINTERSPRING },
+					["coord"] = { 61.8, 38.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
@@ -567,7 +567,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(975, {	-- Cache of Mau'ari
 					["sourceQuest"] = 969,	-- Luck Be With You
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4804, {	-- Chillwind E'ko
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4804, 3 } },	-- Chillwind E'ko
 					["repeatable"] = true,
@@ -593,7 +593,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28830, {	-- Chips off the Old Block
 					["sourceQuest"] = 28829,	-- Razor Beak and Antlers Pointy
 					["qg"] = 50263,	-- Jadrag the Slicer
-					["coord"] = { 61.8, 74.6, WINTERSPRING },
+					["coord"] = { 61.8, 74.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Frostmaul Tumbler slain
@@ -604,7 +604,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28625, {	-- Chop Chop
 					["sourceQuest"] = 28624,	-- Kilram's Boast
 					["qg"] = 48965,	-- Deez Rocksnitch
-					["coord"] = { 59.7, 49.6, WINTERSPRING },
+					["coord"] = { 59.7, 49.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Fresh-Cut Frostwood
@@ -637,7 +637,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 					["qg"] = 11193,	-- Seril Scourgebane
-					["coord"] = { 61.2, 37.2, WINTERSPRING },
+					["coord"] = { 61.2, 37.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRATHOLME },
 					["requireSkill"] =
@@ -697,7 +697,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28831, {	-- Damn You, Frostilicus
 					["sourceQuest"] = 28829,	-- Razor Beak and Antlers Pointy
 					["qg"] = 50263,	-- Jadrag the Slicer
-					["coord"] = { 61.8, 74.6, WINTERSPRING },
+					["coord"] = { 61.8, 74.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostilicus slain
@@ -725,18 +725,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28535, {	-- Descendants of the High Elves
 					["sourceQuest"] = 28518,	-- Legacy of the High Elves
 					["qg"] = 48659,	-- Quel'dorei Spirit
-					["coord"] = { 50.7, 55.0, WINTERSPRING },
+					["coord"] = { 50.7, 55.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28534, {	-- Descendants of the Highborne
 					["sourceQuest"] = 28513,	-- Pride of Highborne
 					["qg"] = 48658,	-- Kaldorei Spirit
-					["coord"] = { 50.7, 54.8, WINTERSPRING },
+					["coord"] = { 50.7, 54.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28540, {	-- Doin' De E'ko Magic
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 25.1, 58.4, WINTERSPRING },
+					["coord"] = { 25.1, 58.4, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Rimepelt's Heart
@@ -762,20 +762,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 10431 },	-- Gregor Greystone
 						{ "i", 15790 },	-- Studies in Spirit Speaking
 					},
-					["coord"] = { 61.2, 38.8, WINTERSPRING },
+					["coord"] = { 61.2, 38.8, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { EASTERN_PLAGUELANDS },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
 				q(28630, {	-- Echo Three
 					["sourceQuest"] = 28627,	-- Seril's Boast
 					["qg"] = 10305,	-- Umi Rumplesnicker
-					["coord"] = { 59.3, 49.7, WINTERSPRING },
+					["coord"] = { 59.3, 49.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(6604, {	-- Enraged Wildkin (1/4)
 					["qg"] = 11755,	-- Harlo Wigglesworth
-					["coord"] = { 61.0, 38.4, WINTERSPRING },
+					["coord"] = { 61.0, 38.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -784,7 +784,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4861, {	-- Enraged Wildkin (2/4)
 					["sourceQuest"] = 6604,	-- Enraged Wildkin (1/4)
 					["qg"] = 10301,	-- Jaron Stoneshaper
-					["coord"] = { 52.0, 30.4, WINTERSPRING },
+					["coord"] = { 52.0, 30.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -792,7 +792,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4863, {	-- Enraged Wildkin (3/4)
 					["sourceQuest"] = 4861,	-- Enraged Wildkin (2/4)
 					["provider"] = { "o", 175587 },	-- Damaged Crate
-					["coord"] = { 59.0, 59.7, WINTERSPRING },
+					["coord"] = { 59.0, 59.7, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -800,7 +800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4864, {	-- Enraged Wildkin (4/4)
 					["sourceQuest"] = 4863,	-- Enraged Wildkin (3/4)
 					["provider"] = { "o", 175586 },	-- Jaron's Wagon
-					["coord"] = { 61.4, 60.6, WINTERSPRING },
+					["coord"] = { 61.4, 60.6, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 12525 },	-- Jaron's Supplies
 								{ "o", 175629 },	-- Jaron's Supplies
 							},
-							["coord"] = { 61.4, 60.7, WINTERSPRING },
+							["coord"] = { 61.4, 60.7, MAP.WINTERSPRING },
 						}),
 						objective(2, {	-- 0/1 Blue-feathered Amulet
 							["provider"] = { "i", 12524 },	-- Blue-feathered Amulet
@@ -825,12 +825,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28676, {	-- Exterminators at Work
 					["sourceQuest"] = 28674,	-- Starfall Village
 					["qg"] = 11079,	-- Wynd Nightchaser
-					["coord"] = { 48.6, 41.0, WINTERSPRING },
+					["coord"] = { 48.6, 41.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28464, {	-- Falling to Corruption
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 25.1, 58.4, WINTERSPRING },
+					["coord"] = { 25.1, 58.4, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5084, {	-- Falling to Corruption
@@ -839,15 +839,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["lvl"] = 52,
 				}),
 				q(979, {	-- Find Ranshalla
 					["sourceQuest"] = 978,	-- Moontouched Wildkin
 					["qg"] = 7916,	-- Erelas Ambersky
-					["coord"] = { 55.5, 92.1, TELDRASSIL },
+					["coord"] = { 55.5, 92.1, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
@@ -855,13 +855,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28632, {	-- Fresh From The Hills
 					["sourceQuest"] = 28627,	-- Seril's Boast
 					["qg"] = 48965,	-- Deez Rocksnitch
-					["coord"] = { 59.7, 49.6, WINTERSPRING },
+					["coord"] = { 59.7, 49.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28640, {	-- Fresh Frostsabers
 					["sourceQuest"] = 28718,	-- Where There's Smoke, There's Delicious Meat
 					["qg"] = 49396,	-- Jez Goodgrub
-					["coord"] = { 55.9, 28.1, WINTERSPRING },
+					["coord"] = { 55.9, 28.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Frostsaber slain
@@ -875,7 +875,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4806, {	-- Frostmaul E'ko
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 12436, 3 } },	-- Frostmaul E'ko
 					["repeatable"] = true,
@@ -889,7 +889,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4801, {	-- Frostsaber E'ko
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 12430, 3 } },	-- Frostsaber E'ko
 					["repeatable"] = true,
@@ -902,7 +902,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4970, {	-- Frostsaber Provisions
 					["qg"] = 10618,	-- Rivern Frostwind
-					["coord"] = { 49.8, 9.8, WINTERSPRING },
+					["coord"] = { 49.8, 9.8, MAP.WINTERSPRING },
 					["minReputation"] = { FACTION_WINTERSABER_TRAINERS, NEUTRAL },	-- Wintersaber Trainers, Neutral.
 					["maxReputation"] = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -931,14 +931,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29032, {	-- Get Them While They're Young
 					["qg"] = 10618,	-- Rivern Frostwind
-					["coord"] = { 46.6, 17.6, WINTERSPRING },
+					["coord"] = { 46.6, 17.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4901, {	-- Guardians of the Altar
 					["sourceQuest"] = 979,	-- Find Ranshalla
 					["qg"] = 10300,	-- Ranshalla
-					["coord"] = { 63.0, 59.4, WINTERSPRING },
+					["coord"] = { 63.0, 59.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
@@ -947,18 +947,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 4741,	-- Wild Guardians (2/3)
 					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				}),
 				q(28609, {	-- Hammer Time
 					["qg"] = 11191,	-- Lilith the Lithe
-					["coord"] = { 59.8, 49.1, WINTERSPRING },
+					["coord"] = { 59.8, 49.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				heroscall(q(28544, {	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
@@ -969,7 +969,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28470, {	-- High Chief Winterfall
 					["sourceQuest"] = 28469,	-- Winterfall Runners
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 25.1, 58.5, WINTERSPRING },
+					["coord"] = { 25.1, 58.5, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 High Chief Winterfall slain
@@ -992,13 +992,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5121, {	-- High Chief Winterfall
 					["sourceQuest"] = 5087,	-- Winterfall Runners
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 High Chief Winterfall slain
 							["provider"] = { "n", 10738 },	-- High Chief Winterfall
-							["coord"] = { 69.6, 38.2, WINTERSPRING },
+							["coord"] = { 69.6, 38.2, MAP.WINTERSPRING },
 						}),
 						i(15784, {	-- Crystal Breeze Mantle
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1027,7 +1027,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28628, {	-- Ice Delivery
 					["sourceQuest"] = 28632,	-- Fresh From the Hills
 					["qg"] = 48965,	-- Deez Rocksnitch
-					["coord"] = { 59.7, 49.6, WINTERSPRING },
+					["coord"] = { 59.7, 49.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(64665),	-- Instant Ice Block (PQI!)
@@ -1049,7 +1049,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4805, {	-- Ice Thistle E'ko
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 12435, 3 } },	-- Ice Thistle E'ko
 					["repeatable"] = true,
@@ -1061,7 +1061,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28537, {	-- In Pursuit of Shades
 					["sourceQuest"] = 28536,	-- The Curse of Zin-Malor
 					["qg"] = 10920,	-- Kelek Skykeeper
-					["coord"] = { 46.8, 53.8, WINTERSPRING },
+					["coord"] = { 46.8, 53.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Shard of the Spiritspeaker
@@ -1073,13 +1073,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28624, {	-- Kilram's Boast
 					["sourceQuest"] = 28618,	-- Boulder Delivery
 					["qg"] = 11192,	-- Kilram
-					["coord"] = { 59.8, 49.1, WINTERSPRING },
+					["coord"] = { 59.8, 49.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28518, {	-- Legacy of the High Elves
 					["sourceQuest"] = 28534,	-- Descendants of the Highborne
 					["qg"] = 48659,	-- Quel'dorei Spirit
-					["coord"] = { 50.8, 55.0, WINTERSPRING },
+					["coord"] = { 50.8, 55.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Memory of Zin-Malor
@@ -1090,7 +1090,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(969, {	-- Luck Be With You
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
@@ -1104,13 +1104,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								7429,	-- Frostmaul Preserver
 								7428,	-- Frostmaul Giant
 							},
-							["coord"] = { 61.8, 68.6, WINTERSPRING },
+							["coord"] = { 61.8, 68.6, MAP.WINTERSPRING },
 						}),
 					},
 				}),
 				q(28839, {	-- Magic Prehistoric
 					["sourceQuest"] = 28838,	-- The Owlbeast's Defense
-					["coord"] = { 57.1, 75.4, WINTERSPRING },
+					["coord"] = { 57.1, 75.4, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Essence of the Claw-Totem
@@ -1118,21 +1118,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  65899 },	-- Essence of the Claw-Totem (QI!)
 								{ "o", 207421 },	-- Owlbeast Claw-Totem
 							},
-							["coord"] = { 65.1, 73.8, WINTERSPRING },
+							["coord"] = { 65.1, 73.8, MAP.WINTERSPRING },
 						}),
 						objective(2, {	-- 0/1 Essence of the Life-Totem
 							["providers"] = {
 								{ "i",  65900 },	-- Essence of the Life-Totem (QI!)
 								{ "o", 207423 },	-- Owlbeast Life-Totem
 							},
-							["coord"] = { 65.6, 77.6, WINTERSPRING },
+							["coord"] = { 65.6, 77.6, MAP.WINTERSPRING },
 						}),
 						objective(3, {	-- 0/1 Essence of the Moon-Totem
 							["providers"] = {
 								{ "i",  65901 },	-- Essence of the Moon-Totem (QI!)
 								{ "o", 207422 },	-- Owlbeast Moon-Totem
 							},
-							["coord"] = { 64.8, 81.1, WINTERSPRING },
+							["coord"] = { 64.8, 81.1, MAP.WINTERSPRING },
 						}),
 					},
 				}),
@@ -1140,9 +1140,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 16416,	-- Bronn Fitzwrench
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 58.0, 52.2, WINTERSPRING },
+						{ 58.0, 52.2, MAP.WINTERSPRING },
 						-- #else
-						{ 59.8, 39.7, WINTERSPRING },
+						{ 59.8, 39.7, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["maxReputation"] = { FACTION_EVERLOOK, NEUTRAL },	-- Everlook, must be less than Neutral
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(978, {	-- Moontouched Wildkin
 					["sourceQuest"] = 3661,	-- Favored of Elune?
 					["qg"] = 7916,	-- Erelas Ambersky
-					["coord"] = { 55.5, 92.1, TELDRASSIL },
+					["coord"] = { 55.5, 92.1, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
@@ -1172,14 +1172,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28467, {	-- Mystery Goo
 					["sourceQuest"] = 28464,	-- Falling to Corruption
 					["provider"] = { "o", 207179 },	-- Winterfall Cauldron
-					["coord"] = { 24.4, 47.6, WINTERSPRING },
+					["coord"] = { 24.4, 47.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = { i(12813) },	-- Flask of Mystery Goo (QI!)
 				}),
 				q(28701, {	-- Out of Harm's Way
 					["sourceQuest"] = 28674,	-- Starfall Village
 					["qg"] = 11079,	-- Wynd Nightchaser
-					["coord"] = { 48.6, 41.0, WINTERSPRING },
+					["coord"] = { 48.6, 41.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Starfall Relic
@@ -1193,7 +1193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28519, {	-- Pain of the Blood Elves
 					["sourceQuest"] = 28535,	-- Descendants of the High Elves
 					["qg"] = 48660,	-- Sin'dorei Spirit
-					["coord"] = { 50.6, 55.0, WINTERSPRING },
+					["coord"] = { 50.6, 55.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Wretched Spirit slain
@@ -1222,7 +1222,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5057, {	-- Past Endeavors
 					["sourceQuest"] = 5056,	-- Shy-Rotam
 					["qg"] = 10303,	-- Storm Shadowhoof
-					["coord"] = { 61.8, 38.4, WINTERSPRING },
+					["coord"] = { 61.8, 38.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
@@ -1237,7 +1237,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28641, {	-- Pride of the Dinner Table
 					["sourceQuest"] = 28640,	-- Fresh Frostsabers
 					["qg"] = 49396,	-- Jez Goodgrub (granted automatically. Coords are relative to player position)
-					["coord"] = { 55.9, 28.1, WINTERSPRING },
+					["coord"] = { 55.9, 28.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Frostsaber Pride Watcher slain
@@ -1251,7 +1251,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28513, {	-- Pride of the Highborne
 					["sourceQuest"] = 28479,	-- The Ruins of Kel'Theril
 					["qg"] = 48658,	-- Kaldorei Spirit
-					["coord"] = { 50.7, 54.8, WINTERSPRING },
+					["coord"] = { 50.7, 54.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Highborne spirits released
@@ -1273,7 +1273,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5981, {	-- Rampaging Giants
 					["qg"] = 10618,	-- Rivern Frostwind
-					["coord"] = { 49.8, 9.8, WINTERSPRING },
+					["coord"] = { 49.8, 9.8, MAP.WINTERSPRING },
 					["minReputation"] = { FACTION_WINTERSABER_TRAINERS, HONORED },	-- Wintersaber Trainers, Honored.
 					["maxReputation"] = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1291,7 +1291,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28829, {	-- Razor Beak and Antlers Pointy
 					["qg"] = 50263,	-- Jadrag the Slicer
-					["coord"] = { 61.8, 74.6, WINTERSPRING },
+					["coord"] = { 61.8, 74.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/12 Crazed Owlbeast slain
@@ -1309,7 +1309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 10684 },	-- Remorseful Highborne
 						{ "i", 13347 },	-- Crystal of Zin-Malor (Provided)
 					},
-					["coord"] = { 56.2, 44.4, WINTERSPRING },
+					["coord"] = { 56.2, 44.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -1320,9 +1320,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 10468 },	-- Felnok Steelspring
 						{ "i", 12445 },	-- Felnok's Package
 					},
-					["coord"] = { 61.6, 38.6, WINTERSPRING },
+					["coord"] = { 61.6, 38.6, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BURNING_STEPPES },
+					["maps"] = { MAP.BURNING_STEPPES },
 					["lvl"] = 50,
 					["groups"] = {
 						i(15862, {	-- Blitzcleaver
@@ -1336,7 +1336,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28610, {	-- Rubble Trouble
 					["sourceQuest"] = 28609,	-- Hammer Time
 					["qg"] = 48965,	-- Deez Rocksnitch
-					["coord"] = { 59.7, 49.6, WINTERSPRING },
+					["coord"] = { 59.7, 49.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Prime Rubble Chunk
@@ -1348,7 +1348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28530, {	-- Scalding Signs
 					["sourceQuest"] = 28467,	-- Mystery Goo
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 25.1, 58.4, WINTERSPRING },
+					["coord"] = { 25.1, 58.4, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Suspicious Green Sludge
@@ -1363,7 +1363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28745, {	-- Screechy Keen
 					["sourceQuest"] = 28638,	-- The Owls Have It
 					["qg"] = 49396,	-- Jez Goodgrub (granted automatically. Coords are relative to player position)
-					["coord"] = { 55.9, 28.1, WINTERSPRING },
+					["coord"] = { 55.9, 28.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Winterspring Screecher slain
@@ -1374,13 +1374,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28627, {	-- Seril's Boast
 					["sourceQuest"] = 28626,	-- Tree Delivery
 					["qg"] = 11193,	-- Seril Scourgebane
-					["coord"] = { 59.7, 49.2, WINTERSPRING },
+					["coord"] = { 59.7, 49.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4803, {	-- Shardtooth E'ko
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 12432, 3 } },	-- Shardtooth E'ko
 					["repeatable"] = true,
@@ -1394,7 +1394,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28742, {	-- Shy-Rotam
 					["sourceQuest"] = 28641,	-- Pride of the Dinner Table
 					["qg"] = 49396,	-- Jez Goodgrub (granted automatically. Coords are relative to player position)
-					["coord"] = { 55.9, 28.1, WINTERSPRING },
+					["coord"] = { 55.9, 28.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Shy-Rotam slain
@@ -1420,7 +1420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5056, {	-- Shy-Rotam
 					["sourceQuest"] = 5055,	-- Brumeran of the Chillwind
 					["qg"] = 10303,	-- Storm Shadowhoof
-					["coord"] = { 61.8, 38.4, WINTERSPRING },
+					["coord"] = { 61.8, 38.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
@@ -1432,7 +1432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 10737 },	-- Shy-Rotam
 								{ "o", 177684 },	-- Stone of Shy-Rotam
 							},
-							["coord"] = { 49.8, 9.8, WINTERSPRING },
+							["coord"] = { 49.8, 9.8, MAP.WINTERSPRING },
 							["cost"] = { { "i", 12733, 1 } },	-- Sacred Frostsaber Meat
 						}),
 						-- #if BEFORE 4.0.3
@@ -1457,7 +1457,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5601, {	-- Sister Pamela
 					["altQuests"] = { 5142 },	-- Little Pamela
 					["qg"] = 11629,	-- Jessica Redpath
-					["coord"] = { 61.2, 39.0, WINTERSPRING },
+					["coord"] = { 61.2, 39.0, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
@@ -1476,7 +1476,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 					["qg"] = 11192,	-- Kilram
-					["coord"] = { 61.2, 37.0, WINTERSPRING },
+					["coord"] = { 61.2, 37.0, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_SPIRE },
 					["requireSkill"] =
@@ -1500,20 +1500,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28707, {	-- Spray it Again
 					["sourceQuest"] = 28706,	-- Spray it Forward
 					["qg"] = 49399,	-- Remma Curtainfire
-					["coord"] = { 45.6, 41.5, WINTERSPRING },
+					["coord"] = { 45.6, 41.5, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = { i(64677) },	-- Box of Bugkill Fumigators (PQI!)
 				}),
 				q(28706, {	-- Spray it Forward
 					["qg"] = 49407,	-- Rinno Curtainfire
-					["coord"] = { 45.7, 41.0, WINTERSPRING },
+					["coord"] = { 45.7, 41.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = { i(64677) },	-- Box of Bugkill Fumigators (PQI!)
 				}),
 				q(28710, {	-- Spray it One More Time
 					["sourceQuest"] = 28707,	-- Spray it Again
 					["qg"] = 49400,	-- Marcy Curtainfire
-					["coord"] = { 46.2, 42.5, WINTERSPRING },
+					["coord"] = { 46.2, 42.5, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(64677),	-- Box of Bugkill Fumigators (PQI!)
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5250, {	-- Starfall
 					["qg"] = 7907,	-- Daryn Lightwind
-					["coord"] = { 55.4, 92.2, TELDRASSIL },
+					["coord"] = { 55.4, 92.2, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1543,13 +1543,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28722,	-- Yetiphobia
 					},
 					["qg"] = 48965,	-- Deez Rocksnitch
-					["coord"] = { 59.8, 49.6, WINTERSPRING },
+					["coord"] = { 59.8, 49.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(28703, {	-- Step Into My Barrow
 					["qg"] = 49407,	-- Rinno Curtainfire
-					["coord"] = { 45.7, 41.0, WINTERSPRING },
+					["coord"] = { 45.7, 41.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Coldlurk Creeper slain
@@ -1564,20 +1564,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Kill mobs at close range until you receive an E'ko buff.",
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coords"] = {
-						{ 46.3, 18.0, WINTERSPRING },
-						{ 55.6, 23.6, WINTERSPRING },
-						{ 63.7, 28.1, WINTERSPRING },
-						{ 57.5, 40.9, WINTERSPRING },
-						{ 67.6, 48.7, WINTERSPRING },
-						{ 68.0, 54.1, WINTERSPRING },
-						{ 60.7, 76.3, WINTERSPRING },
+						{ 46.3, 18.0, MAP.WINTERSPRING },
+						{ 55.6, 23.6, MAP.WINTERSPRING },
+						{ 63.7, 28.1, MAP.WINTERSPRING },
+						{ 57.5, 40.9, MAP.WINTERSPRING },
+						{ 67.6, 48.7, MAP.WINTERSPRING },
+						{ 68.0, 54.1, MAP.WINTERSPRING },
+						{ 60.7, 76.3, MAP.WINTERSPRING },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4842, {	-- Strange Sources
 					["sourceQuest"] = 980,	-- The New Springs
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
 					["groups"] = {
@@ -1598,7 +1598,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 					["qg"] = 11191,	-- Lilith the Lithe
-					["coord"] = { 61.2, 37.2, WINTERSPRING },
+					["coord"] = { 61.2, 37.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { STRATHOLME },
 					["requireSkill"] =
@@ -1631,7 +1631,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 					["qg"] = 11191,	-- Lilith the Lithe
-					["coord"] = { 61.2, 37.2, WINTERSPRING },
+					["coord"] = { 61.2, 37.2, MAP.WINTERSPRING },
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_3,
@@ -1667,7 +1667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28841, {	-- The Arcane Storm Within
 					["sourceQuest"] = 28840,	-- Winterwater
 					["qg"] = 10929,	-- Haleh
-					["coord"] = { 58.0, 63.7, WINTERSPRING },
+					["coord"] = { 58.0, 63.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = { i(66060) },	-- Empowered Dreamcatcher (PQI!)
 				}),
@@ -1677,9 +1677,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 11079 },	-- Wynd Nightchaser
 						{ "i", 13347 },	-- Crystal of Zin-Malor (Provided)
 					},
-					["coord"] = { 52.0, 30.2, WINTERSPRING },
+					["coord"] = { 52.0, 30.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 					["groups"] = {
@@ -1697,35 +1697,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28536, {	-- The Curse of Zin-Malor
 					["sourceQuest"] = 28519,	-- Pain of the Blood Elves
 					["qg"] = 48660,	-- Sin'dorei Spirit
-					["coord"] = { 50.6, 55.0, WINTERSPRING },
+					["coord"] = { 50.6, 55.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				{	-- The Everlook Report
 					["allianceQuestData"] = q(6028, {	-- The Everlook Report (A)
-						["maps"] = { WESTERN_PLAGUELANDS },
+						["maps"] = { MAP.WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(6029, {	-- The Everlook Report (H)
-						["maps"] = { TIRISFAL_GLADES },
+						["maps"] = { MAP.TIRISFAL_GLADES },
 					}),
 					["providers"] = {
 						{ "n", 10431 },	-- Gregor Greystone
 						{ "i", 15788 },	-- Everlook Report
 					},
-					["coord"] = { 61.2, 38.8, WINTERSPRING },
+					["coord"] = { 61.2, 38.8, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
 				q(28471, {	-- The Final Piece
 					["sourceQuest"] = 28469,	-- Winterfall Runners
 					["provider"] = { "i", 12842 },	-- Crudely-Written Log
-					["coord"] = { 36.9, 55.6, WINTERSPRING },
+					["coord"] = { 36.9, 55.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 10738,	-- High Chief Winterfall
 				}),
 				q(5123, {	-- The Final Piece
 					["sourceQuest"] = 5087,	-- Winterfall Runners
 					["provider"] = { "i", 12842 },	-- Crudely-Written Log
-					["coord"] = { 69.6, 38.2, WINTERSPRING },
+					["coord"] = { 69.6, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10738,	-- High Chief Winterfall
 					["lvl"] = 52,
@@ -1733,7 +1733,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28838, {	-- The Owlbeasts' Defense
 					["sourceQuest"] = 28837,	-- Altered Beasts
 					["qg"] = 10929,	-- Haleh
-					["coord"] = { 58.0, 63.7, WINTERSPRING },
+					["coord"] = { 58.0, 63.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Owlbeast Dreamcatcher
@@ -1741,13 +1741,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  65902 },	-- Owlbeast Dreamcatcher (QI!)
 								{ "o", 207424 },	-- Abandoned Research Samples
 							},
-							["coord"] = { 57.1, 75.4, WINTERSPRING },
+							["coord"] = { 57.1, 75.4, MAP.WINTERSPRING },
 						}),
 					},
 				}),
 				q(28638, {	-- The Owls Have It
 					["qg"] = 49537,	-- Jeb Guthrie
-					["coord"] = { 55.9, 28.2, WINTERSPRING },
+					["coord"] = { 55.9, 28.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Winterspring Owl slain
@@ -1758,7 +1758,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28631, {	-- The Perfect Horns
 					["sourceQuest"] = 28627,	-- Seril's Boast
 					["qg"] = 10305,	-- Umi Rumplesnicker
-					["coord"] = { 59.3, 49.7, WINTERSPRING },
+					["coord"] = { 59.3, 49.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Icewhomp's Pristine Horns
@@ -1773,15 +1773,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28722,	-- Yetiphobia
 					},
 					["qg"] = 50366,	-- Nymn
-					["coord"] = { 59.6, 50.4, WINTERSPRING },
+					["coord"] = { 59.6, 50.4, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(28479, {	-- The Ruins of Kel'Theril
 					["qg"] = 10920,	-- Kelek Skykeeper
 					["coords"] = {
-						{ 51.2, 80.3, FELWOOD },
-						{ 46.8, 53.8, WINTERSPRING },
+						{ 51.2, 80.3, MAP.FELWOOD },
+						{ 46.8, 53.8, MAP.WINTERSPRING },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1791,7 +1791,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5249,	-- To Winterspring!
 					},
 					["qg"] = 11079,	-- Wynd Nightchaser
-					["coord"] = { 52.0, 30.2, WINTERSPRING },
+					["coord"] = { 52.0, 30.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -1800,7 +1800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
 					["sourceQuest"] = 29032,	-- Get Them While They're Young
 					["qg"] = 10618,	-- Rivern Frostwind
-					["coord"] = { 46.6, 17.6, WINTERSPRING },
+					["coord"] = { 46.6, 17.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 68644, 20 },	-- Winterspring Cub Whisker
@@ -1821,7 +1821,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28768,	-- Winterspring!
 					},
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 25.1, 58.4, WINTERSPRING },
+					["coord"] = { 25.1, 58.4, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Winterfall Furbolg slain
@@ -1849,7 +1849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5082, {	-- Threat of the Winterfall
 					["sourceQuest"] = 6603,	-- Trouble in Winterspring!
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
@@ -1866,7 +1866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5249, {	-- To Winterspring!
 					["qg"] = 10924,	-- Ivy Leafrunner
-					["coord"] = { 50.8, 81.6, FELWOOD },
+					["coord"] = { 50.8, 81.6, MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1875,9 +1875,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5086, {	-- Toxic Horrors
 					["sourceQuest"] = 5085,	-- Mystery Goo
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/3 Toxic Horror Droplet
@@ -1889,19 +1889,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28848, {	-- Trailing the Spiritspeaker
 					["sourceQuest"] = 28537,	-- In Pursuit of Shades
 					["qg"] = 10920,	-- Kelek Skykeeper
-					["coord"] = { 46.8, 53.8, WINTERSPRING },
+					["coord"] = { 46.8, 53.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28626, {	-- Tree Delivery
 					["sourceQuest"] = 28625,	-- Chop Chop
 					["qg"] = 48965,	-- Deez Rocksnitch
-					["coord"] = { 59.7, 49.6, WINTERSPRING },
+					["coord"] = { 59.7, 49.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = { i(64661) },	-- Super-Gro Insta-Tree (PQI!)
 				}),
 				q(6603, {	-- Trouble in Winterspring!
 					["qg"] = 11754,	-- Meggi Peppinrocker
-					["coord"] = { 61.4, 38.4, WINTERSPRING },
+					["coord"] = { 61.4, 38.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 52,
@@ -1909,9 +1909,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5245, {	-- Troubled Spirits of Kel'Theril
 					["sourceQuest"] = 5244,	-- The Ruins of Kel'Theril
 					["qg"] = 10301,	-- Jaron Stoneshaper
-					["coord"] = { 52.0, 30.4, WINTERSPRING },
+					["coord"] = { 52.0, 30.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { EASTERN_PLAGUELANDS },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
@@ -1921,7 +1921,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175888 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 55.0, 42.0, WINTERSPRING },
+							["coord"] = { 55.0, 42.0, MAP.WINTERSPRING },
 						}),
 						objective(2, {	-- 0/1 Second Relic Fragment
 							["providers"] = {
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175891 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 50.0, 41.0, WINTERSPRING },
+							["coord"] = { 50.0, 41.0, MAP.WINTERSPRING },
 						}),
 						objective(3, {	-- 0/1 Third Relic Fragment
 							["providers"] = {
@@ -1937,7 +1937,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175892 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 53.0, 43.0, WINTERSPRING },
+							["coord"] = { 53.0, 43.0, MAP.WINTERSPRING },
 						}),
 						objective(4, {	-- 0/1 Fourth Relic Fragment
 							["providers"] = {
@@ -1945,20 +1945,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175893 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 52.0, 41.0, WINTERSPRING },
+							["coord"] = { 52.0, 41.0, MAP.WINTERSPRING },
 						}),
 					},
 				}),
 				q(28615, {	-- Turning the Earth
 					["qg"] = 48723,	-- Tanrir
-					["coord"] = { 65.3, 46.2, WINTERSPRING },
+					["coord"] = { 65.3, 46.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = { i(64637) },	-- Tanrir's Overcharged Totem (PQI!)
 				}),
 				q(28842, {	-- Umbranse's Deliverance
 					["sourceQuest"] = 28840,	-- Winterwater
 					["qg"] = 10929,	-- Haleh
-					["coord"] = { 58.0, 63.7, WINTERSPRING },
+					["coord"] = { 58.0, 63.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Umbranse the Spiritspeaker slain
@@ -1984,7 +1984,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28639, {	-- Ursius
 					["sourceQuest"] = 28719,	-- A Little Gamy
 					["qg"] = 49436,	-- Francis Morcott (granted automatically. Coords are relative to player position)
-					["coord"] = { 55.8, 28.2, WINTERSPRING },
+					["coord"] = { 55.8, 28.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Ursius slain
@@ -2009,7 +2009,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5054, {	-- Ursius of the Shardtooth
 					["qg"] = 10303,	-- Storm Shadowhoof
-					["coord"] = { 61.8, 38.4, WINTERSPRING },
+					["coord"] = { 61.8, 38.4, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
@@ -2023,7 +2023,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				warchiefscommand(q(28545, {	-- Warchief's Command: Winterspring!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
@@ -2034,14 +2034,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28718, {	-- Where There's Smoke, There's Delicious Meat
 					["sourceQuest"] = 28710,	-- Spray it One More Time
 					["qg"] = 49402,	-- Sana Curtainfire
-					["coord"] = { 48.0, 40.6, WINTERSPRING },
+					["coord"] = { 48.0, 40.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(4807, {	-- Wildkin E'ko
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 12433, 3 } },	-- Wildkin E'ko
 					["repeatable"] = true,
@@ -2055,7 +2055,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4802, {	-- Winterfall E'ko
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["coord"] = { 61.8, 38.2, WINTERSPRING },
+					["coord"] = { 61.8, 38.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 12431, 3 } },	-- Winterfall E'ko
 					["repeatable"] = true,
@@ -2073,7 +2073,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5201, {	-- Winterfall Intrusion
 					["qg"] = 10618,	-- Rivern Frostwind
-					["coord"] = { 49.8, 9.8, WINTERSPRING },
+					["coord"] = { 49.8, 9.8, MAP.WINTERSPRING },
 					["minReputation"] = { FACTION_WINTERSABER_TRAINERS, NEUTRAL + 1500 },	-- Wintersaber Trainers, Neutral + 1500.
 					["maxReputation"] = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2092,7 +2092,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28469, {	-- Winterfall Runners
 					["sourceQuest"] = 28467,	-- Mystery Goo
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 25.1, 58.5, WINTERSPRING },
+					["coord"] = { 25.1, 58.5, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Winterfall Crate
@@ -2104,13 +2104,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5087, {	-- Winterfall Runners
 					["sourceQuest"] = 5086,	-- Toxic Horrors
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winterfall Crate
 							["provider"] = { "i", 12829 },	-- Winterfall Crate
-							["coord"] = { 28.4, 37.8, WINTERSPRING },
+							["coord"] = { 28.4, 37.8, MAP.WINTERSPRING },
 							["cr"] = 10916,	-- Winterfall Runner
 						}),
 					},
@@ -2118,7 +2118,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28840, {	-- Winterwater
 					["sourceQuest"] = 28839,	-- Magic Prehistoric
 					["qg"] = 10929,	-- Haleh
-					["coord"] = { 58.0, 63.7, WINTERSPRING },
+					["coord"] = { 58.0, 63.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Winterwater
@@ -2142,7 +2142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28472, {	-- Words of the High Chief
 					["sourceQuest"] = 28471,	-- The Final Piece
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 25.1, 58.5, WINTERSPRING },
+					["coord"] = { 25.1, 58.5, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
@@ -2157,9 +2157,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5128, {	-- Words of the High Chief
 					["sourceQuest"] = 5123,	-- The Final Piece
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["lvl"] = 52,
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
@@ -2177,7 +2177,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28631,	-- The Perfect Horns
 					},
 					["qg"] = 10305,	-- Umi Rumplesnicker
-					["coord"] = { 59.3, 49.7, WINTERSPRING },
+					["coord"] = { 59.3, 49.7, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Scare Legacki
@@ -2206,7 +2206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28828, {	-- You Gotta Have Eggs
 					["qg"] = 49396,	-- Jez Goodgrub
-					["coord"] = { 55.9, 28.1, WINTERSPRING },
+					["coord"] = { 55.9, 28.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/40 Chillwind Egg
@@ -2235,118 +2235,118 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(RARES, {
 				n(51045, {	-- Arcanus
-					["coord"] = { 48.0, 59.6, WINTERSPRING },
+					["coord"] = { 48.0, 59.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10202, {	-- Azurous
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 58.0, 56.0, WINTERSPRING },
-						{ 59.8, 53.8, WINTERSPRING },
-						{ 61.2, 54.6, WINTERSPRING },
-						{ 63.0, 54.8, WINTERSPRING },
-						{ 65.6, 58.0, WINTERSPRING },
-						{ 65.8, 61.0, WINTERSPRING },
-						{ 65.8, 64.6, WINTERSPRING },
-						{ 66.0, 67.8, WINTERSPRING },
+						{ 58.0, 56.0, MAP.WINTERSPRING },
+						{ 59.8, 53.8, MAP.WINTERSPRING },
+						{ 61.2, 54.6, MAP.WINTERSPRING },
+						{ 63.0, 54.8, MAP.WINTERSPRING },
+						{ 65.6, 58.0, MAP.WINTERSPRING },
+						{ 65.8, 61.0, MAP.WINTERSPRING },
+						{ 65.8, 64.6, MAP.WINTERSPRING },
+						{ 66.0, 67.8, MAP.WINTERSPRING },
 						-- #else
-						{ 57.2, 45.6, WINTERSPRING },
-						{ 61.8, 40.4, WINTERSPRING },
-						{ 63.0, 40.8, WINTERSPRING },
-						{ 64.8, 43.0, WINTERSPRING },
-						{ 66.4, 45.6, WINTERSPRING },
-						{ 66.6, 53.4, WINTERSPRING },
+						{ 57.2, 45.6, MAP.WINTERSPRING },
+						{ 61.8, 40.4, MAP.WINTERSPRING },
+						{ 63.0, 40.8, MAP.WINTERSPRING },
+						{ 64.8, 43.0, MAP.WINTERSPRING },
+						{ 66.4, 45.6, MAP.WINTERSPRING },
+						{ 66.6, 53.4, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
 				n(50997, {	-- Bornak the Gorer
 					["coords"] = {
-						{ 59.6, 17.4, WINTERSPRING },
-						{ 62.4, 24.8, WINTERSPRING },
+						{ 59.6, 17.4, MAP.WINTERSPRING },
+						{ 62.4, 24.8, MAP.WINTERSPRING },
 					},
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50995, {	-- Bruiser
-					["coord"] = { 65.6, 42.8, WINTERSPRING },
+					["coord"] = { 65.6, 42.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50993, {	-- Gal'dorak
-					["coord"] = { 35.6, 48.8, WINTERSPRING },
+					["coord"] = { 35.6, 48.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10196, {	-- General Colbatann
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.8, 64.6, WINTERSPRING },
-						{ 57.2, 65.8, WINTERSPRING },
-						{ 58.6, 65.6, WINTERSPRING },
-						{ 59.4, 65.0, WINTERSPRING },
-						{ 60.6, 64.0, WINTERSPRING },
-						{ 62.8, 63.6, WINTERSPRING },
+						{ 55.8, 64.6, MAP.WINTERSPRING },
+						{ 57.2, 65.8, MAP.WINTERSPRING },
+						{ 58.6, 65.6, MAP.WINTERSPRING },
+						{ 59.4, 65.0, MAP.WINTERSPRING },
+						{ 60.6, 64.0, MAP.WINTERSPRING },
+						{ 62.8, 63.6, MAP.WINTERSPRING },
 						-- #else
-						{ 54.6, 51.6, WINTERSPRING },
-						{ 57.6, 50.0, WINTERSPRING },
-						{ 59.6, 49.2, WINTERSPRING },
-						{ 61.2, 49.4, WINTERSPRING },
+						{ 54.6, 51.6, MAP.WINTERSPRING },
+						{ 57.6, 50.0, MAP.WINTERSPRING },
+						{ 59.6, 49.2, MAP.WINTERSPRING },
+						{ 61.2, 49.4, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
 				n(10199, {	-- Grizzle Snowpaw
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.6, 50.2, WINTERSPRING },
+						{ 68.6, 50.2, MAP.WINTERSPRING },
 						-- #else
-						{ 67.0, 35.2, WINTERSPRING },
-						{ 67.2, 37.6, WINTERSPRING },
-						{ 68.6, 36.0, WINTERSPRING },
-						{ 69.2, 38.6, WINTERSPRING },
+						{ 67.0, 35.2, MAP.WINTERSPRING },
+						{ 67.2, 37.6, MAP.WINTERSPRING },
+						{ 68.6, 36.0, MAP.WINTERSPRING },
+						{ 69.2, 38.6, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
 				n(50819, {	-- Iceclaw
-					["coord"] = { 52.0, 18.8, WINTERSPRING },
+					["coord"] = { 52.0, 18.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10198, {	-- Kashoch the Reaver
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.2, 83.8, WINTERSPRING },
+						{ 61.2, 83.8, MAP.WINTERSPRING },
 						-- #else
-						{ 62.0, 69.2, WINTERSPRING },
-						{ 63.6, 69.8, WINTERSPRING },
+						{ 62.0, 69.2, MAP.WINTERSPRING },
+						{ 63.6, 69.8, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
 				n(10201, {	-- Lady Hederine
 					["coords"] = {
-						{ 65.0, 80.2, WINTERSPRING },
-						{ 51.6, 84.4, WINTERSPRING },
-						{ 54.6, 87.4, WINTERSPRING },
+						{ 65.0, 80.2, MAP.WINTERSPRING },
+						{ 51.6, 84.4, MAP.WINTERSPRING },
+						{ 54.6, 87.4, MAP.WINTERSPRING },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(50353, {	-- Manas
-					["coord"] = { 64.0, 80.0, WINTERSPRING },
+					["coord"] = { 64.0, 80.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(10197, {	-- Mezzir the Howler
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 24.2, 51.6, WINTERSPRING },
+						{ 24.2, 51.6, MAP.WINTERSPRING },
 						-- #else
-						{ 30.6, 38.4, WINTERSPRING },
-						{ 30.6, 46.0, WINTERSPRING },
-						{ 39.8, 36.4, WINTERSPRING },
-						{ 45.0, 38.0, WINTERSPRING },
+						{ 30.6, 38.4, MAP.WINTERSPRING },
+						{ 30.6, 46.0, MAP.WINTERSPRING },
+						{ 39.8, 36.4, MAP.WINTERSPRING },
+						{ 45.0, 38.0, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
 				n(50348, {	-- Norissis
-					["coord"] = { 59.6, 24.0, WINTERSPRING },
+					["coord"] = { 59.6, 24.0, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50788, {	-- Quetzl
-					["coord"] = { 67.0, 83.6, WINTERSPRING },
+					["coord"] = { 67.0, 83.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 					["groups"] = {
 					},
@@ -2354,30 +2354,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(10200, {	-- Rak'shiri
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.6, 18.2, WINTERSPRING },
-						{ 47.0, 19.6, WINTERSPRING },
-						{ 46.2, 18.6, WINTERSPRING },
+						{ 47.6, 18.2, MAP.WINTERSPRING },
+						{ 47.0, 19.6, MAP.WINTERSPRING },
+						{ 46.2, 18.6, MAP.WINTERSPRING },
 						-- #else
-						{ 50.0, 8.0, WINTERSPRING },
-						{ 50.0, 11.2, WINTERSPRING },
-						{ 50.4, 20.4, WINTERSPRING },
-						{ 51.8, 17.2, WINTERSPRING },
-						{ 55.6, 14.0, WINTERSPRING },
+						{ 50.0, 8.0, MAP.WINTERSPRING },
+						{ 50.0, 11.2, MAP.WINTERSPRING },
+						{ 50.4, 20.4, MAP.WINTERSPRING },
+						{ 51.8, 17.2, MAP.WINTERSPRING },
+						{ 55.6, 14.0, MAP.WINTERSPRING },
 						-- #endif
 					},
 				}),
 				n(50346, {	-- Ronak
-					["coord"] = { 59.6, 42.8, WINTERSPRING },
+					["coord"] = { 59.6, 42.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if AFTER CATA
 				n(10741, {	-- Sian-Rotam
 					-- NOTE: Originally an Elite quest mob, converted to a Rare with Cata.
-					["coord"] = { 45.8, 17.6, WINTERSPRING },
+					["coord"] = { 45.8, 17.6, MAP.WINTERSPRING },
 				}),
 				-- #endif
 				n(51028, {	-- The Deep Tunneler
-					["coord"] = { 50.6, 72.2, WINTERSPRING },
+					["coord"] = { 50.6, 72.2, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 			}),
@@ -2388,7 +2388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 143129 },	-- Wan'be <The Explorer>
 						{ "i", 163213 },	-- Ghostly Explorer's Skull
 					},
-					["coord"] = { 46.4, 18.1, WINTERSPRING },
+					["coord"] = { 46.4, 18.1, MAP.WINTERSPRING },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_8_0_1 },
 				}),
@@ -2410,7 +2410,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				o(240616, {	-- Frozen Supplies
 					["description"] = "Loot the Frozen Supplies in a nook at the base of the pillar.",
-					["coord"] = { 68.0, 73.9, WINTERSPRING },
+					["coord"] = { 68.0, 73.9, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
 						i(122224, {	-- Music Roll: Mountains
@@ -2421,7 +2421,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(226419, {	-- Rune of Feral Combat Specialization
 					["provider"] = { "o", 457098 },	-- Finding Your Inner Feline: A Guide to Modern Druidism
-					["coord"] = { 49.6, 8.8, WINTERSPRING },
+					["coord"] = { 49.6, 8.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { DRUID },
 					["groups"] = {
@@ -2432,7 +2432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_FOUR, i(226415, {	-- Rune of Frost Specialization
 					["provider"] = { "o", 457095 },	-- Elements for Dummies Volume I: Frost
-					["coord"] = { 58.9, 59.9, WINTERSPRING },
+					["coord"] = { 58.9, 59.9, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { HUNTER, SHAMAN, MAGE },
 					["groups"] = {
@@ -2445,7 +2445,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(VENDORS, {
 				n(50129, {	-- Daleohm <Blacksmithing Supplies>
-					["coord"] = { 58.0, 63.8, WINTERSPRING },
+					["coord"] = { 58.0, 63.8, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(12836, {	-- Plans: Frostguard (RECIPE!)
@@ -2456,9 +2456,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.2, 50.0, WINTERSPRING },
+						{ 59.2, 50.0, MAP.WINTERSPRING },
 						-- #else
-						{ 60.8, 37.8, WINTERSPRING },
+						{ 60.8, 37.8, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["groups"] = {
@@ -2473,9 +2473,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(11187, {	-- Himmik <Food & Drink>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.8, 51.6, WINTERSPRING },
+						{ 59.8, 51.6, MAP.WINTERSPRING },
 						-- #else
-						{ 61.2, 39.0, WINTERSPRING },
+						{ 61.2, 39.0, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["groups"] = {
@@ -2483,7 +2483,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(2303, {	-- Lyranne Feathersong <Food & Drink>
-					["coord"] = { 52.0, 29.2, WINTERSPRING },
+					["coord"] = { 52.0, 29.2, MAP.WINTERSPRING },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -2494,7 +2494,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(52830, {	-- Michelle De Rum <Pet Collector>
-					["coord"] = { 59.8, 51.6, WINTERSPRING },
+					["coord"] = { 59.8, 51.6, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_1_0 },
 					["groups"] = {
 						i(69239, {	-- Winterspring Cub (PET!)
@@ -2504,7 +2504,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(228216, {	-- Numi
-					["coord"] = { 61.2, 37.0, WINTERSPRING },
+					["coord"] = { 61.2, 37.0, MAP.WINTERSPRING },
 					["timeline"] = { "added 1.15.3" },
 					["groups"] = {
 						i(227286),	-- Warmed Rumsey Rum with Cream
@@ -2514,9 +2514,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(11189, {	-- Qia <Trade Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.6, 49.2, WINTERSPRING },
+						{ 59.6, 49.2, MAP.WINTERSPRING },
 						-- #else
-						{ 61.2, 37.2, WINTERSPRING },
+						{ 61.2, 37.2, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["groups"] = {
@@ -2546,9 +2546,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["minReputation"] = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.6, 17.6, WINTERSPRING },
+						{ 46.6, 17.6, MAP.WINTERSPRING },
 						-- #else
-						{ 49.8, 9.8, WINTERSPRING },
+						{ 49.8, 9.8, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2566,9 +2566,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(16015, {	-- Vi'el <Exotic Reagent Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.6, 87.6, WINTERSPRING },
+						{ 61.6, 87.6, MAP.WINTERSPRING },
 						-- #else
-						{ 58.9, 78.4, WINTERSPRING },
+						{ 58.9, 78.4, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["groups"] = {
@@ -2587,9 +2587,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.2, 50.2, WINTERSPRING },
+						{ 60.2, 50.2, MAP.WINTERSPRING },
 						-- #else
-						{ 61.6, 38.0, WINTERSPRING },
+						{ 61.6, 38.0, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["groups"] = {
@@ -2601,9 +2601,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(11185, {	-- Xizzer Fizzbolt <Engineering Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.2, 50.8, WINTERSPRING },
+						{ 59.2, 50.8, MAP.WINTERSPRING },
 						-- #else
-						{ 60.8, 38.6, WINTERSPRING },
+						{ 60.8, 38.6, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["groups"] = {
@@ -2644,9 +2644,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = GOBLIN_ENGINEERING,
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.6, 49.8, WINTERSPRING },
+						{ 59.6, 49.8, MAP.WINTERSPRING },
 						-- #else
-						{ 61.2, 37.6, WINTERSPRING },
+						{ 61.2, 37.6, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["groups"] = {
@@ -2673,9 +2673,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, i(21105, {	-- Draconic for Dummies [Chapter III]
 					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
 					["coords"] = {
-						{ 65.0, 80.2, WINTERSPRING },
-						{ 51.6, 84.4, WINTERSPRING },
-						{ 54.6, 87.4, WINTERSPRING },
+						{ 65.0, 80.2, MAP.WINTERSPRING },
+						{ 51.6, 84.4, MAP.WINTERSPRING },
+						{ 54.6, 87.4, MAP.WINTERSPRING },
 					},
 					["crs"] = {
 						10201,	-- Lady Hederine
@@ -2748,12 +2748,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(4191, {	-- Owlbeast Leggings
 					["coords"] = {
-						{ 65.0, 74.0, WINTERSPRING },
-						{ 65.8, 75.6, WINTERSPRING },
-						{ 64.6, 80.8, WINTERSPRING },
-						{ 62.8, 75.0, WINTERSPRING },
-						{ 65.2, 76.6, WINTERSPRING },
-						{ 57.6, 75.2, WINTERSPRING },
+						{ 65.0, 74.0, MAP.WINTERSPRING },
+						{ 65.8, 75.6, MAP.WINTERSPRING },
+						{ 64.6, 80.8, MAP.WINTERSPRING },
+						{ 62.8, 75.0, MAP.WINTERSPRING },
+						{ 65.2, 76.6, MAP.WINTERSPRING },
+						{ 57.6, 75.2, MAP.WINTERSPRING },
 					},
 					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 10.09.2023
 					["crs"] = {
@@ -2765,11 +2765,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 35.4, 57.0, WINTERSPRING },
-						{ 24.4, 47.6, WINTERSPRING },
+						{ 35.4, 57.0, MAP.WINTERSPRING },
+						{ 24.4, 47.6, MAP.WINTERSPRING },
 						-- #else
-						{ 41.6, 42.8, WINTERSPRING },
-						{ 33.0, 36.8, WINTERSPRING },
+						{ 41.6, 42.8, MAP.WINTERSPRING },
+						{ 33.0, 36.8, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2778,13 +2778,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(15747, {	-- Pattern: Frostsaber Leggings (RECIPE!)
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 35.4, 57.0, WINTERSPRING },
-						{ 27.6, 48.6, WINTERSPRING },
-						{ 23.6, 50.8, WINTERSPRING },
+						{ 35.4, 57.0, MAP.WINTERSPRING },
+						{ 27.6, 48.6, MAP.WINTERSPRING },
+						{ 23.6, 50.8, MAP.WINTERSPRING },
 						-- #else
-						{ 68.0, 35.6, WINTERSPRING },
-						{ 41.6, 42.8, WINTERSPRING },
-						{ 33.6, 36.8, WINTERSPRING },
+						{ 68.0, 35.6, MAP.WINTERSPRING },
+						{ 41.6, 42.8, MAP.WINTERSPRING },
+						{ 33.6, 36.8, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2793,11 +2793,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(15779, {	-- Pattern: Frostsaber Tunic (RECIPE!)
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 68.2, 46.8, WINTERSPRING },
-						{ 66.2, 49.4, WINTERSPRING },
+						{ 68.2, 46.8, MAP.WINTERSPRING },
+						{ 66.2, 49.4, MAP.WINTERSPRING },
 						-- #else
-						{ 69.6, 38.2, WINTERSPRING },
-						{ 65.6, 37.6, WINTERSPRING },
+						{ 69.6, 38.2, MAP.WINTERSPRING },
+						{ 65.6, 37.6, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2814,12 +2814,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 63.2, 89.8, WINTERSPRING },
-						{ 57.8, 86.6, WINTERSPRING },
-						{ 56.2, 83.4, WINTERSPRING },
+						{ 63.2, 89.8, MAP.WINTERSPRING },
+						{ 57.8, 86.6, MAP.WINTERSPRING },
+						{ 56.2, 83.4, MAP.WINTERSPRING },
 						-- #else
-						{ 64.2, 69.0, WINTERSPRING },
-						{ 61.8, 68.6, WINTERSPRING },
+						{ 64.2, 69.0, MAP.WINTERSPRING },
+						{ 61.8, 68.6, MAP.WINTERSPRING },
 						-- #endif
 					},
 					["crs"] = {
@@ -2832,7 +2832,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				i(16054, {	-- Schematic: Arcanite Dragonling (RECIPE!)
-					["coord"] = { 59.6, 49.0, WINTERSPRING },
+					["coord"] = { 59.6, 49.0, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),

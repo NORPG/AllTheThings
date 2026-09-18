@@ -9,7 +9,7 @@ applyclassicphase(FOREVER_PHASE_ONE, inst(2999, bubbleDownSelf({	-- Ruins of Lor
 }, {
 	-- ["lore"] = "",
 	["zone-text-areaID"] = 16611,	-- Ruins of Lordaeron
-	["coord"] = { 50.0, 50.0, TIRISFAL_GLADES },
+	["coord"] = { 50.0, 50.0, MAP.TIRISFAL_GLADES },
 	["lvl"] = 15,
 	["groups"] = {
 		n(3353, {	-- Witherfang

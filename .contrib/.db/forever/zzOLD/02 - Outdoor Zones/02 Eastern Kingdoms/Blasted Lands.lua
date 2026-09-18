@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(BLASTED_LANDS, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.BLASTED_LANDS, {
 		["lore"] = "The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",
 		["icon"] = 236720,
 		-- #if AFTER 6.0.1
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 				["groups"] = {
 					pet(416, {	-- Scorpling (PET!)
-						["coord"] = { 59.6, 60.8, BLASTED_LANDS },
+						["coord"] = { 59.6, 60.8, MAP.BLASTED_LANDS },
 					}),
 				},
 			}),
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(604, {	-- Dreadmaul Hold, Blasted Lands
 					["cr"] = 43121,	-- Preda <Wind Rider Master>
-					["coord"] = { 43.6, 14.2, BLASTED_LANDS },
+					["coord"] = { 43.6, 14.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -82,22 +82,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 8609,	-- Alexandra Constantine <Gryphon Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.2, 21.6, BLASTED_LANDS },
+						{ 61.2, 21.6, MAP.BLASTED_LANDS },
 						-- #else
-						{ 65.6, 24.4, BLASTED_LANDS },
+						{ 65.6, 24.4, MAP.BLASTED_LANDS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(603, {	-- Sunveil Excursion, Blasted Lands
 					["cr"] = 43114,	-- Salena <Dragonhawk Master>
-					["coord"] = { 50.8, 72.8, BLASTED_LANDS },
+					["coord"] = { 50.8, 72.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(602, {	-- Surwich, Blasted Lands
 					["cr"] = 43107,	-- Graham McAllister <Hippogryph Master>
-					["coord"] = { 47.0, 89.2, BLASTED_LANDS },
+					["coord"] = { 47.0, 89.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -106,13 +106,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26172, {	-- A Bloodmage's Gotta Eat Too (A)
 					["sourceQuest"] = 26158,	-- Attune the Bloodstone (A)
 					["qg"] = 42298,	-- Kasim Sharim
-					["coord"] = { 62.4, 25.8, BLASTED_LANDS },
+					["coord"] = { 62.4, 25.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Ashmane Steak
 							["provider"] = { "i", 55828 },	-- Ashmane Steak
-							["coord"] = { 51.6, 29.8, BLASTED_LANDS },
+							["coord"] = { 51.6, 29.8, MAP.BLASTED_LANDS },
 							["cr"] = 5992,	-- Ashmane Boar
 						}),
 						i(59384, {	-- Ashmane Bracers
@@ -129,13 +129,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25690, {	-- A Bloodmage's Gotta Eat Too (H)
 					["sourceQuest"] = 25684,	-- Attune the Bloodstone (H)
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
+					["coord"] = { 39.2, 36.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Ashmane Steak
 							["provider"] = { "i", 55828 },	-- Ashmane Steak
-							["coord"] = { 51.6, 29.8, BLASTED_LANDS },
+							["coord"] = { 51.6, 29.8, MAP.BLASTED_LANDS },
 							["cr"] = 5992,	-- Ashmane Boar
 						}),
 						i(59422, {	-- Ashmane Bracers
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2583, {	-- A Boar's Vitality
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8392, 3 },	-- Blasted Boar Lung
@@ -168,21 +168,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25715, {	-- A Closer Look
 					["sourceQuest"] = 27919,	-- Onward to the Blasted Lands
 					["qg"] = 9540,	-- Enohar Thunderbrew
-					["coord"] = { 61.4, 18.6, BLASTED_LANDS },
+					["coord"] = { 61.4, 18.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26185, {	-- Advice from the Cenarion Circle
 					["sourceQuest"] = 26184,	-- Wormthorn's Dream
 					["qg"] = 42349,	-- Mayor Charlton Connisport
-					["coord"] = { 46.4, 87.2, BLASTED_LANDS },
+					["coord"] = { 46.4, 87.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25703, {	-- Atrocities
 					["sourceQuest"] = 25702,	-- Home... Gone... Naga...
 					["qg"] = 41354,	-- Neptool
-					["coord"] = { 71.0, 60.1, BLASTED_LANDS },
+					["coord"] = { 71.0, 60.1, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Bloodwash Barbarian slain
@@ -196,41 +196,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26158, {	-- Attune the Bloodstone (A)
 					["sourceQuest"] = 26157,	-- Kasim Sharim
 					["qg"] = 42298,	-- Kasim Sharim
-					["coord"] = { 62.4, 25.8, BLASTED_LANDS },
+					["coord"] = { 62.4, 25.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Use internal Bloodstone Teleporter
 							["provider"] = { "o", 203753 },	-- Bloodstone Teleporter
-							["coord"] = { 63.23, 25.93, BLASTED_LANDS },
+							["coord"] = { 63.23, 25.93, MAP.BLASTED_LANDS },
 						}),
 						objective(2, {	-- Use external Bloodstone Teleporter
 							["provider"] = { "o", 203752 },	-- Bloodstone Teleporter
-							["coord"] = { 61.5, 29.9, BLASTED_LANDS },
+							["coord"] = { 61.5, 29.9, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
 				q(25684, {	-- Attune the Bloodstone (H)
 					["sourceQuest"] = 25683,	-- The Dreadmaul Furnace
 					["qg"] = 7506,	-- Bloodmage Lynnore
-					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
+					["coord"] = { 39.2, 36.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Use internal Bloodstone Teleporter
 							["provider"] = { "o", 203181 },	-- Bloodstone Teleporter
-							["coord"] = { 39.3, 35.7, BLASTED_LANDS },
+							["coord"] = { 39.3, 35.7, MAP.BLASTED_LANDS },
 						}),
 						objective(2, {	-- Use external Bloodstone Teleporter
 							["provider"] = { "o", 203180 },	-- Bloodstone Teleporter
-							["coord"] = { 41.6, 31.9, BLASTED_LANDS },
+							["coord"] = { 41.6, 31.9, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
 				q(28857, {	-- Blasted Lands: The Other Side of the World (A)
 					["altQuests"] = { 28673 },	-- Hero's Call: Blasted Lands!
 					["qg"] = 11118,	-- Innkeeper Vizzie
-					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["coord"] = { 59.8, 51.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3_LAUNCH },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28858, {	-- Blasted Lands: The Other Side of the World (H)
 					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
 					["qg"] = 11118,	-- Innkeeper Vizzie
-					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["coord"] = { 59.8, 51.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3_LAUNCH },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -246,20 +246,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26160, {	-- Blood Ritual (A)
 					["sourceQuest"] = 26159,	-- The First Step (A)
 					["qg"] = 42298,	-- Kasim Sharim
-					["coord"] = { 62.4, 25.8, BLASTED_LANDS },
+					["coord"] = { 62.4, 25.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25686, {	-- Blood Ritual (H)
 					["sourceQuest"] = 25685,	-- The First Step (H)
 					["qg"] = 7506,	-- Bloodmage Lynnore
-					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
+					["coord"] = { 39.2, 36.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28865, {	-- Call of the Warmatron
 					["qg"] = 50587,	-- Okril'lon Mage
-					["coord"] = { 53.3, 33.5, SILITHUS },
+					["coord"] = { 53.3, 33.5, MAP.SILITHUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25716, {	-- Cultists at our Doorstep
 					["sourceQuest"] = 25714,	-- Watcher Mahar Ba
 					["qg"] = 5385,	-- Watcher Mahar Ba
-					["coord"] = { 63.1, 16.8, BLASTED_LANDS },
+					["coord"] = { 63.1, 16.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25709, {	-- Curtail the Darktail
 					["sourceQuest"] = 25715,	-- A Closer Look
 					["qg"] = 9540,	-- Enohar Thunderbrew
-					["coord"] = { 61.4, 18.6, BLASTED_LANDS },
+					["coord"] = { 61.4, 18.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -322,7 +322,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26186, {	-- Demoniac Vessel (A)
 					["sourceQuest"] = 26185,	-- Advice from the Cenarion Circle
 					["qg"] = 42352,	-- Cenarion Observer Shayana
-					["coord"] = { 46.3, 87.1, BLASTED_LANDS },
+					["coord"] = { 46.3, 87.1, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25719, {	-- Demoniac Vessel (H)
 					["sourceQuest"] = 25718,	-- How Best to Proceed
 					["qg"] = 42348,	-- Elijah Dawnflight
-					["coord"] = { 47.1, 69.1, BLASTED_LANDS },
+					["coord"] = { 47.1, 69.1, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -354,13 +354,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25711, {	-- Eliminate the Okril'lon
 					["sourceQuest"] = 25710,	-- Minor Distractions
 					["qg"] = 5393,	-- Quartermaster Lungertz
-					["coord"] = { 60.0, 13.4, BLASTED_LANDS },
+					["coord"] = { 60.0, 13.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/9 Okril'lon Infantry slain
 							["provider"] = { "n", 42359 },	-- Okril'lon Infantry
-							["coord"] = { 53.0, 14.2, BLASTED_LANDS },
+							["coord"] = { 53.0, 14.2, MAP.BLASTED_LANDS },
 						}),
 						i(59373, {	-- Nethergarde Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -378,7 +378,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3501, {	-- Everything Counts In Large Amounts
 					["qg"] = 7363,	-- Kum'isha the Collector
-					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
+					["coord"] = { 51.8, 35.6, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
 					["lvl"] = 45,
@@ -395,7 +395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42299 },	-- Watcher Grimeo
 						{ "i", 57140 },	-- Grimeo's Package
 					},
-					["coord"] = { 55.1, 49.5, BLASTED_LANDS },
+					["coord"] = { 55.1, 49.5, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -408,19 +408,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 41159 },	-- Watcher Wazzik
 						{ "i", 56025 },	-- Wazzik's Package
 					},
-					["coord"] = { 54.3, 50.0, BLASTED_LANDS },
+					["coord"] = { 54.3, 50.0, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25705, {	-- False Idols
 					["sourceQuest"] = 25703,	-- Atrocities
 					["qg"] = 41354,	-- Neptool
-					["coord"] = { 71.0, 60.1, BLASTED_LANDS },
+					["coord"] = { 71.0, 60.1, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Azsh'ir Idol destroyed
 							["provider"] = { "o", 203289 },	-- Azsh'ir Idol
-							["coord"] = { 60.8, 74.7, BLASTED_LANDS },
+							["coord"] = { 60.8, 74.7, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
@@ -432,26 +432,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28553,	-- Okrilla and the Blasted Lands
 					},
 					["qg"] = 41124,	-- Okrilla
-					["coord"] = { 40.4, 11.6, BLASTED_LANDS },
+					["coord"] = { 40.4, 11.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Dreadmaul Ambusher
 							["provider"] = { "n", 41136 },	-- Dreadmaul Ambusher
-							["coord"] = { 44.0, 17.8, BLASTED_LANDS },
+							["coord"] = { 44.0, 17.8, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
 				q(25676, {	-- Heartstrike
 					["sourceQuest"] = 25674,	-- Futile Pride
 					["qg"] = 41124,	-- Okrilla
-					["coord"] = { 40.4, 11.6, BLASTED_LANDS },
+					["coord"] = { 40.4, 11.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				heroscall(q(28673, {	-- Hero's Call: Blasted Lands!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
@@ -461,20 +461,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(25702, {	-- Home... Gone... Naga...
 					["qg"] = 41265,	-- Salt-Flop
-					["coord"] = { 73.1, 47.4, BLASTED_LANDS },
+					["coord"] = { 73.1, 47.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(25718, {	-- How Best to Proceed
 					["sourceQuest"] = 25717,	-- The Demons and the Druid
 					["qg"] = 42344,	-- Rohan Sunveil
-					["coord"] = { 49.7, 71.4, BLASTED_LANDS },
+					["coord"] = { 49.7, 71.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(2602, {	-- Infallible Mind
 					["qg"] = 7506,	-- Bloodmage Lynnore
-					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.3, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8394, 10 },	-- Basilisk Brain
@@ -494,14 +494,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25678,	-- Pick Your Fate
 					},
 					["qg"] = 41333,	-- Rofilian Dane
-					["coord"] = { 59.5, 3.5, BLASTED_LANDS },
+					["coord"] = { 59.5, 3.5, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25677, {	-- It's All Mine
 					["sourceQuest"] = 25676,	-- Heartstrike
 					["qg"] = 41133,	-- Rofilian Dane
-					["coord"] = { 59.5, 3.5, BLASTED_LANDS },
+					["coord"] = { 59.5, 3.5, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203183 },	-- Ore Heap
 								{ "i",  55238 },	-- Concentrated Solvent
 							},
-							["coord"] = { 50.11, 10.61, BLASTED_LANDS },
+							["coord"] = { 50.11, 10.61, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
@@ -520,14 +520,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5385 },	-- Watcher Mahar Ba
 						{ "i", 57136 },	-- A Letter to Kasim Sharim
 					},
-					["coord"] = { 63.1, 16.8, BLASTED_LANDS },
+					["coord"] = { 63.1, 16.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2522, {	-- Kum'isha's Endeavors
 					["sourceQuest"] = 2521,	-- To Serve Kum'isha
 					["qg"] = 7363,	-- Kum'isha the Collector
-					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
+					["coord"] = { 51.8, 35.6, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
 					["repeatable"] = true,
@@ -541,7 +541,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 8244 },	-- Flawless Draenethyst Sphere
 						{ "n", 7363 },	-- Kum'isha the Collector
 					},
-					["coord"] = { 48.8, 31.8, BLASTED_LANDS },
+					["coord"] = { 48.8, 31.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["repeatable"] = true,
 					["groups"] = {
@@ -555,7 +555,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25698,	-- The Amulet of Sevine
 					},
 					["qg"] = 7783,	-- Loramus Thalipedes
-					["coord"] = { 39.3, 35.7, BLASTED_LANDS },
+					["coord"] = { 39.3, 35.7, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -566,13 +566,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28867,	-- Nethergarde Needs You!
 					},
 					["qg"] = 5393,	-- Quartermaster Lungertz
-					["coord"] = { 60.0, 13.4, BLASTED_LANDS },
+					["coord"] = { 60.0, 13.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Okril'lon Scout slain
 							["provider"] = { "n", 42228 },	-- Okril'lon Scout
-							["coord"] = { 58.2, 17.2, BLASTED_LANDS },
+							["coord"] = { 58.2, 17.2, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 41134 },	-- Tak'arili
 						{ "i", 56017 },	-- Nethergarde Mine Report
 					},
-					["coord"] = { 62.2, 1.4, BLASTED_LANDS },
+					["coord"] = { 62.2, 1.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -603,7 +603,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25706, {	-- Neptool's Revenge
 					["sourceQuest"] = 25703,	-- Atrocities
 					["qg"] = 41354,	-- Neptool
-					["coord"] = { 71.0, 60.1, BLASTED_LANDS },
+					["coord"] = { 71.0, 60.1, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Bloodwash Zealot slain
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28867, {	-- Nethergarde Needs You!
 					["qg"] = 50588,	-- Nethergarde Mage
-					["coord"] = { 53.6, 33.3, SILITHUS },
+					["coord"] = { 53.6, 33.3, MAP.SILITHUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -639,13 +639,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25712, {	-- Nethergarde Reigns
 					["sourceQuest"] = 25710,	-- Minor Distractions
 					["qg"] = 42262,	-- Leyan Steelson
-					["coord"] = { 60.1, 13.3, BLASTED_LANDS },
+					["coord"] = { 60.1, 13.3, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain Metlek slain
 							["provider"] = { "n", 42231 },	-- Captain Metlek <Okril'lon Captain>
-							["coord"] = { 51.6, 14.8, BLASTED_LANDS },
+							["coord"] = { 51.6, 14.8, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
@@ -653,12 +653,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(26161, {	-- Not Just Any Body [A]
 						["sourceQuest"] = 26166,	-- Enhancing the Stone
 						["qg"] = 42298,	-- Kasim Sharim
-						["coord"] = { 62.5, 26.2, BLASTED_LANDS },
+						["coord"] = { 62.5, 26.2, MAP.BLASTED_LANDS },
 					}),
 					["hordeQuestData"] = q(25687, {	-- Not Just Any Body [H]
 						["sourceQuest"] = 25686,	-- Blood Ritual
 						["qg"] = 7506,	-- Bloodmage Lynnore
-						["coord"] = { 39.2, 36.2, BLASTED_LANDS },
+						["coord"] = { 39.2, 36.2, MAP.BLASTED_LANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -667,28 +667,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  55829 },	-- Loramus' Head
 								{ "o", 203204 },	-- Dreadmaul Cache
 							},
-							["coord"] = { 46.7, 27.0, BLASTED_LANDS },
+							["coord"] = { 46.7, 27.0, MAP.BLASTED_LANDS },
 						}),
 						objective(2, {	-- 0/1 Loramus' Torso
 							["providers"] = {
 								{ "i",  55836 },	-- Loramus' Torso
 								{ "o", 203205 },	-- Dreadmaul Cache
 							},
-							["coord"] = { 39.9, 37.1, BLASTED_LANDS },
+							["coord"] = { 39.9, 37.1, MAP.BLASTED_LANDS },
 						}),
 						objective(3, {	-- 0/1 Loramus' Legs
 							["providers"] = {
 								{ "i",  55837 },	-- Loramus' Legs
 								{ "o", 203206 },	-- Dreadmaul Cache
 							},
-							["coord"] = { 46.9, 39.5, BLASTED_LANDS },
+							["coord"] = { 46.9, 39.5, MAP.BLASTED_LANDS },
 						}),
 					},
 				},
 				q(25675, {	-- Ogre Combat
 					["sourceQuest"] = 25674,	-- Futile Pride
 					["qg"] = 41125,	-- Master Aitokk
-					["coord"] = { 42.6, 13.9, BLASTED_LANDS },
+					["coord"] = { 42.6, 13.9, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -715,7 +715,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3502, {	-- One Draenei's Junk...
 					["sourceQuest"] = 3501,	-- Everything Counts In Large Amounts
 					["qg"] = 7363,	-- Kum'isha the Collector
-					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
+					["coord"] = { 51.8, 35.6, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
 					["repeatable"] = true,
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 10593 },	-- Imperfect Draenethyst Sphere
 						{ "n", 7363 },	-- Kum'isha the Collector
 					},
-					["coord"] = { 48.8, 31.8, BLASTED_LANDS },
+					["coord"] = { 48.8, 31.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["repeatable"] = true,
 					["groups"] = {
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25708, {	-- Our Fallen Friends
 					["sourceQuest"] = 25715,	-- A Closer Look
 					["qg"] = 9540,	-- Enohar Thunderbrew
-					["coord"] = { 61.4, 18.6, BLASTED_LANDS },
+					["coord"] = { 61.4, 18.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -755,16 +755,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2783, {	-- Petty Squabbles
 					["qg"] = 7826,	-- Ambassador Ardalan
-					["coord"] = { 67.6, 19.2, BLASTED_LANDS },
+					["coord"] = { 67.6, 19.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SWAMP_OF_SORROWS },
+					["maps"] = { MAP.SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(25678, {	-- Pick Your Fate
 					["sourceQuest"] = 25676,	-- Heartstrike
 					["qg"] = 41133,	-- Rofilian Dane
-					["coord"] = { 59.5, 3.5, BLASTED_LANDS },
+					["coord"] = { 59.5, 3.5, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -800,32 +800,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				{	-- Protecting Our Rear
 					["allianceQuestData"] = q(26173, {	-- Protecting Our Rear [A]
 						["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
-						["coord"] = { 54.6, 50.4, BLASTED_LANDS },
+						["coord"] = { 54.6, 50.4, MAP.BLASTED_LANDS },
 					}),
 					["hordeQuestData"] = q(25694, {	-- Protecting Our Rear [H]
 						["qg"] = 19254,	-- Warlord Dar'toon
-						["coord"] = { 54.4, 50.5, BLASTED_LANDS },
+						["coord"] = { 54.4, 50.5, MAP.BLASTED_LANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Jarroc Torn-Wing slain
 							["provider"] = { "n", 41164 },	-- Jarroc Torn-Wing
-							["coord"] = { 44.0, 48.0, BLASTED_LANDS },
+							["coord"] = { 44.0, 48.0, MAP.BLASTED_LANDS },
 						}),
 						objective(2, {	-- 0/1 Shahandana slain
 							["provider"] = { "n", 41165 },	-- Shahandana
-							["coord"] = { 60.0, 43.6, BLASTED_LANDS },
+							["coord"] = { 60.0, 43.6, MAP.BLASTED_LANDS },
 						}),
 						objective(3, {	-- 0/1 Gomegaz slain
 							["provider"] = { "n", 41166 },	-- Gomegaz
-							["coord"] = { 52.8, 41.4, BLASTED_LANDS },
+							["coord"] = { 52.8, 41.4, MAP.BLASTED_LANDS },
 						}),
 					},
 				},
 				q(2582, {	-- Rage of Ages
 					["sourceQuest"] = 2581,	-- Snickerfang Jowls
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8391, 3 },	-- Snickerfang Jowl
@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25713, {	-- Remove Their Arms
 					["sourceQuest"] = 25710,	-- Minor Distractions
 					["qg"] = 42264,	-- Buttonwillow McKittrick
-					["coord"] = { 60.4, 13.8, BLASTED_LANDS },
+					["coord"] = { 60.4, 13.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -852,23 +852,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203707 },	-- Okril'lon Weapons Crate
 								{ "i", 57117 },	-- Buttonwillow's Hand Grenade
 							},
-							["coord"] = { 53.66, 14.83, BLASTED_LANDS },
+							["coord"] = { 53.66, 14.83, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
 				q(2993, {	-- Return to the Hinterlands
 					["sourceQuest"] = 2992,	-- The Divination
 					["qg"] = 8022,	-- Thadius Grimshade
-					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
+					["coord"] = { 67.0, 19.4, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(2586, {	-- Salt of the Scorpok
 					["sourceQuest"] = 2585,	-- The Decisive Striker
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8393, 3 },	-- Scorpok Pincer
@@ -885,7 +885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2581, {	-- Snickerfang Jowls
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8391, 3 },	-- Snickerfang Jowl
@@ -903,20 +903,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "|cffFF0000DO NOT GET IN THE BOX.|r\nThe box will change which phase your character is in, and waste a lot of time.",
 					["sourceQuest"] = 25680,	-- That's Not Us
 					["qg"] = 41134,	-- Tak'arili
-					["coord"] = { 62.2, 1.4, BLASTED_LANDS },
+					["coord"] = { 62.2, 1.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Chief Prospector Hondo slain
 							["provider"] = { "n", 41173 },	-- Chief Prospector Hondo
-							["coord"] = { 52.4, 2.6, BLASTED_LANDS },
+							["coord"] = { 52.4, 2.6, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
 				q(2584, {	-- Spirit of the Boar
 					["sourceQuest"] = 2583,	-- A Boar's Vitality
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8392, 3 },	-- Blasted Boar Lung
@@ -933,7 +933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2604, {	-- Spiritual Domination
 					["qg"] = 7506,	-- Bloodmage Lynnore
-					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.3, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8396, 10 },	-- Vulture Gizzard
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7582,	-- The Prison's Casing
 					},
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -980,7 +980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26175, {	-- Surwich
 					["sourceQuest"] = 26174,	-- Watching Our Back
 					["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
-					["coord"] = { 54.6, 50.4, BLASTED_LANDS },
+					["coord"] = { 54.6, 50.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -988,20 +988,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25680, {	-- That's Not Us
 					["sourceQuest"] = 25679,	-- Into the Mountain
 					["qg"] = 41134,	-- Tak'arili
-					["coord"] = { 62.2, 1.4, BLASTED_LANDS },
+					["coord"] = { 62.2, 1.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Illycor slain
 							["provider"] = { "n", 41163 },	-- Illycor
-							["coord"] = { 65.6, 8.6, BLASTED_LANDS },
+							["coord"] = { 65.6, 8.6, MAP.BLASTED_LANDS },
 						}),
 					},
 				}),
 				q(26162, {	-- The Altar of Storms (A)
 					["sourceQuest"] = 26161,	-- Not Just Any Body (A)
 					["qg"] = 42298,	-- Kasim Sharim
-					["coord"] = { 62.5, 26.2, BLASTED_LANDS },
+					["coord"] = { 62.5, 26.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1011,7 +1011,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  56032 },	-- Loramus' Body
 								{ "o", 203196 },	-- Blood Altar
 							},
-							["coord"] = { 37.0, 28.6, BLASTED_LANDS },
+							["coord"] = { 37.0, 28.6, MAP.BLASTED_LANDS },
 						}),
 						i(59390, {	-- Boots of Completed Rituals
 							["timeline"] = { ADDED_4_0_3 },
@@ -1033,7 +1033,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25688, {	-- The Altar of Storms (H)
 					["sourceQuest"] = 25687,	-- Not Just Any Body (H)
 					["qg"] = 7506,	-- Bloodmage Lynnore
-					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
+					["coord"] = { 39.2, 36.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1042,7 +1042,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 41193 },	-- Loramus' Body
 								{ "i", 56032 },	-- Loramus' Body
 							},
-							["coord"] = { 37.0, 28.6, BLASTED_LANDS },
+							["coord"] = { 37.0, 28.6, MAP.BLASTED_LANDS },
 						}),
 						i(59428, {	-- Boots of Completed Rituals
 							["timeline"] = { ADDED_4_0_3 },
@@ -1065,12 +1065,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(26167, {	-- The Amulet of Allistarj [A]
 						["sourceQuest"] = 26160,	-- Blood Ritual
 						["qg"] = 42298,	-- Kasim Sharim
-						["coord"] = { 62.4, 25.9, BLASTED_LANDS },
+						["coord"] = { 62.4, 25.9, MAP.BLASTED_LANDS },
 					}),
 					["hordeQuestData"] = q(25697, {	-- The Amulet of Allistarj [H]
 						["sourceQuest"] = 25693,	-- Enhancing the Stone
 						["qg"] = 7783,	-- Loramus Thalipedes
-						["coord"] = { 39.3, 35.7, BLASTED_LANDS },
+						["coord"] = { 39.3, 35.7, MAP.BLASTED_LANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1079,14 +1079,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  10755 },	-- Amulet of Allistarj
 								{ "o", 203229 },	-- Allistarjian Vault
 							},
-							["coord"] = { 61.6, 26.9, BLASTED_LANDS },
+							["coord"] = { 61.6, 26.9, MAP.BLASTED_LANDS },
 						}),
 					},
 				},
 				q(26169, {	-- The Amulet of Grol (A)
 					["sourceQuest"] = 26160,	-- Blood Ritual
 					["qg"] = 42298,	-- Kasim Sharim
-					["coord"] = { 62.4, 25.9, BLASTED_LANDS },
+					["coord"] = { 62.4, 25.9, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1096,7 +1096,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203230 },	-- Head of Grol
 								{ "i",  56007 },	-- Broken Amulet
 							},
-							["coord"] = { 71.0, 35.4, BLASTED_LANDS },
+							["coord"] = { 71.0, 35.4, MAP.BLASTED_LANDS },
 							["cr"] = 41267,	-- Spirit of Grol
 						}),
 						i(59381, {	-- Ogre-Hunter Boots
@@ -1116,7 +1116,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25699, {	-- The Amulet of Grol (H)
 					["sourceQuest"] = 25693,	-- Enhancing the Stone
 					["qg"] = 7783,	-- Loramus Thalipedes
-					["coord"] = { 39.3, 35.7, BLASTED_LANDS },
+					["coord"] = { 39.3, 35.7, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1126,7 +1126,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203230 },	-- Head of Grol
 								{ "i",  56007 },	-- Broken Amulet
 							},
-							["coord"] = { 71.0, 35.4, BLASTED_LANDS },
+							["coord"] = { 71.0, 35.4, MAP.BLASTED_LANDS },
 							["cr"] = 41267,	-- Spirit of Grol
 						}),
 						i(59419, {	-- Ogre-Hunter Boots
@@ -1147,25 +1147,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(26168, {	-- The Amulet of Sevine [A]
 						["sourceQuest"] = 26160,	-- Blood Ritual
 						["qg"] = 42298,	-- Kasim Sharim
-						["coord"] = { 62.4, 25.9, BLASTED_LANDS },
+						["coord"] = { 62.4, 25.9, MAP.BLASTED_LANDS },
 					}),
 					["hordeQuestData"] = q(25698, {	-- The Amulet of Sevine [H]
 						["sourceQuest"] = 25693,	-- Enhancing the Stone
 						["qg"] = 7783,	-- Loramus Thalipedes
-						["coord"] = { 39.3, 35.7, BLASTED_LANDS },
+						["coord"] = { 39.3, 35.7, MAP.BLASTED_LANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Amulet of Sevine
 							["provider"] = { "i", 10754 },	-- Amulet of Sevine
-							["coord"] = { 73.0, 47.6, BLASTED_LANDS },
+							["coord"] = { 73.0, 47.6, MAP.BLASTED_LANDS },
 							["cr"] = 41265,	-- Salt-Flop <Rockpool Murloc>
 						}),
 					},
 				},
 				q(2601, {	-- The Basilisk's Bite
 					["qg"] = 7506,	-- Bloodmage Lynnore
-					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.3, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8394, 10 },	-- Basilisk Brain
@@ -1182,12 +1182,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(26164, {	-- The Charred Granite of the Dark Portal [A]
 						["sourceQuest"] = 26163,	-- Time Is Short
 						["qg"] = 42299,	-- Watcher Grimeo
-						["coord"] = { 55.1, 49.5, BLASTED_LANDS },
+						["coord"] = { 55.1, 49.5, MAP.BLASTED_LANDS },
 					}),
 					["hordeQuestData"] = q(25691, {	-- The Charred Granite of the Dark Portal [H]
 						["sourceQuest"] = 25689,	-- Time is Short
 						["qg"] = 41159,	-- Watcher Wazzik
-						["coord"] = { 54.3, 50.0, BLASTED_LANDS },
+						["coord"] = { 54.3, 50.0, MAP.BLASTED_LANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1197,20 +1197,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203224 },	-- Charred Granite Outcropping
 								{ "i",  56024 },	-- Portal-Sentry's Mining Pick
 							},
-							["coord"] = { 58.2, 46.4, BLASTED_LANDS },
+							["coord"] = { 58.2, 46.4, MAP.BLASTED_LANDS },
 						}),
 					},
 				},
 				q(2743, {	-- The Cover of Darkness
 					["sourceQuest"] = 2721,	-- Kirith
 					["qg"] = 7729,	-- Spirit of Kirith
-					["coord"] = { 68.4, 31.2, BLASTED_LANDS },
+					["coord"] = { 68.4, 31.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(2585, {	-- The Decisive Striker
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8393, 3 },	-- Scorpok Pincer
@@ -1227,7 +1227,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25717, {	-- The Demons and the Druid
 					["sourceQuest"] = 25696,	-- The Sunveil Excursion
 					["qg"] = 42344,	-- Rohan Sunveil
-					["coord"] = { 49.7, 71.4, BLASTED_LANDS },
+					["coord"] = { 49.7, 71.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1248,16 +1248,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2992, {	-- The Divination
 					["sourceQuest"] = 2991,	-- Nekrum's Medallion
 					["qg"] = 8022,	-- Thadius Grimshade
-					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
+					["coord"] = { 67.0, 19.4, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(26187, {	-- The Downfall of Marl Wormthorn (A)
 					["sourceQuest"] = 26186,	-- Demoniac Vessel (A)
 					["qg"] = 42349,	-- Mayor Charlton Connisport
-					["coord"] = { 46.33, 87.1, BLASTED_LANDS },
+					["coord"] = { 46.33, 87.1, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1266,7 +1266,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 42334 },	-- Marl Wormthorn
 								{ "i", 57185 },	-- Demoniac Vessel
 							},
-							["coord"] = { 34.9, 67.8, BLASTED_LANDS },
+							["coord"] = { 34.9, 67.8, MAP.BLASTED_LANDS },
 						}),
 						i(59400, {	-- Shoulderguards of Tarnished Healing
 							["timeline"] = { ADDED_4_0_3 },
@@ -1288,7 +1288,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25720, {	-- The Downfall of Marl Wormthorn (H)
 					["sourceQuest"] = 25719,	-- Demoniac Vessel (H)
 					["qg"] = 42344,	-- Rohan Sunveil
-					["coord"] = { 49.7, 71.4, BLASTED_LANDS },
+					["coord"] = { 49.7, 71.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1297,7 +1297,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 42334 },	-- Marl Wormthorn
 								{ "i", 57185 },	-- Demoniac Vessel
 							},
-							["coord"] = { 34.9, 67.8, BLASTED_LANDS },
+							["coord"] = { 34.9, 67.8, MAP.BLASTED_LANDS },
 						}),
 						i(59439, {	-- Pauldrons of the Trove
 							["timeline"] = { ADDED_4_0_3 },
@@ -1319,14 +1319,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25683, {	-- The Dreadmaul Furnace
 					["sourceQuest"] = 25682,	-- Mission Complete
 					["qg"] = 41124,	-- Okrilla
-					["coord"] = { 40.4, 11.6, BLASTED_LANDS },
+					["coord"] = { 40.4, 11.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26170, {	-- The Final Ritual
 					["sourceQuest"] = 26162,	-- The Altar of Storms
 					["qg"] = 42298,	-- Kasim Sharim
-					["coord"] = { 62.5, 26.2, BLASTED_LANDS },
+					["coord"] = { 62.5, 26.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1334,12 +1334,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(26159, {	-- The First Step [A]
 						["sourceQuest"] = 26158,	-- Attune the Bloodstone (A)
 						["qg"] = 42298,	-- Kasim Sharim
-						["coord"] = { 62.4, 25.8, BLASTED_LANDS },
+						["coord"] = { 62.4, 25.8, MAP.BLASTED_LANDS },
 					}),
 					["hordeQuestData"] = q(25685, {	-- The First Step [H]
 						["sourceQuest"] = 25684,	-- Attune the Bloodstone (H)
 						["qg"] = 7506,	-- Bloodmage Lynnore
-						["coord"] = { 39.2, 36.2, BLASTED_LANDS },
+						["coord"] = { 39.2, 36.2, MAP.BLASTED_LANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1356,12 +1356,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25707, {	-- The Future of the Rockpool
 					["sourceQuest"] = 25703,	-- Atrocities
 					["qg"] = 41402,	-- Abandoned Bloodwash Crate
-					["coord"] = { 61.4, 64.0, BLASTED_LANDS },
+					["coord"] = { 61.4, 64.0, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(7581, {	-- The Prison's Bindings
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARLOCK },
@@ -1374,9 +1374,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7582, {	-- The Prison's Casing
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
+					["maps"] = { MAP.WINTERSPRING },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["groups"] = {
@@ -1396,7 +1396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 19254 },	-- Warlord Dar'toon
 						{ "i", 57196 },	-- Reliquary Papers
 					},
-					["coord"] = { 54.4, 50.5, BLASTED_LANDS },
+					["coord"] = { 54.4, 50.5, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1405,12 +1405,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(26165, {	-- The Vile Blood of Demons [A]
 						["sourceQuest"] = 26163,	-- Time Is Short (A)
 						["qg"] = 42299,	-- Watcher Grimeo
-						["coord"] = { 55.1, 49.5, BLASTED_LANDS },
+						["coord"] = { 55.1, 49.5, MAP.BLASTED_LANDS },
 					}),
 					["hordeQuestData"] = q(25692, {	-- The Vile Blood of Demons [H]
 						["sourceQuest"] = 25689,	-- Time is Short (H)
 						["qg"] = 41159,	-- Watcher Wazzik
-						["coord"] = { 54.3, 50.0, BLASTED_LANDS },
+						["coord"] = { 54.3, 50.0, MAP.BLASTED_LANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1434,7 +1434,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42298 },	-- Kasim Sharim
 						{ "i", 56019 },	-- Discordant Rune
 					},
-					["coord"] = { 62.4, 25.9, BLASTED_LANDS },
+					["coord"] = { 62.4, 25.9, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1444,13 +1444,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 7783 },	-- Loramus Thalipedes
 						{ "i", 56019 },	-- Discordant Rune
 					},
-					["coord"] = { 39.3, 35.7, BLASTED_LANDS },
+					["coord"] = { 39.3, 35.7, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(2521, {	-- To Serve Kum'isha
 					["qg"] = 7363,	-- Kum'isha the Collector
-					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
+					["coord"] = { 51.8, 35.6, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
 					["lvl"] = 45,
@@ -1460,7 +1460,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2603, {	-- Vulture's Vigor
 					["qg"] = 7506,	-- Bloodmage Lynnore
-					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
+					["coord"] = { 50.6, 14.3, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8396, 10 },	-- Vulture Gizzard
@@ -1475,7 +1475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				warchiefscommand(q(28671, {	-- Warchief's Command: Blasted Lands!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { UNDERCITY },	-- Only found in Undercity in Cataclysm.
+					["maps"] = { MAP.UNDERCITY },	-- Only found in Undercity in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
@@ -1494,8 +1494,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						9540,	-- Enohar Thunderbrew
 					},
 					["coords"] = {
-						{ 60.0, 13.4, BLASTED_LANDS },
-						{ 61.4, 18.6, BLASTED_LANDS },
+						{ 60.0, 13.4, MAP.BLASTED_LANDS },
+						{ 61.4, 18.6, MAP.BLASTED_LANDS },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1503,13 +1503,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26174, {	-- Watching Our Back (A)
 					["sourceQuest"] = 26173,	-- Protecting Our Rear (A)
 					["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
-					["coord"] = { 54.6, 50.4, BLASTED_LANDS },
+					["coord"] = { 54.6, 50.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Examined the Horde Plans
 							["provider"] = { "o", 203225 },	-- Horde Plans
-							["coord"] = { 53.0, 49.0, BLASTED_LANDS },
+							["coord"] = { 53.0, 49.0, MAP.BLASTED_LANDS },
 						}),
 						i(59394, {	-- Gloves of Foolish Innocence
 							["timeline"] = { ADDED_4_0_3 },
@@ -1528,13 +1528,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25695, {	-- Watching Our Back (H)
 					["sourceQuest"] = 25694,	-- Protecting Our Rear (H)
 					["qg"] = 19254,	-- Warlord Dar'toon
-					["coord"] = { 54.4, 50.5, BLASTED_LANDS },
+					["coord"] = { 54.4, 50.5, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Examined the Alliance Plans
 							["provider"] = { "o", 203226 },	-- Alliance Plans
-							["coord"] = { 54.02, 50.16, BLASTED_LANDS },
+							["coord"] = { 54.02, 50.16, MAP.BLASTED_LANDS },
 						}),
 						i(59433, {	-- Dar'toon's Cloak
 							["timeline"] = { ADDED_4_0_3 },
@@ -1553,7 +1553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26184, {	-- Wormthorn's Dream
 					["sourceQuest"] = 26175,	-- Surwich
 					["qg"] = 42349,	-- Mayor Charlton Connisport
-					["coord"] = { 46.3, 87.1, BLASTED_LANDS },
+					["coord"] = { 46.3, 87.1, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1574,7 +1574,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3628, {	-- You Are Rakh'likh, Demon
 					["sourceQuest"] = 3627,	-- Uniting the Shattered Amulet
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  10757 },	-- Ward of the Defiler
 								{ "o", 153205 },	-- Altar of the Defiler
 							},
-							["coord"] = { 47.6, 30.0, BLASTED_LANDS },
+							["coord"] = { 47.6, 30.0, MAP.BLASTED_LANDS },
 							["cr"] = 7664,	-- Razelikh the Defiler
 						}),
 						i(10778, {	-- Necklace of Sanctuary
@@ -1601,20 +1601,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26171, {	-- You Are Rakh'likh, Demon (A)
 					["sourceQuest"] = 26170,	-- The Final Ritual
 					["qg"] = 7783,	-- Loramus Thalipedes
-					["coord"] = { 62.3, 26.0, BLASTED_LANDS },
+					["coord"] = { 62.3, 26.0, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Razelikh's body destroyed
 							["provider"] = { "n", 41280 },	-- Razelikh the Defiler
-							["coord"] = { 44.8, 26.6, BLASTED_LANDS },
+							["coord"] = { 44.8, 26.6, MAP.BLASTED_LANDS },
 						}),
 						objective(2, {	-- 0/1 Razelikh's soul imprisoned
 							["providers"] = {
 								{ "n", 41292 },	-- Loramus the Defiled
 								{ "i", 56012 },	-- Stone Knife of Sealing
 							},
-							["coord"] = { 44.8, 26.6, BLASTED_LANDS },
+							["coord"] = { 44.8, 26.6, MAP.BLASTED_LANDS },
 						}),
 						i(59398, {	-- Band of Noble Deeds
 							["timeline"] = { ADDED_4_0_3 },
@@ -1630,20 +1630,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25701, {	-- You Are Rakh'likh, Demon (H)
 					["sourceQuest"] = 25700,	-- Loramus Thalipedes Awaits
 					["qg"] = 7783,	-- Loramus Thalipedes
-					["coord"] = { 39.3, 35.7, BLASTED_LANDS },
+					["coord"] = { 39.3, 35.7, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Razelikh's body destroyed
 							["provider"] = { "n", 41280 },	-- Razelikh the Defiler
-							["coord"] = { 44.8, 26.6, BLASTED_LANDS },
+							["coord"] = { 44.8, 26.6, MAP.BLASTED_LANDS },
 						}),
 						objective(2, {	-- 0/1 Razelikh's soul imprisoned
 							["providers"] = {
 								{ "n", 41292 },	-- Loramus the Defiled
 								{ "i", 56012 },	-- Stone Knife of Sealing
 							},
-							["coord"] = { 44.8, 26.6, BLASTED_LANDS },
+							["coord"] = { 44.8, 26.6, MAP.BLASTED_LANDS },
 						}),
 						i(59436, {	-- Band of Noble Deeds
 							["timeline"] = { ADDED_4_0_3 },
@@ -1660,12 +1660,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(8298, {	-- Akubar the Seer
 					-- #if AFTER CATA
-					["coord"] = { 73.6, 55.6, BLASTED_LANDS },
+					["coord"] = { 73.6, 55.6, MAP.BLASTED_LANDS },
 					-- #else
 					["coords"] = {
-						{ 46.8, 49.8, BLASTED_LANDS },
-						{ 52.0, 52.4, BLASTED_LANDS },
-						{ 59.8, 46.4, BLASTED_LANDS },
+						{ 46.8, 49.8, MAP.BLASTED_LANDS },
+						{ 52.0, 52.4, MAP.BLASTED_LANDS },
+						{ 59.8, 46.4, MAP.BLASTED_LANDS },
 					},
 					["groups"] = {
 						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19260)),	-- Three of Warlords
@@ -1673,116 +1673,116 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(45260, {	-- Blackleaf
-					["coord"] = { 31.0, 70.6, BLASTED_LANDS },
+					["coord"] = { 31.0, 70.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45258, {	-- Cassia the Slitherqueen
-					["coord"] = { 60.6, 75.6, BLASTED_LANDS },
+					["coord"] = { 60.6, 75.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(8301, {	-- Clack the Reaver
 					-- #if AFTER CATA
-					["coord"] = { 47.6, 14.6, BLASTED_LANDS },
+					["coord"] = { 47.6, 14.6, MAP.BLASTED_LANDS },
 					-- #else
 					["coords"] = {
-						{ 51.0, 24.8, BLASTED_LANDS },
-						{ 47.0, 40.2, BLASTED_LANDS },
-						{ 53.4, 39.4, BLASTED_LANDS },
-						{ 61.6, 35.8, BLASTED_LANDS },
+						{ 51.0, 24.8, MAP.BLASTED_LANDS },
+						{ 47.0, 40.2, MAP.BLASTED_LANDS },
+						{ 53.4, 39.4, MAP.BLASTED_LANDS },
+						{ 61.6, 35.8, MAP.BLASTED_LANDS },
 					},
 					-- #endif
 				}),
 				n(8302, {	-- Deatheye
 					-- #if AFTER CATA
-					["coord"] = { 53.2, 26.8, BLASTED_LANDS },
+					["coord"] = { 53.2, 26.8, MAP.BLASTED_LANDS },
 					-- #else
 					["coords"] = {
-						{ 47.8, 19.6, BLASTED_LANDS },
-						{ 45.4, 26.4, BLASTED_LANDS },
+						{ 47.8, 19.6, MAP.BLASTED_LANDS },
+						{ 45.4, 26.4, MAP.BLASTED_LANDS },
 					},
 					-- #endif
 				}),
 				n(8304, {	-- Dreadscorn
 					-- #if AFTER CATA
-					["coord"] = { 37.0, 29.6, BLASTED_LANDS },
+					["coord"] = { 37.0, 29.6, MAP.BLASTED_LANDS },
 					-- #else
 					["coords"] = {
-						{ 40.0, 34.4, BLASTED_LANDS },
-						{ 44.8, 39.2, BLASTED_LANDS },
-						{ 42.6, 43.0, BLASTED_LANDS },
+						{ 40.0, 34.4, MAP.BLASTED_LANDS },
+						{ 44.8, 39.2, MAP.BLASTED_LANDS },
+						{ 42.6, 43.0, MAP.BLASTED_LANDS },
 					},
 					-- #endif
 				}),
 				n(8303, {	-- Grunter
 					-- #if AFTER CATA
-					["coord"] = { 55.2, 38.4, BLASTED_LANDS },
+					["coord"] = { 55.2, 38.4, MAP.BLASTED_LANDS },
 					-- #else
 					["coords"] = {
-						{ 56.2, 31.4, BLASTED_LANDS },
-						{ 61.6, 27.4, BLASTED_LANDS },
+						{ 56.2, 31.4, MAP.BLASTED_LANDS },
+						{ 61.6, 27.4, MAP.BLASTED_LANDS },
 					},
 					-- #endif
 				}),
 				n(8297, {	-- Magronos the Unyielding
 					-- #if AFTER CATA
-					["coord"] = { 46.6, 39.2, BLASTED_LANDS },
+					["coord"] = { 46.6, 39.2, MAP.BLASTED_LANDS },
 					-- #else
 					["coords"] = {
-						{ 44.6, 43.8, BLASTED_LANDS },
-						{ 49.6, 39.6, BLASTED_LANDS },
+						{ 44.6, 43.8, MAP.BLASTED_LANDS },
+						{ 49.6, 39.6, MAP.BLASTED_LANDS },
 					},
 					-- #endif
 				}),
 				n(8296, {	-- Mojo the Twisted
 					-- #if AFTER CATA
-					["coord"] = { 46.4, 26.2, BLASTED_LANDS },
+					["coord"] = { 46.4, 26.2, MAP.BLASTED_LANDS },
 					-- #else
 					["coords"] = {
-						{ 41.8, 11.4, BLASTED_LANDS },
-						{ 45.2, 17.2, BLASTED_LANDS },
+						{ 41.8, 11.4, MAP.BLASTED_LANDS },
+						{ 45.2, 17.2, MAP.BLASTED_LANDS },
 					},
 					-- #endif
 				}),
 				n(45257, {	-- Mordak Nightbender
-					["coord"] = { 60.6, 29.8, BLASTED_LANDS },
+					["coord"] = { 60.6, 29.8, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45262, {	-- Narixxus the Doombringer
-					["coord"] = { 32.4, 44.4, BLASTED_LANDS },
+					["coord"] = { 32.4, 44.4, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(8300, {	-- Ravage
 					-- #if AFTER CATA
-					["coord"] = { 49.8, 35.0, BLASTED_LANDS },
+					["coord"] = { 49.8, 35.0, MAP.BLASTED_LANDS },
 					-- #else
 					["coords"] = {
-						{ 48.8, 35.8, BLASTED_LANDS },
-						{ 59.8, 35.4, BLASTED_LANDS },
+						{ 48.8, 35.8, MAP.BLASTED_LANDS },
+						{ 59.8, 35.4, MAP.BLASTED_LANDS },
 					},
 					-- #endif
 				}),
 				n(8299, {	-- Spiteflayer
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 63.4, 33.0, BLASTED_LANDS },
-						{ 60.0, 34.2, BLASTED_LANDS },
-						{ 59.0, 38.2, BLASTED_LANDS },
-						{ 61.4, 40.6, BLASTED_LANDS },
-						{ 64.4, 38.0, BLASTED_LANDS },
+						{ 63.4, 33.0, MAP.BLASTED_LANDS },
+						{ 60.0, 34.2, MAP.BLASTED_LANDS },
+						{ 59.0, 38.2, MAP.BLASTED_LANDS },
+						{ 61.4, 40.6, MAP.BLASTED_LANDS },
+						{ 64.4, 38.0, MAP.BLASTED_LANDS },
 						-- #else
-						{ 60.8, 35.2, BLASTED_LANDS },
-						{ 59.2, 40.6, BLASTED_LANDS },
-						{ 60.0, 46.8, BLASTED_LANDS },
+						{ 60.8, 35.2, MAP.BLASTED_LANDS },
+						{ 59.2, 40.6, MAP.BLASTED_LANDS },
+						{ 60.0, 46.8, MAP.BLASTED_LANDS },
 						-- #endif
 					},
 				}),
 				n(7846, {	-- Teremus the Devourer
 					-- #if AFTER CATA
 					["coords"] = {
-						{ 56.8, 46.0, BLASTED_LANDS },
-						{ 52.2, 46.0, BLASTED_LANDS },
-						{ 51.6, 52.0, BLASTED_LANDS },
-						{ 56.6, 53.2, BLASTED_LANDS },
+						{ 56.8, 46.0, MAP.BLASTED_LANDS },
+						{ 52.2, 46.0, MAP.BLASTED_LANDS },
+						{ 51.6, 52.0, MAP.BLASTED_LANDS },
+						{ 56.6, 53.2, MAP.BLASTED_LANDS },
 					},
 					-- #else
 					["description"] = "Patrols all over the zone. You may even find him in Stormwind thanks to clever kiting by a Hunter.",
@@ -1808,7 +1808,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 10.2.5
 			n(TREASURES, {
 				o(421154, {	-- Carved Eye
-					["coord"] = { 55.7, 53.6, BLASTED_LANDS },
+					["coord"] = { 55.7, 53.6, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_10_2_5 },
 					["groups"] = {
 						i(212983),	-- Grimoire of the Blasted Observer (CI!)
@@ -1820,7 +1820,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_FOUR, i(226417, {	-- Rune of Shadow Specialization
 					["provider"] = { "o", 457089 },	-- The Shadow Connection
-					["coord"] = { 33.6, 48.7, BLASTED_LANDS },
+					["coord"] = { 33.6, 48.7, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PRIEST, WARLOCK },
 					["groups"] = {
@@ -1836,9 +1836,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3546, {	-- Bernie Heisten <Food & Drink>
 					["coords"] = {
 						-- #if BEFORE CATA
-						{ 63.5, 17.0, BLASTED_LANDS },
+						{ 63.5, 17.0, MAP.BLASTED_LANDS },
 						-- #else
-						{ 59.4, 14.9, BLASTED_LANDS },
+						{ 59.4, 14.9, MAP.BLASTED_LANDS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1863,9 +1863,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 62.4, 16.0, BLASTED_LANDS },
+						{ 62.4, 16.0, MAP.BLASTED_LANDS },
 						-- #else
-						{ 66.8, 18.6, BLASTED_LANDS },
+						{ 66.8, 18.6, MAP.BLASTED_LANDS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1876,7 +1876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(44321, {	-- Sarah Lightbrew <Enchanting Supplies>
-					["coord"] = { 62.4, 16.2, BLASTED_LANDS },
+					["coord"] = { 62.4, 16.2, MAP.BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -1919,7 +1919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(PHASE_FIVE, i(21104, {	-- Draconic for Dummies [Chapter II]
 					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
-					["coord"] = { 44.6, 56.0, BLASTED_LANDS },
+					["coord"] = { 44.6, 56.0, MAP.BLASTED_LANDS },
 					["crs"] = {
 						12396,	-- Doomguard Commander
 						8716,	-- Dreadlord

@@ -78,10 +78,10 @@ ExportDB.OnTooltipDB.ForTimbermawHold = [[~function(t, tooltipInfo)
 	end
 end]];
 
-root(ROOTS.Zones, m(KALIMDOR, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
 	n(TIMBERMAW_HOLD, {
 		["zone-text-areaID"] = 1769,
-		["maps"] = { FELWOOD, WINTERSPRING },
+		["maps"] = { MAP.FELWOOD, MAP.WINTERSPRING },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(944, FACTION_TIMBERMAW_HOLD),	-- They Love Me In That Tunnel
@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8469, {	-- Beads for Salfa
 					["sourceQuest"] = 8464,	-- Winterfall Activity
 					["qg"] = 11556,	-- Salfa
-					["coord"] = { 27.8, 34.6, WINTERSPRING },
+					["coord"] = { 27.8, 34.6, MAP.WINTERSPRING },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28373,	-- Timbermaw Hold
 					},
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.0, 10.3, FELWOOD },
+					["coord"] = { 64.0, 10.3, MAP.FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Deadwood Furbolg slain
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(8461, {	-- Deadwood of the North
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.8, 8.2, FELWOOD },
+					["coord"] = { 64.8, 8.2, MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28524, {	-- Delivery for Donova
 					["qg"] = 11556,	-- Salfa
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
+					["coord"] = { 21.0, 46.1, MAP.WINTERSPRING },
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold, Neutral.
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28366, {	-- Disarming Bears
 					["sourceQuest"] = 28392,	-- The Timbermaw Tribe
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.0, 10.3, FELWOOD },
+					["coord"] = { 64.0, 10.3, MAP.FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Deadwood Weapons
@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8466, {	-- Feathers for Grazle
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["qg"] = 11554,	-- Grazle
-					["coord"] = { 50.9, 85.0, FELWOOD },
+					["coord"] = { 50.9, 85.0, MAP.FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28366,	-- Disarming Bears
 					},
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.0, 10.3, FELWOOD },
+					["coord"] = { 64.0, 10.3, MAP.FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_FOUR, q(84777, {	-- Feathers for Nafien
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.8, 8.2, FELWOOD },
+					["coord"] = { 64.8, 8.2, MAP.FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_1_15_3 },
 					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8467, {	-- Feathers for Nafien
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.8, 8.2, FELWOOD },
+					["coord"] = { 64.8, 8.2, MAP.FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28523, {	-- More Beads for Salfa
 					["sourceQuest"] = 28522,	-- Winterfall Activity
 					["qg"] = 11556,	-- Salfa
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
+					["coord"] = { 21.0, 46.1, MAP.WINTERSPRING },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
@@ -240,9 +240,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11557,	-- Meilosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.8, 5.2, FELWOOD },
+						{ 64.8, 5.2, MAP.FELWOOD },
 						-- #else
-						{ 65.6, 2.8, FELWOOD },
+						{ 65.6, 2.8, MAP.FELWOOD },
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
@@ -257,9 +257,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11557,	-- Meilosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.8, 5.2, FELWOOD },
+						{ 64.8, 5.2, MAP.FELWOOD },
 						-- #else
-						{ 65.6, 2.8, FELWOOD },
+						{ 65.6, 2.8, MAP.FELWOOD },
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
@@ -273,7 +273,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8462, {	-- Speak to Nafien
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["qg"] = 11554,	-- Grazle
-					["coord"] = { 50.9, 85.0, FELWOOD },
+					["coord"] = { 50.9, 85.0, MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
@@ -284,28 +284,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28364,	-- The Chieftain's Key
 					},
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.0, 10.4, FELWOOD },
+					["coord"] = { 64.0, 10.4, MAP.FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(8465, {	-- Speak to Salfa
 					["sourceQuest"] = 8461,	-- Deadwood of the North
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.8, 8.2, FELWOOD },
+					["coord"] = { 64.8, 8.2, MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(28362, {	-- Stupid Drizle!
 					["qg"] = 48461,	-- Ferli
-					["coord"] = { 64.1, 10.3, FELWOOD },
+					["coord"] = { 64.1, 10.3, MAP.FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				{	-- The Brokering of Peace
 					["allianceQuestData"] = q(8484, {	-- The Brokering of Peace (A)
-						["maps"] = { IRONFORGE },
+						["maps"] = { MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8485, {	-- The Brokering of Peace (H)
-						["maps"] = { ORGRIMMAR },
+						["maps"] = { MAP.ORGRIMMAR },
 					}),
 					["providers"] = {
 						{ "n", 11555 },	-- Gorn One Eye
@@ -313,9 +313,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.4, 5.1, FELWOOD },
+						{ 64.4, 5.1, MAP.FELWOOD },
 						-- #else
-						{ 65.2, 2.6, FELWOOD },
+						{ 65.2, 2.6, MAP.FELWOOD },
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28364, {	-- The Chieftain's Key
 					["sourceQuest"] = 28362,	-- Stupid Drizle!
 					["qg"] = 47556,	-- Drizle
-					["coord"] = { 60.5, 9.5, FELWOOD },
+					["coord"] = { 60.5, 9.5, MAP.FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Drizle's Key
@@ -347,18 +347,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11555,	-- Gorn One Eye
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.4, 5.1, FELWOOD },
+						{ 64.4, 5.1, MAP.FELWOOD },
 						-- #else
-						{ 65.2, 2.6, FELWOOD },
+						{ 65.2, 2.6, MAP.FELWOOD },
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["maps"] = { WINTERSPRING },
+					["maps"] = { MAP.WINTERSPRING },
 					["lvl"] = lvlsquish(45, 45, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Essence of Xandivious
 							["provider"] = { "i", 21145 },	-- Essence of Xandivious
-							["coord"] = { 68.0, 37.6, WINTERSPRING },
+							["coord"] = { 68.0, 37.6, MAP.WINTERSPRING },
 							["cost"] = { { "i", 21144, 1 } },	-- Demon Summoning Torch
 							["cr"] = 15623,	-- Xandivious
 						}),
@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8460, {	-- Timbermaw Ally
 					["altQuests"] = { 6131 },	-- Timbermaw Ally (old version, deprecated)
 					["qg"] = 11554,	-- Grazle
-					["coord"] = { 50.9, 85.0, FELWOOD },
+					["coord"] = { 50.9, 85.0, MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28373, {	-- Timbermaw Hold
 					["sourceQuest"] = 28368,	-- Fire in the Hole!
 					["qg"] = 48127,	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, FELWOOD },
+					["coord"] = { 56.3, 8.1, MAP.FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -400,7 +400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28522, {	-- Winterfall Activity
 					["sourceQuest"] = 28521,	-- Speak to Salfa
 					["qg"] = 11556,	-- Salfa
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
+					["coord"] = { 21.0, 46.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = { { "i", 21383, 10 } },	-- Winterfall Spirit Beads
 					["groups"] = {
@@ -412,7 +412,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(8464, {	-- Winterfall Activity
 					["qg"] = 11556,	-- Salfa
-					["coord"] = { 27.8, 34.6, WINTERSPRING },
+					["coord"] = { 27.8, 34.6, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -450,7 +450,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Only available above level 40.",
 					-- ["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
 					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.0, 10.4, FELWOOD },
+					["coord"] = { 64.0, 10.4, MAP.FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
@@ -459,9 +459,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(11555, {	-- Gorn One Eye
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.4, 5.1, FELWOOD },
+						{ 64.4, 5.1, MAP.FELWOOD },
 						-- #else
-						{ 65.2, 2.6, FELWOOD },
+						{ 65.2, 2.6, MAP.FELWOOD },
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, HONORED },	-- Timbermaw Hold, Honored.
@@ -473,9 +473,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(11557, {	-- Meilosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.8, 5.2, FELWOOD },
+						{ 64.8, 5.2, MAP.FELWOOD },
 						-- #else
-						{ 65.6, 2.8, FELWOOD },
+						{ 65.6, 2.8, MAP.FELWOOD },
 						-- #endif
 					},
 					["groups"] = bubbleDownClassicRep(FACTION_TIMBERMAW_HOLD, {

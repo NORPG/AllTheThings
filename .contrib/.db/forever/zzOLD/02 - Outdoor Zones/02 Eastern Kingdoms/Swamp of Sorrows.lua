@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(SWAMP_OF_SORROWS, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.SWAMP_OF_SORROWS, {
 		["lore"] = "The Swamp of Sorrows is a marshland in southern Eastern Kingdoms filled with green dragons serving Ysera. When the Dark Portal imploded during the Second War, The Black Morass was split in half--the northern part became the Swamp, while the southern half became the barren Blasted Lands.",
 		["icon"] = 236845,
 		["groups"] = {
@@ -70,12 +70,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(599, {	-- Bogpaddle, Swamp of Sorrows
 					["cr"] = 43086,	-- Skeezie <Gryphon Master>
-					["coord"] = { 72.0, 12.0, SWAMP_OF_SORROWS },
+					["coord"] = { 72.0, 12.0, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				fp(598, {	-- Marshtide Watch, Swamp of Sorrows
 					["cr"] = 43087,	-- Paola Baldwin <Gryphon Master>
-					["coord"] = { 70.0, 38.4, SWAMP_OF_SORROWS },
+					["coord"] = { 70.0, 38.4, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -83,16 +83,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 6026,	-- Breyk <Wind Rider Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.6, 55.0, SWAMP_OF_SORROWS },
+						{ 47.6, 55.0, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 46.0, 54.6, SWAMP_OF_SORROWS },
+						{ 46.0, 54.6, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(600, {	-- The Harborage, Swamp of Sorrows
 					["cr"] = 43088,	-- Yedrin <Flight Master>
-					["coord"] = { 30.6, 34.6, SWAMP_OF_SORROWS },
+					["coord"] = { 30.6, 34.6, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -101,9 +101,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			lockpicking({
 				o(179493, {	-- Mossy Footlocker
 					["coords"] = {
-						{ 69.1, 44.6, SWAMP_OF_SORROWS },
-						{ 65.2, 55.8, SWAMP_OF_SORROWS },
-						{ 74.0, 60.4, SWAMP_OF_SORROWS },
+						{ 69.1, 44.6, MAP.SWAMP_OF_SORROWS },
+						{ 65.2, 55.8, MAP.SWAMP_OF_SORROWS },
+						{ 74.0, 60.4, MAP.SWAMP_OF_SORROWS },
 					},
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 175,
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			petbattles({
 				n(66518, {	-- Everessa <Master Pet Tamer>
-					["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
+					["coord"] = { 76.6, 41.6, MAP.SWAMP_OF_SORROWS },
 					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 16,
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(1386, {	-- Rogvar <Alchemy Trainer>
-						["coord"] = { 49.8, 56.0, SWAMP_OF_SORROWS },
+						["coord"] = { 49.8, 56.0, MAP.SWAMP_OF_SORROWS },
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE 2.1.0
 						["groups"] = EXPERT_ARTISAN_ALCHEMY,
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				prof(SKINNING, {
 					i(7392, {	-- Green Whelp Scale
-						["coord"] = { 15.0, 59.0, SWAMP_OF_SORROWS },
+						["coord"] = { 15.0, 59.0, MAP.SWAMP_OF_SORROWS },
 						["crs"] = {
 							740,	-- Adolescent Whelp
 							741,	-- Dreaming Whelp
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 2623,	-- The Swamp Talker (H)
 					},
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
@@ -172,9 +172,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["coords"] = {
-							{ 58.6, 35.6, DARNASSUS },
-							{ 70.6, 90.6, IRONFORGE },
-							{ 78.8, 45.6, STORMWIND_CITY },
+							{ 58.6, 35.6, MAP.DARNASSUS },
+							{ 70.6, 90.6, MAP.IRONFORGE },
+							{ 78.8, 45.6, MAP.STORMWIND_CITY },
 							-- #if AFTER TBC
 							{ 55.6, 82.3, THE_EXODAR },
 							-- #endif
@@ -187,9 +187,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							4593,	-- Christoph Walker <Warrior Trainer> (Undercity)
 						},
 						["coords"] = {
-							{ 80.2, 32.4, ORGRIMMAR },
-							{ 57.6, 87.2, THUNDER_BLUFF },
-							{ 47.8, 14.8, UNDERCITY },
+							{ 80.2, 32.4, MAP.ORGRIMMAR },
+							{ 57.6, 87.2, MAP.THUNDER_BLUFF },
+							{ 47.8, 14.8, MAP.UNDERCITY },
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27795,	-- Tides of Darkness (A)
 					},
 					["qg"] = 46676,	-- Joanna Blueheart
-					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
+					["coord"] = { 68.2, 36.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -231,13 +231,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27740, {	-- Baba Bogbrew
 					["sourceQuest"] = 27600,	-- In With a Bang
 					["qg"] = 45948,	-- Crazy Larry
-					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
+					["coord"] = { 84.0, 40.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27914, {	-- Blessing of the Green Dragonflight
 					["sourceQuest"] = 27773,	-- Step Three: Prophet
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27876,	-- Secrets of the Mire (A)
 					},
 					["qg"] = 17127,	-- Anchorite Avuun
-					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
+					["coord"] = { 26.8, 33.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27599, {	-- Can't Take It With Them
 					["sourceQuest"] = 27597,	-- Crazy Larry
 					["qg"] = 45948,	-- Crazy Larry
-					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
+					["coord"] = { 84.0, 40.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Steamwheedle Ditty Bag
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1428, {	-- Continued Threat
 					["sourceQuest"] = 1427,	-- Threat From the Sea
 					["qg"] = 5593,	-- Katar
-					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
+					["coord"] = { 83.8, 80.4, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -317,13 +317,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27656,	-- Croc-Out
 					},
 					["qg"] = 45786,	-- Trade Baron Silversnap
-					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
+					["coord"] = { 73.1, 14.9, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27656, {	-- Croc-Out
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 					["qg"] = 45786,	-- Trade Baron Silversnap
-					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
+					["coord"] = { 73.1, 14.9, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Sawtooth Crocolisk slain
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27795,	-- Tides of Darkness (A)
 					},
 					["qg"] = 46676,	-- Joanna Blueheart
-					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
+					["coord"] = { 68.2, 36.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -347,7 +347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  62516 },	-- Stonard Supplies
 								{ "o", 206391 },	-- Stonard Supplies
 							},
-							["coord"] = { 48.5, 55.6, SWAMP_OF_SORROWS },
+							["coord"] = { 48.5, 55.6, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
@@ -357,15 +357,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5476 },	-- Watcher Biggs
 						{ "i", 6178 },	-- Shipment to Nethergarde
 					},
-					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["coord"] = { 26.8, 59.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { MAP.BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(1389, {	-- Draenethyst Crystals
 					["qg"] = 1776,	-- Magtoor
-					["coord"] = { 26.0, 31.4, SWAMP_OF_SORROWS },
+					["coord"] = { 26.0, 31.4, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -374,13 +374,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 6071 },	-- Draenethyst Crystal
 								{ "o", 22550 },	-- Draenethyst Crystals
 							},
-							["coord"] = { 62.2, 23.5, SWAMP_OF_SORROWS },
+							["coord"] = { 62.2, 23.5, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
 				q(27840, {	-- Draenethyst Crystals
 					["qg"] = 18221,	-- Holaaru
-					["coord"] = { 69.8, 36.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.8, 36.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -389,14 +389,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 6071 },	-- Draenethyst Crystal
 								{ "o", 22550 },	-- Draenethyst Crystals
 							},
-							["coord"] = { 60.6, 25.7, SWAMP_OF_SORROWS },
+							["coord"] = { 60.6, 25.7, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
 				q(1398, {	-- Driftwood
 					["sourceQuest"] = 1421,	-- The Lost Caravan
 					["qg"] = 5476,	-- Watcher Biggs
-					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["coord"] = { 26.8, 59.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -406,13 +406,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 6146 },	-- Sundried Driftwood
 								{ "o", 24798 },	-- Sundried Driftwood
 							},
-							["coord"] = { 93.4, 66.1, SWAMP_OF_SORROWS },
+							["coord"] = { 93.4, 66.1, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
 				q(27592, {	-- Drinks on the Rocks
 					["qg"] = 46010,	-- Brono Goodgroove
-					["coord"] = { 73.6, 9.1, SWAMP_OF_SORROWS },
+					["coord"] = { 73.6, 9.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Stolen Silversnap Ice
@@ -444,7 +444,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 9609,	-- Help Watcher Biggs
 					-- #endif
 					["qg"] = 5476,	-- Watcher Biggs
-					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["coord"] = { 26.8, 59.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -462,14 +462,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2784, {	-- Fall From Grace
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
 				q(1430, {	-- Fresh Meat
 					["qg"] = 5591,	-- Dar
-					["coord"] = { 44.8, 57.2, SWAMP_OF_SORROWS },
+					["coord"] = { 44.8, 57.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -492,8 +492,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 32569 },	-- Galen's Strongbox
 					},
 					["coords"] = {
-						{ 65.4, 18.1, SWAMP_OF_SORROWS },
-						{ 47.9, 39.8, SWAMP_OF_SORROWS },
+						{ 65.4, 18.1, MAP.SWAMP_OF_SORROWS },
+						{ 47.9, 39.8, MAP.SWAMP_OF_SORROWS },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -505,7 +505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9609, {	-- Help Watcher Biggs
 					["qg"] = 17127,	-- Anchorite Avuun
-					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
+					["coord"] = { 25.8, 31.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -513,7 +513,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				heroscall(q(28675, {	-- Hero's Call: Swamp of Sorrows!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 51. (TODO: Confirm this.)
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2702, {	-- Heroes of Old (1/2)
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
@@ -534,7 +534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   7750 },	-- Corporal Thund Splithoof
 						{ "o", 141980 },	-- Spectral Lockbox
 					},
-					["coord"] = { 33.5, 66.0, SWAMP_OF_SORROWS },
+					["coord"] = { 33.5, 66.0, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27599,	-- Can't Take It With Them
 					},
 					["qg"] = 45948,	-- Crazy Larry
-					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
+					["coord"] = { 84.0, 40.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Thousand-Thread-Count Fuse
@@ -557,21 +557,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  61921 },	-- Thousand-Thread-Count Fuse
 								{ "o", 205826 },	-- Thousand-Thread-Count Fuse
 							},
-							["coord"] = { 55.7, 77.8, SWAMP_OF_SORROWS },
+							["coord"] = { 55.7, 77.8, MAP.SWAMP_OF_SORROWS },
 						}),
 						objective(2, {	-- 0/1 Extra-Pure Blasting Powder
 							["providers"] = {
 								{ "i",  61922 },	-- Extra-Pure Blasting Powder
 								{ "o", 205827 },	-- Extra-Pure Blasting Powder
 							},
-							["coord"] = { 55.8, 78.0, SWAMP_OF_SORROWS },
+							["coord"] = { 55.8, 78.0, MAP.SWAMP_OF_SORROWS },
 						}),
 						objective(3, {	-- 0/1 Stack of Questionable Publications
 							["providers"] = {
 								{ "i",  61373 },	-- Stack of Questionable Publications
 								{ "o", 205828 },	-- Stack of Questionable Publications
 							},
-							["coord"] = { 55.8, 78.0, SWAMP_OF_SORROWS },
+							["coord"] = { 55.8, 78.0, MAP.SWAMP_OF_SORROWS },
 						}),
 						i(64591, {	-- Almost New Shoulderpads
 							["timeline"] = { ADDED_4_0_3 },
@@ -590,7 +590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27598, {	-- Kill Gil
 					["sourceQuest"] = 27597,	-- Crazy Larry
 					["qg"] = 45948,	-- Crazy Larry
-					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
+					["coord"] = { 84.0, 40.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Gilblin Stalker slain
@@ -601,14 +601,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2721, {	-- Kirith
 					["sourceQuest"] = 2701,	-- Heroes of Old (2/2)
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { MAP.BLASTED_LANDS },
 					["lvl"] = 45,
 				}),
 				q(698, {	-- Lack of Surplus (1/2)
 					["qg"] = 5591,	-- Dar
-					["coord"] = { 44.8, 57.2, SWAMP_OF_SORROWS },
+					["coord"] = { 44.8, 57.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -625,7 +625,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(699, {	-- Lack of Surplus (2/2)
 					["sourceQuest"] = 698,	-- Lack of Surplus (1/2)
 					["qg"] = 5592,	-- Tok'Kar
-					["coord"] = { 81.4, 80.8, SWAMP_OF_SORROWS },
+					["coord"] = { 81.4, 80.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27908,	-- Secrets of the Mire (H)
 					},
 					["qg"] = 47041,	-- Neeka Bloodscar
-					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
+					["coord"] = { 21.2, 51.7, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -655,37 +655,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27704, {	-- Legends of the Sunken Temple
 					["sourceQuest"] = 27694,	-- Pool of Tears
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 				}),
 				q(9440, {	-- Little Morsels
 					["qg"] = 17109,	-- Cersei Dusksinger
-					["coord"] = { 47.8, 54.9, DUSTWALLOW_MARSH },
+					["coord"] = { 47.8, 54.9, MAP.DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- Captured Crocolisk Fed
 							["provider"] = { "i", 23659 },	-- Fel-Tainted Morsels
-							["coord"] = { 60.6, 22.4, DUSTWALLOW_MARSH },
+							["coord"] = { 60.6, 22.4, MAP.DUSTWALLOW_MARSH },
 							["cr"] = 17113,	-- Captured Crocolisk
 						}),
 						objective(2, {	-- Captured Jaguar Fed
 							["provider"] = { "i", 23659 },	-- Fel-Tainted Morsels
-							["coord"] = { 65.4, 23.0, DUSTWALLOW_MARSH },
+							["coord"] = { 65.4, 23.0, MAP.DUSTWALLOW_MARSH },
 							["cr"] = 17111,	-- Captured Jaguar
 						}),
 						objective(3, {	-- Captured Tarantula Fed
 							["provider"] = { "i", 23659 },	-- Fel-Tainted Morsels
-							["coord"] = { 62.4, 23.4, DUSTWALLOW_MARSH },
+							["coord"] = { 62.4, 23.4, MAP.DUSTWALLOW_MARSH },
 							["cr"] = 17112,	-- Captured Tarantula
 						}),
 					},
 				}),
 				q(27822, {	-- Lumbering Oafs (A)
 					["qg"] = 46676,	-- Joanna Blueheart
-					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
+					["coord"] = { 68.2, 36.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -705,7 +705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27853, {	-- Lumbering Oafs (H)
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
+					["coord"] = { 49.3, 55.3, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -734,7 +734,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 45786 },	-- Trade Baron Silversnap
 						{ "i", 62795 },	-- Silversnap Swim Tonic
 					},
-					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
+					["coord"] = { 73.1, 14.9, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Intact Swampshore Tail
@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27822,	-- Lumbering Oafs (A)
 					},
 					["qg"] = 46676,	-- Joanna Blueheart
-					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
+					["coord"] = { 68.1, 36.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -767,7 +767,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27852,	-- Orcs and Humans (H)
 					},
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
+					["coord"] = { 49.3, 55.3, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -781,7 +781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27691, {	-- Marshfin Madness
 					["qg"] = 46172,	-- Baba Bogbrew
-					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.0, 76.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/12 Marshfin Murkdweller slain
@@ -791,7 +791,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9448, {	-- Mercy for the Cursed
 					["qg"] = 17127,	-- Anchorite Avuun
-					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
+					["coord"] = { 25.8, 31.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -804,7 +804,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27536, {	-- Mostly Harmless
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 					["qg"] = 45786,	-- Trade Baron Silversnap
-					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
+					["coord"] = { 73.1, 14.9, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Disarmed Land Mine
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  61349 },	-- Disarmed Land Mine
 								{ "o", 205545 },	-- Stray Land Mine
 							},
-							["coord"] = { 78.6, 22.5, SWAMP_OF_SORROWS },
+							["coord"] = { 78.6, 22.5, MAP.SWAMP_OF_SORROWS },
 						}),
 						i(64589, {	-- Bogpaddle Leggings
 							["timeline"] = { ADDED_4_0_3 },
@@ -827,7 +827,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1418, {	-- Neeka Bloodscar
 					["qg"] = 1442,	-- Helgrum the Swift
-					["coord"] = { 47.7, 55.2, DUSTWALLOW_MARSH },
+					["coord"] = { 47.7, 55.2, MAP.DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -836,7 +836,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27906, {	-- Neeka Bloodscar
 					["sourceQuest"] = 27857,	-- We're Under Attack!
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
+					["coord"] = { 49.3, 55.3, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -851,7 +851,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27916,	-- Ruag's Report
 					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
+					["coord"] = { 49.3, 55.3, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -859,7 +859,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27919, {	-- Onward to the Blasted Lands
 					-- ["sourceQuest"] = 24913,	-- Remember the Light
 					["qg"] = 17127,	-- Anchorite Avuun
-					["coord"] = { 26.9, 33.6, SWAMP_OF_SORROWS },
+					["coord"] = { 26.9, 33.6, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -867,7 +867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27821, {	-- Orcs and Humans (A)
 					["sourceQuest"] = 27870,	-- To Marshtide Watch
 					["qg"] = 46676,	-- Joanna Blueheart
-					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
+					["coord"] = { 68.2, 36.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -879,7 +879,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27852, {	-- Orcs and Humans (H)
 					["sourceQuest"] = 27871,	-- To Stonard
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
+					["coord"] = { 49.3, 55.3, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -892,12 +892,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				{	-- Pool of Tears
 					["allianceQuestData"] = q(9610, {	-- Pool of Tears (A)
 						["qg"] = 18221,	-- Holaaru
-						["coord"] = { 25.9, 32.4, SWAMP_OF_SORROWS },
+						["coord"] = { 25.9, 32.4, MAP.SWAMP_OF_SORROWS },
 						["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					}),
 					["hordeQuestData"] = q(1424, {	-- Pool of Tears (H)
 						["qg"] = 1443,	-- Fel'zerul
-						["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
+						["coord"] = { 64.2, 20.8, MAP.SWAMP_OF_SORROWS },
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					["lvl"] = 38,
@@ -909,14 +909,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 30855 },	-- Atal'ai Artifact
 								{ "o", 30856 },	-- Atal'ai Artifact
 							},
-							["coord"] = { 65.5, 55.5, SWAMP_OF_SORROWS },
+							["coord"] = { 65.5, 55.5, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				},
 				-- #else
 				q(1424, {	-- Pool of Tears (H)
 					["qg"] = 1443,	-- Fel'zerul
-					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
+					["coord"] = { 64.2, 20.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -928,7 +928,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 30855 },	-- Atal'ai Artifact
 								{ "o", 30856 },	-- Atal'ai Artifact
 							},
-							["coord"] = { 65.5, 55.5, SWAMP_OF_SORROWS },
+							["coord"] = { 65.5, 55.5, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
@@ -936,7 +936,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27694, {	-- Pool of Tears
 					["sourceQuest"] = 27869,	-- The Dragon and the Temple
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
@@ -947,19 +947,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 30855 },	-- Atal'ai Artifact
 								{ "o", 30856 },	-- Atal'ai Artifact
 							},
-							["coord"] = { 65.5, 55.5, SWAMP_OF_SORROWS },
+							["coord"] = { 65.5, 55.5, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
 				{	-- Prayerblossom
 					["allianceQuestData"] = q(27875, {	-- Prayerblossom (A)
 						["qg"] = 17127,	-- Anchorite Avuun
-						["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
+						["coord"] = { 26.8, 33.5, MAP.SWAMP_OF_SORROWS },
 					}),
 					["hordeQuestData"] = q(27907, {	-- Prayerblossom (H)
 						["sourceQuest"] = 27906,	-- Neeka Bloodscar
 						["qg"] = 47041,	-- Neeka Bloodscar
-						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
+						["coord"] = { 21.2, 51.7, MAP.SWAMP_OF_SORROWS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -968,7 +968,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  62550 },	-- Prayerblossom
 								{ "o", 206503 },	-- Prayerbloom
 							},
-							["coord"] = { 33.5, 44.5, SWAMP_OF_SORROWS },
+							["coord"] = { 33.5, 44.5, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				},
@@ -978,7 +978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27822,	-- Lumbering Oafs (A)
 					},
 					["qg"] = 46676,	-- Joanna Blueheart
-					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
+					["coord"] = { 68.1, 36.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -993,7 +993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27852,	-- Orcs and Humans (H)
 					},
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
+					["coord"] = { 49.3, 55.3, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1008,7 +1008,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27904,	-- Breath of Mist
 					},
 					["qg"] = 17127,	-- Anchorite Avuun
-					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
+					["coord"] = { 26.8, 33.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1020,7 +1020,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1444, {	-- Return to Fel'Zerul
 					["sourceQuest"] = 1429,	-- The Atal'ai Exile
 					["qg"] = 5598,	-- Atal'ai Exile
-					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
+					["coord"] = { 33.6, 75.2, MAP.THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -1031,7 +1031,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 47041 },	-- Neeka Bloodscar
 						{ "i", 62748 },	-- Splinterspear Report
 					},
-					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
+					["coord"] = { 21.2, 51.7, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1039,12 +1039,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				{	-- Secrets of the Mire
 					["allianceQuestData"] = q(27876, {	-- Secrets of the Mire (A)
 						["qg"] = 17127,	-- Anchorite Avuun
-						["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
+						["coord"] = { 26.8, 33.5, MAP.SWAMP_OF_SORROWS },
 					}),
 					["hordeQuestData"] = q(27908, {	-- Secrets of the Mire (H)
 						["sourceQuest"] = 27906,	-- Neeka Bloodscar
 						["qg"] = 47041,	-- Neeka Bloodscar
-						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
+						["coord"] = { 21.2, 51.7, MAP.SWAMP_OF_SORROWS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1057,7 +1057,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27818, {	-- Slithering Signs
 					["sourceQuest"] = 27757,	-- The Darkest Depths
 					["qg"] = 46172,	-- Baba Bogbrew
-					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.0, 76.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Intact Stagalbog Serpent Heart
@@ -1069,46 +1069,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27705, {	-- Step One: The Priestess
 					["sourceQuest"] = 27704,	-- Legends of the Sunken Temple
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Priestess Udum'bra slain
 							["provider"] = { "n", 46424 },	-- Priestess Udum'bra
-							["coord"] = { 54.3, 79.3, SWAMP_OF_SORROWS },
+							["coord"] = { 54.3, 79.3, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
 				q(27773, {	-- Step Three: Prophet
 					["sourceQuest"] = 27768,	-- Step Two: The Bloodletter
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Jammal'an the Prophet slain
 							["provider"] = { "n", 46656 },	-- Jammal'an the Prophet
-							["coord"] = { 54.43, 78.85, SWAMP_OF_SORROWS },
+							["coord"] = { 54.43, 78.85, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
 				q(27768, {	-- Step Two: The Bloodletter
 					["sourceQuest"] = 27705,	-- Step One: The Priestess
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Gomora the Bloodletter slain
 							["provider"] = { "n", 46623 },	-- Gomora the Bloodletter
-							["coord"] = { 54.5, 79.13, SWAMP_OF_SORROWS },
+							["coord"] = { 54.5, 79.13, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
 				q(27663, {	-- Tastes Like Strider
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 					["qg"] = 46182,	-- Pierre Fishflay
-					["coord"] = { 74.2, 12.1, SWAMP_OF_SORROWS },
+					["coord"] = { 74.2, 12.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/9 Jumbo Swampstrider Drumstick
@@ -1123,15 +1123,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1443 },	-- Fel'zerul
 						{ "i", 6193 },	-- Bundle of Atal'ai Artifacts
 					},
-					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
+					["coord"] = { 64.2, 20.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(28569, {	-- The Bogpaddle Bullet (A)
 					["qg"] = 9177,	-- Oralius
-					["coord"] = { 71.8, 68.0, BURNING_STEPPES },
+					["coord"] = { 71.8, 68.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1139,7 +1139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28570, {	-- The Bogpaddle Bullet (H)
 					["qg"] = 10260,	-- Kibler
-					["coord"] = { 54.9, 22.6, BURNING_STEPPES },
+					["coord"] = { 54.9, 22.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1148,12 +1148,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27757, {	-- The Darkest Depths
 					["sourceQuest"] = 27691,	-- Marshfin Madness
 					["qg"] = 46172,	-- Baba Bogbrew
-					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.0, 76.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Hr'nglth the Lost slain
 							["provider"] = { "n", 46371 },	-- Hr'nglth the Lost
-							["coord"] = { 63.2, 86.8, SWAMP_OF_SORROWS },
+							["coord"] = { 63.2, 86.8, MAP.SWAMP_OF_SORROWS },
 						}),
 						i(64592, {	-- Baba's Leg Warmers
 							["timeline"] = { ADDED_4_0_3 },
@@ -1172,15 +1172,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2744, {	-- The Demon Hunter
 					["sourceQuest"] = 2743,	-- The Cover of Darkness
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { AZSHARA },
+					["maps"] = { MAP.AZSHARA },
 					["lvl"] = 45,
 				}),
 				q(2621, {	-- The Disgraced One
 					["sourceQuest"] = 2784,	-- Fall From Grace
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1188,7 +1188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27869, {	-- The Dragon and the Temple
 					["sourceQuest"] = 27818,	-- Slithering Signs
 					["qg"] = 46172,	-- Baba Bogbrew
-					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.0, 76.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
@@ -1201,14 +1201,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 18221 },	-- Holaaru
 						{ "i", 62750 },	-- Draenethyst Crystals
 					},
-					["coord"] = { 69.9, 36.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.9, 36.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27915, {	-- The Heart of the Temple
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["isBreadcrumb"] = true,
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1421, {	-- The Lost Caravan
 					["sourceQuest"] = 1396,	-- Encroaching Wildlife
 					["qg"] = 5476,	-- Watcher Biggs
-					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["coord"] = { 26.8, 59.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1226,13 +1226,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 6170 },	-- Wizards' Reagents
 								{ "o", 28024 },	-- Caravan Chest
 							},
-							["coord"] = { 64.6, 18.4, SWAMP_OF_SORROWS },
+							["coord"] = { 64.6, 18.4, MAP.SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
 				q(27860, {	-- The Lost Ones
 					["qg"] = 18221,	-- Holaaru
-					["coord"] = { 69.8, 36.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.8, 36.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1263,7 +1263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2622, {	-- The Missing Orders
 					["sourceQuest"] = 2621,	-- The Disgraced One
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 47.8, 55.0, SWAMP_OF_SORROWS },
+					["coord"] = { 47.8, 55.0, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1275,7 +1275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							27876,	-- Secrets of the Mire (A)
 						},
 						["qg"] = 17127,	-- Anchorite Avuun
-						["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
+						["coord"] = { 26.8, 33.5, MAP.SWAMP_OF_SORROWS },
 					}),
 					["hordeQuestData"] = q(27909, {	-- The Purespring (H)
 						["sourceQuests"] = {
@@ -1283,7 +1283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							27908,	-- Secrets of the Mire (H)
 						},
 						["qg"] = 47041,	-- Neeka Bloodscar
-						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
+						["coord"] = { 21.2, 51.7, MAP.SWAMP_OF_SORROWS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1296,9 +1296,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2681, {	-- The Stones That Bind Us
 					["sourceQuest"] = 2801,	-- A Tale of Sorrow
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { MAP.BLASTED_LANDS },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/9 Servant of Razelikh slain
@@ -1307,9 +1307,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 141812 },	-- Stone of Binding
 							},
 							["coords"] = {
-								{ 51.8, 56.8, BLASTED_LANDS },
-								{ 58.0, 49.8, BLASTED_LANDS },
-								{ 63.8, 55.8, BLASTED_LANDS },
+								{ 51.8, 56.8, MAP.BLASTED_LANDS },
+								{ 58.0, 49.8, MAP.BLASTED_LANDS },
+								{ 63.8, 55.8, MAP.BLASTED_LANDS },
 							},
 						}),
 						objective(2, {	-- 0/3 Servant of Grol slain
@@ -1318,8 +1318,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 141857 },	-- Stone of Binding
 							},
 							["coords"] = {
-								{ 41.6, 14.2, BLASTED_LANDS },
-								{ 49.8, 43.8, BLASTED_LANDS },
+								{ 41.6, 14.2, MAP.BLASTED_LANDS },
+								{ 49.8, 43.8, MAP.BLASTED_LANDS },
 							},
 						}),
 						objective(3, {	-- 0/3 Servant of Allistarj slain
@@ -1328,9 +1328,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 141858 },	-- Stone of Binding
 							},
 							["coords"] = {
-								{ 64.8, 34.6, BLASTED_LANDS },
-								{ 64.0, 40.6, BLASTED_LANDS },
-								{ 64.6, 46.6, BLASTED_LANDS },
+								{ 64.8, 34.6, MAP.BLASTED_LANDS },
+								{ 64.0, 40.6, MAP.BLASTED_LANDS },
+								{ 64.6, 46.6, MAP.BLASTED_LANDS },
 							},
 						}),
 						objective(4, {	-- 0/3 Servant of Sevine slain
@@ -1339,8 +1339,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 141859 },	-- Stone of Binding
 							},
 							["coords"] = {
-								{ 38.6, 34.0, BLASTED_LANDS },
-								{ 42.8, 41.4, BLASTED_LANDS },
+								{ 38.6, 34.0, MAP.BLASTED_LANDS },
+								{ 42.8, 41.4, MAP.BLASTED_LANDS },
 							},
 						}),
 					},
@@ -1348,14 +1348,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2623, {	-- The Swamp Talker
 					["sourceQuest"] = 2622,	-- The Missing Orders
 					["qg"] = 7643,	-- Bengor
-					["coord"] = { 45.0, 57.2, SWAMP_OF_SORROWS },
+					["coord"] = { 45.0, 57.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Warchief's Orders
 							["provider"] = { "i", 8463, },	-- Warchief's Orders
-							["coord"] = { 63.8, 83.6, SWAMP_OF_SORROWS },
+							["coord"] = { 63.8, 83.6, MAP.SWAMP_OF_SORROWS },
 							["cr"] = 950,	-- Swamp Talker
 						}),
 					},
@@ -1363,7 +1363,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1422, {	-- Threat From the Sea (1/3)
 					["sourceQuest"] = 699,	-- Lack of Surplus (2/2)
 					["qg"] = 5592,	-- Tok'Kar
-					["coord"] = { 81.3, 81.0, SWAMP_OF_SORROWS },
+					["coord"] = { 81.3, 81.0, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -1371,7 +1371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1426, {	-- Threat From the Sea (2/3)
 					["sourceQuest"] = 1422,	-- Threat From the Sea (1/3)
 					["qg"] = 5593,	-- Katar
-					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
+					["coord"] = { 83.8, 80.4, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -1390,7 +1390,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1427, {	-- Threat From the Sea (3/3)
 					["sourceQuest"] = 1426,	-- Threat From the Sea (2/3)
 					["qg"] = 5593,	-- Katar
-					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
+					["coord"] = { 83.8, 80.4, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -1412,7 +1412,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27822,	-- Lumbering Oafs (A)
 					},
 					["qg"] = 46676,	-- Joanna Blueheart
-					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
+					["coord"] = { 68.1, 36.1, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1442,7 +1442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27852,	-- Orcs and Humans (H)
 					},
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
+					["coord"] = { 49.3, 55.3, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1469,7 +1469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27870, {	-- To Marshtide Watch
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["races"] = ALLIANCE_ONLY,
@@ -1478,7 +1478,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27871, {	-- To Stonard
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["qg"] = 46071,	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
+					["coord"] = { 69.4, 54.5, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["races"] = HORDE_ONLY,
@@ -1487,24 +1487,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3627, {	-- Uniting the Shattered Amulet
 					["sourceQuest"] = 3626,	-- Return to the Blasted Lands
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { MAP.BLASTED_LANDS },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Amulet of Allistarj
 							["provider"] = { "i", 10755 },	-- Amulet of Allistarj
-							["coord"] = { 66.8, 29.6, BLASTED_LANDS },
+							["coord"] = { 66.8, 29.6, MAP.BLASTED_LANDS },
 							["cr"] = 7666,	-- Archmage Allistarj
 						}),
 						objective(2, {	-- 0/1 Amulet of Grol
 							["provider"] = { "i", 10753 },	-- Amulet of Grol
-							["coord"] = { 43.0, 12.8, BLASTED_LANDS },
+							["coord"] = { 43.0, 12.8, MAP.BLASTED_LANDS },
 							["cr"] = 7665,	-- Grol the Destroyer
 						}),
 						objective(3, {	-- 0/1 Amulet of Sevine
 							["provider"] = { "i", 10754 },	-- Amulet of Sevine
-							["coord"] = { 40.6, 30.2, BLASTED_LANDS },
+							["coord"] = { 40.6, 30.2, MAP.BLASTED_LANDS },
 							["cr"] = 7667,	-- Lady Sevine
 						}),
 					},
@@ -1512,9 +1512,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8424, {	-- War on the Shadowsworn
 					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { MAP.BLASTED_LANDS },
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				warchiefscommand(q(28677, {	-- Warchief's Command: Swamp of Sorrows!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 51. (TODO: Confirm this.)
@@ -1542,9 +1542,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8423, {	-- Warrior Kinship
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { MAP.BLASTED_LANDS },
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1560,7 +1560,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27854,	-- Tides of Darkness (H)
 					},
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
+					["coord"] = { 49.3, 55.3, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1590,7 +1590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27909,	-- The Purespring (H)
 					},
 					["qg"] = 47041,	-- Neeka Bloodscar
-					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
+					["coord"] = { 21.2, 51.7, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1602,132 +1602,132 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(50882, {	-- Chupacabros
-					["coord"] = { 27.8, 62.0, SWAMP_OF_SORROWS },
+					["coord"] = { 27.8, 62.0, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 69.0, 28.0, SWAMP_OF_SORROWS },
+					["coord"] = { 69.0, 28.0, MAP.SWAMP_OF_SORROWS },
 					["groups"] = {
 						i(216948),	-- Odd Dalaran Relic
 					},
 				})),
 				-- #endif
 				n(5348, {	-- Dreamwatcher Forktongue <Victim of the Nightmare> [CATA+]
-					["coord"] = { 18.0, 69.8, SWAMP_OF_SORROWS },
+					["coord"] = { 18.0, 69.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14446, {	-- Fingat
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 77.2, 82.0, SWAMP_OF_SORROWS },
-						{ 78.0, 85.6, SWAMP_OF_SORROWS },
+						{ 77.2, 82.0, MAP.SWAMP_OF_SORROWS },
+						{ 78.0, 85.6, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 66.0, 83.2, SWAMP_OF_SORROWS },
-						{ 66.6, 84.2, SWAMP_OF_SORROWS },
-						{ 64.2, 91.4, SWAMP_OF_SORROWS },
-						{ 61.0, 85.6, SWAMP_OF_SORROWS },
-						{ 64.4, 82.6, SWAMP_OF_SORROWS },
+						{ 66.0, 83.2, MAP.SWAMP_OF_SORROWS },
+						{ 66.6, 84.2, MAP.SWAMP_OF_SORROWS },
+						{ 64.2, 91.4, MAP.SWAMP_OF_SORROWS },
+						{ 61.0, 85.6, MAP.SWAMP_OF_SORROWS },
+						{ 64.4, 82.6, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 				}),
 				n(51052, {	-- Gib the Banana-Hoarder
-					["coord"] = { 16.71, 47.30, SWAMP_OF_SORROWS },
+					["coord"] = { 16.71, 47.30, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14447, {	-- Gilmorian
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 90.2, 67.6, SWAMP_OF_SORROWS },
+						{ 90.2, 67.6, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 78.0, 5.6, SWAMP_OF_SORROWS },
-						{ 90.6, 24.0, SWAMP_OF_SORROWS },
-						{ 93.6, 39.6, SWAMP_OF_SORROWS },
-						{ 95.2, 51.2, SWAMP_OF_SORROWS },
-						{ 93.6, 59.6, SWAMP_OF_SORROWS },
-						{ 90.6, 73.2, SWAMP_OF_SORROWS },
-						{ 87.0, 80.4, SWAMP_OF_SORROWS },
-						{ 85.4, 87.0, SWAMP_OF_SORROWS },
-						{ 83.4, 93.6, SWAMP_OF_SORROWS },
+						{ 78.0, 5.6, MAP.SWAMP_OF_SORROWS },
+						{ 90.6, 24.0, MAP.SWAMP_OF_SORROWS },
+						{ 93.6, 39.6, MAP.SWAMP_OF_SORROWS },
+						{ 95.2, 51.2, MAP.SWAMP_OF_SORROWS },
+						{ 93.6, 59.6, MAP.SWAMP_OF_SORROWS },
+						{ 90.6, 73.2, MAP.SWAMP_OF_SORROWS },
+						{ 87.0, 80.4, MAP.SWAMP_OF_SORROWS },
+						{ 85.4, 87.0, MAP.SWAMP_OF_SORROWS },
+						{ 83.4, 93.6, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 				}),
 				n(50790, {	-- Ionis
-					["coord"] = { 40.0, 35.6, SWAMP_OF_SORROWS },
+					["coord"] = { 40.0, 35.6, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(1063, {	-- Jade <Victim of the Nightmare>
 					-- #if AFTER CATA
-					["coord"] = { 30.53, 47.19, SWAMP_OF_SORROWS },
+					["coord"] = { 30.53, 47.19, MAP.SWAMP_OF_SORROWS },
 					-- #else
 					["description"] = "Spawns outside of the entrance to the Sunken Temple.",
 					-- #endif
 				}),
 				n(50837, {	-- Kash
 					["coords"] = {
-						{ 79.4, 26.8, SWAMP_OF_SORROWS },
-						{ 78.4, 28.8, SWAMP_OF_SORROWS },
-						{ 79.4, 30.8, SWAMP_OF_SORROWS },
-						{ 80.6, 28.6, SWAMP_OF_SORROWS },
+						{ 79.4, 26.8, MAP.SWAMP_OF_SORROWS },
+						{ 78.4, 28.8, MAP.SWAMP_OF_SORROWS },
+						{ 79.4, 30.8, MAP.SWAMP_OF_SORROWS },
+						{ 80.6, 28.6, MAP.SWAMP_OF_SORROWS },
 					},
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14445, {	-- Lord Captain Wyrmak / Captain Wyrmak <Victim of the Nightmare> [CATA+]
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 75.0, 45.4, SWAMP_OF_SORROWS },	-- Inside the temple
+						{ 75.0, 45.4, MAP.SWAMP_OF_SORROWS },	-- Inside the temple
 						-- #else
-						{ 63.2, 40.6, SWAMP_OF_SORROWS },
-						{ 69.8, 36.0, SWAMP_OF_SORROWS },
-						{ 76.8, 39.2, SWAMP_OF_SORROWS },
-						{ 79.8, 48.2, SWAMP_OF_SORROWS },
-						{ 81.0, 57.8, SWAMP_OF_SORROWS },
-						{ 77.2, 65.8, SWAMP_OF_SORROWS },
+						{ 63.2, 40.6, MAP.SWAMP_OF_SORROWS },
+						{ 69.8, 36.0, MAP.SWAMP_OF_SORROWS },
+						{ 76.8, 39.2, MAP.SWAMP_OF_SORROWS },
+						{ 79.8, 48.2, MAP.SWAMP_OF_SORROWS },
+						{ 81.0, 57.8, MAP.SWAMP_OF_SORROWS },
+						{ 77.2, 65.8, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 				}),
 				n(763, {	-- Lost One Chieftain
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.6, 26.4, SWAMP_OF_SORROWS },
-						{ 61.8, 25.6, SWAMP_OF_SORROWS },
-						{ 63.8, 23.6, SWAMP_OF_SORROWS },
-						{ 65.2, 22.4, SWAMP_OF_SORROWS },
+						{ 59.6, 26.4, MAP.SWAMP_OF_SORROWS },
+						{ 61.8, 25.6, MAP.SWAMP_OF_SORROWS },
+						{ 63.8, 23.6, MAP.SWAMP_OF_SORROWS },
+						{ 65.2, 22.4, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 64.6, 15.8, SWAMP_OF_SORROWS },
-						{ 62.6, 21.8, SWAMP_OF_SORROWS },
-						{ 63.2, 25.2, SWAMP_OF_SORROWS },
-						{ 60.0, 20.2, SWAMP_OF_SORROWS },
+						{ 64.6, 15.8, MAP.SWAMP_OF_SORROWS },
+						{ 62.6, 21.8, MAP.SWAMP_OF_SORROWS },
+						{ 63.2, 25.2, MAP.SWAMP_OF_SORROWS },
+						{ 60.0, 20.2, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 				}),
 				n(1106, {	-- Lost One Cook
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 63.0, 24.4, SWAMP_OF_SORROWS },
-						{ 63.0, 26.6, SWAMP_OF_SORROWS },
-						{ 63.0, 27.6, SWAMP_OF_SORROWS },
+						{ 63.0, 24.4, MAP.SWAMP_OF_SORROWS },
+						{ 63.0, 26.6, MAP.SWAMP_OF_SORROWS },
+						{ 63.0, 27.6, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 62.6, 21.6, SWAMP_OF_SORROWS },
-						{ 63.0, 26.8, SWAMP_OF_SORROWS },
-						{ 67.4, 23.6, SWAMP_OF_SORROWS },
-						{ 66.4, 20.4, SWAMP_OF_SORROWS },
+						{ 62.6, 21.6, MAP.SWAMP_OF_SORROWS },
+						{ 63.0, 26.8, MAP.SWAMP_OF_SORROWS },
+						{ 67.4, 23.6, MAP.SWAMP_OF_SORROWS },
+						{ 66.4, 20.4, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 				}),
 				n(14448, {	-- Molt Thorn
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.2, 40.8, SWAMP_OF_SORROWS },
-						{ 50.2, 41.6, SWAMP_OF_SORROWS },
+						{ 48.2, 40.8, MAP.SWAMP_OF_SORROWS },
+						{ 50.2, 41.6, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 42.0, 33.6, SWAMP_OF_SORROWS },
-						{ 32.4, 32.4, SWAMP_OF_SORROWS },
-						{ 22.8, 46.0, SWAMP_OF_SORROWS },
-						{ 26.2, 51.6, SWAMP_OF_SORROWS },
-						{ 30.8, 49.6, SWAMP_OF_SORROWS },
-						{ 35.4, 44.0, SWAMP_OF_SORROWS },
+						{ 42.0, 33.6, MAP.SWAMP_OF_SORROWS },
+						{ 32.4, 32.4, MAP.SWAMP_OF_SORROWS },
+						{ 22.8, 46.0, MAP.SWAMP_OF_SORROWS },
+						{ 26.2, 51.6, MAP.SWAMP_OF_SORROWS },
+						{ 30.8, 49.6, MAP.SWAMP_OF_SORROWS },
+						{ 35.4, 44.0, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 					-- #if AFTER CATA
@@ -1740,39 +1740,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50903, {	-- Orlix the Swamplord
 					["coords"] = {
-						{ 17.12, 36.45, SWAMP_OF_SORROWS },
-						{ 17.48, 37.50, SWAMP_OF_SORROWS },
-						{ 16.53, 38.26, SWAMP_OF_SORROWS },
-						{ 15.78, 37.18, SWAMP_OF_SORROWS },
+						{ 17.12, 36.45, MAP.SWAMP_OF_SORROWS },
+						{ 17.48, 37.50, MAP.SWAMP_OF_SORROWS },
+						{ 16.53, 38.26, MAP.SWAMP_OF_SORROWS },
+						{ 15.78, 37.18, MAP.SWAMP_OF_SORROWS },
 					},
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50886, {	-- Seawing
 					["coords"] = {	-- pats up and down the beach, coords not exhaustive
-						{ 80.2, 16.2, SWAMP_OF_SORROWS },
-						{ 83.4, 19.0, SWAMP_OF_SORROWS },
-						{ 86.0, 23.8, SWAMP_OF_SORROWS },
-						{ 88.6, 26.6, SWAMP_OF_SORROWS },
-						{ 89.0, 31.8, SWAMP_OF_SORROWS },
-						{ 89.8, 35.2, SWAMP_OF_SORROWS },
-						{ 90.6, 40.0, SWAMP_OF_SORROWS },
+						{ 80.2, 16.2, MAP.SWAMP_OF_SORROWS },
+						{ 83.4, 19.0, MAP.SWAMP_OF_SORROWS },
+						{ 86.0, 23.8, MAP.SWAMP_OF_SORROWS },
+						{ 88.6, 26.6, MAP.SWAMP_OF_SORROWS },
+						{ 89.0, 31.8, MAP.SWAMP_OF_SORROWS },
+						{ 89.8, 35.2, MAP.SWAMP_OF_SORROWS },
+						{ 90.6, 40.0, MAP.SWAMP_OF_SORROWS },
 					},
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50738, {	-- Shimmerscale
 					["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
-						{ 57.0, 51.6, SWAMP_OF_SORROWS },
-						{ 56.8, 54.2, SWAMP_OF_SORROWS },
-						{ 55.6, 54.0, SWAMP_OF_SORROWS },
-						{ 54.0, 54.2, SWAMP_OF_SORROWS },
+						{ 57.0, 51.6, MAP.SWAMP_OF_SORROWS },
+						{ 56.8, 54.2, MAP.SWAMP_OF_SORROWS },
+						{ 55.6, 54.0, MAP.SWAMP_OF_SORROWS },
+						{ 54.0, 54.2, MAP.SWAMP_OF_SORROWS },
 					},
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50797, {	-- Yukiko
 					["coords"] = {
-						{ 69.0, 65.2, SWAMP_OF_SORROWS },
-						{ 70.6, 66.2, SWAMP_OF_SORROWS },
-						{ 69.8, 67.6, SWAMP_OF_SORROWS },
+						{ 69.0, 65.2, MAP.SWAMP_OF_SORROWS },
+						{ 70.6, 66.2, MAP.SWAMP_OF_SORROWS },
+						{ 69.8, 67.6, MAP.SWAMP_OF_SORROWS },
 					},
 					["timeline"] = { ADDED_5_2_0 },
 				}),
@@ -1781,9 +1781,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(989, {	-- Banalash <Trade Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.6, 57.0, SWAMP_OF_SORROWS },
+						{ 46.6, 57.0, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 44.6, 56.8, SWAMP_OF_SORROWS },
+						{ 44.6, 56.8, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1802,9 +1802,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8176, {	-- Gharash <Blacksmithing Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.2, 52.2, SWAMP_OF_SORROWS },
+						{ 47.2, 52.2, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 45.6, 51.6, SWAMP_OF_SORROWS },
+						{ 45.6, 51.6, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1817,9 +1817,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(11874, {	-- Masat T'andr <Superior Leatherworker>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 29.6, 33.6, SWAMP_OF_SORROWS },
+						{ 29.6, 33.6, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 26.5, 31.4, SWAMP_OF_SORROWS },
+						{ 26.5, 31.4, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1839,9 +1839,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8177, {	-- Rartar <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.2, 57.2, SWAMP_OF_SORROWS },
+						{ 47.2, 57.2, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 45.4, 57.0, SWAMP_OF_SORROWS },
+						{ 45.4, 57.0, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1854,9 +1854,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(984, {	-- Thralosh <Cloth & Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.8, 52.6, SWAMP_OF_SORROWS },
+						{ 46.8, 52.6, MAP.SWAMP_OF_SORROWS },
 						-- #else
-						{ 45.0, 51.6, SWAMP_OF_SORROWS },
+						{ 45.0, 51.6, MAP.SWAMP_OF_SORROWS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,

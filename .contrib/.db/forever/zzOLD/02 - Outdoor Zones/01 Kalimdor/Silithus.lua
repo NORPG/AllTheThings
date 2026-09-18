@@ -30,8 +30,8 @@ local TACTICAL_ASSIGNMENT = i(20809, {	-- Tactical Assignment
 	["timeline"] = { REMOVED_4_0_3 },
 });
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(SILITHUS, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.SILITHUS, {
 		["lore"] = "Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",
 		["icon"] = 236829,
 		["maps"] = { 82 },	-- Twilight's Run
@@ -147,9 +147,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.4, 32.7, SILITHUS },
+						{ 54.4, 32.7, MAP.SILITHUS },
 						-- #else
-						{ 50.6, 34.4, SILITHUS },
+						{ 50.6, 34.4, MAP.SILITHUS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -161,9 +161,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.8, 34.6, SILITHUS },
+						{ 52.8, 34.6, MAP.SILITHUS },
 						-- #else
-						{ 48.8, 36.6, SILITHUS },
+						{ 48.8, 36.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -201,7 +201,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				applyclassicphase(PHASE_FIVE_CATCH_UP, q(9248, {	-- A Humble Offering
 					["qg"] = 15282,	-- Aurel Goldleaf
-					["coord"] = { 52.0, 38.2, SILITHUS },
+					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20515, 1 } },	-- Abyssal Scepter
@@ -220,9 +220,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.7, 63.0, SILITHUS },
+						{ 68.7, 63.0, MAP.SILITHUS },
 						-- #else
-						{ 67.0, 69.6, SILITHUS },
+						{ 67.0, 69.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(40, 40, 15),
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(8361, {	-- Abyssal Contacts
 					["qg"] = 15306,	-- Bor Wildmane
-					["coord"] = { 48.6, 37.8, SILITHUS },
+					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20513, 1 } },	-- Abyssal Crest
 					["lvl"] = 60,
@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8362, {	-- Abyssal Crests
 					["sourceQuest"] = 8361,	-- Abyssal Contacts
 					["qg"] = 15306,	-- Bor Wildmane
-					["coord"] = { 48.6, 37.8, SILITHUS },
+					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20513, 3 } },	-- Abyssal Crest
 					["repeatable"] = true,
@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8364, {	-- Abyssal Scepters
 					["sourceQuest"] = 8352,	-- Scepter of the Council
 					["qg"] = 15306,	-- Bor Wildmane
-					["coord"] = { 48.6, 37.8, SILITHUS },
+					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20515, 3 } },	-- Abyssal Scepter
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8363, {	-- Abyssal Signets
 					["sourceQuest"] = 8348,	-- Signet of the Dukes
 					["qg"] = 15306,	-- Bor Wildmane
-					["coord"] = { 48.6, 37.8, SILITHUS },
+					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20514, 3 } },	-- Abyssal Signet
@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(9338, {	-- Allegiance to Cenarion Circle
 					["qg"] = 15540,	-- Windcaller Kaldon
-					["coord"] = { 50.0, 36.4, SILITHUS },
+					["coord"] = { 50.0, 36.4, MAP.SILITHUS },
 					["maxReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8316, {	-- Armaments of War [WARRIOR]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
@@ -372,7 +372,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8381, {	-- Armaments of War [MAGE / WARLOCK]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { MAGE, WARLOCK },
 					["lvl"] = 58,
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8379, {	-- Armaments of War [PRIEST]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8378, {	-- Armaments of War [ROGUE]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
@@ -420,7 +420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8382, {	-- Armaments of War [DRUID]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { DRUID },
 					["lvl"] = 58,
@@ -436,7 +436,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8377, {	-- Armaments of War [HUNTER]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
@@ -452,7 +452,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8376, {	-- Armaments of War [PALADIN]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
@@ -468,7 +468,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8380, {	-- Armaments of War [SHAMAN]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
@@ -537,7 +537,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(8331, {	-- Aurel Goldleaf
 					["qg"] = 15270,	-- Huum Wildmane
-					["coord"] = { 48.7, 37.9, SILITHUS },
+					["coord"] = { 48.7, 37.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8349, {	-- Bor Wildmane
 					["sourceQuest"] = 8332,	-- Dukes of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
-					["coord"] = { 52.0, 38.2, SILITHUS },
+					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -624,7 +624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8351, {	-- Bor Wishes to Speak
 					["sourceQuest"] = 8341,	-- Lords of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
-					["coord"] = { 52.0, 38.2, SILITHUS },
+					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
@@ -660,9 +660,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15171,	-- Frankal Stonebridge
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.0, 79.4, SILITHUS },
+						{ 46.0, 79.4, MAP.SILITHUS },
 						-- #else
-						{ 40.8, 88.6, SILITHUS },
+						{ 40.8, 88.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(58, 58, 15),
@@ -716,14 +716,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8800, {	-- Cenarion Battlegear
 					["qg"] = 15540,	-- Windcaller Kaldon
-					["coord"] = { 50.0, 36.4, SILITHUS },
+					["coord"] = { 50.0, 36.4, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 60,
 				})),
 				applyclassicphase(PHASE_FIVE, q(8573, {	-- Champion's Battlegear
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["qg"] = 15176,	-- Vargus
-					["coord"] = { 51.2, 38.9, SILITHUS },
+					["coord"] = { 51.2, 38.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -763,9 +763,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15189,	-- Beetix Ficklespragg
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.4, 36.3, SILITHUS },
+						{ 55.4, 36.3, MAP.SILITHUS },
 						-- #else
-						{ 51.6, 38.6, SILITHUS },
+						{ 51.6, 38.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -790,9 +790,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.2, 32.5, SILITHUS },
+						{ 53.2, 32.5, MAP.SILITHUS },
 						-- #else
-						{ 49.2, 34.2, SILITHUS },
+						{ 49.2, 34.2, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(58, 58, 15),
@@ -801,9 +801,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 15171 },	-- Frankal Stonebridge
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 46.0, 79.2, SILITHUS },
+								{ 46.0, 79.2, MAP.SILITHUS },
 								-- #else
-								{ 40.8, 88.6, SILITHUS },
+								{ 40.8, 88.6, MAP.SILITHUS },
 								-- #endif
 							},
 						}),
@@ -811,9 +811,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 46.4, 79.0, SILITHUS },
+								{ 46.4, 79.0, MAP.SILITHUS },
 								-- #else
-								{ 41.2, 88.4, SILITHUS },
+								{ 41.2, 88.4, MAP.SILITHUS },
 								-- #endif
 							},
 						}),
@@ -823,9 +823,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15174,	-- Calandrath <Innkeeper>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.4, 36.6, SILITHUS },
+						{ 55.4, 36.6, MAP.SILITHUS },
 						-- #else
-						{ 51.8, 39.0, SILITHUS },
+						{ 51.8, 39.0, MAP.SILITHUS },
 						-- #endif
 					},
 					["requireSkill"] = COOKING,
@@ -882,7 +882,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8332, {	-- Dukes of the Council
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
 					["qg"] = 15282,	-- Aurel Goldleaf
-					["coord"] = { 52.0, 38.2, SILITHUS },
+					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -914,9 +914,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15306,	-- Bor Wildmane
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.2, 35.1, SILITHUS },
+						{ 53.2, 35.1, MAP.SILITHUS },
 						-- #else
-						{ 48.6, 37.8, SILITHUS },
+						{ 48.6, 37.8, MAP.SILITHUS },
 						-- #endif
 					},
 					["maxReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
@@ -956,7 +956,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8507, {	-- Field Duty (A)
 					["qg"] = 15540,	-- Windcaller Kaldon
-					["coord"] = { 50.0, 36.4, SILITHUS },
+					["coord"] = { 50.0, 36.4, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -964,7 +964,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(8508, {	-- Field Duty Papers (A)
 							["qg"] = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
-							["coord"] = { 33.2, 52.1, SILITHUS },
+							["coord"] = { 33.2, 52.1, MAP.SILITHUS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
@@ -988,7 +988,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8731, {	-- Field Duty (H)
 					["qg"] = 15540,	-- Windcaller Kaldon
-					["coord"] = { 50.0, 36.4, SILITHUS },
+					["coord"] = { 50.0, 36.4, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -996,7 +996,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						applyclassicphase(PHASE_FIVE, q(8732, {	-- Field Duty Papers (H)
 							["qg"] = 15612,	-- Krug Skullsplit
-							["coord"] = { 52.2, 68.4, SILITHUS },
+							["coord"] = { 52.2, 68.4, MAP.SILITHUS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -1027,9 +1027,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.4, 79.1, SILITHUS },
+						{ 46.4, 79.1, MAP.SILITHUS },
 						-- #else
-						{ 41.2, 88.4, SILITHUS },
+						{ 41.2, 88.4, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(58, 58, 15),
@@ -1040,7 +1040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  20456 },	-- Hive'Regal Rubbing
 								{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
 							},
-							["coord"] = { 55.6, 90.6, SILITHUS },
+							["coord"] = { 55.6, 90.6, MAP.SILITHUS },
 						}),
 						-- #else
 						objective(1, {	-- 0/1 Hive'Ashi Rubbing
@@ -1048,28 +1048,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 20455 },	-- Hive'Ashi Rubbing
 								{ "o", 180454 },	-- Hive'Ashi Glyphed Crystal
 							},
-							["coord"] = { 50.0, 26.0, SILITHUS },
+							["coord"] = { 50.0, 26.0, MAP.SILITHUS },
 						}),
 						objective(2, {	-- 0/1 Hive'Zora Rubbing
 							["providers"] = {
 								{ "i", 20454 },	-- Hive'Zora Rubbing
 								{ "o", 180455 },	-- Hive'Zora Glyphed Crystal
 							},
-							["coord"] = { 37.0, 62.0, SILITHUS },
+							["coord"] = { 37.0, 62.0, MAP.SILITHUS },
 						}),
 						objective(3, {	-- 0/1 Hive'Regal Rubbing
 							["providers"] = {
 								{ "i", 20456 },	-- Hive'Regal Rubbing
 								{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
 							},
-							["coord"] = { 52.0, 99.0, SILITHUS },
+							["coord"] = { 52.0, 99.0, MAP.SILITHUS },
 						}),
 						-- #endif
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8343, {	-- Goldleaf's Discovery
 					["qg"] = 15270,	-- Huum Wildmane
-					["coord"] = { 48.6, 37.9, SILITHUS },
+					["coord"] = { 48.6, 37.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -1107,7 +1107,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				heroscall(q(28528, {	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
@@ -1118,7 +1118,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1126, {	-- Hive in the Tower
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
 					["qg"] = 13220,	-- Layo Starstrike
-					["coord"] = { 81.8, 18.8, SILITHUS },
+					["coord"] = { 81.8, 18.8, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
@@ -1128,7 +1128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  17345 },	-- Silithid Goo
 								{ "o", 178553 },	-- Hive'Ashi Pod
 							},
-							["coord"] = { 60.3, 52.6, SILITHUS },
+							["coord"] = { 60.3, 52.6, MAP.SILITHUS },
 							["cr"] = 13301,	-- Hive'Ashi Ambusher
 						}),
 					},
@@ -1141,7 +1141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Hive'Ashi Scout Report
 							["provider"] = { "i", 21161 },	-- Hive'Ashi Scout Report
-							["coord"] = { 44.0, 14.0, SILITHUS },
+							["coord"] = { 44.0, 14.0, MAP.SILITHUS },
 							["cr"] = 15611,	-- Cenarion Scout Jalia
 						}),
 						CENARION_TACTICAL_BADGE,
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Hive'Regal Scout Report
 							["provider"] = { "i", 21160 },	-- Hive'Regal Scout Report
-							["coord"] = { 53.0, 97.0, SILITHUS },
+							["coord"] = { 53.0, 97.0, MAP.SILITHUS },
 							["cr"] = 15609,	-- Cenarion Scout Landion
 						}),
 						CENARION_TACTICAL_BADGE,
@@ -1171,7 +1171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Hive'Zora Scout Report
 							["provider"] = { "i", 21158 },	-- Hive'Zora Scout Report
-							["coord"] = { 23.6, 62.4, SILITHUS },
+							["coord"] = { 23.6, 62.4, MAP.SILITHUS },
 							["cr"] = 15610,	-- Cenarion Scout Azenel
 						}),
 						CENARION_TACTICAL_BADGE,
@@ -1196,9 +1196,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15181,	-- Commander Mar'alith
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.2, 32.5, SILITHUS },
+						{ 53.2, 32.5, MAP.SILITHUS },
 						-- #else
-						{ 49.2, 34.2, SILITHUS },
+						{ 49.2, 34.2, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(58, 58, 15),
@@ -1207,9 +1207,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 15215 },	-- Mistress Natalia Mar'alith <High Priestess of C'Thun>
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 55.6, 90.6, SILITHUS },
+								{ 55.6, 90.6, MAP.SILITHUS },
 								-- #else
-								{ 53.6, 98.0, SILITHUS },
+								{ 53.6, 98.0, MAP.SILITHUS },
 								-- #endif
 							},
 						}),
@@ -1221,9 +1221,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15174,	-- Calandrath <Innkeeper>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.4, 36.6, SILITHUS },
+						{ 55.4, 36.6, MAP.SILITHUS },
 						-- #else
-						{ 51.8, 39.0, SILITHUS },
+						{ 51.8, 39.0, MAP.SILITHUS },
 						-- #endif
 					},
 					["cost"] = { { "i", 20452, 10 } },	-- Smoked Desert Dumplings
@@ -1234,7 +1234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8341, {	-- Lords of the Council
 					["sourceQuest"] = 8343,	-- Goldleaf's Discovery
 					["qg"] = 15282,	-- Aurel Goldleaf
-					["coord"] = { 52.0, 38.2, SILITHUS },
+					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1251,7 +1251,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8333, {	-- Medallion of Station
 					["sourceQuest"] = 8332,	-- Dukes of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
-					["coord"] = { 52.0, 38.2, SILITHUS },
+					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
@@ -1270,9 +1270,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15189,	-- Beetix Ficklespragg
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.4, 36.3, SILITHUS },
+						{ 55.4, 36.3, MAP.SILITHUS },
 						-- #else
-						{ 51.6, 38.6, SILITHUS },
+						{ 51.6, 38.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1296,9 +1296,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15190,	-- Noggle Ficklespragg
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.3, 36.2, SILITHUS },
+						{ 55.3, 36.2, MAP.SILITHUS },
 						-- #else
-						{ 51.6, 38.5, SILITHUS },
+						{ 51.6, 38.5, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1310,9 +1310,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 49.2, 81.6, SILITHUS },
+								{ 49.2, 81.6, MAP.SILITHUS },
 								-- #else
-								{ 44.7, 91.5, SILITHUS },
+								{ 44.7, 91.5, MAP.SILITHUS },
 								-- #endif
 							},
 						}),
@@ -1324,9 +1324,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17081,	-- Scout Bloodfist
 					["coords"] = {
 						-- #if AFTER 7.2.0
-						{ 53.0, 34.6, SILITHUS },
+						{ 53.0, 34.6, MAP.SILITHUS },
 						-- #else
-						{ 49.0, 36.7, SILITHUS },
+						{ 49.0, 36.7, MAP.SILITHUS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1337,9 +1337,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17082,	-- Rifleman Torrig
 					["coords"] = {
 						-- #if AFTER 7.2.0
-						{ 54.5, 32.9, SILITHUS },
+						{ 54.5, 32.9, MAP.SILITHUS },
 						-- #else
-						{ 50.7, 34.7, SILITHUS },
+						{ 50.7, 34.7, MAP.SILITHUS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1349,7 +1349,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8352, {	-- Scepter of the Council
 					["sourceQuest"] = 8351,	-- Bor Wishes to Speak
 					["qg"] = 15306,	-- Bor Wildmane
-					["coord"] = { 48.6, 37.8, SILITHUS },
+					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20515, 1 } },	-- Abyssal Scepter
@@ -1376,9 +1376,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17080,	-- Marshal Bluewall
 					["coords"] = {
 						-- #if AFTER 7.2.0
-						{ 39.6, 46.8, SILITHUS },
+						{ 39.6, 46.8, MAP.SILITHUS },
 						-- #else
-						{ 33.3, 51.1, SILITHUS },
+						{ 33.3, 51.1, MAP.SILITHUS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_7_2_0 },
@@ -1400,9 +1400,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17079,	-- General Kirika
 					["coords"] = {
 						-- #if AFTER 7.2.0
-						{ 54.6, 62.8, SILITHUS },
+						{ 54.6, 62.8, MAP.SILITHUS },
 						-- #else
-						{ 50.8, 69.5, SILITHUS },
+						{ 50.8, 69.5, MAP.SILITHUS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_7_2_0 },
@@ -1453,9 +1453,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15306,	-- Bor Wildmane
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.2, 35.1, SILITHUS },
+						{ 53.2, 35.1, MAP.SILITHUS },
 						-- #else
-						{ 48.6, 37.8, SILITHUS },
+						{ 48.6, 37.8, MAP.SILITHUS },
 						-- #endif
 					},
 					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
@@ -1476,9 +1476,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15191,	-- Windcaller Proudhorn
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.9, 36.0, SILITHUS },
+						{ 54.9, 36.0, MAP.SILITHUS },
 						-- #else
-						{ 51.2, 38.3, SILITHUS },
+						{ 51.2, 38.3, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1496,9 +1496,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 43.6, 42.0, SILITHUS },
+						{ 43.6, 42.0, MAP.SILITHUS },
 						-- #else
-						{ 37.9, 45.3, SILITHUS },
+						{ 37.9, 45.3, MAP.SILITHUS },
 						-- #endif
 					},
 					["requireSkill"] = COOKING,
@@ -1511,7 +1511,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8348, {	-- Signet of the Dukes
 					["sourceQuest"] = 8349,	-- Bor Wildmane
 					["qg"] = 15306,	-- Bor Wildmane
-					["coord"] = { 48.6, 37.8, SILITHUS },
+					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20514, 1 } },	-- Abyssal Signet
@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(8574, {	-- Stalwart's Battlegear
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["qg"] = 15176,	-- Vargus
-					["coord"] = { 51.2, 38.9, SILITHUS },
+					["coord"] = { 51.2, 38.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1570,9 +1570,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15191,	-- Windcaller Proudhorn
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.9, 36.0, SILITHUS },
+						{ 54.9, 36.0, MAP.SILITHUS },
 						-- #else
-						{ 51.2, 38.3, SILITHUS },
+						{ 51.2, 38.3, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1587,9 +1587,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15194,	-- Hermit Ortell
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.7, 63.0, SILITHUS },
+						{ 68.7, 63.0, MAP.SILITHUS },
 						-- #else
-						{ 67.0, 69.6, SILITHUS },
+						{ 67.0, 69.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
@@ -1598,7 +1598,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8275, {	-- Taking Back Silithus (A)
 					["qg"] = 15187,	-- Cenarion Emissary Jademoon
-					["coord"] = { 58.5, 47.3, IRONFORGE },
+					["coord"] = { 58.5, 47.3, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1606,7 +1606,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8276, {	-- Taking Back Silithus (H)
 					["qg"] = 15188,	-- Cenarion Emissary Blackhoof
-					["coord"] = { 47.6, 65.8, ORGRIMMAR },
+					["coord"] = { 47.6, 65.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1759,7 +1759,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8315, {	-- The Calling
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coord"] = { 49.7, 37.5, SILITHUS },
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
@@ -1768,7 +1768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 20465 },	-- Crystal Unlocking Mechanism
 								{ "i", 20464 },	-- Glyphs of Calling
 							},
-							["coord"] = { 48.5, 58.5, SILITHUS },
+							["coord"] = { 48.5, 58.5, MAP.SILITHUS },
 							["cr"] = 14862,	-- Emissary Roman'khan
 						}),
 					},
@@ -1781,9 +1781,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 35.3, SILITHUS },
+						{ 53.6, 35.3, MAP.SILITHUS },
 						-- #else
-						{ 49.7, 37.5, SILITHUS },
+						{ 49.7, 37.5, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1791,7 +1791,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28859, {	-- The Dunes of Silithus
 					-- ["sourceQuest"] = 24695,	-- Ever Watching From Above [nothing under this entire quest chain is required... maybe something completely different?]
 					["qg"] = 38269,	-- Zen'Aliri
-					["coord"] = { 55.7, 60.6, UNGORO_CRATER },
+					["coord"] = { 55.7, 60.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
@@ -1853,7 +1853,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_FIVE, q(86674, {	-- The Perfect Poison
 					["qg"] = 16091,	-- Dirk Thunderwood
-					["coord"] = { 52.1, 39.1, SILITHUS },
+					["coord"] = { 52.1, 39.1, MAP.SILITHUS },
 					["maps"] = { RUINS_OF_AHNQIRAJ, ZULGURUB },
 					["lvl"] = 60,
 					["groups"] = {
@@ -1874,7 +1874,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #else
 				applyclassicphase(PHASE_FIVE, q(9023, {	-- The Perfect Poison
 					["qg"] = 16091,	-- Dirk Thunderwood
-					["coord"] = { 52.1, 39.1, SILITHUS },
+					["coord"] = { 52.1, 39.1, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { RUINS_OF_AHNQIRAJ, ZULGURUB },
 					["lvl"] = 60,
@@ -1908,14 +1908,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(28856, {	-- The Sands of Silithus
 					["qg"] = 11118,	-- Innkeeper Vizzie
-					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["coord"] = { 59.8, 51.1, MAP.WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(1125, {	-- The Spirits of Southwind
 					["sourceQuest"] = 1124,	-- Wasteland
 					["qg"] = 13220,	-- Layo Starstrike
-					["coord"] = { 81.8, 18.8, SILITHUS },
+					["coord"] = { 81.8, 18.8, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
@@ -1932,26 +1932,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15194,	-- Hermit Ortell
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.7, 63.0, SILITHUS },
+						{ 68.7, 63.0, MAP.SILITHUS },
 						-- #else
-						{ 67.0, 69.6, SILITHUS },
+						{ 67.0, 69.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Twilight Lexicon - Chapter 1
 							["provider"] = { "i", 20394 },	-- Twilight Lexicon - Chapter 1
-							["coord"] = { 26.3, 36.6, SILITHUS },
+							["coord"] = { 26.3, 36.6, MAP.SILITHUS },
 							["cr"] = 15200,	-- Twilight Keeper Mayna <Twilight's Hammer>
 						}),
 						objective(2, {	-- 0/1 Twilight Lexicon - Chapter 2
 							["provider"] = { "i", 20395 },	-- Twilight Lexicon - Chapter 2
-							["coord"] = { 16.1, 86.4, SILITHUS },
+							["coord"] = { 16.1, 86.4, MAP.SILITHUS },
 							["cr"] = 11803,	-- Twilight Keeper Exeter <Twilight's Hammer>
 						}),
 						objective(3, {	-- 0/1 Twilight Lexicon - Chapter 3
 							["provider"] = { "i", 20396 },	-- Twilight Lexicon - Chapter 3
-							["coord"] = { 40.9, 42.2, SILITHUS },
+							["coord"] = { 40.9, 42.2, MAP.SILITHUS },
 							["cr"] = 11804,	-- Twilight Keeper Havunth <Twilight's Hammer>
 						}),
 					},
@@ -1960,9 +1960,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 35.3, SILITHUS },
+						{ 53.6, 35.3, MAP.SILITHUS },
 						-- #else
-						{ 49.7, 37.5, SILITHUS },
+						{ 49.7, 37.5, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1973,7 +1973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 180436 },	-- Twilight Tablet Fragment
 								{ "o", 180501 },	-- Twilight Tablet Fragment
 							},
-							["coord"] = { 23.4, 11.8, SILITHUS },
+							["coord"] = { 23.4, 11.8, MAP.SILITHUS },
 						}),
 					},
 				})),
@@ -1998,9 +1998,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15194,	-- Hermit Ortell
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.7, 63.0, SILITHUS },
+						{ 68.7, 63.0, MAP.SILITHUS },
 						-- #else
-						{ 67.0, 69.6, SILITHUS },
+						{ 67.0, 69.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
@@ -2024,9 +2024,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15270,	-- Huum Wildmane
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.2, 35.2, SILITHUS },
+						{ 53.2, 35.2, MAP.SILITHUS },
 						-- #else
-						{ 48.7, 37.9, SILITHUS },
+						{ 48.7, 37.9, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(60, 60, 15),
@@ -2055,7 +2055,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8342, {	-- Twilight Ring of Lordship
 					["sourceQuest"] = 8341,	-- Lords of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
-					["coord"] = { 52.0, 38.2, SILITHUS },
+					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -2076,9 +2076,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 13220 },	-- Layo Starstrike
 						{ "i", 17346 },	-- Encrusted Silithid Object
 					},
-					["coord"] = { 81.8, 18.8, SILITHUS },
+					["coord"] = { 81.8, 18.8, MAP.SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { MOONGLADE },
+					["maps"] = { MAP.MOONGLADE },
 					["lvl"] = 54,
 				}),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8782, {	-- Uniform Supplies (A)
@@ -2122,9 +2122,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.4, 79.1, SILITHUS },
+						{ 46.4, 79.1, MAP.SILITHUS },
 						-- #else
-						{ 41.2, 88.4, SILITHUS },
+						{ 41.2, 88.4, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(58, 58, 15),
@@ -2132,7 +2132,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(8572, {	-- Veteran's Battlegear
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["qg"] = 15176,	-- Vargus
-					["coord"] = { 51.2, 38.9, SILITHUS },
+					["coord"] = { 51.2, 38.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -2157,7 +2157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(8548, {	-- Volunteer's Battlegear
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["qg"] = 15176,	-- Vargus
-					["coord"] = { 51.2, 38.9, SILITHUS },
+					["coord"] = { 51.2, 38.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -2184,16 +2184,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15270,	-- Huum Wildmane
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.2, 35.2, SILITHUS },
+						{ 53.2, 35.2, MAP.SILITHUS },
 						-- #else
-						{ 48.7, 37.9, SILITHUS },
+						{ 48.7, 37.9, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(60, 60, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Vyral's Signet Ring
 							["provider"] = { "i", 20466 },	-- Vyral's Signet Ring
-							["coord"] = { 72.4, 15.6, SILITHUS },
+							["coord"] = { 72.4, 15.6, MAP.SILITHUS },
 							["cr"] = 15202,	-- Vyral the Vile
 						}),
 						i(20650),	-- Desert Wind Gauntlets
@@ -2204,9 +2204,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 180448 },	-- Wanted Poster: Deathclasp
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.1, 35.0, SILITHUS },
+						{ 55.1, 35.0, MAP.SILITHUS },
 						-- #else
-						{ 51.3, 38.3, SILITHUS },
+						{ 51.3, 38.3, MAP.SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -2215,9 +2215,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 20385 },	-- Deathclasp's Pincer
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 49.6, 82.0, SILITHUS },
+								{ 49.6, 82.0, MAP.SILITHUS },
 								-- #else
-								{ 45.0, 91.0, SILITHUS },
+								{ 45.0, 91.0, MAP.SILITHUS },
 								-- #endif
 							},
 							["cr"] = 15196,	-- Deathclasp
@@ -2228,7 +2228,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				warchiefscommand(q(28527, {	-- Warchief's Command: Silithus!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
@@ -2252,16 +2252,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 28.6, 77.1, SILITHUS },
-						{ 35.0, 29.5, SILITHUS },
-						{ 44.4, 39.6, SILITHUS },
+						{ 28.6, 77.1, MAP.SILITHUS },
+						{ 35.0, 29.5, MAP.SILITHUS },
+						{ 44.4, 39.6, MAP.SILITHUS },
 						-- #else
-						{ 20.5, 86.2, SILITHUS },
-						{ 18.2, 81.1, SILITHUS },
-						{ 39.0, 42.4, SILITHUS },
-						{ 38.3, 46.5, SILITHUS },
-						{ 27.9, 30.6, SILITHUS },
-						{ 24.4, 36.0, SILITHUS },
+						{ 20.5, 86.2, MAP.SILITHUS },
+						{ 18.2, 81.1, MAP.SILITHUS },
+						{ 39.0, 42.4, MAP.SILITHUS },
+						{ 38.3, 46.5, MAP.SILITHUS },
+						{ 27.9, 30.6, MAP.SILITHUS },
+						{ 24.4, 36.0, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = {
@@ -2351,13 +2351,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 25.8, 75.9, SILITHUS },
-						{ 32.2, 31.2, SILITHUS },
-						{ 43.3, 41.6, SILITHUS },
+						{ 25.8, 75.9, MAP.SILITHUS },
+						{ 32.2, 31.2, MAP.SILITHUS },
+						{ 43.3, 41.6, MAP.SILITHUS },
 						-- #else
-						{ 17.2, 84.8, SILITHUS },
-						{ 37.6, 44.8, SILITHUS },
-						{ 24.7, 32.7, SILITHUS },
+						{ 17.2, 84.8, MAP.SILITHUS },
+						{ 37.6, 44.8, MAP.SILITHUS },
+						{ 24.7, 32.7, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = {
@@ -2451,13 +2451,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 26.9, 74.8, SILITHUS },
-						{ 32.9, 32.4, SILITHUS },
-						{ 45.0, 41.9, SILITHUS },
+						{ 26.9, 74.8, MAP.SILITHUS },
+						{ 32.9, 32.4, MAP.SILITHUS },
+						{ 45.0, 41.9, MAP.SILITHUS },
 						-- #else
-						{ 18.6, 83.5, SILITHUS },
-						{ 39.6, 45.1, SILITHUS },
-						{ 25.6, 34.0, SILITHUS },
+						{ 18.6, 83.5, MAP.SILITHUS },
+						{ 39.6, 45.1, MAP.SILITHUS },
+						{ 25.6, 34.0, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = {
@@ -2533,169 +2533,169 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				n(50737, {	-- Acroniss
-					["coord"] = { 73.6, 16.0, SILITHUS },
+					["coord"] = { 73.6, 16.0, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50746, {	-- Bornix the Burrower
-					["coord"] = { 63.0, 89.0, SILITHUS },
+					["coord"] = { 63.0, 89.0, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50897, {	-- Ffexk the Dunestalker
-					["coord"] = { 32.1, 53.8, SILITHUS },
+					["coord"] = { 32.1, 53.8, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14472, {	-- Gretheer
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 36.2, 39.6, SILITHUS },
-						{ 45.2, 51.4, SILITHUS },
-						{ 52.2, 55.2, SILITHUS },
-						{ 64.2, 58.2, SILITHUS },
+						{ 36.2, 39.6, MAP.SILITHUS },
+						{ 45.2, 51.4, MAP.SILITHUS },
+						{ 52.2, 55.2, MAP.SILITHUS },
+						{ 64.2, 58.2, MAP.SILITHUS },
 						-- #else
-						{ 28.8, 42.2, SILITHUS },
-						{ 39.8, 55.2, SILITHUS },
-						{ 48.8, 62.6, SILITHUS },
-						{ 61.8, 64.4, SILITHUS },
+						{ 28.8, 42.2, MAP.SILITHUS },
+						{ 39.8, 55.2, MAP.SILITHUS },
+						{ 48.8, 62.6, MAP.SILITHUS },
+						{ 61.8, 64.4, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				n(14477, {	-- Grubthor
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 34.6, 72.8, SILITHUS },
-						{ 49.2, 72.6, SILITHUS },
-						{ 41.2, 64.8, SILITHUS },
-						{ 50.0, 62.8, SILITHUS },
+						{ 34.6, 72.8, MAP.SILITHUS },
+						{ 49.2, 72.6, MAP.SILITHUS },
+						{ 41.2, 64.8, MAP.SILITHUS },
+						{ 50.0, 62.8, MAP.SILITHUS },
 						-- #else
-						{ 27.2, 82.0, SILITHUS },
-						{ 36.2, 71.6, SILITHUS },
-						{ 48.6, 67.2, SILITHUS },
-						{ 44.8, 80.2, SILITHUS },
+						{ 27.2, 82.0, MAP.SILITHUS },
+						{ 36.2, 71.6, MAP.SILITHUS },
+						{ 48.6, 67.2, MAP.SILITHUS },
+						{ 44.8, 80.2, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				n(14478, {	-- Huricanian
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 33.8, 14.6, SILITHUS },
-						{ 36.2, 17.8, SILITHUS },
-						{ 36.8, 21.0, SILITHUS },
-						{ 36.8, 23.6, SILITHUS },
-						{ 33.2, 26.4, SILITHUS },
-						{ 30.8, 26.2, SILITHUS },
-						{ 30.2, 24.2, SILITHUS },
-						{ 29.4, 19.2, SILITHUS },
+						{ 33.8, 14.6, MAP.SILITHUS },
+						{ 36.2, 17.8, MAP.SILITHUS },
+						{ 36.8, 21.0, MAP.SILITHUS },
+						{ 36.8, 23.6, MAP.SILITHUS },
+						{ 33.2, 26.4, MAP.SILITHUS },
+						{ 30.8, 26.2, MAP.SILITHUS },
+						{ 30.2, 24.2, MAP.SILITHUS },
+						{ 29.4, 19.2, MAP.SILITHUS },
 						-- #else
-						{ 29.4, 24.4, SILITHUS },
-						{ 29.8, 19.8, SILITHUS },
-						{ 28.2, 16.0, SILITHUS },
-						{ 27.0, 13.8, SILITHUS },
-						{ 24.2, 13.0, SILITHUS },
-						{ 21.4, 17.0, SILITHUS },
-						{ 21.4, 22.6, SILITHUS },
-						{ 22.2, 26.2, SILITHUS },
-						{ 23.0, 28.8, SILITHUS },
-						{ 26.0, 26.8, SILITHUS },
+						{ 29.4, 24.4, MAP.SILITHUS },
+						{ 29.8, 19.8, MAP.SILITHUS },
+						{ 28.2, 16.0, MAP.SILITHUS },
+						{ 27.0, 13.8, MAP.SILITHUS },
+						{ 24.2, 13.0, MAP.SILITHUS },
+						{ 21.4, 17.0, MAP.SILITHUS },
+						{ 21.4, 22.6, MAP.SILITHUS },
+						{ 22.2, 26.2, MAP.SILITHUS },
+						{ 23.0, 28.8, MAP.SILITHUS },
+						{ 26.0, 26.8, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				n(50370, {	-- Karapax
-					["coord"] = { 57.5, 14.8, SILITHUS },
+					["coord"] = { 57.5, 14.8, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14476, {	-- Krellack
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 62.4, 18.6, SILITHUS },
-						{ 67.6, 28.8, SILITHUS },
-						{ 69.8, 37.4, SILITHUS },
-						{ 64.8, 39.4, SILITHUS },
+						{ 62.4, 18.6, MAP.SILITHUS },
+						{ 67.6, 28.8, MAP.SILITHUS },
+						{ 69.8, 37.4, MAP.SILITHUS },
+						{ 64.8, 39.4, MAP.SILITHUS },
 						-- #else
-						{ 59.8, 19.6, SILITHUS },
-						{ 65.8, 30.0, SILITHUS },
-						{ 62.8, 42.4, SILITHUS },
-						{ 69.6, 41.0, SILITHUS },
+						{ 59.8, 19.6, MAP.SILITHUS },
+						{ 65.8, 30.0, MAP.SILITHUS },
+						{ 62.8, 42.4, MAP.SILITHUS },
+						{ 69.6, 41.0, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				n(14473, {	-- Lapress
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 58.6, 66.8, SILITHUS },
-						{ 55.4, 71.0, SILITHUS },
-						{ 57.6, 76.0, SILITHUS },
-						{ 60.8, 68.8, SILITHUS },
-						{ 61.6, 66.0, SILITHUS },
-						{ 63.0, 73.4, SILITHUS },
-						{ 65.6, 75.2, SILITHUS },
-						{ 63.6, 82.0, SILITHUS },
+						{ 58.6, 66.8, MAP.SILITHUS },
+						{ 55.4, 71.0, MAP.SILITHUS },
+						{ 57.6, 76.0, MAP.SILITHUS },
+						{ 60.8, 68.8, MAP.SILITHUS },
+						{ 61.6, 66.0, MAP.SILITHUS },
+						{ 63.0, 73.4, MAP.SILITHUS },
+						{ 65.6, 75.2, MAP.SILITHUS },
+						{ 63.6, 82.0, MAP.SILITHUS },
 						-- #else
-						{ 54.4, 83.8, SILITHUS },
-						{ 55.2, 89.8, SILITHUS },
-						{ 63.8, 91.6, SILITHUS },
-						{ 61.6, 84.0, SILITHUS },
-						{ 64.2, 83.6, SILITHUS },
-						{ 64.8, 82.4, SILITHUS },
-						{ 64.2, 79.4, SILITHUS },
+						{ 54.4, 83.8, MAP.SILITHUS },
+						{ 55.2, 89.8, MAP.SILITHUS },
+						{ 63.8, 91.6, MAP.SILITHUS },
+						{ 61.6, 84.0, MAP.SILITHUS },
+						{ 64.2, 83.6, MAP.SILITHUS },
+						{ 64.8, 82.4, MAP.SILITHUS },
+						{ 64.2, 79.4, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				n(50745, {	-- Losaj
-					["coord"] = { 42.6, 56.6, SILITHUS },
+					["coord"] = { 42.6, 56.6, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50743, {	-- Manax
-					["coord"] = { 67.5, 66.6, SILITHUS },
+					["coord"] = { 67.5, 66.6, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50742, {	-- Qem
-					["coord"] = { 44.0, 17.2, SILITHUS },
+					["coord"] = { 44.0, 17.2, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50744, {	-- Qu'rik
-					["coord"] = { 54.6, 26.6, SILITHUS },
+					["coord"] = { 54.6, 26.6, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14475, {	-- Rex Ashil
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 51.0, 23.0, SILITHUS },
-						{ 52.0, 24.8, SILITHUS },
-						{ 51.6, 26.6, SILITHUS },
+						{ 51.0, 23.0, MAP.SILITHUS },
+						{ 52.0, 24.8, MAP.SILITHUS },
+						{ 51.6, 26.6, MAP.SILITHUS },
 						-- #else
-						{ 47.2, 23.8, SILITHUS },
-						{ 47.6, 26.6, SILITHUS },
-						{ 46.0, 28.4, SILITHUS },
+						{ 47.2, 23.8, MAP.SILITHUS },
+						{ 47.6, 26.6, MAP.SILITHUS },
+						{ 46.0, 28.4, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				n(14471, {	-- Setis
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 36.0, 82.8, SILITHUS },
+						{ 36.0, 82.8, MAP.SILITHUS },
 						-- #else
-						{ 48.0, 82.6, SILITHUS },
-						{ 22.2, 80.6, SILITHUS },
-						{ 27.8, 86.6, SILITHUS },
-						{ 22.6, 87.2, SILITHUS },
+						{ 48.0, 82.6, MAP.SILITHUS },
+						{ 22.2, 80.6, MAP.SILITHUS },
+						{ 27.8, 86.6, MAP.SILITHUS },
+						{ 22.6, 87.2, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
 				n(51004, {	-- Toxx
-					["coord"] = { 42.8, 18.2, SILITHUS },
+					["coord"] = { 42.8, 18.2, MAP.SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14479, {	-- Twilight Lord Everun <Twilight's Hammer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 44.2, 40.2, SILITHUS },
-						{ 45.2, 42.6, SILITHUS },
-						{ 33.0, 30.0, SILITHUS },
-						{ 35.0, 30.8, SILITHUS },
+						{ 44.2, 40.2, MAP.SILITHUS },
+						{ 45.2, 42.6, MAP.SILITHUS },
+						{ 33.0, 30.0, MAP.SILITHUS },
+						{ 35.0, 30.8, MAP.SILITHUS },
 						-- #else
-						{ 25.6, 33.4, SILITHUS },
-						{ 40.2, 44.6, SILITHUS },
-						{ 19.8, 83.8, SILITHUS },
+						{ 25.6, 33.4, MAP.SILITHUS },
+						{ 40.2, 44.6, MAP.SILITHUS },
+						{ 19.8, 83.8, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = {
@@ -2707,13 +2707,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(14474, {	-- Zora
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 33.8, 53.4, SILITHUS },
-						{ 32.0, 55.8, SILITHUS },
+						{ 33.8, 53.4, MAP.SILITHUS },
+						{ 32.0, 55.8, MAP.SILITHUS },
 						-- #else
-						{ 20.2, 58.2, SILITHUS },
-						{ 23.6, 61.8, SILITHUS },
-						{ 17.6, 65.8, SILITHUS },
-						{ 24.0, 71.2, SILITHUS },
+						{ 20.2, 58.2, MAP.SILITHUS },
+						{ 23.6, 61.8, MAP.SILITHUS },
+						{ 17.6, 65.8, MAP.SILITHUS },
+						{ 24.0, 71.2, MAP.SILITHUS },
 						-- #endif
 					},
 				}),
@@ -3000,7 +3000,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_FOUR, i(226409, {	-- Rune of Dagger Specialization
 					["provider"] = { "o", 457100 },	-- Renzik's Thoughts on "Fair" Fighting
-					["coord"] = { 20.0, 85.1, SILITHUS },
+					["coord"] = { 20.0, 85.1, MAP.SILITHUS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 					["groups"] = {
@@ -3011,7 +3011,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_FOUR, i(226411, {	-- Rune of Fist Weapon Specialization
 					["provider"] = { "o", 457096 },	-- Be First: A Brawler's Guide to Boxing
-					["coord"] = { 38.2, 45.5, SILITHUS },
+					["coord"] = { 38.2, 45.5, MAP.SILITHUS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
 					["groups"] = {
@@ -3026,9 +3026,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(15293, {	-- Aendel Windspear
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.6, 45.8, SILITHUS },
+						{ 64.6, 45.8, MAP.SILITHUS },
 						-- #else
-						{ 62.6, 49.8, SILITHUS },
+						{ 62.6, 49.8, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
@@ -3053,9 +3053,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(15174, {	-- Calandrath <Innkeeper>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.5, 36.8, SILITHUS },
+						{ 55.5, 36.8, MAP.SILITHUS },
 						-- #else
-						{ 51.8, 39.0, SILITHUS },
+						{ 51.8, 39.0, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = {
@@ -3068,9 +3068,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(15419, {	-- Kania <Enchanting Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.6, 37.2, SILITHUS },
+						{ 55.6, 37.2, MAP.SILITHUS },
 						-- #else
-						{ 52.0, 39.7, SILITHUS },
+						{ 52.0, 39.7, MAP.SILITHUS },
 						-- #endif
 					},
 					["sym"] = {
@@ -3107,9 +3107,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(15175, {	-- Khur Hornstriker <Reagent Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.8, 34.8, SILITHUS },
+						{ 52.8, 34.8, MAP.SILITHUS },
 						-- #else
-						{ 48.8, 37.0, SILITHUS },
+						{ 48.8, 37.0, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
@@ -3140,9 +3140,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(15179, {	-- Mishta <Trade Supplies> [TBC+] / Mishta <General Trade Goods Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.8, 34.3, SILITHUS },
+						{ 53.8, 34.3, MAP.SILITHUS },
 						-- #else
-						{ 49.8, 36.4, SILITHUS },
+						{ 49.8, 36.4, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
@@ -3208,9 +3208,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(15176, {	-- Vargus <Blacksmith>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.0, 36.5, SILITHUS },
+						{ 55.0, 36.5, MAP.SILITHUS },
 						-- #else
-						{ 51.2, 38.8, SILITHUS },
+						{ 51.2, 38.8, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
@@ -3243,9 +3243,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 81.2, 18.6, SILITHUS },
+						{ 81.2, 18.6, MAP.SILITHUS },
 						-- #else
-						{ 81.8, 17.8, SILITHUS },
+						{ 81.8, 17.8, MAP.SILITHUS },
 						-- #endif
 					},
 					["groups"] = {

@@ -11,9 +11,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["mapID"] = RAZORFEN_DOWNS,
 		["coords"] = {
 			-- #if AFTER CATA
-			{ 43.5, 25.2, THOUSAND_NEEDLES },	-- Razorfen Downs
+			{ 43.5, 25.2, MAP.THOUSAND_NEEDLES },	-- Razorfen Downs
 			-- #else
-			{ 50.0, 92.0, THE_BARRENS },
+			{ 50.0, 92.0, MAP.THE_BARRENS },
 			-- #endif
 		},
 		["lvl"] = lvlsquish(35, 35, 15),
@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(6626, {	-- A Host of Evil
 					["qg"] = 12866,	-- Myriam Moonsinger
-					["coord"] = { 49.0, 94.0, THE_BARRENS },
+					["coord"] = { 49.0, 94.0, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 					["groups"] = {
@@ -45,15 +45,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 2425 },	-- Varimathras
 						-- #endif
 					},
-					["coord"] = { 56.3, 92.2, UNDERCITY },
+					["coord"] = { 56.3, 92.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ambassador Malcin's Head
 							["provider"] = { "i", 17009 },	-- Ambassador Malcin's Head
-							["coord"] = { 48.6, 95.6, THE_BARRENS },
+							["coord"] = { 48.6, 95.6, MAP.THE_BARRENS },
 							["cr"] = 12865,	-- Ambassador Malcin
 						}),
 						i(17039, {	-- Skullbreaker
@@ -70,15 +70,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(14353, {	-- An Unholy Alliance (2/2) (After Wrathgate)
 					["sourceQuest"] = 14352,	-- An Unholy Alliance (1/2) (After Wrathgate)
 					["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
-					["coord"] = { 56.3, 92.2, UNDERCITY },
+					["coord"] = { 56.3, 92.2, MAP.UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ambassador Malcin's Head
 							["provider"] = { "i", 17009 },	-- Ambassador Malcin's Head
-							["coord"] = { 48.6, 95.6, THE_BARRENS },
+							["coord"] = { 48.6, 95.6, MAP.THE_BARRENS },
 							["cr"] = 12865,	-- Ambassador Malcin
 						}),
 						i(17039, {	-- Skullbreaker
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3341, {	-- Bring the End
 					["qg"] = 2308,	-- Andrew Brownell
-					["coord"] = { 74.0, 32.8, UNDERCITY },
+					["coord"] = { 74.0, 32.8, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3636, {	-- Bring the Light
 					["qg"] = 1284,	-- Archbishop Benedictus
-					["coord"] = { 39.6, 27.4, STORMWIND_CITY },
+					["coord"] = { 39.6, 27.4, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 39,
@@ -199,7 +199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27063, {	-- Looming Threat [Alliance]
 					["qg"] = 40032,	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27062, {	-- Looming Threat [Horde]
 					["qg"] = 39895,	-- Kanati Greycloud
-					["coord"] = { 11.1, 11.2, THOUSAND_NEEDLES },
+					["coord"] = { 11.1, 11.2, MAP.THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -314,9 +314,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(7895, {	-- Ambassador Bloodrage
 				-- #if BEFORE CATA
 				["coords"] = {
-					{ 46.2, 87.4, THE_BARRENS },
-					{ 48.0, 90.4, THE_BARRENS },
-					{ 48.6, 95.6, THE_BARRENS },
+					{ 46.2, 87.4, MAP.THE_BARRENS },
+					{ 48.0, 90.4, MAP.THE_BARRENS },
+					{ 48.6, 95.6, MAP.THE_BARRENS },
 				},
 				-- #else
 				["maps"] = { SOUTHERN_BARRENS },

@@ -21,10 +21,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["coords"] = {
 			-- #if AFTER CATA
 			{ 36.6, 29.4, ULDAMAN_OUTDOORS },	-- Uldaman [Front], Uldaman [Badlands]
-			{ 60.7, 37.4, BADLANDS },	-- Uldaman [Side]
+			{ 60.7, 37.4, MAP.BADLANDS },	-- Uldaman [Side]
 			-- #else
 			{ 36.6, 29.4, ULDAMAN_OUTDOORS },	-- Uldaman [Front], Uldaman [Badlands]
-			{ 64.0, 44.0, BADLANDS },	-- Uldaman [Side]
+			{ 64.0, 44.0, MAP.BADLANDS },	-- Uldaman [Side]
 			-- #endif
 		},
 		["maps"] = { ULDAMAN_OUTDOORS, ULDAMAN_LEVEL2 },
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2964, {	-- A Future Task [Alliance]
 					["sourceQuest"] = 2977,	-- Return to Ironforge
 					["qg"] = 2916,	-- Historian Karnik
-					["coord"] = { 77.2, 11.8, IRONFORGE },
+					["coord"] = { 77.2, 11.8, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2968, {	-- A Future Task [Horde]
 					["sourceQuest"] = 2967,	-- Return to Thunder Bluff
 					["qg"] = 3978,	-- Sage Truthseeker
-					["coord"] = { 34.4, 46.9, THUNDER_BLUFF },
+					["coord"] = { 34.4, 46.9, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2200, {	-- Back to Uldaman
 					["sourceQuest"] = 2199,	-- Lore for a Price
 					["qg"] = 6826,	-- Talvash del Kissel
-					["coord"] = { 36.4, 3.6, IRONFORGE },
+					["coord"] = { 36.4, 3.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
@@ -150,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 6868 },	-- Jarkal Mossmeld
 						{ "i", 7887 },	-- Necklace and Gem Salvage
 					},
-					["coord"] = { 2.6, 46.0, BADLANDS },
+					["coord"] = { 2.6, 46.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 6868 },	-- Jarkal Mossmeld
 						{ "i", 7668 },	-- Bloodstained Journal
 					},
-					["coord"] = { 2.6, 46.0, BADLANDS },
+					["coord"] = { 2.6, 46.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -218,7 +218,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2199, {	-- Lore for a Price
 					["sourceQuest"] = 2198,	-- The Shattered Necklace
 					["qg"] = 6826,	-- Talvash del Kissel
-					["coord"] = { 36.4, 3.6, IRONFORGE },
+					["coord"] = { 36.4, 3.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2842, 5 } },	-- Silver Bar (x5)
 					["races"] = ALLIANCE_ONLY,
@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2283, {	-- Necklace Recovery
 					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
-					["coord"] = { 59.4, 36.8, ORGRIMMAR },
+					["coord"] = { 59.4, 36.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -239,7 +239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2284, {	-- Necklace Recovery, Take 2
 					["sourceQuest"] = 2283,	-- Necklace Recovery
 					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
-					["coord"] = { 59.4, 36.8, ORGRIMMAR },
+					["coord"] = { 59.4, 36.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -247,7 +247,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2341, {	-- Necklace Recovery, Take 3
 					["sourceQuest"] = 2340,	-- Deliver the Gems
 					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
-					["coord"] = { 59.4, 36.8, ORGRIMMAR },
+					["coord"] = { 59.4, 36.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -260,7 +260,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2963, {	-- Portents of Uldum [Alliance]
 					["sourceQuest"] = 2439,	-- The Platinum Discs (3/3) [Alliance]
 					["qg"] = 5387,	-- High Explorer Magellas
-					["coord"] = { 69.8, 18.4, IRONFORGE },
+					["coord"] = { 69.8, 18.4, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
@@ -268,7 +268,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2965, {	-- Portents of Uldum [Horde]
 					["sourceQuest"] = 2440,	-- The Platinum Discs (3/3) [Horde]
 					["qg"] = 3978,	-- Sage Truthseeker
-					["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
+					["coord"] = { 34.6, 47.2, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -276,7 +276,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1956, {	-- Power in Uldaman
 					["sourceQuest"] = 1955,	-- The Exorcism
 					["qg"] = 6546,	-- Tabetha
-					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["coord"] = { 46.0, 57.0, MAP.DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 35,
@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3375, {	-- Replacement Phial
 					["sourceQuest"] = 2199,	-- Lore for a Price
 					["qg"] = 6826,	-- Talvash del Kissel
-					["coord"] = { 36.4, 3.6, IRONFORGE },
+					["coord"] = { 36.4, 3.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 3827, 1 },	-- Mana Potion
@@ -318,7 +318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2361, {	-- Restoring the Necklace (2/2)
 					["sourceQuest"] = 2204,	-- Restoring the Necklace (1/2)
 					["qg"] = 6826,	-- Talvash del Kissel
-					["coord"] = { 36.4, 3.6, IRONFORGE },
+					["coord"] = { 36.4, 3.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
@@ -334,9 +334,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "o", 142343 },	-- Uldum Pedestal
 						{ "i", 6064 },	-- Miniature Platinum Discs
 					},
-					["coord"] = { 37.7, 81.5, TANARIS },
+					["coord"] = { 37.7, 81.5, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -346,9 +346,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "o", 142343 },	-- Uldum Pedestal
 						{ "i", 6064 },	-- Miniature Platinum Discs
 					},
-					["coord"] = { 37.7, 81.5, TANARIS },
+					["coord"] = { 37.7, 81.5, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -358,7 +358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 2916 },	-- Historian Karnik
 						{ "i", 6064 },	-- Miniature Platinum Discs
 					},
-					["coord"] = { 77.2, 11.8, IRONFORGE },
+					["coord"] = { 77.2, 11.8, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
@@ -369,7 +369,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 5770 },	-- Nara Wildmane
 						{ "i", 6064 },	-- Miniature Platinum Discs
 					},
-					["coord"] = { 75.6, 31.2, THUNDER_BLUFF },
+					["coord"] = { 75.6, 31.2, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -413,7 +413,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2398, {	-- The Lost Dwarves
 					["qg"] = 1356,	-- Prospector Stormpike
-					["coord"] = { 74.6, 11.7, IRONFORGE },
+					["coord"] = { 74.6, 11.7, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -422,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1139, {	-- The Lost Tablets of Will
 					["sourceQuest"] = 762,	-- An Ambassador of Evil
 					["qg"] = 2918,	-- Advisor Belgrum
-					["coord"] = { 77.3, 9.7, IRONFORGE },
+					["coord"] = { 77.3, 9.7, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -473,7 +473,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2439, {	-- The Platinum Discs (3/3) [Alliance]
 					["sourceQuest"] = 2279,	-- The Platinum Discs (2/3) [Alliance]
 					["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
-					["coord"] = { 69.9, 18.6, IRONFORGE },
+					["coord"] = { 69.9, 18.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 8070, 1 } },	-- Reward Voucher
 					["races"] = ALLIANCE_ONLY,
@@ -487,7 +487,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2440, {	-- The Platinum Discs (3/3) [Horde]
 					["sourceQuest"] = 2280,	-- The Platinum Discs (2/3) [Horde]
 					["qg"] = 3978,	-- Sage Truthseeker
-					["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
+					["coord"] = { 34.6, 47.2, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 8070, 1 } },	-- Reward Voucher
 					["races"] = HORDE_ONLY,
@@ -510,7 +510,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						2966,	-- Seeing What Happens [Thunder Bluff]
 					},
 					["provider"] = { "o", 142343 },	-- Uldum Pedestal
-					["coord"] = { 37.7, 81.5, TANARIS },
+					["coord"] = { 37.7, 81.5, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
@@ -530,7 +530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 6868 },	-- Jarkal Mossmeld
 						{ "i", 7886 },	-- Untranslated Journal
 					},
-					["coord"] = { 2.6, 46.0, BADLANDS },
+					["coord"] = { 2.6, 46.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -610,7 +610,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 34.0, 84.5, ULDAMAN_OUTDOORS },	-- North Common Hall
 						{ 32.4, 62.4, ULDAMAN_OUTDOORS },	-- South Common Hall
 					},
-					["maps"] = { BADLANDS },
+					["maps"] = { MAP.BADLANDS },
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["groups"] = {

@@ -70,7 +70,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 				}),
 				i(139522, {	-- Bloody Note
 					["criteriaID"] = 34873,	-- Bloody Note
-					["maps"] = { AZSHARA },
+					["maps"] = { MAP.AZSHARA },
 					["crs"] = {108133, 108139, 108153, 108146},
 					["description"] = "Pirates in southern-east Azsuna."
 				}),
@@ -124,7 +124,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 				}),
 				i(139520, {	-- Fevered Plea
 					["criteriaID"] = 34882,	-- Fevered Plea
-					["maps"] = { AZSHARA },
+					["maps"] = { MAP.AZSHARA },
 					["crs"] = {111598, 111630, 111586 },
 					["description"] = "Murlocs at the southern tip in Azsuna."
 				}),
@@ -148,7 +148,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 				}),
 				i(139521, {	-- Singed Note
 					["criteriaID"] = 34886,	-- Singed Note
-					["maps"] = { AZSHARA },
+					["maps"] = { MAP.AZSHARA },
 					["crs"] = {88101, 88099, 108146},
 					["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy."
 				}),

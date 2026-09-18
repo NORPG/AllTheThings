@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(SILVERPINE_FOREST, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.SILVERPINE_FOREST, {
 		["lore"] = "Silverpine Forest is a vast ancient wood that runs along Lordaeron's rugged western coast. The land ranges from fairly flat to hilly, and is nestled among even taller mountains. The forest is eerily silent save for the occasional unnatural howling echoing among the trees. Mossy overhangs shiver in the cold breeze, and the trees are all sickly or dying. Dilapidated farmsteads and abandoned mines dot the land, home now to the darker denizens of the woods.\n\nThis woodland is haunted and wild, characterized by its tall, silver-barked pines towering over grassy knolls. The Alliance once protected Silverpine Forest when it was verdant and lively. Now the place is shrouded in ghostly mists. Forsaken control the northern forest. What remains of the human population retains control of the southern forest, but they are desperate and their forces thinly stretched. Dalaran sends frequent expeditions into Silverpine to defend these people and study the undead plague and worgen curse — a mysterious affliction that causes its victims to transform into bloodthirsty, lycanthropic worgen when the moon rises.",
 		["icon"] = 236830,
 		["groups"] = {
@@ -94,19 +94,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest
 					["cr"] = 44825,	-- Bat Handler Maggotbreath <Flight Master>
-					["coord"] = { 57.8, 8.80, SILVERPINE_FOREST },
+					["coord"] = { 57.8, 8.80, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(681, {	-- Forsaken Rear Guard, Silverpine Forest
 					["cr"] = 50463,	-- Franny Mertz <Bat Handler>
-					["coord"] = { 45.8, 21.8, SILVERPINE_FOREST },
+					["coord"] = { 45.8, 21.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(654, {	-- The Forsaken Front, Silverpine Forest
 					["cr"] = 46552,	-- Steven Stutzka <Bat Handler>
-					["coord"] = { 50.8, 63.6, SILVERPINE_FOREST },
+					["coord"] = { 50.8, 63.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -114,9 +114,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2226,	-- Karos Razok <Bat Handler>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 45.4, 42.4, SILVERPINE_FOREST },
+						{ 45.4, 42.4, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 45.6, 42.6, SILVERPINE_FOREST },
+						{ 45.6, 42.6, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if BEFORE CATA
 			lockpicking({
 				o(103815, {	-- Ambermill Strongbox
-					["coord"] = { 63.7, 65.2, SILVERPINE_FOREST },
+					["coord"] = { 63.7, 65.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 1,
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27550,	-- Pyrewood's Fall
 					},
 					["qg"] = 45879,	-- Lord Walden
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -159,14 +159,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(530, {	-- A Husband's Revenge
 					["sourceQuest"] = 441,	-- Raleigh and the Undercity
 					["qg"] = 2050,	-- Raleigh Andrean
-					["coord"] = { 62.0, 43.0, UNDERCITY },
+					["coord"] = { 62.0, 43.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {
 							["provider"] = { "i", 3613 },	-- Valdred's Hands
-							["coord"] = { 46.4, 84.6, SILVERPINE_FOREST },
+							["coord"] = { 46.4, 84.6, MAP.SILVERPINE_FOREST },
 							["cr"] = 2332,	-- Valdred Moray
 						}),
 						i(3235, {	-- Ring of Scorn
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(447, {	-- A Recipe For Death (1/3)
 					["qg"] = 1937,	-- Apothecary Renferrel
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(450, {	-- A Recipe For Death (2/3)
 					["sourceQuest"] = 447,	-- A Recipe For Death (1/3)
 					["qg"] = 2055,	-- Master Apothecary Faranell
-					["coord"] = { 48.6, 69.4, UNDERCITY },
+					["coord"] = { 48.6, 69.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -215,14 +215,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3255 },	-- Berard's Journal
 								{ "o", 1594 },	-- Berard's Bookshelf
 							},
-							["coord"] = { 43.0, 73.3, SILVERPINE_FOREST },
+							["coord"] = { 43.0, 73.3, MAP.SILVERPINE_FOREST },
 						}),
 					},
 				}),
 				q(451, {	-- A Recipe For Death (3/3)
 					["sourceQuest"] = 450,	-- A Recipe For Death (2/3)
 					["qg"] = 1937,	-- Apothecary Renferrel
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						176567,	-- High Warlord Cromush
 						-- #endif
 					},
-					["coord"] = { 52.2, 66.3, SILVERPINE_FOREST },
+					["coord"] = { 52.2, 66.3, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26992, {	-- Agony Abounds
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
 					["qg"] = 44778,	-- Apothecary Witherbloom
-					["coord"] = { 56.7, 9.1, SILVERPINE_FOREST },
+					["coord"] = { 56.7, 9.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -311,7 +311,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(479, {	-- Ambermill Investigations
 					["sourceQuest"] = 482,	-- Dalaran's Intentions
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -329,7 +329,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(422, {	-- Arugal's Folly (1/4)
 					["sourceQuest"] = 421,	-- Prove Your Worth
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
+					["coord"] = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -339,14 +339,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3155 },	-- Remedy of Arugal
 								{ "o", 1571 },	-- Dusty Spellbooks
 							},
-							["coord"] = { 52.8, 28.4, SILVERPINE_FOREST },
+							["coord"] = { 52.8, 28.4, MAP.SILVERPINE_FOREST },
 						}),
 					},
 				}),
 				q(423, {	-- Arugal's Folly (2/4)
 					["sourceQuest"] = 422,	-- Arugal's Folly (1/4)
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
+					["coord"] = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -364,14 +364,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(424, {	-- Arugal's Folly (3/4)
 					["sourceQuest"] = 423,	-- Arugal's Folly (2/4)
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
+					["coord"] = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Grimson
 							["provider"] = { "i", 3634 },	-- Head of Grimson
-							["coord"] = { 58.6, 44.8, SILVERPINE_FOREST },
+							["coord"] = { 58.6, 44.8, MAP.SILVERPINE_FOREST },
 							["cr"] = 1972,	-- Grimson the Pale
 						}),
 					},
@@ -379,7 +379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(99, {	-- Arugal's Folly (4/4)
 					["sourceQuest"] = 424,	-- Arugal's Folly (3/4)
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
+					["coord"] = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -415,14 +415,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(442, {	-- Assault on Fenris Isle
 					["sourceQuest"] = 448,	-- Report to Hadrec
 					["qg"] = 1952,	-- High Executor Hadrec
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Thule's Head
 							["provider"] = { "i", 3623 },	-- Thule's Head
-							["coord"] = { 65.6, 24.6, SILVERPINE_FOREST },
+							["coord"] = { 65.6, 24.6, MAP.SILVERPINE_FOREST },
 							["cr"] = 1947,	-- Thule Ravenclaw
 						}),
 						i(3461, {	-- High Robe of the Adjudicator
@@ -436,13 +436,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27056, {	-- Belmont's Report
 					["sourceQuest"] = 27045,	-- Waiting to Exsanguinate
 					["qg"] = 44789,	-- Deathstalker Commander Belmont
-					["coord"] = { 58.0, 8.9, SILVERPINE_FOREST },
+					["coord"] = { 58.0, 8.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(516, {	-- Beren's Peril
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
@@ -463,7 +463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2121 },	-- Shadow Priest Allister
 						{ "o", 1627 },	-- Dalaran Crate
 					},
-					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -471,7 +471,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27474, {	-- Breaking the Barrier
 					["sourceQuest"] = 27472,	-- Rise, Godfrey
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -486,7 +486,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27601, {	-- Cities in Dust
 					["sourceQuest"] = 27594,	-- On Her Majesty's Secret Service
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27194, {	-- Cornered and Crushed!
 					["sourceQuest"] = 27193,	-- Seek and Destroy
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
-					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
+					["coord"] = { 44.8, 41.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27475,	-- Unyielding Servitors
 					},
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -527,7 +527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2121 },	-- Shadow Priest Allister
 						{ "i", 3353 },	-- Rune-inscribed Pendant
 					},
-					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -535,7 +535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(482, {	-- Dalaran's Intentions
 					["sourceQuest"] = 481,	-- Dalar's Analysis
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
+					["coord"] = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -546,14 +546,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26989,	-- The Gilneas Liberation Front
 					},
 					["qg"] = 44789,	-- Deathstalker Commander Belmont
-					["coord"] = { 58.0, 8.9, SILVERPINE_FOREST },
+					["coord"] = { 58.0, 8.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27094, {	-- Deeper into Darkness
 					["sourceQuest"] = 27095,	-- Skitterweb Menace
 					["qg"] = 44917,	-- Warlord Torok
-					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 21.3, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -577,13 +577,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27746, {	-- Empire of Dirt
 					["sourceQuest"] = 27601,	-- Cities in Dust
 					["qg"] = 46124,	-- Lady Sylvanas Windrunner
-					["coord"] = { 45.3, 84.4, SILVERPINE_FOREST },
+					["coord"] = { 45.3, 84.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(435, {	-- Escorting Erland
 					["qg"] = 1978,	-- Deathstalker Erland
-					["coord"] = { 56.2, 9.2, SILVERPINE_FOREST },
+					["coord"] = { 56.2, 9.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -596,7 +596,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27181, {	-- Excising the Taint
 					["sourceQuest"] = 27098,	-- Lordaeron [Shifted back 1 quest... no history in report Discord 2023-07-29]
 					["qg"] = 45195,	-- Bloodfang Stalker
-					["coord"] = { 46.1, 50.2, SILVERPINE_FOREST },
+					["coord"] = { 46.1, 50.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27073, {	-- Give 'em Hell!
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
 					["qg"] = 44917,	-- Warlord Torok
-					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
+					["coord"] = { 43.9, 21.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -657,7 +657,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26995, {	-- Guts and Gore
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
 					["qg"] = 44784,	-- High Apothecary Shana T'veen
-					["coord"] = { 56.2, 8.3, SILVERPINE_FOREST },
+					["coord"] = { 56.2, 8.3, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27226, {	-- Hair of the Dog
 					["sourceQuest"] = 27098,	-- Lordaeron
 					["qg"] = 44917,	-- Warlord Torok
-					["coord"] = { 45.7, 41.9, SILVERPINE_FOREST },
+					["coord"] = { 45.7, 41.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -697,7 +697,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27180, {	-- Honor the Dead
 					["sourceQuest"] = 27098,	-- Lordaeron
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
-					["coord"] = { 44.9, 41.6, SILVERPINE_FOREST },
+					["coord"] = { 44.9, 41.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(60862) },	-- Forsaken Insignia (QI!)
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26995,	-- Guts and Gore
 					},
 					["qg"] = 44784,	-- High Apothecary Shana T'veen
-					["coord"] = { 56.2, 8.4, SILVERPINE_FOREST },
+					["coord"] = { 56.2, 8.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27088, {	-- It's Only Poisonous if You Ingest It
 					["sourceQuest"] = 27082,	-- Playing Dirty
 					["qg"] = 44912,	-- Apothecary Wormcrud
-					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
+					["coord"] = { 44.7, 20.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -768,14 +768,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(425, {	-- Ivar the Foul
 					["sourceQuest"] = 430,	-- Return to Quinn
 					["qg"] = 1950,	-- Rane Yorick
-					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
+					["coord"] = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ivar's Head
 							["provider"] = { "i", 3621 },	-- Ivar's Head
-							["coord"] = { 51.8, 13.8, SILVERPINE_FOREST },
+							["coord"] = { 51.8, 13.8, MAP.SILVERPINE_FOREST },
 							["cr"] = 1971,	-- Ivar the Foul
 						}),
 						i(3453, {	-- Quilted Bracers
@@ -791,7 +791,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1937 },	-- Apothecary Renferrel
 						{ "i", 3468 },	-- Renferrel's Findings
 					},
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27548, {	-- Lessons in Fear
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
 					["qg"] = 45879,	-- Lord Walden
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -811,7 +811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27098, {	-- Lordaeron
 					["sourceQuest"] = 27099,	-- No Escape
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
+					["coord"] = { 57.3, 10.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -825,7 +825,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(428, {	-- Lost Deathstalkers
 					["qg"] = 1952,	-- High Executor Hadrec
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -837,7 +837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27069,	-- Steel Thunder
 					},
 					["qg"] = 44916,	-- Admiral Hatchet
-					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 21.3, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -852,7 +852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1627 },	-- Dalaran Crate
 						{ "i", 3353 },	-- Rune-inscribed Pendant
 					},
-					["coord"] = { 49.9, 60.4, SILVERPINE_FOREST },
+					["coord"] = { 49.9, 60.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -860,7 +860,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27099, {	-- No Escape
 					["sourceQuest"] = 27097,	-- Rise, Forsaken
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
-					["coord"] = { 65.7, 26.4, SILVERPINE_FOREST },
+					["coord"] = { 65.7, 26.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -878,7 +878,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27195, {	-- Nowhere to Run
 					["sourceQuest"] = 27194,	-- Cornered and Crushed
 					["qg"] = 45228,	-- Master Forteski
-					["coord"] = { 55.8, 46.3, SILVERPINE_FOREST },
+					["coord"] = { 55.8, 46.3, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -899,7 +899,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27547, {	-- Of No Consequence
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
 					["qg"] = 45880,	-- Baron Ashbury
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -914,7 +914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27580,	-- Sowing Discord
 					},
 					["qg"] = 45878,	-- Lord Godfrey
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -935,7 +935,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27478,	-- Relios the Relic Keeper
 					},
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
+					["coord"] = { 47.0, 43.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -946,14 +946,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27093,	-- Lost in the Darkness
 					},
 					["qg"] = 44916,	-- Admiral Hatchet
-					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 21.3, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27082, {	-- Playing Dirty
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
 					["qg"] = 44912,	-- Apothecary Wormcrud
-					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
+					["coord"] = { 44.7, 20.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -969,7 +969,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27483, {	-- Practical Vengeance
 					["sourceQuest"] = 27476,	-- Dalar Dawnweaver
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
+					["coord"] = { 47.0, 43.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(421, {	-- Prove Your Worth
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
+					["coord"] = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -1010,7 +1010,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(452, {	-- Pyrewood Ambush
 					["qg"] = 2058,	-- Deathstalker Faerleia
-					["coord"] = { 46.4, 74.2, SILVERPINE_FOREST },
+					["coord"] = { 46.4, 74.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -1029,7 +1029,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27550, {	-- Pyrewood's Fall
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
 					["qg"] = 45878,	-- Lord Godfrey
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1039,16 +1039,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1499 },	-- Magistrate Sevren
 						{ "i", 3234 },	-- Deliah's Ring
 					},
-					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
+					["coord"] = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(27231, {	-- Reinforcements from Fenris
 					["sourceQuest"] = 27098,	-- Lordaeron
 					["qg"] = 44916,	-- Admiral Hatchet
-					["coord"] = { 45.8, 41.9, SILVERPINE_FOREST },
+					["coord"] = { 45.8, 41.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1063,7 +1063,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27478, {	-- Relios the Relic Keeper
 					["sourceQuest"] = 27476,	-- Dalar Dawnweaver
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
+					["coord"] = { 47.0, 43.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(448, {	-- Report to Hadrec
 					["sourceQuest"] = 446,	-- Thule Ravenclaw
 					["qg"] = 1937,	-- Apothecary Renferrel
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1105,7 +1105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 3317 },	-- A Talking Head
 						{ "o", 1599 },	-- Shallow Grave
 					},
-					["coord"] = { 65.2, 32.8, SILVERPINE_FOREST },
+					["coord"] = { 65.2, 32.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -1116,7 +1116,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1937 },	-- Apothecary Renferrel
 						{ "i", 3165 },	-- Quinn's Potion
 					},
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1128,7 +1128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2226 },	-- Karos Razok
 						{ "i", 16209 },	-- Podrig's Order
 					},
-					["coord"] = { 45.6, 42.4, SILVERPINE_FOREST },
+					["coord"] = { 45.6, 42.4, MAP.SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
@@ -1136,14 +1136,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27097, {	-- Rise, Forsaken
 					["sourceQuest"] = 27096,	-- Orcs are in Order
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
+					["coord"] = { 57.3, 10.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27472, {	-- Rise, Godfrey
 					["sourceQuest"] = 27438,	-- The Great Escape
 					["qg"] = 45525,	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.7, 66.0, SILVERPINE_FOREST },
+					["coord"] = { 51.7, 66.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1153,7 +1153,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1593 },	-- Corpse Laden Boat
 						{ "i", 3234 },	-- Deliah's Ring
 					},
-					["coord"] = { 58.4, 34.9, SILVERPINE_FOREST },
+					["coord"] = { 58.4, 34.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1161,7 +1161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(443, {	-- Rot Hide Ichor
 					["sourceQuest"] = 439,	-- Rot Hide Clues
 					["qg"] = 1952,	-- High Executor Hadrec
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1937 },	-- Apothecary Renferrel
 						{ "i", 3237 },	-- Sample Ichor
 					},
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1192,7 +1192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27193, {	-- Seek and Destroy
 					["sourceQuest"] = 27181,	-- Excising the Taint
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
-					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
+					["coord"] = { 44.8, 41.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1208,7 +1208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27069,	-- Steel Thunder
 					},
 					["qg"] = 44917,	-- Warlord Torok
-					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
+					["coord"] = { 43.9, 21.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27550,	-- Pyrewood's Fall
 					},
 					["qg"] = 45878,	-- Lord Godfrey
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1240,7 +1240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3221, {	-- Speak with Renferrel
 					["sourceQuest"] = 449,	-- The Deathstalkers' Report
 					["qg"] = 1952,	-- High Executor Hadrec
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1248,7 +1248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27069, {	-- Steel Thunder
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
 					["qg"] = 44916,	-- Admiral Hatcher
-					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 21.3, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1272,7 +1272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6389 },	-- Deathguard Podrig
 						{ "i", 16209 },	-- Podrig's Order
 					},
-					["coord"] = { 43.4, 41.6, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 41.6, MAP.SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
@@ -1280,20 +1280,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27542, {	-- Taking the Battlefront
 					["sourceQuest"] = 27518,	-- Transdimensional Warfare: Chapter III
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(437, {	-- The Dead Fields
 					["qg"] = 1952,	-- High Executor Hadrec
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Essence of Nightlash
 							["provider"] = { "i", 3622 },	-- Essence of Nightlash
-							["coord"] = { 45.8, 20.4, SILVERPINE_FOREST },
+							["coord"] = { 45.8, 20.4, MAP.SILVERPINE_FOREST },
 							["cr"] = 1983,	-- Nightlash
 						}),
 						i(3454, {	-- Reconnaissance Boots
@@ -1307,7 +1307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1950 },	-- Rane Yorick
 						{ "i", 3252 },	-- Deathstalker Report
 					},
-					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
+					["coord"] = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1315,7 +1315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(438, {	-- The Decrepit Ferry
 					["sourceQuest"] = 437,	-- The Dead Fields
 					["qg"] = 1952,	-- High Executor Hadrec
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1326,7 +1326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1952 },	-- High Executor Hadrec
 						{ "i", 3234 },	-- Deliah's Ring
 					},
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1334,7 +1334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26989, {	-- The Gilneas Liberation Front
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
 					["qg"] = 44615,	-- Grand Executor Mortuus
-					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
+					["coord"] = { 57.4, 10.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1358,7 +1358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1599 },	-- Shallow Grave
 						{ "i", 3318 },	-- Alaric's Remains
 					},
-					["coord"] = { 67.8, 24.8, SILVERPINE_FOREST },
+					["coord"] = { 67.8, 24.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -1369,21 +1369,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28568,	-- Warchief's Command: Silverpine Forest!
 					},
 					["qg"] = 44615,	-- Grand Executor Mortuus
-					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
+					["coord"] = { 57.4, 10.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27065, {	-- The Warchief's Fleet
 					["sourceQuest"] = 27056,	-- Belmont's Report
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
+					["coord"] = { 57.3, 10.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27232, {	-- The Waters Run Red...
 					["sourceQuest"] = 27231,	-- Reinforcements from Fenris
 					["provider"] = { "o", 205350 },	-- Horde Communication Panel
-					["coord"] = { 59.1, 34.2, SILVERPINE_FOREST },
+					["coord"] = { 59.1, 34.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1404,7 +1404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(480, {	-- The Weaver
 					["sourceQuest"] = 479,	-- Ambermill Investigations
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1416,7 +1416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(1, {	-- 0/1 Ataeric's Staff
 							["provider"] = { "i", 3515 },	-- Ataeric's Staff
-							["coord"] = { 63.6, 64.0, SILVERPINE_FOREST },
+							["coord"] = { 63.6, 64.0, MAP.SILVERPINE_FOREST },
 							["cr"] = 2120,	-- Archmage Ataeric
 						}),
 						i(3452, {	-- Ceranium Rod
@@ -1433,7 +1433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1498 },	-- Bethor Iceshard
 						{ "i", 3250 },	-- Bethor's Scroll
 					},
-					["coord"] = { 84.2, 17.4, UNDERCITY },
+					["coord"] = { 84.2, 17.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1451,21 +1451,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27232,	-- The Waters Run Red
 					},
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
-					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
+					["coord"] = { 44.8, 41.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27512, {	-- Transdimensional Warfare: Chapter I
 					["sourceQuest"] = 27484,	-- Only One May Enter
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27513, {	-- Transdimensional Warfare: Chapter II
 					["sourceQuest"] = 27512,	-- Transdimensional Warfare: Chapter I
 					["qg"] = 45752,	-- Ambermill Dimensional Portal
-					["coord"] = { 58.0, 69.9, SILVERPINE_FOREST },
+					["coord"] = { 58.0, 69.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1488,7 +1488,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27518, {	-- Transdimensional Warfare: Chapter III
 					["sourceQuest"] = 27513,	-- Transdimensional Warfare: Chapter II
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 65.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27475, {	-- Unyielding Servitors
 					["sourceQuest"] = 27472,	-- Rise, Godfrey
 					["qgs"] = { 45610, 45626 },	-- Daschla
-					["coord"] = { 51.8, 64.7, SILVERPINE_FOREST },
+					["coord"] = { 51.8, 64.7, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1522,7 +1522,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27045, {	-- Waiting to Exsanguinate
 					["sourceQuest"] = 27039,	-- Dangerous Intentions
 					["provider"] = { "o", 205143 },	-- Abandoned Outhouse
-					["coord"] = { 53.8, 12.9, SILVERPINE_FOREST },
+					["coord"] = { 53.8, 12.9, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1546,9 +1546,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 112888 },	-- Dusty Shelf
 						{ "i", 3425 },	-- Woven Wand
 					},
-					["coord"] = { 65.3, 24.8, SILVERPINE_FOREST },
+					["coord"] = { 65.3, 24.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
@@ -1565,7 +1565,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26964, {	-- Warchief's Command: Silverpine Forest!
 					["qg"] = 1515,	-- Executor Zygand
-					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 60.5, 51.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1573,7 +1573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				warchiefscommand(q(28568, {	-- Warchief's Command: Silverpine Forest!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { UNDERCITY },	-- Only found in Undercity in Cataclysm.
+					["maps"] = { MAP.UNDERCITY },	-- Only found in Undercity in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 9. (TODO: Confirm this.)
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(429, {	-- Wild Hearts
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
 					["qg"] = 1950,	-- Rane Yorick
-					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
+					["coord"] = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3164, 6 } },	-- Discolored Worg Heart
 					["races"] = HORDE_ONLY,
@@ -1605,9 +1605,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1937 },	-- Apothecary Renferrel
 						{ "i", 6016 },	-- Wolf Heart Sample
 					},
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1615,7 +1615,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				-- #if AFTER CATA
 				n(1920, {	-- Ambermill Spellscribe [CATA+] / Dalaran Spellscribe
-					["coord"] = { 63.5, 58.3, SILVERPINE_FOREST },
+					["coord"] = { 63.5, 58.3, MAP.SILVERPINE_FOREST },
 					["description"] = "Found upstairs at the given coordinates.\n\nHorde players who have started questing in the zone should complete the main storyline to prevent phasing issues.",
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["races"] = HORDE_ONLY,
@@ -1631,28 +1631,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(47009, {	-- Aquarius the Unbound
 					["coords"] = {
-						{ 61.8, 67.4, SILVERPINE_FOREST },
-						{ 61.6, 63.0, SILVERPINE_FOREST },
-						{ 57.4, 62.6, SILVERPINE_FOREST },
-						{ 59.2, 66.0, SILVERPINE_FOREST },
+						{ 61.8, 67.4, MAP.SILVERPINE_FOREST },
+						{ 61.6, 63.0, MAP.SILVERPINE_FOREST },
+						{ 57.4, 62.6, MAP.SILVERPINE_FOREST },
+						{ 59.2, 66.0, MAP.SILVERPINE_FOREST },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(46992, {	-- Berard the Moon-Crazed
-					["coord"] = { 43.6, 50.8, SILVERPINE_FOREST },
+					["coord"] = { 43.6, 50.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(47003, {	-- Bolgaff <The Mad Hunter>
-					["coord"] = { 48.8, 25.4, SILVERPINE_FOREST },
+					["coord"] = { 48.8, 25.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(50814, {	-- Corpsefeeder
-					["coord"] = { 49.2, 68.2, SILVERPINE_FOREST },
+					["coord"] = { 49.2, 68.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if BEFORE CATA
 				n(1920, {	-- Dalaran Spellscribe / Ambermill Spellscribe [CATA+]
-					["coord"] = { 63.4, 65.2, SILVERPINE_FOREST },
+					["coord"] = { 63.4, 65.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1676,7 +1676,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211875, {	-- Decayed Elemental
 					["provider"] = { "i", 210253 },	-- Rot Totem
-					["coord"] = { 46.0, 22.2, SILVERPINE_FOREST },
+					["coord"] = { 46.0, 22.2, MAP.SILVERPINE_FOREST },
 					["classes"] = { SHAMAN },
 					["groups"] = {
 						i(208758, {	-- Earthen Rune
@@ -1690,32 +1690,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(47012, {	-- Effritus
-					["coord"] = { 47.0, 69.4, SILVERPINE_FOREST },
+					["coord"] = { 47.0, 69.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(47008, {	-- Fenwick Thatros
-					["coord"] = { 49.4, 33.8, SILVERPINE_FOREST },
+					["coord"] = { 49.4, 33.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(50949, {	-- Finn's Gambit
-					["coord"] = { 64.0, 46.6, SILVERPINE_FOREST },
+					["coord"] = { 64.0, 46.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51026, {	-- Gnath
-					["coord"] = { 49.6, 29.6, SILVERPINE_FOREST },
+					["coord"] = { 49.6, 29.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(12431, {	-- Gorefang
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.2, 9.6, SILVERPINE_FOREST },
-						{ 57.8, 16.2, SILVERPINE_FOREST },
-						{ 56.6, 24.0, SILVERPINE_FOREST },
+						{ 60.2, 9.6, MAP.SILVERPINE_FOREST },
+						{ 57.8, 16.2, MAP.SILVERPINE_FOREST },
+						{ 56.6, 24.0, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 60.2, 10.0, SILVERPINE_FOREST },
-						{ 47.6, 17.6, SILVERPINE_FOREST },
-						{ 51.8, 19.6, SILVERPINE_FOREST },
-						{ 48.0, 25.8, SILVERPINE_FOREST },
+						{ 60.2, 10.0, MAP.SILVERPINE_FOREST },
+						{ 47.6, 17.6, MAP.SILVERPINE_FOREST },
+						{ 51.8, 19.6, MAP.SILVERPINE_FOREST },
+						{ 48.0, 25.8, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 				}),
@@ -1735,26 +1735,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(50330, {	-- Kree
-					["coord"] = { 60.8, 6.4, SILVERPINE_FOREST },
+					["coord"] = { 60.8, 6.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(12433, {	-- Krethis the Shadowspinner
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 38.6, 16.0, SILVERPINE_FOREST },
-						{ 37.0, 14.6, SILVERPINE_FOREST },
-						{ 34.6, 15.6, SILVERPINE_FOREST },
-						{ 35.6, 18.2, SILVERPINE_FOREST },
+						{ 38.6, 16.0, MAP.SILVERPINE_FOREST },
+						{ 37.0, 14.6, MAP.SILVERPINE_FOREST },
+						{ 34.6, 15.6, MAP.SILVERPINE_FOREST },
+						{ 35.6, 18.2, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 35.6, 9.0, SILVERPINE_FOREST },
-						{ 37.2, 15.6, SILVERPINE_FOREST },
+						{ 35.6, 9.0, MAP.SILVERPINE_FOREST },
+						{ 37.2, 15.6, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211146, {	-- Lost Adventurer
 					["provider"] = { "n", 210802 },	-- Webbed Victim
-					["coord"] = { 34.8, 7.8, SILVERPINE_FOREST },
+					["coord"] = { 34.8, 7.8, MAP.SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(208741, {	-- Rune of Endless Rage
@@ -1767,42 +1767,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(51037, {	-- Lost Gilnean Wardog
-					["coord"] = { 59.0, 42.0, SILVERPINE_FOREST },
+					["coord"] = { 59.0, 42.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(47015, {	-- Lost Son of Arugal
 					["coords"] = {
-						{ 56.2, 78.6, SILVERPINE_FOREST },
-						{ 55.0, 64.0, SILVERPINE_FOREST },
-						{ 55.2, 44.4, SILVERPINE_FOREST },
-						{ 56.2, 28.8, SILVERPINE_FOREST },
-						{ 53.6, 19.2, SILVERPINE_FOREST },
-						{ 48.4, 23.0, SILVERPINE_FOREST },
-						{ 49.4, 35.2, SILVERPINE_FOREST },
+						{ 56.2, 78.6, MAP.SILVERPINE_FOREST },
+						{ 55.0, 64.0, MAP.SILVERPINE_FOREST },
+						{ 55.2, 44.4, MAP.SILVERPINE_FOREST },
+						{ 56.2, 28.8, MAP.SILVERPINE_FOREST },
+						{ 53.6, 19.2, MAP.SILVERPINE_FOREST },
+						{ 48.4, 23.0, MAP.SILVERPINE_FOREST },
+						{ 49.4, 35.2, MAP.SILVERPINE_FOREST },
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(46981, {	-- Nightlash
 					["coords"] = {
-						{ 53.0, 28.0, SILVERPINE_FOREST },
-						{ 52.4, 25.2, SILVERPINE_FOREST },
+						{ 53.0, 28.0, MAP.SILVERPINE_FOREST },
+						{ 52.4, 25.2, MAP.SILVERPINE_FOREST },
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(12432, {	-- Old Vicejaw
 					["coords"] = {
-						{ 54.6, 52.0, SILVERPINE_FOREST },
-						{ 51.6, 63.8, SILVERPINE_FOREST },
-						{ 56.2, 62.4, SILVERPINE_FOREST },
+						{ 54.6, 52.0, MAP.SILVERPINE_FOREST },
+						{ 51.6, 63.8, MAP.SILVERPINE_FOREST },
+						{ 56.2, 62.4, MAP.SILVERPINE_FOREST },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(2283, {	-- Ravenclaw Regent
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 57.4, 31.2, SILVERPINE_FOREST },
+						{ 57.4, 31.2, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 57.6, 69.8, SILVERPINE_FOREST },
+						{ 57.6, 69.8, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -1818,7 +1818,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 10.1.7
 				n(1944, {	-- Rot Hide Bruiser
 					-- Moved to Tirisfall in 10.1.7
-					["coord"] = { 67.6, 24.4, SILVERPINE_FOREST },
+					["coord"] = { 67.6, 24.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(4439, {	-- Bruiser Club
@@ -1833,7 +1833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(212763, {	-- Sadistic Fiend
 					["description"] = "Cast Curse of Recklessness on him.",
-					["coord"] = { 58.2, 45.2, SILVERPINE_FOREST },
+					["coord"] = { 58.2, 45.2, MAP.SILVERPINE_FOREST },
 					["groups"] = {
 						i(208750, {	-- Rune of Channeling
 							["classes"] = { WARLOCK },
@@ -1845,7 +1845,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(1948, {	-- Snarlmane
-					["coord"] = { 66.2, 25.0, SILVERPINE_FOREST },
+					["coord"] = { 66.2, 25.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if AFTER 10.1.7
 					["description"] = "Found in the basement of Fenris Keep.",
@@ -1859,7 +1859,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(212753, {	-- Tortured Soul
 					["provider"] = { "i", 210713 },	-- Tortured Soul
-					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
+					["coord"] = { 59.4, 70.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
@@ -1873,12 +1873,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(47023, {	-- Thule Ravenclaw
-					["coord"] = { 50.2, 60.0, SILVERPINE_FOREST },
+					["coord"] = { 50.2, 60.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {	-- Wailing Spirit
-					["coord"] = { 60.2, 74.4, SILVERPINE_FOREST },
+					["coord"] = { 60.2, 74.4, MAP.SILVERPINE_FOREST },
 					["groups"] = {
 						i(205905, {	-- Memory of a Devout Champion
 							["classes"] = { PRIEST },
@@ -1894,11 +1894,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(210177, {	-- Ataeric: On Arcane Curiosities
 					["provider"] = { "o", 410299 },	-- Arcane Secrets
-					["coord"] = { 43.4, 41.2, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 41.2, MAP.SILVERPINE_FOREST },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
 					["provider"] = { "o", 411674 },	-- Prophecy of a King's Demise
-					["coord"] = { 65.8, 23.5, SILVERPINE_FOREST },
+					["coord"] = { 65.8, 23.5, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
@@ -1908,7 +1908,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 					["description"] = "You will need to use Sprint to make the jump to the platform.",
 					["provider"] = { "o", 409131 },	-- Rusty Chest
-					["coord"] = { 45.2, 67.2, SILVERPINE_FOREST },
+					["coord"] = { 45.2, 67.2, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -1917,7 +1917,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209844, {	-- The Dalaran Digest, Vol. 23
 					["provider"] = { "o", 409501 },	-- Dalaran Digest
-					["coord"] = { 63.5, 63.1, SILVERPINE_FOREST },
+					["coord"] = { 63.5, 63.1, MAP.SILVERPINE_FOREST },
 				})),
 			}),
 			-- #endif
@@ -1925,9 +1925,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 44.6, 39.6, SILVERPINE_FOREST },
+						{ 44.6, 39.6, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 44.6, 39.2, SILVERPINE_FOREST },
+						{ 44.6, 39.2, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1941,7 +1941,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(3554, {	-- Andrea Boynton <Clothier>
-					["coord"] = { 44.6, 39.2, SILVERPINE_FOREST },
+					["coord"] = { 44.6, 39.2, MAP.SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
@@ -1961,7 +1961,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(3556, {	-- Andrew Hilbert <Trade Supplies> [CATA+] / Andrew Hilbert <Trade Goods>
-					["coord"] = { 43.2, 40.6, SILVERPINE_FOREST },
+					["coord"] = { 43.2, 40.6, MAP.SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
@@ -1980,7 +1980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2140, {	-- Edwin Harly
-					["coord"] = { 44.1, 39.7, SILVERPINE_FOREST },
+					["coord"] = { 44.1, 39.7, MAP.SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(257412, {	-- Stoppered Gilnean Barrel (DECOR!)
@@ -1991,9 +1991,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5748, {	-- Killian Sanatha <Fisherman>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.4, 33.4, SILVERPINE_FOREST },
+						{ 59.4, 33.4, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 33.0, 17.8, SILVERPINE_FOREST },
+						{ 33.0, 17.8, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2005,9 +2005,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.8, 82.2, SILVERPINE_FOREST },
+						{ 53.8, 82.2, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 54.0, 82.2, SILVERPINE_FOREST },
+						{ 54.0, 82.2, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2031,9 +2031,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5757, {	-- Lilly <Enchanting Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.8, 40.6, SILVERPINE_FOREST },
+						{ 46.8, 40.6, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 43.0, 50.8, SILVERPINE_FOREST },
+						{ 43.0, 50.8, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2055,9 +2055,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(9553, {	-- Nadia Vernon <Bowyer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 44.8, 39.8, SILVERPINE_FOREST },
+						{ 44.8, 39.8, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 45.0, 39.4, SILVERPINE_FOREST },
+						{ 45.0, 39.4, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2070,9 +2070,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3534, {	-- Wallace the Blind <Weaponsmith>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 33.0, 17.8, SILVERPINE_FOREST },
+						{ 33.0, 17.8, MAP.SILVERPINE_FOREST },
 						-- #else
-						{ 46.4, 86.4, SILVERPINE_FOREST },
+						{ 46.4, 86.4, MAP.SILVERPINE_FOREST },
 						-- #endif
 					},
 					["groups"] = {
@@ -2108,7 +2108,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if ANYCLASSIC
 				i(3173, {	-- Bear Meat
-					["coord"] = { 52.0, 40.4, SILVERPINE_FOREST },
+					["coord"] = { 52.0, 40.4, MAP.SILVERPINE_FOREST },
 					["crs"] = {
 						1797,	-- Giant Grizzled Bear
 						1778,	-- Ferocious Grizzled Bear
@@ -2169,20 +2169,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(210696, {	-- Rot Bane
 					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
-					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
+					["coord"] = { 66.2, 31.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["cr"] = 212598,	-- Recke Grinnes
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210253, {	-- Rot Totem
-					["coord"] = { 45.6, 22.6, SILVERPINE_FOREST },
+					["coord"] = { 45.6, 22.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { SHAMAN },
 					["cr"] = 1773,	-- Rot Hide Mystic
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208778, {	-- Rune of Quick Strike
 					["provider"] = { "i", 210696 },	-- Rot Bane
-					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
+					["coord"] = { 66.2, 31.0, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -2197,14 +2197,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
-					["coord"] = { 50.8, 61.6, SILVERPINE_FOREST },
+					["coord"] = { 50.8, 61.6, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["cr"] = 1867,	-- Dalaran Apprentice
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206382, {	-- Tempest Icon
-					["coord"] = { 58.6, 44.8, SILVERPINE_FOREST },
+					["coord"] = { 58.6, 44.8, MAP.SILVERPINE_FOREST },
 					["classes"] = { SHAMAN },
 					["cr"] = 1972,	-- Grimson the Pale
 					["groups"] = {
@@ -2213,7 +2213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
 					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
-					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
+					["coord"] = { 59.4, 70.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
@@ -2223,7 +2223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210195, {	-- Unbalanced Idol
 					["description"] = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
-					["coord"] = { 52.8, 27.4, SILVERPINE_FOREST },
+					["coord"] = { 52.8, 27.4, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["crs"] = {

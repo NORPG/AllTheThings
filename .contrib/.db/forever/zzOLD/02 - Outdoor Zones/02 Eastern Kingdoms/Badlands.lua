@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(BADLANDS, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.BADLANDS, {
 		["lore"] =
 			-- #if AFTER CATA
 			"Badlands is a scorched zone and the home of the Earthen, Dark Iron Dwarves, and Goblins in Fuselight-by-the-Sea. Formerly a short zone before Cataclysm, it now has two notable chains: The Day Deathwing Died, and the sad tale of the dragon Rhea.",
@@ -100,25 +100,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(632, {	-- Bloodwatcher Point, Badlands
-					["coord"] = { 52.4, 50.6, BADLANDS },
+					["coord"] = { 52.4, 50.6, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 44408,	-- Selara <Flight Master>
 					["races"] = HORDE_ONLY,
 				}),
 				fp(634, {	-- Dragon's Mouth, Badlands
-					["coord"] = { 21.6, 57.6, BADLANDS },
+					["coord"] = { 21.6, 57.6, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 44410,	-- Jake Badlands <Flight Master>
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(633, {	-- Dustwind Dig, Badlands
-					["coord"] = { 49.0, 36.2, BADLANDS },
+					["coord"] = { 49.0, 36.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 44409,	-- Nancy Skybrew <Flight Master>
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(635, {	-- Fuselight, Badlands
-					["coord"] = { 64.2, 35.2, BADLANDS },
+					["coord"] = { 64.2, 35.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 44407,	-- Mixi Sweetride <Flight Master>
 				}),
@@ -126,9 +126,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2861,	-- Gorrik <Wind Rider Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 17.2, 40.2, BADLANDS },
+						{ 17.2, 40.2, MAP.BADLANDS },
 						-- #else
-						{ 4.0, 44.8, BADLANDS },
+						{ 4.0, 44.8, MAP.BADLANDS },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -137,12 +137,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if BEFORE CATA
 			lockpicking({
 				o(179490, {	-- Battered Footlocker
-					["coord"] = { 42.4, 29.6, BADLANDS },
+					["coord"] = { 42.4, 29.6, MAP.BADLANDS },
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 150,
 				}),
 				o(179492, {	-- Dented Footlocker
-					["coord"] = { 41.5, 27.3, BADLANDS },
+					["coord"] = { 41.5, 27.3, MAP.BADLANDS },
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 175,
 				}),
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7867, {	-- Thorkaf Dragoneye <Master Dragonscale Leatherworker>
-						["coord"] = { 62.6, 57.6, BADLANDS },
+						["coord"] = { 62.6, 57.6, MAP.BADLANDS },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = CLASSIC_TBC_DRAGONSCALE,
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(QUESTS, {
 				q(719, {	-- A Dwarf and His Tools
 					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
-					["coord"] = { 53.4, 43.2, BADLANDS },
+					["coord"] = { 53.4, 43.2, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -183,13 +183,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27823, {	-- A Dwarf's Got Needs
 					["qg"] = 2860,	-- Sigrun Ironhew
-					["coord"] = { 49.5, 37.0, BADLANDS },
+					["coord"] = { 49.5, 37.0, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/15 Shadowstout
 							["provider"] = { "i", 62510 },	-- Shadowstout
-							["coord"] = { 49.2, 29.0, BADLANDS },
+							["coord"] = { 49.2, 29.0, MAP.BADLANDS },
 							["crs"] = {
 								2740,	-- Shadowforge Darkweaver
 								2739,	-- Shadowforge Tunneler
@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(720, {	-- A Sign of Hope (1/2)
 					["provider"] = { "o", 2868 },	-- Crumpled Map
-					["coord"] = { 53.0, 34.1, BADLANDS },
+					["coord"] = { 53.0, 34.1, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(721, {	-- A Sign of Hope (2/2)
 					["sourceQuest"] = 720,	-- A Sign of Hope (1/2)
 					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
-					["coord"] = { 53.4, 43.4, BADLANDS },
+					["coord"] = { 53.4, 43.4, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 46652 },	-- Dolph Blastus
 						{ "i", 62387 },	-- Dolph's Package
 					},
-					["coord"] = { 65.0, 38.3, BADLANDS },
+					["coord"] = { 65.0, 38.3, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63159, {	-- Parcel Bearer's Breastplate
@@ -241,7 +241,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27792, {	-- All's Fair in Love, War, and Archaeology
 					["sourceQuest"] = 27791,	-- Dustwind Dig
 					["qg"] = 46760,	-- Lead Prospector Durdin
-					["coord"] = { 49.3, 36.9, BADLANDS },
+					["coord"] = { 49.3, 36.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -278,22 +278,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27891, {	-- Amakkar, Jack of All Trades
 					["sourceQuest"] = 27890,	-- The Bad Dogs
 					["qgs"] = { 47011, 47021 },	-- Amakkar (stationary and follower)
-					["coord"] = { 18.8, 42.9, BADLANDS },
+					["coord"] = { 18.8, 42.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(722, {	-- Amulet of Secrets
 					["sourceQuest"] = 721,	-- A Sign of Hope (2/2)
 					["qg"] = 2909,	-- Hammertoe Grez
-					["coord"] = { 37.94, 10.53, BADLANDS },
+					["coord"] = { 37.94, 10.53, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ULDAMAN, LOCH_MODAN },
+					["maps"] = { ULDAMAN, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hammertoe's Amulet
 							["provider"] = { "i", 4635 },	-- Hammertoe's Amulet
-							["coord"] = { 38.0, 92.6, LOCH_MODAN },
+							["coord"] = { 38.0, 92.6, MAP.LOCH_MODAN },
 							["cr"] = 2932,	-- Magregan Deepshadow
 						}),
 					},
@@ -301,14 +301,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(762, {	-- An Ambassador of Evil
 					["sourceQuest"] = 726,	-- Passing Word of a Threat (2/2)
 					["qg"] = 2916,	-- Historian Karnik
-					["coord"] = { 77.5, 11.8, IRONFORGE },
+					["coord"] = { 77.5, 11.8, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ambassador Infernus' Bracer
 							["provider"] = { "i", 4621 },	-- Ambassador Infernus' Bracer
-							["coord"] = { 42.1, 28.9, BADLANDS },
+							["coord"] = { 42.1, 28.9, MAP.BADLANDS },
 							["qg"] = 2745,	-- Ambassador Infernus
 						}),
 						i(4987, {	-- Dwarf Captain's Sword
@@ -322,17 +322,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27693,	-- The Warden's Game
 					},
 					["qg"] = 46760,	-- Lead Prospector Durdin
-					["coord"] = { 49.2, 36.9, BADLANDS },
+					["coord"] = { 49.2, 36.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Thoroughly investigated The Warden
 							["provider"] = { "n", 46768 },	-- The Warden
-							["coord"] = { 50.2, 52.8, BADLANDS },
+							["coord"] = { 50.2, 52.8, MAP.BADLANDS },
 						}),
 						objective(2, {	-- Thoroughly investigated The Sentinel
 							["provider"] = { "n", 46769 },	-- The Sentinel
-							["coord"] = { 50.6, 51.8, BADLANDS },
+							["coord"] = { 50.6, 51.8, MAP.BADLANDS },
 						}),
 					},
 				}),
@@ -342,23 +342,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27885,	-- The Warden's Game
 					},
 					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
-					["coord"] = { 52.0, 51.2, BADLANDS },
+					["coord"] = { 52.0, 51.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Thoroughly investigated The Warden
 							["provider"] = { "n", 46768 },	-- The Warden
-							["coord"] = { 50.2, 52.8, BADLANDS },
+							["coord"] = { 50.2, 52.8, MAP.BADLANDS },
 						}),
 						objective(2, {	-- Thoroughly investigated The Sentinel
 							["provider"] = { "n", 46769 },	-- The Sentinel
-							["coord"] = { 50.6, 51.8, BADLANDS },
+							["coord"] = { 50.6, 51.8, MAP.BADLANDS },
 						}),
 					},
 				}),
 				q(2258, {	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46.0, BADLANDS },
+					["coord"] = { 2.6, 46.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2203, {	-- Badlands Reagent Run II
 					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46.0, BADLANDS },
+					["coord"] = { 2.6, 46.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ALCHEMY,
 					["learnedAt"] = 210,
@@ -421,13 +421,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27834, {	-- Baelog, the Glass Cannon
 					["sourceQuest"] = 27827,	-- The Swift, the Fierce, and the Stout
 					["qgs"] = { 46853, 46856 },	-- Baelog
-					["coord"] = { 20.6, 56.1, BADLANDS },
+					["coord"] = { 20.6, 56.1, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(703, {	-- Barbecued Buzzard Wings
 					["qg"] = 2817,	-- Rigglefuzz
-					["coord"] = { 42.39, 52.93, BADLANDS },
+					["coord"] = { 42.39, 52.93, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3404, 4 } },	-- Buzzard Wing
 					["lvl"] = 33,
@@ -439,13 +439,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27881, {	-- Bloodwatcher Point
 					["sourceQuest"] = 27789,	-- Troggish Troubles
 					["qg"] = 46664,	-- Dr. Hieronymus Blam
-					["coord"] = { 46.8, 56.5, BADLANDS },
+					["coord"] = { 46.8, 56.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(782, {	-- Broken Alliances (1/2)
 					["qg"] = 1068,	-- Gorn
-					["coord"] = { 2.8, 45.8, BADLANDS },
+					["coord"] = { 2.8, 45.8, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -458,7 +458,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(793, {	-- Broken Alliances (2/2)
 					["sourceQuest"] = 782,	-- Broken Alliances (1/2)
 					["qg"] = 1068,	-- Gorn
-					["coord"] = { 2.8, 45.8, BADLANDS },
+					["coord"] = { 2.8, 45.8, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -485,14 +485,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(713, {	-- Coolant Heads Prevail
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 26.0, 44.9, BADLANDS },
+					["coord"] = { 26.0, 44.9, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3829, 1 } },	-- Frost Oil
 					["lvl"] = 35,
 				}),
 				q(1419, {	-- Coyote Thieves
 					["qg"] = 5394,	-- Neeka Bloodscar
-					["coord"] = { 6.4, 47.0, BADLANDS },
+					["coord"] = { 6.4, 47.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -512,24 +512,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
 					["provider"] = { "o", 206504 },	-- Rhea's Final Note
-					["coord"] = { 18.9, 30.3, BADLANDS },
+					["coord"] = { 18.9, 30.3, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27927, {	-- Down to the Scar
 					["allianceQuestData"] = {
 						["qg"] = 46930,	-- Victoria Dolen (A)
-						["coord"] = { 20.9, 55.7, BADLANDS },
+						["coord"] = { 20.9, 55.7, MAP.BADLANDS },
 					},
 					["hordeQuestData"] = {
 						["qg"] = 46660,	-- Aidan Summerwind (H)
-						["coord"] = { 18.4, 41.5, BADLANDS },
+						["coord"] = { 18.4, 41.5, MAP.BADLANDS },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(3821, {	-- Dreadmaul Rock
 					["qg"] = 9082,	-- Thal'trak Proudtusk
-					["coord"] = { 3.4, 48.0, BADLANDS },
+					["coord"] = { 3.4, 48.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -537,14 +537,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27791, {	-- Dustwind Dig
 					["sourceQuest"] = 27789,	-- Troggish Troubles
 					["qg"] = 46664,	-- Dr. Hieronymus Blam
-					["coord"] = { 46.8, 56.5, BADLANDS },
+					["coord"] = { 46.8, 56.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27774, {	-- Easily Swayed
 					["sourceQuest"] = 27763,	-- To Fuselight Proper
 					["qg"] = 46652,	-- Dolph Blastus
-					["coord"] = { 65.0, 38.3, BADLANDS },
+					["coord"] = { 65.0, 38.3, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/9 Dustbelcher slain
@@ -553,20 +553,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 46694 },	-- Dustbelcher Initiate
 								{ "n", 46695 },	-- Dustbelcher Trainee
 							},
-							["coord"] = { 60.6, 26.8, BADLANDS },
+							["coord"] = { 60.6, 26.8, MAP.BADLANDS },
 						}),
 					},
 				}),
 				q(27828, {	-- Eric, the Utility Dwarf
 					["sourceQuest"] = 27827,	-- The Swift, the Fierce, and the Stout
 					["qgs"] = { 46852, 46855 },	-- Eric "The Swift"
-					["coord"] = { 20.6, 56.1, BADLANDS },
+					["coord"] = { 20.6, 56.1, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(706, {	-- Fiery Blaze Enchantments
 					["qg"] = 2860,	-- Sigrun Ironhew
-					["coord"] = { 53.8, 43.4, BADLANDS },
+					["coord"] = { 53.8, 43.4, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -589,7 +589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27765, {	-- First Sample: Wild Eggs
 					["sourceQuest"] = 27764,	-- A Strange Request
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 66.4, 55.5, BADLANDS },
+					["coord"] = { 66.4, 55.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Wild Black Dragon Egg
@@ -597,14 +597,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  62388 },	-- Wild Black Dragon Egg
 								{ "o", 206320 },	-- Wild Black Dragon Egg
 							},
-							["coord"] = { 69.0, 42.4, BADLANDS },
+							["coord"] = { 69.0, 42.4, MAP.BADLANDS },
 						}),
 					},
 				}),
 				q(1559, {	-- Flash Bomb Recipe
 					["sourceQuest"] = 705,	-- Pearl Diving
 					["qg"] = 2817,	-- Rigglefuzz
-					["coord"] = { 42.39, 52.93, BADLANDS },
+					["coord"] = { 42.39, 52.93, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ENGINEERING,
 					["lvl"] = 30,
@@ -619,7 +619,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ "i", 4647 },	-- Yagyin's Digest
 						},
 						["sourceQuest"] = 735,	-- The Star, the Hand and the Heart [A]
-						["coord"] = { 50.8, 5.6, IRONFORGE },
+						["coord"] = { 50.8, 5.6, MAP.IRONFORGE },
 					},
 					["hordeQuestData"] = {
 						["providers"] = {
@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ "i", 4647 },	-- Yagyin's Digest
 						},
 						["sourceQuest"] = 736,	-- The Star, the Hand and the Heart [H]
-						["coord"] = { 53.7, 54.5, UNDERCITY },
+						["coord"] = { 53.7, 54.5, MAP.UNDERCITY },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27878, {	-- Forcible Acquisition
 					["qg"] = 46758,	-- Aoren Sunglow
-					["coord"] = { 52.1, 51.5, BADLANDS },
+					["coord"] = { 52.1, 51.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -672,28 +672,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28580,	-- Warchief's Command: Badlands!
 					},
 					["qg"] = 48704,	-- Gek Nozzlerocket
-					["coord"] = { 73.7, 53.0, EASTERN_PLAGUELANDS },
+					["coord"] = { 73.7, 53.0, MAP.EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
 				}),
 				q(27893, {	-- Gargal, the Behemoth
 					["sourceQuest"] = 27890,	-- The Bad Dogs
 					["qgs"] = { 47013, 47022 },	-- Gargal
-					["coord"] = { 18.9, 42.8, BADLANDS },
+					["coord"] = { 18.9, 42.8, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(714, {	-- Gyro... What?
 					["sourceQuest"] = 713,	-- Coolant Heads Prevail
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 26.0, 44.9, BADLANDS },
+					["coord"] = { 26.0, 44.9, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4389, 1 } },	-- Gyrochronatom
 					["lvl"] = 35,
 				}),
 				q(27833, {	-- Half-Ton Holdouts
 					["qg"] = 46972,	-- Terrance Storm
-					["coord"] = { 20.8, 57.3, BADLANDS },
+					["coord"] = { 20.8, 57.3, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 2717 },	-- Dustbelcher Mauler
 								{ "n", 2718 },	-- Dustbelcher Shaman
 							},
-							["coord"] = { 14.8, 65.4, BADLANDS },
+							["coord"] = { 14.8, 65.4, MAP.BADLANDS },
 						}),
 						i(63199, {	-- Storm's Bow
 							["timeline"] = { ADDED_4_0_3 },
@@ -723,7 +723,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27880, {	-- Half-Ton Holdouts
 					["qg"] = 1068,	-- Gorn
-					["coord"] = { 17.6, 43.9, BADLANDS },
+					["coord"] = { 17.6, 43.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -732,7 +732,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 2717 },	-- Dustbelcher Mauler
 								{ "n", 2718 },	-- Dustbelcher Shaman
 							},
-							["coord"] = { 14.8, 65.4, BADLANDS },
+							["coord"] = { 14.8, 65.4, MAP.BADLANDS },
 						}),
 						i(63204, {	-- Bow of Kargath
 							["timeline"] = { ADDED_4_0_3 },
@@ -753,7 +753,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				heroscall(q(28579, {	-- Hero's Call: Badlands!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
@@ -764,7 +764,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1108, {	-- Indurium
 					["sourceQuest"] = 1106,	-- Martek the Exiled
 					["qg"] = 4618,	-- Martek the Exiled
-					["coord"] = { 42.22, 52.69, BADLANDS },
+					["coord"] = { 42.22, 52.69, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 					["groups"] = {
@@ -785,14 +785,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 46664 },	-- Dr. Hieronymus Blam
 						{ "i", 62513 },	-- Purified Black Dragon Egg
 					},
-					["coord"] = { 46.8, 56.5, BADLANDS },
+					["coord"] = { 46.8, 56.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27776, {	-- It's Goat Time, Baby
 					["sourceQuest"] = 27775,	-- When the Going Gets Tough, Cheat
 					["qg"] = 46653,	-- Garyanne Fleezlebop
-					["coord"] = { 64.2, 38.1, BADLANDS },
+					["coord"] = { 64.2, 38.1, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/12 Billy Goat nudged
@@ -800,14 +800,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 46393 },	-- Billy Goat
 								{ "i", 62397 },	-- Billy Goat Blaster
 							},
-							["coord"] = { 63.4, 34.8, BADLANDS },
+							["coord"] = { 63.4, 34.8, MAP.BADLANDS },
 						}),
 					},
 				}),
 				q(27882, {	-- It's Not About History, It's About Power
 					["sourceQuest"] = 27881,	-- Bloodwatcher Point
 					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
-					["coord"] = { 52.0, 51.2, BADLANDS },
+					["coord"] = { 52.0, 51.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27892, {	-- Jurrix the Striker
 					["sourceQuest"] = 27890,	-- The Bad Dogs
 					["qgs"] = { 47018, 47024 },	-- Jurrix Whitemane
-					["coord"] = { 18.8, 42.7, BADLANDS },
+					["coord"] = { 18.8, 42.7, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27766,	-- Second Sample: Whelps
 					},
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 66.4, 55.5, BADLANDS },
+					["coord"] = { 66.4, 55.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Witness the final piece of Rhea's studies
@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["qg"] = 2920,	-- Lucien Tosselwrench
-					["coord"] = { 25.8, 44.2, BADLANDS },
+					["coord"] = { 25.8, 44.2, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 929, 1 },	-- Healing Potion
@@ -888,7 +888,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(718, {	-- Mirages
 					["qg"] = 2860,	-- Sigrun Ironhew
-					["coord"] = { 53.8, 43.3, BADLANDS },
+					["coord"] = { 53.8, 43.3, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -898,14 +898,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 4629 },	-- Supply Crate
 								{ "o", 2867 },	-- Excavation Supply Crate
 							},
-							["coord"] = { 66.5, 31.6, BADLANDS },
+							["coord"] = { 66.5, 31.6, MAP.BADLANDS },
 						}),
 					},
 				}),
 				q(739, {	-- Murdaloc
 					["sourceQuest"] = 738,	-- Find Agmond
 					["provider"] = { "o", 2875 },	-- Battered Dwarven Skeleton
-					["coord"] = { 50.89, 62.4, BADLANDS },
+					["coord"] = { 50.89, 62.4, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -927,16 +927,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 46664 },	-- Dr. Hieronymus Blam
 						{ "i", 62513 },	-- Purified Black Dragon Egg
 					},
-					["coord"] = { 46.8, 56.5, BADLANDS },
+					["coord"] = { 46.8, 56.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1137, {	-- News for Fizzle
 					["sourceQuest"] = 1108,	-- Indurium
 					["qg"] = 4618,	-- Martek the Exiled
-					["coord"] = { 42.22, 52.69, BADLANDS },
+					["coord"] = { 42.22, 52.69, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THOUSAND_NEEDLES },
+					["maps"] = { MAP.THOUSAND_NEEDLES },
 					["lvl"] = 28,
 					["groups"] = {
 						i(6729, {	-- Fizzle's Zippy Lighter
@@ -950,7 +950,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27835, {	-- Olaf, the Big Fella'
 					["sourceQuest"] = 27827,	-- The Swift, the Fierce, and the Stout
 					["qgs"] = { 46854, 46857 },	-- Olaf
-					["coord"] = { 20.5, 56.3, BADLANDS },
+					["coord"] = { 20.5, 56.3, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -960,7 +960,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2916 },	-- Historian Karnik
 						{ "i", 4622 },	-- Sealed Note to Advisor Belgrum
 					},
-					["coord"] = { 77.5, 11.8, IRONFORGE },
+					["coord"] = { 77.5, 11.8, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -968,16 +968,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(726, {	-- Passing Word of a Threat (2/2)
 					["sourceQuest"] = 725,	-- Passing Word of a Threat (1/2)
 					["qg"] = 2918,	-- Advisor Belgrum
-					["coord"] = { 77.3, 9.7, IRONFORGE },
+					["coord"] = { 77.3, 9.7, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(705, {	-- Pearl Diving
 					["qg"] = 2817,	-- Rigglefuzz
-					["coord"] = { 42.39, 52.93, BADLANDS },
+					["coord"] = { 42.39, 52.93, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STRANGLETHORN_VALE },
+					["maps"] = { MAP.STRANGLETHORN_VALE },
 					["cost"] = { { "i", 4611, 9 } },	-- Blue Pearl
 					["lvl"] = 30,
 					["groups"] = {
@@ -994,7 +994,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2418, {	-- Power Stones
 					["qg"] = 2817,	-- Rigglefuzz
-					["coord"] = { 42.39, 52.93, BADLANDS },
+					["coord"] = { 42.39, 52.93, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ULDAMAN },
 					["lvl"] = 30,
@@ -1044,7 +1044,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2909 },	-- Hammertoe Grez
 						{ "i", 4635 },	-- Hammertoe's Amulet
 					},
-					["coord"] = { 37.94, 10.53, BADLANDS },
+					["coord"] = { 37.94, 10.53, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -1055,16 +1055,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2910 },	-- Prospector Ryedol
 						{ "i", 4635 },	-- Hammertoe's Amulet
 					},
-					["coord"] = { 53.4, 43.2, BADLANDS },
+					["coord"] = { 53.4, 43.2, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(1360, {	-- Reclaimed Treasures
 					["qg"] = 6294,	-- Krom Stoutarm
-					["coord"] = { 74.2, 9.4, IRONFORGE },
+					["coord"] = { 74.2, 9.4, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { LOCH_MODAN },
+					["maps"] = { MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -1073,15 +1073,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   8027 },	-- Krom Stoutarm's Treasure
 								{ "o", 124389 },	-- Krom Stoutarm's Chest
 							},
-							["coord"] = { 35.2, 97.4, LOCH_MODAN },
+							["coord"] = { 35.2, 97.4, MAP.LOCH_MODAN },
 						}),
 					},
 				}),
 				q(2342, {	-- Reclaimed Treasures
 					["qg"] = 5651,	-- Patrick Garrett
-					["coord"] = { 62.3, 48.6, UNDERCITY },
+					["coord"] = { 62.3, 48.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { LOCH_MODAN },
+					["maps"] = { MAP.LOCH_MODAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -1090,7 +1090,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   8026 },	-- Garrett Family Treasure
 								{ "o", 124388 },	-- Garrett Family Chest
 							},
-							["coord"] = { 33.9, 93.0, LOCH_MODAN },
+							["coord"] = { 33.9, 93.0, MAP.LOCH_MODAN },
 						}),
 					},
 				}),
@@ -1100,9 +1100,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5394 },	-- Neeka Bloodscar
 						{ "i", 6167 },	-- Neeka's Report
 					},
-					["coord"] = { 6.5, 47.2, BADLANDS },
+					["coord"] = { 6.5, 47.2, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SWAMP_OF_SORROWS },
+					["maps"] = { MAP.SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 206374 },	-- Trove of the Watchers
 						{ "i",  62497 },	-- Eye of the Watchers
 					},
-					["coord"] = { 50.3, 53.3, BADLANDS },
+					["coord"] = { 50.3, 53.3, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1136,7 +1136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 206374 },	-- Trove of the Watchers
 						{ "i",  62497 },	-- Eye of the Watchers
 					},
-					["coord"] = { 50.2, 53.2, BADLANDS },
+					["coord"] = { 50.2, 53.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1154,27 +1154,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27769, {	-- Rhea Revealed
 					["sourceQuest"] = 27771,	-- Third Sample: Implanted Eggs
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 66.4, 55.5, BADLANDS },
+					["coord"] = { 66.4, 55.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27858, {	-- Rheastrasza's Gift (A)
 					["sourceQuest"] = 27832,	-- The Hidden Clutch
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 16.0, 33.4, BADLANDS },
+					["coord"] = { 16.0, 33.4, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27898, {	-- Rheastrasza's Gift (H)
 					["sourceQuest"] = 27897,	-- The Hidden Clutch
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 15.9, 33.3, BADLANDS },
+					["coord"] = { 15.9, 33.3, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(733, {	-- Scrounging
 					["sourceQuest"] = 718,	-- Mirages
 					["qg"] = 2860,	-- Sigrun Ironhew
-					["coord"] = { 53.8, 43.3, BADLANDS },
+					["coord"] = { 53.8, 43.3, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -1225,11 +1225,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(4615, {	-- Blacklash's Bindings
-							["coord"] = { 82.6, 48.8, BADLANDS },
+							["coord"] = { 82.6, 48.8, MAP.BADLANDS },
 							["cr"] = 2757,	-- Blacklash
 						}),
 						i(4645, {	-- Chains of Hematus
-							["coord"] = { 81.4, 50.6, BADLANDS },
+							["coord"] = { 81.4, 50.6, MAP.BADLANDS },
 							["cr"] = 2759,	-- Hematus
 						}),
 					},
@@ -1237,19 +1237,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27766, {	-- Second Sample: Whelps
 					["sourceQuest"] = 27764,	-- A Strange Request
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 66.4, 55.5, BADLANDS },
+					["coord"] = { 66.4, 55.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Scalding Whelp Corpse
 							["provider"] = { "i", 62390 },	-- Scalding Whelp Corpse
-							["coord"] = { 70.4, 47.8, BADLANDS },
+							["coord"] = { 70.4, 47.8, MAP.BADLANDS },
 							["cr"] = 2725,	-- Scalding Whelp
 						}),
 					},
 				}),
 				q(709, {	-- Solution to Doom
 					["qg"] = 2785,	-- Theldurin the Lost
-					["coord"] = { 51.4, 76.9, BADLANDS },
+					["coord"] = { 51.4, 76.9, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 4631 },	-- Tablet of Ryun'eh
 								{ "o", 126260 },	-- Ancient Chest
 							},
-							["coord"] = { 39.3, 18.8, BADLANDS },
+							["coord"] = { 39.3, 18.8, MAP.BADLANDS },
 						}),
 						i(4746, {	-- Doomsayer's Robe
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1271,7 +1271,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						712,	-- Study of the Elements: Rock (3/3)
 					},
 					["qg"] = 2920,	-- Lucien Tosselwrench
-					["coord"] = { 25.8, 44.4, BADLANDS },
+					["coord"] = { 25.8, 44.4, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2868, 1 } },	-- Patterned Bronze Bracers
 					["lvl"] = 35,
@@ -1283,7 +1283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(710, {	-- Study of the Elements: Rock (1/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45.0, BADLANDS },
+					["coord"] = { 25.8, 45.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1296,7 +1296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(711, {	-- Study of the Elements: Rock (2/3)
 					["sourceQuest"] = 710,	-- Study of the Elements: Rock (1/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45.0, BADLANDS },
+					["coord"] = { 25.8, 45.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1309,7 +1309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(712, {	-- Study of the Elements: Rock (3/3)
 					["sourceQuest"] = 711,	-- Study of the Elements: Rock (2/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45.0, BADLANDS },
+					["coord"] = { 25.8, 45.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1322,11 +1322,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				{
 					["allianceQuestData"] = q(27825, {	-- Survival of the Fattest [A]
 						["qg"] = 46930,	-- Victoria Delen
-						["coord"] = { 20.9, 55.7, BADLANDS },
+						["coord"] = { 20.9, 55.7, MAP.BADLANDS },
 					}),
 					["hordeQuestData"] = q(27879, {	-- Survival of the Fattest [H]
 						["qg"] = 46660,	-- Aidan Summerwind
-						["coord"] = { 18.4, 41.5, BADLANDS },
+						["coord"] = { 18.4, 41.5, MAP.BADLANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1336,7 +1336,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 206498 },	-- Dustbelcher Meat
 								{ "o", 206420 },	-- Dustbelcher Meat
 							},
-							["coord"] = { 12.6, 75.6, BADLANDS },
+							["coord"] = { 12.6, 75.6, MAP.BADLANDS },
 							["cr"] = 46928,	-- Dustbelcher Butcher
 						}),
 						objective(1, {	-- 0/10 Dustbelcher Silk
@@ -1344,21 +1344,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  62547 },	-- Dustbelcher Silk
 								{ "o", 206499 },	-- Dustbelcher Chest
 							},
-							["coord"] = { 13.7, 75.5, BADLANDS },
+							["coord"] = { 13.7, 75.5, MAP.BADLANDS },
 						}),
 					},
 				},
 				q(27890, {	-- The Bad Dogs
 					["sourceQuest"] = 27889,	-- New Kargath
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 18.1, 42.5, BADLANDS },
+					["coord"] = { 18.1, 42.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27713, {	-- The Day that Deathwing Came
 					["sourceQuest"] = 27927,	-- Down to the Scar
 					["qg"] = 2785,	-- Theldurin the Lost
-					["coord"] = { 26.2, 62.3, BADLANDS },
+					["coord"] = { 26.2, 62.3, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Dang-Blasted Rock Elemental slain
@@ -1372,7 +1372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27714, {	-- The Day that Deathwing Came: The Real Story
 					["sourceQuest"] = 27713,	-- The Day that Deathwing Came
 					["qg"] = 2920,	-- Lucien Tosselwrench
-					["coord"] = { 26.3, 62.5, BADLANDS },
+					["coord"] = { 26.3, 62.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Grow large enough to reach the clouds
@@ -1386,7 +1386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27715, {	-- The Day that Deathwing Came: What Really Happened
 					["sourceQuest"] = 27714,	-- The Day that Deathwing Came: The Real Story
 					["qg"] = 4618,	-- Martek the Exiled
-					["coord"] = { 26.2, 62.5, BADLANDS },
+					["coord"] = { 26.2, 62.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Choose an admirer to save
@@ -1417,7 +1417,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27859, {	-- The Egg Lives On
 					["sourceQuest"] = 27930,	-- Devastation
 					["qg"] = 46664,	-- Dr. Hieronymus Blam
-					["coord"] = { 18.0, 30.5, BADLANDS },
+					["coord"] = { 18.0, 30.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63194, {	-- Rhea's Last Egg
@@ -1428,7 +1428,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27824, {	-- The Good Stuff
 					["sourceQuest"] = 27823,	-- A Dwarf's Got Needs
 					["qg"] = 2860,	-- Sigrun Ironhew
-					["coord"] = { 49.5, 37.0, BADLANDS },
+					["coord"] = { 49.5, 37.0, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1437,7 +1437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  62509 },	-- Engraved Tablets of Golganneth
 								{ "o", 206388 },	-- Angor's Coffer
 							},
-							["coord"] = { 40.1, 25.1, BADLANDS },
+							["coord"] = { 40.1, 25.1, MAP.BADLANDS },
 						}),
 						i(63168, {	-- Ironhew Cloak
 							["timeline"] = { ADDED_4_0_3 },
@@ -1459,21 +1459,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27832, {	-- The Hidden Clutch (A)
 					["sourceQuest"] = 27831,	-- The Sorrow and the Fury
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 21.1, 57.7, BADLANDS },
+					["coord"] = { 21.1, 57.7, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27897, {	-- The Hidden Clutch (H)
 					["sourceQuest"] = 27896,	-- The Sorrow and the Fury
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 18.1, 42.5, BADLANDS },
+					["coord"] = { 18.1, 42.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(692, {	-- The Lost Fragments
 					["sourceQuest"] = 687,	-- Theldurin the Lost
 					["qg"] = 2785,	-- Theldurin the Lost
-					["coord"] = { 51.4, 76.9, BADLANDS },
+					["coord"] = { 51.4, 76.9, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1493,7 +1493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27877, {	-- The Morons' League
 					["qg"] = 46759,	-- Lidia Sunglow
-					["coord"] = { 52.2, 51.6, BADLANDS },
+					["coord"] = { 52.2, 51.6, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1511,14 +1511,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27709, {	-- The Sentinel's Game (A)
 					["sourceQuest"] = 27797,	-- The Sentinel's Pawn
 					["provider"] = { "o", 206336 },	-- Marble Slab
-					["coord"] = { 47.9, 50.9, BADLANDS },
+					["coord"] = { 47.9, 50.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27886, {	-- The Sentinel's Game (H)
 					["sourceQuest"] = 27884,	-- The Sentinel's Pawn
 					["provider"] = { "o", 206336 },	-- Marble Slab
-					["coord"] = { 47.9, 50.9, BADLANDS },
+					["coord"] = { 47.9, 50.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1528,7 +1528,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 46760 },	-- Lead Prospector Durdin
 						{ "i", 62490 },	-- Sentinel's Pawn
 					},
-					["coord"] = { 49.3, 36.9, BADLANDS },
+					["coord"] = { 49.3, 36.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
 						{ "i", 62490 },	-- Sentinel's Pawn
 					},
-					["coord"] = { 52.0, 51.2, BADLANDS },
+					["coord"] = { 52.0, 51.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1546,21 +1546,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46654,	-- Rhea
 					["allianceQuestData"] = q(27831, {	-- The Sorrow and the Fury [A]
 						["sourceQuest"] = 27830,	-- Their Hunt Continues
-						["coord"] = { 21.1, 57.7, BADLANDS },
+						["coord"] = { 21.1, 57.7, MAP.BADLANDS },
 					}),
 					["hordeQuestData"] = q(27896, {	-- The Sorrow and the Fury [H]
 						["sourceQuest"] = 27895,	-- Their Hunt Continues
-						["coord"] = { 18.1, 42.5, BADLANDS },
+						["coord"] = { 18.1, 42.5, MAP.BADLANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Nyxondra slain
 							["provider"] = { "n", 46861 },	-- Nyxondra
-							["coord"] = { 10.0, 40.6, BADLANDS },
+							["coord"] = { 10.0, 40.6, MAP.BADLANDS },
 						}),
 						objective(2, {	-- 0/12 Nyxondra's Broodling slain
 							["provider"] = { "n", 46916 },	-- Nyxondra's Broodling
-							["coord"] = { 11.0, 38.2, BADLANDS },
+							["coord"] = { 11.0, 38.2, MAP.BADLANDS },
 						}),
 					},
 				},
@@ -1571,7 +1571,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ "n", 2786 },	-- Gerrig Bonegrip
 							{ "i", 4649 },	-- Bonegrip's Note
 						},
-						["coord"] = { 50.8, 5.6, IRONFORGE },
+						["coord"] = { 50.8, 5.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(736, {	-- The Star, the Hand and the Heart [H]
 						["sourceQuest"] = 728,	-- To the Undercity for Yagyin's Digest
@@ -1579,26 +1579,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ "n", 2934 },	-- Keeper Bel'dugur
 							{ "i", 4650 },	-- Bel'dugur's Note
 						},
-						["coord"] = { 53.7, 54.5, UNDERCITY },
+						["coord"] = { 53.7, 54.5, MAP.UNDERCITY },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ALTERAC_MOUNTAINS, DUSTWALLOW_MARSH, STRANGLETHORN_VALE },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Star of Xil'yeh
 							["provider"] = { "i", 4646 },	-- Star of Xil'yeh
-							["coord"] = { 39.6, 51.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.6, 51.8, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2417,	-- Grel'borg the Miser
 						}),
 						objective(2, {	-- 0/1 Hand of Dagun
 							["provider"] = { "i", 4641 },	-- Hand of Dagun
-							["coord"] = { 60.4, 12.2, DUSTWALLOW_MARSH },
+							["coord"] = { 60.4, 12.2, MAP.DUSTWALLOW_MARSH },
 							["cost"] = { { "i", 4639, 1 } },	-- Enchanted Sea Kelp
 							["cr"] = 2937,	-- Dagun the Ravenous
 						}),
 						objective(3, {	-- 0/1 The Legacy Heart
 							["provider"] = { "i", 4644 },	-- The Legacy Heart
-							["coord"] = { 47.6, 44.2, STRANGLETHORN_VALE },
+							["coord"] = { 47.6, 44.2, MAP.STRANGLETHORN_VALE },
 							["cr"] = 1060,	-- Mogh the Undying <Skullsplitter Clan Witchdoctor>
 						}),
 					},
@@ -1606,21 +1606,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27827, {	-- The Swift, the Fierce, and the Stout
 					["sourceQuest"] = 27826,	-- Into the Dragon's Mouth
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 21.2, 57.8, BADLANDS },
+					["coord"] = { 21.2, 57.8, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27912, {	-- The Titans' Trove (A)
 					["sourceQuest"] = 27793,	-- Ancient Protectors
 					["qg"] = 46760,	-- Lead Prospector Durdin
-					["coord"] = { 49.2, 36.9, BADLANDS },
+					["coord"] = { 49.2, 36.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27913, {	-- The Titans' Trove (H)
 					["sourceQuest"] = 27887,	-- Ancient Protectors
 					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
-					["coord"] = { 52.0, 51.2, BADLANDS },
+					["coord"] = { 52.0, 51.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1630,20 +1630,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 46655 },	-- Rheastrasza
 						{ "i", 62395 },	-- Black Dragon Samples
 					},
-					["coord"] = { 66.5, 55.6, BADLANDS },
+					["coord"] = { 66.5, 55.6, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27693, {	-- The Warden's Game (A)
 					["sourceQuest"] = 27796,	-- The Warden's Pawn
 					["provider"] = { "o", 206335 },	-- Stone Slab
-					["coord"] = { 50.2, 54.2, BADLANDS },
+					["coord"] = { 50.2, 54.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27885, {	-- The Warden's Game (H)
 					["sourceQuest"] = 27883,	-- The Warden's Pawn
 					["provider"] = { "o", 206335 },	-- Stone Slab
-					["coord"] = { 50.2, 54.2, BADLANDS },
+					["coord"] = { 50.2, 54.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1653,7 +1653,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 46760 },	-- Lead Prospector Durdin
 						{ "i", 62489 },	-- Warden's Pawn
 					},
-					["coord"] = { 49.3, 36.9, BADLANDS },
+					["coord"] = { 49.3, 36.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1663,7 +1663,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
 						{ "i", 62489 },	-- Warden's Pawn
 					},
-					["coord"] = { 52.0, 51.2, BADLANDS },
+					["coord"] = { 52.0, 51.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1679,9 +1679,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						46857,	-- Olaf
 					},
 					["coords"] = {
-						{ 20.6, 56.1, BADLANDS },
-						{ 20.5, 56.0, BADLANDS },
-						{ 20.5, 56.3, BADLANDS },
+						{ 20.6, 56.1, MAP.BADLANDS },
+						{ 20.5, 56.0, MAP.BADLANDS },
+						{ 20.5, 56.3, MAP.BADLANDS },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1706,9 +1706,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						47024,	-- Jurrix Whitemane
 					},
 					["coords"] = {
-						{ 18.8, 42.9, BADLANDS },
-						{ 18.9, 42.8, BADLANDS },
-						{ 18.8, 42.7, BADLANDS },
+						{ 18.8, 42.9, MAP.BADLANDS },
+						{ 18.9, 42.8, MAP.BADLANDS },
+						{ 18.8, 42.7, MAP.BADLANDS },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1725,35 +1725,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46654,	-- Rhea
 					["allianceQuestData"] = q(27830, {	-- Their Hunt Continues [A]
 						["sourceQuest"] = 27829,	-- The Wrath of a Dragonflight
-						["coord"] = { 21.1, 57.7, BADLANDS },
+						["coord"] = { 21.1, 57.7, MAP.BADLANDS },
 					}),
 					["hordeQuestData"] = q(27895, {	-- Their Hunt Continues [H]
 						["sourceQuest"] = 27894,	-- The Wrath of a Dragonflight
-						["coord"] = { 18.1, 42.5, BADLANDS },
+						["coord"] = { 18.1, 42.5, MAP.BADLANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 General Jirakka slain
 							["provider"] = { "n", 46860 },	-- General Jirakka
-							["coord"] = { 15.6, 42.8, BADLANDS },
+							["coord"] = { 15.6, 42.8, MAP.BADLANDS },
 						}),
 						objective(2, {	-- 0/1 Moldarr slain
 							["provider"] = { "n", 46938 },	-- Moldarr
-							["coord"] = { 17.2, 47.6, BADLANDS },
+							["coord"] = { 17.2, 47.6, MAP.BADLANDS },
 						}),
 						objective(3, {	-- 0/6 Darkflight slain
 							["providers"] = {
 								{ "n", 46917 },	-- Darkflight Flameblade
 								{ "n", 46918 },	-- Darkflight Shadowspeaker
 							},
-							["coord"] = { 19.2, 45.8, BADLANDS },
+							["coord"] = { 19.2, 45.8, MAP.BADLANDS },
 						}),
 					},
 				},
 				q(27771, {	-- Third Sample: Implanted Eggs
 					["sourceQuest"] = 27770,	-- Lifting the Veil
 					["qg"] = 46654,	-- Rhea
-					["coord"] = { 66.4, 55.5, BADLANDS },
+					["coord"] = { 66.4, 55.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/3 Nyxondra's Egg
@@ -1761,7 +1761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  62393 },	-- Nyxondra's Egg
 								{ "o", 206321 },	-- Nyxondra's Egg
 							},
-							["coord"] = { 66.0, 56.7, BADLANDS },
+							["coord"] = { 66.0, 56.7, MAP.BADLANDS },
 						}),
 						i(63163, {	-- Strong Arm Mace
 							["timeline"] = { ADDED_4_0_3 },
@@ -1783,7 +1783,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						712,	-- Study of the Elements: Rock (3/3)
 					},
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45.0, BADLANDS },
+					["coord"] = { 25.8, 45.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
@@ -1793,20 +1793,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2920 },	-- Lucien Tosselwrench
 						{ "i", 4846 },	-- Cog #5
 					},
-					["coord"] = { 25.8, 44.4, BADLANDS },
+					["coord"] = { 25.8, 44.4, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(778, {	-- This Is Going to Be Hard (3/3)
 					["sourceQuest"] = 777,	-- This Is Going to Be Hard (2/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45.0, BADLANDS },
+					["coord"] = { 25.8, 45.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lotwil's Shackles of Elemental Binding
 							["provider"] = { "i", 4847 },	-- Lotwil's Shackles of Elemental Binding
-							["coord"] = { 26.0, 46.6, BADLANDS },
+							["coord"] = { 26.0, 46.6, MAP.BADLANDS },
 							["cr"] = 2919,	-- Fam'retor Guardian
 						}),
 						i(2820, {	-- Nifty Stopwatch
@@ -1817,7 +1817,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27763, {	-- To Fuselight Proper
 					["sourceQuest"] = 27762,	-- Fuselight Ho!
 					["qg"] = 46650,	-- Eddie Flofizzle
-					["coord"] = { 92.6, 38.9, BADLANDS },
+					["coord"] = { 92.6, 38.9, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,	-- for "Easily Swayed"
 				}),
@@ -1827,7 +1827,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2785 },	-- Theldurin the Lost
 						{ "i", 4648 },	-- Sigil of the Hammer
 					},
-					["coord"] = { 51.4, 76.9, BADLANDS },
+					["coord"] = { 51.4, 76.9, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1835,11 +1835,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28512, {	-- To the Aid of the Thorium Brotherhood
 					["allianceQuestData"] = {
 						["qg"] = 46930,	-- Victoria Dolen (A)
-						["coord"] = { 20.8, 55.7, BADLANDS },
+						["coord"] = { 20.8, 55.7, MAP.BADLANDS },
 					},
 					["hordeQuestData"] = {
 						["qg"] = 46660,	-- Aidan Summerwind (H)
-						["coord"] = { 18.4, 41.5, BADLANDS },
+						["coord"] = { 18.4, 41.5, MAP.BADLANDS },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -1850,7 +1850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2785 },	-- Theldurin the Lost
 						{ "i", 4648 },	-- Sigil of the Hammer
 					},
-					["coord"] = { 51.4, 76.9, BADLANDS },
+					["coord"] = { 51.4, 76.9, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -1858,7 +1858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(732, {	-- Tremors of the Earth (1/2)
 					["sourceQuest"] = 718,	-- Mirages
 					["qg"] = 2888,	-- Garek
-					["coord"] = { 61.8, 54.2, BADLANDS },
+					["coord"] = { 61.8, 54.2, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1871,7 +1871,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(717, {	-- Tremors of the Earth (2/2)
 					["sourceQuest"] = 732,	-- Tremors of the Earth (1/2)
 					["qg"] = 2888,	-- Garek
-					["coord"] = { 61.8, 54.2, BADLANDS },
+					["coord"] = { 61.8, 54.2, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1899,7 +1899,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27789, {	-- Troggish Troubles
 					["sourceQuest"] = 27772,	-- The Venerable Doctor Blam
 					["qg"] = 46664,	-- Dr. Hieronymus Blam
-					["coord"] = { 46.8, 56.5, BADLANDS },
+					["coord"] = { 46.8, 56.5, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63182, {	-- Anti-Trogg Shield
@@ -1916,7 +1916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2202, {	-- Uldaman Reagent Run
 					["sourceQuest"] = 2258,	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46.0, BADLANDS },
+					["coord"] = { 2.6, 46.0, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ULDAMAN },
 					["races"] = HORDE_ONLY,
@@ -1932,7 +1932,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9439, {	-- Unclaimed Baggage
 					["qg"] = 17097,	-- Advisor Sarophas
-					["coord"] = { 5.8, 48.0, BADLANDS },
+					["coord"] = { 5.8, 48.0, MAP.BADLANDS },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
@@ -1942,20 +1942,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  23658 },	-- Advisor's Pack
 								{ "o", 181628 },	-- Empty Barrel
 							},
-							["coord"] = { 41.0, 29.2, BADLANDS },
+							["coord"] = { 41.0, 29.2, MAP.BADLANDS },
 						}),
 						objective(2, {	-- 0/1 Advisor's Rapier
 							["providers"] = {
 								{ "i",  23660 },	-- Advisor's Rapier
 								{ "o", 181627 },	-- Weapon Rack
 							},
-							["coord"] = { 41.7, 26.8, BADLANDS },
+							["coord"] = { 41.7, 26.8, MAP.BADLANDS },
 						}),
 					},
 				}),
 				warchiefscommand(q(28580, {	-- Warchief's Command: Badlands!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
@@ -1965,12 +1965,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["qg"] = 46653,	-- Garyanne Fleezlebop
-					["coord"] = { 64.2, 38.1, BADLANDS },
+					["coord"] = { 64.2, 38.1, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Instructor's Rod
 							["provider"] = { "i", 62396 },	-- Instructor's Rod
-							["coord"] = { 57.6, 26.0, BADLANDS },
+							["coord"] = { 57.6, 26.0, MAP.BADLANDS },
 							["cr"] = 46693,	-- Dustbelcher Instructor
 						}),
 						i(63155, {	-- Goat Horn Band
@@ -1995,15 +1995,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(14224, {	-- 7:XT <Long Distance Recovery Unit>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 78.6, 31.6, BADLANDS },
+						{ 78.6, 31.6, MAP.BADLANDS },
 						-- #else
-						{ 24.0, 52.6, BADLANDS },
-						{ 12.8, 67.0, BADLANDS },
-						{ 19.4, 80.6, BADLANDS },
-						{ 29.0, 68.6, BADLANDS },
-						{ 55.4, 53.2, BADLANDS },
-						{ 58.4, 67.6, BADLANDS },
-						{ 55.4, 83.8, BADLANDS },
+						{ 24.0, 52.6, MAP.BADLANDS },
+						{ 12.8, 67.0, MAP.BADLANDS },
+						{ 19.4, 80.6, MAP.BADLANDS },
+						{ 29.0, 68.6, MAP.BADLANDS },
+						{ 55.4, 53.2, MAP.BADLANDS },
+						{ 58.4, 67.6, MAP.BADLANDS },
+						{ 55.4, 83.8, MAP.BADLANDS },
 						-- #endif
 					},
 					-- #if BEFORE CATA
@@ -2013,147 +2013,147 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2754, {	-- Anathemus
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 8.8, 67.0, BADLANDS },
+						{ 8.8, 67.0, MAP.BADLANDS },
 						-- #else
-						{ 48.0, 47.4, BADLANDS },
-						{ 58.0, 57.0, BADLANDS },
-						{ 52.0, 75.4, BADLANDS },
-						{ 37.6, 71.4, BADLANDS },
-						{ 17.0, 82.2, BADLANDS },
-						{ 11.8, 72.6, BADLANDS },
-						{ 25.6, 52.6, BADLANDS },
-						{ 35.4, 58.0, BADLANDS },
-						{ 43.0, 54.2, BADLANDS },
+						{ 48.0, 47.4, MAP.BADLANDS },
+						{ 58.0, 57.0, MAP.BADLANDS },
+						{ 52.0, 75.4, MAP.BADLANDS },
+						{ 37.6, 71.4, MAP.BADLANDS },
+						{ 17.0, 82.2, MAP.BADLANDS },
+						{ 11.8, 72.6, MAP.BADLANDS },
+						{ 25.6, 52.6, MAP.BADLANDS },
+						{ 35.4, 58.0, MAP.BADLANDS },
+						{ 43.0, 54.2, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
 				n(2753, {	-- Barnabus
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 40.8, 58.8, BADLANDS },
+						{ 40.8, 58.8, MAP.BADLANDS },
 						-- #else
-						{ 57.2, 57.0, BADLANDS },
-						{ 54.0, 68.6, BADLANDS },
-						{ 46.2, 74.2, BADLANDS },
-						{ 38.2, 69.4, BADLANDS },
+						{ 57.2, 57.0, MAP.BADLANDS },
+						{ 54.0, 68.6, MAP.BADLANDS },
+						{ 46.2, 74.2, MAP.BADLANDS },
+						{ 38.2, 69.4, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
 				n(2749, {	-- Barricade [CATA+] / Siege Golem
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 9.60, 48.8, BADLANDS },
-						{ 27.2, 37.4, BADLANDS },
+						{ 9.60, 48.8, MAP.BADLANDS },
+						{ 27.2, 37.4, MAP.BADLANDS },
 						-- #else
-						{ 5.6, 59.8, BADLANDS },
-						{ 13.4, 65.4, BADLANDS },
-						{ 19.0, 60.0, BADLANDS },
-						{ 30.0, 61.0, BADLANDS },
-						{ 35.6, 43.6, BADLANDS },
-						{ 43.0, 39.0, BADLANDS },
+						{ 5.6, 59.8, MAP.BADLANDS },
+						{ 13.4, 65.4, MAP.BADLANDS },
+						{ 19.0, 60.0, MAP.BADLANDS },
+						{ 30.0, 61.0, MAP.BADLANDS },
+						{ 35.6, 43.6, MAP.BADLANDS },
+						{ 43.0, 39.0, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
 				n(51000, {	-- Blackshell the Impenetrable
-					["coord"] = { 72.2, 27.4, BADLANDS },
+					["coord"] = { 72.2, 27.4, MAP.BADLANDS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2850, {	-- Broken Tooth
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 22.6, 60.6, BADLANDS },
+						{ 22.6, 60.6, MAP.BADLANDS },
 						-- #else
-						{ 54.0, 16.6, BADLANDS },
-						{ 45.4, 36.8, BADLANDS },
-						{ 62.0, 32.8, BADLANDS },
+						{ 54.0, 16.6, MAP.BADLANDS },
+						{ 45.4, 36.8, MAP.BADLANDS },
+						{ 62.0, 32.8, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 58.0, 54.0, BADLANDS },
+					["coord"] = { 58.0, 54.0, MAP.BADLANDS },
 					["groups"] = {
 						i(216951),	-- Slippery Dalaran Relic
 					},
 				})),
 				-- #endif
 				n(50728, {	-- Deathstrike
-					["coord"] = { 70.2, 53.8, BADLANDS },
+					["coord"] = { 70.2, 53.8, MAP.BADLANDS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50726, {	-- Kalixx
-					["coord"] = { 32.0, 35.6, BADLANDS },
+					["coord"] = { 32.0, 35.6, MAP.BADLANDS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50731, {	-- Needlefang
-					["coord"] = { 50.8, 72.6, BADLANDS },
+					["coord"] = { 50.8, 72.6, MAP.BADLANDS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2752, {	-- Rumbler
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 16.0, 29.4, BADLANDS },
+						{ 16.0, 29.4, MAP.BADLANDS },
 						-- #else
-						{ 3.4, 78.8, BADLANDS },
-						{ 15.6, 89.0, BADLANDS },
+						{ 3.4, 78.8, MAP.BADLANDS },
+						{ 15.6, 89.0, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
 				n(51007, {	-- Serkett
-					["coord"] = { 26.8, 38.0, BADLANDS },
+					["coord"] = { 26.8, 38.0, MAP.BADLANDS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2744, {	-- Shadowforge Commander
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 39.6, 24.6, BADLANDS },
+						{ 39.6, 24.6, MAP.BADLANDS },
 						-- #else
-						{ 41.2, 26.2, BADLANDS },
+						{ 41.2, 26.2, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
 				n(50838, {	-- Tabbs
-					["coord"] = { 58.6, 60.6, BADLANDS },
+					["coord"] = { 58.6, 60.6, MAP.BADLANDS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51021, {	-- Vorticus
-					["coord"] = { 23.2, 37.6, BADLANDS },
+					["coord"] = { 23.2, 37.6, MAP.BADLANDS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(2751, {	-- War Golem
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.0, 25.4, BADLANDS },
+						{ 49.0, 25.4, MAP.BADLANDS },
 						-- #else
-						{ 47.8, 13.2, BADLANDS },
-						{ 52.0, 28.2, BADLANDS },
-						{ 45.6, 33.2, BADLANDS },
+						{ 47.8, 13.2, MAP.BADLANDS },
+						{ 52.0, 28.2, MAP.BADLANDS },
+						{ 45.6, 33.2, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
 				n(2931, {	-- Zaricotl
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.6, 44.0, BADLANDS },
+						{ 56.6, 44.0, MAP.BADLANDS },
 						-- #else
-						{ 3.6, 44.2, BADLANDS },
-						{ 34.6, 53.8, BADLANDS },
-						{ 37.2, 68.0, BADLANDS },
-						{ 56.0, 57.4, BADLANDS },
-						{ 55.8, 64.6, BADLANDS },
+						{ 3.6, 44.2, MAP.BADLANDS },
+						{ 34.6, 53.8, MAP.BADLANDS },
+						{ 37.2, 68.0, MAP.BADLANDS },
+						{ 56.0, 57.4, MAP.BADLANDS },
+						{ 55.8, 64.6, MAP.BADLANDS },
 						-- #endif
 					},
 				}),
 				n(51018, {	-- Zormus
-					["coord"] = { 51.8, 34.2, BADLANDS },
+					["coord"] = { 51.8, 34.2, MAP.BADLANDS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
 			n(TREASURES, {
 				o(2842, {	-- Pillar of Diamond
 					["cost"] = {{ "i", 4640, 1 }},	-- Sign of the Earth
-					["coord"] = { 83.5, 32.9, BADLANDS },
+					["coord"] = { 83.5, 32.9, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(4845),	-- Diamond Runestone
@@ -2161,7 +2161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				o(2848, {	-- Pillar of Opal
 					["cost"] = {{ "i", 4640, 1 }},	-- Sign of the Earth
-					["coord"] = { 72.38, 66.94, BADLANDS },
+					["coord"] = { 72.38, 66.94, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(4844),	-- Opal Runestone
@@ -2169,7 +2169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				o(2858, {	-- Pillar of Amethyst
 					["cost"] = {{ "i", 4640, 1 }},	-- Sign of the Earth
-					["coord"] = { 81.27, 64.29, BADLANDS },
+					["coord"] = { 81.27, 64.29, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(4843),	-- Amethyst Runestone
@@ -2178,7 +2178,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(49918, {	-- Buckslappy <Engineering Supply Specialist>
-					["coord"] = { 91.0, 38.4, BADLANDS },
+					["coord"] = { 91.0, 38.4, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(18649, {	-- Schematic: Blue Firework (RECIPE!)
@@ -2196,7 +2196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(48060, {	-- "Chef" Overheat <Cooking Supplies>
-					["coord"] = { 65.0, 38.8, BADLANDS },
+					["coord"] = { 65.0, 38.8, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -2207,7 +2207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(9179, {	-- Jazzrik <Blacksmithing Supplies>
-					["coord"] = { 42.4, 52.5, BADLANDS },
+					["coord"] = { 42.4, 52.5, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -2216,7 +2216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(48064, {	-- Milly Brewtap <Barmaid>
-					["coord"] = { 64.4, 38.7, BADLANDS },
+					["coord"] = { 64.4, 38.7, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if AFTER 4.0.3
 					["groups"] = {
@@ -2234,7 +2234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(48096, {	-- "Snake" Sanders <Weaponsmith>
-					["coord"] = { 21.3, 58.0, BADLANDS },
+					["coord"] = { 21.3, 58.0, MAP.BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -2255,11 +2255,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2621, {	-- Cowl of Necromancy
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 47.0, 26.0, BADLANDS },
-						{ 47.2, 32.4, BADLANDS },
+						{ 47.0, 26.0, MAP.BADLANDS },
+						{ 47.2, 32.4, MAP.BADLANDS },
 						-- #else
-						{ 53.6, 31.8, BADLANDS },
-						{ 52.4, 33.6, BADLANDS },
+						{ 53.6, 31.8, MAP.BADLANDS },
+						{ 52.4, 33.6, MAP.BADLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2277,11 +2277,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1521, {	-- Lumbering Ogre Axe
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 12.0, 79.6, BADLANDS },
-						{ 12.6, 73.4, BADLANDS },
+						{ 12.0, 79.6, MAP.BADLANDS },
+						{ 12.6, 73.4, MAP.BADLANDS },
 						-- #else
-						{ 10.0, 92.6, BADLANDS },
-						{ 7.6, 89.4, BADLANDS },
+						{ 10.0, 92.6, MAP.BADLANDS },
+						{ 7.6, 89.4, MAP.BADLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2314,11 +2314,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2624, {	-- Thinking Cap
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 14.6, 61.8, BADLANDS },
-						{ 16.0, 66.2, BADLANDS },
+						{ 14.6, 61.8, MAP.BADLANDS },
+						{ 16.0, 66.2, MAP.BADLANDS },
 						-- #else
-						{ 9.6, 78.6, BADLANDS },
-						{ 9.4, 85.4, BADLANDS },
+						{ 9.6, 78.6, MAP.BADLANDS },
+						{ 9.4, 85.4, MAP.BADLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },

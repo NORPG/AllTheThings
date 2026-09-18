@@ -268,14 +268,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 					24934,	-- Snack-O-Matic IV
 				},
 				["coords"] = {
-					{ 53.32, 79.27, ORGRIMMAR },	-- Alowicious Czervik
-					{ 69.87, 85.18, THOUSAND_NEEDLES },	-- Brivelthwerp
+					{ 53.32, 79.27, MAP.ORGRIMMAR },	-- Alowicious Czervik
+					{ 69.87, 85.18, MAP.THOUSAND_NEEDLES },	-- Brivelthwerp
 					{ 54.22, 76.11, NAGRAND },	-- Caregiver Isel
 					{ 56.73, 34.51, NAGRAND },	-- Matron Tikkit
-					{ 53.66, 53.01, ORGRIMMAR },	-- Snack-O-Matic IV
+					{ 53.66, 53.01, MAP.ORGRIMMAR },	-- Snack-O-Matic IV
 				},
 				["maps"] = {
-					STORMWIND_CITY,
+					MAP.STORMWIND_CITY,
 					86,	-- Orgrimmar
 				},
 			}),
@@ -478,9 +478,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 56.31, 53.99, STORMWIND_CITY },	-- Orphan Matron Nightingale
+				{ 56.31, 53.99, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #else
-				{ 47.2, 38.4, STORMWIND_CITY },	-- Orphan Matron Nightingale
+				{ 47.2, 38.4, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #endif
 			},
 			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
@@ -513,9 +513,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
+				{ 57.93, 57.63, MAP.ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #else
-				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
+				{ 70.8, 25.6, MAP.ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #endif
 			},
 			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
@@ -670,14 +670,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { THUNDER_BLUFF },
+			["maps"] = { MAP.THUNDER_BLUFF },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- 0/1 Cairne's Hoofprint
 					["provider"] = { "i", 18643 },	-- Cairne's Hoofprint
-					["coord"] = { 59.8, 51.6, THUNDER_BLUFF },
+					["coord"] = { 59.8, 51.6, MAP.THUNDER_BLUFF },
 					["cr"] = 3057,	-- Cairne Bloodhoof <High Chieftain>
 				}),
 			},
@@ -724,9 +724,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 56.3, 54.0, STORMWIND_CITY },	-- Orphan Matron Nightingale
+				{ 56.3, 54.0, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #else
-				{ 47.4, 38.6, STORMWIND_CITY },	-- Orphan Matron Nightingale
+				{ 47.4, 38.6, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #endif
 			},
 			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
@@ -769,9 +769,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
+				{ 57.93, 57.63, MAP.ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #else
-				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
+				{ 70.8, 25.6, MAP.ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #endif
 			},
 			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
@@ -812,7 +812,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_4_0_1 },
-			["maps"] = { STORMWIND_CITY },
+			["maps"] = { MAP.STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -820,8 +820,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				objective(1, {	-- Chopper Tour of the Raging Chasm
 					["provider"] = { "n", 52189 },	-- Rental Chopper
 					["coords"] = {
-						{ 57.71, 53.27, WESTFALL },	-- Rental Chopper
-						{ 57.78, 53.06, WESTFALL },	-- Rental Chopper
+						{ 57.71, 53.27, MAP.WESTFALL },	-- Rental Chopper
+						{ 57.78, 53.06, MAP.WESTFALL },	-- Rental Chopper
 					},
 				}),
 			},
@@ -833,14 +833,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { THE_BARRENS },
+			["maps"] = { MAP.THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the docks of Ratchet in the Barrens.
 					["provider"] = { "n", 9558 },	-- Grimble <Shipmaster>
-					["coord"] = { 63.0, 38.0, THE_BARRENS },
+					["coord"] = { 63.0, 38.0, MAP.THE_BARRENS },
 				}),
 			},
 		}),
@@ -851,13 +851,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { THE_BARRENS },
+			["maps"] = { MAP.THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the Mor'shan Rampart in the Barrens.
-					["coord"] = { 47.0, 5.0, THE_BARRENS },
+					["coord"] = { 47.0, 5.0, MAP.THE_BARRENS },
 				}),
 			},
 		}),
@@ -938,14 +938,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { DUSTWALLOW_MARSH },
+			["maps"] = { MAP.DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- 0/1 Jaina's Autograph
 					["provider"] = { "i", 18642 },	-- Jaina's Autograph
-					["coord"] = { 66.2, 49.0, DUSTWALLOW_MARSH },
+					["coord"] = { 66.2, 49.0, MAP.DUSTWALLOW_MARSH },
 					["cr"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 				}),
 			},
@@ -985,7 +985,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_4_0_1 },
-			["maps"] = { STORMWIND_CITY },
+			["maps"] = { MAP.STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -993,24 +993,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				objective(1, {	-- Fly Dragon Kites with your orphan
 					["provider"] = { "i", 68890 },	-- Dragon Kite 2-Pack
 					["coords"] = {
-						{ 56.31, 68.45, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 56.67, 66.57, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 56.75, 70.04, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 57.19, 71.63, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 57.57, 65.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 57.63, 73.23, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 58.07, 74.83, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 58.44, 64.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 58.51, 76.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 59.12, 77.98, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 59.44, 63.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 60.44, 62.44, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 61.21, 61.78, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 62.31, 61.34, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 63.44, 61.05, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 64.62, 61.54, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 65.63, 62.99, STORMWIND_CITY },	-- Craggle Wobbletop Path
-						{ 66.61, 64.43, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 56.31, 68.45, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 56.67, 66.57, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 56.75, 70.04, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 57.19, 71.63, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 57.57, 65.42, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 57.63, 73.23, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 58.07, 74.83, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 58.44, 64.31, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 58.51, 76.42, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 59.12, 77.98, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 59.44, 63.31, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 60.44, 62.44, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 61.21, 61.78, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 62.31, 61.34, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 63.44, 61.05, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 64.62, 61.54, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 65.63, 62.99, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 66.61, 64.43, MAP.STORMWIND_CITY },	-- Craggle Wobbletop Path
 					},
 					["cr"] = 52358,	-- Craggle Wobbletop <Toys and Novelties>
 				}),
@@ -1032,7 +1032,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
-				ORGRIMMAR,
+				MAP.ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
 			},
 			["races"] = HORDE_ONLY,
@@ -1042,20 +1042,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				objective(1, {	-- Fly Dragon Kites with your orphan
 					["provider"] = { "i", 69231 },	-- Dragon Kite 2-Pack
 					["coords"] = {
-						{ 57.13, 51.12, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 57.24, 52.54, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 57.87, 54.21, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.08, 51.11, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.29, 62.41, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.34, 62.93, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.48, 55.55, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.67, 62.27, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.78, 53.61, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.79, 50.93, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.81, 57.61, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.85, 58.67, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
-						{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 57.13, 51.12, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 57.24, 52.54, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 57.87, 54.21, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.08, 51.11, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.29, 62.41, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.34, 62.93, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.48, 55.55, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.67, 62.27, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.78, 53.61, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.79, 50.93, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.81, 57.61, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.85, 58.67, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.86, 60.16, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 59.32, 51.86, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
 					},
 					["cr"] = 52809,	-- Blax Bottlerocket <Toys and Novelties>
 				}),
@@ -1122,13 +1122,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { UNDERCITY },
+			["maps"] = { MAP.UNDERCITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the old Lordaeron Throne Room that lies just before descending into the Undercity.
-					["coord"] = { 66.1, 35.2, UNDERCITY },
+					["coord"] = { 66.1, 35.2, MAP.UNDERCITY },
 				}),
 			},
 		}),
@@ -1139,14 +1139,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_4_0_1, REMOVED_8_0_1 },
-			["maps"] = { STORMWIND_CITY, DARNASSUS },
+			["maps"] = { MAP.STORMWIND_CITY, MAP.DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Malfurion Stormrage with your orphan
 					["provider"] = { "n", 43845 },	-- Malfurion Stormrage
-					["coord"] = { 44.1, 79.9, DARNASSUS },
+					["coord"] = { 44.1, 79.9, MAP.DARNASSUS },
 				}),
 			},
 		}),
@@ -1161,7 +1161,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33533 },	-- Oracle Orphan
 			},
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN, SHOLAZAR_BASIN, UNGORO_CRATER },
+			["maps"] = { NORTHREND_DALARAN, SHOLAZAR_BASIN, MAP.UNGORO_CRATER },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 			["groups"] = {
@@ -1170,7 +1170,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 					["coords"] = {
 						{ 40.01, 82.05, SHOLAZAR_BASIN },	-- Waygate Entrance
 						{ 40.66, 84.18, SHOLAZAR_BASIN },	-- Waygate Entrance
-						{ 47.56, 09.17, UNGORO_CRATER },	-- The Etymidian
+						{ 47.56, 09.17, MAP.UNGORO_CRATER },	-- The Etymidian
 					},
 				}),
 			},
@@ -1210,13 +1210,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_8_0_1 },
-			["maps"] = { STORMWIND_CITY },
+			["maps"] = { MAP.STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Visit the Stormwind Embassy with your orphan
-					["coord"] = { 53.28, 15.25, STORMWIND_CITY },	-- Stormwind Embassy
+					["coord"] = { 53.28, 15.25, MAP.STORMWIND_CITY },	-- Stormwind Embassy
 				}),
 			},
 		}),
@@ -1304,9 +1304,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
-				ORGRIMMAR,
+				MAP.ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
-				AZSHARA,
+				MAP.AZSHARA,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1314,7 +1314,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- Take Your Orphan to Ride the Rocketway
 					["provider"] = { "n", 52585 },	-- Redhound Two-Seater
-					["coord"] = { 50.71, 73.94, AZSHARA },
+					["coord"] = { 50.71, 73.94, MAP.AZSHARA },
 				}),
 			},
 		}),
@@ -1351,14 +1351,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { WESTFALL },
+			["maps"] = { MAP.WESTFALL },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the Westfall Lighthouse.
 					["provider"] = { "n", 392 },	-- Captain Grayson
-					["coord"] = { 29.0, 86.0, WESTFALL },
+					["coord"] = { 29.0, 86.0, MAP.WESTFALL },
 				}),
 			},
 		}),
@@ -1377,7 +1377,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Visit the Orgrimmar Embassy with your orphan
-					["coord"] = { 39.68, 78.68, ORGRIMMAR },	-- Orgimmar Embassy
+					["coord"] = { 39.68, 78.68, MAP.ORGRIMMAR },	-- Orgimmar Embassy
 				}),
 			},
 		}),
@@ -1389,9 +1389,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["timeline"] = { ADDED_4_0_1, REMOVED_8_0_1 },
 			["maps"] = {
-				ORGRIMMAR,
+				MAP.ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
-				UNDERCITY,
+				MAP.UNDERCITY,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1399,7 +1399,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- Meeting with Lady Sylvanas Windrunner
 					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.5, 91.1, UNDERCITY },
+					["coord"] = { 57.5, 91.1, MAP.UNDERCITY },
 				}),
 			},
 		}),
@@ -1410,7 +1410,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_4_0_1 },
-			["maps"] = { STORMWIND_CITY, IRONFORGE, 1361 },
+			["maps"] = { MAP.STORMWIND_CITY, MAP.IRONFORGE, 1361 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -1418,8 +1418,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				objective(1, {	-- Visit King Magni in Old Ironforge
 					["provider"] = { "n", 2918 },	-- Advisor Belgrum
 					["coords"] = {
-						{ 44.61, 49.40, IRONFORGE },	-- The High Seat [Leads to tunnel]
-						{ 44.76, 52.25, IRONFORGE },	-- Path to Old Ironforge
+						{ 44.61, 49.40, MAP.IRONFORGE },	-- The High Seat [Leads to tunnel]
+						{ 44.76, 52.25, MAP.IRONFORGE },	-- Path to Old Ironforge
 						{ 37.43, 54.32, 1361 },	-- Magni [Old Ironforge]
 					},
 				}),
@@ -1452,13 +1452,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { DARNASSUS },
+			["maps"] = { MAP.DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.
-					["coord"] = { 41.0, 43.0, DARNASSUS },
+					["coord"] = { 41.0, 43.0, MAP.DARNASSUS },
 				}),
 			},
 		}),
@@ -1552,10 +1552,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
-				ORGRIMMAR,
+				MAP.ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
-				THUNDER_BLUFF,
-				MULGORE,
+				MAP.THUNDER_BLUFF,
+				MAP.MULGORE,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1563,7 +1563,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- Take Your Orphan to Visit Red Rocks
 					["provider"] = { "n", 52805 },	-- Spirit of Cairne
-					["coord"] = { 60.74, 22.92, MULGORE },
+					["coord"] = { 60.74, 22.92, MAP.MULGORE },
 				}),
 			},
 		}),
@@ -1721,13 +1721,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { LOCH_MODAN },
+			["maps"] = { MAP.LOCH_MODAN },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the top of the Stonewrought Dam in Loch Modan.
-					["coord"] = { 48.0, 12.0, LOCH_MODAN },
+					["coord"] = { 48.0, 12.0, MAP.LOCH_MODAN },
 				}),
 			},
 		}),
@@ -1760,7 +1760,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["timeline"] = { ADDED_2_1_0 },
-			["maps"] = { TANARIS, SHATTRATH_CITY, CAVERNS_OF_TIME },
+			["maps"] = { MAP.TANARIS, SHATTRATH_CITY, CAVERNS_OF_TIME },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -1790,7 +1790,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
 			["timeline"] = { ADDED_2_1_0 },
-			["maps"] = { TANARIS, SHATTRATH_CITY, CAVERNS_OF_TIME },
+			["maps"] = { MAP.TANARIS, SHATTRATH_CITY, CAVERNS_OF_TIME },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -1881,14 +1881,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { STORMWIND_CITY },
+			["maps"] = { MAP.STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- 0/1 Tigule's Strawberry Ice Cream
 					["provider"] = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
-					["coord"] = { 54.4, 65.8, STORMWIND_CITY },	-- Emmithue Smails <Sweet Treats>
+					["coord"] = { 54.4, 65.8, MAP.STORMWIND_CITY },	-- Emmithue Smails <Sweet Treats>
 					["cr"] = 14481,	-- Emmithue Smails <Sweet Treats>
 				}),
 			},
@@ -1908,7 +1908,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["timeline"] = { ADDED_4_0_1 },
-			["maps"] = { STORMWIND_CITY },
+			["maps"] = { MAP.STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -1916,8 +1916,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				objective(1, {	-- Take your orphan out for ice cream.
 					["provider"] = { "i", 69027 },	-- Cone of Cold
 					["coords"] = {
-						{ 49.01, 89.74, STORMWIND_CITY },	-- Hans Coldhearth
-						{ 49.12, 90.07, STORMWIND_CITY },	-- Bazzil Frostweaver
+						{ 49.01, 89.74, MAP.STORMWIND_CITY },	-- Hans Coldhearth
+						{ 49.12, 90.07, MAP.STORMWIND_CITY },	-- Bazzil Frostweaver
 					},
 					["crs"] = {
 						52420,	-- Bazzil Frostweaver <The Cone of Cold>
@@ -1937,14 +1937,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
-			["maps"] = { ORGRIMMAR },
+			["maps"] = { MAP.ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- 0/1 Tigule's Strawberry Ice Cream
 					["provider"] = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
-					["coord"] = { 52.6, 69.6, ORGRIMMAR },	-- Alowicious Czervik <Sweet Treats>
+					["coord"] = { 52.6, 69.6, MAP.ORGRIMMAR },	-- Alowicious Czervik <Sweet Treats>
 					["cr"] = 14480,	-- Alowicious Czervik <Sweet Treats>
 				}),
 			},
@@ -1965,7 +1965,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
-				ORGRIMMAR,
+				MAP.ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
 			},
 			["races"] = HORDE_ONLY,
@@ -1974,7 +1974,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- Take your orphan out for ice cream.
 					["provider"] = { "i", 69233 },	-- Cone of Cold
-					["coord"] = { 36.28, 86.97, ORGRIMMAR },	-- Snixx Quickfreeze
+					["coord"] = { 36.28, 86.97, MAP.ORGRIMMAR },	-- Snixx Quickfreeze
 					["cr"] = 52818,	-- Snixx Quickfreeze <The Cone of Cold>
 				}),
 			},
@@ -2046,20 +2046,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 	n(VENDORS, {
 		n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
 			["coords"] = {
-				{ 57.13, 51.12, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 57.24, 52.54, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 57.87, 54.21, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.08, 51.11, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.29, 62.41, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.34, 62.93, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.48, 55.55, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.67, 62.27, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.78, 53.61, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.79, 50.93, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.81, 57.61, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.85, 58.67, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 57.13, 51.12, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 57.24, 52.54, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 57.87, 54.21, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.08, 51.11, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.29, 62.41, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.34, 62.93, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.48, 55.55, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.67, 62.27, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.78, 53.61, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.79, 50.93, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.81, 57.61, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.85, 58.67, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 58.86, 60.16, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
+				{ 59.32, 51.86, MAP.ORGRIMMAR },	-- Blax Bottlerocket Path
 			},
 			["timeline"] = { ADDED_4_1_0 },
 			["maps"] = {
@@ -2077,24 +2077,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 		n(52358, {	-- Craggle Wobbletop <Toys and Novelties>
 			["coords"] = {
-				{ 56.31, 68.45, STORMWIND_CITY },
-				{ 56.67, 66.57, STORMWIND_CITY },
-				{ 56.75, 70.04, STORMWIND_CITY },
-				{ 57.19, 71.63, STORMWIND_CITY },
-				{ 57.57, 65.42, STORMWIND_CITY },
-				{ 57.63, 73.23, STORMWIND_CITY },
-				{ 58.07, 74.83, STORMWIND_CITY },
-				{ 58.44, 64.31, STORMWIND_CITY },
-				{ 58.51, 76.42, STORMWIND_CITY },
-				{ 59.12, 77.98, STORMWIND_CITY },
-				{ 59.44, 63.31, STORMWIND_CITY },
-				{ 60.44, 62.44, STORMWIND_CITY },
-				{ 61.21, 61.78, STORMWIND_CITY },
-				{ 62.31, 61.34, STORMWIND_CITY },
-				{ 63.44, 61.05, STORMWIND_CITY },
-				{ 64.62, 61.54, STORMWIND_CITY },
-				{ 65.63, 62.99, STORMWIND_CITY },
-				{ 66.61, 64.43, STORMWIND_CITY },
+				{ 56.31, 68.45, MAP.STORMWIND_CITY },
+				{ 56.67, 66.57, MAP.STORMWIND_CITY },
+				{ 56.75, 70.04, MAP.STORMWIND_CITY },
+				{ 57.19, 71.63, MAP.STORMWIND_CITY },
+				{ 57.57, 65.42, MAP.STORMWIND_CITY },
+				{ 57.63, 73.23, MAP.STORMWIND_CITY },
+				{ 58.07, 74.83, MAP.STORMWIND_CITY },
+				{ 58.44, 64.31, MAP.STORMWIND_CITY },
+				{ 58.51, 76.42, MAP.STORMWIND_CITY },
+				{ 59.12, 77.98, MAP.STORMWIND_CITY },
+				{ 59.44, 63.31, MAP.STORMWIND_CITY },
+				{ 60.44, 62.44, MAP.STORMWIND_CITY },
+				{ 61.21, 61.78, MAP.STORMWIND_CITY },
+				{ 62.31, 61.34, MAP.STORMWIND_CITY },
+				{ 63.44, 61.05, MAP.STORMWIND_CITY },
+				{ 64.62, 61.54, MAP.STORMWIND_CITY },
+				{ 65.63, 62.99, MAP.STORMWIND_CITY },
+				{ 66.61, 64.43, MAP.STORMWIND_CITY },
 			},
 			["timeline"] = { ADDED_4_1_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -2111,7 +2111,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 	-- #endif
 	n(VENDORS, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
 		n(242651, {	-- Brundia Braidhammer <Toy and Pet Seller>
-			["coord"] = { 58.0, 56.8, STORMWIND_CITY },
+			["coord"] = { 58.0, 56.8, MAP.STORMWIND_CITY },
 			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 		n(243031, {	-- Clockwork Assistant
@@ -2128,7 +2128,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 		n(242676, {	-- Leial Knitterton <Toy and Pet Seller>
-			["coord"] = { 58.0, 56.8, ORGRIMMAR },
+			["coord"] = { 58.0, 56.8, MAP.ORGRIMMAR },
 			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 	})),

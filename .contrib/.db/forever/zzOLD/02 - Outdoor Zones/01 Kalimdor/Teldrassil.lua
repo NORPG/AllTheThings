@@ -7,8 +7,8 @@ local PRIESTESS_OF_THE_MOON_RACES = ALLIANCE_ONLY;
 PRIESTESS_OF_THE_MOON_RACES = { NIGHTELF };
 -- #endif
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(TELDRASSIL, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.TELDRASSIL, {
 		["lore"] =
 			-- #if AFTER CATA
 			"Teldrassil is the starter zone for the night elves. Players learn how times have changed since Malfurion Stormrage has returned to Darnassus and how Fandrel Staghelm was corrupted. It is a lush spiritual zone, set high on an island that is also a great tree. It is home to the elven capital of Darnassus.",
@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.0, 39.2, TELDRASSIL },
+								{ 58.0, 39.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -63,14 +63,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(3519, {	-- A Friend in Need
 							["sourceQuest"] = 4495,	-- A Good Friend
 							["qg"] = 8584,	-- Iverron
-							["coord"] = { 54.6, 33.0, TELDRASSIL },
+							["coord"] = { 54.6, 33.0, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 						}),
 						q(4495, {	-- A Good Friend
 							["qg"] = 8583,	-- Dirania Silvershine
-							["coord"] = { 60.8, 42.0, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 49.2, 53.2, SHADOWGLEN },
 								-- #else
-								{ 58.9, 33.9, TELDRASSIL },
+								{ 58.9, 33.9, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 49.2, 60.5, SHADOWGLEN },
 								-- #else
-								{ 58.9, 35.7, TELDRASSIL },
+								{ 58.9, 35.7, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77568, {	-- A Hunter's Strength
 							["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
-							["coord"] = { 58.6, 40.6, TELDRASSIL },
+							["coord"] = { 58.6, 40.6, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { HUNTER },
 							["races"] = { NIGHTELF },
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
 									["provider"] = { "i", 206168 },	-- Rune of the Chimera
-									["coord"] = { 56.8, 26.6, TELDRASSIL },
+									["coord"] = { 56.8, 26.6, MAP.TELDRASSIL },
 									["cr"] = 1994,	-- Githyiss the Vile
 								}),
 								recipe(410121),	-- Engrave Gloves - Chimera Shot
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77575, {	-- Amidst the Shadowed Webs
 							["qg"] = 3593,	-- Alyissia <Warrior Trainer>
-							["coord"] = { 59.6, 38.4, TELDRASSIL },
+							["coord"] = { 59.6, 38.4, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { NIGHTELF },
@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
 									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
-									["coord"] = { 56.8, 31.6, TELDRASSIL },
+									["coord"] = { 56.8, 31.6, MAP.TELDRASSIL },
 									["cr"] = 1986,	-- Webwood Spider
 								}),
 								recipe(403470),	-- Engrave Gloves - Victory Rush
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 47.4, 59.7, SHADOWGLEN },
 								-- #else
-								{ 58.4, 35.5, TELDRASSIL },
+								{ 58.4, 35.5, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(921, {	-- Crown of the Earth (1/6)
 							["sourceQuest"] = 920,	-- Tenaron's Summons
 							["qg"] = 3514,	-- Tenaron Stormgrip
-							["coord"] = { 59.0, 39.4, TELDRASSIL },
+							["coord"] = { 59.0, 39.4, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "i", 5184 },	-- Filled Crystal Phial
 										{ "i", 5185 },	-- Crystal Phial
 									},
-									["coord"] = { 59.94, 33.07, TELDRASSIL },
+									["coord"] = { 59.94, 33.07, MAP.TELDRASSIL },
 								}),
 							},
 						}),
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3514 },	-- Tenaron Stormgrip
 								{ "i", 5186 },	-- Partially Filled Vessel
 							},
-							["coord"] = { 59.0, 39.4, TELDRASSIL },
+							["coord"] = { 59.0, 39.4, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.9, 72.9, SHADOWGLEN },
 								-- #else
-								{ 58.0, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										-- #if AFTER MOP
 										{ 33.3, 77.4, SHADOWGLEN },
 										-- #else
-										{ 54.4, 39.5, TELDRASSIL },
+										{ 54.4, 39.5, MAP.TELDRASSIL },
 										-- #endif
 									},
 								}),
@@ -257,9 +257,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 54.6, 84.7, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 60.2, 41.6, TELDRASSIL },
+								{ 60.2, 41.6, MAP.TELDRASSIL },
 								-- #else
-								{ 61.2, 47.6, TELDRASSIL },
+								{ 61.2, 47.6, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["races"] = ALLIANCE_ONLY,
@@ -284,9 +284,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58.0, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, MAP.TELDRASSIL },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.6, 44.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -312,9 +312,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58.0, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, MAP.TELDRASSIL },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.6, 44.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.0, 39.2, TELDRASSIL },
+								{ 58.0, 39.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.9, 72.9, SHADOWGLEN },
 								-- #else
-								{ 58.0, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -387,9 +387,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58.0, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, MAP.TELDRASSIL },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.6, 44.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(5622, {	-- In Favor of Elune
 							["qg"] = 3595,	-- Shanda <Priest Trainer>
-							["coord"] = { 59.2, 40.4, TELDRASSIL },
+							["coord"] = { 59.2, 40.4, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
@@ -412,7 +412,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
 								-- #else
-								{ 57.2, 33.2, TELDRASSIL },
+								{ 57.2, 33.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -431,7 +431,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(3521, {	-- Iverron's Antidote (1/2)
 							["sourceQuest"] = 3519,	-- A Friend in Need
 							["qg"] = 8583,	-- Dirania Silvershine
-							["coord"] = { 60.8, 42.0, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -464,7 +464,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 8583 },	-- Dirania Silvershine
 								{ "i", 10642 },	-- Iverron's Antidote
 							},
-							["coord"] = { 60.8, 42.0, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 49.2, 52.4, SHADOWGLEN },
 								-- #else
-								{ 58.8, 33.7, TELDRASSIL },
+								{ 58.8, 33.7, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -502,7 +502,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 47.6, 59.4, SHADOWGLEN },
 								-- #else
-								{ 58.4, 35.5, TELDRASSIL },
+								{ 58.4, 35.5, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -520,7 +520,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77574, {	-- Meditation on Elune
 							["qg"] = 3595,	-- Shanda <Priest Trainer>
-							["coord"] = { 59.2, 40.4, TELDRASSIL },
+							["coord"] = { 59.2, 40.4, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["races"] = { NIGHTELF },
@@ -528,7 +528,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
 									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
-									-- ["coord"] = { , TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
+									-- ["coord"] = { , MAP.TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
 									["description"] = "Kneel (/kneel) in the Moonwell to gain a Meditation buff, then use the Rune to complete the quest.",
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
@@ -546,7 +546,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
 								-- #else
-								{ 57.2, 33.2, TELDRASSIL },
+								{ 57.2, 33.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -572,7 +572,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.6, 44.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77571, {	-- Relics of the Kaldorei
 							["qg"] = 3597,	-- Mardant Strongoak <Druid Trainer>
-							["coord"] = { 58.6, 40.4, TELDRASSIL },
+							["coord"] = { 58.6, 40.4, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { DRUID },
 							["races"] = { NIGHTELF },
@@ -603,7 +603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 46.6, 56.6, SHADOWGLEN },
 								-- #else
-								{ 58.2, 34.8, TELDRASSIL },
+								{ 58.2, 34.8, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								5633,	-- Returning Home [Ironforge]
 							},
 							["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
-							["coord"] = { 55.6, 56.8, TELDRASSIL },
+							["coord"] = { 55.6, 56.8, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_3_0_2 },
 							["classes"] = { PRIEST },
 							["races"] = { NIGHTELF },
@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77573, {	-- Second-Story Work
 							["qg"] = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
-							["coord"] = { 59.6, 38.6, TELDRASSIL },
+							["coord"] = { 59.6, 38.6, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { ROGUE },
 							["races"] = { NIGHTELF },
@@ -658,7 +658,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "o", 406006 },	-- Idol
 										{ "i", 204795 },	-- Rune of Shadowstrike
 									},
-									["coord"] = { 59.7, 42.6, TELDRASSIL },
+									["coord"] = { 59.7, 42.6, MAP.TELDRASSIL },
 								}),
 								recipe(400105),	-- Engrave Gloves - Shadowstrike
 								i(2125),	-- Cracked Leather Gloves
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 38.8, 10.4, SHADOWGLEN },
 								{ 45.2, 29.0, 58 },	-- Shadowthread Cave
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.6, 44.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -698,9 +698,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58.0, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, MAP.TELDRASSIL },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.6, 44.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -714,7 +714,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
 								-- #else
-								{ 57.2, 33.2, TELDRASSIL },
+								{ 57.2, 33.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										-- #if AFTER MOP
 										{ 50.0, 28.0, SHADOWGLEN },
 										-- #else
-										{ 59.0, 28.0, TELDRASSIL },
+										{ 59.0, 28.0, MAP.TELDRASSIL },
 										-- #endif
 									},
 								}),
@@ -746,7 +746,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 47.2, 55.9, SHADOWGLEN },
 								-- #else
-								{ 58.4, 34.4, TELDRASSIL },
+								{ 58.4, 34.4, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(920, {	-- Tenaron's Summons
 							["sourceQuest"] = 917,	-- Webwood Egg
 							["qg"] = 2082,	-- Gilshalan Windwalker
-							["coord"] = { 57.8, 41.6, TELDRASSIL },
+							["coord"] = { 57.8, 41.6, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -774,7 +774,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.0, 39.2, TELDRASSIL },
+								{ 58.0, 39.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -792,7 +792,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(456, {	-- The Balance of Nature (1/2)
 							["qg"] = 2079,	-- Conservator Ilthalaine
-							["coord"] = { 58.6, 44.2, TELDRASSIL },
+							["coord"] = { 58.6, 44.2, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -809,7 +809,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(457, {	-- The Balance of Nature (2/2)
 							["sourceQuest"] = 456,	-- The Balance of Nature (1/2)
 							["qg"] = 2079,	-- Conservator Ilthalaine
-							["coord"] = { 58.6, 44.2, TELDRASSIL },
+							["coord"] = { 58.6, 44.2, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -830,7 +830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
 								-- #else
-								{ 57.2, 33.2, TELDRASSIL },
+								{ 57.2, 33.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -838,14 +838,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(458, {	-- The Woodland Protector (1/2)
 							["qg"] = 2077,	-- Melithar Staghelm
-							["coord"] = { 59.8, 42.4, TELDRASSIL },
+							["coord"] = { 59.8, 42.4, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(459, {	-- The Woodland Protector (2/2)
 							["sourceQuest"] = 458,	-- The Woodland Protector (1/2)
 							["qg"] = 1992,	-- Tarindrella
-							["coord"] = { 57.8, 45.0, TELDRASSIL },
+							["coord"] = { 57.8, 45.0, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -880,9 +880,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58.0, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, MAP.TELDRASSIL },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.6, 44.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -898,7 +898,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 39.7, 15.1, SHADOWGLEN },
 								{ 46.8, 44.4, 58 },	-- Shadowthread Cave
 								-- #else
-								{ 57.6, 29.0, TELDRASSIL },
+								{ 57.6, 29.0, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -910,7 +910,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										-- #if AFTER MOP
 										{ 45.8, 91.0, SHADOWGLEN },
 										-- #else
-										{ 56.8, 26.6, TELDRASSIL },
+										{ 56.8, 26.6, MAP.TELDRASSIL },
 										-- #endif
 									},
 								}),
@@ -930,7 +930,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 38.9, 30.4, SHADOWGLEN },
 								{ 44.5, 92.0, 58 },	-- Shadowthread Cave
 								-- #else
-								{ 57.6, 29.0, TELDRASSIL },
+								{ 57.6, 29.0, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -942,7 +942,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										-- #if AFTER MOP
 										{ 45.8, 91.0, SHADOWGLEN },
 										-- #else
-										{ 57.6, 29.0, TELDRASSIL },
+										{ 57.6, 29.0, MAP.TELDRASSIL },
 										-- #endif
 									},
 								}),
@@ -955,7 +955,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(917, {	-- Webwood Egg
 							["sourceQuest"] = 916,	-- Webwood Venom
 							["qg"] = 2082,	-- Gilshalan Windwalker
-							["coord"] = { 57.8, 41.6, TELDRASSIL },
+							["coord"] = { 57.8, 41.6, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -964,7 +964,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "i", 5167 },	-- Webwood Egg
 										{ "o", 4406 },	-- Webwood Eggs
 									},
-									["coord"] = { 56.6, 26.5, TELDRASSIL },
+									["coord"] = { 56.6, 26.5, MAP.TELDRASSIL },
 								}),
 								i(5395),	-- Woodland Shield
 								i(4907),	-- Woodland Tunic
@@ -973,7 +973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(916, {	-- Webwood Venom
 							["qg"] = 2082,	-- Gilshalan Windwalker
-							["coord"] = { 57.8, 41.6, TELDRASSIL },
+							["coord"] = { 57.8, 41.6, MAP.TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 3,
@@ -1030,7 +1030,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(456, {	-- Dolanaar, Teldrassil
 					["cr"] = 40553,	-- Fidelio <Hippogryph Master>
-					["coord"] = { 55.4, 50.4, TELDRASSIL },
+					["coord"] = { 55.4, 50.4, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1038,9 +1038,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3838,	-- Vesprystus <Hippogryph Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.4, 88.4, TELDRASSIL },
+						{ 55.4, 88.4, MAP.TELDRASSIL },
 						-- #else
-						{ 58.4, 94.0, TELDRASSIL },
+						{ 58.4, 94.0, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1050,33 +1050,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(31555, {	-- Got one! (Valeena)
 					["sourceQuest"] = 31826,	-- Level Up!
 					["qg"] = 63070,	-- Valeena
-					["coord"] = { 55.2, 51.2, TELDRASSIL },
+					["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31552, {	-- Learning the Ropes (Valeena)
 					["qg"] = 63070,	-- Valeena
-					["coord"] = { 55.2, 51.2, TELDRASSIL },
+					["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31826, {	-- Level Up! (Valeena)
 					["sourceQuest"] = 31553,	-- On The Mend
 					["qg"] = 63070,	-- Valeena
-					["coord"] = { 55.2, 51.2, TELDRASSIL },
+					["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31553, {	-- On The Mend (Valeena)
 					["sourceQuest"] = 31552,	-- Learning the Ropes
 					["qg"] = 63070,	-- Valeena
-					["coord"] = { 55.2, 51.2, TELDRASSIL },
+					["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Battle Pets Healed
 							["provider"] = { "n", 10051 },	-- Seriadne <Stable Master>
-							["coord"] = { 56.2, 52.0, TELDRASSIL },
+							["coord"] = { 56.2, 52.0, MAP.TELDRASSIL },
 						}),
 					},
 				}),
@@ -1084,7 +1084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if SEASON_OF_DISCOVERY
 			pickpocketing({
 				applyclassicphase(SOD_PHASE_ONE, i(208749, {	-- Gnarlpine Stash Key
-					["coord"] = { 41.6, 77.6, TELDRASSIL },
+					["coord"] = { 41.6, 77.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { ROGUE },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208604, {	-- Bottom-Left Map Piece
-					["coord"] = { 52.6, 49.6, TELDRASSIL },
+					["coord"] = { 52.6, 49.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1115,7 +1115,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208603, {	-- Bottom-Right Map Piece
-					["coord"] = { 36.8, 37.6, TELDRASSIL },
+					["coord"] = { 36.8, 37.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1128,7 +1128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208602, {	-- Top-Left Map Piece
-					["coord"] = { 46.6, 52.4, TELDRASSIL },
+					["coord"] = { 46.6, 52.4, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1141,7 +1141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208601, {	-- Top-Right Map Piece
-					["coord"] = { 60.0, 64.4, TELDRASSIL },
+					["coord"] = { 60.0, 64.4, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1159,9 +1159,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2078,	-- Athridas Bearmantle
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.7, 52.0, TELDRASSIL },
+						{ 55.7, 52.0, MAP.TELDRASSIL },
 						-- #else
-						{ 56.0, 57.4, TELDRASSIL },
+						{ 56.0, 57.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1174,7 +1174,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6736,	-- Innkeeper Keldamyr <Innkeeper>
 						209872,	-- Syllart
 					},
-					["coord"] = { 55.6, 59.8, TELDRASSIL },
+					["coord"] = { 55.6, 59.8, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN, WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -1198,7 +1198,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 					["sourceQuest"] = 928,	-- Crown of the Earth (2/6)
 					["qg"] = 3515,	-- Corithras Moonrage
-					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["coord"] = { 56.2, 61.7, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Jade Phial
@@ -1206,14 +1206,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5639 },	-- Filled Jade Phial
 								{ "i", 5619 },	-- Jade Phial
 							},
-							["coord"] = { 63.0, 58.0, TELDRASSIL },
+							["coord"] = { 63.0, 58.0, MAP.TELDRASSIL },
 						}),
 					},
 				}),
 				q(933, {	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
 					["sourceQuest"] = 929,	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 					["qg"] = 3515,	-- Corithras Moonrage
-					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["coord"] = { 56.2, 61.7, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Tourmaline Phial
@@ -1221,14 +1221,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5645 },	-- Filled Tourmaline Phial
 								{ "i", 5621 },	-- Tourmaline Phial
 							},
-							["coord"] = { 42.0, 67.0, TELDRASSIL },
+							["coord"] = { 42.0, 67.0, MAP.TELDRASSIL },
 						}),
 					},
 				}),
 				q(934, {	-- Crown of the Earth (5/6)
 					["sourceQuest"] = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
 					["qg"] = 3515,	-- Corithras Moonrage
-					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["coord"] = { 56.2, 61.7, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 1.7.0
 					["description"] = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
@@ -1240,14 +1240,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 18151 },	-- Filled Amethyst Phial
 								{ "i", 18152 },	-- Amethyst Phial
 							},
-							["coord"] = { 38.0, 34.0, TELDRASSIL },
+							["coord"] = { 38.0, 34.0, MAP.TELDRASSIL },
 						}),
 					},
 				}),
 				q(7383, {	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
 					["sourceQuest"] = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
 					["qg"] = 3515,	-- Corithras Moonrage
-					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["coord"] = { 56.2, 61.7, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_1_7_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1256,7 +1256,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 18151 },	-- Filled Amethyst Phial
 								{ "i", 18152 },	-- Amethyst Phial
 							},
-							["coord"] = { 38.0, 34.0, TELDRASSIL },
+							["coord"] = { 38.0, 34.0, MAP.TELDRASSIL },
 						}),
 					},
 				}),
@@ -1266,7 +1266,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3515 },	-- Corithras Moonrage
 						{ "i", 5188 },	-- Filled Vessel
 					},
-					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["coord"] = { 56.2, 61.7, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5596),	-- Ashwood Bow
@@ -1284,9 +1284,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.8, 50.4, TELDRASSIL },
+						{ 55.8, 50.4, MAP.TELDRASSIL },
 						-- #else
-						{ 56.0, 57.8, TELDRASSIL },
+						{ 56.0, 57.8, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1302,7 +1302,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5640,	-- Desperate Prayer [Darnassus]
 					},
 					["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
-					["coord"] = { 55.6, 56.8, TELDRASSIL },
+					["coord"] = { 55.6, 56.8, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -1323,7 +1323,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 41.2, 83.8, TELDRASSIL_BANETHIL_BARROW_DEN },
 						-- #else
-						{ 45.0, 61.4, TELDRASSIL },
+						{ 45.0, 61.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1334,7 +1334,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 7318 },	-- Rageclaw
 								{ "i", 8149 },	-- Voodoo Charm
 							},
-							["coord"] = { 45.6, 59.6, TELDRASSIL },
+							["coord"] = { 45.6, 59.6, MAP.TELDRASSIL },
 						}),
 						i(9598),	-- Sleeping Robes
 						i(18957),	-- Brushwood Blade
@@ -1361,11 +1361,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2151,	-- Moon Priestess Amara [Teldrassil]
 					},
 					["coords"] = {
-						{ 39.0, 43.4, DARKSHORE },
-						{ 56.2, 59.2, TELDRASSIL },
+						{ 39.0, 43.4, MAP.DARKSHORE },
+						{ 56.2, 59.2, MAP.TELDRASSIL },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
@@ -1380,9 +1380,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2083,	-- Syral Bladeleaf
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.8, 50.4, TELDRASSIL },
+						{ 55.8, 50.4, MAP.TELDRASSIL },
 						-- #else
-						{ 56.0, 57.8, TELDRASSIL },
+						{ 56.0, 57.8, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["cost"] = {
@@ -1397,7 +1397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2259, {	-- Erion Shadewhisper
 					["sourceQuest"] = 2241,	-- The Apple Falls
 					["qg"] = 3599,	-- Jannok Breezesong
-					["coord"] = { 56.4, 60.1, TELDRASSIL },
+					["coord"] = { 56.4, 60.1, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -1406,9 +1406,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3661, {	-- Favored of Elune?
 					["qg"] = 7916,	-- Erelas Ambersky
-					["coord"] = { 55.5, 92.1, TELDRASSIL },
+					["coord"] = { 55.5, 92.1, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1424,7 +1424,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2940, {	-- Feralas: A History
 					["sourceQuest"] = 2939,	-- In Search of Knowledge
 					["provider"] = { "o", 142958 },	-- Feralas: A History
-					["coord"] = { 55.2, 91.4, TELDRASSIL },
+					["coord"] = { 55.2, 91.4, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
@@ -1434,9 +1434,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3567,	-- Tallonkai Swiftroot
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.6, 50.0, TELDRASSIL },
+						{ 55.6, 50.0, MAP.TELDRASSIL },
 						-- #else
-						{ 55.4, 56.8, TELDRASSIL },
+						{ 55.4, 56.8, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1452,9 +1452,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 67.3, 46.9, TELDRASSIL },
+								{ 67.3, 46.9, MAP.TELDRASSIL },
 								-- #else
-								{ 69.2, 53.4, TELDRASSIL },
+								{ 69.2, 53.4, MAP.TELDRASSIL },
 								-- #endif
 							},
 						}),
@@ -1467,7 +1467,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3838 },	-- Vesprystus
 						{ "i", 16262 },	-- Nessa's Collection
 					},
-					["coord"] = { 58.4, 94.0, TELDRASSIL },
+					["coord"] = { 58.4, 94.0, MAP.TELDRASSIL },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 				}),
@@ -1475,7 +1475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5621, {	-- Garments of the Moon
 					["sourceQuest"] = 5622,	-- In Favor of Elune
 					["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
-					["coord"] = { 55.6, 56.8, TELDRASSIL },
+					["coord"] = { 55.6, 56.8, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { PRIEST },
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Heal and fortify Sentinel Shaya
 							["provider"] = { "n", 12429 },	-- Sentinel Shaya
-							["coord"] = { 57.4, 63.6, TELDRASSIL },
+							["coord"] = { 57.4, 63.6, MAP.TELDRASSIL },
 						}),
 						i(16604, {	-- Moon Robes of Elune
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1495,9 +1495,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2107,	-- Gaerolas Talvethren
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.6, 51.1, TELDRASSIL },
+						{ 64.6, 51.1, MAP.TELDRASSIL },
 						-- #else
-						{ 66.2, 58.6, TELDRASSIL },
+						{ 66.2, 58.6, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1506,18 +1506,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14039, {	-- Home of the Kaldorei
 					["sourceQuest"] = 935,	-- The Waters of Teldrassil / Crown of the Earth (6/6)
 					["qg"] = 3515,	-- Corithras Moonrage
-					["coord"] = { 41.0, 45.6, TELDRASSIL },
+					["coord"] = { 41.0, 45.6, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(938, {	-- Mist
 					["qg"] = 3568,	-- Mist
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 34.5, 27.8, TELDRASSIL },
+						{ 34.5, 27.8, MAP.TELDRASSIL },
 						-- #else
-						{ 31.4, 31.6, TELDRASSIL },
+						{ 31.4, 31.6, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1543,7 +1543,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(923, {	-- Mossy Tumors [CATA+] / Tumors
 					["sourceQuest"] = 922,	-- Rellian Greenspyre
 					["qg"] = 3517,	-- Rellian Greenspyre
-					["coord"] = { 44.0, 44.2, TELDRASSIL },
+					["coord"] = { 44.0, 44.2, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Mossy Tumor
@@ -1564,7 +1564,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13946, {	-- Nature's Reprisal
 					["sourceQuest"] = 489,	-- Seek Redemption!
 					["qg"] = 2083,	-- Syral Bladeleaf
-					["coord"] = { 55.8, 50.4, TELDRASSIL },
+					["coord"] = { 55.8, 50.4, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1579,9 +1579,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2080,	-- Denalan
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 43.9, 44.2, TELDRASSIL },
+						{ 43.9, 44.2, MAP.TELDRASSIL },
 						-- #else
-						{ 60.8, 68.4, TELDRASSIL },
+						{ 60.8, 68.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1591,9 +1591,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 8136 },	-- Gargantuan Tumor
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 47.5, 35.5, TELDRASSIL },
+								{ 47.5, 35.5, MAP.TELDRASSIL },
 								-- #else
-								{ 53.6, 75.0, TELDRASSIL },
+								{ 53.6, 75.0, MAP.TELDRASSIL },
 								-- #endif
 							},
 							["cr"] = 2166,	-- Oakenscowl
@@ -1611,9 +1611,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.9, 59.8, TELDRASSIL },
+						{ 59.9, 59.8, MAP.TELDRASSIL },
 						-- #else
-						{ 60.8, 68.4, TELDRASSIL },
+						{ 60.8, 68.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1624,7 +1624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4161, {	-- Recipe of the Kaldorei
 					["qg"] = 6286,	-- Zarrin
-					["coord"] = { 57.0, 61.2, TELDRASSIL },
+					["coord"] = { 57.0, 61.2, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
 					["requireSkill"] = COOKING,
@@ -1643,9 +1643,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.9, 59.8, TELDRASSIL },
+						{ 59.9, 59.8, MAP.TELDRASSIL },
 						-- #else
-						{ 60.8, 68.4, TELDRASSIL },
+						{ 60.8, 68.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1654,7 +1654,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				q(6344, {	-- Reminders of Home [CATA+] / Nessa Shadowsong
 					["qg"] = 4265,	-- Nyoma
-					["coord"] = { 56.7, 53.5, TELDRASSIL },
+					["coord"] = { 56.7, 53.5, MAP.TELDRASSIL },
 					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
 				}),
@@ -1662,14 +1662,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13945, {	-- Resident Danger
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
 					["qg"] = 2081,	-- Sentinel Kyra Starsong
-					["coord"] = { 55.7, 52.0, TELDRASSIL },
+					["coord"] = { 55.7, 52.0, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2498, {	-- Return to Denalan
 					["sourceQuest"] = 923,	-- Tumors / Mossy Tumors [CATA+]
 					["qg"] = 3517,	-- Rellian Greenspyre
-					["coord"] = { 38.4, 21.6, DARNASSUS },
+					["coord"] = { 38.4, 21.6, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
@@ -1680,9 +1680,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7907 },	-- Daryn Lightwind
 						{ "i", 9331 },	-- Feralas: A History
 					},
-					["coord"] = { 55.4, 92.2, TELDRASSIL },
+					["coord"] = { 55.4, 92.2, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FERALAS },
+					["maps"] = { MAP.FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1691,9 +1691,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2083,	-- Syral Bladeleaf
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.8, 50.4, TELDRASSIL },
+						{ 55.8, 50.4, MAP.TELDRASSIL },
 						-- #else
-						{ 56.0, 59.4, TELDRASSIL },
+						{ 56.0, 59.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1716,7 +1716,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6722,	-- The Hunter's Path [Dun Morogh]
 					},
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
-					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["coord"] = { 56.6, 59.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -1733,7 +1733,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6101, {	-- Taming the Beast (2/3)
 					["sourceQuest"] = 6063,	-- Taming the Beast (1/3)
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
-					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["coord"] = { 56.6, 59.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -1750,7 +1750,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6102, {	-- Taming the Beast (3/3)
 					["sourceQuest"] = 6101,	-- Taming the Beast (2/3)
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
-					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["coord"] = { 56.6, 59.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -1772,16 +1772,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				q(2518, {	-- Tears of the Moon
 					["qg"] = 7313,	-- Priestess A'moora
-					["coord"] = { 39.1, 29.9, TELDRASSIL },
+					["coord"] = { 39.1, 29.9, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Silvery Spinnerets
 							["provider"] = { "i", 8344 },	-- Silvery Spinnerets
 							["cr"] = 7319,	-- Lady Sathrah
 							["coords"] = {
-								{ 38.8, 26.0, TELDRASSIL },
-								{ 42.0, 25.6, TELDRASSIL },
-								{ 48.0, 25.6, TELDRASSIL },
+								{ 38.8, 26.0, MAP.TELDRASSIL },
+								{ 42.0, 25.6, MAP.TELDRASSIL },
+								{ 48.0, 25.6, MAP.TELDRASSIL },
 							},
 						}),
 					},
@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3519 },	-- Sentinel Arynia Cloudsbreak
 						{ "i", 5219 },	-- Inscribed Bark
 					},
-					["coord"] = { 38.2, 34.4, TELDRASSIL },
+					["coord"] = { 38.2, 34.4, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 6,
@@ -1802,7 +1802,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7383, {	-- Teldrassil: The Burden of the Kaldorei [CATA+] / Crown of the Earth (5/6)
 					["sourceQuest"] = 918,	-- Timberling Seeds
 					["qg"] = 3515,	-- Corithras Moonrage
-					["coord"] = { 55.8, 53.9, TELDRASSIL },
+					["coord"] = { 55.8, 53.9, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Amethyst Phial
@@ -1810,14 +1810,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 18151 },	-- Filled Amethyst Phial
 								{ "i", 18152 },	-- Amethyst Phial
 							},
-							["coord"] = { 40.0, 29.0, TELDRASSIL },
+							["coord"] = { 40.0, 29.0, MAP.TELDRASSIL },
 						}),
 					},
 				}),
 				q(933, {	-- Teldrassil: The Coming Dawn [CATA+] / Crown of the Earth (4/6)
 					["sourceQuest"] = 7383,	-- Teldrassil: The Burden of the Kaldorei [CATA+] / Crown of the Earth (5/6)
 					["qg"] = 3515,	-- Corithras Moonrage
-					["coord"] = { 41.0, 45.6, TELDRASSIL },
+					["coord"] = { 41.0, 45.6, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Tourmaline Phial
@@ -1825,7 +1825,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5645 },	-- Filled Tourmaline Phial
 								{ "i", 5621 },	-- Tourmaline Phial
 							},
-							["coord"] = { 43.9, 58.54, TELDRASSIL },
+							["coord"] = { 43.9, 58.54, MAP.TELDRASSIL },
 						}),
 					},
 				}),
@@ -1834,8 +1834,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28731,	-- Teldrassil: Passing Awareness
 					["qg"] = 3515,	-- Corithras Moonrage
 					["coords"] = {
-						{ 55.8, 53.9, TELDRASSIL },	-- Dolanaar
-						{ 41.0, 45.6, TELDRASSIL },	-- Darnassus Crossroads
+						{ 55.8, 53.9, MAP.TELDRASSIL },	-- Dolanaar
+						{ 41.0, 45.6, MAP.TELDRASSIL },	-- Darnassus Crossroads
 					},
 					["races"] = PRIESTESS_OF_THE_MOON_RACES,
 					["groups"] = {
@@ -1844,7 +1844,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5639 },	-- Filled Jade Phial
 								{ "i", 5619 },	-- Jade Phial
 							},
-							["coord"] = { 60.0, 50.0, TELDRASSIL },
+							["coord"] = { 60.0, 50.0, MAP.TELDRASSIL },
 						}),
 					},
 				}),
@@ -1854,7 +1854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3599 },	-- Jannok Breezesong
 						{ "i", 7735 },	-- Jannok's Rose
 					},
-					["coord"] = { 56.4, 60.1, TELDRASSIL },
+					["coord"] = { 56.4, 60.1, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -1866,7 +1866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7907 },	-- Daryn Lightwind
 						{ "i", 9329 },	-- A Short Note
 					},
-					["coord"] = { 55.4, 92.2, TELDRASSIL },
+					["coord"] = { 55.4, 92.2, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
@@ -1878,7 +1878,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 10118 },	-- Nessa Shadowsong
 						{ "i", 16262 },	-- Nessa's Collection
 					},
-					["coord"] = { 56.2, 92.4, TELDRASSIL },
+					["coord"] = { 56.2, 92.4, MAP.TELDRASSIL },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 				}),
@@ -1892,9 +1892,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3567,	-- Tallonkai Swiftroot
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.6, 50.0, TELDRASSIL },
+						{ 55.6, 50.0, MAP.TELDRASSIL },
 						-- #else
-						{ 55.4, 56.8, TELDRASSIL },
+						{ 55.4, 56.8, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1906,9 +1906,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 66.1, 52.1, TELDRASSIL },
+								{ 66.1, 52.1, MAP.TELDRASSIL },
 								-- #else
-								{ 68.0, 59.6, TELDRASSIL },
+								{ 68.0, 59.6, MAP.TELDRASSIL },
 								-- #endif
 							},
 						}),
@@ -1918,9 +1918,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 39.5, 29.9, TELDRASSIL },
+						{ 39.5, 29.9, MAP.TELDRASSIL },
 						-- #else
-						{ 38.2, 34.4, TELDRASSIL },
+						{ 38.2, 34.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1960,9 +1960,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.6, 63.0, TELDRASSIL },
+						{ 57.6, 63.0, MAP.TELDRASSIL },
 						-- #else
-						{ 42.6, 76.1, TELDRASSIL },
+						{ 42.6, 76.1, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1970,14 +1970,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28517, {	-- The Howling Oak
 					["qg"] = 42968,	-- Krennan Aranas
-					["coord"] = { 55.2, 89.2, TELDRASSIL },
+					["coord"] = { 55.2, 89.2, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = { WORGEN },
 				}),
 				q(6071, {	-- The Hunter's Path [Darnassus]
 					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
-					["coord"] = { 40.2, 8.8, DARNASSUS },
+					["coord"] = { 40.2, 8.8, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -1986,7 +1986,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6072, {	-- The Hunter's Path [Teldrassil]
 					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
-					["coord"] = { 58.66, 40.45, TELDRASSIL },
+					["coord"] = { 58.66, 40.45, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -1995,7 +1995,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6073, {	-- The Hunter's Path [Darnassus]
 					["qg"] = 4205,	-- Dorion <Hunter Trainer>
-					["coord"] = { 42.2, 7.6, DARNASSUS },
+					["coord"] = { 42.2, 7.6, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -2004,7 +2004,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6721, {	-- The Hunter's Path [Ironforge]
 					["qg"] = 5117,	-- Regnus Thundergranite <Hunter Trainer>
-					["coord"] = { 69.8, 83.6, IRONFORGE },
+					["coord"] = { 69.8, 83.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -2013,7 +2013,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6722, {	-- The Hunter's Path [Dun Morogh]
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
-					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["coord"] = { 45.8, 53.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -2022,7 +2022,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(927, {	-- The Moss-twined Heart
 					["provider"] = { "i", 5179 },	-- Moss-twined Heart
-					["coord"] = { 52.0, 63.6, DARNASSUS },
+					["coord"] = { 52.0, 63.6, MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 3535,	-- Blackmoss the Fetid
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -2032,9 +2032,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2078,	-- Athridas Bearmantle
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.7, 52.0, TELDRASSIL },
+						{ 55.7, 52.0, MAP.TELDRASSIL },
 						-- #else
-						{ 56.0, 57.4, TELDRASSIL },
+						{ 56.0, 57.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2049,7 +2049,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER CATA
 								{ 64.5, 19.6, TELDRASSIL_BANETHIL_BARROW_DEN },
 								-- #else
-								{ 45.7, 57.5, TELDRASSIL },
+								{ 45.7, 57.5, MAP.TELDRASSIL },
 								-- #endif
 							},
 						}),
@@ -2062,7 +2062,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER CATA
 								{ 51.9, 86.5, TELDRASSIL_BANETHIL_BARROW_DEN },
 								-- #else
-								{ 43.8, 61.2, TELDRASSIL },
+								{ 43.8, 61.2, MAP.TELDRASSIL },
 								-- #endif
 							},
 						}),
@@ -2075,7 +2075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER CATA
 								{ 49.9, 36.6, TELDRASSIL_BANETHIL_BARROW_DEN },
 								-- #else
-								{ 44.6, 62.5, TELDRASSIL },
+								{ 44.6, 62.5, MAP.TELDRASSIL },
 								-- #endif
 							},
 						}),
@@ -2088,7 +2088,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER CATA
 								{ 54.9, 75.4, TELDRASSIL_BANETHIL_BARROW_DEN },
 								-- #else
-								{ 44.5, 60.6, TELDRASSIL },
+								{ 44.5, 60.6, MAP.TELDRASSIL },
 								-- #endif
 							},
 						}),
@@ -2114,9 +2114,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2151,	-- Moon Priestess Amara
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.4, 44.7, TELDRASSIL },
+						{ 49.4, 44.7, MAP.TELDRASSIL },
 						-- #else
-						{ 55.6, 58.4, TELDRASSIL },
+						{ 55.6, 58.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2137,9 +2137,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 37.3, 25.5, TELDRASSIL },
+						{ 37.3, 25.5, MAP.TELDRASSIL },
 						-- #else
-						{ 34.7, 28.8, TELDRASSIL },
+						{ 34.7, 28.8, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2154,7 +2154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 41.2, 83.8, TELDRASSIL_BANETHIL_BARROW_DEN },
 						-- #else
-						{ 45.0, 61.4, TELDRASSIL },
+						{ 45.0, 61.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2174,10 +2174,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 7510 },	-- Sprouted Frond
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.8, 59.9, TELDRASSIL },
-						{ 43.9, 44.0, TELDRASSIL },
+						{ 59.8, 59.9, MAP.TELDRASSIL },
+						{ 43.9, 44.0, MAP.TELDRASSIL },
 						-- #else
-						{ 60.8, 68.5, TELDRASSIL },
+						{ 60.8, 68.5, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2186,13 +2186,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14005, {	-- The Vengeance of Elune
 					["sourceQuest"] = 933,	-- Teldrassil: The Coming Dawn [CATA+] / Crown of the Earth (4/6)
 					["qg"] = 1992,	-- Tarindrella
-					["coord"] = { 42.5, 58.2, TELDRASSIL },
+					["coord"] = { 42.5, 58.2, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bough of Corruption slain
 							["provider"] = { "n", 34521 },	-- Bough of Corruption <Remnant of Xavius>
-							["coord"] = { 40.8, 69.8, TELDRASSIL },
+							["coord"] = { 40.8, 69.8, MAP.TELDRASSIL },
 						}),
 						i(131821, {	-- Uncorrupted Gloves
 							["timeline"] = { ADDED_7_0_3 },
@@ -2221,7 +2221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 1992 },	-- Tarindrella
 						{ "i", 5188 },	-- Filled Vessel
 					},
-					["coord"] = { 42.5, 58.2, TELDRASSIL },
+					["coord"] = { 42.5, 58.2, MAP.TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(54873, {	-- Verdigris Leggings
@@ -2246,9 +2246,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2080,	-- Denalan
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.9, 59.8, TELDRASSIL },
+						{ 59.9, 59.8, MAP.TELDRASSIL },
 						-- #else
-						{ 60.8, 68.4, TELDRASSIL },
+						{ 60.8, 68.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2271,9 +2271,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2080,	-- Denalan
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.9, 59.8, TELDRASSIL },
+						{ 59.9, 59.8, MAP.TELDRASSIL },
 						-- #else
-						{ 60.8, 68.4, TELDRASSIL },
+						{ 60.8, 68.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2296,14 +2296,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 40553 },	-- Fidelio
 						{ "i", 16262 },	-- Dolanaar Recipe Book
 					},
-					["coord"] = { 55.4, 50.4, TELDRASSIL },
+					["coord"] = { 55.4, 50.4, MAP.TELDRASSIL },
 					["races"] = { NIGHTELF },
 				}),
 				-- #endif
 				q(6103, {	-- Training the Beast
 					["sourceQuest"] = 6102,	-- Taming the Beast (3/3)
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
-					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["coord"] = { 56.6, 59.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -2319,7 +2319,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(923, {	-- Tumors / Mossy Tumors [CATA+]
 					["sourceQuest"] = 922,	-- Rellian Greenspyre
 					["qg"] = 3517,	-- Rellian Greenspyre
-					["coord"] = { 38.2, 21.6, DARNASSUS },
+					["coord"] = { 38.2, 21.6, MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
@@ -2342,9 +2342,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3567,	-- Tallonkai Swiftroot
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.6, 50.0, TELDRASSIL },
+						{ 55.6, 50.0, MAP.TELDRASSIL },
 						-- #else
-						{ 55.4, 56.8, TELDRASSIL },
+						{ 55.4, 56.8, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2352,7 +2352,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {
 							["provider"] = { "i", 5221 },	-- Melenas' Head
-							["coord"] = { 51.6, 51.6, TELDRASSIL },
+							["coord"] = { 51.6, 51.6, MAP.TELDRASSIL },
 							["cr"] = 2038,	-- Lord Melenas
 						}),
 						i(5419),	-- Feral Bracers
@@ -2370,9 +2370,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2078,	-- Athridas Bearmantle
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.7, 52.0, TELDRASSIL },
+						{ 55.7, 52.0, MAP.TELDRASSIL },
 						-- #else
-						{ 56.0, 57.4, TELDRASSIL },
+						{ 56.0, 57.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2382,9 +2382,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 2039 },	-- Ursal the Mauler
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 51.7, 39.9, TELDRASSIL },
+								{ 51.7, 39.9, MAP.TELDRASSIL },
 								-- #else
-								{ 39.8, 80.6, TELDRASSIL },
+								{ 39.8, 80.6, MAP.TELDRASSIL },
 								-- #endif
 							},
 						}),
@@ -2414,9 +2414,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4902, {	-- Wildkin of Elune
 					["sourceQuest"] = 4901,	-- Guardians of the Altar
 					["qg"] = 7916,	-- Erelas Ambersky
-					["coord"] = { 55.5, 92.1, TELDRASSIL },
+					["coord"] = { 55.5, 92.1, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
@@ -2432,9 +2432,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2150,	-- Zenn Foulhoof
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.5, 49.2, TELDRASSIL },
+						{ 59.5, 49.2, MAP.TELDRASSIL },
 						-- #else
-						{ 60.4, 56.2, TELDRASSIL },
+						{ 60.4, 56.2, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2474,23 +2474,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				n(2162, {	-- Agal
 					-- NOTE: Agal was not classified as a Rare creature until Cataclysm.
-					["coord"] = { 47.2, 44.8, TELDRASSIL },
+					["coord"] = { 47.2, 44.8, MAP.TELDRASSIL },
 				}),
 				-- #endif
 				n(3535, {	-- Blackmoss the Fetid
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.0, 63.6, TELDRASSIL },
+						{ 52.0, 63.6, MAP.TELDRASSIL },
 						-- #else
-						{ 42.8, 25.8, TELDRASSIL },
-						{ 44.6, 27.6, TELDRASSIL },
-						{ 43.0, 31.0, TELDRASSIL },
-						{ 43.8, 33.2, TELDRASSIL },
-						{ 46.0, 30.4, TELDRASSIL },
-						{ 40.8, 39.6, TELDRASSIL },
-						{ 43.6, 36.6, TELDRASSIL },
-						{ 42.8, 38.6, TELDRASSIL },
-						{ 44.0, 39.6, TELDRASSIL },
+						{ 42.8, 25.8, MAP.TELDRASSIL },
+						{ 44.6, 27.6, MAP.TELDRASSIL },
+						{ 43.0, 31.0, MAP.TELDRASSIL },
+						{ 43.8, 33.2, MAP.TELDRASSIL },
+						{ 46.0, 30.4, MAP.TELDRASSIL },
+						{ 40.8, 39.6, MAP.TELDRASSIL },
+						{ 43.6, 36.6, MAP.TELDRASSIL },
+						{ 42.8, 38.6, MAP.TELDRASSIL },
+						{ 44.0, 39.6, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["groups"] = {
@@ -2503,19 +2503,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(14430, {	-- Duskstalker
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.2, 67.6, TELDRASSIL },
-						{ 54.0, 66.6, TELDRASSIL },
-						{ 57.6, 66.6, TELDRASSIL },
-						{ 59.6, 65.6, TELDRASSIL },
+						{ 52.2, 67.6, MAP.TELDRASSIL },
+						{ 54.0, 66.6, MAP.TELDRASSIL },
+						{ 57.6, 66.6, MAP.TELDRASSIL },
+						{ 59.6, 65.6, MAP.TELDRASSIL },
 						-- #else
-						{ 51.2, 77.8, TELDRASSIL },
-						{ 53.4, 77.2, TELDRASSIL },
-						{ 54.6, 75.8, TELDRASSIL },
-						{ 54.8, 77.4, TELDRASSIL },
-						{ 58.0, 75.8, TELDRASSIL },
-						{ 58.8, 76.6, TELDRASSIL },
-						{ 60.6, 76.2, TELDRASSIL },
-						{ 61.0, 74.4, TELDRASSIL },
+						{ 51.2, 77.8, MAP.TELDRASSIL },
+						{ 53.4, 77.2, MAP.TELDRASSIL },
+						{ 54.6, 75.8, MAP.TELDRASSIL },
+						{ 54.8, 77.4, MAP.TELDRASSIL },
+						{ 58.0, 75.8, MAP.TELDRASSIL },
+						{ 58.8, 76.6, MAP.TELDRASSIL },
+						{ 60.6, 76.2, MAP.TELDRASSIL },
+						{ 61.0, 74.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 				}),
@@ -2523,7 +2523,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(209812, {	-- Fallenroot Poacher
 					["provider"] = { "n", 209811 },	-- Rustling Bush
 					["description"] = "Cast Hunter's Mark on the bush to spawn the Rare Creature.",
-					["coord"] = { 46.6, 46.4, TELDRASSIL },
+					["coord"] = { 46.6, 46.4, MAP.TELDRASSIL },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(206155, {	-- Rune of Marksmanship
@@ -2538,19 +2538,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(14431, {	-- Fury Shelda
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 37.2, 30.6, TELDRASSIL },
-						{ 38.2, 33.4, TELDRASSIL },
-						{ 39.4, 35.2, TELDRASSIL },
-						{ 39.4, 36.4, TELDRASSIL },
-						{ 39.6, 37.4, TELDRASSIL },
+						{ 37.2, 30.6, MAP.TELDRASSIL },
+						{ 38.2, 33.4, MAP.TELDRASSIL },
+						{ 39.4, 35.2, MAP.TELDRASSIL },
+						{ 39.4, 36.4, MAP.TELDRASSIL },
+						{ 39.6, 37.4, MAP.TELDRASSIL },
 						-- #else
-						{ 34.8, 34.4, TELDRASSIL },
-						{ 38.2, 34.8, TELDRASSIL },
-						{ 36.0, 37.8, TELDRASSIL },
-						{ 38.0, 39.0, TELDRASSIL },
-						{ 36.4, 42.4, TELDRASSIL },
-						{ 39.0, 41.4, TELDRASSIL },
-						{ 38.0, 44.0, TELDRASSIL },
+						{ 34.8, 34.4, MAP.TELDRASSIL },
+						{ 38.2, 34.8, MAP.TELDRASSIL },
+						{ 36.0, 37.8, MAP.TELDRASSIL },
+						{ 38.0, 39.0, MAP.TELDRASSIL },
+						{ 36.4, 42.4, MAP.TELDRASSIL },
+						{ 39.0, 41.4, MAP.TELDRASSIL },
+						{ 38.0, 44.0, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["groups"] = {
@@ -2562,17 +2562,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(14429, {	-- Grimmaw
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 51.6, 38.6, TELDRASSIL },
+						{ 51.6, 38.6, MAP.TELDRASSIL },
 						-- #else
-						{ 41.6, 78.6, TELDRASSIL },
-						{ 40.2, 80.6, TELDRASSIL },
+						{ 41.6, 78.6, MAP.TELDRASSIL },
+						{ 40.2, 80.6, MAP.TELDRASSIL },
 						-- #endif
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209928, {	-- Mowgh
 					["description"] = "You can tame him and you still get the rune!",
-					["coord"] = { 48.3, 31.4, TELDRASSIL },
+					["coord"] = { 48.3, 31.4, MAP.TELDRASSIL },
 					["cost"] = { { "i", 208608, 1 } },	-- Teldrassil Bird Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
@@ -2587,11 +2587,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(14432, {	-- Threggil
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.0, 44.6, TELDRASSIL },
+						{ 53.0, 44.6, MAP.TELDRASSIL },
 						-- #else
-						{ 51.2, 50.8, TELDRASSIL },
-						{ 52.0, 50.6, TELDRASSIL },
-						{ 52.6, 52.4, TELDRASSIL },
+						{ 51.2, 50.8, MAP.TELDRASSIL },
+						{ 52.0, 50.6, MAP.TELDRASSIL },
+						{ 52.6, 52.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["groups"] = {
@@ -2606,7 +2606,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 206248 },	-- Wooden Effigy
 						{ "i", 208760 },	-- Glade Crown
 					},
-					["coord"] = { 66.8, 58.0, TELDRASSIL },
+					["coord"] = { 66.8, 58.0, MAP.TELDRASSIL },
 					["cost"] = { { "i", 208609, 3 } },	-- Glade Flower
 					["groups"] = {
 						i(206963, {	-- Rune of Natural Potential
@@ -2621,14 +2621,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(14428, {	-- Uruson
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 65.6, 51.8, TELDRASSIL },
+						{ 65.6, 51.8, MAP.TELDRASSIL },
 						-- #else
-						{ 63.8, 57.2, TELDRASSIL },
-						{ 65.4, 57.8, TELDRASSIL },
-						{ 67.6, 56.4, TELDRASSIL },
-						{ 66.2, 60.6, TELDRASSIL },
-						{ 67.8, 61.0, TELDRASSIL },
-						{ 69.6, 62.0, TELDRASSIL },
+						{ 63.8, 57.2, MAP.TELDRASSIL },
+						{ 65.4, 57.8, MAP.TELDRASSIL },
+						{ 67.6, 56.4, MAP.TELDRASSIL },
+						{ 66.2, 60.6, MAP.TELDRASSIL },
+						{ 67.8, 61.0, MAP.TELDRASSIL },
+						{ 69.6, 62.0, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["groups"] = {
@@ -2641,11 +2641,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
-						{ 39.6, 37.6, TELDRASSIL },
-						{ 39.8, 69.6, TELDRASSIL },
-						{ 34.8, 76.8, TELDRASSIL },
-						{ 54.6, 66.0, TELDRASSIL },
-						{ 62.6, 71.8, TELDRASSIL },
+						{ 39.6, 37.6, MAP.TELDRASSIL },
+						{ 39.8, 69.6, MAP.TELDRASSIL },
+						{ 34.8, 76.8, MAP.TELDRASSIL },
+						{ 54.6, 66.0, MAP.TELDRASSIL },
+						{ 62.6, 71.8, MAP.TELDRASSIL },
 					},
 					["groups"] = {
 						i(204441, {	-- Rune of Blood Frenzy
@@ -2662,7 +2662,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
-					["coord"] = { 33.6, 35.6, TELDRASSIL },
+					["coord"] = { 33.6, 35.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(210589, {	-- Echo of the Ancestors
@@ -2692,7 +2692,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407734, {	-- Gnarlpine Cache
-					["coord"] = { 45.0, 61.4, TELDRASSIL },
+					["coord"] = { 45.0, 61.4, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(205940, {	-- Memory of a Dark Purpose
@@ -2717,7 +2717,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
 					["provider"] = { "o", 407352 },	-- Gnarlpine Stash
-					["coord"] = { 37.9, 82.5, TELDRASSIL },
+					["coord"] = { 37.9, 82.5, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 208749, 1 } },	-- Gnarlpine Stash Key
 					["classes"] = { ROGUE },
@@ -2727,7 +2727,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
 					["provider"] = { "o", 386675 },	-- Buried Treasure
-					["coord"] = { 55.3, 90.8, TELDRASSIL },
+					["coord"] = { 55.3, 90.8, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 208605, 1 } },	-- Teldrassil Treasure Map
 					["classes"] = { ROGUE },
@@ -2741,7 +2741,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 207577 },	-- Lunar Stone
 						{ "o", 404433 },	-- Lunar Chest
 					},
-					["coord"] = { 52.8, 78.8, TELDRASSIL },
+					["coord"] = { 52.8, 78.8, MAP.TELDRASSIL },
 					["classes"] = { DRUID },
 					["groups"] = {
 						recipe(416044),	-- Engrave Gloves - Sunfire
@@ -2751,7 +2751,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(VENDORS, {
 				n(44030, {	-- Draelan <Enchanting Supplies>
-					["coord"] = { 39.0, 30.0, TELDRASSIL },
+					["coord"] = { 39.0, 30.0, MAP.TELDRASSIL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -2766,9 +2766,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(10118, {	-- Nessa Shadowsong <Fishing Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.0, 90.0, TELDRASSIL },
+						{ 54.0, 90.0, MAP.TELDRASSIL },
 						-- #else
-						{ 56.2, 92.4, TELDRASSIL },
+						{ 56.2, 92.4, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2780,9 +2780,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(4265, {	-- Nyoma <Cooking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.7, 53.5, TELDRASSIL },
+						{ 56.7, 53.5, MAP.TELDRASSIL },
 						-- #else
-						{ 57.2, 61.2, TELDRASSIL },
+						{ 57.2, 61.2, MAP.TELDRASSIL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2797,9 +2797,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ZONE_DROPS, {
 				i(7095, {	-- Bog Boots
 					["coords"] = {
-						{ 43.6, 29.8, TELDRASSIL },
-						{ 43.4, 35.4, TELDRASSIL },
-						{ 52.6, 52.4, TELDRASSIL },
+						{ 43.6, 29.8, MAP.TELDRASSIL },
+						{ 43.4, 35.4, MAP.TELDRASSIL },
+						{ 52.6, 52.4, MAP.TELDRASSIL },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
@@ -2813,11 +2813,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208607, {	-- Deer Musk
 					["coords"] = {
-						{ 45.8, 58.2, TELDRASSIL },
-						{ 39.8, 80.4, TELDRASSIL },
-						{ 42.4, 79.2, TELDRASSIL },
-						{ 47.2, 52.8, TELDRASSIL },
-						{ 38.4, 80.8, TELDRASSIL },
+						{ 45.8, 58.2, MAP.TELDRASSIL },
+						{ 39.8, 80.4, MAP.TELDRASSIL },
+						{ 42.4, 79.2, MAP.TELDRASSIL },
+						{ 47.2, 52.8, MAP.TELDRASSIL },
+						{ 38.4, 80.8, MAP.TELDRASSIL },
 					},
 					["classes"] = { HUNTER },
 					["crs"] = {
@@ -2832,7 +2832,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				i(7094, {	-- Driftwood Branch
-					["coord"] = { 45.4, 24.6, TELDRASSIL },
+					["coord"] = { 45.4, 24.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 2030,	-- Elder Timberling
 				}),
@@ -2842,7 +2842,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 407247 },	-- Glade Flower
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage
-					["coord"] = { 45.6, 59.6, TELDRASSIL },
+					["coord"] = { 45.6, 59.6, MAP.TELDRASSIL },
 					["classes"] = { DRUID },
 					["cr"] = 7318,	-- Rageclaw
 					["groups"] = {
@@ -2850,7 +2850,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-					["coord"] = { 51.6, 51.6, TELDRASSIL },
+					["coord"] = { 51.6, 51.6, MAP.TELDRASSIL },
 					["classes"] = { PRIEST },
 					["cr"] = 2038,	-- Lord Melenas
 					["groups"] = {
@@ -2858,7 +2858,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
-					["coord"] = { 52.6, 49.6, TELDRASSIL },
+					["coord"] = { 52.6, 49.6, MAP.TELDRASSIL },
 					["classes"] = { PRIEST },
 					["crs"] = {
 						2005,	-- Vicious Grell
@@ -2871,7 +2871,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
-					["coord"] = { 45.6, 59.6, TELDRASSIL },
+					["coord"] = { 45.6, 59.6, MAP.TELDRASSIL },
 					["classes"] = { HUNTER },
 					["cr"] = 7318,	-- Rageclaw
 					["groups"] = {
@@ -2879,7 +2879,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
-					["coord"] = { 51.6, 51.6, TELDRASSIL },
+					["coord"] = { 51.6, 51.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["cr"] = 2038,	-- Lord Melenas
@@ -2888,7 +2888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208610, {	-- Severed Owl Head
-					["coord"] = { 40.6, 53.6, TELDRASSIL },
+					["coord"] = { 40.6, 53.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -2897,7 +2897,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208612, {	-- Severed Spider Head
-					["coord"] = { 59.8, 59.0, TELDRASSIL },
+					["coord"] = { 59.8, 59.0, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -2906,7 +2906,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208611, {	-- Severed Tiger Head
-					["coord"] = { 40.4, 60.0, TELDRASSIL },
+					["coord"] = { 40.4, 60.0, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {

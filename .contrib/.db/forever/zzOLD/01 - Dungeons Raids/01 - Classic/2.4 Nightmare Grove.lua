@@ -35,10 +35,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		["coords"] = {
-			{ 51.2, 10.9, FERALAS },
-			{ 63.3, 27.8, THE_HINTERLANDS },
-			{ 45.4, 39.6, DUSKWOOD },
-			{ 94.2, 35.7, ASHENVALE },
+			{ 51.2, 10.9, MAP.FERALAS },
+			{ 63.3, 27.8, MAP.THE_HINTERLANDS },
+			{ 45.4, 39.6, MAP.DUSKWOOD },
+			{ 94.2, 35.7, MAP.ASHENVALE },
 		},
 		["isRaid"] = true,
 		["lvl"] = 60,
@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(8447, {	-- Waking Legends
 							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
 							["qg"] = 11832,	-- Keeper Remulos
-							["coord"] = { 36.18, 41.79, MOONGLADE },
+							["coord"] = { 36.18, 41.79, MAP.MOONGLADE },
 							["lvl"] = 60,
 							["groups"] = { i(20600) },	-- Malfurion's Signet Ring
 						}),
@@ -130,12 +130,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(86679, {	-- Shrouded in Nightmare
 					["provider"] = { "i", 235049 },	-- Nightmare Engulfed Object
-					["maps"] = { MOONGLADE },
+					["maps"] = { MAP.MOONGLADE },
 				}),
 				q(86680, {	-- Waking Legends
 					["sourceQuest"] = 86679,	-- Shrouded in Nightmare
 					["qg"] = 11832,	-- Keeper Remulos
-					["coord"] = { 36.2, 41.8, MOONGLADE },
+					["coord"] = { 36.2, 41.8, MAP.MOONGLADE },
 					["groups"] = { i(234155) },	-- Malfurion's Signet Ring
 				}),
 			}),

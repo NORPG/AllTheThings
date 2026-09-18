@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(UNGORO_CRATER, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.UNGORO_CRATER, {
 		["lore"] = "Un'Goro Crater is a lush jungle in southern Kalimdor, isolated from the source as it shares borders with the deserts of Feralas and Silithus. Although its borders make Un'Goro Crater a rather isolated area, many challenges await players here as they explore the wide range of exotic fauna, from aggressive plant mobs to the mighty devilsaurs.\n\nMarshal's Refuge, the main questing hub in Un'Goro, is also a cradle of references to TV Show Land of the Lost: The last names of the main characters were Marshal, Williden Marshal and Hol'anyee Marshal are clear references to main characters Will and Holly Marshal, and Un'Goro's plot revolves around massive pylons scattered across the zone, also a central part of the plot in Land of the Lost.",
 		["icon"] = 236850,
 		["maps"] = { 79 },	-- The Slithering Scar
@@ -39,8 +39,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(632, {	-- Ash Lizard (PET!)
 						["description"] = "Found around Fire Plum Ridge in Un'goro Crater and around fiery and dry areas in lower Mount Hyjal.",
 						["coords"] = {
-							{ 50.0, 49.0, UNGORO_CRATER },	-- Fire Plum Ridge
-							{ 60.0, 70.0, MOUNT_HYJAL },	-- Fiery Mount Hyjal
+							{ 50.0, 49.0, MAP.UNGORO_CRATER },	-- Fire Plum Ridge
+							{ 60.0, 70.0, MAP.MOUNT_HYJAL },	-- Fiery Mount Hyjal
 						},
 					}),
 					pet(504, {	-- Diemetradon Hatchling (PET!)
@@ -78,15 +78,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 10583,	-- Gryfe <Flight Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.0, 64.2, UNGORO_CRATER },
+						{ 56.0, 64.2, MAP.UNGORO_CRATER },
 						-- #else
-						{ 45.2, 5.8, UNGORO_CRATER },
+						{ 45.2, 5.8, MAP.UNGORO_CRATER },
 						-- #endif
 					},
 				}),
 				fp(386, {	-- Mossy Pile, Un'Goro Crater
 					["cr"] = 39175,	-- Flizzy Coilspanner <Flight Master>
-					["coord"] = { 44.1, 40.3, UNGORO_CRATER },
+					["coord"] = { 44.1, 40.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3941, {	-- A Gnome's Assistance
 					["sourceQuest"] = 3914,	-- Linken's Sword
 					["qg"] = 8737,	-- Linken
-					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
+					["coord"] = { 44.6, 8.2, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 				}),
@@ -116,14 +116,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9299 },	-- Gaeriyan
 						{ "i", 11136 },	-- Linken's Tempered Sword
 					},
-					["coord"] = { 54.0, 23.4, TANARIS },
+					["coord"] = { 54.0, 23.4, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 				}),
 				q(24735, {	-- A Little Help From My Friends
 					["sourceQuest"] = 24734,	-- Lost!
 					["qg"] = 9999,	-- Ringo
-					["coord"] = { 52.0, 49.8, UNGORO_CRATER },
+					["coord"] = { 52.0, 49.8, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53566, {	-- Woodland Leggings
@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4491, {	-- A Little Help From My Friends
 					["sourceQuest"] = 4492,	-- Lost!
 					["qg"] = 9999,	-- Ringo
-					["coord"] = { 52.0, 50.0, UNGORO_CRATER },
+					["coord"] = { 52.0, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24709, {	-- A Tale of Two Shovels
 					["sourceQuest"] = 24708,	-- The Fossil-Finder 3000
 					["qg"] = 9272,	-- Spark Nilminer
-					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
+					["coord"] = { 31.9, 50.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Durrin's Archaeological Findings
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(45055, {	-- A Taste of Their Own Medicine
 					["sourceQuest"] = 45051,	-- Reverse Blacksmithing
 					["qg"] = 115923,	-- Ko'Zan
-					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
+					["coord"] = { 43.6, 41.4, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
@@ -195,16 +195,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9119 },	-- Muigin
 						{ "i", 11316 },	-- Bloodpetal
 					},
-					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
+					["coord"] = { 42.9, 9.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FERALAS },
+					["maps"] = { MAP.FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 				}),
 				q(24855, {	-- Aberrant Flora
 					["sourceQuest"] = 24687,	-- Bouquets of Death
 					["qg"] = 38263,	-- Ithis Moonwarden
-					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
+					["coord"] = { 76.4, 48.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/11 Bloodpetal slain
@@ -228,13 +228,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24698, {	-- Adventures in Archaeology
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["qg"] = 38270,	-- Nolen Tacker
-					["coord"] = { 55.0, 60.5, UNGORO_CRATER },
+					["coord"] = { 55.0, 60.5, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(3883, {	-- Alien Ecology
 					["qg"] = 9271,	-- Hol'anyee Marshal
-					["coord"] = { 43.8, 7.2, UNGORO_CRATER },
+					["coord"] = { 43.8, 7.2, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 174793 },	-- Gorishi Hive Hatchery
 								{ "i",  11132 },	-- Unused Scraping Vial
 							},
-							["coord"] = { 48.0, 85.0, UNGORO_CRATER },
+							["coord"] = { 48.0, 85.0, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -253,17 +253,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 161521 },	-- Research Equipment
 						{ "i",  11112 },	-- Research Equipment
 					},
-					["coord"] = { 38.5, 66.1, UNGORO_CRATER },
+					["coord"] = { 38.5, 66.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24703, {	-- An Important Lesson
 					["qg"] = 38237,	-- Maximillian of Northshire
-					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
+					["coord"] = { 30.6, 51.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4501, {	-- Beware of Pterrordax
 					["provider"] = { "o", 174682 },	-- Beware of Pterrordax
-					["coord"] = { 43.6, 8.4, UNGORO_CRATER },
+					["coord"] = { 43.6, 8.4, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,
 					["groups"] = {
@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24690, {	-- Blazerunner
 					["sourceQuest"] = 24740,	-- Volcanic Activity
 					["qg"] = 9270,	-- Williden Marshal
-					["coord"] = { 55.1, 62.2, UNGORO_CRATER },
+					["coord"] = { 55.1, 62.2, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blazerunner slain
@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9052, {	-- Bloodpetal Poison
 					["sourceQuest"] = 9063,	-- Torwa Pathfinder
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 50,
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4144, {	-- Bloodpetal Sprouts
 					["sourceQuest"] = 4143,	-- Haze of Evil
 					["qg"] = 9119,	-- Muigin
-					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
+					["coord"] = { 42.9, 9.6, MAP.UNGORO_CRATER },
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_2,
@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i",  11315 },	-- Bloodpetal Sprout
 						{ "o", 164958 },	-- Bloodpetal Sprout
 					},
-					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
+					["coord"] = { 45.6, 8.6, MAP.UNGORO_CRATER },
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_2,
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24687, {	-- Bouquets of Death
 					["sourceQuest"] = 24689,	-- Flowing to the North
 					["qg"] = 38263,	-- Ithis Moonwarden
-					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
+					["coord"] = { 76.4, 48.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Pack of Juvenile Bloodpetals slain
@@ -391,25 +391,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24686, {	-- Carried on the Waves
 					["sourceQuest"] = 24719,	-- Claws of White
 					["qg"] = 38274,	-- Garl Stormclaw
-					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
+					["coord"] = { 70.8, 76.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24714, {	-- Chasing A-Me 01
 					["sourceQuest"] = 24701,	-- Marshal's Refusew
 					["qg"] = 9618,	-- Karna Remtravel
-					["coord"] = { 43.4, 40.9, UNGORO_CRATER },
+					["coord"] = { 43.4, 40.9, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4243, {	-- Chasing A-Me 01 (1/3)
 					["qg"] = 9618,	-- Karna Remtravel
-					["coord"] = { 46.4, 13.5, UNGORO_CRATER },
+					["coord"] = { 46.4, 13.5, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 				}),
 				q(4244, {	-- Chasing A-Me 01 (2/3)
 					["sourceQuest"] = 4243,	-- Chasing A-Me 01 (1/3)
 					["qg"] = 9623,	-- A-Me 01
-					["coord"] = { 67.6, 16.8, UNGORO_CRATER },
+					["coord"] = { 67.6, 16.8, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10561, 1 } },	-- Mithril Casing
 					["lvl"] = 48,
@@ -417,14 +417,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4245, {	-- Chasing A-Me 01 (3/3)
 					["sourceQuest"] = 4244,	-- Chasing A-Me 01 (2/3)
 					["qg"] = 9623,	-- A-Me 01
-					["coord"] = { 67.6, 16.8, UNGORO_CRATER },
+					["coord"] = { 67.6, 16.8, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 				}),
 				q(24719, {	-- Claws of White
 					["sourceQuest"] = 24854,	-- Finding Stormclaw
 					["qg"] = 38274,	-- Garl Stormclaw
-					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
+					["coord"] = { 70.8, 76.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 White Ravasaur Claw
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
-					["coord"] = { 56.5, 12.4, UNGORO_CRATER },
+					["coord"] = { 56.5, 12.4, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 6 },	-- Red Power Crystal
@@ -471,7 +471,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4385, {	-- Crystal Charge
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
-					["coord"] = { 56.6, 12.5, UNGORO_CRATER },
+					["coord"] = { 56.6, 12.5, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 10 },	-- Red Power Crystal
@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
-					["coord"] = { 77.2, 50.0, UNGORO_CRATER },
+					["coord"] = { 77.2, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11185, 6 },	-- Green Power Crystal
@@ -504,7 +504,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4382, {	-- Crystal Force
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
-					["coord"] = { 77.3, 50.0, UNGORO_CRATER },
+					["coord"] = { 77.3, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11185, 10 },	-- Green Power Crystal
@@ -523,7 +523,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
-					["coord"] = { 56.5, 12.4, UNGORO_CRATER },
+					["coord"] = { 56.5, 12.4, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11188, 8 },	-- Yellow Power Crystal
@@ -537,7 +537,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4381, {	-- Crystal Restore
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
-					["coord"] = { 56.6, 12.5, UNGORO_CRATER },
+					["coord"] = { 56.6, 12.5, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11188, 10 },	-- Yellow Power Crystal
@@ -556,7 +556,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
-					["coord"] = { 77.2, 50.0, UNGORO_CRATER },
+					["coord"] = { 77.2, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11184, 8 },	-- Blue Power Crystal
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4386, {	-- Crystal Spire
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
-					["coord"] = { 77.3, 50.0, UNGORO_CRATER },
+					["coord"] = { 77.3, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11184, 10 },	-- Blue Power Crystal
@@ -589,7 +589,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 8 },	-- Red Power Crystal
@@ -603,7 +603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4383, {	-- Crystal Ward
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 10 },	-- Red Power Crystal
@@ -622,7 +622,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 8 },	-- Red Power Crystal
@@ -636,7 +636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4384, {	-- Crystal Yield
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 10 },	-- Red Power Crystal
@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24720, {	-- Crystals of Power
 					["qg"] = 9117,	-- J.D. Collie
-					["coord"] = { 54.2, 62.5, UNGORO_CRATER },
+					["coord"] = { 54.2, 62.5, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11184, 7 },	-- Blue Power Crystal
@@ -661,7 +661,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4284, {	-- Crystals of Power
 					["qg"] = 9117,	-- J.D. Collie
-					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["coord"] = { 41.8, 2.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11184, 7 },	-- Blue Power Crystal
@@ -676,7 +676,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9274 },	-- Dadanga
 						{ "i", 15699 },	-- Small Brown-wrapped Package
 					},
-					["coord"] = { 43.6, 7.2, UNGORO_CRATER },
+					["coord"] = { 43.6, 7.2, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11315, 15 } },	-- Bloodpetal Sprout
 					["repeatable"] = true,
@@ -689,7 +689,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3881, {	-- Expedition Salvation
 					["qg"] = 9270,	-- Williden Marshal
-					["coord"] = { 43.9, 7.1, UNGORO_CRATER },
+					["coord"] = { 43.9, 7.1, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
@@ -698,21 +698,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  11113 },	-- Crate of Foodstuffs
 								{ "o", 161526 },	-- Crate of Foodstuffs
 							},
-							["coord"] = { 68.4, 36.4, UNGORO_CRATER },
+							["coord"] = { 68.4, 36.4, MAP.UNGORO_CRATER },
 						}),
 						objective(2, {	-- 0/1 Research Equipment
 							["providers"] = {
 								{ "i",  11112 },	-- Research Equipment
 								{ "o", 161521 },	-- Research Equipment
 							},
-							["coord"] = { 38.5, 66.0, UNGORO_CRATER },
+							["coord"] = { 38.5, 66.0, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
 				q(24695, {	-- Ever Watching From Above
 					["sourceQuest"] = 24694,	-- The Shaper's Terrace
 					["qg"] = 38502,	-- Nablya
-					["coord"] = { 83.5, 46.0, UNGORO_CRATER },
+					["coord"] = { 83.5, 46.0, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodpetal Observation
@@ -740,13 +740,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24854, {	-- Finding Stormclaw
 					["qg"] = 38269,	-- Zen'Aliri
-					["coord"] = { 55.7, 60.6, UNGORO_CRATER },
+					["coord"] = { 55.7, 60.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(24742, {	-- Finding the Source
 					["qg"] = 10302,	-- Krakle
-					["coord"] = { 55.4, 62.5, UNGORO_CRATER },
+					["coord"] = { 55.4, 62.5, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Find the hottest area of Fire Plume Ridge
@@ -754,13 +754,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  12472 },	-- Krackle's Thermometer
 								{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
 							},
-							["coord"] = { 48.4, 43.3, UNGORO_CRATER },
+							["coord"] = { 48.4, 43.3, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
 				q(974, {	-- Finding the Source
 					["qg"] = 10302,	-- Krakle
-					["coord"] = { 30.8, 50.4, UNGORO_CRATER },
+					["coord"] = { 30.8, 50.4, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
 					["groups"] = {
@@ -769,14 +769,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  12472 },	-- Krackle's Thermometer
 								{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
 							},
-							["coord"] = { 49.0, 45.0, UNGORO_CRATER },
+							["coord"] = { 49.0, 45.0, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
 				q(24689, {	-- Flowing to the North
 					["sourceQuest"] = 24686,	-- Carried on the Waves
 					["qg"] = 38274,	-- Garl Stormclaw
-					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
+					["coord"] = { 70.8, 76.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(13903, {	-- Gorishi Grub
@@ -839,7 +839,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 38276 },	-- Tara (mobileNPC)
 						{ "i", 50746 },	-- Tara's Tar Scraper
 					},
-					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["coord"] = { 43.1, 41.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Unbelievably Sticky Tar
@@ -857,7 +857,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24700, {	-- Hard to Harvest
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["qg"] = 38276,	-- Tara (mobileNPC)
-					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["coord"] = { 43.1, 41.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/4 Tarblossom Blossom
@@ -870,14 +870,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24702, {	-- Here Lies Dadanga
 					["provider"] = { "o", 202135 },	-- Dadanga's Grave
-					["coord"] = { 45.5, 7.8, UNGORO_CRATER },
+					["coord"] = { 45.5, 7.8, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = { { "i", 11315, 10 } },	-- Bloodpetal Sprout
 					["repeatable"] = true,
 				}),
 				heroscall(q(28525, {	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
@@ -887,7 +887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(24697, {	-- How to Make Meat Fresh Again
 					["qg"] = 38270,	-- Nolen Tacker
-					["coord"] = { 55.0, 60.6, UNGORO_CRATER },
+					["coord"] = { 55.0, 60.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/4 Dinosaurs Baited
@@ -978,12 +978,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 161526 },	-- Crate of Foodstuffs
 						{ "i",  11113 },	-- Crate of Foodstuffs
 					},
-					["coord"] = { 68.5, 36.5, UNGORO_CRATER },
+					["coord"] = { 68.5, 36.5, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(3844, {	-- It's a Secret to Everybody (1/3)
 					["provider"] = { "o", 161505 },	-- A Wrecked Raft
-					["coord"] = { 63.1, 68.5, UNGORO_CRATER },
+					["coord"] = { 63.1, 68.5, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 				}),
@@ -993,7 +993,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i",  11107 },	-- A Small Pack
 						{ "o", 161504 },	-- A Small Pack
 					},
-					["coord"] = { 63.1, 68.5, UNGORO_CRATER },
+					["coord"] = { 63.1, 68.5, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
@@ -1016,15 +1016,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8737 },	-- Linken
 						{ "i", 11133 },	-- Linken's Training Sword
 					},
-					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
+					["coord"] = { 44.6, 8.2, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
+					["maps"] = { MAP.WINTERSPRING },
 					["lvl"] = 47,
 				}),
 				q(3962, {	-- It's Dangerous to Go Alone
 					["sourceQuest"] = 3961,	-- Linken's Adventure
 					["qg"] = 8737,	-- Linken
-					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
+					["coord"] = { 44.6, 8.2, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
@@ -1033,7 +1033,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 9376 },	-- Blazerunner
 								{ "i", 11522 },	-- Silver Totem of Aquementas
 							},
-							["coord"] = { 49.6, 49.6, UNGORO_CRATER },
+							["coord"] = { 49.6, 49.6, MAP.UNGORO_CRATER },
 							["description"] = "Use the Silter Totem of Aquementas on Blazerunner to remove his protective barrier.",
 						}),
 						objective(2, {	-- 0/1 Golden Flame
@@ -1041,7 +1041,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  11179 },	-- Golden Flame
 								{ "o", 164910 },	-- Ornate Chest
 							},
-							["coord"] = { 50.2, 50.0, UNGORO_CRATER },
+							["coord"] = { 50.2, 50.0, MAP.UNGORO_CRATER },
 						}),
 						i(11905, {	-- Linken's Boomerang
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4145, {	-- Larion and Muigin
 					["qg"] = 9118,	-- Larion
-					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
+					["coord"] = { 45.6, 8.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
@@ -1081,16 +1081,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9117 },	-- J.D. Collie
 						{ "i", 11522 },	-- Silver Totem of Aquementas
 					},
-					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["coord"] = { 41.8, 2.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 				}),
 				q(3942, {	-- Linken's Memory
 					["sourceQuest"] = 3941,	-- A Gnome's Assistance
 					["qg"] = 9117,	-- J.D. Collie
-					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["coord"] = { 41.8, 2.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["lvl"] = 47,
 				}),
 				q(24734, {	-- Lost!
@@ -1102,11 +1102,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9997 },	-- Spraggle Frock
 						{ "i", 15722 },	-- Spraggle's Canteen
 					},
-					["coord"] = { 55.0, 62.7, UNGORO_CRATER },
+					["coord"] = { 55.0, 62.7, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						o(202264, {	-- Ringo's Sack
-							["coord"] = { 53.1, 51.9, UNGORO_CRATER },
+							["coord"] = { 53.1, 51.9, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -1115,7 +1115,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9997 },	-- Spraggle Frock
 						{ "i", 15722 },	-- Spraggle's Canteen
 					},
-					["coord"] = { 43.6, 8.5, UNGORO_CRATER },
+					["coord"] = { 43.6, 8.5, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
@@ -1126,7 +1126,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						4288,	-- The Western Pylon
 					},
 					["qg"] = 9117,	-- J.D. Collie
-					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["coord"] = { 41.8, 2.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
@@ -1136,7 +1136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24701, {	-- Marshal's Refuse
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["qg"] = 38277,	-- Doreen (mobileNPC)
-					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["coord"] = { 43.1, 41.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Discarded Supplies
@@ -1161,9 +1161,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4147, {	-- Marvon's Workshop
 					["sourceQuest"] = 4145,	-- Larion and Muigin
 					["qg"] = 9118,	-- Larion
-					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
+					["coord"] = { 45.6, 8.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -1173,7 +1173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9298 },	-- Donova Snowden
 						{ "i", 11136 },	-- Linken's Tempered Sword
 					},
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11243, 1 } },	-- Videre Elixir
 					["lvl"] = 47,
@@ -1182,12 +1182,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "After completing this quest you won't be able to pick up |cFFFFD700Speak With Spraggle|r breadcrumb.",
 					["sourceQuest"] = 24691,	-- Peculiar Delicacies
 					["qg"] = 10977,	-- Quixxil
-					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
+					["coord"] = { 54.8, 63.8, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4141, {	-- Muigin and Larion
 					["qg"] = 9119,	-- Muigin
-					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
+					["coord"] = { 42.9, 9.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
@@ -1206,7 +1206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24691, {	-- Peculiar Delicacies
 					["sourceQuest"] = 24690,	-- Blazerunner
 					["qg"] = 10977,	-- Quixxil
-					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
+					["coord"] = { 54.8, 63.8, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/96 Silithid Leg
@@ -1271,7 +1271,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24715, {	-- Repairing A-Me 01
 					["sourceQuest"] = 24714,	-- Chasing A-Me 01
 					["qg"] = 9623,	-- A-Me 01
-					["coord"] = { 63.8, 19.7, UNGORO_CRATER },
+					["coord"] = { 63.8, 19.7, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 High Viscosity Coconut Milk
@@ -1287,7 +1287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(45051, {	-- Reverse Blacksmithing
 					["sourceQuest"] = 45044,	-- Weapon No More
 					["qg"] = 115923,	-- Ko'Zan
-					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
+					["coord"] = { 43.6, 41.4, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
@@ -1297,7 +1297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24730, {	-- Roll the Bones
 					["sourceQuest"] = 24698,	-- Adventures in Archaeology
 					["qg"] = 9272,	-- Spark Nilminer
-					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
+					["coord"] = { 31.9, 50.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Dinosaur Bone
@@ -1322,7 +1322,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3882, {	-- Roll the Bones
 					["qg"] = 9272,	-- Spark Nilminer
-					["coord"] = { 43.6, 7.4, UNGORO_CRATER },
+					["coord"] = { 43.6, 7.4, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,
 					["groups"] = {
@@ -1351,7 +1351,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(45057, {	-- Saving My Head
 					["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
 					["qg"] = 115923,	-- Ko'Zan
-					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
+					["coord"] = { 43.6, 41.4, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
@@ -1367,7 +1367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
 					["timeline"] = { ADDED_3_2_0 },
-					["maps"] = { TANARIS },
+					["maps"] = { MAP.TANARIS },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -1388,7 +1388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
 					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
-					["maps"] = { TANARIS },
+					["maps"] = { MAP.TANARIS },
 					["races"] = { UNDEAD, TROLL, TAUREN },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -1409,7 +1409,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n",  9623 },	-- A-Me 01
 						{ "i", 51546 },	-- A-Me 01's Thumb Drive
 					},
-					["coord"] = { 63.8, 19.7, UNGORO_CRATER },
+					["coord"] = { 63.8, 19.7, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53571, {	-- Karna's Poncho
@@ -1426,7 +1426,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24736, {	-- Shizzle's Flyer
 					["description"] = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
 					["qg"] = 9998,	-- Shizzle
-					["coord"] = { 43.4, 41.3, UNGORO_CRATER },
+					["coord"] = { 43.4, 41.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/35 Webbed Pterrordax Scale
@@ -1450,7 +1450,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4503, {	-- Shizzle's Flyer
 					["qg"] = 9998,	-- Shizzle
-					["coord"] = { 44.2, 11.6, UNGORO_CRATER },
+					["coord"] = { 44.2, 11.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,
 					["groups"] = {
@@ -1485,7 +1485,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This quest won't be available if you complete |cFFFFD700Shizzle's Flyer|r first.",
 					["sourceQuest"] = 24742,	-- Finding the Source
 					["qg"] = 10302,	-- Krakle
-					["coord"] = { 55.4, 62.5, UNGORO_CRATER },
+					["coord"] = { 55.4, 62.5, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
@@ -1496,7 +1496,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 38276 },	-- Tara (mobileNPC)
 						{ "i", 50742 },	-- Tara's Tar Scraper
 					},
-					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["coord"] = { 43.1, 41.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Super Sticky Tar
@@ -1513,7 +1513,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24717, {	-- The Apes of Un'Goro
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
-					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["coord"] = { 43.1, 41.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/2 Un'Goro Gorilla Pelt
@@ -1532,7 +1532,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4289, {	-- The Apes of Un'Goro
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
@@ -1553,7 +1553,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24733, {	-- The Bait for Lar'korwi
 					["sourceQuest"] = 24732,	-- The Scent of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.3, 76.6, UNGORO_CRATER },
+					["coord"] = { 71.3, 76.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Lar'korwi's Head
@@ -1562,7 +1562,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 11570 },	-- Preserved Pheromone Mixture
 								{ "i", 11569 },	-- Preserved Threshadon Meat
 							},
-							["coord"] = { 70.2, 40.8, UNGORO_CRATER },
+							["coord"] = { 70.2, 40.8, MAP.UNGORO_CRATER },
 							["cr"] = 9684,	-- Lar'korwi
 						}),
 						i(53587, {	-- Plainstalker Vest
@@ -1579,7 +1579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9619 },	-- Torwa Pathfinder
 						{ "i", 11568 },	-- Torwa's Pouch
 					},
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
@@ -1589,7 +1589,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 11570 },	-- Preserved Pheromone Mixture
 								{ "i", 11569 },	-- Preserved Threshadon Meat
 							},
-							["coord"] = { 79.9, 49.9, UNGORO_CRATER },
+							["coord"] = { 79.9, 49.9, MAP.UNGORO_CRATER },
 							["cr"] = 9684,	-- Lar'korwi
 						}),
 						i(11876, {	-- Plainstalker Tunic
@@ -1606,7 +1606,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						38237,	-- Maximillian of Northshire
 						38343,	-- Maximillian of Northshire
 					},
-					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
+					["coord"] = { 30.6, 51.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Un'Goro's Broodmother slain
@@ -1626,19 +1626,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24721, {	-- The Eastern Pylon
 					["sourceQuest"] = 24855,	-- Aberrant Flora
 					["qg"] = 38263,	-- Ithis Moonwarden
-					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
+					["coord"] = { 76.4, 48.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4287, {	-- The Eastern Pylon
 					["sourceQuest"] = 4284,	-- Crystals of Power
 					["qg"] = 9117,	-- J.D. Collie
-					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["coord"] = { 41.8, 2.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- Discover and examine the Eastern Crystal Pylon
 							["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
-							["coord"] = { 77.2, 50.0, UNGORO_CRATER },
+							["coord"] = { 77.2, 50.0, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -1648,7 +1648,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						38237,	-- Maximillian of Northshire
 						38255,	-- Maximillian of Northshire (mobileNPC)
 					},
-					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
+					["coord"] = { 30.6, 51.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 "Dragon" slain
@@ -1685,7 +1685,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24731, {	-- The Fare of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.3, 76.6, UNGORO_CRATER },
+					["coord"] = { 71.3, 76.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Piece of Threshadon Carcass
@@ -1693,13 +1693,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 11504 },	-- Piece of Threshadon Carcass
 								{ "o", 166863 },	-- Fresh Threshadon Carcass
 							},
-							["coord"] = { 64.7, 75.1, UNGORO_CRATER },
+							["coord"] = { 64.7, 75.1, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
 				q(4290, {	-- The Fare of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
@@ -1708,14 +1708,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  11504 },	-- Piece of Threshadon Carcass
 								{ "o", 166863 },	-- Fresh Threshadon Carcass
 							},
-							["coord"] = { 68.7, 56.7, UNGORO_CRATER },
+							["coord"] = { 68.7, 56.7, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
 				q(24692, {	-- The Fledgling Colossus
 					["sourceQuest"] = 24690,	-- Blazerunner
 					["qg"] = 9271,	-- Hol'anyee Marshal
-					["coord"] = { 55.0, 62.2, UNGORO_CRATER },
+					["coord"] = { 55.0, 62.2, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Gorishi Fledgling Colossus slain
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 9272 },	-- Spark Nilminer
 						{ "i", 50405 },	-- Fossil-Finder 3000
 					},
-					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
+					["coord"] = { 31.9, 50.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Enormous Dinosaur Talon
@@ -1746,7 +1746,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  50407 },	-- Enormous Dinosaur Talon
 								{ "o", 202165 },	-- Suspicious Mound of Dirt
 							},
-							["coord"] = { 33.0, 74.5, UNGORO_CRATER },
+							["coord"] = { 33.0, 74.5, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -1754,7 +1754,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This quest pops-up when you enter the Fungal Rock cave during the quest |cFFFFD700The Apes of Un'Goro|r.",
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
-					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["coord"] = { 43.1, 41.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 U'cha's Pelt
@@ -1775,13 +1775,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4301, {	-- The Mighty U'cha
 					["sourceQuest"] = 4289,	-- The Apes of Un'Goro
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 U'cha's Pelt
 							["provider"] = { "i", 11476 },	-- U'cha's Pelt
-							["coord"] = { 68.6, 14.6, UNGORO_CRATER },
+							["coord"] = { 68.6, 14.6, MAP.UNGORO_CRATER },
 							["cr"] = 9622,	-- U'cha
 						}),
 						i(11906, {	-- Beastsmasher
@@ -1795,34 +1795,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(980, {	-- The New Springs
 					["sourceQuest"] = 974,	-- Finding the Source
 					["qg"] = 10302,	-- Krakle
-					["coord"] = { 30.8, 50.4, UNGORO_CRATER },
+					["coord"] = { 30.8, 50.4, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
+					["maps"] = { MAP.WINTERSPRING },
 					["lvl"] = 51,
 				}),
 				q(24722, {	-- The Northern Pylon
 					["sourceQuest"] = 24717,	-- The Apes of Un'Goro
 					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
-					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["coord"] = { 43.1, 41.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4285, {	-- The Northern Pylon
 					["sourceQuest"] = 4284,	-- Crystals of Power
 					["qg"] = 9117,	-- J.D. Collie
-					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["coord"] = { 41.8, 2.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- Discover and examine the Northern Crystal Pylon
 							["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
-							["coord"] = { 56.6, 12.5, UNGORO_CRATER },
+							["coord"] = { 56.6, 12.5, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
 				q(24732, {	-- The Scent of Lar'korwi
 					["sourceQuest"] = 24731,	-- The Fare of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.3, 76.6, UNGORO_CRATER },
+					["coord"] = { 71.3, 76.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/2 Ravasaur Pheromone Gland
@@ -1834,7 +1834,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4291, {	-- The Scent of Lar'korwi
 					["sourceQuest"] = 4290,	-- The Fare of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
@@ -1852,7 +1852,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["qg"] = 38504,	-- Un'Goro Examinant
-					["coord"] = { 53.9, 62.5, UNGORO_CRATER },
+					["coord"] = { 53.9, 62.5, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24706, {	-- The Spirits of Golakka Hot Springs
@@ -1875,9 +1875,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3909, {	-- The Videre Elixir
 					["sourceQuest"] = 3908,	-- It's a Secret to Everybody
 					["qg"] = 9298,	-- Donova Snowden
-					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["coord"] = { 31.2, 45.2, MAP.WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FERALAS },
+					["maps"] = { MAP.FERALAS },
 					["lvl"] = 47,
 					["groups"] = {
 						q(4041, {	-- The Videre Elixir
@@ -1887,8 +1887,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 164798 },	-- Evoroot
 							},
 							["coords"] = {
-								{ 45.1, 25.6, FERALAS },
-								{ 44.0, 11.0, FERALAS },
+								{ 45.1, 25.6, MAP.FERALAS },
+								{ 44.0, 11.0, MAP.FERALAS },
 							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
@@ -1904,26 +1904,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24723, {	-- The Western Pylon
 					["sourceQuest"] = 24709,	-- A Tale of Two Shovels
 					["qg"] = 9272,	-- Spark Nilminer
-					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
+					["coord"] = { 31.9, 50.3, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4288, {	-- The Western Pylon
 					["sourceQuest"] = 4284,	-- Crystals of Power
 					["qg"] = 9117,	-- J.D. Collie
-					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["coord"] = { 41.8, 2.6, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- Discover and examine the Western Crystal Pylon
 							["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-							["coord"] = { 23.5, 50.0, UNGORO_CRATER },
+							["coord"] = { 23.5, 50.0, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
 				q(13906, {	-- They Grow Up So Fast
 					["sourceQuest"] = 13887,	-- Venomhide Eggs
 					["qg"] = 11701,	-- Mor'vek <Ravasaur Trainers>
-					["coord"] = { 71.4, 73.8, UNGORO_CRATER },
+					["coord"] = { 71.4, 73.8, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_3_2_0 },
 					["cost"] = {
 						{ "i", 47196, 20 },	-- Venomhide Baby Tooth
@@ -1953,9 +1953,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3033,	-- Turak Runetotem <Druid Trainer>
 					},
 					["coords"] = {
-						{ 34.8, 8.6, DARNASSUS },
-						{ 52.4, 40.6, MOONGLADE },
-						{ 76.6, 27.6, THUNDER_BLUFF },
+						{ 34.8, 8.6, MAP.DARNASSUS },
+						{ 52.4, 40.6, MAP.MOONGLADE },
+						{ 76.6, 27.6, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
@@ -1964,7 +1964,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9051, {	-- Toxic Test
 					["sourceQuest"] = 9052,	-- Bloodpetal Poison
 					["qg"] = 9619,	-- Torwa Pathfinder
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 50,
@@ -1977,7 +1977,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(13850, {	-- Toxic Tolerance
 					["qg"] = 11701,	-- Mor'vek
-					["coord"] = { 71.5, 73.9, UNGORO_CRATER },
+					["coord"] = { 71.5, 73.9, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -1993,7 +1993,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						38237,	-- Maximillian of Northshire
 						38255,	-- Maximillian of Northshire (mobileNPC)
 					},
-					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
+					["coord"] = { 30.6, 51.1, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Damsel by the Shore saved
@@ -2013,8 +2013,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						44374,	-- Sherm
 					},
 					["coords"] = {
-						{ 33.2, 76.8, TANARIS },
-						{ 40.3, 77.2, TANARIS },
+						{ 33.2, 76.8, MAP.TANARIS },
+						{ 40.3, 77.2, MAP.TANARIS },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -2022,7 +2022,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13887, {	-- Venomhide Eggs
 					["sourceQuest"] = 13850,	-- Toxic Tolerance
 					["qg"] = 11701,	-- Mor'vek
-					["coord"] = { 71.5, 73.9, UNGORO_CRATER },
+					["coord"] = { 71.5, 73.9, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -2032,7 +2032,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  46364 },	-- Venomhide Ravasaur Egg
 								{ "o", 195022 },	-- Venomhide Egg
 							},
-							["coord"] = { 67.0, 62.5, UNGORO_CRATER },
+							["coord"] = { 67.0, 62.5, MAP.UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -2043,7 +2043,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24911,	-- Tropical Paradise Beckons
 					},
 					["qg"] = 9270,	-- Williden Marshal
-					["coord"] = { 55.1, 62.2, UNGORO_CRATER },
+					["coord"] = { 55.1, 62.2, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/9 Un'Goro Ash
@@ -2060,7 +2060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4502, {	-- Volcanic Activity
 					["qg"] = 8496,	-- Liv Rizzlefix
-					["coord"] = { 62.4, 38.6, THE_BARRENS },
+					["coord"] = { 62.4, 38.6, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,
 					["groups"] = {
@@ -2076,7 +2076,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				warchiefscommand(q(28526, {	-- Warchief's Command: Un'Goro Crater!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
@@ -2099,25 +2099,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(6582, {	-- Clutchmother Zavas
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.8, 85.0, UNGORO_CRATER },
+						{ 48.8, 85.0, MAP.UNGORO_CRATER },
 						-- #else
-						{ 44.6, 81.6, UNGORO_CRATER },
-						{ 46.8, 86.0, UNGORO_CRATER },
-						{ 49.2, 85.6, UNGORO_CRATER },
-						{ 49.6, 83.6, UNGORO_CRATER },
+						{ 44.6, 81.6, MAP.UNGORO_CRATER },
+						{ 46.8, 86.0, MAP.UNGORO_CRATER },
+						{ 49.2, 85.6, MAP.UNGORO_CRATER },
+						{ 49.6, 83.6, MAP.UNGORO_CRATER },
 						-- #endif
 					},
 				}),
 				n(6583, {	-- Gruff
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 32.0, 78.6, UNGORO_CRATER },
-						{ 33.0, 79.4, UNGORO_CRATER },
+						{ 32.0, 78.6, MAP.UNGORO_CRATER },
+						{ 33.0, 79.4, MAP.UNGORO_CRATER },
 						-- #else
-						{ 36.6, 66.6, UNGORO_CRATER },
-						{ 37.8, 75.0, UNGORO_CRATER },
-						{ 31.8, 72.2, UNGORO_CRATER },
-						{ 31.6, 79.6, UNGORO_CRATER },
+						{ 36.6, 66.6, MAP.UNGORO_CRATER },
+						{ 37.8, 75.0, MAP.UNGORO_CRATER },
+						{ 31.8, 72.2, MAP.UNGORO_CRATER },
+						{ 31.6, 79.6, MAP.UNGORO_CRATER },
 						-- #endif
 					},
 					["groups"] = {
@@ -2129,45 +2129,45 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(6584, {	-- King Mosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 29.6, 45.8, UNGORO_CRATER },
-						{ 29.0, 36.8, UNGORO_CRATER },
-						{ 30.0, 35.6, UNGORO_CRATER },
-						{ 32.6, 36.6, UNGORO_CRATER },
-						{ 34.4, 38.0, UNGORO_CRATER },
-						{ 35.6, 35.8, UNGORO_CRATER },
-						{ 37.0, 33.8, UNGORO_CRATER },
-						{ 37.0, 31.4, UNGORO_CRATER },
-						{ 32.0, 31.0, UNGORO_CRATER },
-						{ 30.8, 31.8, UNGORO_CRATER },
-						{ 33.4, 29.4, UNGORO_CRATER },
+						{ 29.6, 45.8, MAP.UNGORO_CRATER },
+						{ 29.0, 36.8, MAP.UNGORO_CRATER },
+						{ 30.0, 35.6, MAP.UNGORO_CRATER },
+						{ 32.6, 36.6, MAP.UNGORO_CRATER },
+						{ 34.4, 38.0, MAP.UNGORO_CRATER },
+						{ 35.6, 35.8, MAP.UNGORO_CRATER },
+						{ 37.0, 33.8, MAP.UNGORO_CRATER },
+						{ 37.0, 31.4, MAP.UNGORO_CRATER },
+						{ 32.0, 31.0, MAP.UNGORO_CRATER },
+						{ 30.8, 31.8, MAP.UNGORO_CRATER },
+						{ 33.4, 29.4, MAP.UNGORO_CRATER },
 						-- #else
-						{ 27.8, 45.0, UNGORO_CRATER },
-						{ 30.8, 47.6, UNGORO_CRATER },
-						{ 28.8, 34.4, UNGORO_CRATER },
-						{ 29.8, 31.6, UNGORO_CRATER },
-						{ 35.3, 36.0, UNGORO_CRATER },
-						{ 35.1, 30.3, UNGORO_CRATER },
-						{ 37.9, 43.5, UNGORO_CRATER },
+						{ 27.8, 45.0, MAP.UNGORO_CRATER },
+						{ 30.8, 47.6, MAP.UNGORO_CRATER },
+						{ 28.8, 34.4, MAP.UNGORO_CRATER },
+						{ 29.8, 31.6, MAP.UNGORO_CRATER },
+						{ 35.3, 36.0, MAP.UNGORO_CRATER },
+						{ 35.1, 30.3, MAP.UNGORO_CRATER },
+						{ 37.9, 43.5, MAP.UNGORO_CRATER },
 						-- #endif
 					},
 				}),
 				n(6581, {	-- Ravasaur Matriarch
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.8, 72.8, UNGORO_CRATER },
-						{ 66.4, 67.0, UNGORO_CRATER },
+						{ 60.8, 72.8, MAP.UNGORO_CRATER },
+						{ 66.4, 67.0, MAP.UNGORO_CRATER },
 						-- #else
-						{ 62.4, 66.0, UNGORO_CRATER },
+						{ 62.4, 66.0, MAP.UNGORO_CRATER },
 						-- #endif
 					},
 				}),
 				o(202082, {	-- Ravasaur Matriarch's Nest
 					["coords"] = {
-						{ 68.9, 61.2, UNGORO_CRATER },
-						{ 68.9, 66.9, UNGORO_CRATER },
-						{ 63.0, 63.2, UNGORO_CRATER },
-						{ 62.2, 65.3, UNGORO_CRATER },
-						{ 62.0, 73.6, UNGORO_CRATER },
+						{ 68.9, 61.2, MAP.UNGORO_CRATER },
+						{ 68.9, 66.9, MAP.UNGORO_CRATER },
+						{ 63.0, 63.2, MAP.UNGORO_CRATER },
+						{ 62.2, 65.3, MAP.UNGORO_CRATER },
+						{ 62.0, 73.6, MAP.UNGORO_CRATER },
 					},
 					["timeline"] = { ADDED_3_2_0 },
 					["groups"] = {
@@ -2179,9 +2179,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(6585, {	-- Uhk'loc
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 63.0, 18.6, UNGORO_CRATER },
+						{ 63.0, 18.6, MAP.UNGORO_CRATER },
 						-- #else
-						{ 68.5, 12.7, UNGORO_CRATER },
+						{ 68.5, 12.7, MAP.UNGORO_CRATER },
 						-- #endif
 					},
 				}),
@@ -2221,7 +2221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(VENDORS, {
 				n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
-					["coord"] = { 43.4, 41.6, UNGORO_CRATER },
+					["coord"] = { 43.4, 41.6, MAP.UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(12707),	-- Plans: Runic Plate Boots (RECIPE!)
@@ -2232,7 +2232,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(115923, {	-- Ko'Zan <Courier>
 					["sourceQuest"] = 45057,	-- Saving My Head
-					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
+					["coord"] = { 43.6, 41.4, MAP.UNGORO_CRATER },
 					["description"] = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
 					["timeline"] = { ADDED_7_2_0 },
 					["groups"] = {
@@ -2244,9 +2244,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12959, {	-- Nergal <General Goods Vendor> / <General Goods> [CATA+]
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.8, 62.6, UNGORO_CRATER },
+						{ 54.8, 62.6, MAP.UNGORO_CRATER },
 						-- #else
-						{ 43.2, 7.8, UNGORO_CRATER },
+						{ 43.2, 7.8, MAP.UNGORO_CRATER },
 						-- #endif
 					},
 					["groups"] = {
@@ -2286,11 +2286,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(199092, {	-- Inert Phoenix Ash
 					["coords"] = {
-						{ 52.8, 42.4, UNGORO_CRATER },
-						{ 46.0, 46.6, UNGORO_CRATER },
-						{ 47.6, 53.2, UNGORO_CRATER },
-						{ 51.0, 47.2, UNGORO_CRATER },
-						{ 55.6, 58.0, UNGORO_CRATER },
+						{ 52.8, 42.4, MAP.UNGORO_CRATER },
+						{ 46.0, 46.6, MAP.UNGORO_CRATER },
+						{ 47.6, 53.2, MAP.UNGORO_CRATER },
+						{ 51.0, 47.2, MAP.UNGORO_CRATER },
+						{ 55.6, 58.0, MAP.UNGORO_CRATER },
 					},
 					["timeline"] = { ADDED_10_0_7 },
 					["crs"] = {

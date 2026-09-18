@@ -13,24 +13,24 @@ PILGRIMS_BOUNTY_HEADER = createHeader({
 });
 
 local ALLIANCE_PILGRIM_MAPS = {
-	DARNASSUS,
-	TELDRASSIL,
+	MAP.DARNASSUS,
+	MAP.TELDRASSIL,
 	THE_EXODAR,
 	AZUREMYST_ISLE,
-	IRONFORGE,
-	DUN_MOROGH,
-	STORMWIND_CITY,
-	ELWYNN_FOREST,
+	MAP.IRONFORGE,
+	MAP.DUN_MOROGH,
+	MAP.STORMWIND_CITY,
+	MAP.ELWYNN_FOREST,
 };
 local HORDE_PILGRIM_MAPS = {
-	ORGRIMMAR,
-	DUROTAR,
+	MAP.ORGRIMMAR,
+	MAP.DUROTAR,
 	SILVERMOON_CITY,
 	EVERSONG_WOODS,
-	THUNDER_BLUFF,
-	MULGORE,
-	UNDERCITY,
-	TIRISFAL_GLADES,
+	MAP.THUNDER_BLUFF,
+	MAP.MULGORE,
+	MAP.UNDERCITY,
+	MAP.TIRISFAL_GLADES,
 };
 local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_PILGRIM_MAPS, {}));
 
@@ -219,8 +219,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["timeline"] = { ADDED_3_2_2 },
 				["cr"] = 32820,	-- Wild Turkey
 				["maps"] = {
-					ELWYNN_FOREST,
-					TIRISFAL_GLADES,
+					MAP.ELWYNN_FOREST,
+					MAP.TIRISFAL_GLADES,
 				},
 			}),
 			ach(3559, {	-- Turkey Lurkey
@@ -241,7 +241,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14033, {	-- Candied Sweet Potatoes (Alliance)
 					["sourceQuest"] = 14030,	-- They're Ravenous In Darnassus (Alliance)
 					["qg"] = 34676,	-- Isaac Allerton
-					["coord"] = { 61.6, 49.1, DARNASSUS },
+					["coord"] = { 61.6, 49.1, MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -258,7 +258,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14043, {	-- Candied Sweet Potatoes (Horde)
 					["sourceQuest"] = 14041,	-- Cranberry Chutney (Horde)
 					["qg"] = 34678,	-- Dokin Farplain
-					["coord"] = { 30.9, 63.7, THUNDER_BLUFF },
+					["coord"] = { 30.9, 63.7, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -274,7 +274,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14048, {	-- Can't Get Enough Turkey (Alliance)
 					["qg"] = 34708,	-- Caitrin Ironkettle
-					["coord"] = { 60.0, 34.2, DUN_MOROGH },
+					["coord"] = { 60.0, 34.2, MAP.DUN_MOROGH },
 					["cost"] = { { "i", 44838, 20 } },	-- Slow-Roasted Turkey
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -282,7 +282,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14061, {	-- Can't Get Enough Turkey (Horde)
 					["qg"] = 34713,	-- Ondani Greatmill
-					["coord"] = { 46.4, 13.8, DUROTAR },
+					["coord"] = { 46.4, 13.8, MAP.DUROTAR },
 					["cost"] = { { "i", 44838, 20 } },	-- Slow-Roasted Turkey
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -291,7 +291,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14028, {	-- Cranberry Chutney (Alliance)
 					["sourceQuest"] = 14024,	-- Pumpkin Pie (Alliance)
 					["qg"] = 34644,	-- Edward Winslow
-					["coord"] = { 59.8, 34.3, DUN_MOROGH },
+					["coord"] = { 59.8, 34.3, MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -307,7 +307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14041, {	-- Cranberry Chutney (Horde)
 					["sourceQuest"] = 14040,	-- Pumpkin Pie (Horde)
 					["qg"] = 34679,	-- Francis Eaton
-					["coord"] = { 46.6, 13.8, DUROTAR },
+					["coord"] = { 46.6, 13.8, MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -322,7 +322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14051, {	-- Don't Forget The Stuffing! (Alliance)
 					["qg"] = 34708,	-- Caitrin Ironkettle
-					["coord"] = { 60.0, 34.2, DUN_MOROGH },
+					["coord"] = { 60.0, 34.2, MAP.DUN_MOROGH },
 					["cost"] = { { "i", 44837, 20 } },	-- Spice Bread Stuffing
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -330,7 +330,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14062, {	-- Don't Forget The Stuffing! (Horde)
 					["qg"] = 34713,	-- Ondani Greatmill
-					["coord"] = { 46.4, 13.8, DUROTAR },
+					["coord"] = { 46.4, 13.8, MAP.DUROTAR },
 					["cost"] = { { "i", 44837, 20 } },	-- Spice Bread Stuffing
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -338,7 +338,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14054, {	-- Easy As Pie (Alliance)
 					["qg"] = 34711,	-- Mary Allerton
-					["coord"] = { 61.8, 46.2, DARNASSUS },
+					["coord"] = { 61.8, 46.2, MAP.DARNASSUS },
 					["cost"] = { { "i", 44836, 20 } },	-- Pumpkin Pie
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -346,7 +346,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14060, {	-- Easy As Pie (Horde)
 					["qg"] = 34714,	-- Mahara Goldwheat <Cooking Trainer>
-					["coord"] = { 31.6, 69.8, THUNDER_BLUFF },
+					["coord"] = { 31.6, 69.8, MAP.THUNDER_BLUFF },
 					["cost"] = { { "i", 44836, 20 } },	-- Pumpkin Pie
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -367,12 +367,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					},
 					["maps"] = {
 						NORTHERN_BARRENS,
-						ELWYNN_FOREST,
-						TANARIS,
-						WINTERSPRING,
-						STORMWIND_CITY,
-						IRONFORGE,
-						DARNASSUS,
+						MAP.ELWYNN_FOREST,
+						MAP.TANARIS,
+						MAP.WINTERSPRING,
+						MAP.STORMWIND_CITY,
+						MAP.IRONFORGE,
+						MAP.DARNASSUS,
 						THE_EXODAR,
 						NETHERSTORM,
 						SHATTRATH_CITY,
@@ -401,11 +401,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					},
 					["maps"] = {
 						NORTHERN_BARRENS,
-						TANARIS,
-						WINTERSPRING,
-						ORGRIMMAR,
-						THUNDER_BLUFF,
-						UNDERCITY,
+						MAP.TANARIS,
+						MAP.WINTERSPRING,
+						MAP.ORGRIMMAR,
+						MAP.THUNDER_BLUFF,
+						MAP.UNDERCITY,
 						EVERSONG_WOODS,
 						NETHERSTORM,
 						SHATTRATH_CITY,
@@ -422,7 +422,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14024, {	-- Pumpkin Pie (Alliance)
 					["sourceQuest"] = 14023,	-- Spice Bread Stuffing (Alliance)
 					["qg"] = 34744,	-- Jasper Moore
-					["coord"] = { 33.9, 50.8, ELWYNN_FOREST },
+					["coord"] = { 33.9, 50.8, MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -438,7 +438,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14040, {	-- Pumpkin Pie (Horde)
 					["sourceQuest"] = 14037,	-- Spice Bread Stuffing (Horde)
 					["qg"] = 34768,	-- William Mullins
-					["coord"] = { 65.8, 13.2, UNDERCITY },
+					["coord"] = { 65.8, 13.2, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -454,13 +454,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14064, {	-- Sharing a Bountiful Feast (Alliance)
 					["qg"] = 34653,	-- Bountiful Table Hostess
 					["coords"] = {
-						{ 34.1, 51.0, ELWYNN_FOREST },
+						{ 34.1, 51.0, MAP.ELWYNN_FOREST },
 					},
 					["maps"] = {
-						DARNASSUS,
-						DUN_MOROGH,
+						MAP.DARNASSUS,
+						MAP.DUN_MOROGH,
 						-- #if AFTER BFA
-						DARKSHORE,
+						MAP.DARKSHORE,
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -469,8 +469,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14065, {	-- Sharing a Bountiful Feast (Horde)
 					["qg"] = 34654,	-- Bountiful Feast Hostess
 					["maps"] = {
-						DUROTAR,
-						TIRISFAL_GLADES,
+						MAP.DUROTAR,
+						MAP.TIRISFAL_GLADES,
 						EVERSONG_WOODS,
 						HELLFIRE_PENINSULA,
 					},
@@ -479,7 +479,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14055, {	-- She Says Potato (Alliance)
 					["qg"] = 34744,	-- Jasper Moore
-					["coord"] = { 33.9, 50.8, ELWYNN_FOREST },
+					["coord"] = { 33.9, 50.8, MAP.ELWYNN_FOREST },
 					["cost"] = { { "i", 44839, 20 } },	-- Candied Sweet Potato
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -488,8 +488,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14058, {	-- She Says Potato (Horde)
 					["qg"] = 34768,	-- William Mullins
 					["coords"] = {
-						{ 61.6, 68.1, TIRISFAL_GLADES },
-						{ 65.8, 13.2, UNDERCITY },
+						{ 61.6, 68.1, MAP.TIRISFAL_GLADES },
+						{ 65.8, 13.2, MAP.UNDERCITY },
 					},
 					["cost"] = { { "i", 44839, 20 } },	-- Candied Sweet Potato
 					["races"] = HORDE_ONLY,
@@ -499,7 +499,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14035, {	-- Slow-roasted Turkey (Alliance)
 					["sourceQuest"] = 14033,	-- Candied Sweet Potatoes (Alliance)
 					["qg"] = 34675,	-- Gregory Tabor
-					["coord"] = { 34.0, 51.4, ELWYNN_FOREST },
+					["coord"] = { 34.0, 51.4, MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -516,7 +516,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14047, {	-- Slow-roasted Turkey (Horde)
 					["sourceQuest"] = 14044,	-- Undersupplied in the Undercity (Horde)
 					["qg"] = 34677,	-- Miles Standish
-					["coord"] = { 64.2, 10.3, UNDERCITY },
+					["coord"] = { 64.2, 10.3, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -532,7 +532,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14023, {	-- Spice Bread Stuffing (Alliance)
 					["qg"] = 34675,	-- Gregory Tabor
-					["coord"] = { 34.0, 51.4, ELWYNN_FOREST },
+					["coord"] = { 34.0, 51.4, MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -547,7 +547,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14037, {	-- Spice Bread Stuffing (Horde)
 					["qg"] = 34677,	-- Miles Standish
-					["coord"] = { 64.2, 10.3, UNDERCITY },
+					["coord"] = { 64.2, 10.3, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -563,7 +563,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14030, {	-- They're Ravenous In Darnassus (Alliance)
 					["sourceQuest"] = 14028,	-- Cranberry Chutney (Alliance)
 					["qg"] = 34744,	-- Jasper Moore
-					["coord"] = { 33.9, 50.8, ELWYNN_FOREST },
+					["coord"] = { 33.9, 50.8, MAP.ELWYNN_FOREST },
 					["cost"] = {
 						{ "i", 44837, 5 },	-- Spice Bread Stuffing
 						{ "i", 44836, 5 },	-- Pumpkin Pie
@@ -574,7 +574,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14044, {	-- Undersupplied in the Undercity (Horde)
 					["sourceQuest"] = 14043,	-- Candied Sweet Potatoes (Horde)
 					["qg"] = 34679,	-- Francis Eaton
-					["coord"] = { 46.6, 13.8, DUROTAR },
+					["coord"] = { 46.6, 13.8, MAP.DUROTAR },
 					["cost"] = {
 						{ "i", 44837, 5 },	-- Spice Bread Stuffing
 						{ "i", 44840, 5 },	-- Cranberry Chutney
@@ -584,7 +584,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14053, {	-- We're Out of Cranberry Chutney Again? (Alliance)
 					["qg"] = 34710,	-- Ellen Moore
-					["coord"] = { 33.7, 50.6, ELWYNN_FOREST },
+					["coord"] = { 33.7, 50.6, MAP.ELWYNN_FOREST },
 					["cost"] = { { "i", 44840, 20 } },	-- Cranberry Chutney
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -593,8 +593,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14059, {	-- We're Out of Cranberry Chutney Again? (Horde)
 					["qg"] = 34712,	-- Roberta Carter
 					["coords"] = {
-						{ 61.3, 67.0, TIRISFAL_GLADES },
-						{ 64.0, 9.6, UNDERCITY },
+						{ 61.3, 67.0, MAP.TIRISFAL_GLADES },
+						{ 64.0, 9.6, MAP.UNDERCITY },
 					},
 					["cost"] = { { "i", 44840, 20 } },	-- Cranberry Chutney
 					["races"] = HORDE_ONLY,
@@ -726,7 +726,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 			}),
 			n(34685, {	-- Dalni Tallgrass <Pilgrim's Bounty Vendor>
-				["coord"] = { 46.6, 13.8, DUROTAR },
+				["coord"] = { 46.6, 13.8, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["cr"] = 35342,	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
 				["groups"] = {
@@ -734,7 +734,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 			}),
 			n(34645, {	-- Elizabeth Barker Winslow <Pilgrim's Bounty Vendor>
-				["coord"] = { 59.8, 34.2, DUN_MOROGH },
+				["coord"] = { 59.8, 34.2, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["cr"] = 35340,	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
 				["groups"] = {
@@ -742,7 +742,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 			}),
 			n(34681, {	-- Ikaneba Summerset <Pilgrim's Bounty Vendor>
-				["coord"] = { 61.6, 49.6, DARNASSUS },
+				["coord"] = { 61.6, 49.6, MAP.DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
 				["cr"] = 35338,	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
 				["groups"] = {
@@ -750,8 +750,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 			}),
 			n(34684, {	-- Laha Farplain <Pilgrim's Bounty Vendor>
-				["coord"] = { 30.8, 64.6, THUNDER_BLUFF },
-				["maps"] = { MULGORE },
+				["coord"] = { 30.8, 64.6, MAP.THUNDER_BLUFF },
+				["maps"] = { MAP.MULGORE },
 				["races"] = HORDE_ONLY,
 				["cr"] = 35343,	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
 				["groups"] = {
@@ -759,8 +759,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 			}),
 			n(34683, {	-- Rose Standish <Pilgrim's Bounty Vendor>
-				["coord"] = { 61.4, 67.4, TIRISFAL_GLADES },
-				["maps"] = { UNDERCITY },
+				["coord"] = { 61.4, 67.4, MAP.TIRISFAL_GLADES },
+				["maps"] = { MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["cr"] = 35341,	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
 				["groups"] = {
@@ -768,7 +768,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 			}),
 			n(34682, {	-- Wilmina Holbeck <Pilgrim's Bounty Vendor>
-				["coord"] = { 34.0, 51.6, ELWYNN_FOREST },
+				["coord"] = { 34.0, 51.6, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["cr"] = 35337,	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
 				["groups"] = {
@@ -791,7 +791,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 			}),
 			i(44834, {	-- Wild Turkey
-				["maps"] = { ELWYNN_FOREST, TIRISFAL_GLADES },
+				["maps"] = { MAP.ELWYNN_FOREST, MAP.TIRISFAL_GLADES },
 				["crs"] = {
 					32956,	-- Lonely Turkey
 					32820,	-- Wild Turkey

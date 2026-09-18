@@ -94,7 +94,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 					THE_CAPE_OF_STRANGLETHORN,
 					NORTHERN_STRANGLETHORN,
 					-- #else
-					STRANGLETHORN_VALE,
+					MAP.STRANGLETHORN_VALE,
 					-- #endif
 				},
 			}),
@@ -102,15 +102,15 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["provider"] = { "o", 180751 },	-- Floating Wreckage
 				["maps"] = {
 					-- #if AFTER CATA
-					BLASTED_LANDS,
-					EASTERN_PLAGUELANDS,
-					SWAMP_OF_SORROWS,
-					TANARIS,
-					THOUSAND_NEEDLES,
+					MAP.BLASTED_LANDS,
+					MAP.EASTERN_PLAGUELANDS,
+					MAP.SWAMP_OF_SORROWS,
+					MAP.TANARIS,
+					MAP.THOUSAND_NEEDLES,
 					-- #else
-					AZSHARA,
-					FERALAS,
-					TANARIS,
+					MAP.AZSHARA,
+					MAP.FERALAS,
+					MAP.TANARIS,
 					-- #endif
 				},
 			}),
@@ -118,12 +118,12 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["provider"] = { "o", 180662 },	-- Schooner Wreckage
 				["maps"] = {
 					-- #if AFTER CATA
-					ARATHI_HIGHLANDS,
-					ASHENVALE,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.ASHENVALE,
 					-- #endif
-					HILLSBRAD_FOOTHILLS,
-					STONETALON_MOUNTAINS,
-					WETLANDS,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.STONETALON_MOUNTAINS,
+					MAP.WETLANDS,
 				},
 			}),
 			crit(3872, {	-- Steam Pump Flotsam
@@ -134,16 +134,16 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["provider"] = { "o", 180685 },	-- Waterlogged Wreckage
 				["maps"] = {
 					-- #if AFTER CATA
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					WESTERN_PLAGUELANDS,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.FERALAS,
+					MAP.WESTERN_PLAGUELANDS,
 					-- #else
-					ALTERAC_MOUNTAINS,
-					ARATHI_HIGHLANDS,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					STRANGLETHORN_VALE,
+					MAP.ALTERAC_MOUNTAINS,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.STRANGLETHORN_VALE,
 					-- #endif
 				},
 			}),
@@ -171,7 +171,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		}),
 		ach(150, {	-- The Fishing Diplomat
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["maps"] = { MAP.ORGRIMMAR, MAP.STORMWIND_CITY },
 		}),
 	}),
 	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {

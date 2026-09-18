@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(MOONGLADE, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.MOONGLADE, {
 		["lore"] = "Moonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.",
 		["icon"] = 135758,
 		["groups"] = {
@@ -29,30 +29,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(49, {	-- Moonglade
 					["cr"] = 10897,	-- Sindrayl <Hippogryph Master>
-					["coord"] = { 48.0, 67.2, MOONGLADE },
+					["coord"] = { 48.0, 67.2, MAP.MOONGLADE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(69, {	-- Moonglade
 					["cr"] = 12740,	-- Faustron <Wind Rider Master>
-					["coord"] = { 32.2, 66.6, MOONGLADE },
+					["coord"] = { 32.2, 66.6, MAP.MOONGLADE },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(63, {	-- Nighthaven, Moonglade
 					["cr"] = 11800,	-- Silva Fil'naveth <Darnassus Flight Master>
-					["coord"] = { 44.2, 45.2, MOONGLADE },
+					["coord"] = { 44.2, 45.2, MAP.MOONGLADE },
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(62, {	-- Nighthaven, Moonglade
 					["cr"] = 11798,	-- Bunthen Plainswind <Thunder Bluff Flight Master>
-					["coord"] = { 44.4, 45.6, MOONGLADE },
+					["coord"] = { 44.4, 45.6, MAP.MOONGLADE },
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
 			petbattles({
 				n(66412, {	-- Elena Flutterfly <Master Pet Tamer>
-					["coord"] = { 46.0, 60.6, MOONGLADE },
+					["coord"] = { 46.0, 60.6, MAP.MOONGLADE },
 					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 17,
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				q(26, {	-- A Lesson to Learn [A]
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["coord"] = { 35.2, 8.0, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27, {	-- A Lesson to Learn [H]
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
-					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
+					["coord"] = { 76.4, 27.6, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sourceQuest"] = 30,	-- Trial of the Sea Lion [H]
 					}),
 					["qg"] = 11802,	-- Dendrite Starblaze
-					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 16,
@@ -107,9 +107,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5931, {	-- Back to Darnassus
 					["sourceQuest"] = 5929,	-- Great Bear Spirit [A]
 					["qg"] = 11802,	-- Dendrite Starblaze
-					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 10,
@@ -117,9 +117,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5932, {	-- Back to Thunder Bluff
 					["sourceQuest"] = 5930,	-- Great Bear Spirit [H]
 					["qg"] = 11802,	-- Dendrite Starblaze
-					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 10,
@@ -127,9 +127,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6001, {	-- Body and Heart [A]
 					["sourceQuest"] = 5931,	-- Back to Darnassus
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["coord"] = { 35.2, 8.0, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARKSHORE },
+					["maps"] = { MAP.DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 10,
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 							["provider"] = { "n", 12138 },	-- Lunaclaw
 							["cost"] = { { "i", 15208, 1 } },	-- Cenarion Moondust
-							["coord"] = { 43.0, 45.0, DARKSHORE },
+							["coord"] = { 43.0, 45.0, MAP.DARKSHORE },
 						}),
 						-- #if BEFORE 4.0.3
 						{
@@ -163,9 +163,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6002, {	-- Body and Heart [H]
 					["sourceQuest"] = 5932,	-- Back to Thunder Bluff
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
-					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
+					["coord"] = { 76.4, 27.6, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 10,
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 							["provider"] = { "n", 12138 },	-- Lunaclaw
 							["cost"] = { { "i", 15710, 1 } },	-- Cenarion Lunardust
-							["coord"] = { 42.0, 60.0, THE_BARRENS },
+							["coord"] = { 42.0, 60.0, MAP.THE_BARRENS },
 						}),
 						-- #if BEFORE 4.0.3
 						{
@@ -204,14 +204,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sourceQuest"] = 5922,	-- Moonglade [H]
 					}),
 					["qg"] = 11802,	-- Dendrite Starblaze
-					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 10,
 				},
 				q(5923, {	-- Heeding the Call [Darnassus]
 					["qg"] = 4218,	-- Denatharion <Druid Trainer>
-					["coord"] = { 34.8, 7.8, DARNASSUS },
+					["coord"] = { 34.8, 7.8, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -222,9 +222,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5505,	-- Theridran <Druid Trainer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 36.2, 64.2, STORMWIND_CITY },
+						{ 36.2, 64.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 21.4, 51.4, STORMWIND_CITY },
+						{ 21.4, 51.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5925, {	-- Heeding the Call [Teldrassil]
 					["qg"] = 3602,	-- Kal <Druid Trainer>
-					["coord"] = { 56.0, 61.6, TELDRASSIL },
+					["coord"] = { 56.0, 61.6, MAP.TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5926, {	-- Heeding the Call [Thunder Bluff]
 					["qg"] = 6746,	-- Innkeeper Pala <Innkeeper>
-					["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
+					["coord"] = { 45.8, 64.4, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5927, {	-- Heeding the Call [Orgrimmar]
 					["qg"] = 6929,	-- Innkeeper Gryshka <Innkeeper>
-					["coord"] = { 54.2, 68.4, ORGRIMMAR },
+					["coord"] = { 54.2, 68.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5928, {	-- Heeding the Call [Mulgore]
 					["qg"] = 3064,	-- Gennia Runetotem <Druid Trainer>
-					["coord"] = { 48.4, 59.6, MULGORE },
+					["coord"] = { 48.4, 59.6, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5925,	-- Heeding the Call [Teldrassil]
 					},
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["coord"] = { 35.2, 8.0, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5928,	-- Heeding the Call [Mulgore]
 					},
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
-					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
+					["coord"] = { 76.4, 27.6, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -302,7 +302,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5925,	-- Heeding the Call [Teldrassil]
 					},
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["coord"] = { 35.2, 8.0, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5928,	-- Heeding the Call [Mulgore]
 					},
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
-					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
+					["coord"] = { 76.4, 27.6, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -330,11 +330,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						{ 24.4, 54.5, AZUREMYST_ISLE },	-- Shalannius
-						{ 40.4, 27.6, DARNASSUS },	-- Mathrengyl Bearwalker
-						{ 35.0, 67.6, ORGRIMMAR },	-- Sesebi
-						{ 77.0, 27.4, THUNDER_BLUFF },	-- Sheal Runetotem
-						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
-						{ 55.0, 50.4, UNDERCITY },	-- Mala Skywatcher
+						{ 40.4, 27.6, MAP.DARNASSUS },	-- Mathrengyl Bearwalker
+						{ 35.0, 67.6, MAP.ORGRIMMAR },	-- Sesebi
+						{ 77.0, 27.4, MAP.THUNDER_BLUFF },	-- Sheal Runetotem
+						{ 57.6, 24.8, MAP.STORMWIND_CITY },	-- Celestine of the Harvest
+						{ 55.0, 50.4, MAP.UNDERCITY },	-- Mala Skywatcher
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { DRUID },
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
 					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
 					["qg"] = 122134,	-- Makkaw <Moonkin Festival>
-					["coord"] = { 45.4, 62.0, MOONGLADE },
+					["coord"] = { 45.4, 62.0, MAP.MOONGLADE },
 					["timeline"] = { ADDED_7_2_5 },
 					["isYearly"] = true,
 					["groups"] = {
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10955, {	-- Morthis Whisperwing
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
-					["coord"] = { 52.5, 40.6, MOONGLADE },
+					["coord"] = { 52.5, 40.6, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10965, {	-- No Mere Dream
 					["sourceQuest"] = 10964,	-- Waking the Sleeper
 					["qg"] = 22834,	-- Clintar Dreamwalker
-					["coord"] = { 75.5, 67.0, MOONGLADE },
+					["coord"] = { 75.5, 67.0, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
@@ -371,14 +371,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				{	-- Power over Poison
 					["allianceQuestData"] = q(6125, {	-- Power over Poison [A]
 						["sourceQuest"] = 6124,	-- Curing the Sick [A]
-						["maps"] = { DARNASSUS },
+						["maps"] = { MAP.DARNASSUS },
 					}),
 					["hordeQuestData"] = q(6130, {	-- Power over Poison [H]
 						["sourceQuest"] = 6129,	-- Curing the Sick [H]
-						["maps"] = { THUNDER_BLUFF },
+						["maps"] = { MAP.THUNDER_BLUFF },
 					}),
 					["qg"] = 11802,	-- Dendrite Starblaze
-					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -391,7 +391,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6762, {	-- Rabine Saturna [A]
 					["sourceQuest"] = 6761,	-- The New Frontier (2/2) [Darnassus]
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["coord"] = { 35.2, 8.0, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1018,	-- The New Frontier [Orgrimmar]
 					},
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
-					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
+					["coord"] = { 78.4, 28.4, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
@@ -414,7 +414,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 22837 },	-- Dreamwarden Lurosa
 						{ "i", 32074 },	-- Relics of Aviana
 					},
-					["coord"] = { 72.5, 63.3, MOONGLADE },
+					["coord"] = { 72.5, 63.3, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_1 },
 					["maps"] = { ZANGARMARSH },
 					["classes"] = { DRUID },
@@ -423,7 +423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28343, {	-- The Breath of Cenarius
 					["sourceQuest"] = 28289,	-- Moonglade Calls
 					["qg"] = 12042,	-- Loganaar
-					["coord"] = { 52.4, 40.4, MOONGLADE },
+					["coord"] = { 52.4, 40.4, MAP.MOONGLADE },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["classes"] = { DRUID },
@@ -450,7 +450,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1047,	-- The New Frontier [Darnassus]
 					},
 					["qg"] = 2198,	-- Crier Goodman
-					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
+					["coord"] = { 54.8, 62.6, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
@@ -461,7 +461,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1047,	-- The New Frontier [Darnassus]
 					},
 					["qg"] = 10877,	-- Courier Hammerfall
-					["coord"] = { 31.6, 67.0, IRONFORGE },
+					["coord"] = { 31.6, 67.0, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1019,	-- The New Frontier [Ironforge]
 					},
 					["qg"] = 10878,	-- Herald Moonstalker
-					["coord"] = { 36.4, 39.8, DARNASSUS },
+					["coord"] = { 36.4, 39.8, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
@@ -484,7 +484,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1047,	-- The New Frontier (1/2) [Darnassus]
 					},
 					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
-					["coord"] = { 34.8, 8.8, DARNASSUS },
+					["coord"] = { 34.8, 8.8, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
@@ -495,7 +495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1004,	-- The New Frontier [Undercity]
 					},
 					["qg"] = 10881,	-- Bluff Runner Windstrider
-					["coord"] = { 41.4, 54.2, THUNDER_BLUFF },
+					["coord"] = { 41.4, 54.2, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
@@ -506,7 +506,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1000,	-- The New Frontier [Thunder Bluff]
 					},
 					["qg"] = 10879,	-- Harbinger Balthazad
-					["coord"] = { 68.8, 48.4, UNDERCITY },
+					["coord"] = { 68.8, 48.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1004,	-- The New Frontier [Undercity]
 					},
 					["qg"] = 10880,	-- Warcaller Gorlach
-					["coord"] = { 46.6, 64.6, ORGRIMMAR },
+					["coord"] = { 46.6, 64.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
@@ -525,9 +525,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6122, {	-- The Principal Source [A]
 					["sourceQuest"] = 6121,	-- Lessons Anew [A]
 					["qg"] = 11802,	-- Dendrite Starblaze
-					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARKSHORE },
+					["maps"] = { MAP.DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -535,16 +535,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Filled Cliffspring Falls Sampler
 							["provider"] = { "i", 15845 },	-- Filled Cliffspring Falls Sampler
 							["cost"] = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler
-							["coord"] = { 54.9, 33.3, DARKSHORE },
+							["coord"] = { 54.9, 33.3, MAP.DARKSHORE },
 						}),
 					},
 				}),
 				q(6127, {	-- The Principal Source [H]
 					["sourceQuest"] = 6121,	-- Lessons Anew [H]
 					["qg"] = 11802,	-- Dendrite Starblaze
-					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Filled Dreadmist Falls Sampler
 							["provider"] = { "i", 15843 },	-- Filled Dreadmist Falls Sampler
 							["cost"] = { { "i", 15842, 1 } },	-- Empty Dreadmist Falls Sampler
-							["coord"] = { 47.0, 18.0, THE_BARRENS },
+							["coord"] = { 47.0, 18.0, MAP.THE_BARRENS },
 						}),
 					},
 				}),
@@ -564,7 +564,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sourceQuest"] = 27,	-- A Lesson to Learn [H]
 					}),
 					["qg"] = 11802,	-- Dendrite Starblaze
-					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 16,
@@ -572,8 +572,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Shrine Bauble
 							["provider"] = { "i", 15877 },	-- Shrine Bauble
 							["coords"] = {
-								{ 54.1, 50.1, MOONGLADE },
-								{ 36.4, 40.2, MOONGLADE },
+								{ 54.1, 50.1, MAP.MOONGLADE },
+								{ 36.4, 40.2, MAP.MOONGLADE },
 							},
 						}),
 					},
@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78229, {	-- Trial of The Owls
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
-					["coord"] = { 52.4, 40.4, MOONGLADE },
+					["coord"] = { 52.4, 40.4, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = {
 						{ "i", 210044, 1 },	-- Symbol of the First Owl
@@ -607,7 +607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sourceQuest"] = 28,	-- Trial of the Lake [H]
 					}),
 					["qg"] = 11799,	-- Tajarri
-					["coord"] = { 36.4, 40.2, MOONGLADE },
+					["coord"] = { 36.4, 40.2, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 16,
@@ -623,15 +623,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{
 							["itemID"] = 15882,	-- Half Pendant of Aquatic Endurance
 							["coords"] = {
-								{ 17.9, 33.0, WESTFALL },
-								{ 29.6, 29.5, SILVERPINE_FOREST },
+								{ 17.9, 33.0, MAP.WESTFALL },
+								{ 29.6, 29.5, MAP.SILVERPINE_FOREST },
 							},
 						},
 						{
 							["itemID"] = 15883,	-- Half Pendant of Aquatic Agility
 							["coords"] = {
-								{ 48.9, 11.3, DARKSHORE },
-								{ 56.7, 8.3, THE_BARRENS },
+								{ 48.9, 11.3, MAP.DARKSHORE },
+								{ 56.7, 8.3, MAP.THE_BARRENS },
 							},
 						},
 						-- #endif
@@ -640,7 +640,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6845, {	-- Uncovering Past Secrets
 					["sourceQuest"] = 6844,	-- Umber, Archivist
 					["qg"] = 11939,	-- Umber
-					["coord"] = { 44.88, 35.6, MOONGLADE },
+					["coord"] = { 44.88, 35.6, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
@@ -655,7 +655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1185, {	-- Under the Chitin Was...
 					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 					["qg"] = 11939,	-- Umber
-					["coord"] = { 44.88, 35.6, MOONGLADE },
+					["coord"] = { 44.88, 35.6, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 				}),
@@ -668,7 +668,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 11801 },	-- Rabine Saturna
 						{ "i", 17355 },	-- Rabine's Letter
 					},
-					["coord"] = { 51.7, 45.1, MOONGLADE },
+					["coord"] = { 51.7, 45.1, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 				}),
@@ -711,7 +711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(VENDORS, {
 				n(7940, {	-- Darnall <Tailoring Supplies>
-					["coord"] = { 51.6, 33.2, MOONGLADE },
+					["coord"] = { 51.6, 33.2, MAP.MOONGLADE },
 					["groups"] = {
 						i(14488, {	-- Pattern: Runecloth Boots (RECIPE!)
 							["timeline"] = { REMOVED_2_0_1 },	-- Learned from trainer, recipe removed.
@@ -730,7 +730,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(4184, {	-- Geenia Sunshadow <Speciality Dress Maker>
-					["coord"] = { 51.8, 33.0, MOONGLADE },
+					["coord"] = { 51.8, 33.0, MAP.MOONGLADE },
 					["groups"] = {
 						i(13896),	-- Dark Green Wedding Hanbok
 						i(13895, {	-- Formal Dangui
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(12023, {	-- Kharedon <Light Armor Merchant>
-					["coord"] = { 56.6, 29.8, MOONGLADE },
+					["coord"] = { 56.6, 29.8, MAP.MOONGLADE },
 					["groups"] = {
 						i(12254, {	-- Well Oiled Cloak
 							["isLimited"] = true,
@@ -757,9 +757,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12022, {	-- Lorelae Wintersong <Trade Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.6, 40.2, MOONGLADE },
+						{ 48.6, 40.2, MAP.MOONGLADE },
 						-- #else
-						{ 48.2, 40.0, MOONGLADE },
+						{ 48.2, 40.0, MAP.MOONGLADE },
 						-- #endif
 					},
 					["groups"] = {
@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(12029, {	-- Narianna <Bowyer>
-					["coord"] = { 53.2, 42.6, MOONGLADE },
+					["coord"] = { 53.2, 42.6, MAP.MOONGLADE },
 					["groups"] = {
 						i(11308, {	-- Sylvan Shortbow
 							["isLimited"] = true,

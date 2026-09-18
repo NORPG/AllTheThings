@@ -193,11 +193,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["OnTooltip"] = OnTooltipForSteamweedle,
 					-- #endif
 					["maps"] = merge(GORDOK_COMMONS_MAPS, {
-						FERALAS,
-						STRANGLETHORN_VALE,
-						TANARIS,
-						THE_BARRENS,
-						WINTERSPRING,
+						MAP.FERALAS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.TANARIS,
+						MAP.THE_BARRENS,
+						MAP.WINTERSPRING,
 					}),
 					-- #if AFTER 4.0.3
 					["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
@@ -279,22 +279,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						10881,	-- Bluff Runner Windstrider
 					},
 					["coords"] = {
-						{ 46.6, 64.6, ORGRIMMAR },
-						{ 41.4, 54.2, THUNDER_BLUFF },
-						{ 69.2, 49.2, UNDERCITY },
+						{ 46.6, 64.6, MAP.ORGRIMMAR },
+						{ 41.4, 54.2, MAP.THUNDER_BLUFF },
+						{ 69.2, 49.2, MAP.UNDERCITY },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FERALAS },
+					["maps"] = { MAP.FERALAS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
 				q(5527, {	-- A Reliquary of Purity
 					["qg"] = 11801,	-- Rabine Saturna
-					["coord"] = { 51.7, 45.1, MOONGLADE },
+					["coord"] = { 51.7, 45.1, MAP.MOONGLADE },
 					["description"] = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SILITHUS },
+					["maps"] = { MAP.SILITHUS },
 					["lvl"] = 56,
 					["groups"] = {
 						objective(1, {	-- 0/1 Reliquary of Purity
@@ -302,14 +302,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								{ "i", 22201 },	-- Reliquary of Purity
 								{ "o", 179565 },	-- Dusty Reliquary
 							},
-							["coord"] = { 63.2, 55.4, SILITHUS },
+							["coord"] = { 63.2, 55.4, MAP.SILITHUS },
 						}),
 					},
 				}),
 				q(5526, {	-- Shards of the Felvine
 					["sourceQuest"] = 5527,	-- A Reliquary of Purity
 					["qg"] = 11801,	-- Rabine Saturna
-					["coord"] = { 51.7, 45.1, MOONGLADE },
+					["coord"] = { 51.7, 45.1, MAP.MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 56,
 					["groups"] = {
@@ -372,7 +372,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14436 },	-- Mor'zul Bloodbringer
 						{ "i", 18818 },	-- Mor'zul's Instructions
 					},
-					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.6, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARLOCK },
@@ -395,11 +395,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				{	-- Elven Legends
 					["allianceQuestData"] = q(7482, {	-- Elven Legends (A)
 						["qg"] = 14374,	-- Scholar Runethorn
-						["coord"] = { 31.2, 43.9, FERALAS },
+						["coord"] = { 31.2, 43.9, MAP.FERALAS },
 					}),
 					["hordeQuestData"] = q(7481, {	-- Elven Legends (H)
 						["qg"] = 14373,	-- Sage Korolusk
-						["coord"] = { 75.3, 43.8, FERALAS },
+						["coord"] = { 75.3, 43.8, MAP.FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
@@ -515,12 +515,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						10878,	-- Herald Moonstalker
 					},
 					["coords"] = {
-						{ 39.0, 63.6, DARNASSUS },
-						{ 30.5, 67.0, IRONFORGE },
-						{ 54.8, 62.6, STORMWIND_CITY },
+						{ 39.0, 63.6, MAP.DARNASSUS },
+						{ 30.5, 67.0, MAP.IRONFORGE },
+						{ 54.8, 62.6, MAP.STORMWIND_CITY },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FERALAS },
+					["maps"] = { MAP.FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
@@ -670,7 +670,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(7488, {	-- Lethtendris's Web [Alliance]
 					["sourceQuest"] = 7494,	-- Feathermoon Stronghold
 					["qg"] = 7877,	-- Latronicus Moonspear
-					["coord"] = { 30.4, 46.2, FERALAS },
+					["coord"] = { 30.4, 46.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["races"] = ALLIANCE_ONLY,
@@ -687,7 +687,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(7489, {	-- Lethtendris's Web [Horde]
 					["sourceQuest"] = 7492,	-- Camp Mojache
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76.2, 43.8, FERALAS },
+					["coord"] = { 76.2, 43.8, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["races"] = HORDE_ONLY,
@@ -783,7 +783,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(7441, {	-- Pusillin and the Elder Azj'Tordin
 					["qg"] = 14355,	-- Azj'Tordin
-					["coord"] = { 76.7, 37.2, FERALAS },
+					["coord"] = { 76.7, 37.2, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = 54,
@@ -812,14 +812,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27129, {	-- Saving Warpwood [A]
 					["qg"] = 40032,	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27130, {	-- Saving Warpwood [H]
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, FERALAS },
+					["coord"] = { 74.9, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1021,14 +1021,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27131, {	-- The Highborne [A]
 					["qg"] = 40032,	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
+					["coord"] = { 50.7, 17.2, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27132, {	-- The Highborne [H]
 					["qg"] = 7875,	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, FERALAS },
+					["coord"] = { 74.9, 42.4, MAP.FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1329,7 +1329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				},
 			}),
 			DIREMAUL_SUBMAP(239, WARPWOOD_QUARTER, {	-- Warpwood Quarter (East)
-				["coord"] = { 64.83, 30.24, FERALAS },	-- Dire Maul [East]
+				["coord"] = { 64.83, 30.24, MAP.FERALAS },	-- Dire Maul [East]
 				["maps"] = WARPWOOD_QUARTER_MAPS,
 				["groups"] = {
 					n(ZONE_DROPS, {
@@ -1595,7 +1595,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				},
 			}),
 			DIREMAUL_SUBMAP(235, GORDOK_COMMONS, {		-- Gordok Commons (North)
-				["coord"] = { 62.48, 24.48, FERALAS },	-- Dire Maul [North]
+				["coord"] = { 62.48, 24.48, MAP.FERALAS },	-- Dire Maul [North]
 				["maps"] = GORDOK_COMMONS_MAPS,
 				-- #if BEFORE 4.0.3
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
@@ -2109,7 +2109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				},
 			}),
 			DIREMAUL_SUBMAP(236, CAPITAL_GARDENS, {		-- Capital Gardens (West)
-				["coord"] = { 60.32, 30.17, FERALAS },	-- Dire Maul [West]
+				["coord"] = { 60.32, 30.17, MAP.FERALAS },	-- Dire Maul [West]
 				["maps"] = CAPITAL_GARDENS_MAPS,
 				-- #if BEFORE 4.0.3
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key

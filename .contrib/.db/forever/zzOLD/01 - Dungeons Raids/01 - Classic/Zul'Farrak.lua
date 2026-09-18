@@ -11,9 +11,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["mapID"] = ZULFARRAK,
 		["coords"] = {
 			-- #if AFTER CATA
-			{ 39.2, 21.3, TANARIS },
+			{ 39.2, 21.3, MAP.TANARIS },
 			-- #else
-			{ 39.0, 19.0, TANARIS },
+			{ 39.0, 19.0, MAP.TANARIS },
 			-- #endif
 		},
 		["lvl"] = lvlsquish(39, 39, 15),
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2768, {	-- Divino-matic Rod
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
-					["coord"] = { 52.5, 28.5, TANARIS },
+					["coord"] = { 52.5, 28.5, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2770, {	-- Gahz'rilla
 					["sourceQuest"] = 2769,	-- The Brassbolts Brothers
 					["qg"] = 4453,	-- Wizzle Brassbolts
-					["coord"] = { 78.0, 77.0, THOUSAND_NEEDLES },
+					["coord"] = { 78.0, 77.0, MAP.THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -114,14 +114,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(25556, {	-- Into Zul'Farrak
 					["sourceQuest"] = 25032,	-- Secrets in the Oasis
 					["qg"] = 7804,	-- Trenton Lighthammer
-					["coord"] = { 42.5, 24.0, TANARIS },
+					["coord"] = { 42.5, 24.0, MAP.TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(2991, {	-- Nekrum's Medallion
 					["sourceQuest"] = 2990,	-- Thadius Grimshade
 					["qg"] = 8022,	-- Thadius Grimshade
-					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
+					["coord"] = { 67.0, 19.4, MAP.BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -134,7 +134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2865, {	-- Scarab Shells
 					["sourceQuest"] = 2864,	-- Tran'rek
 					["qg"] = 7876,	-- Tran'rek
-					["coord"] = { 51.6, 26.8, TANARIS },
+					["coord"] = { 51.6, 26.8, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -151,8 +151,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							5497,	-- Jennea Cannon <Mage Trainer>
 						},
 						["coords"] = {
-							{ 27.0, 8.2, IRONFORGE },
-							{ 38.6, 79.4, STORMWIND_CITY },
+							{ 27.0, 8.2, MAP.IRONFORGE },
+							{ 38.6, 79.4, MAP.STORMWIND_CITY },
 						},
 					},
 					["hordeQuestData"] = {
@@ -161,8 +161,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							4568,	-- Anastasia Hartwell <Mage Trainer>
 						},
 						["coords"] = {
-							{ 38.4, 86.0, ORGRIMMAR },
-							{ 85.0, 10.2, UNDERCITY },
+							{ 38.4, 86.0, MAP.ORGRIMMAR },
+							{ 85.0, 10.2, MAP.UNDERCITY },
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -172,9 +172,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4787, {	-- The Ancient Egg
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 					["qg"] = 8579,	-- Yeh'kinya
-					["coord"] = { 67.0, 22.4, TANARIS },
+					["coord"] = { 67.0, 22.4, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ancient Egg
@@ -182,13 +182,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i",  12402 },	-- Ancient Egg
 								{ "o", 175889 },	-- Ancient Egg
 							},
-							["coord"] = { 57.5, 86.7, THE_HINTERLANDS },
+							["coord"] = { 57.5, 86.7, MAP.THE_HINTERLANDS },
 						}),
 					},
 				}),
 				q(2769, {	-- The Brassbolts Brothers
 					["qg"] = 6169,	-- Klockmort Spannerspan
-					["coord"] = { 68.2, 46.2, IRONFORGE },
+					["coord"] = { 68.2, 46.2, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -197,7 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3527, {	-- The Prophecy of Mosh'aru
 					["sourceQuest"] = 3520,	-- Screecher Spirits
 					["qg"] = 8579,	-- Yeh'kinya
-					["coord"] = { 67.0, 22.4, TANARIS },
+					["coord"] = { 67.0, 22.4, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -212,7 +212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2936, {	-- The Spider God
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 56.0, 74.6, DUROTAR },
+					["coord"] = { 56.0, 74.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2846, {	-- Tiara of the Deep
 					["sourceQuest"] = 2861,	-- Tabetha's Task
 					["qg"] = 6546,	-- Tabetha
-					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["coord"] = { 46.0, 57.0, MAP.DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3042, {	-- Troll Temper
 					["qg"] = 7804,	-- Trenton Lighthammer <The Mithril Order>
-					["coord"] = { 51.4, 28.8, TANARIS },
+					["coord"] = { 51.4, 28.8, MAP.TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -275,14 +275,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE 3.0.8
 				i(9240, {	-- Mallet of Zul'Farrak
 					["description"] = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
-					["coord"] = { 59.0, 79.6, THE_HINTERLANDS },
+					["coord"] = { 59.0, 79.6, MAP.THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 9241, 1 } },	-- Sacred Mallet
 					["cr"] = 7995,	-- Vile Priestess Hexx
 				}),
 				i(9241, {	-- Sacred Mallet
 					["description"] = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
-					["coord"] = { 49.2, 68.6, THE_HINTERLANDS },
+					["coord"] = { 49.2, 68.6, MAP.THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7996,	-- Qiaga the Keeper
 				}),

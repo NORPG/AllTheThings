@@ -192,26 +192,26 @@ local barleybrewclear = function(t)		-- Barleybrew Clear - Alliance
 	t.provider = { "o", 186183 };	-- Barleybrew Festive Keg
 	t.coords = {
 		-- #if AFTER CATA
-		{ 55.8, 38.2, DUN_MOROGH },
+		{ 55.8, 38.2, MAP.DUN_MOROGH },
 		-- #else
-		{ 48.8, 39.8, DUN_MOROGH },
+		{ 48.8, 39.8, MAP.DUN_MOROGH },
 		-- #endif
 	};
 	return t;
 end
 local thunderfortyfive = function(t)	-- Thunder 45 - Alliance
 	t.provider = { "o", 186184 };	-- Thunderbrew Festive Keg
-	t.coord = { 56.6, 37.2, DUN_MOROGH };
+	t.coord = { 56.6, 37.2, MAP.DUN_MOROGH };
 	return t;
 end
 local gordokgrog = function(t)			-- Gordok Grog - Alliance/Horde
 	t.provider = { "o", 186185 };	-- Gordok Festive Keg
 	t.coords = {
-		{ 55.6, 36.8, DUN_MOROGH },
+		{ 55.6, 36.8, MAP.DUN_MOROGH },
 		-- #if AFTER CATA
-		{ 41.0, 17.0, DUROTAR },
+		{ 41.0, 17.0, MAP.DUROTAR },
 		-- #else
-		{ 44.2, 16.6, DUROTAR },
+		{ 44.2, 16.6, MAP.DUROTAR },
 		-- #endif
 	};
 	return t;
@@ -220,9 +220,9 @@ local smallstepbrew = function(t)		-- Small Step Brew - Horde
 	t.provider = { "o", 186186 };	-- Drohn's Distillery Festive Keg
 	t.coords = {
 		-- #if AFTER CATA
-		{ 40.8, 18.0, DUROTAR },
+		{ 40.8, 18.0, MAP.DUROTAR },
 		-- #else
-		{ 44.4, 17.6, DUROTAR },
+		{ 44.4, 17.6, MAP.DUROTAR },
 		-- #endif
 	};
 	return t;
@@ -231,9 +231,9 @@ local jungleriverwater = function(t)	-- Jungle River Water - Horde
 	t.provider = { "o", 186187 };	-- T'chali's Voodoo Brew Festive Keg
 	t.coords = {
 		-- #if AFTER CATA
-		{ 40.2, 17.4, DUROTAR },
+		{ 40.2, 17.4, MAP.DUROTAR },
 		-- #else
-		{ 43.6, 17.6, DUROTAR },
+		{ 43.6, 17.6, MAP.DUROTAR },
 		-- #endif
 	};
 	return t;
@@ -286,7 +286,7 @@ local fillstein = function(t)
 end
 
 root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
-	["maps"] = { DUN_MOROGH, DUROTAR },
+	["maps"] = { MAP.DUN_MOROGH, MAP.DUROTAR },
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
@@ -652,7 +652,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}, {
 					q(90870, {	-- Gathering the Grub (A)
 						["qg"] = 242172,	-- Gritta Brewstone
-						["coord"] = { 56.0, 37.4, DUN_MOROGH },
+						["coord"] = { 56.0, 37.4, MAP.DUN_MOROGH },
 						["timeline"] = { ADDED_11_2_0 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -661,7 +661,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 					q(91067, {	-- Gathering the Grub (H)
 						["qg"] = 245967,	-- Gorgrum Kegfist
-						["coord"] = { 40.9, 17.5, DUROTAR },
+						["coord"] = { 40.9, 17.5, MAP.DUROTAR },
 						["timeline"] = { ADDED_11_2_0 },
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -671,7 +671,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					q(90879, {	-- Brewmaster's Kitchen (A)
 						["sourceQuest"] = 90870,	-- Gathering the Grub (A)
 						["qg"] = 242172,	-- Gritta Brewstone
-						["coord"] = { 56.0, 37.4, DUN_MOROGH },
+						["coord"] = { 56.0, 37.4, MAP.DUN_MOROGH },
 						["timeline"] = { ADDED_11_2_0 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -686,7 +686,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					q(91066, {	-- Brewmaster's Kitchen (H)
 						["sourceQuest"] = 91067,	-- Gathering the Grub (H)
 						["qg"] = 245967,	-- Gorgrum Kegfist
-						["coord"] = { 40.9, 17.5, DUROTAR },
+						["coord"] = { 40.9, 17.5, MAP.DUROTAR },
 						["timeline"] = { ADDED_11_2_0 },
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -701,14 +701,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					q(90880, {	-- Serving with Style (A)
 						["sourceQuest"] = 90879,	-- Brewmaster's Kitchen (A)
 						["qg"] = 242172,	-- Gritta Brewstone
-						["coord"] = { 56.0, 37.4, DUN_MOROGH },
+						["coord"] = { 56.0, 37.4, MAP.DUN_MOROGH },
 						["timeline"] = { ADDED_11_2_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(91068, {	-- Serving with Style (H)
 						["sourceQuest"] = 91066,	-- Brewmaster's Kitchen (H)
 						["qg"] = 245967,	-- Gorgrum Kegfist
-						["coord"] = { 40.9, 17.5, DUROTAR },
+						["coord"] = { 40.9, 17.5, MAP.DUROTAR },
 						["timeline"] = { ADDED_11_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1251,9 +1251,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24468,	-- Pol Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
+						{ 53.6, 38.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.4, 40.3, DUN_MOROGH },
+						{ 46.4, 40.3, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_1 },
@@ -1271,9 +1271,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24497,	-- Ram Master Ray
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
+						{ 42.6, 17.6, MAP.DUROTAR },
 						-- #else
-						{ 46.3, 14.8, DUROTAR },
+						{ 46.3, 14.8, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_1 },
@@ -1294,9 +1294,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24468,	-- Pol Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
+						{ 53.6, 38.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.4, 40.3, DUN_MOROGH },
+						{ 46.4, 40.3, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -1317,9 +1317,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24497,	-- Ram Master Ray
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
+						{ 42.6, 17.6, MAP.DUROTAR },
 						-- #else
-						{ 46.3, 14.8, DUROTAR },
+						{ 46.3, 14.8, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -1343,7 +1343,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(87289, {	-- Barreling Down (A)
 					["qg"] = 237987,	-- Brelnor Battlebrew
-					["coord"] = { 53.8, 39.1, DUN_MOROGH },
+					["coord"] = { 53.8, 39.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1351,7 +1351,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(87341, {	-- Barreling Down (H)
 					["qg"] = 238221,	-- Brorg Bitterspite
-					["coord"] = { 42.5, 18.1, DUROTAR },
+					["coord"] = { 42.5, 18.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1369,13 +1369,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 23627,	-- Becan Barleybrew
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.0, 38.0, DUN_MOROGH },
+						{ 56.0, 38.0, MAP.DUN_MOROGH },
 						-- #else
-						{ 49.0, 39.8, DUN_MOROGH },
+						{ 49.0, 39.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_11_2_0 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1393,13 +1393,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24498,	-- Cort Gorestein
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 40.5, 18.3, DUROTAR },
+						{ 40.5, 18.3, MAP.DUROTAR },
 						-- #else
-						{ 44.4, 17.9, DUROTAR },
+						{ 44.4, 17.9, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_11_2_0 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1417,13 +1417,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 23628,	-- Daran Thunderbrew
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.6, 36.8, DUN_MOROGH },
+						{ 56.6, 36.8, MAP.DUN_MOROGH },
 						-- #else
-						{ 49.5, 38.7, DUN_MOROGH },
+						{ 49.5, 38.7, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_11_2_0 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1441,13 +1441,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24498,	-- Cort Gorestein
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 40.5, 18.3, DUROTAR },
+						{ 40.5, 18.3, MAP.DUROTAR },
 						-- #else
-						{ 44.4, 17.9, DUROTAR },
+						{ 44.4, 17.9, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_11_2_0 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
@@ -1474,9 +1474,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["timeline"] = { ADDED_2_2_2 },
 					["maps"] = {
-						STORMWIND_CITY,
-						IRONFORGE,
-						DARNASSUS,
+						MAP.STORMWIND_CITY,
+						MAP.IRONFORGE,
+						MAP.DARNASSUS,
 						THE_EXODAR,
 						-- #if AFTER MOP
 						ISLE_OF_THUNDER,
@@ -1524,13 +1524,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["timeline"] = { ADDED_2_2_2 },
 					["maps"] = {
-						DUROTAR,
+						MAP.DUROTAR,
 						NORTHERN_BARRENS,
-						TANARIS,
-						WINTERSPRING,
-						ORGRIMMAR,
-						THUNDER_BLUFF,
-						UNDERCITY,
+						MAP.TANARIS,
+						MAP.WINTERSPRING,
+						MAP.ORGRIMMAR,
+						MAP.THUNDER_BLUFF,
+						MAP.UNDERCITY,
 						EVERSONG_WOODS,
 						NETHERSTORM,
 						SILVERMOON_CITY,
@@ -1561,7 +1561,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(56764, {	-- Brewfest Chowdown (A)
 					["qg"] = 153574,	-- Britta Steinheart
-					["coord"] = { 54.8, 38.6, DUN_MOROGH },
+					["coord"] = { 54.8, 38.6, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
@@ -1574,7 +1574,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(56748, {	-- Brewfest Chowdown (H)
 					["qg"] = 155133,	-- Etga
-					["coord"] = { 42.3, 18.4, DUROTAR },
+					["coord"] = { 42.3, 18.4, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
@@ -1587,14 +1587,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(76577, {	-- Brewfest in Valdrakken (A)
 					["qg"] = 24710,	-- Ipfelkofer Ironkeg
-					["coord"] = { 55.1, 38.1, DUN_MOROGH },
+					["coord"] = { 55.1, 38.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_10_1_7 },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 				}),
 				q(76579, {	-- Brewfest in Valdrakken (H)
 					["qg"] = 155194,	-- La'gar Brewshout
-					["coord"] = { 41.6, 18.4, DUROTAR },
+					["coord"] = { 41.6, 18.4, MAP.DUROTAR },
 					["timeline"] = { ADDED_10_1_7 },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
@@ -1619,7 +1619,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						ADDED_2_2_2, REMOVED_3_0_2,	-- Originally removed 2.4.3, actually available in classic!
 						-- #endif
 					},
-					["maps"] = { DUN_MOROGH },
+					["maps"] = { MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(40, 40, 1),
 				}),
@@ -1632,7 +1632,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						ADDED_2_2_2, REMOVED_3_0_2	-- Originally removed 2.4.3, actually available in classic!
 						-- #endif
 					},
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(40, 40, 1),
 				}),
@@ -1641,9 +1641,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 23558,	-- Neill Ramstein
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
+						{ 53.6, 38.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.6, 40.3, DUN_MOROGH },
+						{ 46.6, 40.3, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_2_0 },
@@ -1660,9 +1660,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24497,	-- Ram Master Ray
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
+						{ 42.6, 17.6, MAP.DUROTAR },
 						-- #else
-						{ 46.3, 14.8, DUROTAR },
+						{ 46.3, 14.8, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_2_0 },
@@ -1687,7 +1687,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
-					["maps"] = { DUN_MOROGH },
+					["maps"] = { MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					-- #if ANYCLASSIC
@@ -1708,7 +1708,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["altQuests"] = { 12278 },	-- Brew of the Month Club (A)
 					["provider"] = { "i", 37736 },	-- "Brew of the Month" Club Membership Form (original)
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
-					["maps"] = { DUN_MOROGH },
+					["maps"] = { MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,	-- original quest was reset yearly
 					["u"] = REMOVED_FROM_GAME,	-- this version isn't available, but don't know when it was 'removed'
@@ -1727,7 +1727,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					-- #if ANYCLASSIC
@@ -1748,7 +1748,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["altQuests"] = { 12306 },	-- Brew of the Month Club (H)
 					["provider"] = { "i", 37737 },	-- "Brew of the Month" Club Membership Form (original)
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,	-- original quest was reset yearly
 					["u"] = REMOVED_FROM_GAME,	-- this version isn't available, but don't know when it was 'removed'
@@ -1763,7 +1763,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(87347, {	-- Bubbling Brews (A)
 					["qg"] = 237987,	-- Brelnor Battlebrew
-					["coord"] = { 53.8, 39.1, DUN_MOROGH },
+					["coord"] = { 53.8, 39.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1771,7 +1771,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(87349, {	-- Bubbling Brews (H)
 					["qg"] = 238221,	-- Brorg Bitterspite
-					["coord"] = { 42.5, 18.1, DUROTAR },
+					["coord"] = { 42.5, 18.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1781,9 +1781,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 23486,	-- Goldark Snipehunter
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.2, 37.8, DUN_MOROGH },
+						{ 55.2, 37.8, MAP.DUN_MOROGH },
 						-- #else
-						{ 48.0, 39.5, DUN_MOROGH },
+						{ 48.0, 39.5, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = {
@@ -1823,9 +1823,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.2, 18.4, DUROTAR },
+						{ 41.2, 18.4, MAP.DUROTAR },
 						-- #else
-						{ 45.0, 17.4, DUROTAR },
+						{ 45.0, 17.4, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = {
@@ -1864,9 +1864,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 27215,	-- Boxey Boltspinner
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.7, 38.0, DUN_MOROGH },
+						{ 54.7, 38.0, MAP.DUN_MOROGH },
 						-- #else
-						{ 47.5, 39.8, DUN_MOROGH },
+						{ 47.5, 39.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -1892,9 +1892,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 27216,	-- Bizzle Quicklift
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.4, 17.6, DUROTAR },
+						{ 41.4, 17.6, MAP.DUROTAR },
 						-- #else
-						{ 45.3, 17.3, DUROTAR },
+						{ 45.3, 17.3, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -1919,7 +1919,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						56372,	-- Hozen Totem (A)
 					},
 					["provider"] = { "o", 327669 },	-- Contained Alemental
-					["coord"] = { 55.5, 37.7, DUN_MOROGH },
+					["coord"] = { 55.5, 37.7, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0, REMOVED_11_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1931,7 +1931,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						56715,	-- Hozen Totem (H)
 					},
 					["provider"] = { "o", 330168 },	-- Contained Alemental
-					["coord"] = { 41.0, 17.8, DUROTAR },
+					["coord"] = { 41.0, 17.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0, REMOVED_11_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1943,9 +1943,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24468,	-- Pol Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
+						{ 53.6, 38.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.4, 40.3, DUN_MOROGH },
+						{ 46.4, 40.3, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
@@ -1964,9 +1964,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24497,	-- Ram Master Ray
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
+						{ 42.6, 17.6, MAP.DUROTAR },
 						-- #else
-						{ 46.3, 14.8, DUROTAR },
+						{ 46.3, 14.8, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
@@ -2013,7 +2013,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						56372,	-- Hozen Totem (A)
 					},
 					["provider"] = { "o", 328343 },	-- Direbrew Cog
-					["coord"] = { 55.5, 37.7, DUN_MOROGH },
+					["coord"] = { 55.5, 37.7, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0, REMOVED_11_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2025,7 +2025,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						56715,	-- Hozen Totem (H)
 					},
 					["provider"] = { "o", 330169 },	-- Direbrew Cog
-					["coord"] = { 41.0, 17.8, DUROTAR },
+					["coord"] = { 41.0, 17.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0, REMOVED_11_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -2037,7 +2037,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						56372,	-- Hozen Totem (A)
 					},
 					["provider"] = { "o", 328413 },	-- Hozen Totem
-					["coord"] = { 55.5, 37.7, DUN_MOROGH },
+					["coord"] = { 55.5, 37.7, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0, REMOVED_11_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2049,7 +2049,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						56715,	-- Hozen Totem (H)
 					},
 					["provider"] = { "o", 330170 },	-- Hozen Totem
-					["coord"] = { 41.0, 17.8, DUROTAR },
+					["coord"] = { 41.0, 17.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0, REMOVED_11_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -2070,9 +2070,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 23558,	-- Neill Ramstein
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
+						{ 53.6, 38.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.6, 40.3, DUN_MOROGH },
+						{ 46.6, 40.3, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2088,9 +2088,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24497,	-- Ram Master Ray
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
+						{ 42.6, 17.6, MAP.DUROTAR },
 						-- #else
-						{ 46.3, 14.8, DUROTAR },
+						{ 46.3, 14.8, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2102,9 +2102,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 23486,	-- Goldark Snipehunter
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.2, 37.8, DUN_MOROGH },
+						{ 55.2, 37.8, MAP.DUN_MOROGH },
 						-- #else
-						{ 48.0, 39.5, DUN_MOROGH },
+						{ 48.0, 39.5, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = {
@@ -2114,7 +2114,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						ADDED_2_2_2,
 						-- #endif
 					},
-					["maps"] = { AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, DARNASSUS, TELDRASSIL, SHATTRATH_CITY },
+					["maps"] = { AZUREMYST_ISLE, THE_EXODAR, MAP.ELWYNN_FOREST, MAP.DARNASSUS, MAP.TELDRASSIL, SHATTRATH_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -2144,9 +2144,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.2, 18.4, DUROTAR },
+						{ 41.2, 18.4, MAP.DUROTAR },
 						-- #else
-						{ 45.0, 17.4, DUROTAR },
+						{ 45.0, 17.4, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = {
@@ -2156,7 +2156,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						ADDED_2_2_2,
 						-- #endif
 					},
-					["maps"] = { EVERSONG_WOODS, MULGORE, TIRISFAL_GLADES },
+					["maps"] = { EVERSONG_WOODS, MAP.MULGORE, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -2189,8 +2189,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						28329,	-- Slurpo Fizzykeg
 					},
 					["coords"] = {
-						{ 46.2, 52.8, DUN_MOROGH },
-						{ 47.9, 26.9, DUROTAR },
+						{ 46.2, 52.8, MAP.DUN_MOROGH },
+						{ 47.9, 26.9, MAP.DUROTAR },
 					},
 					["timeline"] = { ADDED_2_4_3, REMOVED_3_3_3 },
 					["isBreadcrumb"] = true,
@@ -2200,9 +2200,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24468,	-- Pol Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
+						{ 53.6, 38.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.4, 40.3, DUN_MOROGH },
+						{ 46.4, 40.3, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
@@ -2218,9 +2218,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24497,	-- Ram Master Ray
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
+						{ 42.6, 17.6, MAP.DUROTAR },
 						-- #else
-						{ 46.3, 14.8, DUROTAR },
+						{ 46.3, 14.8, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
@@ -2235,8 +2235,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				q(11454, {	-- Seek the Saboteurs
 					["provider"] = { "o", 186881 },	-- Dark Iron Sabotage Plans
 					["coords"] = {
-						{ 44.3, 17.5, DUROTAR },
-						{ 48.1, 39.1, DUN_MOROGH },
+						{ 44.3, 17.5, MAP.DUROTAR },
+						{ 48.1, 39.1, MAP.DUN_MOROGH },
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
@@ -2273,9 +2273,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 23558,	-- Neill Ramstein
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
+						{ 53.6, 38.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.6, 40.3, DUN_MOROGH },
+						{ 46.6, 40.3, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2289,9 +2289,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24497,	-- Ram Master Ray
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
+						{ 42.6, 17.6, MAP.DUROTAR },
 						-- #else
-						{ 46.3, 14.8, DUROTAR },
+						{ 46.3, 14.8, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2304,9 +2304,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["provider"] = { "o", 189989 },	-- Dark Iron Mole Machine Wreckage
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.0, 37.1, DUN_MOROGH },
+						{ 56.0, 37.1, MAP.DUN_MOROGH },
 						-- #else
-						{ 47.5, 39.8, DUN_MOROGH },
+						{ 47.5, 39.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_8_2_0 },
@@ -2322,9 +2322,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["provider"] = { "o", 189990 },	-- Dark Iron Mole Machine Wreckage
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 40.7, 17.4, DUROTAR },
+						{ 40.7, 17.4, MAP.DUROTAR },
 						-- #else
-						{ 40.7, 17.4, DUROTAR },	-- TODO: Get accurate coordinates for TBC
+						{ 40.7, 17.4, MAP.DUROTAR },	-- TODO: Get accurate coordinates for TBC
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_8_2_0 },
@@ -2344,9 +2344,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qg"] = 24710,	-- Ipfelkofer Ironkeg
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.1, 38.1, DUN_MOROGH },
+						{ 55.1, 38.1, MAP.DUN_MOROGH },
 						-- #else
-						{ 48.0, 39.8, DUN_MOROGH },
+						{ 48.0, 39.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2378,9 +2378,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.6, 18.4, DUROTAR },
+						{ 41.6, 18.4, MAP.DUROTAR },
 						-- #else
-						{ 45.6, 17.2, DUROTAR },
+						{ 45.6, 17.2, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2467,9 +2467,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(23604, {	-- Agnes Farwithers <Cheese Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.0, 18.3, DUROTAR },
+						{ 41.0, 18.3, MAP.DUROTAR },
 						-- #else
-						{ 43.9, 17.9, DUROTAR },
+						{ 43.9, 17.9, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2481,7 +2481,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(23521, {	-- Anne Summers <Cheese Vendor>
-					["coord"] = { 56.4, 37.6, DUN_MOROGH },
+					["coord"] = { 56.4, 37.6, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2491,7 +2491,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(152829, {	-- Arcti <Bartender>
-					["coord"] = { 55.4, 38.3, DUN_MOROGH },
+					["coord"] = { 55.4, 38.3, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2503,9 +2503,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(23522, {	-- Arlen Lochlan <Bread Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.6, 38.0, DUN_MOROGH },
+						{ 55.6, 38.0, MAP.DUN_MOROGH },
 						-- #else
-						{ 48.5, 40.0, DUN_MOROGH },
+						{ 48.5, 40.0, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2519,9 +2519,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(23482, {	-- Barleybrew Apprentice <Barleybrew Brew Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.0, 38.0, DUN_MOROGH },
+						{ 56.0, 38.0, MAP.DUN_MOROGH },
 						-- #else
-						{ 48.9, 39.8, DUN_MOROGH },
+						{ 48.9, 39.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2547,9 +2547,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(23710, {	-- Belbi Quikswitch <Token Redeemer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.2, 37.6, DUN_MOROGH },
+						{ 56.2, 37.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 49.3, 39.6, DUN_MOROGH },
+						{ 49.3, 39.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2765,7 +2765,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["sym"] = {{"sub","common_vendor",23710}},	-- Belbi Quikswitch <Token Redeemer> (Ally Version)
 				}),
 				n(152871, {	-- Brewer Gerrat <Brew Vendor>
-					["coord"] = { 56.5, 37.5, DUN_MOROGH },
+					["coord"] = { 56.5, 37.5, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2775,9 +2775,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(23605, {	-- Bron <Sausage Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.6, 17.8, DUROTAR },
+						{ 41.6, 17.8, MAP.DUROTAR },
 						-- #else
-						{ 44.4, 16.6, DUROTAR },
+						{ 44.4, 16.6, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -2813,9 +2813,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(24495, {	-- Blix Fixwidget <Token Redeemer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.0, 17.0, DUROTAR },
+						{ 41.0, 17.0, MAP.DUROTAR },
 						-- #else
-						{ 44.1, 18.0, DUROTAR },
+						{ 44.1, 18.0, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -3027,7 +3027,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(240493, {	-- Brina Bearclaw <Creature Collector>
-					["coord"] = { 56.2, 36.5, DUN_MOROGH },
+					["coord"] = { 56.2, 36.5, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3062,7 +3062,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(153574, {	-- Britta Steinheart <Chowdown Organizer>
-					["coord"] = { 54.8, 38.6, DUN_MOROGH },
+					["coord"] = { 54.8, 38.6, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3091,9 +3091,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(24501, {	-- Drohn's Distillery Apprentice <Drohn's Distillery Brew Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 40.4, 18.1, DUROTAR },
+						{ 40.4, 18.1, MAP.DUROTAR },
 						-- #else
-						{ 44.3, 18.0, DUROTAR },
+						{ 44.3, 18.0, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -3117,7 +3117,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(155133, {	-- Etga <Chowdown Organizer>
-					["coord"] = { 42.2, 18.5, DUROTAR },
+					["coord"] = { 42.2, 18.5, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3130,11 +3130,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(23511, {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.6, 36.6, DUN_MOROGH },
-						{ 40.9, 16.8, DUROTAR },
+						{ 55.6, 36.6, MAP.DUN_MOROGH },
+						{ 40.9, 16.8, MAP.DUROTAR },
 						-- #else
-						{ 48.4, 38.4, DUN_MOROGH },
-						{ 44.0, 16.6, DUROTAR },
+						{ 48.4, 38.4, MAP.DUN_MOROGH },
+						{ 44.0, 16.6, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -3157,7 +3157,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(241305, {	-- Grimlash Thornclaw <Creature Collector>
-					["coord"] = { 40.4, 17.1, DUROTAR },
+					["coord"] = { 40.4, 17.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3192,7 +3192,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(152948, {	-- Ha'ka Openview <Brew Vendor>
-					["coord"] = { 40.7, 16.8, DUROTAR },
+					["coord"] = { 40.7, 16.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3201,7 +3201,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(240486, {	-- Jixy Wobblebolt <Toy Vendor>
-					["coord"] = { 56.3, 36.7, DUN_MOROGH },
+					["coord"] = { 56.3, 36.7, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3241,7 +3241,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(153008, {	-- Kaara <Warpath Ales Vendor>
-					["coord"] = { 40.2, 17.5, DUROTAR },
+					["coord"] = { 40.2, 17.5, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3254,9 +3254,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(23481, {	-- Keiran Donoghue <Sausage Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.33, 37.17, DUN_MOROGH },
+						{ 55.33, 37.17, MAP.DUN_MOROGH },
 						-- #else
-						{ 48.9, 38.1, DUN_MOROGH },
+						{ 48.9, 38.1, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -3295,9 +3295,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
+						{ 53.6, 38.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.4, 40.3, DUN_MOROGH },
+						{ 46.4, 40.3, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3313,7 +3313,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(241300, {	-- Spritz Tinkerton <Toy Vendor>
-					["coord"] = { 40.3, 17.0, DUROTAR },
+					["coord"] = { 40.3, 17.0, MAP.DUROTAR },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3353,7 +3353,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(241196, {	-- Sylvessa Luminweave <Ensemble Vendor>
-					["coord"] = { 40.2, 17.1, DUROTAR },
+					["coord"] = { 40.2, 17.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3491,7 +3491,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(23533, {	-- T'chali's Voodoo Brewery Apprentice <Voodoo Brew Vendor>
-					["coord"] = { 40.3, 16.9, DUROTAR },
+					["coord"] = { 40.3, 16.9, MAP.DUROTAR },
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3513,7 +3513,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(240534, {	-- Thalira Shadowlace <Ensemble Vendor>
-					["coord"] = { 56.3, 36.4, DUN_MOROGH },
+					["coord"] = { 56.3, 36.4, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_11_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3651,7 +3651,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(23510, {	-- Thunderbrew Apprentice <Thunderbrew Brew Vendor>
-					["coord"] = { 56.6, 37.0, DUN_MOROGH },
+					["coord"] = { 56.6, 37.0, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3675,9 +3675,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				n(23603, {	-- Uta Roughdough <Bread Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.6, 17.8, DUROTAR },
+						{ 41.6, 17.8, MAP.DUROTAR },
 						-- #else
-						{ 44.8, 17.5, DUROTAR },
+						{ 44.8, 17.5, MAP.DUROTAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
@@ -3689,7 +3689,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(152775, {	-- Vinter Mollyleux <Nightwine Vendor>
-					["coord"] = { 40.3, 17.9, DUROTAR },
+					["coord"] = { 40.3, 17.9, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3699,7 +3699,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(152849, {	-- Vinter Tysiel <Voidwine Vendor>
-					["coord"] = { 55.1, 37.5, DUN_MOROGH },
+					["coord"] = { 55.1, 37.5, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3707,7 +3707,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(152941, {	-- Verra Fireblood <Brew Vendor>
-					["coord"] = { 56.2, 37.8, DUN_MOROGH },
+					["coord"] = { 56.2, 37.8, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3717,7 +3717,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(152780, {	-- Zenda <Spirit Vendor>
-					["coord"] = { 40.7, 16.8, DUROTAR },
+					["coord"] = { 40.7, 16.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

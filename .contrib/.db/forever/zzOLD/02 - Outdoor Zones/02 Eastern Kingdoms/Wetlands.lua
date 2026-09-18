@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(WETLANDS, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.WETLANDS, {
 		["lore"] =
 		-- #if AFTER CATA
 		"Wetlands is a large swamp and primarily-Alliance area that is partially flooded after the Shattering. Quests involve trying to rebuild the flooded Menethil Harbor, assist the night elves in Greenwarden's Grove, and discover dwarven dig sites.",
@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 				["groups"] = {
 					pet(509, {	-- Tiny Bog Beast (PET!)
-						["coord"] = { 54.6, 33.0, WETLANDS },
+						["coord"] = { 54.6, 33.0, MAP.WETLANDS },
 					}),
 				},
 			}),
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5074),	-- Slabchisel's Survey
 				-- #endif
 				exploration(1024),	-- Sundown Marsh
-				visit_exploration(5304,{coord={26.3,25.9,WETLANDS}}),	-- Swiftgear Station
+				visit_exploration(5304,{coord={26.3,25.9,MAP.WETLANDS}}),	-- Swiftgear Station
 				-- #if BEFORE CATA
 				exploration(1025),	-- The Green Belt
 				-- #endif
@@ -103,13 +103,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(553, {	-- Dun Modr, Wetlands
 					["cr"] = 41325,	-- Caleb Baelor <Gryphon Master>
-					["coord"] = { 50.0, 18.4, WETLANDS },
+					["coord"] = { 50.0, 18.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(552, {	-- Greenwarden's Grove, Wetlands
 					["cr"] = 41322,	-- Halana <Hippogryph Master>
-					["coord"] = { 56.4, 41.8, WETLANDS },
+					["coord"] = { 56.4, 41.8, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -117,22 +117,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1571,	-- Shellei Brondir <Gryphon Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 9.4, 59.6, WETLANDS },
+						{ 9.4, 59.6, MAP.WETLANDS },
 						-- #else
-						{ 9.6, 59.6, WETLANDS },
+						{ 9.6, 59.6, MAP.WETLANDS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(554, {	-- Slabchisel's Survey, Wetlands
 					["cr"] = 41321,	-- Elgin Baelor <Gryphon Master>
-					["coord"] = { 56.8, 71.2, WETLANDS },
+					["coord"] = { 56.8, 71.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(551, {	-- Whelgar's Retreat, Wetlands
 					["cr"] = 41323,	-- Damon Baelor <Gryphon Master>
-					["coord"] = { 38.6, 39.0, WETLANDS },
+					["coord"] = { 38.6, 39.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -141,9 +141,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			lockpicking({
 				o(179488, {	-- Battered Footlocker
 					["coords"] = {
-						{ 13.7, 41.6, WETLANDS },
-						{ 16.5, 30.8, WETLANDS },
-						{ 18.4, 39.5, WETLANDS },
+						{ 13.7, 41.6, MAP.WETLANDS },
+						{ 16.5, 30.8, MAP.WETLANDS },
+						{ 18.4, 39.5, MAP.WETLANDS },
 					},
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 110,
@@ -164,12 +164,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(SKINNING, {
 					-- #if AFTER 4.0.3
 					i(7286, {	-- Black Whelp Scale
-						["coord"] = { 62.1, 47.5, WETLANDS },	-- Greenwarden's Grove, southeast of.
+						["coord"] = { 62.1, 47.5, MAP.WETLANDS },	-- Greenwarden's Grove, southeast of.
 						["cr"] = 42042,	-- Ebon Whelp
 					}),
 					-- #endif
 					i(7287, {	-- Red Whelp Scale
-						["coord"] = { 62.1, 47.5, WETLANDS },	-- Greenwarden's Grove, southeast of it's future location.
+						["coord"] = { 62.1, 47.5, MAP.WETLANDS },	-- Greenwarden's Grove, southeast of it's future location.
 						["timeline"] = { REMOVED_3_1_0 },
 						["crs"] = {
 							1069,	-- Crimson Whelp
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25726, {	-- A Dumpy Job
 					["sourceQuest"] = 25722,	-- Sedimentary, My Dear
 					["qg"] = 41129,	-- Surveyor Thurdan
-					["coord"] = { 57.4, 71.4, WETLANDS },
+					["coord"] = { 57.4, 71.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(304, {	-- A Grim Task
 					["qg"] = 1071,	-- Longbraid the Grim
-					["coord"] = { 49.8, 18.3, WETLANDS },
+					["coord"] = { 49.8, 18.3, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -203,9 +203,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 3639 },	-- Ear of Balgaras
 							["cr"] = 1364,	-- Balgaras the Foul
 							["coords"] = {
-								{ 47.4, 15.0, WETLANDS },
-								{ 46.6, 18.6, WETLANDS },
-								{ 61.8, 31.0, WETLANDS },
+								{ 47.4, 15.0, MAP.WETLANDS },
+								{ 46.6, 18.6, MAP.WETLANDS },
+								{ 61.8, 31.0, MAP.WETLANDS },
 							},
 						}),
 						i(2916, {	-- Gold Lion Shield
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25820, {	-- A Mother's Worries
 					["qg"] = 1484,	-- Derina Rumdnul
-					["coord"] = { 11.8, 57.9, WETLANDS },
+					["coord"] = { 11.8, 57.9, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26327, {	-- Anvilmar the Hero
 					["qg"] = 1071,	-- Longbraid the Grim
-					["coord"] = { 49.8, 18.2, WETLANDS },
+					["coord"] = { 49.8, 18.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for The Twilight's Hammer Revealed
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(471, {	-- Apprentice's Duties
 					["sourceQuest"] = 484,	-- Young Crocolisk Skins
 					["qg"] = 2094,	-- James Halloran
-					["coord"] = { 8.5, 55.7, WETLANDS },
+					["coord"] = { 8.5, 55.7, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25780, {	-- Assault on Menethil Keep
 					["sourceQuest"] = 25777,	-- Onwards to Menethil
 					["qg"] = 2104,	-- Captain Stoutfist
-					["coord"] = { 10.5, 55.7, WETLANDS },
+					["coord"] = { 10.5, 55.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(275, {	-- Blisters on The Land
 					["sourceQuest"] = 277,	-- Fire Taboo
 					["qg"] = 1244,	-- Rethiel the Greenwarden
-					["coord"] = { 56.3, 40.4, WETLANDS },
+					["coord"] = { 56.3, 40.4, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(279, {	-- Claws from the Deep
 					["qg"] = 1242,	-- Karl Boran
-					["coord"] = { 8.3, 58.5, WETLANDS },
+					["coord"] = { 8.3, 58.5, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- 0/1 Gobbler's Head
 							["provider"] = { "i", 3618 },	-- Gobbler's Head
-							["coord"] = { 17.4, 40.4, WETLANDS },
+							["coord"] = { 17.4, 40.4, MAP.WETLANDS },
 							["cr"] = 1259,	-- Gobbler
 						}),
 					},
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25801, {	-- Claws from the Deep
 					["sourceQuest"] = 25800,	-- When Life Gives You Crabs
 					["qg"] = 41297,	-- Karl Boran
-					["coord"] = { 11.0, 57.7, WETLANDS },
+					["coord"] = { 11.0, 57.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25211, {	-- Cleaning Hovel
 					["qg"] = 41074,	-- Mountaineer Grugelm
-					["coord"] = { 49.9, 79.2, WETLANDS },
+					["coord"] = { 49.9, 79.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -382,9 +382,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(293, {	-- Cleansing the Eye
 					["sourceQuest"] = 292,	-- The Eye of Paleth
 					["qg"] = 1217,	-- Glorin Steelbrow
-					["coord"] = { 10.6, 60.5, WETLANDS },
+					["coord"] = { 10.6, 60.5, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -395,7 +395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25856, {	-- Crocolisk Hides
 					["qg"] = 41433,	-- James Halloran
-					["coord"] = { 26.7, 26.7, WETLANDS },
+					["coord"] = { 26.7, 26.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -408,7 +408,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25816, {	-- Cursed to Roam
 					["sourceQuest"] = 25815,	-- The Third Fleet
 					["qg"] = 1239,	-- First Mate Fitzsimmons
-					["coord"] = { 10.9, 59.7, WETLANDS },
+					["coord"] = { 10.9, 59.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -417,7 +417,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2093 },	-- Einar Stonegrip
 						{ "i", 3347 },	-- Bundle of Crocolisk Skins
 					},
-					["coord"] = { 49.8, 39.4, WETLANDS },
+					["coord"] = { 49.8, 39.4, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25866, {	-- Dark Iron Trappers
 					["sourceQuest"] = 25865,	-- The Mosshide Job
 					["qg"] = 41415,	-- Shilah Slabchisel
-					["coord"] = { 26.9, 26.0, WETLANDS },
+					["coord"] = { 26.9, 26.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -437,14 +437,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(474, {	-- Defeat Nek'rosh
 					["sourceQuest"] = 465,	-- Nek'rosh's Gambit
 					["provider"] = { "o", 1609 },	-- Dragonmaw Catapult
-					["coord"] = { 47.5, 46.9, WETLANDS },
+					["coord"] = { 47.5, 46.9, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
 					["groups"] = {
 						objective(1, {	-- 0/1 Nek'rosh's Head
 							["provider"] = { "i", 3625 },	-- Nek'rosh's Head
-							["coord"] = { 54.2, 54.2, WETLANDS },
+							["coord"] = { 54.2, 54.2, MAP.WETLANDS },
 							["cr"] = 2091,	-- Chieftain Nek'rosh
 						}),
 						i(3209, {	-- Ancient War Sword
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(470, {	-- Digging Through the Ooze
 					["qg"] = 2111,	-- Sida
-					["coord"] = { 11.8, 58.0, WETLANDS },
+					["coord"] = { 11.8, 58.0, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
@@ -478,7 +478,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25864, {	-- Dinosaur Crisis
 					["sourceQuest"] = 26980,	-- Swiftgear Station
 					["qg"] = 41415,	-- Shilah Slabchisel
-					["coord"] = { 26.9, 26.0, WETLANDS },
+					["coord"] = { 26.9, 26.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -505,7 +505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25734, {	-- Down In Thelgen Rock
 					["sourceQuest"] = 25726,	-- A Dumpy Job
 					["qg"] = 41129,	-- Surveyor Thurdan
-					["coord"] = { 57.4, 71.4, WETLANDS },
+					["coord"] = { 57.4, 71.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -520,7 +520,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25727, {	-- Drungeld Glowerglare
 					["sourceQuest"] = 25721,	-- Fight the Flood
 					["qg"] = 41086,	-- Forba Slabchisel
-					["coord"] = { 57.5, 71.7, WETLANDS },
+					["coord"] = { 57.5, 71.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -544,7 +544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(472, {	-- Fall of Dun Modr
 					["qg"] = 2097,	-- Harlo Barnaby
-					["coord"] = { 10.8, 55.9, WETLANDS },
+					["coord"] = { 10.8, 55.9, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25725, {	-- Fenbush Berries
 					["sourceQuest"] = 25723,	-- Thresh Out of Luck
 					["qg"] = 41128,	-- Dunlor Marblebeard
-					["coord"] = { 57.8, 71.4, WETLANDS },
+					["coord"] = { 57.8, 71.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -567,7 +567,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25721, {	-- Fight the Flood
 					["sourceQuest"] = 25770,	-- Keg Run
 					["qg"] = 41086,	-- Forba Slabchisel
-					["coord"] = { 57.5, 71.7, WETLANDS },
+					["coord"] = { 57.5, 71.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(277, {	-- Fire Taboo
 					["sourceQuest"] = 276,	-- Tramping Paws
 					["qg"] = 1244,	-- Rethiel the Greenwarden
-					["coord"] = { 56.3, 40.4, WETLANDS },
+					["coord"] = { 56.3, 40.4, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25939, {	-- For Peat's Sake
 					["sourceQuest"] = 25926,	-- Mired in Hatred
 					["qg"] = 41615,	-- Ferilon Leafborn
-					["coord"] = { 56.4, 39.9, WETLANDS },
+					["coord"] = { 56.4, 39.9, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25733, {	-- Get Out Of Here, Stalkers
 					["sourceQuest"] = 25727,	-- Drungeld Glowerglare
 					["qg"] = 41086,	-- Forba Slabchisel
-					["coord"] = { 57.5, 71.7, WETLANDS },
+					["coord"] = { 57.5, 71.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -646,7 +646,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25855, {	-- Gizmos and Gadgets
 					["sourceQuest"] = 25854,	-- I'll Call Him Bitey
 					["qg"] = 41435,	-- Fradd Swiftgear
-					["coord"] = { 26.8, 25.8, WETLANDS },
+					["coord"] = { 26.8, 25.8, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25867, {	-- Gnoll Escape
 					["sourceQuest"] = 25865,	-- The Mosshide Job
 					["qg"] = 41415,	-- Shilah Slabchisel
-					["coord"] = { 26.9, 26.0, WETLANDS },
+					["coord"] = { 26.9, 26.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -680,7 +680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				heroscall(q(28565, {	-- Hero's Call: Wetlands!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
+					["maps"] = { MAP.IRONFORGE },	-- Only found in Ironforge in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
@@ -691,7 +691,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25857, {	-- Hunting Horrorjaw
 					["sourceQuest"] = 25856,	-- Crocolisk Hides
 					["qg"] = 41433,	-- James Halloran
-					["coord"] = { 26.7, 26.7, WETLANDS },
+					["coord"] = { 26.7, 26.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -703,7 +703,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25854, {	-- I'll Call Him Bitey
 					["qg"] = 41435,	-- Fradd Swiftgear
-					["coord"] = { 26.8, 25.8, WETLANDS },
+					["coord"] = { 26.8, 25.8, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -717,7 +717,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(305, {	-- In Search of The Excavation Team (1/2)
 					["qg"] = 2096,	-- Tarrel Rockweaver
-					["coord"] = { 11.5, 52.2, WETLANDS },
+					["coord"] = { 11.5, 52.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 21,
@@ -728,7 +728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1076 },	-- Merrin Rockweaver
 						{ "i", 2639 },	-- Merrin's Letter
 					},
-					["coord"] = { 38.8, 52.2, WETLANDS },
+					["coord"] = { 38.8, 52.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 21,
@@ -736,7 +736,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25735, {	-- Incendicite Ore
 					["sourceQuest"] = 25725,	-- Fenbush Berries
 					["qg"] = 41128,	-- Dunlor Marblebeard
-					["coord"] = { 57.8, 71.5, WETLANDS },
+					["coord"] = { 57.8, 71.5, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -764,7 +764,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26139, {	-- Into Arathi
 					["sourceQuest"] = 26128,	-- The Battle of Thandol Span
 					["qg"] = 42160,	-- Thargas Anvilmar
-					["coord"] = { 49.5, 17.2, WETLANDS },
+					["coord"] = { 49.5, 17.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for Northfold Manor in Arathi Highlands
@@ -772,7 +772,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25770, {	-- Keg Run
 					["sourceQuest"] = 25395,	-- The Stolen Keg
 					["qg"] = 41075,	-- Mountaineer Rharen
-					["coord"] = { 49.9, 79.2, WETLANDS },
+					["coord"] = { 49.9, 79.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Fight the Flood"
@@ -780,14 +780,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(290, {	-- Lifting the Curse
 					["sourceQuest"] = 289,	-- The Cursed Crew
 					["qg"] = 1239,	-- First Mate Fitzsimmons
-					["coord"] = { 10.9, 59.6, WETLANDS },
+					["coord"] = { 10.9, 59.6, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
 						objective(1, {	-- 0/1 Intrepid Strongbox Key
 							["provider"] = { "i", 2629 },	-- Intrepid Strongbox Key
-							["coord"] = { 15.6, 23.4, WETLANDS },
+							["coord"] = { 15.6, 23.4, MAP.WETLANDS },
 							["cr"] = 1160,	-- Captain Halyndor
 						}),
 					},
@@ -795,7 +795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25818, {	-- Lifting the Curse
 					["sourceQuest"] = 25817,	-- The Cursed Crew
 					["qg"] = 41307,	-- First Mate Snellig
-					["coord"] = { 15.2, 29.4, WETLANDS },
+					["coord"] = { 15.2, 29.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -811,7 +811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(321, {	-- Lightforge Iron
 					["sourceQuest"] = 270,	-- The Doomed Fleet
 					["qg"] = 1217,	-- Glorin Steelbrow
-					["coord"] = { 10.6, 60.5, WETLANDS },
+					["coord"] = { 10.6, 60.5, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -825,7 +825,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 321,	-- Lightforge Iron
 					["altQuests"] = { 324 },	-- The Lost Ingots
 					["qg"] = 1217,	-- Glorin Steelbrow
-					["coord"] = { 10.6, 60.6, WETLANDS },
+					["coord"] = { 10.6, 60.6, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -839,14 +839,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26196, {	-- Longbraid the Grim
 					["sourceQuest"] = 25939,	-- For Peat's Sake
 					["qg"] = 41615,	-- Ferilon Leafborn
-					["coord"] = { 56.4, 40.0, WETLANDS },
+					["coord"] = { 56.4, 40.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- possibly requires The Threat of Flame?
 				}),
 				q(25926, {	-- Mired in Hatred
 					["qg"] = 41503,	-- Rethiel the Greenwarden
-					["coord"] = { 56.3, 40.4, WETLANDS },
+					["coord"] = { 56.3, 40.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -861,7 +861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2104 },	-- Captain Stoutfist
 						{ "i", 3339 },	-- Dwarven Tinder
 					},
-					["coord"] = { 9.8, 57.4, WETLANDS },
+					["coord"] = { 9.8, 57.4, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
@@ -873,7 +873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25735,	-- Incendicite Ore
 					},
 					["qg"] = 41086,	-- Forba Slabchisel
-					["coord"] = { 57.4, 71.7, WETLANDS },
+					["coord"] = { 57.4, 71.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -886,8 +886,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 215468 },	-- Orders from the Grand Crusader
 						{ "i", 216610 },	-- Orders from the Grand Crusader
 					},
-					["coord"] = { 11.8, 75.7, DUN_MOROGH },
-					["maps"] = { STORMWIND_CITY },
+					["coord"] = { 11.8, 75.7, MAP.DUN_MOROGH },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 218908,	-- Scarlet Crusade Assassin
@@ -895,14 +895,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Report back to Katherine the Pure
 							["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
-							["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+							["coord"] = { 37.8, 31.6, MAP.STORMWIND_CITY },
 						}),
 					},
 				})),
 				-- #endif
 				q(294, {	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38.0, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -918,7 +918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(295, {	-- Ormer's Revenge (2/3)
 					["sourceQuest"] = 294,	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38.0, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -934,14 +934,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(296, {	-- Ormer's Revenge (3/3)
 					["sourceQuest"] = 295,	-- Ormer's Revenge (2/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38.0, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sarltooth's Talon
 							["provider"] = { "i", 3638 },	-- Sarltooth's Talon
-							["coord"] = { 33.0, 51.4, WETLANDS },
+							["coord"] = { 33.0, 51.4, MAP.WETLANDS },
 							["cr"] = 1353,	-- Sarltooth
 						}),
 						i(3493, {	-- Raptor's End
@@ -959,7 +959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(634, {	-- Plea To The Alliance
 					["sourceQuest"] = 633,	-- The Thandol Span (3/3)
 					["qg"] = 1075,	-- Rhag Garmason
-					["coord"] = { 49.9, 18.2, WETLANDS },
+					["coord"] = { 49.9, 18.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -967,7 +967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(281, {	-- Reclaiming Goods
 					["sourceQuest"] = 279,	-- Claws from the Deep
 					["qg"] = 1242,	-- Karl Boran
-					["coord"] = { 8.4, 58.6, WETLANDS },
+					["coord"] = { 8.4, 58.6, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -975,7 +975,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25802, {	-- Reclaiming Goods
 					["sourceQuest"] = 25800,	-- When Life Gives You Crabs
 					["qg"] = 41297,	-- Karl Boran
-					["coord"] = { 11.0, 57.7, WETLANDS },
+					["coord"] = { 11.0, 57.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["_drop"] = { "g" },	-- Healing Potion in API data
@@ -983,7 +983,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(473, {	-- Report to Captain Stoutfist
 					["sourceQuest"] = 455,	-- The Algaz Gauntlet
 					["qg"] = 2086,	-- Valstag Ironjaw
-					["coord"] = { 10.1, 56.9, WETLANDS },
+					["coord"] = { 10.1, 56.9, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 259 },	-- Half-buried Barrel
 						{ "i", 2625 },	-- Menethil Statuette
 					},
-					["coord"] = { 14.0, 34.8, WETLANDS },
+					["coord"] = { 14.0, 34.8, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1014,7 +1014,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25805, {	-- Return the Statuette
 					["sourceQuest"] = 25804,	-- Search More Hovels
 					["provider"] = { "o", 259 },	-- Half-Buried Barrel
-					["coord"] = { 13.9, 34.7, WETLANDS },
+					["coord"] = { 13.9, 34.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(285, {	-- Search More Hovels
 					["sourceQuest"] = 284,	-- The Search Continues
 					["provider"] = { "o", 142151 },	-- Sealed Barrel
-					["coord"] = { 13.6, 38.2, WETLANDS },
+					["coord"] = { 13.6, 38.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1043,13 +1043,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25804, {	-- Search More Hovels
 					["sourceQuest"] = 25803,	-- The Search Continues
 					["provider"] = { "o", 142151 },	-- Sealed Barrel
-					["coord"] = { 13.6, 38.2, WETLANDS },
+					["coord"] = { 13.6, 38.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25722, {	-- Sedimentary, My Dear
 					["qg"] = 41129,	-- Surveyor Thurdan
-					["coord"] = { 57.4, 71.4, WETLANDS },
+					["coord"] = { 57.4, 71.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1084,7 +1084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 3179,	-- Harold Riggs
 					["questID"] = 79972,	-- Aeonas Whereabouts HQT
 					["sourceQuest"] = 79940,	-- A Lost Brother
-					["coord"] = { 8.1, 58.6, WETLANDS },
+					["coord"] = { 8.1, 58.6, MAP.WETLANDS },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -1092,7 +1092,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(25850, {	-- Strike the Earth!
 					["qg"] = 41412,	-- Ormer Ironbraid
-					["coord"] = { 38.6, 39.5, WETLANDS },
+					["coord"] = { 38.6, 39.5, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1109,7 +1109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25819,	-- The Eye of Paleth (definitely required)
 					},
 					["qg"] = 2104,	-- Captain Stoutfist
-					["coord"] = { 10.5, 55.6, WETLANDS },
+					["coord"] = { 10.5, 55.6, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for Dinosaur Crisis
@@ -1117,7 +1117,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(943, {	-- The Absent Minded Prospector (5/5)
 					["sourceQuest"] = 942,	-- The Absent Minded Prospector (4/5) (Darnassus)
 					["qg"] = 2911,	-- Archaeologist Flagongut
-					["coord"] = { 10.8, 60.4, WETLANDS },
+					["coord"] = { 10.8, 60.4, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -1136,7 +1136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 5234 },	-- Flagongut's Fossil
 								{ "o", 9630 },	-- Flagongut's Fossil
 							},
-							["coord"] = { 38.8, 52.2, WETLANDS },
+							["coord"] = { 38.8, 52.2, MAP.WETLANDS },
 						}),
 						i(5627, {	-- Relic Blade
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1149,7 +1149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26189, {	-- The Angerfang Menace
 					["sourceQuest"] = 25849,	-- When Archaeology Attacks
 					["qg"] = 41411,	-- Prospector Whelgar
-					["coord"] = { 38.9, 39.3, WETLANDS },
+					["coord"] = { 38.9, 39.3, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1170,7 +1170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26128, {	-- The Battle of Thandol Span
 					["sourceQuest"] = 26127,	-- The Twilight's Hammer Revealed
 					["qg"] = 42160,	-- Thargas Anvilmar
-					["coord"] = { 49.4, 17.2, WETLANDS },
+					["coord"] = { 49.4, 17.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1199,7 +1199,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26120, {	-- The Crazed Dragonmaw
 					["qg"] = 41612,	-- Huntress Iczelia
-					["coord"] = { 56.3, 39.8, WETLANDS },
+					["coord"] = { 56.3, 39.8, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1220,7 +1220,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(289, {	-- The Cursed Crew
 					["sourceQuest"] = 288,	-- The Third Fleet
 					["qg"] = 1239,	-- First Mate Fitzsimmons
-					["coord"] = { 10.9, 59.6, WETLANDS },
+					["coord"] = { 10.9, 59.6, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(3, {	-- 0/1 Snellig's Snuffbox
 							["provider"] = { "i", 3619 },	-- Snellig's Snuffbox
-							["coord"] = { 14.0, 30.6, WETLANDS },
+							["coord"] = { 14.0, 30.6, MAP.WETLANDS },
 							["cr"] = 1159,	-- First Mate Snellig
 						}),
 					},
@@ -1241,7 +1241,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25817, {	-- The Cursed Crew
 					["sourceQuest"] = 25816,	-- Cursed to Roam
 					["qg"] = 41307,	-- First Mate Snellig
-					["coord"] = { 15.2, 29.4, WETLANDS },
+					["coord"] = { 15.2, 29.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1270,7 +1270,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(303, {	-- The Dark Iron War
 					["qg"] = 1074,	-- Motley Garmason
-					["coord"] = { 49.7, 18.3, WETLANDS },
+					["coord"] = { 49.7, 18.3, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(292, {	-- The Eye of Paleth
 					["sourceQuest"] = 290,	-- Lifting the Curse
 					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
-					["coord"] = { 14.5, 24.0, WETLANDS },
+					["coord"] = { 14.5, 24.0, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1303,7 +1303,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25819, {	-- The Eye of Paleth
 					["sourceQuest"] = 25818,	-- Lifting the Curse
 					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
-					["coord"] = { 14.3, 24.0, WETLANDS },
+					["coord"] = { 14.3, 24.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1325,7 +1325,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25736, {	-- The Floodsurge Core
 					["sourceQuest"] = 25734,	-- Down in Thelgen Rock
 					["provider"] = { "i", 55243 },	-- Floodsurge Core
-					["coord"] = { 47.6, 65.6, WETLANDS },
+					["coord"] = { 47.6, 65.6, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 41167,	-- Torrention
@@ -1346,7 +1346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(463, {	-- The Greenwarden
 					["qg"] = 1239,	-- First Mate Fitzsimmons
-					["coord"] = { 10.9, 59.6, WETLANDS },
+					["coord"] = { 10.9, 59.6, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1356,7 +1356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 321,	-- Lightforge Iron
 					["altQuests"] = { 526 },	-- Lightforge Ingots
 					["provider"] = { "o", 2734 },	-- Waterlogged Chest
-					["coord"] = { 12.1, 64.1, WETLANDS },
+					["coord"] = { 12.1, 64.1, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1370,7 +1370,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1249, {	-- The Missing Diplomat (11/17)
 					["sourceQuest"] = 1248,	-- The Missing Diplomat (10/17)
 					["qg"] = 4963,	-- Mikhail <Bartender>
-					["coord"] = { 10.6, 60.7, WETLANDS },
+					["coord"] = { 10.6, 60.7, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -1383,7 +1383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1250, {	-- The Missing Diplomat (12/17)
 					["sourceQuest"] = 1249,	-- The Missing Diplomat (11/17)
 					["qg"] = 4962,	-- Tapoke "Slim" Jahn
-					["coord"] = { 10.6, 60.3, WETLANDS },
+					["coord"] = { 10.6, 60.3, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -1391,16 +1391,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1264, {	-- The Missing Diplomat (13/17)
 					["sourceQuest"] = 1250,	-- The Missing Diplomat (12/17)
 					["qg"] = 4963,	-- Mikhail <Bartender>
-					["coord"] = { 10.6, 60.7, WETLANDS },
+					["coord"] = { 10.6, 60.7, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUSTWALLOW_MARSH },
+					["maps"] = { MAP.DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(25865, {	-- The Mosshide Job
 					["sourceQuest"] = 25864,	-- Dinosaur Crisis
 					["qg"] = 41415,	-- Shilah Slabchisel
-					["coord"] = { 26.9, 26.0, WETLANDS },
+					["coord"] = { 26.9, 26.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1430,7 +1430,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(284, {	-- The Search Continues
 					["sourceQuest"] = 281,	-- Reclaiming Goods
 					["provider"] = { "o", 261 },	-- Damaged Crate
-					["coord"] = { 13.5, 41.4, WETLANDS },
+					["coord"] = { 13.5, 41.4, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1438,7 +1438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25803, {	-- The Search Continues
 					["sourceQuest"] = 25802,	-- Reclaiming Goods
 					["provider"] = { "o", 261 },	-- Damaged Crate
-					["coord"] = { 13.5, 41.3, WETLANDS },
+					["coord"] = { 13.5, 41.3, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1448,7 +1448,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28565,	-- Hero's Call: Wetlands!
 					},
 					["qg"] = 41075,	-- Mountaineer Rharen
-					["coord"] = { 49.9, 79.2, WETLANDS },
+					["coord"] = { 49.9, 79.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1463,7 +1463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(631, {	-- The Thandol Span (1/3)
 					["qg"] = 1075,	-- Rhag Garmason
-					["coord"] = { 49.9, 18.2, WETLANDS },
+					["coord"] = { 49.9, 18.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -1474,7 +1474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 2652 },	-- Ebenezer Rustlocke's Corpse
 						{ "i", 4429 },	-- Deepfury's Orders
 					},
-					["coord"] = { 51.3, 8.0, WETLANDS },
+					["coord"] = { 51.3, 8.0, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -1482,15 +1482,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(633, {	-- The Thandol Span (3/3)
 					["sourceQuest"] = 632,	-- The Thandol Span (2/3)
 					["qg"] = 1075,	-- Rhag Garmason
-					["coord"] = { 49.9, 18.2, WETLANDS },
+					["coord"] = { 49.9, 18.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ARATHI_HIGHLANDS },
+					["maps"] = { MAP.ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- Cache of Explosives Destroyed
 							["provider"] = { "o", 2704 },	-- Cache of Explosives
-							["coord"] = { 48.8, 88.2, ARATHI_HIGHLANDS },
+							["coord"] = { 48.8, 88.2, MAP.ARATHI_HIGHLANDS },
 						}),
 						i(4504, {	-- Dwarven Guard Cloak
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1502,21 +1502,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(288, {	-- The Third Fleet
 					["qg"] = 1239,	-- First Mate Fitzsimmons
-					["coord"] = { 10.9, 59.6, WETLANDS },
+					["coord"] = { 10.9, 59.6, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
 						objective(1, {	-- 0/1 Flagon of Dwarven Honeymead
 							["cost"] = { { "i", 2594, 1 } },	-- Flagon of Dwarven Honeymead
-							["coord"] = { 10.6, 60.8, WETLANDS },
+							["coord"] = { 10.6, 60.8, MAP.WETLANDS },
 							["cr"] = 1464,	-- Innkeeper Helbrek <Innkeeper>
 						}),
 					},
 				}),
 				q(25815, {	-- The Third Fleet
 					["qg"] = 1239,	-- First Mate Fitzsimmons
-					["coord"] = { 10.9, 59.7, WETLANDS },
+					["coord"] = { 10.9, 59.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25927, {	-- The Threat of Flame
 					["sourceQuest"] = 25926,	-- Mired in Hatred
 					["qg"] = 41503,	-- Rethiel the Greenwarden
-					["coord"] = { 56.3, 40.4, WETLANDS },
+					["coord"] = { 56.3, 40.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1543,7 +1543,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26127, {	-- The Twilight's Hammer Revealed
 					["sourceQuest"] = 26327,	-- Anvilmar the Hero
 					["qg"] = 42160,	-- Thargas Anvilmar
-					["coord"] = { 49.4, 17.2, WETLANDS },
+					["coord"] = { 49.4, 17.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1554,7 +1554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25723, {	-- Thresh Out of Luck
 					["qg"] = 41128,	-- Dunlor Marblebeard
-					["coord"] = { 57.8, 71.4, WETLANDS },
+					["coord"] = { 57.8, 71.4, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1566,7 +1566,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25853, {	-- Tooling Around
 					["qg"] = 41413,	-- Merrin Rockweaver
-					["coord"] = { 38.8, 39.7, WETLANDS },
+					["coord"] = { 38.8, 39.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1599,7 +1599,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(276, {	-- Tramping Paws
 					["sourceQuest"] = 463,	-- The Greenwarden
 					["qg"] = 1244,	-- Rethiel the Greenwarden
-					["coord"] = { 56.3, 40.4, WETLANDS },
+					["coord"] = { 56.3, 40.4, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1617,7 +1617,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "The quest items spawn randomly in the dig site below.",
 					-- #endif
 					["qg"] = 1077,	-- Prospector Whelgar
-					["coord"] = { 38.8, 52.2, WETLANDS },
+					["coord"] = { 38.8, 52.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -1654,7 +1654,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(464, {	-- War Banners
 					["sourceQuest"] = 473,	-- Report to Captain Stoutfist
 					["qg"] = 2104,	-- Captain Stoutfist
-					["coord"] = { 9.8, 57.4, WETLANDS },
+					["coord"] = { 9.8, 57.4, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
@@ -1676,7 +1676,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26981, {	-- Whelgar's Retreat
 					["sourceQuest"] = 25868,	-- Yorla Darksnare
 					["qg"] = 41415,	-- Shilah Slabchisel
-					["coord"] = { 26.9, 26.0, WETLANDS },
+					["coord"] = { 26.9, 26.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for When Archaeology Attacks
@@ -1684,7 +1684,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25849, {	-- When Archaeology Attacks
 					["sourceQuest"] = 26981,	-- Whelgar's Retreat
 					["qg"] = 41411,	-- Prospector Whelgar
-					["coord"] = { 38.9, 39.3, WETLANDS },
+					["coord"] = { 38.9, 39.3, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1699,7 +1699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25800, {	-- When Life Gives You Crabs
 					["qg"] = 41297,	-- Karl Boran
-					["coord"] = { 11.0, 57.7, WETLANDS },
+					["coord"] = { 11.0, 57.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1719,7 +1719,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25853,	-- Tooling Around
 					},
 					["qg"] = 41411,	-- Prospector Whelgar
-					["coord"] = { 38.8, 39.3, WETLANDS },
+					["coord"] = { 38.8, 39.3, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1729,7 +1729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25867,	-- Gnoll Escape
 					},
 					["qg"] = 41415,	-- Shilah Slabchisel
-					["coord"] = { 26.9, 26.0, WETLANDS },
+					["coord"] = { 26.9, 26.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1758,7 +1758,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(484, {	-- Young Crocolisk Skins
 					["qg"] = 2094,	-- James Halloran
-					["coord"] = { 8.5, 55.7, WETLANDS },
+					["coord"] = { 8.5, 55.7, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -1773,7 +1773,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211965, {	-- Carrodin
-					["coord"] = { 47.6, 64.6, WETLANDS },
+					["coord"] = { 47.6, 64.6, MAP.WETLANDS },
 					["groups"] = {
 						i(211205, {	-- Rune of Heart of the Lion
 							["classes"] = { HUNTER },
@@ -1791,25 +1791,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(50964, {	-- Chops
-					["coord"] = { 58.0, 8.6, WETLANDS },
+					["coord"] = { 58.0, 8.6, MAP.WETLANDS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(1037, {	-- Dragonmaw Battlemaster
 					["coords"] = {
-						{ 42.8, 43.8, WETLANDS },
-						{ 47.6, 46.0, WETLANDS },
-						{ 50.0, 48.2, WETLANDS },
-						{ 50.8, 50.6, WETLANDS },
-						{ 53.0, 53.6, WETLANDS },
+						{ 42.8, 43.8, MAP.WETLANDS },
+						{ 47.6, 46.0, MAP.WETLANDS },
+						{ 50.0, 48.2, MAP.WETLANDS },
+						{ 50.8, 50.6, MAP.WETLANDS },
+						{ 53.0, 53.6, MAP.WETLANDS },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(2108, {	-- Garneg Charskull
 					["coords"] = {
-						{ 38.6, 46.2, WETLANDS },
+						{ 38.6, 46.2, MAP.WETLANDS },
 						-- #if BEFORE CATA
-						{ 43.2, 44.2, WETLANDS },
-						{ 48.0, 47.6, WETLANDS },
+						{ 43.2, 44.2, MAP.WETLANDS },
+						{ 48.0, 47.6, MAP.WETLANDS },
 						-- #endif
 					},
 					["groups"] = {
@@ -1822,29 +1822,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(44227, {	-- Gazz the Loch-Hunter
-					["coord"] = { 61.6, 57.8, WETLANDS },
+					["coord"] = { 61.6, 57.8, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14425, {	-- Gnawbone
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 31.6, 33.6, WETLANDS },
-						{ 31.6, 29.6, WETLANDS },
-						{ 35.2, 27.4, WETLANDS },
+						{ 31.6, 33.6, MAP.WETLANDS },
+						{ 31.6, 29.6, MAP.WETLANDS },
+						{ 35.2, 27.4, MAP.WETLANDS },
 						-- #else
-						{ 39.0, 30.6, WETLANDS },
-						{ 30.6, 31.2, WETLANDS },
-						{ 35.4, 37.2, WETLANDS },
-						{ 38.4, 36.4, WETLANDS },
+						{ 39.0, 30.6, MAP.WETLANDS },
+						{ 30.6, 31.2, MAP.WETLANDS },
+						{ 35.4, 37.2, MAP.WETLANDS },
+						{ 38.4, 36.4, MAP.WETLANDS },
 						-- #endif
 					},
 				}),
 				n(1112, {	-- Leech Widow
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.8, 63.6, WETLANDS },
+						{ 46.8, 63.6, MAP.WETLANDS },
 						-- #else
-						{ 46.8, 61.4, WETLANDS },
+						{ 46.8, 61.4, MAP.WETLANDS },
 						-- #endif
 					},
 					["groups"] = {
@@ -1859,9 +1859,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2090, {	-- Ma'ruk Wyrmscale <Dragonmaw Warlord>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.0, 74.6, WETLANDS },
+						{ 48.0, 74.6, MAP.WETLANDS },
 						-- #else
-						{ 47.8, 76.8, WETLANDS },
+						{ 47.8, 76.8, MAP.WETLANDS },
 						-- #endif
 					},
 					["groups"] = {
@@ -1876,26 +1876,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(14424, {	-- Mirelow
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.4, 36.2, WETLANDS },
-						{ 54.6, 32.0, WETLANDS },
-						{ 55.6, 29.0, WETLANDS },
-						{ 52.4, 27.6, WETLANDS },
-						{ 50.6, 32.4, WETLANDS },
+						{ 52.4, 36.2, MAP.WETLANDS },
+						{ 54.6, 32.0, MAP.WETLANDS },
+						{ 55.6, 29.0, MAP.WETLANDS },
+						{ 52.4, 27.6, MAP.WETLANDS },
+						{ 50.6, 32.4, MAP.WETLANDS },
 						-- #else
-						{ 18.6, 28.4, WETLANDS },
-						{ 22.8, 31.4, WETLANDS },
-						{ 27.8, 32.8, WETLANDS },
-						{ 23.0, 21.4, WETLANDS },
-						{ 24.6, 37.0, WETLANDS },
+						{ 18.6, 28.4, MAP.WETLANDS },
+						{ 22.8, 31.4, MAP.WETLANDS },
+						{ 27.8, 32.8, MAP.WETLANDS },
+						{ 23.0, 21.4, MAP.WETLANDS },
+						{ 24.6, 37.0, MAP.WETLANDS },
 						-- #endif
 					},
 				}),
 				n(1140, {	-- Razormaw Matriarch
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 69.8, 29.2, WETLANDS },
+						{ 69.8, 29.2, MAP.WETLANDS },
 						-- #else
-						{ 70.8, 30.4, WETLANDS },
+						{ 70.8, 30.4, MAP.WETLANDS },
 						-- #endif
 					},
 					["groups"] = {
@@ -1913,28 +1913,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(44225, {	-- Rufus Darkshot
-					["coord"] = { 42.8, 32.6, WETLANDS },
+					["coord"] = { 42.8, 32.6, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(44226, {	-- Sarltooth
-					["coord"] = { 33.6, 51.0, WETLANDS },
+					["coord"] = { 33.6, 51.0, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14433, {	-- Sludginn
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 44.4, 24.8, WETLANDS },
+						{ 44.4, 24.8, MAP.WETLANDS },
 						-- #else
-						{ 14.8, 67.2, WETLANDS },
-						{ 12.0, 70.6, WETLANDS },
+						{ 14.8, 67.2, MAP.WETLANDS },
+						{ 12.0, 70.6, MAP.WETLANDS },
 						-- #endif
 					},
 				}),
 				n(44224, {	-- Two-Toes
 					["coords"] = {
-						{ 13.6, 41.6, WETLANDS },
-						{ 13.6, 38.6, WETLANDS },
-						{ 15.0, 39.0, WETLANDS },
+						{ 13.6, 41.6, MAP.WETLANDS },
+						{ 13.6, 38.6, MAP.WETLANDS },
+						{ 15.0, 39.0, MAP.WETLANDS },
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
@@ -1944,15 +1944,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["modelScale"] = 1.5,
 					["coords"] = {
-						{ 63.9, 78.2, WETLANDS },
-						{ 60.0, 24.5, WETLANDS },
-						{ 44.3, 24.7, WETLANDS },
-						{ 41.5, 21.7, WETLANDS },
-						{ 48.1, 18.8, WETLANDS },
-						{ 46.5, 18.8, WETLANDS },
-						{ 45.6, 16.5, WETLANDS },
-						{ 47.4, 15.4, WETLANDS },
-						{ 48.1, 14.9, WETLANDS },
+						{ 63.9, 78.2, MAP.WETLANDS },
+						{ 60.0, 24.5, MAP.WETLANDS },
+						{ 44.3, 24.7, MAP.WETLANDS },
+						{ 41.5, 21.7, MAP.WETLANDS },
+						{ 48.1, 18.8, MAP.WETLANDS },
+						{ 46.5, 18.8, MAP.WETLANDS },
+						{ 45.6, 16.5, MAP.WETLANDS },
+						{ 47.4, 15.4, MAP.WETLANDS },
+						{ 48.1, 14.9, MAP.WETLANDS },
 					},
 					["groups"] = {
 						i(2878),	-- Bearded Boneaxe
@@ -1979,13 +1979,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209848, {	-- Goaz Scrolls
 					["provider"] = { "o", 409717 },	-- Scrolls
-					["coord"] = { 33.6, 47.9, WETLANDS },
+					["coord"] = { 33.6, 47.9, MAP.WETLANDS },
 				})),
 				-- #endif
 				o(202083, {	-- Razormaw Matriarch's Nest
 					["coords"] = {
-						{ 69.9, 29.1, WETLANDS },
-						{ 70.9, 31.3, WETLANDS },
+						{ 69.9, 29.1, MAP.WETLANDS },
+						{ 70.9, 31.3, MAP.WETLANDS },
 					},
 					["timeline"] = { ADDED_3_3_0 },
 					["groups"] = {
@@ -1997,7 +1997,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(226408, {	-- Rune of Mace Specialization
 					["provider"] = { "o", 457093 },	-- Blunt Justice: A Dwarf's Tale
-					["coord"] = { 74.0, 69.2, WETLANDS },
+					["coord"] = { 74.0, 69.2, MAP.WETLANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
 					["groups"] = {
@@ -2011,7 +2011,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 212209 },	-- Vodyanoi
 						{ "i", 210499 },	-- Marshroom
 					},
-					["coord"] = { 31.0, 18.0, WETLANDS },
+					["coord"] = { 31.0, 18.0, MAP.WETLANDS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["groups"] = {
@@ -2022,7 +2022,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(1450, {	-- Brahnmar <Armorer>
-					["coord"] = { 11.6, 59.9, WETLANDS },
+					["coord"] = { 11.6, 59.9, MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						2446,	-- Kite Shield
@@ -2036,7 +2036,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(1441, {	-- Brak Durnad <Weaponsmith>
-					["coord"] = { 11.6, 59.5, WETLANDS },
+					["coord"] = { 11.6, 59.5, MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						926,	-- Battle Axe
@@ -2059,7 +2059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
-					["coord"] = { 46.6, 18.2, WETLANDS },
+					["coord"] = { 46.6, 18.2, MAP.WETLANDS },
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(209874, {	-- Dragonslayer's Lance
@@ -2097,7 +2097,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if AFTER 4.0.3
 				n(1462, {	-- Edwina Monzor <Bowyer>
-					["coord"] = { 11.1, 58.0, WETLANDS },
+					["coord"] = { 11.1, 58.0, MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						3027,	-- Heavy Recurve Bow
@@ -2106,7 +2106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(2682, {	-- Fradd Swiftgear <Engineering Supplies>
-					["coord"] = { 26.4, 25.8, WETLANDS },
+					["coord"] = { 26.4, 25.8, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2120,7 +2120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(41435, {	-- Fradd Swiftgear <Engineering Supplies>
-					["coord"] = { 26.8, 25.9, WETLANDS },
+					["coord"] = { 26.8, 25.9, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2131,7 +2131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(212186, {	-- Grugimdern
-					["coord"] = { 36.8, 15.2, WETLANDS },
+					["coord"] = { 36.8, 15.2, MAP.WETLANDS },
 					["classes"] = { DRUID },
 					["groups"] = {
 						i(210499),	-- Marshroom
@@ -2141,9 +2141,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 10.0, 59.0, WETLANDS },
+						{ 10.0, 59.0, MAP.WETLANDS },
 						-- #else
-						{ 8.1, 55.8, WETLANDS },
+						{ 8.1, 55.8, MAP.WETLANDS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2175,7 +2175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1461, {	-- Murndan Derth <Gunsmith>
-					["coord"] = { 11.3, 59.6, WETLANDS },
+					["coord"] = { 11.3, 59.6, MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						3024,	-- BKP 2700 "Enforcer"
@@ -2185,9 +2185,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1459, {	-- Naela Trance <Bowyer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 11.0, 57.8, WETLANDS },
+						{ 11.0, 57.8, MAP.WETLANDS },
 						-- #else
-						{ 11.3, 58.4, WETLANDS },
+						{ 11.3, 58.4, MAP.WETLANDS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2204,9 +2204,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1448, {	-- Neal Allen <Engineering Supplies & General Goods>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 11.8, 52.6, WETLANDS },
+						{ 11.8, 52.6, MAP.WETLANDS },
 						-- #else
-						{ 10.8, 56.8, WETLANDS },
+						{ 10.8, 56.8, MAP.WETLANDS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2218,7 +2218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1457, {	-- Samor Festivus <Shady Dealer>
-					["coord"] = { 10.5, 60.2, WETLANDS },
+					["coord"] = { 10.5, 60.2, MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
@@ -2229,9 +2229,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3178, {	-- Stuart Fleming <Fisherman>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 6.3, 57.4, WETLANDS },
+						{ 6.3, 57.4, MAP.WETLANDS },
 						-- #else
-						{ 8.0, 58.3, WETLANDS },
+						{ 8.0, 58.3, MAP.WETLANDS },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2247,9 +2247,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1460, {	-- Unger Statforth <Horse Breeder>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 9.2, 56.6, WETLANDS },
+						{ 9.2, 56.6, MAP.WETLANDS },
 						-- #else
-						{ 8.6, 54.4, WETLANDS },
+						{ 8.6, 54.4, MAP.WETLANDS },
 						-- #endif
 					},
 					-- Available to Humans without faction requirements.
@@ -2269,7 +2269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(41622, {	-- Victorina <Weaponsmith>
-					["coord"] = { 58.0, 40.7, WETLANDS },
+					["coord"] = { 58.0, 40.7, MAP.WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -2292,7 +2292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>
-					["coord"] = { 25.6, 25.8, WETLANDS },
+					["coord"] = { 25.6, 25.8, MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7114, {	-- Pattern: Azure Silk Gloves (RECIPE!)
@@ -2339,20 +2339,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3022, {	-- Bluegill Breeches
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 21.8, 40.0, WETLANDS },
-						{ 17.4, 41.4, WETLANDS },
-						{ 17.2, 33.6, WETLANDS },
-						{ 13.6, 42.6, WETLANDS },
-						{ 16.6, 26.2, WETLANDS },
-						{ 20.4, 37.6, WETLANDS },
-						{ 14.2, 36.8, WETLANDS },
-						{ 18.6, 34.0, WETLANDS },
-						{ 12.2, 40.2, WETLANDS },
-						{ 13.4, 34.0, WETLANDS },
-						{ 15.8, 28.2, WETLANDS },
+						{ 21.8, 40.0, MAP.WETLANDS },
+						{ 17.4, 41.4, MAP.WETLANDS },
+						{ 17.2, 33.6, MAP.WETLANDS },
+						{ 13.6, 42.6, MAP.WETLANDS },
+						{ 16.6, 26.2, MAP.WETLANDS },
+						{ 20.4, 37.6, MAP.WETLANDS },
+						{ 14.2, 36.8, MAP.WETLANDS },
+						{ 18.6, 34.0, MAP.WETLANDS },
+						{ 12.2, 40.2, MAP.WETLANDS },
+						{ 13.4, 34.0, MAP.WETLANDS },
+						{ 15.8, 28.2, MAP.WETLANDS },
 						-- #else
-						{ 23.0, 37.2, WETLANDS },
-						{ 13.0, 33.2, WETLANDS },
+						{ 23.0, 37.2, MAP.WETLANDS },
+						{ 13.0, 33.2, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2367,20 +2367,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2046, {	-- Bluegill Kukri
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 21.8, 40.0, WETLANDS },
-						{ 17.4, 41.4, WETLANDS },
-						{ 17.2, 33.6, WETLANDS },
-						{ 13.6, 42.6, WETLANDS },
-						{ 16.6, 26.2, WETLANDS },
-						{ 20.4, 37.6, WETLANDS },
-						{ 14.2, 36.8, WETLANDS },
-						{ 18.6, 34.0, WETLANDS },
-						{ 12.2, 40.2, WETLANDS },
-						{ 13.4, 34.0, WETLANDS },
-						{ 15.8, 28.2, WETLANDS },
+						{ 21.8, 40.0, MAP.WETLANDS },
+						{ 17.4, 41.4, MAP.WETLANDS },
+						{ 17.2, 33.6, MAP.WETLANDS },
+						{ 13.6, 42.6, MAP.WETLANDS },
+						{ 16.6, 26.2, MAP.WETLANDS },
+						{ 20.4, 37.6, MAP.WETLANDS },
+						{ 14.2, 36.8, MAP.WETLANDS },
+						{ 18.6, 34.0, MAP.WETLANDS },
+						{ 12.2, 40.2, MAP.WETLANDS },
+						{ 13.4, 34.0, MAP.WETLANDS },
+						{ 15.8, 28.2, MAP.WETLANDS },
 						-- #else
-						{ 18.6, 40.0, WETLANDS },
-						{ 15.2, 38.4, WETLANDS },
+						{ 18.6, 40.0, MAP.WETLANDS },
+						{ 15.2, 38.4, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2395,20 +2395,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1560, {	-- Bluegill Sandals
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 21.8, 40.0, WETLANDS },
-						{ 17.4, 41.4, WETLANDS },
-						{ 17.2, 33.6, WETLANDS },
-						{ 13.6, 42.6, WETLANDS },
-						{ 16.6, 26.2, WETLANDS },
-						{ 20.4, 37.6, WETLANDS },
-						{ 14.2, 36.8, WETLANDS },
-						{ 18.6, 34.0, WETLANDS },
-						{ 12.2, 40.2, WETLANDS },
-						{ 13.4, 34.0, WETLANDS },
-						{ 15.8, 28.2, WETLANDS },
+						{ 21.8, 40.0, MAP.WETLANDS },
+						{ 17.4, 41.4, MAP.WETLANDS },
+						{ 17.2, 33.6, MAP.WETLANDS },
+						{ 13.6, 42.6, MAP.WETLANDS },
+						{ 16.6, 26.2, MAP.WETLANDS },
+						{ 20.4, 37.6, MAP.WETLANDS },
+						{ 14.2, 36.8, MAP.WETLANDS },
+						{ 18.6, 34.0, MAP.WETLANDS },
+						{ 12.2, 40.2, MAP.WETLANDS },
+						{ 13.4, 34.0, MAP.WETLANDS },
+						{ 15.8, 28.2, MAP.WETLANDS },
 						-- #else
-						{ 18.6, 40.0, WETLANDS },
-						{ 15.2, 38.4, WETLANDS },
+						{ 18.6, 40.0, MAP.WETLANDS },
+						{ 15.2, 38.4, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2428,12 +2428,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2084, {	-- Darksteel Bastard Sword
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 47.8, 47.6, WETLANDS },
-						{ 45.4, 42.6, WETLANDS },
-						{ 52.6, 53.4, WETLANDS },
+						{ 47.8, 47.6, MAP.WETLANDS },
+						{ 45.4, 42.6, MAP.WETLANDS },
+						{ 52.6, 53.4, MAP.WETLANDS },
 						-- #else
-						{ 62.4, 28.0, WETLANDS },
-						{ 46.8, 18.0, WETLANDS },
+						{ 62.4, 28.0, MAP.WETLANDS },
+						{ 46.8, 18.0, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2447,8 +2447,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1955, {	-- Dragonmaw Chain Boots
 					["coords"] = {
-						{ 50.6, 49.4, WETLANDS },
-						{ 39.0, 46.6, WETLANDS },
+						{ 50.6, 49.4, MAP.WETLANDS },
+						{ 39.0, 46.6, MAP.WETLANDS },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 1035,	-- Dragonmaw Swamprunner
@@ -2456,13 +2456,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(753, {	-- Dragonmaw Shortsword
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 51.4, 52.6, WETLANDS },
-						{ 49.0, 48.4, WETLANDS },
-						{ 45.6, 45.4, WETLANDS },
+						{ 51.4, 52.6, MAP.WETLANDS },
+						{ 49.0, 48.4, MAP.WETLANDS },
+						{ 45.6, 45.4, MAP.WETLANDS },
 						-- #else
-						{ 54.2, 54.2, WETLANDS },
-						{ 53.4, 56.0, WETLANDS },
-						{ 45.6, 45.4, WETLANDS },
+						{ 54.2, 54.2, MAP.WETLANDS },
+						{ 53.4, 56.0, MAP.WETLANDS },
+						{ 45.6, 45.4, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2484,13 +2484,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(892, {	-- Gnoll Casting Gloves
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 39.0, 33.6, WETLANDS },
-						{ 35.6, 31.6, WETLANDS },
-						{ 30.2, 33.4, WETLANDS },
+						{ 39.0, 33.6, MAP.WETLANDS },
+						{ 35.6, 31.6, MAP.WETLANDS },
+						{ 30.2, 33.4, MAP.WETLANDS },
 						-- #else
-						{ 45.6, 34.6, WETLANDS },
-						{ 61.0, 58.4, WETLANDS },
-						{ 62.6, 69.2, WETLANDS },
+						{ 45.6, 34.6, MAP.WETLANDS },
+						{ 61.0, 58.4, MAP.WETLANDS },
+						{ 62.6, 69.2, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2504,25 +2504,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
-					["coord"] = { 15.6, 23.4, WETLANDS },
+					["coord"] = { 15.6, 23.4, MAP.WETLANDS },
 					["cr"] = 1160,	-- Captain Halyndor
 				}),
 				-- #endif
 				i(3076, {	-- Smoldering Boots
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 63.8, 48.6, WETLANDS },
-						{ 65.0, 42.6, WETLANDS },
-						{ 61.8, 47.4, WETLANDS },
-						{ 61.2, 40.0, WETLANDS },
-						{ 70.6, 48.4, WETLANDS },
-						{ 67.6, 52.8, WETLANDS },
-						{ 63.8, 48.6, WETLANDS },
-						{ 61.0, 47.2, WETLANDS },
-						{ 61.8, 41.2, WETLANDS },
+						{ 63.8, 48.6, MAP.WETLANDS },
+						{ 65.0, 42.6, MAP.WETLANDS },
+						{ 61.8, 47.4, MAP.WETLANDS },
+						{ 61.2, 40.0, MAP.WETLANDS },
+						{ 70.6, 48.4, MAP.WETLANDS },
+						{ 67.6, 52.8, MAP.WETLANDS },
+						{ 63.8, 48.6, MAP.WETLANDS },
+						{ 61.0, 47.2, MAP.WETLANDS },
+						{ 61.8, 41.2, MAP.WETLANDS },
 						-- #else
-						{ 66.8, 53.2, WETLANDS },
-						{ 59.6, 43.0, WETLANDS },
+						{ 66.8, 53.2, MAP.WETLANDS },
+						{ 59.6, 43.0, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2537,18 +2537,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3074, {	-- Smoldering Gloves
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 63.8, 48.6, WETLANDS },
-						{ 65.0, 42.6, WETLANDS },
-						{ 61.8, 47.4, WETLANDS },
-						{ 61.2, 40.0, WETLANDS },
-						{ 70.6, 48.4, WETLANDS },
-						{ 67.6, 52.8, WETLANDS },
-						{ 63.8, 48.6, WETLANDS },
-						{ 61.0, 47.2, WETLANDS },
-						{ 61.8, 41.2, WETLANDS },
+						{ 63.8, 48.6, MAP.WETLANDS },
+						{ 65.0, 42.6, MAP.WETLANDS },
+						{ 61.8, 47.4, MAP.WETLANDS },
+						{ 61.2, 40.0, MAP.WETLANDS },
+						{ 70.6, 48.4, MAP.WETLANDS },
+						{ 67.6, 52.8, MAP.WETLANDS },
+						{ 63.8, 48.6, MAP.WETLANDS },
+						{ 61.0, 47.2, MAP.WETLANDS },
+						{ 61.8, 41.2, MAP.WETLANDS },
 						-- #else
-						{ 60.6, 33.2, WETLANDS },
-						{ 66.2, 49.0, WETLANDS },
+						{ 60.6, 33.2, MAP.WETLANDS },
+						{ 66.2, 49.0, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2563,13 +2563,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3073, {	-- Smoldering Pants
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 66.0, 45.8, WETLANDS },
-						{ 67.4, 47.2, WETLANDS },
-						{ 66.2, 49.2, WETLANDS },
+						{ 66.0, 45.8, MAP.WETLANDS },
+						{ 67.4, 47.2, MAP.WETLANDS },
+						{ 66.2, 49.2, MAP.WETLANDS },
 						-- #else
-						{ 61.8, 31.2, WETLANDS },
-						{ 65.4, 43.0, WETLANDS },
-						{ 68.8, 45.6, WETLANDS },
+						{ 61.8, 31.2, MAP.WETLANDS },
+						{ 65.4, 43.0, MAP.WETLANDS },
+						{ 68.8, 45.6, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2584,13 +2584,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3072, {	-- Smoldering Robe
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 66.0, 45.8, WETLANDS },
-						{ 67.4, 47.2, WETLANDS },
-						{ 66.2, 49.2, WETLANDS },
+						{ 66.0, 45.8, MAP.WETLANDS },
+						{ 67.4, 47.2, MAP.WETLANDS },
+						{ 66.2, 49.2, MAP.WETLANDS },
 						-- #else
-						{ 71.8, 47.6, WETLANDS },
-						{ 66.4, 40.4, WETLANDS },
-						{ 63.8, 33.6, WETLANDS },
+						{ 71.8, 47.6, MAP.WETLANDS },
+						{ 66.4, 40.4, MAP.WETLANDS },
+						{ 63.8, 33.6, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2605,12 +2605,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(6315, {	-- Steelarrow Crossbow
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 45.8, 34.4, WETLANDS },
-						{ 42.2, 30.2, WETLANDS },
-						{ 38.2, 28.6, WETLANDS },
+						{ 45.8, 34.4, MAP.WETLANDS },
+						{ 42.2, 30.2, MAP.WETLANDS },
+						{ 38.2, 28.6, MAP.WETLANDS },
 						-- #else
-						{ 48.8, 17.6, WETLANDS },
-						{ 48.9, 17.6, WETLANDS },
+						{ 48.8, 17.6, MAP.WETLANDS },
+						{ 48.9, 17.6, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2625,7 +2625,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8499, {	-- Tiny Crimson Whelpling (item) / Crimson Whelpling (PET!)
 					-- #if AFTER CATA
 					["description"] = "Teaches you how to summon the pet Crimson Whelpling.\n\nThe best spot to farm this pet is near the border with The Twilight Highlands. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",
-					["coord"] = { 67.3, 47.2, WETLANDS },
+					["coord"] = { 67.3, 47.2, MAP.WETLANDS },
 					-- #endif
 					["crs"] = {
 						-- #if AFTER CATA
@@ -2662,12 +2662,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(756, {	-- Tunnel Pick
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 39.0, 33.6, WETLANDS },
-						{ 35.6, 31.6, WETLANDS },
-						{ 30.2, 33.4, WETLANDS },
+						{ 39.0, 33.6, MAP.WETLANDS },
+						{ 35.6, 31.6, MAP.WETLANDS },
+						{ 30.2, 33.4, MAP.WETLANDS },
 						-- #else
-						{ 61.2, 25.4, WETLANDS },
-						{ 48.0, 18.6, WETLANDS },
+						{ 61.2, 25.4, MAP.WETLANDS },
+						{ 48.0, 18.6, MAP.WETLANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

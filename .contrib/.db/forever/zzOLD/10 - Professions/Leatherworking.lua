@@ -56,7 +56,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5143,	-- Tribal Leatherworking
 				},
 				["qg"] = 7866,	-- Peter Galen
-				["coord"] = { 37.4, 65.4, AZSHARA },
+				["coord"] = { 37.4, 65.4, MAP.AZSHARA },
 				["cost"] = {
 					{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
 					{ "i", 8204, 2 },	-- Tough Scorpid Gloves
@@ -72,7 +72,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5148,	-- Tribal Leatherworking
 				},
 				["qg"] = 7867,	-- Thorkaf Dragoneye
-				["coord"] = { 62.6, 57.4, BADLANDS },
+				["coord"] = { 62.6, 57.4, MAP.BADLANDS },
 				["cost"] = {
 					{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
 					{ "i", 8204, 2 },	-- Tough Scorpid Gloves
@@ -88,7 +88,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5143,	-- Tribal Leatherworking
 				},
 				["qg"] = 7868,	-- Sarah Tanner
-				["coord"] = { 63.6, 76.0, SEARING_GORGE },
+				["coord"] = { 63.6, 76.0, MAP.SEARING_GORGE },
 				["cost"] = {
 					{ "i", 7081, 2 },	-- Breath of Wind
 					{ "i", 7075, 2 },	-- Core of Earth
@@ -105,7 +105,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5148,	-- Tribal Leatherworking
 				},
 				["qg"] = 7869,	-- Brumn Winterhoof
-				["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
+				["coord"] = { 28.2, 45.0, MAP.ARATHI_HIGHLANDS },
 				["cost"] = {
 					{ "i", 7081, 2 },	-- Breath of Wind
 					{ "i", 7075, 2 },	-- Core of Earth
@@ -123,7 +123,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5144,	-- Elemental Leatherworking
 				},
 				["qg"] = 7870,	-- Caryssia Moonhunter
-				["coord"] = { 89.4, 46.5, FERALAS },
+				["coord"] = { 89.4, 46.5, MAP.FERALAS },
 				["cost"] = {
 					{ "i", 8214, 1 },	-- Wild Leather Helmet
 					{ "i", 8211, 1 },	-- Wild Leather Vest
@@ -139,7 +139,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5146,	-- Elemental Leatherworking
 				},
 				["qg"] = 7871,	-- Se'Jib
-				["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+				["coord"] = { 36.6, 34.2, MAP.STRANGLETHORN_VALE },
 				["cost"] = {
 					{ "i", 8214, 1 },	-- Wild Leather Helmet
 					{ "i", 8211, 1 },	-- Wild Leather Vest
@@ -872,7 +872,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			q(55230, {	-- Telonis' Prized Leather
 				["sourceQuests"] = { 55229 },	-- Repaying the Debt
 				["provider"] = { "n", 151287 },	-- Telonis
-				["coord"] = { 42.6, 60.6, STORMWIND_CITY },
+				["coord"] = { 42.6, 60.6, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -883,7 +883,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			q(55218, {	-- Sheza's Prized Leather
 				["sourceQuests"] = { 55217 },	-- Repaying the Life Debt
 				["provider"] = { "n", 3037 },	-- Sheza Wildmane
-				["coord"] = { 69.7, 26.7, THUNDER_BLUFF },
+				["coord"] = { 69.7, 26.7, MAP.THUNDER_BLUFF },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {

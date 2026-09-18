@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 		-- #endif
 		["mapID"] = ONYXIAS_LAIR,
-		["coord"] = { 52.3, 76.2, DUSTWALLOW_MARSH },
+		["coord"] = { 52.3, 76.2, MAP.DUSTWALLOW_MARSH },
 		-- #if NOT ANYCLASSIC
 		-- TODO: Double check this in Retail.
 		-- You can get into all three difficulties in Wrath Classic.
@@ -81,7 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(WRATH_PHASE_THREE, q(24428, {	-- A Most Puzzling Circumstance (A)
 					["provider"] = { "i", 49644 },	-- Head of Onyxia (A)
 					["timeline"] = { ADDED_3_3_0 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
 					["groups"] = {
@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(WRATH_PHASE_THREE, q(24429, {	-- A Most Puzzling Circumstance (H)
 					["provider"] = { "i", 49643 },	-- Head of Onyxia (H)
 					["timeline"] = { ADDED_3_3_0 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 80,
 					["groups"] = {
@@ -105,9 +105,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7635, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- A Proper String
 					["sourceQuest"] = 7633,	-- An Introduction
 					["qg"] = 14525,	-- Stoma the Ancient
-					["coord"] = { 47.0, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
 					-- #if AFTER WRATH
-					["maps"] = { BURNING_STEPPES },
+					["maps"] = { MAP.BURNING_STEPPES },
 					-- #endif
 					-- #if BEFORE WRATH
 					["cost"] = { { "i", 18705, 1 } },	-- Mature Black Dragon Sinew
@@ -141,8 +141,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7634, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Ancient Sinew Wrapped Lamina
 					["sourceQuest"] = 7633,	-- An Introduction
 					["qg"] = 14526,	-- Hastat the Ancient
-					["coord"] = { 47.0, 24.48, FELWOOD },
-					["maps"] = { WINTERSPRING },
+					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
+					["maps"] = { MAP.WINTERSPRING },
 					["cost"] = { { "i", 18704, 1 } },	-- Mature Blue Dragon Sinew
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 60, 30),
@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_FOUR, q(84560, {	-- Celebrating Good Times
 					["sourceQuest"] = 7495,	-- Victory for the Alliance
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
-					["coord"] = { 67.2, 85.1, STORMWIND_CITY },
+					["coord"] = { 67.2, 85.1, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_1_15_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7496, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Celebrating Good Times
 					["sourceQuest"] = 7495,	-- Victory for the Alliance
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
-					["coord"] = { 67.2, 85.1, STORMWIND_CITY },
+					["coord"] = { 67.2, 85.1, MAP.STORMWIND_CITY },
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
@@ -194,7 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_FOUR, q(84561, {	-- For All To See
 					["sourceQuest"] = 7490,	-- Victory for the Horde
 					["qg"] = 4949,	-- Thrall
-					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_1_15_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7491, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- For All To See
 					["sourceQuest"] = 7490,	-- Victory for the Horde
 					["qg"] = 4949,	-- Thrall
-					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
@@ -262,16 +262,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
 					},
-					["coord"] = { 47.0, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
 					["timeline"] = { ADDED_1_15_3 },
-					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
+					["maps"] = { MAP.UNGORO_CRATER, MAP.BURNING_STEPPES, MAP.SILITHUS, MAP.WINTERSPRING },
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Simone's Head
 							["provider"] = { "i", 18952 },	-- Simone's Head
 							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",
-							["coord"] = { 34.5, 41.1, UNGORO_CRATER },
+							["coord"] = { 34.5, 41.1, MAP.UNGORO_CRATER },
 							["crs"] = {
 								14527,	-- Simone the Inconspicuous
 								14533,	-- Simone the Seductress
@@ -280,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(2, {	-- 0/1 Klinfran's Head
 							["provider"] = { "i", 18953 },	-- Klinfran's Head
 							["description"] = "Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",
-							["coord"] = { 25.3, 65.9, BURNING_STEPPES },
+							["coord"] = { 25.3, 65.9, MAP.BURNING_STEPPES },
 							["crs"] = {
 								14529,	-- Franklin the Friendly
 								14534,	-- Klinfran the Crazed
@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(3, {	-- 0/1 Solenor's Head
 							["provider"] = { "i", 18954 },	-- Solenor's Head
 							["description"] = "This is the hardest demon:\n\nStrengths:\n* He does NOT predictably chase you. He frequently stops to fear (disorienting you and causing around 800 damage also) or will stop to shoot homing beetles at you.\n* The homing beetles basically prevent you from bandaging. They move extremely slow but hit extremely hard\n* If you leave melee range (further than 2-3 range or so), he uses an instant cast fear spell that also does 700-800 damage instantly, and he can cast these quickly, almost seemingly chain casting. Shadow protection potions do absorb this damage, however, even with greater potions, he tears through them very fast. It's also likely that the fear will send you into the homing beetles\n* Seemingly unlimited mana bar, so Viper Sting is useless\n* Scorpid sting has very little/no effect on him\n* Melees extremely hard and fast (200+) when in normal form\n\nWeaknesses:\n* If you use Rank 3 Wing Clip on him, it immobilizes him completely with \"Crippling Clip\" for 30 seconds.\n* The homing missiles (creepings) are not fired when you remain in melee range\n* He does NOT cast his fear when you remain in melee range\n* Must be 'chilled' via Frost Trap prior to fully engaging\n\nLocated in Silithus.",
-							["coord"] = { 24.7, 76.0, SILITHUS },
+							["coord"] = { 24.7, 76.0, MAP.SILITHUS },
 							["crs"] = {
 								14536,	-- Nelson the Nice
 								14530,	-- Solenor the Slayer
@@ -298,7 +298,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(4, {	-- 0/1 Artorius's Head
 							["provider"] = { "i", 18955 },	-- Artorius's Head
 							["description"] = "Kite him using Aspect of the Cheetah. Keep Serpent Sting on at all times and use Concussive Shot whenever he gets close. It is important to remain beyond 30 yards of the Demonic Doom, yet within range to use Arcane Shot so that he continues chasing you. If you rely completely on Serpent Sting for damage, he will break aggro and return to where he started. Once you apply Serpent Sting, count to 4, and apply it again before it wears off (the damage does stack). You will be able to see this by a 2nd damage listing \"Stinging Trauma\", which will continue to increase each time the sting is applied.\n\nBe sure to clear the area you plan on fighting so as to not get dazed by another NPC wandering by.\n\nLocated in Winterspring.",
-							["coord"] = { 60.3, 13.2, WINTERSPRING },
+							["coord"] = { 60.3, 13.2, MAP.WINTERSPRING },
 							["crs"] = {
 								14531,	-- Artorius the Amiable
 								14535,	-- Artorius the Doombringer
@@ -327,8 +327,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
 					},
-					["coord"] = { 47.0, 24.48, FELWOOD },
-					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
+					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
+					["maps"] = { MAP.UNGORO_CRATER, MAP.BURNING_STEPPES, MAP.SILITHUS, MAP.WINTERSPRING },
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
@@ -336,7 +336,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Simone's Head
 							["provider"] = { "i", 18952 },	-- Simone's Head
 							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",
-							["coord"] = { 34.5, 41.1, UNGORO_CRATER },
+							["coord"] = { 34.5, 41.1, MAP.UNGORO_CRATER },
 							["crs"] = {
 								14527,	-- Simone the Inconspicuous
 								14533,	-- Simone the Seductress
@@ -345,7 +345,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(2, {	-- 0/1 Klinfran's Head
 							["provider"] = { "i", 18953 },	-- Klinfran's Head
 							["description"] = "Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",
-							["coord"] = { 25.3, 65.9, BURNING_STEPPES },
+							["coord"] = { 25.3, 65.9, MAP.BURNING_STEPPES },
 							["crs"] = {
 								14529,	-- Franklin the Friendly
 								14534,	-- Klinfran the Crazed
@@ -354,7 +354,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(3, {	-- 0/1 Solenor's Head
 							["provider"] = { "i", 18954 },	-- Solenor's Head
 							["description"] = "This is the hardest demon:\n\nStrengths:\n* He does NOT predictably chase you. He frequently stops to fear (disorienting you and causing around 800 damage also) or will stop to shoot homing beetles at you.\n* The homing beetles basically prevent you from bandaging. They move extremely slow but hit extremely hard\n* If you leave melee range (further than 2-3 range or so), he uses an instant cast fear spell that also does 700-800 damage instantly, and he can cast these quickly, almost seemingly chain casting. Shadow protection potions do absorb this damage, however, even with greater potions, he tears through them very fast. It's also likely that the fear will send you into the homing beetles\n* Seemingly unlimited mana bar, so Viper Sting is useless\n* Scorpid sting has very little/no effect on him\n* Melees extremely hard and fast (200+) when in normal form\n\nWeaknesses:\n* If you use Rank 3 Wing Clip on him, it immobilizes him completely with \"Crippling Clip\" for 30 seconds.\n* The homing missiles (creepings) are not fired when you remain in melee range\n* He does NOT cast his fear when you remain in melee range\n* Must be 'chilled' via Frost Trap prior to fully engaging\n\nLocated in Silithus.",
-							["coord"] = { 24.7, 76.0, SILITHUS },
+							["coord"] = { 24.7, 76.0, MAP.SILITHUS },
 							["crs"] = {
 								14536,	-- Nelson the Nice
 								14530,	-- Solenor the Slayer
@@ -363,7 +363,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(4, {	-- 0/1 Artorius's Head
 							["provider"] = { "i", 18955 },	-- Artorius's Head
 							["description"] = "Kite him using Aspect of the Cheetah. Keep Serpent Sting on at all times and use Concussive Shot whenever he gets close. It is important to remain beyond 30 yards of the Demonic Doom, yet within range to use Arcane Shot so that he continues chasing you. If you rely completely on Serpent Sting for damage, he will break aggro and return to where he started. Once you apply Serpent Sting, count to 4, and apply it again before it wears off (the damage does stack). You will be able to see this by a 2nd damage listing \"Stinging Trauma\", which will continue to increase each time the sting is applied.\n\nBe sure to clear the area you plan on fighting so as to not get dazed by another NPC wandering by.\n\nLocated in Winterspring.",
-							["coord"] = { 60.3, 13.2, WINTERSPRING },
+							["coord"] = { 60.3, 13.2, MAP.WINTERSPRING },
 							["crs"] = {
 								14531,	-- Artorius the Amiable
 								14535,	-- Artorius the Doombringer
@@ -485,7 +485,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["qg"] = 14394,	-- Major Mattingly
-					["coord"] = { 67.0, 85.0, STORMWIND_CITY },
+					["coord"] = { 67.0, 85.0, MAP.STORMWIND_CITY },
 					["requireSkill"] = LEATHERWORKING,
 					["learnedAt"] = 300,
 					["races"] = ALLIANCE_ONLY,
@@ -509,9 +509,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 14392,	-- Overlord Runthak / Overlord Natoj
 					["coords"] = {
 						-- #if BEFORE CATA
-						{ 52.2, 75.8, ORGRIMMAR },
+						{ 52.2, 75.8, MAP.ORGRIMMAR },
 						-- #else
-						{ 51.5, 83.0, ORGRIMMAR },
+						{ 51.5, 83.0, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["requireSkill"] = LEATHERWORKING,
@@ -529,13 +529,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(7495, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Victory for the Alliance
 					["provider"] = { "i", 18423 },	-- Head of Onyxia (A)
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
 				q(7490, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Victory for the Horde
 					["provider"] = { "i", 18422 },	-- Head of Onyxia (H)
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),

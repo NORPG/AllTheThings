@@ -13,8 +13,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(84147, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -25,8 +25,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(84155, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -60,7 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84187),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -108,12 +108,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84163, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84171, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -159,12 +159,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84195, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84203, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -210,8 +210,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(84148, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -222,8 +222,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(84156, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -261,7 +261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84188),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -298,12 +298,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84164, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84172, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						BLACKROCK_SPIRE,
@@ -337,12 +337,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84196, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84204, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -378,8 +378,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(84149, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -390,8 +390,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(84157, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -428,7 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84189),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { MAGE },
 					["cost"] = {
@@ -459,12 +459,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84165, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84173, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -492,12 +492,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84197, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84205, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -524,8 +524,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 			cl(PALADIN, {
 				q(84150, {	-- An Earnest Proposition [A]
 					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+					["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
@@ -551,7 +551,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(84182, {	-- Anthion's Parting Words [A]
 					["sourceQuest"] = 9015,	-- The Challenge
 					["qg"] = 16016,	-- Anthion Harmon
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -594,7 +594,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(84166, {	-- Just Compensation [A]
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
 					["cost"] = {
 						{ "i", 226732, 1 },	-- Lightforge Belt
@@ -624,7 +624,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(84198, {	-- Saving the Best for Last [A]
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					["maps"] = {
 						SCHOLOMANCE,
 						BLACKROCK_SPIRE,
@@ -665,8 +665,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(84151, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -677,8 +677,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(84158, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -716,7 +716,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84190),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						SCHOLOMANCE,
 						STRATHOLME,
@@ -754,12 +754,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84167, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84174, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						STRATHOLME,
@@ -794,12 +794,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84199, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84206, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -835,8 +835,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(84152, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -847,8 +847,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(84159, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -886,7 +886,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84191),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -914,12 +914,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84168, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84175, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						BLACKROCK_SPIRE,
@@ -953,12 +953,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84200, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84207, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -993,8 +993,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 			cl(SHAMAN, {
 				q(84160, {	-- An Earnest Proposition [H]
 					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+					["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16671, 1 },	-- Bindings of Elements
 						{ "g", 200000 },	-- 20g
@@ -1028,7 +1028,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(84192, {	-- Anthion's Parting Words [H]
 					["sourceQuest"] = 9015,	-- The Challenge
 					["qg"] = 16016,	-- Anthion Harmon
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -1077,7 +1077,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(84176, {	-- Just Compensation [H]
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					["maps"] = {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
@@ -1120,7 +1120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(84208, {	-- Saving the Best for Last [H]
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					["maps"] = {
 						SCHOLOMANCE,
 						BLACKROCK_SPIRE,
@@ -1166,8 +1166,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(84153, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1178,8 +1178,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(84161, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1217,7 +1217,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84193),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -1245,12 +1245,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84169, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84177, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARLOCK },
@@ -1276,12 +1276,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84201, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84209, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -1317,8 +1317,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(84154, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1329,8 +1329,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(84162, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1368,7 +1368,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(84194),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						SCHOLOMANCE,
 						STRATHOLME,
@@ -1406,12 +1406,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84170, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84178, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						STRATHOLME,
@@ -1446,12 +1446,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(84202, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(84210, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -1488,8 +1488,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8905, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1500,8 +1500,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(8913, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1530,7 +1530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(9016),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -1558,12 +1558,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8926, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8927, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -1591,12 +1591,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8999, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9007, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -1624,8 +1624,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8906, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1636,8 +1636,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(8914, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1666,7 +1666,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(9017),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -1694,12 +1694,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8931, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8938, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						BLACKROCK_SPIRE,
@@ -1725,12 +1725,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(9000, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9008, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -1758,8 +1758,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8907, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1770,8 +1770,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(8915, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1800,7 +1800,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(9018),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { MAGE },
 					["cost"] = {
@@ -1819,12 +1819,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8932, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8939, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -1852,12 +1852,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(9001, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9014, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -1886,8 +1886,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8908, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -1898,8 +1898,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(10493, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1928,7 +1928,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(10497),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -1956,12 +1956,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8933, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(10495, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
 					["classes"] = { PALADIN },
@@ -1979,12 +1979,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(9002, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(10499, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -2010,8 +2010,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				-- #else
 				q(8908, {	-- An Earnest Proposition [A]
 					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+					["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
@@ -2029,7 +2029,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8954, {	-- Anthion's Parting Words [A]
 					["sourceQuest"] = 9015,	-- The Challenge
 					["qg"] = 16016,	-- Anthion Harmon
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -2057,7 +2057,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8933, {	-- Just Compensation [A]
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
 					["cost"] = {
 						{ "i", 16723, 1 },	-- Lightforge Belt
@@ -2074,7 +2074,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(9002, {	-- Saving the Best for Last [A]
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					["maps"] = {
 						SCHOLOMANCE,
 						BLACKROCK_SPIRE,
@@ -2103,8 +2103,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8909, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2115,8 +2115,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(8916, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2145,7 +2145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(9019),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						SCHOLOMANCE,
 						STRATHOLME,
@@ -2174,12 +2174,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8934, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8940, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						STRATHOLME,
@@ -2206,12 +2206,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(9003, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9009, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -2239,8 +2239,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8910, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2251,8 +2251,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(8917, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2281,7 +2281,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(9020),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -2300,12 +2300,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8935, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8941, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						BLACKROCK_SPIRE,
@@ -2331,12 +2331,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(9004, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9010, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -2365,8 +2365,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(10492, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2377,8 +2377,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(8918, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2407,7 +2407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(8957),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -2435,12 +2435,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(10494, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8942, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						BLACKROCK_SPIRE,
@@ -2466,12 +2466,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(10498, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9011, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -2497,8 +2497,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				-- #else
 				q(8918, {	-- An Earnest Proposition [H]
 					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+					["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16671, 1 },	-- Bindings of Elements
 						{ "g", 200000 },	-- 20g
@@ -2523,7 +2523,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8957, {	-- Anthion's Parting Words [H]
 					["sourceQuest"] = 9015,	-- The Challenge
 					["qg"] = 16016,	-- Anthion Harmon
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
 						BLACKROCK_SPIRE,
@@ -2551,7 +2551,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8942, {	-- Just Compensation [H]
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					["maps"] = {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
@@ -2576,7 +2576,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(9011, {	-- Saving the Best for Last [H]
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					["maps"] = {
 						SCHOLOMANCE,
 						BLACKROCK_SPIRE,
@@ -2605,8 +2605,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8911, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2617,8 +2617,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(8919, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2647,7 +2647,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(9021),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -2666,12 +2666,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8936, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8943, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARLOCK },
@@ -2689,12 +2689,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(9005, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9012, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -2722,8 +2722,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8912, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
-						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
+						["maps"] = { MAP.WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -2734,8 +2734,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					}),
 					["hordeQuestData"] = q(8920, {	-- An Earnest Proposition [H]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
-						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
+						["maps"] = { MAP.SILITHUS, SCHOLOMANCE, STRATHOLME },
 						-- #if BEFORE 4.0.3
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
@@ -2764,7 +2764,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["hordeQuestData"] = q(9022),	-- Anthion's Parting Words [H]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						SCHOLOMANCE,
 						STRATHOLME,
@@ -2793,12 +2793,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(8937, {	-- Just Compensation [A]
 						["sourceQuest"] = 8977,	-- Return to Deliana
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8944, {	-- Just Compensation [H]
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						STRATHOLME,
@@ -2825,12 +2825,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["allianceQuestData"] = q(9006, {	-- Saving the Best for Last [A]
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9013, {	-- Saving the Best for Last [H]
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						SCHOLOMANCE,
@@ -2859,13 +2859,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8925, {	-- A Portable Power Source
 					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
 					["qg"] = 16014,	-- Mux Manascrambler
-					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { BURNING_STEPPES },
+					["coord"] = { 52.4, 27.2, MAP.TANARIS },
+					["maps"] = { MAP.BURNING_STEPPES },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Magma Core
 							["provider"] = { "i", 21938 },	-- Magma Core
-							["coord"] = { 36.0, 56.4, BURNING_STEPPES },
+							["coord"] = { 36.0, 56.4, MAP.BURNING_STEPPES },
 							["cr"] = 16043,	-- Magma Lord Bokk
 						}),
 					},
@@ -2873,8 +2873,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8928, {	-- A Shifty Merchant
 					["sourceQuest"] = 8925,	-- A Portable Power Source
 					["qg"] = 16014,	-- Mux Manascrambler
-					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { WINTERSPRING },
+					["coord"] = { 52.4, 27.2, MAP.TANARIS },
+					["maps"] = { MAP.WINTERSPRING },
 					["cost"] = { { "i", 21939, 1 } },	-- Fel Elemental Rod
 					["lvl"] = 58,
 				}),
@@ -2908,7 +2908,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							{ "n", 16013 },	-- Deliana
 							{ "i", 21985 },	-- Sealed Blood Container
 						},
-						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["coord"] = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8923, {	-- A Supernatural Device [H]
 						["sourceQuests"] = {
@@ -2939,9 +2939,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							{ "n", 16012 },	-- Mokvar
 							{ "i", 22382 },	-- Sealed Venom Container
 						},
-						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["coord"] = { 35.0, 38.3, MAP.ORGRIMMAR },
 					}),
-					["maps"] = { TANARIS },
+					["maps"] = { MAP.TANARIS },
 					["lvl"] = 58,
 				},
 				q(8948, {	-- Anthion's Old Friend
@@ -2950,7 +2950,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "n", 16016 },	-- Anthion Harmon
 						{ "i", 21983 },	-- Incomplete Banner of Provocation
 					},
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = {
 						DIRE_MAUL,
 						235,	-- Gordok Commons
@@ -2963,7 +2963,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8947, {	-- Anthion's Strange Request
 					["sourceQuest"] = 8946,	-- Proof of Life
 					["qg"] = 16016,	-- Anthion Harmon
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					["cost"] = {
 						{ "i", 11371, 3 },	-- Dark Iron Bar
 						{ "i", 12810, 20 },	-- Enchanted Leather
@@ -2974,10 +2974,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				}),
 				{	-- Back to the Beginning
 					["allianceQuestData"] = q(8997, {	-- Back to the Beginning [A]
-						["maps"] = { BLACKROCK_MOUNTAIN, IRONFORGE },
+						["maps"] = { BLACKROCK_MOUNTAIN, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8998, {	-- Back to the Beginning [H]
-						["maps"] = { BLACKROCK_MOUNTAIN, ORGRIMMAR },
+						["maps"] = { BLACKROCK_MOUNTAIN, MAP.ORGRIMMAR },
 					}),
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8996,	-- Return to Bodley
@@ -3010,7 +3010,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							-- #endif
 						},
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.53, 52.64, IRONFORGE },
+						["coord"] = { 43.53, 52.64, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9032, {	-- Bodley's Unfortunate Fate [H]
 						["sourceQuests"] = {
@@ -3038,7 +3038,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							-- #endif
 						},
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 34.95, 38.29, ORGRIMMAR },
+						["coord"] = { 34.95, 38.29, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
@@ -3057,7 +3057,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8962, {	-- Components of Importance [WARRIOR, MAGE]
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.SILITHUS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARRIOR, MAGE },
 					["lvl"] = 58,
@@ -3077,7 +3077,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8963, {	-- Components of Importance [WARLOCK, DRUID]
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARLOCK, DRUID },
 					["lvl"] = 58,
@@ -3094,7 +3094,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8964, {	-- Components of Importance [HUNTER, ROGUE]
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.EASTERN_PLAGUELANDS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { HUNTER, ROGUE },
 					["lvl"] = 58,
@@ -3108,7 +3108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8965, {	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { PALADIN, PRIEST, SHAMAN },
 					["lvl"] = 58,
@@ -3124,7 +3124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						8930,	-- In Search of Anthion [HORDE]
 					},
 					["qg"] = 16016,	-- Anthion Harmon
-					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
+					["coord"] = { 30.85, 16.75, MAP.EASTERN_PLAGUELANDS },
 					["maps"] = { STRATHOLME },
 					["lvl"] = 58,
 					["groups"] = { i(22137) },	-- Ysida's Satchel
@@ -3187,8 +3187,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8924, {	-- Hunting for Ectoplasm
 					["sourceQuest"] = 8921,	-- The Ectoplasmic Distiller
 					["qg"] = 16014,	-- Mux Manascrambler
-					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { EASTERN_PLAGUELANDS, SILITHUS, WINTERSPRING },
+					["coord"] = { 52.4, 27.2, MAP.TANARIS },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS, MAP.SILITHUS, MAP.WINTERSPRING },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/12 Scorched Ectoplasm
@@ -3237,7 +3237,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						8969,	-- The Left Piece of Lord Valthalak's Amulet [PALADIN, PRIEST, SHAMAN]
 					},
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, DUSTWALLOW_MARSH },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.DUSTWALLOW_MARSH },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/20 Bloodkelp
@@ -3283,7 +3283,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							-- #endif
 						},
 						["qg"] = 16013,	-- Deliana
-						["coord"] = { 43.53, 52.64, IRONFORGE },
+						["coord"] = { 43.53, 52.64, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8930, {	-- In Search of Anthion [H]
 						["sourceQuests"] = {
@@ -3311,9 +3311,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							-- #endif
 						},
 						["qg"] = 16012,	-- Mokvar
-						["coord"] = { 34.95, 38.29, ORGRIMMAR },
+						["coord"] = { 34.95, 38.29, MAP.ORGRIMMAR },
 					}),
-					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS, STRATHOLME },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
 				},
@@ -3340,7 +3340,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8985, {	-- More Components of Importance [WARRIOR, ROGUE]
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARRIOR, ROGUE },
 					["lvl"] = 58,
@@ -3359,7 +3359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8986, {	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.SILITHUS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["lvl"] = 58,
@@ -3381,7 +3381,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8987, {	-- More Components of Importance [PRIEST, MAGE]
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.EASTERN_PLAGUELANDS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { PRIEST, MAGE },
 					["lvl"] = 58,
@@ -3397,7 +3397,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8988, {	-- More Components of Importance [HUNTER, WARLOCK]
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
+					["maps"] = { BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { HUNTER, WARLOCK },
 					["lvl"] = 58,
@@ -3417,7 +3417,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8946, {	-- Proof of Life
 					["sourceQuest"] = 8945,	-- Dead Man's Plea
 					["qg"] = 16031,	-- Ysida Harmon
-					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS, STRATHOLME },
 					["cost"] = { { "i", 22139, 1 } },	-- Ysida's Locket
 					["lvl"] = 58,
 				}),
@@ -3447,14 +3447,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				}),
 				{	-- Return to Deliana / Return to Mokvar
 					["allianceQuestData"] = q(8977, {	-- Return to Deliana [A]
-						["maps"] = { IRONFORGE },
+						["maps"] = { MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8978, {	-- Return to Mokvar [H]
-						["maps"] = { ORGRIMMAR },
+						["maps"] = { MAP.ORGRIMMAR },
 					}),
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
-					["coord"] = { 52.4, 27.2, TANARIS },
+					["coord"] = { 52.4, 27.2, MAP.TANARIS },
 					["lvl"] = 58,
 					["groups"] = {
 						i(22115),	-- Extra-Dimensional Ghost Revealer
@@ -3491,8 +3491,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						8923,	-- A Supernatural Device [HORDE]
 					},
 					["qg"] = 16014,	-- Mux Manascrambler
-					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { BURNING_STEPPES },
+					["coord"] = { 52.4, 27.2, MAP.TANARIS },
+					["maps"] = { MAP.BURNING_STEPPES },
 					["cost"] = {
 						{ "i", 16006, 1 },	-- Delicate Arcanite Converter
 						{ "i", 16203, 4 },	-- Greater Eternal Essence
@@ -3753,10 +3753,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALL_OF_BLACKHAND,
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
-						EASTERN_PLAGUELANDS,
-						SILITHUS,
-						WESTERN_PLAGUELANDS,
-						TIRISFAL_GLADES,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.SILITHUS,
+						MAP.WESTERN_PLAGUELANDS,
+						MAP.TIRISFAL_GLADES,
 					},
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,

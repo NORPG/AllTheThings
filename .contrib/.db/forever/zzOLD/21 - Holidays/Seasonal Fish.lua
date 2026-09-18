@@ -28,14 +28,14 @@ root(ROOTS.Holidays, {
 	}), {
 		["maps"] = {
 			-- #if AFTER 4.0.3
-			BLASTED_LANDS,
-			SWAMP_OF_SORROWS,
+			MAP.BLASTED_LANDS,
+			MAP.SWAMP_OF_SORROWS,
 			-- #else
-			AZSHARA,
-			TANARIS,
-			THE_HINTERLANDS,
-			FERALAS,
-			STRANGLETHORN_VALE,
+			MAP.AZSHARA,
+			MAP.TANARIS,
+			MAP.THE_HINTERLANDS,
+			MAP.FERALAS,
+			MAP.STRANGLETHORN_VALE,
 			-- #endif
 		},
 		["groups"] = {
@@ -73,14 +73,14 @@ root(ROOTS.Holidays, {
 	}), {
 		["maps"] = {
 			-- #if AFTER 4.0.3
-			BLASTED_LANDS,
-			SWAMP_OF_SORROWS,
+			MAP.BLASTED_LANDS,
+			MAP.SWAMP_OF_SORROWS,
 			-- #else
-			AZSHARA,
-			TANARIS,
-			THE_HINTERLANDS,
-			FERALAS,
-			STRANGLETHORN_VALE,
+			MAP.AZSHARA,
+			MAP.TANARIS,
+			MAP.THE_HINTERLANDS,
+			MAP.FERALAS,
+			MAP.STRANGLETHORN_VALE,
 			-- #endif
 		},
 		["groups"] = {

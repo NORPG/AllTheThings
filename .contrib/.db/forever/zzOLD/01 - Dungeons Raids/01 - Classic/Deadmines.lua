@@ -11,9 +11,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 	["coords"] = {
 		-- #if AFTER CATA
 		{ 25.6, 51.0, DEADMINES_OUTDOORS },	-- Deadmines, The Deadmines [Westfall]
-		{ 42.6, 71.8, WESTFALL },	-- Building entrance
+		{ 42.6, 71.8, MAP.WESTFALL },	-- Building entrance
 		-- #else
-		{ 42.2, 82.6, WESTFALL },
+		{ 42.2, 82.6, MAP.WESTFALL },
 		-- #endif
 	},
 	["maps"] = {
@@ -29,9 +29,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 656,	-- Wilder Thistlenettle
 				["coords"] = {
 					-- #if AFTER WRATH
-					{ 70.2, 40.8, STORMWIND_CITY },
+					{ 70.2, 40.8, MAP.STORMWIND_CITY },
 					-- #else
-					{ 65.4, 21.2, STORMWIND_CITY },
+					{ 65.4, 21.2, MAP.STORMWIND_CITY },
 					-- #endif
 				},
 				["timeline"] = { REMOVED_4_0_3 },
@@ -95,9 +95,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 656,	-- Wilder Thistlenettle
 				["coords"] = {
 					-- #if AFTER WRATH
-					{ 70.2, 40.8, STORMWIND_CITY },
+					{ 70.2, 40.8, MAP.STORMWIND_CITY },
 					-- #else
-					{ 65.4, 21.2, STORMWIND_CITY },
+					{ 65.4, 21.2, MAP.STORMWIND_CITY },
 					-- #endif
 				},
 				["timeline"] = { REMOVED_4_0_3 },
@@ -131,7 +131,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					155,	-- The Defias Brotherhood
 				},
 				["qg"] = 820,	-- Scout Riell <The People's Militia>
-				["coord"] = { 56.7, 47.4, WESTFALL },
+				["coord"] = { 56.7, 47.4, MAP.WESTFALL },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 14,
@@ -183,7 +183,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(166, {	-- The Defias Brotherhood (7/7)
 				["sourceQuest"] = 155,	-- The Defias Brotherhood (6/7)
 				["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
-				["coord"] = { 56.3, 47.5, WESTFALL },
+				["coord"] = { 56.3, 47.5, MAP.WESTFALL },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 14,
@@ -268,9 +268,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 				["coords"] = {
 					-- #if AFTER WRATH
-					{ 57.7, 47.9, STORMWIND_CITY },
+					{ 57.7, 47.9, MAP.STORMWIND_CITY },
 					-- #else
-					{ 49.0, 30.2, STORMWIND_CITY },
+					{ 49.0, 30.2, MAP.STORMWIND_CITY },
 					-- #endif
 				},
 				["timeline"] = { REMOVED_4_0_3 },
@@ -295,9 +295,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 6579,	-- Shoni the Shilent
 				["coords"] = {
 					-- #if AFTER WRATH
-					{ 62.8, 34.8, STORMWIND_CITY },
+					{ 62.8, 34.8, MAP.STORMWIND_CITY },
 					-- #else
-					{ 55.5, 12.5, STORMWIND_CITY },
+					{ 55.5, 12.5, MAP.STORMWIND_CITY },
 					-- #endif
 				},
 				["timeline"] = { REMOVED_4_0_3 },
@@ -321,7 +321,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
 				["coords"] = {
 					-- #if BEFORE CATA
-					{ 44.0, 78.3, WESTFALL },
+					{ 44.0, 78.3, MAP.WESTFALL },
 					-- #else
 					{ 57.4, 42.9, DEADMINES_OUTDOORS },
 					{ 46.8, 47.8, DEADMINES_OUTDOORS },
@@ -344,7 +344,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
 				["coords"] = {
 					-- #if BEFORE CATA
-					{ 42.2, 82.6, WESTFALL },
+					{ 42.2, 82.6, MAP.WESTFALL },
 					-- #else
 					{ 55.8, 91.2, DEADMINES_OUTDOORS },
 					-- #endif
@@ -360,7 +360,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
 				["coords"] = {
 					-- #if BEFORE CATA
-					{ 42.2, 79.9, WESTFALL },
+					{ 42.2, 79.9, MAP.WESTFALL },
 					-- #else
 					{ 52.8, 54.6, DEADMINES_OUTDOORS },
 					{ 56.2, 67.8, DEADMINES_OUTDOORS },

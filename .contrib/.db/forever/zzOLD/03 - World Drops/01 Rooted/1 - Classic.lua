@@ -3554,7 +3554,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 				-- #if AFTER 10.1.7
 				["description"] = "Can drop from any troll in zones such as Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
-				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
+				["maps"] = { MAP.ARATHI_HIGHLANDS, MAP.DUN_MOROGH, NORTHERN_STRANGLETHORN, MAP.SILITHUS, THE_CAPE_OF_STRANGLETHORN, MAP.THE_HINTERLANDS, ZULGURUB },
 				-- #endif
 				["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 			}),
@@ -4015,14 +4015,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14256, {	-- Felcloth
 			-- #if AFTER CATA
 			["coords"] = {
-				{ 52.0, 70.15, WINTERSPRING },	-- Xorothian Imps (Mazthoril)
-				{ 52.3, 75.70, WINTERSPRING },	-- Xorothian Satyrs (Mazthoril)
-				{ 52.75, 64.65, WINTERSPRING },	-- Xorothian Eredar (Mazthoril)
-				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
-				{ 17.7, 37.7, FELWOOD },	-- Misty Valley
-				{ 37.7, 67.85, BLASTED_LANDS },	-- The Tainted Forest
-				{ 33.4, 46.8, BLASTED_LANDS },	-- The Tainted Scar
-				{ 45.9, 46.8, BLASTED_LANDS },	-- The Dark Portal, west of
+				{ 52.0, 70.15, MAP.WINTERSPRING },	-- Xorothian Imps (Mazthoril)
+				{ 52.3, 75.70, MAP.WINTERSPRING },	-- Xorothian Satyrs (Mazthoril)
+				{ 52.75, 64.65, MAP.WINTERSPRING },	-- Xorothian Eredar (Mazthoril)
+				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
+				{ 17.7, 37.7, MAP.FELWOOD },	-- Misty Valley
+				{ 37.7, 67.85, MAP.BLASTED_LANDS },	-- The Tainted Forest
+				{ 33.4, 46.8, MAP.BLASTED_LANDS },	-- The Tainted Scar
+				{ 45.9, 46.8, MAP.BLASTED_LANDS },	-- The Dark Portal, west of
 			},
 			["crs"] = {
 				50315,	-- Xorothian Eredar
@@ -4040,33 +4040,33 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = {
 				DIRE_MAUL_WARPWOOD_QUARTER,
 				-- #if BEFORE CATA
-				FELWOOD,
+				MAP.FELWOOD,
 				-- #endif
 			},
 		}),
 		i(2589, {	-- Linen Cloth
 			["description"] = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
-				DUN_MOROGH,
-				DUROTAR,
-				ELWYNN_FOREST,
-				LOCH_MODAN,
-				MULGORE,
+				MAP.DUN_MOROGH,
+				MAP.DUROTAR,
+				MAP.ELWYNN_FOREST,
+				MAP.LOCH_MODAN,
+				MAP.MULGORE,
 				RAGEFIRE_CHASM,
-				SILVERPINE_FOREST,
-				TIRISFAL_GLADES,
-				WESTFALL,
+				MAP.SILVERPINE_FOREST,
+				MAP.TIRISFAL_GLADES,
+				MAP.WESTFALL,
 			},
 		}),
 		i(4338, {	-- Mageweave Cloth
 			["description"] = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
-				BADLANDS,
-				BURNING_STEPPES,
+				MAP.BADLANDS,
+				MAP.BURNING_STEPPES,
 				DIRE_MAUL_GORDOK_COMMONS,
-				FELWOOD,
-				SEARING_GORGE,
-				TANARIS,
+				MAP.FELWOOD,
+				MAP.SEARING_GORGE,
+				MAP.TANARIS,
 				ZULFARRAK,
 			},
 		}),
@@ -4074,37 +4074,37 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
 				BLACKROCK_DEPTHS,
-				BLASTED_LANDS,
+				MAP.BLASTED_LANDS,
 				-- #if BEFORE 6.0.1
 				LOWER_BLACKROCK_SPIRE,
 				-- #endif
-				SILITHUS,
+				MAP.SILITHUS,
 				STRATHOLME,
-				SWAMP_OF_SORROWS,
-				WINTERSPRING,
+				MAP.SWAMP_OF_SORROWS,
+				MAP.WINTERSPRING,
 			},
 		}),
 		i(4306, {	-- Silk Cloth
 			["description"] = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
-				ARATHI_HIGHLANDS,
-				DESOLACE,
+				MAP.ARATHI_HIGHLANDS,
+				MAP.DESOLACE,
 				DIRE_MAUL_GORDOK_COMMONS,
-				FERALAS,
+				MAP.FERALAS,
 				MARAUDON,
 				RAZORFEN_KRAUL,
-				THE_HINTERLANDS,
+				MAP.THE_HINTERLANDS,
 				ULDAMAN,
 			},
 		}),
 		i(2592, {	-- Wool Cloth
 			["description"] = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
-				ASHENVALE,
+				MAP.ASHENVALE,
 				BLACKFATHOM_DEEPS,
-				DUSKWOOD,
+				MAP.DUSKWOOD,
 				THE_STOCKADE,
-				WETLANDS,
+				MAP.WETLANDS,
 			},
 		}),
 		-- Silk:
@@ -4133,8 +4133,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER CATA
 				LBRS_SKITTERWEB_TUNNELS,
 				-- #else
-				SEARING_GORGE,
-				WESTERN_PLAGUELANDS,
+				MAP.SEARING_GORGE,
+				MAP.WESTERN_PLAGUELANDS,
 				-- #endif
 			},
 		}),
@@ -4146,7 +4146,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				5857,	-- Searing Lava Spider
 			},
 			["description"] = "Drops from spiders in Searing Gorge.",
-			["maps"] = { SEARING_GORGE },
+			["maps"] = { MAP.SEARING_GORGE },
 			-- #elseif AFTER 4.0.3
 			["crs"] = {
 				5856,	-- Glassweb Spider
@@ -4175,7 +4175,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				"Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 				-- #endif
-			["maps"] = { ASHENVALE, },
+			["maps"] = { MAP.ASHENVALE, },
 			["crs"] = {
 				3821,	-- Wildthorn Lurker
 				3819,	-- Wildthorn Stalker
@@ -4208,12 +4208,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			["description"] = "Drops from spiders in the level bracket 32-60.",
 			["maps"] = {
-				DUSTWALLOW_MARSH,
+				MAP.DUSTWALLOW_MARSH,
 				-- #if BEFORE CATA
-				SEARING_GORGE,
+				MAP.SEARING_GORGE,
 				-- #endif
 				-- #if ANYCLASSIC
-				WESTERN_PLAGUELANDS,
+				MAP.WESTERN_PLAGUELANDS,
 				-- #endif
 			},
 		}),
@@ -4224,25 +4224,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7069, {	-- Elemental Air
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 52.0, 50.0, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
-				{ 30.0, 78.0, DESOLACE },	-- Sar'theris Strand, east of
-				{ 53.0, 86.0, DESOLACE },	-- Mannoroc Coven, south of
-				{ 62.0, 73.0, DESOLACE },	-- Mannoroc Coven, east of
-				{ 61.0, 50.0, DESOLACE },	-- Kodo Graveyard, northeast of
-				{ 44.0, 52.0, DESOLACE },	-- Kodo Graveyard, northwest of
-				{ 50.0, 32.0, DESOLACE },	-- Northwestern Desolace
-				{ 32.0, 72.0, TANARIS },	-- Southwestern Tanaris
-				{ 46.0, 72.0, TANARIS },	-- Southern Tanaris
-				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
-				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
-				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				{ 52.0, 50.0, MAP.ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 30.0, 78.0, MAP.DESOLACE },	-- Sar'theris Strand, east of
+				{ 53.0, 86.0, MAP.DESOLACE },	-- Mannoroc Coven, south of
+				{ 62.0, 73.0, MAP.DESOLACE },	-- Mannoroc Coven, east of
+				{ 61.0, 50.0, MAP.DESOLACE },	-- Kodo Graveyard, northeast of
+				{ 44.0, 52.0, MAP.DESOLACE },	-- Kodo Graveyard, northwest of
+				{ 50.0, 32.0, MAP.DESOLACE },	-- Northwestern Desolace
+				{ 32.0, 72.0, MAP.TANARIS },	-- Southwestern Tanaris
+				{ 46.0, 72.0, MAP.TANARIS },	-- Southern Tanaris
+				{ 32.0, 16.0, MAP.SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, MAP.SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, MAP.SILITHUS },	-- The Crystal Vale, south of
 				-- #else
-				{ 46.4, 52.1, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
-				{ 44.7, 43.0, DESOLACE },	-- Cenarion Wildlands, west of
-				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
-				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				{ 46.4, 52.1, MAP.ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 44.7, 43.0, MAP.DESOLACE },	-- Cenarion Wildlands, west of
+				{ 37.7, 17.4, MAP.SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, MAP.SILITHUS },	-- The Crystal Vale, south of
 				-- #endif
-				{ 44.9, 44.8, TANARIS },	-- Abyssal Sands
+				{ 44.9, 44.8, MAP.TANARIS },	-- Abyssal Sands
 			},
 			["crs"] = {
 				11745,	-- Cyclone Warrior
@@ -4261,18 +4261,18 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7081, {	-- Breath of Wind
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 32.0, 72.0, TANARIS },	-- Southwestern Tanaris
-				{ 46.0, 72.0, TANARIS },	-- Southern Tanaris
-				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
-				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
-				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				{ 32.0, 72.0, MAP.TANARIS },	-- Southwestern Tanaris
+				{ 46.0, 72.0, MAP.TANARIS },	-- Southern Tanaris
+				{ 32.0, 16.0, MAP.SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, MAP.SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, MAP.SILITHUS },	-- The Crystal Vale, south of
 				-- #else
-				{ 46.4, 52.1, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
-				{ 44.7, 43.0, DESOLACE },	-- Cenarion Wildlands, west of
-				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
-				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				{ 46.4, 52.1, MAP.ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 44.7, 43.0, MAP.DESOLACE },	-- Cenarion Wildlands, west of
+				{ 37.7, 17.4, MAP.SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, MAP.SILITHUS },	-- The Crystal Vale, south of
 				-- #endif
-				{ 44.9, 44.8, TANARIS },	-- Abyssal Sands
+				{ 44.9, 44.8, MAP.TANARIS },	-- Abyssal Sands
 			},
 			["crs"] = {
 				11745,	-- Cyclone Warrior
@@ -4295,12 +4295,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7082, {	-- Essence of Air
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
-				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
-				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				{ 32.0, 16.0, MAP.SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, MAP.SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, MAP.SILITHUS },	-- The Crystal Vale, south of
 				-- #else
-				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
-				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				{ 37.7, 17.4, MAP.SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, MAP.SILITHUS },	-- The Crystal Vale, south of
 				-- #endif
 			},
 			["crs"] = {
@@ -4325,27 +4325,27 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7067, {	-- Elemental Earth
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 36.0, 57.0, ARATHI_HIGHLANDS },	-- Circle of Inner Binding
-				{ 54.0, 82.0, BADLANDS },	-- Eastern shelf, southside
-				{ 42.0, 78.0, BADLANDS },	-- Middle shelf, southside
-				{ 9.0, 80.0, BADLANDS },	-- Southwest side
-				{ 18.0, 41.0, BADLANDS },	-- Northwest side
-				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
-				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
-				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
-				{ 48.0, 48.0, TANARIS },	-- Tanaris Heights
-				{ 49.0, 25.0, TANARIS },	-- Tanaris North
+				{ 36.0, 57.0, MAP.ARATHI_HIGHLANDS },	-- Circle of Inner Binding
+				{ 54.0, 82.0, MAP.BADLANDS },	-- Eastern shelf, southside
+				{ 42.0, 78.0, MAP.BADLANDS },	-- Middle shelf, southside
+				{ 9.0, 80.0, MAP.BADLANDS },	-- Southwest side
+				{ 18.0, 41.0, MAP.BADLANDS },	-- Northwest side
+				{ 65.0, 27.0, MAP.BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, MAP.BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
+				{ 48.0, 48.0, MAP.TANARIS },	-- Tanaris Heights
+				{ 49.0, 25.0, MAP.TANARIS },	-- Tanaris North
 				-- #else
-				{ 29.9, 59.7, ARATHI_HIGHLANDS },	-- Circle of Inner Binding
-				{ 32.5, 53.8, BADLANDS },	-- Scar of the Worldbreaker
-				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 29.9, 59.7, MAP.ARATHI_HIGHLANDS },	-- Circle of Inner Binding
+				{ 32.5, 53.8, MAP.BADLANDS },	-- Scar of the Worldbreaker
+				{ 18.2, 44.0, MAP.BURNING_STEPPES },	-- Flamestar Post, north of
 				{ 47.6, 81.0, SOUTHERN_BARRENS },	-- Bael Modan, north of
-				{ 72.1, 78.4, STONETALON_MOUNTAINS },	-- The Deep Reaches (Alliance entrance)
-				{ 66.4, 60.6, STONETALON_MOUNTAINS },	-- The Deep Reaches (Horde entrance)
-				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				{ 72.1, 78.4, MAP.STONETALON_MOUNTAINS },	-- The Deep Reaches (Alliance entrance)
+				{ 66.4, 60.6, MAP.STONETALON_MOUNTAINS },	-- The Deep Reaches (Horde entrance)
+				{ 59.6, 59.3, MAP.WINTERSPRING },	-- Beryl Egress, north of
 				-- #endif
-				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
-				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+				{ 62.3, 46.8, MAP.BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, MAP.SILITHUS },	-- The Crystal Vale
 			},
 			["crs"] = {
 				11747,	-- Desert Rager
@@ -4375,18 +4375,18 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7075, {	-- Core of Earth
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
-				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
-				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
-				{ 48.0, 48.0, TANARIS },	-- Tanaris Heights
-				{ 49.0, 25.0, TANARIS },	-- Tanaris North
+				{ 65.0, 27.0, MAP.BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, MAP.BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
+				{ 48.0, 48.0, MAP.TANARIS },	-- Tanaris Heights
+				{ 49.0, 25.0, MAP.TANARIS },	-- Tanaris North
 				-- #else
-				{ 32.5, 53.8, BADLANDS },	-- Scar of the Worldbreaker
-				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
-				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				{ 32.5, 53.8, MAP.BADLANDS },	-- Scar of the Worldbreaker
+				{ 18.2, 44.0, MAP.BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 59.6, 59.3, MAP.WINTERSPRING },	-- Beryl Egress, north of
 				-- #endif
-				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
-				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+				{ 62.3, 46.8, MAP.BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, MAP.SILITHUS },	-- The Crystal Vale
 			},
 			["crs"] = {
 				11747,	-- Desert Rager
@@ -4410,15 +4410,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7076, {	-- Essence of Earth
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
-				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
-				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 65.0, 27.0, MAP.BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, MAP.BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
 				-- #else
-				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
-				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				{ 18.2, 44.0, MAP.BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 59.6, 59.3, MAP.WINTERSPRING },	-- Beryl Egress, north of
 				-- #endif
-				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
-				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+				{ 62.3, 46.8, MAP.BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, MAP.SILITHUS },	-- The Crystal Vale
 			},
 			["crs"] = {
 				11747,	-- Desert Rager
@@ -4444,13 +4444,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7068, {	-- Elemental Fire
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 25.0, 30.0, ARATHI_HIGHLANDS },	-- Circle of West Binding
-				{ 34.0, 64.0, STONETALON_MOUNTAINS },	-- The Charred Vale
+				{ 25.0, 30.0, MAP.ARATHI_HIGHLANDS },	-- Circle of West Binding
+				{ 34.0, 64.0, MAP.STONETALON_MOUNTAINS },	-- The Charred Vale
 				-- #else
-				{ 18.8, 30.7, ARATHI_HIGHLANDS },	-- Circle of West Binding
+				{ 18.8, 30.7, MAP.ARATHI_HIGHLANDS },	-- Circle of West Binding
 				-- #endif
-				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
-				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
+				{ 51.7, 50.7, MAP.UNGORO_CRATER },	-- Fire Plum Ridge
 			},
 			["crs"] = {
 				5850,	-- Blazing Elemental
@@ -4469,13 +4469,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = {
 				BLACKROCK_DEPTHS,
 				MOLTEN_CORE,
-				SEARING_GORGE,
+				MAP.SEARING_GORGE,
 			},
 		}),
 		i(7077, {	-- Hearth of Fire
 			["coords"] = {
-				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
-				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
+				{ 51.7, 50.7, MAP.UNGORO_CRATER },	-- Fire Plum Ridge
 			},
 			["crs"] = {
 				5850,	-- Blazing Elemental
@@ -4490,15 +4490,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = {
 				BLACKROCK_DEPTHS,
 				MOLTEN_CORE,
-				SEARING_GORGE,
+				MAP.SEARING_GORGE,
 			},
 		}),
 		i(7078, {	-- Essence of Fire
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
 				-- #endif
-				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+				{ 51.7, 50.7, MAP.UNGORO_CRATER },	-- Fire Plum Ridge
 			},
 			["crs"] = {
 				6521,	-- Living Blaze
@@ -4517,18 +4517,18 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(10286, {	-- Heart of the Wild
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
-				{ 64.0, 36.0, WESTERN_PLAGUELANDS },	-- The Weeping Cave
+				{ 56.0, 17.0, MAP.FELWOOD },	-- Irontree Woods
+				{ 64.0, 36.0, MAP.WESTERN_PLAGUELANDS },	-- The Weeping Cave
 				-- #else
-				{ 44.8, 81.0, BLASTED_LANDS },	-- Surwich, north of
-				{ 33.7, 78.2, BLASTED_LANDS },	-- Western Tainted Forest
-				{ 40.3, 69.5, BLASTED_LANDS },	-- Central Tainted Forest
-				{ 37.5, 56.2, BLASTED_LANDS },	-- Northen Tainted Forest
-				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
-				{ 50.3, 48.9, WINTERSPRING },	-- Lake Kel'Theril, north of
+				{ 44.8, 81.0, MAP.BLASTED_LANDS },	-- Surwich, north of
+				{ 33.7, 78.2, MAP.BLASTED_LANDS },	-- Western Tainted Forest
+				{ 40.3, 69.5, MAP.BLASTED_LANDS },	-- Central Tainted Forest
+				{ 37.5, 56.2, MAP.BLASTED_LANDS },	-- Northen Tainted Forest
+				{ 51.5, 25.0, MAP.FELWOOD },	-- Irontree Woods
+				{ 50.3, 48.9, MAP.WINTERSPRING },	-- Lake Kel'Theril, north of
 				-- #endif
-				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
-				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
+				{ 55.3, 21.6, MAP.UNGORO_CRATER },	-- Lakkari Tar Pits
+				{ 69.5, 36.7, MAP.UNGORO_CRATER },	-- The Roiling Gardens
 			},
 			["crs"] = {
 				6510,	-- Bloodpetal Flayer
@@ -4559,25 +4559,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				DIRE_MAUL,
 				MARAUDON,
 				-- #if BEFORE 4.0.3
-				SWAMP_OF_SORROWS,
+				MAP.SWAMP_OF_SORROWS,
 				-- #endif
 			},
 		}),
 		i(12803, {	-- Living Essence
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
-				{ 64.0, 36.0, WESTERN_PLAGUELANDS },	-- The Weeping Cave
+				{ 56.0, 17.0, MAP.FELWOOD },	-- Irontree Woods
+				{ 64.0, 36.0, MAP.WESTERN_PLAGUELANDS },	-- The Weeping Cave
 				-- #else
-				{ 44.8, 81.0, BLASTED_LANDS },	-- Surwich, north of
-				{ 33.7, 78.2, BLASTED_LANDS },	-- Western Tainted Forest
-				{ 40.3, 69.5, BLASTED_LANDS },	-- Central Tainted Forest
-				{ 37.5, 56.2, BLASTED_LANDS },	-- Northen Tainted Forest
-				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
-				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
-				{ 50.3, 48.9, WINTERSPRING },	-- Lake Kel'Theril, north of
+				{ 44.8, 81.0, MAP.BLASTED_LANDS },	-- Surwich, north of
+				{ 33.7, 78.2, MAP.BLASTED_LANDS },	-- Western Tainted Forest
+				{ 40.3, 69.5, MAP.BLASTED_LANDS },	-- Central Tainted Forest
+				{ 37.5, 56.2, MAP.BLASTED_LANDS },	-- Northen Tainted Forest
+				{ 51.5, 25.0, MAP.FELWOOD },	-- Irontree Woods
+				{ 69.5, 36.7, MAP.UNGORO_CRATER },	-- The Roiling Gardens
+				{ 50.3, 48.9, MAP.WINTERSPRING },	-- Lake Kel'Theril, north of
 				-- #endif
-				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
+				{ 55.3, 21.6, MAP.UNGORO_CRATER },	-- Lakkari Tar Pits
 			},
 			["crs"] = {
 				7139,	-- Irontree Stomper
@@ -4612,10 +4612,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7972, {	-- Ichor of Undeath
 			-- #if BEFORE 4.0.3
 			["coords"] = {
-				{ 16.0, 70.0, AZSHARA },	-- Talrendis Point, northeast of
-				{ 37.0, 54.0, AZSHARA },	-- Ruins of Eldarath
-				{ 46.0, 70.0, DEADWIND_PASS },	-- Around Karazhan
-				{ 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
+				{ 16.0, 70.0, MAP.AZSHARA },	-- Talrendis Point, northeast of
+				{ 37.0, 54.0, MAP.AZSHARA },	-- Ruins of Eldarath
+				{ 46.0, 70.0, MAP.DEADWIND_PASS },	-- Around Karazhan
+				{ 53.0, 42.0, MAP.WINTERSPRING },	-- Lake Kel'Theril
 			},
 			["crs"] = {
 				7524,	-- Anghuished Highborne
@@ -4638,8 +4638,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			["maps"] = {
 				-- #if BEFORE 4.0.3
-				EASTERN_PLAGUELANDS,
-				WESTERN_PLAGUELANDS,
+				MAP.EASTERN_PLAGUELANDS,
+				MAP.WESTERN_PLAGUELANDS,
 				-- #endif
 				-- #if BEFORE MOP
 				SCHOLOMANCE,
@@ -4656,7 +4656,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				"Drops from Undead creatures in the given instances.",
 				-- #endif
 			-- #if AFTER 4.0.3
-			["coord"] = { 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
+			["coord"] = { 53.0, 42.0, MAP.WINTERSPRING },	-- Lake Kel'Theril
 			["crs"] = {
 				7524,	-- Anguished Highborne
 				7523,	-- Suffering Highborne
@@ -4668,7 +4668,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE WRATH
 				NAXXRAMAS,
 				-- #elseif AFTER 4.0.3
-				EASTERN_PLAGUELANDS,
+				MAP.EASTERN_PLAGUELANDS,
 				-- #endif
 				-- #if BEFORE MOP
 				SCHOLOMANCE,
@@ -4681,25 +4681,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7070, {	-- Elemental Water
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 66.0, 29.0, ARATHI_HIGHLANDS },	-- Circle of East Binding
-				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
-				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
-				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
-				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
-				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				{ 66.0, 29.0, MAP.ARATHI_HIGHLANDS },	-- Circle of East Binding
+				{ 51.0, 50.0, MAP.EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, MAP.EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, MAP.EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, MAP.FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, MAP.WINTERSPRING },	-- Lake Kal'Theril
 				-- #else
-				{ 61.6, 30.4, ARATHI_HIGHLANDS },	-- Circle of East Binding
-				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
-				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
-				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
-				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
-				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
-				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
-				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				{ 61.6, 30.4, MAP.ARATHI_HIGHLANDS },	-- Circle of East Binding
+				{ 46.5, 44.0, MAP.EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, MAP.EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, MAP.EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, MAP.SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, MAP.UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, MAP.WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, MAP.WINTERSPRING },	-- Frostwhisper Gorge
 				-- #endif
-				{ 49.1, 70.2, ASHENVALE },	-- Mystral Lake
-				{ 38.5, 35.4, FERALAS },	-- The Forgotten Coast, north
-				{ 46.9, 55.9, FERALAS },	-- The Forgotten Coast, south
+				{ 49.1, 70.2, MAP.ASHENVALE },	-- Mystral Lake
+				{ 38.5, 35.4, MAP.FERALAS },	-- The Forgotten Coast, north
+				{ 46.9, 55.9, MAP.FERALAS },	-- The Forgotten Coast, south
 			},
 			["crs"] = {
 				3917,	-- Befouled Water Elemental
@@ -4724,22 +4724,22 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7079, {	-- Globe of Water
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
-				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
-				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
-				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
-				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				{ 51.0, 50.0, MAP.EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, MAP.EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, MAP.EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, MAP.FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, MAP.WINTERSPRING },	-- Lake Kal'Theril
 				-- #else
-				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
-				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
-				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
-				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
-				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
-				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
-				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				{ 46.5, 44.0, MAP.EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, MAP.EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, MAP.EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, MAP.SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, MAP.UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, MAP.WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, MAP.WINTERSPRING },	-- Frostwhisper Gorge
 				-- #endif
-				{ 38.5, 35.4, FERALAS },	-- The Forgotten Coast, north
-				{ 46.9, 55.9, FERALAS },	-- The Forgotten Coast, south
+				{ 38.5, 35.4, MAP.FERALAS },	-- The Forgotten Coast, north
+				{ 46.9, 55.9, MAP.FERALAS },	-- The Forgotten Coast, south
 			},
 			["crs"] = {
 				8521,	-- Blighted Horror
@@ -4762,19 +4762,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7080, {	-- Essence of Water
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
-				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
-				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
-				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
-				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				{ 51.0, 50.0, MAP.EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, MAP.EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, MAP.EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, MAP.FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, MAP.WINTERSPRING },	-- Lake Kal'Theril
 				-- #else
-				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
-				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
-				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
-				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
-				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
-				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
-				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				{ 46.5, 44.0, MAP.EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, MAP.EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, MAP.EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, MAP.SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, MAP.UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, MAP.WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, MAP.WINTERSPRING },	-- Frostwhisper Gorge
 				-- #endif
 			},
 			["crs"] = {
@@ -4799,21 +4799,21 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7973, {	-- Big-mouth Clam
 			-- #if AFTER 4.0.3
 			["coords"] = {
-				{ 66.0, 70.0, BLASTED_LANDS },	-- The Red Reaches
+				{ 66.0, 70.0, MAP.BLASTED_LANDS },	-- The Red Reaches
 			},
 			-- #endif
 			["maps"] = {
 				-- #if BEFORE 4.0.3
-				AZSHARA,
-				DUSTWALLOW_MARSH,
-				FERALAS,
-				STRANGLETHORN_VALE,
+				MAP.AZSHARA,
+				MAP.DUSTWALLOW_MARSH,
+				MAP.FERALAS,
+				MAP.STRANGLETHORN_VALE,
 				-- #else
-				THOUSAND_NEEDLES,
+				MAP.THOUSAND_NEEDLES,
 				-- #endif
-				SWAMP_OF_SORROWS,
-				TANARIS,
-				THE_HINTERLANDS,
+				MAP.SWAMP_OF_SORROWS,
+				MAP.TANARIS,
+				MAP.THE_HINTERLANDS,
 			},
 			["description"] =
 				-- #if AFTER BFA
@@ -4852,20 +4852,20 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(5523, {	-- Small Barnacled Clam
 			["maps"] = {
 				-- #if BEFORE 4.0.3
-				THE_BARRENS,
+				MAP.THE_BARRENS,
 				-- #else
-				AZSHARA,
-				DUROTAR,
-				ELWYNN_FOREST,
+				MAP.AZSHARA,
+				MAP.DUROTAR,
+				MAP.ELWYNN_FOREST,
 				NORTHERN_BARRENS,
-				TIRISFAL_GLADES,
+				MAP.TIRISFAL_GLADES,
 				-- #endif
-				ASHENVALE,
-				DARKSHORE,
-				LOCH_MODAN,
-				REDRIDGE_MOUNTAINS,
-				SILVERPINE_FOREST,
-				WESTFALL,
+				MAP.ASHENVALE,
+				MAP.DARKSHORE,
+				MAP.LOCH_MODAN,
+				MAP.REDRIDGE_MOUNTAINS,
+				MAP.SILVERPINE_FOREST,
+				MAP.WESTFALL,
 				-- #if AFTER TBC
 				AZUREMYST_ISLE,
 				BLOODMYST_ISLE,
@@ -4888,13 +4888,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(5524, {	-- Thick-Shelled Clam
 			["maps"] = {
 				-- #if AFTER 4.0.3
-				ASHENVALE,
-				DARKSHORE,
+				MAP.ASHENVALE,
+				MAP.DARKSHORE,
 				NORTHERN_STRANGLETHORN,
 				-- #endif
 				BLACKFATHOM_DEEPS,
-				HILLSBRAD_FOOTHILLS,
-				WETLANDS,
+				MAP.HILLSBRAD_FOOTHILLS,
+				MAP.WETLANDS,
 			},
 			["description"] =
 				-- #if AFTER BFA
@@ -4911,10 +4911,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- Cooking:
 		i(35562, {	-- Bear Flank
 			["coords"] = {
-				{ 39.0, 45.2, FELWOOD },	-- Shatter Scale Vale, west of
-				{ 43.5, 63.0, FELWOOD },	-- Wildhearth Point, west of
-				{ 46.1, 83.0, FELWOOD },	-- Dreadwood Village, north of
-				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border)
+				{ 39.0, 45.2, MAP.FELWOOD },	-- Shatter Scale Vale, west of
+				{ 43.5, 63.0, MAP.FELWOOD },	-- Wildhearth Point, west of
+				{ 46.1, 83.0, MAP.FELWOOD },	-- Dreadwood Village, north of
+				{ 54.1, 86.7, MAP.FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border)
 			},
 			["crs"] = {
 				8956,	-- Angerclaw Bear
@@ -4932,11 +4932,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(3173, {	-- Bear Meat
 			["coords"] = {
-				{ 73.7, 44.8, LOCH_MODAN },	-- Eastside bear valley
-				{ 35.4, 38.5, LOCH_MODAN },	-- Thelsamar, north of
+				{ 73.7, 44.8, MAP.LOCH_MODAN },	-- Eastside bear valley
+				{ 35.4, 38.5, MAP.LOCH_MODAN },	-- Thelsamar, north of
 				-- #if BEFORE 4.0.3
-				{ 48.6, 31.8, DARKSHORE },
-				{ 29.2, 53.0, LOCH_MODAN },
+				{ 48.6, 31.8, MAP.DARKSHORE },
+				{ 29.2, 53.0, MAP.LOCH_MODAN },
 				-- #endif
 			},
 			["crs"] = {
@@ -4963,8 +4963,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(3730, {	-- Big Bear Meat
 			["coords"] = {
-				{ 39.5, 63.6, ASHENVALE },	-- Talondeep Vale
-				{ 67.5, 62.2, ASHENVALE },	-- The Shady Nook, east of
+				{ 39.5, 63.6, MAP.ASHENVALE },	-- Talondeep Vale
+				{ 67.5, 62.2, MAP.ASHENVALE },	-- The Shady Nook, east of
 			},
 			["crs"] = {
 				-- #if BEFORE 4.0.3
@@ -4983,7 +4983,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(2677, {	-- Boar Ribs
 			["coords"] = {
-				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
+				{ 55.0, 27.3, MAP.WESTFALL },	-- Saldean's Farm
 			},
 			["crs"] = {
 				157,	-- Goretusk
@@ -5000,8 +5000,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(3404, {	-- Buzzard Wing
 			["coords"] = {
-				{ 47.1, 42.0, TANARIS },	-- Northen Abyssal Sands
-				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
+				{ 47.1, 42.0, MAP.TANARIS },	-- Northen Abyssal Sands
+				{ 36.5, 61.2, MAP.TANARIS },	-- Southern Abyssal Sands
 			},
 			["crs"] = {
 				5429,	-- Fire Roc
@@ -5021,16 +5021,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(769, {	-- Chunk of Boar Meat
 			["coords"] = {
-				{ 46.6, 59.8, DUN_MOROGH },
-				{ 53.6, 59.6, DUROTAR },
-				{ 41.6, 88.0, ELWYNN_FOREST },	-- The Maclyre Vineyards
-				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
-				{ 54.2, 42.6, WESTFALL },
+				{ 46.6, 59.8, MAP.DUN_MOROGH },
+				{ 53.6, 59.6, MAP.DUROTAR },
+				{ 41.6, 88.0, MAP.ELWYNN_FOREST },	-- The Maclyre Vineyards
+				{ 55.0, 27.3, MAP.WESTFALL },	-- Saldean's Farm
+				{ 54.2, 42.6, MAP.WESTFALL },
 				-- #if BEFORE 4.0.3
-				{ 37.0, 34.4, LOCH_MODAN },
-				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
+				{ 37.0, 34.4, MAP.LOCH_MODAN },
+				{ 32.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
 				-- #else
-				{ 56.3, 35.8, LOCH_MODAN },
+				{ 56.3, 35.8, MAP.LOCH_MODAN },
 				-- #endif
 			},
 			["crs"] = {
@@ -5073,11 +5073,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- i(5503),	-- Clam Meat > Properly sourced under Giant Clam listed above.
 		i(2675, {	-- Crawler Claw
 			["maps"] = {
-				ASHENVALE,
+				MAP.ASHENVALE,
 				-- #if BEFORE 4.0.3
-				DARKSHORE,
+				MAP.DARKSHORE,
 				-- #endif
-				WESTFALL,
+				MAP.WESTFALL,
 			},
 			["description"] =
 				-- #if AFTER BFA
@@ -5090,11 +5090,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(2674, {	-- Crawler Meat
 			["maps"] = {
-				ASHENVALE,
+				MAP.ASHENVALE,
 				-- #if BEFORE 4.0.3
-				DARKSHORE,
+				MAP.DARKSHORE,
 				-- #endif
-				WESTFALL,
+				MAP.WESTFALL,
 			},
 			["description"] =
 				-- #if AFTER BFA
@@ -5106,7 +5106,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(2924, {	-- Crocolisk Meat
-			["coord"] = { 54.3, 57.8, LOCH_MODAN },	-- The Loch (southern isle)
+			["coord"] = { 54.3, 57.8, MAP.LOCH_MODAN },	-- The Loch (southern isle)
 			["cr"] = 1693,	-- Loch Crocolisk
 			["description"] =
 				-- #if AFTER BFA
@@ -5119,9 +5119,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(22644, {	-- Crunchy Spider Leg
 			["coords"] = {
-				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
-				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
-				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
+				{ 86.0, 54.0, MAP.DUSKWOOD },	-- By spider cave east of Darkshire
+				{ 77.0, 60.0, MAP.DUSKWOOD },	-- Windmill crossroad
+				{ 64.0, 20.1, MAP.DUSKWOOD },	-- The Darkened Bank, east.
 			},
 			["crs"] = {
 				930,	-- Black Widow Hatchling
@@ -5139,8 +5139,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(12207, {	-- Giant Egg
 			["coords"] = {
-				{ 47.1, 42.0, TANARIS },	-- Northen Abyssal Sands
-				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
+				{ 47.1, 42.0, MAP.TANARIS },	-- Northen Abyssal Sands
+				{ 36.5, 61.2, MAP.TANARIS },	-- Southern Abyssal Sands
 			},
 			["crs"] = {
 				5429,	-- Fire Roc
@@ -5160,9 +5160,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(2251, {	-- Gooey Spider Leg
 			["coords"] = {
-				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
-				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
-				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
+				{ 86.0, 54.0, MAP.DUSKWOOD },	-- By spider cave east of Darkshire
+				{ 77.0, 60.0, MAP.DUSKWOOD },	-- Windmill crossroad
+				{ 64.0, 20.1, MAP.DUSKWOOD },	-- The Darkened Bank, east.
 			},
 			["crs"] = {
 				930,	-- Black Widow Hatchling
@@ -5179,9 +5179,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(723, {	-- Goretusk Liver
 			["coords"] = {
-				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
+				{ 55.0, 27.3, MAP.WESTFALL },	-- Saldean's Farm
 				-- #if BEFORE 4.0.3
-				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
+				{ 32.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
 				-- #endif
 			},
 			["crs"] = {
@@ -5205,7 +5205,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(12204, {	-- Heavy Kodo Meat
 			["coords"] = {
-				{ 52.0, 59.0, DESOLACE },	-- Kodo Graveyard
+				{ 52.0, 59.0, MAP.DESOLACE },	-- Kodo Graveyard
 			},
 			["crs"] = {
 				4700,	-- Aged Kodo
@@ -5221,9 +5221,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(5467, {	-- Kodo Meat
 			["maps"] = {
-				MULGORE,
+				MAP.MULGORE,
 				-- #if BEFORE 4.0.3
-				THE_BARRENS,
+				MAP.THE_BARRENS,
 				-- #endif
 			},
 			["crs"] = {
@@ -5247,7 +5247,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(1015, {	-- Lean Wolf Flank
 			["coords"] = {
-				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
+				{ 64.0, 20.1, MAP.DUSKWOOD },	-- The Darkened Bank, east.
 			},
 			["crs"] = {
 				-- #if AFTER 4.0.3
@@ -5269,11 +5269,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3731, {	-- Lion Meat
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 41.5, 37.5, HILLSBRAD_FOOTHILLS },	-- Hillsbrad Fields, east of
-				{ 50.0, 31.3, HILLSBRAD_FOOTHILLS },	-- Darrow Hill
+				{ 41.5, 37.5, MAP.HILLSBRAD_FOOTHILLS },	-- Hillsbrad Fields, east of
+				{ 50.0, 31.3, MAP.HILLSBRAD_FOOTHILLS },	-- Darrow Hill
 				-- #else
-				{ 44.5, 57.5, HILLSBRAD_FOOTHILLS },	-- The Sludgefields, east of
-				{ 49.0, 56.3, HILLSBRAD_FOOTHILLS },	-- Darrow Hill
+				{ 44.5, 57.5, MAP.HILLSBRAD_FOOTHILLS },	-- The Sludgefields, east of
+				{ 49.0, 56.3, MAP.HILLSBRAD_FOOTHILLS },	-- Darrow Hill
 				-- #endif
 			},
 			["crs"] = {
@@ -5309,7 +5309,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12223, {	-- Meaty Bat Wing
 			["maps"] = {
 				GHOSTLANDS,
-				TIRISFAL_GLADES,
+				MAP.TIRISFAL_GLADES,
 			},
 			["crs"] = {
 				1553,	-- Greater Duskbat
@@ -5329,7 +5329,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(1468, {	-- Murloc Fin
 			["coords"] = {
-				{ 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+				{ 15.1, 39.3, MAP.WETLANDS },	-- Bluegill Marsh
 			},
 			["crs"] = {
 				-- #if BEFORE 4.0.3
@@ -5359,8 +5359,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12037, {	-- Mystery Meat
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 35.0, 8.0, STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
-				{ 40.0, 22.0, STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
+				{ 35.0, 8.0, MAP.STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
+				{ 40.0, 22.0, MAP.STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
 				-- #else
 				{ 43.3, 19.7, NORTHERN_STRANGLETHORN },	-- Nesingwary's Expedition, north of.
 				{ 50.9, 40.6, NORTHERN_STRANGLETHORN },	-- Lake Nazieriti, south end.
@@ -5386,8 +5386,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3685, {	-- Raptor Egg
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 32.0, 40.0, STRANGLETHORN_VALE },	-- Gurubashi Arena, nortwest of.
-				{ 32.0, 23.0, STRANGLETHORN_VALE },	-- Grom'gol Base Camp, north of.
+				{ 32.0, 40.0, MAP.STRANGLETHORN_VALE },	-- Gurubashi Arena, nortwest of.
+				{ 32.0, 23.0, MAP.STRANGLETHORN_VALE },	-- Grom'gol Base Camp, north of.
 				-- #else
 				{ 53.5, 48.0, NORTHERN_STRANGLETHORN },	-- Venture Co. Base Camp, southwest of.
 				{ 39.0, 42.9, NORTHERN_STRANGLETHORN },	-- Grom'gol Base Camp, north of.
@@ -5409,8 +5409,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12184, {	-- Raptor Flesh
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 32.0, 40.0, STRANGLETHORN_VALE },	-- Gurubashi Arena, nortwest of.
-				{ 32.0, 23.0, STRANGLETHORN_VALE },	-- Grom'gol Base Camp, north of.
+				{ 32.0, 40.0, MAP.STRANGLETHORN_VALE },	-- Gurubashi Arena, nortwest of.
+				{ 32.0, 23.0, MAP.STRANGLETHORN_VALE },	-- Grom'gol Base Camp, north of.
 				-- #else
 				{ 53.5, 48.0, NORTHERN_STRANGLETHORN },	-- Venture Co. Base Camp, southwest of.
 				{ 39.0, 42.9, NORTHERN_STRANGLETHORN },	-- Grom'gol Base Camp, north of.
@@ -5431,8 +5431,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(12203, {	-- Red Wolf Meat
 			["coords"] = {
-				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
-				{ 45.2, 69.0, FELWOOD },	-- Ruins of Constellas, east of.
+				{ 54.1, 86.7, MAP.FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
+				{ 45.2, 69.0, MAP.FELWOOD },	-- Ruins of Constellas, east of.
 			},
 			["crs"] = {
 				8960,	-- Felpaw Scavenger
@@ -5450,12 +5450,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(6889, {	-- Small Egg
 			-- #if BEFORE 4.0.3
 			["coords"] = {
-				{ 44.0, 48.0, DARKSHORE },
-				{ 76.6, 68.2, LOCH_MODAN },
-				{ 40.6, 59.0, MULGORE },
-				{ 52.0, 38.8, REDRIDGE_MOUNTAINS },
-				{ 54.6, 60.6, TELDRASSIL },
-				{ 61.2, 59.8, WESTFALL },
+				{ 44.0, 48.0, MAP.DARKSHORE },
+				{ 76.6, 68.2, MAP.LOCH_MODAN },
+				{ 40.6, 59.0, MAP.MULGORE },
+				{ 52.0, 38.8, MAP.REDRIDGE_MOUNTAINS },
+				{ 54.6, 60.6, MAP.TELDRASSIL },
+				{ 61.2, 59.8, MAP.WESTFALL },
 			},
 			-- #endif
 			-- #if AFTER TBC
@@ -5505,8 +5505,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(5465, {	-- Small Spider Leg
-			["coord"] = { 35.7, 13.7, SILVERPINE_FOREST },	-- The Skittering Dark
-			["maps"] = { TELDRASSIL },
+			["coord"] = { 35.7, 13.7, MAP.SILVERPINE_FOREST },	-- The Skittering Dark
+			["maps"] = { MAP.TELDRASSIL },
 			["crs"] = {
 				2001,	-- Giant Webwood Spider
 				12433,	-- Krethis Shadowspinner
@@ -5529,8 +5529,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(5468, {	-- Soft Frenzy Flesh
 			-- #if BEFORE 4.0.3
 			["coords"] = {
-				{ 40.0, 20.0, DARKSHORE },
-				{ 33.0, 70.0, DARKSHORE },
+				{ 40.0, 20.0, MAP.DARKSHORE },
+				{ 33.0, 70.0, MAP.DARKSHORE },
 			},
 			-- #endif
 			["crs"] = {
@@ -5541,13 +5541,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2173,	-- Reef Frenzy
 			},
 			["description"] = "Drops from frenzies found in bodies of water.",
-			["maps"] = { SILVERPINE_FOREST },
+			["maps"] = { MAP.SILVERPINE_FOREST },
 		}),
 		i(67229, {	-- Stag Flank
 			["coords"] = {
-				{ 45.2, 40.8, DARKSHORE },	-- Withering Thicket
-				{ 47.4, 29.5, DARKSHORE },	-- Maw of the Void, west of
-				{ 26.2, 72.8, AZSHARA },	-- Mountainfoot Strip Mine, southeast of
+				{ 45.2, 40.8, MAP.DARKSHORE },	-- Withering Thicket
+				{ 47.4, 29.5, MAP.DARKSHORE },	-- Maw of the Void, west of
+				{ 26.2, 72.8, MAP.AZSHARA },	-- Mountainfoot Strip Mine, southeast of
 			},
 			["crs"] = {
 				37786,	-- Brown Stag
@@ -5559,9 +5559,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(5471, {	-- Stag Meat
 			["coords"] = {
-				{ 19.7, 29.9, ASHENVALE },	-- West way road cross
-				{ 39.5, 63.6, ASHENVALE },	-- Talondeep Vale
-				{ 69.9, 62.7, ASHENVALE },	-- Splintertree Post, west of
+				{ 19.7, 29.9, MAP.ASHENVALE },	-- West way road cross
+				{ 39.5, 63.6, MAP.ASHENVALE },	-- Talondeep Vale
+				{ 69.9, 62.7, MAP.ASHENVALE },	-- Splintertree Post, west of
 			},
 			["crs"] = {
 				3818,	-- Elder Shadowhorn Stag
@@ -5573,12 +5573,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(5469, {	-- Strider Meat
 			-- #if AFTER 4.0.3
 			["coords"] = {
-				{ 34.6, 44.6, DUROTAR },	-- Southfury riverside
+				{ 34.6, 44.6, MAP.DUROTAR },	-- Southfury riverside
 				{ 69.5, 55.9, NORTHERN_BARRENS },	-- Southfury southern riverside
 				{ 64.8, 41.1, NORTHERN_BARRENS },	-- Southfury northern riverside
 			},
 			-- #else
-			["maps"] = { DARKSHORE },
+			["maps"] = { MAP.DARKSHORE },
 			-- #endif
 			["crs"] = {
 				-- #if BEFORE 4.0.3
@@ -5602,8 +5602,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(2672, {	-- Stringy Wolf Meat
 			["maps"] = {
-				ELWYNN_FOREST,
-				MULGORE,
+				MAP.ELWYNN_FOREST,
+				MAP.MULGORE,
 			},
 			["crs"] = {
 				3056,	-- Ghost Howl
@@ -5626,8 +5626,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- i(5504),	-- Tangy Clam Meat > Properly sourced under Giant Clam listed above.
 		i(12206, {	-- Tender Crab Meat
 			["coords"] = {
-				{ 81.9, 11.5, SWAMP_OF_SORROWS },	-- Bogpaddle, east of.
-				{ 88.6, 22.9, SWAMP_OF_SORROWS },	-- Misty Reed Strand, by Giblin settlement.
+				{ 81.9, 11.5, MAP.SWAMP_OF_SORROWS },	-- Bogpaddle, east of.
+				{ 88.6, 22.9, MAP.SWAMP_OF_SORROWS },	-- Misty Reed Strand, by Giblin settlement.
 			},
 			["crs"] = {
 				1088,	-- Monstrous Crawler
@@ -5645,8 +5645,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3667, {	-- Tender Crocolisk Meat
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 35.0, 8.0, STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
-				{ 40.0, 22.0, STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
+				{ 35.0, 8.0, MAP.STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
+				{ 40.0, 22.0, MAP.STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
 				-- #else
 				{ 43.3, 19.7, NORTHERN_STRANGLETHORN },	-- Nesingwary's Expedition, north of.
 				{ 50.9, 40.6, NORTHERN_STRANGLETHORN },	-- Lake Nazieriti, south end.
@@ -5671,8 +5671,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(12208, {	-- Tender Wolf Meat
 			["coords"] = {
-				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
-				{ 45.2, 69.0, FELWOOD },	-- Ruins of Constellas, east of.
+				{ 54.1, 86.7, MAP.FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
+				{ 45.2, 69.0, MAP.FELWOOD },	-- Ruins of Constellas, east of.
 			},
 			["crs"] = {
 				8960,	-- Felpaw Scavenger
@@ -5690,7 +5690,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(5470, {	-- Thunder Lizard Tail
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 47.0, 48.0, THE_BARRENS },	-- Taurajo, north of.
+				{ 47.0, 48.0, MAP.THE_BARRENS },	-- Taurajo, north of.
 				-- #else
 				{ 43.7, 55.3, SOUTHERN_BARRENS },	-- Taurajo, south of.
 				-- #endif
@@ -5708,8 +5708,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12202, {	-- Tiger Meat
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 46.0, 12.0, STRANGLETHORN_VALE },	-- Venture Co. Base Camp, northeast of.
-				{ 33.0, 18.0, STRANGLETHORN_VALE },	-- Tkashi Ruins, southwest of.
+				{ 46.0, 12.0, MAP.STRANGLETHORN_VALE },	-- Venture Co. Base Camp, northeast of.
+				{ 33.0, 18.0, MAP.STRANGLETHORN_VALE },	-- Tkashi Ruins, southwest of.
 				-- #else
 				{ 59.5, 29.0, NORTHERN_STRANGLETHORN },	-- Venture Co. Base Camp, northeast of.
 				{ 38.3, 32.2, NORTHERN_STRANGLETHORN },	-- Tkashi Ruins, southwest of.
@@ -5730,8 +5730,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(3712, {	-- Turtle Meat
 			["coords"] = {
-				{ 62.5, 33.8, DUSTWALLOW_MARSH },	-- Southern Dreadmurk Shore
-				{ 61.5, 8.3, DUSTWALLOW_MARSH },	-- Outer Dreadmurk Shore (between murloc isles)
+				{ 62.5, 33.8, MAP.DUSTWALLOW_MARSH },	-- Southern Dreadmurk Shore
+				{ 61.5, 8.3, MAP.DUSTWALLOW_MARSH },	-- Outer Dreadmurk Shore (between murloc isles)
 			},
 			["cr"] = 4397,	-- Mudrock Spikeshell
 			["description"] =
@@ -5745,8 +5745,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(12205, {	-- White Spider Meat
 			["coords"] = {
-				{ 55.2, 54.8, DUSTWALLOW_MARSH },	-- Beezil's Wreck, northeast of
-				{ 34.1, 22.5, DUSTWALLOW_MARSH },	-- Darkmist Cavern
+				{ 55.2, 54.8, MAP.DUSTWALLOW_MARSH },	-- Beezil's Wreck, northeast of
+				{ 34.1, 22.5, MAP.DUSTWALLOW_MARSH },	-- Darkmist Cavern
 			},
 			["crs"] = {
 				-- #if BEFORE 4.0.3
@@ -5783,8 +5783,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- Danny Donkey: Dark Rune was only obtainable from Scholomance prior to MoP. With it's revamp Dark Runes became a zone drop from given mobs in Eastern Plaguelands. With the return of old Scholomance in 10.1.5, that is again a source for Dark Runes.
 		i(20520, {	-- Dark Rune
 			["coords"] = {
-				{ 55.1, 62.2, EASTERN_PLAGUELANDS },	-- Corin's Crossing
-				{ 62.4, 76.0, EASTERN_PLAGUELANDS },	-- Death Cultist Base Camp
+				{ 55.1, 62.2, MAP.EASTERN_PLAGUELANDS },	-- Corin's Crossing
+				{ 62.4, 76.0, MAP.EASTERN_PLAGUELANDS },	-- Death Cultist Base Camp
 			},
 			["crs"] = {
 				8551,	-- Dark Summoner
@@ -5805,18 +5805,18 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				NAXXRAMAS,
 				RUINS_OF_AHNQIRAJ,
 				-- #else
-				BURNING_STEPPES,
-				SILITHUS,
+				MAP.BURNING_STEPPES,
+				MAP.SILITHUS,
 				-- #endif
 			},
 		}),
 		i(8168, {	-- Jet Black Feather
 			["coords"] = {
-				{ 58.0, 20.0, BLASTED_LANDS },
-				{ 60.0, 27.0, BLASTED_LANDS },
-				{ 55.0, 35.0, BLASTED_LANDS },
-				{ 60.0, 38.0, BLASTED_LANDS },
-				{ 55.0, 44.0, BLASTED_LANDS },
+				{ 58.0, 20.0, MAP.BLASTED_LANDS },
+				{ 60.0, 27.0, MAP.BLASTED_LANDS },
+				{ 55.0, 35.0, MAP.BLASTED_LANDS },
+				{ 60.0, 38.0, MAP.BLASTED_LANDS },
+				{ 55.0, 44.0, MAP.BLASTED_LANDS },
 			},
 			["crs"] = {
 				5982,	-- Black Slayer
@@ -5832,23 +5832,23 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				"Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
 				-- #endif
 			-- #if AFTER 4.0.3
-			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
+			["coord"] = { 50.0, 70.0, MAP.ARATHI_HIGHLANDS },
 			-- #else
 			["maps"] = {
-				ASHENVALE,
-				BADLANDS,
-				DESOLACE,
-				DUSKWOOD,
-				DUSTWALLOW_MARSH,
-				HILLSBRAD_FOOTHILLS,
-				LOCH_MODAN,
+				MAP.ASHENVALE,
+				MAP.BADLANDS,
+				MAP.DESOLACE,
+				MAP.DUSKWOOD,
+				MAP.DUSTWALLOW_MARSH,
+				MAP.HILLSBRAD_FOOTHILLS,
+				MAP.LOCH_MODAN,
 				RAZORFEN_DOWNS,
 				RAZORFEN_KRAUL,
-				STONETALON_MOUNTAINS,
-				STRANGLETHORN_VALE,
-				SWAMP_OF_SORROWS,
-				THOUSAND_NEEDLES,
-				WETLANDS,
+				MAP.STONETALON_MOUNTAINS,
+				MAP.STRANGLETHORN_VALE,
+				MAP.SWAMP_OF_SORROWS,
+				MAP.THOUSAND_NEEDLES,
+				MAP.WETLANDS,
 				-- #if AFTER TBC
 				BLOODMYST_ISLE,
 				GHOSTLANDS,
@@ -5863,26 +5863,26 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if BEFORE 4.0.3
 			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = {
-				ASHENVALE,
-				DUSKWOOD,
+				MAP.ASHENVALE,
+				MAP.DUSKWOOD,
 			},
 			-- #elseif AFTER BFA
 			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = {
-				ASHENVALE,
-				DUSKWOOD,
+				MAP.ASHENVALE,
+				MAP.DUSKWOOD,
 			},
 			-- #else
 			["coords"] = {
-				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
-				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
+				{ 86.0, 54.0, MAP.DUSKWOOD },	-- By spider cave east of Darkshire
+				{ 77.0, 60.0, MAP.DUSKWOOD },	-- Windmill crossroad
 			},
 			["cr"] = 930,	-- Black Widow Hatchling
 			-- #endif
 		}),
 		i(17056, {	-- Light Feather
 			-- #if BEFORE 4.0.3
-			["coord"] = { 44.0, 48.0, DARKSHORE },
+			["coord"] = { 44.0, 48.0, MAP.DARKSHORE },
 			["crs"] = {
 				10158,	-- Moonkin
 				10157,	-- Moonkin Oracle
@@ -5898,9 +5898,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(4589, {	-- Long Elegant Feather
 			["coords"] = {
-				{ 20.0, 57.0, AZSHARA },
-				{ 56.0, 62.8, FERALAS },
-				{ 84.0, 34.0, HILLSBRAD_FOOTHILLS },
+				{ 20.0, 57.0, MAP.AZSHARA },
+				{ 56.0, 62.8, MAP.FERALAS },
+				{ 84.0, 34.0, MAP.HILLSBRAD_FOOTHILLS },
 			},
 			["crs"] = {
 				5300,	-- Frayfeather Hippogryph
@@ -5914,19 +5914,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2651,	-- Witherbark Hideskinner
 			},
 			["description"] = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
-			["maps"] = { THE_HINTERLANDS },
+			["maps"] = { MAP.THE_HINTERLANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(5116, {	-- Long Tail Feather
 			["coords"] = {
-				{ 32.4, 66.0, STONETALON_MOUNTAINS },
-				{ 79.0, 77.0, THOUSAND_NEEDLES },
+				{ 32.4, 66.0, MAP.STONETALON_MOUNTAINS },
+				{ 79.0, 77.0, MAP.THOUSAND_NEEDLES },
 			},
 			["description"] = "Drops from birds and harpies in the given zones.",
 			["maps"] = {
-				ARATHI_HIGHLANDS,
-				BADLANDS,
-				DESOLACE,
+				MAP.ARATHI_HIGHLANDS,
+				MAP.BADLANDS,
+				MAP.DESOLACE,
 			},
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
@@ -5934,19 +5934,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if BEFORE 4.0.3
 			["description"] = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
 			["maps"] = {
-				ARATHI_HIGHLANDS,
-				DESOLACE,
-				HILLSBRAD_FOOTHILLS,
+				MAP.ARATHI_HIGHLANDS,
+				MAP.DESOLACE,
+				MAP.HILLSBRAD_FOOTHILLS,
 			},
 			-- #else
-			["coord"] = { 29.0, 11.0, DESOLACE },
+			["coord"] = { 29.0, 11.0, MAP.DESOLACE },
 			["cr"] = 4719,	-- Slitherblade Sea Witch
 			["description"] = "Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",
 			-- #endif
 		}),
 		i(12804, {	-- Powerful Mojo
 			-- #if BEFORE 4.0.3
-			["coord"] = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
+			["coord"] = { 72.0, 15.0, MAP.EASTERN_PLAGUELANDS },	-- Zul'mashar
 			-- #endif
 			["description"] = "Can drop from trolls.",
 			["maps"] = {
@@ -5961,12 +5961,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if BEFORE 4.0.3
 			["description"] = "Drops from raptors ranging from level 30 to 40.",
 			["maps"] = {
-				ARATHI_HIGHLANDS,
-				DUSTWALLOW_MARSH,
-				STRANGLETHORN_VALE,
+				MAP.ARATHI_HIGHLANDS,
+				MAP.DUSTWALLOW_MARSH,
+				MAP.STRANGLETHORN_VALE,
 			},
 			-- #else
-			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
+			["coord"] = { 50.0, 70.0, MAP.ARATHI_HIGHLANDS },
 			["cr"] = 2561,	-- Highland Fleshstalker
 			["description"] = "Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
 			-- #endif
@@ -5975,21 +5975,21 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if BEFORE 4.0.3
 			["description"] = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
 			["maps"] = {
-				ASHENVALE,
-				DARKSHORE,
-				DUSKWOOD,
-				HILLSBRAD_FOOTHILLS,
-				LOCH_MODAN,
+				MAP.ASHENVALE,
+				MAP.DARKSHORE,
+				MAP.DUSKWOOD,
+				MAP.HILLSBRAD_FOOTHILLS,
+				MAP.LOCH_MODAN,
 				RAZORFEN_KRAUL,
-				REDRIDGE_MOUNTAINS,
+				MAP.REDRIDGE_MOUNTAINS,
 				SHADOWFANG_KEEP,
-				SILVERPINE_FOREST,
-				STONETALON_MOUNTAINS,
-				THE_BARRENS,
-				THOUSAND_NEEDLES,
+				MAP.SILVERPINE_FOREST,
+				MAP.STONETALON_MOUNTAINS,
+				MAP.THE_BARRENS,
+				MAP.THOUSAND_NEEDLES,
 				WAILING_CAVERNS,
-				WESTFALL,
-				WETLANDS,
+				MAP.WESTFALL,
+				MAP.WETLANDS,
 				-- #if AFTER TBC
 				BLOODMYST_ISLE,
 				GHOSTLANDS,
@@ -6015,7 +6015,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = { BLACKFATHOM_DEEPS },
 			-- #else
 			["description"] = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
-			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			["coord"] = { 15.1, 39.3, MAP.WETLANDS },	-- Bluegill Marsh
 			["crs"] = {
 				1026,	-- Bluegill Forager
 				1028,	-- Bluegill Muckdweller
@@ -6034,12 +6034,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = { DIRE_MAUL },
 			-- #else
 			["coords"] = {
-				{ 81.0, 48.0, BADLANDS },
-				{ 45.0, 68.0, DUSTWALLOW_MARSH },
-				{ 46.0, 24.0, FERALAS },
-				{ 36.0, 12.0, STONETALON_MOUNTAINS },
-				{ 15.0, 61.0, SWAMP_OF_SORROWS },
-				{ 62.0, 42.0, WETLANDS },
+				{ 81.0, 48.0, MAP.BADLANDS },
+				{ 45.0, 68.0, MAP.DUSTWALLOW_MARSH },
+				{ 46.0, 24.0, MAP.FERALAS },
+				{ 36.0, 12.0, MAP.STONETALON_MOUNTAINS },
+				{ 15.0, 61.0, MAP.SWAMP_OF_SORROWS },
+				{ 62.0, 42.0, MAP.WETLANDS },
 			},
 			["description"] = "Drops from small dragonkin like darters and whelps.",
 			-- #endif
@@ -6048,8 +6048,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if BEFORE 4.0.3
 			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = {
-				LOCH_MODAN,
-				STONETALON_MOUNTAINS,
+				MAP.LOCH_MODAN,
+				MAP.STONETALON_MOUNTAINS,
 			},
 			-- #else
 			["coord"] = { 18.8, 35.8, BLOODMYST_ISLE },
@@ -6065,7 +6065,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- Danny Donkey:	Blizzard devs fucked around with this reagent during retail Cataclysm which lead to it periodically only becoming obtainable from the rare Scargil in Hillsbrad and random mobs in Dustwallow.
 			-- 					At an unknown point got it added to Bluegill murlocs in Wetlands, as well as possibly dropping in StV and DwM. Seems like Cata Classic carried on without affecting this drop.
 			-- #if NOT ANYCLASSIC
-			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			["coord"] = { 15.1, 39.3, MAP.WETLANDS },	-- Bluegill Marsh
 			["crs"] = {
 				42111,	-- Bluegill Forager
 				41425,	-- Bluegill Murloc
@@ -6081,11 +6081,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				VASHJIR_KELPTHAR_FOREST,
 				VASHJIR_SHIMMERING_EXPANSE,
 				-- #elseif CATA
-				HILLSBRAD_FOOTHILLS,
+				MAP.HILLSBRAD_FOOTHILLS,
 				-- #else
-				DUSTWALLOW_MARSH,
-				HILLSBRAD_FOOTHILLS,
-				STRANGLETHORN_VALE,
+				MAP.DUSTWALLOW_MARSH,
+				MAP.HILLSBRAD_FOOTHILLS,
+				MAP.STRANGLETHORN_VALE,
 				-- #endif
 			},
 			["crs"] = {
@@ -6117,12 +6117,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(9260, {	-- Volatile Rum
 			["coords"] = {
 				-- #if BEFORE 4.0.3
-				{ 54.0, 93.0, TANARIS },	-- Land's End Beach
+				{ 54.0, 93.0, MAP.TANARIS },	-- Land's End Beach
 				-- #else
 				{ 77.0, 90.0, NORTHERN_BARRENS },	-- Fray Island
-				{ 69.4, 53.5, TANARIS },	-- Southbreak Shore
+				{ 69.4, 53.5, MAP.TANARIS },	-- Southbreak Shore
 				-- #endif
-				{ 74.0, 47.0, TANARIS },	-- Lost Rigger Cove
+				{ 74.0, 47.0, MAP.TANARIS },	-- Lost Rigger Cove
 			},
 			["crs"] = {
 				-- #if BEFORE 4.0.3
@@ -6149,8 +6149,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if BEFORE 4.0.3
 			["description"] = "Drops from trolls ranging from level 40 to 50.",
 			["maps"] = {
-				STRANGLETHORN_VALE,
-				THE_HINTERLANDS,
+				MAP.STRANGLETHORN_VALE,
+				MAP.THE_HINTERLANDS,
 			},
 			-- #else
 			["description"] = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",

@@ -25,9 +25,9 @@ CAPTAINS = createHeader({
 });
 
 -- #if BEFORE CATA
-local KEYL_LOCATION = { 51.8, 39.5, SILITHUS };
-local WARDEN_LOCATION = { 51.1, 38.9, SILITHUS };
-local WINDCALLER_LOCATION = { 52.0, 38.2, SILITHUS };
+local KEYL_LOCATION = { 51.8, 39.5, MAP.SILITHUS };
+local WARDEN_LOCATION = { 51.1, 38.9, MAP.SILITHUS };
+local WINDCALLER_LOCATION = { 52.0, 38.2, MAP.SILITHUS };
 -- #else
 local KEYL_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
 local WARDEN_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			n(FACTIONS, {
 				faction(FACTION_CENARION_CIRCLE, {	-- Cenarion Circle
 					["icon"] = 132136,
-					["maps"] = { SILITHUS },
+					["maps"] = { MAP.SILITHUS },
 				}),
 			}),
 			n(QUESTS,
@@ -482,7 +482,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				})),
 				q(8791, {	-- The Fall of Ossirian
 					["provider"] = { "i", 21220 },	-- Head of Ossirian the Unscarred
-					["maps"] = { SILITHUS },
+					["maps"] = { MAP.SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
 						i(21507),	-- Amulet of the Shifting Sands
@@ -1377,7 +1377,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					})),
 					q(8791, {	-- The Fall of Ossirian
 						["provider"] = { "i", 235048 },	-- Head of Ossirian the Unscarred
-						["maps"] = { SILITHUS },
+						["maps"] = { MAP.SILITHUS },
 						["lvl"] = 60,
 						["groups"] = {
 							i(234811),	-- Charm of the Shifting Sands

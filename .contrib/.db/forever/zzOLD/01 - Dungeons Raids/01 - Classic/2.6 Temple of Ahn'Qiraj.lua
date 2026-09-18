@@ -6,7 +6,7 @@ local ANACHRONOS_COORD;
 -- #if AFTER TBC
 ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
 -- #else
-ANACHRONOS_COORD = { 65.0, 50.0, TANARIS };
+ANACHRONOS_COORD = { 65.0, 50.0, MAP.TANARIS };
 -- #endif
 local SILITHID_ROYALTY_SHARED_DROPS = COMMON_BOSS_DROPS;
 
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			n(ACHIEVEMENTS, {
 				ach(11743, {["timeline"] = {ADDED_7_2_0}}),	-- Accessor-Eyes (Temple of Ahn'Qiraj)
 				achWithRep(956, FACTION_BROOD_OF_NOZDORMU, {	-- Brood of Nozdormu
-					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
+					["maps"] = { CAVERNS_OF_TIME, MAP.SILITHUS },
 				}),
 				ach(424, {	-- Why? Because It's Red
 					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			n(FACTIONS, {
 				faction(FACTION_BROOD_OF_NOZDORMU, {	-- Brood of Nozdormu
 					["icon"] = 134156,
-					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
+					["maps"] = { CAVERNS_OF_TIME, MAP.SILITHUS },
 				}),
 			}),
 			n(QUESTS,
@@ -1739,7 +1739,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 				}),
 				n(15502, {	-- Anachronos (RINGS)
-					["coord"] = { 65.2, 50.0, TANARIS },
+					["coord"] = { 65.2, 50.0, MAP.TANARIS },
 					["groups"] = {
 						-- NEUTRAL
 						i(234016, {	-- Signet Ring of the Bronze Dragonflight

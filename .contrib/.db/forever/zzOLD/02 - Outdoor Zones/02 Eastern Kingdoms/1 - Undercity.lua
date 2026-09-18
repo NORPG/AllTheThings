@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(UNDERCITY, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.UNDERCITY, {
 		["lore"] = "The Undercity is the capital city of the Forsaken undead of the Horde.\n\nFar beneath the ruined Capital City of the kingdom of Lordaeron, its royal crypts were turned into a bastion of evil and undeath. Originally intended by Prince Arthas to be the Scourge's seat of power, the budding \"Undercity\" was abandoned when Arthas was recalled to aid the Lich King in the distant Northrend. In Arthas' absence, the Dark Lady, Sylvanas Windrunner, led the rebel Forsaken to the Undercity, and claimed it for her own. Since taking up residence, the Forsaken worked to complete the Undercity's construction by dredging the twisted maze of catacombs, tombs, and dungeons that Arthas began.",
 		["icon"] = 255133,
 		-- #if AFTER BFA
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(11, {	-- Undercity, Tirisfal
 					["cr"] = 4551,	-- Michael Garrett <Bat Handler>
-					["coord"] = { 63.6, 48.6, UNDERCITY },
+					["coord"] = { 63.6, 48.6, MAP.UNDERCITY },
 					-- #if AFTER BFA
 					["description"] = "Can be picked up only during Chromie time.",
 					-- #endif
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(PROFESSIONS, {
 				prof(TAILORING, {
 					n(4578, {	-- Josephine Lister <Master Shadoweave Tailor>
-						["coord"] = { 87.0, 20.8, UNDERCITY },
+						["coord"] = { 87.0, 20.8, MAP.UNDERCITY },
 						["races"] = HORDE_ONLY,
 						["groups"] = SHADOWEAVE_TAILORING_CLASSIC,
 					}),
@@ -99,15 +99,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(QUESTS, {
 				q(4294, {	-- ... and a Batch of Ooze
 					["qg"] = 10136,	-- Chemist Fuely
-					["coord"] = { 47.6, 73.0, UNDERCITY },
+					["coord"] = { 47.6, 73.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNGORO_CRATER },
+					["maps"] = { MAP.UNGORO_CRATER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						q(4561, {	-- Testing for Impurities - Un'Goro Crater
 							["provider"] = { "o", 174848 },	-- Testing Equipment
-							["coord"] = { 47.7, 73.3, UNDERCITY },
+							["coord"] = { 47.7, 73.3, MAP.UNDERCITY },
 							["cost"] = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -138,8 +138,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 38395,	-- Completionism
 					["qg"] = 6566,	-- Estelle Gendry
 					["coords"] = {
-						{ 78.2, 75.6, UNDERCITY },
-						{ 56.8, 89.8, ORGRIMMAR },
+						{ 78.2, 75.6, MAP.UNDERCITY },
+						{ 56.8, 89.8, MAP.ORGRIMMAR },
 					},
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7817, {	-- A Donation of Mageweave
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29.0, UNDERCITY },
+					["coord"] = { 71.8, 29.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = HORDE_ONLY,
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7818, {	-- A Donation of Runecloth
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29.0, UNDERCITY },
+					["coord"] = { 71.8, 29.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7814, {	-- A Donation of Silk
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29.0, UNDERCITY },
+					["coord"] = { 71.8, 29.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = HORDE_ONLY,
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7813, {	-- A Donation of Wool
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29.0, UNDERCITY },
+					["coord"] = { 71.8, 29.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
@@ -186,15 +186,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4293, {	-- A Sample of Slime...
 					["qg"] = 10136,	-- Chemist Fuely
-					["coord"] = { 47.6, 73.0, UNDERCITY },
+					["coord"] = { 47.6, 73.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						q(4661, {	-- Testing for Corruption - Felwood
 							["provider"] = { "o", 174848 },	-- Testing Equipment
-							["coord"] = { 47.7, 73.3, UNDERCITY },
+							["coord"] = { 47.7, 73.3, MAP.UNDERCITY },
 							["cost"] = { { "i", 12230, 1 } },	-- Felwood Slime Sample
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(78277, {	-- A Token of Gratitude
 					["sourceQuest"] = 491,	-- Wand to Bethor
 					["qg"] = 1498,	-- Bethor Iceshard
-					["coord"] = { 84.2, 17.4, UNDERCITY },
+					["coord"] = { 84.2, 17.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7819, {	-- Additional Runecloth [Undercity]
 					["sourceQuest"] = 7818,	-- A Donation of Runecloth
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29.0, UNDERCITY },
+					["coord"] = { 71.8, 29.0, MAP.UNDERCITY },
 					["maxReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
@@ -256,7 +256,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1847, {	-- Brutal Legguards
 					["sourceQuest"] = 1846,	-- Dragonmaw Shinbones
 					["qg"] = 6411,	-- Velora Nitely
-					["coord"] = { 62.4, 39.2, UNDERCITY },
+					["coord"] = { 62.4, 39.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -271,8 +271,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 38346,	-- Numismatics
 					["qg"] = 6566,	-- Estelle Gendry
 					["coords"] = {
-						{ 78.2, 75.6, UNDERCITY },
-						{ 56.8, 89.8, ORGRIMMAR },
+						{ 78.2, 75.6, MAP.UNDERCITY },
+						{ 56.8, 89.8, MAP.ORGRIMMAR },
 					},
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -289,16 +289,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1478,	-- Halgar's Summons
 					["altQuests"] = { 1501 },	-- Creature of the Void [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { TIRISFAL_GLADES },
+					["maps"] = { MAP.TIRISFAL_GLADES },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Egalin's Grimoire
 							["provider"] = { "i", 6285 },	-- Egalin's Grimoire
-							["coord"] = { 51.1, 67.6, TIRISFAL_GLADES },
+							["coord"] = { 51.1, 67.6, MAP.TIRISFAL_GLADES },
 						}),
 					},
 				}),
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 16287 },	-- Ambassador Sunsorrow
 						{ "i", 22629 },	-- Sealed Sin'dorei Orders
 					},
-					["coord"] = { 57.8, 90.6, UNDERCITY },
+					["coord"] = { 57.8, 90.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1472, {	-- Devourer of Souls [Undercity]
 					["altQuests"] = { 1507 },	-- Devourer of Souls [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -344,9 +344,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3044,	-- Miles Welsh <Priest Trainer>
 					},
 					["coords"] = {
-						{ 49.0, 18.3, UNDERCITY },
-						{ 35.6, 87.6, ORGRIMMAR },
-						{ 26.0, 15.8, THUNDER_BLUFF },
+						{ 49.0, 18.3, MAP.UNDERCITY },
+						{ 35.6, 87.6, MAP.ORGRIMMAR },
+						{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -369,7 +369,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5644,	-- Devouring Plague [Thunder Bluff]
 					},
 					["qg"] = 4606,	-- Aelthalyste
-					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["coord"] = { 49.01, 18.32, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -387,9 +387,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1846, {	-- Dragonmaw Shinbones
 					["sourceQuest"] = 1841,	-- Velora Nitely and the Brutal Legguards
 					["qg"] = 6411,	-- Velora Nitely
-					["coord"] = { 62.4, 39.2, UNDERCITY },
+					["coord"] = { 62.4, 39.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WETLANDS },
+					["maps"] = { MAP.WETLANDS },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -414,7 +414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5204 },	-- Apothecary Zinge
 						{ "i", 8525 },	-- Zinge's Purchase Order
 					},
-					["coord"] = { 50.0, 68.4, UNDERCITY },
+					["coord"] = { 50.0, 68.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -425,14 +425,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 7683 },	-- Alessandro Luca
 						{ "i", 8523 },	-- Field Testing Kit
 					},
-					["coord"] = { 58.2, 55.2, UNDERCITY },
+					["coord"] = { 58.2, 55.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(29333, {	-- Escargot A Go-Go
 					["qg"] = 4552,	-- Eunice Burch
-					["coord"] = { 62.2, 44.6, UNDERCITY },
+					["coord"] = { 62.2, 44.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -443,23 +443,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1998, {	-- Fenwick Thatros
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.6, 67.6, UNDERCITY },
+					["coord"] = { 83.6, 67.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SILVERPINE_FOREST },
+					["maps"] = { MAP.SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fenwick's Head
 							["provider"] = { "i", 7306 },	-- Fenwick's Head
-							["coord"] = { 59.6, 34.2, SILVERPINE_FOREST },
+							["coord"] = { 59.6, 34.2, MAP.SILVERPINE_FOREST },
 							["cr"] = 6570,	-- Fenwick Thatros
 						}),
 					},
 				}),
 				q(29317, {	-- Fish Head
 					["qg"] = 4573,	-- Armand Cromwell
-					["coord"] = { 80.7, 31.2, UNDERCITY },
+					["coord"] = { 80.7, 31.2, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -470,7 +470,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29315, {	-- Fungus Among Us
 					["qg"] = 4552,	-- Eunice Burch
-					["coord"] = { 62.2, 44.6, UNDERCITY },
+					["coord"] = { 62.2, 44.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -482,9 +482,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1961, {	-- Gathering Materials
 					["sourceQuest"] = 1960,	-- Investigate the Alchemist Shop
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
-					["coord"] = { 85.0, 10.2, UNDERCITY },
+					["coord"] = { 85.0, 10.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SILVERPINE_FOREST },
+					["maps"] = { MAP.SILVERPINE_FOREST },
 					["cost"] = { { "i", 2589, 10 } },	-- Linen Cloth
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
@@ -526,7 +526,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
 						{ "i", 10789 },	-- Manual of Engineering Disciplines
 					},
-					["coord"] = { 75.6, 74.6, UNDERCITY },
+					["coord"] = { 75.6, 74.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = ENGINEERING,
@@ -553,7 +553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
 						{ "i", 10789 },	-- Manual of Engineering Disciplines
 					},
-					["coord"] = { 75.6, 74.6, UNDERCITY },
+					["coord"] = { 75.6, 74.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = ENGINEERING,
@@ -563,7 +563,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1478, {	-- Halgar's Summons
 					["altQuests"] = { 1506 },	-- Gan'rul's Summons
 					["qg"] = 5724,	-- Ageron Kargal
-					["coord"] = { 61.6, 52.6, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 52.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -573,21 +573,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(65593, {	-- Hearts of the Lovers
 					["altQuests"] = { 65610 },	-- Wish You Were Here
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS, SILVERPINE_FOREST },
+					["maps"] = { MAP.THE_BARRENS, MAP.SILVERPINE_FOREST },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Avelina's Heart
 							["provider"] = { "i", 190179 },	-- Avelina's Heart
-							["coord"] = { 63.6, 65.6, SILVERPINE_FOREST },
+							["coord"] = { 63.6, 65.6, MAP.SILVERPINE_FOREST },
 							["cr"] = 185333,	-- Avelina Lilly
 						}),
 						objective(2, {	-- 0/1 Isaac's Heart
 							["provider"] = { "i", 190180 },	-- Isaac's Heart
-							["coord"] = { 61.8, 38.6, THE_BARRENS },
+							["coord"] = { 61.8, 38.6, MAP.THE_BARRENS },
 							["cr"] = 185334,	-- Isaac Pearson
 						}),
 					},
@@ -599,21 +599,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1472,	-- Devourer of Souls [Undercity]
 					},
 					["qg"] = 5693,	-- Godrick Farsan
-					["coord"] = { 85.0, 14.8, UNDERCITY },
+					["coord"] = { 85.0, 14.8, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SILVERPINE_FOREST, WETLANDS },
+					["maps"] = { MAP.SILVERPINE_FOREST, MAP.WETLANDS },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Dalin's Heart
 							["provider"] = { "i", 6312 },	-- Dalin's Heart
-							["coord"] = { 46.6, 84.2, SILVERPINE_FOREST },
+							["coord"] = { 46.6, 84.2, MAP.SILVERPINE_FOREST },
 							["cr"] = 5682,	-- Dalin Forgewright
 						}),
 						objective(2, {	-- 0/1 Comar's Heart
 							["provider"] = { "i", 6313 },	-- Comar's Heart
-							["coord"] = { 50.6, 12.6, WETLANDS },
+							["coord"] = { 50.6, 12.6, MAP.WETLANDS },
 							["cr"] = 5683,	-- Comar Villard
 						}),
 					},
@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5656,	-- Hex of Weakness [Thunder Bluff]
 					},
 					["qg"] = 4606,	-- Aelthalyste <Priest Trainer>
-					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["coord"] = { 49.01, 18.32, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -648,16 +648,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5204 },	-- Apothecary Zinge
 						{ "i", 8523 },	-- Field Testing Kit
 					},
-					["coord"] = { 50.1, 68.0, UNDERCITY },
+					["coord"] = { 50.1, 68.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { TANARIS },
+					["maps"] = { MAP.TANARIS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(1960, {	-- Investigate the Alchemist Shop
 					["sourceQuest"] = 1959,	-- Report to Anastasia
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
-					["coord"] = { 85.0, 10.2, UNDERCITY },
+					["coord"] = { 85.0, 10.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
@@ -670,7 +670,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7247 },	-- Chest of Containment Coffers
 								{ "i",   7308 },	-- Cantation of Manifestation
 							},
-							["coord"] = { 53.9, 73.2, UNDERCITY },
+							["coord"] = { 53.9, 73.2, MAP.UNDERCITY },
 							["cr"] = 6492,	-- Rift Spawn
 						}),
 						objective(2, {	-- 0/1 Chest of Containment Coffers
@@ -678,20 +678,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7247 },	-- Chest of Containment Coffers
 								{ "o", 105174 },	-- Chest of Containment Coffers
 							},
-							["coord"] = { 85.4, 10.2, UNDERCITY },
+							["coord"] = { 85.4, 10.2, MAP.UNDERCITY },
 						}),
 						objective(3, {	-- 0/1 Cantation of Manifestation
 							["providers"] = {
 								{ "i",   7308 },	-- Cantation of Manifestation
 								{ "o", 105175 },	-- Cantation of Manifestation
 							},
-							["coord"] = { 85.4, 10.2, UNDERCITY },
+							["coord"] = { 85.4, 10.2, MAP.UNDERCITY },
 						}),
 					},
 				}),
 				q(29320, {	-- Like Pike?
 					["qg"] = 4573,	-- Armand Cromwell
-					["coord"] = { 80.7, 31.2, UNDERCITY },
+					["coord"] = { 80.7, 31.2, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -703,7 +703,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29332, {	-- Lily, Oh Lily
 					["qg"] = 4552,	-- Eunice Burch
-					["coord"] = { 62.2, 44.6, UNDERCITY },
+					["coord"] = { 62.2, 44.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -714,20 +714,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2995, {	-- Lines of Communication
 					["qg"] = 7825,	-- Oran Snakewrithe
-					["coord"] = { 73.3, 32.4, UNDERCITY },
+					["coord"] = { 73.3, 32.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
 						objective(1, {	-- Burn the Highvale Records
-							["coord"] = { 32.0, 46.9, THE_HINTERLANDS },
+							["coord"] = { 32.0, 46.9, MAP.THE_HINTERLANDS },
 						}),
 						objective(2, {	-- Burn the Highvale Notes
-							["coord"] = { 29.7, 48.5, THE_HINTERLANDS },
+							["coord"] = { 29.7, 48.5, MAP.THE_HINTERLANDS },
 						}),
 						objective(3, {	-- Burn the Highvale Report
-							["coord"] = { 28.7, 46.1, THE_HINTERLANDS },
+							["coord"] = { 28.7, 46.1, MAP.THE_HINTERLANDS },
 						}),
 					},
 				}),
@@ -737,9 +737,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						4293,	-- A Sample of Slime...
 					},
 					["qg"] = 10136,	-- Chemist Fuely
-					["coord"] = { 47.6, 73.0, UNDERCITY },
+					["coord"] = { 47.6, 73.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNGORO_CRATER },
+					["maps"] = { MAP.UNGORO_CRATER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -761,7 +761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1885, {	-- Mennet Carkad
 					["qg"] = 2130,	-- Marion Call
-					["coord"] = { 61.6, 52.0, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 52.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -774,14 +774,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 4556 },	-- Gordon Wendham
 						{ "i", 16210 },	-- Gordon's Crate
 					},
-					["coord"] = { 61.6, 41.8, UNDERCITY },
-					["maps"] = { SILVERPINE_FOREST },
+					["coord"] = { 61.6, 41.8, MAP.UNDERCITY },
+					["maps"] = { MAP.SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
 				q(29361, {	-- Moat Monster!
 					["qg"] = 4573,	-- Armand Cromwell
-					["coord"] = { 80.7, 31.2, UNDERCITY },
+					["coord"] = { 80.7, 31.2, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -798,8 +798,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 38306,	-- Mystery Notebook
 					["qg"] = 6566,	-- Estelle Gendry
 					["coords"] = {
-						{ 78.2, 75.6, UNDERCITY },
-						{ 56.8, 89.8, ORGRIMMAR },
+						{ 78.2, 75.6, MAP.UNDERCITY },
+						{ 56.8, 89.8, MAP.ORGRIMMAR },
 					},
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -815,7 +815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(8273, {	-- Oran's Gratitude
 					["sourceQuest"] = 2782,	-- Rin'ji's Secret
 					["qg"] = 7825,	-- Oran Snakewrithe
-					["coord"] = { 73.4, 32.4, UNDERCITY },
+					["coord"] = { 73.4, 32.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
@@ -834,8 +834,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3049,	-- Thurston Xane <Mage Trainer>
 					},
 					["coords"] = {
-						{ 39.0, 86.0, ORGRIMMAR },
-						{ 25.0, 20.6, THUNDER_BLUFF },
+						{ 39.0, 86.0, MAP.ORGRIMMAR },
+						{ 25.0, 20.6, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -850,14 +850,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 16210 },	-- Gordon's Crate
 					},
 					["coords"] = {
-						{ 44.9, 38.9, EASTERN_KINGDOMS },
-						{ 63.4, 48.6, UNDERCITY },
+						{ 44.9, 38.9, MAP.EASTERN_KINGDOMS },
+						{ 63.4, 48.6, MAP.UNDERCITY },
 					},
 					["maps"] = {
 						-- #if AFTER CATA
-						TIRISFAL_GLADES,
+						MAP.TIRISFAL_GLADES,
 						-- #else
-						SILVERPINE_FOREST,
+						MAP.SILVERPINE_FOREST,
 						-- #endif
 					},
 					["races"] = { UNDEAD },
@@ -865,7 +865,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29334, {	-- Roach Coach
 					["qg"] = 4552,	-- Eunice Burch
-					["coord"] = { 62.2, 44.6, UNDERCITY },
+					["coord"] = { 62.2, 44.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -880,9 +880,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5204 },	-- Apothecary Zinge
 						{ "i", 6016 },	-- Wolf Heart Sample
 					},
-					["coord"] = { 50.0, 68.4, UNDERCITY },
+					["coord"] = { 50.0, 68.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -897,16 +897,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78198, {	-- Secrets of the Loa (1/2)
 					["qg"] = 211225,	-- Baj'ura
-					["coord"] = { 47.2, 19.6, UNDERCITY },
+					["coord"] = { 47.2, 19.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/14 Hillsbrad Human Bones
 							["provider"] = { "i", 210055 },	-- Hillsbrad Human Bones
-							["coord"] = { 34.4, 40.8, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 34.4, 40.8, MAP.HILLSBRAD_FOOTHILLS },
 							["crs"] = {
 								2360,	-- Hillsbrad Farmhand
 								2266,	-- Hillsbrad Farmer
@@ -923,9 +923,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 211225 },	-- Baj'ura
 						{ "i", 210080 },	-- Voodoo Offering
 					},
-					["coord"] = { 47.2, 19.6, UNDERCITY },
+					["coord"] = { 47.2, 19.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 18,
@@ -938,31 +938,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(3568, {	-- Seeping Corruption (1/3)
 					["qg"] = 8390,	-- Chemist Cuely
-					["coord"] = { 47.6, 73.0, UNDERCITY },
+					["coord"] = { 47.6, 73.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { AZSHARA },
+					["maps"] = { MAP.AZSHARA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Vial Labeled #1
 							["provider"] = { "i", 10691 },	-- Filled Vial Labeled #1
 							["cost"] = { { "i", 10687, 1 } },	-- Empty Vial Labeled #1
-							["coord"] = { 48.0, 60.0, AZSHARA },
+							["coord"] = { 48.0, 60.0, MAP.AZSHARA },
 						}),
 						objective(2, {	-- 0/1 Filled Vial Labeled #2
 							["provider"] = { "i", 10692 },	-- Filled Vial Labeled #2
 							["cost"] = { { "i", 10688, 1 } },	-- Empty Vial Labeled #2
-							["coord"] = { 47.0, 51.0, AZSHARA },
+							["coord"] = { 47.0, 51.0, MAP.AZSHARA },
 						}),
 						objective(3, {	-- 0/1 Filled Vial Labeled #3
 							["provider"] = { "i", 10693 },	-- Filled Vial Labeled #3
 							["cost"] = { { "i", 10689, 1 } },	-- Empty Vial Labeled #3
-							["coord"] = { 48.0, 48.0, AZSHARA },
+							["coord"] = { 48.0, 48.0, MAP.AZSHARA },
 						}),
 						objective(4, {	-- 0/1 Filled Vial Labeled #4
 							["provider"] = { "i", 10694 },	-- Filled Vial Labeled #4
 							["cost"] = { { "i", 10690, 1 } },	-- Empty Vial Labeled #4
-							["coord"] = { 47.0, 46.0, AZSHARA },
+							["coord"] = { 47.0, 46.0, MAP.AZSHARA },
 						}),
 						i(10695, {	-- Box of Empty Vials
 							i(10687),	-- Empty Vial Labeled #1
@@ -978,7 +978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 8390 },	-- Chemist Cuely
 						{ "i", 10712 },	-- Cuely's Elixir
 					},
-					["coord"] = { 47.6, 73.0, UNDERCITY },
+					["coord"] = { 47.6, 73.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -986,7 +986,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3570, {	-- Seeping Corruption (3/3)
 					["sourceQuest"] = 3569,	-- Seeping Corruption (2/3)
 					["qg"] = 8390,	-- Chemist Cuely
-					["coord"] = { 47.6, 73.0, UNDERCITY },
+					["coord"] = { 47.6, 73.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5642,	-- Shadowguard [Thunder Bluff]
 					},
 					["qg"] = 4606,	-- Aelthalyste
-					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["coord"] = { 49.01, 18.32, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1016,9 +1016,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(79080, {	-- Sharing the Faith
 					["qg"] = 4607,	-- Father Lankester <Priest Trainer>
-					["coord"] = { 49.6, 15.6, UNDERCITY },
+					["coord"] = { 49.6, 15.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { TIRISFAL_GLADES },
+					["maps"] = { MAP.TIRISFAL_GLADES },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 5,
@@ -1033,7 +1033,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1881, {	-- Speak with Anastasia
 					["altQuests"] = { 1883 },	-- Speak with Un'thuwa
 					["qg"] = 2128,	-- Cain Firesong <Mage Trainer>
-					["coord"] = { 61.8, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 61.8, 52.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
@@ -1043,7 +1043,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1962, {	-- Spellfire Robes
 					["sourceQuest"] = 1961,	-- Gathering Materials
 					["qg"] = 11049,	-- Rhiannon Davis <Expert Tailor>
-					["coord"] = { 70.2, 30.2, UNDERCITY },
+					["coord"] = { 70.2, 30.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29319, {	-- Tadpole Terror
 					["qg"] = 4573,	-- Armand Cromwell
-					["coord"] = { 80.7, 31.2, UNDERCITY },
+					["coord"] = { 80.7, 31.2, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -1071,9 +1071,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1883,	-- Speak with Un'thuwa
 					},
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
-					["coord"] = { 85.0, 10.2, UNDERCITY },
+					["coord"] = { 85.0, 10.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { TIRISFAL_GLADES },
+					["maps"] = { MAP.TIRISFAL_GLADES },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
 					["lvl"] = 10,
@@ -1083,7 +1083,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7227 },	-- Balnir Snapdragons
 								{ "o", 102985 },	-- Balnir Snapdragons
 							},
-							["coord"] = { 77.4, 62.1, TIRISFAL_GLADES },
+							["coord"] = { 77.4, 62.1, MAP.TIRISFAL_GLADES },
 						}),
 						i(7507, {	-- Arcane Orb
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1098,7 +1098,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 65593,	-- Hearts of the Lovers
 					["altQuests"] = { 65604 },	-- The Binding (Incubus) [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1121,7 +1121,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1476,	-- Hearts of the Pure
 					["altQuests"] = { 1513 },	-- The Binding (Succubus) [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1143,7 +1143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1473,	-- Creature of the Void [Undercity]
 					["altQuests"] = { 1504 },	-- The Binding (Voidwalker) [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
@@ -1161,9 +1161,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1886, {	-- The Deathstalkers (1/4)
 					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69.0, UNDERCITY },
+					["coord"] = { 83.2, 69.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
-					["maps"] = { SILVERPINE_FOREST },
+					["maps"] = { MAP.SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1171,10 +1171,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Astor's Letter of Introduction
 							["provider"] = { "i", 7231 },	-- Astor's Letter of Introduction
 							["coords"] = {
-								{ 67.4, 5.6, SILVERPINE_FOREST },
-								{ 53.6, 19.5, SILVERPINE_FOREST },
-								{ 51.0, 36.2, SILVERPINE_FOREST },
-								{ 46.4, 41.4, SILVERPINE_FOREST },
+								{ 67.4, 5.6, MAP.SILVERPINE_FOREST },
+								{ 53.6, 19.5, MAP.SILVERPINE_FOREST },
+								{ 51.0, 36.2, MAP.SILVERPINE_FOREST },
+								{ 46.4, 41.4, MAP.SILVERPINE_FOREST },
 							},
 							["cr"] = 6497,	-- Astor Hadren
 						}),
@@ -1186,7 +1186,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7231 },	-- Astor's Letter of Introduction
 					},
-					["coord"] = { 83.2, 69.0, UNDERCITY },
+					["coord"] = { 83.2, 69.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1195,7 +1195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1899, {	-- The Deathstalkers (3/4)
 					["sourceQuest"] = 1898,	-- The Deathstalkers (2/4)
 					["qg"] = 6522,	-- Andron Gant
-					["coord"] = { 54.6, 75.6, UNDERCITY },
+					["coord"] = { 54.6, 75.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1203,7 +1203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Andron's Ledger
 							["provider"] = { "i", 7294 },	-- Andron's Ledger
-							["coord"] = { 55.3, 76.7, UNDERCITY },
+							["coord"] = { 55.3, 76.7, MAP.UNDERCITY },
 						}),
 					},
 				}),
@@ -1213,7 +1213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7294 },	-- Andron's Ledger
 					},
-					["coord"] = { 83.2, 69.0, UNDERCITY },
+					["coord"] = { 83.2, 69.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1227,9 +1227,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14420, {	-- The Deathstalkers (1/4)
 					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69.0, UNDERCITY },
+					["coord"] = { 83.2, 69.0, MAP.UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-					["maps"] = { SILVERPINE_FOREST },
+					["maps"] = { MAP.SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1237,10 +1237,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Astor's Letter of Introduction
 							["provider"] = { "i", 7231 },	-- Astor's Letter of Introduction
 							["coords"] = {
-								{ 67.4, 5.6, SILVERPINE_FOREST },
-								{ 53.6, 19.5, SILVERPINE_FOREST },
-								{ 51.0, 36.2, SILVERPINE_FOREST },
-								{ 46.4, 41.4, SILVERPINE_FOREST },
+								{ 67.4, 5.6, MAP.SILVERPINE_FOREST },
+								{ 53.6, 19.5, MAP.SILVERPINE_FOREST },
+								{ 51.0, 36.2, MAP.SILVERPINE_FOREST },
+								{ 46.4, 41.4, MAP.SILVERPINE_FOREST },
 							},
 							["cr"] = 6497,	-- Astor Hadren
 						}),
@@ -1252,7 +1252,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7231 },	-- Astor's Letter of Introduction
 					},
-					["coord"] = { 83.2, 69.0, UNDERCITY },
+					["coord"] = { 83.2, 69.0, MAP.UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1261,7 +1261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14421, {	-- The Deathstalkers (3/4)
 					["sourceQuest"] = 14419,	-- The Deathstalkers (2/4)
 					["qg"] = 6522,	-- Andron Gant
-					["coord"] = { 54.6, 75.6, UNDERCITY },
+					["coord"] = { 54.6, 75.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1269,7 +1269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Andron's Ledger
 							["provider"] = { "i", 7294 },	-- Andron's Ledger
-							["coord"] = { 55.3, 76.7, UNDERCITY },
+							["coord"] = { 55.3, 76.7, MAP.UNDERCITY },
 						}),
 					},
 				}),
@@ -1279,7 +1279,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7294 },	-- Andron's Ledger
 					},
-					["coord"] = { 83.2, 69.0, UNDERCITY },
+					["coord"] = { 83.2, 69.0, MAP.UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1294,8 +1294,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 38397,	-- A Curious Oddity
 					["qg"] = 6566,	-- Estelle Gendry
 					["coords"] = {
-						{ 78.2, 75.6, UNDERCITY },
-						{ 56.8, 89.8, ORGRIMMAR },
+						{ 78.2, 75.6, MAP.UNDERCITY },
+						{ 56.8, 89.8, MAP.ORGRIMMAR },
 					},
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -1310,7 +1310,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29322, {	-- Time for Slime
 					["qg"] = 4573,	-- Armand Cromwell
-					["coord"] = { 80.7, 31.2, UNDERCITY },
+					["coord"] = { 80.7, 31.2, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -1321,25 +1321,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1164, {	-- To Steal From Thieves
 					["qg"] = 4486,	-- Genavie Callow
-					["coord"] = { 64.8, 49.6, UNDERCITY },
+					["coord"] = { 64.8, 49.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ARATHI_HIGHLANDS },
+					["maps"] = { MAP.ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 27,
 					["groups"] = {
 						objective(1, {	-- 0/1 Kenata's Head
 							["provider"] = { "i", 5830 },	-- Kenata's Head
-							["coord"] = { 56.2, 36.0, ARATHI_HIGHLANDS },
+							["coord"] = { 56.2, 36.0, MAP.ARATHI_HIGHLANDS },
 							["cr"] = 4480,	-- Kenata Dabyrie
 						}),
 						objective(2, {	-- 0/1 Marcel's Head
 							["provider"] = { "i", 5832 },	-- Marcel's Head
-							["coord"] = { 54.5, 38.6, ARATHI_HIGHLANDS },
+							["coord"] = { 54.5, 38.6, MAP.ARATHI_HIGHLANDS },
 							["cr"] = 4481,	-- Marcel Dabyrie
 						}),
 						objective(3, {	-- 0/1 Fardel's Head
 							["provider"] = { "i", 5831 },	-- Fardel's Head
-							["coord"] = { 55.0, 40.0, ARATHI_HIGHLANDS },
+							["coord"] = { 55.0, 40.0, MAP.ARATHI_HIGHLANDS },
 							["cr"] = 4479,	-- Fardel Dabyrie
 						}),
 						i(4443, {	-- Grim Pauldrons
@@ -1353,9 +1353,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1999, {	-- Tools of the Trade
 					["sourceQuest"] = 1998,	-- Fenwick Thatros
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69.0, UNDERCITY },
+					["coord"] = { 83.2, 69.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SILVERPINE_FOREST },
+					["maps"] = { MAP.SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 16,
@@ -1381,11 +1381,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3044,	-- Miles Welsh <Priest Trainer>
 					},
 					["coords"] = {
-						{ 49.01, 18.32, UNDERCITY },
-						{ 54.2, 42.8, DUROTAR },
-						{ 47.0, 58.8, MULGORE },
-						{ 35.6, 87.6, ORGRIMMAR },
-						{ 26.0, 15.8, THUNDER_BLUFF },
+						{ 49.01, 18.32, MAP.UNDERCITY },
+						{ 54.2, 42.8, MAP.DUROTAR },
+						{ 47.0, 58.8, MAP.MULGORE },
+						{ 35.6, 87.6, MAP.ORGRIMMAR },
+						{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -1410,7 +1410,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
 					["qg"] = 4606,	-- Aelthalyste
-					["coord"] = { 49.0, 18.3, UNDERCITY },
+					["coord"] = { 49.0, 18.3, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -1428,7 +1428,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1841, {	-- Velora Nitely and the Brutal Legguards
 					["sourceQuest"] = 1838,	-- Brutal Armor
 					["qg"] = 5878,	-- Thun'grim Firegaze
-					["coord"] = { 57.2, 30.2, THE_BARRENS },
+					["coord"] = { 57.2, 30.2, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -1436,7 +1436,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29360, {	-- Would You Like Some Flies With That?
 					["qg"] = 4552,	-- Eunice Burch
-					["coord"] = { 62.2, 44.6, UNDERCITY },
+					["coord"] = { 62.2, 44.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -1451,7 +1451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
 					-- ["provider"] = { "o",  },	-- Summoning Circle
-					["coord"] = { 24.1, 41.6, UNDERCITY },
+					["coord"] = { 24.1, 41.6, MAP.UNDERCITY },
 					["cost"] = {
 						{ "i", 207974, 1 },	-- Ominous Tome
 						{ "i", 204906, 1 },	-- Gnoll Blood
@@ -1471,7 +1471,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(TREASURES, {
 				applyclassicphase(PHASE_FIVE, o(180666, {	-- Draconic for Dummies
-					["coord"] = { 77.0, 38.0, UNDERCITY },
+					["coord"] = { 77.0, 38.0, MAP.UNDERCITY },
 					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
 					["groups"] = {
 						i(21106),	-- Draconic for Dummies [Chapter IV]
@@ -1479,7 +1479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				o(240623, {	-- Sylvanas' Strongbox
 					["description"] = "Use Zidormi to access Tirisfal Glades of the past. Loot the strongbox at the base of a pillar to the left of Sylvanas Windrunner. Alliance characters *can* loot this.",
-					["coord"] = { 58.1, 93.8, UNDERCITY },
+					["coord"] = { 58.1, 93.8, MAP.UNDERCITY },
 					["timeline"] = { ADDED_6_1_0 },
 					["modelRotation"] = 270,
 					["modelScale"] = 1.3,
@@ -1493,7 +1493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(4604, {	-- Abigail Sawyer <Bow Merchant>
-					["coord"] = { 54.8, 38.0, UNDERCITY },
+					["coord"] = { 54.8, 38.0, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						3027,	-- Heavy Recurve Bow
@@ -1512,7 +1512,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4610, {	-- Algernon <Alchemy Supplies>
-					["coord"] = { 51.8, 74.6, UNDERCITY },
+					["coord"] = { 51.8, 74.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
@@ -1524,7 +1524,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4602, {	-- Benijah Fenner
-					["coord"] = { 58.6, 32.6, UNDERCITY },
+					["coord"] = { 58.6, 32.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						925,	-- Flail
@@ -1545,9 +1545,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
 					["coords"] = {
-						{ 63.6, 48.8, UNDERCITY },
+						{ 63.6, 48.8, MAP.UNDERCITY },
 						-- #if AFTER 8.0.1
-						{ 56.6, 90.2, ORGRIMMAR },
+						{ 56.6, 90.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(5675, {	-- Carendin Halgar
-					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
@@ -1598,7 +1598,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(4569, {	-- Charles Seaton <Blade Merchant>
-					["coord"] = { 77.0, 50.0, UNDERCITY },
+					["coord"] = { 77.0, 50.0, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						-- added all
@@ -1614,7 +1614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
-					["coord"] = { 64.0, 37.4, UNDERCITY },
+					["coord"] = { 64.0, 37.4, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, i(20854, {	-- Design: Amulet of the Moon (RECIPE!)
@@ -1627,16 +1627,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4555, {	-- Eleanor Rusk <General Goods>
-					["coord"] = { 69.2, 48.9, UNDERCITY },	-- Trade Quarter
+					["coord"] = { 69.2, 48.9, MAP.UNDERCITY },	-- Trade Quarter
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER 6.1.0
 				n(6566, {	-- Estelle Gendry <Heirloom "Curator">
 					["coords"] = {
 						-- #if AFTER BFA
-						{ 57.1, 90.0, ORGRIMMAR },
+						{ 57.1, 90.0, MAP.ORGRIMMAR },
 						-- #endif
-						{ 78.2, 76.6, UNDERCITY },
+						{ 78.2, 76.6, MAP.UNDERCITY },
 					},
 					["timeline"] = { ADDED_6_1_0 },
 					["races"] = HORDE_ONLY,
@@ -1792,7 +1792,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(4585, {	-- Ezekiel
-					["coord"] = { 75.6, 51.6, UNDERCITY },
+					["coord"] = { 75.6, 51.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
@@ -1801,7 +1801,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(4775, {	-- Felicia Doan <Trade Supplies>
-					["coord"] = { 64.1, 50.6, UNDERCITY },
+					["coord"] = { 64.1, 50.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, i(20975, {	-- Design: The Jade Eye (RECIPE!)
@@ -1811,7 +1811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4601, {	-- Francis Eliot
-					["coord"] = { 58.6, 32.6, UNDERCITY },
+					["coord"] = { 58.6, 32.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						926,	-- Battle Axe
@@ -1827,7 +1827,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4600, {	-- Geoffrey Hartwell
-					["coord"] = { 58.4, 32.6, UNDERCITY },
+					["coord"] = { 58.4, 32.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2520,	-- Broadsword
@@ -1843,7 +1843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(5820, {	-- Gillian Moore
-					["coord"] = { 70.6, 59.6, UNDERCITY },
+					["coord"] = { 70.6, 59.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2142,	-- Cuirboulli Belt
@@ -1889,7 +1889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4556, {	-- Gordon Wendham
-					["coord"] = { 61.4, 41.2, UNDERCITY },
+					["coord"] = { 61.4, 41.2, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						1194,	-- Bastard Sword
@@ -1911,7 +1911,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
-					["coord"] = { 67.6, 44.1, UNDERCITY },
+					["coord"] = { 67.6, 44.1, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(10393, {	-- Undercity Cockroach (PET!)
@@ -1920,7 +1920,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4589, {	-- Joseph Moore <Leatherworking Supplies>
-					["coord"] = { 70.1, 58.4, UNDERCITY },
+					["coord"] = { 70.1, 58.4, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
 					["groups"] = {
@@ -1933,7 +1933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4615, {	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
-					["coord"] = { 54.73, 48.9, UNDERCITY },
+					["coord"] = { 54.73, 48.9, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(22250, {	-- Herb Pouch
@@ -1957,7 +1957,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
-					["coord"] = { 64.0, 38.0, UNDERCITY },
+					["coord"] = { 64.0, 38.0, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2371,	-- Battered Leather Belt
@@ -2004,7 +2004,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
-					["coord"] = { 81.0, 30.8, UNDERCITY },
+					["coord"] = { 81.0, 30.8, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
@@ -2014,7 +2014,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4557, {	-- Louis Warren
-					["coord"] = { 62.0, 41.2, UNDERCITY },
+					["coord"] = { 62.0, 41.2, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2025,	-- Bearded Axe
@@ -2036,7 +2036,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(4580, {	-- Lucille Castleton
-					["coord"] = { 71.4, 28.4, UNDERCITY },
+					["coord"] = { 71.4, 28.4, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2617,	-- Burning Robes
@@ -2053,11 +2053,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = { 130966 },	-- Merill Pleasance <Tabard Vendor>
 					-- #endif
 					["sym"] = { {"sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
-					["coord"] = { 69.3, 44.8, UNDERCITY },
+					["coord"] = { 69.3, 44.8, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				n(4577, {	-- Millie Gregorian <Tailoring Supplies>
-					["coord"] = { 70.6, 30.1, UNDERCITY },
+					["coord"] = { 70.6, 30.1, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER CATA
 					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
@@ -2073,7 +2073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				n(5819, {	-- Mirelle Tremayne
-					["coord"] = { 61.6, 28.4, UNDERCITY },
+					["coord"] = { 61.6, 28.4, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2419,	-- Augmented Chain Belt
@@ -2129,7 +2129,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(4592, {	-- Nathaniel Steenwick
-					["coord"] = { 77.2, 50.2, UNDERCITY },
+					["coord"] = { 77.2, 50.2, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						3027,	-- Heavy Recurve Bow
@@ -2141,7 +2141,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(4603, {	-- Nicholas Atwood
-					["coord"] = { 62.2, 27.0, UNDERCITY },
+					["coord"] = { 62.2, 27.0, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						3024,	-- BKP 2700 "Enforcer"
@@ -2151,7 +2151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
-					["coord"] = { 62.3, 43.1, UNDERCITY },
+					["coord"] = { 62.3, 43.1, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER CATA
 					["sym"] = {{"sub", "common_vendor", 49737}},	-- Shazdar <Sous Chef>
@@ -2165,17 +2165,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>
 					["sym"] = {{"sub", "common_recipes_vendor", 46359}},	-- Punra <Blacksmithing Supplies>
-					["coord"] = { 61.4, 30.1, UNDERCITY },
+					["coord"] = { 61.4, 30.1, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
-					["coord"] = { 56.2, 36.6, UNDERCITY },
+					["coord"] = { 56.2, 36.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
 				}),
 				n(4599, {	-- Sarah Killan <Mining Supplies>
-					["coord"] = { 56.6, 37.3, UNDERCITY },
+					["coord"] = { 56.6, 37.3, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2901),	-- Mining Pick
@@ -2197,7 +2197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
-					["coord"] = { 70.6, 28.8, UNDERCITY },
+					["coord"] = { 70.6, 28.8, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2435,	-- Embroidered Armor
@@ -2246,7 +2246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4570, {	-- Sydney Upton <Staff Merchant>
-					["coord"] = { 69.8, 27.4, UNDERCITY },
+					["coord"] = { 69.8, 27.4, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2527,	-- Battle Staff
@@ -2254,7 +2254,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(4554, {	-- Tawny Grisette <Mushroom Vendor>
-					["coord"] = { 69.7, 44.8, UNDERCITY },
+					["coord"] = { 69.7, 44.8, MAP.UNDERCITY },
 					["description"] = "Walks around the Trade Quarter, upper level.",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2268,12 +2268,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 					["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
-					["coord"] = { 62.0, 60.8, UNDERCITY },
+					["coord"] = { 62.0, 60.8, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(VANILLA_ENCHANTING_COMMON_RECIPES, {}),
 				}),
 				n(4559, {	-- Timothy Weldon
-					["coord"] = { 63.6, 39.6, UNDERCITY },
+					["coord"] = { 63.6, 39.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						17187,	-- Banded Buckler
@@ -2299,7 +2299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4560, {	-- Walter Ellingson
-					["coord"] = { 62.8, 39.6, UNDERCITY },
+					["coord"] = { 62.8, 39.6, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						17187,	-- Banded Buckler
@@ -2313,7 +2313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(5754, {	-- Zane Bradford
-					["coord"] = { 70.0, 27.2, UNDERCITY },
+					["coord"] = { 70.0, 27.2, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select", "itemID",
 						5239,	-- Blackbone Wand
@@ -2331,9 +2331,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207324, {	-- Warchief's Command Board
 				["coords"] = {
-					{ 44.0, 35.4, UNDERCITY },
-					{ 66.5, 49.8, UNDERCITY },
-					{ 61.8, 75.6, UNDERCITY },
+					{ 44.0, 35.4, MAP.UNDERCITY },
+					{ 66.5, 49.8, MAP.UNDERCITY },
+					{ 61.8, 75.6, MAP.UNDERCITY },
 				},
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,

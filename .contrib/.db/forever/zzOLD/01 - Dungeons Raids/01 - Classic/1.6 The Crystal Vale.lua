@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_FIVE, inst(2804, bubbleDownSelf({["timeline"] = { ADDED_1_15_4 }}, {	-- The Crystal Vale
 		["lore"] = "The Crystal Vale can be found near the northwest corner of Silithus.",
 		["zone-text-areaID"] = 15825,	-- The Crystal Vale
-		["coord"] = { 22.0, 10.0, SILITHUS },
+		["coord"] = { 22.0, 10.0, MAP.SILITHUS },
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
@@ -18,9 +18,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["coords"] = {
 						-- #if AFTER LEGION
-						{ 29.6, 10.6, SILITHUS },
+						{ 29.6, 10.6, MAP.SILITHUS },
 						-- #else
-						{ 21.7, 8.6, SILITHUS },
+						{ 21.7, 8.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_15_4 },
@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
-					["coord"] = { 21.7, 8.6, SILITHUS },
+					["coord"] = { 21.7, 8.6, MAP.SILITHUS },
 					["timeline"] = { REMOVED_1_15_4 },
 					["maps"] = { MOLTEN_CORE },
 					["classes"] = SWORD_CLASSES,
@@ -72,9 +72,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 14347,	-- Highlord Demitrian
 					["coords"] = {
 						-- #if AFTER LEGION
-						{ 29.6, 10.6, SILITHUS },
+						{ 29.6, 10.6, MAP.SILITHUS },
 						-- #else
-						{ 21.7, 8.6, SILITHUS },
+						{ 21.7, 8.6, MAP.SILITHUS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_15_4 },

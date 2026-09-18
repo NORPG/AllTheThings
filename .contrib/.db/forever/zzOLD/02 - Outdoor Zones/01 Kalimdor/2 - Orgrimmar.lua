@@ -19,8 +19,8 @@ local PVP_MOUNT_COST = {
 	-- #endif
 };
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(ORGRIMMAR, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.ORGRIMMAR, {
 		["lore"] = "Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs' new homeland. Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world. Behind Orgrimmar's immense walls, elderly shaman pass their knowledge on to the Horde's newest generation of leaders, while warriors spar in the gladiatorial arena, honing their skills in preparation for the trials that await them in this dangerous land.",
 		["icon"] = 255142,
 		-- #if AFTER CATA
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			explorationHeader({
-				visit_exploration(5170,{coord={48.8,83.3,ORGRIMMAR}}),	-- Valley of Strength
+				visit_exploration(5170,{coord={48.8,83.3,MAP.ORGRIMMAR}}),	-- Valley of Strength
 			}),
 			n(FACTIONS, {
 				faction(FACTION_BILGEWATER_CARTEL, {	-- Bilgewater Cartel
@@ -91,9 +91,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3310,	-- Doras <Wind Rider Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.4, 59.2, ORGRIMMAR },
+						{ 49.4, 59.2, MAP.ORGRIMMAR },
 						-- #else
-						{ 45.2, 63.8, ORGRIMMAR },
+						{ 45.2, 63.8, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			petbattles({
 				n(63626, {	-- Varzok <Battle Pet Tamer>
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["description"] =
 						-- #if BEFORE 9.0.3
@@ -122,14 +122,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 31983,	-- A Brief Reprieve (H)
 					-- ["altQuests"] = { 31966 },
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
+					["maps"] = { MAP.MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat Brok
 							["provider"] = { "n", 66819 },	-- Brok <Master Pet Tamer>
-							["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
+							["coord"] = { 61.4, 32.8, MAP.MOUNT_HYJAL },
 						}),
 						objective(2, {	-- Defeat Bordin Steadyfist
 							["provider"] = { "n", 66815 },	-- Bordin Steadyfist <Master Pet Tamer>
@@ -146,29 +146,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 31918,	-- A Tamer's Homecoming (H)
 					-- ["altQuests"] = { 31902 },	-- Battle Pet Tamers: Eastern Kingdoms (Alliance version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat David Kosse
 							["provider"] = { "n", 66478 },	-- David Kosse <Master Pet Tamer>
-							["coord"] = { 62.8, 54.6, THE_HINTERLANDS },
+							["coord"] = { 62.8, 54.6, MAP.THE_HINTERLANDS },
 						}),
 						objective(2, {	-- Defeat Deiza Plaguehorn
 							["provider"] = { "n", 66512 },	-- Deiza Plaguehorn <Master Pet Tamer>
-							["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+							["coord"] = { 67.0, 52.4, MAP.EASTERN_PLAGUELANDS },
 						}),
 						objective(3, {	-- Defeat Kortas Darkhammer
 							["provider"] = { "n", 66515 },	-- Kortas Darkhammer <Master Pet Tamer>
-							["coord"] = { 35.4, 27.8, SEARING_GORGE },
+							["coord"] = { 35.4, 27.8, MAP.SEARING_GORGE },
 						}),
 						objective(4, {	-- Defeat Everessa
 							["provider"] = { "n", 66518 },	-- Everessa <Master Pet Tamer>
-							["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
+							["coord"] = { 76.6, 41.6, MAP.SWAMP_OF_SORROWS },
 						}),
 						objective(5, {	-- Defeat Durin Darkhammer
 							["provider"] = { "n", 66520 },	-- Durin Darkhammer <Master Pet Tamer>
-							["coord"] = { 25.6, 47.6, BURNING_STEPPES },
+							["coord"] = { 25.6, 47.6, MAP.BURNING_STEPPES },
 						}),
 						i(89125),	-- Sack of Pet Supplies
 					},
@@ -177,30 +177,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 31918,	-- A Tamer's Homecoming (H)
 					-- ["altQuests"] = { 31889 },
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { FERALAS, DUSTWALLOW_MARSH, THOUSAND_NEEDLES, FELWOOD, MOONGLADE },
+					["maps"] = { MAP.FERALAS, MAP.DUSTWALLOW_MARSH, MAP.THOUSAND_NEEDLES, MAP.FELWOOD, MAP.MOONGLADE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat Traitor Gluk
 							["provider"] = { "n", 66352 },	-- Traitor Gluk <Master Pet Tamer>
-							["coord"] = { 59.6, 49.6, FERALAS },
+							["coord"] = { 59.6, 49.6, MAP.FERALAS },
 						}),
 						objective(2, {	-- Defeat Grazzle the Great
 							["provider"] = { "n", 66436 },	-- Grazzle the Great <Master Pet Tamer>
-							["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
+							["coord"] = { 53.8, 74.8, MAP.DUSTWALLOW_MARSH },
 						}),
 						objective(3, {	-- Defeat Kela Grimtotem
 							["provider"] = { "n", 66452 },	-- Kela Grimtotem <Master Pet Tamer>
-							["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
+							["coord"] = { 31.8, 32.8, MAP.THOUSAND_NEEDLES },
 						}),
 						objective(4, {	-- Defeat Zoltan
 							["provider"] = { "n", 66442 },	-- Zoltan <Master Pet Tamer>
-							["coord"] = { 40.0, 56.6, FELWOOD },
+							["coord"] = { 40.0, 56.6, MAP.FELWOOD },
 						}),
 						objective(5, {	-- Defeat Elena Flutterfly
 							["provider"] = { "n", 66412 },	-- Elena Flutterfly <Master Pet Tamer>
-							["coord"] = { 46.0, 60.6, MOONGLADE },
+							["coord"] = { 46.0, 60.6, MAP.MOONGLADE },
 						}),
 						i(89125),	-- Sack of Pet Supplies
 					},
@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 31982,	-- Exceeding Expectations (H)
 					-- ["altQuests"] = { 31927 },
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HOWLING_FJORD, CRYSTALSONG_FOREST, DRAGONBLIGHT, ZULDRAK },
 					["races"] = HORDE_ONLY,
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- ["altQuests"] = { 31919 },
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HELLFIRE_PENINSULA, ZANGARMARSH, NAGRAND, SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
@@ -268,7 +268,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 31986,	-- The Triumphant Return (H)
 					-- ["altQuests"] = { 31930 },
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { THE_JADE_FOREST, VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, KUN_LAI_SUMMIT, TOWNLONG_STEPPES, DREAD_WASTES },
 					["races"] = HORDE_ONLY,
@@ -303,66 +303,66 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(31587, {	-- Got one! (Matty)
 					["sourceQuest"] = 31828,	-- Level Up!
 					["qg"] = 63086,	-- Matty
-					["coord"] = { 36.8, 77.4, ORGRIMMAR },
+					["coord"] = { 36.8, 77.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31590, {	-- Got one! (Varzok)
 					["sourceQuest"] = 31827,	-- Level Up!
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31585, {	-- Learning the Ropes (Matty)
 					["qg"] = 63086,	-- Matty
-					["coord"] = { 36.8, 77.4, ORGRIMMAR },
+					["coord"] = { 36.8, 77.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31588, {	-- Learning the Ropes (Varzok)
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31828, {	-- Level Up! (Matty)
 					["sourceQuest"] = 31586,	-- On The Mend
 					["qg"] = 63086,	-- Matty
-					["coord"] = { 36.8, 77.4, ORGRIMMAR },
+					["coord"] = { 36.8, 77.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31827, {	-- Level Up! (Varzok)
 					["sourceQuest"] = 31589,	-- On The Mend
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31586, {	-- On The Mend (Matty)
 					["sourceQuest"] = 31585,	-- Learning the Ropes
 					["qg"] = 63086,	-- Matty
-					["coord"] = { 36.8, 77.4, ORGRIMMAR },
+					["coord"] = { 36.8, 77.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Battle Pets Healed
 							["provider"] = { "n", 45789 },	-- Bezzil <Stable Master>
-							["coord"] = { 40.8, 80.6, ORGRIMMAR },
+							["coord"] = { 40.8, 80.6, MAP.ORGRIMMAR },
 						}),
 					},
 				}),
 				q(31589, {	-- On The Mend (Varzok)
 					["sourceQuest"] = 31588,	-- Learning the Ropes
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Battle Pets Healed
 							["provider"] = { "n", 47764 },	-- Murog <Stable Master>
-							["coord"] = { 62.6, 35.6, ORGRIMMAR },
+							["coord"] = { 62.6, 35.6, MAP.ORGRIMMAR },
 						}),
 					},
 				}),
@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(32009, {	-- Varzok
 					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -378,7 +378,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,
 				}),
 				q(31882, {	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,
 				}),
 				q(31883, {	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -394,7 +394,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,
 				}),
 				q(31884, {	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -402,7 +402,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,
 				}),
 				q(31885, {	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -412,14 +412,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(31812, {	-- Zunta, The Pet Tamer
 					["sourceQuests"] = { 32009, 31882, 31883, 31884, 31885 },	-- Varzok (all breadcrumbs)
 					["qg"] = 63626,	-- Varzok
-					["coord"] = { 52.6, 59.3, ORGRIMMAR },
+					["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat Zunta
 							["provider"] = { "n", 66126 },	-- Zunta
-							["coord"] = { 43.9, 28.9, DUROTAR },
+							["coord"] = { 43.9, 28.9, MAP.DUROTAR },
 						}),
 						i(89125),	-- Sack of Pet Supplies
 					},
@@ -428,69 +428,69 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(3347, {	-- Yelmak <Alchemy Trainer>
-						["coord"] = { 55.6, 46.6, ORGRIMMAR },
+						["coord"] = { 55.6, 46.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_ALCHEMY,
 					}),
 				}),
 				prof(BLACKSMITHING, {
 					n(11178, {	-- Borgosh Corebender <Weaponsmith>
-						["coord"] = { 79.6, 23.6, ORGRIMMAR },
+						["coord"] = { 79.6, 23.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_WEAPONSMITHING,
 					}),
 					n(11177, {	-- Okothos Ironrager <Armorsmith>
-						["coord"] = { 79.8, 23.8, ORGRIMMAR },
+						["coord"] = { 79.8, 23.8, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_ARMORSMITHING,
 					}),
 					n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
-						["coord"] = { 76.4, 34.4, ORGRIMMAR },
+						["coord"] = { 76.4, 34.4, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_BLACKSMITHING,
 					}),
 				}),
 				prof(COOKING, {
 					n(3399, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1 }, }, {	-- Zamja <Cooking Trainer>
-						["coord"] = { 32.2, 69.6, ORGRIMMAR },
+						["coord"] = { 32.2, 69.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_COOKING,
 					})),
 				}),
 				prof(ENCHANTING, {
 					n(3345, {	-- Godan <Enchanting Trainer>
-						["coord"] = { 53.4, 49.4, ORGRIMMAR },
+						["coord"] = { 53.4, 49.4, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_ENCHANTING,
 					}),
 				}),
 				prof(ENGINEERING, {
 					n(11017, {	-- Roxxik <Engineering Trainer>
-						["coord"] = { 56.8, 56.4, ORGRIMMAR },
+						["coord"] = { 56.8, 56.4, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_ENGINEERING,
 					}),
 				}),
 				prof(FIRST_AID, {
 					n(3373, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Arnok <First Aid Trainer>
-						["coord"] = { 34.0, 84.4, ORGRIMMAR },
+						["coord"] = { 34.0, 84.4, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_FIRST_AID,
 					})),
 					n(45540, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3, REMOVED_7_3_5 } }, {	-- Krenk Choplimb <Bandage Trainer>
-						["coord"] = { 37.6, 87.2, ORGRIMMAR },
+						["coord"] = { 37.6, 87.2, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_FIRST_AID
 					})),
 					n(133109, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Mender Jessara <Bandage Trainer>
-						["coord"] = { 38.2, 86.6, ORGRIMMAR },
+						["coord"] = { 38.2, 86.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_FIRST_AID,
 					})),
 				}),
 				prof(FISHING, {
 					n(3332, {	-- Lumak <Fishing Trainer>
-						["coord"] = { 66.6, 41.6, ORGRIMMAR },
+						["coord"] = { 66.6, 41.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_FISHING,
 					}),
@@ -518,9 +518,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3404, {	-- Jandi <Herbalism Trainer>
 						["coords"] = {
 							-- #if AFTER CATA
-							{ 34.6, 63.2, ORGRIMMAR },
+							{ 34.6, 63.2, MAP.ORGRIMMAR },
 							-- #else
-							{ 55.6, 39.6, ORGRIMMAR },
+							{ 55.6, 39.6, MAP.ORGRIMMAR },
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
@@ -530,7 +530,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
-						["coord"] = { 35.6, 69.2, ORGRIMMAR },
+						["coord"] = { 35.6, 69.2, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
 						["groups"] = CLASSIC_WRATH_CATA_INSCRIPTION,
@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				prof(JEWELCRAFTING, {
 					n(46675, {	-- Lugrah <Jewelcrafting Trainer>
-						["coord"] = { 72.5, 34.3, ORGRIMMAR },
+						["coord"] = { 72.5, 34.3, MAP.ORGRIMMAR },
 						["timeline"] = { ADDED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(CLASSIC_CATA_JEWELCRAFTING,
@@ -554,13 +554,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						),
 					}),
 					n(50482, {	-- Marith Lazuria <Jewelcrafting Supplies>
-						["coord"] = { 72.4, 34.6, ORGRIMMAR },
+						["coord"] = { 72.4, 34.6, MAP.ORGRIMMAR },
 						["timeline"] = { ADDED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["groups"] = COMMON_CATACLYSM_JEWELCRAFTING_RECIPES,
 					}),
 					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
-						["coord"] = { 72.4, 34.6, ORGRIMMAR },
+						["coord"] = { 72.4, 34.6, MAP.ORGRIMMAR },
 						["timeline"] = { ADDED_4_3_0 },
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(COMMON_CATACLYSM_EPIC_JEWELCRAFTING_RECIPES, {
@@ -581,9 +581,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3365, {	-- Karolek <Leatherworking Trainer>
 						["coords"] = {
 							-- #if BEFORE CATA
-							{ 62.8, 44.6, ORGRIMMAR },
+							{ 62.8, 44.6, MAP.ORGRIMMAR },
 							-- #else
-							{ 60.8, 54.8, ORGRIMMAR },
+							{ 60.8, 54.8, MAP.ORGRIMMAR },
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
@@ -594,9 +594,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3357, {	-- Makaru <Mining Trainer>
 						["coords"] = {
 							-- #if AFTER CATA
-							{ 72.4, 35.6, ORGRIMMAR },
+							{ 72.4, 35.6, MAP.ORGRIMMAR },
 							-- #else
-							{ 73.0, 27.0, ORGRIMMAR },
+							{ 73.0, 27.0, MAP.ORGRIMMAR },
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
@@ -605,7 +605,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				prof(POISONS, {
 					n(3328, {	-- Ormok <Rogue Trainer>
-						["coord"] = { 44.6, 61.6, ORGRIMMAR },
+						["coord"] = { 44.6, 61.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(CLASSIC_POISONS,
 							-- #if AFTER TBC
@@ -620,9 +620,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(7088, {	-- Thuwd <Skinning Trainer>
 						["coords"] = {
 							-- #if AFTER CATA
-							{ 61.0, 54.6, ORGRIMMAR },
+							{ 61.0, 54.6, MAP.ORGRIMMAR },
 							-- #else
-							{ 63.2, 45.2, ORGRIMMAR },
+							{ 63.2, 45.2, MAP.ORGRIMMAR },
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
@@ -633,9 +633,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3363, {	-- Magar <Tailoring Trainer>
 						["coords"] = {
 							-- #if AFTER CATA
-							{ 60.6, 59.0, ORGRIMMAR },
+							{ 60.6, 59.0, MAP.ORGRIMMAR },
 							-- #else
-							{ 63.6, 50.0, ORGRIMMAR },
+							{ 63.6, 50.0, MAP.ORGRIMMAR },
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				q(7831, {	-- A Donation of Mageweave
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-					["coord"] = { 63.4, 51.0, ORGRIMMAR },
+					["coord"] = { 63.4, 51.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 					["races"] = HORDE_ONLY,
@@ -660,7 +660,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7835, {	-- A Donation of Mageweave
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
-					["coord"] = { 37.8, 87.6, ORGRIMMAR },
+					["coord"] = { 37.8, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 					["races"] = HORDE_ONLY,
@@ -668,7 +668,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7824, {	-- A Donation of Runecloth
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-					["coord"] = { 63.4, 51.0, ORGRIMMAR },
+					["coord"] = { 63.4, 51.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- 60x Runecloth
 					["races"] = HORDE_ONLY,
@@ -676,7 +676,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7836, {	-- A Donation of Runecloth
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
-					["coord"] = { 37.8, 87.6, ORGRIMMAR },
+					["coord"] = { 37.8, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- 60x Runecloth
 					["races"] = HORDE_ONLY,
@@ -684,7 +684,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7827, {	-- A Donation of Silk
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-					["coord"] = { 63.4, 51.0, ORGRIMMAR },
+					["coord"] = { 63.4, 51.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 					["races"] = HORDE_ONLY,
@@ -692,7 +692,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7834, {	-- A Donation of Silk
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
-					["coord"] = { 37.8, 87.6, ORGRIMMAR },
+					["coord"] = { 37.8, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 					["races"] = HORDE_ONLY,
@@ -700,7 +700,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7826, {	-- A Donation of Wool
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-					["coord"] = { 63.4, 51.0, ORGRIMMAR },
+					["coord"] = { 63.4, 51.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 					["races"] = HORDE_ONLY,
@@ -708,7 +708,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7833, {	-- A Donation of Wool
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
-					["coord"] = { 37.8, 87.6, ORGRIMMAR },
+					["coord"] = { 37.8, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 					["races"] = HORDE_ONLY,
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7341, {	-- A Fair Trade
 					["qg"] = 14182,	-- Bounty Hunter Kolark
-					["coord"] = { 74.4, 26.4, ORGRIMMAR },
+					["coord"] = { 74.4, 26.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.1
 					["cost"] = { { "i", 15997, 200 } },	-- 200x Thorium Shells
@@ -732,7 +732,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26588, {	-- A Furious Catch
 					["qg"] = 43239,	-- Razgar
-					["coord"] = { 65.7, 41.1, ORGRIMMAR },
+					["coord"] = { 65.7, 41.1, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -744,7 +744,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26572, {	-- A Golden Opportunity
 					["qg"] = 43239,	-- Razgar
-					["coord"] = { 65.7, 41.1, ORGRIMMAR },
+					["coord"] = { 65.7, 41.1, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -763,14 +763,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				warchiefscommand(q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 					["qg"] = 45244,	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, ORGRIMMAR },
+					["coord"] = { 50.4, 38.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1, REMOVED_8_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(80, 80, 30),
 				})),
 				q(25160, {	-- A Present for Lila
 					["qg"] = 50482,	-- Marith Lazuria
-					["coord"] = { 72.4, 34.6, ORGRIMMAR },
+					["coord"] = { 72.4, 34.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
@@ -780,13 +780,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(50341, {	-- A Recent Discovery
 					["sourceQuest"] = 49977,	-- Summons to Orgrimmar
 					["qg"] = 132254,	-- Nathanos Blightcaller
-					["coord"] = { 49.8, 75.6, ORGRIMMAR },
+					["coord"] = { 49.8, 75.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26557, {	-- A Staggering Effort
 					["qg"] = 43239,	-- Razgar
-					["coord"] = { 65.7, 41.1, ORGRIMMAR },
+					["coord"] = { 65.7, 41.1, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -800,7 +800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7832, {	-- Additional Runecloth [Darkspear Trolls]
 					["sourceQuest"] = 7824,	-- A Donation of Runecloth
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-					["coord"] = { 63.4, 51.0, ORGRIMMAR },
+					["coord"] = { 63.4, 51.0, MAP.ORGRIMMAR },
 					["maxReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 20 } },	-- 20x Runecloth
@@ -811,7 +811,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7837, {	-- Additional Runecloth [Orgrimmar]
 					["sourceQuest"] = 7836,	-- A Donation of Runecloth
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
-					["coord"] = { 37.8, 87.6, ORGRIMMAR },
+					["coord"] = { 37.8, 87.6, MAP.ORGRIMMAR },
 					["maxReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 20 } },	-- 20x Runecloth
@@ -821,7 +821,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(62568, {	-- Adventurers Wanted: Chromie's Call
 					["qg"] = 168431,	-- Warlord Breka Grimaxe
-					["coord"] = { 48.3, 71.4, ORGRIMMAR },
+					["coord"] = { 48.3, 71.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -830,7 +830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25264, {	-- Ak'Zeloth
 					["sourceQuest"] = 25263,	-- Arnak Fireblade
 					["qg"] = 3216,	-- Arnak Fireblade
-					["coord"] = { 58.5, 53.6, ORGRIMMAR },
+					["coord"] = { 58.5, 53.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -842,8 +842,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						16653,	-- Inethven <Mage Trainer>
 					},
 					["coords"] = {
-						{ 22.8, 14.5, THUNDER_BLUFF },	-- Archmage Shymm <Mage Trainer>
-						{ 85.0, 14.0, UNDERCITY },	-- Kaelystia Hatebringer <Mage Trainer>
+						{ 22.8, 14.5, MAP.THUNDER_BLUFF },	-- Archmage Shymm <Mage Trainer>
+						{ 85.0, 14.0, MAP.UNDERCITY },	-- Kaelystia Hatebringer <Mage Trainer>
 						{ 59.2, 19.7, SILVERMOON_CITY },	-- Inethven <Mage Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(40976, {	-- Audience with the Warchief
 					["qg"] = 97296,	-- Archmage Khadgar
-					["coord"] = { 52.6, 88.2, ORGRIMMAR },
+					["coord"] = { 52.6, 88.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { DEMONHUNTER },
 					["races"] = { BLOODELF },
@@ -869,9 +869,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7790,	-- Orokk Omosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
+						{ 76.2, 37.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
+						{ 79.4, 22.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["cost"] = {
@@ -913,8 +913,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						{ 58.0, 62.8, ZULDAZAR },	-- Nathanos Blightcaller
-						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
-						{ 49.4, 76.6, ORGRIMMAR },	-- Warchief's Herald
+						{ 48.9, 91.4, MAP.ORGRIMMAR },	-- Nathanos Blightcaller
+						{ 49.4, 76.6, MAP.ORGRIMMAR },	-- Warchief's Herald
 						{ 62.5, 60.8, SILVERMOON_CITY },
 					},
 					["timeline"] = { ADDED_8_0_1 },
@@ -926,7 +926,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1472,	-- Devourer of Souls [Undercity]
 					},
 					["qg"] = 5909,	-- Cazul
-					["coord"] = { 47.2, 46.6, ORGRIMMAR },
+					["coord"] = { 47.2, 46.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29401, {	-- Blown Away
 					["qg"] = 54004,	-- Jaga
-					["coord"] = { 48.1, 46.8, ORGRIMMAR },
+					["coord"] = { 48.1, 46.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -951,9 +951,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4300, {	-- Bone-Bladed Weapons
 					["qg"] = 8659,	-- Jes'rimon
-					["coord"] = { 55.6, 34.2, ORGRIMMAR },
+					["coord"] = { 55.6, 34.2, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNGORO_CRATER },
+					["maps"] = { MAP.UNGORO_CRATER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -985,7 +985,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7793 },	-- Ox
 						{ "i", 8663 },	-- Mithril Insignia
 					},
-					["coord"] = { 80.4, 23.2, ORGRIMMAR },
+					["coord"] = { 80.4, 23.2, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3399,	-- Zamja <Cooking Trainer>
 						208023,	-- Gru'ark
 					},
-					["coord"] = { 57.6, 53.6, ORGRIMMAR },
+					["coord"] = { 57.6, 53.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -1017,7 +1017,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
 					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1025,7 +1025,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(60123, {	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1034,7 +1034,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4511, {	-- Calm Before the Storm (2/2)
 					["sourceQuest"] = 4509,	-- Calm Before the Storm (1/2)
 					["qg"] = 7010,	-- Zilzibin Drumlore
-					["coord"] = { 56.4, 46.6, ORGRIMMAR },
+					["coord"] = { 56.4, 46.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -1052,7 +1052,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1060,7 +1060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26227, {	-- Careful, This Fruit Bites Back
 					["qg"] = 42506,	-- Marogg
-					["coord"] = { 56.5, 62.5, ORGRIMMAR },
+					["coord"] = { 56.5, 62.5, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -1074,7 +1074,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26543, {	-- Clammy Hands
 					["qg"] = 43239,	-- Razgar
-					["coord"] = { 65.7, 41.1, ORGRIMMAR },
+					["coord"] = { 65.7, 41.1, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -1086,7 +1086,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26226, {	-- Crawfish Creole
 					["qg"] = 42506,	-- Marogg
-					["coord"] = { 56.5, 62.5, ORGRIMMAR },
+					["coord"] = { 56.5, 62.5, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -1099,9 +1099,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1506,	-- Gan'rul's Summons
 					["altQuests"] = { 1473 },	-- Creature of the Void [Undercity]
 					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["coord"] = { 48.2, 45.6, ORGRIMMAR },
+					["coord"] = { 48.2, 45.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
@@ -1111,14 +1111,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 6535 },	-- Tablet of Verga
 								{ "o", 58595 },	-- Burning Blade Stash
 							},
-							["coord"] = { 51.6, 9.7, DUROTAR },
+							["coord"] = { 51.6, 9.7, MAP.DUROTAR },
 						}),
 					},
 				}),
 				q(32468, {	-- Crystal Clarity (H)
 					["sourceQuest"] = 32471,	-- Light Camera Action (H)
 					["qg"] = 16926,	-- Vivica Starshot
-					["coord"] = { 34.5, 70.8, ORGRIMMAR },
+					["coord"] = { 34.5, 70.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "toyID", 122674 },	-- S.E.L.F.I.E. Camera MkII
@@ -1140,7 +1140,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3401 },	-- Shenthul
 						{ "i", 8051 },	-- Flare Gun
 					},
-					["coord"] = { 43.0, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1153,7 +1153,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5644,	-- Devouring Plague [Thunder Bluff]
 					},
 					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
-					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["coord"] = { 35.6, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -1171,7 +1171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(49855, {	-- Disaster at Mount Hyjal
 					["sourceQuest"] = 28805,	-- The Eye of the Storm
 					["qg"] = 45244,	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, ORGRIMMAR },
+					["coord"] = { 50.4, 38.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13842, {	-- Dread Head Redemption
 					["sourceQuest"] = 13841,	-- All Apologies
 					["qg"] = 3144,	-- Eitrigg
-					["coord"] = { 49.2, 72.3, ORGRIMMAR },
+					["coord"] = { 49.2, 72.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1203,7 +1203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2378, {	-- Find the Shattered Hand
 					["altQuests"] = { 2380 },	-- To Orgrimmar!
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69.0, UNDERCITY },
+					["coord"] = { 83.2, 69.0, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1213,7 +1213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26804, {	-- Flight to Razor Hill
 					["sourceQuest"] = 26803,	-- Missing Reports
 					["qg"] = 3310,	-- Doras
-					["coord"] = { 49.4, 59.2, ORGRIMMAR },
+					["coord"] = { 49.4, 59.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 				}),
@@ -1227,7 +1227,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25162, {	-- Elemental Goo
 					["qg"] = 50482,	-- Marith Lazuria
-					["coord"] = { 72.4, 34.4, ORGRIMMAR },
+					["coord"] = { 72.4, 34.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
@@ -1236,7 +1236,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26235, {	-- Even Thieves Get Hungry
 					["qg"] = 42506,	-- Marogg
-					["coord"] = { 56.5, 62.5, ORGRIMMAR },
+					["coord"] = { 56.5, 62.5, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -1247,7 +1247,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26220, {	-- Everything Is Better with Bacon
 					["qg"] = 42506,	-- Marogg
-					["coord"] = { 56.5, 62.5, ORGRIMMAR },
+					["coord"] = { 56.5, 62.5, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -1272,11 +1272,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						4606,	-- Aelthalyste <Priest Trainer>
 					},
 					["coords"] = {
-						{ 35.6, 87.6, ORGRIMMAR },
-						{ 54.2, 42.8, DUROTAR },
-						{ 47.0, 58.8, MULGORE },
-						{ 26.0, 15.8, THUNDER_BLUFF },
-						{ 49.01, 18.32, UNDERCITY },
+						{ 35.6, 87.6, MAP.ORGRIMMAR },
+						{ 54.2, 42.8, MAP.DUROTAR },
+						{ 47.0, 58.8, MAP.MULGORE },
+						{ 26.0, 15.8, MAP.THUNDER_BLUFF },
+						{ 49.01, 18.32, MAP.UNDERCITY },
 					},
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
@@ -1301,7 +1301,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5657,	-- Hex of Weakness [Undercity]
 					},
 					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
-					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["coord"] = { 35.6, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1318,9 +1318,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(5726, {	-- Hidden Enemies (1/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -1336,14 +1336,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5727, {	-- Hidden Enemies (2/5)
 					["sourceQuest"] = 5726,	-- Hidden Enemies (1/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gauge Neeru Fireblade's reaction to you being a member of the Burning Blade
 							["provider"] = { "i", 14544 },	-- Lieutenant's Insignia
-							["coord"] = { 49.5, 50.6, ORGRIMMAR },
+							["coord"] = { 49.5, 50.6, MAP.ORGRIMMAR },
 							["cr"] = 3216,	-- Neeru Fireblade
 						}),
 					},
@@ -1354,7 +1354,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3401 },	-- Shenthul
 						{ "i", 8087 },	-- Sample of Zanzil's Altered Mixture
 					},
-					["coord"] = { 43.0, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1363,7 +1363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(53372, {	-- Battle for Azeroth: Hour of Reckoning
 					-- ["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["qg"] = 14720,	-- High Overlord Saurfang
-					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					["coord"] = { 48.6, 71.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					-- TODO: level is obviously incorrect. whether this quest is still available is disputed. potential ways to get, per wowhead comments:
@@ -1398,7 +1398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(66323, {	-- Idling Pie
 					["sourceQuest"] = 66253,	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
-					["coord"] = { 48.5, 75.9, ORGRIMMAR },
+					["coord"] = { 48.5, 75.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
 					["qi"] = 191682,	-- Explosive Pie (QI!)
@@ -1414,9 +1414,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7790,	-- Orokk Omosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
+						{ 76.2, 37.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
+						{ 79.4, 22.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["cost"] = {
@@ -1452,9 +1452,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7790,	-- Orokk Omosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
+						{ 76.2, 37.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
+						{ 79.4, 22.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["requireSkill"] = BLACKSMITHING,
@@ -1477,9 +1477,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1945, {	-- Laughing Sisters
 					["sourceQuest"] = 1944,	-- Waters of Xavian
 					["qg"] = 5885,	-- Deino <Mage Trainer>
-					["coord"] = { 38.6, 86.0, ORGRIMMAR },
+					["coord"] = { 38.6, 86.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ASHENVALE },
+					["maps"] = { MAP.ASHENVALE },
 					["classes"] = { MAGE },
 					["races"] = { UNDEAD, TROLL },
 					["lvl"] = 26,
@@ -1569,7 +1569,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1577,7 +1577,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32471, {	-- Light Camera Action (H)
 					["qg"] = 16926,	-- Vivica Starshot
-					["coord"] = { 34.5, 70.8, ORGRIMMAR },
+					["coord"] = { 34.5, 70.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["cost"] = { { "i", 4406, 1 } },	-- 1x Standard Scope
 					["races"] = HORDE_ONLY,
@@ -1585,11 +1585,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Iron Box
 							["provider"] = { "i", 155856 },	-- Iron Box
-							["coord"] = { 63.9, 19.7, ORGRIMMAR },
+							["coord"] = { 63.9, 19.7, MAP.ORGRIMMAR },
 						}),
 						objective(3, {	-- 0/1 Russet Belt
 							["provider"] = { "i", 3593 },	-- Russet Belt
-							["coord"] = { 60.8, 54.0, ORGRIMMAR },
+							["coord"] = { 60.8, 54.0, MAP.ORGRIMMAR },
 						}),
 						i(122637, {	-- S.E.L.F.I.E. Camera
 							["timeline"] = { ADDED_6_1_0 },
@@ -1599,7 +1599,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if ANYCLASSIC
 				q(65601, {	-- Love Hurts
 					["qg"] = 5909,	-- Cazul
-					["coord"] = { 47.2, 46.6, ORGRIMMAR },
+					["coord"] = { 47.2, 46.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1610,8 +1610,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28717,	-- Warchief's Command: Twilight Highlands!
 					["qg"] = 3144,	-- Eitrigg
 					["coords"] = {
-						{ 48.6, 71.0, ORGRIMMAR },
-						{ 49.1, 72.4, ORGRIMMAR },
+						{ 48.6, 71.0, MAP.ORGRIMMAR },
+						{ 49.1, 72.4, MAP.ORGRIMMAR },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1619,21 +1619,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4494, {	-- March of the Silithid (H)
 					["sourceQuest"] = 32,	-- Rise of the Silithid (H)
 					["qg"] = 7010,	-- Zilzibin Drumlore
-					["coord"] = { 55.2, 55.8, ORGRIMMAR },
+					["coord"] = { 55.2, 55.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { TANARIS },
+					["maps"] = { MAP.TANARIS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(26803, {	-- Missing Reports
 					["qg"] = 3144,	-- Eitrigg
-					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					["coord"] = { 48.6, 71.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 				}),
 				q(60964, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1641,7 +1641,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(60126, {	-- Mists of Pandaria: To Pandaria!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1650,7 +1650,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1509, {	-- News of Dogran (1/2)
 					["sourceQuest"] = 1508,	-- Blind Cazul
 					["qg"] = 5910,	-- Zankaja
-					["coord"] = { 37.0, 59.6, ORGRIMMAR },
+					["coord"] = { 37.0, 59.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
@@ -1658,7 +1658,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25158, {	-- Nibbler! No!
 					["qg"] = 50482,	-- Marith Lazuria
-					["coord"] = { 72.4, 34.4, ORGRIMMAR },
+					["coord"] = { 72.4, 34.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
@@ -1667,7 +1667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26556, {	-- No Dumping Allowed
 					["qg"] = 43239,	-- Razgar
-					["coord"] = { 65.7, 41.1, ORGRIMMAR },
+					["coord"] = { 65.7, 41.1, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -1679,7 +1679,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25161, {	-- Ogrezonians in the Mood
 					["qg"] = 50482,	-- Marith Lazuria
-					["coord"] = { 72.4, 34.4, ORGRIMMAR },
+					["coord"] = { 72.4, 34.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
@@ -1697,9 +1697,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7790,	-- Orokk Omosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
+						{ 76.2, 37.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
+						{ 79.4, 22.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["cost"] = {
@@ -1725,14 +1725,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25275, {	-- Report to the Labor Captain
 					["qg"] = 3144,	-- Eitrigg
-					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					["coord"] = { 48.6, 71.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 				}),
 				q(26840, {	-- Return to the Highlands
 					["sourceQuest"] = 26830,	-- Traitor's Bait
 					["qg"] = 3144,	-- Eitrigg
-					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					["coord"] = { 48.6, 71.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1748,7 +1748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28909, {	-- Sauranok Will Point the Way
 					["sourceQuest"] = 26294,	-- Weapons of Mass Dysfunction
 					["qg"] = 3144,	-- Eitrigg
-					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					["coord"] = { 48.6, 71.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1756,16 +1756,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78196, {	-- Secrets of Undeath (1/2)
 					["qg"] = 211229,	-- Dietrich Praice
-					["coord"] = { 35.6, 87.8, ORGRIMMAR },
+					["coord"] = { 35.6, 87.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { ASHENVALE },
+					["maps"] = { MAP.ASHENVALE },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/12 Shadeleaf
 							["provider"] = { "i", 210045 },	-- Shadeleaf
-							["coord"] = { 69.6, 63.0, ASHENVALE },
+							["coord"] = { 69.6, 63.0, MAP.ASHENVALE },
 							["crs"] = {
 								3782,	-- Shadethicket Stone Mover
 								3784,	-- Shadethicket Bark Ripper
@@ -1784,8 +1784,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 210056 },	-- Tincture of Waking Death
 					},
 					["coords"] = {
-						{ 35.6, 87.8, ORGRIMMAR },
-						{ 56.2, 49.4, TIRISFAL_GLADES },
+						{ 35.6, 87.8, MAP.ORGRIMMAR },
+						{ 56.2, 49.4, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
@@ -1810,9 +1810,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3044,	-- Miles Welsh <Priest Trainer>
 					},
 					["coords"] = {
-						{ 35.6, 87.6, ORGRIMMAR },
-						{ 49.01, 18.32, UNDERCITY },
-						{ 26.0, 15.8, THUNDER_BLUFF },
+						{ 35.6, 87.6, MAP.ORGRIMMAR },
+						{ 49.01, 18.32, MAP.UNDERCITY },
+						{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
@@ -1835,7 +1835,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5642,	-- Shadowguard [Thunder Bluff]
 					},
 					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
-					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["coord"] = { 35.6, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1853,9 +1853,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(79079, {	-- Sharing the Faith
 					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
-					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["coord"] = { 35.6, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 5,
@@ -1869,7 +1869,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(1943, {	-- Speak with Deino
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
-					["coord"] = { 85.0, 10.2, UNDERCITY },
+					["coord"] = { 85.0, 10.2, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
@@ -1878,7 +1878,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26233, {	-- Stealing From Our Own (Non-Troll)
 					["qg"] = 42506,	-- Marogg
-					["coord"] = { 56.5, 62.5, ORGRIMMAR },
+					["coord"] = { 56.5, 62.5, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = exclude(TROLL, HORDE_ONLY),
@@ -1889,7 +1889,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26234, {	-- Stealing From Our Own (Troll)
 					["qg"] = 42506,	-- Marogg
-					["coord"] = { 56.5, 62.5, ORGRIMMAR },
+					["coord"] = { 56.5, 62.5, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = { TROLL },
@@ -1900,7 +1900,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(66253, {	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
-					["coord"] = { 48.5, 75.9, ORGRIMMAR },
+					["coord"] = { 48.5, 75.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1920,8 +1920,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						140176,	-- Nathanos Blightcaller
 					},
 					["coords"] = {
-						{ 48.5, 70.7, ORGRIMMAR },
-						{ 49.0, 91.6, ORGRIMMAR },
+						{ 48.5, 70.7, MAP.ORGRIMMAR },
+						{ 49.0, 91.6, MAP.ORGRIMMAR },
 					},
 					["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					["races"] = HORDE_ONLY,
@@ -1931,7 +1931,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 65610,	-- Wish You Were Here
 					["altQuests"] = { 65597 },	-- The Binding (Incubus) [Undercity]
 					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["coord"] = { 48.2, 45.6, ORGRIMMAR },
+					["coord"] = { 48.2, 45.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1954,7 +1954,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1512,	-- Love's Gift
 					["altQuests"] = { 1474 },	-- The Binding (Succubus) [Undercity]
 					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["coord"] = { 48.2, 45.6, ORGRIMMAR },
+					["coord"] = { 48.2, 45.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1976,7 +1976,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1501,	-- Creature of the Void [Orgrimmar]
 					["altQuests"] = { 1471 },	-- The Binding (Voidwalker) [Undercity]
 					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["coord"] = { 48.2, 45.6, ORGRIMMAR },
+					["coord"] = { 48.2, 45.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -1994,19 +1994,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28805, {	-- The Eye of the Storm
 					["sourceQuest"] = 28790,	-- A Personal Summons
 					["qg"] = 45244,	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, ORGRIMMAR },
+					["coord"] = { 50.4, 38.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Peered into the Waters of Farseeing
 							["provider"] = { "o", 207416 },	-- Waters of Farseeing
-							["coord"] = { 50.9, 37.8, ORGRIMMAR },
+							["coord"] = { 50.9, 37.8, MAP.ORGRIMMAR },
 						}),
 					},
 				}),
 				q(25159, {	-- The Latest Fashion!
 					["qg"] = 50482,	-- Marith Lazuria
-					["coord"] = { 72.4, 34.4, ORGRIMMAR },
+					["coord"] = { 72.4, 34.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
@@ -2016,7 +2016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(53779, {	-- The Lies of a Loa
 					["sourceQuest"] = 53777,	-- Where He Died
 					["qg"] = 146630,	-- Restless Spirit
-					["coord"] = { 48.4, 71.4, ORGRIMMAR },
+					["coord"] = { 48.4, 71.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_8_1_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(120, 120, 50),
@@ -2031,8 +2031,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 204250 },	-- Lilian Voss / Dori'thur
 					["coords"] = {
-						{ 63.0, 68.4, TIRISFAL_GLADES },
-						{ 48.6, 48.6, ORGRIMMAR },
+						{ 63.0, 68.4, MAP.TIRISFAL_GLADES },
+						{ 48.6, 48.6, MAP.ORGRIMMAR },
 					},
 					["timeline"] = { ADDED_10_1_7 },
 					["races"] = HORDE_ONLY,
@@ -2040,7 +2040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2756, {	-- The Old Ways
 					["qg"] = 7792,	-- Aturk the Anvil
-					["coord"] = { 80.6, 23.2, ORGRIMMAR },
+					["coord"] = { 80.6, 23.2, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 7963, 4 },	-- 4x Steel Breastplate
@@ -2059,16 +2059,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1963, {	-- The Shattered Hand (1/2)
 					["sourceQuest"] = 1859,	-- Therzok
 					["qg"] = 6446,	-- Therzok
-					["coord"] = { 42.74, 53.52, ORGRIMMAR },
+					["coord"] = { 42.74, 53.52, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = { ORC, TROLL },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tazan's Satchel
 							["provider"] = { "i", 7209 },	-- Tazan's Satchel
-							["coord"] = { 63.8, 44.6, THE_BARRENS },
+							["coord"] = { 63.8, 44.6, MAP.THE_BARRENS },
 							["cr"] = 6494,	-- Tazan
 						}),
 					},
@@ -2076,7 +2076,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1858, {	-- The Shattered Hand (2/2)
 					["sourceQuest"] = 1963,	-- The Shattered Hand (1/2)
 					["qg"] = 6446,	-- Therzok
-					["coord"] = { 42.74, 53.52, ORGRIMMAR },
+					["coord"] = { 42.74, 53.52, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, TROLL },
 					["classes"] = { ROGUE },
@@ -2088,7 +2088,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 7208 },	-- Tazan's Key
 								{ "i", 7209 },	-- Tazan's Satchel
 							},
-							["coord"] = { 54.2, 68.2, ORGRIMMAR },
+							["coord"] = { 54.2, 68.2, MAP.ORGRIMMAR },
 							["cr"] = 6466,	-- Gamon
 						}),
 						i(7298, {	-- Blade of Cunning
@@ -2104,7 +2104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2380,	-- To Orgrimmar!
 					},
 					["qg"] = 3401,	-- Shenthul
-					["coord"] = { 43.0, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -2113,7 +2113,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(50769, {	-- The Stormwind Extraction
 					["sourceQuest"] = 51443,	-- Mission Statement
 					["qg"] = 135205,	-- Nathanos Blightcaller
-					["coord"] = { 54.4, 78.4, ORGRIMMAR },
+					["coord"] = { 54.4, 78.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_8_0_1 },
 					["maps"] = {
 						DAZARALOR,
@@ -2126,9 +2126,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6611, {	-- To Gadgetzan You Go!
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 32.2, 69.4, ORGRIMMAR },
+						{ 32.2, 69.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 57.4, 53.6, ORGRIMMAR },
+						{ 57.4, 53.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["qg"] = 3399,	-- Zamja
@@ -2141,7 +2141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2380, {	-- To Orgrimmar!
 					["altQuests"] = { 2378 },	-- Find the Shattered Hand
 					["qg"] = 3170,	-- Kaplak
-					["coord"] = { 51.98, 43.70, DUROTAR },
+					["coord"] = { 51.98, 43.70, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
@@ -2157,7 +2157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
 					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
-					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["coord"] = { 35.6, 87.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -2175,7 +2175,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26830, {	-- Traitor's Bait
 					["sourceQuest"] = 26798,	-- Saurfang Will be Pleased
 					["qg"] = 3144,	-- Eitrigg
-					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					["coord"] = { 48.6, 71.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2213,9 +2213,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7790,	-- Orokk Omosh
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
+						{ 76.2, 37.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
+						{ 79.4, 22.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["cost"] = {
@@ -2243,7 +2243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26311, {	-- Unfamiliar Waters
 					["sourceQuest"] = 28909,	-- Sauranok Will Point the Way
 					["qg"] = 42637,	-- Sauranok the Mystic
-					["coord"] = { 48.0, 71.0, ORGRIMMAR },
+					["coord"] = { 48.0, 71.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2261,13 +2261,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(58673, {	-- Warchief of the Horde
 					["sourceQuest"] = 58672,	-- A Gathering of Champions
 					["qg"] = 162190,	-- Valeera Sanguinar
-					["coord"] = { 39.4, 79.6, ORGRIMMAR },
+					["coord"] = { 39.4, 79.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				warchiefscommand(q(28717, {	-- Warchief's Command: Twilight Highlands!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { --[[ORGRIMMAR,]] THUNDER_BLUFF, UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
+					["maps"] = { --[[MAP.ORGRIMMAR,]] MAP.THUNDER_BLUFF, MAP.UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 84. (TODO: Confirm this.)
@@ -2282,7 +2282,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -2291,9 +2291,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1944, {	-- Waters of Xavian
 					["sourceQuest"] = 1943,	-- Speak with Deino
 					["qg"] = 5885,	-- Deino <Mage Trainer>
-					["coord"] = { 38.6, 86.0, ORGRIMMAR },
+					["coord"] = { 38.6, 86.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ASHENVALE },
+					["maps"] = { MAP.ASHENVALE },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
 					["lvl"] = 26,
@@ -2303,7 +2303,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 7268 },	-- Xavian Water Sample
 								{ "i", 7269 },	-- Deino's Flask
 							},
-							["coord"] = { 76.0, 41.0, ASHENVALE },
+							["coord"] = { 76.0, 41.0, MAP.ASHENVALE },
 						}),
 					},
 				}),
@@ -2318,9 +2318,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #IF AFTER BFA
-						{ 49.2, 72.3, ORGRIMMAR },
+						{ 49.2, 72.3, MAP.ORGRIMMAR },
 						-- #ELSE
-						{ 48.6, 71.0, ORGRIMMAR },
+						{ 48.6, 71.0, MAP.ORGRIMMAR },
 						-- #ENDIF
 					},
 					["timeline"] = { ADDED_4_0_1 },
@@ -2331,9 +2331,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 65601,	-- Love Hurts
 					["altQuests"] = { 65593 },	-- Hearts of the Lovers
 					["qg"] = 3363,	-- Magar <Tailoring Trainer>
-					["coord"] = { 63.6, 50.0, ORGRIMMAR },
+					["coord"] = { 63.6, 50.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ASHENVALE },
+					["maps"] = { MAP.ASHENVALE },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -2354,9 +2354,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.6, 35.6, ORGRIMMAR },
+						{ 61.6, 35.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 69.4, 12.4, ORGRIMMAR },
+						{ 69.4, 12.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
@@ -2371,9 +2371,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.6, 35.6, ORGRIMMAR },
+						{ 61.6, 35.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 69.4, 12.4, ORGRIMMAR },
+						{ 69.4, 12.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
@@ -2387,14 +2387,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
 					["sourceQuest"] = 60097,	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["coord"] = { 40.8, 79.9, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
@@ -2402,7 +2402,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2382, {	-- Wrenix of Ratchet
 					["sourceQuest"] = 2379,	-- Zando'zan
 					["qg"] = 3402,	-- Zando'zan
-					["coord"] = { 42.8, 53.0, ORGRIMMAR },
+					["coord"] = { 42.8, 53.0, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -2412,9 +2412,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3332,	-- Lumak <Fishing Trainer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 66.6, 41.6, ORGRIMMAR },
+						{ 66.6, 41.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 69.8, 29.6, ORGRIMMAR },
+						{ 69.8, 29.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["requireSkill"] = FISHING,
@@ -2430,9 +2430,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n",   3408 },	-- Zel'mak <Warrior Trainer>
 						{ "i", 211448 },	-- Signed Procurement Contract
 					},
-					["coord"] = { 80.2, 29.6, ORGRIMMAR },
+					["coord"] = { 80.2, 29.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -2446,7 +2446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 10372 },	-- A Discreet Inquiry
 					-- #endif
 					["qg"] = 3401,	-- Shenthul
-					["coord"] = { 43.0, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -2456,7 +2456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER 7.0.3.22248
 			n(RARES, {
 				n(130911, {	-- Charles Gastly
-					["coord"] = { 50.8, 55.1, ORGRIMMAR },
+					["coord"] = { 50.8, 55.1, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2473,7 +2473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE TBC
 			n(RIDING_TRAINER, {
 				n(4752, {	-- Kildar <Wolf Riding Instructor>
-					["coord"] = { 69.2, 13.0, ORGRIMMAR },
+					["coord"] = { 69.2, 13.0, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 
 					-- Available to Orcs without faction requirements.
@@ -2497,7 +2497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
 					["provider"] = { "o", 404830 },	-- Dusty Chest
-					["coord"] = { 55.9, 44.7, ORGRIMMAR },
+					["coord"] = { 55.9, 44.7, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -2506,19 +2506,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207972, {	-- The Lessons of Ta'zo
 					["provider"] = { "o", 405149 },	-- Mural of Ta'zo
-					["coord"] = { 38.7, 78.4, ORGRIMMAR },
+					["coord"] = { 38.7, 78.4, MAP.ORGRIMMAR },
 				})),
 			}),
 			-- #endif
 			n(VENDORS, {
 				n(171691, {	-- Alpheus Cain <Shady Dealer>
-					["coord"] = { 75.35, 45.8, ORGRIMMAR },
+					["coord"] = { 75.35, 45.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","npcID",99863},{"pop"}},	-- Jenri <Spymaster>
 				}),
 				n(149806, {	-- A. Shady
-					["coord"] = { 76.7, 35.6, ORGRIMMAR },
+					["coord"] = { 76.7, 35.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2530,9 +2530,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5611, {	-- Barkeep Morag
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.1, 77.9, ORGRIMMAR },	-- The Broken Tusk
+						{ 55.1, 77.9, MAP.ORGRIMMAR },	-- The Broken Tusk
 						-- #else
-						{ 54.0, 67.0, ORGRIMMAR },	-- The Broken Tusk
+						{ 54.0, 67.0, MAP.ORGRIMMAR },	-- The Broken Tusk
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2560,11 +2560,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
 					["coords"] = {
-						{ 58.2, 62.6, ORGRIMMAR },
-						{ 58.8, 61.2, ORGRIMMAR },
-						{ 58.6, 57.8, ORGRIMMAR },
-						{ 58.6, 55.2, ORGRIMMAR },
-						{ 57.8, 51.0, ORGRIMMAR },
+						{ 58.2, 62.6, MAP.ORGRIMMAR },
+						{ 58.8, 61.2, MAP.ORGRIMMAR },
+						{ 58.6, 57.8, MAP.ORGRIMMAR },
+						{ 58.6, 55.2, MAP.ORGRIMMAR },
+						{ 57.8, 51.0, MAP.ORGRIMMAR },
 					},
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
@@ -2616,7 +2616,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
-					["coord"] = { 38.6, 70.0, ORGRIMMAR },
+					["coord"] = { 38.6, 70.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_2_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -2627,7 +2627,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(54659, {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
-					["coord"] = { 38.2, 71.0, ORGRIMMAR },
+					["coord"] = { 38.2, 71.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -2637,9 +2637,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3364, {	-- Borya <Tailoring Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.6, 58.6, ORGRIMMAR },
+						{ 60.6, 58.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 63.0, 51.2, ORGRIMMAR },
+						{ 63.0, 51.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2671,7 +2671,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				-- TODO: Finish this part.
 				n(12793, {	-- Brave Stonehide <Accessories Quartermaster>
-					["coord"] = { 38.2, 72.6, ORGRIMMAR },
+					["coord"] = { 38.2, 72.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						moh(1, i(15199)),	-- Stone Guard's Herald
@@ -2694,13 +2694,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12793, {	-- Brave Stonehide <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
 					["description"] = "Found within the Hall of Legends.",
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 37.8, 72.1, ORGRIMMAR },
+						{ 37.8, 72.1, MAP.ORGRIMMAR },
 						-- #else
-						{ 40.6, 69.5, ORGRIMMAR },
+						{ 40.6, 69.5, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2713,7 +2713,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(46742, {	-- Brunda
-					["coord"] = { 54.6, 50.6, ORGRIMMAR },
+					["coord"] = { 54.6, 50.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
 					["sym"] = {{ "sub", "common_vendor", 4615 }},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
@@ -2727,7 +2727,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(179897, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Ca'nees
-					["coord"] = { 40.0, 61.0, ORGRIMMAR },
+					["coord"] = { 40.0, 61.0, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(187009),	-- Dazzling Spectacles
@@ -2738,7 +2738,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
-					["coord"] = { 49.9, 58.1, ORGRIMMAR },
+					["coord"] = { 49.9, 58.1, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2764,7 +2764,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
-					["coord"] = { 68.6, 40.2, ORGRIMMAR },
+					["coord"] = { 68.6, 40.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2779,7 +2779,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(24520, {	-- Doris Volanthius <Armor Quartermaster>	-- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
-					["coord"] = { 38.8, 69.8, ORGRIMMAR },
+					["coord"] = { 38.8, 69.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_2_3_0 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -2787,13 +2787,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(46593, {	-- Doris Volanthius Original CATA S9 ELITE VENDOR Horde
-					["coord"] = { 38.8, 69.8, ORGRIMMAR },
+					["coord"] = { 38.8, 69.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(54657, {	-- Doris Volanthius <Vicious Gladiator>
-					["coord"] = { 38.8, 69.8, ORGRIMMAR },
+					["coord"] = { 38.8, 69.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -2804,7 +2804,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(44918, {	-- Drakma <Wind Rider Keeper>
-					["coord"] = { 48.0, 58.6, ORGRIMMAR },
+					["coord"] = { 48.0, 58.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2820,7 +2820,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, n(3144, {	-- Eitrigg
 					["sourceQuest"] = 6602,	-- Blood of the Black Dragon Champion
-					["coord"] = { 34.6, 38.6, ORGRIMMAR },
+					["coord"] = { 34.6, 38.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_1_15_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2837,11 +2837,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.4, 47.8, ORGRIMMAR },
-						{ 52.6, 64.6, ORGRIMMAR },
+						{ 48.4, 47.8, MAP.ORGRIMMAR },
+						{ 52.6, 64.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 46.5, 36.6, ORGRIMMAR },
-						{ 50.8, 58.7, ORGRIMMAR },
+						{ 46.5, 36.6, MAP.ORGRIMMAR },
+						{ 50.8, 58.7, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2853,7 +2853,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(133261, {	-- Feng Su <Cooking Trainer>
-					["coord"] = { 41.0, 79.4, ORGRIMMAR },
+					["coord"] = { 41.0, 79.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2863,7 +2863,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				n(12795, {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
-					["coord"] = { 38.2, 72.6, ORGRIMMAR },
+					["coord"] = { 38.2, 72.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {	-- High Warlord Armor
 						SymSelector.select("CLASSIC_PVP_HORDE"),
@@ -2876,7 +2876,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
-					["coord"] = { 50.0, 58.6, ORGRIMMAR },
+					["coord"] = { 50.0, 58.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2902,7 +2902,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(261262, {	-- Gabbi <Promotional Decor Resupply>
-					["coord"] = { 48.4, 81.0, ORGRIMMAR },
+					["coord"] = { 48.4, 81.0, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_12_0_0 },
 					["groups"] = {
@@ -2913,7 +2913,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(52036, pvp({	-- Galra <Honor Heirlooms>
-					["coord"] = { 38.0, 70.8, ORGRIMMAR },
+					["coord"] = { 38.0, 70.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3066,7 +3066,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				n(4043, {	-- Galthuk <Two-Handed Weapons Merchant>
-					["coord"] = { 76.0, 37.2, ORGRIMMAR },
+					["coord"] = { 76.0, 37.2, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2361, {	-- Battleworn Bludgeon
@@ -3107,9 +3107,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5188, {	-- Garyl <Tabard Vendor>
 					["coord"] =
 					-- #IF AFTER 10.0.5
-					{ 46.4, 79.4, ORGRIMMAR },	-- moved due to Trading Post
+					{ 46.4, 79.4, MAP.ORGRIMMAR },	-- moved due to Trading Post
 					-- #ELSE
-					{ 47.6, 75.6, ORGRIMMAR },
+					{ 47.6, 75.6, MAP.ORGRIMMAR },
 					-- #ENDIF
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -3150,16 +3150,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3358, {	-- Gorina <Mining Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 72.67, 35.78, ORGRIMMAR },
+						{ 72.67, 35.78, MAP.ORGRIMMAR },
 						-- #else
-						{ 73.2, 26.6, ORGRIMMAR },
+						{ 73.2, 26.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
 				}),
 				n(46555, {	-- Gunra <Justice Quartermaster>
-					["coord"] = { 48.4, 71.6, ORGRIMMAR },
+					["coord"] = { 48.4, 71.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_TWELVE_GROUPS,
@@ -3172,7 +3172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 45.6, 39.0, 86 },	-- The Drag
 						-- #else
-						{ 46.2, 46.6, ORGRIMMAR },
+						{ 46.2, 46.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3188,9 +3188,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.8, 54.0, ORGRIMMAR },
+						{ 60.8, 54.0, MAP.ORGRIMMAR },
 						-- #else
-						{ 62.8, 44.8, ORGRIMMAR },
+						{ 62.8, 44.8, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3243,12 +3243,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				applyevent(EVENTS.WOW_ANNIVERSARY, n(110035, {	-- Historian Ju'pa
-					["coord"] = { 36.6, 74.6, ORGRIMMAR },
+					["coord"] = { 36.6, 74.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_1_0 },
 					["races"] = HORDE_ONLY,
 				})),
 				n(95057, {	-- Illidari Darkdealer
-					["coord"] = { 53.0, 56.5, ORGRIMMAR },
+					["coord"] = { 53.0, 56.5, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3258,7 +3258,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
-					["coord"] = { 48.6, 71.4, ORGRIMMAR },
+					["coord"] = { 48.6, 71.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_THIRTEEN_GROUPS,
@@ -3267,7 +3267,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				n(3410, {	-- Jin'sora <Bow Merchant>
-					["coord"] = { 77.8, 38.6, ORGRIMMAR },
+					["coord"] = { 77.8, 38.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3284,7 +3284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(214070, {	-- Jornah <Supply Officer>
-					["coord"] = { 51.6, 64.6, ORGRIMMAR },
+					["coord"] = { 51.6, 64.6, MAP.ORGRIMMAR },
 					["groups"] = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
 						{	-- Neutral
 						},
@@ -3301,7 +3301,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(254606, {	-- Joruh <Battleground Decor Specialist>
-					["coord"] = { 38.8, 72.0, ORGRIMMAR },
+					["coord"] = { 38.8, 72.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
@@ -3329,7 +3329,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(3322, {	-- Kaja <Bow & Rifle Vendor>
-					["coord"] = { 40.8, 49.6, ORGRIMMAR },
+					["coord"] = { 40.8, 49.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(3024),	-- Bkp 2700 Enforcer
@@ -3353,7 +3353,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(48510, {	-- Kall Worthaton <Trike Dealer>
-					["coord"] = { 36.2, 86.6, ORGRIMMAR },
+					["coord"] = { 36.2, 86.6, MAP.ORGRIMMAR },
 					-- Available to Goblins without faction requirements.
 					["minReputation"] = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
 					["OnInit"] = [[function(t)
@@ -3374,7 +3374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3331, {	-- Kareth
-					["coord"] = { 46.8, 63.6, ORGRIMMAR },
+					["coord"] = { 46.8, 63.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2520,	-- Broadsword
@@ -3393,7 +3393,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}},
 				}),
 				n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
-					["coord"] = { 39.0, 85.6, ORGRIMMAR },
+					["coord"] = { 39.0, 85.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1, REMOVED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3402,7 +3402,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5816, {	-- Katis
-					["coord"] = { 45.8, 57.6, ORGRIMMAR },
+					["coord"] = { 45.8, 57.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5239),	-- Blackbone Wand
@@ -3416,7 +3416,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(168623, {	-- Kazak Darkscream <Warlock Trainer>
-					["coord"] = { 74.6, 47.2, ORGRIMMAR },
+					["coord"] = { 74.6, 47.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3429,7 +3429,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3359, {	-- Kiro <War Harness Maker>
-					["coord"] = { 66.8, 50.6, ORGRIMMAR },
+					["coord"] = { 66.8, 50.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6526),	-- Battle Harness
@@ -3441,9 +3441,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3346, {	-- Kithas <Enchanting Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.2, 48.8, ORGRIMMAR },
+						{ 53.2, 48.8, MAP.ORGRIMMAR },
 						-- #else
-						{ 53.6, 38.0, ORGRIMMAR },
+						{ 53.6, 38.0, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3473,7 +3473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(8122, {	-- Kizzak Sparks
-					["coord"] = { 57.8, 56.6, ORGRIMMAR },
+					["coord"] = { 57.8, 56.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["description"] =
 						-- #if AFTER 10.1
@@ -3490,9 +3490,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3348, {	-- Kor'geld <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.6, 45.4, ORGRIMMAR },
+						{ 55.6, 45.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 56.2, 34.2, ORGRIMMAR },
+						{ 56.2, 34.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3506,7 +3506,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3360, {	-- Koru
-					["coord"] = { 76.2, 37.6, ORGRIMMAR },
+					["coord"] = { 76.2, 37.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						1197,	-- Giant Mace
@@ -4108,7 +4108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(133239, {	-- Leyweaver Aurielle
-					["coord"] = { 38.2, 86.8, ORGRIMMAR },
+					["coord"] = { 38.2, 86.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -4133,7 +4133,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(45558, {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
-					["coord"] = { 41.0, 79.8, ORGRIMMAR },
+					["coord"] = { 41.0, 79.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					-- #if AFTER 7.3.5.25961
 					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
@@ -4171,7 +4171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER MOP
 				-- Danny Donkey: The staves are added to Inscription Suppliers in 5.0.1.
 				n(46718, {	-- Moraka <Inscription Supplies>
-					["coord"] = { 55.3, 56.0, ORGRIMMAR },
+					["coord"] = { 55.3, 56.0, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
@@ -4182,7 +4182,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(256119, {	-- Lonalo <Traveling Book Shop>
 					["description"] = "Not all items are sold each day.",
-					["coord"] = { 58.6, 50.3, ORGRIMMAR },
+					["coord"] = { 58.6, 50.3, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -4209,9 +4209,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3321, {	-- Morgum <Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.0, 55.6, ORGRIMMAR },
+						{ 60.0, 55.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 56.0, 73.2, ORGRIMMAR },
+						{ 56.0, 73.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -4271,14 +4271,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(46718, {	-- Moraka
-					["coord"] = { 55.3, 56.0, ORGRIMMAR },
+					["coord"] = { 55.3, 56.0, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						79740,	-- Plain Wooden Staff
 					}},
 				}),
 				n(3330, {	-- Muragus
-					["coord"] = { 46.0, 57.8, ORGRIMMAR },
+					["coord"] = { 46.0, 57.8, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2527),	-- Battle Staff
@@ -4286,7 +4286,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(46512, {	-- Naros <Plate Armor Merchant>
-					["coord"] = { 45.0, 77.6, ORGRIMMAR },
+					["coord"] = { 45.0, 77.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -4359,7 +4359,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(46716, {	-- Nerog <Inscription Trainer>
-					["coord"] = { 55.2, 55.8, ORGRIMMAR },
+					["coord"] = { 55.2, 55.8, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
@@ -4371,9 +4371,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3362, {	-- Ogunaro Wolfrunner <Kennel Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.6, 35.6, ORGRIMMAR },
+						{ 61.6, 35.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 69.4, 12.4, ORGRIMMAR },
+						{ 69.4, 12.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					-- Available to Orcs without faction requirements.
@@ -4404,7 +4404,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(44975, {	-- Old Umbehto
-					["coord"] = { 35.0, 67.6, ORGRIMMAR },
+					["coord"] = { 35.0, 67.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_4_0_3 },
 					["sym"] = {{"select","itemID",
@@ -4412,7 +4412,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}},
 				}),
 				n(3317, {	-- Ollanus <Cloth Armor Merchant>
-					["coord"] = { 60.6, 58.6, ORGRIMMAR },
+					["coord"] = { 60.6, 58.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(3428),	-- Common Gray Shirt
@@ -4521,7 +4521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(169166, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Provisioner Jin'hake
 					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
-					["coord"] = { 72.6, 44.6, ORGRIMMAR },
+					["coord"] = { 72.6, 44.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(175161),	-- Expeditionary Axe
@@ -4534,7 +4534,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				n(46359, {	-- Punra <Blacksmithing Supplies>
-					["coord"] = { 45.0, 77.6, ORGRIMMAR },
+					["coord"] = { 45.0, 77.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
@@ -4547,7 +4547,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE WRATH
 						["description"] = "Found within the Hall of Legends.",
 						-- #else
-						["coord"] = { 41.8, 72.6, ORGRIMMAR },
+						["coord"] = { 41.8, 72.6, MAP.ORGRIMMAR },
 						-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
@@ -4586,7 +4586,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(3334, {	-- Rekkul
-					["coord"] = { 44.0, 58.4, ORGRIMMAR },
+					["coord"] = { 44.0, 58.4, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
@@ -4684,7 +4684,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
-					["coord"] = { 37.8, 71.6, ORGRIMMAR },
+					["coord"] = { 37.8, 71.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -4694,7 +4694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(58155, {	-- Rugok <Legacy Justice Quartermaster>
-					["coord"] = { 48.2, 71.6, ORGRIMMAR },
+					["coord"] = { 48.2, 71.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_ELEVEN_GROUPS,
@@ -4702,7 +4702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if AFTER CATA
 				n(3319, {	-- Sana <Mail Armor Merchant>
-					["coord"] = { 45.6, 77.8, ORGRIMMAR },
+					["coord"] = { 45.6, 77.8, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						17187,	-- Banded Buckler
@@ -4753,7 +4753,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				-- TODO: Finish this part.
 				n(12799, {	-- Sergeant Ba'sha <Accessories Quartermaster>
-					["coord"] = { 41.6, 68.6, ORGRIMMAR },
+					["coord"] = { 41.6, 68.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(15197),	-- Scout's Tabard
@@ -4848,7 +4848,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #else
 				n(52549, {	-- Sergeant Thunderhorn <Conquest Quartermaster>
-					["coord"] = { 38.8, 70.0, ORGRIMMAR },
+					["coord"] = { 38.8, 70.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -4886,7 +4886,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(69978, {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
-					["coord"] = { 38.8, 70.0, ORGRIMMAR },
+					["coord"] = { 38.8, 70.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_5_2_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -4898,9 +4898,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3333, {	-- Shankys <Fishing Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 70.0, 29.4, ORGRIMMAR },
+						{ 70.0, 29.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 66.6, 41.6, ORGRIMMAR },
+						{ 66.6, 41.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -4911,7 +4911,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(49737, {	-- Shazdar <Sous Chef>
-					["coord"] = { 56.8, 62.6, ORGRIMMAR },
+					["coord"] = { 56.8, 62.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = CATA_COOKING_SUPPLIES,
@@ -4919,16 +4919,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5817, {	-- Shimra <Trade Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.0, 81.87, ORGRIMMAR },
+						{ 54.0, 81.87, MAP.ORGRIMMAR },
 						-- #else
-						{ 47.8, 80.5, ORGRIMMAR },
+						{ 47.8, 80.5, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 				}),
 				n(3361, {	-- Shoma <Weapon Vendor>
-					["coord"] = { 76.0, 37.8, ORGRIMMAR },
+					["coord"] = { 76.0, 37.8, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(15905),	-- Brass Knuckles
@@ -4967,9 +4967,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3413, {	-- Sovik <Engineering Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.0, 56.0, ORGRIMMAR },
+						{ 56.0, 56.0, MAP.ORGRIMMAR },
 						-- #else
-						{ 75.6, 25.2, ORGRIMMAR },
+						{ 75.6, 25.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -4996,7 +4996,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
-					["coord"] = { 50.4, 58.4, ORGRIMMAR },
+					["coord"] = { 50.4, 58.4, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = bubbleDownClassicRep(FACTION_ORGRIMMAR, {
@@ -5016,7 +5016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				n(12794, {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
-					["coord"] = { 38.6, 72.8, ORGRIMMAR },
+					["coord"] = { 38.6, 72.8, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						SymSelector.select("CLASSIC_PVP_HORDE"),
@@ -5026,7 +5026,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(46708, {	-- Suja <Cooking Supplies>
-					["coord"] = { 56.6, 61.2, ORGRIMMAR },
+					["coord"] = { 56.6, 61.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -5037,9 +5037,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3356, {	-- Sumi <Blacksmithing Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 75.8, 35.2, ORGRIMMAR },
+						{ 75.8, 35.2, MAP.ORGRIMMAR },
 						-- #else
-						{ 82.4, 23.8, ORGRIMMAR },
+						{ 82.4, 23.8, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -5055,9 +5055,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3366, {	-- Tamar <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.6, 54.4, ORGRIMMAR },
+						{ 60.6, 54.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 63.0, 45.2, ORGRIMMAR },
+						{ 63.0, 45.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -5068,7 +5068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(133127, {	-- Thaluriel <Engineering Supplies>
-					["coord"] = { 36.8, 84.6, ORGRIMMAR },
+					["coord"] = { 36.8, 84.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -5084,9 +5084,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.8, 59.6, ORGRIMMAR },
+						{ 60.8, 59.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 62.6, 50.6, ORGRIMMAR },
+						{ 62.6, 50.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -5145,7 +5145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if AFTER CATA
 				n(5812, {	-- Tumi <Heavy Armor Merchant>
-					["coord"] = { 75.8, 35.2, ORGRIMMAR },
+					["coord"] = { 75.8, 35.2, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2419),	-- Augmented Chain Belt
@@ -5203,7 +5203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(66022, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
-					["coord"] = { 69.8, 41.0, ORGRIMMAR },
+					["coord"] = { 69.8, 41.0, MAP.ORGRIMMAR },
 					-- Available to Huojin Pandaren without faction requirements.
 					["minReputation"] = { FACTION_HUOJIN_PANDAREN, EXALTED },	-- Huojin Pandaren, Exalted.
 					["OnInit"] = [[function(t)
@@ -5291,9 +5291,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3314, {	-- Urtharo <Weapon Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.6, 73.1, ORGRIMMAR },
+						{ 46.6, 73.1, MAP.ORGRIMMAR },
 						-- #else
-						{ 47.4, 68.6, ORGRIMMAR },
+						{ 47.4, 68.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -5327,7 +5327,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
-					["coord"] = { 36.6, 86.8, ORGRIMMAR },
+					["coord"] = { 36.6, 86.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1, REMOVED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -5344,9 +5344,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This NPC walks around in a circle in the Valley of Spirits.",
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 34.0, 67.6, ORGRIMMAR },
+						{ 34.0, 67.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 37.6, 75.8, ORGRIMMAR },
+						{ 37.6, 75.8, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -5359,9 +5359,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3400, {	-- Xen'to <Cooking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 32.6, 68.6, ORGRIMMAR },
+						{ 32.6, 68.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 57.6, 53.2, ORGRIMMAR },
+						{ 57.6, 53.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -5371,7 +5371,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3405, {	-- Zeal'aya <Herbalism Supplies>
-					["coord"] = { 55.0, 39.6, ORGRIMMAR },
+					["coord"] = { 55.0, 39.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{ "sub", "common_vendor", 4615 },	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
@@ -5381,7 +5381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3409, {	-- Zendo'jian <Weapon Vendor>
-					["coord"] = { 75.0, 36.6, ORGRIMMAR },
+					["coord"] = { 75.0, 36.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						853,	-- Hatchet
@@ -5405,7 +5405,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
-					["coord"] = { 36.2, 83.2, ORGRIMMAR },
+					["coord"] = { 36.2, 83.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 },
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
@@ -5419,7 +5419,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(52037, {	-- Zulna <Justice Heirlooms>
-				["coord"] = { 48.7, 71.4, ORGRIMMAR },
+				["coord"] = { 48.7, 71.4, MAP.ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_4_0_6, REMOVED_6_0_2 },
 				["sym"] = {
@@ -5433,13 +5433,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["provider"] = { "o", 206116 },	-- Warchief's Command Board
 				["coords"] = {
 					-- Locations for 206109
-					{ 49.8, 76.4, ORGRIMMAR },
-					{ 58.3, 45.7, ORGRIMMAR },
-					{ 45.6, 5.9, ORGRIMMAR },
+					{ 49.8, 76.4, MAP.ORGRIMMAR },
+					{ 58.3, 45.7, MAP.ORGRIMMAR },
+					{ 45.6, 5.9, MAP.ORGRIMMAR },
 					-- Locations for 206116
-					{ 23.4, 94.2, ORGRIMMAR },
-					{ 59.0, 44.4, ORGRIMMAR },
-					{ 66.7, 49.5, ORGRIMMAR },
+					{ 23.4, 94.2, MAP.ORGRIMMAR },
+					{ 59.0, 44.4, MAP.ORGRIMMAR },
+					{ 66.7, 49.5, MAP.ORGRIMMAR },
 				},
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
@@ -5452,8 +5452,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
-	m(KALIMDOR, {
-		m(ORGRIMMAR, {
+	m(MAP.KALIMDOR, {
+		m(MAP.ORGRIMMAR, {
 			q(51766),	-- cinematic during Horde BFA intro scenario quest
 			q(54948, {	-- something in orgrimmar on lvl 60 necrolord goblin warlock
 				["timeline"] = { ADDED_8_2_0 },

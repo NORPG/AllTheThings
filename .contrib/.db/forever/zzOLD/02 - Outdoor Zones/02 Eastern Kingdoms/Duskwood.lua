@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(DUSKWOOD, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.DUSKWOOD, {
 		["lore"] = "Duskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Beneath the eternal blanket of darkness which gave Duskwood its current name, the Scythe's effects have transformed what was once a beautiful part of Elwynn Forest into a land covered in gnarled trees and inhabited by the hideous undead and extradimensional Worgen, brought along with the black fog hanging over the woods. Ogres moving in from Deadwind Pass have brought up even more problems.",
 		["icon"] = 236757,
 		["groups"] = {
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(398),	-- Black Rat (PET!)
 					pet(396, {	-- Dusk Spiderling (PET!)
 						["description"] = "Found commonly in the area around the given coordinate.",
-						["coord"] = { 32.6, 51.6, DUSKWOOD },
+						["coord"] = { 32.6, 51.6, MAP.DUSKWOOD },
 					}),
 					pet(399),	-- Rat Snake (PET!)
 					pet(397),	-- Skunk (PET!)
@@ -78,19 +78,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(12, {	-- Darkshire, Duskwood
 					["cr"] = 2409,	-- Felicia Maline <Gryphon Master>
-					["coord"] = { 77.6, 44.4, DUSKWOOD },
+					["coord"] = { 77.6, 44.4, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(622, {	-- Raven Hill, Duskwood
 					["cr"] = 43697,	-- John Shelby <Gryphon Master>
-					["coord"] = { 21.0, 56.6, DUSKWOOD },
+					["coord"] = { 21.0, 56.6, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			petbattles({
 				n(65655, {	-- Eric Davidson <Master Pet Tamer>
-					["coord"] = { 19.8, 44.8, DUSKWOOD },
+					["coord"] = { 19.8, 44.8, MAP.DUSKWOOD },
 					["description"] = "This pet tamer is Alliance only.\n\nEric's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Beast - see above.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31729, {	-- Steven Lisbane
 					["sourceQuest"] = 31726,	-- Eric Davidson
 					["qg"] = 65655,	-- Eric Davidson
-					["coord"] = { 19.8, 44.8, DUSKWOOD },
+					["coord"] = { 19.8, 44.8, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if SEASON_OF_DISCOVERY
 			pickpocketing({
 				applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
-					["coord"] = { 23.3, 72.8, DUSKWOOD },
+					["coord"] = { 23.3, 72.8, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 26719,	-- Delivery to Master Harris
 					["qg"] = 43730,	-- Oliver Harris
-					["coord"] = { 18.3, 57.6, DUSKWOOD },
+					["coord"] = { 18.3, 57.6, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 43814 },	-- Lurking Worgen
 								{ "i", 60206 },	-- Harris's Ampule
 							},
-							["coord"] = { 21.6, 73.2, DUSKWOOD },
+							["coord"] = { 21.6, 73.2, MAP.DUSKWOOD },
 						}),
 					},
 				}),
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2162 },	-- Sarah's Ring
 						{ "o", 61 },	-- A Weathered Grave
 					},
-					["coord"] = { 73.6, 46.8, DUSKWOOD },
+					["coord"] = { 73.6, 46.8, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2162 },	-- Sarah's Ring
 						{ "o", 61 },	-- A Weathered Grave
 					},
-					["coord"] = { 73.6, 46.8, DUSKWOOD },
+					["coord"] = { 73.6, 46.8, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26707, {	-- A Deadly Vine
 					["qg"] = 43738,	-- Apprentice Fess
-					["coord"] = { 44.9, 67.4, DUSKWOOD },
+					["coord"] = { 44.9, 67.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -228,16 +228,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(337, {	-- An Old History Book
 					["provider"] = { "i", 2794 },	-- An Old History Book
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(1044, {	-- Answered Questions
 					["sourceQuest"] = 1043,	-- The Scythe of Elune
 					["qg"] = 661,	-- Jonathan Carevin
-					["coord"] = { 75.3, 49.2, DUSKWOOD },
+					["coord"] = { 75.3, 49.2, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -252,7 +252,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(325, {	-- Armed and Ready
 					["sourceQuest"] = 322,	-- Blessed Arm
 					["qg"] = 1416,	-- Grimand Elmore
-					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
+					["coord"] = { 51.8, 12.1, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26787, {	-- Bear In Mind
 					["sourceQuest"] = 26721,	-- The Jitters-Bugs
 					["qg"] = 288,	-- Jitters
-					["coord"] = { 18.6, 58.3, DUSKWOOD },
+					["coord"] = { 18.6, 58.3, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1217 },	-- Glorin Steelbrow
 						{ "i", 2712 },	-- Crate of Lightforge Ingots
 					},
-					["coord"] = { 10.6, 60.5, WETLANDS },
+					["coord"] = { 10.6, 60.5, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -304,7 +304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26686, {	-- Bones That Walk
 					["sourceQuest"] = 26645,	-- The Night Watch
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, DUSKWOOD },
+					["coord"] = { 73.5, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -331,14 +331,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(253, {	-- Bride of the Embalmer
 					["sourceQuest"] = 252,	-- Translation to Ello
 					["qg"] = 263,	-- Lord Ello Ebonlocke
-					["coord"] = { 71.9, 46.5, DUSKWOOD },
+					["coord"] = { 71.9, 46.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						q(254, {	-- Digging Through the Dirt
 							["provider"] = { "o", 51708 },	-- Eliza's Grave Dirt
-							["coord"] = { 28.8, 30.8, DUSKWOOD },
+							["coord"] = { 28.8, 30.8, MAP.DUSKWOOD },
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
@@ -363,20 +363,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 204824 },	-- Lightforged Arch
 						{ "o", 204825 },	-- Lightforged Crest
 					},
-					["coord"] = { 20.3, 27.4, DUSKWOOD },
+					["coord"] = { 20.3, 27.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26685, {	-- Classy Glass
 					["sourceQuest"] = 26684,	-- The Insane Ghoul
 					["qg"] = 276,	-- Viktori Prism'Antras
-					["coord"] = { 79.5, 47.4, DUSKWOOD },
+					["coord"] = { 79.5, 47.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Ogre's Monocle
 							["provider"] = { "i", 1968 },	-- Ogre's Monocle
-							["coord"] = { 37.6, 84.2, DUSKWOOD },
+							["coord"] = { 37.6, 84.2, MAP.DUSKWOOD },
 							["cr"] = 300,	-- Zzarc' Vul
 						}),
 						i(60909, {	-- Astronomer's Handwraps
@@ -399,20 +399,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 43453 },	-- Tobias Mistmantle
 						{ "i", 3629 },	-- Mistmantle Family Ring
 					},
-					["coord"] = { 79.0, 44.1, DUSKWOOD },
+					["coord"] = { 79.0, 44.1, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26760, {	-- Cry For The Moon
 					["sourceQuest"] = 26720,	-- A Curse We Cannot Lift
 					["qg"] = 43730,	-- Oliver Harris
-					["coord"] = { 18.3, 57.6, DUSKWOOD },
+					["coord"] = { 18.3, 57.6, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Worgen cured
 							["provider"] = { "n", 43950 },	-- Lurking Worgen
-							["coord"] = { 18.6, 57.6, DUSKWOOD },
+							["coord"] = { 18.6, 57.6, MAP.DUSKWOOD },
 						}),
 						i(60928, {	-- Consecrated Scepter
 							["timeline"] = { ADDED_4_0_3 },
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 265 },	-- Madame Eva
 						{ "i", 1596 },	-- Ghost Hair Thread
 					},
-					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["coord"] = { 75.8, 45.3, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 265 },	-- Madame Eva
 						{ "i", 1596 },	-- Ghost Hair Thread
 					},
-					["coord"] = { 75.7, 45.2, DUSKWOOD },
+					["coord"] = { 75.7, 45.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -474,7 +474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 633 },	-- Elaine Carevin
 						{ "i", 1922 },	-- Supplies for Sven
 					},
-					["coord"] = { 75.3, 48.7, DUSKWOOD },
+					["coord"] = { 75.3, 48.7, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -486,14 +486,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 43738 },	-- Apprentice Fess
 						{ "i", 60205 },	-- Bundle of Corpseweed
 					},
-					["coord"] = { 44.9, 67.4, DUSKWOOD },
+					["coord"] = { 44.9, 67.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(93, {	-- Dusky Crab Cakes
 					["sourceQuest"] = 5,	-- Jitters' Growling Gut
 					["qg"] = 272,	-- Chef Grual
-					["coord"] = { 73.8, 43.5, DUSKWOOD },
+					["coord"] = { 73.8, 43.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2251, 6 } },	-- Gooey Spider Leg
 					["races"] = ALLIANCE_ONLY,
@@ -504,7 +504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26623, {	-- Dusky Crab Cakes
 					["qg"] = 272,	-- Chef Grual
-					["coord"] = { 73.7, 43.4, DUSKWOOD },
+					["coord"] = { 73.7, 43.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(245, {	-- Eight-Legged Menaces
 					["qg"] = 888,	-- Watcher Dodds
-					["coord"] = { 45.1, 67.0, DUSKWOOD },
+					["coord"] = { 45.1, 67.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
@@ -525,12 +525,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/15 Pygmy Venom Web Spider slain
 							["provider"] = { "n", 539 },	-- Pygmy Venom Web Spider
 							["coords"] = {
-								{ 90.8, 16.0, DUSKWOOD },
-								{ 52.0, 12.4, DUSKWOOD },
-								{ 27.8, 29.2, DUSKWOOD },
-								{ 13.0, 28.4, DUSKWOOD },
-								{  9.4, 39.8, DUSKWOOD },
-								{ 13.0, 70.6, DUSKWOOD },
+								{ 90.8, 16.0, MAP.DUSKWOOD },
+								{ 52.0, 12.4, MAP.DUSKWOOD },
+								{ 27.8, 29.2, MAP.DUSKWOOD },
+								{ 13.0, 28.4, MAP.DUSKWOOD },
+								{  9.4, 39.8, MAP.DUSKWOOD },
+								{ 13.0, 70.6, MAP.DUSKWOOD },
 							},
 						}),
 						i(3559, {	-- Night Watch Gauntlets
@@ -544,7 +544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 273 },	-- Tavernkeep Smitts
 						{ "i", 2161 },	-- Book from Sven's Farm
 					},
-					["coord"] = { 73.8, 44.4, DUSKWOOD },
+					["coord"] = { 73.8, 44.4, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(156, {	-- Gather Rot Blossoms
 					["sourceQuest"] = 158,	-- Zombie Juice
 					["qg"] = 273,	-- Tavernkeep Smitts
-					["coord"] = { 73.8, 44.4, DUSKWOOD },
+					["coord"] = { 73.8, 44.4, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -569,7 +569,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26661, {	-- Gather Rot Blossoms
 					["sourceQuest"] = 26660,	-- Zombie Juice
 					["qg"] = 273,	-- Tavernkeep Smitts
-					["coord"] = { 73.7, 44.4, DUSKWOOD },
+					["coord"] = { 73.7, 44.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -578,7 +578,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  59345 },	-- Rot Blossom
 								{ "o", 204457 },	-- Rot Blossom
 							},
-							["coord"] = { 79.6, 73.5, DUSKWOOD },
+							["coord"] = { 79.6, 73.5, MAP.DUSKWOOD },
 						}),
 					},
 				}),
@@ -588,7 +588,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 265 },	-- Madame Eva
 						{ "i", 1453 },	-- Spectral Comb
 					},
-					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["coord"] = { 75.8, 45.3, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -599,14 +599,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 265 },	-- Madame Eva
 						{ "i", 1453 },	-- Spectral Comb
 					},
-					["coord"] = { 75.8, 45.2, DUSKWOOD },
+					["coord"] = { 75.8, 45.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(133, {	-- Ghoulish Effigy
 					["sourceQuest"] = 159,	-- Juice Delivery
 					["qg"] = 289,	-- Abercrombie
-					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["coord"] = { 28.0, 31.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -626,7 +626,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26677, {	-- Ghoulish Effigy
 					["sourceQuest"] = 26680,	-- Ogre Thieves
 					["qg"] = 289,	-- Abercrombie
-					["coord"] = { 87.4, 35.2, DUSKWOOD },
+					["coord"] = { 87.4, 35.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -639,13 +639,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26725, {	-- Guided by the Light
 					["sourceQuest"] = 26724,	-- The Lurking Lich
 					["qg"] = 43731,	-- Sister Elsington
-					["coord"] = { 20.0, 57.8, DUSKWOOD },
+					["coord"] = { 20.0, 57.8, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				heroscall(q(28564, {	-- Hero's Call: Duskwood!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["maps"] = { MAP.STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
@@ -655,7 +655,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(26728, {	-- Hero's Call: Duskwood!
 					["qg"] = 900,	-- Bailiff Conacher
-					["coord"] = { 28.7, 40.9, REDRIDGE_MOUNTAINS },
+					["coord"] = { 28.7, 40.9, MAP.REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26669, {	-- In A Dark Corner
 					["sourceQuest"] = 26667,	-- The Stolen Letters
 					["qg"] = 267,	-- Clerk Daltry
-					["coord"] = { 72.4, 46.9, DUSKWOOD },
+					["coord"] = { 72.4, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  59361 },	-- A Torn Journal
 								{ "o", 204464 },	-- Pile of Scraps
 							},
-							["coord"] = { 66.5, 76.5, DUSKWOOD },
+							["coord"] = { 66.5, 76.5, MAP.DUSKWOOD },
 						}),
 					},
 				}),
@@ -683,7 +683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 267 },	-- Clerk Daltry
 						{ "i", 2161 },	-- Book from Sven's Farm
 					},
-					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["coord"] = { 72.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -691,7 +691,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5, {	-- Jitters' Growling Gut
 					["sourceQuest"] = 163,	-- Raven Hill
 					["qg"] = 288,	-- Jitters
-					["coord"] = { 18.2, 56.3, DUSKWOOD },
+					["coord"] = { 18.2, 56.3, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 273 },	-- Tavernkeep Smitts
 						{ "i", 1451 },	-- Bottle of Zombie Juice
 					},
-					["coord"] = { 73.8, 44.4, DUSKWOOD },
+					["coord"] = { 73.8, 44.4, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -713,7 +713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 273 },	-- Tavernkeep Smitts
 						{ "i", 1451 },	-- Bottle of Zombie Juice
 					},
-					["coord"] = { 73.7, 44.4, DUSKWOOD },
+					["coord"] = { 73.7, 44.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -733,7 +733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(174, {	-- Look To The Stars (1/4)
 					["qg"] = 276,	-- Viktori Prism'Antras
-					["coord"] = { 79.8, 48.0, DUSKWOOD },
+					["coord"] = { 79.8, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4371, 1 } },	-- Bronze Tube
 					["races"] = ALLIANCE_ONLY,
@@ -742,7 +742,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(175, {	-- Look To The Stars (2/4)
 					["sourceQuest"] = 174,	-- Look To The Stars (1/4)
 					["qg"] = 276,	-- Viktori Prism'Antras
-					["coord"] = { 79.8, 48.0, DUSKWOOD },
+					["coord"] = { 79.8, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -750,14 +750,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(177, {	-- Look To The Stars (3/4)
 					["sourceQuest"] = 175,	-- Look To The Stars (2/4)
 					["qg"] = 302,	-- Blind Mary
-					["coord"] = { 81.9, 59.1, DUSKWOOD },
+					["coord"] = { 81.9, 59.1, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mary's Looking Glass
 							["provider"] = { "i", 1946 },	-- Mary's Looking Glass
-							["coord"] = { 80.8, 71.6, DUSKWOOD },
+							["coord"] = { 80.8, 71.6, MAP.DUSKWOOD },
 							["cr"] = 511,	-- Insane Ghoul
 						}),
 					},
@@ -765,14 +765,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(181, {	-- Look To The Stars (4/4)
 					["sourceQuest"] = 177,	-- Look To The Stars (3/4)
 					["qg"] = 276,	-- Viktori Prism'Antras
-					["coord"] = { 79.8, 48.0, DUSKWOOD },
+					["coord"] = { 79.8, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ogre's Monocle
 							["provider"] = { "i", 1968 },	-- Ogre's Monocle
-							["coord"] = { 37.0, 82.4, DUSKWOOD },
+							["coord"] = { 37.0, 82.4, MAP.DUSKWOOD },
 							["cr"] = 300,	-- Zzarc' Vul
 						}),
 						i(7107, {	-- Belt of the Stars
@@ -786,14 +786,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26683, {	-- Look To The Stars
 					["sourceQuest"] = 26618,	-- Wolves at Our Heels
 					["qg"] = 276,	-- Viktori Prism'Antras
-					["coord"] = { 79.5, 47.4, DUSKWOOD },
+					["coord"] = { 79.5, 47.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26674, {	-- Mistmantle's Revenge
 					["sourceQuest"] = 26672,	-- Clawing at the Truth
 					["qg"] = 265,	-- Madame Eva
-					["coord"] = { 75.8, 45.2, DUSKWOOD },
+					["coord"] = { 75.8, 45.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -802,7 +802,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 315 },	-- Stalvan Mistmantle
 								{ "i", 59363 },	-- Mistmantle Family Ring
 							},
-							["coord"] = { 77.4, 36.2, DUSKWOOD },
+							["coord"] = { 77.4, 36.2, MAP.DUSKWOOD },
 						}),
 						i(60919, {	-- Bracers of Forlorn Spirits
 							["timeline"] = { ADDED_4_0_3 },
@@ -824,14 +824,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(228, {	-- Mor'Ladim
 					["sourceQuest"] = 227,	-- Morgan Ladimore
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["coord"] = { 73.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mor'Ladim's Skull
 							["provider"] = { "i", 3514 },	-- Mor'Ladim's Skull
-							["coord"] = { 19.4, 34.6, DUSKWOOD },
+							["coord"] = { 19.4, 34.6, MAP.DUSKWOOD },
 							["cr"] = 522,	-- Mor'Ladim
 						}),
 					},
@@ -839,13 +839,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26795, {	-- Mor'Ladim
 					["sourceQuest"] = 26794,	-- Morgan Ladimore
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, DUSKWOOD },
+					["coord"] = { 73.5, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mor'Ladim's Skull
 							["provider"] = { "i", 3514 },	-- Mor'Ladim's Skull
-							["coord"] = { 17.6, 36.8, DUSKWOOD },
+							["coord"] = { 17.6, 36.8, MAP.DUSKWOOD },
 							["cr"] = 522,	-- Mor'Ladim
 						}),
 					},
@@ -853,14 +853,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(55, {	-- Morbent Fel
 					["sourceQuest"] = 325,	-- Armed and Ready
 					["qg"] = 311,	-- Sven Yorgen
-					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["coord"] = { 7.8, 34.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Morbent's Bane
 							["provider"] = { "i", 7297 },	-- Morbent's Bane
-							["coord"] = { 17.4, 33.6, DUSKWOOD },
+							["coord"] = { 17.4, 33.6, MAP.DUSKWOOD },
 							["cr"] = 1200,	-- Morbent Fel
 						}),
 						i(2954, {	-- Night Watch Pantaloons
@@ -880,7 +880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26754, {	-- Morbent's Bane
 					["sourceQuest"] = 26722,	-- Buried Below
 					["provider"] = { "o", 204825 },	-- Lightforged Crest
-					["coord"] = { 18.0, 25.3, DUSKWOOD },
+					["coord"] = { 18.0, 25.3, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -911,7 +911,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(227, {	-- Morgan Ladimore
 					["sourceQuest"] = 225,	-- The Weathered Grave
 					["qg"] = 268,	-- Sirra Von'Indi
-					["coord"] = { 72.6, 47.7, DUSKWOOD },
+					["coord"] = { 72.6, 47.7, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26794, {	-- Morgan Ladimore
 					["sourceQuest"] = 26793,	-- The Weathered Grave
 					["qg"] = 268,	-- Sirra Von'Indi
-					["coord"] = { 72.6, 47.7, DUSKWOOD },
+					["coord"] = { 72.6, 47.7, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -935,7 +935,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 289 },	-- Abercrombie
 						{ "i", 1637 },	-- Letter to Ello
 					},
-					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["coord"] = { 28.0, 31.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -946,13 +946,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 289 },	-- Abercrombie
 						{ "i", 1637 },	-- Letter to Ello
 					},
-					["coord"] = { 87.4, 35.2, DUSKWOOD },
+					["coord"] = { 87.4, 35.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1372, {	-- Nothing But The Truth (1/4)
 					["qg"] = 5418,	-- Deathstalker Zraedus
-					["coord"] = { 87.6, 35.6, DUSKWOOD },
+					["coord"] = { 87.6, 35.6, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -960,9 +960,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1383, {	-- Nothing But The Truth (2/4)
 					["sourceQuest"] = 1372,	-- Nothing But The Truth (1/4)
 					["qg"] = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
-					["coord"] = { 87.4, 35.4, DUSKWOOD },
+					["coord"] = { 87.4, 35.4, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DESOLACE, SWAMP_OF_SORROWS },
+					["maps"] = { MAP.DESOLACE, MAP.SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 					["groups"] = {
@@ -995,7 +995,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5414 },	-- Apothecary Faustin <Royal Apothecary Society>
 						{ "i", 6086 },	-- Faustin's Truth Serum
 					},
-					["coord"] = { 87.4, 35.4, DUSKWOOD },
+					["coord"] = { 87.4, 35.4, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5418 },	-- Deathstalker Zraedus
 						{ "i", 6089 },	-- Zraedus's Brew
 					},
-					["coord"] = { 87.6, 35.6, DUSKWOOD },
+					["coord"] = { 87.6, 35.6, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -1014,7 +1014,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(134, {	-- Ogre Thieves
 					["sourceQuest"] = 133,	-- Ghoulish Effigy
 					["qg"] = 289,	-- Abercrombie
-					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["coord"] = { 28.0, 31.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1024,14 +1024,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 1349 },	-- Abercrombie's Crate
 								{ "o",  119 },	-- Abercrombie's Crate
 							},
-							["coord"] = { 33.5, 76.5, DUSKWOOD },
+							["coord"] = { 33.5, 76.5, MAP.DUSKWOOD },
 						}),
 					},
 				}),
 				q(26680, {	-- Ogre Thieves
 					["sourceQuest"] = 26676,	-- Juice Delivery
 					["qg"] = 289,	-- Abercrombie
-					["coord"] = { 87.4, 35.2, DUSKWOOD },
+					["coord"] = { 87.4, 35.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1040,14 +1040,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 1349 },	-- Abercrombie's Crate
 								{ "o",  119 },	-- Abercrombie's Crate
 							},
-							["coord"] = { 33.4, 75.3, DUSKWOOD },
+							["coord"] = { 33.4, 75.3, MAP.DUSKWOOD },
 						}),
 					},
 				}),
 				q(26785, {	-- Part of the Pack
 					["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 					["qg"] = 43453,	-- Tobias Mistmantle
-					["coord"] = { 79.0, 44.1, DUSKWOOD },
+					["coord"] = { 79.0, 44.1, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1055,7 +1055,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(323, {	-- Proving Your Worth
 					["sourceQuest"] = 268,	-- Return to Sven
 					["qg"] = 311,	-- Sven Yorgen
-					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["coord"] = { 7.8, 34.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1073,7 +1073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(163, {	-- Raven Hill
 					["qg"] = 633,	-- Elaine Carevin
-					["coord"] = { 75.3, 48.7, DUSKWOOD },
+					["coord"] = { 75.3, 48.7, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1085,7 +1085,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 302 },	-- Blind Mary
 						{ "i", 1518 },	-- Ghost Hair Comb
 					},
-					["coord"] = { 81.9, 59.1, DUSKWOOD },
+					["coord"] = { 81.9, 59.1, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1096,7 +1096,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 302 },	-- Blind Mary
 						{ "i", 1518 },	-- Ghost Hair Comb
 					},
-					["coord"] = { 82.0, 59.3, DUSKWOOD },
+					["coord"] = { 82.0, 59.3, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1106,7 +1106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 272 },	-- Chef Grual
 						{ "i", 2250 },	-- Dusky Crab Cakes
 					},
-					["coord"] = { 73.8, 43.5, DUSKWOOD },
+					["coord"] = { 73.8, 43.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
@@ -1117,7 +1117,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 288 },	-- Jitters
 						{ "i", 2560 },	-- Jitters' Completed Journal
 					},
-					["coord"] = { 18.2, 56.3, DUSKWOOD },
+					["coord"] = { 18.2, 56.3, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1125,7 +1125,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26670, {	-- Roland's Doom
 					["sourceQuest"] = 26669,	-- In A Dark Corner
 					["qg"] = 267,	-- Clerk Daltry
-					["coord"] = { 72.4, 46.9, DUSKWOOD },
+					["coord"] = { 72.4, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1134,7 +1134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",    938 },	-- Muddy Journal Pages
 								{ "o", 204591 },	-- Muddy Journal Page
 							},
-							["coord"] = { 73.7, 79.1, DUSKWOOD },
+							["coord"] = { 73.7, 79.1, MAP.DUSKWOOD },
 						}),
 						i(60915, {	-- Daltry's Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -1161,7 +1161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
 					-- #endif
 					["qg"] = 272,	-- Chef Grual
-					["coord"] = { 73.8, 43.5, DUSKWOOD },
+					["coord"] = { 73.8, 43.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 1015, 10 },	-- Lean Wolf Flank
@@ -1176,7 +1176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26620, {	-- Seasoned Wolf Kabobs
 					["qg"] = 272,	-- Chef Grual
-					["coord"] = { 73.7, 43.4, DUSKWOOD },
+					["coord"] = { 73.7, 43.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1193,14 +1193,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 311 },	-- Sven Yorgen
 						{ "i", 2560 },	-- Jitters' Completed Journal
 					},
-					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["coord"] = { 7.8, 34.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(26777, {	-- Soothing Spirits
 					["qg"] = 43731,	-- Sister Elsington
-					["coord"] = { 20.0, 57.8, DUSKWOOD },
+					["coord"] = { 20.0, 57.8, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1218,16 +1218,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5464 },	-- Watchmaster Sorigal
 						{ "i", 6091 },	-- Crate of Power Stones
 					},
-					["coord"] = { 75.8, 46.2, DUSKWOOD },
+					["coord"] = { 75.8, 46.2, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { MAP.BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(148, {	-- Supplies from Darkshire
 					["sourceQuest"] = 165,	-- The Hermit
 					["qg"] = 289,	-- Abercrombie
-					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["coord"] = { 28.0, 31.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1235,7 +1235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26653, {	-- Supplies from Darkshire
 					["sourceQuest"] = 26627,	-- The Hermit
 					["qg"] = 289,	-- Abercrombie
-					["coord"] = { 87.4, 35.2, DUSKWOOD },
+					["coord"] = { 87.4, 35.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1245,7 +1245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 59 },	-- Mound of loose dirt
 						{ "i", 2161 },	-- Book from Sven's Farm
 					},
-					["coord"] = { 49.9, 77.7, DUSKWOOD },
+					["coord"] = { 49.9, 77.7, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1253,7 +1253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(95, {	-- Sven's Revenge
 					["sourceQuest"] = 164,	-- Deliveries to Sven
 					["qg"] = 311,	-- Sven Yorgen
-					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["coord"] = { 7.8, 34.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1261,7 +1261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1042, {	-- The Carevin Family
 					["sourceQuest"] = 1041,	-- The Caravan Road
 					["qg"] = 267,	-- Clerk Daltry
-					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["coord"] = { 72.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -1269,7 +1269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26778, {	-- The Cries of the Dead
 					["sourceQuest"] = 26760,	-- Cry For The Moon
 					["qg"] = 43731,	-- Sister Elsington
-					["coord"] = { 20.0, 57.8, DUSKWOOD },
+					["coord"] = { 20.0, 57.8, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1299,7 +1299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(229, {	-- The Daughter Who Lived
 					["sourceQuest"] = 228,	-- Mor'Ladim
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["coord"] = { 73.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -1307,14 +1307,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26796, {	-- The Daughter Who Lived
 					["sourceQuest"] = 26795,	-- Mor'Ladim
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, DUSKWOOD },
+					["coord"] = { 73.5, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(270, {	-- The Doomed Fleet
 					["sourceQuest"] = 269,	-- Seeking Wisdom
 					["qg"] = 1212,	-- Bishop Farthing
-					["coord"] = { 39.3, 27.9, STORMWIND_CITY },
+					["coord"] = { 39.3, 27.9, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1322,7 +1322,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26727, {	-- The Embalmer's Revenge
 					["sourceQuest"] = 26681,	-- Note to the Mayor
 					["qg"] = 263,	-- Lord Ello Ebonlocke
-					["coord"] = { 71.9, 46.4, DUSKWOOD },
+					["coord"] = { 71.9, 46.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1346,13 +1346,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26723, {	-- The Fate of Morbent Fel
 					["sourceQuest"] = 26760,	-- Cry For The Moon
 					["qg"] = 43861,	-- Sven Yorgen
-					["coord"] = { 18.3, 58.0, DUSKWOOD },
+					["coord"] = { 18.3, 58.0, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Remains of Morbent Fel
 							["provider"] = { "o", 204816 },	-- Bloodsoaked Hat
-							["coord"] = { 17.0, 33.4, DUSKWOOD },
+							["coord"] = { 17.0, 33.4, MAP.DUSKWOOD },
 						}),
 					},
 				}),
@@ -1362,7 +1362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 267 },	-- Clerk Daltry
 						{ "i", 59362 },	-- The Legend of Stalvan
 					},
-					["coord"] = { 72.4, 46.9, DUSKWOOD },
+					["coord"] = { 72.4, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1372,13 +1372,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 204817 },	-- Lightforged Rod
 						{ "o", 204824 },	-- Lightforged Arch
 					},
-					["coord"] = { 23.4, 35.4, DUSKWOOD },
+					["coord"] = { 23.4, 35.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(165, {	-- The Hermit
 					["qg"] = 633,	-- Elaine Carevin
-					["coord"] = { 75.3, 48.7, DUSKWOOD },
+					["coord"] = { 75.3, 48.7, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1387,7 +1387,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26627, {	-- The Hermit
 					["sourceQuest"] = 26618,	-- Wolves at Our Heels
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, DUSKWOOD },
+					["coord"] = { 73.5, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1395,20 +1395,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26684, {	-- The Insane Ghoul
 					["sourceQuest"] = 26683,	-- Look To The Stars
 					["qg"] = 302,	-- Blind Mary
-					["coord"] = { 82.0, 59.3, DUSKWOOD },
+					["coord"] = { 82.0, 59.3, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mary's Looking Glass
 							["provider"] = { "i", 1946 },	-- Mary's Looking Glass
-							["coord"] = { 80.4, 71.2, DUSKWOOD },
+							["coord"] = { 80.4, 71.2, MAP.DUSKWOOD },
 							["cr"] = 511,	-- Insane Ghoul
 						}),
 					},
 				}),
 				q(26721, {	-- The Jitters-Bugs
 					["qg"] = 288,	-- Jitters
-					["coord"] = { 18.6, 58.3, DUSKWOOD },
+					["coord"] = { 18.6, 58.3, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1423,7 +1423,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(66, {	-- The Legend of Stalvan (1/13)
 					["qg"] = 265,	-- Madame Eva
-					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["coord"] = { 75.8, 45.3, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1431,7 +1431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(67, {	-- The Legend of Stalvan (2/13)
 					["sourceQuest"] = 66,	-- The Legend of Stalvan (1/13)
 					["qg"] = 267,	-- Clerk Daltry
-					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["coord"] = { 72.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1442,7 +1442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 3643 },	-- Old Footlocker
 						{ "i", 889 },	-- A Dusty Unsent Letter
 					},
-					["coord"] = { 41.5, 66.7, WESTFALL },
+					["coord"] = { 41.5, 66.7, MAP.WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1450,16 +1450,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(69, {	-- The Legend of Stalvan (4/13)
 					["sourceQuest"] = 68,	-- The Legend of Stalvan (3/13)
 					["qg"] = 267,	-- Clerk Daltry
-					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["coord"] = { 72.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(70, {	-- The Legend of Stalvan (5/13)
 					["sourceQuest"] = 69,	-- The Legend of Stalvan (4/13)
 					["qg"] = 295,	-- Innkeeper Farley
-					["coord"] = { 43.8, 65.9, ELWYNN_FOREST },
+					["coord"] = { 43.8, 65.9, MAP.ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1469,14 +1469,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 910 },	-- An Undelivered Letter
 								{ "o", 1560 },	-- Storage Chest
 							},
-							["coord"] = { 44.2, 65.8, ELWYNN_FOREST },
+							["coord"] = { 44.2, 65.8, MAP.ELWYNN_FOREST },
 						}),
 					},
 				}),
 				q(72, {	-- The Legend of Stalvan (6/13)
 					["sourceQuest"] = 70,	-- The Legend of Stalvan (5/13)
 					["qg"] = 297,	-- Caretaker Folsom
-					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
+					["coord"] = { 29.6, 61.9, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1487,16 +1487,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1561 },	-- Sealed Crate
 						{ "i", 916 },	-- A Torn Journal Page
 					},
-					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
+					["coord"] = { 29.6, 61.9, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(75, {	-- The Legend of Stalvan (8/13)
 					["sourceQuest"] = 74,	-- The Legend of Stalvan (7/13)
 					["qg"] = 294,	-- Marshal Haggard
-					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
+					["coord"] = { 84.6, 69.3, MAP.ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 921 },	-- A Faded Journal Page
 								{ "o", 1562 },	-- Marshal Haggard's Chest
 							},
-							["coord"] = { 85.6, 69.6, ELWYNN_FOREST },
+							["coord"] = { 85.6, 69.6, MAP.ELWYNN_FOREST },
 						}),
 					},
 				}),
@@ -1516,7 +1516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 294 },	-- Marshal Haggard
 						{ "i", 921 },	-- A Faded Journal Page
 					},
-					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
+					["coord"] = { 84.6, 69.3, MAP.ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1527,7 +1527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 273 },	-- Tavernkeep Smitts
 						{ "i", 938 },	-- Muddy Journal Pages
 					},
-					["coord"] = { 73.8, 44.4, DUSKWOOD },
+					["coord"] = { 73.8, 44.4, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 264 },	-- Commander Althea Ebonlocke
 						{ "i", 939 },	-- A Bloodstained Journal Page
 					},
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["coord"] = { 73.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1546,7 +1546,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(97, {	-- The Legend of Stalvan (12/13)
 					["sourceQuest"] = 80,	-- The Legend of Stalvan (11/13)
 					["qg"] = 267,	-- Clerk Daltry
-					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["coord"] = { 72.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1554,14 +1554,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(98, {	-- The Legend of Stalvan (13/13)
 					["sourceQuest"] = 97,	-- The Legend of Stalvan (12/13)
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["coord"] = { 73.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mistmantle Family Ring
 							["provider"] = { "i", 3629 },	-- Mistmantle Family Ring
-							["coord"] = { 77.6, 34.8, DUSKWOOD },
+							["coord"] = { 77.6, 34.8, MAP.DUSKWOOD },
 							["cr"] = 315,	-- Stalvan Mistmantle
 						}),
 						i(2044, {	-- Crescent of Forlorn Spirits
@@ -1574,20 +1574,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26666, {	-- The Legend of Stalvan
 					["qg"] = 43453,	-- Tobias Mistmantle
-					["coord"] = { 79.0, 44.1, DUSKWOOD },
+					["coord"] = { 79.0, 44.1, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26724, {	-- The Lurking Lich
 					["sourceQuest"] = 26723,	-- The Fate of Morbent Fel
 					["qg"] = 43861,	-- Sven Yorgen
-					["coord"] = { 18.3, 58.0, DUSKWOOD },
+					["coord"] = { 18.3, 58.0, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56, {	-- The Night Watch (1/3)
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["coord"] = { 73.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -1603,7 +1603,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(57, {	-- The Night Watch (2/3)
 					["sourceQuest"] = 56,	-- The Night Watch (1/3)
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["coord"] = { 73.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -1619,7 +1619,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(58, {	-- The Night Watch (3/3)
 					["sourceQuest"] = 57,	-- The Night Watch (2/3)
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["coord"] = { 73.6, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -1641,7 +1641,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26645, {	-- The Night Watch
 					["sourceQuest"] = 26618,	-- Wolves at Our Heels
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, DUSKWOOD },
+					["coord"] = { 73.5, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1653,7 +1653,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26689, {	-- The Rotting Orchard
 					["sourceQuest"] = 26688,	-- Worgen in the Woods
 					["qg"] = 663,	-- Calor
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["coord"] = { 75.3, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1665,14 +1665,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1043, {	-- The Scythe of Elune
 					["sourceQuest"] = 1042,	-- The Carevin Family
 					["qg"] = 661,	-- Jonathan Carevin
-					["coord"] = { 75.3, 49.2, DUSKWOOD },
+					["coord"] = { 75.3, 49.2, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- Find evidence of the Scythe of Elune
 							["provider"] = { "o", 19030 },	-- Mound of Dirt
-							["coord"] = { 73.7, 79.0, DUSKWOOD },
+							["coord"] = { 73.7, 79.0, MAP.DUSKWOOD },
 						}),
 					},
 				}),
@@ -1682,7 +1682,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 311 },	-- Sven Yorgen
 						{ "i", 2161 },	-- Book from Sven's Farm
 					},
-					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["coord"] = { 7.8, 34.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1693,7 +1693,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 265 },	-- Madame Eva
 						{ "i", 2161 },	-- Book from Sven's Farm
 					},
-					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["coord"] = { 75.8, 45.3, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1701,7 +1701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26667, {	-- The Stolen Letters
 					["sourceQuest"] = 26666,	-- The Legend of Stalvan
 					["qg"] = 267,	-- Clerk Daltry
-					["coord"] = { 72.4, 46.9, DUSKWOOD },
+					["coord"] = { 72.4, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1710,7 +1710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  59357 },	-- A Slashed Bundle of Letters
 								{ "o", 204462 },	-- Pile of Scraps
 							},
-							["coord"] = { 61.22, 40.51, DUSKWOOD },
+							["coord"] = { 61.22, 40.51, MAP.DUSKWOOD },
 						}),
 						i(60911, {	-- Archivist's Lighter
 							["timeline"] = { ADDED_4_0_3 },
@@ -1734,7 +1734,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(101, {	-- The Totem of Infliction
 					["qg"] = 265,	-- Madame Eva
-					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["coord"] = { 75.8, 45.3, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -1780,21 +1780,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(225, {	-- The Weathered Grave
 					["provider"] = { "o", 61 },	-- A Weathered Grave
-					["coord"] = { 17.7, 29.2, DUSKWOOD },
+					["coord"] = { 17.7, 29.2, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(26793, {	-- The Weathered Grave
 					["provider"] = { "o", 61 },	-- A Weathered Grave
-					["coord"] = { 17.7, 29.1, DUSKWOOD },
+					["coord"] = { 17.7, 29.1, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26717, {	-- The Yorgen Worgen
 					["sourceQuest"] = 26785,	-- Part of the Pack
 					["qg"] = 43738,	-- Apprentice Fess
-					["coord"] = { 44.9, 67.4, DUSKWOOD },
+					["coord"] = { 44.9, 67.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1803,7 +1803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 204777 },	-- Mound of Loose Dirt
 								{ "n",  43799 },	-- Lurking Worgen
 							},
-							["coord"] = { 49.8, 77.7, DUSKWOOD },
+							["coord"] = { 49.8, 77.7, MAP.DUSKWOOD },
 						}),
 					},
 				}),
@@ -1813,7 +1813,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 263 },	-- Lord Ello Ebonlocke
 						{ "i", 1637 },	-- Letter to Ello
 					},
-					["coord"] = { 71.9, 46.5, DUSKWOOD },
+					["coord"] = { 71.9, 46.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1824,7 +1824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 268 },	-- Sirra Von'Indi
 						{ "i", 1656 },	-- Translated Letter
 					},
-					["coord"] = { 72.6, 47.7, DUSKWOOD },
+					["coord"] = { 72.6, 47.7, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1834,7 +1834,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9429, {	-- Travel to Darkshire
 					["qg"] = 17103,	-- Emissary Taluun
-					["coord"] = { 78.2, 18.2, STORMWIND_CITY },
+					["coord"] = { 78.2, 18.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["lvl"] = 18,
@@ -1842,7 +1842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26690, {	-- Vile and Tainted
 					["sourceQuest"] = 26689,	-- The Rotting Orchard
 					["qg"] = 663,	-- Calor
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["coord"] = { 75.3, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1856,7 +1856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1477,	{	-- Vital Supplies
 					["qg"] = 5694,	-- High Sorcerer Andromath
-					["coord"] = { 37.6, 81.6, STORMWIND_CITY },
+					["coord"] = { 37.6, 81.6, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1864,7 +1864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25235, {	-- Vulgar Vul'Gol
 					["qg"] = 888,	-- Watcher Dodds
-					["coord"] = { 45.1, 67.0, DUSKWOOD },
+					["coord"] = { 45.1, 67.0, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1882,14 +1882,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(401, {	-- Wait for Sirra to Finish
 					["sourceQuest"] = 251,	-- Translate Abercrombie's Note
 					["qg"] = 268,	-- Sirra Von'Indi
-					["coord"] = { 72.6, 47.7, DUSKWOOD },
+					["coord"] = { 72.6, 47.7, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(226, {	-- Wolves at Our Heels
 					["qg"] = 893,	-- Lars
-					["coord"] = { 7.7, 33.4, DUSKWOOD },
+					["coord"] = { 7.7, 33.4, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
@@ -1909,7 +1909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26728,	-- Hero's Call: Duskwood!
 					},
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, DUSKWOOD },
+					["coord"] = { 73.5, 46.9, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1933,7 +1933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(173, {	-- Worgen in the Woods (1/4)
 					["qg"] = 663,	-- Calor
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["coord"] = { 75.3, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
@@ -1946,7 +1946,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(221, {	-- Worgen in the Woods (2/4)
 					["sourceQuest"] = 173,	-- Worgen in the Woods (1/4)
 					["qg"] = 663,	-- Calor
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["coord"] = { 75.3, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
@@ -1959,7 +1959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(222, {	-- Worgen in the Woods (3/4)
 					["sourceQuest"] = 221,	-- Worgen in the Woods (2/4)
 					["qg"] = 663,	-- Calor
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["coord"] = { 75.3, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
@@ -1978,7 +1978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 663 },	-- Calor
 						{ "i", 2113 },	-- Calor's Note
 					},
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["coord"] = { 75.3, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
@@ -1996,7 +1996,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26688, {	-- Worgen in the Woods (1/2)
 					["qg"] = 663,	-- Calor
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["coord"] = { 75.3, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2011,7 +2011,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 663 },	-- Calor
 						{ "i", 2113 },	-- Calor's Note
 					},
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["coord"] = { 75.3, 48.0, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2032,7 +2032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(158, {	-- Zombie Juice
 					["sourceQuest"] = 157,	-- Deliver the Thread
 					["qg"] = 289,	-- Abercrombie
-					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["coord"] = { 28.0, 31.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -2040,7 +2040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26660, {	-- Zombie Juice
 					["sourceQuest"] = 26655,	-- Deliver the Thread
 					["qg"] = 289,	-- Abercrombie
-					["coord"] = { 87.4, 35.2, DUSKWOOD },
+					["coord"] = { 87.4, 35.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2052,7 +2052,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 210568 },	-- Decrepit Phylactery
 						{ "o", 411328 },	-- Slumbering Bones
 					},
-					["coord"] = { 18.0, 38.6, DUSKWOOD },
+					["coord"] = { 18.0, 38.6, MAP.DUSKWOOD },
 					["groups"] = {
 						i(210569, {	-- Rune of Flagellation
 							["classes"] = { WARRIOR },
@@ -2071,10 +2071,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(45785, {	-- Carved One
 					["coords"] = {	-- pats in a circle, coords not exhaustive
-						{ 48.4, 70.4, DUSKWOOD },
-						{ 47.6, 73.0, DUSKWOOD },
-						{ 50.6, 72.8, DUSKWOOD },
-						{ 49.4, 75.6, DUSKWOOD },
+						{ 48.4, 70.4, MAP.DUSKWOOD },
+						{ 47.6, 73.0, MAP.DUSKWOOD },
+						{ 50.6, 72.8, MAP.DUSKWOOD },
+						{ 49.4, 75.6, MAP.DUSKWOOD },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -2087,9 +2087,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 21.8, 34.0, DUSKWOOD },
+						{ 21.8, 34.0, MAP.DUSKWOOD },
 						-- #else
-						{ 18.0, 38.0, DUSKWOOD },
+						{ 18.0, 38.0, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2105,14 +2105,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 23.0, 47.0, DUSKWOOD },
+					["coord"] = { 23.0, 47.0, MAP.DUSKWOOD },
 					["groups"] = {
 						i(216946),	-- Glittering Dalaran Relic
 					},
 				})),
 				-- #endif
 				n(45801, {	-- Eliza <Bride of the Embalmer>
-					["coord"] = { 27.6, 31.6, DUSKWOOD },
+					["coord"] = { 27.6, 31.6, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(507, {	-- Fenros
@@ -2124,17 +2124,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					["coords"] = {
 						-- #if BEFORE 4.0.3
-						{ 59.8, 26.8, DUSKWOOD },
-						{ 63.8, 51.6, DUSKWOOD },
+						{ 59.8, 26.8, MAP.DUSKWOOD },
+						{ 63.8, 51.6, MAP.DUSKWOOD },
 						-- #else
-						{ 58.4, 29.8, DUSKWOOD },
-						{ 62.0, 37.2, DUSKWOOD },
-						{ 60.6, 40.5, DUSKWOOD },
-						{ 61.8, 41.0, DUSKWOOD },
-						{ 63.0, 43.2, DUSKWOOD },
-						{ 61.2, 45.2, DUSKWOOD },
-						{ 64.4, 47.8, DUSKWOOD },
-						{ 64.0, 51.2, DUSKWOOD },
+						{ 58.4, 29.8, MAP.DUSKWOOD },
+						{ 62.0, 37.2, MAP.DUSKWOOD },
+						{ 60.6, 40.5, MAP.DUSKWOOD },
+						{ 61.8, 41.0, MAP.DUSKWOOD },
+						{ 63.0, 43.2, MAP.DUSKWOOD },
+						{ 61.2, 45.2, MAP.DUSKWOOD },
+						{ 64.4, 47.8, MAP.DUSKWOOD },
+						{ 64.0, 51.2, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["groups"] = {
@@ -2148,7 +2148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(91592, {	-- Forlorn Composer
 					["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music roll requires speaking to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges).",
-					["coord"] = { 23.7, 36.3, DUSKWOOD },
+					["coord"] = { 23.7, 36.3, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
 						i(122223, {	-- Music Roll: Ghost
@@ -2165,11 +2165,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 24.2, 34.5, DUSKWOOD },
-						{ 25.6, 30.2, DUSKWOOD },
-						{ 20.3, 26.8, DUSKWOOD },
+						{ 24.2, 34.5, MAP.DUSKWOOD },
+						{ 25.6, 30.2, MAP.DUSKWOOD },
+						{ 20.3, 26.8, MAP.DUSKWOOD },
 						-- #else
-						{ 25.6, 30.2, DUSKWOOD },
+						{ 25.6, 30.2, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2191,14 +2191,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					["coords"] = {
 						-- #if AFTER 4.0.3
-						{ 60.8, 20.6, DUSKWOOD },
-						{ 65.6, 19.6, DUSKWOOD },
-						{ 70.2, 24.4, DUSKWOOD },
+						{ 60.8, 20.6, MAP.DUSKWOOD },
+						{ 65.6, 19.6, MAP.DUSKWOOD },
+						{ 70.2, 24.4, MAP.DUSKWOOD },
 						-- #else
-						{ 20.0, 25.4, DUSKWOOD },
-						{ 38.4, 26.2, DUSKWOOD },
-						{ 60.2, 24.4, DUSKWOOD },
-						{ 71.0, 24.4, DUSKWOOD },
+						{ 20.0, 25.4, MAP.DUSKWOOD },
+						{ 38.4, 26.2, MAP.DUSKWOOD },
+						{ 60.2, 24.4, MAP.DUSKWOOD },
+						{ 71.0, 24.4, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["groups"] = {
@@ -2211,7 +2211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(45811, {	-- Marina DeSirrus
-					["coord"] = { 7.80, 34.2, DUSKWOOD },
+					["coord"] = { 7.80, 34.2, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(920, {	-- Wicked Spiked Mace
@@ -2221,20 +2221,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(45771, {	-- Marus
 					["coords"] = {
-						{ 65.2, 68.0, DUSKWOOD },
-						{ 63.2, 70.6, DUSKWOOD },
-						{ 61.8, 73.4, DUSKWOOD },
-						{ 61.0, 74.6, DUSKWOOD },
-						{ 60.8, 81.4, DUSKWOOD },
+						{ 65.2, 68.0, MAP.DUSKWOOD },
+						{ 63.2, 70.6, MAP.DUSKWOOD },
+						{ 61.8, 73.4, MAP.DUSKWOOD },
+						{ 61.0, 74.6, MAP.DUSKWOOD },
+						{ 60.8, 81.4, MAP.DUSKWOOD },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(574, {	-- Naraxis
 					["coords"] = {
 						-- #if AFTER 4.0.3
-						{ 86.4, 47.3, DUSKWOOD },
+						{ 86.4, 47.3, MAP.DUSKWOOD },
 						-- #else
-						{ 86.6, 49.6, DUSKWOOD },
+						{ 86.6, 49.6, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["groups"] = {
@@ -2252,9 +2252,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER 4.0.3
-						{ 74.0, 78.6, DUSKWOOD },
+						{ 74.0, 78.6, MAP.DUSKWOOD },
 						-- #else
-						{ 63.6, 82.4, DUSKWOOD },
+						{ 63.6, 82.4, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["groups"] = {
@@ -2267,16 +2267,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(45739, {	-- The Unknown Soldier
-					["coord"] = { 90.6, 30.6, DUSKWOOD },
+					["coord"] = { 90.6, 30.6, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45740, {	-- Watcher Eva
 					["coords"] = {
-						{ 81.4, 59.0, DUSKWOOD },
-						{ 80.8, 62.4, DUSKWOOD },
-						{ 80.8, 65.4, DUSKWOOD },
-						{ 80.8, 68.2, DUSKWOOD },
-						{ 79.8, 70.6, DUSKWOOD },
+						{ 81.4, 59.0, MAP.DUSKWOOD },
+						{ 80.8, 62.4, MAP.DUSKWOOD },
+						{ 80.8, 65.4, MAP.DUSKWOOD },
+						{ 80.8, 68.2, MAP.DUSKWOOD },
+						{ 79.8, 70.6, MAP.DUSKWOOD },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -2285,16 +2285,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(209849, {	-- Crimes Against Anatomy
 					["provider"] = { "o", 409735 },	-- Spellbook
-					["coord"] = { 16.7, 28.5, DUSKWOOD },
+					["coord"] = { 16.7, 28.5, MAP.DUSKWOOD },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210568, {	-- Decrepit Phylactery
 					["description"] = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",
 					["provider"] = { "o", 411348 },	-- Dusty Coffer
-					["coord"] = { 26.0, 31.0, DUSKWOOD },
+					["coord"] = { 26.0, 31.0, MAP.DUSKWOOD },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210251, {	-- Engraved Silver Ring
 					["provider"] = { "o", 410779 },	-- Offering Box
-					["coord"] = { 81.0, 71.0, DUSKWOOD },
+					["coord"] = { 81.0, 71.0, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 				})),
@@ -2305,7 +2305,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 210250 },	-- Engraved Gold Ring
 						{ "i", 210251 },	-- Engraved Silver Ring
 					},
-					["coord"] = { 19.9, 45.5, DUSKWOOD },
+					["coord"] = { 19.9, 45.5, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -2316,7 +2316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(VENDORS, {
 				n(228, {	-- Avette Fellwood <Bowyer>
-					["coord"] = { 73.2, 44.8, DUSKWOOD },
+					["coord"] = { 73.2, 44.8, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						3027,	-- Heavy Recurve Bow
@@ -2330,7 +2330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE CATA
 				n(274, {	-- Barkeep Hann <Bartender>
-					["coord"] = { 73.8, 44.2, DUSKWOOD },
+					["coord"] = { 73.8, 44.2, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(1942),	-- Bottle of Moonshine
@@ -2338,7 +2338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(2481, {	-- Bliztik <Alchemy Supplies>
-					["coord"] = { 18.0, 54.4, DUSKWOOD },
+					["coord"] = { 18.0, 54.4, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(6068, {	-- Recipe: Shadow Oil (RECIPE!)
@@ -2347,7 +2347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2668, {	-- Danielle Zipstitch <Tailoring Supplies>
-					["coord"] = { 75.8, 45.4, DUSKWOOD },
+					["coord"] = { 75.8, 45.4, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(14627, {	-- Pattern: Bright Yellow Shirt (RECIPE!)
@@ -2356,7 +2356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(225, {	-- Gavin Gnarltree <Weaponsmith>
-					["coord"] = { 73.6, 49.8, DUSKWOOD },
+					["coord"] = { 73.6, 49.8, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						929,	-- Battle Axe
@@ -2386,7 +2386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(3134, {	-- Kzixx <Rare Goods>
-					["coord"] = { 81.8, 19.8, DUSKWOOD },
+					["coord"] = { 81.8, 19.8, MAP.DUSKWOOD },
 					["groups"] = {
 						i(4829, {	-- Dreamer's Belt
 							["isLimited"] = true,
@@ -2420,7 +2420,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(226, {	-- Morg Gnarltree <Armorer>
-					["coord"] = { 73.8, 48.6, DUSKWOOD },
+					["coord"] = { 73.8, 48.6, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						2446,	-- Kite Shield
@@ -2451,7 +2451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(3138, {	-- Scott Carevin <Mushroom Seller>
-					["coord"] = { 75.7, 47.5, DUSKWOOD },
+					["coord"] = { 75.7, 47.5, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4607),	-- Delicious Cave Mold
@@ -2463,7 +2463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2669, {	-- Sheri Zipstitch <Tailoring Supplies>
-					["coord"] = { 75.6, 45.4, DUSKWOOD },
+					["coord"] = { 75.6, 45.4, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6401, {	-- Pattern: Dark Silk Shirt (RECIPE!)
@@ -2475,7 +2475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(44114, {	-- Wilkinson <General Goods>
-					["coord"] = { 20.3, 58.4, DUSKWOOD },
+					["coord"] = { 20.3, 58.4, MAP.DUSKWOOD },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2496,43 +2496,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(885, {	-- Black Metal Axe
 					["coords"] = {
-						{ 18.6, 33.0, DUSKWOOD },
-						{ 19.8, 45.2, DUSKWOOD },
+						{ 18.6, 33.0, MAP.DUSKWOOD },
+						{ 19.8, 45.2, MAP.DUSKWOOD },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 3,	-- Flesh Eater
 				}),
 				i(2014, {	-- Black Metal Greatsword
 					["coords"] = {
-						{ 74.8, 32.8, DUSKWOOD },
-						{ 75.2, 37.6, DUSKWOOD },
-						{ 76.6, 36.6, DUSKWOOD },
-						{ 76.8, 31.0, DUSKWOOD },
-						{ 78.4, 36.0, DUSKWOOD },
-						{ 79.8, 32.8, DUSKWOOD },
-						{ 81.6, 32.2, DUSKWOOD },
-						{ 81.6, 33.6, DUSKWOOD },
+						{ 74.8, 32.8, MAP.DUSKWOOD },
+						{ 75.2, 37.6, MAP.DUSKWOOD },
+						{ 76.6, 36.6, MAP.DUSKWOOD },
+						{ 76.8, 31.0, MAP.DUSKWOOD },
+						{ 78.4, 36.0, MAP.DUSKWOOD },
+						{ 79.8, 32.8, MAP.DUSKWOOD },
+						{ 81.6, 32.2, MAP.DUSKWOOD },
+						{ 81.6, 33.6, MAP.DUSKWOOD },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 1270,	-- Fetid Corpse
 				}),
 				i(886, {	-- Black Metal Shortsword
 					["coords"] = {
-						{ 15.8, 35.0, DUSKWOOD },
-						{ 17.0, 31.2, DUSKWOOD },
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 24.4, 37.4, DUSKWOOD },
-						{ 25.6, 32.4, DUSKWOOD },
+						{ 15.8, 35.0, MAP.DUSKWOOD },
+						{ 17.0, 31.2, MAP.DUSKWOOD },
+						{ 23.4, 35.4, MAP.DUSKWOOD },
+						{ 24.4, 37.4, MAP.DUSKWOOD },
+						{ 25.6, 32.4, MAP.DUSKWOOD },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 210,	-- Bone Chewer
 				}),
 				i(2015, {	-- Black Metal War Axe
 					["coords"] = {
-						{ 25.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
-						{ 23.4, 35.4, DUSKWOOD },
+						{ 25.4, 35.4, MAP.DUSKWOOD },
+						{ 17.8, 33.4, MAP.DUSKWOOD },
+						{ 19.8, 46.8, MAP.DUSKWOOD },
+						{ 23.4, 35.4, MAP.DUSKWOOD },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
@@ -2546,12 +2546,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2013, {	-- Cryptbone Staff
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 79.2, 66.6, DUSKWOOD },
-						{ 79.6, 70.6, DUSKWOOD },
-						{ 79.6, 74.2, DUSKWOOD },
+						{ 79.2, 66.6, MAP.DUSKWOOD },
+						{ 79.6, 70.6, MAP.DUSKWOOD },
+						{ 79.6, 74.2, MAP.DUSKWOOD },
 						-- #else
-						{ 16.6, 31.6, DUSKWOOD },
-						{ 17.0, 38.8, DUSKWOOD },
+						{ 16.6, 31.6, MAP.DUSKWOOD },
+						{ 17.0, 38.8, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2566,8 +2566,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211528, {	-- Dark Insight
 					["coords"] = {
-						{ 22.8, 68.0, DUSKWOOD },
-						{ 50.8, 75.0, DUSKWOOD },
+						{ 22.8, 68.0, MAP.DUSKWOOD },
+						{ 50.8, 75.0, MAP.DUSKWOOD },
 					},
 					["classes"] = { PRIEST },
 					["crs"] = {
@@ -2577,7 +2577,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(211490, {	-- Prophecy of a Thousand Lights
-							["coord"] = { 90.0, 30.0, DUSKWOOD },
+							["coord"] = { 90.0, 30.0, MAP.DUSKWOOD },
 							["classes"] = { PRIEST },
 							["groups"] = {
 								recipe(402859),	-- Engrave Gloves - Circle of Healing
@@ -2589,13 +2589,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2232, {	-- Dark Runner Boots
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 66.4, 33.0, DUSKWOOD },
-						{ 61.8, 38.0, DUSKWOOD },
-						{ 65.6, 49.0, DUSKWOOD },
+						{ 66.4, 33.0, MAP.DUSKWOOD },
+						{ 61.8, 38.0, MAP.DUSKWOOD },
+						{ 65.6, 49.0, MAP.DUSKWOOD },
 						-- #else
-						{ 62.4, 42.6, DUSKWOOD },
-						{ 64.0, 49.6, DUSKWOOD },
-						{ 64.2, 74.0, DUSKWOOD },
+						{ 62.4, 42.6, MAP.DUSKWOOD },
+						{ 64.0, 49.6, MAP.DUSKWOOD },
+						{ 64.2, 74.0, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2604,10 +2604,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1077, {	-- Defias Mage Ring
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 7.6, 34.6, DUSKWOOD },
+						{ 7.6, 34.6, MAP.DUSKWOOD },
 						-- #else
-						{ 23.6, 71.4, DUSKWOOD },
-						{ 50.6, 77.6, DUSKWOOD },
+						{ 23.6, 71.4, MAP.DUSKWOOD },
+						{ 50.6, 77.6, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2622,14 +2622,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2021, {	-- Green Carapace Shield
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 23.6, 36.6, DUSKWOOD },
-						{ 23.6, 36.6, DUSKWOOD },
-						{ 17.0, 38.8, DUSKWOOD },
+						{ 23.6, 36.6, MAP.DUSKWOOD },
+						{ 23.6, 36.6, MAP.DUSKWOOD },
+						{ 17.0, 38.8, MAP.DUSKWOOD },
 						-- #else
-						{ 72.8, 21.6, DUSKWOOD },
-						{ 56.6, 20.0, DUSKWOOD },
-						{ 17.0, 70.6, DUSKWOOD },
-						{ 12.6, 51.8, DUSKWOOD },
+						{ 72.8, 21.6, MAP.DUSKWOOD },
+						{ 56.6, 20.0, MAP.DUSKWOOD },
+						{ 17.0, 70.6, MAP.DUSKWOOD },
+						{ 12.6, 51.8, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2644,12 +2644,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2017, {	-- Glowing Leather Bracers
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 24.0, 44.6, DUSKWOOD },
-						{ 18.0, 47.6, DUSKWOOD },
-						{ 16.6, 43.0, DUSKWOOD },
+						{ 24.0, 44.6, MAP.DUSKWOOD },
+						{ 18.0, 47.6, MAP.DUSKWOOD },
+						{ 16.6, 43.0, MAP.DUSKWOOD },
 						-- #else
-						{ 16.0, 37.6, DUSKWOOD },
-						{ 17.0, 31.0, DUSKWOOD },
+						{ 16.0, 37.6, MAP.DUSKWOOD },
+						{ 17.0, 31.0, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2664,12 +2664,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2227, {	-- Heavy Ogre War Axe
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 40.2, 72.0, DUSKWOOD },
-						{ 35.4, 71.4, DUSKWOOD },
-						{ 35.6, 81.0, DUSKWOOD },
+						{ 40.2, 72.0, MAP.DUSKWOOD },
+						{ 35.4, 71.4, MAP.DUSKWOOD },
+						{ 35.6, 81.0, MAP.DUSKWOOD },
 						-- #else
-						{ 40.6, 74.8, DUSKWOOD },
-						{ 37.2, 69.8, DUSKWOOD },
+						{ 40.6, 74.8, MAP.DUSKWOOD },
+						{ 37.2, 69.8, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2684,14 +2684,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2020, {	-- Hollowfang Blade
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 34.6, 55.0, DUSKWOOD },
-						{ 27.8, 41.6, DUSKWOOD },
-						{ 35.6, 29.8, DUSKWOOD },
+						{ 34.6, 55.0, MAP.DUSKWOOD },
+						{ 27.8, 41.6, MAP.DUSKWOOD },
+						{ 35.6, 29.8, MAP.DUSKWOOD },
 						-- #else
-						{ 12.2, 69.8, DUSKWOOD },
-						{ 9.8, 49.6, DUSKWOOD },
-						{ 19.6, 26.4, DUSKWOOD },
-						{ 46.8, 16.8, DUSKWOOD },
+						{ 12.2, 69.8, MAP.DUSKWOOD },
+						{ 9.8, 49.6, MAP.DUSKWOOD },
+						{ 19.6, 26.4, MAP.DUSKWOOD },
+						{ 46.8, 16.8, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2705,9 +2705,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(911, {	-- Ironwood Treebranch
 					["coords"] = {
-						{ 38.4, 72.2, DUSKWOOD },
-						{ 35.2, 71.4, DUSKWOOD },
-						{ 36.6, 79.6, DUSKWOOD },
+						{ 38.4, 72.2, MAP.DUSKWOOD },
+						{ 35.2, 71.4, MAP.DUSKWOOD },
+						{ 36.6, 79.6, MAP.DUSKWOOD },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 889,	-- Splinter Fist Ogre
@@ -2715,12 +2715,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(914, {	-- Large Ogre Chain Armor
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 39.0, 72.2, DUSKWOOD },
-						{ 36.8, 78.6, DUSKWOOD },
-						{ 33.8, 70.8, DUSKWOOD },
+						{ 39.0, 72.2, MAP.DUSKWOOD },
+						{ 36.8, 78.6, MAP.DUSKWOOD },
+						{ 33.8, 70.8, MAP.DUSKWOOD },
 						-- #else
-						{ 38.0, 80.6, DUSKWOOD },
-						{ 37.4, 84.6, DUSKWOOD },
+						{ 38.0, 80.6, MAP.DUSKWOOD },
+						{ 37.4, 84.6, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2735,8 +2735,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211472, {	-- Libram of Banishment
 					["coords"] = {
-						{ 22.8, 68.0, DUSKWOOD },
-						{ 50.8, 75.0, DUSKWOOD },
+						{ 22.8, 68.0, MAP.DUSKWOOD },
+						{ 50.8, 75.0, MAP.DUSKWOOD },
 					},
 					["classes"] = { PALADIN },
 					["cr"] = 215,	-- Defias Night Runner
@@ -2748,11 +2748,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(897, {	-- Madwolf Bracers
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 72.2, 74.6, DUSKWOOD },
-						{ 74.2, 71.0, DUSKWOOD },
+						{ 72.2, 74.6, MAP.DUSKWOOD },
+						{ 74.2, 71.0, MAP.DUSKWOOD },
 						-- #else
-						{ 62.4, 80.4, DUSKWOOD },
-						{ 73.6, 72.0, DUSKWOOD },
+						{ 62.4, 80.4, MAP.DUSKWOOD },
+						{ 73.6, 72.0, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2761,11 +2761,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2234, {	-- Nightwalker Armor
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 73.6, 73.0, DUSKWOOD },
-						{ 73.8, 78.8, DUSKWOOD },
+						{ 73.6, 73.0, MAP.DUSKWOOD },
+						{ 73.8, 78.8, MAP.DUSKWOOD },
 						-- #else
-						{ 74.0, 74.2, DUSKWOOD },
-						{ 62.8, 80.2, DUSKWOOD },
+						{ 74.0, 74.2, MAP.DUSKWOOD },
+						{ 62.8, 80.2, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2773,11 +2773,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2226, {	-- Ogremage Staff
 					["coords"] = {
-						{ 35.4, 71.4, DUSKWOOD },
-						{ 35.6, 81.0, DUSKWOOD },
-						{ 37.2, 69.8, DUSKWOOD },
-						{ 40.2, 72.0, DUSKWOOD },
-						{ 40.6, 74.8, DUSKWOOD },
+						{ 35.4, 71.4, MAP.DUSKWOOD },
+						{ 35.6, 81.0, MAP.DUSKWOOD },
+						{ 37.2, 69.8, MAP.DUSKWOOD },
+						{ 40.2, 72.0, MAP.DUSKWOOD },
+						{ 40.6, 74.8, MAP.DUSKWOOD },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
@@ -2803,12 +2803,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2233, {	-- Shadow Weaver Leggings
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 65.6, 69.4, DUSKWOOD },
-						{ 64.0, 75.8, DUSKWOOD },
+						{ 65.6, 69.4, MAP.DUSKWOOD },
+						{ 64.0, 75.8, MAP.DUSKWOOD },
 						-- #else
-						{ 67.2, 75.4, DUSKWOOD },
-						{ 63.6, 70.6, DUSKWOOD },
-						{ 64.8, 46.2, DUSKWOOD },
+						{ 67.2, 75.4, MAP.DUSKWOOD },
+						{ 63.6, 70.6, MAP.DUSKWOOD },
+						{ 64.8, 46.2, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2817,12 +2817,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2018, {	-- Skeletal Longsword
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 80.8, 69.2, DUSKWOOD },
-						{ 81.8, 70.0, DUSKWOOD },
-						{ 78.2, 70.4, DUSKWOOD },
+						{ 80.8, 69.2, MAP.DUSKWOOD },
+						{ 81.8, 70.0, MAP.DUSKWOOD },
+						{ 78.2, 70.4, MAP.DUSKWOOD },
 						-- #else
-						{ 17.6, 33.6, DUSKWOOD },
-						{ 16.8, 37.2, DUSKWOOD },
+						{ 17.6, 33.6, MAP.DUSKWOOD },
+						{ 16.8, 37.2, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2836,8 +2836,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(880, {	-- Staff of Horrors
 					["coords"] = {
-						{ 80.6, 59.6, DUSKWOOD },
-						{ 20.8, 46.8, DUSKWOOD },
+						{ 80.6, 59.6, MAP.DUSKWOOD },
+						{ 20.8, 46.8, MAP.DUSKWOOD },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 202,	-- Skeletal Horror / Rotting Horror
@@ -2851,7 +2851,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(210043, {	-- Symbol of the Second Owl
-					["coord"] = { 65.2, 27.8, DUSKWOOD },
+					["coord"] = { 65.2, 27.8, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["cr"] = 211200,	-- Agon
@@ -2860,14 +2860,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(899, {	-- Venom Web Fang
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 43.0, 20.4, DUSKWOOD },
-						{ 58.6, 20.6, DUSKWOOD },
-						{ 67.6, 48.0, DUSKWOOD },
-						{ 72.6, 24.6, DUSKWOOD },
-						{ 79.0, 21.8, DUSKWOOD },
+						{ 43.0, 20.4, MAP.DUSKWOOD },
+						{ 58.6, 20.6, MAP.DUSKWOOD },
+						{ 67.6, 48.0, MAP.DUSKWOOD },
+						{ 72.6, 24.6, MAP.DUSKWOOD },
+						{ 79.0, 21.8, MAP.DUSKWOOD },
 						-- #else
-						{ 28.8, 29.6, DUSKWOOD },
-						{ 18.8, 27.8, DUSKWOOD },
+						{ 28.8, 29.6, MAP.DUSKWOOD },
+						{ 18.8, 27.8, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2875,8 +2875,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(920, {	-- Wicked Spiked Mace
 					["coords"] = {
-						{ 23.6, 71.6, DUSKWOOD },
-						{ 49.8, 77.8, DUSKWOOD },
+						{ 23.6, 71.6, MAP.DUSKWOOD },
+						{ 49.8, 77.8, MAP.DUSKWOOD },
 					},
 					["timeline"] = { REMOVED_4_0_3, },	-- Added under Marina DeSirrus in 10.1.7
 					["crs"] = {
@@ -2891,8 +2891,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
-		m(EASTERN_KINGDOMS, {
-			m(DUSKWOOD, {
+		m(MAP.EASTERN_KINGDOMS, {
+			m(MAP.DUSKWOOD, {
 				n(QUESTS, {
 					q(26673),	-- REUSE - BREADCRUMB (completed when turning in "Roland's Doom" (26670))
 				}),

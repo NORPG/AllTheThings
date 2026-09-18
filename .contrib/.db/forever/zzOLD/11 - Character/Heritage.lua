@@ -11,7 +11,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}, {
 			q(53791, {	-- The Pride of the Sin'dorei
 				["provider"] = { "n", 146939 },	-- Ambassador Dawnsworn
-				["coord"] = { 39.2, 79.0, ORGRIMMAR },
+				["coord"] = { 39.2, 79.0, MAP.ORGRIMMAR },
 			}),
 			q(53734, {	-- Walk Among Ghosts
 				["sourceQuest"] = 53791,	-- The Pride of the Sin'dorei
@@ -101,7 +101,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["groups"] = {
 			q(78068, {	-- An Artificer's Appeal
 				["provider"] = { "o", 415303 },	-- Magically-Sealed Parcel
-				["coord"] = { 53.0, 15.5, STORMWIND_CITY },
+				["coord"] = { 53.0, 15.5, MAP.STORMWIND_CITY },
 				["groups"] = {
 					i(210454),	-- Spare Hologem (QI!)
 				},
@@ -267,7 +267,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}, {
 			q(53838, {	-- Keep Yer Feet On The Ground
 				["provider"] = { "n", 146988 },	-- Digger Golad
-				["coord"] = { 54.6, 18.0, STORMWIND_CITY },
+				["coord"] = { 54.6, 18.0, MAP.STORMWIND_CITY },
 			}),
 			q(53835, {	-- Something Valuable, Perhaps?
 				["sourceQuest"] = 53838,	-- Keep Yer Feet On The Ground
@@ -277,7 +277,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(53836, {	-- Ancient Armor, Ancient Mystery
 				["sourceQuest"] = 53835,	-- Something Valuable, Perhaps?
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
-				["coord"] = { 77.2, 9.8, IRONFORGE },
+				["coord"] = { 77.2, 9.8, MAP.IRONFORGE },
 			}),
 			q(53837, {	-- Watch Yer Back
 				["sourceQuest"] = 53836,	-- Ancient Armor, Ancient Mystery
@@ -288,23 +288,23 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["description"] = "The coords leads to the stair down",
 				["sourceQuest"] = 53837,	-- Watch Yer Back
 				["provider"] = { "n", 145707 },	-- Advisor Belgrum
-				["coord"] = { 44.5, 49.4, IRONFORGE },
+				["coord"] = { 44.5, 49.4, MAP.IRONFORGE },
 			}),
 			q(53841, {	-- Shards of the Past
 				["sourceQuest"] = 53839,	-- Aegrim's Study
 				["provider"] = { "o", 309498 },	-- Armor Stand
-				["coord"] = { 19.8, 51.9, IRONFORGE },
+				["coord"] = { 19.8, 51.9, MAP.IRONFORGE },
 				["groups"] = {
 					o(309497, {	-- Pile of Disenchanted Metal
 						["coords"] = {
-							{ 19.8, 51.8, IRONFORGE },
-							{ 20.6, 49.4, IRONFORGE },
-							{ 20.6, 52.8, IRONFORGE },
-							{ 20.8, 50.0, IRONFORGE },
-							{ 20.8, 53.5, IRONFORGE },
-							{ 21.1, 51.0, IRONFORGE },
-							{ 21.7, 51.5, IRONFORGE },
-							{ 22.5, 51.4, IRONFORGE },
+							{ 19.8, 51.8, MAP.IRONFORGE },
+							{ 20.6, 49.4, MAP.IRONFORGE },
+							{ 20.6, 52.8, MAP.IRONFORGE },
+							{ 20.8, 50.0, MAP.IRONFORGE },
+							{ 20.8, 53.5, MAP.IRONFORGE },
+							{ 21.1, 51.0, MAP.IRONFORGE },
+							{ 21.7, 51.5, MAP.IRONFORGE },
+							{ 22.5, 51.4, MAP.IRONFORGE },
 						},
 						["groups"] = { i(164946) },	-- Fragments of Shattered Armor (QI!)
 					}),
@@ -313,18 +313,18 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(53840, {	-- Interest Yah In A Pint?
 				["sourceQuest"] = 53841,	-- Shards of the Past
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
-				["coord"] = { 77.2, 9.8, IRONFORGE },
+				["coord"] = { 77.2, 9.8, MAP.IRONFORGE },
 			}),
 			q(53844, {	-- Recruiting the Furnace Master
 				["sourceQuest"] = 53840,	-- Interest Yah In A Pint?
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
-				["coord"] = { 35.0, 48.8, LOCH_MODAN },
+				["coord"] = { 35.0, 48.8, MAP.LOCH_MODAN },
 				["maps"] = { 745 },	-- Ulduar
 			}),
 			q(53842, {	-- Earthen Blessing
 				["sourceQuest"] = 53844,	-- Recruiting the Furnace Master
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
-				["coord"] = { 35.0, 48.8, LOCH_MODAN },
+				["coord"] = { 35.0, 48.8, MAP.LOCH_MODAN },
 				["groups"] = {
 					i(164960),	-- Remnant of the Earthen Ritual (QI!)
 				},
@@ -332,12 +332,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(53845, {	-- Forging the Armor
 				["sourceQuest"] = 53842,	-- Earthen Blessing
 				["provider"] = { "n", 5164 },	-- Grumnus Steelshaper
-				["coord"] = { 48.8, 46.0, IRONFORGE },
+				["coord"] = { 48.8, 46.0, MAP.IRONFORGE },
 			}),
 			q(53846, {	-- Legacy of the Bronzebeard
 				["sourceQuest"] = 53845,	-- Forging the Armor
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
-				["coord"] = { 46.2, 49.6, IRONFORGE },
+				["coord"] = { 46.2, 49.6, MAP.IRONFORGE },
 				["groups"] = {
 					i(165931),	-- Bronzebeard Helm
 					i(165932),	-- Bronzebeard Pauldrons
@@ -404,7 +404,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}, {
 			q(54402, {	-- Shifting Gears
 				["provider"] = { "n", 147939 },	-- Ace Pilot Stormcog
-				["coord"] = { 54.6, 18.4, STORMWIND_CITY },
+				["coord"] = { 54.6, 18.4, MAP.STORMWIND_CITY },
 			}),
 			q(54576, {	-- Gnomeregan's Finest
 				["sourceQuest"] = 54402,	-- Shifting Gears
@@ -493,8 +493,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					133523,	-- Ji Firepaw
 				},
 				["coords"] = {
-					{ 38.0, 80.2, ORGRIMMAR },
-					{ 39.5, 80.2, ORGRIMMAR },
+					{ 38.0, 80.2, MAP.ORGRIMMAR },
+					{ 39.5, 80.2, MAP.ORGRIMMAR },
 				},
 			}),
 			q(57045, {	-- A Special Delivery
@@ -654,7 +654,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72644,	-- An Urgent Matter (the other one)
 				},
 				["provider"] = { "n", 199340 },	-- Agent Render
-				["coord"] = { 54.6, 20.0, STORMWIND_CITY },
+				["coord"] = { 54.6, 20.0, MAP.STORMWIND_CITY },
 				["isBreadcrumb"] = true,
 				["groups"] = { i(203475) },	-- Urgent Stormwind Summons (QI!)
 				["timeline"] = { REMOVED_11_2_7 }
@@ -663,24 +663,24 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72644, 75265 },	-- Justice Long Overdue
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 198884 },	-- Master Mathias Shaw
-				["coord"] = { 87.5, 30.8, STORMWIND_CITY },
+				["coord"] = { 87.5, 30.8, MAP.STORMWIND_CITY },
 			}),
 			q(72408, {	-- A Window to the Past
 				["sourceQuests"] = { 72405 },	-- An Unlikely Informant
 				["provider"] = { "n", 198896 },	-- Master Mathias Shaw
-				["coord"] = { 44.3, 66.2, ELWYNN_FOREST },
+				["coord"] = { 44.3, 66.2, MAP.ELWYNN_FOREST },
 			}),
 			q(72409, {	-- Rotten Old Memories
 				["sourceQuests"] = { 72408 },	-- A Window to the Past
 				["provider"] = { "n", 198883 },	-- Vanessa VanCleef
-				["coord"] = { 44.3, 66.0, ELWYNN_FOREST },
+				["coord"] = { 44.3, 66.0, MAP.ELWYNN_FOREST },
 				["groups"] = {
 					o(384644, {	-- Hoarded Debris
 						["coords"] = {
-							{ 60.4, 66.3, BURNING_STEPPES },
-							{ 61.1, 67.1, BURNING_STEPPES },
-							{ 61.2, 65.5, BURNING_STEPPES },
-							{ 61.7, 66.6, BURNING_STEPPES },
+							{ 60.4, 66.3, MAP.BURNING_STEPPES },
+							{ 61.1, 67.1, MAP.BURNING_STEPPES },
+							{ 61.2, 65.5, MAP.BURNING_STEPPES },
+							{ 61.7, 66.6, MAP.BURNING_STEPPES },
 						},
 						["groups"] = { i(202106) },	-- Chewed Piece of Journal (QI!)
 					}),
@@ -689,7 +689,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72424, {	-- Looking for Something Specific
 				["sourceQuests"] = { 72409 },	-- Rotten Old Memories
 				["provider"] = { "n", 9563 },	-- Ragged John
-				["coord"] = { 72.8, 64.8, BURNING_STEPPES },
+				["coord"] = { 72.8, 64.8, MAP.BURNING_STEPPES },
 				["groups"] = {
 					i(204063),	-- Windsor's Journal
 				},
@@ -697,22 +697,22 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72426, {	-- The New Clessington Estate
 				["sourceQuests"] = { 72424 },	-- Looking for Something Specific
 				["provider"] = { "n", 198896 },	-- Master Mathias Shaw
-				["coord"] = { 44.3, 66.2, ELWYNN_FOREST },
+				["coord"] = { 44.3, 66.2, MAP.ELWYNN_FOREST },
 			}),
 			q(72430, {	-- Misdeeds in Moonbrook
 				["sourceQuests"] = { 72426 },	-- The New Clessington Estate
 				["provider"] = { "n", 198883 },	-- Vanessa VanCleef
-				["coord"] = { 18.3, 55.0, DUSKWOOD },
+				["coord"] = { 18.3, 55.0, MAP.DUSKWOOD },
 			}),
 			q(72431, {	-- A Hungary Heritage
 				["sourceQuests"] = { 72430 },	-- Misdeeds in Moonbrook
 				["provider"] = { "n", 198923 },	-- Vanessa VanCleef
-				["coord"] = { 46.7, 67.0, WESTFALL },
+				["coord"] = { 46.7, 67.0, MAP.WESTFALL },
 			}),
 			q(72432, {	-- Supply Only the Finest Goons
 				["sourceQuests"] = { 72430 },	-- Misdeeds in Moonbrook
 				["provider"] = { "n", 198922 },	-- Cecilia Clessington
-				["coord"] = { 46.7, 66.7, WESTFALL },
+				["coord"] = { 46.7, 66.7, MAP.WESTFALL },
 			}),
 			q(72453, {	-- Betrayal of the Brotherhood
 				["sourceQuests"] = { 72431 },	-- Misdeeds in Moonbrook
@@ -725,12 +725,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72453,	-- Betrayal of the Brotherhood
 				},
 				["provider"] = { "n", 198924 },	-- Master Mathias Shaw
-				["coord"] = { 46.7, 66.7, WESTFALL },
+				["coord"] = { 46.7, 66.7, MAP.WESTFALL },
 			}),
 			q(72449, {	-- Knock It Off!
 				["sourceQuests"] = { 72445 },	-- To Northshire
 				["provider"] = { "n", 198983 },	-- Master Mathias Shaw
-				["coord"] = { 27.9, 66.7, NORTHSHIRE_VALLEY },
+				["coord"] = { 27.9, 66.7, MAP.NORTHSHIRE_VALLEY },
 				["groups"] = {
 					i(202238),	-- Enforcer Grant's Signet
 					i(204173),	-- Enforcer Horb's Signet
@@ -741,7 +741,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72446, {	-- What's Their Problem?
 				["sourceQuests"] = { 72445 },	-- To Northshire
 				["provider"] = { "n", 198990 },	-- Marshal McBride
-				["coord"] = { 27.7, 66.7, NORTHSHIRE_VALLEY },
+				["coord"] = { 27.7, 66.7, MAP.NORTHSHIRE_VALLEY },
 			}),
 			q(72450, {	-- The Clessington Will
 				["sourceQuests"] = {
@@ -749,7 +749,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72446,	-- What's Their Problem?
 				},
 				["provider"] = { "n", 198984 },	-- Cecilia Clessington
-				["coord"] = { 28.0, 67.2, NORTHSHIRE_VALLEY },
+				["coord"] = { 28.0, 67.2, MAP.NORTHSHIRE_VALLEY },
 				["groups"] = {
 					i(202267),	-- Clessington Signet
 				},
@@ -757,7 +757,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72451, {	-- Will to Survive
 				["sourceQuests"] = { 72450 },	-- The Clessington Will
 				["provider"] = { "n", 198983 },	-- Master Mathias Shaw
-				["coord"] = { 36.5, 51.1, NORTHSHIRE_VALLEY },
+				["coord"] = { 36.5, 51.1, MAP.NORTHSHIRE_VALLEY },
 				["groups"] = {
 					i(204214),	-- Drakefire Amulet (QI!)
 				},
@@ -765,7 +765,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72452, {	-- Go with Honor, Friend
 				["sourceQuests"] = { 72451 },	-- Will to Survive
 				["provider"] = { "n", 198983 },	-- Master Mathias Shaw
-				["coord"] = { 36.7, 51.1, NORTHSHIRE_VALLEY },
+				["coord"] = { 36.7, 51.1, MAP.NORTHSHIRE_VALLEY },
 				["groups"] = {
 					title(493),	-- Lionguard <Name>
 					-- these all share the same questID, which is also the parent questID
@@ -831,7 +831,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["groups"] = {
 			q(51484, {	-- Heritage of the Mag'har
 				["provider"] = { "n", 143845 },	-- Overlord Geya'rah
-				["coord"] = { 70.6, 44.6, ORGRIMMAR },
+				["coord"] = { 70.6, 44.6, MAP.ORGRIMMAR },
 				["lvl"] = 50,
 				["sourceAchievements"] = { 12510, 12509 },	-- Ready for War [A/H]
 				["lockCriteria"] = { 1, "achID", 13077 },	-- Heritage of the Mag'har
@@ -892,7 +892,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["groups"] = {
 			q(75890, {	-- The Clarion Call
 				["provider"] = { "o", 405958 },	-- Sealed Kaldorei Scroll
-				["coord"] = { 52.4, 14.2, STORMWIND_CITY },
+				["coord"] = { 52.4, 14.2, MAP.STORMWIND_CITY },
 				["groups"] = {
 					i(206942),	-- Sealed Kaldorei Scroll
 				},
@@ -900,17 +900,17 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(75891, {	-- Ancient Curses
 				["sourceQuests"] = { 75890 },	-- The Clarion Call
 				["provider"] = { "n", 207353 },	-- Arko'narin Starshade
-				["coord"] = { 52.3, 4.7, STORMWIND_CITY },
+				["coord"] = { 52.3, 4.7, MAP.STORMWIND_CITY },
 			}),
 			q(76194, {	-- A Grim Portent
 				["sourceQuests"] = { 75891 },	-- Ancient Curses
 				["provider"] = { "n", 202702 },	-- Maiev Stormsong
-				["coord"] = { 54.0, 79.4, FELWOOD },
+				["coord"] = { 54.0, 79.4, MAP.FELWOOD },
 			}),
 			q(76195, {	-- Countering Corruption
 				["sourceQuests"] = { 76194 },	-- A Grim Portent
 				["provider"] = { "n", 202700 },	-- Lysander Starshade
-				["coord"] = { 54.0, 79.4, FELWOOD },
+				["coord"] = { 54.0, 79.4, MAP.FELWOOD },
 				["groups"] = {
 					i(207004),	-- Incanter's Tome (QI!)
 				},
@@ -918,7 +918,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(76196, {	-- Mercy or Misery
 				["sourceQuests"] = { 76194 },	-- A Grim Portent
 				["provider"] = { "n", 202701 },	-- Arko'narin Starshade
-				["coord"] = { 54.0, 79.4, FELWOOD },
+				["coord"] = { 54.0, 79.4, MAP.FELWOOD },
 			}),
 			q(76203, {	-- Stepping into the Shadows
 				["sourceQuests"] = {
@@ -926,22 +926,22 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					76196,	-- Mercy or Misery
 				},
 				["provider"] = { "n", 202702 },	-- Maiev Stormsong
-				["coord"] = { 36.1, 57.9, FELWOOD },
+				["coord"] = { 36.1, 57.9, MAP.FELWOOD },
 			}),
 			q(76197, {	-- A Glimpse of Terror
 				["sourceQuests"] = { 76203 },	-- Stepping into the Shadows
 				["provider"] = { "n", 202702 },	-- Maiev Stormsong
-				["coord"] = { 38.0, 53.7, FELWOOD },
+				["coord"] = { 38.0, 53.7, MAP.FELWOOD },
 			}),
 			q(76205, {	-- Balancing the Scales
 				["sourceQuests"] = { 76197 },	-- A Glimpse of Terror
 				["provider"] = { "n", 202702 },	-- Maiev Stormsong
-				["coord"] = { 36.7, 51.6, FELWOOD },
+				["coord"] = { 36.7, 51.6, MAP.FELWOOD },
 			}),
 			q(76206, {	-- Heart of the Issue
 				["sourceQuests"] = { 76197 },	-- A Glimpse of Terror
 				["provider"] = { "n", 202700 },	-- Lysander Starshade
-				["coord"] = { 36.7, 51.6, FELWOOD },
+				["coord"] = { 36.7, 51.6, MAP.FELWOOD },
 			}),
 			q(76207, {	-- Wardens' Wrath
 				["sourceQuests"] = {
@@ -949,17 +949,17 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					76206,	-- Heart of the Issue
 				},
 				["provider"] = { "n", 202701 },	-- Arko'narin Starshade
-				["coord"] = { 37.9, 46.2, FELWOOD },
+				["coord"] = { 37.9, 46.2, MAP.FELWOOD },
 			}),
 			q(76212, {	-- A Mark For A Protector
 				["sourceQuests"] = { 76207 },	-- Wardens' Wrath
 				["provider"] = { "n", 208151 },	-- Maiev Stormsong
-				["coord"] = { 35.9, 58.8, FELWOOD },
+				["coord"] = { 35.9, 58.8, MAP.FELWOOD },
 			}),
 			q(76213, {	-- Honor of the Goddess
 				["sourceQuests"] = { 76212 },	-- A Mark For A Protector
 				["provider"] = { "n", 209140 },	-- Maiev Stormsong
-				["coord"] = { 52.7, 4.2, STORMWIND_CITY },
+				["coord"] = { 52.7, 4.2, MAP.STORMWIND_CITY },
 				["groups"] = {
 					title(511),	-- Ama'shan <Name>
 					iensemble(208879),	-- Ensemble: Kaldorei Protector's Adornment
@@ -1003,13 +1003,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}, {
 			q(73703, {	-- A Summon to Orgrimmar
 				["description"] = "Auto-accepted in Orgrimmar once criteria is met.",
-				["maps"] = { ORGRIMMAR },
+				["maps"] = { MAP.ORGRIMMAR },
 				["isBreadcrumb"] = true,
 			}),
 			q(72462, {	-- A People in Need of Healing
 				["sourceQuests"] = { 73703 },	-- A Summon to Orgrimmar
 				["provider"] = { "n", 3144 },	-- Eitrigg
-				["coord"] = { 49.2, 72.3, ORGRIMMAR },
+				["coord"] = { 49.2, 72.3, MAP.ORGRIMMAR },
 				["maps"] = { 2162 },	-- Frostwolf Village
 				["groups"] = {
 					i(201957),	-- Thrall's Hearthstone
@@ -1018,7 +1018,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72464, {	-- The Kosh'harg
 				["sourceQuests"] = { 72462 },	-- A People in Need of Healing
 				["provider"] = { "n", 200244 },	-- Aggra
-				["coord"] = { 54.4, 78.6, ORGRIMMAR },
+				["coord"] = { 54.4, 78.6, MAP.ORGRIMMAR },
 				["groups"] = {
 					i(203713),	-- Mysterious Flower
 				},
@@ -1026,22 +1026,22 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72465, {	-- The Blessing of the Land
 				["sourceQuests"] = { 72464 },	-- The Kosh'harg
 				["provider"] = { "n", 199148 },	-- Farseer Aggralan
-				["coord"] = { 52.2, 43.0, DUROTAR },
+				["coord"] = { 52.2, 43.0, MAP.DUROTAR },
 			}),
 			q(72467, {	-- The Blessing of the Clan
 				["sourceQuests"] = { 72464 },	-- The Kosh'harg
 				["provider"] = { "n", 199148 },	-- Farseer Aggralan
-				["coord"] = { 52.2, 43.0, DUROTAR },
+				["coord"] = { 52.2, 43.0, MAP.DUROTAR },
 			}),
 			q(72476, {	-- The Blessing of the Ancestors
 				["sourceQuests"] = { 72464 },	-- The Kosh'harg
 				["provider"] = { "n", 199148 },	-- Farseer Aggralan
-				["coord"] = { 52.2, 43.0, DUROTAR },
+				["coord"] = { 52.2, 43.0, MAP.DUROTAR },
 			}),
 			q(72466, {	-- The Spirit of Thunder Ridge
 				["sourceQuests"] = { 72465 },	-- The Blessing of the Land
 				["provider"] = { "n", 199165 },	-- The Spirit of Thunder Ridge
-				["coord"] = { 40.6, 26.8, DUROTAR },
+				["coord"] = { 40.6, 26.8, MAP.DUROTAR },
 			}),
 			q(74581, {	-- The Long Knives
 				["sourceQuests"] = { 72467 },	-- The Blessing of the Clan
@@ -1053,7 +1053,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					199156,	-- Gorfax Angerfang
 					199151,	-- Thega Graveblade
 				},
-				["coord"] = { 52.3, 42.9, DUROTAR },
+				["coord"] = { 52.3, 42.9, MAP.DUROTAR },
 			}),
 			q(72474, {	-- Tracking a Killer
 				["sourceQuests"] = { 74581 },	-- The Long Knives
@@ -1081,12 +1081,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(74374, {	-- An Important Heirloom
 				["sourceQuests"] = { 72476 },	-- The Blessing of the Ancestors
 				["provider"] = { "n", 199383 },	-- Cook Torka
-				["coord"] = { 50.7, 42.7, DUROTAR },
+				["coord"] = { 50.7, 42.7, MAP.DUROTAR },
 			}),
 			q(72477, {	-- Orcish Groceries
 				["sourceQuests"] = { 74374 },	-- An Important Heirloom
 				["provider"] = { "n", 199383 },	-- Cook Torka
-				["coord"] = { 50.7, 42.7, DUROTAR },
+				["coord"] = { 50.7, 42.7, MAP.DUROTAR },
 				["groups"] = {
 					-- recipes
 					r(399034, {["u"]=TRAINING}),	-- Curried Coconut Crab (RECIPE!)
@@ -1109,7 +1109,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(74415, {	-- A Worthy Offering
 				["sourceQuests"] = { 72477 },	-- Orcish Groceries
 				["provider"] = { "n", 201361 },	-- Durak
-				["coord"] = { 50.8, 42.6, DUROTAR },
+				["coord"] = { 50.8, 42.6, MAP.DUROTAR },
 				["groups"] = {
 					-- items
 					i(202026),	-- Durotar Coast Crab
@@ -1136,12 +1136,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					74415,	-- A Worthy Offering
 				},
 				["provider"] = { "n", 199148 },	-- Farseer Aggralan
-				["coord"] = { 52.2, 43.0, DUROTAR },
+				["coord"] = { 52.2, 43.0, MAP.DUROTAR },
 			}),
 			q(72479, {	-- Aka'magosh
 				["sourceQuests"] = { 72478 },	-- Honor and Glory
 				["provider"] = { "n", 200437 },	-- Thrall
-				["coord"] = { 52.3, 43.4, DUROTAR },
+				["coord"] = { 52.3, 43.4, MAP.DUROTAR },
 				["groups"] = {
 					i(204170),	-- Clan Banner (TOY!)
 					-- these all share the same questID, which is also the parent questID
@@ -1159,7 +1159,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				q(84442, {	-- Invitation to the Spirit Festival [A]
 					["description"] = "Auto-accepted once criteria is met.",
 					["qg"] = { 126332 },	-- Aysa Cloudsinger
-					["coord"] = { 52.2, 13.7, STORMWIND_CITY },
+					["coord"] = { 52.2, 13.7, MAP.STORMWIND_CITY },
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(84444, {	-- Invitation to the Spirit Festival [H]
@@ -1169,13 +1169,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				q(84451, {	-- The Wanderers [A]
 					["sourceQuest"] = 84442,	-- Invitation to the Spirit Festival [A]
 					["qg"] = 229257,	-- Li Li Stormstout
-					["coord"] = { 68.2, 16.2, STORMWIND_CITY },
+					["coord"] = { 68.2, 16.2, MAP.STORMWIND_CITY },
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(84452, {	-- The Wanderers [H]
 					["sourceQuest"] = 84444,	-- Invitation to the Spirit Festival [H]
 					["qg"] = 229338,	-- Li Li Stormstout
-					["coord"] = { 70.5, 39.0, ORGRIMMAR },
+					["coord"] = { 70.5, 39.0, MAP.ORGRIMMAR },
 					["races"] = { PANDAREN_HORDE },
 				}),
 				q(84456, {	-- To Morning Breeze [A]
@@ -1387,12 +1387,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuest"] = 55779,	-- Stay of Execution (after the Baine Rescue Scenario)
 				-- #endif
 				["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
-				["coord"] = { 39.1, 79.0, ORGRIMMAR },
+				["coord"] = { 39.1, 79.0, MAP.ORGRIMMAR },
 			}),
 			q(54760, {	-- The Spiritwalkers
 				["sourceQuest"] = 54759,	-- When Spirits Whisper
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-				["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+				["coord"] = { 60.3, 51.7, MAP.THUNDER_BLUFF },
 			}),
 			q(54761, {	-- Spirit Guide
 				["sourceQuest"] = 54760,	-- The Spiritwalkers
@@ -1407,7 +1407,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(54763, {	-- Crossing Over
 				["sourceQuest"] = 54762,	-- A Small Retreat
 				["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
-				["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
+				["coord"] = { 49.2, 60.8, MAP.STONETALON_MOUNTAINS },
 				["groups"] = {
 					i(166899),	-- Spiritwalker's Hallowed Vessel (QI!)
 				},
@@ -1415,7 +1415,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(54764, {	-- Storm in Bloodhoof
 				["sourceQuest"] = 54763,	-- Crossing Over
 				["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
-				["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
+				["coord"] = { 49.2, 60.8, MAP.STONETALON_MOUNTAINS },
 			}),
 			q(54766, {	-- Answer the Call
 				["sourceQuest"] = 54764,	-- Storm in Bloodhoof
@@ -1423,13 +1423,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					36648,	-- Baine Bloodhoof <High Chieftain>
 					149528,	-- Baine Bloodhoof <High Chieftain>
 				},
-				["coord"] = { 58.3, 51.8, THUNDER_BLUFF },
+				["coord"] = { 58.3, 51.8, MAP.THUNDER_BLUFF },
 				["groups"] = { i(167030) },	-- Spiritwalker's Hallowed Vessel (QI!)
 			}),
 			q(54765, {	-- Thank Your Guide
 				["sourceQuest"] = 54766,	-- Answer the Call
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-				["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+				["coord"] = { 60.3, 51.7, MAP.THUNDER_BLUFF },
 				["groups"] = {
 					i(168298),	-- Ancestral Chieftain's Armor
 					i(168297),	-- Ancestral Chieftain's Grasps
@@ -1590,28 +1590,28 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72858, {	-- Acid Beats Paper
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199768 },	-- Dark Ranger Velonara
-				["coord"] = { 45.4, 42.0, SILVERPINE_FOREST },
+				["coord"] = { 45.4, 42.0, MAP.SILVERPINE_FOREST },
 				["groups"] = { i(202182) },	-- Acid Rifle (QI!)
 			}),
 			q(72857, {	-- Boom Weed
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
-				["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
+				["coord"] = { 45.5, 41.9, MAP.SILVERPINE_FOREST },
 				["groups"] = {
 					o(385373, {	-- Boom Weed
 						["coords"] = {
-							{ 45.4, 48.4, SILVERPINE_FOREST },
-							{ 45.4, 49.6, SILVERPINE_FOREST },
-							{ 45.4, 51.4, SILVERPINE_FOREST },
-							{ 45.5, 49.0, SILVERPINE_FOREST },
-							{ 45.8, 47.7, SILVERPINE_FOREST },
-							{ 45.9, 50.1, SILVERPINE_FOREST },
-							{ 46.6, 50.9, SILVERPINE_FOREST },
-							{ 47.1, 48.7, SILVERPINE_FOREST },
-							{ 47.3, 47.8, SILVERPINE_FOREST },
-							{ 47.3, 49.8, SILVERPINE_FOREST },
-							{ 47.8, 49.0, SILVERPINE_FOREST },
-							{ 48.0, 50.6, SILVERPINE_FOREST },
+							{ 45.4, 48.4, MAP.SILVERPINE_FOREST },
+							{ 45.4, 49.6, MAP.SILVERPINE_FOREST },
+							{ 45.4, 51.4, MAP.SILVERPINE_FOREST },
+							{ 45.5, 49.0, MAP.SILVERPINE_FOREST },
+							{ 45.8, 47.7, MAP.SILVERPINE_FOREST },
+							{ 45.9, 50.1, MAP.SILVERPINE_FOREST },
+							{ 46.6, 50.9, MAP.SILVERPINE_FOREST },
+							{ 47.1, 48.7, MAP.SILVERPINE_FOREST },
+							{ 47.3, 47.8, MAP.SILVERPINE_FOREST },
+							{ 47.3, 49.8, MAP.SILVERPINE_FOREST },
+							{ 47.8, 49.0, MAP.SILVERPINE_FOREST },
+							{ 48.0, 50.6, MAP.SILVERPINE_FOREST },
 						},
 						["groups"] = { i(202186) },	-- Boom Weed (QI!)
 					}),
@@ -1620,7 +1620,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72856, {	-- Nothing Like the Classic
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
-				["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
+				["coord"] = { 45.5, 41.9, MAP.SILVERPINE_FOREST },
 				["groups"] ={
 					i(202187),	-- Plagued Flesh (QI!)
 				},
@@ -1632,7 +1632,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72856,	-- Nothing Like the Classic
 				},
 				["provider"] = { "n", 199793 },	-- Calia Menethil
-				["coord"] = { 45.6, 41.6, SILVERPINE_FOREST },
+				["coord"] = { 45.6, 41.6, MAP.SILVERPINE_FOREST },
 				["groups"] = {
 					i(206929),	-- Hawlsey's Armor (QI!)
 				},
@@ -1644,7 +1644,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72856,	-- Nothing Like the Classic
 				},
 				["provider"] = { "n", 199792 },	-- Lilian Voss
-				["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
+				["coord"] = { 45.4, 41.6, MAP.SILVERPINE_FOREST },
 			}),
 			q(72861, {	-- The Scarlet Spy
 				["sourceQuests"] = {
@@ -1652,7 +1652,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72860,	-- Fear is Our Weapon
 				},
 				["provider"] = { "n", 199792 },	-- Lilian Voss
-				["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
+				["coord"] = { 45.4, 41.6, MAP.SILVERPINE_FOREST },
 				["groups"] = {
 					i(204799),	-- Scarlet Disguise (QI!)
 				},
@@ -1660,27 +1660,27 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72862, {	-- Among Us
 				["sourceQuests"] = { 72861 },	-- The Scarlet Spy
 				["provider"] = { "n", 199806 },	-- Quartermaster Newlem
-				["coord"] = { 64.0, 33.5, SILVERPINE_FOREST },
+				["coord"] = { 64.0, 33.5, MAP.SILVERPINE_FOREST },
 			}),
 			q(72863, {	-- The Flight of the Banshee
 				["sourceQuests"] = { 72862 },	-- Among Us
 				["provider"] = { "n", 199879 },	-- Dark Ranger Velonara
-				["coord"] = { 70.4, 18.2, SILVERPINE_FOREST },
+				["coord"] = { 70.4, 18.2, MAP.SILVERPINE_FOREST },
 			}),
 			q(72864, {	-- Death to the Living
 				["sourceQuests"] = { 72863 },	-- The Flight of the Banshee
 				["provider"] = { "n", 199885 },	-- Deathstalker Commander Belmont
-				["coord"] = { 70.2, 18.1, SILVERPINE_FOREST },
+				["coord"] = { 70.2, 18.1, MAP.SILVERPINE_FOREST },
 			}),
 			q(72865, {	-- This is the Hour of the Forsaken
 				["sourceQuests"] = { 72864 },	-- Death to the Living
 				["provider"] = { "n", 199893 },	-- Lilian Voss
-				["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
+				["coord"] = { 66.2, 31.0, MAP.SILVERPINE_FOREST },
 			}),
 			q(72866, {	-- Return to Lordaeron
 				["sourceQuests"] = { 72865 },	-- This is the Hour of the Forsaken
 				["provider"] = { "n", 199893 },	-- Lilian Voss
-				["coord"] = { 65.5, 23.8, SILVERPINE_FOREST },
+				["coord"] = { 65.5, 23.8, MAP.SILVERPINE_FOREST },
 			}),
 			q(72867, {	-- I Am Forsaken
 				["sourceQuests"] = { 72866 },	-- Return to Lordaeron
@@ -1761,24 +1761,24 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					126332,	-- Aysa Cloudsinger
 				},
 				["coords"] = {
-					{ 52.1, 13.4, STORMWIND_CITY },
-					{ 54.6, 18.4, STORMWIND_CITY },
+					{ 52.1, 13.4, MAP.STORMWIND_CITY },
+					{ 54.6, 18.4, MAP.STORMWIND_CITY },
 				},
 			}),
 			q(54977, {	-- Into Duskwood
 				["sourceQuests"] = { 54976 },	-- The Shadow of Gilneas
 				["provider"] = { "n", 151784 },	-- Mia Greymane
-				["coord"] = { 82.3, 27.8, STORMWIND_CITY },
+				["coord"] = { 82.3, 27.8, MAP.STORMWIND_CITY },
 			}),
 			q(54980, {	-- Bane of the Nightbane
 				["sourceQuest"] = 54977,	-- Into Duskwood
 				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-				["coord"] = { 18.1, 57.2, DUSKWOOD },
+				["coord"] = { 18.1, 57.2, MAP.DUSKWOOD },
 			}),
 			q(54981, {	-- Cry to the Moon
 				["sourceQuest"] = 54980,	-- Bane of the Nightbane
 				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-				["coord"] = { 18.1, 57.2, DUSKWOOD },
+				["coord"] = { 18.1, 57.2, MAP.DUSKWOOD },
 				["groups"] = {
 					i(167032),	-- Elune's Grace (QI!)
 				},
@@ -1786,7 +1786,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(54982, {	-- The Spirit of the Hunter
 				["sourceQuest"] = 54980,	-- Bane of the Nightbane
 				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-				["coord"] = { 18.1, 57.2, DUSKWOOD },
+				["coord"] = { 18.1, 57.2, MAP.DUSKWOOD },
 				["groups"] = {
 					i(167031),	-- Bloodstained Fangs (QI!)
 				},
@@ -1797,19 +1797,19 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					54982,	-- The Spirit of the Hunter
 				},
 				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-				["coord"] = { 46.4, 36.9, DUSKWOOD },
+				["coord"] = { 46.4, 36.9, MAP.DUSKWOOD },
 			}),
 			q(54984, {	-- Let Sleeping Wolves Lie
 				["description"] = "If you can't see Goldrinn, try relog",
 				["sourceQuest"] = 54983,	-- Waking a Dreamer
 				["provider"] = { "n", 150106 },	-- Goldrinn
-				["coord"] = { 46.6, 36.6, DUSKWOOD },
+				["coord"] = { 46.6, 36.6, MAP.DUSKWOOD },
 				["maps"] = { 1577 },	-- Gilneas City (Scenario)
 			}),
 			q(54990, {	-- The New Guard
 				["sourceQuest"] = 54984,	-- Let Sleeping Wolves Lie
 				["provider"] = { "n", 150115 },	-- Princess Tess Greymane
-				["coord"] = { 46.3, 37.0, DUSKWOOD },
+				["coord"] = { 46.3, 37.0, MAP.DUSKWOOD },
 				["groups"] = {
 					i(173999),	-- Greyguard Buckle
 					i(174000),	-- Greyguard Ceremonial Shoulderguards

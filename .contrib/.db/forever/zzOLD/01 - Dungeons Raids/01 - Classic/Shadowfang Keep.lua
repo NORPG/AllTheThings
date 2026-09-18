@@ -10,9 +10,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["zone-text-areaID"] = 209,	-- Shadowfang Keep
 		["coords"] = {
 			-- #if AFTER CATA
-			{ 44.79, 67.82, SILVERPINE_FOREST },
+			{ 44.79, 67.82, MAP.SILVERPINE_FOREST },
 			-- #else
-			{ 36.6, 65.6, SILVERPINE_FOREST },
+			{ 36.6, 65.6, MAP.SILVERPINE_FOREST },
 			-- #endif
 		},
 		["maps"] = {
@@ -57,9 +57,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 79.5, 69.9, STORMWIND_CITY },
+						{ 79.5, 69.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.4, 84.8, STORMWIND_CITY },
+						{ 39.4, 84.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27363, {	-- A Budding Young Surgeon [Gnome]
 					["sourceQuest"] = 27274,	-- The Chief Surgeon [CATA] / Patrice Lancaster Sends Word [Gnome] [SL+]
 					["qg"] = 45306,	-- Chief Surgeon Gashweld
-					["coord"] = { 63.0, 34.2, STORMWIND_CITY },
+					["coord"] = { 63.0, 34.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GNOME },
@@ -111,9 +111,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 80.3, 70.4, STORMWIND_CITY },
+						{ 80.3, 70.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 79.4, 69.0, STORMWIND_CITY },
+						{ 79.4, 69.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -145,9 +145,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 73.6, 45.6, ORGRIMMAR },
+						{ 73.6, 45.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 73.8, 45.6, ORGRIMMAR },
+						{ 73.8, 45.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -176,10 +176,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						52319,	-- Mala Skywatcher
 					},
 					["coords"] = {
-						{ 44.8, 51.6, ORGRIMMAR },	-- Shalla Whiteleaf
-						{ 35.0, 67.6, ORGRIMMAR },	-- Sesebi
-						{ 77.0, 27.4, THUNDER_BLUFF },	-- Sheal Runetotem
-						{ 55.0, 50.4, UNDERCITY },	-- Mala Skywatcher
+						{ 44.8, 51.6, MAP.ORGRIMMAR },	-- Shalla Whiteleaf
+						{ 35.0, 67.6, MAP.ORGRIMMAR },	-- Sesebi
+						{ 77.0, 27.4, MAP.THUNDER_BLUFF },	-- Sheal Runetotem
+						{ 55.0, 50.4, MAP.UNDERCITY },	-- Mala Skywatcher
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { DRUID },
@@ -198,9 +198,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 73.8, 43.8, ORGRIMMAR },
+						{ 73.8, 43.8, MAP.ORGRIMMAR },
 						-- #else
-						{ 63.8, 32.8, ORGRIMMAR },
+						{ 63.8, 32.8, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -223,7 +223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER SL
 				q(27272, {	-- A Message From Evelyn Thorn [SL+] / Demisette Sends Word [CATA]
 					["qg"] = 5173,	-- Alexander Calder
-					["coord"] = { 50.2, 6.8, IRONFORGE },
+					["coord"] = { 50.2, 6.8, MAP.IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -243,10 +243,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 78.6, 70.6, STORMWIND_CITY },	-- Veruca Darkstream <Rogue Trainer>
+						{ 78.6, 70.6, MAP.STORMWIND_CITY },	-- Veruca Darkstream <Rogue Trainer>
 						-- #else
-						{ 79.6, 61.2, STORMWIND_CITY },	-- Arthur Huwe
-						{ 79.6, 60.8, STORMWIND_CITY },	-- Lord Tony Romano
+						{ 79.6, 61.2, MAP.STORMWIND_CITY },	-- Arthur Huwe
+						{ 79.6, 60.8, MAP.STORMWIND_CITY },	-- Lord Tony Romano
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -277,9 +277,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 72.6, 46.6, ORGRIMMAR },
+						{ 72.6, 46.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 37.8, 87.4, ORGRIMMAR },
+						{ 37.8, 87.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -310,9 +310,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 72.6, 46.6, ORGRIMMAR },
+						{ 72.6, 46.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 45.4, 53.4, ORGRIMMAR },
+						{ 45.4, 53.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -336,7 +336,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27436, {	-- A Seer's Staff [Troll] [SL+] / The Shadow-Walker's Task [CATA]
 					["sourceQuest"] = 27332,	-- Seek the Shadow-Walker [CATA] / Journey to Orgrimmar [Undead] [SL+]
 					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
-					["coord"] = { 72.6, 46.6, ORGRIMMAR },
+					["coord"] = { 72.6, 46.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -361,11 +361,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						17120,	-- Behomat
 					},
 					["coords"] = {
-						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
+						{ 56.4, 46.2, MAP.DARNASSUS },	-- Arias'ta Bladesinger
 						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
 					},
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -380,9 +380,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["coords"] = {
-						{ 45.2, 53.6, ORGRIMMAR },
+						{ 45.2, 53.6, MAP.ORGRIMMAR },
 						-- #if AFTER SL
-						{ 73.6, 46.8, ORGRIMMAR },
+						{ 73.6, 46.8, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -415,9 +415,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 79.2, 71.2, STORMWIND_CITY },
+						{ 79.2, 71.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 79.0, 71.0, STORMWIND_CITY },
+						{ 79.0, 71.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -443,8 +443,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						23127,	-- Farseer Javad
 					},
 					["coords"] = {
-						{ 43.8, 78.8, DARNASSUS },
-						{ 55.0, 30.2, IRONFORGE },
+						{ 43.8, 78.8, MAP.DARNASSUS },
+						{ 55.0, 30.2, MAP.IRONFORGE },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -461,9 +461,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 24.4, 54.4, AZUREMYST_ISLE },	-- Shalannius
-						{ 40.4, 27.6, DARNASSUS },	-- Mathrengyl Bearwalker
-						{ 27.6, 50.0, STORMWIND_CITY },	-- Sheldras Moontree
-						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
+						{ 40.4, 27.6, MAP.DARNASSUS },	-- Mathrengyl Bearwalker
+						{ 27.6, 50.0, MAP.STORMWIND_CITY },	-- Sheldras Moontree
+						{ 57.6, 24.8, MAP.STORMWIND_CITY },	-- Celestine of the Harvest
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { DRUID },
@@ -488,7 +488,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1014, {	-- Arugal Must Die
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
+					["coord"] = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
@@ -512,9 +512,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 75.4, 47.4, ORGRIMMAR },
+						{ 75.4, 47.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 32.9, 65.8, ORGRIMMAR },
+						{ 32.9, 65.8, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -545,9 +545,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 78.2, 70.9, STORMWIND_CITY },
+						{ 78.2, 70.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 64.6, 33.0, STORMWIND_CITY },
+						{ 64.6, 33.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -576,8 +576,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						17122,	-- Vord
 					},
 					["coords"] = {
-						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
-						{ 70.9, 89.8, IRONFORGE },	-- Daera Brightspear
+						{ 43.4, 26.0, MAP.DARNASSUS },	-- Jeen'ra Nightrunner
+						{ 70.9, 89.8, MAP.IRONFORGE },	-- Daera Brightspear
 						{ 47.2, 88.4, THE_EXODAR },	-- Vord
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -597,9 +597,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -610,7 +610,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(1098, {	-- Deathstalkers in Shadowfang
 					["qg"] = 1952,	-- High Executor Hadrec
-					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["coord"] = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
@@ -623,7 +623,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE SL
 				q(27272, {	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
 					["qg"] = 5173,	-- Alexander Calder
-					["coord"] = { 50.2, 6.8, IRONFORGE },
+					["coord"] = { 50.2, 6.8, MAP.IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -645,11 +645,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 73.6, 43.4, ORGRIMMAR },
+						{ 73.6, 43.4, MAP.ORGRIMMAR },
 						-- #elseif AFTER MOP
-						{ 39.0, 47.6, ORGRIMMAR },
+						{ 39.0, 47.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 39.0, 47.4, ORGRIMMAR },
+						{ 39.0, 47.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -680,8 +680,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
-						{ 43.6, 78.4, DARNASSUS },	-- Rukua
-						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
+						{ 43.6, 78.4, MAP.DARNASSUS },	-- Rukua
+						{ 23.6, 5.6, MAP.IRONFORGE },	-- Valgar Highforge
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -693,7 +693,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27362, {	-- Favored of Elune
 					["sourceQuest"] = 27269,	-- The Temple of the Moon
 					["qg"] = 7999,	-- Tyrande Whisperwind
-					["coord"] = { 43.0, 77.8, DARNASSUS },
+					["coord"] = { 43.0, 77.8, MAP.DARNASSUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -722,9 +722,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 79.0, 69.8, STORMWIND_CITY },
+						{ 79.0, 69.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.6, 44.8, STORMWIND_CITY },
+						{ 49.6, 44.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -763,8 +763,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						20406,	-- Champion Cyssa Dawnrose
 					},
 					["coords"] = {
-						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
-						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
+						{ 63.2, 79.8, MAP.THUNDER_BLUFF },	-- Aponi Brightmane
+						{ 57.8, 90.2, MAP.UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -777,7 +777,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27437, {	-- Forsaken Faith [SL+] / The Dark Cleric's Bidding [CATA]
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
 					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
-					["coord"] = { 72.6, 46.6, ORGRIMMAR },
+					["coord"] = { 72.6, 46.6, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -825,7 +825,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "o", 410369 },	-- Dead Drop
 						{ "i", 210186 },	-- Breaching Charge
 					},
-					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["coord"] = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
@@ -848,7 +848,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
 					["sourceQuest"] = 78261,	-- The Horn of Xelthos (1/2)
 					["provider"] = { "o", 410369 },	-- Dead Drop
-					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["coord"] = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
@@ -871,8 +871,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion <Warrior Trainer>
-						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
-						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
+						{ 57.2, 89.0, MAP.THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
+						{ 47.2, 15.2, MAP.UNDERCITY },	-- Christoph Walker <Warrior Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -890,8 +890,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion <Warrior Trainer>
-						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
-						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
+						{ 57.2, 89.0, MAP.THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
+						{ 47.2, 15.2, MAP.UNDERCITY },	-- Christoph Walker <Warrior Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -907,8 +907,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine <Hunter Trainer>
-						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
-						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
+						{ 57.4, 89.2, MAP.THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
+						{ 49.6, 29.0, MAP.UNDERCITY },	-- Apolos <Hunter Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
@@ -931,11 +931,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 73.6, 43.4, ORGRIMMAR },
+						{ 73.6, 43.4, MAP.ORGRIMMAR },
 						-- #elseif AFTER MOP
-						{ 39.0, 47.6, ORGRIMMAR },
+						{ 39.0, 47.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 39.0, 47.4, ORGRIMMAR },
+						{ 39.0, 47.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -966,9 +966,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -986,9 +986,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -1005,9 +1005,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -1024,9 +1024,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -1043,9 +1043,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -1060,8 +1060,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						16648,	-- Zanien (Silvermoon <Warlock Trainer>
 					},
 					["coords"] = {
-						{ 25.2, 14.4, THUNDER_BLUFF },	-- Delano Morisett <Warlock Trainer>
-						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper <Warlock Trainer>
+						{ 25.2, 14.4, MAP.THUNDER_BLUFF },	-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, MAP.UNDERCITY },	-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1078,8 +1078,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						16648,	-- Zanien (Silvermoon <Warlock Trainer>
 					},
 					["coords"] = {
-						{ 25.2, 14.4, THUNDER_BLUFF },	-- Delano Morisett <Warlock Trainer>
-						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper <Warlock Trainer>
+						{ 25.2, 14.4, MAP.THUNDER_BLUFF },	-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, MAP.UNDERCITY },	-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1098,8 +1098,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
-						{ 43.6, 78.4, DARNASSUS },	-- Rukua
-						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
+						{ 43.6, 78.4, MAP.DARNASSUS },	-- Rukua
+						{ 23.6, 5.6, MAP.IRONFORGE },	-- Valgar Highforge
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1114,8 +1114,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						5165,	-- Hulfdan Blackbeard
 					},
 					["coords"] = {
-						{ 40.0, 39.6, DARNASSUS },	-- Erion Shadewhisper
-						{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
+						{ 40.0, 39.6, MAP.DARNASSUS },	-- Erion Shadewhisper
+						{ 51.6, 14.6, MAP.IRONFORGE },	-- Hulfdan Blackbeard
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -1132,8 +1132,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
-						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
-						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
+						{ 43.4, 79.2, MAP.DARNASSUS },	-- Priestess Alathea
+						{ 25.0, 8.2, MAP.IRONFORGE },	-- High Priest Rohan
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1153,9 +1153,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 80.0, 69.6, STORMWIND_CITY },
+						{ 80.0, 69.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.2, 87.6, STORMWIND_CITY },
+						{ 49.2, 87.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1186,9 +1186,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 74.6, 43.5, ORGRIMMAR },	-- Feenix Arcshine
+						{ 74.6, 43.5, MAP.ORGRIMMAR },	-- Feenix Arcshine
 						-- #else
-						{ 48.4, 62.6, ORGRIMMAR },	-- Ureda
+						{ 48.4, 62.6, MAP.ORGRIMMAR },	-- Ureda
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1215,8 +1215,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						20406,	-- Champion Cyssa Dawnrose
 					},
 					["coords"] = {
-						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
-						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
+						{ 63.2, 79.8, MAP.THUNDER_BLUFF },	-- Aponi Brightmane
+						{ 57.8, 90.2, MAP.UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1246,8 +1246,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
-						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
-						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
+						{ 43.4, 79.2, MAP.DARNASSUS },	-- Priestess Alathea
+						{ 25.0, 8.2, MAP.IRONFORGE },	-- High Priest Rohan
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1263,8 +1263,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
-						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
-						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
+						{ 43.4, 79.2, MAP.DARNASSUS },	-- Priestess Alathea
+						{ 25.0, 8.2, MAP.IRONFORGE },	-- High Priest Rohan
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -1298,9 +1298,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -1317,8 +1317,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 92.0, 37.2, SILVERMOON_CITY },	-- Champion Bachi
-						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
-						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
+						{ 63.2, 79.8, MAP.THUNDER_BLUFF },	-- Aponi Brightmane
+						{ 57.8, 90.2, MAP.UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1336,9 +1336,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -1369,9 +1369,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 72.6, 46.6, ORGRIMMAR },
+						{ 72.6, 46.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 49.0, 71.0, ORGRIMMAR },
+						{ 49.0, 71.0, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1422,8 +1422,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine <Hunter Trainer>
-						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
-						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
+						{ 57.4, 89.2, MAP.THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
+						{ 49.6, 29.0, MAP.UNDERCITY },	-- Apolos <Hunter Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
@@ -1447,11 +1447,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 73.6, 43.4, ORGRIMMAR },
+						{ 73.6, 43.4, MAP.ORGRIMMAR },
 						-- #elseif AFTER MOP
-						{ 39.0, 47.6, ORGRIMMAR },
+						{ 39.0, 47.6, MAP.ORGRIMMAR },
 						-- #else
-						{ 39.0, 47.4, ORGRIMMAR },
+						{ 39.0, 47.4, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1485,9 +1485,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 73.0, 47.2, ORGRIMMAR },
+						{ 73.0, 47.2, MAP.ORGRIMMAR },
 						-- #else
-						{ 49.2, 71.2, ORGRIMMAR },
+						{ 49.2, 71.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1511,7 +1511,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1013, {	-- The Book of Ur
 					["qg"] = 2934,	-- Keeper Bel'dugur
-					["coord"] = { 54.0, 54.6, UNDERCITY },
+					["coord"] = { 54.0, 54.6, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
@@ -1534,7 +1534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE SL
 				q(27274, {	-- The Chief Surgeon [CATA] / Patrice Lancaster Sends Word [Gnome] [SL+]
 					["qg"] = 11406,	-- High Priest Rohan
-					["coord"] = { 25.0, 8.2, IRONFORGE },
+					["coord"] = { 25.0, 8.2, MAP.IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GNOME },
@@ -1545,7 +1545,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27356, {	-- The Circle's Future [Alliance]
 					["sourceQuest"] = 27273,	-- An Invitation from Moonglade
 					["qg"] = 12042,	-- Loganaar
-					["coord"] = { 52.4, 40.4, MOONGLADE },
+					["coord"] = { 52.4, 40.4, MAP.MOONGLADE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -1567,7 +1567,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27404, {	-- The Circle's Future [Horde]
 					["sourceQuest"] = 27283,	-- A Journey to Moonglade
 					["qg"] = 12042,	-- Loganaar
-					["coord"] = { 52.4, 40.4, MOONGLADE },
+					["coord"] = { 52.4, 40.4, MAP.MOONGLADE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -1590,7 +1590,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27437, {	-- The Dark Cleric's Bidding [CATA] / Forsaken Faith [SL+]
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
 					["qg"] = 45339,	-- Dark Cleric Cecille
-					["coord"] = { 48.2, 72.8, ORGRIMMAR },
+					["coord"] = { 48.2, 72.8, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -1617,8 +1617,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 71.8, 56.0, SILVERMOON_CITY },
-						{ 22.2, 19.0, THUNDER_BLUFF },
-						{ 22.0, 18.8, THUNDER_BLUFF },
+						{ 22.2, 19.0, MAP.THUNDER_BLUFF },
+						{ 22.0, 18.8, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -1635,8 +1635,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 71.8, 56.0, SILVERMOON_CITY },
-						{ 22.2, 19.0, THUNDER_BLUFF },
-						{ 22.0, 18.8, THUNDER_BLUFF },
+						{ 22.2, 19.0, MAP.THUNDER_BLUFF },
+						{ 22.0, 18.8, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -1657,9 +1657,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 79.2, 69.6, STORMWIND_CITY },
+						{ 79.2, 69.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 52.6, 45.0, STORMWIND_CITY },
+						{ 52.6, 45.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1683,7 +1683,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1740, {	-- The Orb of Soran'ruk
 					["qg"] = 6247,	-- Doan Karhan
-					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["coord"] = { 49.2, 57.2, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKFATHOM_DEEPS },
 					["classes"] = { WARLOCK },
@@ -1716,8 +1716,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 71.8, 56.0, SILVERMOON_CITY },
-						{ 22.2, 19.0, THUNDER_BLUFF },
-						{ 22.0, 18.8, THUNDER_BLUFF },
+						{ 22.2, 19.0, MAP.THUNDER_BLUFF },
+						{ 22.0, 18.8, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -1736,9 +1736,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
-						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
-						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
-						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+						{ 24.8, 22.4, MAP.THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, MAP.THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, MAP.UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -1749,7 +1749,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27436, {	-- The Shadow-Walker's Task [CATA] / A Seer's Staff [Troll] [SL+]
 					["sourceQuest"] = 27332,	-- Seek the Shadow-Walker [CATA] / Journey to Orgrimmar [Undead] [SL+]
 					["qg"] = 45137,	-- Shadow-Walker Zuru
-					["coord"] = { 35.4, 69.2, ORGRIMMAR },
+					["coord"] = { 35.4, 69.2, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1775,7 +1775,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 79.4, 52.0, SILVERMOON_CITY },	-- Zelanis
-						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles
+						{ 84.6, 73.2, MAP.UNDERCITY },	-- Gregory Charles
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -1789,8 +1789,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						11406,	-- High Priest Rohan
 					},
 					["coords"] = {
-						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
-						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
+						{ 43.4, 79.2, MAP.DARNASSUS },	-- Priestess Alathea
+						{ 25.0, 8.2, MAP.IRONFORGE },	-- High Priest Rohan
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1822,11 +1822,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SL
-						{ 74.6, 47.2, ORGRIMMAR },
+						{ 74.6, 47.2, MAP.ORGRIMMAR },
 						-- #elseif AFTER WOD
-						{ 76.8, 37.4, ORGRIMMAR },
+						{ 76.8, 37.4, MAP.ORGRIMMAR },
 						-- #else
-						{ 53.5, 49.6, ORGRIMMAR },
+						{ 53.5, 49.6, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1854,8 +1854,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						17122,	-- Vord
 					},
 					["coords"] = {
-						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
-						{ 70.9, 89.8, IRONFORGE },	-- Daera Brightspear
+						{ 43.4, 26.0, MAP.DARNASSUS },	-- Jeen'ra Nightrunner
+						{ 70.9, 89.8, MAP.IRONFORGE },	-- Daera Brightspear
 						{ 47.2, 88.4, THE_EXODAR },	-- Vord
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1873,8 +1873,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						16648,	-- Zanien Silvermoon <Warlock Trainer>
 					},
 					["coords"] = {
-						{ 25.2, 14.4, THUNDER_BLUFF },	-- Delano Morisett <Warlock Trainer>
-						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper <Warlock Trainer>
+						{ 25.2, 14.4, MAP.THUNDER_BLUFF },	-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, MAP.UNDERCITY },	-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },

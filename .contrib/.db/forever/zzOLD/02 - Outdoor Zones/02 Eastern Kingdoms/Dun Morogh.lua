@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(DUN_MOROGH, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.DUN_MOROGH, {
 		["lore"] = "Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",
 		["maps"] = {
 			29,		-- The Grizzled Den
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pickpocketing({
 						i(2109, {	-- Frostmane Chain Vest
 							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
-							["coord"] = { 32.4, 75.8, DUN_MOROGH },
+							["coord"] = { 32.4, 75.8, MAP.DUN_MOROGH },
 							["timeline"] = { ADDED_10_1_7 },
 							["cr"] = 706,	-- Frostmane Troll Whelp
 						}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(170, {	-- A New Threat
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["qg"] = 713,	-- Balir Frosthammer
-							["coord"] = { 29.6, 71.2, DUN_MOROGH },
+							["coord"] = { 29.6, 71.2, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -77,9 +77,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 41.9, 63.7, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 31.8, 74.4, DUN_MOROGH },
+								{ 31.8, 74.4, MAP.DUN_MOROGH },
 								-- #else
-								{ 28.6, 67.8, DUN_MOROGH },
+								{ 28.6, 67.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["races"] = ALLIANCE_ONLY,
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 21.4, 64.0, COLDRIDGE_VALLEY },
 										-- #else
-										{ 20.9, 76.1, DUN_MOROGH },
+										{ 20.9, 76.1, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 31.0, 84.1, COLDRIDGE_VALLEY },
 										-- #else
-										{ 22.8, 79.9, DUN_MOROGH },
+										{ 22.8, 79.9, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 49.1, 80.4, COLDRIDGE_VALLEY },
 										-- #else
-										{ 26.3, 79.3, DUN_MOROGH },
+										{ 26.3, 79.3, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 42.7, 62.2, COLDRIDGE_VALLEY },
 								-- #else
-								{ 32.1, 74.2, DUN_MOROGH },
+								{ 32.1, 74.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 65.6, 42.7, COLDRIDGE_VALLEY },
 								-- #else
-								{ 36.6, 70.2, DUN_MOROGH },
+								{ 36.6, 70.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.3, 14.5, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.7, 64.8, DUN_MOROGH },
+								{ 35.7, 64.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1599, {	-- Beginnings
 							["altQuests"] = { 1598 },	-- The Stolen Tome
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
-							["coord"] = { 28.6, 66.1, DUN_MOROGH },
+							["coord"] = { 28.6, 66.1, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",   836 },	-- Durnan Furcutter
 								{ "i", 10440 },	-- Nori's Mug
 							},
-							["coord"] = { 28.8, 66.4, DUN_MOROGH },
+							["coord"] = { 28.8, 66.4, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 4,
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",  658 },	-- Sten Stoutarm
 								{ "i", 2187 },	-- A Stack of Letters (PQI!)
 							},
-							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -270,7 +270,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",  714 },	-- Talin Keeneye
 								{ "i", 2188 },	-- A Letter to Grelin Whitebeard (PQI!)
 							},
-							["coord"] = { 22.6, 71.4, DUN_MOROGH },
+							["coord"] = { 22.6, 71.4, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -288,9 +288,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -306,7 +306,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.7, 22.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 53.8, 27.4, COLDRIDGE_VALLEY },
 										-- #else
-										{ 27.4, 68.0, DUN_MOROGH },
+										{ 27.4, 68.0, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(179, {	-- Dwarven Outfitters
 							["qg"] = 658,	-- Sten Stoutarm
-							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -388,9 +388,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3 },
@@ -411,9 +411,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -434,9 +434,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -450,7 +450,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 63.7, 20.1, COLDRIDGE_VALLEY},
 								-- #else
-								{ 36.2, 65.9, DUN_MOROGH },
+								{ 36.2, 65.9, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 59.5, 20.4, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.4, 65.9, DUN_MOROGH },
+								{ 35.4, 65.9, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -512,7 +512,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 56.7, 27.8, COLDRIDGE_VALLEY },
 										-- #else
-										{ 34.8, 67.4, DUN_MOROGH },
+										{ 34.8, 67.4, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -525,7 +525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 39.7, 29.1, COLDRIDGE_VALLEY },
 										-- #else
-										{ 31.5, 67.6, DUN_MOROGH },
+										{ 31.5, 67.6, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -538,7 +538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 68.2, 27.9, COLDRIDGE_VALLEY },
 										-- #else
-										{ 37.1, 67.4, DUN_MOROGH },
+										{ 37.1, 67.4, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -551,7 +551,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 87.5, 44.4, COLDRIDGE_VALLEY },
 								-- #else
-								{ 40.88, 70.68, DUN_MOROGH },
+								{ 40.88, 70.68, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -564,7 +564,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 67.1, 41.3, COLDRIDGE_VALLEY },
 								-- #else
-								{ 36.9, 70.0, DUN_MOROGH },
+								{ 36.9, 70.0, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -601,9 +601,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3 },
@@ -624,9 +624,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 67.1, 41.3, COLDRIDGE_VALLEY },
 								-- #else
-								{ 36.9, 70.0, DUN_MOROGH },
+								{ 36.9, 70.0, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 42.7, 62.2, COLDRIDGE_VALLEY },
 								-- #else
-								{ 32.06, 74.18, DUN_MOROGH },
+								{ 32.06, 74.18, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["races"] = ALLIANCE_ONLY,
@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 67.1, 41.3, COLDRIDGE_VALLEY },
 								-- #else
-								{ 36.9, 70.0, DUN_MOROGH },
+								{ 36.9, 70.0, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -762,7 +762,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.7, 22.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -789,7 +789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77661, {	-- Meditation on the Light
 							["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
-							["coord"] = { 28.6, 66.4, DUN_MOROGH },
+							["coord"] = { 28.6, 66.4, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["races"] = { DWARF },
@@ -800,7 +800,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "i", 205951 },	-- Memory of a Troubled Acolyte
 										{ "n", 208565 },	-- Altar of the Light
 									},
-									["coord"] = { 28.8, 66.6, DUN_MOROGH },
+									["coord"] = { 28.8, 66.6, MAP.DUN_MOROGH },
 									["description"] = "Kneel (/kneel) at the Altar of the Light to gain a Meditation buff, then use the Rune to complete the quest.",
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
@@ -815,7 +815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 69.8, 44.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 37.4, 70.6, DUN_MOROGH },
+								{ 37.4, 70.6, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -830,7 +830,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 62.5, 23.4, COLDRIDGE_VALLEY },
 										-- #else
-										{ 35.5, 65.1, DUN_MOROGH },
+										{ 35.5, 65.1, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 62.2, 24.0, COLDRIDGE_VALLEY },
 										-- #else
-										{ 35.8, 64.6, DUN_MOROGH },
+										{ 35.8, 64.6, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -856,7 +856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 62.1, 23.7, COLDRIDGE_VALLEY },
 										-- #else
-										{ 35.4, 66.0, DUN_MOROGH },
+										{ 35.4, 66.0, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -876,7 +876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77657, {	-- Relics of the Light
 							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
-							["coord"] = { 28.8, 68.2, DUN_MOROGH },
+							["coord"] = { 28.8, 68.2, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PALADIN },
 							["races"] = { DWARF },
@@ -896,7 +896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 12738 },	-- Nori Pridedrift
 								{ "i", 10439 },	-- Durnan's Scalding Mornbrew (PQI!)
 							},
-							["coord"] = { 25.0, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 4,
@@ -908,7 +908,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",  786 },	-- Grelin Whitebeard
 								{ "i", 2619 },	-- Grelin's Report (PQI!)
 							},
-							["coord"] = { 25.0, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -919,7 +919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1965 },	-- Mountaineer Thalos
 								{ "i", 2619 },	-- Grelin's Report (PQI!)
 							},
-							["coord"] = { 33.4, 71.8, DUN_MOROGH },
+							["coord"] = { 33.4, 71.8, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -937,9 +937,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3 },
@@ -960,9 +960,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -976,7 +976,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.9, 19.0, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 65.6, DUN_MOROGH },
+								{ 35.8, 65.6, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -1001,9 +1001,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -1017,7 +1017,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.8, 13.6, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 64.6, DUN_MOROGH },
+								{ 35.8, 64.6, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -1038,7 +1038,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",    944 },	-- Marryk Nurribit <Mage Trainer>
 								{ "i", 211809 },	-- Comprehension Primer
 							},
-							["coord"] = { 28.6, 66.4, DUN_MOROGH },
+							["coord"] = { 28.6, 66.4, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { MAGE },
 							["races"] = { GNOME },
@@ -1054,7 +1054,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77666, {	-- Stolen Power
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
-							["coord"] = { 28.6, 66.2, DUN_MOROGH },
+							["coord"] = { 28.6, 66.2, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARLOCK },
 							["races"] = { GNOME },
@@ -1073,7 +1073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 6782 },	-- Hands Springsprocket
 								{ "i", 7646 },	-- Crate of Inn Supplies (PQI!)
 							},
-							["coord"] = { 33.8, 72.2, DUN_MOROGH },
+							["coord"] = { 33.8, 72.2, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1108,9 +1108,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 29.8, 71.2, DUN_MOROGH },
+								{ 29.8, 71.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -1130,7 +1130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.2, 17.5, COLDRIDGE_VALLEY},
 								-- #else
-								{ 35.7, 65.3, DUN_MOROGH },
+								{ 35.7, 65.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -1147,7 +1147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(183, {	-- The Boar Hunter
 							["qg"] = 714,	-- Talin Keeneye
-							["coord"] = { 22.6, 71.4, DUN_MOROGH },
+							["coord"] = { 22.6, 71.4, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1165,7 +1165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77655, {	-- The Lost Rune [Dwarf]
 							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
-							["coord"] = { 28.8, 67.2, DUN_MOROGH },
+							["coord"] = { 28.8, 67.2, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { DWARF },
@@ -1182,7 +1182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77656, {	-- The Lost Rune [Gnome]
 							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
-							["coord"] = { 28.8, 67.2, DUN_MOROGH },
+							["coord"] = { 28.8, 67.2, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { GNOME },
@@ -1205,7 +1205,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.9, 24.6, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 66.7, DUN_MOROGH },
+								{ 35.8, 66.7, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -1224,12 +1224,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(218, {	-- The Stolen Journal
 							["sourceQuest"] = 182,	-- The Troll Cave
 							["qg"] = 786,	-- Grelin Whitebeard
-							["coord"] = { 25.0, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, MAP.DUN_MOROGH },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Grenlin Whitebeard's Journal
 									["provider"] = { "i", 2004 },	-- Grenlin Whitebeard's Journal (QI!)
-									["coord"] = { 30.4, 80.2, DUN_MOROGH },
+									["coord"] = { 30.4, 80.2, MAP.DUN_MOROGH },
 									["cr"] = 808,	-- Grik'nir the Cold
 								}),
 								i(6176, {	-- Dwarven Kite Shield
@@ -1250,9 +1250,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 42.7, 62.2, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 32.1, 74.2, DUN_MOROGH },
+								{ 32.1, 74.2, MAP.DUN_MOROGH },
 								-- #else
-								{ 25.0, 75.8, DUN_MOROGH },
+								{ 25.0, 75.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["races"] = ALLIANCE_ONLY,
@@ -1275,7 +1275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77658, {	-- Thrice Stolen [Dwarf]
 							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
-							["coord"] = { 28.4, 67.6, DUN_MOROGH },
+							["coord"] = { 28.4, 67.6, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { ROGUE },
 							["races"] = { DWARF },
@@ -1286,7 +1286,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "o", 405628 },	-- Frostmane Loot Cache
 										{ "i", 204795 },	-- Rune of Shadowstrike
 									},
-									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+									["coord"] = { 30.8, 80.1, MAP.DUN_MOROGH },
 								}),
 								recipe(400105),	-- Engrave Gloves - Shadowstrike
 								i(2125),	-- Cracked Leather Gloves
@@ -1294,7 +1294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77659, {	-- Thrice Stolen [Gnome]
 							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
-							["coord"] = { 28.4, 67.6, DUN_MOROGH },
+							["coord"] = { 28.4, 67.6, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { ROGUE },
 							["races"] = { GNOME },
@@ -1305,7 +1305,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "o", 405628 },	-- Frostmane Loot Cache
 										{ "i", 204795 },	-- Rune of Shadowstrike
 									},
-									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+									["coord"] = { 30.8, 80.1, MAP.DUN_MOROGH },
 								}),
 								recipe(400105),	-- Engrave Gloves - Shadowstrike
 								i(2125),	-- Cracked Leather Gloves
@@ -1313,7 +1313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77660, {	-- Trek Through the Caves
 							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
-							["coord"] = { 29.0, 67.4, DUN_MOROGH },
+							["coord"] = { 29.0, 67.4, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { HUNTER },
 							["races"] = { DWARF },
@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "o", 405628 },	-- Frostmane Loot Cache
 										{ "i", 206168 },	-- Rune of the Chimera
 									},
-									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+									["coord"] = { 30.8, 80.1, MAP.DUN_MOROGH },
 								}),
 								recipe(410121),	-- Engrave Gloves - Chimera Shot
 								i(2125),	-- Cracked Leather Gloves
@@ -1338,7 +1338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 43.2, 63.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 32.2, 74.4, DUN_MOROGH },
+								{ 32.2, 74.4, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1350,7 +1350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 49.1, 81.6, COLDRIDGE_VALLEY },
 										-- #else
-										{ 33.2, 77.8, DUN_MOROGH },
+										{ 33.2, 77.8, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -1360,7 +1360,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 30.2, 85.4, COLDRIDGE_VALLEY },
 										-- #else
-										{ 29.6, 78.6, DUN_MOROGH },
+										{ 29.6, 78.6, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -1370,7 +1370,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 20.9, 67.4, COLDRIDGE_VALLEY },
 										-- #else
-										{ 27.8, 75.0, DUN_MOROGH },
+										{ 27.8, 75.0, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -1386,7 +1386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
+								{ 35.8, 66.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1398,7 +1398,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.7, 14.6, COLDRIDGE_VALLEY },
 								-- #else
-								{ 35.6, 64.8, DUN_MOROGH },
+								{ 35.6, 64.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -1420,7 +1420,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if SEASON_OF_DISCOVERY
 					n(TREASURES, {
 						applyclassicphase(SOD_PHASE_ONE, o(405633, {	-- Rockjaw Footlocker
-							["coord"] = { 26.8, 72.6, DUN_MOROGH },
+							["coord"] = { 26.8, 72.6, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1455,9 +1455,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 30.6, 84.8, COLDRIDGE_VALLEY },
 								{ 49.2, 80.2, COLDRIDGE_VALLEY },
 								-- #else
-								{ 37.4, 78.2, DUN_MOROGH },
-								{ 33.4, 77.6, DUN_MOROGH },
-								{ 28.4, 75.6, DUN_MOROGH },
+								{ 37.4, 78.2, MAP.DUN_MOROGH },
+								{ 33.4, 77.6, MAP.DUN_MOROGH },
+								{ 28.4, 75.6, MAP.DUN_MOROGH },
 								-- #endif
 							},
 						}),
@@ -1471,9 +1471,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 30.6, 84.8, COLDRIDGE_VALLEY },
 								{ 49.2, 80.2, COLDRIDGE_VALLEY },
 								-- #else
-								{ 37.4, 78.2, DUN_MOROGH },
-								{ 33.4, 77.6, DUN_MOROGH },
-								{ 28.4, 75.6, DUN_MOROGH },
+								{ 37.4, 78.2, MAP.DUN_MOROGH },
+								{ 33.4, 77.6, MAP.DUN_MOROGH },
+								{ 28.4, 75.6, MAP.DUN_MOROGH },
 								-- #endif
 							},
 						}),
@@ -1482,8 +1482,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 							["cr"] = 37507,	-- Frostmane Blade
 							["coords"] = {
-								{ 36.8, 77.4, DUN_MOROGH },
-								{ 35.9, 79.8, DUN_MOROGH },
+								{ 36.8, 77.4, MAP.DUN_MOROGH },
+								{ 35.9, 79.8, MAP.DUN_MOROGH },
 							},
 						}),
 						-- #endif
@@ -1494,9 +1494,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER LEGION
 								{ 70.2, 30.2, 428 },
 								-- #elseif AFTER CATA
-								{ 37.0, 78.4, DUN_MOROGH },
+								{ 37.0, 78.4, MAP.DUN_MOROGH },
 								-- #else
-								{ 30.4, 81.0, DUN_MOROGH },
+								{ 30.4, 81.0, MAP.DUN_MOROGH },
 								-- #endif
 							},
 						}),
@@ -1505,8 +1505,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 							["cr"] = 1718,	-- Rockjaw Raider
 							["coords"] = {
-								{ 42.6, 66.0, DUN_MOROGH },
-								{ 42.0, 67.8, DUN_MOROGH },
+								{ 42.6, 66.0, MAP.DUN_MOROGH },
+								{ 42.0, 67.8, MAP.DUN_MOROGH },
 							},
 						}),
 						-- #endif
@@ -1526,14 +1526,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 73.0, 56.6, COLDRIDGE_VALLEY },
 								{ 47.0, 43.4, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
-								{ 34.4, 71.0, DUN_MOROGH },
-								{ 34.8, 74.0, DUN_MOROGH },
-								{ 35.8, 73.8, DUN_MOROGH },
-								{ 38.2, 72.8, DUN_MOROGH },
+								{ 34.4, 71.0, MAP.DUN_MOROGH },
+								{ 34.8, 74.0, MAP.DUN_MOROGH },
+								{ 35.8, 73.8, MAP.DUN_MOROGH },
+								{ 38.2, 72.8, MAP.DUN_MOROGH },
 								-- #else
-								{ 21.8, 72.6, DUN_MOROGH },
-								{ 27.6, 72.8, DUN_MOROGH },
-								{ 31.0, 76.0, DUN_MOROGH },
+								{ 21.8, 72.6, MAP.DUN_MOROGH },
+								{ 27.6, 72.8, MAP.DUN_MOROGH },
+								{ 31.0, 76.0, MAP.DUN_MOROGH },
 								-- #endif
 							},
 						}),
@@ -1542,9 +1542,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1718,	-- Rockjaw Raider
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 42.6, 66.0, DUN_MOROGH },
+								{ 42.6, 66.0, MAP.DUN_MOROGH },
 								-- #else
-								{ 35.6, 67.8, DUN_MOROGH },
+								{ 35.6, 67.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 						}),
@@ -1618,7 +1618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 40.6, 28.1, NEW_TINKERTOWN },
 								-- #else
-								{ 27.3, 36.4, DUN_MOROGH },
+								{ 27.3, 36.4, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1636,7 +1636,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.8, 32.7, NEW_TINKERTOWN },
 								-- #else
-								{ 26.7, 38.2, DUN_MOROGH },
+								{ 26.7, 38.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1649,7 +1649,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.8, 32.7, NEW_TINKERTOWN },
 								-- #else
-								{ 26.7, 38.2, DUN_MOROGH },
+								{ 26.7, 38.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1670,7 +1670,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.2, 40.2, NEW_TINKERTOWN },
 								-- #else
-								{ 26.5, 41.0, DUN_MOROGH },
+								{ 26.5, 41.0, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1697,7 +1697,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 53.1, 82.2, NEW_TINKERTOWN_LOWER },
 								-- #else
-								{ 21.0, 39.5, DUN_MOROGH },
+								{ 21.0, 39.5, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1718,7 +1718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 48.7, 52.9, NEW_TINKERTOWN },
 								-- #else
-								{ 37.4, 44.0, DUN_MOROGH },	-- WoWhead data
+								{ 37.4, 44.0, MAP.DUN_MOROGH },	-- WoWhead data
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1756,7 +1756,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 37.3, 65.2, NEW_TINKERTOWN },
 								-- #else
-								{ 26.1, 50.38, DUN_MOROGH },
+								{ 26.1, 50.38, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1768,7 +1768,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 36.1, 40.9, 470 },
 										-- #else
-										{ 22.2, 50.13, DUN_MOROGH },
+										{ 22.2, 50.13, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -1778,7 +1778,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 28.6, 62.4, 470 },
 										-- #else
-										{ 22.09, 51.28, DUN_MOROGH },
+										{ 22.09, 51.28, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -1806,7 +1806,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 37.3, 65.2, NEW_TINKERTOWN },
 								-- #else
-								{ 26.1, 50.38, DUN_MOROGH },
+								{ 26.1, 50.38, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1828,7 +1828,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.0, 33.6, NEW_TINKERTOWN },
 								-- #else
-								{ 26.4, 38.5, DUN_MOROGH },
+								{ 26.4, 38.5, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1850,7 +1850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.4, 28.4, NEW_TINKERTOWN },
 								-- #else
-								{ 26.9, 36.6, DUN_MOROGH },
+								{ 26.9, 36.6, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1864,7 +1864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 41.1, 29.1, NEW_TINKERTOWN },
 								-- #else
-								{ 27.5, 36.8, DUN_MOROGH },
+								{ 27.5, 36.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1878,7 +1878,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 40.6, 35.5, NEW_TINKERTOWN },
 								-- #else
-								{ 27.3, 39.3, DUN_MOROGH },
+								{ 27.3, 39.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1892,7 +1892,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 37.7, 37.9, NEW_TINKERTOWN },
 								-- #else
-								{ 26.3, 40.1, DUN_MOROGH },
+								{ 26.3, 40.1, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1914,7 +1914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 37.3, 65.2, NEW_TINKERTOWN },
 								-- #else
-								{ 26.1, 50.4, DUN_MOROGH },
+								{ 26.1, 50.4, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 26.6, 68.2, NEW_TINKERTOWN },
 										-- #else
-										{ 25.85, 51.56, DUN_MOROGH },
+										{ 25.85, 51.56, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -1945,7 +1945,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.2, 33.7, NEW_TINKERTOWN },
 								-- #else
-								{ 26.5, 38.5, DUN_MOROGH },
+								{ 26.5, 38.5, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1980,7 +1980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 48.7, 52.9, NEW_TINKERTOWN },
 								-- #else
-								{ 30.4, 45.8, DUN_MOROGH },
+								{ 30.4, 45.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1997,7 +1997,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 37.3, 65.2, NEW_TINKERTOWN },
 								-- #else
-								{ 26.1, 50.4, DUN_MOROGH },
+								{ 26.1, 50.4, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2013,7 +2013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 48.7, 52.9, NEW_TINKERTOWN },
 								-- #else
-								{ 30.4, 45.8, DUN_MOROGH },
+								{ 30.4, 45.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2032,7 +2032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 34.1, 32.2, NEW_TINKERTOWN_LOWER },
 								-- #else
-								{ 18.8, 33.7, DUN_MOROGH },
+								{ 18.8, 33.7, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2053,7 +2053,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 34.1, 32.2, NEW_TINKERTOWN_LOWER },
 								-- #else
-								{ 18.8, 33.7, DUN_MOROGH },
+								{ 18.8, 33.7, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2066,7 +2066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 40.6, 28.1, NEW_TINKERTOWN },
 								-- #else
-								{ 27.3, 36.4, DUN_MOROGH },
+								{ 27.3, 36.4, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2085,7 +2085,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										-- #if AFTER MOP
 										{ 39.9, 30.8, NEW_TINKERTOWN },
 										-- #else
-										{ 27.3, 36.3, DUN_MOROGH },
+										{ 27.3, 36.3, MAP.DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -2101,7 +2101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 50.9, 32.0, NEW_TINKERTOWN_LOWER },
 								-- #else
-								{ 20.7, 33.7, DUN_MOROGH },
+								{ 20.7, 33.7, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2127,7 +2127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.0, 33.6, NEW_TINKERTOWN },
 								-- #else
-								{ 26.4, 38.5, DUN_MOROGH },
+								{ 26.4, 38.5, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2139,7 +2139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 41.1, 29.1, NEW_TINKERTOWN },
 								-- #else
-								{ 27.5, 36.8, DUN_MOROGH },
+								{ 27.5, 36.8, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -2181,7 +2181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.4, 28.4, NEW_TINKERTOWN },
 								-- #else
-								{ 26.9, 36.6, DUN_MOROGH },
+								{ 26.9, 36.6, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -2205,7 +2205,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.0, 33.5, NEW_TINKERTOWN },
 								-- #else
-								{ 26.4, 38.5, DUN_MOROGH },
+								{ 26.4, 38.5, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -2229,7 +2229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 40.6, 36.1, NEW_TINKERTOWN },
 								-- #else
-								{ 27.3, 39.3, DUN_MOROGH },
+								{ 27.3, 39.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -2253,7 +2253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 37.7, 38.0, NEW_TINKERTOWN },
 								-- #else
-								{ 26.3, 40.1, DUN_MOROGH },
+								{ 26.3, 40.1, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -2290,7 +2290,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.8, 32.7, NEW_TINKERTOWN },
 								-- #else
-								{ 26.7, 38.2, DUN_MOROGH },
+								{ 26.7, 38.2, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2303,7 +2303,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
-								{ 26.9, 40.3, DUN_MOROGH },
+								{ 26.9, 40.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2324,7 +2324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
-								{ 26.9, 40.3, DUN_MOROGH },
+								{ 26.9, 40.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2345,7 +2345,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
-								{ 26.9, 40.3, DUN_MOROGH },
+								{ 26.9, 40.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2366,7 +2366,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
-								{ 26.9, 40.3, DUN_MOROGH },
+								{ 26.9, 40.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2387,7 +2387,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
-								{ 26.9, 40.3, DUN_MOROGH },
+								{ 26.9, 40.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2419,7 +2419,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
-								{ 26.9, 40.3, DUN_MOROGH },
+								{ 26.9, 40.3, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_7_0_3 },
@@ -2438,7 +2438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 66.4, 81.7, NEW_TINKERTOWN_LOWER },
 								-- #else
-								{ 22.6, 39.5, DUN_MOROGH },
+								{ 22.6, 39.5, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2460,7 +2460,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 38.4, 33.5, NEW_TINKERTOWN },
 								-- #else
-								{ 26.5, 38.5, DUN_MOROGH },
+								{ 26.5, 38.5, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2473,7 +2473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 39.3, 26.5, NEW_TINKERTOWN },
 								-- #else
-								{ 26.8, 35.9, DUN_MOROGH },
+								{ 26.8, 35.9, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2492,7 +2492,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 50.9, 32.0, NEW_TINKERTOWN_LOWER },
 								-- #else
-								{ 20.8, 33.7, DUN_MOROGH },
+								{ 20.8, 33.7, MAP.DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2578,13 +2578,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(620, {	-- Gol'Bolar Quarry, Dun Morogh
 					["cr"] = 43702,	-- Dominic Galebeard <Gryphon Master>
-					["coord"] = { 75.8, 54.4, DUN_MOROGH },
+					["coord"] = { 75.8, 54.4, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(619, {	-- Kharanos, Dun Morogh
 					["cr"] = 43701,	-- Brolan Galebeard <Gryphon Master>
-					["coord"] = { 53.8, 52.8, DUN_MOROGH },
+					["coord"] = { 53.8, 52.8, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2594,27 +2594,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31551, {	-- Got one! (Grady)
 					["sourceQuest"] = 31822,	-- Level Up!
 					["qg"] = 63075,	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, DUN_MOROGH },
+					["coord"] = { 53.8, 50.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31548, {	-- Learning the Ropes (Grady)
 					["qg"] = 63075,	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, DUN_MOROGH },
+					["coord"] = { 53.8, 50.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31822, {	-- Level Up! (Grady)
 					["sourceQuest"] = 31549,	-- On The Mend
 					["qg"] = 63075,	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, DUN_MOROGH },
+					["coord"] = { 53.8, 50.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31549, {	-- On The Mend (Grady)
 					["sourceQuest"] = 31548,	-- Learning the Ropes
 					["qg"] = 63075,	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, DUN_MOROGH },
+					["coord"] = { 53.8, 50.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2625,7 +2625,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 109178 },	-- Shelby Stoneflint <Stable Master>
 								-- #endif
 							},
-							["coord"] = { 54.0, 51.0, DUN_MOROGH },
+							["coord"] = { 54.0, 51.0, MAP.DUN_MOROGH },
 						}),
 					},
 				}),
@@ -2634,7 +2634,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			pickpocketing({
 				i(2109, {	-- Frostmane Chain Vest
 					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
-					["coord"] = { 49.0, 35.4, DUN_MOROGH },
+					["coord"] = { 49.0, 35.4, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_10_1_7 },
 					["cr"] = 41122,	-- Frostmane Snowstrider
 				}),
@@ -2643,7 +2643,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if SEASON_OF_DISCOVERY
 			pickpocketing({
 				applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
-					["coord"] = { 78.2, 59.8, DUN_MOROGH },
+					["coord"] = { 78.2, 59.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["cr"] = 6123,	-- Dark Iron Spy
@@ -2659,19 +2659,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208219, {	-- Bottom-Left Map Piece
-					["coord"] = { 78.2, 59.8, DUN_MOROGH },
+					["coord"] = { 78.2, 59.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["cr"] = 6123,	-- Dark Iron Spy
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208218, {	-- Bottom-Right Map Piece
-					["coord"] = { 26.0, 41.8, DUN_MOROGH },
+					["coord"] = { 26.0, 41.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["cr"] = 1211,	-- Leper Gnome
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208215, {	-- Top-Left Map Piece
-					["coord"] = { 69.8, 59.0, DUN_MOROGH },
+					["coord"] = { 69.8, 59.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -2683,7 +2683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208213, {	-- Top-Right Map Piece
-					["coord"] = { 23.4, 53.8, DUN_MOROGH },
+					["coord"] = { 23.4, 53.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -2702,7 +2702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(319, {	-- A Favor for Evershine
 					["sourceQuest"] = 318,	-- Evershine
 					["qg"] = 1374,	-- Rejold Barleybrew
-					["coord"] = { 30.2, 45.8, DUN_MOROGH },
+					["coord"] = { 30.2, 45.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
@@ -2724,14 +2724,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25841,	-- Strike From Above
 					},
 					["qg"] = 41298,	-- Slamp Wobblecog
-					["coord"] = { 62.5, 53.7, DUN_MOROGH },
+					["coord"] = { 62.5, 53.7, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(5541, {	-- Ammo for Rumbleshot
 					["qg"] = 1694,	-- Loslor Rudge
-					["coord"] = { 50.0, 49.4, DUN_MOROGH },
+					["coord"] = { 50.0, 49.4, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
@@ -2741,11 +2741,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  13850 },	-- Rumbleshot's Ammo (QI!)
 								{ "o", 176785 },	-- Ammo Crate
 							},
-							["coord"] = { 44.13, 56.95, DUN_MOROGH },
+							["coord"] = { 44.13, 56.95, MAP.DUN_MOROGH },
 						}),
 						objective(2, {
 							["cr"] = 1243,	-- Hegnar Rumbleshot <Gunsmith>
-							["coord"] = { 40.7, 65.1, DUN_MOROGH },
+							["coord"] = { 40.7, 65.1, MAP.DUN_MOROGH },
 						}),
 					},
 				}),
@@ -2755,14 +2755,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 2059 },	-- A Dwarven Corpse
 						{ "i", 3117 },	-- Hildelve's Journal (PQI!)
 					},
-					["coord"] = { 79.7, 36.2, DUN_MOROGH },
+					["coord"] = { 79.7, 36.2, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mangy Claw
 							["provider"] = { "i", 3183 },	-- Mangy Claw (QI!)
-							["coord"] = { 78.34, 37.74, DUN_MOROGH },
+							["coord"] = { 78.34, 37.74, MAP.DUN_MOROGH },
 							["cr"] = 1961,	-- Mangeclaw
 						}),
 						i(2218, {	-- Craftsman's Dagger
@@ -2779,14 +2779,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 2059 },	-- A Dwarven Corpse
 						{ "i", 3117 },	-- Hildelve's Journal (PQI!)
 					},
-					["coord"] = { 87.6, 50.2, DUN_MOROGH },
+					["coord"] = { 87.6, 50.2, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { LOCH_MODAN },
+					["maps"] = { MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mangy Claw
 							["provider"] = { "i", 3183 },	-- Mangy Claw (QI!)
-							["coord"] = { 87.4, 49.2, DUN_MOROGH },
+							["coord"] = { 87.4, 49.2, MAP.DUN_MOROGH },
 							["cr"] = 1961,	-- Mangeclaw
 						}),
 						i(57560, {	-- Mangy Claw Mitts
@@ -2810,9 +2810,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1267,	-- Ragnar Thunderbrew
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.9, 50.7, DUN_MOROGH },
+						{ 53.9, 50.7, MAP.DUN_MOROGH },
 						-- #else
-						{ 46.8, 52.4, DUN_MOROGH },
+						{ 46.8, 52.4, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["cost"] = {
@@ -2859,14 +2859,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1375 },	-- Marleth Barleybrew
 						{ "i", 2548 },	-- Barrel of Barleybrew Scalder (PQI!)
 					},
-					["coord"] = { 30.2, 45.6, DUN_MOROGH },
+					["coord"] = { 30.2, 45.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
 						q(308, {	-- Distracting Jarven
 							["qg"] = 1373,	-- Jarven Thunderbrew
-							["coord"] = { 47.6, 52.6, DUN_MOROGH },
+							["coord"] = { 47.6, 52.6, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
 							["races"] = ALLIANCE_ONLY,
@@ -2878,7 +2878,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "o",  270 },	-- Unguarded Thunder Ale Barrel
 										{ "i", 2666 },	-- Barrel of Thunder Ale (QI!)
 									},
-									["coord"] = { 47.7, 52.7, DUN_MOROGH },
+									["coord"] = { 47.7, 52.7, MAP.DUN_MOROGH },
 									["timeline"] = { REMOVED_4_0_3 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 2,
@@ -2887,7 +2887,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(403, {	-- Guarded Thunderbrew Barrel
 							["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
-							["coord"] = { 47.7, 52.7, DUN_MOROGH },
+							["coord"] = { 47.7, 52.7, MAP.DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
@@ -2899,9 +2899,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1261,	-- Veron Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 70.6, 48.9, DUN_MOROGH },
+						{ 70.6, 48.9, MAP.DUN_MOROGH },
 						-- #else
-						{ 63.4, 50.6, DUN_MOROGH },
+						{ 63.4, 50.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
@@ -2916,7 +2916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42933 },	-- Ciara Deepstone
 						{ "i", 58271 },	-- Sample Casks (PQI!)
 					},
-					["coord"] = { 49.9, 45.0, DUN_MOROGH },
+					["coord"] = { 49.9, 45.0, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["_drop"] = { "g" },	-- Refreshing Spring Water
@@ -2924,7 +2924,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25667, {	-- Culling the Wendigos
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["qg"] = 40950,	-- Captain Tharran
-					["coord"] = { 53.7, 52.2, DUN_MOROGH },
+					["coord"] = { 53.7, 52.2, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2942,7 +2942,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25978,	-- Entombed in Ice
 					},
 					["qg"] = 41786,	-- Sergeant Bahrum
-					["coord"] = { 82.8, 48.4, DUN_MOROGH },
+					["coord"] = { 82.8, 48.4, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2951,7 +2951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- 0/1 Dark Iron Attack Plans
 							["provider"] = { "i", 56264 },	-- Dark Iron Attack Plans (QI!)
-							["coord"] = { 85.2, 60.6, DUN_MOROGH },
+							["coord"] = { 85.2, 60.6, MAP.DUN_MOROGH },
 							["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>
 						}),
 						i(57575, {	-- Belt of Dark Schemes
@@ -2970,7 +2970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25979, {	-- Dealing with the Surge
 					["qg"] = 41804,	-- Khurgon Singefeather
-					["coord"] = { 82.6, 48.3, DUN_MOROGH },
+					["coord"] = { 82.6, 48.3, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2985,7 +2985,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 41853 },	-- Commander Stonebreaker
 						{ "i", 56823 },	-- Stonebreaker's Report (PQI!)
 					},
-					["coord"] = { 78.3, 20.5, DUN_MOROGH },
+					["coord"] = { 78.3, 20.5, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2999,7 +2999,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5640,	-- Desperate Prayer [Darnassus]
 					},
 					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-					["coord"] = { 47.2, 52.2, DUN_MOROGH },
+					["coord"] = { 47.2, 52.2, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -3016,13 +3016,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25840, {	-- Eliminate the Resistance
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 					["qg"] = 41298,	-- Slamp Wobblecog
-					["coord"] = { 62.5, 53.7, DUN_MOROGH },
+					["coord"] = { 62.5, 53.7, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Battok the Berserker slain
 							["provider"] = { "n", 41284 },	-- Battok the Berserker
-							["coord"] = { 63.8, 55.7, DUN_MOROGH },
+							["coord"] = { 63.8, 55.7, MAP.DUN_MOROGH },
 						}),
 						objective(2, {	-- 0/5 Frostmane Warrior slain
 							["provider"] = { "n", 41258 },	-- Frostmane Warrior
@@ -3041,7 +3041,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25978, {	-- Entombed in Ice
 					["sourceQuest"] = 25986,	-- Trouble at the Lake
 					["qg"] = 41786,	-- Sergeant Bahrum
-					["coord"] = { 82.8, 48.4, DUN_MOROGH },
+					["coord"] = { 82.8, 48.4, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3056,7 +3056,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(318, {	-- Evershine
 					["sourceQuest"] = 317,	-- Stocking Jetsteam
 					["qg"] = 1378,	-- Pilot Bellowfiz
-					["coord"] = { 49.4, 48.4, DUN_MOROGH },
+					["coord"] = { 49.4, 48.4, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
@@ -3068,7 +3068,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 41853 },	-- Commander Stonebreaker
 						{ "i", 56803 },	-- Firefighting Gear (PQI!)
 					},
-					["coord"] = { 78.3, 20.5, DUN_MOROGH },
+					["coord"] = { 78.3, 20.5, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3081,7 +3081,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(313, {	-- Forced to Watch from Afar [CATA+] / The Grizzled Den
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["qg"] = 40950,	-- Captain Tharran
-					["coord"] = { 53.7, 52.2, DUN_MOROGH },
+					["coord"] = { 53.7, 52.2, MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Convey Orders to Mountaineer Dunstan
@@ -3090,7 +3090,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 51.8, 48.5, 29 },	-- The Grizzled Den
 								-- #endif
-								{ 48.2, 47.0, DUN_MOROGH },
+								{ 48.2, 47.0, MAP.DUN_MOROGH },
 							},
 						}),
 						objective(2, {	-- Convey Orders to Mountaineer Lewin
@@ -3099,7 +3099,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.3, 56.1, 29 },	-- The Grizzled Den
 								-- #endif
-								{ 49.2, 47.8, DUN_MOROGH },
+								{ 49.2, 47.8, MAP.DUN_MOROGH },
 							},
 						}),
 						objective(3, {	-- Convey Orders to Mountaineer Valgrum
@@ -3108,7 +3108,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.5, 22.2, 29 },	-- The Grizzled Den
 								-- #endif
-								{ 49.2, 44.4, DUN_MOROGH },
+								{ 49.2, 44.4, MAP.DUN_MOROGH },
 							},
 						}),
 					},
@@ -3119,9 +3119,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1261,	-- Veron Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 70.6, 48.9, DUN_MOROGH },
+						{ 70.6, 48.9, MAP.DUN_MOROGH },
 						-- #else
-						{ 63.4, 50.6, DUN_MOROGH },
+						{ 63.4, 50.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
@@ -3134,7 +3134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25724, {	-- Frostmane Aggression
 					["sourceQuest"] = 26373,	-- On to Kharanos
 					["qg"] = 40950,	-- Captain Tharran
-					["coord"] = { 53.7, 52.2, DUN_MOROGH },
+					["coord"] = { 53.7, 52.2, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3150,7 +3150,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(287, {	-- Frostmane Hold
 					["sourceQuest"] = 420,	-- Senir's Observations (2/2)
 					["qg"] = 1252,	-- Senir Whitebeard
-					["coord"] = { 46.6, 53.8, DUN_MOROGH },
+					["coord"] = { 46.6, 53.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
@@ -3175,7 +3175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5625, {	-- Garments of the Light
 					["sourceQuest"] = 5626,	-- In Favor of the Light
 					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-					["coord"] = { 47.2, 52.2, DUN_MOROGH },
+					["coord"] = { 47.2, 52.2, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PRIEST },
@@ -3183,7 +3183,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Heal and fortify Mountaineer Dolf
 							["provider"] = { "n", 12427 },	-- Mountaineer Dolf
-							["coord"] = { 45.8, 54.4, DUN_MOROGH },
+							["coord"] = { 45.8, 54.4, MAP.DUN_MOROGH },
 						}),
 						i(16605, {	-- Friar's Robes of the Light
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3193,20 +3193,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25998, {	-- Get to the Airfield
 					["sourceQuest"] = 25997,	-- Dark Iron Scheming
 					["qg"] = 41786,	-- Sergeant Bahrum
-					["coord"] = { 82.8, 48.4, DUN_MOROGH },
+					["coord"] = { 82.8, 48.4, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26102, {	-- Grimaxe's Demise
 					["sourceQuest"] = 26094,	-- Striking Back
 					["qg"] = 41853,	-- Commander Stonebreaker
-					["coord"] = { 78.3, 20.5, DUN_MOROGH },
+					["coord"] = { 78.3, 20.5, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 General Grimaxe slain
 							["provider"] = { "n", 42010 },	-- General Grimaxe
-							["coord"] = { 78.4, 34.9, DUN_MOROGH },
+							["coord"] = { 78.4, 34.9, MAP.DUN_MOROGH },
 						}),
 						i(57579, {	-- Airfield Defender's Garb
 							["timeline"] = { ADDED_4_0_3 },
@@ -3234,7 +3234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25905,	-- Rams on the Lam
 					},
 					["qg"] = 41578,	-- Sergeant Flinterhammer
-					["coord"] = { 70.4, 48.9, DUN_MOROGH },
+					["coord"] = { 70.4, 48.9, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3244,7 +3244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25792,	-- Pushing Forward
 					},
 					["qg"] = 40950,	-- Captain Tharran
-					["coord"] = { 53.7, 52.2, DUN_MOROGH },
+					["coord"] = { 53.7, 52.2, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3254,7 +3254,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  1699 },	-- Gremlock Pilsnor
 						{ "i", 16310 },	-- Gremlock's List (PQI!)
 					},
-					["coord"] = { 54.7, 50.5, DUN_MOROGH },
+					["coord"] = { 54.7, 50.5, MAP.DUN_MOROGH },
 					["races"] = { DARKIRON, DWARF, GNOME },
 				}),
 				-- #endif
@@ -3263,9 +3263,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7955,	-- Milli Featherwhistle
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.2, 46.3, DUN_MOROGH },
+						{ 56.2, 46.3, MAP.DUN_MOROGH },
 						-- #else
-						{ 49.0, 48.0, DUN_MOROGH },
+						{ 49.0, 48.0, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
@@ -3277,7 +3277,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5626, {	-- In Favor of the Light
 					["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
-					["coord"] = { 28.6, 66.4, DUN_MOROGH },
+					["coord"] = { 28.6, 66.4, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { COLDRIDGE_VALLEY },
 					["races"] = { DWARF },
@@ -3288,13 +3288,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25932, {	-- It's Raid Night Every Night
 					["sourceQuest"] = 25882,	-- A Hand at the Ranch
 					["qg"] = 41578,	-- Sergeant Flinthammer
-					["coord"] = { 70.4, 48.9, DUN_MOROGH },
+					["coord"] = { 70.4, 48.9, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Defend Amberstill Ranch
 							["provider"] = { "n", 41603 },	-- Frostmane Raider
-							["coord"] = { 70.4, 49.2, DUN_MOROGH },
+							["coord"] = { 70.4, 49.2, MAP.DUN_MOROGH },
 						}),
 						i(57558, {	-- Robes of Endless Raiding
 							["timeline"] = { ADDED_4_0_3 },
@@ -3392,7 +3392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["qg"] = 1229,	-- Granis Swiftaxe <Warrior Trainer>
-					["coord"] = { 47.2, 52.6, DUN_MOROGH },
+					["coord"] = { 47.2, 52.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -3404,7 +3404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6886 },	-- Onin MacHammer
 						{ "i", 7715 },	-- Onin's Report (PQI!)
 					},
-					["coord"] = { 25.2, 44.4, DUN_MOROGH },
+					["coord"] = { 25.2, 44.4, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -3425,9 +3425,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1269,	-- Razzle Sprysprocket
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.3, 51.9, DUN_MOROGH },
+						{ 53.3, 51.9, MAP.DUN_MOROGH },
 						-- #else
-						{ 45.8, 49.2, DUN_MOROGH },
+						{ 45.8, 49.2, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3474,7 +3474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25668, {	-- Pilfered Supplies
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["qg"] = 40951,	-- Quartermaster Glynna
-					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["coord"] = { 53.7, 52.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3484,7 +3484,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203129 },	-- Pilfered Supplies
 								{ "o", 203130 },	-- Pilfered Supplies
 							},
-							["coord"] = { 48.9, 46.8, DUN_MOROGH },
+							["coord"] = { 48.9, 46.8, MAP.DUN_MOROGH },
 						}),
 						i(57550, {	-- Grizzled Den Boots
 							["timeline"] = { ADDED_4_0_3 },
@@ -3502,7 +3502,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  50631 },	-- Prospector Drugan
 						{ "i",  56226 },	-- Excavator's Pick (PQI!)
 					},
-					["coord"] = { 76.2, 53.1, DUN_MOROGH },
+					["coord"] = { 76.2, 53.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3511,7 +3511,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  56225 },	-- Frozen Artifact (QI!)
 								{ "o", 203385 },	-- Frozen Artifact
 							},
-							["coord"] = { 76.5, 58.0, DUN_MOROGH },
+							["coord"] = { 76.5, 58.0, MAP.DUN_MOROGH },
 						}),
 						i(57571, {	-- Archaeologist's Pants
 							["timeline"] = { ADDED_4_0_3 },
@@ -3537,9 +3537,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1265,	-- Rudra Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 70.3, 48.2, DUN_MOROGH },
+						{ 70.3, 48.2, MAP.DUN_MOROGH },
 						-- #else
-						{ 63.0, 49.8, DUN_MOROGH },
+						{ 63.0, 49.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3547,7 +3547,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Fang of Vagash
 							["provider"] = { "i", 3627 },	-- Fang of Vagash (QI!)
-							["coord"] = { 69.8, 44.5, DUN_MOROGH },
+							["coord"] = { 69.8, 44.5, MAP.DUN_MOROGH },
 							["cr"] = 1388,	-- Vagash
 						}),
 						i(10549),	-- Rancher's Trousers
@@ -3572,7 +3572,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 40950 },	-- Captain Tharran
 						{ "i", 56009 },	-- Rune of Fire (PQI!)
 					},
-					["coord"] = { 53.7, 52.2, DUN_MOROGH },
+					["coord"] = { 53.7, 52.2, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3592,7 +3592,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26085, {	-- Rallying the Defenders
 					["sourceQuest"] = 26078,	-- Extinguish the Fires
 					["qg"] = 41853,	-- Commander Stonebreaker
-					["coord"] = { 78.3, 20.5, DUN_MOROGH },
+					["coord"] = { 78.3, 20.5, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3604,7 +3604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25905, {	-- Rams on the Lam
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 					["qg"] = 1261,	-- Veron Amberstill
-					["coord"] = { 70.7, 48.9, DUN_MOROGH },
+					["coord"] = { 70.7, 48.9, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3622,8 +3622,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1872,	-- Tharek Blackstone
 					},
 					["coords"] = {
-						{ 49.4, 48.4, DUN_MOROGH },
-						{ 46.0, 51.6, DUN_MOROGH },
+						{ 49.4, 48.4, MAP.DUN_MOROGH },
+						{ 46.0, 51.6, MAP.DUN_MOROGH },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3639,7 +3639,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1374 },	-- Rejold Barleybrew
 						{ "i", 2696 },	-- Cask of Evershine (PQI!)
 					},
-					["coord"] = { 30.2, 45.8, DUN_MOROGH },
+					["coord"] = { 30.2, 45.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
@@ -3660,7 +3660,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5633,	-- Returning Home [Ironforge]
 					},
 					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-					["coord"] = { 47.2, 52.2, DUN_MOROGH },
+					["coord"] = { 47.2, 52.2, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -3682,13 +3682,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 43701 },	-- Brolan Galebeard
 						{ "i", 16310 },	-- Gremlock's List (PQI!)
 					},
-					["coord"] = { 53.8, 52.8, DUN_MOROGH },
+					["coord"] = { 53.8, 52.8, MAP.DUN_MOROGH },
 					["races"] = { DARKIRON, DWARF, GNOME },
 				}),
 				-- #endif
 				q(2218, {	-- Road to Salvation
 					["qg"] = 1234,	-- Hogral Bakkan
-					["coord"] = { 47.6, 52.6, DUN_MOROGH },
+					["coord"] = { 47.6, 52.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -3697,9 +3697,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(466, {	-- Search for Incendicite
 					["sourceQuest"] = 467,	-- Stonegear's Search
 					["qg"] = 1377,	-- Pilot Stonegear
-					["coord"] = { 49.6, 48.4, DUN_MOROGH },
+					["coord"] = { 49.6, 48.4, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WETLANDS },
+					["maps"] = { MAP.WETLANDS },
 					["cost"] = { { "i", 3340, 6 } },	-- Incendicite Ore
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -3718,7 +3718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1374 },	-- Rejold Barleybrew
 						{ "i", 3085 },	-- Barrel of Shimmer Stout (PQI!)
 					},
-					["coord"] = { 30.2, 45.8, DUN_MOROGH },
+					["coord"] = { 30.2, 45.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
@@ -3726,7 +3726,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1879, {	-- Speak with Bink
 					["altQuests"] = { 1860 },	-- Speak with Jennea
 					["qg"] = 1228,	-- Magis Sparkmantle <Mage Trainer>
-					["coord"] = { 47.4, 52.0, DUN_MOROGH },
+					["coord"] = { 47.4, 52.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -3735,7 +3735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(317, {	-- Stocking Jetsteam
 					["qg"] = 1378,	-- Pilot Bellowfiz
-					["coord"] = { 49.4, 48.4, DUN_MOROGH },
+					["coord"] = { 49.4, 48.4, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 769, 4 } },	-- Chunk of Boar Meat
 					["races"] = ALLIANCE_ONLY,
@@ -3768,8 +3768,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2092,	-- Pilot Longbeard
 					},
 					["coords"] = {
-						{ 34.8, 47.0, LOCH_MODAN },
-						{ 72.4, 93.6, IRONFORGE },
+						{ 34.8, 47.0, MAP.LOCH_MODAN },
+						{ 72.4, 93.6, MAP.IRONFORGE },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3782,7 +3782,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1959 },	-- Mountaineer Barleybrew
 						{ "i", 3086 },	-- Cask of Shimmer Stout (PQI!)
 					},
-					["coord"] = { 86.2, 48.8, DUN_MOROGH },
+					["coord"] = { 86.2, 48.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
@@ -3793,7 +3793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 41298 },	-- Slamp Wobblecog
 						{ "i", 56048 },	-- Signal Flare (PQI!)
 					},
-					["coord"] = { 62.5, 53.7, DUN_MOROGH },
+					["coord"] = { 62.5, 53.7, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3801,13 +3801,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["providers"] = {
 								{ "n", 41372 },	-- Frostmane Retreat North
 							},
-							["coord"] = { 64.0, 54.0, DUN_MOROGH },
+							["coord"] = { 64.0, 54.0, MAP.DUN_MOROGH },
 						}),
 						objective(2, {	-- Attack on Southern Frostmane Retreat
 							["providers"] = {
 								{ "n", 41373 },	-- Frostmane Retreat South
 							},
-							["coord"] = { 63.0, 57.0, DUN_MOROGH },
+							["coord"] = { 63.0, 57.0, MAP.DUN_MOROGH },
 						}),
 					},
 				}),
@@ -3817,7 +3817,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 41853 },	-- Commander Stonebreaker
 						{ "i", 56814 },	-- Iron Hammer Bomb (PQI!)
 					},
-					["coord"] = { 78.3, 20.5, DUN_MOROGH },
+					["coord"] = { 78.3, 20.5, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3842,7 +3842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  1231 },	-- Grif Wildheart <Hunter Trainer>
 						{ "i", 15911 },	-- Taming Rod (PQI!)
 					},
-					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["coord"] = { 45.8, 53.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -3861,7 +3861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  1231 },	-- Grif Wildheart <Hunter Trainer>
 						{ "i", 15913 },	-- Taming Rod (PQI!)
 					},
-					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["coord"] = { 45.8, 53.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -3880,7 +3880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  1231 },	-- Grif Wildheart <Hunter Trainer>
 						{ "i", 15908 },	-- Taming Rod (PQI!)
 					},
-					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["coord"] = { 45.8, 53.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -3896,7 +3896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				q(313, {	-- The Grizzled Den / Forced to Watch from Afar [CATA+]
 					["qg"] = 1377,	-- Pilot Stonegear
-					["coord"] = { 49.6, 48.6, DUN_MOROGH },
+					["coord"] = { 49.6, 48.6, MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
@@ -3914,7 +3914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(6074, {	-- The Hunter's Path [Ironforge]
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
-					["coord"] = { 70.0, 84.6, IRONFORGE },
+					["coord"] = { 70.0, 84.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -3923,7 +3923,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6075, {	-- The Hunter's Path [Dun Morogh]
 					["qg"] = 11807,	-- Tristane Shadowstone
-					["coord"] = { 30.6, 45.4, DUN_MOROGH },
+					["coord"] = { 30.6, 45.4, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -3932,7 +3932,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6076, {	-- The Hunter's Path [Stormwind City]
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
-					["coord"] = { 61.6, 15.4, STORMWIND_CITY },
+					["coord"] = { 61.6, 15.4, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -3941,7 +3941,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(419, {	-- The Lost Pilot
 					["qg"] = 1960,	-- Pilot Hammerfoot
-					["coord"] = { 83.8, 39.2, DUN_MOROGH },
+					["coord"] = { 83.8, 39.2, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
@@ -3957,7 +3957,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28567,	-- Hero's Call: Loch Modan!
 					},
 					["qg"] = 1960,	-- Pilot Hammerfoot
-					["coord"] = { 14.0, 56.5, LOCH_MODAN },
+					["coord"] = { 14.0, 56.5, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3979,9 +3979,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1374,	-- Rejold Barleybrew
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.2, 51.2, DUN_MOROGH },
+						{ 54.2, 51.2, MAP.DUN_MOROGH },
 						-- #else
-						{ 30.2, 45.8, DUN_MOROGH },
+						{ 30.2, 45.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4021,9 +4021,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 75.9, 54.3, DUN_MOROGH },
+						{ 75.9, 54.3, MAP.DUN_MOROGH },
 						-- #else
-						{ 68.6, 56.0, DUN_MOROGH },
+						{ 68.6, 56.0, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4072,14 +4072,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1252 },	-- Senir Whitebeard
 						{ "i", 2628 },	-- Senir's Report (PQI!)
 					},
-					["coord"] = { 46.6, 53.8, DUN_MOROGH },
+					["coord"] = { 46.6, 53.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1653, {	-- The Test of Righteousness (1/3)
 					["sourceQuest"] = 1652,	-- The Tome of Valor (4/4)
 					["qg"] = 6171,	-- Duthorian Rall
-					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["coord"] = { 39.8, 30.8, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -4091,9 +4091,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6181 },	-- Jordan Stilwell
 						{ "i", 6996 },	-- Jordan's Weapon Notes (PQI!)
 					},
-					["coord"] = { 52.6, 36.8, DUN_MOROGH },
+					["coord"] = { 52.6, 36.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLACKFATHOM_DEEPS, DARKSHORE, DEADMINES, LOCH_MODAN, SHADOWFANG_KEEP },
+					["maps"] = { BLACKFATHOM_DEEPS, MAP.DARKSHORE, DEADMINES, MAP.LOCH_MODAN, SHADOWFANG_KEEP },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
@@ -4110,7 +4110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(1655, {	-- Bailor's Ore Shipment
 							["qg"] = 6241,	-- Bailor Stonehand
-							["coord"] = { 36.0, 45.0, LOCH_MODAN },
+							["coord"] = { 36.0, 45.0, MAP.LOCH_MODAN },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { PALADIN },
@@ -4122,7 +4122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "i",  6992 },	-- Jordan's Ore Shipment
 										{ "o", 92420 },	-- Bailor's Ore
 									},
-									["coord"] = { 71.6, 21.4, LOCH_MODAN },
+									["coord"] = { 71.6, 21.4, MAP.LOCH_MODAN },
 								}),
 								objective(2, {	-- 0/1 Jordan's Refined Ore Shipment
 									["provider"] = { "i", 6993 },	-- Jordan's Refined Ore Shipment
@@ -4133,7 +4133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1442, {	-- Seeking the Kor Gem
 							["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 							["qg"] = 3649,	-- Thundris Windweaver
-							["coord"] = { 37.4, 40.2, DARKSHORE },
+							["coord"] = { 37.4, 40.2, MAP.DARKSHORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { PALADIN },
@@ -4162,7 +4162,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1806, {	-- The Test of Righteousness (3/3)
 					["sourceQuest"] = 1654,	-- The Test of Righteousness (2/3)
 					["qg"] = 6181,	-- Jordan Stilwell
-					["coord"] = { 52.6, 36.8, DUN_MOROGH },
+					["coord"] = { 52.6, 36.8, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -4176,13 +4176,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25839, {	-- The Ultrasafe Personnel Launcher
 					["sourceQuest"] = 25838,	-- Help from Steelgrill's Depot
 					["qg"] = 41363,	-- Delber Cranktoggle
-					["coord"] = { 56.8, 47.1, DUN_MOROGH },
+					["coord"] = { 56.8, 47.1, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Use Ultrasafe Personnel Launcher to deploy to Frostmane Retreat
 							["provider"] = { "n", 41398 },	-- Ultrasafe Personnel Launcher
-							["coord"] = { 56.8, 46.6, DUN_MOROGH },
+							["coord"] = { 56.8, 46.6, MAP.DUN_MOROGH },
 						}),
 					},
 				}),
@@ -4192,7 +4192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 50601 },	-- Snevik the Blade
 						{ "i", 67249 },	-- Viewpoint Equalizer (PQI!)
 					},
-					["coord"] = { 62.5, 53.8, DUN_MOROGH },
+					["coord"] = { 62.5, 53.8, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4207,9 +4207,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1254,	-- Foreman Stonebrow
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.3, 54.7, DUN_MOROGH },
+						{ 76.3, 54.7, MAP.DUN_MOROGH },
 						-- #else
-						{ 69.0, 56.2, DUN_MOROGH },
+						{ 69.0, 56.2, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4232,7 +4232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2299, {	-- To Hulfdan!
 					["sourceQuest"] = 2218,	-- Road to Salvation
 					["qg"] = 1234,	-- Hogral Bakkan
-					["coord"] = { 47.6, 52.6, DUN_MOROGH },
+					["coord"] = { 47.6, 52.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -4244,7 +4244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1872 },	-- Tharek Blackstone
 						{ "i", 2999 },	-- Steelgrill's Tools (PQI!)
 					},
-					["coord"] = { 46.0, 51.6, DUN_MOROGH },
+					["coord"] = { 46.0, 51.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
@@ -4252,7 +4252,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6086, {	-- Training the Beast
 					["sourceQuest"] = 6085,	-- Taming the Beast (3/3)
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
-					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["coord"] = { 45.8, 53.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -4272,14 +4272,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						432,	-- Those Blasted Troggs!
 					},
 					["qg"] = 1977,	-- Senator Mehr Stonehallow
-					["coord"] = { 75.9, 54.3, DUN_MOROGH },
+					["coord"] = { 75.9, 54.3, MAP.DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(312, {	-- Tundra MacGrann's Stolen Stash
 					["qg"] = 1266,	-- Tundra MacGrann
-					["coord"] = { 34.6, 51.6, DUN_MOROGH },
+					["coord"] = { 34.6, 51.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
@@ -4289,7 +4289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 2667 },	-- MacGrann's Dried Meats (QI!)
 								{ "o",  272 },	-- MacGrann's Meat Locker
 							},
-							["coord"] = { 38.5, 53.93, DUN_MOROGH },
+							["coord"] = { 38.5, 53.93, MAP.DUN_MOROGH },
 						}),
 						i(6177, {	-- Ironwrought Bracers
 							["timeline"] = { REMOVED_4_0_3 },
@@ -4304,9 +4304,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7955,	-- Milli Featherwhistle
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.2, 46.3, DUN_MOROGH },
+						{ 56.2, 46.3, MAP.DUN_MOROGH },
 						-- #else
-						{ 49.0, 48.0, DUN_MOROGH },
+						{ 49.0, 48.0, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
@@ -4321,15 +4321,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1130, {	-- Bjarn
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 69.2, 55.8, DUN_MOROGH },
-						{ 69.8, 58.6, DUN_MOROGH },
-						{ 67.8, 58.8, DUN_MOROGH },
-						{ 66.2, 59.8, DUN_MOROGH },
+						{ 69.2, 55.8, MAP.DUN_MOROGH },
+						{ 69.8, 58.6, MAP.DUN_MOROGH },
+						{ 67.8, 58.8, MAP.DUN_MOROGH },
+						{ 66.2, 59.8, MAP.DUN_MOROGH },
 						-- #else
-						{ 52.8, 58.4, DUN_MOROGH },
-						{ 56.8, 56.8, DUN_MOROGH },
-						{ 63.6, 60.6, DUN_MOROGH },
-						{ 59.0, 61.6, DUN_MOROGH },
+						{ 52.8, 58.4, MAP.DUN_MOROGH },
+						{ 56.8, 56.8, MAP.DUN_MOROGH },
+						{ 63.6, 60.6, MAP.DUN_MOROGH },
+						{ 59.0, 61.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["groups"] = {
@@ -4343,11 +4343,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER 10.1.7
 						{ 32.3, 52.26, 29 },	-- The Grizzled Den
 						-- #elseif AFTER CATA
-						{ 46.4, 47.6, DUN_MOROGH },
+						{ 46.4, 47.6, MAP.DUN_MOROGH },
 						-- #else
-						{ 43.6, 49.6, DUN_MOROGH },
-						{ 39.6, 48.2, DUN_MOROGH },
-						{ 42.2, 46.4, DUN_MOROGH },
+						{ 43.6, 49.6, MAP.DUN_MOROGH },
+						{ 39.6, 48.2, MAP.DUN_MOROGH },
+						{ 42.2, 46.4, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["description"] = "Located in The Grizzled Den.",
@@ -4362,7 +4362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208752, {	-- Frozen Trogg
-					["coord"] = { 69.2, 58.2, DUN_MOROGH },
+					["coord"] = { 69.2, 58.2, MAP.DUN_MOROGH },
 					["classes"] = { MAGE, WARLOCK },
 					["groups"] = {
 						i(205228, {	-- Rune of Chaos Bolt
@@ -4381,7 +4381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(208638, {	-- Fyodi
 					["description"] = "The runes he drops can also drop from any of the rare creatures in the zone.",
-					["coord"] = { 31.6, 40.0, DUN_MOROGH },
+					["coord"] = { 31.6, 40.0, MAP.DUN_MOROGH },
 					["classes"] = { HUNTER, MAGE, WARRIOR },
 					["groups"] = {
 						i(206169, {	-- Rune of Explosive Shot
@@ -4407,8 +4407,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 40.3, 45.4, NEW_TINKERTOWN },
 						-- #else
-						{ 27.2, 36.6, DUN_MOROGH },
-						{ 25.0, 44.6, DUN_MOROGH },
+						{ 27.2, 36.6, MAP.DUN_MOROGH },
+						{ 25.0, 44.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["groups"] = {
@@ -4424,10 +4424,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 29.8, 67.8, NEW_TINKERTOWN },
-						{ 49.1, 37.1, DUN_MOROGH },
+						{ 49.1, 37.1, MAP.DUN_MOROGH },
 						-- #else
-						{ 23.8, 53.4, DUN_MOROGH },
-						{ 22.0, 51.0, DUN_MOROGH },
+						{ 23.8, 53.4, MAP.DUN_MOROGH },
+						{ 22.0, 51.0, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["groups"] = {
@@ -4445,11 +4445,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 77.9, 55.1, DUN_MOROGH },	-- cave entrance
+						{ 77.9, 55.1, MAP.DUN_MOROGH },	-- cave entrance
 						{ 56.3, 39.1, 31 },	-- spawn area
 						-- #else
-						{ 71.8, 51.4, DUN_MOROGH },
-						{ 72.8, 53.8, DUN_MOROGH },
+						{ 71.8, 51.4, MAP.DUN_MOROGH },
+						{ 72.8, 53.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["groups"] = {
@@ -4464,7 +4464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208812, {	-- Jorul
 					["description"] = "You can tame him and you still get the rune!",
-					["coord"] = { 37.78, 42.55, DUN_MOROGH },
+					["coord"] = { 37.78, 42.55, MAP.DUN_MOROGH },
 					["cost"] = { { "i", 208192, 1 } },	-- Dun Morogh Pig Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
@@ -4484,7 +4484,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER 10.1.7
 						{ 31.4, 27.2, 29 },	-- The Grizzled Den
 						-- #else
-						{ 38.4, 54.0, DUN_MOROGH },
+						{ 38.4, 54.0, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -4498,7 +4498,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(208180, {	-- Razormane Poacher
 					["provider"] = { "n", 208975 },	-- Rustling Bush
 					["description"] = "Cast Hunter's Mark on the bush to spawn the rare creature.",
-					["coord"] = { 28.8, 49.6, DUN_MOROGH },
+					["coord"] = { 28.8, 49.6, MAP.DUN_MOROGH },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(206155, {	-- Rune of Marksmanship
@@ -4512,7 +4512,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
 					-- ["provider"] = { "o",  },	-- Summoning Circle
-					["coord"] = { 42.2, 35.6, DUN_MOROGH },
+					["coord"] = { 42.2, 35.6, MAP.DUN_MOROGH },
 					["cost"] = {
 						{ "i", 208139, 1 },	-- Ominous Tome
 						{ "i", 208140, 1 },	-- Wendigo Blood
@@ -4534,9 +4534,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 67.8, 37.4, NEW_TINKERTOWN },
 						-- #else
-						{ 36.0, 37.8, DUN_MOROGH },
-						{ 35.6, 42.8, DUN_MOROGH },
-						{ 31.8, 42.6, DUN_MOROGH },
+						{ 36.0, 37.8, MAP.DUN_MOROGH },
+						{ 35.6, 42.8, MAP.DUN_MOROGH },
+						{ 31.8, 42.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["groups"] = {
@@ -4551,7 +4551,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
-					["coord"] = { 53.8, 47.2, DUN_MOROGH },
+					["coord"] = { 53.8, 47.2, MAP.DUN_MOROGH },
 					["groups"] = {
 						i(204441, {	-- Rune of Blood Frenzy
 							["classes"] = { WARRIOR },
@@ -4570,7 +4570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if BEFORE TBC
 			n(RIDING_TRAINER, {
 				n(7954, {	-- Binjy Featherwhistle <Mechanostrider Pilot>
-					["coord"] = { 49.2, 48.0, DUN_MOROGH },
+					["coord"] = { 49.2, 48.0, MAP.DUN_MOROGH },
 					["races"] = { DWARF, GNOME },
 					-- Available to Gnomes without faction requirements.
 					["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
@@ -4588,7 +4588,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4772, {	-- Ultham Ironhorn <Ram Riding Instructor>
-					["coord"] = { 63.8, 50.2, DUN_MOROGH },
+					["coord"] = { 63.8, 50.2, MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					-- Available to Dwarves without faction requirements.
 					["minReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
@@ -4611,7 +4611,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
-					["coord"] = { 43.0, 49.6, DUN_MOROGH },
+					["coord"] = { 43.0, 49.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(210589, {	-- Echo of the Ancestors
@@ -4642,7 +4642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
 					["provider"] = { "o", 387466 },	-- Rusty Lockbox
-					["coord"] = { 47.0, 52.0, DUN_MOROGH },
+					["coord"] = { 47.0, 52.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -4651,7 +4651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
 					["provider"] = { "o", 386675 },	-- Buried Treasure
-					["coord"] = { 46.96, 43.73, DUN_MOROGH },
+					["coord"] = { 46.96, 43.73, MAP.DUN_MOROGH },
 					["cost"] = { { "i", 208220, 1 } },	-- Dun Morogh Treasure Map
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
@@ -4660,7 +4660,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(208802, {	-- Wounded Adventurer
-					["coord"] = { 25.6, 43.6, DUN_MOROGH },
+					["coord"] = { 25.6, 43.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -4679,9 +4679,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				o(207496, {	-- Dark Iron Treasure Chest
 					["coords"] = {
-						{ 46.5, 45.8, DUN_MOROGH },
-						{ 50.6, 47.7, DUN_MOROGH },
-						{ 85.1, 60.6, DUN_MOROGH },
+						{ 46.5, 45.8, MAP.DUN_MOROGH },
+						{ 50.6, 47.7, MAP.DUN_MOROGH },
+						{ 85.1, 60.6, MAP.DUN_MOROGH },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -4690,7 +4690,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208886, {	-- Blackrat
-					["coord"] = { 57.2, 45.2, DUN_MOROGH },
+					["coord"] = { 57.2, 45.2, MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(203990, {	-- Rune of Mutilation
@@ -4708,7 +4708,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 51.6, 50.0, NEW_TINKERTOWN },
 						-- #else
-						{ 31.6, 44.6, DUN_MOROGH },
+						{ 31.6, 44.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4719,9 +4719,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1247, {	-- Innkeeper Belm <Innkeeper>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.4, 50.8, DUN_MOROGH },
+						{ 54.4, 50.8, MAP.DUN_MOROGH },
 						-- #else
-						{ 47.4, 52.6, DUN_MOROGH },
+						{ 47.4, 52.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4737,7 +4737,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER CATA
 				n(46996, {	-- Jade Ramalot <Weaponsmith>
-					["coord"] = { 78.6, 20.0, DUN_MOROGH },
+					["coord"] = { 78.6, 20.0, MAP.DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						926,	-- Battle Axe
@@ -4763,9 +4763,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.2, 46.3, DUN_MOROGH },
+						{ 56.2, 46.3, MAP.DUN_MOROGH },
 						-- #else
-						{ 49.0, 48.0, DUN_MOROGH },
+						{ 49.0, 48.0, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					-- Available to Gnomes without faction requirements.
@@ -4796,7 +4796,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208711, {	-- Toby
 					["description"] = "Use the musk and tame a Rabbit and then bring it to Toby.",
-					["coord"] = { 63.6, 50.2, DUN_MOROGH },
+					["coord"] = { 63.6, 50.2, MAP.DUN_MOROGH },
 					["cost"] = { { "i", 208180, 1 } },	-- Rabbit Musk
 					["crs"] = { 721 },	-- Rabbit
 					["races"] = ALLIANCE_ONLY,
@@ -4813,9 +4813,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 70.6, 48.9, DUN_MOROGH },
+						{ 70.6, 48.9, MAP.DUN_MOROGH },
 						-- #else
-						{ 63.4, 50.6, DUN_MOROGH },
+						{ 63.4, 50.6, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					-- Available to Dwarves without faction requirements.
@@ -4845,9 +4845,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1263, {	-- Yarlyn Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 70.5, 49.1, DUN_MOROGH },
+						{ 70.5, 49.1, MAP.DUN_MOROGH },
 						-- #else
-						{ 63.2, 50.8, DUN_MOROGH },
+						{ 63.2, 50.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4864,7 +4864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(2886, {	-- Crag Boar Rib
 					["coords"] = {
-						{ 46.6, 59.8, DUN_MOROGH },
+						{ 46.6, 59.8, MAP.DUN_MOROGH },
 					},
 					["crs"] = {
 						1125,	-- Crag Boar
@@ -4892,8 +4892,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2067, {	-- Frostbit Staff
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 79.2, 48.4, DUN_MOROGH },
-						{ 78.0, 54.2, DUN_MOROGH },
+						{ 79.2, 48.4, MAP.DUN_MOROGH },
+						{ 78.0, 54.2, MAP.DUN_MOROGH },
 					},
 					["cr"] = 1117,	-- Rockjaw Bonesnapper
 				}),
@@ -4902,9 +4902,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2259, {	-- Frostmane Club
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 29.6, 79.0, DUN_MOROGH },
-						{ 26.0, 79.8, DUN_MOROGH },
-						{ 21.6, 77.0, DUN_MOROGH },
+						{ 29.6, 79.0, MAP.DUN_MOROGH },
+						{ 26.0, 79.8, MAP.DUN_MOROGH },
+						{ 21.6, 77.0, MAP.DUN_MOROGH },
 					},
 					["cr"] = 1121,	-- Frostmane Snowstrider
 				}),
@@ -4913,13 +4913,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 49.0, 35.4, DUN_MOROGH },
-						{ 48.6, 42.6, DUN_MOROGH },
-						{ 50.6, 39.2, DUN_MOROGH },
-						{ 47.2, 39.4, DUN_MOROGH },
+						{ 49.0, 35.4, MAP.DUN_MOROGH },
+						{ 48.6, 42.6, MAP.DUN_MOROGH },
+						{ 50.6, 39.2, MAP.DUN_MOROGH },
+						{ 47.2, 39.4, MAP.DUN_MOROGH },
 						-- #else
-						{ 26.6, 50.6, DUN_MOROGH },
-						{ 27.2, 52.8, DUN_MOROGH },
+						{ 26.6, 50.6, MAP.DUN_MOROGH },
+						{ 27.2, 52.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["crs"] = {
@@ -4935,8 +4935,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2258, {	-- Frostmane Shortsword
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 26.6, 50.6, DUN_MOROGH },
-						{ 27.2, 52.8, DUN_MOROGH },
+						{ 26.6, 50.6, MAP.DUN_MOROGH },
+						{ 27.2, 52.8, MAP.DUN_MOROGH },
 					},
 					["cr"] = 1120,	-- Frostmane Troll
 				}),
@@ -4945,13 +4945,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 49.0, 35.4, DUN_MOROGH },
-						{ 48.6, 42.6, DUN_MOROGH },
-						{ 50.6, 39.2, DUN_MOROGH },
-						{ 47.2, 39.4, DUN_MOROGH },
+						{ 49.0, 35.4, MAP.DUN_MOROGH },
+						{ 48.6, 42.6, MAP.DUN_MOROGH },
+						{ 50.6, 39.2, MAP.DUN_MOROGH },
+						{ 47.2, 39.4, MAP.DUN_MOROGH },
 						-- #else
-						{ 26.6, 50.6, DUN_MOROGH },
-						{ 27.2, 52.8, DUN_MOROGH },
+						{ 26.6, 50.6, MAP.DUN_MOROGH },
+						{ 27.2, 52.8, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["crs"] = {
@@ -4966,13 +4966,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1689,	-- Scarred Crag Boar
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 88.6, 51.4, DUN_MOROGH },
-						{ 81.6, 49.0, DUN_MOROGH },
+						{ 88.6, 51.4, MAP.DUN_MOROGH },
+						{ 81.6, 49.0, MAP.DUN_MOROGH },
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
-					["coord"] = { 26.0, 41.8, DUN_MOROGH },
+					["coord"] = { 26.0, 41.8, MAP.DUN_MOROGH },
 					["classes"] = { PRIEST },
 					["cr"] = 1211,	-- Leper Gnome
 					["groups"] = {
@@ -4981,7 +4981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
 					["description"] = "This can drop from any of the Rare Creatures in the zone.",
-					["coord"] = { 78.6, 62.0, DUN_MOROGH },
+					["coord"] = { 78.6, 62.0, MAP.DUN_MOROGH },
 					["classes"] = { PRIEST },
 					["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>
 					["groups"] = {
@@ -4994,21 +4994,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1196,	-- Ice Claw Bear
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 71.2, 52.8, DUN_MOROGH },
-						{ 67.6, 59.1, DUN_MOROGH },
+						{ 71.2, 52.8, MAP.DUN_MOROGH },
+						{ 67.6, 59.1, MAP.DUN_MOROGH },
 						-- #else
-						{ 30.8, 40.4, DUN_MOROGH },
-						{ 37.2, 44.8, DUN_MOROGH },
-						{ 67.0, 50.2, DUN_MOROGH },
+						{ 30.8, 40.4, MAP.DUN_MOROGH },
+						{ 37.2, 44.8, MAP.DUN_MOROGH },
+						{ 67.0, 50.2, MAP.DUN_MOROGH },
 						-- #endif
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208139, {	-- Ominous Tome
 					["coords"] = {
-						{ 23.2, 53.6, DUN_MOROGH },
-						{ 42.4, 35.8, DUN_MOROGH },
-						{ 42.0, 44.6, DUN_MOROGH },
+						{ 23.2, 53.6, MAP.DUN_MOROGH },
+						{ 42.4, 35.8, MAP.DUN_MOROGH },
+						{ 42.0, 44.6, MAP.DUN_MOROGH },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
@@ -5018,7 +5018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208158, {	-- Pristine Trogg Heart
-					["coord"] = { 70.6, 59.2, DUN_MOROGH },
+					["coord"] = { 70.6, 59.2, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -5029,9 +5029,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
 					["coords"] = {
-						{ 23.2, 53.6, DUN_MOROGH },
-						{ 42.4, 35.8, DUN_MOROGH },
-						{ 42.0, 44.6, DUN_MOROGH },
+						{ 23.2, 53.6, MAP.DUN_MOROGH },
+						{ 42.4, 35.8, MAP.DUN_MOROGH },
+						{ 42.0, 44.6, MAP.DUN_MOROGH },
 					},
 					["classes"] = { PRIEST },
 					["crs"] = {
@@ -5044,9 +5044,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208180, {	-- Rabbit Musk
 					["coords"] = {
-						{ 70.8, 56.0, DUN_MOROGH },
-						{ 68.8, 58.2, DUN_MOROGH },
-						{ 80.4, 57.2, DUN_MOROGH },
+						{ 70.8, 56.0, MAP.DUN_MOROGH },
+						{ 68.8, 58.2, MAP.DUN_MOROGH },
+						{ 80.4, 57.2, MAP.DUN_MOROGH },
 					},
 					["classes"] = { HUNTER },
 					["crs"] = {
@@ -5062,14 +5062,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 1116,	-- Rockjaw Ambusher
 					["coords"] = {
-						{ 72.6, 54.0, DUN_MOROGH },
-						{ 77.6, 59.6, DUN_MOROGH },
+						{ 72.6, 54.0, MAP.DUN_MOROGH },
+						{ 77.6, 59.6, MAP.DUN_MOROGH },
 					},
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208159, {	-- Severed Troll Head
-					["coord"] = { 26.6, 50.6, DUN_MOROGH },
+					["coord"] = { 26.6, 50.6, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -5081,7 +5081,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208160, {	-- Severed Wendigo Paw
-					["coord"] = { 42.6, 55.0, DUN_MOROGH },
+					["coord"] = { 42.6, 55.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -5093,8 +5093,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2066, {	-- Skull Hatchet
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 78.2, 52.2, DUN_MOROGH },
-						{ 76.6, 58.0, DUN_MOROGH },
+						{ 78.2, 52.2, MAP.DUN_MOROGH },
+						{ 76.6, 58.0, MAP.DUN_MOROGH },
 					},
 					["cr"] = 1115,	-- Rockjaw Skullthumper
 				}),
@@ -5106,8 +5106,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 67.8, 45.6, NEW_TINKERTOWN },
 						{ 53.8, 57.2, NEW_TINKERTOWN },
 						-- #else
-						{ 36.0, 38.8, DUN_MOROGH },
-						{ 33.0, 45.0, DUN_MOROGH },
+						{ 36.0, 38.8, MAP.DUN_MOROGH },
+						{ 33.0, 45.0, MAP.DUN_MOROGH },
 						-- #endif
 					},
 					["crs"] = {
@@ -5121,9 +5121,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
 					["coords"] = {
-						{ 23.2, 53.6, DUN_MOROGH },
-						{ 42.4, 35.8, DUN_MOROGH },
-						{ 42.0, 44.6, DUN_MOROGH },
+						{ 23.2, 53.6, MAP.DUN_MOROGH },
+						{ 42.4, 35.8, MAP.DUN_MOROGH },
+						{ 42.0, 44.6, MAP.DUN_MOROGH },
 					},
 					["classes"] = { MAGE },
 					["crs"] = {
@@ -5135,8 +5135,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2064, {	-- Trogg Club
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 80.0, 57.6, DUN_MOROGH },
-						{ 69.4, 58.8, DUN_MOROGH },
+						{ 80.0, 57.6, MAP.DUN_MOROGH },
+						{ 69.4, 58.8, MAP.DUN_MOROGH },
 					},
 					["crs"] = {
 						-- #if AFTER 10.1.7
@@ -5149,9 +5149,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5767, {	-- Violet Robes
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 49.8, 37.2, DUN_MOROGH },
-						{ 46.6, 40.6, DUN_MOROGH },
-						{ 49.0, 42.6, DUN_MOROGH },
+						{ 49.8, 37.2, MAP.DUN_MOROGH },
+						{ 46.6, 40.6, MAP.DUN_MOROGH },
+						{ 49.0, 42.6, MAP.DUN_MOROGH },
 					},
 					["crs"] = {
 						-- #if AFTER 10.1.7
@@ -5163,7 +5163,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208160, {	-- Wendigo Blood
-					["coord"] = { 42.6, 55.0, DUN_MOROGH },
+					["coord"] = { 42.6, 55.0, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
@@ -5173,11 +5173,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204907, {	-- Wolf Jawbone
 					["coords"] = {
-						{ 27.6, 77.0, DUN_MOROGH },
-						{ 34.8, 43.6, DUN_MOROGH },
-						{ 50.0, 49.4, DUN_MOROGH },
-						{ 45.6, 44.0, DUN_MOROGH },
-						{ 44.4, 47.6, DUN_MOROGH },
+						{ 27.6, 77.0, MAP.DUN_MOROGH },
+						{ 34.8, 43.6, MAP.DUN_MOROGH },
+						{ 50.0, 49.4, MAP.DUN_MOROGH },
+						{ 45.6, 44.0, MAP.DUN_MOROGH },
+						{ 44.4, 47.6, MAP.DUN_MOROGH },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },

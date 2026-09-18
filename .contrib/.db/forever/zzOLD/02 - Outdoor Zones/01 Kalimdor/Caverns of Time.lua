@@ -2,14 +2,14 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
 	m(CAVERNS_OF_TIME, {
 		["lore"] = "Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",
 		["icon"] = 134156,
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 1941,	-- Caverns of Time
 		-- #endif
-		["coord"] = { 65.9, 49.4, TANARIS },
+		["coord"] = { 65.9, 49.4, MAP.TANARIS },
 		["maps"] = { 74 },	-- Caverns of Time Entrance
 		["groups"] = {
 			battlepets({ ADDED_5_1_0 }, {
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 41.5, 38.5, CAVERNS_OF_TIME },
 						-- #else
-						{ 58.4, 54.2, TANARIS },
+						{ 58.4, 54.2, MAP.TANARIS },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_3 },
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 39.4, 44.4, CAVERNS_OF_TIME },
 						-- #else
-						{ 59.6, 54.0, TANARIS },
+						{ 59.6, 54.0, MAP.TANARIS },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 55.3, 27.9, 74 },	-- Caverns of Time Entrance
 						-- #else
-						{ 66.0, 49.6, TANARIS },
+						{ 66.0, 49.6, MAP.TANARIS },
 						-- #endif
 					},
 					["isBreadcrumb"] = true,

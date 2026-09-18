@@ -13,7 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER CATA
 			{ 41.0, 94.6, SOUTHERN_BARRENS },
 			-- #else
-			{ 40.94, 94.55, THE_BARRENS },
+			{ 40.94, 94.55, MAP.THE_BARRENS },
 			-- #endif
 		},
 		["lvl"] = lvlsquish(17, 25, 10),
@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(1102, {	-- A Vengeful Fate
 					["qg"] = 4451,	-- Auld Stonespire
-					["coord"] = { 36.2, 59.8, THUNDER_BLUFF },
+					["coord"] = { 36.2, 59.8, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					["provider"] = { "i", 17008 },	-- Small Scroll
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -94,13 +94,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					["provider"] = { "i", 49205 },	-- Small Scroll
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1221, {	-- Blueleaf Tubers
 					["qg"] = 3446,	-- Mebok Mizzyrix
-					["coord"] = { 62.4, 37.6, THE_BARRENS },
+					["coord"] = { 62.4, 37.6, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 20,
 					["groups"] = {
@@ -118,21 +118,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 5880 },	-- Crate With Holes
 								{ "o", 21277 },	-- Crate With Holes
 							},
-							["coord"] = { 62.3, 37.6, THE_BARRENS },
+							["coord"] = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
 						objective(3, {	-- 0/1 Snufflenose Owner's Manual
 							["providers"] = {
 								{ "i", 5897 },	-- Snufflenose Owner's Manual
 								{ "o", 21530 },	-- Snufflenose Owner's Manual
 							},
-							["coord"] = { 62.3, 37.6, THE_BARRENS },
+							["coord"] = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
 						objective(4, {	-- 0/1 Snufflenose Command Stick
 							["providers"] = {
 								{ "i", 6684 },	-- Snufflenose Command Stick
 								{ "o", 68865 },	-- Snufflenose Command Stick
 							},
-							["coord"] = { 62.3, 37.6, THE_BARRENS },
+							["coord"] = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
 						i(6755, {	-- A Small Container of Gems
 							i(6756),	-- Jewelry Box
@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1109, {	-- Going, Going, Guano!
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
-					["coord"] = { 49.0, 69.8, UNDERCITY },
+					["coord"] = { 49.0, 69.8, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -172,14 +172,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 5790 },	-- Henrig Lonebrow's Journal
 						{ "o", 19861 },	-- Henrig Lonebrow's Journal
 					},
-					["coord"] = { 30.0, 24.0, THOUSAND_NEEDLES },
+					["coord"] = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 29,
 				}),
 				q(1142, {	-- Mortality Wanes
 					["qg"] = 4510,	-- Heralath Fallowbrook
-					["coord"] = { 69.4, 67.6, DARNASSUS },
+					["coord"] = { 69.4, 67.6, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -230,7 +230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1101, {	-- The Crone of the Kraul
 					["sourceQuest"] = 1100,	-- Lonebrow's Journal
 					["qg"] = 4048,	-- Falfindel Waywarder
-					["coord"] = { 89.6, 46.6, FERALAS },
+					["coord"] = { 89.6, 46.6, MAP.FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 29,

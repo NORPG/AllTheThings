@@ -12,11 +12,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		-- #if AFTER CATA
 		["coords"] = {
-			{ 16.5, 11.0, ASHENVALE },
-			{ 14.2, 14.0, ASHENVALE },	-- Cave entrance
+			{ 16.5, 11.0, MAP.ASHENVALE },
+			{ 14.2, 14.0, MAP.ASHENVALE },	-- Cave entrance
 		},
 		-- #else
-		["coord"] = { 14.0, 11.1, ASHENVALE },
+		["coord"] = { 14.0, 11.1, MAP.ASHENVALE },
 		-- #endif
 		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
 		-- #if SEASON_OF_DISCOVERY
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6565, {	-- Allegiance to the Old Gods (2/2)
 					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods (1/2)
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.3, ASHENVALE },
+					["coord"] = { 11.6, 34.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(908, {	-- Amongst the Ruins
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.3, ASHENVALE },
+					["coord"] = { 11.6, 34.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_1_2_4 },
 					-- #if AFTER 1.2.4
 					["description"] = "This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(6921, {	-- Amongst the Ruins
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.3, ASHENVALE },
+					["coord"] = { 11.6, 34.3, MAP.ASHENVALE },
 					["timeline"] = { ADDED_1_2_4, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6922, {	-- Baron Aquanis
 					["provider"] = { "i", 16782 },	-- Strange Water Globe
 					["timeline"] = { REMOVED_6_0_2 },
-					["maps"] = { ASHENVALE },
+					["maps"] = { MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 					["groups"] = {
@@ -132,7 +132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26894, {	-- Blackfathom Deeps (H)
 					["qg"] = 34122,	-- Commander Grimfang
-					["coord"] = { 12.1, 33.8, ASHENVALE },
+					["coord"] = { 12.1, 33.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -140,7 +140,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26897, {	-- Blackfathom Deeps (A)
 					["qg"] = 3845,	-- Shindrell Swiftfire
-					["coord"] = { 18.2, 20.4, ASHENVALE },
+					["coord"] = { 18.2, 20.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -148,7 +148,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26898, {	-- Blackfathom Deeps (A)
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -158,7 +158,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 1198,	-- In Search of Thaelrid
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -196,7 +196,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6561, {	-- Blackfathom Villainy (H)
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -236,7 +236,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
 					-- #endif
 					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
-					["coord"] = { 28.7, 52.1, DARNASSUS },
+					["coord"] = { 28.7, 52.1, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
@@ -251,7 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(971, {	-- Knowledge in the Deeps
 					["sourceQuest"] = 968,	-- The Powers Below
 					["qg"] = 2786,	-- Gerrig Bonegrip
-					["coord"] = { 50.8, 5.6, IRONFORGE },
+					["coord"] = { 50.8, 5.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1275, {	-- Researching the Corruption
 					["sourceQuest"] = 3765,	-- The Corruption Abroad
 					["qg"] = 8997,	-- Gershala Nightwhisper
-					["coord"] = { 38.3, 43.0, DARKSHORE },
+					["coord"] = { 38.3, 43.0, MAP.DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -346,7 +346,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26884, {	-- Researching the Corruption [CATA]
 					["qg"] = 33258,	-- Relwyn Shadestar
-					["coord"] = { 38.3, 43.0, DARKSHORE },
+					["coord"] = { 38.3, 43.0, MAP.DARKSHORE },
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -373,13 +373,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 4984,	-- Argos Nightwhisper
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 36.2, 67.6, STORMWIND_CITY },
+						{ 36.2, 67.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 21.6, 55.6, STORMWIND_CITY },
+						{ 21.6, 55.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARKSHORE },
+					["maps"] = { MAP.DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
@@ -400,7 +400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6563, {	-- The Essence of Aku'Mai [Pre-CATA]
 					["sourceQuest"] = 6562,	-- Trouble in the Deeps
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.3, ASHENVALE },
+					["coord"] = { 11.6, 34.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
@@ -453,16 +453,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(6562, {	-- Trouble in the Deeps
 					["qg"] = 11862,	-- Tsunaman
-					["coord"] = { 47.3, 64.4, STONETALON_MOUNTAINS },
+					["coord"] = { 47.3, 64.4, MAP.STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ASHENVALE },
+					["maps"] = { MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 17,
 				}),
 				q(1199, {	-- Twilight Falls
 					["qg"] = 4784,	-- Argent Guard Manados <The Argent Dawn>
-					["coord"] = { 38.3, 43.0, DARNASSUS },
+					["coord"] = { 38.3, 43.0, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -742,7 +742,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(QUESTS, {
 						q(78927, {	-- Allegiance to the Old Gods
 							["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-							["coord"] = { 11.6, 34.3, ASHENVALE },
+							["coord"] = { 11.6, 34.3, MAP.ASHENVALE },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -756,7 +756,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(79099, {	-- Baron Aquanis (A)
 							["description"] = "PROTIP: Completing this quest gives you a portal to BFD!",
 							["qg"] = 214876,	-- Davius Voidstar
-							["coord"] = { 36.8, 43.6, DARKSHORE },
+							["coord"] = { 36.8, 43.6, MAP.DARKSHORE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -771,7 +771,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 211454 },	-- Strange Water Globe
 								{ "n",  12736 },	-- Je'neu Sancrea <The Earthen Ring>
 							},
-							["coord"] = { 11.6, 34.2, ASHENVALE },
+							["coord"] = { 11.6, 34.2, MAP.ASHENVALE },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -785,7 +785,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(78921, {	-- Blackfathom Villainy (A)
 							["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
-							["maps"] = { DARNASSUS },
+							["maps"] = { MAP.DARNASSUS },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -799,7 +799,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(78922, {	-- Blackfathom Villainy (H)
 							["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
-							["maps"] = { THUNDER_BLUFF },
+							["maps"] = { MAP.THUNDER_BLUFF },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -813,7 +813,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(78923, {	-- Knowledge in the Deeps
 							["qg"] = 2786,	-- Gerrig Bonegrip
-							["coord"] = { 50.8, 5.6, IRONFORGE },
+							["coord"] = { 50.8, 5.6, MAP.IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -830,7 +830,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(78926, {	-- Researching the Corruption
 							["sourceQuest"] = 3765,	-- The Corruption Abroad
 							["qg"] = 8997,	-- Gershala Nightwhisper
-							["coord"] = { 38.3, 43.0, DARKSHORE },
+							["coord"] = { 38.3, 43.0, MAP.DARKSHORE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -861,13 +861,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 4984,	-- Argos Nightwhisper
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 36.2, 67.6, STORMWIND_CITY },
+								{ 36.2, 67.6, MAP.STORMWIND_CITY },
 								-- #else
-								{ 21.6, 55.6, STORMWIND_CITY },
+								{ 21.6, 55.6, MAP.STORMWIND_CITY },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3 },
-							["maps"] = { DARKSHORE },
+							["maps"] = { MAP.DARKSHORE },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["lvl"] = 20,
@@ -877,7 +877,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 209693 },	-- Perfect Blackfathom Pearl
 								{ "n", 215367 },	-- Dawnwatcher Selgorm <The Argent Dawn>
 							},
-							["coord"] = { 56.0, 24.5, DARNASSUS },
+							["coord"] = { 56.0, 24.5, MAP.DARNASSUS },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -891,7 +891,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 211452 },	-- Perfect Blackfathom Pearl
 								{ "n",   9087 },	-- Bashana Runetotem
 							},
-							["coord"] = { 70.8, 33.8, THUNDER_BLUFF },
+							["coord"] = { 70.8, 33.8, MAP.THUNDER_BLUFF },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -902,7 +902,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(78925, {	-- Twilight Falls
 							["qg"] = 4784,	-- Argent Guard Manados <The Argent Dawn>
-							["coord"] = { 38.3, 43.0, DARNASSUS },
+							["coord"] = { 38.3, 43.0, MAP.DARNASSUS },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {

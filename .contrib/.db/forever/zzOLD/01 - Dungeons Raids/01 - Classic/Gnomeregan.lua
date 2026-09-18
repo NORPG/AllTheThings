@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER MOP
 			{ 30.1, 74.6, NEW_TINKERTOWN_LOWER },	-- Gnomeregan [Dun Morogh]
 			-- #else
-			{ 18.4, 38.6, DUN_MOROGH },	-- Gnomeregan [Dun Morogh]
+			{ 18.4, 38.6, MAP.DUN_MOROGH },	-- Gnomeregan [Dun Morogh]
 			-- #endif
 		},
 		["maps"] = { GNOMEREGAN_LEVEL2, GNOMEREGAN_LEVEL3, GNOMEREGAN_LEVEL4 },
@@ -401,7 +401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7850,	-- Kernobee
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
-					["maps"] = { STRANGLETHORN_VALE },
+					["maps"] = { MAP.STRANGLETHORN_VALE },
 					-- #endif
 					["lvl"] = 20,
 					["groups"] = {
@@ -415,7 +415,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2931, {	-- Castpipe's Task
 					["qg"] = 4077,	-- Gaxim Rustfizzle
-					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
+					["coord"] = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -424,10 +424,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2842, {	-- Chief Engineer Scooty
 					["description"] = "Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",
 					["qg"] = 3413,	-- Sovik <Engineering Supplies>
-					["coord"] = { 75.6, 25.2, ORGRIMMAR },
+					["coord"] = { 75.6, 25.2, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
-					["maps"] = { STRANGLETHORN_VALE },
+					["maps"] = { MAP.STRANGLETHORN_VALE },
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -435,7 +435,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2930, {	-- Data Rescue
 					["sourceQuest"] = 2931,	-- Castpipe's Task
 					["qg"] = 7950,	-- Master Mechanic Castpipe
-					["coord"] = { 70.2, 48.4, IRONFORGE },
+					["coord"] = { 70.2, 48.4, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -454,7 +454,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2924, {	-- Essential Artificials
 					["sourceQuest"] = 2925,	-- Klockmort's Essentials
 					["qg"] = 6169,	-- Klockmort Spannerspan
-					["coord"] = { 68.2, 46.2, IRONFORGE },
+					["coord"] = { 68.2, 46.2, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
@@ -480,7 +480,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2926, {	-- Gnogaine
 					["sourceQuest"] = 2927,	-- The Day After
 					["qg"] = 1268,	-- Ozzie Togglevolt
-					["coord"] = { 45.8, 49.2, DUN_MOROGH },
+					["coord"] = { 45.8, 49.2, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -495,7 +495,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2948, {	-- Gnome Improvement
 					["sourceQuest"] = 2947,	-- Return of the Ring [Alliance]
 					["qg"] = 6826,	-- Talvash del Kissel
-					["coord"] = { 36.2, 3.8, IRONFORGE },
+					["coord"] = { 36.2, 3.8, MAP.IRONFORGE },
 					["cost"] = {
 						{ "i", 9362, 1 },	-- Brilliant Gold Ring
 						{ "i", 2842, 1 },	-- Silver Bar
@@ -511,7 +511,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2843, {	-- Gnomer-gooooone!
 					["sourceQuest"] = 2842,	-- Chief Engineer Scooty
 					["qg"] = 7853,	-- Scooty <Chief Engineer>
-					["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
+					["coord"] = { 27.6, 77.4, MAP.STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -533,9 +533,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 6579,	-- Shoni the Shilent
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 62.8, 34.8, STORMWIND_CITY },
+						{ 62.8, 34.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 55.5, 12.5, STORMWIND_CITY },
+						{ 55.5, 12.5, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -556,7 +556,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26943, {	-- Home Sweet Gnome
 					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["qg"] = 2789,	-- Skuerto
-					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
+					["coord"] = { 40.3, 49.1, MAP.ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -564,7 +564,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2925, {	-- Klockmort's Essentials
 					["qg"] = 6142,	-- Mathiel
-					["coord"] = { 59.2, 45.2, DARNASSUS },
+					["coord"] = { 59.2, 45.2, MAP.DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -575,9 +575,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 3412,	-- Nogg <Expert Engineer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.7, 57.0, ORGRIMMAR },
+						{ 56.7, 57.0, MAP.ORGRIMMAR },
 						-- #else
-						{ 75.8, 25.2, ORGRIMMAR },
+						{ 75.8, 25.2, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["cost"] = {
@@ -595,7 +595,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2947, {	-- Return of the Ring [Alliance]
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
 					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
@@ -605,7 +605,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2949, {	-- Return of the Ring [Horde]
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
 					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
@@ -614,7 +614,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2841, {	-- Rig Wars
 					["qg"] = 3412,	-- Nogg <Expert Engineer>
-					["coord"] = { 75.8, 25.2, ORGRIMMAR },
+					["coord"] = { 75.8, 25.2, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "questID", 2842 },	-- Chief Engineer Scooty
@@ -644,7 +644,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2922, {	-- Save Techbot's Brain!
 					["sourceQuest"] = 2923,	-- Tinkmaster Overspark
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-					["coord"] = { 70.4, 49.4, IRONFORGE },
+					["coord"] = { 70.4, 49.4, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -656,7 +656,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2927, {	-- The Day After
 					["qg"] = 6569,	-- Gnoarn
-					["coord"] = { 69.6, 50.6, IRONFORGE },
+					["coord"] = { 69.6, 50.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -664,7 +664,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2929, {	-- The Grand Betrayal
 					["qg"] = 7937,	-- High Tinker Mekkatorque <King of Gnomes>
-					["coord"] = { 69.2, 49.2, IRONFORGE },
+					["coord"] = { 69.2, 49.2, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -794,7 +794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2962, {	-- The Only Cure is More Green Glow
 					["sourceQuest"] = 2926,	-- Gnogaine
 					["qg"] = 1268,	-- Ozzie Togglevolt
-					["coord"] = { 45.8, 49.2, DUN_MOROGH },
+					["coord"] = { 45.8, 49.2, MAP.DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -810,13 +810,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7917,	-- Brother Sarno
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 51.6, 48.6, STORMWIND_CITY },
+						{ 51.6, 48.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 40.6, 30.0, STORMWIND_CITY },
+						{ 40.6, 30.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
@@ -992,7 +992,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(79985, {	-- A Fine Mess
 							["qg"] = 7850,	-- Kernobee
 							-- #if BEFORE 4.0.3
-							["maps"] = { STRANGLETHORN_VALE },
+							["maps"] = { MAP.STRANGLETHORN_VALE },
 							-- #endif
 							["lvl"] = 40,
 							["groups"] = {
@@ -1006,16 +1006,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(80133, {	-- Chief Engineer Scooty
 							["qg"] = 3413,	-- Sovik <Engineering Supplies>
-							["coord"] = { 75.6, 25.2, ORGRIMMAR },
+							["coord"] = { 75.6, 25.2, MAP.ORGRIMMAR },
 							-- #if BEFORE 4.0.3
-							["maps"] = { STRANGLETHORN_VALE },
+							["maps"] = { MAP.STRANGLETHORN_VALE },
 							-- #endif
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
 						}),
 						q(80143, {	-- Data Rescue
 							["qg"] = 7950,	-- Master Mechanic Castpipe
-							["coord"] = { 70.2, 48.4, IRONFORGE },
+							["coord"] = { 70.2, 48.4, MAP.IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1029,7 +1029,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(80136, {	-- Essential Artificials
 							["sourceQuest"] = 80135,	-- Klockmort's Essentials
 							["qg"] = 6169,	-- Klockmort Spannerspan
-							["coord"] = { 68.2, 46.2, IRONFORGE },
+							["coord"] = { 68.2, 46.2, MAP.IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1045,7 +1045,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(80139, {	-- Gnogaine
 							["sourceQuest"] = 2927,	-- The Day After
 							["qg"] = 1268,	-- Ozzie Togglevolt
-							["coord"] = { 45.8, 49.2, DUN_MOROGH },
+							["coord"] = { 45.8, 49.2, MAP.DUN_MOROGH },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1059,7 +1059,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(80131, {	-- Gnome Improvement
 							["sourceQuest"] = 79987,	-- Return of the Ring [Alliance]
 							["qg"] = 6826,	-- Talvash del Kissel
-							["coord"] = { 36.2, 3.8, IRONFORGE },
+							["coord"] = { 36.2, 3.8, MAP.IRONFORGE },
 							["cost"] = {
 								{ "i", 216662, 1 },	-- Brilliant Gold Ring
 								{ "i", 2842, 1 },	-- Silver Bar
@@ -1075,7 +1075,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(80134, {	-- Gnomer-gooooone!
 							["sourceQuest"] = 80133,	-- Chief Engineer Scooty
 							["qg"] = 7853,	-- Scooty <Chief Engineer>
-							["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
+							["coord"] = { 27.6, 77.4, MAP.STRANGLETHORN_VALE },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1096,9 +1096,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 6579,	-- Shoni the Shilent
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 62.8, 34.8, STORMWIND_CITY },
+								{ 62.8, 34.8, MAP.STORMWIND_CITY },
 								-- #else
-								{ 55.5, 12.5, STORMWIND_CITY },
+								{ 55.5, 12.5, MAP.STORMWIND_CITY },
 								-- #endif
 							},
 							["races"] = ALLIANCE_ONLY,
@@ -1113,7 +1113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(80135, {	-- Klockmort's Essentials
 							["qg"] = 6142,	-- Mathiel
-							["coord"] = { 59.2, 45.2, DARNASSUS },
+							["coord"] = { 59.2, 45.2, MAP.DARNASSUS },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["lvl"] = 40,
@@ -1141,9 +1141,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 3412,	-- Nogg <Expert Engineer>
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 56.7, 57.0, ORGRIMMAR },
+								{ 56.7, 57.0, MAP.ORGRIMMAR },
 								-- #else
-								{ 75.8, 25.2, ORGRIMMAR },
+								{ 75.8, 25.2, MAP.ORGRIMMAR },
 								-- #endif
 							},
 							["cost"] = {
@@ -1162,30 +1162,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["description"] = "You can technically skip this quest if you get summoned to the next one... But you're a Completionist, right? Right?!",
 							["sourceQuest"] = 79981,	-- The Corroded Core
 							["qg"] = 7853,	-- Scooty <Chief Engineer>
-							["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
+							["coord"] = { 27.6, 77.4, MAP.STRANGLETHORN_VALE },
 							["maps"] = {
-								DUSTWALLOW_MARSH,
-								DESOLACE,
-								TANARIS,
-								FERALAS,
+								MAP.DUSTWALLOW_MARSH,
+								MAP.DESOLACE,
+								MAP.TANARIS,
+								MAP.FERALAS,
 							},
 							["lvl"] = 40,
 							["groups"] = {
 								objective(1, {	-- Quadrangulation Beacon 001
 									["provider"] = { "o", 424074 },	-- Quadrangulation Beacon 001
-									["coord"] = { 58.6, 13.0, DUSTWALLOW_MARSH },
+									["coord"] = { 58.6, 13.0, MAP.DUSTWALLOW_MARSH },
 								}),
 								objective(2, {	-- Quadrangulation Beacon 002
 									["provider"] = { "o", 424075 },	-- Quadrangulation Beacon 002
-									["coord"] = { 32.01, 72.72, DESOLACE },
+									["coord"] = { 32.01, 72.72, MAP.DESOLACE },
 								}),
 								objective(3, {	-- Quadrangulation Beacon 003
 									["provider"] = { "o", 424076 },	-- Quadrangulation Beacon 003
-									["coord"] = { 37.8, 27.3, TANARIS },
+									["coord"] = { 37.8, 27.3, MAP.TANARIS },
 								}),
 								objective(4, {	-- Quadrangulation Beacon 004
 									["provider"] = { "o", 424077 },	-- Quadrangulation Beacon 004
-									["coord"] = { 29.3, 93.8, FERALAS },
+									["coord"] = { 29.3, 93.8, MAP.FERALAS },
 								}),
 							},
 						}),
@@ -1195,7 +1195,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 216662 },	-- Brilliant Gold Ring
 								{ "o", 142487 },	-- The Sparklematic 5200
 							},
-							["maps"] = { IRONFORGE },
+							["maps"] = { MAP.IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 						}),
@@ -1205,13 +1205,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 216662 },	-- Brilliant Gold Ring
 								{ "o", 142487 },	-- The Sparklematic 5200
 							},
-							["maps"] = { ORGRIMMAR },
+							["maps"] = { MAP.ORGRIMMAR },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
 						}),
 						q(80132, {	-- Rig Wars
 							["qg"] = 3412,	-- Nogg <Expert Engineer>
-							["coord"] = { 75.8, 25.2, ORGRIMMAR },
+							["coord"] = { 75.8, 25.2, MAP.ORGRIMMAR },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1244,7 +1244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(80137, {	-- Save Techbot's Brain!
 							["sourceQuest"] = 80138,	-- Tinkmaster Overspark
 							["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-							["coord"] = { 70.4, 49.4, IRONFORGE },
+							["coord"] = { 70.4, 49.4, MAP.IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1258,12 +1258,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 213736 },	-- Corroded G-7 C.O.R.E. Processor
 								{ "n", 218237 },	-- Wirdal Wondergear <Gnomeregan Refugee>
 							},
-							["maps"] = { FERALAS },
+							["maps"] = { MAP.FERALAS },
 							["lvl"] = 40,
 						}),
 						q(80180, {	-- The Grand Betrayal
 							["qg"] = 7937,	-- High Tinker Mekkatorque <King of Gnomes>
-							["coord"] = { 69.2, 49.2, IRONFORGE },
+							["coord"] = { 69.2, 49.2, MAP.IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1280,7 +1280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 217350 },	-- Thermaplugg's Engineering Notes (A)
 								{ "n", 7937 },	-- High Tinker Mekkatorque <King of Gnomes>
 							},
-							["coord"] = { 69.0, 49.0, IRONFORGE },
+							["coord"] = { 69.0, 49.0, MAP.IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1295,7 +1295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 217351 },	-- Thermaplugg's Engineering Notes (B)
 								{ "n", 3412 },	-- Nogg <Expert Engineer>
 							},
-							["coord"] = { 75.8, 25.2, ORGRIMMAR },
+							["coord"] = { 75.8, 25.2, MAP.ORGRIMMAR },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1308,7 +1308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(80182, {	-- The Only Cure is More Green Glow
 							["sourceQuest"] = 80139,	-- Gnogaine
 							["qg"] = 1268,	-- Ozzie Togglevolt
-							["coord"] = { 45.8, 49.2, DUN_MOROGH },
+							["coord"] = { 45.8, 49.2, MAP.DUN_MOROGH },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1385,12 +1385,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 7917,	-- Brother Sarno
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 51.6, 48.6, STORMWIND_CITY },
+								{ 51.6, 48.6, MAP.STORMWIND_CITY },
 								-- #else
-								{ 40.6, 30.0, STORMWIND_CITY },
+								{ 40.6, 30.0, MAP.STORMWIND_CITY },
 								-- #endif
 							},
-							["maps"] = { IRONFORGE },
+							["maps"] = { MAP.IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["lvl"] = 40,
@@ -1398,7 +1398,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(79982, {	-- Warranty Claim
 							["sourceQuest"] = 79981,	-- The Corroded Core
 							["qg"] = 218237,	-- Wirdal Wondergear <Gnomeregan Refugee>
-							["coord"] = { 84.2, 43.8, FERALAS },
+							["coord"] = { 84.2, 43.8, MAP.FERALAS },
 							["lvl"] = 40,
 							["groups"] = {
 								objective(1, {	-- 0/1 Charged Voidcore

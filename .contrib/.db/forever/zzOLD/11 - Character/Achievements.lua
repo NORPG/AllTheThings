@@ -182,7 +182,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	ach(545, {	-- Shave and a Haircut
 		["timeline"] = { ADDED_3_0_2 },
-		["maps"] = { STORMWIND_CITY, ORGRIMMAR, NORTHREND_DALARAN },
+		["maps"] = { MAP.STORMWIND_CITY, MAP.ORGRIMMAR, NORTHREND_DALARAN },
 	}),
 	ach(1020, {	-- Ten Tabards [TODO]
 		["timeline"] = { ADDED_3_0_2 },

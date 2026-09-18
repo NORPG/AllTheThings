@@ -510,7 +510,7 @@ maproot(MAP.KALIMDOR, MAP.ELWYNN_FOREST, {
 					{ 41.7, 65.6, MAP.ELWYNN_FOREST },	-- Smith Argus
 					{ 31.0, 47.4, MAP.REDRIDGE_MOUNTAINS },	-- Verner Osgood
 				},
-				maps = { STORMWIND_CITY },
+				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,	-- for "Stormpike's Delivery" in Stormwind
 				lvl = 9,

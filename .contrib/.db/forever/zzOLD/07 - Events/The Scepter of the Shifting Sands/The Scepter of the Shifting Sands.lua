@@ -31,7 +31,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 		["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
 		["maps"] = {
 			CAVERNS_OF_TIME,
-			TANARIS,
+			MAP.TANARIS,
 		},
 		["lvl"] = 60,
 		["groups"] = {
@@ -39,7 +39,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8519, {	-- A Pawn on the Eternal Board
 					["sourceQuest"] = 8305,	-- Long Forgotten Memories
 					["provider"] = { "o", 180633 },	-- Crystalline Tear
-					["coord"] = { 28.7, 89.1, SILITHUS },
+					["coord"] = { 28.7, 89.1, MAP.SILITHUS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
@@ -49,7 +49,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "n", 15180 },	-- Baristolth of the Shifting Sands
 						{ "i", 20415 },	-- The War of the Shifting Sands
 					},
-					["coord"] = { 49.5, 36.4, SILITHUS },
+					["coord"] = { 49.5, 36.4, MAP.SILITHUS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
@@ -57,7 +57,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 					["provider"] = { "i", 20949 },	-- Magical Ledger
 					["qg"] = 15481,	-- Spirit of Azuregos
-					["coord"] = { 57.0, 85.6, AZSHARA },
+					["coord"] = { 57.0, 85.6, MAP.AZSHARA },
 					["lvl"] = 60,
 				}),
 				applyclassicphase(PHASE_FIVE_GONG, q(8743, {	-- Bang a Gong!
@@ -66,7 +66,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "o", 180717 },	-- The Scarab Gong
 						{ "i",  21175 },	-- The Scepter of the Shifting Sands
 					},
-					["coord"] = { 25.7, 90.9, SILITHUS },
+					["coord"] = { 25.7, 90.9, MAP.SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
 						ach(416, {	-- Scarab Lord (Achievement)
@@ -85,8 +85,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8606, {	-- Decoy!
 					["sourceQuest"] = 8598,	-- rAnS0m
 					["qg"] = 11811,	-- Narain Soothfancy
-					["coord"] = { 65.2, 18.6, TANARIS },
-					["maps"] = { WINTERSPRING },
+					["coord"] = { 65.2, 18.6, MAP.TANARIS },
+					["maps"] = { MAP.WINTERSPRING },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- Who Does Number Two Work For?
@@ -96,7 +96,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								{ "i", 21039 },	-- Narain's Turban
 								{ "i", 21040 },	-- Narain's Robe
 							},
-							["coord"] = { 65.0, 72.0, WINTERSPRING },
+							["coord"] = { 65.0, 72.0, MAP.WINTERSPRING },
 						}),
 						i(21042, {	-- Narain's Special Kit
 							i(21037),	-- Crude Map
@@ -109,13 +109,13 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8597, {	-- Draconic for Dummies
 					["sourceQuest"] = 8576,	-- Translating the Ledger
 					["qg"] = 11811,	-- Narain Soothfancy
-					["coord"] = { 65.2, 18.6, TANARIS },
+					["coord"] = { 65.2, 18.6, MAP.TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8586, {	-- Dirge's Kickin' Chimaerok Chops
 					["sourceQuest"] = 8585,	-- The Isle of Dread!
 					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
-					["coord"] = { 52.6, 28.1, TANARIS },
+					["coord"] = { 52.6, 28.1, MAP.TANARIS },
 					["cost"] = {
 						{ "i", 9061, 20 },	-- Goblin Rocket Fuel
 						{ "i", 8150, 20 },	-- Deeprock Salt
@@ -134,7 +134,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8305, {	-- Long Forgotten Memories
 					["sourceQuest"] = 8303,	-- Anachronos
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65.0, 50.0, TANARIS },
+					["coord"] = { 65.0, 50.0, MAP.TANARIS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
@@ -147,7 +147,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					-- #if BEFORE CATA
 					["description"] = "You must be on the quest 'Draconic for Dummies' for this quest to be available.",
 					-- #endif
-					["coord"] = { 59.4, 96.0, TANARIS },
+					["coord"] = { 59.4, 96.0, MAP.TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8730, {	-- Nefarius's Corruption
@@ -171,13 +171,13 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8584, {	-- Never Ask Me About My Business
 					["sourceQuest"] = 8576,	-- Translating the Ledger
 					["qg"] = 11811,	-- Narain Soothfancy
-					["coord"] = { 65.2, 18.6, TANARIS },
+					["coord"] = { 65.2, 18.6, MAP.TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8288, {	-- Only One May Rise
 					["sourceQuest"] = 8286,	-- What Tomorrow Brings
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["coord"] = { 49.5, 36.4, SILITHUS },
+					["coord"] = { 49.5, 36.4, MAP.SILITHUS },
 					["maps"] = { BLACKWING_LAIR },
 					["lvl"] = 60,
 					["groups"] = {
@@ -194,7 +194,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "o", 180652 },	-- Freshly Dug Dirt
 						{ "i",  21029 },	-- Ransom Letter
 					},
-					["coord"] = { 59.4, 96.0, TANARIS },
+					["coord"] = { 59.4, 96.0, MAP.TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8587, {	-- Return to Narain
@@ -203,13 +203,13 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "n", 8125 },	-- Dirge Quikcleave <Butcher>
 						{ "i", 21028 },	-- 500 Pound Chicken
 					},
-					["coord"] = { 52.6, 28.1, TANARIS },
+					["coord"] = { 52.6, 28.1, MAP.TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8578, {	-- Scrying Goggles? No Problem!
 					["sourceQuest"] = 8577,	-- Stewvul, Ex-B.F.F.
 					["provider"] = { "o", 180642 },	-- Inconspicuous Crate
-					["coord"] = { 46.2, 86.7, SILVERPINE_FOREST },
+					["coord"] = { 46.2, 86.7, MAP.SILVERPINE_FOREST },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu
 					["maps"] = { MOLTEN_CORE },
 					["lvl"] = 60,
@@ -222,8 +222,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8577, {	-- Stewvul, Ex-B.F.F.
 					["sourceQuest"] = 8576,	-- Translating the Ledger
 					["qg"] = 11811,	-- Narain Soothfancy
-					["coord"] = { 65.2, 18.6, TANARIS },
-					["maps"] = { SILVERPINE_FOREST },
+					["coord"] = { 65.2, 18.6, MAP.TANARIS },
+					["maps"] = { MAP.SILVERPINE_FOREST },
 					["lvl"] = 60,
 				}),
 				q(8741, {	-- The Champion Returns
@@ -232,14 +232,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "n", 11832 },	-- Keeper Remulos
 						{ "i", 21139 },	-- Green Scepter Shard
 					},
-					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["coord"] = { 36.18, 41.79, MAP.MOONGLADE },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8555, {	-- The Charge of the Dragonflights
 					["sourceQuest"] = 8519,	-- A Pawn on the Eternal Board
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65.0, 50.0, TANARIS },
+					["coord"] = { 65.0, 50.0, MAP.TANARIS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
@@ -250,7 +250,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						8620,	-- The Only Prescription
 					},
 					["qg"] = 11811,	-- Narain Soothfancy
-					["coord"] = { 65.2, 18.6, TANARIS },
+					["coord"] = { 65.2, 18.6, MAP.TANARIS },
 					["cost"] = {
 						{ "i", 12360, 20 },	-- Arcanite Bar
 						{ "i", 18562, 10 },	-- Elementium Ore
@@ -262,7 +262,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8302, {	-- The Hand of the Righteous
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["coord"] = { 49.5, 36.4, SILITHUS },
+					["coord"] = { 49.5, 36.4, MAP.SILITHUS },
 					["maxReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["cost"] = { { "i", 20384, 200 } },	-- Silithid Carapace Fragment
 					["repeatable"] = true,
@@ -274,14 +274,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8585, {	-- The Isle of Dread!
 					["sourceQuest"] = 8584,	-- Never Ask Me About My Business
 					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
-					["coord"] = { 52.6, 28.1, TANARIS },
-					["maps"] = { FERALAS },
+					["coord"] = { 52.6, 28.1, MAP.TANARIS },
+					["maps"] = { MAP.FERALAS },
 					["cost"] = { { "i", 21024, 20 } },	-- Chimaerok Tenderloin
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lakmaeran's Carcass
 							["provider"] = { "i", 21027 },	-- Lakmaeran's Carcass
-							["coord"] = { 29.8, 72.6, FERALAS },
+							["coord"] = { 29.8, 72.6, MAP.FERALAS },
 							["cr"] = 12803,	-- Lord Lakmaeran
 						}),
 					},
@@ -293,7 +293,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						8741,	-- The Champion Returns
 					},
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65.0, 50.0, TANARIS },
+					["coord"] = { 65.0, 50.0, MAP.TANARIS },
 					["lvl"] = 60,
 					["groups"] = {
 						i(21175),	-- The Scepter of the Shifting Sands
@@ -303,7 +303,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["description"] = "You do NOT want to kill Eranikus or allow Remulos to die.",
 					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 					["qg"] = 11832,	-- Keeper Remulos
-					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["coord"] = { 36.18, 41.79, MAP.MOONGLADE },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 					["groups"] = {
@@ -314,14 +314,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8735, {	-- The Nightmare's Corruption
 					["sourceQuest"] = 8734,	-- Tyrande and Remulos
 					["qg"] = 11832,	-- Keeper Remulos
-					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["coord"] = { 36.18, 41.79, MAP.MOONGLADE },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
+					["maps"] = { MAP.ASHENVALE, MAP.DUSKWOOD, MAP.FERALAS, MAP.THE_HINTERLANDS },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fragment of the Nightmare's Corruption (Ashenvale)
 							["provider"] = { "i", 21147 },	-- Fragment of the Nightmare's Corruption
-							["coord"] = { 91.6, 39.0, ASHENVALE },
+							["coord"] = { 91.6, 39.0, MAP.ASHENVALE },
 							["crs"] = {
 								12474,	-- Emeraldon Boughguard
 								12475,	-- Emeraldon Tree Warder
@@ -331,12 +331,12 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						objective(2, {	-- 0/1 Fragment of the Nightmare's Corruption (Duskwood)
 							["provider"] = { "i", 21149 },	-- Fragment of the Nightmare's Corruption
 							["description"] = "It is recommended that you bring at least 30 players and they should be experienced raiders.",
-							["coord"] = { 48.0, 33.0, DUSKWOOD },
+							["coord"] = { 48.0, 33.0, MAP.DUSKWOOD },
 							["cr"] = 15625,	-- Twilight Corrupter
 						}),
 						objective(3, {	-- 0/1 Fragment of the Nightmare's Corruption (Feralas)
 							["provider"] = { "i", 21148 },	-- Fragment of the Nightmare's Corruption
-							["coord"] = { 50.4, 15.9, FERALAS },
+							["coord"] = { 50.4, 15.9, MAP.FERALAS },
 							["crs"] = {
 								5320,	-- Jademir Boughguard
 								5319,	-- Jademir Tree Warder
@@ -345,7 +345,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						}),
 						objective(4, {	-- 0/1 Fragment of the Nightmare's Corruption (Hinterlands)
 							["provider"] = { "i", 21146 },	-- Fragment of the Nightmare's Corruption
-							["coord"] = { 61.6, 27.7, THE_HINTERLANDS },
+							["coord"] = { 61.6, 27.7, MAP.THE_HINTERLANDS },
 							["crs"] = {
 								12477,	-- Verdantine Boughguard
 								12479,	-- Verdantine Tree Warder
@@ -357,16 +357,16 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8620, {	-- The Only Prescription
 					["sourceQuest"] = 8606,	-- Decoy!
 					["qg"] = 11811,	-- Narain Soothfancy
-					["coord"] = { 65.2, 18.6, TANARIS },
+					["coord"] = { 65.2, 18.6, MAP.TANARIS },
 					["maps"] = {
 						BLACKWING_LAIR,
 						ONYXIAS_LAIR,
 						MOLTEN_CORE,
-						BLASTED_LANDS,
-						DUSTWALLOW_MARSH,
-						WINTERSPRING,
-						UNDERCITY,
-						STORMWIND_CITY,
+						MAP.BLASTED_LANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.WINTERSPRING,
+						MAP.UNDERCITY,
+						MAP.STORMWIND_CITY,
 					},
 					["lvl"] = 60,
 					["groups"] = {
@@ -394,7 +394,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8301, {	-- The Path of the Righteous
 					["sourceQuest"] = 8288,	-- Only One May Rise
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["coord"] = { 49.5, 36.4, SILITHUS },
+					["coord"] = { 49.5, 36.4, MAP.SILITHUS },
 					["cost"] = { { "i", 20384, 200 } },	-- Silithid Carapace Fragment
 					["lvl"] = 60,
 					["groups"] = {
@@ -405,8 +405,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8729, {	-- The Wrath of Neptulon
 					["sourceQuest"] = 8728,	-- The Good News and The Bad News
 					["qg"] = 11811,	-- Narain Soothfancy
-					["coord"] = { 65.2, 18.6, TANARIS },
-					["maps"] = { AZSHARA },
+					["coord"] = { 65.2, 18.6, MAP.TANARIS },
+					["maps"] = { MAP.AZSHARA },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blue Scepter Shard
@@ -416,7 +416,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							},
 							["description"] = "This summons a 40 man raid boss.",
 							["cost"] = { { "i", 21136, 1 } },	-- Arcanite Buoy
-							["coord"] = { 65.0, 55.0, AZSHARA },
+							["coord"] = { 65.0, 55.0, MAP.AZSHARA },
 							["cr"] = 15571,	-- Maws
 						}),
 						i(21526),	-- Band of Icy Depths
@@ -426,7 +426,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8576, {	-- Translating the Ledger
 					["sourceQuest"] = 8575,	-- Azuregos's Magical Ledger
 					["qg"] = 11811,	-- Narain Soothfancy
-					["coord"] = { 65.2, 18.6, TANARIS },
+					["coord"] = { 65.2, 18.6, MAP.TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8745, {	-- Treasure of the Timeless One
@@ -435,7 +435,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "n", 15693 },	-- Jonathan the Revelator
 						{ "i", 21175 },	-- The Scepter of the Shifting Sands
 					},
-					["coord"] = { 25.9, 91.0, SILITHUS },
+					["coord"] = { 25.9, 91.0, MAP.SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
 						ach(5533, {	-- Veteran of the Shifting Sands
@@ -450,14 +450,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8734, {	-- Tyrande and Remulos
 					["sourceQuest"] = 8733,	-- Eranikus, Tyrant of the Dream
 					["qg"] = 15624,	-- Forest Wisp
-					["coord"] = { 37.5, 47.9, TELDRASSIL },
+					["coord"] = { 37.5, 47.9, MAP.TELDRASSIL },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8286, {	-- What Tomorrow Brings
 					["description"] = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["coord"] = { 49.5, 36.4, SILITHUS },
+					["coord"] = { 49.5, 36.4, MAP.SILITHUS },
 					["lvl"] = 60,
 				}),
 			}),

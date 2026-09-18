@@ -73,12 +73,12 @@ local function BrightlyColoredEgg(groups)
 
 	egg.description = "These eggs can be found spread out in all of the starting zones."
 	egg.maps = {
-		DUROTAR,
-		MULGORE,
-		TIRISFAL_GLADES,
-		DUN_MOROGH,
-		ELWYNN_FOREST,
-		TELDRASSIL,
+		MAP.DUROTAR,
+		MAP.MULGORE,
+		MAP.TIRISFAL_GLADES,
+		MAP.DUN_MOROGH,
+		MAP.ELWYNN_FOREST,
+		MAP.TELDRASSIL,
 		-- #if AFTER TBC
 		EVERSONG_WOODS,
 		AZUREMYST_ISLE,
@@ -331,19 +331,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				crit(9139, {	-- Desolace
-					["maps"] = { DESOLACE },
+					["maps"] = { MAP.DESOLACE },
 				}),
 				crit(9142, {	-- Silithus
-					["maps"] = { SILITHUS },
+					["maps"] = { MAP.SILITHUS },
 				}),
 				crit(9140, {	-- Tanaris
-					["maps"] = { TANARIS },
+					["maps"] = { MAP.TANARIS },
 				}),
 				crit(9138, {	-- The Badlands
-					["maps"] = { BADLANDS },
+					["maps"] = { MAP.BADLANDS },
 				}),
 				crit(9141, {	-- Thousand Needles
-					["maps"] = { THOUSAND_NEEDLES },
+					["maps"] = { MAP.THOUSAND_NEEDLES },
 				}),
 			},
 		}),
@@ -360,7 +360,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["description"] = "Use the Blossoming Branch on someone else and hopefully they return the favor.",
 			["provider"] = { "i", 44792 },	-- Blossoming Branch
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { UNGORO_CRATER },
+			["maps"] = { MAP.UNGORO_CRATER },
 		}),
 		ach(2676, {	-- I Found One!
 			["provider"] = { "i", 45072 },	-- Brightly Colored Egg
@@ -375,13 +375,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["maps"] = { AZUREMYST_ISLE },
 				}),
 				crit(9199, {	-- Dolanaar
-					["maps"] = { TELDRASSIL },
+					["maps"] = { MAP.TELDRASSIL },
 				}),
 				crit(9200, {	-- Goldshire
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 				}),
 				crit(9201, {	-- Kharanos
-					["maps"] = { DUN_MOROGH },
+					["maps"] = { MAP.DUN_MOROGH },
 				}),
 			}),
 		}),
@@ -391,23 +391,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["races"] = HORDE_ONLY,
 			["groups"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
 				crit(9202, {	-- Bloodhoof Village
-					["maps"] = { MULGORE },	-- Bloodhoof Village
+					["maps"] = { MAP.MULGORE },	-- Bloodhoof Village
 				}),
 				crit(9203, {	-- Brill
-					["maps"] = { TIRISFAL_GLADES },
+					["maps"] = { MAP.TIRISFAL_GLADES },
 				}),
 				crit(9204, {	-- Falconwing Square
 					["maps"] = { EVERSONG_WOODS },
 				}),
 				crit(9205, {	-- Razor Hill
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 				}),
 			}),
 		}),
 		ach(2421, {	-- Noble Garden (A)
 			["provider"] = { "i", 44818 },	-- Noblegarden Egg
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { STORMWIND_CITY },
+			["maps"] = { MAP.STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(2420, {	-- Noble Garden (H)
@@ -443,7 +443,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "n", 219936 },	-- [DNT] Vignette
 			},
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
-			["coord"] = { 30.3, 91.4, ELWYNN_FOREST },
+			["coord"] = { 30.3, 91.4, MAP.ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(210594, {	-- Noblegarden Trinket (QI!)
@@ -457,7 +457,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "n", 219928 },	-- [DNT] Vignette
 			},
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
-			["coord"] = { 44.4, 35.1, DUROTAR },
+			["coord"] = { 44.4, 35.1, MAP.DUROTAR },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(216932, {	-- Noblegarden Trinket (QI!)
@@ -468,21 +468,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		n(216836, {	-- Golden Egg
 			["description"] = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
 			["coords"] = {
-				{ 31.0, 85.0, ELWYNN_FOREST },
-				{ 34.91, 87.96, ELWYNN_FOREST },
-				{ 28.8, 86.68, ELWYNN_FOREST },
-				{ 34.83, 81.68, ELWYNN_FOREST },
-				{ 34.5, 80.7, ELWYNN_FOREST },
+				{ 31.0, 85.0, MAP.ELWYNN_FOREST },
+				{ 34.91, 87.96, MAP.ELWYNN_FOREST },
+				{ 28.8, 86.68, MAP.ELWYNN_FOREST },
+				{ 34.83, 81.68, MAP.ELWYNN_FOREST },
+				{ 34.5, 80.7, MAP.ELWYNN_FOREST },
 			},
 		}),
 		n(218736, {	-- Golden Egg
 			["description"] = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
 			["coords"] = {
-				{ 44.8, 32.0, DUROTAR },
-				{ 46.2, 33.4, DUROTAR },	-- confirmed starting point
-				{ 42.6, 37.8, DUROTAR },
-				{ 45.2, 39.6, DUROTAR },
-				{ 46.0, 37.2, DUROTAR },	-- confirmed starting point
+				{ 44.8, 32.0, MAP.DUROTAR },
+				{ 46.2, 33.4, MAP.DUROTAR },	-- confirmed starting point
+				{ 42.6, 37.8, MAP.DUROTAR },
+				{ 45.2, 39.6, MAP.DUROTAR },
+				{ 46.0, 37.2, MAP.DUROTAR },	-- confirmed starting point
 			},
 		}),
 	})),
@@ -508,9 +508,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				32836,	-- Noblegarden Vendor
 			},
 			["coords"] = {
-				{ 56.0, 58.7, TELDRASSIL },	-- Dolanaar
-				{ 43.0, 65.3, ELWYNN_FOREST },	-- Goldshire
-				{ 47.0, 52.5, DUN_MOROGH },	-- Kharanos
+				{ 56.0, 58.7, MAP.TELDRASSIL },	-- Dolanaar
+				{ 43.0, 65.3, MAP.ELWYNN_FOREST },	-- Goldshire
+				{ 47.0, 52.5, MAP.DUN_MOROGH },	-- Kharanos
 			},
 			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -547,15 +547,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 47.11, 59.89, MULGORE },	-- Bloodhoof Village
-				{ 61.35, 52.98, TIRISFAL_GLADES },	-- Brill
+				{ 47.11, 59.89, MAP.MULGORE },	-- Bloodhoof Village
+				{ 61.35, 52.98, MAP.TIRISFAL_GLADES },	-- Brill
 				{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square
-				{ 51.91, 41.87, DUROTAR },	-- Razor Hill
+				{ 51.91, 41.87, MAP.DUROTAR },	-- Razor Hill
 				-- #else
-				{ 47.0, 60.4, MULGORE },	-- Bloodhoof Village
-				{ 61.3, 52.9, TIRISFAL_GLADES },	-- Brill
+				{ 47.0, 60.4, MAP.MULGORE },	-- Bloodhoof Village
+				{ 61.3, 52.9, MAP.TIRISFAL_GLADES },	-- Brill
 				{ 47.6, 47.3, EVERSONG_WOODS },	-- Falconwing Square
-				{ 51.9, 41.9, DUROTAR },	-- Razor Hill
+				{ 51.9, 41.9, MAP.DUROTAR },	-- Razor Hill
 				-- #endif
 				-- #if AFTER TWW
 				{ 45.9, 55.0, DORNOGAL },
@@ -600,22 +600,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["maps"] = {
 				NORTHREND_THE_UNDERBELLY,
 				NORTHREND_DALARAN,
-				DARNASSUS,
-				IRONFORGE,
+				MAP.DARNASSUS,
+				MAP.IRONFORGE,
 				NETHERSTORM,
 				-- #if AFTER CATA
 				THE_CAPE_OF_STRANGLETHORN,
 				NORTHERN_BARRENS,
 				-- #else
-				STRANGLETHORN_VALE,
-				THE_BARRENS,
+				MAP.STRANGLETHORN_VALE,
+				MAP.THE_BARRENS,
 				-- #endif
 				SHATTRATH_CITY,
-				STORMWIND_CITY,
-				TANARIS,
+				MAP.STORMWIND_CITY,
+				MAP.TANARIS,
 				THE_EXODAR,
 				THE_STORM_PEAKS,
-				WINTERSPRING,
+				MAP.WINTERSPRING,
 			},
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
@@ -634,22 +634,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["maps"] = {
 				NORTHREND_THE_UNDERBELLY,
 				NORTHREND_DALARAN,
-				ORGRIMMAR,
+				MAP.ORGRIMMAR,
 				NETHERSTORM,
 				-- #if AFTER CATA
 				THE_CAPE_OF_STRANGLETHORN,
 				NORTHERN_BARRENS,
 				-- #else
-				STRANGLETHORN_VALE,
-				THE_BARRENS,
+				MAP.STRANGLETHORN_VALE,
+				MAP.THE_BARRENS,
 				-- #endif
 				SHATTRATH_CITY,
 				SILVERMOON_CITY,
-				TANARIS,
+				MAP.TANARIS,
 				THE_STORM_PEAKS,
-				THUNDER_BLUFF,
-				UNDERCITY,
-				WINTERSPRING,
+				MAP.THUNDER_BLUFF,
+				MAP.UNDERCITY,
+				MAP.WINTERSPRING,
 			},
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
@@ -670,9 +670,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 			["coords"] = {
 				{ 48.9, 50.0, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
-				{ 55.9, 58.8, TELDRASSIL },	-- Dolanaar
-				{ 42.9, 65.4, ELWYNN_FOREST },	-- Goldshire
-				{ 46.9, 52.4, DUN_MOROGH },	-- Kharanos
+				{ 55.9, 58.8, MAP.TELDRASSIL },	-- Dolanaar
+				{ 42.9, 65.4, MAP.ELWYNN_FOREST },	-- Goldshire
+				{ 46.9, 52.4, MAP.DUN_MOROGH },	-- Kharanos
 			},
 			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -701,18 +701,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 46.92, 59.53, MULGORE },	-- Bloodhoof Village
-				{ 61.63, 53.12, TIRISFAL_GLADES },	-- Brill
+				{ 46.92, 59.53, MAP.MULGORE },	-- Bloodhoof Village
+				{ 61.63, 53.12, MAP.TIRISFAL_GLADES },	-- Brill
 				{ 47.77, 47.12, EVERSONG_WOODS },	-- Falconwing Square
-				{ 51.82, 42.06, DUROTAR },	-- Razor Hill
+				{ 51.82, 42.06, MAP.DUROTAR },	-- Razor Hill
 				-- #IF AFTER TWW
 				{ 46.0, 54.9, DORNOGAL },	-- Dornogal
 				-- #ENDIF
 				-- #else
-				{ 46.8, 60.3, MULGORE },	-- Bloodhoof Village
-				{ 61.7, 53.2, TIRISFAL_GLADES },	-- Brill
+				{ 46.8, 60.3, MAP.MULGORE },	-- Bloodhoof Village
+				{ 61.7, 53.2, MAP.TIRISFAL_GLADES },	-- Brill
 				{ 47.8, 47.1, EVERSONG_WOODS },	-- Falconwing Square
-				{ 51.8, 42.1, DUROTAR },	-- Razor Hill
+				{ 51.8, 42.1, MAP.DUROTAR },	-- Razor Hill
 				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },
@@ -771,7 +771,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		q(79322, {	-- What the Duck? (A)
 			["qg"] = 211646,	-- Zinnia Brooks
-			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
+			["coord"] = { 42.0, 65.0, MAP.ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
@@ -783,7 +783,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		q(79575, {	-- What the Duck? (H)
 			["qg"] = 217125,	-- Sylnaria Fareflame
-			["coord"] = { 52.6, 41.2, DUROTAR },
+			["coord"] = { 52.6, 41.2, MAP.DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
@@ -796,21 +796,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		q(79323, {	-- A Fowl Concoction (A)
 			["sourceQuest"] = 79322,	-- What the Duck? (A)
 			["qg"] = 211646,	-- Zinnia Brooks
-			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
+			["coord"] = { 42.0, 65.0, MAP.ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79576, {	-- A Fowl Concoction (H)
 			["sourceQuest"] = 79575,	-- What the Duck? (H)
 			["qg"] = 217125,	-- Sylnaria Fareflame
-			["coord"] = { 52.6, 41.2, DUROTAR },
+			["coord"] = { 52.6, 41.2, MAP.DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79330, {	-- Duck Tales (A)
 			["sourceQuest"] = 79323,	-- A Fowl Concoction (A)
 			["qg"] = 216129,	-- Emmery Fiske
-			["coord"] = { 42.0, 64.9, ELWYNN_FOREST },
+			["coord"] = { 42.0, 64.9, MAP.ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
@@ -820,7 +820,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		q(79577, {	-- Duck Tales (H)
 			["sourceQuest"] = 79576,	-- A Fowl Concoction (H)
 			["qg"] = 217147,	-- Tethris Dewgazer
-			["coord"] = { 52.6, 41.1, DUROTAR },
+			["coord"] = { 52.6, 41.1, MAP.DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
@@ -830,7 +830,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		q(79331, {	-- Just a Waddle Away (A)
 			["sourceQuest"] = 79330,	-- Duck Tales (A)
 			["qg"] = 211646,	-- Zinnia Brooks
-			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
+			["coord"] = { 42.0, 65.0, MAP.ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
@@ -843,7 +843,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(216902),	-- Yellow Duck Disguise (CI!)
 				i(212608),	-- Duck Potion (QI!)
 				o(420195, {	-- Golden Egg Heirloom
-					["coord"] = { 30.4, 91.3, ELWYNN_FOREST },
+					["coord"] = { 30.4, 91.3, MAP.ELWYNN_FOREST },
 					["groups"] = { i(212643) },	-- Golden Egg Heirloom (QI!)
 				}),
 			},
@@ -851,7 +851,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		q(79578, {	-- Just a Waddle Away (H)
 			["sourceQuest"] = 79577,	-- Duck Tales (H)
 			["qg"] = 217125,	-- Sylnaria Fareflame
-			["coord"] = { 52.6, 41.2, DUROTAR },
+			["coord"] = { 52.6, 41.2, MAP.DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
@@ -864,7 +864,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(216902),	-- Yellow Duck Disguise (CI!)
 				i(216488),	-- Duck Potion (QI!)
 				o(424098, {	-- Golden Egg Heirloom
-					["coord"] = { 44.5, 35.2, DUROTAR },
+					["coord"] = { 44.5, 35.2, MAP.DUROTAR },
 					["groups"]  = { i(216489) },	-- Golden Egg Heirloom (QI!)
 				}),
 			},
@@ -877,20 +877,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		q(78274, {	-- Quacking Down (A)
 			["sourceQuest"] = 79331,	-- Just a Waddle Away (A)
 			["qg"] = 211646,	-- Zinnia Brooks
-			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
+			["coord"] = { 42.0, 65.0, MAP.ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79135, {	-- Quacking Down (H)
 			["sourceQuest"] = 79578,	-- Just a Waddle Away (H)
 			["qg"] = 217125,	-- Sylnaria Fareflame
-			["coord"] = { 52.6, 41.2, DUROTAR },
+			["coord"] = { 52.6, 41.2, MAP.DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(73192, {	-- Feathered Fiend (A)
 			["provider"] = { "i", 210594 },	-- Noblegarden Trinket (QI!)
-			["maps"] = ELWYNN_FOREST,
+			["maps"] = MAP.ELWYNN_FOREST,
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
@@ -949,7 +949,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		q(79558, {	-- Feathered Fiend (H)
 			["provider"] = { "i", 216932 },	-- Noblegarden Trinket (QI!)
-			["maps"] = DUROTAR,
+			["maps"] = MAP.DUROTAR,
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
@@ -1011,15 +1011,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		n(32837, {	-- Noblegarden Merchant
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 47.11, 59.89, MULGORE },	-- Bloodhoof Village
-				{ 61.35, 52.98, TIRISFAL_GLADES },	-- Brill
+				{ 47.11, 59.89, MAP.MULGORE },	-- Bloodhoof Village
+				{ 61.35, 52.98, MAP.TIRISFAL_GLADES },	-- Brill
 				{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square
-				{ 51.91, 41.87, DUROTAR },	-- Razor Hill
+				{ 51.91, 41.87, MAP.DUROTAR },	-- Razor Hill
 				-- #else
-				{ 47.0, 60.4, MULGORE },	-- Bloodhoof Village
-				{ 61.3, 52.9, TIRISFAL_GLADES },	-- Brill
+				{ 47.0, 60.4, MAP.MULGORE },	-- Bloodhoof Village
+				{ 61.3, 52.9, MAP.TIRISFAL_GLADES },	-- Brill
 				{ 47.6, 47.3, EVERSONG_WOODS },	-- Falconwing Square
-				{ 51.9, 41.9, DUROTAR },	-- Razor Hill
+				{ 51.9, 41.9, MAP.DUROTAR },	-- Razor Hill
 				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },
@@ -1030,13 +1030,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["coords"] = {
 				{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 				-- #if AFTER CATA
-				{ 55.72, 51.31, TELDRASSIL },	-- Dolanaar
-				{ 43.03, 65.32, ELWYNN_FOREST },	-- Goldshire
-				{ 54.11, 50.81, DUN_MOROGH },	-- Kharanos
+				{ 55.72, 51.31, MAP.TELDRASSIL },	-- Dolanaar
+				{ 43.03, 65.32, MAP.ELWYNN_FOREST },	-- Goldshire
+				{ 54.11, 50.81, MAP.DUN_MOROGH },	-- Kharanos
 				-- #else
-				{ 56.0, 58.7, TELDRASSIL },	-- Dolanaar
-				{ 43.0, 65.3, ELWYNN_FOREST },	-- Goldshire
-				{ 47.0, 52.5, DUN_MOROGH },	-- Kharanos
+				{ 56.0, 58.7, MAP.TELDRASSIL },	-- Dolanaar
+				{ 43.0, 65.3, MAP.ELWYNN_FOREST },	-- Goldshire
+				{ 47.0, 52.5, MAP.DUN_MOROGH },	-- Kharanos
 				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },

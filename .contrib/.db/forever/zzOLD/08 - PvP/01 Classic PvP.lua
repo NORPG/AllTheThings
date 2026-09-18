@@ -1075,15 +1075,15 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 			q(8371, {	-- Concerted Efforts
 				["qg"] = 15351,	-- Alliance Brigadier General
 				["coords"] = {
-					{ 57.8, 34.6, DARNASSUS },
-					{ 69.8, 90.0, IRONFORGE },
-					{ 79.4, 18.0, STORMWIND_CITY },
+					{ 57.8, 34.6, MAP.DARNASSUS },
+					{ 69.8, 90.0, MAP.IRONFORGE },
+					{ 79.4, 18.0, MAP.STORMWIND_CITY },
 					-- #if AFTER TBC
 					{ 67.4, 33.9, SHATTRATH_CITY },
 					-- #else
-					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
-					{ 45.6, 45.8, ARATHI_HIGHLANDS },
-					{ 61.8, 83.8, ASHENVALE },
+					{ 39.4, 82.2, MAP.ALTERAC_MOUNTAINS },
+					{ 45.6, 45.8, MAP.ARATHI_HIGHLANDS },
+					{ 61.8, 83.8, MAP.ASHENVALE },
 					-- #endif
 				},
 				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
@@ -1112,15 +1112,15 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				["sourceQuest"] = 8371,	-- Concerted Efforts
 				["qg"] = 15351,	-- Alliance Brigadier General
 				["coords"] = {
-					{ 57.8, 34.6, DARNASSUS },
-					{ 69.8, 90.0, IRONFORGE },
-					{ 79.4, 18.0, STORMWIND_CITY },
+					{ 57.8, 34.6, MAP.DARNASSUS },
+					{ 69.8, 90.0, MAP.IRONFORGE },
+					{ 79.4, 18.0, MAP.STORMWIND_CITY },
 					-- #if AFTER TBC
 					{ 67.4, 33.9, SHATTRATH_CITY },
 					-- #else
-					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
-					{ 45.6, 45.8, ARATHI_HIGHLANDS },
-					{ 61.8, 83.8, ASHENVALE },
+					{ 39.4, 82.2, MAP.ALTERAC_MOUNTAINS },
+					{ 45.6, 45.8, MAP.ARATHI_HIGHLANDS },
+					{ 61.8, 83.8, MAP.ASHENVALE },
 					-- #endif
 				},
 				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
@@ -1149,15 +1149,15 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 			q(8367, {	-- For Great Honor
 				["qg"] = 15350,	-- Horde Warbringer
 				["coords"] = {
-					{ 79.8, 30.4, ORGRIMMAR },
-					{ 56.0, 76.7, THUNDER_BLUFF },
-					{ 60.7, 87.7, UNDERCITY },
+					{ 79.8, 30.4, MAP.ORGRIMMAR },
+					{ 56.0, 76.7, MAP.THUNDER_BLUFF },
+					{ 60.7, 87.7, MAP.UNDERCITY },
 					-- #if AFTER TBC
 					{ 67.0, 56.6, SHATTRATH_CITY },
 					-- #else
-					{ 62.6, 59.1, ALTERAC_MOUNTAINS },
-					{ 73.5, 29.7, ARATHI_HIGHLANDS },
-					{ 46.7, 8.4, THE_BARRENS },
+					{ 62.6, 59.1, MAP.ALTERAC_MOUNTAINS },
+					{ 73.5, 29.7, MAP.ARATHI_HIGHLANDS },
+					{ 46.7, 8.4, MAP.THE_BARRENS },
 					-- #endif
 				},
 				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
@@ -1186,15 +1186,15 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				["sourceQuest"] = 8367,	-- For Great Honor
 				["qg"] = 15350,	-- Horde Warbringer
 				["coords"] = {
-					{ 79.8, 30.4, ORGRIMMAR },
-					{ 56.0, 76.7, THUNDER_BLUFF },
-					{ 60.7, 87.7, UNDERCITY },
+					{ 79.8, 30.4, MAP.ORGRIMMAR },
+					{ 56.0, 76.7, MAP.THUNDER_BLUFF },
+					{ 60.7, 87.7, MAP.UNDERCITY },
 					-- #if AFTER TBC
 					{ 67.0, 56.6, SHATTRATH_CITY },
 					-- #else
-					{ 62.6, 59.1, ALTERAC_MOUNTAINS },
-					{ 73.5, 29.7, ARATHI_HIGHLANDS },
-					{ 46.7, 8.4, THE_BARRENS },
+					{ 62.6, 59.1, MAP.ALTERAC_MOUNTAINS },
+					{ 73.5, 29.7, MAP.ARATHI_HIGHLANDS },
+					{ 46.7, 8.4, MAP.THE_BARRENS },
 					-- #endif
 				},
 				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },

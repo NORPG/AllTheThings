@@ -210,7 +210,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 49858 },	-- "Forever" Perfume
 						{ "i", 49856 },	-- "VICTORY" Perfume
 					},
-					["coord"] = { 46.6, 48.4, IRONFORGE },
+					["coord"] = { 46.6, 48.4, MAP.IRONFORGE },
 					["timeline"] = { ADDED_3_0_2, REMOVED_10_2_5 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -222,7 +222,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 49858 },	-- "Forever" Perfume
 						{ "i", 49856 },	-- "VICTORY" Perfume
 					},
-					["coord"] = { 67.6, 43.8, UNDERCITY },
+					["coord"] = { 67.6, 43.8, MAP.UNDERCITY },
 					["timeline"] = { ADDED_3_0_2, REMOVED_10_2_5 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -236,7 +236,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						-- #if AFTER CATA
 						THE_CAPE_OF_STRANGLETHORN,
 						-- #else
-						STRANGLETHORN_VALE,
+						MAP.STRANGLETHORN_VALE,
 						-- #endif
 						THE_CULLING_OF_STRATHOLME,
 					},
@@ -269,7 +269,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				ach(19508, {	-- Love Language Expert
 					["timeline"] = { ADDED_10_2_5 },
-					["maps"] = { FERALAS },
+					["maps"] = { MAP.FERALAS },
 					["groups"] = {
 						crit(64676, {	-- Novelty
 							["description"] = "Bring Vernon a Shiny New Weapon from the table.",
@@ -277,7 +277,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								{ "o", 411691 },	-- Shiny New Weapon
 								{ "n", 212812 },	-- Vernon Whitlock
 							},
-							["coord"] = { 69.01, 72.4, FERALAS },
+							["coord"] = { 69.01, 72.4, MAP.FERALAS },
 						}),
 						crit(64680, {	-- Beauty
 							["description"] = "Bring Bratley a Mystery Gift (Flower) from the table.",
@@ -285,12 +285,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								{ "n", 212817 },	-- Bratley Graston
 								{ "i", 211922 },	-- Bouquet of Flowers
 							},
-							["coord"] = { 69.09, 72.93, FERALAS },
+							["coord"] = { 69.09, 72.93, MAP.FERALAS },
 						}),
 						crit(64681, {	-- Comfort
 							["description"] = "/hug Theoderic while holding a gift from the table.",
 							["provider"] = { "n", 214853 },	-- Theoderic Prescott
-							["coord"] = { 69.95, 74.1, FERALAS },
+							["coord"] = { 69.95, 74.1, MAP.FERALAS },
 						}),
 						crit(64677, {	-- Festivity
 							["description"] = "Bring Clarissa a Barrel of Wine from the table.",
@@ -298,7 +298,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								{ "n", 212815 },	-- Clarissa Buchannan
 								{ "o", 411744 },	-- Barrel of Wine
 							},
-							["coord"] = { 69.16, 72.66, FERALAS },
+							["coord"] = { 69.16, 72.66, MAP.FERALAS },
 						}),
 						crit(64679, {	-- Challenge
 							["description"] = "Bring Bront a Shiny New Weapon from the table, then duel him.",
@@ -306,12 +306,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								{ "n", 214850 },	-- Bront Axecrusher
 								{ "o", 411691 },	-- Shiny New Weapon
 							},
-							["coord"] = { 69.64, 73.35, FERALAS },
+							["coord"] = { 69.64, 73.35, MAP.FERALAS },
 						}),
 						crit(64682, {	-- Respect
 							["description"] = "/bow to Wilber.",
 							["provider"] = { "n", 212813 },	-- Wilber Campbell
-							["coord"] = { 69.19, 72.62, FERALAS },
+							["coord"] = { 69.19, 72.62, MAP.FERALAS },
 						}),
 						crit(64678, {	-- Companionship
 							["description"] = "Bring Angus back his puppy.",
@@ -319,12 +319,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								{ "n", 212811 },	-- Angus Flagonshot
 								{ "n", 212850 },	-- Lost Puppy
 							},
-							["coord"] = { 69.78, 74.08, FERALAS },
+							["coord"] = { 69.78, 74.08, MAP.FERALAS },
 						}),
 						crit(64683, {	-- Attention
 							["description"] = "Exhaust Rizzi's dialogue while holding a gift from the table.",
 							["provider"] = { "n", 215151 },	-- Rizzi
-							["coord"] = { 68.75, 72.1, FERALAS },
+							["coord"] = { 68.75, 72.1, MAP.FERALAS },
 						}),
 						crit(64736, {	-- Style
 							["description"] = "Bring Halene a Mystery Gift (Flower) from the table.",
@@ -332,12 +332,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								{ "n", 215148 },	-- Halene Mistrunner
 								{ "i", 211922 },	-- Bouquet of Flowers
 							},
-							["coord"] = { 68.78, 73.66, FERALAS },
+							["coord"] = { 68.78, 73.66, MAP.FERALAS },
 						}),
 						crit(64703, {	-- Praise
 							["description"] = "Bring Verilas a Mystery Gift (Sealed Letter) from the table.",
 							["provider"] = { "i", 211923 },	-- Sealed Letter
-							["coord"] = { 68.95, 73.32, FERALAS },
+							["coord"] = { 68.95, 73.32, MAP.FERALAS },
 						}),
 					},
 				}),
@@ -396,8 +396,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "n", 214508 },	-- Torgando Featherhoof <Artisan's Consortium> [H]
 					},
 					["coords"] = {
-						{ 32.0, 49.8, ELWYNN_FOREST },
-						{ 42.2, 18.2, DUROTAR },
+						{ 32.0, 49.8, MAP.ELWYNN_FOREST },
+						{ 42.2, 18.2, MAP.DUROTAR },
 					},
 					["timeline"] = { ADDED_10_2_5 },
 					["groups"] = {
@@ -464,7 +464,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					8984,	-- The Source Revealed [H]
 				},
 				["provider"] = { "o", 181073 },	-- Fragrant Cauldron
-				["coord"] = { 89.3, 75.1, ALTERAC_MOUNTAINS },
+				["coord"] = { 89.3, 75.1, MAP.ALTERAC_MOUNTAINS },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["isYearly"] = true,
 				["groups"] = {
@@ -479,14 +479,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24635, {	-- A Cloudlet of Classy Cologne
 				["qg"] = 37675,	-- Public Relations Agent
 				["coords"] = {
-					{ 45.0, 57.4, DARNASSUS },
-					{ 33.8, 66.6, IRONFORGE },
-					{ 52.8, 77.0, ORGRIMMAR },
+					{ 45.0, 57.4, MAP.DARNASSUS },
+					{ 33.8, 66.6, MAP.IRONFORGE },
+					{ 52.8, 77.0, MAP.ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, STORMWIND_CITY },
+					{ 62.2, 75.2, MAP.STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, UNDERCITY },
+					{ 43.6, 53.4, MAP.THUNDER_BLUFF },
+					{ 66.0, 38.4, MAP.UNDERCITY },
 				},
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["isDaily"] = true,
@@ -499,7 +499,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24657, {	-- A Friendly Chat... (A)
 				["sourceQuest"] = 24849,	-- Hot On The Trail (A)
 				["qg"] = 38325,	-- Marion Sutton
-				["coord"] = { 60.4, 76.2, STORMWIND_CITY },
+				["coord"] = { 60.4, 76.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -510,15 +510,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					38328,	-- Roka
 				},
 				["coords"] = {
-					{ 50.0, 65.0, ORGRIMMAR },	-- Detective Snap Snagglebolt
-					{ 57.6, 61.0, ORGRIMMAR },	-- Roka
+					{ 50.0, 65.0, MAP.ORGRIMMAR },	-- Detective Snap Snagglebolt
+					{ 57.6, 61.0, MAP.ORGRIMMAR },	-- Roka
 				},
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24609, {	-- A Gift for a Lord of Ironforge
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
-				["coord"] = { 33.4, 65.8, IRONFORGE },
+				["coord"] = { 33.4, 65.8, MAP.IRONFORGE },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
@@ -526,7 +526,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(24612, {	-- A Gift for the Warchief / A Gift for High Overlord Saurfang / A Gift for the Warchief's Advisor
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
-				["coord"] = { 52.8, 76.8, ORGRIMMAR },
+				["coord"] = { 52.8, 76.8, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
@@ -534,7 +534,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(24613, {	-- A Gift for the Banshee Queen
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
-				["coord"] = { 66.4, 38.2, UNDERCITY },
+				["coord"] = { 66.4, 38.2, MAP.UNDERCITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
@@ -542,7 +542,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(24614, {	-- A Gift for the High Chieftain
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
-				["coord"] = { 44.0, 52.8, THUNDER_BLUFF },
+				["coord"] = { 44.0, 52.8, MAP.THUNDER_BLUFF },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
@@ -550,7 +550,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(24610, {	-- A Gift for the High Priestess of Elune
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
-				["coord"] = { 45.2, 57.4, DARNASSUS },
+				["coord"] = { 45.2, 57.4, MAP.DARNASSUS },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
@@ -558,7 +558,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(24597, {	-- A Gift for the King of Stormwind
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
-				["coord"] = { 62.4, 75.0, STORMWIND_CITY },
+				["coord"] = { 62.4, 75.0, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
@@ -583,14 +583,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24629, {	-- A Perfect Puff of Perfume
 				["qg"] = 37675,	-- Public Relations Agent
 				["coords"] = {
-					{ 45.0, 57.4, DARNASSUS },
-					{ 33.8, 66.6, IRONFORGE },
-					{ 52.8, 77.0, ORGRIMMAR },
+					{ 45.0, 57.4, MAP.DARNASSUS },
+					{ 33.8, 66.6, MAP.IRONFORGE },
+					{ 52.8, 77.0, MAP.ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, STORMWIND_CITY },
+					{ 62.2, 75.2, MAP.STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, UNDERCITY },
+					{ 43.6, 53.4, MAP.THUNDER_BLUFF },
+					{ 66.0, 38.4, MAP.UNDERCITY },
 				},
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["isDaily"] = true,
@@ -598,7 +598,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(9024, {	-- Aristan's Hunch
 				["sourceQuest"] = 8903,	-- Dangerous Love (A)
 				["qg"] = 16105,	-- Aristan Mottar
-				["coord"] = { 54.6, 65.6, STORMWIND_CITY },
+				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -614,14 +614,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24636, {	-- Bonbon Blitz
 				["qg"] = 37675,	-- Public Relations Agent
 				["coords"] = {
-					{ 45.0, 57.4, DARNASSUS },
-					{ 33.8, 66.6, IRONFORGE },
-					{ 52.8, 77.0, ORGRIMMAR },
+					{ 45.0, 57.4, MAP.DARNASSUS },
+					{ 33.8, 66.6, MAP.IRONFORGE },
+					{ 52.8, 77.0, MAP.ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, STORMWIND_CITY },
+					{ 62.2, 75.2, MAP.STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, UNDERCITY },
+					{ 43.6, 53.4, MAP.THUNDER_BLUFF },
+					{ 66.0, 38.4, MAP.UNDERCITY },
 				},
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["isDaily"] = true,
@@ -629,9 +629,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(44558, {	-- Crushing the Crown (A) [Legion+]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
-				["maps"] = { SILVERPINE_FOREST },
+				["maps"] = { MAP.SILVERPINE_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["groups"] = {
@@ -653,9 +653,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24658, {	-- Crushing the Crown (A) [Elwynn Forest]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { ELWYNN_FOREST },
+				["maps"] = { MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 5, 13 },
@@ -673,9 +673,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24659, {	-- Crushing the Crown (A) [Darkshore]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { DARKSHORE },
+				["maps"] = { MAP.DARKSHORE },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 14, 22 },
@@ -693,9 +693,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24660, {	-- Crushing the Crown (A) [Duskwood]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { DUSKWOOD },
+				["maps"] = { MAP.DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 23, 31 },
@@ -713,9 +713,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24662, {	-- Crushing the Crown (A) [Dustwallow Marsh]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { DUSTWALLOW_MARSH },
+				["maps"] = { MAP.DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 32, 40 },
@@ -733,9 +733,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24663, {	-- Crushing the Crown (A) [The Hinterlands]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { THE_HINTERLANDS },
+				["maps"] = { MAP.THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 41, 50 },
@@ -753,9 +753,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24664, {	-- Crushing the Crown (A) [Winterspring]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { WINTERSPRING },
+				["maps"] = { MAP.WINTERSPRING },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 51, 60 },
@@ -773,7 +773,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24665, {	-- Crushing the Crown (A) [Terokkar Forest]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 				["maps"] = { TEROKKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
@@ -793,7 +793,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24666, {	-- Crushing the Crown (A) [Crystalsong Forest]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 				["maps"] = { CRYSTALSONG_FOREST },
 				["races"] = ALLIANCE_ONLY,
@@ -813,7 +813,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(28934, {	-- Crushing the Crown (A) [Uldum]
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Detective Snip Snagglebolt
-				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.5, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_4_0_6, REMOVED_7_1_5 },
 				["maps"] = { ULDUM },
 				["races"] = ALLIANCE_ONLY,
@@ -833,9 +833,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(44546, {	-- Crushing the Crown (H) [Legion+]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
-				["maps"] = { SILVERPINE_FOREST },
+				["maps"] = { MAP.SILVERPINE_FOREST },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["groups"] = {
@@ -857,9 +857,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24638, {	-- Crushing the Crown (H) [Durotar]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { DUROTAR },
+				["maps"] = { MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 5, 13 },
@@ -877,9 +877,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24645, {	-- Crushing the Crown (H) [Silverpine Forest]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { SILVERPINE_FOREST },
+				["maps"] = { MAP.SILVERPINE_FOREST },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 14, 22 },
@@ -897,9 +897,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24647, {	-- Crushing the Crown (H) [Hillsbrad Foothills]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { HILLSBRAD_FOOTHILLS },
+				["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 23, 31 },
@@ -917,9 +917,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24648, {	-- Crushing the Crown (H) [Dustwallow Marsh]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { DUSTWALLOW_MARSH },
+				["maps"] = { MAP.DUSTWALLOW_MARSH },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 32, 40 },
@@ -937,9 +937,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24649, {	-- Crushing the Crown (H) [The Hinterlands]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { THE_HINTERLANDS },
+				["maps"] = { MAP.THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 41, 50 },
@@ -957,9 +957,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24650, {	-- Crushing the Crown (H) [Winterspring]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
-				["maps"] = { WINTERSPRING },
+				["maps"] = { MAP.WINTERSPRING },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["lvl"] = { 51, 60 },
@@ -977,7 +977,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24651, {	-- Crushing the Crown (H) [Terokkar Forest]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 				["maps"] = { TEROKKAR_FOREST },
 				["races"] = HORDE_ONLY,
@@ -997,7 +997,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24652, {	-- Crushing the Crown (H) [Crystalsong Forest]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 				["maps"] = { CRYSTALSONG_FOREST },
 				["races"] = HORDE_ONLY,
@@ -1017,7 +1017,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(28935, {	-- Crushing the Crown (H) [Uldum]
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_4_0_6, REMOVED_7_1_5 },
 				["maps"] = { ULDUM },
 				["races"] = HORDE_ONLY,
@@ -1036,7 +1036,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(8903, {	-- Dangerous Love (A)
 				["qg"] = 16105,	-- Aristan Mottar
-				["coord"] = { 54.6, 65.6, STORMWIND_CITY },
+				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -1048,7 +1048,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(8904, {	-- Dangerous Love (H)
 				["qg"] = 16108,	-- Fenstad Argyle
-				["coord"] = { 66.8, 44.4, UNDERCITY },
+				["coord"] = { 66.8, 44.4, MAP.UNDERCITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1063,7 +1063,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ "n", 16005 },	-- Lieutenant Jocryn Heldric
 					{ "i", 21921 },	-- Carefully Penned Note
 				},
-				["coord"] = { 57.0, 59.8, STORMWIND_CITY },
+				["coord"] = { 57.0, 59.8, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -1073,9 +1073,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ "n", 16009 },	-- Tormek Stoneriver
 					{ "i", 21920 },	-- Creased Letter
 				},
-				["coord"] = { 32.4, 66.0, IRONFORGE },
+				["coord"] = { 32.4, 66.0, MAP.IRONFORGE },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
-				["maps"] = { STORMWIND_CITY },
+				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -1084,9 +1084,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ "n", 16001 },	-- Aldris Fourclouds
 					{ "i", 21925 },	-- Immaculate Letter
 				},
-				["coord"] = { 42.0, 42.0, DARNASSUS },
+				["coord"] = { 42.0, 42.0, MAP.DARNASSUS },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
-				["maps"] = { STORMWIND_CITY },
+				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -1095,9 +1095,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ "n", 16007 },	-- Orok Deathbane
 					{ "i", 21926 },	-- Slightly Creased Note
 				},
-				["coord"] = { 51.2, 70.2, ORGRIMMAR },
+				["coord"] = { 51.2, 70.2, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
-				["maps"] = { UNDERCITY },
+				["maps"] = { MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -1106,9 +1106,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ "n", 16008 },	-- Temma of the Wells
 					{ "i", 22264 },	-- Carefully Written Letter
 				},
-				["coord"] = { 44.8, 59.6, THUNDER_BLUFF },
+				["coord"] = { 44.8, 59.6, MAP.THUNDER_BLUFF },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
-				["maps"] = { UNDERCITY },
+				["maps"] = { MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -1117,16 +1117,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ "n", 16003 },	-- Deathguard Tor
 					{ "i", 22265 },	-- Lovingly Composed Letter
 				},
-				["coord"] = { 60.6, 59.6, TIRISFAL_GLADES },
+				["coord"] = { 60.6, 59.6, MAP.TIRISFAL_GLADES },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
-				["maps"] = { UNDERCITY },
+				["maps"] = { MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(8979, {	-- Fenstad's Hunch
 				["sourceQuest"] = 8904,	-- Dangerous Love (H)
 				["qg"] = 16108,	-- Fenstad Argyle
-				["coord"] = { 66.8, 44.4, UNDERCITY },
+				["coord"] = { 66.8, 44.4, MAP.UNDERCITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1142,20 +1142,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24848, {	-- Fireworks At The Gilded Rose
 				["sourceQuest"] = 24656,	-- Pilfering Perfume (A)
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
-				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.6, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(44560, {	-- Follow the Recipe (A)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
-				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
+				["coord"] = { 45.2, 73.8, MAP.SILVERPINE_FOREST },
 				["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
 			q(44559, {	-- Follow the Recipe (H)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
-				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
+				["coord"] = { 45.2, 73.8, MAP.SILVERPINE_FOREST },
 				["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -1163,9 +1163,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(8993, {	-- Gift Giving (A)
 				["qg"] = 16075,	-- Kwee Q. Peddlefeet
 				["coords"] = {
-					{ 38.2, 80.4, DARNASSUS },
-					{ 41.0, 55.2, IRONFORGE },
-					{ 78.6, 17.6, STORMWIND_CITY },
+					{ 38.2, 80.4, MAP.DARNASSUS },
+					{ 41.0, 55.2, MAP.IRONFORGE },
+					{ 78.6, 17.6, MAP.STORMWIND_CITY },
 				},
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
@@ -1187,9 +1187,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(8981, {	-- Gift Giving (H)
 				["qg"] = 16075,	-- Kwee Q. Peddlefeet
 				["coords"] = {
-					{ 33.4, 37.8, ORGRIMMAR },
-					{ 60.8, 50.6, THUNDER_BLUFF },
-					{ 54.8, 90.0, UNDERCITY },
+					{ 33.4, 37.8, MAP.ORGRIMMAR },
+					{ 60.8, 50.6, MAP.THUNDER_BLUFF },
+					{ 54.8, 90.0, MAP.UNDERCITY },
 				},
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = HORDE_ONLY,
@@ -1211,14 +1211,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24849, {	-- Hot On The Trail (A)
 				["sourceQuest"] = 24848,	-- Fireworks At The Gilded Rose
 				["qg"] = 38325,	-- Marion Sutton
-				["coord"] = { 60.4, 76.2, STORMWIND_CITY },
+				["coord"] = { 60.4, 76.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24851, {	-- Hot On The Trail (H)
 				["sourceQuest"] = 24850,	-- Snivel's Sweetheart
 				["qg"] = 38328,	-- Roka
-				["coord"] = { 57.6, 61.0, ORGRIMMAR },
+				["coord"] = { 57.6, 61.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1226,20 +1226,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
 				["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-				["maps"] = { STORMWIND_CITY },
+				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24793, {	-- Man on the Inside (H)
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
 				["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-				["maps"] = { ORGRIMMAR },
+				["maps"] = { MAP.ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(9025, {	-- Morgan's Discovery
 				["sourceQuest"] = 9024,	-- Aristan's Hunch
 				["qg"] = 279,	-- Morgan Pestle
-				["coord"] = { 56.2, 64.8, STORMWIND_CITY },
+				["coord"] = { 56.2, 64.8, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -1253,21 +1253,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24656, {	-- Pilfering Perfume (A)
 				["sourceQuest"] = 24655,	-- Something Stinks (A)
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
-				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.6, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24541, {	-- Pilfering Perfume (H)
 				["sourceQuest"] = 24536,	-- Something Stinks (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24850, {	-- Snivel's Sweetheart
 				["sourceQuest"] = 24541,	-- Pilfering Perfume (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1291,7 +1291,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					-- #endif
 				},
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
-				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
+				["coord"] = { 61.6, 75.2, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1303,7 +1303,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					-- #endif
 				},
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["coord"] = { 50.0, 65.0, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1334,7 +1334,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(9028, {	-- The Source Revealed (A)
 				["sourceQuest"] = 9027,	-- Tracing the Source (A) (2/2)
 				["qg"] = 16106,	-- Evert Sorisam
-				["coord"] = { 39.8, 46.8, STORMWIND_CITY },
+				["coord"] = { 39.8, 46.8, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -1342,7 +1342,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(8984, {	-- The Source Revealed (H)
 				["sourceQuest"] = 8983,	-- Tracing the Source (H) (2/2)
 				["qg"] = 16109,	-- Mara Rennick
-				["coord"] = { 70.8, 28.8, UNDERCITY },
+				["coord"] = { 70.8, 28.8, MAP.UNDERCITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1350,7 +1350,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(9026, {	-- Tracing the Source (A) (1/2)
 				["sourceQuest"] = 9025,	-- Morgan's Discovery
 				["qg"] = 16105,	-- Aristan Mottar
-				["coord"] = { 54.6, 65.6, STORMWIND_CITY },
+				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -1358,7 +1358,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(9027, {	-- Tracing the Source (A) (2/2)
 				["sourceQuest"] = 9026,	-- Tracing the Source (A) (1/2)
 				["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
-				["coord"] = { 52.8, 65.4, STORMWIND_CITY },
+				["coord"] = { 52.8, 65.4, MAP.STORMWIND_CITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -1366,7 +1366,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(8982, {	-- Tracing the Source (H) (1/2)
 				["sourceQuest"] = 8980,	-- Zinge's Assessment
 				["qg"] = 16108,	-- Fenstad Argyle
-				["coord"] = { 66.8, 44.4, UNDERCITY },
+				["coord"] = { 66.8, 44.4, MAP.UNDERCITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1374,7 +1374,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(8983, {	-- Tracing the Source (H) (2/2)
 				["sourceQuest"] = 8982,	-- Tracing the Source (H) (1/2)
 				["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
-				["coord"] = { 67.6, 38.2, UNDERCITY },
+				["coord"] = { 67.6, 38.2, MAP.UNDERCITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1382,8 +1382,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(24804, {	-- Uncommon Scents (A)
 				["qg"] = 38293,	-- Junior Inspector
 				["coords"] = {
-					{ 44.8, 56.6, DARNASSUS },
-					{ 35.0, 68.8, IRONFORGE },
+					{ 44.8, 56.6, MAP.DARNASSUS },
+					{ 35.0, 68.8, MAP.IRONFORGE },
 					{ 76.2, 57.2, THE_EXODAR },
 				},
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
@@ -1398,8 +1398,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 38295,	-- Junior Detective
 				["coords"] = {
 					{ 64.2, 70.0, SILVERMOON_CITY },
-					{ 42.2, 55.75, THUNDER_BLUFF },
-					{ 64.6, 37.4, UNDERCITY },
+					{ 42.2, 55.75, MAP.THUNDER_BLUFF },
+					{ 64.6, 37.4, MAP.UNDERCITY },
 				},
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = HORDE_ONLY,
@@ -1418,7 +1418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(8980, {	-- Zinge's Assessment
 				["sourceQuest"] = 8979,	-- Fenstad's Hunch
 				["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
-				["coord"] = { 50.0, 68.6, UNDERCITY },
+				["coord"] = { 50.0, 68.6, MAP.UNDERCITY },
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1454,13 +1454,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(78328, {	-- Take a Look Around (A)
 				["sourceQuest"] = 78329,	-- Love is in the Air (A)
 				["qg"] = 211802,	-- Luciana Delgado
-				["coord"] = { 32.3, 49.4, ELWYNN_FOREST },
+				["coord"] = { 32.3, 49.4, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = { i(LOVE_TOKEN) },
 			}),
 			q(78332, {	-- I Smell Trouble (A)
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
-				["coord"] = { 32.2, 50.1, ELWYNN_FOREST },
+				["coord"] = { 32.2, 50.1, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(LOVE_TOKEN),
@@ -1496,12 +1496,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(78369, {	-- Crushing the Crown (A)
 				["sourceQuest"] = 78729,	-- Raising a Stink (A)
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
-				["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+				["coord"] = { 45.7, 68.5, MAP.SILVERPINE_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(LOVE_TOKEN),
 					o(413126, {	-- Box of Artisanal Goods
-						["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+						["coord"] = { 45.7, 68.5, MAP.SILVERPINE_FOREST },
 						["groups"] = {
 							i(210431),	-- Artisanal Bon-Bombs (QI!)
 							i(211127),	-- Note from Bang Sparknozzle (QI!) [book]
@@ -1512,7 +1512,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(78379, {	-- The Stench of Revenge (A)
 				["sourceQuest"] = 78369,	-- Crushing the Crown (A)
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
-				["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+				["coord"] = { 45.7, 68.5, MAP.SILVERPINE_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = { i(LOVE_TOKEN) },
 			}),
@@ -1536,13 +1536,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(78980, {	-- Take a Look Around (H)
 				["sourceQuest"] = 78981,	-- Love is in the Air (H)
 				["qg"] = 214477,	-- Mahaja Cloudsong
-				["coord"] = { 41.8, 18.0, DUROTAR },
+				["coord"] = { 41.8, 18.0, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = { i(LOVE_TOKEN) },
 			}),
 			q(78982, {	-- I Smell Trouble (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 41.6, 17.7, DUROTAR },
+				["coord"] = { 41.6, 17.7, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(LOVE_TOKEN),
@@ -1577,12 +1577,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(78984, {	-- Crushing the Crown (H)
 				["sourceQuest"] = 78978,	-- Raising a Stink (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+				["coord"] = { 45.7, 68.5, MAP.SILVERPINE_FOREST },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(LOVE_TOKEN),
 					o(413126, {	-- Box of Artisanal Goods
-						["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+						["coord"] = { 45.7, 68.5, MAP.SILVERPINE_FOREST },
 						["groups"] = {
 							i(210431),	-- Artisanal Bon-Bombs (QI!)
 							i(211782),	-- Note from Zikky (QI!) [book]
@@ -1593,7 +1593,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(78985, {	-- The Stench of Revenge (H)
 				["sourceQuest"] = 78984,	-- Crushing the Crown (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
-				["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+				["coord"] = { 45.7, 68.5, MAP.SILVERPINE_FOREST },
 				["races"] = HORDE_ONLY,
 				["groups"] = { i(LOVE_TOKEN) },
 			}),
@@ -1602,7 +1602,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		sharedData({ ["groups"] = { i(LOVE_TOKEN) }, },{
 			q(78594, {	-- Getaway to Scenic Feralas! (A)
 				["qg"] = 212677,	-- Gabbo Blinkwink
-				["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
+				["coord"] = { 34.3, 51.6, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(211923),	-- Sealed Letter (QI!)
@@ -1611,7 +1611,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(78988, {	-- Getaway to Scenic Feralas! (H)
 				["qg"] = 214497,	-- Aurora Vabsley
-				["coord"] = { 41.5, 16.1, DUROTAR },
+				["coord"] = { 41.5, 16.1, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(211923),	-- Sealed Letter (QI!)
@@ -1620,7 +1620,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(78565, {	-- Getaway to Scenic Grizzly Hills! (A)
 				["qg"] = 212677,	-- Gabbo Blinkwink
-				["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
+				["coord"] = { 34.3, 51.6, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					--[[
@@ -1650,7 +1650,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(78986, {	-- Getaway to Scenic Grizzly Hills! (H)
 				["qg"] = 214497,	-- Aurora Vabsley
-				["coord"] = { 41.5, 16.1, DUROTAR },
+				["coord"] = { 41.5, 16.1, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					--[[
@@ -1680,7 +1680,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(78591, {	-- Getaway to Scenic Nagrand! (A)
 				["qg"] = 212677,	-- Gabbo Blinkwink
-				["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
+				["coord"] = { 34.3, 51.6, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210743),	-- Borrowed Camera (QI!)
@@ -1688,7 +1688,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(78987, {	-- Getaway to Scenic Nagrand! (H)
 				["qg"] = 214497,	-- Aurora Vabsley
-				["coord"] = { 41.5, 16.1, DUROTAR },
+				["coord"] = { 41.5, 16.1, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(210743),	-- Borrowed Camera (QI!)
@@ -1697,13 +1697,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(78724, {	-- Loving Yourself, Your Way (A)
 				["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 				["qg"] = 213262,	-- Ying
-				["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+				["coord"] = { 35.2, 50.5, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(78726, {	-- Loving Yourself, Your Way (A)
 				["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 				["qg"] = 213262,	-- Ying
-				["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+				["coord"] = { 35.2, 50.5, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					objective(1, {	-- 0/15 Treats Consumed
@@ -1718,30 +1718,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(78727, {	-- Loving Yourself, Your Way (A)
 				["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 				["qg"] = 213262,	-- Ying
-				["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+				["coord"] = { 35.2, 50.5, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(78979, {	-- Loving Yourself, Your Way (H)
 				["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 				["qg"] = 214591,	-- Ning
-				["coord"] = { 41.9, 16.2, DUROTAR },
+				["coord"] = { 41.9, 16.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(78992, {	-- Loving Yourself, Your Way (H)
 				["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 				["qg"] = 214591,	-- Ning
-				["coord"] = { 41.9, 16.2, DUROTAR },
+				["coord"] = { 41.9, 16.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(78993, {	-- Loving Yourself, Your Way (H)
 				["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 				["qg"] = 214591,	-- Ning
-				["coord"] = { 41.9, 16.2, DUROTAR },
+				["coord"] = { 41.9, 16.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(78679, {	-- The Gift of Relaxation (A)
 				["qg"] = 213262,	-- Ying
-				["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+				["coord"] = { 35.2, 50.5, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(145277),	-- Aftermath of the Second War
@@ -1810,7 +1810,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(78991, {	-- The Gift of Relaxation (H)
 				["qg"] = 214591,	-- Ning
-				["coord"] = { 41.9, 16.2, DUROTAR },
+				["coord"] = { 41.9, 16.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(145277),	-- Aftermath of the Second War
@@ -1879,22 +1879,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(78674, {	-- The Gift of Relief (A)
 				["qg"] = 213262,	-- Ying
-				["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+				["coord"] = { 35.2, 50.5, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(78990, {	-- The Gift of Relief (H)
 				["qg"] = 214591,	-- Ning
-				["coord"] = { 41.9, 16.2, DUROTAR },
+				["coord"] = { 41.9, 16.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(78664, {	-- The Gift of Self-Care (A)
 				["qg"] = 213262,	-- Ying
-				["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+				["coord"] = { 35.2, 50.5, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(78989, {	-- The Gift of Self-Care (H)
 				["qg"] = 214591,	-- Ning
-				["coord"] = { 41.9, 16.2, DUROTAR },
+				["coord"] = { 41.9, 16.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 		}))),
@@ -1998,7 +1998,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		-- #if AFTER 3.3.2.11403
 		n(VENDORS, {
 			n(211873, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Bang Sparknozzle <Lovely Novelties>
-				["coord"] = { 33.6, 47.8, ELWYNN_FOREST },
+				["coord"] = { 33.6, 47.8, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210318, {	-- Chocolate Bon-Bomb
@@ -2022,7 +2022,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(213094, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Bimble Longberry
-				["coord"] = { 33.7, 51.3, ELWYNN_FOREST },
+				["coord"] = { 33.7, 51.3, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210928),	-- Healthy Body Package
@@ -2032,7 +2032,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(214482, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Grogg Skullsmasher <Fruit Vendor>
-				["coord"] = { 41.2, 18.2, DUROTAR },
+				["coord"] = { 41.2, 18.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(210821),	-- Berry Chocolate Tart
@@ -2043,7 +2043,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(214493, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Guo Plumpaw
-				["coord"] = { 33.57, 50.9, ELWYNN_FOREST },
+				["coord"] = { 33.57, 50.9, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210841),	-- Buttered Oysters
@@ -2055,7 +2055,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(214488, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Hana Breezeheart <Flower Vendor>
-				["coord"] = { 41.4, 17.8, DUROTAR },
+				["coord"] = { 41.4, 17.8, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(211359, {	-- Eternal Black Rose
@@ -2109,14 +2109,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(214861, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Jeremiah Payson <Crunchy Sweets> [Need HORDE Version]
-				["coord"] = { 41.2, 17.5, DUROTAR },
+				["coord"] = { 41.2, 17.5, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(211810),	-- Chocolate-Covered Crunchies
 				},
 			})),
 			n(211812, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Kiera Torres <Lovely Prizes and Heirlooms>
-				["coord"] = { 32.2, 50.4, ELWYNN_FOREST },
+				["coord"] = { 32.2, 50.4, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					filter(BATTLE_PETS, {
@@ -2253,14 +2253,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			})),
 			n(37674, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_2, REMOVED_10_2_5 } }, {	-- Lovely Merchant <Crown Chemical Co.>
 				["coords"] = {
-					{ 45.2, 57.6, DARNASSUS },
-					{ 33.8, 66.6, IRONFORGE },
-					{ 52.8, 77.6, ORGRIMMAR },
+					{ 45.2, 57.6, MAP.DARNASSUS },
+					{ 33.8, 66.6, MAP.IRONFORGE },
+					{ 52.8, 77.6, MAP.ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.6, 75.4, STORMWIND_CITY },
+					{ 62.6, 75.4, MAP.STORMWIND_CITY },
 					{ 74.0, 56.4, THE_EXODAR },
-					{ 43.6, 53.6, THUNDER_BLUFF },
-					{ 66.0, 38.6, UNDERCITY },
+					{ 43.6, 53.6, MAP.THUNDER_BLUFF },
+					{ 66.0, 38.6, MAP.UNDERCITY },
 				},
 				["groups"] = {
 					i(122339, {	-- Ancient Heirloom Scabbard
@@ -2453,7 +2453,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(214481, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Lythianne Morningspear <Lovely Prizes and Heirlooms>
-				["coord"] = { 41.9, 17.3, DUROTAR },
+				["coord"] = { 41.9, 17.3, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					filter(BATTLE_PETS, {
@@ -2589,7 +2589,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(211864, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Maurice Guichi <House of Chocolates>
-				["coord"] = { 33.6, 49.8, ELWYNN_FOREST },
+				["coord"] = { 33.6, 49.8, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210926),	-- Me, Myself, and Chocolate Package
@@ -2608,14 +2608,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(212886, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Melanie Charles <Bountiful Brews>
-				["coord"] = { 34.2, 50.6, ELWYNN_FOREST },
+				["coord"] = { 34.2, 50.6, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210927),	-- Fruity Cocktail Flight
 				},
 			})),
 			n(214493, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ming Plumpaw <Lovely Snacks> [Need Alliance Version]
-				["coord"] = { 41.1, 17.8, DUROTAR },
+				["coord"] = { 41.1, 17.8, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(210841),	-- Buttered Oysters
@@ -2627,7 +2627,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(211810, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ronathan Graham <Fruit Vendor>
-				["coord"] = { 33.6, 49.8, ELWYNN_FOREST },
+				["coord"] = { 33.6, 49.8, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210821),	-- Berry Chocolate Tart
@@ -2636,7 +2636,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(211887, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Sylandra Silverbreeze <Flower Vendor>
-				["coord"] = { 34.2, 48.8, ELWYNN_FOREST },
+				["coord"] = { 34.2, 48.8, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(211359, {	-- Eternal Black Rose
@@ -2690,21 +2690,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(215109, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ugawa <Bountiful Brews>
-				["coord"] = { 40.8, 17.8, DUROTAR },
+				["coord"] = { 40.8, 17.8, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(210927),	-- Fruity Cocktail Flight
 				},
 			})),
 			n(212587, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Wobbley Sugarfizz <House of Chocolates>
-				["coord"] = { 33.5, 50.1, ELWYNN_FOREST },
+				["coord"] = { 33.5, 50.1, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210695),	-- Delightful Chocolate Sample
 				},
 			})),
 			n(214489, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Zikky <Lovely Novelties>
-				["coord"] = { 41.0, 17.2, DUROTAR },
+				["coord"] = { 41.0, 17.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(210318, {	-- Chocolate Bon-Bomb
@@ -2728,7 +2728,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 			})),
 			n(214480, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Zin'boja <De Chocolate Den>
-				["coord"] = { 41.2, 18.0, DUROTAR },
+				["coord"] = { 41.2, 18.0, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(49909, {	-- Box of Chocolates
@@ -2779,7 +2779,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22131, 1 },	-- Stormwind Gift Collection
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { DARNASSUS, IRONFORGE, STORMWIND_CITY },
+					["maps"] = { MAP.DARNASSUS, MAP.IRONFORGE, MAP.STORMWIND_CITY },
 					["_drop"] = { "f" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2790,7 +2790,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22134, 1 },	-- Undercity Gift Collection
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
+					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF, MAP.UNDERCITY },
 					["_drop"] = { "f" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2803,28 +2803,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22290, 1 },	-- Darnassus Pledge Collection
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22290, {	-- Darnassus Pledge Collection
 					["cost"] = { { "i", 22120, 5 } },	-- Pledge of Loyalty: Darnassus
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22291, {	-- Box of Woodcrafts
 					["cost"] = { { "i", 21960, 5 } },	-- Handmade Woodcraft
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22289, {	-- Stack of Cards
 					["cost"] = { { "i", 22140, 5 } },	-- Sentinel's Card
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2834,7 +2834,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22159 },	-- Pledge of Friendship: Darnassus
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2844,7 +2844,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22159 },	-- Pledge of Friendship: Darnassus
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2854,7 +2854,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22167 },	-- Gift of Friendship: Darnassus
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { DARNASSUS },
+					["maps"] = { MAP.DARNASSUS },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2867,28 +2867,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22286, 1 },	-- Ironforge Pledge Collection
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22286, {	-- Ironforge Pledge Collection
 					["cost"] = { { "i", 22119, 5 } },	-- Pledge of Loyalty: Ironforge
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22288, {	-- Case of Homebrew
 					["cost"] = { { "i", 22173, 5 } },	-- Dwarven Homebrew
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22287, {	-- Parcel of Cards
 					["cost"] = { { "i", 22141, 5 } },	-- Ironforge Guard's Card
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2898,7 +2898,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22160 },	-- Pledge of Friendship: Ironforge
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2908,7 +2908,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22160 },	-- Pledge of Friendship: Ironforge
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2918,7 +2918,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22168 },	-- Gift of Friendship: Ironforge
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2931,28 +2931,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22285, 1 },	-- Stormwind Pledge Collection
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22285, {	-- Stormwind Pledge Collection
 					["cost"] = { { "i", 22117, 5 } },	-- Pledge of Loyalty: Stormwind
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22283, {	-- Sack of Homemade Bread
 					["cost"] = { { "i", 22176, 5 } },	-- Homemade Bread
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(22284, {	-- Bundle of Cards
 					["cost"] = { { "i", 22143, 5 } },	-- Stormwind Guard's Card
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2962,7 +2962,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22178 },	-- Pledge of Friendship: Stormwind
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2972,7 +2972,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22178 },	-- Pledge of Friendship: Stormwind
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2982,7 +2982,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22170 },	-- Gift of Friendship: Stormwind
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2995,28 +2995,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22294, 1 },	-- Orgrimmar Pledge Collection
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22294, {	-- Orgrimmar Pledge Collection
 					["cost"] = { { "i", 22123, 5 } },	-- Pledge of Loyalty: Orgrimmar
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22292, {	-- Box of Fresh Pies
 					["cost"] = { { "i", 22175, 5 } },	-- Freshly Baked Pie
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22293, {	-- Package of Cards
 					["cost"] = { { "i", 22142, 5 } },	-- Grunt's Card
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3026,7 +3026,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22161 },	-- Pledge of Friendship: Orgrimmar
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3036,7 +3036,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22161 },	-- Pledge of Friendship: Orgrimmar
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3046,7 +3046,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22169 },	-- Gift of Friendship: Orgrimmar
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3059,28 +3059,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22297, 1 },	-- Thunder Bluff Pledge Collection
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22297, {	-- Thunder Bluff Pledge Collection
 					["cost"] = { { "i", 22122, 5 } },	-- Pledge of Loyalty: Thunder Bluff
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22296, {	-- Basket of Flowers
 					["cost"] = { { "i", 22177, 5 } },	-- Freshly Picked Flowers
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22295, {	-- Satchel of Cards
 					["cost"] = { { "i", 22144, 5 } },	-- Bluffwatcher's Card
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3090,7 +3090,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22162 },	-- Pledge of Friendship: Thunder Bluff
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3100,7 +3100,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22162 },	-- Pledge of Friendship: Thunder Bluff
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3110,7 +3110,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22171 },	-- Gift of Friendship: Thunder Bluff
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3123,28 +3123,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22300, 1 },	-- Undercity Pledge Collection
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22300, {	-- Undercity Pledge Collection
 					["cost"] = { { "i", 22121, 5 } },	-- Pledge of Loyalty: Undercity
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22298, {	-- Book of Romantic Poems
 					["cost"] = { { "i", 22174, 5 } },	-- Romantic Poem
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
 				i(22299, {	-- Sheaf of Cards
 					["cost"] = { { "i", 22145, 5 } },	-- Guardian's Moldy Card
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3154,7 +3154,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22163 },	-- Pledge of Friendship: Undercity
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3164,7 +3164,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22163 },	-- Pledge of Friendship: Undercity
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3174,7 +3174,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 22172 },	-- Gift of Friendship: Undercity
 					},
 					["timeline"] = { ADDED_1_9_3, REMOVED_3_3_2 },
-					["maps"] = { UNDERCITY },
+					["maps"] = { MAP.UNDERCITY },
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),

@@ -4,7 +4,7 @@
 root(ROOTS.Character, {
 	cl(WARLOCK, {
 		n(DEMON_TRAINER, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {
-			["maps"] = { IRONFORGE, ORGRIMMAR, STORMWIND_CITY, UNDERCITY, ORGRIMMAR },
+			["maps"] = { MAP.IRONFORGE, MAP.ORGRIMMAR, MAP.STORMWIND_CITY, MAP.UNDERCITY, MAP.ORGRIMMAR },
 			["classes"] = { WARLOCK },
 			["crs"] = {
 				6374,	-- Cylina Darkheart <Demon Trainer>

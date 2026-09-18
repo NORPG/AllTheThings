@@ -9,7 +9,7 @@ applyclassicphase(FOREVER_PHASE_ONE, inst(3065, bubbleDownSelf({	-- The Hall of 
 }, {
 	-- ["lore"] = "",
 	["zone-text-areaID"] = 16919,	-- The Hall of Thanes
-	["coord"] = { 50.0, 50.0, IRONFORGE },
+	["coord"] = { 50.0, 50.0, MAP.IRONFORGE },
 	["lvl"] = 13,
 	["groups"] = {
 		n(3493, {	-- Faldrim Anvilmar

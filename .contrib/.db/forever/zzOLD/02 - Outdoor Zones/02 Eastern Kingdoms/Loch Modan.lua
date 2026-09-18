@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(LOCH_MODAN, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.LOCH_MODAN, {
 		["lore"] = "Loch Modan is a large area east of Dun Morogh, situated in eastern Khaz Modan. It is known for its temperate climate, abandoned archaeological dig site and, until the cataclysm, the huge lake from which the region takes its name. The gray and rugged Khaz Modan mountains rise up on all sides around the loch, and the hills are lightly wooded with pine and birch.\n\nLoch Modan is heavily populated by hostile troggs, unearthed from caves below ground by the dwarven digs. They have since settled in the surrounding mountainous area and built crude camps and caves from which to strike at passing travelers. Other dangers include dangerous wildlife, aggressive kobolds, and the powerful ogres of the Mo'grosh Stronghold.",
 		["icon"] = 236808,
 		["groups"] = {
@@ -99,20 +99,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(555, {	-- Farstrider Lodge, Loch Modan
 					["cr"] = 41332,	-- Eeryven Grayer <Gryphon Master>
-					["coord"] = { 81.8, 64.2, LOCH_MODAN },
+					["coord"] = { 81.8, 64.2, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(8, {	-- Thelsamar, Loch Modan
 					["cr"] = 1572,	-- Thorgrum Borrelson <Gryphon Master>
-					["coord"] = { 33.8, 50.8, LOCH_MODAN },
+					["coord"] = { 33.8, 50.8, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			pickpocketing({
 				applyclassicphase(SOD_PHASE_ONE, i(208838, {	-- Dark Iron Lockbox
-					["coord"] = { 56.6, 14.0, LOCH_MODAN },
+					["coord"] = { 56.6, 14.0, MAP.LOCH_MODAN },
 					["classes"] = { ROGUE },
 					["crs"] = {
 						1222,	-- Dark Iron Sapper
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(QUESTS, {
 				q(250, {	-- A Dark Threat Looms (1/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
-					["coord"] = { 46.0, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 257 },	-- Suspicious Barrel
 						{ "i", 2563 },	-- Strange Smelling Powder
 					},
-					["coord"] = { 56.1, 13.3, LOCH_MODAN },
+					["coord"] = { 56.1, 13.3, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -154,9 +154,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
 						{ "i", 2563 },	-- Strange Smelling Powder
 					},
-					["coord"] = { 46.0, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WETLANDS },
+					["maps"] = { MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1073 },	-- Ashlan Stonesmirk
 						{ "i", 2609 },	-- Disarming Colloid
 					},
-					["coord"] = { 50.0, 18.2, WETLANDS },
+					["coord"] = { 50.0, 18.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(278, {	-- A Dark Threat Looms (5/7)
 					["sourceQuest"] = 274,	-- A Dark Threat Looms (4/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
-					["coord"] = { 46.0, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
 						{ "i", 2610 },	-- Disarming Mixture
 					},
-					["coord"] = { 46.0, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(283, {	-- A Dark Threat Looms (7/7)
 					["sourceQuest"] = 280,	-- A Dark Threat Looms (6/7)
 					["provider"] = { "o", 1585 },	-- Explosive Charge
-					["coord"] = { 50.6, 14.4, LOCH_MODAN },
+					["coord"] = { 50.6, 14.4, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26148, {	-- A Decisive Strike
 					["sourceQuest"] = 26146,	-- In Defense of the King's Lands
 					["qg"] = 1092,	-- Captain Rugelfuss
-					["coord"] = { 23.4, 75.0, LOCH_MODAN },
+					["coord"] = { 23.4, 75.0, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(257, {	-- A Hunter's Boast
 					["qg"] = 1187,	-- Daryl the Youngling
-					["coord"] = { 83.4, 65.2, LOCH_MODAN },
+					["coord"] = { 83.4, 65.2, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(258, {	-- A Hunter's Challenge
 					["sourceQuest"] = 257,	-- A Hunter's Boast
 					["qg"] = 1187,	-- Daryl the Youngling
-					["coord"] = { 83.4, 65.2, LOCH_MODAN },
+					["coord"] = { 83.4, 65.2, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26929, {	-- A Load of Croc
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
 					["qg"] = 44345,	-- Cannary Caskshot
-					["coord"] = { 34.7, 49.1, LOCH_MODAN },
+					["coord"] = { 34.7, 49.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26846, {	-- A Nasty Exploit
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
 					["qg"] = 44200,	-- Scout Dorli
-					["coord"] = { 25.5, 17.9, LOCH_MODAN },
+					["coord"] = { 25.5, 17.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26843, {	-- A Tiny, Clever Commander
 					["sourceQuest"] = 13636,	-- Stormpike's Orders
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["coord"] = { 25.4, 17.9, LOCH_MODAN },
+					["coord"] = { 25.4, 17.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -351,7 +351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(454, {	-- After the Ambush
 					["sourceQuest"] = 273,	-- Resupplying the Excavation
 					["qg"] = 2057,	-- Huldar
-					["coord"] = { 52.2, 69.2, LOCH_MODAN },
+					["coord"] = { 52.2, 69.2, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -359,9 +359,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(704, {	-- Agmond's Fate
 					["sourceQuest"] = 739,	-- Murdaloc
 					["qg"] = 1344,	-- Prospector Ironband
-					["coord"] = { 65.9, 65.6, LOCH_MODAN },
+					["coord"] = { 65.9, 65.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BADLANDS, ULDAMAN },
+					["maps"] = { MAP.BADLANDS, ULDAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -380,14 +380,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27115, {	-- Ando's Call
 					["sourceQuest"] = 27078,	-- Gor'kresh
 					["qg"] = 1073,	-- Ashlan Stonesmirk
-					["coord"] = { 64.1, 26.6, LOCH_MODAN },
+					["coord"] = { 64.1, 26.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26868, {	-- Axis of Awful
 					["sourceQuest"] = 26928,	-- Smells Like a Plan
 					["qg"] = 44345,	-- Cannary Caskshot
-					["coord"] = { 34.7, 49.1, LOCH_MODAN },
+					["coord"] = { 34.7, 49.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2500, {	-- Badlands Reagent Run
 					["qg"] = 1470,	-- Ghak Healtouch
-					["coord"] = { 37.07, 49.38, LOCH_MODAN },
+					["coord"] = { 37.07, 49.38, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 36,
@@ -438,9 +438,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2501, {	-- Badlands Reagent Run II
 					["sourceQuest"] = 17,	-- Uldaman Reagent Run
 					["qg"] = 1470,	-- Ghak Healtouch
-					["coord"] = { 37.07, 49.38, LOCH_MODAN },
+					["coord"] = { 37.07, 49.38, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BADLANDS },
+					["maps"] = { MAP.BADLANDS },
 					["requireSkill"] = ALCHEMY,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -461,7 +461,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26147, {	-- Bigger and Uglier
 					["sourceQuest"] = 26146,	-- In Defense of the King's Lands
 					["qg"] = 1090,	-- Mountaineer Wallbang
-					["coord"] = { 23.3, 75.1, LOCH_MODAN },
+					["coord"] = { 23.3, 75.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -488,7 +488,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2038, {	-- Bingles' Missing Supplies
 					["sourceQuest"] = 2039,	-- Find Bingles
 					["qg"] = 6577,	-- Bingles Blastenheimer
-					["coord"] = { 63.6, 47.8, LOCH_MODAN },
+					["coord"] = { 63.6, 47.8, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
@@ -498,28 +498,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7343 },	-- Bingles' Wrench
 								{ "o", 104564 },	-- Bingles's Toolbucket
 							},
-							["coord"] = { 48.8, 30.0, LOCH_MODAN },
+							["coord"] = { 48.8, 30.0, MAP.LOCH_MODAN },
 						}),
 						objective(2, {	-- 0/1 Bingles' Screwdriver
 							["providers"] = {
 								{ "i",   7345 },	-- Bingles' Screwdriver
 								{ "o", 104569 },	-- Bingles's Toolbucket
 							},
-							["coord"] = { 48.5, 20.6, LOCH_MODAN },
+							["coord"] = { 48.5, 20.6, MAP.LOCH_MODAN },
 						}),
 						objective(3, {	-- 0/1 Bingles' Hammer
 							["providers"] = {
 								{ "i",   7346 },	-- Bingles' Hammer
 								{ "o", 104574 },	-- Bingles's Toolbucket
 							},
-							["coord"] = { 51.8, 24.3, LOCH_MODAN },
+							["coord"] = { 51.8, 24.3, MAP.LOCH_MODAN },
 						}),
 						objective(4, {	-- 0/1 Bingles' Blastencapper
 							["providers"] = {
 								{ "i",   7376 },	-- Bingles' Blastencapper
 								{ "o", 104575 },	-- Bingles's Blastencapper
 							},
-							["coord"] = { 54.3, 26.5, LOCH_MODAN },
+							["coord"] = { 54.3, 26.5, MAP.LOCH_MODAN },
 						}),
 						i(12522, {	-- Bingles' Flying Gloves
 							["timeline"] = { REMOVED_4_0_3 },
@@ -538,14 +538,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27032, {	-- Bird is the Word
 					["sourceQuest"] = 27031,	-- Wing Nut
 					["qg"] = 6577,	-- Bingles Blastenheimer
-					["coord"] = { 81.6, 64.7, LOCH_MODAN },
+					["coord"] = { 81.6, 64.7, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26932, {	-- Buzz Off
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 35.0, 46.5, LOCH_MODAN },
+					["coord"] = { 35.0, 46.5, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -556,7 +556,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26137, {	-- Checking on the Boys
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["coord"] = { 25.4, 17.9, LOCH_MODAN },
+					["coord"] = { 25.4, 17.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -564,7 +564,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27077, {	-- Clutching at Chaos
 					["sourceQuest"] = 27074,	-- Fight the Hammer
 					["qg"] = 1073,	-- Ashlan Stonesmirk
-					["coord"] = { 64.1, 26.6, LOCH_MODAN },
+					["coord"] = { 64.1, 26.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -578,7 +578,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(385, {	-- Crocolisk Hunting
 					["qg"] = 1154,	-- Marek Ironheart
-					["coord"] = { 81.8, 61.8, LOCH_MODAN },
+					["coord"] = { 81.8, 61.8, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -616,7 +616,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27026, {	-- Defcon: Bobcat
 					["sourceQuest"] = 27025,	-- Thistle While You Work
 					["qg"] = 44859,	-- Safety Warden Pipsy
-					["coord"] = { 82.7, 63.4, LOCH_MODAN },
+					["coord"] = { 82.7, 63.4, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -629,9 +629,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_TWO, q(79975, {	-- Eagle's Fist
 					["sourceQuest"] = 79974,	-- Wet Job
 					["provider"] = { "o", 424007 },	-- Carved Figurine
-					["coord"] = { 49.5, 12.8, LOCH_MODAN },
+					["coord"] = { 49.5, 12.8, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_1_15_1 },
-					["maps"] = { ARATHI_HIGHLANDS },
+					["maps"] = { MAP.ARATHI_HIGHLANDS },
 					["lvl"] = 14,
 				})),
 				-- #endif
@@ -640,57 +640,57 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1344 },	-- Prospector Ironband
 						{ "i", 2637 },	-- Ironbrand's Progress Report
 					},
-					["coord"] = { 65.9, 65.6, LOCH_MODAN },
+					["coord"] = { 65.9, 65.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(13656, {	-- Explorers' League Document (1 of 6)
 					["provider"] = { "o", 194387 },	-- Stolen Explorers' League Document
-					["coord"] = { 36.7, 61.1, LOCH_MODAN },
+					["coord"] = { 36.7, 61.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13655, {	-- Explorers' League Document (2 of 6)
 					["provider"] = { "o", 194378 },	-- Stolen Explorers' League Document
-					["coord"] = { 41.4, 39.0, LOCH_MODAN },
+					["coord"] = { 41.4, 39.0, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13657, {	-- Explorers' League Document (3 of 6)
 					["provider"] = { "o", 194388 },	-- Stolen Explorers' League Document
-					["coord"] = { 61.7, 73.2, LOCH_MODAN },
+					["coord"] = { 61.7, 73.2, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13658, {	-- Explorers' League Document (4 of 6)
 					["provider"] = { "o", 194389 },	-- Stolen Explorers' League Document
-					["coord"] = { 68.1, 66.1, LOCH_MODAN },
+					["coord"] = { 68.1, 66.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13660, {	-- Explorers' League Document (5 of 6)
 					["provider"] = { "o", 194391 },	-- Stolen Explorers' League Document
-					["coord"] = { 53.7, 38.1, LOCH_MODAN },
+					["coord"] = { 53.7, 38.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13659, {	-- Explorers' League Document (6 of 6)
 					["provider"] = { "o", 194390 },	-- Stolen Explorers' League Document
-					["coord"] = { 73.2, 35.9, LOCH_MODAN },
+					["coord"] = { 73.2, 35.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27074, {	-- Fight the Hammer
 					["sourceQuest"] = 27035,	-- Standing Up
 					["qg"] = 44870,	-- Ando Blastenheimer
-					["coord"] = { 58.5, 29.1, LOCH_MODAN },
+					["coord"] = { 58.5, 29.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(307, {	-- Filthy Paws
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["coord"] = { 24.7, 18.3, LOCH_MODAN },
+					["coord"] = { 24.7, 18.3, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
@@ -715,7 +715,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26863, {	-- Filthy Paws
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["coord"] = { 25.4, 17.9, LOCH_MODAN },
+					["coord"] = { 25.4, 17.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(738, {	-- Find Agmond
 					["sourceQuest"] = 707,	-- Ironband Wants You!
 					["qg"] = 1344,	-- Prospector Ironband
-					["coord"] = { 65.93, 65.62, LOCH_MODAN },
+					["coord"] = { 65.93, 65.62, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27030, {	-- Foxtails By The Handful
 					["qg"] = 1154,	-- Marek Ironheart
-					["coord"] = { 81.7, 61.6, LOCH_MODAN },
+					["coord"] = { 81.7, 61.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -774,7 +774,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 436,	-- Ironband's Excavation
 					["qg"] = 1345,	-- Magmar Fellhew
-					["coord"] = { 64.9, 66.7, LOCH_MODAN },
+					["coord"] = { 64.9, 66.7, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
@@ -800,7 +800,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26961, {	-- Gathering Idols
 					["qg"] = 1345,	-- Magmar Felhew
-					["coord"] = { 64.8, 66.6, LOCH_MODAN },
+					["coord"] = { 64.8, 66.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -832,7 +832,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27075,	-- Servants of Cho'gall
 					},
 					["qg"] = 1073,	-- Ashlan Stonesmirk
-					["coord"] = { 64.1, 26.6, LOCH_MODAN },
+					["coord"] = { 64.1, 26.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -851,7 +851,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13659,	-- Explorers' League Document (6 of 6)
 					},
 					["qg"] = 1153,	-- Torren Squarejaw
-					["coord"] = { 37.3, 47.8, LOCH_MODAN },
+					["coord"] = { 37.3, 47.8, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -875,13 +875,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27034, {	-- He's That Age
 					["sourceQuest"] = 27033,	-- Skystrider's Heart
 					["qg"] = 6577,	-- Bingles Blastenheimer
-					["coord"] = { 81.6, 64.7, LOCH_MODAN },
+					["coord"] = { 81.6, 64.7, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				heroscall(q(28567, {	-- Hero's Call: Loch Modan!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
+					["maps"] = { MAP.IRONFORGE },	-- Only found in Ironforge in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
@@ -895,14 +895,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1681 },	-- Brock Stoneseeker
 						{ "i", 16310 },	-- Brock's List (PQI!)
 					},
-					["coord"] = { 37.0, 47.8, LOCH_MODAN },
+					["coord"] = { 37.0, 47.8, MAP.LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
 					["lvl"] = 10,
 				}),
 				-- #endif
 				q(27028, {	-- Hornet Hunting
 					["qg"] = 1154,	-- Marek Ironheart
-					["coord"] = { 81.7, 61.6, LOCH_MODAN },
+					["coord"] = { 81.7, 61.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -917,7 +917,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(224, {	-- In Defense of the King's Lands (1/4)
 					["qg"] = 1089,	-- Mountaineer Cobbleflint
-					["coord"] = { 22.1, 73.2, LOCH_MODAN },
+					["coord"] = { 22.1, 73.2, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -933,7 +933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(237, {	-- In Defense of the King's Lands (2/4)
 					["sourceQuest"] = 224,	-- In Defense of the King's Lands (1/4)
 					["qg"] = 1091,	-- Mountaineer Gravelgaw
-					["coord"] = { 23.4, 76.2, LOCH_MODAN },
+					["coord"] = { 23.4, 76.2, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -949,7 +949,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(263, {	-- In Defense of the King's Lands (3/4)
 					["sourceQuest"] = 237,	-- In Defense of the King's Lands (2/4)
 					["qg"] = 1090,	-- Mountaineer Wallbang
-					["coord"] = { 23.4, 74.6, LOCH_MODAN },
+					["coord"] = { 23.4, 74.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -969,22 +969,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						267,	-- The Trogg Threat
 					},
 					["qg"] = 1092,	-- Captain Rugelfuss
-					["coord"] = { 23.2, 73.8, LOCH_MODAN },
+					["coord"] = { 23.2, 73.8, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Grawmug slain
 							["provider"] = { "n", 1205 },	-- Grawmug
-							["coord"] = { 33.2, 91.0, LOCH_MODAN },
+							["coord"] = { 33.2, 91.0, MAP.LOCH_MODAN },
 						}),
 						objective(2, {	-- 0/1 Gnasher slain
 							["provider"] = { "n", 1206 },	-- Gnasher
-							["coord"] = { 34.4, 91.4, LOCH_MODAN },
+							["coord"] = { 34.4, 91.4, MAP.LOCH_MODAN },
 						}),
 						objective(3, {	-- 0/1 Brawler slain
 							["provider"] = { "n", 1207 },	-- Brawler
-							["coord"] = { 34.2, 91.6, LOCH_MODAN },
+							["coord"] = { 34.2, 91.6, MAP.LOCH_MODAN },
 						}),
 						i(1436, {	-- Frontier Britches
 							["timeline"] = { REMOVED_4_0_3 },
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26146, {	-- In Defense of the King's Lands
 					["qg"] = 1092,	-- Captain Rugelfuss
-					["coord"] = { 23.4, 75.0, LOCH_MODAN },
+					["coord"] = { 23.4, 75.0, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1025,7 +1025,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(436, {	-- Ironband's Excavation
 					["qg"] = 1105,	-- Jern Hornhelm
-					["coord"] = { 37.2, 47.4, LOCH_MODAN },
+					["coord"] = { 37.2, 47.4, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1037,7 +1037,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13650,	-- Keep Your Hands Off The Goods!
 					},
 					["qg"] = 1345,	-- Magmar Felhew
-					["coord"] = { 64.9, 66.5, LOCH_MODAN },
+					["coord"] = { 64.9, 66.5, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1045,14 +1045,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(13650, {	-- Keep Your Hands Off The Goods!
 					["sourceQuest"] = 309,	-- Protecting the Shipment
 					["qg"] = 1344,	-- Prospector Ironband
-					["coord"] = { 65.2, 66.1, LOCH_MODAN },
+					["coord"] = { 65.2, 66.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26844, {	-- Kobold and Kobolder
 					["sourceQuest"] = 26843,	-- A Tiny, Clever Commander
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["coord"] = { 25.4, 17.9, LOCH_MODAN },
+					["coord"] = { 25.4, 17.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1068,9 +1068,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1777,	-- Dakk Blunderblast
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 35.4, 42.8, LOCH_MODAN },
+						{ 35.4, 42.8, MAP.LOCH_MODAN },
 						-- #else
-						{ 36.0, 44.2, LOCH_MODAN },
+						{ 36.0, 44.2, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1083,7 +1083,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(255, {	-- Mercenaries
 					["qg"] = 1139,	-- Magistrate Bluntnose
-					["coord"] = { 34.6, 44.5, LOCH_MODAN },
+					["coord"] = { 34.6, 44.5, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -1110,7 +1110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1339, {	-- Mountaineer Stormpike's Task
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47.0, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1119,7 +1119,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26176, {	-- Onward to Thelsamar
 					["sourceQuest"] = 26148,	-- A Decisive Strike
 					["qg"] = 1092,	-- Captain Rugelfuss
-					["coord"] = { 23.4, 75.0, LOCH_MODAN },
+					["coord"] = { 23.4, 75.0, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1127,7 +1127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26842, {	-- Out of Gnoll-where
 					["sourceQuest"] = 26176,	-- Onward to Thelsamar
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 35.1, 46.6, LOCH_MODAN },
+					["coord"] = { 35.1, 46.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1144,7 +1144,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(302, {	-- Powder to Ironband
 					["sourceQuest"] = 301,	-- Report to Ironforge
 					["qg"] = 1356,	-- Prospector Stormpike
-					["coord"] = { 74.4, 12.0, IRONFORGE },
+					["coord"] = { 74.4, 12.0, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1166,9 +1166,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 56.4, 65.8, LOCH_MODAN },
+						{ 56.4, 65.8, MAP.LOCH_MODAN },
 						-- #else
-						{ 52.2, 69.4, LOCH_MODAN },
+						{ 52.2, 69.4, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(416, {	-- Rat Catching
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47.0, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26131, {	-- Reinforcements for Loch Modan
 					["qg"] = 1959,	-- Mountaineer Barleybrew
-					["coord"] = { 41.4, 52.3, IRONFORGE },
+					["coord"] = { 41.4, 52.3, MAP.IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1239,14 +1239,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1105 },	-- Jern Hornhelm
 						{ "i", 2637 },	-- Ironbrand's Progress Report
 					},
-					["coord"] = { 37.2, 47.4, LOCH_MODAN },
+					["coord"] = { 37.2, 47.4, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(468, {	-- Report to Mountaineer Rockgar
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47.0, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1255,7 +1255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(273, {	-- Resupplying the Excavation
 					["sourceQuest"] = 302,	-- Powder to Ironband
 					["qg"] = 1105,	-- Jern Hornhelm
-					["coord"] = { 37.2, 47.4, LOCH_MODAN },
+					["coord"] = { 37.2, 47.4, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1263,7 +1263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(13639, {	-- Resupplying the Excavation
 					["sourceQuest"] = 26868,	-- Axis of Awful
 					["qg"] = 1105,	-- Jern Hornhelm
-					["coord"] = { 37.2, 47.4, LOCH_MODAN },
+					["coord"] = { 37.2, 47.4, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1274,7 +1274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1572 },	-- Thorgrum Borrelson
 						{ "i", 16310 },	-- Brock's List
 					},
-					["coord"] = { 33.9, 50.9, LOCH_MODAN },
+					["coord"] = { 33.9, 50.9, MAP.LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
 					["lvl"] = 10,
 				}),
@@ -1282,7 +1282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27075, {	-- Servants of Cho'gall
 					["sourceQuest"] = 27074,	-- Fight the Hammer
 					["qg"] = 1073,	-- Ashlan Stonesmirk
-					["coord"] = { 64.1, 26.6, LOCH_MODAN },
+					["coord"] = { 64.1, 26.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1298,7 +1298,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27033, {	-- Skystrider's Heart
 					["sourceQuest"] = 27032,	-- Bird is the Word
 					["qg"] = 44618,	-- Rusted Skystrider
-					["coord"] = { 78.5, 76.2, LOCH_MODAN },
+					["coord"] = { 78.5, 76.2, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1308,7 +1308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  1960 },	-- Pilot Hammerfoot
 						{ "i", 60494 },	-- South Gate Status Report (PQI!)
 					},
-					["coord"] = { 14.0, 56.5, LOCH_MODAN },
+					["coord"] = { 14.0, 56.5, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1316,7 +1316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26928, {	-- Smells Like A Plan
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
 					["qg"] = 44345,	-- Cannary Caskshot
-					["coord"] = { 34.7, 49.1, LOCH_MODAN },
+					["coord"] = { 34.7, 49.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1334,7 +1334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27035, {	-- Standing Up
 					["sourceQuest"] = 27034,	-- He's That Age
 					["qg"] = 44870,	-- Ando Blastenheimer
-					["coord"] = { 58.5, 29.1, LOCH_MODAN },
+					["coord"] = { 58.5, 29.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1349,15 +1349,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1343 },	-- Mountaineer Stormpike
 						{ "i", 5998 },	-- Stormpike's Request
 					},
-					["coord"] = { 24.7, 18.3, LOCH_MODAN },
+					["coord"] = { 24.7, 18.3, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(13636, {	-- Stormpike's Orders
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 35.1, 46.6, LOCH_MODAN },
+					["coord"] = { 35.1, 46.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1,
@@ -1369,16 +1369,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26927, {	-- Suddenly, Murlocs!
 					["sourceQuest"] = 26864,	-- The Bearer of Gnoll-edge
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 35.0, 46.5, LOCH_MODAN },
+					["coord"] = { 35.0, 46.5, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(455, {	-- The Algaz Gauntlet
 					["sourceQuest"] = 468,	-- Report to Mountaineer Rockgar
 					["qg"] = 1342,	-- Mountaineer Rockgar
-					["coord"] = { 25.5, 10.5, LOCH_MODAN },
+					["coord"] = { 25.5, 10.5, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WETLANDS },
+					["maps"] = { MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
@@ -1393,13 +1393,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26864, {	-- The Bearer of Gnoll-edge
 					["sourceQuest"] = 26845,	-- Who's in Charge Here?
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["coord"] = { 25.4, 17.9, LOCH_MODAN },
+					["coord"] = { 25.4, 17.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27016, {	-- The Joy of Boar Hunting
 					["qg"] = 1187,	-- Daryl the Youngling
-					["coord"] = { 83.4, 65.4, LOCH_MODAN },
+					["coord"] = { 83.4, 65.4, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1410,7 +1410,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(267, {	-- The Trogg Threat
 					["qg"] = 1092,	-- Captain Rugelfuss
-					["coord"] = { 23.3, 73.8, LOCH_MODAN },
+					["coord"] = { 23.3, 73.8, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1433,7 +1433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26145, {	-- The Trogg Threat
 					["sourceQuest"] = 13635,	-- South Gate Status Report
 					["qg"] = 1089,	-- Mountaineer Cobbleflint
-					["coord"] = { 23.3, 74.9, LOCH_MODAN },
+					["coord"] = { 23.3, 74.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1455,13 +1455,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27116, {	-- The Winds of Loch Modan
 					["sourceQuest"] = 27115,	-- Ando's Call
 					["qg"] = 44870,	-- Ando Blastenheimer
-					["coord"] = { 58.5, 29.1, LOCH_MODAN },
+					["coord"] = { 58.5, 29.1, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(418, {	-- Thelsamar Blood Sausages
 					["qg"] = 1963,	-- Vidra Hearthstove
-					["coord"] = { 34.8, 49.3, LOCH_MODAN },
+					["coord"] = { 34.8, 49.3, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 3172, 3 },	-- Boar Intestines
@@ -1477,7 +1477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26860, {	-- Thelsamar Blood Sausages
 					["qg"] = 1963,	-- Vidra Hearthstove
-					["coord"] = { 34.8, 49.2, LOCH_MODAN },
+					["coord"] = { 34.8, 49.2, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1490,7 +1490,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27025, {	-- Thistle While You Work
 					["qg"] = 44859,	-- Safety Warden Pipsy
-					["coord"] = { 82.7, 63.4, LOCH_MODAN },
+					["coord"] = { 82.7, 63.4, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1505,9 +1505,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(17, {	-- Uldaman Reagent Run
 					["sourceQuest"] = 2500,	-- Badlands Reagent Run
 					["qg"] = 1470,	-- Ghak Healtouch
-					["coord"] = { 37.07, 49.38, LOCH_MODAN },
+					["coord"] = { 37.07, 49.38, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BADLANDS, ULDAMAN },
+					["maps"] = { MAP.BADLANDS, ULDAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -1525,14 +1525,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 258,	-- A Hunter's Challenge
 					["qg"] = 1156,	-- Vyrin Swiftwind
-					["coord"] = { 81.8, 64.2, LOCH_MODAN },
+					["coord"] = { 81.8, 64.2, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ol' Sooty's Head
 							["provider"] = { "i", 2713 },	-- Ol' Sooty's Head
-							["coord"] = { 37.6, 62.6, LOCH_MODAN },
+							["coord"] = { 37.6, 62.6, MAP.LOCH_MODAN },
 							["cr"] = 1225,	-- Ol' Sooty
 						}),
 					},
@@ -1543,7 +1543,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1187 },	-- Daryl the Youngling
 						{ "i", 2713 },	-- Ol' Sooty's Head
 					},
-					["coord"] = { 83.4, 65.2, LOCH_MODAN },
+					["coord"] = { 83.4, 65.2, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -1559,7 +1559,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27036, {	-- Vyrin's Revenge (1/2)
 					["sourceQuest"] = 27016,	-- The Joy of Boar Hunting
 					["qg"] = 1156,	-- Vyrin Swiftwind
-					["coord"] = { 81.9, 64.6, LOCH_MODAN },
+					["coord"] = { 81.9, 64.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1572,7 +1572,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27037, {	-- Vyrin's Revenge (2/2)
 					["sourceQuest"] = 27036,	-- Vyrin's Revenge (1/2)
 					["qg"] = 1187,	-- Daryl the Youngling
-					["coord"] = { 83.4, 65.4, LOCH_MODAN },
+					["coord"] = { 83.4, 65.4, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1592,14 +1592,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(256, {	-- WANTED: Chok'sul
 					["provider"] = { "o", 256 },	-- WANTED
-					["coord"] = { 37.2, 46.4, LOCH_MODAN },
+					["coord"] = { 37.2, 46.4, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/1 Chok'sul's Head
 							["provider"] = { "i", 2561 },	-- Chok'sul's Head
-							["coord"] = { 79.6, 14.2, LOCH_MODAN },
+							["coord"] = { 79.6, 14.2, MAP.LOCH_MODAN },
 							["cr"] = 1210,	-- Chok'sul
 						}),
 						i(59028, {	-- Bluntnose's Signet
@@ -1624,7 +1624,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(13648, {	-- WANTED: The Dark Iron Spy
 					["provider"] = { "o", 256 },	-- Wanted!
-					["coord"] = { 37.3, 46.5, LOCH_MODAN },
+					["coord"] = { 37.3, 46.5, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1636,7 +1636,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26845, {	-- Who's In Charge Here?
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["coord"] = { 25.4, 17.9, LOCH_MODAN },
+					["coord"] = { 25.4, 17.9, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1649,7 +1649,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27031, {	-- Wing Nut
 					["sourceQuest"] = 2039,	-- Find Bingles
 					["qg"] = 6577,	-- Bingles Blastenheimer
-					["coord"] = { 81.6, 64.7, LOCH_MODAN },
+					["coord"] = { 81.6, 64.7, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1663,30 +1663,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(45380, {	-- Ashtail
 					["coords"] = {
-						{ 68.8, 38.2, LOCH_MODAN },
-						{ 72.4, 36.2, LOCH_MODAN },
-						{ 74.0, 34.0, LOCH_MODAN },
-						{ 77.0, 39.0, LOCH_MODAN },
-						{ 76.4, 42.4, LOCH_MODAN },
-						{ 73.6, 44.0, LOCH_MODAN },
-						{ 69.6, 42.0, LOCH_MODAN },
-						{ 66.6, 40.0, LOCH_MODAN },
+						{ 68.8, 38.2, MAP.LOCH_MODAN },
+						{ 72.4, 36.2, MAP.LOCH_MODAN },
+						{ 74.0, 34.0, MAP.LOCH_MODAN },
+						{ 77.0, 39.0, MAP.LOCH_MODAN },
+						{ 76.4, 42.4, MAP.LOCH_MODAN },
+						{ 73.6, 44.0, MAP.LOCH_MODAN },
+						{ 69.6, 42.0, MAP.LOCH_MODAN },
+						{ 66.6, 40.0, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(1398, {	-- Boss Galgosh <Stonesplinter Chieftain>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 69.6, 60.0, LOCH_MODAN },
-						{ 70.4, 64.6, LOCH_MODAN },
-						{ 70.8, 68.0, LOCH_MODAN },
-						{ 68.0, 66.0, LOCH_MODAN },
+						{ 69.6, 60.0, MAP.LOCH_MODAN },
+						{ 70.4, 64.6, MAP.LOCH_MODAN },
+						{ 70.8, 68.0, MAP.LOCH_MODAN },
+						{ 68.0, 66.0, MAP.LOCH_MODAN },
 						-- #else
-						{ 68.4, 66.0, LOCH_MODAN },
-						{ 65.8, 68.0, LOCH_MODAN },
-						{ 68.8, 68.6, LOCH_MODAN },
-						{ 72.4, 67.6, LOCH_MODAN },
-						{ 70.4, 63.8, LOCH_MODAN },
+						{ 68.4, 66.0, MAP.LOCH_MODAN },
+						{ 65.8, 68.0, MAP.LOCH_MODAN },
+						{ 68.8, 68.6, MAP.LOCH_MODAN },
+						{ 72.4, 67.6, MAP.LOCH_MODAN },
+						{ 70.4, 63.8, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["groups"] = {
@@ -1701,16 +1701,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(14267, {	-- Emogg the Crusher
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.4, 29.0, LOCH_MODAN },
-						{ 67.0, 21.0, LOCH_MODAN },
-						{ 73.0, 25.8, LOCH_MODAN },
-						{ 72.8, 21.4, LOCH_MODAN },
-						{ 70.0, 25.0, LOCH_MODAN },
+						{ 68.4, 29.0, MAP.LOCH_MODAN },
+						{ 67.0, 21.0, MAP.LOCH_MODAN },
+						{ 73.0, 25.8, MAP.LOCH_MODAN },
+						{ 72.8, 21.4, MAP.LOCH_MODAN },
+						{ 70.0, 25.0, MAP.LOCH_MODAN },
 						-- #else
-						{ 65.0, 21.0, LOCH_MODAN },
-						{ 68.4, 28.8, LOCH_MODAN },
-						{ 64.2, 28.4, LOCH_MODAN },
-						{ 71.6, 21.0, LOCH_MODAN },
+						{ 65.0, 21.0, MAP.LOCH_MODAN },
+						{ 68.4, 28.8, MAP.LOCH_MODAN },
+						{ 64.2, 28.4, MAP.LOCH_MODAN },
+						{ 71.6, 21.0, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["groups"] = {
@@ -1720,15 +1720,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(45404, {	-- Geoshaper Maren
-					["coord"] = { 50.0, 24.0, LOCH_MODAN },
+					["coord"] = { 50.0, 24.0, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if AFTER 4.0.3
 				n(2476, {	-- Gosh-Haldir [CATA+] / Large Loch Crocolisk
 					["coords"] = {
-						{ 56.4, 51.8, LOCH_MODAN },
-						{ 55.6, 55.8, LOCH_MODAN },
-						{ 53.0, 56.8, LOCH_MODAN },
+						{ 56.4, 51.8, MAP.LOCH_MODAN },
+						{ 55.6, 55.8, MAP.LOCH_MODAN },
+						{ 53.0, 56.8, MAP.LOCH_MODAN },
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
@@ -1743,7 +1743,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209958, {	-- Graix
 					["provider"] = { "n", 209954 },	-- Demonic Remains
-					["coord"] = { 72.6, 68.8, LOCH_MODAN },
+					["coord"] = { 72.6, 68.8, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
@@ -1757,17 +1757,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(45398, {	-- Grizlak <Associate Troggwhacker>
-					["coord"] = { 35.6, 15.6, LOCH_MODAN },
+					["coord"] = { 35.6, 15.6, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(1425, {	-- Grizlak / Kubb [CATA+]
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 26.0, 27.0, LOCH_MODAN },
-						{ 26.2, 31.8, LOCH_MODAN },
-						{ 24.8, 30.6, LOCH_MODAN },
+						{ 26.0, 27.0, MAP.LOCH_MODAN },
+						{ 26.2, 31.8, MAP.LOCH_MODAN },
+						{ 24.8, 30.6, MAP.LOCH_MODAN },
 						-- #else
-						{ 35.4, 27.8, LOCH_MODAN },
+						{ 35.4, 27.8, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["groups"] = {
@@ -1781,7 +1781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(210107, {	-- Kackle
-					["coord"] = { 55.0, 55.4, LOCH_MODAN },
+					["coord"] = { 55.0, 55.4, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["groups"] = {
@@ -1797,10 +1797,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				n(2476, {	-- Large Loch Crocolisk / Gosh-Haldir [CATA+]
 					["coords"] = {
-						{ 58.8, 28.2, LOCH_MODAN },
-						{ 59.8, 31.8, LOCH_MODAN },
-						{ 61.2, 40.6, LOCH_MODAN },
-						{ 62.4, 45.6, LOCH_MODAN },
+						{ 58.8, 28.2, MAP.LOCH_MODAN },
+						{ 59.8, 31.8, MAP.LOCH_MODAN },
+						{ 61.2, 40.6, MAP.LOCH_MODAN },
+						{ 62.4, 45.6, MAP.LOCH_MODAN },
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
@@ -1815,25 +1815,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(14268, {	-- Lord Condar
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 67.4, 76.0, LOCH_MODAN },
-						{ 73.2, 72.6, LOCH_MODAN },
-						{ 75.8, 63.0, LOCH_MODAN },
-						{ 79.0, 63.0, LOCH_MODAN },
-						{ 78.6, 71.2, LOCH_MODAN },
-						{ 78.2, 74.6, LOCH_MODAN },
+						{ 67.4, 76.0, MAP.LOCH_MODAN },
+						{ 73.2, 72.6, MAP.LOCH_MODAN },
+						{ 75.8, 63.0, MAP.LOCH_MODAN },
+						{ 79.0, 63.0, MAP.LOCH_MODAN },
+						{ 78.6, 71.2, MAP.LOCH_MODAN },
+						{ 78.2, 74.6, MAP.LOCH_MODAN },
 						-- #else
-						{ 62.8, 78.2, LOCH_MODAN },
-						{ 74.8, 67.8, LOCH_MODAN },
-						{ 78.0, 74.2, LOCH_MODAN },
+						{ 62.8, 78.2, MAP.LOCH_MODAN },
+						{ 74.8, 67.8, MAP.LOCH_MODAN },
+						{ 78.0, 74.2, MAP.LOCH_MODAN },
 						-- #endif
 					},
 				}),
 				n(1399, {	-- Magosh <Stonesplinter Tribal Shaman>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 31.0, 75.6, LOCH_MODAN },
+						{ 31.0, 75.6, MAP.LOCH_MODAN },
 						-- #else
-						{ 70.0, 66.2, LOCH_MODAN },
+						{ 70.0, 66.2, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["groups"] = {
@@ -1847,51 +1847,51 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(45369, {	-- Morick Darkbrew <Dark Iron Courier>
 					["coords"] = {
-						{ 37.8, 63.2, LOCH_MODAN },
-						{ 40.4, 60.4, LOCH_MODAN },
-						{ 40.6, 64.4, LOCH_MODAN },
+						{ 37.8, 63.2, MAP.LOCH_MODAN },
+						{ 40.4, 60.4, MAP.LOCH_MODAN },
+						{ 40.6, 64.4, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45402, {	-- Nix
 					["coords"] = {
-						{ 50.8, 37.4, LOCH_MODAN },
-						{ 53.0, 33.8, LOCH_MODAN },
-						{ 58.4, 38.6, LOCH_MODAN },
-						{ 58.8, 41.6, LOCH_MODAN },
-						{ 53.8, 43.2, LOCH_MODAN },
+						{ 50.8, 37.4, MAP.LOCH_MODAN },
+						{ 53.0, 33.8, MAP.LOCH_MODAN },
+						{ 58.4, 38.6, MAP.LOCH_MODAN },
+						{ 58.8, 41.6, MAP.LOCH_MODAN },
+						{ 53.8, 43.2, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45399, {	-- Optimo
 					["coords"] = {
-						{ 71.6, 77.0, LOCH_MODAN },
-						{ 74.8, 76.4, LOCH_MODAN },
-						{ 77.0, 83.2, LOCH_MODAN },
-						{ 78.0, 77.8, LOCH_MODAN },
+						{ 71.6, 77.0, MAP.LOCH_MODAN },
+						{ 74.8, 76.4, MAP.LOCH_MODAN },
+						{ 77.0, 83.2, MAP.LOCH_MODAN },
+						{ 78.0, 77.8, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45384, {	-- Sagepaw <Mosshide Chieftain>
-					["coord"] = { 25.6, 44.8, LOCH_MODAN },
+					["coord"] = { 25.6, 44.8, MAP.LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14266, {	-- Shanda the Spinner
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.6, 74.6, LOCH_MODAN },
+						{ 61.6, 74.6, MAP.LOCH_MODAN },
 						-- #else
-						{ 77.8, 53.6, LOCH_MODAN },
+						{ 77.8, 53.6, MAP.LOCH_MODAN },
 						-- #endif
 					},
 				}),
 				n(45401, {	-- Whitefin
 					["coords"] = {
-						{ 45.6, 38.6, LOCH_MODAN },
-						{ 43.2, 41.6, LOCH_MODAN },
-						{ 44.8, 48.6, LOCH_MODAN },
-						{ 46.0, 54.8, LOCH_MODAN },
-						{ 49.6, 57.0, LOCH_MODAN },
+						{ 45.6, 38.6, MAP.LOCH_MODAN },
+						{ 43.2, 41.6, MAP.LOCH_MODAN },
+						{ 44.8, 48.6, MAP.LOCH_MODAN },
+						{ 46.0, 54.8, MAP.LOCH_MODAN },
+						{ 49.6, 57.0, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1899,9 +1899,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				o(207497, {	-- Dark Iron Treasure Chest
 					["coords"] = {
-						{ 36.6, 61.2, LOCH_MODAN },
-						{ 61.9, 75.0, LOCH_MODAN },
-						{ 80.3, 51.9, LOCH_MODAN },
+						{ 36.6, 61.2, MAP.LOCH_MODAN },
+						{ 61.9, 75.0, MAP.LOCH_MODAN },
+						{ 80.3, 51.9, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1930,14 +1930,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
 					["provider"] = { "o", 408004 },	-- Tangled Blight Pile
-					["coord"] = { 71.8, 21.6, LOCH_MODAN },
+					["coord"] = { 71.8, 21.6, MAP.LOCH_MODAN },
 					["classes"] = { DRUID },
 					["groups"] = {
 						recipe(410023),	-- Engrave Pants - Savage Roar
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
-					["coord"] = { 36.6, 20.8, LOCH_MODAN },
+					["coord"] = { 36.6, 20.8, MAP.LOCH_MODAN },
 					["cost"] = { { "i", 208823, 1 } },	-- Offering Coin
 					["classes"] = { PRIEST },
 					["groups"] = {
@@ -1945,7 +1945,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407983, {	-- Pile of Stolen Books
-					["coord"] = { 54.2, 27.0, LOCH_MODAN },
+					["coord"] = { 54.2, 27.0, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(208754, {	-- Spell Notes: TENGI RONEERA
@@ -1956,7 +1956,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
 					["description"] = "/kneel at the statue for the rune.",
 					["provider"] = { "n", 209908 },	-- Heretic Idol
-					["coord"] = { 71.8, 27.6, LOCH_MODAN },
+					["coord"] = { 71.8, 27.6, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
@@ -1965,11 +1965,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
 					["provider"] = { "o", 408014 },	-- Gnomish Tome
-					["coord"] = { 35.6, 48.9, LOCH_MODAN },
+					["coord"] = { 35.6, 48.9, MAP.LOCH_MODAN },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
 					["provider"] = { "o", 407918 },	-- Empty Trophy Display
-					["coord"] = { 83.6, 65.5, LOCH_MODAN },
+					["coord"] = { 83.6, 65.5, MAP.LOCH_MODAN },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						recipe(410110),	-- Engrave Gloves - Beast Mastery
@@ -1981,7 +1981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   1224 },	-- Young Threshadon
 						{ "i", 208855 },	-- Rainbow Fin Albacore Chum
 					},
-					["coord"] = { 44.8, 39.2, LOCH_MODAN },
+					["coord"] = { 44.8, 39.2, MAP.LOCH_MODAN },
 					["classes"] = { DRUID },
 					["groups"] = {
 						recipe(416049),	-- Engrave Gloves - Lacerate
@@ -1989,7 +1989,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 					["provider"] = { "o", 407731 },	-- Stonemason's Toolbox
-					["coord"] = { 46.5, 12.7, LOCH_MODAN },
+					["coord"] = { 46.5, 12.7, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -1998,10 +1998,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209850, {	-- Runes of the Sorcerer-Kings
 					["provider"] = { "o", 409731 },	-- Scrolls
-					["coord"] = { 77.5, 14.1, LOCH_MODAN },
+					["coord"] = { 77.5, 14.1, MAP.LOCH_MODAN },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407850, {	-- Sunken Reliquary
-					["coord"] = { 36.8, 91.4, LOCH_MODAN },
+					["coord"] = { 36.8, 91.4, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(208851, {	-- Libram of Justice
@@ -2016,7 +2016,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(1214, {	-- Aldren Cordon <Clothier>
-					["coord"] = { 64.8, 66.0, LOCH_MODAN },
+					["coord"] = { 64.8, 66.0, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
@@ -2042,7 +2042,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1687, {	-- Cliff Hadin <Bowyer>
-					["coord"] = { 83.0, 63.0, LOCH_MODAN },
+					["coord"] = { 83.0, 63.0, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						2507,	-- Laminated Recurve Bow
@@ -2055,7 +2055,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1465, {	-- Drac Roughcut <Tradesman>
-					["coord"] = { 35.6, 49.1, LOCH_MODAN },
+					["coord"] = { 35.6, 49.1, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
@@ -2066,7 +2066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1686, {	-- Irene Sureshot <Gunsmith>
-					["coord"] = { 83.2, 63.5, LOCH_MODAN },
+					["coord"] = { 83.2, 63.5, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						2511,	-- Hunter's Boomstick
@@ -2074,7 +2074,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(954, {	-- Kat Sampson <Leather Armor Merchant>
-					["coord"] = { 82.6, 64.0, LOCH_MODAN },
+					["coord"] = { 82.6, 64.0, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						1843,	-- Tanned Leather Belt
@@ -2096,9 +2096,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1684, {	-- Khara Deepwater <Fishing Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 39.5, 39.2, LOCH_MODAN },
+						{ 39.5, 39.2, MAP.LOCH_MODAN },
 						-- #else
-						{ 40.4, 39.4, LOCH_MODAN },
+						{ 40.4, 39.4, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2115,7 +2115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1362, {	-- Gothor Brumn <Armorer>
-					["coord"] = { 24.1, 18.2, LOCH_MODAN },
+					["coord"] = { 24.1, 18.2, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						847,	-- Chainmail Armor
@@ -2129,11 +2129,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				n(3291, {	-- Greishan Ironstove <Traveling Merchant>
 					["coords"] = {
-						{ 23.0, 70.4, LOCH_MODAN },
-						{ 27.6, 65.8, LOCH_MODAN },
-						{ 30.6, 58.0, LOCH_MODAN },
-						{ 34.6, 47.2, LOCH_MODAN },
-						{ 26.6, 22.6, LOCH_MODAN },
+						{ 23.0, 70.4, MAP.LOCH_MODAN },
+						{ 27.6, 65.8, MAP.LOCH_MODAN },
+						{ 30.6, 58.0, MAP.LOCH_MODAN },
+						{ 34.6, 47.2, MAP.LOCH_MODAN },
+						{ 26.6, 22.6, MAP.LOCH_MODAN },
 					},
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(208833, {	-- Malevolent Pie
@@ -2152,7 +2152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(167, {	-- Morhan Coppertongue <Metalsmith>
-					["coord"] = { 34.0, 46.6, LOCH_MODAN },
+					["coord"] = { 34.0, 46.6, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						847,	-- Chainmail Armor
@@ -2172,7 +2172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(222, {	-- Nillen Andemar <Macecrafter>
-					["coord"] = { 43.0, 10.0, LOCH_MODAN },
+					["coord"] = { 43.0, 10.0, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						2492,	-- Cudgel
@@ -2190,7 +2190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1474, {	-- Rann Flamespinner <Tailoring Supplies>
-					["coord"] = { 36.0, 46.0, LOCH_MODAN },
+					["coord"] = { 36.0, 46.0, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
@@ -2203,7 +2203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER CATA
 				n(6030, {	-- Thorvald Deepforge
-					["coord"] = { 23.7, 74.3, LOCH_MODAN },
+					["coord"] = { 23.7, 74.3, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						1198,	-- Claymore
@@ -2218,7 +2218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(1469, {	-- Vrok Blunderblast <Gunsmith>
-					["coord"] = { 25.3, 42.5, LOCH_MODAN },
+					["coord"] = { 25.3, 42.5, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						2511,	-- Hunter's Boomstick
@@ -2226,7 +2226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(1685, {	-- Xandar Goodbeard <General Supplies>
-					["coord"] = { 82.6, 63.2, LOCH_MODAN },
+					["coord"] = { 82.6, 63.2, MAP.LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
@@ -2242,18 +2242,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5319, {	-- Bashing Pauldrons
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 40.6, 10.4, LOCH_MODAN },
-						{ 24.8, 13.2, LOCH_MODAN },
-						{ 30.0, 27.4, LOCH_MODAN },
-						{ 40.0, 25.0, LOCH_MODAN },
-						{ 29.2, 46.0, LOCH_MODAN },
-						{ 37.8, 40.0, LOCH_MODAN },
-						{ 41.6, 48.0, LOCH_MODAN },
-						{ 41.6, 58.4, LOCH_MODAN },
-						{ 47.2, 65.6, LOCH_MODAN },
+						{ 40.6, 10.4, MAP.LOCH_MODAN },
+						{ 24.8, 13.2, MAP.LOCH_MODAN },
+						{ 30.0, 27.4, MAP.LOCH_MODAN },
+						{ 40.0, 25.0, MAP.LOCH_MODAN },
+						{ 29.2, 46.0, MAP.LOCH_MODAN },
+						{ 37.8, 40.0, MAP.LOCH_MODAN },
+						{ 41.6, 48.0, MAP.LOCH_MODAN },
+						{ 41.6, 58.4, MAP.LOCH_MODAN },
+						{ 47.2, 65.6, MAP.LOCH_MODAN },
 						-- #else
-						{ 55.2, 68.2, LOCH_MODAN },
-						{ 66.0, 37.8, LOCH_MODAN },
+						{ 55.2, 68.2, MAP.LOCH_MODAN },
+						{ 66.0, 37.8, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2268,8 +2268,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208843, {	-- Battle Totem
 					["coords"] = {
-						{ 79.6, 16.0, LOCH_MODAN },
-						{ 76.6, 16.0, LOCH_MODAN },
+						{ 79.6, 16.0, MAP.LOCH_MODAN },
+						{ 76.6, 16.0, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
@@ -2285,7 +2285,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				i(3173),	-- Bear Meat
 				i(3172, {	-- Boar Intestines
-					["coord"] = { 37.0, 34.4, LOCH_MODAN },
+					["coord"] = { 37.0, 34.4, MAP.LOCH_MODAN },
 					["crs"] = {
 						1190,	-- Mountain Boar
 						1191,	-- Mangy Mountain Boar
@@ -2296,9 +2296,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208854, {	-- Chewed Spell Notes
 					["coords"] = {
-						{ 29.8, 84.6, LOCH_MODAN },
-						{ 36.6, 84.4, LOCH_MODAN },
-						{ 49.0, 21.6, LOCH_MODAN },
+						{ 29.8, 84.6, MAP.LOCH_MODAN },
+						{ 36.6, 84.4, MAP.LOCH_MODAN },
+						{ 49.0, 21.6, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
@@ -2311,14 +2311,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2823, {	-- Mo'grosh Can Opener
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 71.4, 21.2, LOCH_MODAN },
-						{ 68.8, 22.4, LOCH_MODAN },
-						{ 68.8, 25.4, LOCH_MODAN },
-						{ 74.8, 25.0, LOCH_MODAN },
-						{ 76.6, 16.0, LOCH_MODAN },
+						{ 71.4, 21.2, MAP.LOCH_MODAN },
+						{ 68.8, 22.4, MAP.LOCH_MODAN },
+						{ 68.8, 25.4, MAP.LOCH_MODAN },
+						{ 74.8, 25.0, MAP.LOCH_MODAN },
+						{ 76.6, 16.0, MAP.LOCH_MODAN },
 						-- #else
-						{ 79.6, 16.0, LOCH_MODAN },
-						{ 76.6, 16.0, LOCH_MODAN },
+						{ 79.6, 16.0, MAP.LOCH_MODAN },
+						{ 76.6, 16.0, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2333,11 +2333,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2821, {	-- Mo'grosh Masher
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 70.0, 24.6, LOCH_MODAN },
+						{ 70.0, 24.6, MAP.LOCH_MODAN },
 						-- #else
-						{ 74.2, 28.4, LOCH_MODAN },
-						{ 69.4, 22.2, LOCH_MODAN },
-						{ 64.4, 20.6, LOCH_MODAN },
+						{ 74.2, 28.4, MAP.LOCH_MODAN },
+						{ 69.4, 22.2, MAP.LOCH_MODAN },
+						{ 64.4, 20.6, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2353,14 +2353,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2822, {	-- Mo'grosh Toothpick
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 71.4, 21.2, LOCH_MODAN },
-						{ 68.8, 22.4, LOCH_MODAN },
-						{ 68.8, 25.4, LOCH_MODAN },
-						{ 74.8, 25.0, LOCH_MODAN },
-						{ 76.6, 16.0, LOCH_MODAN },
+						{ 71.4, 21.2, MAP.LOCH_MODAN },
+						{ 68.8, 22.4, MAP.LOCH_MODAN },
+						{ 68.8, 25.4, MAP.LOCH_MODAN },
+						{ 74.8, 25.0, MAP.LOCH_MODAN },
+						{ 76.6, 16.0, MAP.LOCH_MODAN },
 						-- #else
-						{ 79.6, 16.0, LOCH_MODAN },
-						{ 76.6, 16.0, LOCH_MODAN },
+						{ 79.6, 16.0, MAP.LOCH_MODAN },
+						{ 76.6, 16.0, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2375,8 +2375,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208823, {	-- Offering Coin
 					["coords"] = {
-						{ 35.6, 20.0, LOCH_MODAN },
-						{ 35.8, 27.4, LOCH_MODAN },
+						{ 35.6, 20.0, MAP.LOCH_MODAN },
+						{ 35.8, 27.4, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
@@ -2390,18 +2390,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(4949, {	-- Orcish Cleaver
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 40.6, 10.4, LOCH_MODAN },
-						{ 24.8, 13.2, LOCH_MODAN },
-						{ 30.0, 27.4, LOCH_MODAN },
-						{ 40.0, 25.0, LOCH_MODAN },
-						{ 29.2, 46.0, LOCH_MODAN },
-						{ 37.8, 40.0, LOCH_MODAN },
-						{ 41.6, 48.0, LOCH_MODAN },
-						{ 41.6, 58.4, LOCH_MODAN },
-						{ 47.2, 65.6, LOCH_MODAN },
+						{ 40.6, 10.4, MAP.LOCH_MODAN },
+						{ 24.8, 13.2, MAP.LOCH_MODAN },
+						{ 30.0, 27.4, MAP.LOCH_MODAN },
+						{ 40.0, 25.0, MAP.LOCH_MODAN },
+						{ 29.2, 46.0, MAP.LOCH_MODAN },
+						{ 37.8, 40.0, MAP.LOCH_MODAN },
+						{ 41.6, 48.0, MAP.LOCH_MODAN },
+						{ 41.6, 58.4, MAP.LOCH_MODAN },
+						{ 47.2, 65.6, MAP.LOCH_MODAN },
 						-- #else
-						{ 55.2, 68.2, LOCH_MODAN },
-						{ 66.0, 37.8, LOCH_MODAN },
+						{ 55.2, 68.2, MAP.LOCH_MODAN },
+						{ 66.0, 37.8, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2416,12 +2416,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2283, {	-- Rat Cloth Belt
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 36.8, 16.6, LOCH_MODAN },
-						{ 32.0, 12.0, LOCH_MODAN },
-						{ 29.6, 15.0, LOCH_MODAN },
+						{ 36.8, 16.6, MAP.LOCH_MODAN },
+						{ 32.0, 12.0, MAP.LOCH_MODAN },
+						{ 29.6, 15.0, MAP.LOCH_MODAN },
 						-- #else
-						{ 35.2, 27.6, LOCH_MODAN },
-						{ 35.2, 27.6, LOCH_MODAN },
+						{ 35.2, 27.6, MAP.LOCH_MODAN },
+						{ 35.2, 27.6, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2432,11 +2432,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2281, {	-- Rodentia Flint Axe
 					["coords"] = {
-						{ 38.4, 16.0, LOCH_MODAN },
-						{ 32.6, 26.4, LOCH_MODAN },
-						{ 32.2, 14.6, LOCH_MODAN },
+						{ 38.4, 16.0, MAP.LOCH_MODAN },
+						{ 32.6, 26.4, MAP.LOCH_MODAN },
+						{ 32.2, 14.6, MAP.LOCH_MODAN },
 						-- #if BEFORE 4.0.3
-						{ 27.6, 44.8, LOCH_MODAN },
+						{ 27.6, 44.8, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2449,13 +2449,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2282, {	-- Rodentia Shortsword
 					["coords"] = {
-						{ 28.2, 36.0, LOCH_MODAN },
-						{ 25.2, 26.2, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 28.2, 36.0, MAP.LOCH_MODAN },
+						{ 25.2, 26.2, MAP.LOCH_MODAN },
+						{ 19.8, 46.8, MAP.LOCH_MODAN },
 						-- #if BEFORE 4.0.3
-						{ 28.6, 45.0, LOCH_MODAN },
-						{ 25.0, 32.6, LOCH_MODAN },
-						{ 37.4, 16.6, LOCH_MODAN },
+						{ 28.6, 45.0, MAP.LOCH_MODAN },
+						{ 25.0, 32.6, MAP.LOCH_MODAN },
+						{ 37.4, 16.6, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2469,8 +2469,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "You can challenge him to a duel (as to not fight his adds) with a Battle Totem.",
 					["provider"] = { "i", 208843 },	-- Battle Totem
 					["coords"] = {
-						{ 55.2, 68.2, LOCH_MODAN },
-						{ 66.0, 37.8, LOCH_MODAN },
+						{ 55.2, 68.2, MAP.LOCH_MODAN },
+						{ 66.0, 37.8, MAP.LOCH_MODAN },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
@@ -2490,7 +2490,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208847, {	-- Skull-Shaped Geode
-					["coord"] = { 33.2, 73.8, LOCH_MODAN },
+					["coord"] = { 33.2, 73.8, MAP.LOCH_MODAN },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -2515,14 +2515,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2265, {	-- Stonesplinter Axe
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 31.6, 77.0, LOCH_MODAN },
-						{ 31.4, 80.6, LOCH_MODAN },
-						{ 29.6, 80.8, LOCH_MODAN },
+						{ 31.6, 77.0, MAP.LOCH_MODAN },
+						{ 31.4, 80.6, MAP.LOCH_MODAN },
+						{ 29.6, 80.8, MAP.LOCH_MODAN },
 						-- #else
-						{ 51.6, 24.6, LOCH_MODAN },
-						{ 48.8, 29.6, LOCH_MODAN },
-						{ 36.8, 84.8, LOCH_MODAN },
-						{ 29.8, 84.0, LOCH_MODAN },
+						{ 51.6, 24.6, MAP.LOCH_MODAN },
+						{ 48.8, 29.6, MAP.LOCH_MODAN },
+						{ 36.8, 84.8, MAP.LOCH_MODAN },
+						{ 29.8, 84.0, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2544,13 +2544,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2266, {	-- Stonesplinter Dagger
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 40.2, 72.0, LOCH_MODAN },
-						{ 32.6, 71.8, LOCH_MODAN },
-						{ 29.4, 81.8, LOCH_MODAN },
+						{ 40.2, 72.0, MAP.LOCH_MODAN },
+						{ 32.6, 71.8, MAP.LOCH_MODAN },
+						{ 29.4, 81.8, MAP.LOCH_MODAN },
 						-- #else
-						{ 36.2, 86.0, LOCH_MODAN },
-						{ 30.0, 83.8, LOCH_MODAN },
-						{ 51.2, 23.6, LOCH_MODAN },
+						{ 36.2, 86.0, MAP.LOCH_MODAN },
+						{ 30.0, 83.8, MAP.LOCH_MODAN },
+						{ 51.2, 23.6, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2565,11 +2565,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2267, {	-- Stonesplinter Mace
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 35.2, 65.6, LOCH_MODAN },
-						{ 35.6, 60.4, LOCH_MODAN },
+						{ 35.2, 65.6, MAP.LOCH_MODAN },
+						{ 35.6, 60.4, MAP.LOCH_MODAN },
 						-- #else
-						{ 54.6, 26.8, LOCH_MODAN },
-						{ 37.4, 92.2, LOCH_MODAN },
+						{ 54.6, 26.8, MAP.LOCH_MODAN },
+						{ 37.4, 92.2, MAP.LOCH_MODAN },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

@@ -16,11 +16,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["mapID"] = THE_STOCKADE,
 		["coords"] = {
 			-- #if AFTER CATA
-			{ 50.5, 66.5, STORMWIND_CITY },
+			{ 50.5, 66.5, MAP.STORMWIND_CITY },
 			-- #elseif AFTER WRATH
-			{ 51.6, 69.4, STORMWIND_CITY },
+			{ 51.6, 69.4, MAP.STORMWIND_CITY },
 			-- #else
-			{ 41.2, 58.0, STORMWIND_CITY },
+			{ 41.2, 58.0, MAP.STORMWIND_CITY },
 			-- #endif
 		},
 		["lvl"] = 15,
@@ -31,9 +31,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1646,	-- Baros Alexston
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 57.7, 47.9, STORMWIND_CITY },
+						{ 57.7, 47.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.0, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_1 },
@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(377, {	-- Crime and Punishment
 					["qg"] = 270,	-- Councilman Millstipe
-					["coord"] = { 72.0, 46.8, DUSKWOOD },
+					["coord"] = { 72.0, 46.8, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
@@ -97,9 +97,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1719,	-- Warden Thelwater
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 51.6, 69.4, STORMWIND_CITY },
+						{ 51.6, 69.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 41.2, 58.0, STORMWIND_CITY },
+						{ 41.2, 58.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_1 },
@@ -110,9 +110,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1721,	-- Nikova Raskol
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 76.6, 60.4, STORMWIND_CITY },
+						{ 76.6, 60.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 73.6, 47.7, STORMWIND_CITY },
+						{ 73.6, 47.7, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_1 },
@@ -137,7 +137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(378, {	-- The Fury Runs Deep
 					["sourceQuest"] = 303,	-- The Dark Iron War
 					["qg"] = 1074,	-- Motley Garmason
-					["coord"] = { 49.8, 18.2, WETLANDS },
+					["coord"] = { 49.8, 18.2, MAP.WETLANDS },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -187,9 +187,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1719,	-- Warden Thelwater
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 51.6, 69.4, STORMWIND_CITY },
+						{ 51.6, 69.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 41.2, 58.0, STORMWIND_CITY },
+						{ 41.2, 58.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_1 },
@@ -203,7 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(386, {	-- What Comes Around...
 					["qg"] = 859,	-- Guard Berton
-					["coord"] = { 26.0, 43.0, REDRIDGE_MOUNTAINS },
+					["coord"] = { 26.0, 43.0, MAP.REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,

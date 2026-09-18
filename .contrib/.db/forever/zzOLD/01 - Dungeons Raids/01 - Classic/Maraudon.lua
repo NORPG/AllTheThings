@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["zone-text-areaID"] = 2100,	-- Maraudon
 		["mapID"] = MARAUDON,
-		["coord"] = { 35.7, 55.5, DESOLACE },
+		["coord"] = { 35.7, 55.5, MAP.DESOLACE },
 		["maps"] = { MARAUDON_LEVEL2, MARAUDON_OUTDOOR_LEVEL1, MARAUDON_OUTDOOR_LEVEL2 },
 		["lvl"] = lvlsquish(41, 30, 10),
 		["groups"] = {
@@ -59,11 +59,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				{	-- Corruption of Earth and Seed
 					["allianceQuestData"] = q(7065, {	-- Corruption of Earth and Seed (A)
 						["qg"] = 13698,	-- Keeper Marandis
-						["coord"] = { 63.8, 10.6, DESOLACE },
+						["coord"] = { 63.8, 10.6, MAP.DESOLACE },
 					}),
 					["hordeQuestData"] = q(7064, {	-- Corruption of Earth and Seed (H)
 						["qg"] = 13699,	-- Selendra
-						["coord"] = { 26.9, 77.7, DESOLACE },
+						["coord"] = { 26.9, 77.7, MAP.DESOLACE },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 				q(7044, {	-- Legends of Maraudon
 					["qg"] = 13697,	-- Cavindra
-					["coord"] = { 32.1, 64.0, DESOLACE },
+					["coord"] = { 32.1, 64.0, MAP.DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 41,
 					["groups"] = {
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 17760 },	-- Seed of Life
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { MOONGLADE },
+					["maps"] = { MAP.MOONGLADE },
 					["lvl"] = 39,
 				}),
 				q(27698, {	-- Servants of Theradras
@@ -145,11 +145,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				{	-- Shadowshard Fragments
 					["allianceQuestData"] = q(7070, {	-- Shadowshard Fragments (A)
 						["qg"] = 4967,	-- Archmage Tervosh
-						["coord"] = { 66.4, 49.3, DUSTWALLOW_MARSH },
+						["coord"] = { 66.4, 49.3, MAP.DUSTWALLOW_MARSH },
 					}),
 					["hordeQuestData"] = q(7068, {	-- Shadowshard Fragments (H)
 						["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
-						["coord"] = { 39.2, 86.3, ORGRIMMAR },
+						["coord"] = { 39.2, 86.3, MAP.ORGRIMMAR },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
@@ -174,7 +174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 13717 },	-- Centaur Pariah
 						{ "i", 17781 },	-- The Pariah's Instructions
 					},
-					["coord"] = { 50.5, 86.7, DESOLACE },
+					["coord"] = { 50.5, 86.7, MAP.DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
 					["groups"] = {
@@ -191,12 +191,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(17757, {	-- Amulet of Spirits
-							["coord"] = { 28.1, 62.4, DESOLACE },
+							["coord"] = { 28.1, 62.4, MAP.DESOLACE },
 							["cr"] = 13718,	-- The Nameless Prophet
 						}),
 						i(17761, {	-- Gem of the First Khan
 							["description"] = "Kolk is standing by the little room where you create the portal for Inner Maraudon, in the middle part.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
-							["coord"] = { 29.7, 60.5, DESOLACE },
+							["coord"] = { 29.7, 60.5, MAP.DESOLACE },
 							["crs"] = {
 								12240,	-- Spirit of Kolk <The First Kahn>
 								13742,	-- Kolk <The First Kahn>
@@ -204,7 +204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(17762, {	-- Gem of the Second Kahn
 							["description"] = "Gelk is located outside the portal of the purple path, hanging with snakes and rock elementals. He is almost just below the portal (use the stairs to get to him).\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
-							["coord"] = { 29.4, 56.9, DESOLACE },
+							["coord"] = { 29.4, 56.9, MAP.DESOLACE },
 							["crs"] = {
 								12239,	-- Spirit of Gelk <The Second Kahn>
 								13741,	-- Gelk <The Second Kahn>
@@ -212,7 +212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(17763, {	-- Gem of the Third Kahn
 							["description"] = "Magra is located outside the portal of the orange path. He is in the stairs area.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
-							["coord"] = { 35.8, 60.4, DESOLACE },
+							["coord"] = { 35.8, 60.4, MAP.DESOLACE },
 							["crs"] = {
 								12241,	-- Spirit of Magra <The Third Kahn>
 								13740,	-- Magra <The Third Kahn>
@@ -252,7 +252,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(7028, {	-- Twisted Evils
 					["qg"] = 13656,	-- Willow <Twilight's Hammer>
-					["coord"] = { 62.2, 39.6, DESOLACE },
+					["coord"] = { 62.2, 39.6, MAP.DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 41,
 					["groups"] = {
@@ -276,11 +276,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				{	-- Vyletongue Corruption
 					["allianceQuestData"] = q(7041, {	-- Vyletongue Corruption (A)
 						["qg"] = 11715,	-- Talendria
-						["coord"] = { 68.4, 8.8, DESOLACE },
+						["coord"] = { 68.4, 8.8, MAP.DESOLACE },
 					}),
 					["hordeQuestData"] = q(7029, {	-- Vyletongue Corruption (H)
 						["qg"] = 11823,	-- Vark Battlescar
-						["coord"] = { 23.2, 70.3, DESOLACE },
+						["coord"] = { 23.2, 70.3, MAP.DESOLACE },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 41,
@@ -293,7 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(17696, {	-- Filled Cerulean Vial
 							["description"] = "Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",
-							["coord"] = { 38.0, 58.0, DESOLACE },
+							["coord"] = { 38.0, 58.0, MAP.DESOLACE },
 							["cost"] = { { "i", 17693, 1 } },	-- Coated Cerulean Vial
 						}),
 						-- #endif

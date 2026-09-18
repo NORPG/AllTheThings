@@ -52,7 +52,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					-- #endif
 				},
 				["qg"] = 5164,	-- Grumnus Steelshaper
-				["coord"] = { 50.2, 42.6, IRONFORGE },
+				["coord"] = { 50.2, 42.6, MAP.IRONFORGE },
 				["cost"] = {
 					{ "i", 7937, 4 },	-- Ornate Mithril Helm
 					{ "i", 7936, 2 },	-- Ornate Mithril Boots
@@ -73,7 +73,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					-- #endif
 				},
 				["qg"] = 11177,	-- Okothos Ironrager
-				["coord"] = { 79.8, 23.8, ORGRIMMAR },
+				["coord"] = { 79.8, 23.8, MAP.ORGRIMMAR },
 				["cost"] = {
 					{ "i", 7937, 4 },	-- Ornate Mithril Helm
 					{ "i", 7936, 2 },	-- Ornate Mithril Boots
@@ -89,7 +89,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					5302,	-- The Way of the Weaponsmith [H]
 				},
 				["qg"] = 11146,	-- Ironus Coldsteel
-				["coord"] = { 49.8, 45.0, IRONFORGE },
+				["coord"] = { 49.8, 45.0, MAP.IRONFORGE },
 				-- #if SEASON_OF_DISCOVERY
 				["timeline"] = { REMOVED_1_15_2 },
 				-- #endif
@@ -109,7 +109,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					5284,	-- The Way of the Weaponsmith [A]
 				},
 				["qg"] = 11178,	-- Borgosh Corebender
-				["coord"] = { 79.6, 23.6, ORGRIMMAR },
+				["coord"] = { 79.6, 23.6, MAP.ORGRIMMAR },
 				-- #if SEASON_OF_DISCOVERY
 				["timeline"] = { REMOVED_1_15_2 },
 				-- #endif
@@ -130,7 +130,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					82665,	-- The Way of the Weaponsmith [H]
 				},
 				["qg"] = 11146,	-- Ironus Coldsteel
-				["coord"] = { 49.8, 45.0, IRONFORGE },
+				["coord"] = { 49.8, 45.0, MAP.IRONFORGE },
 				["timeline"] = { ADDED_1_15_2 },
 				["cost"] = {
 					{ "i", 217281, 4 },	-- Moonsteel Broadsword
@@ -148,7 +148,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					82662,	-- The Way of the Weaponsmith [A]
 				},
 				["qg"] = 11178,	-- Borgosh Corebender
-				["coord"] = { 79.6, 23.6, ORGRIMMAR },
+				["coord"] = { 79.6, 23.6, MAP.ORGRIMMAR },
 				["timeline"] = { ADDED_1_15_2 },
 				["cost"] = {
 					{ "i", 217281, 4 },	-- Moonsteel Broadsword

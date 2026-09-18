@@ -49,44 +49,44 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["description"] = "[TBC] \nThis is a new dungeon added in SoD Phase 7.\nThe current loot table is not accurate. If you get items not in the boss drop, please report it in Discord #classic-errors.\n\nNOTE: Kharon drop all rewards, please do not report any that are known to be dropped by other bosses but not by Kharon.",
 		["zone-text-areaID"] = 16074,	-- Karazhan Crypts
 		["sourceQuest"] = 86970,
-		["coord"] = { 39.8, 73.6, DEADWIND_PASS },
+		["coord"] = { 39.8, 73.6, MAP.DEADWIND_PASS },
 		["lvl"] = 58,
 		["groups"] = {
 			n(QUESTS, {
 				q(86964, {	-- For Gold and Glory!
 					["provider"] = { "o", 509510 },	-- the Bulletin Board
-					["coord"] = { 81.3, 58.8, EASTERN_PLAGUELANDS },
+					["coord"] = { 81.3, 58.8, MAP.EASTERN_PLAGUELANDS },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
 							["provider"] = { "n", 237820 },	-- Deceased Adventurer
-							["coord"] = { 40.0, 74.2, DEADWIND_PASS },
+							["coord"] = { 40.0, 74.2, MAP.DEADWIND_PASS },
 						}),
 					},
 				}),
 				q(86965, {	-- No Ordinary Shadows
 					["sourceQuest"] = 86964,	-- For Gold and Glory!
 					["qg"] = 237820,	-- Deceased Adventurer
-					["coord"] = { 40.0, 74.2, DEADWIND_PASS },
+					["coord"] = { 40.0, 74.2, MAP.DEADWIND_PASS },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
 							["provider"] = { "n", 218920 },	-- Agent Keanna <Violet Eye>
-							["coord"] = { 52.0, 34.0, DEADWIND_PASS },
+							["coord"] = { 52.0, 34.0, MAP.DEADWIND_PASS },
 						}),
 					},
 				}),
 				q(86966, {	-- Seeking Survivors
 					["sourceQuest"] = 86965,	-- No Ordinary Shadows
 					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
-					["coord"] = { 52.0, 34.0, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.0, MAP.DEADWIND_PASS },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
 							["provider"] = { "n", 237819 },
 							["coords"] = {
-								{ 59.2, 73.4, DEADWIND_PASS },	-- Entrance of the Ogre Cave
-								{ 65.2, 78.6, DEADWIND_PASS },	-- Injured Adventurer
+								{ 59.2, 73.4, MAP.DEADWIND_PASS },	-- Entrance of the Ogre Cave
+								{ 65.2, 78.6, MAP.DEADWIND_PASS },	-- Injured Adventurer
 							},
 						}),
 					},
@@ -94,7 +94,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(86967, {	-- To the Rescue
 					["sourceQuest"] = 86966,	-- Seeking Survivors
 					["qg"] = 237819,	-- Injured Adventurer
-					["coord"] = { 65.2, 78.6, DEADWIND_PASS },
+					["coord"] = { 65.2, 78.6, MAP.DEADWIND_PASS },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
@@ -108,20 +108,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(2, {
 							["provider"] = { "n", 237818 },	-- Harrison Jones
-							["coord"] = { 52.2, 34.2, DEADWIND_PASS },
+							["coord"] = { 52.2, 34.2, MAP.DEADWIND_PASS },
 						}),
 					},
 				}),
 				q(86968, {	-- Are You Afraid of the Dark?
 					["sourceQuest"] = 86967,	-- To the Rescue
 					["qg"] = 237818,	-- Harrison Jones
-					["coord"] = { 52.2, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.2, 34.2, MAP.DEADWIND_PASS },
 					["lvl"] = 60,
 				}),
 				q(86969, {	-- The Hypothesis
 					["sourceQuest"] = 86968,	-- Are You Afraid of the Dark?
 					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
-					["coord"] = { 52.0, 34.6, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.6, MAP.DEADWIND_PASS },
 					["lvl"] = 60,
 					["groups"] = {
 						i(236002),	-- List of Components
@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(86970, {	-- Testing Our Hypothesis
 					["sourceQuest"] = 86969,	-- The Hypothesis
 					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
-					["coord"] = { 52.0, 34.6, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.6, MAP.DEADWIND_PASS },
 					["lvl"] = 60,
 				}),
 			}),

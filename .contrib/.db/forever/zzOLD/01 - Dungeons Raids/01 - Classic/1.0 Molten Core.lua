@@ -98,9 +98,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 						["coords"] = {
 							-- #if AFTER LEGION
-							{ 29.6, 10.6, SILITHUS },
+							{ 29.6, 10.6, MAP.SILITHUS },
 							-- #else
-							{ 21.7, 8.6, SILITHUS },
+							{ 21.7, 8.6, MAP.SILITHUS },
 							-- #endif
 						},
 						["cost"] = {
@@ -120,9 +120,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 14347,	-- Highlord Demitrian
 						["coords"] = {
 							-- #if AFTER LEGION
-							{ 29.6, 10.6, SILITHUS },
+							{ 29.6, 10.6, MAP.SILITHUS },
 							-- #else
-							{ 21.7, 8.6, SILITHUS },
+							{ 21.7, 8.6, MAP.SILITHUS },
 							-- #endif
 						},
 						-- #if NOT OBJECTIVES
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 						["qg"] = 14347,	-- Highlord Demitrian
 						["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
-						["coord"] = { 21.7, 8.6, SILITHUS },
+						["coord"] = { 21.7, 8.6, MAP.SILITHUS },
 						-- #if BEFORE CATA
 						-- Completable by any class in Retail... confirm for Classic
 						-- Crieve NOTE: Even if it were... We don't want to create degenerates.
@@ -196,9 +196,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(ACHIEVEMENTS, {
 				achWithRep(955, FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
 					["maps"] = {
-						AZSHARA,
+						MAP.AZSHARA,
 						-- #if SEASON_OF_DISCOVERY
-						SEARING_GORGE,
+						MAP.SEARING_GORGE,
 						-- #endif
 					},
 				}),
@@ -208,9 +208,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				faction(FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
 					["icon"] = 135861,
 					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
 					-- #if SEASON_OF_DISCOVERY
-					["maps"] = { SEARING_GORGE },
+					["maps"] = { MAP.SEARING_GORGE },
 					-- #endif
 				}),
 			}),
@@ -222,7 +222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n",  13278 },	-- Duke Hydraxis
 						{ "o", 179551 },	-- Hydraxis' Coffer
 					},
-					["coord"] = { 79.2, 73.6, AZSHARA },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
 						i(227455),	-- Ocean's Breeze
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "o", 179551 },	-- Hydraxis' Coffer
 					},
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["coord"] = { 79.2, 73.6, AZSHARA },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
 						i(18399),	-- Ocean's Breeze
@@ -254,14 +254,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6823, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Agent of Hydraxis
 					["sourceQuest"] = 6822,	-- The Molten Core
 					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
 					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
 					["lvl"] = 55,
 				})),
 				q(7633, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
-					["coord"] = { 47.0, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				})),
@@ -308,7 +308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						6805,	-- Stormers and Rumblers
 					},
 					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
 					["maps"] = {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
@@ -328,7 +328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6824, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Hands of the Enemy
 					["sourceQuest"] = 6823,	-- Agent of Hydraxis
 					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hand of Shazzrah
@@ -348,8 +348,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				q(6804, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Poisoned Water
 					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { EASTERN_PLAGUELANDS },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/12 Discordant Bracers
@@ -366,8 +366,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				q(6805, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- Stormers and Rumblers
 					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { SILITHUS },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
+					["maps"] = { MAP.SILITHUS },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/15 Dust Stormer slain
@@ -381,7 +381,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7632, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
 					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["qg"] = 14524,	-- Vartrus the Ancient
-					["coord"] = { 47.0, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
 					["cost"] = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
@@ -389,7 +389,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6822, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- The Molten Core
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
 					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
+					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Molten Giant slain
@@ -840,7 +840,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_3 }, }, {
 				n(13278, {	-- Duke Hydraxis
-					["coords"] = { 79.2, 73.6, AZSHARA },
+					["coords"] = { 79.2, 73.6, MAP.AZSHARA },
 					["groups"] = {
 						i(227925),	-- Beacon of Hydraxis
 						i(227915),	-- Duke's Domain

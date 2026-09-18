@@ -116,7 +116,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			-- #endif
 		},
 		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
-		["maps"] = { THUNDER_BLUFF },
+		["maps"] = { MAP.THUNDER_BLUFF },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	-- #if AFTER 3.0.1
@@ -278,7 +278,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(616, {		-- Death to the King! [WRATH] / Overthrow the Council [CATA+]
 		["provider"] = { "n", 2784 },	-- King Magni Bronzebeard <Lord of Ironforge>
 		["timeline"] = { ADDED_3_0_2 },
-		["maps"] = { IRONFORGE },
+		["maps"] = { MAP.IRONFORGE },
 		["races"] = HORDE_ONLY,
 	}),
 	-- #endif
@@ -293,7 +293,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			-- #endif
 		},
 		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
-		["maps"] = { ORGRIMMAR },
+		["maps"] = { MAP.ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(11685, {	-- Decade of Dominance
@@ -322,9 +322,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2, REMOVED_8_3_0 },
 		["maps"] = {
 			-- #if AFTER 8.0.1
-			ORGRIMMAR,
+			MAP.ORGRIMMAR,
 			-- #else
-			UNDERCITY,
+			MAP.UNDERCITY,
 			-- #endif
 		},
 		["races"] = ALLIANCE_ONLY,
@@ -532,7 +532,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(617, {		-- Immortal No More
 		["provider"] = { "n", 7999 },	-- Tyrande Whisperwind <High Priestess of Elune>
 		["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
-		["maps"] = { DARNASSUS },
+		["maps"] = { MAP.DARNASSUS },
 		["races"] = HORDE_ONLY,
 	}),
 	ach(8052, {		-- Khan (A)
@@ -694,13 +694,13 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(14817, {	-- Opposing Orgrimmar
 		["provider"] = { "n", 175135 },	-- Rokhan <Darkspear Chieftain>
 		["timeline"] = { ADDED_9_0_1 },
-		["maps"] = { ORGRIMMAR },
+		["maps"] = { MAP.ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(14720, {	-- Orgrimmar Offensive
 		["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
-		["maps"] = { ORGRIMMAR },
+		["maps"] = { MAP.ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	-- #if AFTER CATA
@@ -711,7 +711,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 42928 },	-- Muradin Bronzebeard <Bronzebeard Representative>
 		},
 		["timeline"] = { ADDED_3_0_2 },
-		["maps"] = { IRONFORGE },
+		["maps"] = { MAP.IRONFORGE },
 		["races"] = HORDE_ONLY,
 	}),
 	-- #endif
@@ -857,7 +857,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			-- #endif
 		},
 		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
-		["maps"] = { STORMWIND_CITY },
+		["maps"] = { MAP.STORMWIND_CITY },
 		["races"] = HORDE_ONLY,
 	}),
 	ach(245, {		-- That Takes Class

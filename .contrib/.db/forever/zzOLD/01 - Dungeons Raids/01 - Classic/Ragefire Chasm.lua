@@ -15,7 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER CATA
 			{ 52.52, 57.83, 86 },	-- Ragefire Chasm, Orgrimmar [Cleft of Shadow]
 			-- #else
-			{ 50.6, 51.6, ORGRIMMAR },
+			{ 50.6, 51.6, MAP.ORGRIMMAR },
 			-- #endif
 		},
 		["lvl"] = lvlsquish(13, 13, 7),
@@ -99,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26865, {	-- Enemies Below [Orgrimmar]
 					["qg"] = 39605,	-- Garrosh Hellscream
-					["coord"] = { 48.1, 70.5, ORGRIMMAR },
+					["coord"] = { 48.1, 70.5, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -114,10 +114,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER WOD
-						{ 48.6, 71.0, ORGRIMMAR },
-						{ 14.1, 73.8, ORGRIMMAR },
+						{ 48.6, 71.0, MAP.ORGRIMMAR },
+						{ 14.1, 73.8, MAP.ORGRIMMAR },
 						-- #else
-						{ 48.1, 70.5, ORGRIMMAR },
+						{ 48.1, 70.5, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["timeline"] = { ADDED_5_0_4 },
@@ -125,32 +125,32 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26866, {	-- Enemies Below [Thunder Bluff]
 					["qg"] = 36648,	-- Baine Bloodhoof
-					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+					["coord"] = { 60.3, 51.7, MAP.THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31036, {	-- Enemies Below [Thunder Bluff]
 					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
-					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+					["coord"] = { 60.3, 51.7, MAP.THUNDER_BLUFF },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26867, {	-- Enemies Below [Undercity]
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.8, 91.6, UNDERCITY },
+					["coord"] = { 57.8, 91.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31037, {	-- Enemies Below [Undercity]
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.8, 91.6, UNDERCITY },
+					["coord"] = { 57.8, 91.6, MAP.UNDERCITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5728, {	-- Hidden Enemies (3/5)
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5729, {	-- Hidden Enemies (4/5)
 					["sourceQuest"] = 5728,	-- Hidden Enemies (3/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -174,7 +174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5730, {	-- Hidden Enemies (5/5)
 					["sourceQuest"] = 5729,	-- Hidden Enemies (4/5)
 					["qg"] = 3216,	-- Neeru Fireblade
-					["coord"] = { 49.6, 50.6, ORGRIMMAR },
+					["coord"] = { 49.6, 50.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -239,7 +239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 14381 },	-- Grimtotem Satchel
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -253,7 +253,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5722, {	-- Searching for the Lost Satchel
 					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
-					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
+					["coord"] = { 70.6, 31.4, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -261,7 +261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5761, {	-- Slaying the Beast
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
 					["qg"] = 3216,	-- Neeru Fireblade
-					["coord"] = { 49.6, 50.6, ORGRIMMAR },
+					["coord"] = { 49.6, 50.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -326,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5723, {	-- Testing an Enemy's Strength
 					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
-					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
+					["coord"] = { 70.6, 31.4, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -390,7 +390,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5725, {	-- The Power to Destroy...
 					["qg"] = 2425,	-- Varimathras
-					["coord"] = { 56.2, 91.8, UNDERCITY },
+					["coord"] = { 56.2, 91.8, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -416,7 +416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(14356, {	-- The Power to Destroy... (After Wrathgate)
 					["qg"] = 36273,	-- Bragor Bloodfist
-					["coord"] = { 56.3, 92.2, UNDERCITY },
+					["coord"] = { 56.3, 92.2, MAP.UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,

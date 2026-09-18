@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["zone-text-areaID"] = 435,	-- Demon Fall Canyon
 		["sourceQuest"] = 84384,	-- Demonic Deceptions
 		["provider"] = { "i", 228172 },	-- Shadowtooth Illusion Ward
-		["coord"] = { 84.5, 75.0, ASHENVALE },
+		["coord"] = { 84.5, 75.0, MAP.ASHENVALE },
 		["lvl"] = 55,
 		["groups"] = {
 			n(226923, {	-- Grimroot <The Mourning Guardian>

@@ -13,7 +13,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 } }, {
 		ach(18368, {	-- Memory of Scholomance
 			["sourceQuest"] = 76249,	-- Memory of Scholomance
-			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
+			["maps"] = { MAP.EASTERN_PLAGUELANDS, STRATHOLME, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		ach(18558, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Leaders of Scholomance
@@ -36,7 +36,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(28756, {	-- Aberrations of Bone
 			["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 			["qg"] = 49856,	-- Lord Raymond George
-			["coord"] = { 76.2, 50.9, EASTERN_PLAGUELANDS },
+			["coord"] = { 76.2, 50.9, MAP.EASTERN_PLAGUELANDS },
 			["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 			["timeline"] = { ADDED_4_0_3 },
 			["repeatable"] = true,
@@ -52,7 +52,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["sourceQuest"] = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["altQuests"] = { 8258 },	-- The Darkreaver Menace (New)
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			["coord"] = { 38.7, 35.9, ORGRIMMAR },
+			["coord"] = { 38.7, 35.9, MAP.ORGRIMMAR },
 			["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
@@ -67,7 +67,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }}, {
 			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 			["sourceQuest"] = 7647,	-- Judgment and Redemption
-			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+			["coord"] = { 37.6, 32.6, MAP.STORMWIND_CITY },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
@@ -80,7 +80,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }}, {
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 8258,	-- The Darkreaver Menace
-			["coord"] = { 38.7, 35.9, ORGRIMMAR },
+			["coord"] = { 38.7, 35.9, MAP.ORGRIMMAR },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["repeatable"] = true,
@@ -106,13 +106,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["allianceQuestData"] = q(5803, {	-- Araj's Scarab [A]
 				["sourceQuest"] = 5801,	-- Fire Plume Forged [Alliance]
 				["qg"] = 11056,	-- Alchemist Arbington
-				["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
+				["coord"] = { 42.7, 83.8, MAP.WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5804, {	-- Araj's Scarab [H]
 				["sourceQuest"] = 5802,	-- Fire Plume Forged [Horde]
 				["qg"] = 11057,	-- Apothecary Dithers
-				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
-				["maps"] = { WESTERN_PLAGUELANDS },
+				["coord"] = { 83.3, 69.2, MAP.TIRISFAL_GLADES },
+				["maps"] = { MAP.WESTERN_PLAGUELANDS },
 			}),
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
@@ -122,7 +122,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 						{ "i",  14610 },	-- Araj's Scarab
 						{ "o", 177241 },	-- Araj's Phylactery
 					},
-					["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
+					["coord"] = { 45.6, 69.2, MAP.WESTERN_PLAGUELANDS },
 					["cr"] = 1852,	-- Araj the Summoner
 				}),
 			},
@@ -130,12 +130,12 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		{	-- Barov Family Fortune
 			["allianceQuestData"] = q(5343, {	-- Barov Family Fortune [A]
 				["qg"] = 11023,	-- Weldon Barov <House of Barov>
-				["coord"] = { 43.5, 83.7, WESTERN_PLAGUELANDS },
+				["coord"] = { 43.5, 83.7, MAP.WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5341, {	-- Barov Family Fortune [H]
 				["qg"] = 11022,	-- Alexi Barov <House of Barov>
-				["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
-				["maps"] = { WESTERN_PLAGUELANDS },
+				["coord"] = { 83.06, 71.6, MAP.TIRISFAL_GLADES },
+				["maps"] = { MAP.WESTERN_PLAGUELANDS },
 			}),
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 52,
@@ -211,7 +211,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(5531, {	-- Betina Bigglezink
 			["sourceQuest"] = 5522,	-- Leonid Barthalomew
 			["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-			["coord"] = { 81.73, 57.83, EASTERN_PLAGUELANDS },
+			["coord"] = { 81.73, 57.83, MAP.EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 			["qi"] = 13761,	-- Frozen Eggs (QI!)
@@ -227,7 +227,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			-- #endif
 			["sourceQuest"] = 5531,	-- Betina Bigglezink
 			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
-			["coord"] = { 81.5, 59.7, EASTERN_PLAGUELANDS },
+			["coord"] = { 81.5, 59.7, MAP.EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 			["groups"] = {
@@ -249,7 +249,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(5382, {	-- Doctor Theolen Krastinov, the Butcher
 			["description"] = "Talk to Eva until she offers the quest.",
 			["qg"] = 11216,	-- Eva Sarkhoff
-			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
+			["coord"] = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
@@ -288,14 +288,14 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				["sourceQuest"] = 5514,	-- Mold Rhymes With... [Horde]
 			}),
 			["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
-			["coord"] = { 51.5, 28.8, TANARIS },
+			["coord"] = { 51.5, 28.8, MAP.TANARIS },
 			["timeline"] = { REMOVED_4_0_3 },
-			["maps"] = { UNGORO_CRATER },
+			["maps"] = { MAP.UNGORO_CRATER },
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/1 Unfinished Skeleton Key
 					["provider"] = { "i", 14645 },	-- Unfinished Skeleton Key
-					["coord"] = { 49.6, 47.6, UNGORO_CRATER },
+					["coord"] = { 49.6, 47.6, MAP.UNGORO_CRATER },
 					["cost"] = {
 						{ "i", 14644, 1 },	-- Skeleton Key Mold
 						{ "i", 12359, 2 },	-- Thorium Bar
@@ -315,7 +315,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }},{
 			["qg"] = 11216,	-- Eva Sarkhoff
 			["sourceQuest"] = 5515,	-- Krastinov's Bag of Horrors
-			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
+			["coord"] = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/1 Kirtonos the Herald slain
@@ -339,7 +339,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(5515, {	-- Krastinov's Bag of Horrors
 			["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
 			["qg"] = 11216,	-- Eva Sarkhoff
-			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
+			["coord"] = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
@@ -355,7 +355,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "i", 18804 },	-- Lord Grayson's Satchel
 			},
 			["sourceQuest"] = 7646,	-- The Divination Scryer
-			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+			["coord"] = { 37.6, 32.6, MAP.STORMWIND_CITY },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 60,
@@ -384,13 +384,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "n", 10267 },	-- Tinkee Steamboil
 				{ "i", 13761 },	-- Frozen Eggs
 			},
-			["coord"] = { 65.2, 23.8, BURNING_STEPPES },
+			["coord"] = { 65.2, 23.8, MAP.BURNING_STEPPES },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(7667, {	-- Material Assistance
 			["qg"] = 13417,	-- Sagorne Creststrider
-			["coord"] = { 39.2, 48.4, ORGRIMMAR },
+			["coord"] = { 39.2, 48.4, MAP.ORGRIMMAR },
 			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_3 },
 			["cost"] = {
 				{ "i", 12800, 1 },	-- Azerothian Diamond
@@ -403,7 +403,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(76249, name(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
 			["description"] = "It's recommended to activate the Debug Mode to properly see every step and description.\n\nTo start unlocking old Scholomance, you must first do a clear of Heroic Scholomance. Once done, go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room). At the top left portion of the room, use the Krastinov's Bag of Horrors toy. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket and allowing you to loot Eva's Femur on the ground. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
 			["timeline"] = { ADDED_10_1_5 },
-			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
+			["maps"] = { MAP.EASTERN_PLAGUELANDS, STRATHOLME, MAP.WESTERN_PLAGUELANDS },
 			["cost"] = {
 				{ "i", 206357, 1 },	-- 1x Authentic Andorhal Candle
 				{ "i", 206364, 1 },	-- 1x Eva's Femur
@@ -421,7 +421,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
 				{ "i", 13585 },	-- Keepsake of Remembrance
 			},
-			["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
+			["coord"] = { 81.7, 57.8, MAP.EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { STRATHOLME },
 			["lvl"] = 57,
@@ -440,13 +440,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["allianceQuestData"] = q(5538, {	-- Mold Rhymes With... [A]
 				["sourceQuest"] = 5537,	-- Skeletal Fragments [Alliance]
 				["qg"] = 11056,	-- Alchemist Arbington
-				["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+				["coord"] = { 42.66, 83.77, MAP.WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5514, {	-- Mold Rhymes With... [H]
 				["sourceQuest"] = 964,	-- Skeletal Fragments [Horde]
 				["qg"] = 11057,	-- Apothecary Dithers
-				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
-				["maps"] = { WESTERN_PLAGUELANDS },
+				["coord"] = { 83.3, 69.2, MAP.TIRISFAL_GLADES },
+				["maps"] = { MAP.WESTERN_PLAGUELANDS },
 			}),
 			["timeline"] = { REMOVED_4_0_3 },
 			["cost"] = {
@@ -457,7 +457,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		},
 		q(5529, {	-- Plagued Hatchlings
 			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
-			["coord"] = { 81.47, 59.66, EASTERN_PLAGUELANDS },
+			["coord"] = { 81.47, 59.66, MAP.EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
@@ -482,7 +482,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(5533, {	-- Scholomance [Alliance]
 			["sourceQuest"] = 5097,	-- All Along the Watchtowers [Alliance]
 			["qg"] = 10838,	-- Commander Ashlam Valorfist
-			["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
+			["coord"] = { 42.7, 84.0, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 55,
@@ -490,7 +490,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(838, {	-- Scholomance [Horde]
 			["sourceQuest"] = 5098,	-- All Along the Watchtowers [Horde]
 			["qg"] = 10837,	-- High Executor Derrington
-			["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
+			["coord"] = { 83.1, 68.9, MAP.TIRISFAL_GLADES },
 			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 55,
@@ -521,13 +521,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["allianceQuestData"] = q(5537, {	-- Skeletal Fragments [A]
 				["sourceQuest"] = 5533,	-- Scholomance [Alliance]
 				["qg"] = 11056,	-- Alchemist Arbington
-				["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+				["coord"] = { 42.66, 83.77, MAP.WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(964, {	-- Skeletal Fragments [H]
 				["sourceQuest"] = 838,	-- Scholomance [Horde]
 				["qg"] = 11057,	-- Apothecary Dithers
-				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
-				["maps"] = { WESTERN_PLAGUELANDS },
+				["coord"] = { 83.3, 69.2, MAP.TIRISFAL_GLADES },
+				["maps"] = { MAP.WESTERN_PLAGUELANDS },
 			}),
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
@@ -551,14 +551,14 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
 				{ "i", 13624 },	-- Soulbound Keepsake
 			},
-			["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
+			["coord"] = { 81.7, 57.8, MAP.EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["sourceQuest"] = 7667,	-- Material Assistance
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			["coord"] = { 38.7, 35.9, ORGRIMMAR },
+			["coord"] = { 38.7, 35.9, MAP.ORGRIMMAR },
 			["timeline"] = { REMOVED_1_7_0 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
@@ -579,7 +579,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				7668,	-- The Darkreaver Menace (Original)
 			},
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			["coord"] = { 38.7, 35.9, ORGRIMMAR },
+			["coord"] = { 38.7, 35.9, MAP.ORGRIMMAR },
 			["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
@@ -601,7 +601,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "i", 13544 },	-- Spectral Essence
 				{ "i", 13585 },	-- Keepsake of Remembrance
 			},
-			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
+			["coord"] = { 70.6, 74.1, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
@@ -611,9 +611,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "n", 11286 },	-- Magistrate Marduke
 				{ "i", 13544 },	-- Spectral Essence
 			},
-			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
+			["coord"] = { 70.6, 74.1, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
-			["maps"] = { ARATHI_HIGHLANDS },
+			["maps"] = { MAP.ARATHI_HIGHLANDS },
 			["lvl"] = 57,
 			["groups"] = {
 				objective(1, {	-- 0/1 Keepsake of Remembrance
@@ -621,7 +621,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 						{ "i",  13585 },	-- Keepsake of Remembrance
 						{ "o", 176630 },	-- Keepsake of Remembrance
 					},
-					["coord"] = { 17.9, 69.4, ARATHI_HIGHLANDS },
+					["coord"] = { 17.9, 69.4, MAP.ARATHI_HIGHLANDS },
 				}),
 			},
 		}),
@@ -629,13 +629,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["allianceQuestData"] = q(5505, {	-- The Key to Scholomance [A]
 				["sourceQuest"] = 5803,	-- Araj's Scarab
 				["qg"] = 11056,	-- Alchemist Arbington
-				["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
+				["coord"] = { 42.6, 83.8, MAP.WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5511, {	-- The Key to Scholomance [H]
 				["sourceQuest"] = 5804,	-- Araj's Scarab
 				["qg"] = 11057,	-- Apothecary Dithers
-				["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
-				["maps"] = { WESTERN_PLAGUELANDS },
+				["coord"] = { 83.2, 69.2, MAP.TIRISFAL_GLADES },
+				["maps"] = { MAP.WESTERN_PLAGUELANDS },
 			}),
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
@@ -648,15 +648,15 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(5344, {	-- The Last Barov [Alliance]
 			["sourceQuest"] = 5343,	-- Barov Family Fortune [Alliance]
 			["qg"] = 11023,	-- Weldon Barov <House of Barov>
-			["coord"] = { 43.5, 83.7, WESTERN_PLAGUELANDS },
+			["coord"] = { 43.5, 83.7, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
-			["maps"] = { TIRISFAL_GLADES },
+			["maps"] = { MAP.TIRISFAL_GLADES },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 52,
 			["groups"] = {
 				objective(1, {	-- 0/1 Head of Alexi Barov
 					["provider"] = { "i", 13470 },	-- Head of Alexi Barov
-					["coord"] = { 83.0, 71.6, TIRISFAL_GLADES },
+					["coord"] = { 83.0, 71.6, MAP.TIRISFAL_GLADES },
 					["cr"] = 11022,	-- Alexi Barov <House of Barov>
 				}),
 				i(14023, {	-- Barov Peasant Caller
@@ -667,15 +667,15 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		q(5342, {	-- The Last Barov [Horde]
 			["sourceQuest"] = 5341,	-- Barov Family Fortune [Horde]
 			["qg"] = 11022,	-- Alexi Barov <House of Barov>
-			["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
+			["coord"] = { 83.06, 71.6, MAP.TIRISFAL_GLADES },
 			["timeline"] = { REMOVED_4_0_3 },
-			["maps"] = { WESTERN_PLAGUELANDS },
+			["maps"] = { MAP.WESTERN_PLAGUELANDS },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 52,
 			["groups"] = {
 				objective(1, {	-- 0/1 Head of Weldon Barov
 					["provider"] = { "i", 13469 },	-- Head of Weldon Barov
-					["coord"] = { 43.4, 83.6, WESTERN_PLAGUELANDS },
+					["coord"] = { 43.4, 83.6, MAP.WESTERN_PLAGUELANDS },
 					["cr"] = 11023,	-- Weldon Barov <House of Barov>
 				}),
 				i(14022, {	-- Barov Peasant Caller
@@ -689,7 +689,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "n", 11286 },	-- Magistrate Marduke
 				{ "i", 13544 },	-- Spectral Essence
 			},
-			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
+			["coord"] = { 70.6, 74.1, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 			["groups"] = {
@@ -2085,7 +2085,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 		q(28756, {	-- Aberrations of Bone
 			["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 			["qg"] = 49856,	-- Lord Raymond George
-			["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
+			["coord"] = { 76.1, 50.9, MAP.EASTERN_PLAGUELANDS },
 			["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 			["timeline"] = { ADDED_4_0_3 },
 			["repeatable"] = true,
@@ -2615,7 +2615,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["cost"] = { { "i", 13704, 1 } },	-- Skeleton Key
 		-- #endif
 		["mapID"] = SCHOLOMANCE,
-		["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
+		["coord"] = { 69.07, 72.96, MAP.WESTERN_PLAGUELANDS },
 		["maps"] = {
 			-- #if AFTER MOP
 			SCHOLOMANCE_CHAMBER_OF_SUMMONING, SCHOLOMANCE_THE_UPPER_STUDY, SCHOLOMANCE_HEADMASTERS_STUDY,

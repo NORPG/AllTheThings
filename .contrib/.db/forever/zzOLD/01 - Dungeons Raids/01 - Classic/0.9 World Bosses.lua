@@ -17,7 +17,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = 60,
 		["groups"] = {
 			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 } }, n(6109, {	-- Azuregos
-				["coord"] = { 53.3, 80.4, AZSHARA },
+				["coord"] = { 53.3, 80.4, MAP.AZSHARA },
 				-- #if ANYCLASSIC
 				["modelScale"] = 6.0,
 				-- #endif
@@ -39,10 +39,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}))),
 			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_1_8_0, REMOVED_4_0_3 } }, n(DRAGONS_OF_NIGHTMARE, {
 				["coords"] = {
-					{ 51.2, 10.9, FERALAS },
-					{ 63.3, 27.8, THE_HINTERLANDS },
-					{ 45.4, 39.6, DUSKWOOD },
-					{ 94.2, 35.7, ASHENVALE },
+					{ 51.2, 10.9, MAP.FERALAS },
+					{ 63.3, 27.8, MAP.THE_HINTERLANDS },
+					{ 45.4, 39.6, MAP.DUSKWOOD },
+					{ 94.2, 35.7, MAP.ASHENVALE },
 				},
 				["isRaid"] = true,
 				["lvl"] = 60,
@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(8447, {	-- Waking Legends
 							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
 							["qg"] = 11832,	-- Keeper Remulos
-							["coord"] = { 36.18, 41.79, MOONGLADE },
+							["coord"] = { 36.18, 41.79, MAP.MOONGLADE },
 							["lvl"] = 60,
 							["groups"] = { i(20600) },	-- Malfurion's Signet Ring
 						}),
@@ -144,7 +144,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}))),
 			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = {  ADDED_1_3_0, REMOVED_2_0_1 } }, n(12397, {	-- Lord Kazzak / Highlord Kruul
-				["coord"] = { 36.6, 75.8, BLASTED_LANDS },
+				["coord"] = { 36.6, 75.8, MAP.BLASTED_LANDS },
 				["modelScale"] = 6.0,
 				["isRaid"] = true,
 				["crs"] = { 18338 },	-- Highlord Kruul

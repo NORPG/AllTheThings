@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(ASHENVALE, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.ASHENVALE, {
 		["lore"] = "Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",
 		["icon"] = 236713,
 		["groups"] = {
@@ -136,12 +136,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(28, {	-- Astranaar, Ashenvale
 					["cr"] = 4267,	-- Daelyshia <Hippogryph Master>
-					["coord"] = { 34.4, 48.0, ASHENVALE },
+					["coord"] = { 34.4, 48.0, MAP.ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(338, {	-- Blackfathom Camp, Ashenvale
 					["cr"] = 34374,	-- Solais <Flight Master>
-					["coord"] = { 18.1, 20.6, ASHENVALE },
+					["coord"] = { 18.1, 20.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -149,9 +149,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 22935,	-- Suralais Farwind <Hippogryph Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 85.1, 43.5, ASHENVALE },
+						{ 85.1, 43.5, MAP.ASHENVALE },
 						-- #else
-						{ 85.1, 43.5, ASHENVALE },
+						{ 85.1, 43.5, MAP.ASHENVALE },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_0 },
@@ -159,24 +159,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(350, {	-- Hellscream's Watch, Ashenvale
 					["cr"] = 34429,	-- Thraka <Wind Rider Master>
-					["coord"] = { 38.07, 42.21, ASHENVALE },
+					["coord"] = { 38.07, 42.21, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(356, {	-- Silverwind Refuge, Ashenvale
 					["cr"] = 34943,	-- Wind Tamer Shoshok <Flight Master>
-					["coord"] = { 49.2, 65.2, ASHENVALE },
+					["coord"] = { 49.2, 65.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(61, {	-- Splintertree Post, Ashenvale
 					["cr"] = 12616,	-- Vhulgra <Wind Rider Master>
-					["coord"] = { 73.2, 61.6, ASHENVALE },
+					["coord"] = { 73.2, 61.6, MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(351, {	-- Stardust Spire, Ashenvale
 					["cr"] = 34378,	-- Myre Moonglide <Flight Master>
-					["coord"] = { 35.0, 72.1, ASHENVALE },
+					["coord"] = { 35.0, 72.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -184,9 +184,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 11901,	-- Andruk <Wind Rider Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 11.2, 34.4, ASHENVALE },
+						{ 11.2, 34.4, MAP.ASHENVALE },
 						-- #else
-						{ 12.2, 33.8, ASHENVALE },
+						{ 12.2, 33.8, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE CATA
 			lockpicking({
 				o(179487, {	-- Waterlogged Footlocker
-					["coord"] = { 13.8, 24.7, ASHENVALE },
+					["coord"] = { 13.8, 24.7, MAP.ASHENVALE },
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 70,
 				}),
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			petbattles({
 				n(66136, {	-- Analynn <Master Pet Tamer>
-					["coord"] = { 20.2, 29.6, ASHENVALE },
+					["coord"] = { 20.2, 29.6, MAP.ASHENVALE },
 					["description"] = "This pet tamer is Horde only.\n\nAnalynn's pets are level 5 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
@@ -220,14 +220,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(31815, {	-- Zonya the Sadist
 					["sourceQuest"] = 31814,	-- Analynn
 					["qg"] = 66136,	-- Analynn
-					["coord"] = { 20.2, 29.5, ASHENVALE },
+					["coord"] = { 20.2, 29.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { STONETALON_MOUNTAINS },
+					["maps"] = { MAP.STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat Zonya the Sadist
 							["provider"] = { "n", 66137 },	-- Zonya the Sadist
-							["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
+							["coord"] = { 59.6, 71.6, MAP.STONETALON_MOUNTAINS },
 						}),
 						i(89125),	-- Sack of Pet Supplies
 					},
@@ -259,9 +259,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							212802,	-- Moogul the Sly <Blademaster>
 						},
 						["coords"] = {
-							{ 54.8, 54.8, ASHENVALE },
-							{ 22.0, 38.6, ASHENVALE },
-							{ 69.6, 63.6, ASHENVALE },
+							{ 54.8, 54.8, MAP.ASHENVALE },
+							{ 22.0, 38.6, MAP.ASHENVALE },
+							{ 69.6, 63.6, MAP.ASHENVALE },
 						},
 						["maxReputation"] = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
 					},
@@ -272,9 +272,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							212804,	-- Centrius <Keeper of the Grove>
 						},
 						["coords"] = {
-							{ 51.6, 54.8, ASHENVALE },
-							{ 74.0, 74.0, ASHENVALE },
-							{ 28.6, 28.8, ASHENVALE },
+							{ 51.6, 54.8, MAP.ASHENVALE },
+							{ 74.0, 74.0, MAP.ASHENVALE },
+							{ 28.6, 28.8, MAP.ASHENVALE },
 						},
 						["maxReputation"] = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
 					},
@@ -308,12 +308,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}), {
 					["aqd"] = {
 						["cr"] = 212969,	-- Kazragore <Far Seer>
-						["coord"] = { 42.0, 67.0, ASHENVALE },
+						["coord"] = { 42.0, 67.0, MAP.ASHENVALE },
 						["maxReputation"] = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
 					},
 					["hqd"] = {
 						["cr"] = 212970,	-- Felore Moonray <Priestess of the Moon>
-						["coord"] = { 50.5, 72.0, ASHENVALE },
+						["coord"] = { 50.5, 72.0, MAP.ASHENVALE },
 						["maxReputation"] = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
 					},
 					["timeline"] = { REMOVED_2_0_1 },
@@ -331,14 +331,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				q(26453, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar
-					["coord"] = { 35.0, 49.9, ASHENVALE },
+					["coord"] = { 35.0, 49.9, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(9533, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar
-					["coord"] = { 34.8, 49.6, ASHENVALE },
+					["coord"] = { 34.8, 49.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -346,7 +346,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26481, {	-- A New Adornment
 					["sourceQuest"] = 13989,	-- King of the Foulweald
 					["qg"] = 3897,	-- Krolg
-					["coord"] = { 50.8, 75.1, ASHENVALE },
+					["coord"] = { 50.8, 75.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -359,7 +359,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13874, {	-- A Not-So-Charmed Life
 					["sourceQuest"] = 13872,	-- Worgen Wisdom
 					["qg"] = 34239,	-- Hephaestus Pilgrim
-					["coord"] = { 36.4, 49.8, ASHENVALE },
+					["coord"] = { 36.4, 49.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26454, {	-- A Shameful Waste
 					["sourceQuest"] = 26453,	-- A Helping Hand
 					["qg"] = 17291,	-- Architect Nemos
-					["coord"] = { 86.8, 44.8, ASHENVALE },
+					["coord"] = { 86.8, 44.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(9517, {	-- A Shameful Waste
 					["qg"] = 17291,	-- Architect Nemos
-					["coord"] = { 86.8, 44.8, ASHENVALE },
+					["coord"] = { 86.8, 44.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13624, {	-- A Squad of Your Own
 					["qg"] = 11806,	-- Sentinel Onaeya
-					["coord"] = { 26.7, 36.9, ASHENVALE },
+					["coord"] = { 26.7, 36.9, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -419,16 +419,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 209836 },	-- Althalaxx Orb
 						{ "n",   3663 },	-- Delgren the Purifier
 					},
-					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["coord"] = { 26.2, 38.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { DARKSHORE },
+					["maps"] = { MAP.DARKSHORE },
 					["classes"] = { PALADIN },
 				})),
 				-- #endif
 				q(13919, {	-- A Trip to the Moonwell
 					["sourceQuest"] = 26475,	-- Elune's Tear
 					["qg"] = 3894,	-- Pelturas Whitemoon
-					["coord"] = { 37.4, 51.8, ASHENVALE },
+					["coord"] = { 37.4, 51.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -439,15 +439,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n",   3663 },	-- Delgren the Purifier
 						{ "i", 209748 },	-- Althalaxx Orb
 					},
-					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["coord"] = { 26.2, 38.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { MAP.STORMWIND_CITY },
 					["classes"] = { PALADIN },
 				})),
 				-- #endif
 				q(26457, {	-- Agents of Destruction
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper
-					["coord"] = { 83.9, 62.7, ASHENVALE },
+					["coord"] = { 83.9, 62.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -475,14 +475,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(9518, {	-- Agents of Destruction
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
-					["coord"] = { 86.0, 44.4, ASHENVALE },
+					["coord"] = { 86.0, 44.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
 						objective(1, {	-- 0/1 Overseer Gorthak slain
 							["provider"] = { "n", 17304 },	-- Overseer Gorthak
-							["coord"] = { 88.8, 59.5, ASHENVALE },
+							["coord"] = { 88.8, 59.5, MAP.ASHENVALE },
 						}),
 						objective(2, {	-- 0/2 Warsong Shredder slain
 							["provider"] = { "n", 11684 },	-- Warsong Shredder
@@ -498,14 +498,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13841, {	-- All Apologies
 					["sourceQuest"] = 13798,	-- Rain of Destruction
 					["qg"] = 33726,	-- Splintertree Demolisher
-					["coord"] = { 73.3, 62.1, ASHENVALE },
+					["coord"] = { 73.3, 62.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13924, {	-- All's Well
 					["sourceQuest"] = 13922,	-- In the Hands of the Perverse
 					["qg"] = 34358,	-- Avrus the Redeemed
-					["coord"] = { 59.1, 60.0, ASHENVALE },
+					["coord"] = { 59.1, 60.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -526,7 +526,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1025, {	-- An Aggressive Defense
 					["sourceQuest"] = 1023,	-- Raene's Cleansing (2/11)
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -551,7 +551,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13865,	-- Wet Work
 					},
 					["qg"] = 33889,	-- Krokk
-					["coord"] = { 82.5, 53.7, ASHENVALE },
+					["coord"] = { 82.5, 53.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -559,9 +559,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12867,	-- Kuray'bin
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 73.5, 60.8, ASHENVALE },
+						{ 73.5, 60.8, MAP.ASHENVALE },
 						-- #else
-						{ 71.0, 68.2, ASHENVALE },
+						{ 71.0, 68.2, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -575,33 +575,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13646, {	-- Astranaar Bound
 					["sourceQuest"] = 13642,	-- Bathed in Light
 					["qg"] = 33445,	-- Sentinel Avana
-					["coord"] = { 26.8, 36.0, ASHENVALE },
+					["coord"] = { 26.8, 36.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13849, {	-- Astranaar's Burning!
 					["qg"] = 4079,	-- Sentinel Thenysil
-					["coord"] = { 34.9, 49.8, ASHENVALE },
+					["coord"] = { 34.9, 49.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13848, {	-- Bad News Bear-er
 					["sourceQuest"] = 13805,	-- Pierce Their Heart!
 					["qg"] = 33837,	-- Kadrak
-					["coord"] = { 73.6, 62.1, ASHENVALE },
+					["coord"] = { 73.6, 62.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13642, {	-- Bathed in Light
 					["sourceQuest"] = 13623,	-- Delivery for Orendil
 					["qg"] = 3847,	-- Orendil Broadleaf
-					["coord"] = { 26.8, 36.6, ASHENVALE },
+					["coord"] = { 26.8, 36.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26473, {	-- Bathran's Hair
 					["qg"] = 33204,	-- Evenar Stillwhisper
-					["coord"] = { 26.8, 22.0, ASHENVALE },
+					["coord"] = { 26.8, 22.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1010, {	-- Bathran's Hair
 					["qg"] = 3847,	-- Orendil Broadleaf
-					["coord"] = { 26.4, 38.6, ASHENVALE },
+					["coord"] = { 26.4, 38.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -625,14 +625,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5437 },	-- Bathran's Hair
 								{ "o", 17282 },	-- Plant Bundle
 							},
-							["coord"] = { 31.8, 22.9, ASHENVALE },
+							["coord"] = { 31.8, 22.9, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(13920, {	-- Before You Go...
 					["sourceQuest"] = 13890,	-- Keep the Fires Burning
 					["qg"] = 34122,	-- Commander Grimfang
-					["coord"] = { 12.1, 33.8, ASHENVALE },
+					["coord"] = { 12.1, 33.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -658,9 +658,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12757,	-- Karang Amakkar
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 37.7, 43.5, ASHENVALE },
+						{ 37.7, 43.5, MAP.ASHENVALE },
 						-- #else
-						{ 11.8, 34.4, ASHENVALE },
+						{ 11.8, 34.4, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -690,7 +690,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13944,	-- Small Hands, Short Fuse
 					},
 					["qg"] = 34359,	-- Captain Goggath
-					["coord"] = { 38.1, 43.8, ASHENVALE },
+					["coord"] = { 38.1, 43.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -717,14 +717,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13803, {	-- Blood of the Weak
 					["sourceQuest"] = 13712,	-- To The Rescue!
 					["qg"] = 33837,	-- Kadrak
-					["coord"] = { 73.6, 62.1, ASHENVALE },
+					["coord"] = { 73.6, 62.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13943, {	-- Breathing Room
 					["sourceQuest"] = 13936,	-- Tweedle's Dumb
 					["qg"] = 34359,	-- Captain Goggath
-					["coord"] = { 38.1, 43.8, ASHENVALE },
+					["coord"] = { 38.1, 43.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -751,7 +751,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13983, {	-- Building Your Own Coffin
 					["sourceQuest"] = 13977,	-- Mass Production
 					["qg"] = 34596,	-- Foreman Jinx
-					["coord"] = { 46.1, 63.2, ASHENVALE },
+					["coord"] = { 46.1, 63.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -778,7 +778,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13965, {	-- Check in on the Edunes
 					["sourceQuest"] = 26478,	-- Playing Possum
 					["qg"] = 3996,	-- Faldreas Goeth'Shael
-					["coord"] = { 35.8, 49.1, ASHENVALE },
+					["coord"] = { 35.8, 49.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -789,7 +789,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 211813 },	-- Silverwing Sentinel Charm
 						{ "n", 212969 },	-- Kazragore <Far Seer>
 					},
-					["coord"] = { 42.0, 67.0, ASHENVALE },
+					["coord"] = { 42.0, 67.0, MAP.ASHENVALE },
 					["maxReputation"] = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
@@ -807,7 +807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13985, {	-- Clear the Shrine
 					["sourceQuest"] = 13982,	-- In a Bind
 					["qg"] = 34599,	-- Bolyun
-					["coord"] = { 18.0, 60.0, ASHENVALE },
+					["coord"] = { 18.0, 60.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -823,14 +823,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13766, {	-- Closure is Only Natural
 					["sourceQuest"] = 26446,	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl
-					["coord"] = { 83.8, 63.1, ASHENVALE },
+					["coord"] = { 83.8, 63.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13958, {	-- Condition Critical!
 					["sourceQuest"] = 13947,	-- Blastranaar!
 					["qg"] = 34359,	-- Captain Goggath
-					["coord"] = { 38.0, 43.8, ASHENVALE },
+					["coord"] = { 38.0, 43.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -849,7 +849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13653, {	-- Crisis at Splintertree
 					["sourceQuest"] = 13651,	-- Needs a Little Lubrication
 					["qg"] = 33421,	-- Gorka
-					["coord"] = { 72.9, 80.4, ASHENVALE },
+					["coord"] = { 72.9, 80.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -872,7 +872,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13867, {	-- Culling the Furbolg Threat
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -887,14 +887,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1054, {	-- Culling the Threat
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/1 Dal Bloodclaw's Skull
 							["provider"] = { "i", 5544 },	-- Dal Bloodclaw's Skull
-							["coord"] = { 37.6, 35.4, ASHENVALE },
+							["coord"] = { 37.6, 35.4, MAP.ASHENVALE },
 							["cr"] = 3987,	-- Dal Bloodclaw
 						}),
 						i(1970, {	-- Restoring Balm
@@ -905,14 +905,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26480, {	-- Dartol's Rod
 					["sourceQuest"] = 26479,	-- Return to Raene
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13801, {	-- Dead Elves Walking
 					["sourceQuest"] = 13803,	-- Blood of the Weak
 					["qg"] = 12724,	-- Pixel
-					["coord"] = { 73.8, 62.4, ASHENVALE },
+					["coord"] = { 73.8, 62.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -927,7 +927,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13901, {	-- Deep Despair
 					["sourceQuest"] = 6442,	-- Naga at the Zoram Strand
 					["qg"] = 12719,	-- Marukai
-					["coord"] = { 12.6, 35.3, ASHENVALE },
+					["coord"] = { 12.6, 35.3, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -939,7 +939,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13935, {	-- Defend the Tree!
 					["sourceQuest"] = 13928,	-- Recover the Fallen
 					["qg"] = 34377,	-- Halannia
-					["coord"] = { 62.3, 51.1, ASHENVALE },
+					["coord"] = { 62.3, 51.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -967,20 +967,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13623, {	-- Delivery for Orendil
 					["sourceQuest"] = 26473,	-- Bathran's Hair
 					["qg"] = 33204,	-- Evenar Stillwhisper
-					["coord"] = { 26.8, 22.0, ASHENVALE },
+					["coord"] = { 26.8, 22.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13806, {	-- Demon Duty
 					["sourceQuest"] = 26449,	-- Never Again!
 					["qg"] = 11820,	-- Locke Okarr
-					["coord"] = { 73.8, 61.6, ASHENVALE },
+					["coord"] = { 73.8, 61.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26444, {	-- Destroy the Legion [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar
-					["coord"] = { 84.1, 62.7, ASHENVALE },
+					["coord"] = { 84.1, 62.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -995,7 +995,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(9516, {	-- Destroy the Legion [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
-					["coord"] = { 86.5, 44.2, ASHENVALE },
+					["coord"] = { 86.5, 44.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -1013,7 +1013,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26448, {	-- Destroy the Legion [Horde]
 					["qg"] = 17355,	-- Valusha
-					["coord"] = { 73.1, 60.1, ASHENVALE },
+					["coord"] = { 73.1, 60.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1028,7 +1028,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(9534, {	-- Destroy the Legion [Horde]
 					["qg"] = 17355,	-- Valusha
-					["coord"] = { 73.2, 60.4, ASHENVALE },
+					["coord"] = { 73.2, 60.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 23797 },	-- Diabolical Plans
 						{ "i", 23798 },	-- Diabolical Plans
 					},
-					["coord"] = { 81.5, 69.1, ASHENVALE },
+					["coord"] = { 81.5, 69.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1084,7 +1084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13797, {	-- Dirty Deeds
 					["sourceQuest"] = 13751,	-- Tell No One!
 					["qg"] = 33760,	-- Durak
-					["coord"] = { 72.2, 57.6, ASHENVALE },
+					["coord"] = { 72.2, 57.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1102,7 +1102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25607,	-- Ze Gnomecorder
 					},
 					["qg"] = 40894,	-- Gnombus the X-Terminator
-					["coord"] = { 35.3, 71.2, ASHENVALE },
+					["coord"] = { 35.3, 71.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28492,	-- Hero's Call: Ashenvale!
 					},
 					["qg"] = 33187,	-- Sentinel Shyela
-					["coord"] = { 26.9, 22.0, ASHENVALE },
+					["coord"] = { 26.9, 22.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						78133,	-- Dragonslayer's Shield
 					},
 					["qg"] = 210995,	-- Alonso <Knight Errant>
-					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["coord"] = { 43.4, 70.4, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["groups"] = {
@@ -1148,7 +1148,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 209872 },	-- Dragonslayer's Helm
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
-					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["coord"] = { 43.4, 70.4, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { SHADOWFANG_KEEP },
 					["classes"] = { WARRIOR },
@@ -1158,9 +1158,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 209874 },	-- Dragonslayer's Lance
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
-					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["coord"] = { 43.4, 70.4, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { WETLANDS },
+					["maps"] = { MAP.WETLANDS },
 					["classes"] = { WARRIOR },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78133, {	-- Dragonslayer's Shield
@@ -1168,23 +1168,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 209873 },	-- Dragonslayer's Shield
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
-					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["coord"] = { 43.4, 70.4, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { REDRIDGE_MOUNTAINS },
+					["maps"] = { MAP.REDRIDGE_MOUNTAINS },
 					["classes"] = { WARRIOR },
 				})),
 				-- #endif
 				q(26476, {	-- Dryad Delivery
 					["sourceQuest"] = 26475,	-- Elune's Tear
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if BEFORE CATA
 				q(1016, {	-- Elemental Bracers [Vanilla] / Retaking Mystral Lake [CATA+]
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
-					["coord"] = { 49.8, 67.2, ASHENVALE },
+					["coord"] = { 49.8, 67.2, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1210,15 +1210,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78506, {	-- Elemental Distress
 					["sourceQuest"] = 78920,	-- Baron Aquanis (H)
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.2, ASHENVALE },
-					["maps"] = { STONETALON_MOUNTAINS },
+					["coord"] = { 11.6, 34.2, MAP.ASHENVALE },
+					["maps"] = { MAP.STONETALON_MOUNTAINS },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mote of Seismic Rage
 							["provider"] = { "i", 210668 },	-- Mote of Seismic Rage
-							["coord"] = { 33.2, 69.8, STONETALON_MOUNTAINS },
+							["coord"] = { 33.2, 69.8, MAP.STONETALON_MOUNTAINS },
 							["crs"] = {
 								4034,	-- Enraged Stone Spirit
 								4035,	-- Furious Stone Spirit
@@ -1226,7 +1226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						objective(2, {	-- 0/1 Mote of Infernal Rage
 							["provider"] = { "i", 210667 },	-- Mote of Infernal Rage
-							["coord"] = { 32.6, 67.7, STONETALON_MOUNTAINS },
+							["coord"] = { 32.6, 67.7, MAP.STONETALON_MOUNTAINS },
 							["crs"] = {
 								4038,	-- Burning Destroyer
 								4037,	-- Burning Ravager
@@ -1235,7 +1235,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						objective(3, {	-- 0/1 Mote of Torrential Rage
 							["provider"] = { "i", 210665 },	-- Mote of Torrential Rage
-							["coord"] = { 49.6, 71.2, ASHENVALE },
+							["coord"] = { 49.6, 71.2, MAP.ASHENVALE },
 							["cr"] = 3917,	-- Befouled Water Elemental
 						}),
 					},
@@ -1243,7 +1243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78537, {	-- Elixir of Insight (1/2)
 					["sourceQuest"] = 78506,	-- Elemental Distress
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["coord"] = { 11.6, 34.2, MAP.ASHENVALE },
 					["cost"] = {
 						{ "i", 5996, 1 },	-- Elixir of Water Breathing
 						{ "i", 3383, 1 },	-- Elixir of Wisdom
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n",  12736 },	-- Je'neu Sancrea <The Earthen Ring>
 						{ "i", 210712 },	-- Elixir of Insight
 					},
-					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["coord"] = { 11.6, 34.2, MAP.ASHENVALE },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -1267,7 +1267,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26475, {	-- Elune's Tear
 					["sourceQuest"] = 26474,	-- Orendil's Cure
 					["qg"] = 3894,	-- Pelturas Whitemoon
-					["coord"] = { 37.4, 51.8, ASHENVALE },
+					["coord"] = { 37.4, 51.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1282,7 +1282,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1033, {	-- Elune's Tear
 					["sourceQuest"] = 1020,	-- Orendil's Cure
 					["qg"] = 3894,	-- Pelturas Whitemoon
-					["coord"] = { 37.3, 51.8, ASHENVALE },
+					["coord"] = { 37.3, 51.8, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1292,14 +1292,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5493 },	-- Elune's Tear
 								{ "o", 19015 },	-- Elune's Tear
 							},
-							["coord"] = { 46.0, 46.5, ASHENVALE },
+							["coord"] = { 46.0, 46.5, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(13698, {	-- Explosives Shredding
 					["sourceQuest"] = 26457,	-- Agents of Destruction
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper
-					["coord"] = { 83.9, 62.7, ASHENVALE },
+					["coord"] = { 83.9, 62.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1326,14 +1326,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1035, {	-- Fallen Sky Lake
 					["sourceQuest"] = 1034,	-- The Ruins of Stardust
 					["qg"] = 3894,	-- Pelturas Whitemoon
-					["coord"] = { 37.3, 51.8, ASHENVALE },
+					["coord"] = { 37.3, 51.8, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fallen Moonstone
 							["provider"] = { "i", 5508 },	-- Fallen Moonstone
-							["coord"] = { 66.6, 82.0, ASHENVALE },
+							["coord"] = { 66.6, 82.0, MAP.ASHENVALE },
 							["cr"] = 3931,	-- Shadethicket Oracle
 						}),
 						i(5814, {	-- Snapbrook Armor
@@ -1350,28 +1350,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25621, {	-- Field Test: Gnomecorder
 					["sourceQuest"] = 25615,	-- Return to Stardust
 					["qg"] = 40895,	-- Professor Xakxak Gyromate
-					["coord"] = { 35.4, 71.1, ASHENVALE },
+					["coord"] = { 35.4, 71.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13619, {	-- Final Report
 					["sourceQuest"] = 13618,	-- Find Gorat!
 					["qg"] = 33294,	-- Gorat
-					["coord"] = { 64.2, 84.4, ASHENVALE },
+					["coord"] = { 64.2, 84.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26463, {	-- Finding Teronis
 					["sourceQuest"] = 13623,	-- Delivery For Orendil
 					["qg"] = 3847,	-- Orendil Broadleaf
-					["coord"] = { 26.8, 36.6, ASHENVALE },
+					["coord"] = { 26.8, 36.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1011, {	-- Forsaken Diseases
 					["sourceQuest"] = 4581,	-- Kayneth Stillwind
 					["qg"] = 3848,	-- Kayneth Stillwind
-					["coord"] = { 85.3, 44.7, ASHENVALE },
+					["coord"] = { 85.3, 44.7, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
@@ -1381,7 +1381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5440 },	-- Bottle of Disease
 								{ "i", 18036 },	-- Bottle of Disease
 							},
-							["coord"] = { 75.3, 72.3, ASHENVALE },
+							["coord"] = { 75.3, 72.3, MAP.ASHENVALE },
 						}),
 					},
 				}),
@@ -1389,9 +1389,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12818,	-- Ruul Snowhoof
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.4, 34.6, ASHENVALE },
+						{ 41.4, 34.6, MAP.ASHENVALE },
 						-- #else
-						{ 41.4, 34.4, ASHENVALE },
+						{ 41.4, 34.4, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25729, {	-- Gerenzo the Traitor
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 					["qg"] = 40895,	-- Professor Xakxak Gyromate
-					["coord"] = { 35.4, 71.1, ASHENVALE },
+					["coord"] = { 35.4, 71.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1412,13 +1412,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13877, {	-- Go With The Flow
 					["sourceQuest"] = 13874,	-- A Not-So-Charmed Life
 					["qg"] = 34239,	-- Hephaestus Pilgrim
-					["coord"] = { 36.4, 49.8, ASHENVALE },
+					["coord"] = { 36.4, 49.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13875, {	-- Gurtar's Request
 					["qg"] = 34242,	-- Guardian Gurtar
-					["coord"] = { 89.5, 48.6, ASHENVALE },
+					["coord"] = { 89.5, 48.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1446,7 +1446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13921, {	-- He Who Would Be Forgiven
 					["description"] = "This quest is auto given to you once completing |cFFFFD700A Trip To The Moonwell|r.",
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
-					["coord"] = { 71.3, 60.5, ASHENVALE },
+					["coord"] = { 71.3, 60.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1454,20 +1454,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "You can pick this quest up if you abandon the quest by the same name.",
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
 					["qg"] = 3894,	-- Pelturas Whitemoon
-					["coord"] = { 37.4, 51.8, ASHENVALE },
+					["coord"] = { 37.4, 51.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25616, {	-- Hellscream's Legacy
 					["sourceQuest"] = 25615,	-- Return to Stardust
 					["qg"] = 34354,	-- Huntress Jalin
-					["coord"] = { 35.1, 71.6, ASHENVALE },
+					["coord"] = { 35.1, 71.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				heroscall(q(28492, {	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["maps"] = { MAP.DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
@@ -1479,8 +1479,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78575, {	-- Hirzek
 					["sourceQuest"] = 78561,	-- Elixir of Insight (2/2)
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.2, ASHENVALE },
-					["maps"] = { THE_BARRENS },
+					["coord"] = { 11.6, 34.2, MAP.ASHENVALE },
+					["maps"] = { MAP.THE_BARRENS },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -1490,7 +1490,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						objective(2, {	-- 0/1 Hirzek slain
 							["provider"] = { "n", 212694 },	-- Hirzek
-							["coord"] = { 43.6, 78.8, THE_BARRENS },
+							["coord"] = { 43.6, 78.8, MAP.THE_BARRENS },
 						}),
 						i(210746, {	-- Rune of Earth Shield
 							["classes"] = { SHAMAN },
@@ -1508,7 +1508,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuestNumRequired"] = 1,
 					["qg"] = 34290,	-- Core
-					["coord"] = { 52.3, 56.5, ASHENVALE },
+					["coord"] = { 52.3, 56.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Lava fissures filled
@@ -1522,7 +1522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13982, {	-- In a Bind
 					["sourceQuest"] = 13976,	-- Three Fiends of the Forest
 					["qg"] = 3698,	-- Bolyun
-					["coord"] = { 18.0, 60.0, ASHENVALE },
+					["coord"] = { 18.0, 60.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14018,	-- He Who Would Be Forgiven
 					},
 					["qg"] = 34335,	-- Avrus Illwhisper
-					["coord"] = { 59.1, 60.0, ASHENVALE },
+					["coord"] = { 59.1, 60.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1557,9 +1557,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 13792,	-- The Shadewalker
 					["qg"] = 33777,	-- Gaivan Shadewalker (mobileNPC)
 					["coords"] = {	-- Walks back-and-forth between the coordinates
-						{ 75.8, 74.9, ASHENVALE },
-						{ 75.6, 75.5, ASHENVALE },
-						{ 75.5, 76.1, ASHENVALE },
+						{ 75.8, 74.9, MAP.ASHENVALE },
+						{ 75.6, 75.5, MAP.ASHENVALE },
+						{ 75.5, 76.1, MAP.ASHENVALE },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1582,22 +1582,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1012, {	-- Insane Druids
 					["sourceQuest"] = 1011,	-- Forsaken Diseases
 					["qg"] = 3848,	-- Kayneth Stillwind
-					["coord"] = { 85.3, 44.7, ASHENVALE },
+					["coord"] = { 85.3, 44.7, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
 						objective(1, {	-- 0/1 Taneel Darkwood slain
 							["provider"] = { "n", 3940 },	-- Taneel Darkwood
-							["coord"] = { 77.0, 74.0, ASHENVALE },
+							["coord"] = { 77.0, 74.0, MAP.ASHENVALE },
 						}),
 						objective(2, {	-- 0/1 Uthil Mooncall slain
 							["provider"] = { "n", 3941 },	-- Uthil Mooncall
-							["coord"] = { 78.0, 72.8, ASHENVALE },
+							["coord"] = { 78.0, 72.8, MAP.ASHENVALE },
 						}),
 						objective(3, {	-- 0/1 Mavoris Cloudsbreak slain
 							["provider"] = { "n", 3942 },	-- Mavoris Cloudsbreak
-							["coord"] = { 74.8, 74.2, ASHENVALE },
+							["coord"] = { 74.8, 74.2, MAP.ASHENVALE },
 						}),
 						i(5813),	-- Emil's Brand
 					},
@@ -1614,9 +1614,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 74.0, 60.6, ASHENVALE },
+						{ 74.0, 60.6, MAP.ASHENVALE },
 						-- #else
-						{ 73.6, 60.0, ASHENVALE },
+						{ 73.6, 60.0, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1632,9 +1632,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1056, {	-- Journey to Stonetalon Peak
 					["qg"] = 3996,	-- Faldreas Goeth'Shael
-					["coord"] = { 35.6, 49.2, ASHENVALE },
+					["coord"] = { 35.6, 49.2, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STONETALON_MOUNTAINS },
+					["maps"] = { MAP.STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
@@ -1644,14 +1644,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3845 },	-- Shindrell Swiftfire
 						{ "i", 12060 },	-- Shindrell's Note
 					},
-					["coord"] = { 34.7, 48.9, ASHENVALE },
+					["coord"] = { 34.7, 48.9, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
 				}),
 				q(13890, {	-- Keep the Fires Burning
 					["qg"] = 34122,	-- Commander Grimfang
-					["coord"] = { 12.1, 33.8, ASHENVALE },
+					["coord"] = { 12.1, 33.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1672,7 +1672,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13989, {	-- King of the Foulweald
 					["sourceQuest"] = 26480,	-- Dartol's Rod
 					["qg"] = 3897,	-- Krolg
-					["coord"] = { 50.8, 75.0, ASHENVALE },
+					["coord"] = { 50.8, 75.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1704,9 +1704,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.7, 65.1, ASHENVALE },
+						{ 49.7, 65.1, MAP.ASHENVALE },
 						-- #else
-						{ 11.8, 34.4, ASHENVALE },
+						{ 11.8, 34.4, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1717,7 +1717,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  16976 },	-- Murgut's Totem
 								{ "o", 178227 },	-- Murgut's Totem Basket
 							},
-							["coord"] = { 56.5, 63.5, ASHENVALE },
+							["coord"] = { 56.5, 63.5, MAP.ASHENVALE },
 							["cost"] = { { "i", 16972, 1 } },	-- Karang's Banner
 							["cr"] = 12918,	-- Chief Murgut
 						}),
@@ -1730,7 +1730,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13883, {	-- Lousy Pieces of Ship
 					["qg"] = 34303,	-- Dagrun Ragehammer
-					["coord"] = { 11.4, 35.3, ASHENVALE },
+					["coord"] = { 11.4, 35.3, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1745,15 +1745,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1017, {	-- Mage Summoner
 					["sourceQuest"] = 1016,	-- Elemental Bracers
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
-					["coord"] = { 49.8, 67.2, ASHENVALE },
+					["coord"] = { 49.8, 67.2, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sarilus Foulborne's Head
 							["provider"] = { "i", 5537 },	-- Sarilus Foulborne's Head
-							["coord"] = { 48.2, 19.0, THE_BARRENS },
+							["coord"] = { 48.2, 19.0, MAP.THE_BARRENS },
 							["cr"] = 3986,	-- Sarilus Foulborne
 						}),
 						i(5816, {	-- Light of Elune
@@ -1765,14 +1765,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13815, {	-- Making Stumps
 					["sourceQuest"] = 13808,	-- Mission Improbable
 					["qg"] = 33889,	-- Krokk
-					["coord"] = { 82.5, 53.7, ASHENVALE },
+					["coord"] = { 82.5, 53.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13640, {	-- Management Material
 					["sourceQuest"] = 13628,	-- Got Lumber?
 					["qg"] = 33421,	-- Gorka
-					["coord"] = { 72.9, 80.4, ASHENVALE },
+					["coord"] = { 72.9, 80.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1799,14 +1799,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13977, {	-- Mass Production
 					["sourceQuest"] = 13974,	-- Tweedle's Tiny Package
 					["qg"] = 34569,	-- Flooz
-					["coord"] = { 49.9, 67.2, ASHENVALE },
+					["coord"] = { 49.9, 67.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13808, {	-- Mission Improbable
 					["sourceQuest"] = 13805,	-- Pierce Their Heart!
 					["qg"] = 33837,	-- Kadrak
-					["coord"] = { 73.6, 62.1, ASHENVALE },
+					["coord"] = { 73.6, 62.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1814,16 +1814,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78684, {	-- Mysterious Traveler
 					["sourceQuest"] = 78681,	-- The Conjuring
 					["qg"] = 213444,	-- Mysterious Traveler
-					["coord"] = { 79.0, 80.2, ASHENVALE },
+					["coord"] = { 79.0, 80.2, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
 				})),
 				-- #endif
 				q(13602, {	-- Naga of the Strand
 					["qg"] = 3845,	-- Shindrell Swiftfire
-					["coord"] = { 18.2, 20.4, ASHENVALE },
+					["coord"] = { 18.2, 20.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1843,9 +1843,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12719,	-- Marukai
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 12.6, 35.2, ASHENVALE },
+						{ 12.6, 35.2, MAP.ASHENVALE },
 						-- #else
-						{ 11.6, 34.8, ASHENVALE },
+						{ 11.6, 34.8, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1867,7 +1867,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13651, {	-- Needs a Little Lubrication
 					["sourceQuest"] = 13640,	-- Management Material
 					["qg"] = 33421,	-- Gorka
-					["coord"] = { 72.9, 80.4, ASHENVALE },
+					["coord"] = { 72.9, 80.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1880,7 +1880,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26445, {	-- Never Again! [Alliance]
 					["sourceQuest"] = 26443,	-- Diabolical Plans [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar
-					["coord"] = { 84.1, 62.7, ASHENVALE },
+					["coord"] = { 84.1, 62.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1906,18 +1906,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9522, {	-- Never Again! [Alliance]
 					["sourceQuest"] = 9520,	-- Diabolical Plans [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
-					["coord"] = { 86.5, 44.2, ASHENVALE },
+					["coord"] = { 86.5, 44.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 27,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gorgannon slain
 							["provider"] = { "n", 17300 },	-- Gorgannon
-							["coord"] = { 89.6, 76.8, ASHENVALE },
+							["coord"] = { 89.6, 76.8, MAP.ASHENVALE },
 						}),
 						objective(2, {	-- 0/1 Diathorus the Seeker slain
 							["provider"] = { "n", 6072 },	-- Diathorus the Seeker
-							["coord"] = { 77.8, 83.6, ASHENVALE },
+							["coord"] = { 77.8, 83.6, MAP.ASHENVALE },
 						}),
 						i(24119, {	-- Band of Argas
 							["timeline"] = { ADDED_2_0_1 },
@@ -1933,7 +1933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26449, {	-- Never Again! [Horde]
 					["sourceQuest"] = 26447,	-- Diabolical Plans [Horde]
 					["qg"] = 17355,	-- Valusha
-					["coord"] = { 73.1, 60.1, ASHENVALE },
+					["coord"] = { 73.1, 60.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1959,18 +1959,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9536, {	-- Never Again! [Horde]
 					["sourceQuest"] = 9535,	-- Diabolical Plans [Horde]
 					["qg"] = 17355,	-- Valusha
-					["coord"] = { 73.2, 60.4, ASHENVALE },
+					["coord"] = { 73.2, 60.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 27,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gorgannon slain
 							["provider"] = { "n", 17300 },	-- Gorgannon
-							["coord"] = { 89.6, 76.8, ASHENVALE },
+							["coord"] = { 89.6, 76.8, MAP.ASHENVALE },
 						}),
 						objective(2, {	-- 0/1 Diathorus the Seeker slain
 							["provider"] = { "n", 6072 },	-- Diathorus the Seeker
-							["coord"] = { 77.8, 83.6, ASHENVALE },
+							["coord"] = { 77.8, 83.6, MAP.ASHENVALE },
 						}),
 						i(24119, {	-- Band of Argas
 							["timeline"] = { ADDED_2_0_1 },
@@ -1985,7 +1985,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13595, {	-- Of Their Own Design
 					["qg"] = 33182,	-- Bathran
-					["coord"] = { 29.0, 24.3, ASHENVALE },
+					["coord"] = { 29.0, 24.3, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1993,7 +1993,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 33183 },	-- Bathran's Corpse
 						}),
 						o(194202, {	-- Potion of Wildfire
-							["coord"] = { 32.2, 23.4, ASHENVALE },
+							["coord"] = { 32.2, 23.4, MAP.ASHENVALE },
 							["groups"] = {
 								i(44967),	-- Bottle of Wildfire (QI!)
 							},
@@ -2003,7 +2003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26474, {	-- Orendil's Cure
 					["sourceQuest"] = 13642,	-- Bathed in Light
 					["qg"] = 3847,	-- Orendil Broadleaf
-					["coord"] = { 26.8, 36.6, ASHENVALE },
+					["coord"] = { 26.8, 36.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2013,7 +2013,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3847 },	-- Orendil Broadleaf
 						{ "i", 5460 },	-- Orendil's Cure
 					},
-					["coord"] = { 26.4, 38.6, ASHENVALE },
+					["coord"] = { 26.4, 38.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -2021,7 +2021,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13805, {	-- Pierce Their Heart!
 					["sourceQuest"] = 13803,	-- Blood of the Weak
 					["qg"] = 33760,	-- Durak
-					["coord"] = { 72.1, 57.6, ASHENVALE },
+					["coord"] = { 72.1, 57.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2042,7 +2042,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13730, {	-- Playing with Felfire
 					["sourceQuest"] = 13803,	-- Blood of the Weak
 					["qg"] = 33726,	-- Splintertree Demolisher
-					["coord"] = { 73.3, 62.1, ASHENVALE },
+					["coord"] = { 73.3, 62.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2066,7 +2066,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26478, {	-- Playing Possum
 					["sourceQuest"] = 26477,	-- Search the Bole
 					["qg"] = 3916,	-- Shael'dryn
-					["coord"] = { 59.2, 59.7, ASHENVALE },
+					["coord"] = { 59.2, 59.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2075,7 +2075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5519 },	-- Iron Pommel
 								{ "o", 195111 },	-- Oso's Chest
 							},
-							["coord"] = { 62.6, 60.3, ASHENVALE },
+							["coord"] = { 62.6, 60.3, MAP.ASHENVALE },
 						}),
 						i(56664, {	-- Shael'dryn's Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -2094,9 +2094,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1134, {	-- Pridewings of Stonetalon
 					["sourceQuest"] = 1008,	-- The Zoram Strand
 					["qg"] = 3845,	-- Shindrell Swiftfire
-					["coord"] = { 34.7, 48.9, ASHENVALE },
+					["coord"] = { 34.7, 48.9, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STONETALON_MOUNTAINS },
+					["maps"] = { MAP.STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -2120,7 +2120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuestNumRequired"] = 1,
 					["qg"] = 34292,	-- Arctanus
-					["coord"] = { 52.1, 56.7, ASHENVALE },
+					["coord"] = { 52.1, 56.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Lava Rager slain
@@ -2133,7 +2133,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 10752,	-- Onward to Ashenvale
 					-- #endif
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2144,7 +2144,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3891 },	-- Teronis' Corpse
 						{ "i", 5505 },	-- Teronis' Journal
 					},
-					["coord"] = { 20.2, 42.2, ASHENVALE },
+					["coord"] = { 20.2, 42.2, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2175,7 +2175,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3691 },	-- Raene Wolfrunner
 						{ "i", 5463 },	-- Glowing Gem
 					},
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2183,7 +2183,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1026, {	-- Raene's Cleansing (4/11) [Vanilla] / Search the Bole [CATA]
 					["sourceQuest"] = 1024,	-- Raene's Cleansing (3/11)
 					["qg"] = 3916,	-- Shael'dryn
-					["coord"] = { 53.5, 46.3, ASHENVALE },
+					["coord"] = { 53.5, 46.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2193,7 +2193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5464 },	-- Iron Shaft
 								{ "o", 19022 },	-- Worn Chest
 							},
-							["coord"] = { 54.4, 35.3, ASHENVALE },
+							["coord"] = { 54.4, 35.3, MAP.ASHENVALE },
 							["cost"] = { { "i", 5475, 1 } },	-- Wooden Key
 							["crs"] = {
 								3834,	-- Crazed Ancient
@@ -2205,7 +2205,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1027, {	-- Raene's Cleansing (5/11) [Vanilla] / Playing Possum [CATA]
 					["sourceQuest"] = 1026,	-- Raene's Cleansing (4/11)
 					["qg"] = 3916,	-- Shael'dryn
-					["coord"] = { 53.5, 46.3, ASHENVALE },
+					["coord"] = { 53.5, 46.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2235,7 +2235,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3916 },	-- Shael'dryn
 						{ "i", 5547 },	-- Reconstructed Rod
 					},
-					["coord"] = { 53.5, 46.3, ASHENVALE },
+					["coord"] = { 53.5, 46.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2248,7 +2248,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1055, {	-- Raene's Cleansing (7/11)
 					["sourceQuest"] = 1028,	-- Raene's Cleansing (6/11)
 					["provider"] = { "o", 19024 },	-- Hidden Shrine
-					["coord"] = { 56.38, 49.24, ASHENVALE },
+					["coord"] = { 56.38, 49.24, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2259,7 +2259,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3916 },	-- Shael'dryn
 						{ "i", 5462 },	-- Dartol's Rod of Transformation
 					},
-					["coord"] = { 53.5, 46.3, ASHENVALE },
+					["coord"] = { 53.5, 46.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2270,7 +2270,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3691 },	-- Raene Wolfrunner
 						{ "i", 5462 },	-- Dartol's Rod of Transformation
 					},
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2281,14 +2281,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3897 },	-- Krolg
 						{ "i", 5462 },	-- Dartol's Rod of Transformation
 					},
-					["coord"] = { 50.8, 75.0, ASHENVALE },
+					["coord"] = { 50.8, 75.0, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ran Bloodtooth
 							["provider"] = { "i", 5388 },	-- Ran Bloodtooth's Skull
-							["coord"] = { 54.6, 79.4, ASHENVALE },
+							["coord"] = { 54.6, 79.4, MAP.ASHENVALE },
 							["cr"] = 3696,	-- Ran Bloodtooth
 						}),
 						objective(2, {	-- 0/4 Bloodtooth Guard
@@ -2306,7 +2306,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["qg"] = 3897,	-- Krolg
 					-- #endif
-					["coord"] = { 50.8, 75.0, ASHENVALE },
+					["coord"] = { 50.8, 75.0, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -2343,7 +2343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13798, {	-- Rain of Destruction
 					["sourceQuest"] = 13797,	-- Dirty Deeds
 					["qg"] = 33760,	-- Durak
-					["coord"] = { 72.2, 57.6, ASHENVALE },
+					["coord"] = { 72.2, 57.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2363,7 +2363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13632, {	-- Rear Guard Duty
 					["qg"] = 11219,	-- Liladris Moonriver
-					["coord"] = { 27.2, 35.6, ASHENVALE },
+					["coord"] = { 27.2, 35.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2377,7 +2377,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26446, {	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl
-					["coord"] = { 83.8, 63.1, ASHENVALE },
+					["coord"] = { 83.8, 63.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2391,7 +2391,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(9526, {	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl <Ancient of War>
-					["coord"] = { 84.2, 45.6, ASHENVALE },
+					["coord"] = { 84.2, 45.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
@@ -2406,14 +2406,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13928, {	-- Recover the Fallen
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
-					["coord"] = { 59.0, 58.8, ASHENVALE },
+					["coord"] = { 59.0, 58.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13869, {	-- Recover the Remains
 					["sourceQuest"] = 26454,	-- A Shameful Waste
 					["qg"] = 17310,	-- Gnarl
-					["coord"] = { 83.8, 63.1, ASHENVALE },
+					["coord"] = { 83.8, 63.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = { i(23776) },	-- Warsong Lumber (QI!)
@@ -2424,7 +2424,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 211814 },	-- Warsong Outrider Mark
 						{ "n", 212970 },	-- Felore Moonray <Priestess of the Moon>
 					},
-					["coord"] = { 50.5, 72.0, ASHENVALE },
+					["coord"] = { 50.5, 72.0, MAP.ASHENVALE },
 					["maxReputation"] = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -2449,7 +2449,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26456, {	-- Report from the Northern Front
 					["sourceQuest"] = 13935,	-- Defend the Tree!
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
-					["coord"] = { 59.0, 58.8, ASHENVALE },
+					["coord"] = { 59.0, 58.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2458,14 +2458,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 17287 },	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
 						{ "i", 23778 },	-- Sentinel Luciel's Report
 					},
-					["coord"] = { 86.0, 44.4, ASHENVALE },
+					["coord"] = { 86.0, 44.4, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 21,
 				}),
 				q(9428, {	-- Report to Spintertree Post
 					["qg"] = 17098,	-- Ambassador Dawnsinger
-					["coord"] = { 71.0, 68.0, ORGRIMMAR },
+					["coord"] = { 71.0, 68.0, MAP.ORGRIMMAR },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
 					["lvl"] = 18,
@@ -2473,7 +2473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13626, {	-- Respect for the Fallen
 					["sourceQuest"] = 13624,	-- A Squad of Your Own
 					["qg"] = 11806,	-- Sentinel Onaeya
-					["coord"] = { 26.7, 36.9, ASHENVALE },
+					["coord"] = { 26.7, 36.9, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2497,7 +2497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26470, {	-- Retaking Mystral Lake
 					["sourceQuest"] = 13964,	-- To the Spire
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
-					["coord"] = { 35.6, 71.5, ASHENVALE },
+					["coord"] = { 35.6, 71.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2512,7 +2512,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				q(1016, {	-- Retaking Mystral Lake [CATA+] / Elemental Bracers [Vanilla]
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
-					["coord"] = { 49.8, 67.2, ASHENVALE },
+					["coord"] = { 49.8, 67.2, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -2537,7 +2537,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13853, {	-- Return Fire
 					["sourceQuest"] = 13849,	-- Astranaar's Burning!
 					["qg"] = 4079,	-- Sentinel Thenysil
-					["coord"] = { 34.9, 49.8, ASHENVALE },
+					["coord"] = { 34.9, 49.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2562,7 +2562,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 409315 },	-- Shattered Orb
 						{ "i", 209800 },	-- Orb Fragments
 					},
-					["coord"] = { 89.4, 77.0, ASHENVALE },
+					["coord"] = { 89.4, 77.0, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["groups"] = {
@@ -2575,14 +2575,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26479, {	-- Return to Raene
 					["sourceQuest"] = 26478,	-- Playing Possum
 					["qg"] = 3916,	-- Shael'dryn
-					["coord"] = { 59.2, 59.7, ASHENVALE },
+					["coord"] = { 59.2, 59.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26466, {	-- Ruuzel
 					["sourceQuest"] = 26465,	-- The Ancient Statuettes
 					["qg"] = 3846,	-- Talen
-					["coord"] = { 18.2, 20.5, ASHENVALE },
+					["coord"] = { 18.2, 20.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2596,7 +2596,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1009, {	-- Ruuzel
 					["sourceQuest"] = 1007,	-- The Ancient Statuette
 					["qg"] = 3846,	-- Talen
-					["coord"] = { 14.8, 31.3, ASHENVALE },
+					["coord"] = { 14.8, 31.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -2604,10 +2604,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Ring of Zoram
 							["provider"] = { "i", 5445 },	-- Ring of Zoram
 							["coords"] = {
-								{ 7.2, 13.0, ASHENVALE },
-								{ 9.4, 15.2, ASHENVALE },
-								{ 12.4, 19.6, ASHENVALE },
-								{ 11.0, 29.6, ASHENVALE },
+								{ 7.2, 13.0, MAP.ASHENVALE },
+								{ 9.4, 15.2, MAP.ASHENVALE },
+								{ 12.4, 19.6, MAP.ASHENVALE },
+								{ 11.0, 29.6, MAP.ASHENVALE },
 							},
 							["crs"] = {
 								3943,	-- Ruuzel
@@ -2624,9 +2624,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12724,	-- Pixel
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 73.8, 62.4, ASHENVALE },
+						{ 73.8, 62.4, MAP.ASHENVALE },
 						-- #else
-						{ 73.0, 61.4, ASHENVALE },
+						{ 73.0, 61.4, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2659,7 +2659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26469, {	-- Satyr Slaying!
 					["sourceQuest"] = 26468,	-- The Branch of Cenarius
 					["qg"] = 3901,	-- Illiyana
-					["coord"] = { 87.1, 43.5, ASHENVALE },
+					["coord"] = { 87.1, 43.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2690,7 +2690,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1032, {	-- Satyr Slaying!
 					["sourceQuest"] = 1031,	-- The Branch of Cenarius
 					["qg"] = 3901,	-- Illiyana
-					["coord"] = { 21.8, 53.2, ASHENVALE },
+					["coord"] = { 21.8, 53.2, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -2722,7 +2722,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26477, {	-- Search the Bole
 					["sourceQuest"] = 26476,	-- Dryad Delivery
 					["qg"] = 3916,	-- Shael'dryn
-					["coord"] = { 59.2, 59.7, ASHENVALE },
+					["coord"] = { 59.2, 59.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2731,14 +2731,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5464 },	-- Iron Shaft
 								{ "o", 19022 },	-- Worn Chest
 							},
-							["coord"] = { 55.0, 40.7, ASHENVALE },
+							["coord"] = { 55.0, 40.7, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(13871, {	-- Security!
 					["sourceQuest"] = 13870,	-- As Good as it Gets
 					["qg"] = 17304,	-- Overseer Gorthak
-					["coord"] = { 90.9, 58.1, ASHENVALE },
+					["coord"] = { 90.9, 58.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2763,7 +2763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13942, {	-- Set Us Up the Bomb
 					["sourceQuest"] = 13936,	-- Tweedle's Dumb
 					["qg"] = 34395,	-- Tweedle
-					["coord"] = { 37.9, 43.8, ASHENVALE },
+					["coord"] = { 37.9, 43.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2782,9 +2782,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 16304 },	-- Shadumbra's Head
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.4, 50.2, ASHENVALE },
+						{ 61.4, 50.2, MAP.ASHENVALE },
 						-- #else
-						{ 59.8, 54.6, ASHENVALE },
+						{ 59.8, 54.6, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2798,9 +2798,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 16305 },	-- Sharptalon's Claw
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 73.2, 73.6, ASHENVALE },
+						{ 73.2, 73.6, MAP.ASHENVALE },
 						-- #else
-						{ 75.8, 69.6, ASHENVALE },
+						{ 75.8, 69.6, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2810,14 +2810,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13873, {	-- Sheelah's Last Wish
 					["sourceQuest"] = 13871,	-- Security!
 					["qg"] = 34233,	-- Guardian Menerin
-					["coord"] = { 90.7, 58.1, ASHENVALE },
+					["coord"] = { 90.7, 58.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER CATA
 				q(25, {		-- Simmer Down Now [CATA+] / Stonetalon Standstill
 					["qg"] = 34559,	-- Captain Tarkan
-					["coord"] = { 50.1, 67.5, ASHENVALE },
+					["coord"] = { 50.1, 67.5, MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(23, 23, 7),
 				}),
@@ -2825,7 +2825,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13944, {	-- Small Hands, Short Fuse
 					["sourceQuest"] = 13942,	-- Set Us Up The Bomb
 					["qg"] = 34395,	-- Tweedle
-					["coord"] = { 37.9, 43.8, ASHENVALE },
+					["coord"] = { 37.9, 43.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2849,7 +2849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}), {
 					["questID"] = 78907,	-- Dead Twilight Cultist HQT
 					["qg"] = 212334,	-- Dead Twilight Cultist
-					["coord"] = { 17.3, 26.7, ASHENVALE },
+					["coord"] = { 17.3, 26.7, MAP.ASHENVALE },
 					["cost"] = { { "i", 210708, 1 } },	-- Elixir of Coalesced Regret
 					["timeline"] = { REMOVED_2_0_1 },
 					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
@@ -2858,14 +2858,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13962, {	-- Stalemate
 					["sourceQuest"] = 13958,	-- Condition Critical!
 					["qg"] = 34518,	-- Thagg
-					["coord"] = { 59.9, 53.2, ASHENVALE },
+					["coord"] = { 59.9, 53.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if BEFORE CATA
 				q(25, {		-- Stonetalon Standstill / Simmer Down Now [CATA+]
 					["qg"] = 12737,	-- Mastok Wrilehiss
-					["coord"] = { 73.66, 60.01, ASHENVALE },
+					["coord"] = { 73.66, 60.01, MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(23, 23, 7),
 					["groups"] = {
@@ -2878,14 +2878,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13683, {	-- Stopping the Rituals
 					["sourceQuest"] = 26468,	-- The Branch of Cenarius
 					["qg"] = 33727,	-- Anchorite Buurq
-					["coord"] = { 86.5, 43.7, ASHENVALE },
+					["coord"] = { 86.5, 43.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(976, {	-- Supplies to Auberdine
 					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5/9)
 					["qg"] = 4484,	-- Feero Ironhand
-					["coord"] = { 26.2, 38.9, ASHENVALE },
+					["coord"] = { 26.2, 38.9, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
@@ -2901,13 +2901,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13751, {	-- Tell No One!
 					["sourceQuest"] = 13730,	-- Playing With Felfire
 					["qg"] = 33726,	-- Sprintertree Demolisher
-					["coord"] = { 73.3, 62.1, ASHENVALE },
+					["coord"] = { 73.3, 62.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13644, {	-- That Which has Risen
 					["qg"] = 33443,	-- Keeper Heartwise
-					["coord"] = { 20.2, 38.8, ASHENVALE },
+					["coord"] = { 20.2, 38.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2930,7 +2930,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1007, {	-- The Ancient Statuette
 					["qg"] = 3846,	-- Talen
-					["coord"] = { 14.8, 31.3, ASHENVALE },
+					["coord"] = { 14.8, 31.3, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
@@ -2940,14 +2940,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5424 },	-- Ancient Statuette
 								{ "o", 17783 },	-- Ancient Statuette
 							},
-							["coord"] = { 14.2, 20.6, ASHENVALE },
+							["coord"] = { 14.2, 20.6, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(26465, {	-- The Ancient Statuettes
 					["sourceQuest"] = 13617,	-- West to the Strand
 					["qg"] = 3846,	-- Talen
-					["coord"] = { 18.2, 20.5, ASHENVALE },
+					["coord"] = { 18.2, 20.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2961,7 +2961,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(235, {	-- The Ashenvale Hunt (1/2) [Orgrimmar]
 					["qg"] = 10880,	-- Warcaller Gorlach
-					["coord"] = { 46.6, 64.6, ORGRIMMAR },
+					["coord"] = { 46.6, 64.6, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2969,7 +2969,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(742, {	-- The Ashenvale Hunt (1/2) [Thunder Bluff]
 					["qg"] = 10881,	-- Bluff Runner Windstrider
-					["coord"] = { 41.4, 54.2, THUNDER_BLUFF },
+					["coord"] = { 41.4, 54.2, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2977,7 +2977,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6382, {	-- The Ashenvale Hunt (1/2) [The Barrens]
 					["qg"] = 3387,	-- Jorn Skyseer
-					["coord"] = { 44.86, 59.13, THE_BARRENS },
+					["coord"] = { 44.86, 59.13, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2990,7 +2990,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6382,	-- The Ashenvale Hunt (1/2) [The Barrens]
 					},
 					["qg"] = 12696,	-- Senani Thunderheart
-					["coord"] = { 73.6, 61.4, ASHENVALE },
+					["coord"] = { 73.6, 61.4, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -2998,7 +2998,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1918, {	-- The Befouled Element
 					["sourceQuest"] = 25,	-- Stonetalon Standstill / Simmer Down Now [CATA]
 					["provider"] = { "i", 16408 },	-- Befouled Water Globe
-					["coord"] = { 50.8, 71.6, ASHENVALE },
+					["coord"] = { 50.8, 71.6, MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["cr"] = 12759,	-- Tideress
 					["lvl"] = lvlsquish(23, 23, 7),
@@ -3006,7 +3006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26468, {	-- The Branch of Cenarius
 					["sourceQuest"] = 26467,	-- Vile Satyr! Dryads in Danger!
 					["qg"] = 3920,	-- Anilia
-					["coord"] = { 78.3, 44.8, ASHENVALE },
+					["coord"] = { 78.3, 44.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3021,14 +3021,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1031, {	-- The Branch of Cenarius
 					["sourceQuest"] = 1021,	-- Vile Satyr! Dryads in Danger!
 					["qg"] = 3920,	-- Anilia
-					["coord"] = { 78.3, 44.8, ASHENVALE },
+					["coord"] = { 78.3, 44.8, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 					["groups"] = {
 						objective(1, {	-- 0/1 Branch of Cenarius
 							["provider"] = { "i", 5461 },	-- Branch of Cenarius
-							["coord"] = { 78.6, 42.8, ASHENVALE },
+							["coord"] = { 78.6, 42.8, MAP.ASHENVALE },
 							["cr"] = 4619,	-- Geltharis
 						}),
 						i(5820),	-- Faerie Mantle
@@ -3037,7 +3037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26890, {	-- The Essence of Aku'Mai
 					["qg"] = 34303,	-- Dagrun Ragehammer
-					["coord"] = { 11.4, 35.3, ASHENVALE },
+					["coord"] = { 11.4, 35.3, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3051,9 +3051,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 13792,	-- The Shadewalker
 					["qg"] = 33777,	-- Gaivan Shadewalker
 					["coords"] = {	-- Walks back-and-forth between the coordinates
-						{ 75.8, 74.9, ASHENVALE },
-						{ 75.6, 75.5, ASHENVALE },
-						{ 75.5, 76.1, ASHENVALE },
+						{ 75.8, 74.9, MAP.ASHENVALE },
+						{ 75.6, 75.5, MAP.ASHENVALE },
+						{ 75.5, 76.1, MAP.ASHENVALE },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3063,7 +3063,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 45573 },	-- The Forest Heart
 								{ "o", 194549 },	-- The Forest Heart
 							},
-							["coord"] = { 75.5, 74.2, ASHENVALE },
+							["coord"] = { 75.5, 74.2, MAP.ASHENVALE },
 						}),
 						i(56636, {	-- Forest Grace Mantle
 							["timeline"] = { ADDED_4_0_3 },
@@ -3081,7 +3081,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13979, {	-- The Goblin Braintrust
 					["qg"] = 34354,	-- Huntress Jalin
-					["coord"] = { 35.1, 71.6, ASHENVALE },
+					["coord"] = { 35.1, 71.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3105,14 +3105,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1022, {	-- The Howling Vale
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
-					["coord"] = { 22.2, 53.0, ASHENVALE },
+					["coord"] = { 22.2, 53.0, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- View the Tome of Mel'Thandris
 							["provider"] = { "o", 19027 },	-- Tome of Mel'Thandris
-							["coord"] = { 50.5, 39.1, ASHENVALE },
+							["coord"] = { 50.5, 39.1, MAP.ASHENVALE },
 						}),
 					},
 				}),
@@ -3123,7 +3123,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						23,	-- Ursangous's Paw
 					},
 					["qg"] = 12696,	-- Senani Thunderheart
-					["coord"] = { 73.6, 61.4, ASHENVALE },
+					["coord"] = { 73.6, 61.4, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -3136,7 +3136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13987, {	-- The Last Stand
 					["sourceQuest"] = 13985,	-- Clear the Shrine
 					["qg"] = 34604,	-- Big Baobob
-					["coord"] = { 22.2, 52.9, ASHENVALE },
+					["coord"] = { 22.2, 52.9, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3159,7 +3159,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26455, {	-- The Lost Chalice
 					["qg"] = 3848,	-- Kayneth Stillwind
-					["coord"] = { 85.2, 44.7, ASHENVALE },
+					["coord"] = { 85.2, 44.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3168,13 +3168,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 23760 },	-- Chalice of Elune
 								{ "o", 181681 },	-- Chalice of Elune
 							},
-							["coord"] = { 81.2, 48.7, ASHENVALE },
+							["coord"] = { 81.2, 48.7, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(9519, {	-- The Lost Chalice
 					["qg"] = 3848,	-- Kayneth Stillwind
-					["coord"] = { 85.3, 44.7, ASHENVALE },
+					["coord"] = { 85.3, 44.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
@@ -3184,14 +3184,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  23760 },	-- Chalice of Elune
 								{ "o", 181681 },	-- Chalice of Elune
 							},
-							["coord"] = { 81.4, 48.9, ASHENVALE },
+							["coord"] = { 81.4, 48.9, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(26464, {	-- The Lost Gem
 					["sourceQuest"] = 26463,	-- Finding Teronis
 					["qg"] = 3891,	-- Teronis' Corpse
-					["coord"] = { 20.3, 38.8, ASHENVALE },
+					["coord"] = { 20.3, 38.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3222,7 +3222,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6504, {	-- The Lost Pages
 					["qg"] = 12718,	-- Gurda Ragescar
-					["coord"] = { 70.0, 71.0, ASHENVALE },
+					["coord"] = { 70.0, 71.0, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
@@ -3264,28 +3264,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13630, {	-- The Reason Why
 					["qg"] = 33276,	-- Moon Priestess Maestra (mobileNPC)
-					["coord"] = { 27.0, 36.3, ASHENVALE },
+					["coord"] = { 27.0, 36.3, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blue Moonstone deactivated
 							["provider"] = { "o", 194309 },	-- Blue Moonstone
-							["coord"] = { 30.4, 31.4, ASHENVALE },
+							["coord"] = { 30.4, 31.4, MAP.ASHENVALE },
 						}),
 						objective(2, {	-- 0/1 Green Moonstone deactivated
 							["provider"] = { "o", 194310 },	-- Green Moonstone
-							["coord"] = { 27.6, 33.2, ASHENVALE },
+							["coord"] = { 27.6, 33.2, MAP.ASHENVALE },
 						}),
 						objective(3, {	-- 0/1 Red Moonstone deactivated
 							["provider"] = { "o", 194311 },	-- Red Moonstone
-							["coord"] = { 28.6, 31.6, ASHENVALE },
+							["coord"] = { 28.6, 31.6, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(1034, {	-- The Ruins of Stardust
 					["sourceQuest"] = 1033,	-- Elune's Tear
 					["qg"] = 3894,	-- Pelturas Whitemoon
-					["coord"] = { 37.3, 51.8, ASHENVALE },
+					["coord"] = { 37.3, 51.8, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -3295,21 +3295,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5494 },	-- Handful of Stardust
 								{ "o", 19016 },	-- Stardust Covered Bush
 							},
-							["coord"] = { 33.9, 68.2, ASHENVALE },
+							["coord"] = { 33.9, 68.2, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(13792, {	-- The Shadewalker
 					["sourceQuest"] = 13766,	-- Closure is Only Natural
 					["qg"] = 17310,	-- Gnarl
-					["coord"] = { 83.8, 63.1, ASHENVALE },
+					["coord"] = { 83.8, 63.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(970, {	-- The Tower of Althalaxx (4/9)
 					["sourceQuest"] = 967,	-- The Tower of Althalaxx (3/9) (Darkshore)
 					["qg"] = 3663,	-- Delgren the Purifier
-					["coord"] = { 26.2, 38.7, ASHENVALE },
+					["coord"] = { 26.2, 38.7, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
@@ -3329,14 +3329,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(973, {	-- The Tower of Althalaxx (5/9)
 					["sourceQuest"] = 970,	-- The Tower of Althalaxx (4/9)
 					["qg"] = 3663,	-- Delgren the Purifier
-					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["coord"] = { 26.2, 38.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ilkrud Magthrull's Tome
 							["provider"] = { "i", 5533 },	-- Ilkrud Magthrull's Tome
-							["coord"] = { 25.2, 60.6, ASHENVALE },
+							["coord"] = { 25.2, 60.6, MAP.ASHENVALE },
 							["cr"] = 3664,	-- Ilkrud Magthrull
 						}),
 						i(5622, {	-- Clergy Ring
@@ -3350,27 +3350,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1140, {	-- The Tower of Althalaxx (6/9)
 					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5/9)
 					["qg"] = 3663,	-- Delgren the Purifier
-					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["coord"] = { 26.2, 38.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
 						objective(1, {	-- Free the Highborne soul in Night Run
 							["provider"] = { "o", 19901 },	-- Circle of Imprisonment
-							["coord"] = { 66.7, 57.0, ASHENVALE },
+							["coord"] = { 66.7, 57.0, MAP.ASHENVALE },
 						}),
 						objective(2, {	-- Free the Highborne soul in Satyrnaar
 							["provider"] = { "o", 20352 },	-- Circle of Imprisonment
-							["coord"] = { 81.6, 48.5, ASHENVALE },
+							["coord"] = { 81.6, 48.5, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(1167, {	-- The Tower of Althalaxx (7/9)
 					["sourceQuest"] = 1140,	-- The Tower of Althalaxx (6/9)
 					["qg"] = 3663,	-- Delgren the Purifier
-					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["coord"] = { 26.2, 38.6, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARKSHORE },
+					["maps"] = { MAP.DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -3383,7 +3383,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8582 },	-- Kadrak
 						{ "i", 16783 },	-- Bundle of Reports
 					},
-					["coord"] = { 48.12, 5.42, THE_BARRENS },
+					["coord"] = { 48.12, 5.42, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
@@ -3393,7 +3393,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 12864 },	-- Warsong Outrider
 								{ "i", 16746 },	-- Warsong Report
 							},
-							["coord"] = { 83.6, 51.4, ASHENVALE },
+							["coord"] = { 83.6, 51.4, MAP.ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
@@ -3408,7 +3408,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 12863 },	-- Warsong Runner
 								{ "i", 16746 },	-- Warsong Report
 							},
-							["coord"] = { 12.2, 34.2, ASHENVALE },
+							["coord"] = { 12.2, 34.2, MAP.ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
@@ -3423,7 +3423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 12862 },	-- Warsong Scout
 								{ "i", 16746 },	-- Warsong Report
 							},
-							["coord"] = { 71.04, 68.22, ASHENVALE },
+							["coord"] = { 71.04, 68.22, MAP.ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
@@ -3437,7 +3437,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1008, {	-- The Zoram Strand
 					["qg"] = 3845,	-- Shindrell Swiftfire
-					["coord"] = { 34.7, 48.9, ASHENVALE },
+					["coord"] = { 34.7, 48.9, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
@@ -3457,14 +3457,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13981, {	-- They Set Them Up The Bomb!
 					["provider"] = { "o", 195134 },	-- The Bomb
-					["coord"] = { 46.4, 61.7, ASHENVALE },
+					["coord"] = { 46.4, 61.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13980, {	-- They're Out There!
 					["sourceQuest"] = 13977,	-- Mass Production
 					["qg"] = 34596,	-- Foreman Jinx
-					["coord"] = { 46.1, 63.2, ASHENVALE },
+					["coord"] = { 46.1, 63.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3481,7 +3481,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13967, {	-- Thinning the... Herd?
 					["qg"] = 12696,	-- Senani Thunderheart
-					["coord"] = { 49.8, 65.2, ASHENVALE },
+					["coord"] = { 49.8, 65.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3501,21 +3501,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13976, {	-- Three Friends of the Forest
 					["sourceQuest"] = 13965,	-- Check in on the Edunes
 					["qg"] = 24739,	-- Benjari Edune
-					["coord"] = { 17.9, 49.5, ASHENVALE },
+					["coord"] = { 17.9, 49.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13879, {	-- Thunder Peak
 					["sourceQuest"] = 13947,	-- Blastranaar!
 					["qg"] = 34510,	-- Broyk
-					["coord"] = { 38.7, 43.3, ASHENVALE },
+					["coord"] = { 38.7, 43.3, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13923, {	-- To Hellscream's Watch
 					["sourceQuest"] = 13920,	-- Before You Go...
 					["qg"] = 34122,	-- Commander Grimfang
-					["coord"] = { 12.1, 33.8, ASHENVALE },
+					["coord"] = { 12.1, 33.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3523,14 +3523,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13645, {	-- To Raene Wolfrunner
 					["sourceQuest"] = 26464,	-- The Lost Gem
 					["qg"] = 3847,	-- Orendil Broadleaf
-					["coord"] = { 26.8, 36.6, ASHENVALE },
+					["coord"] = { 26.8, 36.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13866, {	-- To The Ramparts!
 					["sourceQuest"] = 24463,	-- Probing into Ashenvale
 					["qg"] = 34195,	-- Kulg Gorespatter
-					["coord"] = { 94.4, 46.8, ASHENVALE },
+					["coord"] = { 94.4, 46.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3538,7 +3538,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13964, {	-- To the Spire
 					["sourceQuest"] = 26478,	-- Playing Possum
 					["qg"] = 4079,	-- Sentinel Thenysil
-					["coord"] = { 34.9, 49.8, ASHENVALE },
+					["coord"] = { 34.9, 49.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3546,7 +3546,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13876, {	-- Too Far Gone
 					["sourceQuest"] = 13868,	-- Corrupting Influence?
 					["qg"] = 34251,	-- Vear Darksnout
-					["coord"] = { 38.0, 30.1, ASHENVALE },
+					["coord"] = { 38.0, 30.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3566,9 +3566,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12858,	-- Torek
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.4, 75.2, ASHENVALE },
+						{ 68.4, 75.2, MAP.ASHENVALE },
 						-- #else
-						{ 68.2, 75.2, ASHENVALE },
+						{ 68.2, 75.2, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3585,9 +3585,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12721,	-- Mitsuwa
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 38.8, 42.3, ASHENVALE },
+						{ 38.8, 42.3, MAP.ASHENVALE },
 						-- #else
-						{ 11.6, 34.8, ASHENVALE },
+						{ 11.6, 34.8, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3598,14 +3598,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  16602 },	-- Troll Charm
 								{ "o", 178144 },	-- Troll Chest
 							},
-							["coord"] = { 40.8, 32.9, ASHENVALE },
+							["coord"] = { 40.8, 32.9, MAP.ASHENVALE },
 						}),
 					},
 				}),
 				q(26482, {	-- True Power of the Rod
 					["sourceQuest"] = 26481,	-- A New Adornment
 					["qg"] = 3897,	-- Krolg
-					["coord"] = { 50.8, 75.1, ASHENVALE },
+					["coord"] = { 50.8, 75.1, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3626,14 +3626,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13936, {	-- Tweedle's Dumb
 					["sourceQuest"] = 13923,	-- To Hellscream's Watch
 					["qg"] = 34359,	-- Captain Goggath
-					["coord"] = { 38.1, 43.8, ASHENVALE },
+					["coord"] = { 38.1, 43.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13974, {	-- Tweedle's Tiny Package
 					["sourceQuest"] = 13947,	-- Blastranaar!
 					["qg"] = 34395,	-- Tweedle
-					["coord"] = { 37.9, 43.8, ASHENVALE },
+					["coord"] = { 37.9, 43.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3644,9 +3644,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 16303 },	-- Ursangous's Paw
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 40.4, 66.4, ASHENVALE },
+						{ 40.4, 66.4, MAP.ASHENVALE },
 						-- #else
-						{ 41.6, 66.6, ASHENVALE },
+						{ 41.6, 66.6, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3656,27 +3656,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1037, {	-- Velinde Starsong
 					["sourceQuest"] = 1022,	-- The Howling Vale
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
-					["coord"] = { 22.2, 53.0, ASHENVALE },
+					["coord"] = { 22.2, 53.0, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(26467, {	-- Vile Satyr! Dryads in Danger!
 					["qg"] = 3901,	-- Illiyana
-					["coord"] = { 87.1, 43.5, ASHENVALE },
+					["coord"] = { 87.1, 43.5, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1021, {	-- Vile Satyr! Dryads in Danger!
 					["qg"] = 3901,	-- Illiyana
-					["coord"] = { 21.7, 53.4, ASHENVALE },
+					["coord"] = { 21.7, 53.4, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				}),
 				q(6641, {	-- Vorsha the Lasher
 					["qg"] = 12717,	-- Muglash
-					["coord"] = { 12.0, 34.6, ASHENVALE },
+					["coord"] = { 12.0, 34.6, MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 7),
 					["groups"] = {
@@ -3685,7 +3685,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n",  12940 },	-- Vorsha the Lasher
 								{ "o", 178247 },	-- Naga Brazier
 							},
-							["coord"] = { 9.6, 27.6, ASHENVALE },
+							["coord"] = { 9.6, 27.6, MAP.ASHENVALE },
 						}),
 						i(17692),	-- Horn Ring
 					},
@@ -3696,7 +3696,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13884,	-- Put Out The Fire
 					},
 					["qg"] = 34289,	-- The Vortex
-					["coord"] = { 52.3, 56.8, ASHENVALE },
+					["coord"] = { 52.3, 56.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3720,7 +3720,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13884,	-- Put Out The Fire
 					},
 					["qg"] = 34289,	-- The Vortex
-					["coord"] = { 52.3, 56.8, ASHENVALE },
+					["coord"] = { 52.3, 56.8, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3740,7 +3740,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				warchiefscommand(q(28532, {	-- Warchief's Command: Stonetalon Mountains!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
@@ -3750,15 +3750,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(6571, {	-- Warsong Supplies
 					["qg"] = 11820,	-- Locke Okarr
-					["coord"] = { 71.40, 67.64, ASHENVALE },
+					["coord"] = { 71.40, 67.64, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STRANGLETHORN_VALE },
+					["maps"] = { MAP.STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
 						q(6581, {	-- Warsong Saw Blades
 							["qg"] = 12724,	-- Pixel
-							["coord"] = { 73.0, 61.4, ASHENVALE },
+							["coord"] = { 73.0, 61.4, MAP.ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = { { "i", 4369, 1 } },	-- Deadly Blunderbuss
 							["races"] = HORDE_ONLY,
@@ -3776,7 +3776,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  16745 },	-- Warsong Axe Shipment
 								{ "o", 178204 },	-- Warsong Axe Shipment
 							},
-							["coord"] = { 25.6, 73.4, STRANGLETHORN_VALE },
+							["coord"] = { 25.6, 73.4, MAP.STRANGLETHORN_VALE },
 						}),
 						objective(3, {	-- 0/1 Warsong Oil
 							["providers"] = {
@@ -3784,9 +3784,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 178195 },	-- Warsong Oil
 							},
 							["coords"] = {
-								{ 66.5, 56.9, ASHENVALE },
-								{ 79.1, 45.5, ASHENVALE },
-								{ 80.7, 49.7, ASHENVALE },
+								{ 66.5, 56.9, MAP.ASHENVALE },
+								{ 79.1, 45.5, MAP.ASHENVALE },
+								{ 80.7, 49.7, MAP.ASHENVALE },
 							},
 						}),
 						objective(4, {	-- 0/1 Logging Rope
@@ -3820,14 +3820,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25945, {	-- We're Here to Do One Thing, Maybe Two...
 					["sourceQuest"] = 28532,	-- Warchief's Command: Stonetalon Mountains!
 					["qg"] = 41678,	-- Blood Guard Aldo Rockrain
-					["coord"] = { 49.8, 65.7, ASHENVALE },
+					["coord"] = { 49.8, 65.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13617, {	-- West to the Strand
 					["sourceQuest"] = 13594,	-- Don't Forget the Horde
 					["qg"] = 33187,	-- Sentinel Shyela
-					["coord"] = { 26.9, 22.0, ASHENVALE },
+					["coord"] = { 26.9, 22.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3835,7 +3835,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13865, {	-- Wet Work
 					["sourceQuest"] = 13808,	-- Mission Improbable
 					["qg"] = 33889,	-- Krokk
-					["coord"] = { 82.5, 53.7, ASHENVALE },
+					["coord"] = { 82.5, 53.7, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3868,7 +3868,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13872, {	-- Worgen Wisdom
 					["sourceQuest"] = 13868,	-- Corrupting Influence?
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["coord"] = { 36.6, 49.6, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3877,22 +3877,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3773, {	-- Akkrilus
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 25.2, 60.4, ASHENVALE },
+						{ 25.2, 60.4, MAP.ASHENVALE },
 						-- #else
-						{ 25.4, 60.8, ASHENVALE },
-						{ 28.6, 61.4, ASHENVALE },
-						{ 27.6, 64.0, ASHENVALE },
+						{ 25.4, 60.8, MAP.ASHENVALE },
+						{ 28.6, 61.4, MAP.ASHENVALE },
+						{ 27.6, 64.0, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				n(3735, {	-- Apothecary Falthis
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 31.4, 22.4, ASHENVALE },
-						{ 32.0, 23.4, ASHENVALE },
+						{ 31.4, 22.4, MAP.ASHENVALE },
+						{ 32.0, 23.4, MAP.ASHENVALE },
 						-- #else
-						{ 33.2, 21.0, ASHENVALE },
-						{ 33.2, 21.8, ASHENVALE },
+						{ 33.2, 21.0, MAP.ASHENVALE },
+						{ 33.2, 21.8, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3900,28 +3900,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(10641, {	-- Branch Snapper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 42.2, 45.0, ASHENVALE },
-						{ 43.2, 48.0, ASHENVALE },
-						{ 43.8, 51.2, ASHENVALE },
-						{ 44.0, 54.0, ASHENVALE },
-						{ 46.0, 51.4, ASHENVALE },
-						{ 46.0, 47.2, ASHENVALE },
-						{ 45.0, 45.4, ASHENVALE },
+						{ 42.2, 45.0, MAP.ASHENVALE },
+						{ 43.2, 48.0, MAP.ASHENVALE },
+						{ 43.8, 51.2, MAP.ASHENVALE },
+						{ 44.0, 54.0, MAP.ASHENVALE },
+						{ 46.0, 51.4, MAP.ASHENVALE },
+						{ 46.0, 47.2, MAP.ASHENVALE },
+						{ 45.0, 45.4, MAP.ASHENVALE },
 						-- #else
-						{ 47.6, 46.6, ASHENVALE },
+						{ 47.6, 46.6, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				n(3736, {	-- Darkslayer Mordenthal
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 72.4, 71.0, ASHENVALE },
-						{ 75.2, 71.0, ASHENVALE },
-						{ 73.6, 73.6, ASHENVALE },
+						{ 72.4, 71.0, MAP.ASHENVALE },
+						{ 75.2, 71.0, MAP.ASHENVALE },
+						{ 73.6, 73.6, MAP.ASHENVALE },
 						-- #else
-						{ 75.0, 69.8, ASHENVALE },
-						{ 74.4, 73.4, ASHENVALE },
-						{ 78.0, 73.8, ASHENVALE },
+						{ 75.0, 69.8, MAP.ASHENVALE },
+						{ 74.4, 73.4, MAP.ASHENVALE },
+						{ 78.0, 73.8, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3929,35 +3929,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(10642, {	-- Eck'alom
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.6, 69.2, ASHENVALE },
-						{ 47.8, 68.6, ASHENVALE },
-						{ 49.8, 69.0, ASHENVALE },
-						{ 51.0, 70.8, ASHENVALE },
-						{ 49.4, 71.4, ASHENVALE },
-						{ 48.0, 72.4, ASHENVALE },
+						{ 46.6, 69.2, MAP.ASHENVALE },
+						{ 47.8, 68.6, MAP.ASHENVALE },
+						{ 49.8, 69.0, MAP.ASHENVALE },
+						{ 51.0, 70.8, MAP.ASHENVALE },
+						{ 49.4, 71.4, MAP.ASHENVALE },
+						{ 48.0, 72.4, MAP.ASHENVALE },
 						-- #else
-						{ 45.6, 71.2, ASHENVALE },
-						{ 48.6, 69.8, ASHENVALE },
-						{ 54.2, 69.4, ASHENVALE },
+						{ 45.6, 71.2, MAP.ASHENVALE },
+						{ 48.6, 69.8, MAP.ASHENVALE },
+						{ 54.2, 69.4, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				n(10559, {	-- Lady Vespia
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 12.0, 15.0, ASHENVALE },
-						{ 15.0, 24.2, ASHENVALE },
-						{ 12.6, 29.2, ASHENVALE },
+						{ 12.0, 15.0, MAP.ASHENVALE },
+						{ 15.0, 24.2, MAP.ASHENVALE },
+						{ 12.6, 29.2, MAP.ASHENVALE },
 						-- #else
-						{ 9.6, 15.6, ASHENVALE },
-						{ 13.6, 19.6, ASHENVALE },
-						{ 11.2, 29.4, ASHENVALE },
+						{ 9.6, 15.6, MAP.ASHENVALE },
+						{ 13.6, 19.6, MAP.ASHENVALE },
+						{ 11.2, 29.4, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				o(240617, {	-- Lost Sentinel's Pouch
 					["description"] = "Found inside a large hollow tree trunk.",
-					["coord"] = { 56.5, 49.3, ASHENVALE },
+					["coord"] = { 56.5, 49.3, MAP.ASHENVALE },
 					["timeline"] = { ADDED_6_1_0 },
 					["modelScale"] = 0.2,
 					["groups"] = {
@@ -3969,67 +3969,67 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(10644, {	-- Mist Howler
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 26.2, 15.4, ASHENVALE },
-						{ 25.2, 26.8, ASHENVALE },
+						{ 26.2, 15.4, MAP.ASHENVALE },
+						{ 25.2, 26.8, MAP.ASHENVALE },
 						-- #else
-						{ 18.2, 30.2, ASHENVALE },
-						{ 22.6, 29.6, ASHENVALE },
-						{ 23.0, 35.6, ASHENVALE },
-						{ 26.6, 18.6, ASHENVALE },
-						{ 29.2, 16.8, ASHENVALE },
-						{ 26.6, 15.0, ASHENVALE },
+						{ 18.2, 30.2, MAP.ASHENVALE },
+						{ 22.6, 29.6, MAP.ASHENVALE },
+						{ 23.0, 35.6, MAP.ASHENVALE },
+						{ 26.6, 18.6, MAP.ASHENVALE },
+						{ 29.2, 16.8, MAP.ASHENVALE },
+						{ 26.6, 15.0, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				n(10643, {	-- Mugglefin
 					["coords"] = {
-						{ 21.6, 41.8, ASHENVALE },
-						{ 20.6, 45.0, ASHENVALE },
-						{ 19.2, 44.2, ASHENVALE },
+						{ 21.6, 41.8, MAP.ASHENVALE },
+						{ 20.6, 45.0, MAP.ASHENVALE },
+						{ 19.2, 44.2, MAP.ASHENVALE },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(10640, {	-- Oakpaw
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.0, 64.6, ASHENVALE },
-						{ 55.8, 62.6, ASHENVALE },
-						{ 54.2, 62.4, ASHENVALE },
+						{ 57.0, 64.6, MAP.ASHENVALE },
+						{ 55.8, 62.6, MAP.ASHENVALE },
+						{ 54.2, 62.4, MAP.ASHENVALE },
 						-- #else
-						{ 50.0, 60.2, ASHENVALE },
-						{ 54.2, 62.4, ASHENVALE },
-						{ 56.6, 62.8, ASHENVALE },
+						{ 50.0, 60.2, MAP.ASHENVALE },
+						{ 54.2, 62.4, MAP.ASHENVALE },
+						{ 56.6, 62.8, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				n(10647, {	-- Prince Raze
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 78.6, 45.2, ASHENVALE },
-						{ 81.0, 49.2, ASHENVALE },
-						{ 66.6, 56.8, ASHENVALE },
+						{ 78.6, 45.2, MAP.ASHENVALE },
+						{ 81.0, 49.2, MAP.ASHENVALE },
+						{ 66.6, 56.8, MAP.ASHENVALE },
 						-- #else
-						{ 78.4, 42.6, ASHENVALE },
-						{ 79.0, 45.6, ASHENVALE },
-						{ 77.2, 46.2, ASHENVALE },
+						{ 78.4, 42.6, MAP.ASHENVALE },
+						{ 79.0, 45.6, MAP.ASHENVALE },
+						{ 77.2, 46.2, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				n(10639, {	-- Rorgish Jowl
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 37.0, 33.6, ASHENVALE },
+						{ 37.0, 33.6, MAP.ASHENVALE },
 						-- #else
-						{ 36.6, 35.4, ASHENVALE },
+						{ 36.6, 35.4, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
 				n(3792, {	-- Terrowulf Packlord
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.0, 37.6, ASHENVALE },
+						{ 53.0, 37.6, MAP.ASHENVALE },
 						-- #else
-						{ 50.6, 39.0, ASHENVALE },
+						{ 50.6, 39.0, MAP.ASHENVALE },
 						-- #endif
 					},
 					["groups"] = {
@@ -4044,12 +4044,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12037, {	-- Ursol'lok
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 89.6, 46.6, ASHENVALE },
-						{ 92.8, 45.6, ASHENVALE },
+						{ 89.6, 46.6, MAP.ASHENVALE },
+						{ 92.8, 45.6, MAP.ASHENVALE },
 						-- #else
-						{ 83.0, 49.0, ASHENVALE },
-						{ 83.4, 60.4, ASHENVALE },
-						{ 88.6, 68.4, ASHENVALE },
+						{ 83.0, 49.0, MAP.ASHENVALE },
+						{ 83.4, 60.4, MAP.ASHENVALE },
+						{ 88.6, 68.4, MAP.ASHENVALE },
 						-- #endif
 					},
 				}),
@@ -4058,9 +4058,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3951, {	-- Bhaldaran Ravenshade <Bowyer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 34.6, 71.2, ASHENVALE },
+						{ 34.6, 71.2, MAP.ASHENVALE },
 						-- #else
-						{ 50.3, 67.2, ASHENVALE },
+						{ 50.3, 67.2, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4071,7 +4071,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(34303, {	-- Dagrun Ragehammer
-					["coord"] = { 11.6, 35.2, ASHENVALE },
+					["coord"] = { 11.6, 35.2, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 7.3.5
@@ -4087,7 +4087,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				n(3954, {	-- Dalria <Trade Goods>
-					["coord"] = { 35.1, 52.1, ASHENVALE },
+					["coord"] = { 35.1, 52.1, MAP.ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, i(20855, {	-- Design: Wicked Moonstone Ring (RECIPE!)
@@ -4105,9 +4105,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3956, {	-- Harklan Moongrove <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.0, 65.6, ASHENVALE },
+						{ 50.0, 65.6, MAP.ASHENVALE },
 						-- #else
-						{ 50.8, 67.0, ASHENVALE },
+						{ 50.8, 67.0, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4121,7 +4121,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(34601, {	-- Harlown Darkweave <Leatherworking Supplies>
 					["sourceQuest"] = 13982,	-- in a Bind
-					["coord"] = { 18.2, 60.0, ASHENVALE },
+					["coord"] = { 18.2, 60.0, MAP.ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4134,7 +4134,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER CATA
 					["description"] = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest |cFFFFD700Three Friends of the Forest|r to start the quest chain.",
 					-- #endif
-					["coord"] = { 18.2, 60.0, ASHENVALE },
+					["coord"] = { 18.2, 60.0, MAP.ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE CATA
 					["groups"] = {
@@ -4145,7 +4145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				n(3958, {	-- Lardan <Leatherworking Supplies>
-					["coord"] = { 34.8, 49.8, ASHENVALE },
+					["coord"] = { 34.8, 49.8, MAP.ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
@@ -4156,9 +4156,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3955, {	-- Shandrina <Trade Goods>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.4, 65.6, ASHENVALE },
+						{ 50.4, 65.6, MAP.ASHENVALE },
 						-- #else
-						{ 49.5, 67.1, ASHENVALE },
+						{ 49.5, 67.1, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4180,9 +4180,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3960, {	-- Ulthaan <Butcher>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.6, 64.0, ASHENVALE },
+						{ 48.6, 64.0, MAP.ASHENVALE },
 						-- #else
-						{ 50.0, 66.6, ASHENVALE },
+						{ 50.0, 66.6, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4198,9 +4198,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12962, {	-- Wik'Tar <Fish Merchant & Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 10.8, 33.8, ASHENVALE },
+						{ 10.8, 33.8, MAP.ASHENVALE },
 						-- #else
-						{ 11.8, 34.0, ASHENVALE },
+						{ 11.8, 34.0, MAP.ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -4223,9 +4223,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					]]--
 					["coords"] = {
-						{ 13.0, 24.8, ASHENVALE },	-- Southern Crystal
-						{ 14.0, 19.8, ASHENVALE },	-- Middle Crystal
-						{ 13.5, 15.8, ASHENVALE },	-- Northern Crystal
+						{ 13.0, 24.8, MAP.ASHENVALE },	-- Southern Crystal
+						{ 14.0, 19.8, MAP.ASHENVALE },	-- Middle Crystal
+						{ 13.5, 15.8, MAP.ASHENVALE },	-- Northern Crystal
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
@@ -4239,7 +4239,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 410020 },	-- Owl Statue
 						{ "n", 211269 },	-- Summoned Wisp
 					},
-					["coord"] = { 87.0, 43.2, ASHENVALE },
+					["coord"] = { 87.0, 43.2, MAP.ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 				})),
@@ -4270,15 +4270,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 75.6, 69.2, ASHENVALE },
-						{ 77.2, 73.8, ASHENVALE },
-						{ 71.8, 70.8, ASHENVALE },
-						{ 69.8, 74.8, ASHENVALE },
-						{ 73.6, 79.6, ASHENVALE },
-						{ 72.8, 74.4, ASHENVALE },
+						{ 75.6, 69.2, MAP.ASHENVALE },
+						{ 77.2, 73.8, MAP.ASHENVALE },
+						{ 71.8, 70.8, MAP.ASHENVALE },
+						{ 69.8, 74.8, MAP.ASHENVALE },
+						{ 73.6, 79.6, MAP.ASHENVALE },
+						{ 72.8, 74.4, MAP.ASHENVALE },
 						-- #else
-						{ 75.8, 73.6, ASHENVALE },
-						{ 77.4, 75.4, ASHENVALE },
+						{ 75.8, 73.6, MAP.ASHENVALE },
+						{ 77.4, 75.4, MAP.ASHENVALE },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -4311,9 +4311,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(211534, {	-- Primal Insight
 					["coords"] = {
-						{ 37.6, 35.4, ASHENVALE },
-						{ 32.4, 42.2, ASHENVALE },
-						{ 54.6, 63.0, ASHENVALE },
+						{ 37.6, 35.4, MAP.ASHENVALE },
+						{ 32.4, 42.2, MAP.ASHENVALE },
+						{ 54.6, 63.0, MAP.ASHENVALE },
 					},
 					["classes"] = { PRIEST },
 					["crs"] = {
@@ -4325,8 +4325,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(211531, {	-- Prophecy of Seven Visitors
 							["description"] = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
 							["coords"] = {
-								{ 38.0, 29.0, ASHENVALE },
-								{ 38.0, 26.0, ASHENVALE },
+								{ 38.0, 29.0, MAP.ASHENVALE },
+								{ 38.0, 26.0, MAP.ASHENVALE },
 							},
 							["classes"] = { PRIEST },
 							["groups"] = {
@@ -4337,8 +4337,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(211777, {	-- Naga Manuscript
 					["coords"] = {
-						{ 7.2, 13.2, DARKSHORE },
-						{ 14.0, 26.6, DARKSHORE },
+						{ 7.2, 13.2, MAP.DARKSHORE },
+						{ 14.0, 26.6, MAP.DARKSHORE },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
@@ -4349,8 +4349,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209841, {	-- Wild Magic Essence
 					["coords"] = {
-						{ 33.6, 38.8, ASHENVALE },
-						{ 54.6, 63.0, ASHENVALE },
+						{ 33.6, 38.8, MAP.ASHENVALE },
+						{ 54.6, 63.0, MAP.ASHENVALE },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },

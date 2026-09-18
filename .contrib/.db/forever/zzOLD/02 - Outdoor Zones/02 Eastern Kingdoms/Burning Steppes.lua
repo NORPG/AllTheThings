@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(BURNING_STEPPES, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.BURNING_STEPPES, {
 		["lore"] = "The Burning Steppes hold the only accessible land passage from the Kingdom of Stormwind to Khaz Modan and Lordaeron. The highway is thus well traveled, but still very dangerous. Now virtually abandoned by the Kingdom of Stormwind, the Burning Steppes is controlled by minions of the black dragonflight and agents of the firelord Ragnaros.\n\nThis rugged region is full of craggy foothills, scattered boulders and warring factions. Rivers of lava dot the landscape, as well as charred earth and burning ruins. The sky is a red hue here, due to sporadic eruptions from Blackrock Mountain. Blackrock Spire, an orc stronghold in the Second War, stands proud and defiant among the mountains. Dark Iron dwarves control the fortress's deeps, though rumor has it that Ragnaros the Fire Lord still broods in the shadows. Black dragons under Nefarion hold the spire's upper levels, and the two groups battle constantly for supremacy. The surrounding countryside is home to Blackrock orcs and Fire-Gut ogres, all brutal castoffs from the Second War. The Molten Span, a massive stone edifice in the north, bridges a river of fire and leads to Khaz Modan.",
 		["icon"] = 236734,
 		["groups"] = {
@@ -71,32 +71,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(676, {	-- Chiselgrip, Burning Steppes
 					["cr"] = 48321,	-- Grimly Singefeather <Flight Master>
-					["coord"] = { 46.0, 41.8, BURNING_STEPPES },
+					["coord"] = { 46.0, 41.8, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				fp(70, {	-- Flame Crest, Burning Steppes
 					["cr"] = 13177,	-- Vahgruk <Wind Rider Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.2, 24.2, BURNING_STEPPES },
+						{ 54.2, 24.2, MAP.BURNING_STEPPES },
 						-- #else
-						{ 65.6, 24.2, BURNING_STEPPES },
+						{ 65.6, 24.2, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(675, {	-- Flamestar Post, Burning Steppes
 					["cr"] = 48318,	-- Hans Oreflight <Flight Master>
-					["coord"] = { 17.6, 52.6, BURNING_STEPPES },
+					["coord"] = { 17.6, 52.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				fp(71, {	-- Morgan's Vigil, Burning Steppes
 					["cr"] = 2299,	-- Borgus Stoutarm <Gryphon Master>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 72.2, 65.6, BURNING_STEPPES },
+						{ 72.2, 65.6, MAP.BURNING_STEPPES },
 						-- #else
-						{ 84.4, 68.2, BURNING_STEPPES },
+						{ 84.4, 68.2, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			petbattles({
 				n(66520, {	-- Durin Darkhammer <Master Pet Tamer>
-					["coord"] = { 25.6, 47.6, BURNING_STEPPES },
+					["coord"] = { 25.6, 47.6, MAP.BURNING_STEPPES },
 					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 17,
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48346 },	-- John J. Keeshan (mobileNPC)
 						{ "i", 63431 },	-- Rescued Whelplings
 					},
-					["coord"] = { 73.5, 67.2, BURNING_STEPPES },
+					["coord"] = { 73.5, 67.2, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48565 },	-- Ariok
 						{ "i", 63431 },	-- Rescued Whelplings
 					},
-					["coord"] = { 54.7, 24.5, BURNING_STEPPES },
+					["coord"] = { 54.7, 24.5, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48307 },	-- Colonel Troteman
 						{ "i", 63430 },	-- Crate of Sleeping Flamekin
 					},
-					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+					["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48569 },	-- Eitrigg
 						{ "i", 63430 },	-- Crate of Sleeping Flamekin
 					},
-					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+					["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48307 },	-- Colonel Troteman
 						{ "i", 63429 },	-- Slider Cider-Marinated Cutlets
 					},
-					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+					["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48569 },	-- Eitrigg
 						{ "i", 63429 },	-- Slider Cider-Marinated Cutlets
 					},
-					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+					["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48307 },	-- Colonel Troteman
 						{ "i", 63134 },	-- Clear Glass Orb
 					},
-					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+					["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48569 },	-- Eitrigg
 						{ "i", 63134 },	-- Clear Glass Orb
 					},
-					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+					["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 142344 },	-- Broken Axe Blade
 						{ "n", 115805 },	-- Hoddruc Bladebender
 					},
-					["coord"] = { 46.8, 44.6, BURNING_STEPPES },
+					["coord"] = { 46.8, 44.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = BLACKSMITHING,
 					["crs"] = {
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28178, {	-- A Future Project (A)
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
 					["qg"] = 47811,	-- John J. Keeshan
-					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["coord"] = { 17.2, 52.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28420, {	-- A Future Project (H)
 					["sourceQuest"] = 28418,	-- Burning Vengeance (H)
 					["qg"] = 48559,	-- Ariok
-					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
+					["coord"] = { 17.4, 51.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -266,12 +266,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(28313, {	-- A Heap of Delicious Worg (A)
 						["sourceQuest"] = 28310,	-- Morgan's Vigil
 						["qg"] = 48307,	-- Colonel Troteman
-						["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+						["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28445, {	-- A Heap of Delicious Worg (H)
 						["sourceQuest"] = 28442,	-- Flame Crest
 						["qg"] = 48569,	-- Eitrigg
-						["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+						["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -287,14 +287,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28254, {	-- A Needle in a Hellhole (A)
 					["sourceQuest"] = 28184,	-- Chiselgrip, the Heart of the Steppes (A)
 					["qg"] = 48109,	-- John J. Keeshan
-					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
+					["coord"] = { 46.3, 46.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28427, {	-- A Needle in a Hellhole (H)
 					["sourceQuest"] = 28426,	-- Chiselgrip, the Heart of the Steppes (H)
 					["qg"] = 48568,	-- Eitrigg
-					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
+					["coord"] = { 44.5, 44.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -306,7 +306,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["coord"] = { 45.4, 46.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { HUMAN, DWARF, VOIDELF, KULTIRAN, DARKIRON },
 					["groups"] = {
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63357 },	-- Blackrock Disguise
 								{ "o", 206947 },	-- Tailor's Table
 							},
-							["coord"] = { 45.4, 46.2, BURNING_STEPPES },
+							["coord"] = { 45.4, 46.2, MAP.BURNING_STEPPES },
 							["OnTooltip"] = [[function(t, tooltipInfo)
 								local raceID = _.RaceID;
 								if raceID == ]] .. HUMAN .. [[ or raceID == ]] .. DWARF .. [[ or raceID == ]] .. DARKIRON .. [[ then
@@ -337,7 +337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["coord"] = { 45.4, 46.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = { DRAENEI, WORGEN, PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
 					["groups"] = {
@@ -346,7 +346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63357 },	-- Blackrock Disguise
 								{ "o", 206947 },	-- Tailor's Table
 							},
-							["coord"] = { 45.4, 46.2, BURNING_STEPPES },
+							["coord"] = { 45.4, 46.2, MAP.BURNING_STEPPES },
 							["OnTooltip"] = [[function(t, tooltipInfo)
 								tinsert(tooltipInfo, { left = "Solution:", right = "4 Hides, 1 Mud, 3 Threads" });
 							end]],
@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["coord"] = { 45.4, 46.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GNOME, MECHAGNOME },
 					["groups"] = {
@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63357 },	-- Blackrock Disguise
 								{ "o", 206947 },	-- Tailor's Table
 							},
-							["coord"] = { 45.4, 46.2, BURNING_STEPPES },
+							["coord"] = { 45.4, 46.2, MAP.BURNING_STEPPES },
 							["OnTooltip"] = [[function(t, tooltipInfo)
 								tinsert(tooltipInfo, { left = "Solution:", right = "1 Hide, 3 Muds, 4 Threads" });
 							end]],
@@ -385,7 +385,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["coord"] = { 45.4, 46.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["groups"] = {
@@ -394,7 +394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63357 },	-- Blackrock Disguise
 								{ "o", 206947 },	-- Tailor's Table
 							},
-							["coord"] = { 45.4, 46.2, BURNING_STEPPES },
+							["coord"] = { 45.4, 46.2, MAP.BURNING_STEPPES },
 							["OnTooltip"] = [[function(t, tooltipInfo)
 								tinsert(tooltipInfo, { left = "Solution:", right = "3 Hides, 2 Muds, 1 Thread" });
 							end]],
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["coord"] = { 45.4, 46.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3_LAUNCH },
 					["races"] = { ORC, UNDEAD, MAGHAR },
 					["groups"] = {
@@ -418,7 +418,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63357 },	-- Blackrock Disguise
 								{ "o", 206947 },	-- Tailor's Table
 							},
-							["coord"] = { 45.4, 46.2, BURNING_STEPPES },
+							["coord"] = { 45.4, 46.2, MAP.BURNING_STEPPES },
 							["OnTooltip"] = [[function(t, tooltipInfo)
 								tinsert(tooltipInfo, { left = "Solution:", right = "2 Hides, 4 Muds, 2 Threads" });
 							end]],
@@ -433,7 +433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["coord"] = { 45.4, 46.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3_LAUNCH },
 					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN, DRACTHYR_HORDE },
 					["groups"] = {
@@ -442,7 +442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63357 },	-- Blackrock Disguise
 								{ "o", 206947 },	-- Tailor's Table
 							},
-							["coord"] = { 45.4, 46.2, BURNING_STEPPES },
+							["coord"] = { 45.4, 46.2, MAP.BURNING_STEPPES },
 							["OnTooltip"] = [[function(t, tooltipInfo)
 								tinsert(tooltipInfo, { left = "Solution:", right = "4 Hides, 1 Mud, 3 Threads" });
 							end]],
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["coord"] = { 45.4, 46.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3_LAUNCH },
 					["races"] = { GOBLIN, VULPERA },
 					["groups"] = {
@@ -466,7 +466,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63357 },	-- Blackrock Disguise
 								{ "o", 206947 },	-- Tailor's Table
 							},
-							["coord"] = { 45.4, 46.2, BURNING_STEPPES },
+							["coord"] = { 45.4, 46.2, MAP.BURNING_STEPPES },
 							["OnTooltip"] = [[function(t, tooltipInfo)
 								tinsert(tooltipInfo, { left = "Solution:", right = "1 Hide, 3 Muds, 4 Threads" });
 							end]],
@@ -481,7 +481,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["coord"] = { 45.4, 46.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TROLL, BLOODELF, NIGHTBORNE, ZANDALARI },
 					["groups"] = {
@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63357 },	-- Blackrock Disguise
 								{ "o", 206947 },	-- Tailor's Table
 							},
-							["coord"] = { 45.4, 46.2, BURNING_STEPPES },
+							["coord"] = { 45.4, 46.2, MAP.BURNING_STEPPES },
 							["OnTooltip"] = [[function(t, tooltipInfo)
 								tinsert(tooltipInfo, { left = "Solution:", right = "3 Hides, 2 Muds, 1 Thread" });
 							end]],
@@ -501,12 +501,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(28279, {	-- Abuse of Power (A)
 						["sourceQuest"] = 28266,	-- Trial by Magma (A)
 						["qg"] = 48110,	-- Colonel Troteman
-						["coord"] = { 46.3, 45.9, BURNING_STEPPES },
+						["coord"] = { 46.3, 45.9, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28440, {	-- Abuse of Power (H)
 						["sourceQuest"] = 28438,	-- Trial by Magma (H)
 						["qg"] = 48568,	-- Eitrigg
-						["coord"] = { 44.5, 44.4, BURNING_STEPPES },
+						["coord"] = { 44.5, 44.4, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -520,7 +520,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				q(28068, {	-- Adventurers Wanted: Blackrock Depths (A)
 					["provider"] = { "o", 207304 },	-- Adventure Board
-					["coord"] = { 72.9, 65.2, BURNING_STEPPES },
+					["coord"] = { 72.9, 65.2, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
@@ -535,7 +535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28069, {	-- Adventurers Wanted: Blackrock Depths (H)
 					["provider"] = { "o", 207303 },	-- Adventure Board
-					["coord"] = { 17.0, 51.7, BURNING_STEPPES },
+					["coord"] = { 17.0, 51.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
@@ -555,7 +555,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7628,	-- Doomsday Candle
 					},
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
-					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.4, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						-- #if AFTER TBC
@@ -571,12 +571,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(28320, {	-- Assault on Dreadmaul Rock (A)
 						["sourceQuest"] = 28327,	-- Locked and Loaded (A)
 						["qg"] = 48306,	-- John J. Keeshan
-						["coord"] = { 73.5, 67.2, BURNING_STEPPES },
+						["coord"] = { 73.5, 67.2, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28454, {	-- Assault on Dreadmaul Rock (H)
 						["sourceQuest"] = 28453,	-- Locked and Loaded (H)
 						["qg"] = 48565,	-- Ariok
-						["coord"] = { 54.7, 24.5, BURNING_STEPPES },
+						["coord"] = { 54.7, 24.5, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7626, {	-- Bell of Dethmoora
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
-					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.6, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						-- #if AFTER TBC
@@ -607,12 +607,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(28311, {	-- Blackened Ashes (A)
 						["sourceQuest"] = 28310,	-- Morgan's Vigil
 						["qg"] = 48307,	-- Colonel Troteman
-						["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+						["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28443, {	-- Blackened Ashes (H)
 						["sourceQuest"] = 28442,	-- Flame Crest
 						["qg"] = 48569,	-- Eitrigg
-						["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+						["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -633,7 +633,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							48306,	-- John J. Keeshan
 							48346,	-- John J. Keeshan (mobileNPC)
 						},
-						["coord"] = { 73.5, 67.2, BURNING_STEPPES },
+						["coord"] = { 73.5, 67.2, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28446, {	-- Blood Tour (H)
 						["sourceQuests"] = {
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							28444,	-- Latent Demons of the Land (H)
 						},
 						["qg"] = 48565,	-- Ariok
-						["coord"] = { 54.7, 24.5, BURNING_STEPPES },
+						["coord"] = { 54.7, 24.5, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -656,7 +656,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				q(4726, {	-- Broodling Essence
 					["qg"] = 10267,	-- Tinkee Steamboil
-					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
+					["coord"] = { 65.2, 23.8, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -678,7 +678,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
 					["qg"] = 47811,	-- John J. Keeshan
-					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["coord"] = { 17.2, 52.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -694,7 +694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.",
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
 					["qg"] = 47811,	-- John J. Keeshan
-					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["coord"] = { 17.2, 52.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -709,7 +709,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28418, {	-- Burning Vengeance (H)
 					["sourceQuest"] = 28667,	-- Warchief's Command: Burning Steppes!
 					["qg"] = 48559,	-- Ariok
-					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
+					["coord"] = { 17.4, 51.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -727,7 +727,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28183,	-- Return to Keeshan (A)
 					},
 					["qg"] = 47811,	-- John J. Keeshan
-					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["coord"] = { 17.2, 52.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -763,7 +763,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28425,	-- Return to Ariok (H)
 					},
 					["qg"] = 48559,	-- Ariok
-					["coord"] = { 17.4, 51.5, BURNING_STEPPES },
+					["coord"] = { 17.4, 51.5, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7628, {	-- Doomsday Candle
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
-					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.6, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						-- #if AFTER TBC
@@ -811,7 +811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28172, {	-- Done Nothing Wrong (A)
 					["sourceQuest"] = 28514,	-- Mouton Flamestar (A)
 					["qg"] = 47779,	-- Mouton Flamestar
-					["coord"] = { 16.9, 51.3, BURNING_STEPPES },
+					["coord"] = { 16.9, 51.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -853,7 +853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28417, {	-- Done Nothing Wrong (H)
 					["sourceQuest"] = 28515,	-- Mouton Flamestar (H)
 					["qg"] = 47779,	-- Mouton Flamestar
-					["coord"] = { 16.9, 51.3, BURNING_STEPPES },
+					["coord"] = { 16.9, 51.3, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -906,7 +906,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							48306,	-- John J. Keeshan
 							48346,	-- John J. Keeshan (mobileNPC)
 						},
-						["coord"] = { 73.5, 67.2, BURNING_STEPPES },
+						["coord"] = { 73.5, 67.2, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28447, {	-- Draconic Vanguard (H)
 						["sourceQuests"] = {
@@ -915,32 +915,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							28444,	-- Latent Demons of the Land (H)
 						},
 						["qg"] = 48565,	-- Ariok
-						["coord"] = { 54.7, 24.5, BURNING_STEPPES },
+						["coord"] = { 54.7, 24.5, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Whelptamer Akumi slain
 							["provider"] = { "n", 48287 },	-- Whelptamer Akumi
-							["coord"] = { 65.0, 60.0, BURNING_STEPPES },
+							["coord"] = { 65.0, 60.0, MAP.BURNING_STEPPES },
 						}),
 						objective(2, {	-- 0/1 Terromath the Seared slain
 							["provider"] = { "n", 48288 },	-- Terromath the Seared
-							["coord"] = { 72.6, 27.6, BURNING_STEPPES },
+							["coord"] = { 72.6, 27.6, MAP.BURNING_STEPPES },
 						}),
 						objective(3, {	-- 0/1 Minyoth slain
 							["provider"] = { "n", 48289 },	-- Minyoth
-							["coord"] = { 79.6, 51.2, BURNING_STEPPES },
+							["coord"] = { 79.6, 51.2, MAP.BURNING_STEPPES },
 						}),
 						objective(4, {	-- 0/1 Tugnar Goremaw slain
 							["provider"] = { "n", 48291 },	-- Tugnar Goremaw
-							["coord"] = { 75.8, 37.6, BURNING_STEPPES },
+							["coord"] = { 75.8, 37.6, MAP.BURNING_STEPPES },
 						}),
 					},
 				},
 				q(28286, {	-- Enough Damage For One Day (A)
 					["sourceQuest"] = 28279,	-- Abuse of Power (A)
 					["qg"] = 48110,	-- Colonel Troteman
-					["coord"] = { 46.3, 45.9, BURNING_STEPPES },
+					["coord"] = { 46.3, 45.9, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -964,7 +964,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28441, {	-- Enough Damage For One Day (H)
 					["sourceQuest"] = 28440,	-- Abuse of Power (H)
 					["qg"] = 48568,	-- Eitrigg
-					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
+					["coord"] = { 44.5, 44.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -987,7 +987,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3823, {	-- Extinguish the Firegut
 					["qg"] = 9177,	-- Oralius
-					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
+					["coord"] = { 84.6, 68.8, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -1009,13 +1009,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 10267 },	-- Tinkee Steamboil
 						{ "i", 12438 },	-- Tinkee's Letter
 					},
-					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
+					["coord"] = { 65.2, 23.8, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(4283, {	-- FIFTY! YEP!
 					["qg"] = 9177,	-- Oralius
-					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
+					["coord"] = { 84.6, 68.8, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1040,7 +1040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28442, {	-- Flame Crest
 					["sourceQuest"] = 28441,	-- Enough Damage for One Day (H)
 					["qg"] = 48568,	-- Eitrigg
-					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
+					["coord"] = { 44.5, 44.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1050,7 +1050,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28253,	-- Taking the Horn For Ourselves (A)
 					},
 					["qg"] = 48109,	-- John J. Keeshan
-					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
+					["coord"] = { 46.3, 46.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1060,7 +1060,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28436,	-- Taking the Horn For Ourselves (H)
 					},
 					["qg"] = 48568,	-- Eitrigg
-					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
+					["coord"] = { 44.5, 44.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1068,26 +1068,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(28321, {	-- Glory Amidst Chaos (A)
 						["sourceQuest"] = 28320,	-- Assault on Dreadmaul Rock (A)
 						["qg"] = 48307,	-- Colonel Troteman
-						["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+						["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28455, {	-- Glory Amidst Chaos (H)
 						["sourceQuest"] = 28454,	-- Assault on Dreadmaul Rock (H)
 						["qg"] = 48569,	-- Eitrigg
-						["coord"] = { 54.6, 24.5, BURNING_STEPPES },
+						["coord"] = { 54.6, 24.5, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/1 General Thorg'izog slain
 							["provider"] = { "n", 48316 },	-- General Thorg'izog
-							["coord"] = { 66.48, 40.58, BURNING_STEPPES },
+							["coord"] = { 66.48, 40.58, MAP.BURNING_STEPPES },
 						}),
 						objective(2, {	-- 0/1 Dragon-Lord Neeralak slain
 							["provider"] = { "n", 48314 },	-- Dragon-Lord Neeralak
-							["coord"] = { 64.33, 37.55, BURNING_STEPPES },
+							["coord"] = { 64.33, 37.55, MAP.BURNING_STEPPES },
 						}),
 						objective(3, {	-- 0/1 High Warlock Xi'lun slain
 							["provider"] = { "n", 48312 },	-- High Warlock Xi'lun
-							["coord"] = { 69.62, 42.91, BURNING_STEPPES },
+							["coord"] = { 69.62, 42.91, MAP.BURNING_STEPPES },
 						}),
 					},
 				},
@@ -1097,7 +1097,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28226,	-- Scrapped Golems
 					},
 					["qg"] = 48033,	-- Stebben Oreknuckle
-					["coord"] = { 46.8, 44.0, BURNING_STEPPES },
+					["coord"] = { 46.8, 44.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/4 Chiseled Golems trained
@@ -1120,14 +1120,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3824, {	-- Gor'tesh the Brute Lord
 					["sourceQuest"] = 3823,	-- Extinguish the Firegut
 					["qg"] = 9177,	-- Oralius
-					["coord"] = { 84.6, 68.6, BURNING_STEPPES },
+					["coord"] = { 84.6, 68.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gor'tesh's Lopped Off Head
 							["provider"] = { "i", 11080 },	-- Gor'tesh's Lopped Off Head
-							["coord"] = { 39.6, 55.6, BURNING_STEPPES },
+							["coord"] = { 39.6, 55.6, MAP.BURNING_STEPPES },
 							["cr"] = 9176,	-- Gor'tesh
 						}),
 					},
@@ -1143,18 +1143,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48085 },	-- Quartermaster Kaoshin
 						{ "i", 63357 },	-- Blackrock Disguise
 					},
-					["coord"] = { 45.3, 51.7, BURNING_STEPPES },
+					["coord"] = { 45.3, 51.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Pairs of Blackrock Boots Polished
 							["provider"] = { "o", 206977 },	-- Blackrock Boots
-							["coord"] = { 39.1, 55.5, BURNING_STEPPES },
+							["coord"] = { 39.1, 55.5, MAP.BURNING_STEPPES },
 						}),
 					},
 				},
 				heroscall(q(28666, {	-- Hero's Call: Burning Steppes!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["maps"] = { MAP.IRONFORGE, MAP.STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
@@ -1173,7 +1173,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48133 },	-- General Thorg'izog
 						{ "i", 63357 },	-- Blackrock Disguise
 					},
-					["coord"] = { 30.6, 33.7, BURNING_STEPPES },
+					["coord"] = { 30.6, 33.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/20 Blackrock minions cudgeled
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 14437 },	-- Gorzeeki Wildeyes
 						{ "i", 18688 },	-- Imp in a Jar
 					},
-					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.4, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SCHOLOMANCE },
 					["classes"] = { WARLOCK },
@@ -1208,7 +1208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48109 },	-- John J. Keeshan
 						{ "i", 63357 },	-- Blackrock Disguise
 					},
-					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
+					["coord"] = { 46.3, 46.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1218,14 +1218,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48568 },	-- Eitrigg
 						{ "i", 63357 },	-- Blackrock Disguise
 					},
-					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
+					["coord"] = { 44.5, 44.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3822, {	-- Krom'Grul
 					["sourceQuest"] = 3821,	-- Dreadmaul Rock
 					["qg"] = 9136,	-- Sha'ni Proudtusk
-					["coord"] = { 79.8, 45.4, BURNING_STEPPES },
+					["coord"] = { 79.8, 45.4, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -1243,12 +1243,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(28312, {	-- Latent Demons of the Land (A)
 						["sourceQuest"] = 28310,	-- Morgan's Vigil
 						["qg"] = 48307,	-- Colonel Troteman
-						["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+						["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28444, {	-- Latent Demons of the Land (H)
 						["sourceQuest"] = 28442,	-- Flame Crest
 						["qg"] = 48569,	-- Eitrigg
-						["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+						["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1264,7 +1264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				q(4481, {	-- Libram of Constitution
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1283,7 +1283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4483, {	-- Libram of Resilience
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1302,7 +1302,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4463, {	-- Libram of Rumination
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1321,7 +1321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4482, {	-- Libram of Tenacity
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1340,7 +1340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4484, {	-- Libram of Voracity
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1402,7 +1402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28452,	-- A Delivery for Xi'lun (H)
 					},
 					["qg"] = 48569,	-- Eitrigg
-					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+					["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1431,9 +1431,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7564,	-- Wildeyes
 					-- #endif
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
-					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.4, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["cost"] = { { "i", 18802, 1 } },	-- Shadowy Potion
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -1445,8 +1445,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							5520,	-- Spackle Thornberry <Demon Trainer>
 						},
 						["coords"] = {
-							{ 52.8, 6.0, IRONFORGE },
-							{ 25.8, 77.6, STORMWIND_CITY },
+							{ 52.8, 6.0, MAP.IRONFORGE },
+							{ 25.8, 77.6, MAP.STORMWIND_CITY },
 						},
 					},
 					["hordeQuestData"] = {
@@ -1455,8 +1455,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							5753,	-- Martha Strain <Demon Trainer>
 						},
 						["coords"] = {
-							{ 47.6, 46.8, ORGRIMMAR },
-							{ 85.8, 15.8, UNDERCITY },
+							{ 47.6, 46.8, MAP.ORGRIMMAR },
+							{ 85.8, 15.8, MAP.UNDERCITY },
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1467,14 +1467,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28310, {	-- Morgan's Vigil
 					["sourceQuest"] = 28286,	-- Enough Damage for One Day (A)
 					["qg"] = 48110,	-- Colonel Troteman
-					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
+					["coord"] = { 46.3, 46.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28179, {	-- Mud Hunter (A)
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
 					["qg"] = 47811,	-- John J. Keeshan
-					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["coord"] = { 17.2, 52.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63124 },	-- Obsidian-Flecked Mud
 								{ "o", 206853 },	-- Obsidian-Flecked Mud
 							},
-							["coord"] = { 16.7, 42.7, BURNING_STEPPES },
+							["coord"] = { 16.7, 42.7, MAP.BURNING_STEPPES },
 						}),
 						i(64505, {	-- Obsidian-Flecked Cowl
 							["timeline"] = { ADDED_4_0_1 },
@@ -1493,7 +1493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28421, {	-- Mud Hunter (H)
 					["sourceQuest"] = 28418,	-- Burning Vengeance (H)
 					["qg"] = 48559,	-- Ariok
-					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
+					["coord"] = { 17.4, 51.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1502,7 +1502,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63124 },	-- Obsidian-Flecked Mud
 								{ "o", 206853 },	-- Obsidian-Flecked Mud
 							},
-							["coord"] = { 16.7, 42.7, BURNING_STEPPES },
+							["coord"] = { 16.7, 42.7, MAP.BURNING_STEPPES },
 						}),
 						i(64506, {	-- Obsidian-Flecked Cowl
 							["timeline"] = { ADDED_4_0_3 },
@@ -1512,7 +1512,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28491, {	-- Not Fireflies, Flameflies
 					["sourceQuest"] = 28442,	-- Flame Crest
 					["qg"] = 10260,	-- Kibler
-					["coord"] = { 54.9, 22.5, BURNING_STEPPES },
+					["coord"] = { 54.9, 22.5, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1544,7 +1544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3825, {	-- Ogre Head On A Stick = Party
 					["sourceQuest"] = 3824,	-- Gor'tesh the Brute Lord
 					["qg"] = 9177,	-- Oralius
-					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
+					["coord"] = { 84.6, 68.8, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -1554,7 +1554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  11079 },	-- Gor'tesh's Lopped Off Head
 								{ "o", 160840 },	-- Soft Dirt Mound
 							},
-							["coord"] = { 81.0, 46.0, BURNING_STEPPES },
+							["coord"] = { 81.0, 46.0, MAP.BURNING_STEPPES },
 						}),
 						i(11867, {	-- Maddening Gauntlets
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1571,7 +1571,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28315,	-- Draconic Vanguard (A)
 					},
 					["qg"] = 48307,	-- Colonel Troteman
-					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+					["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1596,7 +1596,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28447,	-- Draconic Vanguard (H)
 					},
 					["qg"] = 48569,	-- Eitrigg
-					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+					["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1617,7 +1617,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28225, {	-- Prove Yer Allegiance
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 					["qg"] = 48033,	-- Stebben Oreknuckle
-					["coord"] = { 46.7, 44.0, BURNING_STEPPES },
+					["coord"] = { 46.7, 44.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Thaurissan dwarf slain
@@ -1632,9 +1632,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7563, {	-- Rage of Blood
 					["sourceQuest"] = 7562,	-- Mor'zul Bloodbringer
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
-					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.6, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
+					["maps"] = { MAP.WINTERSPRING },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["groups"] = {
@@ -1659,7 +1659,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 14437 },	-- Gorzeeki Wildeyes
 						{ "i", 63354 },	-- Warlock Supplies
 					},
-					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
+					["coord"] = { 8.3, 35.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1672,14 +1672,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 14437 },	-- Gorzeeki Wildeyes
 						{ "i", 63354 },	-- Warlock Supplies
 					},
-					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
+					["coord"] = { 8.3, 35.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28226, {	-- Scrapped Golems
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 					["qg"] = 48033,	-- Stebben Oreknuckle
-					["coord"] = { 46.7, 44.0, BURNING_STEPPES },
+					["coord"] = { 46.7, 44.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/3 Obsidian Piston
@@ -1699,7 +1699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28415, {	-- SEVEN! YUP!
 					["sourceQuest"] = 28310,	-- Morgan's Vigil
 					["qg"] = 9177,	-- Oralius
-					["coord"] = { 71.8, 67.9, BURNING_STEPPES },
+					["coord"] = { 71.8, 67.9, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1736,7 +1736,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 28422,	-- The Sand the Cider, and the Orb (H)
 					}),
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
-					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
+					["coord"] = { 8.3, 35.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Ner'gosh the Shadow slain
@@ -1747,7 +1747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28177, {	-- Stocking Up (A)
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
 					["qg"] = 47811,	-- John J. Keeshan
-					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["coord"] = { 17.2, 52.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1769,7 +1769,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28419, {	-- Stocking Up (H)
 					["sourceQuest"] = 28418,	-- Burning Vengeance (H)
 					["qg"] = 48559,	-- Ariok
-					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
+					["coord"] = { 17.4, 51.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1789,12 +1789,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(28246, {	-- Strategic Cuts (A)
 						["sourceQuest"] = 28245,	-- Grunt Work (A)
 						["qg"] = 48110,	-- Colonel Troteman
-						["coord"] = { 46.3, 45.9, BURNING_STEPPES },
+						["coord"] = { 46.3, 45.9, MAP.BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28434, {	-- Strategic Cuts (H)
 						["sourceQuest"] = 28433,	-- Grunt Work (H)
 						["qg"] = 48568,	-- Eitrigg
-						["coord"] = { 44.5, 44.4, BURNING_STEPPES },
+						["coord"] = { 44.5, 44.4, MAP.BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1803,27 +1803,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 9176 },	-- Gorlop
 								{ "i", 63350 },	-- Razor-Sharp Scorpid Barb
 							},
-							["coord"] = { 40.8, 60.2, BURNING_STEPPES },
+							["coord"] = { 40.8, 60.2, MAP.BURNING_STEPPES },
 						}),
 						objective(2, {	-- 0/1 Worgmistress Othana slain
 							["providers"] = {
 								{ "n", 48099 },	-- Worgmistress Othana
 								{ "i", 63350 },	-- Razor-Sharp Scorpid Barb
 							},
-							["coord"] = { 39.2, 56.6, BURNING_STEPPES },
+							["coord"] = { 39.2, 56.6, MAP.BURNING_STEPPES },
 						}),
 						objective(3, {	-- 0/1 Voodooist Timan slain
 							["providers"] = {
 								{ "n", 48100 },	-- Voodooist Timan
 								{ "i", 63350 },	-- Razor-Sharp Scorpid Barb
 							},
-							["coord"] = { 45.2, 52.6, BURNING_STEPPES },
+							["coord"] = { 45.2, 52.6, MAP.BURNING_STEPPES },
 						}),
 					},
 				},
 				q(4296, {	-- Tablet of the Seven
 					["qg"] = 9536,	-- Maxwort Uberglint
-					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
+					["coord"] = { 65.2, 23.8, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1832,7 +1832,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  11470 },	-- Tablet Transcript
 								{ "o", 169294 },	-- Tablet of the Seven
 							},
-							["coord"] = { 53.0, 40.0, BURNING_STEPPES },
+							["coord"] = { 53.0, 40.0, MAP.BURNING_STEPPES },
 						}),
 					},
 				}),
@@ -1845,7 +1845,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48110 },	-- Colonel Troteman
 						{ "i", 63358 },	-- Horn of the Callers
 					},
-					["coord"] = { 46.3, 45.9, BURNING_STEPPES },
+					["coord"] = { 46.3, 45.9, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1869,7 +1869,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 48568 },	-- Eitrigg
 						{ "i", 63358 },	-- Horn of the Callers
 					},
-					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
+					["coord"] = { 44.5, 44.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1892,7 +1892,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 28433,	-- Grunt Work (H)
 					}),
 					["qg"] = 48085,	-- Quartermaster Kaoshin
-					["coord"] = { 45.3, 51.7, BURNING_STEPPES },
+					["coord"] = { 45.3, 51.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Blackrock War Kodos summoned back to camp
@@ -1910,7 +1910,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28177,	-- Stocking Up (A)
 					},
 					["qg"] = 47811,	-- John J. Keeshan
-					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["coord"] = { 17.2, 52.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1921,7 +1921,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28419,	-- Stocking Up (H)
 					},
 					["qg"] = 48559,	-- Ariok
-					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
+					["coord"] = { 17.4, 51.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1931,7 +1931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  48307 },	-- Colonel Troteman
 						{ "o", 207125 },	-- Crate of Left Over Supplies
 					},
-					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
+					["coord"] = { 73.6, 67.1, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1961,7 +1961,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  48569 },	-- Eitrigg
 						{ "o", 207125 },	-- Crate of Left Over Supplies
 					},
-					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
+					["coord"] = { 54.6, 24.4, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1988,7 +1988,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28266, {	-- Trial by Magma (A)
 					["sourceQuest"] = 28265,	-- General Thorg'izog (A)
 					["qg"] = 48133,	-- General Thorg'izog
-					["coord"] = { 30.6, 33.7, BURNING_STEPPES },
+					["coord"] = { 30.6, 33.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2009,7 +2009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28438, {	-- Trial by Magma (H)
 					["sourceQuest"] = 28437,	-- General Thorg'izog (H)
 					["qg"] = 48133,	-- General Thorg'izog
-					["coord"] = { 30.6, 33.7, BURNING_STEPPES },
+					["coord"] = { 30.6, 33.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2032,7 +2032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				warchiefscommand(q(28667, {	-- Warchief's Command: Burning Steppes!
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["maps"] = { SILVERMOON_CITY, MAP.UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
@@ -2048,7 +2048,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["hordeQuestData"] = q(28423, {	-- Warlocks Have the Neatest Stuff (H)
 						["sourceQuest"] = 28422,	-- The Sand, the Cider, and the Orb (H)
 					}),
-					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
+					["coord"] = { 8.3, 35.7, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Clear Glass Orb
@@ -2060,21 +2060,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  63132 },	-- Slumber Sand
 								{ "o", 206881 },	-- Slumber Sand
 							},
-							["coord"] = { 5.5, 31.9, BURNING_STEPPES },
+							["coord"] = { 5.5, 31.9, MAP.BURNING_STEPPES },
 						}),
 						objective(3, {	-- 0/1 Fel Slider Cider
 							["providers"] = {
 								{ "i",  63133 },	-- Fel Slider Cider
 								{ "o", 206882 },	-- Fel Slider Cider
 							},
-							["coord"] = { 5.2, 31.1, BURNING_STEPPES },
+							["coord"] = { 5.2, 31.1, MAP.BURNING_STEPPES },
 						}),
 					},
 				},
 				q(7627, {	-- Wheel of the Black March
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
-					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.6, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 6 },	-- Large Brilliant Shard
@@ -2089,7 +2089,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 14436 },	-- Mor'zul Bloodbringer
 						{ "i", 18591 },	-- Case of Blood
 					},
-					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.6, 31.6, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -2097,7 +2097,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(44927, {	-- Worth Its Weight in Steel
 					["sourceQuest"] = 44926,	-- A Familiar Axe to Grind
 					["qg"] = 115805,	-- Hoddruc Bladebender
-					["coord"] = { 46.8, 44.9, BURNING_STEPPES },
+					["coord"] = { 46.8, 44.9, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
@@ -2118,179 +2118,179 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(50725, {	-- Azelisk
-					["coord"] = { 71.8, 23.0, BURNING_STEPPES },
+					["coord"] = { 71.8, 23.0, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50807, {	-- Catal
-					["coord"] = { 64.6, 54.8, BURNING_STEPPES },
+					["coord"] = { 64.6, 54.8, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50792, {	-- Chiaa
-					["coord"] = { 35.4, 26.8, BURNING_STEPPES },
+					["coord"] = { 35.4, 26.8, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(10077, {	-- Deathmaw
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 63.2, 32.2, BURNING_STEPPES },
-						{ 70.6, 31.0, BURNING_STEPPES },
-						{ 73.3, 51.7, BURNING_STEPPES },
-						{ 68.4, 55.2, BURNING_STEPPES },
-						{ 70.2, 56.8, BURNING_STEPPES },
-						{ 72.2, 59.0, BURNING_STEPPES },
+						{ 63.2, 32.2, MAP.BURNING_STEPPES },
+						{ 70.6, 31.0, MAP.BURNING_STEPPES },
+						{ 73.3, 51.7, MAP.BURNING_STEPPES },
+						{ 68.4, 55.2, MAP.BURNING_STEPPES },
+						{ 70.2, 56.8, MAP.BURNING_STEPPES },
+						{ 72.2, 59.0, MAP.BURNING_STEPPES },
 						-- #else
-						{ 75.2, 33.2, BURNING_STEPPES },
-						{ 82.6, 31.0, BURNING_STEPPES },
-						{ 87.6, 50.6, BURNING_STEPPES },
-						{ 81.2, 59.2, BURNING_STEPPES },
+						{ 75.2, 33.2, MAP.BURNING_STEPPES },
+						{ 82.6, 31.0, MAP.BURNING_STEPPES },
+						{ 87.6, 50.6, MAP.BURNING_STEPPES },
+						{ 81.2, 59.2, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
 				n(50810, {	-- Favored of Isiset
 					["coords"] = {
-						{ 74.2, 52.0, BURNING_STEPPES },
-						{ 75.4, 51.8, BURNING_STEPPES },
-						{ 75.6, 53.4, BURNING_STEPPES },
+						{ 74.2, 52.0, MAP.BURNING_STEPPES },
+						{ 75.4, 51.8, MAP.BURNING_STEPPES },
+						{ 75.6, 53.4, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(9604, {	-- Gorgon'och
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.0, 46.4, BURNING_STEPPES },
+						{ 64.0, 46.4, MAP.BURNING_STEPPES },
 						-- #else
-						{ 77.2, 43.0, BURNING_STEPPES },
-						{ 80.8, 44.8, BURNING_STEPPES },
+						{ 77.2, 43.0, MAP.BURNING_STEPPES },
+						{ 80.8, 44.8, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
 				n(8979, {	-- Gruklash
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 33.6, 37.0, BURNING_STEPPES },
+						{ 33.6, 37.0, MAP.BURNING_STEPPES },
 						-- #else
-						{ 16.0, 30.2, BURNING_STEPPES },
-						{ 40.6, 35.8, BURNING_STEPPES },
-						{ 42.6, 51.4, BURNING_STEPPES },
-						{ 48.0, 62.2, BURNING_STEPPES },
+						{ 16.0, 30.2, MAP.BURNING_STEPPES },
+						{ 40.6, 35.8, MAP.BURNING_STEPPES },
+						{ 42.6, 51.4, MAP.BURNING_STEPPES },
+						{ 48.0, 62.2, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
 				n(9602, {	-- Hahk'Zor
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.6, 40.6, BURNING_STEPPES },
+						{ 68.6, 40.6, MAP.BURNING_STEPPES },
 						-- #else
-						{ 79.2, 42.2, BURNING_STEPPES },
-						{ 78.6, 44.6, BURNING_STEPPES },
-						{ 80.8, 48.6, BURNING_STEPPES },
-						{ 82.8, 42.8, BURNING_STEPPES },
+						{ 79.2, 42.2, MAP.BURNING_STEPPES },
+						{ 78.6, 44.6, MAP.BURNING_STEPPES },
+						{ 80.8, 48.6, MAP.BURNING_STEPPES },
+						{ 82.8, 42.8, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
 				n(8976, {	-- Hematos
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 26.4, 58.2, BURNING_STEPPES },
-						{ 27.6, 59.4, BURNING_STEPPES },
-						{ 28.0, 60.0, BURNING_STEPPES },
+						{ 26.4, 58.2, MAP.BURNING_STEPPES },
+						{ 27.6, 59.4, MAP.BURNING_STEPPES },
+						{ 28.0, 60.0, MAP.BURNING_STEPPES },
 						-- #else
-						{ 18.2, 46.8, BURNING_STEPPES },
-						{ 16.6, 56.2, BURNING_STEPPES },
-						{ 24.8, 58.6, BURNING_STEPPES },
-						{ 34.2, 53.4, BURNING_STEPPES },
+						{ 18.2, 46.8, MAP.BURNING_STEPPES },
+						{ 16.6, 56.2, MAP.BURNING_STEPPES },
+						{ 24.8, 58.6, MAP.BURNING_STEPPES },
+						{ 34.2, 53.4, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
 				n(50855, {	-- Jaxx the Rabid
-					["coord"] = { 47.0, 24.2, BURNING_STEPPES },
+					["coord"] = { 47.0, 24.2, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50842, {	-- Magmagan
 					["coords"] = {
-						{ 29.2, 31.4, BURNING_STEPPES },
-						{ 29.0, 34.8, BURNING_STEPPES },
-						{ 28.8, 33.0, BURNING_STEPPES },
+						{ 29.2, 31.4, MAP.BURNING_STEPPES },
+						{ 29.0, 34.8, MAP.BURNING_STEPPES },
+						{ 28.8, 33.0, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(8981, {	-- Malfunctioning Reaver
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 51.0, 36.8, BURNING_STEPPES },
-						{ 52.6, 38.6, BURNING_STEPPES },
-						{ 55.2, 43.0, BURNING_STEPPES },
-						{ 53.6, 36.6, BURNING_STEPPES },
+						{ 51.0, 36.8, MAP.BURNING_STEPPES },
+						{ 52.6, 38.6, MAP.BURNING_STEPPES },
+						{ 55.2, 43.0, MAP.BURNING_STEPPES },
+						{ 53.6, 36.6, MAP.BURNING_STEPPES },
 						-- #else
-						{ 76.6, 30.6, BURNING_STEPPES },
-						{ 87.4, 31.0, BURNING_STEPPES },
-						{ 90.6, 46.8, BURNING_STEPPES },
-						{ 86.2, 57.4, BURNING_STEPPES },
+						{ 76.6, 30.6, MAP.BURNING_STEPPES },
+						{ 87.4, 31.0, MAP.BURNING_STEPPES },
+						{ 90.6, 46.8, MAP.BURNING_STEPPES },
+						{ 86.2, 57.4, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
 				n(50361, {	-- Ornat
-					["coord"] = { 50.6, 60.6, BURNING_STEPPES },
+					["coord"] = { 50.6, 60.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50357, {	-- Sunwing
 					["coords"] = {
-						{ 8.4, 54.6, BURNING_STEPPES },
-						{ 9.8, 54.4, BURNING_STEPPES },
-						{ 9.4, 53.4, BURNING_STEPPES },
+						{ 8.4, 54.6, MAP.BURNING_STEPPES },
+						{ 9.8, 54.4, MAP.BURNING_STEPPES },
+						{ 9.4, 53.4, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10078, {	-- Terrorspark
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.0, 31.4, BURNING_STEPPES },
-						{ 56.2, 33.0, BURNING_STEPPES },
-						{ 58.0, 33.6, BURNING_STEPPES },
+						{ 57.0, 31.4, MAP.BURNING_STEPPES },
+						{ 56.2, 33.0, MAP.BURNING_STEPPES },
+						{ 58.0, 33.6, MAP.BURNING_STEPPES },
 						-- #else
-						{ 16.4, 24.2, BURNING_STEPPES },
-						{ 42.0, 46.2, BURNING_STEPPES },
-						{ 47.6, 43.2, BURNING_STEPPES },
-						{ 51.8, 43.6, BURNING_STEPPES },
-						{ 63.6, 37.6, BURNING_STEPPES },
-						{ 69.4, 32.6, BURNING_STEPPES },
+						{ 16.4, 24.2, MAP.BURNING_STEPPES },
+						{ 42.0, 46.2, MAP.BURNING_STEPPES },
+						{ 47.6, 43.2, MAP.BURNING_STEPPES },
+						{ 51.8, 43.6, MAP.BURNING_STEPPES },
+						{ 63.6, 37.6, MAP.BURNING_STEPPES },
+						{ 69.4, 32.6, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
 				n(8978, {	-- Thauris Balgarr
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 43.8, 39.8, BURNING_STEPPES },
+						{ 43.8, 39.8, MAP.BURNING_STEPPES },
 						-- #else
-						{ 53.2, 40.6, BURNING_STEPPES },
-						{ 56.2, 35.2, BURNING_STEPPES },
-						{ 55.2, 43.2, BURNING_STEPPES },
-						{ 61.8, 37.6, BURNING_STEPPES },
-						{ 66.6, 44.8, BURNING_STEPPES },
-						{ 71.8, 36.4, BURNING_STEPPES },
+						{ 53.2, 40.6, MAP.BURNING_STEPPES },
+						{ 56.2, 35.2, MAP.BURNING_STEPPES },
+						{ 55.2, 43.2, MAP.BURNING_STEPPES },
+						{ 61.8, 37.6, MAP.BURNING_STEPPES },
+						{ 66.6, 44.8, MAP.BURNING_STEPPES },
+						{ 71.8, 36.4, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 				}),
 				n(50730, {	-- Venomspine
-					["coord"] = { 5.8, 38.2, BURNING_STEPPES },
+					["coord"] = { 5.8, 38.2, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10119, {	-- Volchan
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 19.6, 42.6, BURNING_STEPPES },
-						{ 19.8, 41.4, BURNING_STEPPES },
-						{ 21.2, 42.4, BURNING_STEPPES },
-						{ 22.6, 41.8, BURNING_STEPPES },
+						{ 19.6, 42.6, MAP.BURNING_STEPPES },
+						{ 19.8, 41.4, MAP.BURNING_STEPPES },
+						{ 21.2, 42.4, MAP.BURNING_STEPPES },
+						{ 22.6, 41.8, MAP.BURNING_STEPPES },
 						-- #else
-						{ 77.0, 31.2, BURNING_STEPPES },
-						{ 91.2, 33.4, BURNING_STEPPES },
-						{ 90.2, 45.6, BURNING_STEPPES },
-						{ 87.8, 59.0, BURNING_STEPPES },
-						{ 81.8, 61.0, BURNING_STEPPES },
-						{ 72.0, 55.6, BURNING_STEPPES },
-						{ 72.0, 43.6, BURNING_STEPPES },
-						{ 73.8, 35.6, BURNING_STEPPES },
+						{ 77.0, 31.2, MAP.BURNING_STEPPES },
+						{ 91.2, 33.4, MAP.BURNING_STEPPES },
+						{ 90.2, 45.6, MAP.BURNING_STEPPES },
+						{ 87.8, 59.0, MAP.BURNING_STEPPES },
+						{ 81.8, 61.0, MAP.BURNING_STEPPES },
+						{ 72.0, 55.6, MAP.BURNING_STEPPES },
+						{ 72.0, 43.6, MAP.BURNING_STEPPES },
+						{ 73.8, 35.6, MAP.BURNING_STEPPES },
 						-- #endif
 					},
 					["groups"] = {
@@ -2304,7 +2304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_FOUR, i(226407, {	-- Rune of Axe Specialization
 					["provider"] = { "o", 457101 },	-- The Rites of Mak'Gora
-					["coord"] = { 40.0, 34.5, BURNING_STEPPES },
+					["coord"] = { 40.0, 34.5, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { WARRIOR, PALADIN, HUNTER, SHAMAN },
 					["groups"] = {
@@ -2317,7 +2317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(VENDORS, {
 				n(1296, {	-- Felder Stover <Weaponsmith>
-					["coord"] = { 72.9, 65.8, BURNING_STEPPES },
+					["coord"] = { 72.9, 65.8, MAP.BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						2528,	-- Falchion
@@ -2335,7 +2335,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "The following items are only available to Warlocks that completed the original |cFFFFD700Dreadsteed of Xoroth|r quest chain.",
 					["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 					-- #endif
-					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
+					["coord"] = { 12.6, 31.6, MAP.BURNING_STEPPES },
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(18629, {	-- Black Lodestone
@@ -2354,7 +2354,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(115805, {	-- Hoddruc Bladebender
 					["sourceQuest"] = 44927,	-- Worth Its Weight in Steel
-					["coord"] = { 46.9, 44.6, BURNING_STEPPES },
+					["coord"] = { 46.9, 44.6, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_7_1_5 },
 					["groups"] = {
 						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
@@ -2367,7 +2367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				n(9544, {	-- Yuka Screwspigot
-					["coord"] = { 66.0, 22.0, BURNING_STEPPES },
+					["coord"] = { 66.0, 22.0, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(10602, {	-- Schematic: Deadly Scope (RECIPE!)
@@ -2385,15 +2385,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(14482, {	-- Pattern: Cindercloth Cloak (RECIPE!)
 					["coords"] = {
-						{43.8, 39.4, BURNING_STEPPES},
-						{58.8, 37.2, BURNING_STEPPES},
+						{43.8, 39.4, MAP.BURNING_STEPPES},
+						{58.8, 37.2, MAP.BURNING_STEPPES},
 					},
 					["cr"] = 7037,	-- Thaurissan Firewalker
 				}),
 				i(14490, {	-- Pattern: Cindercloth Pants (RECIPE!)
 					["coords"] = {
-						{43.8, 39.4, BURNING_STEPPES},
-						{58.8, 37.2, BURNING_STEPPES},
+						{43.8, 39.4, MAP.BURNING_STEPPES},
+						{58.8, 37.2, MAP.BURNING_STEPPES},
 					},
 					["cr"] = 7037,	-- Thaurissan Firewalker (RECIPE!)
 				}),
@@ -2402,8 +2402,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					-- #endif
 					["coords"] = {
-						{ 34.8, 36.3, BURNING_STEPPES },
-						{ 36.0, 36.6, BURNING_STEPPES },
+						{ 34.8, 36.3, MAP.BURNING_STEPPES },
+						{ 36.0, 36.6, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_0_5 },
 					["crs"] = {
@@ -2418,8 +2418,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					-- #endif
 					["coords"] = {
-						{ 34.8, 36.3, BURNING_STEPPES },
-						{ 36.0, 36.6, BURNING_STEPPES },
+						{ 34.8, 36.3, MAP.BURNING_STEPPES },
+						{ 36.0, 36.6, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_0_5 },
 					["crs"] = {
@@ -2435,8 +2435,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					-- #endif
 					["coords"] = {
-						{ 34.8, 36.3, BURNING_STEPPES },
-						{ 36.0, 36.6, BURNING_STEPPES },
+						{ 34.8, 36.3, MAP.BURNING_STEPPES },
+						{ 36.0, 36.6, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
 					["crs"] = {
@@ -2452,8 +2452,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					-- #endif
 					["coords"] = {
-						{ 34.8, 36.3, BURNING_STEPPES },
-						{ 36.0, 36.6, BURNING_STEPPES },
+						{ 34.8, 36.3, MAP.BURNING_STEPPES },
+						{ 36.0, 36.6, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = { ADDED_10_0_5 },
 					["crs"] = {
@@ -2465,8 +2465,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_FOUR, i(227908, {	-- Pattern: Masterwork Volcanic Leggings (RECIPE!)
 					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
 					["coords"] = {
-						{ 83.6, 40.0, BURNING_STEPPES },
-						{ 80.4, 45.8, BURNING_STEPPES },
+						{ 83.6, 40.0, MAP.BURNING_STEPPES },
+						{ 80.4, 45.8, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = { ADDED_1_15_3 },
 					["cr"] = 7035,	-- Firegut Brute
@@ -2475,8 +2475,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
 					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
 					["coords"] = {
-						{ 83.6, 40.0, BURNING_STEPPES },
-						{ 80.4, 45.8, BURNING_STEPPES },
+						{ 83.6, 40.0, MAP.BURNING_STEPPES },
+						{ 80.4, 45.8, MAP.BURNING_STEPPES },
 					},
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -2493,7 +2493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				o(206971, {	-- War Reaver Parts
 					["description"] = "Kill War Reavers for these objects to spawn. Loot the parts you need from the objects on the ground.",
-					["coord"] = { 47.4, 37.8, BURNING_STEPPES },
+					["coord"] = { 47.4, 37.8, MAP.BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["cr"] = 7039,	-- War Reaver
 					["groups"] = {

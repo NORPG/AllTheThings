@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(DUROTAR, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.DUROTAR, {
 		["lore"] =
 			-- #if AFTER CATA
 			"Durotar is the Horde starting zone for orcs and trolls. Thrall chose this land for the orcs to settle in, naming it Durotar after his father, Durotan. After the Shattering, more of the zone is flooded from the Southfury River, and the quests reflect Hellscream's new military rule.",
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 54.0, ECHO_ISLES },
 								-- #else
-								{ 67.7, 84.7, DUROTAR },
+								{ 67.7, 84.7, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { DRUID },
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 56.4, 50.1, ECHO_ISLES },
 								-- #else
-								{ 67.1, 83.3, DUROTAR },
+								{ 67.1, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { HUNTER },
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.7, 52.1, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84.0, DUROTAR },
+								{ 68.2, 84.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83.0, DUROTAR },
+								{ 67.7, 83.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.9, 49.9, ECHO_ISLES },
 								-- #else
-								{ 65.9, 83.2, DUROTAR },
+								{ 65.9, 83.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { ROGUE },
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.1, 52.8, ECHO_ISLES },
 								-- #else
-								{ 64.9, 84.2, DUROTAR },
+								{ 64.9, 84.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { SHAMAN },
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.0, 50.0, ECHO_ISLES },
 								-- #else
-								{ 64.9, 83.3, DUROTAR },
+								{ 64.9, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARLOCK },
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.5, 53.7, ECHO_ISLES },
 								-- #else
-								{ 65.8, 84.5, DUROTAR },
+								{ 65.8, 84.5, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARRIOR },
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 56.8, 63.7, ECHO_ISLES },
 								-- #else
-								{ 67.2, 88.0, DUROTAR },
+								{ 67.2, 88.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -165,7 +165,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.9, 23.1, ECHO_ISLES },
 								-- #else
-								{ 67.8, 74.2, DUROTAR },
+								{ 67.8, 74.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.9, 66.8, ECHO_ISLES },
 								-- #else
-								{ 69.0, 88.6, DUROTAR },
+								{ 69.0, 88.6, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.7, 85.0, ECHO_ISLES },
 								-- #else
-								{ 63.4, 95.2, DUROTAR },
+								{ 63.4, 95.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 60.5, 62.9, ECHO_ISLES },
 								-- #else
-								{ 68.4, 87.6, DUROTAR },
+								{ 68.4, 87.6, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.7, 85.0, ECHO_ISLES },
 								-- #else
-								{ 63.4, 95.2, DUROTAR },
+								{ 63.4, 95.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 61.6, 65.9, ECHO_ISLES },
 								-- #else
-								{ 68.8, 88.6, DUROTAR },
+								{ 68.8, 88.6, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 54.0, ECHO_ISLES },
 								-- #else
-								{ 67.7, 84.7, DUROTAR },
+								{ 67.7, 84.7, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { DRUID },
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 56.4, 50.1, ECHO_ISLES },
 								-- #else
-								{ 67.1, 83.3, DUROTAR },
+								{ 67.1, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { HUNTER },
@@ -344,7 +344,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.7, 52.1, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84.0, DUROTAR },
+								{ 68.2, 84.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83.0, DUROTAR },
+								{ 67.7, 83.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.9, 49.9, ECHO_ISLES },
 								-- #else
-								{ 65.9, 83.2, DUROTAR },
+								{ 65.9, 83.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { ROGUE },
@@ -387,7 +387,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.1, 52.8, ECHO_ISLES },
 								-- #else
-								{ 64.9, 84.2, DUROTAR },
+								{ 64.9, 84.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { SHAMAN },
@@ -399,7 +399,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.0, 50.0, ECHO_ISLES },
 								-- #else
-								{ 64.9, 83.3, DUROTAR },
+								{ 64.9, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARLOCK },
@@ -411,7 +411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.5, 53.7, ECHO_ISLES },
 								-- #else
-								{ 65.8, 84.5, DUROTAR },
+								{ 65.8, 84.5, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARRIOR },
@@ -423,7 +423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.9, 23.1, ECHO_ISLES },
 								-- #else
-								{ 67.8, 74.2, DUROTAR },
+								{ 67.8, 74.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -452,7 +452,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 54.0, ECHO_ISLES },
 								-- #else
-								{ 67.7, 84.7, DUROTAR },
+								{ 67.7, 84.7, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { DRUID },
@@ -467,7 +467,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 56.4, 50.1, ECHO_ISLES },
 								-- #else
-								{ 67.1, 83.3, DUROTAR },
+								{ 67.1, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { HUNTER },
@@ -482,7 +482,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.7, 52.1, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84.0, DUROTAR },
+								{ 68.2, 84.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -509,7 +509,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83.0, DUROTAR },
+								{ 67.7, 83.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.9, 49.9, ECHO_ISLES },
 								-- #else
-								{ 65.9, 83.2, DUROTAR },
+								{ 65.9, 83.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { ROGUE },
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.1, 52.8, ECHO_ISLES },
 								-- #else
-								{ 64.9, 84.2, DUROTAR },
+								{ 64.9, 84.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { SHAMAN },
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.0, 50.0, ECHO_ISLES },
 								-- #else
-								{ 64.9, 83.3, DUROTAR },
+								{ 64.9, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARLOCK },
@@ -569,7 +569,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.5, 53.7, ECHO_ISLES },
 								-- #else
-								{ 65.8, 84.5, DUROTAR },
+								{ 65.8, 84.5, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARRIOR },
@@ -584,7 +584,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 44.6, 85.6, ECHO_ISLES },
 								-- #else
-								{ 63.4, 95.2, DUROTAR },
+								{ 63.4, 95.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -605,7 +605,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 61.6, 65.9, ECHO_ISLES },
 								-- #else
-								{ 68.8, 88.6, DUROTAR },
+								{ 68.8, 88.6, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.9, 23.1, ECHO_ISLES },
 								-- #else
-								{ 67.8, 74.2, DUROTAR },
+								{ 67.8, 74.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -648,7 +648,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 54.0, ECHO_ISLES },
 								-- #else
-								{ 67.7, 84.7, DUROTAR },
+								{ 67.7, 84.7, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -661,7 +661,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 56.4, 50.1, ECHO_ISLES },
 								-- #else
-								{ 67.1, 83.3, DUROTAR },
+								{ 67.1, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.6, 52.0, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84.0, DUROTAR },
+								{ 68.2, 84.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -690,7 +690,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83.0, DUROTAR },
+								{ 67.7, 83.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -703,7 +703,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.9, 49.9, ECHO_ISLES },
 								-- #else
-								{ 65.9, 83.2, DUROTAR },
+								{ 65.9, 83.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.1, 52.8, ECHO_ISLES },
 								-- #else
-								{ 64.9, 84.2, DUROTAR },
+								{ 64.9, 84.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.0, 50.0, ECHO_ISLES },
 								-- #else
-								{ 64.9, 83.3, DUROTAR },
+								{ 64.9, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -742,7 +742,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.5, 53.7, ECHO_ISLES },
 								-- #else
-								{ 65.8, 84.5, DUROTAR },
+								{ 65.8, 84.5, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 54.0, ECHO_ISLES },
 								-- #else
-								{ 67.7, 84.7, DUROTAR },
+								{ 67.7, 84.7, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { DRUID },
@@ -767,7 +767,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 56.4, 50.1, ECHO_ISLES },
 								-- #else
-								{ 67.1, 83.3, DUROTAR },
+								{ 67.1, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { HUNTER },
@@ -779,7 +779,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.7, 52.1, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84.0, DUROTAR },
+								{ 68.2, 84.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -798,7 +798,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83.0, DUROTAR },
+								{ 67.7, 83.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.9, 49.9, ECHO_ISLES },
 								-- #else
-								{ 65.9, 83.2, DUROTAR },
+								{ 65.9, 83.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { ROGUE },
@@ -822,7 +822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.1, 52.8, ECHO_ISLES },
 								-- #else
-								{ 64.9, 84.2, DUROTAR },
+								{ 64.9, 84.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { SHAMAN },
@@ -834,7 +834,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 50.0, 50.0, ECHO_ISLES },
 								-- #else
-								{ 64.9, 83.3, DUROTAR },
+								{ 64.9, 83.3, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARLOCK },
@@ -846,7 +846,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 52.5, 53.7, ECHO_ISLES },
 								-- #else
-								{ 65.8, 84.5, DUROTAR },
+								{ 65.8, 84.5, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARRIOR },
@@ -857,7 +857,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.8, 53.4, ECHO_ISLES },
 								-- #else
-								{ 62.4, 84.4, DUROTAR },
+								{ 62.4, 84.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { DRUID },
@@ -868,7 +868,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.8, 53.4, ECHO_ISLES },
 								-- #else
-								{ 62.4, 84.4, DUROTAR },
+								{ 62.4, 84.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { HUNTER },
@@ -879,7 +879,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.8, 53.4, ECHO_ISLES },
 								-- #else
-								{ 62.4, 84.4, DUROTAR },
+								{ 62.4, 84.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -896,7 +896,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.8, 53.4, ECHO_ISLES },
 								-- #else
-								{ 62.4, 84.4, DUROTAR },
+								{ 62.4, 84.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -907,7 +907,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.8, 53.4, ECHO_ISLES },
 								-- #else
-								{ 62.4, 84.4, DUROTAR },
+								{ 62.4, 84.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { ROGUE },
@@ -918,7 +918,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.8, 53.4, ECHO_ISLES },
 								-- #else
-								{ 62.4, 84.4, DUROTAR },
+								{ 62.4, 84.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { SHAMAN },
@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.8, 53.4, ECHO_ISLES },
 								-- #else
-								{ 62.4, 84.4, DUROTAR },
+								{ 62.4, 84.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARLOCK },
@@ -940,7 +940,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 42.8, 53.4, ECHO_ISLES },
 								-- #else
-								{ 62.4, 84.4, DUROTAR },
+								{ 62.4, 84.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = { WARRIOR },
@@ -956,7 +956,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.1, 85.5, ECHO_ISLES },
 								-- #else
-								{ 63.4, 95.2, DUROTAR },
+								{ 63.4, 95.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -997,7 +997,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77582, {	-- A Trial of Fitness [Orc]
 							["qg"] = 3153,	-- Frang <Warrior Trainer>
-							["coord"] = { 42.8, 69.4, DUROTAR },
+							["coord"] = { 42.8, 69.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { ORC },
 							["classes"] = { WARRIOR },
@@ -1008,7 +1008,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "i", 204806 },	-- Rune of Victory Rush
 										{ "o", 404911 },	-- Hidden Cache
 									},
-									["coord"] = { 43.2, 69.6, DUROTAR },
+									["coord"] = { 43.2, 69.6, MAP.DUROTAR },
 								}),
 								recipe(403470),	-- Engrave Gloves - Victory Rush
 								i(2385),	-- Tarnished Chain Gloves
@@ -1016,7 +1016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77588, {	-- A Trial of Fitness [Troll]
 							["qg"] = 3153,	-- Frang <Warrior Trainer>
-							["coord"] = { 42.8, 69.4, DUROTAR },
+							["coord"] = { 42.8, 69.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
 							["classes"] = { WARRIOR },
@@ -1027,7 +1027,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "i", 204806 },	-- Rune of Victory Rush
 										{ "o", 404911 },	-- Hidden Cache
 									},
-									["coord"] = { 43.2, 69.6, DUROTAR },
+									["coord"] = { 43.2, 69.6, MAP.DUROTAR },
 								}),
 								recipe(403470),	-- Engrave Gloves - Victory Rush
 								i(2385),	-- Tarnished Chain Gloves
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77583, {	-- Atop the Cliffs [Orc]
 							["qg"] = 3155,	-- Rwag <Rogue Trainer>
-							["coord"] = { 41.2, 68.0, DUROTAR },
+							["coord"] = { 41.2, 68.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { ORC },
 							["classes"] = { ROGUE },
@@ -1046,7 +1046,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "o", 404911 },	-- Hidden Cache
 										{ "i", 204795 },	-- Rune of Shadowstrike
 									},
-									["coord"] = { 43.2, 69.6, DUROTAR },
+									["coord"] = { 43.2, 69.6, MAP.DUROTAR },
 								}),
 								recipe(400105),	-- Engrave Gloves - Shadowstrike
 								i(2125),	-- Cracked Leather Gloves
@@ -1054,7 +1054,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77592, {	-- Atop the Cliffs [Troll]
 							["qg"] = 3155,	-- Rwag <Rogue Trainer>
-							["coord"] = { 41.2, 68.0, DUROTAR },
+							["coord"] = { 41.2, 68.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
 							["classes"] = { ROGUE },
@@ -1065,7 +1065,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "o", 404911 },	-- Hidden Cache
 										{ "i", 204795 },	-- Rune of Shadowstrike
 									},
-									["coord"] = { 43.2, 69.6, DUROTAR },
+									["coord"] = { 43.2, 69.6, MAP.DUROTAR },
 								}),
 								recipe(400105),	-- Engrave Gloves - Shadowstrike
 								i(2125),	-- Cracked Leather Gloves
@@ -1076,7 +1076,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25138,	-- Glyphic Parchment
 							["qg"] = 39206,	-- Acrypha <Mage Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.6, 69.0, DUROTAR },
+							["coord"] = { 42.6, 69.0, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1089,7 +1089,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 34.6, 44.2, VALLEY_OF_TRIALS },
 								-- #else
-								{ 40.6, 62.6, DUROTAR },
+								{ 40.6, 62.6, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1120,7 +1120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- TODO: Confirm the position after MoP.
 								{ 45.8, 63.5, VALLEY_OF_TRIALS },
 								-- #else
-								{ 42.4, 68.0, DUROTAR },
+								{ 42.4, 68.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -1141,7 +1141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.8, 63.5, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.4, 67.4, DUROTAR },
+								{ 43.4, 67.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1167,13 +1167,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								1499,	-- Vile Familiars (Part 2 - Warlocks only!)
 							},
 							["qg"] = 3145,	-- Zureetha Fargaze
-							["coord"] = { 42.8, 69.0, DUROTAR },
+							["coord"] = { 42.8, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Burning Blade Medallion
 									["provider"] = { "i", 4859 },	-- Burning Blade Medallion
-									["coord"] = { 42.8, 52.6, DUROTAR },
+									["coord"] = { 42.8, 52.6, MAP.DUROTAR },
 									["cr"] = 3183,	-- Yarrog Baneshadow
 								}),
 								i(4921, {	-- Dust-covered Leggings
@@ -1190,7 +1190,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1516, {	-- Call of Earth (1/3)
 							["altQuests"] = { 1519 },	-- Call to Earth (1/3 Mulgore)
 							["qg"] = 5887,	-- Canaga Earthcaller
-							["coord"] = { 42.4, 69.0, DUROTAR },
+							["coord"] = { 42.4, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -1209,7 +1209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5887 },	-- Canaga Earthcaller
 								{ "i", 6635 },	-- Earth Sapta
 							},
-							["coord"] = { 42.4, 69.0, DUROTAR },
+							["coord"] = { 42.4, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -1223,7 +1223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5891 },	-- Minor Manifestation of Earth
 								{ "i", 6656 },	-- Rough Quartz
 							},
-							["coord"] = { 44.0, 76.0, DUROTAR },
+							["coord"] = { 44.0, 76.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -1249,7 +1249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 2383,	-- Simple Parchment
 							["qg"] = 3153,	-- Frang <Warrior Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.8, 69.4, DUROTAR },
+							["coord"] = { 42.8, 69.4, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1262,7 +1262,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 44.9, 66.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.2, 68.2, DUROTAR },
+								{ 43.2, 68.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1270,7 +1270,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/6 Mottled Boar
 									["provider"] = { "n", 3098 },	-- Mottled Boar
-									["coord"] = { 43.6, 64.8, DUROTAR },
+									["coord"] = { 43.6, 64.8, MAP.DUROTAR },
 								}),
 								i(53378, {	-- Mottled Bracers
 									["timeline"] = { ADDED_4_0_3 },
@@ -1289,7 +1289,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(788, {	-- Cutting Teeth
 							["sourceQuest"] = 4641,	-- Your Place In The World
 							["qg"] = 3143,	-- Gornek
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1307,7 +1307,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1463, {	-- Earth Sapta
 							["sourceQuest"] = 1516,	-- Call of Earth (1/3)
 							["qg"] = 5887,	-- Canaga Earthcaller
-							["coord"] = { 42.4, 69.0, DUROTAR },
+							["coord"] = { 42.4, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -1326,7 +1326,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9560 },	-- Encrypted Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1338,7 +1338,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9554 },	-- Encrypted Tablet
 							},
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { ROGUE },
@@ -1350,7 +1350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9553 },	-- Etched Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1362,7 +1362,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9564 },	-- Etched Tablet
 							},
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { HUNTER },
@@ -1371,7 +1371,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3088,	-- Encrypted Parchment
 							["qg"] = 3155,	-- Rwag <Rogue Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.4, 68.8, DUROTAR },
+							["coord"] = { 42.4, 68.8, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1384,7 +1384,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 43.0, 62.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 42.7, 67.2, DUROTAR },
+								{ 42.7, 67.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1401,7 +1401,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(4402, {	-- Galgar's Cactus Apple Surprise
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["qg"] = 9796,	-- Galgar
-							["coord"] = { 42.6, 67.2, DUROTAR },
+							["coord"] = { 42.6, 67.2, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1420,7 +1420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 52513 },	-- Glyphic Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1432,7 +1432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9575 },	-- Glyphic Tablet
 							},
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { MAGE },
@@ -1443,7 +1443,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9561 },	-- Hallowed Tablet
 							},
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { PRIEST },
@@ -1455,7 +1455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 41.7, 70.0, VALLEY_OF_TRIALS },
 								-- #else
-								{ 42.4, 69.0, DUROTAR },
+								{ 42.4, 69.0, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1465,7 +1465,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77584, {	-- Hunt for the Rune
 							["qg"] = 3154,	-- Jen'shan <Hunter Trainer>
-							["coord"] = { 42.8, 69.2, DUROTAR },
+							["coord"] = { 42.8, 69.2, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { ORC },
 							["classes"] = { HUNTER },
@@ -1481,7 +1481,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77585, {	-- Icons of Power [Orc]
 							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
-							["coord"] = { 42.4, 69.0, DUROTAR },
+							["coord"] = { 42.4, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { ORC },
 							["classes"] = { SHAMAN },
@@ -1496,7 +1496,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77587, {	-- Icons of Power [Troll]
 							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
-							["coord"] = { 42.4, 69.0, DUROTAR },
+							["coord"] = { 42.4, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
 							["classes"] = { SHAMAN },
@@ -1514,7 +1514,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3090,	-- Tainted Parchment
 							["qg"] = 3156,	-- Nartok <Warlock Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.4, 68.0, DUROTAR },
+							["coord"] = { 42.4, 68.0, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1522,7 +1522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(5649, {	-- In Favor of Spirituality
 							["qg"] = 3707,	-- Ken'jai
-							["coord"] = { 42.4, 68.8, DUROTAR },
+							["coord"] = { 42.4, 68.8, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { PRIEST },
@@ -1535,7 +1535,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 44.9, 66.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.2, 68.2, DUROTAR },
+								{ 43.2, 68.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1572,7 +1572,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 46.0, 63.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.3, 67.4, DUROTAR },
+								{ 43.3, 67.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
@@ -1585,7 +1585,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(5441, {	-- Lazy Peons
 							["qg"] = 11378,	-- Foreman Thazz'ril
-							["coord"] = { 44.6, 68.6, DUROTAR },
+							["coord"] = { 44.6, 68.6, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 3,
@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3089,	-- Rune-Inscribed Parchment
 							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.4, 69.0, DUROTAR },
+							["coord"] = { 42.4, 69.0, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1616,7 +1616,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.8, 63.5, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.4, 67.4, DUROTAR },
+								{ 43.4, 67.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1626,14 +1626,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(805, {	-- Report to Sen'jin Village
 							["sourceQuest"] = 794,	-- Burning Blade Medallion
 							["qg"] = 3145,	-- Zureetha Fargaze
-							["coord"] = { 42.8, 69.0, DUROTAR },
+							["coord"] = { 42.8, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77590, {	-- Rugged Terrain
 							["qg"] = 3154,	-- Jen'shan <Hunter Trainer>
-							["coord"] = { 42.8, 69.2, DUROTAR },
+							["coord"] = { 42.8, 69.2, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
 							["classes"] = { HUNTER },
@@ -1655,7 +1655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9568 },	-- Rune-Inscribed Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1667,7 +1667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9562 },	-- Rune-Inscribed Tablet
 							},
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { SHAMAN },
@@ -1679,7 +1679,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 34.6, 44.2, VALLEY_OF_TRIALS },
 								-- #else
-								{ 40.6, 62.6, DUROTAR },
+								{ 40.6, 62.6, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1693,13 +1693,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(790, {	-- Sarkoth (1/2)
 							["qg"] = 3287,	-- Hana'zua
-							["coord"] = { 40.6, 62.6, DUROTAR },
+							["coord"] = { 40.6, 62.6, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Sarkoth's Mangled Claw
 									["provider"] = { "i", 4905 },	-- Sarkoth's Mangled Claw
-									["coord"] = { 40.6, 66.6, DUROTAR },
+									["coord"] = { 40.6, 66.6, MAP.DUROTAR },
 									["cr"] = 3281,	-- Sarkoth
 								}),
 							},
@@ -1707,7 +1707,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(804, {	-- Sarkoth (2/2)
 							["sourceQuest"] = 790,	-- Sarkoth (1/2)
 							["qg"] = 3287,	-- Hana'zua
-							["coord"] = { 40.6, 62.6, DUROTAR },
+							["coord"] = { 40.6, 62.6, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1726,7 +1726,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 12635 },	-- Simple Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 6488 },	-- Simple Tablet
 							},
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { WARRIOR },
@@ -1749,7 +1749,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5884 },	-- Mai'ah <Mage Trainer>
 								{ "i", 211809 },	-- Comprehension Primer
 							},
-							["coord"] = { 42.4, 69.0, DUROTAR },
+							["coord"] = { 42.4, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
 							["classes"] = { MAGE },
@@ -1768,7 +1768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3087,	-- Etched Parchment
 							["qg"] = 39214,	-- Karranisha <Hunter Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.8, 69.2, DUROTAR },
+							["coord"] = { 42.8, 69.2, MAP.DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1781,7 +1781,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 44.9, 66.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.2, 68.2, DUROTAR },
+								{ 43.2, 68.2, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1808,7 +1808,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(789, {	-- Sting of the Scorpid
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["qg"] = 3143,	-- Gornek
-							["coord"] = { 42.0, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1830,7 +1830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77586, {	-- Stolen Power
 							["qg"] = 3156,	-- Nartok <Warlock Trainer>
-							["coord"] = { 40.6, 68.4, DUROTAR },
+							["coord"] = { 40.6, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { ORC },
 							["classes"] = { WARLOCK },
@@ -1853,9 +1853,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 43.2, 68.2, DUROTAR },
+								{ 43.2, 68.2, MAP.DUROTAR },
 								-- #else
-								{ 42.0, 68.4, DUROTAR },
+								{ 42.0, 68.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -1876,7 +1876,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 46.0, 63.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.3, 67.4, DUROTAR },
+								{ 43.3, 67.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1885,7 +1885,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(6394, {	-- Thazz'ril's Pick
 							["sourceQuest"] = 5441,	-- Lazy Peons
 							["qg"] = 11378,	-- Foreman Thazz'ril
-							["coord"] = { 44.6, 68.6, DUROTAR },
+							["coord"] = { 44.6, 68.6, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 3,
@@ -1895,7 +1895,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "i",  16332 },	-- Thazz'ril's Pick
 										{ "o", 178087 },	-- Thazz'ril's Pick
 									},
-									["coord"] = { 43.8, 53.8, DUROTAR },
+									["coord"] = { 43.8, 53.8, MAP.DUROTAR },
 								}),
 							},
 						}),
@@ -1918,7 +1918,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.8, 63.5, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.4, 67.4, DUROTAR },
+								{ 43.4, 67.4, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1943,7 +1943,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(792, {	-- Vile Familiars
 							["qg"] = 3145,	-- Zureetha Fargaze
-							["coord"] = { 42.85, 69.14, DUROTAR },
+							["coord"] = { 42.85, 69.14, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							-- #if BEFORE 3.3.0
 							["classes"] = exclude(WARLOCK, ALL_CLASSES),
@@ -1973,7 +1973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(1485, {	-- Vile Familiars (Part 1 - Warlocks only!)
 							["qg"] = 5765,	-- Ruzan
-							["coord"] = { 42.6, 69.0, DUROTAR },
+							["coord"] = { 42.6, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_3_3_0 },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
@@ -1990,7 +1990,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1499, {	-- Vile Familiars (Part 2 - Warlocks only!)
 							["sourceQuest"] = 1485,	-- Vile Familiars (Part 1 - Warlocks only!)
 							["qg"] = 5765,	-- Ruzan
-							["coord"] = { 42.6, 69.0, DUROTAR },
+							["coord"] = { 42.6, 69.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_3_3_0 },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
@@ -2006,7 +2006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77642, {	-- Wisdom of the Loa
 							["qg"] = 3707,	-- Ken'jai <Priest Trainer>
-							["coord"] = { 42.4, 68.8, DUROTAR },
+							["coord"] = { 42.4, 68.8, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
 							["classes"] = { PRIEST },
@@ -2015,7 +2015,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
 									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
 									["description"] = "Kneel (/kneel) at the Loa Altar to gain a Meditation buff, then use the Rune to complete the quest.",
-									["coord"] = { 55.4, 72.6, DUROTAR },
+									["coord"] = { 55.4, 72.6, MAP.DUROTAR },
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
 								i(711),	-- Tattered Cloth Gloves
@@ -2028,7 +2028,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.2, 68.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.3, 68.8, DUROTAR },
+								{ 43.3, 68.8, MAP.DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -2037,7 +2037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(4641, {	-- Your Place In The World
 							["altQuests"] = { 787 },	-- The New Horde
 							["qg"] = 10176,	-- Kaltunk
-							["coord"] = { 43.2, 68.4, DUROTAR },
+							["coord"] = { 43.2, 68.4, MAP.DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
@@ -2046,7 +2046,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if SEASON_OF_DISCOVERY
 					n(TREASURES, {
 						applyclassicphase(SOD_PHASE_ONE, o(404695, {	-- Waterlogged Stashbox
-							["coord"] = { 43.0, 54.5, DUROTAR },
+							["coord"] = { 43.0, 54.5, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2061,14 +2061,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					n(ZONE_DROPS, {
 						applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
-							["coord"] = { 40.8, 64.0, DUROTAR },
+							["coord"] = { 40.8, 64.0, MAP.DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["cr"] = 3124,	-- Scorpid Worker
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 							["description"] = "This can also drop from any of the rare mobs in the zone.",
-							["coord"] = { 40.6, 67.7, DUROTAR },
+							["coord"] = { 40.6, 67.7, MAP.DUROTAR },
 							["classes"] = { HUNTER },
 							["cr"] = 3281,	-- Sarkoth
 							["groups"] = {
@@ -2077,7 +2077,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 							["description"] = "This can also drop from any of the rare mobs in the zone.",
-							["coord"] = { 40.6, 67.7, DUROTAR },
+							["coord"] = { 40.6, 67.7, MAP.DUROTAR },
 							["classes"] = { WARRIOR },
 							["cr"] = 3281,	-- Sarkoth
 							["groups"] = {
@@ -2104,26 +2104,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				exploration(374),	-- Bladefist Bay
 				visit_exploration(365,{coord={54.50,19.20,VALLEY_OF_TRIALS}}),	-- Burning Blade Coven
-				visit_exploration(393,{coord={61.20,65.50,DUROTAR}}),	-- Darkspear Strand
+				visit_exploration(393,{coord={61.20,65.50,MAP.DUROTAR}}),	-- Darkspear Strand
 				exploration(4865),	-- Darkspear Training Grounds
-				visit_exploration(375,{coord={58.70,25.40,DUROTAR}}),	-- Deadeye Shore
+				visit_exploration(375,{coord={58.70,25.40,MAP.DUROTAR}}),	-- Deadeye Shore
 				exploration(370),	-- Drygulch Ravine
 				exploration(6453),	-- Echo Isles
 				exploration(368),	-- Echo Isles
-				visit_exploration(1297,{coord={50.40,19.00,DUROTAR}}),	-- Jaggedswine Farm
+				visit_exploration(1297,{coord={50.40,19.00,MAP.DUROTAR}}),	-- Jaggedswine Farm
 				exploration(366),	-- Northwatch Foothold
 				exploration(1637),	-- Orgrimmar
 				exploration(362),	-- Razor Hill
-				visit_exploration(6747,{coord={52.50,45.50,DUROTAR}}),	-- Razor Hill Outskirts
-				visit_exploration(6750,{coord={50.30,39.50,DUROTAR}}),	-- Razor Hill Watchtower
+				visit_exploration(6747,{coord={52.50,45.50,MAP.DUROTAR}}),	-- Razor Hill Outskirts
+				visit_exploration(6750,{coord={50.30,39.50,MAP.DUROTAR}}),	-- Razor Hill Watchtower
 				exploration(816),	-- Razormane Grounds
 				exploration(410),	-- Razorwind Canyon
-				visit_exploration(1296,{coord={43.20,16.20,DUROTAR}}),	-- Rocktusk Farm
-				visit_exploration(373,{coord={60.60,61.10,DUROTAR}}),	-- Scuttle Coast
+				visit_exploration(1296,{coord={43.20,16.20,MAP.DUROTAR}}),	-- Rocktusk Farm
+				visit_exploration(373,{coord={60.60,61.10,MAP.DUROTAR}}),	-- Scuttle Coast
 				exploration(367),	-- Sen'jin Village
-				visit_exploration(6748,{coord={59.20,72.00,DUROTAR}}),	-- Sen'jin Village Outskirts
+				visit_exploration(6748,{coord={59.20,72.00,MAP.DUROTAR}}),	-- Sen'jin Village Outskirts
 				exploration(817),	-- Skull Rock
-				visit_exploration(879,{coord={37.80,20.70,DUROTAR}}),	-- Southfury River
+				visit_exploration(879,{coord={37.80,20.70,MAP.DUROTAR}}),	-- Southfury River
 				exploration(4981),	-- Southfury Watershed
 				visit_exploration(4982),	-- The Dranosh'ar Blockade
 				exploration(369),	-- Thunder Ridge
@@ -2150,13 +2150,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(537, {	-- Razor Hill
 					["cr"] = 41140,	-- Burok <Flight Master>
-					["coord"] = { 53.0, 43.6, DUROTAR },
+					["coord"] = { 53.0, 43.6, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(536, {	-- Sen'jin Village
 					["cr"] = 41142,	-- Handler Marnlek <Bat Handler>
-					["coord"] = { 55.4, 73.4, DUROTAR },
+					["coord"] = { 55.4, 73.4, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2164,7 +2164,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			petbattles({
 				n(66126, {	-- Zunta <Aspiring Pet Tamer>
-					["coord"] = { 43.9, 28.9, DUROTAR },
+					["coord"] = { 43.9, 28.9, MAP.DUROTAR },
 					["description"] = "This pet tamer is Horde only.\n\nZunta's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
@@ -2181,7 +2181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(31813, {	-- Dagra the Fierce
 					["sourceQuest"] = 31812,	-- Zunta, The Pet Tramer
 					["qg"] = 66126,	-- Zunta
-					["coord"] = { 43.9, 28.9, DUROTAR },
+					["coord"] = { 43.9, 28.9, MAP.DUROTAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -2196,33 +2196,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(31570, {	-- Got one! (Narzak)
 					["sourceQuest"] = 31830,	-- Level Up!
 					["qg"] = 63061,	-- Narzak
-					["coord"] = { 52.7, 41.3, DUROTAR },
+					["coord"] = { 52.7, 41.3, MAP.DUROTAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31571, {	-- Learning the Ropes (Narzak)
 					["qg"] = 63061,	-- Narzak
-					["coord"] = { 52.7, 41.3, DUROTAR },
+					["coord"] = { 52.7, 41.3, MAP.DUROTAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31830, {	-- Level Up! (Narzak)
 					["sourceQuest"] = 31572,	-- On The Mend
 					["qg"] = 63061,	-- Narzak
-					["coord"] = { 52.7, 41.3, DUROTAR },
+					["coord"] = { 52.7, 41.3, MAP.DUROTAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31572, {	-- On The Mend (Narzak)
 					["sourceQuest"] = 31571,	-- Learning the Ropes
 					["qg"] = 63061,	-- Narzak
-					["coord"] = { 52.7, 41.3, DUROTAR },
+					["coord"] = { 52.7, 41.3, MAP.DUROTAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Battle Pets Healed
 							["provider"] = { "n", 9987 },	-- Shoja'my <Stable Master>
-							["coord"] = { 52.0, 41.8, DUROTAR },
+							["coord"] = { 52.0, 41.8, MAP.DUROTAR },
 						}),
 					},
 				}),
@@ -2240,7 +2240,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207106, {	-- Bottom-Left Map Piece
-					["coord"] = { 67.2, 85.6, DUROTAR },
+					["coord"] = { 67.2, 85.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -2249,7 +2249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207107, {	-- Bottom-Right Map Piece
-					["coord"] = { 43.0, 39.8, DUROTAR },
+					["coord"] = { 43.0, 39.8, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -2260,7 +2260,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207098, {	-- Note from Ba'so
-					["coord"] = { 53.0, 27.6, DUROTAR },
+					["coord"] = { 53.0, 27.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -2272,7 +2272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207108, {	-- Top-Left Map Piece
-					["coord"] = { 53.0, 27.6, DUROTAR },
+					["coord"] = { 53.0, 27.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -2284,7 +2284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207109, {	-- Top-Right Map Piece
-					["coord"] = { 58.8, 55.4, DUROTAR },
+					["coord"] = { 58.8, 55.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -2300,13 +2300,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 6786 },	-- Ukor
 						{ "i", 7629 },	-- Ukor's Burden
 					},
-					["coord"] = { 52.0, 68.2, DUROTAR },
+					["coord"] = { 52.0, 68.2, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(818, {	-- A Solvent Spirit
 					["qg"] = 3304,	-- Master Vornal
-					["coord"] = { 55.8, 74.4, DUROTAR },
+					["coord"] = { 55.8, 74.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2337,7 +2337,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(41002, {	-- A Weapon of the Horde
 					["sourceQuest"] = 40983,	-- Demons Among Them
 					["qg"] = 101035,	-- Lady Sylvanas Windrunner
-					["coord"] = { 45.7, 16.0, DUROTAR },
+					["coord"] = { 45.7, 16.0, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
@@ -2349,16 +2349,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3208 },	-- Margoz
 						{ "i", 6658 },	-- Example Collar
 					},
-					["coord"] = { 56.4, 19.8, DUROTAR },
+					["coord"] = { 56.4, 19.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(809, {	-- Ak'Zeloth
 					["sourceQuest"] = 829,	-- Neeru Fireblade
 					["qg"] = 3216,	-- Neeru Fireblade
-					["coord"] = { 49.6, 50.4, ORGRIMMAR },
+					["coord"] = { 49.6, 50.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -2370,7 +2370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25206,	-- Ignoring the Warnings
 					},
 					["qg"] = 39379,	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, DUROTAR },
+					["coord"] = { 44.9, 14.7, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2378,7 +2378,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(815, {	-- Break a Few Eggs
 					["qg"] = 3191,	-- Cook Torka
-					["coord"] = { 51.11, 42.45, DUROTAR },
+					["coord"] = { 51.11, 42.45, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -2397,7 +2397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25073,	-- Sen'jin Village
 					},
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 55.9, 74.8, DUROTAR },
+					["coord"] = { 55.9, 74.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2415,7 +2415,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1843, {	-- Brutal Gauntlets
 					["sourceQuest"] = 1842,	-- Satyr Hooves
 					["qg"] = 6408,	-- Ula'elek
-					["coord"] = { 56.2, 74.4, DUROTAR },
+					["coord"] = { 56.2, 74.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -2428,16 +2428,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(832, {	-- Burning Shadows
 					["provider"] = { "i", 4903 },	-- Eye of Burning Shadow
-					["coord"] = { 51.78, 9.56, DUROTAR },
+					["coord"] = { 51.78, 9.56, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["cr"] = 3204,	-- Gazz'uz
 					["lvl"] = 4,
 				}),
 				q(791, {	-- Carry Your Weight
 					["qg"] = 3147,	-- Furl Scornbrow
-					["coord"] = { 49.8, 40.4, DUROTAR },
+					["coord"] = { 49.8, 40.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -2461,7 +2461,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25170, {	-- Cleaning Up the Coastline
 					["qg"] = 10578,	-- Bom'bay
-					["coord"] = { 55.6, 75.2, DUROTAR },
+					["coord"] = { 55.6, 75.2, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2479,7 +2479,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26951, {	-- Cleanup on Isle E.
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 56.0, 74.6, DUROTAR },
+					["coord"] = { 56.0, 74.6, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2502,7 +2502,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3336 },	-- Takrin Pathseeker
 						{ "i", 4992 },	-- Recruitment Letter
 					},
-					["coord"] = { 50.8, 43.5, DUROTAR },
+					["coord"] = { 50.8, 43.5, MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(10, 10, 5),
@@ -2513,7 +2513,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3337 },	-- Kargal Battlescar
 						{ "i", 4995 },	-- Signed Recruitment Letter
 					},
-					["coord"] = { 62.26, 19.37, THE_BARRENS },
+					["coord"] = { 62.26, 19.37, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -2521,14 +2521,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(806, {	-- Dark Storms
 					["sourceQuest"] = 823,	-- Report to Orgnil
 					["qg"] = 3142,	-- Orgnil Soulscar
-					["coord"] = { 52.2, 43.2, DUROTAR },
+					["coord"] = { 52.2, 43.2, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fizzle's Claw
 							["provider"] = { "i", 4869 },	-- Fizzle's Claw
-							["coord"] = { 42.6, 26.4, DUROTAR },
+							["coord"] = { 42.6, 26.4, MAP.DUROTAR },
 							["cr"] = 3203,	-- Fizzle Darkstorm
 						}),
 						i(4942, {	-- Tiger Hide Boots
@@ -2539,7 +2539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(40607, {	-- Demons Among Us
 					["sourceQuest"] = 40760,	-- Emissary
 					["qg"] = 100873,	-- Allari the Souleater
-					["coord"] = { 45.8, 15.1, DUROTAR },
+					["coord"] = { 45.8, 15.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
@@ -2559,7 +2559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(40983, {	-- Demons Among Them
 					["sourceQuest"] = 40982,	-- Second Sight
 					["qg"] = 100873,	-- Allari the Souleater
-					["coord"] = { 45.8, 15.1, DUROTAR },
+					["coord"] = { 45.8, 15.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
@@ -2577,21 +2577,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 6929 },	-- Innkeeper Gryshka
 						{ "i", 16307 },	-- Gryshka's Letter
 					},
-					["coord"] = { 53.5, 78.7, ORGRIMMAR },
+					["coord"] = { 53.5, 78.7, MAP.ORGRIMMAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				-- #endif
 				q(40760, {	-- Emissary
 					["sourceQuest"] = 40522,	-- Fate of the Horde
 					["qg"] = 100866,	-- Lady Sylvanas Windrunner
-					["coord"] = { 45.6, 15.8, DUROTAR },
+					["coord"] = { 45.6, 15.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(98, 98, 10),
 				}),
 				q(837, {	-- Encroachment
 					["qg"] = 3139,	-- Gar'Thok
-					["coord"] = { 52.0, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -2613,7 +2613,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25176, {	-- Exploiting the Situation
 					["sourceQuest"] = 25171,	-- Riding On
 					["qg"] = 39423,	-- Gail Nozzywig
-					["coord"] = { 53.0, 43.1, DUROTAR },
+					["coord"] = { 53.0, 43.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2628,7 +2628,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(40522, {	-- Fate of the Horde
 					["sourceQuest"] = 40518,	-- The Battle for Broken Shore
 					["qg"] = 100453,	-- Eitrigg
-					["coord"] = { 57.2, 10.5, DUROTAR },
+					["coord"] = { 57.2, 10.5, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(98, 98, 10),
@@ -2636,7 +2636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1464, {	-- Fire Sapta
 					["sourceQuest"] = 1525,	-- Call of Fire (3/5)
 					["qg"] = 5900,	-- Telf Joolam
-					["coord"] = { 38.6, 58.8, DUROTAR },
+					["coord"] = { 38.6, 58.8, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
@@ -2651,13 +2651,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25260, {	-- Fizzled
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 					["qg"] = 39379,	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, DUROTAR },
+					["coord"] = { 44.9, 14.7, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fizzle's Orb
 							["provider"] = { "i", 52580 },	-- Fizzle's Orb
-							["coord"] = { 42.0, 26.6, DUROTAR },
+							["coord"] = { 42.0, 26.6, MAP.DUROTAR },
 							["cr"] = 3203,	-- Fizzle Darkclaw
 						}),
 						i(53369, {	-- Fizzle's Gloves
@@ -2674,7 +2674,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25173, {	-- From Bad to Worse
 					["sourceQuest"] = 25171,	-- Riding On
 					["qg"] = 3139,	-- Gar'Thok
-					["coord"] = { 51.9, 43.4, DUROTAR },
+					["coord"] = { 51.9, 43.4, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -2708,7 +2708,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(825, {	-- From The Wreckage....
 					["sourceQuest"] = 784,	-- Vanquish the Betrayers
 					["qg"] = 3139,	-- Gar'Thok
-					["coord"] = { 52.0, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -2733,7 +2733,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1506, {	-- Gan'rul's Summons
 					["altQuests"] = { 1478 },	-- Halgar's Summons
 					["qg"] = 3294,	-- Ophek
-					["coord"] = { 54.2, 41.2, DUROTAR },
+					["coord"] = { 54.2, 41.2, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -2742,7 +2742,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5648, {	-- Garments of Spirituality
 					["sourceQuest"] = 5649,	-- In Favor of Spirituality
 					["qg"] = 3706,	-- Tai'jin
-					["coord"] = { 54.2, 42.8, DUROTAR },
+					["coord"] = { 54.2, 42.8, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TROLL },
 					["classes"] = { PRIEST },
@@ -2756,7 +2756,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25259, {	-- Gaur Icehorn
 					["sourceQuest"] = 25256,	-- Sent for Help
 					["qg"] = 39590,	-- Spiketooth
-					["coord"] = { 58.7, 23.1, DUROTAR },
+					["coord"] = { 58.7, 23.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2768,7 +2768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25257, {	-- Ghislania
 					["sourceQuest"] = 25256,	-- Sent for Help
 					["qg"] = 39590,	-- Spiketooth
-					["coord"] = { 58.7, 23.1, DUROTAR },
+					["coord"] = { 58.7, 23.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2780,7 +2780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25258, {	-- Griswold Hanniston
 					["sourceQuest"] = 25256,	-- Sent for Help
 					["qg"] = 39590,	-- Spiketooth
-					["coord"] = { 58.7, 23.1, DUROTAR },
+					["coord"] = { 58.7, 23.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2798,7 +2798,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5657,	-- Hex of Weakness [Undercity]
 					},
 					["qg"] = 3706,	-- Tai'jin <Priest Trainer>
-					["coord"] = { 54.2, 42.8, DUROTAR },
+					["coord"] = { 54.2, 42.8, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_4_1 },
 					["races"] = { TROLL },
 					["classes"] = { PRIEST },
@@ -2816,7 +2816,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25206, {	-- Ignoring the Warnings
 					["sourceQuest"] = 25205,	-- The Wolf and The Kodo
 					["qg"] = 39379,	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, DUROTAR },
+					["coord"] = { 44.9, 14.7, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 8,
@@ -2841,7 +2841,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29690, {	-- Into the Mists
 					["sourceQuest"] = 31853,	-- All Aboard!
 					["qg"] = 55054,	-- General Nazrim
-					["coord"] = { 61.2, 44.6, DUROTAR },
+					["coord"] = { 61.2, 44.6, MAP.DUROTAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(80, 80, 10),
@@ -2849,7 +2849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7664, {	-- Ivory Raptor Replacement
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 7952,	-- Zjolnir
-					["coord"] = { 55.2, 75.6, DUROTAR },
+					["coord"] = { 55.2, 75.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13317, 1 } },	-- Ivory Raptor (MOUNT!)
 					["races"] = HORDE_ONLY,
@@ -2863,7 +2863,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1883,	-- Speak with Un'thuwa
 					},
 					["qg"] = 5880,	-- Un'Thuwa <Mage Trainer>
-					["coord"] = { 56.2, 75.0, DUROTAR },
+					["coord"] = { 56.2, 75.0, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
@@ -2883,7 +2883,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						40983,	-- Demons Among Them
 					},
 					["qg"] = 101035,	-- Lady Sylvanas Windrunner
-					["coord"] = { 45.6, 15.9, DUROTAR },
+					["coord"] = { 45.6, 15.9, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2938,7 +2938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25193, {	-- Lost But Not Forgotten
 					["sourceQuest"] = 25188,	-- Watershed Patrol
 					["qg"] = 3193,	-- Misha Tor'kren
-					["coord"] = { 43.3, 30.6, DUROTAR },
+					["coord"] = { 43.3, 30.6, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2969,7 +2969,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(816, {	-- Lost But Not Forgotten
 					["qg"] = 3193,	-- Misha Tor'kren
-					["coord"] = { 43.10, 30.24, DUROTAR },
+					["coord"] = { 43.10, 30.24, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 8,
@@ -2989,14 +2989,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25187, {	-- Lost in the Floods
 					["sourceQuest"] = 25227,	-- Thonk
 					["qg"] = 39323,	-- Gail Nozzywig
-					["coord"] = { 49.5, 40.1, DUROTAR },
+					["coord"] = { 49.5, 40.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(39698, {	-- Making the Rounds
 					["sourceQuest"] = 38307,	-- The Warchief Beckons
 					["qg"] = 96686,	-- Lady Sylvanas Windrunner
-					["coord"] = { 61.3, 8.8, DUROTAR },
+					["coord"] = { 61.3, 8.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(98, 98, 10),
@@ -3004,14 +3004,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25261, {	-- Margoz
 					["sourceQuest"] = 25260,	-- Fizzled
 					["qg"] = 39379,	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, DUROTAR },
+					["coord"] = { 44.9, 14.7, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(828, {	-- Margoz
 					["sourceQuest"] = 806,	-- Dark Storms
 					["qg"] = 3142,	-- Orgnil Soulscar
-					["coord"] = { 52.2, 43.2, DUROTAR },
+					["coord"] = { 52.2, 43.2, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -3022,7 +3022,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3881 },	-- Grimtak
 						{ "i", 16306 },	-- Grimtak's Meats
 					},
-					["coord"] = { 50.7, 42.8, DUROTAR },
+					["coord"] = { 50.7, 42.8, MAP.DUROTAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				-- #endif
@@ -3035,7 +3035,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 86884 },	-- Darkspear Loyalist (Wod, Legion)
 						-- #endif
 					},
-					["coord"] = { 57.6, 9.6, DUROTAR },
+					["coord"] = { 57.6, 9.6, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 					-- noted as not necessary 2022-04-17
@@ -3068,7 +3068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(808, {	-- Minshina's Skull
 					["sourceQuest"] = 805,	-- Report to Sen'jin Village
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 56.0, 74.6, DUROTAR },
+					["coord"] = { 56.0, 74.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -3078,7 +3078,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 4864 },	-- Minshina's Skull
 								{ "o", 3237 },	-- Imprisoned Darkspear
 							},
-							["coord"] = { 67.4, 87.7, DUROTAR },
+							["coord"] = { 67.4, 87.7, MAP.DUROTAR },
 						}),
 						i(4945, {	-- Faintly Glowing Skull
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3087,15 +3087,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(812, {	-- Need for a Cure
 					["qg"] = 3190,	-- Rhinag
-					["coord"] = { 41.54, 18.61, DUROTAR },
+					["coord"] = { 41.54, 18.61, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
 						q(813, {	-- Finding the Antidote
 							["qg"] = 3189,	-- Kor'ghan
-							["coord"] = { 47.0, 53.4, ORGRIMMAR },
+							["coord"] = { 47.0, 53.4, MAP.ORGRIMMAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -3129,7 +3129,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3208 },	-- Margoz
 						{ "i", 6658 },	-- Example Collar
 					},
-					["coord"] = { 56.4, 20.0, DUROTAR },
+					["coord"] = { 56.4, 20.0, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -3137,7 +3137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25165, {	-- Never Trust a Big Barb and a Smile
 					["sourceQuest"] = 25170,	-- Cleaning up the Coastline
 					["qg"] = 10578,	-- Bom'bay
-					["coord"] = { 55.7, 75.3, DUROTAR },
+					["coord"] = { 55.7, 75.3, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3149,7 +3149,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(817, {	-- Practical Prey
 					["qg"] = 3194,	-- Vel'rin Fang
-					["coord"] = { 55.95, 73.92, DUROTAR },
+					["coord"] = { 55.95, 73.92, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -3163,7 +3163,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25168, {	-- Purge the Valley
 					["sourceQuest"] = 25167,	-- Breaking the Chain
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 55.9, 74.7, DUROTAR },
+					["coord"] = { 55.9, 74.7, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3185,7 +3185,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25192, {	-- Raggaran's Fury
 					["sourceQuest"] = 25190,	-- Raggaran's Rage
 					["qg"] = 39326,	-- Raggaran
-					["coord"] = { 42.6, 49.8, DUROTAR },
+					["coord"] = { 42.6, 49.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3212,7 +3212,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25190, {	-- Raggaran's Rage
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 					["qg"] = 39326,	-- Raggaran
-					["coord"] = { 42.6, 49.8, DUROTAR },
+					["coord"] = { 42.6, 49.8, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3227,7 +3227,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7665, {	-- Red Raptor Replacement
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 7952,	-- Zjolnir
-					["coord"] = { 55.2, 75.6, DUROTAR },
+					["coord"] = { 55.2, 75.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 8586, 1 } },	-- Mottled Red Raptor (MOUNT!)
 					["races"] = HORDE_ONLY,
@@ -3238,7 +3238,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(823, {	-- Report to Orgnil
 					["sourceQuest"] = 805,	-- Report to Sen'jin Village
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 56.0, 74.6, DUROTAR },
+					["coord"] = { 56.0, 74.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -3249,7 +3249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3139 },	-- Gar'Thok
 						{ "i", 60370 },	-- Gar'Thok's Reports
 					},
-					["coord"] = { 51.8, 43.4, DUROTAR },
+					["coord"] = { 51.8, 43.4, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 					["groups"] = { i(60370) },	-- Gar'Thok's Reports (QI!)
@@ -3260,7 +3260,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 41140 },	-- Burok
 						{ "i", 60370 },	-- Gar'Thok's Reports
 					},
-					["coord"] = { 53.0, 43.6, DUROTAR },
+					["coord"] = { 53.0, 43.6, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 					["groups"] = { i(60370) },	-- Gar'Thok's Reports (QI!)
@@ -3272,7 +3272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3310 },	-- Doras
 						{ "i", 16307 },	-- Gryshka's Letter
 					},
-					["coord"] = { 49.5, 59.2, ORGRIMMAR },
+					["coord"] = { 49.5, 59.2, MAP.ORGRIMMAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				q(6384, {	-- Ride to Orgrimmar
@@ -3281,8 +3281,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 41140 },	-- Burok
 						{ "i", 16306 },	-- Grimtak's Meats
 					},
-					["coord"] = { 53.0, 43.6, DUROTAR },
-					["maps"] = { ORGRIMMAR },
+					["coord"] = { 53.0, 43.6, MAP.DUROTAR },
+					["maps"] = { MAP.ORGRIMMAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				-- #endif
@@ -3293,16 +3293,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25169,	-- Purge the Valley
 					},
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 55.9, 74.7, DUROTAR },
+					["coord"] = { 55.9, 74.7, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1842, {	-- Satyr Hooves
 					["sourceQuest"] = 1839,	-- Ula'elek and the Brutal Gauntlets
 					["qg"] = 6408,	-- Ula'elek
-					["coord"] = { 56.2, 74.4, DUROTAR },
+					["coord"] = { 56.2, 74.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ASHENVALE },
+					["maps"] = { MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
@@ -3329,7 +3329,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(40982, {	-- Second Sight
 					["qg"] = 100873,	-- Allari the Souleater
-					["coord"] = { 45.8, 15.1, DUROTAR },
+					["coord"] = { 45.8, 15.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
@@ -3339,7 +3339,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 834,	-- Winds in the Desert
 					-- #endif
 					["qg"] = 3293,	-- Rezlak
-					["coord"] = { 46.4, 23.0, DUROTAR },
+					["coord"] = { 46.4, 23.0, MAP.DUROTAR },
 					-- ["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
@@ -3370,7 +3370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25256, {	-- Sent for Help
 					["qg"] = 39604,	-- Vek'nag
-					["coord"] = { 56.4, 20.2, DUROTAR },
+					["coord"] = { 56.4, 20.2, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -3381,7 +3381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25176,	-- Exploiting the Situation
 					},
 					["qg"] = 39423,	-- Gail Nozzywig
-					["coord"] = { 53.0, 43.1, DUROTAR },
+					["coord"] = { 53.0, 43.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3396,7 +3396,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25262, {	-- Skull Rock
 					["sourceQuest"] = 25261,	-- Margoz
 					["qg"] = 3208,	-- Margoz
-					["coord"] = { 56.4, 20.0, DUROTAR },
+					["coord"] = { 56.4, 20.0, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3427,7 +3427,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(827, {	-- Skull Rock
 					["sourceQuest"] = 828,	-- Margoz
 					["qg"] = 3208,	-- Margoz
-					["coord"] = { 56.4, 20.0, DUROTAR },
+					["coord"] = { 56.4, 20.0, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -3460,8 +3460,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7311,	-- Uthel'nay <Mage Trainer>
 					},
 					["coords"] = {
-						{ 39.0, 86.0, ORGRIMMAR },
-						{ 25.0, 20.6, THUNDER_BLUFF },
+						{ 39.0, 86.0, MAP.ORGRIMMAR },
+						{ 25.0, 20.6, MAP.THUNDER_BLUFF },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD, TROLL },
@@ -3471,7 +3471,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25189, {	-- Spirits Be Praised
 					["qg"] = 39325,	-- Grandmatron Tekla
-					["coord"] = { 40.4, 35.6, DUROTAR },
+					["coord"] = { 40.4, 35.6, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_2_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -3479,7 +3479,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25177, {	-- Storming the Beaches
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 					["qg"] = 3139,	-- Gar'Thok
-					["coord"] = { 52.0, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3495,7 +3495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6070,	-- The Hunter's Path [Thunder Bluff]
 					},
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
-					["coord"] = { 51.8, 43.4, DUROTAR },
+					["coord"] = { 51.8, 43.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
@@ -3510,7 +3510,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6083, {	-- Taming the Beast (2/3)
 					["sourceQuest"] = 6062,	-- Taming the Beast (1/3)
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
-					["coord"] = { 51.8, 43.4, DUROTAR },
+					["coord"] = { 51.8, 43.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
@@ -3525,7 +3525,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6082, {	-- Taming the Beast (3/3)
 					["sourceQuest"] = 6083,	-- Taming the Beast (2/3)
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
-					["coord"] = { 51.8, 43.4, DUROTAR },
+					["coord"] = { 51.8, 43.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
@@ -3545,7 +3545,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25195, {	-- That's the End of That Raptor
 					["sourceQuest"] = 25194,	-- Unbidden Visitors
 					["qg"] = 39324,	-- Zen'Taji
-					["coord"] = { 35.8, 41.3, DUROTAR },
+					["coord"] = { 35.8, 41.3, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3568,7 +3568,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3139 },	-- Gar'Thok
 						{ "i", 4883 },	-- Admiral Proudmoore's Orders
 					},
-					["coord"] = { 52.0, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -3577,7 +3577,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 44281,	-- To Be Prepared
 					-- ["altQuest"] = 44543,	-- Scenario Skip (H)
 					["qg"] = 113547,	-- Stone Guard Mukar
-					["coord"] = { 55.6, 11.0, DUROTAR },
+					["coord"] = { 55.6, 11.0, MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(98, 98, 10),
 					["groups"] = {
@@ -3595,7 +3595,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(25232, {	-- The Burning Blade
 					["qg"] = 3142,	-- Orgnil Soulscar
-					["coord"] = { 52.2, 43.1, DUROTAR },
+					["coord"] = { 52.2, 43.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -3613,7 +3613,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(924, {	-- The Demon Seed
 					["sourceQuest"] = 809,	-- Ak'Zeloth
 					["qg"] = 3521,	-- Ak'Zeloth
-					["coord"] = { 62.4, 20.0, THE_BARRENS },
+					["coord"] = { 62.4, 20.0, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -3621,7 +3621,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(926, {	-- Flawed Power Stone
 							["sourceQuest"] = 924,	-- The Demon Seed
 							["provider"] = { "o", 5620 },	-- Flawed Power Stones
-							["coord"] = { 62.4, 20.0, THE_BARRENS },
+							["coord"] = { 62.4, 20.0, MAP.THE_BARRENS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -3632,7 +3632,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "o", 3525 },	-- The Altar of Fire
 										{ "i", 4986 },	-- Flawed Power Stone
 									},
-									["coord"] = { 47.0, 19.0, THE_BARRENS },
+									["coord"] = { 47.0, 19.0, MAP.THE_BARRENS },
 								}),
 							},
 						}),
@@ -3644,13 +3644,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25196, {	-- The Dranosh'ar Blockade
 					["sourceQuest"] = 25232,	-- The Burning Blade
 					["qg"] = 3142,	-- Orgnil Soulscar
-					["coord"] = { 52.2, 43.0, DUROTAR },
+					["coord"] = { 52.2, 43.0, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(6068, {	-- The Hunter's Path [Orgrimmar]
 					["qg"] = 3407,	-- Sian'dur <Hunter Trainer>
-					["coord"] = { 67.8, 17.8, ORGRIMMAR },
+					["coord"] = { 67.8, 17.8, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
@@ -3659,7 +3659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6069, {	-- The Hunter's Path [Durotar]
 					["qg"] = 11814,	-- Kali Remik
-					["coord"] = { 6.2, 74.2, DUROTAR },
+					["coord"] = { 6.2, 74.2, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
@@ -3668,7 +3668,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6070, {	-- The Hunter's Path [Thunder Bluff]
 					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
-					["coord"] = { 58.4, 88.0, THUNDER_BLUFF },
+					["coord"] = { 58.4, 88.0, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
@@ -3683,7 +3683,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(39801, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Splintered Fleet
 					["sourceQuest"] = 39698,	-- Making the Rounds
 					["qg"] = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>
-					["coord"] = { 61.5, 8.7, DUROTAR },
+					["coord"] = { 61.5, 8.7, MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 98,
 					["groups"] = {
@@ -3703,7 +3703,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25169, {	-- The War of Northwatch Aggression
 					["sourceQuest"] = 25167,	-- Breaking the Chain
 					["qg"] = 3140,	-- Lar Prowltusk
-					["coord"] = { 55.4, 75.0, DUROTAR },
+					["coord"] = { 55.4, 75.0, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3726,14 +3726,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25205, {	-- The Wolf and The Kodo
 					["qg"] = 39380,	-- Shin Stonepillar
-					["coord"] = { 44.9, 14.7, DUROTAR },
+					["coord"] = { 44.9, 14.7, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(1859, {	-- Therzok
 					["qg"] = 3170,	-- Kaplak
-					["coord"] = { 51.98, 43.70, DUROTAR },
+					["coord"] = { 51.98, 43.70, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, TROLL },
 					["classes"] = { ROGUE },
@@ -3743,14 +3743,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25227, {	-- Thonk
 					["sourceQuest"] = 25178,	-- Shipwreck Searching
 					["qg"] = 39423,	-- Gail Nozzywig
-					["coord"] = { 53.0, 43.1, DUROTAR },
+					["coord"] = { 53.0, 43.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25236, {	-- Thunder Down Under
 					["qg"] = 39379,	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, DUROTAR },
+					["coord"] = { 44.9, 14.7, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3762,22 +3762,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(786, {	-- Thwarting Kolkar Aggression
 					-- ["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
 					["qg"] = 3140,	-- Lar Prowltusk
-					["coord"] = { 54.52, 75.20, DUROTAR },
+					["coord"] = { 54.52, 75.20, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/1 Attack Plan: Valley of Trials
 							["provider"] = { "o", 3189 },	-- Attack Plan: Valley of Trials
-							["coord"] = { 49.8, 81.3, DUROTAR },
+							["coord"] = { 49.8, 81.3, MAP.DUROTAR },
 						}),
 						objective(2, {	-- 0/1 Attack Plan: Sen'jin Village
 							["provider"] = { "o", 3190 },	-- Attack Plan: Sen'jin Village
-							["coord"] = { 47.6, 77.4, DUROTAR },
+							["coord"] = { 47.6, 77.4, MAP.DUROTAR },
 						}),
 						objective(3, {	-- 0/1 Attack Plan: Orgrimmar
 							["provider"] = { "o", 3192 },	-- Attack Plan: Orgrimmar
-							["coord"] = { 46.3, 79.0, DUROTAR },
+							["coord"] = { 46.3, 79.0, MAP.DUROTAR },
 						}),
 						i(4933, {	-- Seasoned Fighter's Cloak
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3790,7 +3790,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(44281, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- To Be Prepared
 					["sourceQuest"] = 43926,	-- The Legion Returns
 					["qg"] = 4311,	-- Holgar Stormaxe
-					["coord"] = { 46.0, 13.7, DUROTAR },
+					["coord"] = { 46.0, 13.7, MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(98, 98, 10),
 					["groups"] = {
@@ -3800,7 +3800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6081, {	-- Training the Beast
 					["sourceQuest"] = 6082,	-- Taming the Beast (3/3)
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
-					["coord"] = { 51.8, 43.4, DUROTAR },
+					["coord"] = { 51.8, 43.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
@@ -3821,7 +3821,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
 					["qg"] = 3706,	-- Tai'jin <Priest Trainer>
-					["coord"] = { 54.2, 42.8, DUROTAR },
+					["coord"] = { 54.2, 42.8, MAP.DUROTAR },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -3842,20 +3842,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						47835,	-- The Hand of Fate
 					},
 					["qg"] = 122065,	-- Lady Liadrin
-					["coord"] = { 58.2, 12.0, DUROTAR },
+					["coord"] = { 58.2, 12.0, MAP.DUROTAR },
 					["timeline"] = { ADDED_7_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25194, {	-- Unbidden Visitors
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 					["qg"] = 39324,	-- Zen'Taji
-					["coord"] = { 35.8, 41.3, DUROTAR },
+					["coord"] = { 35.8, 41.3, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(784, {	-- Vanquish the Betrayers
 					["qg"] = 3139,	-- Gar'Thok
-					["coord"] = { 52.0, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -3874,21 +3874,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25188, {	-- Watershed Patrol
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 					["qg"] = 39323,	-- Gail Nozzywig
-					["coord"] = { 49.5, 40.1, DUROTAR },
+					["coord"] = { 49.5, 40.1, MAP.DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53777, {	-- Where He Died
 					["sourceQuest"] = 54120,	-- To Orgrimmar
 					["qg"] = 146290,	-- Spirit of Vol'jin
-					["coord"] = { 45.9, 15.9, DUROTAR },
+					["coord"] = { 45.9, 15.9, MAP.DUROTAR },
 					["timeline"] = { ADDED_8_1_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(120, 120, 50),
 				}),
 				q(834, {	-- Winds in the Desert
 					["qg"] = 3293,	-- Rezlak
-					["coord"] = { 46.4, 23.0, DUROTAR },
+					["coord"] = { 46.4, 23.0, MAP.DUROTAR },
 					-- ["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
@@ -3903,7 +3903,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(826, {	-- Zalazane
 					["sourceQuest"] = 805,	-- Report to Sen'jin Village
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 56.0, 74.6, DUROTAR },
+					["coord"] = { 56.0, 74.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -3916,7 +3916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						objective(3, {	-- 0/1 Zalazane's Head
 							["provider"] = { "i", 4866 },	-- Zalazane's Head
-							["coord"] = { 67.6, 87.8, DUROTAR },
+							["coord"] = { 67.6, 87.8, MAP.DUROTAR },
 							["cr"] = 3205,	-- Zalazane
 						}),
 						i(4946, {	-- Lightweight Boots
@@ -3931,40 +3931,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(RARES, {
 				n(5824, {	-- Captain Flat Tusk <Captain of the Battleguard>
 					["coords"] = {
-						{ 38.6, 53.8, DUROTAR },
-						{ 44.8, 50.6, DUROTAR },
-						{ 42.4, 38.6, DUROTAR },
+						{ 38.6, 53.8, MAP.DUROTAR },
+						{ 44.8, 50.6, MAP.DUROTAR },
+						{ 42.4, 38.6, MAP.DUROTAR },
 					},
 				}),
 				n(5823, {	-- Death Flayer
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 36.8, 49.8, DUROTAR },
-						{ 34.8, 43.8, DUROTAR },
-						{ 35.6, 46.0, DUROTAR },
-						{ 37.8, 47.8, DUROTAR },
-						{ 39.6, 45.6, DUROTAR },
-						{ 38.6, 44.0, DUROTAR },
-						{ 36.6, 44.4, DUROTAR },
+						{ 36.8, 49.8, MAP.DUROTAR },
+						{ 34.8, 43.8, MAP.DUROTAR },
+						{ 35.6, 46.0, MAP.DUROTAR },
+						{ 37.8, 47.8, MAP.DUROTAR },
+						{ 39.6, 45.6, MAP.DUROTAR },
+						{ 38.6, 44.0, MAP.DUROTAR },
+						{ 36.6, 44.4, MAP.DUROTAR },
 						-- #else
-						{ 38.8, 46.2, DUROTAR },
-						{ 35.2, 48.2, DUROTAR },
-						{ 35.4, 53.0, DUROTAR },
-						{ 36.0, 55.6, DUROTAR },
-						{ 37.8, 53.4, DUROTAR },
-						{ 39.2, 51.0, DUROTAR },
+						{ 38.8, 46.2, MAP.DUROTAR },
+						{ 35.2, 48.2, MAP.DUROTAR },
+						{ 35.4, 53.0, MAP.DUROTAR },
+						{ 36.0, 55.6, MAP.DUROTAR },
+						{ 37.8, 53.4, MAP.DUROTAR },
+						{ 39.2, 51.0, MAP.DUROTAR },
 						-- #endif
 					},
 				}),
 				n(5822, {	-- Felweaver Scornn
 					["coords"] = {
-						{ 51.6, 9.6, DUROTAR },
-						{ 53.0, 7.2, DUROTAR },
+						{ 51.6, 9.6, MAP.DUROTAR },
+						{ 53.0, 7.2, MAP.DUROTAR },
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208275, {	-- Frozen Makrura
-					["coord"] = { 58.6, 45.6, DUROTAR },
+					["coord"] = { 58.6, 45.6, MAP.DUROTAR },
 					["classes"] = { MAGE, SHAMAN, WARLOCK },
 					["groups"] = {
 						i(205228, {	-- Rune of Chaos Bolt
@@ -3990,17 +3990,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(5826, {	-- Geolord Mottle
 					["coords"] = {
-						{ 43.6, 40.8, DUROTAR },
-						{ 49.6, 45.0, DUROTAR },
-						{ 47.6, 50.0, DUROTAR },
-						{ 44.6, 48.4, DUROTAR },
-						{ 43.8, 50.0, DUROTAR },
+						{ 43.6, 40.8, MAP.DUROTAR },
+						{ 49.6, 45.0, MAP.DUROTAR },
+						{ 47.6, 50.0, MAP.DUROTAR },
+						{ 44.6, 48.4, MAP.DUROTAR },
+						{ 43.8, 50.0, MAP.DUROTAR },
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208124, {	-- Raluk
 					["description"] = "You can tame him and you still get the rune!",
-					["coord"] = { 69.1, 71.5, DUROTAR },
+					["coord"] = { 69.1, 71.5, MAP.DUROTAR },
 					["cost"] = { { "i", 207590, 1 } },	-- Durotar Pig Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
@@ -4014,7 +4014,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(208180, {	-- Razormane Poacher
 					["provider"] = { "n", 208179 },	-- Rustling Bush
 					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
-					["coord"] = { 40.6, 52.0, DUROTAR },
+					["coord"] = { 40.6, 52.0, MAP.DUROTAR },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(206155, {	-- Rune of Marksmanship
@@ -4028,14 +4028,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if AFTER 4.0.3
 				n(5809, {	-- Sergeant Curtis
-					["coord"] = { 59.6, 58.8, DUROTAR },
+					["coord"] = { 59.6, 58.8, MAP.DUROTAR },
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
 					-- ["provider"] = { "o",  },	-- Summoning Circle
-					["coord"] = { 67.6, 87.8, DUROTAR },
+					["coord"] = { 67.6, 87.8, MAP.DUROTAR },
 					["cost"] = {
 						{ "i", 207731, 1 },	-- Ominous Tome
 						{ "i", 207732, 1 },	-- Makrura Leg
@@ -4054,11 +4054,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
-						{ 37.0, 46.8, DUROTAR },
-						{ 41.0, 49.8, DUROTAR },
-						{ 55.0, 39.4, DUROTAR },
-						{ 56.4, 27.0, DUROTAR },
-						{ 56.8, 21.6, DUROTAR },
+						{ 37.0, 46.8, MAP.DUROTAR },
+						{ 41.0, 49.8, MAP.DUROTAR },
+						{ 55.0, 39.4, MAP.DUROTAR },
+						{ 56.4, 27.0, MAP.DUROTAR },
+						{ 56.8, 21.6, MAP.DUROTAR },
 					},
 					["groups"] = {
 						i(204441, {	-- Rune of Blood Frenzy
@@ -4072,22 +4072,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(5808, {	-- Warlord Kolkanis
 					["coords"] = {
-						{ 46.6, 79.8, DUROTAR },
-						{ 48.2, 78.2, DUROTAR },
-						{ 49.6, 80.6, DUROTAR },
+						{ 46.6, 79.8, MAP.DUROTAR },
+						{ 48.2, 78.2, MAP.DUROTAR },
+						{ 49.6, 80.6, MAP.DUROTAR },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #if BEFORE 4.0.3
 				n(5809, {	-- Watch Commander Zalaphil
-					["coord"] = { 59.6, 59.0, DUROTAR },
+					["coord"] = { 59.6, 59.0, MAP.DUROTAR },
 				}),
 				-- #endif
 			}),
 			-- #if BEFORE TBC
 			n(RIDING_TRAINER, {
 				n(7953, {	-- Xar'Ti <Raptor Riding Trainer>
-					["coord"] = { 55.3, 75.5, DUROTAR },
+					["coord"] = { 55.3, 75.5, MAP.DUROTAR },
 					["races"] = { ORC, TROLL, UNDEAD },
 
 					-- Available to Trolls without faction requirements.
@@ -4111,7 +4111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
-					["coord"] = { 48.0, 79.6, DUROTAR },
+					["coord"] = { 48.0, 79.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(210589, {	-- Echo of the Ancestors
@@ -4142,7 +4142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				o(3239, {	-- Benedict's Chest
-					["coord"] = { 59.3, 57.7, DUROTAR },
+					["coord"] = { 59.3, 57.7, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4882, 1 } },	-- Benedict's Key
 					["groups"] = {
@@ -4154,17 +4154,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- ["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
 					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
 					["coords"] = {
-						{ 38.01, 35.53, DUROTAR },
-						{ 53.36, 50.48, DUROTAR },
-						{ 51.78, 56.39, DUROTAR },
-						{ 36.95, 45.53, DUROTAR },
-						{ 56.53, 28.37, DUROTAR },
-						{ 39.43, 50.06, DUROTAR },
-						{ 54.07, 55.82, DUROTAR },
-						{ 36.3, 9.8, DUROTAR },
-						{ 37.5, 52.5, DUROTAR },
-						{ 41.65, 55.98, DUROTAR },
-						{ 37.99, 60.04, DUROTAR },
+						{ 38.01, 35.53, MAP.DUROTAR },
+						{ 53.36, 50.48, MAP.DUROTAR },
+						{ 51.78, 56.39, MAP.DUROTAR },
+						{ 36.95, 45.53, MAP.DUROTAR },
+						{ 56.53, 28.37, MAP.DUROTAR },
+						{ 39.43, 50.06, MAP.DUROTAR },
+						{ 54.07, 55.82, MAP.DUROTAR },
+						{ 36.3, 9.8, MAP.DUROTAR },
+						{ 37.5, 52.5, MAP.DUROTAR },
+						{ 41.65, 55.98, MAP.DUROTAR },
+						{ 37.99, 60.04, MAP.DUROTAR },
 					},
 					["classes"] = { SHAMAN },
 					["groups"] = {
@@ -4173,7 +4173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
 					["provider"] = { "o", 387466 },	-- Rusty Lockbox
-					["coord"] = { 53.8, 27.2, DUROTAR },
+					["coord"] = { 53.8, 27.2, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -4182,7 +4182,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
 					["provider"] = { "o", 386675 },	-- Buried Treasure
-					["coord"] = { 62.1, 94.8, DUROTAR },
+					["coord"] = { 62.1, 94.8, MAP.DUROTAR },
 					["cost"] = { { "i", 207110, 1 } },	-- Durotar Treasure Map
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
@@ -4195,7 +4195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208036, {	-- Ba'so
-					["coord"] = { 52.0, 58.4, DUROTAR },
+					["coord"] = { 52.0, 58.4, MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(203990, {	-- Rune of Mutilation
@@ -4211,9 +4211,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3881, {	-- Grimtak
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.8, 42.8, DUROTAR },
+						{ 50.8, 42.8, MAP.DUROTAR },
 						-- #else
-						{ 51.2, 42.6, DUROTAR },
+						{ 51.2, 42.6, MAP.DUROTAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -4224,7 +4224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(113615, {	-- Ravika <Darkspear Quartermaster> Legion Version
 					["description"] = "Only available with the quests |cFFFFD700The Legion Returns|r or |cFFFFD700To Be Prepared|r. Permanently available on the Echo Isles.",
 					["coords"] = {
-						{ 55.4, 11.2, DUROTAR },
+						{ 55.4, 11.2, MAP.DUROTAR },
 						{ 57.4, 62.2, ECHO_ISLES },
 					},
 					["timeline"] = { ADDED_7_0_3 },
@@ -4247,7 +4247,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208184, {	-- Razzil <Snake Charmer>
 					["description"] = "Use the pheromone and tame an adder and then bring it to Razzil.",
-					["coord"] = { 52.2, 44.0, DUROTAR },
+					["coord"] = { 52.2, 44.0, MAP.DUROTAR },
 					["cost"] = { { "i", 207631, 1 } },	-- Adder Pheromone
 					["crs"] = { 3300 },	-- Adder
 					["races"] = HORDE_ONLY,
@@ -4264,9 +4264,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5942, {	-- Zansoa <Fishing Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.4, 77.0, DUROTAR },
+						{ 57.4, 77.0, MAP.DUROTAR },
 						-- #else
-						{ 56.0, 73.4, DUROTAR },
+						{ 56.0, 73.4, MAP.DUROTAR },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -4276,7 +4276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(7952, {	-- Zjolnir <Raptor Handler>
-					["coord"] = { 55.2, 75.6, DUROTAR },
+					["coord"] = { 55.2, 75.6, MAP.DUROTAR },
 					-- Available to Trolls without faction requirements.
 					["minReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 					["OnInit"] = [[function(t)
@@ -4306,10 +4306,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(207631, {	-- Adder Pheromone
 					["coords"] = {
-						{ 43.2, 40.4, DUROTAR },
-						{ 39.6, 52.6, DUROTAR },
-						{ 50.6, 49.6, DUROTAR },
-						{ 38.6, 55.0, DUROTAR },
+						{ 43.2, 40.4, MAP.DUROTAR },
+						{ 39.6, 52.6, MAP.DUROTAR },
+						{ 50.6, 49.6, MAP.DUROTAR },
+						{ 38.6, 55.0, MAP.DUROTAR },
 					},
 					["classes"] = { HUNTER },
 					["crs"] = {
@@ -4324,7 +4324,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				i(4882, {	-- Benedict's Key
 					["cr"] = 3192,	-- Lieutenant Benedict
-					["coord"] = { 59.6, 58.2, DUROTAR },
+					["coord"] = { 59.6, 58.2, MAP.DUROTAR },
 					["timeline"] = { DELETED_4_0_3 },
 				}),
 				-- #if BEFORE 4.0.3
@@ -4341,7 +4341,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207733, {	-- Kul Tiran Skull
-					["coord"] = { 57.6, 55.4, DUROTAR },
+					["coord"] = { 57.6, 55.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
@@ -4351,10 +4351,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207732, {	-- Makrura Leg
 					["coords"] = {
-						{ 53.8, 84.6, DUROTAR },
-						{ 60.8, 74.8, DUROTAR },
-						{ 61.6, 45.0, DUROTAR },
-						{ 64.4, 92.4, DUROTAR },
+						{ 53.8, 84.6, MAP.DUROTAR },
+						{ 60.8, 74.8, MAP.DUROTAR },
+						{ 61.6, 45.0, MAP.DUROTAR },
+						{ 64.4, 92.4, MAP.DUROTAR },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
@@ -4364,7 +4364,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
-					["coord"] = { 59.2, 56.8, DUROTAR },
+					["coord"] = { 59.2, 56.8, MAP.DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
@@ -4377,7 +4377,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
 					["description"] = "This can also drop from any of the rare mobs in the zone.",
-					["coord"] = { 67.6, 87.8, DUROTAR },
+					["coord"] = { 67.6, 87.8, MAP.DUROTAR },
 					["classes"] = { PRIEST },
 					["cr"] = 3205,	-- Zalazane
 					["groups"] = {
@@ -4385,7 +4385,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207731, {	-- Ominous Tome
-					["coord"] = { 67.4, 83.6, DUROTAR },
+					["coord"] = { 67.4, 83.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
@@ -4395,9 +4395,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
 					["coords"] = {
-						{ 43.0, 39.4, DUROTAR },
-						{ 52.0, 21.6, DUROTAR },
-						{ 67.2, 85.6, DUROTAR },
+						{ 43.0, 39.4, MAP.DUROTAR },
+						{ 52.0, 21.6, MAP.DUROTAR },
+						{ 67.2, 85.6, MAP.DUROTAR },
 					},
 					["classes"] = { PRIEST },
 					["crs"] = {
@@ -4411,7 +4411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207062, {	-- Severed Centaur Head
-					["coord"] = { 51.2, 78.4, DUROTAR },
+					["coord"] = { 51.2, 78.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -4420,7 +4420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206995, {	-- Severed Harpy Head
-					["coord"] = { 48.6, 32.4, DUROTAR },
+					["coord"] = { 48.6, 32.4, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -4431,7 +4431,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206994, {	-- Severed Quilboar Head
-					["coord"] = { 50.0, 49.6, DUROTAR },
+					["coord"] = { 50.0, 49.6, MAP.DUROTAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -4443,7 +4443,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				i(5466, {	-- Scorpid Stinger
-					["maps"] = { DUROTAR },
+					["maps"] = { MAP.DUROTAR },
 					["crs"] = {
 						3126,	-- Armoured Scorpid
 						3125,	-- Clattering Scorpid
@@ -4458,9 +4458,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
 					["coords"] = {
-						{ 53.0, 27.6, DUROTAR },
-						{ 53.8, 9.6, DUROTAR },
-						{ 42.8, 26.4, DUROTAR },
+						{ 53.0, 27.6, MAP.DUROTAR },
+						{ 53.8, 9.6, MAP.DUROTAR },
+						{ 42.8, 26.4, MAP.DUROTAR },
 					},
 					["classes"] = { MAGE },
 					["crs"] = {
@@ -4473,7 +4473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203753, {	-- Spell Notes: RING SEFF OSTROF
 					["description"] = "This can also drop from any of the rare mobs in the zone.",
-					["coord"] = { 67.6, 87.8, DUROTAR },
+					["coord"] = { 67.6, 87.8, MAP.DUROTAR },
 					["classes"] = { MAGE },
 					["cr"] = 3205,	-- Zalazane
 				})),
@@ -4484,8 +4484,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
-	m(KALIMDOR, {
-		m(DUROTAR, {
+	m(MAP.KALIMDOR, {
+		m(MAP.DUROTAR, {
 			n(QUESTS, {
 				q(42646),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 				q(42647),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared

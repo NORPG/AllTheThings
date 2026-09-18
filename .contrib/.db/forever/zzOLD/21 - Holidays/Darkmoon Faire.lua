@@ -238,8 +238,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		-- #if AFTER 4.3.0
 		408,	-- Cauldron of Rock
 		-- #else
-		ELWYNN_FOREST,
-		MULGORE,
+		MAP.ELWYNN_FOREST,
+		MAP.MULGORE,
 		-- #if AFTER TBC
 		TEROKKAR_FOREST,
 		-- #endif
@@ -726,8 +726,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -747,8 +747,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -771,8 +771,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -793,8 +793,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -816,8 +816,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -839,8 +839,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -861,8 +861,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -881,8 +881,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -903,8 +903,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -925,8 +925,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 64.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 37.3, 37.7, MULGORE },
-					{ 41.6, 68.8, ELWYNN_FOREST },
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.7, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1061,8 +1061,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
+					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
+					{ 36.2, 35.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 33.8, 36.0, TEROKKAR_FOREST },
 					-- #endif
@@ -1140,8 +1140,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.2, 67.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
+					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
+					{ 37.8, 39.8, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.8, 35.1, TEROKKAR_FOREST },
 					-- #endif
@@ -1162,8 +1162,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
+					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
+					{ 36.2, 35.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 33.8, 36.0, TEROKKAR_FOREST },
 					-- #endif
@@ -1187,8 +1187,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(79595, {	-- Carnival Boots [Tier 1]
 				["qg"] = 14833,	-- Chronos <He Who Never Forgets!>
 				["coords"] = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
+					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
+					{ 36.2, 35.2, MAP.MULGORE },
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -1205,8 +1205,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
+					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
+					{ 36.2, 35.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 33.8, 36.0, TEROKKAR_FOREST },
 					-- #endif
@@ -1231,8 +1231,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(79592, {	-- Carnival Jerkins [Tier 2]
 				["qg"] = 14833,	-- Chronos <He Who Never Forgets!>
 				["coords"] = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
+					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
+					{ 36.2, 35.2, MAP.MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -1250,8 +1250,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.2, 67.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
+					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
+					{ 37.8, 39.8, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.8, 35.1, TEROKKAR_FOREST },
 					-- #endif
@@ -1275,8 +1275,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(79593, {	-- Coarse Weightstone [Tier 1]
 				["qg"] = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
 				["coords"] = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
+					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
+					{ 37.8, 39.8, MAP.MULGORE },
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -1293,8 +1293,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 49.6, 60.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.7, 70.7, ELWYNN_FOREST },
-					{ 37.1, 37.2, MULGORE },
+					{ 41.7, 70.7, MAP.ELWYNN_FOREST },
+					{ 37.1, 37.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.0, 34.8, TEROKKAR_FOREST },
 					-- #endif
@@ -1318,8 +1318,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(79594, {	-- Copper Modulator [Tier 1]
 				["qg"] = 14841,	-- Rinling
 				["coords"] = {
-					{ 41.7, 70.7, ELWYNN_FOREST },
-					{ 37.1, 37.2, MULGORE },
+					{ 41.7, 70.7, MAP.ELWYNN_FOREST },
+					{ 37.1, 37.2, MAP.MULGORE },
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -1336,8 +1336,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
+					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
+					{ 36.2, 35.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 33.8, 36.0, TEROKKAR_FOREST },
 					-- #endif
@@ -1361,8 +1361,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1383,8 +1383,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1406,8 +1406,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1443,8 +1443,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1479,8 +1479,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1501,8 +1501,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1538,8 +1538,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1562,8 +1562,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1585,8 +1585,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1647,8 +1647,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1670,8 +1670,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1692,8 +1692,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1728,8 +1728,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1778,8 +1778,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1815,8 +1815,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1838,8 +1838,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.2, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -1891,8 +1891,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.3, 35.7, TEROKKAR_FOREST },
 					-- #endif
@@ -1957,8 +1957,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.3, 35.7, TEROKKAR_FOREST },
 					-- #endif
@@ -1979,8 +1979,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 49.6, 60.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.7, 70.7, ELWYNN_FOREST },
-					{ 37.1, 37.2, MULGORE },
+					{ 41.7, 70.7, MAP.ELWYNN_FOREST },
+					{ 37.1, 37.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.0, 34.8, TEROKKAR_FOREST },
 					-- #endif
@@ -2001,8 +2001,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.2, 67.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
+					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
+					{ 37.8, 39.8, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.8, 35.1, TEROKKAR_FOREST },
 					-- #endif
@@ -2023,8 +2023,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.2, 67.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
+					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
+					{ 37.8, 39.8, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.8, 35.1, TEROKKAR_FOREST },
 					-- #endif
@@ -2049,8 +2049,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(79590, {	-- Heavy Grinding Stone [Tier 2]
 				["qg"] = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
 				["coords"] = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
+					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
+					{ 37.8, 39.8, MAP.MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -2148,8 +2148,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 49.6, 60.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.7, 70.7, ELWYNN_FOREST },
-					{ 37.1, 37.2, MULGORE },
+					{ 41.7, 70.7, MAP.ELWYNN_FOREST },
+					{ 37.1, 37.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.0, 34.8, TEROKKAR_FOREST },
 					-- #endif
@@ -2171,8 +2171,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
+					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
+					{ 36.2, 35.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 33.8, 36.0, TEROKKAR_FOREST },
 					-- #endif
@@ -2193,8 +2193,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.3, 35.7, TEROKKAR_FOREST },
 					-- #endif
@@ -2215,8 +2215,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.2, 67.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
+					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
+					{ 37.8, 39.8, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.8, 35.1, TEROKKAR_FOREST },
 					-- #endif
@@ -2237,8 +2237,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.3, 35.7, TEROKKAR_FOREST },
 					-- #endif
@@ -2259,8 +2259,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 49.6, 60.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.7, 70.7, ELWYNN_FOREST },
-					{ 37.1, 37.2, MULGORE },
+					{ 41.7, 70.7, MAP.ELWYNN_FOREST },
+					{ 37.1, 37.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.0, 34.8, TEROKKAR_FOREST },
 					-- #endif
@@ -2390,8 +2390,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.2, 67.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
+					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
+					{ 37.8, 39.8, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.8, 35.1, TEROKKAR_FOREST },
 					-- #endif
@@ -2452,8 +2452,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.3, 35.7, TEROKKAR_FOREST },
 					-- #endif
@@ -2477,8 +2477,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(79588, {	-- Small Furry Paws [Tier 1]
 				["qg"] = 14829,	-- Yebb Neblegear
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -2495,8 +2495,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.3, 35.7, TEROKKAR_FOREST },
 					-- #endif
@@ -2518,8 +2518,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.9, 70.7, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 43.3, 70.3, ELWYNN_FOREST },
-					{ 35.9, 35.3, MULGORE },
+					{ 43.3, 70.3, MAP.ELWYNN_FOREST },
+					{ 35.9, 35.3, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 33.7, 35.9, TEROKKAR_FOREST },
 					-- #endif
@@ -2656,9 +2656,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 19338 },	-- Free Ticket Voucher
 				},
 				-- #if AFTER 4.3.0
-				["coord"] = { 62.2, 73.0, STORMWIND_CITY },
+				["coord"] = { 62.2, 73.0, MAP.STORMWIND_CITY },
 				-- #else
-				["coord"] = { 29.2, 68.4, IRONFORGE },
+				["coord"] = { 29.2, 68.4, MAP.IRONFORGE },
 				["lvl"] = 6,
 				-- #endif
 				["races"] = ALLIANCE_ONLY,
@@ -2684,9 +2684,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["coords"] = {
 					-- #if AFTER 4.3.0
-					{ 48.0, 62.0, ORGRIMMAR },
+					{ 48.0, 62.0, MAP.ORGRIMMAR },
 					-- #else
-					{ 52.2, 66.0, ORGRIMMAR },
+					{ 52.2, 66.0, MAP.ORGRIMMAR },
 					-- #endif
 					-- #if AFTER TBC
 					{ 74.6, 82.0, SILVERMOON_CITY },
@@ -2739,8 +2739,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
+					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
+					{ 36.2, 35.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 33.8, 36.0, TEROKKAR_FOREST },
 					-- #endif
@@ -2761,8 +2761,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 49.6, 60.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.7, 70.7, ELWYNN_FOREST },
-					{ 37.1, 37.2, MULGORE },
+					{ 41.7, 70.7, MAP.ELWYNN_FOREST },
+					{ 37.1, 37.2, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.0, 34.8, TEROKKAR_FOREST },
 					-- #endif
@@ -2796,8 +2796,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.3, 35.7, TEROKKAR_FOREST },
 					-- #endif
@@ -2822,8 +2822,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(79589, {	-- Torn Bear Pelts [Tier 2]
 				["qg"] = 14829,	-- Yebb Neblegear
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -2841,8 +2841,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
+					{ 37.5, 39.6, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.3, 35.7, TEROKKAR_FOREST },
 					-- #endif
@@ -2863,8 +2863,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 49.4, 60.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 41.6, 70.6, ELWYNN_FOREST },
-					{ 37.0, 37.4, MULGORE },
+					{ 41.6, 70.6, MAP.ELWYNN_FOREST },
+					{ 37.0, 37.4, MAP.MULGORE },
 					-- #if AFTER TBC
 					{ 34.0, 34.8, TEROKKAR_FOREST },
 					-- #endif
@@ -2889,8 +2889,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(79591, {	-- Whirring Bronze Gizmo [Tier 2]
 				["qg"] = 14841,	-- Rinling
 				["coords"] = {
-					{ 41.6, 70.6, ELWYNN_FOREST },
-					{ 37.0, 37.4, MULGORE },
+					{ 41.6, 70.6, MAP.ELWYNN_FOREST },
+					{ 37.0, 37.4, MAP.MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -2947,7 +2947,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 19423 },	-- Sayge's Fortune #23
 					{ "o", 180025 },	-- Mysterious Eastvale Haystack
 				},
-				["coord"] = { 84.7, 64.4, ELWYNN_FOREST },
+				["coord"] = { 84.7, 64.4, MAP.ELWYNN_FOREST },
 				["timeline"] = { REMOVED_4_3_0 },
 				["repeatable"] = true,
 				["lvl"] = 10,
@@ -2962,7 +2962,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i",  19452 },	-- Sayge's Fortune #27
 					{ "o", 180056 },	-- Mysterious Tree Stump
 				},
-				["coord"] = { 35.0, 61.5, MULGORE },
+				["coord"] = { 35.0, 61.5, MAP.MULGORE },
 				["timeline"] = { REMOVED_4_3_0 },
 				["repeatable"] = true,
 				["lvl"] = 10,
@@ -3150,8 +3150,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 53.6, 75.6, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 36.8, 38.2, MULGORE },
-					{ 42.0, 69.0, ELWYNN_FOREST },
+					{ 36.8, 38.2, MAP.MULGORE },
+					{ 42.0, 69.0, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.9, 35.0, TEROKKAR_FOREST },
 					-- #endif
@@ -3776,11 +3776,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.4, 70.1, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 36.4, 36.0, MULGORE },
-					{ 37.6, 39.6, MULGORE },
-					{ 42.8, 66.6, ELWYNN_FOREST },
-					{ 41.4, 69.8, ELWYNN_FOREST },
-					{ 43.6, 71.0, ELWYNN_FOREST },
+					{ 36.4, 36.0, MAP.MULGORE },
+					{ 37.6, 39.6, MAP.MULGORE },
+					{ 42.8, 66.6, MAP.ELWYNN_FOREST },
+					{ 41.4, 69.8, MAP.ELWYNN_FOREST },
+					{ 43.6, 71.0, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.3, 35.1, TEROKKAR_FOREST },
 					{ 35.8, 33.8, TEROKKAR_FOREST },
@@ -3905,8 +3905,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 48.0, 69.5, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 36.4, 38.0, MULGORE },
-					{ 41.2, 69.8, ELWYNN_FOREST },
+					{ 36.4, 38.0, MAP.MULGORE },
+					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.3, 34.4, TEROKKAR_FOREST },
 					-- #endif
@@ -4113,8 +4113,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 52.8, 67.9, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 36.6, 38.2, MULGORE },
-					{ 42.0, 70.0, ELWYNN_FOREST },
+					{ 36.6, 38.2, MAP.MULGORE },
+					{ 42.0, 70.0, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.6, 35.2, TEROKKAR_FOREST },
 					-- #endif
@@ -4149,8 +4149,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.0, 69.2, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 36.6, 38.2, MULGORE },
-					{ 42.0, 70.0, ELWYNN_FOREST },
+					{ 36.6, 38.2, MAP.MULGORE },
+					{ 42.0, 70.0, MAP.ELWYNN_FOREST },
 					-- #if AFTER TBC
 					{ 34.6, 35.2, TEROKKAR_FOREST },
 					-- #endif

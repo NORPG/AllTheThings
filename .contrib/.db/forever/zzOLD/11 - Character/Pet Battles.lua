@@ -374,7 +374,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		}),
 		header(HEADERS.Quest, 46292, {	-- Pet Battle Challenge: Deadmines
 			["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
-			["coord"] = { 41.6, 71.2, WESTFALL },
+			["coord"] = { 41.6, 71.2, MAP.WESTFALL },
 			["maps"] = {
 				835,	-- Pet Dungeon 1
 				836,	-- Pet Dungeon 2
@@ -391,7 +391,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				q(46291, {	-- The Deadmines Strike Back
 					["sourceQuest"] = 46293,	-- Deadmines, Part Three?
 					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
-					["coord"] = { 41.6, 71.2, WESTFALL },
+					["coord"] = { 41.6, 71.2, MAP.WESTFALL },
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 					["groups"] = {
 						spell(244502),	-- Manapoof Link: Westfall
@@ -400,12 +400,12 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				q(46292, {	-- Pet Battle Challenge: Deadmines
 					["sourceQuest"] = 46291,	-- The Deadmines Strike Back
 					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
-					["coord"] = { 41.6, 71.2, WESTFALL },
+					["coord"] = { 41.6, 71.2, MAP.WESTFALL },
 					["isWeekly"] = true,
 					["groups"] = { i(151191) },	-- Old Bottle Cap
 				}),
 				n(119390, {	-- Marcus "Bagman" Brown
-					["coord"] = { 41.6, 71.2, WESTFALL },
+					["coord"] = { 41.6, 71.2, MAP.WESTFALL },
 					["groups"] = {
 						i(150742, {	-- Foe Reaper 0.9 (PET!)
 							["cost"] = { { "i", 151191, 1 } },	-- 1x Old Bottle Cap
@@ -492,7 +492,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		}),
 		header(HEADERS.Quest, 56492, {	-- Pet Battle Challenge: Stratholme
 			["provider"] = { "n", 150987 },	-- Sean Wilkers
-			["coord"] = { 43.1, 19.9, EASTERN_PLAGUELANDS },
+			["coord"] = { 43.1, 19.9, MAP.EASTERN_PLAGUELANDS },
 			["maps"] = {
 				1505,	-- Pet Dungeon
 			},
@@ -531,7 +531,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 						56490,	-- Restless Dead (H)
 					},
 					["provider"] = { "n", 150987 },	-- Sean Wilkers
-					["coord"] = { 43.2, 20.0, EASTERN_PLAGUELANDS },
+					["coord"] = { 43.2, 20.0, MAP.EASTERN_PLAGUELANDS },
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 					["groups"] = {
 						spell(301941),	-- Manapoof Link: Stratholme
@@ -540,7 +540,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				q(56492, {	-- Pet Battle Challenge: Stratholme
 					["sourceQuest"] = 56491,	-- Tiny Terrors of Stratholme
 					["provider"] = { "n", 150987 },	-- Sean Wilkers
-					["coord"] = { 43.1, 19.9, EASTERN_PLAGUELANDS },
+					["coord"] = { 43.1, 19.9, MAP.EASTERN_PLAGUELANDS },
 					["isWeekly"] = true,
 					["groups"] = { i(169665) },	-- Cleansed Remains
 				}),
@@ -549,7 +549,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					["groups"] = { i(169665) },	-- Cleansed Remains
 				}),
 				n(150987, {	-- Sean Wilkers
-					["coord"] = { 43.1, 20.0, EASTERN_PLAGUELANDS },
+					["coord"] = { 43.1, 20.0, MAP.EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(169666, {	-- Unopened Stratholme Supply Crate
 							["cost"] = { { "i", 169665, 1 } },	-- 1x Cleansed Remains
@@ -708,7 +708,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 			["sharedDescription"] = "You may only learn the pet offered once per character from this Battle Pet Trainer.",
 		}, {
 			n(63596, {	-- Audrey Burnhep
-				["coord"] = { 69.4, 24.4, STORMWIND_CITY },
+				["coord"] = { 69.4, 24.4, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					pet(138, {	-- Blue Moth
@@ -732,7 +732,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63075, {	-- Grady Bannson
-				["coord"] = { 53.8, 50.1, DUN_MOROGH },
+				["coord"] = { 53.8, 50.1, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["sym"] = {
 					{"select", "npcID", 63596},				-- Audrey Burnhep
@@ -748,7 +748,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63014, {	-- Marcus Jensen
-				["coord"] = { 40.2, 66.0, ELWYNN_FOREST },
+				["coord"] = { 40.2, 66.0, MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["sym"] = {
 					{"select", "npcID", 63596},				-- Audrey Burnhep
@@ -756,7 +756,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63070, {	-- Valeena
-				["coord"] = { 55.2, 51.2, TELDRASSIL },
+				["coord"] = { 55.2, 51.2, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["sym"] = {
 					{"select", "npcID", 63596},				-- Audrey Burnhep
@@ -764,7 +764,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63083, {	-- Will Larsons
-				["coord"] = { 50.1, 20.2, DARKSHORE },
+				["coord"] = { 50.1, 20.2, MAP.DARKSHORE },
 				["races"] = ALLIANCE_ONLY,
 				["sym"] = {
 					{"select", "npcID", 63596},				-- Audrey Burnhep
@@ -772,7 +772,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63073, {	-- Ansel Fincap
-				["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
+				["coord"] = { 60.8, 54.2, MAP.TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
 					{"select", "npcID", 63626},				-- Varzok
@@ -788,7 +788,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63086, {	-- Matty
-				["coord"] = { 36.8, 77.1, ORGRIMMAR },
+				["coord"] = { 36.8, 77.1, MAP.ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
 					{"select", "npcID", 63626},				-- Varzok
@@ -796,7 +796,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63061, {	-- Narzak
-				["coord"] = { 52.7, 41.3, DUROTAR },
+				["coord"] = { 52.7, 41.3, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
 					{"select", "npcID", 63626},				-- Varzok
@@ -804,7 +804,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63067, {	-- Naleen
-				["coord"] = { 49.2, 56.1, MULGORE },
+				["coord"] = { 49.2, 56.1, MAP.MULGORE },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
 					{"select", "npcID", 63626},				-- Varzok
@@ -812,7 +812,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				},
 			}),
 			n(63626, {	-- Varzok
-				["coord"] = { 52.6, 59.3, ORGRIMMAR },
+				["coord"] = { 52.6, 59.3, MAP.ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					pet(75, {	-- Black Kingsnake (PET!)

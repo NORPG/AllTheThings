@@ -19,8 +19,8 @@ local PVP_MOUNT_COST = {
 	-- #endif
 };
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(STORMWIND_CITY, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.STORMWIND_CITY, {
 		["lore"] = "Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",
 		-- #if BEFORE WRATH
 		["zone-text-areas"] = {
@@ -51,11 +51,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 			}),
 			explorationHeader({
-				visit_exploration(5150,{coord={64.5,28.4,STORMWIND_CITY}}),	-- Dwarven District
-				visit_exploration(6292,{coord={82.2,36.0,STORMWIND_CITY}}),	-- Stormwind Keep
-				visit_exploration(5390,{coord={50.2,72.7,STORMWIND_CITY}}),	-- The Canals
-				visit_exploration(5148,{coord={61.4,74.8,STORMWIND_CITY}}),	-- Trade District
-				visit_exploration(10523,{coord={47.2,92.1,STORMWIND_CITY}}),	-- Wizard's Sanctum
+				visit_exploration(5150,{coord={64.5,28.4,MAP.STORMWIND_CITY}}),	-- Dwarven District
+				visit_exploration(6292,{coord={82.2,36.0,MAP.STORMWIND_CITY}}),	-- Stormwind Keep
+				visit_exploration(5390,{coord={50.2,72.7,MAP.STORMWIND_CITY}}),	-- The Canals
+				visit_exploration(5148,{coord={61.4,74.8,MAP.STORMWIND_CITY}}),	-- Trade District
+				visit_exploration(10523,{coord={47.2,92.1,MAP.STORMWIND_CITY}}),	-- Wizard's Sanctum
 			}),
 			n(FACTIONS, {
 				faction(FACTION_STORMWIND, {	-- Stormwind
@@ -78,9 +78,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 352,	-- Dungar Longdrink <Gryphon Master>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 71.0, 72.5, STORMWIND_CITY },
+						{ 71.0, 72.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 66.2, 62.4, STORMWIND_CITY },
+						{ 66.2, 62.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -92,12 +92,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["provider"] = { "o", 206294 },	-- Hero's Call Board
 				["coords"] = {
 					-- Locations for 206111
-					{ 26.1, 38.3, STORMWIND_CITY },
-					{ 43.1, 73.7, STORMWIND_CITY },
-					{ 63.1, 71.4, STORMWIND_CITY },
+					{ 26.1, 38.3, MAP.STORMWIND_CITY },
+					{ 43.1, 73.7, MAP.STORMWIND_CITY },
+					{ 63.1, 71.4, MAP.STORMWIND_CITY },
 					-- Locations for 206294
-					{ 62.5, 30.0, STORMWIND_CITY },
-					{ 43.0, 71.9, STORMWIND_CITY },
+					{ 62.5, 30.0, MAP.STORMWIND_CITY },
+					{ 43.0, 71.9, MAP.STORMWIND_CITY },
 				},
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			petbattles({
 				n(63596, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["description"] =
 						-- #if BEFORE 9.0.3
@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(32008, {	-- Audrey Burnhep
 					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["DisablePartySync"] = true,
 				}),
 				q(31878, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["DisablePartySync"] = true,
 				}),
 				q(31879, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["DisablePartySync"] = true,
 				}),
 				q(31880, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["DisablePartySync"] = true,
 				}),
 				q(31881, {	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -171,14 +171,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 31984,	-- A Brief Reprieve (A)
 					-- ["altQuests"] = { 31967 },
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
+					["maps"] = { MAP.MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat Brok
 							["provider"] = { "n", 66819 },	-- Brok <Master Pet Tamer>
-							["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
+							["coord"] = { 61.4, 32.8, MAP.MOUNT_HYJAL },
 						}),
 						objective(2, {	-- Defeat Bordin Steadyfist
 							["provider"] = { "n", 66815 },	-- Bordin Steadyfist <Master Pet Tamer>
@@ -195,29 +195,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
 					-- ["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
-					["maps"] = { THE_HINTERLANDS, EASTERN_PLAGUELANDS, SEARING_GORGE, SWAMP_OF_SORROWS, BURNING_STEPPES },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
+					["maps"] = { MAP.THE_HINTERLANDS, MAP.EASTERN_PLAGUELANDS, MAP.SEARING_GORGE, MAP.SWAMP_OF_SORROWS, MAP.BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat David Kosse
 							["provider"] = { "n", 66478 },	-- David Kosse <Master Pet Tamer>
-							["coord"] = { 62.8, 54.6, THE_HINTERLANDS },
+							["coord"] = { 62.8, 54.6, MAP.THE_HINTERLANDS },
 						}),
 						objective(2, {	-- Defeat Deiza Plaguehorn
 							["provider"] = { "n", 66512 },	-- Deiza Plaguehorn <Master Pet Tamer>
-							["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+							["coord"] = { 67.0, 52.4, MAP.EASTERN_PLAGUELANDS },
 						}),
 						objective(3, {	-- Defeat Kortas Darkhammer
 							["provider"] = { "n", 66515 },	-- Kortas Darkhammer <Master Pet Tamer>
-							["coord"] = { 35.4, 27.8, SEARING_GORGE },
+							["coord"] = { 35.4, 27.8, MAP.SEARING_GORGE },
 						}),
 						objective(4, {	-- Defeat Everessa
 							["provider"] = { "n", 66518 },	-- Everessa <Master Pet Tamer>
-							["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
+							["coord"] = { 76.6, 41.6, MAP.SWAMP_OF_SORROWS },
 						}),
 						objective(5, {	-- Defeat Durin Darkhammer
 							["provider"] = { "n", 66520 },	-- Durin Darkhammer <Master Pet Tamer>
-							["coord"] = { 25.6, 47.6, BURNING_STEPPES },
+							["coord"] = { 25.6, 47.6, MAP.BURNING_STEPPES },
 						}),
 						i(89125),	-- Sack of Pet Supplies
 					},
@@ -226,30 +226,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
 					-- ["altQuests"] = { 31891 },
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { FERALAS, DUSTWALLOW_MARSH, THOUSAND_NEEDLES, FELWOOD, MOONGLADE },
+					["maps"] = { MAP.FERALAS, MAP.DUSTWALLOW_MARSH, MAP.THOUSAND_NEEDLES, MAP.FELWOOD, MAP.MOONGLADE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat Traitor Gluk
 							["provider"] = { "n", 66352 },	-- Traitor Gluk <Master Pet Tamer>
-							["coord"] = { 59.6, 49.6, FERALAS },
+							["coord"] = { 59.6, 49.6, MAP.FERALAS },
 						}),
 						objective(2, {	-- Defeat Grazzle the Great
 							["provider"] = { "n", 66436 },	-- Grazzle the Great <Master Pet Tamer>
-							["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
+							["coord"] = { 53.8, 74.8, MAP.DUSTWALLOW_MARSH },
 						}),
 						objective(3, {	-- Defeat Kela Grimtotem
 							["provider"] = { "n", 66452 },	-- Kela Grimtotem <Master Pet Tamer>
-							["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
+							["coord"] = { 31.8, 32.8, MAP.THOUSAND_NEEDLES },
 						}),
 						objective(4, {	-- Defeat Zoltan
 							["provider"] = { "n", 66442 },	-- Zoltan <Master Pet Tamer>
-							["coord"] = { 40.0, 56.6, FELWOOD },
+							["coord"] = { 40.0, 56.6, MAP.FELWOOD },
 						}),
 						objective(5, {	-- Defeat Elena Flutterfly
 							["provider"] = { "n", 66412 },	-- Elena Flutterfly <Master Pet Tamer>
-							["coord"] = { 46.0, 60.6, MOONGLADE },
+							["coord"] = { 46.0, 60.6, MAP.MOONGLADE },
 						}),
 						i(89125),	-- Sack of Pet Supplies
 					},
@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 31981,	-- Exceeding Expectations (A)
 					-- ["altQuests"] = { 31929 },
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HOWLING_FJORD, CRYSTALSONG_FOREST, DRAGONBLIGHT, ZULDRAK },
 					["races"] = ALLIANCE_ONLY,
@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- ["altQuests"] = { 31921 },
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HELLFIRE_PENINSULA, ZANGARMARSH, NAGRAND, SHATTRATH_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 31985,	-- The Triumphant Return (A)
 					-- ["altQuests"] = { 31952 },
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { THE_JADE_FOREST, VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, KUN_LAI_SUMMIT, TOWNLONG_STEPPES, DREAD_WASTES },
 					["races"] = ALLIANCE_ONLY,
@@ -352,48 +352,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31593, {	-- Got one! (Audrey)
 					["sourceQuest"] = 31821,	-- Level Up!
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31316, {	-- Julia, The Pet Tamer
 					["sourceQuests"] = { 32008, 31878, 31879, 31880, 31881 },	-- Audrey Burnhep (all breadcrumbs)
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Defeat Julia Stevens
 							["provider"] = { "n", 64330 },	-- Julia Stevens
-							["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
+							["coord"] = { 41.6, 83.6, MAP.ELWYNN_FOREST },
 						}),
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 				q(31591, {	-- Learning the Ropes (Audrey)
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31821, {	-- Level Up! (Audrey)
 					["sourceQuest"] = 31592,	-- On The Mend
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31592, {	-- On The Mend (Audrey)
 					["sourceQuest"] = 31591,	-- Learning the Ropes
 					["qg"] = 63596,	-- Audrey Burnhep
-					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["coord"] = { 69.2, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Battle Pets Healed
 							["provider"] = { "n", 11069 },	-- Jenova Stoneshield <Stable Master>
-							["coord"] = { 67.0, 37.6, STORMWIND_CITY },
+							["coord"] = { 67.0, 37.6, MAP.STORMWIND_CITY },
 						}),
 					},
 				}),
@@ -403,9 +403,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 55.6, 85.8, STORMWIND_CITY },
+							{ 55.6, 85.8, MAP.STORMWIND_CITY },
 							-- #else
-							{ 46.4, 79.6, STORMWIND_CITY },
+							{ 46.4, 79.6, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -416,9 +416,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 63.8, 37.6, STORMWIND_CITY },
+							{ 63.8, 37.6, MAP.STORMWIND_CITY },
 							-- #else
-							{ 57.0, 16.6, STORMWIND_CITY },
+							{ 57.0, 16.6, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -429,11 +429,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5482, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1 }, }, {	-- Stephen Ryback <Cooking Trainer>
 						["coords"] = {
 							-- #if AFTER LEGION
-							{ 76.8, 53.6, STORMWIND_CITY },
+							{ 76.8, 53.6, MAP.STORMWIND_CITY },
 							-- #elseif AFTER WRATH
-							{ 78.2, 53.0, STORMWIND_CITY },
+							{ 78.2, 53.0, MAP.STORMWIND_CITY },
 							-- #else
-							{ 75.6, 37.0, STORMWIND_CITY },
+							{ 75.6, 37.0, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -444,9 +444,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(1317, {	-- Lucan Cordell <Enchanting Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 53.0, 74.2, STORMWIND_CITY },
+							{ 53.0, 74.2, MAP.STORMWIND_CITY },
 							-- #else
-							{ 43.0, 64.6, STORMWIND_CITY },
+							{ 43.0, 64.6, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -457,11 +457,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5518, {	-- Lilliam Sparkspindle <Engineering Trainer>
 						["coords"] = {
 							-- #if AFTER LEGION
-							{ 62.8, 32.0, STORMWIND_CITY },
+							{ 62.8, 32.0, MAP.STORMWIND_CITY },
 							-- #elseif AFTER WRATH
-							{ 62.2, 30.6, STORMWIND_CITY },
+							{ 62.2, 30.6, MAP.STORMWIND_CITY },
 							-- #else
-							{ 55.0, 8.6, STORMWIND_CITY },
+							{ 55.0, 8.6, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -470,16 +470,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				prof(FIRST_AID, {
 					n(56796, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 } }, {	-- Angela Leifeld <Bandage Trainer>
-						["coord"] = { 52.2, 45.4, STORMWIND_CITY },
+						["coord"] = { 52.2, 45.4, MAP.STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = CLASSIC_CATA_FIRST_AID,
 					})),
 					n(2327, bubbleDownSelf({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Shaina Fuller <First Aid Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 52.8, 44.8, STORMWIND_CITY },
+							{ 52.8, 44.8, MAP.STORMWIND_CITY },
 							-- #else
-							{ 42.8, 26.6, STORMWIND_CITY },
+							{ 42.8, 26.6, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -490,9 +490,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5493, {	-- Arnold Leland <Fishing Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 55.0, 69.6, STORMWIND_CITY },
+							{ 55.0, 69.6, MAP.STORMWIND_CITY },
 							-- #else
-							{ 45.8, 58.2, STORMWIND_CITY },
+							{ 45.8, 58.2, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -506,11 +506,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5566, {	-- Tannysa <Herbalism Trainer>
 						["coords"] = {
 							-- #if AFTER LEGION
-							{ 54.6, 83.6, STORMWIND_CITY },
+							{ 54.6, 83.6, MAP.STORMWIND_CITY },
 							-- #elseif AFTER CATA
-							{ 54.4, 84.0, STORMWIND_CITY },
+							{ 54.4, 84.0, MAP.STORMWIND_CITY },
 							-- #else
-							{ 44.8, 77.0, STORMWIND_CITY },
+							{ 44.8, 77.0, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -522,9 +522,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(30713, {	-- Catarina Stanford <Inscription Trainer>
 						["coords"] = {
 							-- #if AFTER LEGION
-							{ 49.8, 74.0, STORMWIND_CITY },
+							{ 49.8, 74.0, MAP.STORMWIND_CITY },
 							-- #else
-							{ 49.8, 74.6, STORMWIND_CITY },
+							{ 49.8, 74.6, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["timeline"] = { ADDED_3_0_2 },
@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				prof(JEWELCRAFTING, {
 					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(56925, {	-- Farrah Facet <Epic Gem Recipes>
-						["coord"] = { 63.8, 61.6, STORMWIND_CITY },
+						["coord"] = { 63.8, 61.6, MAP.STORMWIND_CITY },
 						["timeline"] = { ADDED_4_3_0 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = appendGroups(COMMON_CATACLYSM_EPIC_JEWELCRAFTING_RECIPES, {
@@ -556,13 +556,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					})),
 					n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
-						["coord"] = { 63.8, 61.3, STORMWIND_CITY },
+						["coord"] = { 63.8, 61.3, MAP.STORMWIND_CITY },
 						["timeline"] = { ADDED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = COMMON_CATACLYSM_JEWELCRAFTING_RECIPES,
 					}),
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
-						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
+						["coord"] = { 63.6, 61.6, MAP.STORMWIND_CITY },
 						["timeline"] = { ADDED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = appendGroups(CLASSIC_CATA_JEWELCRAFTING,
@@ -581,9 +581,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5564, {	-- Simon Tanner <Expert Leatherworker>
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 71.8, 62.8, STORMWIND_CITY },
+							{ 71.8, 62.8, MAP.STORMWIND_CITY },
 							-- #else
-							{ 67.2, 49.6, STORMWIND_CITY },
+							{ 67.2, 49.6, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -594,9 +594,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5513, {	-- Gelman Stonehand <Mining Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 59.2, 37.6, STORMWIND_CITY },
+							{ 59.2, 37.6, MAP.STORMWIND_CITY },
 							-- #else
-							{ 51.0, 17.2, STORMWIND_CITY },
+							{ 51.0, 17.2, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -608,11 +608,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coords"] = {
 							-- #if AFTER CATA
 							-- TODO: CRIEVE NOTE: Check this on Live during Cataclysm Classic!
-							{ 79.6, 61.2, STORMWIND_CITY },
+							{ 79.6, 61.2, MAP.STORMWIND_CITY },
 							-- #elseif AFTER WRATH
-							{ 80.2, 68.8, STORMWIND_CITY },
+							{ 80.2, 68.8, MAP.STORMWIND_CITY },
 							-- #else
-							{ 78.2, 48.0, STORMWIND_CITY },
+							{ 78.2, 48.0, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -629,9 +629,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(1292, {	-- Maris Granger <Skinning Trainer>
 						["coords"] = {
 							-- #if AFTER CATA
-							{ 72.6, 62.0, STORMWIND_CITY },
+							{ 72.6, 62.0, MAP.STORMWIND_CITY },
 							-- #else
-							{ 67.8, 49.0, STORMWIND_CITY },
+							{ 67.8, 49.0, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -642,9 +642,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(1346, {	-- Georgio Bolero <Tailoring Trainer>
 						["coords"] = {
 							-- #if AFTER CATA
-							{ 53.2, 81.6, STORMWIND_CITY },
+							{ 53.2, 81.6, MAP.STORMWIND_CITY },
 							-- #else
-							{ 43.6, 73.8, STORMWIND_CITY },
+							{ 43.6, 73.8, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -659,9 +659,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(9584, {	-- Jalane Ayrole <Master Shadoweave Tailor>
 						["coords"] = {
 							-- #if AFTER CATA
-							{ 40.6, 83.8, STORMWIND_CITY },
+							{ 40.6, 83.8, MAP.STORMWIND_CITY },
 							-- #else
-							{ 26.6, 77.6, STORMWIND_CITY },
+							{ 26.6, 77.6, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -674,9 +674,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.9, 81.7, STORMWIND_CITY },
+						{ 53.9, 81.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 44.2, 73.6, STORMWIND_CITY },
+						{ 44.2, 73.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -688,9 +688,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.9, 81.7, STORMWIND_CITY },
+						{ 53.9, 81.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 44.2, 73.6, STORMWIND_CITY },
+						{ 44.2, 73.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -702,9 +702,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.9, 81.7, STORMWIND_CITY },
+						{ 53.9, 81.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 44.2, 73.6, STORMWIND_CITY },
+						{ 44.2, 73.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -716,9 +716,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.9, 81.7, STORMWIND_CITY },
+						{ 53.9, 81.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 44.2, 73.6, STORMWIND_CITY },
+						{ 44.2, 73.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -730,9 +730,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42288,	-- Robby Flay
 					["coords"] = {
 						-- #if AFTER 9.2.5
-						{ 50.7, 73.8, STORMWIND_CITY },
+						{ 50.7, 73.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 50.6, 71.9, STORMWIND_CITY },
+						{ 50.6, 71.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -745,7 +745,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  57245 },	-- Gigantic Catfish
 								{ "o", 203800 },	-- Barrel of Canal Fish
 							},
-							["coord"] = { 56.8, 41.2, STORMWIND_CITY },
+							["coord"] = { 56.8, 41.2, MAP.STORMWIND_CITY },
 						}),
 						COOKING_AWARD,
 					},
@@ -753,7 +753,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(46275, {	-- A Kingdom's Heart
 					["sourceQuest"] = 46274,	-- Consoling the King
 					["qg"] = 119357,	-- Anduin Wrynn
-					["coord"] = { 49.8, 45.2, STORMWIND_CITY },
+					["coord"] = { 49.8, 45.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_2_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -763,9 +763,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5641,	-- A Lack of Fear [Ironforge]
 					},
 					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-					["coord"] = { 38.8, 26.4, STORMWIND_CITY },
+					["coord"] = { 38.8, 26.4, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_3_0 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF },
 					["lvl"] = 20,
@@ -779,7 +779,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_TWO, q(79940, {	-- A Lost Brother
 					["sourceQuest"] = 79939,	-- The Broken Hammer
 					["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
-					["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+					["coord"] = { 37.8, 31.6, MAP.STORMWIND_CITY },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -794,13 +794,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1141,	-- Angus Stern
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 51.8, 93.7, STORMWIND_CITY },
+						{ 51.8, 93.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 41.4, 89.2, STORMWIND_CITY },
+						{ 41.4, 89.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STRANGLETHORN_VALE },
+					["maps"] = { MAP.STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -814,13 +814,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1435,	-- Zardeth of the Black Claw
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 40.1, 85.3, STORMWIND_CITY },
+						{ 40.1, 85.3, MAP.STORMWIND_CITY },
 						-- #else
-						{ 26.4, 78.4, STORMWIND_CITY },
+						{ 26.4, 78.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUSKWOOD, WETLANDS },
+					["maps"] = { MAP.DUSKWOOD, MAP.WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -829,14 +829,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 2779 },	-- Tear of Tilloa
 								{ "o", 321 },	-- Tear of Tilloa
 							},
-							["coord"] = { 78.5, 36.0, DUSKWOOD },
+							["coord"] = { 78.5, 36.0, MAP.DUSKWOOD },
 						}),
 						objective(2, {	-- 0/1 Musquash Root
 							["providers"] = {
 								{ "i", 2784 },	-- Musquash Root
 								{ "o", 2084 },	-- Musquash Root
 							},
-							["coord"] = { 64.7, 75.5, WETLANDS },
+							["coord"] = { 64.7, 75.5, MAP.WETLANDS },
 						}),
 					},
 				}),
@@ -848,9 +848,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 40.1, 85.3, STORMWIND_CITY },
+						{ 40.1, 85.3, MAP.STORMWIND_CITY },
 						-- #else
-						{ 26.4, 78.4, STORMWIND_CITY },
+						{ 26.4, 78.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -869,20 +869,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(47202, {	-- A Personal Message
 					["sourceQuest"] = 46275,	-- A Kingdom's Heart
 					["qg"] = 120268,	-- Anduin Wrynn
-					["coord"] = { 85.9, 34.3, STORMWIND_CITY },
+					["coord"] = { 85.9, 34.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_2_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				heroscall(q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
 					["qg"] = 45226,	-- Naraat the Earthspeaker
-					["coord"] = { 74.6, 18.8, STORMWIND_CITY },
+					["coord"] = { 74.6, 18.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1, REMOVED_8_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(80, 80, 30),
 				})),
 				q(25154, {	-- A Present for Lila
 					["qg"] = 50480,	-- Isabel Jones
-					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
+					["coord"] = { 63.8, 61.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
@@ -896,7 +896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   5492 },	-- Katherine the Pure <Paladin Trainer>
 						{ "i", 209748 },	-- Althalaxx Orb
 					},
-					["coord"] = { 37.4, 32.0, STORMWIND_CITY },
+					["coord"] = { 37.4, 32.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 				})),
@@ -904,7 +904,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27106, {	-- A Villain Unmasked
 					["sourceQuest"] = 27092,	-- Cataclysm in the Catacombs
 					["provider"] = { "o", 205198 },	-- Pile of Explosives
-					["coord"] = { 50.4, 42.4, STORMWIND_CITY },
+					["coord"] = { 50.4, 42.4, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -939,11 +939,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5480,	-- Ilsa Corbin <Warrior Trainer>
 					},
 					["coords"] = {
-						{ 41.0, 65.8, ELWYNN_FOREST },
+						{ 41.0, 65.8, MAP.ELWYNN_FOREST },
 						-- #if AFTER WRATH
-						{ 80.4, 59.8, STORMWIND_CITY },
+						{ 80.4, 59.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 78.6, 45.6, STORMWIND_CITY },
+						{ 78.6, 45.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -954,7 +954,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(44473, {	-- A Weapon of the Alliance
 					["sourceQuest"] = 44463,	-- Demons Among Them
 					["qg"] = 100973,	-- Anduin Wrynn
-					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					["coord"] = { 85.6, 31.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { DEMONHUNTER },
 					["races"] = ALLIANCE_ONLY,
@@ -964,9 +964,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.9, 81.7, STORMWIND_CITY },
+						{ 53.9, 81.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 44.2, 73.6, STORMWIND_CITY },
+						{ 44.2, 73.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["maxReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
@@ -978,7 +978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(62567, {	-- Adventurers Wanted: Chromie's Call
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.6, STORMWIND_CITY },
+					["coord"] = { 56.2, 17.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -991,13 +991,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER LEGION
-						{ 81.6, 28.2, STORMWIND_CITY },
+						{ 81.6, 28.2, MAP.STORMWIND_CITY },
 						-- #elseif AFTER CATA
-						{ 81.5, 28.6, STORMWIND_CITY },
+						{ 81.5, 28.6, MAP.STORMWIND_CITY },
 						-- #elseif AFTER WRATH
-						{ 70.9, 35.7, STORMWIND_CITY },
+						{ 70.9, 35.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 66.9, 13.8, STORMWIND_CITY },
+						{ 66.9, 13.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_3_0 },
@@ -1013,9 +1013,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 57.7, 47.9, STORMWIND_CITY },
+						{ 57.7, 47.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.0, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1043,20 +1043,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.6, 50.0, STORMWIND_CITY },
+						{ 48.6, 50.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.6, 32.6, STORMWIND_CITY },
+						{ 37.6, 32.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL, HILLSBRAD_FOOTHILLS },
+					["maps"] = { DIRE_MAUL, MAP.HILLSBRAD_FOOTHILLS },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 					["groups"] = {
 						q(7645, {	-- Ancient Equine Spirit
 							["qg"] = 2357,	-- Merideth Carlson <Horse Breeder>
-							["coord"] = { 52.0, 55.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 52.0, 55.6, MAP.HILLSBRAD_FOOTHILLS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 13724, 20 },	-- Enriched Manna Biscuit
@@ -1084,9 +1084,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						11401,	-- Priestess Alathea <Priest Trainer>
 					},
 					["coords"] = {
-						{ 26.4, 7.6, IRONFORGE },
-						{ 38.8, 26.6, STORMWIND_CITY },
-						{ 40.0, 80.0, DARNASSUS },
+						{ 26.4, 7.6, MAP.IRONFORGE },
+						{ 38.8, 26.6, MAP.STORMWIND_CITY },
+						{ 40.0, 80.0, MAP.DARNASSUS },
 					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
@@ -1109,7 +1109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5678,	-- Arcane Feedback [Darnassus]
 					},
 					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["coord"] = { 38.8, 26.6, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
@@ -1129,9 +1129,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 52.0, 83.6, STORMWIND_CITY },
+						{ 52.0, 83.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 41.8, 76.4, STORMWIND_CITY },
+						{ 41.8, 76.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1159,9 +1159,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6089,	-- Harry Burlguard
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.1, 53.3, STORMWIND_CITY },
+						{ 77.1, 53.3, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.0, 37.2, STORMWIND_CITY },
+						{ 74.0, 37.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1185,9 +1185,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 76.8, 52.5, STORMWIND_CITY },
+						{ 76.8, 52.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 73.8, 36.6, STORMWIND_CITY },
+						{ 73.8, 36.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1248,10 +1248,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["coords"] = {
-						{ 27.6, 21.2, STORMWIND_CITY },	-- Halford Wyrmbane
-						{ 62.3, 30.3, STORMWIND_CITY },	-- Hero's Herald
-						{ 63.2, 71.4, STORMWIND_CITY },	-- Hero's Herald
-						{ 45.2, 50.2, DARNASSUS },	-- Hero's Herald
+						{ 27.6, 21.2, MAP.STORMWIND_CITY },	-- Halford Wyrmbane
+						{ 62.3, 30.3, MAP.STORMWIND_CITY },	-- Hero's Herald
+						{ 63.2, 71.4, MAP.STORMWIND_CITY },	-- Hero's Herald
+						{ 45.2, 50.2, MAP.DARNASSUS },	-- Hero's Herald
 					},
 					["timeline"] = { ADDED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -1261,9 +1261,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6090,	-- Bartleby
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 76.8, 52.5, STORMWIND_CITY },
+						{ 76.8, 52.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 73.8, 36.6, STORMWIND_CITY },
+						{ 73.8, 36.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1273,7 +1273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26488, {	-- Big Gulp
 					["qg"] = 5494,	-- Catherine Leland
-					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+					["coord"] = { 55.0, 69.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -1291,9 +1291,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.6, 50.0, STORMWIND_CITY },
+						{ 48.6, 50.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.6, 32.6, STORMWIND_CITY },
+						{ 37.6, 32.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1304,7 +1304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29412, {	-- Blown Away
 					["qg"] = 54117,	-- Vin
-					["coord"] = { 58.9, 52.7, STORMWIND_CITY },
+					["coord"] = { 58.9, 52.7, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1324,9 +1324,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1440,	-- Milton Sheaf
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.1, 30.2, STORMWIND_CITY },
+						{ 77.1, 30.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.2, 7.5, STORMWIND_CITY },
+						{ 74.2, 7.5, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1338,9 +1338,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 78.3, 70.7, STORMWIND_CITY },
+						{ 78.3, 70.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 75.8, 59.8, STORMWIND_CITY },
+						{ 75.8, 59.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1354,7 +1354,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						203475,	-- Liv Bradford <Bartender>
 						203478,	-- Stuart
 					},
-					["coord"] = { 22.6, 64.7, STORMWIND_CITY },
+					["coord"] = { 22.6, 64.7, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN, WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -1379,20 +1379,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1416,	-- Grimand Elmore
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 59.7, 33.8, STORMWIND_CITY },
+						{ 59.7, 33.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 51.6, 12.2, STORMWIND_CITY },
+						{ 51.6, 12.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUSKWOOD },
+					["maps"] = { MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/20 Burning Blood
 							["provider"] = { "i", 6844 },	-- Burning Blood
-							["coord"] = { 74.2, 77.8, DUSKWOOD },
+							["coord"] = { 74.2, 77.8, MAP.DUSKWOOD },
 							["crs"] = {
 								205,	-- Nightbane Dark Runner
 								533,	-- Nightbane Shadow Weaver
@@ -1403,7 +1403,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- 0/1 Burning Rock
 							["provider"] = { "i", 6845 },	-- Burning Rock
-							["coord"] = { 74.2, 77.8, DUSKWOOD },
+							["coord"] = { 74.2, 77.8, MAP.DUSKWOOD },
 							["cr"] = 6170,	-- Gutspill
 						}),
 					},
@@ -1411,7 +1411,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60959, {	-- Burning Crusade: Onward to Adventure in Outland
 					["sourceQuest"] = 60120,	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.2, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1419,7 +1419,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60120, {	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.3, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1427,7 +1427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60891, {	-- Cataclysm: Onward to Adventure in the Eastern Kingdoms
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.2, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1436,7 +1436,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27092, {	-- Cataclysm in the Catacombs
 					["sourceQuest"] = 27072,	-- The Old Barracks
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
-					["coord"] = { 37.2, 56.4, STORMWIND_CITY },
+					["coord"] = { 37.2, 56.4, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1445,9 +1445,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1416,	-- Grimand Elmore
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 59.7, 33.8, STORMWIND_CITY },
+						{ 59.7, 33.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 51.6, 12.2, STORMWIND_CITY },
+						{ 51.6, 12.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1466,14 +1466,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(46274, {	-- Consoling the King
 					["sourceQuest"] = 46272,	-- Summons to the Keep
 					["qg"] = 119338,	-- Genn Greymane
-					["coord"] = { 85.7, 32.1, STORMWIND_CITY },
+					["coord"] = { 85.7, 32.1, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_2_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32469, {	-- Crystal Clarity (A)
 					["sourceQuest"] = 32470,	-- Light Camera Action (A)
 					["qg"] = 16908,	-- Arielle Snapflash
-					["coord"] = { 61.2, 22.8, STORMWIND_CITY },
+					["coord"] = { 61.2, 22.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "toyID", 122674 },	-- S.E.L.F.I.E. Camera MkII
@@ -1492,7 +1492,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(44463, {	-- Demons Among Them
 					["sourceQuest"] = 44471,	-- Second Sight
 					["qg"] = 102585,	-- Jace Darkweaver
-					["coord"] = { 84.4, 33.6, STORMWIND_CITY },
+					["coord"] = { 84.4, 33.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DEMONHUNTER },
@@ -1505,7 +1505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(40593, {	-- Demons Among Us
 					["sourceQuest"] = 40517,	-- The Fallen Lion
 					["qg"] = 100675,	-- Jace Darkweaver
-					["coord"] = { 85.2, 32.3, STORMWIND_CITY },
+					["coord"] = { 85.2, 32.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1530,7 +1530,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5640,	-- Desperate Prayer [Darnassus]
 					},
 					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["coord"] = { 38.8, 26.6, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -1554,7 +1554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5640,	-- Desperate Prayer [Darnassus]
 					},
 					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
-					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["coord"] = { 20.8, 50.2, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -1570,7 +1570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26420, {	-- Diggin' For Worms
 					["qg"] = 5494,	-- Catherine Leland
-					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+					["coord"] = { 55.0, 69.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  58788 },	-- Overgrown Earthworm
 								{ "o", 204281 },	-- Worm Mound
 							},
-							["coord"] = { 57.7, 14.1, STORMWIND_CITY },
+							["coord"] = { 57.7, 14.1, MAP.STORMWIND_CITY },
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
@@ -1598,9 +1598,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.0, 61.2, STORMWIND_CITY },
+						{ 77.0, 61.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.2, 47.6, STORMWIND_CITY },
+						{ 74.2, 47.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1615,9 +1615,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.2, 61.0, STORMWIND_CITY },
+						{ 77.2, 61.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.2, 47.6, STORMWIND_CITY },
+						{ 74.2, 47.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1627,9 +1627,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(78091, {	-- Earning Your Salt
 					["sourceQuest"] = 78090,	-- A Second Opinion
 					["qg"] = 5495,	-- Ursula Deline <Warlock Trainer>
-					["coord"] = { 26.2, 77.4, STORMWIND_CITY },
+					["coord"] = { 26.2, 77.4, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { REDRIDGE_MOUNTAINS },
+					["maps"] = { MAP.REDRIDGE_MOUNTAINS },
 					["classes"] = { PALADIN },
 					["groups"] = {
 						objective(1, {	-- 0/14 Summoner's Salt
@@ -1649,7 +1649,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(25156, {	-- Elemental Goo
 					["qg"] = 50480,	-- Isabel Jones
-					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
+					["coord"] = { 63.8, 61.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
@@ -1662,7 +1662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5675,	-- Elune's Grace [Ironforge]
 					},
 					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["coord"] = { 38.8, 26.6, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -1684,13 +1684,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.6, 50.0, STORMWIND_CITY },
+						{ 48.6, 50.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.6, 32.6, STORMWIND_CITY },
+						{ 37.6, 32.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { IRONFORGE },
+					["maps"] = { MAP.IRONFORGE },
 					["cost"] = 1500000,	-- 150g
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -1704,13 +1704,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.6, 50.0, STORMWIND_CITY },
+						{ 48.6, 50.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.6, 32.6, STORMWIND_CITY },
+						{ 37.6, 32.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { EASTERN_PLAGUELANDS },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -1719,9 +1719,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 14564 },	-- Terrordale Spirit
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 16.4, 31.8, EASTERN_PLAGUELANDS },
+								{ 16.4, 31.8, MAP.EASTERN_PLAGUELANDS },
 								-- #else
-								{ 19.6, 36.8, EASTERN_PLAGUELANDS },
+								{ 19.6, 36.8, MAP.EASTERN_PLAGUELANDS },
 								-- #endif
 							},
 						}),
@@ -1733,13 +1733,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27060,	-- Unholy Cow
 					},
 					["qg"] = 44293,	-- Anduin Wrynn <Prince of Stormwind>
-					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
+					["coord"] = { 85.7, 31.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58708, {	-- Fame Waits for Gnome One
 					["qg"] = 162393,	-- Gila Crosswires
-					["coord"] = { 52.7, 14.1, STORMWIND_CITY },
+					["coord"] = { 52.7, 14.1, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1748,9 +1748,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42288,	-- Robby Flay
 					["coords"] = {
 						-- #if AFTER 9.2.5
-						{ 50.7, 73.8, STORMWIND_CITY },
+						{ 50.7, 73.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 50.6, 71.9, STORMWIND_CITY },
+						{ 50.6, 71.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -1763,7 +1763,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 57175 },	-- Canal Crab
 								{ "n", 42339 },	-- Canal Crab
 							},
-							["coord"] = { 47.8, 68.4, STORMWIND_CITY },
+							["coord"] = { 47.8, 68.4, MAP.STORMWIND_CITY },
 						}),
 						COOKING_AWARD,
 					},
@@ -1776,13 +1776,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.6, 37.2, STORMWIND_CITY },
+						{ 64.6, 37.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 58.0, 16.8, STORMWIND_CITY },
+						{ 58.0, 16.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { RAZORFEN_KRAUL, WETLANDS, STONETALON_MOUNTAINS },
+					["maps"] = { RAZORFEN_KRAUL, MAP.WETLANDS, MAP.STONETALON_MOUNTAINS },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1816,9 +1816,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 78.3, 70.7, STORMWIND_CITY },
+						{ 78.3, 70.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 75.8, 59.8, STORMWIND_CITY },
+						{ 75.8, 59.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1842,8 +1842,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						{ 47.2, 61.8, THE_EXODAR },	-- Edirah
-						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
-						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
+						{ 37.6, 80.0, MAP.DARNASSUS },	-- Tarelvir
+						{ 26.2, 6.2, MAP.IRONFORGE },	-- Nittlebur Sparkfizzle
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1857,9 +1857,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5413,	-- Furen Longbeard
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.6, 37.2, STORMWIND_CITY },
+						{ 64.6, 37.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 58.0, 16.8, STORMWIND_CITY },
+						{ 58.0, 16.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1875,7 +1875,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1685, {	-- Gakin's Summons (Voidwalker)
 					["altQuests"] = { 1715 },	-- The Slaughtered Lamb
 					["qg"] = 6121,	-- Remen Marcot
-					["coord"] = { 44.4, 66.2, ELWYNN_FOREST },
+					["coord"] = { 44.4, 66.2, MAP.ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
@@ -1884,7 +1884,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1717, {	-- Gakin's Summons (Succubus)
 					["qg"] = 6120,	-- Lago Blackwrench
-					["coord"] = { 47.6, 9.6, IRONFORGE },
+					["coord"] = { 47.6, 9.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
@@ -1896,13 +1896,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 49.5, 85.8, STORMWIND_CITY },
+						{ 49.5, 85.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 38.6, 79.6, STORMWIND_CITY },
+						{ 38.6, 79.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { LOCH_MODAN },
+					["maps"] = { MAP.LOCH_MODAN },
 					["cost"] = { { "i", 2589, 10 } },	-- Linen Cloth
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
@@ -1913,14 +1913,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 7249 },	-- Charged Rift Gem
 								{ "o", 271 },	-- Miners' League Crates
 							},
-							["coord"] = { 35.0, 27.0, LOCH_MODAN },
+							["coord"] = { 35.0, 27.0, MAP.LOCH_MODAN },
 						}),
 					},
 				}),
 				q(49976, {	-- Gifts of the Fallen
 					["sourceQuest"] = 50371,	-- Summons to Stormwind
 					["qg"] = 132255,	-- Master Mathias Shaw
-					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
+					["coord"] = { 39.0, 62.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1944,7 +1944,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
 						{ "i", 10789 },	-- Manual of Engineering Disciplines
 					},
-					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
+					["coord"] = { 55.0, 8.6, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = ENGINEERING,
@@ -1971,7 +1971,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
 						{ "i", 10789 },	-- Manual of Engineering Disciplines
 					},
-					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
+					["coord"] = { 55.0, 8.6, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = ENGINEERING,
@@ -1981,7 +1981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(39800, {	-- Greymane's Gambit
 					["sourceQuest"] = 38206,	-- Making the Rounds
 					["qg"] = 96663,	-- Genn Greymane
-					["coord"] = { 18.6, 50.8, STORMWIND_CITY },
+					["coord"] = { 18.6, 50.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2019,9 +2019,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.6, 37.2, STORMWIND_CITY },
+						{ 64.6, 37.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 58.0, 16.8, STORMWIND_CITY },
+						{ 58.0, 16.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2035,9 +2035,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1416,	-- Grimand Elmore
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 59.7, 33.8, STORMWIND_CITY },
+						{ 59.7, 33.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 51.6, 12.2, STORMWIND_CITY },
+						{ 51.6, 12.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2058,9 +2058,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 59.7, 33.8, STORMWIND_CITY },
+						{ 59.7, 33.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 51.6, 12.2, STORMWIND_CITY },
+						{ 51.6, 12.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2071,7 +2071,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(66420, {	-- Happy Hour
 					["sourceQuest"] = 66390,	-- Missing Merchandise
 					["qg"] = 188342,	-- Onnesa
-					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
+					["coord"] = { 51.5, 70.4, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2087,9 +2087,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 62.3, 67.9, STORMWIND_CITY },
+						{ 62.3, 67.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 55.1, 56.0, STORMWIND_CITY },
+						{ 55.1, 56.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2097,7 +2097,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27064, {	-- He's Holding Out on Us
 					["sourceQuest"] = 26997,	-- The Usual Suspects
 					["qg"] = 44293,	-- Anduin Wrynn <Prince of Stormwind>
-					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
+					["coord"] = { 85.7, 31.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2107,11 +2107,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5497,	-- Jennea Cannon <Mage Trainer>
 					},
 					["coords"] = {
-						{ 27.0, 8.2, IRONFORGE },
+						{ 27.0, 8.2, MAP.IRONFORGE },
 						-- #if AFTER WRATH
-						{ 49.5, 85.8, STORMWIND_CITY },
+						{ 49.5, 85.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 38.6, 79.6, STORMWIND_CITY },
+						{ 38.6, 79.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2122,7 +2122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26414, {	-- Hitting a Walleye
 					["qg"] = 5494,	-- Catherine Leland
-					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+					["coord"] = { 55.0, 69.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -2136,9 +2136,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 78.3, 70.7, STORMWIND_CITY },
+						{ 78.3, 70.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 75.8, 59.8, STORMWIND_CITY },
+						{ 75.8, 59.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2149,13 +2149,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1646,	-- Baros Alexston <City Architect>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 57.7, 47.9, STORMWIND_CITY },
+						{ 57.7, 47.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.0, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WESTFALL },
+					["maps"] = { MAP.WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -2164,7 +2164,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 2998 },	-- A Simple Compass
 								{ "o", 1166 },	-- Alexston's Chest
 							},
-							["coord"] = { 36.3, 54.6, WESTFALL },
+							["coord"] = { 36.3, 54.6, MAP.WESTFALL },
 						}),
 					},
 				}),
@@ -2184,7 +2184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(44120, {	-- Illidari Allies
 					["sourceQuest"] = 40593,	-- Demons Among Us
 					["qg"] = 100973,	-- Anduin Wrynn
-					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					["coord"] = { 85.6, 31.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2196,13 +2196,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 63.0, 36.4, STORMWIND_CITY },
+						{ 63.0, 36.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 56.0, 16.0, STORMWIND_CITY },
+						{ 56.0, 16.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { STRANGLETHORN_VALE },
+					["maps"] = { MAP.STRANGLETHORN_VALE },
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -2211,9 +2211,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 69.5, 40.4, STORMWIND_CITY },
+						{ 69.5, 40.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 64.3, 20.7, STORMWIND_CITY },
+						{ 64.3, 20.7, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2225,9 +2225,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 482,	-- Elling Trias <Master of Cheese>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 66.0, 74.1, STORMWIND_CITY },
+						{ 66.0, 74.1, MAP.STORMWIND_CITY },
 						-- #else
-						{ 60.0, 64.3, STORMWIND_CITY },
+						{ 60.0, 64.3, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2239,9 +2239,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 49.5, 85.8, STORMWIND_CITY },
+						{ 49.5, 85.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 38.6, 79.6, STORMWIND_CITY },
+						{ 38.6, 79.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2258,9 +2258,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 51.0, 95.0, STORMWIND_CITY },
+								{ 51.0, 95.0, MAP.STORMWIND_CITY },
 								-- #else
-								{ 39.4, 86.0, STORMWIND_CITY },
+								{ 39.4, 86.0, MAP.STORMWIND_CITY },
 								-- #endif
 							},
 							["cr"] = 6492,	-- Rift Spawn
@@ -2272,9 +2272,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 49.6, 85.4, STORMWIND_CITY },
+								{ 49.6, 85.4, MAP.STORMWIND_CITY },
 								-- #else
-								{ 38.7, 79.1, STORMWIND_CITY },
+								{ 38.7, 79.1, MAP.STORMWIND_CITY },
 								-- #endif
 							},
 						}),
@@ -2285,9 +2285,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 49.6, 85.4, STORMWIND_CITY },
+								{ 49.6, 85.4, MAP.STORMWIND_CITY },
 								-- #else
-								{ 38.7, 79.1, STORMWIND_CITY },
+								{ 38.7, 79.1, MAP.STORMWIND_CITY },
 								-- #endif
 							},
 						}),
@@ -2302,8 +2302,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o",   409311 },	-- Spear of Mannoroth
 					},
 					["coords"] = {
-						{ 26.2, 77.4, STORMWIND_CITY },
-						{ 89.5, 76.9, ASHENVALE },
+						{ 26.2, 77.4, MAP.STORMWIND_CITY },
+						{ 89.5, 76.9, MAP.ASHENVALE },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
@@ -2325,13 +2325,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7766,	-- Tyrion
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 73.2, 35.7, STORMWIND_CITY },
+						{ 73.2, 35.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 69.2, 14.6, STORMWIND_CITY },
+						{ 69.2, 14.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["cost"] = { { "i", 4306, 3 } },	-- Silk Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -2341,7 +2341,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   8683 },	-- Clara's Fresh Apple
 								{ "o", 142076 },	-- Clara's Fresh Apples
 							},
-							["coord"] = { 34.0, 57.2, ELWYNN_FOREST },
+							["coord"] = { 34.0, 57.2, MAP.ELWYNN_FOREST },
 						}),
 					},
 				}),
@@ -2354,8 +2354,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						{ 47.2, 61.8, THE_EXODAR },	-- Edirah
-						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
-						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
+						{ 37.6, 80.0, MAP.DARNASSUS },	-- Tarelvir
+						{ 26.2, 6.2, MAP.IRONFORGE },	-- Nittlebur Sparkfizzle
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2372,9 +2372,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.6, 37.2, STORMWIND_CITY },
+						{ 64.6, 37.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 58.0, 16.8, STORMWIND_CITY },
+						{ 58.0, 16.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2400,7 +2400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.2, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -2408,14 +2408,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(65896, {	-- Let the Healing Begin
 					["qg"] = 190830,	-- Otan Tennoh
-					["coord"] = { 44.2, 57.0, STORMWIND_CITY },
+					["coord"] = { 44.2, 57.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_10_0_2 },
 					["races"] = { DRACTHYR_ALLIANCE },
 					["classes"] = { EVOKER },
 				}),
 				q(32470, {	-- Light Camera Action (A)
 					["qg"] = 16908,	-- Arielle Snapflash
-					["coord"] = { 61.2, 22.8, STORMWIND_CITY },
+					["coord"] = { 61.2, 22.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5 },
 					["cost"] = { { "i", 4406, 1 } },	-- Standard Scope
 					["races"] = ALLIANCE_ONLY,
@@ -2423,11 +2423,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Iron Box
 							["provider"] = { "i", 155856 },	-- Iron Box
-							["coord"] = { 68.1, 66.9, STORMWIND_CITY },
+							["coord"] = { 68.1, 66.9, MAP.STORMWIND_CITY },
 						}),
 						objective(3, {	-- 0/1 Russet Belt
 							["provider"] = { "i", 3593 },	-- Russet Belt
-							["coord"] = { 53.2, 81.8, STORMWIND_CITY },
+							["coord"] = { 53.2, 81.8, MAP.STORMWIND_CITY },
 						}),
 						i(122637, {	-- S.E.L.F.I.E. Camera
 							["timeline"] = { ADDED_6_1_0 },
@@ -2436,7 +2436,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7670, {	-- Lord Grayson Shadowbreaker [Ironforge]
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-					["coord"] = { 23.4, 6.2, IRONFORGE },
+					["coord"] = { 23.4, 6.2, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -2447,9 +2447,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6171,	-- Duthorian Rall
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2463,9 +2463,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 78.3, 70.7, STORMWIND_CITY },
+						{ 78.3, 70.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 75.8, 59.8, STORMWIND_CITY },
+						{ 75.8, 59.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2475,7 +2475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(38206, {	-- Making the Rounds
 					["sourceQuest"] = 38035,	-- A Royal Summons
 					["qg"] = 96644,	-- Sky Admiral Rogers
-					["coord"] = { 18.8, 42.6, STORMWIND_CITY },
+					["coord"] = { 18.8, 42.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2484,9 +2484,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 52.0, 83.6, STORMWIND_CITY },
+						{ 52.0, 83.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 41.8, 76.4, STORMWIND_CITY },
+						{ 41.8, 76.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2505,7 +2505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(65047, {	-- Mark of the Nightwing Raven
 					["name"] = "Mark of the Nightwing Raven",	-- TODO: What is this?
 					["qg"] = 44395,	-- Celestine of the Harvest
-					["coord"] = { 57.6, 24.8, STORMWIND_CITY },
+					["coord"] = { 57.6, 24.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_1_5 },
 					["classes"] = { DRUID },
 				}),
@@ -2514,13 +2514,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6089,	-- Harry Burlguard
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.1, 53.3, STORMWIND_CITY },
+						{ 77.1, 53.3, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.0, 37.2, STORMWIND_CITY },
+						{ 74.0, 37.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -2529,9 +2529,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 78.3, 70.7, STORMWIND_CITY },
+						{ 78.3, 70.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 75.8, 59.8, STORMWIND_CITY },
+						{ 75.8, 59.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2547,9 +2547,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.6, 37.2, STORMWIND_CITY },
+						{ 64.6, 37.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 58.0, 16.8, STORMWIND_CITY },
+						{ 58.0, 16.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2562,9 +2562,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 338,	-- Mazen Mac'Nadir
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 51.8, 74.3, STORMWIND_CITY },
+						{ 51.8, 74.3, MAP.STORMWIND_CITY },
 						-- #else
-						{ 41.4, 64.2, STORMWIND_CITY },
+						{ 41.4, 64.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2576,13 +2576,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5386,	-- Acolyte Dellis
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 51.4, 73.8, STORMWIND_CITY },
+						{ 51.4, 73.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 40.8, 64.0, STORMWIND_CITY },
+						{ 40.8, 64.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { SWAMP_OF_SORROWS },
+					["maps"] = { MAP.SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
 					["groups"] = {
@@ -2610,13 +2610,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 49.5, 85.8, STORMWIND_CITY },
+						{ 49.5, 85.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 38.6, 79.6, STORMWIND_CITY },
+						{ 38.6, 79.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -2626,7 +2626,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 7206 },	-- Mirror Lake Water Sample
 								{ "i", 7207 },	-- Jennea's Flask
 							},
-							["coord"] = { 28.0, 62.0, ELWYNN_FOREST },
+							["coord"] = { 28.0, 62.0, MAP.ELWYNN_FOREST },
 						}),
 						i(7508, {	-- Ley Orb
 							-- #if AFTER 4.0.3
@@ -2644,14 +2644,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(66390, {	-- Missing Merchandise
 					["qg"] = 188342,	-- Onnesa
-					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
+					["coord"] = { 51.5, 70.4, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27038, {	-- Missing Parts
 					["sourceQuest"] = 26975,	-- Rallying the Fleet
 					["qg"] = 44749,	-- Supply Sergeant Graves
-					["coord"] = { 33.2, 39.4, STORMWIND_CITY },
+					["coord"] = { 33.2, 39.4, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2668,7 +2668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.2, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -2676,7 +2676,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60125, {	-- Mists of Pandaria: To Pandaria!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.3, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -2684,13 +2684,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26960, {	-- My Son, the Prince
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
-					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
+					["coord"] = { 85.8, 31.7, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25105, {	-- Nibbler! No!
 					["qg"] = 50480,	-- Isabel Jones
-					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
+					["coord"] = { 63.8, 61.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
@@ -2699,7 +2699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25155, {	-- Ogrezonians in the Mood
 					["qg"] = 50480,	-- Isabel Jones
-					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
+					["coord"] = { 63.8, 61.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
@@ -2717,13 +2717,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 79.8, 38.6, STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
+						{ 79.8, 38.6, MAP.STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
 						-- #else
-						{ 78.0, 18.0, STORMWIND_CITY },	-- Highlord Bolvar Fordragon
+						{ 78.0, 18.0, MAP.STORMWIND_CITY },	-- Highlord Bolvar Fordragon
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { EASTERN_PLAGUELANDS },
+					["maps"] = { MAP.EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
@@ -2731,9 +2731,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 23.0, 68.2, EASTERN_PLAGUELANDS },
+								{ 23.0, 68.2, MAP.EASTERN_PLAGUELANDS },
 								-- #else
-								{ 26.6, 74.8, EASTERN_PLAGUELANDS },
+								{ 26.6, 74.8, MAP.EASTERN_PLAGUELANDS },
 								-- #endif
 							},
 						}),
@@ -2752,9 +2752,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42288,	-- Robby Flay
 					["coords"] = {
 						-- #if AFTER 9.2.5
-						{ 50.7, 73.8, STORMWIND_CITY },
+						{ 50.7, 73.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 50.6, 71.9, STORMWIND_CITY },
+						{ 50.6, 71.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -2767,7 +2767,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  57246 },	-- Confectioners' Sugar
 								{ "o", 203801 },	-- Sack of Confectioner's Sugar
 							},
-							["coord"] = { 77.6, 53.2, STORMWIND_CITY },
+							["coord"] = { 77.6, 53.2, MAP.STORMWIND_CITY },
 						}),
 						COOKING_AWARD,
 					},
@@ -2779,9 +2779,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 58.1, 67.5, STORMWIND_CITY },
+						{ 58.1, 67.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.5, 55.3, STORMWIND_CITY },
+						{ 49.5, 55.3, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -2792,7 +2792,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26997,	-- The Usual Suspects
 					},
 					["qg"] = 44293,	-- Anduin Wrynn <Prince of Stormwind>
-					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
+					["coord"] = { 85.7, 31.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2800,9 +2800,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42288,	-- Robby Flay
 					["coords"] = {
 						-- #if AFTER 9.2.5
-						{ 50.7, 73.8, STORMWIND_CITY },
+						{ 50.7, 73.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 50.6, 71.9, STORMWIND_CITY },
+						{ 50.6, 71.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -2815,7 +2815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  57137 },	-- Stormwind Pumpkin
 								{ "o", 203751 },	-- Stormwind Pumpkin
 							},
-							["coord"] = { 55.2, 11.4, STORMWIND_CITY },
+							["coord"] = { 55.2, 11.4, MAP.STORMWIND_CITY },
 						}),
 						COOKING_AWARD,
 					},
@@ -2825,13 +2825,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5694,	-- High Sorcerer Andromath
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.7, 87.6, STORMWIND_CITY },
+						{ 48.7, 87.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.6, 81.6, STORMWIND_CITY },
+						{ 37.6, 81.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUSKWOOD },
+					["maps"] = { MAP.DUSKWOOD },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["lvl"] = 26,
@@ -2848,7 +2848,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26975, {	-- Rallying the Fleet
 					["sourceQuest"] = 26960,	-- My Son, the Prince
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
-					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
+					["coord"] = { 85.8, 31.7, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2861,9 +2861,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6946,	-- Renzik "The Shiv" <SI:7 Operative>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 78.8, 70.8, STORMWIND_CITY },
+						{ 78.8, 70.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 75.8, 60.2, STORMWIND_CITY },
+						{ 75.8, 60.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2873,7 +2873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1919, {	-- Report to Jennea
 					["qg"] = 7312,	-- Dink <Mage Trainer>
-					["coord"] = { 26.8, 8.6, IRONFORGE },
+					["coord"] = { 26.8, 8.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
@@ -2883,12 +2883,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(58498, {	-- Return of the Warrior King
 					["sourceQuest"] = 58496,	-- An Unwelcome Advisor
 					["qg"] = 154532,	-- Magni Bronzebeard <The Speaker>
-					["coord"] = { 85.2, 32.5, STORMWIND_CITY },
+					["coord"] = { 85.2, 32.5, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						o(344604, {	-- Fearbreaker
-							["coord"] = { 87.6, 35.1, STORMWIND_CITY },
+							["coord"] = { 87.6, 35.1, MAP.STORMWIND_CITY },
 							["groups"] = { i(175151) },	-- Fearbreaker (QI!)
 						}),
 					},
@@ -2899,9 +2899,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
 						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
-					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
+					["coord"] = { 71.0, 72.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(6285, {	-- Return to Lewis
@@ -2915,13 +2915,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 71.0, 72.5, STORMWIND_CITY },
+						{ 71.0, 72.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 66.2, 62.4, STORMWIND_CITY },
+						{ 66.2, 62.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WESTFALL },
+					["maps"] = { MAP.WESTFALL },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
@@ -2936,7 +2936,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5633,	-- Returning Home [Ironforge]
 					},
 					["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
-					["coord"] = { 38.6, 26.8, STORMWIND_CITY },
+					["coord"] = { 38.6, 26.8, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -2962,7 +2962,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5633,	-- Returning Home [Ironforge]
 					},
 					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
-					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["coord"] = { 20.8, 50.2, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -2979,7 +2979,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(26442, {	-- Rock Lobster
 					["qg"] = 5494,	-- Catherine Leland
-					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+					["coord"] = { 55.0, 69.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -2990,7 +2990,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  58809 },	-- Rock Lobster
 								{ "o", 204284 },	-- Stormwind Lobster Trap
 							},
-							["coord"] = { 21.5, 36.6, STORMWIND_CITY },
+							["coord"] = { 21.5, 36.6, MAP.STORMWIND_CITY },
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
@@ -2998,7 +2998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(44471, {	-- Second Sight
 					["sourceQuest"] = 39691,	-- The Call of War
 					["qg"] = 102585,	-- Jace Darkweaver
-					["coord"] = { 84.4, 33.6, STORMWIND_CITY },
+					["coord"] = { 84.4, 33.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DEMONHUNTER },
@@ -3006,16 +3006,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78194, {	-- Secrets of Elune (1/2)
 					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
-					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["coord"] = { 20.8, 50.2, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { DUSKWOOD },
+					["maps"] = { MAP.DUSKWOOD },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF, HUMAN },
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/10 Dire Wolf Paw
 							["provider"] = { "i", 210053 },	-- Dire Wolf Paw
-							["coord"] = { 67.2, 27.2, DUSKWOOD },
+							["coord"] = { 67.2, 27.2, MAP.DUSKWOOD },
 							["crs"] = {
 								565,	-- Rabid Dire Wolf
 								213,	-- Starving Dire Wolf
@@ -3028,9 +3028,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the night elves.",
 					["sourceQuest"] = 78194,	-- Secrets of Elune (1/2)
 					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
-					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["coord"] = { 20.8, 50.2, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { DARKSHORE },
+					["maps"] = { MAP.DARKSHORE },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF, HUMAN },
 					["lvl"] = 17,
@@ -3049,9 +3049,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 57.7, 47.9, STORMWIND_CITY },
+						{ 57.7, 47.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.0, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3061,9 +3061,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(79077, {	-- Sharing the Faith
 					["qg"] = 1212,	-- Bishop Farthing
-					["coord"] = { 39.2, 28.0, STORMWIND_CITY },
+					["coord"] = { 39.2, 28.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF, HUMAN },
 					["lvl"] = 5,
@@ -3080,20 +3080,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 78.3, 70.7, STORMWIND_CITY },
+						{ 78.3, 70.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 75.8, 59.8, STORMWIND_CITY },
+						{ 75.8, 59.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Defias Shipping Schedule
 							["provider"] = { "i", 7675 },	-- Defias Shipping Schedule
-							["coord"] = { 48.2, 87.6, ELWYNN_FOREST },
+							["coord"] = { 48.2, 87.6, MAP.ELWYNN_FOREST },
 							["cr"] = 6846,	-- Defias Dockmaster
 						}),
 						i(7298, {	-- Blade of Cunning
@@ -3105,14 +3105,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_THREE, q(81762, {	-- Some Good News
 					["sourceQuest"] = 79970,	-- Aeonas the Vindicated
 					["qg"] = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-					["coord"] = { 37.6, 31.6, STORMWIND_CITY },
+					["coord"] = { 37.6, 31.6, MAP.STORMWIND_CITY },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
 						objective(1, {	-- Speak with Katherine the Pure
 							["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
-							["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+							["coord"] = { 37.8, 31.6, MAP.STORMWIND_CITY },
 						}),
 					},
 				})),
@@ -3135,7 +3135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}), {
 					["questID"] = 75939,	-- Brother Romulus HQT
 					["qg"] = 205278,	-- Brother Romulus
-					["coord"] = { 38.6, 28.8, STORMWIND_CITY },
+					["coord"] = { 38.6, 28.8, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -3145,9 +3145,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1444,	-- Brother Kristoff
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 55.0, 54.2, STORMWIND_CITY },
+						{ 55.0, 54.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 45.7, 38.3, STORMWIND_CITY },
+						{ 45.7, 38.3, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3162,9 +3162,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 59.7, 33.8, STORMWIND_CITY },
+						{ 59.7, 33.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 51.6, 12.2, STORMWIND_CITY },
+						{ 51.6, 12.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3176,9 +3176,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 84.6, 24.2, STORMWIND_CITY },
+						{ 84.6, 24.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 71.6, 7.6, STORMWIND_CITY },
+						{ 71.6, 7.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3195,7 +3195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(50371, {	-- Summons to Stormwind
 					["qg"] = 132255,	-- Master Mathias Shaw
-					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
+					["coord"] = { 39.0, 62.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3207,20 +3207,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 39.2, 85.2, STORMWIND_CITY },
+						{ 39.2, 85.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 25.4, 78.4, STORMWIND_CITY },
+						{ 25.4, 78.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- Surena's Choker
 							["provider"] = { "i", 6810 },	-- Surena's Choker
-							["coord"] = { 71.0, 80.6, ELWYNN_FOREST },
+							["coord"] = { 71.0, 80.6, MAP.ELWYNN_FOREST },
 							["cr"] = 881,	-- Surena Caledon
 						}),
 					},
@@ -3230,9 +3230,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7766,	-- Tyrion
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 73.2, 35.7, STORMWIND_CITY },
+						{ 73.2, 35.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 69.2, 14.6, STORMWIND_CITY },
+						{ 69.2, 14.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3251,7 +3251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 42782,	-- To Be Prepared
 					-- ["altQuests"] = { 43806 },	-- Scenario Skip (A)
 					["qg"] = 108916,	-- Knight Dameron
-					["coord"] = { 19.0, 26.1, STORMWIND_CITY },
+					["coord"] = { 19.0, 26.1, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = exclude({ DEMONHUNTER }, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
@@ -3275,7 +3275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item. You will then go to 85, 69 in Elywnn Forest located at the Eastvale Logging Camp. From there you will go to the bedroom on the second floor to talk to Alaina. After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",
 									["groups"] = {
 										o(252069, {	-- Alaina's Belongings
-											["coord"] = { 85.6, 69.7, ELWYNN_FOREST },
+											["coord"] = { 85.6, 69.7, MAP.ELWYNN_FOREST },
 											["groups"] = {
 												i(139391),	-- Alaina's Bonnet (COSMETIC!)
 											},
@@ -3289,7 +3289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(51795, {	-- The Battle for Lordaeron
 					["sourceQuest"] = 53370,	-- Hour of Reckoning
 					["qg"] = 144095,	-- Master Mathias Shaw
-					["coord"] = { 22.4, 32.6, STORMWIND_CITY },
+					["coord"] = { 22.4, 32.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3299,9 +3299,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 39.2, 85.2, STORMWIND_CITY },
+						{ 39.2, 85.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 25.4, 78.4, STORMWIND_CITY },
+						{ 25.4, 78.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3327,9 +3327,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 39.2, 85.2, STORMWIND_CITY },
+						{ 39.2, 85.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 25.4, 78.4, STORMWIND_CITY },
+						{ 25.4, 78.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3354,9 +3354,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 39.2, 85.2, STORMWIND_CITY },
+						{ 39.2, 85.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 25.4, 78.4, STORMWIND_CITY },
+						{ 25.4, 78.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3375,7 +3375,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(39691, {	-- The Call of War
 					["qg"] = 97296,	-- Archmage Khadgar
-					["coord"] = { 72.4, 47.2, STORMWIND_CITY },
+					["coord"] = { 72.4, 47.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DEMONHUNTER },
@@ -3388,9 +3388,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 51.6, 69.4, STORMWIND_CITY },
+						{ 51.6, 69.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 41.2, 58.0, STORMWIND_CITY },
+						{ 41.2, 58.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3402,9 +3402,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.6, 50.0, STORMWIND_CITY },
+						{ 48.6, 50.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.6, 32.6, STORMWIND_CITY },
+						{ 37.6, 32.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3419,21 +3419,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28826, {	-- The Eye of the Storm
 					["sourceQuest"] = 28825,	-- A Personal Summons
 					["qg"] = 45226,	-- Naraat the Earthspeaker
-					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
+					["coord"] = { 74.4, 18.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["groups"] = {
 						objective(1, {	-- Peered into the Waters of Farseeing
 							["provider"] = { "o", 207416 },	-- Waters of Farseeing
-							["coord"] = { 74.3, 19.5, STORMWIND_CITY },
+							["coord"] = { 74.3, 19.5, MAP.STORMWIND_CITY },
 						}),
 					},
 				}),
 				q(40517, {	-- The Fallen Lion
 					["sourceQuest"] = 42740,	-- The Battle for Broken Shore (QuestID 43806 - Scenario Skip)
 					["qg"] = 100395,	-- Genn Greymane
-					["coord"] = { 19.8, 34.9, STORMWIND_CITY },
+					["coord"] = { 19.8, 34.9, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3450,9 +3450,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 79.8, 38.6, STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
+						{ 79.8, 38.6, MAP.STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
 						-- #else
-						{ 78.0, 18.0, STORMWIND_CITY },	-- Highlord Bolvar Fordragon
+						{ 78.0, 18.0, MAP.STORMWIND_CITY },	-- Highlord Bolvar Fordragon
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3464,9 +3464,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 482,	-- Elling Trias <Master of Cheese>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 66.0, 74.1, STORMWIND_CITY },
+						{ 66.0, 74.1, MAP.STORMWIND_CITY },
 						-- #else
-						{ 60.0, 64.3, STORMWIND_CITY },
+						{ 60.0, 64.3, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3477,9 +3477,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42288,	-- Robby Flay
 					["coords"] = {
 						-- #if AFTER 9.2.5
-						{ 50.7, 73.8, STORMWIND_CITY },
+						{ 50.7, 73.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 50.6, 71.9, STORMWIND_CITY },
+						{ 50.6, 71.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -3492,14 +3492,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  57197 },	-- Juicy Apple
 								{ "o", 203762 },	-- Juicy Apple
 							},
-							["coord"] = { 55.5, 74.2, STORMWIND_CITY },
+							["coord"] = { 55.5, 74.2, MAP.STORMWIND_CITY },
 						}),
 						COOKING_AWARD,
 					},
 				}),
 				q(25157, {	-- The Latest Fashion!
 					["qg"] = 50480,	-- Isabel Jones
-					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
+					["coord"] = { 63.8, 61.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
@@ -3508,7 +3508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				heroscall(q(40519, {	-- The Legion Returns (Alliance)
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.3, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3517,9 +3517,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4982,	-- Thomas <Altar Boy>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 49.6, 44.5, STORMWIND_CITY },
+						{ 49.6, 44.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 28.3, STORMWIND_CITY },
+						{ 39.8, 28.3, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3534,9 +3534,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 80.3, 44.1, STORMWIND_CITY },
+						{ 80.3, 44.1, MAP.STORMWIND_CITY },
 						-- #else
-						{ 78.4, 25.4, STORMWIND_CITY },
+						{ 78.4, 25.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3551,9 +3551,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 76.3, 85.1, STORMWIND_CITY },
+						{ 76.3, 85.1, MAP.STORMWIND_CITY },
 						-- #else
-						{ 73.2, 78.6, STORMWIND_CITY },
+						{ 73.2, 78.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3568,20 +3568,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 66.0, 74.1, STORMWIND_CITY },
+						{ 66.0, 74.1, MAP.STORMWIND_CITY },
 						-- #else
-						{ 60.0, 64.3, STORMWIND_CITY },
+						{ 60.0, 64.3, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUSKWOOD },
+					["maps"] = { MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1244, {	-- The Missing Diplomat (5/17)
 					["sourceQuest"] = 1243,	-- The Missing Diplomat (4/17)
 					["qg"] = 840,	-- Watcher Backus
-					["coord"] = { 73.21, 38.81, DUSKWOOD },
+					["coord"] = { 73.21, 38.81, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -3591,7 +3591,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 21052 },	-- Defias Strongbox
 								{ "i", 5947 },	-- Defias Docket
 							},
-							["coord"] = { 24.0, 72.1, DUSKWOOD },
+							["coord"] = { 24.0, 72.1, MAP.DUSKWOOD },
 						}),
 					},
 				}),
@@ -3601,7 +3601,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 840 },	-- Watcher Backus
 						{ "i", 5947 },	-- Defias Docket
 					},
-					["coord"] = { 73.21, 38.81, DUSKWOOD },
+					["coord"] = { 73.21, 38.81, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -3611,9 +3611,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 482,	-- Elling Trias <Master of Cheese>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 66.0, 74.1, STORMWIND_CITY },
+						{ 66.0, 74.1, MAP.STORMWIND_CITY },
 						-- #else
-						{ 60.0, 64.3, STORMWIND_CITY },
+						{ 60.0, 64.3, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3626,9 +3626,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4961,	-- Dashel Stonefist
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 74.3, 59.2, STORMWIND_CITY },
+						{ 74.3, 59.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 70.5, 44.9, STORMWIND_CITY },
+						{ 70.5, 44.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3640,9 +3640,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4961,	-- Dashel Stonefist
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 74.3, 59.2, STORMWIND_CITY },
+						{ 74.3, 59.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 70.5, 44.9, STORMWIND_CITY },
+						{ 70.5, 44.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3654,9 +3654,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 482,	-- Elling Trias <Master of Cheese>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 66.0, 74.1, STORMWIND_CITY },
+						{ 66.0, 74.1, MAP.STORMWIND_CITY },
 						-- #else
-						{ 60.0, 64.3, STORMWIND_CITY },
+						{ 60.0, 64.3, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3666,7 +3666,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84418, {	-- The Missing Knight
 					["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
-					["coord"] = { 37.4, 32.0, STORMWIND_CITY },
+					["coord"] = { 37.4, 32.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -3684,8 +3684,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 46727,	-- Battle for Azeroth: Tides of War (BfA version)
 					["qg"] = 120756,	-- Anduin Wyrnn
 					["coords"] = {
-						{ 80.4, 33.4, STORMWIND_CITY },
-						{ 85.0, 32.4, STORMWIND_CITY },
+						{ 80.4, 33.4, MAP.STORMWIND_CITY },
+						{ 85.0, 32.4, MAP.STORMWIND_CITY },
 					},
 					["timeline"] = { ADDED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -3693,7 +3693,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27072, {	-- The Old Barracks
 					["sourceQuest"] = 28807,	-- Expert Opinion
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
-					["coord"] = { 81.2, 63.2, STORMWIND_CITY },
+					["coord"] = { 81.2, 63.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3701,9 +3701,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7798,	-- Hank the Hammer
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 63.0, 36.4, STORMWIND_CITY },
+						{ 63.0, 36.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 56.0, 16.0, STORMWIND_CITY },
+						{ 56.0, 16.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = {
@@ -3730,7 +3730,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(80241, {	-- The Origins of Smithing
 					["qg"] = 7798,	-- Hank the Hammer
-					["coord"] = { 56.0, 16.0, STORMWIND_CITY },
+					["coord"] = { 56.0, 16.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_1_15_1 },
 					["cost"] = { { "i", 6040, 6 } },	-- Golden Scale Bracers
 					["requireSkill"] = BLACKSMITHING,
@@ -3749,18 +3749,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2285,	-- Count Remington Ridgewell
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 81.6, 34.1, STORMWIND_CITY },
+						{ 81.6, 34.1, MAP.STORMWIND_CITY },
 						-- #elseif AFTER WRATH
-						{ 76.9, 47.8, STORMWIND_CITY },
+						{ 76.9, 47.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.0, 30.0, STORMWIND_CITY },
+						{ 74.0, 30.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["maps"] = {
 						-- #if AFTER CATA
-						HILLSBRAD_FOOTHILLS,
+						MAP.HILLSBRAD_FOOTHILLS,
 						-- #else
-						ALTERAC_MOUNTAINS,
+						MAP.ALTERAC_MOUNTAINS,
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -3770,9 +3770,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 3684 },	-- Perenolde Tiara
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 45.0, 24.5, HILLSBRAD_FOOTHILLS },
+								{ 45.0, 24.5, MAP.HILLSBRAD_FOOTHILLS },
 								-- #else
-								{ 39.6, 52.8, ALTERAC_MOUNTAINS },
+								{ 39.6, 52.8, MAP.ALTERAC_MOUNTAINS },
 								-- #endif
 							},
 							["cr"] = 2417,	-- Grel'borg the Miser
@@ -3785,7 +3785,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(58675, {	-- The Price of Peace
 					["sourceQuest"] = 58674,	-- A Gathering of Champions
 					["qg"] = 162178,	-- Master Mathias Shaw
-					["coord"] = { 53.2, 15.0, STORMWIND_CITY },
+					["coord"] = { 53.2, 15.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3795,7 +3795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1787,	-- The Tome of Divinity (8)
 					},
 					["qg"] = 927,	-- Brother Wilhelm
-					["coord"] = { 41.0, 66.0, ELWYNN_FOREST },
+					["coord"] = { 41.0, 66.0, MAP.ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
@@ -3807,7 +3807,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1787,	-- The Tome of Divinity (8)
 					},
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-					["coord"] = { 23.4, 6.2, IRONFORGE },
+					["coord"] = { 23.4, 6.2, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
@@ -3822,9 +3822,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6171,	-- Duthorian Rall
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3840,9 +3840,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3855,9 +3855,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6171,	-- Duthorian Rall
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3870,9 +3870,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6174,	-- Stephanie Turner
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 63.8, 72.2, STORMWIND_CITY },
+						{ 63.8, 72.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 57.0, 61.8, STORMWIND_CITY },
+						{ 57.0, 61.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3886,9 +3886,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6174,	-- Stephanie Turner
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 63.8, 72.2, STORMWIND_CITY },
+						{ 63.8, 72.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 57.0, 61.8, STORMWIND_CITY },
+						{ 57.0, 61.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3904,9 +3904,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3919,9 +3919,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6173,	-- Gazin Tenorm
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 49.5, 44.9, STORMWIND_CITY },
+						{ 49.5, 44.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 38.6, 26.6, STORMWIND_CITY },
+						{ 38.6, 26.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3933,9 +3933,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 6171,	-- Duthorian Rall
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 50.5, 47.5, STORMWIND_CITY },
+								{ 50.5, 47.5, MAP.STORMWIND_CITY },
 								-- #else
-								{ 39.8, 30.8, STORMWIND_CITY },
+								{ 39.8, 30.8, MAP.STORMWIND_CITY },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3952,7 +3952,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1787, {	-- The Tome of Divinity (9/10)
 					["sourceQuest"] = 1786,	-- The Tome of Divinity (8/10)
 					["qg"] = 6172,	-- Henze Faulk
-					["coord"] = { 72.6, 51.6, ELWYNN_FOREST },
+					["coord"] = { 72.6, 51.6, MAP.ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
@@ -3969,9 +3969,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6173,	-- Gazin Tenorm
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 49.5, 44.9, STORMWIND_CITY },
+						{ 49.5, 44.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 38.6, 26.6, STORMWIND_CITY },
+						{ 38.6, 26.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3988,9 +3988,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5491,	-- Arthur the Faithful <Paladin Trainer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 49.6, 49.9, STORMWIND_CITY },
+						{ 49.6, 49.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 38.7, 32.9, STORMWIND_CITY },
+						{ 38.7, 32.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_2_4_3 },
@@ -4001,7 +4001,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4486, {	-- The Tome of Nobility (Ironforge)
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-					["coord"] = { 23.6, 6.6, IRONFORGE },
+					["coord"] = { 23.6, 6.6, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_2_4_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -4016,9 +4016,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6171,	-- Duthorian Rall
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_2_4_3 },
@@ -4033,7 +4033,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1794, {	-- The Tome of Valor [Dwarf]
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-					["coord"] = { 23.6, 6.4, IRONFORGE },
+					["coord"] = { 23.6, 6.4, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { DWARF },
@@ -4044,9 +4044,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6171,	-- Duthorian Rall
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4066,9 +4066,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4081,9 +4081,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6171,	-- Duthorian Rall
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4094,7 +4094,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1651, {	-- The Tome of Valor (3/4)
 					["sourceQuest"] = 1650,	-- The Tome of Valor (2/4)
 					["qg"] = 6182,	-- Daphne Stilwell
-					["coord"] = { 42.4, 88.4, WESTFALL },
+					["coord"] = { 42.4, 88.4, MAP.WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -4105,9 +4105,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6171,	-- Duthorian Rall
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 50.5, 47.5, STORMWIND_CITY },
+						{ 50.5, 47.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 39.8, 30.8, STORMWIND_CITY },
+						{ 39.8, 30.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4128,9 +4128,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 78.3, 70.7, STORMWIND_CITY },
+						{ 78.3, 70.7, MAP.STORMWIND_CITY },
 						-- #else
-						{ 75.8, 59.8, STORMWIND_CITY },
+						{ 75.8, 59.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4143,9 +4143,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7207,	-- Doc Mixilpixil
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 80.1, 69.9, STORMWIND_CITY },
+						{ 80.1, 69.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 78.0, 59.0, STORMWIND_CITY },
+						{ 78.0, 59.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4163,9 +4163,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7207,	-- Doc Mixilpixil
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 80.1, 69.9, STORMWIND_CITY },
+						{ 80.1, 69.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 78.0, 59.0, STORMWIND_CITY },
+						{ 78.0, 59.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4181,9 +4181,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 3421 },	-- Simple Wildflowers
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 69.6, 71.6, STORMWIND_CITY },
+								{ 69.6, 71.6, MAP.STORMWIND_CITY },
 								-- #else
-								{ 64.2, 61.0, STORMWIND_CITY },
+								{ 64.2, 61.0, MAP.STORMWIND_CITY },
 								-- #endif
 							},
 							["crs"] = {
@@ -4196,12 +4196,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   8431 },	-- Spool of Light Chartreuse Silk Thread
 								{ "o", 140911 },	-- Spool of Light Chartreuse Silk Thread
 							},
-							["coord"] = { 39.9, 46.3, STORMWIND_CITY },
+							["coord"] = { 39.9, 46.3, MAP.STORMWIND_CITY },
 							["coords"] = {
 								-- #if AFTER WRATH
-								{ 50.4, 60.2, STORMWIND_CITY },
+								{ 50.4, 60.2, MAP.STORMWIND_CITY },
 								-- #else
-								{ 39.9, 46.5, STORMWIND_CITY },
+								{ 39.9, 46.5, MAP.STORMWIND_CITY },
 								-- #endif
 							},
 						}),
@@ -4213,7 +4213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26997, {	-- The Usual Suspects
 					["sourceQuest"] = 26977,	-- Twilight Investigation
 					["qg"] = 2439,	-- Major Samuelson <Stormwind City Guard>
-					["coord"] = { 85.1, 31.0, STORMWIND_CITY },
+					["coord"] = { 85.1, 31.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4229,9 +4229,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.6, 50.0, STORMWIND_CITY },
+						{ 48.6, 50.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.6, 32.6, STORMWIND_CITY },
+						{ 37.6, 32.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4241,16 +4241,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26536, {	-- Thunder Falls
 					["qg"] = 5494,	-- Catherine Leland
-					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+					["coord"] = { 55.0, 69.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
-					["maps"] = { ELWYNN_FOREST },
+					["maps"] = { MAP.ELWYNN_FOREST },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/4 Violet Perch
 							["provider"] = { "i", 58899 },	-- Violet Perch
-							["coord"] = { 23.9, 59.8, ELWYNN_FOREST },
+							["coord"] = { 23.9, 59.8, MAP.ELWYNN_FOREST },
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
@@ -4258,7 +4258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(42782, {	-- To Be Prepared
 					["sourceQuest"] = 40519,	-- The Legion Returns
 					["qg"] = 107934,	-- Recruiter Lee
-					["coord"] = { 36.8, 43.1, STORMWIND_CITY },
+					["coord"] = { 36.8, 43.1, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4273,7 +4273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 11406 },	-- High Priest Rohan <Priest Trainer>
 						{ "i", 18819 },	-- Rohan's Exorcism Censer
 					},
-					["coord"] = { 25.0, 8.2, IRONFORGE },
+					["coord"] = { 25.0, 8.2, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -4284,20 +4284,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 69.5, 40.4, STORMWIND_CITY },
+						{ 69.5, 40.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 64.3, 20.7, STORMWIND_CITY },
+						{ 64.3, 20.7, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
+					["maps"] = { MAP.THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(26977, {	-- Twilight Investigation
 					["sourceQuest"] = 26960,	-- My Son, the Prince
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
-					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
+					["coord"] = { 85.8, 31.7, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4307,14 +4307,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						48506,	-- The Hand of Fate
 					},
 					["qg"] = 121754,	-- Vereesa Windrunner
-					["coord"] = { 21.4, 30.4, STORMWIND_CITY },
+					["coord"] = { 21.4, 30.4, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27060, {	-- Unholy Cow
 					["sourceQuest"] = 27044,	-- Peasant Problems
 					["qg"] = 44807,	-- Farmer Wollerton
-					["coord"] = { 52.0, 5.8, STORMWIND_CITY },
+					["coord"] = { 52.0, 5.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4323,13 +4323,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5694,	-- High Sorcerer Andromath
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.7, 87.6, STORMWIND_CITY },
+						{ 48.7, 87.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.6, 81.6, STORMWIND_CITY },
+						{ 37.6, 81.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { REDRIDGE_MOUNTAINS },
+					["maps"] = { MAP.REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 26,
@@ -4339,14 +4339,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7266 },	-- Ur's Treatise on Shadow Magic
 								{ "o", 103628 },	-- Ur's Treatise on Shadow Magic
 							},
-							["coord"] = { 79.0, 37.6, REDRIDGE_MOUNTAINS },
+							["coord"] = { 79.0, 37.6, MAP.REDRIDGE_MOUNTAINS },
 							["description"] = "Located in one of the bookshelves at the top of the tower.",
 						}),
 					},
 				}),
 				q(60969, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.3, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -4357,13 +4357,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 39.2, 85.2, STORMWIND_CITY },
+						{ 39.2, 85.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 25.4, 78.4, STORMWIND_CITY },
+						{ 25.4, 78.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ASHENVALE },
+					["maps"] = { MAP.ASHENVALE },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -4389,7 +4389,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}) },
 							},
-							["coord"] = { 26.0, 22.0, ASHENVALE },
+							["coord"] = { 26.0, 22.0, MAP.ASHENVALE },
 							["cost"] = { { "i", 190308, 1 } },	-- Burning Torch
 						}),
 						i(190308, {	-- 0/1 Burning Torch
@@ -4416,8 +4416,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}) },
 							},
 							["coords"] = {
-								{ 26.79, 22.42, ASHENVALE },
-								{ 15.0, 31.0, ASHENVALE },
+								{ 26.79, 22.42, MAP.ASHENVALE },
+								{ 15.0, 31.0, MAP.ASHENVALE },
 							},
 						}),
 					},
@@ -4426,7 +4426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(58502, {	-- Where the Heart Is
 					["sourceQuest"] = 58498,	-- Return of the Warrior King
 					["qg"] = 154532,	-- Magni Bronzebeard <The Speaker>
-					["coord"] = { 87.5, 35.5, STORMWIND_CITY },
+					["coord"] = { 87.5, 35.5, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4440,9 +4440,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 63.8, 73.6, STORMWIND_CITY },
+						{ 63.8, 73.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 57.0, 63.4, STORMWIND_CITY },
+						{ 57.0, 63.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4453,7 +4453,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60962, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
 					["sourceQuest"] = 60096,	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.2, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -4461,7 +4461,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60096, {	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
+					["coord"] = { 56.3, 17.3, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -4472,9 +4472,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1435,	-- Zardeth of the Black Claw
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 40.1, 85.3, STORMWIND_CITY },
+						{ 40.1, 85.3, MAP.STORMWIND_CITY },
 						-- #else
-						{ 26.4, 78.4, STORMWIND_CITY },
+						{ 26.4, 78.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4494,9 +4494,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   8383 },	-- Master Wood
 						{ "i", 211448 },	-- Signed Procurement Contract
 					},
-					["coord"] = { 79.2, 47.6, STORMWIND_CITY },
+					["coord"] = { 79.2, 47.6, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -4507,7 +4507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(130828, {	-- Gordon MacKellar
-					["coord"] = { 43.0, 78.0, STORMWIND_CITY },
+					["coord"] = { 43.0, 78.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -4519,30 +4519,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3581, {	-- Sewer Beast
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.4, 61.8, STORMWIND_CITY },
-						{ 54.6, 65.6, STORMWIND_CITY },
-						{ 56.0, 72.8, STORMWIND_CITY },
-						{ 58.4, 79.2, STORMWIND_CITY },
-						{ 58.4, 42.0, STORMWIND_CITY },
-						{ 62.8, 51.8, STORMWIND_CITY },
-						{ 71.0, 48.8, STORMWIND_CITY },
-						{ 67.0, 55.0, STORMWIND_CITY },
-						{ 66.0, 61.2, STORMWIND_CITY },
-						{ 68.8, 64.2, STORMWIND_CITY },
-						{ 70.6, 68.0, STORMWIND_CITY },
+						{ 48.4, 61.8, MAP.STORMWIND_CITY },
+						{ 54.6, 65.6, MAP.STORMWIND_CITY },
+						{ 56.0, 72.8, MAP.STORMWIND_CITY },
+						{ 58.4, 79.2, MAP.STORMWIND_CITY },
+						{ 58.4, 42.0, MAP.STORMWIND_CITY },
+						{ 62.8, 51.8, MAP.STORMWIND_CITY },
+						{ 71.0, 48.8, MAP.STORMWIND_CITY },
+						{ 67.0, 55.0, MAP.STORMWIND_CITY },
+						{ 66.0, 61.2, MAP.STORMWIND_CITY },
+						{ 68.8, 64.2, MAP.STORMWIND_CITY },
+						{ 70.6, 68.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.8, 22.6, STORMWIND_CITY },
-						{ 53.8, 30.6, STORMWIND_CITY },
-						{ 66.8, 32.2, STORMWIND_CITY },
-						{ 62.6, 38.0, STORMWIND_CITY },
-						{ 66.6, 57.0, STORMWIND_CITY },
-						{ 62.4, 50.2, STORMWIND_CITY },
-						{ 35.2, 42.4, STORMWIND_CITY },
-						{ 38.6, 47.4, STORMWIND_CITY },
-						{ 31.4, 64.4, STORMWIND_CITY },
-						{ 34.2, 60.2, STORMWIND_CITY },
-						{ 50.0, 69.6, STORMWIND_CITY },
-						{ 47.2, 61.6, STORMWIND_CITY },
+						{ 49.8, 22.6, MAP.STORMWIND_CITY },
+						{ 53.8, 30.6, MAP.STORMWIND_CITY },
+						{ 66.8, 32.2, MAP.STORMWIND_CITY },
+						{ 62.6, 38.0, MAP.STORMWIND_CITY },
+						{ 66.6, 57.0, MAP.STORMWIND_CITY },
+						{ 62.4, 50.2, MAP.STORMWIND_CITY },
+						{ 35.2, 42.4, MAP.STORMWIND_CITY },
+						{ 38.6, 47.4, MAP.STORMWIND_CITY },
+						{ 31.4, 64.4, MAP.STORMWIND_CITY },
+						{ 34.2, 60.2, MAP.STORMWIND_CITY },
+						{ 50.0, 69.6, MAP.STORMWIND_CITY },
+						{ 47.2, 61.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 				}),
@@ -4550,7 +4550,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
 					-- ["provider"] = { "o",  },	-- Summoning Circle
-					["coord"] = { 25.8, 76.2, STORMWIND_CITY },
+					["coord"] = { 25.8, 76.2, MAP.STORMWIND_CITY },
 					["cost"] = {
 						{ "i", 204905, 1 },	-- Ominous Tome
 						{ "i", 204906, 1 },	-- Gnoll Blood
@@ -4569,7 +4569,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(112958, {	-- Soulare of Andorhal
 					["description"] = "Emote |cFFFFFFFF/tired|r at him to get the toy. Horde players can do this, too!",
-					["coord"] = { 38.1, 64.4, STORMWIND_CITY },
+					["coord"] = { 38.1, 64.4, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["groups"] = {
 						i(117573, {	-- Wayfarer's Bonfire (TOY!)
@@ -4582,9 +4582,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_FIVE, o(180665, {	-- Draconic for Dummies
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 75.35, 29.73, STORMWIND_CITY },
+						{ 75.35, 29.73, MAP.STORMWIND_CITY },
 						-- #else
-						{ 72.0, 6.0, STORMWIND_CITY },
+						{ 72.0, 6.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
@@ -4597,9 +4597,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["questID"] = 75940,	-- Charred Note HQT
 					["sourceQuest"] = 75939,	-- Brother Romulus HQT
 					["provider"] = { "o", 402215 },	-- Charred Note
-					["coord"] = { 33.0, 24.75, STORMWIND_CITY },
+					["coord"] = { 33.0, 24.75, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { DUSKWOOD },
+					["maps"] = { MAP.DUSKWOOD },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 				})),
@@ -4607,7 +4607,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["questID"] = 75969,	-- Ada Gelhardt HQT
 					["sourceQuest"] = 75940,	-- Charred Note HQT
 					["provider"] = { "n", 205153 },	-- Ada Gelhardt
-					["coord"] = { 4.3, 28.25, DUSKWOOD },
+					["coord"] = { 4.3, 28.25, MAP.DUSKWOOD },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -4618,7 +4618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
 					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
 					["provider"] = { "o", 386777 },	-- Dusty Chest
-					["coord"] = { 61.9, 29.3, STORMWIND_CITY },
+					["coord"] = { 61.9, 29.3, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -4629,7 +4629,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(69334, {	-- Adherent Hanjun <Tushui Quartermaster>
-					["coord"] = { 68.0, 17.0, STORMWIND_CITY },
+					["coord"] = { 68.0, 17.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4644,7 +4644,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 10.0.5
 				n(1294, {	-- Aldric Moore <Mail Armor Merchant>
-					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
+					["coord"] = { 62.2, 67.6, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(847),	-- Chainmail Armor
@@ -4684,9 +4684,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.2, 81.6, STORMWIND_CITY },
+						{ 53.2, 81.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 43.4, 74.0, STORMWIND_CITY },
+						{ 43.4, 74.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4705,9 +4705,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1315, {	-- Allan Hafgan <Staves Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 52.9, 75.2, STORMWIND_CITY },
+						{ 52.9, 75.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 43.0, 65.6, STORMWIND_CITY },
+						{ 43.0, 65.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4718,7 +4718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 10.0.5
 				n(53641, {	-- Allison Potts <Heavy Armor Merchant>
-					["coord"] = { 64.8, 48.0, STORMWIND_CITY },
+					["coord"] = { 64.8, 48.0, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(2419),	-- Augmented Chain Belt
@@ -4780,9 +4780,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1312, {	-- Ardwyn Cailen <Wand Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 52.8, 75.2, STORMWIND_CITY },
+						{ 52.8, 75.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 42.8, 65.6, STORMWIND_CITY },
+						{ 42.8, 65.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4798,7 +4798,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
-					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
+					["coord"] = { 52.4, 8.2, MAP.STORMWIND_CITY },
 					-- Available to Worgen without faction requirements.
 					["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 					["OnInit"] = [[function(t)
@@ -4822,9 +4822,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1349, {	-- Agustus Moulaine <Mail Armor Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.6, 57.8, STORMWIND_CITY },
+						{ 53.6, 57.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 43.8, 43.2, STORMWIND_CITY },
+						{ 43.8, 43.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4867,11 +4867,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1302, {	-- Bernard Gump <Florist>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 69.2, 71.8, STORMWIND_CITY },
+						{ 69.2, 71.8, MAP.STORMWIND_CITY },
 						-- #elseif AFTER WRATH
-						{ 69.6, 71.4, STORMWIND_CITY },
+						{ 69.6, 71.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 64.2, 61.0, STORMWIND_CITY },
+						{ 64.2, 61.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4897,9 +4897,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5514, {	-- Brooke Stonebraid <Mining Supplies>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 59.15, 37.5, STORMWIND_CITY },
+						{ 59.15, 37.5, MAP.STORMWIND_CITY },
 						-- #else
-						{ 51.6, 16.8, STORMWIND_CITY },
+						{ 51.6, 16.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4908,9 +4908,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1319, {	-- Bryan Cross <Shield Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 69.6, 57.8, STORMWIND_CITY },
+						{ 69.6, 57.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 64.6, 43.0, STORMWIND_CITY },
+						{ 64.6, 43.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4928,7 +4928,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
-					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.5, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_5_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -4938,7 +4938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(54661, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S11 Vendor // Cataclysmic Gladiator: Season 11 Gladiator Gear
-					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.4, MAP.STORMWIND_CITY },
 					-- #if BEFORE MOP
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{ "pop" }},	-- Cataclysmic Gladiator's Set
 					-- #endif
@@ -4946,7 +4946,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(52546, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S10 Vendor // Ruthless Gladiator: Season 10 Gladiator Gear
-					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.4, MAP.STORMWIND_CITY },
 					-- #if BEFORE MOP
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{ "pop" }},	-- Ruthless Gladiator's Set
 					-- #endif
@@ -4954,7 +4954,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(CATA_PHASE_ONE, n(51254, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S9 Vendor // Vicious Gladiator: Season 9 Gladiator Gear
-					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.4, MAP.STORMWIND_CITY },
 					-- #if BEFORE MOP
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{ "pop" }},	-- Vicious Gladiator's Set
 					-- #endif
@@ -4962,7 +4962,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, n(34075, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S8 Vendor // Relentless Gladiator: Season 8 Gladiator Gear
-					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.4, MAP.STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 					-- #endif
@@ -4970,7 +4970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34074, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S7 Vendor // Furious Gladiator: Season 7 Gladiator Gear
-					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.4, MAP.STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 					-- #endif
@@ -4978,7 +4978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34073, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S6 Vendor // Deadly Gladiator: Season 6 Gladiator Gear
-					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.4, MAP.STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 					-- #endif
@@ -4986,7 +4986,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32381, {	-- Captain Dirgehammer // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
-					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.4, MAP.STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 					-- #endif
@@ -4997,7 +4997,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE TBC
 					["description"] = "Found within the Champion's Hall.",
 					-- #else
-					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.5, MAP.STORMWIND_CITY },
 					-- #endif
 					["timeline"] = { REMOVED_3_0_2 },
 					-- #if BEFORE TBC
@@ -5024,7 +5024,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(49877, {	-- Captain Lancy Revshon <Stormwind Quartermaster>
-					["coord"] = { 67.6, 72.8, STORMWIND_CITY },
+					["coord"] = { 67.6, 72.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDownClassicRep(FACTION_STORMWIND, {
@@ -5123,7 +5123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
-					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
+					["coord"] = { 75.0, 66.7, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
@@ -5161,7 +5161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
-					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
+					["coord"] = { 75.0, 66.7, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
@@ -5197,9 +5197,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1291, {	-- Carla Granger <Cloth Armor Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 62.2, 67.6, STORMWIND_CITY },
+						{ 62.2, 67.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 55.0, 56.0, STORMWIND_CITY },
+						{ 55.0, 56.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5303,9 +5303,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5494, {	-- Catherine Leland <Fishing Supplier>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 55.0, 69.6, STORMWIND_CITY },
+						{ 55.0, 69.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 45.8, 58.5, STORMWIND_CITY },
+						{ 45.8, 58.5, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5318,9 +5318,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 44.8, 86.2, STORMWIND_CITY },
+						{ 44.8, 86.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 32.4, 79.9, STORMWIND_CITY },
+						{ 32.4, 79.9, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5347,10 +5347,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(52358, {	-- Craggle Wobbletop <Toys and Novelties>
 					["coords"] = {
-						{ 66.6, 64.4, STORMWIND_CITY },
-						{ 63.6, 61.2, STORMWIND_CITY },
-						{ 56.6, 67.6, STORMWIND_CITY },
-						{ 58.6, 76.8, STORMWIND_CITY },
+						{ 66.6, 64.4, MAP.STORMWIND_CITY },
+						{ 63.6, 61.2, MAP.STORMWIND_CITY },
+						{ 56.6, 67.6, MAP.STORMWIND_CITY },
+						{ 58.6, 76.8, MAP.STORMWIND_CITY },
 					},
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
@@ -5402,7 +5402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(133411, {	-- Dalia Skyblossom <Cooking Trainer>
-					["coord"] = { 51.4, 18.0, STORMWIND_CITY },
+					["coord"] = { 51.4, 18.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -5420,9 +5420,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1304, {	-- Darian Singh <Fireworks Vendor>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 42.6, 76.8, STORMWIND_CITY },
+						{ 42.6, 76.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 29.6, 67.8, STORMWIND_CITY },
+						{ 29.6, 67.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5433,7 +5433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(50669, {	-- Dawn Radue <Bag Merchant>
-					["coord"] = { 64.8, 71.6, STORMWIND_CITY },
+					["coord"] = { 64.8, 71.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -5466,9 +5466,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1314, {	-- Duncan Cullen <Light Armor Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.2, 81.8, STORMWIND_CITY },
+						{ 53.2, 81.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 43.6, 74.2, STORMWIND_CITY },
+						{ 43.6, 74.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5516,7 +5516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(52029, {	-- Edlan Halsing <Bloodthirsty Gladiator> [LEGION+] / Edlan Halsing <Honor Trade Goods>
-					["coord"] = { 74.7, 68.2, STORMWIND_CITY },
+					["coord"] = { 74.7, 68.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 7.0.3
@@ -5531,9 +5531,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1286, {	-- Edna Mullby <Trade Supplies> [TBC+] / Edna Mullby <Trade Supplier>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.6, 71.6, STORMWIND_CITY },
+						{ 64.6, 71.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 58.2, 60.5, STORMWIND_CITY },
+						{ 58.2, 60.5, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5546,7 +5546,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(213077, {	-- Elaine Compton <Supply Officer>
-					["coord"] = { 54.8, 62.0, STORMWIND_CITY },
+					["coord"] = { 54.8, 62.0, MAP.STORMWIND_CITY },
 					["groups"] = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
 						{	-- Neutral
 						},
@@ -5565,9 +5565,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(483, {	-- Elaine Trias <Mistress of Cheese>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 66.6, 73.4, STORMWIND_CITY },
+						{ 66.6, 73.4, MAP.STORMWIND_CITY },
 						-- #else
-						{ 60.6, 63.4, STORMWIND_CITY },
+						{ 60.6, 63.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5583,9 +5583,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5503, {	-- Eldraeith <Herbalism Supplies> [TBC+] / Eldraeith <Herbalism Supplier>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 55.6, 85.6, STORMWIND_CITY },
+						{ 55.6, 85.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 46.6, 78.8, STORMWIND_CITY },
+						{ 46.6, 78.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5594,9 +5594,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1328, {	-- Elly Langston <Barmaid>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 76.0, 53.4, STORMWIND_CITY },	-- Pig and Whistle Tavern
+						{ 76.0, 53.4, MAP.STORMWIND_CITY },	-- Pig and Whistle Tavern
 						-- #else
-						{ 73.0, 37.0, STORMWIND_CITY },	-- Pig and Whistle Tavern
+						{ 73.0, 37.0, MAP.STORMWIND_CITY },	-- Pig and Whistle Tavern
 						-- #endif
 					},
 					["description"] = "Elly is walking around in the Tavern.",
@@ -5605,9 +5605,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5483, {	-- Erika Tate <Cooking Supplies> [TBC+] / Erika Tate <Cooking Supplier>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.6, 53.2, STORMWIND_CITY },
+						{ 77.6, 53.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 76.0, 36.8, STORMWIND_CITY },
+						{ 76.0, 36.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5617,7 +5617,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(164942, {	-- Evelyn Thorn <Warlock Trainer>
-					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
+					["coord"] = { 79.4, 69.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["groups"] = {
 						i(189719, {	-- Tattered Collar of the Incubus
@@ -5629,7 +5629,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(44245, {	-- Faldren Tillsdale
-					["coord"] = { 76.1, 66.8, STORMWIND_CITY },
+					["coord"] = { 76.1, 66.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_THIRTEEN_GROUPS,
@@ -5640,11 +5640,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1303, {	-- Felicia Gump <Herbalism Supplier>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 69.3, 71.4, STORMWIND_CITY },
+						{ 69.3, 71.4, MAP.STORMWIND_CITY },
 						-- #elseif AFTER WRATH
-						{ 64.2, 60.6, STORMWIND_CITY },
+						{ 64.2, 60.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 64.2, 60.6, STORMWIND_CITY },
+						{ 64.2, 60.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5661,7 +5661,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(179896, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Finn
-					["coord"] = { 61.6, 65.8, STORMWIND_CITY },
+					["coord"] = { 61.6, 65.8, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(187009),	-- Dazzling Spectacles
@@ -5674,9 +5674,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 58.6, 69.0, STORMWIND_CITY },
+						{ 58.6, 69.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 50.3, 57.7, STORMWIND_CITY },
+						{ 50.3, 57.7, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5698,7 +5698,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(6122, {	-- Gakin the Darkbinder
-					["coord"] = { 25.6, 77.8, STORMWIND_CITY },
+					["coord"] = { 25.6, 77.8, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
@@ -5712,7 +5712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(164947, {	-- Gerald Black <Shady Dealer>
-					["coord"] = { 78.8, 70.6, STORMWIND_CITY },
+					["coord"] = { 78.8, 70.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{ "select", "npcID", 99863 }, { "pop" }},	-- Jenri <Spymaster>
@@ -5720,9 +5720,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1333, {	-- Gerik Koen <Two Handed Weapon Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 73.2, 57.2, STORMWIND_CITY },
+						{ 73.2, 57.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 69.0, 42.6, STORMWIND_CITY },
+						{ 69.0, 42.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5765,9 +5765,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1348, {	-- Gregory Ardus <Staff & Mace Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 48.2, 54.8, STORMWIND_CITY },
+						{ 48.2, 54.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 37.0, 39.4, STORMWIND_CITY },
+						{ 37.0, 39.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5790,9 +5790,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1289, {	-- Gunther Weller <Weapons Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.0, 68.6, STORMWIND_CITY },
+						{ 64.0, 68.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 57.2, 57.2, STORMWIND_CITY },
+						{ 57.2, 57.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5829,12 +5829,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1324, {	-- Heinrich Stone <Blade Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.0, 57.6, STORMWIND_CITY },
+						{ 77.0, 57.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.2, 42.8, STORMWIND_CITY },
+						{ 74.2, 42.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
-					["coord"] = { 77.0, 57.6, STORMWIND_CITY },
+					["coord"] = { 77.0, 57.6, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2520),	-- Broadsword
@@ -5844,7 +5844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(110034, {	-- Historian Llore <The Timewalkers>
-					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
+					["coord"] = { 84.6, 25.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_1_0 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -5853,7 +5853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(113404, {	-- Illidari Darkdealer
-					["coord"] = { 40.2, 78.6, STORMWIND_CITY },
+					["coord"] = { 40.2, 78.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -5865,11 +5865,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1325, {	-- Jasper Fel <Shady Dealer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 80.6, 61.6, STORMWIND_CITY },
+						{ 80.6, 61.6, MAP.STORMWIND_CITY },
 						-- #elseif AFTER WRATH
-						{ 80.6, 70.0, STORMWIND_CITY },
+						{ 80.6, 70.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 78.2, 58.8, STORMWIND_CITY },
+						{ 78.2, 58.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5882,9 +5882,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.0, 74.2, STORMWIND_CITY },
+						{ 53.0, 74.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 43.0, 64.2, STORMWIND_CITY },
+						{ 43.0, 64.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5908,16 +5908,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
-					["coord"] = { 71.7, 62.8, STORMWIND_CITY },
+					["coord"] = { 71.7, 62.8, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = COMMON_CATACLYSM_LEATHERWORKING_RECIPES,
 				}),
 				n(49701, {	-- Jon Casper <Sous Chef>
 					["coords"] = {
 						-- #if AFTER 9.2.5
-						{ 50.5, 73.9, STORMWIND_CITY },
+						{ 50.5, 73.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 50.6, 71.6, STORMWIND_CITY },
+						{ 50.6, 71.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -5925,7 +5925,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = CATA_COOKING_SUPPLIES,
 				}),
 				n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-					["coord"] = { 64.8, 48.2, STORMWIND_CITY },
+					["coord"] = { 64.8, 48.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
@@ -5933,9 +5933,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 63.2, 37.6, STORMWIND_CITY },
+						{ 63.2, 37.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 56.3, 17.2, STORMWIND_CITY },
+						{ 56.3, 17.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5949,7 +5949,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(43694, {	-- Katie Stokx <Horse Breeder>
-					["coord"] = { 77.0, 67.8, STORMWIND_CITY },
+					["coord"] = { 77.0, 67.8, MAP.STORMWIND_CITY },
 					-- Available to Humans without faction requirements.
 					["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)
@@ -5973,9 +5973,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5509, {	-- Kathrum Axehand <Axe Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 59.6, 34.0, STORMWIND_CITY },
+						{ 59.6, 34.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 51.6, 12.2, STORMWIND_CITY },
+						{ 51.6, 12.2, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -5991,9 +5991,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1257, {	-- Keldric Boucher <Alchemy Supplies & Reagents>/<Arcane Goods Vendor>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 62.8, 75.0, STORMWIND_CITY },
+						{ 62.8, 75.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 55.6, 65.8, STORMWIND_CITY },
+						{ 55.6, 65.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -6001,9 +6001,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 76.4, 53.0, STORMWIND_CITY },
+						{ 76.4, 53.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.6, 36.8, STORMWIND_CITY },
+						{ 74.6, 36.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -6024,7 +6024,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(WRATH_PHASE_FOUR, n(34084, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
-					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.3, MAP.STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{ "pop" }},	-- Furious Gladiator's Set
 					-- #endif
@@ -6032,7 +6032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34083, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
-					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.3, MAP.STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 					-- #endif
@@ -6040,7 +6040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34082, {	-- Knight-Lieutenant Moonstrike <Armor Quartermaster> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
-					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.3, MAP.STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 					-- #endif
@@ -6048,7 +6048,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32834, {	-- Knight-Lieutenant Moonstrike <Armor Quartermaster> // Original S5 Vendor // Savage Gladiator: Season 5 Honor Gear
-					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.3, MAP.STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
 					-- #endif
@@ -6058,7 +6058,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				-- This is a future Crieve problem, probably a similar thing to Moonstrike.
 				n(69974, {	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
-					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.6, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},
@@ -6067,7 +6067,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(40606, {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite Vendor
-					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.6, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
@@ -6077,9 +6077,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1295, {	-- Lara Moore <Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 62.2, 67.6, STORMWIND_CITY },
+						{ 62.2, 67.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 54.8, 55.6, STORMWIND_CITY },
+						{ 54.8, 55.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -6122,7 +6122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(52027, {	-- Larisse Pembraux <Justice Heirlooms>
-					["coord"] = { 79.4, 69.7, STORMWIND_CITY },
+					["coord"] = { 79.4, 69.7, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_4_0_6, REMOVED_6_0_2 },
 					["sym"] = {
@@ -6131,7 +6131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4730, {	-- Lelanai <Saber Handler>
-					["coord"] = { 55.0, 12.6, STORMWIND_CITY },
+					["coord"] = { 55.0, 12.6, MAP.STORMWIND_CITY },
 					-- Available to Night Elves without faction requirements.
 					["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["OnInit"] = [[function(t)
@@ -6155,7 +6155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 7.0.3
 				n(2795, {	-- Lenny "Fingers" McCoy
-					["coord"] = { 72.8, 58.8, STORMWIND_CITY },
+					["coord"] = { 72.8, 58.8, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(97921, {	-- Bom'bay's Color-Seein'Sauce (TOY!)
@@ -6176,9 +6176,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 75.2, 67.2, STORMWIND_CITY },
+						{ 75.2, 67.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 71.9, 55.6, STORMWIND_CITY },
+						{ 71.9, 55.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1 },	-- Prior to TBC, was just a Reagent Vendor.
@@ -6200,7 +6200,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(12783, {	-- Lieutenant Karter <War Mount Quartermaster> [WRATH+] / Lieutenant Karter <Mount Vendor>
 					-- #if AFTER WRATH
-					["coord"] = { 76.2, 65.6, STORMWIND_CITY },
+					["coord"] = { 76.2, 65.6, MAP.STORMWIND_CITY },
 					-- #else
 					["description"] = "Found within the Champion's Hall.",
 					-- #endif
@@ -6244,7 +6244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				n(12778, {	-- Lieutenant Rachel Vaccar <Outland Armor Quartermaster>
-					["coord"] = { 75.2, 67.2, STORMWIND_CITY },
+					["coord"] = { 75.2, 67.2, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 					-- #if ANYCLASSIC
 					["sym"] = {
@@ -6259,7 +6259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER LEGION
 				n(54660, {	-- Lieutenant Tristia <Vicious Gladiator>
-					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.0, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{ "sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },	-- Vicious Gladiator: Season 9 Gladiator Gear
@@ -6269,14 +6269,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #else
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(54660, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S11 Vendor // Cataclysmic Gladiator: Elite Season 11 Gladiator Gear
-					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.6, MAP.STORMWIND_CITY },
 					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_ELITE }, { "merge" }, { "pop" } },	-- Elite Cataclysmic Gladiator's Set
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				})),
 				-- #endif
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(52545, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S10 Vendor // Ruthless Gladiator: Elite Season 10 Gladiator Gear
-					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.6, MAP.STORMWIND_CITY },
 					-- #if BEFORE MOP
 					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_ELITE }, { "merge" } ,{ "pop" } },	-- Elite Ruthless Gladiator's Set
 					-- #endif
@@ -6284,7 +6284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(CATA_PHASE_ONE, n(51255, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S9 Vendor // Vicious Gladiator: Elite Season 9 Gladiator Gear
-					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
+					["coord"] = { 74.8, 67.6, MAP.STORMWIND_CITY },
 					-- #if BEFORE MOP
 					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_ELITE }, { "merge" },{ "pop" } },	-- Elite Vicious Gladiator's Set
 					-- #endif
@@ -6292,7 +6292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, n(34078, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
-					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
+					["coord"] = { 74.7, 67.2, MAP.STORMWIND_CITY },
 					-- #if BEFORE CATA
 					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR }, { "merge" }, { "pop" } },	-- Wrathful Gladiator's Set
 					-- #endif
@@ -6300,7 +6300,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34077, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
-					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
+					["coord"] = { 74.7, 67.2, MAP.STORMWIND_CITY },
 					-- #if BEFORE CATA
 					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR }, { "merge" }, { "pop" } },	-- Relentless Gladiator's Set
 					-- #endif
@@ -6308,7 +6308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34076, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
-					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
+					["coord"] = { 74.7, 67.2, MAP.STORMWIND_CITY },
 					-- #if BEFORE CATA
 					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR }, { "merge" }, { "pop" } },	-- Furious Gladiator's Set
 					-- #endif
@@ -6316,7 +6316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32380, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S5 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
-					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
+					["coord"] = { 74.7, 67.2, MAP.STORMWIND_CITY },
 					-- #if BEFORE CATA
 					["sym"] = {
 						{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR }, { "merge" }, { "pop" },	-- Deadly Gladiator's Set
@@ -6332,7 +6332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- Crieve NOTE: This NPC ID wasn't used for TBC Classic, so not sure how this was actually used.
 				n(23446, {	-- Lieutenant Tristia	-- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
-					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
+					["coord"] = { 75.0, 67.0, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -6341,7 +6341,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER WRATH
 					["description"] = "The vendor wanders around Stormwind at random times. He is not always available.",
 					-- #else
-					["coord"] = { 64.0, 38.0, STORMWIND_CITY },
+					["coord"] = { 64.0, 38.0, MAP.STORMWIND_CITY },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -6354,9 +6354,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8118, {	-- Lillian Singh <Holiday Fireworks Vendor>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 62.6, 70.0, STORMWIND_CITY },
+						{ 62.6, 70.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 55.6, 58.8, STORMWIND_CITY },
+						{ 55.6, 58.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["description"] =
@@ -6373,7 +6373,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(52030, pvp({	-- Liliana Emberfrost <Honor Heirlooms>
-					["coord"] = { 74.4, 67.6, STORMWIND_CITY },
+					["coord"] = { 74.4, 67.6, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -6528,9 +6528,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1297, {	-- Lina Stover <Bow & Gun Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 58.6, 68.8, STORMWIND_CITY },
+						{ 58.6, 68.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 50.6, 57.6, STORMWIND_CITY },
+						{ 50.6, 57.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -6550,9 +6550,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1299, {	-- Lisbeth Schneider <Clothier>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 58.2, 67.6, STORMWIND_CITY },
+						{ 58.2, 67.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 49.6, 55.0, STORMWIND_CITY },
+						{ 49.6, 55.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -6569,7 +6569,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER 8.0.1
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 56.1, 13.2, STORMWIND_CITY },
+					["coord"] = { 56.1, 13.2, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDownClassicRep(FACTION_GILNEAS, {
 						{		-- Neutral
@@ -6600,9 +6600,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(44246, {	-- Magatha Silverton <Justice Quartermaster>
 					["coords"] = {
 						-- #if AFTER 9.0.1
-						{ 75.5, 66.1, STORMWIND_CITY },
+						{ 75.5, 66.1, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.2, 66.0, STORMWIND_CITY },
+						{ 74.2, 66.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_1 },
@@ -6615,9 +6615,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1287, {	-- Marda Weller <Weapons Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.0, 68.6, STORMWIND_CITY },
+						{ 64.0, 68.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 57.2, 57.0, STORMWIND_CITY },
+						{ 57.2, 57.0, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -6666,9 +6666,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1313, {	-- Maria Lumere <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 55.6, 85.6, STORMWIND_CITY },
+						{ 55.6, 85.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 46.6, 78.8, STORMWIND_CITY },
+						{ 46.6, 78.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -6680,7 +6680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE TBC
 					["description"] = "Found within the Champion's Hall.",
 					-- #else
-					["coord"] = { 75.2, 66.8, STORMWIND_CITY },
+					["coord"] = { 75.2, 66.8, MAP.STORMWIND_CITY },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
@@ -6718,7 +6718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				n(28347, {	-- Miles Sidney <Poison Supplies>
-					["coord"] = { 74.2, 58.0, STORMWIND_CITY },
+					["coord"] = { 74.2, 58.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER MOP
@@ -6735,7 +6735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 8.0.1
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
-					["coord"] = { 56.6, 13.2, STORMWIND_CITY },
+					["coord"] = { 56.6, 13.2, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					-- Moon Priestess Lasara can only be found in Darnassus after 10.2.5: Reclamation of Gilneas.
 					["timeline"] = { ADDED_8_0_1, REMOVED_10_2_5 },
@@ -6766,9 +6766,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(12805, {	-- Officer Areyn <Accessories Quartermaster>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.8, 65.8, STORMWIND_CITY },
+						{ 76.8, 65.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 73.8, 53.4, STORMWIND_CITY },
+						{ 73.8, 53.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_1_4_0, REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
@@ -6850,7 +6850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(65068, {	-- Old Whitenose <Dragon Turtle Breeder>
-					["coord"] = { 67.8, 18.4, STORMWIND_CITY },
+					["coord"] = { 67.8, 18.4, MAP.STORMWIND_CITY },
 					-- Available to Tushui Pandaren without faction requirements.
 					["minReputation"] = { FACTION_TUSHUI_PANDAREN, EXALTED },	-- Tushui Pandaren, Exalted.
 					["OnInit"] = [[function(t)
@@ -6963,9 +6963,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1323, {	-- Osric Strang <Heavy Armor Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.0, 61.2, STORMWIND_CITY },
+						{ 77.0, 61.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.2, 47.6, STORMWIND_CITY },
+						{ 74.2, 47.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7009,7 +7009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_6_0_2 },
 				},{
-					["coord"] = { 73.0, 59.5, STORMWIND_CITY },
+					["coord"] = { 73.0, 59.5, MAP.STORMWIND_CITY },
 					["groups"] = {
 						i(116789, {	-- Champion's Treadblade (MOUNT!)
 							["cost"] = 1000000000,	-- 100,000g
@@ -7018,7 +7018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				n(167429, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Quartermaster Richter
 					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
-					["coord"] = { 79.5, 69.0, STORMWIND_CITY },
+					["coord"] = { 79.5, 69.0, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(175173),	-- Expeditionary Cudgel
@@ -7032,7 +7032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				n(53991, {	-- Quincy Cutler <Owner and Proprietor>
 					["timeline"] = { ADDED_4_2_0 },
-					["coord"] = { 64.0, 46.2, STORMWIND_CITY },
+					["coord"] = { 64.0, 46.2, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(44679),	-- Red Wine Glass
@@ -7042,9 +7042,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5193, {	-- Rebecca Laughlin <Tabard Designer>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 64.0, 77.2, STORMWIND_CITY },
+						{ 64.0, 77.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 57.2, 68.4, STORMWIND_CITY },
+						{ 57.2, 68.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7088,7 +7088,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(254603, {	-- Riica <Battleground Decor Specialist>
-					["coord"] = { 77.8, 65.7, STORMWIND_CITY },
+					["coord"] = { 77.8, 65.7, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
@@ -7117,9 +7117,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 59.4, 77.2, STORMWIND_CITY },
+						{ 59.4, 77.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 52.0, 67.8, STORMWIND_CITY },
+						{ 52.0, 67.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7130,9 +7130,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1320, {	-- Seoman Griffith <Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 72.0, 62.2, STORMWIND_CITY },
+						{ 72.0, 62.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 67.6, 48.8, STORMWIND_CITY },
+						{ 67.6, 48.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7154,7 +7154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(12785, {	-- Sergeant Major Clate <Legacy Armor Quartermaster> [WRATH+] / Sergeant Major Clate <Armor Quartermaster>
-					["coord"] = { 75.4, 67.0, STORMWIND_CITY },
+					["coord"] = { 75.4, 67.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_2_0_1 },	-- Prior to TBC, was just a Food Vendor.
 					["sym"] = {	-- Grand Marshal Armor
 						-- #IF ANYCLASSIC
@@ -7176,7 +7176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 8.0.1
 				n(8665, {	-- Shylenai <Owl Trainer>
-					["coord"] = { 56.0, 3.22, STORMWIND_CITY },
+					["coord"] = { 56.0, 3.22, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					-- Shylenai can only be found in Darnassus after 10.2.5: Reclamation of Gilneas.
 					["timeline"] = { ADDED_8_0_1, REMOVED_10_2_5 },
@@ -7189,11 +7189,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1326, {	-- Sloan McCoy <Poison Supplier>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 81.2, 62.6, STORMWIND_CITY },
+						{ 81.2, 62.6, MAP.STORMWIND_CITY },
 						-- #elseif AFTER WRATH
-						{ 78.8, 70.8, STORMWIND_CITY },
+						{ 78.8, 70.8, MAP.STORMWIND_CITY },
 						-- #else
-						{ 76.8, 59.8, STORMWIND_CITY },
+						{ 76.8, 59.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7294,7 +7294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(256071, {	-- Solelo <Traveling Book Shop>
 					["description"] = "Not all items are sold each day.",
-					["coord"] = { 49.4, 80.8, STORMWIND_CITY },
+					["coord"] = { 49.4, 80.8, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -7321,7 +7321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, n(17804, {	-- Squire Rowe
 					["sourceQuest"] = 6502,	-- Drakefire Amulet
-					["coord"] = { 70.6, 86.0, STORMWIND_CITY },
+					["coord"] = { 70.6, 86.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_1_15_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -7337,7 +7337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER MOP
 				-- Danny Donkey: The staves are added to Inscription Suppliers in 5.0.1.
 				n(30730, {	-- Stanly McCormick <Inscription Supplies>
-					["coord"] = { 49.6, 74.9, STORMWIND_CITY },
+					["coord"] = { 49.6, 74.9, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -7347,7 +7347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(43768, {	-- Tannec Stonebeak <Gryphon Keeper>
-					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
+					["coord"] = { 71.4, 72.0, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -7361,7 +7361,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(44583, {	-- Terrance Denman <Jewelcrafting Supplies>
-					["coord"] = { 63.1, 61.5, STORMWIND_CITY },
+					["coord"] = { 63.1, 61.5, MAP.STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{ "sub", "common_recipes_vendor", 50480 }},	-- Isabel Jones <Jewelcrafting Supplies>
@@ -7369,9 +7369,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1350, {	-- Theresa Moulaine <Robe Vendor>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 53.4, 58.0, STORMWIND_CITY },
+						{ 53.4, 58.0, MAP.STORMWIND_CITY },
 						-- #else
-						{ 43.6, 43.6, STORMWIND_CITY },
+						{ 43.6, 43.6, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7388,9 +7388,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5510, {	-- Thulman Flintcrag <Guns Vendor>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 61.8, 36.2, STORMWIND_CITY },
+						{ 61.8, 36.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 54.6, 15.4, STORMWIND_CITY },
+						{ 54.6, 15.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7407,9 +7407,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(58154, {	-- Toren Landow <Legacy Justice Quartermaster>
 					["coords"] = {
 						-- #if AFTER 9.0.1
-						{ 75.7, 65.9, STORMWIND_CITY },
+						{ 75.7, 65.9, MAP.STORMWIND_CITY },
 						-- #else
-						{ 79.0, 70.1, STORMWIND_CITY },
+						{ 79.0, 70.1, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_3_0 },
@@ -7418,13 +7418,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Sells gear related to Cataclysm raid tier 11 (Throne of the Four Winds, Blackwing Descent, and Bastion of Twilight) as well as Baradin Hold.",
 				}),
 				n(50524, {	-- Travis Nichols <Hot Coffee Vendor>
-					["coord"] = { 69.4, 65.4, STORMWIND_CITY },
+					["coord"] = { 69.4, 65.4, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = { i(33042) },	-- Black Coffee
 				}),
 				n(261231, {	-- Tuuran <Promotional Decor Resupply>
-					["coord"] = { 48.5, 58.8, STORMWIND_CITY },
+					["coord"] = { 48.5, 58.8, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_12_0_0 },
 					["groups"] = {
@@ -7436,11 +7436,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 77.4, 61.6, STORMWIND_CITY },
+						{ 77.4, 61.6, MAP.STORMWIND_CITY },
 						-- #elseif AFTER WRATH
-						{ 77.2, 61.6, STORMWIND_CITY },
+						{ 77.2, 61.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 74.6, 47.8, STORMWIND_CITY },
+						{ 74.6, 47.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7462,9 +7462,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1309, {	-- Wynne Larson <Robe Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 52.0, 83.6, STORMWIND_CITY },
+						{ 52.0, 83.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 41.8, 76.4, STORMWIND_CITY },
+						{ 41.8, 76.4, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -7485,8 +7485,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
-		m(EASTERN_KINGDOMS, {
-			m(STORMWIND_CITY, {
+		m(MAP.EASTERN_KINGDOMS, {
+			m(MAP.STORMWIND_CITY, {
 				n(QUESTS, {
 					q(43463),	-- Ashes of a Fallen Crusader Tracking Quest - Looting Charred Locket from Ashes of a Fallen Crusader
 					q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
@@ -7495,8 +7495,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		}),
 	})),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
-		m(EASTERN_KINGDOMS, {
-			m(STORMWIND_CITY, {
+		m(MAP.EASTERN_KINGDOMS, {
+			m(MAP.STORMWIND_CITY, {
 				n(QUESTS, {
 					q(59255),	-- completed when turning in 'Fame Waits for Gnome One' (58708)
 					q(53645),	-- triggered during 'Molten Core' (53342) when porting to Molten Core

@@ -19,8 +19,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER CATA
 			{ 55.2, 66.1, 11 },	-- Wailing Caverns, Northern Barrens
 			-- #else
-			{ 52.0, 55.2, KALIMDOR },
-			{ 45.9, 35.7, THE_BARRENS },
+			{ 52.0, 55.2, MAP.KALIMDOR },
+			{ 45.9, 35.7, MAP.THE_BARRENS },
 			-- #endif
 		},
 		["lvl"] = lvlsquish(10, 12, 8),
@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					q(1487, {	-- Deviate Eradication
 						["qg"] = 5768,	-- Ebru <Disciple of Naralex>
-						["coord"] = { 46.0, 35.7, THE_BARRENS },
+						["coord"] = { 46.0, 35.7, MAP.THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 15,
 						["groups"] = {
@@ -91,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					q(1486, {	-- Deviate Hides
 						["qg"] = 5767,	-- Nalpak <Disciple of Naralex>
-						["coord"] = { 46.0, 35.7, THE_BARRENS },
+						["coord"] = { 46.0, 35.7, MAP.THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 13,
 						["groups"] = {
@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "n", 3448 },	-- Tonga Runetotem
 							{ "i", 10414 },	-- Sample Snapjaw Shell
 						},
-						["coord"] = { 52.3, 31.9, THE_BARRENS },
+						["coord"] = { 52.3, 31.9, MAP.THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "She lives in a house on top of the mountain.",
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["qg"] = 8418,	-- Falla Sagewind
-						["coord"] = { 48.2, 32.8, THE_BARRENS },
+						["coord"] = { 48.2, 32.8, MAP.THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 15,
@@ -151,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "She lives in a house on top of the mountain.",
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["qg"] = 8418,	-- Falla Sagewind
-						["coord"] = { 48.2, 32.8, THE_BARRENS },
+						["coord"] = { 48.2, 32.8, MAP.THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 15,
@@ -170,7 +170,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(914, {	-- Leaders of the Fang
 						["sourceQuest"] = 1490,	-- Nara Wildmane
 						["qg"] = 5770,	-- Nara Wildmane
-						["coord"] = { 75.6, 31.2, THUNDER_BLUFF },
+						["coord"] = { 75.6, 31.2, MAP.THUNDER_BLUFF },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
@@ -198,7 +198,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(1490, {	-- Nara Wildmane
 						["sourceQuest"] = 1489,	-- Hamuul Runetotem
 						["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
-						["coord"] = { 74.7, 30.2, THUNDER_BLUFF },
+						["coord"] = { 74.7, 30.2, MAP.THUNDER_BLUFF },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
@@ -218,7 +218,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					q(962, {	-- Serpentbloom
 						["qg"] = 3419,	-- Apothecary Zamah <Royal Apothecary Society>
-						["coord"] = { 23.6, 21.4, THUNDER_BLUFF },
+						["coord"] = { 23.6, 21.4, MAP.THUNDER_BLUFF },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 14,
@@ -237,7 +237,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(1491, {	-- Smart Drinks
 						["sourceQuest"] = 865,	-- Raptor Horns
 						["qg"] = 3446,	-- Mebok Mizzyrix
-						["coord"] = { 62.4, 37.6, THE_BARRENS },
+						["coord"] = { 62.4, 37.6, MAP.THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 13,
 						["groups"] = {
@@ -254,7 +254,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(6981, {	-- The Glowing Shard
 						["provider"] = { "i", 10441 },	-- Glowing Shard
 						["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
-						["coord"] = { 63.0, 37.2, THE_BARRENS },
+						["coord"] = { 63.0, 37.2, MAP.THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
@@ -263,13 +263,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(209846, {	-- Secrets of the Dreamers
 					["provider"] = { "o", 409692 },	-- Scrolls
-					["coord"] = { 52.83, 54.70, THE_BARRENS },
+					["coord"] = { 52.83, 54.70, MAP.THE_BARRENS },
 				})),
 			}),
 			-- #endif
 			n(VENDORS, {
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
-					["coord"] = { 45.9, 35.7, THE_BARRENS },
+					["coord"] = { 45.9, 35.7, MAP.THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(6474, {	-- Pattern: Deviate Scale Cloak (RECIPE!)

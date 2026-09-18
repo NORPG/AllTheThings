@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
-	m(MULGORE, {
+root(ROOTS.Zones, m(MAP.KALIMDOR, {
+	m(MAP.MULGORE, {
 		["lore"] = "A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",
 		["icon"] = 236809,
 		["maps"] = {
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(QUESTS, {
 						q(752, {	-- A Humble Task (1/2)
 							["qg"] = 2981,	-- Chief Hawkwind
-							["coord"] = { 44.2, 76.0, MULGORE },
+							["coord"] = { 44.2, 76.0, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(753, {	-- A Humble Task (2/2)
 							["sourceQuest"] = 752,	-- A Humble Task (1/2)
 							["qg"] = 2991,	-- Greatmother Hawkwind
-							["coord"] = { 50.0, 81.0, MULGORE },
+							["coord"] = { 50.0, 81.0, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -47,14 +47,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "i", 4755 },	-- Water Pitcher
 										{ "o", 2907 },	-- Water Pitcher
 									},
-									["coord"] = { 50.2, 81.3, MULGORE },
+									["coord"] = { 50.2, 81.3, MAP.MULGORE },
 								}),
 							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77649, {	-- A Hunter's Strength
 							["qg"] = 3061,	-- Lanka Farshot <Hunter Trainer>
-							["coord"] = { 44.2, 75.8, MULGORE },
+							["coord"] = { 44.2, 75.8, MAP.MULGORE },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { HUNTER },
 							["races"] = { TAUREN },
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
 									["provider"] = { "i", 206168 },	-- Rune of the Chimera
-									["coord"] = { 62.6, 79.8, MULGORE },
+									["coord"] = { 62.6, 79.8, MAP.MULGORE },
 									["cr"] = 2954,	-- Bristleback Battleboar
 								}),
 								recipe(410121),	-- Engrave Gloves - Chimera Shot
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 3076 },	-- Dirt-stained Map
 								{ "i", 4850 },	-- Bristleback Attack Plans
 							},
-							["coord"] = { 63.3, 82.6, MULGORE },
+							["coord"] = { 63.3, 82.6, MAP.MULGORE },
 							["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 3076 },	-- Dirt-stained Map
 								{ "i", 4850 },	-- Bristleback Attack Plans
 							},
-							["coord"] = { 63.3, 82.6, MULGORE },
+							["coord"] = { 63.3, 82.6, MAP.MULGORE },
 							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -101,14 +101,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3376, {	-- Break Sharptusk!
 							["qg"] = 3209,	-- Brave Windfeather
-							["coord"] = { 44.8, 76.6, MULGORE },
+							["coord"] = { 44.8, 76.6, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 3,
 							["groups"] = {
 								objective(1, {	-- 0/1 Chief Sharptusk Thornmantle's Head
 									["provider"] = { "i", 10459 },	-- Chief Sharptusk Thornmantle's Head
-									["coord"] = { 64.6, 77.8, MULGORE },
+									["coord"] = { 64.6, 77.8, MAP.MULGORE },
 									["cr"] = 8554,	-- Chief Sharptusk Thornmantle
 								}),
 								i(10635, {	-- Painted Chain Leggings
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1519, {	-- Call of Earth (1/3)
 							["altQuests"] = { 1516 },	-- Call of Earth (1/3 Durotar)
 							["qg"] = 5888,	-- Seer Ravenfeather
-							["coord"] = { 44.8, 76.2, MULGORE },
+							["coord"] = { 44.8, 76.2, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5888 },	-- Seer Ravenfeather
 								{ "i", 6635 },	-- Earth Sapta
 							},
-							["coord"] = { 44.8, 76.2, MULGORE },
+							["coord"] = { 44.8, 76.2, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5891 },	-- Minor Manifestation of Earth
 								{ "i", 6656 },	-- Rough Quartz
 							},
-							["coord"] = { 53.8, 80.4, MULGORE },
+							["coord"] = { 53.8, 80.4, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 34.0, 54.0, CAMP_NARACHE },
 								-- #else
-								{ 46.2, 82.4, MULGORE },
+								{ 46.2, 82.4, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 1519,	-- Call of Earth (1/3)
 							["altQuests"] = { 1463 },	-- Earth Sapta (Durotar)
 							["qg"] = 5888,	-- Seer Ravenfeather
-							["coord"] = { 44.8, 76.2, MULGORE },
+							["coord"] = { 44.8, 76.2, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -215,9 +215,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #elseif AFTER CATA
-								{ 49.0, 78.2, MULGORE },
+								{ 49.0, 78.2, MAP.MULGORE },
 								-- #else
-								{ 44.9, 77.1, MULGORE },
+								{ 44.9, 77.1, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 31.0, 50.6, CAMP_NARACHE },
 								-- #else
-								{ 46.2, 82.6, MULGORE },
+								{ 46.2, 82.6, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -248,7 +248,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #else
-								{ 49.0, 78.2, MULGORE },
+								{ 49.0, 78.2, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 34.0, 54.0, CAMP_NARACHE },
 								-- #else
-								{ 46.2, 82.4, MULGORE },
+								{ 46.2, 82.4, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27014,	-- Hallowed Note
 							["qg"] = 37724,	-- Seer Ravenfeather <Priest Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 45.0, 75.2, MULGORE },
+							["coord"] = { 45.0, 75.2, MAP.MULGORE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
@@ -280,7 +280,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77652, {	-- Icons of Power
 							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
-							["coord"] = { 45.0, 76.0, MULGORE },
+							["coord"] = { 45.0, 76.0, MAP.MULGORE },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["races"] = { TAUREN },
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77651, {	-- Into the Brambles
 							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
-							["coord"] = { 44.0, 76.0, MULGORE },
+							["coord"] = { 44.0, 76.0, MAP.MULGORE },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { TAUREN },
@@ -316,7 +316,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 27.6, 28.4, CAMP_NARACHE },
 								-- #else
-								{ 45.2, 75.6, MULGORE },
+								{ 45.2, 75.6, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #else
-								{ 49.0, 78.2, MULGORE },
+								{ 49.0, 78.2, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -354,7 +354,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.0, 75.0, CAMP_NARACHE },
 								-- #else
-								{ 45.0, 76.0, MULGORE },
+								{ 45.0, 76.0, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3094,	-- Verdant Note
 							["qg"] = 3060,	-- Gart Mistrunner <Druid Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 45.2, 75.2, MULGORE },
+							["coord"] = { 45.2, 75.2, MAP.MULGORE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77648, {	-- Relics of the Tauren
 							["qg"] = 3060,	-- Gart Mistrunner <Druid Trainer>
-							["coord"] = { 45.0, 76.0, MULGORE },
+							["coord"] = { 45.0, 76.0, MAP.MULGORE },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { DRUID },
 							["races"] = { TAUREN },
@@ -395,7 +395,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 31.0, 50.6, CAMP_NARACHE },
 								-- #else
-								{ 46.2, 82.6, MULGORE },
+								{ 46.2, 82.6, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -427,7 +427,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 31.0, 50.6, CAMP_NARACHE },
 								-- #else
-								{ 46.2, 82.6, MULGORE },
+								{ 46.2, 82.6, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -456,7 +456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #else
-								{ 49.0, 78.2, MULGORE },
+								{ 49.0, 78.2, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(757, {	-- Rite of Strength
 							["sourceQuest"] = 755,	-- Rites of the Earthmother (1/3)
 							["qg"] = 2982,	-- Seer Graytongue
-							["coord"] = { 42.6, 92.0, MULGORE },
+							["coord"] = { 42.6, 92.0, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 15.4, 30.4, CAMP_NARACHE },
 								-- #else
-								{ 41.2, 76.0, MULGORE },
+								{ 41.2, 76.0, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -531,7 +531,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 27.6, 28.4, CAMP_NARACHE },
 								-- #else
-								{ 45.2, 75.6, MULGORE },
+								{ 45.2, 75.6, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(755, {	-- Rites of the Earthmother (1/3)
 							["sourceQuest"] = 753,	-- A Humble Task (2/2)
 							["qg"] = 2981,	-- Chief Hawkwind
-							["coord"] = { 44.2, 76.1, MULGORE },
+							["coord"] = { 44.2, 76.1, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
@@ -550,7 +550,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 2981 },	-- Chief Hawkwind
 								{ "i", 4783 },	-- Totem of Hawkwind
 							},
-							["coord"] = { 44.2, 76.1, MULGORE },
+							["coord"] = { 44.2, 76.1, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
@@ -564,9 +564,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #elseif AFTER CATA
-								{ 49.0, 78.2, MULGORE },
+								{ 49.0, 78.2, MAP.MULGORE },
 								-- #else
-								{ 44.9, 77.1, MULGORE },
+								{ 44.9, 77.1, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -583,9 +583,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #elseif AFTER CATA
-								{ 49.0, 78.2, MULGORE },
+								{ 49.0, 78.2, MAP.MULGORE },
 								-- #else
-								{ 44.9, 77.1, MULGORE },
+								{ 44.9, 77.1, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -599,7 +599,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 31.0, 50.6, CAMP_NARACHE },
 								-- #else
-								{ 46.2, 82.6, MULGORE },
+								{ 46.2, 82.6, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 31.0, 50.6, CAMP_NARACHE },
 								-- #else
-								{ 46.2, 82.6, MULGORE },
+								{ 46.2, 82.6, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -649,7 +649,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(780, {	-- The Battleboars
 							["sourceQuest"] = 750,	-- The Hunt Continues
 							["qg"] = 2980,	-- Grull Hawkwind
-							["coord"] = { 44.9, 77.1, MULGORE },
+							["coord"] = { 44.9, 77.1, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -676,7 +676,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3091,	-- Simple Note
 							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 45.0, 75.6, MULGORE },
+							["coord"] = { 45.0, 75.6, MAP.MULGORE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
@@ -688,7 +688,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 27.6, 28.4, CAMP_NARACHE },
 								-- #else
-								{ 45.2, 75.6, MULGORE },
+								{ 45.2, 75.6, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -696,7 +696,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(747, {	-- The Hunt Begins
 							["qg"] = 2980,	-- Grull Hawkwind
-							["coord"] = { 44.9, 77.1, MULGORE },
+							["coord"] = { 44.9, 77.1, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(750, {	-- The Hunt Continues
 							["sourceQuest"] = 747,	-- The Hunt Begins
 							["qg"] = 2980,	-- Grull Hawkwind
-							["coord"] = { 44.9, 77.1, MULGORE },
+							["coord"] = { 44.9, 77.1, MAP.MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3092,	-- Etched Note
 							["qg"] = 3061,	-- Lanka Farshot <Hunter Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 45.2, 75.4, MULGORE },
+							["coord"] = { 45.2, 75.4, MAP.MULGORE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27015,	-- Consecrated Note
 							["qg"] = 37737,	-- Sunwalker Helaku <Paladin Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 45.0, 75.6, MULGORE },
+							["coord"] = { 45.0, 75.6, MAP.MULGORE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
@@ -772,9 +772,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #elseif AFTER CATA
-								{ 49.0, 78.2, MULGORE },
+								{ 49.0, 78.2, MAP.MULGORE },
 								-- #else
-								{ 44.9, 77.1, MULGORE },
+								{ 44.9, 77.1, MAP.MULGORE },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -785,7 +785,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if SEASON_OF_DISCOVERY
 					n(TREASURES, {
 						applyclassicphase(SOD_PHASE_ONE, o(403102, {	-- Bristleback Loot Cache
-							["coord"] = { 61.6, 76.0, MULGORE },
+							["coord"] = { 61.6, 76.0, MAP.MULGORE },
 							["timeline"] = { REMOVED_2_0_1 },
 							["groups"] = {
 								i(208414, {	-- Lunar Idol
@@ -814,7 +814,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
-							["coord"] = { 63.8, 81.0, MULGORE },
+							["coord"] = { 63.8, 81.0, MAP.MULGORE },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["cr"] = 2953,	-- Bristleback Shaman
@@ -858,7 +858,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4836),	-- Stonetalon Pass
 				-- #endif
 				exploration(820),	-- The Golden Plains
-				visit_exploration(821,{coord={61.9,64.1,MULGORE}}),	-- The Rolling Plains
+				visit_exploration(821,{coord={61.9,64.1,MAP.MULGORE}}),	-- The Rolling Plains
 				exploration(360),	-- The Venture Co. Mine
 				exploration(1638),	-- Thunder Bluff
 				exploration(397),	-- Thunderhorn Water Well
@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(402, {	-- Bloodhoof Village, Mulgore
 					["cr"] = 40809,	-- Tak <Wind Rider Master>
-					["coord"] = { 47.4, 58.6, MULGORE },
+					["coord"] = { 47.4, 58.6, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -880,33 +880,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(31575, {	-- Got one! (Naleen)
 					["sourceQuest"] = 31831,	-- Level Up!
 					["qg"] = 63067,	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
+					["coord"] = { 49.2, 56.1, MAP.MULGORE },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31573, {	-- Learning the Ropes (Naleen)
 					["qg"] = 63067,	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
+					["coord"] = { 49.2, 56.1, MAP.MULGORE },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31831, {	-- Level Up! (Naleen)
 					["sourceQuest"] = 31574,	-- On The Mend
 					["qg"] = 63067,	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
+					["coord"] = { 49.2, 56.1, MAP.MULGORE },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31574, {	-- On The Mend (Naleen)
 					["sourceQuest"] = 31573,	-- Learning the Ropes
 					["qg"] = 63067,	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
+					["coord"] = { 49.2, 56.1, MAP.MULGORE },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Battle Pets Healed
 							["provider"] = { "n", 10050 },	-- Seikwa <Stable Master>
-							["coord"] = { 47.0, 59.6, MULGORE },
+							["coord"] = { 47.0, 59.6, MAP.MULGORE },
 						}),
 					},
 				}),
@@ -916,9 +916,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3233,	-- Lorekeeper Raintotem
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.4, 17.2, MULGORE },
+						{ 49.4, 17.2, MAP.MULGORE },
 						-- #else
-						{ 59.8, 25.6, MULGORE },
+						{ 59.8, 25.6, MAP.MULGORE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -946,7 +946,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 6775 },	-- Antur Fallow
 						{ "i", 7626 },	-- Bundle of Furs
 					},
-					["coord"] = { 38.6, 81.6, MULGORE },
+					["coord"] = { 38.6, 81.6, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -954,9 +954,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2985,	-- Ruul Eagletalon
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.4, 61.2, MULGORE },
+						{ 47.4, 61.2, MAP.MULGORE },
 						-- #else
-						{ 47.4, 62.0, MULGORE },
+						{ 47.4, 62.0, MAP.MULGORE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -973,7 +973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(746, {	-- Dwarven Digging
 					["qg"] = 2993,	-- Baine Bloodhoof
-					["coord"] = { 47.5, 60.2, MULGORE },
+					["coord"] = { 47.5, 60.2, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -981,7 +981,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/6 Broken Tools
 							["provider"] = { "i", 4703 },	-- Broken Tools
 							["cost"] = { { "i", 4702, 1 } },	-- Prospector's Pick
-							["coord"] = { 34.0, 46.0, MULGORE },
+							["coord"] = { 34.0, 46.0, MAP.MULGORE },
 							["crs"] = {
 								2990,	-- Bael'dun Appraiser
 								2989,	-- Bael'dun Digger
@@ -1007,7 +1007,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5657,	-- Hex of Weakness [Undercity]
 					},
 					["qg"] = 11407,	-- Var'jun
-					["coord"] = { 47.0, 58.8, MULGORE },
+					["coord"] = { 47.0, 58.8, MAP.MULGORE },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1025,26 +1025,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24550, {	-- Journey into Thunder Bluff
 					["sourceQuest"] = 24524,	-- Wildmane Cleansing
 					["qg"] = 37024,	-- Una Wildmane
-					["coord"] = { 49.4, 17.4, MULGORE },
+					["coord"] = { 49.4, 17.4, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = { TAUREN },
 				}),
 				q(14439, {	-- Journey into Thunder Bluff
 					["sourceQuest"] = 773,	-- Rite of Wisdom
 					["qg"] = 2994,	-- Ancestral Spirit
-					["coord"] = { 61.4, 21.0, MULGORE },
+					["coord"] = { 61.4, 21.0, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 				}),
 				q(775, {	-- Journey into Thunder Bluff
 					["sourceQuest"] = 773,	-- Rite of Wisdom
 					["qg"] = 2994,	-- Ancestral Spirit
-					["coord"] = { 61.4, 21.0, MULGORE },
+					["coord"] = { 61.4, 21.0, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_1 },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 				}),
@@ -1052,9 +1052,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 23618,	-- Ahab Wheathoof <The Old Rancher>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.3, 53.1, MULGORE },
+						{ 48.3, 53.1, MAP.MULGORE },
 						-- #else
-						{ 48.2, 53.4, MULGORE },
+						{ 48.2, 53.4, MAP.MULGORE },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_1_2 },
@@ -1066,7 +1066,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 33009 },	-- Tender Strider Meat
 								{ "n", 23616 },	-- Kyle the Frenzied
 							},
-							["coord"] = { 48.6, 62.2, MULGORE },
+							["coord"] = { 48.6, 62.2, MAP.MULGORE },
 							["crs"] = {
 								2956,	-- Adult Plainstrider
 								2957,	-- Elder Plainstrider
@@ -1113,7 +1113,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26188, {	-- Mazzranache
 					["qg"] = 3055,	-- Maur Raincaller
-					["coord"] = { 47.1, 56.6, MULGORE },
+					["coord"] = { 47.1, 56.6, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1137,7 +1137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(766, {	-- Mazzranache
 					["qg"] = 3055,	-- Maur Raincaller
-					["coord"] = { 47.0, 57.0, MULGORE },
+					["coord"] = { 47.0, 57.0, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -1180,7 +1180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24459, {	-- Morin Cloudstalker
 					["qg"] = 36644,	-- Ahmo Thunderhorn
-					["coord"] = { 47.6, 59.5, MULGORE },
+					["coord"] = { 47.6, 59.5, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1190,9 +1190,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3685,	-- Harb Clawhoof
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.6, 58.0, MULGORE },
+						{ 47.6, 58.0, MAP.MULGORE },
 						-- #else
-						{ 47.6, 58.4, MULGORE },
+						{ 47.6, 58.4, MAP.MULGORE },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
@@ -1207,9 +1207,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3685,	-- Harb Clawhoof
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.6, 58.0, MULGORE },
+						{ 47.6, 58.0, MAP.MULGORE },
 						-- #else
-						{ 47.6, 58.4, MULGORE },
+						{ 47.6, 58.4, MAP.MULGORE },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
@@ -1221,7 +1221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(20440, {	-- Poison Water
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.6, 59.5, MULGORE },
+					["coord"] = { 48.6, 59.5, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
@@ -1245,7 +1245,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(748, {	-- Poison Water
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.5, 60.4, MULGORE },
+					["coord"] = { 48.5, 60.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
@@ -1272,9 +1272,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2987,	-- Eyahn Eagletalon
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.6, 17.4, MULGORE },
+						{ 49.6, 17.4, MAP.MULGORE },
 						-- #else
-						{ 37.6, 59.8, THUNDER_BLUFF },
+						{ 37.6, 59.8, MAP.THUNDER_BLUFF },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1311,7 +1311,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24457, {	-- Rite of Vision (1/2)
 					["sourceQuest"] = 24456,	-- Thunderhorn Cleansing
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.6, 59.8, MULGORE },
+					["coord"] = { 48.6, 59.8, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1319,7 +1319,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(20441, {	-- Rite of Vision (2/2)
 					["sourceQuest"] = 24457,	-- Rite of Vision (1/2)
 					["qg"] = 3054,	-- Zarlman Two-Moons
-					["coord"] = { 47.8, 57.2, MULGORE },
+					["coord"] = { 47.8, 57.2, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
@@ -1340,7 +1340,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(767, {	-- Rite of Vision (1/3)
 					["sourceQuest"] = 763,	-- Rites of the Earthmother (2/3)
 					["qg"] = 2993,	-- Baine Bloodhoof
-					["coord"] = { 47.5, 60.2, MULGORE },
+					["coord"] = { 47.5, 60.2, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -1348,7 +1348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(771, {	-- Rite of Vision (2/3)
 					["sourceQuest"] = 767,	-- Rite of Vision (1/3)
 					["qg"] = 3054,	-- Zarlman Two-Moons
-					["coord"] = { 47.8, 57.5, MULGORE },
+					["coord"] = { 47.8, 57.5, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -1373,7 +1373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3054 },	-- Zarlman Two-Moons
 						{ "i", 4823 },	-- Water of the Seers
 					},
-					["coord"] = { 47.8, 57.5, MULGORE },
+					["coord"] = { 47.8, 57.5, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -1403,9 +1403,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 49.4, 17.2, MULGORE },
+						{ 49.4, 17.2, MAP.MULGORE },
 						-- #else
-						{ 32.8, 36.0, MULGORE },
+						{ 32.8, 36.0, MAP.MULGORE },
 						-- #endif
 					},
 					["races"] =
@@ -1419,7 +1419,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14440, {	-- Rites of the Earthmother (3/3)
 					["sourceQuest"] = 14439,	-- Journey into Thunder Bluff
 					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
-					["coord"] = { 59.8, 51.6, THUNDER_BLUFF },
+					["coord"] = { 59.8, 51.6, MAP.THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -1427,13 +1427,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Horn of Arra'chea
 							["provider"] = { "i", 4841 },	-- Horn of Arra'chea
 							["coords"] = {
-								{ 48.4, 15.6, MULGORE },
-								{ 53.0, 13.2, MULGORE },
-								{ 55.0, 22.0, MULGORE },
-								{ 56.4, 29.0, MULGORE },
-								{ 52.2, 31.2, MULGORE },
-								{ 51.0, 25.8, MULGORE },
-								{ 49.6, 20.8, MULGORE },
+								{ 48.4, 15.6, MAP.MULGORE },
+								{ 53.0, 13.2, MAP.MULGORE },
+								{ 55.0, 22.0, MAP.MULGORE },
+								{ 56.4, 29.0, MAP.MULGORE },
+								{ 52.2, 31.2, MAP.MULGORE },
+								{ 51.0, 25.8, MAP.MULGORE },
+								{ 49.6, 20.8, MAP.MULGORE },
 							},
 							["cr"] = 3058,	-- Arra'chea
 						}),
@@ -1445,7 +1445,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(776, {	-- Rites of the Earthmother (3/3)
 					["sourceQuest"] = 775,	-- Journey into Thunder Bluff
 					["qg"] = 3057,	-- Cairne Bloodhoof <High Chieftain>
-					["coord"] = { 59.8, 51.6, THUNDER_BLUFF },
+					["coord"] = { 59.8, 51.6, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -1453,13 +1453,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Horn of Arra'chea
 							["provider"] = { "i", 4841 },	-- Horn of Arra'chea
 							["coords"] = {
-								{ 48.4, 15.6, MULGORE },
-								{ 53.0, 13.2, MULGORE },
-								{ 55.0, 22.0, MULGORE },
-								{ 56.4, 29.0, MULGORE },
-								{ 52.2, 31.2, MULGORE },
-								{ 51.0, 25.8, MULGORE },
-								{ 49.6, 20.8, MULGORE },
+								{ 48.4, 15.6, MAP.MULGORE },
+								{ 53.0, 13.2, MAP.MULGORE },
+								{ 55.0, 22.0, MAP.MULGORE },
+								{ 56.4, 29.0, MAP.MULGORE },
+								{ 52.2, 31.2, MAP.MULGORE },
+								{ 51.0, 25.8, MAP.MULGORE },
+								{ 49.6, 20.8, MAP.MULGORE },
 							},
 							["cr"] = 3058,	-- Arra'chea
 						}),
@@ -1470,7 +1470,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14438, {	-- Sharing the Land
 					["qg"] = 36644,	-- Ahmo Thunderhorn
-					["coord"] = { 47.6, 59.5, MULGORE },
+					["coord"] = { 47.6, 59.5, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 							-- For some reason, on Retail this quest got marked as completed when [The Angerfang Menace (26189)] in Wetlands got turned in. Check if it happens vice-versa. -Exo 10-01-25
@@ -1490,7 +1490,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(745, {	-- Sharing the Land
 					["qg"] = 2993,	-- Baine Bloodhoof
-					["coord"] = { 47.5, 60.2, MULGORE },
+					["coord"] = { 47.5, 60.2, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1509,13 +1509,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26180, {	-- Supervisor Fizsprocket
 					["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 					["qg"] = 2988,	-- Morin Cloudstalker
-					["coord"] = { 57.0, 60.4, MULGORE },
+					["coord"] = { 57.0, 60.4, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fizsprocket's Clipboard
 							["provider"] = { "i", 4819 },	-- Fizsprocket's Clipboard
-							["coord"] = { 64.8, 43.4, MULGORE },
+							["coord"] = { 64.8, 43.4, MAP.MULGORE },
 							["cr"] = 3051,	-- Supervisor Fizsprocket
 						}),
 						i(57242, {	-- Goblin Masher
@@ -1532,14 +1532,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(765, {	-- Supervisor Fizsprocket
 					["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 					["qg"] = 2988,	-- Morin Cloudstalker
-					["coord"] = { 54.4, 60.4, MULGORE },
+					["coord"] = { 54.4, 60.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fizsprocket's Clipboard
 							["provider"] = { "i", 4819 },	-- Fizsprocket's Clipboard
-							["coord"] = { 64.8, 43.4, MULGORE },
+							["coord"] = { 64.8, 43.4, MAP.MULGORE },
 							["cr"] = 3051,	-- Supervisor Fizsprocket
 						}),
 						i(4974, {	-- Compact Fighting Knife
@@ -1554,9 +1554,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2947,	-- Harken Windtotem
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 48.7, 58.7, MULGORE },
+						{ 48.7, 58.7, MAP.MULGORE },
 						-- #else
-						{ 48.7, 59.3, MULGORE },
+						{ 48.7, 59.3, MAP.MULGORE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1578,7 +1578,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6067,	-- The Hunter's Path [Durotar]
 					},
 					["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
-					["coord"] = { 47.8, 55.6, MULGORE },
+					["coord"] = { 47.8, 55.6, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
@@ -1595,7 +1595,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6087, {	-- Taming the Beast (2/3)
 					["sourceQuest"] = 6061,	-- Taming the Beast (1/3)
 					["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
-					["coord"] = { 47.8, 55.6, MULGORE },
+					["coord"] = { 47.8, 55.6, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
@@ -1612,7 +1612,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6088, {	-- Taming the Beast (3/3)
 					["sourceQuest"] = 6087,	-- Taming the Beast (2/3)
 					["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
-					["coord"] = { 47.8, 55.6, MULGORE },
+					["coord"] = { 47.8, 55.6, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
@@ -1642,7 +1642,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6065, {	-- The Hunter's Path [Thunder Bluff]
 					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
-					["coord"] = { 58.4, 88.0, THUNDER_BLUFF },
+					["coord"] = { 58.4, 88.0, MAP.THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
@@ -1651,7 +1651,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6066, {	-- The Hunter's Path [Mulgore]
 					["qg"] = 3061,	-- Lanka Farshot <Hunter Trainer>
-					["coord"] = { 44.3, 75.7, MULGORE },
+					["coord"] = { 44.3, 75.7, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
@@ -1660,7 +1660,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6067, {	-- The Hunter's Path [Durotar]
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
-					["coord"] = { 51.9, 43.5, DUROTAR },
+					["coord"] = { 51.9, 43.5, MAP.DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
@@ -1673,7 +1673,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						844,	-- Plainstrider Menace
 					},
 					["qg"] = 3052,	-- Skorn Whitecloud
-					["coord"] = { 46.76, 60.22, MULGORE },
+					["coord"] = { 46.76, 60.22, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1691,9 +1691,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2988,	-- Morin Cloudstalker
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.0, 60.4, MULGORE },
+						{ 57.0, 60.4, MAP.MULGORE },
 						-- #else
-						{ 54.4, 60.4, MULGORE },
+						{ 54.4, 60.4, MAP.MULGORE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1704,9 +1704,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 2908 },	-- Sealed Supply Crate
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 48.4, MULGORE },
+						{ 53.6, 48.4, MAP.MULGORE },
 						-- #else
-						{ 53.8, 48.3, MULGORE },
+						{ 53.8, 48.3, MAP.MULGORE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1716,7 +1716,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14491, {	-- The Restless Earth
 					["sourceQuest"] = 14438,	-- Sharing the Land
 					["qg"] = 36644,	-- Ahmo Thunderhorn
-					["coord"] = { 47.6, 59.6, MULGORE },
+					["coord"] = { 47.6, 59.6, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26179, {	-- The Venture Co.
 					["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 					["qg"] = 2988,	-- Morin Cloudstalker
-					["coord"] = { 57.0, 60.4, MULGORE },
+					["coord"] = { 57.0, 60.4, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1750,7 +1750,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(764, {	-- The Venture Co.
 					["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 					["qg"] = 2988,	-- Morin Cloudstalker
-					["coord"] = { 54.4, 60.4, MULGORE },
+					["coord"] = { 54.4, 60.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -1766,7 +1766,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24456, {	-- Thunderhorn Cleansing
 					["sourceQuest"] = 24441,	-- Thunderhorn Totem
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.6, 59.8, MULGORE },
+					["coord"] = { 48.6, 59.8, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
@@ -1788,14 +1788,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(758, {	-- Thunderhorn Cleansing
 					["sourceQuest"] = 756,	-- Thunderhorn Totem
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.5, 60.4, MULGORE },
+					["coord"] = { 48.5, 60.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- Cleanse the Thunderhorn Water Well
 							["provider"] = { "i", 5415 },	-- Thunderhorn Cleansing Totem
-							["coord"] = { 44.0, 45.0, MULGORE },
+							["coord"] = { 44.0, 45.0, MAP.MULGORE },
 						}),
 						i(4963, {	-- Thunderhorn Cloak
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1805,7 +1805,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24441, {	-- Thunderhorn Totem
 					["sourceQuest"] = 24440,	-- Winterhoof Cleansing
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.6, 59.8, MULGORE },
+					["coord"] = { 48.6, 59.8, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
@@ -1822,7 +1822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(756, {	-- Thunderhorn Totem
 					["sourceQuest"] = 754,	-- Winterhoof Cleansing
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.5, 60.4, MULGORE },
+					["coord"] = { 48.5, 60.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
@@ -1846,7 +1846,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
 					["qg"] = 11407,	-- Var'jun
-					["coord"] = { 47.0, 58.8, MULGORE },
+					["coord"] = { 47.0, 58.8, MAP.MULGORE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -1864,7 +1864,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6089, {	-- Training the Beast
 					["sourceQuest"] = 6088,	-- Taming the Beast (3/3)
 					["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
-					["coord"] = { 47.8, 55.6, MULGORE },
+					["coord"] = { 47.8, 55.6, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
@@ -1879,7 +1879,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24524, {	-- Wildmane Cleansing
 					["sourceQuest"] = 24523,	-- Wildmane Totem
 					["qg"] = 37024,	-- Una Wildmane
-					["coord"] = { 49.4, 17.4, MULGORE },
+					["coord"] = { 49.4, 17.4, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
@@ -1904,14 +1904,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(760, {	-- Wildmane Cleansing
 					["sourceQuest"] = 759,	-- Wildmane Totem
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.5, 60.4, MULGORE },
+					["coord"] = { 48.5, 60.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- Cleanse the Wildmane Well
 							["provider"] = { "i", 5416 },	-- Wildmane Cleansing Totem
-							["coord"] = { 43.0, 14.0, MULGORE },
+							["coord"] = { 43.0, 14.0, MAP.MULGORE },
 						}),
 						i(3443, {	-- Ceremonial Tomahawk
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1924,7 +1924,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24523, {	-- Wildmane Totem
 					["sourceQuest"] = 20441,	-- Rite of Vision
 					["qg"] = 37024,	-- Una Wildmane
-					["coord"] = { 49.4, 17.4, MULGORE },
+					["coord"] = { 49.4, 17.4, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
@@ -1937,7 +1937,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(759, {	-- Wildmane Totem
 					["sourceQuest"] = 758,	-- Thunderhorn Cleansing
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.5, 60.4, MULGORE },
+					["coord"] = { 48.5, 60.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
@@ -1951,7 +1951,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24440, {	-- Winterhoof Cleansing
 					["sourceQuest"] = 20440,	-- Poison Water
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.6, 59.8, MULGORE },
+					["coord"] = { 48.6, 59.8, MAP.MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
@@ -1967,14 +1967,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(754, {	-- Winterhoof Cleansing
 					["sourceQuest"] = 748,	-- Poison Water
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["coord"] = { 48.5, 60.4, MULGORE },
+					["coord"] = { 48.5, 60.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- Cleanse the Winterhoof Water Well
 							["provider"] = { "i", 5411 },	-- Winterhoof Cleansing Totem
-							["coord"] = { 53.0, 66.0, MULGORE },
+							["coord"] = { 53.0, 66.0, MAP.MULGORE },
 						}),
 					},
 				}),
@@ -1983,28 +1983,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5787, {	-- Enforcer Emilgund
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 60.6, 47.6, MULGORE },
+						{ 60.6, 47.6, MAP.MULGORE },
 						-- #else
-						{ 40.6, 15.8, MULGORE },
+						{ 40.6, 15.8, MAP.MULGORE },
 						-- #endif
 					},
 				}),
 				n(3056, {	-- Ghost Howl
 					["coords"] = {
 						-- #if AFTER CATA
-                        { 42.2, 15.4, MULGORE },
-                        { 44.4, 15.0, MULGORE },
-                        { 44.8, 16.4, MULGORE },
-                        { 44.0, 17.6, MULGORE },
+                        { 42.2, 15.4, MAP.MULGORE },
+                        { 44.4, 15.0, MAP.MULGORE },
+                        { 44.8, 16.4, MAP.MULGORE },
+                        { 44.0, 17.6, MAP.MULGORE },
 						-- #else
-						{ 50.6, 15.0, MULGORE },
-						{ 39.6, 13.8, MULGORE },
-						{ 37.4, 17.8, MULGORE },
-						{ 32.8, 19.2, MULGORE },
-						{ 32.0, 26.0, MULGORE },
-						{ 34.0, 29.2, MULGORE },
-						{ 37.0, 42.6, MULGORE },
-						{ 44.2, 41.2, MULGORE },
+						{ 50.6, 15.0, MAP.MULGORE },
+						{ 39.6, 13.8, MAP.MULGORE },
+						{ 37.4, 17.8, MAP.MULGORE },
+						{ 32.8, 19.2, MAP.MULGORE },
+						{ 32.0, 26.0, MAP.MULGORE },
+						{ 34.0, 29.2, MAP.MULGORE },
+						{ 37.0, 42.6, MAP.MULGORE },
+						{ 44.2, 41.2, MAP.MULGORE },
 						-- #endif
 					},
 					["groups"] = {
@@ -2016,13 +2016,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3068, {	-- Mazzranache
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.4, 42.6, MULGORE },
+						{ 50.4, 42.6, MAP.MULGORE },
 						-- #else
-						{ 34.8, 42.2, MULGORE },
-						{ 39.4, 44.2, MULGORE },
-						{ 44.4, 42.9, MULGORE },
-						{ 51.2, 43.6, MULGORE },
-						{ 56.6, 44.0, MULGORE },
+						{ 34.8, 42.2, MAP.MULGORE },
+						{ 39.4, 44.2, MAP.MULGORE },
+						{ 44.4, 42.9, MAP.MULGORE },
+						{ 51.2, 43.6, MAP.MULGORE },
+						{ 56.6, 44.0, MAP.MULGORE },
 						-- #endif
 					},
 					["groups"] = {
@@ -2034,7 +2034,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(205382, {	-- Mokwa
 					["description"] = "You can tame him and you still get the rune!",
-					["coord"] = { 36.0, 57.0, MULGORE },
+					["coord"] = { 36.0, 57.0, MAP.MULGORE },
 					["cost"] = { { "i", 205961, 1 } },	-- Mulgore Bird Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
@@ -2049,12 +2049,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5785, {	-- Sister Hatelash
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.4, 12.6, MULGORE },
-						{ 32.6, 24.0, MULGORE },
+						{ 53.4, 12.6, MAP.MULGORE },
+						{ 32.6, 24.0, MAP.MULGORE },
 						-- #else
-						{ 30.6, 21.6, MULGORE },
-						{ 36.6, 11.6, MULGORE },
-						{ 55.6, 12.0, MULGORE },
+						{ 30.6, 21.6, MAP.MULGORE },
+						{ 36.6, 11.6, MAP.MULGORE },
+						{ 55.6, 12.0, MAP.MULGORE },
 						-- #endif
 					},
 					["groups"] = {
@@ -2066,21 +2066,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5786, {	-- Snagglespear
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.4, 71.6, MULGORE },
-						{ 48.8, 70.0, MULGORE },
+						{ 53.4, 71.6, MAP.MULGORE },
+						{ 48.8, 70.0, MAP.MULGORE },
 						-- #else
-						{ 48.2, 68.0, MULGORE },
-						{ 50.6, 71.4, MULGORE },
-						{ 55.2, 72.2, MULGORE },
+						{ 48.2, 68.0, MAP.MULGORE },
+						{ 50.6, 71.4, MAP.MULGORE },
+						{ 55.2, 72.2, MAP.MULGORE },
 						-- #endif
 					},
 				}),
 				n(5807, {	-- The Rake
 					["coords"] = {
-						{ 50.6, 26.6, MULGORE },
-						{ 55.6, 24.4, MULGORE },
-						{ 54.4, 20.2, MULGORE },
-						{ 49.6, 22.8, MULGORE },
+						{ 50.6, 26.6, MAP.MULGORE },
+						{ 55.6, 24.4, MAP.MULGORE },
+						{ 54.4, 20.2, MAP.MULGORE },
+						{ 49.6, 22.8, MAP.MULGORE },
 					},
 					["groups"] = {
 						i(17922, {	-- Lionfur Armor
@@ -2092,7 +2092,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(205700, {	-- Venture Co. Poacher
 					["provider"] = { "n", 205692 },	-- Rustling Bush
 					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
-					["coord"] = { 59.0, 54.6, MULGORE },
+					["coord"] = { 59.0, 54.6, MAP.MULGORE },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(206155, {	-- Rune of Marksmanship
@@ -2108,7 +2108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 206248 },	-- Wooden Effigy
 						{ "i", 206466 },	-- Prairie Crown
 					},
-					["coord"] = { 37.8, 49.6, MULGORE },
+					["coord"] = { 37.8, 49.6, MAP.MULGORE },
 					["cost"] = { { "i", 206469, 3 } },	-- Prairie Flower
 					["groups"] = {
 						i(206963, {	-- Rune of Natural Potential
@@ -2122,11 +2122,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
-						{ 45.6, 36.4, MULGORE },
-						{ 51.8, 39.2, MULGORE },
-						{ 37.8, 55.0, MULGORE },
-						{ 40.6, 53.8, MULGORE },
-						{ 60.2, 67.6, MULGORE },
+						{ 45.6, 36.4, MAP.MULGORE },
+						{ 51.8, 39.2, MAP.MULGORE },
+						{ 37.8, 55.0, MAP.MULGORE },
+						{ 40.6, 53.8, MAP.MULGORE },
+						{ 60.2, 67.6, MAP.MULGORE },
 					},
 					["groups"] = {
 						i(204441, {	-- Rune of Blood Frenzy
@@ -2142,7 +2142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE TBC
 			n(RIDING_TRAINER, {
 				n(3690, {	-- Kar Stormsinger <Kodo Riding Instructor>
-					["coord"] = { 47.6, 58.4, MULGORE },
+					["coord"] = { 47.6, 58.4, MAP.MULGORE },
 					["races"] = HORDE_ONLY,
 					-- Available to Tauren without faction requirements.
 					["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
@@ -2165,7 +2165,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
-					["coord"] = { 60.4, 33.6, MULGORE },
+					["coord"] = { 60.4, 33.6, MAP.MULGORE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(210589, {	-- Echo of the Ancestors
@@ -2196,7 +2196,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(404352, {	-- Artifact Storage
 					["provider"] = { "i", 206975 },	-- Artifact Storage Key
-					["coord"] = { 31.6, 49.5, MULGORE },
+					["coord"] = { 31.6, 49.5, MAP.MULGORE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(206388, {	-- Sulfurous Icon
@@ -2211,11 +2211,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
 					-- ["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
 					["coords"] = {
-						{ 54.07, 55.82, MULGORE },
-						{ 36.3, 9.8, MULGORE },
-						{ 37.5, 52.5, MULGORE },
-						{ 41.65, 55.98, MULGORE },
-						{ 38.0, 60.0, MULGORE },
+						{ 54.07, 55.82, MAP.MULGORE },
+						{ 36.3, 9.8, MAP.MULGORE },
+						{ 37.5, 52.5, MAP.MULGORE },
+						{ 41.65, 55.98, MAP.MULGORE },
+						{ 38.0, 60.0, MAP.MULGORE },
 					},
 					["classes"] = { SHAMAN },
 					["groups"] = {
@@ -2228,7 +2228,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 207577 },	-- Lunar Stone
 						{ "o", 404433 },	-- Lunar Chest
 					},
-					["coord"] = { 35.7, 69.6, MULGORE },
+					["coord"] = { 35.7, 69.6, MAP.MULGORE },
 					["classes"] = { DRUID },
 					["groups"] = {
 						recipe(416044),	-- Engrave Gloves - Sunfire
@@ -2240,9 +2240,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.6, 58.0, MULGORE },
+						{ 47.6, 58.0, MAP.MULGORE },
 						-- #else
-						{ 47.6, 58.4, MULGORE },
+						{ 47.6, 58.4, MAP.MULGORE },
 						-- #endif
 					},
 					-- Available to Tauren without faction requirements.
@@ -2274,9 +2274,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(5940, {	-- Harn Longcast <Fishing Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 47.6, 54.8, MULGORE },
+						{ 47.6, 54.8, MAP.MULGORE },
 						-- #else
-						{ 47.6, 55.0, MULGORE },
+						{ 47.6, 55.0, MAP.MULGORE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2288,7 +2288,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(205635, {	-- Takoda Sunmane <Naturalist>
 					["description"] = "Use the musk and tame a prairie dog and then bring it to Takoda.",
-					["coord"] = { 46.2, 60.6, MULGORE },
+					["coord"] = { 46.2, 60.6, MAP.MULGORE },
 					["cost"] = { { "i", 205995, 1 } },	-- Prairie Dog Musk
 					["crs"] = { 2620 },	-- Prairie Dog
 					["races"] = HORDE_ONLY,
@@ -2305,9 +2305,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3081, {	-- Wunna Darkmane <Trade Goods>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46.4, 57.8, MULGORE },
+						{ 46.4, 57.8, MAP.MULGORE },
 						-- #else
-						{ 46.2, 58.2, MULGORE },
+						{ 46.2, 58.2, MAP.MULGORE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2319,7 +2319,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if SEASON_OF_DISCOVERY
 			n(ZONE_DROPS, {
 				applyclassicphase(SOD_PHASE_ONE, i(206975, {	-- Artifact Storage Key
-					["coord"] = { 33.8, 49.8, MULGORE },
+					["coord"] = { 33.8, 49.8, MAP.MULGORE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["crs"] = {
 						2990,	-- Bael'dun Appraiser
@@ -2327,7 +2327,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage
-					["coord"] = { 53.2, 29.6, MULGORE },
+					["coord"] = { 53.2, 29.6, MAP.MULGORE },
 					["classes"] = { DRUID },
 					["crs"] = {
 						2979,	-- Venture Co. Supervisor
@@ -2355,10 +2355,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205995, {	-- Prairie Dog Musk
 					["coords"] = {
-						{ 53.6, 72.6, MULGORE },
-						{ 31.2, 62.2, MULGORE },
-						{ 48.2, 74.0, MULGORE },
-						{ 30.8, 61.6, MULGORE },
+						{ 53.6, 72.6, MAP.MULGORE },
+						{ 31.2, 62.2, MAP.MULGORE },
+						{ 48.2, 74.0, MAP.MULGORE },
+						{ 30.8, 61.6, MAP.MULGORE },
 					},
 					["classes"] = { HUNTER },
 					["crs"] = {
@@ -2374,7 +2374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 					["description"] = "This can drop from any of the Rare Creatures in the zone.",
-					["coord"] = { 51.8, 20.0, MULGORE },
+					["coord"] = { 51.8, 20.0, MAP.MULGORE },
 					["classes"] = { HUNTER },
 					["cr"] = 3058,	-- Arra'chea
 					["groups"] = {
@@ -2383,7 +2383,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 					["description"] = "This can drop from any of the Rare Creatures in the zone.",
-					["coord"] = { 30.8, 61.6, MULGORE },
+					["coord"] = { 30.8, 61.6, MAP.MULGORE },
 					["classes"] = { WARRIOR },
 					["cr"] = 207515,	-- Lurkmane
 					["groups"] = {
@@ -2391,7 +2391,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
-					["coord"] = { 53.6, 73.6, MULGORE },
+					["coord"] = { 53.6, 73.6, MAP.MULGORE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -2401,7 +2401,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206995, {	-- Severed Harpy Head
-					["coord"] = { 33.6, 42.0, MULGORE },
+					["coord"] = { 33.6, 42.0, MAP.MULGORE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -2411,7 +2411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206994, {	-- Severed Quilboar Head
-					["coord"] = { 61.6, 22.4, MULGORE },
+					["coord"] = { 61.6, 22.4, MAP.MULGORE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["cr"] = 3232,	-- Bristleback Interloper

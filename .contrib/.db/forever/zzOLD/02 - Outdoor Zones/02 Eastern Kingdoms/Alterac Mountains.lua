@@ -4,8 +4,8 @@
 
 -- #if BEFORE CATA
 -- This whole subzone used to be its own standalone zone and was merged with Hillsbrad with the Cataclysm.
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(ALTERAC_MOUNTAINS, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.ALTERAC_MOUNTAINS, {
 		["lore"] = "Alterac Mountains is the location of the former nation of Alterac and the city-state of Dalaran, and its chief settlements included Alterac City, Dalaran and Strahnbrad. The central mountains have been overrun by ogres, while the organization called the Syndicate controls Strahnbrad and other areas. Dalaran was enclosed within an impregnable magic shell before the city was lifted in the air and moved to Northrend. A high, wooded region, the Alterac Mountains see much rainfall and its skies are constantly overcast. Crushridge ogres and the Syndicate, a wicked group of rogues led by fallen human nobles, clash repeatedly for control of this land.",
 		["icon"] = 236711,
 		["groups"] = {
@@ -48,8 +48,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			lockpicking({
 				o(105570, {	-- Alliance Strongbox
 					["coords"] = {
-						{ 21.4, 62.3, ALTERAC_MOUNTAINS },
-						{ 12.6, 79.4, ALTERAC_MOUNTAINS },
+						{ 21.4, 62.3, MAP.ALTERAC_MOUNTAINS },
+						{ 12.6, 79.4, MAP.ALTERAC_MOUNTAINS },
 					},
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = LOCKPICKING,
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- { "o",  },	-- Shard of Pure Light
 						{ "i", 211421 },	-- The Box
 					},
-					["coord"] = { 88.6, 73.6, ALTERAC_MOUNTAINS },
+					["coord"] = { 88.6, 73.6, MAP.ALTERAC_MOUNTAINS },
 					["groups"] = {
 						r(429351, {	-- Extraplanar Spidersilk Boots (RECIPE!)
 							["requireSkill"] = TAILORING,
@@ -112,9 +112,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							918,	-- Osborne the Night Man <Rogue Trainer>
 						},
 						["coords"] = {
-							{ 36.8, 21.8, DARNASSUS },	-- Syurna <Rogue Trainer>
-							{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard <Rogue Trainer>
-							{ 74.6, 52.8, STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
+							{ 36.8, 21.8, MAP.DARNASSUS },	-- Syurna <Rogue Trainer>
+							{ 51.6, 14.6, MAP.IRONFORGE },	-- Hulfdan Blackbeard <Rogue Trainer>
+							{ 74.6, 52.8, MAP.STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
 						},
 					},
 					["hordeQuestData"] = {
@@ -123,8 +123,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							4583,	-- Miles Dexter <Rogue Trainer>
 						},
 						["coords"] = {
-							{ 44.0, 54.6, ORGRIMMAR },	-- Ormok <Rogue Trainer>
-							{ 85.0, 75.2, UNDERCITY },	-- Miles Dexter <Rogue Trainer>
+							{ 44.0, 54.6, MAP.ORGRIMMAR },	-- Ormok <Rogue Trainer>
+							{ 85.0, 75.2, MAP.UNDERCITY },	-- Miles Dexter <Rogue Trainer>
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -141,14 +141,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(523, {	-- Baron's Demise
 					["sourceQuest"] = 522,	-- Assassin's Contract
 					["qg"] = 2276,	-- Magistrate Henry Maleb
-					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.2, 59.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Baron Vardus
 							["provider"] = { "i", 3626 },	-- Head of Baron Vardus
-							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
+							["coord"] = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2306,	-- Baron Vardus
 						}),
 					},
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   6707 },	-- Fahrad <Grand Master Rogue>
 						{ "i", 217609 },	-- Talisman of Kazdor
 					},
-					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
+					["coord"] = { 84.4, 80.2, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["classes"] = { ROGUE },
 					["lvl"] = 45,
@@ -168,9 +168,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_THREE, q(80455, {	-- Biding Our Time
 					["sourceQuest"] = 80454,	-- One Last Drop
 					["provider"] = { "o", 410369 },	-- Dead Drop
-					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["coord"] = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
 					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["classes"] = { ROGUE },
 					["lvl"] = 45,
 					["groups"] = {
@@ -187,14 +187,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(506, {	-- Blackmoore's Legacy
 					["sourceQuest"] = 503,	-- Gol'dir
 					["qg"] = 2316,	-- Gol'dir
-					["coord"] = { 59.96, 43.74, ALTERAC_MOUNTAINS },
+					["coord"] = { 59.96, 43.74, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
 				q(500, {	-- Crushridge Bounty
 					["qg"] = 2263,	-- Marshal Redpath
-					["coord"] = { 49.6, 58.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.6, 58.6, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -216,14 +216,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(504, {	-- Crushridge Warmongers
 					["sourceQuest"] = 500,	-- Crushridge Bounty
 					["qg"] = 2263,	-- Marshal Redpath
-					["coord"] = { 49.6, 58.6, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.6, 58.6, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/15 Crushridge Warmonger
 							["provider"] = { "n", 2287 },	-- Crushridge Warmonger
-							["coord"] = { 38.0, 54.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 38.0, 54.6, MAP.ALTERAC_MOUNTAINS },
 						}),
 						i(5249, {	-- Burning Sliver
 							["timeline"] = { REMOVED_4_0_3 },
@@ -239,9 +239,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6176 },	-- Bath'rah the Windwatcher
 						{ "i", 6929 },	-- Bath'rah's Parchment
 					},
-					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ARATHI_HIGHLANDS, STRANGLETHORN_VALE },
+					["maps"] = { MAP.ARATHI_HIGHLANDS, MAP.STRANGLETHORN_VALE },
 					["cost"] = { { "i", 3357, 8 } },	-- Liferoot
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1714, {	-- Essence of the Exile
 							["sourceQuest"] = 1791,	-- The Windwatcher
 							["qg"] = 6176,	-- Bath'rah the Windwatcher
-							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 4479, 8 },	-- Burning Charm
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(537, {	-- Dark Council
 					["sourceQuest"] = 525,	-- Further Mysteries
 					["qg"] = 2276,	-- Magistrate Henry Maleb
-					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.2, 59.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- 0/1 Head of Nagaz
 							["provider"] = { "i", 3672 },	-- Head of Nagaz
-							["coord"] = { 39.6, 15.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.6, 15.8, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2320,	-- Nagaz
 						}),
 					},
@@ -310,8 +310,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							20407,	-- Farseer Umbrua <Shaman Trainer>
 						},
 						["coords"] = {
-							{ 55.2, 29.6, IRONFORGE },	-- Farseer Javad
-							{ 61.8, 83.8, STORMWIND_CITY },	-- Farseer Umbrua
+							{ 55.2, 29.6, MAP.IRONFORGE },	-- Farseer Javad
+							{ 61.8, 83.8, MAP.STORMWIND_CITY },	-- Farseer Umbrua
 						},
 					},
 					["hordeQuestData"] = {
@@ -320,8 +320,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							3032,	-- Beram Skychaser <Shaman Trainer>
 						},
 						["coords"] = {
-							{ 38.0, 37.8, ORGRIMMAR },	-- Searn Firewarder
-							{ 22.8, 19.4, THUNDER_BLUFF },	-- Beram Skychaser
+							{ 38.0, 37.8, MAP.ORGRIMMAR },	-- Searn Firewarder
+							{ 22.8, 19.4, MAP.THUNDER_BLUFF },	-- Beram Skychaser
 						},
 					},
 					-- #else
@@ -330,8 +330,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3032,	-- Beram Skychaser <Shaman Trainer>
 					},
 					["coords"] = {
-						{ 38.0, 37.8, ORGRIMMAR },	-- Searn Firewarder
-						{ 22.8, 19.4, THUNDER_BLUFF },	-- Beram Skychaser
+						{ 38.0, 37.8, MAP.ORGRIMMAR },	-- Searn Firewarder
+						{ 22.8, 19.4, MAP.THUNDER_BLUFF },	-- Beram Skychaser
 					},
 					["races"] = HORDE_ONLY,
 					-- #endif
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8235, {	-- Encoded Fragments
 					["sourceQuest"] = 8234,	-- Sealed Azure Bag
 					["qg"] = 8379,	-- Archmage Xylem
-					["coord"] = { 29.6, 40.6, AZSHARA },
+					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["lvl"] = 50,
@@ -366,16 +366,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1740 },	-- Syndicate Documents
 						{ "i", 3521 },	-- Cleverly Encrypted Letter
 					},
-					["coord"] = { 58.3, 68.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 58.3, 68.0, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(80526, {	-- Fool Me Twice
 					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
-					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
+					["coord"] = { 84.4, 80.2, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["classes"] = { ROGUE },
 					["lvl"] = 45,
@@ -388,9 +388,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1740 },	-- Syndicate Documents
 						{ "i", 3718 },	-- Foreboding Plans
 					},
-					["coord"] = { 58.3, 68.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 58.3, 68.0, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				}),
@@ -400,23 +400,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1356 },	-- Prospector Stormpike
 						{ "i", 3518 },	-- Decrypted Letter
 					},
-					["coord"] = { 74.4, 12.0, IRONFORGE },
+					["coord"] = { 74.4, 12.0, MAP.IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(503, {	-- Gol'dir
 					["sourceQuest"] = 533,	-- Infiltration
 					["qg"] = 2229,	-- Krusk
-					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.24, 20.68, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rusted Iron Key
 							["provider"] = { "i", 3704 },	-- Rusted Iron Key
-							["coord"] = { 61.8, 40.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 61.8, 40.6, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2431,	-- Jailor Borhuin
 						}),
 					},
@@ -424,7 +424,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(533, {	-- Infiltration
 					["sourceQuest"] = 498,	-- The Rescue
 					["qg"] = 2229,	-- Krusk
-					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.24, 20.68, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -449,9 +449,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						-- #if AFTER 4.3.0
-						{ 71.4, 45.0, HILLSBRAD_FOOTHILLS },
+						{ 71.4, 45.0, MAP.HILLSBRAD_FOOTHILLS },
 						-- #else
-						{ 84.4, 80.3, ALTERAC_MOUNTAINS },
+						{ 84.4, 80.3, MAP.ALTERAC_MOUNTAINS },
 						-- #endif
 					},
 					["maxReputation"] = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
@@ -476,7 +476,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3521 },	-- Cleverly Encrypted Letter
 					},
-					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -484,21 +484,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(507, {	-- Lord Aliden Perenolde
 					["sourceQuest"] = 506,	-- Blackmoore's Legacy
 					["qg"] = 2229,	-- Krusk
-					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 63.24, 20.68, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Aliden Perenolde slain
 							["provider"] = { "n", 2423 },	-- Lord Aliden Perenolde
-							["coord"] = { 39.2, 14.4, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.2, 14.4, MAP.ALTERAC_MOUNTAINS },
 						}),
 					},
 				}),
 				q(512, {	-- Noble Deaths
 					["sourceQuest"] = 510,	-- Foreboding Plans
 					["qg"] = 2276,	-- Magistrate Henry Maleb
-					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.2, 59.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -524,9 +524,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   6777 },	-- Zan Shivsproket <Speciality Engineer>
 						{ "i", 217737 },	-- Modified Talisman
 					},
-					["coord"] = { 86.0, 80.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 86.0, 80.0, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { SILVERPINE_FOREST },
+					["maps"] = { MAP.SILVERPINE_FOREST },
 					["classes"] = { ROGUE },
 					["lvl"] = 45,
 				})),
@@ -534,15 +534,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8234, {	-- Sealed Azure Bag
 					["sourceQuest"] = 8233,	-- A Simple Request
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
-					["coord"] = { 86.0, 79.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 86.0, 79.0, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { AZSHARA },
+					["maps"] = { MAP.AZSHARA },
 					["classes"] = { ROGUE },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sealed Azure Bag
 							["provider"] = { "i", 19775 },	-- Sealed Azure Bag
-							["coord"] = { 43.5, 25.4, AZSHARA },
+							["coord"] = { 43.5, 25.4, MAP.AZSHARA },
 							["cr"] = 6188,	-- Timbermaw Shaman
 						}),
 					},
@@ -550,9 +550,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8412, {	-- Spirit Totem
 					["sourceQuest"] = 8410,	-- Elemental Mastery
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
-					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WESTERN_PLAGUELANDS },
+					["maps"] = { MAP.WESTERN_PLAGUELANDS },
 					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
 					-- #endif
@@ -584,14 +584,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3706 },	-- Ensorcelled Parchment
 					},
-					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(505, {	-- Syndicate Assassins
 					["qg"] = 2276,	-- Magistrate Henry Maleb
-					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 48.2, 59.4, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -613,7 +613,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6701, {	-- Syndicate Emblems
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 					["qg"] = 6766,	-- Ravenholdt Guard <Assassin's League>
-					["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
+					["coord"] = { 85.2, 79.4, MAP.ALTERAC_MOUNTAINS },
 					["maxReputation"] = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2317 },	-- Elysa
 						{ "i", 3498 },	-- Taretha's Necklace
 					},
-					["coord"] = { 39.30, 14.30, ALTERAC_MOUNTAINS },
+					["coord"] = { 39.30, 14.30, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -642,9 +642,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(495, {	-- The Crown of Will (1/5)
 					["qg"] = 2227,	-- Sharlindra
-					["coord"] = { 57.60, 93.84, UNDERCITY },
+					["coord"] = { 57.60, 93.84, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_5_0_4 },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 34,
@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(518, {	-- The Crown of Will (2/5)
 					["sourceQuest"] = 495,	-- The Crown of Will (1/5)
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
@@ -665,24 +665,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(519, {	-- The Crown of Will (3/5)
 					["sourceQuest"] = 518,	-- The Crown of Will (2/5)
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
 						objective(1, {	-- 0/1 Targ's Head
 							["provider"] = { "i", 3550 },	-- Targ's Head
-							["coord"] = { 39.6, 53.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.6, 53.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2420,	-- Targ
 						}),
 						objective(2, {	-- 0/1 Muckrake's Head
 							["provider"] = { "i", 3551 },	-- Muckrake's Head
-							["coord"] = { 38.8, 47.2, ALTERAC_MOUNTAINS },
+							["coord"] = { 38.8, 47.2, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2421,	-- Muckrake
 						}),
 						objective(3, {	-- 0/1 Glommus's Head
 							["provider"] = { "i", 3552 },	-- Glommus's Head
-							["coord"] = { 39.4, 41.8, ALTERAC_MOUNTAINS },
+							["coord"] = { 39.4, 41.8, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2422,	-- Glommus
 						}),
 					},
@@ -690,19 +690,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(520, {	-- The Crown of Will (4/5)
 					["sourceQuest"] = 519,	-- The Crown of Will (3/5)
 					["qg"] = 2278,	-- Melisara
-					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mug'thol's Head
 							["provider"] = { "i", 3553 },	-- Mug'thol's Head
-							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2257,	-- Mug'thol
 						}),
 						objective(2, {	-- 0/1 Crown of Will
 							["provider"] = { "i", 3554 },	-- Mug'thol's Head
-							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },
+							["coord"] = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2257,	-- Mug'thol
 						}),
 					},
@@ -713,7 +713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2278 },	-- Melisara
 						{ "i", 3554 },	-- Crown of Will
 					},
-					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
@@ -728,9 +728,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 3706 },	-- Ensorcelled Parchment
 						{ "o", 1765 },	-- Worn Wooden Chest
 					},
-					["coord"] = { 39.2, 14.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 39.2, 14.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -747,14 +747,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1713, {	-- The Summoning
 					["sourceQuest"] = 1712,	-- Cyclonian
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
-					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Whirlwind Heart
 							["provider"] = { "i", 6894 },	-- Whirlwind Heart
-							["coord"] = { 80.6, 62.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 80.6, 62.6, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 6239,	-- Cyclonian
 						}),
 					},
@@ -764,7 +764,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "You'll need to find 2 Vile Concoctions and the Hollow Emblem.\n\n- The Hollow Emblem is on the second from the left upper hut on the right wall if you're facing the pyramid. You can climb the hill to the right of the pyramid to get there.\n\n- 1 Vile Concoction is inside the hut closest to the pyramid and the other is inside a hut on the corner of the left path after the first fork of the dungeon(that left path that no group ever takes).\n\n- Use one Vile Concoction on the cauldron of Witch Doctor Zum'rah (it doesn't break stealth) to kill him and loot the satchel beside him to loot a trinket. Equip the trinket to see which grave contains the Offering of Blood.\n\n- Use the other Vile Concoction on the cauldron of Antu'sul and loot the Offering of Bone beside him.\n\n- Combine both offerings, then use the Hollow Emblem to make the Emblem of Blood Magic Emblem of Blood Magic. This is the key to open the chest on the top of the pyramid to finally get the Talisman for the quest.",
 					["sourceQuest"] = 80526,	-- Fool Me Twice
 					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
-					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
+					["coord"] = { 84.4, 80.2, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { ZULFARRAK },
 					["classes"] = { ROGUE },
@@ -782,7 +782,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(535, {	-- Valik
 					["altQuests"] = { 533 },	-- Infiltration (Can only be completed while on this quest)
 					["qg"] = 2333,	-- Henchman Valik
-					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
+					["coord"] = { 57.15, 69.50, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["races"] = HORDE_ONLY,
@@ -794,14 +794,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(566, {	-- WANTED: Baron Vardus
 					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel
 					["provider"] = { "o", 1763 },	-- WANTED
-					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 62.61, 20.76, MAP.HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Baron Vardus
 							["provider"] = { "i", 3626 },	-- Head of Baron Vardus
-							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
+							["coord"] = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 2306,	-- Baron Vardus
 						}),
 						i(2231, {	-- Inferno Robe
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1792, {	-- Whirlwind Weapon
 					["sourceQuest"] = 1713,	-- The Summoning
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
-					["coord"] = { 80.5, 66.9, ALTERAC_MOUNTAINS },
+					["coord"] = { 80.5, 66.9, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
@@ -832,31 +832,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(14222, {	-- Araga
 					["coords"] = {
-						{ 31.2, 71.0, ALTERAC_MOUNTAINS },
-						{ 31.6, 86.8, ALTERAC_MOUNTAINS },
-						{ 39.2, 92.0, ALTERAC_MOUNTAINS },
+						{ 31.2, 71.0, MAP.ALTERAC_MOUNTAINS },
+						{ 31.6, 86.8, MAP.ALTERAC_MOUNTAINS },
+						{ 39.2, 92.0, MAP.ALTERAC_MOUNTAINS },
 					},
 				}),
 				n(14223, {	-- Cranky Benj
 					["coords"] = {
-						{ 14.2, 54.2, ALTERAC_MOUNTAINS },
-						{ 27.6, 41.0, ALTERAC_MOUNTAINS },
-						{ 36.4, 16.2, ALTERAC_MOUNTAINS },
+						{ 14.2, 54.2, MAP.ALTERAC_MOUNTAINS },
+						{ 27.6, 41.0, MAP.ALTERAC_MOUNTAINS },
+						{ 36.4, 16.2, MAP.ALTERAC_MOUNTAINS },
 					},
 				}),
 				n(14221, {	-- Gravis Slipknot
-					["coord"] = { 60.0, 44.6, ALTERAC_MOUNTAINS },
+					["coord"] = { 60.0, 44.6, MAP.ALTERAC_MOUNTAINS },
 				}),
 				n(14281, {	-- Jimmy the Bleeder
 					["coords"] = {
-						{ 48.6, 82.8, ALTERAC_MOUNTAINS },
-						{ 58.6, 70.2, ALTERAC_MOUNTAINS },
+						{ 48.6, 82.8, MAP.ALTERAC_MOUNTAINS },
+						{ 58.6, 70.2, MAP.ALTERAC_MOUNTAINS },
 					},
 				}),
 				n(2453, {	-- Lo'Grosh
 					["coords"] = {
-						{ 48.0, 34.2, ALTERAC_MOUNTAINS },
-						{ 52.6, 46.2, ALTERAC_MOUNTAINS },
+						{ 48.0, 34.2, MAP.ALTERAC_MOUNTAINS },
+						{ 52.6, 46.2, MAP.ALTERAC_MOUNTAINS },
 					},
 					["groups"] = {
 						i(6327),	-- The Pacifier
@@ -866,15 +866,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(2447, {	-- Narillasanz
 					["description"] = "Patrols around the entire zone, but can usually be found along the river to the east.\n\nThis particular rare was used in the original World of Warcraft game packaging facing off against heroes wielding Teebu's Blazing Longsword.",
-					["coord"] = { 79.2, 47.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 79.2, 47.0, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(2452, {	-- Skhowl
 					["coords"] = {
-						{ 30.6, 59.4, ALTERAC_MOUNTAINS },
-						{ 31.6, 51.6, ALTERAC_MOUNTAINS },
-						{ 38.6, 37.6, ALTERAC_MOUNTAINS },
-						{ 43.8, 63.4, ALTERAC_MOUNTAINS },
+						{ 30.6, 59.4, MAP.ALTERAC_MOUNTAINS },
+						{ 31.6, 51.6, MAP.ALTERAC_MOUNTAINS },
+						{ 38.6, 37.6, MAP.ALTERAC_MOUNTAINS },
+						{ 43.8, 63.4, MAP.ALTERAC_MOUNTAINS },
 					},
 					["groups"] = {
 						i(3011),	-- Feathered Headdress
@@ -883,11 +883,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(2258, {	-- Stone Fury / Maggarrak [CATA+]
 					["coords"] = {
-						{ 61.8, 37.8, ALTERAC_MOUNTAINS },
-						{ 66.6, 47.2, ALTERAC_MOUNTAINS },
-						{ 73.0, 46.2, ALTERAC_MOUNTAINS },
-						{ 78.8, 47.4, ALTERAC_MOUNTAINS },
-						{ 80.8, 34.2, ALTERAC_MOUNTAINS },
+						{ 61.8, 37.8, MAP.ALTERAC_MOUNTAINS },
+						{ 66.6, 47.2, MAP.ALTERAC_MOUNTAINS },
+						{ 73.0, 46.2, MAP.ALTERAC_MOUNTAINS },
+						{ 78.8, 47.4, MAP.ALTERAC_MOUNTAINS },
+						{ 80.8, 34.2, MAP.ALTERAC_MOUNTAINS },
 					},
 				}),
 			}),
@@ -896,7 +896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_TWO, i(213452, {	-- Dormant Holy Rune
 					["description"] = "Once you have this rune in your inventory, use Divine Intervention on a healer friend. Have them resurrect you to receive the rune upon resurrection.",
 					["provider"] = { "o", 423841 },	-- Frozen Remains
-					["coord"] = { 39.7, 60.8, ALTERAC_MOUNTAINS },
+					["coord"] = { 39.7, 60.8, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -913,7 +913,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(VENDORS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies>
-					["coord"] = { 38.0, 38.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 38.0, 38.0, MAP.ALTERAC_MOUNTAINS },
 					["groups"] = {
 						i(14634, {	-- Recipe: Frost Oil (RECIPE!)
 							["isLimited"] = true,
@@ -921,7 +921,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2684, {	-- Rizz Loosebolt <Engineering Supplies>
-					["coord"] = { 47.3, 35.2, ALTERAC_MOUNTAINS },
+					["coord"] = { 47.3, 35.2, MAP.ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
@@ -931,7 +931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(6779, {	-- Smudge Thunderwood <Poison Vendor>
-					["coord"] = { 86.0, 79.6, ALTERAC_MOUNTAINS },
+					["coord"] = { 86.0, 79.6, MAP.ALTERAC_MOUNTAINS },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
@@ -940,7 +940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer>
-					["coord"] = { 86.0, 80.0, ALTERAC_MOUNTAINS },
+					["coord"] = { 86.0, 80.0, MAP.ALTERAC_MOUNTAINS },
 					["groups"] = {
 						i(7742, {	-- Schematic: Gnomish Cloaking Device (RECIPE!)
 							["isLimited"] = true,
@@ -965,12 +965,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1280, {	-- Cloaked Hood
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 57.2, 24.4, ALTERAC_MOUNTAINS },
-						{ 53.6, 14.8, ALTERAC_MOUNTAINS },
-						{ 49.6, 10.0, ALTERAC_MOUNTAINS },
+						{ 57.2, 24.4, MAP.ALTERAC_MOUNTAINS },
+						{ 53.6, 14.8, MAP.ALTERAC_MOUNTAINS },
+						{ 49.6, 10.0, MAP.ALTERAC_MOUNTAINS },
 						-- #else
-						{ 48.8, 9.2, ALTERAC_MOUNTAINS },
-						{ 49.6, 10.0, ALTERAC_MOUNTAINS },
+						{ 48.8, 9.2, MAP.ALTERAC_MOUNTAINS },
+						{ 49.6, 10.0, MAP.ALTERAC_MOUNTAINS },
 						-- #endif
 					},
 					["crs"] = {
@@ -1003,10 +1003,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1602, {	-- Sickle Axe
 					["coords"] = {
-						{ 42.2, 28.8, ALTERAC_MOUNTAINS },
-						{ 42.8, 31.0, ALTERAC_MOUNTAINS },
-						{ 44.2, 33.8, ALTERAC_MOUNTAINS },
-						{ 44.4, 30.4, ALTERAC_MOUNTAINS },
+						{ 42.2, 28.8, MAP.ALTERAC_MOUNTAINS },
+						{ 42.8, 31.0, MAP.ALTERAC_MOUNTAINS },
+						{ 44.2, 33.8, MAP.ALTERAC_MOUNTAINS },
+						{ 44.4, 30.4, MAP.ALTERAC_MOUNTAINS },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					["cr"] = 2287,	-- Crushridge Warmonger
@@ -1016,9 +1016,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(5245, {	-- Summoner's Wand
 					["coords"] = {
-						{ 30.8, 31.6, ALTERAC_MOUNTAINS },
-						{ 33.6, 40.6, ALTERAC_MOUNTAINS },
-						{ 27.8, 40.6, ALTERAC_MOUNTAINS },
+						{ 30.8, 31.6, MAP.ALTERAC_MOUNTAINS },
+						{ 33.6, 40.6, MAP.ALTERAC_MOUNTAINS },
+						{ 27.8, 40.6, MAP.ALTERAC_MOUNTAINS },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					["races"] = HORDE_ONLY,

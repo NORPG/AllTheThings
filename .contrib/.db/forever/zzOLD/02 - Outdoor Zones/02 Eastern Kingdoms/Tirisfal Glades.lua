@@ -8,8 +8,8 @@ ExportDB.OnTooltipDB.ZidormiTravelArtID1136 = [[~function(t, tooltipInfo)
 					end
 				end]]
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
-	m(TIRISFAL_GLADES, {
+root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
+	m(MAP.TIRISFAL_GLADES, {
 		["lore"] = "On the northern coast of Lordaeron lies the eerie Tirisfal Glades. The unofficial kingdom to the Forsaken, servants of the Banshee Queen Sylvanas Windrunner, the wooded hills are seeped through with the curse of the Lich King's plague. The sky over Tirisfal is eternally gloomy and tinted a blighted green, and the trees and other flora desperately cling to their last shreds of life.\n\nAlthough tainted and melancholy, Tirisfal still very much has its own unique, haunting beauty, particularly in such areas as the stony North Coast, the village of Brill, and the deep atmosphere of the ruined Agamand Mills.\n\nTirisfal Glades is home not only to the Forsaken, but to their enemies as well. The Scarlet Crusade has several outposts here, including the seat of their religious faith, the Scarlet Monastery. The minions of the Scourge are also ever present, tainting the derelict farmsteads and dilapidated mills with their foul presence.",
 		["icon"] = 236849,
 		-- #if NOT ANYCLASSIC
@@ -48,14 +48,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 6784 },	-- Calvin Montague
 								{ "i", 7628 },	-- Nondescript Letter
 							},
-							["coord"] = { 38.2, 56.6, TIRISFAL_GLADES },
+							["coord"] = { 38.2, 56.6, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(590, {	-- A Rogue's Deal (2/2)
 							["sourceQuest"] = 8,	-- A Rogue's Deal (1/2)
 							["qg"] = 6784,	-- Calvin Montague
-							["coord"] = { 38.2, 56.6, TIRISFAL_GLADES },
+							["coord"] = { 38.2, 56.6, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 67.0, 42.3, DEATHKNELL },
 								-- #else
-								{ 35.6, 62.2, TIRISFAL_GLADES },
+								{ 35.6, 62.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 45.9, 80.4, DEATHKNELL },
 								-- #else
-								{ 39.6, 71.4, TIRISFAL_GLADES },
+								{ 39.6, 71.4, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 43.4, 79.9, DEATHKNELL },
 								-- #else
-								{ 30.2, 71.6, TIRISFAL_GLADES },
+								{ 30.2, 71.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 3095,	-- Simple Scroll
 							["qg"] = 2119,	-- Dannal Stern <Warrior Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
+							["coord"] = { 32.6, 65.6, MAP.TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 3099,	-- Tainted Scroll
 							["qg"] = 2126,	-- Maximillion <Warlock Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 40.7, 78.4, DEATHKNELL },
 								-- #else
-								{ 29.4, 71.0, TIRISFAL_GLADES },
+								{ 29.4, 71.0, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(5651, {	-- In Favor of Darkness
 							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
-							["coord"] = { 31.0, 66.0, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 3098,	-- Glyphic Scroll
 							["qg"] = 2124,	-- Isabella <Mage Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 30.8, 66.0, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.0, MAP.TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -225,7 +225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(6395, {	-- Marla's Last Wish
 							["sourceQuest"] = 376,	-- The Damned
 							["qg"] = 1661,	-- Novice Elreth
-							["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
+							["coord"] = { 30.9, 66.1, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 3,
@@ -236,8 +236,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "o", 178090 },	-- Marla's Grave
 									},
 									["coords"] = {
-										{ 36.6, 61.6, TIRISFAL_GLADES },
-										{ 31.0, 65.0, TIRISFAL_GLADES },
+										{ 36.6, 61.6, MAP.TIRISFAL_GLADES },
+										{ 31.0, 65.0, MAP.TIRISFAL_GLADES },
 									},
 									["cr"] = 1919,	-- Samuel Fipps
 								}),
@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77670, {	-- Meditation on Undeath
 							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
-							["coord"] = { 31.0, 66.0, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(380, {	-- Night Web's Hollow
 							["sourceQuest"] = 376,	-- The Damned
 							["qg"] = 1570,	-- Executor Arren
-							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
+							["coord"] = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 55.4, 37.7, DEATHKNELL },
 								-- #else
-								{ 33.0, 61.0, TIRISFAL_GLADES },
+								{ 33.0, 61.0, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -313,7 +313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 55.4, 37.7, DEATHKNELL },
 								-- #else
-								{ 33.0, 61.0, TIRISFAL_GLADES },
+								{ 33.0, 61.0, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -346,7 +346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 47.6, 58.4, DEATHKNELL },
 								-- #else
-								{ 31.0, 66.0, TIRISFAL_GLADES },
+								{ 31.0, 66.0, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(1470, {	-- Piercing the Veil
 							["qg"] = 5667,	-- Venya Marthand
-							["coord"] = { 31.0, 66.4, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.4, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARLOCK },
@@ -372,7 +372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(3901, {	-- Rattling the Rattlecages
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							["qg"] = 1569,	-- Shadow Priest Sarvis
-							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							-- #if BEFORE 4.0.3
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 49.9, 56.3, DEATHKNELL },
 								-- #else
-								{ 31.6, 65.6, TIRISFAL_GLADES },
+								{ 31.6, 65.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -406,7 +406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(363, {	-- Rude Awakening
 							["qg"] = 1568,	-- Undertaker Mordo
-							["coord"] = { 30.2, 71.6, TIRISFAL_GLADES },
+							["coord"] = { 30.2, 71.6, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { UNDEAD },
 							["isBreadcrumb"] = true
@@ -414,7 +414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(3902, {	-- Scavenging Deathknell
 							["sourceQuest"] = 376,	-- The Damned
 							["qg"] = 1740,	-- Deathguard Saltain
-							["coord"] = { 31.6, 65.6, TIRISFAL_GLADES },
+							["coord"] = { 31.6, 65.6, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
@@ -439,7 +439,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -470,7 +470,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 49.9, 56.3, DEATHKNELL },
 								-- #else
-								{ 31.6, 65.6, TIRISFAL_GLADES },
+								{ 31.6, 65.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -493,7 +493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -506,7 +506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 2124 },	-- Isabella <Mage Trainer>
 								{ "i", 211809 },	-- Comprehension Primer
 							},
-							["coord"] = { 30.8, 66.0, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { MAGE },
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 3096,	-- Encrypted Scroll
 							["qg"] = 2122,	-- David Trias <Rogue Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
+							["coord"] = { 32.6, 65.6, MAP.TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -547,7 +547,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -556,7 +556,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(376, {	-- The Damned
 							["qg"] = 1661,	-- Novice Elreth
-							["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
+							["coord"] = { 30.9, 66.1, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
@@ -589,7 +589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 55.4, 37.7, DEATHKNELL },
 								-- #else
-								{ 33.0, 61.0, TIRISFAL_GLADES },
+								{ 33.0, 61.0, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -609,7 +609,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.7, 58.2, DEATHKNELL },
 								-- #else
-								{ 30.9, 66.1, TIRISFAL_GLADES },
+								{ 30.9, 66.1, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -618,7 +618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77672, {	-- The Lost Rune [Warlock]
 							["qg"] = 2126,	-- Maximillion <Warlock Trainer>
-							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARLOCK },
@@ -633,7 +633,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77668, {	-- The Lost Rune [Warrior]
 							["qg"] = 2119,	-- Dannal Stern <Warrior Trainer>
-							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
+							["coord"] = { 32.6, 65.6, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARRIOR },
@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(364, {	-- The Mindless Ones
 							["sourceQuest"] = 363,	-- Rude Awakening
 							["qg"] = 1569,	-- Shadow Priest Sarvis
-							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -669,14 +669,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(382, {	-- The Red Messenger
 							["sourceQuest"] = 381,	-- The Scarlet Crusade
 							["qg"] = 1570,	-- Executor Arren
-							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
+							["coord"] = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Scarlet Crusade Documents
 									["provider"] = { "i", 2885 },	-- Scarlet Crusade Documents
-									["coord"] = { 36.6, 68.6, TIRISFAL_GLADES },
+									["coord"] = { 36.6, 68.6, MAP.TIRISFAL_GLADES },
 									["cr"] = 1667,	-- Meven Korgal
 								}),
 								-- #if BEFORE 4.0.3
@@ -688,7 +688,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(381, {	-- The Scarlet Crusade
 							["sourceQuest"] = 380,	-- Night Web's Hollow
 							["qg"] = 1570,	-- Executor Arren
-							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
+							["coord"] = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77669, {	-- The Scarlet Rune
 							["qg"] = 2122,	-- David Trias <Rogue Trainer>
-							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
+							["coord"] = { 32.6, 65.6, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { ROGUE },
@@ -720,7 +720,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
 									["provider"] = { "i", 204795 },	-- Rune of Shadowstrike
-									["coord"] = { 38.2, 68.4, TIRISFAL_GLADES },
+									["coord"] = { 38.2, 68.4, MAP.TIRISFAL_GLADES },
 									["cr"] = 1506,	-- Scarlet Convert
 								}),
 								recipe(400105),	-- Engrave Gloves - Shadowstrike
@@ -735,7 +735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 43.4, 79.9, DEATHKNELL },
 								-- #else
-								{ 30.2, 71.6, TIRISFAL_GLADES },
+								{ 30.2, 71.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -745,7 +745,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 24962,	-- Trail-Worn Scroll
 							["qg"] = 38911,	-- Xavier the Huntsman <Hunter Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 31.6, 65.6, TIRISFAL_GLADES },
+							["coord"] = { 31.6, 65.6, MAP.TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -758,7 +758,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.7, 58.2, DEATHKNELL },
 								-- #else
-								{ 30.9, 66.1, TIRISFAL_GLADES },
+								{ 30.9, 66.1, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 45.9, 80.4, DEATHKNELL },
 								-- #else
-								{ 39.6, 71.4, TIRISFAL_GLADES },
+								{ 39.6, 71.4, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -784,7 +784,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 43.4, 79.9, DEATHKNELL },
 								-- #else
-								{ 30.2, 71.6, TIRISFAL_GLADES },
+								{ 30.2, 71.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -808,7 +808,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -821,7 +821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1570 },	-- Executor Arren
 								{ "i", 2885 },	-- Scarlet Crusade Documents
 							},
-							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
+							["coord"] = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
@@ -833,7 +833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
 								-- #else
-								{ 30.8, 66.2, TIRISFAL_GLADES },
+								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if SEASON_OF_DISCOVERY
 					n(TREASURES, {
 						applyclassicphase(SOD_PHASE_ONE, o(406736, {	-- Lost Stash
-							["coord"] = { 24.7, 59.4, TIRISFAL_GLADES },
+							["coord"] = { 24.7, 59.4, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -874,7 +874,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER CATA
 								{ 70.8, 38.4, DEATHKNELL },
 								-- #else
-								{ 36.6, 61.6, TIRISFAL_GLADES },
+								{ 36.6, 61.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -885,7 +885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER CATA
 								{ 70.8, 41.0, DEATHKNELL },
 								-- #else
-								{ 36.6, 61.8, TIRISFAL_GLADES },
+								{ 36.6, 61.8, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -896,7 +896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER CATA
 								{ 71.2, 40.6, DEATHKNELL },
 								-- #else
-								{ 36.6, 61.6, TIRISFAL_GLADES },
+								{ 36.6, 61.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -907,7 +907,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER CATA
 								{ 70.0, 40.6, DEATHKNELL },
 								-- #else
-								{ 36.6, 61.6, TIRISFAL_GLADES },
+								{ 36.6, 61.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -918,7 +918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER CATA
 								{ 52.8, 42.8, DEATHKNELL },
 								-- #else
-								{ 33.0, 63.6, TIRISFAL_GLADES },
+								{ 33.0, 63.6, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -926,14 +926,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if BEFORE 10.1.7
 						i(3260, {	-- Scarlet Initiate Robes
-							["coord"] = { 37.4, 68.0, TIRISFAL_GLADES },
+							["coord"] = { 37.4, 68.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1507,	-- Scarlet Initiate
 						}),
 						-- #endif
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(203751, {	-- Spell Notes: CALE ENCI
-							["coord"] = { 38.2, 68.4, TIRISFAL_GLADES },
+							["coord"] = { 38.2, 68.4, MAP.TIRISFAL_GLADES },
 							["classes"] = { MAGE },
 							["cr"] = 1507,	-- Scarlet Initiate
 						})),
@@ -943,7 +943,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER 10.1.7
 								{ 72.2, 66.4, DEATHKNELL },
 								-- #else
-								{ 36.8, 68.0, TIRISFAL_GLADES },
+								{ 36.8, 68.0, MAP.TIRISFAL_GLADES },
 								-- #endif
 							},
 							["crs"] = {
@@ -958,7 +958,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3263, {	-- Webbed Pants
 							["coords"] = {
 								-- #if BEFORE CATA
-								{ 27.6, 59.2, TIRISFAL_GLADES },
+								{ 27.6, 59.2, MAP.TIRISFAL_GLADES },
 								-- #else
 								{ 26.8, 31.8, DEATHKNELL },
 								-- #endif
@@ -1092,13 +1092,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(460, {	-- Brill, Tirisfal Glades
 					["cr"] = 43124,	-- Anette Williams <Bat Handler>
-					["coord"] = { 58.8, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 58.8, 51.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(384, {	-- The Bulwark, Tirisfal
 					["cr"] = 37915,	-- Timothy Cunningham <Bat Handler>
-					["coord"] = { 83.4, 70.0, TIRISFAL_GLADES },
+					["coord"] = { 83.4, 70.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_3_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1108,33 +1108,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31578, {	-- Got one! (Ansel)
 					["sourceQuest"] = 31823,	-- Level Up!
 					["qg"] = 63073,	-- Ansel Fincap
-					["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
+					["coord"] = { 60.8, 54.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31576, {	-- Learning the Ropes (Ansel)
 					["qg"] = 63073,	-- Ansel Fincap
-					["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
+					["coord"] = { 60.8, 54.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31823, {	-- Level Up! (Ansel)
 					["sourceQuest"] = 31577,	-- On The Mend
 					["qg"] = 63073,	-- Ansel Fincap
-					["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
+					["coord"] = { 60.8, 54.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31577, {	-- On The Mend (Ansel)
 					["sourceQuest"] = 31576,	-- Learning the Ropes
 					["qg"] = 63073,	-- Ansel Fincap
-					["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
+					["coord"] = { 60.8, 54.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Battle Pets Healed
 							["provider"] = { "n", 10055 },	-- Morganus <Stable Master>
-							["coord"] = { 61.8, 52.0, TIRISFAL_GLADES },
+							["coord"] = { 61.8, 52.0, MAP.TIRISFAL_GLADES },
 						}),
 					},
 				}),
@@ -1144,8 +1144,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3330, {	-- Dargol's Hauberk
 					["description"] = "Can be pickpocketed from Captain Dargol.",
 					["coords"] = {
-						{ 52.6, 26.2, TIRISFAL_GLADES },
-						{ 52.4, 26.6, TIRISFAL_GLADES },
+						{ 52.6, 26.2, MAP.TIRISFAL_GLADES },
+						{ 52.4, 26.6, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
 					["cr"] = 1658,	-- Captain Dargol
@@ -1156,10 +1156,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			pickpocketing({
 				applyclassicphase(SOD_PHASE_ONE, i(208005, {	-- Agamand Relic Coffer Key
 					["coords"] = {
-						{ 58.8, 38.2, TIRISFAL_GLADES },
-						{ 53.0, 28.8, TIRISFAL_GLADES },
-						{ 46.0, 30.6, TIRISFAL_GLADES },
-						{ 52.8, 56.8, TIRISFAL_GLADES },
+						{ 58.8, 38.2, MAP.TIRISFAL_GLADES },
+						{ 53.0, 28.8, MAP.TIRISFAL_GLADES },
+						{ 46.0, 30.6, MAP.TIRISFAL_GLADES },
+						{ 52.8, 56.8, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
@@ -1173,8 +1173,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
 					["coords"] = {
-						{ 51.8, 67.4, TIRISFAL_GLADES },
-						{ 79.0, 26.0, TIRISFAL_GLADES },
+						{ 51.8, 67.4, MAP.TIRISFAL_GLADES },
+						{ 79.0, 26.0, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208007, {	-- Shipwreck Cache Key
-					["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
+					["coord"] = { 35.8, 43.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1204,7 +1204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208038, {	-- Bottom-Left Map Piece
-					["coord"] = { 56.6, 44.4, TIRISFAL_GLADES },
+					["coord"] = { 56.6, 44.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1214,7 +1214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208037, {	-- Bottom-Right Map Piece
-					["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
+					["coord"] = { 35.8, 43.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208036, {	-- Top-Left Map Piece
-					["coord"] = { 37.4, 49.2, TIRISFAL_GLADES },
+					["coord"] = { 37.4, 49.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208035, {	-- Top-Right Map Piece
-					["coord"] = { 32.8, 50.4, TIRISFAL_GLADES },
+					["coord"] = { 32.8, 50.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["crs"] = {
@@ -1251,7 +1251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25046, {	-- A Daughter's Embrace
 					["sourceQuest"] = 25010,	-- A Deadly New Ally
 					["qg"] = 13158,	-- Lieutenant Sanders
-					["coord"] = { 87.5, 43.2, TIRISFAL_GLADES },
+					["coord"] = { 87.5, 43.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1272,7 +1272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25010, {	-- A Deadly New Ally
 					["sourceQuest"] = 25009,	-- At War With The Scarlet Crusade
 					["qg"] = 10837,	-- High Executor Derrington
-					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
+					["coord"] = { 83.2, 68.9, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1281,7 +1281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2839 },	-- A Letter to Yvette
 						{ "i", 2837 },	-- Thurman's Letter
 					},
-					["coord"] = { 61.6, 52.6, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 52.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -1289,7 +1289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25013, {	-- A Little Oomph
 					["sourceQuest"] = 25056,	-- Grisly Grizzlies
 					["qg"] = 11057,	-- Apothecary Dithers
-					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
+					["coord"] = { 83.2, 69.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1310,7 +1310,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(367, {	-- A New Plague (1/4)
 					["qg"] = 1518,	-- Apothecary Johaan
-					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -1330,7 +1330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(368, {	-- A New Plague (2/4)
 					["sourceQuest"] = 367,	-- A New Plague (1/4)
 					["qg"] = 1518,	-- Apothecary Johaan
-					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -1351,7 +1351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(369, {	-- A New Plague (3/4)
 					["sourceQuest"] = 368,	-- A New Plague (2/4)
 					["qg"] = 1518,	-- Apothecary Johaan
-					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -1371,14 +1371,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1518 },	-- Apothecary Johaan
 						{ "i", 3460 },	-- Johaan's Special Drink
 					},
-					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 				}),
 				q(404, {	-- A Putrid Task
 					["qg"] = 1496,	-- Deathguard Dillinger
-					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
+					["coord"] = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -1394,7 +1394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25090, {	-- A Putrid Task
 					["qg"] = 1496,	-- Deathguard Dillinger
-					["coord"] = { 52.5, 54.8, TIRISFAL_GLADES },
+					["coord"] = { 52.5, 54.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1419,7 +1419,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24981, {	-- A Thorn in our Side
 					["qg"] = 1515,	-- Executor Zygand
-					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 60.5, 51.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1443,7 +1443,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26930, {	-- After the Crusade
 					["sourceQuest"] = 26926,	-- Victory, For Now
 					["qg"] = 10837,	-- High Executor Derrington
-					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
+					["coord"] = { 83.2, 68.9, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -1451,7 +1451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1821, {	-- Agamand Heirlooms
 					["sourceQuest"] = 1820,	-- Speak with Coleman
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
+					["coord"] = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -1462,35 +1462,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7567 },	-- Agamand Family Axe
 								{ "o", 105170 },	-- Agamand Weapon Rack
 							},
-							["coord"] = { 51.7, 25.7, TIRISFAL_GLADES },
+							["coord"] = { 51.7, 25.7, MAP.TIRISFAL_GLADES },
 						}),
 						objective(2, {	-- 0/1 Agamand Family Dagger
 							["providers"] = {
 								{ "i",   7568 },	-- Agamand Family Dagger
 								{ "o", 105172 },	-- Agamand Weapon Rack
 							},
-							["coord"] = { 52.6, 26.9, TIRISFAL_GLADES },
+							["coord"] = { 52.6, 26.9, MAP.TIRISFAL_GLADES },
 						}),
 						objective(3, {	-- 0/1 Agamand Family Mace
 							["providers"] = {
 								{ "i",   7569 },	-- Agamand Family Mace
 								{ "o", 105171 },	-- Agamand Weapon Rack
 							},
-							["coord"] = { 51.9, 27.1, TIRISFAL_GLADES },
+							["coord"] = { 51.9, 27.1, MAP.TIRISFAL_GLADES },
 						}),
 						objective(4, {	-- 0/1 Agamand Family Sword
 							["providers"] = {
 								{ "i",   7566 },	-- Agamand Family Sword
 								{ "o", 105169 },	-- Agamand Weapon Rack
 							},
-							["coord"] = { 52.6, 25.9, TIRISFAL_GLADES },
+							["coord"] = { 52.6, 25.9, MAP.TIRISFAL_GLADES },
 						}),
 					},
 				}),
 				q(24993, {	-- Annihilate the Worgen
 					["sourceQuest"] = 24992,	-- Escaped From Gilneas
 					["qg"] = 1515,	-- Executor Zygand
-					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 60.5, 51.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = {
 						-- #if ANYCLASSIC
 						CREATED_4_0_3, ADDED_5_0_4,
@@ -1516,7 +1516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(427, {	-- At War With The Scarlet Crusade (1/4)
 					["qg"] = 1515,	-- Executor Zygand
-					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 60.6, 51.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -1529,14 +1529,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(370, {	-- At War With The Scarlet Crusade (2/4)
 					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade (1/4)
 					["qg"] = 1515,	-- Executor Zygand
-					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 60.6, 51.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain Perrine slain
 							["provider"] = { "n", 1662 },	-- Captain Perrine
-							["coord"] = { 51.8, 67.4, TIRISFAL_GLADES },
+							["coord"] = { 51.8, 67.4, MAP.TIRISFAL_GLADES },
 						}),
 						objective(2, {	-- 0/3 Scarlet Zealot slain
 							["provider"] = { "n", 1537 },	-- Scarlet Zealot
@@ -1549,14 +1549,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(371, {	-- At War With The Scarlet Crusade (3/4)
 					["sourceQuest"] = 370,	-- At War With The Scarlet Crusade (2/4)
 					["qg"] = 1515,	-- Executor Zygand
-					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 60.6, 51.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain Vachon slain
 							["provider"] = { "n", 1664 },	-- Captain Vachon
-							["coord"] = { 79.6, 55.8, TIRISFAL_GLADES },
+							["coord"] = { 79.6, 55.8, MAP.TIRISFAL_GLADES },
 						}),
 						objective(2, {	-- 0/5 Scarlet Friar slain
 							["provider"] = { "n", 1538 },	-- Scarlet Friar
@@ -1566,14 +1566,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(372, {	-- At War With The Scarlet Crusade (4/4)
 					["sourceQuest"] = 371,	-- At War With The Scarlet Crusade (3/4)
 					["qg"] = 1515,	-- Executor Zygand
-					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 60.6, 51.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain Melrache slain
 							["provider"] = { "n", 1665 },	-- Captain Melrache
-							["coord"] = { 79.6, 26.8, TIRISFAL_GLADES },
+							["coord"] = { 79.6, 26.8, MAP.TIRISFAL_GLADES },
 						}),
 						objective(2, {	-- 0/2 Scarlet Bodyguard slain
 							["provider"] = { "n", 1660 },	-- Scarlet Bodyguard
@@ -1589,7 +1589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25009, {	-- At War With The Scarlet Crusade
 					["sourceQuest"] = 25007,	-- East... Always to the East
 					["qg"] = 10837,	-- High Executor Derrington
-					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
+					["coord"] = { 83.2, 68.9, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						208920,	-- Penny Hawkins <Bartender>
 						208919,	-- Blueheart
 					},
-					["coord"] = { 61.8, 52.0, TIRISFAL_GLADES },
+					["coord"] = { 61.8, 52.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -1623,7 +1623,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						24976,	-- Variety is the Spice of Death
 					},
 					["qg"] = 10665,	-- Junior Apothecary Holland
-					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
+					["coord"] = { 60.1, 52.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1639,24 +1639,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(354, {	-- Deaths in the Family
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
+					["coord"] = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gregor's Remains
 							["provider"] = { "i", 2829 },	-- Gregor's Remains
-							["coord"] = { 46.8, 29.6, TIRISFAL_GLADES },
+							["coord"] = { 46.8, 29.6, MAP.TIRISFAL_GLADES },
 							["cr"] = 1654,	-- Gregor Agamand
 						}),
 						objective(2, {	-- 0/1 Nissa's Remains
 							["provider"] = { "i", 2828 },	-- Nissa's Remains
-							["coord"] = { 49.6, 36.2, TIRISFAL_GLADES },
+							["coord"] = { 49.6, 36.2, MAP.TIRISFAL_GLADES },
 							["cr"] = 1655,	-- Nissa Agamand
 						}),
 						objective(3, {	-- 0/1 Thurman's Remains
 							["provider"] = { "i", 2830 },	-- Thurman's Remains
-							["coord"] = { 44.0, 33.4, TIRISFAL_GLADES },
+							["coord"] = { 44.0, 33.4, MAP.TIRISFAL_GLADES },
 							["cr"] = 1656,	-- Thurman Agamand
 						}),
 					},
@@ -1664,7 +1664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25029, {	-- Deaths in the Family
 					["sourceQuest"] = 25003,	-- The Family Crypt
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
+					["coord"] = { 54.5, 29.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1693,7 +1693,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1518 },	-- Apothecary Johaan
 						{ "i", 3238 },	-- Johaan's Findings
 					},
-					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -1701,7 +1701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5482, {	-- Doom Weed
 					["sourceQuest"] = 5481,	-- Gordo's Task
 					["qg"] = 10665,	-- Junior Apothecary Holland
-					["coord"] = { 57.5, 49.0, TIRISFAL_GLADES },
+					["coord"] = { 57.5, 49.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -1714,7 +1714,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24994, {	-- Doom Weed
 					["sourceQuest"] = 24991,	-- Garren's Haunt
 					["qg"] = 38977,	-- Apothecary Jerrod
-					["coord"] = { 61.6, 34.5, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 34.5, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1729,7 +1729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25007, {	-- East... Always to the East
 					["sourceQuest"] = 25006,	-- The Grasp Weakens
 					["qg"] = 1499,	-- Magistrate Sevren
-					["coord"] = { 60.9, 50.4, TIRISFAL_GLADES },
+					["coord"] = { 60.9, 50.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1748,13 +1748,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24974, {	-- Ever So Lonely
 					["qg"] = 38925,	-- Sidrick Calston
-					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
+					["coord"] = { 44.7, 53.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(365, {	-- Fields of Grief (1/2)
 					["qg"] = 1519,	-- Deathguard Simmer
-					["coord"] = { 40.9, 54.2, TIRISFAL_GLADES },
+					["coord"] = { 40.9, 54.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -1764,7 +1764,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 2846 },	-- Tirisfal Pumpkin
 								{ "o", 375 },	-- Tirisfal Pumpkin
 							},
-							["coord"] = { 35.5, 52.5, TIRISFAL_GLADES },
+							["coord"] = { 35.5, 52.5, MAP.TIRISFAL_GLADES },
 						}),
 					},
 				}),
@@ -1774,14 +1774,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1518 },	-- Apothecary Johaan
 						{ "i", 3035 },	-- Laced Pumpkin
 					},
-					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 				}),
 				q(24975, {	-- Fields of Grief
 					["qg"] = 1518,	-- Apothecary Johaan
-					["coord"] = { 44.6, 53.7, TIRISFAL_GLADES },
+					["coord"] = { 44.6, 53.7, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1795,7 +1795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(359, {	-- Forsaken Duties
 					["qg"] = 1499,	-- Magistrate Sevren
-					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
+					["coord"] = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -1803,14 +1803,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24983, {	-- Forsaken Duties
 					["sourceQuest"] = 24982,	-- The New Forsaken
 					["qg"] = 1499,	-- Magistrate Sevren
-					["coord"] = { 60.9, 50.5, TIRISFAL_GLADES },
+					["coord"] = { 60.9, 50.5, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5650, {	-- Garments of Darkness
 					["sourceQuest"] = 5651,	-- In Favor of Darkness
 					["qg"] = 2129,	-- Dark Cleric Beryl <Priest Trainer>
-					["coord"] = { 61.6, 52.2, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 52.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
@@ -1818,7 +1818,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Heal and fortify Deathguard Kel
 							["provider"] = { "n", 12428 },	-- Deathguard Kel
-							["coord"] = { 59.2, 46.4, TIRISFAL_GLADES },
+							["coord"] = { 59.2, 46.4, MAP.TIRISFAL_GLADES },
 						}),
 						i(16607, {	-- Acolyte's Sacrificial Robes
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1828,14 +1828,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24991, {	-- Garren's Haunt
 					["sourceQuest"] = 24996,	-- Holland's Experiment
 					["qg"] = 10665,	-- Apothecary Holland
-					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
+					["coord"] = { 60.1, 52.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(5481, {	-- Gordo's Task
 					["qg"] = 10666,	-- Gordo
-					["coord"] = { 55.8, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 55.8, 52.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -1845,14 +1845,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  12737 },	-- Gloom Weed
 								{ "o", 175566 },	-- Gloom Weed
 							},
-							["coord"] = { 49.7, 54.9, TIRISFAL_GLADES },
+							["coord"] = { 49.7, 54.9, MAP.TIRISFAL_GLADES },
 						}),
 					},
 				}),
 				q(25038, {	-- Gordo's Task
 					["sourceQuest"] = 24977,	-- Johaan's Experiment
 					["qg"] = 10666,	-- Gordo
-					["coord"] = { 44.2, 53.7, TIRISFAL_GLADES },
+					["coord"] = { 44.2, 53.7, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1866,7 +1866,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(358, {	-- Graverobbers
 					["qg"] = 1499,	-- Magistrate Sevren
-					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
+					["coord"] = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -1893,7 +1893,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24997, {	-- Graverobbers
 					["qg"] = 38978,	-- Apprentice Crispin
-					["coord"] = { 61.6, 34.3, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 34.3, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1917,7 +1917,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25056, {	-- Grisly Grizzlies
 					["qg"] = 11057,	-- Apothecary Dithers
-					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
+					["coord"] = { 83.2, 69.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1931,7 +1931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
 					["sourceQuest"] = 24980,	-- The Scarlet Palisade
 					["qg"] = 6785,	-- Ratslin Maime
-					["coord"] = { 61.9, 52.0, TIRISFAL_GLADES },
+					["coord"] = { 61.9, 52.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = {
 						-- #if ANYCLASSIC
 						CREATED_4_0_3, ADDED_5_0_4,
@@ -1947,7 +1947,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						24995,	-- Off the Scales
 					},
 					["qg"] = 38977,	-- Apothecary Jerrod
-					["coord"] = { 61.6, 34.6, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 34.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1955,7 +1955,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1822, {	-- Heirloom Weapon
 					["sourceQuest"] = 1821,	-- Agamand Heirlooms
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
+					["coord"] = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -1978,7 +1978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24996, {	-- Holland's Experiment
 					["sourceQuest"] = 24990,	-- Darkhound Pounding
 					["qg"] = 10665,	-- Junior Apothecary Holland
-					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
+					["coord"] = { 60.1, 52.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1996,7 +1996,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24977, {	-- Johaan's Experiment
 					["sourceQuest"] = 24976,	-- Variety is the Spice of Death
 					["qg"] = 1518,	-- Apothecary Johaan
-					["coord"] = { 44.6, 53.7, TIRISFAL_GLADES },
+					["coord"] = { 44.6, 53.7, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2039,7 +2039,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24998, {	-- Maggot Eye
 					["sourceQuest"] = 24997,	-- Graverobbers
 					["qg"] = 38978,	-- Apprentice Crispin
-					["coord"] = { 61.6, 34.3, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 34.3, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2064,7 +2064,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24995, {	-- Off the Scales
 					["sourceQuest"] = 24994,	-- Doom Weed
 					["qg"] = 38977,	-- Apothecary Jerrod
-					["coord"] = { 61.6, 34.5, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 34.5, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2089,7 +2089,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24999, {	-- Planting the Seed of Fear
 					["sourceQuest"] = 24994,	-- Doom Weed
 					["qg"] = 38978,	-- Apprentice Crispin
-					["coord"] = { 61.6, 34.3, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 34.3, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2101,7 +2101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(374, {	-- Proof of Demise
 					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade (1/4)
 					["qg"] = 1652,	-- Deathguard Burgess
-					["coord"] = { 60.8, 52.0, TIRISFAL_GLADES },
+					["coord"] = { 60.8, 52.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2135,14 +2135,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(409, {	-- Proving Allegiance
 					["sourceQuest"] = 366,	-- Return the Book
 					["qg"] = 1497,	-- Gunther Arcanus
-					["coord"] = { 68.2, 42.0, TIRISFAL_GLADES },
+					["coord"] = { 68.2, 42.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						q(431, {	-- Candles of Beckoning
 							["provider"] = { "o", 1586 },	-- Crate of Candles
-							["coord"] = { 68.1, 42.0, TIRISFAL_GLADES },
+							["coord"] = { 68.1, 42.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -2156,7 +2156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3080 },	-- Candle of Beckoning
 								{ "o", 1557 },	-- Lillith's Dinner Table
 							},
-							["coord"] = { 66.6, 44.8, TIRISFAL_GLADES },
+							["coord"] = { 66.6, 44.8, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -2165,7 +2165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/1 Lillith Nefara slain
 									["questID"] = 409,	-- Proving Allegiance
 									["provider"] = { "n", 1946 },	-- Lillith Nefara
-									["coord"] = { 66.6, 44.8, TIRISFAL_GLADES },
+									["coord"] = { 66.6, 44.8, MAP.TIRISFAL_GLADES },
 								}),
 							},
 						}),
@@ -2173,7 +2173,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24978, {	-- Reaping the Reapers
 					["qg"] = 1519,	-- Deathguard Simmer
-					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
+					["coord"] = { 44.7, 53.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2200,7 +2200,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(356, {	-- Rear Guard Patrol
 					["qg"] = 1495,	-- Deathguard Linnea
-					["coord"] = { 65.4, 60.2, TIRISFAL_GLADES },
+					["coord"] = { 65.4, 60.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -2219,7 +2219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1498 },	-- Bethor Iceshard
 						{ "i", 3016 },	-- Gunther's Spellbook
 					},
-					["coord"] = { 84.2, 17.4, UNDERCITY },
+					["coord"] = { 84.2, 17.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2227,7 +2227,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(360, {	-- Return to the Magistrate
 					["sourceQuest"] = 359,	-- Forsaken Duties
 					["qg"] = 1495,	-- Deathguard Linnea
-					["coord"] = { 65.4, 60.2, TIRISFAL_GLADES },
+					["coord"] = { 65.4, 60.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -2235,7 +2235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24989, {	-- Return to the Magistrate
 					["sourceQuest"] = 24988,	-- The Chill of Death
 					["qg"] = 1495,	-- Deathguard Linnea
-					["coord"] = { 65.4, 60.2, TIRISFAL_GLADES },
+					["coord"] = { 65.4, 60.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2243,14 +2243,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6323, {	-- Ride to the Undercity
 					["sourceQuest"] = 6321,	-- Supplying Brill [CATA+] / Supplying the Sepulcher
 					["qg"] = 43124,	-- Anette Williams
-					["coord"] = { 58.8, 51.8, TIRISFAL_GLADES },
+					["coord"] = { 58.8, 51.8, MAP.TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
 				}),
 				-- #endif
 				q(1820, {	-- Speak with Coleman
 					["sourceQuest"] = 1819,	-- Ulag the Cleaver
 					["qg"] = 1496,	-- Deathguard Dillinger
-					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
+					["coord"] = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -2260,7 +2260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1818, {	-- Speak with Dillinger
 					["altQuests"] = { 1502 },	-- Thun'grim Firegaze
 					["qg"] = 2131,	-- Austil de Mon
-					["coord"] = { 61.84, 52.53, TIRISFAL_GLADES },
+					["coord"] = { 61.84, 52.53, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -2269,7 +2269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(355, {	-- Speak with Sevren
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
+					["coord"] = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
@@ -2280,7 +2280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25004,	-- The Mills Overrun
 					},
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
+					["coord"] = { 54.5, 29.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2290,20 +2290,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1745 },	-- Deathguard Morris
 						{ "i", 16209 },	-- Morris's Order
 					},
-					["coord"] = { 60.2, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 60.2, 52.4, MAP.TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
 				}),
 				-- #endif
 				q(25012, {	-- Take to the Skies
 					["sourceQuest"] = 25011,	-- To Bigger and Better Things
 					["qg"] = 37915,	-- Timothy Cunningham
-					["coord"] = { 83.5, 69.9, TIRISFAL_GLADES },
+					["coord"] = { 83.5, 69.9, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(375, {	-- The Chill of Death
 					["qg"] = 1521,	-- Gretchen Dedmar
-					["coord"] = { 61.9, 52.7, TIRISFAL_GLADES },
+					["coord"] = { 61.9, 52.7, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2320, 1 } },	-- Coarse Thread
 					["races"] = HORDE_ONLY,
@@ -2327,7 +2327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24988, {	-- The Chill of Death
 					["sourceQuest"] = 24983,	-- Forsaken Duties
 					["qg"] = 1521,	-- Gretchen Dedmar
-					["coord"] = { 65.2, 60.4, TIRISFAL_GLADES },
+					["coord"] = { 65.2, 60.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2355,7 +2355,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(408, {	-- The Family Crypt
 					["sourceQuest"] = 355,	-- Speak with Sevren
 					["qg"] = 1499,	-- Magistrate Sevren
-					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
+					["coord"] = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
@@ -2368,7 +2368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(3, {	-- 0/1 Dargol's Skull
 							["provider"] = { "i", 3082 },	-- Dargol's Skull
-							["coord"] = { 52.6, 26.4, TIRISFAL_GLADES },
+							["coord"] = { 52.6, 26.4, MAP.TIRISFAL_GLADES },
 							["cr"] = 1658,	-- Captain Dargol
 						}),
 						-- #if BEFORE 4.0.3.13277
@@ -2380,7 +2380,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25003, {	-- The Family Crypt
 					["sourceQuest"] = 25031,	-- Head for the Mills (breadcrumb)
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
+					["coord"] = { 54.5, 29.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2407,7 +2407,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25006, {	-- The Grasp Weakens
 					["sourceQuest"] = 25005,	-- Speak with Sevren
 					["qg"] = 1499,	-- Magistrate Sevren
-					["coord"] = { 60.9, 50.4, TIRISFAL_GLADES },
+					["coord"] = { 60.9, 50.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2424,14 +2424,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(362, {	-- The Haunted Mills
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
+					["coord"] = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
 						objective(1, {	-- 0/1 Devlin's Remains
 							["provider"] = { "i", 2831 },	-- Devlin's Remains
-							["coord"] = { 47.6, 40.2, TIRISFAL_GLADES },
+							["coord"] = { 47.6, 40.2, MAP.TIRISFAL_GLADES },
 							["cr"] = 1657,	-- Devlin Agamand
 						}),
 					},
@@ -2439,7 +2439,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25030, {	-- The Haunted Mills
 					["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
 					["provider"] = { "i", 3082 },	-- Dargol's Skull
-					["coord"] = { 52.8, 26.3, TIRISFAL_GLADES },
+					["coord"] = { 52.8, 26.3, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["crs"] = { 1658 },	-- Captain Dargol
@@ -2447,21 +2447,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(357, {	-- The Lich's Identity
 					["sourceQuest"] = 405,	-- The Prodigal Lich
 					["qg"] = 1498,	-- Bethor Iceshard
-					["coord"] = { 84.2, 17.4, UNDERCITY },
+					["coord"] = { 84.2, 17.4, MAP.UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/1 The Lich's Spellbook
 							["provider"] = { "i", 2833 },	-- The Lich's Spellbook
-							["coord"] = { 68.0, 42.1, TIRISFAL_GLADES },
+							["coord"] = { 68.0, 42.1, MAP.TIRISFAL_GLADES },
 						}),
 					},
 				}),
 				q(426, {	-- The Mills Overrun
 					["sourceQuest"] = 404,	-- A Putrid Task
 					["qg"] = 1496,	-- Deathguard Dillinger
-					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
+					["coord"] = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -2488,7 +2488,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25004, {	-- The Mills Overrun
 					["sourceQuest"] = 25003,	-- The Family Crypt
 					["qg"] = 1500,	-- Coleman Farthing
-					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
+					["coord"] = { 54.5, 29.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2507,7 +2507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24982, {	-- The New Forsaken
 					["qg"] = 1496,	-- Deathguard Dillinger
-					["coord"] = { 52.5, 54.8, TIRISFAL_GLADES },
+					["coord"] = { 52.5, 54.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2517,7 +2517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1499 },	-- Magistrate Sevren
 						{ "i", 3017 },	-- Sevren's Orders
 					},
-					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
+					["coord"] = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2528,7 +2528,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1497 },	-- Gunther Arcanus
 						{ "i", 3081 },	-- Nether Gem
 					},
-					["coord"] = { 68.2, 42.0, TIRISFAL_GLADES },
+					["coord"] = { 68.2, 42.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2541,7 +2541,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24980, {	-- The Scarlet Palisade
 					["sourceQuest"] = 24978,	-- Reaping the Reapers
 					["qg"] = 1519,	-- Deathguard Simmer
-					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
+					["coord"] = { 44.7, 53.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2553,7 +2553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25011, {	-- To Bigger and Better Things
 					["sourceQuest"] = 25046,	-- A Daughter's Embrace
 					["qg"] = 10837,	-- High Executor Derrington
-					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
+					["coord"] = { 83.2, 68.9, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2561,7 +2561,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1818,	-- Speak with Dillinger
 					["altQuests"] = { 1502 },	-- Thun'grim Firegaze
 					["qg"] = 1496,	-- Deathguard Dillinger
-					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
+					["coord"] = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -2569,14 +2569,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Ulag the Cleaver slain
 							["provider"] = { "n", 6390 },	-- Ulag the Cleaver
-							["coord"] = { 59.2, 48.6, TIRISFAL_GLADES },
+							["coord"] = { 59.2, 48.6, MAP.TIRISFAL_GLADES },
 						}),
 					},
 				}),
 				q(24976, {	-- Variety is the Spice of Death
 					["sourceQuest"] = 24975,	-- Fields of Grief
 					["qg"] = 1518,	-- Apothecary Johaan
-					["coord"] = { 44.6, 53.7, TIRISFAL_GLADES },
+					["coord"] = { 44.6, 53.7, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2603,14 +2603,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(398, {	-- Wanted: Maggot Eye
 					["provider"] = { "o", 711 },	-- Wanted!
-					["coord"] = { 60.7, 51.5, TIRISFAL_GLADES },
+					["coord"] = { 60.7, 51.5, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
 						objective(1, {	-- 0/1 Maggot Eye's Paw
 							["provider"] = { "i", 3635 },	-- Maggot Eye's Paw
-							["coord"] = { 58.6, 31.6, TIRISFAL_GLADES },
+							["coord"] = { 58.6, 31.6, MAP.TIRISFAL_GLADES },
 							["cr"] = 1753,	-- Maggot Eye
 						}),
 						i(5941, {	-- Brass Scale Pants
@@ -2625,28 +2625,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(10356, {	-- Bayne
 					-- #if AFTER CATA
-					["coord"] = { 46.0, 49.6, TIRISFAL_GLADES },
+					["coord"] = { 46.0, 49.6, MAP.TIRISFAL_GLADES },
 					-- #else
 					["coords"] = {
-						{ 40.8, 43.2, TIRISFAL_GLADES },
-						{ 57.6, 41.6, TIRISFAL_GLADES },
-						{ 42.0, 52.6, TIRISFAL_GLADES },
-						{ 45.0, 54.0, TIRISFAL_GLADES },
-						{ 50.0, 50.8, TIRISFAL_GLADES },
-						{ 51.4, 52.2, TIRISFAL_GLADES },
+						{ 40.8, 43.2, MAP.TIRISFAL_GLADES },
+						{ 57.6, 41.6, MAP.TIRISFAL_GLADES },
+						{ 42.0, 52.6, MAP.TIRISFAL_GLADES },
+						{ 45.0, 54.0, MAP.TIRISFAL_GLADES },
+						{ 50.0, 50.8, MAP.TIRISFAL_GLADES },
+						{ 51.4, 52.2, MAP.TIRISFAL_GLADES },
 					},
 					-- #endif
 				}),
 				n(50803, {	-- Bonechewer
 					["coords"] = {
-						{ 31.2, 46.4, TIRISFAL_GLADES },
-						{ 32.6, 46.4, TIRISFAL_GLADES },
+						{ 31.2, 46.4, MAP.TIRISFAL_GLADES },
+						{ 32.6, 46.4, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208927, {	-- Dead Acolyte
-					["coord"] = { 76.6, 44.8, TIRISFAL_GLADES },
+					["coord"] = { 76.6, 44.8, MAP.TIRISFAL_GLADES },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2667,11 +2667,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(1911, {	-- Deeb
 					-- #if AFTER CATA
-					["coord"] = { 72.6, 25.8, TIRISFAL_GLADES },
+					["coord"] = { 72.6, 25.8, MAP.TIRISFAL_GLADES },
 					-- #else
 					["coords"] = {
-						{ 58.8, 27.2, TIRISFAL_GLADES },
-						{ 62.6, 28.6, TIRISFAL_GLADES },
+						{ 58.8, 27.2, MAP.TIRISFAL_GLADES },
+						{ 62.6, 28.6, MAP.TIRISFAL_GLADES },
 					},
 					-- #endif
 					["groups"] = {
@@ -2686,7 +2686,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						38356,	-- Bringing the Bass [A]
 						37961,	-- Bringing the Bass [H]
 					},
-					["coord"] = { 17.6, 67.6, TIRISFAL_GLADES },
+					["coord"] = { 17.6, 67.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
 						i(122234, {	-- Music Roll: Faerie Dragon
@@ -2696,8 +2696,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1936, {	-- Farmer Solliden
 					["coords"] = {
-						{ 34.2, 52.6, TIRISFAL_GLADES },
-						{ 38.0, 49.8, TIRISFAL_GLADES },
+						{ 34.2, 52.6, MAP.TIRISFAL_GLADES },
+						{ 38.0, 49.8, MAP.TIRISFAL_GLADES },
 					},
 					["groups"] = {
 						i(3334, {	-- Farmer's Shovel
@@ -2713,20 +2713,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(10358, {	-- Fellicent's Shade
 					-- #if AFTER CATA
-					["coord"] = { 77.0, 59.8, TIRISFAL_GLADES },
+					["coord"] = { 77.0, 59.8, MAP.TIRISFAL_GLADES },
 					-- #else
 					["coords"] = {
-						{ 74.6, 63.8, TIRISFAL_GLADES },
-						{ 77.8, 63.2, TIRISFAL_GLADES },
-						{ 76.4, 57.4, TIRISFAL_GLADES },
-						{ 74.6, 59.6, TIRISFAL_GLADES },
-						{ 74.8, 60.6, TIRISFAL_GLADES },
+						{ 74.6, 63.8, MAP.TIRISFAL_GLADES },
+						{ 77.8, 63.2, MAP.TIRISFAL_GLADES },
+						{ 76.4, 57.4, MAP.TIRISFAL_GLADES },
+						{ 74.6, 59.6, MAP.TIRISFAL_GLADES },
+						{ 74.8, 60.6, MAP.TIRISFAL_GLADES },
 					},
 					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(202060, {	-- Frozen Murloc
-					["coord"] = { 66.2, 40.0, TIRISFAL_GLADES },
+					["coord"] = { 66.2, 40.0, MAP.TIRISFAL_GLADES },
 					["classes"] = { MAGE, WARLOCK },
 					["groups"] = {
 						i(205228, {	-- Rune of Chaos Bolt
@@ -2744,7 +2744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(208196, {	-- Gillgar
-					["coord"] = { 27.2, 46.4, TIRISFAL_GLADES },
+					["coord"] = { 27.2, 46.4, MAP.TIRISFAL_GLADES },
 					["classes"] = { PRIEST, MAGE, WARRIOR },
 					["groups"] = {
 						i(205940, {	-- Memory of a Dark Purpose
@@ -2766,19 +2766,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(50930, {	-- Hibernus the Sleeper
-					["coord"] = { 47.6, 70.2, TIRISFAL_GLADES },
+					["coord"] = { 47.6, 70.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(1531, {	-- Lost Soul
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.6, 45.4, TIRISFAL_GLADES },
-						{ 53.6, 48.8, TIRISFAL_GLADES },
-						{ 49.2, 32.6, TIRISFAL_GLADES },
-						{ 45.0, 37.6, TIRISFAL_GLADES },
+						{ 53.6, 45.4, MAP.TIRISFAL_GLADES },
+						{ 53.6, 48.8, MAP.TIRISFAL_GLADES },
+						{ 49.2, 32.6, MAP.TIRISFAL_GLADES },
+						{ 45.0, 37.6, MAP.TIRISFAL_GLADES },
 						-- #else
-						{ 48.6, 36.2, TIRISFAL_GLADES },
-						{ 53.6, 48.6, TIRISFAL_GLADES },
+						{ 48.6, 36.2, MAP.TIRISFAL_GLADES },
+						{ 53.6, 48.6, MAP.TIRISFAL_GLADES },
 						-- #endif
 					},
 					["groups"] = {
@@ -2788,7 +2788,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1910, {	-- Muad
-					["coord"] = { 35.8, 43.0, TIRISFAL_GLADES },
+					["coord"] = { 35.8, 43.0, MAP.TIRISFAL_GLADES },
 					["groups"] = {
 						i(4302, {	-- Small Green Dagger
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2796,29 +2796,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(50908, {	-- Nighthowl
-					["coord"] = { 42.6, 28.6, TIRISFAL_GLADES },
+					["coord"] = { 42.6, 28.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51044, {	-- Plague
-					["coord"] = { 57.8, 33.0, TIRISFAL_GLADES },
+					["coord"] = { 57.8, 33.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10357, {	-- Ressan the Needler
 					-- #if AFTER CATA
-					["coord"] = { 54.2, 56.2, TIRISFAL_GLADES },
+					["coord"] = { 54.2, 56.2, MAP.TIRISFAL_GLADES },
 					-- #else
 					["coords"] = {
-						{ 43.6, 67.0, TIRISFAL_GLADES },
-						{ 47.0, 65.0, TIRISFAL_GLADES },
-						{ 50.2, 64.4, TIRISFAL_GLADES },
-						{ 52.4, 63.8, TIRISFAL_GLADES },
-						{ 55.6, 60.0, TIRISFAL_GLADES },
-						{ 56.2, 63.6, TIRISFAL_GLADES },
+						{ 43.6, 67.0, MAP.TIRISFAL_GLADES },
+						{ 47.0, 65.0, MAP.TIRISFAL_GLADES },
+						{ 50.2, 64.4, MAP.TIRISFAL_GLADES },
+						{ 52.4, 63.8, MAP.TIRISFAL_GLADES },
+						{ 55.6, 60.0, MAP.TIRISFAL_GLADES },
+						{ 56.2, 63.6, MAP.TIRISFAL_GLADES },
 					},
 					-- #endif
 				}),
 				n(1944, {	-- Rot Hide Bruiser
-					["coord"] = { 56.1, 42.4, TIRISFAL_GLADES },
+					["coord"] = { 56.1, 42.4, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_10_1_7 },
 					["groups"] = {
 						i(4439, {	-- Bruiser Club
@@ -2830,32 +2830,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(50763, {	-- Shadowstalker
-					["coord"] = { 38.0, 52.0, TIRISFAL_GLADES },
+					["coord"] = { 38.0, 52.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10359, {	-- Sri'skulk
 					-- #if AFTER CATA
-					["coord"] = { 84.6, 49.4, TIRISFAL_GLADES },
+					["coord"] = { 84.6, 49.4, MAP.TIRISFAL_GLADES },
 					-- #else
 					["coords"] = {
-						{ 83.0, 55.8, TIRISFAL_GLADES },
-						{ 85.2, 49.4, TIRISFAL_GLADES },
-						{ 89.4, 40.2, TIRISFAL_GLADES },
-						{ 90.2, 47.6, TIRISFAL_GLADES },
-						{ 88.8, 53.6, TIRISFAL_GLADES },
+						{ 83.0, 55.8, MAP.TIRISFAL_GLADES },
+						{ 85.2, 49.4, MAP.TIRISFAL_GLADES },
+						{ 89.4, 40.2, MAP.TIRISFAL_GLADES },
+						{ 90.2, 47.6, MAP.TIRISFAL_GLADES },
+						{ 88.8, 53.6, MAP.TIRISFAL_GLADES },
 					},
 					-- #endif
 				}),
 				n(1533, {	-- Tormented Spirit
 					-- #if AFTER CATA
 					["coords"] = {
-						{ 46.8, 30.6, TIRISFAL_GLADES },
-						{ 47.6, 35.6, TIRISFAL_GLADES },
-						{ 43.8, 33.8, TIRISFAL_GLADES },
-						{ 45.0, 31.6, TIRISFAL_GLADES },
+						{ 46.8, 30.6, MAP.TIRISFAL_GLADES },
+						{ 47.6, 35.6, MAP.TIRISFAL_GLADES },
+						{ 43.8, 33.8, MAP.TIRISFAL_GLADES },
+						{ 45.0, 31.6, MAP.TIRISFAL_GLADES },
 					},
 					-- #else
-					["coord"] = { 46.0, 35.4, TIRISFAL_GLADES },
+					["coord"] = { 46.0, 35.4, MAP.TIRISFAL_GLADES },
 					-- #endif
 					["groups"] = {
 						i(3323, {	-- Ghostly Bracers
@@ -2867,7 +2867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if BEFORE TBC
 			n(RIDING_TRAINER, {
 				n(4773, {	-- Velma Warnam <Undead Horse Riding Instructor>
-					["coord"] = { 60.0, 52.6, TIRISFAL_GLADES },
+					["coord"] = { 60.0, 52.6, MAP.TIRISFAL_GLADES },
 					["races"] = { ORC, TROLL, UNDEAD },
 
 					-- Available to Undead without faction requirements.
@@ -2891,7 +2891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
 					["provider"] = { "o", 405201 },	-- Shipwreck Cache
-					["coord"] = { 66.7, 24.6, TIRISFAL_GLADES },
+					["coord"] = { 66.7, 24.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 208007, 1 } },	-- Shipwreck Cache Key
 					["classes"] = { ROGUE },
@@ -2901,7 +2901,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
 					["provider"] = { "o", 386675 },	-- Buried Treasure
-					["coord"] = { 52.9, 54.0, TIRISFAL_GLADES },
+					["coord"] = { 52.9, 54.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 208034, 1 } },	-- Tirisfal Treasure Map
 					["classes"] = { ROGUE },
@@ -2911,7 +2911,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
 					["provider"] = { "o", 404941 },	-- Relic Coffer
-					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
+					["coord"] = { 52.5, 25.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 208005, 1 } },	-- Agamand Relic Coffer Key
 					["classes"] = { ROGUE },
@@ -2921,7 +2921,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208185, {	-- The Apothecary's Metaphysical Primer
 					["provider"] = { "o", 405879 },	-- Apothecary Society Primer
-					["coord"] = { 59.5, 52.3, TIRISFAL_GLADES },
+					["coord"] = { 59.5, 52.3, MAP.TIRISFAL_GLADES },
 				})),
 			}),
 			-- #endif
@@ -2929,9 +2929,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.0, 51.0, TIRISFAL_GLADES },
+						{ 61.0, 51.0, MAP.TIRISFAL_GLADES },
 						-- #else
-						{ 61.0, 52.4, TIRISFAL_GLADES },
+						{ 61.0, 52.4, MAP.TIRISFAL_GLADES },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2940,7 +2940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(11057, {	-- Apothecary Dithers
-					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
+					["coord"] = { 83.2, 69.2, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE CATA
 					["groups"] = {
@@ -2952,15 +2952,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 83.2, 68.0, TIRISFAL_GLADES },
+						{ 83.2, 68.0, MAP.TIRISFAL_GLADES },
 						-- #else
-						{ 83.2, 68.2, TIRISFAL_GLADES },
+						{ 83.2, 68.2, MAP.TIRISFAL_GLADES },
 						-- #endif
 					},
 					["sym"] = {{ "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 				}),
 				n(3522, {	-- Constance Brisboise <Apprentice Clothier>
-					["coord"] = { 52.6, 55.6, TIRISFAL_GLADES },
+					["coord"] = { 52.6, 55.6, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
@@ -2970,7 +2970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(2310, {	-- Jamie Nore
-					["coord"] = { 60.8, 50.4, TIRISFAL_GLADES },
+					["coord"] = { 60.8, 50.4, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
@@ -2984,7 +2984,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(3550, {	-- Martine Tramblay <Fishing Supplies>
-					["coord"] = { 65.8, 59.6, TIRISFAL_GLADES },
+					["coord"] = { 65.8, 59.6, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
@@ -2993,7 +2993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(2127, {	-- Rupert Boch <Warlock Trainer>
-					["coord"] = { 61.6, 52.4, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 52.4, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
@@ -3006,9 +3006,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3548, {	-- Selina Weston <Alchemy & Herbalism Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 59.64, 52.25, TIRISFAL_GLADES },
+						{ 59.64, 52.25, MAP.TIRISFAL_GLADES },
 						-- #else
-						{ 61.8, 50.0, TIRISFAL_GLADES },
+						{ 61.8, 50.0, MAP.TIRISFAL_GLADES },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3016,9 +3016,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 83.2, 69.4, TIRISFAL_GLADES },
+						{ 83.2, 69.4, MAP.TIRISFAL_GLADES },
 						-- #else
-						{ 83.2, 69.6, TIRISFAL_GLADES },
+						{ 83.2, 69.6, MAP.TIRISFAL_GLADES },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3034,9 +3034,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4731, {	-- Zachariah Post <Undead Horse Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 61.8, 51.8, TIRISFAL_GLADES },
+						{ 61.8, 51.8, MAP.TIRISFAL_GLADES },
 						-- #else
-						{ 59.8, 52.6, TIRISFAL_GLADES },
+						{ 59.8, 52.6, MAP.TIRISFAL_GLADES },
 						-- #endif
 					},
 					-- Available to Undead without faction requirements.
@@ -3091,8 +3091,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 25.4, 35.4, TIRISFAL_GLADES },
+						{ 23.4, 35.4, MAP.TIRISFAL_GLADES },
+						{ 25.4, 35.4, MAP.TIRISFAL_GLADES },
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
@@ -3100,9 +3100,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3,	-- Flesh Eater
 					},
 					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 17.8, 33.4, TIRISFAL_GLADES },
-						{ 19.8, 46.8, TIRISFAL_GLADES },
+						{ 23.4, 35.4, MAP.TIRISFAL_GLADES },
+						{ 17.8, 33.4, MAP.TIRISFAL_GLADES },
+						{ 19.8, 46.8, MAP.TIRISFAL_GLADES },
 					},
 					-- #endif
 					--]]
@@ -3120,27 +3120,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 10.1.7
 				-- Added to Dargol in Tirisfall via Pickpocket (not trolling)
 				i(3330, {	-- Dargol's Hauberk
-					["coord"] = { 52.6, 26.2, TIRISFAL_GLADES },
+					["coord"] = { 52.6, 26.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 1658,	-- Captain Dargol
 				}),
 				-- #endif
 				i(3335, {	-- Farmer's Broom
 					["coords"] = {
-						{ 40.6, 51.8, TIRISFAL_GLADES },
-						{ 36.8, 51.6, TIRISFAL_GLADES },
+						{ 40.6, 51.8, MAP.TIRISFAL_GLADES },
+						{ 36.8, 51.6, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1935,	-- Tirisfal Farmhand
 				}),
 				i(3334, {	-- Farmer's Shovel
 					["coords"] = {
-						{ 38.2, 50.0, TIRISFAL_GLADES },
-						{ 34.6, 51.6, TIRISFAL_GLADES },
-						{ 44.6, 33.2, TIRISFAL_GLADES },
-						{ 36.2, 50.4, TIRISFAL_GLADES },
-						{ 40.6, 51.8, TIRISFAL_GLADES },
-						{ 34.4, 49.0, TIRISFAL_GLADES },
+						{ 38.2, 50.0, MAP.TIRISFAL_GLADES },
+						{ 34.6, 51.6, MAP.TIRISFAL_GLADES },
+						{ 44.6, 33.2, MAP.TIRISFAL_GLADES },
+						{ 36.2, 50.4, MAP.TIRISFAL_GLADES },
+						{ 40.6, 51.8, MAP.TIRISFAL_GLADES },
+						{ 34.4, 49.0, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["crs"] = {
@@ -3151,8 +3151,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(204906, {	-- Gnoll Blood
 					["coords"] = {
-						{ 59.4, 33.6, TIRISFAL_GLADES },
-						{ 56.2, 44.8, TIRISFAL_GLADES },
+						{ 59.4, 33.6, MAP.TIRISFAL_GLADES },
+						{ 56.2, 44.8, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
@@ -3165,13 +3165,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(3321, {	-- Gray Fur Booties
 					["coords"] = {
-						{ 86.0, 38.2, TIRISFAL_GLADES },
-						{ 80.4, 42.2, TIRISFAL_GLADES },
-						{ 79.8, 49.0, TIRISFAL_GLADES },
-						{ 82.8, 51.0, TIRISFAL_GLADES },
-						{ 88.2, 49.6, TIRISFAL_GLADES },
-						{ 89.6, 43.6, TIRISFAL_GLADES },
-						{ 86.0, 46.2, TIRISFAL_GLADES },
+						{ 86.0, 38.2, MAP.TIRISFAL_GLADES },
+						{ 80.4, 42.2, MAP.TIRISFAL_GLADES },
+						{ 79.8, 49.0, MAP.TIRISFAL_GLADES },
+						{ 82.8, 51.0, MAP.TIRISFAL_GLADES },
+						{ 88.2, 49.6, MAP.TIRISFAL_GLADES },
+						{ 89.6, 43.6, MAP.TIRISFAL_GLADES },
+						{ 86.0, 46.2, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1549,	-- Ravenous Darkhound
@@ -3179,9 +3179,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(207973, {	-- Hound Jawbone
 					["coords"] = {
-						{ 44.8, 48.4, TIRISFAL_GLADES },
-						{ 55.4, 65.4, TIRISFAL_GLADES },
-						{ 85.0, 46.4, TIRISFAL_GLADES },
+						{ 44.8, 48.4, MAP.TIRISFAL_GLADES },
+						{ 55.4, 65.4, MAP.TIRISFAL_GLADES },
+						{ 85.0, 46.4, MAP.TIRISFAL_GLADES },
 					},
 					["classes"] = { WARLOCK },
 					["crs"] = {
@@ -3192,7 +3192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(3331, {	-- Melrache's Cape
-					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
+					["coord"] = { 79.4, 26.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 1665,	-- Captain Melrache
 					-- This item was given an description about how the NPC it drops from is friendly to the Alliance in pre-cata iterations of the game.
@@ -3201,8 +3201,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
 					["coords"] = {
-						{ 40.6, 51.8, TIRISFAL_GLADES },
-						{ 36.8, 51.6, TIRISFAL_GLADES },
+						{ 40.6, 51.8, MAP.TIRISFAL_GLADES },
+						{ 36.8, 51.6, MAP.TIRISFAL_GLADES },
 					},
 					["classes"] = { PRIEST },
 					["crs"] = {
@@ -3214,23 +3214,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207974, {	-- Ominous Tome
-					["coord"] = { 46.8, 35.0, TIRISFAL_GLADES },
+					["coord"] = { 46.8, 35.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["cr"] = 1522,	-- Darkeye Bonecaster
 				})),
 				-- #endif
 				i(3332, {	-- Perrine's Boots
-					["coord"] = { 51.6, 67.6, TIRISFAL_GLADES },
+					["coord"] = { 51.6, 67.6, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1662,	-- Captain Perrine
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
 					["coords"] = {
-						{ 34.0, 47.8, TIRISFAL_GLADES },
-						{ 51.6, 68.8, TIRISFAL_GLADES },
-						{ 80.0, 54.4, TIRISFAL_GLADES },
+						{ 34.0, 47.8, MAP.TIRISFAL_GLADES },
+						{ 51.6, 68.8, MAP.TIRISFAL_GLADES },
+						{ 80.0, 54.4, MAP.TIRISFAL_GLADES },
 					},
 					["classes"] = { PRIEST },
 					["crs"] = {
@@ -3245,14 +3245,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if AFTER 10.1.7
 				i(3260, {	-- Scarlet Initiate Robes
-					["coord"] = { 79.0, 32.2, TIRISFAL_GLADES },
+					["coord"] = { 79.0, 32.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1539,	-- Scarlet Neophyte
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(207975, {	-- Severed Bat Head
-					["coord"] = { 43.2, 53.0, TIRISFAL_GLADES },
+					["coord"] = { 43.2, 53.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -3261,7 +3261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
-					["coord"] = { 59.2, 36.2, TIRISFAL_GLADES },
+					["coord"] = { 59.2, 36.2, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -3271,7 +3271,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204477, {	-- Severed Murloc Head
-					["coord"] = { 35.2, 42.0, TIRISFAL_GLADES },
+					["coord"] = { 35.2, 42.0, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -3282,8 +3282,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(3319, {	-- Short Sabre
 					["coords"] = {
-						{ 78.6, 60.6, TIRISFAL_GLADES },
-						{ 75.0, 61.6, TIRISFAL_GLADES },
+						{ 78.6, 60.6, MAP.TIRISFAL_GLADES },
+						{ 75.0, 61.6, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1529,	-- Bleeding Horror
@@ -3291,9 +3291,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
 					["coords"] = {
-						{ 34.0, 47.8, TIRISFAL_GLADES },
-						{ 51.6, 68.8, TIRISFAL_GLADES },
-						{ 80.0, 54.4, TIRISFAL_GLADES },
+						{ 34.0, 47.8, MAP.TIRISFAL_GLADES },
+						{ 51.6, 68.8, MAP.TIRISFAL_GLADES },
+						{ 80.0, 54.4, MAP.TIRISFAL_GLADES },
 					},
 					["classes"] = { MAGE },
 					["crs"] = {
@@ -3304,23 +3304,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(3328, {	-- Spider Web Robe
-					["coord"] = { 86.6, 53.8, TIRISFAL_GLADES },
+					["coord"] = { 86.6, 53.8, MAP.TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["cr"] = 1555,	-- Vicious Night Web Spider
 				}),
 				i(3329, {	-- Spiked Wooden Plank
 					["coords"] = {
-						{ 58.6, 31.0, TIRISFAL_GLADES },
-						{ 58.8, 31.6, TIRISFAL_GLADES },
+						{ 58.6, 31.0, MAP.TIRISFAL_GLADES },
+						{ 58.8, 31.6, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1753,	-- Maggot Eye
 				}),
 				i(4263, {	-- Standard Issue Shield
 					["coords"] = {
-						{ 79.6, 26.8, TIRISFAL_GLADES },
-						{ 78.8, 33.0, TIRISFAL_GLADES },
-						{ 78.4, 36.8, TIRISFAL_GLADES },
+						{ 79.6, 26.8, MAP.TIRISFAL_GLADES },
+						{ 78.8, 33.0, MAP.TIRISFAL_GLADES },
+						{ 78.4, 36.8, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
@@ -3335,14 +3335,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3325, {	-- Vile Fin Battle Axe
 					["coords"] = {
 						-- #if BEFORE 4.0.3
-						{ 36.6, 38.6, TIRISFAL_GLADES },
-						{ 34.8, 44.8, TIRISFAL_GLADES },
-						{ 62.8, 29.6, TIRISFAL_GLADES },
-						{ 27.8, 38.0, TIRISFAL_GLADES },
-						{ 27.6, 46.6, TIRISFAL_GLADES },
+						{ 36.6, 38.6, MAP.TIRISFAL_GLADES },
+						{ 34.8, 44.8, MAP.TIRISFAL_GLADES },
+						{ 62.8, 29.6, MAP.TIRISFAL_GLADES },
+						{ 27.8, 38.0, MAP.TIRISFAL_GLADES },
+						{ 27.6, 46.6, MAP.TIRISFAL_GLADES },
 						-- #elseif AFTER CATA
-						{ 60.2, 27.8, TIRISFAL_GLADES },
-						{ 72.0, 26.6, TIRISFAL_GLADES },
+						{ 60.2, 27.8, MAP.TIRISFAL_GLADES },
+						{ 72.0, 26.6, MAP.TIRISFAL_GLADES },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3351,12 +3351,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3327, {	-- Vile Fin Oracle Staff
 					["coords"] = {
 						-- #if BEFORE 4.0.3
-						{ 36.6, 38.6, TIRISFAL_GLADES },
-						{ 34.8, 44.8, TIRISFAL_GLADES },
-						{ 62.8, 29.6, TIRISFAL_GLADES },
+						{ 36.6, 38.6, MAP.TIRISFAL_GLADES },
+						{ 34.8, 44.8, MAP.TIRISFAL_GLADES },
+						{ 62.8, 29.6, MAP.TIRISFAL_GLADES },
 						-- #elseif AFTER CATA
-						{ 36.6, 38.6, TIRISFAL_GLADES },
-						{ 34.8, 44.8, TIRISFAL_GLADES },
+						{ 36.6, 38.6, MAP.TIRISFAL_GLADES },
+						{ 34.8, 44.8, MAP.TIRISFAL_GLADES },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3364,8 +3364,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(3261, {	-- Webbed Cloak
 					["coords"] = {
-						{ 23.8, 58.4, TIRISFAL_GLADES },
-						{ 86.2, 53.4, TIRISFAL_GLADES },
+						{ 23.8, 58.4, MAP.TIRISFAL_GLADES },
+						{ 86.2, 53.4, MAP.TIRISFAL_GLADES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["crs"] = {
@@ -3379,8 +3379,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-	m(EASTERN_KINGDOMS, {
-		m(TIRISFAL_GLADES, {
+	m(MAP.EASTERN_KINGDOMS, {
+		m(MAP.TIRISFAL_GLADES, {
 			n(QUESTS, {
 				q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
 				q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login

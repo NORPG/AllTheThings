@@ -16,32 +16,32 @@ root(ROOTS.Craftables, {
 						["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
 						--[[["coords"] = {
-							{ 66.6, 54.6, IRONFORGE },
-							{ 47.4, 33.73, THUNDER_BLUFF },
-							{ 51.8, 74.6, UNDERCITY },
+							{ 66.6, 54.6, MAP.IRONFORGE },
+							{ 47.4, 33.73, MAP.THUNDER_BLUFF },
+							{ 51.8, 74.6, MAP.UNDERCITY },
 							-- #if AFTER TBC
 							{ 67.0, 19.2, SILVERMOON_CITY },
 							{ 28.1, 61.9, THE_EXODAR },
 							-- #endif
 							-- #if AFTER WRATH
-							{ 55.6, 85.6, STORMWIND_CITY },
+							{ 55.6, 85.6, MAP.STORMWIND_CITY },
 							-- #else
-							{ 46.6, 78.8, STORMWIND_CITY },
+							{ 46.6, 78.8, MAP.STORMWIND_CITY },
 							-- #endif
 							-- #if AFTER CATA
 							{ 57.7, 72.32, BOREAN_TUNDRA },
 							{ 41.34, 34.61, BOREAN_TUNDRA },
-							{ 54.6, 39.6, DARNASSUS },
+							{ 54.6, 39.6, MAP.DARNASSUS },
 							{ 52.2, 36.4, HELLFIRE_PENINSULA },
 							{ 53.8, 65.8, HELLFIRE_PENINSULA },
 							{ 79.5, 30.47, HOWLING_FJORD },
 							{ 58.4, 62.75, HOWLING_FJORD },
 							{ 41.54, 33.32, NORTHREND_DALARAN },
-							{ 55.6, 45.4, ORGRIMMAR },
+							{ 55.6, 45.4, MAP.ORGRIMMAR },
 							{ 45.8, 20.8, SHATTRATH_CITY },
 							-- #else
-							{ 55.8, 24.5, DARNASSUS },
-							{ 56.2, 34.2, ORGRIMMAR },
+							{ 55.8, 24.5, MAP.DARNASSUS },
+							{ 56.2, 34.2, MAP.ORGRIMMAR },
 							-- #endif
 						},]]
 					}),
@@ -49,19 +49,19 @@ root(ROOTS.Craftables, {
 				sharedData({	-- Leaded-/Crystal Vials for Vanilla
 					["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 					["coords"] = {
-						{ 55.8, 24.5, DARNASSUS },
-						{ 66.6, 54.6, IRONFORGE },
-						{ 56.2, 34.2, ORGRIMMAR },
-						{ 47.4, 33.73, THUNDER_BLUFF },
-						{ 51.8, 74.6, UNDERCITY },
+						{ 55.8, 24.5, MAP.DARNASSUS },
+						{ 66.6, 54.6, MAP.IRONFORGE },
+						{ 56.2, 34.2, MAP.ORGRIMMAR },
+						{ 47.4, 33.73, MAP.THUNDER_BLUFF },
+						{ 51.8, 74.6, MAP.UNDERCITY },
 						-- #if AFTER TBC
 						{ 67.0, 19.2, SILVERMOON_CITY },
 						{ 28.1, 61.9, THE_EXODAR },
 						-- #endif
 						-- #if AFTER WRATH
-						{ 55.6, 85.6, STORMWIND_CITY },
+						{ 55.6, 85.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 46.6, 78.8, STORMWIND_CITY },
+						{ 46.6, 78.8, MAP.STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_1 },
@@ -73,11 +73,11 @@ root(ROOTS.Craftables, {
 					i(18256, {	-- Imbued Vial for Vanilla/TBC/WotLK, turns into Melted Vial with Cataclysm.
 						["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 						["coords"] = {
-							{ 55.8, 24.5, DARNASSUS },
-							{ 66.6, 54.6, IRONFORGE },
-							{ 56.2, 34.2, ORGRIMMAR },
-							{ 47.4, 33.73, THUNDER_BLUFF },
-							{ 51.8, 74.6, UNDERCITY },
+							{ 55.8, 24.5, MAP.DARNASSUS },
+							{ 66.6, 54.6, MAP.IRONFORGE },
+							{ 56.2, 34.2, MAP.ORGRIMMAR },
+							{ 47.4, 33.73, MAP.THUNDER_BLUFF },
+							{ 51.8, 74.6, MAP.UNDERCITY },
 							-- #if AFTER TBC
 							{ 52.2, 36.4, HELLFIRE_PENINSULA },
 							{ 53.8, 65.8, HELLFIRE_PENINSULA },
@@ -91,9 +91,9 @@ root(ROOTS.Craftables, {
 							{ 79.5, 30.47, HOWLING_FJORD },
 							{ 58.4, 62.75, HOWLING_FJORD },
 							{ 41.54, 33.32, NORTHREND_DALARAN },
-							{ 55.6, 85.6, STORMWIND_CITY },
+							{ 55.6, 85.6, MAP.STORMWIND_CITY },
 							-- #else
-							{ 46.6, 78.8, STORMWIND_CITY },
+							{ 46.6, 78.8, MAP.STORMWIND_CITY },
 							-- #endif
 						},
 						["timeline"] = { REMOVED_4_0_1 },
@@ -272,25 +272,25 @@ root(ROOTS.Craftables, {
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
 					["coords"] = {
-						{ 51.8, 41.2, IRONFORGE },
-						{ 39.8, 55.6, THUNDER_BLUFF },
-						{ 61.4, 30.1, UNDERCITY },
+						{ 51.8, 41.2, MAP.IRONFORGE },
+						{ 39.8, 55.6, MAP.THUNDER_BLUFF },
+						{ 61.4, 30.1, MAP.UNDERCITY },
 						-- #if AFTER TBC
 						{ 80.6, 37.0, SILVERMOON_CITY },
 						{ 61.3, 89.3, THE_EXODAR },
 						-- #endif
 						-- #if AFTER 3.0.2
-						{ 63.2, 37.6, STORMWIND_CITY },
+						{ 63.2, 37.6, MAP.STORMWIND_CITY },
 						-- #else
-						{ 56.3, 17.2, STORMWIND_CITY },
+						{ 56.3, 17.2, MAP.STORMWIND_CITY },
 						-- #endif
 						-- #if AFTER CATA
-						{ 75.8, 35.2, ORGRIMMAR },
+						{ 75.8, 35.2, MAP.ORGRIMMAR },
 						-- #else
-						{ 82.4, 23.8, ORGRIMMAR },
+						{ 82.4, 23.8, MAP.ORGRIMMAR },
 						-- #endif
 						-- #if AFTER 4.1.0
-						{ 56.6, 52.6, DARNASSUS },
+						{ 56.6, 52.6, MAP.DARNASSUS },
 						-- #endif
 					},
 					["providers"] = {
@@ -1148,10 +1148,10 @@ root(ROOTS.Craftables, {
 					["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[["coords"] = {
-						{ 60.8, 44.2, IRONFORGE },
+						{ 60.8, 44.2, MAP.IRONFORGE },
 						{ 39.9, 40.2, THE_EXODAR },
-						{ 44.9, 37.7, THUNDER_BLUFF },
-						{ 62.0, 60.8, UNDERCITY },
+						{ 44.9, 37.7, MAP.THUNDER_BLUFF },
+						{ 62.0, 60.8, MAP.UNDERCITY },
 						-- #if AFTER TBC
 						{ 52.2, 36.0, HELLFIRE_PENINSULA },
 						{ 53.6, 66.0, HELLFIRE_PENINSULA },
@@ -1159,19 +1159,19 @@ root(ROOTS.Craftables, {
 						{ 70.0, 24.6, SILVERMOON_CITY },
 						-- #endif
 						-- #if AFTER WRATH
-						{ 53.0, 74.2, STORMWIND_CITY },
+						{ 53.0, 74.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 43.0, 64.2, STORMWIND_CITY },
+						{ 43.0, 64.2, MAP.STORMWIND_CITY },
 						-- #endif
 						-- #if AFTER 3.1.0
 						{ 36.4, 44.6, SHATTRATH_CITY },
 						-- #endif
 						-- #if AFTER CATA
-						{ 56.5, 32.2, DARNASSUS },
-						{ 53.2, 48.8, ORGRIMMAR },
+						{ 56.5, 32.2, MAP.DARNASSUS },
+						{ 53.2, 48.8, MAP.ORGRIMMAR },
 						-- #else
-						{ 58.6, 14.7, DARNASSUS },
-						{ 53.6, 38.0, ORGRIMMAR },
+						{ 58.6, 14.7, MAP.DARNASSUS },
+						{ 53.6, 38.0, MAP.ORGRIMMAR },
 						-- #endif
 					},
 					["providers"] = {
@@ -1204,24 +1204,24 @@ root(ROOTS.Craftables, {
 					-- 					are split on an expansion-basis, but one still need to craft and use this basic rod.
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[["coords"] = {
-						{ 60.8, 44.2, IRONFORGE },
+						{ 60.8, 44.2, MAP.IRONFORGE },
 						{ 39.9, 40.2, THE_EXODAR },
-						{ 44.9, 37.7, THUNDER_BLUFF },
-						{ 62.0, 60.8, UNDERCITY },
+						{ 44.9, 37.7, MAP.THUNDER_BLUFF },
+						{ 62.0, 60.8, MAP.UNDERCITY },
 						-- #if AFTER TBC
 						{ 70.0, 24.6, SILVERMOON_CITY },
 						-- #endif
 						-- #if AFTER WRATH
-						{ 53.0, 74.2, STORMWIND_CITY },
+						{ 53.0, 74.2, MAP.STORMWIND_CITY },
 						-- #else
-						{ 43.0, 64.2, STORMWIND_CITY },
+						{ 43.0, 64.2, MAP.STORMWIND_CITY },
 						-- #endif
 						-- #if AFTER CATA
-						{ 56.5, 32.2, DARNASSUS },
-						{ 53.2, 48.8, ORGRIMMAR },
+						{ 56.5, 32.2, MAP.DARNASSUS },
+						{ 53.2, 48.8, MAP.ORGRIMMAR },
 						-- #else
-						{ 58.6, 14.7, DARNASSUS },
-						{ 53.6, 38.0, ORGRIMMAR },
+						{ 58.6, 14.7, MAP.DARNASSUS },
+						{ 53.6, 38.0, MAP.ORGRIMMAR },
 						-- #endif
 						-- #if AFTER BFA
 						{ 46.7, 32.5, BOREAN_TUNDRA },
@@ -1665,8 +1665,8 @@ root(ROOTS.Craftables, {
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
 			--[[["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
 			["coords"] = {
-				{ 67.8, 43.0, IRONFORGE },
-				{ 75.5, 74.3, UNDERCITY },
+				{ 67.8, 43.0, MAP.IRONFORGE },
+				{ 75.5, 74.3, MAP.UNDERCITY },
 				-- #if AFTER TBC
 				{ 44.6, 96.8, SHATTRATH_CITY },
 				{ 27.93, 47.6, SHATTRATH_CITY },
@@ -1674,18 +1674,18 @@ root(ROOTS.Craftables, {
 				{ 53.6, 90.8, THE_EXODAR },
 				-- #endif
 				-- #if AFTER 3.0.2
-				{ 63.07, 31.97, STORMWIND_CITY },
+				{ 63.07, 31.97, MAP.STORMWIND_CITY },
 				-- #else
-				{ 55.0, 7.0, STORMWIND_CITY },
+				{ 55.0, 7.0, MAP.STORMWIND_CITY },
 				-- #endif
 				-- #if AFTER CATA
-				{ 50.0, 32.8, DARNASSUS },
-				{ 56.0, 56.0, ORGRIMMAR },
+				{ 50.0, 32.8, MAP.DARNASSUS },
+				{ 56.0, 56.0, MAP.ORGRIMMAR },
 				-- #else
-				{ 75.6, 25.2, ORGRIMMAR },
+				{ 75.6, 25.2, MAP.ORGRIMMAR },
 				-- #endif
 				-- #if AFTER 4.1.0
-				{ 36.22, 60.21, THUNDER_BLUFF },
+				{ 36.22, 60.21, MAP.THUNDER_BLUFF },
 				-- #endif
 			},
 			["providers"] = {
@@ -2068,24 +2068,24 @@ root(ROOTS.Craftables, {
 				["description"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
 				-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 				--[[["coords"] = {
-					{ 47.8, 6.6, IRONFORGE },
-					{ 55.8, 47.0, THUNDER_BLUFF },
-					{ 81.0, 30.8, UNDERCITY },
+					{ 47.8, 6.6, MAP.IRONFORGE },
+					{ 55.8, 47.0, MAP.THUNDER_BLUFF },
+					{ 81.0, 30.8, MAP.UNDERCITY },
 					-- #if AFTER TBC
 					{ 77.04, 68.2, SILVERMOON_CITY },
 					{ 29.5, 20.1, THE_EXODAR },
 					-- #endif
 					-- #if AFTER WRATH
-					{ 55.0, 69.6, STORMWIND_CITY },
+					{ 55.0, 69.6, MAP.STORMWIND_CITY },
 					-- #else
-					{ 45.8, 58.5, STORMWIND_CITY },
+					{ 45.8, 58.5, MAP.STORMWIND_CITY },
 					-- #endif
 					-- #if AFTER CATA
-					{ 48.44, 61.2, DARNASSUS },
-					{ 70.0, 29.4, ORGRIMMAR },
+					{ 48.44, 61.2, MAP.DARNASSUS },
+					{ 70.0, 29.4, MAP.ORGRIMMAR },
 					-- #else
-					{ 46.9, 56.9, DARNASSUS },
-					{ 66.6, 41.6, ORGRIMMAR },
+					{ 46.9, 56.9, MAP.DARNASSUS },
+					{ 66.6, 41.6, MAP.ORGRIMMAR },
 					-- #endif
 				},
 				["providers"] = {
@@ -2124,9 +2124,9 @@ root(ROOTS.Craftables, {
 				i(6360, {	-- Steelscale Crushfish
 					["description"] = "Can be caught in open water in the given zones.",
 					["maps_disp"] = {
-						ASHENVALE,
-						HILLSBRAD_FOOTHILLS,
-						WETLANDS,
+						MAP.ASHENVALE,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
 						DARKMOON_ISLAND,
 						NORTHERN_STRANGLETHORN,
@@ -2205,38 +2205,38 @@ root(ROOTS.Craftables, {
 				i(13874),	-- Heavy Crate
 				i(21150, {	-- Iron Bound Trunk
 					["maps_disp"] = {
-						ARATHI_HIGHLANDS,
-						ASHENVALE,
-						AZSHARA,
-						BLASTED_LANDS,
-						DARKSHORE,
-						DESOLACE,
-						DUSTWALLOW_MARSH,
-						FERALAS,
-						HILLSBRAD_FOOTHILLS,
-						SILVERPINE_FOREST,
-						SWAMP_OF_SORROWS,
-						TANARIS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.ASHENVALE,
+						MAP.AZSHARA,
+						MAP.BLASTED_LANDS,
+						MAP.DARKSHORE,
+						MAP.DESOLACE,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.FERALAS,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.SILVERPINE_FOREST,
+						MAP.SWAMP_OF_SORROWS,
+						MAP.TANARIS,
 						-- #if BEFORE 4.0.3
-						ALTERAC_MOUNTAINS,
-						STRANGLETHORN_VALE,
-						THE_BARRENS,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.THE_BARRENS,
 						-- #else
-						EASTERN_PLAGUELANDS,
-						FERALAS,
-						MOONGLADE,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.FERALAS,
+						MAP.MOONGLADE,
 						NORTHERN_BARRENS,
 						NORTHERN_STRANGLETHORN,
 						SOUTHERN_BARRENS,
-						STONETALON_MOUNTAINS,
+						MAP.STONETALON_MOUNTAINS,
 						THE_CAPE_OF_STRANGLETHORN,
-						THOUSAND_NEEDLES,
-						UNGORO_CRATER,
-						WESTERN_PLAGUELANDS,
+						MAP.THOUSAND_NEEDLES,
+						MAP.UNGORO_CRATER,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
-						THE_HINTERLANDS,
-						WESTFALL,
-						WETLANDS,
+						MAP.THE_HINTERLANDS,
+						MAP.WESTFALL,
+						MAP.WETLANDS,
 					},
 					["providers"] = {
 						{ "o", 180901 },	-- Bloodsail Wreckage
@@ -2260,12 +2260,12 @@ root(ROOTS.Craftables, {
 				i(6307),	-- Message in a Bottle
 				i(21228, {	-- Mitril Bound Trunk
 					["maps_disp"] = {
-						BLASTED_LANDS,
-						EASTERN_PLAGUELANDS,
-						SWAMP_OF_SORROWS,
-						TANARIS,
+						MAP.BLASTED_LANDS,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.SWAMP_OF_SORROWS,
+						MAP.TANARIS,
 						-- #if AFTER 4.0.3
-						THOUSAND_NEEDLES,
+						MAP.THOUSAND_NEEDLES,
 						-- #endif
 					},
 					["providers"] = {
@@ -2285,15 +2285,15 @@ root(ROOTS.Craftables, {
 				i(6357),	-- Sealed Crate
 				i(20708, {	-- Tightly Sealed Trunk
 					["maps_disp"] = {
-						DARKSHORE,
-						DUSKWOOD,
-						REDRIDGE_MOUNTAINS,
-						SILVERPINE_FOREST,
-						WESTFALL,
+						MAP.DARKSHORE,
+						MAP.DUSKWOOD,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.SILVERPINE_FOREST,
+						MAP.WESTFALL,
 						-- #if BEFORE 4.0.3
-						THE_BARRENS,
+						MAP.THE_BARRENS,
 						-- #else
-						AZSHARA,
+						MAP.AZSHARA,
 						NORTHERN_BARRENS,
 						-- #endif
 					},
@@ -2313,10 +2313,10 @@ root(ROOTS.Craftables, {
 				i(6352),	-- Waterlogged Crate
 				i(21113, {	-- Watertight Trunk
 					["maps_disp"] = {
-						ASHENVALE,
-						HILLSBRAD_FOOTHILLS,
-						STONETALON_MOUNTAINS,
-						WETLANDS,
+						MAP.ASHENVALE,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STONETALON_MOUNTAINS,
+						MAP.WETLANDS,
 					},
 					["providers"] = {
 						-- #if AFTER 5.1.0
@@ -2357,15 +2357,15 @@ root(ROOTS.Craftables, {
 				}),
 				i(20709, {	-- Rumsey Rum Light
 					["maps_disp"] = {
-						DARKSHORE,
-						DUSKWOOD,
-						REDRIDGE_MOUNTAINS,
-						SILVERPINE_FOREST,
-						WESTFALL,
+						MAP.DARKSHORE,
+						MAP.DUSKWOOD,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.SILVERPINE_FOREST,
+						MAP.WESTFALL,
 						-- #if BEFORE 4.0.3
-						THE_BARRENS,
+						MAP.THE_BARRENS,
 						-- #else
-						AZSHARA,
+						MAP.AZSHARA,
 						NORTHERN_BARRENS,
 						-- #endif
 					},
@@ -2378,12 +2378,12 @@ root(ROOTS.Craftables, {
 				i(6366, {	-- Darkwood Fishing Pole
 					["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
 					["maps_disp"] = {
-						ASHENVALE,
-						ARATHI_HIGHLANDS,
-						HILLSBRAD_FOOTHILLS,
+						MAP.ASHENVALE,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.HILLSBRAD_FOOTHILLS,
 						NORTHERN_STRANGLETHORN,
-						REDRIDGE_MOUNTAINS,
-						WETLANDS,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.WETLANDS,
 					},
 					-- #if AFTER 10.0.0
 					["collectible"] = false,
@@ -2402,10 +2402,10 @@ root(ROOTS.Craftables, {
 				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					-- #if AFTER 4.0.3
-					BLASTED_LANDS,
-					SWAMP_OF_SORROWS,
+					MAP.BLASTED_LANDS,
+					MAP.SWAMP_OF_SORROWS,
 					-- #else
-					AZSHARA,
+					MAP.AZSHARA,
 					-- #endif
 				},
 			}),
@@ -2417,9 +2417,9 @@ root(ROOTS.Craftables, {
 					{ 39.9, 74.9, NORTHERN_BARRENS },	-- Lushwater Oasis
 					{ 37.3, 45.9, NORTHERN_BARRENS },	-- The Forgotten Oasis
 					-- #else
-					{ 56.0, 43.0, THE_BARRENS },	-- The Stagnant Oasis
-					{ 46.0, 38.0, THE_BARRENS },	-- Lushwater Oasis
-					{ 45.0, 22.0, THE_BARRENS },	-- The Forgotten Oasis
+					{ 56.0, 43.0, MAP.THE_BARRENS },	-- The Stagnant Oasis
+					{ 46.0, 38.0, MAP.THE_BARRENS },	-- Lushwater Oasis
+					{ 45.0, 22.0, MAP.THE_BARRENS },	-- The Forgotten Oasis
 					-- #endif
 				},
 				["provider"] = { "o", 180658 },	-- School of Deviate Fish
@@ -2427,31 +2427,31 @@ root(ROOTS.Craftables, {
 			i(6359, {	-- Firefin Snapper
 				["description"] = "Schools can be found on the seaside.",
 				["maps_disp"] = {
-					ARATHI_HIGHLANDS,
-					ASHENVALE,
-					AZSHARA,
-					BLASTED_LANDS,
-					DARKSHORE,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					HILLSBRAD_FOOTHILLS,
-					SILVERPINE_FOREST,
-					SWAMP_OF_SORROWS,
-					TANARIS,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.ASHENVALE,
+					MAP.AZSHARA,
+					MAP.BLASTED_LANDS,
+					MAP.DARKSHORE,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.FERALAS,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.SILVERPINE_FOREST,
+					MAP.SWAMP_OF_SORROWS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					STRANGLETHORN_VALE,
-					THE_BARRENS,
+					MAP.STRANGLETHORN_VALE,
+					MAP.THE_BARRENS,
 					-- #else
 					NORTHERN_BARRENS,
 					NORTHERN_STRANGLETHORN,
 					SOUTHERN_BARRENS,
 					THE_CAPE_OF_STRANGLETHORN,
-					THOUSAND_NEEDLES,
+					MAP.THOUSAND_NEEDLES,
 					-- #endif
-					THE_HINTERLANDS,
-					WESTFALL,
-					WETLANDS,
+					MAP.THE_HINTERLANDS,
+					MAP.WESTFALL,
+					MAP.WETLANDS,
 				},
 				["providers"] = {
 					{ "o", 180683 },	-- Firefin Snapper School
@@ -2464,53 +2464,53 @@ root(ROOTS.Craftables, {
 				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					-- #if AFTER 4.0.3
-					BLASTED_LANDS,
-					SWAMP_OF_SORROWS,
+					MAP.BLASTED_LANDS,
+					MAP.SWAMP_OF_SORROWS,
 					-- #else
-					AZSHARA,
+					MAP.AZSHARA,
 					-- #endif
 				},
 			}),
 			i(13757, {	-- Lightening Eel
-				["coord"] = { 60.6, 71.7, SILITHUS },
+				["coord"] = { 60.6, 71.7, MAP.SILITHUS },
 				["description"] = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
-					BURNING_STEPPES,
-					EASTERN_PLAGUELANDS,
+					MAP.BURNING_STEPPES,
+					MAP.EASTERN_PLAGUELANDS,
 					-- #endif
-					DEADWIND_PASS,
-					WINTERSPRING,
+					MAP.DEADWIND_PASS,
+					MAP.WINTERSPRING,
 				},
 			}),
 			i(6358, {	-- Oily Blackmouth
 				["description"] = "Schools can be found on the seaside.",
 				["maps_disp"] = {
-					ARATHI_HIGHLANDS,
-					ASHENVALE,
-					AZSHARA,
-					BLASTED_LANDS,
-					DARKSHORE,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					HILLSBRAD_FOOTHILLS,
-					SILVERPINE_FOREST,
-					SWAMP_OF_SORROWS,
-					TANARIS,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.ASHENVALE,
+					MAP.AZSHARA,
+					MAP.BLASTED_LANDS,
+					MAP.DARKSHORE,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.FERALAS,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.SILVERPINE_FOREST,
+					MAP.SWAMP_OF_SORROWS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					STRANGLETHORN_VALE,
-					THE_BARRENS,
+					MAP.STRANGLETHORN_VALE,
+					MAP.THE_BARRENS,
 					-- #else
 					NORTHERN_BARRENS,
 					NORTHERN_STRANGLETHORN,
 					SOUTHERN_BARRENS,
 					THE_CAPE_OF_STRANGLETHORN,
-					THOUSAND_NEEDLES,
+					MAP.THOUSAND_NEEDLES,
 					-- #endif
-					THE_HINTERLANDS,
-					WESTFALL,
-					WETLANDS,
+					MAP.THE_HINTERLANDS,
+					MAP.WESTFALL,
+					MAP.WETLANDS,
 				},
 				["providers"] = {
 					{ "o", 180682 },	-- Oily Blackmouth School
@@ -2522,29 +2522,29 @@ root(ROOTS.Craftables, {
 			i(6291, {	-- Raw Brilliant Smallfish
 				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
-					DUN_MOROGH,
-					ELWYNN_FOREST,
-					MULGORE,
-					TIRISFAL_GLADES,
+					MAP.DUN_MOROGH,
+					MAP.ELWYNN_FOREST,
+					MAP.MULGORE,
+					MAP.TIRISFAL_GLADES,
 				},
 			}),
 			i(6308, {	-- Raw Bristle Whisker Catfish
 				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
-					ASHENVALE,
-					DUSKWOOD,
-					REDRIDGE_MOUNTAINS,
-					STONETALON_MOUNTAINS,
+					MAP.ASHENVALE,
+					MAP.DUSKWOOD,
+					MAP.REDRIDGE_MOUNTAINS,
+					MAP.STONETALON_MOUNTAINS,
 				},
 			}),
 			i(13754, {	-- Raw Glossy Mightfish
 				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
-					TANARIS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					AZSHARA,
-					FERALAS,
-					THE_HINTERLANDS,
+					MAP.AZSHARA,
+					MAP.FERALAS,
+					MAP.THE_HINTERLANDS,
 					-- #endif
 				},
 			}),
@@ -2552,54 +2552,54 @@ root(ROOTS.Craftables, {
 				["description"] = "Schools can be found in inland waters and waterways.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
-					ALTERAC_MOUNTAINS,
-					STRANGLETHORN_VALE,
+					MAP.ALTERAC_MOUNTAINS,
+					MAP.STRANGLETHORN_VALE,
 					-- #else
-					ARATHI_HIGHLANDS,
-					BLASTED_LANDS,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					EASTERN_PLAGUELANDS,
-					FERALAS,
-					MOONGLADE,
-					STONETALON_MOUNTAINS,
-					THE_HINTERLANDS,
-					UNGORO_CRATER,
-					WESTERN_PLAGUELANDS,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.BLASTED_LANDS,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.EASTERN_PLAGUELANDS,
+					MAP.FERALAS,
+					MAP.MOONGLADE,
+					MAP.STONETALON_MOUNTAINS,
+					MAP.THE_HINTERLANDS,
+					MAP.UNGORO_CRATER,
+					MAP.WESTERN_PLAGUELANDS,
 					-- #endif
 				},
 				["provider"] = { "o", 180684 },	-- Greater Sagefish School
 			}),
 			i(6317, {	-- Raw Loch Frenzy
 				["description"] = "Can be caught in The Loch.",
-				["maps_disp"] = { LOCH_MODAN },
+				["maps_disp"] = { MAP.LOCH_MODAN },
 			}),
 			i(6289, {	-- Raw Longjaw Mud Snapper
 				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
-					DARNASSUS,
+					MAP.DARNASSUS,
 					-- #if AFTER 4.0.3
-					DUN_MOROGH,
-					IRONFORGE,
+					MAP.DUN_MOROGH,
+					MAP.IRONFORGE,
 					-- #endif
-					ORGRIMMAR,
-					STORMWIND_CITY,
-					THUNDER_BLUFF,
+					MAP.ORGRIMMAR,
+					MAP.STORMWIND_CITY,
+					MAP.THUNDER_BLUFF,
 				},
 			}),
 			i(8365, {	-- Raw Mithril Head Trout
 				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
-					ARATHI_HIGHLANDS,
-					THOUSAND_NEEDLES,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.THOUSAND_NEEDLES,
 					-- #else
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					EASTERN_PLAGUELANDS,
-					FERALAS,
-					MOONGLADE,
-					WESTERN_PLAGUELANDS,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.EASTERN_PLAGUELANDS,
+					MAP.FERALAS,
+					MAP.MOONGLADE,
+					MAP.WESTERN_PLAGUELANDS,
 					-- #endif
 				},
 			}),
@@ -2607,29 +2607,29 @@ root(ROOTS.Craftables, {
 				["description"] = "Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
-					DEADWIND_PASS,
-					MOONGLADE,
-					WESTERN_PLAGUELANDS,
-					WINTERSPRING,
+					MAP.DEADWIND_PASS,
+					MAP.MOONGLADE,
+					MAP.WESTERN_PLAGUELANDS,
+					MAP.WINTERSPRING,
 					-- #else
-					BLASTED_LANDS,
+					MAP.BLASTED_LANDS,
 					-- #endif
-					EASTERN_PLAGUELANDS,
-					FELWOOD,
-					FERALAS,
-					UNGORO_CRATER,
+					MAP.EASTERN_PLAGUELANDS,
+					MAP.FELWOOD,
+					MAP.FERALAS,
+					MAP.UNGORO_CRATER,
 				},
 			}),
 			i(6361, {	-- Raw Rainbow Fin Albacore
 				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
-					ASHENVALE,
-					HILLSBRAD_FOOTHILLS,
-					SILVERPINE_FOREST,
-					THE_BARRENS,
-					WESTFALL,
-					WETLANDS,
+					MAP.ASHENVALE,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.SILVERPINE_FOREST,
+					MAP.THE_BARRENS,
+					MAP.WESTFALL,
+					MAP.WETLANDS,
 					-- #else
 					RUINS_OF_GILNEAS,
 					-- #endif
@@ -2637,17 +2637,17 @@ root(ROOTS.Craftables, {
 					BLOODMYST_ISLE,
 					GHOSTLANDS,
 					-- #endif
-					DARKSHORE,
+					MAP.DARKSHORE,
 				},
 			}),
 			i(13758, {	-- Raw Redgill
 				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
-					FELWOOD,
-					MOONGLADE,
+					MAP.FELWOOD,
+					MAP.MOONGLADE,
 					-- #if BEFORE 4.0.3
-					UNGORO_CRATER,
-					WESTERN_PLAGUELANDS,
+					MAP.UNGORO_CRATER,
+					MAP.WESTERN_PLAGUELANDS,
 					-- #endif
 				},
 			}),
@@ -2655,29 +2655,29 @@ root(ROOTS.Craftables, {
 				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
-					DUSTWALLOW_MARSH,
-					SWAMP_OF_SORROWS,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.SWAMP_OF_SORROWS,
 					-- #else
-					DESOLACE,
+					MAP.DESOLACE,
 					-- #endif
 				},
 			}),
 			i(21071, {	-- Raw Sagefish
 				["coords"] = {
 					-- #if BEFORE 4.0.3
-					{ 50.0, 40.0, STONETALON_MOUNTAINS },	-- Mirkfallon Lake
+					{ 50.0, 40.0, MAP.STONETALON_MOUNTAINS },	-- Mirkfallon Lake
 					-- #endif
 				},
 				["description"] = "Schools can be found in inland waters and waterways.",
 				["maps_disp"] = {
-					ASHENVALE,
-					HILLSBRAD_FOOTHILLS,
-					LOCH_MODAN,
-					SILVERPINE_FOREST,
+					MAP.ASHENVALE,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.LOCH_MODAN,
+					MAP.SILVERPINE_FOREST,
 					-- #if AFTER 4.0.3
-					DUSKWOOD,
-					REDRIDGE_MOUNTAINS,
-					WETLANDS,
+					MAP.DUSKWOOD,
+					MAP.REDRIDGE_MOUNTAINS,
+					MAP.WETLANDS,
 					-- #endif
 				},
 				["providers"] = {
@@ -2692,8 +2692,8 @@ root(ROOTS.Craftables, {
 			i(6303, {	-- Raw Slitherskin Mackerel
 				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
-					DUROTAR,
-					TELDRASSIL,
+					MAP.DUROTAR,
+					MAP.TELDRASSIL,
 					-- #if AFTER TBC
 					AZUREMYST_ISLE,
 					-- #endif
@@ -2702,48 +2702,48 @@ root(ROOTS.Craftables, {
 			i(4603, {	-- Raw Spotted Yellowtail
 				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
-					TANARIS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					SWAMP_OF_SORROWS,
-					THE_HINTERLANDS,
+					MAP.SWAMP_OF_SORROWS,
+					MAP.THE_HINTERLANDS,
 					-- #else
-					BADLANDS,
+					MAP.BADLANDS,
 					-- #endif
 				},
 			}),
 			-- i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 			i(13760, {	-- Raw Sunscale Salmon
 				["description"] = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
-				["coord"] = { 60.6, 71.7, SILITHUS },
+				["coord"] = { 60.6, 71.7, MAP.SILITHUS },
 			}),
 			i(13889, {	-- Raw Whitescale Salmon
 				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
 					-- #if BEFORE TBC
-					DEADWIND_PASS,
+					MAP.DEADWIND_PASS,
 					-- #endif
 					-- #if BEFORE 4.0.3
-					EASTERN_PLAGUELANDS,
+					MAP.EASTERN_PLAGUELANDS,
 					-- #else
-					BLASTED_LANDS,
-					UNGORO_CRATER,
+					MAP.BLASTED_LANDS,
+					MAP.UNGORO_CRATER,
 					-- #endif
-					SILITHUS,
-					WINTERSPRING,
+					MAP.SILITHUS,
+					MAP.WINTERSPRING,
 				},
 			}),
 			i(13422, {	-- Stonescale Eel
 				["description"] = "Schools can be found on the seaside.",
 				["maps_disp"] = {
-					TANARIS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					AZSHARA,
-					FERALAS,
-					THE_HINTERLANDS,
-					STRANGLETHORN_VALE,
+					MAP.AZSHARA,
+					MAP.FERALAS,
+					MAP.THE_HINTERLANDS,
+					MAP.STRANGLETHORN_VALE,
 					-- #else
-					BLASTED_LANDS,
-					SWAMP_OF_SORROWS,
+					MAP.BLASTED_LANDS,
+					MAP.SWAMP_OF_SORROWS,
 					-- #endif
 				},
 				["provider"] = { "o", 180712 },	-- Stonescale Eel Swarm
@@ -2753,28 +2753,28 @@ root(ROOTS.Craftables, {
 			o(180683, {	-- Firefin Snapper School
 				["description"] = "Can be found on the seaside.",
 				["maps"] = {
-					ARATHI_HIGHLANDS,
-					ASHENVALE,
-					AZSHARA,
-					BLASTED_LANDS,
-					DARKSHORE,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					HILLSBRAD_FOOTHILLS,
-					SILVERPINE_FOREST,
-					SWAMP_OF_SORROWS,
-					TANARIS,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.ASHENVALE,
+					MAP.AZSHARA,
+					MAP.BLASTED_LANDS,
+					MAP.DARKSHORE,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.FERALAS,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.SILVERPINE_FOREST,
+					MAP.SWAMP_OF_SORROWS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					THE_BARRENS,
+					MAP.THE_BARRENS,
 					-- #else
 					NORTHERN_BARRENS,
 					SOUTHERN_BARRENS,
-					THOUSAND_NEEDLES,
+					MAP.THOUSAND_NEEDLES,
 					-- #endif
-					THE_HINTERLANDS,
-					WESTFALL,
-					WETLANDS,
+					MAP.THE_HINTERLANDS,
+					MAP.WESTFALL,
+					MAP.WETLANDS,
 				},
 			}),
 			-- These Firefin Snapper school IDs needs to be confirmed in game.
@@ -2786,20 +2786,20 @@ root(ROOTS.Craftables, {
 				["description"] = "Can be found in inland waters and waterways.",
 				["maps"] = {
 					-- #if BEFORE 4.0.3
-					ALTERAC_MOUNTAINS,
-					STRANGLETHORN_VALE,
+					MAP.ALTERAC_MOUNTAINS,
+					MAP.STRANGLETHORN_VALE,
 					-- #else
-					ARATHI_HIGHLANDS,
-					BLASTED_LANDS,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					EASTERN_PLAGUELANDS,
-					FERALAS,
-					MOONGLADE,
-					STONETALON_MOUNTAINS,
-					THE_HINTERLANDS,
-					UNGORO_CRATER,
-					WESTERN_PLAGUELANDS,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.BLASTED_LANDS,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.EASTERN_PLAGUELANDS,
+					MAP.FERALAS,
+					MAP.MOONGLADE,
+					MAP.STONETALON_MOUNTAINS,
+					MAP.THE_HINTERLANDS,
+					MAP.UNGORO_CRATER,
+					MAP.WESTERN_PLAGUELANDS,
 					-- #endif
 				},
 			}),
@@ -2813,28 +2813,28 @@ root(ROOTS.Craftables, {
 			o(180682, {	-- Oily Blackmouth School
 				["description"] = "Can be found on the seaside.",
 				["maps_disp"] = {
-					ARATHI_HIGHLANDS,
-					ASHENVALE,
-					AZSHARA,
-					BLASTED_LANDS,
-					DARKSHORE,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					HILLSBRAD_FOOTHILLS,
-					SILVERPINE_FOREST,
-					SWAMP_OF_SORROWS,
-					TANARIS,
+					MAP.ARATHI_HIGHLANDS,
+					MAP.ASHENVALE,
+					MAP.AZSHARA,
+					MAP.BLASTED_LANDS,
+					MAP.DARKSHORE,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.FERALAS,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.SILVERPINE_FOREST,
+					MAP.SWAMP_OF_SORROWS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					THE_BARRENS,
+					MAP.THE_BARRENS,
 					-- #else
 					NORTHERN_BARRENS,
 					SOUTHERN_BARRENS,
-					THOUSAND_NEEDLES,
+					MAP.THOUSAND_NEEDLES,
 					-- #endif
-					THE_HINTERLANDS,
-					WESTFALL,
-					WETLANDS,
+					MAP.THE_HINTERLANDS,
+					MAP.WESTFALL,
+					MAP.WETLANDS,
 				},
 			}),
 			-- The following pre-5.1.0 Sagefish school IDs needs to be confirmed in game.
@@ -2847,13 +2847,13 @@ root(ROOTS.Craftables, {
 			o(216764, {	-- Sagefish School
 				["description"] = "Can be found in inland waters and waterways.",
 				["maps"] = {
-					ASHENVALE,
-					HILLSBRAD_FOOTHILLS,
-					LOCH_MODAN,
-					SILVERPINE_FOREST,
-					DUSKWOOD,
-					REDRIDGE_MOUNTAINS,
-					WETLANDS,
+					MAP.ASHENVALE,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.LOCH_MODAN,
+					MAP.SILVERPINE_FOREST,
+					MAP.DUSKWOOD,
+					MAP.REDRIDGE_MOUNTAINS,
+					MAP.WETLANDS,
 				},
 				["timeline"] = { ADDED_5_1_0 },
 			}),
@@ -2864,24 +2864,24 @@ root(ROOTS.Craftables, {
 					{ 39.9, 74.9, NORTHERN_BARRENS },	-- Lushwater Oasis
 					{ 37.3, 45.9, NORTHERN_BARRENS },	-- The Forgotten Oasis
 					-- #else
-					{ 56.0, 43.0, THE_BARRENS },	-- The Stagnant Oasis
-					{ 46.0, 38.0, THE_BARRENS },	-- Lushwater Oasis
-					{ 45.0, 22.0, THE_BARRENS },	-- The Forgotten Oasis
+					{ 56.0, 43.0, MAP.THE_BARRENS },	-- The Stagnant Oasis
+					{ 46.0, 38.0, MAP.THE_BARRENS },	-- Lushwater Oasis
+					{ 45.0, 22.0, MAP.THE_BARRENS },	-- The Forgotten Oasis
 					-- #endif
 				},
 			}),
 			o(180712, {	-- Stonescale Eel Swarm
 				["description"] = "Can be found on the seaside.",
 				["maps"] = {
-					TANARIS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					AZSHARA,
-					FERALAS,
-					THE_HINTERLANDS,
-					STRANGLETHORN_VALE,
+					MAP.AZSHARA,
+					MAP.FERALAS,
+					MAP.THE_HINTERLANDS,
+					MAP.STRANGLETHORN_VALE,
 					-- #else
-					BLASTED_LANDS,
-					SWAMP_OF_SORROWS,
+					MAP.BLASTED_LANDS,
+					MAP.SWAMP_OF_SORROWS,
 					-- #endif
 				},
 			}),
@@ -2893,22 +2893,22 @@ root(ROOTS.Craftables, {
 					NORTHERN_STRANGLETHORN,
 					THE_CAPE_OF_STRANGLETHORN,
 					-- #else
-					STRANGLETHORN_VALE,
+					MAP.STRANGLETHORN_VALE,
 					-- #endif
 				},
 			}),
 			o(180655, {	-- Floating Debris
 				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
-					DARKSHORE,
-					DUSKWOOD,
-					REDRIDGE_MOUNTAINS,
-					SILVERPINE_FOREST,
-					WESTFALL,
+					MAP.DARKSHORE,
+					MAP.DUSKWOOD,
+					MAP.REDRIDGE_MOUNTAINS,
+					MAP.SILVERPINE_FOREST,
+					MAP.WESTFALL,
 					-- #if BEFORE 4.0.3
-					THE_BARRENS,
+					MAP.THE_BARRENS,
 					-- #else
-					AZSHARA,
+					MAP.AZSHARA,
 					NORTHERN_BARRENS,
 					-- #endif
 				},
@@ -2916,35 +2916,35 @@ root(ROOTS.Craftables, {
 			o(180751, {	-- Floating Wreckage
 				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
-					BLASTED_LANDS,
-					EASTERN_PLAGUELANDS,
-					SWAMP_OF_SORROWS,
-					TANARIS,
+					MAP.BLASTED_LANDS,
+					MAP.EASTERN_PLAGUELANDS,
+					MAP.SWAMP_OF_SORROWS,
+					MAP.TANARIS,
 					-- #if AFTER 4.0.3
-					THOUSAND_NEEDLES,
+					MAP.THOUSAND_NEEDLES,
 					-- #endif
 				},
 			}),
 			o(180662, {	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
-					ASHENVALE,
-					HILLSBRAD_FOOTHILLS,
-					STONETALON_MOUNTAINS,
-					WETLANDS,
+					MAP.ASHENVALE,
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.STONETALON_MOUNTAINS,
+					MAP.WETLANDS,
 				},
 			}),
 			o(180685, {	-- Waterlogged Wreckage / Pre WotLK: Floating Wreckage
 				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
-					TANARIS,
+					MAP.TANARIS,
 					-- #if BEFORE 4.0.3
-					STRANGLETHORN_VALE,
+					MAP.STRANGLETHORN_VALE,
 					-- #else
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					WESTERN_PLAGUELANDS,
+					MAP.DESOLACE,
+					MAP.DUSTWALLOW_MARSH,
+					MAP.FERALAS,
+					MAP.WESTERN_PLAGUELANDS,
 					-- #endif
 				},
 			}),
@@ -2960,10 +2960,10 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 220,
 					-- #endif
 					["maps"] = {
-						EASTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
 						RAZORFEN_DOWNS,
 						STRATHOLME,
-						WESTERN_PLAGUELANDS,
+						MAP.WESTERN_PLAGUELANDS,
 					},
 					["timeline"] = { REMOVED_4_0_3 }
 				}),
@@ -2971,7 +2971,7 @@ root(ROOTS.Craftables, {
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 220,
 					-- #endif
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 }
 				}),
 				o(176589, {	-- Black Lotus
@@ -2984,27 +2984,27 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 300,
 					-- #endif
 					["maps"] = {
-						SILITHUS,
+						MAP.SILITHUS,
 						-- #if BEFORE WRATH
-						BURNING_STEPPES,
-						EASTERN_PLAGUELANDS,
-						WINTERSPRING,
+						MAP.BURNING_STEPPES,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.WINTERSPRING,
 						-- #elseif WRATH
-						BURNING_STEPPES,
-						WINTERSPRING,
+						MAP.BURNING_STEPPES,
+						MAP.WINTERSPRING,
 						-- #elseif MOP
-						BURNING_STEPPES,
-						EASTERN_PLAGUELANDS,
-						WINTERSPRING,
+						MAP.BURNING_STEPPES,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.WINTERSPRING,
 						-- #endif
 						-- #if AFTER WRATH
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 						-- #endif
 					},
 				}),
 				o(253069, {	-- Blacker Lotus
 					["description"] = "Blacker Lotus is a special node at the given coords which can take days to respawn. This location also has a group of un-gatherable Black Lotuses.",
-					["coord"] = { 74.8, 54.5, EASTERN_PLAGUELANDS },	-- Light's Hope Chapel
+					["coord"] = { 74.8, 54.5, MAP.EASTERN_PLAGUELANDS },	-- Light's Hope Chapel
 					-- #if BEFORE 8.0.0
 					["learnedAt"] = 300,
 					-- #endif
@@ -3013,19 +3013,19 @@ root(ROOTS.Craftables, {
 				o(142143, {	-- Blindweed
 					-- #if AFTER CATA
 					["coords"] = {
-						{ 75.3, 46.2, FERALAS },	-- Wildwind Lake
-						{ 72.1, 52.85, FERALAS },	-- Lower Wilds
-						{ 64.9, 58.1, FERALAS },	-- Darkmist Ruins
-						{ 62.9, 51.5, FERALAS },	-- Verdantis River
-						{ 49.35, 23.2, FERALAS },	-- The Twin Colossals
-						{ 46.65, 18.9, FERALAS },	-- The Twin Colossals
-						{ 48.05, 13.3, FERALAS },	-- Southwestern Jademir Lake
-						{ 52.8, 13.9, FERALAS },	-- Southeastern Jademir Lake
-						{ 53.5, 7.5, FERALAS },	-- Northeastern Jademir Lake
-						{ 49.2, 5.9, FERALAS },	-- Northwestern Jademir Lake
+						{ 75.3, 46.2, MAP.FERALAS },	-- Wildwind Lake
+						{ 72.1, 52.85, MAP.FERALAS },	-- Lower Wilds
+						{ 64.9, 58.1, MAP.FERALAS },	-- Darkmist Ruins
+						{ 62.9, 51.5, MAP.FERALAS },	-- Verdantis River
+						{ 49.35, 23.2, MAP.FERALAS },	-- The Twin Colossals
+						{ 46.65, 18.9, MAP.FERALAS },	-- The Twin Colossals
+						{ 48.05, 13.3, MAP.FERALAS },	-- Southwestern Jademir Lake
+						{ 52.8, 13.9, MAP.FERALAS },	-- Southeastern Jademir Lake
+						{ 53.5, 7.5, MAP.FERALAS },	-- Northeastern Jademir Lake
+						{ 49.2, 5.9, MAP.FERALAS },	-- Northwestern Jademir Lake
 					},
 					-- #else
-					["maps"] = { SWAMP_OF_SORROWS },
+					["maps"] = { MAP.SWAMP_OF_SORROWS },
 					-- #endif
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 235,
@@ -3037,18 +3037,18 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 70,
 					-- #endif
 					["maps"] = {
-						DARKSHORE,
-						DUSKWOOD,
-						HILLSBRAD_FOOTHILLS,
-						STONETALON_MOUNTAINS,
-						WETLANDS,
+						MAP.DARKSHORE,
+						MAP.DUSKWOOD,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STONETALON_MOUNTAINS,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						AZSHARA,
+						MAP.AZSHARA,
 						NORTHERN_BARRENS,
 						-- #else
-						ASHENVALE,
-						REDRIDGE_MOUNTAINS,
-						SILVERPINE_FOREST,
+						MAP.ASHENVALE,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.SILVERPINE_FOREST,
 						-- #endif
 					},
 					["description"] = "Usually found near trees.",
@@ -3063,7 +3063,7 @@ root(ROOTS.Craftables, {
 						-- #if AFTER CATA
 						NORTHERN_BARRENS,
 						-- #else
-						THE_BARRENS
+						MAP.THE_BARRENS
 						-- #endif
 					},
 				}),
@@ -3073,16 +3073,16 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 100,
 					-- #endif
 					["maps"] = {
-						ASHENVALE,
-						DUSKWOOD,
-						HILLSBRAD_FOOTHILLS,
-						STONETALON_MOUNTAINS,
+						MAP.ASHENVALE,
+						MAP.DUSKWOOD,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STONETALON_MOUNTAINS,
 						-- #if AFTER CATA
 						NORTHERN_STRANGLETHORN,
 						-- #else
-						REDRIDGE_MOUNTAINS,
-						THOUSAND_NEEDLES,
-						WETLANDS,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.THOUSAND_NEEDLES,
+						MAP.WETLANDS,
 						-- #endif
 					},
 					["description"] = "Usually found near hillsides, buildings and structures.",
@@ -3096,18 +3096,18 @@ root(ROOTS.Craftables, {
 					["maps"] = {
 						-- #if AFTER CATA
 						NORTHERN_BARRENS,
-						STONETALON_MOUNTAINS,
+						MAP.STONETALON_MOUNTAINS,
 						-- #else
-						THE_BARRENS
+						MAP.THE_BARRENS
 						-- #endif
 					},
 				}),
 				-- #endif
 				o(2044, {	-- Dragon's Teeth [CATA+] / Wintersbite
 					-- #if AFTER CATA
-					["coord"] = { 33.5, 52.7, BADLANDS },	-- Scar of the Worldbreaker
+					["coord"] = { 33.5, 52.7, MAP.BADLANDS },	-- Scar of the Worldbreaker
 					-- #else
-					["maps"] = { ALTERAC_MOUNTAINS },
+					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					-- #endif
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 195,
@@ -3118,16 +3118,16 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 270,
 					-- #endif
 					["maps"] = {
-						BURNING_STEPPES,
-						SILITHUS,
+						MAP.BURNING_STEPPES,
+						MAP.SILITHUS,
 						-- #if AFTER CATA
-						BLASTED_LANDS,
-						FELWOOD,
+						MAP.BLASTED_LANDS,
+						MAP.FELWOOD,
 						-- #else
-						AZSHARA,
-						EASTERN_PLAGUELANDS,
-						UNGORO_CRATER,
-						WESTERN_PLAGUELANDS,
+						MAP.AZSHARA,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.UNGORO_CRATER,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
 					},
 					["description"] = "Can usually be found on flat open spaces.",
@@ -3136,7 +3136,7 @@ root(ROOTS.Craftables, {
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 270,
 					-- #endif
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				o(1619, {	-- Earthroot
@@ -3144,17 +3144,17 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 15,
 					-- #endif
 					["maps"] = {
-						DUN_MOROGH,
-						DUROTAR,
-						ELWYNN_FOREST,
-						MULGORE,
-						SILVERPINE_FOREST,
-						TELDRASSIL,
-						TIRISFAL_GLADES,
-						WESTFALL,
+						MAP.DUN_MOROGH,
+						MAP.DUROTAR,
+						MAP.ELWYNN_FOREST,
+						MAP.MULGORE,
+						MAP.SILVERPINE_FOREST,
+						MAP.TELDRASSIL,
+						MAP.TIRISFAL_GLADES,
+						MAP.WESTFALL,
 						-- #if BEFORE CATA
-						DARKSHORE,
-						REDRIDGE_MOUNTAINS,
+						MAP.DARKSHORE,
+						MAP.REDRIDGE_MOUNTAINS,
 						-- #endif
 					},
 					["description"] = "Can be found on uneven terrain and mountain sides.",
@@ -3169,7 +3169,7 @@ root(ROOTS.Craftables, {
 						{ 66.7, 52.5, NORTHERN_BARRENS },
 					},
 					-- #else
-					["maps"] = { THE_BARRENS },
+					["maps"] = { MAP.THE_BARRENS },
 					-- #endif
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 15,
@@ -3182,14 +3182,14 @@ root(ROOTS.Craftables, {
 					-- #endif
 					["maps"] = {
 						-- #if AFTER CATA
-						FERALAS,
+						MAP.FERALAS,
 						THE_CAPE_OF_STRANGLETHORN,
-						WESTERN_PLAGUELANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						ARATHI_HIGHLANDS,
-						DUSTWALLOW_MARSH,
-						STRANGLETHORN_VALE,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.STRANGLETHORN_VALE,
 						-- #endif
 					},
 					["description"] = "Can be found in fertile terrain and fields.",
@@ -3199,19 +3199,19 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 205,
 					-- #endif
 					["maps"] = {
-						BADLANDS,
-						SEARING_GORGE,
-						TANARIS,
+						MAP.BADLANDS,
+						MAP.SEARING_GORGE,
+						MAP.TANARIS,
 						-- #if AFTER CATA
-						BURNING_STEPPES,
+						MAP.BURNING_STEPPES,
 						-- #else
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 						-- #endif
 					},
 					["description"] = "Can be found on hot deserts.",
 				}),
 				o(206085, {	-- Frozen Herb (Hillsbrad Foothills)
-					["coord"] = { 47.0, 26.0, HILLSBRAD_FOOTHILLS },	-- Alterac Mountains
+					["coord"] = { 47.0, 26.0, MAP.HILLSBRAD_FOOTHILLS },	-- Alterac Mountains
 					["description"] = "Found all over Alterac Mountains",
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 125,
@@ -3221,11 +3221,11 @@ root(ROOTS.Craftables, {
 				o(142144, {	-- Ghost Mushroom
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.3, 16.3, UNGORO_CRATER },	-- Fungal Rock
+						{ 64.3, 16.3, MAP.UNGORO_CRATER },	-- Fungal Rock
 						-- #else
-						{ 58.0, 41.2, THE_HINTERLANDS },
-						{ 55.8, 68.1, THE_HINTERLANDS },
-						{ 57.0, 81.0, THE_HINTERLANDS },
+						{ 58.0, 41.2, MAP.THE_HINTERLANDS },
+						{ 55.8, 68.1, MAP.THE_HINTERLANDS },
+						{ 57.0, 81.0, MAP.THE_HINTERLANDS },
 						-- #endif
 						-- #if AFTER TBC
 						{ 74.4, 92.2, ZANGARMARSH },	-- Funggor Cavern
@@ -3242,18 +3242,18 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 260,
 					-- #endif
 					["maps"] = {
-						SILITHUS,
-						UNGORO_CRATER,
+						MAP.SILITHUS,
+						MAP.UNGORO_CRATER,
 						-- #if AFTER CATA
-						BADLANDS,
-						FELWOOD,
-						SWAMP_OF_SORROWS,
+						MAP.BADLANDS,
+						MAP.FELWOOD,
+						MAP.SWAMP_OF_SORROWS,
 						-- #else
-						AZSHARA,
-						BURNING_STEPPES,
-						EASTERN_PLAGUELANDS,
-						FERALAS,
-						THE_HINTERLANDS,
+						MAP.AZSHARA,
+						MAP.BURNING_STEPPES,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.FERALAS,
+						MAP.THE_HINTERLANDS,
 						-- #endif
 					},
 					["description"] = "Can be found by trees and other natural structures.",
@@ -3262,7 +3262,7 @@ root(ROOTS.Craftables, {
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 260,
 					-- #endif
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				o(2046, {	-- Goldthorn
@@ -3270,27 +3270,27 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 170,
 					-- #endif
 					["maps"] = {
-						ARATHI_HIGHLANDS,
-						DUSTWALLOW_MARSH,
-						FERALAS,
-						THE_HINTERLANDS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.FERALAS,
+						MAP.THE_HINTERLANDS,
 						-- #if AFTER CATA
 						SOUTHERN_BARRENS,
 						THE_CAPE_OF_STRANGLETHORN,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
 						-- #endif
 					},
 					["description"] = "Can be found on uneven terrain and mountain sides.",
 				}),
 				o(1628, {	-- Grave Moss
 					["coords"] = {
-						{ 20.0, 40.0, DUSKWOOD },	-- Raven Hill Cemetery
+						{ 20.0, 40.0, MAP.DUSKWOOD },	-- Raven Hill Cemetery
 						-- #if BEFORE CATA
-						{ 50.0, 58.0, DESOLACE },
-						{ 80.0, 71.0, DUSKWOOD },
+						{ 50.0, 58.0, MAP.DESOLACE },
+						{ 80.0, 71.0, MAP.DUSKWOOD },
 						-- #endif
 					},
 					["description"] = "Can be found on graves.",
@@ -3300,12 +3300,12 @@ root(ROOTS.Craftables, {
 				}),
 				o(142145, {	-- Gromsblood
 					["coords"] = {
-						{ 84.1, 71.65, ASHENVALE },	-- Felfire Hill
-						{ 53.5, 46.5, BLASTED_LANDS },
-						{ 50.0, 80.0, DESOLACE },
+						{ 84.1, 71.65, MAP.ASHENVALE },	-- Felfire Hill
+						{ 53.5, 46.5, MAP.BLASTED_LANDS },
+						{ 50.0, 80.0, MAP.DESOLACE },
 					},
 					-- #if AFTER CATA
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					-- #endif
 					["description"] = "Found in locations corrupted by the Burning Legion.",
 					-- #if BEFORE 6.0.0
@@ -3316,35 +3316,35 @@ root(ROOTS.Craftables, {
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 250,
 					-- #endif
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				o(176588, {	-- Icecap
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 290,
 					-- #endif
-					["maps"] = { WINTERSPRING },
+					["maps"] = { MAP.WINTERSPRING },
 				}),
 				o(2043, {	-- Khadgar's Whisker
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 185,
 					-- #endif
 					["maps"] = {
-						ARATHI_HIGHLANDS,
-						DUSTWALLOW_MARSH,
-						FERALAS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.FERALAS,
 						-- #if AFTER CATA
-						EASTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
 						SOUTHERN_BARRENS,
 						THE_CAPE_OF_STRANGLETHORN,
-						THE_HINTERLANDS,
-						WESTERN_PLAGUELANDS,
+						MAP.THE_HINTERLANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						AZSHARA,
-						BADLANDS,
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.AZSHARA,
+						MAP.BADLANDS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
 						-- #endif
 					},
 					["description"] = "Can be found near trees.",
@@ -3354,26 +3354,26 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 125,
 					-- #endif
 					["maps"] = {
-						ARATHI_HIGHLANDS,
-						DUSKWOOD,
-						WETLANDS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSKWOOD,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						FERALAS,
+						MAP.FERALAS,
 						NORTHERN_STRANGLETHORN,
 						SOUTHERN_BARRENS,
-						THE_HINTERLANDS,
-						WESTERN_PLAGUELANDS,
+						MAP.THE_HINTERLANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						ASHENVALE,
-						BADLANDS,
-						DESOLACE,
-						DUSTWALLOW_MARSH,
-						HILLSBRAD_FOOTHILLS,
-						STONETALON_MOUNTAINS,
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
-						THOUSAND_NEEDLES,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.ASHENVALE,
+						MAP.BADLANDS,
+						MAP.DESOLACE,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STONETALON_MOUNTAINS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
+						MAP.THOUSAND_NEEDLES,
 						-- #endif
 					},
 					["description"] = "Can be found in the woods.",
@@ -3383,22 +3383,22 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 150,
 					-- #endif
 					["maps"] = {
-						ARATHI_HIGHLANDS,
-						DUSTWALLOW_MARSH,
-						THE_HINTERLANDS,
-						WETLANDS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.THE_HINTERLANDS,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						EASTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
 						NORTHERN_STRANGLETHORN,
 						SOUTHERN_BARRENS,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						DESOLACE,
-						FERALAS,
-						HILLSBRAD_FOOTHILLS,
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
-						WESTERN_PLAGUELANDS,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.DESOLACE,
+						MAP.FERALAS,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
 					},
 					["description"] = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
@@ -3408,19 +3408,19 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 50,
 					-- #endif
 					["maps"] = {
-						DARKSHORE,
-						LOCH_MODAN,
-						SILVERPINE_FOREST,
-						TELDRASSIL,
-						WESTFALL,
-						WETLANDS,
+						MAP.DARKSHORE,
+						MAP.LOCH_MODAN,
+						MAP.SILVERPINE_FOREST,
+						MAP.TELDRASSIL,
+						MAP.WESTFALL,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						AZSHARA,
-						HILLSBRAD_FOOTHILLS,
+						MAP.AZSHARA,
+						MAP.HILLSBRAD_FOOTHILLS,
 						NORTHERN_BARRENS,
 						-- #else
-						ASHENVALE,
-						REDRIDGE_MOUNTAINS,
+						MAP.ASHENVALE,
+						MAP.REDRIDGE_MOUNTAINS,
 						-- #endif
 					},
 				}),
@@ -3434,7 +3434,7 @@ root(ROOTS.Craftables, {
 						-- #if AFTER CATA
 						NORTHERN_BARRENS,
 						-- #else
-						THE_BARRENS
+						MAP.THE_BARRENS
 						-- #endif
 					},
 				}),
@@ -3445,15 +3445,15 @@ root(ROOTS.Craftables, {
 					-- #endif
 					["maps"] = {
 						-- #if AFTER CATA
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 						-- #else
-						AZSHARA,
-						BURNING_STEPPES,
-						EASTERN_PLAGUELANDS,
+						MAP.AZSHARA,
+						MAP.BURNING_STEPPES,
+						MAP.EASTERN_PLAGUELANDS,
 						-- #endif
-						SILITHUS,
-						UNGORO_CRATER,
-						WINTERSPRING,
+						MAP.SILITHUS,
+						MAP.UNGORO_CRATER,
+						MAP.WINTERSPRING,
 					},
 					["description"] = "Can be found on uneven terrain and mountain sides.",
 				}),
@@ -3461,23 +3461,23 @@ root(ROOTS.Craftables, {
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 280,
 					-- #endif
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				o(1618, {	-- Peacebloom
 					["maps"] = {
-						DARKSHORE,
-						DUN_MOROGH,
-						DUROTAR,
-						ELWYNN_FOREST,
-						LOCH_MODAN,
-						MULGORE,
+						MAP.DARKSHORE,
+						MAP.DUN_MOROGH,
+						MAP.DUROTAR,
+						MAP.ELWYNN_FOREST,
+						MAP.LOCH_MODAN,
+						MAP.MULGORE,
 						-- #if BEFORE CATA
-						SILVERPINE_FOREST,
+						MAP.SILVERPINE_FOREST,
 						-- #endif
-						TELDRASSIL,
-						TIRISFAL_GLADES,
-						WESTFALL,
+						MAP.TELDRASSIL,
+						MAP.TIRISFAL_GLADES,
+						MAP.WESTFALL,
 					},
 				}),
 				-- #if ANYCLASSIC
@@ -3487,7 +3487,7 @@ root(ROOTS.Craftables, {
 						-- #if AFTER CATA
 						NORTHERN_BARRENS,
 						-- #else
-						THE_BARRENS
+						MAP.THE_BARRENS
 						-- #endif
 					},
 				}),
@@ -3495,19 +3495,19 @@ root(ROOTS.Craftables, {
 				o(142140, {	-- Purple Lotus
 					-- #if AFTER CATA
 					["coords"] = {
-						{ 49.35, 30.85, FELWOOD },	-- Irontree Woods ruins
-						{ 42.2, 36.1, FELWOOD },	-- Shatter Scale Vale northern ruins
-						{ 39.45, 45.1, FELWOOD },	-- Shatter Scale Vale southern ruins
-						{ 38.6, 67.5, FELWOOD },	-- Ruins of Constellas
-						{ 56.95, 85.55, FELWOOD },	-- Morlos'Aran
+						{ 49.35, 30.85, MAP.FELWOOD },	-- Irontree Woods ruins
+						{ 42.2, 36.1, MAP.FELWOOD },	-- Shatter Scale Vale northern ruins
+						{ 39.45, 45.1, MAP.FELWOOD },	-- Shatter Scale Vale southern ruins
+						{ 38.6, 67.5, MAP.FELWOOD },	-- Ruins of Constellas
+						{ 56.95, 85.55, MAP.FELWOOD },	-- Morlos'Aran
 					},
 					-- #else
 					["maps"] = {
-						AZSHARA,
-						FERALAS,
-						STRANGLETHORN_VALE,
-						TANARIS,
-						THE_HINTERLANDS,
+						MAP.AZSHARA,
+						MAP.FERALAS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.TANARIS,
+						MAP.THE_HINTERLANDS,
 					},
 					-- #endif
 					["description"] = "Can be found in elven or troll ruins.",
@@ -3517,16 +3517,16 @@ root(ROOTS.Craftables, {
 				}),
 				o(1617, {	-- Silverleaf
 					["maps"] = {
-						DARKSHORE,
-						DUN_MOROGH,
-						DUROTAR,
-						ELWYNN_FOREST,
-						LOCH_MODAN,
-						MULGORE,
-						SILVERPINE_FOREST,
-						TELDRASSIL,
-						TIRISFAL_GLADES,
-						WESTFALL,
+						MAP.DARKSHORE,
+						MAP.DUN_MOROGH,
+						MAP.DUROTAR,
+						MAP.ELWYNN_FOREST,
+						MAP.LOCH_MODAN,
+						MAP.MULGORE,
+						MAP.SILVERPINE_FOREST,
+						MAP.TELDRASSIL,
+						MAP.TIRISFAL_GLADES,
+						MAP.WESTFALL,
 					},
 				}),
 				-- #if ANYCLASSIC
@@ -3536,7 +3536,7 @@ root(ROOTS.Craftables, {
 						-- #if AFTER CATA
 						NORTHERN_BARRENS,
 						-- #else
-						THE_BARRENS
+						MAP.THE_BARRENS
 						-- #endif
 					},
 				}),
@@ -3547,10 +3547,10 @@ root(ROOTS.Craftables, {
 					-- #endif
 					["maps"] = {
 						-- #if AFTER CATA
-						SWAMP_OF_SORROWS,
+						MAP.SWAMP_OF_SORROWS,
 						-- #else
-						EASTERN_PLAGUELANDS,
-						WESTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
 					},
 				}),
@@ -3558,7 +3558,7 @@ root(ROOTS.Craftables, {
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 285,
 					-- #endif
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				o(2045, {	-- Stranglekelp
@@ -3566,24 +3566,24 @@ root(ROOTS.Craftables, {
 					["learnedAt"] = 85,
 					-- #endif
 					["maps"] = {
-						ASHENVALE,
-						DARKSHORE,
-						DUSTWALLOW_MARSH,
-						HILLSBRAD_FOOTHILLS,
-						SILVERPINE_FOREST,
-						SWAMP_OF_SORROWS,
-						THE_HINTERLANDS,
-						WESTFALL,
-						WETLANDS,
+						MAP.ASHENVALE,
+						MAP.DARKSHORE,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.SILVERPINE_FOREST,
+						MAP.SWAMP_OF_SORROWS,
+						MAP.THE_HINTERLANDS,
+						MAP.WESTFALL,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
 						NORTHERN_STRANGLETHORN,
 						THE_CAPE_OF_STRANGLETHORN,
-						THOUSAND_NEEDLES,
+						MAP.THOUSAND_NEEDLES,
 						-- #else
-						AZSHARA,
-						DESOLACE,
-						STRANGLETHORN_VALE,
-						THE_BARRENS,
+						MAP.AZSHARA,
+						MAP.DESOLACE,
+						MAP.STRANGLETHORN_VALE,
+						MAP.THE_BARRENS,
 						-- #endif
 					},
 					["description"] = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
@@ -3594,28 +3594,28 @@ root(ROOTS.Craftables, {
 					-- #endif
 					["maps"] = {
 						-- #if AFTER CATA
-						BADLANDS,
-						BURNING_STEPPES,
-						SEARING_GORGE,
-						SILITHUS,
-						TANARIS,
-						THOUSAND_NEEDLES,
+						MAP.BADLANDS,
+						MAP.BURNING_STEPPES,
+						MAP.SEARING_GORGE,
+						MAP.SILITHUS,
+						MAP.TANARIS,
+						MAP.THOUSAND_NEEDLES,
 						-- #else
-						AZSHARA,
-						BLASTED_LANDS,
-						FERALAS,
-						THE_HINTERLANDS,
-						UNGORO_CRATER,
-						WESTERN_PLAGUELANDS,
+						MAP.AZSHARA,
+						MAP.BLASTED_LANDS,
+						MAP.FERALAS,
+						MAP.THE_HINTERLANDS,
+						MAP.UNGORO_CRATER,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
-						EASTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
 					},
 				}),
 				o(176636, {	-- Sungrass (Felwood)
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 230,
 					-- #endif
-					["maps"] = { FELWOOD },
+					["maps"] = { MAP.FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				o(1623, {	-- Wild Steelbloom
@@ -3624,16 +3624,16 @@ root(ROOTS.Craftables, {
 					-- #endif
 					["maps"] = {
 						-- #if AFTER CATA
-						ASHENVALE,
-						DESOLACE,
+						MAP.ASHENVALE,
+						MAP.DESOLACE,
 						NORTHERN_STRANGLETHORN,
 						-- #else
-						STRANGLETHORN_VALE,
-						THOUSAND_NEEDLES,
+						MAP.STRANGLETHORN_VALE,
+						MAP.THOUSAND_NEEDLES,
 						-- #endif
-						ARATHI_HIGHLANDS,
-						STONETALON_MOUNTAINS,
-						WETLANDS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.STONETALON_MOUNTAINS,
+						MAP.WETLANDS,
 					},
 					["description"] = "Can be found on uneven terrain and mountain sides.",
 				}),
@@ -3648,21 +3648,21 @@ root(ROOTS.Craftables, {
 				}),
 				i(13468, {	-- Black Lotus
 					["maps_disp"] = {
-						SILITHUS,
+						MAP.SILITHUS,
 						-- #if BEFORE WRATH
-						BURNING_STEPPES,
-						EASTERN_PLAGUELANDS,
-						WINTERSPRING,
+						MAP.BURNING_STEPPES,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.WINTERSPRING,
 						-- #elseif WRATH
-						BURNING_STEPPES,
-						WINTERSPRING,
+						MAP.BURNING_STEPPES,
+						MAP.WINTERSPRING,
 						-- #elseif MOP
-						BURNING_STEPPES,
-						EASTERN_PLAGUELANDS,
-						WINTERSPRING,
+						MAP.BURNING_STEPPES,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.WINTERSPRING,
 						-- #endif
 						-- #if AFTER WRATH
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 						-- #endif
 					},
 					["providers"] = {
@@ -3673,9 +3673,9 @@ root(ROOTS.Craftables, {
 				i(8839, {	-- Blindweed
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						FERALAS,
+						MAP.FERALAS,
 						-- #else
-						SWAMP_OF_SORROWS,
+						MAP.SWAMP_OF_SORROWS,
 						-- #endif
 					},
 					["provider"] = { "o", 142143 },	-- Blindweed
@@ -3689,19 +3689,19 @@ root(ROOTS.Craftables, {
 				}),
 				i(2450, {	-- Briarthorn
 					["maps_disp"] = {
-						DARKSHORE,
-						DUSKWOOD,
-						HILLSBRAD_FOOTHILLS,
-						STONETALON_MOUNTAINS,
-						WETLANDS,
+						MAP.DARKSHORE,
+						MAP.DUSKWOOD,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STONETALON_MOUNTAINS,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						AZSHARA,
+						MAP.AZSHARA,
 						NORTHERN_BARRENS,
 						-- #else
-						ASHENVALE,
-						REDRIDGE_MOUNTAINS,
-						SILVERPINE_FOREST,
-						THE_BARRENS,
+						MAP.ASHENVALE,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.SILVERPINE_FOREST,
+						MAP.THE_BARRENS,
 						-- #endif
 					},
 					["providers"] = {
@@ -3731,16 +3731,16 @@ root(ROOTS.Craftables, {
 				}),
 				i(2453, {	-- Bruiseweed
 					["maps_disp"] = {
-						ASHENVALE,
-						DUSKWOOD,
-						HILLSBRAD_FOOTHILLS,
-						STONETALON_MOUNTAINS,
+						MAP.ASHENVALE,
+						MAP.DUSKWOOD,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STONETALON_MOUNTAINS,
 						-- #if AFTER CATA
 						NORTHERN_STRANGLETHORN,
 						-- #else
-						REDRIDGE_MOUNTAINS,
-						THOUSAND_NEEDLES,
-						WETLANDS,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.THOUSAND_NEEDLES,
+						MAP.WETLANDS,
 						-- #endif
 					},
 					["providers"] = {
@@ -3771,9 +3771,9 @@ root(ROOTS.Craftables, {
 				i(3819, {	-- Dragon's Teeth [CATA+] / Wintersbite
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						BADLANDS,
+						MAP.BADLANDS,
 						-- #else
-						ALTERAC_MOUNTAINS,
+						MAP.ALTERAC_MOUNTAINS,
 						-- #endif
 					},
 					["provider"] = { "o", 2044 },	-- Dragon's Teeth [CATA+] / Wintersbite
@@ -3787,16 +3787,16 @@ root(ROOTS.Craftables, {
 				}),
 				i(13463, {	-- Dreamfoil
 					["maps_disp"] = {
-						BURNING_STEPPES,
-						FELWOOD,
-						SILITHUS,
+						MAP.BURNING_STEPPES,
+						MAP.FELWOOD,
+						MAP.SILITHUS,
 						-- #if AFTER CATA
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 						-- #else
-						AZSHARA,
-						EASTERN_PLAGUELANDS,
-						UNGORO_CRATER,
-						WESTERN_PLAGUELANDS,
+						MAP.AZSHARA,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.UNGORO_CRATER,
+						MAP.WESTERN_PLAGUELANDS,
 						ZULGURUB,
 						-- #endif
 					},
@@ -3817,18 +3817,18 @@ root(ROOTS.Craftables, {
 				}),
 				i(2449, {	-- Earthroot
 					["maps_disp"] = {
-						DUN_MOROGH,
-						DUROTAR,
-						ELWYNN_FOREST,
-						MULGORE,
-						SILVERPINE_FOREST,
-						TELDRASSIL,
-						TIRISFAL_GLADES,
-						WESTFALL,
+						MAP.DUN_MOROGH,
+						MAP.DUROTAR,
+						MAP.ELWYNN_FOREST,
+						MAP.MULGORE,
+						MAP.SILVERPINE_FOREST,
+						MAP.TELDRASSIL,
+						MAP.TIRISFAL_GLADES,
+						MAP.WESTFALL,
 						-- #if BEFORE CATA
-						DARKSHORE,
-						REDRIDGE_MOUNTAINS,
-						THE_BARRENS,
+						MAP.DARKSHORE,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.THE_BARRENS,
 						-- #endif
 					},
 					["providers"] = {
@@ -3853,14 +3853,14 @@ root(ROOTS.Craftables, {
 				i(3818, {	-- Fadeleaf
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						FERALAS,
+						MAP.FERALAS,
 						THE_CAPE_OF_STRANGLETHORN,
-						WESTERN_PLAGUELANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						ARATHI_HIGHLANDS,
-						DUSTWALLOW_MARSH,
-						STRANGLETHORN_VALE,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.STRANGLETHORN_VALE,
 						-- #endif
 					},
 					["provider"] = { "o", 2042 },	-- Fadeleaf
@@ -3874,13 +3874,13 @@ root(ROOTS.Craftables, {
 				}),
 				i(4625, {	-- Firebloom
 					["maps_disp"] = {
-						BADLANDS,
-						SEARING_GORGE,
-						TANARIS,
+						MAP.BADLANDS,
+						MAP.SEARING_GORGE,
+						MAP.TANARIS,
 						-- #if AFTER CATA
-						BURNING_STEPPES,
+						MAP.BURNING_STEPPES,
 						-- #else
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 						-- #endif
 					},
 					["provider"] = { "o", 2866 },	-- Firebloom
@@ -3895,9 +3895,9 @@ root(ROOTS.Craftables, {
 				i(8845, {	-- Ghost Mushroom
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						UNGORO_CRATER,	-- Fungal Rock
+						MAP.UNGORO_CRATER,	-- Fungal Rock
 						-- #else
-						THE_HINTERLANDS,
+						MAP.THE_HINTERLANDS,
 						-- #endif
 						-- #if AFTER TBC
 						ZANGARMARSH,	-- Ango'rosh Stronghold cave
@@ -3914,18 +3914,18 @@ root(ROOTS.Craftables, {
 				}),
 				i(13464, {	-- Golden Sansam
 					["maps_disp"] = {
-						FELWOOD,
-						SILITHUS,
-						UNGORO_CRATER,
+						MAP.FELWOOD,
+						MAP.SILITHUS,
+						MAP.UNGORO_CRATER,
 						-- #if AFTER CATA
-						BADLANDS,
-						SWAMP_OF_SORROWS,
+						MAP.BADLANDS,
+						MAP.SWAMP_OF_SORROWS,
 						-- #else
-						AZSHARA,
-						BURNING_STEPPES,
-						EASTERN_PLAGUELANDS,
-						FERALAS,
-						THE_HINTERLANDS,
+						MAP.AZSHARA,
+						MAP.BURNING_STEPPES,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.FERALAS,
+						MAP.THE_HINTERLANDS,
 						ZULGURUB,
 						-- #endif
 					},
@@ -3946,17 +3946,17 @@ root(ROOTS.Craftables, {
 				}),
 				i(3821, {	-- Goldthorn
 					["maps_disp"] = {
-						ARATHI_HIGHLANDS,
-						DUSTWALLOW_MARSH,
-						FERALAS,
-						THE_HINTERLANDS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.FERALAS,
+						MAP.THE_HINTERLANDS,
 						-- #if AFTER CATA
 						SOUTHERN_BARRENS,
 						THE_CAPE_OF_STRANGLETHORN,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
 						-- #endif
 					},
 					["provider"] = { "o", 2046 },	-- Goldthorn
@@ -3971,9 +3971,9 @@ root(ROOTS.Craftables, {
 				i(3369, {	-- Grave Moss
 					["maps_disp"] = {
 						-- #if BEFORE CATA
-						DESOLACE,
+						MAP.DESOLACE,
 						-- #endif
-						DUSKWOOD,
+						MAP.DUSKWOOD,
 					},
 					["provider"] = { "o", 1628 },	-- Grave Moss
 				}),
@@ -3986,11 +3986,11 @@ root(ROOTS.Craftables, {
 				}),
 				i(8846, {	-- Gromsblood
 					["maps_disp"] = {
-						ASHENVALE,
-						BLASTED_LANDS,
-						DESOLACE,
+						MAP.ASHENVALE,
+						MAP.BLASTED_LANDS,
+						MAP.DESOLACE,
 						-- #if AFTER CATA
-						FELWOOD,
+						MAP.FELWOOD,
 						-- #endif
 					},
 					["providers"] = {
@@ -4019,7 +4019,7 @@ root(ROOTS.Craftables, {
 				})),
 				-- #endif
 				i(13467, {	-- Icecap
-					["maps_disp"] = { WINTERSPRING },
+					["maps_disp"] = { MAP.WINTERSPRING },
 					["provider"] = { "o", 176588 },	-- Icecap
 				}),
 				i(108343, {	-- Icecap Petal
@@ -4031,21 +4031,21 @@ root(ROOTS.Craftables, {
 				}),
 				i(3358, {	-- Khadgar's Whisker
 					["maps_disp"] = {
-						ARATHI_HIGHLANDS,
-						DUSTWALLOW_MARSH,
-						FERALAS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.FERALAS,
 						-- #if AFTER CATA
-						EASTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
 						SOUTHERN_BARRENS,
 						THE_CAPE_OF_STRANGLETHORN,
-						THE_HINTERLANDS,
-						WESTERN_PLAGUELANDS,
+						MAP.THE_HINTERLANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						AZSHARA,
-						BADLANDS,
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.AZSHARA,
+						MAP.BADLANDS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
 						-- #endif
 					},
 					["provider"] = { "o", 2043 },	-- Khadgar's Whisker
@@ -4059,26 +4059,26 @@ root(ROOTS.Craftables, {
 				}),
 				i(3356, {	-- Kingsblood
 					["maps_disp"] = {
-						ARATHI_HIGHLANDS,
-						DUSKWOOD,
-						WETLANDS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSKWOOD,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						FERALAS,
+						MAP.FERALAS,
 						NORTHERN_STRANGLETHORN,
 						SOUTHERN_BARRENS,
-						THE_HINTERLANDS,
-						WESTERN_PLAGUELANDS,
+						MAP.THE_HINTERLANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						ASHENVALE,
-						BADLANDS,
-						DESOLACE,
-						DUSTWALLOW_MARSH,
-						HILLSBRAD_FOOTHILLS,
-						STONETALON_MOUNTAINS,
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
-						THOUSAND_NEEDLES,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.ASHENVALE,
+						MAP.BADLANDS,
+						MAP.DESOLACE,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STONETALON_MOUNTAINS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
+						MAP.THOUSAND_NEEDLES,
 						-- #endif
 					},
 					["provider"] = { "o", 1624 },	-- Kingsblood
@@ -4092,22 +4092,22 @@ root(ROOTS.Craftables, {
 				}),
 				i(3357, {	-- Liferoot
 					["maps_disp"] = {
-						ARATHI_HIGHLANDS,
-						DUSTWALLOW_MARSH,
-						THE_HINTERLANDS,
-						WETLANDS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.THE_HINTERLANDS,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						EASTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
 						NORTHERN_STRANGLETHORN,
 						SOUTHERN_BARRENS,
 						-- #else
-						ALTERAC_MOUNTAINS,
-						DESOLACE,
-						FERALAS,
-						HILLSBRAD_FOOTHILLS,
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
-						WESTERN_PLAGUELANDS,
+						MAP.ALTERAC_MOUNTAINS,
+						MAP.DESOLACE,
+						MAP.FERALAS,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
 					},
 					["provider"] = { "o", 2041 },	-- Liferoot
@@ -4121,19 +4121,19 @@ root(ROOTS.Craftables, {
 				}),
 				i(785, {	-- Mageroyal
 					["maps_disp"] = {
-						DARKSHORE,
-						LOCH_MODAN,
-						SILVERPINE_FOREST,
-						TELDRASSIL,
-						WESTFALL,
-						WETLANDS,
+						MAP.DARKSHORE,
+						MAP.LOCH_MODAN,
+						MAP.SILVERPINE_FOREST,
+						MAP.TELDRASSIL,
+						MAP.WESTFALL,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						AZSHARA,
-						HILLSBRAD_FOOTHILLS,
+						MAP.AZSHARA,
+						MAP.HILLSBRAD_FOOTHILLS,
 						NORTHERN_BARRENS,
 						-- #else
-						ASHENVALE,
-						REDRIDGE_MOUNTAINS,
+						MAP.ASHENVALE,
+						MAP.REDRIDGE_MOUNTAINS,
 						-- #endif
 					},
 					["providers"] = {
@@ -4164,17 +4164,17 @@ root(ROOTS.Craftables, {
 				i(13465, {	-- Mountain Silversage
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 						-- #else
-						AZSHARA,
-						BURNING_STEPPES,
-						EASTERN_PLAGUELANDS,
+						MAP.AZSHARA,
+						MAP.BURNING_STEPPES,
+						MAP.EASTERN_PLAGUELANDS,
 						ZULGURUB,
 						-- #endif
-						FELWOOD,
-						SILITHUS,
-						UNGORO_CRATER,
-						WINTERSPRING,
+						MAP.FELWOOD,
+						MAP.SILITHUS,
+						MAP.UNGORO_CRATER,
+						MAP.WINTERSPRING,
 					},
 					["providers"] = {
 						{ "o", 176586 },	-- Mountain Silversage
@@ -4193,18 +4193,18 @@ root(ROOTS.Craftables, {
 				}),
 				i(2447, {	-- Peacebloom
 					["maps_disp"] = {
-						DARKSHORE,
-						DUN_MOROGH,
-						DUROTAR,
-						ELWYNN_FOREST,
-						LOCH_MODAN,
-						MULGORE,
+						MAP.DARKSHORE,
+						MAP.DUN_MOROGH,
+						MAP.DUROTAR,
+						MAP.ELWYNN_FOREST,
+						MAP.LOCH_MODAN,
+						MAP.MULGORE,
 						-- #if BEFORE CATA
-						SILVERPINE_FOREST,
+						MAP.SILVERPINE_FOREST,
 						-- #endif
-						TELDRASSIL,
-						TIRISFAL_GLADES,
-						WESTFALL,
+						MAP.TELDRASSIL,
+						MAP.TIRISFAL_GLADES,
+						MAP.WESTFALL,
 					},
 					["providers"] = {
 						{ "o", 1618 },	-- Peacebloom
@@ -4216,13 +4216,13 @@ root(ROOTS.Craftables, {
 				i(8831, {	-- Purple Lotus
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						FELWOOD,
+						MAP.FELWOOD,
 						-- #else
-						AZSHARA,
-						FERALAS,
-						STRANGLETHORN_VALE,
-						TANARIS,
-						THE_HINTERLANDS,
+						MAP.AZSHARA,
+						MAP.FERALAS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.TANARIS,
+						MAP.THE_HINTERLANDS,
 						ZULGURUB,
 						-- #endif
 					},
@@ -4242,16 +4242,16 @@ root(ROOTS.Craftables, {
 				}),
 				i(765, {	-- Silverleaf
 					["maps_disp"] = {
-						DARKSHORE,
-						DUN_MOROGH,
-						DUROTAR,
-						ELWYNN_FOREST,
-						LOCH_MODAN,
-						MULGORE,
-						SILVERPINE_FOREST,
-						TELDRASSIL,
-						TIRISFAL_GLADES,
-						WESTFALL,
+						MAP.DARKSHORE,
+						MAP.DUN_MOROGH,
+						MAP.DUROTAR,
+						MAP.ELWYNN_FOREST,
+						MAP.LOCH_MODAN,
+						MAP.MULGORE,
+						MAP.SILVERPINE_FOREST,
+						MAP.TELDRASSIL,
+						MAP.TIRISFAL_GLADES,
+						MAP.WESTFALL,
 					},
 					["providers"] = {
 						{ "o", 1617 },	-- Silverleaf
@@ -4263,11 +4263,11 @@ root(ROOTS.Craftables, {
 				i(13466, {	-- Sorrowmoss [CATA+] / Plaguebloom
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						SWAMP_OF_SORROWS,
+						MAP.SWAMP_OF_SORROWS,
 						-- #else
-						EASTERN_PLAGUELANDS,
-						FELWOOD,
-						WESTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
+						MAP.FELWOOD,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
 					},
 					["providers"] = {
@@ -4286,24 +4286,24 @@ root(ROOTS.Craftables, {
 				}),
 				i(3820, {	-- Stranglekelp
 					["maps_disp"] = {
-						ASHENVALE,
-						DARKSHORE,
-						DUSTWALLOW_MARSH,
-						HILLSBRAD_FOOTHILLS,
-						SILVERPINE_FOREST,
-						SWAMP_OF_SORROWS,
-						THE_HINTERLANDS,
-						WESTFALL,
-						WETLANDS,
+						MAP.ASHENVALE,
+						MAP.DARKSHORE,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.SILVERPINE_FOREST,
+						MAP.SWAMP_OF_SORROWS,
+						MAP.THE_HINTERLANDS,
+						MAP.WESTFALL,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
 						NORTHERN_STRANGLETHORN,
 						THE_CAPE_OF_STRANGLETHORN,
-						THOUSAND_NEEDLES,
+						MAP.THOUSAND_NEEDLES,
 						-- #else
-						AZSHARA,
-						DESOLACE,
-						STRANGLETHORN_VALE,
-						THE_BARRENS,
+						MAP.AZSHARA,
+						MAP.DESOLACE,
+						MAP.STRANGLETHORN_VALE,
+						MAP.THE_BARRENS,
 						-- #endif
 					},
 					["provider"] = { "o", 2045 },	-- Stranglekelp
@@ -4318,21 +4318,21 @@ root(ROOTS.Craftables, {
 				i(8838, {	-- Sungrass
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						BADLANDS,
-						BURNING_STEPPES,
-						SEARING_GORGE,
-						SILITHUS,
-						TANARIS,
-						THOUSAND_NEEDLES,
+						MAP.BADLANDS,
+						MAP.BURNING_STEPPES,
+						MAP.SEARING_GORGE,
+						MAP.SILITHUS,
+						MAP.TANARIS,
+						MAP.THOUSAND_NEEDLES,
 						-- #else
-						AZSHARA,
-						BLASTED_LANDS,
-						FERALAS,
-						THE_HINTERLANDS,
-						UNGORO_CRATER,
-						WESTERN_PLAGUELANDS,
+						MAP.AZSHARA,
+						MAP.BLASTED_LANDS,
+						MAP.FERALAS,
+						MAP.THE_HINTERLANDS,
+						MAP.UNGORO_CRATER,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
-						EASTERN_PLAGUELANDS,
+						MAP.EASTERN_PLAGUELANDS,
 					},
 					["providers"] = {
 						{ "o", 142142 },	-- Sungrass
@@ -4351,22 +4351,22 @@ root(ROOTS.Craftables, {
 				}),
 				i(2452, {	-- Swiftthistle
 					["maps_disp"] = {
-						DARKSHORE,
-						DUSKWOOD,
-						HILLSBRAD_FOOTHILLS,
-						LOCH_MODAN,
-						SILVERPINE_FOREST,
-						STONETALON_MOUNTAINS,
-						TELDRASSIL,
-						WESTFALL,
-						WETLANDS,
+						MAP.DARKSHORE,
+						MAP.DUSKWOOD,
+						MAP.HILLSBRAD_FOOTHILLS,
+						MAP.LOCH_MODAN,
+						MAP.SILVERPINE_FOREST,
+						MAP.STONETALON_MOUNTAINS,
+						MAP.TELDRASSIL,
+						MAP.WESTFALL,
+						MAP.WETLANDS,
 						-- #if AFTER CATA
-						AZSHARA,
+						MAP.AZSHARA,
 						NORTHERN_BARRENS,
 						-- #else
-						ASHENVALE,
-						REDRIDGE_MOUNTAINS,
-						THE_BARRENS,
+						MAP.ASHENVALE,
+						MAP.REDRIDGE_MOUNTAINS,
+						MAP.THE_BARRENS,
 						-- #endif
 					},
 					["providers"] = {
@@ -4395,16 +4395,16 @@ root(ROOTS.Craftables, {
 				i(3355, {	-- Wild Steelbloom
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						ASHENVALE,
-						DESOLACE,
+						MAP.ASHENVALE,
+						MAP.DESOLACE,
 						NORTHERN_STRANGLETHORN,
 						-- #else
-						STRANGLETHORN_VALE,
-						THOUSAND_NEEDLES,
+						MAP.STRANGLETHORN_VALE,
+						MAP.THOUSAND_NEEDLES,
 						-- #endif
-						ARATHI_HIGHLANDS,
-						STONETALON_MOUNTAINS,
-						WETLANDS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.STONETALON_MOUNTAINS,
+						MAP.WETLANDS,
 					},
 					["provider"] = { "o", 1623 },	-- Wild Steelbloom
 				}),
@@ -5288,20 +5288,20 @@ root(ROOTS.Craftables, {
 						-- Copper
 						o(1731, {	-- Copper Vein
 							["maps"] = {
-								DARKSHORE,
-								DUN_MOROGH,
-								DUROTAR,
-								ELWYNN_FOREST,
-								LOCH_MODAN,
-								MULGORE,
-								SILVERPINE_FOREST,
-								TIRISFAL_GLADES,
-								WESTFALL,
+								MAP.DARKSHORE,
+								MAP.DUN_MOROGH,
+								MAP.DUROTAR,
+								MAP.ELWYNN_FOREST,
+								MAP.LOCH_MODAN,
+								MAP.MULGORE,
+								MAP.SILVERPINE_FOREST,
+								MAP.TIRISFAL_GLADES,
+								MAP.WESTFALL,
 								-- #if AFTER CATA
-								AZSHARA,
+								MAP.AZSHARA,
 								NORTHERN_BARRENS,
 								-- #else
-								THE_BARRENS,
+								MAP.THE_BARRENS,
 								-- #endif
 								-- #if AFTER TBC
 								AZUREMYST_ISLE,
@@ -5313,12 +5313,12 @@ root(ROOTS.Craftables, {
 						-- #if ANYCLASSIC
 						o(2055, {	-- Copper Vein (Redridge Mountains - Rethban Ore)
 						-- Note: This node reportedly was replaced by o(1731) with Cata during retail, but the same is not happening on classic Cata+
-							["coord"] = { 20.7, 27.0, REDRIDGE_MOUNTAINS },	-- Rethban Caverns
+							["coord"] = { 20.7, 27.0, MAP.REDRIDGE_MOUNTAINS },	-- Rethban Caverns
 						}),
 						o(103713, {	-- Copper Vein (The Barrens - Horde only)
 							-- Note: This node get removed at an unknown point between MOP and TWW.
 							-- #if BEFORE CATA
-							["coord"] = { 47.9, 87.2, THE_BARRENS },	-- Bael Modan Excavation
+							["coord"] = { 47.9, 87.2, MAP.THE_BARRENS },	-- Bael Modan Excavation
 							-- #endif
 							["races"] = HORDE_ONLY,
 						}),
@@ -5328,7 +5328,7 @@ root(ROOTS.Craftables, {
 								-- #if AFTER CATA
 								NORTHERN_BARRENS,
 								-- #else
-								THE_BARRENS,
+								MAP.THE_BARRENS,
 								-- #endif
 							},
 						}),
@@ -5346,8 +5346,8 @@ root(ROOTS.Craftables, {
 								BLACKROCK_DEPTHS,
 								MOLTEN_CORE,
 								-- #if BEFORE CATA
-								BURNING_STEPPES,
-								SEARING_GORGE,
+								MAP.BURNING_STEPPES,
+								MAP.SEARING_GORGE,
 								-- #endif
 							},
 						}),
@@ -5359,36 +5359,36 @@ root(ROOTS.Craftables, {
 							["learnedAt"] = 155,
 							-- #endif
 							["maps"] = {
-								ARATHI_HIGHLANDS,
-								BADLANDS,
-								BURNING_STEPPES,
-								DESOLACE,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.DESOLACE,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #else
-								ALTERAC_MOUNTAINS,
-								AZSHARA,
-								FELWOOD,
-								STRANGLETHORN_VALE,
-								THOUSAND_NEEDLES,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.AZSHARA,
+								MAP.FELWOOD,
+								MAP.STRANGLETHORN_VALE,
+								MAP.THOUSAND_NEEDLES,
 								-- #endif
 							},
 							-- #if AFTER CATA
-							["coord"] = { 44.1, 37.2, THOUSAND_NEEDLES },	-- Splithoof Hold cave
+							["coord"] = { 44.1, 37.2, MAP.THOUSAND_NEEDLES },	-- Splithoof Hold cave
 							-- #endif
 						}),
 						-- #if ANYCLASSIC
 						o(150080, {	-- Gold Vein (Blasted Lands - Horde only)
 							-- Note: This node get removed at an unknown point between MOP and TWW.
-							["coord"] = { 50.4, 10.3, BLASTED_LANDS },	-- Nethergarde Mine
+							["coord"] = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 155,
 							-- #endif
@@ -5399,14 +5399,14 @@ root(ROOTS.Craftables, {
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 155,
 							-- #endif
-							["maps"] = { FELWOOD },
+							["maps"] = { MAP.FELWOOD },
 						}),
 						-- #endif
 						o(73941, {	-- Ooze Covered Gold Vein
 							["coords"] = {
-								{ 76.8, 61.5, FERALAS },	-- The Writhing Deep - west
-								{ 73.5, 63.5, FERALAS },	-- The Writhing Deep - east
-								{ 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
+								{ 76.8, 61.5, MAP.FERALAS },	-- The Writhing Deep - west
+								{ 73.5, 63.5, MAP.FERALAS },	-- The Writhing Deep - east
+								{ 66.1, 86.2, MAP.THOUSAND_NEEDLES },	-- Sunken Dig Site.
 							},
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 155,
@@ -5419,20 +5419,20 @@ root(ROOTS.Craftables, {
 							["learnedAt"] = 125,
 							-- #endif
 							["maps"] = {
-								ARATHI_HIGHLANDS,
-								BADLANDS,
-								DESOLACE,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.BADLANDS,
+								MAP.DESOLACE,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #else
-								ALTERAC_MOUNTAINS,
-								STRANGLETHORN_VALE,
-								THOUSAND_NEEDLES,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.STRANGLETHORN_VALE,
+								MAP.THOUSAND_NEEDLES,
 								-- #endif
 							},
 						}),
@@ -5443,27 +5443,27 @@ root(ROOTS.Craftables, {
 							["learnedAt"] = 175,
 							-- #endif
 							["maps"] = {
-								ARATHI_HIGHLANDS,
-								BADLANDS,
-								BURNING_STEPPES,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								THOUSAND_NEEDLES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
-								AZSHARA,
+								MAP.AZSHARA,
 								-- #endif
 								-- #if NOT ANYCLASSIC
-								FELWOOD,
+								MAP.FELWOOD,
 								-- #endif
 							},
 						}),
 						-- #if ANYCLASSIC
 						o(150079, {	-- Mithril Deposit (Blasted Lands - Horde only)
 							-- Note: This node get removed at an unknown point between MOP and TWW.
-							["coord"] = { 50.4, 10.3, BLASTED_LANDS },	-- Nethergarde Mine
+							["coord"] = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 175,
 							-- #endif
@@ -5474,14 +5474,14 @@ root(ROOTS.Craftables, {
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 175,
 							-- #endif
-							["maps"] = { FELWOOD },
+							["maps"] = { MAP.FELWOOD },
 						}),
 						-- #endif
 						o(123310, {	-- Ooze Covered Mithril Deposit
 							["coords"] = {
-								{ 76.8, 61.5, FERALAS },	-- The Writhing Deep - west
-								{ 73.5, 63.5, FERALAS },	-- The Writhing Deep - east
-								{ 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
+								{ 76.8, 61.5, MAP.FERALAS },	-- The Writhing Deep - west
+								{ 73.5, 63.5, MAP.FERALAS },	-- The Writhing Deep - east
+								{ 66.1, 86.2, MAP.THOUSAND_NEEDLES },	-- Sunken Dig Site.
 							},
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 175,
@@ -5497,7 +5497,7 @@ root(ROOTS.Craftables, {
 								RUINS_OF_AHNQIRAJ,
 								TEMPLE_OF_AHNQIRAJ,
 								-- #if BEFORE CATA
-								SILITHUS,
+								MAP.SILITHUS,
 								-- #endif
 							},
 						}),
@@ -5509,7 +5509,7 @@ root(ROOTS.Craftables, {
 								RUINS_OF_AHNQIRAJ,
 								TEMPLE_OF_AHNQIRAJ,
 								-- #if BEFORE CATA
-								SILITHUS,
+								MAP.SILITHUS,
 								-- #endif
 							},
 						}),
@@ -5519,34 +5519,34 @@ root(ROOTS.Craftables, {
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 75,
 							-- #endif
-							["coord"] = { 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
+							["coord"] = { 66.1, 86.2, MAP.THOUSAND_NEEDLES },	-- Sunken Dig Site.
 						}),
 						o(1733, {	-- Silver Vein
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 75,
 							-- #endif
 							["maps"] = {
-								ARATHI_HIGHLANDS,
-								ASHENVALE,
-								BADLANDS,
-								DESOLACE,
-								DUSKWOOD,
-								HILLSBRAD_FOOTHILLS,
-								STONETALON_MOUNTAINS,
-								WETLANDS,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.ASHENVALE,
+								MAP.BADLANDS,
+								MAP.DESOLACE,
+								MAP.DUSKWOOD,
+								MAP.HILLSBRAD_FOOTHILLS,
+								MAP.STONETALON_MOUNTAINS,
+								MAP.WETLANDS,
 								-- #if BEFORE CATA
-								ALTERAC_MOUNTAINS,
-								REDRIDGE_MOUNTAINS,
-								STRANGLETHORN_VALE,
-								THOUSAND_NEEDLES,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.REDRIDGE_MOUNTAINS,
+								MAP.STRANGLETHORN_VALE,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								NORTHERN_STRANGLETHORN,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #endif
 							},
 						}),
@@ -5555,10 +5555,10 @@ root(ROOTS.Craftables, {
 							-- Note: This node get removed at an unknown point between MOP and TWW.
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 33.5, 72.0, HILLSBRAD_FOOTHILLS },	-- Azureload Mine
+								{ 33.5, 72.0, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine
 								-- #else
-								{ 27.5, 57.5, HILLSBRAD_FOOTHILLS },	-- Azureload Mine
-								{ 47.9, 87.2, THE_BARRENS },	-- Bael Modan Excavation
+								{ 27.5, 57.5, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine
+								{ 47.9, 87.2, MAP.THE_BARRENS },	-- Bael Modan Excavation
 								-- #endif
 							},
 							-- #if BEFORE 6.0.0
@@ -5580,29 +5580,29 @@ root(ROOTS.Craftables, {
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 275,
 							-- #endif
-							["maps"] = { SILITHUS },
+							["maps"] = { MAP.SILITHUS },
 						}),
 						o(123848, {	-- Ooze Covered Thorium Vein
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 245,
 							-- #endif
-							["coord"] = { 50.0, 81.2, UNGORO_CRATER },	-- The Slithering Scar
+							["coord"] = { 50.0, 81.2, MAP.UNGORO_CRATER },	-- The Slithering Scar
 						}),
 						o(175404, {	-- Rich Thorium Vein
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 275,
 							-- #endif
 							["maps"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
 								-- #endif
 							},
 						}),
@@ -5611,17 +5611,17 @@ root(ROOTS.Craftables, {
 							["learnedAt"] = 245,
 							-- #endif
 							["maps"] = {
-								SILITHUS,
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.SILITHUS,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #endif
 							},
 						}),
@@ -5631,7 +5631,7 @@ root(ROOTS.Craftables, {
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 245,
 							-- #endif
-							["maps"] = { BLASTED_LANDS },
+							["maps"] = { MAP.BLASTED_LANDS },
 							["races"] = HORDE_ONLY,
 						}),
 						o(176643, {	-- Small Thorium Vein (Felwood)
@@ -5639,7 +5639,7 @@ root(ROOTS.Craftables, {
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 245,
 							-- #endif
-							["maps"] = { FELWOOD },
+							["maps"] = { MAP.FELWOOD },
 						}),
 						-- #endif
 						-- ____________________________________________
@@ -5649,16 +5649,16 @@ root(ROOTS.Craftables, {
 							["learnedAt"] = 65,
 							-- #endif
 							["maps"] = {
-								ASHENVALE,
-								HILLSBRAD_FOOTHILLS,
-								STONETALON_MOUNTAINS,
+								MAP.ASHENVALE,
+								MAP.HILLSBRAD_FOOTHILLS,
+								MAP.STONETALON_MOUNTAINS,
 								-- #if BEFORE CATA
-								REDRIDGE_MOUNTAINS,
-								THOUSAND_NEEDLES,
+								MAP.REDRIDGE_MOUNTAINS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
 								NORTHERN_STRANGLETHORN,
 								-- #endif
-								WETLANDS,
+								MAP.WETLANDS,
 							},
 						}),
 						-- #if ANYCLASSIC
@@ -5666,10 +5666,10 @@ root(ROOTS.Craftables, {
 							-- Note: This node get removed at an unknown point between MOP and TWW.
 							["coords"] = {
 								-- #if AFTER CATA
-								{ 33.5, 72.0, HILLSBRAD_FOOTHILLS },	-- Azureload Mine
+								{ 33.5, 72.0, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine
 								-- #else
-								{ 27.5, 57.5, HILLSBRAD_FOOTHILLS },	-- Azureload Mine
-								{ 47.9, 87.2, THE_BARRENS },	-- Bael Modan Excavation
+								{ 27.5, 57.5, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine
+								{ 47.9, 87.2, MAP.THE_BARRENS },	-- Bael Modan Excavation
 								-- #endif
 							},
 							-- #if BEFORE 6.0.0
@@ -5679,7 +5679,7 @@ root(ROOTS.Craftables, {
 						}),
 						o(2054, {	-- Tin Vein (Redridge Mountains - Rethban Ore)
 							-- Note: This node get replaced by o(1732) at an unknown point between MOP and TWW.
-							["coord"] = { 20.7, 27.0, REDRIDGE_MOUNTAINS },	-- Rethban Caverns
+							["coord"] = { 20.7, 27.0, MAP.REDRIDGE_MOUNTAINS },	-- Rethban Caverns
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 65,
 							-- #endif
@@ -5693,7 +5693,7 @@ root(ROOTS.Craftables, {
 								-- #if AFTER CATA
 								NORTHERN_BARRENS,
 								-- #else
-								THE_BARRENS,
+								MAP.THE_BARRENS,
 								-- #endif
 							},
 						}),
@@ -5710,44 +5710,44 @@ root(ROOTS.Craftables, {
 						o(123309, {	-- Ooze Covered Truesilver Deposit
 							["coords"] = {
 								-- #if BEFORE CATA
-								{ 76.8, 61.5, FERALAS },	-- The Writhing Deep - west
-								{ 73.5, 63.5, FERALAS },	-- The Writhing Deep - east
+								{ 76.8, 61.5, MAP.FERALAS },	-- The Writhing Deep - west
+								{ 73.5, 63.5, MAP.FERALAS },	-- The Writhing Deep - east
 								-- #endif
-								{ 50.0, 81.2, UNGORO_CRATER },	-- The Slithering Scar
+								{ 50.0, 81.2, MAP.UNGORO_CRATER },	-- The Slithering Scar
 							},
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 230,
 							-- #endif
-							["maps"] = { SILITHUS },
+							["maps"] = { MAP.SILITHUS },
 						}),
 						o(2047, {	-- Truesilver Deposit
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 230,
 							-- #endif
 							["maps"] = {
-								BADLANDS,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								FELWOOD,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
-								THOUSAND_NEEDLES,
+								MAP.BLASTED_LANDS,
+								MAP.FELWOOD,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
-								AZSHARA,
+								MAP.AZSHARA,
 								-- #endif
 							},
 						}),
 						-- #if ANYCLASSIC
 						o(150081, {	-- Truesilver Deposit (Blasted Lands - Horde only)
 							-- Note: This node get removed at an unknown point between MOP and TWW.
-							["coord"] = { 50.4, 10.3, BLASTED_LANDS },	-- Nethergarde Mine
+							["coord"] = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 230,
 							-- #endif
@@ -5758,7 +5758,7 @@ root(ROOTS.Craftables, {
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 230,
 							-- #endif
-							["maps"] = { FELWOOD },
+							["maps"] = { MAP.FELWOOD },
 						}),
 						-- #endif
 					}),
@@ -5767,20 +5767,20 @@ root(ROOTS.Craftables, {
 						-- Ores
 						i(2770, {	-- Copper Ore
 							["maps_disp"] = {
-								DARKSHORE,
-								DUN_MOROGH,
-								DUROTAR,
-								ELWYNN_FOREST,
-								LOCH_MODAN,
-								MULGORE,
-								SILVERPINE_FOREST,
-								TIRISFAL_GLADES,
-								WESTFALL,
+								MAP.DARKSHORE,
+								MAP.DUN_MOROGH,
+								MAP.DUROTAR,
+								MAP.ELWYNN_FOREST,
+								MAP.LOCH_MODAN,
+								MAP.MULGORE,
+								MAP.SILVERPINE_FOREST,
+								MAP.TIRISFAL_GLADES,
+								MAP.WESTFALL,
 								-- #if AFTER CATA
-								AZSHARA,
+								MAP.AZSHARA,
 								NORTHERN_BARRENS,
 								-- #else
-								THE_BARRENS,
+								MAP.THE_BARRENS,
 								-- #endif
 								-- #if AFTER TBC
 								AZUREMYST_ISLE,
@@ -5796,34 +5796,34 @@ root(ROOTS.Craftables, {
 								BLACKROCK_DEPTHS,
 								MOLTEN_CORE,
 								-- #if BEFORE CATA
-								BURNING_STEPPES,
-								SEARING_GORGE,
+								MAP.BURNING_STEPPES,
+								MAP.SEARING_GORGE,
 								-- #endif
 							},
 							["provider"] = { "o", 165658 },	-- Dark Iron Deposit
 						}),
 						i(2776, {	-- Gold Ore
 							["maps_disp"] = {
-								ARATHI_HIGHLANDS,
-								BADLANDS,
-								BURNING_STEPPES,
-								DESOLACE,
-								FELWOOD,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
-								THOUSAND_NEEDLES,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.DESOLACE,
+								MAP.FELWOOD,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
+								MAP.THOUSAND_NEEDLES,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #else
-								ALTERAC_MOUNTAINS,
-								AZSHARA,
-								STRANGLETHORN_VALE,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.AZSHARA,
+								MAP.STRANGLETHORN_VALE,
 								-- #endif
 							},
 							["providers"] = {
@@ -5843,20 +5843,20 @@ root(ROOTS.Craftables, {
 						}),
 						i(2772, {	-- Iron Ore
 							["maps_disp"] = {
-								ARATHI_HIGHLANDS,
-								BADLANDS,
-								DESOLACE,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.BADLANDS,
+								MAP.DESOLACE,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #else
-								ALTERAC_MOUNTAINS,
-								STRANGLETHORN_VALE,
-								THOUSAND_NEEDLES,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.STRANGLETHORN_VALE,
+								MAP.THOUSAND_NEEDLES,
 								-- #endif
 							},
 							["provider"] = { "o", 1735 },	-- Iron Deposit
@@ -5873,7 +5873,7 @@ root(ROOTS.Craftables, {
 								RUINS_OF_AHNQIRAJ,
 								TEMPLE_OF_AHNQIRAJ,
 								-- #if BEFORE CATA
-								SILITHUS,
+								MAP.SILITHUS,
 								-- #endif
 							},
 							["providers"] = {
@@ -5883,17 +5883,17 @@ root(ROOTS.Craftables, {
 						})),
 						i(3858, {	-- Mithril Ore
 							["maps_disp"] = {
-								BADLANDS,
-								BURNING_STEPPES,
-								FELWOOD,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.FELWOOD,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								THOUSAND_NEEDLES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
-								AZSHARA,
+								MAP.AZSHARA,
 								-- #endif
 							},
 							["provider"] = { "o", 2040 },	-- Mithril Deposit
@@ -5908,27 +5908,27 @@ root(ROOTS.Craftables, {
 						i(2775, {	-- Silver Ore
 							["description"] = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
 							["maps_disp"] = {
-								ARATHI_HIGHLANDS,
-								ASHENVALE,
-								BADLANDS,
-								DESOLACE,
-								DUSKWOOD,
-								HILLSBRAD_FOOTHILLS,
-								STONETALON_MOUNTAINS,
-								WETLANDS,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.ASHENVALE,
+								MAP.BADLANDS,
+								MAP.DESOLACE,
+								MAP.DUSKWOOD,
+								MAP.HILLSBRAD_FOOTHILLS,
+								MAP.STONETALON_MOUNTAINS,
+								MAP.WETLANDS,
 								-- #if BEFORE CATA
-								ALTERAC_MOUNTAINS,
-								REDRIDGE_MOUNTAINS,
-								STRANGLETHORN_VALE,
-								THOUSAND_NEEDLES,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.REDRIDGE_MOUNTAINS,
+								MAP.STRANGLETHORN_VALE,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								NORTHERN_STRANGLETHORN,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #endif
 							},
 							["providers"] = {
@@ -5951,7 +5951,7 @@ root(ROOTS.Craftables, {
 								RUINS_OF_AHNQIRAJ,
 								TEMPLE_OF_AHNQIRAJ,
 								-- #if BEFORE CATA
-								SILITHUS,
+								MAP.SILITHUS,
 								-- #endif
 							},
 							["providers"] = {
@@ -5961,17 +5961,17 @@ root(ROOTS.Craftables, {
 						})),
 						i(10620, {	-- Thorium Ore
 							["maps_disp"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6002,16 +6002,16 @@ root(ROOTS.Craftables, {
 						}),
 						i(2771, {	-- Tin Ore
 							["maps_disp"] = {
-								ASHENVALE,
-								HILLSBRAD_FOOTHILLS,
-								STONETALON_MOUNTAINS,
+								MAP.ASHENVALE,
+								MAP.HILLSBRAD_FOOTHILLS,
+								MAP.STONETALON_MOUNTAINS,
 								-- #if BEFORE CATA
-								REDRIDGE_MOUNTAINS,
-								THOUSAND_NEEDLES,
+								MAP.REDRIDGE_MOUNTAINS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
 								NORTHERN_STRANGLETHORN,
 								-- #endif
-								WETLANDS,
+								MAP.WETLANDS,
 							},
 							["provider"] = { "o", 1732 },	-- Tin Vein
 						}),
@@ -6025,22 +6025,22 @@ root(ROOTS.Craftables, {
 						i(7911, {	-- Truesilver Ore
 							["description"] = "Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",
 							["maps_disp"] = {
-								BADLANDS,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
-								THOUSAND_NEEDLES,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
-								AZSHARA,
+								MAP.AZSHARA,
 								-- #endif
 							},
 							["providers"] = {
@@ -6062,33 +6062,33 @@ root(ROOTS.Craftables, {
 						-- Stones:
 						i(2836, {	-- Coarse Stone
 							["maps_disp"] = {
-								ASHENVALE,
-								DUSKWOOD,
-								HILLSBRAD_FOOTHILLS,
-								STONETALON_MOUNTAINS,
+								MAP.ASHENVALE,
+								MAP.DUSKWOOD,
+								MAP.HILLSBRAD_FOOTHILLS,
+								MAP.STONETALON_MOUNTAINS,
 								-- #if BEFORE CATA
-								REDRIDGE_MOUNTAINS,
-								THOUSAND_NEEDLES,
+								MAP.REDRIDGE_MOUNTAINS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
 								NORTHERN_STRANGLETHORN,
 								-- #endif
-								WETLANDS,
+								MAP.WETLANDS,
 							},
 							["provider"] = { "o", 1732 },	-- Tin Vein
 						}),
 						i(12365, {	-- Dense Stone
 							["maps_disp"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6104,40 +6104,40 @@ root(ROOTS.Craftables, {
 						}),
 						i(2838, {	-- Heavy Stone
 							["maps_disp"] = {
-								ARATHI_HIGHLANDS,
-								BADLANDS,
-								DESOLACE,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.BADLANDS,
+								MAP.DESOLACE,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #else
-								ALTERAC_MOUNTAINS,
-								STRANGLETHORN_VALE,
-								THOUSAND_NEEDLES,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.STRANGLETHORN_VALE,
+								MAP.THOUSAND_NEEDLES,
 								-- #endif
 							},
 							["provider"] = { "o", 1735 },	-- Iron Deposit
 						}),
 						i(2835, {	-- Rough Stone
 							["maps_disp"] = {
-								DARKSHORE,
-								DUN_MOROGH,
-								DUROTAR,
-								ELWYNN_FOREST,
-								LOCH_MODAN,
-								MULGORE,
-								SILVERPINE_FOREST,
-								TIRISFAL_GLADES,
-								WESTFALL,
+								MAP.DARKSHORE,
+								MAP.DUN_MOROGH,
+								MAP.DUROTAR,
+								MAP.ELWYNN_FOREST,
+								MAP.LOCH_MODAN,
+								MAP.MULGORE,
+								MAP.SILVERPINE_FOREST,
+								MAP.TIRISFAL_GLADES,
+								MAP.WESTFALL,
 								-- #if AFTER CATA
-								AZSHARA,
+								MAP.AZSHARA,
 								NORTHERN_BARRENS,
 								-- #else
-								THE_BARRENS,
+								MAP.THE_BARRENS,
 								-- #endif
 								-- #if AFTER TBC
 								AZUREMYST_ISLE,
@@ -6150,17 +6150,17 @@ root(ROOTS.Craftables, {
 						}),
 						i(7912, {	-- Solid Stone
 							["maps_disp"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6181,17 +6181,17 @@ root(ROOTS.Craftables, {
 							["description"] = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low.",
 							-- #endif
 							["maps_disp"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6218,8 +6218,8 @@ root(ROOTS.Craftables, {
 								BLACKROCK_DEPTHS,
 								MOLTEN_CORE,
 								-- #if BEFORE CATA
-								BURNING_STEPPES,
-								SEARING_GORGE,
+								MAP.BURNING_STEPPES,
+								MAP.SEARING_GORGE,
 								-- #endif
 							},
 							["provider"] = { "o", 165658 },	-- Dark Iron Deposit
@@ -6249,17 +6249,17 @@ root(ROOTS.Craftables, {
 					}, {
 						i(7909, {	-- Aquamarine
 							["maps_disp"] = {
-								BADLANDS,
-								BURNING_STEPPES,
-								FELWOOD,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.FELWOOD,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								THOUSAND_NEEDLES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
-								AZSHARA,
+								MAP.AZSHARA,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6271,17 +6271,17 @@ root(ROOTS.Craftables, {
 						}),
 						i(12800, {	-- Azerothian Diamond
 							["maps_disp"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6297,17 +6297,17 @@ root(ROOTS.Craftables, {
 						}),
 						i(12361, {	-- Blue Sapphire
 							["maps_disp"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6323,25 +6323,25 @@ root(ROOTS.Craftables, {
 						}),
 						i(3864, {	-- Citrine
 							["maps_disp"] = {
-								ARATHI_HIGHLANDS,
-								BADLANDS,
-								BURNING_STEPPES,
-								DESOLACE,
-								FELWOOD,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
-								THOUSAND_NEEDLES,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.DESOLACE,
+								MAP.FELWOOD,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
+								MAP.THOUSAND_NEEDLES,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
+								MAP.EASTERN_PLAGUELANDS,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #else
-								ALTERAC_MOUNTAINS,
-								AZSHARA,
-								STRANGLETHORN_VALE,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.AZSHARA,
+								MAP.STRANGLETHORN_VALE,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6355,17 +6355,17 @@ root(ROOTS.Craftables, {
 						}),
 						i(12364, {	-- Huge Emerald
 							["maps_disp"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6381,20 +6381,20 @@ root(ROOTS.Craftables, {
 						}),
 						i(1529, {	-- Jade
 							["maps_disp"] = {
-								ARATHI_HIGHLANDS,
-								BADLANDS,
-								DESOLACE,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.BADLANDS,
+								MAP.DESOLACE,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #else
-								ALTERAC_MOUNTAINS,
-								STRANGLETHORN_VALE,
-								THOUSAND_NEEDLES,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.STRANGLETHORN_VALE,
+								MAP.THOUSAND_NEEDLES,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6406,17 +6406,17 @@ root(ROOTS.Craftables, {
 						}),
 						i(12799, {	-- Large Opal
 							["maps_disp"] = {
-								UNGORO_CRATER,
-								WINTERSPRING,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
 								-- #if AFTER CATA
-								BLASTED_LANDS,
-								SILITHUS,
-								SWAMP_OF_SORROWS,
+								MAP.BLASTED_LANDS,
+								MAP.SILITHUS,
+								MAP.SWAMP_OF_SORROWS,
 								-- #else
-								AZSHARA,
-								BURNING_STEPPES,
-								EASTERN_PLAGUELANDS,
-								FELWOOD,
+								MAP.AZSHARA,
+								MAP.BURNING_STEPPES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FELWOOD,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6432,27 +6432,27 @@ root(ROOTS.Craftables, {
 						}),
 						i(1705, {	-- Lesser Moonstone
 							["maps_disp"] = {
-								ARATHI_HIGHLANDS,
-								ASHENVALE,
-								BADLANDS,
-								DESOLACE,
-								DUSKWOOD,
-								HILLSBRAD_FOOTHILLS,
-								STONETALON_MOUNTAINS,
-								WETLANDS,
+								MAP.ARATHI_HIGHLANDS,
+								MAP.ASHENVALE,
+								MAP.BADLANDS,
+								MAP.DESOLACE,
+								MAP.DUSKWOOD,
+								MAP.HILLSBRAD_FOOTHILLS,
+								MAP.STONETALON_MOUNTAINS,
+								MAP.WETLANDS,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								FERALAS,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.FERALAS,
 								NORTHERN_STRANGLETHORN,
 								SOUTHERN_BARRENS,
 								THE_CAPE_OF_STRANGLETHORN,
-								THE_HINTERLANDS,
-								WESTERN_PLAGUELANDS,
+								MAP.THE_HINTERLANDS,
+								MAP.WESTERN_PLAGUELANDS,
 								-- #else
-								ALTERAC_MOUNTAINS,
-								REDRIDGE_MOUNTAINS,
-								STRANGLETHORN_VALE,
-								THOUSAND_NEEDLES,
+								MAP.ALTERAC_MOUNTAINS,
+								MAP.REDRIDGE_MOUNTAINS,
+								MAP.STRANGLETHORN_VALE,
+								MAP.THOUSAND_NEEDLES,
 								-- #endif
 							},
 							-- #if BEFORE TBC
@@ -6466,16 +6466,16 @@ root(ROOTS.Craftables, {
 						}),
 						i(774, {	-- Malachite
 							["maps_disp"] = {
-								DARKSHORE,
-								DUN_MOROGH,
-								DUROTAR,
-								ELWYNN_FOREST,
-								LOCH_MODAN,
-								MULGORE,
-								SILVERPINE_FOREST,
-								TIRISFAL_GLADES,
-								WESTFALL,
-								THE_BARRENS,
+								MAP.DARKSHORE,
+								MAP.DUN_MOROGH,
+								MAP.DUROTAR,
+								MAP.ELWYNN_FOREST,
+								MAP.LOCH_MODAN,
+								MAP.MULGORE,
+								MAP.SILVERPINE_FOREST,
+								MAP.TIRISFAL_GLADES,
+								MAP.WESTFALL,
+								MAP.THE_BARRENS,
 							},
 							-- #if BEFORE TBC
 							["provider"] = { "o", 1731 },	-- Copper Vein
@@ -6483,17 +6483,17 @@ root(ROOTS.Craftables, {
 						}),
 						i(1206, {	-- Moss Agate
 							["maps_disp"] = {
-								ASHENVALE,
-								DUSKWOOD,
-								HILLSBRAD_FOOTHILLS,
-								STONETALON_MOUNTAINS,
+								MAP.ASHENVALE,
+								MAP.DUSKWOOD,
+								MAP.HILLSBRAD_FOOTHILLS,
+								MAP.STONETALON_MOUNTAINS,
 								-- #if BEFORE CATA
-								REDRIDGE_MOUNTAINS,
-								THOUSAND_NEEDLES,
+								MAP.REDRIDGE_MOUNTAINS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
 								NORTHERN_STRANGLETHORN,
 								-- #endif
-								WETLANDS,
+								MAP.WETLANDS,
 							},
 							-- #if BEFORE TBC
 							["providers"] = {
@@ -6505,28 +6505,28 @@ root(ROOTS.Craftables, {
 						i(1210, {	-- Shadowgem
 							["maps_disp"] = {
 								-- #if BEFORE TBC
-								DARKSHORE,
-								DUN_MOROGH,
-								DUROTAR,
-								ELWYNN_FOREST,
-								LOCH_MODAN,
-								MULGORE,
-								SILVERPINE_FOREST,
-								TIRISFAL_GLADES,
-								WESTFALL,
-								THE_BARRENS,
+								MAP.DARKSHORE,
+								MAP.DUN_MOROGH,
+								MAP.DUROTAR,
+								MAP.ELWYNN_FOREST,
+								MAP.LOCH_MODAN,
+								MAP.MULGORE,
+								MAP.SILVERPINE_FOREST,
+								MAP.TIRISFAL_GLADES,
+								MAP.WESTFALL,
+								MAP.THE_BARRENS,
 								-- #endif
-								ASHENVALE,
-								DUSKWOOD,
-								HILLSBRAD_FOOTHILLS,
-								STONETALON_MOUNTAINS,
+								MAP.ASHENVALE,
+								MAP.DUSKWOOD,
+								MAP.HILLSBRAD_FOOTHILLS,
+								MAP.STONETALON_MOUNTAINS,
 								-- #if BEFORE CATA
-								REDRIDGE_MOUNTAINS,
-								THOUSAND_NEEDLES,
+								MAP.REDRIDGE_MOUNTAINS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
 								NORTHERN_STRANGLETHORN,
 								-- #endif
-								WETLANDS,
+								MAP.WETLANDS,
 							},
 							-- #if BEFORE TBC
 							["providers"] = {
@@ -6538,22 +6538,22 @@ root(ROOTS.Craftables, {
 						}),
 						i(7910, {	-- Star Ruby
 							["maps_disp"] = {
-								BADLANDS,
-								BURNING_STEPPES,
-								FELWOOD,
-								FERALAS,
-								SEARING_GORGE,
-								TANARIS,
+								MAP.BADLANDS,
+								MAP.BURNING_STEPPES,
+								MAP.FELWOOD,
+								MAP.FERALAS,
+								MAP.SEARING_GORGE,
+								MAP.TANARIS,
 								-- #if AFTER CATA
-								EASTERN_PLAGUELANDS,
-								THOUSAND_NEEDLES,
+								MAP.EASTERN_PLAGUELANDS,
+								MAP.THOUSAND_NEEDLES,
 								-- #else
-								AZSHARA,
+								MAP.AZSHARA,
 								-- #endif
 								-- #if BEFORE TBC
-								UNGORO_CRATER,
-								WINTERSPRING,
-								EASTERN_PLAGUELANDS,
+								MAP.UNGORO_CRATER,
+								MAP.WINTERSPRING,
+								MAP.EASTERN_PLAGUELANDS,
 								ZULGURUB,
 								-- #endif
 							},
@@ -6571,16 +6571,16 @@ root(ROOTS.Craftables, {
 						}),
 						i(818, {	-- Tigerseye
 							["maps_disp"] = {
-								DARKSHORE,
-								DUN_MOROGH,
-								DUROTAR,
-								ELWYNN_FOREST,
-								LOCH_MODAN,
-								MULGORE,
-								SILVERPINE_FOREST,
-								TIRISFAL_GLADES,
-								WESTFALL,
-								THE_BARRENS,
+								MAP.DARKSHORE,
+								MAP.DUN_MOROGH,
+								MAP.DUROTAR,
+								MAP.ELWYNN_FOREST,
+								MAP.LOCH_MODAN,
+								MAP.MULGORE,
+								MAP.SILVERPINE_FOREST,
+								MAP.TIRISFAL_GLADES,
+								MAP.WESTFALL,
+								MAP.THE_BARRENS,
 							},
 							-- #if BEFORE TBC
 							["provider"] = { "o", 1731 },	-- Copper Vein
@@ -6718,77 +6718,77 @@ root(ROOTS.Craftables, {
 				-- Base leathers:
 				i(4234, {	-- Heavy Leather
 					["maps_disp"] = {
-						DUSTWALLOW_MARSH,
-						TANARIS,
-						THE_HINTERLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.TANARIS,
+						MAP.THE_HINTERLANDS,
 						-- #if AFTER CATA
-						WESTERN_PLAGUELANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
 					},
 				}),
 				i(2318, {	-- Light Leather
 					["maps_disp"] = {
-						DARKSHORE,
-						LOCH_MODAN,
-						SILVERPINE_FOREST,
-						WESTFALL,
+						MAP.DARKSHORE,
+						MAP.LOCH_MODAN,
+						MAP.SILVERPINE_FOREST,
+						MAP.WESTFALL,
 						-- #if AFTER CATA
-						AZSHARA,
+						MAP.AZSHARA,
 						NORTHERN_BARRENS,
 						-- #endif
 					},
 				}),
 				i(2319, {	-- Medium Leather
 					["maps_disp"] = {
-						ARATHI_HIGHLANDS,
-						STONETALON_MOUNTAINS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.STONETALON_MOUNTAINS,
 					},
 				}),
 				i(8170, {	-- Rugged Leather
 					["maps_disp"] = {
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 					},
 				}),
 				i(2934, {	-- Ruined Leather Scraps
 					["maps_disp"] = {
-						DUN_MOROGH,
-						DUROTAR,
-						ELWYNN_FOREST,
-						MULGORE,
-						TELDRASSIL,
-						TIRISFAL_GLADES,
+						MAP.DUN_MOROGH,
+						MAP.DUROTAR,
+						MAP.ELWYNN_FOREST,
+						MAP.MULGORE,
+						MAP.TELDRASSIL,
+						MAP.TIRISFAL_GLADES,
 					},
 				}),
 				i(4304, {	-- Thick Leather
 					["maps_disp"] = {
-						BADLANDS,
-						FELWOOD,
-						THOUSAND_NEEDLES,
-						UNGORO_CRATER,
-						WINTERSPRING,
+						MAP.BADLANDS,
+						MAP.FELWOOD,
+						MAP.THOUSAND_NEEDLES,
+						MAP.UNGORO_CRATER,
+						MAP.WINTERSPRING,
 					},
 				}),
 				-- Base hides:
 				i(4235, {	-- Heavy Hide
 					["description"] = "Is a rare drop in place of Heavy Leather.",
 					["maps_disp"] = {
-						DUSTWALLOW_MARSH,
-						TANARIS,
-						THE_HINTERLANDS,
+						MAP.DUSTWALLOW_MARSH,
+						MAP.TANARIS,
+						MAP.THE_HINTERLANDS,
 						-- #if AFTER CATA
-						WESTERN_PLAGUELANDS,
+						MAP.WESTERN_PLAGUELANDS,
 						-- #endif
 					},
 					}),
 				i(783, {	-- Light Hide
 					["description"] = "Is a rare drop in place of Light Leather.",
 					["maps_disp"] = {
-						DARKSHORE,
-						LOCH_MODAN,
-						SILVERPINE_FOREST,
-						WESTFALL,
+						MAP.DARKSHORE,
+						MAP.LOCH_MODAN,
+						MAP.SILVERPINE_FOREST,
+						MAP.WESTFALL,
 						-- #if AFTER CATA
-						AZSHARA,
+						MAP.AZSHARA,
 						NORTHERN_BARRENS,
 						-- #endif
 					},
@@ -6796,24 +6796,24 @@ root(ROOTS.Craftables, {
 				i(4232, {	-- Medium Hide
 					["description"] = "Is a rare drop in place of Medium Leather.",
 					["maps_disp"] = {
-						ARATHI_HIGHLANDS,
-						STONETALON_MOUNTAINS,
+						MAP.ARATHI_HIGHLANDS,
+						MAP.STONETALON_MOUNTAINS,
 					},
 				}),
 				i(8171, {	-- Rugged Hide
 					["description"] = "Is a rare drop in place of Rugged Leather.",
 					["maps_disp"] = {
-						BLASTED_LANDS,
+						MAP.BLASTED_LANDS,
 					},
 				}),
 				i(8169, {	-- Thick Hide
 					["description"] = "Is a rare drop in place of Thick Leather.",
 					["maps_disp"] = {
-						BADLANDS,
-						FELWOOD,
-						THOUSAND_NEEDLES,
-						UNGORO_CRATER,
-						WINTERSPRING,
+						MAP.BADLANDS,
+						MAP.FELWOOD,
+						MAP.THOUSAND_NEEDLES,
+						MAP.UNGORO_CRATER,
+						MAP.WINTERSPRING,
 					},
 				}),
 				-- Special leathers
@@ -6827,8 +6827,8 @@ root(ROOTS.Craftables, {
 						8763,	-- Mistwing Rogue
 					},
 					["maps_disp"] = {
-						AZSHARA,
-						WINTERSPRING,
+						MAP.AZSHARA,
+						MAP.WINTERSPRING,
 					},
 					["timeline"] = { REMOVED_3_1_0 },
 				}),
@@ -6869,8 +6869,8 @@ root(ROOTS.Craftables, {
 					["description"] = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
 					-- #endif
 					["coords"] = {
-						{ 55.1, 37.8, WINTERSPRING },
-						{ 58.1, 89.4, WINTERSPRING },
+						{ 55.1, 37.8, MAP.WINTERSPRING },
+						{ 58.1, 89.4, MAP.WINTERSPRING },
 					},
 				}),
 				-- Special hides
@@ -6882,14 +6882,14 @@ root(ROOTS.Craftables, {
 					},
 					["description"] = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
 					["maps_disp"] = {
-						STRANGLETHORN_VALE,
-						SWAMP_OF_SORROWS,
+						MAP.STRANGLETHORN_VALE,
+						MAP.SWAMP_OF_SORROWS,
 					},
 					["timeline"] = { REMOVED_3_1_0 },
 				}),
 				i(8368, {	-- Thick Wolfhide
 					["description"] = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
-					["maps_disp"] = { BURNING_STEPPES },
+					["maps_disp"] = { MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_1_0 },
 				}),
 				-- Scales
@@ -6901,7 +6901,7 @@ root(ROOTS.Craftables, {
 						BLACKROCK_SPIRE,
 						-- #endif
 						-- #if BEFORE CATA
-						BURNING_STEPPES,
+						MAP.BURNING_STEPPES,
 						-- #endif
 					},
 				}),
@@ -6923,8 +6923,8 @@ root(ROOTS.Craftables, {
 					-- #else
 					["description"] = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
 					["coords"] = {
-						{ 57.2, 65.9, WINTERSPRING },	-- Mazthoril
-						{ 38.0, 75.0, AZSHARA },	-- Lake Mennar
+						{ 57.2, 65.9, MAP.WINTERSPRING },	-- Mazthoril
+						{ 38.0, 75.0, MAP.AZSHARA },	-- Lake Mennar
 					},
 					-- #endif
 				}),
@@ -6949,12 +6949,12 @@ root(ROOTS.Craftables, {
 				i(15408, {	-- Heavy Scorpid Scale
 					-- #if AFTER 4.0.3
 					["description"] = "Can be skinned from scorpids in Silithus.",
-					["maps_disp"] = { SILITHUS },
+					["maps_disp"] = { MAP.SILITHUS },
 					-- #else
 					["description"] = "Can be skinned from scorpids in the level bracket 50-60.",
 					["maps_disp"] = {
-						BURNING_STEPPES,
-						SILITHUS
+						MAP.BURNING_STEPPES,
+						MAP.SILITHUS
 					},
 					-- #endif
 				}),
@@ -6974,11 +6974,11 @@ root(ROOTS.Craftables, {
 					["maps_disp"] = { BLACKROCK_SPIRE },
 					-- #else
 					["description"] = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
-					["coord"] = { 80.0, 48.0, WETLANDS },
+					["coord"] = { 80.0, 48.0, MAP.WETLANDS },
 					-- #endif
 				}),
 				i(8154, {	-- Scorpid Scale
-					["maps_disp"] = { TANARIS },
+					["maps_disp"] = { MAP.TANARIS },
 					-- #if AFTER BFA
 					["description"] = "Drops from scorpids in previously higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
 					-- #elseif AFTER 4.0.3
@@ -6997,10 +6997,10 @@ root(ROOTS.Craftables, {
 					-- #endif
 					["maps_disp"] = {
 						-- #if AFTER CATA
-						TANARIS,
-						THOUSAND_NEEDLES,
+						MAP.TANARIS,
+						MAP.THOUSAND_NEEDLES,
 						-- #else
-						DUSTWALLOW_MARSH,
+						MAP.DUSTWALLOW_MARSH,
 						-- #endif
 					},
 				}),
@@ -7513,15 +7513,15 @@ root(ROOTS.Craftables, {
 			i(14342, {	-- Mooncloth
 				["description"] = "Coordinates are for select Moonwells around the world.",
 				["coords"] = {
-					{ 43.10, 80.27, DARNASSUS },	-- Temple of the Moon
+					{ 43.10, 80.27, MAP.DARNASSUS },	-- Temple of the Moon
 					-- #if BEFORE 4.0.3
-					{ 21.0, 53.0, STORMWIND_CITY },	-- The Park
-					{ 60.0, 72.0, ASHENVALE },	-- Moonwell of Cleansing (exists after 4.0.3, but reduntant on practicality.)
+					{ 21.0, 53.0, MAP.STORMWIND_CITY },	-- The Park
+					{ 60.0, 72.0, MAP.ASHENVALE },	-- Moonwell of Cleansing (exists after 4.0.3, but reduntant on practicality.)
 					-- #else
-					{ 57.11, 37.52, WETLANDS },	-- Greenwarden's Grove
-					{ 48.05, 18.54, DARNASSUS },	-- The Howling Oak
-					{ 10.77, 74.71, AZSHARA },	-- Talrendis Point
-					{ 49.06, 33.58, DUSKWOOD },	-- Twlight Grove (exists pre 4.0.3, but this area is then infested with world bosses.)
+					{ 57.11, 37.52, MAP.WETLANDS },	-- Greenwarden's Grove
+					{ 48.05, 18.54, MAP.DARNASSUS },	-- The Howling Oak
+					{ 10.77, 74.71, MAP.AZSHARA },	-- Talrendis Point
+					{ 49.06, 33.58, MAP.DUSKWOOD },	-- Twlight Grove (exists pre 4.0.3, but this area is then infested with world bosses.)
 					-- #endif
 					-- #if AFTER 2.0.1
 					{ 13.13, 26.23, GHOSTLANDS },	-- Shalandis Isle

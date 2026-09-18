@@ -69,12 +69,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 	-- #endif
 }, BUBBLE_DOWN_FILTER, {
 	["maps"] = {
-		AZSHARA,
-		BLASTED_LANDS,
-		BURNING_STEPPES,
-		EASTERN_PLAGUELANDS,
-		TANARIS,
-		WINTERSPRING,
+		MAP.AZSHARA,
+		MAP.BLASTED_LANDS,
+		MAP.BURNING_STEPPES,
+		MAP.EASTERN_PLAGUELANDS,
+		MAP.TANARIS,
+		MAP.WINTERSPRING,
 		-- #if AFTER TBC
 		SHATTRATH_CITY,
 		-- #endif
@@ -99,21 +99,21 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			q(12772, {	-- A Desperate Alliance [Night Elf]
 				["qg"] = 19173,	-- Night Elf Commoner
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { DARNASSUS },
+				["maps"] = { MAP.DARNASSUS },
 				["races"] = { NIGHTELF },
 				["lvl"] = 65,
 			}),
 			q(12775, {	-- A Desperate Alliance [Human]
 				["qg"] = 18927,	-- Human Commoner
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { STORMWIND_CITY },
+				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = { HUMAN },
 				["lvl"] = 65,
 			}),
 			q(12777, {	-- A Desperate Alliance [Draenei]
 				["qg"] = 18927,	-- Human Commoner
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { STORMWIND_CITY },
+				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = { DRAENEI },
 				["lvl"] = 65,
 			}),
@@ -126,19 +126,19 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["allianceQuestData"] = q(9094, {	-- Argent Dawn Gloves [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
-						{ 54.7, 62.2, STORMWIND_CITY },
-						{ 34.0, 66.4, IRONFORGE },
-						{ 64.3, 44.5, DARNASSUS },
-						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+						{ 54.7, 62.2, MAP.STORMWIND_CITY },
+						{ 34.0, 66.4, MAP.IRONFORGE },
+						{ 64.3, 44.5, MAP.DARNASSUS },
+						{ 81.0, 59.8, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["hordeQuestData"] = q(9333, {	-- Argent Dawn Gloves [H]
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["coords"] = {
-						{ 43.7, 52.6, THUNDER_BLUFF },
-						{ 52.5, 73.7, ORGRIMMAR },
-						{ 49.9, 29.4, UNDERCITY },
-						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+						{ 43.7, 52.6, MAP.THUNDER_BLUFF },
+						{ 52.5, 73.7, MAP.ORGRIMMAR },
+						{ 49.9, 29.4, MAP.UNDERCITY },
+						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["sourceQuest"] =
@@ -187,19 +187,19 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["allianceQuestData"] = q(9318, {	-- Blessed Wizard Oil [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
-						{ 54.7, 62.2, STORMWIND_CITY },
-						{ 34.0, 66.4, IRONFORGE },
-						{ 64.3, 44.5, DARNASSUS },
-						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+						{ 54.7, 62.2, MAP.STORMWIND_CITY },
+						{ 34.0, 66.4, MAP.IRONFORGE },
+						{ 64.3, 44.5, MAP.DARNASSUS },
+						{ 81.0, 59.8, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["hordeQuestData"] = q(9334, {	-- Blessed Wizard Oil [H]
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["coords"] = {
-						{ 43.7, 52.6, THUNDER_BLUFF },
-						{ 52.5, 73.7, ORGRIMMAR },
-						{ 49.9, 29.4, UNDERCITY },
-						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+						{ 43.7, 52.6, MAP.THUNDER_BLUFF },
+						{ 52.5, 73.7, MAP.ORGRIMMAR },
+						{ 49.9, 29.4, MAP.UNDERCITY },
+						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["sourceQuest"] =
@@ -232,19 +232,19 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["allianceQuestData"] = q(88746, {	-- Consecrated Sharpening Stones [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
-						{ 54.7, 62.2, STORMWIND_CITY },
-						{ 34.0, 66.4, IRONFORGE },
-						{ 64.3, 44.5, DARNASSUS },
-						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+						{ 54.7, 62.2, MAP.STORMWIND_CITY },
+						{ 34.0, 66.4, MAP.IRONFORGE },
+						{ 64.3, 44.5, MAP.DARNASSUS },
+						{ 81.0, 59.8, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["hordeQuestData"] = q(88747, {	-- Consecrated Sharpening Stones [H]
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["coords"] = {
-						{ 43.7, 52.6, THUNDER_BLUFF },
-						{ 52.5, 73.7, ORGRIMMAR },
-						{ 49.9, 29.4, UNDERCITY },
-						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+						{ 43.7, 52.6, MAP.THUNDER_BLUFF },
+						{ 52.5, 73.7, MAP.ORGRIMMAR },
+						{ 49.9, 29.4, MAP.UNDERCITY },
+						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["sourceQuest"] =
@@ -266,19 +266,19 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["allianceQuestData"] = q(9317, {	-- Consecrated Sharpening Stones [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
-						{ 54.7, 62.2, STORMWIND_CITY },
-						{ 34.0, 66.4, IRONFORGE },
-						{ 64.3, 44.5, DARNASSUS },
-						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+						{ 54.7, 62.2, MAP.STORMWIND_CITY },
+						{ 34.0, 66.4, MAP.IRONFORGE },
+						{ 64.3, 44.5, MAP.DARNASSUS },
+						{ 81.0, 59.8, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["hordeQuestData"] = q(9335, {	-- Consecrated Sharpening Stones [H]
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["coords"] = {
-						{ 43.7, 52.6, THUNDER_BLUFF },
-						{ 52.5, 73.7, ORGRIMMAR },
-						{ 49.9, 29.4, UNDERCITY },
-						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+						{ 43.7, 52.6, MAP.THUNDER_BLUFF },
+						{ 52.5, 73.7, MAP.ORGRIMMAR },
+						{ 49.9, 29.4, MAP.UNDERCITY },
+						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["sourceQuest"] =
@@ -303,7 +303,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "n", 16431 },	-- Cracked Necrotic Crystal
 					{ "i", 22949 },	-- Cracked Necrotic Crystal
 				},
-				["maps"] = { STORMWIND_CITY },
+				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -320,7 +320,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "n", 16431 },	-- Cracked Necrotic Crystal
 					{ "i", 22949 },	-- Cracked Necrotic Crystal
 				},
-				["maps"] = { STORMWIND_CITY },
+				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -337,7 +337,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { DARNASSUS },
+				["maps"] = { MAP.DARNASSUS },
 				["races"] = { NIGHTELF },
 				["lvl"] = 65,
 			}),
@@ -387,7 +387,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "n", 16531 },	-- Faint Necrotic Crystal
 					{ "i", 22950 },	-- Faint Necrotic Crystal
 				},
-				["maps"] = { TIRISFAL_GLADES, UNDERCITY },
+				["maps"] = { MAP.TIRISFAL_GLADES, MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -404,7 +404,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "n", 16531 },	-- Faint Necrotic Crystal
 					{ "i", 22950 },	-- Faint Necrotic Crystal
 				},
-				["maps"] = { TIRISFAL_GLADES, UNDERCITY },
+				["maps"] = { MAP.TIRISFAL_GLADES, MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -416,8 +416,8 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			-- #endif
 			q(9262, {	-- Investigate the Scourge of Darnassus
 				["qg"] = 16495,	-- Lieutenant Beitha <The Argent Dawn>
-				["coord"] = { 77.7, 42.7, DARNASSUS },
-				["maps"] = { TELDRASSIL },
+				["coord"] = { 77.7, 42.7, MAP.DARNASSUS },
+				["maps"] = { MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -435,8 +435,8 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			q(9261, {	-- Investigate the Scourge of Ironforge
 				["qg"] = 16484,	-- Lieutenant Nevell <The Argent Dawn>
-				["coord"] = { 53.2, 35.0, DUN_MOROGH },
-				["maps"] = { IRONFORGE },
+				["coord"] = { 53.2, 35.0, MAP.DUN_MOROGH },
+				["maps"] = { MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -454,8 +454,8 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			q(9263, {	-- Investigate the Scourge of Orgrimmar
 				["qg"] = 16493,	-- Lieutenant Dagel <The Argent Dawn>
-				["coord"] = { 51.7, 83.3, ORGRIMMAR },
-				["maps"] = { DUROTAR },
+				["coord"] = { 51.7, 83.3, MAP.ORGRIMMAR },
+				["maps"] = { MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -473,8 +473,8 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			q(9260, {	-- Investigate the Scourge of Stormwind
 				["qg"] = 16478,	-- Lieutenant Orrin <The Argent Dawn>
-				["coord"] = { 63.8, 75.5, STORMWIND_CITY },
-				["maps"] = { ELWYNN_FOREST },
+				["coord"] = { 63.8, 75.5, MAP.STORMWIND_CITY },
+				["maps"] = { MAP.ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -492,8 +492,8 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			q(9265, {	-- Investigate the Scourge of the Undercity
 				["qg"] = 16494,	-- Lieutenant Rukag <The Argent Dawn>
-				["coord"] = { 66.2, 21.4, UNDERCITY },
-				["maps"] = { TIRISFAL_GLADES },
+				["coord"] = { 66.2, 21.4, MAP.UNDERCITY },
+				["maps"] = { MAP.TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -511,8 +511,8 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			q(9264, {	-- Investigate the Scourge of Thunder Bluff
 				["qg"] = 16490,	-- Lieutenant Lisande <The Argent Dawn>
-				["coord"] = { 33.1, 59.9, THUNDER_BLUFF },
-				["maps"] = { MULGORE },
+				["coord"] = { 33.1, 59.9, MAP.THUNDER_BLUFF },
+				["maps"] = { MAP.MULGORE },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 1,
@@ -535,7 +535,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { IRONFORGE },
+				["maps"] = { MAP.IRONFORGE },
 				["races"] = { DWARF },
 				["lvl"] = 65,
 			}),
@@ -546,7 +546,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { IRONFORGE },
+				["maps"] = { MAP.IRONFORGE },
 				["races"] = { GNOME },
 				["lvl"] = 65,
 			}),
@@ -564,18 +564,18 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 22595 },	-- Call to Arms Announcement
 				},
 				["coords"] = {
-					{ 64.5, 44.2, DARNASSUS },
-					{ 77.3, 42.8, DARNASSUS },
-					{ 53.1, 35.0, DUN_MOROGH },
-					{ 35.3, 68.7, IRONFORGE },
-					{ 53.1, 73.6, ORGRIMMAR },
-					{ 51.7, 83.6, ORGRIMMAR },
-					{ 55.0, 62.0, STORMWIND_CITY },
-					{ 64.1, 75.0, STORMWIND_CITY },
-					{ 32.9, 60.1, THUNDER_BLUFF },
-					{ 43.5, 53.2, THUNDER_BLUFF },
-					{ 49.5, 32.1, UNDERCITY },
-					{ 65.9, 21.4, UNDERCITY },
+					{ 64.5, 44.2, MAP.DARNASSUS },
+					{ 77.3, 42.8, MAP.DARNASSUS },
+					{ 53.1, 35.0, MAP.DUN_MOROGH },
+					{ 35.3, 68.7, MAP.IRONFORGE },
+					{ 53.1, 73.6, MAP.ORGRIMMAR },
+					{ 51.7, 83.6, MAP.ORGRIMMAR },
+					{ 55.0, 62.0, MAP.STORMWIND_CITY },
+					{ 64.1, 75.0, MAP.STORMWIND_CITY },
+					{ 32.9, 60.1, MAP.THUNDER_BLUFF },
+					{ 43.5, 53.2, MAP.THUNDER_BLUFF },
+					{ 49.5, 32.1, MAP.UNDERCITY },
+					{ 65.9, 21.4, MAP.UNDERCITY },
 				},
 				["isYearly"] = true,
 				["lvl"] = 50,
@@ -584,19 +584,19 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["allianceQuestData"] = q(9321, {	-- Major Healing Potion [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
-						{ 54.7, 62.2, STORMWIND_CITY },
-						{ 34.0, 66.4, IRONFORGE },
-						{ 64.3, 44.5, DARNASSUS },
-						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+						{ 54.7, 62.2, MAP.STORMWIND_CITY },
+						{ 34.0, 66.4, MAP.IRONFORGE },
+						{ 64.3, 44.5, MAP.DARNASSUS },
+						{ 81.0, 59.8, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["hordeQuestData"] = q(9336, {	-- Major Healing Potion [H]
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["coords"] = {
-						{ 43.7, 52.6, THUNDER_BLUFF },
-						{ 52.5, 73.7, ORGRIMMAR },
-						{ 49.9, 29.4, UNDERCITY },
-						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+						{ 43.7, 52.6, MAP.THUNDER_BLUFF },
+						{ 52.5, 73.7, MAP.ORGRIMMAR },
+						{ 49.9, 29.4, MAP.UNDERCITY },
+						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["sourceQuest"] =
@@ -617,19 +617,19 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["allianceQuestData"] = q(9337, {	-- Major Mana Potion [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
-						{ 54.7, 62.2, STORMWIND_CITY },
-						{ 34.0, 66.4, IRONFORGE },
-						{ 64.3, 44.5, DARNASSUS },
-						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+						{ 54.7, 62.2, MAP.STORMWIND_CITY },
+						{ 34.0, 66.4, MAP.IRONFORGE },
+						{ 64.3, 44.5, MAP.DARNASSUS },
+						{ 81.0, 59.8, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["hordeQuestData"] = q(9320, {	-- Major Mana Potion [H]
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["coords"] = {
-						{ 43.7, 52.6, THUNDER_BLUFF },
-						{ 52.5, 73.7, ORGRIMMAR },
-						{ 49.9, 29.4, UNDERCITY },
-						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+						{ 43.7, 52.6, MAP.THUNDER_BLUFF },
+						{ 52.5, 73.7, MAP.ORGRIMMAR },
+						{ 49.9, 29.4, MAP.UNDERCITY },
+						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["sourceQuest"] =
@@ -667,7 +667,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { ORGRIMMAR },
+				["maps"] = { MAP.ORGRIMMAR },
 				["races"] = { TROLL },
 				["lvl"] = 65,
 			}),
@@ -678,7 +678,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { ORGRIMMAR },
+				["maps"] = { MAP.ORGRIMMAR },
 				["races"] = { ORC },
 				["lvl"] = 65,
 			}),
@@ -691,7 +691,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			q(9085, {	-- Shadows of Doom
 				["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
-				["coord"] = { 81.1, 60.6, EASTERN_PLAGUELANDS },
+				["coord"] = { 81.1, 60.6, MAP.EASTERN_PLAGUELANDS },
 				["isYearly"] = true,
 				["lvl"] = 50,
 				["groups"] = {
@@ -720,7 +720,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { STORMWIND_CITY },
+				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = { HUMAN },
 				["lvl"] = 65,
 			}),
@@ -728,19 +728,19 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["allianceQuestData"] = q(9341, {	-- Tabard of the Argent Dawn [A]
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["coords"] = {
-						{ 54.7, 62.2, STORMWIND_CITY },
-						{ 34.0, 66.4, IRONFORGE },
-						{ 64.3, 44.5, DARNASSUS },
-						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+						{ 54.7, 62.2, MAP.STORMWIND_CITY },
+						{ 34.0, 66.4, MAP.IRONFORGE },
+						{ 64.3, 44.5, MAP.DARNASSUS },
+						{ 81.0, 59.8, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["hordeQuestData"] = q(9343, {	-- Tabard of the Argent Dawn [H]
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["coords"] = {
-						{ 43.7, 52.6, THUNDER_BLUFF },
-						{ 52.5, 73.7, ORGRIMMAR },
-						{ 49.9, 29.4, UNDERCITY },
-						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+						{ 43.7, 52.6, MAP.THUNDER_BLUFF },
+						{ 52.5, 73.7, MAP.ORGRIMMAR },
+						{ 49.9, 29.4, MAP.UNDERCITY },
+						{ 80.8, 59.6, MAP.EASTERN_PLAGUELANDS },
 					},
 				}),
 				["sourceQuest"] =
@@ -774,7 +774,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "n", 16281 },	-- Keeper of the Rolls <The Argent Dawn>
 					{ "i", 22723 },	-- A Letter from the Keeper of the Rolls [You get this in the mail.]
 				},
-				["coord"] = { 81.1, 60.5, EASTERN_PLAGUELANDS },
+				["coord"] = { 81.1, 60.5, MAP.EASTERN_PLAGUELANDS },
 				["isYearly"] = true,
 				["lvl"] = 60,
 				["groups"] = {
@@ -789,7 +789,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { UNDERCITY },
+				["maps"] = { MAP.UNDERCITY },
 				["races"] = { UNDEAD },
 				["lvl"] = 65,
 			}),
@@ -800,14 +800,14 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-				["maps"] = { THUNDER_BLUFF },
+				["maps"] = { MAP.THUNDER_BLUFF },
 				["races"] = { TAUREN },
 				["lvl"] = 65,
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			q(88744, {	-- Under the Shadow
 				["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
-				["coord"] = { 81.1, 60.6, EASTERN_PLAGUELANDS },
+				["coord"] = { 81.1, 60.6, MAP.EASTERN_PLAGUELANDS },
 				["cost"] = { { "i", 22484, 10 } },	-- Necrotic Rune
 				["isYearly"] = true,
 				["lvl"] = 50,
@@ -820,7 +820,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			-- #else
 			q(9153, {	-- Under the Shadow
 				["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
-				["coord"] = { 81.1, 60.6, EASTERN_PLAGUELANDS },
+				["coord"] = { 81.1, 60.6, MAP.EASTERN_PLAGUELANDS },
 				["cost"] = { { "i", 22484, 10 } },	-- Necrotic Rune
 				["isYearly"] = true,
 				["lvl"] = 50,
@@ -997,13 +997,13 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 		n(VENDORS, {
 			n(16786, {	-- Argent Quartermaster <The Argent Dawn>
 				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
+					{ 54.7, 62.2, MAP.STORMWIND_CITY },
+					{ 34.0, 66.4, MAP.IRONFORGE },
+					{ 43.7, 52.6, MAP.THUNDER_BLUFF },
+					{ 52.5, 73.7, MAP.ORGRIMMAR },
+					{ 49.9, 29.4, MAP.UNDERCITY },
+					{ 64.3, 44.5, MAP.DARNASSUS },
+					{ 80.9, 59.6, MAP.EASTERN_PLAGUELANDS },
 				},
 				["groups"] = {
 					i(22999, {	-- Tabard of the Argent Dawn

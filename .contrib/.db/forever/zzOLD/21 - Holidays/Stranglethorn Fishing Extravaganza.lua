@@ -28,7 +28,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 		NORTHERN_STRANGLETHORN,
 		THE_CAPE_OF_STRANGLETHORN,
 		-- #else
-		STRANGLETHORN_VALE,
+		MAP.STRANGLETHORN_VALE,
 		-- #endif
 	},
 	["groups"] = {
@@ -50,7 +50,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
-					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					{ 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 				["cost"] = { { "i", 19807, 5 } },	-- Speckled Tastyfish
@@ -59,7 +59,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			}),
 			q(8229, {	-- Could I get a Fishing Flier?
 				["qg"] = 15116,	-- Grinkle <Fishing Promoter>
-				["coord"] = { 53.25, 70.65, ORGRIMMAR },
+				["coord"] = { 53.25, 70.65, MAP.ORGRIMMAR },
 				["requireSkill"] = FISHING,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
@@ -70,7 +70,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			}),
 			q(8228, {	-- Could I get a Fishing Flier?
 				["qg"] = 15119,	-- Barrus <Fishing Promoter>
-				["coord"] = { 54.8, 63.1, STORMWIND_CITY },
+				["coord"] = { 54.8, 63.1, MAP.STORMWIND_CITY },
 				["requireSkill"] = FISHING,
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -85,7 +85,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
-					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					{ 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
@@ -112,7 +112,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
-					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					{ 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 				["cost"] = { { "i", 19803, 1 } },	-- Brownell's Blue Striped Racer
@@ -128,7 +128,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
-					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					{ 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 				["cost"] = { { "i", 19806, 1 } },	-- Dezian Angelfish
@@ -144,7 +144,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
-					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					{ 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 				["cost"] = { { "i", 19805, 1 } },	-- Keefer's Angelfish
@@ -161,7 +161,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
-					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					{ 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
@@ -187,7 +187,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
-					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					{ 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
@@ -205,7 +205,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
-					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					{ 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 					-- #endif
 				},
 				["timeline"] = { ADDED_7_1_0 },

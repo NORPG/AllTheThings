@@ -88,16 +88,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					-- #endif
 				},
 				["qgs"] = {
-					5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
-					5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
-					11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
-					52651,	-- Engineer Palehoof [THUNDER_BLUFF]
+					5518,	-- Lilliam Sparkspindle <Engineering Trainer> [MAP.STORMWIND_CITY]
+					5174,	-- Springspindle Fizzlegear <Engineering Trainer> [MAP.IRONFORGE]
+					11017,	-- Roxxik <Engineering Trainer> [MAP.ORGRIMMAR]
+					52651,	-- Engineer Palehoof [MAP.THUNDER_BLUFF]
 				},
 				["coords"] = {
-					{ 62.8, 32.0, STORMWIND_CITY },	-- Lilliam Sparkspindle
-					{ 68.8, 45.2, IRONFORGE },	-- Springspindle Fizzlegear
-					{ 56.8, 56.4, ORGRIMMAR },	-- Roxxik
-					{ 36.8, 59.6, THUNDER_BLUFF },	-- Engineer Palehoof
+					{ 62.8, 32.0, MAP.STORMWIND_CITY },	-- Lilliam Sparkspindle
+					{ 68.8, 45.2, MAP.IRONFORGE },	-- Springspindle Fizzlegear
+					{ 56.8, 56.4, MAP.ORGRIMMAR },	-- Roxxik
+					{ 36.8, 59.6, MAP.THUNDER_BLUFF },	-- Engineer Palehoof
 				},
 				["timeline"] = { ADDED_4_3_0 },
 				["cost"] = {
@@ -124,16 +124,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 				},
 				["qgs"] = {
-					5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
-					5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
-					11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
-					52651,	-- Engineer Palehoof [THUNDER_BLUFF]
+					5518,	-- Lilliam Sparkspindle <Engineering Trainer> [MAP.STORMWIND_CITY]
+					5174,	-- Springspindle Fizzlegear <Engineering Trainer> [MAP.IRONFORGE]
+					11017,	-- Roxxik <Engineering Trainer> [MAP.ORGRIMMAR]
+					52651,	-- Engineer Palehoof [MAP.THUNDER_BLUFF]
 				},
 				["coords"] = {
-					{ 62.8, 32.0, STORMWIND_CITY },	-- Lilliam Sparkspindle
-					{ 68.8, 45.2, IRONFORGE },	-- Springspindle Fizzlegear
-					{ 56.8, 56.4, ORGRIMMAR },	-- Roxxik
-					{ 36.8, 59.6, THUNDER_BLUFF },	-- Engineer Palehoof
+					{ 62.8, 32.0, MAP.STORMWIND_CITY },	-- Lilliam Sparkspindle
+					{ 68.8, 45.2, MAP.IRONFORGE },	-- Springspindle Fizzlegear
+					{ 56.8, 56.4, MAP.ORGRIMMAR },	-- Roxxik
+					{ 36.8, 59.6, MAP.THUNDER_BLUFF },	-- Engineer Palehoof
 				},
 				["timeline"] = { ADDED_4_3_0 },
 				["cost"] = {
@@ -422,7 +422,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			q(40881, {	-- Oil Rags to Riches
 				["sourceQuests"] = { 40880 },	-- Short Circuit
 				["provider"] = { "o", 246438 },	-- Blingtron Circuit Design
-				["coord"] = { 69.5, 68.4, TANARIS },
+				["coord"] = { 69.5, 68.4, MAP.TANARIS },
 				["groups"] = {
 					i(141849),	-- Schematic: Reaves Module: Bling Mode (RECIPE!)
 				},

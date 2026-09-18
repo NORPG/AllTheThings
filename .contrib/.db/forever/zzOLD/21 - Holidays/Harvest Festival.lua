@@ -44,13 +44,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			["qg"] = 15011,	-- Wagner Hammerstrike
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 59.8, 34.2, DUN_MOROGH },
+				{ 59.8, 34.2, MAP.DUN_MOROGH },
 				-- #else
-				{ 52.6, 36.0, DUN_MOROGH },
+				{ 52.6, 36.0, MAP.DUN_MOROGH },
 				-- #endif
 			},
 			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
-			["maps"] = { WESTERN_PLAGUELANDS },
+			["maps"] = { MAP.WESTERN_PLAGUELANDS },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_1_12_1 },
 			["isYearly"] = true,
@@ -58,7 +58,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			["groups"] = {
 				objective(1, {	-- Uther's Tribute
 					["provider"] = { "i", 19850 },	-- Uther's Tribute
-					["coord"] = { 51.0, 82.0, WESTERN_PLAGUELANDS },
+					["coord"] = { 51.0, 82.0, MAP.WESTERN_PLAGUELANDS },
 				}),
 				i(20009),	-- For the Light!
 			},
@@ -67,13 +67,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			["qg"] = 15012,	-- Javnir Nashak
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 46.2, 15.0, DUROTAR },
+				{ 46.2, 15.0, MAP.DUROTAR },
 				-- #else
-				{ 46.0, 13.6, DUROTAR },
+				{ 46.0, 13.6, MAP.DUROTAR },
 				-- #endif
 			},
 			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
-			["maps"] = { ASHENVALE },
+			["maps"] = { MAP.ASHENVALE },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_1_12_1 },
 			["isYearly"] = true,
@@ -81,14 +81,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			["groups"] = {
 				objective(1, {	-- Grom's Tribute
 					["provider"] = { "i", 19851 },	-- Grom's Tribute
-					["coord"] = { 83.0, 79.0, ASHENVALE },
+					["coord"] = { 83.0, 79.0, MAP.ASHENVALE },
 				}),
 				i(20010),	-- The Horde's Hellscream
 			},
 		}),
 		q(54996, {	-- Remembrance
 			["qg"] = 149084,	-- Spiritwalker Ussoh
-			["coord"] = { 46.8, 15.4, DUROTAR },
+			["coord"] = { 46.8, 15.4, MAP.DUROTAR },
 			["timeline"] = { ADDED_8_2_0 },
 			["races"] = { TAUREN },
 			["isYearly"] = true,

@@ -35,12 +35,12 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.TBC, { n(TH
 		["timeline"] = { REMOVED_2_0_1 },
 		-- #endif
 	}, {
-		["maps"] = { BLASTED_LANDS },
+		["maps"] = { MAP.BLASTED_LANDS },
 		["lvl"] = 55,
 		["groups"] = {
 			q(10259, {	-- Into the Breach
 				["qg"] = 19942,	-- Agent Proudwell <The Argent Dawn>
-				["coord"] = { 58.25, 55.05, BLASTED_LANDS },
+				["coord"] = { 58.25, 55.05, MAP.BLASTED_LANDS },
 				["lvl"] = 55,
 				["groups"] = {
 					ach(2079, {	-- Tabard of the Protector

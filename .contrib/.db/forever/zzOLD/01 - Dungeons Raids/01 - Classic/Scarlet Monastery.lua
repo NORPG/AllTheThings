@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER CATA
 			{ 69.2, 24.9, SCARLET_MONASTERY_ENTRANCE },
 			-- #else
-			{ 82.6, 32.4, TIRISFAL_GLADES },
+			{ 82.6, 32.4, MAP.TIRISFAL_GLADES },
 			-- #endif
 		},
 		["maps"] = {
@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								q(26982, {	-- The Scarlet Monastery (A)
 									["qg"] = 2700,	-- Captain Nials
-									["coord"] = { 40.0, 48.8, ARATHI_HIGHLANDS },
+									["coord"] = { 40.0, 48.8, MAP.ARATHI_HIGHLANDS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = ALLIANCE_ONLY,
 									["isBreadcrumb"] = true,
@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								q(26986, {	-- The Scarlet Monastery (H)
 									["qg"] = 12920,	-- Doctor Gregory Victor <Trauma Surgeon>
-									["coord"] = { 68.4, 37.8, ARATHI_HIGHLANDS },
+									["coord"] = { 68.4, 37.8, MAP.ARATHI_HIGHLANDS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = HORDE_ONLY,
 									["isBreadcrumb"] = true,
@@ -190,13 +190,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								q(1051, {	-- Vorrel's Revenge
 									["qg"] = 3981,	-- Vorrel Sengutz
 									["timeline"] = { REMOVED_4_0_3 },
-									["maps"] = { ALTERAC_MOUNTAINS, HILLSBRAD_FOOTHILLS },
+									["maps"] = { MAP.ALTERAC_MOUNTAINS, MAP.HILLSBRAD_FOOTHILLS },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 25,
 									["groups"] = {
 										objective(1, {	-- 0/1 Vorrel's Wedding Ring
 											["provider"] = { "i", 5538 },	-- Vorrel's Wedding Ring
-											["coord"] = { 32.3, 32.8, ALTERAC_MOUNTAINS },
+											["coord"] = { 32.3, 32.8, MAP.ALTERAC_MOUNTAINS },
 											["cr"] = 3984,	-- Nancy Vishas
 										}),
 										i(4643, {	-- Grimsteel Cape
@@ -318,7 +318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								q(1049, {	-- Compendium of the Fallen
 									["qg"] = 3978,	-- Sage Truthseeker
-									["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
+									["coord"] = { 34.6, 47.2, MAP.THUNDER_BLUFF },
 									["timeline"] = { REMOVED_4_0_3 },
 									["races"] = exclude(UNDEAD, HORDE_ONLY),
 									["lvl"] = 28,
@@ -351,7 +351,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								q(1050, {	-- Mythology of the Titans
 									["qg"] = 3979,	-- Librarian Mae Paledust <Explorers' League>
-									["coord"] = { 75.0, 12.5, IRONFORGE },
+									["coord"] = { 75.0, 12.5, MAP.IRONFORGE },
 									["timeline"] = { REMOVED_4_0_3 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 28,
@@ -371,9 +371,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								q(1951, {	-- Rituals of Power
 									["sourceQuest"] = 1950,	-- Get the Scoop
 									["qg"] = 6548,	-- Magus Tirth
-									["coord"] = { 47.82, 75.8, THOUSAND_NEEDLES },
+									["coord"] = { 47.82, 75.8, MAP.THOUSAND_NEEDLES },
 									["timeline"] = { REMOVED_4_0_3 },
-									["maps"] = { DUSTWALLOW_MARSH },
+									["maps"] = { MAP.DUSTWALLOW_MARSH },
 									["classes"] = { MAGE },
 									["lvl"] = 30,
 									["groups"] = {
@@ -409,7 +409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								q(1160, {	-- Test of Lore (5/6)
 									["sourceQuest"] = 1159,	-- Test of Lore (4/6)
 									["qg"] = 4488,	-- Parqual Fintallas
-									["coord"] = { 57.8, 65.4, UNDERCITY },
+									["coord"] = { 57.8, 65.4, MAP.UNDERCITY },
 									["timeline"] = { REMOVED_4_0_3 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 28,
@@ -449,7 +449,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								q(26987, {	-- The Right Way
 									["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
-									["coord"] = { 79.0, 79.6, THE_HINTERLANDS },
+									["coord"] = { 79.0, 79.6, MAP.THE_HINTERLANDS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = HORDE_ONLY,
 									["isBreadcrumb"] = true,
@@ -543,7 +543,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								q(26988, {	-- Moving Things Along
 									["qg"] = 14739,	-- Mystic Yayo'jin <Reagents>
-									["coord"] = { 78.8, 78.4, THE_HINTERLANDS },
+									["coord"] = { 78.8, 78.4, MAP.THE_HINTERLANDS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = HORDE_ONLY,
 									["isBreadcrumb"] = true,
@@ -710,7 +710,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								q(26991, {	-- Enemies Abroad
 									["qg"] = 4791,	-- Nazeer Bloodpike
-									["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
+									["coord"] = { 35.2, 30.6, MAP.DUSTWALLOW_MARSH },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = HORDE_ONLY,
 									["isBreadcrumb"] = true,
@@ -718,7 +718,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								q(26985, {	-- Pitting Madness Against Madness
 									["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
-									["coord"] = { 46.0, 49.0, FERALAS },
+									["coord"] = { 46.0, 49.0, MAP.FERALAS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = ALLIANCE_ONLY,
 									["isBreadcrumb"] = true,
@@ -836,7 +836,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					applyclassicphase(SOD_PHASE_TWO, q(79946, {	-- A Brother In Need
 						["sourceQuest"] = 79945,	-- Orders from the Grand Crusader
 						["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
-						["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+						["coord"] = { 37.8, 31.6, MAP.STORMWIND_CITY },
 						["classes"] = { PALADIN },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 26,
@@ -852,14 +852,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					applyclassicphase(SOD_PHASE_TWO, q(79970, {	-- Aeonas the Vindicated
 						["sourceQuest"] = 79963,	-- By The Light's Grace
 						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
-						["maps"] = { STORMWIND_CITY },
+						["maps"] = { MAP.STORMWIND_CITY },
 						["classes"] = { PALADIN },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 26,
 						["groups"] = {
 							objective(1, {	-- Meet Aeonas at the Cathedral of Light in Stormwind
 								["provider"] = { "n", 218160 },	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-								["coord"] = { 37.6, 31.6, STORMWIND_CITY },
+								["coord"] = { 37.6, 31.6, MAP.STORMWIND_CITY },
 							}),
 							recipe(426178),	-- Engrave Belt - Sheath of Light
 						},
@@ -892,7 +892,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(1113, {	-- Hearts of Zeal
 						["sourceQuest"] = 1109,	-- Going, Going, Guano!
 						["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
-						["coord"] = { 48.82, 69.28, UNDERCITY },
+						["coord"] = { 48.82, 69.28, MAP.UNDERCITY },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 30,
@@ -905,7 +905,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(1053, {	-- In the Name of the Light
 						["sourceQuest"] = 1052,	-- Down the Scarlet Path (2/2)
 						["qg"] = 3980,	-- Raleigh the Devout
-						["coord"] = { 51.5, 58.4, HILLSBRAD_FOOTHILLS },
+						["coord"] = { 51.5, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 34,
@@ -938,7 +938,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					q(14355, {	-- Into The Scarlet Monastery
 						["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
-						["coord"] = { 56.1, 92.1, UNDERCITY },
+						["coord"] = { 56.1, 92.1, MAP.UNDERCITY },
 						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] =
@@ -973,7 +973,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					q(1048, {	-- Into The Scarlet Monastery
 						["qg"] = 2425,	-- Varimathras
-						["coord"] = { 56.3, 92.2, UNDERCITY },
+						["coord"] = { 56.3, 92.2, MAP.UNDERCITY },
 						["timeline"] = { REMOVED_3_3_0 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 33,

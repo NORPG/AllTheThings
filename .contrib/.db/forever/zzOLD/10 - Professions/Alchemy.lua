@@ -46,12 +46,12 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				4611,	-- Doctor Herbert Halsey
 			},
 			["coords"] = {
-				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
-				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
-				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
-				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
+				{ 54.0, 38.6, MAP.DARNASSUS },	-- Ainethil
+				{ 55.6, 45.8, MAP.ORGRIMMAR },	-- Yelmak
+				{ 46.8, 33.6, MAP.THUNDER_BLUFF },	-- Bena Winterhoof
+				{ 66.6, 55.0, MAP.IRONFORGE },	-- Tally Berryfizz
+				{ 55.6, 85.8, MAP.STORMWIND_CITY },	-- Lilyssia Nightbreeze
+				{ 47.6, 72.8, MAP.UNDERCITY },	-- Doctor Herbert Halsey
 			},
 			["timeline"] = { ADDED_4_3_0 },
 			["repeatable"] = true,
