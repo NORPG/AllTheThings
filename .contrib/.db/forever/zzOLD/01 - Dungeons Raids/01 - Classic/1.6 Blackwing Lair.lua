@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 		-- #endif
 		["provider"] = { "o", 179879 },	-- Orb of Command
 		["mapID"] = MAP.BLACKWING_LAIR,
-		["coord"] = { 64.2, 71.0, BLACKROCK_MOUNTAIN },
+		["coord"] = { 64.2, 71.0, MAP.BLACKROCK_MOUNTAIN },
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(50, 50, 25),

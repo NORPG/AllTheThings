@@ -1,9 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
--- #if BEFORE 4.0.3
--- CRIEVE NOTE: This document is only relevant to Classic.
--- I wanted to add Weapon Masters to the zones without polluting the main files.
+-- CRIEVE NOTE: I wanted to add Weapon Masters to the zones without polluting the main files.
 WEAPON_SKILL_BOWS = {
 	["recipeID"] = 264,	-- Bows
 	["classes"] = {
@@ -231,24 +229,6 @@ root(ROOTS.Zones, {
 				}),
 			})),
 		}),
-		-- #if AFTER TBC
-		m(THE_EXODAR, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
-				n(16773, {	-- Handiir <Weapon Master>
-					["coord"] = { 53.6, 84.8, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						WEAPON_SKILL_CROSSBOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_ONE_HANDED_MACES,
-						WEAPON_SKILL_ONE_HANDED_SWORDS,
-						WEAPON_SKILL_TWO_HANDED_MACES,
-						WEAPON_SKILL_TWO_HANDED_SWORDS,
-					},
-				}),
-			})),
-		}),
-		-- #endif
 		m(MAP.THUNDER_BLUFF, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11869, {	-- Ansekhwa <Weapon Master>
@@ -290,24 +270,6 @@ root(ROOTS.Zones, {
 				}),
 			})),
 		}),
-		-- #if AFTER TBC
-		m(SILVERMOON_CITY, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
-				n(16621, {	-- Ileda <Weapon Master>
-					["coord"] = { 91.0, 38.6, SILVERMOON_CITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						WEAPON_SKILL_BOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_ONE_HANDED_SWORDS,
-						WEAPON_SKILL_POLEARMS,
-						WEAPON_SKILL_THROWN,
-						WEAPON_SKILL_TWO_HANDED_SWORDS,
-					},
-				}),
-			})),
-		}),
-		-- #endif
 		m(MAP.STORMWIND_CITY, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11867, {	-- Woo Ping <Weapon Master>
@@ -345,24 +307,5 @@ root(ROOTS.Zones, {
 				}),
 			})),
 		}),
-		-- #if AFTER TBC
-		m(EVERSONG_WOODS, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
-				n(17005, {	-- Duelist Larenis <Weapon Master>
-					["coord"] = { 48.4, 46.0, EVERSONG_WOODS },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						WEAPON_SKILL_BOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_ONE_HANDED_SWORDS,
-						WEAPON_SKILL_POLEARMS,
-						WEAPON_SKILL_THROWN,
-						WEAPON_SKILL_TWO_HANDED_SWORDS,
-					},
-				}),
-			})),
-		}),
-		-- #endif
 	}),
 });
--- #endif

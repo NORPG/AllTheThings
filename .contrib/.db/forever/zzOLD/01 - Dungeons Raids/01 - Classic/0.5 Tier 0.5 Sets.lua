@@ -2680,10 +2680,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				}),
 				{	-- Back to the Beginning
 					["allianceQuestData"] = q(8997, {	-- Back to the Beginning [A]
-						["maps"] = { BLACKROCK_MOUNTAIN, MAP.IRONFORGE },
+						["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8998, {	-- Back to the Beginning [H]
-						["maps"] = { BLACKROCK_MOUNTAIN, MAP.ORGRIMMAR },
+						["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.ORGRIMMAR },
 					}),
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8996,	-- Return to Bodley
@@ -2747,7 +2747,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						["coord"] = { 34.95, 38.29, MAP.ORGRIMMAR },
 					}),
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.BLACKROCK_SPIRE,
 					},
 					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
@@ -2757,7 +2757,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8962, {	-- Components of Importance [WARRIOR, MAGE]
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.SILITHUS },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.SILITHUS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARRIOR, MAGE },
 					["lvl"] = 58,
@@ -2777,7 +2777,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8963, {	-- Components of Importance [WARLOCK, DRUID]
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARLOCK, DRUID },
 					["lvl"] = 58,
@@ -2794,7 +2794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8964, {	-- Components of Importance [HUNTER, ROGUE]
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.EASTERN_PLAGUELANDS },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.EASTERN_PLAGUELANDS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { HUNTER, ROGUE },
 					["lvl"] = 58,
@@ -2808,7 +2808,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8965, {	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { PALADIN, PRIEST, SHAMAN },
 					["lvl"] = 58,
@@ -2858,7 +2858,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
@@ -2925,7 +2925,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						8969,	-- The Left Piece of Lord Valthalak's Amulet [PALADIN, PRIEST, SHAMAN]
 					},
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.DUSTWALLOW_MARSH },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.DUSTWALLOW_MARSH },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/20 Bloodkelp
@@ -3009,7 +3009,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8994,	-- Final Preparations
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
@@ -3022,7 +3022,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8985, {	-- More Components of Importance [WARRIOR, ROGUE]
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARRIOR, ROGUE },
 					["lvl"] = 58,
@@ -3041,7 +3041,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8986, {	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.SILITHUS },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.SILITHUS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["lvl"] = 58,
@@ -3063,7 +3063,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8987, {	-- More Components of Importance [PRIEST, MAGE]
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.EASTERN_PLAGUELANDS },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.EASTERN_PLAGUELANDS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { PRIEST, MAGE },
 					["lvl"] = 58,
@@ -3079,7 +3079,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8988, {	-- More Components of Importance [HUNTER, WARLOCK]
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { HUNTER, WARLOCK },
 					["lvl"] = 58,
@@ -3107,7 +3107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
 					["qg"] = 16073,	-- Spirit of Lord Valthalak
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = { { "i", 22056, 1 } },	-- Brazier of Beckoning [Lord Valthalak]
@@ -3213,7 +3213,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8962,	-- Components of Importance [WARRIOR, MAGE]
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
@@ -3235,7 +3235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8963,	-- Components of Importance [WARLOCK, DRUID]
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.DIRE_MAUL,
 						239,	-- Warpwood Quarter
 					},
@@ -3257,7 +3257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8968, {	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
 					["sourceQuest"] = 8964,	-- Components of Importance [HUNTER, ROGUE]
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien and Sothos]
@@ -3279,7 +3279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8969, {	-- The Left Piece of Lord Valthalak's Amulet [PALADIN, PRIEST, SHAMAN]
 					["sourceQuest"] = 8965,	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
@@ -3299,7 +3299,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8985,	-- More Components of Importance [WARRIOR, ROGUE]
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.DIRE_MAUL,
 						239,	-- Warpwood Quarter
 					},
@@ -3327,7 +3327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8986,	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.BLACKROCK_SPIRE,
 					},
 					["cost"] = {
@@ -3353,7 +3353,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8991, {	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
 					["sourceQuest"] = 8987,	-- More Components of Importance [PRIEST, MAGE]
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
@@ -3380,7 +3380,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8992, {	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
 					["sourceQuest"] = 8988,	-- More Components of Importance [HUNTER, WARLOCK]
 					["qg"] = 16033,	-- Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
@@ -3408,7 +3408,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["qg"] = 16033,	-- Bodley
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,
+						MAP.BLACKROCK_MOUNTAIN,
 						MAP.BLACKROCK_DEPTHS,
 						MAP.BLACKROCK_SPIRE,
 						MAP.EASTERN_PLAGUELANDS,

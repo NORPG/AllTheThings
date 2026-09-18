@@ -1206,6 +1206,7 @@ _.HeaderConstants = {
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
 	LUNAR_FESTIVAL_HEADER = -580,
 	MIDSUMMER_FIRE_FESTIVAL_HEADER = -582,
+	NOBLEGARDEN_HEADER = -583,
 	OUTDOOR_ZONES = -732,
 	PET_BATTLES = -43,
 	PROFESSIONS = -44,
@@ -1236,7 +1237,6 @@ _.HeaderData = {
 localize(L.HEADER_NAMES, {
 	[-11] = "New Character",
 	[-12] = ACHIEVEMENTS,
-	[-16] = RAID_BOSSES,
 	[-19] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,
 	[-21] = "Common Dungeon Drops",
 	[-22] = "Common Vendor Items",
@@ -1316,6 +1316,7 @@ localize(L.HEADER_NAMES, {
 	[-579] = "Love is in the Air",
 	[-580] = "Lunar Festival",
 	[-582] = "Midsummer Fire Festival",
+	[-583] = "Noblegarden",
 	[-586] = "Seasonal Fish: Summer Bass",
 	[-587] = "Seasonal Fish: Winter Squid",
 	[-588] = "Stranglethorn Fishing Extravaganza",
@@ -1323,6 +1324,11 @@ localize(L.HEADER_NAMES, {
 	[-698] = TRANSMOG_SOURCE_4,
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 	[-723] = "Elemental Invasions",
+	[-724] = "Elders of Eastern Kingdoms",
+	[-725] = "Elders of Kalimdor",
+	[-726] = "Elders of the Alliance",
+	[-727] = "Elders of the Dungeons",
+	[-728] = "Elders of the Horde",
 	[-731] = CHARACTER,
 	[-732] = BUG_CATEGORY2,
 	[-734] = BATTLE_PET_SOURCE_7,
@@ -1360,7 +1366,6 @@ localize(L.HEADER_LORE, {
 localize(L.HEADER_ICONS, {
 	[-11] = 1530081,
 	[-12] = _.asset("category_achievements"),
-	[-16] = _.asset("interface_world_boss"),
 	[-19] = _.asset("category_commonbossdrop"),
 	[-21] = 3753263,
 	[-22] = 133785,
@@ -1440,6 +1445,7 @@ localize(L.HEADER_ICONS, {
 	[-579] = _.asset("holiday_love"),
 	[-580] = _.asset("holiday_lunar"),
 	[-582] = _.asset("holiday_midsummer"),
+	[-583] = _.asset("holiday_noblegarden"),
 	[-586] = 133889,
 	[-587] = 133899,
 	[-588] = _.asset("holiday_stv_fishing"),
@@ -1447,6 +1453,11 @@ localize(L.HEADER_ICONS, {
 	[-698] = _.asset("category_worlddrops"),
 	[-721] = 237382,
 	[-723] = 135793,
+	[-724] = 135982,
+	[-725] = 135982,
+	[-726] = 135982,
+	[-727] = 135982,
+	[-728] = 135982,
 	[-731] = _.asset("category_itemsets"),
 	[-732] = _.asset("category_zones"),
 	[-734] = _.asset("category_event"),
@@ -1460,12 +1471,14 @@ localize(L.HEADER_EVENTS, {
 	[-579] = 9,
 	[-580] = 18,
 	[-582] = 11,
+	[-583] = 15,
 	[-586] = 133889,
 	[-587] = 133899,
 	[-588] = 6,
 })
 localize(L.EVENT_REMAPPING, {
 	[141] = 14,
+	[181] = 15,
 	[201] = 13,
 	[263] = 1,
 	[264] = 1,
@@ -1489,6 +1502,21 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(11, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=7,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=2,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(18, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=3,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=3,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=4,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=4,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=5,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=5,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(9, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=5,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=5,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=6,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=6,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=7,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=7,["year"]=2027})
 })
 -- Filter Database Module
 _.FilterConstants = {
@@ -2350,10 +2378,16 @@ localize(L.HEADER_NAMES, {
 	[-579] = "Liebe liegt in der Luft",
 	[-580] = "Mondfest",
 	[-582] = "Sonnenwendfest",
+	[-583] = "Nobelgartenfest",
 	[-586] = "Saisonfisch: Sommerbarsch",
 	[-587] = "Saisonfisch: Winterkalmar",
 	[-588] = "Anglerwettbewerb im Schlingendorntal",
 	[-611] = "Adel der Silithiden",
+	[-724] = "Die Urahnen der Östlichen Königreiche",
+	[-725] = "Die Urahnen von Kalimdor",
+	[-726] = "Die Urahnen der Allianz",
+	[-727] = "Die Urahnen der Dungeons",
+	[-728] = "Die Urahnen der Horde",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -2739,10 +2773,16 @@ localize(L.HEADER_NAMES, {
 	[-579] = "De l'amour dans l'air",
 	[-580] = "Fête lunaire",
 	[-582] = "Fête du Feu du solstice d'été",
+	[-583] = "Le Jardin des nobles",
 	[-586] = "Poisson de saison : bar d'été",
 	[-587] = "Poisson de saison : calmar d'hiver",
 	[-588] = "Concours de pêche de Strangleronce",
 	[-611] = "Famille royale silithide",
+	[-724] = "Les Anciens des royaumes de l'Est",
+	[-725] = "Les Anciens de Kalimdor",
+	[-726] = "Les Anciens de l'Alliance",
+	[-727] = "Les Anciens des donjons",
+	[-728] = "Les Anciens de la Horde",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-47] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -2832,6 +2872,11 @@ localize(L.HEADER_NAMES, {
 	[-483] = "Scettro delle Sabbie Mutevoli",
 	[-586] = "Pesce di stagione: spigola estiva",
 	[-587] = "Pesce di stagione: calamari invernali",
+	[-724] = "Anziani dei Regni Orientali",
+	[-725] = "Anziani di Kalimdor",
+	[-726] = "Anziani dell'Alleanza",
+	[-727] = "Anziani delle Spedizioni",
+	[-728] = "Anziani dell'Orda",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -2972,10 +3017,16 @@ localize(L.HEADER_NAMES, {
 	[-579] = "O Amor Está No Ar",
 	[-580] = "Festival da Lua",
 	[-582] = "Festival do Fogo do Solstício",
+	[-583] = "Jardinova",
 	[-586] = "Peixe sazonal: robalo de verão",
 	[-587] = "Peixe sazonal: Lula de Inverno",
 	[-588] = "Festerê de Pesca da Selva do Espinhaço",
 	[-611] = "Realeza Silítidea",
+	[-724] = "Anciãos dos Reinos do Leste",
+	[-725] = "Anciãos de Kalimdor",
+	[-726] = "Anciãos da Aliança",
+	[-727] = "Anciãos das Masmorras",
+	[-728] = "Anciãos da Horda",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-59] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -3718,10 +3769,16 @@ localize(L.HEADER_NAMES, {
 	[-579] = "Любовная лихорадка",
 	[-580] = "Лунный фестиваль",
 	[-582] = "Огненный солнцеворот",
+	[-583] = "Сад чудес",
 	[-586] = "Сезонная рыба: летний окунь",
 	[-587] = "Сезонная рыба: зимний кальмар",
 	[-588] = "Рыбомания Тернистой долины",
 	[-611] = "Силитидская знать",
+	[-724] = "Предки Восточных королевств",
+	[-725] = "Предки Калимдора",
+	[-726] = "Предки Альянса",
+	[-727] = "Предки в подземельях",
+	[-728] = "Предки Орды",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -3835,10 +3892,16 @@ localize(L.HEADER_NAMES, {
 	[-579] = "온누리에 사랑을",
 	[-580] = "달의 축제",
 	[-582] = "한여름 불꽃축제",
+	[-583] = "귀족의 정원",
 	[-586] = "제철 생선: 여름 농어",
 	[-587] = "제철 생선: 겨울 오징어",
 	[-588] = "가시덤불 골짜기 낚시왕 선발대회",
 	[-611] = "실리시드 왕실",
+	[-724] = "동부 왕국의 장로",
+	[-725] = "칼림도어의 장로",
+	[-726] = "얼라이언스의 장로",
+	[-727] = "던전의 장로",
+	[-728] = "호드의 장로",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-59] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -4706,11 +4769,17 @@ localize(L.HEADER_NAMES, {
 	[-579] = "Amor en el aire",
 	[-580] = "Festival Lunar",
 	[-582] = "Festival de Fuego del Solsticio de Verano",
+	[-583] = "Jardín Noble",
 	[-586] = "Pescado de temporada: lubina de verano",
 	[-587] = "Pescado de temporada: calamares de invierno",
 	[-588] = "Gran espectáculo de pesca de Tuercespina",
 	[-611] = "Realeza Silitida",
 	[-723] = "Incursiones elementales",
+	[-724] = "Ancestros de los Reinos del Este",
+	[-725] = "Ancestros de Kalimdor",
+	[-726] = "Ancestros de la Alianza",
+	[-727] = "Ancestros de las mazmorras",
+	[-728] = "Ancestros de la Horda",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Los brujos pueden enseñar nuevos trucos a sus demonios. Algunos grimorios de nivel superior solo se pueden comprar al Instructor de Demonios en las capitales de tu facción.",
@@ -5100,6 +5169,7 @@ localize(L.HEADER_NAMES, {
 	[-74] = "Dragones de pesadilla",
 	[-367] = "Defensores de Atal'ai",
 	[-723] = "Invasiones elementales",
+	[-727] = "Ancestros de los calabozos",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
@@ -6238,11 +6308,17 @@ localize(L.HEADER_NAMES, {
 	[-579] = "情人节",
 	[-580] = "春节",
 	[-582] = "仲夏火焰节",
+	[-583] = "复活节",
 	[-586] = "时令鱼类：夏季鲈鱼",
 	[-587] = "时令鱼类：冬鱿鱼",
 	[-588] = "荆棘谷钓鱼大赛",
 	[-611] = "安其拉三宝",
 	[-723] = "元素入侵",
+	[-724] = "东部王国的长者",
+	[-725] = "卡利姆多的长者",
+	[-726] = "联盟的长者",
+	[-727] = "地下城中的长者",
+	[-728] = "部落的长者",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "术士可以教导他们的恶魔新技能，一些高等级的魔典只能从你阵营首都的恶魔训练师那里购买。",
@@ -7082,10 +7158,16 @@ localize(L.HEADER_NAMES, {
 	[-579] = "愛就在身邊",
 	[-580] = "新年慶典",
 	[-582] = "仲夏火焰節慶",
+	[-583] = "貴族花園",
 	[-586] = "季節性魚類：夏日鱸魚",
 	[-587] = "季節性魚類：冬魷魚",
 	[-588] = "荊棘谷釣魚大賽",
 	[-611] = "異種蠍皇族",
+	[-724] = "東部王國的長者",
+	[-725] = "卡林多的長者",
+	[-726] = "聯盟的長者",
+	[-727] = "地城中的長者",
+	[-728] = "部落的長者",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "術士可以教導他們的惡魔新技能，一些高等級的魔典只能從你陣營首都的惡魔訓練師那裡購買。",

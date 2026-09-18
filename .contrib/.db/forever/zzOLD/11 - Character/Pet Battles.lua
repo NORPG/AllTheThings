@@ -304,7 +304,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		header(HEADERS.Quest, 58458, {	-- Pet Battle Challenge: Blackrock Depths
 			["sourceQuest"] = 58457,	-- Shadows of Blackrock
 			["provider"] = { "n", 161782 },	-- Burt Macklyn
-			["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
+			["coord"] = { 33.1, 23.1, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 			["maps"] = {
 				1578,	-- Pet Dungeon
 			},
@@ -333,7 +333,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 						58456,	-- Shadowy Showdown (H)
 					},
 					["provider"] = { "n", 161782 },	-- Burt Macklyn
-					["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["coord"] = { 33.1, 23.1, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 					["groups"] = {
 						spell(314215),	-- Manapoof Link: Blackrock Depths
@@ -342,7 +342,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				q(58458, {	-- Pet Battle Challenge: Blackrock Depths
 					["sourceQuest"] = 58457,	-- Shadows of Blackrock
 					["provider"] = { "n", 161782 },	-- Burt Macklyn
-					["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["coord"] = { 33.1, 23.1, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					["isWeekly"] = true,
 					["groups"] = { i(174360) },	-- Shadowy Gem
 				}),
@@ -354,7 +354,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					},
 				}),
 				n(161782, {	-- Burt Macklyn
-					["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["coord"] = { 33.1, 23.1, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					["groups"] = {
 						i(174829, {	-- Tinyclaw (PET!)
 							["cost"] = { { "i", 174360, 2 }, },	-- 2x Shadowy Gem

@@ -915,10 +915,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 	m(MAP.TANARIS, {
 		["lore"] = "The Tanaris Desert is vast and unexplored. It is a land of endless sands and cloudless skies. The southern Tanaris Desert is more mountainous than the north, boasting canyons and high bluffs. Numerous tunnels run beneath the sands, purportedly infested with the mysterious silithid. Other creatures in the desert include tallstriders, lions, kodo beasts, drakes and dragons — many the offspring of mighty Nozdormu, who is said to make this land his home.\n\nThe only bit of civilization is Gadgetzhan, a goblin trading post. Many Ironforge prospectors stock up on supplies here before heading out in search of the lost Titan city of Uldum.",
 		["icon"] = 236846,
-		["maps"] = {
-			72,	-- The Noxious Lair
-			73,	-- The Gaping Chasm
-		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(851),	-- Explore Tanaris
@@ -1026,24 +1022,12 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				fp(39, {	-- Gadgetzan, Tanaris
 					["cr"] = 7823,	-- Bera Stonehammer <Gryphon Master>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 51.4, 29.5, MAP.TANARIS },
-						-- #else
-						{ 51.0, 29.2, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 51.0, 29.2, MAP.TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(40, {	-- Gadgetzan, Tanaris
 					["cr"] = 7824,	-- Bulkrek Ragefist <Wind Rider Master>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 52.0, 27.6, MAP.TANARIS },
-						-- #else
-						{ 51.6, 26.6, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 51.6, 26.6, MAP.TANARIS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(532, {	-- Gunstan's Dig, Tanaris
@@ -1442,13 +1426,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						8125,	-- Dirge Quikcleave
 						-- #endif
 					},
-					["coords"] = {
-						-- #if AFTER 4.0.3
-						{ 52.4, 29.0, MAP.TANARIS },
-						-- #else
-						{ 52.6, 28.1, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 52.6, 28.1, MAP.TANARIS },
 					["cost"] = {
 						{ "i", 12207, 12 },	-- Giant Egg
 						{ "i", 7974, 10 },	-- Zesty Clam Meat
@@ -3344,16 +3322,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 40,
 					-- #endif
 				}),
-				warchiefscommand(q(28509, {	-- Warchief's Command: Tanaris!
-					["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6, ADDED_11_1_0 },	-- possibly earlier, but currently unable to be obtained
-					["maps"] = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level . (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level . (TODO: Test max level)
-					["lvl"] = { 44, 48 },
-					-- #endif
-				})),
 				q(1690, {	-- Wastewander Justice
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 					["coord"] = { 52.5, 28.5, MAP.TANARIS },
@@ -3449,28 +3417,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 			}),
 			n(RARES, {
-				n(47386, {	-- Ainamiss the Hive Queen
-					["coords"] = {
-						{ 33.0, 49.0, MAP.TANARIS },
-						{ 34.0, 45.4, MAP.TANARIS },
-						{ 35.4, 44.4, MAP.TANARIS },
-						{ 36.6, 42.6, MAP.TANARIS },
-						{ 36.8, 46.6, MAP.TANARIS },
-					},
-					["timeline"] = { ADDED_4_0_1 },
-				}),
-				n(44759, {	-- Andre Firebeard
-					["coord"] = { 69.6, 56.8, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
-				}),
-				n(44761, {	-- Aquementas the Unchained
-					["coord"] = { 69.6, 50.0, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
-				}),
-				n(44750, {	-- Caliph Scorpidsting
-					["coord"] = { 47.0, 65.2, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
-				}),
 				n(8202, {	-- Cyclok the Mad
 					["coords"] = {
 						{ 39.0, 54.0, MAP.TANARIS },
@@ -3478,14 +3424,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ 46.0, 66.2, MAP.TANARIS },
 						{ 40.6, 72.8, MAP.TANARIS },
 					},
-					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(8207, {	-- Emberwing [CATA+] / Greater Firebird
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 44.6, 40.6, MAP.TANARIS },
-						{ 48.2, 45.6, MAP.TANARIS },
-						-- #else
 						{ 42.2, 36.4, MAP.TANARIS },
 						{ 44.6, 35.6, MAP.TANARIS },
 						{ 46.4, 33.0, MAP.TANARIS },
@@ -3494,63 +3435,29 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ 49.6, 38.4, MAP.TANARIS },
 						{ 50.8, 39.0, MAP.TANARIS },
 						{ 53.4, 39.4, MAP.TANARIS },
-						-- #endif
 					},
-				}),
-				n(44714, {	-- Fronkle the Disturbed
-					["coord"] = { 57.0, 89.8, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(8205, {	-- Haarka the Ravenous
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 56.6, 68.2, MAP.TANARIS },
-						-- #else
 						{ 53.6, 70.2, MAP.TANARIS },
 						{ 54.6, 73.6, MAP.TANARIS },
 						{ 56.2, 73.6, MAP.TANARIS },
 						{ 57.0, 71.4, MAP.TANARIS },
 						{ 57.0, 68.8, MAP.TANARIS },
-						-- #endif
 					},
-				}),
-				n(47387, {	-- Harakiss the Infestor
-					["coords"] = {
-						{ 55.8, 64.6, MAP.TANARIS },
-						{ 52.6, 65.6, MAP.TANARIS },
-						{ 56.2, 68.6, MAP.TANARIS },
-						{ 53.0, 70.4, MAP.TANARIS },
-						{ 50.6, 72.6, MAP.TANARIS },
-					},
-					["timeline"] = { ADDED_4_0_1 },
-				}),
-				n(39186, {	-- Hellgazer
-					["coord"] = { 40.8, 41.2, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(8200, {	-- Jin'Zallah the Sandbringer
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 37.6, 25.8, MAP.TANARIS },
-						{ 40.8, 30.2, MAP.TANARIS },
-						-- #else
 						{ 37.8, 24.8, MAP.TANARIS },
 						{ 42.2, 22.6, MAP.TANARIS },
 						{ 40.0, 28.6, MAP.TANARIS },
-						-- #endif
 					},
 				}),
 				n(8203, {	-- Kregg Keelhaul
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 71.2, 46.8, MAP.TANARIS },
-						{ 73.6, 47.6, MAP.TANARIS },
-						{ 75.0, 45.4, MAP.TANARIS },
-						-- #else
 						{ 72.8, 46.6, MAP.TANARIS },
 						{ 74.8, 47.6, MAP.TANARIS },
 						{ 76.0, 45.0, MAP.TANARIS },
-						-- #endif
 					},
 				}),
 				n(8208, {	-- Murderous Blisterpaw
@@ -3564,23 +3471,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				n(44767, {	-- Occulus the Corrupted
-					["coord"] = { 61.0, 50.6, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
-				}),
 				n(8201, {	-- Omgorn the Lost
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 41.2, 49.8, MAP.TANARIS },
-						{ 42.6, 52.8, MAP.TANARIS },
-						{ 43.2, 55.4, MAP.TANARIS },
-						{ 40.6, 58.4, MAP.TANARIS },
-						{ 38.8, 58.2, MAP.TANARIS },
-						{ 37.8, 56.8, MAP.TANARIS },
-						{ 38.6, 54.6, MAP.TANARIS },
-						{ 38.6, 52.0, MAP.TANARIS },
-						{ 39.6, 50.6, MAP.TANARIS },
-						-- #else
 						{ 38.4, 54.2, MAP.TANARIS },
 						{ 38.8, 50.6, MAP.TANARIS },
 						{ 40.0, 49.8, MAP.TANARIS },
@@ -3597,7 +3489,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ 46.8, 66.8, MAP.TANARIS },
 						{ 44.0, 66.4, MAP.TANARIS },
 						{ 45.6, 63.6, MAP.TANARIS },
-						-- #endif
 					},
 					["groups"] = {
 						i(17055, {	-- Changuk Smasher
@@ -3605,58 +3496,28 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				n(39183, {	-- Scorpitar
-					["coord"] = { 49.6, 58.6, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
-				}),
-				n(39185, {	-- Slaverjaw
-					["coord"] = { 40.2, 67.4, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
-				}),
 				n(8204, {	-- Soriid the Devourer
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 35.0, 46.2, MAP.TANARIS },
-						-- #else
 						{ 31.6, 45.0, MAP.TANARIS },
 						{ 32.6, 44.2, MAP.TANARIS },
 						{ 34.8, 43.2, MAP.TANARIS },
 						{ 34.8, 46.0, MAP.TANARIS },
-						-- #endif
 					},
-				}),
-				n(44722, {	-- Twisted Reflection of Narain
-					["coord"] = { 64.6, 19.8, MAP.TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(8199, {	-- Warleader Krazzilak
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 40.8, 29.6, MAP.TANARIS },
-						-- #else
 						{ 37.0, 24.2, MAP.TANARIS },
 						{ 38.6, 24.2, MAP.TANARIS },
 						{ 41.0, 27.4, MAP.TANARIS },
 						{ 42.6, 22.8, MAP.TANARIS },
 						{ 44.2, 24.8, MAP.TANARIS },
-						-- #endif
 					},
 				}),
 			}),
 			n(TREASURES, {
 				o(142184, {	-- Captain's Chest
-					["description"] =
-						-- #if AFTER CATA
-						"The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of two sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
-						-- #else
-						"The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
-						-- #endif
-					["coords"] = {
-						{ 76.5, 45.8, MAP.TANARIS },
-						-- #if AFTER CATA
-						{ 75.3, 45.9, MAP.TANARIS },
-						-- #endif
-					},
+					["description"] = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
+					["coord"] = { 76.5, 45.8, MAP.TANARIS },
 					["cost"] = { { "i", 9249, 1 } },	-- 1x Captain's Key
 					["groups"] = {
 						i(9359, {	-- Southsea Lamp (Patch 9.1.5: Renamed from 'Wirt's Third Leg')
@@ -3672,13 +3533,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			n(VENDORS, {
 				n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 50.8, 28.0, MAP.TANARIS },
-						-- #else
-						{ 50.8, 27.0, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 50.8, 27.0, MAP.TANARIS },
 					["groups"] = {
 						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
@@ -3726,13 +3581,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				-- #endif
 				n(8131, {	-- Blizrik Buckshot <Gunsmith>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 50.6, 28.6, MAP.TANARIS },
-						-- #else
-						{ 50.8, 27.6, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 50.8, 27.6, MAP.TANARIS },
 					["groups"] = {
 						i(18650, {	-- Schematic: EZ-Thro Dynamite II (RECIPE!)
 							["isLimited"] = true,
@@ -3840,13 +3689,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 52.6, 27.0, MAP.TANARIS },
-						-- #else
-						{ 52.4, 27.8, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 52.4, 27.8, MAP.TANARIS },
 					["groups"] = {
 						i(18046, {	-- Recipe: Tender Wolf Steak (RECIPE!)
 							-- #if CLASSIC_ANNIVERSARY
@@ -3867,25 +3710,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				n(14743, {	-- Jhordy Lapforge <Engineer>
 					["requireSkill"] = GNOMISH_ENGINEERING,
 					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 52.2, 27.8, MAP.TANARIS },
-						-- #else
-						{ 52.17, 27.88, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 52.17, 27.88, MAP.TANARIS },
 					["groups"] = {
 						r(23489),	-- Ultrasafe Transporter - Gadgetzan
 					},
 				}),
 				n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 51.2, 30.2, MAP.TANARIS },
-						-- #else
-						{ 51.5, 28.8, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 51.5, 28.8, MAP.TANARIS },
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_TWO, i(217280, {	-- Plans: Golden Scale Coif (RECIPE!)
@@ -3951,13 +3782,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				-- #endif
 				n(6568, {	-- Vizzklick <Tailoring Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 50.6, 28.6, MAP.TANARIS },
-						-- #else
-						{ 51.0, 27.3, MAP.TANARIS },
-						-- #endif
-					},
+					["coord"] = { 51.0, 27.3, MAP.TANARIS },
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_TWO, i(217244, {	-- Pattern: Crimson Silk Robe (RECIPE!)

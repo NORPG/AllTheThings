@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["description"] = "The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",
 		["mapID"] = MAP.BLACKROCK_DEPTHS,
-		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
+		["coord"] = { 39.06, 18.12, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 		["lvl"] = 42,
 		["groups"] = {
 			n(FACTIONS, {
@@ -199,7 +199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					["qg"] = 8888,	-- Franclorn Forgewright
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN },
 					["lvl"] = 48,
 				}),
 				q(3802, {	-- Dark Iron Legacy (2/2)
@@ -209,7 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "o", 164689 },	-- Monument of Franclorn Forgewright
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN },
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ironfel
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["coord"] = { 3.3, 48.3, MAP.BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1016,7 +1016,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9561,	-- Jalinda Sprig
 					["coord"] = { 85.4, 70.1, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { MAP.BLACKROCK_MOUNTAIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {

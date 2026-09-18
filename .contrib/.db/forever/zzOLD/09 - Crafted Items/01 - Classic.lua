@@ -19,30 +19,9 @@ root(ROOTS.Craftables, {
 							{ 66.6, 54.6, MAP.IRONFORGE },
 							{ 47.4, 33.73, MAP.THUNDER_BLUFF },
 							{ 51.8, 74.6, MAP.UNDERCITY },
-							-- #if AFTER TBC
-							{ 67.0, 19.2, SILVERMOON_CITY },
-							{ 28.1, 61.9, THE_EXODAR },
-							-- #endif
-							-- #if AFTER WRATH
-							{ 55.6, 85.6, MAP.STORMWIND_CITY },
-							-- #else
 							{ 46.6, 78.8, MAP.STORMWIND_CITY },
-							-- #endif
-							-- #if AFTER CATA
-							{ 57.7, 72.32, BOREAN_TUNDRA },
-							{ 41.34, 34.61, BOREAN_TUNDRA },
-							{ 54.6, 39.6, MAP.DARNASSUS },
-							{ 52.2, 36.4, HELLFIRE_PENINSULA },
-							{ 53.8, 65.8, HELLFIRE_PENINSULA },
-							{ 79.5, 30.47, HOWLING_FJORD },
-							{ 58.4, 62.75, HOWLING_FJORD },
-							{ 41.54, 33.32, NORTHREND_DALARAN },
-							{ 55.6, 45.4, MAP.ORGRIMMAR },
-							{ 45.8, 20.8, SHATTRATH_CITY },
-							-- #else
 							{ 55.8, 24.5, MAP.DARNASSUS },
 							{ 56.2, 34.2, MAP.ORGRIMMAR },
-							-- #endif
 						},]]
 					}),
 				},
@@ -54,15 +33,7 @@ root(ROOTS.Craftables, {
 						{ 56.2, 34.2, MAP.ORGRIMMAR },
 						{ 47.4, 33.73, MAP.THUNDER_BLUFF },
 						{ 51.8, 74.6, MAP.UNDERCITY },
-						-- #if AFTER TBC
-						{ 67.0, 19.2, SILVERMOON_CITY },
-						{ 28.1, 61.9, THE_EXODAR },
-						-- #endif
-						-- #if AFTER WRATH
-						{ 55.6, 85.6, MAP.STORMWIND_CITY },
-						-- #else
 						{ 46.6, 78.8, MAP.STORMWIND_CITY },
-						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_1 },
 				}, {
@@ -78,23 +49,7 @@ root(ROOTS.Craftables, {
 							{ 56.2, 34.2, MAP.ORGRIMMAR },
 							{ 47.4, 33.73, MAP.THUNDER_BLUFF },
 							{ 51.8, 74.6, MAP.UNDERCITY },
-							-- #if AFTER TBC
-							{ 52.2, 36.4, HELLFIRE_PENINSULA },
-							{ 53.8, 65.8, HELLFIRE_PENINSULA },
-							{ 45.8, 20.8, SHATTRATH_CITY },
-							{ 67.0, 19.2, SILVERMOON_CITY },
-							{ 28.1, 61.9, THE_EXODAR },
-							-- #endif
-							-- #if AFTER WRATH
-							{ 57.7, 72.32, BOREAN_TUNDRA },
-							{ 41.34, 34.61, BOREAN_TUNDRA },
-							{ 79.5, 30.47, HOWLING_FJORD },
-							{ 58.4, 62.75, HOWLING_FJORD },
-							{ 41.54, 33.32, NORTHREND_DALARAN },
-							{ 55.6, 85.6, MAP.STORMWIND_CITY },
-							-- #else
 							{ 46.6, 78.8, MAP.STORMWIND_CITY },
-							-- #endif
 						},
 						["timeline"] = { REMOVED_4_0_1 },
 					}),

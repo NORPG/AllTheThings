@@ -119,7 +119,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["coord"] = { 34.9, 27.9, MAP.BURNING_STEPPES },
 				["timeline"] = { REMOVED_6_0_3 },
-				["maps"] = { BLACKROCK_MOUNTAIN },
+				["maps"] = { MAP.BLACKROCK_MOUNTAIN },
 				["lvl"] = 55,
 			}),
 			q(27471, {	-- Blackrock Anomaly

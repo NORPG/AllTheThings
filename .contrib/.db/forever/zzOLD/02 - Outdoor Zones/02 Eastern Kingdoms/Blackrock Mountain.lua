@@ -3,38 +3,34 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
-	m(BLACKROCK_MOUNTAIN, {
+	m(MAP.BLACKROCK_MOUNTAIN, {
 		["lore"] = "Blackrock Mountain is a zone between the Burning Steppes and the Searing Gorge, linking the two regions. This zone is deceptively small and appears empty when first entered - however, it is among the most dangerous places in Azeroth. It was hotly contested between the forces of Ragnaros and his Dark Iron servants on one side and the black dragon Nefarian and his orc minions on the other. This is one of the most important areas in World of Warcraft lore.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 25,	-- Blackrock Mountain (mapID doesn't exist for a couple expansions)
 		-- #endif
 		["icon"] = 254649,
-		["maps"] = {
-			BLACKROCK_MOUNTAIN_LEVEL2,	-- Blackrock Caverns
-			BLACKROCK_MOUNTAIN_LEVEL3,	-- Blackrock Depths
-		},
 		["lvl"] = 40,
 		["groups"] = {
 			n(RARES, {
 				n(50839, {	-- Chromehound
 					["coords"] = {
-						{ 47.4, 36.0, BLACKROCK_MOUNTAIN_LEVEL3 },
-						{ 62.0, 44.8, BLACKROCK_MOUNTAIN_LEVEL3 },
-						{ 36.0, 49.6, BLACKROCK_MOUNTAIN_LEVEL3 },
-						{ 44.6, 75.0, BLACKROCK_MOUNTAIN_LEVEL3 },
-						{ 56.2, 76.0, BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 47.4, 36.0, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 62.0, 44.8, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 36.0, 49.6, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 44.6, 75.0, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 56.2, 76.0, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					},
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51066, {	-- Crystalfang
-					["coord"] = { 34.0, 20.0, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["coord"] = { 34.0, 20.0, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(9026, {	-- Overmaster Pyron
 					["coords"] = {
-						{ 36.2, 36.2, BLACKROCK_MOUNTAIN_LEVEL3 },
-						{ 40.6, 37.8, BLACKROCK_MOUNTAIN_LEVEL3 },
-						{ 37.0, 28.2, BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 36.2, 36.2, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 40.6, 37.8, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 37.0, 28.2, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					},
 					["groups"] = {
 						i(14486),	-- Pattern: Cloak of Fire (RECIPE!)
@@ -56,8 +52,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				n(8924, {	-- The Behemoth
 					["coords"] = {
-						{ 37.8, 61.3, BLACKROCK_MOUNTAIN_LEVEL3 },
-						{ 47.6, 62.0, BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 37.8, 61.3, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
+						{ 47.6, 62.0, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					},
 					["groups"] = {
 						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19259)),	-- Two of Warlords
@@ -73,12 +69,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "n", 143129 },	-- Wan'be <The Explorer>
 						{ "i", 163213 },	-- Ghostly Explorer's Skull
 					},
-					["coord"] = { 66.1, 96.6, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["coord"] = { 66.1, 96.6, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_8_0_1 },
 				}),
 				n(16033, {	-- Bodley
-					["coord"] = { 63.1, 44.4, BLACKROCK_MOUNTAIN },
+					["coord"] = { 63.1, 44.4, MAP.BLACKROCK_MOUNTAIN },
 					["provider"] = { "i", 22115 },	-- Extra-Dimensional Ghost Revealer
 					["groups"] = {
 						n(SPECIAL, {

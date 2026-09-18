@@ -1223,7 +1223,7 @@ i(19382,{f=52,u=13}),
 i(19379,{f=53,u=13}),
 i(17964,{u=13}),
 i(17969,{u=13})}})}}),
-inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,rwp=40003,u=14,g={
+inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,mapID=337,rwp=40003,u=14,g={
 h(-12,{u=14,g={
 ach(957,{maps={1434},minReputation={270,42000},u=14})}}),
 h(-31,{u=14,g={

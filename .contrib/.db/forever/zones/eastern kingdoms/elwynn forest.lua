@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-maproot(MAP.KALIMDOR, MAP.ELWYNN_FOREST, {
+maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 	lore = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",
 	icon = 236761,
 	groups = {

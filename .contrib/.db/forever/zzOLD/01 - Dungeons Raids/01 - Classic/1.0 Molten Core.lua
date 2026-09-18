@@ -47,7 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["sourceQuest"] = 7848,	-- Attunement to the Core
 		-- #endif
 		["mapID"] = MAP.MOLTEN_CORE,
-		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
+		["coord"] = { 54.18, 83.25, MAP.BLACKROCK_MOUNTAIN },
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["cr"] = 14387,	-- Lothos Riftwalker
@@ -268,7 +268,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7487, {	-- Attunement to the Core [Old]
 					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 					["qg"] = 14387,	-- Lothos Riftwaker
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
+					["coord"] = { 54.2, 83.3, MAP.BLACKROCK_MOUNTAIN },
 					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
 					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["lvl"] = 55,
@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						"Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 						-- #endif
 					["qg"] = 14387,	-- Lothos Riftwaker
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["coord"] = { 54.2, 83.3, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					["timeline"] = { ADDED_1_3_0 },
 					["maps"] = { MAP.BLACKROCK_DEPTHS },
 					["lvl"] = 55,

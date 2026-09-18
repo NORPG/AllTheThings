@@ -161,7 +161,7 @@ app:CreateWindow("Achievements", {
 					return true;
 				end,
 				OnUpdate = function(data)
-					data.visible = not not UpdateMissingAchievements and app.Debugging;
+					data.visible = not not UpdateMissingAchievements;
 					return true;
 				end,
 			}),
