@@ -621,6 +621,18 @@ qo(4,{coords={
 [1427]={{33,73.5}}},e=11}),
 s(165276,23324,{e=11,f=2,loc=41,q=1}),
 i(23247,{e=11,spellID=28806})}})}})}}),
+h(-583,{awp=16001,e=15,g={
+o(113768,{description="These eggs can be found spread out in all of the starting zones.",e=15,maps={1411,1412,1420,1426,1429,1438},type="AsGenericObjectContainer",g={
+o(113768,{e=15,type="AsSubGenericObject"}),
+o(113769,{e=15,type="AsSubGenericObject"}),
+o(113770,{e=15,type="AsSubGenericObject"}),
+o(113771,{e=15,type="AsSubGenericObject"}),
+s(163749,19028,{e=15,f=2,loc=42}),
+s(158706,6835,{e=15,f=2,loc=46,q=1}),
+s(158704,6833,{e=15,f=10,q=1}),
+i(7807,{e=15,f=55,spellID=5004}),
+i(7808,{e=15,f=55,spellID=5004}),
+i(7806,{e=15,f=55,spellID=5004})}})}}),
 h(-559,{e=13,g={
 h(-45,{e=13,g={
 q(171,{awp=10400,coords={
@@ -1260,18 +1272,6 @@ i(9313,{e=17,f=55,spellID=11541}),
 i(9318,{e=17,f=55,spellID=6668}),
 i(9314,{e=17,f=55,spellID=11542}),
 i(9315,{e=17,f=55,spellID=11544})}})}}),
-h(-583,{e=15,g={
-o(113768,{description="These eggs can be found spread out in all of the starting zones.",e=15,maps={1411,1412,1420,1426,1429,1438},type="AsGenericObjectContainer",g={
-o(113768,{e=15,type="AsSubGenericObject"}),
-o(113769,{e=15,type="AsSubGenericObject"}),
-o(113770,{e=15,type="AsSubGenericObject"}),
-o(113771,{e=15,type="AsSubGenericObject"}),
-s(163749,19028,{e=15,f=2,loc=42}),
-s(158706,6835,{e=15,f=2,loc=46,q=1}),
-s(158704,6833,{e=15,f=10,q=1}),
-i(7807,{e=15,f=55,spellID=5004}),
-i(7808,{e=15,f=55,spellID=5004}),
-i(7806,{e=15,f=55,spellID=5004})}})}}),
 h(-586,{e=133889,maps={1425,1434,1444,1446,1447},g={
 i(13756,{description="Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",e=133889,spellID=1127})}}),
 h(-587,{e=133899,maps={1425,1434,1444,1446,1447},g={

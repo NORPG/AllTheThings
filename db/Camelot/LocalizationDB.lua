@@ -1503,6 +1503,11 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
 })
+_.Modules.Events.SetEventInformation(15, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=5,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=6,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=7,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=7,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=1,["year"]=2027})
+})
 _.Modules.Events.SetEventInformation(11, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=7,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026}),

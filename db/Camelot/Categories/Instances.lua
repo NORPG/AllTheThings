@@ -4357,7 +4357,7 @@ r(3960,{itemID=4414}),
 r(3940,{itemID=4410}),
 r(3933,{itemID=4409})}})}}),
 inst(232,{coords={
-[1443]={{35.7,55.5}}},lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=10,mapID=280,["zone-text-areaID"]=2100,g={
+[1443]={{35.7,55.5}}},lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,["zone-text-areaID"]=2100,g={
 h(-45,{
 q(7065,{coords={
 [1443]={{63.8,10.6}}},lvl=45,qgs={13698},r=2,rwp=40003,g={
