@@ -4,6 +4,21 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cl,d,e,faction,flt,h,i,inst,mnt,n,o,prof,q,qo,r,s,settings,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateExpansion;
 categories.Instances=
 h(-75,{SortPriority=1,g={
+inst(3065,{awp=16001,coords={
+[1455]={{50,50}}},lvl=13,["zone-text-areaID"]=16919,g={
+n(3493),
+n(3495),
+n(3494),
+n(3496)}}),
+inst(2999,{awp=16001,coords={
+[1420]={{50,50}}},lvl=15,["zone-text-areaID"]=16611,g={
+n(3353),
+n(3357),
+n(3355),
+n(3354),
+n(3408),
+n(3411),
+n(3412)}}),
 x(1,{awp=10100,g={
 h(-318,{c={1,2,3,4,5,7,8,9,11},rwp=40003,u=15,g={
 cl(11,{u=15,g={
@@ -6220,20 +6235,5 @@ i(10661)}),
 e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
 i(8707),
 s(159379,9467,{f=20,spellID=1294477}),
-s(159380,9469,{f=6,loc=42})}})}}),
-inst(3065,{awp=16001,coords={
-[1455]={{50,50}}},lvl=13,u=600,["zone-text-areaID"]=16919,g={
-n(3493,{u=600}),
-n(3495,{u=600}),
-n(3494,{u=600}),
-n(3496,{u=600})}}),
-inst(2999,{awp=16001,coords={
-[1420]={{50,50}}},lvl=15,u=600,["zone-text-areaID"]=16611,g={
-n(3353,{u=600}),
-n(3357,{u=600}),
-n(3355,{u=600}),
-n(3354,{u=600}),
-n(3408,{u=600}),
-n(3411,{u=600}),
-n(3412,{u=600})}})}})}})
+s(159380,9469,{f=6,loc=42})}})}})}})}})
 end)

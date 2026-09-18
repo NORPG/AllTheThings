@@ -1967,14 +1967,6 @@ local phases = {
 		buildVersion = 40402,
 		state = 2,
 	},
-	[600] = {
-		name = "beta - Phase 1",
-		description = "|cFFAAFFAAThis was not available until beta - Phase 1 of Forever.|r",
-		lore = "|cFFFFAAAAWOW:Forever Beta content 1, available up to level 20.|r",
-		minimumBuildVersion = 16001,
-		buildVersion = 16001,
-		state = 2,
-	},
 } L.PHASES = phases
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2)
@@ -2395,7 +2387,6 @@ for key,value in pairs({
 	[32] = "|cFFAAFFAADies war erst Phase 3 von Wrath Classic verfügbar.|r",
 	[33] = "|cFFAAFFAADies war erst Phase 4 von Wrath Classic verfügbar.|r",
 	[40] = "|cFFAAFFAADies war erst Phase 1 von Cataclysm Classic verfügbar.|r",
-	[600] = "|cFFAAFFAADies war erst beta - Phase 1 von Forever verfügbar.|r",
 })
 do phases[key].description = value; end
 end
@@ -2785,7 +2776,6 @@ for key,value in pairs({
 	[32] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du Wrath Classic.|r",
 	[33] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du Wrath Classic.|r",
 	[40] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du Cataclysm Classic.|r",
-	[600] = "|cFFAAFFAACeci n'était pas disponible avant le beta - Phase 1 du Forever.|r",
 })
 do phases[key].description = value; end
 end
@@ -2867,7 +2857,6 @@ for key,value in pairs({
 	[32] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di Wrath Classic.|r",
 	[33] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di Wrath Classic.|r",
 	[40] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di Cataclysm Classic.|r",
-	[600] = "|cFFAAFFAAQuesto non era disponibile fino al beta - Phase 1 di Forever.|r",
 })
 do phases[key].description = value; end
 end
@@ -3016,7 +3005,6 @@ for key,value in pairs({
 	[32] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de Wrath Classic.|r",
 	[33] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de Wrath Classic.|r",
 	[40] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de Cataclysm Classic.|r",
-	[600] = "|cFFAAFFAAIsto não estava disponível até beta - Phase 1 de Forever.|r",
 })
 do phases[key].description = value; end
 end
@@ -3780,7 +3768,6 @@ for key,value in pairs({
 	[32] = "|cFFAAFFAAЭто было недоступно до Phase 3 из Wrath Classic.|r",
 	[33] = "|cFFAAFFAAЭто было недоступно до Phase 4 из Wrath Classic.|r",
 	[40] = "|cFFAAFFAAЭто было недоступно до Phase 1 из Cataclysm Classic.|r",
-	[600] = "|cFFAAFFAAЭто было недоступно до beta - Phase 1 из Forever.|r",
 })
 do phases[key].description = value; end
 end
@@ -3881,7 +3868,6 @@ for key,value in pairs({
 	[32] = "|cFFAAFFAAPhase 3(Wrath Classic)까지 사용할 수 없습니다.|r",
 	[33] = "|cFFAAFFAAPhase 4(Wrath Classic)까지 사용할 수 없습니다.|r",
 	[40] = "|cFFAAFFAAPhase 1(Cataclysm Classic)까지 사용할 수 없습니다.|r",
-	[600] = "|cFFAAFFAAbeta - Phase 1(Forever)까지 사용할 수 없습니다.|r",
 })
 do phases[key].description = value; end
 end
@@ -4785,7 +4771,6 @@ for key,value in pairs({
 	[40] = "Fase 1",
 	[41] = "Furia de las Tierras de Fuego",
 	[42] = "La hora del crepúsculo",
-	[600] = "beta - Fase 1",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -4820,7 +4805,6 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de Cataclysm Classic.|r",
 	[41] = "|cFFAAFFAAEsto no estuvo disponible hasta la Furia de las Tierras de Fuego durante Cataclysm Classic.|r",
 	[42] = "|cFFAAFFAAEsto no estuvo disponible hasta la Hora del Crepúsculo durante Cataclysm Classic.|r",
-	[600] = "|cFFAAFFAAEsto no estuvo disponible hasta beta - Fase 1 de Forever.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -6328,7 +6312,6 @@ for key,value in pairs({
 	[40] = "阶段1",
 	[41] = "火焰的愤怒",
 	[42] = "暮光审判",
-	[600] = "封測阶段1",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -6363,7 +6346,6 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAA该功能直到 阶段1 的 大地的裂变 才可用。|r",
 	[41] = "|cFFAAFFAA在《大灾变》经典服中，直到火焰的愤怒内容上线，这个才可用。|r",
 	[42] = "|cFFAAFFAA在《大灾变》经典服中，直到 “暮光审判”（版本更新）时，这个才可用。|r",
-	[600] = "|cFFAAFFAA该功能直到 封測阶段1 的 无限 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -6393,7 +6375,6 @@ for key,value in pairs({
 	[40] = "|cFFFFAAAA包括暮光堡垒、四风王座和黑翼血环。|r",
 	[41] = "|cFFFFAAAA包含火源之地。|r",
 	[42] = "|cFFFFAAAA包含巨龙之魂。|r",
-	[600] = "|cFFFFAAAA《魔兽世界：无限》Beta测试内容1，开放至20级。|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
@@ -7138,7 +7119,6 @@ for key,value in pairs({
 	[32] = "第3階段",
 	[33] = "第4階段",
 	[40] = "第1階段",
-	[600] = "封測第1階段",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -7162,12 +7142,10 @@ for key,value in pairs({
 	[32] = "|cFFAAFFAA該功能直到 第3階段 的 Wrath Classic 才可用。|r",
 	[33] = "|cFFAAFFAA該功能直到 第4階段 的 Wrath Classic 才可用。|r",
 	[40] = "|cFFAAFFAA該功能直到 第1階段 的 Cataclysm Classic 才可用。|r",
-	[600] = "|cFFAAFFAA該功能直到 封測第1階段 的 永恆 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAA在遊戲的任何版本中，鼓勵使用真實貨幣的行為均不受認可。參與此類內容需自行承擔風險。|r",
-	[600] = "|cFFFFAAAA《魔獸世界：永恆》Beta測試內容1，開放至20級。|r",
 })
 do phases[key].lore = value; end
 end

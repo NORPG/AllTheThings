@@ -16,7 +16,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92461, {	-- 
 				["qg"] = 251361,	-- 
 				["coords"] = { 42.1, 23.5, ZEPHRAS_ISLE },
-				["sourcequests"] = { 92460 },	--
+				["sourceQuests"] = { 92460 },	--
 				["groups"] = {
 					i(257281),	-- Fur-Lined Shoes
 					i(257280),	-- 
@@ -28,7 +28,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92462, {	-- 
 				["qg"] = 251368,	-- 
 				["coords"] = { 43.4, 24.8, ZEPHRAS_ISLE },
-				["sourcequests"] = { 92460 },	--
+				["sourceQuests"] = { 92460 },	--
 				["groups"] = {
 					objective(1, { -- 0/8
 						["provider"] = { "n", 251169 },	-- 
@@ -38,7 +38,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92465, {	-- 
 				["qg"] = 249363,	-- 
 				["coords"] = { 47.3, 21.9, ZEPHRAS_ISLE },
-				["sourcequests"] = { 92460 },	--
+				["sourceQuests"] = { 92460 },	--
 				["groups"] = {
 					objective(1, { -- 0/7 
 						["provider"] = { "n", 251160 },	-- 
@@ -51,7 +51,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92481, {	-- 
 				["qg"] = 251361,	-- 
 				["coords"] = { 42.1, 23.5, ZEPHRAS_ISLE },
-				["sourcequests"] = { 92461 },	--
+				["sourceQuests"] = { 92461 },	--
 				["qi"] = 282416,	-- 
 				["groups"] = {
 					objective(1, { -- 
