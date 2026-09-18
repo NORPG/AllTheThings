@@ -3,6 +3,7 @@ local appName, app = ...;
 
 -- App & Module locals
 local DESCRIPTION_SEPARATOR, L = app.DESCRIPTION_SEPARATOR, app.L;
+local ButtonName = "AllTheThings"
 
 -- Global locals
 local math_floor = math.floor;
@@ -147,9 +148,9 @@ end
 app.SetMinimapButtonSettings = function(visible, size)
 	if UseLDI then
 		if visible then
-			UseLDI:Show(L.TITLE)
+			UseLDI:Show(ButtonName)
 		else
-			UseLDI:Hide(L.TITLE)
+			UseLDI:Hide(ButtonName)
 		end
 		MinimapButton:SetSize(size, size)
 		return
@@ -169,7 +170,7 @@ local function RegisterDataBrokers()
 
 	local LDB = LibStub:GetLibrary("LibDataBroker-1.1", true)
 	if LDB then
-		local o = LDB:NewDataObject(L.TITLE, {
+		local o = LDB:NewDataObject(ButtonName, {
 			type = "launcher",
 			icon = app.asset("Discord_2_64"),
 			OnClick = AllTheThings_MinimapButtonOnClick,
@@ -195,8 +196,8 @@ local function RegisterDataBrokers()
 					if key == "minimapPos" then MinimapPos = val; app.CallbackHandlers.DelayedCallback(UpdateMinimapPosToSettings, 0.5) end
 				end
 			})
-			LDI:Register(L.TITLE, o, db)
-			MinimapButton = LDI:GetMinimapButton(L.TITLE)
+			LDI:Register(ButtonName, o, db)
+			MinimapButton = LDI:GetMinimapButton(ButtonName)
 			-- clean up the extra regions created by LibDBIcon
 			local regions = { MinimapButton:GetRegions() }
 			for _, region in ipairs(regions) do
