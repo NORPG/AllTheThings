@@ -2916,7 +2916,7 @@ function app:CreateWindow(suffix, definition)
 	end
 	definition.Suffix = suffix
 	-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)
-	if definition.IsDynamicCategory and app.IsClassic then
+	if definition.IsDynamicCategory and (app.IsClassic or app.IsForever) then
 		if definition.DynamicCategoryHeader then
 			app.AddEventHandler("OnDataCached", function(categories)
 				local category = categories.Professions;

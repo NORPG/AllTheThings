@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								objective(5, {	-- 0/1 Standard Issue Flare Gun
 									["questID"] = 3449,	-- Arcane Runes
 									["provider"] = { "i", 10444 },	-- Standard Issue Flare Gun
-									["description"] = "DO NOT LEAVE MAP.IRONFORGE WITHOUT THIS.\n - Crieve",
+									["description"] = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
 									["coord"] = { 77.0, 91.0, MAP.AZSHARA },
 								}),
 							},
