@@ -3,162 +3,30 @@
 ---------------------------------------------------
 
 -- #if FOREVER
---[[
-root(ROOTS.Zones, m(ZEPHRAS_ISLE, bubbleDownSelf({
-	["races"] = {SKYBORNE_NEUTRAL, SKYBORNE_ALLIANCE, SKYBORNE_HORDE},
+
+root(ROOTS.Zones, m(ZEPHRAS_ISLE, {
+	["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE},
 	["timeline"] = {ADDED_1_60_1},
-}, {
-	["icon"] = nil,
-	["maps"] = {},
-	["timeline"] = {},
+	-- ["icon"] = nil, TODO: Add an icon for Zephras Isle
+	["maps"] = {
 	["groups"] = {
-		n(ACHIEVEMENTS, {
-			ach(nil, {
-				["groups"] = {
-					crit(nil, {
-						["sourceQuests"] = {},
-					}),
-				},
-			}),
-		}),
-
-		m(nil, {
-			["icon"] = nil,
-			["maps"] = {},
-			["groups"] = {
-				n(nil, {
-					["crs"] = {},
-					["groups"] = sharedData({
-						["timeline"] = {},
-					}, {
-						i(nil, {
-							["timeline"] = {},
-						}),
-						i(nil),
-					}),
-				}),
-			},
-		}),
-
 		n(QUESTS, {
-			cl(nil, sharedData({
-				["classes"] = {},
-			}, {
-				q(nil, {
-					["description"] = nil,
-					["sourceQuest"] = nil,
-					["sourceQuests"] = {},
-					["sourceQuestNumRequired"] = nil,
-					["provider"] = {},
-					["qg"] = nil,
-					["qgs"] = {},
-					["coord"] = {},
-					["coords"] = {},
-					["maps"] = {},
-					["timeline"] = {},
-					["classes"] = {},
-					["races"] = {},
-					["customCollect"] = nil,
-					["lockCriteria"] = {},
-					["_drop"] = {},
-					["groups"] = {
-						i(nil, {
-							["timeline"] = {},
-							["classes"] = {},
-							["races"] = {},
-							["cost"] = nil,
-							["crs"] = {},
-						}),
-						o(nil, {
-							["coord"] = {},
-							["groups"] = {},
-						}),
-						o_repeated({
-							["coord"] = {},
-							["groups"] = {},
-						}),
-					},
-				}),
-			})),
-
-			q(nil, {
-				["description"] = nil,
-				["sourceQuest"] = nil,
-				["sourceQuests"] = {},
-				["sourceQuestNumRequired"] = nil,
-				["provider"] = {},
-				["qg"] = nil,
-				["qgs"] = {},
-				["coord"] = {},
-				["coords"] = {},
-				["maps"] = {},
-				["timeline"] = {},
-				["classes"] = {},
-				["races"] = {},
-				["customCollect"] = nil,
-				["lockCriteria"] = {},
-				["_drop"] = {},
-				["groups"] = {},
+			q(92460, {	-- 
+				["qg"] = 251362,	-- 
+				["coord"] = { 42.8, 23.4, ZEPHRAS_ISLE },
 			}),
-		}),
-
-		n(RARES, sharedData({
-			["lockCriteria"] = {},
-		}, {
-			n(nil, {
-				["coord"] = {},
-				["coords"] = {},
-				["questID"] = nil,
-				["groups"] = {
-					i(nil),
-				},
+			q(92461, {	-- 
+				["qg"] = 251361,	-- 
+				["coords"] = { 42.1, 23.5, ZEPHRAS_ISLE },
+				["sourcequests"] = { 92460 },	--
 			}),
-		})),
-
-		n(TREASURES, sharedData({
-			["lockCriteria"] = {},
-		}, {
-			o(nil, {
-				["coord"] = {},
-				["questID"] = nil,
-				["groups"] = {
-					i(nil),
-				},
-			}),
-		})),
-
-		n(VENDORS, sharedData({
-			["customCollect"] = nil,
-			["altQuests"] = {},
-		}, {
-			n(nil, {
-				["coord"] = {},
-				["races"] = {},
-				["groups"] = {
-					i(nil, {
-						["cost"] = nil,
-					}),
-				},
-			}),
-		})),
-
-		n(ZONE_DROPS, {
-			i(nil, {
-				["crs"] = {},
+			q(92462, {	-- 
+				["qg"] = 251368,	-- 
+				["coords"] = { 43.4, 24.8, ZEPHRAS_ISLE },
+				["sourcequests"] = { 92460 },	--
 			}),
 		}),
 	},
-})));
-
-root(ROOTS.HiddenQuestTriggers, expansion(nil, {
-	m(nil, {
-		["timeline"] = {},
-		["groups"] = {
-			n(QUESTS, {
-				q(nil),
-			}),
-		},
-	}),
 }))
---]]
+
 -- #endif
