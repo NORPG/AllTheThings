@@ -2,13 +2,10 @@
 	<Script file="LocalizationDB.lua"/>
 	<Script file="Categories/Character.lua"/>
 	<Script file="Categories/Craftables.lua"/>
-	<Script file="Categories/HiddenAchievementTriggers.lua"/>
 	<Script file="Categories/HiddenQuestTriggers.lua"/>
 	<Script file="Categories/Holidays.lua"/>
 	<Script file="Categories/Instances.lua"/>
-	<Script file="Categories/NeverImplemented.lua"/>
 	<Script file="Categories/Professions.lua"/>
-	<Script file="Categories/Promotions.lua"/>
 	<Script file="Categories/PVP.lua"/>
 	<Script file="Categories/Unsorted.lua"/>
 	<Script file="Categories/WorldDrops.lua"/>

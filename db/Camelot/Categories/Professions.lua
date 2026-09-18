@@ -1,14 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,cat,flt,h,i,prof,q,r,x=_.CreateAchievement,_.CreateCategory,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateExpansion;
+local ach,cat,h,i,prof,q,r,x=_.CreateAchievement,_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateExpansion;
 categories.Professions=
 h(-44,{SortPriority=25,g={
-h(-12,{awp=10100,g={
-x(1,{
-ach(732),
-ach(731),
-ach(116)})}}),
 prof(171,{awp=10100,g={
 x(1,{requireSkill=171})}}),
 prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,rwp=30002,g={
@@ -175,13 +170,13 @@ r(36126,{requireSkill=9787,u=17})}})}}),
 x(1,{awp=10100,requireSkill=164,g={
 h(-45,{requireSkill=164,g={
 q(5283,{altQuests={5284,5301,5302},coords={
-[87]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003}),
+[1455]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003}),
 q(5301,{altQuests={5283,5284,5302},coords={
-[85]={{79.8,23.8}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164,rwp=40003}),
+[1454]={{79.8,23.8}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164,rwp=40003}),
 q(5284,{altQuests={5283,5301,5302},coords={
-[87]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=40003}),
+[1455]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=40003}),
 q(5302,{altQuests={5283,5284,5301},coords={
-[85]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}})}),
+[1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}})}),
 prof(185,{awp=10100,g={
 x(1,{requireSkill=185,g={
 ach(123,{requireSkill=185}),
@@ -191,14 +186,14 @@ prof(333),
 prof(202,{awp=10100,g={
 x(1,{requireSkill=202,g={
 h(-47,{requireSkill=202,g={
-i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,rwp=40003,g={
-r(12607,{itemID=10603,learnedAt=220,q=2,requireSkill=202,skillID=2941}),
-r(15633,{b=1,itemID=11827,learnedAt=205,q=2,requireSkill=202,skillID=2941}),
-r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202,skillID=2941})}}),
-i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,rwp=40003,g={
-r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202,skillID=2941}),
-r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202,skillID=2941}),
-r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=202,skillID=2941})}})}})}})}}),
+i(11423,{description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},requireSkill=202,rwp=40003,g={
+r(12607,{itemID=10603,requireSkill=202}),
+r(15633,{itemID=11827,requireSkill=202}),
+r(12616,{itemID=10606,requireSkill=202})}}),
+i(11422,{description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},requireSkill=202,rwp=40003,g={
+r(3968,{itemID=4416,requireSkill=202}),
+r(3972,{itemID=4417,requireSkill=202}),
+r(15628,{itemID=11828,requireSkill=202})}})}})}})}}),
 prof(129,{rwp=80001,g={
 x(1,{requireSkill=129,g={
 ach(131,{requireSkill=129}),
@@ -216,87 +211,6 @@ ach(126,{requireSkill=356}),
 ach(127,{requireSkill=356}),
 ach(128,{requireSkill=356})}})}}),
 prof(182),
-prof(755,{awp=10100,u=17,g={
-x(1,{requireSkill=755,u=17,g={
-flt(52,{requireSkill=755,u=17,g={
-r(26874,{requireSkill=755,u=17}),
-r(25493,{requireSkill=755,u=17}),
-r(37818,{requireSkill=755,u=17}),
-r(25621,{requireSkill=755,u=17}),
-r(36526,{requireSkill=755,u=17}),
-r(25280,{requireSkill=755,u=17}),
-r(34961,{requireSkill=755,u=17}),
-r(25620,{requireSkill=755,u=17}),
-r(26896,{requireSkill=755,u=17}),
-r(25287,{requireSkill=755,u=17}),
-r(34960,{requireSkill=755,u=17}),
-r(25613,{requireSkill=755,u=17}),
-r(34955,{requireSkill=755,u=17}),
-r(26926,{requireSkill=755,u=17}),
-r(36524,{requireSkill=755,u=17}),
-r(25305,{requireSkill=755,u=17}),
-r(25283,{requireSkill=755,u=17}),
-r(26907,{requireSkill=755,u=17}),
-r(36525,{requireSkill=755,u=17}),
-r(26910,{requireSkill=755,u=17}),
-r(25317,{requireSkill=755,u=17}),
-r(25318,{requireSkill=755,u=17}),
-r(26903,{requireSkill=755,u=17}),
-r(26902,{requireSkill=755,u=17}),
-r(25284,{requireSkill=755,u=17}),
-r(25490,{requireSkill=755,u=17}),
-r(26887,{requireSkill=755,u=17}),
-r(25619,{requireSkill=755,u=17}),
-r(32179,{requireSkill=755,u=17}),
-r(34959,{requireSkill=755,u=17}),
-r(26885,{requireSkill=755,u=17}),
-r(25323,{requireSkill=755,u=17}),
-r(26925,{requireSkill=755,u=17})}}),
-flt(51,{requireSkill=755,u=17,g={
-r(25339,{requireSkill=755,u=17}),
-r(26876,{requireSkill=755,u=17}),
-r(25498,{requireSkill=755,u=17}),
-r(36523,{requireSkill=755,u=17}),
-r(38175,{requireSkill=755,u=17}),
-r(25622,{requireSkill=755,u=17}),
-r(25320,{requireSkill=755,u=17}),
-r(25618,{requireSkill=755,u=17}),
-r(26911,{requireSkill=755,u=17}),
-r(32178,{requireSkill=755,u=17}),
-r(26915,{requireSkill=755,u=17}),
-r(26897,{requireSkill=755,u=17}),
-r(26928,{requireSkill=755,u=17}),
-r(25610,{requireSkill=755,u=17}),
-r(26883,{requireSkill=755,u=17}),
-r(26908,{requireSkill=755,u=17}),
-r(26927,{requireSkill=755,u=17})}}),
-cat(168,{requireSkill=755,u=17,g={
-r(25278,{requireSkill=755,u=17}),
-r(25255,{requireSkill=755,u=17}),
-r(25615,{requireSkill=755,u=17}),
-r(26880,{requireSkill=755,u=17})}}),
-cat(167,{requireSkill=755,u=17,g={
-r(26906,{requireSkill=755,u=17}),
-r(25321,{requireSkill=755,u=17}),
-r(26878,{requireSkill=755,u=17})}}),
-flt(53,{requireSkill=755,u=17,g={
-r(26912,{requireSkill=755,u=17}),
-r(26875,{requireSkill=755,u=17}),
-r(26914,{requireSkill=755,u=17}),
-r(26909,{requireSkill=755,u=17}),
-r(26873,{requireSkill=755,u=17}),
-r(26872,{requireSkill=755,u=17}),
-r(26900,{requireSkill=755,u=17}),
-r(26882,{requireSkill=755,u=17}),
-r(26881,{requireSkill=755,u=17})}}),
-flt(34,{requireSkill=755,u=17,g={
-r(25612,{requireSkill=755,u=17})}}),
-flt(50,{requireSkill=755,u=17,g={
-r(32801,{requireSkill=755,u=17}),
-r(32809,{requireSkill=755,u=17}),
-r(32807,{requireSkill=755,u=17}),
-r(32259,{requireSkill=755,u=17}),
-r(32808,{requireSkill=755,u=17})}})}})}}),
 prof(165,{awp=10100,g={
 x(1,{requireSkill=165,g={
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5141,5145},g={
@@ -325,17 +239,17 @@ cat(935,{requireSkill=165,g={
 r(35587,{requireSkill=165,u=17})}})}}),
 h(-45,{lvl=40,requireSkill=165,rwp=40003,g={
 q(5141,{altQuests={5143,5144},coords={
-[76]={{37.4,65.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7866},r=2,requireSkill=165}),
+[1447]={{37.4,65.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7866},r=2,requireSkill=165}),
 q(5145,{altQuests={5146,5148},coords={
-[15]={{62.6,57.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7867},r=1,requireSkill=165}),
+[1418]={{62.6,57.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7867},r=1,requireSkill=165}),
 q(5144,{altQuests={5141,5143},coords={
-[32]={{63.6,76}}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7868},r=2,requireSkill=165}),
+[1427]={{63.6,76}}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7868},r=2,requireSkill=165}),
 q(5146,{altQuests={5145,5148},coords={
-[14]={{28.2,45}}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7869},r=1,requireSkill=165}),
+[1417]={{28.2,45}}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7869},r=1,requireSkill=165}),
 q(5143,{altQuests={5141,5144},coords={
-[69]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853}}),
+[1444]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853}}),
 q(5148,{altQuests={5145,5146},coords={
-[224]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}})}}),
+[1434]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}})}}),
 prof(633,{c={4},description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",DontEnforceSkillRequirements=1,g={
 r(1804,{c={4},requireSkill=633}),
 r(921,{c={4},requireSkill=39})}}),

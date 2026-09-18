@@ -71,3 +71,8 @@ MAP = {
 	RIVERGLADES = 2548;
 	SHENDRALAS = 2652;
 };
+
+-- Temporary solution forces the map globals to exist.
+for mapConst,mapID in pairs(MAP) do
+	_G[mapConst] = mapID;
+end
