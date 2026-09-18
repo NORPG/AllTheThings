@@ -17,6 +17,7 @@ if app.GameBuildVersion < 30000 then return; end
 local KEY, CACHE = "speciesID", "BattlePets"
 local CLASSNAME = "BattlePet"
 
+--- @type function,function,function,function,function,function
 local C_PetJournal_GetNumCollectedInfo,C_PetJournal_GetPetInfoByPetID,C_PetJournal_GetPetInfoBySpeciesID,C_PetJournal_GetPetInfoByIndex,C_PetJournal_GetNumPets,C_PetJournal_GetPetStats
 	= C_PetJournal.GetNumCollectedInfo,C_PetJournal.GetPetInfoByPetID,C_PetJournal.GetPetInfoBySpeciesID,C_PetJournal.GetPetInfoByIndex,C_PetJournal.GetNumPets,C_PetJournal.GetPetStats
 

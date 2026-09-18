@@ -210,6 +210,10 @@ local RetailMapDataStyleMetatable = {
 				MergeProperties(mapData, group, true);
 				NestObjects(mapData, group.g);
 			end
+			-- also some situations may merge the root from 2+ locations and may disrupt filtering based on the determined final sourceParent
+			if #rootGroups > 1 then
+				app.AssignFieldValue(mapData, "sourceParent", nil)
+			end
 			local externalMaps = {}
 			-- then merge all mapped groups into the list
 			for i=1,#mapGroups do
@@ -340,8 +344,6 @@ local RetailMapDataStyleMetatable = {
 				-- sort top level by name if not in an instance
 				mapData.SortType = "Global";
 			end
-
-			-- TODO: This is dumb, but apparently its required. (for now?)
 
 			-- Cache all of the Current Maps with the same data.
 			for id,_ in pairs(currentMaps) do

@@ -5,10 +5,13 @@
 
 local _, app = ...
 
+--- @type function,function,function,function,function,function,function,function,function,function
 local pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
 	= pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
 
+--- @type function
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+--- @type function
 local Callback = app.CallbackHandlers.Callback
 local Runner = app.CreateRunner("update")
 app.UpdateRunner = Runner
@@ -30,6 +33,7 @@ local DefaultGroupVisibility, DefaultThingVisibility
 local UpdateGroups
 local RecursiveGroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
 local FilterSet, FilterGet, Filters_ItemUnbound, ItemUnboundSetting
+--- @type function,function,function,function
 local SetGroupVisibility, SetThingVisibility, BaseSetGroupVisibility, BaseSetThingVisibility
 local function SetDefaultVisibility(parent, group)
 	group.visible = true
