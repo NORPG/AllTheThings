@@ -161,7 +161,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 					n(TREASURES, {
 						i(218126),	-- Befouler's Syringe
 						i(212163),	-- Soporific Shroom Cap (COSMETIC!)
-						i(225547),	-- Toxic Victory (TOY!)
 					}),
 				}),
 				n(EXPLORATION, {
@@ -175,12 +174,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 				})),
 				n(221427, {	-- Zekvir
 					["crs"] = { 225204 },	-- Zekvir (not sure which is "?" or "??")
-					-- #if AFTER 11.1.0
 					["groups"] = {
-						i(212171),	-- Zekvir's Raptorial Spine
-						i(225542),	-- Delver's Dirigible Schematic: Void (MM!)
+						i(225542, { ["timeline"] = { ADDED_11_1_0_SEASONSTART } }),	-- Delver's Dirigible Schematic: Void (MM!)
+						i(225547, { ["timeline"] = { ADDED_11_1_0_SEASONSTART } }),	-- Toxic Victory (TOY!)
+						i(212171, { ["timeline"] = { ADDED_11_1_0_SEASONSTART } }),	-- Zekvir's Raptorial Spine
 					},
-					-- #endif
 				}),
 			},
 		}),
@@ -232,18 +230,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 						{"n",234168},	-- The Underpin ?
 						{"n",236626},	-- The Underpin ??
 					},
-					["timeline"]={ADDED_11_1_0_SEASONSTART},
+					["timeline"]={ ADDED_11_1_0_SEASONSTART },
 					["isWeekly"] = true,
 				}),
 				n(236626, {	-- The Underpin <A Pretty Big Deal>
 					["crs"] = { 234168 },	-- The Underpin <A Pretty Big Deal> (not sure which is "?" or "??")
-					-- #if AFTER 11.2.0
 					["groups"] = {
-						i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
-						i(230727),	-- Explosive Victory (TOY!)
-						i(235614),	-- Golden-Gob Propulsion Rig
+						i(233196, { ["timeline"] = { ADDED_11_2_0_SEASONSTART } }),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
+						i(230727, { ["timeline"] = { ADDED_11_2_0_SEASONSTART } }),	-- Explosive Victory (TOY!)
+						i(235614, { ["timeline"] = { ADDED_11_2_0_SEASONSTART } }),	-- Golden-Gob Propulsion Rig
 					},
-					-- #endif
 				}),
 			},
 		})),
@@ -288,9 +284,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
 					})),
 					ach(42193, {	-- My Stab-Happy Nemesis
-						i(245529, {	-- Hal'hadar's Phasebound Visor (COSMETIC!)
-							["timeline"] = { REMOVED_12_0_0 },
-						}),
+						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
 					}),
 					ach(42194, {	-- Pruning the Princess
 						title(639),	-- Contract Killer <Name>
@@ -301,12 +295,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 				}),
 				n(244752, {	-- Nexus-Princess Ky'veza
 					["crs"] = { 244753 },	-- Nexus-Princess Ky'veza (not sure which is "?" or "??")
-					-- #if AFTER MID
 					["groups"] = {
-						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
-						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
+						i(238182, { ["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
+						i(244470, { ["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Etheric Victory (TOY!)
+						i(245529, { ["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
 					},
-					-- #endif
 				}),
 			},
 		})),
@@ -2141,9 +2134,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
-			["groups"] = {
-				i(244470),	-- Etheric Victory (TOY!)
-			},
+			["groups"] = { i(244470) },	-- Etheric Victory (TOY!)
 		}),
 	}),
 	n(QUESTS, sharedData({

@@ -60,13 +60,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			m(TORMENTS_RISE, {
 				["icon"] = 7452103,
 				["coord"] = { 61.2, 71.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART },
 				["groups"] = {
 					n(252101, {	-- Nullaeus ?
 						["questID"] = 96417,
 						["isWeekly"] = true,
 						["groups"] = {
 							ach(61797, {	-- My Shady Nemesis
-								i(263413),	-- Nullaeus Domaneye (COSMETIC!)
+								["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+								["groups"] = { i(263413) },	-- Nullaeus Domaneye (COSMETIC!)
 							}),
 							i(262391),	-- Ominous Dominus (PET!)
 							hqt(95155, name(HEADERS.NPC, 252892)),	-- Nullaeus ? (first time)
@@ -78,15 +80,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["groups"] = {
 							ach(61808, {	-- Fabled Let Me Solo Him: Nullaeus
 								["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
-								["groups"] = {
-									title(689),	-- <Name>, Fabled Vanquisher of Nullaeus
-								},
+								["groups"] = { title(689) },	-- <Name>, Fabled Vanquisher of Nullaeus
 							}),
 							ach(61799, {	-- Let Me Solo Him: Nullaeus
-								i(263222),	-- Arcanovoid Construct (MOUNT!)
+								["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+								["groups"] = { i(263222) },	-- Arcanovoid Construct (MOUNT!)
 							}),
 							ach(61798, {	-- Lighting the Dark
-								title(688),	-- <Name> the Ominous
+								["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+								["groups"] = { title(688) },	-- <Name> the Ominous
 							}),
 							i(262391),	-- Ominous Dominus (PET!)
 							hqt(95154, name(HEADERS.NPC, 252892)),	-- Nullaeus ?? (first time)
