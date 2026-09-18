@@ -13,29 +13,20 @@ ExportDB.OnTooltipDB.ForArathiBasin = [[~function(t, tooltipInfo)
 	end
 end]];
 
-local ALLIANCE_BRIGADIER_COORDS = {
-	{ 39.4, 82.2, MAP.ALTERAC_MOUNTAINS },
-	{ 45.6, 45.8, MAP.ARATHI_HIGHLANDS },
-	{ 61.8, 83.8, MAP.ASHENVALE },
-	{ 58.0, 34.4, MAP.DARNASSUS },
-	{ 69.8, 90.6, MAP.IRONFORGE },
-	{ 79.4, 18.0, MAP.STORMWIND_CITY },
-};
-
-local HORDE_WARBRINGER_COORDS = {
-	{ 63.0, 59.8, MAP.ALTERAC_MOUNTAINS },
-	{ 73.6, 29.2, MAP.ARATHI_HIGHLANDS },
-	{ 80.6, 30.6, MAP.ORGRIMMAR },
-	{ 46.6, 8.6, MAP.THE_BARRENS },
-	{ 57.8, 76.8, MAP.THUNDER_BLUFF },
-	{ 58.2, 97.6, MAP.UNDERCITY },
-};
-
 battleground(MAP.ARATHI_BASIN, {
 	["lore"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 	["timeline"] = { TIMELINE.ADDED_1_60_1 },
 	["icon"] = 236385,
 	["groups"] = {
+		n(ACHIEVEMENTS, {
+			-- CRIEVE NOTE: Not sure which one is which.
+			ach(62047, {	-- Master of Arathi Basin
+				--["races"] = HORDE_ONLY,
+			}),
+			ach(64027, {	-- Master of Arathi Basin
+				--["races"] = ALLIANCE_ONLY,
+			}),
+		}),
 		n(FACTIONS, {
 			faction(FACTION_THE_DEFILERS, {	-- The Defilers
 				["icon"] = 237568,

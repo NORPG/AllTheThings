@@ -47,6 +47,15 @@ battleground(MAP.ALTERAC_VALLEY, {
 				i(19109),	-- Deep Rooted Ring
 			}),
 		}),
+		n(ACHIEVEMENTS, {
+			-- CRIEVE NOTE: Not sure which one is which.
+			ach(62046, {	-- Master of Alterac Valley
+				--["races"] = HORDE_ONLY,
+			}),
+			ach(64026, {	-- Master of Alterac Valley
+				--["races"] = ALLIANCE_ONLY,
+			}),
+		}),
 		explorationHeader({
 			exploration(2959),	-- Dun Baldar
 			exploration(3299),	-- Dun Baldar Pass
@@ -322,12 +331,14 @@ battleground(MAP.ALTERAC_VALLEY, {
 			}),
 			q(8369, {	-- Invaders of Alterac Valley
 				["qg"] = 15350,	-- Horde Warbringer
+				["coord"] = HORDE_WARBRINGER_COORDS,
 				["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 				["races"] = HORDE_ONLY,
 			}),
 			q(8387, {	-- Invaders of Alterac Valley
 				["sourceQuest"] = 8369,	-- Invaders of Alterac Valley
 				["qg"] = 15350,	-- Horde Warbringer
+				["coord"] = HORDE_WARBRINGER_COORDS,
 				["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 				["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 				["races"] = HORDE_ONLY,
@@ -456,14 +467,14 @@ battleground(MAP.ALTERAC_VALLEY, {
 			}),
 			q(8375, {	-- Remember Alterac Valley!
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
+				["coord"] = ALLIANCE_BRIGADIER_COORDS,
 				["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(8383, {	-- Remember Alterac Valley!
 				["sourceQuest"] = 8375,	-- Remember Alterac Valley!
 				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = { 79.4, 18.2, MAP.STORMWIND_CITY },
+				["coord"] = ALLIANCE_BRIGADIER_COORDS,
 				["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 				["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 				["races"] = ALLIANCE_ONLY,

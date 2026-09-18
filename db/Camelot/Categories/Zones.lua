@@ -448,6 +448,9 @@ q(5261,{coords={
 [1429]={{48.17,42.94}}},isBreadcrumb=1,nextQuests={33},qgs={823},r=2,sourceQuests={783}}),
 q(3102,{c={4},coords={
 [1429]={{48.9,41.6}}},providers={{"i",9555}},qgs={197},races={1},sourceQuests={7}}),
+q(91758,{coords={
+[1429]={{48.9,41.6}}},qgs={197},sourceQuests={91752},g={
+qo(1,{crs={248362},providers={{"i",247886}}})}}),
 q(3104,{c={8},coords={
 [1429]={{48.9,41.6}}},providers={{"i",9571}},qgs={197},races={1},sourceQuests={7}}),
 q(3905,{coords={
@@ -488,6 +491,8 @@ q(2158,{coords={
 q(346,{coords={
 [1429]={{49.6,40.4}}},lvl=20,providers={{"i",2795}},qgs={951},r=2,sourceQuests={347},g={
 s(158312,6095,{f=4,loc=47,q=2})}}),
+q(91772,{coords={
+[1429]={{48.9,41.6}}},qgs={248415},qis={247970},sourceQuests={91758}}),
 q(3100,{c={1},coords={
 [1429]={{48.8,41.6}}},providers={{"i",9542}},qgs={197},races={1},sourceQuests={7}}),
 q(21,{coords={
@@ -573,6 +578,10 @@ qo(1,{crs={46,732},providers={{"i",780}}}),
 s(157942,4840,{f=20,q=1}),
 s(156207,1158,{f=23,q=1}),
 s(156197,1008,{f=25,q=1})}}),
+q(96626,{coords={
+[1429]={{44.91,63.34}}},qgs={263399},sourceQuests={95998}}),
+q(97923,{coords={
+[1429]={{44.91,63.34}}},qgs={263399},requireSkill=186,sourceQuests={95998}}),
 q(59,{coords={
 [1429]={{42.2,65.8}}},lvl=7,providers={{"i",748}},qgs={240},r=2,sourceQuests={39},g={
 s(156722,2237,{f=5,loc=46,q=1}),
@@ -678,6 +687,8 @@ q(114,{coords={
 [1429]={{43.3,65.7}}},lvl=5,providers={{"i",1257}},qgs={253},r=2,sourceQuests={112}}),
 q(62,{coords={
 [1429]={{42.1,65.9}}},lvl=4,qgs={240},r=2}),
+q(95998,{coords={
+[1429]={{44.91,63.34}}},qgs={263399},sourceQuests={96627}}),
 q(76,{coords={
 [1429]={{42.1,65.9}}},lvl=4,qgs={240},r=2,sourceQuests={62}}),
 q(176,{coords={
@@ -778,7 +789,7 @@ s(156221,1195,{coords={
 i(1399,{crs={476},f=55,spellID=133}),
 s(156110,781,{coords={
 [1429]={{23.8,91.6},{26.6,89.6},{27.6,95.4},{28,86.8}}},crs={97,478},f=23,q=1})})}}),
-m(2548,{icon=1032150,g={
+m(2548,{icon=1032150,lore="A sprawling landscape in the Eastern Kingdom which shifts from lush hillsides to ruined keeps of old.",g={
 h(-12,{
 ach(62354,{
 crit(116891,{achID=62354,id=1}),
@@ -8918,7 +8929,7 @@ s(156772,2327,{awp=100107,coords={
 [1436]={{54.6,26},{59.6,18.6}}},crs={480},f=5,loc=43,q=1,rwp=40003}),
 s(156131,827,{crs={122,449},f=23})})}})}}),
 m(1414,{awp=16001,icon=236807,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",["zone-text-continent"]=1,g={
-m(2482,{icon=409547,g={
+m(2482,{icon=409547,lore="Threats both old and new stalk the slopes of the mountain, eager to claim its power and destroy anyone daring enough to get in their way.",g={
 h(-12,{
 ach(62356,{
 crit(116907,{achID=62356,id=1}),
@@ -17190,7 +17201,7 @@ i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},rwp=
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,spellID=17038}),
 i(21383,{crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold."}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446}})})}})}}),
-m(2521,{awp=16001,g={
+m(2521,{awp=16001,lore="Once a secluded island oasis in the sky, Zephras Isle now welcomes the next generation of WoW’s newest race – the Skyborne – to protect this floating island and secure its future.",g={
 h(-45,{
 q(92460,{coords={
 [2521]={{42.8,23.4}}},qgs={251362}}),

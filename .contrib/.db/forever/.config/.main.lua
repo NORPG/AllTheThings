@@ -26,7 +26,7 @@ assignRootCategoryHeader(30, ROOTS.Holidays, HOLIDAYS, {
 -----------------------------------------
 assignRootCategoryHeader(40, ROOTS.Character, CHARACTER);
 assignRootCategoryHeader(45, ROOTS.Housing, HOUSING);
-assignRootCategoryHeader(55, ROOTS.PVP, PVP);
+pvp(assignRootCategoryHeader(55, ROOTS.PVP, PVP));
 assignRootCategoryHeader(65, ROOTS.Secrets, SECRETS);
 assignRootCategoryHeader(75, ROOTS.WorldEvents, WORLD_EVENTS);
 
