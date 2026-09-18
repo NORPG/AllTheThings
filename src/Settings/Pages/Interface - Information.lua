@@ -1713,10 +1713,12 @@ settings.CreateInformationType("rawfields", {
 			left = "Self:",
 			right = tostring(data)
 		});
+		local link
 		for k, v in pairs(data) do
+			link = app:SearchLink(v)
 			tinsert(tooltipInfo, {
 				left = tostring(k),
-				right = tostring(v)
+				right = link and (link.." "..tostring(v)) or tostring(v)
 			});
 		end
 	end
@@ -1734,10 +1736,12 @@ settings.CreateInformationType("rawfields-row", {
 				left = "Row:",
 				right = tostring(app.ActiveRowReference)
 			});
+			local link
 			for k, v in pairs(app.ActiveRowReference) do
+				link = app:SearchLink(v)
 				tinsert(tooltipInfo, {
 					left = tostring(k),
-					right = tostring(v)
+					right = link and (link.." "..tostring(v)) or tostring(v)
 				});
 			end
 		end

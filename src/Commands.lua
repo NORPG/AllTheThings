@@ -5,8 +5,8 @@
 
 local _, app = ...
 
-local ipairs,math_floor
-	= ipairs,math.floor
+local ipairs,math_floor,type
+	= ipairs,math.floor,type
 
 -- Give a safe way to use HandleModifiedItemClick since Blizzard made it unsafe in 11.1.5
 -- HandleModifiedItemClick now throws a Lua error when the link is not perfectly-handled
@@ -80,7 +80,7 @@ function app:Linkify(text, color, operation)
 end
 end
 function app:SearchLink(group)
-	if not group then return end
+	if not group or type(group) ~= "table" then return end
 	return app:Linkify(group.text or group.hash or UNKNOWN, app.Colors.ChatLink, "search:"..(group.searchKey or group.key or "?")..":"..(group[group.key] or "?"))
 end
 function app:RawSearchLink(field,id)
