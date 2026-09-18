@@ -5,6 +5,11 @@ _G = setmetatable(_G, { __index = function(t,key) if not AllowedNilGlobals[key] 
 AllTheThings = {};
 _ = AllTheThings;
 
+-- A unique value which indicates the actual field within a group should not actually be Parsed (useful to bypass groups within sharedData/bubbleDown)
+IGNORED_VALUE = 'E9B4EEAE-88EA-44F8-B7DF-0831B5F99A44'
+POST_PROCESSING_FUNCTIONS = {};
+SYMLINKS = {}
+
 do	-- Database Containers! Super neat things that store persistent data so they don't get wiped out!
 do
 -- The structure of the data is like so:
@@ -164,4 +169,51 @@ SetAutoTable = function()
 end
 
 ExportDB = CreateDatabaseContainer("Exports", {__index = autotable__index})
+end
+
+do	-- WoW API Function Templates
+-- #if AFTER MOP
+WOWAPI_GetItemCount = function(itemID) return "C_Item.GetItemCount(" .. itemID .. ", true)"; end
+-- #else
+WOWAPI_GetItemCount = function(itemID) return "GetItemCount(" .. itemID .. ", true)"; end
+-- #endif
+-- #if AFTER MOP
+WOWAPI_GetSpellCooldown = function(spellID) return "_.WOWAPI.GetSpellCooldown(" .. spellID .. ")"; end
+-- #else
+WOWAPI_GetSpellCooldown = function(spellID) return "GetSpellCooldown(" .. spellID .. ")"; end
+-- #endif
+-- #if AFTER MOP
+WOWAPI_GetSpellName = function(spellID) return "C_Spell.GetSpellName(" .. spellID .. ")"; end
+-- #else
+WOWAPI_GetSpellName = function(spellID) return "GetSpellInfo(" .. spellID .. ")"; end
+-- #endif
+-- #if AFTER MOP
+WOWAPI_GetItemClassInfo = function(a,b) return "C_Item.GetItemClassInfo(" .. a .. ")"; end
+-- #else
+WOWAPI_GetItemClassInfo = function(a,b) return "GetItemClassInfo(" .. a .. ")"; end
+-- #endif
+
+WOWAPI_GetItemSubClassInfo = function(a,b)
+	local ret
+	if a and b then
+		-- #if AFTER MOP
+		ret = "C_Item.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
+		-- #else
+		ret = "GetItemSubClassInfo(" .. a .. "," .. b .. ")";
+		-- #endif
+	else
+		-- #if AFTER MOP
+		ret = "C_Item.GetItemSubClassInfo(" .. a .. ")";
+		-- #else
+		ret = "GetItemSubClassInfo(" .. a .. ")";
+		-- #endif
+	end
+	return ret
+end
+WOWAPI_GetAchievementName = function(achievementID)
+	return "select(2,GetAchievementInfo(" .. achievementID .. "))";
+end
+WOWAPI_GetCategoryName = function(categoryID)
+	return "select(1,GetCategoryInfo(" .. categoryID .. "))";
+end
 end

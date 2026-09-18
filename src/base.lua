@@ -525,6 +525,11 @@ app.LocalizeGlobalIfAllowed = function(globalName, init)
 	return app.LocalizeGlobal(globalName, init);
 end
 
+-- Make sure required variables exist
+if not app.Presets then app.Presets = {}; end
+if not app.ObjectNames then app.ObjectNames = {}; end
+if not app.FilterConstants then app.FilterConstants = {}; end
+if not app.AccountWideQuestsDB then app.AccountWideQuestsDB = {}; end
 if not app.Presets.ALL then app.Presets.ALL = setmetatable({}, {__index = app.ReturnTrue}) end
 
 do

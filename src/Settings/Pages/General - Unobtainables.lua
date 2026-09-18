@@ -53,7 +53,7 @@ local AvailabilityConditions = {
 	4,	-- PvP Elite / Gladiator
 };
 
-if app.IsClassic then
+if app.IsClassic or app.GameBuildVersion < 20000 then
 	-- Temporary stuff
 	-- The ids are different in classic.
 	AvailabilityConditions = {

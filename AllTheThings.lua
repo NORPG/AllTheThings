@@ -960,11 +960,14 @@ app.ThingKeys = {
 	pvprankID = 1,
 };
 local SpecificSources = {
-	headerID = {
-		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
-		[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
-	},
+	headerID = {},
 }
+if rawget(app.HeaderConstants, "COMMON_BOSS_DROPS") then
+	SpecificSources.headerID[app.HeaderConstants.COMMON_BOSS_DROPS] = true
+end
+if rawget(app.HeaderConstants, "COMMON_VENDOR_ITEMS") then
+	SpecificSources.headerID[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true
+end
 if rawget(app.HeaderConstants, "DROPS") then
 	SpecificSources.headerID[app.HeaderConstants.DROPS] = true
 end

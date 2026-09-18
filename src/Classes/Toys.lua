@@ -57,7 +57,7 @@ app.AddEventRegistration("TOYS_UPDATED", function(itemID, new)
 end)
 app.AddEventHandler("OnRefreshCollections", function()
 	local account, char, none = {}, {}, {}
-	for id,_ in pairs(app.GetRawFieldContainer("toyID")) do
+	for id,_ in pairs(app.GetFieldContainer("toyID")) do
 		if IsToyBNETCollectible[id] then
 			if PlayerHasToy(id) then
 				account[id] = true

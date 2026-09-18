@@ -121,19 +121,22 @@ for i, filterID in ipairs({
 	11,                     -- Artifacts (TODO: move to separate Thing instead of Filter Type)
 	57                      -- Profession Equipment
 }) do
-	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
-	-- Start
-	if filterID == 21 then
-		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", -2, -6)
-	-- Spacing
-	elseif filterID == 20 or filterID == 32 or filterID == 8 or filterID == 11 or filterID == 57 then
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
-	else
-		filter:AlignBelow(last)
+	local name = itemFilterNames[filterID];
+	if name then
+		local filter = child:CreateCheckBox(name, ItemFilterOnRefresh, ItemFilterOnClick)
+		-- Start
+		if filterID == 21 then
+			filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", -2, -6)
+		-- Spacing
+		elseif filterID == 20 or filterID == 32 or filterID == 8 or filterID == 11 or filterID == 57 then
+			filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
+		else
+			filter:AlignBelow(last)
+		end
+		filter.filterID = filterID
+		filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
+		last = filter
 	end
-	filter.filterID = filterID
-	filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
-	last = filter
 end
 
 for i, filterID in ipairs({
@@ -143,19 +146,22 @@ for i, filterID in ipairs({
 	10, 9, 2,           -- Shirt, Tabard, Cosmetic
 	51, 52, 53,         -- Neck, Finger, Trinket
 }) do
-	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
-	-- Start
-	if filterID == 4 then
-		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 350, -6)
-	-- Spacing
-	elseif filterID == 40 or filterID == 3 or filterID == 10 or filterID == 51 then
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
-	else
-		filter:AlignBelow(last)
+	local name = itemFilterNames[filterID];
+	if name then
+		local filter = child:CreateCheckBox(name, ItemFilterOnRefresh, ItemFilterOnClick)
+		-- Start
+		if filterID == 4 then
+			filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 350, -6)
+		-- Spacing
+		elseif filterID == 40 or filterID == 3 or filterID == 10 or filterID == 51 then
+			filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
+		else
+			filter:AlignBelow(last)
+		end
+		filter.filterID = filterID
+		filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
+		last = filter
 	end
-	filter.filterID = filterID
-	filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
-	last = filter
 end
 
 -- The three buttons

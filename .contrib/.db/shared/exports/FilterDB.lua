@@ -102,7 +102,9 @@ for filterID,filterData in pairs({
 		readable = "Artifacts",
 		icon = 535594,
 		constant = "ARTIFACTS",
+		-- #if AFTER LEGION
 		export = true,
+		-- #endif
 		text = {
 			en = "Artifacts",
 			de = "Artefakte",
