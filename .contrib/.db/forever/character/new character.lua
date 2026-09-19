@@ -137,6 +137,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(153, {	-- Primitive Kilt
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
+			i(6135, {	-- Primitive Kilt
+				["timeline"] = { REMOVED_4_0_3 }
+			}),
 		}),
 		n(WEAPONS, {
 			i(36),	-- Worn Mace

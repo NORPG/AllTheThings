@@ -1310,7 +1310,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6135, {	-- Primitive Kilt
-				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 }	-- Unsure when it got added/removed
+				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(52539, {	-- Primal Pants
 				--["races"] = { DWARF },
