@@ -10739,7 +10739,7 @@ q(11209,{awp=20300,coords={
 [70]={{58.8,60.2}}},qgs={12919},qis={33166},r=2,rwp=40003,sourceQuests={11194},u=2,g={
 i(19221,{f=55,spellID=11629,u=2})}}),
 q(13826,{awp=30100,coords={
-[70]={{58.6,60.2}}},description="If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",learnedAt=225,OnUpdate=function(t)if not t.collected and t.collectible and C_Item.GetItemCount(45858,true)==0 then	t.collectible=false end	end,qgs={12919},requireSkill=356,g={
+[70]={{58.6,60.2}}},description="If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",learnedAt=225,OnUpdate=function(t)if not t.collected and t.collectible and _.WOWAPI.GetItemCount(45858,true)==0 then	t.collectible=false end	end,qgs={12919},requireSkill=356,g={
 s(22092,45858,{b=1,f=57,requireSkill=356,spellID=96043})}}),
 q(6607,{altQuests={13826},coords={
 [70]={{58.6,60}}},learnedAt=225,lvl=15,maps={51,66,69,210,224},qgs={12919},qis={16967,16968,16969,16970},requireSkill=356,sourceQuests={6608,6609},g={
@@ -76223,7 +76223,7 @@ s(42369,83189,{b=1,f=4,loc=46,lvl=34}),
 s(42424,83269,{b=1,f=23,lvl=34})}})}),
 h(-63,{
 i(87779,{b=1,description="Can randomly drop from any Mogu related mob in the zone.",spellID=127173}),
-i(85582,{b=1,crs={63610,63611,63641},description="Not techically removed with 5.4.0, cages can still be opened and you can get an assistant in battle for a short duration. Other than that, it is useless.",rwp=50400,spellID=124178,u=2}),
+i(85582,{b=1,crs={63610,63611,63641},spellID=124178}),
 i(86547,{spellID=126180}),
 i(86546,{b=1,cost={{"i",86547,10}},spellID=126182})})}}),
 m(376,{icon=618317,lore="Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",maps={377},petBattleLvl=23,lvl=15,g={

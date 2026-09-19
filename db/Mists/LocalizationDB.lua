@@ -714,14 +714,10 @@ L.OBJECT_ID = "Object ID"
 L.OBJECT_TYPE = "Object Type"
 L.OBJECTIVES = "Objectives"
 L.OBJECTS = "Objects"
-L.ONLY_NOT_TRASH = "Filter Trash Items"
-L.ONLY_NOT_TRASH_TOOLTIP = "Enable this option to ignore white/grey items. Blizzard does not yet provide API for it in Classic."
 L.ONLY_OBTAINABLE_CHECKBOX = "Only Obtainable"
 L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "Enable this option if you want to see only obtainable shared appearances."
 L.ONLY_RELEVANT_CHECKBOX = "Only Relevant"
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected."
-L.ONLY_RWP = "Only RWP"
-L.ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab."
 L.OPEN_AUTOMATICALLY = "Open Automatically"
 L.OPEN_AUTOMATICALLY_DESC = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs."
 L.OPEN_MINILIST_FOR = "Open mini list for "
@@ -1535,7 +1531,7 @@ localize(L.HEADER_NAMES, {
 	[-355] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.EAST ..")",
 	[-356] = DUNGEON_FLOOR_DIREMAUL1.." (" .. L.NORTH ..")",
 	[-357] = DUNGEON_FLOOR_DIREMAUL2.." (" .. L.WEST ..")",
-	[-358] = C_Spell.GetSpellName(21127),
+	[-358] = _.WOWAPI.GetSpellName(21127),
 	[-359] = DUNGEON_FLOOR_DESOLACE22.." (Orange Path)",
 	[-360] = DUNGEON_FLOOR_DESOLACE21.." (Purple Path)",
 	[-361] = "Graveyard",
@@ -1551,7 +1547,7 @@ localize(L.HEADER_NAMES, {
 	[-371] = C_Map.GetAreaInfo(7932),
 	[-372] = "Cache of Madness",
 	[-388] = C_Map.GetAreaInfo(1769),
-	[-389] = C_Spell.GetSpellName(147343),
+	[-389] = _.WOWAPI.GetSpellName(147343),
 	[-390] = "Kukuru's Cache",
 	[-398] = "Little Scales Daycare",
 	[-413] = select(1,GetCategoryInfo(14941)),
@@ -2112,7 +2108,6 @@ _.Modules.Events.SetEventInformation(444, {
 _.FilterConstants = {
 	ACHIEVEMENTS = 105,
 	AMMO = 37,
-	ARTIFACTS = 11,
 	BAGS = 113,
 	BATTLE_PETS = 101,
 	BOWS = 32,
@@ -2171,28 +2166,27 @@ L.FILTER_ID_TYPES = {
 	[1] = INVTYPE_HOLDABLE,
 	[2] = "Cosmetic",
 	[3] = INVTYPE_CLOAK,
-	[4] = C_Item.GetItemSubClassInfo(4,1),
-	[5] = C_Item.GetItemSubClassInfo(4,2),
-	[6] = C_Item.GetItemSubClassInfo(4,3),
-	[7] = C_Item.GetItemSubClassInfo(4,4),
-	[8] = C_Item.GetItemSubClassInfo(4,6),
+	[4] = _.WOWAPI.GetItemSubClassInfo(4,1),
+	[5] = _.WOWAPI.GetItemSubClassInfo(4,2),
+	[6] = _.WOWAPI.GetItemSubClassInfo(4,3),
+	[7] = _.WOWAPI.GetItemSubClassInfo(4,4),
+	[8] = _.WOWAPI.GetItemSubClassInfo(4,6),
 	[9] = INVTYPE_TABARD,
 	[10] = INVTYPE_BODY,
-	[11] = "Artifacts",
-	[20] = C_Item.GetItemSubClassInfo(2,15),
-	[21] = C_Item.GetItemSubClassInfo(2,0),
-	[22] = C_Item.GetItemSubClassInfo(2,1),
-	[23] = C_Item.GetItemSubClassInfo(2,4),
-	[24] = C_Item.GetItemSubClassInfo(2,5),
-	[25] = C_Item.GetItemSubClassInfo(2,7),
-	[26] = C_Item.GetItemSubClassInfo(2,8),
-	[27] = C_Item.GetItemSubClassInfo(2,19),
-	[28] = C_Item.GetItemSubClassInfo(2,10),
-	[29] = C_Item.GetItemSubClassInfo(2,6),
-	[31] = C_Item.GetItemSubClassInfo(2,3),
-	[32] = C_Item.GetItemSubClassInfo(2,2),
-	[33] = C_Item.GetItemSubClassInfo(2,18),
-	[34] = C_Item.GetItemSubClassInfo(2,13),
+	[20] = _.WOWAPI.GetItemSubClassInfo(2,15),
+	[21] = _.WOWAPI.GetItemSubClassInfo(2,0),
+	[22] = _.WOWAPI.GetItemSubClassInfo(2,1),
+	[23] = _.WOWAPI.GetItemSubClassInfo(2,4),
+	[24] = _.WOWAPI.GetItemSubClassInfo(2,5),
+	[25] = _.WOWAPI.GetItemSubClassInfo(2,7),
+	[26] = _.WOWAPI.GetItemSubClassInfo(2,8),
+	[27] = _.WOWAPI.GetItemSubClassInfo(2,19),
+	[28] = _.WOWAPI.GetItemSubClassInfo(2,10),
+	[29] = _.WOWAPI.GetItemSubClassInfo(2,6),
+	[31] = _.WOWAPI.GetItemSubClassInfo(2,3),
+	[32] = _.WOWAPI.GetItemSubClassInfo(2,2),
+	[33] = _.WOWAPI.GetItemSubClassInfo(2,18),
+	[34] = _.WOWAPI.GetItemSubClassInfo(2,13),
 	[35] = "Warglaives",
 	[36] = INVTYPE_THROWN,
 	[37] = INVTYPE_AMMO,
@@ -2210,9 +2204,9 @@ L.FILTER_ID_TYPES = {
 	[53] = INVTYPE_TRINKET,
 	[54] = INVTYPE_RELIC,
 	[55] = AUCTION_CATEGORY_CONSUMABLES,
-	[56] = C_Item.GetItemClassInfo(5),
+	[56] = _.WOWAPI.GetItemClassInfo(5),
 	[57] = "Profession Equipment",
-	[61] = C_Item.GetItemClassInfo(3),
+	[61] = _.WOWAPI.GetItemClassInfo(3),
 	[100] = MOUNTS,
 	[101] = AUCTION_CATEGORY_BATTLE_PETS,
 	[102] = TOY,
@@ -2220,7 +2214,7 @@ L.FILTER_ID_TYPES = {
 	[105] = TRACKER_FILTER_ACHIEVEMENTS,
 	[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,
 	[110] = PAPERDOLL_SIDEBAR_TITLES,
-	[111] = C_Item.GetItemClassInfo(16),
+	[111] = _.WOWAPI.GetItemClassInfo(16),
 	[113] = INVTYPE_BAG,
 	[114] = "Mount Equipment",
 	[200] = AUCTION_CATEGORY_RECIPES,
@@ -2236,7 +2230,6 @@ L.FILTER_ID_ICONS = {
 	[8] = 134952,
 	[9] = 135026,
 	[10] = 135025,
-	[11] = 535594,
 	[20] = 135637,
 	[21] = 132408,
 	[22] = 132400,
@@ -3694,7 +3687,7 @@ local ObjectNames = {
 	[112888] = "Dusty Shelf",
 	[112948] = "Intrepid's Locked Strongbox",
 	[113757] = "Shadowforge Cache",
-	[113768] = C_Spell.GetSpellName(61820),
+	[113768] = _.WOWAPI.GetSpellName(61820),
 	[113769] = C_Spell.GetSpellName(61820),
 	[113770] = C_Spell.GetSpellName(61820),
 	[113771] = C_Spell.GetSpellName(61820),
@@ -11173,9 +11166,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-342] = "Dieser Gegenstand hat eine einzigartige Vorlage. Ihr müsst diesen Gegenstand erhalten, um die Vorlage eurer Sammlung hinzuzufügen.",
 	[-343] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
 })
-localize(L.FILTER_ID_TYPES, {
-	[11] = "Artefakte",
-})
 localize(ObjectNames, {
 	[31] = "Alte Löwenstatue",
 	[32] = "Versunkene Truhe",
@@ -14260,9 +14250,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 })
 localize(L.HEADER_LORE, {
 	[-389] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
-})
-localize(L.FILTER_ID_TYPES, {
-	[11] = "Artéfact",
 })
 localize(ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -22821,9 +22808,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(L.HEADER_LORE, {
 	[-389] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
 })
-localize(L.FILTER_ID_TYPES, {
-	[11] = "Артефакты",
-})
 localize(ObjectNames, {
 	[31] = "Статуя старого льва",
 	[32] = "Затонувший сундук",
@@ -28664,12 +28648,8 @@ L.OBJECT = "Objeto de entorno"
 L.OBJECT_ID = "Objeto de entorno ID"
 L.OBJECT_TYPE = "Tipo de objeto"
 L.OBJECTIVES = "Objetivos"
-L.ONLY_NOT_TRASH = "Filtrar objetos basura"
-L.ONLY_NOT_TRASH_TOOLTIP = "Habilite esta opción para ignorar los elementos blancos o grises. Blizzard aún no ofrece una API para ello en Classic."
 L.ONLY_RELEVANT_CHECKBOX = "Sólo relevante"
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Activa esta opción si quiere ver sólo las apariencias compartidas que tu personaje puede desbloquear.\n\nNOTA: Recomendamos mantener esto desactivado porque saber los requerimientos de desbloqueo de un objeto puede ayudar a identificar porque un objeto no es Coleccionado."
-L.ONLY_RWP = "Sólo Eliminado con el parche"
-L.ONLY_RWP_TOOLTIP = "Activa esta opción para rastrear solamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Eliminado en el Parche' cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros."
 L.OPEN_AUTOMATICALLY = "Abrir automáticamente"
 L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser buena idea que desactives esto. Esto se hizo para forzar a Blizzard a arreglar y/o conocer algunos errores."
 L.OPEN_MINILIST_FOR = "Abrir Mini lista para"
@@ -32193,8 +32173,6 @@ L.NO_ENTRIES_DESC = "Si cree que se trata de un error, intente activar el modo d
 L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No coleccionado|r"
 L.NPC_ID = "ID de Pnj"
 L.OBJECT_ID = "ID de objeto de entorno"
-L.ONLY_RWP = "Sólo Removido con el parche"
-L.ONLY_RWP_TOOLTIP = "Activa esta opción para rastrear solamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Removido en el Parche' cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros."
 L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser buena idea que desactives esto. Esto se hizo para forzar a Blizzard a arreglar y/o conocer algunos bug."
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para actualizar las Colecciones\n" .. CTRL_KEY_TEXT .. " + click para Expandir/Contraer recursivamente\n" .. SHIFT_KEY_TEXT .. " + click derecho para ordenar grupos o listas emergentes\n" .. ALT_KEY_TEXT .. " + click derecho para marcar puntos de referencia|r"
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para buscar en la Casa de Subastas|r"
@@ -33016,14 +32994,10 @@ L.OBJECT_ID = "物体 ID"
 L.OBJECT_TYPE = "物体类型"
 L.OBJECTIVES = "目标"
 L.OBJECTS = "物件"
-L.ONLY_NOT_TRASH = "过滤垃圾物品"
-L.ONLY_NOT_TRASH_TOOLTIP = "启用此选项可忽略白色/灰色物品。暴雪尚未在经典怀旧服中提供 API。"
 L.ONLY_OBTAINABLE_CHECKBOX = "仅可获得"
 L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "如果只想查看可获得的共享外观，请启用此选项。"
 L.ONLY_RELEVANT_CHECKBOX = "仅相关"
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解锁的共享外观，请启用此选项。\n\n注意：我们建议你保持这个关闭，因为了解一个物品的解锁要求可以帮助识别为什么一个物品没有被收藏。"
-L.ONLY_RWP = "仅‘随补丁移除’"
-L.ONLY_RWP_TOOLTIP = "启用此选项仅跟踪将来会从游戏中删除的幻化。只有标记为“随补丁移除”的数据的物品才会计入此数据。如果您发现未标记但应标记的物品，请告诉我！\n\n您可以根据“过滤器”选项卡更改显示的战利品类型。"
 L.OPEN_AUTOMATICALLY = "自动开启"
 L.OPEN_AUTOMATICALLY_DESC = "如果你不是暴雪开发者，最好是取消勾选此项。这样做是为了迫使暴雪修复和/或承认这些错误。"
 L.OPEN_MINILIST_FOR = "打开小列表："
@@ -33743,9 +33717,6 @@ localize(L.HEADER_LORE, {
 	[-388] = "木喉熊怪居住在两个区域：艾萨拉和费伍德森林。人们认为他们是唯一一支未被恶魔腐化的熊怪部族，不过由于存在克罗格（一只未被腐化、所属部族不明的熊怪）以及《燃烧的远征》中秘蓝岛上的深须部族，这一点或许并不属实。然而，现在许多其他种族不加分辨地就对熊怪痛下杀手，根本不去判断对方是敌是友。正因如此，木喉熊怪极少信任他人。\n\n那些前往费伍德森林北部的木喉要塞，并证明自己是木喉熊怪之友的冒险者会发现，熊怪们将朋友看得比什么都重要。尽管他们没有珍贵的珠宝或任何世俗财富，但木喉熊怪的萨满传统依然深厚。他们精通用兽皮制作护甲的技艺，而且非常乐意与他们部族的朋友分享治疗与复活的知识。此外，只要与他们的声望高于 “冷淡”，你就能畅通无阻地通过他们的隧道进入月光林地和冬泉谷。",
 	[-389] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
 	[-415] = "在赞达拉的许诺下实力大增的古拉巴什发动了全面进攻，企图将荆棘谷据为己有。在北荆棘谷，班巴拉、利文斯顿要塞、奈辛瓦里远征队、格罗姆高营地和反抗军营地都遭到了高阶祭司温诺希斯派出的蛇类袭击。高阶祭司基尔娜拉派出黑豹袭击反抗军营地和格罗姆高，而黑豹毛提则袭击了奈辛瓦里远征队的猎人。随后，格罗姆高和反抗军营地又遭到了血领主曼多基尔率领的古拉巴什巨魔的攻击。在部落与联盟的英雄击退了古拉巴什的进攻后，他们被派往同样麻烦缠身的荆棘谷海角。",
-})
-localize(L.FILTER_ID_TYPES, {
-	[11] = "神器",
 })
 localize(ObjectNames, {
 	[31] = "陈旧的石狮子",
@@ -36634,12 +36605,8 @@ L.OBJECT = "物體"
 L.OBJECT_ID = "物件 ID"
 L.OBJECT_TYPE = "物件類型"
 L.OBJECTIVES = "目標"
-L.ONLY_NOT_TRASH = "排除垃圾物品"
-L.ONLY_NOT_TRASH_TOOLTIP = "啟用此選項可忽略白色/灰色物品。暴雪尚未在經典懷舊服中提供 API。"
 L.ONLY_RELEVANT_CHECKBOX = "僅相關"
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解鎖的共享外觀，請啟用此選項。\n\n注意：我們建議你保持這個關閉，因為了解一個物品的解鎖要求可以幫助識別為什麼一個物品沒有被收藏。"
-L.ONLY_RWP = "僅‘隨更新移除’"
-L.ONLY_RWP_TOOLTIP = "啟用此選項僅追蹤未來會從遊戲中刪除的塑形。只有標記為“隨更新移除”的資料的物品才會計入此資料。如果您發現未標記但應標記的物品，請告訴我！\n\n您可以依據“篩選器”選項卡更改顯示的戰利品類型。"
 L.OPEN_AUTOMATICALLY = "自動開啟"
 L.OPEN_AUTOMATICALLY_DESC = "如果你不是暴雪開發者，最好是取消勾選此項。這樣做是為了迫使暴雪修復或承認這些錯誤。"
 L.OPEN_MINILIST_FOR = "打開小列表："

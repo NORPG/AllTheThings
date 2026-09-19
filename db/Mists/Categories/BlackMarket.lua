@@ -109,7 +109,7 @@ r(126855,{itemID=87413,learnedAt=600,q=4,requireSkill=164,u=3}),
 r(126852,{itemID=87410,learnedAt=600,q=4,requireSkill=164,u=3}),
 r(126850,{itemID=87408,learnedAt=600,q=4,requireSkill=164,u=3})}}),
 flt(10,{awp=50004,u=3,g={
-s(175463,45037,{b=1,f=10,filterForRWP=2,q=4,u=3})}}),
+s(175463,45037,{b=1,f=10,q=4,u=3})}}),
 flt(9,{awp=50004,u=3,g={
 s(145472,38312,{b=1,f=9,q=4,u=3}),
 s(134092,23705,{b=1,f=9,q=4,u=3}),

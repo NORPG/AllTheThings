@@ -472,7 +472,7 @@ q(11447,{altQuests={11446},awp=20202,coords={
 i(33034,{e=7,f=55,lvl=23,spellID=44114}),
 i(34020,{e=7,f=55,lvl=11,spellID=44111}),
 i(34017,{e=7,f=55,spellID=44107})}})}})),
-h(-47,{e=7,g={(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=30002 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=30002 end	end	return t end)(
+h(-47,{e=7,g={(function(t)if _.WOWAPI.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if _.WOWAPI.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=30002 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=30002 end	end	return t end)(
 s(15238,33016,{awp=20403,description="Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",e=7,f=2,lore="This stein was the reward from the 2008 Brewfest.",rwp=30002,spellID=41920,u=2,g={
 s(15239,33017,{b=1,coords={
 [27]={{55.8,38.2}}},e=7,f=2,providers={{"o",186183}},spellID=41921,u=2}),
@@ -490,7 +490,7 @@ s(105141,169450,{e=7,f=2,spellID=41921}),
 s(105142,169452,{e=7,f=2,spellID=41943}),
 s(105143,169453,{e=7,f=2,spellID=41944}),
 s(105144,169454,{e=7,f=2,spellID=41945}),
-s(105145,169455,{e=7,f=2,spellID=41946})}}),(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=40001 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=40001 end	end	return t end)(
+s(105145,169455,{e=7,f=2,spellID=41946})}}),(function(t)if _.WOWAPI.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if _.WOWAPI.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=40001 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=40001 end	end	return t end)(
 s(18084,37892,{awp=30002,description="Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",e=7,f=2,lore="This stein was the reward from the 2009 & 2010 Brewfest.",rwp=40001,spellID=41920,u=2,g={
 s(18085,37893,{b=1,coords={
 [27]={{55.8,38.2}}},e=7,f=2,providers={{"o",186183}},spellID=41921,u=2}),
@@ -503,7 +503,7 @@ s(18088,37896,{b=1,coords={
 [1]={{40.8,18}}},e=7,f=2,providers={{"o",186186}},spellID=41945,u=2}),
 s(18087,37895,{b=1,coords={
 [1]={{40.2,17.4}}},e=7,f=2,providers={{"o",186187}},spellID=41946,u=2})}})),
-s(27941,56836,{awp=40001,e=7,f=2,lore="This stein was the reward from the 2011 Brewfest onward.",spellID=101582}),(function(t)if C_Item.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if C_Item.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=20403 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=20403 end	end	return t end)(
+s(27941,56836,{awp=40001,e=7,f=2,lore="This stein was the reward from the 2011 Brewfest onward.",spellID=101582}),(function(t)if _.WOWAPI.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if _.WOWAPI.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=20403 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=20403 end	end	return t end)(
 s(15167,32912,{awp=20202,description="Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",e=7,f=2,lore="This stein was the reward from the 2007 Brewfest.",rwp=20403,spellID=41920,u=2,g={
 s(15169,32915,{b=1,coords={
 [27]={{55.8,38.2}}},e=7,f=2,providers={{"o",186183}},spellID=41921,u=2}),
@@ -10845,9 +10845,9 @@ s(21638,45073,{b=1,e=15,f=1,spellID=61815}),
 p(200,{e=15,itemID=44794,npcID=32791,spellID=61725}),
 s(21596,44800,{e=15,f=2,loc=42}),
 mnt(102349,{awp=40300,e=15,itemID=72145,lvl=10}),
-s(7547,19028,{e=15,f=2,loc=42,rwp=70205,spellID=61980,u=2}),
-s(2635,6835,{e=15,f=2,loc=46,rwp=70205,u=2}),
-s(2633,6833,{e=15,f=10}),
+s(7547,19028,{awp=10300,e=15,f=2,loc=42,rwp=70205,spellID=61980,u=2}),
+s(2635,6835,{awp=10300,e=15,f=2,loc=46,rwp=70205,u=2}),
+s(2633,6833,{awp=10300,e=15,f=10}),
 i(155905,{awp=70305,e=15,f=55,spellID=258904})}})}}),
 h(-12,{e=15,g={
 ach(2797,{awp=30002,e=15,r=2,rwp=50004,sym={{"meta_achievement",2676,2418,2436,2576,2416,2419,2421,2422}},u=2,g={

@@ -37,26 +37,26 @@ faction(892,{collectible=false,r=1})}}),
 h(-11,{
 cl(11,{
 h(-88,{
-s(158324,6124,{f=4,filterForRWP=5,loc=46,q=0,rwp=90105}),
-s(158323,6123,{f=4,filterForRWP=5,loc=42,q=0,rwp=90105}),
-s(158335,6139,{f=4,filterForRWP=5,loc=42,q=0,rwp=90105})}),
+s(158324,6124,{f=4,loc=46,q=0,rwp=90105}),
+s(158323,6123,{f=4,loc=42,q=0,rwp=90105}),
+s(158335,6139,{f=4,loc=42,q=0,rwp=90105})}),
 h(-101,{
 s(156040,35,{f=28,q=1}),
 s(157420,3661,{f=28,q=1})})}),
 cl(3,{
 h(-88,{
-s(156067,129,{f=2,filterForRWP=6,loc=47,q=1,rwp=90105}),
-s(156071,147,{f=4,filterForRWP=6,loc=46,q=0,rwp=90105}),
+s(156067,129,{f=2,loc=47,q=1,rwp=90105}),
+s(156071,147,{f=4,loc=46,q=0,rwp=90105}),
 s(158326,6126,{f=4,loc=46,q=0,rwp=40003}),
-s(158333,6137,{f=4,filterForRWP=6,loc=46,q=0,rwp=90105}),
-s(158327,6127,{f=4,loc=47,q=1,rwp=40003}),
-s(158334,6138,{f=2,filterForRWP=6,loc=47,q=1,rwp=90105})}),
+s(158333,6137,{f=4,loc=46,q=0,rwp=90105}),
+s(158327,6127,{f=2,loc=47,q=1,rwp=40003}),
+s(158334,6138,{f=2,loc=47,q=1,rwp=90105})}),
 h(-101,{
 s(156861,2508,{f=31,q=1}),
 s(156857,2504,{f=32,q=1,rwp=90001})})}),
 cl(8,{
 h(-88,{
-s(156055,55,{f=4,loc=47,q=1,rwp=90105}),
+s(156055,55,{f=2,loc=47,q=1,rwp=90105}),
 s(156289,1395,{f=4,loc=46,q=0,rwp=90105}),
 s(156056,56,{f=4,loc=42,q=0,rwp=90105}),
 s(158336,6140,{f=4,loc=42,q=0,rwp=90105})}),
@@ -67,8 +67,8 @@ cl(2,{
 flt(100,{
 mnt(13819,{c={2},lvl=40,races={1,3}})}),
 h(-88,{
-s(156046,43,{f=2,filterForRWP=7,loc=47,q=1,rwp=90105}),
-s(156047,44,{f=4,filterForRWP=7,loc=46,q=0,rwp=90105}),
+s(156046,43,{f=2,loc=47,q=1,rwp=90105}),
+s(156047,44,{f=4,loc=46,q=0,rwp=90105}),
 s(158318,6118,{f=4,loc=46,q=0,rwp=40003})}),
 h(-101,{
 s(156041,36,{f=23,q=1}),
@@ -76,7 +76,7 @@ s(156774,2362,{f=8,q=0})})}),
 cl(5,{
 h(-88,{
 s(156290,1396,{f=4,loc=46,q=0,rwp=90105}),
-s(156052,51,{f=4,loc=47,q=1,rwp=90105}),
+s(156052,51,{f=2,loc=47,q=1,rwp=90105}),
 s(156053,52,{f=4,loc=46,q=0,rwp=90105}),
 s(158315,6098,{f=4,loc=42,q=0,rwp=90105}),
 s(158319,6119,{f=4,loc=42,q=0,rwp=90105}),
@@ -86,10 +86,10 @@ s(156040,35,{f=28,q=1}),
 s(157420,3661,{f=28,q=1})})}),
 cl(4,{
 h(-88,{
-s(156050,48,{f=4,filterForRWP=5,loc=46,q=0,rwp=90105}),
-s(156049,47,{f=5,loc=47,q=1,rwp=90105}),
-s(156065,121,{f=5,loc=47,q=1,rwp=90105}),
-s(156064,120,{f=4,filterForRWP=5,loc=46,q=0,rwp=90105})}),
+s(156050,48,{f=4,loc=46,q=0,rwp=90105}),
+s(156049,47,{f=2,loc=47,q=1,rwp=90105}),
+s(156065,121,{f=2,loc=47,q=1,rwp=90105}),
+s(156064,120,{f=4,loc=46,q=0,rwp=90105})}),
 h(-101,{
 s(156616,2092,{f=20,q=1})})}),
 cl(7,{
@@ -105,33 +105,35 @@ h(-88,{
 s(156290,1396,{f=4,loc=46,q=0,rwp=90105}),
 s(156057,57,{f=4,loc=42,q=0,rwp=90105}),
 s(158329,6129,{f=4,loc=42,q=0,rwp=90105}),
-s(156058,59,{f=4,loc=47,q=1,rwp=90105})}),
+s(156058,59,{f=2,loc=47,q=1,rwp=90105})}),
 h(-101,{
 s(156040,35,{f=28,q=1})})}),
 cl(1,{
 h(-88,{
-s(156069,140,{f=2,filterForRWP=7,loc=47,q=1,rwp=90105}),
-s(156068,139,{f=4,filterForRWP=7,loc=46,q=0,rwp=90105}),
-s(156045,40,{f=2,filterForRWP=7,loc=47,q=1,rwp=90105}),
-s(158322,6122,{f=2,filterForRWP=7,loc=47,q=1,rwp=90105}),
-s(156044,39,{f=4,filterForRWP=7,loc=46,q=0,rwp=90105}),
-s(158321,6121,{f=4,filterForRWP=7,loc=46,q=0,rwp=90105})}),
+s(156069,140,{f=2,loc=47,q=1,rwp=90105}),
+s(156068,139,{f=4,loc=46,q=0,rwp=90105}),
+s(156045,40,{f=2,loc=47,q=1,rwp=90105}),
+s(158322,6122,{f=2,loc=47,q=1,rwp=90105}),
+s(156044,39,{f=4,loc=46,q=0,rwp=90105}),
+s(158321,6121,{f=4,loc=46,q=0,rwp=90105})}),
 h(-101,{
 s(160475,12282,{f=22,q=1,rwp=90001}),
 s(156039,25,{f=25,q=1}),
 s(156774,2362,{f=8,q=0})})}),
 flt(10,{
-s(158325,6125,{description="Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(156051,49,{description="Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(156054,53,{description="Former Starter Shirt for Priests.",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(156074,154,{description="Former Starter Shirt for Orc & Tauren Shamans",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(158330,6134,{description="Former Starter Shirt for Troll Shamans",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(158320,6120,{description="Former Starter Shirt for Night Elf Warriors",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(156072,148,{description="Former Starter Shirt for Dwarf & Night Elf Hunters",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(158317,6117,{description="Former Starter Shirt for Dwarf Paladins",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(156620,2105,{description="Former Starter Shirt for Undead & Orc Rogues",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(156066,127,{description="Former Starter Shirt for Orc, Tauren & Troll Hunters",f=10,filterForRWP=2,q=1,rwp=40003}),
-s(158332,6136,{description="Former Starter Shirt for Troll Rogues",f=10,filterForRWP=2,q=1,rwp=40003})}),
+s(158314,6097,{f=10,q=1,races_disp={1,7}}),
+s(158325,6125,{description="Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",f=10,q=1,rwp=40003}),
+s(156051,49,{description="Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",f=10,q=1,rwp=40003}),
+s(156054,53,{description="Former Starter Shirt for Priests.",f=10,q=1,rwp=40003}),
+s(156074,154,{description="Former Starter Shirt for Orc & Tauren Shamans",f=10,q=1,rwp=40003}),
+s(158330,6134,{description="Former Starter Shirt for Troll Shamans",f=10,q=1,rwp=40003}),
+s(158320,6120,{description="Former Starter Shirt for Night Elf Warriors",f=10,q=1,rwp=40003}),
+s(156043,38,{description="Former Starter Shirt for Human Warriors",f=10,q=1}),
+s(156072,148,{description="Former Starter Shirt for Dwarf & Night Elf Hunters",f=10,q=1,rwp=40003}),
+s(158317,6117,{description="Former Starter Shirt for Dwarf Paladins",f=10,q=1,rwp=40003}),
+s(156620,2105,{description="Former Starter Shirt for Undead & Orc Rogues",f=10,q=1,rwp=40003}),
+s(156066,127,{description="Former Starter Shirt for Orc, Tauren & Troll Hunters",f=10,q=1,rwp=40003}),
+s(158332,6136,{description="Former Starter Shirt for Troll Rogues",f=10,q=1,rwp=40003})}),
 h(-101,{
 s(156773,2361,{f=24,q=1,rwp=90001}),
 s(156042,37,{awp=11100,f=21,q=1,rwp=30002})}),

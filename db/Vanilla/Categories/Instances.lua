@@ -2779,7 +2779,7 @@ i(16762,{q=1}),
 n(12876,{description="This boss can only be summoned by Horde players on the Amongst the Ruins quest.",g={
 i(16782,{b=1,lvl=21,q=2})}})}}),
 n(6243,{rwp=60002,g={
-s(158717,6906,{b=1,f=6,filterForRWP=7,loc=44,lvl=23,q=3}),
+s(158717,6906,{b=1,f=6,loc=44,lvl=23,q=3}),
 i(1470,{f=113,q=1}),
 s(158716,6905,{b=1,f=22,lvl=22,q=2})}}),
 n(4830,{rwp=60002,g={
@@ -3130,7 +3130,7 @@ s(160331,11767,{b=1,f=7,loc=43,lvl=52,q=3}),
 s(160332,11768,{awp=100107,b=1,f=4,loc=43,lvl=52,q=2,rwp=20001}),
 i(19268,{q=3,u=13})}}),
 e(376,{npcID=9056,g={
-s(160355,11840,{b=1,f=10,filterForRWP=2,q=1}),
+s(160355,11840,{b=1,f=10,q=1}),
 s(160354,11839,{b=1,f=4,loc=40,lvl=50,q=3}),
 s(164859,22223,{b=1,f=7,loc=40,lvl=50,q=3,u=15}),
 s(160357,11842,{b=1,f=6,loc=41,lvl=50,q=3}),
@@ -3650,7 +3650,7 @@ n(10429,{rwp=60002,g={
 i(12630,{q=1,rwp=40003}),
 s(160560,12583,{b=1,f=29,lvl=58,q=3}),
 s(160692,12940,{b=1,f=25,lvl=58,q=3}),
-s(160691,12939,{b=1,f=25,filterForRWP=1,lvl=58,q=3}),
+s(160691,12939,{b=1,f=25,lvl=58,q=3}),
 s(160565,12590,{b=1,f=20,lvl=58,q=4}),
 s(160562,12587,{b=1,f=5,loc=40,lvl=58,q=3}),
 s(160563,12588,{b=1,f=6,loc=41,lvl=58,q=3,rwp=20001}),
@@ -3822,9 +3822,9 @@ i(18297,{b=1,f=55,lvl=55,q=1,u=1101})}})}}),
 h(-63,{maps={235,236,237,238,239},u=1101,g={
 i(12662,{b=1,q=2,u=1101}),
 i(18640,{f=55,q=1,u=1101}),
-i(18333,{f=200,filterForRWP=200,lvl=50,q=2,u=1101}),
-i(18334,{f=200,filterForRWP=200,lvl=50,q=2,u=1101}),
-i(18332,{f=200,filterForRWP=200,lvl=50,q=2,u=1101}),
+i(18333,{f=200,lvl=50,q=2,u=1101}),
+i(18334,{f=200,lvl=50,q=2,u=1101}),
+i(18332,{f=200,lvl=50,q=2,u=1101}),
 i(21982,{crs={11440,11441,11442,11443,11444,11445,11448,11450,14351},q=1,rwp=40003,u=15})}}),
 h(-19,{description="The following items can drop from any boss in Dire Maul and also from Dusty Tomes on the ground.",maps={235,236,237,238,239},providers={{"o",179547}},u=1101,g={
 i(18357,{c={1},lvl=54,q=3,rwp=40003,u=1101}),
@@ -3864,15 +3864,15 @@ e(403,{npcID=13280,u=1101,g={
 i(18299,{q=1,u=1101}),
 s(163470,18324,{b=1,f=22,lvl=53,q=3,u=1101}),
 i(18317,{b=1,f=51,lvl=53,q=3,u=1101}),
-s(163454,18305,{b=1,f=7,filterForRWP=6,loc=46,lvl=53,q=2,u=1101}),
+s(163454,18305,{b=1,f=7,loc=46,lvl=53,q=2,u=1101}),
 s(163456,18307,{b=1,f=4,loc=47,lvl=53,q=2,u=1101}),
 s(163468,18322,{b=1,f=5,loc=47,lvl=53,q=3,u=1101}),
 i(19268,{q=3,u=13})}}),
 e(402,{npcID=11490,u=1101,g={
 s(163469,18323,{b=1,f=32,lvl=53,q=3,u=1101}),
 s(163457,18308,{b=1,f=5,loc=40,lvl=53,q=2,u=1101}),
-s(163465,18319,{b=1,f=6,filterForRWP=5,loc=40,lvl=53,q=3,u=1101}),
-s(163462,18313,{b=1,f=7,filterForRWP=6,loc=40,lvl=53,q=3,u=1101}),
+s(163465,18319,{b=1,f=6,loc=40,lvl=53,q=3,u=1101}),
+s(163462,18313,{b=1,f=7,loc=40,lvl=53,q=3,u=1101}),
 s(163455,18306,{b=1,f=4,loc=44,lvl=53,q=2,u=1101})}}),
 n(11491,{description="Talk to him for him to break down the door.",u=1101}),
 n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},rwp=40003,u=15,g={
@@ -3889,11 +3889,11 @@ i(18501,{b=1,description="Spawns under the vines near the last boss in Dire Maul
 s(163467,18321,{b=1,f=23,lvl=54,q=3,u=1101}),
 s(163459,18310,{b=1,f=25,lvl=54,q=3,u=1101}),
 s(163474,18328,{b=1,f=3,lvl=54,q=3,u=1101}),
-s(163461,18312,{b=1,f=7,filterForRWP=6,loc=42,lvl=54,q=3,u=1101}),
+s(163461,18312,{b=1,f=7,loc=42,lvl=54,q=3,u=1101}),
 s(163458,18309,{b=1,f=5,loc=44,lvl=54,q=3,u=1101}),
-s(163472,18326,{b=1,f=7,filterForRWP=6,loc=44,lvl=54,q=3,u=1101}),
+s(163472,18326,{b=1,f=7,loc=44,lvl=54,q=3,u=1101}),
 s(163473,18327,{b=1,f=4,loc=45,lvl=54,q=3,u=1101}),
-s(163464,18318,{b=1,f=6,filterForRWP=5,loc=47,lvl=54,q=3,u=1101}),
+s(163464,18318,{b=1,f=6,loc=47,lvl=54,q=3,u=1101}),
 i(18314,{b=1,f=52,lvl=54,q=3,u=1101}),
 i(18315,{b=1,f=52,lvl=54,q=3,u=1101}),
 crit(545,{achID=644,id=1,u=1101})}})}}),
@@ -4166,7 +4166,7 @@ n(6231,{description="Located outside the instance near the teleporter.",rwp=4000
 i(9277,{q=1}),
 s(159364,9444,{f=8,lvl=21,q=1})}}),
 e(419,{npcID=7361,g={
-s(159365,9445,{b=1,f=6,filterForRWP=7,loc=44,lvl=29,q=3})}}),
+s(159365,9445,{b=1,f=6,loc=44,lvl=29,q=3})}}),
 o(142475,{cost={{"i",9280,1}},description="This is located in the bottom of the Dormitories.",g={
 i(9282,{q=1}),
 r(3952,{description="If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",itemID=14639,learnedAt=140,q=1,requireSkill=202})}}),
@@ -4308,7 +4308,7 @@ n(12237,{coords={
 [280]={{24,75}}},description="This is a Rare Creature and, as such, is not always present.",g={
 s(163393,17741,{b=1,f=4,loc=42,lvl=46,q=3}),
 s(163394,17742,{b=1,f=5,loc=42,lvl=46,q=3}),
-s(163407,17767,{b=1,f=6,filterForRWP=7,loc=40,lvl=46,q=3})}})}}),
+s(163407,17767,{b=1,f=6,loc=40,lvl=46,q=3})}})}}),
 h(-358,{coords={
 [68]={{44.5,77.1}}},cost={{"i",17191,1}},sourceQuests={7046},g={
 e(428,{npcID=12225,g={
@@ -4370,7 +4370,7 @@ q(5725,{coords={
 qo(1,{providers={{"i",14395}}}),
 qo(2,{providers={{"i",14396}}}),
 s(162339,15450,{b=1,f=5,loc=46,q=2}),
-s(162340,15451,{b=1,f=6,filterForRWP=7,loc=46,q=2}),
+s(162340,15451,{b=1,f=6,loc=46,q=2}),
 s(162338,15449,{b=1,f=4,loc=46,q=2})}})}),
 h(-63,{
 i(14396,{crs={11322,11324},q=1,r=1}),
@@ -4385,7 +4385,7 @@ s(161281,14148,{b=1,f=4,loc=43,lvl=13,q=2})}}),
 n(11518,{rwp=50004,g={
 s(161284,14151,{b=1,f=20,lvl=13,q=2}),
 s(161283,14150,{b=1,f=4,loc=42,lvl=13,q=2}),
-s(161280,14147,{b=1,f=6,filterForRWP=7,loc=43,lvl=13,q=2})}}),
+s(161280,14147,{b=1,f=6,loc=43,lvl=13,q=2})}}),
 n(11519,{rwp=50004})}}),
 inst(233,{coords={
 [1413]={{50,92}}},lore="Crafted from the same mighty vines as Razorfen Kraul, Razorfen Downs is the traditional capital city of the quillboar race. The sprawling, thorn-ridden labyrinth houses a veritable army of loyal quillboar as well as their high priests - the Death's Head tribe. Recently, however, a looming shadow has fallen over the crude den. Agents of the undead Scourge - led by the lich, Amnennar the Coldbringer - have taken control over the quillboar race and turned the maze of thorns into a bastion of undead might. Now the quillboar fight a desperate battle to reclaim their beloved city before Amnennar spreads his control across the Barrens.",lvl=35,mapID=300,savedInstanceID=129,["zone-text-areaID"]=722,g={
@@ -4426,7 +4426,7 @@ s(160078,10572,{c={8},f=27,lvl=34,q=3}),
 s(160076,10570,{f=22,lvl=34,q=3}),
 s(160074,10567,{f=32,lvl=33,q=3}),
 s(160085,10583,{f=5,loc=42,lvl=34,q=3}),
-s(160086,10584,{f=6,filterForRWP=7,loc=44,lvl=31,q=3}),
+s(160086,10584,{f=6,loc=44,lvl=31,q=3}),
 s(160081,10578,{f=4,loc=47,lvl=33,q=3})}),
 n(7895,{coords={
 [1413]={{46.2,87.4},{48,90.4},{48.6,95.6}}},description="This is a rare that is not always present.",rwp=40003}),
@@ -4466,7 +4466,7 @@ q(1102,{coords={
 qo(1,{providers={{"i",5793}}}),
 s(158658,6725,{b=1,f=8,q=3}),
 s(157700,4197,{b=1,f=4,loc=41,q=3}),
-s(158671,6742,{b=1,f=6,filterForRWP=7,loc=45,q=3})}}),
+s(158671,6742,{b=1,f=6,loc=45,q=3})}}),
 q(6522,{lvl=28,maps={1458},providers={{"i",17008}},r=1,rwp=40003}),
 q(1221,{coords={
 [1413]={{62.4,37.6}}},lvl=20,qgs={3446},rwp=40003,g={
@@ -4494,7 +4494,7 @@ q(1101,{coords={
 qo(1,{providers={{"i",5792}}}),
 s(158658,6725,{b=1,f=8,q=3}),
 s(157700,4197,{b=1,f=4,loc=41,q=3}),
-s(158671,6742,{b=1,f=6,filterForRWP=7,loc=45,q=3}),
+s(158671,6742,{b=1,f=6,loc=45,q=3}),
 s(157107,3041,{f=31,lvl=26,q=2})}}),
 q(1144,{lvl=22,qgs={4508},rwp=40003,g={
 i(6748,{b=1,f=52,q=2}),
@@ -4566,7 +4566,7 @@ i(7731,{b=1,f=51,lvl=30,q=3}),
 s(158995,7708,{b=1,f=27,lvl=30,q=3})}),
 n(6489,{
 s(158988,7687,{b=1,f=23,lvl=30,q=3}),
-s(158989,7688,{b=1,f=6,filterForRWP=7,loc=42,lvl=30,q=3}),
+s(158989,7688,{b=1,f=6,loc=42,lvl=30,q=3}),
 i(7686,{b=1,f=52,lvl=30,q=3})})}),
 n(3983,{
 s(158985,7683,{f=34,lvl=29,q=1}),
@@ -4595,7 +4595,7 @@ qo(1,{description="In the first cooridor with books, there are 2 pocket rooms, t
 n(3974,{
 s(158997,7710,{b=1,f=28,lvl=31,q=3}),
 s(159025,7756,{b=1,f=5,loc=44,lvl=29,q=2}),
-i(3456,{b=1,f=55,filterForRWP=53,lvl=25,q=2})}),
+i(3456,{b=1,f=55,lvl=25,q=2})}),
 n(6487,{
 s(159001,7714,{b=1,f=20,lvl=34,q=3}),
 s(159000,7713,{b=1,f=28,lvl=34,q=3}),
@@ -4606,8 +4606,8 @@ i(7146,{b=1,description="Found in the chest after killing Arcanist Doan.",q=2})}
 h(-363,{awp=100107,cost={{"i",7146,1}},lvl=35,rwp=50004,g={
 n(3975,{
 s(159002,7717,{b=1,f=22,lvl=37,q=3}),
-s(159004,7719,{b=1,f=6,filterForRWP=7,loc=40,lvl=37,q=3}),
-s(159003,7718,{b=1,f=6,filterForRWP=7,loc=41,lvl=37,q=3}),
+s(159004,7719,{b=1,f=6,loc=40,lvl=37,q=3}),
+s(159003,7718,{b=1,f=6,loc=41,lvl=37,q=3}),
 s(159996,10330,{b=1,f=6,loc=46,lvl=38,q=3})}),
 n(6575,{
 s(165204,23192,{b=1,f=9,q=1})})}}),
@@ -4942,7 +4942,7 @@ s(163025,16710,{f=5,loc=43,lvl=52,q=3,rwp=40003})}}),
 n(11261,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1}),
 s(162999,16684,{f=4,loc=44,lvl=54,q=3,rwp=40003}),
-s(161637,14617,{b=1,f=10,filterForRWP=2,q=1})}}),
+s(161637,14617,{b=1,f=10,q=1})}}),
 n(10901,{awp=10300,rwp=50004,g={
 s(163020,16705,{f=4,loc=44,lvl=54,q=3,rwp=40003})}}),
 n(10507,{awp=10300,rwp=50004,g={
@@ -5022,7 +5022,7 @@ s(158414,6320,{b=1,f=8,lvl=23,q=3}),
 s(158426,6341,{b=1,f=1,lvl=14,q=2})}}),
 n(3872,{description="This is a Rare Creature and, as such, is not always present.\nCan be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command..",g={
 s(158620,6641,{b=1,f=26,lvl=21,q=2}),
-s(158621,6642,{b=1,f=6,filterForRWP=7,loc=42,lvl=20,q=3})}}),
+s(158621,6642,{b=1,f=6,loc=42,lvl=20,q=3})}}),
 n(4279,{rwp=40003,g={
 s(158412,6318,{b=1,f=28,lvl=21,q=3}),
 s(158413,6319,{b=1,f=5,loc=45,lvl=21,q=2})}}),
@@ -5030,7 +5030,7 @@ n(4274,{rwp=40003,g={
 s(157191,3230,{b=1,f=5,loc=43,lvl=21,q=2}),
 s(158425,6340,{b=1,f=3,lvl=21,q=2})}}),
 n(4627,{rwp=40003,g={
-s(158274,5943,{b=1,f=6,filterForRWP=7,loc=43,lvl=20,q=2})}}),
+s(158274,5943,{b=1,f=6,loc=43,lvl=20,q=2})}}),
 n(3927,{rwp=40003,g={
 s(157436,3748,{b=1,f=4,loc=41,lvl=23,q=3}),
 s(158410,6314,{b=1,f=3,lvl=22,q=2})}}),
@@ -5358,7 +5358,7 @@ s(156605,2074,{b=1,f=25,q=2})}}),
 q(166,{coords={
 [1436]={{56.3,47.5}}},lvl=14,qgs={234},r=2,rwp=40003,sourceQuests={155},g={
 qo(1,{providers={{"i",3637}}}),
-s(158307,6087,{b=1,f=6,filterForRWP=7,loc=46,q=3}),
+s(158307,6087,{b=1,f=6,loc=46,q=3}),
 s(156584,2042,{b=1,f=28,q=3}),
 s(156583,2041,{b=1,f=5,loc=42,q=3})}}),
 q(373,{coords={
@@ -5367,7 +5367,7 @@ q(2040,{coords={
 [1453]={{55.5,12.5}}},lvl=15,qgs={6579},r=2,rwp=40003,sourceQuests={2041},g={
 qo(1,{providers={{"i",7365}}}),
 s(158977,7607,{b=1,f=27,q=2}),
-s(158976,7606,{b=1,f=6,filterForRWP=7,loc=44,q=2})}})}),
+s(158976,7606,{b=1,f=6,loc=44,q=2})}})}),
 h(-46,{
 n(596,{coords={
 [1436]={{44,78.3}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
@@ -5398,10 +5398,10 @@ s(156531,1944,{awp=100107,crs={1731},f=5,loc=44,lvl=13,q=2,rwp=40003}),
 i(1894,{crs={623,624,625},q=1}),
 p(50,{crs={657},itemID=8492,petTypeID=3,q=1,spellID=10683}),
 s(156536,1958,{crs={625},f=23,lvl=12,q=2}),
-s(159084,7997,{b=1,c={4},description="Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",f=5,loc=40,q=0}),
+s(159084,7997,{b=1,c={4},description="Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",f=2,loc=40,q=0}),
 i(915,{q=1}),
 s(156522,1929,{crs={1729,4418},f=4,loc=46,lvl=13,q=2}),
-s(157839,4676,{crs={624},f=6,filterForRWP=7,loc=44,lvl=12,q=2}),
+s(157839,4676,{crs={624},f=6,loc=44,lvl=12,q=2}),
 s(156523,1930,{crs={598},f=3,lvl=13,q=2}),
 s(156525,1934,{crs={636},f=5,loc=46,lvl=15,q=2,rwp=40003}),
 s(156519,1926,{crs={824},f=23,lvl=10,q=2}),
@@ -5451,7 +5451,7 @@ q(389,{coords={
 q(377,{coords={
 [1431]={{72,46.8}}},lvl=24,qgs={270},r=2,rwp=40001,g={
 qo(1,{providers={{"i",3628}}}),
-s(157029,2906,{b=1,f=6,filterForRWP=7,loc=46,q=2}),
+s(157029,2906,{b=1,f=6,loc=46,q=2}),
 s(156577,2033,{b=1,f=5,loc=47,q=2})}}),
 q(387,{coords={
 [1453]={{41.2,58}}},lvl=22,qgs={1719},r=2,rwp=40001}),
@@ -5475,7 +5475,7 @@ h(-63,{
 i(1076,{f=52,lvl=20,q=2,rwp=40001})}),
 n(1720,{description="This is a rare that was not always present.",rwp=40001,g={
 s(157039,2942,{b=1,f=34,lvl=21,q=3}),
-s(157189,3228,{b=1,f=6,filterForRWP=7,loc=43,lvl=21,q=3}),
+s(157189,3228,{b=1,f=6,loc=43,lvl=21,q=3}),
 s(157038,2941,{b=1,f=20,lvl=21,q=3})}}),
 n(1666,{rwp=40001,g={
 i(3640,{q=1}),
@@ -5530,7 +5530,7 @@ q(4143,{coords={
 [1444]={{45.1,25.6}}},lvl=47,maps={1449},qgs={7775},r=2,rwp=40003,sourceQuests={4142},g={
 qo(1,{providers={{"i",11318}}})}}),
 q(3512,{coords={
-[1435]={{13.7,71.7}}},description="This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",lvl=48,maps={1452},OnUpdate=function(t)if not _.IsQuestFlaggedCompleted(3374)and(_.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1)then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r" end	end,qgs={5353},rwp=40003,sourceQuests={3374}}),
+[1435]={{13.7,71.7}}},description="This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",lvl=48,maps={1452},OnUpdate=function(t)if not _.IsQuestFlaggedCompleted(3374)and(_.IsQuestFlaggedCompleted(3373)and _.WOWAPI.GetItemCount(10455,true)<1)then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r" end	end,qgs={5353},rwp=40003,sourceQuests={3374}}),
 q(3446,{coords={
 [1446]={{52.6,45.8}}},lvl=46,providers={{"i",10466},{"o",148836}},qgs={7771},rwp=40003,sourceQuests={3444}}),
 q(1475,{coords={
@@ -5551,7 +5551,7 @@ s(164257,20255,{b=1,f=5,loc=47,q=3,u=14})}}),
 q(3373,{description="Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",lvl=48,providers={{"i",10454},{"o",148512}},rwp=40003,g={
 i(10455,{b=1,f=53,q=2})}}),
 q(3374,{coords={
-[1435]={{13.7,71.7}}},cost={{"i",10455,1}},description="You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",lvl=48,OnUpdate=function(t)if not t.collected and _.IsQuestFlaggedCompleted(3373)and GetItemCount(10455,true)<1 then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r" end	end,providers={{"i",10589}},qgs={5353},rwp=40003,sourceQuests={3373}}),
+[1435]={{13.7,71.7}}},cost={{"i",10455,1}},description="You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",lvl=48,OnUpdate=function(t)if not t.collected and _.IsQuestFlaggedCompleted(3373)and _.WOWAPI.GetItemCount(10455,true)<1 then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r" end	end,providers={{"i",10589}},qgs={5353},rwp=40003,sourceQuests={3373}}),
 q(3528,{coords={
 [1446]={{66.8,22.4}}},lvl=40,qgs={8579},rwp=40003,sourceQuests={4787},g={
 qo(1,{cost={{"i",10663,1},{"i",10465,1}},crs={8443},providers={{"i",10662}}}),
@@ -5807,8 +5807,8 @@ s(159313,9383,{f=22,lvl=35,q=3}),
 s(159359,9431,{f=4,loc=40,lvl=38,q=3}),
 s(159353,9425,{f=22,lvl=39,q=3}),
 s(159350,9422,{f=31,lvl=38,q=3}),
-s(159360,9432,{f=7,filterForRWP=6,loc=43,lvl=40,q=3}),
-s(159358,9430,{f=6,filterForRWP=5,loc=41,lvl=40,q=3}),
+s(159360,9432,{f=7,loc=43,lvl=40,q=3}),
+s(159358,9430,{f=6,loc=41,lvl=40,q=3}),
 s(159336,9406,{crs={4844,4845,4846},f=5,loc=42,lvl=30,q=3}),
 s(159355,9427,{f=23,lvl=37,q=3}),
 s(159314,9384,{crs={4844,4845,4846},f=20,lvl=31,q=3}),
@@ -5852,7 +5852,7 @@ i(7741,{description="Use this item along with the Gni'kiv Medallion to create th
 s(159319,9389,{b=1,f=5,loc=41,lvl=36,q=2}),
 s(159318,9388,{b=1,f=6,loc=43,lvl=35,q=2}),
 s(159320,9390,{b=1,f=4,loc=44,lvl=35,q=2}),
-s(159317,9387,{b=1,f=7,filterForRWP=6,loc=47,lvl=40,q=2})}}),
+s(159317,9387,{b=1,f=7,loc=47,lvl=40,q=2})}}),
 o(124371,{coords={
 [230]={{50.7,73.9}}},cost={{"i",7733,1}},g={
 qo(1,{questID=2240,r=2,rwp=40003}),
@@ -5863,8 +5863,8 @@ s(159337,9407,{b=1,f=4,loc=46,lvl=35,q=3})}})}}),
 e(748,{npcID=7023,g={
 i(8053,{q=1})}}),
 e(470,{npcID=7206,g={
-s(159341,9411,{b=1,f=6,filterForRWP=5,loc=41,lvl=40,q=2}),
-s(159340,9410,{b=1,f=7,filterForRWP=6,loc=44,lvl=40,q=3})}}),
+s(159341,9411,{b=1,f=6,loc=41,lvl=40,q=2}),
+s(159340,9410,{b=1,f=7,loc=44,lvl=40,q=3})}}),
 e(471,{npcID=7291,g={
 s(159348,9419,{b=1,f=23,lvl=41,q=2}),
 s(159342,9412,{b=1,f=31,lvl=42,q=3}),
@@ -5893,7 +5893,7 @@ qo(3,{providers={{"n",5761}}}),
 qo(4,{providers={{"n",5056}}}),
 r(7955,{itemID=6476,learnedAt=115,q=2,requireSkill=165}),
 s(159089,8071,{b=1,f=27,q=2}),
-s(158503,6481,{b=1,f=6,filterForRWP=7,loc=44,q=2})}}),
+s(158503,6481,{b=1,f=6,loc=44,q=2})}}),
 q(1486,{coords={
 [1413]={{46,35.7}}},lvl=13,qgs={5767},rwp=40003,g={
 qo(1,{providers={{"i",6443}}}),
@@ -5958,7 +5958,7 @@ s(158499,6473,{b=1,f=5,loc=42,lvl=18,q=2})}}),
 e(475,{npcID=3669,g={
 i(9738,{q=1}),
 s(158493,6465,{b=1,f=4,loc=42,lvl=17,q=2}),
-s(158491,6460,{b=1,f=6,filterForRWP=7,loc=45,lvl=19,q=3}),
+s(158491,6460,{b=1,f=6,loc=45,lvl=19,q=3}),
 s(160043,10410,{b=1,f=5,loc=46,lvl=18,q=3})}}),
 e(478,{npcID=3674,g={
 s(158488,6448,{b=1,f=20,lvl=17,q=2}),
@@ -5971,7 +5971,7 @@ i(9741,{q=1}),
 s(158497,6469,{b=1,f=32,lvl=19,q=3}),
 s(158290,5970,{b=1,f=4,loc=44,lvl=18,q=2}),
 s(160044,10411,{b=1,f=5,loc=47,lvl=18,q=2}),
-s(158490,6459,{b=1,f=6,filterForRWP=7,loc=47,lvl=18,q=2})}}),
+s(158490,6459,{b=1,f=6,loc=47,lvl=18,q=2})}}),
 e(480,{npcID=5775,g={
 s(158617,6631,{b=1,f=28,lvl=20,q=3}),
 s(158616,6630,{b=1,f=8,lvl=20,q=3}),
@@ -5980,7 +5980,7 @@ e(481,{npcID=3654,g={
 ach(630),
 i(10441,{b=1,lvl=15,q=1}),
 s(158492,6461,{b=1,f=4,loc=41,lvl=22,q=3}),
-s(158613,6627,{b=1,f=6,filterForRWP=7,loc=42,lvl=23,q=3}),
+s(158613,6627,{b=1,f=6,loc=42,lvl=23,q=3}),
 i(6463,{b=1,f=52,lvl=21,q=3})}})}}),
 inst(241,{coords={
 [1446]={{39,19}}},lore="Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",lvl=39,mapID=219,savedInstanceID=209,["zone-text-areaID"]=978,g={

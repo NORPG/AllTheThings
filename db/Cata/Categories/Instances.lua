@@ -2954,7 +2954,7 @@ i(16762,{q=1}),
 n(12876,{description="This boss can only be summoned by Horde players on the Amongst the Ruins quest.",g={
 i(16782,{b=1,lvl=21,q=2})}})}}),
 n(6243,{rwp=60002,g={
-s(121633,6906,{b=1,f=6,filterForRWP=7,loc=44,lvl=20,q=3}),
+s(121633,6906,{b=1,f=6,loc=44,lvl=20,q=3}),
 i(1470,{f=113,q=1}),
 s(121632,6905,{b=1,f=22,lvl=20,q=3})}}),
 n(4830,{rwp=60002,g={
@@ -3484,7 +3484,7 @@ s(124440,11767,{b=1,f=7,loc=43,lvl=52,q=3}),
 s(124441,11768,{awp=100107,b=1,description="This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",f=4,isBounty=1,loc=43,lvl=51,q=3,rwp=20001,u=2}),
 i(19268,{q=3,u=13})}}),
 e(376,{npcID=9056,g={
-s(124486,11840,{b=1,f=10,filterForRWP=2,q=1}),
+s(124486,11840,{b=1,f=10,q=1}),
 s(124485,11839,{b=1,f=4,loc=40,lvl=51,q=3}),
 s(132622,22223,{b=1,f=7,loc=40,lvl=51,q=3,u=15}),
 s(124488,11842,{b=1,f=6,loc=41,lvl=51,q=3}),
@@ -4040,7 +4040,7 @@ n(10429,{rwp=60002,g={
 i(12630,{q=1,rwp=40003,u=2}),
 s(124972,12583,{b=1,f=29,lvl=55,q=3}),
 s(125269,12940,{b=1,f=25,lvl=55,q=3}),
-s(125268,12939,{b=1,f=25,filterForRWP=1,lvl=55,q=3}),
+s(125268,12939,{b=1,f=25,lvl=55,q=3}),
 s(124979,12590,{b=1,f=20,lvl=55,q=4}),
 s(124976,12587,{b=1,f=5,loc=40,lvl=55,q=3}),
 s(124977,12588,{b=1,description="This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",f=6,isBounty=1,loc=41,lvl=55,q=3,rwp=20001,u=2}),
@@ -4268,9 +4268,9 @@ i(18297,{b=1,f=55,lvl=39,q=1,u=1101})}})}}),
 h(-63,{maps={235,236,237,238,239},u=1101,g={
 i(12662,{b=1,q=2,u=1101}),
 i(18640,{f=55,q=1,u=1101}),
-i(18333,{description="This still drops despite being completely worthless.",f=200,filterForRWP=200,lvl=50,q=2,u=1101}),
-i(18334,{description="This still drops despite being completely worthless.",f=200,filterForRWP=200,lvl=50,q=2,u=1101}),
-i(18332,{description="This still drops despite being completely worthless.",f=200,filterForRWP=200,lvl=50,q=2,u=1101}),
+i(18333,{description="This still drops despite being completely worthless.",f=200,lvl=50,q=2,u=1101}),
+i(18334,{description="This still drops despite being completely worthless.",f=200,lvl=50,q=2,u=1101}),
+i(18332,{description="This still drops despite being completely worthless.",f=200,lvl=50,q=2,u=1101}),
 i(21982,{q=1,rwp=40003,u=2})}}),
 h(-19,{maps={235,236,237,238,239},providers={{"o",179547}},u=1101,g={
 i(18357,{c={1},lvl=54,q=3,rwp=40003,u=2}),
@@ -4310,15 +4310,15 @@ e(403,{npcID=13280,u=1101,g={
 i(18299,{q=1,u=1101}),
 s(129272,18324,{b=1,f=22,lvl=36,q=3,u=1101}),
 i(18317,{b=1,f=51,lvl=36,q=3,u=1101}),
-s(129253,18305,{b=1,f=6,filterForRWP=6,loc=46,lvl=36,q=3,u=1101}),
+s(129253,18305,{b=1,f=6,loc=46,lvl=36,q=3,u=1101}),
 s(129255,18307,{b=1,f=4,loc=47,lvl=36,q=3,u=1101}),
 s(201129,18322,{b=1,f=5,loc=47,lvl=36,q=3,u=1101}),
 i(19268,{q=3,u=13})}}),
 e(402,{npcID=11490,u=1101,g={
 s(129271,18323,{b=1,f=32,lvl=36,q=3,u=1101}),
 s(129256,18308,{b=1,f=5,loc=40,lvl=36,q=3,u=1101}),
-s(129267,18319,{b=1,f=5,filterForRWP=5,loc=40,lvl=36,q=3,u=1101}),
-s(129261,18313,{b=1,f=6,filterForRWP=6,loc=40,lvl=36,q=3,u=1101}),
+s(129267,18319,{b=1,f=5,loc=40,lvl=36,q=3,u=1101}),
+s(129261,18313,{b=1,f=6,loc=40,lvl=36,q=3,u=1101}),
 s(129254,18306,{b=1,f=4,loc=44,lvl=36,q=3,u=1101})}}),
 n(11491,{description="Talk to him for him to break down the door.",u=1101}),
 n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
@@ -4335,11 +4335,11 @@ i(18501,{b=1,description="Spawns under the vines near the last boss in Dire Maul
 s(129269,18321,{b=1,f=23,lvl=36,q=3,u=1101}),
 s(129258,18310,{b=1,f=25,lvl=36,q=3,u=1101}),
 s(129276,18328,{b=1,f=3,lvl=36,q=3,u=1101}),
-s(201128,18312,{b=1,f=6,filterForRWP=6,loc=42,lvl=36,q=3,u=1101}),
+s(201128,18312,{b=1,f=6,loc=42,lvl=36,q=3,u=1101}),
 s(129257,18309,{b=1,f=5,loc=44,lvl=36,q=3,u=1101}),
-s(129274,18326,{b=1,f=6,filterForRWP=6,loc=44,lvl=36,q=3,u=1101}),
+s(129274,18326,{b=1,f=6,loc=44,lvl=36,q=3,u=1101}),
 s(129275,18327,{b=1,f=4,loc=45,lvl=36,q=3,u=1101}),
-s(129266,18318,{b=1,f=5,filterForRWP=5,loc=47,lvl=36,q=3,u=1101}),
+s(129266,18318,{b=1,f=5,loc=47,lvl=36,q=3,u=1101}),
 i(18314,{b=1,f=52,lvl=36,q=3,u=1101}),
 i(18315,{b=1,f=52,lvl=36,q=3,u=1101}),
 crit(545,{achID=644,id=1,u=1101})}})}}),
@@ -4626,7 +4626,7 @@ n(6231,{description="Located outside the instance near the teleporter.",rwp=4000
 i(9277,{q=1,u=2}),
 s(122887,9444,{f=8,lvl=21,q=1,u=2})}}),
 e(419,{npcID=7361,g={
-s(200953,9445,{b=1,f=6,filterForRWP=7,loc=44,lvl=24,q=3})}}),
+s(200953,9445,{b=1,f=6,loc=44,lvl=24,q=3})}}),
 o(142475,{cost={{"i",9280,1}},description="This is located in the bottom of the Dormitories.",g={
 i(9282,{q=1}),
 r(3952,{description="If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",itemID=14639,learnedAt=140,q=1,requireSkill=202})}}),
@@ -4770,7 +4770,7 @@ n(12237,{coords={
 [280]={{24,75}}},description="This is a Rare Creature and, as such, is not always present.",g={
 s(129000,17741,{b=1,f=4,loc=42,lvl=34,q=3}),
 s(129001,17742,{b=1,f=5,loc=42,lvl=34,q=3}),
-s(129026,17767,{b=1,f=6,filterForRWP=7,loc=40,lvl=34,q=3})}})}}),
+s(129026,17767,{b=1,f=6,loc=40,lvl=34,q=3})}})}}),
 h(-358,{coords={
 [68]={{44.5,77.1}}},g={
 e(428,{npcID=12225,g={
@@ -4854,7 +4854,7 @@ q(14356,{awp=30300,coords={
 qo(1,{providers={{"i",14395}},u=2}),
 qo(2,{providers={{"i",14396}},u=2}),
 s(127374,15450,{b=1,f=5,loc=46,q=2,u=2}),
-s(127375,15451,{b=1,f=6,filterForRWP=7,loc=46,q=2,u=2}),
+s(127375,15451,{b=1,f=6,loc=46,q=2,u=2}),
 s(127373,15449,{b=1,f=4,loc=46,q=2,u=2})}})}),
 h(-63,{
 i(14396,{crs={11322,11324},q=1,r=1}),
@@ -4872,7 +4872,7 @@ s(126207,14148,{b=1,f=4,loc=43,lvl=13,q=3})}}),
 n(11518,{rwp=50004,g={
 s(126210,14151,{b=1,f=20,lvl=13,q=3}),
 s(126209,14150,{b=1,f=4,loc=42,lvl=13,q=3}),
-s(126206,14147,{b=1,f=6,filterForRWP=7,loc=43,lvl=13,q=3})}}),
+s(126206,14147,{b=1,f=6,loc=43,lvl=13,q=3})}}),
 n(11519,{awp=40003,rwp=50004,g={
 s(211619,68195,{b=1,f=25,lvl=13,q=3})}})}}),
 inst(233,{coords={
@@ -4940,7 +4940,7 @@ s(123798,10572,{c={8},f=27,lvl=40,q=3}),
 s(123796,10570,{f=22,lvl=40,q=3}),
 s(123793,10567,{f=32,lvl=40,q=3}),
 s(123809,10583,{f=5,loc=42,lvl=40,q=3}),
-s(123810,10584,{f=7,filterForRWP=7,loc=44,lvl=40,q=3}),
+s(123810,10584,{f=7,loc=44,lvl=40,q=3}),
 s(123804,10578,{f=4,loc=47,lvl=40,q=3})}),
 n(7895,{description="This is a rare that is not always present.",maps={199},rwp=40003,u=2}),
 n(7355,{rwp=60002,g={
@@ -4981,7 +4981,7 @@ q(1102,{coords={
 qo(1,{providers={{"i",5793}},u=2}),
 s(121510,6725,{b=1,f=8,q=3,u=2}),
 s(119414,4197,{b=1,f=4,loc=41,q=3,u=2}),
-s(121526,6742,{b=1,f=6,filterForRWP=7,loc=45,q=3,u=2})}}),
+s(121526,6742,{b=1,f=6,loc=45,q=3,u=2})}}),
 q(26906,{awp=40003,lvl=30,qgs={44402}}),
 q(26905,{awp=40003,lvl=30,qgs={44415},sourceQuests={26906},g={
 qo(1,{providers={{"i",5793}}}),
@@ -5027,7 +5027,7 @@ q(1101,{coords={
 qo(1,{providers={{"i",5792}},u=2}),
 s(121510,6725,{b=1,f=8,q=3,u=2}),
 s(119414,4197,{b=1,f=4,loc=41,q=3,u=2}),
-s(121526,6742,{b=1,f=6,filterForRWP=7,loc=45,q=3,u=2}),
+s(121526,6742,{b=1,f=6,loc=45,q=3,u=2}),
 s(139546,29200,{awp=20001,b=1,f=31,q=2,u=2})}}),
 q(1144,{lvl=22,qgs={4508},rwp=40003,u=2}),
 q(26903,{awp=40003,lvl=30,qgs={4508},rwp=60002,g={
@@ -5122,7 +5122,7 @@ i(7731,{b=1,f=51,lvl=30,q=3}),
 s(122098,7708,{b=1,f=27,lvl=26,q=3})}),
 n(6489,{
 s(122091,7687,{b=1,f=23,lvl=26,q=3}),
-s(122092,7688,{b=1,f=6,filterForRWP=7,loc=42,lvl=26,q=3}),
+s(122092,7688,{b=1,f=6,loc=42,lvl=26,q=3}),
 i(7686,{b=1,f=52,lvl=30,q=3})})}),
 n(3983,{
 s(122087,7683,{b=1,f=34,lvl=26,q=3}),
@@ -5170,7 +5170,7 @@ q(26987,{awp=40003,coords={
 n(3974,{
 s(122100,7710,{b=1,f=28,lvl=29,q=3}),
 s(122141,7756,{b=1,f=5,loc=44,lvl=29,q=3}),
-i(3456,{b=1,f=53,filterForRWP=53,lvl=29,q=3})}),
+i(3456,{b=1,f=53,lvl=29,q=3})}),
 n(6487,{
 s(122104,7714,{b=1,f=20,lvl=29,q=3}),
 s(122103,7713,{b=1,f=28,lvl=29,q=3}),
@@ -5207,8 +5207,8 @@ qo(3,{providers={{"n",4290}}}),
 qo(4,{providers={{"n",4292}}})}})}),
 n(3975,{
 s(122107,7717,{b=1,f=22,lvl=32,q=3}),
-s(122109,7719,{b=1,f=6,filterForRWP=7,loc=40,lvl=32,q=3}),
-s(122108,7718,{b=1,f=6,filterForRWP=7,loc=41,lvl=32,q=3}),
+s(122109,7719,{b=1,f=6,loc=40,lvl=32,q=3}),
+s(122108,7718,{b=1,f=6,loc=41,lvl=32,q=3}),
 s(123649,10330,{b=1,f=6,loc=46,lvl=32,q=3}),
 crit(536,{achID=637,id=1})}),
 n(6575,{
@@ -5610,7 +5610,7 @@ s(128419,16710,{f=5,loc=43,lvl=52,q=3,rwp=40003,u=2})}}),
 n(11261,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1}),
 s(128393,16684,{f=4,loc=44,lvl=54,q=3,rwp=40003,u=2}),
-s(126620,14617,{b=1,f=10,filterForRWP=2,q=1})}}),
+s(126620,14617,{b=1,f=10,q=1})}}),
 n(10901,{awp=10300,rwp=50004,g={
 s(128414,16705,{f=4,loc=44,lvl=54,q=3,rwp=40003,u=2})}}),
 n(10507,{awp=10300,rwp=50004,g={
@@ -5967,7 +5967,7 @@ i(60878,{awp=40003,q=1}),
 i(60885,{awp=40003,q=1}),
 s(121135,6323,{b=1,f=23,lvl=16,q=3}),
 s(120310,5254,{awp=50004,b=1,f=5,loc=41,lvl=16,q=3,u=1}),
-s(120850,5943,{awp=50004,b=1,f=6,filterForRWP=7,loc=43,lvl=16,q=3,u=1}),
+s(120850,5943,{awp=50004,b=1,f=6,loc=43,lvl=16,q=3,u=1}),
 s(121131,6319,{awp=50004,b=1,f=5,loc=45,lvl=16,q=3,u=1}),
 i(6321,{b=1,f=52,lvl=16,q=3})}}),
 e(98,{npcID=4278,g={
@@ -5977,7 +5977,7 @@ s(118534,3191,{b=1,f=22,lvl=16,q=3}),
 s(121132,6320,{b=1,f=8,lvl=16,q=3})}}),
 n(3872,{description="This is a Rare Creature and, as such, is not always present.\nCan be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command..",g={
 s(121441,6641,{b=1,f=26,lvl=16,q=3}),
-s(121442,6642,{b=1,f=6,filterForRWP=7,loc=42,lvl=16,q=3})}}),
+s(121442,6642,{b=1,f=6,loc=42,lvl=16,q=3})}}),
 n(4279,{rwp=40003,u=2,g={
 s(121130,6318,{b=1,f=28,lvl=16,q=3,u=2}),
 s(121131,6319,{b=1,f=5,loc=45,lvl=16,q=3,u=2})}}),
@@ -5986,14 +5986,14 @@ i(60876,{q=1}),
 i(60881,{q=1}),
 s(117235,1292,{b=1,f=21,lvl=16,q=3}),
 s(121153,6341,{b=1,f=1,lvl=16,q=3}),
-s(121442,6642,{b=1,f=6,filterForRWP=7,loc=42,lvl=16,q=3}),
+s(121442,6642,{b=1,f=6,loc=42,lvl=16,q=3}),
 s(118569,3230,{b=1,f=5,loc=43,lvl=16,q=3})}}),
 i(60873,{awp=40003,description="This item in located on a chair in Lord Walden's room.",providers={{"o",205476}},q=1}),
 n(4274,{rwp=40003,u=2,g={
 s(118569,3230,{b=1,f=5,loc=43,lvl=16,q=3,u=2}),
 s(121152,6340,{b=1,f=3,lvl=20,q=3,u=2})}}),
 n(4627,{rwp=40003,u=2,g={
-s(120850,5943,{b=1,f=6,filterForRWP=7,loc=43,lvl=16,q=3,u=2})}}),
+s(120850,5943,{b=1,f=6,loc=43,lvl=16,q=3,u=2})}}),
 n(3927,{rwp=40003,u=2}),
 n(4275,{rwp=40003,u=2,g={
 s(121201,6392,{b=1,f=4,loc=45,lvl=16,q=3,u=2})}}),
@@ -6415,7 +6415,7 @@ qo(1,{providers={{"n",47296}}})}}),
 q(166,{coords={
 [1436]={{56.3,47.5}}},lvl=14,qgs={234},r=2,rwp=40003,sourceQuests={155},u=2,g={
 qo(1,{providers={{"i",3637}},u=2}),
-s(120938,6087,{b=1,f=6,filterForRWP=7,loc=46,q=3,u=2}),
+s(120938,6087,{b=1,f=6,loc=46,q=3,u=2}),
 s(117676,2042,{b=1,f=28,q=3,u=2}),
 s(117675,2041,{b=1,f=5,loc=42,q=3,u=2})}}),
 q(27790,{awp=40003,lvl=15,qgs={46612},r=2,sourceQuests={27785},g={
@@ -6440,7 +6440,7 @@ q(2040,{coords={
 [1453]={{62.8,34.8}}},lvl=15,qgs={6579},r=2,rwp=40003,sourceQuests={2041},u=2,g={
 qo(1,{providers={{"i",7365}},u=2}),
 s(122059,7607,{b=1,f=27,q=2,u=2}),
-s(122058,7606,{b=1,f=6,filterForRWP=7,loc=44,q=2,u=2})}})}),
+s(122058,7606,{b=1,f=6,loc=44,q=2,u=2})}})}),
 h(-46,{
 n(596,{coords={
 [55]={{46.8,47.8},{57.4,42.9},{61.7,65.8}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
@@ -6471,10 +6471,10 @@ s(117605,1944,{awp=100107,crs={1731},f=5,loc=44,lvl=15,q=3,rwp=40003,u=2}),
 i(1894,{crs={623,624,625},q=1}),
 p(50,{crs={48522},description="The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",itemID=8492,npcID=7387,petTypeID=3,q=1,spellID=10683}),
 s(117612,1958,{crs={625},f=23,lvl=15,q=3}),
-s(122266,7997,{b=1,c={4},f=5,loc=40,q=0}),
+s(122266,7997,{b=1,c={4},f=2,loc=40,q=0}),
 i(915,{q=1}),
 s(117592,1929,{b=1,crs={48417,48418},f=4,loc=46,lvl=20,q=3}),
-s(119816,4676,{b=1,crs={624},f=6,filterForRWP=7,loc=44,lvl=20,q=3}),
+s(119816,4676,{b=1,crs={624},f=6,loc=44,lvl=20,q=3}),
 s(117593,1930,{crs={48419},f=3,lvl=15,q=3}),
 s(117596,1934,{b=1,crs={636},f=5,loc=46,lvl=20,q=3,rwp=40003,u=2}),
 s(117589,1926,{crs={48420},f=23,lvl=15,q=3}),
@@ -6591,7 +6591,7 @@ qo(1,{providers={{"i",62305}}})}}),
 q(377,{coords={
 [1431]={{72,46.8}}},lvl=24,qgs={270},r=2,rwp=40001,u=2,g={
 qo(1,{providers={{"i",3628}},u=2}),
-s(118343,2906,{b=1,f=6,filterForRWP=7,loc=46,q=2,u=2}),
+s(118343,2906,{b=1,f=6,loc=46,q=2,u=2}),
 s(117668,2033,{b=1,f=5,loc=47,q=2,u=2})}}),
 q(387,{coords={
 [1453]={{51.6,69.4}}},lvl=22,qgs={1719},r=2,rwp=40001,u=2}),
@@ -6623,7 +6623,7 @@ h(-63,{
 i(1076,{f=52,lvl=20,q=2,rwp=40001,u=2})}),
 n(1720,{description="This is a rare that was not always present.",rwp=40001,u=2,g={
 s(118369,2942,{b=1,f=34,lvl=21,q=3,u=2}),
-s(118567,3228,{b=1,f=6,filterForRWP=7,loc=43,lvl=21,q=3,u=2}),
+s(118567,3228,{b=1,f=6,loc=43,lvl=21,q=3,u=2}),
 s(118368,2941,{b=1,f=20,lvl=21,q=3,u=2})}}),
 n(1666,{rwp=40001,u=2,g={
 i(3640,{q=1,u=2}),
@@ -6641,7 +6641,7 @@ s(208631,63345,{b=1,f=4,loc=42,lvl=20,q=3}),
 s(208630,63344,{b=1,f=5,loc=47,lvl=20,q=3})}}),
 e(465,{awp=40001,npcID=46264,g={
 i(62305,{q=1}),
-s(119816,4676,{b=1,f=6,filterForRWP=7,loc=44,lvl=20,q=3}),
+s(119816,4676,{b=1,f=6,loc=44,lvl=20,q=3}),
 s(120873,5967,{b=1,f=4,loc=45,lvl=20,q=3}),
 s(117592,1929,{b=1,f=4,loc=46,lvl=20,q=3})}}),
 e(464,{awp=40001,npcID=46254,g={
@@ -6972,8 +6972,8 @@ s(122827,9383,{f=22,lvl=35,q=3}),
 s(122874,9431,{f=4,loc=40,lvl=35,q=3}),
 s(122868,9425,{f=22,lvl=35,q=3}),
 s(122865,9422,{f=31,lvl=35,q=3}),
-s(122875,9432,{f=6,filterForRWP=6,loc=43,lvl=35,q=3}),
-s(122873,9430,{f=5,filterForRWP=5,loc=41,lvl=35,q=3}),
+s(122875,9432,{f=6,loc=43,lvl=35,q=3}),
+s(122873,9430,{f=5,loc=41,lvl=35,q=3}),
 s(122850,9406,{crs={4844,4845,4846},f=5,loc=42,lvl=35,q=3}),
 s(122870,9427,{f=23,lvl=35,q=3}),
 s(122828,9384,{crs={4844,4845,4846},f=20,lvl=35,q=3}),
@@ -7017,7 +7017,7 @@ i(7741,{description="Use this item along with the Gni'kiv Medallion to create th
 s(122833,9389,{b=1,f=5,loc=41,lvl=35,q=3}),
 s(122832,9388,{b=1,f=6,loc=43,lvl=35,q=3}),
 s(200952,9390,{b=1,f=4,loc=44,lvl=35,q=3}),
-s(122831,9387,{b=1,f=6,filterForRWP=6,loc=47,lvl=35,q=3})}}),
+s(122831,9387,{b=1,f=6,loc=47,lvl=35,q=3})}}),
 e(469,{npcID=7228,providers={{"o",124371}},g={
 s(122852,9408,{b=1,f=28,lvl=35,q=3}),
 s(122853,9409,{b=1,f=6,loc=43,lvl=35,q=3}),
@@ -7027,8 +7027,8 @@ i(62053,{awp=40003,q=1}),
 i(8053,{q=1})}}),
 e(470,{npcID=7206,g={
 i(62055,{awp=40003,q=1}),
-s(122855,9411,{b=1,f=5,filterForRWP=5,loc=41,lvl=35,q=3}),
-s(122854,9410,{b=1,f=6,filterForRWP=6,loc=44,lvl=35,q=3})}}),
+s(122855,9411,{b=1,f=5,loc=41,lvl=35,q=3}),
+s(122854,9410,{b=1,f=6,loc=44,lvl=35,q=3})}}),
 e(471,{npcID=7291,g={
 s(122862,9419,{b=1,f=23,lvl=35,q=3}),
 s(122856,9412,{b=1,f=31,lvl=35,q=3}),
@@ -7068,7 +7068,7 @@ qo(3,{providers={{"n",5761}},u=2}),
 qo(4,{providers={{"n",5056}},u=2}),
 r(7955,{itemID=6476,learnedAt=115,q=2,requireSkill=165,u=2}),
 s(122289,8071,{b=1,f=27,q=2,u=2}),
-s(121289,6481,{b=1,f=6,filterForRWP=7,loc=44,q=2,u=2})}}),
+s(121289,6481,{b=1,f=6,loc=44,q=2,u=2})}}),
 q(1486,{coords={
 [1413]={{46,35.7}}},lvl=13,qgs={5767},rwp=40003,u=2,g={
 qo(1,{providers={{"i",6443}},u=2}),
@@ -7138,7 +7138,7 @@ s(121281,6473,{b=1,f=5,loc=42,lvl=16,q=3})}}),
 e(475,{npcID=3669,g={
 i(9738,{q=1}),
 s(200919,6465,{b=1,f=4,loc=42,lvl=16,q=3}),
-s(121268,6460,{b=1,f=6,filterForRWP=7,loc=45,lvl=16,q=3}),
+s(121268,6460,{b=1,f=6,loc=45,lvl=16,q=3}),
 s(123703,10410,{b=1,f=5,loc=46,lvl=16,q=3})}}),
 e(478,{npcID=3674,g={
 s(121256,6448,{b=1,f=20,lvl=16,q=3}),
@@ -7151,7 +7151,7 @@ i(9741,{q=1}),
 s(121277,6469,{b=1,f=32,lvl=16,q=3}),
 s(120876,5970,{b=1,f=4,loc=44,lvl=16,q=3}),
 s(123704,10411,{b=1,f=5,loc=47,lvl=16,q=3}),
-s(121267,6459,{b=1,f=6,filterForRWP=7,loc=47,lvl=16,q=3})}}),
+s(121267,6459,{b=1,f=6,loc=47,lvl=16,q=3})}}),
 e(480,{npcID=5775,g={
 s(121432,6631,{b=1,f=28,lvl=16,q=3}),
 s(121431,6630,{b=1,f=8,lvl=16,q=3}),
@@ -7162,7 +7162,7 @@ crit(3941,{achID=1283,awp=30002,id=1})}),
 gach(5039,{awp=40003}),
 i(10441,{b=1,lvl=15,q=1}),
 s(121269,6461,{b=1,f=4,loc=41,lvl=16,q=3}),
-s(121428,6627,{b=1,f=6,filterForRWP=7,loc=42,lvl=16,q=3}),
+s(121428,6627,{b=1,f=6,loc=42,lvl=16,q=3}),
 i(6463,{b=1,f=52,lvl=20,q=3})}})}}),
 inst(241,{coords={
 [1446]={{39.2,21.3}}},lore="Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",lvl=39,mapID=219,savedInstanceID=209,["zone-text-areaID"]=978,g={
@@ -9297,11 +9297,11 @@ s(139662,29316,{awp=20003,b=1,f=7,loc=41,q=3,u=17})}}),
 q(12513,{coords={
 [1446]={{50.8,27.5}}},lvl=66,qgs={28126},races={1,3,7},u=17,g={
 qo(1,{providers={{"i",38329}},u=17}),
-s(145451,38276,{b=1,f=4,filterForRWP=2,loc=40,q=1,u=17})}}),
+s(145451,38276,{b=1,f=4,loc=40,q=1,u=17})}}),
 q(12515,{coords={
 [1446]={{50.7,27.5}}},lvl=66,qgs={28126},races={2,4,5,6,8,9,10,11,22},u=17,g={
 qo(1,{providers={{"i",38329}},u=17}),
-s(145451,38276,{b=1,f=4,filterForRWP=2,loc=40,q=1,u=17})}}),
+s(145451,38276,{b=1,f=4,loc=40,q=1,u=17})}}),
 q(10282,{coords={
 [75]={{41.6,38.5}}},lvl=66,qgs={20130},sourceQuests={10277},u=17}),
 q(10283,{lvl=66,qgs={18723},rwp=40300,sourceQuests={10282},u=2,g={
@@ -9328,11 +9328,11 @@ i(29412,{f=55,lvl=55,q=1,u=17})}}),
 n(18672,{u=17,g={
 r(32461,{itemID=25725,learnedAt=350,q=1,requireSkill=165,u=17}),
 s(201235,23321,{f=4,loc=42,q=1,u=17}),
-s(116891,45,{f=10,filterForRWP=2,q=1}),
-s(116886,38,{f=10,filterForRWP=2,q=1}),
-s(116897,53,{f=10,filterForRWP=2,q=1}),
-s(120946,6096,{f=10,filterForRWP=2,q=1}),
-s(120947,6097,{f=10,filterForRWP=2,q=1})}})}}),
+s(116891,45,{f=10,q=1}),
+s(116886,38,{f=10,q=1}),
+s(116897,53,{f=10,q=1}),
+s(120946,6096,{f=10,q=1}),
+s(120947,6097,{f=10,q=1})}})}}),
 h(-63,{u=17,g={
 r(32487,{b=1,crs={17820,28132},itemID=25729,learnedAt=350,q=3,requireSkill=165,u=17}),
 i(30457,{f=55,lvl=65,q=1,u=17}),
@@ -15129,12 +15129,12 @@ s(178922,50992,{b=1,f=6,loc=45,lvl=80,q=4,u=33})}}),
 n(37936,{r=1,sym={{"select","itemID",3422,3420,3424,3423,30749,30750,3419,3421}},u=33}),
 n(37903,{r=2,sym={{"select","itemID",30749,30750}},u=33}),
 n(37184,{u=33,g={
-s(177980,49278,{b=1,collectible=false,f=10,filterForRWP=2,q=1,u=33})}})}}),
+s(177980,49278,{b=1,collectible=false,f=10,q=1,u=33})}})}}),
 h(-63,{u=33,g={
 s(178479,50451,{f=7,loc=45,lvl=80,q=4,u=33}),
 i(50447,{f=52,lvl=80,q=4,u=33}),
 s(178478,50450,{f=6,loc=46,lvl=80,q=4,u=33}),
-s(202632,52019,{b=1,crs={37217},f=10,filterForRWP=2,q=2,u=33}),
+s(202632,52019,{b=1,crs={37217},f=10,q=2,u=33}),
 i(50453,{f=52,lvl=80,q=4,u=33}),
 s(178476,50444,{f=31,lvl=80,q=4,u=33}),
 s(178477,50449,{f=4,loc=41,lvl=80,q=4,u=33}),
