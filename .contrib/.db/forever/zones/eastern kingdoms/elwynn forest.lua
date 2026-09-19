@@ -92,6 +92,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 91752,	-- The Big Picture
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/1 Sack of "Picture" Books
 								provider = { "i", 247886 },	-- Sack of "Picture" Books
@@ -195,10 +196,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 91743,	-- Rascally Rodents
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
 					}),
 					q(91741, {	-- Nibbled on Book
 						qs = 47834,	-- Nibbled on Book (QS!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						qis = {
 							247857,	-- Nibbled on Book
 						},
@@ -207,6 +210,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 92124,	-- Book Inventory
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/8 Stolen Book
 								provider = { "i", 247839 },	-- Stolen Book
@@ -255,6 +259,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qg = 248415,	-- Tordrin Sternblade
 						qi = 247970,	-- Kobold Tracking Kit
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						--[[
 						groups = {
 							objective(1, {	-- 0/6 Followed Kobold Tracks
@@ -301,6 +306,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 21,	-- Skirmish at Echo Ridge
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						--[[
 						CRIEVE NOTE:
 						Also flagged 96659, 96630, 96652, 96638, 98289, 96656
@@ -311,6 +317,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 91745,	-- Mining Consultant
 						qg = 247226,	-- Kelsey Fargo
 						coord = { 47.2, 32.17, MAP.ELWYNN_FOREST },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/1 Sack of "Picture" Books
 								provider = { "i", 247886 },	-- Sack of "Picture" Books
@@ -403,6 +410,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						cr = 38,	-- Defias Thug
 					}),
 					i(247834, {	-- Nibbled on Book
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						cr = 6,	-- Kobold Vermin
 					}),
 					i(2055, {	-- Small Wooden Hammer
@@ -498,6 +506,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				]]--
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(97923, {	-- Camping 101: Mining [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
@@ -508,6 +517,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				]]--
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = MINING,
 				groups = {
 					--recipe(),	-- Mining: Lodestone	-- CRIEVE NOTE: Couldn't find the spellID
