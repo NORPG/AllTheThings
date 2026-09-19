@@ -174,26 +174,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 						}),
 						q(3097, {	-- Hallowed Scroll
-							["sourceQuests"] = {
-								-- #if AFTER CATA
-								26801,	-- Scourge on our Perimeter
-								-- #else
-								364,	-- The Mindless Ones
-								-- #endif
-							},
+							["sourceQuests"] = 364,	-- The Mindless Ones
 							["providers"] = {
 								{ "n", 1569 },	-- Shadow Priest Sarvis
 								{ "i", 9569 },	-- Hallowed Scroll
 							},
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 46.6, 58.8, DEATHKNELL },
-								-- #else
-								{ 30.8, 66.2, MAP.TIRISFAL_GLADES },
-								-- #endif
-							},
+							["coords"] = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_7_0_3 },
-							["races"] = { UNDEAD, BLOODELF },
+							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
 						}),
 						q(5651, {	-- In Favor of Darkness

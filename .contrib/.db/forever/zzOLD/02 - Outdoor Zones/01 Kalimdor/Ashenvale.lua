@@ -2308,13 +2308,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 21,
 				}),
-				q(9428, {	-- Report to Spintertree Post
-					["qg"] = 17098,	-- Ambassador Dawnsinger
-					["coord"] = { 71.0, 68.0, MAP.ORGRIMMAR },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
-					["races"] = { BLOODELF },
-					["lvl"] = 18,
-				}),
 				q(13626, {	-- Respect for the Fallen
 					["sourceQuest"] = 13624,	-- A Squad of Your Own
 					["qg"] = 11806,	-- Sentinel Onaeya

@@ -1960,6 +1960,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 	-- #endif
 	filter(SHIRTS, {
+		-- #if BEFORE 2.0.1
+		i(6097, {	-- Acolyte's Shirt
+			["races_disp"] = { HUMAN, GNOME },
+		}),
+		-- #endif
 		i(6125, {	-- Brawler's Harness
 			["description"] = "Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",
 			["timeline"] = { REMOVED_4_0_3 },
@@ -2006,6 +2011,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["description"] = "Former Starter Shirt for Night Elf Warriors",
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
+		-- #if BEFORE 2.0.1
+		i(38, {	-- Recruit's Shirt
+			["description"] = "Former Starter Shirt for Human Warriors",
+		}),
+		-- #endif
 		i(148, {	-- Rugged Trapper's Shirt
 			["description"] = "Former Starter Shirt for Dwarf & Night Elf Hunters",
 			["timeline"] = { REMOVED_4_0_3 },

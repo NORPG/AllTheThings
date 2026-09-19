@@ -1750,13 +1750,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(3248),	-- Translated Letter from The Embalmer
 					},
 				}),
-				q(9429, {	-- Travel to Darkshire
-					["qg"] = 17103,	-- Emissary Taluun
-					["coord"] = { 78.2, 18.2, MAP.STORMWIND_CITY },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
-					["races"] = { DRAENEI },
-					["lvl"] = 18,
-				}),
 				q(26690, {	-- Vile and Tainted
 					["sourceQuest"] = 26689,	-- The Rotting Orchard
 					["qg"] = 663,	-- Calor

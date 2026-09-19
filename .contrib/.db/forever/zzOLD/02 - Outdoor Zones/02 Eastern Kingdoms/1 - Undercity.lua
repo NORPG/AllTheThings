@@ -240,17 +240,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(9189, {	-- Delivery to the Sepulcher
-					["sourceQuest"] = 9180,	-- Journey to Undercity [Blood Elf Only]
-					["providers"] = {
-						{ "n", 16287 },	-- Ambassador Sunsorrow
-						{ "i", 22629 },	-- Sealed Sin'dorei Orders
-					},
-					["coord"] = { 57.8, 90.6, MAP.UNDERCITY },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
-					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 15, 1),
-				}),
 				q(1507, {	-- Devourer of Souls [Orgrimmar]
 					["altQuests"] = { 1472 },	-- Devourer of Souls [Undercity]
 					["qg"] = 5875,	-- Dan'rul Bloodeye

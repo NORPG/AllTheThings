@@ -758,7 +758,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						5633,	-- Returning Home [Ironforge]
 						5631,	-- Returning Home [Stormwind City]
 						5632,	-- Returning Home [Stormwind City]
-						-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
 					},
 					["qgs"] = {
 						11401,	-- Priestess Alathea <Priest Trainer>
@@ -962,13 +961,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 5,
-				}),
-				q(9432, {	-- Travel to Astranaar [Draenei]
-					["qg"] = 17105,	-- Emissary Valustraa
-					["coord"] = { 38.6, 81.0, MAP.DARNASSUS },
-					["timeline"] = { ADDED_2_0_3 , REMOVED_4_0_3 },
-					["races"] = { DRAENEI },
-					["lvl"] = 18,
 				}),
 				q(730, {	-- Trouble In Darkshore?
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker

@@ -1684,7 +1684,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ 78.8, 45.6, MAP.STORMWIND_CITY },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,

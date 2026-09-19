@@ -2193,15 +2193,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				q(41002, {	-- A Weapon of the Horde
-					["sourceQuest"] = 40983,	-- Demons Among Them
-					["qg"] = 101035,	-- Lady Sylvanas Windrunner
-					["coord"] = { 45.7, 16.0, MAP.DUROTAR },
-					["timeline"] = { ADDED_7_0_3 },
-					["races"] = { BLOODELF },
-					["classes"] = { DEMONHUNTER },
-					["lvl"] = lvlsquish(98, 98, 10),
-				}),
 				q(25263, {	-- Arnak Fireblade
 					["sourceQuest"] = 25262,	-- Skull Rock
 					["providers"] = {
@@ -2411,20 +2402,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(138775, {	-- Token of the Banshee Queen
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(40983, {	-- Demons Among Them
-					["sourceQuest"] = 40982,	-- Second Sight
-					["qg"] = 100873,	-- Allari the Souleater
-					["coord"] = { 45.8, 15.1, MAP.DUROTAR },
-					["timeline"] = { ADDED_7_0_3 },
-					["races"] = { BLOODELF },
-					["classes"] = { DEMONHUNTER },
-					["lvl"] = lvlsquish(98, 98, 10),
-					["groups"] = {
-						i(129104, {	-- Brand of the Banshee Queen
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -3185,13 +3162,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							},
 						}),
 					},
-				}),
-				q(40982, {	-- Second Sight
-					["qg"] = 100873,	-- Allari the Souleater
-					["coord"] = { 45.8, 15.1, MAP.DUROTAR },
-					["timeline"] = { ADDED_7_0_3 },
-					["races"] = { BLOODELF },
-					["classes"] = { DEMONHUNTER },
 				}),
 				q(835, {	-- Securing the Lines
 					-- #if BEFORE CATA
