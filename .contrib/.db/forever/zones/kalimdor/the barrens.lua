@@ -577,7 +577,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 					i(5346),	-- Orcish Battle Bow
 					i(5344),	-- Pointed Axe
-					i(5345,		-- Stonewood Hammer
+					i(5345),	-- Stonewood Hammer
 				},
 			}),
 			q(819, {	-- Chen's Empty Keg (1/3)
@@ -3192,7 +3192,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			i(5051, {	-- Dig Rat
-				["description"] = "Only drops from Dig Rats in The Barrens."
+				["description"] = "Only drops from Dig Rats in The Barrens.",
 				["coord"] = { 48.8, 84.8, MAP.THE_BARRENS },	-- Bael Modan Excavation
 				["cr"] = 3444,	-- Dig Rat
 			}),

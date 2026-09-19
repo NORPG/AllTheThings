@@ -2,18 +2,16 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-HARVEST_FESTIVAL_HEADER = createHeader({
+root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(createHeader({
 	readable = "Harvest Festival",
 	constant = "HARVEST_FESTIVAL_HEADER",
 	icon = [[~_.asset("Holiday_Harvestfest")]],
 	eventID = EVENTS.HARVEST_FESTIVAL,
-	-- #if BEFORE WRATH
 	eventSchedule = {
 		1,	-- Recurring
 		9, 6, 10, 0,	-- 09/06 at 10:00 AM
 		9, 13, 10, 0	-- 09/13 at 10:00 AM
 	},
-	-- #endif
 	text = {
 		en = "Harvest Festival",
 		-- TODO: de = "",
@@ -27,34 +25,19 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 		cn = "收获节",
 		tw = "收穫節",
 	},
-});
-
-local BLUE_FIREWORK = i(9312);	-- Blue Firework
-local GREEN_FIREWORK = i(9313);	-- Green Firework
-local RED_FIREWORK = i(9318);	-- Red Firework
-
-root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEADER, {
+}), {
 	n(MAILBOX, {
-		i(19697, {		-- Bounty of the Harvest
-			["timeline"] = { ADDED_1_12_1 },
-		}),
+		i(19697),	-- Bounty of the Harvest
 	}),
 	n(QUESTS, {
 		q(8149, {	-- Honoring a Hero (A)
 			["qg"] = 15011,	-- Wagner Hammerstrike
-			["coords"] = {
-				-- #if AFTER CATA
-				{ 59.8, 34.2, MAP.DUN_MOROGH },
-				-- #else
-				{ 52.6, 36.0, MAP.DUN_MOROGH },
-				-- #endif
-			},
+			["coord"] = { 52.6, 36.0, MAP.DUN_MOROGH },
 			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["maps"] = { MAP.WESTERN_PLAGUELANDS },
 			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_1_12_1 },
 			["isYearly"] = true,
-			["lvl"] = lvlsquish(30, 30, 1),
+			["lvl"] = 30,
 			["groups"] = {
 				objective(1, {	-- Uther's Tribute
 					["provider"] = { "i", 19850 },	-- Uther's Tribute
@@ -65,19 +48,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 		}),
 		q(8150, {	-- Honoring a Hero (H)
 			["qg"] = 15012,	-- Javnir Nashak
-			["coords"] = {
-				-- #if AFTER CATA
-				{ 46.2, 15.0, MAP.DUROTAR },
-				-- #else
-				{ 46.0, 13.6, MAP.DUROTAR },
-				-- #endif
-			},
+			["coord"] = { 46.0, 13.6, MAP.DUROTAR },
 			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			["maps"] = { MAP.ASHENVALE },
 			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_12_1 },
 			["isYearly"] = true,
-			["lvl"] = lvlsquish(30, 30, 1),
+			["lvl"] = 30,
 			["groups"] = {
 				objective(1, {	-- Grom's Tribute
 					["provider"] = { "i", 19851 },	-- Grom's Tribute
@@ -86,17 +62,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 				i(20010),	-- The Horde's Hellscream
 			},
 		}),
-		q(54996, {	-- Remembrance
-			["qg"] = 149084,	-- Spiritwalker Ussoh
-			["coord"] = { 46.8, 15.4, MAP.DUROTAR },
-			["timeline"] = { ADDED_8_2_0 },
-			["races"] = { TAUREN },
-			["isYearly"] = true,
-		}),
 	}),
 	n(REWARDS, {
 		["description"] = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
-		["timeline"] = { ADDED_1_12_1 },
 		["groups"] = {
 			i(19995),	-- Harvest Boar
 			i(19696),	-- Harvest Bread
@@ -110,18 +78,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			15012,	-- Javnir Nashak
 			15011,	-- Wagner Hammerstrike
 		},
-		["timeline"] = { ADDED_1_12_1 },
 		["groups"] = {
-			BLUE_FIREWORK,
-			GREEN_FIREWORK,
-			RED_FIREWORK,
+			i(9312),	-- Blue Firework
+			i(9313);	-- Green Firework
+			i(9318);	-- Red Firework
 			i(9314),	-- Red Streaks Firework
 			i(9315),	-- Yellow Rose Firework
 		},
 	}),
 })));
-
--- Unmark as holiday.
-BLUE_FIREWORK.u = nil;
-GREEN_FIREWORK.u = nil;
-RED_FIREWORK.u = nil;

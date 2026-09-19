@@ -27,24 +27,15 @@ root(ROOTS.Holidays, {
 		},
 	}), {
 		["maps"] = {
-			-- #if AFTER 4.0.3
-			MAP.BLASTED_LANDS,
-			MAP.SWAMP_OF_SORROWS,
-			-- #else
 			MAP.AZSHARA,
 			MAP.TANARIS,
 			MAP.THE_HINTERLANDS,
 			MAP.FERALAS,
 			MAP.STRANGLETHORN_VALE,
-			-- #endif
 		},
 		["groups"] = {
 			i(13756, {	-- Raw Summer Bass
-				-- #if AFTER 4.0.3
-				["description"] = "Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 20th March to 22nd September.",
-				-- #else
 				["description"] = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",
-				-- #endif
 			}),
 		},
 	})),
@@ -72,24 +63,15 @@ root(ROOTS.Holidays, {
 		},
 	}), {
 		["maps"] = {
-			-- #if AFTER 4.0.3
-			MAP.BLASTED_LANDS,
-			MAP.SWAMP_OF_SORROWS,
-			-- #else
 			MAP.AZSHARA,
 			MAP.TANARIS,
 			MAP.THE_HINTERLANDS,
 			MAP.FERALAS,
 			MAP.STRANGLETHORN_VALE,
-			-- #endif
 		},
 		["groups"] = {
 			i(13755, {	-- Winter Squid
-				-- #if AFTER 4.0.3
-				["description"] = "Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 23nd September to 20th March.",
-				-- #else
 				["description"] = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",
-				-- #endif
 			}),
 		},
 	})),
