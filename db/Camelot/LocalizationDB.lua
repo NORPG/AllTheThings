@@ -1168,47 +1168,25 @@ L.ZONE_DESC = "Click this button to select a random zone based on what you're mi
 -- Category Database Module
 _.CategoryNames = {
 	[2] = "Consumable",
-	[3] = "Tarot Decks",
-	[106] = "Card",
-	[218] = HEADSLOT,
-	[219] = SHOULDERSLOT,
-	[220] = INVTYPE_CHEST,
+	[218] = "Helms",
+	[219] = "Shoulders",
+	[220] = "Chest",
 	[221] = "Gauntlets",
-	[222] = WRISTSLOT,
-	[223] = WAISTSLOT,
+	[222] = "Bracers",
+	[223] = "Belts",
 	[224] = "Legs",
-	[225] = FEETSLOT,
-	[227] = AUCTION_CATEGORY_WEAPONS,
-	[251] = HEADSLOT,
-	[252] = SHOULDERSLOT,
-	[253] = INVTYPE_CHEST,
-	[255] = HANDSSLOT,
-	[256] = WAISTSLOT,
-	[257] = LEGSSLOT,
-	[258] = FEETSLOT,
+	[225] = "Boots",
+	[227] = "Weapons",
+	[251] = "Helms",
+	[252] = "Shoulders",
+	[253] = "Chest",
+	[255] = "Gloves",
+	[256] = "Belts",
+	[257] = "Pants",
+	[258] = "Boots",
 	[259] = "Cloaks",
 }
 _.CategoryIcons = {
-	[2] = 132108,
-	[3] = 134492,
-	[106] = 134492,
-	[218] = 133127,
-	[219] = 135053,
-	[220] = 132624,
-	[221] = 132938,
-	[222] = 132616,
-	[223] = 132516,
-	[224] = 134584,
-	[225] = 132535,
-	[227] = 135580,
-	[251] = 133076,
-	[252] = 135032,
-	[253] = 132635,
-	[255] = 132939,
-	[256] = 132513,
-	[257] = 134592,
-	[258] = 132544,
-	[259] = 133755,
 }
 -- Custom Header Database Module
 _.HeaderConstants = {
@@ -1509,6 +1487,11 @@ localize(L.EVENT_REMAPPING, {
 	[375] = 1,
 })
 -- Programmatic Event Scheduling
+_.Modules.Events.SetEventInformation(14, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=5,["year"]=2027},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=1,["year"]=2028})
+})
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027}),
@@ -1518,16 +1501,6 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
-})
-_.Modules.Events.SetEventInformation(17, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=7,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=2,["year"]=2027})
-})
-_.Modules.Events.SetEventInformation(14, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=5,["year"]=2027},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=1,["year"]=2028})
 })
 _.Modules.Events.SetEventInformation(15, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=5,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=6,["year"]=2025}),
@@ -1548,6 +1521,11 @@ _.Modules.Events.SetEventInformation(9, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=5,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=5,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=6,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=6,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=7,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=7,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(17, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=7,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=2,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(16, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=7,["year"]=2025},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=7,["year"]=2025}),
@@ -4290,10 +4268,6 @@ L.WARN_REMOVED_CHECKBOX = "Entfernte Dinge lösen eine Warnung aus"
 L.WORLD_QUESTS_DESC = "Dies sind Weltquests und andere zeitlich begrenzte Dinge, die derzeit irgendwo verfügbar sind. Los Hol's dir!"
 L.WRONG_FACTION = "Möglicherweise müsst Ihr auf der anderen Fraktion sein, um dies anschauen zu können."
 L.ZONE_DESC = "Klick diesen Knopf um eine zufällige Zone auszuwählen, die Euch noch fehlt."
-localize(_.CategoryNames, {
-	[2] = "Verbrauchsgegenstand",
-	[3] = "Tarotkarten",
-})
 localize(L.HEADER_NAMES, {
 	[-11] = "Neuer Charakter",
 	[-19] = "Gemeinsame Bossbeute",
@@ -5472,11 +5446,6 @@ L.WINDOW_COLORS = "Couleurs de la fenêtre"
 L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour afficher cela."
 L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !"
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque."
-localize(_.CategoryNames, {
-	[2] = "consommable",
-	[3] = "Jeu de tarot",
-	[106] = "Carte",
-})
 localize(L.HEADER_NAMES, {
 	[-11] = "Nouveau personnage",
 	[-22] = "Objets communs des vendeurs",
@@ -6380,11 +6349,6 @@ L.RUNECARVING_POWER = "Abilità dell'Incisione Runica"
 L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Abilità dell'Incisione Runica"
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Condotti"
 L.TITLES_CHECKBOX = "Titoli"
-localize(_.CategoryNames, {
-	[2] = "Consumabile",
-	[3] = "Mazzo di Tarocchi",
-	[106] = "Carta",
-})
 localize(L.HEADER_NAMES, {
 	[-11] = "Nuovo personaggio",
 	[-25] = "Istruttore dei Demoni",
@@ -6923,11 +6887,6 @@ L.TOM_TOM_NOT_FOUND = "Você precisa ter TomTom instalado para exibir as coorden
 L.TRACKING_PROGRESS = "Rastreando Progresso"
 L.VISIT_FLIGHT_MASTER = "Visite o Mestre de Voo para registrar."
 L.WRONG_FACTION = "Você precisa ser de outra facção para visualizar isso."
-localize(_.CategoryNames, {
-	[2] = "Consumível",
-	[3] = "Baralho de Tarô",
-	[106] = "Carta",
-})
 localize(L.HEADER_NAMES, {
 	[-11] = "Novo personagem",
 	[-25] = "Treinamento de Demônios",
@@ -8351,10 +8310,6 @@ L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Включите данную опцию, 
 L.WRONG_FACTION = "Вы должны быть за другую фракцию, чтобы видеть это."
 L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!"
 L.ZONE_DESC = "Нажмите эту кнопку для выбора случайной локации, основываясь на несобранных Штучках."
-localize(_.CategoryNames, {
-	[3] = "карт Таро",
-	[106] = "Карты",
-})
 localize(L.HEADER_NAMES, {
 	[-11] = "Новый персонаж",
 	[-19] = "Общая добыча с боссов",
@@ -9287,13 +9242,6 @@ L.RUNECARVING_POWER = "룬조각 능력"
 L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 룬조각 능력"
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 도관"
 L.TITLES_CHECKBOX = "칭호"
-localize(_.CategoryNames, {
-	[2] = "소모품",
-	[3] = "카드 묶음",
-	[221] = "손",
-	[224] = "다리",
-	[259] = "등",
-})
 localize(L.HEADER_NAMES, {
 	[-11] = "새로운 캐릭터",
 	[-25] = "악마 훈련사",
@@ -10860,14 +10808,6 @@ L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Activa esta opción si quiere ver el botó
 L.WRONG_FACTION = "Quizás necesites estar en la otra facción para ver esto."
 L.YOU_DID_IT = "¡LO LOGRASTE! "
 L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basado en lo que te falta."
-localize(_.CategoryNames, {
-	[2] = "Consumible",
-	[3] = "Baraja de Tarot",
-	[106] = "Carta",
-	[221] = "Guanteletes",
-	[224] = "Piernas",
-	[259] = "Capas",
-})
 localize(L.HEADER_NAMES, {
 	[-11] = "Nuevo personaje",
 	[-19] = "Botín común de jefe",
@@ -12077,10 +12017,6 @@ L.VISUAL_ID = "ID Visual"
 L.WAGO_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\n¡Puedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro ...o no."
 L.WARN_REMOVED_CHECKBOX = "Cosas eliminadas activan un Aviso"
 L.ZONE_DESC = "Haz click en este botón para seleccionar una zona aleatoria basado en lo que te falta."
-localize(_.CategoryNames, {
-	[2] = "Objeto Consumible",
-	[3] = "Naipe de Tarot",
-})
 localize(L.HEADER_NAMES, {
 	[-19] = "Botín compartido entre los jefes",
 	[-36] = "Fiestas",
@@ -13188,14 +13124,6 @@ L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地图上看到 ATT 按�
 L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容。"
 L.YOU_DID_IT = "你做到了！"
 L.ZONE_DESC = "点击此按钮可根据缺少的内容选择随机地区。"
-localize(_.CategoryNames, {
-	[2] = "消耗品",
-	[3] = "塔罗牌",
-	[106] = "卡牌",
-	[221] = "护手",
-	[224] = "腿部",
-	[259] = "披风",
-})
 localize(L.HEADER_NAMES, {
 	[-11] = "新角色",
 	[-19] = "首领共同掉落",
@@ -14715,9 +14643,6 @@ L.WORLDMAP_BUTTON_CHECKBOX = "顯示世界地圖按鈕"
 L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按鈕，請啟用此選項。使用此按鈕可以快速拜訪當前顯示區域的小列表。通常情況下，你需要親自前往該區域才能看到小列表上的內容，你可以通過在聊天框中鍵入'/att mini'來拜訪小列表。"
 L.WRONG_FACTION = "可能需要在另一個陣營中查看此內容。"
 L.ZONE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機地區。"
-localize(_.CategoryNames, {
-	[106] = "卡片",
-})
 localize(L.HEADER_NAMES, {
 	[-19] = "首領共通掉落",
 	[-22] = "商人共通物品",
