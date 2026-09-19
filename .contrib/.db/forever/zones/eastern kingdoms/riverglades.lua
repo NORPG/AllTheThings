@@ -11,7 +11,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 		}),
 		n(FLIGHT_PATHS, {
 			fp(3276, {	-- Farholde Keep, Riverglades
+				["cr"] = 257087,	-- Gretchen Mayberry <Gryphon Master>
 				["coord"] = { 60.6, 81.6, MAP.RIVERGLADES },
+				["races"] = ALLIANCE_ONLY,
 			}),
 		}),
 	},
