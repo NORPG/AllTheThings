@@ -280,7 +280,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(6127, {	-- Trapper's Boots [Orc]
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
-			i(6138, {	-- Trapper's Boots
+			i(6138, {	-- Trapper's Boots [CATA+] / Thug Boots [Classic]
 				-- ["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
@@ -2040,7 +2040,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["description"] = "Former Starter Shirt for Orc, Tauren & Troll Hunters",
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
-		i(6136, {	-- Trapper's Shirt
+		i(6136, {	-- Trapper's Shirt [CATA+] / Thug Shirt [Classic]
 			["description"] = "Former Starter Shirt for Troll Rogues",
 			["timeline"] = { REMOVED_4_0_3 },
 		}),

@@ -36,9 +36,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(6127, {	-- Trapper's Boots [Orc]
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
-			i(6138, {	-- Trapper's Boots
-				["races_disp"] = { ORC, TAUREN, TROLL },
-			}),
 		}),
 		n(WEAPONS, {
 			i(2508),	-- Old Blunderbuss
@@ -124,11 +121,14 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(47, {	-- Footpad's Shoes
 				["races_disp"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD },
 			}),
-			i(121, {	-- Thug Boots
-				["races_disp"] = { ORC, TROLL },
-			}),
 			i(120, {	-- Thug Pants
 				["races_disp"] = { ORC, TROLL },
+			}),
+			i(121, {	-- Thug Boots
+				["races_disp"] = { ORC, UNDEAD },
+			}),
+			i(6138, {	-- Thug Boots [Classic] / Trapper's Boots [CATA+]
+				["races_disp"] = { TROLL },
 			}),
 		}),
 	}),
@@ -243,15 +243,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			--["classes_display"] = { ROGUE },
 			["races_disp"] = { ORC, UNDEAD },
 		}),
+		i(6136, {	-- Thug Shirt [Classic] / Trapper's Shirt [CATA+]
+			["description"] = "Starter Shirt for Troll Rogues",
+			--["classes_display"] = { ROGUE },
+			["races_disp"] = { TROLL },
+		}),
 		i(127, {	-- Trapper's Shirt
 			["description"] = "Starter Shirt for Orc, Tauren & Troll Hunters",
 			--["classes_display"] = { HUNTER },
 			["races_disp"] = { ORC, TAUREN, TROLL },
-		}),
-		i(6136, {	-- Trapper's Shirt
-			["description"] = "Starter Shirt for Troll Rogues",
-			--["classes_display"] = { ROGUE },
-			["races_disp"] = { TROLL },
 		}),
 	}),
 	n(WEAPONS, {	-- These were used and changed so many times on different classes, that I leave them here.
