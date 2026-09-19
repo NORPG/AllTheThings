@@ -997,7 +997,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(194, {	-- Raptor Hunting [CATA+] / Raptor Mastery (1/4)
 				["sourceQuest"] = 583,	-- Welcome to the Jungle
 				["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
-				["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
+				["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				["lvl"] = 28,
 				["groups"] = {
 					objective(1, {	-- 0/10 Stranglethorn Raptor slain
@@ -1008,7 +1008,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(197, {	-- Raptor Mastery (4/4)
 				["sourceQuest"] = 196,	-- Raptor Prowess [CATA+] / Raptor Mastery (3/4)
 				["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
-				["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
+				["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				["lvl"] = 28,
 				["groups"] = {
 					objective(1, {	-- 0/1 Talon of Tethis
