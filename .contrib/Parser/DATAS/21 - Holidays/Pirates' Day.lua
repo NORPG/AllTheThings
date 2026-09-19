@@ -99,6 +99,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 						["cost"] = 500000000,	-- 50k
 					}),
 					i(138400, {	-- Petey
+						-- #if AFTER TWW
+						["description"] = "Harlan Sweete can be found in Freehold on Tiragarde Sound, Kul Tiras.",
+						-- #endif
 						["timeline"] = { ADDED_7_0_3 },
 						["filterID"] = CONSUMABLES,	-- Changed from nothing
 					}),
