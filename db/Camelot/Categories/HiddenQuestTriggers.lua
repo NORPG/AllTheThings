@@ -13,7 +13,7 @@ hqt(615,{awp=11201}),
 hqt(620,{awp=11201})})}),
 h(-61,{
 hqt(78650)}),
-inst(760,{isRaid=1,g={
+inst(760,{isRaid=1,savedInstanceID=249,g={
 hqt(76175)}}),
 m(1414,{
 m(1413,{

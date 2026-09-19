@@ -1,22 +1,22 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,cat,faction,h,i,n,o,prof,q,qo,r,s=_.CreateAchievement,_.CreateCategory,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
+local ach,cat,faction,h,i,n,o,p,prof,q,qo,r,s,toy=_.CreateAchievement,_.CreateCategory,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 categories.Holidays=
 h(-36,{difficultyID=19,SortPriority=30,SortType="EventStart",g={
 h(-559,{awp=16001,e=13,g={
 h(-45,{e=13,g={
 q(171,{coords={
 [1453]={{47.2,38.4}}},e=13,isYearly=1,lvl=10,maxReputation={469,42000},providers={{"i",18598},{"n",14305}},r=2,sourceQuests={558,4822},g={
-i(23007,{b=1,e=13,f=106,q=1,spellID=28739}),
-i(23015,{b=1,e=13,f=106,q=1,spellID=28740}),
-i(23002,{b=1,e=13,f=106,q=1,spellID=28738}),
+p(126,{b=1,e=13,itemID=23007,npcID=16548,petTypeID=5,q=1,spellID=28739}),
+p(127,{b=1,e=13,itemID=23015,npcID=16549,petTypeID=5,q=1,spellID=28740}),
+p(125,{b=1,e=13,itemID=23002,npcID=16547,petTypeID=9,q=1,spellID=28738}),
 i(23022,{e=13,q=1})}}),
 q(5502,{coords={
 [1454]={{70.8,25.6}}},e=13,isYearly=1,lvl=10,maxReputation={67,42000},providers={{"i",18597},{"n",14444}},r=1,sourceQuests={915,925},g={
-i(23007,{b=1,e=13,f=106,q=1,spellID=28739}),
-i(23015,{b=1,e=13,f=106,q=1,spellID=28740}),
-i(23002,{b=1,e=13,f=106,q=1,spellID=28738}),
+p(126,{b=1,e=13,itemID=23007,npcID=16548,petTypeID=5,q=1,spellID=28739}),
+p(127,{b=1,e=13,itemID=23015,npcID=16549,petTypeID=5,q=1,spellID=28740}),
+p(125,{b=1,e=13,itemID=23002,npcID=16547,petTypeID=9,q=1,spellID=28738}),
 i(23022,{e=13,q=1})}}),
 q(925,{e=13,isYearly=1,lvl=10,maps={1456},providers={{"i",18597},{"n",14444}},r=1,sourceQuests={910,911,1800},g={
 qo(1,{coords={
@@ -185,7 +185,7 @@ q(7946,{coords={
 [1412]={{35.9,35.3}},
 [1429]={{43.3,70.3}}},cost={{"i",11325,2}},description="You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",e=1,isMonthly=1,lvl=10,qgs={14871},g={
 i(19462,{b=1,e=1,q=1,spellID=23851,g={
-i(19450,{e=1,f=101,q=1,spellID=23811})}})}}),
+p(106,{e=1,itemID=19450,npcID=14878,petTypeID=9,q=1,spellID=23811})}})}}),
 q(7905,{coords={
 [1455]={{29.2,68.4}}},e=1,lvl=6,providers={{"i",19338}},qgs={14842},r=2,g={
 i(19182,{e=1,f=55})}}),
@@ -260,8 +260,8 @@ n(14860,{coords={
 [1412]={{36.4,36},{37.6,39.6}},
 [1429]={{41.4,69.8},{42.8,66.6},{43.6,71}}},e=1,g={
 i(18662,{e=1,f=55,q=1,spellID=23135}),
-i(11026,{e=1,f=101,q=1,spellID=10704}),
-i(11027,{e=1,f=101,isLimited=1,q=1,spellID=10703})}}),
+p(65,{e=1,itemID=11026,npcID=7549,petTypeID=9,q=1,spellID=10704}),
+p(64,{e=1,isLimited=1,itemID=11027,npcID=7550,petTypeID=9,q=1,spellID=10703})}}),
 n(14846,{coords={
 [1412]={{36.4,38}},
 [1429]={{41.2,69.8}}},e=1,g={
@@ -300,7 +300,7 @@ s(164648,21525,{b=1,crs={1853,10899,11486},e=14,f=4,loc=40,maps={234,250,476},q=
 s(164647,21524,{b=1,crs={9019,9237,10997},e=14,f=4,loc=40,maps={242,250,317},q=2})}}),
 h(-39,{description="These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",e=14,g={
 r(21945,{e=14,itemID=17724,q=1}),
-i(17712,{description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,sourceQuests={6984,7045},spellID=21848})}}),
+toy(17712,{description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,sourceQuests={6984,7045}})}}),
 h(-45,{e=14,g={
 q(8744,{coords={
 [1454]={{49.5,78.5}},
@@ -313,10 +313,10 @@ i(21328,{b=1,e=14,q=1,spellID=26074})}}),
 q(8768,{coords={
 [1454]={{49.6,78.2}},
 [1455]={{33.6,66.3}}},e=14,isYearly=1,lvl=20,providers={{"i",21310},{"o",180747}},g={
-i(21301,{e=14,f=106,q=1,spellID=26532}),
-i(21308,{e=14,f=106,q=1,spellID=26529}),
-i(21305,{e=14,f=106,q=1,spellID=26541}),
-i(21309,{e=14,f=106,q=1,spellID=26469})}}),
+p(119,{e=14,itemID=21301,npcID=15698,petTypeID=1,q=1,spellID=26533}),
+p(118,{e=14,itemID=21308,npcID=15706,petTypeID=5,q=1,spellID=26529}),
+p(120,{e=14,itemID=21305,npcID=15705,petTypeID=1,q=1,spellID=26541}),
+p(117,{e=14,itemID=21309,npcID=15710,petTypeID=7,q=1,spellID=26045})}}),
 q(8767,{c={1,2,3,4},description="Given prior to 2015 exclusively to non-spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21270},{"o",180746}},g={
 i(21235,{b=1,e=14,f=55,q=1,spellID=24005})}}),
 q(8788,{c={5,7,8,9,11},description="Given prior to 2015 exclusively to spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21271},{"o",180746}},g={
@@ -640,7 +640,7 @@ i(22218,{e=9,f=106,q=1,spellID=27571}),
 i(22261,{e=9,f=106,q=1,spellID=27661}),
 s(164885,22279,{e=9,f=2,loc=42,q=1}),
 i(22200,{b=1,e=9,q=1,spellID=27662}),
-i(22235,{e=9,f=106,q=1,spellID=27570}),
+p(122,{e=9,itemID=22235,npcID=16085,petTypeID=1,q=1,spellID=27570}),
 i(22259,{b=1,e=9,f=55,q=1,spellID=26899})}}),
 h(-22,{e=9,sharedDescription="Can be purchased from innkeepers.",g={
 i(21833,{e=9,f=106,q=1}),
@@ -711,7 +711,7 @@ r(26425,{b=1,e=18,itemID=21732,q=2,requireSkill=202})}})}}),
 q(8868,{coords={
 [1450]={{53.6,35.3}}},description="In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",e=18,isYearly=1,lvl=40,qgs={15864},sourceQuests={8883},g={
 qo(1,{e=18,providers={{"n",15467}}}),
-i(21540,{b=1,e=18,lvl=40,q=2,spellID=26265}),
+toy(21540,{b=1,e=18,lvl=40,q=2}),
 i(21640,{b=1,e=18,q=1})}}),
 q(8862,{coords={
 [1450]={{53.6,35.3}}},cost={{"i",21100,5}},e=18,isYearly=1,lvl=10,qgs={15864},g={
@@ -1002,7 +1002,7 @@ qo(1,{e=11}),
 qo(2,{e=11}),
 qo(3,{e=11}),
 qo(4,{e=11}),
-i(23083,{e=11,f=101,q=1,spellID=28871}),
+p(128,{e=11,itemID=23083,npcID=16701,petTypeID=7,q=1,spellID=28871}),
 i(23247,{e=11,q=1,spellID=28806})}}),
 q(9386,{coords={
 [1420]={{62.1,66.8}},

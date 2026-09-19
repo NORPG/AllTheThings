@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,h,i,n,q,qo,r,s=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
+local ach,h,i,mnt,n,q,qo,r,s=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-723,{awp=10400,lvl=60,rwp=40003,u=12,g={
@@ -417,7 +417,7 @@ q(8575,{coords={
 q(8743,{coords={
 [1451]={{25.7,90.9}}},lvl=60,providers={{"i",21175},{"o",180717}},sourceQuests={8742},u=1502,g={
 ach(416,{sourceQuests={8743},u=1502}),
-i(21176,{b=1,lvl=60,q=5,spellID=26656,u=1502})}}),
+mnt(26656,{b=1,itemID=21176,lvl=60,q=5,u=1502})}}),
 q(8606,{coords={
 [1446]={{65.2,18.6}}},lvl=60,maps={1452},qgs={11811},sourceQuests={8598},u=15,g={
 qo(1,{coords={

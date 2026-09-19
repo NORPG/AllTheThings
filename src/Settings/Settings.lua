@@ -99,7 +99,7 @@ settings.RequiredForInsaneMode = {
 	RuneforgeLegendaries = app.GameBuildVersion >= 90000,
 	Titles = true,
 	Toys = true,
-	Transmog = app.GameBuildVersion >= 40000,
+	Transmog = app.GameBuildVersion >= 40000 or app.IsForever,
 	-- Expansion Filters
 	Classic = true,
 	TBC = app.GameBuildVersion >= 20000,
@@ -128,7 +128,7 @@ settings.RequiredForRankedMode = {
 	Reputations = true,
 	Titles = true,
 	Toys = true,
-	Transmog = app.GameBuildVersion >= 40000,
+	Transmog = app.GameBuildVersion >= 40000 or app.IsForever,
 	-- Expansion Filters
 	Classic = true,
 	TBC = app.GameBuildVersion >= 20000,
@@ -153,7 +153,7 @@ settings.RequiredForCoreMode = {
 	Illusions = app.GameBuildVersion >= 70000,
 	Mounts = true,
 	Toys = true,
-	Transmog = app.GameBuildVersion >= 40000,
+	Transmog = app.GameBuildVersion >= 40000 or app.IsForever,
 	-- Expansion Filters
 	Classic = true,
 	TBC = app.GameBuildVersion >= 20000,
@@ -307,7 +307,7 @@ local GeneralSettingsBase = {
 		["Thing:RuneforgeLegendaries"] = app.GameBuildVersion >= 90000,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
-		["Thing:Transmog"] = app.GameBuildVersion >= 40000,
+		["Thing:Transmog"] = app.GameBuildVersion >= 40000 or app.IsForever,
 		["Only:RWP"] = app.GameBuildVersion < 40000,
 		["Only:NotTrash"] = app.GameBuildVersion <= 40000,
 		["Skip:AutoRefresh"] = false,

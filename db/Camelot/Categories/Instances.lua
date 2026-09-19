@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cl,e,faction,flt,h,i,inst,mnt,n,o,prof,q,qo,r,s,settings,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateExpansion;
+local ach,ah,cl,e,faction,flt,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
 categories.Instances=
 h(-75,{SortPriority=1,g={
 inst(3065,{awp=16001,coords={
@@ -20,7 +20,7 @@ n(3408),
 n(3411),
 n(3412)}}),
 inst(64,{coords={
-[1421]={{36.6,65.6}}},lore="During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",lvl=14,mapID=310,["zone-text-areaID"]=209,g={
+[1421]={{36.6,65.6}}},lore="During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",lvl=14,mapID=310,savedInstanceID=33,["zone-text-areaID"]=209,g={
 h(-45,{
 q(1014,{coords={
 [1421]={{44.2,39.8}}},lvl=18,qgs={1938},r=1,g={
@@ -565,7 +565,7 @@ s(163815,19134,{f=5,loc=45,u=12}),
 s(163814,19133,{f=4,loc=46,u=12}),
 i(18543,{b=1,f=52,lvl=60,q=4,u=12})}})}}),
 inst(741,{coords={
-[33]={{54.18,83.25}}},crs={14387},isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",lvl=50,mapID=232,sourceQuests={7848},["zone-text-areaID"]=2717,g={
+[33]={{54.18,83.25}}},crs={14387},isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",lvl=50,mapID=232,savedInstanceID=409,sourceQuests={7848},["zone-text-areaID"]=2717,g={
 ah(17182,{isRaid=1,type="i",g={
 ach(429,{c={1,2,7,11},providers={{"i",17182}}}),
 s(163282,17182,{b=1,c={1,2,7,11},cost={{"i",17193,1},{"i",17204,1}},f=24,lvl=60,q=5,spellID=21142})}}),
@@ -880,7 +880,7 @@ i(17082,{f=53}),
 i(17982,{f=52,rwp=10400,u=2}),
 i(21110,{awp=10900,b=1,q=4,rwp=40003,u=15})}})}}),
 inst(760,{coords={
-[1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,sourceQuests={6502,6602},["zone-text-areaID"]=2159,g={
+[1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},["zone-text-areaID"]=2159,g={
 h(-45,{
 q(7635,{awp=10001,c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18705,1}},lvl=60,qgs={14525},rwp=40003,sourceQuests={7633},g={
@@ -953,7 +953,7 @@ i(18813,{awp=10001,f=52,rwp=100000}),
 i(17064,{awp=10001,f=53,rwp=100000,spellID=1305424}),
 i(21108,{awp=10900,b=1,q=4,rwp=40003,u=15})})}}),
 inst(742,{awp=10600,coords={
-[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,providers={{"o",179879}},sourceQuests={7761},u=13,["zone-text-areaID"]=2677,g={
+[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},u=13,["zone-text-areaID"]=2677,g={
 h(-45,{u=13,g={
 q(7781,{maps={1453},providers={{"i",19003}},r=2,u=13}),
 q(7782,{coords={
@@ -1152,7 +1152,7 @@ i(19382,{b=1,f=52,lvl=60,q=4,u=13}),
 i(19379,{b=1,f=53,lvl=60,q=4,u=13}),
 i(17964,{q=2,u=13}),
 i(17969,{q=2,u=13})}})}}),
-inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,mapID=337,rwp=40003,u=14,["zone-text-areaID"]=19,g={
+inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,mapID=337,rwp=40003,savedInstanceID=309,u=14,["zone-text-areaID"]=19,g={
 h(-12,{u=14,g={
 ach(957,{maps={1434},minReputation={270,42000},u=14})}}),
 h(-31,{u=14,g={
@@ -1540,7 +1540,7 @@ i(19930,{f=53,spellID=24268,u=14}),
 i(19871,{f=51,u=14})}}),
 n(11382,{u=14,g={
 ach(881,{providers={{"i",19872}},u=14}),
-i(19872,{b=1,f=100,lvl=60,q=4,spellID=24242,u=14}),
+mnt(24242,{b=1,itemID=19872,lvl=60,q=4,u=14}),
 s(164036,19867,{f=25,u=14}),
 s(164039,19874,{f=29,spellID=25669,u=14}),
 s(164110,20038,{f=32,u=14}),
@@ -1585,7 +1585,7 @@ s(164085,19965,{f=20,u=14}),
 s(164101,19993,{f=32,u=14})}})}}),
 n(14509,{u=14,g={
 ach(880,{providers={{"i",19902}},u=14}),
-i(19902,{b=1,f=100,lvl=60,q=4,spellID=24252,u=14}),
+mnt(24252,{b=1,itemID=19902,lvl=60,q=4,u=14}),
 s(164054,19896,{f=34,u=14}),
 s(164058,19901,{f=25,u=14}),
 s(164267,20266,{f=7,loc=46,u=14}),
@@ -1640,7 +1640,7 @@ s(164265,20264,{f=7,loc=44,u=14}),
 s(164258,20257,{f=6,loc=44,u=14}),
 s(164028,19855,{f=7,loc=46,u=14})}})}}),
 inst(743,{awp=10900,coords={
-[327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,u=15,["zone-text-areaID"]=3429,g={
+[327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,savedInstanceID=509,u=15,["zone-text-areaID"]=3429,g={
 h(-31,{u=15,g={
 faction(609,{icon=132136,maps={1451},u=15})}}),
 h(-45,{u=15,g={
@@ -1896,7 +1896,7 @@ s(164605,21463,{f=6,loc=45,u=15}),
 s(164603,21461,{f=4,loc=46,u=15}),
 s(164595,21453,{f=7,loc=41,u=15})}})}}),
 inst(744,{awp=10900,coords={
-[327]={{46.76,7.53}}},isRaid=1,lore="Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",lvl=50,mapID=320,u=15,["zone-text-areaID"]=3428,g={
+[327]={{46.76,7.53}}},isRaid=1,lore="Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",lvl=50,mapID=320,savedInstanceID=531,u=15,["zone-text-areaID"]=3428,g={
 h(-12,{u=15,g={
 ach(956,{maps={75,1451},minReputation={910,42000},u=15}),
 ach(424,{providers={{"i",21321}},u=15})}}),
@@ -2100,10 +2100,10 @@ r(25079,{b=1,itemID=20730,q=3,requireSkill=333,u=15}),
 r(25073,{b=1,itemID=20727,q=3,requireSkill=333,u=15}),
 r(25080,{b=1,itemID=20731,q=3,requireSkill=333,u=15})}}),
 h(-63,{u=15,g={
-i(21218,{b=1,f=100,lvl=60,q=3,spellID=25953,u=15}),
-i(21323,{b=1,f=100,lvl=60,q=3,spellID=26056,u=15}),
-i(21321,{b=1,f=100,lvl=60,q=3,spellID=26054,u=15}),
-i(21324,{b=1,f=100,lvl=60,q=3,spellID=26055,u=15}),
+mnt(25953,{b=1,itemID=21218,lvl=60,q=3,u=15}),
+mnt(26056,{b=1,itemID=21323,lvl=60,q=3,u=15}),
+mnt(26054,{b=1,itemID=21321,lvl=60,q=3,u=15}),
+mnt(26055,{b=1,itemID=21324,lvl=60,q=3,u=15}),
 s(164763,21837,{crs={15229,15230,15233,15235,15236,15247,15249,15250,15262,15264},f=23,u=15}),
 s(164766,21856,{crs={15229,15230,15233,15235,15236,15247,15249,15250,15262,15264},f=22,u=15}),
 s(164764,21838,{crs={15229,15230,15233,15235,15236,15247,15249,15250,15262,15264},f=4,loc=42,u=15}),
@@ -2277,7 +2277,7 @@ s(165054,22730,{f=4,loc=45,u=15}),
 s(164669,21582,{b=1,f=4,loc=45,lvl=60,q=4,u=15}),
 i(21596,{b=1,f=52,lvl=60,q=4,u=15}),
 i(21579,{b=1,f=53,lvl=60,q=4,spellID=26391,u=15})}})}}),
-inst(754,{isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,sourceQuests={9121},u=16,["zone-text-areaID"]=3456,g={
+inst(754,{isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,savedInstanceID=533,sourceQuests={9121},u=16,["zone-text-areaID"]=3456,g={
 ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Buff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",u=16,g={
 ach(425,{c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}},u=16}),
 q(9251,{c={5,8,9,11},lvl=60,maps={320},qgs={15192},sourceQuests={9250},u=16,g={
@@ -2779,7 +2779,7 @@ i(23059,{b=1,c={1},f=52,lvl=60,q=4,u=16}),
 i(23064,{b=1,c={11},f=52,lvl=60,q=4,u=16}),
 i(23065,{b=1,c={7},f=52,lvl=60,q=4,u=16})}})}})}}),
 inst(227,{coords={
-[1440]={{14,11.1}}},lore="Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",lvl=19,mapID=221,["zone-text-areaID"]=719,g={
+[1440]={{14,11.1}}},lore="Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",lvl=19,mapID=221,savedInstanceID=48,["zone-text-areaID"]=719,g={
 h(-63,{
 s(156318,1454,{f=21}),
 s(157288,3414,{f=23}),
@@ -2873,7 +2873,7 @@ s(158720,6909,{f=26}),
 s(158722,6911,{f=5,loc=45}),
 s(158721,6910,{f=4,loc=46})}})}}),
 inst(228,{coords={
-[35]={{39.06,18.12}}},description="The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",lore="Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",lvl=42,mapID=242,["zone-text-areaID"]=1584,g={
+[35]={{39.06,18.12}}},description="The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",lore="Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",lvl=42,mapID=242,savedInstanceID=230,["zone-text-areaID"]=1584,g={
 h(-31,{
 faction(59,{maps={1427},OnTooltip=_.OnTooltipDB.ThoriumBrotherhood})}),
 h(-45,{
@@ -3332,7 +3332,7 @@ s(164852,22207,{f=6,loc=45,spellID=1294769,u=15}),
 i(11934,{f=52}),
 i(11815,{f=53,spellID=15600}),
 i(12033,{q=1})}})})}}),
-inst(229,{lore="The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",lvl=50,mapID=250,["zone-text-areaID"]=1583,g={
+inst(229,{lore="The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",lvl=50,mapID=250,savedInstanceID=229,["zone-text-areaID"]=1583,g={
 h(-45,{
 q(6601,{coords={
 [1445]={{56.8,87.4}}},lvl=55,maps={1443},providers={{"i",16888}},qgs={10321},r=1,rwp=40003,sourceQuests={6585}}),
@@ -3394,7 +3394,7 @@ i(16787,{f=51,q=1,spellID=19937})}}),
 q(4862,{coords={
 [1428]={{65.8,22}}},lvl=55,qgs={10260},rwp=40003,g={
 qo(1,{description="Interacting with a spider egg may spawn baby spiders, beware!",providers={{"i",12530},{"o",175606}}}),
-i(12529,{q=1,spellID=16450})}}),
+p(90,{itemID=12529,npcID=10598,petTypeID=8,q=1,spellID=16450})}}),
 q(5124,{coords={
 [1452]={{61,38.8}}},cost={{"i",7910,4},{"i",7078,2},{"i",12655,6},{"i",12812,1}},lvl=55,qgs={10637},requireSkill=9788,rwp=40003,sourceQuests={5103},g={
 i(12699,{b=1,f=200,q=3,requireSkill=9788}),
@@ -3417,7 +3417,7 @@ i(12812,{b=1,providers={{"o",176089}},q=3,requireSkill=9788})}}),
 q(4729,{coords={
 [1428]={{65.8,22}}},lvl=55,qgs={10260},rwp=40003,g={
 qo(1,{cost={{"i",12262,1}},crs={10221},description="Can be pulled outside of the room without engaging the boss.",providers={{"i",12263}}}),
-i(12264,{q=1,spellID=15999})}}),
+p(89,{itemID=12264,npcID=10259,petTypeID=8,q=1,spellID=15999})}}),
 q(5067,{coords={
 [1452]={{61,38.8}}},cost={{"i",12736,5},{"i",12360,5},{"i",12735,5},{"i",12731,1},{"g",500000}},lvl=57,maps={317,476},qgs={10637},repeatable=1,rwp=40003,sourceQuests={5047},g={
 s(160620,12756,{f=5,loc=46})}}),
@@ -3780,7 +3780,7 @@ s(164875,22269,{f=3,u=15}),
 s(160864,13142,{f=7,loc=45}),
 i(13098,{f=52}),
 i(22268,{f=53,spellID=1318931,u=15})}})}})}}),
-inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,u=1101,["zone-text-areas"]={2557,2577,3217},g={
+inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,savedInstanceID=429,u=1101,["zone-text-areas"]={2557,2577,3217},g={
 h(-12,{u=1101,g={
 ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1101}),
 ach(644,{maps={235,236,237,238,239},u=1101})}}),
@@ -4127,7 +4127,7 @@ s(163501,18380,{f=7,loc=46,u=1101}),
 s(163499,18378,{f=6,loc=46,u=1101}),
 i(18395,{f=52,u=1101})}})}})}}),
 inst(231,{coords={
-[1426]={{18.4,38.6}}},lore="Located in Dun Morogh, the technological wonder known as Gnomeregan has been the gnomes' capital city for generations. Recently, a hostile race of mutant troggs infested several regions of Dun Morogh - including the great gnome city. In a desperate attempt to destroy the invading troggs, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Several gnomes sought shelter from the airborne pollutants as they waited for the troggs to die or flee. Unfortunately, though the troggs became irradiated from the toxic assault - their siege continued, unabated. Those gnomes who were not killed by noxious seepage were forced to flee, seeking refuge in the nearby dwarven city of Ironforge. There, High Tinker Mekkatorque set out to enlist brave souls to help his people reclaim their beloved city.\n\nIt is rumored that Mekkatorque's once-trusted advisor, Mekgineer Thermaplug, betrayed his people by allowing the invasion to happen. Now, his sanity shattered, Thermaplug remains in Gnomeregan - furthering his dark schemes and acting as the city's new techno-overlord.",lvl=19,mapID=226,["zone-text-areaID"]=133,g={
+[1426]={{18.4,38.6}}},lore="Located in Dun Morogh, the technological wonder known as Gnomeregan has been the gnomes' capital city for generations. Recently, a hostile race of mutant troggs infested several regions of Dun Morogh - including the great gnome city. In a desperate attempt to destroy the invading troggs, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Several gnomes sought shelter from the airborne pollutants as they waited for the troggs to die or flee. Unfortunately, though the troggs became irradiated from the toxic assault - their siege continued, unabated. Those gnomes who were not killed by noxious seepage were forced to flee, seeking refuge in the nearby dwarven city of Ironforge. There, High Tinker Mekkatorque set out to enlist brave souls to help his people reclaim their beloved city.\n\nIt is rumored that Mekkatorque's once-trusted advisor, Mekgineer Thermaplug, betrayed his people by allowing the invasion to happen. Now, his sanity shattered, Thermaplug remains in Gnomeregan - furthering his dark schemes and acting as the city's new techno-overlord.",lvl=19,mapID=226,savedInstanceID=90,["zone-text-areaID"]=133,g={
 h(-63,{
 s(159404,9510,{crs={6228,6235,7079,7800},f=6,loc=47}),
 i(5108,{crs={6212},f=5,loc=42,lvl=27,q=1}),
@@ -4284,7 +4284,7 @@ r(3960,{itemID=4414,q=2,requireSkill=202}),
 r(3940,{itemID=4410,q=2,requireSkill=202}),
 r(3933,{itemID=4409,q=2,requireSkill=202})}})}}),
 inst(232,{coords={
-[1443]={{35.7,55.5}}},lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,["zone-text-areaID"]=2100,g={
+[1443]={{35.7,55.5}}},lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,savedInstanceID=349,["zone-text-areaID"]=2100,g={
 h(-45,{
 q(7065,{coords={
 [1443]={{63.8,10.6}}},lvl=45,qgs={13698},r=2,rwp=40003,g={
@@ -4405,7 +4405,7 @@ s(163377,17714,{f=6,loc=43}),
 s(163376,17711,{f=7,loc=46}),
 i(17713,{f=52})}})}})}}),
 inst(226,{coords={
-[1454]={{50.6,51.6}}},lore="Ragefire Chasm consists of a network of volcanic caverns that lie below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief, Thrall, is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council. Either way, the dark powers emanating from Ragefire Chasm could undo all that the orcs have fought to attain",lvl=13,mapID=213,["zone-text-areaID"]=2437,g={
+[1454]={{50.6,51.6}}},lore="Ragefire Chasm consists of a network of volcanic caverns that lie below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief, Thrall, is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council. Either way, the dark powers emanating from Ragefire Chasm could undo all that the orcs have fought to attain",lvl=13,mapID=213,savedInstanceID=389,["zone-text-areaID"]=2437,g={
 h(-45,{
 q(5728,{coords={
 [1454]={{32,37.8}}},lvl=9,qgs={4949},r=1,rwp=40003,sourceQuests={5727},g={
@@ -4454,7 +4454,7 @@ s(161283,14150,{b=1,f=4,loc=42,lvl=13,q=3}),
 s(161280,14147,{b=1,f=6,loc=43,lvl=13,q=3})}}),
 n(11519,{rwp=50004})}}),
 inst(233,{coords={
-[1413]={{50,92}}},lore="Crafted from the same mighty vines as Razorfen Kraul, Razorfen Downs is the traditional capital city of the quillboar race. The sprawling, thorn-ridden labyrinth houses a veritable army of loyal quillboar as well as their high priests - the Death's Head tribe. Recently, however, a looming shadow has fallen over the crude den. Agents of the undead Scourge - led by the lich, Amnennar the Coldbringer - have taken control over the quillboar race and turned the maze of thorns into a bastion of undead might. Now the quillboar fight a desperate battle to reclaim their beloved city before Amnennar spreads his control across the Barrens.",lvl=35,mapID=300,["zone-text-areaID"]=722,g={
+[1413]={{50,92}}},lore="Crafted from the same mighty vines as Razorfen Kraul, Razorfen Downs is the traditional capital city of the quillboar race. The sprawling, thorn-ridden labyrinth houses a veritable army of loyal quillboar as well as their high priests - the Death's Head tribe. Recently, however, a looming shadow has fallen over the crude den. Agents of the undead Scourge - led by the lich, Amnennar the Coldbringer - have taken control over the quillboar race and turned the maze of thorns into a bastion of undead might. Now the quillboar fight a desperate battle to reclaim their beloved city before Amnennar spreads his control across the Barrens.",lvl=35,mapID=300,savedInstanceID=129,["zone-text-areaID"]=722,g={
 h(-45,{
 q(6626,{coords={
 [1413]={{49,94}}},lvl=28,qgs={12866},rwp=40003,g={
@@ -4525,7 +4525,7 @@ s(160156,10764,{f=6,loc=42}),
 s(160154,10762,{f=4,loc=42}),
 s(160157,10765,{f=5,loc=44})}})}}),
 inst(234,{coords={
-[1413]={{40.94,94.55}}},lore="Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",lvl=17,mapID=301,["zone-text-areaID"]=491,g={
+[1413]={{40.94,94.55}}},lore="Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",lvl=17,mapID=301,savedInstanceID=47,["zone-text-areaID"]=491,g={
 h(-45,{
 q(1102,{coords={
 [1456]={{36.2,59.8}}},lvl=29,qgs={4451},r=1,rwp=40003,g={
@@ -4612,7 +4612,7 @@ s(158648,6692,{f=21}),
 s(158649,6694,{f=8}),
 i(6693,{f=52,spellID=1293199})}})}}),
 inst(316,{coords={
-[1420]={{82.6,32.4}}},lore="The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",lvl=25,mapID=435,["zone-text-areaID"]=796,g={
+[1420]={{82.6,32.4}}},lore="The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",lvl=25,mapID=435,savedInstanceID=189,["zone-text-areaID"]=796,g={
 h(-361,{awp=100107,rwp=50004,g={
 h(-45,{
 q(1051,{lvl=25,maps={1416,1424},qgs={3981},r=1,rwp=40003,g={
@@ -4744,7 +4744,7 @@ s(159029,7760,{f=5,loc=46}),
 s(159010,7727,{f=5,loc=41}),
 s(159026,7757,{f=28})})}}),
 inst(246,{coords={
-[1422]={{69.07,72.96}}},cost={{"i",13704,1}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,sourceQuests={5505,5511},["zone-text-areaID"]=2057,g={
+[1422]={{69.07,72.96}}},cost={{"i",13704,1}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,savedInstanceID=289,sourceQuests={5505,5511},["zone-text-areaID"]=2057,g={
 h(-45,{awp=10300,rwp=50004,g={
 q(8259,{altQuests={8258},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=14,g={
@@ -5036,7 +5036,7 @@ s(161190,13950,{description="This item seems to have disappeared in Classic. If 
 s(160977,13398,{f=5,loc=47}),
 i(22433,{f=52,u=15}),
 i(19276,{q=3,spellID=23680,u=13})}})}}),
-inst(236,{lore="Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge	-- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",lvl=48,mapID=317,maps={318},["zone-text-areaID"]=2017,g={
+inst(236,{lore="Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge	-- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",lvl=48,mapID=317,maps={318},savedInstanceID=329,["zone-text-areaID"]=2017,g={
 h(-12,{
 ach(646)}),
 h(-45,{
@@ -5170,7 +5170,7 @@ s(160969,13389,{f=4,loc=46}),
 s(160971,13391,{f=4,loc=47}),
 i(13392,{f=52})}}),
 e(443,{npcID=10558,g={
-i(13379,{spellID=18400}),
+toy(13379),
 s(160960,13378,{f=5,loc=42}),
 s(160964,13384,{f=7,loc=45}),
 s(160963,13383,{f=6,loc=46}),
@@ -5308,7 +5308,7 @@ i(13515,{f=53,spellID=1299443})}}),
 e(456,{npcID=10440,rwp=40003,g={
 i(13251,{q=1}),
 ach(729,{providers={{"i",13335}}}),
-i(13335,{b=1,f=100,lvl=60,q=3,spellID=17481}),
+mnt(17481,{b=1,itemID=13335,lvl=60,q=3}),
 s(160994,13505,{f=26,spellID=17625}),
 s(160952,13368,{f=20}),
 s(164931,22408,{f=27,u=15}),
@@ -5332,7 +5332,7 @@ s(163002,16687,{b=1,f=4,loc=46,lvl=56,q=3}),
 s(163024,16709,{b=1,f=5,loc=46,lvl=56,q=3}),
 s(163034,16719,{b=1,f=5,loc=46,lvl=56,q=3})}})}})}}),
 inst(63,{coords={
-[1436]={{42.2,82.6}}},lore="Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",lvl=10,mapID=291,["zone-text-areaID"]=1581,g={
+[1436]={{42.2,82.6}}},lore="Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",lvl=10,mapID=291,savedInstanceID=36,["zone-text-areaID"]=1581,g={
 h(-45,{
 q(168,{coords={
 [1453]={{65.4,21.2}}},lvl=14,qgs={656},r=2,rwp=40003,g={
@@ -5390,7 +5390,7 @@ s(156530,1943,{awp=100107,crs={3947},f=6,loc=46,lvl=14,q=2,rwp=40003}),
 s(156527,1936,{awp=100107,crs={622},f=20,lvl=13,q=2,rwp=40003}),
 s(156531,1944,{awp=100107,crs={1731},f=5,loc=44,lvl=13,q=2,rwp=40003}),
 i(1894,{crs={623,624,625},q=1}),
-i(8492,{crs={657},f=101,q=1,spellID=10683}),
+p(50,{crs={657},itemID=8492,npcID=7387,petTypeID=3,q=1,spellID=10683}),
 s(156536,1958,{crs={625},f=23,lvl=12,q=2}),
 s(159084,7997,{b=1,c={4},description="Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",f=2,loc=40,q=0}),
 i(915,{q=1}),
@@ -5434,11 +5434,11 @@ s(158046,5193,{b=1,f=3,lvl=19,q=3}),
 s(158055,5202,{b=1,f=4,loc=42,lvl=17,q=3}),
 s(160032,10399,{b=1,f=5,loc=42,lvl=17,q=3})}}),
 n(645,{rwp=40003,g={
-i(8490,{f=101,q=1,spellID=10677}),
+p(44,{itemID=8490,npcID=7380,petTypeID=8,q=1,spellID=10677}),
 s(158051,5198,{b=1,f=27,lvl=17,q=3}),
 s(158050,5197,{b=1,f=23,lvl=16,q=3})}})}}),
 inst(238,{coords={
-[1453]={{41.2,58}}},lore="The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",lvl=15,mapID=225,["zone-text-areaID"]=717,["zone-text-names"]={"Stormwind Stockade"},g={
+[1453]={{41.2,58}}},lore="The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",lvl=15,mapID=225,savedInstanceID=34,["zone-text-areaID"]=717,["zone-text-names"]={"Stormwind Stockade"},g={
 h(-45,{
 q(389,{coords={
 [1453]={{49,30.2}}},lvl=16,qgs={1646},r=2,rwp=40001,sourceQuests={373}}),
@@ -5483,7 +5483,7 @@ n(1716,{rwp=40001,g={
 ach(633,{r=2}),
 i(2926,{q=1})}})}}),
 inst(237,{coords={
-[1435]={{69.2,54.8}}},lore="Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",lvl=45,mapID=220,["zone-text-areas"]={1417,1477},g={
+[1435]={{69.2,54.8}}},lore="Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",lvl=45,mapID=220,savedInstanceID=109,["zone-text-areas"]={1417,1477},g={
 h(-45,{
 q(9053,{c={11},coords={
 [1449]={{71.6,76}}},lvl=50,qgs={9619},rwp=40003,sourceQuests={9051},u=14,g={
@@ -5663,7 +5663,7 @@ s(160196,10833,{f=6,loc=40}),
 i(10829,{f=51})}})}}),
 inst(239,{coords={
 [16]={{36.6,29.4}},
-[1418]={{64,44}}},lore="Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",lvl=35,mapID=230,["zone-text-areaID"]=1337,g={
+[1418]={{64,44}}},lore="Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",lvl=35,mapID=230,savedInstanceID=70,["zone-text-areaID"]=1337,g={
 h(-44,{
 prof(333,{
 n(11073,{description="To get the Annora to spawn, you'll have to kill all scorpions first.",g={
@@ -5877,7 +5877,7 @@ s(159343,9413,{f=24}),
 i(11118,{f=52})}})}}),
 inst(240,{coords={
 [1413]={{45.9,35.7}},
-[1414]={{52,55.2}}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
+[1414]={{52,55.2}}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,savedInstanceID=43,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
 h(-45,{description="To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",g={
 q(1487,{coords={
 [1413]={{46,35.7}}},lvl=15,qgs={5768},rwp=40003,g={
@@ -5977,7 +5977,7 @@ s(158492,6461,{b=1,f=4,loc=41,lvl=20,q=3}),
 s(158613,6627,{b=1,f=6,loc=42,lvl=18,q=3}),
 i(6463,{b=1,f=52,lvl=19,q=3})}})}}),
 inst(241,{coords={
-[1446]={{39,19}}},lore="Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",lvl=39,mapID=219,["zone-text-areaID"]=978,g={
+[1446]={{39,19}}},lore="Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",lvl=39,mapID=219,savedInstanceID=209,["zone-text-areaID"]=978,g={
 h(-45,{
 q(2768,{coords={
 [1446]={{52.5,28.5}}},lvl=40,qgs={7407},rwp=40003,g={

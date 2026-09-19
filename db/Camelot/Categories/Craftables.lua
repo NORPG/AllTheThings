@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ah,flt,h,i,o,prof,r,s,sp=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell;
+local ah,flt,h,i,o,p,prof,r,s,sp,toy=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy;
 categories.Craftables=
 h(-23,{DontEnforceSkillRequirements=1,SortPriority=20,g={
 prof(171,{
@@ -547,7 +547,7 @@ prof(20219,{description="These items can only be crafted by Engineers who have c
 h(-88,{
 s(160068,10545,{b=1,f=4,learnedAt=210,loc=40,q=2,requireSkill=20219})}),
 flt(101,{
-i(11826,{q=1,requireSkill=20219,spellID=15049})}),
+p(86,{itemID=11826,npcID=9657,petTypeID=10,q=1,requireSkill=20219,spellID=15049})}),
 flt(50,{
 i(18645,{q=1,requireSkill=202,spellID=23004}),
 i(10725,{b=1,f=53,q=1,requireSkill=20219,spellID=23133}),
@@ -560,11 +560,11 @@ i(10716,{f=53,q=1,requireSkill=202,spellID=13006})}),
 flt(200,{
 r(11454,{description="This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",itemID=10713,q=1,requireSkill=164})}),
 flt(102,{
-i(18986,{q=2,requireSkill=20219,spellID=23453}),
-i(18660,{q=2,requireSkill=20219,spellID=23126})})}}),
+toy(18986,{q=2,requireSkill=20219}),
+toy(18660,{q=2,requireSkill=20219})})}}),
 prof(20222,{description="These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",g={
 flt(101,{
-i(11825,{q=1,requireSkill=20222,spellID=15048})}),
+p(85,{itemID=11825,npcID=9656,petTypeID=10,q=1,requireSkill=20222,spellID=15048})}),
 flt(50,{
 i(10587,{b=1,f=53,q=1,requireSkill=20222,spellID=23134}),
 s(160066,10543,{b=1,f=4,learnedAt=205,loc=40,q=2,requireSkill=20222,spellID=12561}),
@@ -579,7 +579,7 @@ i(10586,{f=55,q=1,requireSkill=202,spellID=12562})}),
 flt(200,{
 r(11456,{description="This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",itemID=10644,q=1,requireSkill=171})}),
 flt(102,{
-i(18984,{q=2,requireSkill=20222,spellID=23442})})}}),
+toy(18984,{q=2,requireSkill=20222})})}}),
 h(-88,{
 s(164103,19999,{awp=100007,f=4,learnedAt=300,loc=40,lvl=60,q=3,requireSkill=202,rwp=40003,u=14}),
 s(164102,19998,{awp=100007,f=5,learnedAt=300,loc=40,lvl=60,q=3,requireSkill=202,rwp=40003,spellID=23217,u=14}),
@@ -597,9 +597,9 @@ s(157764,4373,{f=4,learnedAt=120,loc=40,q=2,requireSkill=202}),
 s(160055,10502,{f=4,learnedAt=215,loc=40,q=2,requireSkill=202}),
 s(162701,15999,{f=4,learnedAt=270,loc=40,q=2,requireSkill=202})}),
 flt(101,{
-i(15996,{f=101,q=1,spellID=19772}),
-i(4401,{f=101,q=1,spellID=4055}),
-i(21277,{awp=100002,f=101,q=1,rwp=40003,spellID=26010})}),
+p(95,{itemID=15996,npcID=12419,petTypeID=10,q=1,spellID=19772}),
+p(39,{itemID=4401,npcID=2671,petTypeID=10,q=1,spellID=4055}),
+p(116,{awp=100002,itemID=21277,npcID=15699,petTypeID=10,q=1,rwp=40003,spellID=26010})}),
 flt(50,{
 i(4392,{q=1,requireSkill=202,spellID=4072}),
 i(6533,{q=1,requireSkill=356,spellID=8089}),
@@ -701,7 +701,7 @@ i(18631,{q=1}),
 i(10560,{q=1}),
 i(4375,{q=1})}),
 flt(102,{
-i(17716,{q=1,spellID=21935})}),
+toy(17716,{q=1})}),
 flt(53,{
 i(16022,{f=53,lvl=50,q=3,requireSkill=202,spellID=19804}),
 i(4396,{f=53,lvl=30,q=1,requireSkill=202,spellID=4073}),

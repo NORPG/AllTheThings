@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,crit,exp,faction,flt,fp,h,i,m,mnt,n,o,prof,q,qo,r,s=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
+local ach,ah,crit,exp,faction,flt,fp,h,i,m,mnt,n,o,p,prof,q,qo,r,s=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
 categories.Zones=
 h(-732,{mapID=947,SortPriority=10,g={
 m(1415,{awp=16001,icon=236759,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",["zone-text-continent"]=1,g={
@@ -361,28 +361,28 @@ i(2894,{f=55,q=1,spellID=11007}),
 i(2686,{f=55,q=1,spellID=11007})}}),(function(t)if _.RaceIndex==7 then	t.minReputation=nil end	return t end)(
 n(7955,{coords={
 [1426]={{49,48}}},minReputation={54,42000},r=2,g={
-i(8595,{f=100,lvl=40,q=3,requireSkill=553,spellID=10969}),
-i(13321,{f=100,lvl=40,q=3,requireSkill=553,spellID=17453}),
-i(8563,{f=100,lvl=40,q=3,requireSkill=553,spellID=10873}),
-i(13322,{f=100,lvl=40,q=3,requireSkill=553,spellID=17454}),
-i(18772,{f=100,lvl=60,q=4,requireSkill=553,spellID=23225}),
-i(18773,{f=100,lvl=60,q=4,requireSkill=553,spellID=23223}),
-i(18774,{f=100,lvl=60,q=4,requireSkill=553,spellID=23222}),
-i(13327,{f=100,lvl=60,q=4,requireSkill=553,rwp=10400,spellID=17459,u=2}),
-i(13326,{f=100,lvl=60,q=4,requireSkill=553,rwp=10400,spellID=15779,u=2})}})),(function(t)if _.RaceIndex==3 then	t.minReputation=nil end	return t end)(
+mnt(10969,{itemID=8595,lvl=40,q=3,requireSkill=553}),
+mnt(17453,{itemID=13321,lvl=40,q=3,requireSkill=553}),
+mnt(10873,{itemID=8563,lvl=40,q=3,requireSkill=553}),
+mnt(17454,{itemID=13322,lvl=40,q=3,requireSkill=553}),
+mnt(23225,{itemID=18772,lvl=60,q=4,requireSkill=553}),
+mnt(23223,{itemID=18773,lvl=60,q=4,requireSkill=553}),
+mnt(23222,{itemID=18774,lvl=60,q=4,requireSkill=553}),
+mnt(17459,{itemID=13327,lvl=60,q=4,requireSkill=553,rwp=10400,u=2}),
+mnt(15779,{itemID=13326,lvl=60,q=4,requireSkill=553,rwp=10400,u=2})}})),(function(t)if _.RaceIndex==3 then	t.minReputation=nil end	return t end)(
 n(1261,{coords={
 [1426]={{63.4,50.6}}},minReputation={47,42000},r=2,g={
-i(5872,{f=100,lvl=40,q=3,spellID=6899}),
-i(5864,{f=100,lvl=40,q=3,spellID=6777}),
-i(5873,{f=100,lvl=40,q=3,spellID=6898}),
-i(18786,{f=100,lvl=60,q=4,spellID=23238}),
-i(18787,{f=100,lvl=60,q=4,spellID=23239}),
-i(18785,{f=100,lvl=60,q=4,spellID=23240}),
-i(13328,{f=100,lvl=60,q=4,rwp=10400,spellID=17461,u=2}),
-i(13329,{f=100,lvl=60,q=4,rwp=10400,spellID=17460,u=2})}})),
+mnt(6899,{itemID=5872,lvl=40,q=3}),
+mnt(6777,{itemID=5864,lvl=40,q=3}),
+mnt(6898,{itemID=5873,lvl=40,q=3}),
+mnt(23238,{itemID=18786,lvl=60,q=4}),
+mnt(23239,{itemID=18787,lvl=60,q=4}),
+mnt(23240,{itemID=18785,lvl=60,q=4}),
+mnt(17461,{itemID=13328,lvl=60,q=4,rwp=10400,u=2}),
+mnt(17460,{itemID=13329,lvl=60,q=4,rwp=10400,u=2})}})),
 n(1263,{coords={
 [1426]={{63.2,50.8}}},r=2,g={
-i(8497,{awp=11101,f=101,q=1,spellID=10711})}})}),
+p(72,{awp=11101,itemID=8497,npcID=7560,petTypeID=5,q=1,spellID=10711})}})}),
 h(-63,{
 s(156622,2109,{crs={808},f=6,loc=42,q=1}),
 s(156621,2108,{coords={
@@ -752,21 +752,21 @@ n(54,{coords={
 [1429]={{41.4,65.8}}},r=2,sym={{"select","itemID",2492,2488,2491,2494,2490,2489,2495,2493}}}),
 n(6367,{coords={
 [1429]={{44.2,53.2}}},r=2,g={
-i(8485,{f=101,q=1,spellID=10673}),
-i(8486,{f=101,q=1,spellID=10674}),
-i(8487,{f=101,q=1,spellID=10676}),
-i(8488,{f=101,q=1,spellID=10678})}}),
+p(40,{itemID=8485,npcID=7385,petTypeID=8,q=1,spellID=10673}),
+p(41,{itemID=8486,npcID=7384,petTypeID=8,q=1,spellID=10674}),
+p(43,{itemID=8487,npcID=7382,petTypeID=8,q=1,spellID=10676}),
+p(45,{itemID=8488,npcID=7381,petTypeID=8,q=1,spellID=10678})}}),
 n(1250,{coords={
 [1429]={{83.2,66.7}}},r=2,g={
 r(7633,{isLimited=1,itemID=6272,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(384,{coords={
 [1429]={{84,65.4}}},minReputation={72,42000},r=2,g={
-i(5656,{f=100,lvl=40,q=3,spellID=458}),
-i(5655,{f=100,lvl=40,q=3,spellID=6648}),
-i(2414,{f=100,lvl=40,q=3,spellID=472}),
-i(18777,{f=100,lvl=60,q=4,spellID=23229}),
-i(18776,{b=1,f=100,lvl=60,q=4,spellID=23227}),
-i(18778,{f=100,lvl=60,q=4,spellID=23228})}})),
+mnt(458,{itemID=5656,lvl=40,q=3}),
+mnt(6648,{itemID=5655,lvl=40,q=3}),
+mnt(472,{itemID=2414,lvl=40,q=3}),
+mnt(23229,{itemID=18777,lvl=60,q=4}),
+mnt(23227,{b=1,itemID=18776,lvl=60,q=4}),
+mnt(23228,{itemID=18778,lvl=60,q=4})}})),
 n(74,{coords={
 [1429]={{41.4,65.6}}},r=2,sym={{"select","itemID",3602,3603,793,794,792,795,1839,796,1840,797,798,799}}}),
 n(959,{coords={
@@ -922,7 +922,7 @@ q(623,{coords={
 [1434]={{27.4,76.8}}},lvl=38,maps={1445},providers={{"i",4028}},qgs={2494},r=2,sourceQuests={617}}),
 q(3721,{coords={
 [1434]={{28.2,76.2}}},lvl=30,qgs={7406},sourceQuests={648,836,2767},g={
-i(10398,{f=101,q=1,spellID=12243})}}),
+p(83,{itemID=10398,npcID=8376,petTypeID=10,q=1,spellID=12243})}}),
 q(603,{coords={
 [1416]={{18.8,78.5}}},lvl=32,qgs={2543},r=2,sourceQuests={602}}),
 q(7838,{coords={
@@ -1432,8 +1432,8 @@ r(3979,{b=1,itemID=13310,q=1,requireSkill=202}),
 r(23071,{b=1,itemID=18651,q=1})}}),
 n(2663,{coords={
 [1434]={{28.1,74.4}}},g={
-i(8496,{f=101,q=1,spellID=10680}),
-i(8495,{f=101,q=1,spellID=10684}),
+p(47,{itemID=8496,npcID=7390,petTypeID=3,q=1,spellID=10680}),
+p(51,{itemID=8495,npcID=7389,petTypeID=3,q=1,spellID=10684}),
 r(3873,{b=1,isLimited=1,itemID=10728,q=1,requireSkill=197})}}),
 n(1148,{coords={
 [1434]={{32.6,29.2}}},r=1,g={
@@ -1493,7 +1493,7 @@ s(156380,1679,{crs={1142},f=24}),
 s(157571,3985,{coords={
 [1434]={{23,71.4}}},crs={1493},f=4,loc=45,lvl=35}),
 s(158243,5755,{crs={4260},f=6,loc=42}),
-i(8494,{crs={1563,1564,1653,2546,4505,4506},f=101,q=1,spellID=10682}),
+p(49,{crs={1563,1564,1653,2546,4505,4506},itemID=8494,npcID=7391,petTypeID=3,q=1,spellID=10682}),
 r(6705,{b=1,crs={1561},itemID=5789,q=2,requireSkill=165}),
 r(6704,{b=1,crs={938},itemID=5788,q=2,requireSkill=165}),
 s(156556,1997,{crs={701},f=4,loc=42}),
@@ -1781,10 +1781,10 @@ r(7827,{itemID=6368,q=1,requireSkill=185}),
 r(7828,{itemID=6369,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(1460,{coords={
 [1437]={{8.6,54.4}}},minReputation={72,42000},r=2,g={
-i(2411,{f=100,lvl=40,q=3,spellID=470}),
-i(5656,{f=100,lvl=40,q=3,spellID=458}),
-i(5655,{f=100,lvl=40,q=3,spellID=6648}),
-i(2414,{f=100,lvl=40,q=3,spellID=472})}})),
+mnt(470,{itemID=2411,lvl=40,q=3}),
+mnt(458,{itemID=5656,lvl=40,q=3}),
+mnt(6648,{itemID=5655,lvl=40,q=3}),
+mnt(472,{itemID=2414,lvl=40,q=3})}})),
 n(2679,{coords={
 [1437]={{25.6,25.8}}},r=2,g={
 r(3854,{b=1,isLimited=1,itemID=7114,q=1,requireSkill=197}),
@@ -1826,7 +1826,7 @@ s(157125,3072,{coords={
 [1437]={{63.8,33.6},{66.4,40.4},{71.8,47.6}}},crs={1044},f=4,loc=42}),
 s(158411,6315,{coords={
 [1437]={{48.8,17.6},{48.9,17.6}}},crs={6523},f=33}),
-i(8499,{crs={1042,1044,1069},f=101,q=1,spellID=10697}),
+p(58,{crs={1042,1044,1069},itemID=8499,npcID=7544,petTypeID=2,q=1,spellID=10697}),
 s(156103,756,{coords={
 [1437]={{48,18.6},{61.2,25.4}}},crs={1053},f=22})})}}),
 m(1455,{icon=255138,isRaid=1,lore="Ironforge is the capital city of the dwarves, proud members of the Alliance. It is the ancestral home of the Bronzebeard dwarves. King Bronzebeard rules the kingdom of Khaz Modan from the throne room within the city. The Great Forge area gave the city its name.\n\nCarved into the stone heart of Khaz Modan, the mighty city of Ironforge is a testament to the dwarves' strength and resilience. The city is perhaps the most intricate of the Alliance cities, boasting many small passageways, shops built into the rock walls, and cavernous rooms. The feel of the city is a bustling, rowdy, and somewhat industrial one. However, it is predominantly safe-feeling and cozy; fires roar in the hearths of the inns and shops, and much dwarven laughing and frivolity is to be heard. Also, unlike Stormwind and Darnassus, the city is actually a massive cavern carved into the earth by the dwarves; the ceiling and floor are both hard stone.\n\nMainly because of the Deeprun Tram, linking Ironforge and Stormwind City, and the district of Tinker Town, Ironforge is one of the most racially diverse cities in the Alliance world. Dwarves predominate, of course, but you will find plenty of gnomes even outside of Tinker Town, and probably as many humans. You will find almost no night elves however, as they probably prefer more natural and open spaced environments.",g={
@@ -3320,10 +3320,10 @@ s(156138,844,{f=5,loc=44,lvl=12,q=1}),
 s(156140,846,{f=5,loc=42,lvl=12,q=1}),
 s(156139,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(12783,{description="Found within the Champion's Hall.",pvp=1,r=2,g={
-i(18243,{b=1,f=100,lvl=40,pvp=1,q=4,races={3,7},requireSkill=553,rwp=20001,spellID=22719}),
-i(18244,{b=1,f=100,lvl=40,pvp=1,q=4,rwp=20001,spellID=22720}),
-i(18241,{b=1,f=100,lvl=40,pvp=1,q=4,rwp=20001,spellID=22717}),
-i(18242,{b=1,f=100,lvl=40,pvp=1,q=4,rwp=20001,spellID=22723})}}),
+mnt(22719,{b=1,itemID=18243,lvl=40,pvp=1,q=4,races={3,7},requireSkill=553,rwp=20001}),
+mnt(22720,{b=1,itemID=18244,lvl=40,pvp=1,q=4,rwp=20001}),
+mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,rwp=20001}),
+mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,rwp=20001})}}),
 n(54660,{coords={
 [1453]={{74.8,67.6}}},r=2,rwp=50004,sym={{"sub","pvp_gear_base",4,-258,-295},{"merge"},{"pop"}},u=42}),
 n(52545,{coords={
@@ -3340,7 +3340,7 @@ n(32380,{coords={
 [1453]={{74.7,67.2}}},r=2,rwp=40003,sym={{"sub","pvp_gear_base",3,-251,-296},{"merge"},{"pop"},{"select","itemID",201993}},u=30}),
 n(8666,{coords={
 [1453]={{64,38}}},r=2,g={
-i(8489,{awp=11101,f=101,isLimited=1,q=1,spellID=10679})}}),
+p(46,{awp=11101,isLimited=1,itemID=8489,npcID=7386,petTypeID=8,q=1,spellID=10679})}}),
 n(8118,{coords={
 [1453]={{55.6,58.8}}},description="This NPC is only available on July 4th (US) or September 30th (EU).",r=2,g={
 s(159281,8626,{f=1,q=1}),
@@ -3699,7 +3699,7 @@ n(4556,{coords={
 [1458]={{61.4,41.2}}},r=1,sym={{"select","itemID",1194,2479,2130,2492,2139,2488,2134,2491,2480,2132,2131,2494,2490,2489,2495,2493}}}),
 n(8403,{coords={
 [1458]={{67.6,44.1}}},r=1,g={
-i(10393,{awp=11101,f=101,q=1,spellID=10688})}}),
+p(55,{awp=11101,itemID=10393,npcID=7395,petTypeID=5,q=1,spellID=10688})}}),
 n(4589,{coords={
 [1458]={{70.1,58.4}}},r=1,sym={{"sub","common_vendor",5565}},g={
 r(23399,{isLimited=1,itemID=18949,q=1}),
@@ -4020,7 +4020,7 @@ n(6777,{coords={
 r(3971,{b=1,isLimited=1,itemID=7742,q=1,requireSkill=202})}})}),
 h(-63,{
 i(3711,{crs={2415},q=1,rwp=40003}),
-i(8491,{awp=11101,crs={2271,2272,2358},f=101,q=1,r=1,spellID=10675}),
+p(42,{awp=11101,crs={2271,2272,2358},itemID=8491,npcID=7383,petTypeID=8,q=1,r=1,spellID=10675}),
 s(156248,1280,{awp=100107,coords={
 [1416]={{48.8,9.2},{49.6,10}}},crs={2246},f=5,loc=40,rwp=40003}),
 r(13882,{crs={2246},itemID=11206,q=2,requireSkill=333,rwp=40003}),
@@ -4676,7 +4676,7 @@ r(3494,{b=1,itemID=10858,q=1,requireSkill=164})}})}),
 h(-63,{
 s(156926,2621,{awp=100107,coords={
 [1418]={{52.4,33.6},{53.6,31.8}}},crs={2740},f=4,loc=40,rwp=40003}),
-i(10822,{crs={2725},f=101,q=1,spellID=10695}),
+p(56,{crs={2725},itemID=10822,npcID=7543,petTypeID=2,q=1,spellID=10695}),
 s(156358,1521,{awp=100107,coords={
 [1418]={{7.6,89.4},{10,92.6}}},crs={2719},f=22,rwp=40003}),
 i(1993,{crs={2907},f=52,lvl=31,q=2}),
@@ -5918,7 +5918,7 @@ r(20028,{crs={9452},itemID=16242,q=2,requireSkill=333,rwp=20300}),
 r(20016,{crs={9447},itemID=16222,q=2,requireSkill=333,rwp=20300}),
 i(18512,{crs={8603,8605},q=1}),
 i(20768,{crs={8603,8605},q=1,g={
-i(20769,{f=101,q=1,spellID=25162})}}),
+p(114,{itemID=20769,npcID=15429,petTypeID=6,q=1,spellID=25162})}}),
 r(18413,{crs={8538},itemID=14477,q=2,requireSkill=197,rwp=40003}),
 r(18416,{crs={8538},itemID=14480,q=2,requireSkill=197,rwp=40003}),
 r(18421,{crs={8551},itemID=14485,q=2,requireSkill=197,rwp=40003}),
@@ -6240,12 +6240,12 @@ r(7639,{isLimited=1,itemID=6274,q=1,requireSkill=197}),
 r(3870,{b=1,isLimited=1,itemID=6401,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(2357,{coords={
 [1424]={{52.2,55.4}}},minReputation={72,42000},r=2,rwp=40003,g={
-i(2414,{f=100,lvl=40,q=3,spellID=472}),
-i(5655,{f=100,lvl=40,q=3,spellID=6648}),
-i(5656,{f=100,lvl=40,q=3,spellID=458}),
-i(18776,{b=1,f=100,lvl=60,q=4,spellID=23227}),
-i(18777,{f=100,lvl=60,q=4,spellID=23229}),
-i(18778,{f=100,lvl=60,q=4,spellID=23228})}})),
+mnt(472,{itemID=2414,lvl=40,q=3}),
+mnt(6648,{itemID=5655,lvl=40,q=3}),
+mnt(458,{itemID=5656,lvl=40,q=3}),
+mnt(23227,{b=1,itemID=18776,lvl=60,q=4}),
+mnt(23229,{itemID=18777,lvl=60,q=4}),
+mnt(23228,{itemID=18778,lvl=60,q=4})}})),
 n(2381,{coords={
 [1424]={{49,55.2}}},r=2,rwp=40003,g={
 r(13646,{b=1,isLimited=1,itemID=11163,q=2,requireSkill=333}),
@@ -7303,7 +7303,7 @@ q(1359,{coords={
 h(-46,{
 n(1920,{coords={
 [1421]={{63.4,65.2}}},r=1,rwp=40003,g={
-i(8491,{awp=11101,description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=101,q=1,spellID=10675}),
+p(42,{awp=11101,description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",itemID=8491,npcID=7383,petTypeID=8,q=1,spellID=10675}),
 s(157771,4437,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=28}),
 s(157770,4436,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=4,loc=45,lvl=18,q=2})}}),
 n(12431,{coords={
@@ -7594,7 +7594,7 @@ r(13868,{crs={764,765,766,1081,14448},itemID=11205,q=2,requireSkill=333,rwp=4000
 s(158215,5608,{crs={766,14448},f=4,loc=40}),
 i(6172,{b=1,lvl=30,q=1,rwp=40003}),
 s(158359,6196,{b=1,crs={5477},f=23,lvl=29,q=0,rwp=40003}),
-i(8498,{crs={741},f=101,q=1,spellID=10698})})}}),
+p(59,{crs={741},itemID=8498,npcID=7545,petTypeID=2,q=1,spellID=10698})})}}),
 m(1425,{icon=236780,lore="The Hinterlands, located in the Northern part of the Eastern Kingdoms, are probably most notable for the Wildhammer dwarves who make their residence at Aerie Peak in the west. The Wildhammers have always been staunch allies of the Alliance. It is from the Hinterlands that these dwarves find and tame their world-renowned gryphons. The Razorbeak gryphons roam wild in this region.\n\nAlso in the Hinterlands is one of the last remaining settlements of the high elves in Lordaeron at the Quel'Danil Lodge.\n\nThe Hinterlands are also home to a large population of forest trolls, which are divided into three separate tribes. The Revantusk tribe is the only one of the three that has declared sides in the Horde/Alliance conflict and support the warchief Thrall of the Horde. The Vilebranch tribe holds residence in the massive troll city of Jintha'Alor as well as the Altar of Zul while the Witherbark tribe holds the smallest influence, hailing from the temples of Shadra'Alor.",g={
 h(-12,{
 ach(773)}),
@@ -7682,7 +7682,7 @@ q(7830,{coords={
 qo(1,{crs={2659},providers={{"i",19025}}})}}),
 q(4298,{awp=11101,coords={
 [1425]={{14.1,43.6}}},lvl=37,qgs={9660},r=2,rwp=40003,sourceQuests={4297},g={
-i(11474,{q=1,r=2,spellID=15067})}}),
+p(87,{itemID=11474,npcID=9662,petTypeID=2,q=1,r=2,spellID=15067})}}),
 q(7844,{coords={
 [1425]={{78.8,78.4}}},lvl=44,qgs={14739},r=1,rwp=40003,g={
 qo(1,{providers={{"n",4466}}}),
@@ -8232,11 +8232,11 @@ i(15741,{f=200,isLimited=1,q=1,requireSkill=10658}),
 r(19049,{b=1,isLimited=1,itemID=15725,q=1,requireSkill=165})}}),(function(t)if _.RaceIndex==5 then	t.minReputation=nil end	return t end)(
 n(4731,{coords={
 [1420]={{59.8,52.6}}},minReputation={68,42000},r=1,g={
-i(13332,{f=100,lvl=40,q=3,requireSkill=554,spellID=17463}),
-i(13333,{f=100,lvl=40,q=3,requireSkill=554,spellID=17464}),
-i(13334,{f=100,lvl=60,q=4,requireSkill=554,spellID=17465}),
-i(18791,{f=100,lvl=60,q=4,requireSkill=554,spellID=23246}),
-i(13331,{f=100,lvl=40,q=3,requireSkill=554,spellID=17462})}}))}),
+mnt(17463,{itemID=13332,lvl=40,q=3,requireSkill=554}),
+mnt(17464,{itemID=13333,lvl=40,q=3,requireSkill=554}),
+mnt(17465,{itemID=13334,lvl=60,q=4,requireSkill=554}),
+mnt(23246,{itemID=18791,lvl=60,q=4,requireSkill=554}),
+mnt(17462,{itemID=13331,lvl=40,q=3,requireSkill=554})}}))}),
 h(-63,{
 i(2839,{b=1,crs={1520,1522,1523},lvl=4,q=1,rwp=40003}),
 s(157251,3330,{coords={
@@ -8707,7 +8707,7 @@ s(157259,3344,{b=1,f=4,loc=45,q=2}),
 s(157258,3342,{b=1,f=10,q=1}),
 i(2842,{q=2})}}),
 q(3861,{cost={{"i",11109,1}},description="Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",maps={1413,1420,1424,1429,1431,1433,1436,1445},qgs={620},r=2,repeatable=1,g={
-i(11110,{b=1,description="A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",f=101,q=1,spellID=13548})}}),
+p(84,{b=1,description="A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",itemID=11110,petTypeID=3,q=1,spellID=13548})}}),
 q(6281,{coords={
 [1436]={{56.4,52.6}}},lvl=10,maps={1453},providers={{"i",15998}},qgs={523},races={1},rwp=40003,sourceQuests={6181}}),
 q(1076,{coords={
@@ -9131,14 +9131,14 @@ s(160248,11306,{f=32,isLimited=1,lvl=27,q=2}),
 s(160250,11308,{f=32,isLimited=1,lvl=44,q=2})}}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil end	return t end)(
 n(4730,{coords={
 [1457]={{38.3,15.3}}},minReputation={69,42000},r=2,g={
-i(8632,{f=100,lvl=40,q=3,spellID=10789}),
-i(8629,{f=100,lvl=40,q=3,spellID=10793}),
-i(8631,{f=100,lvl=40,q=3,spellID=8394}),
-i(18766,{f=100,lvl=60,q=4,spellID=23221}),
-i(18767,{f=100,lvl=60,q=4,spellID=23219}),
-i(18902,{f=100,lvl=60,q=4,spellID=23338}),
-i(12302,{f=100,lvl=60,q=4,rwp=10400,spellID=16056,u=2}),
-i(12303,{f=100,lvl=60,q=4,rwp=10400,spellID=16055,u=2})}})),
+mnt(10789,{itemID=8632,lvl=40,q=3}),
+mnt(10793,{itemID=8629,lvl=40,q=3}),
+mnt(8394,{itemID=8631,lvl=40,q=3}),
+mnt(23221,{itemID=18766,lvl=60,q=4}),
+mnt(23219,{itemID=18767,lvl=60,q=4}),
+mnt(23338,{itemID=18902,lvl=60,q=4}),
+mnt(16056,{itemID=12302,lvl=60,q=4,rwp=10400,u=2}),
+mnt(16055,{itemID=12303,lvl=60,q=4,rwp=10400,u=2})}})),
 n(4177,{coords={
 [1457]={{55.6,75}}},r=2,sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2424,2426,2427,2428,3894,2425,2423,847,1845,849,1846,850,848,2451,2448,17189,17190,2392,2393,2395,2396,2397,2394,2149,2150,2151,2152,2153,8094,8088,8089,8090,8091,8092,8093,2148,1853,287,1852,718,286,285}},g={
 s(156787,2380,{f=6,loc=45,q=1}),
@@ -9163,8 +9163,8 @@ n(5191,{coords={
 [1457]={{70.4,23.2}}},r=2,sym={{"sub","common_vendor",5193}}}),
 n(8665,{coords={
 [1457]={{69.8,45.4}}},r=2,g={
-i(8500,{f=101,q=1,spellID=10707}),
-i(8501,{f=101,q=1,spellID=10706})}}),
+p(68,{itemID=8500,npcID=7553,petTypeID=3,q=1,spellID=10707}),
+p(67,{itemID=8501,npcID=7555,petTypeID=3,q=1,spellID=10706})}}),
 n(4235,{coords={
 [1457]={{62.7,65.6}}},r=2,g={
 s(160461,12247,{f=20,isLimited=1,lvl=27,q=2})}}),
@@ -10035,14 +10035,14 @@ s(156876,2527,{f=28,lvl=31,q=1}),
 s(156884,2535,{f=28,lvl=40,q=1})}}),(function(t)if _.RaceIndex==2 then	t.minReputation=nil end	return t end)(
 n(3362,{coords={
 [1454]={{69.4,12.4}}},minReputation={76,42000},r=1,g={
-i(5668,{f=100,lvl=40,q=3,spellID=6654}),
-i(5665,{f=100,lvl=40,q=3,spellID=6653}),
-i(18796,{f=100,lvl=60,q=4,spellID=23250}),
-i(18797,{f=100,lvl=60,q=4,spellID=23251}),
-i(18798,{f=100,lvl=60,q=4,spellID=23252}),
-i(1132,{f=100,lvl=40,q=3,spellID=580}),
-i(12351,{f=100,lvl=60,q=4,rwp=10400,spellID=16081,u=2}),
-i(12330,{f=100,lvl=60,q=4,rwp=10400,spellID=16080,u=2})}})),
+mnt(6654,{itemID=5668,lvl=40,q=3}),
+mnt(6653,{itemID=5665,lvl=40,q=3}),
+mnt(23250,{itemID=18796,lvl=60,q=4}),
+mnt(23251,{itemID=18797,lvl=60,q=4}),
+mnt(23252,{itemID=18798,lvl=60,q=4}),
+mnt(580,{itemID=1132,lvl=40,q=3}),
+mnt(16081,{itemID=12351,lvl=60,q=4,rwp=10400,u=2}),
+mnt(16080,{itemID=12330,lvl=60,q=4,rwp=10400,u=2})}})),
 n(3317,{coords={
 [1454]={{60.6,58.6}}},r=1,g={
 s(157300,3428,{f=10,q=1}),
@@ -10067,10 +10067,10 @@ s(156778,2369,{f=4,loc=44,lvl=5,q=1}),
 s(156776,2366,{f=4,loc=46,lvl=5,q=1}),
 s(156775,2364,{f=4,loc=42,lvl=5,q=1})}}),
 n(12796,{description="Found within the Hall of Legends.",pvp=1,r=1,g={
-i(18247,{b=1,f=100,lvl=40,pvp=1,q=4,rwp=20001,spellID=22718}),
-i(18246,{b=1,f=100,lvl=40,pvp=1,q=4,rwp=20001,spellID=22721}),
-i(18245,{b=1,f=100,lvl=40,pvp=1,q=4,rwp=20001,spellID=22724}),
-i(18248,{b=1,f=100,lvl=40,pvp=1,q=4,requireSkill=554,rwp=20001,spellID=22722})}}),
+mnt(22718,{b=1,itemID=18247,lvl=40,pvp=1,q=4,rwp=20001}),
+mnt(22721,{b=1,itemID=18246,lvl=40,pvp=1,q=4,rwp=20001}),
+mnt(22724,{b=1,itemID=18245,lvl=40,pvp=1,q=4,rwp=20001}),
+mnt(22722,{b=1,itemID=18248,lvl=40,pvp=1,q=4,requireSkill=554,rwp=20001})}}),
 n(3334,{coords={
 [1454]={{44,58.4}}},r=1}),
 n(12799,{coords={
@@ -10237,9 +10237,9 @@ s(156856,2495,{f=28,lvl=3,q=1}),
 s(156854,2493,{f=24,lvl=4,q=1})}}),
 n(8404,{coords={
 [1454]={{37.6,75.8}}},description="This NPC walks around in a circle in the Valley of Spirits.",r=1,g={
-i(10360,{f=101,q=1,spellID=10714}),
-i(10361,{f=101,q=1,spellID=10716}),
-i(10392,{f=101,q=1,spellID=10717})}}),
+p(75,{itemID=10360,npcID=7565,petTypeID=8,q=1,spellID=10714}),
+p(77,{itemID=10361,npcID=7562,petTypeID=8,q=1,spellID=10716}),
+p(78,{itemID=10392,npcID=7567,petTypeID=8,q=1,spellID=10717})}}),
 n(3400,{coords={
 [1454]={{57.6,53.2}}},r=1,g={
 r(25954,{itemID=21219,q=1}),
@@ -10386,7 +10386,7 @@ n(3093,{coords={
 [1456]={{42.4,43.2}}},r=1,sym={{"select","itemID",2371,2373,2374,2375,2370,2372,236,1849,238,1850,239,237,1843,843,1844,844,846,845}}}),
 n(8401,{coords={
 [1456]={{62.2,58.6}}},r=1,g={
-i(10394,{f=101,q=1,spellID=10709})}}),
+p(70,{itemID=10394,npcID=271972,petTypeID=5,q=1,spellID=10709})}}),
 n(8358,{coords={
 [1456]={{45.6,56.7}}},r=1,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840,3597,3598,203,201,202,200}}}),
 n(3018,{coords={
@@ -12080,14 +12080,14 @@ r(7827,{itemID=6368,q=1,requireSkill=185}),
 r(7752,{itemID=6326,q=1,requireSkill=185})}}),(function(t)if _.RaceIndex==8 then	t.minReputation=nil end	return t end)(
 n(7952,{coords={
 [1411]={{55.2,75.6}}},minReputation={530,42000},r=1,g={
-i(8588,{f=100,lvl=40,q=3,spellID=8395}),
-i(18788,{f=100,lvl=60,q=4,spellID=23241}),
-i(18789,{f=100,lvl=60,q=4,spellID=23242}),
-i(18790,{f=100,lvl=60,q=4,spellID=23243}),
-i(8591,{f=100,lvl=40,q=3,spellID=10796}),
-i(8592,{f=100,lvl=40,q=3,spellID=10799}),
-i(13317,{f=100,lvl=60,q=4,rwp=10400,spellID=17450,u=2}),
-i(8586,{f=100,lvl=60,q=4,rwp=10400,spellID=16084,u=2})}}))}),
+mnt(8395,{itemID=8588,lvl=40,q=3}),
+mnt(23241,{itemID=18788,lvl=60,q=4}),
+mnt(23242,{itemID=18789,lvl=60,q=4}),
+mnt(23243,{itemID=18790,lvl=60,q=4}),
+mnt(10796,{itemID=8591,lvl=40,q=3}),
+mnt(10799,{itemID=8592,lvl=40,q=3}),
+mnt(17450,{itemID=13317,lvl=60,q=4,rwp=10400,u=2}),
+mnt(16084,{itemID=8586,lvl=60,q=4,rwp=10400,u=2})}}))}),
 h(-63,{
 i(4882,{coords={
 [1411]={{59.6,58.2}}},crs={3192},q=1,rwp=40003,spellID=6529}),
@@ -12390,12 +12390,12 @@ n(6567,{coords={
 r(3862,{isLimited=1,itemID=4355,q=1,requireSkill=197})}}),(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(4885,{coords={
 [1445]={{65.2,51.4}}},minReputation={72,42000},r=2,g={
-i(5656,{f=100,lvl=40,q=3,spellID=458}),
-i(5655,{f=100,lvl=40,q=3,spellID=6648}),
-i(2414,{f=100,lvl=40,q=3,spellID=472}),
-i(18777,{f=100,lvl=60,q=4,spellID=23229}),
-i(18776,{b=1,f=100,lvl=60,q=4,spellID=23227}),
-i(18778,{f=100,lvl=60,q=4,spellID=23228})}})),
+mnt(458,{itemID=5656,lvl=40,q=3}),
+mnt(6648,{itemID=5655,lvl=40,q=3}),
+mnt(472,{itemID=2414,lvl=40,q=3}),
+mnt(23229,{itemID=18777,lvl=60,q=4}),
+mnt(23227,{b=1,itemID=18776,lvl=60,q=4}),
+mnt(23228,{itemID=18778,lvl=60,q=4})}})),
 n(4886,{coords={
 [1445]={{64.6,50.4}}},r=2,g={
 s(160462,12248,{f=20,isLimited=1,lvl=29,q=2}),
@@ -12442,7 +12442,7 @@ n(4884,{coords={
 s(160465,12251,{f=28,isLimited=1,lvl=32,q=2}),
 s(160464,12250,{f=22,isLimited=1,lvl=29,q=2})}})}),
 h(-63,{
-i(10822,{crs={4324},f=101,q=1,spellID=10695}),
+p(56,{crs={4324},itemID=10822,npcID=7543,petTypeID=2,q=1,spellID=10695}),
 i(4639,{crs={4363},q=1,spellID=4945}),
 r(6695,{crs={4834},itemID=5775,q=2,requireSkill=197,rwp=40003}),
 r(16731,{awp=11101,b=1,crs={4368,16072},itemID=12718,q=2,requireSkill=164,rwp=40003}),
@@ -13722,13 +13722,13 @@ r(18995,{cost=200000,lvl=40})}}))}),
 h(-58,{(function(t)if _.RaceIndex==6 then	t.minReputation=nil end	return t end)(
 n(3685,{coords={
 [1412]={{47.6,58.4}}},minReputation={81,42000},r=1,g={
-i(15277,{f=100,lvl=40,q=3,spellID=18989}),
-i(15290,{f=100,lvl=40,q=3,spellID=18990}),
-i(18793,{f=100,lvl=60,q=4,spellID=23247}),
-i(18794,{f=100,lvl=60,q=4,spellID=23249}),
-i(18795,{f=100,lvl=60,q=4,spellID=23248}),
-i(15292,{f=100,lvl=60,q=4,rwp=10400,spellID=18991,u=2}),
-i(15293,{f=100,lvl=60,q=4,rwp=10400,spellID=18992,u=2})}})),
+mnt(18989,{itemID=15277,lvl=40,q=3}),
+mnt(18990,{itemID=15290,lvl=40,q=3}),
+mnt(23247,{itemID=18793,lvl=60,q=4}),
+mnt(23249,{itemID=18794,lvl=60,q=4}),
+mnt(23248,{itemID=18795,lvl=60,q=4}),
+mnt(18991,{itemID=15292,lvl=60,q=4,rwp=10400,u=2}),
+mnt(18992,{itemID=15293,lvl=60,q=4,rwp=10400,u=2})}})),
 n(5940,{coords={
 [1412]={{47.6,55}}},r=1,g={
 r(7751,{itemID=6325,q=1,requireSkill=185}),
@@ -16591,7 +16591,7 @@ r(9269,{b=1,isLimited=1,itemID=7560,q=1,requireSkill=202}),
 r(3939,{b=1,isLimited=1,itemID=13309,q=1,requireSkill=202})}}),
 n(6548,{coords={
 [1441]={{78.3,75.7}}},rwp=40003,g={
-i(11023,{f=101,q=1,spellID=10685})}}),
+p(52,{itemID=11023,npcID=7394,petTypeID=3,q=1,spellID=10685})}}),
 n(4878,{coords={
 [1441]={{45.2,50.6}}},rwp=40003,g={
 r(3449,{b=1,itemID=6068,q=1})}}),
@@ -17155,7 +17155,7 @@ r(18417,{b=1,isLimited=1,itemID=14481,q=1,requireSkill=197,rwp=20001})}}),
 n(10618,{coords={
 [1452]={{49.8,9.8}}},minReputation={589,42000},r=2,g={
 ach(3356,{providers={{"i",13086}},r=2}),
-i(13086,{b=1,f=100,lvl=60,q=4,spellID=17229})}}),
+mnt(17229,{b=1,itemID=13086,lvl=60,q=4})}}),
 n(16015,{coords={
 [1452]={{58.9,78.4}}},g={
 i(21939,{cost=400000,q=1})}}),
