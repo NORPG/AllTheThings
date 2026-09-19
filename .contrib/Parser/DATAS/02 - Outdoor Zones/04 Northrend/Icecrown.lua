@@ -423,6 +423,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 13215,	-- Battle at Valhalas: Khit'rix the Dark Master
 						["qg"] = 31135,	-- Geirrvif
 						["coord"] = { 30.7, 28.9, ICECROWN },
+						["_drop"] = { "g" },	-- Runic Healing Potion
 					}),
 					q(13335, {	-- Before the Gate of Horror (A)
 						["description"] = "On the Skybreaker.",
@@ -604,6 +605,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 13036,	-- Honor Above All Else
 						["qg"] = 30226,	-- Father Gustav
 						["coord"] = { 86.8, 76.6, ICECROWN },
+						["_drop"] = { "g" },	-- Runic Healing Potion
 					}),
 					q(13078, {	-- Dahlia's Tears
 						["sourceQuest"] = 13077,	-- The Touch of an Aspect

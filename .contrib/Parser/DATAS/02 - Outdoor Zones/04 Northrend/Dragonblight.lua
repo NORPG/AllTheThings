@@ -2524,6 +2524,7 @@ root(ROOTS.Zones, {
 						["qg"] = 27155,	-- Commander Lynore Windstryke
 						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- Runic Healing Potion
 						["groups"] = {
 							objective(1, {	-- 0/20 Scarlet Onslaught slain
 								["providers"] = {

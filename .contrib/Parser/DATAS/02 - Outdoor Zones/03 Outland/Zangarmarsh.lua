@@ -294,6 +294,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 84.4, 54.3, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
+						["_drop"] = { "g" },	-- Scroll of Intellect VI
 						["groups"] = {
 							objective(1, {	-- Sporewing slain
 								["provider"] = { "n", 18280 },	-- Sporewing

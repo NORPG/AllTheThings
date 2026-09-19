@@ -144,6 +144,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7158,	-- Deadwood Shaman
 					},
 					["lvl"] = lvlsquish(45, 45, 15),
+					["_drop"] = { "g" },	-- Major Healing Potion
 				}),
 				q(28524, {	-- Delivery for Donova
 					["qg"] = 11556,	-- Salfa

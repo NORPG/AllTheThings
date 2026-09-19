@@ -1276,6 +1276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["lvl"] = lvlsquish(54, 54, 15),
+					["_drop"] = { "g" },	-- Major Healing Potion
 					["groups"] = {
 						objective(1, {	-- 0/3 Stonelash Flayer Stinger
 							["provider"] = { "i", 20375 },	-- Stonelash Flayer Stinger
@@ -1391,8 +1392,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 181597 },	-- Silithyst Mound
 							},
 						}),
-						i(13446),	-- Major Healing Potion
-						i(13444),	-- Major Mana Potion
 					},
 				})),
 				applyclassicphase(PHASE_SIX_SILITHYST, q(9422, {	-- Scouring the Desert [HORDE]
@@ -1415,8 +1414,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 181597 },	-- Silithyst Mound
 							},
 						}),
-						i(13446),	-- Major Healing Potion
-						i(13444),	-- Major Mana Potion
 					},
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8779, {	-- Scrying Materials (A)

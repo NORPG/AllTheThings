@@ -869,6 +869,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12934,	-- The Amphitheater of Anguish: From Beyond!
 						["qg"] = 30007,	-- Gurgthock
 						["coord"] = { 48.4, 56.3, ZULDRAK },
+						["_drop"] = { "g" },	-- Runic Healing Potion
 					}),
 					q(12932, {	-- The Amphitheater of Anguish: Yggdras!
 						["sourceQuest"] = 12974,	-- The Champion's Call
