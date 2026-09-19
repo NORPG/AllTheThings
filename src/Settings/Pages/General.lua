@@ -838,48 +838,6 @@ checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
 checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
 checkboxMainOnlyMode:SetScale(0.6);
 
-if app.IsClassic then
-	local checkboxQualityFilter = child:CreateCheckBox(L.ONLY_NOT_TRASH,
-	function(self)
-		self:SetChecked(settings:Get("Only:NotTrash"))
-		if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
-			self:Disable()
-			self:SetAlpha(0.4)
-		else
-			self:Enable()
-			self:SetAlpha(1)
-		end
-	end,
-	function(self)
-		settings:Set("Only:NotTrash", self:GetChecked());
-		settings:UpdateMode(1);
-	end)
-	checkboxQualityFilter:SetATTTooltip(L.ONLY_NOT_TRASH_TOOLTIP)
-	checkboxQualityFilter:AlignAfter(checkboxMainOnlyMode)
-	checkboxQualityFilter:SetScale(0.6);
-
-	if app.GameBuildVersion < 40000 then	-- Transmog officially supported with Cataclysm.
-		local checkboxOnlyRWP = child:CreateCheckBox(L.ONLY_RWP,
-		function(self)
-			self:SetChecked(settings:Get("Only:RWP"))
-			if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
-				self:Disable()
-				self:SetAlpha(0.4)
-			else
-				self:Enable()
-				self:SetAlpha(1)
-			end
-		end,
-		function(self)
-			settings:Set("Only:RWP", self:GetChecked());
-			settings:UpdateMode(1);
-		end)
-		checkboxOnlyRWP:SetATTTooltip(L.ONLY_RWP_TOOLTIP)
-		checkboxOnlyRWP:AlignAfter(checkboxQualityFilter)
-		checkboxOnlyRWP:SetScale(0.6);
-	end
-end
-
 -- Heirlooms aren't in the game until late Wrath Classic.
 local accwideCheckboxHeirlooms;
 if C_Heirloom and app.GameBuildVersion >= 30000 then

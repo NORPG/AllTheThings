@@ -928,21 +928,12 @@ do
 
 	-- Appearance-based Classes
 	local AppearanceVariantClasses = { CLASSNAME }
-
-	local AndAppearanceCollectible = app.IsRetail and app.ReturnTrue or function(t)
-		if not t.rwp and app.Settings.OnlyRWP then
-			return false;
-		end
-		if (t.q or 0) < 2 and app.Settings.OnlyNotTrash then
-			return false;
-		end
-		return true;
-	end
+	
 	local function AddAppearanceCollectibleSwap(classname, setting)
 		local function AssignCollectibleFunction()
 			-- app.PrintDebug("Swapping",classname,".collectible","via",setting,app.Settings.Collectibles[setting])
 			if app.Settings.Collectibles[setting] then
-				app.SwapClassDefinitionMethod(classname,"collectible",AndAppearanceCollectible)
+				app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnTrue)
 			else
 				app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnFalse)
 			end
@@ -954,9 +945,9 @@ do
 	local AndAppearance = {
 		__name = "AndAppearance",
 		CACHE = function() return CACHE end,
-		collectible = app.IsRetail and function(t)
+		collectible = function(t)
 			return app.Settings.Collectibles.Transmog
-		end or AndAppearanceCollectible,
+		end,
 		collected = collected_Completionist,
 		visualID = function(t)
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(t[KEY])

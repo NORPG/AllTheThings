@@ -1513,7 +1513,6 @@ end");
                         case "f":
                         case "learnedAt":
                         case "petBattleLvl":
-                        case "filterForRWP":
                             itemData[pair.Key] = pair.Value;
                             break;
 
@@ -1665,7 +1664,6 @@ end");
                         case "q":
                         case "f":
                         case "learnedAt":
-                        case "filterForRWP":
                         case "g":
                         case "collectible":
                         case "hideText":
@@ -2022,7 +2020,6 @@ end");
                     case "conduitID":
                     case "f":
                     case "loc":
-                    case "filterForRWP":
                     case "u":
                     case "b":
                     case "rank":

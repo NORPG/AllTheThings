@@ -453,7 +453,6 @@ namespace ATT
                     case "raceID":
                     case "conduitID":
                     case "f":
-                    case "filterForRWP":
                     case "rwp":
                     case "awp":
                     case "r":
@@ -799,7 +798,6 @@ namespace ATT
                     case "requireSkill":
                     case "objectiveID":
                     case "f":
-                    case "filterForRWP":
                     case "rank":
                     case "gender":
                     case "learnedAt":

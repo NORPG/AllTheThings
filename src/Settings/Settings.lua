@@ -308,8 +308,6 @@ local GeneralSettingsBase = {
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
 		["Thing:Transmog"] = app.GameBuildVersion >= 40000 or app.IsForever,
-		["Only:RWP"] = app.GameBuildVersion < 40000,
-		["Only:NotTrash"] = app.GameBuildVersion <= 40000,
 		["Skip:AutoRefresh"] = false,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
@@ -890,10 +888,6 @@ settings.GetModeString = function(self)
 			mode = app.ClassName .. " " .. mode .. L.TITLE_MAIN_ONLY
 		else
 			mode = app.ClassName .. " " .. mode
-		end
-
-		if app.GameBuildVersion < 40000 and self:Get("Only:RWP") and self.Collectibles.Transmog then
-			mode = "RWP " .. mode;
 		end
 
 		local solo = not app.MODE_DEBUG_OR_ACCOUNT
@@ -1842,11 +1836,6 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.Trackable()
 
 		settings:SetThingTracking("Debug");
-		if app.IsClassic then
-			-- Modules
-			self.OnlyRWP = false;
-			self.OnlyNotTrash = false;
-		end
 	else
 		app.MODE_DEBUG = nil;
 		filterSet.Visible(true)
@@ -1904,8 +1893,6 @@ settings.UpdateMode = function(self, doRefresh)
 		else
 			filterSet.Event()
 		end
-		self.OnlyRWP = app.GameBuildVersion < 40000 and self:Get("Only:RWP");
-		self.OnlyNotTrash = app.IsClassic and self:Get("Only:NotTrash");
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 	app.HandleEvent("OnUpdateModeFilters", self)

@@ -1244,12 +1244,6 @@ namespace ATT
                     {
                         return "f";
                     }
-                case "fForRWP":
-                case "filterForRWP":
-                case "filterIDForRWP":
-                    {
-                        return "filterForRWP";
-                    }
 
                 case "gender":
                     {
