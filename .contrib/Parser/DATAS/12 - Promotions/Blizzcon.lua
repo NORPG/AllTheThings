@@ -253,23 +253,23 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["u"] = IGNORED_VALUE,
 	}),
 	ach(63685, {	-- BlizzCon 2026
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69875" },
 		["u"] = IGNORED_VALUE,
 		["groups"] = { i(281107, { ["u"] = IGNORED_VALUE }) },	-- BlizzCon Doormat (DECOR!)
 	}),
 	i(278231, {	-- Aquatic Clockwork Quacker (PET!)
 		["description"] = "Available from capsule gachapon machines on the Blizzcon floor.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69875" },
 		["u"] = REAL_MONEY,
 	}),
 	i(278230, {	-- Classic Clockwork Quacker (PET!)
 		["description"] = "Available from capsule gachapon machines on the Blizzcon floor.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69875" },
 		["u"] = REAL_MONEY,
 	}),
 	i(278688, {	-- Skipper (PET!)
 		["description"] = "Available from capsule gachapon machines on the Blizzcon floor.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69875" },
 		["u"] = REAL_MONEY,
 	}),
 })));
