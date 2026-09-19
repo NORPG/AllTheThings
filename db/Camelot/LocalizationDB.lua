@@ -1779,6 +1779,7 @@ _.FlightPathNames = {
 	[85] = "Northpass Tower, Eastern Plaguelands",
 	[86] = "Eastwall Tower, Eastern Plaguelands",
 	[87] = "Crown Guard Tower, Eastern Plaguelands",
+	[3276] = "Farholde Keep, Riverglades",
 }
 -- Object Database Module
 local ObjectNames = {

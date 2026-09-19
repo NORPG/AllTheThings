@@ -24,8 +24,7 @@ s(156067,129,{f=2,loc=47,races_disp={1,3,4,5}}),
 s(156071,147,{f=4,loc=46,races_disp={1,3,4,5}}),
 s(158326,6126,{f=4,loc=46,rwp=40003}),
 s(158333,6137,{f=4,loc=46,races_disp={2,6,8}}),
-s(158327,6127,{f=2,loc=47,rwp=40003}),
-s(158334,6138,{f=2,loc=47,races_disp={2,6,8}})}),
+s(158327,6127,{f=2,loc=47,rwp=40003})}),
 h(-101,{
 s(156861,2508,{f=31}),
 s(156857,2504,{f=32,rwp=90001})})}),
@@ -62,11 +61,13 @@ cl(4,{
 h(-88,{
 s(156050,48,{f=4,loc=46,races_disp={1,3,4,5,7}}),
 s(156049,47,{f=2,loc=47,races_disp={1,3,4,5,7}}),
-s(156065,121,{f=2,loc=47,races_disp={2,8}}),
-s(156064,120,{f=4,loc=46,races_disp={2,8}})})}),
+s(156064,120,{f=4,loc=46,races_disp={2,8}}),
+s(156065,121,{f=2,loc=47,races_disp={2,5}}),
+s(158334,6138,{f=2,loc=47,races_disp={8}})})}),
 cl(7,{
 h(-88,{
-s(156073,153,{f=5,loc=46,rwp=40003})}),
+s(156073,153,{f=5,loc=46,rwp=40003}),
+s(158331,6135,{f=5,loc=46,rwp=40003})}),
 h(-101,{
 s(156041,36,{f=23})})}),
 cl(9,{
@@ -101,8 +102,8 @@ s(158330,6134,{description="Starter Shirt for Troll Shamans",f=10,races_disp={8}
 s(156072,148,{description="Starter Shirt for Dwarf & Night Elf Hunters",f=10,races_disp={3,4}}),
 s(158317,6117,{description="Starter Shirt for Dwarf Paladins",f=10,races_disp={3}}),
 s(156620,2105,{description="Starter Shirt for Undead & Orc Rogues",f=10,races_disp={2,5}}),
-s(156066,127,{description="Starter Shirt for Orc, Tauren & Troll Hunters",f=10,races_disp={2,6,8}}),
-s(158332,6136,{description="Starter Shirt for Troll Rogues",f=10,races_disp={8}})}),
+s(158332,6136,{description="Starter Shirt for Troll Rogues",f=10,races_disp={8}}),
+s(156066,127,{description="Starter Shirt for Orc, Tauren & Troll Hunters",f=10,races_disp={2,6,8}})}),
 h(-101,{
 s(156773,2361,{f=24}),
 s(156042,37,{description="Starter Weapon for Orc & Troll Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",f=21}),
