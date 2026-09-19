@@ -456,6 +456,11 @@ local TooltipSettingsBase = {
 		["c"] = true,
 		["r"] = true,
 		["u"] = true,
+		
+		-- TEMPORARY
+		["achID"] = true,
+		["creatureID"] = true,
+		["itemID"] = true,
 	},
 };
 local UnobtainableSettingsBase = {
