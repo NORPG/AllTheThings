@@ -837,7 +837,6 @@ root(ROOTS.Unsorted, {
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280333),	-- Pirate's Eyepatch
 			i(280337),	-- Traditional Brewfest Banner
 			i(280339),	-- Brewfest Fence
 			i(280341),	-- Brewfest Fencepost
