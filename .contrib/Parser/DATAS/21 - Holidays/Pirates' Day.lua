@@ -102,6 +102,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 						["timeline"] = { ADDED_7_0_3 },
 						["filterID"] = CONSUMABLES,	-- Changed from nothing
 					}),
+					i(280333, {	-- Pirate's Eyepatch
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = 10000000,	-- 1k
+					}),
 				},
 			}),
 			n(122396, {	-- Edward Techt <Keeper of the Black>
