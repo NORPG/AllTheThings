@@ -9,5 +9,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 		n(ACHIEVEMENTS, {
 			ach(62354),	-- Explore Riverglades
 		}),
+		n(FLIGHT_PATHS, {
+			fp(3276, {	-- Farholde Keep, Riverglades
+				["coord"] = { 60.6, 81.6, MAP.RIVERGLADES },
+			}),
+		}),
 	},
 });
