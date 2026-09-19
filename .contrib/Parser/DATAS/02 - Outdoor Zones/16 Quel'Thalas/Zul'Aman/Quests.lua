@@ -78,9 +78,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 236522 },	-- Zul'jan
 						["coord"] = { 16.6, 20.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+						["qi"] = 237767,	-- Lightwood Weapon (QI!)
 						["groups"] = {
-							i(237767),	-- Lightwood Weapon (QI!)
-							--
 							i(248560),	-- Stonebough Blade
 							i(248559),	-- Stonebough Bow
 							i(248557),	-- Stonebough Dagger
@@ -106,9 +105,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 236540 },	-- Zul'jan
 						["coord"] = { 22.6, 79.9, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+						["qi"] = 237501,	-- Lightwood Weapon (PQI!)
 						["groups"] = {
-							i(237501),	-- Lightwood Weapon (PQI!)
-							--
 							i(264257),	-- Zul'Aman Armament Rest (DECOR!)
 						},
 					}),
@@ -195,11 +193,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86653 },	-- The Path of the Amani
 						["provider"] = { "n", 236140 },	-- Zul'jarra
 						["coord"] = { 51.6, 70.8, MAP.MIDNIGHT.ZULAMAN },
+						["qis"] = {
+							239083,	-- Head of Brulagh the Crusher (QI!)
+							243188,	-- Head of Cragward Gaahl (QI!)
+							243189,	-- Head of Pulverizer Helthra (QI!)
+						},
 						["groups"] = {
-							i(239083),	-- Head of Brulagh the Crusher (QI!)
-							i(243188),	-- Head of Cragward Gaahl (QI!)
-							i(243189),	-- Head of Pulverizer Helthra (QI!)
-							--
 							i(260461),	-- Brulagh's Torque
 							i(260459),	-- Gaahl's Gorget
 							i(260458),	-- Helthra's Fetish
@@ -459,7 +458,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91206 },	-- Loa Disturbance
 						["provider"] = { "n", 237953 },	-- Loa Speaker Sij'ta
 						["coord"] = { 40.5, 49.4, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(245982) },	-- Large Pango Liver (QI!)
+						["qi"] = 245982,	-- Large Pango Liver (QI!)
 					}),
 					q(87256, {	-- Alternative Medicine
 						["sourceQuests"] = { 91206 },	-- Loa Disturbance
@@ -513,7 +512,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 88985 },	-- Recuperating Returns
 						["provider"] = { "n", 240521 },	-- Woodcrafter Azai
 						["coord"] = { 28.4, 27.3, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(238962) },	-- Lightwood Splinters (PQI!)
+						["qi"] = 238962,	-- Lightwood Splinters (PQI!)
 					}),
 					q(88987, {	-- Salvaged Sabotage
 						["sourceQuests"] = { 88985 },	-- Recuperating Returns
@@ -584,8 +583,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91062 },	-- Broken Bridges
 						["provider"] = { "n", 240977 },	-- Zak'kash
 						["coord"] = { 43.9, 66.0, MAP.MIDNIGHT.ZULAMAN },
+						["qi"] = 249236,	-- Amani Headdress (QI!)
 						["groups"] = {
-							i(249236),	-- Amani Headdress (QI!)
 							o(567976, {	-- Eagle Feather
 								i(249231),	-- Eagle Feather (QI!)
 							}),
@@ -595,7 +594,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91062 },	-- Broken Bridges
 						["provider"] = { "n", 240976 },	-- Kagara
 						["coord"] = { 44.0, 66.2, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(249271) },	-- Gnarldin Necklace (QI!)
+						["qi"] = 249271,	-- Gnarldin Necklace (QI!)
 					}),
 					q(89233, {	-- Love Triangle
 						["sourceQuests"] = {
@@ -639,7 +638,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							256867,	-- Grieving Amani (mobileNPC)
 						},
 						["coord"] = { 46.2, 74.8, MAP.MIDNIGHT.ZULAMAN },	-- General area where previous quest takes place
-						["groups"] = { i(239480) },	-- Resilient Sinew (QI!)
+						["qi"] = 239480,	-- Resilient Sinew (QI!)
 					}),
 					q(89513, {	-- Kindling Aplenty
 						["sourceQuests"] = { 89506 },	-- Strong Ties
@@ -701,8 +700,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90481 },	-- I Have a Permit
 						["provider"] = { "n", 242394 },	-- Amaxel
 						["coord"] = { 47.2, 24.6, MAP.MIDNIGHT.ZULAMAN },
+						["qi"] = 241013,	-- Zapgut Eel Stomach (QI!)
 						["groups"] = {
-							i(241013),	-- Zapgut Eel Stomach (QI!)
 							o(529683, {	-- Blisterskin Kelp
 								["coords"] = {
 									{ 48.0, 28.5, MAP.MIDNIGHT.ZULAMAN },
@@ -784,7 +783,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91813 },	-- The Spiritpaw
 						["provider"] = { "n", 248121 },	-- Furgh
 						["coord"] = { 41.4, 80.1, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(248300) },	-- Nalorakk Trinket (QI!)
+						["qi"] = 248300,	-- Nalorakk Trinket (QI!)
 					}),
 					q(91748, {	-- Too Much Twilight
 						["sourceQuests"] = { 91813 },	-- The Spiritpaw
@@ -991,9 +990,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["qg"] = 250197,	-- Assistant Grgl-Grgl <"Priestess" of the "Loa of Murlocs">
 						["coord"] = { 52.9, 60.1, MAP.MIDNIGHT.ZULAMAN },
+						["qi"] = 263446,	-- Spare Murloc Suit (PQI!)
 						["groups"] = {
-							i(263446),	-- Spare Murloc Suit (PQI!)
-							--
 							i(264474),	-- Loa Impostor's Brinefists
 							i(264472),	-- Loa Impostor's Clawguards
 							i(264471),	-- Loa Impostor's Gloves
@@ -1133,7 +1131,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 93180 },	-- Shrine Preparations
 						["provider"] = { "n", 258014 },	-- Kanza
 						["coord"] = { 51.4, 30.6, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(265401) },	-- Antique Tuskarr Teapot (QI!)
+						["qi"] = 265401,	-- Antique Tuskarr Teapot (QI!)
 					}),
 					q(93182, {	-- Healing Homeward
 						["sourceQuests"] = { 93181 },	-- Temple and a Teapot
@@ -1161,7 +1159,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91407 },	-- The Eye of the Loa
 						["provider"] = { "n", 250068 },	-- Loa Speaker Tobui
 						["coord"] = { 32.2, 31.6, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(246621) },	-- Venomous Horn (QI!)
+						["qi"] = 246621,	-- Venomous Horn (QI!)
 					}),
 					q(91404, {	-- A Most Vile Venom
 						["sourceQuests"] = { 91563 },	-- Halazzi's Hunt
@@ -1194,7 +1192,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{ 39.1, 22.3, MAP.MIDNIGHT.ZULAMAN },
 							{ 59.6, 57.2, 2583 },	-- Wit'Kalar Crypt
 						},
-						["groups"] = { i(246744) },	-- Eye of Shadra (QI!)
+						["qi"] = 246744,	-- Eye of Shadra (QI!)
 					}),
 					q(91409, {	-- Dreaming of Spiders
 						["sourceQuests"] = { 91630 },	-- Stolen Sight
@@ -1211,7 +1209,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{ 38.8, 22.7, MAP.MIDNIGHT.ZULAMAN },
 							{ 46.2, 71.9, 2583 },	-- Wit'Kalar Crypt
 						},
-						["groups"] = { i(246586) },	-- Shell of Shadra (QI!)
+						["qi"] = 246586,	-- Shell of Shadra (QI!)
 					}),
 					q(91412, {	-- Return of the Venom Queen
 						["sourceQuests"] = { 91411 },	-- Maisara Caverns: Deep in Maisara
@@ -1236,7 +1234,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86652 },	-- Left in the Shadows
 						["provider"] = { "n", 241072 },	-- Gijaniji
 						["coord"] = { 45.6, 69.4, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(258890) },	-- Boar Carcass (QI!)
+						["qi"] = 258890,	-- Boar Carcass (QI!)
 					}),
 					q(93048, {	-- Got No Rhythm
 						["sourceQuests"] = { 86652 },	-- Left in the Shadows
@@ -1294,7 +1292,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91062 },	-- Broken Bridges
 						["provider"] = { "n", 254146 },	-- Rakan
 						["coord"] = { 43.5, 68.84, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(267005) },	-- Rakan's Totem (QI!)
+						["qi"] = 267005,	-- Rakan's Totem (QI!)
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.15, {	-- Something Vile This Way Comes
@@ -1302,19 +1300,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86664 },	-- Seer or Sear
 						["qg"] = 244591,	-- Vun'zarah
 						["coord"] = { 38.6, 22.4, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(248814) },	-- Witherbark Supplies (PQI!)
+						["qi"] = 248814,	-- Witherbark Supplies (PQI!)
 					}),
 					q(91835, {	-- Send Dem Home
 						["sourceQuests"] = { 91833 },	-- Dirty Deeps
 						["qg"] = 248838,	-- Dak'zor
 						["coord"] = { 44.9, 36.5, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(248745) },	-- Hex Breaker (PQI!)
+						["qi"] = 248745,	-- Hex Breaker (PQI!)
 					}),
 					q(91836, {	-- Respect de Totem
 						["sourceQuests"] = { 91835 },	-- Send Dem Home
 						["qg"] = 248838,	-- Dak'zor
 						["coord"] = { 44.9, 36.6, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(254430) },	-- Totem Remnant (QI!)
+						["qi"] = 254430,	-- Totem Remnant (QI!)
 					}),
 					q(91838, {	-- De Vile Diminished
 						["sourceQuests"] = { 91836 },	-- Respect de Totem
@@ -1325,9 +1323,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91838 },	-- De Vile Diminished
 						["qg"] = 249106,	-- Witherbark Scout (Dak'zor) (mobileNPC)
 						["coord"] = { 47.1, 41.2, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = {
-							i(254778),	-- Altered Totem (QI!)
-							i(250190),	-- Knife Priestess Hezzia's Head (QI!)
+						["qis"] = {
+							254778,	-- Altered Totem (QI!)
+							250190,	-- Knife Priestess Hezzia's Head (QI!)
 						},
 					}),
 					q(91839, {	-- Sacrifice Denied
@@ -1376,8 +1374,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 93258 },	-- Crab Clues
 						["provider"] = { "n", 254491 },	-- Kahanea
 						["coord"] = { 40.2, 79.2, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = {
-							i(259471),	-- Mouthwatering Crab Meat (QI!)
+						["qi"] = {
+							259471,	-- Mouthwatering Crab Meat (QI!)
 						},
 					}),
 					q(93261, {	-- A Crab of Unusual Size
@@ -1387,9 +1385,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 254491 },	-- Kahanea
 						["coord"] = { 32.2, 83.8, MAP.MIDNIGHT.ZULAMAN },
+						["qi"] = 260410,	-- Chipped Twilight's Blade Artifact (QI!)
 						["groups"] = {
-							i(260410),	-- Chipped Twilight's Blade Artifact (QI!)
-							--
 							i(263280),	-- Tidewrought Coif
 							i(263281),	-- Tidewrought Greathelm
 							i(263279),	-- Tidewrought Mask
@@ -1416,7 +1413,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 93440 },	-- Personal History
 						["provider"] = { "n", 254783 },	-- Torundo the Grizzled
 						["coord"] = { 46.1, 47.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
-						["groups"] = { i(259204) },	-- Raider Ash Remains (QI!)
+						["qi"] = 259204,	-- Raider Ash Remains (QI!)
 					}),
 					q(93433, {	-- Shrine, Sealed, Delivered
 						["sourceQuests"] = { 93440 },	-- Personal History
@@ -1438,7 +1435,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 254827 },	-- Elder Doru
 						["coord"] = { 45.2, 44.9, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
-						["groups"] = { i(259967) },	-- Amani Hex Stave (QI!)
+						["qi"] = 259967,	-- Amani Hex Stave (QI!)
 					}),
 					q(93437, {	-- In Their Own Blood
 						["sourceQuests"] = {
@@ -1599,7 +1596,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["qg"] = 253806,	-- Zul'jan
 						["coord"] = { 44.5, 36.6, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(262791) },	-- Malacrass's Notes (QI!)
+						["qi"] = 262791,	-- Malacrass's Notes (QI!)
 					}),
 					------ Stay awhile and listen ------
 					--hqt(XXXXX, {	-- Stay awhile and listen: Loa Speaker Kinduru
@@ -1673,12 +1670,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94868, {	-- It Takes Two
 						["qg"] = 245512,	-- Loa Speaker Brek
 						["coord"] = { 55.1, 18.3, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(273844) },	-- Shaja's Cleansing Vial (PQI!)
+						["qi"] = 273844,	-- Shaja's Cleansing Vial (PQI!)
 					}),
 					q(94869, {	-- Hungry Hungry Hatchlings
 						["qg"] = 245512,	-- Loa Speaker Brek
 						["coord"] = { 55.1, 18.3, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = { i(269612) },	-- Pungent Crab Tomalley (QI!)
+						["qi"] = 269612,	-- Pungent Crab Tomalley (QI!)
 					}),
 					q(94870, {	-- Eggstra Protection Never Hurts
 						["sourceQuests"] = {
