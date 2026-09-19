@@ -3704,7 +3704,7 @@ setmetatable(_.HeaderConstants, {
                 // sometimes we can parse with this config set and all ObjectDB will be re-generated based on cumulative object information in Retail
                 if (Config["DoConsolidateObjectDB"] && !PreProcessorTags.Contains("ANYCLASSIC"))
                 {
-                    ObjectHarvester.ExportObjectsToFilePath(ObjectDB, "./DATAS/00 - DB/ObjectDB.lua",
+                    ObjectHarvester.ExportObjectsToFilePath(ObjectDB, "../.db/shared/objects/ObjectDB.lua",
 @"-----------------------------------------------------
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -----------------------------------------------------");
@@ -3712,7 +3712,7 @@ setmetatable(_.HeaderConstants, {
                 else
                 {
                     // Attempt to find some dirty objects and write them to a dynamic file.
-                    ObjectHarvester.ExportDirtyObjectsToFilePath($"./DATAS/00 - DB/Dynamic/DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
+                    ObjectHarvester.ExportDirtyObjectsToFilePath($"../.db/shared/objects/Dynamic/DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
                 }
 
                 // DEBUGGING: Output Parsed Data
