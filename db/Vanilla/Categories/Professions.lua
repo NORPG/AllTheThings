@@ -207,14 +207,14 @@ prof(333),
 prof(202,{awp=10100,g={
 x(1,{requireSkill=202,g={
 h(-47,{requireSkill=202,g={
-i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,rwp=40003,g={
-r(12607,{itemID=10603,learnedAt=220,q=2,requireSkill=202}),
-r(15633,{b=1,itemID=11827,learnedAt=205,q=2,requireSkill=20219}),
-r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202})}}),
-i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,rwp=40003,g={
-r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202}),
-r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202}),
-r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}})}}),
+i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},requireSkill=202,rwp=40003,g={
+r(12607,{itemID=10603,learnedAt=220,requireSkill=202}),
+r(15633,{b=1,itemID=11827,learnedAt=205,requireSkill=20219}),
+r(12616,{itemID=10606,learnedAt=225,requireSkill=202})}}),
+i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},requireSkill=202,rwp=40003,g={
+r(3968,{itemID=4416,learnedAt=195,requireSkill=202}),
+r(3972,{itemID=4417,learnedAt=200,requireSkill=202}),
+r(15628,{b=1,itemID=11828,learnedAt=205,requireSkill=20222})}})}})}})}}),
 prof(129,{rwp=80001,g={
 x(1,{requireSkill=129,g={
 ach(131,{requireSkill=129}),
