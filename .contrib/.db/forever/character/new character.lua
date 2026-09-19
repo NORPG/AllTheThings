@@ -27,7 +27,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(147, {	-- Rugged Trapper's Pants
 				["races_disp"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
 			}),
-			i(6126, {	-- Trapper's Boots [Orc]
+			i(6126, {	-- Trapper's Pants [Orc]
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6137, {	-- Thug Pants

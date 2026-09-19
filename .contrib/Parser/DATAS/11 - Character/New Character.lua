@@ -270,7 +270,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- ["races"] = { DRAENEI },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
-			i(6126, {	-- Trapper's Boots [Orc]
+			i(6126, {	-- Trapper's Pants [Orc]
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6137, {	-- Thug Pants
