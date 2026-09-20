@@ -1238,7 +1238,6 @@ _.HeaderData = {
 	FILLNPCS = {[-698]=1,[-63]=1,[-47]=1,[-27]=1,[-22]=1,[-19]=1},
 }
 localize(L.HEADER_NAMES, {
-	[-11] = "New Character",
 	[-12] = ACHIEVEMENTS,
 	[-19] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,
 	[-22] = "Common Vendor Items",
@@ -1331,6 +1330,7 @@ localize(L.HEADER_NAMES, {
 	[-731] = CHARACTER,
 	[-732] = BUG_CATEGORY2,
 	[-734] = BATTLE_PET_SOURCE_7,
+	[-796] = "Starter Gear",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1355,6 +1355,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-484] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
+	[-796] = "This following contains gear that can be acquired by creating a brand new character of a given class and race.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1363,7 +1364,6 @@ localize(L.HEADER_LORE, {
 	[-388] = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
 })
 localize(L.HEADER_ICONS, {
-	[-11] = 1530081,
 	[-12] = _.asset("category_achievements"),
 	[-19] = _.asset("category_commonbossdrop"),
 	[-22] = 133785,
@@ -1456,6 +1456,7 @@ localize(L.HEADER_ICONS, {
 	[-731] = _.asset("category_itemsets"),
 	[-732] = _.asset("category_zones"),
 	[-734] = _.asset("category_event"),
+	[-796] = 135018,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1487,10 +1488,10 @@ localize(L.EVENT_REMAPPING, {
 	[375] = 1,
 })
 -- Programmatic Event Scheduling
-_.Modules.Events.SetEventInformation(14, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=5,["year"]=2027},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=1,["year"]=2028})
+_.Modules.Events.SetEventInformation(13, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -1532,10 +1533,10 @@ _.Modules.Events.SetEventInformation(16, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=1,["year"]=2026},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=2,["year"]=2027},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=2,["year"]=2027})
 })
-_.Modules.Events.SetEventInformation(13, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
+_.Modules.Events.SetEventInformation(14, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=5,["year"]=2027},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=1,["year"]=2028})
 })
 _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=7,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=17,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
@@ -4270,7 +4271,6 @@ L.WORLD_QUESTS_DESC = "Dies sind Weltquests und andere zeitlich begrenzte Dinge,
 L.WRONG_FACTION = "Möglicherweise müsst Ihr auf der anderen Fraktion sein, um dies anschauen zu können."
 L.ZONE_DESC = "Klick diesen Knopf um eine zufällige Zone auszuwählen, die Euch noch fehlt."
 localize(L.HEADER_NAMES, {
-	[-11] = "Neuer Charakter",
 	[-19] = "Gemeinsame Bossbeute",
 	[-25] = "Dämonenausbilderin",
 	[-30] = "Erkundung",
@@ -5448,7 +5448,6 @@ L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour
 L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !"
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque."
 localize(L.HEADER_NAMES, {
-	[-11] = "Nouveau personnage",
 	[-22] = "Objets communs des vendeurs",
 	[-25] = "Maître des démons",
 	[-36] = "Évènements saisonniers",
@@ -6351,7 +6350,6 @@ L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Abili
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Condotti"
 L.TITLES_CHECKBOX = "Titoli"
 localize(L.HEADER_NAMES, {
-	[-11] = "Nuovo personaggio",
 	[-25] = "Istruttore dei Demoni",
 	[-36] = "Festività",
 	[-48] = "Istruttore di equitazione",
@@ -6889,7 +6887,6 @@ L.TRACKING_PROGRESS = "Rastreando Progresso"
 L.VISIT_FLIGHT_MASTER = "Visite o Mestre de Voo para registrar."
 L.WRONG_FACTION = "Você precisa ser de outra facção para visualizar isso."
 localize(L.HEADER_NAMES, {
-	[-11] = "Novo personagem",
 	[-25] = "Treinamento de Demônios",
 	[-36] = "Feriados",
 	[-37] = "Feira de Negraluna",
@@ -8312,7 +8309,6 @@ L.WRONG_FACTION = "Вы должны быть за другую фракцию, 
 L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!"
 L.ZONE_DESC = "Нажмите эту кнопку для выбора случайной локации, основываясь на несобранных Штучках."
 localize(L.HEADER_NAMES, {
-	[-11] = "Новый персонаж",
 	[-19] = "Общая добыча с боссов",
 	[-22] = "Обычные предметы у Торговцев",
 	[-25] = "Наставник демонов",
@@ -9244,7 +9240,6 @@ L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 룬�
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 도관"
 L.TITLES_CHECKBOX = "칭호"
 localize(L.HEADER_NAMES, {
-	[-11] = "새로운 캐릭터",
 	[-25] = "악마 훈련사",
 	[-36] = "축제",
 	[-37] = "다크문 축제",
@@ -10810,7 +10805,6 @@ L.WRONG_FACTION = "Quizás necesites estar en la otra facción para ver esto."
 L.YOU_DID_IT = "¡LO LOGRASTE! "
 L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basado en lo que te falta."
 localize(L.HEADER_NAMES, {
-	[-11] = "Nuevo personaje",
 	[-19] = "Botín común de jefe",
 	[-22] = "Objetos comunes entre vendedores",
 	[-25] = "Instructor de demonios",
@@ -13126,7 +13120,6 @@ L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容。"
 L.YOU_DID_IT = "你做到了！"
 L.ZONE_DESC = "点击此按钮可根据缺少的内容选择随机地区。"
 localize(L.HEADER_NAMES, {
-	[-11] = "新角色",
 	[-19] = "首领共同掉落",
 	[-22] = "商人共同物品",
 	[-25] = "恶魔训练师",

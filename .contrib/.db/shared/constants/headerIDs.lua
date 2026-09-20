@@ -597,6 +597,7 @@ HeaderAssignments = {
 	["Starcraft II: Heart of the Swarm"] = -535,
 	["Starcraft II: Legacy of the Void"] = -536,
 	["Starcraft II: Wings of Liberty"] = -534,
+	["Starter Gear"] = -796,
 	["SteelSeries"] = -517,
 	["Stoktron Brewery"] = -120,
 	["Stormarion Assault"] = -681,
@@ -775,4 +776,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -796
+NextHeaderID = -797
