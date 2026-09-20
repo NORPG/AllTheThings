@@ -4641,7 +4641,7 @@ s(158986,7684,{f=4,loc=41})})}}),
 h(-362,{awp=100107,lvl=28,rwp=50004,g={
 h(-45,{
 q(1049,{coords={
-[1456]={{34.6,47.2}}},lvl=28,qgs={3978},races={2,6,8},rwp=40003,g={
+[1456]={{34.6,47.2}}},lvl=28,qgs={3978},races={2,6,8,96},rwp=40003,g={
 qo(1,{description="On one of the shelves on the left as you enter the final hallway leading to Doan.",providers={{"i",5535},{"o",19283}}}),
 s(163303,17508,{f=8}),
 s(159018,7749,{f=1}),

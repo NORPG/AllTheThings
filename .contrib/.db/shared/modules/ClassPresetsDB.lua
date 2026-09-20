@@ -162,58 +162,6 @@ for key,data in pairs(Presets) do
 	end
 end
 
--- #if ANYCLASSIC
--- Classic needs an additional set of presets for transmogs. (They use one for loot mode and the other for transmog)
-local PresetTransmogs = {
-	["ALL"] = {
-		[HELD_IN_OFF_HAND] = true,
-		[COSMETIC] = true,
-		[CLOAKS] = true,
-		[CLOTH] = true,
-		[LEATHER] = true,
-		[MAIL] = true,
-		[PLATE] = true,
-		[HEAD_F] = true,
-		[SHOULDER_F] = true,
-		[CHEST_F] = true,
-		[WRIST_F] = true,
-		[HANDS_F] = true,
-		[WAIST_F] = true,
-		[LEGS_F] = true,
-		[FEET_F] = true,
-		[SHIELDS] = true,
-		[TABARDS] = true,
-		[SHIRTS] = true,
-		[DAGGERS] = true,
-		[ONE_HANDED_AXES] = true,
-		[TWO_HANDED_AXES] = true,
-		[ONE_HANDED_MACES] = true,
-		[TWO_HANDED_MACES] = true,
-		[ONE_HANDED_SWORDS] = true,
-		[TWO_HANDED_SWORDS] = true,
-		[WANDS] = true,
-		[STAVES] = true,
-		[POLEARMS] = true,
-		[GUNS] = true,
-		[BOWS] = true,
-		[CROSSBOWS] = true,
-		[FIST_WEAPONS] = true,
-		[WARGLAIVES] = true,
-	},
-};
-for key,data in pairs(Presets) do
-	local o = {};
-	for id,state in pairs(data) do
-		o[id] = state;
-	end
-	PresetTransmogs[key] = o;
-end
-
--- Assign the Preset Transmogs to the ExportDB.
-ExportDB._Compressed.PresetTransmogs = true
-ExportDB.PresetTransmogs = PresetTransmogs;
--- #endif
-
 -- #if BEFORE 4.0.0
 -- Prior to Cataclysm, players could equip non-primary armor types and get better stats than their primary armor type would.
 Presets.DRUID[CLOTH] = true;
@@ -262,9 +210,19 @@ local CommonNonTransmogFilterTypes = {
 -- #if AFTER LEGION
 CommonNonTransmogFilterTypes[#CommonNonTransmogFilterTypes + 1] = RELICS_F;	-- Artifact Relics
 -- #endif
+-- TODO: Once NORPG is done with annotations, we're moving the shortcuts into the shared database
+-- Remove this once that process is done.
+local function contains(arr, value)
+	for i,value2 in ipairs(arr) do
+		if value2 == value then return true; end
+	end
+end
 for key,data in pairs(Presets) do
 	for _,id in ipairs(CommonNonTransmogFilterTypes) do
 		data[id] = true
+	end
+	if not contains(ALL_CLASSES, _G[key]) then
+		Presets[key] = nil;
 	end
 end
 

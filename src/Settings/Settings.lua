@@ -347,10 +347,6 @@ local GeneralSettingsBase = {
 local FilterSettingsBase = {
 	__index = app.Presets[app.Class] or app.Presets.ALL,
 };
-local TransmogPresets = app.PresetTransmogs or app.Presets;
-local TransmogFilterSettingsBase = {
-	__index = TransmogPresets[app.Class] or TransmogPresets.ALL,
-};
 local TooltipSettingsBase = {
 	__index = {
 		["Adjust:RowIndents"] = true,
@@ -538,9 +534,7 @@ settings.Initialize = function(self)
 	local PerCharacter = app.LocalizeGlobal("AllTheThingsSettingsPerCharacter", true)
 	if PerCharacter then AllTheThingsSettingsPerCharacter = PerCharacter; end
 	if not PerCharacter.Filters then PerCharacter.Filters = {}; end
-	if not PerCharacter.TransmogFilters then PerCharacter.TransmogFilters = {}; end
 	setmetatable(PerCharacter.Filters, FilterSettingsBase);
-	setmetatable(PerCharacter.TransmogFilters, TransmogFilterSettingsBase);
 
 	-- force re-enable of optional filters which become not optional
 	-- (any filterID's here must be 'true' in all class presets)
@@ -839,12 +833,6 @@ settings.ResetFilters = function(self, expected)
 end
 settings.GetFilter = function(self, filterID)
 	return RawFilters[filterID];
-end
-settings.GetFilterForTransmogBase = function(self, filterID)
-	return app.PresetTransmogs.ALL[filterID];
-end
-settings.GetFilterForTransmog = function(self, filterID)
-	return AllTheThingsSettingsPerCharacter.TransmogFilters[filterID];
 end
 settings.SetFilter = function(self, filterID, value)
 	RawFilters[filterID] = value;

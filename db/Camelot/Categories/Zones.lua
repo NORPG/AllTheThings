@@ -17209,7 +17209,7 @@ i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},rwp=
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,lvl=45,spellID=17038}),
 i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold."}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446}})})}})}}),
-m(2521,{awp=16001,lore="Once a secluded island oasis in the sky, Zephras Isle now welcomes the next generation of WoW’s newest race – the Skyborne – to protect this floating island and secure its future.",g={
+m(2521,{awp=16001,lore="Once a secluded island oasis in the sky, Zephras Isle now welcomes the next generation of WoW’s newest race – the Skyborne – to protect this floating island and secure its future.",races={95,96},g={
 h(-45,{
 q(92460,{coords={
 [2521]={{42.8,23.4}}},qgs={251362}}),
