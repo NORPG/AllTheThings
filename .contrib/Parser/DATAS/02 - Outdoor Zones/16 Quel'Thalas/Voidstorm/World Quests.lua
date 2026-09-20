@@ -96,9 +96,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(93244, {	-- Special Assignment: Agents of the Shield
 					["coord"] = { 40.9, 86.3, MAP.MIDNIGHT.VOIDSTORM },
-					["groups"] = {
-						i(263510),	-- Overflow Diverter (QI!)
-					},
+					["qi"] = 263510,	-- Overflow Diverter (QI!)
 				}),
 				q(93438, {	-- Special Assignment: Precision Excision
 					["coord"] = { 35.8, 70.4, MAP.MIDNIGHT.VOIDSTORM },

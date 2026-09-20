@@ -87,9 +87,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86559 },	-- The Far, Far Frontier
 						["provider"] = { "n", 235532 },	-- Alleria Windrunner
 						["coord"] = { 31.3, 54.3, MAP.MIDNIGHT.VOIDSTORM },
+						["qi"] = 242390,	-- Shadowgraft Fragment (QI!)
 						["groups"] = {
-							i(242390),	-- Shadowgraft Fragment (QI!)
-							--
 							i(262472),	-- Cosmic Kettle (DECOR!)
 						},
 					}),
@@ -136,9 +135,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86536 },	-- Reliable Enemies
 						["provider"] = { "n", 235394 },	-- Lothraxion
 						["coord"] = { 36.7, 73.1, MAP.MIDNIGHT.VOIDSTORM },
+						["qi"] = 237380,	-- Empty Manacell (QI!)
 						["groups"] = {
-							i(237380),	-- Empty Manacell (QI!)
-							--
 							i(262737),	-- Axe of the Great Dark
 							i(260848),	-- Beacon of the Cold Flame
 							i(262678),	-- Bow of the Great Dark
@@ -176,9 +174,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 235717 },	-- Alleria Windrunner
 						["coord"] = { 36.3, 80.4, MAP.MIDNIGHT.VOIDSTORM },
+						["qi"] = 237745,	-- Encrypted Device (QI!)
 						["groups"] = {
-							i(237745),	-- Encrypted Device (QI!)
-							--
 							i(262730),	-- Axe of Desolation
 							i(262738),	-- Axe of the Eternal Void
 							i(262677),	-- Darkness Dagger
@@ -240,10 +237,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86539 },	-- A Naaru!
 						["provider"] = { "n", 235650 },	-- Decimus
 						["coord"] = { 39.4, 82.1, MAP.MIDNIGHT.VOIDSTORM },
+						["qis"] = {
+							237895,	-- Fragmented Keystone (QI!)
+							242254,	-- Master's Override (QI!)
+						},
 						["groups"] = {
-							i(237895),	-- Fragmented Keystone (QI!)
-							i(242254),	-- Master's Override (QI!)
-							--
 							i(267209),	-- Open Void Elf Bedroll (DECOR!)
 						},
 					}),
@@ -271,7 +269,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 89249 },	-- Overwhelmed
 						["provider"] = { "n", 235724 },	-- Arator
 						["coord"] = { 41.7, 74.7, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(238500) },	-- Maella's Report (QI!)
+						["qi"] = 238500,	-- Maella's Report (QI!)
 					}),
 					------ Stay awhile and listen ------
 					--hqt(XXXXX, {	-- Stay awhile and listen: Alleria Windrunner
@@ -397,9 +395,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86514 },	-- Lady of the Pit
 						["provider"] = { "n", 235504 },	-- Lothraxion
 						["coord"] = { 60.7, 73.6, MAP.MIDNIGHT.VOIDSTORM },
+						["qi"] = 236752,	-- Severum's Sigil (QI!)
 						["groups"] = {
-							i(236752),	-- Severum's Sigil (QI!)
-							--
 							i(260867),	-- Breastplate of the Colossal Behemoths
 							i(260864),	-- Hazy Penumbral Mantle
 							i(260866),	-- Neverending Vortex Chainmail
@@ -483,7 +480,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 88755 },	-- Scholarly Pursuits
 						["provider"] = { "n", 236930 },	-- Kelia Everglow
 						["coord"] = { 41.2, 61.5, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(235632) },	-- Exotic Tissue Sample (QI!)
+						["qi"] = 235632,	-- Exotic Tissue Sample (QI!)
 					}),
 					q(88653, {	-- Yolks on You
 						["sourceQuests"] = {
@@ -500,7 +497,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 236930 },	-- Kelia Everglow
 						["coord"] = { 41.2, 61.5, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(267614) },	-- Whispering Phial (PQI!)
+						["qi"] = 267614,	-- Whispering Phial (PQI!)
 					}),
 					q(88708, {	-- Violent Conclusions
 						["sourceQuests"] = {
@@ -582,7 +579,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90782 },	-- The Nethersent
 						["provider"] = { "n", 241620 },	-- Tul'amar, Twice-Exiled
 						["coord"] = { 39.9, 49.0, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(243350) },	-- Predator Blood (QI!)
+						["qi"] = 243350,	-- Predator Blood (QI!)
 					}),
 					q(90872, {	-- Drenched In It
 						["sourceQuests"] = { 90866 },	-- Universal Language
@@ -593,13 +590,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90872 },	-- Drenched In It
 						["provider"] = { "n", 241620 },	-- Tul'amar, Twice-Exiled
 						["coord"] = { 35.0, 88.7, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-						["groups"] = { i(244173) },	-- Relic of Liberation (PQI!)
+						["qi"] = 244173,	-- Relic of Liberation (PQI!)
 					}),
 					q(90874, {	-- Their Violent Ends
 						["sourceQuests"] = { 90872 },	-- Drenched In It
 						["provider"] = { "n", 241620 },	-- Tul'amar, Twice-Exiled
 						["coord"] = { 35.0, 88.7, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-						["groups"] = { i(244171) },	-- Abductor's Mark (QI!)
+						["qi"] = 244171,	-- Abductor's Mark (QI!)
 					}),
 					q(90875, {	-- Across Worlds
 						["sourceQuests"] = {
@@ -608,9 +605,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 241620 },	-- Tul'amar, Twice-Exiled
 						["coord"] = { 35.0, 88.7, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+						["qi"] = 244435,	-- Lodestar of the Great Dark (QI!)
 						["groups"] = {
-							i(244435),	-- Lodestar of the Great Dark (QI!)
-							--
 							i(264293),	-- Exile's Tattered Shawl
 							i(264294),	-- Nethersent Eredar's Cloak
 						},
@@ -621,15 +617,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86565 },	-- No Prayer for the Wicked
 						["provider"] = { "n", 239720 },	-- Lucia Nightbreaker
 						["coord"] = { 42.4, 75.4, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = {
-							i(247713),	-- Reliquary of Darkness (QI!)
-						},
+						["qi"] = 247713,	-- Reliquary of Darkness (QI!)
 					}),
 					q(91339, {	-- Smothered in the Crib
 						["sourceQuests"] = { 90910 },	-- Overwhelming Darkness
 						["provider"] = { "n", 239720 },	-- Lucia Nightbreaker
 						["coord"] = { 47.9, 78.6, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(246435) },	-- Reliquary of Darkness (QI!)
+						["qi"] = 246435,	-- Reliquary of Darkness (QI!)
 					}),
 					q(91340, {	-- For Violence's Sake
 						["sourceQuests"] = { 90910 },	-- Overwhelming Darkness
@@ -643,9 +637,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 239720 },	-- Lucia Nightbreaker
 						["coord"] = { 47.9, 78.6, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = {
-							i(247854),	-- Filled Reliquary of Darkness (QI!)
-						},
+						["qi"] = 247854,	-- Filled Reliquary of Darkness (QI!)
 					}),
 					q(91343, {	-- Ambition's Reward
 						["sourceQuests"] = { 91341 },	-- Unlimited
@@ -693,7 +685,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 91557,	-- Message to the Molt
 						["provider"] = { "n", 247664 },	-- Lady Darkglen
 						["coord"] = { 35.9, 48.3, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(251905) },	-- Specialized Liver (QI!)
+						["qi"] = 251905,	-- Specialized Liver (QI!)
 					}),
 					q(91560, {	-- Expunging Explorers
 						["sourceQuests"] = {
@@ -702,7 +694,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 247674 },	-- Lady Darkglen
 						["coord"] = { 34.6, 43.8, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(253518) },	-- Pathogen Antidote (QI!)
+						["qi"] = 253518,	-- Pathogen Antidote (QI!)
 					}),
 					q(93801, {	-- Calculated Culling
 						["description"] = "Available after you cured Ren'dorei Scout during 'Expunging Explorers' (91560)",
@@ -739,7 +731,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = 91884,	-- The Illusion of Motion
 						["provider"] = { "n", 248880 },	-- Starving Voidwalker
 						["coord"] = { 48.8, 82.3, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(249433) },	-- Void Splinter (PQI!)
+						["qi"] = 249433,	-- Void Splinter (PQI!)
 					}),
 					q(91886, {	-- Voices of Omens
 						["sourceQuests"] = { 91885 },	-- Drain You
@@ -778,7 +770,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 92155 },	-- Object Exorcism
 						["provider"] = { "n", 249917 },	-- Havazza
 						["coord"] = { 64.7, 64.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-						["groups"] = { i(251278) },	-- Consuming Brand (PQI!)
+						["qi"] = 251278,	-- Consuming Brand (PQI!)
 					}),
 					q(92157, {	-- Ritual Activity
 						["sourceQuests"] = { 92156 },	-- It Follows Me
@@ -812,7 +804,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 92603 },	-- O Lonely Star
 						["provider"] = { "n", 254012 },	-- Orin Straylight
 						["coord"] = { 39.5, 38.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-						["groups"] = { i(256692) },	-- Viscous Ichor (QI!)
+						["qi"] = 256692,	-- Viscous Ichor (QI!)
 					}),
 					q(92605, {	-- Honest as Bone
 						["sourceQuests"] = { 92603 },	-- O Lonely Star
@@ -861,7 +853,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 252510 },	-- Orin Straylight
 						["coord"] = { 33.1, 36.3, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-						["groups"] = { i(256549) },	-- Shadow Chisel (QI!)
+						["qi"] = 256549,	-- Shadow Chisel (QI!)
 					}),
 					q(92607, {	-- And Carve New Shapes
 						["sourceQuests"] = { 92606 },	-- Take Up Your Gift
@@ -898,20 +890,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["qg"] = 247374,	-- Ziadan
 							["coord"] = { 23.6, 54.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						}),
-						["groups"] = { i(260948) },	-- Enigmatic Voidclarion (QI!)
+						["qi"] = 260948,	-- Enigmatic Voidclarion (QI!)
 					},
 					{	-- Voidscar Arena: The Bastion of ...
 						["aqd"] = q(91583, {	-- Voidscar Arena: The Bastion of Valor
 							["sourceQuest"] = 91565,	-- Voidscar Arena: The Grief Spire
 							["qg"] = 247375,	-- Vidious
 							["coord"] = { 74.0, 75.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-							["groups"] = { i(247422) },	-- Spiteful Shadowgraft (QI!)
+							["qi"] = 247422,	-- Spiteful Shadowgraft (QI!)
 						}),
 						["hqd"] = q(94845, {	-- Voidscar Arena: The Bastion of Might
 							["sourceQuest"] = 91566,	-- Voidscar Arena: The Hate Spire
 							["qg"] = 247374,	-- Ziadan
 							["coord"] = { 23.6, 54.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-							["groups"] = { i(266183) },	-- Enigmatic Voidclarion (QI!)
+							["qi"] = 266183,	-- Enigmatic Voidclarion (QI!)
 						}),
 					},
 					{	-- Voidscar Arena: A Familiar Grudge
@@ -1080,9 +1072,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 254513 },	-- Riftblade Maella
 						["coord"] = { 31.2, 68.2, MAP.MIDNIGHT.VOIDSTORM },
+						["qi"] = 260590,	-- Maella's Stormarion Core (PQI!)
 						["groups"] = {
-							i(260590),	-- Maella's Stormarion Core (PQI!)
-							--
 							i(264325),	-- Mantle of the Stormarion Defender
 							i(264326),	-- Pauldrons of the Stormarion Defender
 							i(264328),	-- Shoulderpads of the Stormarion Defender
@@ -1095,7 +1086,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86565 },	-- No Prayer for the Wicked
 						["qg"] = 253038,	-- Riftwalker Alayshen
 						["coord"] = { 36.9, 58.5, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(260363) },	-- Ancient Rubble (QI!)
+						["qi"] = 260363,	-- Ancient Rubble (QI!)
 					}),
 					q(92944, {	-- Sifting Through Void
 						["sourceQuest"] = 92939,	-- It's Not Just a Rock!
@@ -1154,7 +1145,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90838 },	-- Oaths and Heirlooms
 						["provider"] = { "n", 244499 },	-- Kifaan
 						["coord"] = { 44.7, 68.6, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(244146) },	-- Interrogated Data (QI!)
+						["qi"] = 244146,	-- Interrogated Data (QI!)
 					}),
 					q(90847, {	-- Truth From Power
 						["sourceQuests"] = {
@@ -1163,7 +1154,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 244499 },	-- Kifaan
 						["coord"] = { 44.7, 68.6, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(245628) },	-- Dreamfire's Necklace (QI!)
+						["qi"] = 245628,	-- Dreamfire's Necklace (QI!)
 					}),
 					q(90848, {	-- She Started the Fire
 						["sourceQuests"] = { 90847 },	-- Truth From Power
@@ -1261,7 +1252,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91541 },	-- Unchecked Emotions
 						["provider"] = { "n", 248072 },	-- Riftblade Astre
 						["coord"] = { 52.1, 69.6, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(248722) },	-- Ghostflower Tea (PQI!)
+						["qi"] = 248722,	-- Ghostflower Tea (PQI!)
 					}),
 					q(91544, {	-- Familiar Energies
 						["sourceQuest"] = 91542,	-- The Town Inside Me
@@ -1278,7 +1269,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							249130,	-- Ren'dorei Ghostblade (mobileNPC)
 						},
 						["coord"] = { 62.4, 82.4, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(248724) },	-- Scout's Sights (PQI!)
+						["qi"] = 248724,	-- Scout's Sights (PQI!)
 					}),
 					q(91963, {	-- Running Amok
 						["sourceQuest"] = 91542,	-- The Town Inside Me
@@ -1287,7 +1278,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							249130,	-- Ren'dorei Ghostblade (mobileNPC)
 						},
 						["coord"] = { 62.4, 82.4, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(249387) },	-- Latent Shadowgraft (QI!)
+						["qi"] = 249387,	-- Latent Shadowgraft (QI!)
 					}),
 					q(91545, {	-- Stronger Than Before
 						["sourceQuests"] = {
@@ -1322,7 +1313,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86521 },	-- Nexus-Point Xenas: Eclipse
 						["provider"] = { "n", 243907 },	-- Decimus
 						["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(248086) },	-- Void Essence (QI!)
+						["qi"] = 248086,	-- Void Essence (QI!)
 					}),
 					q(90915, {	-- Artifice of Aggression
 						["sourceQuests"] = { 90914 },	-- A Born Killer
@@ -1344,7 +1335,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90916 },	-- Seek to Destroy
 						["provider"] = { "n", 244929 },	-- Decimus
 						["coord"] = { 61.3, 61.9, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(248593) },	-- Nascent Blade (PQI!)
+						["qi"] = 248593,	-- Nascent Blade (PQI!)
 					}),
 					q(90918, {	-- The Unforgiven
 						["sourceQuests"] = { 90916 },	-- Seek to Destroy
@@ -1399,8 +1390,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86509 },	-- Friend or Fiend
 						["provider"] = { "n", 246727 },	-- Ravenia
 						["coord"] = { 52.1, 67.4, MAP.MIDNIGHT.VOIDSTORM },
+						["qi"] = 246372,	-- Void-Infused Morsel (QI!)
 						["groups"] = {
-							i(246372),	-- Void-Infused Morsel (QI!)
 							o(556121, {
 								["coords"] = {
 									{ 51.4, 75.2, MAP.MIDNIGHT.VOIDSTORM },
@@ -1462,7 +1453,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 92507,	-- A More Potent Foe
 						["qg"] = 252109,	-- Allari the Souleater
 						["coord"] = { 53.2, 70.4, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(254671) },	-- Talon of the Towering Ultradon (QI!)
+						["qi"] = 254671,	-- Talon of the Towering Ultradon (QI!)
 					}),
 					q(92510, {	-- Dark Infusion
 						["description"] = "If you get stuck on this quest where Magister Umbric is missing and you can't turn it in, you need to progress further into campaign up to the quest 'Domus Penumbra' (86510).",
@@ -1546,55 +1537,55 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["provider"] = { "n", 245571 },	-- Sador
 				["coord"] = { 36.0, 81.3, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["isDaily"] = true,
-				["groups"] = { i(262967) },	-- Domanaar Dueling Flag (QI!)
+				["qi"] = 262967,	-- Domanaar Dueling Flag (QI!)
 			}),
 			q(94408, {	-- Contract of Service
 				["qg"] = 257501,	-- Pursewarden of Grief
 				["coord"] = { 41.0, 83.8, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = { i(264380) },	-- Contract of Service (QI!)
+				["qi"] = 264380,	-- Contract of Service (QI!)
 			}),
 			q(94409, {	-- Contract of Service
 				["qg"] = 257502,	-- Tallymaster of Hate
 				["coord"] = { 34.7, 80.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["races"] = HORDE_ONLY,
-				["groups"] = { i(264380) },	-- Contract of Service (QI!)
+				["qi"] = 264380,	-- Contract of Service (QI!)
 			}),
 			q(94056, {	-- A Golden Pull [A]
 				["qg"] = 257130,	-- Vidious <Domanaar of Grief>
 				["coord"] = { 40.8, 83.9, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = { i(264188) },	-- Golden Vidious Card (QI!)
+				["qi"] = 264188,	-- Golden Vidious Card (QI!)
 			}),
 			q(94057, {	-- A Golden Pull [H]
 				["qg"] = 257132,	-- Ziadan <Domanaar of Hate>
 				["coord"] = { 34.8, 80.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["races"] = HORDE_ONLY,
-				["groups"] = { i(264189) },	-- Golden Ziadan Card (QI!)
+				["qi"] = 264189,	-- Golden Ziadan Card (QI!)
 			}),
 			q(94402, {	-- Old War Grudge [A]
 				["qg"] = 257479,	-- Amari Lyndon
 				["coord"] = { 40.8, 83.9, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = { i(264363) },	-- Gar'chak Skullcleave's Head (QI!)
+				["qi"] = 264363,	-- Gar'chak Skullcleave's Head (QI!)
 			}),
 			q(94403, {	-- Old War Grudge [H]
 				["qg"] = 257478,	-- Dar'gul
 				["coord"] = { 34.8, 80.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["races"] = HORDE_ONLY,
-				["groups"] = { i(264364) },	-- Hardin Steellock's Head (QI!)
+				["qi"] = 264364,	-- Hardin Steellock's Head (QI!)
 			}),
 			q(94052, {	-- The Domanaar's Plan [A]
 				["qg"] = 257130,	-- Vidious <Domanaar of Grief>
 				["coord"] = { 40.8, 83.9, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = { i(264191) },	-- Ziadan's Stolen Battleplans (QI!)
+				["qi"] = 264191,	-- Ziadan's Stolen Battleplans (QI!)
 			}),
 			q(94055, {	-- The Domanaar's Plan [H]
 				["qg"] = 257132,	-- Ziadan <Domanaar of Hate>
 				["coord"] = { 34.8, 80.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["races"] = HORDE_ONLY,
-				["groups"] = { i(264192) },	-- Vidious' Stolen Battleplans (QI!)
+				["qi"] = 264192,	-- Vidious' Stolen Battleplans (QI!)
 			}),
 			q(93999, {	-- Void Post Control [A]
 				["qg"] = 257130,	-- Vidious <Domanaar of Grief>
@@ -1611,11 +1602,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["sourceQuests"] = { ??? },	-- ???
 				["provider"] = { "n", 243907 },	-- Decimus
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
-				["groups"] = {
-					--spell(1276894),	-- Transmute Elemental Voidcore
-					--spell(1277384),	-- The Voidforge
-					i(265695),	-- Elementary Voidcore Shard (QI!)
-				},
+				["qi"] = 265695,	-- Elementary Voidcore Shard (QI!)
 			}),
 			q(94625, {	-- An Elementary Voidcore
 				["sourceQuests"] = { 94623 },	-- Building the Voidforge
@@ -1625,10 +1612,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
 				["repeatable"] = true,
-				["groups"] = {
-					--spell(1276894),	-- Transmute Elemental Voidcore
-					i(265695),	-- Elementary Voidcore Shard (QI!)
-				},
+				["qi"] = 265695,	-- Elementary Voidcore Shard (QI!)
 			}),
 			q(94675, {	-- Voidforge Reforged
 				["sourceQuests"] = { 94625 },	-- An Elementary Voidcore (TODO: unsure if weekly is good questID as source)
@@ -1641,7 +1625,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["provider"] = { "n", 243907 },	-- Decimus
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
 				["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
-				["groups"] = { i(269668) },	-- Hungering Oblivium (QI!)
+				["qi"] = 269668,	-- Hungering Oblivium (QI!)
 			}),
 			q(95373, {	-- A Nebulous Endeavour
 				["sourceQuests"] = { 94675 },	-- Voidforge Reforged
@@ -1677,7 +1661,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
 				["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
 				["isWeekly"] = true,
-				["groups"] = { i(269668) },	-- Hungering Oblivium (QI!)
+				["qi"] = 269668,	-- Hungering Oblivium (QI!)
 			}),
 			q(95271, {	-- The Ascendant Nilhammer
 				["provider"] = { "n", 243907 },	-- Decimus
