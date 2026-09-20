@@ -736,6 +736,7 @@ HeaderAssignments = {
 	["World Bosses"] = -61,
 	["World Drops"] = -698,
 	["World Events"] = -734,
+	["World of Warcraft: Forever"] = -797,
 	["World of Warcraft: Forever Collector's Edition"] = -794,
 	["World PvP"] = -488,
 	["World Quests"] = -62,
@@ -776,4 +777,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -797
+NextHeaderID = -798

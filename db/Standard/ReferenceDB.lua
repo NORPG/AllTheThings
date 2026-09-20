@@ -76,6 +76,7 @@ _.RaceDB=
 		["Alliance"] = 86,
 		["Horde"] = 91
 	},
+	["High Order Skyborne"] = 95,
 	["Highmountain Tauren"] = 28,
 	["HighmountainTauren"] = 28,
 	["Human"] = 1,
@@ -295,6 +296,14 @@ _.RaceDB=
 				}
 			},
 			["icon"] = 7448213
+		},
+		[95] = {
+			["faction"] = 1,
+			["icon"] = 7749892
+		},
+		[96] = {
+			["faction"] = 2,
+			["icon"] = 7813745
 		}
 	},
 	["Kul Tiran"] = 32,
@@ -322,6 +331,7 @@ _.RaceDB=
 	["Void Elf"] = 29,
 	["VoidElf"] = 29,
 	["Vulpera"] = 35,
+	["Windshaper Skyborne"] = 96,
 	["Worgen"] = 22,
 	["Zandalari Troll"] = 31,
 	["ZandalariTroll"] = 31

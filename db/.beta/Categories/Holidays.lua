@@ -5215,7 +5215,7 @@ i(128314,{awp=60200,e=14,f=55,spellID=189387}),
 i(128315,{awp=60200,e=14,f=55,spellID=189389}),
 mnt(191314,{e=14,itemID=128671,lvl=10})}})}}),
 n(13435,{awp=20300,coords={
-[84]={{63,70.6}}},e=14,g={
+[84]={{62.8,70.2}}},e=14,g={
 r(44958,{b=1,e=14,itemID=34319,requireSkill=197,skillID=2540})}}),
 n(13429,{awp=20300,coords={
 [90]={{68.4,39.8}}},e=14,g={
@@ -7696,7 +7696,7 @@ q(8984,{coords={
 q(9026,{coords={
 [84]={{54.6,65.6}}},e=9,isYearly=1,qgs={16105},r=2,rwp=30300,sourceQuests={9025},u=2}),
 q(9027,{coords={
-[84]={{52.8,65.4}}},e=9,isYearly=1,qgs={6740},r=2,rwp=30300,sourceQuests={9026},u=2}),
+[84]={{60.6,75}}},e=9,isYearly=1,qgs={6740},r=2,rwp=30300,sourceQuests={9026},u=2}),
 q(8982,{coords={
 [90]={{66.8,44.4}}},e=9,isYearly=1,qgs={16108},r=1,rwp=30300,sourceQuests={8980},u=2}),
 q(8983,{coords={
@@ -9561,7 +9561,7 @@ s(16406,35279,{b=1,e=11,f=9}),
 s(16407,35280,{b=1,e=11,f=9}),
 crit(5270,{achID=263,awp=30002,e=11,id=3})}}),
 q(9332,{coords={
-[89]={{64.1,46.7}}},e=11,isYearly=1,providers={{"i",23184}},r=1,g={
+[89]={{64.1,46.7}}},e=11,isYearly=1,providers={{"o",181334}},qis={23184},r=1,g={
 i(23247,{b=1,e=11,f=106,spellID=28806}),
 i(23211,{b=1,e=11,f=55,spellID=29334}),
 i(23326,{b=1,e=11,f=55,spellID=29333}),
@@ -9570,7 +9570,7 @@ i(23435,{b=1,e=11,f=55,spellID=29335}),
 i(23246,{b=1,e=11,f=55,spellID=47175}),
 i(34684,{b=1,e=11,f=106,spellID=45417})}}),
 q(9331,{coords={
-[87]={{65.2,24.7}}},e=11,isYearly=1,providers={{"i",23183}},r=1,g={
+[87]={{65.2,24.7}}},e=11,isYearly=1,providers={{"o",181333}},qis={23183},r=1,g={
 i(23247,{b=1,e=11,f=106,spellID=28806}),
 i(23211,{b=1,e=11,f=55,spellID=29334}),
 i(23326,{b=1,e=11,f=55,spellID=29333}),
@@ -9579,7 +9579,7 @@ i(23435,{b=1,e=11,f=55,spellID=29335}),
 i(23246,{b=1,e=11,f=55,spellID=47175}),
 i(34684,{b=1,e=11,f=106,spellID=45417})}}),
 q(9324,{coords={
-[85]={{46.5,37.6}}},e=11,isYearly=1,providers={{"i",23179}},r=2,g={
+[85]={{46.5,37.6}}},e=11,isYearly=1,providers={{"o",181336}},qis={23179},r=2,g={
 i(23247,{b=1,e=11,f=106,spellID=28806}),
 i(23211,{b=1,e=11,f=55,spellID=29334}),
 i(23326,{b=1,e=11,f=55,spellID=29333}),
@@ -9588,7 +9588,7 @@ i(23435,{b=1,e=11,f=55,spellID=29335}),
 i(23246,{b=1,e=11,f=55,spellID=47175}),
 i(34684,{b=1,e=11,f=106,spellID=45417})}}),
 q(11935,{awp=20003,coords={
-[110]={{69.7,42.7}}},e=11,isYearly=1,providers={{"i",35568}},r=2,g={
+[110]={{69.7,42.7}}},e=11,isYearly=1,providers={{"o",188129}},qis={35568},r=2,g={
 i(23247,{b=1,e=11,f=106,spellID=28806}),
 i(23211,{b=1,e=11,f=55,spellID=29334}),
 i(23326,{b=1,e=11,f=55,spellID=29333}),
@@ -9597,7 +9597,7 @@ i(23435,{b=1,e=11,f=55,spellID=29335}),
 i(23246,{b=1,e=11,f=55,spellID=47175}),
 i(34684,{b=1,e=11,f=106,spellID=45417})}}),
 q(9330,{coords={
-[84]={{49.8,72.9}}},e=11,isYearly=1,providers={{"i",23182}},r=1,g={
+[84]={{49.8,72.9}}},e=11,isYearly=1,providers={{"o",181332}},qis={23182},r=1,g={
 i(23247,{b=1,e=11,f=106,spellID=28806}),
 i(23211,{b=1,e=11,f=55,spellID=29334}),
 i(23326,{b=1,e=11,f=55,spellID=29333}),
@@ -9606,7 +9606,7 @@ i(23435,{b=1,e=11,f=55,spellID=29335}),
 i(23246,{b=1,e=11,f=55,spellID=47175}),
 i(34684,{b=1,e=11,f=106,spellID=45417})}}),
 q(11933,{awp=20003,coords={
-[103]={{40.8,26.3}}},e=11,isYearly=1,providers={{"i",35569}},r=1,g={
+[103]={{40.8,26.3}}},e=11,isYearly=1,providers={{"o",188128}},qis={35569},r=1,g={
 i(23247,{b=1,e=11,f=106,spellID=28806}),
 i(23211,{b=1,e=11,f=55,spellID=29334}),
 i(23326,{b=1,e=11,f=55,spellID=29333}),
@@ -9615,7 +9615,7 @@ i(23435,{b=1,e=11,f=55,spellID=29335}),
 i(23246,{b=1,e=11,f=55,spellID=47175}),
 i(34684,{b=1,e=11,f=106,spellID=45417})}}),
 q(9326,{coords={
-[90]={{68.7,8.5}}},e=11,isYearly=1,providers={{"i",23181}},r=2,g={
+[90]={{68.7,8.5}}},e=11,isYearly=1,providers={{"o",181335}},qis={23181},r=2,g={
 i(23247,{b=1,e=11,f=106,spellID=28806}),
 i(23211,{b=1,e=11,f=55,spellID=29334}),
 i(23326,{b=1,e=11,f=55,spellID=29333}),
@@ -9624,7 +9624,7 @@ i(23435,{b=1,e=11,f=55,spellID=29335}),
 i(23246,{b=1,e=11,f=55,spellID=47175}),
 i(34684,{b=1,e=11,f=106,spellID=45417})}}),
 q(9325,{coords={
-[88]={{21.9,27.3}}},e=11,isYearly=1,providers={{"i",23180}},r=2,g={
+[88]={{21.9,27.3}}},e=11,isYearly=1,providers={{"o",181337}},qis={23180},r=2,g={
 i(23247,{b=1,e=11,f=106,spellID=28806}),
 i(23211,{b=1,e=11,f=55,spellID=29334}),
 i(23326,{b=1,e=11,f=55,spellID=29333}),
@@ -11316,7 +11316,7 @@ ach(3457,{awp=30002,e=21}),
 i(116392,{awp=60002,e=21,f=55,spellID=171439}),
 s(200148,217373,{awp=110200,cost=10000000,e=21,f=2,loc=40}),
 mm(208858,{awp=100107,b=1,cost=500000000,e=21,questID=77875}),
-i(138400,{awp=70003,b=1,e=21,f=55,spellID=215757})}}),
+i(138400,{awp=70003,b=1,description="Harlan Sweete can be found in Freehold on Tiragarde Sound, Kul Tiras.",e=21,f=55,spellID=215757})}}),
 n(122396,{awp=70205,coords={
 [210]={{39.6,84.2}}},e=21,g={
 toy(150547,{b=1,description="To purchase this toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",e=21})}})}})}}),
@@ -11332,10 +11332,10 @@ h(-45,{e=6,g={
 q(8194,{coords={
 [210]={{41.4,73}}},cost={{"i",19807,5}},e=6,qgs={15078},repeatable=1,requireSkill=356}),
 q(8229,{coords={
-[85]={{53.25,70.65}}},e=6,qgs={15116},r=1,repeatable=1,requireSkill=356,g={
+[87]={{28.2,74.4}}},e=6,qgs={15119},r=2,repeatable=1,requireSkill=356,g={
 i(19978,{e=6,requireSkill=356})}}),
 q(8228,{coords={
-[84]={{54.8,63.1}}},e=6,qgs={15119},r=2,repeatable=1,requireSkill=356,g={
+[85]={{52.4,73}}},e=6,qgs={15116},r=1,repeatable=1,requireSkill=356,g={
 i(19978,{e=6,requireSkill=356})}}),
 q(8193,{coords={
 [210]={{41.4,73}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={

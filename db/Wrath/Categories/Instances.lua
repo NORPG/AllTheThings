@@ -4872,7 +4872,7 @@ q(8259,{altQuests={8258},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=14,g={
 s(130748,20134,{b=1,f=6,loc=40,u=14})}}),
 q(7666,{c={2},coords={
-[1453]={{37.6,32.6}}},lvl=60,qgs={928},r=2,repeatable=1,rwp=40003,sourceQuests={7647},g={
+[1453]={{48.6,50}}},lvl=60,qgs={928},r=2,repeatable=1,rwp=40003,sourceQuests={7647},g={
 i(18746)}}),
 q(7669,{c={7},coords={
 [1454]={{38.7,35.9}}},lvl=60,qgs={13417},r=1,repeatable=1,rwp=40003,sourceQuests={8258},g={
@@ -4929,7 +4929,7 @@ q(5515,{coords={
 [1422]={{70.2,73.7}}},lvl=55,qgs={11216},rwp=40003,sourceQuests={5382},g={
 qo(1,{providers={{"i",13725}},rwp=50004})}}),
 q(7647,{c={2},coords={
-[1453]={{37.6,32.6}}},lvl=60,providers={{"i",18804}},qgs={928},r=2,rwp=40003,sourceQuests={7646},g={
+[1453]={{48.6,50}}},lvl=60,providers={{"i",18804}},qgs={928},r=2,rwp=40003,sourceQuests={7646},g={
 qo(1,{cost={{"i",18749,1}},crs={14516,14568},providers={{"i",18799}}}),
 qo(2,{providers={{"i",18792}}}),
 mnt(23214,{c={2},lvl=60,r=2}),

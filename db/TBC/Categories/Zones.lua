@@ -10000,7 +10000,7 @@ q(2997,{c={2},coords={
 q(2999,{c={2},coords={
 [1455]={{23.4,6.2}}},isBreadcrumb=1,lvl=12,nextQuests={1645},qgs={5149},races={3},rwp=40003}),
 q(3000,{c={2},coords={
-[1453]={{37.2,33}}},isBreadcrumb=1,lvl=12,nextQuests={1645},qgs={928},races={3},rwp=40003}),
+[1453]={{37.6,32.6}}},isBreadcrumb=1,lvl=12,nextQuests={1645},qgs={928},races={3},rwp=40003}),
 q(1645,{altQuests={1646},c={2},coords={
 [1455]={{27.4,12}}},lvl=12,qgs={6179},races={3},rwp=40003,sourceQuests={2997,2999,3000},g={
 i(6916,{b=1,lvl=12})}}),

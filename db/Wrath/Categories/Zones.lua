@@ -9098,7 +9098,7 @@ q(4736,{c={9},coords={
 q(4737,{c={9},coords={
 [1454]={{48.4,45.6}}},isBreadcrumb=1,lvl=31,nextQuests={1796},qgs={3326},r=1,rwp=40003}),
 q(4738,{c={9},coords={
-[1453]={{25.4,78.2}}},isBreadcrumb=1,lvl=31,nextQuests={1796},qgs={461},r=2,rwp=40003}),
+[1453]={{39.6,84.6}}},isBreadcrumb=1,lvl=31,nextQuests={1796},qgs={461},r=2,rwp=40003}),
 q(4739,{c={9},coords={
 [1458]={{86,15.6}}},isBreadcrumb=1,lvl=31,nextQuests={1796},qgs={4563},r=1,rwp=40003}),
 q(858,{coords={
@@ -9126,7 +9126,7 @@ q(4967,{c={9},coords={
 q(4965,{c={9},coords={
 [1455]={{50.2,6}}},isBreadcrumb=1,lvl=35,nextQuests={1799},qgs={5172},r=2,rwp=40003}),
 q(4968,{c={9},coords={
-[1453]={{25.4,78.2}}},isBreadcrumb=1,lvl=35,nextQuests={1799},qgs={461},r=2,rwp=40003}),
+[1453]={{39.6,84.6}}},isBreadcrumb=1,lvl=35,nextQuests={1799},qgs={461},r=2,rwp=40003}),
 q(4969,{c={9},coords={
 [1458]={{86,15.6}}},isBreadcrumb=1,lvl=35,nextQuests={1799},qgs={4563},r=1,rwp=40003}),
 q(850,{coords={
@@ -9319,7 +9319,7 @@ q(4487,{c={9},coords={
 q(3631,{c={9},coords={
 [1454]={{48.4,45.6}}},isBreadcrumb=1,lvl=40,nextQuests={4490},qgs={3326},r=1,rwp=40003}),
 q(4488,{c={9},coords={
-[1453]={{25.4,78.2}}},isBreadcrumb=1,lvl=40,nextQuests={4490},qgs={461},r=2,rwp=40003}),
+[1453]={{39.6,84.6}}},isBreadcrumb=1,lvl=40,nextQuests={4490},qgs={461},r=2,rwp=40003}),
 q(4489,{c={9},coords={
 [1458]={{86,15.6}}},isBreadcrumb=1,lvl=40,nextQuests={4490},qgs={4563},r=1,rwp=40003}),
 q(4490,{c={9},coords={
@@ -10795,7 +10795,7 @@ q(2997,{c={2},coords={
 q(2999,{c={2},coords={
 [1455]={{23.4,6.2}}},isBreadcrumb=1,lvl=12,nextQuests={1645},qgs={5149},races={3},rwp=40003}),
 q(3000,{c={2},coords={
-[1453]={{37.2,33}}},isBreadcrumb=1,lvl=12,nextQuests={1645},qgs={928},races={3},rwp=40003}),
+[1453]={{48.6,50}}},isBreadcrumb=1,lvl=12,nextQuests={1645},qgs={928},races={3},rwp=40003}),
 q(1645,{altQuests={1646},c={2},coords={
 [1455]={{27.4,12}}},lvl=12,qgs={6179},races={3},rwp=40003,sourceQuests={2997,2999,3000},g={
 i(6916,{b=1,lvl=12})}}),
@@ -13309,7 +13309,7 @@ crit(3875,{achID=1257,id=1,maps={1416,1417,1434,1443,1445},providers={{"o",18068
 h(-45,{
 q(8233,_.ResolveQuestData({aqd=
 {coords={
-[1453]={{74.6,52.8}},
+[1453]={{77.2,65.2}},
 [1455]={{51.6,14.6}},
 [1457]={{36.8,21.8}}},qgs={918,4163,5165}},c={4},hqd=
 {coords={
@@ -13647,7 +13647,7 @@ q(663,{coords={
 q(647,{coords={
 [1417]={{43.2,92.6}}},lvl=28,maps={1424},providers={{"i",4441}},qgs={2696},r=2,rwp=40003}),
 q(690,{coords={
-[1453]={{39.8,81.2}}},isBreadcrumb=1,lvl=30,nextQuests={691},qgs={2708},r=2,rwp=40003}),
+[1453]={{50.6,87.6}}},isBreadcrumb=1,lvl=30,nextQuests={691},qgs={2708},r=2,rwp=40003}),
 q(697,{coords={
 [1417]={{46.6,47}}},lvl=30,maps={1453},providers={{"i",4533}},qgs={2789},r=2,rwp=40003,sourceQuests={696},g={
 s(120074,4975,{b=1,f=8}),
@@ -14753,7 +14753,7 @@ q(6074,{c={3},coords={
 q(6075,{c={3},coords={
 [1426]={{30.6,45.4}}},isBreadcrumb=1,lvl=10,nextQuests={6064},qgs={11807},races={3},rwp=40003}),
 q(6076,{c={3},coords={
-[1453]={{61.6,15.4}}},isBreadcrumb=1,lvl=10,nextQuests={6064},qgs={5515},races={3},rwp=40003}),
+[1453]={{67.6,36.4}}},isBreadcrumb=1,lvl=10,nextQuests={6064},qgs={5515},races={3},rwp=40003}),
 q(419,{coords={
 [1426]={{83.8,39.2}}},lvl=8,qgs={1960},r=2,rwp=40003,g={
 s(118496,3151,{b=1,f=6,loc=42})}}),
@@ -14769,7 +14769,7 @@ n(1977)}}),
 q(291,{coords={
 [1426]={{46.6,53.8}}},providers={{"i",2628}},qgs={1252},r=2,rwp=40003,sourceQuests={287}}),
 q(1653,{c={2},coords={
-[1453]={{39.8,30.8}}},lvl=20,qgs={6171},r=2,rwp=40003,sourceQuests={1652}}),
+[1453]={{50.5,47.5}}},lvl=20,qgs={6171},r=2,rwp=40003,sourceQuests={1652}}),
 q(1654,{c={2},coords={
 [1426]={{52.6,36.8}}},lvl=20,maps={221,291,310,1432,1439},providers={{"i",6996}},qgs={6181},r=2,rwp=40003,sourceQuests={1653},g={
 qo(1,{crs={641},providers={{"i",6994}}}),
@@ -21300,7 +21300,7 @@ q(5023,{coords={
 q(5210,{coords={
 [1422]={{39.4,66.8}}},lvl=50,providers={{"i",13202}},qgs={10667},rwp=40003,sourceQuests={5154}}),
 q(8415,{c={2},coords={
-[1453]={{37.6,32.6}},
+[1453]={{48.6,50}},
 [1455]={{23.6,6.6}}},isBreadcrumb=1,lvl=50,nextQuests={8414},qgs={928,5149},r=2,rwp=40003,u=14}),
 q(5521,{altQuests={5517,5524},coords={
 [1422]={{42.8,83.8}}},cost={{"i",12844,25}},lvl=55,minReputation={529,42000},qgs={10857},r=2,rwp=40003,sourceQuests={5507},g={

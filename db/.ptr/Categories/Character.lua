@@ -8457,7 +8457,7 @@ s(301184,257525,{awp=120001,b=1,f=6,loc=42,lvl=10}),
 s(25756,52540,{awp=40003,f=6,loc=47,rwp=90105,u=2}),
 s(25767,52552,{awp=40003,f=6,loc=47}),
 s(49,153,{f=5,loc=46,rwp=40003,u=2}),
-s(2265,6135,{awp=30002,f=5,loc=46,rwp=40003,u=2}),
+s(2265,6135,{f=5,loc=46,rwp=40003,u=2}),
 s(25755,52539,{awp=40003,f=6,loc=46,rwp=90105,u=2}),
 s(25753,52535,{awp=40003,f=6,loc=46,rwp=90105,u=2}),
 s(25760,52545,{awp=40003,f=6,loc=46,rwp=90105,u=2}),
@@ -9444,7 +9444,7 @@ q(90911,_.ResolveQuestData({aqd=
 [2451]={{19.5,61.6}}},qgs={244714},sourceQuests={90897}},hqd=
 {coords={
 [2451]={{69.2,34.6}}},qgs={244715},sourceQuests={90898}},lvl=10,r=1,repeatable=1}))})}})}}),
-h(-512,{
+h(-512,{awp=110000,g={
 h(-12,{
 ach(19470,{awp=110002}),
 ach(19460,{awp=110002}),
@@ -9458,7 +9458,7 @@ ach(42329,{awp=120001}),
 ach(42330,{awp=120001}),
 ach(42331,{awp=120001}),
 ach(42332,{awp=120001})}),
-h(-45,{awp=110000,g={
+h(-45,{
 q(83492,{lvl=20,g={
 i(228623,{b=1})}}),
 q(83493,{coords={
@@ -9470,9 +9470,9 @@ q(83495,{coords={
 [71]={{52.5,26.9}}},lvl=20,qgs={226658},sourceQuests={83493,83494}}),
 q(83496,{coords={
 [71]={{48.5,31.6}}},lvl=20,qgs={226658},sourceQuests={83495},g={
-sp(465226)}})}}),
-h(-513,{awp=110100,g={
-campsite(1,{description="Granted to all warbands as default."}),
-campsite(4,{description="Granted to all warbands."}),
-campsite(29,{description="Granted to all warbands."})}})})}})
+sp(465226)}})}),
+h(-513,{
+campsite(1,{awp=110100,description="Granted to all warbands as default."}),
+campsite(4,{awp=110100,description="Granted to all warbands."}),
+campsite(29,{awp=110100,description="Granted to all warbands."})})}})}})
 end)

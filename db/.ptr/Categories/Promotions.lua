@@ -294,7 +294,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -599,7 +599,7 @@ crit(34641,{achID=10309,id=2,u=3})}})}}),
 h(-537,{awp=80100,description="These rewards are available to anyone who purchases Warcraft 3: Refogred, Spoils of War Edition.",u=3,g={
 ach(13196,{u=3}),
 mnt(281554,{b=1,itemID=164571,lvl=10,u=3})}}),
-h(-794,{awp=120100,description="These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",u=3,g={
+h(-797,{awp=120100,description="These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",u=3,g={
 h(-522,{u=3,g={
 mnt(1309109,{itemID=280519,u=3}),
 en(271755,{questID=95979,spellID=1289417,tmogSetID=5702,u=3,g={
@@ -631,7 +631,7 @@ s(310901,279177,{f=2,loc=43}),
 s(310902,279178,{f=2,loc=44}),
 s(310903,279179,{f=3})}}),
 mnt(1309376,{itemID=280599,u=3})}}),
-h(-795,{u=3,g={
+h(-795,{rwp=120107,u=3,g={
 de(27076,{itemID=280554,spellID=1309251,u=3}),
 de(27077,{itemID=280556,spellID=1309253,u=3})}})}})}}),
 h(-538,{

@@ -1405,7 +1405,7 @@ i(20031,{b=1,f=55,lvl=23,spellID=24384,u=2})}}),
 q(8238,{coords={
 [224]={{14.5,15.8}}},cost={{"i",19703,1},{"i",19702,1},{"i",19701,1}},qgs={15070},repeatable=1,u=2,g={
 i(19858,{b=1,factionID=270,repeatable=1,spellID=24226,u=2})}}),
-q(8227,{providers={{"i",19973}},requireSkill=356,u=2}),
+q(8227,{maps={70},providers={{"o",180366}},qis={19973},requireSkill=356,u=2}),
 q(8239,{coords={
 [224]={{14.5,15.8}}},cost={{"i",19706,1},{"i",19705,1},{"i",19704,1}},qgs={15070},repeatable=1,u=2,g={
 i(19858,{b=1,factionID=270,repeatable=1,spellID=24226,u=2})}}),
@@ -1607,8 +1607,6 @@ s(7851,19899,{b=1,f=4,loc=46,lvl=25,u=2}),
 s(8053,20260,{b=1,f=6,loc=46,lvl=25,u=2}),
 s(7850,19897,{b=1,f=4,loc=47,lvl=25,u=2}),
 i(19898,{b=1,f=52,lvl=25,u=2})}}),
-o(180366,{description="Fishermen with 300 skill can interact with this to receive the quest item.",requireSkill=356,u=2,g={
-i(19973,{requireSkill=356,u=2})}}),
 n(15114,{cost={{"i",19975,5},{"i",19974,1}},description="You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",sourceQuests={8227},u=2,g={
 ach(560,{awp=30002,rwp=40100,u=2}),
 s(7873,19944,{b=1,f=28,lvl=25,u=2}),
@@ -5683,11 +5681,11 @@ q(8259,{altQuests={8258},awp=10700,c={7},coords={
 [85]={{38.7,35.9}}},qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=2,g={
 s(7977,20134,{b=1,f=6,loc=40,modID=1,u=2})}}),
 q(7666,{c={2},coords={
-[84]={{37.6,32.6}}},qgs={928},r=2,repeatable=1,rwp=40003,sourceQuests={7647},u=2,g={
-i(18746,{spellID=23204,u=2})}}),
+[84]={{48.6,50}}},qgs={928},r=2,repeatable=1,sourceQuests={7647},g={
+i(18746,{spellID=23204})}}),
 q(7669,{c={7},coords={
-[85]={{38.7,35.9}}},qgs={13417},r=1,repeatable=1,rwp=40003,sourceQuests={8258},u=2,g={
-i(18746,{spellID=23204,u=2})}}),
+[85]={{38.7,35.9}}},qgs={13417},r=1,repeatable=1,sourceQuests={8258},g={
+i(18746,{spellID=23204})}}),
 q(27140,{awp=40003,crs={10432,10433},qgs={45110},rwp=50004,u=2}),
 q(5803,{coords={
 [22]={{42.7,83.8}}},crs={1852},qgs={11056},qis={14610},r=2,rwp=40003,sourceQuests={5801},u=2,g={
@@ -5744,7 +5742,7 @@ q(27147,{awp=40003,crs={10506},qgs={45107},rwp=50004,u=2}),
 q(5515,{coords={
 [22]={{70.2,73.7}}},qgs={11216},qis={13725},rwp=40003,sourceQuests={5382},u=2}),
 q(7647,{c={2},coords={
-[84]={{37.6,32.6}}},cost={{"i",18749,1}},crs={14516,14568},qgs={928},qis={18792,18799,18804},r=2,rwp=40003,sourceQuests={7646},u=2,g={
+[84]={{48.6,50}}},cost={{"i",18749,1}},crs={14516,14568},qgs={928},qis={18792,18799,18804},r=2,rwp=40003,sourceQuests={7646},u=2,g={
 mnt(23214,{c={2},r=2,u=2}),
 crit(8906,{achID=2358,awp=30100,id=2,u=2})}}),
 q(5522,{coords={

@@ -2017,8 +2017,8 @@ localize(L.HEADER_NAMES, {
 	[-789] = "Kobold Endeavor",
 	[-792] = "Upgrade: Hero",
 	[-793] = "Upgrade: Myth",
-	[-794] = "World of Warcraft: Forever Collector's Edition",
-	[-795] = "World of Warcraft: Forever Collection",
+	[-795] = "Warcraft Forever Collection",
+	[-797] = "World of Warcraft: Forever",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2153,8 +2153,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-783] = "The 2025 bundle was available from 16 July to 15 October 2025",
 	[-784] = "The 2025 bundle was available from 16 July to 15 October 2025",
 	[-785] = "The 2026 bundle was available from 6 August to 31 October 2026.\n\nPlayers who already owned a reward from the bundle can exchange it for alternate rewards or Trader's Tender.",
-	[-794] = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
-	[-795] = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
+	[-795] = "These rewards are available to anyone who purchased Warcraft Forever Collection or physical equivalents.",
+	[-797] = "These rewards are available to anyone who purchased a World of Warcraft: Forever upgrade.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2800,8 +2800,8 @@ localize(L.HEADER_ICONS, {
 	[-789] = 2061718,
 	[-792] = _.asset("interface_upgrade"),
 	[-793] = _.asset("interface_upgrade"),
-	[-794] = 1120721,
 	[-795] = 1120721,
+	[-797] = 1120721,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -3017,7 +3017,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=20,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=20,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=27,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=27,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=10,["monthDay"]=4,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=10,["monthDay"]=4,["weekday"]=1,["year"]=2026}),
@@ -3069,7 +3068,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=29,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=29,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=5,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=5,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=12,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=12,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=12,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=12,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=19,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=19,["weekday"]=1,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -6269,6 +6269,12 @@ local ObjectNames = {
 	[181281] = "Mana Thistle",
 	[181283] = "Emitter Spare Part",
 	[181287] = "Frozen Rune",
+	[181332] = "Flame of Stormwind",
+	[181333] = "Flame of Ironforge",
+	[181334] = "Flame of Darnassus",
+	[181335] = "Flame of the Undercity",
+	[181336] = "Flame of Orgrimmar",
+	[181337] = "Flame of Thunder Bluff",
 	[181366] = "Four Horsemen Chest",
 	[181372] = "Hellfire Spineleaf",
 	[181385] = "Ravager Egg",
@@ -6653,6 +6659,8 @@ local ObjectNames = {
 	[188104] = "Cart Release",
 	[188113] = "Frostberry Bush",
 	[188120] = "Fields, Factories and Workshops",
+	[188128] = "Flame of the Exodar",
+	[188129] = "Flame of Silvermoon",
 	[188131] = "Wine Crate",
 	[188133] = "Blue Dragon Egg",
 	[188140] = "Crystallized Mana",
@@ -14200,6 +14208,12 @@ local ObjectIcons = {
 	[181147] = 134939,
 	[181150] = 133743,
 	[181153] = 134939,
+	[181332] = 135813,
+	[181333] = 135265,
+	[181334] = 135265,
+	[181335] = 135265,
+	[181336] = 135265,
+	[181337] = 135265,
 	[181597] = 135867,
 	[181598] = 135867,
 	[181629] = 135160,
@@ -14264,6 +14278,8 @@ local ObjectIcons = {
 	[187851] = 133751,
 	[187905] = 651736,
 	[188085] = 134058,
+	[188128] = 135265,
+	[188129] = 135265,
 	[188164] = 132761,
 	[188365] = 133250,
 	[188418] = 134939,
@@ -89634,6 +89650,8 @@ localize(L.HEADER_NAMES, {
 	[-787] = "马鲁凯文化",
 	[-788] = "始祖龟文化",
 	[-789] = "狗头人文化",
+	[-795] = "魔兽無限收藏",
+	[-797] = "魔兽世界：无限",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -89767,6 +89785,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-783] = "2025年纪念包可在2025年7月16日至10月15日使用",
 	[-784] = "2025年纪念包可在2025年7月16日至10月15日使用",
 	[-785] = "2026年纪念包可在2026年8月6日至10月31日使用。\n\n已经拥有包内奖励的玩家可以将其兑换为其他奖励或商贩的凭证。",
+	[-795] = "这些奖励是提供给购买了魔兽無限收藏或其实体等价物的玩家的。",
+	[-797] = "这些奖励是提供给购买了魔兽世界：无限升级包的玩家的。",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
@@ -90488,6 +90508,12 @@ localize(ObjectNames, {
 	[181281] = "法力蓟",
 	[181283] = "发射器备用零件",
 	[181287] = "冰冻符文",
+	[181332] = "暴风城烈焰",
+	[181333] = "铁炉堡烈焰",
+	[181334] = "达纳苏斯烈焰",
+	[181335] = "幽暗城烈焰",
+	[181336] = "奥格瑞玛烈焰",
+	[181337] = "雷霆崖烈焰",
 	[181366] = "四骑士之箱",
 	[181372] = "地狱火刺叶",
 	[181385] = "掠食者的卵",
@@ -97947,6 +97973,8 @@ localize(L.HEADER_NAMES, {
 	[-758] = "不散暗影",
 	[-759] = "攤牌",
 	[-770] = "詛咒狂湧",
+	[-795] = "魔獸永恆收藏",
+	[-797] = "魔獸世界：永恆",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成探究時獎勵的東西。",
@@ -97980,6 +98008,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-713] = "包含只能由最高等級角色獲得的物品。",
 	[-721] = "包含在當前區域可取得，但來源直接來自另一個區域的內容。",
 	[-722] = "這些獎勵是提供給購買了暗黑破壞神II：獄火重生 ─ 術士軍臨的玩家的。",
+	[-795] = "這些獎勵是提供給購買了魔獸永恆收藏或其實體等價物的玩家的。",
+	[-797] = "這些獎勵是提供給購買了魔獸世界：永恆升级包的玩家的。",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",
