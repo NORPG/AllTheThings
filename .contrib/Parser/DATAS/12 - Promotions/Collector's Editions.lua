@@ -429,70 +429,6 @@ WORLD_OF_WARCRAFT_FOREVER_COLLECTORS = createHeader({
 	},
 });
 -- NOTE: Released on September 12, 2026. (BlizzCon 2026)
--- NOTE: No longer available on the store since ???.
-SKYBORNE_HEROIC_PACK = createHeader({
-	readable = "World of Warcraft: Forever - Skyborne Heroic Pack",
-	icon = 1120721,
-	text = {
-		en = "Skyborne Heroic Pack",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		cn = "魔兽世界：无限 - 天裔英雄礼包",
-		tw = "魔獸世界：永恆 - 天裔精靈英雄版組合包",
-	},
-	description = {
-		en = "These rewards are available to anyone who purchased a World of Warcraft: Forever - Skyborne Heroic Pack or higher.",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		cn = "这些奖励是提供给购买了魔兽世界：无限 - 天裔英雄礼包或更高版本的玩家的。",
-		tw = "這些獎勵是提供給購買了魔獸世界：永恆 - 天裔精靈英雄版組合包或更高版本的玩家的。",
-	},
-});
--- NOTE: Released on September 12, 2026. (BlizzCon 2026)
--- NOTE: No longer available on the store since ???.
-SKYBORNE_EPIC_PACK = createHeader({
-	readable = "World of Warcraft: Forever - Skyborne Epic Pack",
-	icon = 1120721,
-	text = {
-		en = "Skyborne Epic Pack",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		cn = "魔兽世界：无限 - 天裔史诗礼包",
-		tw = "魔獸世界：永恆 - 天裔精靈史詩版組合包",
-	},
-	description = {
-		en = "These rewards are available to anyone who purchased a World of Warcraft: Forever - Skyborne Epic Pack or higher.",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		cn = "这些奖励是提供给购买了魔兽世界：无限 - 天裔史诗礼包或更高版本的玩家的。",
-		tw = "這些獎勵是提供給購買了魔獸世界：永恆 - 天裔精靈史诗版組合包或更高版本的玩家的。",
-	},
-});
--- NOTE: Released on September 12, 2026. (BlizzCon 2026)
 -- NOTE: No longer available on the store since January 11, 2027.
 WARCRAFT_FOREVER_COLLECTION = createHeader({
 	readable = "Warcraft Forever Collection",
@@ -1536,7 +1472,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(WORLD_OF_WARCRAFT_FOREVER_COLLECTORS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 		["description"] = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
 		["groups"] = {
-			n(SKYBORNE_HEROIC_PACK, {
+			n(HEROIC_EDITION, {
 				--- FOREVER ---
 				-- #if FOREVER
 				--TODO: Skyborne Race
@@ -1553,7 +1489,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(268337),	-- Windwell (DECOR!)
 				i(268340),	-- Zephras Drapery (DECOR!)
 			}),
-			n(SKYBORNE_EPIC_PACK, {
+			n(EPIC_PACK, {
 				--- FOREVER ---
 				-- #if FOREVER
 				i(270272),	-- Lordaeron Forever (COSMETIC!)
