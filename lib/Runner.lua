@@ -8,8 +8,10 @@ local _, app = ...;
 -- Capability to add to and run a sequence of Functions with a specific allotment being processed individually each frame
 
 -- Global locals
+--- @type function,function,function,function,function,function,function,function,function,function,function,
 local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer_After,GetTimePreciseSec =
 	  math.max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer.After,GetTimePreciseSec
+--- @type function,function,function,function,
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 

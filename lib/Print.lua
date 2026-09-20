@@ -1,8 +1,9 @@
 -- Chat and Print functionality
 local appName, app = ...;
 
-local print, tostring, ipairs, pairs, type,math_floor
-	= print, tostring, ipairs, pairs, type,math.floor
+--- @type function,function,function,function,function,function,function,
+local print, tostring, ipairs, pairs, type,math_floor,GetTimePreciseSec
+	= print, tostring, ipairs, pairs, type,math.floor,GetTimePreciseSec
 local issecretvalue = app.WOWAPI.issecretvalue
 
 app.print = function(...)
@@ -29,7 +30,6 @@ app.PrintMemoryUsage = function(...)
 	app.print(... or "Memory", GetAddOnMemoryUsage(appName));
 end
 -- Consolidated debug-only print with preceding precise timestamp
-local GetTimePreciseSec = GetTimePreciseSec;
 local DEBUG_PRINT_LAST;
 app.PrintDebug = function(...)
 	DEBUG_PRINT_LAST = GetTimePreciseSec();
@@ -118,8 +118,5 @@ app.PrintTable = function(t,depth,preface)
 	end
 end
 app.PrintError = function(err, source, co)
-	local errorID = app.UniqueCounter.errorID
-	local title, popupID = "Stack Trace #" .. errorID, "runner-error-" .. errorID;
-	app:SetupReportDialog(popupID, title, {"```","Source:",source,"Error:",err,"Stack:",co and debugstack(co) or debugstack(),"```"});
-	app.print(app:Linkify("ERROR "..title, app.Colors.ChatLinkError, "dialog:" .. popupID));
+	app.report("Stack Trace #"..app.UniqueCounter.errorID,"Source:",source,"Error:",err,"Stack:",co and debugstack(co) or debugstack())
 end
