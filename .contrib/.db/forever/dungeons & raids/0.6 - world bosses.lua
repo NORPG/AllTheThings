@@ -1,32 +1,22 @@
--- #if NOT SEASON_OF_DISCOVERY
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-local ESKHANDERS_LEFT_CLAW = i(18202);	-- Eskhandar's Left Claw [Note: For whatever reason, Blizzard moved this weapon to Magmadar after the boss was removed.]
-local MATURE_BLUE_DRAGON_SINEW = i(18704, {	-- Mature Blue Dragon Sinew
-	["classes"] = { HUNTER },
-});
-local THE_EYE_OF_SHADOW = i(18665, {	-- The Eye of Shadow
-	["classes"] = { PRIEST },
-});
-
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
+root(ROOTS.Instances, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
-			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 } }, n(6109, {	-- Azuregos
+			n(6109, {	-- Azuregos
 				["coord"] = { 53.3, 80.4, MAP.AZSHARA },
-				-- #if ANYCLASSIC
-				["modelScale"] = 6.0,
-				-- #endif
 				["isRaid"] = true,
 				["lvl"] = 60,
 				["groups"] = {
-					MATURE_BLUE_DRAGON_SINEW,
+					i(18704, {	-- Mature Blue Dragon Sinew
+						["classes"] = { HUNTER },
+					}),
 					i(19130),	-- Cold Snap
-					ESKHANDERS_LEFT_CLAW,
+					i(18202),	-- Eskhandar's Left Claw
 					i(17070),	-- Fang of the Mystics
 					i(18542),	-- Typhoon
 					i(19132),	-- Crystal Adorned Crown
@@ -36,8 +26,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18545),	-- Leggings of Arcane Supremacy
 					i(19131),	-- Snowblind Shoes
 				},
-			}))),
-			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_1_8_0, REMOVED_4_0_3 } }, n(DRAGONS_OF_NIGHTMARE, {
+			}),
+			n(DRAGONS_OF_NIGHTMARE, {
 				["coords"] = {
 					{ 51.2, 10.9, MAP.FERALAS },
 					{ 63.3, 27.8, MAP.THE_HINTERLANDS },
@@ -84,9 +74,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(14889, {	-- Emeriss
-						-- #if ANYCLASSIC
-						["modelScale"] = 6.0,
-						-- #endif
 						["isRaid"] = true,
 						["lvl"] = 60,
 						["groups"] = {
@@ -98,9 +85,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(14888, {	-- Lethon
-						-- #if ANYCLASSIC
-						["modelScale"] = 6.0,
-						-- #endif
 						["isRaid"] = true,
 						["lvl"] = 60,
 						["groups"] = {
@@ -113,9 +97,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(14890, {	-- Taerar
-						-- #if ANYCLASSIC
-						["modelScale"] = 6.0,
-						-- #endif
 						["isRaid"] = true,
 						["lvl"] = 60,
 						["groups"] = {
@@ -127,9 +108,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(14887, {	-- Ysondre
-						-- #if ANYCLASSIC
-						["modelScale"] = 6.0,
-						-- #endif
 						["isRaid"] = true,
 						["lvl"] = 60,
 						["groups"] = {
@@ -142,15 +120,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 				},
-			}))),
-			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = {  ADDED_1_3_0, REMOVED_2_0_1 } }, n(12397, {	-- Lord Kazzak / Highlord Kruul
+			}),
+			n(12397, {	-- Lord Kazzak / Highlord Kruul
 				["coord"] = { 36.6, 75.8, MAP.BLASTED_LANDS },
-				["modelScale"] = 6.0,
 				["isRaid"] = true,
-				["crs"] = { 18338 },	-- Highlord Kruul
 				["lvl"] = 60,
 				["groups"] = {
-					THE_EYE_OF_SHADOW,
+					i(18665, {	-- The Eye of Shadow
+						["classes"] = { PRIEST },
+					}),
 					i(17113),	-- Amberseal Keeper
 					i(17112),	-- Empyrean Demolisher
 					i(18546),	-- Infernal Headcage
@@ -162,25 +140,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(19133),	-- Fel-Infused Leggings
 					i(18543),	-- Ring of Entropy
 				},
-			}))),
+			}),
 		},
 	}),
-}));
+});
 
-ESKHANDERS_LEFT_CLAW.u = nil;
-ESKHANDERS_LEFT_CLAW.timeline = nil;
-THE_EYE_OF_SHADOW.u = nil;
-MATURE_BLUE_DRAGON_SINEW.u = nil;
--- #if BEFORE CATA
-THE_EYE_OF_SHADOW.timeline = nil;
-MATURE_BLUE_DRAGON_SINEW.timeline = nil;
--- #endif
--- #endif
-
--- #IF ANYCLASSIC
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
+root(ROOTS.HiddenQuestTriggers, {
 	n(WORLD_BOSSES, {
 		q(78650),	-- Kazzak kill
 	}),
-}));
--- #endif
+});
