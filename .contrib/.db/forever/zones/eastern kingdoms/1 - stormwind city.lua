@@ -30,7 +30,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
 					["coord"] = { 55.6, 85.8, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_ALCHEMY,
+					["groups"] = APPRENTICE_JOURNEYMAN_ALCHEMY,
 				}),
 			}),
 			prof(BLACKSMITHING, {
@@ -343,7 +343,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					{ "n", 6090 },	-- Bartleby
 					{ "i", 6781 },	-- Bartleby's Mug
 				},
-				[""] = { 76.8, 52.5, MAP.STORMWIND_CITY },
+				["coord"] = { 76.8, 52.5, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARRIOR },
 				["lvl"] = 10,
