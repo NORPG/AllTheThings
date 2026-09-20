@@ -9,7 +9,7 @@ WARBAND = createHeader({
 	},
 });
 
-root(ROOTS.Character, n(WARBAND, {
+root(ROOTS.Character, n(WARBAND, timelineSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 	-- TWW
 	n(ACHIEVEMENTS, timelineSelf({["timeline"] = { ADDED_11_0_2 }},{
 		ach(19470),	-- One Warband Mentor: The War Within
@@ -79,4 +79,4 @@ root(ROOTS.Character, n(WARBAND, {
 			["description"] = "Granted to all warbands.",
 		}),
 	})),
-}))
+})))
