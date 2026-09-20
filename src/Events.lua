@@ -1,6 +1,7 @@
 
 local _, app = ...;
 
+--- @type function,function,function,function,function,function
 local pairs, setmetatable, print, type, pcall, tinsert
 	= pairs, setmetatable, print, type, pcall, tinsert
 
@@ -118,7 +119,9 @@ app.AddEventHandler("OnReady", function()
 	for event,func in pairs(OnReadyEventRegistrations) do
 		-- app.PrintDebug("RegisterFuncEvent",event,func)
 		-- safely attempt to register the event incase it is not available in a game version
-		pcall(Register, app, event, func);
+		if not pcall(Register, app, event, func) then
+			app.report("Invalid Event Registration",event)
+		end
 	end
 	OnReadyEventRegistrations = nil
 	-- in case future events are registered, they need to directly be registered
@@ -128,7 +131,10 @@ app.AddEventHandler("OnReady", function()
 			return
 		end
 		CheckDuplicateRootEventRegistration(event)
-		app:RegisterFuncEvent(event, func)
+		-- safely attempt to register the event incase it is not available in a game version
+		if not pcall(Register, app, event, func) then
+			app.report("Invalid Event Registration",event)
+		end
 	end
 end)
 

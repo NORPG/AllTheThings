@@ -452,7 +452,7 @@ local TooltipSettingsBase = {
 		["c"] = true,
 		["r"] = true,
 		["u"] = true,
-		
+
 		-- TEMPORARY
 		["achID"] = true,
 		["creatureID"] = true,
@@ -487,9 +487,9 @@ if season > 0 then
 			function(group)
 				return maximumSkillLevel >= (group.learnedAt or 0);
 			end);
-			
-			app.AddEventHandler("OnUpdateModeFilters", function(self)
-				if self:Get("Filter:BySkillLevel") and not self:Get("DebugMode") then
+
+			app.AddEventHandler("OnUpdateModeFilters", function(settings)
+				if settings:Get("Filter:BySkillLevel") and not settings:Get("DebugMode") then
 					filterSet.SkillLevel(true)
 				else
 					filterSet.SkillLevel()
@@ -1945,7 +1945,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.Level()
 	end
-	
+
 	self.Collectibles.Loot = self:Get("LootMode");
 
 	-- refresh forced from toggle
