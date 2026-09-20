@@ -832,7 +832,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(1716, {	-- Devourer of Souls [Stormwind City]
 				["sourceQuest"] = 1717,	-- Gakin's Summons (Succubus)
 				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 25.4, 78.4, MAP.STORMWIND_CITY },
+				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
 				["races"] = { HUMAN, GNOME },
 				["classes"] = { WARLOCK },
 				["isBreadcrumb"] = true,
@@ -1210,7 +1210,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(4738, {	-- In Search of Menara Voidrender (Stormwind)
 				["qg"] = 461,	-- Demisette Cloyce
-				["coord"] = { 25.4, 78.2, MAP.STORMWIND_CITY },
+				["coord"] = { 39.6, 84.6, MAP.STORMWIND_CITY },
 				["classes"] = { WARLOCK },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -1311,7 +1311,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(4968, {	-- Knowledge of the Orb of Orahil [Stormwind]
 				["qg"] = 461,	-- Demisette Cloyce
-				["coord"] = { 25.4, 78.2, MAP.STORMWIND_CITY },
+				["coord"] = { 39.6, 84.6, MAP.STORMWIND_CITY },
 				["classes"] = { WARLOCK },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -1863,7 +1863,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(1798, {	-- Seeking Strahad (Stormwind)
 				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 25.4, 78.4, MAP.STORMWIND_CITY },
+				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARLOCK },
 				["isBreadcrumb"] = true,
@@ -2049,7 +2049,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(4488, {	-- Summon Felsteed (1/2) (Stormwind)
 				["qg"] = 461,	-- Demisette Cloyce <Warlock Trainer>
-				["coord"] = { 25.4, 78.2, MAP.STORMWIND_CITY },
+				["coord"] = { 39.6, 84.6, MAP.STORMWIND_CITY },
 				["classes"] = { WARLOCK },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -2278,7 +2278,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					},
 					["coords"] = {
 						{ 70.6, 90.6, MAP.IRONFORGE },
-						{ 78.8, 45.6, MAP.STORMWIND_CITY },
+						{ 80.6, 59.6, MAP.STORMWIND_CITY },
 					},
 				},
 				["hordeQuestData"] = {

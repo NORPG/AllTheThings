@@ -1640,8 +1640,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 31,
 				}),
 				q(4738, {	-- In Search of Menara Voidrender (Stormwind)
-					["qg"] = 461,	-- Demisette Cloyce
-					["coord"] = { 25.4, 78.2, STORMWIND_CITY },
+					["qg"] = 461,	-- Demisette Cloyce <Warlock Trainer>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 39.6, 84.6, STORMWIND_CITY },
+						-- #else
+						{ 25.4, 78.2, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -1769,8 +1775,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 35,
 				}),
 				q(4968, {	-- Knowledge of the Orb of Orahil [Stormwind]
-					["qg"] = 461,	-- Demisette Cloyce
-					["coord"] = { 25.4, 78.2, STORMWIND_CITY },
+					["qg"] = 461,	-- Demisette Cloyce <Warlock Trainer>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 39.6, 84.6, STORMWIND_CITY },
+						-- #else
+						{ 25.4, 78.2, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -2951,7 +2963,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4488, {	-- Summon Felsteed (1/2) (Stormwind)
 					["qg"] = 461,	-- Demisette Cloyce <Warlock Trainer>
-					["coord"] = { 25.4, 78.2, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 39.6, 84.6, STORMWIND_CITY },
+						-- #else
+						{ 25.4, 78.2, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
