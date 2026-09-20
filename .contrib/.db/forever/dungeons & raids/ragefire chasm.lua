@@ -111,14 +111,14 @@ root(ROOTS.Instances, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(14396, {	-- Incantations from the Nether
+				i(14396, {	-- Incantations from the Nether (QI!)
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						11322,	-- Searing Blade Cultist
 						11324,	-- Searing Blade Warlock
 					},
 				}),
-				i(14395, {	-- Spells of Shadow
+				i(14395, {	-- Spells of Shadow (QI!)
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						11322,	-- Searing Blade Cultist
@@ -127,10 +127,18 @@ root(ROOTS.Instances, {
 				}),
 			}),
 			n(11517, {	-- Oggleflint <Ragefire Chieftain>
-				i(68194),	-- Oggleflint's Inspirer
+				i(272999, {	-- Barbaric Crossbow
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(272998, {	-- Bone Knuckles
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(272996, {	-- Trogg Scepter
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(11520, {	-- Taragaman the Hungerer
-				i(14540),	-- Taragaman the Hungerer's Heart
+				i(14540),	-- Taragaman the Hungerer's Heart (QI!)
 				i(14145),	-- Cursed Felblade
 				i(14149),	-- Subterranean Cape
 				i(14148),	-- Crystalline Cuffs
@@ -140,7 +148,17 @@ root(ROOTS.Instances, {
 				i(14150),	-- Robe of Evocation
 				i(14147),	-- Cavedweller Bracers
 			}),
-			n(11519),	-- Bazzalan
+			n(11519, {	-- Bazzalan
+				i(273007, {	-- Chasm Walkers
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(273005, {	-- Satyrskin Cloak
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(273003, {	-- Searing Dagger
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				}),
+			}),
 		},
 	}),
 });
