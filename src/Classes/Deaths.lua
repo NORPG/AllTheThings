@@ -107,8 +107,8 @@ app.AddEventHandler("OnStartup", AssignOnUpdateFunction);
 app.AddEventHandler("OnBuildDataCache", function(categories)
 	categories.Deaths = app.CreateDeathClass();
 	app.AddEventRegistration("PLAYER_DEAD", function()
-		ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + 1;
-		app.CurrentCharacter.Deaths = app.CurrentCharacter.Deaths + 1;
+		ATTAccountWideData.Deaths = (ATTAccountWideData.Deaths or 0) + 1;
+		app.CurrentCharacter.Deaths = (app.CurrentCharacter.Deaths or 0) + 1;
 		app.Audio:PlayDeathSound();
 		app.DirectGroupRefresh(categories.Deaths)
 	end)
