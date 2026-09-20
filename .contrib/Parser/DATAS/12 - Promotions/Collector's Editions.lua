@@ -1456,11 +1456,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				iensemble(279182),	-- Ensemble: Veteran Adventurer's Outdoor Wear (COSMETIC!)
 				i(280599),	-- Veteran Adventurer's Loyal Companion (MOUNT!)
 			}),
-			n(WARCRAFT_FOREVER_COLLECTION, {
+			n(WARCRAFT_FOREVER_COLLECTION, bubbleDownSelf({ ["timeline"] = { "removed 12.1.7.99999" }, }, {	--TODO: available through January 11, 2027
 				--- RETAIL ---
 				i(280554),	-- Boardcraft Forsaken Figurine (DECOR!)
 				i(280556),	-- Boardcraft Human Figurine (DECOR!)
-			}),
+			})),
 		},
 	})),
 })));
