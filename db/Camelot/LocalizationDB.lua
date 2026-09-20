@@ -2602,6 +2602,12 @@ local ObjectNames = {
 	[181108] = "Truesilver Deposit",
 	[181109] = "Gold Vein",
 	[181287] = "Frozen Rune",
+	[181332] = "Flame of Stormwind",
+	[181333] = "Flame of Ironforge",
+	[181334] = "Flame of Darnassus",
+	[181335] = "Flame of the Undercity",
+	[181336] = "Flame of Orgrimmar",
+	[181337] = "Flame of Thunder Bluff",
 	[181366] = "Four Horsemen Chest",
 	[181597] = "Silithyst Mound",
 	[181598] = "Silithyst Geyser",
@@ -2923,6 +2929,12 @@ local ObjectIcons = {
 	[181074] = 132597,
 	[181083] = 132597,
 	[181098] = 133849,
+	[181332] = 135813,
+	[181333] = 135265,
+	[181334] = 135265,
+	[181335] = 135265,
+	[181336] = 135265,
+	[181337] = 135265,
 	[181597] = 135867,
 	[181598] = 135867,
 	[181672] = 134450,
@@ -3889,54 +3901,6 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Naxxramas, Obsidian Sanctum, and Eye of Eternity.|r",
 		minimumBuildVersion = 30400,
 		buildVersion = 30400,
-		state = 2,
-	},
-	[31] = {
-		name = "Phase 2",
-		description = "|cFFAAFFAAThis was not available until Phase 2 of Wrath Classic.|r",
-		lore = "|cFFFFAAAAIncluded Ulduar.|r",
-		minimumBuildVersion = 30400,
-		buildVersion = 30401,
-		state = 2,
-	},
-	[32] = {
-		name = "Phase 3",
-		description = "|cFFAAFFAAThis was not available until Phase 3 of Wrath Classic.|r",
-		lore = "|cFFFFAAAAIncluded Trial of the Crusader.|r",
-		minimumBuildVersion = 30400,
-		buildVersion = 30402,
-		state = 2,
-	},
-	[33] = {
-		name = "Phase 4",
-		description = "|cFFAAFFAAThis was not available until Phase 4 of Wrath Classic.|r",
-		lore = "|cFFFFAAAAIncluded Icecrown Citadel.|r",
-		minimumBuildVersion = 30400,
-		buildVersion = 30403,
-		state = 2,
-	},
-	[40] = {
-		name = "Phase 1",
-		description = "|cFFAAFFAAThis was not available until Phase 1 of Cataclysm Classic.|r",
-		lore = "|cFFFFAAAAIncluded Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent.|r",
-		minimumBuildVersion = 40400,
-		buildVersion = 40400,
-		state = 2,
-	},
-	[41] = {
-		name = "Rage of the Firelands",
-		description = "|cFFAAFFAAThis was not available until the Rage of the Firelands during Cataclysm Classic.|r",
-		lore = "|cFFFFAAAAIncluded Firelands.|r",
-		minimumBuildVersion = 40400,
-		buildVersion = 40401,
-		state = 2,
-	},
-	[42] = {
-		name = "Hour of Twilight",
-		description = "|cFFAAFFAAThis was not available until the Hour of Twilight during Cataclysm Classic.|r",
-		lore = "|cFFFFAAAAIncluded Dragon Soul.|r",
-		minimumBuildVersion = 40400,
-		buildVersion = 40402,
 		state = 2,
 	},
 } L.PHASES = phases
@@ -5149,10 +5113,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAADies war erst Phase 1 von TBC Classic verfügbar.|r",
 	[18] = "|cFFAAFFAADies war erst Phase 2 von TBC Classic verfügbar.|r",
 	[30] = "|cFFAAFFAADies war erst Phase 1 von Wrath Classic verfügbar.|r",
-	[31] = "|cFFAAFFAADies war erst Phase 2 von Wrath Classic verfügbar.|r",
-	[32] = "|cFFAAFFAADies war erst Phase 3 von Wrath Classic verfügbar.|r",
-	[33] = "|cFFAAFFAADies war erst Phase 4 von Wrath Classic verfügbar.|r",
-	[40] = "|cFFAAFFAADies war erst Phase 1 von Cataclysm Classic verfügbar.|r",
 })
 do phases[key].description = value; end
 end
@@ -6332,10 +6292,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du TBC Classic.|r",
 	[18] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du TBC Classic.|r",
 	[30] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du Wrath Classic.|r",
-	[31] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du Wrath Classic.|r",
-	[32] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du Wrath Classic.|r",
-	[33] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du Wrath Classic.|r",
-	[40] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -6825,10 +6781,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di TBC Classic.|r",
 	[18] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di TBC Classic.|r",
 	[30] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di Wrath Classic.|r",
-	[31] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di Wrath Classic.|r",
-	[32] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di Wrath Classic.|r",
-	[33] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di Wrath Classic.|r",
-	[40] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -7676,10 +7628,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de TBC Classic.|r",
 	[30] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de Wrath Classic.|r",
-	[31] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de Wrath Classic.|r",
-	[32] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de Wrath Classic.|r",
-	[33] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de Wrath Classic.|r",
-	[40] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -9235,10 +9183,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAAЭто было недоступно до Phase 1 из TBC Classic.|r",
 	[18] = "|cFFAAFFAAЭто было недоступно до Phase 2 из TBC Classic.|r",
 	[30] = "|cFFAAFFAAЭто было недоступно до Phase 1 из Wrath Classic.|r",
-	[31] = "|cFFAAFFAAЭто было недоступно до Phase 2 из Wrath Classic.|r",
-	[32] = "|cFFAAFFAAЭто было недоступно до Phase 3 из Wrath Classic.|r",
-	[33] = "|cFFAAFFAAЭто было недоступно до Phase 4 из Wrath Classic.|r",
-	[40] = "|cFFAAFFAAЭто было недоступно до Phase 1 из Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -10057,10 +10001,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAAPhase 1(TBC Classic)까지 사용할 수 없습니다.|r",
 	[18] = "|cFFAAFFAAPhase 2(TBC Classic)까지 사용할 수 없습니다.|r",
 	[30] = "|cFFAAFFAAPhase 1(Wrath Classic)까지 사용할 수 없습니다.|r",
-	[31] = "|cFFAAFFAAPhase 2(Wrath Classic)까지 사용할 수 없습니다.|r",
-	[32] = "|cFFAAFFAAPhase 3(Wrath Classic)까지 사용할 수 없습니다.|r",
-	[33] = "|cFFAAFFAAPhase 4(Wrath Classic)까지 사용할 수 없습니다.|r",
-	[40] = "|cFFAAFFAAPhase 1(Cataclysm Classic)까지 사용할 수 없습니다.|r",
 })
 do phases[key].description = value; end
 end
@@ -11753,12 +11693,6 @@ for key,value in pairs({
 	[17] = "Fase 1",
 	[18] = "Fase 2",
 	[30] = "Fase 1",
-	[31] = "Fase 2",
-	[32] = "Fase 3",
-	[33] = "Fase 4",
-	[40] = "Fase 1",
-	[41] = "Furia de las Tierras de Fuego",
-	[42] = "La hora del crepúsculo",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -11784,12 +11718,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de TBC Classic.|r",
 	[30] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de Wrath Classic.|r",
-	[31] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de Wrath Classic.|r",
-	[32] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de Wrath Classic.|r",
-	[33] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 4 de Wrath Classic.|r",
-	[40] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de Cataclysm Classic.|r",
-	[41] = "|cFFAAFFAAEsto no estuvo disponible hasta la Furia de las Tierras de Fuego durante Cataclysm Classic.|r",
-	[42] = "|cFFAAFFAAEsto no estuvo disponible hasta la Hora del Crepúsculo durante Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -11810,12 +11738,6 @@ for key,value in pairs({
 	[17] = "|cFFFFAAAAIncluye Karazhan, Guarida de Magtheridon y la Guarida de Gruul.|r",
 	[18] = "|cFFFFAAAAIncluye Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.|r",
 	[30] = "|cFFFFAAAAIncluye Naxxramas, Sagrario obsidiana, y El ojo de la eternidad.|r",
-	[31] = "|cFFFFAAAAIncluye Ulduar.|r",
-	[32] = "|cFFFFAAAAIncluye la Prueba del cruzado|r",
-	[33] = "|cFFFFAAAAIncluye La ciudadela corona de hielo|r",
-	[40] = "|cFFFFAAAAIncluye Bastión del Crepúsculo, Trono de los Cuatro Vientos y Descenso de Alanegra.|r",
-	[41] = "|cFFFFAAAAIncluye Las tierras de fuego|r",
-	[42] = "|cFFFFAAAAIncluye El alma del dragón|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
@@ -13943,6 +13865,12 @@ localize(ObjectNames, {
 	[181085] = "斯坦索姆物资箱",
 	[181098] = "火山灰",
 	[181287] = "冰冻符文",
+	[181332] = "暴风城烈焰",
+	[181333] = "铁炉堡烈焰",
+	[181334] = "达纳苏斯烈焰",
+	[181335] = "幽暗城烈焰",
+	[181336] = "奥格瑞玛烈焰",
+	[181337] = "雷霆崖烈焰",
 	[181366] = "四骑士之箱",
 	[181597] = "水晶尘土堆",
 	[181598] = "水晶尘喷孔",
@@ -13977,12 +13905,6 @@ for key,value in pairs({
 	[17] = "阶段1",
 	[18] = "阶段2",
 	[30] = "阶段1",
-	[31] = "阶段2",
-	[32] = "阶段3",
-	[33] = "阶段4",
-	[40] = "阶段1",
-	[41] = "火焰的愤怒",
-	[42] = "暮光审判",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -14008,12 +13930,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAA该功能直到 阶段1 的 燃烧的远征 才可用。|r",
 	[18] = "|cFFAAFFAA该功能直到 阶段2 的 燃烧的远征 才可用。|r",
 	[30] = "|cFFAAFFAA该功能直到 阶段1 的 巫妖王之怒 才可用。|r",
-	[31] = "|cFFAAFFAA该功能直到 阶段2 的 巫妖王之怒 才可用。|r",
-	[32] = "|cFFAAFFAA该功能直到 阶段3 的 巫妖王之怒 才可用。|r",
-	[33] = "|cFFAAFFAA该功能直到 阶段4 的 巫妖王之怒 才可用。|r",
-	[40] = "|cFFAAFFAA该功能直到 阶段1 的 大地的裂变 才可用。|r",
-	[41] = "|cFFAAFFAA在《大灾变》经典服中，直到火焰的愤怒内容上线，这个才可用。|r",
-	[42] = "|cFFAAFFAA在《大灾变》经典服中，直到 “暮光审判”（版本更新）时，这个才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -14034,12 +13950,6 @@ for key,value in pairs({
 	[17] = "|cFFFFAAAA包括卡拉赞、玛瑟里顿巢穴和格鲁尔的巢穴。|r",
 	[18] = "|cFFFFAAAA包含毒蛇神殿洞穴、风暴要塞：眼睛和迅捷德鲁伊飞行形态。|r",
 	[30] = "|cFFFFAAAA包含纳克萨玛斯、黑曜石圣殿和永恒之眼。|r",
-	[31] = "|cFFFFAAAA包含奥杜尔。|r",
-	[32] = "|cFFFFAAAA包含十字军试炼。|r",
-	[33] = "|cFFFFAAAA包含冰冠堡垒。|r",
-	[40] = "|cFFFFAAAA包括暮光堡垒、四风王座和黑翼血环。|r",
-	[41] = "|cFFFFAAAA包含火源之地。|r",
-	[42] = "|cFFFFAAAA包含巨龙之魂。|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
@@ -14830,10 +14740,6 @@ for key,value in pairs({
 	[17] = "第1階段",
 	[18] = "第2階段",
 	[30] = "第1階段",
-	[31] = "第2階段",
-	[32] = "第3階段",
-	[33] = "第4階段",
-	[40] = "第1階段",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -14851,10 +14757,6 @@ for key,value in pairs({
 	[17] = "|cFFAAFFAA該功能直到 第1階段 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA該功能直到 第2階段 的 TBC Classic 才可用。|r",
 	[30] = "|cFFAAFFAA該功能直到 第1階段 的 Wrath Classic 才可用。|r",
-	[31] = "|cFFAAFFAA該功能直到 第2階段 的 Wrath Classic 才可用。|r",
-	[32] = "|cFFAAFFAA該功能直到 第3階段 的 Wrath Classic 才可用。|r",
-	[33] = "|cFFAAFFAA該功能直到 第4階段 的 Wrath Classic 才可用。|r",
-	[40] = "|cFFAAFFAA該功能直到 第1階段 的 Cataclysm Classic 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({

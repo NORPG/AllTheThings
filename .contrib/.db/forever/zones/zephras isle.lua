@@ -12,7 +12,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92460, {	-- Coming of Age
 				["qg"] = 251362,	-- Ailee Farheart <Rangers of Thendal Grove>
 				["coord"] = { 42.8, 23.4, MAP.ZEPHRAS_ISLE },
-				i(264908),	-- Ancient Heirloom
+				["groups"] = {
+					i(264908),	-- Ancient Heirloom
+				},
 			}),
 			q(92461, {	-- Harmony in Balance
 				["qg"] = 251361,	-- Rorian the Dayseeker
