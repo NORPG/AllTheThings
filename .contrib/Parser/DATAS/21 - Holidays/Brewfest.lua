@@ -626,6 +626,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							i(241350),	-- Brewer's Blue Kilt
 							i(249857),	-- Brewer's Blue Belt
 							i(249858),	-- Brewer's Basic Belt
+							i(279524, {	-- Brewer's Purple Kilt
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279529, {	-- Brewer's Purple Shoulder Cape
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279530, {	-- Brewer's Purple Belt
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279531, {	-- Brewer's Purple Beret
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279532, {	-- Brewer's Red Beret
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279533, {	-- Brewer's Red Shoulder Cape
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279534, {	-- Brewer's Red Kilt
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279535, {	-- Brewer's Red Belt
+								["timeline"] = { ADDED_12_1_0 },
+							}),
 						},
 					}),
 					i(243293, {	-- Bag of Brewfest Merchandise (Epic) BoE's & Cosmetics
@@ -639,6 +663,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							i(241350),	-- Brewer's Blue Kilt
 							i(249857),	-- Brewer's Blue Belt
 							i(249858),	-- Brewer's Basic Belt
+							i(279524, {	-- Brewer's Purple Kilt
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279529, {	-- Brewer's Purple Shoulder Cape
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279530, {	-- Brewer's Purple Belt
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279531, {	-- Brewer's Purple Beret
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279532, {	-- Brewer's Red Beret
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279533, {	-- Brewer's Red Shoulder Cape
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279534, {	-- Brewer's Red Kilt
+								["timeline"] = { ADDED_12_1_0 },
+							}),
+							i(279535, {	-- Brewer's Red Belt
+								["timeline"] = { ADDED_12_1_0 },
+							}),
 							i(245950),	-- Dark Iron Portable Forge
 							i(245955),	-- Dark Iron's Ceremonial Mace
 							i(245959),	-- Dark Iron's Crystal Ward
@@ -3127,6 +3175,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						}),
 					},
 				}),
+				n(271372, {	-- Fizz Alechux <Brewfest Decor Specialist>
+				--	["coord"] = { 0.0, 0.0, DUROTAR },	-- TODO: coord
+					["timeline"] = { ADDED_12_1_0 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(280337, {	-- Traditional Brewfest Banner
+							["cost"] = BREWFEST_TOKEN_COST(125),	-- Brewfest Prize Token
+							["timeline"] = { ADDED_12_1_0 },
+						}),
+						i(280339, {	-- Brewfest Fence
+							["cost"] = BREWFEST_TOKEN_COST(50),	-- Brewfest Prize Token
+							["timeline"] = { ADDED_12_1_0 },
+						}),
+						i(280341, {	-- Brewfest Fencepost
+							["cost"] = BREWFEST_TOKEN_COST(50),	-- Brewfest Prize Token
+							["timeline"] = { ADDED_12_1_0 },
+						}),
+						i(280343, {	-- Hanging Brewfest Wreath
+							["cost"] = BREWFEST_TOKEN_COST(75),	-- Brewfest Prize Token
+							["timeline"] = { ADDED_12_1_0 },
+						}),
+					},
+				}),
 				n(23511, {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3249,6 +3320,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						i(169467),	-- Doomlager
 						i(169466),	-- Everbloom IPA
 						i(169469),	-- Mag'helada
+					},
+				}),
+				n(271603, {	-- Kay Stouthammer <Brewfest Decor Specialist>
+				--	["coord"] = { 0.0, 0.0, DUN_MOROGH },	-- TODO: coord
+					["timeline"] = { ADDED_12_1_0 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(280337, {	-- Traditional Brewfest Banner
+							["cost"] = BREWFEST_TOKEN_COST(125),	-- Brewfest Prize Token
+							["timeline"] = { ADDED_12_1_0 },
+						}),
+						i(280339, {	-- Brewfest Fence
+							["cost"] = BREWFEST_TOKEN_COST(50),	-- Brewfest Prize Token
+							["timeline"] = { ADDED_12_1_0 },
+						}),
+						i(280341, {	-- Brewfest Fencepost
+							["cost"] = BREWFEST_TOKEN_COST(50),	-- Brewfest Prize Token
+							["timeline"] = { ADDED_12_1_0 },
+						}),
+						i(280343, {	-- Hanging Brewfest Wreath
+							["cost"] = BREWFEST_TOKEN_COST(75),	-- Brewfest Prize Token
+							["timeline"] = { ADDED_12_1_0 },
+						}),
 					},
 				}),
 				n(23481, {	-- Keiran Donoghue <Sausage Vendor>

@@ -801,14 +801,6 @@ root(ROOTS.Unsorted, {
 			i(279442),	-- Violet Gloomcap
 			i(279444),	-- Snowy Gloomcap
 			i(279445),	-- Sunny Gloomcap
-			i(279524),	-- Brewer's Purple Kilt
-			i(279529),	-- Brewer's Purple Shoulder Cape
-			i(279530),	-- Brewer's Purple Belt
-			i(279531),	-- Brewer's Purple Beret
-			i(279532),	-- Brewer's Red Beret
-			i(279533),	-- Brewer's Red Shoulder Cape
-			i(279534),	-- Brewer's Red Kilt
-			i(279535),	-- Brewer's Red Belt
 			i(279543),	-- Sky Shaman's Tunic
 			i(279544),	-- Witch Doctor's Undervest
 			i(279545),	-- Wild Seer's Mantle
@@ -837,10 +829,6 @@ root(ROOTS.Unsorted, {
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280337),	-- Traditional Brewfest Banner
-			i(280339),	-- Brewfest Fence
-			i(280341),	-- Brewfest Fencepost
-			i(280343),	-- Hanging Brewfest Wreath
 			i(280102),	-- Handful of Corrosive Coins
 			i(280581),	-- Wintry Witchwick's Rider
 			i(280842),	-- Shadowhunters' Hexblade
