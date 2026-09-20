@@ -901,7 +901,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						{ 23.6, 6.6, IRONFORGE },
+						-- #if AFTER WRATH
+						{ 48.6, 50.0, STORMWIND_CITY },
+						-- #else
 						{ 37.6, 32.6, STORMWIND_CITY },
+						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

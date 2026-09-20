@@ -63,11 +63,17 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				}),
 			},
 		})),
-		q(7666,	-- Again Into the Great Ossuary [A]
-		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }}, {
+		q(7666,	{ -- Again Into the Great Ossuary [A]
 			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 			["sourceQuest"] = 7647,	-- Judgment and Redemption
-			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+			["coords"] = {
+				-- #if AFTER WRATH
+				{ 48.6, 50.0, STORMWIND_CITY },
+				-- #else
+				{ 37.6, 32.6, STORMWIND_CITY },
+				-- #endif
+			},
+			["timeline"] = { REMOVED_4_0_3 },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
@@ -75,12 +81,12 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["groups"] = {
 				i(18746),	-- Divination Scryer
 			},
-		})),
-		q(7669,	-- Again Into the Great Ossuary [H]
-		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }}, {
+		}),
+		q(7669, {	-- Again Into the Great Ossuary [H]
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 8258,	-- The Darkreaver Menace
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
+			["timeline"] = { REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["repeatable"] = true,
@@ -88,7 +94,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["groups"] = {
 				i(18746),	-- Divination Scryer
 			},
-		})),
+		}),
 		q(27140, {	-- Alexi's Gambit
 			["qg"] = 45110,	-- Alexi Barov <House of Barov>
 			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -355,7 +361,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "i", 18804 },	-- Lord Grayson's Satchel
 			},
 			["sourceQuest"] = 7646,	-- The Divination Scryer
-			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+			["coords"] = {
+				-- #if AFTER WRATH
+				{ 48.6, 50.0, STORMWIND_CITY },
+				-- #else
+				{ 37.6, 32.6, STORMWIND_CITY },
+				-- #endif
+			},
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 60,

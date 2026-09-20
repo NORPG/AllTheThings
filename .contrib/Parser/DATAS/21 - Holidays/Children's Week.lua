@@ -477,7 +477,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["coords"] = {
-				-- #if AFTER CATA
+				-- #if AFTER WRATH
 				{ 56.31, 53.99, STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #else
 				{ 47.2, 38.4, STORMWIND_CITY },	-- Orphan Matron Nightingale
@@ -723,7 +723,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #endif
 			},
 			["coords"] = {
-				-- #if AFTER CATA
+				-- #if AFTER WRATH
 				{ 56.3, 54.0, STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #else
 				{ 47.4, 38.6, STORMWIND_CITY },	-- Orphan Matron Nightingale
@@ -1888,7 +1888,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- 0/1 Tigule's Strawberry Ice Cream
 					["provider"] = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
-					["coord"] = { 54.4, 65.8, STORMWIND_CITY },	-- Emmithue Smails <Sweet Treats>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 61.8, 75.2, STORMWIND_CITY },
+						-- #else
+						{ 54.4, 65.8, STORMWIND_CITY },
+						-- #endif
+					},
 					["cr"] = 14481,	-- Emmithue Smails <Sweet Treats>
 				}),
 			},

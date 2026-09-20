@@ -1324,7 +1324,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3000, {	-- The Tome of Divinity [Stormwind City]
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					["coord"] = { 37.2, 33.0, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 48.6, 50.0, STORMWIND_CITY },
+						-- #else
+						{ 37.6, 32.6, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },

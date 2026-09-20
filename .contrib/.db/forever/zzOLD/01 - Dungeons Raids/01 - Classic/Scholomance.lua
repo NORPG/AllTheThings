@@ -67,7 +67,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }}, {
 			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 			["sourceQuest"] = 7647,	-- Judgment and Redemption
-			["coord"] = { 37.6, 32.6, MAP.STORMWIND_CITY },
+			["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
@@ -355,7 +355,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				{ "i", 18804 },	-- Lord Grayson's Satchel
 			},
 			["sourceQuest"] = 7646,	-- The Divination Scryer
-			["coord"] = { 37.6, 32.6, MAP.STORMWIND_CITY },
+			["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 60,

@@ -1664,8 +1664,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coords"] = {
 						-- #if AFTER SL
 						{ 79.2, 69.6, STORMWIND_CITY },
+						-- #elseif AFTER WRATH
+						{ 48.6, 50.0, STORMWIND_CITY },
 						-- #else
-						{ 52.6, 45.0, STORMWIND_CITY },
+						{ 37.6, 32.6, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },

@@ -464,13 +464,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 18753 },	-- Arcanite Barding
 						{ "n", 14566 },	-- Ancient Equine Spirit
 					},
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 48.6, 50.0, MAP.STORMWIND_CITY },
-						-- #else
-						{ 37.6, 32.6, MAP.STORMWIND_CITY },
-						-- #endif
-					},
+					["coords"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.DIRE_MAUL, MAP.HILLSBRAD_FOOTHILLS },
 					["classes"] = { PALADIN },
@@ -712,13 +706,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 18792 },	-- Blessed Arcanite Barding
 						{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					},
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 48.6, 50.0, MAP.STORMWIND_CITY },
-						-- #else
-						{ 37.6, 32.6, MAP.STORMWIND_CITY },
-						-- #endif
-					},
+					["coords"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.DIRE_MAUL },
 					["classes"] = { PALADIN },
@@ -1105,13 +1093,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						7638,	-- Lord Grayson Shadowbreaker [Stormwind City]
 					},
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 48.6, 50.0, MAP.STORMWIND_CITY },
-						-- #else
-						{ 37.6, 32.6, MAP.STORMWIND_CITY },
-						-- #endif
-					},
+					["coords"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.IRONFORGE },
 					["cost"] = 1500000,	-- 150g
@@ -1125,13 +1107,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 						{ "i", 18752 },	-- Exorcism Censer
 					},
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 48.6, 50.0, MAP.STORMWIND_CITY },
-						-- #else
-						{ 37.6, 32.6, MAP.STORMWIND_CITY },
-						-- #endif
-					},
+					["coords"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.EASTERN_PLAGUELANDS },
 					["classes"] = { PALADIN },
@@ -2785,13 +2761,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				q(7646, {	-- The Divination Scryer
 					["sourceQuest"] = 7644,	-- Blessed Arcanite Barding
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 48.6, 50.0, MAP.STORMWIND_CITY },
-						-- #else
-						{ 37.6, 32.6, MAP.STORMWIND_CITY },
-						-- #endif
-					},
+					["coords"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12800, 1 },	-- Azerothian Diamond
@@ -3605,13 +3575,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 48.6, 50.0, MAP.STORMWIND_CITY },
-						-- #else
-						{ 37.6, 32.6, MAP.STORMWIND_CITY },
-						-- #endif
-					},
+					["coords"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,

@@ -110,10 +110,12 @@ end
 
 local EARTHEN_RING_ELDER_ID = 26221;	-- Earthen Ring Elder
 local EARTHEN_RING_ELDER_COORDS = {
-	-- #if BEFORE DF
+	-- #if AFTER DF
+	{ 47.8, 72.1, STORMWIND_CITY },	-- Trading post moved vendor
+	-- #elseif AFTER WRATH
 	{ 49.4, 72.0, STORMWIND_CITY },
 	-- #else
-	{ 47.8, 72.1, STORMWIND_CITY },	-- Trading post moved vendor
+	{ 38.6, 61.6, STORMWIND_CITY },
 	-- #endif
 	{ 47.2, 37.6, ORGRIMMAR },
 	{ 64.8, 27.4, IRONFORGE },
@@ -147,7 +149,7 @@ local FESTIVAL_MASTER_FIRE_EATER_COORDS = {
 	-- #elseif AFTER WRATH
 	{ 50.1, 72.6, STORMWIND_CITY },
 	-- #else
-	{ 50.1, 72.6, STORMWIND_CITY },
+	{ 39.6, 62.6, STORMWIND_CITY },
 	-- #endif
 	{ 65.2, 25.4, IRONFORGE },
 	-- #if BEFORE CATA
@@ -171,7 +173,11 @@ local FESTIVAL_LOREMASTER_COORDS = {
 	{ 64.0, 25.8, IRONFORGE },
 	{ 62.2, 48.6, DARNASSUS },
 	-- #else
+	-- #if AFTER WRATH
+	{ 49.6, 72.0, STORMWIND_CITY },
+	-- #else
 	{ 38.5, 61.1, STORMWIND_CITY },
+	-- #endif
 	{ 63.6, 24.7, IRONFORGE },
 	{ 56.6, 92.3, TELDRASSIL },
 	-- #endif
@@ -1548,7 +1554,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(9332, {	-- Stealing Darnassus's Flame
-			["provider"] = { "i", 23184 },	-- Flame of Darnassus (Provided)
+			["providers"] = {
+				{ "o", 181334 },	-- Flame of Darnassus
+				{ "i", 23184 },	-- Flame of Darnassus (Provided)
+			},
 			-- #if AFTER CATA
 			["coord"] = { 64.1, 46.7, DARNASSUS },
 			-- #else
@@ -1561,7 +1570,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(9331, {	-- Stealing Ironforge's Flame
-			["provider"] = { "i", 23183 },	-- Flame of Ironforge (Provided)
+			["providers"] = {
+				{ "o", 181333 },	-- Flame of Ironforge
+				{ "i", 23183 },	-- Flame of Ironforge (Provided)
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 65.2, 24.7, IRONFORGE },
@@ -1575,7 +1587,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(9324, {	-- Stealing Orgrimmar's Flame
-			["provider"] = { "i", 23179 },	-- Flame of Orgrimmar (Provided)
+			["providers"] = {
+				{ "o", 181336 },	-- Flame of Orgrimmar
+				{ "i", 23179 },	-- Flame of Orgrimmar (Provided)
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 46.5, 37.6, ORGRIMMAR },
@@ -1589,7 +1604,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(11935, {	-- Stealing Silvermoon's Flame
-			["provider"] = { "i", 35568 },	-- Flame of Silvermoon (Provided)
+			["providers"] = {
+				{ "o", 188129 },	-- Flame of Silvermoon
+				{ "i", 35568 },	-- Flame of Silvermoon (Provided)
+			},
 			["coord"] = { 69.7, 42.7, SILVERMOON_CITY },
 			["timeline"] = { ADDED_2_0_3 },
 			["races"] = ALLIANCE_ONLY,
@@ -1598,7 +1616,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(9330, {	-- Stealing Stormwind's Flame
-			["provider"] = { "i", 23182 },	-- Flame of Stormwind (Provided)
+			["providers"] = {
+				{ "o", 181332 },	-- Flame of Stormwind
+				{ "i", 23182 },	-- Flame of Stormwind (Provided)
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 49.8, 72.9, STORMWIND_CITY },
@@ -1612,7 +1633,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(11933, {	-- Stealing the Exodar's Flame
-			["provider"] = { "i", 35569 },	-- Flame of the Exodar (Provided)
+			["providers"] = {
+				{ "o", 188128 },	-- Flame of the Exodar
+				{ "i", 35569 },	-- Flame of the Exodar (Provided)
+			},
 			["coord"] = { 40.8, 26.3, THE_EXODAR },
 			["timeline"] = { ADDED_2_0_3 },
 			["races"] = HORDE_ONLY,
@@ -1621,7 +1645,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(9326, {	-- Stealing the Undercity's Flame
-			["provider"] = { "i", 23181 },	-- Flame of the Undercity (Provided)
+			["providers"] = {
+				{ "o", 181335 },	-- Flame of the Undercity
+				{ "i", 23181 },	-- Flame of the Undercity (Provided)
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 68.7, 8.50, UNDERCITY },
@@ -1635,7 +1662,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(9325, {	-- Stealing Thunder Bluff's Flame
-			["provider"] = { "i", 23180 },	-- Flame of Thunder Bluff (Provided)
+			["providers"] = {
+				{ "o", 181337 },	-- Flame of Thunder Bluff
+				{ "i", 23180 },	-- Flame of Thunder Bluff (Provided)
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 21.9, 27.3, THUNDER_BLUFF },
@@ -1806,12 +1836,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["icon"] = 134467,
 			["groups"] = {
 				objective(1, {	-- Flame of Stormwind
+					["provider"] = { "o", 181332 },	-- Flame of Stormwind
 					["coord"] = { 38.9, 62.3, STORMWIND_CITY },
 				}),
 				objective(2, {	-- Flame of Ironforge
+					["provider"] = { "o", 181333 },	-- Flame of Ironforge
 					["coord"] = { 64.6, 24.8, IRONFORGE },
 				}),
 				objective(3, {	-- Flame of Darnassus
+					["provider"] = { "o", 181334 },	-- Flame of Darnassus
 					["coord"] = { 56.6, 92.3, TELDRASSIL },
 				}),
 				i(23246),	-- Fiery Festival Brew
@@ -1832,12 +1865,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["icon"] = 134467,
 			["groups"] = {
 				objective(1, {	-- Flame of Orgrimmar
+					["provider"] = { "o", 181336 },	-- Flame of Orgrimmar
 					["coord"] = { 46.9, 38.7, ORGRIMMAR },
 				}),
 				objective(2, {	-- Flame of Thunder Bluff
+					["provider"] = { "o", 181337 },	-- Flame of Thunder Bluff
 					["coord"] = { 21.1, 25.6, THUNDER_BLUFF },
 				}),
 				objective(3, {	-- Flame of the Undercity
+					["provider"] = { "o", 181335 },	-- Flame of the Undercity
 					["coord"] = { 62.6, 66.9, UNDERCITY },
 				}),
 				i(23246),	-- Fiery Festival Brew
@@ -3624,7 +3660,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				{ 62.0, 48.6, DARNASSUS },
 				{ 42.6, 25.6, THE_EXODAR },
 				-- #else
+				-- #if AFTER WRATH
+				{ 49.2, 71.8, STORMWIND_CITY },
+				-- #else
 				{ 38.0, 61.6, STORMWIND_CITY },
+				-- #endif
 				{ 64.8, 26.0, IRONFORGE },
 				{ 56.0, 92.2, TELDRASSIL },
 				{ 42.5, 26.0, THE_EXODAR },

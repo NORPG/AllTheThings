@@ -382,7 +382,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				}),
 				q(8646, {	-- Hammershout the Elder
 					["qg"] = 15562,	-- Elder Hammershout
-					["coord"] = { 21.6, 54.0, MAP.STORMWIND_CITY },
+					["coord"] = { 36.3, 66.1, MAP.STORMWIND_CITY },
 				}),
 			}),
 			preWrathEldersHeader(ELDERS_OF_THE_HORDE, {	-- Elders of the Horde

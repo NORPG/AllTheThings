@@ -65,7 +65,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			q(9024, {	-- Aristan's Hunch
 				["sourceQuest"] = 8903,	-- Dangerous Love (A)
 				["qg"] = 16105,	-- Aristan Mottar
-				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },
+				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["groups"] = {
@@ -79,7 +79,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			}),
 			q(8903, {	-- Dangerous Love (A)
 				["qg"] = 16105,	-- Aristan Mottar
-				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },
+				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["groups"] = {
@@ -104,7 +104,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 					{ "n", 16005 },	-- Lieutenant Jocryn Heldric
 					{ "i", 21921 },	-- Carefully Penned Note
 				},
-				["coord"] = { 57.0, 59.8, MAP.STORMWIND_CITY },
+				["coord"] = { 57.0, 59.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -178,7 +178,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				["coords"] = {
 					{ 38.2, 80.4, MAP.DARNASSUS },
 					{ 41.0, 55.2, MAP.IRONFORGE },
-					{ 78.6, 17.6, MAP.STORMWIND_CITY },
+					{ 78.6, 17.6, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -212,7 +212,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			q(9025, {	-- Morgan's Discovery
 				["sourceQuest"] = 9024,	-- Aristan's Hunch
 				["qg"] = 279,	-- Morgan Pestle
-				["coord"] = { 56.2, 64.8, MAP.STORMWIND_CITY },
+				["coord"] = { 56.2, 64.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["groups"] = {
@@ -223,7 +223,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			q(9028, {	-- The Source Revealed (A)
 				["sourceQuest"] = 9027,	-- Tracing the Source (A) (2/2)
 				["qg"] = 16106,	-- Evert Sorisam
-				["coord"] = { 39.8, 46.8, MAP.STORMWIND_CITY },
+				["coord"] = { 39.8, 46.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -237,14 +237,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			q(9026, {	-- Tracing the Source (A) (1/2)
 				["sourceQuest"] = 9025,	-- Morgan's Discovery
 				["qg"] = 16105,	-- Aristan Mottar
-				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },
+				["coord"] = { 54.6, 65.6, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(9027, {	-- Tracing the Source (A) (2/2)
 				["sourceQuest"] = 9026,	-- Tracing the Source (A) (1/2)
 				["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
-				["coord"] = { 52.8, 65.4, MAP.STORMWIND_CITY },
+				["coord"] = { 60.6, 75.0, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),

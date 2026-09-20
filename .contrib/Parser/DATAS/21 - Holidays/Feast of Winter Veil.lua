@@ -1862,7 +1862,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 			},
 			["coords"] = {
-				-- #if AFTER CATA
+				-- #if AFTER WRATH
 				{ 62.8, 70.2, STORMWIND_CITY },
 				-- #else
 				{ 55.0, 59.2, STORMWIND_CITY },
@@ -2703,8 +2703,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		n(13435, {	-- Khole Jinglepocket <Smokywood Pastures>
-			-- #if AFTER CATA
-			["coord"] = { 63.0, 70.6, STORMWIND_CITY },
+			-- #if AFTER WRATH
+			["coord"] = { 62.8, 70.2, STORMWIND_CITY },
 			-- #else
 			["coord"] = { 55.0, 59.6, STORMWIND_CITY },
 			-- #endif

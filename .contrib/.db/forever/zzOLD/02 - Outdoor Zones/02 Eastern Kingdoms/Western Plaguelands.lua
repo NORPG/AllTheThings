@@ -835,7 +835,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						{ 23.6, 6.6, MAP.IRONFORGE },
-						{ 37.6, 32.6, MAP.STORMWIND_CITY },
+						{ 48.6, 50.0, MAP.STORMWIND_CITY },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

@@ -957,7 +957,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(6076, {	-- The Hunter's Path [Stormwind City]
 				["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
-				["coord"] = { 61.6, 15.4, MAP.STORMWIND_CITY },
+				["coord"] = { 67.6, 36.4, MAP.STORMWIND_CITY },
 				["races"] = { DWARF },
 				["classes"] = { HUNTER },
 				["isBreadcrumb"] = true,
@@ -1016,7 +1016,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(1653, {	-- The Test of Righteousness (1/3)
 				["sourceQuest"] = 1652,	-- The Tome of Valor (4/4)
 				["qg"] = 6171,	-- Duthorian Rall
-				["coord"] = { 39.8, 30.8, MAP.STORMWIND_CITY },
+				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { PALADIN },
 				["lvl"] = 20,

@@ -3932,7 +3932,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6076, {	-- The Hunter's Path [Stormwind City]
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
-					["coord"] = { 61.6, 15.4, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 67.6, 36.4, STORMWIND_CITY },
+						-- #else
+						{ 61.6, 15.4, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -4079,7 +4085,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1653, {	-- The Test of Righteousness (1/3)
 					["sourceQuest"] = 1652,	-- The Tome of Valor (4/4)
 					["qg"] = 6171,	-- Duthorian Rall
-					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 50.5, 47.5, STORMWIND_CITY },
+						-- #else
+						{ 39.8, 30.8, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },

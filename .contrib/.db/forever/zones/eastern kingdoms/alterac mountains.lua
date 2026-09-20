@@ -81,7 +81,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					["coords"] = {
 						{ 36.8, 21.8, MAP.DARNASSUS },	-- Syurna <Rogue Trainer>
 						{ 51.6, 14.6, MAP.IRONFORGE },	-- Hulfdan Blackbeard <Rogue Trainer>
-						{ 74.6, 52.8, MAP.STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
+						{ 77.2, 65.2, MAP.STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
 					},
 				},
 				["hordeQuestData"] = {

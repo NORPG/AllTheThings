@@ -209,7 +209,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 			}),
 			q(7023, {	-- Greatfather Winter is Here! (Alliance)
 				["qg"] = 13435,	-- Khole Jinglepocket
-				["coord"] = { 55.0, 59.2, MAP.STORMWIND_CITY },
+				["coord"] = { 62.8, 70.2, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 10,
@@ -528,7 +528,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				},
 			}),
 			n(13435, {	-- Khole Jinglepocket <Smokywood Pastures>
-				["coord"] = { 55.0, 59.6, MAP.STORMWIND_CITY },
+				["coord"] = { 62.8, 70.2, MAP.STORMWIND_CITY },
 				["groups"] = HOLIDAY_VENDOR_GROUPS_RED,
 			}),
 			n(13429, {	-- Nardstrum Copperpinch <Smokywood Pastures>

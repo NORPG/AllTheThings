@@ -315,7 +315,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coords"] = {
 							{ 36.8, 21.8, DARNASSUS },	-- Syurna <Rogue Trainer>
 							{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard <Rogue Trainer>
+							-- #if AFTER WRATH
+							{ 77.2, 65.2, STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
+							-- #else
 							{ 74.6, 52.8, STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
+							-- #endif
 						},
 					},
 					["hordeQuestData"] = {

@@ -740,7 +740,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(3000, {	-- The Tome of Divinity [Stormwind City]
 				["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-				["coord"] = { 37.2, 33.0, MAP.STORMWIND_CITY },
+				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				["races"] = { DWARF },
 				["classes"] = { PALADIN },
 				["isBreadcrumb"] = true,

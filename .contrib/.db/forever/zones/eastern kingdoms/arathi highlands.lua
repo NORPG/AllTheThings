@@ -392,7 +392,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(690, {	-- Malin's Request (1/2)
 				["qg"] = 2708,	-- Archmage Malin
-				["coord"] = { 39.8, 81.2, MAP.STORMWIND_CITY },
+				["coord"] = { 50.6, 87.6, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["lvl"] = 30,

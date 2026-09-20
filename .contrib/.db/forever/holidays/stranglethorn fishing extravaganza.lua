@@ -32,10 +32,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 				["repeatable"] = true,
 			}),
 			q(8229, {	-- Could I get a Fishing Flier?
-				["qg"] = 15116,	-- Grinkle <Fishing Promoter>
-				["coord"] = { 53.25, 70.65, MAP.ORGRIMMAR },
+				["qg"] = 15119,	-- Barrus <Fishing Promoter>
+				["coord"] = { 28.2, 74.4, MAP.IRONFORGE },
 				["requireSkill"] = FISHING,
-				["races"] = HORDE_ONLY,
+				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 				["lvl"] = 35,
 				["groups"] = {
@@ -43,10 +43,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 				},
 			}),
 			q(8228, {	-- Could I get a Fishing Flier?
-				["qg"] = 15119,	-- Barrus <Fishing Promoter>
-				["coord"] = { 54.8, 63.1, MAP.STORMWIND_CITY },
+				["qg"] = 15116,	-- Grinkle <Fishing Promoter>
+				["coord"] = { 52.4, 73, MAP.ORGRIMMAR },
 				["requireSkill"] = FISHING,
-				["races"] = ALLIANCE_ONLY,
+				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
 				["lvl"] = 35,
 				["groups"] = {

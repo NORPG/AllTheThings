@@ -45,7 +45,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 			}),
 			q(8311, {	-- Hallow's End Treats for Jesper!
 				["qg"] = 15310,	-- Jesper
-				["coord"] = { 47.6, 35.4, MAP.STORMWIND_CITY },
+				["coord"] = { 56.6, 51.8, MAP.STORMWIND_CITY },
 				["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -53,7 +53,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				["groups"] = {
 					q(8356, {	-- Flexing for Nougat (Alliance)
 						["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
-						["coord"] = { 52.6, 65.6, MAP.STORMWIND_CITY },
+						["coord"] = { 60.6, 75.0, MAP.STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["groups"] = {

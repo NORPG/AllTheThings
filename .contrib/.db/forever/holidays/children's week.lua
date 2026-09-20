@@ -46,7 +46,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					{ "i", 18598 },	-- Human Orphan Whistle
 					{ "n", 14305 },	-- Human Orphan
 				},
-				["coord"] = { 47.2, 38.4, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
+				["coord"] = { 56.3, 54.0, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
 				["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -93,7 +93,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			}),
 			q(1468, {	-- Children's Week [Alliance - Human - START]
 				["qg"] = 14450,	-- Orphan Matron Nightingale
-				["coord"] = { 47.4, 38.6, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
+				["coord"] = { 56.3, 54.0, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
 				["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -247,7 +247,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				["groups"] = {
 					objective(1, {	-- 0/1 Tigule's Strawberry Ice Cream
 						["provider"] = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
-						["coord"] = { 54.4, 65.8, MAP.STORMWIND_CITY },	-- Emmithue Smails <Sweet Treats>
+						["coord"] = { 61.8, 75.2, MAP.STORMWIND_CITY },
 						["cr"] = 14481,	-- Emmithue Smails <Sweet Treats>
 					}),
 				},

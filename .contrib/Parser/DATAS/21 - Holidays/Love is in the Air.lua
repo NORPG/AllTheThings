@@ -1358,7 +1358,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(9027, {	-- Tracing the Source (A) (2/2)
 				["sourceQuest"] = 9026,	-- Tracing the Source (A) (1/2)
 				["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
-				["coord"] = { 52.8, 65.4, STORMWIND_CITY },
+				["coords"] = {
+					-- #if AFTER WRATH
+					{ 60.6, 75.0, STORMWIND_CITY },
+					-- #else
+					{ 52.8, 65.4, STORMWIND_CITY },
+					-- #endif
+				},
 				["timeline"] = { ADDED_1_9_3, REMOVED_3_3_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,

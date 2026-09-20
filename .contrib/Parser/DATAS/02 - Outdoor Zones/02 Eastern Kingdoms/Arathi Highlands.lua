@@ -935,7 +935,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(690, {	-- Malin's Request (1/2)
 					["qg"] = 2708,	-- Archmage Malin
-					["coord"] = { 39.8, 81.2, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 50.6, 87.6, STORMWIND_CITY },
+						-- #else
+						{ 39.8, 81.2, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
