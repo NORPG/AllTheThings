@@ -283,7 +283,7 @@ root(ROOTS.Character, {
 				races_disp = { TROLL },
 			}),
 			i(2092, {	-- Worn Dagger
-				-- description = "Starter Gear for Human Hunter, Human Warlock, Dwarf Rogue, Night Elf Hunter, Night Elf Rogue, Gnome Rogue, Gnome Warlock, Orc Rogue, Orc Warlock, Undead Rogue, Undead Warlock, Troll Rogue, Troll Warlock, Skyborne (A) Hunter, Skyborne (A) Rogue, Skyborne (H) Hunter, Skyborne (H) Rogue",
+				-- description = "Starter Gear for Human Hunter, Human Rogue, Human Warlock, Dwarf Rogue, Night Elf Hunter, Night Elf Rogue, Gnome Rogue, Gnome Warlock, Orc Rogue, Orc Warlock, Undead Rogue, Undead Warlock, Troll Rogue, Troll Warlock, Skyborne (A) Hunter, Skyborne (A) Rogue, Skyborne (H) Hunter, Skyborne (H) Rogue",
 			}),
 		}),
 	}),
