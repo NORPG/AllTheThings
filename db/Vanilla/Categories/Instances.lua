@@ -1308,7 +1308,7 @@ i(20031,{b=1,f=55,lvl=55,u=14})}}),
 q(8238,{coords={
 [1434]={{14.5,15.8}}},cost={{"i",19703,1},{"i",19702,1},{"i",19701,1}},lvl=58,qgs={15070},repeatable=1,u=14,g={
 i(19858,{b=1,factionID=270,repeatable=1,u=14})}}),
-q(8227,{lvl=58,providers={{"i",19973}},requireSkill=356,u=14}),
+q(8227,{lvl=58,maps={1445},providers={{"o",180366}},qis={19973},requireSkill=356,u=14}),
 q(8239,{coords={
 [1434]={{14.5,15.8}}},cost={{"i",19706,1},{"i",19705,1},{"i",19704,1}},lvl=58,qgs={15070},repeatable=1,u=14,g={
 i(19858,{b=1,factionID=270,repeatable=1,u=14})}}),
@@ -1511,8 +1511,6 @@ s(164056,19899,{b=1,f=4,loc=46,lvl=60,u=14}),
 s(164261,20260,{b=1,f=6,loc=46,lvl=60,u=14}),
 s(164055,19897,{b=1,f=4,loc=47,lvl=60,u=14}),
 i(19898,{b=1,f=52,lvl=60,u=14})}}),
-o(180366,{description="Fishermen with 300 skill can interact with this to receive the quest item.",requireSkill=356,u=14,g={
-i(19973,{requireSkill=356,u=14})}}),
 n(15114,{cost={{"i",19975,5},{"i",19974,1}},description="You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",sourceQuests={8227},u=14,g={
 s(164078,19944,{b=1,f=28,lvl=60,u=14}),
 s(164080,19946,{b=1,f=29,lvl=60,u=14}),
