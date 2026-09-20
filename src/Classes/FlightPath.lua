@@ -168,9 +168,9 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 		end
 	end
 end)
-app.AddEventHandler("OnUpdateModeFilters", function(self)
+app.AddEventHandler("OnUpdateModeFilters", function(settings)
 	app:UnregisterEvent("TAXIMAP_OPENED")
-	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
+	if settings:Get("Thing:FlightPaths") or settings:Get("DebugMode") then
 		app:RegisterEvent("TAXIMAP_OPENED")
 	end
 end)
