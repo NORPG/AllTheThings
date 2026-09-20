@@ -224,8 +224,8 @@ root(ROOTS.Character, {
 	cl(ROGUE, {
 		n(STARTER_GEAR, {
 			i(3111, {	-- Crude Throwing Axe
-				-- description = "Starter Gear for Orc Rogue, Troll Warrior, Troll Rogue",
-				races_disp = { ORC, TROLL },
+				-- description = "Starter Gear for Dwarf Rogue, Orc Rogue, Troll Warrior, Troll Rogue",
+				races_disp = { DWARF, ORC, TROLL },
 			}),
 			i(48, {	-- Footpad's Pants
 				-- description = "Starter Gear for Human Rogue, Dwarf Rogue, Night Elf Rogue, Gnome Rogue",
