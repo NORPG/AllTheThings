@@ -1489,7 +1489,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(268337),	-- Windwell (DECOR!)
 				i(268340),	-- Zephras Drapery (DECOR!)
 			}),
-			n(EPIC_PACK, {
+			n(EPIC_EDITION, {
 				--- FOREVER ---
 				-- #if FOREVER
 				i(270272),	-- Lordaeron Forever (COSMETIC!)
