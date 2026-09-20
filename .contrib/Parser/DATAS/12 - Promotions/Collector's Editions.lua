@@ -396,24 +396,52 @@ WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 		tw = "這些獎勵是提供給購買了魔獸爭霸III：淬鍊重生 - 數位戰利版的玩家的。",
 	},
 });
+-- NOTE: Released on September 12, 2026. (BlizzCon 2026)
+-- NOTE: No longer available on the store since ???.
 WORLD_OF_WARCRAFT_FOREVER_COLLECTORS = createHeader({
-	readable = "World of Warcraft: Forever Collector's Edition",
+	readable = "World of Warcraft: Forever",
 	icon = 1120721,
 	text = {
-		en = "World of Warcraft: Forever Collector's Edition",
+		en = "World of Warcraft: Forever",
 	},
 	description = {
-		en = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
+		en = "These rewards are available to anyone who purchased a World of Warcraft: Forever upgrade.",
 	},
 });
+-- NOTE: Released on September 12, 2026. (BlizzCon 2026)
+-- NOTE: No longer available on the store since ???.
+SKYBORNE_HEROIC_PACK = createHeader({
+	readable = "World of Warcraft: Forever - Skyborne Heroic Pack",
+	icon = 1120721,
+	text = {
+		en = "Skyborne Heroic Pack",
+	},
+	description = {
+		en = "These rewards are available to anyone who purchased a World of Warcraft: Forever - Skyborne Heroic Pack or higher.",
+	},
+});
+-- NOTE: Released on September 12, 2026. (BlizzCon 2026)
+-- NOTE: No longer available on the store since ???.
+SKYBORNE_EPIC_PACK = createHeader({
+	readable = "World of Warcraft: Forever - Skyborne Epic Pack",
+	icon = 1120721,
+	text = {
+		en = "Skyborne Epic Pack",
+	},
+	description = {
+		en = "These rewards are available to anyone who purchased a World of Warcraft: Forever - Skyborne Epic Pack or higher.",
+	},
+});
+-- NOTE: Released on September 12, 2026. (BlizzCon 2026)
+-- NOTE: No longer available on the store since January 11, 2027.
 WARCRAFT_FOREVER_COLLECTION = createHeader({
 	readable = "Warcraft Forever Collection",
 	icon = 1120721,
 	text = {
-		en = "World of Warcraft: Forever Collection",
+		en = "Warcraft Forever Collection",
 	},
 	description = {
-		en = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
+		en = "These rewards are available to anyone who purchased Warcraft Forever Collection or physical equivalents.",
 	},
 });
 
@@ -1428,7 +1456,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(WORLD_OF_WARCRAFT_FOREVER_COLLECTORS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 		["description"] = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
 		["groups"] = {
-			n(HEROIC_EDITION, {
+			n(SKYBORNE_HEROIC_PACK, {
 				--- FOREVER ---
 				-- #if FOREVER
 				--TODO: Skyborne Race
@@ -1445,7 +1473,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(268337),	-- Windwell (DECOR!)
 				i(268340),	-- Zephras Drapery (DECOR!)
 			}),
-			n(EPIC_EDITION, {
+			n(SKYBORNE_EPIC_PACK, {
 				--- FOREVER ---
 				-- #if FOREVER
 				i(270272),	-- Lordaeron Forever (COSMETIC!)
