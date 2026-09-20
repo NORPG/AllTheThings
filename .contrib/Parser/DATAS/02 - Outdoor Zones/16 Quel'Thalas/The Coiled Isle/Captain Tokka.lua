@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					}),
 					prof(FISHING, {
-						spell(1306775, { -- Venom Fishing
+						spell(1306775, {	-- Venom Fishing
 							["description"] = "Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",
 							["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
 							["groups"] = {

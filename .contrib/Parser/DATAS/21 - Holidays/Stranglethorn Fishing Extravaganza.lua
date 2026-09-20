@@ -70,7 +70,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			}),
 			q(8228, {	-- Could I get a Fishing Flier?
 				["qg"] = 15116,	-- Grinkle <Fishing Promoter>
-				["coord"] = { 52.4, 73, ORGRIMMAR },
+				["coord"] = { 52.4, 73.0, ORGRIMMAR },
 				["requireSkill"] = FISHING,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
@@ -234,7 +234,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					i(19806),	-- Dezian Queenfish
 					i(19805),	-- Keefer's Angelfish
 					i(19808, {	-- Rockhide Strongfish
-						["description"] = 
+						["description"] =
 							-- #if BEFORE LEGION
 							"Keep this in your bank until Transmog is added, otherwise you'll need to obtain it again. Fair warning!",
 							-- #elseif AFTER TWW

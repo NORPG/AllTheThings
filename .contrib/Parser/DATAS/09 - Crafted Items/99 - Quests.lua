@@ -89,9 +89,7 @@ root(ROOTS.Craftables, {
 								136629,	-- Felgibber Shotgun
 								136632,	-- Chaos Blaster
 						}},
-						["groups"] = {
-							i(136911),	-- Knockoff Blingtron	-- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
-						},
+						["groups"] = { i(136911) },	-- Knockoff Blingtron (PET!
 					}),
 				},
 			}),

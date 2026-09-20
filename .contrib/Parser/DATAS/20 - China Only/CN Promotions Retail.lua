@@ -85,7 +85,7 @@ root(ROOTS.Promotions, {
 					i(79769),	-- Demon Hunter's Aspect (TOY!)
 					i(72134),	-- Gregarious Grell (PET!)
 					i(223471),	-- Kaldorei War Wolf (MOUNT!)
-					i(252656, { -- K'areshi Scientific Expedition Supply
+					i(252656, {	-- K'areshi Scientific Expedition Supply
 						["description"] = "Contains a Quantum Token and rarely a Quantum Courser.",
 					}),
 					i(72159),	-- Magical Ogre Idol (TOY!)
@@ -191,12 +191,12 @@ root(ROOTS.Promotions, {
 					i(273640),	-- Condensed Anima Orb (DECOR!)
 					iensemble(270222),	-- Ensemble: Sire's Ornate Attire (COSMETIC!)
 					i(262661),	-- Ghastropod (MOUNT!)
-					i(271631, { -- Light Guardian's Reward
+					i(271631, {	-- Light Guardian's Reward
 						["description"] = "Contains a Quantum Token and rarely a Quantum Courser.",
 					}),
 					i(262881),	-- Lil' Staropod (PET!)
 					i(272355),	-- Orchestrion of Echoing Atonement (DECOR!)
-					i(274427, { -- Sha Loot Box
+					i(274427, {	-- Sha Loot Box
 						["description"] = "1.25% chance for any of the following:",
 						["groups"] = {
 							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
@@ -268,7 +268,7 @@ root(ROOTS.Promotions, {
 					i(272353),	-- Auspicious Verdant Basin (DECOR!)
 					i(275999),	-- Flowering Mantle (COSMETIC!)
 					i(275818),	-- Pinky (PET!)
-					i(274427, { -- Sha Loot Box
+					i(274427, {	-- Sha Loot Box
 						["description"] = "1.25% chance for any of the following:",
 						["groups"] = {
 							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
@@ -307,11 +307,11 @@ root(ROOTS.Promotions, {
 					i(274925),	-- Delta (PET!)
 					i(279006),	-- Fisher's Pack (COSMETIC!)
 					i(252194),	-- Fishmonger May (PET!)
-					i(271631, { -- Light Guardian's Reward
+					i(271631, {	-- Light Guardian's Reward
 						["description"] = "Contains a Quantum Token and rarely a Quantum Courser.",
 					}),
 					i(276625),	-- Puffin Pack (COSMETIC!)
-					i(274427, { -- Sha Loot Box
+					i(274427, {	-- Sha Loot Box
 						["description"] = "1.25% chance for any of the following:",
 						["groups"] = {
 							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
@@ -398,7 +398,7 @@ root(ROOTS.Promotions, {
 					-- Login giveaway
 					i(264273),	-- Fel Spirehawk (MOUNT!) (retail)
 					i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!) (retail)
-					i(246917, { -- Thunder-Ridged Elekk (MOUNT!)
+					i(246917, {	-- Thunder-Ridged Elekk (MOUNT!)
 						-- #if BEFORE 12.2.0
 						-- #if AFTER 12.1.0
 						["description"] = "Rewarded from completing the quiz.",

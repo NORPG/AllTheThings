@@ -103,8 +103,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
 				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
-					i(245900),	-- Fleeting Potion of Zealotry+
-					i(245901),	-- Fleeting Potion of Zealotry++
 					i(241315),	-- Haranir Phial of Concentrated Ingenuity+
 					i(241314),	-- Haranir Phial of Concentrated Ingenuity++
 					i(241279),	-- Midnight Catalyst

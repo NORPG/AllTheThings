@@ -23,7 +23,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["groups"] = {
 					i(257281),	-- Fur-Lined Shoes
 					i(257280),	-- Vuldren Hide Bracers
-					objective(1, { -- 0/8 Slay Juvenile Vuldren
+					objective(1, {	-- 0/8 Slay Juvenile Vuldren
 						["provider"] = { "n", 250873 },	-- Juvenile Vuldren
 					}),
 				},
@@ -33,7 +33,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coords"] = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
 				["sourceQuests"] = { 92460 },	-- Coming of Age
 				["groups"] = {
-					objective(1, { -- 0/8 Slay Pesky Cirrusfly
+					objective(1, {	-- 0/8 Slay Pesky Cirrusfly
 						["provider"] = { "n", 251169 },	-- Pesky Cirrusfly
 					}),
 				},
@@ -43,10 +43,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coords"] = { 47.3, 21.9, MAP.ZEPHRAS_ISLE },
 				["sourceQuests"] = { 92460 },	-- Coming of Age
 				["groups"] = {
-					objective(1, { -- 0/7 Slay Al'Aketh Convert
+					objective(1, {	-- 0/7 Slay Al'Aketh Convert
 						["provider"] = { "n", 251160 },	-- Al'Aketh Convert
 					}),
-					objective(2, { -- 0/6 Destroy Roiling Winds
+					objective(2, {	-- 0/6 Destroy Roiling Winds
 						["provider"] = { "n", 251143 },	-- Roiling Winds
 					}),
 				},

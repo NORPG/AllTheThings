@@ -672,12 +672,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(84611, {["isRepeatable"] = true}),	-- Marked as repeatable because of Inaccurate Unflagged Quests report
 			})),
 
-			-- 11.1.5
-			expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
-				q(90899),	--
-				q(90900),	-- completed in The Jade Forest?
-			})),
-
 			-- 11.1.7
 			expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
 				q(87560),	--

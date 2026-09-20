@@ -331,7 +331,7 @@ else	-- Outside of Season
 		GROUPS.HEROIC_PLUS_8_0,
 		GROUPS.HEROIC_8_0,
 		GROUPS.MYTHIC_8_0,
-		d(DIFFICULTY.DUNGEON.KEYSTONE, { -- TODO 12.2 confirm if available from Heroic/Mythic on non-HOA character
+		d(DIFFICULTY.DUNGEON.KEYSTONE, {	-- TODO 12.2 confirm if available from Heroic/Mythic on non-HOA character
 			GROUPS.HERO_TRACK_AZEWRONG_12_1,	-- New HEROIC_12_1 Azewrong
 			GROUPS.MYTH_TRACK_AZEWRONG_12_1,	-- New MYTHIC_12_1 Azewrong
 		}),

@@ -123,7 +123,7 @@ root(ROOTS.Promotions, {
 				i(272312),	-- Crimson Bloodwater (TOY!)
 				i(45037),	-- Epic Purple Shirt
 				mount(457485),	-- Grizzly Hills Packmaster (MOUNT!)
-				i(273849, { -- Landro's Sha-Touched Loot Box
+				i(273849, {	-- Landro's Sha-Touched Loot Box
 					["description"] = "1.25% chance for any of the following:",
 					["groups"] = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
@@ -196,7 +196,7 @@ root(ROOTS.Promotions, {
 			["groups"] = {
 				i(98550),	-- Blossoming Ancient (PET!)
 				i(170206),	-- Crown of Infinite Prosperity (COSMETIC!)
-				i(273849, { -- Landro's Sha-Touched Loot Box
+				i(273849, {	-- Landro's Sha-Touched Loot Box
 					["description"] = "1.25% chance for any of the following:",
 					["groups"] = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
@@ -247,7 +247,7 @@ root(ROOTS.Promotions, {
 				i(198428),	-- Tuskarr Dinghy (TOY!)
 				i(274037),	-- Tuskarr Hermit Crab (MOUNT!)
 				i(274730),	-- Tuskarr Ice Fishing Tent (TOY!)
-				i(273849, { -- Landro's Sha-Touched Loot Box
+				i(273849, {	-- Landro's Sha-Touched Loot Box
 					["description"] = "1.25% chance for any of the following:",
 					["groups"] = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)

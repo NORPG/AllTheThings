@@ -289,77 +289,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	["maps"] = { DUN_MOROGH, DUROTAR },
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
-				crit(60561, {	-- Ohn'ahran Plains, Maruukai
-					["_quests"] = { 77152 },
-				}),
-				crit(61569, {	-- Ohn'ahran Plains, Rusza'Thar Reach
-					["_quests"] = { 77745 },
-				}),
-				crit(60562, {	-- Ohn'ahran Plains, Shady Sanctuary
-					["_quests"] = { 77099 },
-				}),
-				crit(61571, {	-- Thaldraszus, Algeth'era Court
-					["_quests"] = { 77747 },
-				}),
-				crit(60563, {	-- Thaldraszus, Eon's Fringe
-					["_quests"] = { 77155 },
-				}),
-				crit(60564, {	-- Thaldraszus, Valdrakken
-					["_quests"] = { 77153 },
-				}),
-				crit(60565, {	-- The Azure Span, Camp Antonidas
-					["_quests"] = { 77096 },
-				}),
-				crit(61570, {	-- The Azure Span, Camp Nowhere
-					["_quests"] = { 77746 },
-				}),
-				crit(60566, {	-- The Azure Span, Iskaara
-					["_quests"] = { 77097 },
-				}),
-				crit(61568, {	-- The Waking Shores, Dragonscale Basecamp
-					["_quests"] = { 77744 },
-				}),
-				crit(60567, {	-- The Waking Shores, Ruby Lifeshrine
-					["_quests"] = { 76531 },
-				}),
-				crit(60568, {	-- The Waking Shores, Wingrest Embassy
-					["_quests"] = { 77095 },
-				}),
-			})),
-			ach(41212, {	-- A Round on the House in Khaz Algar (automated)
-				["timeline"] = { ADDED_11_2_0 },
-			}),
-			ach(63253, {	-- A Round on the House in Midnight
-				["timeline"] = { ADDED_12_1_0 },
-			}),
+			ach(18579, { ["timeline"] = { ADDED_10_1_7 } }), 	-- A Round on the House (automated)
+			ach(41212, { ["timeline"] = { ADDED_11_2_0 } }),	-- A Round on the House in Khaz Algar (automated)
+			ach(63253, { ["timeline"] = { ADDED_12_1_0 } }),	-- A Round on the House in Midnight (automated)
 			ach(1684, {	-- Brewmaster (A)
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",
-					1186,				-- Down With The Dark Iron
-					1185,				-- The Brewfest Diet
-					2796,				-- Brew of the Month
-					295,				-- Direbrewfest
-					303,				-- Have Keg, Will Travel
-					1936,				-- Does Your Wolpertinger Linger?
+					1186,	-- Down With The Dark Iron
+					1185,	-- The Brewfest Diet
+					2796,	-- Brew of the Month
+					295,	-- Direbrewfest
+					303,	-- Have Keg, Will Travel
+					1936,	-- Does Your Wolpertinger Linger?
 				}},
 				["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					title(101),				-- Brewmaster
-				},
+				["groups"] = { title(101) },	-- Brewmaster
 			}),
 			ach(1683, {	-- Brewmaster (H)
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",
 					-- #if BEFORE 8.2.0
-					1186,				-- Down With The Dark Iron
+					1186,	-- Down With The Dark Iron
 					-- #endif
-					1185,				-- The Brewfest Diet
-					2796,				-- Brew of the Month
-					295,				-- Direbrewfest
-					303,				-- Have Keg, Will Travel
-					1936,				-- Does Your Wolpertinger Linger?
+					1185,	-- The Brewfest Diet
+					2796,	-- Brew of the Month
+					295,	-- Direbrewfest
+					303,	-- Have Keg, Will Travel
+					1936,	-- Does Your Wolpertinger Linger?
 				}},
 				["timeline"] = { ADDED_3_0_2 },
 				-- #if BEFORE MOP
@@ -618,79 +575,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(243292, {	-- Bag of Brewfest Merchandise (Rare) Only Cosmectics
 						["description"] = "Granted for achieving a minimum of 66% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
 						["groups"] = {
-							i(241232),	-- Brewer's Basic Shoulder Cape
-							i(241341),	-- Brewer's Blue Shoulder Cape
-							i(241343),	-- Brewer's Basic Beret
-							i(241345),	-- Brewer's Blue Beret
-							i(241347),	-- Brewer's Basic Kilt
-							i(241350),	-- Brewer's Blue Kilt
-							i(249857),	-- Brewer's Blue Belt
 							i(249858),	-- Brewer's Basic Belt
-							i(279524, {	-- Brewer's Purple Kilt
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279529, {	-- Brewer's Purple Shoulder Cape
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279530, {	-- Brewer's Purple Belt
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279531, {	-- Brewer's Purple Beret
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279532, {	-- Brewer's Red Beret
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279533, {	-- Brewer's Red Shoulder Cape
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279534, {	-- Brewer's Red Kilt
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279535, {	-- Brewer's Red Belt
-								["timeline"] = { ADDED_12_1_0 },
-							}),
+							i(241343),	-- Brewer's Basic Beret
+							i(241347),	-- Brewer's Basic Kilt
+							i(241232),	-- Brewer's Basic Shoulder Cape
+							i(249857),	-- Brewer's Blue Belt
+							i(241345),	-- Brewer's Blue Beret
+							i(241350),	-- Brewer's Blue Kilt
+							i(241341),	-- Brewer's Blue Shoulder Cape
+							i(279530, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Purple Belt
+							i(279531, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Purple Beret
+							i(279524, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Purple Kilt
+							i(279529, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Purple Shoulder Cape
+							i(279535, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Red Belt
+							i(279532, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Red Beret
+							i(279533, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Red Shoulder Cape
+							i(279534, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Red Kilt
 						},
 					}),
 					i(243293, {	-- Bag of Brewfest Merchandise (Epic) BoE's & Cosmetics
 						["description"] = "Granted for achieving 100% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+						["sym"] = { {"select","itemID",243292},{"pop"} },	-- Bag of Brewfest Merchandise (Rare) Only Cosmectics
 						["groups"] = {
-							i(241232),	-- Brewer's Basic Shoulder Cape
-							i(241341),	-- Brewer's Blue Shoulder Cape
-							i(241343),	-- Brewer's Basic Beret
-							i(241345),	-- Brewer's Blue Beret
-							i(241347),	-- Brewer's Basic Kilt
-							i(241350),	-- Brewer's Blue Kilt
-							i(249857),	-- Brewer's Blue Belt
-							i(249858),	-- Brewer's Basic Belt
-							i(279524, {	-- Brewer's Purple Kilt
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279529, {	-- Brewer's Purple Shoulder Cape
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279530, {	-- Brewer's Purple Belt
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279531, {	-- Brewer's Purple Beret
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279532, {	-- Brewer's Red Beret
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279533, {	-- Brewer's Red Shoulder Cape
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279534, {	-- Brewer's Red Kilt
-								["timeline"] = { ADDED_12_1_0 },
-							}),
-							i(279535, {	-- Brewer's Red Belt
-								["timeline"] = { ADDED_12_1_0 },
-							}),
 							i(245950),	-- Dark Iron Portable Forge
+							i(246784),	-- Dark Iron's Ancient Crusher
 							i(245955),	-- Dark Iron's Ceremonial Mace
 							i(245959),	-- Dark Iron's Crystal Ward
-							i(246784),	-- Dark Iron's Ancient Crusher
 							i(246801),	-- Dark Iron's Mighty Crossbow
 						},
 					}),
@@ -1134,166 +1044,144 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			end]],
 			-- #endif
 			["groups"] = {
-				header(HEADERS.Achievement, 18579, {	-- A Round on the House on the Dragon Isles
+				header(HEADERS.Achievement, 18579, sharedDataSelf({ -- A Round on the House on the Dragon Isles
+					["isYearly"] = true,
+					["timeline"] = { ADDED_10_1_7 },
+					["groups"] = BREWFEST_TOKEN,
+				}, {
 					q(77152, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Maruukai
-						["provider"] = { "o", 405009 },	-- Bar Tab Barrel
+						["provider"] = { "o", 405009 },	--Bar Tab Barrel
 						["coord"] = { 59.8, 38.7, OHNAHRAN_PLAINS },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77745, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Rusza'Thar Reach
-						["provider"] = { "o", 407192 },	-- Bar Tab Barrel
+						["provider"] = { "o", 407192 },	--Bar Tab Barrel
 						["coord"] = { 85.8, 35.3, OHNAHRAN_PLAINS },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77099, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Shady Sanctuary
 						["provider"] = { "o", 404992 },	-- Bar Tab Barrel
 						["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77747, {	-- Bar Tab Barrel @ Thaldraszus, Algeth'era Court
-						["provider"] = { "o", 407201 },	-- Bar Tab Barrel
+						["provider"] = { "o", 407201 },	--Bar Tab Barrel
 						["coord"] = { 50.1, 42.7, THALDRASZUS },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77155, {	-- Bar Tab Barrel @ Thaldraszus, Eon's Fringe
-						["provider"] = { "o", 405012 },	-- Bar Tab Barrel
+						["provider"] = { "o", 405012 },	--Bar Tab Barrel
 						["coord"] = { 52.2, 81.5, THALDRASZUS },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77153, {	-- Bar Tab Barrel @ Thaldraszus, Valdrakken
-						["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+						["provider"] = { "o", 405010 },	--Bar Tab Barrel
 						["coord"] = { 47.9, 46.8, VALDRAKKEN },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77096, {	-- Bar Tab Barrel @ The Azure Span, Camp Antonidas
-						["provider"] = { "o", 404982 },	-- Bar Tab Barrel
+						["provider"] = { "o", 404982 },	--Bar Tab Barrel
 						["coord"] = { 46.9, 40.2, THE_AZURE_SPAN },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77746, {	-- Bar Tab Barrel @ The Azure Span, Camp Nowhere
-						["provider"] = { "o", 407199 },	-- Bar Tab Barrel
+						["provider"] = { "o", 407199 },	--Bar Tab Barrel
 						["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77097, {	-- Bar Tab Barrel @ The Azure Span, Iskaara
-						["provider"] = { "o", 404987 },	-- Bar Tab Barrel
+						["provider"] = { "o", 404987 },	--Bar Tab Barrel
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(77744, {	-- Bar Tab Barrel @ The Waking Shores, Dragonscale Basecamp
-						["provider"] = { "o", 407186 },	-- Bar Tab Barrel
+						["provider"] = { "o", 407186 },	--Bar Tab Barrel
 						["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(76531, {	-- Bar Tab Barrel @ The Waking Shores, Ruby Lifeshrine
-						["provider"] = { "o", 404337 },	-- Bar Tab Barrel
-						["coord"] = { 58.3,67.5, THE_WAKING_SHORES },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
+						["provider"] = { "o", 404337 },	--Bar Tab Barrel
+						["coord"] = { 58.3, 67.5, THE_WAKING_SHORES },
 					}),
 					q(77095, {	-- Bar Tab Barrel @ The Waking Shores, Wingrest Embassy
-						["provider"] = { "o", 404981 },	-- Bar Tab Barrel
+						["provider"] = { "o", 404981 },	--Bar Tab Barrel
 						["coord"] = { 76.3, 35.4, THE_WAKING_SHORES },
-						["timeline"] = { ADDED_10_1_7 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
-				}),
-				header(HEADERS.Achievement, 41212, {	-- A Round on the House in Khaz Algar
+				})),
+				header(HEADERS.Achievement, 41212, sharedDataSelf({ -- A Round on the House in Khaz Algar
+					["isYearly"] = true,
+					["timeline"] = { ADDED_11_0_2 },
+					["groups"] = BREWFEST_TOKEN,
+				}, {
 					q(84305, {	-- Bar Tab Barrel @ Dornogal, Stonelight Rest
-						["provider"] = { "o", 457168 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457168 },	--Bar Tab Barrel
 						["coord"] = { 44.1, 46.1, DORNOGAL },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84306, {	-- Bar Tab Barrel @ Isle of Dorn, Freywold Village
-						["provider"] = { "o", 457170 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457170 },	--Bar Tab Barrel
 						["coord"] = { 41.9, 74.2, ISLE_OF_DORN },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84307, {	-- Bar Tab Barrel @ The Ringing Deeps, Gundargaz
-						["provider"] = { "o", 457171 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457171 },	--Bar Tab Barrel
 						["coord"] = { 48.3, 32.2, THE_RINGING_DEEPS },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84308, {	-- Bar Tab Barrel @ The Ringing Deeps, Opportunity Point
-						["provider"] = { "o", 457172 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457172 },	--Bar Tab Barrel
 						["coord"] = { 63.4, 78.8, THE_RINGING_DEEPS },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84310, {	-- Bar Tab Barrel @ Hallowfall, Fjord Tavern
-						["provider"] = { "o", 457173 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457173 },	--Bar Tab Barrel
 						["coord"] = { 49.2, 39.5, HALLOWFALL },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84311, {	-- Bar Tab Barrel @ Hallowfall, Empire's Edge Tavern
-						["provider"] = { "o", 457174 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457174 },	--Bar Tab Barrel
 						["coord"] = { 42.8, 55.8, HALLOWFALL },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84313, {	-- Bar Tab Barrel @ City of Threads, The Cobwebs
-						["provider"] = { "o", 457176 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457176 },	--Bar Tab Barrel
 						["coord"] = { 57.8, 39.9, NERUBAR_LOWER },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84314, {	-- Bar Tab Barrel @ City of Threads, The Skittering Lounge
-						["provider"] = { "o", 457180 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457180 },	--Bar Tab Barrel
 						["coord"] = { 49.8, 21.6, NERUBAR },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84315, {	-- Bar Tab Barrel @ Azj-Kahet, Rock Bottom Inn
-						["provider"] = { "o", 457182 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457182 },	--Bar Tab Barrel
 						["coord"] = { 77.8, 62.7, AZJ_KAHET },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
 					q(84316, {	-- Bar Tab Barrel @ Azj-Kahet, The Trap Door
-						["provider"] = { "o", 457183 },	-- Bar Tab Barrel
+						["provider"] = { "o", 457183 },	--Bar Tab Barrel
 						["coord"] = { 56.7, 38.7, AZJ_KAHET },
-						["timeline"] = { ADDED_11_0_2 },
-						["isYearly"] = true,
-						["groups"] = BREWFEST_TOKEN,
 					}),
-				}),
-				--header(HEADERS.Achievement, 63253, {	-- A Round on the House in Midnight
-				--}),
+				})),
+				header(HEADERS.Achievement, 63253, sharedDataSelf({	-- A Round on the House in Midnight
+					["isYearly"] = true,
+					["timeline"] = { ADDED_12_1_0 },
+					["groups"] = BREWFEST_TOKEN,
+				}, {
+					q(96910, {	-- Bar Tab Barrel @ Wayfarer's Rest, Silvermoon City
+						["provider"] = { "o", 656382 },	-- Bar Tab Barrel
+						["coord"] = { 54.8, 69.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					}),
+					q(96911, {	-- Bar Tab Barrel @ Tranquillien, Eversong Woods
+						["provider"] = { "o", 656389 },	-- Bar Tab Barrel
+						["coord"] = { 47.7, 67.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(96952, {	-- Bar Tab Barrel @ Tranquillien, Eversong Woods
+						["provider"] = { "o", 656486 },	-- Bar Tab Barrel
+						["coord"] = { 61.6, 70.0, ARCANTINA },
+					}),
+					q(96925, {	-- Bar Tab Barrel @ The Den, Harandar
+						["provider"] = { "o", 656402 },	-- Bar Tab Barrel
+						["coord"] = { 64.2, 60.7, 2576 },	-- The Den
+					}),
+					q(96924, {	-- Bar Tab Barrel @ Har'athir, Harandar
+						["provider"] = { "o", 656401 },	-- Bar Tab Barrel
+						["coord"] = { 69.1, 51.2, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(96926, {	-- Bar Tab Barrel @ Locus Point, Voidstorm
+						["provider"] = { "o", 656403 },	-- Bar Tab Barrel
+						["coord"] = { 41.6, 74.6, MAP.MIDNIGHT.VOIDSTORM },
+					}),
+					q(96922, {	-- Bar Tab Barrel @ Locus Point, Zul'Aman
+						["provider"] = { "o", 656396 },	-- Bar Tab Barrel
+						["coord"] = { 45.4, 65.0, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(96923, {	-- Bar Tab Barrel @ Witherbark Bluffs, Zul'Aman
+						["provider"] = { "o", 656397 },	-- Bar Tab Barrel
+						["coord"] = { 37.4, 22.9, MAP.MIDNIGHT.ZULAMAN },
+					}),
+				})),
 				q(29397, {	-- A New Supplier of Souvenirs (A)
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					["qg"] = 24468,	-- Pol Amberstill
@@ -3120,6 +3008,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						}),
 					},
 				}),
+				n(272042, {	-- Dizzy Alechux <Brewfest Decor Vendor>
+					["coords"] = { 40.3, 17.3, DUROTAR },
+					["timeline"] = { ADDED_12_1_0 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(280339, {	-- Brewfest Fence (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(50),
+						}),
+						i(280341, {	-- Brewfest Fencepost (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(50),
+						}),
+						i(280343, {	-- Hanging Brewfest Wreath (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(75),
+						}),
+						i(280337, {	-- Traditional Brewfest Banner (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(125),
+						}),
+					},
+				}),
 				n(24510, {	-- Driz Tumblequick <Ram Racing Apprentice>
 					["sourceQuest"] = 11419,	-- Brewfest Riding Rams (H)
 					["OnUpdate"] = BREWFEST_RIDING_RAMS_ONUPDATE,
@@ -3175,28 +3082,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						}),
 					},
 				}),
-				n(271372, {	-- Fizz Alechux <Brewfest Decor Specialist>
-				--	["coord"] = { 0.0, 0.0, DUROTAR },	-- TODO: coord
+				n(272030, {	-- Fay Stouthammer <Brewfest Decor Specialist>
+					["coords"] = { 56.1, 36.6, DUN_MOROGH },
 					["timeline"] = { ADDED_12_1_0 },
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(280337, {	-- Traditional Brewfest Banner
-							["cost"] = BREWFEST_TOKEN_COST(125),	-- Brewfest Prize Token
-							["timeline"] = { ADDED_12_1_0 },
+						i(280339, {	-- Brewfest Fence (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(50),
 						}),
-						i(280339, {	-- Brewfest Fence
-							["cost"] = BREWFEST_TOKEN_COST(50),	-- Brewfest Prize Token
-							["timeline"] = { ADDED_12_1_0 },
+						i(280341, {	-- Brewfest Fencepost (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(50),
 						}),
-						i(280341, {	-- Brewfest Fencepost
-							["cost"] = BREWFEST_TOKEN_COST(50),	-- Brewfest Prize Token
-							["timeline"] = { ADDED_12_1_0 },
+						i(280343, {	-- Hanging Brewfest Wreath (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(75),
 						}),
-						i(280343, {	-- Hanging Brewfest Wreath
-							["cost"] = BREWFEST_TOKEN_COST(75),	-- Brewfest Prize Token
-							["timeline"] = { ADDED_12_1_0 },
+						i(280337, {	-- Traditional Brewfest Banner (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(125),
 						}),
 					},
+				}),
+				n(271372, {	-- Fizz Alechux <Brewfest Decor Specialist>
+					["coord"] = { 52.4, 54.4, RAZORWIND_SHORES },
+					["timeline"] = { ADDED_12_1_0 },
+					["races"] = HORDE_ONLY,
+					["sym"] = { { "sub", "common_vendor", 272030 } },	-- Fay Stouthammer <Brewfest Decor Specialist>
 				}),
 				n(23511, {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
 					["coords"] = {
@@ -3323,27 +3232,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				n(271603, {	-- Kay Stouthammer <Brewfest Decor Specialist>
-				--	["coord"] = { 0.0, 0.0, DUN_MOROGH },	-- TODO: coord
+					["coords"] = { 54.3, 32.7, FOUNDERS_POINT },
 					["timeline"] = { ADDED_12_1_0 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(280337, {	-- Traditional Brewfest Banner
-							["cost"] = BREWFEST_TOKEN_COST(125),	-- Brewfest Prize Token
-							["timeline"] = { ADDED_12_1_0 },
-						}),
-						i(280339, {	-- Brewfest Fence
-							["cost"] = BREWFEST_TOKEN_COST(50),	-- Brewfest Prize Token
-							["timeline"] = { ADDED_12_1_0 },
-						}),
-						i(280341, {	-- Brewfest Fencepost
-							["cost"] = BREWFEST_TOKEN_COST(50),	-- Brewfest Prize Token
-							["timeline"] = { ADDED_12_1_0 },
-						}),
-						i(280343, {	-- Hanging Brewfest Wreath
-							["cost"] = BREWFEST_TOKEN_COST(75),	-- Brewfest Prize Token
-							["timeline"] = { ADDED_12_1_0 },
-						}),
-					},
+					["sym"] = { { "sub", "common_vendor", 272042 } },	-- Dizzy Alechux <Brewfest Decor Vendor>
 				}),
 				n(23481, {	-- Keiran Donoghue <Sausage Vendor>
 					["coords"] = {
@@ -3839,6 +3731,12 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(90118),	-- Triggers when you kill Keggor the Fermented during Brewfest Banquet, 1st kill of the day
 			q(91959),	-- (Sometimes) Triggers along with 90118 when you kill Keggor the Fermented during Brewfest Banquet, 1nd kill of the day
 			q(91960),	-- Triggers when you kill Keggor the Fermented during Brewfest Banquet, 2nd kill of the day
+		})),
+	})),
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
+			q(94053),	-- Killed Coren Direbrew (Not Accountwide)
+			--q(94054),	--
 		})),
 	})),
 });

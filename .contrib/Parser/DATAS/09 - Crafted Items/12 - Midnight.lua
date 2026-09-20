@@ -94,6 +94,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 				i(274763, {["timeline"] = {ADDED_12_1_0}}),	-- Fleeting Liquid Luster+
 				i(245905),	-- Fleeting Potion of Devoured Dreams+
 				i(245903),	-- Fleeting Potion of Recklessness+
+				i(245900),	-- Fleeting Potion of Zealotry+
 				i(245919),	-- Fleeting Silvermoon Health Potion+
 			}),
 			i(241284, {	-- Voidlight Potion Cauldron++
@@ -103,6 +104,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 				i(274764, {["timeline"] = {ADDED_12_1_0}}),	-- Fleeting Liquid Luster++
 				i(245904),	-- Fleeting Potion of Devoured Dreams++
 				i(245902),	-- Fleeting Potion of Recklessness++
+				i(245901),	-- Fleeting Potion of Zealotry++
 				i(245918),	-- Fleeting Silvermoon Health Potion++
 			}),
 		}),

@@ -654,6 +654,8 @@ root(ROOTS.Housing, {
 		["crs"] = {
 			271604,	-- Holly Twinklebright <Holiday Decor Vendor> [Founder's Point]
 			271366,	-- Jolli Maxiboom <Holiday Decor Vendor> [Razorwind Shores]
+			272030,	-- Fay Stouthammer <Brewfest Decor Specialist> [Dun Morogh]
+			272042,	-- Dizzy Alechux <Brewfest Decor Vendor> [Durotar]
 		},
 		["groups"] = {
 			i(280335),	-- Brewfest Crate (DECOR!)
