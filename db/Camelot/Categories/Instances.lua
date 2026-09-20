@@ -1,10 +1,12 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cl,e,faction,flt,h,i,inst,mnt,n,o,prof,q,qo,r,s,settings,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateExpansion;
+local ach,ah,cl,crit,e,faction,flt,h,i,inst,mnt,n,o,prof,q,qo,r,s,settings,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateExpansion;
 categories.Instances=
 h(-75,{SortPriority=1,g={
 h(-318,{
+h(-12,{awp=16001,g={
+ach(62054,{questID=84195,sourceQuests={8999,9000,9001,9002,9003,9004,9005,9006,9007,9008,9009,9010,9011,9012,9013,9014,10498,10499}})}}),
 cl(11,{
 q(8905,{c={11},coords={
 [1455]={{43.5,52.6}}},cost={{"i",16714,1},{"g",200000}},lvl=58,maps={317,476,1452},qgs={16013},r=2,g={
@@ -115,8 +117,17 @@ q(8908,{c={2},coords={
 [1455]={{43.5,52.6}}},cost={{"i",16722,1},{"g",200000}},lvl=58,maps={317,476,1452},qgs={16013},r=2,g={
 qo(1,{providers={{"i",21928}}}),
 s(164820,22088,{b=1,f=7,loc=43})}}),
+q(10493,{c={2},coords={
+[1454]={{35,38.3}}},cost={{"i",16722,1},{"g",200000}},lvl=58,maps={317,476,1451},qgs={16012},r=1,g={
+qo(1,{crs={11735,11736,11737,11738,11739},providers={{"i",22381}}}),
+s(164820,22088,{b=1,f=7,loc=43})}}),
 q(8954,{c={2},coords={
 [1423]={{30.9,16.8}}},cost={{"i",16729,1},{"i",16728,1},{"i",16725,1}},lvl=58,maps={250,317},qgs={16016},r=2,sourceQuests={9015},g={
+s(164819,22087,{b=1,f=7,loc=47}),
+s(164824,22092,{b=1,f=7,loc=46}),
+s(164825,22093,{b=1,f=7,loc=41})}}),
+q(10497,{c={2},coords={
+[1423]={{30.9,16.8}}},cost={{"i",16729,1},{"i",16728,1},{"i",16725,1}},lvl=58,maps={250,317},qgs={16016},r=1,sourceQuests={9015},g={
 s(164819,22087,{b=1,f=7,loc=47}),
 s(164824,22092,{b=1,f=7,loc=46}),
 s(164825,22093,{b=1,f=7,loc=41})}}),
@@ -124,8 +135,16 @@ q(8933,{c={2},coords={
 [1455]={{43.5,52.6}}},cost={{"i",16724,1},{"i",16723,1}},lvl=58,maps={242,317},qgs={16013},r=2,sourceQuests={8977},g={
 s(164818,22086,{b=1,f=7,loc=45}),
 s(164822,22090,{b=1,f=7,loc=44})}}),
+q(10495,{c={2},coords={
+[1454]={{35,38.3}}},cost={{"i",16724,1},{"i",16723,1}},lvl=58,maps={242,317},qgs={16012},r=1,sourceQuests={8978},g={
+s(164818,22086,{b=1,f=7,loc=45}),
+s(164822,22090,{b=1,f=7,loc=44})}}),
 q(9002,{c={2},coords={
 [1455]={{43.5,52.6}}},cost={{"i",16726,1},{"i",16727,1}},lvl=58,maps={250,476},qgs={16013},r=2,sourceQuests={8997},g={
+s(164823,22091,{b=1,f=7,loc=40}),
+s(164821,22089,{b=1,f=7,loc=42})}}),
+q(10499,{c={2},coords={
+[1454]={{35,38.3}}},cost={{"i",16726,1},{"i",16727,1}},lvl=58,maps={250,476},qgs={16012},r=1,sourceQuests={8998},g={
 s(164823,22091,{b=1,f=7,loc=40}),
 s(164821,22089,{b=1,f=7,loc=42})}})}),
 cl(5,{
@@ -199,19 +218,36 @@ q(9010,{c={4},coords={
 s(164781,22005,{b=1,f=5,loc=40}),
 s(164785,22009,{b=1,f=5,loc=42})}})}),
 cl(7,{
+q(10492,{c={7},coords={
+[1455]={{43.5,52.6}}},cost={{"i",16671,1},{"g",200000}},lvl=58,maps={317,476,1452},qgs={16013},r=2,g={
+qo(1,{providers={{"i",21928}}}),
+s(164826,22095,{b=1,f=6,loc=43})}}),
 q(8918,{c={7},coords={
 [1454]={{35,38.3}}},cost={{"i",16671,1},{"g",200000}},lvl=58,maps={317,476,1451},qgs={16012},r=1,g={
 qo(1,{crs={11735,11736,11737,11738,11739},providers={{"i",22381}}}),
 s(164826,22095,{b=1,f=6,loc=43})}}),
+q(10496,{c={7},coords={
+[1423]={{30.9,16.8}}},cost={{"i",16669,1},{"i",16668,1},{"i",16670,1}},lvl=58,maps={250,317},qgs={16016},r=2,sourceQuests={9015},g={
+s(164827,22096,{b=1,f=6,loc=47}),
+s(164831,22100,{b=1,f=6,loc=46}),
+s(164832,22101,{b=1,f=6,loc=41})}}),
 q(8957,{c={7},coords={
 [1423]={{30.9,16.8}}},cost={{"i",16669,1},{"i",16668,1},{"i",16670,1}},lvl=58,maps={250,317},qgs={16016},r=1,sourceQuests={9015},g={
 s(164827,22096,{b=1,f=6,loc=47}),
 s(164831,22100,{b=1,f=6,loc=46}),
 s(164832,22101,{b=1,f=6,loc=41})}}),
+q(10494,{c={7},coords={
+[1455]={{43.5,52.6}}},cost={{"i",16672,1},{"i",16673,1}},lvl=58,maps={250},qgs={16013},r=2,sourceQuests={8977},g={
+s(164829,22098,{b=1,f=6,loc=45}),
+s(164830,22099,{b=1,f=6,loc=44})}}),
 q(8942,{c={7},coords={
 [1454]={{35,38.3}}},cost={{"i",16672,1},{"i",16673,1}},lvl=58,maps={250},qgs={16012},r=1,sourceQuests={8978},g={
 s(164829,22098,{b=1,f=6,loc=45}),
 s(164830,22099,{b=1,f=6,loc=44})}}),
+q(10498,{c={7},coords={
+[1455]={{43.5,52.6}}},cost={{"i",16666,1},{"i",16667,1}},lvl=58,maps={250,476},qgs={16013},r=2,sourceQuests={8997},g={
+s(164828,22097,{b=1,f=6,loc=40}),
+s(164833,22102,{b=1,f=6,loc=42})}}),
 q(9011,{c={7},coords={
 [1454]={{35,38.3}}},cost={{"i",16666,1},{"i",16667,1}},lvl=58,maps={250,476},qgs={16012},r=1,sourceQuests={8998},g={
 s(164828,22097,{b=1,f=6,loc=40}),
@@ -914,8 +950,8 @@ n(4275,{
 i(5442),
 s(158372,6220,{f=20}),
 s(158417,6324,{f=4,loc=42}),
-s(158446,6392,{f=4,loc=45})})}}),
-x(1,{awp=10100,g={
+s(158446,6392,{f=4,loc=45}),
+crit(3263,{achID=62031,awp=16001,id=5})})}}),
 inst(238,{coords={
 [1453]={{51.6,69.4}}},lore="The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",lvl=15,mapID=225,["zone-text-areaID"]=717,["zone-text-names"]={"Stormwind Stockade"},g={
 h(-45,{
@@ -960,6 +996,7 @@ n(1696,{
 i(3630)}),
 n(1716,{
 i(2926)})}}),
+x(1,{awp=10100,g={
 inst(760,{coords={
 [1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,sourceQuests={6502,6602},["zone-text-areaID"]=2159,g={
 h(-45,{
@@ -2950,7 +2987,8 @@ n(4829,{rwp=60002,g={
 ach(632),
 s(158720,6909,{f=26}),
 s(158722,6911,{f=5,loc=45}),
-s(158721,6910,{f=4,loc=46})}})}}),
+s(158721,6910,{f=4,loc=46}),
+crit(18526,{achID=62032,awp=16001,id=2})}})}}),
 inst(228,{coords={
 [35]={{39.06,18.12}}},description="The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",lore="Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",lvl=42,mapID=242,["zone-text-areaID"]=1584,g={
 h(-31,{
@@ -3410,7 +3448,8 @@ s(164849,22204,{f=5,loc=43,u=15}),
 s(164852,22207,{f=6,loc=45,spellID=1294769,u=15}),
 i(11934,{f=52}),
 i(11815,{f=53,spellID=15600}),
-i(12033)}})})}}),
+i(12033),
+crit(3266,{achID=62033,awp=16001,id=7})}})})}}),
 inst(229,{lore="The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",lvl=50,mapID=250,["zone-text-areaID"]=1583,g={
 h(-45,{
 q(6601,{coords={
@@ -3751,7 +3790,8 @@ s(160873,13162,{f=7,loc=44}),
 s(162994,16679,{b=1,f=6,loc=41,lvl=55,rwp=40003}),
 i(13143,{f=52,spellID=17252}),
 i(13164,{b=1,f=53,lvl=56,rwp=40003,spellID=17275}),
-i(22321,{f=53,spellID=27656,u=15})}})}),
+i(22321,{f=53,spellID=27656,u=15}),
+crit(18534,{achID=62033,awp=16001,id=9})}})}),
 h(-354,{cost={{"i",12344,1}},g={
 h(-63,{
 i(12607,{crs={10442,10447,10814},rwp=60002}),
@@ -3858,7 +3898,8 @@ s(163021,16706,{b=1,f=5,loc=42,lvl=58,rwp=40003}),
 s(164875,22269,{f=3,u=15}),
 s(160864,13142,{f=7,loc=45}),
 i(13098,{f=52}),
-i(22268,{f=53,spellID=1318931,u=15})}})}})}}),
+i(22268,{f=53,spellID=1318931,u=15}),
+crit(3268,{achID=62033,awp=16001,id=10})}})}})}}),
 inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,u=1101,["zone-text-areas"]={2557,2577,3217},g={
 h(-12,{u=1101,g={
 ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1101}),
@@ -4045,7 +4086,8 @@ s(163472,18326,{f=7,loc=44,spellID=1302193,u=1101}),
 s(163473,18327,{f=4,loc=45,u=1101}),
 s(163464,18318,{f=6,loc=47,u=1101}),
 i(18314,{f=52,u=1101}),
-i(18315,{f=52,u=1101})}})}}),
+i(18315,{f=52,u=1101}),
+crit(545,{achID=62033,awp=16001,id=14})}})}}),
 h(-356,{coords={
 [1444]={{62.48,24.48}}},cost={{"i",18249,1}},mapID=235,u=1101,g={
 h(-63,{u=1101,g={
@@ -4116,7 +4158,8 @@ s(163591,18524,{f=6,loc=46,u=1101}),
 s(163589,18521,{f=7,loc=47,u=1101}),
 i(18522,{f=52,u=1101}),
 i(19258,{spellID=23678,u=13}),
-i(18780,{lvl=50,rwp=40003,spellID=23231,u=1101})}}),
+i(18780,{lvl=50,rwp=40003,spellID=23231,u=1101}),
+crit(18535,{achID=62033,awp=16001,id=15})}}),
 o(179564,{description="Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",modelScale=3,providers={{"n",14353}},u=1101,g={
 r(23079,{itemID=18655,requireSkill=202,u=1101}),
 s(163577,18499,{f=8,u=1101}),
@@ -4184,7 +4227,8 @@ s(163498,18377,{f=5,loc=44,u=1101}),
 s(163511,18391,{f=5,loc=45,u=1101}),
 s(163500,18379,{f=6,loc=47,u=1101}),
 i(18370,{f=53,spellID=1302264,u=1101}),
-i(24345,{c={11},rank=4,rwp=40001,spellID=31709,u=17})}}),
+i(24345,{c={11},rank=4,rwp=40001,spellID=31709,u=17}),
+crit(546,{achID=62033,awp=16001,id=16})}}),
 n(14506,{cost={{"i",18663,1},{"i",18629,1},{"i",18670,1}},description="|cff3399ffSTEP 1:|r Find a Warlock that is on or has completed Dreadsteed of Xoroth.\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs, Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 12.4, 31.6)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",rwp=40003,sourceQuests={7631},u=1101,g={
 s(163679,18757,{f=4,loc=41,u=1101}),
 s(163677,18755,{f=31,u=1101}),
@@ -4361,7 +4405,8 @@ r(3928,{itemID=4408,requireSkill=202}),
 r(3954,{itemID=4412,requireSkill=202}),
 r(3960,{itemID=4414,requireSkill=202}),
 r(3940,{itemID=4410,requireSkill=202}),
-r(3933,{itemID=4409,requireSkill=202})}})}}),
+r(3933,{itemID=4409,requireSkill=202}),
+crit(18529,{achID=62032,awp=16001,id=3})}})}}),
 inst(232,{coords={
 [1443]={{35.7,55.5}}},lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,["zone-text-areaID"]=2100,g={
 h(-45,{
@@ -4482,7 +4527,8 @@ s(163378,17715,{f=4,loc=40}),
 i(17707,{f=51}),
 s(163377,17714,{f=6,loc=43}),
 s(163376,17711,{f=7,loc=46}),
-i(17713,{f=52})}})}})}}),
+i(17713,{f=52}),
+crit(18532,{achID=62033,awp=16001,id=4})}})}})}}),
 inst(233,{coords={
 [1413]={{50,92}}},lore="Crafted from the same mighty vines as Razorfen Kraul, Razorfen Downs is the traditional capital city of the quillboar race. The sprawling, thorn-ridden labyrinth houses a veritable army of loyal quillboar as well as their high priests - the Death's Head tribe. Recently, however, a looming shadow has fallen over the crude den. Agents of the undead Scourge - led by the lich, Amnennar the Coldbringer - have taken control over the quillboar race and turned the maze of thorns into a bastion of undead might. Now the quillboar fight a desperate battle to reclaim their beloved city before Amnennar spreads his control across the Barrens.",lvl=35,mapID=300,["zone-text-areaID"]=722,g={
 h(-45,{
@@ -4553,7 +4599,8 @@ s(160153,10761,{f=20}),
 s(160155,10763,{f=7,loc=40}),
 s(160156,10764,{f=6,loc=42}),
 s(160154,10762,{f=4,loc=42}),
-s(160157,10765,{f=5,loc=44})}})}}),
+s(160157,10765,{f=5,loc=44}),
+crit(18530,{achID=62033,awp=16001,id=1})}})}}),
 inst(234,{coords={
 [1413]={{40.94,94.55}}},lore="Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",lvl=17,mapID=301,["zone-text-areaID"]=491,g={
 h(-45,{
@@ -4640,7 +4687,8 @@ i(5792),
 i(17008,{b=1,lvl=28,rwp=40003}),
 s(158648,6692,{f=21}),
 s(158649,6694,{f=8}),
-i(6693,{f=52,spellID=1293199})}})}}),
+i(6693,{f=52,spellID=1293199}),
+crit(18528,{achID=62032,awp=16001,id=9})}})}}),
 inst(316,{coords={
 [1420]={{82.6,32.4}}},lore="The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",lvl=25,mapID=435,["zone-text-areaID"]=796,g={
 h(-361,{awp=100107,rwp=50004,g={
@@ -4669,7 +4717,8 @@ s(158985,7683,{f=34}),
 s(158984,7682,{f=20,spellID=1293433})}),
 n(4543,{
 s(158987,7685,{f=1}),
-s(158986,7684,{f=4,loc=41})})}}),
+s(158986,7684,{f=4,loc=41}),
+crit(116058,{achID=62032,id=5})})}}),
 h(-362,{awp=100107,lvl=28,rwp=50004,g={
 h(-45,{
 q(1049,{coords={
@@ -4698,13 +4747,15 @@ s(159000,7713,{f=28}),
 s(158999,7712,{f=4,loc=41}),
 s(158998,7711,{f=4,loc=42}),
 o(103821,{rwp=40003,g={
-i(7146,{b=1,description="Found in the chest after killing Arcanist Doan.",spellID=3366})}})})}}),
+i(7146,{b=1,description="Found in the chest after killing Arcanist Doan.",spellID=3366})}}),
+crit(116059,{achID=62032,id=6})})}}),
 h(-363,{awp=100107,cost={{"i",7146,1}},lvl=35,rwp=50004,g={
 n(3975,{
 s(159002,7717,{f=22}),
 s(159004,7719,{f=6,loc=40}),
 s(159003,7718,{f=6,loc=41}),
-s(159996,10330,{f=6,loc=46})}),
+s(159996,10330,{f=6,loc=46}),
+crit(116060,{achID=62032,id=7})}),
 n(6575,{
 s(165204,23192,{f=9})})}}),
 h(-364,{awp=100107,cost={{"i",7146,1}},lvl=37,rwp=50004,g={
@@ -4716,7 +4767,8 @@ n(3976,{
 s(159009,7726,{b=1,f=8,lvl=39,spellID=1293539}),
 s(159008,7724,{f=6,loc=44}),
 s(159007,7723,{f=24}),
-s(159996,10330,{f=6,loc=46})}),
+s(159996,10330,{f=6,loc=46}),
+crit(3264,{achID=62032,id=8})}),
 n(3977,{
 s(159006,7721,{awp=110002,f=23}),
 i(7722,{awp=110002,f=51}),
@@ -5065,7 +5117,8 @@ s(161191,13951,{f=7,loc=43}),
 s(161190,13950,{description="This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",f=6,loc=45,rwp=20001}),
 s(160977,13398,{f=5,loc=47}),
 i(22433,{f=52,u=15}),
-i(19276,{spellID=23680,u=13})}})}}),
+i(19276,{spellID=23680,u=13}),
+crit(19263,{achID=62033,awp=16001,id=11})}})}}),
 inst(236,{lore="Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge	-- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",lvl=48,mapID=317,maps={318},["zone-text-areaID"]=2017,g={
 h(-12,{
 ach(646)}),
@@ -5360,7 +5413,8 @@ s(163047,16732,{b=1,f=7,loc=46,lvl=56}),
 s(163043,16728,{b=1,f=7,loc=46,lvl=56}),
 s(163002,16687,{b=1,f=4,loc=46,lvl=56}),
 s(163024,16709,{b=1,f=5,loc=46,lvl=56}),
-s(163034,16719,{b=1,f=5,loc=46,lvl=56})}})}})}}),
+s(163034,16719,{b=1,f=5,loc=46,lvl=56}),
+crit(18471,{achID=62033,awp=16001,id=13})}})}})}}),
 inst(63,{coords={
 [1436]={{42.2,82.6}}},lore="Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",lvl=10,mapID=291,["zone-text-areaID"]=1581,g={
 h(-45,{
@@ -5462,7 +5516,8 @@ i(3637),
 s(158044,5191,{b=1,f=25,lvl=19}),
 s(158046,5193,{b=1,f=3,lvl=19}),
 s(158055,5202,{b=1,f=4,loc=42,lvl=17}),
-s(160032,10399,{b=1,f=5,loc=42,lvl=17})}}),
+s(160032,10399,{b=1,f=5,loc=42,lvl=17}),
+crit(3262,{achID=62031,awp=16001,id=4})}}),
 n(645,{rwp=40003,g={
 i(8490,{f=101,spellID=10677}),
 s(158051,5198,{b=1,f=27,lvl=17}),
@@ -5645,7 +5700,8 @@ s(160199,10837,{f=21,spellID=1300001}),
 s(160198,10836,{f=27}),
 s(160197,10835,{f=8}),
 s(160196,10833,{f=6,loc=40}),
-i(10829,{f=51})}})}}),
+i(10829,{f=51}),
+crit(18533,{achID=62033,awp=16001,id=6})}})}}),
 inst(239,{coords={
 [16]={{36.6,29.4}},
 [1418]={{64,44}}},lore="Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",lvl=35,mapID=230,["zone-text-areaID"]=1337,g={
@@ -5859,7 +5915,8 @@ ach(638),
 i(7672),
 s(159347,9418,{f=26}),
 s(159343,9413,{f=24}),
-i(11118,{f=52})}})}}),
+i(11118,{f=52}),
+crit(18531,{achID=62033,awp=16001,id=2})}})}}),
 inst(240,{coords={
 [1413]={{45.9,35.7}},
 [1414]={{52,55.2}}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
@@ -5960,7 +6017,8 @@ ach(630),
 i(10441,{b=1,lvl=15}),
 s(158492,6461,{b=1,f=4,loc=41,lvl=20}),
 s(158613,6627,{b=1,f=6,loc=42,lvl=18}),
-i(6463,{b=1,f=52,lvl=19})}})}}),
+i(6463,{b=1,f=52,lvl=19}),
+crit(18524,{achID=62031,awp=16001,id=3})}})}}),
 inst(241,{coords={
 [1446]={{39,19}}},lore="Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",lvl=39,mapID=219,["zone-text-areaID"]=978,g={
 h(-45,{
@@ -6060,7 +6118,8 @@ s(160215,11086,{f=25,spellID=11654}),
 s(159387,9478,{f=21}),
 s(159386,9477,{f=28}),
 s(159388,9479,{f=5,loc=40}),
-s(159385,9476,{f=7,loc=41})}}),
+s(159385,9476,{f=7,loc=41}),
+crit(3265,{achID=62033,awp=16001,id=3})}}),
 n(7795,{
 i(9234),
 i(10661)}),

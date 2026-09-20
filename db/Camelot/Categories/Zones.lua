@@ -1567,8 +1567,9 @@ r(200,{c={1,2,3},requireSkill=229}),
 r(227,{c={1,3,5,7,8,9,11},requireSkill=136}),
 r(202,{c={1,2,3},requireSkill=55})}})}})}}),
 m(1416,{icon=236711,lore="Alterac Mountains is the location of the former nation of Alterac and the city-state of Dalaran, and its chief settlements included Alterac City, Dalaran and Strahnbrad. The central mountains have been overrun by ogres, while the organization called the Syndicate controls Strahnbrad and other areas. Dalaran was enclosed within an impregnable magic shell before the city was lifted in the air and moved to Northrend. A high, wooded region, the Alterac Mountains see much rainfall and its skies are constantly overcast. Crushridge ogres and the Syndicate, a wicked group of rogues led by fallen human nobles, clash repeatedly for control of this land.",g={
-h(-12,{
-ach(760)}),
+h(-12,{awp=16001,g={
+ach(760,{
+crit(112642,{achID=62353,id=1})})}}),
 h(-30,{
 exp(1684,{
 crit(944,{achID=760,id=10})}),
@@ -1796,7 +1797,8 @@ s(158074,5245,{coords={
 m(1417,{icon=236712,lore="The Arathi Highlands are located in southeastern Lordaeron, east of Hillsbrad Foothills and south of the Hinterlands. It is a flat but craggy region that has traditionally been the home of the humans of Arathor, who gave the region its name. The main hubs of activity are now Refuge Pointe and Hammerfall, which houses bases for Alliance and Horde, respectively. The large city of Stromgarde lies in ruins to the southwest, and pockets of Syndicate resistance dot the land. The Boulderfist Orges also infest Arathor, and prove to be a constant threat to the Alliance, Horde, and Syndicate factions vying for supremacy.",g={
 h(-12,{
 ach(761,{
-crit(964,{achID=761,id=1})})}),
+crit(964,{achID=761,id=1}),
+crit(112643,{achID=62353,awp=16001,id=2})})}),
 h(-30,{
 exp(1858,{
 crit(2044,{achID=761,id=1})}),
@@ -2257,8 +2259,9 @@ s(156980,2787,{coords={
 [1426]={{21.8,72.6},{27.6,72.8},{31,76}}},crs={724},f=20}),
 s(156592,2054,{coords={
 [1426]={{35.6,67.8}}},crs={1718},f=21})})}}),
-h(-12,{
-ach(627)}),
+h(-12,{awp=16001,g={
+ach(627,{
+crit(112630,{achID=62353,id=7})})}}),
 h(-30,{
 exp(803,{
 crit(508,{achID=627,id=1})}),
@@ -2681,8 +2684,9 @@ s(156595,2057,{crs={38},f=25}),
 i(247834,{awp=16001,b=1,crs={6}}),
 s(156593,2055,{coords={
 [1429]={{49,29},{50.2,26.6}}},crs={80},f=23})})}}),
-h(-12,{
-ach(776)}),
+h(-12,{awp=16001,g={
+ach(776,{
+crit(112652,{achID=62353,id=10})})}}),
 h(-30,{
 exp(62,{
 crit(1153,{achID=776,id=1})}),
@@ -2941,8 +2945,9 @@ i(1399,{crs={476},f=55,spellID=133}),
 s(156110,781,{coords={
 [1429]={{23.8,91.6},{26.6,89.6},{27.6,95.4},{28,86.8}}},crs={97,478},f=23,lvl=4})})}}),
 m(1432,{icon=236808,lore="Loch Modan is a large area east of Dun Morogh, situated in eastern Khaz Modan. It is known for its temperate climate, abandoned archaeological dig site and, until the cataclysm, the huge lake from which the region takes its name. The gray and rugged Khaz Modan mountains rise up on all sides around the loch, and the hills are lightly wooded with pine and birch.\n\nLoch Modan is heavily populated by hostile troggs, unearthed from caves below ground by the dwarven digs. They have since settled in the surrounding mountainous area and built crude camps and caves from which to strike at passing travelers. Other dangers include dangerous wildlife, aggressive kobolds, and the powerful ogres of the Mo'grosh Stronghold.",g={
-h(-12,{
-ach(779)}),
+h(-12,{awp=16001,g={
+ach(779,{
+crit(112632,{achID=62353,id=13})})}}),
 h(-30,{
 exp(925),
 exp(936,{
@@ -3250,13 +3255,15 @@ crit(116893,{achID=62354,id=8}),
 crit(116896,{achID=62354,id=9}),
 crit(116888,{achID=62354,id=10}),
 crit(116890,{achID=62354,id=11}),
-crit(116894,{achID=62354,id=12})})}),
+crit(116894,{achID=62354,id=12}),
+crit(112651,{achID=62353,id=15})})}),
 h(-32,{
 fp(3276,{coords={
 [2548]={{60.6,81.6}}},crs={257087},r=2})})}}),
 m(1434,{icon=236844,lore="The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",g={
-h(-12,{
-ach(781)}),
+h(-12,{awp=16001,g={
+ach(781,{
+crit(112641,{achID=62353,id=18})})}}),
 h(-30,{
 exp(123,{
 crit(1217,{achID=781,id=1})}),
@@ -3954,8 +3961,9 @@ i(1652,{crs={675,14492},f=113}),
 i(1996,{crs={660},f=52,lvl=32}),
 i(8153,{description="Can drop from any troll in The Hinterlands or Stranglethorn Vale."})})}}),
 m(1437,{icon=236853,lore="The Wetlands is a large, wet zone below Stonewrought Dam and north of Loch Modan, covered with small rivers, lakes, and ponds. Bordered on three sides by mountains, the Wetlands are open to the ocean to the west. Adventurers seeking a route to the Wetlands must either come through sieged Dun Algaz from Loch Modan or cross the damaged Thandol Span from Arathi Highlands. The northern slopes of Wetlands are generally classed within mountains of Khaz Modan.\n\nThe Wetlands is a vast, cold swamp. Mists cloak the ground, and the overcast sky makes the land a uniform gray. Many Ironforge strongholds once stood in this region, but war has reduced them to rubble. Wild creatures, murlocs and renegade orcs now control the land. Menethil Harbor, a city on the west coast, is the Alliance's only presence in this dreary region.",g={
-h(-12,{
-ach(841)}),
+h(-12,{awp=16001,g={
+ach(841,{
+crit(112634,{achID=62353,id=23})})}}),
 h(-30,{
 exp(1036,{
 crit(1270,{achID=841,id=1})}),
@@ -4641,8 +4649,9 @@ r(201,{c={1,2,3,4,8,9},requireSkill=43}),
 r(200,{c={1,2,3},requireSkill=229}),
 r(202,{c={1,2,3},requireSkill=55})}})}})}}),
 m(1418,{icon=236716,lore="The Badlands is a region in Khaz Modan accessed via the Searing Gorge to the west and Loch Modan to the north.\n\nThe Badlands are a cracked desert of dry earth, scattered boulders, and winding canyons. Dark Iron dwarves clash with ogres and drakes, while Horde orcs man a fortress to keep watch on their renegade brethren in the eastern lands. Ironforge prospectors search this desolate land for Titan artifacts, inspired by the recently unearthed Uldaman — an immense ruin that held the first clues to the dwarves' lofty origins. Stonevault troggs, released after millennia of slumber, slaughtered the explorers and viciously defend their stolen city.",g={
-h(-12,{
-ach(765)}),
+h(-12,{awp=16001,g={
+ach(765,{
+crit(112640,{achID=62353,id=3})})}}),
 h(-30,{
 exp(345,{
 crit(1016,{achID=765,id=1})}),
@@ -4950,8 +4959,9 @@ n(16033,{coords={
 h(-55,{description="Available if a specific Quest (8996) has been completed.",rwp=40003,sourceQuests={8996},u_sqs=1,g={
 i(22057,{b=1,spellID=27203})}})}})}})}}),
 m(1419,{icon=236720,lore="The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",g={
-h(-12,{
-ach(766)}),
+h(-12,{awp=16001,g={
+ach(766,{
+crit(112646,{achID=62353,id=4})})}}),
 h(-30,{
 exp(1441,{
 crit(1033,{achID=766,id=1})}),
@@ -5085,8 +5095,9 @@ i(8391,{crs={5984,5985,8300},rwp=40003}),
 i(18665,{c={5},crs={8716,8717,8718,12396,12397},f=53,lvl=60,rwp=40003}),
 i(8396,{crs={5982,8299},rwp=40003})})}}),
 m(1428,{icon=236734,lore="The Burning Steppes hold the only accessible land passage from the Kingdom of Stormwind to Khaz Modan and Lordaeron. The highway is thus well traveled, but still very dangerous. Now virtually abandoned by the Kingdom of Stormwind, the Burning Steppes is controlled by minions of the black dragonflight and agents of the firelord Ragnaros.\n\nThis rugged region is full of craggy foothills, scattered boulders and warring factions. Rivers of lava dot the landscape, as well as charred earth and burning ruins. The sky is a red hue here, due to sporadic eruptions from Blackrock Mountain. Blackrock Spire, an orc stronghold in the Second War, stands proud and defiant among the mountains. Dark Iron dwarves control the fortress's deeps, though rumor has it that Ragnaros the Fire Lord still broods in the shadows. Black dragons under Nefarion hold the spire's upper levels, and the two groups battle constantly for supremacy. The surrounding countryside is home to Blackrock orcs and Fire-Gut ogres, all brutal castoffs from the Second War. The Molten Span, a massive stone edifice in the north, bridges a river of fire and leads to Khaz Modan.",g={
-h(-12,{
-ach(775)}),
+h(-12,{awp=16001,g={
+ach(775,{
+crit(112647,{achID=62353,id=5})})}}),
 h(-30,{
 exp(255,{
 crit(1144,{achID=775,id=1})}),
@@ -5235,8 +5246,9 @@ i(15732,{awp=100107,coords={
 [1428]={{80.4,45.8},{83.6,40}}},crs={7035},description="Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",f=200,requireSkill=10658,rwp=40003}),
 r(17552,{crs={7027},itemID=13476,requireSkill=171,rwp=40003})})}}),
 m(1430,{icon=236741,lore="Deadwind Pass is a haunted forest and canyon on the edges of the Kingdom of Stormwind in the southern Eastern Kingdoms. Serving as borders between Duskwood and Swamp of Sorrows, evil magic can be felt all through the zone, the trees are all but dead, and very few wildlife and ogres can be found in the zone. Travelers are advised to go through the pass fast, as they might fall to the zone's foreboding magic.\n\nTrivia:\nMedivh, the last Guardian, made Deadwind Pass his final place. The tower of Karazhan to the south served as his bastion until his final days.\n\nThe Karazhan Crypts can be explored by players who kill themselves and traverse the gates as a ghost. The crypt is filled to the brim with disturbing content, the most disturbing being a pool filled with human bodies hanged upside down and roped to chains. This area became known to players as the Upside-Down Sinners.",maps={350},g={
-h(-12,{
-ach(777)}),
+h(-12,{awp=16001,g={
+ach(777,{
+crit(112648,{achID=62353,id=6})})}}),
 h(-30,{
 exp(2560,{collectible=false}),
 exp(2697,{
@@ -5256,8 +5268,9 @@ qo(1,{crs={13016},providers={{"i",17117}}})}}),
 q(6662,{lvl=10,providers={{"i",17118}},qgs={12997},r=2,sourceQuests={6661},g={
 i(17119,{f=55,lvl=5,spellID=434})}})})}}),
 m(1431,{icon=236757,lore="Duskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Beneath the eternal blanket of darkness which gave Duskwood its current name, the Scythe's effects have transformed what was once a beautiful part of Elwynn Forest into a land covered in gnarled trees and inhabited by the hideous undead and extradimensional Worgen, brought along with the black fog hanging over the woods. Ogres moving in from Deadwind Pass have brought up even more problems.",g={
-h(-12,{
-ach(778)}),
+h(-12,{awp=16001,g={
+ach(778,{
+crit(112637,{achID=62353,id=8})})}}),
 h(-30,{
 exp(536,{
 crit(1162,{achID=778,id=1})}),
@@ -5637,7 +5650,8 @@ s(156179,920,{coords={
 [1431]={{23.6,71.6},{49.8,77.8}}},crs={215,909},f=23,rwp=40003})})}}),
 m(1423,{icon=236760,lore="Eastern Plaguelands is heavily-ravaged from the Scourge. The Argent Dawn has made some progress after The Lich King's defeat, but the zone is still full of Undead. Players explore Eastern Plaguelands primarily through escorting a Worgen merchant, Fiona, and her band of merry travelers she picks up along the way. The Plaguelands are the site for some of the most gripping storylines, including the Battle for Darrowshire and the fate of the Stratholme residents.",g={
 h(-12,{
-ach(771),
+ach(771,{awp=16001,g={
+crit(112649,{achID=62353,id=9})}}),
 ach(946,{maps={1422},minReputation={529,42000}})}),
 h(-30,{
 exp(2624,{
@@ -6178,8 +6192,9 @@ i(12811,{crs={12339},description="Can drop from any Scarlet Crusade member in St
 r(19833,{awp=11101,coords={
 [1423]={{65.4,22.6},{68.8,20.6},{72.8,15.2}}},crs={8561},description="Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",itemID=16056,requireSkill=202,rwp=40003})})}}),
 m(1424,{icon=236779,lore="Hillsbrad Foothills is a mid-level zone most suitable for players around level 25. The hills are home to the towns of Southshore and Hillsbrad Fields (Alliance), and Tarren Mill (Horde). Some notable locations, such as Durnholde Keep and Azurelode Mine can also be found here. Since this area lies outside of Thoradin's Wall, it is considered as a crossroads between Alliance and Horde players, which makes combat between the two factions likely.\n\nHillsbrad is relatively safe and stable. Its hills are green and pastoral, its meadows fertile and its soil rich. Humans loyal to the Alliance control Hillsbrad from the town of Southshore, though the Syndicate, murlocs and Forsaken threaten their serenity.",g={
-h(-12,{
-ach(772)}),
+h(-12,{awp=16001,g={
+ach(772,{
+crit(112638,{achID=62353,id=11})})}}),
 h(-30,{
 exp(288,{
 crit(1112,{achID=772,id=1})}),
@@ -6552,8 +6567,9 @@ s(156334,1485,{awp=100107,coords={
 [1424]={{31.8,35.2},{34.2,48.2},{36.6,40}}},crs={232,2266,2403,2451},f=29,lvl=20,rwp=40003}),
 r(3188,{crs={2373},itemID=6211,requireSkill=171})})}}),
 m(1433,{icon=236814,lore="The Redridge Mountains are located east of Elwynn Forest, northeast of Duskwood, and south of the Burning Steppes. Although it may be considered contested, Horde characters have no settlements or NPCs and it is thus a place they use mostly for passing through to reach Flame Crest or Stonard.\n\nAn idyllic region of rushing rivers, towering elms and rising elevations, the Redridge Mountains are under Stormwind's protection (though since the second war it is technically independent), and remain one of the last peaceful regions in Azeroth. The people are content and calm, and supply Stormwind with timber, fish, and crops. A force of Blackrock orcs from the Burning Steppes has secured Stonewatch Keep, but so far the orcs keep to themselves.",g={
-h(-12,{
-ach(780)}),
+h(-12,{awp=16001,g={
+ach(780,{
+crit(112636,{achID=62353,id=14})})}}),
 h(-30,{
 exp(97,{
 crit(1191,{achID=780,id=1})}),
@@ -6858,8 +6874,9 @@ s(156324,1461,{awp=100107,coords={
 i(1080,{coords={
 [1433]={{52,40},{55,72}}},crs={428},description="Only drops from Dire Condors in Redridge Mountains."})})}}),
 m(1427,{icon=236815,lore="Just as Blackrock orcs and their allies dominate Burning Steppes, so Dark Iron dwarves dominate the Searing Gorge. A large population of Dark Iron dwarves, War Golems, and Elementals resides in this dark, mountainous area.\n\nThe climate is very similar to Burning Steppes, as it was the same catastrophe that blackened both: the summoning of Ragnaros. The Searing Gorge is a part of Khaz Modan. Before being shattered by the summoning it was a mountainous region, part of the Redridge Mountains.\n\nLarge mining operations take place in The Cauldron, a giant excavation site forming a huge rift in the middle of the Searing Gorge. The Slag Pit lies within The Cauldron and is an underground mining site rich with multiple types of ore. The mining work is mainly done by slave labor, which consists for the most part of captured enemies.\n\nEver since the Dark Iron dwarves' capital, Thaurissan, was destroyed by the summoning of Ragnaros, they have searched for a landmass to control for their filthy, industrious works. The Searing Gorge was the obvious choice due to a low military presence, scarce population, few settlements, and high vulnerability. The dwarven garrisons were soon overrun by a massive Dark Iron invasion which forced them to retreat to Loch Modan and seal the passage.",g={
-h(-12,{
-ach(774)}),
+h(-12,{awp=16001,g={
+ach(774,{
+crit(112645,{achID=62353,id=16})})}}),
 h(-30,{
 exp(1957,{
 crit(1131,{achID=774,id=1})}),
@@ -7066,8 +7083,9 @@ r(18408,{awp=11101,coords={
 r(26277,{awp=11101,coords={
 [1427]={{37,42.8},{39,50.8},{41.6,42.2},{43.6,27.6},{63.6,59},{65.4,65.6}}},crs={5844,5846,8637},itemID=21547,rwp=40003,u=15})})}}),
 m(1421,{icon=236830,lore="Silverpine Forest is a vast ancient wood that runs along Lordaeron's rugged western coast. The land ranges from fairly flat to hilly, and is nestled among even taller mountains. The forest is eerily silent save for the occasional unnatural howling echoing among the trees. Mossy overhangs shiver in the cold breeze, and the trees are all sickly or dying. Dilapidated farmsteads and abandoned mines dot the land, home now to the darker denizens of the woods.\n\nThis woodland is haunted and wild, characterized by its tall, silver-barked pines towering over grassy knolls. The Alliance once protected Silverpine Forest when it was verdant and lively. Now the place is shrouded in ghostly mists. Forsaken control the northern forest. What remains of the human population retains control of the southern forest, but they are desperate and their forces thinly stretched. Dalaran sends frequent expeditions into Silverpine to defend these people and study the undead plague and worgen curse — a mysterious affliction that causes its victims to transform into bloodthirsty, lycanthropic worgen when the moon rises.",g={
-h(-12,{
-ach(769)}),
+h(-12,{awp=16001,g={
+ach(769,{
+crit(112635,{achID=62353,id=17})})}}),
 h(-30,{
 exp(233,{
 crit(1063,{achID=769,id=1})}),
@@ -7322,8 +7340,9 @@ s(158037,5110,{crs={1867,1888,1889,1912,1913,1914,1915,1920,2120,3577,3578},desc
 i(3164,{crs={1765,1766,1923,12431}}),
 r(6686,{crs={3530,3531},itemID=5771,requireSkill=197})})}}),
 m(1435,{icon=236845,lore="The Swamp of Sorrows is a marshland in southern Eastern Kingdoms filled with green dragons serving Ysera. When the Dark Portal imploded during the Second War, The Black Morass was split in half--the northern part became the Swamp, while the southern half became the barren Blasted Lands.",g={
-h(-12,{
-ach(782)}),
+h(-12,{awp=16001,g={
+ach(782,{
+crit(112639,{achID=62353,id=19})})}}),
 h(-30,{
 exp(76,{
 crit(1232,{achID=782,id=1})}),
@@ -7547,8 +7566,9 @@ i(6172,{b=1,lvl=30,rwp=40003}),
 s(158359,6196,{b=1,crs={5477},f=23,lvl=29,rwp=40003}),
 i(8498,{crs={741},f=101,spellID=10698})})}}),
 m(1425,{icon=236780,lore="The Hinterlands, located in the Northern part of the Eastern Kingdoms, are probably most notable for the Wildhammer dwarves who make their residence at Aerie Peak in the west. The Wildhammers have always been staunch allies of the Alliance. It is from the Hinterlands that these dwarves find and tame their world-renowned gryphons. The Razorbeak gryphons roam wild in this region.\n\nAlso in the Hinterlands is one of the last remaining settlements of the high elves in Lordaeron at the Quel'Danil Lodge.\n\nThe Hinterlands are also home to a large population of forest trolls, which are divided into three separate tribes. The Revantusk tribe is the only one of the three that has declared sides in the Horde/Alliance conflict and support the warchief Thrall of the Horde. The Vilebranch tribe holds residence in the massive troll city of Jintha'Alor as well as the Altar of Zul while the Witherbark tribe holds the smallest influence, hailing from the temples of Shadra'Alor.",g={
-h(-12,{
-ach(773)}),
+h(-12,{awp=16001,g={
+ach(773,{
+crit(112644,{achID=62353,id=12})})}}),
 h(-30,{
 exp(348,{
 crit(1115,{achID=773,id=1})}),
@@ -7927,8 +7947,9 @@ s(156965,2754,{coords={
 [1420]={{36.8,68}}},crs={1506},f=26,rwp=40003}),
 s(157196,3263,{coords={
 [1420]={{27.6,59.2}}},crs={1505},f=4,loc=46,rwp=40003})}})}}),
-h(-12,{
-ach(768)}),
+h(-12,{awp=16001,g={
+ach(768,{
+crit(112631,{achID=62353,id=20})})}}),
 h(-30,{
 exp(157,{
 crit(1039,{achID=768,id=1})}),
@@ -8217,8 +8238,9 @@ s(157248,3327,{awp=100107,coords={
 s(157194,3261,{awp=100107,coords={
 [1420]={{23.8,58.4},{86.2,53.4}}},crs={1555,1688},f=3,rwp=40003})})}}),
 m(1422,{icon=236851,lore="The Western Plaguelands are located in northern Lordaeron, wedged between Tirisfal Glades to the west, the Eastern Plaguelands to the east, and the Alterac Mountains to the south. It is filled with a smoky gray mist and the creatures here are blighted and sick, angrily attacking anyone who wanders too close with surprising ferocity. The land is also home to countless undead who infest the ruins of Andorhal, the four cauldron fields, and Sorrow Hill. The Scarlet Crusade has a significant holding in and around Hearthglen to the north, and the Alliance has settled in the small Chillwind Camp to the south.\n\nLike their eastern counterparts, the Western Plaguelands were once fertile and beautiful but are now gray, blighted and noxious. Undead wander the land and haunt the abandoned towns and farmsteads. The largest Scourge city here is Andorhal, beneath which is an underground complex housing the undead's School of Necromancy. The Scarlet Crusade strikes against the Scourge from Hearthglen. The only place of any sanity in the Western Plaguelands is Uther's Tomb, a consecrated monument to the fallen hero Uther Lightbringer.",g={
-h(-12,{
-ach(770)}),
+h(-12,{awp=16001,g={
+ach(770,{
+crit(112650,{achID=62353,id=21})})}}),
 h(-30,{
 exp(2298,{collectible=false,g={
 crit(1069,{achID=770,id=1})}}),
@@ -8598,8 +8620,9 @@ r(17576,{crs={1812,1813},itemID=13496,requireSkill=171,rwp=40003}),
 i(12811,{crs={12128},description="Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands."}),
 i(13356,{b=1,cost={{"i",13370,1}},description="These only drop from zombies in Western Plaguelands while you have Vitreous Focuser in your inventory.",rwp=40003})})}}),
 m(1436,{icon=236852,lore="Westfall borders the Kingdom of Stormwind and is mostly populated by humans not under the Alliance's complete control. The region was stolen right under the Alliance's nose by its own bitter people. This rich land has lain fallow since the Second War, but it is now held by the Defias Brotherhood. Stormwind claims the land as its own, but it has found little time to be concerned with it, with insufficient funds and might to retake the region. A handful of farmers still try to keep their land, and some even attempt a tithe to Stormwind every year, but most only grow enough to feed themselves. The Defias Brotherhood controls much of the region, focused in the southern area of Moonbrook.\n\nOnce a rich agricultural center, much of Westfall now lies fallow and forgotten. The Defias Brotherhood, renegade humans who wield secrecy and technology against Stormwind, control much of the area. Bandits and gnolls raid those farms that remain, and Stormwind's resources are stretched too thin to protect the beleaguered populace. Westfall has the mild temperatures of Elwynn, but winds batter it both from the sea and from Duskwood. The bare farmlands add little to break the wind, which can cut through clothing on a blustery day.",g={
-h(-12,{
-ach(802)}),
+h(-12,{awp=16001,g={
+ach(802,{
+crit(112633,{achID=62353,id=22})})}}),
 h(-30,{
 exp(219,{
 crit(1257,{achID=802,id=1})}),
@@ -8891,7 +8914,8 @@ crit(116903,{achID=62356,id=5}),
 crit(116902,{achID=62356,id=6}),
 crit(116901,{achID=62356,id=7}),
 crit(116900,{achID=62356,id=8}),
-crit(116899,{achID=62356,id=9})})})}}),
+crit(116899,{achID=62356,id=9}),
+crit(112671,{achID=62355,id=11})})})}}),
 m(2652,{awp=16001,g={
 h(-12,{
 ach(63684,{
@@ -8900,10 +8924,12 @@ crit(116909,{achID=63684,id=2}),
 crit(116910,{achID=63684,id=3}),
 crit(116911,{achID=63684,id=4}),
 crit(116912,{achID=63684,id=5}),
-crit(116913,{achID=63684,id=6})})})}}),
+crit(116913,{achID=63684,id=6}),
+crit(116914,{achID=62355,id=13})})})}}),
 m(1413,{icon=236717,lore="The Barrens is a vast, arid savannah. Dust devils swirl across the dry land and canyons cut the earth. Despite its inhospitable nature, numerous trade routes, including the major Gold Road, cross the Barrens. Centaur raiding parties are a constant threat, as are lions and thunder lizards. The orcs and tauren drove the quilboar tribes out of their lands, and the creatures now lair in the Barrens.\n\nIronforge dwarves have discovered a great Titan ruin in this region, and an enormous dig site and settlement has sprung up around it. Called Bael Modan, this fortified city is a common stop for the caravans that trundle across the dusty landscape. The goblin city of Ratchet, full of clanging coins, shining lights and debauchery, sprawls on the Barrens' eastern coast.",g={
-h(-12,{
-ach(750)}),
+h(-12,{awp=16001,g={
+ach(750,{
+crit(112655,{achID=62355,id=3})})}}),
 h(-30,{
 exp(1700,{
 crit(934,{achID=750,id=1})}),
@@ -9807,8 +9833,6 @@ r(8240,{description="Can drop from any mob in the Barrens.",itemID=6663}),
 r(8238,{description="Can drop from any mob in the Barrens.",itemID=6661}),
 i(5165,{crs={3254,3255,3256},spellID=5316}),
 i(5052,{crs={3444},spellID=5161})})}}),
-h(-12,{
-ach(43)}),
 m(1457,{icon=255141,isRaid=1,lore="The atmosphere inside the city is quiet and tranquil. It does not have the feeling of confinement that one would feel in Stormwind or Ironforge, where the buildings are grouped close together. Darnassus is open to the sky, and the graceful bridges spanning the lake around which it is built set the buildings wide apart. The elegant bridges, beautiful groves, and leaf-covered pathways that dot the city's landscape are testaments to the night elves' reverence for nature. One of Darnassus's most notable structures is the stunning Temple of the Moon, the center of worship for High Priestess Tyrande Whisperwind and her Sisters of Elune. The prime reason why the city's population is so low is that it is isolated: Teldrassil is a small island away from the main mass of Azeroth, and the only way to gain access from another continent is to fly or sail to Rut'theran Village, a small settlement at the base of Teldrassil, and from there step into the glowing portal to the city proper. Darnassus is home to night elves of all vocations and remains a symbol of the night elves' rich culture and glorious history.",g={
 h(-31,{
 faction(69,{icon=236449,OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=2})}),
@@ -11334,8 +11358,9 @@ r(198,{c={1,2,4,5,7,11},requireSkill=54}),
 r(227,{c={1,3,5,7,8,9,11},requireSkill=136}),
 r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end,requireSkill=160})}})}})}}),
 m(1440,{icon=236713,lore="Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",g={
-h(-12,{
-ach(845)}),
+h(-12,{awp=16001,g={
+ach(845,{
+crit(112653,{achID=62355,id=1})})}}),
 h(-30,{
 exp(415,{
 crit(1329,{achID=845,id=1})}),
@@ -11689,8 +11714,9 @@ s(156264,1351,{awp=100107,coords={
 [1440]={{75.8,73.6},{77.4,75.4}}},crs={3808},description="This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=4,loc=43,rwp=40003}),
 r(13617,{crs={3834,3919},itemID=11151,requireSkill=333,rwp=40300})})}}),
 m(1447,{icon=236714,lore="A shattered stretch of coastline on Kalimdor's northeast, Azshara was once the greatest night elf metropolis. The city fell millennia ago in the War of the Ancients, but a few ragged buildings perch on the cliffs overlooking similar ruins among the coral. The Horde has established a small outpost, Grim Ulang, in the area, but naga are a constant danger.",g={
-h(-12,{
-ach(852)}),
+h(-12,{awp=16001,g={
+ach(852,{
+crit(112654,{achID=62355,id=2})})}}),
 h(-30,{
 exp(1227,{
 crit(1409,{achID=852,id=1})}),
@@ -11942,8 +11968,9 @@ r(17571,{awp=11101,coords={
 r(19794,{crs={6195},itemID=16045,requireSkill=202,rwp=40003}),
 i(10450,{crs={6375,6377,6378,6379,6380,6648},rwp=20300})})}}),
 m(1439,{icon=236739,lore="This rocky area stretches along Kalimdor's north coast. Rains, winds and rocky beaches make the place inhospitable. Old night elf ruins stand crumbling on the cliffs, and murlocs and naga lurk within. The night elf village of Auberdine serves as a friendly trading post.",g={
-h(-12,{
-ach(844)}),
+h(-12,{awp=16001,g={
+ach(844,{
+crit(112656,{achID=62355,id=4})})}}),
 h(-30,{
 exp(447,{
 crit(1319,{achID=844,id=1})}),
@@ -12277,8 +12304,9 @@ i(5839,{crs={3660},rwp=40003}),
 r(6692,{crs={2337},itemID=5773,rwp=40003}),
 i(5568,{crs={2156,2157},f=37,lvl=13,rwp=40001})})}}),
 m(1443,{icon=236742,lore="Centaur control this rugged wilderness. Desolace is a land of craggy rock faces and stormy skies, and the rampaging centaur let no other race survive. Five centaur tribes strike from individual strongholds, but the great fortress of Maraudon occasionally plays host to them all.",g={
-h(-12,{
-ach(848)}),
+h(-12,{awp=16001,g={
+ach(848,{
+crit(112657,{achID=62355,id=5})})}}),
 h(-30,{
 exp(2405,{
 crit(1375,{achID=848,id=1})}),
@@ -12716,8 +12744,9 @@ s(157966,4925,{b=1,f=20}),
 s(158252,5778,{b=1,f=28})}}),
 q(4641,{altQuests={787},coords={
 [1411]={{43.2,68.4}}},isBreadcrumb=1,nextQuests={788},qgs={10176},r=1,rwp=40003})})}}),
-h(-12,{
-ach(728)}),
+h(-12,{awp=16001,g={
+ach(728,{
+crit(112658,{achID=62355,id=6})})}}),
 h(-30,{
 exp(370,{
 crit(830,{achID=728,id=1})}),
@@ -12956,8 +12985,9 @@ n(15552,{coords={
 [1445]={{77.6,17}}},g={
 i(21103,{awp=10900,b=1,rwp=40003,u=15}),
 i(21130,{b=1})}})}}),
-h(-12,{
-ach(850)}),
+h(-12,{awp=16001,g={
+ach(850,{
+crit(112659,{achID=62355,id=7})})}}),
 h(-30,{
 exp(2079,{
 crit(1398,{achID=850,id=1})}),
@@ -13307,8 +13337,9 @@ r(16726,{b=1,crs={4364},itemID=12714,requireSkill=164}),
 r(16664,{b=1,crs={4366},itemID=12706,requireSkill=164}),
 i(20766,{crs={4391,4392,4393}})})}}),
 m(1448,{icon=236763,lore="Once a wooded paradise, Felwood bears a ten-thousand-year-old curse. The trees, land and creatures are twisted and evil, violent and wild. Cursed ancients and furbolg maul any who come close, and satyrs hold depraved court near tainted moonwells. The animals within are mad and brutal and have no fear of humanoids. The undead and demons that survived the Third War fled here as well, and hide in the deep tangles. Felwood is a chaos of battling creatures, and blood soaks the ground. The infamous Shadow Council, a group of orc warlocks loyal to the Burning Legion, hides somewhere within.\n\nAlliance heroes, particularly druids, make forays into the cursed wood in attempts to destroy some of the larger menaces, root out the Shadow Council, and perhaps, some day, restore the land to its former legacy.",g={
-h(-12,{
-ach(853)}),
+h(-12,{awp=16001,g={
+ach(853,{
+crit(112660,{achID=62355,id=8})})}}),
 h(-30,{
 exp(1765,{
 crit(1445,{achID=853,id=1})}),
@@ -13682,8 +13713,9 @@ r(19071,{crs={7107},itemID=15744,requireSkill=165,rwp=40003}),
 r(17571,{awp=11101,coords={
 [1448]={{33.8,66.6},{38.6,69.6}}},crs={7106},itemID=13491,requireSkill=171,rwp=40003})})}}),
 m(1444,{icon=236764,lore="Feralas is a rainforest surrounded by arid zones in southern Kalimdor. It is known for the mystery surrounding Dire Maul--a former city of the Highborne that remained hermetic and drew upon demonic energy to stay immortal. There is a strong Night Elf presence--both in Feathermoon Stronghold, the base of operations for the Sentinels, and in the numerous ruins scattered around the zones.",g={
-h(-12,{
-ach(849)}),
+h(-12,{awp=16001,g={
+ach(849,{
+crit(112661,{achID=62355,id=9})})}}),
 h(-30,{
 exp(1099,{
 crit(1390,{achID=849,id=1})}),
@@ -14156,8 +14188,9 @@ h(-63,{
 i(21024,{crs={12800,12801,12802,12803}}),
 i(8705,{b=1,description="This item has a chance to drop from any creature in Feralas.",lvl=40})})}}),
 m(1450,{icon=135758,lore="Moonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.",g={
-h(-12,{
-ach(855)}),
+h(-12,{awp=16001,g={
+ach(855,{
+crit(112662,{achID=62355,id=10})})}}),
 h(-30,{
 exp(656),
 exp(2361)}),
@@ -14393,8 +14426,9 @@ h(-63,{
 s(156285,1388,{crs={2953},f=28,rwp=40003}),
 s(156282,1384,{crs={2952},f=25}),
 s(157984,4951,{crs={3229},f=5,loc=45,rwp=40003})})}}),
-h(-12,{
-ach(736)}),
+h(-12,{awp=16001,g={
+ach(736,{
+crit(112663,{achID=62355,id=12})})}}),
 h(-30,{
 exp(404,{
 crit(910,{achID=736,id=1})}),
@@ -14594,8 +14628,9 @@ n(3081,{coords={
 [1412]={{46.2,58.2}}},r=1,g={
 r(6414,{itemID=5484,requireSkill=185})}})})}}),
 m(1451,{icon=236829,lore="Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",maps={82},g={
-h(-12,{
-ach(856)}),
+h(-12,{awp=16001,g={
+ach(856,{
+crit(112664,{achID=62355,id=14})})}}),
 h(-30,{
 exp(3427),
 exp(3425,{
@@ -15262,8 +15297,9 @@ s(164284,20408,{crs={11880,11881,11882,11883,14479,15201,15213,15541,15542},f=4,
 s(164282,20406,{crs={11880,11881,11882,11883,14479,15201,15213,15541,15542},f=4,loc=41,lvl=60,rwp=70105}),
 s(164283,20407,{crs={11880,11881,11882,11883,14479,15201,15213,15541,15542},f=4,loc=42,lvl=60,rwp=70105})})}}),
 m(1442,{icon=236831,lore="The Stonetalon Mountains are craggy and forbidding. The air is usually hot, though violent rainstorms and severe winds cool the slopes and endanger travelers. The mountains are home to many fierce creatures, including hippogryphs, harpies, drakes, wyverns and kobolds. This region is inhospitable and extreme.",g={
-h(-12,{
-ach(847)}),
+h(-12,{awp=16001,g={
+ach(847,{
+crit(112665,{achID=62355,id=15})})}}),
 h(-30,{
 exp(2540,{
 crit(1354,{achID=847,id=1})}),
@@ -15530,8 +15566,9 @@ h(-63,{
 r(13617,{crs={4028,4029,4030},itemID=11151,requireSkill=333,rwp=40300}),
 i(6840,{crs={6167}})})}}),
 m(1446,{icon=236846,lore="The Tanaris Desert is vast and unexplored. It is a land of endless sands and cloudless skies. The southern Tanaris Desert is more mountainous than the north, boasting canyons and high bluffs. Numerous tunnels run beneath the sands, purportedly infested with the mysterious silithid. Other creatures in the desert include tallstriders, lions, kodo beasts, drakes and dragons — many the offspring of mighty Nozdormu, who is said to make this land his home.\n\nThe only bit of civilization is Gadgetzhan, a goblin trading post. Many Ironforge prospectors stock up on supplies here before heading out in search of the lost Titan city of Uldum.",g={
-h(-12,{
-ach(851)}),
+h(-12,{awp=16001,g={
+ach(851,{
+crit(112666,{achID=62355,id=16})})}}),
 h(-30,{
 exp(1939,{
 crit(1416,{achID=851,id=1})}),
@@ -16033,8 +16070,9 @@ s(158152,5392,{b=1,f=20}),
 s(158153,5393,{b=1,f=28}),
 s(158199,5586,{b=1,f=25}),
 s(160521,12447,{b=1,f=32,rwp=10700,u=2})}})})}}),
-h(-12,{
-ach(842)}),
+h(-12,{awp=16001,g={
+ach(842,{
+crit(112667,{achID=62355,id=17})})}}),
 h(-30,{
 exp(736,{
 crit(1300,{achID=842,id=1})}),
@@ -16287,8 +16325,9 @@ i(5206,{crs={3569},f=55,spellID=5665}),
 s(158775,7094,{awp=100107,coords={
 [1438]={{45.4,24.6}}},crs={2030},f=28,lvl=5,rwp=40003})})}}),
 m(1441,{icon=236848,lore="This canyon desert gets its name from the innumerable sandstone spires that thrust up from the salt flats. Engineers have constructed bridges across the peaks of these towers, allowing travelers to cross the region without having to set foot on the ground below. The Thousand Needles is a dry and hot desert of salt. At its center is a stagnant lake ten times saltier than the ocean.\n\nResourceful goblins have discovered oil in the Scorched Basin, but they, a few scorpions, and the occasional centaur warband are the only signs of life in this parched land.",g={
-h(-12,{
-ach(846)}),
+h(-12,{awp=16001,g={
+ach(846,{
+crit(112668,{achID=62355,id=18})})}}),
 h(-30,{
 exp(480,{
 crit(1348,{achID=846,id=1})}),
@@ -16628,8 +16667,9 @@ r(23663,{b=1,itemID=19218,minReputation={576,21000},requireSkill=197,u=13}),
 r(23629,{b=1,itemID=19204,minReputation={576,21000},requireSkill=165,u=13}),
 r(23704,{b=1,itemID=19327,minReputation={576,21000},requireSkill=165,u=13})}})})}}),
 m(1449,{icon=236850,lore="Un'Goro Crater is a lush jungle in southern Kalimdor, isolated from the source as it shares borders with the deserts of Feralas and Silithus. Although its borders make Un'Goro Crater a rather isolated area, many challenges await players here as they explore the wide range of exotic fauna, from aggressive plant mobs to the mighty devilsaurs.\n\nMarshal's Refuge, the main questing hub in Un'Goro, is also a cradle of references to TV Show Land of the Lost: The last names of the main characters were Marshal, Williden Marshal and Hol'anyee Marshal are clear references to main characters Will and Holly Marshal, and Un'Goro's plot revolves around massive pylons scattered across the zone, also a central part of the plot in Land of the Lost.",maps={79},g={
-h(-12,{
-ach(854)}),
+h(-12,{awp=16001,g={
+ach(854,{
+crit(112669,{achID=62355,id=19})})}}),
 h(-30,{
 exp(537,{
 crit(1453,{achID=854,id=1})}),
@@ -16858,8 +16898,9 @@ i(12809,{crs={6560}}),
 i(20768,{crs={6557,6559,9477},sym={{"select","itemID",20769}}}),
 i(15772,{crs={6556,6557,6559,9477},f=200,requireSkill=10660})})}}),
 m(1452,{icon=236854,lore="Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",g={
-h(-12,{
-ach(857)}),
+h(-12,{awp=16001,g={
+ach(857,{
+crit(112670,{achID=62355,id=20})})}}),
 h(-30,{
 exp(2256,{
 crit(1480,{achID=857,id=1})}),

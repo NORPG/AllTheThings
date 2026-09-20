@@ -1,10 +1,14 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local cl,faction,flt,h,i,mnt,n,r,s=_.CreateCharacterClass,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateRecipe,_.CreateItemSource;
+local ach,cl,crit,faction,flt,h,i,mnt,n,r,s=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateRecipe,_.CreateItemSource;
 categories.Character=
 h(-731,{SortPriority=40,g={
 cl(11,{
+h(-12,{awp=16001,g={
+ach(61503),
+ach(61504),
+ach(61502)}}),
 h(-796,{
 s(156040,35,{f=28,races_disp={6}}),
 s(157420,3661,{f=28,races_disp={4,95,96}}),
@@ -15,6 +19,10 @@ s(307620,271665,{awp=16001,f=2,loc=47,races_disp={95,96}}),
 s(307621,271666,{awp=16001,f=2,loc=46,races_disp={95,96}}),
 s(307623,271668,{awp=16001,f=10,races_disp={95,96}})})}),
 cl(3,{
+h(-12,{awp=16001,g={
+ach(61992),
+ach(61993),
+ach(61989)}}),
 h(-796,{
 s(156861,2508,{f=31,races_disp={3,6}}),
 s(156067,129,{f=2,loc=47,races_disp={1,3,4}}),
@@ -31,6 +39,10 @@ s(156616,2092,{f=20,races_disp={95,96}}),
 s(156857,2504,{f=32,races_disp={1,2,4,8}}),
 s(156039,25,{f=25,races_disp={95,96}})})}),
 cl(8,{
+h(-12,{awp=16001,g={
+ach(61995),
+ach(61996),
+ach(61994)}}),
 h(-796,{
 s(156055,55,{f=2,loc=47,races_disp={1,2,5,7,8}}),
 s(156289,1395,{f=4,loc=46,races_disp={1,2,5,7,8}}),
@@ -42,6 +54,10 @@ s(307615,271659,{awp=16001,f=2,loc=47,races_disp={95}}),
 s(307614,271658,{awp=16001,f=2,loc=46,races_disp={95}}),
 s(307613,271655,{awp=16001,f=10,races_disp={95}})})}),
 cl(2,{
+h(-12,{awp=16001,g={
+ach(61998),
+ach(61999),
+ach(61997)}}),
 flt(100,{
 mnt(13819,{c={2},lvl=40,races={1,3}})}),
 h(-796,{
@@ -55,6 +71,10 @@ s(158318,6118,{f=4,loc=46,races_disp={3}}),
 s(158317,6117,{f=10,races_disp={3}}),
 s(156048,45,{f=10,races_disp={1}})})}),
 cl(5,{
+h(-12,{awp=16001,g={
+ach(62001),
+ach(62002),
+ach(62000)}}),
 h(-796,{
 s(156052,51,{f=2,loc=47,races_disp={1,3,4,5,7}}),
 s(156053,52,{f=4,loc=46,races_disp={1,3,4,5,7,8}}),
@@ -64,6 +84,10 @@ s(158340,6144,{f=4,loc=42,races_disp={5,8}}),
 s(156054,53,{f=10,races_disp={1,3,4,5,7,8}}),
 s(156041,36,{f=23})})}),
 cl(4,{
+h(-12,{awp=16001,g={
+ach(62004),
+ach(62005),
+ach(62003)}}),
 h(-796,{
 i(3111,{f=36,races_disp={2,3,8}}),
 s(156050,48,{f=4,loc=46,races_disp={1,3,4,7}}),
@@ -81,6 +105,10 @@ s(156620,2105,{f=10,races_disp={2,5}}),
 s(158332,6136,{f=10,races_disp={8}}),
 s(156616,2092,{f=20})})}),
 cl(7,{
+h(-12,{awp=16001,g={
+ach(62007),
+ach(62008),
+ach(62006)}}),
 h(-796,{
 s(156073,153,{f=5,loc=46,races_disp={2,3,6}}),
 s(158331,6135,{f=5,loc=46,races_disp={8}}),
@@ -92,6 +120,10 @@ s(307618,271663,{awp=16001,f=10,races_disp={96}}),
 s(311493,280400,{awp=16001,f=23,races_disp={96}}),
 s(156041,36,{f=23})})}),
 cl(9,{
+h(-12,{awp=16001,g={
+ach(62010),
+ach(62011),
+ach(62009)}}),
 flt(100,{
 mnt(5784,{c={9},lvl=40})}),
 h(-796,{
@@ -186,6 +218,10 @@ r(11774,{b=1,c={9},itemID=16349,lvl=50,rank=5}),
 r(11775,{b=1,c={9},itemID=16350,lvl=60,rank=6}),
 i(22182,{rank=7,spellID=27270,u=17})}})}),
 cl(1,{
+h(-12,{awp=16001,g={
+ach(61500),
+ach(61501),
+ach(61499)}}),
 h(-796,{
 s(156773,2361,{f=24,races_disp={6}}),
 s(156069,140,{f=2,loc=47,races_disp={2,5}}),
@@ -207,6 +243,25 @@ s(160475,12282,{f=22,races_disp={2,3}}),
 s(156039,25,{f=25,races_disp={1,4,5,7}}),
 s(156162,876,{awp=16001,f=8,races_disp={95,96}}),
 s(156774,2362,{description="Starter Gear for Human Warrior, Night Elf Warrior, Gnome Warrior, Undead Warrior, Troll Warrior",f=8,races_disp={1,4,5,7,8}})})}),
+h(-12,{awp=16001,g={
+ach(62053),
+ach(62353,{
+crit(117287,{achID=62053,id=1})}),
+ach(62355,{
+crit(112672,{achID=62053,id=2})}),
+ach(62382),
+ach(62032,{
+crit(116050,{achID=62032,id=1,providers={{"n",246020}}}),
+crit(116053,{achID=62032,id=4,providers={{"n",260274}}}),
+crit(116052,{achID=62032,id=10,providers={{"n",258968}}})}),
+ach(62033,{
+crit(116057,{achID=62033,id=5,providers={{"n",255702}}}),
+crit(550,{achID=62033,id=12,providers={{"n",10813}}}),
+crit(116056,{achID=62033,id=17,providers={{"n",261809}}}),
+crit(116055,{achID=62033,id=8,providers={{"n",247234}}})}),
+ach(62031,{
+crit(116049,{achID=62031,id=2,providers={{"n",250657}}}),
+crit(116054,{achID=62031,id=6,providers={{"n",260326}}})})}}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(891,{icon=374217,r=2}),
