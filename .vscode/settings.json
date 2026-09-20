@@ -25,7 +25,8 @@
         ".contrib/.raw/ItemDB",
         ".contrib/Parser/DATAS/00 - Item DB/.dynamic",
         ".contrib/Parser/DATAS/00 - DB/AssetDB",
-        ".contrib/.db/shared/objects/ObjectDB.lua"
+        ".contrib/.db/shared/objects/ObjectDB.lua",
+        ".contrib/Parser/DATAS/00 - DB/ReagentsDB.Retail.lua"
     ],
     "Lua.diagnostics.enable": false,
     "Lua.diagnostics.ignoredFiles": "Disable",
