@@ -223,12 +223,14 @@ local function UpdateLocation()
 end
 app.AddEventHandler("OnReady", UpdateLocation);
 app.AddEventRegistration("NEW_WMO_CHUNK", UpdateLocation);
-app.AddEventRegistration("WAYPOINT_UPDATE", UpdateLocation);
 app.AddEventRegistration("SCENARIO_UPDATE", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_INDOORS", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_NEW_AREA", UpdateLocation);
 app.AddEventRegistration("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", UpdateLocation);
+if app.GameBuildVersion >= 82000 or app.IsForever then
+	app.AddEventRegistration("WAYPOINT_UPDATE", UpdateLocation);
+end
 
 -- Maps Class
 app.CreateMap = app.CreateClass("Map", "mapID", {
