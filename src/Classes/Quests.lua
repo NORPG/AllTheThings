@@ -484,6 +484,20 @@ local CompletedQuests = setmetatable({}, {
 local function IsQuestFlaggedCompleted(questID)
 	return questID and CompletedQuests[questID];
 end
+local OtherCharacterCompletedQuests = setmetatable({}, {
+	__index = function(t,key)
+		local charquests
+		for _,character in next,ATTCharacterData do
+			charquests = character.Quests
+			if charquests and charquests[key] then
+				t[key] = true
+				return true
+			end
+		end
+		t[key] = false
+		-- app.PrintDebug("AnyCharacterCompletedQuests=false",key)
+	end
+})
 local IsPartySyncActive = false;
 IsQuestFlaggedCompletedForObject = function(t)
 	local questID = t.questID;
