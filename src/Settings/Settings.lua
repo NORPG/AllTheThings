@@ -1652,26 +1652,18 @@ settings.ToggleFilters = function(self)
 end
 settings.ActivateNextProfile = function(self)
 	if AllTheThingsProfiles and AllTheThingsProfiles.Profiles then
-		local profiles = {}
+		local profileKeys = {}
+		local ActiveProfile = self:GetProfile()
 		for key in pairs(AllTheThingsProfiles.Profiles) do
-			profiles[#profiles + 1] = { name = key }
-			if key == settings:GetProfile(true) then
-				currentProfile = #profiles
-			end
+			profileKeys[#profileKeys + 1] = key
 		end
-		if #profiles >= 2 and currentProfile then
-			app.Sort(profiles, app.SortDefaults.name)
-			local currentProfile
-			for i, profile in ipairs(profiles) do
-				if profile.name == settings:GetProfile(true) then
-					currentProfile = i
-					break
-				end
-			end
-			local nextProfile = currentProfile % #profiles + 1
+		if #profileKeys >= 2 and ActiveProfile then
+			app.Sort(profileKeys, app.SortDefaults.Strings)
+			local currentProfile = app.indexOf(profileKeys, ActiveProfile)
+			local nextProfile = currentProfile % #profileKeys + 1
 			local announceProfile = settings:Get("Profile:ShowProfileLoadedMessage")
 			settings:Set("Profile:ShowProfileLoadedMessage", true)
-			settings:SetProfile(profiles[nextProfile].name)
+			settings:SetProfile(profileKeys[nextProfile])
 			settings:ApplyProfile()
 			settings:UpdateMode(1)
 			settings:Set("Profile:ShowProfileLoadedMessage", announceProfile)
