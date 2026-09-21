@@ -593,7 +593,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							i(279534, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Red Kilt
 						},
 					}),
-					i(243293, {	-- Bag of Brewfest Merchandise (Epic) BoE's & Cosmetics
+					i(243293, {	-- Bag of Brewfest Merchandise (Epic) BoE's
 						["description"] = "Granted for achieving 100% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
 						["groups"] = {
 							i(245950),	-- Dark Iron Portable Forge
