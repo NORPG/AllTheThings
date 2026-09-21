@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, {
-	n(TOYS, {
+	filter(TOYS, {
 		i(6948),	-- Hearthstone
 	}),
 });
