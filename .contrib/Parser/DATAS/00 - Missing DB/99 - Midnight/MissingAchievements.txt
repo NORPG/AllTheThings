@@ -1,6 +1,0 @@
-12.1.5.69594
-ach(62500),	-- Sweet Tooth
-ach(62501),	-- I Ain't Afraid of no Ghost
-ach(62502),	-- Master of Merry Mayhem
-ach(63690),	-- Midnight Keystone Myth: Season 2
-ach(63714),	-- WoW's 22nd Anniversary

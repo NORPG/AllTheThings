@@ -755,6 +755,7 @@ HeaderAssignments = {
 	["WoW's 19th Anniversary"] = -608,
 	["WoW's 20th Anniversary"] = -609,
 	["WoW's 21st Anniversary"] = -658,
+	["WoW's 22nd Anniversary"] = -798,
 	["WoW's 4th Anniversary"] = -593,
 	["WoW's 5th Anniversary"] = -594,
 	["WoW's 6th Anniversary"] = -595,
@@ -777,4 +778,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -798
+NextHeaderID = -799

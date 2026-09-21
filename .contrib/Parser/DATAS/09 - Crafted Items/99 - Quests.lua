@@ -89,7 +89,7 @@ root(ROOTS.Craftables, {
 								136629,	-- Felgibber Shotgun
 								136632,	-- Chaos Blaster
 						}},
-						["groups"] = { i(136911) },	-- Knockoff Blingtron (PET!
+						["groups"] = { i(136911) },	-- Knockoff Blingtron (PET!)
 					}),
 				},
 			}),

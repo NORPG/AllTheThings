@@ -2021,6 +2021,7 @@ localize(L.HEADER_NAMES, {
 	[-793] = "Upgrade: Myth",
 	[-795] = "Warcraft Forever Collection",
 	[-797] = "World of Warcraft: Forever",
+	[-798] = select(2,GetAchievementInfo(63714)),
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2807,6 +2808,7 @@ localize(L.HEADER_ICONS, {
 	[-793] = _.asset("interface_upgrade"),
 	[-795] = 1120721,
 	[-797] = 1120721,
+	[-798] = 133783,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -2860,6 +2862,7 @@ localize(L.HEADER_EVENTS, {
 	[-609] = 1509,
 	[-658] = 1501,
 	[-755] = 1793,
+	[-798] = 1808,
 })
 localize(L.EVENT_REMAPPING, {
 	[141] = 14,
@@ -2980,6 +2983,9 @@ localize(L.EVENT_TIMERUNNING_SEASONS, {
 	[2] = 447,
 })
 -- Programmatic Event Scheduling
+_.Modules.Events.SetEventInformation(1808, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=17,["weekday"]=3,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=8,["weekday"]=3,["year"]=2026})
+})
 _.Modules.Events.SetEventInformation(1501, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025})
 })

@@ -716,6 +716,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["provider"] = { "i", 37583 },	-- G.N.E.R.D.S.
 			["timeline"] = { ADDED_3_0_2 },
 		}),
+		ach(62501, {	-- I Ain't Afraid of no Ghost
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_5 },
+		}),
 		ach(288, {	-- Out With It
 			["description"] = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
 			["cost"] = { { "i", 33226, 3 } },	-- Tricky Treat
@@ -788,6 +792,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["provider"] = { "i", 33292 },	-- Hallowed Helm
 			}),
 			-- #endif
+		}),
+		ach(62500, {	-- Sweet Tooth
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_5 },
 		}),
 		ach(981, {	-- That Sparkling Smile
 			["provider"] = { "i", 37604 },	-- Tooth Pick

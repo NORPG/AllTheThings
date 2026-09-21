@@ -234,8 +234,8 @@ mnt(1293456,{awp=120007,description="Received after buying the Blizzcon 2026 Wor
 de(15153,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 4 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263303,rwp=120100,spellID=1270372}),
 mnt(1270520,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 8 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263449,lvl=10,rwp=120100}),
 toy(279590,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 12 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",rwp=120100}),
-ach(63685,{awp=120100,rwp=120100,u=2,g={
-de(28350,{itemID=281107,spellID=1310204,u=2})}}),
+ach(63685,{awp=120100,rwp=120100,g={
+de(28350,{itemID=281107,spellID=1310204})}}),
 p(5124,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278231,npcID=269374,rwp=120100,spellID=1304106,u=2}),
 p(5123,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278230,npcID=269373,rwp=120100,spellID=1304105,u=2}),
 p(5127,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278688,npcID=269780,rwp=120100,spellID=1305392,u=2})}),
@@ -294,7 +294,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),

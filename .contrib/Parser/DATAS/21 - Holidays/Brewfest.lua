@@ -1252,7 +1252,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
-
 					["groups"] = {
 						i(37892, {	-- Green Brewfest Stein
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },

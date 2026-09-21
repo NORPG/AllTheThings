@@ -261,20 +261,19 @@ WOW_ANNIVERSARY_TWENTYONE = createHeader({
 		en = WOWAPI_GetAchievementName(61406),
 	},
 });
--- WOW_ANNIVERSARY_TWENTYTWO = createHeader({
--- 	readable = "WoW's 22nd Anniversary",
--- 	icon = 133783,
--- 	eventID = 1808,
--- 	eventSchedule = {
--- 		0,	-- November 17th through December 8th
--- 		2026, 11, 17,	-- 11/17/2026
--- 		2026, 12, 8,	-- 12/08/2026
--- 	},
--- 	text = {
--- 		-- en = WOWAPI_GetAchievementName(61406),
--- 		en = "WoW's 22nd Anniversary",
--- 	},
--- });
+WOW_ANNIVERSARY_TWENTYTWO = createHeader({
+	readable = "WoW's 22nd Anniversary",
+	icon = 133783,
+	eventID = 1808,
+	eventSchedule = {
+		0,	-- November 17th through December 8th
+		2026, 11, 17,	-- 11/17/2026
+		2026, 12, 8,	-- 12/08/2026
+	},
+	text = {
+		en = WOWAPI_GetAchievementName(63714),
+	},
+});
 
 local BRONZE_TOKEN = 3100;
 
@@ -460,7 +459,7 @@ end
 		["timeline"] = { ADDED },
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED, REMOVED },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(ACHID),	-- Nth Anniversary
 			n(MAILBOX, {
 			}),
@@ -629,7 +628,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		},
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_7_0_3, REMOVED_7_2_5 },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(10741),	-- 12th Anniversary
 			n(MAILBOX, {
 				i(139284, {	-- Anniversary Gift
@@ -745,7 +744,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		},
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_7_2_5, REMOVED_7_2_5 },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(11848),	-- 13th Anniversary
 			n(MAILBOX, {
 				i(147876, {	-- Anniversary Gift
@@ -971,7 +970,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		},
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_8_0_1, REMOVED_8_2_5 },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(12827),	-- 14th Anniversary
 			n(MAILBOX, {
 				i(162637, {	-- Anniversary Gift
@@ -1016,7 +1015,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		},
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(13917),	-- 15th Anniversary
 			n(157113, {	-- Chromie
 				-- inst(2235, {	-- doesn't show up in-game
@@ -2378,7 +2377,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		["timeline"] = { ADDED_9_0_1 },
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_9_0_1, REMOVED_9_0_1 },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(14271),	-- 16th Anniversary
 			n(MAILBOX, {
 				i(178513, {	-- Anniversary Gift
@@ -2405,7 +2404,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		["timeline"] = { ADDED_9_1_5 },
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_9_1_5, REMOVED_9_1_5 },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(14942),	-- WoW's 17th Anniversary
 			n(MAILBOX, {
 				i(185906, {	-- Anniversary Gift
@@ -2496,7 +2495,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		["timeline"] = { ADDED_10_0_0 },
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_10_0_0, REMOVED_10_0_2_LAUNCH },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(15218),	-- WoW's 18th Anniversary
 			n(MAILBOX, {
 				i(187710, {	-- Anniversary Gift
@@ -2523,7 +2522,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		["timeline"] = { ADDED_10_2_0 },
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(18702),	-- WoW's 19th Anniversary
 			n(MAILBOX, {
 				i(208211, {	-- Anniversary Gift
@@ -2544,7 +2543,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		["timeline"] = { ADDED_11_0_5 },
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_11_0_5, REMOVED_11_0_7 },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(41220),	-- WoW's 20th Anniversary
 			n(FACTIONS, {
 				faction(FACTION_ZANDALAR_TRIBE, {	-- Zandalar Tribe
@@ -2934,7 +2933,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			n(GROUP_FINDER, sharedData({
 				["maps"] = { 2354 },	-- Silithus
-			},{
+			}, {
 				-- when these bags are 'filled' with their content, fillAdjust '1' will remove the TW event flags from their
 				-- Sourced contents in the TW rewards
 				i(229355, {fillAdjust=1}),	-- Chromie's Premium Goodie Bag
@@ -4162,7 +4161,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["groups"] = appendAllGroups({},
 						sharedData({
 							["timeline"] = { ADDED_11_0_5, REMOVED_11_0_7 },
-						},{	-- One-Time Content
+						}, {	-- One-Time Content
 							i(229828, {	-- 20th Anniversary Balloon Chest (TOY!)
 								["cost"] = { { "c", BRONZE_TOKEN, 10 } },
 							}),
@@ -4569,7 +4568,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		["timeline"] = { ADDED_11_2_5 },
 		["groups"] = appendAllGroups({},sharedData({
 			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.64743" },
-		},{	-- One-Time Content
+		}, {	-- One-Time Content
 			ach(61406),	-- WoW's 21st Anniversary
 		}),
 		{	-- Recurring Content
@@ -4613,6 +4612,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 			}),
 		}),
+	}),
+	n(WOW_ANNIVERSARY_TWENTYTWO, {
+		["timeline"] = { ADDED_12_1_5 },
+		["groups"] = appendAllGroups({},sharedData({
+			["timeline"] = { ADDED_12_1_5, "removed 12.1.5.99999" },	-- TODO: Timeline out properly
+		}, {	-- One-Time Content
+			ach(63714),	-- WoW's 22nd Anniversary
+		})),
 	}),
 })));
 --[[

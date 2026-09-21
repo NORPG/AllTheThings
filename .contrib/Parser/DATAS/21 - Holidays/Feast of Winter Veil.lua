@@ -637,6 +637,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["timeline"] = { ADDED_3_0_2 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
+		ach(62502, {	-- Master of Merry Mayhem
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_5 },
+		}),
 		ach(273, {	-- On Metzen!
 			["provider"] = { "n", 15664 },	-- Metzen the Reindeer
 			["timeline"] = { ADDED_3_0_2 },
