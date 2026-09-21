@@ -561,6 +561,40 @@ local CollectibleAsQuest = function(t)
 	)
 end
 
+-- Returns whether a locked quest is actually in a state where it should be considered collectible given possible completion
+local function QuestRemainsCollectibleAsLocked(questID, DisablePartySync)
+	local onetime = OneTimeQuests[questID]
+	local awlocked = AccountWideLockedQuestsCache[questID]
+	-- not one-time quest so it remains collectible if not locked account-wide and not disable party sync or has valid collection state
+	if onetime == nil then
+		return
+			(not awlocked and not DisablePartySync)
+			or
+			(
+				-- this character specifically completed it
+				CompletedQuests[questID]
+				or
+				(
+					-- collectible by any character
+					app.Settings.AccountWide.Quests
+					and
+					-- another character completed it
+					OtherCharacterCompletedQuests[questID]
+				)
+			)
+	end
+
+	-- incomplete/uncached one-time quest, remains collectible if not locked account-wide and not disable party sync
+	if not onetime then return not awlocked and not DisablePartySync end
+
+	-- onetime collected on a character
+	return
+		-- collectible by any character
+		app.Settings.AccountWide.Quests
+		or
+		-- one-time quest collected as this character
+		onetime == app.GUID
+end
 local function CollectibleAsLocked(t, locked)
 	local questID = t.questID
 	return
@@ -570,32 +604,7 @@ local function CollectibleAsLocked(t, locked)
 	and (locked or t.locked)
 	-- not a repeatable quest
 	and not t.repeatable
-	and
-	(
-		-- Not Locked by a OPA/AW Quest
-		not AccountWideLockedQuestsCache[questID]
-		or
-		(
-			-- one-time and collected on any character
-			OneTimeQuests[questID] ~= false
-			and
-			(
-				-- collectible by any character
-				app.Settings.AccountWide.Quests
-				or
-				-- one-time quest collected as this character
-				OneTimeQuests[questID] == app.GUID
-			)
-		)
-	)
-	and
-	(
-		-- debug/account mode
-		app.MODE_DEBUG_OR_ACCOUNT
-		or
-		-- available in party sync
-		not t.DisablePartySync
-	)
+	and QuestRemainsCollectibleAsLocked(questID, t.DisablePartySync)
 end
 local function CollectibleAsQuestOrAsLocked(t)
 	local locked = t.locked
