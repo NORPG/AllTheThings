@@ -20,6 +20,7 @@ if not PossibleCatalystBonusIDLookups then
 end
 
 -- Globals
+--- @type function,function,function
 local tonumber,tremove,unpack
 	= tonumber,tremove,unpack
 local GameTooltip = GameTooltip
@@ -30,9 +31,11 @@ local C_Item_GetItemUpgradeInfo
 	= C_Item.GetItemUpgradeInfo
 
 -- App
+--- @type function
 local containsAnyKey
 	= app.containsAnyKey
 local BonusCatalysts = PossibleCatalystBonusIDLookups.BonusCatalysts
+--- @type function,function
 local GetSourceID, CreateObject
 
 local BonusIDUpgradeTiers = {
@@ -345,11 +348,13 @@ local function GetCatalysts(data)
 			-- upgrade track ID because THANKS BLIZZARD clearly there's no reason I would want to actually KNOW that information from an API
 			-- which says "GetItemUpgradeInfo" just because the item cannot be upgraded "further", the "current" upgrade level is still
 			-- IMPORTANT to some game functionality... reeeee
-			upgradeLevel = CheckGameTooltipForUpgradeLevel() or 0
+			if catalystID > 2 then
+				upgradeLevel = CheckGameTooltipForUpgradeLevel() or 0
 
-			-- if we still couldn't determine the proper upgrade level after all that, then we have to convert the catalyst output after the lookup
-			if upgradeLevel == 0 then
-				convertCatalystOutputManually = true
+				-- if we still couldn't determine the proper upgrade level after all that, then we have to convert the catalyst output after the lookup
+				if upgradeLevel == 0 then
+					convertCatalystOutputManually = true
+				end
 			end
 		end
 		-- app.PrintDebug("Using UpgradeTrackID",upgradeTrackID,"@",upgradeLevel)
