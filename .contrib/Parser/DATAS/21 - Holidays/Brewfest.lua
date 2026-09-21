@@ -341,7 +341,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 			ach(1293, {	-- Blue Brewfest Stein [Removed]
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
-				["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 			}),
 			ach(2796, {	-- Brew of the Month
 				["providers"] = {
@@ -997,6 +997,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 
 				-- Burning Crusade
+				-- #if CLASSIC_ANNIVERSARY
+				i(281735, {	-- Dark Iron Smoking Pipe [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				i(281748, {	-- Direbrew Hops [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				i(281903, {	-- Direbrew's Shanker [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				i(281739, {	-- Empty Mug of Direbrew [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				-- #else
 				i(37597, {	-- Direbrew's Shanker [Level 70]
 					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 				}),
@@ -1018,6 +1032,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(38287, {	-- Empty Mug of Direbrew [Level 70]
 					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 				}),
+				-- #endif
 				i(38280, {	-- Direbrew's Dire Brew (Alliance)
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
@@ -2133,37 +2148,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(12193, {	-- Say, There Wouldn't Happen to be a Souvenir This Year, Would There? (A)
 					["qg"] = 24468,	-- Pol Amberstill
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
-						-- #else
-						{ 46.4, 40.3, DUN_MOROGH },
-						-- #endif
-					},
-					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost.
+					["coords"] = { 46.4, 40.3, DUN_MOROGH },
+					["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
-							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+							["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 						}),
 					},
 				}),
 				q(12194, {	-- Say, There Wouldn't Happen to be a Souvenir This Year, Would There? (H)
-					["qg"] = 24497,	-- Ram Master Ray
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
-						-- #else
-						{ 46.3, 14.8, DUROTAR },
-						-- #endif
-					},
-					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+					["qg"] = 24510,	-- Driz Tumblequick <Ram Racing Apprentice>
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost.
+					["coords"] = { 46.3, 14.8, DUROTAR },
+					["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
-							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+							["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 						}),
 					},
 				}),
@@ -2342,7 +2347,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		}, {
 			fillstein(i(33016, {	-- Blue Brewfest Stein
 				["lore"] = "This stein was the reward from the 2008 Brewfest.",
-				["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 				["OnInit"] = OnInitForStein(30002),
 				["groups"] = {
 					i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
@@ -2720,7 +2725,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				n(207496, {	-- Bragdur Battlebrew
 					["coord"] = { 29.8, 56.6, VALDRAKKEN },
-					["sym"] = {{"sub","common_vendor",23710}},	-- Belbi Quikswitch <Token Redeemer> (Ally Version)
+					["timeline"] = { ADDED_10_1_7 },
+					["sym"] = {{"sub","common_vendor",23710}},	-- Belbi Quikswitch <Token Redeemer>
 				}),
 				n(152871, {	-- Brewer Gerrat <Brew Vendor>
 					["coord"] = { 56.5, 37.5, DUN_MOROGH },
@@ -2885,11 +2891,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						}),
 						-- #endif
 						filter(QUEST_ITEMS, {
-							-- Wouter NOTE: in MoP Classic ID 37737 is still the item actually on the vendor, added a Classic timeline because I don't want to mess with the original (yet)
 							i(37599, {	-- "Brew of the Month" Club Membership Form (current)
 								["timeline"] = {
 									-- #if ANYCLASSIC
-									CREATED_2_2_2,
+									ADDED_2_5_1,
 									-- #else
 									CREATED_2_2_2, ADDED_3_0_2	-- NOTE: Not used in 2007
 									-- #endif
@@ -3050,7 +3055,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
 						i(33976, {	-- Brewfest Ram (MOUNT!)
+							-- #if ANYCLASSIC
+							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+							-- #else
 							["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
+							-- #endif
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
 					},
@@ -3293,7 +3302,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
 						i(33976, {	-- Brewfest Ram (MOUNT!)
+							-- #if ANYCLASSIC
+							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+							-- #else
 							["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
+							-- #endif
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
 					},
