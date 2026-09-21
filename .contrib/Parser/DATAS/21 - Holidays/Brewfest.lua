@@ -595,7 +595,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 					i(243293, {	-- Bag of Brewfest Merchandise (Epic) BoE's & Cosmetics
 						["description"] = "Granted for achieving 100% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
-						["sym"] = { {"select","itemID",243292},{"pop"} },	-- Bag of Brewfest Merchandise (Rare) Only Cosmectics
 						["groups"] = {
 							i(245950),	-- Dark Iron Portable Forge
 							i(246784),	-- Dark Iron's Ancient Crusher
