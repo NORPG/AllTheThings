@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,cl,crit,faction,flt,h,i,mnt,n,r,s=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateRecipe,_.CreateItemSource;
+local ach,cl,crit,faction,flt,h,i,mnt,r,s=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateRecipe,_.CreateItemSource;
 categories.Character=
 h(-731,{SortPriority=40,g={
 cl(11,{
@@ -267,6 +267,6 @@ faction(469,{icon=374217,r=2}),
 faction(891,{icon=374217,r=2}),
 faction(67,{icon=374221,r=1}),
 faction(892,{icon=374221,r=1})}}),
-n(102,{
+flt(102,{
 i(6948,{b=1,spellID=8690})})}})
 end)
