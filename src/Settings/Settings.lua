@@ -1,6 +1,11 @@
 local appName, app = ...
 local L = app.L;
 
+-- Global Locals
+--- @type function,
+local pairs
+	= pairs
+
 -- Module locals
 local filterSet = app.Modules.Filter.Set;
 
@@ -902,7 +907,7 @@ settings.GetModeString = function(self)
 						and keyPrefix == "Thing"
 					then
 						thingCount = thingCount + 1
-						table.insert(things, thingName)
+						things[#things + 1] = thingName
 					end
 					if self.RequiredForInsaneMode[thingName] then
 						insaneTotalCount = insaneTotalCount + 1;
@@ -1017,7 +1022,7 @@ settings.GetShortModeString = function(self)
 					-- This prevents the heirloom uprades and quests locked from being displayed as a mode.
 					if key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms") then
 						thingCount = thingCount + 1
-						table.insert(things, thingName)
+						things[#things + 1] = thingName
 					end
 					if self.RequiredForInsaneMode[thingName] then
 						insaneTotalCount = insaneTotalCount + 1;
@@ -1649,13 +1654,13 @@ settings.ActivateNextProfile = function(self)
 	if AllTheThingsProfiles and AllTheThingsProfiles.Profiles then
 		local profiles = {}
 		for key in pairs(AllTheThingsProfiles.Profiles) do
-			table.insert(profiles, { name = key })
+			profiles[#profiles + 1] = { name = key }
 			if key == settings:GetProfile(true) then
 				currentProfile = #profiles
 			end
 		end
 		if #profiles >= 2 and currentProfile then
-			table.sort(profiles, function(a, b) return a.name < b.name end)
+			app.Sort(profiles, app.SortDefaults.name)
 			local currentProfile
 			for i, profile in ipairs(profiles) do
 				if profile.name == settings:GetProfile(true) then
