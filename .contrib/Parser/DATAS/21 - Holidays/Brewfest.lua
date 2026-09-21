@@ -3749,7 +3749,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			q(94053),	-- Killed Coren Direbrew (Not Accountwide)
-			q(94054),	-- Killed Coren Direbrew (Accountwide)
+			q(94054, {isDaily=true}),	-- Killed Coren Direbrew (Accountwide) (without Brewfest Bomber)
 		})),
 	})),
 });

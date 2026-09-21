@@ -2705,6 +2705,7 @@ local AccountWideQuestsDB = {
 	94043,	-- Sturdy Chest
 	94044,	-- Sturdy Chest
 	94045,	-- Sturdy Chest
+	94054,	-- Coren Direbrew (12.1 2026)
 	94210,	-- Feathering the Nest
 	94362,	-- Arsenal: Heirlooms of Atal'Aman
 	94377,	-- Warden's Companion
