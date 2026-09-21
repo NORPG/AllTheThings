@@ -15,37 +15,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			-- These quests need to be done once per account to unlock Island Expeditions. After completing, each character will have completed the flag quest 51994.
 			q(51903, {	-- Island Expedition (1/2) (A)
 				["sourceQuest"] = 53061,	-- The Azerite Advantage
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["races"] = ALLIANCE_ONLY,
+				["lockCriteria"] = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51904, {	-- Island Expedition (2/2) (A)
 				["sourceQuest"] = 51903,	-- Island Expedition
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["maps"] = { 1022 },	-- Uncharted Island
 				["races"] = ALLIANCE_ONLY,
+				["lockCriteria"] = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51870, {	-- Island Expedition (1/2) (H)
 				["sourceQuest"] = 53062,	-- The Azerite Advantage
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["qg"] = 135691,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 				["coord"] = { 58.4, 62.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51888, {	-- Island Expedition (2/2) (H)
 				["sourceQuest"] = 51870,	-- Island Expedition
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["maps"] = { 1022 },	-- Uncharted Island
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(53061, {	-- The Azerite Advantage (A)
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["DisablePartySync"] = true,
 				["lockCriteria"] = { 1, "questID", 51994 },	-- This HQT is likely the lock criterium according to Jewel
 			}),
 			q(53062, {	-- The Azerite Advantage (H)
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["DisablePartySync"] = true,
