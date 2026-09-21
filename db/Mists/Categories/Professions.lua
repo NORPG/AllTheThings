@@ -75,24 +75,24 @@ crit(15057,{achID=5191,id=6,providers={{"i",64381}},requireSkill=794}),
 crit(15099,{achID=5191,id=7,providers={{"i",64648}},requireSkill=794})}})}}),
 h(-58,{awp=50004,coords={
 [390]={{83.6,31}}},crs={64922},requireSkill=794,g={
-i(87534,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(87534,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(398,{requireSkill=794})}}),
-i(87533,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(87533,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(384,{requireSkill=794})}}),
-i(87535,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(87535,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(393,{requireSkill=794})}}),
-i(87536,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(87536,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(394,{requireSkill=794})}}),
-i(87537,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(87537,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(400,{requireSkill=794})}}),
-i(87538,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(87538,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(397,{requireSkill=794})}}),
-i(87539,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(87539,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(401,{requireSkill=794}),
-i(97986,{awp=50300,b=1,lvl=90,requireSkill=794,rwp=70003,u=53})}}),
-i(87540,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(97986,{awp=50300,b=1,lvl=90,q=1,requireSkill=794,rwp=70003,u=53})}}),
+i(87540,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(385,{requireSkill=794})}}),
-i(87541,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
+i(87541,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(399,{requireSkill=794})}})}})}}),
 x(5,{requireSkill=794,g={
 h(-12,{awp=50004,requireSkill=794,g={
@@ -343,8 +343,8 @@ q(14151,{awp=30200,coords={
 r(66659,{learnedAt=440,requireSkill=171,u=32})}})}}),
 x(5,{awp=50004,requireSkill=171,g={
 q(30597,{cost={{"i",72238,3}},maps={424},providers={{"i",80240}},requireSkill=171,rwp=50200,u=2,g={
-i(80240,{b=1,lvl=85,requireSkill=171,u=2}),
-i(75274,{b=1,f=53,lvl=85,requireSkill=171,u=2})}})}})}),
+i(80240,{b=1,lvl=85,q=3,requireSkill=171,u=2}),
+i(75274,{b=1,f=53,lvl=85,q=3,requireSkill=171,u=2})}})}})}),
 prof(164,{
 prof(9788,{description="These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",rwp=40001,sourceQuests={5283,5301},u=2,g={
 cat(220,{requireSkill=164,u=2,g={
@@ -671,10 +671,10 @@ faction(1357,{providers={{"n",64337}},requireSkill=185,u=50,g={
 crit(20538,{achID=7325,id=2,u=50})}})}}),
 h(-45,{requireSkill=185,u=50,g={
 q(31820,{minReputation={1357,6},qgs={64337},requireSkill=185,u=50,g={
-heir(86468,{b=2,f=9,requireSkill=185,sourceID=271694,sourceQuests={31820},u=50})}}),
+heir(86468,{b=2,f=9,q=7,requireSkill=185,sourceID=271694,sourceQuests={31820},u=50})}}),
 q(31337,{isDaily=1,minReputation={1357,6},qgs={64337},requireSkill=185,u=50,g={
 cu(402,{requireSkill=185,u=50}),
-i(90735,{b=1,requireSkill=185,u=50})}}),
+i(90735,{b=1,q=1,requireSkill=185,u=50})}}),
 q(31332,{isDaily=1,maxReputation={1357,2},minReputation={1357,1},qgs={64337},requireSkill=185,u=50,g={
 qo(1,{providers={{"i",74660}},requireSkill=185,u=50})}}),
 q(31333,{isDaily=1,maxReputation={1357,3},minReputation={1357,2},qgs={64337},requireSkill=185,u=50,g={
@@ -757,14 +757,14 @@ q(29475,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,4181,29477},coords={
 [87]={{68.8,45.2}},
 [88]={{36.8,59.6}}},cost={{"i",4384,5},{"i",10507,20},{"i",4394,20}},learnedAt=200,qgs={5174,5518,11017,52651},repeatable=1,requireSkill=202})}}),
 h(-47,{requireSkill=202,g={
-i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},requireSkill=202,rwp=40003,u=2,g={
-r(12607,{itemID=10603,learnedAt=220,requireSkill=202,u=2}),
-r(15633,{b=1,itemID=11827,learnedAt=205,requireSkill=202,u=2}),
-r(12616,{itemID=10606,learnedAt=225,requireSkill=202,u=2})}}),
-i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},requireSkill=202,rwp=40003,u=2,g={
-r(3968,{itemID=4416,learnedAt=195,requireSkill=202,u=2}),
-r(3972,{itemID=4417,learnedAt=200,requireSkill=202,u=2}),
-r(15628,{b=1,itemID=11828,learnedAt=205,requireSkill=202,u=2})}})}})}}),
+i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,rwp=40003,u=2,g={
+r(12607,{itemID=10603,learnedAt=220,q=2,requireSkill=202,u=2}),
+r(15633,{b=1,itemID=11827,learnedAt=205,q=2,requireSkill=202,u=2}),
+r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202,u=2})}}),
+i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,rwp=40003,u=2,g={
+r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202,u=2}),
+r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202,u=2}),
+r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=202,u=2})}})}})}}),
 x(4,{awp=40003,requireSkill=202}),
 x(5,{awp=50004,requireSkill=202})}),
 prof(129,{rwp=80001,g={
@@ -910,10 +910,10 @@ h(-12,{requireSkill=356,g={
 ach(4917,{requireSkill=356}),
 ach(5851,{awp=40200,requireSkill=356})}}),
 ah(67414,{awp=40001,description="Fishing Daily Quest Reward",providers={{"i",67414},{"i",112623}},requireSkill=356,type="i",g={
-p(211,{awp=40003,b=1,itemID=44983,npcID=33226,requireSkill=356,spellID=62561}),
-s(143883,33820,{awp=40003,b=1,f=4,loc=40,requireSkill=356}),
-s(176031,45991,{awp=40003,b=1,f=57,learnedAt=300,requireSkill=356}),
-s(176032,45992,{awp=40003,b=1,f=57,learnedAt=300,requireSkill=356}),
+p(211,{awp=40003,b=1,itemID=44983,npcID=33226,q=3,requireSkill=356,spellID=62561}),
+s(143883,33820,{awp=40003,b=1,f=4,loc=40,q=3,requireSkill=356}),
+s(176031,45991,{awp=40003,b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
+s(176032,45992,{awp=40003,b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
 i(67410,{awp=40003,requireSkill=356}),
 i(67388,{awp=40003,f=51,requireSkill=356})}})}}),
 x(5,{awp=50004,requireSkill=356,g={
@@ -933,7 +933,7 @@ crit(21983,{achID=7611,id=2,providers={{"i",86542}}}),
 crit(21984,{achID=7611,id=8,providers={{"i",86545}}}),
 crit(21985,{achID=7611,id=11,providers={{"i",86544}}})}})}}),
 h(-45,{requireSkill=356,g={
-i(97981,{awp=50300,b=1,description="Drops from fishing pools in Pandaria.",lvl=90,requireSkill=356,rwp=70003,u=53})}})}})}),
+i(97981,{awp=50300,b=1,description="Drops from fishing pools in Pandaria.",lvl=90,q=1,requireSkill=356,rwp=70003,u=53})}})}})}),
 prof(182,{awp=30002,g={
 h(-26,{requireSkill=182,rwp=60002,g={
 r(81708,{awp=40003,rank=1,requireSkill=182}),
@@ -1804,15 +1804,15 @@ prof(755,{u=17,g={
 x(4,{awp=40003,requireSkill=755,u=40,g={
 h(-45,{requireSkill=755,u=40,g={
 q(28778,{c={1,2,6},providers={{"i",65895}},requireSkill=755,u=40,g={
-i(52351,{b=1,f=53,lvl=81,requireSkill=755,u=40})}}),
+i(52351,{b=1,f=53,lvl=81,q=3,requireSkill=755,u=40})}}),
 q(28776,{c={1,2,6,10,11},providers={{"i",65897}},requireSkill=755,u=40,g={
-i(52352,{b=1,f=53,lvl=81,requireSkill=755,u=40})}}),
+i(52352,{b=1,f=53,lvl=81,q=3,requireSkill=755,u=40})}}),
 q(28777,{c={2,5,7,10,11},providers={{"i",65894}},requireSkill=755,u=40,g={
-i(52354,{b=1,f=53,lvl=81,requireSkill=755,u=40})}}),
+i(52354,{b=1,f=53,lvl=81,q=3,requireSkill=755,u=40})}}),
 q(25047,{c={3,4,7,10,11},providers={{"i",52197}},requireSkill=755,u=40,g={
-i(52199,{b=1,f=53,lvl=81,requireSkill=755,u=40})}}),
+i(52199,{b=1,f=53,lvl=81,q=3,requireSkill=755,u=40})}}),
 q(28775,{c={2,5,7,8,9,10,11},providers={{"i",65896}},requireSkill=755,u=40,g={
-i(52353,{b=1,f=53,lvl=81,requireSkill=755,u=40})}})}}),
+i(52353,{b=1,f=53,lvl=81,q=3,requireSkill=755,u=40})}})}}),
 cat(834,{requireSkill=755,u=40,g={
 r(73404,{learnedAt=500,requireSkill=755,u=40}),
 r(101735,{learnedAt=525,requireSkill=755,u=40}),
@@ -2795,9 +2795,9 @@ q(10831,{altQuests={10832,10833},coords={
 qo(1,{coords={
 [102]={{80,65}}},cost={{"i",31525,1},{"i",31524,1}},providers={{"i",31530}},requireSkill=197,u=2}),
 r(26798,{requireSkill=197,u=2}),
-i(31522,{requireSkill=197,u=2,g={
-i(31524,{requireSkill=197,u=2}),
-i(31525,{requireSkill=197,u=2})}})}}),
+i(31522,{q=1,requireSkill=197,u=2,g={
+i(31524,{q=1,requireSkill=197,u=2}),
+i(31525,{q=1,requireSkill=197,u=2})}})}}),
 q(10833,{altQuests={10831,10832},coords={
 [111]={{66.6,68.2}}},description="Upon finishing this quest, you will become a Shadoweave Tailor.",lvl=60,maps={104},qgs={22212},requireSkill=197,u=2,g={
 qo(1,{coords={

@@ -928,12 +928,19 @@ do
 
 	-- Appearance-based Classes
 	local AppearanceVariantClasses = { CLASSNAME }
-	
+
+	local AndAppearanceCollectible = (app.IsRetail or app.IsForever) and app.ReturnTrue or function(t)
+		-- White/Grey items are not collectible in Classic builds unless they're BOP.
+		if (t.q or 0) < 2 and (t.b or 0) ~= 1 then
+			return false;
+		end
+		return true;
+	end
 	local function AddAppearanceCollectibleSwap(classname, setting)
 		local function AssignCollectibleFunction()
 			-- app.PrintDebug("Swapping",classname,".collectible","via",setting,app.Settings.Collectibles[setting])
 			if app.Settings.Collectibles[setting] then
-				app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnTrue)
+				app.SwapClassDefinitionMethod(classname,"collectible",AndAppearanceCollectible)
 			else
 				app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnFalse)
 			end
