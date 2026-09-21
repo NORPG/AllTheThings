@@ -1050,11 +1050,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}, {
 					q(77152, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Maruukai
-						["provider"] = { "o", 405009 },	--Bar Tab Barrel
+						["provider"] = { "o", 405009 },	-- Bar Tab Barrel
 						["coord"] = { 59.8, 38.7, OHNAHRAN_PLAINS },
 					}),
 					q(77745, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Rusza'Thar Reach
-						["provider"] = { "o", 407192 },	--Bar Tab Barrel
+						["provider"] = { "o", 407192 },	-- Bar Tab Barrel
 						["coord"] = { 85.8, 35.3, OHNAHRAN_PLAINS },
 					}),
 					q(77099, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Shady Sanctuary
@@ -1062,39 +1062,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
 					}),
 					q(77747, {	-- Bar Tab Barrel @ Thaldraszus, Algeth'era Court
-						["provider"] = { "o", 407201 },	--Bar Tab Barrel
+						["provider"] = { "o", 407201 },	-- Bar Tab Barrel
 						["coord"] = { 50.1, 42.7, THALDRASZUS },
 					}),
 					q(77155, {	-- Bar Tab Barrel @ Thaldraszus, Eon's Fringe
-						["provider"] = { "o", 405012 },	--Bar Tab Barrel
+						["provider"] = { "o", 405012 },	-- Bar Tab Barrel
 						["coord"] = { 52.2, 81.5, THALDRASZUS },
 					}),
 					q(77153, {	-- Bar Tab Barrel @ Thaldraszus, Valdrakken
-						["provider"] = { "o", 405010 },	--Bar Tab Barrel
+						["provider"] = { "o", 405010 },	-- Bar Tab Barrel
 						["coord"] = { 47.9, 46.8, VALDRAKKEN },
 					}),
 					q(77096, {	-- Bar Tab Barrel @ The Azure Span, Camp Antonidas
-						["provider"] = { "o", 404982 },	--Bar Tab Barrel
+						["provider"] = { "o", 404982 },	-- Bar Tab Barrel
 						["coord"] = { 46.9, 40.2, THE_AZURE_SPAN },
 					}),
 					q(77746, {	-- Bar Tab Barrel @ The Azure Span, Camp Nowhere
-						["provider"] = { "o", 407199 },	--Bar Tab Barrel
+						["provider"] = { "o", 407199 },	-- Bar Tab Barrel
 						["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
 					}),
 					q(77097, {	-- Bar Tab Barrel @ The Azure Span, Iskaara
-						["provider"] = { "o", 404987 },	--Bar Tab Barrel
+						["provider"] = { "o", 404987 },	-- Bar Tab Barrel
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 					}),
 					q(77744, {	-- Bar Tab Barrel @ The Waking Shores, Dragonscale Basecamp
-						["provider"] = { "o", 407186 },	--Bar Tab Barrel
+						["provider"] = { "o", 407186 },	-- Bar Tab Barrel
 						["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
 					}),
 					q(76531, {	-- Bar Tab Barrel @ The Waking Shores, Ruby Lifeshrine
-						["provider"] = { "o", 404337 },	--Bar Tab Barrel
+						["provider"] = { "o", 404337 },	-- Bar Tab Barrel
 						["coord"] = { 58.3, 67.5, THE_WAKING_SHORES },
 					}),
 					q(77095, {	-- Bar Tab Barrel @ The Waking Shores, Wingrest Embassy
-						["provider"] = { "o", 404981 },	--Bar Tab Barrel
+						["provider"] = { "o", 404981 },	-- Bar Tab Barrel
 						["coord"] = { 76.3, 35.4, THE_WAKING_SHORES },
 					}),
 				})),
@@ -1104,43 +1104,43 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}, {
 					q(84305, {	-- Bar Tab Barrel @ Dornogal, Stonelight Rest
-						["provider"] = { "o", 457168 },	--Bar Tab Barrel
+						["provider"] = { "o", 457168 },	-- Bar Tab Barrel
 						["coord"] = { 44.1, 46.1, DORNOGAL },
 					}),
 					q(84306, {	-- Bar Tab Barrel @ Isle of Dorn, Freywold Village
-						["provider"] = { "o", 457170 },	--Bar Tab Barrel
+						["provider"] = { "o", 457170 },	-- Bar Tab Barrel
 						["coord"] = { 41.9, 74.2, ISLE_OF_DORN },
 					}),
 					q(84307, {	-- Bar Tab Barrel @ The Ringing Deeps, Gundargaz
-						["provider"] = { "o", 457171 },	--Bar Tab Barrel
+						["provider"] = { "o", 457171 },	-- Bar Tab Barrel
 						["coord"] = { 48.3, 32.2, THE_RINGING_DEEPS },
 					}),
 					q(84308, {	-- Bar Tab Barrel @ The Ringing Deeps, Opportunity Point
-						["provider"] = { "o", 457172 },	--Bar Tab Barrel
+						["provider"] = { "o", 457172 },	-- Bar Tab Barrel
 						["coord"] = { 63.4, 78.8, THE_RINGING_DEEPS },
 					}),
 					q(84310, {	-- Bar Tab Barrel @ Hallowfall, Fjord Tavern
-						["provider"] = { "o", 457173 },	--Bar Tab Barrel
+						["provider"] = { "o", 457173 },	-- Bar Tab Barrel
 						["coord"] = { 49.2, 39.5, HALLOWFALL },
 					}),
 					q(84311, {	-- Bar Tab Barrel @ Hallowfall, Empire's Edge Tavern
-						["provider"] = { "o", 457174 },	--Bar Tab Barrel
+						["provider"] = { "o", 457174 },	-- Bar Tab Barrel
 						["coord"] = { 42.8, 55.8, HALLOWFALL },
 					}),
 					q(84313, {	-- Bar Tab Barrel @ City of Threads, The Cobwebs
-						["provider"] = { "o", 457176 },	--Bar Tab Barrel
+						["provider"] = { "o", 457176 },	-- Bar Tab Barrel
 						["coord"] = { 57.8, 39.9, NERUBAR_LOWER },
 					}),
 					q(84314, {	-- Bar Tab Barrel @ City of Threads, The Skittering Lounge
-						["provider"] = { "o", 457180 },	--Bar Tab Barrel
+						["provider"] = { "o", 457180 },	-- Bar Tab Barrel
 						["coord"] = { 49.8, 21.6, NERUBAR },
 					}),
 					q(84315, {	-- Bar Tab Barrel @ Azj-Kahet, Rock Bottom Inn
-						["provider"] = { "o", 457182 },	--Bar Tab Barrel
+						["provider"] = { "o", 457182 },	-- Bar Tab Barrel
 						["coord"] = { 77.8, 62.7, AZJ_KAHET },
 					}),
 					q(84316, {	-- Bar Tab Barrel @ Azj-Kahet, The Trap Door
-						["provider"] = { "o", 457183 },	--Bar Tab Barrel
+						["provider"] = { "o", 457183 },	-- Bar Tab Barrel
 						["coord"] = { 56.7, 38.7, AZJ_KAHET },
 					}),
 				})),
@@ -2400,6 +2400,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			["OnTooltip"] = BREWFEST_VENDOR_OnTooltip,
 			-- #endif
 			["groups"] = {
+				n_CommonVendorItems({
+					["timeline"] = { ADDED_12_1_0 },
+					["crs"] = {
+						272030,	-- Fay Stouthammer <Brewfest Decor Specialist> [Dun Morogh]
+						271603,	-- Kay Stouthammer <Brewfest Decor Specialist> [Founder's Point]
+						272042,	-- Dizzy Alechux <Brewfest Decor Vendor> [Durotar]
+						271372,	-- Fizz Alechux <Brewfest Decor Specialist> [Razorwind Shores]
+					},
+					["groups"] = {
+						i(280339, {	-- Brewfest Fence (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(50),
+						}),
+						i(280341, {	-- Brewfest Fencepost (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(50),
+						}),
+						i(280343, {	-- Hanging Brewfest Wreath (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(75),
+						}),
+						i(280337, {	-- Traditional Brewfest Banner (DECOR!)
+							["cost"] = BREWFEST_TOKEN_COST(125),
+						}),
+					},
+				}),
 				n(23604, {	-- Agnes Farwithers <Cheese Vendor>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3012,20 +3035,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coords"] = { 40.3, 17.3, DUROTAR },
 					["timeline"] = { ADDED_12_1_0 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(280339, {	-- Brewfest Fence (DECOR!)
-							["cost"] = BREWFEST_TOKEN_COST(50),
-						}),
-						i(280341, {	-- Brewfest Fencepost (DECOR!)
-							["cost"] = BREWFEST_TOKEN_COST(50),
-						}),
-						i(280343, {	-- Hanging Brewfest Wreath (DECOR!)
-							["cost"] = BREWFEST_TOKEN_COST(75),
-						}),
-						i(280337, {	-- Traditional Brewfest Banner (DECOR!)
-							["cost"] = BREWFEST_TOKEN_COST(125),
-						}),
-					},
+					["sym"] = {{"select","itemID",
+						280335,	-- Brewfest Crate (DECOR!)
+						248101,	-- Traditional Brewfest Stein (DECOR!)
+					}},
 				}),
 				n(24510, {	-- Driz Tumblequick <Ram Racing Apprentice>
 					["sourceQuest"] = 11419,	-- Brewfest Riding Rams (H)
@@ -3086,26 +3099,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coords"] = { 56.1, 36.6, DUN_MOROGH },
 					["timeline"] = { ADDED_12_1_0 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(280339, {	-- Brewfest Fence (DECOR!)
-							["cost"] = BREWFEST_TOKEN_COST(50),
-						}),
-						i(280341, {	-- Brewfest Fencepost (DECOR!)
-							["cost"] = BREWFEST_TOKEN_COST(50),
-						}),
-						i(280343, {	-- Hanging Brewfest Wreath (DECOR!)
-							["cost"] = BREWFEST_TOKEN_COST(75),
-						}),
-						i(280337, {	-- Traditional Brewfest Banner (DECOR!)
-							["cost"] = BREWFEST_TOKEN_COST(125),
-						}),
-					},
+					["sym"] = {{"select","itemID",
+						280335,	-- Brewfest Crate (DECOR!)
+						248101,	-- Traditional Brewfest Stein (DECOR!)
+					}},
 				}),
 				n(271372, {	-- Fizz Alechux <Brewfest Decor Specialist>
 					["coord"] = { 52.4, 54.4, RAZORWIND_SHORES },
 					["timeline"] = { ADDED_12_1_0 },
 					["races"] = HORDE_ONLY,
-					["sym"] = { { "sub", "common_vendor", 272030 } },	-- Fay Stouthammer <Brewfest Decor Specialist>
 				}),
 				n(23511, {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
 					["coords"] = {
@@ -3235,7 +3237,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coords"] = { 54.3, 32.7, FOUNDERS_POINT },
 					["timeline"] = { ADDED_12_1_0 },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = { { "sub", "common_vendor", 272042 } },	-- Dizzy Alechux <Brewfest Decor Vendor>
 				}),
 				n(23481, {	-- Keiran Donoghue <Sausage Vendor>
 					["coords"] = {
