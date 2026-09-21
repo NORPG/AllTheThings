@@ -65426,7 +65426,7 @@ i(280835,{f=53,modID=6,spellID=1309868}),
 i(281215,{f=53,modID=6,spellID=1310404}),
 s(311822,281235,{f=4,loc=42,modID=6})}})})}}),
 h(-68,{
-ah(61259,{type="a",g={
+ah(61259,{rwp=120100,type="a",u=2,g={
 ach(61254,{u=2}),
 ach(61255,{u=2,g={
 title(655,{u=2})}}),
@@ -65438,8 +65438,6 @@ ach(61258,{u=2,g={
 mnt(1257081,{b=1,itemID=262621,lvl=10,u=2})}}),
 ach(63097,{awp=120005,u=2,g={
 title(773,{u=2})}}),
-ach(63690,{awp=120105,rwp=120200,g={
-title(795)}}),
 ach(63104,{awp=120100,u=2,g={
 mnt(1301775,{awp=120001,itemID=277192,u=2})}}),
 ach(61259,{u=2,g={
@@ -65536,6 +65534,8 @@ ach(62448,{
 crit(116038,{achID=63473,id=3})}),
 ach(62449,{
 mnt(1301074,{itemID=276882})}),
+ach(63690,{awp=120105,g={
+title(795)}}),
 ach(62436),
 ach(62417),
 ach(62418),
@@ -65556,9 +65556,11 @@ ach(62432,{collectible=false}),
 ach(62433,{collectible=false}),
 ach(62434,{collectible=false}),
 ach(62435,{collectible=false})}}),
-h(-45,{awp=120005,rwp=120100,u=2,g={
-q(96936,{sourceAchievements={63097},u=2,g={
-i(275436,{u=2})}})}}),
+h(-45,{
+q(96936,{awp=120005,rwp=120100,sourceAchievements={63097},u=2,g={
+i(275436,{u=2})}}),
+q(98483,{awp=120105,rwp=120200,sourceAchievements={63690},g={
+i(275436)}})}),
 h(-47,{awp=120005,rwp=120100,u=2,g={
 i(268650,{f=55,spellID=1283168,u=2,g={
 i(268552,{f=55,spellID=1282778,u=2})}}),

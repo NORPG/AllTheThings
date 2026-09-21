@@ -29,9 +29,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(63097, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 } }, {	-- Midnight Keystone Myth: Season One
 				title(773),	-- <Name> the Umbral Contender
 			})),
-			ach(63690, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5, REMOVED_12_2_0 } }, {	-- Midnight Keystone Myth: Season 2
-				title(795),	-- <Name> the Venomous Contender
-			})),
 			ach(63104,{	-- Umbral Champion: Midnight Season 1
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },
 				["groups"] = { i(277192) },	-- Umbral Ashes (MOUNT!)
@@ -246,6 +243,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(62449, {	-- Midnight Keystone Legend: Season 2
 				i(276882),	-- Breath of Ruin (MOUNT!)
 			}),
+			ach(63690, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5, REMOVED_12_2_0 } }, {	-- Midnight Keystone Myth: Season 2
+				title(795),	-- <Name> the Venomous Contender
+			})),
 			ach(62436),	-- Venomous Hero: Midnight Season 2
 			-- Check the comment on previous season
 			ach(62417, {	-- Midnight Season 2: Resilient Keystone 12
@@ -311,14 +311,18 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				["collectible"] = false,
 			}),
 		})),
-		n(QUESTS, bubbleDownSelf({
-			["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }
-		}, {
+		n(QUESTS, {
 			q(96936, {	-- Accolades for the Umbral Contender
 				["sourceAchievement"] = 63097,	-- Midnight Keystone Myth: Season One
+				["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
 				["groups"] = { i(275436), }	-- Timelost Saddle
 			}),
-		})),
+			q(98483, {	-- Accolades for the Venomous Contender
+				["sourceAchievement"] = 63690,	-- Midnight Keystone Myth: Season 2
+				["timeline"] = { ADDED_12_1_5, REMOVED_12_2_0 },
+				["groups"] = { i(275436), }	-- Timelost Saddle
+			}),
+		}),
 		n(REWARDS, bubbleDownSelf({
 			["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }
 		}, {
