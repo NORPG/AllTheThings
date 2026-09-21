@@ -1369,9 +1369,17 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	AccountSources = ATTAccountWideData.Sources
 
 	if not accountWideData.SourceItemsOnCharacter then accountWideData.SourceItemsOnCharacter = {}; end
-
+	
 	-- saved var global will exist at this point
 	CharacterData = ATTCharacterData
+	
+	-- Delete the original Transmog tracking table for classic pre-cata
+	if ATTAccountWideData.Transmog then
+		ATTAccountWideData.Transmog = nil;
+		for guid,character in pairs(CharacterData) do
+			character.Transmog = nil;
+		end
+	end
 end);
 
 if app.IsRetail then

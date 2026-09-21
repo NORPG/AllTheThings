@@ -1425,7 +1425,6 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	if not accountWideData.Quests then accountWideData.Quests = {}; end
 	if not accountWideData.Spells then accountWideData.Spells = {}; end
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
-	if not accountWideData.Transmog then accountWideData.Transmog = {}; end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
 	-- Notify Event Handlers that Saved Variable Data is available.
