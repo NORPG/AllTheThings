@@ -52,6 +52,7 @@ if defined MatchedDir (
     call :link_wowfolder "C:\Program Files (x86)\World of Warcraft"
     call :link_wowfolder "..\World of Warcraft"
     call :link_wowfolder "..\Blizzard\World of Warcraft"
+    call :link_wowfolder "D:\World of Warcraft"
     call :link_wowfolder "F:\World of Warcraft"
 )
 call :report_taskcomplete
