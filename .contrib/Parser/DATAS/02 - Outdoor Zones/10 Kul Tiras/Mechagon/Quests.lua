@@ -1169,7 +1169,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			q(56508, {	-- Waste Not (picked up while doing "A Direct Approach," but not sure if you have to be on that quest or what the SQs are)
 				["provider"] = {"o",329715},	-- Useful Bits and Pieces
-				["coord"] = { 43.0, 41.1, MECHAGON },
+				["coords"] = {
+					{ 40.8, 38.8, MECHAGON },
+					{ 43.0, 41.1, MECHAGON },
+				},
 				["isDaily"] = true,
 				["groups"] = { i(169686) },	-- Useful Bits and Pieces (QI!)
 			}),
